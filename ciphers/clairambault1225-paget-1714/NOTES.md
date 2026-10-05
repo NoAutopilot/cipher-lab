@@ -1318,3 +1318,44 @@ Source: the owner's browser runner, outreach/local-runner/DESK-2026-10-04.md. Th
 Search results, not a novelty verdict (rule 10); for the verifier to carry into AUDIT.md's JSTOR line. No gap or escalation line
 changes (the print step was already [x]).
 - 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L11 answer (PR 67) bounced by tools/lq_answer_check.py (missing holding-catalogue rung: catalogue_ladders.tsv has no Archives nationales/FranceArchives row); row back to queued, answer not landed.
+
+## RUN6-PAGET (5 Oct 2026, 05:02-05:08 UTC by date -u): multi-seed settle7 rule
+
+Brief: `.claude/briefs/runs/2026-10-05-acct1-run6-wave2.md` section RUN6-PAGET (LANE-RUN6, account 1). Disk only: no network
+request, no vision call, no subagent. Pre-registration `align/PREREG_settle7ms.md`, pushed as 198aa77e before any run.
+- **Rule** (registered, applied to all 15 settle7 codes, 78 rulings): per-letter Gibbs seeds 0..19; S only if the modal chunk
+  equals the code value in >= 16/20 seeds and the token is not in DEMOTE; else M. GIBBS values and DEMOTE unchanged.
+  `align/settle7.py` now implements it (seed-0 chunk kept as a column; rulings gain `modal_chunk`, `stability`, `seeds_0_19`).
+- **126 / 86 (the flagged rulings)**: over 20 seeds 126 he 13/20 (0.65) at all three tokens; 86 dame 13/20 (0.65) at f66L:182 and
+  f66R:251; 86 at f66R:338 ("Made") modal de 16/20, not the code value. **None passes; all six stay M** (no grade or value change).
+  The seed 0-9 tallies (he 5/10, dame 6/10) were not a seed-0 accident in the other direction: the value is the mode, but not stable.
+- **Seed-stable** (modal == seed-0 chunk and >= 16/20): 60 of 78 rulings. Not seed-stable: 18 -- 31 f60R:31, f61L:105, f61L:200
+  (b 8/20); 45 f61L:40 (seed-0 r, modal qu 8/20), f66R:203 (desp/esp 7/20); 65 f61L:147 (b 8/20); 97 f66L:51 (cens/en 7/20),
+  f66L:289 (seed-0 null, modal en 16/20, DEMOTE stays); the six 126/86 tokens; 84 f61R:34 (cet/ce 11/20), f66R:272 (ato 14/20);
+  77 f65L:43 (ceq/ce 14/20), f66L:292 (p/ce 13/20).
+- **Grades moved by the rule**: five seed-0 S rulings fail it and go to M, value unchanged (= key value): 31 at f60R:31, f61L:105,
+  f61L:200; 45 at f61L:40; 65 at f61L:147. Their five S rows are removed from exceptions.tsv. No M ruling passes into S.
+  settle7 now 41 S / 37 M (was 46 S / 32 M); `align/settle7.py --check`: up to date (41 S rulings in exceptions.tsv).
+- **Rule 7** `python3 tools/decode_key.py ciphers/clairambault1225-paget-1714` then `--check`: `tokens 505: H 50, I 7, M 370, S 72,
+  U 6` / `reading up to date`, exit 0. Per token (rule 4): **H 50, C 0, S 77 -> 72, M 365 -> 370, I 7, U 6**; firm 127 -> 122
+  (24.2%). No token's value text changed (5 grades only). The "Labbe" codes 31/65 and the f61L:40 token are the whole loss: the L1
+  letter's sampler mixes between b/ab-type segmentations seed to seed.
+- Not run: `align/pin_pagr.py --check` fails in this container before any comparison (`git show 4b518e74:...` -- the clone is
+  shallow, the object is absent); environment, not a result. A fresh rule-7 re-derivation by a separate session is owed for this
+  state (orchestrator's step). Requests: none. Subagents: none.
+
+## Remaining gaps (RUN6-PAGET, 5 Oct 2026)
+Read so far: token level H 50, S 72, M 370, I 7, U 6 of 505 (firm 122), tools/decode_key.py --check 5 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
+- Code-level values for the 370 M tokens (mostly single-attestation codes; settle7 multi-seed rulings 41 S / 37 M on 15 codes, 18 of 78 rulings not seed-stable; PAGA's eye readings 77 ce, 84 cette, 34 e, 38 i untested by the firm-neighbour pin) - blocker: open-codes; four instruments run (tools/interlinear_align.py; tools/gibbs_align.py, PREREG_seg2.md PASS; the pin, PREREG_pagr.md FAIL; multi-seed settle7, PREREG_settle7ms.md); next: fresh-session rule-7 re-derivation of the RUN6-PAGET state, then audit, ~$2
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (RUN6-PAGET, 5 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [x] key-rebuild: tools/gibbs_align.py (RUN1-PAG) PASS; settle7 per-token rulings now multi-seed (RUN6-PAGET, 20 seeds, >= 16/20): 41 S / 37 M on 15 codes; 126/86 stay M; key.tsv 111 codes
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
+- [x] retry: tools/decode_key.py --check exit 0 after RUN6-PAGET: H 50 S 72 M 370 I 7 U 6
+Verdict: keep going: 1 internal gaps; cheapest next: fresh-session rule-7 re-derivation of the RUN6-PAGET state, ~$2

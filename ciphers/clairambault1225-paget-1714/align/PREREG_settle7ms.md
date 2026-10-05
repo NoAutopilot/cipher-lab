@@ -1,4 +1,4 @@
-# PREREG_settle7ms -- multi-seed settle7 rule (RUN6-PAGET, LANE-RUN6 account 1, 5 Oct 2026, written ~05:08 UTC before any run)
+# PREREG_settle7ms -- multi-seed settle7 rule (RUN6-PAGET, LANE-RUN6 account 1, 5 Oct 2026, written 05:04 UTC by date -u, before any run)
 
 Brief: `.claude/briefs/runs/2026-10-05-acct1-run6-wave2.md` section RUN6-PAGET. Disk only, no network, no vision call, no subagent.
 

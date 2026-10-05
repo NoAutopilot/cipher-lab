@@ -1,6 +1,6 @@
 line	pos	sign	conf	value	grade
 f60R	30	145	H	la	M
-f60R	31	31	H	b	S
+f60R	31	31	H	b	M
 f60R	32	67	H	be	H
 f60R	33	148	H	lo	S
 f60R	34	186	H	me	M
@@ -23,7 +23,7 @@ f61L	36	45	H	r	S
 f61L	37	211	H	at	M
 f61L	38	209	H	elq	M
 f61L	39	192	H	d	M
-f61L	40	45	H	r	S
+f61L	40	45	H	r	M
 f61L	41	223	H	c	M
 f61L	42	41	H	ce	M
 f61L	47	175	H	ne	M
@@ -54,7 +54,7 @@ f61L	90	147	H	li	M
 f61L	91	46	H	s	M
 f61L	92	146	H	le	S
 f61L	104	145	H	la	M
-f61L	105	31	H	b	S
+f61L	105	31	H	b	M
 f61L	106	67	H	be	H
 f61L	121	48	H	u	S
 f61L	122	175	H	ne	S
@@ -62,14 +62,14 @@ f61L	123	194	H	er	M
 f61L	124	45	H	r	S
 f61L	125	240	H	ion	H
 f61L	146	145	H	la	M
-f61L	147	65	H	b	S
+f61L	147	65	H	b	M
 f61L	148	67	H	be	H
 f61L	165	34	H	de	M
 f61L	166	147	H	li	M
 f61L	167	46	H	s	M
 f61L	168	146	H	le	S
 f61L	199	56	H	l	M
-f61L	200	31	H	b	S
+f61L	200	31	H	b	M
 f61L	201	67	H	be	H
 f61R	29	145	H	la	S
 f61R	30	48	H	u	S

@@ -19,8 +19,12 @@ N4-PAG213: 126 (key ch; Gibbs he 3/3, share 1.00, pooled 3/3), 86 (key da; Gibbs
 "Made"), 84 (key ce; Gibbs cet/ette/ette/ato, no single value), 77 (key q; Gibbs ceq/p/quoi, no single value), 158 (key mo; Gibbs
 mo 0.96 under "modeste", mils 0.29 in a drifted pair). For 84 and 77 no Gibbs value exists, so GIBBS carries the key's value and
 every token falls to M by the rule; DEMOTE lists the two 126 tokens whose right end is not pinned.
+RUN6-PAGET (5 Oct 2026, PREREG_settle7ms.md): the rule reads 20 per-letter seeds (0..19), not seed 0 alone. S only if the token's
+modal chunk over the 20 seeds equals the code value with share >= 0.80 and the token is not in DEMOTE; else M. The seed-0 chunk
+stays in settle7.tsv and in the rulings for comparison. (A3V3-PAGR: 126 he 5/10, 86 dame 6/10 over seeds 0-9.)
 """
 import collections, csv, os, sys
+from multiprocessing import Pool
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', '..', 'tools'))
 import gibbs_align as ga
@@ -56,6 +60,8 @@ DEMOTE = {
     ('P42', 3): 'gloss "Mariage": 155 ma (H) on the left, but 30 a (M) and 116 ge (M) on the right; ri/a vs ria/0 not pinned',
 }
 L1 = {'f60R', 'f61L', 'f61R', 'f65L'}
+SEEDS = range(20)  # PREREG_settle7ms.md
+STABLE = 0.80
 
 
 def gibbs_tokens(pairs, seed=0):
@@ -66,11 +72,23 @@ def gibbs_tokens(pairs, seed=0):
     return m
 
 
-def main():
+def _per_letter(seed):
     pairs = ia.load_pairs(os.path.join(HERE, 'pairs.tsv'))
     l1 = [p for p in pairs if p['page'] in L1]
     l2 = [p for p in pairs if p['page'] not in L1]
-    per = {**gibbs_tokens(l1), **gibbs_tokens(l2)}
+    return {**gibbs_tokens(l1, seed), **gibbs_tokens(l2, seed)}
+
+
+def main():
+    pairs = ia.load_pairs(os.path.join(HERE, 'pairs.tsv'))
+    with Pool(4) as pool_:
+        runs = pool_.map(_per_letter, list(SEEDS))
+    per = runs[0]
+    multi = {}
+    for key in per:
+        cnt = collections.Counter(r.get(key, ('',))[0] for r in runs)
+        top = max(cnt.items(), key=lambda kv: (kv[1], kv[0] == per[key][0]))
+        multi[key] = (top[0], top[1] / len(runs), ' '.join(r.get(key, ('',))[0] or '0' for r in runs))
     pool = gibbs_tokens(pairs)
     hard = {}
     for r in csv.DictReader(open(os.path.join(HERE, 'align_all.tsv')), delimiter='\t'):
@@ -91,17 +109,21 @@ def main():
                 rows.append('\t'.join([c, L, p['page'], str(j), h[0], h[1], g[0], '%.2f' % g[1],
                                        pool.get((L, j), ('',))[0], p['plain_raw'], p['cipher_raw'], hs, gs]))
     pos = {p['cipher_line']: p['positions'].split(',') for p in pairs}
-    rul = ['code\tvalue\tpair\tline\tposition\tgibbs_chunk\thardEM_chunk\tgloss\truling\twhy']
+    rul = ['code\tvalue\tpair\tline\tposition\tgibbs_chunk\thardEM_chunk\tgloss\truling\twhy\tmodal_chunk\tstability\t'
+           'seeds_0_19']
     for r in rows[1:]:
         f = r.split('\t')
         c, L, page, j, hch, gch, gloss = f[0], f[1], f[2], int(f[3]), f[4], f[6], f[9]
-        if gch != GIBBS[c]:
-            g, why = 'M', 'own Gibbs chunk %r is not the code value' % gch
+        mch, mst, mseq = multi.get((L, j), ('', 0.0, ''))
+        if mch != GIBBS[c]:
+            g, why = 'M', 'modal Gibbs chunk over 20 seeds %r is not the code value' % mch
+        elif mst < STABLE:
+            g, why = 'M', 'modal Gibbs chunk = code value but only %d/20 seeds (< 16)' % round(mst * 20)
         elif (L, j) in DEMOTE:
             g, why = 'M', DEMOTE[(L, j)]
         else:
-            g, why = 'S', 'own Gibbs chunk = code value; gloss word admits it with firm neighbours'
-        rul.append('\t'.join([c, GIBBS[c], L, page, pos[L][j], gch, hch, gloss, g, why]))
+            g, why = 'S', 'modal Gibbs chunk = code value in %d/20 seeds; gloss word admits it with firm neighbours' % round(mst * 20)
+        rul.append('\t'.join([c, GIBBS[c], L, page, pos[L][j], gch, hch, gloss, g, why, mch, '%.2f' % mst, mseq]))
     txt = '\n'.join(rows) + '\n'
     rtxt = '\n'.join(rul) + '\n'
     rpath = os.path.join(HERE, 'settle7_rulings.tsv')
