@@ -8767,3 +8767,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 20:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 20:09 UTC: spawned 0 (), queued left 0
 2026-10-05 20:22 | standby (owner account) | alive; holder account 3, last activity 19:09 (commit f4739bec2 from its orchestrator session_0198Cv8y..., queued FER1478-READ2); last signed ROOM line 17:29; no takeover
 2026-10-05 20:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 20:40: spawned 1 (DEFAULT-account-1-20261005-2039 session_0129JoekeRPRo9Fsfv9XdQQi, empty-queue auto-fill), queued left 0
+2026-10-05 20:42 | LANE DEFAULT-account-1-20261005-2039 | claim: account-1 DEFAULT lane orchestrator (session_0129JoekeRPRo9Fsfv9XdQQi), cap $60, box to 2026-10-06 06:41 UTC; backlog order VERIFY-BACKLOG then next_steps --hot-only; rate five_hour allowed
