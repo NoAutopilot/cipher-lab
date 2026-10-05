@@ -352,18 +352,39 @@ Not searched, unchanged: other tomes of the 1680/1697 Actes (seven scans failed 
 other volumes. Still pending, no network needed: Bakeš thesis grep ("1677"/"Nääs"/"fullmakt"), then the Riksarkivet owner/copy route (REQUEST.md).
 Requests 0, vision 0, subagents 0. Status stays `open`.
 
-## Remaining gaps (RUN6-KARLXI, 5 Oct 2026)
+## Bakeš thesis full-text grep (D2B-KARL, account-2 worker, 5 Oct 2026, 23:35-23:38 UTC by date -u): full text login-gated
+Brief step (Verdict "cheapest next"): grep the Bakeš thesis (Univerzita Pardubice diploma thesis, 2014, defended 25 Aug 2014, supervisor
+J. Kubeš) for "1677"/"Nääs"/"fullmakt"/"plenipotentia". Not done: the full text is not reachable from the cloud without a login.
+1. theses.cz/id/n0bws4 (a meta-refresh cookie step, then the record page) says "Plný text práce ... Soubory jsou nedostupné" (files
+   unavailable) and points to the holding institution: portal.upce.cz STAG link praceIdno=23485, which redirects to a generic browse page.
+2. The institution's DSpace repository dk.upce.cz has the item: handle 10195/58052 (https://hdl.handle.net/10195/58052), item
+   747a52dc-52b5-4fe5-910e-45d6a5b1e23b, dc.rights "bez omezení" (no restriction), but both the PDF (BakesM_Habsburskosvedske_JK_2014.pdf,
+   1,883,534 bytes) and its extracted-text bitstream (BakesM_Habsburskosvedske_JK_2014.pdf.txt, 401,516 bytes) answer HTTP 401
+   "Authentication is required" to the REST content endpoint. Not retried (good-citizen rule); no login attempted (no credential for it).
+3. What is open: the abstract (five imperial envoys to Stockholm under Karl XI, from archival material) and the two reviews. The supervisor's
+   review names the envoys (Šternberk, Althann, Berka z Dubé, Nostitz, Starhemberg); the opponent's review says the sources are mainly the
+   Czech family archives (RA Sternberg-Manderscheid, RA Nostitz of Falknov). Neither review contains 1677, Nääs/Naas, fullmakt, plenipotent-,
+   Nijmegen or cipher (grep, Czech and Latin forms). So the thesis works the imperial envoys' side at Stockholm, not the Swedish treaty
+   originals at Riksarkivet; whether it cites the 6 May 1677 Nääs full power stays **not established**, and nothing here suggests it does.
+4. Seen in the same repository search, not read: Bakeš's later work on the same topic, *Diplomatem v půlnoční zemi. Zástupci Habsburků ve
+   Švédském království mezi lety 1650-1730* (2018, handle 10195/72172), and his 2015/2016 articles on Nostitz and the legation chaplains
+   (10195/66550, 10195/67724). Their access was not tested (outside this brief).
+Requests: theses.cz 4 (two meta-refresh stubs, then cookie + page), portal.upce.cz 1, dk.upce.cz 7 (search, bundles, item, PDF 401, text 401,
+two review texts 200). Vision 0, subagents 0. Status stays `open`.
+
+## Remaining gaps (D2B-KARL, 5 Oct 2026)
 Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not been located in any print or image (0 of 1 target document found)
-- Bakeš thesis full-text grep for "1677"/"Nääs"/"fullmakt" - blocker: not-attempted; no outside blocker; next: grep the theses.cz download, ~$0.3
+- Bakeš 2014 thesis full text - blocker: needs-physical-access; theses.cz "Soubory jsou nedostupné" and dk.upce.cz 10195/58052 PDF and text answer 401 without a Pardubice login (D2B-KARL section above); a person can use the repository's own request route or a Pardubice reader
+- Bakeš 2018 book / 2015-16 articles (dk.upce.cz 10195/72172, 66550, 67724) - blocker: not-attempted; same author and subject, access untested; next: list each item's bitstreams on dk.upce.cz and grep any open text for 1677/Nääs/fullmakt, ~$0.3
 - Other tomes of Actes 1680/1697 and Dumont other volumes - blocker: not-attempted; seven scans failed the Oxenstierna control; next: be-api per scan with a passing control, ~$0.5
 - Riksarkivet owner/copy route - blocker: waiting-on the Riksarkivet reply to REQUEST.md; the owner-side copy request is unanswered
 
-## Escalation (RUN6-KARLXI, 5 Oct 2026)
+## Escalation (D2B-KARL, 5 Oct 2026)
 - [x] siblings: Emperor-Sweden sibling instruments checked (A2P4-KARL page read)
-- [x] clear-pages: n/a here, a single full power with no clear sibling page located
+- [n/a] clear-pages: a single full power with no clear sibling page located
 - [n/a] known-keys: plain Latin instrument, no key
-- [x] print: CTS 15, Actes 1680/1697 scans, Dumont VII.1/VII.2, Sverges traktater v.8, all negative by snippet (RUN1/RUN3-KARL, IA-DESK-ALT)
+- [ ] print: Bakeš 2018 book and articles on dk.upce.cz untested; CTS 15, Actes 1680/1697 scans, Dumont VII.1/VII.2, Sverges traktater v.8 negative by snippet
 - [n/a] key-rebuild: no cipher key involved
 - [x] image-check: title page and page read via A2P4-KARL, Hathi H4
-- [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL), nothing to repeat
-Verdict: keep going: 2 internal gaps; cheapest next: Bakeš thesis grep, ~$0.3
+- [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL); dk.upce.cz 401 not retried (auth gate, not a transient)
+Verdict: keep going: 2 internal gaps; cheapest next: Bakeš 2018 book and articles, dk.upce.cz bitstream check and grep, ~$0.3
