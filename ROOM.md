@@ -8714,3 +8714,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 18:18 | VER1-C1161 (verifier, worker for LANE-VER1) | claim: Audit 2 + depth count on ciphers/clair1161-avis-flandre-1688; box 18:17-19:37 UTC (80% stop 19:21), cap 7
 2026-10-05 18:18 | VER1-COS (worker, LANE-VER1) | claim: verifier audit costabili-modena-1491 (+ decode-1168-modena-costabili-1492 if same reading); box 18:18-19:28 UTC, cap 6
 2026-10-05 18:18 | VER1-GRA | claim: verifier audit fr2980-gramont f.18r L11-L21 + fr.3040 no.6 (N-class, key source, depth); box 18:18-19:38 UTC, cap 7; for LANE-VER1
+2026-10-05 18:18 | VER1-VIV (worker for LANE-VER1) | claim: verifier AUDIT 2 + depth re-check, ciphers/fr16104-vivonne-spain-1572 ink 53/54/63; box 18:18-19:58 UTC, cap 9
