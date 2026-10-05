@@ -9,9 +9,17 @@ on:
     - cron: "17 6 * * *"
   workflow_dispatch:
 
+# Each run scans every tracked file, so only the newest push's run matters: cancel older queued runs.
+# (5 Oct 2026: ~20 sessions pushing dozens of times an hour queued runs until GitHub gave up on them,
+# 'job was not acquired by Runner', and mailed the owner a failure for each one.)
+concurrency:
+  group: restricted-guard-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   guard:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
