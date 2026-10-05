@@ -128,3 +128,11 @@ NOTES.md image-check line (and ZOOM-ASKS footer). Gallica native crops of canvas
 ### A4-RFMAT -- matignon-mayenne-1586, f.110 line-crop sample (cap 9, box 90 min; 7 vision calls x ~1.1 + 1)
 NOTES.md Verdict gap 2: the f.110 line-crop sample with split_worklist.tsv's crops (two blind passes + reconciliation), the only
 instrument left for BOX/T/4/w/z. Pre-register what settles each label before the passes. Target stays `partial` either way (rule 5).
+
+Wave 2 note (23:59 UTC): A4-RFMAT dropped -- matignon gap 2 claimed 23:54 by D2B-MATF110 (account 2). A4-RFHDK found its step done 3 Oct:
+every wave-2 worker greps the folder's dated sections AFTER the cited NOTES line before acting (common rule "if a dated section already
+did your named step, stop and report").
+
+### A4-AVS175 -- august-van-saksen-1561-64, WVO 175 p1 remaining 11 lines for Qf and K (cap 5, box 70 min; 2 blind reads x ~1.5 + 1 gloss recon)
+NOTES.md Verdict "cheapest next": the other 11 lines of WVO 175 p1 for Qf and K (2 blind reads in 4-line batches, 1 gloss read). Crop
+step pasted first; regrade 126/53/57 tokens the result touches; `decode_key.py --check`.
