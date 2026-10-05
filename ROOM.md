@@ -8673,3 +8673,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 12:22 | standby (owner account) | alive; holder account 3, last line 20:49 (inside its announced pause to 5 Oct 14:45 UTC -- no takeover)
 2026-10-05 12:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 12:40: spawned 0, queued left 0
 2026-10-05 13:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 13:10 UTC: spawned 0 (), queued left 0
+2026-10-05 13:22 | TOMO-NUM (account 3 worker) | claim: birago-nevers-1571 test Tomokiyo two numerical systems vs pooled f.119+f.100 digits; box ends 14:36 UTC
