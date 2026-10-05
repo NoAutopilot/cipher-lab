@@ -18,7 +18,47 @@
       "size_bytes": 14740,
       "sha1": "a728d86d8893cb54ba3cef263f6597aa77408504",
       "dimensions": "200x34"
+    },
+    {
+      "id": "fbi-file-p-050",
+      "file": "fbi-file-p-050.png",
+      "url": "http://cipherfoundation.org/wp-content/uploads/sites/4/2017/12/Paul-Rubin-FBI-file.pdf (pdf page 50, rendered 120 dpi gray)",
+      "description": "K2: agent-typed copy of Q5 on Rubin's Underwood, 29 Jan 1953",
+      "size_bytes": 138859,
+      "sha1": "1722b218e54d00d1d11f2f7ee211894811f0962a"
+    },
+    {
+      "id": "fbi-file-p-051",
+      "file": "fbi-file-p-051.png",
+      "url": "http://cipherfoundation.org/wp-content/uploads/sites/4/2017/12/Paul-Rubin-FBI-file.pdf (pdf page 51, rendered 120 dpi gray)",
+      "description": "K1: agent-typed copy of Q5 on Birnbaum's Royal",
+      "size_bytes": 144892,
+      "sha1": "2aa69492f294b701f313e21a71af66abeaeac342"
+    },
+    {
+      "id": "fbi-file-p-067",
+      "file": "fbi-file-p-067.png",
+      "url": "http://cipherfoundation.org/wp-content/uploads/sites/4/2017/12/Paul-Rubin-FBI-file.pdf (pdf page 67, rendered 120 dpi gray)",
+      "description": "FBI cryptanalyst hand-lettered working copy of Q5 with glosses (page rotated)",
+      "size_bytes": 211343,
+      "sha1": "9ae659065117a8ea417018f6b76a9f7c25fd5745"
+    },
+    {
+      "id": "fbi-file-p-138",
+      "file": "fbi-file-p-138.png",
+      "url": "http://cipherfoundation.org/wp-content/uploads/sites/4/2017/12/Paul-Rubin-FBI-file.pdf (pdf page 138, rendered 120 dpi gray)",
+      "description": "second hand copy of Q5 (rough)",
+      "size_bytes": 72342,
+      "sha1": "2f0118d10bee447d3c517d6b1eded7d6d0566def"
     }
   ],
-  "not_fetched": "the older, worse 2013 photograph (scienceblogs.de/klausis-krypto-kolumne/files/2013/11/Rubin-Case.png) -- brief said fetch only if a line in the 2018 reproduction is unreadable; none was."
+  "not_fetched": "the older, worse 2013 photograph (scienceblogs.de/klausis-krypto-kolumne/files/2013/11/Rubin-Case.png) -- brief said fetch only if a line in the 2018 reproduction is unreadable; none was.",
+  "fbi_file": {
+    "url": "http://cipherfoundation.org/wp-content/uploads/sites/4/2017/12/Paul-Rubin-FBI-file.pdf",
+    "pages": 142,
+    "size_bytes": 8937411,
+    "sha256": "97f7e11535056c127aa5c6018c0c336f89b8eeb068d6abe504a9affc623bf18a",
+    "fetched": "5 Oct 2026, D2B-RUBIN",
+    "note": "full PDF not committed (8.9 MB, re-fetchable); only the four Q5-copy pages rendered here"
+  }
 }

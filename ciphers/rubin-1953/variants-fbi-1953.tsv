@@ -1,0 +1,16 @@
+# Transcription variants: ciphertext.txt (bRUB single pass of the 2018 Bauer reproduction) vs the 1953 FBI file
+# (Cipher Foundation PDF "Paul-Rubin-FBI-file.pdf", 142 pp., NW 42555 DocId 32608295; read 5 Oct 2026, D2B-RUBIN).
+# Witnesses: K1 = p.51, agent-typed copy of Q5 on a friend's Royal machine; K2 = p.50, agent-typed copy on Rubin's Underwood
+# ("specimens taken 1/29/53"); CR = p.67, FBI Laboratory cryptanalyst's hand-lettered capitals working copy with glosses.
+# p.138 = a second, rougher hand copy (not used per position; poor OCR, crude hand).  img2018 = images/rubin-cryptogram-2018.png re-checked by eye at 2x.
+# K1/K2 are typing exemplars, not careful transcriptions (both contain false starts and retyped lines); CR is the strongest FBI witness.
+# Transcription evidence only, not a reading. ciphertext.txt NOT edited.
+line	position	ciphertext.txt	img2018_recheck	K1_p51	K2_p50	CR_p67	supports
+A1	word 2 leading mark	'sawthn'g	'sawthn'g (mark before s present)	sawthn'g	sawthn'g	SAWTHN'G	FBI 3/3 omit the leading mark; img2018 shows one -- keep, flag as possible blemish (M)
+A1	word 5	meteore	meteore	meteore (2 of 3 retypings)	metore	METEORE	ciphertext.txt
+A2	word 2	greA'Lltenmn	greA'Lltenmn	greA'Ltermn / greA'Lternmn / greA'Ltrrmn (3 retypings)	greA'Lternmn	GREA'LLTENMN	ciphertext.txt (CR agrees; K copies are retyping slips)
+A3	word 2	albawmnabs	albawmnabs	albawnmabs	albawnmabs	ALBAWMNABS	ciphertext.txt (CR and img2018 agree; K copies transpose mn)
+A3	word 5	ungdreabozvmie	ungdreabozv?ie (glyph after v blurred; m or n)	ungereabozvnie	ungdreabozvnie	UNGDREABOZVNIE	FBI 3/3 read n: ungdreabozvNie -- candidate correction, held pending a second image pass
+A7	word 4	[SYM1]ly	overstrike	1/4 fraction + ly	1/4 fraction + ly	[1/4LY] glossed QUARTERLY	FBI 3/3: [SYM1] is the typewriter 1/4 key -> "¼ly" (resolves bRUB's best guess)
+B	line	7469921	7469921	7469921	7469931, 7469931, 7469921 (two false starts)	7469921	ciphertext.txt
+D2	line	R-QR6	R-QR6	R*QR6 (overstruck hyphen)	R-QR6	R-QR6	ciphertext.txt
