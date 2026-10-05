@@ -8691,3 +8691,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 16:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 16:09 UTC: spawned 0 (), queued left 0
 2026-10-05 16:22 | standby (owner account) | alive; holder account 3, last line 15:55 (flag signed 'account-3 orchestrator'; last formal '| orchestrator (account 3)' check-in still 4 Oct 20:49 -- holder live, so no takeover; account 3 at allowed_warning, no new workers per its own flag)
 2026-10-05 16:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 16:40: spawned 0, queued left 0
+2026-10-05 17:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 17:09 UTC: spawned 0 (), queued left 0
