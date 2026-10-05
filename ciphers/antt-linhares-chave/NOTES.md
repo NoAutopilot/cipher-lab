@@ -1259,6 +1259,8 @@ Vision calls 4 (Sonnet subagents) + 2 own looks at contact sheets and 1 debug ov
 
 ## Ink-profile comparison of the 329011 first glyph (D2-LINK, 5 Oct 2026) -- PRE-REGISTRATION (pushed before any scored run)
 
+Intake gate (`python3 tools/intake_gate_check.py antt-linhares-chave`, 5 Oct 2026 23:20 UTC): `antt-linhares-chave: blocked (line 3) -- already terminal, nothing to gate`
+
 Third, different instrument on the p2l2pos6 first glyph (after two blind reads, A1B-LIN-M0002b: both 3 at 55%). Script
 only, no model reads a glyph. Source: `images/full_PT-TT-CLNH-0086-11_m0002.jpg.jpg` (1182 x 774, DigitArq full size, on
 disk; no fetch). Script: `scripts/glyph_ink_profile.py` (numpy + PIL only).
