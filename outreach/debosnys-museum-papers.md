@@ -1,4 +1,4 @@
-status: gate-7 checked, not sent. Was: drafted 1 Oct 2026 02:3x UTC by the account-3 orchestrator at the owner's request; supersedes outreach/debosnys-museum-hires.md (not sent); NOT yet gate-7 checked -- do not send before the checked: line exists
+status: REVISED 5 Oct 2026 23:2x UTC by the account-3 orchestrator at the owner's request (questions 4-6 added; owner overrode the one-message-at-a-time hold); re-check of the new sentences pending (OUT-CHECK-DEB-PAPERS-2). Earlier: gate-7 checked, not sent. Was: drafted 1 Oct 2026 02:3x UTC by the account-3 orchestrator at the owner's request; supersedes outreach/debosnys-museum-hires.md (not sent); NOT yet gate-7 checked -- do not send before the checked: line exists
 to: research@adkhistorymuseum.org (from outreach/debosnys-museum-hires.md; read on https://www.adkhistorymuseum.org/research 26 Sept 2026, re-read there 1 Oct 2026 by OUT-CHECK-DEB-PAPERS)
 subject: Re: Henry Debosnys papers -- a list of what the museum holds
 prior_contact: project mailbox thread 1a0defa3b687c1b2; the museum's reply of 28 Sept 2026 (restricted scans, ciphers/debosnys-1883/RESTRICTED.md). Send as a reply in that thread.
@@ -20,6 +20,12 @@ I would like to ask whether the museum could tell me what Debosnys material it h
 1. The published cryptogram pages carry numbers: "No. 9" and "No. 10" at the top, and at the foot of the No. 10 page, below the poem, "No. 11. (nex page la suite)". That suggests a numbered series, and I would like to know whether any other numbered pages survive.
 2. Cheri Farnsworth's book Adirondack Enigma (2010) credits several items to the "Collection of Brewster Memorial Library / Essex County Historical Society", including the original foolscap sheets from which his life history was dictated to the press (one titled "French War 1870", with notes added in the margin), a sketch of a family estate in England, and a jailhouse "Autographs" book.
 3. Her bibliography lists a local note in the Ticonderoga Sentinel of 18 May 1933 "regarding Debosnys document". We have not seen the note itself, but it may bear on how some of the papers reached the collection.
+
+Three further questions, if the museum's records answer them:
+
+4. Other writings. Beyond the cipher pages and the life history, does the collection hold any other writing in his hand (letters, poems, notes or drawings)? Plain writing in his hand helps us read his cipher handwriting.
+5. The visitor. We have read (Wikipedia, citing Bauer 2017) that some of his papers came to the museum from the granddaughter of a woman who visited him in jail. Does the museum know who she was, and when and how the papers were given?
+6. The trunks. The same account says three trunks were sent to him at the jail, two holding weapons that were seized and a third holding personal papers, cryptograms and poems, with the sender unknown. Do the museum's records say anything more about that third trunk -- who sent it, what was in it, or what became of its contents?
 
 If a list exists, a copy would help us more than anything else at this stage: it would tell us which pages to ask about rather than asking for everything. For any cipher pages that are not among the scans you have already sent, I would also ask whether they could be scanned under the same restricted terms, and whether there is a fee.
 
