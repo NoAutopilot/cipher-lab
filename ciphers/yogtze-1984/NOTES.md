@@ -49,3 +49,17 @@ $ python3 tools/next_steps.py --wait-only | grep yogtze-1984
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: a lexical crib search of the six letters against 1984 German/Dutch licence-plate prefixes and food-technology abbreviations, logged as a search (UNSOLVED-SURVEY row 26), ~$0.5; or the parent re-labels the target per the premise note. Who acts: agent. Source: this file's "## While waiting (GF4-BATCH17)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Lexical crib search (D2B-YOG, account 2, 5-6 Oct 2026)
+
+Ran the "Next step (NO-CRACKS)" line: YOGTZE against 1984 German/Dutch licence-plate formats and food-technology abbreviations. A search, no reading claimed. Script and output: `lexical/plate_search.py --control` -> `lexical/plate_search_output.txt`; German code list = Wikipedia raw wikitext (`lexical/kfz_de_wikipedia_raw_2026-10-05.txt`, 662 codes, a 2026 list; includes post-1990 East and post-2012 reintroduced codes, so a 1984 fit would need a hand check). Variants tested: YOGTZE, YOG'TZE (apostrophe as separator), YOGZE (T read as struck); handwriting look-alikes O->0, G->6, Z->2, T->7, E->3, Y->4 allowed.
+- German district format (PPP-LL 9999): **no whole-string fit** for any variant. Substrings that are district codes: E (Essen), G, GT (Guetersloh), GZ, OG (Offenburg), Z, ZE (G, GZ, Z, ZE are post-1990 eastern codes, not valid in 1984). Matched control (all 720 orderings of the same six letters, same rules): 504/720 orderings fit a district code -- the target's no-fit is not informative either way.
+- Bundeswehr "Y-" series: Y + digits fits (Y-06723; YOGZE -> Y-0623) only by reading all five following letters as digits; 120/720 orderings fit by construction (every one starting with Y). Non-discriminating. The 1984 digit count of Y-series plates was not checked.
+- Dutch: series 4 (XX-99-XX, current 1978-91) fit YO-67-ZE fails -- per nl.wikipedia "Nederlands kenteken" (fetched 5 Oct 2026) series 4 used no vowels, so O and E were not issued. Series 3 (99-XX-99, 1973-78) fit 40-GT-23 is formally issuable but needs four of six signs read as digits; control 336/720 orderings give an issuable Dutch fit. Non-discriminating; the apostrophe-as-Dutch-dash idea does not survive as a test.
+- Food-technology abbreviations: Google Books API (keyed, country=US), 4 queries: `"TZE" Lebensmittel` (358, top 10 all OCR fragments of -saetze/Plaetze/Lao-tze), `"TZE" Joghurt` (6, all fragments), `"YOG" Joghurt Abkuerzung` (0), `"YOGTZE"` (0). No abbreviation TZE or YOG found in a food context. Not searched: a German food-additive or dairy-industry abbreviation dictionary of the 1980s (none on disk or found by the API).
+Requests: de.wikipedia.org 2 (first answered 429 rate-limit; one retry after a 60 s pause, index.php action=raw, 200), nl.wikipedia.org 1, www.googleapis.com 4; all >= 1.5 s apart.
+Result: no fit beyond what the same look-alike freedom gives a random ordering of the same letters; status stays open.
+
+## Next step (D2B-YOG, 6 Oct 2026)
+
+next: none cheap left in the lexical family -- tests 1 (initials), 2 (plates/abbreviations, this pass) are logged; spec test 3 (720-anagram enumeration against German/English word lists) is the last untried, ~$0.5; or the parent re-labels the target per the 3 Oct premise note (no surviving witness of the slip). Who acts: agent.

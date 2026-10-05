@@ -1,0 +1,16 @@
+german codes parsed: 662
+substrings of length 1-3 that are German district codes (2026 list): E, G, GT, GZ, OG, Z, ZE
+
+== YOGTZE
+  german whole-string fits: Y-06723 (Bundeswehr series)
+  dutch 6-sign fits: YO-67-ZE series 4 [letters not issued: EO]; 40-GT-23 series 3 [ok]
+
+== YOG'TZE
+  german whole-string fits: Y-06723 (Bundeswehr series)
+  dutch 6-sign fits: YO-67-ZE series 4 [letters not issued: EO]; 40-GT-23 series 3 [ok]
+
+== YOGZE (T struck)
+  german whole-string fits: Y-0623 (Bundeswehr series)
+  dutch 6-sign fits: none (no letter/digit look-alike assignment gives 99-XX-99 or XX-99-XX)
+
+control (all 720 orderings of Y,O,G,T,Z,E): german district fit 504/720, dutch issued-letter fit 336/720; Bundeswehr Y-digits fit = every ordering starting with Y (120/720), by construction
