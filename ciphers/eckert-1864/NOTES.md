@@ -324,8 +324,8 @@ exit 0
 - 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L4 answer landed, local-runner/L4-2026-10-05.md -- blocked: HathiTrust Cloudflare check, no E4/E5 phrase query sent, no absence claimed. Row blocked; owner desk ASKS 141.
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
-Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 3 Beckwith/Kimber entries in Cipher No. 2 (section 8); the rest of the ledger untranscribed.
-- the other seven selected Beckwith/Kimber/Caldwell entries (Cipher No. 2) - blocker: not-attempted; section 8 "Not done"; next: two transcription passes of those entries and decode_no2.py with key-no2.md (cost estimated from section 4's 20-entry pass, not measured), ~$4
+Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 11 Beckwith/Kimber/Caldwell entries in Cipher No. 2 (section 8 and DEF1-ECK64, 5 Oct 2026: H 273, C 6, I 10, M 1, `decode_no2.py --check` exit 0); the rest of the ledger untranscribed.
+- Cipher No. 2 data conflict: Spit = Near in key-no2.md (p.22 l.26 R) but OR I/33 p.982 prints "men" in N2-E - blocker: not-attempted; found by DEF1-ECK64 5 Oct 2026 after its brief was met; next: re-read p.22 l.26 of mssEC 47 (pointer 580) and the same row in mssEC 48 at full size, ~$1
 - corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
 - Jan-Feb 1864 entries in the old vocabulary - blocker: not-attempted; section 5; next: read mssEC 67 (No. 9) or the No. 12 template and decode a sample of entries (cost not given in the folder; estimate), ~$3
 
@@ -337,7 +337,7 @@ Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H
 - [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries
 - [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026)
 - [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
-Verdict: keep going: 2 internal gaps; cheapest next: Beckwith/Kimber/Caldwell entries in Cipher No. 2, ~$4
+Verdict: keep going: 2 internal gaps; cheapest next: the Spit/men conflict in Cipher No. 2 (re-read mssEC 47 p.22 l.26 and mssEC 48), ~$1 (updated DEF1-ECK64, 5 Oct 2026: the eight Beckwith/Kimber/Caldwell entries are read)
 
 ## mssEC 18 check for E4/E5 copies, 5 Oct 2026 (RUN6-ECK, LANE-RUN6 wave 2)
 
@@ -345,3 +345,36 @@ Route: Huntington CONTENTdm item API, `hdl.huntington.org/digital/api/collection
 Found: mssEC 18 holds a different set of 21-22 Apr entries from mssEC 19 p.49 and mssEC 25 pp.77-79: Beckwith/Sheldon/Cutler/Benham/Meigs entries and a Horner NY 21 Apr 9.40 PM telegram "for Vulcan John Ericsson ... camels made to lift the Tecumseh" (p.56, pointer 9716, volunteers' text; appears in clear words, signed "Annal nine fifty"). Meigs 22 Apr 10 PM to Van Vliet (p.57, pointer 9717) is not E5 (E5 = Meigs/Bender to Butler, 22 Apr 10.45 AM).
 Not found: no entry to Butler at Fort Monroe, no Fox signature entry at 9.30 PM, and no 4,000-men/1,000-horses Meigs entry in the volunteer text of pointers 9710-9720 (searched Butler, Monroe, Roanoke, Bender, camels, 4000 by script). So no second copy of E4 or E5 in mssEC 18 was located; this is conditional on the volunteers' transcription (rule 2) and on 11 pages only (21-23 Apr), not a verdict on the image, and pp.52-53 (9712-9713) carry no date line in the transcription. No code word of key.md changes; no grade moves. Related, not a copy: the Ericsson/Tecumseh telegram is the Fox-Ericsson subject of E4's clear counterpart (ORN I/9 p.667 per section 1), a witness for context only; not graded, no novelty language.
 Next (not done): look at images of pp.52-53 if a person wants the undated pages checked; otherwise this gap is closed as "no copy located in 21-23 Apr text".
+
+## Cipher No. 2: the eight further entries, 5 Oct 2026 (DEF1-ECK64, LANE DEFAULT-account-1-20261005-2039)
+
+Brief: section 8 "Not done", the remaining Beckwith/Kimber/Caldwell entries of the 19 Sept selection. The 29-candidate
+list itself was never committed (section 4, or_check scratch), so the entries were re-found: the volunteer text of the
+ten selection pages (Huntington CONTENTdm item API, 11 requests incl. one 502 retried once and p.90 to check a run-on)
+names exactly four Beckwith, three Kimber and one Caldwell entry, the count section 2 gives; section 8's "seven" was
+eight. They are N2-D (p.49, 21 Apr), N2-E and N2-F (p.58, 25 and 27 Apr), N2-G (p.68, 12 May), N2-H (p.78, 24 May),
+N2-I and N2-J (p.89, 7 and 8 June), N2-K (p.176, 10 Sept 1864). Another Kimber entry (Vicksburg, 11 June 1864) opens
+p.90 (pointer 8982); not read here.
+
+Crop step (mandatory, as run; S = the worker's scratch folder, crops not committed, regenerable from the committed
+images): `python3 tools/iiif_lines.py --image ciphers/eckert-1864/images/mssEC19_p<pointer>.jpg --out $S --prefix K<n>
+--region 120,<y0>,2400,<h> --centres 50,154,... (104 px pitch) --lines-per-crop 3 --max-width 2400`, regions K1 8941
+300-1200, K2 8950 100-1180, K3 8950 1880-2600, K4 8960 1880-3020, K5 8970 1130-1950, K6 8981 130-680, K7 8981
+680-2080, K8 9070 1480-2020, plus nine 320 px repair strips for lines the regions clipped. Automatic line detection
+failed on these ruled pages (0-6 lines found), hence `--centres`. Passes: A and B, two Sonnet calls each (4 entries per
+call), blind to each other and to the volunteer text; reconciliation by the worker against the strips with the
+volunteer text as third witness. Main settlements: Crowd (A "Gowd"), Nutmeg (both passes "Antwerp"; strip and
+volunteer Nutmeg), Pekin (B "Tekin"/A "Sekin"), lessees (A "losses"), "talbot" in N2-I/N2-K is not struck (a long
+t-cross; talbot = of the, and the OR has "of the" in N2-K). N2-K's header line is the volunteer text's only.
+
+Result (`python3 decode_no2.py`, `--check` exit 0; reading-no2.md "The eight further entries"): code-word tokens
+over the eight H 162, C 2, I 6, M 0; four of the H tokens sit on a doubtful page word (Benton[?], pagan[?], Lamb[?],
+Quivered[?]). Five of the eight are printed in the OR and agree word for word apart from the clerk's slips: N2-E I/33
+p.982, N2-G I/34 pt 3 p.554, N2-H I/36 pt 3 p.145, N2-J I/34 pt 4 p.265, N2-K I/41 pt 3 p.132-133 (IA djvu full texts,
+5 downloads; pages from OCR running heads). N2-D (Secretary of War to Grant, 21 Apr, troop list "making in all 2800"),
+N2-F (Augur to Sheridan, 27 Apr, 8th Illinois Cavalry) and N2-I (to Dana, 7 June, Colonel Seward of the 9th NY Heavy
+Artillery reported missing) were not located in the OR volume searched for each (I/33; I/33; I/36 pt 3) by the phrases
+listed in reading-no2.md -- a search result only, other volumes and editions not searched; no novelty is claimed
+(rule 10). One data conflict: N2-E "Clarke Dwight Spit" decodes "6000 Near" with the book's Spit = Near, the OR prints
+"6,000 men"; logged in Remaining gaps, the key row is not changed. A be-api full-text phrase search (8 requests, one
+503, not retried) gave no further hits. Requests: hdl.huntington.org 11, archive.org 5, be-api.us.archive.org 8.

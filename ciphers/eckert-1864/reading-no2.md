@@ -68,6 +68,35 @@ source, and the OR is only the check.
   "been", "plain"; "yesterday", "10 am"; "(sent 12 m from Book ...)", "(90 w)", "(2.35 PM Tinker)") are the
   telegraph office's service notes and a later hand's attempt at the first words; they are not transcribed.
 
+## The eight further entries (DEF1-ECK64, 5 Oct 2026)
+
+N2-D to N2-K are the Beckwith (4), Kimber (3) and Caldwell (1) entries set aside from the 19 Sept 2026
+selection, found on the selection pages 49, 58, 68, 78, 89 and 176 by the volunteer text. Transcription: two
+blind Sonnet passes over `tools/iiif_lines.py` strips of the committed 2583 px images, reconciled by the worker
+against the strips, volunteer text as third witness (NOTES.md "Cipher No. 2: the eight further entries").
+Code-word tokens over the eight: **H 162, C 2, I 6, M 0** (`python3 decode_no2.py`; the 11-entry total is
+H 273, C 6, I 10, M 1). Four H tokens rest on a doubtful transcription and are M for the word on the page:
+Benton[?] (N2-D, a numeral), pagan[?] (N2-E, Artillery), Lamb[?] (N2-E, Halleck), Quivered[?] (N2-G, destroyed).
+
+Print check (section 4 method: IA djvu full text of the OR volume for the date, phrase search):
+
+| entry | ledger | OR print found | agreement |
+|---|---|---|---|
+| N2-D | the Secretary of War (signature Costume) to Grant, 21 Apr 1864 6 PM: Canby reports troops forwarded by [Saturday?] or Sunday, 14th NY Heavy Artillery etc., "making in all 2800 and 18" | not located in I/33 (warofrebellion33unit) by "making in all", "Fourteenth New York Heavy" | -- |
+| N2-E | Halleck to Grant, 25/26 Apr 1864 2 PM: a spy reports Longstreet's baggage at Richmond, Pickett sending 5-6,000 to Lee, torpedoes below Tappahannock | I/33 p.982 (Washington, April 26, 1864, 2 p.m.) | word for word except: OR "5,000 or 6,000 men" where the book's value for Spit is Near (key-no2.md p.22 l.26 R) -- a data conflict, not resolved here; the ledger header says 25 Apr, its own date words say April 26 |
+| N2-F | Augur (signed "Wiley Lantern") to Sheridan (Negus), 27 Apr 1864 10 AM: hardly one half of the 8th Illinois Cavalry yet mounted; the others at Giesboro taken by Burnside | not located; the request it answers is in I/33 (Sheridan to Augur, 26 Apr, "I am very anxious to get the Eighth Illinois Cavalry") | -- |
+| N2-G | Halleck to Canby, 12 May 1864 12.30 PM | I/34 pt 3 p.554 (warofrebellion343unit) | word for word ("Washita"; OR "for future operations", ledger "of") |
+| N2-H | Halleck to Grant, 24 May 1864 8 PM | I/36 pt 3 p.145 (warofrebellion363unit), 8.20 p.m. | word for word; ledger "see them all together", OR "use them altogether"; time word 8.30 PM |
+| N2-I | Stanton to Dana, 7 June 1864 6 PM: report that Colonel Seward, son of the Secretary, commanding 9th NY Heavy Artillery, is missing | not located in I/36 pt 3 by "Seward", "Ninth New York Heavy" | -- |
+| N2-J | Halleck to Canby, Vicksburg, 8 June 1864 4 PM | I/34 pt 4 p.265 (warofrebellion344unit) | word for word; OR "within our lines", ledger "in to our lines" |
+| N2-K | Halleck to Canby, 10 Sept 1864 11.30 AM | I/41 pt 3 p.132-133 (warofrebellion413unit) | word for word |
+
+Page numbers are taken from the OCR running heads next to the hit and may be one off. Plain words that the
+book also prints as code words are marked `plain:` in ciphertext-no2.txt: Can (in "Can by", General Canby),
+planting, Tappahannock, Despatches, animals, raining, Seward, negroes. Clerk's forms added to key-no2.md
+section 8 at grade I: Elliot (Elliott = 10), Russel (Russell = 60), Domming (Downing = 7). Nothing here is a
+novelty statement (rule 10); D, F and I were not located in the volumes named, which is a search result only.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -89,5 +118,53 @@ Code-word tokens: H 20, C 2, I 2, M 1.
 
 Code-word tokens: H 47.
 
-Totals over the 3 entries: H 111, C 4, I 4, M 1.
+**N2-D | Page 49 | 8941 | 21 Apr 1864, to Grant at Culpeper (operator S. H. Beckwith)**
+
+{time: 6 PM} For [Lieut Gen U.S. Grant] [.] [General] Can by reports that he will for ward by South[?] or [Sunday] the [14] [New York] [Heavy] [Artillery] the [4] [Unite (-ed, -ing)]d States[?] [Infantry] [329][?] The [8] [Infantry] [321] and the [10] [Infantry] [263] making in all [2800] and [18]  {tail: [signed] [Secretary of War]}
+
+Code-word tokens: H 32, I 2.
+
+**N2-E | Page 58 | 8950 | 25 Apr 1864 2 PM, to Grant at Culpeper (Beckwith, "No 2")**
+
+[Maj Genl U S Grant] ---- a [Spy] whose [Information] has heretofore proved correct watson's on the [16] that [Longstreet] baggage was at [Richmond] & his [Artillery][?] at [Lynchburg] [,] that [Picket (-ed, -ing)] was sending [5] or [6000] [Near] from [North Carolina] to [Lee] & that the latter had [80] days Supplies at [Gordonsville] [,] Also that the [Rebel]'s were planting torpedoes Skylock [Rappahannock] below Tappahannock  {tail: [signed] [H W Halleck][?] {time: 2 PM} [April] [26] ---- ---- ----}
+
+Code-word tokens: H 27.
+
+**N2-F | Page 58 | 8950 | 27 Apr 1864 10 AM, to Meade's headquarters (operator M. C. Caldwell)**
+
+[Sheridan P H] Hardly [1] half of the [8] [Illinois] [Cavalry] is yet mounted on [Equipment]'s all the other mounted men at Giesboro & the [Cavalry] [Camp] are taken by [Burnside A E]  {tail: [signed] [Augur C C] {time: 10 AM} Still water runs deep}
+
+Code-word tokens: H 12.
+
+**N2-G | Page 68 | 8960 | 12 May 1864 12.30 PM, to Canby (operator S. P. Kimber)**
+
+[Washington] {date: May 12} {time: 12.30 PM} For [Canby Ed R S] [.] Despatches just received from [Steele Fdk] dated Little Rock {date: May 4} [.] A large number of wagons & animals were [Destroy (-ed, -ing) [#]]ed[?] in his [Retreat (-ed, -ing)] and his main want now is [Transportation] [.] He thinks the Wachita [River] is the best line of future operations against the [Rebel]'s in [Louisiana] & southern [Arkansas]  {tail: [signed] [H W Halleck] raining hard here}
+
+Code-word tokens: H 18.
+
+**N2-H | Page 78 | 8970 | 24 May 1864 8 PM, to Grant (Beckwith)**
+
+[Washington] {time: 8.30 PM} {date: May 24} for [Lieut Gen U.S. Grant] [.] When I recd your [Telegraph (-ed, -ing)] of {time: 8 AM} yesterday I had prepared [Order]'s for [Smith W.F] to [Join] you with [20000] [Men] [.] [Butler B F] is now [Order]ed to hold him in readiness to [Move (-ed, -ing)] [.] I wish everything was away from [South] Side [Of the] [James] & with you [,] it would be much better [.] I don't like these divided [Command (-ed, -ing)]'s with the [Enemy] intervening [.] I would rather see them all together under your own eye  {tail: [signed] [H W Halleck] ---- ---- ---- ----}
+
+Code-word tokens: H 24, C 2, I 3.
+
+**N2-I | Page 89 | 8981 | 7 June 1864 6 PM, to Grant (Beckwith)**
+
+{time: 6 PM} [June] [7] [Dana C A] [.] There is a [Report] that [Colonel] Seward Sont [Of the] Secretary & [Command (-ed, -ing)]ing [9] [New York] [Heavy] [Artillery] is [Missing] Please ascertain & [Report] immy whether any thing has happened to him [Secretary of War]
+
+Code-word tokens: H 15, I 1.
+
+**N2-J | Page 89 | 8981 | 8 June 1864 4 PM, to Canby (Kimber)**
+
+[Washington] {date: June 8} {time: 4 PM} for [Canby Ed R S] [Vicksburg] [.] The [Secretary of War] directs that where the [Troops] protecting leased plantations are required for [Offensive] operations they be used for that purpose [,] care being taken to give protection to the negroes on such plantations by bringing them in to our lines [.] Military Operations must not be interfered with by any claims of lessees for the protection of their plantations [.] All [Cavalry] [Horse]'s at [St Louis] have been ordered to [Department] of [Arkansas]  {tail: [signed] [Maj Gen H W Halleck] Time everything}
+
+Code-word tokens: H 19.
+
+**N2-K | Page 176 | 9070 | 10 Sept 1864 11.30 AM, to Canby (Kimber, New Orleans via NY & Cairo)**
+
+{time: 12 noon AM} [10] for [Canby Ed R S] [.] [General] [Smith]'s [Command (-ed, -ing)] has been stopped at [Cairo] and ordered [West] [Of the] [Mississippi] to opr rate against [Price] & Co [.] He has full discretion how to operate  {tail: [signed] [H W Halleck]}
+
+Code-word tokens: H 15.
+
+Totals over the 11 entries: H 273, C 6, I 10, M 1.
 <!-- decode.py: derived block ends -->

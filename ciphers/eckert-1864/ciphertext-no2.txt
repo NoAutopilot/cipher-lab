@@ -59,3 +59,94 @@ against Garden yacht Perhaps the Security of Fortunes virtue
 and the prevention of raids in to Bremen will
 absorb all your spare saffrons yawl Battle warm day
 plain: Ordnance pass
+
+# Added 5 Oct 2026 (DEF1-ECK64): the eight Beckwith/Kimber/Caldwell entries set aside from the 19 Sept 2026
+# selection (NOTES.md section 2: four Beckwith, three Kimber, one Caldwell; section 8 counted seven), located on
+# the ten selection pages by the volunteer text. Two blind Sonnet passes over iiif_lines.py strip crops of the
+# committed 2583 px images (commands in NOTES.md), reconciled by the worker against the strips with the volunteer
+# transcription as third witness. Clipped lines (K1, K5, K7 tails; N2-K head) were read by the worker from extra
+# strips; the N2-K header is from the volunteer text only. "talbot" in N2-I and N2-K carries a long t-cross that one pass read as a strike-through; read as written.
+
+### N2-D | Page 49 | 8941 | 21 Apr 1864, to Grant at Culpeper (operator S. H. Beckwith)
+S H Beckwith Culpeper   Washn Apl 21st 1864
+Libby For Crowd Tulip Shark Can by
+reports that he will for ward by
+South[?] or Zodiac the James Bengal Simms
+Pagan the Andrew Whistled States[?] Star Benton[?]
+Davis Nelson Franklin The Edwards Sugar Austin
+Douglas Oliver Allen and the Elliot Star
+Brooks Snyder Russel Austin making in all
+Nelson Fisher Smith and Mason yawl Costume
+plain: Can
+
+### N2-E | Page 58 | 8950 | 25 Apr 1864 2 PM, to Grant at Culpeper (Beckwith, "No 2")
+Beckwith (No 2) Culpepper   Wash Apl 25. 1864 2 PM
+belly ---- a wag whose Spencer has heretofore proved correct
+watson's on the Knapp that Kettle baggage was at Horace
+& his pagan[?] at Eddy pike that trade was sending
+Caldwell or Clarke Dwight Spit from Bedford to Jaunt &
+that the latter had tucker days Supplies at Cherry pike
+Also that the Villages were planting torpedoes Skylock adverb below
+Tappahannock yawl Lamb[?] Helen Genesis Oliver Dawson ---- ---- ----
+plain: planting Tappahannock
+
+### N2-F | Page 58 | 8950 | 27 Apr 1864 10 AM, to Meade's headquarters (operator M. C. Caldwell)
+Caldwell MC   Wash Apl 27 64
+Negus Hardly Brown half of the Fisher Agate Pedlar
+is yet mounted on ridges all the other mounted
+men at Giesboro & the Pekin Pauline are taken
+by Lawn Wiley Lantern Emily Still water runs deep
+
+### N2-G | Page 68 | 8960 | 12 May 1864 12.30 PM, to Canby (operator S. P. Kimber)
+S. P. Kimber Care Gen Canby   Washn May 12th 1864 12.30 PM
+Happy May Hoffman Topsy For Mastiff Tulip Despatches just
+received from Nutmeg dated Little Rock May Baker yacht
+A large number of wagons & animals were Quivered[?]
+in his Vulture and his main want now is
+Weasel Tulip He thinks the Wachita Wafer is the
+best line of future operations against the Violets in
+Audit & southern Asp Welch Lady raining hard here
+plain: Despatches animals raining
+
+### N2-H | Page 78 | 8970 | 24 May 1864 8 PM, to Grant (Beckwith)
+S H Beckwith 2   May 24. 1864 8 PM
+Huron Nelly May Nelson baker for crowd tulip When I
+recd your Whiff of Deborah yesterday I had prepared repeats
+for Illinois to Sweden you with Nelson Zebra Summer Yacht
+Legend is now repeated to hold him in readiness to
+Swindle yard I wish everything was away from Wick Side
+talbot abbot & with you pike it would be much
+better yard I don't like these divided prospects with the
+robin intervening yard I would rather see them all together
+under your own eye Windham lamb ---- ---- ---- ----
+
+### N2-I | Page 89 | 8981 | 7 June 1864 6 PM, to Grant (Beckwith)
+6 pm S H Beckwith   Washn June 7th 1864
+Libby Luke Domming Pollux tulip There is a watson
+that Paxton Seward Sont talbot Secretary & prospecting Franklin
+Bengal Simms Pagan is stanley Please ascertain & watson
+immy whether any thing has happened to him Barton
+plain: Seward
+
+### N2-J | Page 89 | 8981 | 8 June 1864 4 PM, to Canby (Kimber)
+S. P. Kimber   Washington D. C. June 8th 1864 4 PM
+Hang June Fisher Julia for Mastiff Hero Yacht
+The Beach directs that where the Widow protecting
+leased plantations are required for Torrent opera = tions
+they be used for that purpose Pike care
+being taken to give protection to the negroes
+on such plantations by bringing them in to
+our lines tulip Military Opera = tions must not
+be interfered with by any claims of lessees
+for the protect = ion of their plantations yardstick
+All Pekin Silvers at Honduras have been ordered
+to Quotient of Asp yawl Behead Time everything
+plain: negroes
+
+### N2-K | Page 176 | 9070 | 10 Sept 1864 11.30 AM, to Canby (Kimber, New Orleans via NY & Cairo)
+Kimber N Orleans via NY & Cairo   Wash 11.30 am Sept 10th 1864
+Gertrude French for Mastiff tulip Shark Nuptials prospect
+has been stopped at Black and ordered world
+talbot Agnew to opr rate against Knell &
+Co yacht He has full discretion how to
+operate welch Lady

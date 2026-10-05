@@ -1808,3 +1808,6 @@ route-page reading of "Yard".
 | Chumb | Maj Gen N P Banks | M | N2-B; the book's word is Cherub (p.13 l.25 R) or Lapland (p.18 l.3 L); the clerk wrote "Chumb"; OR "General Banks" |
 | Harry | Washington | C | A3V3-ECKC, 4 Oct 2026: mssEC 18 entry 9902.402 (30 Nov 1864, to Sheridan) "Left for Harry [?]" = OR I/43 pt 2 p.708 (OCR running head) "left for Washington"; the book gives Huron/Hang = Washington (p.16 l.18); one witness, conditional on the volunteer transcription |
 | author | Chattahoochee | C | A3V3-ECKC, 4 Oct 2026: mssEC 18 entry 9680.31 (27 Feb 1864, to Grant) "North of author River" = OR I/32 pt 2 p.478 (OCR running head) "north of the Chattahoochee River"; one witness, conditional on the volunteer transcription |
+| Elliot | 10 (numeral) | I | DEF1-ECK64, 5 Oct 2026: N2-D "the Elliot Star" (the 10th Infantry); the book's numeral word is Elliott (fly leaf row 10 L), the clerk wrote one t |
+| Russel | 60 (numeral) | I | DEF1-ECK64, 5 Oct 2026: N2-D "Russel Austin" (63); the book's word is Russell (fly leaf row 24 R), the clerk wrote one l |
+| Domming | 7 (numeral) | I | DEF1-ECK64, 5 Oct 2026: N2-I "Luke Domming" = June 7, the ledger date of the entry; the book's word is Downing (fly leaf row 7 R) |
