@@ -1544,3 +1544,11 @@ Checks (A3V3-SOU44, 4 Oct 2026): gaps_check run below.
 ## JSTOR runner, 4 Oct 2026
 
 read 4 Oct 2026 (page viewer, no download), Hatzenberger 2015 https://www.jstor.org/stable/24719303: p.325 quotes Confessions VII (n.: p.349) on Rousseau deciphering the backlog ("en moins de huit jours j'eus déchiffré le tout"); p.326 states that in the diplomatic cipher "« République » s'écrivait « 136 », « Sénat » était retranscrit par « 219 » et « ambassadeur » par « 404 »" (source note not captured); p.329 "il chiffre et déchiffre"; pp.338-339 quote passages "chiffré par Rousseau" in deciphered form: letter to Amelot 29 Feb 1744 (n.53 DV p.1144), dispatch to the King 23 May 1744 "passage codé" (n.54 DV p.1195), letter to Amelot 9 Nov 1743 "un long paragraphe entièrement chiffré" (n.55 DV p.1069). Edition: "DV" pages in the 1000s with Candaux's introduction (n.17 "Candaux, p. ccxlix") -- i.e. the Pléiade Œuvres complètes III edition; full bibliographic note not viewed
+
+## Lead from the JSTOR read (5 Oct 2026 03:30 UTC, account-3 orchestrator)
+
+Hatzenberger 2015 p.326 gives three code values for the embassy's diplomatic cipher: République 136, Sénat 219,
+ambassadeur 404 (his source note not captured). None is in key.tsv. Grep of ciphertext*.txt: 136 occurs 0 times, 219 once,
+404 twice. Untested: whether "Sénat"/"ambassadeur" fit those positions in context, and which cipher Hatzenberger means
+(Montaigu's own or the Foreign Ministry's). Next: a small fit check of the 3 occurrences against the reading (~$1), and
+the source of Hatzenberger's note (DV, Pléiade III, ILL list item 13). Not applied to the key.
