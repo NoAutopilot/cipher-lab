@@ -211,3 +211,11 @@ decipherment located"; any quotation of f.117r presented as a continuous sentenc
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **BnF fr.3252 f.117r (no.77): Lodovico Birago to the duc de Nevers, 13 March 1572**: **D1** (Non-decrypted; outward "fragments read"), 68.1% (S 190 of 279). Check: published key; S-only stretches at most about a word ('tention', 'facile', 'auoriser ces'), no clause above AD; judge FAIL. Class without a reading: not counted as a unique solve.
+
+## Propagation note (D2-B117KAPC, 5 Oct 2026; solver-side, not a verifier verdict)
+f.117r grades moved after this audit: S 190 / M 63 -> **S 217 / M 36** (U 26), reading text unchanged. The printed 1572 key was
+licensed on la/recon_f117_3r.tsv at the measured post-look-alike error (no.87 known answer, 0.126 pooled, bracket 0.183; power 18/20
+and 16/20, rank 1/201 on 5/5 seeds; harvest/f117/la/PREREG-KAPC.md), and 27 M tokens where top-1 and the look-alike third reader
+agree moved to S under the BIR-APPLY rule (NOTES.md "D2-B117KAPC"; harvest/f117/la/kapc/). Longest S-only stretch 17 letters, no
+clause; judge FAIL unchanged. The safe sentence above still holds; depth and N-class are left to a verifier. SECOND-OPINIONS-QUEUE row
+SO-BIR3252-117-47 checked: its prompt quotes no grade counts and values are unchanged, so it needs no edit.

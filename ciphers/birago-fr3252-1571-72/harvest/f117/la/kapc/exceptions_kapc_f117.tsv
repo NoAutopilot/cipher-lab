@@ -1,0 +1,59 @@
+folio	line	pos	value	grade	reason
+f117	L09	11	s	M	BIR-APPLY M: A1-BIR-VERIFY T95 vs BIR-OPEN T51 conflict (owner sorter)
+f117	L03	1	p	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T90) and BIR-OPEN open-choice (T90) agree
+f117	L07	21	s	M	BIR-APPLY M: A1-BIR-VERIFY T95 vs BIR-OPEN T51 conflict (owner sorter)
+f117	L01	17	e	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T86) and BIR-OPEN open-choice (T86) agree
+f117	L01	22	e	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T86) and BIR-OPEN open-choice (T86) agree
+f117	L03	23	d	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T18) and BIR-OPEN open-choice (T18) agree
+f117	L03	27	?	M	BIR-APPLY M: A1-BIR-VERIFY X_NEW vs BIR-OPEN T84 conflict (owner sorter)
+f117	L04	23	e	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T86) and BIR-OPEN open-choice (T86) agree
+f117	L07	28	e	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T86) and BIR-OPEN open-choice (T86) agree
+f117	L05	2	s	M	BIR-APPLY M: A1-BIR-VERIFY T95 vs BIR-OPEN T51 conflict (owner sorter)
+f117	L08	10	r	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T83) and BIR-OPEN open-choice (T83) agree
+f117	L05	9	l	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T13) and BIR-OPEN open-choice (T13) agree
+f117	L09	30	s	M	BIR-APPLY M: A1-BIR-VERIFY T95 vs BIR-OPEN T51 conflict (owner sorter)
+f117	L05	27	e	M	BIR-APPLY M: A1-BIR-VERIFY T66 vs BIR-OPEN T76 conflict (owner sorter)
+f117	L06	23	l	M	BIR-APPLY M: A1-BIR-VERIFY T13 vs BIR-OPEN T64 conflict (owner sorter)
+f117	L03	15	e	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T86) and BIR-OPEN open-choice (T86) agree
+f117	L05	12	s	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T95) and BIR-OPEN open-choice (T95) agree
+f117	L04	7	e	S	BIR-APPLY S: A1-BIR-VERIFY two-option (T86) and BIR-OPEN open-choice (T86) agree
+f117	L04	6	s	M	BIR-APPLY M: A1-BIR-VERIFY T95 vs BIR-OPEN T51 conflict (owner sorter)
+f117	L03	11	e	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T60->T86 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L05	18	l	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T65->T51 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L02	3	e	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T60->T86 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L05	16	d	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T98->T18 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L03	10	l	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T65->T51 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L02	1	l	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T95->T51 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L08	23	l	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T65->T51 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L09	20	l	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T65->T51 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L06	13	l	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T65->T51 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L10	7	e	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T60->T86 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L09	17	e	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T60->T86 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L06	21	e	M	BIR-APPLY M: BIR-OPEN single instrument only (open blind read T60->T86 + lattice lam 4 (calibration 0.95, posnull PASS))
+f117	L01	8	l	S	D2-B117KAPC S: top1 T51 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L01	18	n	S	D2-B117KAPC S: top1 T76 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L01	19	turino	S	D2-B117KAPC S: top1 T46 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L01	23	n	S	D2-B117KAPC S: top1 T60 and look-alike 3rd reader (lookalike confirms) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L01	28	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L02	4	n	S	D2-B117KAPC S: top1 T60 and look-alike 3rd reader (lookalike confirms) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L02	6	n	S	D2-B117KAPC S: top1 T76 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L02	14	d	S	D2-B117KAPC S: top1 T18 and look-alike 3rd reader (lookalike confirms) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L02	23	b	S	D2-B117KAPC S: top1 T81 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L02	26	n	S	D2-B117KAPC S: top1 T60 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L03	4	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L03	9	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L03	16	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L04	12	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L04	22	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L04	24	n	S	D2-B117KAPC S: top1 T60 and look-alike 3rd reader (lookalike confirms) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L04	26	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L05	22	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L06	4	n	S	D2-B117KAPC S: top1 T60 and look-alike 3rd reader (lookalike confirms) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L06	10	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L06	20	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L07	10	n	S	D2-B117KAPC S: top1 T60 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L07	17	s	S	D2-B117KAPC S: top1 T92 and look-alike 3rd reader (lookalike confirms) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L08	6	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L08	19	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L08	27	et	S	D2-B117KAPC S: top1 T29 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L10	1	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)

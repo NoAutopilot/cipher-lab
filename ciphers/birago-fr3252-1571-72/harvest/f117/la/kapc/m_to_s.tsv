@@ -1,0 +1,64 @@
+line	pos	top1_sign	sign_required	kind	sign_3r	note_3r	new_grade	align
+L01	8	T51	T51	base	T51	lookalike 2-of-3	S	equal-length
+L01	13	T45	T45	base	T45	passC	M	equal-length
+L01	18	T76	T76	base	T76	lookalike 2-of-3	S	equal-length
+L01	19	T46	T46	base	T46	lookalike 2-of-3	S	equal-length
+L01	23	T60	T60	base	T60	lookalike confirms	S	equal-length
+L01	28	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L02	1	T95	T51	single	T95	lookalike UNSETTLED one-eye fill	M	equal-length
+L02	2	T85	T85	base	T85	passC	M	equal-length
+L02	3	T60	T86	single	T60	lookalike 2-of-3	M	equal-length
+L02	4	T60	T60	base	T60	lookalike confirms	S	equal-length
+L02	6	T76	T76	base	T76	lookalike 2-of-3	S	equal-length
+L02	14	T18	T18	base	T18	lookalike confirms	S	equal-length
+L02	15	T66	T66	base	T66	passC	M	equal-length
+L02	23	T81	T81	base	T81	lookalike 2-of-3	S	equal-length
+L02	26	T60	T60	base	T60	lookalike 2-of-3	S	equal-length
+L02	27	T98	T98	base	T18	lookalike 2-of-3	M	equal-length
+L03	4	T83	T83	base	T83	lookalike 2-of-3	S	difflib
+L03	5	T95	T95	base	T95	passC	M	difflib
+L03	9	T83	T83	base	T83	lookalike 2-of-3	S	difflib
+L03	10	T65	T51	single	-	unaligned	M	difflib
+L03	11	T60	T86	single	-	unaligned	M	difflib
+L03	16	T83	T83	base	T83	lookalike 2-of-3	S	difflib
+L03	27	T81	T81	conflict	T81	lookalike UNSETTLED one-eye fill	M	difflib
+L04	6	T65	T65	conflict	T95	lookalike 2-of-3	M	equal-length
+L04	12	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L04	22	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L04	24	T60	T60	base	T60	lookalike confirms	S	equal-length
+L04	26	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L05	2	T65	T65	conflict	T95	lookalike 2-of-3	M	equal-length
+L05	16	T98	T18	single	T98	lookalike 2-of-3	M	equal-length
+L05	18	T65	T51	single	T65	lookalike UNSETTLED	M	equal-length
+L05	19	T45	T45	base	T45	passC	M	equal-length
+L05	22	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L05	27	T76	T76	conflict	T66	lookalike 2-of-3	M	equal-length
+L06	4	T60	T60	base	T60	lookalike confirms	S	equal-length
+L06	10	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L06	13	T65	T51	single	T65	lookalike 2-of-3	M	equal-length
+L06	18	T45	T45	base	T90	lookalike 2-of-3	M	equal-length
+L06	20	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L06	21	T60	T86	single	T60	lookalike UNSETTLED	M	equal-length
+L06	23	T64	T64	conflict	T64	passC	M	equal-length
+L06	24	T45	T45	base	T45	passC	M	equal-length
+L06	26	T45	T45	base	T90	lookalike 2-of-3	M	equal-length
+L06	31	T36	T36	base	T36	lookalike UNSETTLED	M	equal-length
+L07	10	T60	T60	base	T60	lookalike 2-of-3	S	equal-length
+L07	17	T92	T92	base	T92	lookalike confirms	S	equal-length
+L07	21	T65	T65	conflict	T65	lookalike 2-of-3	M	equal-length
+L07	23	T60	T60	base	T60	lookalike UNSETTLED	M	equal-length
+L07	27	T98	T98	base	T98	lookalike UNSETTLED	M	equal-length
+L07	29	T81	T81	base	T81	lookalike UNSETTLED	M	equal-length
+L08	6	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L08	19	T83	T83	base	T83	lookalike 2-of-3	S	equal-length
+L08	23	T65	T51	single	T65	lookalike 2-of-3	M	equal-length
+L08	27	T29	T29	base	T29	lookalike 2-of-3	S	equal-length
+L09	11	T65	T65	conflict	T65	lookalike 2-of-3	M	difflib
+L09	17	T60	T86	single	T60	lookalike 2-of-3	M	difflib
+L09	20	T65	T51	single	T65	lookalike 2-of-3	M	difflib
+L09	30	T65	T65	conflict	T65	lookalike 2-of-3	M	difflib
+L10	1	T83	T83	base	T83	lookalike 2-of-3	S	difflib
+L10	6	T57	T57	base	T57	passC	M	difflib
+L10	7	T60	T86	single	T60	lookalike UNSETTLED	M	difflib
+L10	9	T84	T84	base	T84	passC	M	difflib
+L10	10	T70	T70	base	-	unaligned	M	difflib

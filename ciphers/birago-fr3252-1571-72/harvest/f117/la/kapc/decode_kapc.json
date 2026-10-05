@@ -1,0 +1,28 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "../nevers-birago-fr3251-1572/harvest/tx_decode/eye/verify/ciphertext_f117_top1.tsv",
+   "key": [
+    "../nevers-birago-fr3251-1572/harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "exceptions": "harvest/f117/la/kapc/exceptions_kapc_f117.tsv",
+   "reading": "harvest/f117/la/kapc/reading_f117_kapc.txt",
+   "tokens": "harvest/f117/la/kapc/reading_f117_kapc_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ],
+   "exception_grade_overrides_conf": true
+  }
+ ]
+}
