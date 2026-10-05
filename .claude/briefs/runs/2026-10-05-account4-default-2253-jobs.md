@@ -133,6 +133,6 @@ Wave 2 note (23:59 UTC): A4-RFMAT dropped -- matignon gap 2 claimed 23:54 by D2B
 every wave-2 worker greps the folder's dated sections AFTER the cited NOTES line before acting (common rule "if a dated section already
 did your named step, stop and report").
 
-### A4-AVS175 -- august-van-saksen-1561-64, WVO 175 p1 remaining 11 lines for Qf and K (cap 5, box 70 min; 2 blind reads x ~1.5 + 1 gloss recon)
+### A4-AVS175 -- august-van-saksen-1561-64, WVO 175 p1 remaining 11 lines for Qf and K (cap 9, box 75 min; folder estimate ~$12 for all 11 lines: do 4-line batches in order and stop before a batch that would cross 80% of cap or box; report lines done)
 NOTES.md Verdict "cheapest next": the other 11 lines of WVO 175 p1 for Qf and K (2 blind reads in 4-line batches, 1 gloss read). Crop
 step pasted first; regrade 126/53/57 tokens the result touches; `decode_key.py --check`.
