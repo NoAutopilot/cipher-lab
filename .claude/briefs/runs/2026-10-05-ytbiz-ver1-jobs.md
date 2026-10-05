@@ -90,3 +90,14 @@ rah-morillo-1817 (results[99]): PROGRESS.tsv says Audit 2 done, status.json does
 holds a second audit by a separate session, set status.json audit_status 'two audits' (and depth fields via depth_check.py if
 missing), citing the AUDIT.md section; if it does not, set PROGRESS.tsv `2` back to '.' with source AUDIT.md. Do not audit anew.
 Then re-run `python3 tools/verify_backlog.py` (regenerates VERIFY-BACKLOG.tsv) and push both registers + the backlog.
+
+# Wave 3 (written 19:0x UTC) -- VERIFY-BACKLOG.tsv low rows, audit 2 only, oldest first
+
+## VER1-LOWA (cap 5, box 60 min)
+Audit 2 in this order, stop at cap: fr5160-letellier-1653 (results[44]), clair1067-brienne-poland-1646 (results[54]),
+clair1108-duvergier (results[57]). Also first: fr3993-gonzague-nevers-1595 has no status.json results row (VER1-REG, e390f79cc):
+add one from its AUDIT.md (both audits, N0, key period, D3 95.2%) following neighbouring rows' schema.
+
+## VER1-LOWB (cap 5, box 60 min)
+Audit 2 in this order, stop at cap: dupuy452-carpi-1520 (results[15]), clair349-este-guise-1556 (results[96]),
+gunther-van-schwarzburg-1561 (results[62]).
