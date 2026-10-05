@@ -1,4 +1,4 @@
-blocked
+open
 Tomokiyo 2018 (academia.edu/37751652), the one edition that could key item /123 or /126, NOT opened by CS-A2-M on 3 Oct 2026: academia.edu body still account/Cloudflare-gated, Wayback holds only the 18 KB landing page (CDX 10 Jul 2024), no Tomokiyo mirror; read instead his 29 Nov 2018 Cryptiana post (abstract only, 3 comments not retrievable) and eleanor1476.htm -- blocked.
 Corrected again by the LANE DX orchestrator, 25 Sept 2026 02:10 UTC: Galende Díaz read in full (below) and does not cover items /123 or /126, but Tomokiyo 2018's body is unread and its "Cipher (1476-1479)" (a syllable cipher of over 500 entries) covers the very window of R1172 (4 Nov 1478) and R1180 (4 Dec 1478); by check-solved.md an edition not opened keeps the verdict `blocked`. Unblock: ASKS row 45 (the owner reads the paper), or DECODE document access (ASKS row 42).
 Galende Díaz 1993-94 (Cuadernos de Estudios Medievales y CC.TT.HH. XVIII-XIX, 1993-94, pp.159-178) read in full
@@ -243,3 +243,22 @@ Verdict stays blocked; the unblocking step is unchanged (ASKS row 45, or a BNE r
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: one DECODE browser login (tools/decode_browser_login.js with --guess-fullsize, the A2-HDK route that served R4692's full-size image on 2 Oct 2026) to re-test whether R1172 (/123) and the Decrypted sibling R1180 (/126) serve full-size images or plaintext documents; image to scratch, never committed; ~$1 (estimate). ASKS row 45 (Tomokiyo 2018 body) stays the outside blocker for the key.
+
+## Tomokiyo 2018 read (5 Oct 2026 03:28 UTC, owner download, account-3 orchestrator)
+
+The owner opened S. Tomokiyo, "Spanish Ciphers before Accession of King Ferdinand: 1470-1479" (academia.edu/37751652, 2018)
+with a free account and downloaded it. The PDF and its key figure are kept in the private repository
+(cipher-lab-private, bne20211-ferdinand-1478/lit/), not here: it is the author's work, not ours to redistribute.
+
+- Section 2.4, "Ferdinand-John II of Aragon Cipher (1476-1479)", lists nine source letters, MSS/20211/94, 105, 109, 114
+  ("mainly used in the reconstruction"), 115, 116, **123 (Cordoba, 4 Nov 1478)**, **126 (Trujillo, 4 Dec 1478)** and 128.
+- Fig. 4 ("Cipher Used in Letters of Ferdinand the Catholic before Accession (1478)") is the reconstructed table:
+  homophonic letter signs for a-y, numbered syllables (ba=3 ... zu=72, bracketed values inferred), and a short
+  nomenclator (Rey, como, por, que, del, vuestra alteza; 82, de, do, du, fu, gi).
+- The paper prints **no decipherment** of item 123 or item 126: no plaintext of either letter is quoted.
+
+Consequence: not found-solved. Status moves from `blocked` to `open` (the block was this one read; the letter is not yet read), but the key question is answered:
+a **published key** (Tomokiyo 2018, Fig. 4; key source `published`, credited) built partly from item 123 itself. What
+the target now needs is the ciphertext: the BNE images of item 123 (bdh.bne.es/bnesearch/detalle/bdh0000186627,
+403 from the cloud) or item 126 (bdh0000186569). Next: owner desk download of those images (one link each), then a
+transcription + key application with tools/decode_key.py; ~$4.
