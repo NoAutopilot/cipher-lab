@@ -11,6 +11,11 @@
 1c. **One message per recipient at a time (owner, 5 Oct 2026).** Before drafting to an address, list every draft and
    every message sent to it in the last 7 days. Fold new asks into a pending draft, or hold them until the recipient has
    answered (or about a week has passed); never queue two separate sends to one institution within a day.
+1d. **Daily send batch (owner, 5 Oct 2026).** Checked drafts accumulate in the project mailbox's Drafts during the day; none
+   is announced one by one. The orchestrator keeps ONE board card, "Send batch" (doc id send-batch), listing every draft that
+   is checked and OK to send, grouped by recipient (rule 1c applied: one message per recipient), each with one line on what it
+   is. The owner sends the whole batch in one sitting, once a day; the orchestrator then confirms each in Sent, logs it and
+   empties the card. Drafts not yet checked are never on the card.
 1b. **Show the relevant work (owner, 5 Oct 2026).** Every outgoing request or question carries one short paragraph
    showing what we have done that concerns THIS recipient's holdings or field (a reading of their item, a key that fits
    their papers, a catalogue correction, an identification), with the folder link, so the note is taken seriously and
