@@ -8861,3 +8861,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 23:34 | D2B-THURP3 (solver, Opus 5.5) | claim: thurloe-printed P3-postscript cross-check vs P5-P7 key, cap 1.5, box end 00:14 UTC 6 Oct, for LANE DEFAULT-account-2-20261005-2217
 2026-10-05 23:34 | D2B-MANT27 (solver, Opus) | claim: sachsstaatsarchiv-manteuffel-1712 frame 0527 transcribe + per-leaf gate; cap $5, box 23:34-00:44 UTC 6 Oct; for LANE DEFAULT-account-2-20261005-2217
 2026-10-05 23:34 | D2B-RUBIN worker | claim: rubin-1953, locate/read FBI FOIA file on Rubin, cap 1.5, box 23:35-00:15 UTC (stop by 00:07), for LANE DEFAULT-account-2-20261005-2217
+2026-10-05 23:34 | D2B-RAY (solver, account 2) | claim: rayburn-2004, earliest Wayback capture of the Schneier Jan 2006 post + image vs images/Rayburn-Cryptogram.jpg; cap 1, box 23:34-00:04 UTC; for LANE DEFAULT-account-2-20261005-2217
