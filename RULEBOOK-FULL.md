@@ -1,0 +1,1027 @@
+> **Human-readable full rulebook.** CLAUDE.md is the slim agent copy of these rules; this file keeps every rule's full
+> wording and the incident stories behind it. Every rule carries a stable id tag (R3.c, OUT.7, USE.6.c, ...; written in square brackets)
+> shared by both files. [R0] Every rule change edits CLAUDE.md AND RULEBOOK-FULL.md in the same commit;
+> `tools/rules_sync_check.py` enforces it.
+
+# cipher-lab
+
+[INTRO] Working area for attacking unsolved historical ciphers. One person plus AI agents. Read `LANDSCAPE.md` for who
+else is working and what is left, `LESSONS.md` for how the successful solvers work. These rules apply to every
+session and every subagent, cloud or local.
+
+## Layout
+
+- [L.1] `ciphers/<name>/` one folder per target: `ciphertext.txt` (as transcribed, never silently repaired),
+  `NOTES.md` (sources, status, what is established vs inferred, failure log), `REQUEST.md` when an archive
+  request is involved, scripts and keys beside them.
+- [L.2] `sources/` unmodified snapshots of other people's pages. Never edit.
+- [L.3] `tools/` shared scripts. Anything a second target could reuse goes here, not in a target folder.
+- [L.4] `CATALOG.md` every item from Cryptiana's list; `LANDSCAPE.md` the corrected picture.
+
+## Conventions (non-negotiable)
+
+1. [R1] **Search before solving.** Before any campaign on a target, establish that it is still unsolved, in this
+   order: the cipher's name in a search engine; the sender's printed Lettres or Correspondance on the Internet
+   Archive; the calendars and state-paper series; the comment threads of the list posts (Cryptiana blog,
+   Cipherbrain); DECODE at de-crypt.org; and the two solver repositories, github.com/dbourdeau/cyphersolver
+   and github.com/aaymeloglu/unsolved-ciphers. Record what was checked and the date in NOTES.md.
+2. [R2] **Image over transcription.** Prefer the page image. When only a transcription exists, say so, and treat a
+   negative as conditional on it.
+3. [R3] **No negative without a matched control.** A solver's failure on a target means nothing unless the same
+   solver reads a synthetic cipher of the same length, symbol count, design and language. Report both numbers.
+   [R3.a] The same holds for a *gain* gate (a crib loop, a model-in-the-loop step, any technique judged by how many
+   points it adds over blind): before wiring a numeric threshold to a control, check the control's own blind
+   baseline is not already near ceiling (roughly >=95%) or already matched by more restarts alone -- a control
+   that already solves blind has no headroom to show a gain regardless of the technique. Lesson of 24 Sept 2026
+   (solvEX): the brief gated the Salviati target's run on a control at "N=720, K=36 (Salviati's own N and K)"
+   but used a simple-substitution design at that N, which reads 99.7% blind on 3 seeds -- already on file before
+   the brief was written. Salviati's own cipher is code+mark (cm), which at the same N reads 22-67% blind (LANE
+   R4 P's curve): match the *design*, not only the length and symbol count, when the question is whether a
+   technique adds anything.
+   [R3.b] A matched design is not enough if the two texts being diffed use different transcription conventions.
+   Lesson of 25 Sept 2026 (PX-BRODEC): a leave-one-out control diffed a fresh body decode against the
+   appendix's own period gloss and returned 50-68% against an 80% gate, apparently a failure -- but the gloss
+   abbreviates ("S.d±" for "Snr D.") while the decode spells the word out, so most of the gap was notation, not
+   error. Before diffing two renderings of the same underlying text for a gate, normalize both to one
+   convention (expand abbreviations, one case, one punctuation set) or the gate measures whichever side
+   transcribes more literally, not correctness.
+   [R3.c] A language corpus can be the wrong *era* even when it is the right language. Lesson of 25 Sept 2026
+   (V6-PTCORP, antt-linhares-chave): `tools/judge_plaintext.py`'s `pt17` corpus is Vieira, 17th-century Portuguese;
+   the target is an 1808-1819 letter. Under pt17 the reading FAILed (-1.145 vs real_p05 -1.101) and real prose
+   itself false-negatived 8.5% of the time; swapping to a corpus built from the letter's own period and register
+   (pt18: Correio Braziliense and O Investigador Portuguez, 1808-1819) PASSed the same reading (-1.051 vs real_p05
+   -1.122) and dropped the real-prose false-negative rate to 4.0% -- both sides of the gate moved together, which
+   is what a calibration fix looks like, not threshold-shopping. Before running a language judge on a target with a
+   specific date and register, check whether tools/data's corpus for that language is era-matched; if not, building
+   one is a cheap job (about 12 minutes, V6-PTCORP) worth doing before trusting a FAIL or a PASS
+   (RETRO-2026-09-25i proposal 2).
+   [R3.d] A corpus's held-out false-negative rate is only as trustworthy as its fold count. Lesson of 25 Sept 2026
+   (MJ, espagnol142-mercy-1648): `tools/data/es17c` matched the target's era and genre (1643-47 Spanish
+   court-newsletter *Cartas*, not Cervantes) exactly the way pt18 matched Linhares, and the FAIL did not flip --
+   register-matching alone does not always rescue a judge the way it did once. Its leave-one-file-out
+   false-negative rate (23.5%, N=519) is a blend of only three folds that disagree by 4x (10.0%, 21.0%, 39.5%
+   per volume); a blended rate from so few folds says more about which volume was held out than about the
+   corpus as a whole. Report the per-fold spread alongside the blended rate, and treat a corpus with under
+   ~5 source files and a wide per-fold spread as a FAIL/PASS of unknown reliability rather than trusting the
+   single number, the same way a control below its own gate cannot license a target reading (rule 3's
+   headline paragraph). Lesson of 25 Sept 2026 (EN-FOLDS): `LANG_CORPORA["en"]` (the default English judge
+   corpus, `pg1661_holmes.txt` + `pg2701_mobydick.txt`) had never had this check run at all; run at N=200/500
+   it spreads 0.44-0.64 even after adding three more gutenberg.org sources (Huck Finn, Gatsby, Pride and
+   Prejudice) in `tools/data/en/` -- more sources made the spread *worse*, because Moby-Dick's own register
+   is the outlier, not the file count. A FAIL/PASS against `en` is of unknown reliability; see
+   `tools/data/en/README.md`.
+   [R3.e] When a judge FAILs a candidate reading close to the gate and the document itself carries an independent
+   period gloss or annotation (a marginal or interlinear note, known-genuine and not the candidate), score that
+   text through the same judge alongside the candidate and the shuffled-null controls. Lesson of 25 Sept 2026
+   (ZX-DEC349, clair349-este-guise-1556): the fr16 judge FAILed the decode (-1.109 vs real_p05 -0.882), a clean
+   negative on its own -- but the leaf's own contemporary interlinear gloss scored -1.545 through the identical
+   judge, *worse* than the candidate and only marginally above the shuffled-null controls (-1.62 to -1.65). That
+   places the candidate much closer to genuine prose than to noise despite missing the p05 gate: a gloss score
+   near the shuffled controls, not near real_p05, means a FAIL close to the gate reflects the corpus/threshold at
+   this document's length and register, not necessarily the key -- "judge cannot decide," not a negative. This is
+   conditional (few documents carry their own period gloss) and distinct from the pt18/es17c lessons above, which
+   calibrate the corpus in general; this calibrates against a real text from the same leaf.
+   [R3.f] Before a judge PASS is used as the gate for a solver family, score that family's own decode of the *shuffled*
+   target through the same judge; a PASS on that shuffled decode voids the judge as a gate for that family at
+   that N (ARM-C1, 26 Sept 2026: the en18 judge PASSed a nomenclator decode of shuffled armstrong-madison-1808).
+   [R3.g] A held-out classification gate dominated by one class inflates its own shuffle floor toward the same class,
+   the same way a blended fold rate can hide what a per-fold breakdown would show (the es17c/pt18 paragraphs
+   above, extended from a corpus fold to a held-out map gate). Lesson of 26 Sept 2026 (AX-NAMES, lodewijk-van-
+   nassau-1573-74): a 51-code name map, 24 of 36 codes NULL, read 83.3% on a held-out letter against a 40.4%
+   shuffle floor -- a 43-point margin that looks like a clear pass -- but the shuffle floor itself sits near
+   ceiling on the NULL class alone (73.0%, since most shuffled guesses land on the majority class by chance);
+   the worker's own per-class breakdown (NULL 81.8 vs shuffle 73.0, word class N=1 untestable) shows the real
+   margin is far thinner than the blended number, and the map was correctly re-gated on known-answer codes
+   (AX-NAMES2) before further use. A held-out gate whose classes are unbalanced needs a per-class breakdown or a
+   known-answer control, not the single blended accuracy figure, before it licenses anything.
+   [R3.h] A control that cannot vary on the same axis as the manipulation a test is measuring passes (or fails)
+   identically to the target by construction, and licenses nothing either way -- distinct from a control that
+   legitimately has no discriminating power (bMAT2's two-context M/U rule, 26 Sept 2026, which genuinely could
+   have differed and did not). Two instances the same window (26 Sept 2026): `bCAS` (castelcicala-1816) ran a
+   per-token substitution coverage figure against a shuffled-*order* control -- coverage from a per-token key
+   cannot depend on token order, so the control was identical by construction, "the brief's error, not the
+   worker's" per its own NOTES.md; `AX-5799` (lodewijk-van-nassau-1573-74) ran a run-length-on-keyed-positions
+   gate against a shuffled-*value* control -- the control cannot change which positions carry a long run, only
+   the values at those positions, so a 0%-vs-0% "match" tested nothing ("a key-reuse control must be able to
+   fail differently from the target; a coverage-only gate is not one," AX-5799's own lesson). Before running a
+   family or a gate, check that the named control's number *can* differ from the target's for the specific
+   statistic being computed -- if the manipulation the control applies (order, value, key) is orthogonal to the
+   statistic (coverage, position, count), the control cannot fail and the test is a non-test, not a negative.
+   [R3.i] A per-unit (leaf, page) recovery signal merged into one shared key inherits the weakest unit's unchecked
+   status unless each unit clears its own control before the merge. Lesson of 26 Sept 2026 (Szembek BK 1560,
+   bSZL65/66/67, LANE B7's bSZM merge in progress): three leaves' interlinear-gloss pairs were gated by the same
+   rule-3 shuffle-consistency check on the recurring-code/recurring-gloss pairing -- leaf 66 clears it decisively
+   (real 0.918 vs shuffle mean 0.306, p95 0.341, 87/168 glossed) but leaves 65 and 67 TIE their own shuffle
+   control exactly (0.0 vs 0.0 on 21 occurrences; 0.429 vs 0.429 on 18) -- non-discriminating at that N, the
+   bMAT2 shape above, not a pass. The recovery brief's merge step (interlinear_align.py -> key.tsv) named no
+   per-leaf gate: nothing stops a code attested only on a leaf that tied its control from entering the shared
+   key.tsv at the same grade as a leaf that beat its control decisively. Before folding a unit's glosses into a
+   shared key, check that unit's own control result first, the same way family_run.py already checks a family's
+   control before running the target (Usage item 8) -- a code attested only on a unit whose own control tied or
+   failed is held pending more occurrences or corroboration from a unit that cleared, not merged as equally
+   supported.
+   [R3.j] A second (or third) attempt at an unchanged approach -- the same family, the same alignment method, the same
+   scoring tool -- that changes only the one knob the re-brief bet on and still fails its own gate, without every
+   number moving together toward it, is evidence the approach is the limit, not the setting; it is logged
+   "untestable [by this method/tool] at this N/length" (or "untested-by-this-tool", not refuted) and the next
+   attempt needs a genuinely different instrument or new material, not a further tuning of the same knob. Three
+   shapes this applies to, all from the same 26 Sept 2026 window (RETRO-2026-09-26f, LEARN-2026-09-26-0906 item 1):
+   (a) a family control that moves the *wrong* way after the re-brief's own bet (hessen-1824's running_key: 0.372
+   on an era-mismatched corpus, then 0.331 -- lower -- on a purpose-built era-matched corpus at 2.5x the beam;
+   bHCP2/bHCP3); (b) a NEAR row's named next step, re-run three times at increasing sophistication (a
+   transcription fix, then a pre-registered gate) with every fix genuinely correcting something real, yet the
+   gate fails all three times (matignon-mayenne-1586's f.78v/f.79r alignment: 1f/1g/1h, 23/25 high-confidence
+   answers right pooled but the registered gate FAILs every seed) -- the row's "what would settle it" cell then
+   names new material (more ciphertext, a different leaf) or an owner-side step, not a fourth pass at the same two
+   leaves, without weakening rule 5 (the target stays `partial`, never `closed-negative`, either way); (c) a tool
+   whose own known-answer control fails three times on the same hypothesis, even after a real fix between
+   attempts (AX2-4612S/S2/S3's `key_repair.py`: null-false 100->53->29, but known-answer recovery 0.000->0.625-
+   >0.458 and bigram 3/6->0/2, never all three numbers above gate together) -- retired for that hypothesis, logged
+   in HYPOTHESES.md as "untested-by-this-tool" (not refuted), and not re-briefed against the same hypothesis
+   without a different instrument.
+   [R3.k] A family control's injected-error level must bracket the target's own measured transcription error before a
+   FAIL on that control is logged as a design-family negative, the same way a control's N and K must match the
+   target's own (this section's Salviati headline paragraph) -- an error-tolerant family tested only at error
+   levels below where its own control starts to fail is not yet a test of the design at the target's real
+   reliability. Lesson of 26 Sept 2026 (SALV-DIAG, fr2933-salviati-1525): LANE R8's syllabary controls (DSN,
+   DSN2) ran at 0/5/7% injected error and read 83-99% clean, licensing FAILs on the target logged as
+   control-backed negatives -- but a further sweep at 10/12/14% found the control's own recovery collapses
+   between 7% (89% clean) and 10% (already worse than the target's own decode score), a crossover at about 8-9%,
+   which sits inside the atlas transcription's own measured 14.6% pass-to-pass disagreement. Every prior
+   negative on this target was drawn from an error band the transcription cannot back up: not a design
+   exclusion, a non-test, and the row moves to `partial` (rule 5) with the named next step being a transcription
+   pass to lower the measured error, not a further family attempt at the same noise levels.
+   [R3.l] A per-session calibration re-run against a known negative (the family_run.py "control first" discipline,
+   Usage item 8, applied to a job scored by a subagent rather than a script) stops the job before any candidate
+   is scored when the calibration itself misses its own pre-registered tolerance -- the same control-before-
+   target order `tools/family_run.py` already enforces mechanically, not a caveat written after the candidates
+   are scored anyway. Lesson of 26 Sept 2026 (ARM-S3, armstrong-madison-1808): the brief's own step 2 already
+   required a Taylor re-run and a 0.1 tolerance check before the four candidate calls, and the freq_score drift
+   (0.211) was known at that point to be over twice the tolerance -- but the brief told the worker to caveat the
+   result, not to stop, so all four candidate calls ran anyway (about USD 3.6 of the session's 12.67, 2.1x its
+   cap) to produce scores nobody could use. A job brief that scores several candidates against a per-session
+   calibration states the calibration step as a gate ("if the drift exceeds tolerance, stop here, log
+   'non-test at this drift' for the family, and do not run the candidate calls"), not as a caveat to attach to
+   candidate results computed regardless.
+   [R3.m] A positive control built to show a statistical method has discriminating power is subsampled to the target's
+   own event or sample count before that power claim licenses reading a miss on the target as a real negative --
+   a method that separates two classes at N=22,886 says nothing about its power at a target's N=28 (ARM3-ADJ,
+   26 Sept 2026, armstrong-madison-1808).
+4. [R4] **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
+   with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
+   [R4.a] Two H-grade period decipherments that disagree on one code are a data conflict, not a transcription error to
+   settle by majority: record which letters (sender, recipient, direction, date) support each value before merging.
+   Lesson of 26 Sept 2026 (AX2-172, lodewijk-van-nassau-1573-74): code 172 read 'le Conte Jean' in the 4614
+   decipherment and 'Lumbres' three times in 7206's; the name codes above 145 split into two lists by direction of
+   correspondence (brothers to Willem vs Willem to brothers), then 5801's own gloss cut across even that. A code with
+   conflicting H support is graded M in any letter whose direction or date does not match the supporting witness, and
+   the conflict is logged in HYPOTHESES.md with the witnesses, never resolved by the more frequent value alone.
+4a. [R4a] **Depth, beside the N-class (owner, 4 Oct 2026).** A unique solve is N3+ **and** D2+. The verifier sets depth per
+   item: D0 a key ranks first, nothing reads; D1 scattered words, no stretch above the authentication distance (about
+   1.5 x unicity, every liberty counted) and no code value reading in two contexts; D2 at least one such clause and one
+   true, specific sentence about the content written by the verifier; D3 >=80% of cipher tokens H/C/S, gaps mostly
+   names/codes, plus an external check or AD + a matched control; D4 every cipher-letter token H/C/S, residue only listed
+   name/code groups, a non-statistical external check and a fresh rule-7 re-derivation. Outward words: D1 "fragments
+   read", D2 "partially deciphered (about N%)", D3 "largely deciphered (about N%)", D4 "deciphered" ("; N name codes
+   unidentified"); "key identified" only for a period or published key. Depth is lowered on any revision.
+   `tools/depth_check.py` is the gate (status.json fields `depth`, `depth_pct`, `depth_sentence`, `depth_check`,
+   `decode_status`); evidence in research/DECIPHERMENT-STANDARDS-2026-10-04.md.
+5. [R5] **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
+   `found-solved`, `blocked`, `offline-only`. Nothing else.
+   [R5.a] Near solves (25 Sept 2026, UPDATES.md): a target where a solver beat its matched control by a reproducible margin, or
+   where a control showed the negative was not a real test, is `partial`, never `closed-negative`, and gets a row in
+   `NEAR.md` with the numbers and the named next step; `closed-negative` needs every family in the target's ladder logged
+   with a passed control. Both parents read NEAR.md at every check-in and every retrospective reviews it.
+   [R5.b] Finish or name the blocker (1 Oct 2026, from Bourdeau's practice): `partial` is parked only when every unread
+   piece is blocked from outside the session -- no-key-material, too-short, illegible, needs-physical-access, or
+   waiting-on a named ASKS/queue row or a named party's reply. Otherwise work the escalation steps (siblings, clear
+   pages, known keys, print, key rebuild, image check, retry) within the brief and its cap (Workers and Usage 7 still
+   hold: a worker never extends its own brief) and hand the rest on as "keep going". An internal gap names its next
+   step: open-codes is allowed but keeps the target workable, not-attempted carries "; next: <step>, ~$<cost>". A
+   worker stopping at `partial` appends "## Remaining gaps" and "## Escalation" to NOTES.md, ending in a Verdict,
+   "keep going" or "parked". A step whose only known instrument rule 3's third-attempt clause closed is [retired],
+   instrument named: it does not hold the target open, a known untried instrument makes the step [ ] instead, and
+   only a different instrument or new material reopens it. `tools/gaps_check.py <target>` (format in its docstring;
+   `--all` for every partial) passes before the done line. Source: sources/cyphersolver/2026-10-01/ (his CLAUDE.md;
+   writeup skill section 0a).
+6. [R6] **Absolute dates.** "19 Sept 2026", never "recently" or "yesterday". Read the clock (`date -u`) before writing
+   any date or time; never estimate it, and never tell a worker the date without checking. Lesson of 23 Sept 2026:
+   an orchestrator wrote times that ran eight hours ahead of the clock and dated a whole evening's files 23 Sept.
+   [R6.a] `tools/room.py`'s timestamp is machine-generated (`time.gmtime()`), not typed by a model, but that only
+   guarantees it matches *that session's own container clock* -- not that two sessions' containers agree with each
+   other. Lesson of 24 Sept 2026: the parent's ROOM.md line at 18:49 said "Retro-apply e archived" seven minutes
+   before retro-apply e's own auto-stamped done line (18:56) exists; both stamps are machine-generated, so this is
+   container clock skew between two sessions, not a model estimating a time. Don't use two different sessions'
+   ROOM.md timestamps to decide which of their actions happened first; where the order matters (an audit, a
+   postmortem), use the single shared history's push order (`git log origin/main`) instead, which is one clock,
+   not many. This window's retrospective also found that isn't always available either: `tools/room.py --push`'s
+   rebase can fold several sessions' commits into one generically-titled "update" commit on whichever session
+   happens to run the merge, which erases the per-session commit trail along with any independent time check --
+   flagged here, not fixed; the retrospective ran out of budget to design the fix.
+7. [R7] **Reproducible readings.** Any claimed reading has a script that regenerates it from the transcription and
+   the key, and exits non-zero if the committed reading is stale.
+   [R7.a] A reading on a target that has a spec is reported only with the output of `tools/judge_plaintext.py <spec>
+   --file <reading>` pasted into NOTES.md (a FAIL may still be reported, as a FAIL). Before the orchestrator moves
+   the target to stage 9, a fresh session that has seen only the spec and the key re-derives the reading with the
+   target's decode script and `--check`; a re-derivation that differs by more than the M-graded tokens sends the
+   reading back. The judge and the re-derivation are the Lean of this repository: they say "worth a verifier",
+   never "right" (rule 10).
+8. [R8] **Credit.** Name who solved what and when. Cite the solver repositories and Tomokiyo. Aymeloglu's repository
+   has no licence: cite it, do not copy code from it. Bourdeau's code is MIT, text CC BY 4.0.
+9. [R9] **Personal data stays out of the repo.** It is public. Log archive requests by date and archive, never with
+   the sender's name, address or payment details.
+9a. [R9a] **A brief that says material stays out of this repository must name the destination, and the worker must not
+   push here at all** -- not even as a placeholder "to be removed later." If the named destination (a private
+   repository, an artifact) does not exist yet, the worker stops and says so; it does not commit the material to
+   this repository in the meantime. Lesson of 24 Sept 2026: two workers (grants scout, grants applications),
+   briefed only that the material "stays out of this repository," both pushed it here anyway; both fixes now sit
+   in this repository's history pending the owner's purge (`tools/purge_history.sh`).
+
+10. [R10] **Novelty is a verifier's verdict, not a solver's.** A solver session may say "read at grade H" and "not
+   found in <named source>, searched by <method> on <date>". It may not say new, unpublished, unread, first or
+   never printed, and neither may the orchestrator when it reports to the person. Absence from one source is a
+   search result, not a discovery. A separate verifier session, working from the plaintext and the ciphertext
+   and trying to disprove novelty, assigns one class after a logged search and writes it to the target's AUDIT.md:
+   N0 plaintext and decipherment of this very item already known; N1 plaintext already published anywhere (our
+   reading is an independent re-decipherment); N2 plaintext known elsewhere but no prior mapping of this
+   ciphertext to it found; N3 no prior plaintext or decipherment located after the logged search; N4 N3 with the
+   principal editions, catalogues and project pages covered, internal or unpublished work not excluded; N5
+   confirmed by the holding archive or a specialist. Wording such as "first decipherment", "previously unread",
+   "newly recovered" or "unpublished plaintext" is allowed only at N4, with the qualifier "no prior decipherment
+   located", or at N5. The board's stage "Novelty verified" is set only from AUDIT.md. Lesson of 20 Sept 2026:
+   four Eckert 1864 readings were called "never printed" because they were absent from Official Records ser. I
+   vols 32-45; the sender-specific editions (Butler Correspondence, Lincoln Collected Works, ORN) had not been
+   searched and no phrase search was run after decoding.
+   Precedent and worked example: ciphers/eckert-1864/AUDIT.md.
+   [R10.a] Key source (25 Sept 2026, owner's request): every AUDIT.md verdict also records whose key read the item -- `ours` (recovered by us: cryptanalysis, a plain-copy alignment, or identifying the codebook), `period` (rebuilt by us from a decipherment, key sheet or cipher book of the time) or `published` (someone else's modern key, credited) -- and the parent copies it to the result's `key` field in status.json, with `text: known` when the plaintext was already in print. An `ours` key at N3 or better is the nearest honest equivalent of a first; say it in those words, never 'first'.
+   [R10.b] A reading revised after AUDIT.md is written (a blind-pass correction, a re-derivation fix under rule 7) is
+   propagated into AUDIT.md and into any row already filed for that target in `SECOND-OPINIONS-QUEUE.tsv` before
+   either is treated as current, not left for the next session to notice. Lesson of 25 Sept 2026 (V6-MERCY2):
+   a downstream reading change (R7-MREV: "Cleues" -> "Eleues") was not carried back into AUDIT.md or the already-
+   queued SO prompt, so an outward-facing sentence kept a word the blind read had dropped.
+
+
+## Outreach (owner's directive, 23 September 2026)
+
+[OUT.0] The orchestrator may post contributions to the solver repositories on GitHub (an issue, never a pull request, on
+dbourdeau/cyphersolver or aaymeloglu/unsolved-ciphers) and to DECODE once its login works, without asking, when
+every gate below is met. (24 Sept 2026: a cloud session's GitHub access is scoped to the owner's own repositories, so
+the issue text is drafted in `outreach/bourdeau-issues.md` and the owner posts it from their account, like an email.) Emails to researchers, archives and dealers stay the person's: the orchestrator drafts
+them in `outreach/` and the person sends them and records the date. Gates for any post: [OUT.1] (1) the target's
+AUDIT.md carries a verifier's class; [OUT.2] (2) for anything above N1, a second adversarial audit by a separate session
+has tried to find it in print and failed, the open-index scholarship pass (OpenAlex, Semantic Scholar, Persée, HAL, CrossRef) and the Google Books queries are done, and the target's rows in `JSTOR-QUEUE.tsv` are answered or waived by the owner;
+[OUT.3] (3) the message is the audit's safe sentence, states any prior print it rests on, and links AUDIT.md so the
+recipient can check the search log; [OUT.4] (4) rule 10 wording only; [OUT.5] (5) the post is logged in `CONTRIBUTIONS.md` with
+date, recipient, class and link, before it is sent; [OUT.6] (6) every outward note carries the links a recipient can verify
+from their desk without asking us: the repository folder (AUDIT.md, key, reading), the primary source image (the
+Gallica or IIIF ark at the leaf), and the printed edition it rests on, at the page cited, on archive.org or HathiTrust.
+[OUT.7] (7) Pre-send fact check (owner, 26 Sept 2026): before the person sends any outward note, a separate session (never the drafter) reads the draft against every file and source it cites, tries to falsify each factual sentence (counts, dates, shelfmarks, names, what was and was not checked, the recipient address on the institution's own page) and writes its verdict as a `checked:` line in the draft's header naming what it corrected; a draft without that line is not sent, and the mailbox draft is updated to the checked text.
+    [OUT.7.a] The same pass also confirms the draft's voice matches outreach/README.md rule 1a ("I" for what the person
+    does, "we" for what the agents did) as one more sentence class to falsify, not a separate session -- a
+    voice error is a `checked:`-line correction like any other (26 Sept 2026: OUT-CHECK-V existed only because
+    the voice rewrite happened after OUT-CHECK's own pass; with rule 1a in place a drafting worker gets the
+    voice right the first time and one OUT-CHECK pass covers both).
+[OUT.draft] A subject line, a recipient line and a sign-off left blank for the person are part of every draft. The recipient line
+carries the institution's public contact address (read from its own contact page, with the date) so the person can send
+without looking it up; a private individual's address never goes in the file (24 Sept 2026, owner: "I gotta have an email address"). A negative with a matched control is a contribution too.
+[OUT.8] (8) Project mailbox (owner, 26 Sept 2026): agents may send from cipherlab.research@gmail.com only a draft whose CONTRIBUTIONS.md row exists, whose pre-send fact check (7) has passed, and whose first paragraph carries the AI-disclosure sentence (outreach/README.md rule 1); one sender per draft, the parent that owns the target; every send logged before it goes.
+
+## Operating model (read before orchestrating)
+
+[OPS.1] Roles: one **parent orchestrator** per account (the session the owner talks to; `.claude/briefs/parent.md`) opens
+**lanes**; each lane has an Opus **lane orchestrator** that writes job briefs to `.claude/briefs/runs/` and runs
+Sonnet **workers**, which use subagents for independent passes; **verifiers** are always separate sessions from
+solvers. Every session coordinates through `ROOM.md` (claim before work, done when stopping) and schedules its own
+check-ins with send_later; nothing polls. State lives in git: `STATUS.md` holds the "Parent handoff" section, the
+"Lane structure" table and one "LANE <X> handoff" per closed lane, below the results log, so read the whole file,
+not the first screen. The rate-limit rule is BUDGETS.md's scaling rule (`allowed_warning` anywhere: no new workers
+anywhere). Nothing is billed on the owner's Max plan; dollar figures measure the rate-limit window.
+
+[OPS.2] **Lane state: idle-standing (26 Sept 2026, RETRO-2026-09-26c, after GOLD reached this state twice with the same
+prose from scratch).** A standing lane is idle-standing when every one of its targets is individually
+`open`/`partial` (never `closed-negative` -- rule 5) with no live worker and no untried cheap step that is not
+itself gated on a named ASKS.md row. Entry: the lane orchestrator writes exactly one ROOM.md line, "LANE <X>:
+idle-standing, blocked on ASKS <rows>", names the rows in the lane's STATUS.md handoff, and arms no check-in --
+the state does not need re-confirming at a Fable check-in's cost. Exit: only when one of the named ASKS rows is
+answered (the parent's own regular ASKS.md read is the trigger, not a standing lane polling itself) or a target
+gets new material from outside the lane (more ciphertext, a museum reply, a fresh solver-repo hit) that opens an
+untried cheap step; either way the parent starts the next lane incarnation naming what changed. A lane that
+re-derives "idle-standing" a second time for the same unanswered rows, rather than reading the prior incarnation's
+entry line, is repeating work the state already recorded.
+
+[OPS.3] Loops that run outside this repository and write back into it:
+- [OPS.3.a] **Second opinions**: a scheduled ChatGPT task reads `SECOND-OPINIONS-QUEUE.tsv` and answers each queued prompt as an
+  `[SO-<label>]` pull request (`tools/second_opinion_runner_prompt.md`). Lanes queue a reading after the verifier
+  gives N3 or better; the parent marks it posted; a verifier checks every citation.
+- [OPS.3.b] **Local runners** on the owner's computer answer `JSTOR-QUEUE.tsv` and `LOCAL-QUEUE.tsv` through his logged-in
+  browser (`tools/jstor_runner_brief.md`, `tools/local_runner_brief.md`).
+- [OPS.3.c] **Send runner** (26 Sept 2026, owner's decision): the owner's own ChatGPT runner sends checked outreach drafts
+  and reproduction-quote requests from his browser, reading `SEND-QUEUE.tsv` and answering as a `[SENT-<id>]`
+  pull request (`tools/send_queue_runner_prompt.md`). A row is queued only after its draft's gate-7 `checked:`
+  line exists (`tools/send_queue_check.py` is the gate, run before queueing and again before landing); the
+  owner's identity lives in the runner's own task instruction, never in this repository.
+- [OPS.3.d] **Routines**: the weekly retrospective, and "Cipher Lab: breakthrough alert (email)", which the parent fires for a
+  real result.
+
+[OPS.4] Any session may propose an edit to a `tools/*_runner_prompt.md` file, but only a parent orchestrator commits one
+(a lane or worker names the change in ROOM.md and hands it up), since a bad edit reaches three unattended,
+externally-run loops before anyone reviews it. Before committing, grep the file's own "Paste this" section for a
+relative path (`ciphers/...`, `tools/...` with no `https://github.com/...` prefix) or a credential-shaped token
+(`_USER`, `_PASS`, `_KEY` outside a comment explaining not to use one) -- either fails the self-containment test
+the runner's own operator (the owner, pasting by hand) needs.
+
+[OPS.5] A verifier that assigns N3 or better to a reading appends the `SECOND-OPINIONS-QUEUE.tsv` row for it in the same
+session, as part of writing AUDIT.md (rule 10), rather than leaving it for a later session to notice is missing
+-- the same "write it where the fact is established, not where it is next needed" shape as rule 10's AUDIT.md
+propagation requirement.
+
+[OPS.6] Accounts: no account sees another's sessions or triggers; each parent reads the other's handoff and ROOM lines, and
+takes none of its targets.
+
+## Pipeline (who hands what to whom)
+
+1. [PIPE.1] **Scout** (`.claude/workflows/scout.js`, or a worker with the same brief) finds candidates, checks status at
+   the sources, scores them and sets `kind` (cryptanalysis, recovery, contribution; editions are dropped). It
+   writes QUEUE.md. It never promotes to the board and never solves.
+2. [PIPE.2] **Check-solved** (`.claude/workflows/check-solved.js`) runs blind, six sources, on any queue item before it
+   goes on the board, and again whenever a catalogue row may be stale. Its verdict goes into the target's
+   NOTES.md and sets stage 2, "Verified unsolved". Stage 2 is set only by a check-solved verdict, and no copy
+   order, payment or quote request goes on the person's card until the target is at stage 2 (20 Sept 2026). [PIPE.2.a] Intake gate (25 Sept 2026): before any deep work (transcription, key application, cryptanalysis) on a target, read its check-solved verdict against .claude/briefs/check-solved.md: an `open` whose sentence does not name the standard edition and the pages or full-text search actually read, or that names an edition it could not open, is `blocked`, whatever word it uses. Send a check-solved worker first. (Linhares, 25 Sept: an `open` with the sender-family edition unread went to deep work; the verifier held it at N3 for that reason.) A prose rule a lane orchestrator has to remember to apply by eye did not stop that breach, so run `tools/intake_gate_check.py <target>` and paste its output before briefing any deep-work worker; a nonzero exit blocks the brief (RETRO-2026-09-25h proposal 4). Since 2 Oct 2026 the gate also requires a "## Premise check" section (the adversarial pre-reading pass in .claude/briefs/check-solved.md: decipherments the folder already mentions, other solvers' working files, neighbouring leaves, recipient-side editions) before an open/partial target gets a first test.
+3. [PIPE.3] **Orchestrator** promotes to the board only after check-solved, at most a handful at a time, choosing by
+   score and by the three kinds together, so the board always carries at least one recovery and one
+   cryptanalysis candidate and never fills with editions.
+   [PIPE.3.a] Selection rule, pools first (25 Sept 2026, UPDATES.md): between two candidates of equal expected value, take the one that
+   belongs to a sign pool -- one sender, office and key family with 2,000 or more signs across its letters -- over a single
+   short letter; every reading on the board so far came from a period key or a pool of siblings, and the controls say our
+   solvers read code+mark only at pooled lengths. Famous short items enter only through the standing gold lane.
+   [PIPE.3.b] Selection rule (24 Sept 2026): rank by expected value = P(the first cheap test moves it) x value / cost, not by
+   fame or by scout score alone. Prefer items with a transcription on disk, a formal constraint (a known key family,
+   a crib, a host text, a form), a language with a corpus in tools/data, and no published matched-control negative.
+   [PIPE.3.c] Famous items (Voynich, Kryptos K4, Zodiac Z13/Z32, Beale, Rohonc, Dorabella) enter only with a named untried
+   cheap test; `UNSOLVED-SURVEY.md` is the reference ranking for the public list and is re-ranked when a row's
+   status changes.
+3a. [PIPE.3a] **Breadth lane.** Before any target gets a campaign (a cap above $10), it gets a spec (`specs/<slug>.json`:
+    ciphertext as transcribed with source and date, alphabet, constraints, cheap tests in order, a `judge` block) and
+    one Sonnet worker runs its first cheap test at a cap of $3, with the matched control, and writes the two numbers
+    into the spec's `cheap_test_done`. A breadth worker takes the next spec whose first test is unrun, never a second
+    test on the same spec, and never a campaign. The orchestrator promotes to a campaign only a spec whose first test
+    moved it (judge PASS, found-solved, or a control-backed negative that names the next test). Ten first tests at $3
+    beat one campaign at $30: the mathematics results resolved 4 of 700 and 9 of 353 by trying everything cheaply.
+4. [PIPE.4] **Access workers** (lookup, print check, image capture, transcription) move a target from stage 2 to stage
+   7 without the person where the playbook allows, and write REQUEST.md when it does not.
+5. [PIPE.5] **Solver** reads (stage 8), grades per token, reports what was found and where it was not found.
+6. [PIPE.6] **Verifier** assigns the N-class (stage 9) and corrects any over-claim.
+7. [PIPE.7] **Result label**: the orchestrator sets the card's kind from what actually happened (a key that opened it
+   is recovery, a reading without the key is cryptanalysis, a correction or a dataset handed on is
+   contribution) and writes the "Result so far" line. README "What counts as a result" is the reference.
+
+## Collaborators
+
+[COL.0] Several people work in this repository, each from their own account, with full access and no fixed lanes.
+Two things make that safe, and they are not optional.
+
+[COL.1] **Claim before you start.** Append a line to `ROOM.md` naming you, the role and the target before any work
+begins, and a `done` line when you stop. If a live claim already covers what you wanted, take the next
+thing. Nothing else stops two agents transcribing the same folio. Write ROOM lines with `tools/room.py` or inside single quotes / a quoted heredoc: inside double quotes a figure like `$8` is a shell variable and vanishes (QA 25 Sept 2026 08:30 found four done lines reading "well under  stall alarm"). A cost figure comes from the orchestrator's `get_session`, never from the worker's own sense of it.
+
+[COL.2] **A claim goes stale after six hours.** If a claim in `ROOM.md` has no `done` line and no further activity from that agent for six hours, anyone may take the target after appending a line saying so. Otherwise one idle agent parks a target indefinitely and nobody can tell, because no account can see another account's sessions.
+
+[COL.3] **Anything blocked on a human goes in `ASKS.md`,** not only into a report. A blocker that lives only in a session transcript is invisible to everyone else.
+
+[COL.4] **Rebase before you write to a shared file.** `QUEUE.md`, `QUEUE-scores.json`, `status.json`, `STATUS.md`
+and `ROOM.md` are written by everybody. Fetch and rebase immediately before editing, and when a row
+conflicts, keep both facts rather than overwriting someone else's finding.
+
+[COL.5] **Name a job-brief file for the account that writes it.** `.claude/briefs/runs/<date>-<role>.md` collides the
+same way: two accounts wrote `2026-09-26-parent-out-check-2.md` within about ten minutes of each other on
+26 Sept 2026 (the owner-account parent's RAH/Dresden fact check, 7i's mailbox voice re-check), and the second
+write silently replaced the first, restored only because the overwriting session happened to notice and flag
+it. A filename built only from the date and a repeatable role name (`parent-out-check-2`, `parent-retro-apply`)
+can repeat across two accounts working the same day; include the writing account's `CIPHERLAB_ACCOUNT` tag
+whenever the role name is one that could recur (`2026-09-26-parent-ytbiz-out-check-2.md`), and fetch
+immediately before writing any file under `.claude/briefs/runs/`, the same discipline as the files above -- if
+the path already exists with a commit from a different session in the last hour, pick a new suffix rather
+than overwrite.
+
+[COL.6] **Outside agents.** Not every agent working from the owner's accounts is a session of this repository's
+parents: the owner also runs a Codex session and a ChatGPT desk runner outside `tools/room.py`. Any such
+agent writes to `ROOM.md` only by appending (`python3 tools/room.py "<role>" "<text>" --push`, or a plain `>>`
+if the script is unavailable to it), never by rewriting the file. A claim line that replaces the whole file
+is treated as an accident, not a claim: it is healed the same way any other wiped shared file is (last full
+version plus every line committed since, restored from git history), never left for a person to notice and
+fix by hand (Lesson of 27 Sept 2026, ROOM-HEAL: a Codex commit replaced a 3407-line ROOM.md with a two-line
+stub; `tools/room.py --start`'s existing stub guard correctly refused to build on it, but the workers that hit
+the guard just parked -- one for 25 minutes -- waiting for a person, until another worker restored the file
+by hand; `tools/room.py --start` now self-heals a stub this way on its own, see SYSTEM.md).
+
+[COL.7] New people and their agents start at `ONBOARDING.md`. Everyone records their own plan limits in
+`BUDGETS.md`, because no account can see another account's rate limits.
+
+## Workers
+
+[WRK.1] A worker session does one job, pushes, reports in a short paragraph, and stops. It never starts a new target,
+a cryptanalytic attempt, or a write-up that its brief did not name. The orchestrator updates `status.json`,
+`STATUS.md` and the published board after every worker report.
+
+[WRK.2] The room: `ROOM.md` is the second channel. A worker reads its last 30 lines before its first action and
+appends one line when it learns something another worker might need, before it edits a shared file, and
+when it stops (`done`). A `flag` line is an interjection: the orchestrator reads every flag before the next
+assignment and answers it in the brief or in the room. Lines are signals, not reports; reports go in the
+worker's final paragraph and NOTES.md. Duplicate work (two sessions auditing the same claim on 20 Sept 2026)
+is what the room prevents.
+
+[WRK.3] Two hats, never one session: the **solver** produces readings and the search log of what it checked; the
+**verifier** receives the plaintext, the ciphertext and that log, and searches to disprove novelty (rule 10).
+A solver brief ends "report what was found and where it was not found; do not classify novelty". A verifier
+brief lists the source families to cover (canonical editions, sender- and recipient-specific edited
+correspondence, the holding archive's catalogue and blog, the transcription project's pages, Google Books,
+HathiTrust, Internet Archive, GitHub cipher projects, scholarship), requires a phrase search on the decoded
+text, requires a log of every family searched and every one unreachable, and ends with an N-class per item in
+AUDIT.md plus corrections to any over-claiming sentence in the target's files. The orchestrator moves a target
+to "Novelty verified" only from AUDIT.md, and repeats to the person only the class and its safe sentence.
+
+[WRK.4] **Verifier brief (template).** Used before any reading is described outside the repo as new. The verifier is
+a session other than the solver's and does not protect the solver's conclusions.
+
+```
+VERIFIER: <target folder>. Claim under audit: <the sentence as the repo states it>.
+1. Extract from the repo, per item: date, sender, recipient, place, plaintext as read, ciphertext,
+   distinctive phrases, archive identifiers, and exactly what the solver searched (sources, identifiers,
+   method, date).
+2. Search independently: by date, sender+recipient, quoted phrases, ciphertext words and identifiers, in
+   (a) the canonical series, its index and its supplements; (b) the sender's and the recipient's printed
+   correspondence; (c) the documentary editions for the period; (d) the holding archive's catalogue,
+   blog and project pages; (e) full-text search on Internet Archive, HathiTrust and Google Books;
+   (f) the solver repositories and cipher blogs; (g) scholarship through the open indexes (OpenAlex API and Semantic
+   Scholar API with the keys of access playbook item 3, Persée, HAL, CrossRef, Google Scholar when reachable) and, for JSTOR, a row per query appended to
+   `JSTOR-QUEUE.tsv` for the owner's local runner, in two families per target: (i) sender/recipient/date/place
+   ANDed with a cipher keyword, and (ii) a distinctive phrase quoted exactly from the plaintext or from the
+   printed edition's own wording, with NO cipher keyword required -- JSTOR's search is exact-phrase, and a
+   secondary work that discusses or quotes the letter may never call it a cipher at all. Lesson of 26 Sept 2026:
+   JSTOR-QUEUE rows 88-91 (lodewijk-van-nassau-1573-74) and 80-83 (espagnol142-mercy-1648) ran only family (i) and
+   came back with no hit about either letter; neither target had run a bare quoted-phrase row, though the same
+   phrase-with-positive-control method already works for these exact letters against archive.org/be-api
+   (V8-NA5797, V8-NA172). A queued JSTOR row never blocks N3 or N4 on its own (24 Sept 2026,
+   the owner is not the bottleneck at fifty sessions). Log each family
+   as searched or unreachable, with what was searched.
+3. Classify each item N0-N5 (rule 10) with: prior plaintext (yes/no, where, earliest citation), prior
+   decipherment (yes/no), evidence quality, confidence, one safe sentence, one unsafe sentence.
+3a. Depth per item (rule 4a): % of cipher tokens H/C/S, unread name/code vs other, D0-D4 with the check used and, for
+   D2+, one true sentence about the content; write it beside the N-class in AUDIT.md and status.json.
+4. Postmortem: name the failure, the files and sentences that over-claim, and correct them. If the reading itself
+   was revised after this AUDIT.md (or an earlier one) was written, carry the revision into AUDIT.md and into any
+   `SECOND-OPINIONS-QUEUE.tsv` row already filed for this target before writing the safe sentence (25 Sept 2026,
+   V6-MERCY2).
+5. Write <folder>/AUDIT.md; commit and push; report the classifications and the one-line postmortem.
+Do not decode, do not touch other targets, do not print or commit credentials.
+```
+
+## Usage (tokens are the budget)
+
+[USE.0] The person's plan is a fixed window of usage, not a bill. A worker that burns it stops every other session.
+Every brief states a cap in dollars of usage (the session metadata's cost figure) and the worker stops at it.
+
+1. [USE.1] **Tier the model to the job.** Blind searches, catalogue sweeps, harvesting, transcription passes and any
+   job whose output is checked by another agent run on Sonnet (`claude-sonnet-5`). Reconciliation of passes,
+   key reading, cipher reasoning and verifier verdicts run on the strongest model. The orchestrator sets the
+   model when it creates the session; a worker sets it when it spawns subagents.
+2. [USE.2] **Scripts read, models judge.** Never have a model read an Official Records volume, a 400-page dictionary
+   or a 2,000-row key to find one thing. Fetch the text once, grep or parse it with a script, and give the
+   model the hits. decode.py, check.py and freq.py are the pattern.
+3. [USE.3] **Digests, not repositories.** Workers read LESSONS.md and LANDSCAPE.md, not the solver repositories in
+   full. Clone a repository only to grep it for a named target.
+4. [USE.4] **Fetch once, keep a manifest.** Images and page text go to disk with images/manifest.json on the first
+   fetch; later passes read the disk.
+5. [USE.5] **Compact outputs.** Worker results are TSV, JSON or a short markdown table with a five-line report; prose
+   is for NOTES.md sections the person will read. The person has said machine-shaped files are fine.
+6. [USE.6] **Fan-out limits.** At most four subagents at once per worker; two transcription passes, not three, unless
+   the two disagree on more than a tenth of the rows.
+   [USE.6.a] A batch of more than about five independent jobs (one per target, one per leaf) runs as separate cloud sessions
+   (create_session, or WORK-QUEUE.tsv rows for another account), not as one in-container Workflow: a session container
+   has 4 CPUs and a Workflow runs about two agents at a time there, so 60 agents took 2.6 hours (finish-pass, 1-2 Oct
+   2026) that separate sessions finish in about 20 minutes for the same usage. Workflows stay for short chained jobs.
+   [USE.6.b] **Transcription standard (owner, 3 Oct 2026): `TRANSCRIPTION.md`** sets the target (true per-sign error <= 5% on
+   symbols, measured against BENCHMARK-TX.tsv, never agreement alone), the pipeline (family atlas -> top-k -> key-
+   constrained decode -> active sorter) and the rules every account's transcription job follows; read it before briefing one.
+   [USE.6.c] Transcription of a symbol cipher: when two machine passes disagree on more than a tenth of the signs, or the sign
+   inventory itself is unsettled, the next pass is a person's, not a third machine pass: the owner settles the alphabet
+   in the sign sorter (`tools/sign_sorter.py` -> `tools/sign_sorter_apply.py`, which turns the piles, merges, bad cuts
+   and set-asides into settled labels), and only then do machine passes transcribe against those labels, with the
+   sorter's "Check these first" box for what they still split on (owner, 2 Oct 2026; Debosnys ran about 28% reader
+   disagreement through many machine passes before this, LESSONS.md "Settle the alphabet before reading").
+   [USE.6.d] When two passes split by more than a tenth or on named sign pairs, run `tools/lookalike_pass.py` before a third full pass;
+   what machines still split goes to the owner's sign sorter via its focus.tsv, never blocking. Its 2-of-3 residual is
+   agreement, not accuracy (known-answer test, LESSONS.md "Look-alike pass"): never use it as the reader-error figure for a control.
+   [USE.6.e] A subagent's transcription job is priced by signs matched x reference-sheet size, not by elapsed minutes or
+   page count: GOLD-4D (25 Sept 2026) gave one Sonnet subagent all four Debosnys cryptograms (about 1,300 signs)
+   against a 160-sign inventory in a single call and was stopped at 3.3x its $7 cap, 38 minutes into a 60-minute
+   box, because the wall-clock box is checked between tool calls and cannot interrupt one call that is still
+   running -- a call sized to outlive the box defeats it regardless of the box's length. Scope a subagent's
+   visual-transcription call to one page or one cryptogram against the reference sheet, never the whole
+   inventory in one call, and have the orchestrator read `get_session` on that worker at a fixed short interval
+   (15 minutes, GOLD's own fix) rather than trusting the box alone when a job includes a large-inventory match.
+   [USE.6.f] The same mispricing recurs at the primary worker's own level, not only inside a subagent call, whenever a
+   brief's job loops over discrete same-shaped visual or multi-variant units: LANE R7's native-crop atlas
+   re-pass (AT55V, 25 Sept, 13 Gallica native crops) ran 1.23x its $6 cap, its blind eye-bisection pass (MEYE,
+   same day, 122 tokens) ran 1.86x its $2.50 cap, and LANE GOLD's family-variant sweep (GOLD-K2, same day)
+   crossed from about 56% to 89% of its 75-minute box in the single step of starting a second ~25-minute
+   control+target variant, landing 9% over its $6 cap. In each case the worker correctly did not stop mid-unit
+   (the box is a minimum too, per this section's own rule); the brief's box was sized as a round number of
+   minutes, not as (planned unit count x a per-unit cost/time estimate drawn from the nearest comparable ledger
+   row) plus one unit of margin. Size a unit-loop brief's cap and box from the per-unit rate, state the unit
+   count and the per-unit estimate in the brief itself, and have the worker stop before starting a unit that
+   would cross 80% of either figure -- not only after aggregate elapsed time crosses 80%, which one large unit
+   can jump past in a single step.
+   [USE.6.g] A well-sized per-unit box can still run over if a background computation shares the same box's CPU (25-26 Sept
+   2026, GOLD-K3): two family_run.py variants estimated at about 24 minutes each (48 of a 75-minute box) actually
+   took 59 minutes and landed 23 percent over the $6 cap, because a ten-text noise-band computation was run
+   concurrently in the same box to save a second one, and "a background band of ten decoder runs competes for
+   CPU with the family runs" (GOLD-K3's own lesson). Price a background/reference computation that runs alongside
+   foreground per-unit work as its own separate box, or serialize it before or after the foreground units --
+   never assume concurrent CPU-bound work is free just because it does not add a unit to the count the per-unit
+   rate was built from.
+   [USE.6.h] A per-unit box priced by page or leaf count undercounts by the passes-per-unit factor when a unit's own
+   protocol calls for more than one subagent call per unit. Lesson of 26 Sept 2026 (AX-COMP2, lodewijk-van-
+   nassau-1573-74 7205): the brief priced six pages at an $8 cap and "about 12 minutes per page" -- a page-count
+   estimate -- and correctly scoped each subagent call to one page's line crops (this section's own GOLD-4D/
+   AX-4612TR fix). But each page needs two independent blind passes, so six pages took 11 Sonnet subagent calls,
+   not six: cost was 16.07 (2x the $8 cap), while time pacing was fine throughout (about 50 of a 90-minute box,
+   under the 80% self-stop line at every point) -- the wall-clock box cannot catch this, because passes-per-unit
+   is a multiplier on dollars a worker cannot see mid-session, not on time it can (16.07 / 11 = 1.46 dollars per
+   call, matching the $8-for-6-pages estimate's implied per-page rate almost exactly once the 2x factor is
+   applied). When a unit's own protocol requires N independent passes (a reconciliation, a second blind eye),
+   this section's own "state the unit count and the per-unit estimate in the brief itself" already requires a
+   number -- that number must be per pass (subagent call), not per page or leaf, before multiplying by the
+   planned count.
+   [USE.6.i] Naming the crop tool as a "convention" a worker should already know to apply is not the same as requiring the
+   command. Lesson of 26 Sept 2026 (AX-4612TR, bUNT7): AX-4612TR's brief said "line crops under 2500 px
+   (tools/iiif_lines.py conventions)" and the worker correctly scoped one page per subagent call (Usage 6's own
+   GOLD-4D fix) but still sent the full 300 dpi page image to each call, at about $11/pass (44.28 total, D-, for
+   two pages) -- `tools/iiif_lines.py` already reads a local file directly (`--image FILE`), so the tool was
+   available and unused. bUNT7's brief said "cut line crops if useful (local PIL crop ... no network)" -- optional,
+   and a private script rather than the same shared tool -- and the worker read one 4884x3052 leaf glyph-by-glyph,
+   reaching 2.6x its $3 cap by 67.5% of its box (under the 80% self-stop line), stopped only by the orchestrator's
+   interrupt. A brief for any per-page or per-leaf transcription pass states the crop step as a command to run and
+   paste before the first subagent call (`tools/iiif_lines.py --image <page/leaf file> --out <dir>`, or the
+   `--ark`/`--canvas` form for a Gallica source), gives the subagent only the resulting crop paths, and treats a
+   full-page or full-leaf image argument to a transcription subagent call as the brief's own error, not the
+   worker's -- a wall-clock box cannot catch this shape of overspend (Usage 6's own GOLD-4D/AT55V/MEYE/GOLD-K2
+   paragraphs), so the crop step has to be mandatory and pasted, not advisory.
+   [USE.6.j] A worker's own reconciliation of several subagent reads against the source crops -- settling disagreements,
+   comparing digit shapes, arbitrating a three-way split -- is a distinct priced step, not overhead absorbed into
+   the calls that produced the reads. Lesson of 26 Sept 2026 (bMALS, malsburg-hessen-1636): four subagent blind
+   reads of two spans were priced at the README per-pass rate (this section's own AX-COMP2 fix), but the worker's
+   own comparison pass over the same crops, needed to settle three-way digit and monogram disagreements, cost as
+   much again and was priced nowhere, landing the job at 2.6x its $3 cap although each subagent call individually
+   matched the estimate. A brief for a reconciliation job states the reconciliation step as one more unit at the
+   same per-pass rate as the reads it reconciles (N reads + 1 reconciliation, not N reads), and prices the cap
+   accordingly before the worker starts.
+7. [USE.7] **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
+   audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
+8a. [USE.8a] **Rules become tools (25 Sept 2026, UPDATES.md).** A rule that the ledger shows broken twice gets a mechanical check in
+   tools/ with an offline test, and its prose shrinks to one line naming the tool.
+   [USE.8a.a] A gate built from one incident's shape states, in its own docstring, the row or case kinds it is meant to
+   catch and at least one kind it must NOT block, each backed by an offline test -- a gate that fires on a
+   phrase or pattern with no stated scope will eventually bounce a differently-shaped true answer. Lesson of
+   26 Sept 2026 (PR-LAND-5/LQ-L20-LAND): `tools/lq_answer_check.py`'s first version, built from the L19
+   image-portal "no items" shape, bounced PR 24's L20 answer -- a genuine content negative reached after a
+   successful loan and a full page-by-page read -- fixed the same day by adding row-kind awareness
+   (ia-reader/edition-read/hathitrust-page/jstor skip the catalogue-ladder rungs the image-portal shape needs).
+   [USE.8a.b] Precedents: `tools/intake_gate_check.py`
+   (the intake gate), `tools/room.py` (ROOM.md hygiene), `tools/ledger_check.py` (outcome codes),
+   `tools/orphan_check.py` (26 Sept 2026: an orphaned session, trigger, ROOM.md claim or unledgered ASSIGNMENTS
+   row across an orchestrator or lane swap; run at every parent check-in and both sides of a hand-over,
+   `.claude/briefs/parent.md` duty 3a), `tools/lq_answer_check.py` (26 Sept 2026, the L19 incident: a
+   LOCAL-QUEUE.tsv runner negative -- "no items", "not found" -- is gated on carrying a holding-catalogue record
+   and its quoted availability flag from `tools/data/catalogue_ladders.tsv` before it lands, since an image
+   portal's "no items" is a search result, not a digitisation verdict), `tools/send_queue_check.py`
+   (26 Sept 2026, SEND-QUEUE-TOOL: a `SEND-QUEUE.tsv` row does not stay `queued` -- and a `[SENT-<id>]` PR is
+   not landed -- unless its draft exists, its gate-7 `checked:` line is at or after the row's own `checked`
+   cell, the `[SIGN-OFF]` placeholder and the disclosure sentence's substance are in the body, a CONTRIBUTIONS.md
+   row names the draft's slug, and a `form` row carries `form_fields`), `tools/family_run.py`
+   (rule 3: a hypothesis family runs on a target only after its matched control has run and read; both numbers are written
+   side by side to `ciphers/<t>/HYPOTHESES.md`), `tools/near_check.py` (rule 5's near-solve amendment: a NEAR.md/status.json
+   `near` target must never read `closed-negative`, the two registers must agree, and a row stale past 48 hours is flagged),
+   `tools/desk_check.py` (26 Sept 2026, the bodleian-rawl-a24-p4.md incident: an outreach/*.md draft at `ready`/`drafted`
+   left telling the owner to do something a runner already did -- run at every parent check-in, `.claude/briefs/parent.md`
+   duty 6, and after landing any runner row), `tools/system_map_check.py` (26 Sept 2026, SYSTEM-MAP: every tool, runner
+   prompt, root queue, register and 8a gate must be named in SYSTEM.md, the current-state map, in the same commit that adds it),
+   `tools/file_shrink_guard.py` (26 Sept 2026, PR-LAND-3: a landing/PR worker's plain `git commit` replaced two shared
+   files -- LOCAL-QUEUE.tsv and a completed verifier AUDIT.md -- with the single word "PLACEHOLDER" each, one fixed by
+   the worker's own next commit, the other left corrupted on main for over 6 hours with zero ROOM.md trace of the
+   worker having run at all. Any worker whose job is to land, merge or apply content into an existing tracked file (a
+   PR-LAND job, a RETRO-APPLY job, a verifier correcting an over-claim) runs `tools/file_shrink_guard.py` against every
+   file it touched, immediately before its final push, and pastes the output in its done line; `tools/room.py --push`
+   also runs the same check on every path it is asked to push, refusing the push the same way its own STATUS.md/
+   QUEUE.md heading guard does), `tools/next_steps.py` (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (c): 63
+   of 111 open/partial folders ended with a written next step nobody ran, invisible because lanes opened from
+   scout picks; NEXT-STEPS.tsv now names the top runnable row for every lane's job 1, `.claude/briefs/parent.md`
+   "Opening a lane"; 27 Sept 2026, WAIT-CHECK: no target is only waiting -- every blocked row's `parallel` column
+   names the one action that depends on nobody, read from the folder's own "## While waiting" NOTES.md section,
+   and `--wait-only` lists the blocked rows still missing one), `tools/key_design.py` + `tools/design_prior.py` (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (d):
+   every solved or recovered key is added to KEY-OFFICES.tsv and KEY-DESIGN.tsv at the lane's close-out, and
+   design_prior.py is run before an attack family is chosen for an unread letter), `tools/gaps_check.py` (1 Oct 2026,
+   rule 5's "Finish or name the blocker": a `partial` NOTES.md ends in parsed Remaining gaps and Escalation sections,
+   and "parked" passes only when every gap has an outside blocker and no step is untried).
+8. [USE.8] **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
+   target that needs something they lack gets an option added to the tool, not a private copy.
+   [USE.8.a] `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image
+   URL, and reports every offset change and duplicate label (fr.20140 changes offset at f.50v; fr.16092 is all 'NP',
+   so give it eye-checked `--anchor canvas=folio` pairs and it tests them for one offset).
+   [USE.8.b] `tools/iiif_lines.py --ark ARK --canvas N --region x,y,w,h --out ciphers/<t>/images --debug` fetches the region
+   once at native resolution, finds lines by row ink profile (`--distance`, `--prominence`), cuts crops under
+   2500 px wide, writes images/manifest.json entries, and keeps the folder under 30 MB by shrinking only its own
+   reference copies. Check the debug overlay before handing crops to a pass.
+   [USE.8.c] `tools/reconcile_passes.py passA.tsv passB.tsv [passC.tsv] --crops images/crops` aligns the passes per line and
+   writes disagreements.tsv (only what the reconciler must settle from the image), ciphertext_draft.tsv and
+   agreement.tsv; `--halves` joins a/b half-line crops, `--split-chars` splits unsegmented digit groups.
+   [USE.8.d] `tools/decode_key.py ciphers/<t> [--check]` applies key.tsv (and exceptions.tsv) to the ciphertext, grades every
+   token and fails when the committed reading is stale (rule 7); `--split-check` lists tokens outside the key or above its confident
+   range with every split into two or three key codes (Mercy, 1 Oct 2026: 65, 52, 48, 72 against a 2-34 key were two
+   digits written together; it cannot see in-range glued pairs such as 2 6, so the image still decides); a target describes its layout in decode.json
+   instead of writing a decode.py (examples: tools/tests/decode_configs/, which reproduce Gramont, Danzay and Anhalt).
+   [USE.8.e] `tools/print_check.py ciphers/<t>` runs phrases.txt against sources.tsv and, unasked, against the whole of IA
+   full text, Google Books and OpenAlex; writes print-check.tsv and print-check-hosts.tsv. Its 'no hits' is a
+   search result for the log, never a novelty verdict (rule 10).
+   [USE.8.f] `tools/family_run.py SPEC --family F` (masc, homophonic, periodic_vigenere, running_key; 25 Sept 2026) runs rule 3 in
+   order: the matched control first (spec N, K, corpus, `--seeds`), the target only if the control mean meets `--gate`
+   (else CONTROL BELOW GATE, exit 3), one row per run with both numbers in ciphers/<t>/HYPOTHESES.md.
+   [USE.8.g] `tools/interlinear_align.py` (26 Sept 2026, LEARN-2026-09-26-0058) is the alignment tool for known-plaintext
+   key recovery from a printed clear text beside the cipher: dynamic-programming hard-EM, iterating a cipher
+   group's chunk of the plain-text span until it agrees with what the same group reads elsewhere, writing a
+   value -> meaning key TSV with counts (grade C, no cryptanalysis -- every meaning comes from the print). Built
+   for Thurloe's printed interlinear pairs, but the algorithm is general; a target with its own hand-built
+   (group, span) pairs uses it rather than re-deriving the DP/hard-EM loop as a private script (this happened
+   twice before it was caught: `ciphers/jan-van-nassau-1572-75/align/em_align.py`, then
+   `ciphers/lodewijk-van-nassau-1573-74/align/em_align_5799.py`, both kept in place since their output is
+   already cited, both now pointing at this tool in their own header).
+
+## Access playbook
+
+[ACC.0] **Key livecheck (25 Sept 2026, KEYPROBE-TOOL).** `python3 tools/key_livecheck.py` is the first command of every
+parent check-in and of every worker whose brief names an external host -- not the same tool as `tools/key_probe.py`
+below (that one is name-presence and cross-account sync, no network call; this one makes the actual documented
+call). It reports presence (`os.environ`, never a value) and, for the API-key hosts below, one live documented test
+call each; DECODE, JSTOR and Internet Archive logins are presence-only by default (see the tool's own docstring for
+why -- automating a login on every check-in would itself be the repeated-login the good-citizen rule below forbids).
+A worker may not write an ASKS.md row asking the owner for access, nor a LOCAL-QUEUE.tsv row, until the probe shows
+the relevant key absent or failing, and the row must quote the probe's line for that credential. Why this exists:
+GOOGLE_BOOKS_KEY sat unused from 20 to 25 Sept 2026 (a `country=US` parameter was all it needed), IA_USER/IA_PASS
+worked from 23 Sept with no borrow attempted until 25 Sept, and CORE_API_KEY was probed only when the owner asked --
+work sat in ASKS.md all day waiting on access already in hand. `tools/room.py --start` prints the last probe's
+summary line; a stale or missing KEYS-STATUS.md means the probe has not been run recently, re-run it.
+
+[ACC.cat] Getting the material is most of the work. Before any route, read the holding institution's own catalogue record for the shelfmark and quote its availability flag (a viewer link, or "Not available online") with the record's URL or ark: an image portal's "no items" (Digital Bodleian, Gallica search, a library viewer) says only that the search found no images, never that the item is undigitised or absent, and the catalogue record often adds the physical parts a citation hides (Bodleian MS. Rawl. A. 24 is A. 24/1-2, ASKS 30 / LOCAL-QUEUE L19, 26 Sept 2026). Then try routes in this order and record which one worked in NOTES.md:
+
+1. [ACC.1] **A JSON API or plain URL with curl**, with a browser User-Agent (`-A "Mozilla/5.0"`). Gallica IIIF, TNA
+   Discovery's API, the Huntington's CONTENTdm API and the Internet Archive all serve this way.
+   [ACC.1.a] **Huntington CONTENTdm, confirmed 24 Sept 2026:** the naive `dmQuery/ALIAS/TERM/fields!list/sort/maxrecs/
+   start/0/0/0/0/json` form silently ignores the search term and returns a fixed title-sorted listing (caught by
+   testing "cipher", a quoted phrase, and no term at all, all returning the identical 77 rows) -- always use the
+   documented `CISOSEARCHALL^TERM^all^and` clause instead, and set the sixth path segment (suppressfulltextsearch)
+   to `1` to search page-level OCR/notes text, not `0`. The Stowe Papers collection (`/p16003coll20`) genuinely
+   has no "cipher"/"cypher" hits this way; the Manuscripts collection (`/p15150coll7`) does. `dmGetItemInfo/
+   ALIAS/POINTER/json` gives the full catalogue note per item (the search endpoint truncates `descri` to empty
+   for many records).
+   [ACC.1.b] **Lambeth Palace Library and the Georgian Papers Programme / Royal Archives, confirmed 24 Sept 2026:** both
+   run CalmView (same ASP.NET WebForms software; GPP redirects `www.gpp.rct.uk` -> blocked, but the bare
+   `gpp.rct.uk` serves). The bare Lambeth hostname 403s at the root; the real catalogue is under `/CalmView/`.
+   The search box itself is a WebForms postback (needs `__VIEWSTATE`), but submitting it once yields a plain,
+   repeatable GET URL for the results page that needs no session or postback replay:
+   `/CalmView/Overview.aspx?src=CalmView.Catalog&r=((((text)='TERM')))` (URL-encode the parentheses and quotes).
+   Paging past the default 20 rows needs one POST setting the page-size dropdown (`ctl00$main$TopPager$ctl15`)
+   to `0` ("All"), with `__VIEWSTATE`/`__EVENTVALIDATION` copied from that same results page. CalmView's text
+   search tokenises "cipher" and "cypher" as distinct terms -- query both spellings.
+   [ACC.1.c] **bibliotecadigital.rah.es (Real Academia de la Historia), confirmed 24 Sept 2026:** every plain path
+   (`registro.do`, `catalogo_imagenes/grupo.do`, `resultados_busqueda.do`, and the image endpoint
+   `imagen_id.do` itself) sits behind the site's Anubis JS proof-of-work bot-challenge -- curl always gets a
+   307 to `/.within.website/`, never solves it. The site's own OAI-PMH endpoint (`/oai/oai.do`) is not behind
+   Anubis and answers plain curl. `verb=GetRecord&metadataPrefix=didl` (not the default `oai_dc`, which only
+   gives the `grupo.do` group-viewer link) returns a `didl:Resource` per page image, each `ref` a direct
+   `.../i18n/catalogo_imagenes/imagen_id.do?idImagen=NNNNNNNN` URL -- but that URL is still behind Anubis for
+   curl. A real headless Chromium (`tools/browser_fetch.js`) clears the challenge, but only intermittently
+   (of ~8 attempts one pass, most returned Anubis's own unsolved challenge page, "Anubis could not load its
+   JavaScript. The server may be overloaded."); `tools/browser_fetch.js --binary` (added 24 Sept 2026) retries
+   the navigation, default 3x, until the response's content-type isn't `text/html`, which made five image
+   fetches reliable: `node tools/browser_fetch.js "<imagen_id.do URL>" OUT.jpg --profile DIR --binary`. See
+   `ciphers/rah-canada-1869/NOTES.md` for the worked example.
+2. [ACC.2] **A real browser.** Sites that answer curl with 403, 202, a JavaScript challenge or a Cloudflare page
+   (HathiTrust, PARES, Spink, TNA Discovery record pages, Yale) usually serve headless Chromium. Use
+   `NODE_PATH=$(npm root -g) node tools/browser_fetch.js URL out.html --shot out.png`, which drives the
+   Chromium bundled in this environment. It fills a search box with `--type "css=text"` and waits for
+   `--selector`. Read the saved HTML with `python3 tools/html2text.py` or the screenshot with the image reader.
+   [ACC.2.a] Known on 20 Sept 2026: in cloud containers Chromium fails every HTTPS page with `ERR_CERT_AUTHORITY_INVALID`
+   because it does not trust the container's TLS-intercepting proxy CA (curl and Node do, through environment
+   variables). The fix is `apt-get install -y libnss3-tools && certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n
+   ccr-agent-proxy -i /root/.ccr/agent-proxy-ca.crt` once per container (the script prints this hint); a worker's
+   permission policy may refuse it, in which case say so and use the APIs below. Never use `ignoreHTTPSErrors`.
+   Confirmed 20 Sept 2026: the setup script now runs this fix automatically in a fresh container, and it works —
+   `certutil -L` lists `ccr-agent-proxy` at session start and `tools/browser_fetch.js` renders ordinary HTTPS
+   pages (e.g. archive.org) with no `ERR_CERT_AUTHORITY_INVALID`, confirming the cert problem itself is fixed.
+   It does not, on its own, get past a site's own Cloudflare bot challenge: HathiTrust and manuscripts.nls.uk
+   both still served a "Performing security verification" Cloudflare interstitial to the tool after the fix,
+   confirmed by screenshot, unrelated to the certificate. For a Cloudflare-blocked site, try the Internet
+   Archive Wayback Machine instead (`web.archive.org` is not Cloudflare-protected here): find the archived URL
+   with the CDX API, `https://web.archive.org/cdx/search/cdx?url=<site>&output=json`, then fetch
+   `https://web.archive.org/web/<timestamp>if_/<original-url>` with `tools/browser_fetch.js` (the `if_` suffix
+   avoids the wayback toolbar frame breaking `--selector`/`--type`; a bare fetch without it can return a stub
+   `upstream request failed` — retry once before concluding the capture is unreachable).
+   [ACC.2.b] **HathiTrust without a browser:** the site itself is Cloudflare-challenged for curl, but the Bibliographic API
+   (`catalog.hathitrust.org/api/volumes/brief/recordnumber/N.json`, `oclc/N.json`; needs a full Chrome User-Agent
+   string) gives volume ids, and the HTRC Extracted Features API
+   (`data.htrc.illinois.edu/ef-api/volumes/HTID/pages?pos=false`) gives per-page word counts for every volume;
+   `tools/htrc_ef_headwords.py` uses both to place headwords. Record numbers come from web search restricted to
+   catalog.hathitrust.org, the Online Books Page, or OCLC numbers from Open Library's search API.
+3. [ACC.3] **Credentials from the environment.** Logins the person has set up are exposed as environment variables
+   (`DECODE_USER` and `DECODE_PASS` for de-crypt.org). Use them through the browser tool or a curl login flow.
+   Never print them, never write them to the repo.
+   [ACC.3.a] Google Books: the API answers unauthenticated requests with HTTP 429 after a few dozen calls. The person
+   has set GOOGLE_BOOKS_KEY in the environment (20 Sept 2026): append `&key=$GOOGLE_BOOKS_KEY` to every
+   `www.googleapis.com/books/v1/volumes` call. Full-text hits still need the volume to be full view; use
+   `filter=full` and read pages through the volume's `accessInfo` links. Never print the key. **Cloud fix (25 Sept 2026, 22:55 UTC, parent probe):** from this container the keyed call returns HTTP 403 `unknownLocation` ("Cannot determine user location for geographically restricted operation"); adding `&country=US` to the same call clears it (full-view search and `searchInfo.textSnippet` on PARTIAL volumes both answered). Every Google Books API call from the cloud carries `country=US`; a `NO_PAGES` verdict recorded before this date without it is not a test.
+   [ACC.3.b] **OpenAlex and Semantic Scholar keys (24 Sept 2026).** OpenAlex retired its mailto "polite pool" in February 2026
+   and meters a daily credit budget per caller; keyless callers are counted per IP, and every cloud session shares one
+   egress IP, which is why all of them saw 429 on 24 Sept 2026. The person has set `OPENALEX_KEY` (a free key from
+   openalex.org/settings/api, ten times the keyless budget, a `search=` call costs 10 credits, a single-record lookup 0).
+   Send it as a header, never in the URL: `curl -H "Authorization: Bearer $OPENALEX_KEY" "https://api.openalex.org/works?search=..."`;
+   check what is left with `curl "https://api.openalex.org/rate-limit?api_key=$OPENALEX_KEY"` (resets at midnight UTC;
+   429 also on more than 100 requests/s). Semantic Scholar: unauthenticated traffic shares one pool and 429s; the person
+   has set `S2_KEY` (24 Sept 2026, a free key from the form at semanticscholar.org/product/api), sent as `-H "x-api-key: $S2_KEY"`, 1 request per second, no Retry-After on 429, so sleep 1.1 s between
+   calls and back off. `tools/print_check.py` reads both variables and adds the headers itself (and runs its `s2`
+   check only when the key is present). With the keys, a session runs the open-index pass itself; no owner-machine row
+   is needed for OpenAlex or Semantic Scholar. Test presence with `test -n`; never print or commit either key.
+   [ACC.3.c] Internet Archive: IA_USER and IA_PASS (set 20 Sept 2026) let a worker borrow a lending-only book for one
+   hour and read its pages (the `internetarchive` Python library's `ia configure` flow, or the web login with
+   a cookie jar; the loan endpoint is /services/loans/loan/ with action browse_book, then the page images
+   through the BookReader endpoints). Rules: one book at a time, for a named page check, returned when done,
+   never bulk; the account is for the person's own reading. Search-inside and the full-text API need no login.
+   First use, 20 Sept 2026: login failed both ways -- the `internetarchive` library's `ia configure`
+   (`services/xauthn/?op=login`) and archive.org's current `/login` page both require an email address, and
+   IA_USER as set is not one (`account_not_found` from the API; the login page renders only an "Email
+   address" field, no username field). Borrowing could not be tested; `tools/ia_borrow.py` implements the
+   flow (xauthn login, loan/browse_book, BookReaderJSIA.php for page images, loan/return_loan) but its image
+   step is unverified pending a corrected IA_USER.
+   Retried 21 Sept 2026 after the person rotated IA_USER to an email-format value and the password: login
+   still failed, same `{"success": false, "values": {"reason": "account_not_found"}}` from the xauthn API
+   (HTTP 401), but now because archive.org had no account under that email at all, not a format problem.
+   **Resolved 23 Sept 2026**: the person registered the account, and `services/xauthn/?op=login` now returns
+   `{"success": true}` with session cookies for the address in IA_USER. Login is no longer a blocker. The
+   borrow and page-image steps of `tools/ia_borrow.py` are still unverified -- nothing has held a loan yet --
+   so the first worker to use it should expect to debug that path and should record what it finds here. The
+   response body carries live session cookies: write it to a file, read what you need, delete the file, and
+   never print it.
+   [ACC.3.d] **Borrow findings, 23-24 Sept 2026:** a held CDL loan serves page images obfuscated for the archive.org reader,
+   which `tools/ia_borrow.py` correctly refuses to decode (ASKS row 18), so a loan gives a person a readable page, not a
+   worker. Items in the print-disabled tier (`is_lendable: false`, `max_borrowable_copies: 0` on the no-login
+   availability check) cannot be borrowed by this account at all (ASKS row 26, Daussy 2001). Check availability and
+   be-api fts first; a page read in a lending-only book goes to the person as an ASKS row.
+   [ACC.3.e] Without login: `be-api.us.archive.org/fts/v1/search?q=<term>&identifier=<id>` full-text-searches even
+   lending-only items and returns snippet highlights, but its `page_num` field is not a real page locator --
+   it equals the item's total `imagecount` (confirmed on two different items) -- so this route can confirm a
+   term is present/absent and show the surrounding sentence, but cannot cite a page number; page images and
+   raw OCR files (`_djvu.txt`, `_hocr_searchtext.txt.gz`, `_page_numbers.json`) all 403 without a valid loan.
+   [ACC.3.f] **IA-BORROW job, 25 Sept 2026 (parent worker IA-BORROW, session_01DzmCQYEVbNRHz3etXbHcrV):** `tools/ia_borrow.py`'s
+   `browse_book` had a live bug -- it only checked the HTTP status, not the response JSON's `success` field, so a
+   200 response carrying `{"success": false, ...}` was logged and treated as a successful borrow; fixed (now
+   `die()`s on `success` false, whatever the field's own docstring, message says). Confirmed on real loans this
+   session: (1) `correspondancede0006jose` (Correspondance de la Cour d'Espagne VI, collections `inlibrary` +
+   `internetarchivebooks` + `printdisabled`) borrows fine (`browse_book` returns `{"success": true}`), but even
+   with an active loan and a valid `loan-<id>` token, `<id>_page_numbers.json` still answers 403 -- there is no
+   script route from a held loan to a printed-page-to-leaf mapping, only to the leaf-indexed BookReaderJSIA
+   manifest; a leaf fetched anyway (leaf 300 of 944, arbitrary) came back with an `X-Obfuscate` header and no
+   JPEG magic bytes, confirming the 23-24 Sept obfuscation finding holds for this item too. (2) A `sim_*`
+   microfilm/journal item carrying only the `printdisabled` collection (no `inlibrary`/`internetarchivebooks`) --
+   `sim_cryptologia_1981-04_5_2` -- hard-fails `browse_book` itself: HTTP 400, body
+   `{"error":"This book is not available to borrow at this time. Please try again later."}`, reproduced on one
+   retry after a 20 s pause. This is a second, independent confirmation of the print-disabled-tier finding above
+   (ASKS row 26, Daussy 2001): a `printdisabled`-only item cannot be borrowed by this account regardless of
+   retries. Per this job's brief, the whole job stopped here (first hard failure of the borrow step) rather than
+   attempting items 3-5.
+   [ACC.3.g] JSTOR: JSTOR_USER and JSTOR_PASS (set 20 Sept 2026) are the owner's JSTOR account, on JPASS monthly from 24 Sept 2026 (unlimited online reading,
+   10 PDF downloads a month), used only from the owner's machine (Cloudflare blocks the cloud), online reading only, never PDF downloads; log the article and date in AUDIT.md and never print the credentials.
+   [ACC.3.h] **DECODE (de-crypt.org) login, confirmed 20 Sept 2026:** plain CSRF-protected form POST, no client-side
+   password encryption despite the site's `ENCRYPTED_PASSWORD` flag (that flag is server-side hashing only;
+   checked the unminified `ewcore.js` behind its source map, no JS touches the password field). GET
+   `/decrypt-web/login`, read the `csrf_name`/`csrf_value` hidden-input pair, POST them plus `username` and
+   `password` back to the same URL with a cookie jar (`-c`/`-b`). A failed login re-renders the same login page
+   at HTTP 200 with `"IS_LOGGEDIN":false` embedded in the page's JSON, not a distinct status code or redirect
+   — that string is the only reliable success/failure signal. `tools/decode_fetch.sh RECORD_ID OUT_DIR`
+   implements this and then fetches `/decrypt-web/RecordsView/RECORD_ID` plus its attachments; it reads
+   `DECODE_USER`/`DECODE_PASS` from the environment and never echoes them. As of that date the credentials in
+   this environment were rejected ("Incorrect user name or password", confirmed by screenshot) — this is a
+   working flow, not a working login; do not retry it repeatedly against the live account (risk of lockout).
+   Update, 21 Sept 2026: the person rotated the password and reset `DECODE_USER`/`DECODE_PASS`; a single test
+   login with the new pair was also rejected (same `IS_LOGGEDIN:false` signal). One attempt only, per the
+   handling rule below — do not retry further without the person confirming the account again (ASKS.md row 1).
+   **Resolved 24 Sept 2026, 04:40 UTC:** DECODE_USER is the site's plain user name, not an email (the owner logs in
+   with user name and password). The curl form POST is never evaluated by the server, even with every hidden field,
+   the submit button and Origin/Referer posted (`tools/decode_fetch.sh` repaired 7401f94, run once: re-rendered,
+   IS_LOGGEDIN:false, no 'incorrect' message). A real browser submission works first time:
+   `NODE_PATH=$(npm root -g) node tools/decode_browser_login.js RECORD_ID OUT_DIR` logs in headless, lands on
+   RecordsList and saves RecordsView/RECORD_ID; cookies stay in the in-memory context. Use it, one login per
+   session, fetch everything in that session, and scrub the account name from any saved page before committing.
+   Record 8725 (BL Add MS 72438 f.104) carries Status: Decrypted with two documents and two images (fetch pending).
+   [ACC.3.i] Handling rule (20 Sept 2026, after two workers echoed a password into their own transcripts): never run
+   `env`, `printenv`, `set`, `export -p` or `cat /proc/*/environ` unfiltered; never `curl -v`, `--trace` or
+   `set -x` on a command that carries a credential; pass credentials only through `--netrc-file` (mode 600,
+   deleted after), a cookie jar, or a library's own config, and test presence with `test -n`. A transcript is
+   the person's private log, but a password in it must still be rotated, so say so at once in ROOM.md.
+   [ACC.3.j] OpenAlex: the owner set OPENALEX_KEY (24 Sept 2026); append `&api_key=$OPENALEX_KEY` (URL-encoded) to every
+   api.openalex.org call, which lifts the per-address daily budget that returned 429 to every cloud session that day. Test
+   presence with `test -n`, never print it.
+   [ACC.3.k] Semantic Scholar: the owner set S2_KEY (24 Sept 2026); send it as the `x-api-key` header on every
+   api.semanticscholar.org call (the unkeyed API answered 429 from the cloud all day on 24 Sept; keyed it answers 200).
+   Test presence with `test -n`, never print it.
+   [ACC.3.l] Google Books also needs `&country=US` on every call (the API otherwise answers 403 "Cannot determine user
+   location" from cloud containers).
+   [ACC.3.m] **Credential diagnostic, 21 September 2026:** after DECODE and IA both rejected freshly rotated
+   credentials, checked whether `DECODE_USER`, `DECODE_PASS`, `IA_USER`, `IA_PASS`, `GOOGLE_BOOKS_KEY`,
+   `JSTOR_USER`, `JSTOR_PASS` are reaching this container intact, using only length/character-class tests
+   (`wc -c`, `case` glob tests, per-character `printf '%d'` ordinal checks) — no value or substring of one was
+   ever printed, logged, or echoed. Confirmed for all seven: each is set (none unset or empty); no leading or
+   trailing whitespace; not wrapped in a leading+trailing quote mark (`'` or `"`); every character is printable
+   ASCII (no non-printable byte found at any position); `DECODE_USER` and `IA_USER` each contain an `@`,
+   consistent with the person's account being (or being rotated to) an email address. Lengths were recorded
+   but are not reported here since a length alone can narrow a value; they were consistent with non-empty,
+   plausible credentials for all seven and are in the worker's ROOM.md note for anyone re-running this check.
+   Not tested: whether the value matches what the person intended to set (would require revealing it), and
+   whether a copy-paste artifact invisible to character-class tests (e.g. a Unicode look-alike character that
+   is still "printable ASCII" by this test, or a value truncated by the shell that set it before it reached
+   this container) is present — this diagnostic only rules out the specific classes checked above.
+   Conclusion: most consistent with **(b)** — the variables are reaching the container intact (correct length
+   class, no whitespace padding, no quote-wrapping, no non-printable corruption, `@` present where expected)
+   and the rejections seen on 20-21 Sept 2026 are the sites declining the credentials themselves, not a
+   transport or quoting fault in this environment. (a) unset/not-reaching is ruled out — all seven are set.
+   (c) mangling by quoting or whitespace is ruled out for the specific forms tested (wrapping quotes, leading/
+   trailing whitespace, non-ASCII/non-printable bytes). Next step is for the person to confirm the DECODE and
+   archive.org accounts and passwords directly with each site (e.g. a password reset flow), not to re-type the
+   same values into this environment's variables again.
+4. [ACC.4] **The person.** Paywalls (State Papers Online, Gale), copy orders, payments, emails to archives and dealers,
+   and captchas the browser cannot pass. Write the exact request into the target's `REQUEST.md`, mark the
+   target "waiting on you" in the report, and stop. Batch several asks into one REQUEST.md rather than
+   stopping at the first.
+
+[ACC.5] **Good-citizen rule (owner, 23 September 2026): never get flagged as a bot or spam.** Use each site's official
+API where one exists (TNA Discovery API, Gallica SRU, Internet Archive advancedsearch/metadata/download, IIIF
+manifests and image API, MediaWiki API with `maxlag=5`) rather than scraping HTML search pages. One request at a time
+per host, at least 1.5 seconds apart, never parallel workers against the same host; a few hundred requests per host
+per session at most. Fetch once and read from disk after (Usage item 4). On a 429, 403, or a Cloudflare or other
+challenge page, stop hitting that host, log it in NOTES.md and ROOM.md, and never retry in a loop; a single retry after
+a pause is the limit. Use the browser-style User-Agent only where this playbook says the site needs it; otherwise a
+descriptive one, `cipher-lab research script (contact via repository)`. Never automate a login beyond the single
+attempt rule above, never bypass a challenge, never use `ignoreHTTPSErrors`. Workers report their request count per
+host in the final paragraph.
+
+[ACC.6] Test reachability before planning: `curl -sS -o /dev/null -w "%{http_code}" <url>`; `000` means the egress
+policy blocks it, in which case say so and stop, since no route above will help.
+
+[ACC.7] Once a series is identified as useful (a ledger, a volume, a cipher book), fetch all of it once and record the
+manifest (URLs, ids, sizes) in the target folder, so later workers do not refetch. Keep committed images under
+30 MB per folder; for more, keep the manifest and a sample and note where the rest can be re-fetched. A folder already over the line is shrunk the way AX2-SHRINK did it on 26 Sept 2026 (lodewijk-van-nassau-1573-74, 80 to 24 MB): an `images_manifest_full.tsv` with a `cited_by` column (which NOTES/AUDIT line uses each file), a `regen_images.sh` that re-derives every full page and every recorded crop from the source, a byte-identical regen test on a sample before any deletion, uncited full pages deleted, cited pages converted to JPEG at the same dimensions.
+
+### Image and catalogue hosts (table, 25 Sept 2026)
+
+[ACC.hosts] One row per host, from what workers have actually recorded in the repo -- read before rediscovering a route.
+"not recorded" means a real search of QUEUE.md, ROOM.md, STATUS.md, sources/, tools/ and LESSONS.md turned up
+nothing, not that the host is untried.
+
+| Host | Serves | Auth / key | Works from cloud? | Route or tool | Rate rule | Documented |
+|---|---|---|---|---|---|---|
+| Gallica (gallica.bnf.fr) | IIIF v2 manifest + native-res image API; SRU search; texteBrut OCR | none | yes (24-25 Sept 2026) with a browser UA; intermittent altcha/SSL-reset; texteBrut endpoint needs a real local browser | `tools/gallica_folio.py`, `tools/iiif_lines.py` | 1-2s apart | LESSONS.md; STATUS.md (Gallica lane) |
+| BnF archivesetmanuscrits (archivesetmanuscrits.bnf.fr) | finding-aid search, no images | none | page 1 works via curl; pagination needs a real browser and varies run to run (run twice) | plain POST search form | not specified | LEDGER.md; images not public domain -- permission via manuscrits@bnf.fr or the SINDBAD form |
+| British Library IIIF (iiif.bl.uk / bl.digirati.io) | IIIF manifests for BL digitised mss | none | dead since the 2023 cyberattack; access.bl.uk is DNS-dead | none for images; `searcharchives.bl.uk?format=json` works for catalogue only | >=2s, <=120 calls | LESSONS.md; HANDOFF-WEEK.md; QUEUE.md; brief scUK |
+| e-codices (e-codices.unifr.ch) | server-rendered full-text search, medieval mss | none | yes (24 Sept), but 0 cipher yield on two full sweeps -- drop from future sweeps | plain search URL | <=15/session | QUEUE.md; ROOM.md; brief scCH |
+| e-manuscripta (e-manuscripta.ch) | OAI-PMH (harvest only, no search verb); HTML `/search` | none | partial: OAI reachable; HTML search Cloudflare-challenged once, not retried | `/oai` (harvest only, ~16,400 requests for a full harvest) | <=60/session, >=3s | QUEUE.md; brief scCH |
+| Bavarikon / BSB (bavarikon.de + api.digitale-sammlungen.de) | search/object pages + IIIF image API v2 (separate host) | none | yes via the browser tool (Anubis-challenges curl); confirmed working 24 Sept 2026 across 30-45-request rounds | `www.bavarikon.de/search?terms=...` (wildcards -- whole-word tokenizer) then `api.digitale-sammlungen.de/iiif/image/v2/{id}/full/{size},/0/default.jpg` | bavarikon >=3s, <=60-80/session; image API <=15-30/session | QUEUE.md; LEDGER.md; ciphers/trew-schellhammer-1653/NOTES.md; briefs scBAV/scBAV2/scTREW |
+| ONB (Austrian National Library, onb.ac.at) | catalogue only, no image API found | none | no usable route -- search.onb.ac.at is a Primo Explore Angular shell, no server-rendered results, not yet tried with the browser tool | none found | n/a | QUEUE.md; LEDGER.md; STATUS.md |
+| Europeana (api.europeana.eu) | JSON search (TYPE:TEXT/TYPE:IMAGE), aggregated copy-free IIIF images from hundreds of holdings | `wskey=api2demo` (public shared demo key; EUROPEANA_API_KEY not yet set, ASKS row 47) | yes, reliably, no 403/429/challenge ever logged | `api.europeana.eu/record/v2/search.json?wskey=api2demo&query=...` | <=80/session | QUEUE.md; ASKS.md row 47; ROOM.md |
+| DigitArq / ANTT (digitarq.arquivos.pt) | full working-res JPEG images, catalogue full-text search, item detail (reverse-engineered public JSON API) | none | yes, reliable, HTTP 200 | `tools/digitarq_fetch.py` -- the search/advancedSearch endpoints ignore their own query/pagination params; use `/api/rdigital/{docId}?fromIndex=&max=` for the real page list and `/api/rdigital/dissemination?fileId=` for full-size images | >=3s (stricter than the general 1.5s floor), <=150/session | `tools/digitarq_fetch.py` docstring; QUEUE.md ("PARES / DigitArq cipher letters", "Portuguese holdings" sections) |
+| BNP / purl.pt (bndigital.bnportugal.gov.pt) | catalogue search, quoted-phrase respected | none | yes | `bndigital.bnportugal.gov.pt/records?...` (NOT `digital.bnportugal.gov.pt`, a proxy CONNECT failure) | 5 queries/session logged, no issues | QUEUE.md; briefs scPT, lane-px-scdict |
+| PARES (pares.mcu.es / pares.cultura.gob.es) | dead | n/a | **no** -- dead host, 24 Sept 2026: the origin server's own TLS cert chain is incomplete (not a proxy/trust issue), and even the Wayback CDX index for this host failed the same way once | none; grep the `aaymeloglu/unsolved-ciphers` repo's cached PARES sweep (`catalogue/pares-*.jsonl`) instead | n/a | QUEUE.md ("PARES: blocked, not a bot challenge in the usual sense") |
+| Huygens WVO (resources.huygens.knaw.nl/wvo) | advanced-search HTML + CSV export (CSV omits the useful `opmerkingen` field); per-letter detail page has it | none | yes, reliable, no blocks logged | `wvo/app/brieven?opmerkingen=<term>&opmerkingenBool=AND&geavanceerd=1`; `wvo/app/brief?nr=<n>` for detail | >=2s apart, descriptive UA | sources/wvo/NOTES.md |
+| Huygens retroboeken -- Heinsius, De Witt, Oldenbarnevelt, Willem III-Bentinck, Staten-Generaal (resources.huygens.knaw.nl) | full-text OCR search across each printed edition (hits letter text AND editorial footnotes) + page images | none | yes, reliable | `retroboeken/<book>/<accessor_id>/index_html?search_term:ustring:utf-8=<term>&batch_start=N` (accessor varies by book); `retroboeken/<book>/pages.json?source=<m>` for the real image URL; `toc1` accessor gives a chronological letter index | >=2-2.1s apart, descriptive UA, ~95-128/session | sources/huygens/NOTES.md (Grotius is a *different* app, grotius.huygens.knaw.nl, covered via the ePistolarium/tc13 backend instead) |
+| Nationaal Archief (nationaalarchief.nl / service.archief.nl) | item metadata + full-res JPEG scans + a real IIIF endpoint (service.archief.nl) | none | intermittent -- site-wide maintenance 503 seen once, worked fine other sessions same day; `data.nationaalarchief.nl` does not resolve through the proxy at all, permanently, use `www.nationaalarchief.nl`/`service.archief.nl` instead | read the item page's embedded `drupal-settings-json` -> `viewer.response.availability`/`scans` (the visible "Scan"/"Viewer" boilerplate text is identical whether or not an item is actually digitised -- not a per-item signal), then `service.archief.nl` IIIF `info.json` | >=1.5s, descriptive UA, <=25/host | sources/huygens/NOTES.md; QUEUE.md |
+| archieven.nl | intended Dutch-archives cross-search | none | query-form-unverified, not a tested negative -- results load client-side against `mifiles.archieven.nl`, not reverse-engineered; a headless-Chromium fetch also rendered no result list | none confirmed | n/a | QUEUE.md (openarch.nl/openarchieven.nl is a different, unrelated genealogy site) |
+| Internet Archive full-text API (archive.org, be-api.us.archive.org) | `_djvu.txt` OCR, `advancedsearch.php` metadata, `be-api.../fts/v1/search` full-text search that works even on lending-only items (its `page_num` field equals the item's total `imagecount`, not a real page locator) | none | yes, extensively used | `tools/ia_numeral_runs.py`, `tools/ia_djvu_headwords.py`, `tools/print_check.py` | 1.5s apart, one at a time | tools/ia_numeral_runs.py docstring; sources/ia-fulltext/NOTES.md; CLAUDE.md item 3 |
+| Internet Archive lending/borrow (archive.org) | controlled digital lending, one-hour session loan | IA_USER/IA_PASS (must be an email address; resolved 23 Sept 2026 -- owner registered the account) | login/loan/return all work, but the page image itself is served obfuscated for scripts (`X-Obfuscate` header) -- `tools/ia_borrow.py` detects this and stops rather than decode it; pages must be read by a person in the reader, or via be-api full-text search (no page numbers) | `tools/ia_borrow.py IDENTIFIER --pages N-M --out DIR` | one book at a time, for one named check, returned when done, never bulk | tools/ia_borrow.py docstring; CLAUDE.md item 3 |
+| HathiTrust bibliographic API (catalog.hathitrust.org/api/volumes) | volume ids/htids from a record or OCLC number | none (needs a full Chrome UA string) | yes | chained through Open Library search -> OCLC -> this API in `tools/htrc_series_harvest.py` | not specified | CLAUDE.md item 3; tools/htrc_series_harvest.py |
+| HathiTrust HTRC Extracted Features API (data.htrc.illinois.edu/ef-api) | per-page token counts only (bag-of-words, no order, no image) for every volume including in-copyright ones | none | yes, reliable, no Cloudflare (a different host from HathiTrust's own site) | `tools/htrc_ef_headwords.py` (headword-location), `tools/htrc_numeral_pages.py` (numeral-density cipher-page detector) | >=1.5-1.6s | tools/htrc_ef_headwords.py, tools/htrc_numeral_pages.py docstrings; sources/htrc/NOTES.md |
+| HathiTrust full text / page images (babel.hathitrust.org, catalog.hathitrust.org's own search UI) | full text, page images | none | **no** -- Cloudflare-challenged, does not work from the cloud even with the browser tool, even after the container's TLS-proxy cert fix | none from the cloud | n/a | CLAUDE.md item 2; tools/local_runner_brief.md; LOCAL-QUEUE.tsv rows L3/L4 |
+| Google Books (www.googleapis.com/books/v1) | JSON volume search, snippet/full-view text via `accessInfo` links | GOOGLE_BOOKS_KEY (set 20 Sept 2026) | yes, with key + `&country=US` (or 403 "cannot determine user location" from cloud containers); unauthenticated 429s after a few dozen calls | `?q=...&country=US&key=$GOOGLE_BOOKS_KEY`, `filter=full` for full-view only | not specified | CLAUDE.md items 3, 2 (Google Books key notes); tools/print_check.py |
+| JSTOR (jstor.org) | article search/read | JSTOR_USER/JSTOR_PASS (owner's JPASS account) | **no** -- Cloudflare blocks the cloud entirely | none from the cloud; online reading only, never PDF downloads, from the owner's machine | n/a | CLAUDE.md item 3; tools/local_runner_brief.md; LOCAL-QUEUE.tsv row L2 / JSTOR-QUEUE.tsv |
+| OpenAlex (api.openalex.org) | scholarship search (`works?search=`) | OPENALEX_KEY (header `Authorization: Bearer $OPENALEX_KEY`, not the URL) | yes with the key (10x the keyless per-IP daily budget, which 429'd every cloud session on 24 Sept); still 429s if a pass doesn't send it | `tools/print_check.py`; `api.openalex.org/rate-limit?api_key=` to check budget | <=100 requests/s, budget resets midnight UTC | CLAUDE.md item 3; tools/print_check.py |
+| Semantic Scholar (api.semanticscholar.org) | `graph/v1/paper/search` | S2_KEY (header `x-api-key`) | yes with the key; some passes still show 429s, suggesting inconsistent key usage | `tools/print_check.py` (reads S2_KEY/S2_API_KEY/SEMANTIC_SCHOLAR_API_KEY, runs the check only when present) | 1 request/s, no Retry-After -- sleep 1.1s and back off manually | CLAUDE.md item 3; tools/print_check.py |
+| DECODE (de-crypt.org) | record metadata/listing (login-free), thumbnails, documents, full-size images (account-gated) | DECODE_USER/DECODE_PASS | listing works with no login at all; login itself works via a real browser (resolved 24 Sept 2026, DECODE_USER is a plain username not an email); full-size images and non-image documents are **account-wide blocked even when logged in**, confirmed from the owner's own browser session -- a role/permission gate, not a route problem (but 2 Oct 2026, A2-HDK: record 4692's full-size image was served after one browser login with `--guess-fullsize`, a real 13.4 MB JPEG -- re-test per record before assuming blocked) | `tools/decode_list.py` (login-free catalogue paging); `tools/decode_browser_login.js` (real-browser login + fetch); `tools/decode_fetch.sh` confirmed broken (its curl POST is never evaluated server-side) | 1.5-2s apart, one login per session | sources/decode/NOTES.md; CLAUDE.md item 3; ASKS.md row 1 |
+| Library of Congress (loc.gov) | JSON search/item API (`?fo=json`); `tile.loc.gov` IIIF image tiles; `crowd.loc.gov` By the People transcriptions | none | `www.loc.gov` and `tile.loc.gov` yes, reliable, 200; `crowd.loc.gov` 403 to curl with both descriptive and browser UA | `www.loc.gov/search/?fo=json&q=...` | not specified | QUEUE.md ("Library of Congress digitised manuscripts", LANE N, 24 Sept 2026) |
+| NARA (catalog.archives.gov) | catalog search JSON, API v2 | requires an `x-api-key`, requested by email per NARA's own GitHub README; not set in this environment | HTTP-reachable (200) but functionally unusable without the key -- the plain search UI returns huge unfiltered, noise-dominated result counts | catalog search JSON needs the key, but the **public IIIF Image API v3 serves page images with no key** (ARM-IMG, 26 Sept 2026 08:19 UTC: render the item's search page with `tools/browser_fetch.js` to get the NAID and the image identifiers, then fetch each frame at its own native size; a size wider than native returns the app HTML at HTTP 200, so check the content-type); worked example NAID 188671566 (RG 59 M34 roll 14, frames 0029-0032) in ciphers/armstrong-madison-1808/images/manifest.json | 1.5s apart, one frame at a time | ciphers/armstrong-madison-1808/NOTES.md (ARM-IMG); QUEUE.md (free-key gap for search) |
+| Bodleian (digital.bodleian.ox.ac.uk) | IIIF/search for digitised manuscripts | none | yes, 200 direct | search/IIIF at digital.bodleian.ox.ac.uk | not specified | QUEUE.md; STATUS.md (`archives.bodleian.ox.ac.uk` is the separate Archives & Manuscripts catalogue, copy-order only) |
+| Bodleian Archives & Manuscripts catalogue (archives.bodleian.ox.ac.uk, records served at marco.ox.ac.uk/ark:/29072/...) | the holding record per shelfmark with its availability flag ("Not available online" vs a viewer link) -- the answer to "is it digitised" when Digital Bodleian returns no items | none | bot-checked to the runner's cloud browser (26 Sept 2026); works from the owner's own browser | the owner's desk runner (LOCAL-QUEUE.tsv, tools/local_queue_runner_prompt.md step 3); quote the ark | one record at a time | ASKS 30 / LOCAL-QUEUE L19 (MSS. Rawl. A. 24/1-2, "Not available online", ark:/29072/x08k71nh14zj, PR 22) |
+| EMLO / Bodleian Solr (emlo.bodleian.ox.ac.uk/solr/all/select) | per-manifestation catalogue notes (`bibo_Note`), stronger than the collection-title inference | none | yes, plain GET, reliable | `emlo.bodleian.ox.ac.uk/solr/all/select?q=...` -- query the item's own manifestation record for `bibo_Note`, not just the finding-aid's volume title | ~1.5s apart | QUEUE.md "EM3 check-solved, 26 Sept 2026"; LEARN-2026-09-26-1313.md |
+| CUDL (cudl.lib.cam.ac.uk) | search JSON + IIIF manifests | none | inconsistent -- 403 to plain curl in one pass, answered real queries via the browser tool in an earlier pass the same day; zero cipher-yielding rows found either way | browser tool | not specified | QUEUE.md; STATUS.md; sources/solver-diffs/2026-09-24-lane-n-oxbridge-digital.tsv |
+| Beinecke (Yale, collections.library.yale.edu) | IIIF images | none | catalogue search is bot-challenged to plain curl; item-level IIIF fetch works via the browser tool once the item is identified (confirmed on two targets) | browser tool, item ID known first; `dataverse.yale.edu` hosts some material openly (CC0, no login) | <=15-40/session | QUEUE.md; ROOM.md; STATUS.md |
+| Folger (catalog.folger.edu, luna.folger.edu) | catalogue, LUNA image repository | none | **no** -- "Human Verification" bot-check page, 403/202-challenge/503 across every attempt, 24 Sept 2026 | none found -- email Folger reference for a digital image or LUNA link | n/a | QUEUE.md; QUEUE-scores.json; STATUS.md |
+| Leiden (Universiteit Leiden / UBL) | not recorded beyond a one-line grouping | none | grouped in STATUS.md's "seven catalogues answer curl with bot challenges" list, but no host-specific URL, route or result logged anywhere else | not recorded | not recorded | STATUS.md (grouped only, no dedicated section found) |
+| KB (Koninklijke Bibliotheek, kb.nl) | `jsru.kb.nl/sru/sru` real SRU endpoint, GGC (printed-book catalogue) collection only, no manuscripts collection found; `manuscripts.kb.nl/search` ignores its own `?query=` param; `collecties.kb.nl/zoeken` is Cloudflare-challenged | none | jsru.kb.nl yes, but GGC-only yields pure noise for cipher terms (`cijferschrift` = sheet-music notation, not cryptography); manuscripts.kb.nl reachable but non-functional search; collecties.kb.nl blocked | `jsru.kb.nl/sru/sru?query=...&x-collection=GGC` | >=1.5-2s, <=40/session | QUEUE.md; STATUS.md; sources/solver-diffs/2026-09-24-lane-n3-nl.tsv |
+| TCD (Trinity College Dublin, digitalcollections.tcd.ie) | digital collections search | none | **no** -- Cloudflare/hCaptcha "One More Step" challenge, confirmed twice, query form unverified beyond that | none working | n/a | QUEUE.md; sources/solver-diffs/2026-09-24-lane-n-ireland.tsv; STATUS.md |
+| NLS (National Library of Scotland, manuscripts.nls.uk) | manuscript catalogue | none | **no** -- Cloudflare "Performing security verification" interstitial, confirmed even after the container's TLS-proxy cert fix (named alongside HathiTrust as the two sites that still block post-fix) | none direct; Wayback CDX (`web.archive.org/cdx/search/cdx?url=manuscripts.nls.uk...`) works as a fallback; email manuscripts@nls.uk / the copy-enquiry form | n/a | CLAUDE.md item 2; ciphers/nls-20769/REQUEST.md |
+| Antenati (antenati.cultura.gov.it) | Italian vital-records genealogy | none | **no** -- 403 on first attempt and the one permitted retry | none | n/a | QUEUE.md; sources/solver-diffs/2026-09-24-lane-n-italy-a.tsv; LEDGER.md |
+| academia.edu | scholars' published papers (key bibliography, e.g. Tomokiyo) | none | **no** -- 403 login wall, every attempt, no exceptions found | none from the cloud; a related (not identical) article sometimes on Tomokiyo's own mirror, cryptiana.web.fc2.com | n/a | sources/cryptiana/README.md; tools/local_runner_brief.md; LOCAL-QUEUE.tsv row L8 |
+| Banco de Portugal (bportugal.pt) | the bank's own historical-publications PDFs (OCPEP series) | none | **no** -- 403/connection-rejected on every route, confirmed again 25 Sept 2026, even via headless Chromium | none from the cloud | n/a | ciphers/antt-linhares-chave/AUDIT.md, NOTES.md; LOCAL-QUEUE.tsv row L10 |
+| books.google.com (page/text view: `pg=`/`output=text`, PDF and epub download) | full page images and OCR text of a specific volume page | none | **no** -- captcha/bot-blocked from the cloud, confirmed 2 sessions for 2 (SCOUT-OWN-3, D1-CHECK, 26 Sept 2026); the separate Books API host (`www.googleapis.com/books/v1`, with `&country=US` and `GOOGLE_BOOKS_KEY`) still works for snippet/full-view search | none from the cloud for page/text view | n/a | ciphers/_triage/doria-donjuan-1568.md (D1-CHECK, 26 Sept 2026) |
+| cervantesvirtual.com (Biblioteca Virtual Miguel de Cervantes) | Spanish-language digitised texts and editions | none | **no** -- Cloudflare-blocked to curl and to `tools/browser_fetch.js` alike, confirmed 26 Sept 2026 (D1-CHECK, 3 requests) | none from the cloud; a desktop/LOCAL-QUEUE route only | n/a | ciphers/_triage/doria-donjuan-1568.md (D1-CHECK, 26 Sept 2026) |
+
+[ACC.8] Hosts that need the owner's own machine (queued in `LOCAL-QUEUE.tsv`): JSTOR; HathiTrust full text/page images;
+Gallica's texteBrut text endpoint specifically (its IIIF image API works fine from the cloud); the actual page
+images inside a held Internet Archive loan (obfuscated for scripts, a person must read them in the reader);
+academia.edu; Banco de Portugal (bportugal.pt); and narrower cases -- some Google Books full-view volumes, and
+archivesnationales.culture.gouv.fr/francearchives.gouv.fr, which do not load from the cloud at all.
+
+[ACC.9] Free keys the record shows would help, not yet set: **EUROPEANA_API_KEY** (free at pro.europeana.eu/page/get-api;
+lifts the shared `api2demo` throttle on what is already the widest free-image source the scouts use -- ASKS row
+47); **DPLA_API_KEY** (free at pro.dp.la/developers/api-codex; no DPLA usage found anywhere in the repo yet,
+would add digitised US collections -- ASKS row 47); **a NARA API key** (`x-api-key` for catalog.archives.gov,
+requested by email per NARA's own `usnationalarchives/Catalog-API` GitHub README; without it catalog.archives.gov
+search is reachable but functionally unusable, drowned in unfiltered noise).
+
+
+
+   [ACC.10] **Optional discovery keys (listed 25 Sept 2026; the owner adds them in the environment settings, fresh workers pick
+   them up; test presence with `test -n`, never print):** `EUROPEANA_API_KEY` (set 25 Sept 2026, answers HTTP 200)
+   (Europeana Search/Record API, `wskey=`
+   parameter; replaces the shared public `api2demo` key, which is throttled; aggregates IIIF images from hundreds of
+   European holdings), `DPLA_API_KEY` (set 25 Sept 2026, answers HTTP 200) (Digital Public Library of America, `api_key=` parameter; digitised US
+   collections), `DDB_API_KEY` (not visible as of 25 Sept 2026 22:58 UTC; the owner believes it was added -- re-probe from a fresh session, and check the variable name) (Deutsche Digitale Bibliothek: German archives, libraries and the Archivportal-D;
+   authentication as its API documentation at api.deutsche-digitale-bibliothek.de says), `APE_API_KEY` (not set as of 25 Sept 2026) (Archives Portal
+   Europe: archival finding aids across Europe, only from institutions that allow API access; per its API page),
+   `CORE_API_KEY` (set 25 Sept 2026, probe 22:58 UTC: HTTP 200 with `Authorization: Bearer`, path `v3/search/works/` with the trailing slash -- without it the API answers 301 to an HTML redirect; keyless calls get 429) (CORE open-access full text, `Authorization: Bearer`; for verifiers' scholarship searches). Where a key
+   is absent, fall back to the keyless route and say so in NOTES.md; a missing key never blocks a job.
+
+   [ACC.11] **Keys are a register, a request tool and an announcement (owner's ask, 25 Sept 2026, about 22:45 UTC).** `KEYS.md` is the
+   one list of credential names, their purpose, the tool that reads them and which account has seen them. An agent that needs a
+   key runs `tools/key_request.py NAME --purpose "..." --tool tools/x.py --by "<lane/worker>"` (writes the KEYS.md row as
+   `requested`, the ASKS.md row for the owner's desk and a ROOM.md flag); the owner adds the variable in the environment
+   settings of BOTH accounts (a session started before the change never sees it); the next fresh session on each account
+   runs `tools/key_probe.py --sync` inside `tools/room.py --start`, which flips the row to `set`, records the account and
+   time in `seen`, and appends "key NAME now set on account X" to ROOM.md, so both parents learn of it at their next
+   check-in with no message from the owner. A `set` row seen by one account only is a key the other still lacks; a row
+   whose purpose reads "undocumented" is not used until a brief names the service. Accounts label themselves with
+   `CIPHERLAB_ACCOUNT` (`ytbiz`, `owner`; ASKS row 63). The prose lists above stay as the how-to per host; KEYS.md is
+   the presence record.
+
+   [ACC.12] **Key probe, 25 Sept 2026, 22:44 UTC (parent 7d, after the owner reported that keys added on one account for a worker there were
+   missed by the other).** `python3 tools/key_probe.py` lists, by name only, every credential variable this container carries
+   against the list documented here, and `tools/room.py --start` prints its one-line summary at every session start; a name it
+   reports as "set but not in CLAUDE.md" is documented here (what it is for, which tool reads it) before any worker uses it.
+   Present on this account at 22:44: the eleven above plus REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET (24 Sept, tools/reddit fetch
+   briefs), and three the repository had not recorded: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY (no region variable set) and
+   CLOUDSDK_AUTH_ACCESS_TOKEN (Google Cloud SDK access token; no project variable set). Their purpose is not recorded anywhere in
+   the repository as of 22:44 (ASKS row: the owner names the service and the job they were added for); until then no worker calls
+   AWS or Google Cloud with them. Unset: DDB_API_KEY, APE_API_KEY, CORE_API_KEY, NARA_API_KEY. The two accounts' environments are
+   configured separately: a key added for one account is added on the other too, and each parent runs the probe at start.
+
+   [ACC.13] **Key probe, 25 Sept 2026.** Presence check (name only, no values printed): `EUROPEANA_API_KEY` set, `DPLA_API_KEY`
+   set, `DDB_API_KEY` unset, `APE_API_KEY` unset, `CORE_API_KEY` unset. One test query per set key, key passed only via
+   its environment variable: Europeana Search API (`query=cipher&rows=1`) returned HTTP 200, `success: true`,
+   `totalResults: 1668`; DPLA (`q=cipher&page_size=1`) returned HTTP 200, `count: 805`. Both keys work from this
+   container. Fresh worker sessions started after this point pick up both variables automatically; sessions already
+   running before this point do not see newly-added environment variables and should not be assumed to have them.
+
+## Improvement loop
+
+[IMP.1] The orchestrator writes a LEDGER.md row when it archives a worker (role, model, cost, outcome code, lesson).
+[IMP.2] Before appending its own self-ledger row at a lane's close (26 Sept 2026, RETRO-2026-09-26c), the orchestrator
+runs `tools/ledger_check.py`: if it flags a duplicate session id for the orchestrator's own session, the close was
+already ledgered once (LANE B5, V7 and GOLD3 all did this in one window, 26 Sept 2026, about USD 17 of orchestrator
+overhead counted twice across the three pairs) -- edit the existing row in place rather than appending a second one, unless the new row
+demonstrably describes different workers or a different total spend from the first.
+[IMP.3] A job run by one account for another is ledgered once, by the account that ran the session (it alone can read the
+cost), with "(for <account>)" in the role. The requesting orchestrator writes no row of its own; it records the result
+in its handoff or STATUS.md (RETRO-2026-10-03-acct3 P4: 24 "not visible from account N" twins on 2-3 Oct doubled the
+12-row retrospective trigger).
+[IMP.4] Briefs are copies of the templates in `.claude/briefs/`; a lesson becomes a template edit, not a note. A
+retrospective session (`.claude/briefs/retrospective.md`) runs after every 12 ledger rows or $60 of worker
+usage, whichever comes first (the orchestrator checks after every worker report), and after any worker scored X
+or F; it reads the ledger and the period's log and proposes at most five concrete changes as diffs in
+RETRO-<date>.md (approved by the owner 24 Sept 2026, ASKS row 23). The orchestrator applies changes that only touch briefs, tools or workflows, records them in
+the ledger, and puts anything that changes the goal, the spend or the person's asks to the person with a
+recommendation. Success is measured as cost per delivered result by role, share of workers that stop on
+brief, over-claims caught before the person sees them, and whether the top of the queue produces results.
+[IMP.5] A fix a retrospective finds in one lane's dated COMMON.md and not in the others' is ported into the shared
+`.claude/briefs/README.md` common tail in the same pass, not left lane-local (RETRO-2026-09-25h: the wall-clock
+cost box and the AskUserQuestion ban each landed in only the one lane that discovered them, twice the same day,
+before this rule existed).
+
+## Git
+
+[GIT.1] Commit directly to `main`. No pull requests unless asked. Stage by explicit path when several sessions share
+the repo. Never rewrite history.
+[GIT.2] A long-lived orchestrator's GitHub MCP token can go stale mid-session without an error the orchestrator notices
+(confirmed 24 Sept 2026: closing eight second-opinion pull requests failed silently against the parent's token
+after several hours; a fresh $0.24 Sonnet worker closed them on the first try). Route any GitHub pull-request or
+issue write through a short-lived worker rather than a parent that has been running for hours, whether the write
+is a second-opinion PR close or an outreach issue post.
+[GIT.3] The history purge planned on 23 Sept 2026 (`tools/purge_history.sh`, branches `purged-main`, `purged-main-2`) was
+dropped on 25 Sept 2026: the owner is fine with his name, email addresses and the images staying in history, and a
+scan of every commit that day found no secret. So there is no pending swap, and nobody force-pushes `main`. The one
+case that would justify a rewrite is a real credential committed by mistake: then rotate it first, tell the owner in
+ROOM.md, and let him decide; never force-push on a session's own judgement.
