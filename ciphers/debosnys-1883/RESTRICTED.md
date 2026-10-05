@@ -39,4 +39,5 @@ says otherwise):**
   present. The single identical object is a 49-byte empty Google Books search response, not museum material.
 - No file under a `restricted/` path has ever been committed; no museum scan's file name appears anywhere in history.
 - The 85 Debosnys image paths ever committed are the public cryptogram images (Debosnys-Cryptogram-*, Poem, Poem-verso,
+- Both Debosnys sorter pages (artifacts PJeZjH4CR3DNKbKT1ksMRf, 3HcBvFdR7EJ17VFy8uE7sM, private) opened 5 Oct: every tile (1,315) and every context page comes from c1, c2a, c2b, c3, c4a, c4b -- the four published cryptogram images; no museum scan.
   per images/manifest.json), crops/strips/sheets cut from those (c1-c4b), and two printed cipher-key figures.
