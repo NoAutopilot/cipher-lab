@@ -8,6 +8,9 @@
    **Owner's refinement, 5 Oct 2026:** the disclosure is required in the FIRST message to a recipient or thread. A
    follow-up in a thread where it was already stated does not repeat it (owner: "I don't think we have to say this intro
    piece every time"); the gate-7 check confirms the thread's first message carried it.
+1c. **One message per recipient at a time (owner, 5 Oct 2026).** Before drafting to an address, list every draft and
+   every message sent to it in the last 7 days. Fold new asks into a pending draft, or hold them until the recipient has
+   answered (or about a week has passed); never queue two separate sends to one institution within a day.
 1b. **Show the relevant work (owner, 5 Oct 2026).** Every outgoing request or question carries one short paragraph
    showing what we have done that concerns THIS recipient's holdings or field (a reading of their item, a key that fits
    their papers, a catalogue correction, an identification), with the folder link, so the note is taken seriously and
