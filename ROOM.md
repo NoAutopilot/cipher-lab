@@ -8678,3 +8678,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 13:42 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 13:39: spawned 0, queued left 0
 2026-10-05 14:13 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 14:13 UTC: spawned 0 (), queued left 0
 2026-10-05 14:23 | standby (owner account) | alive; holder account 3, last line 20:49 (announced restart 14:45 UTC not yet due -- no takeover; next standby 16:2x applies the normal 150-min rule)
+2026-10-05 14:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 14:39: spawned 0, queued left 0
