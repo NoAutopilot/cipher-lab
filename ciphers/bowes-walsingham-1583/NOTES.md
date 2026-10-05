@@ -634,3 +634,11 @@ out the keys to Ralph Sadler's cipher and making a key to Sir Francis Walsingham
 Papers on the affairs of England and Scotland in the reigns of King James V and his daughter Queen Mary". Whether that key
 covers the Bowes/Cary system of 1583 is unknown; it would be a reconstruction (MacKenzie's own), not a period key. Next: NRS
 catalogue search of GD406 for MacKenzie / Walsingham / key / cipher (~$1, a worker); not yet done.
+
+## RUN6-BOWESNRS (5 Oct 2026)
+Status unchanged (lead only; nothing read). Searched 5 Oct 2026 04:45-04:47 UTC by `date -u`; requests: catalogue.nrscotland.gov.uk 2 (GET `/` and `/nrsonlinecatalogue/`, browser-neutral descriptive UA), web.archive.org 3.
+- NRS: both URLs HTTP 403 with the Cloudflare "Just a moment..." interstitial. Not retried (good-citizen rule). No GD406 search was run.
+- Wayback CDX (`web.archive.org/cdx/search/cdx?url=catalogue.nrscotland.gov.uk`) and a `web/2024if_/` fetch: connection reset by the agent proxy (ws_closed_mid_exchange) on 3 of 3 tries, one after a 20 s pause. Even if reachable, an archived copy would not hold a dynamic GD406 search result.
+- Route: LOCAL-QUEUE.tsv row L56 (catalogue-lookup, owner's-browser runner) with the six terms and the HMC lead. No ASKS row (the runner queue is the route).
+- Not found / not tested: no GD406 record for MacKenzie, Walsingham, key, cipher, cypher or Sadler was seen, because no catalogue page was readable. This is a non-test, not a negative.
+- Next: L56 answer; if a record names a key, then check-solved Premise step for the Hamilton key before any use on the 1583 Bowes cipher.
