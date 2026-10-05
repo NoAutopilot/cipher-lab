@@ -8,6 +8,12 @@
    **Owner's refinement, 5 Oct 2026:** the disclosure is required in the FIRST message to a recipient or thread. A
    follow-up in a thread where it was already stated does not repeat it (owner: "I don't think we have to say this intro
    piece every time"); the gate-7 check confirms the thread's first message carried it.
+1b. **Show the relevant work (owner, 5 Oct 2026).** Every outgoing request or question carries one short paragraph
+   showing what we have done that concerns THIS recipient's holdings or field (a reading of their item, a key that fits
+   their papers, a catalogue correction, an identification), with the folder link, so the note is taken seriously and
+   gives the recipient a reason to help. Rule-10 wording only (no 'first', 'new', 'unpublished'), say what it rests on
+   (a printed text, a published key) and keep it to the facts the AUDIT.md supports; if we have nothing relevant to
+   them, say nothing rather than pad. Gate 7 checks this paragraph like any other.
 1a. **Voice, not just disclosure (26 Sept 2026).** Write every sentence after the disclosure in the voice of
    who actually did it: "I" for what the person decides, asks or sends (the request itself, the sign-off);
    "we" for what the agents did (searched, transcribed, compared, checked, ruled out) -- never smooth a "we"
