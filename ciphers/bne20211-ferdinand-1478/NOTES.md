@@ -348,9 +348,48 @@ clone and an add_repo request for the private one were both refused by the sessi
 key or reading was made; the images were never on this container. Next: rerun the same brief from a session whose
 GitHub scope already includes the private repository (or the owner allows it for this account's sessions), ~$10.
 
+## FER1478-READ2 rerun, 5 Oct 2026 22:21-22:3x UTC (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA, private repo attached)
+
+Brief .claude/briefs/runs/2026-10-05-acct3-fer1478-read2.md, restarted at step 1 with the private repository in scope.
+Stopped at the step-2 gate; no key, no reading, 0 tokens graded.
+
+**Step 1, crops.** Material: images-123-shots/set1-4.png (1564x736), set1-5.png (1481x802), set1-6.png (1552x675) in the
+private repo; nothing copied here. The auto line detector misreads this sloping hand (6/15/5 lines found), so the centres
+came from a narrow-strip ink profile, checked on the debug overlay:
+`python3 tools/iiif_lines.py --image set1-5.png --out <scratch>/h5b --prefix s5b --region 180,0,1180,802 --centres 15,60,100,138,185,238,285,333,380,428,480,527,572,621,670,726,778 --follow-slope 300 --top-margin 14 --bottom-margin 14 --max-width 660 --overlap 90`
+-> `wrote 34 crops` (17 lines x 2 half-line segments); likewise set1-4 (`--centres 515,557,598,640`, 8 crops) and set1-6
+(`--region 230,0,1150,110 --centres 70`, 2 crops). Segments upscaled 2x (PIL Lanczos) in the scratchpad. **The cipher block
+has 22 lines** (set1-4 C01-C04, set1-5 C05-C21, set1-6 C22, ending in the clear "Exmo señor"). A first cut with eye-placed
+centres drifted up to a full line in the lower half of set1-5, and its passes for C11-C22 were discarded and re-run.
+A first full-width crop run (no upscale) was also discarded: all 4 readers rated it near-illegible and read only about half
+of each line.
+
+**Step 2, cipher block: two blind Sonnet passes, gate FAILED (alphabet not settled).** File: `cipher_shape_passes.tsv`
+(pass A, pass B, 22 lines; s1/s2 joined with the overlap removed). Labels are the Latin-letter shape of each glyph plus
+colon/dot marks, since no settled sign inventory exists for this hand. Pass A 1,418 glyphs, pass B 1,323. Agreement
+0.829 overall (letters only 0.866). By line it runs from 0.59-0.71 (C06-C08, where one reader dropped glyphs in dense
+runs) to 0.93-0.96 (C13-C15, C18-C19). That is over TRANSCRIPTION.md's 10% disagreement line. Worse, the label set
+does not resolve the cipher's sign set: "t" is 427 of 1,418 glyphs (30%) in pass A. In Tomokiyo's Fig. 4, the signs for e, g, h,
+i and t are all t-based variants (a crossed t, tt, tb, t with a colon), which the readers cannot tell apart at this
+size and label alike. Reconciliation was not run (it cannot repair an unresolved label set).
+
+**Diagnostic only, not a test of the key (step 4 not reached properly).** A stream alignment
+(`tools/stream_align.py` via its library calls; band 120, step 200, 3 iters) of pass A's glyph stream against the
+earlier period-decipherment pass A (`period_decipherment_passes.tsv`, 940 letters, low confidence) scores 0.302
+identical-pair accuracy against 0.292 mean (max 0.317) for 10 shuffled-text controls. It does not beat its control, as
+expected from the 30% "t" class and an unreconciled clear text: a non-test, not a negative about the letter or the key.
+
+**Step 3, period decipherment: 2 more blind passes, too weak to reconcile.** At this block's 29 px line pitch, the 44-88 px
+crops held two lines each, and both readers reported uncertainty about which line was the target (rows D04-D09 of one
+pass flagged unreliable). The passes stay in the scratchpad and are not committed. The block needs crops cut at its own
+pitch (top/bottom margin <= 4 px, or --follow-slope) before another pass.
+
+Cost: see the lane ledger (about 20 Sonnet calls: 4 discarded full-width, 10 cipher half-line, 6 decipherment).
+Report: what was read and where it was not found. No reading claimed, no novelty classified (rule 10).
+
 ## Remaining gaps (finish-or-blocker pass, 5 Oct 2026)
 Read so far: 0% of cipher tokens graded H/C/S; the period decipherment is in two unreconciled passes (15 lines, about 50% agreed spans)
-- cipher block sign transcription (22 lines, ~1,000 signs) - blocker: illegible; the only image on hand is 120 ppi (p-000.jpg and the same JPEG in the BNE PDF), and 4 blind passes rated it near-noise; next: a full-resolution BNE image of item 123 (bdh0000186627, 403 from the cloud, so owner desk download) or first check whether sibling item 126 (now in the private repo) is legible at its own resolution, ~$6 to transcribe once a legible image is in hand
+- cipher block sign transcription (22 lines, about 1,400 glyphs) - blocker: waiting-on ASKS row 143 (the owner's sign sorter); the screenshots are legible, but two blind passes split on 17% of glyphs and the shape labels lump the t-based signs (30% of glyphs); next: settle the alphabet in tools/sign_sorter.py on the set1-4/5/6 crops (focus: t/tt/tb/crossed-t, e/e:/c, d/d.), then 2 passes against the settled labels, ~$6
 - period decipherment reconciliation (15 lines) - blocker: not-attempted; the two passes disagree on most words below D08; next: reconcile the two passes from the D1-D3 crops with the cipher's own "charles"/"por que" anchors, ~$2 (better after the high-resolution image)
 - key alignment against the period decipherment (step 4) and decode_key.py reading (step 5) - blocker: not-attempted; it needs the cipher transcription above; next: interlinear_align.py on cipher vs the reconciled decipherment, ~$3
 
@@ -360,6 +399,6 @@ Read so far: 0% of cipher tokens graded H/C/S; the period decipherment is in two
 - [x] known-keys: Tomokiyo 2018 Fig. 4 (published) is in hand and was used to test the step-1 verdict
 - [ ] print: no printed text of the letter located so far (Galende Díaz, Tomokiyo checked); a print search on the decipherment's phrases (tools/print_check.py) once it is reconciled
 - [ ] key-rebuild: align the cipher with the period decipherment to rebuild the key and compare it with Fig. 4 value by value
-- [ ] image-check: a higher-resolution image of item 123 from bdh.bne.es (owner desk), the main gap
-- [ ] retry: transcription passes after the image-check, at 2 blind passes per 4-line group
-Verdict: keep going: 2 internal gaps; cheapest next: reconcile the period decipherment passes, ~$2 (the main gap needs the full-resolution BNE image from the owner's desk)
+- [x] image-check: the owner viewer screenshots (images-123-shots, about 2x the PDF) are legible line by line (FER1478-READ2 rerun, 5 Oct 2026); the block is now limited by the unsettled sign alphabet, not by the image
+- [ ] retry: transcription passes against settled sorter labels (the shape-label retry ran on 5 Oct 2026 and split 17%)
+Verdict: keep going: 2 internal gaps; cheapest next: re-cut the period decipherment at its own 29 px pitch and reconcile its passes, ~$2; the cipher transcription waits on ASKS row 143 (sign sorter)
