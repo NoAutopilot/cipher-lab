@@ -181,3 +181,91 @@ re-ran settle7.py's seed-0 Gibbs path: 158 f66L:48 M -> S (mo 10/10 seeds now), 
 was already applied before R2. Depth stays D1 (status.json depth_pct 25.5 -> 25.1). Class unchanged (N0). Safe sentence: replace
 "129 of 505 tokens firmly (H 50, S 79)" by **"127 of 505 tokens firmly (H 50, S 77)"**. No SECOND-OPINIONS-QUEUE.tsv row exists for this
 target. A rule-7 re-derivation of this state is owed (RD7 after A3V3-PAGR).
+
+# AUDIT 2 (VER1-PAG, 5 Oct 2026, 18:17-18:31 UTC by date -u)
+
+Verifier: VER1-PAG (account 2 worker for LANE-VER1), a session separate from every solver of this item (list in AUDIT 1, plus
+A3V3-PAGR, RUN6-PAGET) and from both earlier auditors (A3V-VPAG, A3V3-PAGA). Brief: `.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md`
+section VER1-PAG. Second adversarial audit (Outreach gate 2): tried to find the plaintext or a decipherment in print.
+
+## A2-1. Reading revisions since AUDIT 1 refresh (rule 10 propagation)
+
+| state | per token (505) | firm H+C+S | rule 7 |
+|---|---|---|---|
+| AUDIT 1 refresh R5 (A3V3-PAGR, 4 Oct) | H 50, S 77, M 365, I 7, U 6 | 127 (25.1%) | SAME 505/505 (A3V3-PG7, RD7-2026-10-04-a3v3.md; RD7-PAGR) |
+| **now (RUN6-PAGET, 5 Oct 05:02-05:08)** | **H 50, C 0, S 72, M 370, I 7, U 6** | **122 (24.2%)**; Letter 1 37/97 (38.1%), Letter 2 85/408 (20.8%) | **SAME 505/505** (RUN6-PAGETR7, fresh session, 5 Oct 05:22) |
+
+RUN6-PAGET replaced settle7's seed-0 rule by a pre-registered multi-seed rule (`align/PREREG_settle7ms.md`, >= 16/20 seeds): five S
+rulings fell to M with **no value change** (31 at f60R:31, f61L:105, f61L:200; 45 at f61L:40; 65 at f61L:147), and the 126/86 tokens
+stay M. This session: `python3 tools/decode_key.py ciphers/clairambault1225-paget-1714 --check` -> `tokens 505: H 50, I 7, M 370, S 72,
+U 6` / `reading up to date` (18:20 UTC). No value text changed, so no plaintext and no phrase changes; phrases.txt (16 lines) stands.
+Corrections carried: AUDIT 1 refresh R4 table (L1 S 27 / firm 42; L2 firm 85) and the safe sentence's "127 of 505 (H 50, S 77)" are
+superseded by the counts above (L1 now H 15, S 22, M 58, U 2). SECOND-OPINIONS-QUEUE.tsv: no row for this target (N0, none due).
+
+## A2-2. Independent searches (5 Oct 2026)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical series | IA fts scoped to Taillemite B7 t.2 (`inventairedesarc02arch`): "Tabarka", "Tabarca", "Lomellin" (0 each); "Prince Antoine" (4 hits: Florence entries on his marriage projects 1714-15, other senders); global fts surfaced t.4 (`inventairedesarc04arch`): outgoing letters "Au s. Paget, vice-consul à Gênes" (F° 108v, 116; years not read from the snippet) | calendar entries only; no summary of Paget 8 Apr or 28 Aug 1714 found, no text of the cipher passages |
+| (b) sender/recipient printed correspondence | Plantet, *Correspondance des beys de Tunis et des consuls de France avec la cour* t. II (1700-1770), 1893, IA `correspondanced01trgoog` full djvu text read by grep: "Paget" 1 hit (index of agents, "Paget, agent à Cagliari"); its 1713-15 pieces on Tabarka (nos 181, 1713; the 1714-15 Versailles letters pressing the Compagnie d'Afrique to buy the island from the Lomellini) are Tunis-consul and minister letters, not Paget's | **context parallel, not this letter**: Letter 1's gloss "Labbe Lomeliny ... a la vente de cette isle" concerns the same affair (the Lomellini sale of Tabarka) |
+| (c) documentary editions / secondary | Masson, *Histoire des établissements et du commerce français dans l'Afrique barbaresque* (1903), IA `histoiredestab00massuoft` djvu text, grep "Paget"/"Lomellini": (page number not taken; djvu text line 15471) paraphrases the Tabarka sale question (Lomellini "paraissaient disposés à la vendre"; Pontchartrain pressed the Compagnie), footnote: AE Mémoires et Documents Afrique t. IX fol. 32-38, "Extraits concernant l'île de Tabarque", 46 extracts 1684-1713, "Trente sont de 1712-1713 et sont tirés surtout de la correspondance de Pontchartrain avec Paget à Gênes". RIDA vol. Rome (1913, GB `ZSnopS1bNPMC`): "génie allemand" + "duc de Parme" occurs in a quotation of Polignac (A.E. Rome Corr. v. 713 fo 165), not Paget | no print of the two letters' text; the AE extracts end in 1713 by Masson's count, so they should not hold 8 Apr 1714 (not seen) |
+| (d) holding archive | not repeated (AUDIT 1: BnF notice cc137837/cd0e29423) | -- |
+| (e) IA / Google Books | GB 8 queries (`country=US`, key): "Prince Antoine de Parme" "n'est pas marié" (354 loose, top RIDA/Granvelle, no Paget); "Paget" "Gênes" 1714 "princesse de Parme" (2: the B7 inventory); "Paget" consul Gênes 1714 chiffre (5: Biographie universelle); "genie Allemand" "Duc de Parme" (4: RIDA Rome, above); "Lomellini" "Paget" 1714 (1: Masson, above); "achèvera sa vingt-deuxième année" (loose noise); "vente de cette isle" Sardaigne 1714 (noise); "Clairambault 1225" (14, other folios as AUDIT 1). IA fts 7 global queries ("Prince Antoine de Parme" Paget: 2, B7 t.2/t.4; "Paget" "princesse de Parme" Gênes: B7, Rouvroy Parme memoirs, Saint-Simon; "Paget" Cagliari consul 1714; "de genie allemand": unrelated; "Labbe Lomeliny": 0; "Lomellini" Paget Gênes: art-history noise; one HTTP 502 on "le meme mois en mil six cens quatre vingt douze", not retried) | nothing carries the letters' text |
+| (f) solver repos / blogs | fresh shallow clones: dbourdeau/cyphersolver a439937 (3 Oct 2026), aaymeloglu/unsolved-ciphers d2800bb (27 Sept 2026); grep paget / btv1b9001034d / clairambault 1225 / lomellin | Bourdeau: the same gallica_sweep catalogue lines and "setPageType" JS false hits as AUDIT 1; Aymeloglu: false hits ("pagetexts", PARES jsonl). Blogs not repeated |
+| (g) scholarship | OpenAlex 2 (Bearer): "Paget consul Genoa 1714 cipher" 0; "Farnese marriage 1714 Genoa French consul" 8, none this letter; "Pierre Paget consul Sardaigne" 4 (Corsica/Sardinia consuls, none this letter); Semantic Scholar 1 (1 hit, Ottoman Mediterranean survey; second query 429, not retried); CrossRef 1 (noise); HAL 2 (0, 0); CORE 1 (0); Persée not reached this session (AUDIT 1's A2-PAG pass covered it); JSTOR: J18-J21 answered 4 Oct (DESK-2026-10-04: 169/58 no relevant hit, 0, 0); 2 rows added below | none |
+
+JSTOR rows added (2026-10-05): family (i) `"Paget" AND ("Tabarque" OR "Tabarka") AND "Lomellini"`; family (ii) bare phrase
+`"quoyque ce Dernier Duc n'ait que 36"`. A queued row does not block the class.
+
+Requests: www.googleapis.com 10, be-api.us.archive.org 13 (one 502), archive.org 5 (advancedsearch 2, djvu 3), api.openalex.org 2,
+api.semanticscholar.org 2 (one 429), api.crossref.org 1, api.archives-ouvertes.fr 2, api.core.ac.uk 1, github.com 2 clones. Subagents 0.
+
+## A2-3. Classification
+
+**N0, upheld** for both letters (8 Apr 1714, f60R-f65L; 28 Aug 1714, f65R-f66R): the period interlinear decipherment on the leaves
+covers 501 of 505 cipher tokens and is the prior decipherment of this very item; no audit can place it lower or higher. No printed
+text of either letter was found; the subject of Letter 1's Lomellini passage (the sale of Tabarka) is printed as context by Plantet
+(1893) and Masson (1903), from other letters.
+
+| field | Letter 1 (8 Apr 1714) | Letter 2 (28 Aug 1714) |
+|---|---|---|
+| prior plaintext | yes, the gloss on the leaf (1714); not in print (searched as above) | same |
+| prior decipherment | yes, period interlinear | yes, period interlinear |
+| key source | **period** (rebuilt by us from the gloss), with the S values `ours` (cryptanalytic segmentation, control-backed) | same |
+| text | known (on the leaf, not in print) | same |
+| per token | 97: H 15, S 22, M 58, U 2 | 408: H 35, S 50, M 312, I 7, U 4 |
+| depth | **D1** (firm 38.1%; longest contiguous H/C/S run 3 groups) | **D1** (firm 20.8%; longest run 4 groups, "le du c de") |
+
+Depth check: contiguous runs of firm tokens (same leaf, consecutive cipher positions) recomputed from `reading_tokens.tsv` this
+session: 3 (L1) and 4 (L2) groups, matching AUDIT 1 R3/R4. A 111-code syllabic nomenclator's authentication distance is far above
+four groups, and the plaintext of the passages is the clerk's gloss, not our key's reading, so D2 is not met. Held at D1, not raised.
+(Counting tokens per leaf without the position-adjacency test gives 6 and 5; those runs straddle clear-text words between gloss pairs
+and are not contiguous cipher.) Content sentence (from the gloss, for the record, not a D2 licence): in the 8 Apr 1714 letter the
+glossed cipher passages mention "Labbe Lomeliny" and "la vente de cette isle", the Lomellini family's possible sale of Tabarka,
+which Plantet and Masson document from other 1713-14 letters.
+
+Safe sentence (re-issued): "Both 1714 Paget letters in Clairambault 1225 carry their own period interlinear decipherment over 501 of
+505 cipher tokens; we rebuilt the nomenclator's code table from that gloss, which gives no new text -- N0, a period key
+reconstruction; our key alone reads 122 of 505 tokens firmly (H 50, S 72)."
+Unsafe: "We deciphered Lord Paget's 1714 cipher letters"; any percentage that counts the gloss's text as our reading; "the isle is
+Sardinia" (the gloss's "cette isle" beside Lomellini is most likely Tabarka, per Plantet/Masson; not settled by us).
+
+## A2-4. Postmortem
+
+- Count drift: AUDIT 1 refresh, status.json results[4] and PROGRESS.tsv still carried 127/505 (A3V3-PAGR). Corrected here, in
+  status.json (results[4] and targets[31]) and PROGRESS.tsv to the RUN6-PAGET state, 122/505.
+- status.json results[4] title "first cryptanalytic attempt negative" (25 Sept) and its line ("four interlinear glosses", "one more
+  attempt is allowed before the target closes") were stale since NEXT-PAG (2 Oct) and use a rule-10 word; reconciled: title replaced
+  by the current fact, the 25 Sept attempt kept in the line as history. targets[31] "next" (2 Oct: "key 21 codes ... next: decode.json")
+  was three states old; refreshed, stage left as set.
+- No over-claiming sentence found in NOTES.md, HYPOTHESES.md or the RD7 files; nothing in the folder says the plaintext is new.
+- Lead for the folder (not acted on, Usage 7): AE Mémoires et Documents Afrique t. IX fol. 32-38 holds extracts of Pontchartrain's
+  correspondence with Paget at Genoa on Tabarka, 1712-1713 (Masson 1903). It would not hold these 1714 letters on Masson's count, but
+  it is a second witness to Paget's cipher correspondence (key family) if an archive request is ever made.
+- Audit status: **two audits**. N0 and D1: not a unique solve; no SECOND-OPINIONS-QUEUE row; `C` = '.'.
+
+`python3 tools/depth_check.py` (18:29 UTC, after the status.json edit), exit 0, last line:
+
+    unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 9; legacy ungraded: 0
+
+(Paget rows: N0, so not counted as a unique solve; no error or warning names this folder.)

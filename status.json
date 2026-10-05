@@ -547,13 +547,14 @@
       "stage": 7,
       "state": "active",
       "holder": "Agents",
-      "next": "period decipherment over 501/505 tokens found on the images (NEXT-PAG, 2 Oct); key 21 codes (12 C, 9 M), held-out 0.649 vs shuffle p95 0.378; next: decode.json + decode_key --check (~$3), then web/blog intake check",
+      "next": "N0 two audits (VER1-PAG, 5 Oct 2026): period interlinear gloss over 501/505 tokens; key.tsv rebuilt from it, H 50 S 72 M 370 I 7 U 6 (RUN6-PAGET, rule-7 SAME); remaining: open-codes (370 M) and the f66L '400 4 19 600' run, which waits on the AN Marine B7 original (LOCAL-QUEUE L11)",
       "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
       "kind": "recovery",
       "depth": "D1",
-      "depth_pct": 25.1,
+      "depth_pct": 24.2,
       "decode_status": "Non-decrypted",
-      "novelty": "N0"
+      "novelty": "N0",
+      "audit_status": "two audits"
     },
     {
       "name": "debosnys-1883",
@@ -1603,19 +1604,21 @@
     {
       "date": "25 Sept 2026",
       "kind": "negative",
-      "title": "Paget from Genoa, 1714: first cryptanalytic attempt negative with a matched control",
-      "grade": "negative with controls",
-      "line": "Both Paget letters (Clairambault 1225 ff.60-66) are transcribed: 500 cipher tokens, 122 codes, one key. A crib attack from the four interlinear glosses failed against its control; one more attempt is allowed before the target closes.",
+      "title": "Paget from Genoa, 1714 (Clairambault 1225 ff.60-66): period interlinear decipherment on the leaves; code table rebuilt from it (N0)",
+      "grade": "N0 (two audits), key period (rebuilt by us from the gloss; S values ours); H 50, S 72, M 370, I 7, U 6 of 505",
+      "line": "Both Paget letters carry a period interlinear decipherment over 501 of 505 cipher tokens (found 2 Oct 2026, NEXT-PAG); we rebuilt the nomenclator's code table from that gloss, which gives no new text. Our key alone reads 122 of 505 tokens firmly (H 50, S 72). History: the 25 Sept 2026 crib attack from four glosses, before the full gloss was found, failed against its control.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clairambault1225-paget-1714",
       "depth": "D1",
-      "depth_pct": 25.1,
+      "depth_pct": 24.2,
       "depth_sentence": "In the 28 Aug 1714 letter the glossed cipher passages describe the Princess of Parma (born October 1692), her mother the Duchess, aged 44 while the Duke is 36, and Prince Antoine de Parme, unmarried (period gloss on the leaf; not our reading).",
-      "depth_check": "longest H/C/S run 3 (L1) / 4 (L2) syllable groups, below the authentication distance; firm 127/505 (L1 42/97, L2 85/408); A3V3-PAGA 4 Oct 2026, counts A3V3-PAGR 4 Oct 2026",
+      "depth_check": "longest contiguous H/C/S run 3 (L1) / 4 (L2) syllable groups, below the authentication distance; firm 122/505 (L1 37/97, L2 85/408); RUN6-PAGET state, rule-7 SAME (RUN6-PAGETR7); VER1-PAG AUDIT 2, 5 Oct 2026",
       "decode_status": "Non-decrypted",
       "novelty": "N0",
       "key": "period",
       "text": "known",
-      "verifier_note": "A3V3-PAGA 4 Oct 2026: stale row -- since NEXT-PAG (2 Oct) the leaves are known to carry a period interlinear decipherment over 501/505 tokens; N0, D1 (AUDIT.md 'AUDIT 1 refresh'); title and line to be replaced by the parent"
+      "verifier_note": "A3V3-PAGA 4 Oct 2026: N0, D1; title/line were stale (25 Sept crib-attack row). VER1-PAG 5 Oct 2026: AUDIT 2 upholds N0 and D1; title and line replaced by the current fact, the 25 Sept attempt kept in the line as history; counts moved to the RUN6-PAGET state (122/505).",
+      "audit_status": "two audits",
+      "fields_source": "clairambault1225-paget-1714/AUDIT.md: AUDIT 2 (VER1-PAG, 5 Oct 2026)"
     },
     {
       "date": "25 Sept 2026",
