@@ -1,0 +1,7 @@
+err_2reader = 215 / 427 = 0.504
+eligible words (reconciled) = 1; L = 1.000; control mean 0.364 p95 1.000 max 1.000; p = 0.364
+per pass L: A 0.200, B 0.200
+G1 (err_2reader <= 0.30): FAIL
+G2 (L > control p95): FAIL
+bourdeau f88 runs: 102 signs; matched in reconciled page 65 (0.637); shuffled-run control 65.3 (0.641)
+words with exactly one lexicon match (grade M candidates, not readings): 

@@ -1,0 +1,39 @@
+band	pair	before	cipher	after	notes
+L01	1	-	?	-	no clear cipher run seen; line reads as plain English (Captayne Montgomery ... Scotland)
+L02	1	-	8 h : k k T # K U l l A p c V X p	of	first sign 8 or g; k=omega twice (second may be T+k); low confidence
+L02	2	of	Q p ? 8 c # A	haue	sign 3 unclear, loop-like; low confidence
+L03	1	-	l : : L #	of	opening p/l-like sign with a stroke, then .. L and a triple stroke; low confidence
+L03	2	of	V o L # : A l d h	-	o may be plain letter; low confidence
+L03	3	-	V : X c . V W A p / W A p 7 V	bot	overlap between s1 and s2 around "W A p"; low confidence
+L04	1	-	? 8 c	of	low confidence, may be clear
+L04	2	of	2 o / c # # # # #	-	struck through in the middle; low confidence
+L04	3	-	T 7 H L V T A	-	low confidence
+L04	4	-	A W	-	cipher-like run before a clear word; low confidence
+L04	5	haue	? X V Z A	-	low confidence
+L04	6	-	l X c T I U k # A l p ? T	-	approximate, running into L05; low confidence
+L05	1	-	- 7 A I t / I A ? l / I U # # A A U ? V : I # X c A A p	-	low confidence
+L05	2	-	X c A A 7	-	overlap with the end of s1; low confidence
+L05	3	-	t Q d : I A # ? p T l I d U # # A # I d	-	low confidence
+L06	1	-	c V A p	-	low confidence; mixed with clear text
+L06	2	-	? ?	-	cipher-like loops after "bo bootes"; low confidence
+L07	1	-	T V T c # A p L A c T	-	continues into s2: p L A c T # (overlap)
+L08	1	-	o I : . 7 V A T # X c V . V Z A T c l o	-	low confidence
+L09	1	-	U ? l l : . 7 V I L : o / # . p - r	-	low confidence
+L10	1	-	p V X c T / 8 V ? l ? I A I A p l T o	-	low confidence
+L11	1	-	? ? ?	-	only clear text seen; no confident cipher run
+L12	1	-	I # A A c l l I X I # # A	-	low confidence
+L13	1	-	? 7 # I p l	-	low confidence
+L13	2	-	# # I # o I A A V I #	-	low confidence
+L13	3	-	A V I # A c T V A I o T o X V I A L V	-	low confidence
+L14	1	-	# # # ? ?	-	low confidence
+L14	2	-	? ?	-	low confidence
+L15	1	-	?	-	only clear text seen
+L16	1	-	?	-	only clear text seen
+L17	1	-	?	-	only clear text seen
+L18	1	-	?	-	only clear text seen
+L19	1	-	# # # A	-	struck through, with "2000" above it
+L20	1	-	?	-	only clear text seen
+L21	1	-	7 I # # X	and	low confidence
+L21	2	and	: V : I # # A V	wooter	low confidence
+L22	1	-	?	-	only clear text seen
+L23	1	-	?	-	only clear text seen
