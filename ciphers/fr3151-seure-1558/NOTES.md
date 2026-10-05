@@ -730,3 +730,65 @@ Read so far: 0 tokens read (0 H, 0 C); diagnostic reads only (kp/, f75L); f81R L
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 2 internal gaps; cheapest next: reconcile f81R L01-03, L05, L07-20 (18 Sonnet calls + 1 unit), re-measure err_R on a sample, re-run kp/nom_test.py unchanged, ~$7.5
+
+## RUN6-SEURE2: all 20 f81R lines reconciled, err_R re-measured, nom_test re-run (5 Oct 2026, 05:21-06:05 UTC by date -u, account 1)
+Worker RUN6-SEURE2 (LANE-RUN6, Opus 5.5; reconcilers Sonnet), brief `.claude/briefs/runs/2026-10-05-acct1-run6-wave3.md`.
+Prereg `kp/PREREG-RUN6B.md` pushed 3654942e (05:23) before any reconciler call. Units: 36 Sonnet reconciler calls (2 blind
+reconcilers x 18 lines, prompt `kp/run6b_prompt.txt`, inputs `kp/run6b_inputs.tsv`, one line's two half-crops per call) + 1 scoring
+unit; the pilot's L04/L06 rows carried in. About 95k subagent tokens per call (mostly cached system prompt); the true cost is the
+orchestrator's to read. 0 network requests. Files: `kp/run6b_recon.tsv`, `kp/run6b_err.py` (`--check` OK), `kp/f81R_recon_R1.tsv`,
+`kp/f81R_recon_R2.tsv`, `kp/run6b_result.json`, `kp/nom_run6b.log`.
+
+| measure | value |
+|---|---|
+| err_R (R1 vs R2, all 20 lines, 464 max-len signs) | **0.095** (44 edits); per line 0.00-0.24; 4 lines identical (L01, L09, L10, L12) |
+| A/B err on the same lines, A's labels, identity | 0.484 (before) |
+| reconciled sign source share (both R) | AB 0.559, A 0.267, B 0.169, neither 0.004 (L05 R1's source list is one entry too long, so it is left out of the shares) |
+| R1 / R2 length | 461 / 461 signs; word codes (numerals >= 12) in R1: 12 |
+
+Anchoring caveat (registered): both reconcilers saw A and B, and on L09/L10/L12 they returned identical sequences (L10 = reader A
+verbatim). So err_R 0.095 is agreement, not accuracy, and is a lower bound on the true error of the reconciled read (TRANSCRIPTION.md).
+
+**nom_test** (`kp/nom_test.py` unchanged; `--err 0,0.047,0.095,0.242 --ctl-seeds 3 --ctl-draws 20 --draws 200`, readers R1, R2):
+the process was killed at the 30-minute background-command limit after the controls and R1 had printed, before R2 and before the JSON
+was written. `kp/nom_run6b.log` is the record.
+
+| control cell (nomenclator, matched to R1: word share, K) | pass share | S per key |
+|---|---|---|
+| 0% nulls, err 0 / 0.047 | 3/3 / 3/3 | 0.99 0.99 0.98 / 0.95 0.94 0.95 |
+| 0% nulls, err 0.095 (= E) | **2/3** | 0.891 0.906 0.238 |
+| 0% nulls, err 0.242 (anchoring bracket) | **2/3** | 0.257 0.248 0.304 (barely above their own nulls) |
+| 10% nulls, err 0 / 0.047 / 0.095 / 0.242 | 0/3, 1/3, 0/3, 1/3 | all 0.22-0.28 |
+
+Power condition (prereg): >=2/3 at E AND >=2/3 at 0.242, both met, so the R1 result counts as a test. Weak spot: the 0.242 passes are
+by S margins of a few hundredths, and the control falls away entirely with 10% nulls.
+
+| target | S* | shuffled p95 / max | rotated p95 / max | gate |
+|---|---|---|---|---|
+| R1 (`f81R_recon_R1.tsv`) | 0.230 (S_r 0.205, 0.221, 0.230) | 0.246 / 0.269 | 0.246 / 0.249 | **FAIL** |
+| R2 | not run (process killed) | | | |
+
+Reading: R1 sits inside its own null band (null mean 0.226) and fails, with the control showing power down to the 0.242 bracket. That
+makes it a negative for the start-anchored H-span under the nomenclator model as `nom_test.py` defines it, conditional on: the
+reconciled read (agreement 0.095, true error unmeasured), no null signs (the 10%-null control has no power at any error), and this
+one model. It is not a design-family negative, and it is not complete: the prereg licenses the H-span if R1 OR R2 passes, and R2 has
+not been scored. No grades changed; 0 tokens read.
+Not found: any sign of the f85R clear prefix in the f81R reconciled cipher under this model; a measure of the reconciled read's true
+error (no benchmark sheet for this hand).
+
+## Remaining gaps (RUN6-SEURE2, 5 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled by two Sonnet reconcilers (err_R 0.095 agreement, kp/run6b_result.json); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; f81R fully reconciled and nom_test R1 FAILs with control power at E 0.095 and 0.242 (RUN6-SEURE2, kp/nom_run6b.log), R2 unscored because the run was killed at the 30-min background limit; next: re-run kp/nom_test.py with the same arguments and a background timeout >= 45 min (or R2 alone), write kp/result_run6b.json, ~$0.3
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (RUN6-SEURE2, 5 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [ ] clear-pages: 44's clear text vs 43's cipher under nom_test: R1 FAIL with control power (RUN6-SEURE2); R2 unscored, needs one re-run
+- [ ] known-keys: no Henri II-era French key (Tomokiyo's Henri II pages, Lasry GL) tried on Seure yet
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gap; cheapest next: re-run kp/nom_test.py (same args) with a >= 45 min background timeout to score R2 and write result_run6b.json, ~$0.3
