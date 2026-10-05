@@ -6,3 +6,8 @@ granddaughter of a jail visitor; three trunks, two of weapons seized, the third 
 unknown. Nothing from RESTRICTED.md material may appear. Voice per outreach/README.md rule 1a. Write a new
 `checked:` line at the top naming corrections; if a clause fails, correct it in the file (and say so). Then ROOM done
 line for the account-3 orchestrator, who updates the Gmail draft. Do not send anything.
+
+ADDED 23:2x UTC: also gate-7 check outreach/lope-bertomeu-chapter-request.md in full (citation of the chapter against
+REQUEST.md and the RODERIC record roderic.uv.es/handle/10550/108981; RAH Salazar 9/26 and "three letters" against
+ciphers/lope-hurtado-1522/NOTES.md; the address against the record; disclosure sentence present; voice rule 1a).
+Write its checked: line too. Cap raised to $3.
