@@ -409,3 +409,7 @@ Hits seen (screenshot from #224 p.180 to #373 p.329) are all 1740s Marchmont mat
 as Secretary at War): editorial notes "This letter is entirely in cypher", "The words in parentheses are in cypher", "This
 cypher has not been identified". None from 1727-29. Whether hits before p.180 exist: not seen (asked). If none, Polwarth V
 does not cover BLA 191(a)'s year and the "[ ] print: HMC Polwarth V" gap closes as a negative.
+Confirmed (same night, owner): the result list starts at #224 (p.180); there are no earlier hits. All 8 "cypher" hits in HMC
+Polwarth V (msu.31293105166841, 472 scans, full view) are 1740s Marchmont letters. Polwarth V does not print BLA 191(a) or any
+1727-29 cipher letter: the "[ ] print: HMC Polwarth V" gap closes as a negative (search-inside "cypher" only; a "Pareti"
+search of V was not run). Hathi desk read H1 closed.
