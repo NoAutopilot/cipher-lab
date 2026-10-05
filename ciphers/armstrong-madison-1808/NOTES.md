@@ -4043,3 +4043,8 @@ Confirmed (same desk read, screenshot): the findingaids.loc.gov "Erving" search 
 Cathcart Papers (MSS15388, 1785-1817), matched only through a note: "... George William Erving, and James Monroe. Receipts and
 accounts of funds dispersed by Cathcart on behalf ..." -- Erving appears as a party to Cathcart's accounts, not as a
 collection. The other 17 results were not pasted.
+All 18 results pasted by the owner (same session): no collection titled for George William Erving. His name appears only as
+the subject heading "Erving, George William, 1769-1850--Correspondence" (a Person entry, no container), in the Cathcart
+Papers' accounts note, and among the hits on the James Monroe Papers (MSS33217, 1758-1839). The other hits are unrelated
+Ervings (Erving Winslow, Julius Erving, Erving Goffman, Erving, Mass.). ASKS 83 closed: the LOC holds no Erving papers
+collection; any Erving-Armstrong 1808 material at the LOC would be in the Monroe Papers (already the ASKS 80 lead).
