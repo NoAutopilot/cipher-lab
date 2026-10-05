@@ -4120,3 +4120,7 @@ consonant stroke (position = which vowel), and Armstrong's marks often carry a d
 Taylor 1786 (Tomokiyo's negative) and others also place vowel dots, so this narrows to the dot-vowel family, not to Mavor alone.
 Next: in SHORTHAND-PAGE / a follow-up, measure dot positions relative to strokes in Armstrong (above/beside/below x start/middle/end)
 and compare with Mavor's 6-position scheme vs Taylor's; a dot-position distribution that fits Mavor and not Taylor would be a real test.
+Owner observation on blind system E (= Macaulay 1747 p.3), same session: Armstrong's cup with a small tick above ~ Macaulay "qu"
+("question"), a large cup. Note across the three owner readings: the cup "◡" now resembles a sign in B (Byrom n), D (Mavor n) and E
+(Macaulay qu) -- direct evidence that single generic shapes do not discriminate between systems; only distributions (frequency x
+position, dot placement) can. Macaulay's chart also places small dots/hooks by position inside the cell (a ".", e "°").
