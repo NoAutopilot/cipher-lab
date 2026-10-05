@@ -1,0 +1,10 @@
+# N9-BAL, 5 Oct 2026 (05:18-05:3x UTC by date -u). Baluze 168 (Gallica btv1b9001503k). Survey for a letter in the f.246-248 hand carrying an
+# interlinear/marginal decipherment. Sample: 36 canvases at 450 px, evenly spread over the 501 canvases outside survey.tsv's listed-letter windows
+# (and outside c505-512): 21 35 49 70 84 98 112 126 140 154 168 187 206 220 234 248 262 281 295 309 337 361 375 389 402 421 452 466 480 499 523
+# 537 556 577 605 639. Read by one Sonnet call over the three contact sheets plus this worker's eye; c234 and c499 re-fetched at 1200 px.
+# A 36-of-501 sample is not a census: "none found" below covers only the sampled canvases.
+canvas	folio	hand	cipher	gloss	what_is_glossed	how_much	note
+234	110r (ink number read)	court secretary (Paris side, same family as the listed Chavigny letters; NOT the f.246 hand)	yes	yes, interlinear	"Rodenburg"(?) over 68 16 d b ...; "particuliere" over 20 77 14 42; "le Roy d'Espagne et Messieurs les Estatz" over 32 96 46 f 72 w y z p / 10 97 y 4f	3 runs, ~4 lines, ~22 groups	not in Tomokiyo's 168 list; letter-sign forms (w, y, z, p, f, d, b) resemble those read on f.247r/v
+499	~241v (estimate, k=17; no ink number on a verso)	running hand close to the f.246-248 hand (by eye, low res)	no (figures only: "48 sols")	no	-	-	clear letter about exchange losses at Hamburg; a hand witness only, no cipher
+511	247v (between ink-numbered f.247r c510 and f.248r c512)	f.246-248 hand	yes	no (bare)	-	5 runs, ~9 lines	re-fetched native 3698x5487, HTTP 200 (was 404/500 on 4 Oct). Run 2 (3 lines after "tesmoigné audit S. de Beauregard") ends where the clear text resumes "parti aie si grand avantage que les armées puissent trouuer une subsistence": the place of Tomokiyo's F2 ("... si ce n'est que le"), see NOTES N9-BAL
+512	248r (ink number read)	f.246-248 hand	no	-	-	-	clear: Danish diet, Coppenhagen, Stade; native 3701x5478, HTTP 200

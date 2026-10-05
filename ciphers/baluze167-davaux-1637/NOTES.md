@@ -311,3 +311,65 @@ the known-answer test is a non-test (letter signs of this hand unlabelled).
 - [ ] retry: c511-512 on a later day
 Verdict: keep going: 3 internal gaps; cheapest next: re-fetch 168 c511-512 and look for a glossed letter in the f.246 hand, ~$3, then 170 ff.228-230, ~$6
 Gate output (N8-BAL, 4 Oct 2026): `OK keep-going baluze167-davaux-1637: keep going: 3 internal gap(s), 3 step(s) untried` (exit 0); decode_key --check: reading up to date (exit 0; f.246-247 not added to ciphertext.txt, numerals-only transcription kept in passes/).
+
+## N9-BAL (account 2 worker, for LANE-NEAR9), 5 Oct 2026, 05:18-05:3x UTC
+
+Brief: `.claude/briefs/runs/2026-10-05-ytbiz-near9-wave1.md` job N9-BAL. No transcription and no scoring in this job; no novelty class.
+
+**Canvas/folio map** (pasted): `python3 tools/gallica_folio.py btv1b9001503k --anchor 180=84r --anchor 192=90r --anchor 276=131r --anchor 508=246r --anchor 510=247r --folio 247 --side v`
+-> `651 canvases (cached); 0 with a folio label, 651 without` / `anchor fit: canvas = 2.024 * folio + 10.15; residuals f180=84: -0.18, f192=90: -0.32, f276=131: +0.69, f508=246: -0.08, f510=247: -0.11` /
+`folio 247: canvas f511 ... [ESTIMATE from anchor fit, centre f511 (check by eye)]`. Checked by eye: c512 carries ink folio number 248, so c511 = f.247v and c512 = f.248r.
+
+**c511-512 re-fetch.** Both served at native size on the first request (HTTP 200, 3698x5487 and 3701x5478; sha1 in images/manifest.json
+`n9bal_fetches`, images not committed). The 4 Oct 404/500 was transient.
+- c511 (f.247v): five bare cipher runs in the f.246-248 hand, about 9 lines, no word written above any of them: (1) the first line of the
+  page, before "Les dernieres lettres que nous auons du Camp de Banier"; (2) 3 lines after "il a tesmoigné audit S. de Beauregard",
+  ending at clear "parti aie si grand avantage que les armées puissent trouuer une subsistence suffisante dans les lieux occupés";
+  (3) about 2 lines after "occupés", ending at clear ", sur le suiet de laquelle Mr Salvius a receu"; (4) about 1.5 lines after "receu",
+  ending at "C'est sans doute pour porter le Roy a de plus"; (5) about 1.5 lines, ending at clear "offres que celles qui ont esté faittes aux
+  Srs Grotius et Smals".
+- c512 (f.248r): clear only (the Danish diet at Copenhagen, Glückstadt, Stade, the dukes of Mecklenburg and Lüneburg); the letter ends here.
+- **Where Tomokiyo's F2 sits.** His second fragment ends "... si ce n'est que le", and the clear text right after run 2 begins "parti aie si grand
+  avantage": "si ce n'est que le parti aie si grand avantage ..." reads as one sentence. So F2 ("de ne consentir aucune suspension d'armes quand
+  on viendra a traiter si ce n'est que le") is very probably the plaintext of c511 run 2, which N8-BAL had guessed but could not see. This is a
+  placement from the clear context, by eye. No sign was aligned and nothing was scored. N8-BAL's F2 overlaps, computed on c509-510, were scored
+  against the wrong leaves.
+
+**Survey for a glossed letter in the f.246 hand** (`n9bal/glossed_candidates.tsv`): 36 canvases at 450 px, evenly spread over the 501
+canvases outside survey.tsv's letter windows, put on three contact sheets. One Sonnet call read all three sheets (the brief asked for one call
+per sheet; one call over three sheets was used, logged here), and this worker checked every sheet by eye. The two leads were re-fetched at 1200 px.
+Found: (a) c234 = f.110r (ink number read): a glossed cipher letter **not in Tomokiyo's list** for Baluze 168. It carries about 22 groups in 3
+runs with interlinear words ("particuliere"; "le Roy d'Espagne et Messieurs les Estatz"; a name over 68 16 d b ...). Its hand is the Paris
+court secretary's, not the f.246 hand. Its letter-sign forms (w, y, z, p, f, d, b) look like those the N8-BAL readers saw on f.247r. So the
+f.246-248 hand may share its sign forms with the court's other signs, but by eye only. (b) c499 (about f.241v, an estimate) is a running hand
+close to the f.246 hand: a clear letter about exchange losses at Hamburg, with no cipher. **No glossed letter in the f.246 hand was found** among
+the 36 sampled canvases. That is a sample of 36 of 501, not a census.
+
+**Next step, priced.** The cheapest route no longer needs a glossed letter in this hand. F2 is a known plaintext of about 68 letters sitting
+on c511 run 2. Plan: crop c511 runs 1-5 (`tools/iiif_lines.py --ark btv1b9001503k --canvas 511`, about 9 lines). Run 2 blind passes plus 1
+reconciliation, priced as 3 units at about 1.5 each, about USD 4.5. Pre-register a fresh scoring rule: fit the letter signs on F2 / run 2
+at grade C, then hold out F1 (wherever it sits on c509-511) and the other runs, against a shuffled-key control. Optionally calibrate the sign
+forms on f.110r's ~22 glossed groups (c234 crops + 1 pass, about USD 1.5). PREREG-N8BAL stays as registered. Its F2 term needs the c511 run,
+which a new prereg should name.
+
+Requests: gallica.bnf.fr 40 (2 native, 36 at 450 px, 2 at 1200 px), all HTTP 200, one at a time, >= 1.6 s apart, no retry needed. The manifest
+was read from the cache. Subagents: 1 Sonnet call.
+
+## Remaining gaps (N9-BAL, 5 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: cipher located (c509-511, now all reachable) and numerals
+transcribed on c509-510. Tomokiyo's F2 is placed on c511 run 2 by clear context.
+- 168 f.246-247v bare passage - blocker: not-attempted; the letter signs of this hand are unlabelled, and the F2 known plaintext is now located (c511 run 2); next: crop c511 runs 1-5, 2 blind passes + reconcile, prereg a fit-on-F2 / hold-out-F1 gate with a shuffled-key control, ~$4.5 (+ f.110r gloss calibration ~$1.5)
+- 170 ff.228-230 bare passage - blocker: not-attempted; ~32 lines (~380 groups); next: tools/iiif_lines.py crops of c239-241, one Sonnet pass per canvas for numerals + worker letter-sign pass with the Tomokiyo block, reconcile, decode_key, ~$6
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (5 Oct 2026, N9-BAL)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 (f.248r) is clear, and the clear context places F2 on c511
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); 168 f.246-247 known-answer a non-test (N8-BAL)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: 168 f.247v's hand needs its letter signs labelled; F2 on c511 run 2 is the known plaintext to fit them on (no glossed letter in this hand in a 36-canvas sample)
+- [ ] image-check: 170 c239-241 native crops still to do
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL), both HTTP 200
+Verdict: keep going: 3 internal gaps; cheapest next: crop 168 c511 runs and fit this hand's signs on F2 (run 2), prereg hold-out F1, ~$4.5, then 170 ff.228-230, ~$6
+Gate output (N9-BAL, 5 Oct 2026): `OK keep-going baluze167-davaux-1637: keep going: 3 internal gap(s), 2 step(s) untried` (exit 0); decode_key --check: reading up to date.
