@@ -319,3 +319,13 @@ band crops only) `f13_passB.tsv`; one reconciliation look -> `f13_code_gloss.tsv
 Remaining for this route: a third reader on the 40 gloss (V vs L) and on the 93 conflict, and a hand comparison by a
 person (the owner's eye or a palaeographer) to settle condition (c); if (c) passes, the six carries become C and the gate
 is met on S1 (6 >= 3, p 0.029). Any leaf after f.13 (f.13v onward, canvas f23+) is still unviewed.
+
+## Owner eye check, ASKS 113 (5 Oct 2026 04:01 UTC)
+
+Shown a side-by-side of f.10r line 1 (three crops, f10b/f10c_L01_s1-3) and f.13r lines 1-4 (f13r/f13g_L01-L04_s1), the owner
+answered: **"I think the same"** (same writer for f.10r and f.13r). Recorded as the owner's judgement at moderate confidence
+("I think"), against our own earlier "not shown, leaning different" (the 8 written as an open form on f.10r vs a closed loop on
+f.13r). Per ASKS 113's pre-registered rule, a "same" answer carries f.13r's six H glosses (82 "D. n.", 21 "Berry", 12 "b. Pal."
+...) to the matching tokens of f.10r at grade C. Not yet applied: the next worker on this target applies them through
+key.tsv/exceptions with decode_key.py --check, notes the conflicting 8-shape evidence beside each carried value, and leaves the
+"Vill."/"Lill." gloss over code 40 open (not asked this time).
