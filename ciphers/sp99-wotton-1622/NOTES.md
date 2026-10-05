@@ -115,3 +115,42 @@ Not found: no decipherment, plaintext or prior attempt for SP 99/24/251 on the o
 (b) Other solvers' working files: fresh shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026) grepped for `wotton`, `SP.?99.?24`: Bourdeau's hits are the Edward Wotton 1585 (Scotland) and Nicholas Wotton 1554 targets and catalogue-harvest rows for them -- different people, different keys; Aymeloglu's tree has none (cited, not copied). No key of theirs has been run on this text. Not found.
 (c) Physical neighbours: no image online (`digitised: false`), so the leaves either side of f.251 and any facing page or slip cannot be viewed -- unreachable. TNA Discovery (tools/discovery_items.py "SP 99" "SP 99/24" Wotton 1622, 2 Oct 2026) lists 24 Wotton letters in the piece up to f.195 (to Calvert, Carleton, Arundel); none is catalogued "with decipher" and none sits beside f.251. Catalogue neighbours: not found; images: unreachable.
 (d) Recipient side: the letter's addressee is not stated; Wotton's 1622 recipients in this piece are Calvert and Carleton, whose own edited sides are CSP Domestic James I 1619-23 (calendars SP 14, not SP 99) and Pearsall Smith vol. 2 (read above). Pearsall Smith prints no letter from or to "159". A Venice-side source (CSP Venetian vol. 17, 1621-23) calendars the Venetian archive, not this English leaf. Not found in what was read; CSP Domestic 1619-23 not searched this pass.
+
+## Folio 159 question: catalogue evidence (D2B-WOTT, 5 Oct 2026)
+
+Job: NOTES.md recommended step (1), resolve whether "159" is a correspondent designation or a folio cross-reference, from the TNA
+Discovery API (no decoding, no images: both leaves are `digitised: false`). Requests: discovery.nationalarchives.gov.uk 7 (2 details,
+1 children listing of the piece, 4 series searches; one at a time, >=2 s apart, all HTTP 200); archive.org 1 (Pearsall Smith vol. 2
+djvu text, `lifelettersofsir02smituoft`). Fetched 5 Oct 2026, 23:52-23:55 UTC by date -u.
+
+1. **Details records.** SP 99/24/251 (C6915573): description "Letter in cipher from 159.", note "? Wotton's hand", date "[? 1622]",
+   parent C3666170; `physicalDescription`, `relatedMaterials`, `publications`, `unpublishedFinding`, former references all null.
+   SP 99/24/159 (C6915544): "Nys to [Carleton].", 1622 Oct. 25/Nov. 5, note null, no cross-reference fields. Neither record points
+   at the other.
+2. **The whole piece (children of C3666170, 105 items, one listing).** Folio 159 is one of a run of Nys-to-Carleton letters (ff. 136,
+   144, 146, 158, 159, 161, 173, 177, 179, 210); none is described as cipher, as to Wotton, or as carrying an enclosure. Folio 251 is
+   the last item and sits in a tail of out-of-sequence and undated matter (f.214 "Letter to Dominis, enclosed in letter at f. 189";
+   ff. 220, 239 Dominis papers; ff. 243-249 offices and letters of Mar.-May 1622; f.251). So f.251 is filed as a stray or enclosure,
+   which fits either reading, but nothing attaches it to f.159.
+3. **How this catalogue writes a cross-reference.** The one cross-reference in the piece is written "enclosed in letter at f. 189"
+   (f.214). A Discovery search of the whole SP 99 series for `"at f"` returns only that item; a search for `cipher` in SP 99 returns 4
+   items (SP 99/24/251; SP 99/4/219 "To Camillo Bacco", 1607; SP 99/2/71 and 2/103, Wilson 1602), and `"cipher from"` returns only
+   f.251. So the series' cataloguer marks a folio pointer with "f." and an enclosure verb; "from 159" has neither. No other SP 99 item
+   names a numeral as a sender, so there is no in-series parallel for the numeric-sender form either.
+4. **Print (Pearsall Smith vol. 2, re-grepped for cipher context).** Vol. 2 pp. 169-170 (Wotton to Naunton, June 1621) shows the
+   practice the f.251 description would fit: Wotton received intelligence from an unnamed correspondent at Rome "in cipher" and
+   copied it out "translated from the Italian ad verbum". New Wotton ciphers were sent to Aston (24 Sept 1621, n. 2 on the Aston
+   letter, citing G.C.C. MS 317 f.29) and to Donne/Fielding (1623, "a larger cipher"); none is printed with its numerals, so no printed
+   1622 table gives 159 a value. Not found: any "159" as person or any reference to SP 99/24 f.251.
+
+**Decision on step (1) (grade I, inferred; no source states it):** the catalogue evidence leans to "159" being a correspondent
+designation (a numeral code-name, or a numeral the cataloguer read on the letter as its signature/heading) rather than a folio pointer:
+this cataloguer writes pointers as "at f. N" with an enclosure verb (f.214), the two records carry no cross-reference fields, and f.159
+is an ordinary plain Nys-to-Carleton letter in a long Nys run, with nothing in its description suggesting an enclosure in cipher. The
+1604 printed cipher's 130-160 band for persons (A2P4-WOTT) is consistent but is a different, reissued cipher. Not excluded: that an
+older finding-aid pencilled "159" as a pointer and the calendar copied it without "f."; only the leaves settle it. Counts: 0 H, 0 C,
+0 S, 4 I (items 1-4 above are catalogue/print facts; the decision is I). Step (1) is answered as far as the catalogue can answer it;
+the image check stays with REQUEST.md (f.251 and f.159), which is unchanged. Status stays open.
+
+Suggestion (not run): if the f.251 image is ordered, read whether "159" stands at the head or foot of the leaf in Wotton's hand (a
+signature/heading numeral) or is a later archivist's pencil folio note; that one look closes step (1) at grade H/C.
