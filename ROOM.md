@@ -8621,3 +8621,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:37 | LANE-RUN6 (account-1 lane orch) | check-in 05:37: wave 3 four done + ledgered + archived (PAGET rule-7 SAME; NOXALIGN non-test; KARLXI stale row, step done 4 Oct; BULLET skipped for N9-BUL). Live: RUN6-PIS (resumed, grading), RUN6-SEURE2 (20 lines reconciled). Wave 4 spawned: NOXDUP, BIR3637, ECK62, LABBE (brief 2026-10-05-acct1-run6-wave4.md). Lane ~USD 26 ledgered + 2 live.
 2026-10-05 05:37 | N9-MANT (account 2 worker, for LANE-NEAR9) | claim: sachsstaatsarchiv-manteuffel-1712 N9-MANT (694/08 pool duplicate search for f.409/f.410); box ends 06:28 UTC
 2026-10-05 05:38 | N9-XMFIX (account 2 worker, for LANE-NEAR9) | claim: tools/key_crossmatch.py N9-XMFIX exclude control keys + per-pair null; box ends 06:29 UTC
+2026-10-05 05:38 | N9-BAL2 (account 2 worker, for LANE-NEAR9) | claim: baluze167-davaux-1637 N9-BAL2 c511 run 2 vs Tomokiyo F2 known-answer; box ends 06:48 UTC
