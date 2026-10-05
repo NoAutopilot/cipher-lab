@@ -1887,3 +1887,14 @@ Independent session (not N8-GRA2/N8-GRA3). Disk only, no network. Nothing decode
   letter's table differs at this cell. The f.30 contexts rule out R on f.30. So the C value R applies only to fr.3040 no.6's
   readers' label and must not enter key.tsv (f.30's key). Logged in HYPOTHESES.md. Next step, unchanged from NOTES: image-check of fr.3040's
   z against the Tomokiyo/Lasry key images (~$1).
+
+## HathiTrust full text (owner's browser, 5 Oct 2026 05:07 UTC; LOCAL-QUEUE L3 -- the runner was stopped by Cloudflare)
+
+Full-text search, all items (full view + search-only), babel.hathitrust.org/cgi/ls:
+- "faict ledit article a part" (phrase): **0 results** (all items 0, full view 0).
+- "oster de suspecon" (phrase): **0 results**.
+- Gramont Villandry 1530 (all words, not a phrase): 3,171 results, too broad to read; top hits are F. Decrue de Stoutz, *Anne de
+  Montmorency ... à la cour, aux armées et au conseil du roi François Ier* (1885, full view, several copies). Not opened.
+Caveat: the phrases are in our reading's spelling; a printed edition that modernised or re-spelled them would not match an exact
+phrase. Search result only, not a novelty verdict (rule 10). Next if wanted: full-text check of Decrue 1885 (likely also on
+archive.org) for 20 May 1530 / Villandry / "chiffre" (~$1, worker).
