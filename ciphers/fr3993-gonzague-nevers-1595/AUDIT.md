@@ -71,3 +71,48 @@ without viewing the image, and the BnF catalogue omits the gloss -- a catalogue 
 exclude an interlinear decipherment (LESSONS-worthy; the premise check's image step is what caught it).
 Found, not applied: none. NEAR.md: no row for this target. STATUS.md handoffs: not edited (no over-claim). No SECOND-OPINIONS-QUEUE
 row (N0, below N3).
+
+## AUDIT 2 (VER1-REG, 5 Oct 2026)
+
+Verifier: VER1-REG (account 2 worker, for LANE-VER1; brief `.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md`), run 18:40-19:0x UTC
+by `date -u`; a session separate from A3V-VNV01, NV-INTAKE and NV01-READ. Claim under audit: Audit 1's **N0** (period interlinear
+decipherment on the leaf), key `period` (no.70, fr.3995 f.131r, identified by Tomokiyo).
+
+**The basis, checked again by eye.** I viewed `images/crops/c81_72r_block.jpg` myself. A second hand writes one letter above each
+digit pair on every cipher line of f.72r: line 1 "g a s d e s s o n t u e n u z a d u e r t i r", line 3 "b i o n s e n t r e l a p o r t
+e d u m a s e t l e", line 4 "r a u e l i n l a n o u e ...", the last line "d e p e r d r e ... t o n t"; "les" stands over the top-right
+group 15 64 38 2, and "nomis" (or "noins") over the line-6 sign. These agree with reading_plain.txt. The N0 basis holds from the image.
+Rule-7 (fresh session): `python3 tools/decode_key.py ciphers/fr3993-gonzague-nevers-1595 --check` -> "tokens 189: H 180, M 1, U 8 /
+reading up to date".
+
+| family | searched (5 Oct 2026) | result |
+|---|---|---|
+| (a)/(d) catalogue | Audit 1's reading of the 1881 *Catalogue général* and the BnF dépouillement accepted (verbatim quotation in NOTES.md) | "Lettre, avec chiffre" only |
+| (b) sender/recipient print | Google Books: `Charles de Gonzague Clèves duc de Nevers lettre 2 août 1595` 26 vols, top 10: the 1881/1895 BnF catalogues and biographical dictionaries, no letter text | not found |
+| (c)/(e) phrase search | IA be-api fts, all items: `"porte du mas" ravelin Cambray 1595` 0; `"la noue" "battre demain"` 22 (other texts: Orange-Nassau *Werken*, Granvelle correspondence, 19th-c. memoirs; none this letter); `"en danger de perdre" gabions ravelin` 202 loose (Castelnau mémoires etc.). Google Books: `"porte du mas" Cambray 1595` 17 loose (Ruiz Ibáñez, *Felipe II y Cambrai* 1999, the 1595 Cambrai siege study, snippet unrelated); `"amener des gabions" "porte du" ravelin 1595 Cambray` 0 | not found |
+| (f) solver repos | fresh clones (cyphersolver a439937, 3 Oct; unsolved-ciphers d2800bb, 27 Sept): grep 3993 / fr3993 / nevers1595 / "gonzague.*1595" -> only Bourdeau's mirrors of Tomokiyo nevers.htm / league.htm and a BnF notice harvest; no reading or gloss note for f.71-72 | key named by Tomokiyo; no reading |
+| (g) scholarship | OpenAlex (key) 2 queries, top hits unrelated (Savoy diplomacy, 1618-21 militia); HAL `"Charles de Gonzague" AND 1595 AND chiffre` 0. JSTOR: both Audit 1 rows answered (no relevant hit / no hits); no new row needed | not found |
+| unreachable | HathiTrust full text (cloud); Ruiz Ibáñez 1999 full text | -- |
+
+Requests: be-api.us.archive.org 3, www.googleapis.com 3, api.openalex.org 2, api.archives-ouvertes.fr 1, github.com (clones shared with
+the Janssens audit). Subagent calls 0.
+
+### Classification (Audit 2)
+
+**NV-01 (fr.3993 ff.71v-72r): N0 -- Audit 1 endorsed.** Prior plaintext and prior decipherment: the contemporary interlinear gloss on
+the leaf (seen by eye in both audits); no print of the text located. Key source **period** (key no.70, transcribed by us, identified by
+Tomokiyo, credited). `text: known` (on the leaf).
+
+**Depth (rule 4a): D3, 95.2%** of tokens H (180 of 189; M 1 = a nomenclator sign read "vous"; U 8 = six nomenclator/roman signs plus
+two two-digit "15" groups outside the key). External check non-statistical: the period gloss, letter for letter on every line checked;
+fresh rule-7 check passes. Not D4: the two numeric U tokens are cipher-letter groups, not name codes. Depth sentence (true, specific,
+from the gloss): the writer reports that scouts ("gasdes") have come to warn that gabions are being brought up "entre la porte du mas et
+le ravelin", with "la noue ... battre demain" and "lon sera en danger de perdre" following. Outward words: "largely deciphered (about 95%)" -- by the period gloss
+and period key; the safe sentence of Audit 1 governs (N0, no new text).
+
+### Postmortem
+No over-claim found (NOTES.md "found-solved", PROGRESS.tsv note "calibration, not a new reading"). Register gap, not a claim: status.json
+has no target or result row for `fr3993-gonzague-nevers-1595` (only a link to `fr3993-villeroy-1595`), so the depth fields are recorded
+here and in PROGRESS.tsv; the lane orchestrator adds the row (a verifier does not create board rows). No SECOND-OPINIONS-QUEUE row (N0).
+
+`python3 tools/depth_check.py` (5 Oct 2026, after this audit; neither item is a counted result, N0/N1): `unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0 exit 0`

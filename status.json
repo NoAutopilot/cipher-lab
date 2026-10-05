@@ -730,7 +730,14 @@
       "holder": "Agents",
       "next": "keep going: 3 internal gaps (gap 1 done: leaves 192 and 201 merged; gap 5 done: M regrade, both 2 Oct 2026); cheapest next: gap 4, the LOCAL-QUEUE.tsv row for the Paris-side translation search (FranceArchives / AN Marine et Colonies: Janssens, Batavia, 1811, dechiffrement/traduction, quoting the cat",
       "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
-      "kind": "recovery"
+      "kind": "recovery",
+      "novelty": "N1",
+      "audit_status": "two audits",
+      "depth": "D2",
+      "depth_pct": 51.5,
+      "depth_sentence": "In dispatch No.1 Janssens reports that the former Governor-General (Daendels) is leaving 'chargé de ... et de la malédiction', the passage Collet 1910 prints as 'Il part, chargé de trésors et de la malédiction'.",
+      "depth_check": "C 84 / M 23 / U 56 of 163 (GAPS17 reading, decode_key --check); clause l.10-11 and run l.1 matched in order by Collet 1910's independent print (non-statistical external check); AUDIT 2 VER1-REG 5 Oct 2026",
+      "decode_status": "Partially decrypted"
     },
     {
       "name": "na-schonenberg-1678-1716",

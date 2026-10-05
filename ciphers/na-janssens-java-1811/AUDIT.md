@@ -97,3 +97,51 @@ decipherment (L31) the complete one.
 Requests: archive.org 9 (8 djvu downloads + 1 advancedsearch) + 2 advancedsearch, be-api.us.archive.org 8 (print_check),
 www.googleapis.com 8 (print_check) + 17 hand, api.openalex.org 9, api.semanticscholar.org 1 (429) + 1, api.crossref.org 2,
 api.archives-ouvertes.fr 1, www.nationaalarchief.nl 1. Subagent calls 0; vision calls 0. Cost: see the lane ledger.
+
+## AUDIT 2 (VER1-REG, 5 Oct 2026)
+
+Verifier: VER1-REG (account 2 worker, for LANE-VER1; brief `.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md`), run 18:40-19:0x UTC
+by `date -u`. This is a separate session from Audit 1 (A3V-VJAN) and from every solver of this folder. Nothing decoded; key.tsv,
+ciphertext and reading not touched. Claim under audit: Audit 1's **N1** for leaf 188 (dispatch No.1), key `period`, text known in part
+(Collet 1910). Adversarial aim: find more of No.1 in print (which would leave N1 but enlarge the known part) or a printed
+decipherment of this Triplicata copy (which would lower it to N0).
+
+### Search log (5 Oct 2026)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical series | Opkomst XIII (archive.org `depkomstvanhetn00unkngoog`) via be-api fts with identifier filter: "malédiction", "trésors", "chiffrée", "différemment" 0 each; positive control "Janssens" returns the item | no print of No.1's quoted sentences in Opkomst XIII (poor OCR; a garbled citation is not excluded, same caveat as Audit 1) |
+| (b) recipient-side print | Google Books API (`country=US`, key): `"chargé de trésors et de la malédiction"` 2 vols, `"présentera les choses bien différemment"` 1, `"lettre chiffrée du 22 juin"` 2, `Collet Java "lettre chiffrée" Janssens` 2 -- all are Collet 1910 (`-BCyBiSVklAC`, `uz1BAQAAMAAJ`); snippet text re-read and matches Audit 1's quotation verbatim | **Collet 1910 confirmed independently**, and he is the only printed source of the quoted sentences that the API finds |
+| (c) documentary editions / later secondary | Google Books: `Janssens "22 juin 1811" Java` 78 vols, top 10 read: Collet x2, Day 1904 *Policy and Administration of the Dutch in Java* (cites "Janssens to Minister, June 1811, ib., 541" = Opkomst XIII LIII, a clear letter), Archipel 1971, *Croisières dans la mer des Indes* 1992, others unrelated; English/Dutch renderings (`"laden with" curses`, `Daendels "schatten" vloek`, `"charged with treasures"` on IA fts 75 hits, all unrelated) 0 relevant | no further print of No.1 |
+| (d) holding archive | not re-queried (Audit 1 read the NA EAD the day before; no change expected) | accepted |
+| (e) IA full text | be-api fts, all items: the three Collet phrases 0 each (Collet 1910 is not on IA) | none |
+| (f) solver repos, blogs | fresh shallow clones today: dbourdeau/cyphersolver HEAD a439937 (3 Oct 2026), aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept 2026); grep janssens / batavia / 2.01.27: only Batavian-Republic DECODE records (Fagel, Hogendorp, Bourdeaux 1801-03) and Croiset key notes, nothing on Java 1811 | none |
+| (g) scholarship | OpenAlex (key) 3 queries: one relevant work, Peter Carey, *The Power of Prophecy* (Brill 2007), ch. VII "The end of the beginning: the last months of the Franco-Dutch government ... 1811-1812", doi 10.1163/9789067183031_008, not open access, not read; Google Books index search of Carey for Janssens/Daendels/cipher shows no hit on the dispatch. HAL `Janssens AND Java AND 1811` 0; CrossRef 1 query, top 3 unrelated; Persée `"lettre chiffrée" Janssens` 5759 loose hits, first page unrelated (Janssen astronomer). JSTOR: both Audit 1 rows are answered (family (i) context hit = the same Carey chapter; family (ii) phrase = no hits); no new row needed | Carey 2007 is the one study that could quote No.1 and is unread (owner-side read: JSTOR stable 10.1163/j.ctvbqs55t.12, pp.261-344) |
+| unreachable | Collet 1910 page images (books.google.com page view, cloud-blocked; LOCAL-QUEUE L35 stands); Carey 2007 full text; AN Paris originals (LOCAL-QUEUE L31) | -- |
+
+Requests: www.googleapis.com 15 (two 503s, not retried), be-api.us.archive.org 8, api.openalex.org 4, api.archives-ouvertes.fr 1,
+api.crossref.org 1, www.persee.fr 2, github.com 2 clones. Subagent calls 0.
+
+### Classification (Audit 2)
+
+**Leaf 188 (dispatch No.1): N1 -- Audit 1 endorsed.** Prior plaintext in part (Collet 1910, pp. c.407-408, two sentences, re-found
+by this audit in both scans); prior decipherment of the dispatch implied by Collet's "lettre chiffrée" but not located as a document;
+no decipherment of this Triplicata copy located. Not lowered to N0: nothing found prints a decipherment of leaf 188 or the full text
+of No.1. Key source **period** (rebuilt by us from the bundle's decipherments of No.2-No.5; no published key). `text: known` in part.
+
+**Depth (rule 4a): D2, 51.5%** of tokens H/C/S (C 84 of 163; M 23, U 56). Check: the l.10-11 run "l'ancien Gouverneur Gal par
+chargent de [125] [1065] et de la mal é[72]" and the l.1 run "l'ancien Gouverneur Gal" are matched, in the same order, by Collet's
+independent print -- a non-statistical external check of a clause; not D3 (below 80%, and the 56 U tokens are not only name codes).
+Depth sentence (true, specific): in this dispatch Janssens reports that the former Governor-General (Daendels) is leaving "chargé de
+... et de la malédiction" -- the passage Collet prints as "Il part, chargé de trésors et de la malédiction". Outward words:
+"partially deciphered (about 50%)", with Collet's prior print stated.
+
+**Safe sentence:** Audit 1's, unchanged. **Unsafe sentence:** "first reading of Janssens' dispatch No.1"; "its content was unknown".
+
+### Postmortem
+Audit 1 holds; no over-claim found in AUDIT.md, NOTES.md headline, PROGRESS.tsv row or status.json target row (grep for
+new/first/unpublished/novel: procedural uses only). One gap for the next session: Carey 2007 ch. VII is the only modern study located
+that treats June 1811 at this level and may quote No.1 from the Paris decipherment; reading it cannot lower the class below N1 (Collet
+already prints part) but could enlarge the known part. No SECOND-OPINIONS-QUEUE row (class below N3).
+
+`python3 tools/depth_check.py` (5 Oct 2026, after this audit; neither item is a counted result, N0/N1): `unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0 exit 0`
