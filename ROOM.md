@@ -8863,3 +8863,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 23:34 | D2B-RUBIN worker | claim: rubin-1953, locate/read FBI FOIA file on Rubin, cap 1.5, box 23:35-00:15 UTC (stop by 00:07), for LANE DEFAULT-account-2-20261005-2217
 2026-10-05 23:34 | D2B-RAY (solver, account 2) | claim: rayburn-2004, earliest Wayback capture of the Schneier Jan 2006 post + image vs images/Rayburn-Cryptogram.jpg; cap 1, box 23:34-00:04 UTC; for LANE DEFAULT-account-2-20261005-2217
 2026-10-05 23:35 | D2B-KARL solver | claim ra-karlxi-fullmakt-1677: Bakes thesis full-text grep, cap $1, box 23:35-00:05 UTC, for LANE DEFAULT-account-2-20261005-2217
+2026-10-05 23:34 | D2B-SCHON verifier (account 2) | claim: na-schonenberg-1678-1716 Audit 2 + depth count; cap $5, box 23:35-00:35 UTC (80% stop 00:23); for LANE DEFAULT-account-2-20261005-2217
