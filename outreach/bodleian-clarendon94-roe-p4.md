@@ -4,3 +4,27 @@ targets: ciphers/thurloe-printed (P4, old pp.73-76 of MS. Rawl. A. 24/1; MS. Cla
 facts used (sources): NOTES.md s.26 (Birch III p.188 "A letter of W. S. from Calais", 13 March 1654/5, margins Vol. xxiv p.76 / p.73, signed "W. S."; the 30 March letter P5+P6 printed with decipherment, N0); AUDIT.md (P4 N4, H 73 C 342 M 3 U 6 of 424, key from printed sibling decipherments + Tomokiyo table); REQUEST.md (Clarendon 94 record, Madan 16180, Sams/TLS 1977); sp81-roe-1638 NOTES (Cal. Clar. i p.215 no.1486 item 14).
 
 Body: as in the project mailbox draft (thread above), 5 Oct 2026 ~02:4x UTC.
+
+## Body (checked)
+
+checked: 5 Oct 2026 02:40 UTC by OUT-CHECK-BOD94B (account-3 gate-7 worker, not the drafter; POST-SEND -- the owner sent at 02:38 UTC before this check finished). 21 factual sentences compared against thurloe-printed NOTES s.26/s.16/N8-THUR2/N8-THR7, AUDIT.md (P4), REQUEST.md, sp81-roe-1638 NOTES, BHO vol3 pp185-195 (fetched once today) and IA calendarofclaren01bodluoft (be-api fts, "Roe's cypher" present). No sentence false; 6 tightened: (1) "Birch prints it in vol. 3, p. 188" -> "pp. 187-189 (the cipher is on p. 188)" (BHO: heading on [Page 187], signature/date on [Page 189]; 421 of 423 numerals on 188); (2) "You were right that the 30 March 1655 letter is a different one" -> "The 30 March 1655 letter you found is a different one" (s.26: he found no 13 March letter; he did not assert the difference); (3) "we have read most of it" -> "all but 9 of its 424 cipher groups" (outreach rule 2/1b: state the uncertain share; NOTES N8-THR7 H 73 C 342 M 3 U 6 of 424); (4) attribution sentence adds Macray's Rawlinson index line "Stamford, W., Calais ... A. 24. 73" (AUDIT P4 table; it is the archive-side support the curator can check); (5) "A 1977 note in the TLS" -> "Julian Moore's 1977 article in the TLS" (NOTES 'Sams 1973' section); (6) "neither of which is online" -> "neither of which I have found online" (item 2 has no known shelfmark, so its online status is unverified). Verified as written: BHO heading/margins "Vol. xxiv. p. 76." and "Vol. xxiv. p. 73.", dateline "Callais, March 13, [1654/5. N. S.]", signed "W. S." only; pp.319/324 pagination and A. 24/1 vs 24/2 (s.26); Birch printed P4 without decipherment (AUDIT); Clarendon 94 title, 28 leaves, Madan III no.16180, archival_objects/172506 (REQUEST.md); Cal. Clar. i p.215 no.1486 item 14 wording; SP 81/44. Rule 10: no first/new/unpublished; says what it rests on (printed sibling decipherments + Tomokiyo's published table). Voice: I for requests, we for agent reading -- correct. Disclosure: follow-up in an existing thread; the thread's first message (outreach/bodleian-rawl-a24-p4.md) carried it per its own checked: line (rule 1 refinement). Verdict: PASS with wording changes; nothing sent is false, so no correction email is needed.
+
+Dear Mr Webb,
+
+Thank you again for your helpful reply of 28 September, and for the references to pp. 319-327.
+
+The 30 March 1655 letter you found is a different one; Birch prints it with its decipherment. The letter I was asking about is earlier. Birch prints it in vol. 3, pp. 187-189 (the cipher is on p. 188; https://www.british-history.ac.uk/thurloe-papers/vol3/pp185-195) as "A letter of W. S. from Calais", dated "Callais, March 13, [1654/5. N.S.]", with the margin reference "Vol. xxiv. p. 76." and a short covering letter at "Vol. xxiv. p. 73." It is signed only "W. S.", never "Stamford", which may be why it did not come up under his name. If the manuscript keeps Birch's old pagination, as it does for pp. 319 and 324, these leaves should be at old pp. 73-76 of MS. Rawl. A. 24/1. Could you check whether those pages hold the cipher letter, and whether an office decipherment survives with it?
+
+In case it is of interest for your records: Birch printed this letter's cipher without a decipherment. Working from his printed text, we have read all but 9 of its 424 cipher groups with a key rebuilt from Stamford's other letters, the ones Birch prints with their decipherments, and from a key table published by S. Tomokiyo. The attribution of the "W. S." letter to William Stamford rests on its content, on those sibling letters, and on Macray's Rawlinson index, which lists "Stamford, W., Calais ... A. 24. 73". The reading and the evidence are here: https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed. You are very welcome to use any of it.
+
+While writing, may I also ask for a quote for digital images of two items in the Clarendon State Papers, neither of which I have found online?
+
+1. MS. Clarendon 94, "Sixteen ciphers used in the Clarendon State Papers on the royalist side", 28 leaves (Madan, Summary Catalogue III, no. 16180; https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/172506), with any loose material filed with it. Julian Moore's 1977 article in the TLS says Eric Sams's "solutions to unsolved cipher in Thurloe" were filed with Clarendon MS 94 (1973); if those notes are there, I would be glad to have them included.
+
+2. The key listed in the Calendar of the Clarendon State Papers, vol. I, p. 215, no. 1486, item 14: "Sir Thos. Roe's cypher. End. by Windebank." The calendar gives no shelfmark or folio; could you tell me where it is kept? It may be the key to a 1638 cipher postscript of Roe's in The National Archives (SP 81/44).
+
+If old pp. 73-76 do hold the 13 March letter, a quote for those pages would be welcome too. If these should go through Imaging Services instead, I am happy to submit them there.
+
+With thanks and best wishes,
+
+[SIGN-OFF]
