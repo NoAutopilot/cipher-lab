@@ -6,6 +6,7 @@ Usage: ec18.py DATA_DIR OR_DIR [--book 2] [--possessive] [--guard DIR62] [--writ
        ec18.py DATA_DIR OR_DIR --guard-test DIR62 [--possessive]
        ec18.py DATA_DIR OR_DIR --assign [--possessive] [--guard DIR62] [--write | --check]
        ec18.py DATA_DIR --assign-free DIR62 [--write | --check]
+       ec18.py DATA_DIR --read-free DIR62 [--write | --check]
   DATA_DIR/vol18.json: one CONTENTdm dmQuery (URL and sha256 in ../pilot1864/manifest.tsv; the Decoding the Civil War
   volunteers' transcription, not committed). OR_DIR/<vol>.txt: IA _djvu.txt per OR volume (ids in or_volumes.tsv; not
   committed, re-fetch). --write rewrites entries.tsv, matches.tsv, control.tsv and readings.md; --check exits 1 if any
@@ -24,6 +25,10 @@ rotated-window control, writing assign.tsv and assign_summary.tsv.
 RUN6-ECK62 (5 Oct 2026; PREREG-ECK62-FREE.md): --assign-free DIR62 assigns the book with no print of the entry: corpus
 bigram support (DIR62, OR 1862 volumes) for each keyed meaning against its neighbours, both keys, markers deleted;
 known answer on the marker-known entries; control = 20 shuffled-meaning keys. Writes assign_free{,_summary}.tsv.
+RUN6-ECK62R (5 Oct 2026): --read-free DIR62 reads each `1f`/`2f` entry of assign_free.tsv with its assigned key (full
+text, markers kept, --possessive and the DIR62 guard as the committed outputs). Grade cap S: the book is S, so every
+keyed token of an H/C key row counts as S; I and M rows keep I and M. "words" = >= 3 keyed tokens and oov 0 (the
+fully-keyed rule); otherwise "not" with the oov words listed. Writes readings_free.tsv and readings_free.md.
 
 Entries: the volunteer text is split on blank lines; a block whose first three lines carry a clear date (month day
 year) opens an entry, a block without one continues the current entry (pages in page-number order). The header lines
@@ -284,6 +289,8 @@ def main(argv):
         return assign(argv)
     if "--assign-free" in argv:
         return assign_free(argv)
+    if "--read-free" in argv:
+        return read_free(argv)
     data, ordir = argv[0], argv[1]
     bk = "2" if "--book" in argv and argv[argv.index("--book") + 1] == "2" else "1"
     other, sfx = ("1" if bk == "2" else "2"), ("_b2" if bk == "2" else "")
@@ -587,6 +594,59 @@ def assign_free(argv):
             return 1
         print("current")
     print(outs["assign_free_summary.tsv"])
+    return 0
+
+
+def read_free(argv):
+    """RUN6-ECK62R: read the print-free-assigned entries with the assigned key, tokens capped at grade S."""
+    data, d62 = argv[0], argv[argv.index("--read-free") + 1]
+    g = d1.CollisionGuard([f.read_text(errors="ignore") for f in sorted(Path(d62).glob("*.txt"))])
+    keys = {"1": d1.load_key(ROOT / "ciphers/eckert-1864/key.md"), "2": d1.load_key(ROOT / "ciphers/eckert-1864/key-no2.md")}
+    asg = {}
+    for l in (HERE / "assign_free.tsv").read_text().splitlines()[1:]:
+        f = l.split("\t")
+        if f[5] in ("1f", "2f"):
+            asg[f[0]] = f[5][0]
+    voc = vocab()
+    es = [e for e in entries(data) if e["id"] in asg]
+    tsv = ["id\tpage\tdate\tassigned\tkeyed\tS\tI\tM\toov\tclass\toov_words"]
+    md = ["# mssEC 18: print-free-assigned entries read with the assigned book (RUN6-ECK62R, 5 Oct 2026)", "",
+          "Derived by `ec18.py DATA --read-free DIR62` from the Decoding the Civil War volunteer transcription (not "
+          "reconciled against the page image, rule 2) and ciphers/eckert-1864/key.md (book 1f) or key-no2.md (book 2f), "
+          "the book assigned print-free at grade S (RUN6-ECK62, PREREG-ECK62-FREE). Every keyed token is at most S "
+          "(H/C key rows counted as S because the book is S). class 'words' = >= 3 keyed tokens and no out-of-vocabulary "
+          "word outside brackets; 'not' otherwise. Known-answer precision of the assignment: '1' 0.956, '2' 0.821. "
+          "Not a novelty claim (rule 10).", ""]
+    tot = collections.Counter()
+    for e in es:
+        bk = asg[e["id"]]
+        decode_all([e], keys[bk], True, g)
+        c = e["counts"]
+        bare = re.sub(r"\[[^\]]*\]|\{[^}]*\}", " ", e["reading"])
+        oovw = [w for w in re.findall(r"[A-Za-z]+", bare) if w.lower() not in voc and len(w) > 1]
+        keyed = sum(c.values())
+        sg, ig, mg = c["H"] + c["C"], c["I"], c["M"]
+        cls = "words" if keyed >= 3 and not oovw else "not"
+        tot.update({"S": sg, "I": ig, "M": mg, cls: 1, "book" + bk + cls: 1})
+        y, m, dd = e["date"]
+        dt = f"{y}-{m:02d}-{dd:02d}"
+        tsv.append(f"{e['id']}\t{e['page']}\t{dt}\t{bk}f\t{keyed}\t{sg}\t{ig}\t{mg}\t{len(oovw)}\t{cls}\t{' '.join(oovw)}")
+        md += [f"**{e['id']}** (Page {e['page']}, {dt}; book {bk}f; S {sg} I {ig} M {mg}; oov {len(oovw)}; {cls})", "",
+               e["reading"], ""]
+    summ = (f"entries {len(es)}; words {tot['words']} (1f {tot['book1words']}, 2f {tot['book2words']}); "
+            f"not {tot['not']} (1f {tot['book1not']}, 2f {tot['book2not']}); tokens S {tot['S']} I {tot['I']} M {tot['M']}")
+    md.insert(4, "Summary: " + summ + ".\n")
+    outs = {"readings_free.tsv": "\n".join(tsv) + "\n", "readings_free.md": "\n".join(md)}
+    if "--write" in argv:
+        for k, v in outs.items():
+            (HERE / k).write_text(v)
+    elif "--check" in argv:
+        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        if stale:
+            sys.stderr.write("stale: " + ", ".join(stale) + "\n")
+            return 1
+        print("current")
+    print(summ)
     return 0
 
 

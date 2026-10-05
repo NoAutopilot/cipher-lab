@@ -1190,12 +1190,33 @@ committed outputs; marker words deleted from every entry; book = the key with >=
 - Data: vol18.json re-fetched (sha256 cb162574..., matches pilot1864/manifest.tsv); DIR62 8 `_djvu.txt` to scratch, not
   committed (ids in RUN3-ECK62 above). Requests: hdl.huntington.org 1, archive.org 8, >= 1.6 s apart. 0 vision, 0 subagents.
 
+## RUN6-ECK62R (5 Oct 2026, account 1 worker for LANE-RUN6): the 79 print-free-assigned entries read with the assigned book
+
+The named next step of RUN6-ECK62 only. New option `ec18.py DATA --read-free DIR62 --write|--check` (`--check` current):
+each `1f`/`2f` row of `ec18/assign_free.tsv` decoded with its assigned key (key.md for 1f, key-no2.md for 2f; full
+volunteer text, markers kept; `--possessive` and the DIR62 collision guard as the committed outputs). Outputs
+`ec18/readings_free.tsv` (per entry: keyed, S, I, M, oov, class, oov words) and `ec18/readings_free.md` (all 79 readings).
+- Grades (rule 4): the book is S (RUN6-ECK62's control-backed gate), so every keyed token from an H/C key row is counted
+  S: S 1229, I 4, M 0, H 0, C 0 across the 79 entries. Cryptanalytic result, conditional on the volunteer transcription
+  (rule 2, no image reconciled).
+- Words vs not (the fully-keyed rule, >= 3 keyed tokens and 0 out-of-vocabulary words outside brackets): 2 words, 77 not.
+  Words: 9910.423 (1f, 1864-12-08, S 10: troops to be sent to [Maj Gen Geo. H. Thomas], "[5000] [Men] can be spared from
+  [Missouri]") and 9971.546 (2f, 1865-03-04, S 14: a new [Regiment] from states [East] of [Ohio] [Order]ed to
+  [Baltimore]). Not: 1f 20, 2f 57; oov per entry 1-21 (median about 5); the 16 with oov 1-2 are mostly names or
+  volunteer spellings (Kearney, Eckert, Govt, Berrien) or plain code words read with a meaning-less lookup (whiffir,
+  tambons, platina, tummuch). For scale, the marker-known entries give 28/311 (book 1) and 17/168 (book 2) word-clean
+  readings with their own key, so 2/79 is lower than the marker-known rate; the '?' entries are the ones with no
+  punctuation markers, i.e. shorter or less keyed.
+- Not done (not in the brief): no print check of the two word-clean readings, no image check. Requests: hdl.huntington.org
+  1 (vol18.json, sha256 cb162574... matches pilot1864/manifest.tsv), archive.org 8 (DIR62), >= 1.6 s apart; 0 vision,
+  0 subagents. Report what was found and where it was not found; no novelty class.
+
 ## Remaining gaps (finish-or-blocker pass, RUN6-ECK62, 5 Oct 2026)
-Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries (14 in OR, H 369 C 2) and 17 fully keyed Cipher No. 2 entries (12 in OR), from the volunteer text, read with the possessive option and collision guard (RUN3-ECK62); 79 of the 192 '?' entries given a book at S (RUN6-ECK62: 21 No. 1, 58 No. 2)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries (14 in OR, H 369 C 2) and 17 fully keyed Cipher No. 2 entries (12 in OR), from the volunteer text, read with the possessive option and collision guard (RUN3-ECK62); 79 of the 192 '?' entries given a book at S (RUN6-ECK62: 21 No. 1, 58 No. 2) and read with it (RUN6-ECK62R: S 1229, I 4; 2 word-clean)
 - residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
 - residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; mssEC 18 read by text with both books, aligned to OR, possessive and guard applied (RUN3-ECK62: 6/9 collisions removed, 0/198 false guards); white, animals, Hotel and the Lehigh / weigh conflicts stay open; next: image-reconcile those entries (9765.139, 9911.425, 10010.593, 9947.505, 10020.609, 9965.539) with the eckert-1864 method, ~$4
-- 79 print-free-assigned mssEC 18 entries, reading with the assigned book - blocker: not-attempted; the brief named only the assignment (RUN6-ECK62, ec18/assign_free.tsv); next: an ec18.py option to read `1f`/`2f` entries with the assigned key and list fully keyed ones (book grade S), ~$1
+- 77 print-free-assigned mssEC 18 entries read with the assigned book but not word-clean (oov > 0; RUN6-ECK62R, ec18/readings_free.tsv) - blocker: not-attempted; read by text only, no print or image check in the brief (RUN6-ECK62R); next: print-check the 2 word-clean readings (9910.423, 9971.546) against OR ser. I vols. 41-46 with ec18.py's matcher, and image-reconcile the 16 entries with oov <= 2, ~$2
 - 113 mssEC 18 entries still '?' (margin < 2 under both instruments) - blocker: not-attempted; no pre-registered rule decides them (RUN6-ECK62, ec18/assign_free_summary.tsv); next: same rule at margin 1 is not pre-registered and would need its own known-answer precision; or the image (marker words the volunteer text may have dropped), within the image-check step, ~$4
 
 ## Escalation (RUN6-ECK62, 5 Oct 2026)
