@@ -290,3 +290,8 @@ numeric nomenclator like the 1650 one, the printed italics are known plaintext o
 (GD406, NRS) -- the print gives no cipher figures. Next: (1) check the 1932 volume's index for 1650 entries and for "cipher"
 (the owner or a be-api fts search, ~$0.5); (2) compare the clear numbers 143/571/229 with the 1650 groups (163, 122, 223, 132
 ...): no overlap in these three. L7 answered for pp.70-74.
+Search-inside "cipher" in the same loan (5 Oct 2026 04:03 UTC, owner): 3 hits only -- p.70 and p.72 (above) and the introduction p.n11. No 1650 hit
+for "cipher". p.n11 (lead, not this target): an 18th-century agreement with James MacKenzie to inventory the Hamilton Palace
+muniments; he describes "searching out the keys to Ralph Sadler's cipher and making a key to Sir Francis Walsingham's" -- an
+18th-century key to Walsingham's cipher made from the Hamilton papers (now NRS GD406). Logged also in bowes-walsingham-1583.
+Spelling "cypher" and the word "1650" not yet searched in this volume.

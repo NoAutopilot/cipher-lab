@@ -625,3 +625,12 @@ Gowrie), "54" and "85" ("an especial favour and good liking of \"54,\" and chief
 only what was in clear or numeric; the sign-cipher stretches are blanks. Result for this target: no printed decipherment of
 the Cotton cipher signs in either CSP entry (389, 584); the CSP gives the clear context around each blank (useful as cribs:
 the blanks' positions are now known in the calendar's paraphrase). 85 is still unread. Screenshots private (csp-vi/).
+
+## Lead: an 18th-century key to Walsingham's cipher in the Hamilton papers (5 Oct 2026 04:03 UTC)
+
+HMC Supplementary Report on the Hamilton MSS (1932), introduction p.n11 (owner's search-inside of archive.org
+supplementaryrep0000grea): James MacKenzie, inventorying the Hamilton Palace Charter House (note of 1762), reports "searching
+out the keys to Ralph Sadler's cipher and making a key to Sir Francis Walsingham's" while reading "the twelve volumes of State
+Papers on the affairs of England and Scotland in the reigns of King James V and his daughter Queen Mary". Whether that key
+covers the Bowes/Cary system of 1583 is unknown; it would be a reconstruction (MacKenzie's own), not a period key. Next: NRS
+catalogue search of GD406 for MacKenzie / Walsingham / key / cipher (~$1, a worker); not yet done.
