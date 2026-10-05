@@ -14,3 +14,12 @@ tx86e/passA.tsv {'tokens': 538, 'dropped': 5, 'decoded_letters': 707, 'score': 0
 tx86e/passB.tsv {'tokens': 540, 'dropped': 7, 'decoded_letters': 695, 'score': 0.659, 'keyshuffle_p99': 0.4661, 'order_p99': 0.4921, 'above_both': True}
 pis1key/tx_relabel/tx86e_ciphertext_f275r.tsv {'tokens': 554, 'dropped': 7, 'decoded_letters': 717, 'score': 0.6569, 'keyshuffle_p99': 0.4669, 'order_p99': 0.4965, 'above_both': True}
 pis1key/tx_relabel/tx86e_passA.tsv {'tokens': 538, 'dropped': 5, 'decoded_letters': 707, 'score': 0.6393, 'keyshuffle_p99': 0.466, 'order_p99': 0.4936, 'above_both': True}
+# RUN6-PIS 5 Oct 2026: pis1key/relabel_f275r.py (f.275r half, unchanged logic), full output:
+tx86e/ciphertext_f275r.tsv {'tokens': 554, 'dropped': 7, 'decoded_letters': 717, 'score': 0.6471, 'keyshuffle_p99': 0.4678, 'order_p99': 0.4965, 'above_both': True}
+tx86e/passA.tsv {'tokens': 538, 'dropped': 5, 'decoded_letters': 707, 'score': 0.6308, 'keyshuffle_p99': 0.468, 'order_p99': 0.488, 'above_both': True}
+tx86e/passB.tsv {'tokens': 540, 'dropped': 7, 'decoded_letters': 695, 'score': 0.659, 'keyshuffle_p99': 0.4661, 'order_p99': 0.4921, 'above_both': True}
+pis1key/tx_relabel/tx86e_ciphertext_f275r.tsv {'tokens': 554, 'dropped': 7, 'decoded_letters': 717, 'score': 0.6569, 'keyshuffle_p99': 0.4669, 'order_p99': 0.4965, 'above_both': True}
+pis1key/tx_relabel/tx86e_passA.tsv {'tokens': 538, 'dropped': 5, 'decoded_letters': 707, 'score': 0.6393, 'keyshuffle_p99': 0.466, 'order_p99': 0.4936, 'above_both': True}
+pis1key/tx_relabel/tx86e_passB.tsv {'tokens': 540, 'dropped': 7, 'decoded_letters': 695, 'score': 0.6691, 'keyshuffle_p99': 0.4598, 'order_p99': 0.4979, 'above_both': True}
+pis1key/tx_relabel/tx86e_ciphertext_f275r_mergecut.tsv {'tokens': 551, 'dropped': 7, 'decoded_letters': 714, 'score': 0.6597, 'keyshuffle_p99': 0.4684, 'order_p99': 0.5, 'above_both': True}
+f275r control 5 /5

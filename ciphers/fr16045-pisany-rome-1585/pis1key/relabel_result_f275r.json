@@ -1,0 +1,126 @@
+{
+ "f275r": {
+  "err": 0.215,
+  "old": {
+   "tx86e/ciphertext_f275r.tsv": {
+    "tokens": 554,
+    "dropped": 7,
+    "decoded_letters": 717,
+    "score": 0.6471,
+    "keyshuffle_p99": 0.4678,
+    "order_p99": 0.4965,
+    "above_both": true
+   },
+   "tx86e/passA.tsv": {
+    "tokens": 538,
+    "dropped": 5,
+    "decoded_letters": 707,
+    "score": 0.6308,
+    "keyshuffle_p99": 0.468,
+    "order_p99": 0.488,
+    "above_both": true
+   },
+   "tx86e/passB.tsv": {
+    "tokens": 540,
+    "dropped": 7,
+    "decoded_letters": 695,
+    "score": 0.659,
+    "keyshuffle_p99": 0.4661,
+    "order_p99": 0.4921,
+    "above_both": true
+   }
+  },
+  "new": {
+   "pis1key/tx_relabel/tx86e_ciphertext_f275r.tsv": {
+    "tokens": 554,
+    "dropped": 7,
+    "decoded_letters": 717,
+    "score": 0.6569,
+    "keyshuffle_p99": 0.4669,
+    "order_p99": 0.4965,
+    "above_both": true
+   },
+   "pis1key/tx_relabel/tx86e_passA.tsv": {
+    "tokens": 538,
+    "dropped": 5,
+    "decoded_letters": 707,
+    "score": 0.6393,
+    "keyshuffle_p99": 0.466,
+    "order_p99": 0.4936,
+    "above_both": true
+   },
+   "pis1key/tx_relabel/tx86e_passB.tsv": {
+    "tokens": 540,
+    "dropped": 7,
+    "decoded_letters": 695,
+    "score": 0.6691,
+    "keyshuffle_p99": 0.4598,
+    "order_p99": 0.4979,
+    "above_both": true
+   }
+  },
+  "descriptive_mergecut": {
+   "pis1key/tx_relabel/tx86e_ciphertext_f275r_mergecut.tsv": {
+    "tokens": 551,
+    "dropped": 7,
+    "decoded_letters": 714,
+    "score": 0.6597,
+    "keyshuffle_p99": 0.4684,
+    "order_p99": 0.5,
+    "above_both": true
+   }
+  },
+  "positive_control": {
+   "seeds": [
+    {
+     "seed": 0,
+     "N": 717,
+     "score": 0.6552,
+     "keyshuffle_p99": 0.4578,
+     "order_p99": 0.4601,
+     "pass": true
+    },
+    {
+     "seed": 1,
+     "N": 717,
+     "score": 0.7392,
+     "keyshuffle_p99": 0.4483,
+     "order_p99": 0.4553,
+     "pass": true
+    },
+    {
+     "seed": 2,
+     "N": 717,
+     "score": 0.6853,
+     "keyshuffle_p99": 0.4494,
+     "order_p99": 0.4487,
+     "pass": true
+    },
+    {
+     "seed": 3,
+     "N": 717,
+     "score": 0.6831,
+     "keyshuffle_p99": 0.453,
+     "order_p99": 0.4573,
+     "pass": true
+    },
+    {
+     "seed": 4,
+     "N": 717,
+     "score": 0.6814,
+     "keyshuffle_p99": 0.4534,
+     "order_p99": 0.4622,
+     "pass": true
+    }
+   ],
+   "passed": 5,
+   "pass": true
+  },
+  "supported": true,
+  "would_be_identical": {
+   "tokens_with_new_label": 14,
+   "identical": 10,
+   "note": "counts all tokens now carrying the new label, incl. ones that already had it"
+  }
+ }
+}
