@@ -60,6 +60,11 @@ Pipeline (CLAUDE.md rules 3, 4, 7; LANE KX job briefs 2026-09-25, jobs 1 and 1b)
      --calibrate on the verified readings (VERIFIED_PAIRS): stat = max(z 4-gram, z value-frequency) against 20
      class-shuffled-value keys, hit when stat >= the gate on a ciphertext of >= MIN_TOKENS tokens with coverage
      >= 0.5, 'short' when it clears on a shorter text. Numbers and caveats: KEY-CROSSMATCH.md, KEY-CROSSMATCH-CAL.tsv.
+  9. (N9-XMFIX, 5 Oct 2026.) Key files whose own name says shuf/control/null are dropped (KEY_NAME_EXCLUDE), and a
+     non-own row over the gate is reported or posted as a lead only after pair_lead_null(): 200 in-class
+     shuffled-key draws (S must beat their p99) and 200 order-shuffled ciphertexts (the 4-gram z must beat their
+     p99). The gate is ~1% per pair; ~815 pairs a night gave ~8 noise rows (N9-XM). --lead-draws 0 skips it.
+     Test: tools/tests/test_key_crossmatch_leadnull.py.
 
 Output: KEY-CROSSMATCH.tsv (all pairs with coverage >= 0.5, plus the forced known/negative pairs and the
 positive-control rows) and KEY-CROSSMATCH.md (method, positive-control table, hit list, at most 50 lines).
@@ -77,6 +82,11 @@ CIPHERS = ROOT / 'ciphers'
 DATA = TOOLS / 'data'
 
 KEY_EXCLUDE = ['draft', 'candidate', 'atlas', 'pass', 'conflicts', 'counts', 'align', 'crosscheck', 'trial']
+# N9-XMFIX, 5 Oct 2026: a key FILE NAME (basename only, so a real key that merely sits in a control_* folder,
+# e.g. fr15575-syllabic-1592-95/control_fr3641/key_syllabary.tsv, is kept) naming a shuffled/control/null key is a
+# rule-3 control, never a candidate: the 5 Oct 02:53 nightly posted clair1161's pool/key_shuf3_s1 and
+# two/key_shuf4_s1 as leads on decode-1168 (N9-XM). Not added to CT_EXCLUDE's substring list on purpose.
+KEY_NAME_EXCLUDE = re.compile(r'shuf|control|null', re.I)
 # 27 Sept 2026: synthetic control ciphertexts (rule-3 controls under a target's control/ or controls/
 # folder, seedN/ subfolders) are never targets; the first nightly run scored fr7129's key_f275 against
 # matignon-mayenne-1586/control/seed1-3 at 3.32 and reported three false leads.
@@ -257,7 +267,7 @@ def find_key_files():
     kept, dropped = [], []
     for p in found:
         rel = str(p.relative_to(ROOT))
-        hit = excluded(rel, KEY_EXCLUDE)
+        hit = excluded(rel, KEY_EXCLUDE) or key_name_excluded(p)
         (dropped if hit else kept).append((p, hit) if hit else p)
     for extra in EXTRA_KEY_FILES:
         p = ROOT / extra
@@ -270,9 +280,15 @@ def find_key_files():
         if p.name in EXTRA_GLOB_SKIP_NAMES:
             continue
         rel = str(p.relative_to(ROOT))
-        hit = excluded(rel, KEY_EXCLUDE)
+        hit = excluded(rel, KEY_EXCLUDE) or key_name_excluded(p)
         (dropped if hit else kept).append((p, hit) if hit else p)
     return kept, dropped
+
+
+def key_name_excluded(path):
+    """['KEY_NAME_EXCLUDE:<match>'] when the key file's own name marks it a shuffled/control/null key, else []."""
+    m = KEY_NAME_EXCLUDE.search(Path(path).name)
+    return [f'KEY_NAME_EXCLUDE:{m.group(0).lower()}'] if m else []
 
 
 def find_ciphertext_files():
@@ -1188,6 +1204,70 @@ def fp_rate(stat_min, null_stats):
     return k, n
 
 
+LEAD_DRAWS = 200   # N9-XMFIX: per-pair null draws before a gated non-own row is reported as a lead
+
+
+def _p99(xs):
+    xs = sorted(x for x in xs if x is not None)
+    return xs[min(len(xs) - 1, int(0.99 * len(xs)))] if xs else None
+
+
+def pair_lead_null(key, signs, model, n_draws=LEAD_DRAWS, seed=0):
+    """Per-pair null for one gated row (N9-XMFIX, 5 Oct 2026; ported from research/n9xm/xmatch_pair_null.py, N9-XM).
+
+    Why: the calibrated gate is a ~1% false-positive rate PER PAIR; a nightly sweep scores ~815 pairs, so about 8
+    noise rows clear it every night (all four 5 Oct leads were false, N9-XM). Before a row is reported as a lead
+    it must beat, on its own key and its own ciphertext:
+      (a) in-class: the gated stat S (pair_stats' own stat, 20 class-shuffled keys, seed 0 -- the sweep's own
+          number) > the 99th percentile of S over n_draws keys whose values are shuffled within value class
+          (shuffled_key_by_class, draws seeded 1..n_draws) -- the same statistic recomputed for each null key;
+      (b) order: the 4-gram z on the true token order > the 99th percentile of the same z on n_draws
+          order-shuffled copies of the ciphertext (same key). A frequency coincidence (a key whose frequent
+          codes happen to carry frequent letters) scores as well on shuffled order; a reading does not.
+    Returns dict(S, z_ng, p99_inclass, p99_order_zng, pass_inclass, pass_order, survives, why).
+
+    Scope (CLAUDE.md Usage 8a), each backed by tools/tests/test_key_crossmatch_leadnull.py:
+      must DROP   a class-shuffled copy of a true key scored on that key's ciphertext (the clair1161 key_shuf* shape);
+      must KEEP   a true letter-valued key on its own ciphertext of a few hundred tokens.
+    Not meant to judge: a whole-word nomenclator whose evidence is value frequency only (z_vf is order-invariant, so
+    the order check can drop it on a short text) -- such a row is printed as dropped with its reason, never silently
+    discarded, and stays readable by eye from KEY-CROSSMATCH.tsv."""
+    def S(k, sg):
+        own = pair_stats(k, sg, model, n_shuffle=20, seed=0)['own']
+        return own['stat'], own['z_ng']
+    s0, z0 = S(key, signs)
+    inclass, order_z = [], []
+    for i in range(1, n_draws + 1):
+        r = random.Random(seed + i)
+        inclass.append(S(shuffled_key_by_class(key, r), signs)[0])
+        sg = list(signs); r.shuffle(sg)
+        order_z.append(S(key, sg)[1])
+    p_in, p_or = _p99(inclass), _p99(order_z)
+    pass_in = s0 is not None and p_in is not None and s0 > p_in
+    pass_or = z0 is not None and p_or is not None and z0 > p_or
+    why = []
+    if not pass_in:
+        why.append(f'S {s0 if s0 is None else round(s0, 3)} <= in-class p99 {p_in if p_in is None else round(p_in, 3)}')
+    if not pass_or:
+        why.append(f'z4gram {z0 if z0 is None else round(z0, 3)} <= order-shuffled p99 {p_or if p_or is None else round(p_or, 3)}')
+    rnd3 = lambda v: None if v is None else round(v, 3)
+    return dict(S=rnd3(s0), z_ng=rnd3(z0), p99_inclass=rnd3(p_in), p99_order_zng=rnd3(p_or), pass_inclass=pass_in,
+                pass_order=pass_or, survives=pass_in and pass_or, why='; '.join(why) or 'beats both', n_draws=n_draws)
+
+
+def lead_null_for_row(row, res, n_draws=LEAD_DRAWS):
+    """pair_lead_null for one KEY-CROSSMATCH row, using the sweep's own loaded key, ciphertext and language model."""
+    km = next(((k, m) for _, k, m in res['key_metas'] if m['path'] == row['key_path']), None)
+    c = next((c for c in res['ct_metas'] if c['path'] == row['ciphertext_path']), None)
+    if km is None or c is None:
+        return dict(survives=False, why='key or ciphertext not in this sweep')
+    key, meta = km
+    model = get_model(meta['lang'], exclude_folder=c['folder'], corpora_map=res['corpora_map'])
+    if model is None:
+        return dict(survives=False, why='no corpus')
+    return pair_lead_null(key, c['signs'], model, n_draws=n_draws)
+
+
 def choose_gate(verified, null_stats, target_reject=0.99):
     """verified: list of dicts with stat, n_tokens, coverage (tier 'verified' only); null_stats: the null draws'
     stats from pairs in the gated stratum. Returns the gate for the stratum n_tokens >= MIN_TOKENS and
@@ -1540,9 +1620,12 @@ def relation(row):
 
 def room_line(row, gate):
     """ROOM.md signal text for one gated row (nightly mode posts one per hit/short, most first)."""
+    ln = row.get('_lead_null')
+    extra = (f" per-pair in-class p99 {ln['p99_inclass']}, z4gram {ln['z_ng']} vs order-shuffled p99 "
+             f"{ln['p99_order_zng']}" if ln and 'p99_inclass' in ln else '')
     return (f"for the parent: xmatch {row['gate_verdict']} ({relation(row)}): {row['key_path']} reads "
             f"{row['ciphertext_path']} stat={row['stat']} (gate {gate['stat_min']}, null p99 "
-            f"{gate['null_stat_p99']}) cov={row['coverage']} n={row['n_tokens']} -- read by eye before any claim")
+            f"{gate['null_stat_p99']}){extra} cov={row['coverage']} n={row['n_tokens']} -- read by eye before any claim")
 
 
 def main(argv=None):
@@ -1556,6 +1639,9 @@ def main(argv=None):
                     help='nightly mode with REF = the last origin/main commit at least H hours old')
     ap.add_argument('--post-room', action='store_true',
                     help='post each non-own hit/short to ROOM.md via tools/room.py (nightly routine)')
+    ap.add_argument('--lead-draws', type=int, default=LEAD_DRAWS,
+                    help=f'per-pair null draws before a row over the gate is reported as a lead (default {LEAD_DRAWS}; '
+                         '0 skips the check)')
     a = ap.parse_args(argv)
     if a.calibrate:
         gate, rows, skipped = calibrate()
@@ -1586,14 +1672,29 @@ def main(argv=None):
     n_ok = sum(1 for pc in res['pos_control'] if pc['ok'])
     n_total = sum(1 for pc in res['pos_control'] if pc['ok'] is not None)
     gated = [r for r in sorted_rows if r.get('gate_verdict') in ('hit', 'short')]
-    leads = [r for r in gated if relation(r) not in ('own', 'same folder')]
+    over_gate = [r for r in gated if relation(r) not in ('own', 'same folder')]
+    # N9-XMFIX: a row over the per-pair gate is a lead only if it also beats its own per-pair nulls
+    # (pair_lead_null); with --lead-draws 0 the check is skipped and every row over the gate is reported (old behaviour)
+    leads, dropped = [], []
+    for r in over_gate:
+        if a.lead_draws <= 0:
+            leads.append(r); continue
+        r['_lead_null'] = lead_null_for_row(r, res, n_draws=a.lead_draws)
+        (leads if r['_lead_null']['survives'] else dropped).append(r)
+    res['over_gate'], res['leads'], res['dropped_leads'] = over_gate, leads, dropped
     if not a.quiet:
         print(f"gate: stat >= {gate['stat_min']} (n >= {gate['min_tokens']}, cov >= {gate['min_coverage']}); "
               f"own-text pairs ranked first and clearing it: {n_ok} of {n_total}; non-own rows clearing it: "
-              f"{sum(1 for r in leads if r['gate_verdict'] == 'hit')} hit, "
-              f"{sum(1 for r in leads if r['gate_verdict'] == 'short')} short")
+              f"{sum(1 for r in over_gate if r['gate_verdict'] == 'hit')} hit, "
+              f"{sum(1 for r in over_gate if r['gate_verdict'] == 'short')} short")
+        if a.lead_draws > 0:
+            print(f"per-pair nulls ({a.lead_draws} draws, in-class shuffled-key p99 + order-shuffled z4gram p99): "
+                  f"{len(leads)} of {len(over_gate)} survive as leads, {len(dropped)} dropped")
         for r in leads:
             print('  ' + room_line(r, gate))
+        for r in dropped:
+            print(f"  dropped (per-pair null): {r['key_path']} on {r['ciphertext_path']} stat={r['stat']} -- "
+                  f"{r['_lead_null']['why']}")
         if since is None:
             fp = res['neg_false_positives']
             print(f"negative pairs: {len(fp)} of {len(res['neg_scored'])} scored cleared the gate (false positives)")
