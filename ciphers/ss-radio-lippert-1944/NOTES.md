@@ -131,7 +131,7 @@ $ python3 tools/next_steps.py --wait-only | grep ss-radio-lippert-1944
 
 next: find Gnegel's 2021 eBay specimen (ebay.de item 284276746819, Wayback CDX) and other "chiffrierter Funkspruch 1944" listings from the same seller and compare their cipher groups with ours (identical or shuffled groups would settle the souvenir-forgery question), ~$1. Who acts: agent. Source: this file's "## While waiting (GF4-BATCH18)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
 
-## Second-specimen search (D2B-LIPP, account 2, 5 Oct 2026, 23:51-00:0x UTC, for LANE DEFAULT-account-2-20261005-2217)
+## Second-specimen search (D2B-LIPP, account 2, 5 Oct 2026, 23:51-23:56 UTC, for LANE DEFAULT-account-2-20261005-2217)
 
 Job: find Gnegel's 2021 eBay specimen (ebay.de item 284276746819) and other "chiffrierter Funkspruch 1944" listings, and compare cipher groups with ours. **Result: no image or transcription of any second specimen was reachable, so no group comparison could be made.** Authenticity question unchanged; status stays open (rule 5).
 
