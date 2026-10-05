@@ -1,4 +1,4 @@
-# LANE-VER1 (account 2) -- 5 Oct 2026 17:3x UTC (account-3 orchestrator; owner: "lets get things fired back up")
+# LANE-VER1 (account 2) -- 5 Oct 2026 17:29 UTC (account-3 orchestrator; owner: "lets get things fired back up")
 Standing verifier lane. Operating rules as `.claude/briefs/runs/2026-10-04-acct3-lane-near3-run1.md` para 1. Every worker's first
 command: `git fetch origin && git checkout -B main origin/main`. Verifiers are fresh sessions, never the solver of the reading; use the
 CLAUDE.md verifier template (rule 10, depth rule 4a). Opus 5.5 floor.

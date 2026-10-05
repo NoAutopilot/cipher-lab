@@ -1,4 +1,4 @@
-# LANE-SYS1 (account 1) -- 5 Oct 2026 17:3x UTC (account-3 orchestrator; owner: "lets get things fired back up", 5 Oct ~10:30 am PDT)
+# LANE-SYS1 (account 1) -- 5 Oct 2026 17:29 UTC (account-3 orchestrator; owner: "lets get things fired back up", 5 Oct ~10:30 am PDT)
 Operating rules as `.claude/briefs/runs/2026-10-04-acct3-lane-near3-run1.md` para 1. Every worker's first command:
 `git fetch origin && git checkout -B main origin/main`. Write for agents (terse, machine-shaped). Opus 5.5 floor for sessions.
 Process fixes from the parent's 5 Oct review (owner approved). Each tool change: offline test, --help, SYSTEM.md line, Usage 8a docstring.
