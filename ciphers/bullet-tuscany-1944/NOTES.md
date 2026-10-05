@@ -189,3 +189,50 @@ Read so far: 0 of 44 body letters read (0 H, 0 C); header QM and footer 605YZ/FF
 - [ ] image-check: native-resolution read of the press photo (RSUA vs RSUAI), and the forumfree thread for further photographs
 - [x] retry: indicator-system lookup (bBUL3) after the two cheap tests; no system licensed a new test at N=44
 Verdict: keep going: 1 internal gaps; cheapest next: native-resolution image check of the photo + forumfree thread fetch, ~$1
+
+## N9-BUL (5 Oct 2026, 05:19-05:30 UTC): native-resolution photo check + forumfree thread fetch
+
+Image: `images/Bullet-Cipher.png`, fetched once from Cipherbrain (scienceblogs.de/klausis-krypto-kolumne/files/2015/02/Bullet-Cipher.png),
+821x633 px, 567,718 bytes -- the largest rendition found; crops and boxes in `images/manifest.json`. Gizmodo's 2015 article (fetched once)
+no longer carries the press photo: its image URL now serves an unrelated 2020 picture (discarded). So the image check is limited to this
+821 px press copy (rule 2: every reading below is conditional on it).
+
+Sign-by-sign check against Schmeh's transcription (own eye on 2-6x crops, plus one blind Sonnet reader on the last group only):
+- Body, 44 letters `CBFUK YYEVO ZILOO ZVNCW JKQRS AWBYZ UGYTZ WYBAT RSUA`: every one of the 44 letters agrees with the photo. No correction.
+- Last group, the "RSUA / RSUAI" dispute (second-opinion lead 4): the photo has **no** character after the A, only a dot at the A's lower
+  right and then stain (own eye; blind reader agrees: "only a brown stain and fold, with no written character"). There **is** a faint
+  mark *before* the R, at the position where a 5-letter group would begin: a short dark vertical tick with a small cross-stroke near its
+  top, running down into a pale brown blotch (`crops/l4_firstmark_x6.png`). Own eye: possibly a letter (I or T); blind reader: "probably
+  stain/damage", ink confidence about 0.3, candidates I, T, 1, L. Graded M. If it is a letter, the body is 45 letters in nine full
+  5-letter groups (`?RSUA`), which is the one structural argument for it; the photo cannot settle this. atoponce's `RSUAI` (extra letter
+  *after* A) is not supported by this image; the 45-letter hypothesis, if kept, is `?RSUA` (extra letter before R).
+- `ZILOO`: the first O carries a fainter overlapping stroke on its left (`crops/l2_ziloo_x5.png`) -- possibly an overwrite/correction or
+  a crease; the O itself is clear. Reading unchanged, noted M for the stroke.
+- Header: `QM` plus a date `8/13/4` with the final digit under a stain (`crops/l1_header.png`); "44" (spec) is inferred from context for
+  the last digit, not read. Month/day order (8/13) is noted in passing; not interpreted further here.
+- Footer `605YZ/FF`: reading agrees; the 0 is crossed by a diagonal stroke that runs below the line (`crops/l5_605_x6.png`) --
+  a slashed zero or a struck-out digit, not decidable at this resolution.
+Corrections list: none to the 44-letter reading; one added uncertain sign (`?` before RSUA, M); RSUAI rejected as placed.
+
+Forumfree thread (`metaldetector.forumfree.it/?t=70205379`, provenance lead 1): curl with a bare browser UA -> HTTP 503 "Your request has
+been blocked ... user agent Mozilla/5.0" (a UA filter, not a challenge); single retry with `tools/browser_fetch.js` -> redirected to
+`accounts.forumfree.it/?act=Login` (login wall; nothing of the thread visible). Stopped there per the good-citizen rule; no login attempted,
+the saved login page deleted, not committed. Nothing in this job bears on status: no claimed solution, no better image, no provenance found.
+Requests: scienceblogs.de 1, gizmodo.com 2, forumfree.it 2 (1 curl + 1 browser). Subagent calls: 1 (Sonnet, blind read of the last group).
+Suggestion (Usage 7, not done): the thread is readable only behind a ForumFree account; a person with one could read it and the
+2015 Reddit thread for a higher-resolution photo -- that is the only route left to settle the `?RSUA` mark short of the object itself.
+
+## Remaining gaps (N9-BUL, 5 Oct 2026)
+Read so far: 0 of 44 body letters read (0 H, 0 C); header QM and footer 605YZ/FF unread except as readers' guesses. Transcription checked letter by letter against the 821 px press photo (N9-BUL): 44 confirmed, one possible 45th sign before RSUA at grade M.
+- 44-letter body under periodic keys (period 2-8) and machine systems (M-209 by structure) - blocker: too-short; family_run.py periodic_vigenere control 5.3-6.1% against gate 0.6 at N=44 (NEAR.md row, cheap_test_done 2), and 44 letters are too few to test M-209 pins/lugs (cheap_test_done 1)
+- the possible 45th sign before RSUA (I/T or stain) and any further photographs or findspot record - blocker: needs-physical-access; the only public image is an 821 px press copy (N9-BUL), the Gizmodo copy is gone and the association's forumfree thread is behind a ForumFree login wall; the object or an original photograph held by the finders settles it
+
+## Escalation (N9-BUL, 5 Oct 2026)
+- [n/a] siblings: no companion slip reported in any source read (second-opinion lead 3)
+- [n/a] clear-pages: single slip, no clear text or addressee series exists
+- [x] known-keys: header/footer-derived keys and Caesar excluded with passing control (cheap_test_done 2)
+- [n/a] print: a 2015 find, no printed edition or calendar exists (Web and blog check)
+- [n/a] key-rebuild: no decipherment, key list or period material to rebuild from
+- [x] image-check: N9-BUL read the 821 px press photo sign by sign (44 confirmed, ?RSUA mark at M, RSUAI not supported); forumfree thread login-walled
+- [x] retry: indicator-system lookup (bBUL3) after the two cheap tests; no system licensed a new test at N=44
+Verdict: parked: every gap has an outside blocker

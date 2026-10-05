@@ -1,0 +1,14 @@
+{
+  "fetched": "5 Oct 2026, 05:19 UTC, N9-BUL (LANE-NEAR9, account 2)",
+  "files": [
+    {"file": "Bullet-Cipher.png", "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/02/Bullet-Cipher.png",
+     "size_px": "821x633", "bytes": 567718, "note": "Cipherbrain post 44 press photo; largest copy found on the host (no larger rendition linked). Gizmodo's 2015 article image is no longer served (its og-image URL now returns an unrelated 2020 picture, checked 5 Oct 2026)."},
+    {"file": "crops/l1_header.png", "from": "Bullet-Cipher.png", "box": "0,0,821,110", "scale": 2},
+    {"file": "crops/l2.png", "from": "Bullet-Cipher.png", "box": "0,200,821,280", "scale": 2},
+    {"file": "crops/l3.png", "from": "Bullet-Cipher.png", "box": "0,300,821,370", "scale": 2},
+    {"file": "crops/l4.png", "from": "Bullet-Cipher.png", "box": "0,380,600,460", "scale": 2},
+    {"file": "crops/l4_tail.png", "from": "Bullet-Cipher.png", "box": "560,380,821,460", "scale": 3},
+    {"file": "crops/l4_firstmark_x6.png", "from": "Bullet-Cipher.png", "box": "590,385,680,450", "scale": 6, "note": "greyscale autocontrast cutoff 2"},
+    {"file": "crops/l5_footer.png", "from": "Bullet-Cipher.png", "box": "40,530,420,610", "scale": 3}
+  ]
+}
