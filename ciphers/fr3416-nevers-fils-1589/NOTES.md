@@ -348,7 +348,7 @@ Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (
 - L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; glyph-atlas route tried once (A1B-FILS-L05): non-test at its own pre-registered class gate, since no H token on f.35r contains a 0 (class 0 has 0 exemplars, gate >= 3), and pos 15-16 fuse into one segmented box; next: re-register the atlas test with exemplars of this hand's 0 from a second leaf (the Nevers fils letters' other figure runs, once one is H-graded) or with the 8-vs-'01' question posed as one looped-8 box against the H 8 class and a joined 0+1 synthetic, then classify pos 5/13/17/20 (single boxes), ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
-- upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON) and blind-checked twice on 1100-px word windows (A1B-FILS-UPPER, Sonnet; A1B-FILS-UPPER2, Opus): 251 words H, 43 M, 23 U; the Opus reader got 0 of 6 H control words right (gate 5/6), so neither check is a test of the readings - blocker: not-attempted; the word-window instrument is the limit (both models fail H words in it), not the model; next: a different instrument, the whole FILS-UPPER line strips (images/f43u_Lnn_s1/_s2, the material the two reads that did read this hand used) for the rows holding M/U words to one blind Opus pass C, controls scored on the H words of the same lines, ~$6
+- upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON); 251 words H, 43 M, 23 U - blocker: illegible; to every machine reader tried, measured by its own hidden H-word control: 1100-px word windows to Sonnet (A1B-FILS-UPPER, reads H neighbours wrong) and to Opus (A1B-FILS-UPPER2, 0/6 vs gate 5/6), then whole 2400-px line strips to Opus (DEF1-F3416, 5 Oct 2026, 1/6 vs gate 5/6, verify/upper_strips/): both instruments retired under rule 3's third-attempt clause; the M/U words need a person reading the hand (a palaeographer, or the owner on the strips images/f43u_*), not a fourth machine pass
 
 (Novelty N3 -> N4 settled: N4 set by A1B-VERIFY-FILS-N4b, 3 Oct 2026, AUDIT.md "Third audit".)
 
@@ -359,8 +359,8 @@ Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
-- [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved
-Verdict: keep going: 2 internal gaps (2 more illegible); cheapest next: the upper letter's M/U rows as whole line strips to one blind Opus pass C, ~$6
+- [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved; whole line strips of the upper letter to a blind Opus pass C (DEF1-F3416, 5 Oct 2026): 1/6 H controls (gate 5/6), non-test, 0 tokens moved, line-strip instrument retired
+Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the L05 glyph-atlas test re-registered without class 0 (pos 5/13/17/20), ~$3
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -682,3 +682,24 @@ window is the limit, not the model. The window instrument is retired for this ch
 strips (the material FILS-UPPER's two Opus passes did read), not a third model on the same windows.
 AUDIT.md and SECOND-OPINIONS-QUEUE.tsv quote no word counts (grep, 18:38 UTC): nothing to propagate; N4 unchanged.
 Not found in print: nothing searched (transcription job).
+
+## DEF1-F3416 results (account 1 for LANE DEFAULT-account-1-20261005-2039, 5 Oct 2026, 21:05-21:1x UTC)
+
+Intake gate 21:07 UTC: `fr3416-nevers-fils-1589: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Pre-registration `PREREG-DEF1F3416.md` (commit 9b17e7267, pushed before any read). Crop step re-run and pasted there
+(`tools/iiif_lines.py --image ...f43_3550_420_3550_3260.jpg --prefix f43u`: 26 lines x 2 segments, byte-identical to the
+committed strips). Twelve 2400-px line-strip segments holding 30 of the 52 M/U tokens (U03, U07, U09, U11, U12, U13, U17,
+U18, U20, U24, U25, B11) went under neutral names s01-s12 to three blind Opus subagent calls of 4 strips each, no row text,
+candidates or grades. Reads verbatim: `verify/upper_strips/blind_reads.tsv`; map `blind_map.tsv`. 10 of 12 strips came back L.
+**Control gate: 1 of 6 hidden H words right (gate >= 5/6)** (`verify/upper_strips/controls_scored.tsv`): U13 "chascun" right;
+B11 "reste", U25 "estat", U18 "desia" (read "dieu"), U12 "affin" ("a[...]"), U11 "estoit" missed. **Non-test: no grade moves**
+(words H 251 / M 43 / U 23, tokens M 37 / U 24, unchanged; `clear_f35r.tsv` and `reading_f35r.txt` not edited).
+For the record only, not used: the reader agrees with some M words where it does read ("cognoistre" U03, "fait" U07,
+"ultimi"~{ultime} U20, "Bu[?]ly"~{Buzy} U09, "ce a" B11, "zeuitu-"~{servitu-} U25) and gives "Ernolit" for the struck
+word in U13 and the H name in U09 ("d'Ernolit" for "d' Tremolit").
+Rule 3 reading: three instruments-by-model on the same hand (Sonnet windows, Opus windows, Opus line strips) each fail their own
+H controls; the FILS-UPPER passes that produced the reading were two Opus reads plus a reconciliation, and their pooled agreement
+was 0.442, so the machine read of this hand is at its limit. The line-strip instrument is retired for this check; the next step for
+the M/U words is a person's read (gap list above). AUDIT.md and SECOND-OPINIONS-QUEUE.tsv quote no upper-letter word counts:
+nothing to propagate. Vision: 3 Opus subagent calls (12 strips), 0 own looks. Requests: 0 network (local source re-cut).
+Not found in print: nothing searched (transcription check only).
