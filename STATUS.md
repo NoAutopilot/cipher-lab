@@ -4359,5 +4359,5 @@ Brief: .claude/briefs/runs/2026-10-05-acct3-lane-sys1.md. Four workers (Opus 5.5
 - Job 4 small fixes (SYS1-SF, d70367ccc): AN/FranceArchives ladder row; lq_answer_check no longer reads a repo filename as a host;
   L11 + L42 landed (PR 67 already closed; only L54, blocked, stays off main); TX-AGREEAUDIT, TX-ALTS, LANE-NEAR5/8/9 done;
   work_queue --check malformed 4 -> 0; system_map_check fixed (IMAGES-AUDIT-2026-10-03.tsv row).
-LANE-VER1 (account 2) still queued at 18:2x for the account-2 dispatcher.
+LANE-VER1 (account 2) claimed by the account-2 dispatcher before this close.
 
