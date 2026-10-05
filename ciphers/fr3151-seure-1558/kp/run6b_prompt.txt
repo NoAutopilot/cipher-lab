@@ -1,0 +1,15 @@
+You are reconciling two independent readings of ONE handwritten line of a 1558 French diplomatic cipher (symbols, numerals,
+letter-like shapes). Look at the two image files (left half then right half of the same line; the halves may overlap slightly
+at the join -- do not count overlapping signs twice):
+  {S1}
+  {S2}
+Reader A (labels are the vocabulary to use): {A}
+Reader B (already translated into A's labels where a mapping exists; labels like s9, s10, oe, ca, xx are B's own): {B}
+Label conventions: digits and numerals as written (70, 100, 13 ...); # cross-hatch, #/ struck cross-hatch, ∆ triangle, * star,
++ cross, = double bar, =/ struck double bar, letters as shapes (R, P, W, ff, f/, t/, e/ ... a trailing / means a stroke through
+it), sN are A's ad-hoc shapes. Read the image left to right, sign by sign. For each sign choose A's label, B's label, or, if neither
+fits, a new label n1, n2 ... Use A's vocabulary where B's label means the same shape as an A label.
+Reply with exactly three lines and nothing else:
+SEQ: <signs separated by single spaces>
+SRC: <one of A, B, AB, N per sign, same count as SEQ>
+CONF: <0-1 overall confidence>
