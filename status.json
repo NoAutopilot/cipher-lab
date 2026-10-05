@@ -1948,12 +1948,14 @@
       "completeness": "not given in row",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 1. Verdict'"
+        "AUDIT.md '## 1. Verdict'",
+        "AUDIT.md '## 11. Boyd's cipher asterisks and the F8-F11 placements (VERIFY-BOWES-584, 2 Oct 2026)'",
+        "AUDIT.md '## 13. Re-audit after GAPS59/GAPS60: the numeric code layer has been in print (VERIFY-BOWES, 3 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "bowes-walsingham-1583/AUDIT.md section 1; later sections are follow-up searches and the V-GATE2 reply note, not a second audit"
+      "fields_source": "bowes-walsingham-1583/AUDIT.md section 1 (audit 1, 23 Sept 2026); audit 2 = sections 11 (VERIFY-BOWES-584, 2 Oct) and 13 (VERIFY-BOWES, account 4, 3 Oct 2026: separate verifier sessions, adversarial print search; items A/B N1 unchanged, code layer D1 N0 published Haynes 1992/Stevenson 1842/Boyd 1910); audit_status set by VER1-SYNC 5 Oct 2026; depth not set in AUDIT.md (not a counted result)"
     },
     {
       "date": "20 Sept 2026",
@@ -3061,12 +3063,13 @@
       "completeness": "86/97",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 3. Verdict' (V9-MOR)"
+        "AUDIT.md '## 3. Verdict' (V9-MOR)",
+        "AUDIT.md '# AUDIT 2 (A3V-VN0, 4 Oct 2026)' section 5 Verdict"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "rah-morillo-1817/AUDIT.md section 3; C 86, M 5, U 6 of 97"
+      "fields_source": "rah-morillo-1817/AUDIT.md section 3; C 86, M 5, U 6 of 97; audit 2 = AUDIT.md '# AUDIT 2 (A3V-VN0, 4 Oct 2026)' (account 3, separate session): N0 confirmed, key period with 4 print-aligned signs ours, C 90 / M 7 / U 0 of 97; audit_status set by VER1-SYNC 5 Oct 2026; depth not set in AUDIT.md (not a counted result)"
     },
     {
       "date": "28 Sept 2026",
