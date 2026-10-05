@@ -602,3 +602,14 @@ These are search results only (rule 10).
 Two advancedsearch queries on 5 Oct 2026 returned the same set as on 24 Sept: CSP Scotland vols I, II, IV, VIII, IX, XIII (`calendarstatepa00baingoog`, `CalendarStatePapersMaryQueenOfScotsVol2`, `calendarstatepa00boydgoog`, `calendarofstatep0008vari`, `calendarofstatep08grea`, the XIII.1 item) and Thorpe's 1858 calendar. The second Boyd Google scan, `calendarstatepa02boydgoog` (1903), was not opened; its metadata gives no volume and is dated 1903 (vol. III was published in 1903), not 1910, so it is not vi.
 
 **Vol. vi (Boyd 1910) is still not on IA.** Google Books has already been used for search-within snippets only, not full view (csp6_584_snippets.tsv). The verbatim pp.370-371 and 566-568 **still need HathiTrust** (LOCAL-QUEUE L44, `nnc2.ark:/13960/t1gh9nc18`). Gap 4 is unchanged.
+
+## CSP Scotland vi pp.370-371 page read (5 Oct 2026 03:47 UTC, owner's browser on HathiTrust nnc2.ark:/13960/t1gh9nc18, seq 414-415; LOCAL-QUEUE L44 part 1)
+
+Screenshots in the private repository (bowes-walsingham-1583/csp-vi/). No. 389, Bowes to [Walsingham], 7 Apr 1583, Cott.
+Calig. C. VII fol.196, "4 pp. Holograph. No address or indorsement." The calendar prints the code numbers in quotation marks,
+as the Letter-Book does: "870" x7, "91" x3, "000", "54", and once the editor's own bracket: **"Finds the Queen of England
+[\"32\"] as well resolved to entertain the matter"** -- Stevenson, who had the manuscript, identifies 32 with the Queen of
+England. That is a print identification for 32 (was M on context, above); grade it C (editor's gloss) at the next key pass, not
+changed in codes.tsv by this note. Other editorial brackets gloss pronouns only ("[Bowes and Davison]" on p.370, no. 387;
+"[Walsingham]" after "with him" on p.371, which glosses "him", not "91"). The entry closes: "the errors in the cipher left with
+him by Sir George Cary" -- no decipherment printed. Not yet read: pp.566-568 (31 Jul 1583, LOCAL-QUEUE L44 part 2).
