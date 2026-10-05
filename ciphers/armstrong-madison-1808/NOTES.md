@@ -4106,4 +4106,4 @@ That is a counting-length limit, not a crop limit. Verdict: the crop flags are *
 a near-ceiling baseline). This is not a refutation. Next instrument, if wanted: per-mark segmentation against the owner count page's boxes, or units
 cut short (one line, <= 10 marks), so that the agreement metric has room to move. Flags stay off by default (`--deskew`,
 `--mask-neighbours` are available opt-in). Owner count page generator: none in tools/ (it is `sorter/count/build_count_page.py`),
-so not touched. Five Sonnet calls (4 reads + 0 re-reads), no network.
+so not touched. Four Sonnet calls (the reads), no network.
