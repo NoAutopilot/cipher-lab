@@ -1,0 +1,4 @@
+label	source	digit_fraction	dots_over_figures	divide_sign	letters_mnhf	role
+X	nevers-birago-fr3251-1572 f.178v L02-L06 s1 (no.87, 1572 key)	0.0	n	n	y	negative control
+Y	birago-fr3252 f.100r L02-L06 s1 (Nov 1571 numerical)	0.95	y	n	y	positive control
+Z	nevers-birago-fr3251-1572 f.139v L02-L06 s1 (no.71, f.138 letter)	0.03	n	n	y	target
