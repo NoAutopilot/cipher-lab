@@ -792,3 +792,41 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled by two Sonnet rec
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gap; cheapest next: re-run kp/nom_test.py (same args) with a >= 45 min background timeout to score R2 and write result_run6b.json, ~$0.3
+
+## D2-SEURE: R2 scored under nom_test (5 Oct 2026, 23:01-23:30 UTC by date -u, account 1, LANE DEFAULT-account-1-20261005-2217)
+Re-ran `kp/nom_test.py` unchanged with PREREG-RUN6B.md's registered arguments (`python3 kp/nom_test.py kp/P.txt kp/f81R_recon_R1.tsv
+kp/f81R_recon_R2.tsv kp/result_run6b.json --err 0,0.047,0.095,0.242 --ctl-seeds 3 --ctl-draws 20 --draws 200`), in the background with a
+60-min timeout; it finished in 26 min (23:03-23:29 UTC). No new thresholds. Log: `kp/nom_run6b_rerun.log`; JSON: `kp/result_run6b.json`.
+The script is seeded (`--seed` default 1): the eight control rows and the R1 row are byte-identical to RUN6-SEURE2's `kp/nom_run6b.log`,
+so the earlier numbers reproduce. 0 network requests, 0 subagent calls.
+
+| target | S* | S_r (3 rotations) | shuffled mean / p95 / max | rotated mean / p95 / max | gate |
+|---|---|---|---|---|---|
+| R1 (`f81R_recon_R1.tsv`, 461 signs, 12 word codes) | 0.230 | 0.205, 0.221, 0.230 | 0.226 / 0.246 / 0.269 | 0.226 / 0.246 / 0.249 | **FAIL** |
+| R2 (`f81R_recon_R2.tsv`, 461 signs, 12 word codes) | 0.231 | 0.223, 0.231, 0.196 | 0.225 / 0.248 / 0.265 | 0.226 / 0.243 / 0.253 | **FAIL** |
+
+Control (unchanged, matched to R1): 0%-null arm 3/3 at err 0 and 0.047, 2/3 at E 0.095 and 2/3 at the 0.242 bracket, so the prereg's
+power condition holds and the result counts as a test; the 10%-null arm reads 0/3-1/3 at every error. Both reconciled reads sit inside
+their own null bands (S* within 0.006 of the null mean). The prereg licenses the H-span if R1 OR R2 passes: neither does, so the
+start-anchored f85R clear prefix is not found in the f81R cipher under the nomenclator model as `nom_test.py` defines it. Conditional
+on: the reconciled reads (agreement 0.095, true error unmeasured; the 0.242 control passes by a few hundredths only), no null signs
+(the 10%-null control has no power), this one model and this H-span. Not a design-family negative. No key fragment drafted; key.tsv
+and decode --check not run (the gate governs them). No grades changed; 0 tokens read.
+Not found: any alignment of the f85R clear prefix to either reconciled f81R read above the shuffled or rotated null.
+
+## Remaining gaps (D2-SEURE, 5 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled by two Sonnet reconcilers (err_R 0.095 agreement, kp/run6b_result.json); nom_test R1 and R2 both FAIL with control power (kp/result_run6b.json); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; the 44-clear vs 43-cipher alignment under nom_test FAILs for both reconciled reads with control power (D2-SEURE, kp/result_run6b.json), conditional on no null signs; next: a null-tolerant nom_test setting (null cost about -1) with its own 10%-null matched control first, run on R1/R2 only if that control passes >= 2/3, ~$2
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (D2-SEURE, 5 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [ ] clear-pages: 44's clear text vs 43's cipher: nom_test (no nulls) R1 and R2 FAIL with control power (D2-SEURE); untried: null-tolerant setting with its own 10%-null control
+- [ ] known-keys: no Henri II-era French key (Tomokiyo's Henri II pages, Lasry GL) tried on Seure yet
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gap; cheapest next: null-tolerant nom_test setting with its own 10%-null matched control first, then R1/R2 if the control passes, ~$2
