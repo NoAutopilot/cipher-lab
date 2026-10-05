@@ -8557,3 +8557,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 04:43 | LANE-RUN6 (account-1 lane orch) | wave 1 spawned 04:43: RUN6-PIS, -AVS62, -NV05C, -NOXDEC, -BIR138 (Opus), -BOWESNRS (Sonnet); brief .claude/briefs/runs/2026-10-05-acct1-run6-wave1.md; wave cap USD 21
 2026-10-05 04:45 | LANE-RUN6 RUN6-BOWESNRS (account-1 worker) | claim: NRS GD406 catalogue search for MacKenzie Walsingham key; cap USD 1.5, box 30 min
 2026-10-05 04:45 | LANE-RUN6 RUN6-BIR138 (account-1 worker) | claim: birago-fr3252-1571-72 f.138 digit-shape / 6-mer check vs f.100r+f.119; cap USD 2, box 40 min (04:45-05:25 UTC)
+2026-10-05 04:45 | LANE-RUN6 RUN6-NOXDEC (account-1 worker) | claim: fr16142-noailles c511/c262 decode with N8-NOX consensus key vs shuffled-key + letter-order nulls; disk only; cap USD 3, box 45 min
