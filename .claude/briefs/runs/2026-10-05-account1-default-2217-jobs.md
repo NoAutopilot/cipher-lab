@@ -97,29 +97,50 @@ found and in cipher, write the next step (transcription cost) and leave status p
 
 # Wave 2 (spawned as wave-1 slots free; same rules)
 
-### D2-NOXB2 -- fr16142-noailles-constantinople-1571, blind read of c262 gloss with a valid control (cap 2, box 35 min) -- only after D2-NOXA2 is done
+### D2-NOXB2 -- fr16142-noailles-constantinople-1571, blind read of c262 gloss with a valid control (cap 3, box 35 min) -- D2-NOXA2 done 23:09
 Previous lane handoff item 1: one blind read whose control lines are lines commit 4ef591e8c's diff leaves unchanged (L07 plus another glossed
 line of the same hand). Must NOT open Charriere, gloss.tsv, reading files, NOTES.md after line 1000, AUDIT.md or commit 4ef591e8c's diff
 before finishing the read -- except that the orchestrator states the control lines here: check `git show 4ef591e8c --stat` only for which
 gloss lines changed (do not view the diff text) and use the unchanged glossed lines as the control. Pre-register PREREG-D2NOXB2.md (gate:
 control word agreement >= 0.80 after PX-BRODEC normalisation). Then compare the target lines with DEF1-NOXG's leaf readings. No gloss edit.
 
-### D2-DAVEX -- baluze167-davaux-1637, exemplar-sheet labeller for f.247 (cap 3.5, box 50 min)
+### D2-DAVEX -- baluze167-davaux-1637, exemplar-sheet labeller for f.247 (cap 4, box 50 min)
 Verdict: "the exemplar-sheet labeller for f.247, ~$3" (untried: exemplar-sheet labelling from gloss-fixed sign crops; DEF1-DAV's table
 labelling failed its control 0/15). Pre-register (control = known-answer crops of the same hand, gate >= 0.80) before the target; one
 subagent call per canvas + 1 reconciliation. Rule 3 order.
 
-### D2-ECK64S -- eckert-1864, the Spit/men conflict in Cipher No. 2 (cap 1.5, box 30 min)
+### D2-ECK64S -- eckert-1864, the Spit/men conflict in Cipher No. 2 (cap 2.5, box 30 min)
 Verdict: "re-read mssEC 47 p.22 l.26 and mssEC 48, ~$1". Crop step mandatory; rule-4 data conflict, witnesses named, never by majority.
 
-### D2-BACON -- lambeth-bacon-649, Baconiana Jan 1897 pp.23-29 OCR check (cap 1.5, box 30 min)
+### D2-BACON -- lambeth-bacon-649, Baconiana Jan 1897 pp.23-29 OCR check (cap 2.5, box 30 min)
 Next step: read the page images (IA leaves 26-32, free item) to check the OCR of the printed cipher values, ~$1.
 
-### D2-VIEU -- fr3975-vieuville-1587, print_check on the clear phrases (cap 1, box 30 min)
+### D2-VIEU -- fr3975-vieuville-1587, print_check on the clear phrases (cap 2, box 30 min)
 `tools/print_check.py` with "eschevins et maire de ville", "St Aignen", 30 Sept 1587; search result only (rule 10).
 
-### D2-LINK -- antt-linhares-chave, ink-profile comparison of the 329011 first glyph (cap 3.5, box 45 min)
+### D2-LINK -- antt-linhares-chave, ink-profile comparison of the 329011 first glyph (cap 4, box 45 min)
 Verdict: "a script ink-profile comparison of the 329011 first glyph against every 3 and 8 on m0002, ~$3". Pre-register, script not model.
 
 ### D2-1162 -- decode-1162-modena-ambung-1492, native tiles of g/q/sigma (cap 3.5, box 45 min)
 Verdict: native tiles of the three g/q/sigma shapes from 1162 p.1 and 1168 f.12r into the sign sorter, then re-key and re-score, ~$3.
+
+Cap note (23:2x UTC): wave-1 workers cost 1.4-3.1 each, with ~1.3 of fixed start-up (CLAUDE.md + brief + --start); wave-2 caps above raised to
+cover that. A worker still stops at its cap.
+
+# Wave 3 (written 23:2x UTC from wave-1 results)
+
+### D2-BAL103T -- baluze103-letellier-marca-1644, R2742 TranscriptionsList + check-solved re-verdict (cap 3, box 40 min)
+D2-BAL103 (23:07, NOTES.md) found R2742 holds f.50r-51v full-size images and Tomokiyo's key table, Inline Plaintext No, and four
+TranscriptionsList entries not opened. One DECODE browser login (same tool and rules as D2-BAL103): open the four transcriptions, record
+what each is (ciphertext only, plaintext, who, date), scrub the account name. Then write the check-solved verdict per
+.claude/briefs/check-solved.md into NOTES.md (is a decipherment of f.50 published or posted? Tomokiyo's page for the key, DECODE, the two
+solver repos, Mazarin/Marca editions per the folder's own log). Status per rule 5 only from that verdict. No decoding in this job; if the
+verdict is open, name the next step (transcribe f.50 against the key, with cost).
+
+### D2-ECK62R -- eckert-1862, re-line the ~14 zero-agreement aligned entries under the other book (cap 2.5, box 35 min)
+D2-ECK62M (23:13): 57 dated matches aligned, AGREE 316/817 = 0.387 vs control 0.073; about 14 entries 0-agree, book likely wrong. Pre-register
+(gate: same control as D2-ECK62M), decode those entries with the other book, report both numbers, grade per rule 4, --check.
+
+### D2-F3198B -- fr3198-labbe-1577, native view of fr.4695 no.55 f.125 (Prague 20 Apr 1577) (cap 2.5, box 35 min)
+D2-F3198 (23:06): no.51 = ff.116r-117v, clear, "Je vous envoye presentement la chiffre", no key sheet bound there. Next named: no.55 f.125
+(canvas = folio + 9 for rectos per D2-F3198). Mandatory crop step; record what the leaf is (cipher? key? date) in NOTES.md; no decoding.
