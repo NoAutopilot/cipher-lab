@@ -27,3 +27,11 @@ If you would rather I did not take any of this further until the Japikse copies 
 With kind regards,
 
 [your name] https://github.com/NoAutopilot/cipher-lab
+
+## Her reply, 30 Sept 2026 (pasted by the owner 5 Oct 2026; not seen by any session before then)
+Summary (no personal data): she is the editor of the WVO database and the right contact; the WVO project is not active at
+present (the database stays online, no work is being done on it), and she cannot take on checking readings or archive
+visits herself. She is glad to stay in touch, meets cipher in her other projects too, and asks to hear of anything that
+turns up (e.g. in the Japikse copies or the minutes). "There is no need to hold anything back on our account. Please keep
+me informed." Consequences: the 5 Oct follow-up drops the 'hold these if you prefer' line and the 'no reply' remark; the
+Japikse-copies access question stays with us (she cannot visit).
