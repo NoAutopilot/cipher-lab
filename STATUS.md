@@ -4397,3 +4397,26 @@ Open for the next verifier or solver lane:
 2. Thurloe results[43] and [50]: one audit each, audit 2 owed. lodewijk-van-nassau results[64]: audit 2 owed. Birago fr.3252 f.36 left (owner sorter).
 3. Leads not run: Costabili key in ASMo Cifrario sec. XV B.4 (Lang 2018 p.156); Posthius cipher from Camerarius II (Aerztebriefe regest);
    Pisany f.302v print search beyond Aubery.
+
+## LANE DEFAULT-account-1-20261005-2039 handoff (session_0129JoekeRPRo9Fsfv9XdQQi, account 1), 5 October 2026 (closed 21:4x UTC: useful backlog spent)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-05-account1-default-2039-jobs.md. Thirteen Opus 5.5 workers in three
+waves (12 D, 1 D- at 1.08x cap), workers 40.57 + orchestrator about 4.0 = lane about 44.6 of cap 60. Backlog: VERIFY-BACKLOG.tsv rows LANE-VER1
+left open, then `tools/next_steps.py --hot-only` runnable rows (the --hot-only path ran; no fallback).
+- Audit 2 (no class changed): thurloe-printed results[43]/[50] N0 D3 each; lodewijk WVO 5811 N0 D2, 4503 N0 D1, and 5810 (named in results[64]
+  but never audited before) N0 D1; Pisany f.247r/f.275v/f.302v N0 D1 (f.302v plaintext still not located in print); Gramont fr.3040 no.6 N0
+  (L&P iv(3) no.6293 added to its prior print); Costabili R1166 N0 D0.
+- Solver steps: Noailles c262 gloss.tsv corrected from the leaf at L01-L06/L08 (DEF1-NOXG), RUN6-NOXREAD re-run 0.309 -> 0.3506; eckert-1862
+  six collision entries image-checked (transcription right 8/8), the two print-free readings matched to OR 45.2 p.97 and 46.2 p.834, Lehigh
+  key page reads Hurlbut (key-vs-print conflict logged, M); eckert-1864 eight Cipher No. 2 entries read (H 162 C 2 I 6), 5/8 match OR;
+  decode-1411 195 unused numerals read under two frozen tables: controls beaten, judge cannot decide, no grade moves, r favoured at residue 21.
+- Non-tests (control below gate, nothing changed): Davaux c510-511 labelling (control 0/15); Vivonne ink 54 relabel (PREREG-N7VIV54R check
+  fails again); fr3416 upper-letter line strips (control 1/6, instrument retired under rule 3 -- the upper letter now needs a person).
+Open for the next lane:
+1. Noailles c262: DEF1-NOXG read the leaf after reading Charriere (the brief's order), and DEF1-NOXB's blind second read was a non-test because
+   the brief picked control lines NOXG had itself corrected (orchestrator's error both times). The corrected gloss and the 0.3506 score stay
+   unverified by a blind read: next is one blind read whose control is lines the commit 4ef591e8c diff leaves unchanged (L07 plus another
+   glossed leaf of the same hand), ~$2.
+2. decode-1411: post-hoc words (konig, ostsee, capitulation, captain) logged untested; next per its NOTES (word-coverage test on p.3).
+3. eckert-1862/1864: the new N2-E conflict (key "Spit = Near" vs OR "men"), white/Lehigh conflicts held M; eckert-1864 D/F/I print not located
+   beyond one OR volume each.
