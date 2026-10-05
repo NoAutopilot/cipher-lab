@@ -8602,3 +8602,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:21 | LANE-RUN6 RUN6-BULLET (account-1 worker) | done: skipped; bullet-tuscany-1944 claimed by N9-BUL (LANE-NEAR9, 05:18, box to 05:50 UTC), under 6 h, so per the wave-2 rule no work done; the image check and forumfree fetch stay with N9-BUL. cost: see the lane ledger
 2026-10-05 05:21 | LANE-RUN6 RUN6-KARLXI (account-1 worker) | claim: ra-karlxi-fullmakt-1677 be-api retry Actes de Nimègue 1680 + Dumont VII.1; cap USD 1, box 05:21-05:46 UTC
 2026-10-05 05:21 | LANE-RUN6 RUN6-SEURE2 (account-1 worker) | claim: fr3151-seure-1558 reconcile remaining 18 f81R lines (2 Sonnet calls/line), re-measure err, then kp/nom_test.py unchanged if all 20; cap USD 9, box 90 min (05:21-06:51 UTC)
+2026-10-05 05:21 | LANE-RUN6 RUN6-PAGETR7 (account-1 worker) | claim: clairambault1225-paget-1714 rule-7 fresh re-derivation (decode_key --check + pin_pagr --check); cap USD 1.5, box 05:22-05:52 UTC
