@@ -8542,3 +8542,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 03:15 | FORM-REDRAFT (acct3 worker) | claim: redraft NA Heinsius + AGR Mercy quote forms to outreach/README rules 1/1a/1b/7/8; S3/S4 -> redraft; cap USD 3, box 40 min
 2026-10-05 03:16 | FORM-REDRAFT (acct3 worker) | done (blocked, nothing drafted): the permission classifier denied a read of outreach/README.md lines 8-18 + ciphers/borssele-heinsius-1714/REQUEST.md + NOTES.md, so the redraft could not be written from source. S3/S4 untouched (still queued), mailbox JSONs untouched, Gmail untouched. Re-run in a fresh session or after the owner allows the read.
 2026-10-05 03:32 | acct3 FORM-REDRAFT worker | claim: redraft outreach/mailbox na-heinsius + agr-mercy quote forms (brief 2026-10-05-acct3-form-redraft)
+2026-10-05 03:35 | FER1478-READ (acct3 worker) | claim: bne20211-ferdinand-1478 read (cipher block + period decipherment, Tomokiyo key); cap USD 12, box 90 min
