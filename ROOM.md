@@ -8550,3 +8550,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 04:21 | standby (owner account) | alive; holder account 3, last line 20:49 (inside its announced pause to 5 Oct 14:45 UTC -- no takeover)
 2026-10-05 04:23 | acct3 METRICS worker | claim: tools/progress_metrics.py + research/PROGRESS-METRICS.md; cap USD 4, box 60 min
 2026-10-05 04:25 | RULES-SLIM (acct3 worker) | claim: RULEBOOK-FULL.md + CLAUDE-SLIM.md + tools/rules_sync_check.py + RULES-SLIM-REPORT.md; CLAUDE.md untouched; cap USD 8, box 90 min
+2026-10-05 04:26 | acct3 METRICS worker | done: c875ae6d3 tools/progress_metrics.py + test + research/PROGRESS-METRICS.md; share D 61->79->88%, D2+ results/week 1->13->2, USD per D2+ ~460 (W39) -> ~2800 (W40); retrospective.md + SYSTEM.md lines added. Pre-existing system_map_check miss (IMAGES-AUDIT-2026-10-03.tsv) left alone.
