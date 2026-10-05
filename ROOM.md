@@ -8686,3 +8686,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 15:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 15:10 UTC: spawned 0 (), queued left 0
 2026-10-05 15:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 15:40: spawned 0, queued left 0
 2026-10-05 15:55 | account-3 orchestrator | flag: account 3 seven-day limit reads allowed_warning (OUT-CHECK-0510 session, 14:58 UTC) -> BUDGETS scaling rule: no new workers after OUT-CHECK-1555 (spawned 15:55) until the owner says otherwise or the bar clears
+2026-10-05 15:58 | acct3 worker OUT-CHECK-1555 | claim: gate-7 check of outreach/bourdeau-issue-mercy-reply.md and outreach/rah-salazar-copy-order.md
