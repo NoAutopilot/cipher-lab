@@ -594,3 +594,11 @@ Requests this pass: searcharchives.bl.uk 1 (via WebFetch); github.com 2 (shallow
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the known-keys rung this folder's Verdict names as cheapest -- Tomokiyo's Walsingham-Wotton 1585 reconstruction (elizabeth.htm images) tried against the code layer (85, 0100 and the M codes) plus one TNA Discovery API search, ~$2. LOCAL-QUEUE L44 and the BL reproduction (gap 6) stay the outside blockers.
+
+## IA-DESK-ALT (account-3 worker, 5 Oct 2026): CSP Scotland vi via Internet Archive, re-checked
+
+These are search results only (rule 10).
+
+Two advancedsearch queries on 5 Oct 2026 returned the same set as on 24 Sept: CSP Scotland vols I, II, IV, VIII, IX, XIII (`calendarstatepa00baingoog`, `CalendarStatePapersMaryQueenOfScotsVol2`, `calendarstatepa00boydgoog`, `calendarofstatep0008vari`, `calendarofstatep08grea`, the XIII.1 item) and Thorpe's 1858 calendar. The second Boyd Google scan, `calendarstatepa02boydgoog` (1903), was not opened; its metadata gives no volume and is dated 1903 (vol. III was published in 1903), not 1910, so it is not vi.
+
+**Vol. vi (Boyd 1910) is still not on IA.** Google Books has already been used for search-within snippets only, not full view (csp6_584_snippets.tsv). The verbatim pp.370-371 and 566-568 **still need HathiTrust** (LOCAL-QUEUE L44, `nnc2.ark:/13960/t1gh9nc18`). Gap 4 is unchanged.

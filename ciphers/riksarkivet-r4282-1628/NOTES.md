@@ -1448,3 +1448,30 @@ R4284/R4282 (tools/ crossmatch, control first).
 - Riksarkivet AO search (owner, 4 Oct 2026 ~20:1x UTC): Efternamn = Camerarius, Datum 1628-1628 = 0 hits (the surname alone
   gives 97, first rows 1625-1626). The database holds no 1628 Camerarius -> AO letter, despite AO's 25 July 1628 note that they
   came "satis frequentes"; search result only.
+
+## IA-DESK-ALT (account-3 worker, 5 Oct 2026): AOSB ser. II Bd 1 and ser. I Bd 3 via Internet Archive
+
+These are search results only (rule 10). The brief asked for the HathiTrust desk read H3 (`mdp.39015026707037`, `mdp.39015028586371`); both volumes are on IA. Their titles were checked on the djvu title pages:
+- **ser. I Bd 3** (Bref 1625-1627; "FÖRRA AFDELNINGEN", date counts 1625-27) = `rikskanslerenax00akadgoog`. Note: ciphers/oxenstierna-gustav-adolf-1632/AUDIT.md lists this id among "Ser. II vols 2-12". That label is wrong; it is not edited here (another target's file).
+- **ser. II Bd 1** (Gustaf II Adolfs bref och instruktioner) = `rikskanslerenax00styfgoog`.
+
+Page numbers below come from the running heads in the OCR and are accurate to about ±1. Verify on the IA page view before citing.
+
+**Ser. I Bd 3: footnotes print the cipher numbers beside asterisked plaintext.** This is the same apparatus as I:4 pp.341-342 (key_aosb1629.tsv). The formula is "Orden inom asterisker ... skrifna i chiffer. Siffrorna äro: ...".
+- **p.28:** letter 17, to Jan Rutgers (Svensk resident hos Generalstaterna), 1626. About 9 cipher groups of 2-digit numbers, e.g. "18, 11, 12, 16, 20 80, 21, 7, 64".
+- **p.31:** letter 18, to Jacob Spens. Numbers plus the name codes 746 (= "Regi Daniae") and 747.
+- **p.39:** letter 25, to Jan Rutgers, Stockholm 6 March 1625. Name codes 785 (= "Regi Bohemiae"), 746 and 744.
+- **p.40:** letter 26, to Ludv. Camerarius, Stockholm 6 March 1625. 4 groups.
+- **p.323:** letter 165, to Camerarius, Stockholm 6 June 1626. A long footnote list: cipher-number words interleaved with names the footnote gives in clear ("Scipioni Africano", "Sardiniam", "Andreas", "Gedeon", "Hispaniam", "Lentulum", "Ulysse", "Jugurthinis", "Aurelio"). These look like a cover-name system plus letter cipher.
+- **More asterisk-only notes, with plaintext but no numbers printed**, on pp.10, 16, 24, 41, 44, 54-55, 60, 167, 217.
+- **pp.468-470:** letter 208, to Camerarius, Elbing 12 and 16 Feb 1627. The cipher follows a German "chifferolay" with 4-digit word codes, e.g. "Originalet har chiffern för frembd (= 1468), ej för freund (= 1472)". The editors compare Camerarius's own decipherment (which "stundom blott återgifver innehållet") with the minute. This is a second period nomenclator with printed code values.
+- **p.306:** Oxenstierna to the King, Nyslott 10 Feb 1626: Rusdorf letters "icke öfversat aff cyphrene"; he sends "cyphrerne eller nyckeln".
+- Camerarius occurs 93 times in this volume.
+
+**Ser. II Bd 1: the editors' preface (about p. iv) says that, as in Styffe's *Konung Gustaf Adolfs Skrifter* (1861), "själfva chiffern aftryckts med inom hakar bifogad upplösning därav, efter någon af de i riksarkivet ännu förvarade claverna".**
+- **pp.329-334:** letter 268, Stockholm 16 Nov 1626, King to Oxenstierna. Printed as cipher number + [letter] throughout, for example "51[k]15[e]57[t]" and "95[e]41[r]". Homophones visible: e = 5, 15, 95, 109; n = 39, 53, 87; t = 57, 71, 81. Nomenclator: 800[Stockholm], 513[Hamburg], 730[Rdr], 600[Lifflandz], 1152[fästningar], 644[månader], 789[sommar], 598[landsens], 583[kopper], 872[vintern], 1424[riks-], 318[Borgerskapet], 796[Ständer-]. This is a large paired sample of the 1626 chancery cipher, more than the I:4 footnotes.
+- **pp.346-347:** letter 282, Salvius, Fältlägret vid Preussisch Holland 23 July 1627. Also printed number[letter]. "skrifvet i chiffer efter tvenne olika chifferclaver": the first half is "den vanliga kanslichiffern", the second the Oxenstierna-Falkenberg key. Examples: 1569[Weichseln], 402[Weichsel], 161[Pillau], 203[K. M:t], 257[annéen], 952[arméns], 372[consilia].
+- **1627-28 letters headed "(I chiffer.)" are printed deciphered only** (letters 296, 298, 300, 308 at pp.360-376; e.g. 308, Kopparberget 6 Feb 1628, p.376). Their notes on the decipherer L. Grubbe and on errors are the only cipher apparatus.
+- **pp.821-822:** letter 602, Nürnberg 23 July 1632, is printed in raw numbers. That is the solved ciphers/oxenstierna-gustav-adolf-1632 (Torpadie 1888), not new.
+
+For this target: no 1628 Camerarius letter is in either volume. The letter-268 and letter-282 pairs plus the I:3 footnotes give a period chancery cipher (two-digit homophones, 3-4 digit nomenclator) that could be rebuilt as a key and compared with R4282's sign system. R4282 uses single digits, Greek letters and capitals, so a fit is unlikely on design grounds; that is inferred, not tested. Suggestion (not done, Usage 7): add letter 268 and letter 282 to aosb/ as `key_aosb1626.tsv` with `tools/interlinear_align.py`-style pairs, and run key_crossmatch over the Riksarkivet R-records, about $1. **No gap closes**: the Remaining-gaps print line already reads "every cloud-reachable route done".

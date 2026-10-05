@@ -381,3 +381,20 @@ Requests this pass: archive.org 5 (3 advancedsearch, 2 download), be-api.us.arch
 
 ### Remaining gaps / Next (after this pass)
 Riezler Bd. 7 and Preuss 1897 page text need a reader (HathiTrust / Google Books page view) -- blocked from the cloud; a LOCAL-QUEUE row is the only route and is a suggestion here (Usage 7), not filed.
+
+## IA-DESK-ALT (account-3 worker, 5 Oct 2026): Riezler Bd 7 pp.601-604 read from Internet Archive
+
+These are search results only (rule 10). The read is context, not plaintext of the target.
+
+**Riezler *Geschichte Baierns* Bd 7 (1913) is on IA** as `riezler-geschichte-baierns-v-7` (collection folkscanomy). A2P4-RABY04 missed it because it searched by title only. The text file is `Riezler Geschichte Baierns v 7_djvu.txt` (Google scan, Fraktur OCR). Search inside: https://archive.org/details/riezler-geschichte-baierns-v-7?q=Raby
+
+Read in full: pp.601 ("Preußische Mediation"), 602 ("Max Emanuels Forderungen"), 603 ("Die preußische Mediation") and 604 ("Unterhandlungen über Baierns Übertritt"). The OCR is normalised below. These points could serve as context words for the Reichart-Berlepsch channel:
+- **14 Feb 1704.** Frederick of Prussia sent his Generaladjutant, Oberstleutnant Frhr v. Berlepsch, to Munich "um zu sondieren, unter welchen Bedingungen sich Max Emanuel zum Anschluß an die große Allianz verstehen würde". Source cited: Preuß, *Die preußische Mediation zwischen Bayern u. Österreich 1704* (1897), p.61.
+- **Max Emanuel's demands (p.602):** the Duchy of Milan from the Spanish inheritance, plus the pledge ("pfandweise Überlassung") of Tyrol and of Swabian imperial cities. Frederick found them acceptable. Queen Anne "ließ ihren Gesandten Raby anweisen, alle Zugeständnisse an Baiern zu billigen".
+- **Vienna conference, 21 March (p.603):** it rejected Milan (part already promised to Savoy) and Tyrol ("Vormauer und Schlüssel zu Italien"). It offered instead the Margraviate of Burgau and possibly the Duchy of Neuburg (from Johann Wilhelm of the Palatinate), about 250,000 fl. a year in revenue, in exchange for Bavaria waiving its Turkish-war money claims. English subsidies were in prospect. Berlepsch handed the matter to the Prussian Reichstag envoys Metternich and Henniges.
+- **19 March:** Frhr v. Bündt (Bavaria's Reichstag envoy) promised Bavarian recognition of Frederick as King, and recognition by Cologne, France and Spain too, if Prussia ceased hostilities.
+- **Further instruction to Berlepsch:** he was to point to the weak male line of the Habsburgs and say that Prussia would grant the inheritance to no one more gladly than Wittelsbach. Vienna inclined to give up the conquered Swabian imperial cities except Ulm, and offered Max Emanuel the command of a new army.
+- **29 April, Hohenkammer (p.603):** Berlepsch held a secret meeting with Max Emanuel's Geheimsekretär **Reichard**. Source cited: Preuß pp.22 ff.
+- **p.604:** Reichard gave up the Milan demand, limited Tyrol to the old-Bavarian northern districts, and pressed for joint Prusso-Bavarian policy against the imperial cities. Berlepsch was invited to a new conference at **Günzburg on 3 June**. This was overtaken by the Elector's direct approach (Baron Zirkenstein, 7 June) and the Großheppach council of 13-14 June.
+
+Candidate crib words for a German/French channel (inferred, grade I, not tested): Mailand/Milan, Tirol, Burgau, Neuburg, Ulm, Reichsstädte, Subsidien, Anerkennung/König, Günzburg, Hohenkammer, Reichard, Berlepsch. This closes the "Riezler Bd 7 page text" half of the A2P4-RABY04 next step. Preuss 1897 is still unread.

@@ -393,3 +393,12 @@ Read so far: 129 of 172 target tokens at C (75.0%; R17 table: BLA184 3/7, BLA186
 - [ ] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages
 - [ ] retry: context-fill of the 21 unkeyed groups with a BLA185 blanking control
 Verdict: keep going: 4 internal gaps; cheapest next: TNA Discovery API search for Paretti in SP 94/36, ~$0.5
+
+## IA-DESK-ALT (account-3 worker, 5 Oct 2026): HMC Polwarth IV and V via Internet Archive
+
+These are search results only (rule 10). HathiTrust's Cloudflare check stopped the owner's browser, so this pass used Internet Archive djvu text.
+- **Vol. IV (1940, ed. Paton) is on IA** as `reportonmanuscri0000grea_g6z8` (title page: "Volume IV"). It covers 1724-1725 (Cambrai congress). The other IA Polwarth items are vols I, I-II, II, III (`reportpolwarth12greauoft`, `reportonmanuscri0001grea_q7q1`, `bwb_KR-635-925`, `reportonmanuscri0003grea_d2n9`, `reportonmanuscri0000unse_j5t0` = vol. I).
+  - Index: "Paretti (Pareti), Abbe, 113, 114, 187. letters from, 42, 106, 157. seeks employment in service of Spain, 7, 204." Its Pareti letters are to Polwarth/Marchmont (Cambray 16 March 1724; Spa 17 June 1724; [17 Sept 1724] 1 a.m., "Count de San Severin came and roused me up to write to you that the Spaniards had received a courier ... King Philip has resumed the crown"). Marchmont and Whitworth to Stanhope, Cambray 6 Dec 1724 (about p.204): "the Abbe Paretti, a gentleman of Genoa, that he might be employed in his Catholick Majesty's service in Switzerland". This is context for the identification of BLA 186's writer: Pareti was already a Marchmont correspondent in 1724 and was seeking Spanish service. It is not a decipherment of BLA 186 or 191.
+  - IV prints cipher passages the HMC way: "[PS., in cypher.]", "(1) Name in cypher.", "[This paragraph is in cipher.]". It has Ripperda hits (1725) but nothing dated 1727-29 (date counts: 1724 391, 1725 139, 1728 1).
+  - Search inside: https://archive.org/details/reportonmanuscri0000grea_g6z8?q=Pareti
+- **Vol. V (1961) is not on IA** (advancedsearch `title:(polwarth)`: 12 items, none vol. V). On Google Books every Polwarth record is NO_PAGES (`intitle:Polwarth manuscripts`; the 1961 copies are `_9sLAQAAIAAJ` and `JyBOAQAAMAAJ`). The 1727-29 Madrid/Port Ste Marie letters and any printed decipherment of BLA 191(a) therefore **still need HathiTrust** (`msu.31293105166841`).

@@ -836,3 +836,16 @@ shows no shared alphabet; the stat is driven by a key that puts only frequent le
 signs it covers, which the class-shuffled null (it moves q, x, y, z onto those figures too) cannot match. Not a
 lead. Suggestion for the tool (one line, not done): add a minimum count of distinct covered sign types, or shuffle
 the null only among the codes the ciphertext actually covers. Requests: none (offline). Subagent calls: 0.
+
+## IA-DESK-ALT (account-3 worker, 5 Oct 2026): Rachfahl II.1 via Internet Archive
+
+These are search results only (rule 10). Of the three IA ids the brief named:
+- `wilhelmvonorani00rachgoog` (1908) is **Bd II, 2. Abteilung** (title page "ZWEITER BAND / II. ABTEILUNG").
+- `wilhelmvonorani01rachgoog` and `bub_gb_hq9AAAAAYAAJ` (1906) are **Bd I**.
+- The advancedsearch for `creator:(Rachfahl)` returned no other copy of the work, so **II.1 (1907) is not on IA**.
+
+Grep of the djvu text for Zettel / chiffr / Ziffer / Geheimschrift:
+- Bd I: only non-cipher senses (a 1418 "Zettel", Speisezettel, statistics "Ziffern").
+- II.2: "Zettel" once (posters, 1566), plus Fray Lorenzo's "Schicke mir Eure Gnaden eine Chiffre" (early 1566, to Gonzalo Perez). Nothing about Kurfürst August or 1561/1564 cipher.
+
+Rachfahl II.1 as text **still needs HathiTrust** (`hvd.hnt3bj`).

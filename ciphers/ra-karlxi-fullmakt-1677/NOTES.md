@@ -330,3 +330,11 @@ The brief's two volumes were already searched by RUN1-KARL (above); this pass ra
   Not searched: other tomes of the 1680/1697 Actes, Dumont other volumes, Bakeš thesis grep (still pending).
 - Requests: archive.org advancedsearch 2, archive.org metadata 2, be-api.us.archive.org ~65 (no failures). Vision 0, subagents 0. Status stays `open`.
 Next (one line): Bakeš thesis grep, then Riksarkivet owner/copy route (REQUEST.md). Verdict: open unchanged; keep going.
+
+## IA-DESK-ALT (account-3 worker, 5 Oct 2026): Sverges traktater v.8 via Internet Archive
+
+These are search results only (rule 10). *Sverges traktater med främmande magter* is **not on Internet Archive**. Two searches found no volume:
+- advancedsearch `traktater`: 5 unrelated items.
+- the full title as a phrase: 0 items.
+
+On Google Books (keyed, country=US, query "Sverges traktater främmande magter"), the full-view records are dated 1877-1896, i.e. the early volumes. The 1890, 1934 and "192?" records are NO_PAGES. A query for "Sverges traktater 1677 fullmakt" returned no treaty-volume hit. So v.8 pt 1-2 (contents and date range, and any 1677 full power) **still needs HathiTrust** (`nyp.33433090738414`, and the search-only v.6 `nyp.33433090738372`).

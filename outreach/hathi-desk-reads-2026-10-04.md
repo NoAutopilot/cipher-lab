@@ -48,3 +48,20 @@ as for AOSB I:4).
 ## Requests
 
 HathiTrust Bibliographic API 47 (>=1.6 s apart); HTRC EF API 20 (19 + 1 retry, all HTTP 500); Open Library search 11. No subagents.
+
+## Status after IA-DESK-ALT (account-3 worker, 5 Oct 2026)
+
+The owner's browser hit HathiTrust's Cloudflare check. This pass tried each row from Internet Archive djvu text instead, with Google Books as a fallback. Quotes are in each target's NOTES.md, section "IA-DESK-ALT".
+
+| H | Row | Result |
+|---|---|---|
+| H1 | Polwarth IV / V (huntington-blathwayt-madrid-1728) | **Partly done via IA.** IV = `reportonmanuscri0000grea_g6z8` (1724-25: Pareti letters, Pareti seeking Spanish service; no 1727-29 material). **V (1961) still needs HathiTrust**: not on IA, NO_PAGES on Google Books |
+| H2 | Rachfahl II.1 (august-van-saksen-1561-64) | **Still needs HathiTrust.** The IA ids are Bd I (×2) and II.2; II.1 is not on IA. No cipher hits relevant to August in I or II.2 |
+| H3 | AOSB II:1 + I:3 (riksarkivet-r4282-1628) | **Done via IA** (`rikskanslerenax00styfgoog`, `rikskanslerenax00akadgoog`). No 1628 Camerarius letter. I:3 prints numbered cipher footnotes (pp.28, 31, 39, 40, 323) and a 4-digit German code (pp.468-470). II:1 prints letter 268 (16 Nov 1626, pp.329-334) and letter 282 (23 July 1627, pp.346-347) as number[letter] pairs |
+| H4 | Sverges traktater v.8 (ra-karlxi-fullmakt-1677) | **Still needs HathiTrust.** Not on IA; v.8 not full view on Google Books |
+| H5 | Riezler Bd 7 pp.602-603 (sp90-raby-1704) | **Done via IA** (`riezler-geschichte-baierns-v-7`); pp.601-604 read |
+| H6 | CSP Scotland vi pp.370-371, 566-568 (bowes-walsingham-1583) | **Still needs HathiTrust** (L44). Not on IA (re-checked) |
+
+**Still for the owner (HathiTrust, once the Cloudflare check passes):** H1 Polwarth V, H2 Rachfahl II.1, H4 Sverges traktater v.8, H6 CSP Scotland vi.
+
+Requests: archive.org 39, Google Books API 7 (keyed, country=US). No subagents.
