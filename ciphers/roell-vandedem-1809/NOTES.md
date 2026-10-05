@@ -305,3 +305,45 @@ readers (one per band of 2 crops); the worker's own check of the function-word r
 **Next step (one line, for the lane):** the ministry side for the 1808-09 code: grep the NA 2.01.08 EAD for
 cijfer/chiffre/Croiset (~USD 1, LIKELY-7); the scan 5 note on the 1776 cipher dates the inv. 164 table and is worth
 one read for the design prior (KEY-DESIGN), not for this letter.
+
+## D2B-ROELL (5 Oct 2026): NA 2.01.08 finding-aid grep for the 1808-09 code
+
+Worker D2B-ROELL (account 2, for LANE DEFAULT-account-2-20261005-2217), brief
+`.claude/briefs/runs/2026-10-05-account2-default-2217-jobs.md`, 23:52-23:57 UTC. Finding aid only; no scan read, no decoding.
+Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0 (no reading).
+
+**Route.** `www.nationaalarchief.nl/onderzoeken/archief/2.01.08/download/xml` fetched once (HTTP 200, 419,081 bytes, sha1
+02aa293e...; title "Inventaris van het archief van het Ministerie van Buitenlandse Zaken, 1796-1810"); grepped the full text
+for cijfer, ciffer, chiffr, geheimschr, sleutel, Croiset, codeur, ontcijf, Röell/Roell, Dedem, Testa, Turkije. Availability
+from each item page's `drupal-settings-json` (CLAUDE.md hosts table), not from the EAD's `dao` handle. The scans' IIIF
+`info.json` URLs for the three items below are saved in `na20108/iiif_info_urls.json` (no further item-page request needed).
+
+**Found.**
+- **No key item.** 0 hits for cijfer/ciffer/chiffr/sleutel/ontcijf/Croiset anywhere in the 2.01.08 inventory, including the
+  introduction. The ministry's own 1808-09 code (key or table) is not described in this finding aid.
+- **inv. 204A** -- "Kopieën van ingekomen en uitgaande brieven van en aan gezanten, welke door de codeur van het Departement
+  van Buitenlandse Zaken in geheimschrift werden overgezet. 1795-1807. 1 pak" (the only `geheimschrift`/`codeur` hit; filed
+  after 196-204 Rekwesten). Availability **DIGITALIZED, 274 scans**. Clear copies of letters the ministry's codeur put into
+  cipher -- plain/cipher pairs of the department's own system -- but the dates stop at 1807, a year before Röell took office
+  (KB 8 Jan 1808, per the inventory's introduction). Useful for the design prior of the ministry's code just before 1808, and
+  if the 1808-09 code continued it, as a source of cribs; not a key for 1809 on its face.
+- **inv. 348** (3.2.20 Turkije) -- "Missiven van de ambassadeur F.G. van Dedem van de Gelder, 1 jan 1808 - 7 feb 1809;
+  Missiven van de chargé d'affaires Gasp. Testa, 24 feb 1809 - 6 jul 1810." Availability **DIGITALIZED, 508 scans**. The
+  incoming side from Constantinople; the 9 Feb 1809 letter falls in the 17-day gap between the two series as described, so it
+  is not described here, but deciphered or clear despatches from the same two men in the same weeks may be.
+- **inv. 92** -- "Gewone en geheime minuten van uitgaande missiven en rapporten", jan 1809 - mrt 1809 (series 65-98).
+  Availability **DIGITALIZED, 523 scans**. If the letter is the minister's (Röell's) to Van Dedem or Testa, its minute --
+  the clear draft before enciphering -- would sit here. Also inv. 100, "Verbalen van uitgaande stukken" 1809 (EAD `dao`
+  present; item page not fetched).
+- Context only: inv. 273 (Jacobson, 14 Oct 1808 - 20 Feb 1809) and the other legations' missives carry no cipher wording.
+
+**Not found.** No key, cipher table, "cijfer" volume or Croiset item in NA 2.01.08 (EAD full text, 5 Oct 2026). Croiset's
+letters in Röell's own papers (2.21.008.78, Bourdeau) were not checked by this job.
+
+**Next step (priced, one line):** find a 9 Feb 1809 minute to Van Dedem/Testa in inv. 92 (523 scans, Jan-Mar 1809,
+presumably chronological): fetch 1000 px IIIF of ~4 scans to bracket early February, then read the ~20-40 scans of 5-12 Feb
+for a minute addressed to Constantinople, one scan per vision call (~USD 4-6); a clear minute of the same letter would be a
+C-grade crib for R1469/R1470 (and a plaintext). Inv. 348's last Van Dedem / first Testa scans are the cheaper second look
+(~USD 2). inv. 204A (274 scans, 1795-1807) is for KEY-DESIGN, not this letter.
+
+**Requests:** www.nationaalarchief.nl 4 (EAD 2.01.08; item pages 204A, 348, 92), all HTTP 200, >= 2 s apart; no other host.
