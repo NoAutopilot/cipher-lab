@@ -2700,26 +2700,35 @@
       "date": "24 Sept 2026",
       "kind": "recovery",
       "title": "William of Orange to Louis of Nassau, 1574 (WVO 5811, 5810, 4503): partial readings under the letter table aligned from the 1573 sibling decipherments",
-      "grade": "5811: C 616, I 81, M 792, U 53 of 1542; 4503: 237 tokens, I 7 M 219 U 11 (single settled reading); 5810 single pass (M 2771 of 3096); novelty: 5811 N0, 4503 N0 (AUDIT.md 'WV2 letters (V7)', 24 Sept 2026), 5810 not audited",
-      "line": "Three 1574 letters read under the same table as 4610-4616, so 4612's failure is not a general 1574 change. 5799 (3 Apr 1573) fails the table (0 of 146 numerals give French, matched control 81.5%): a different key. 5194 and 5797 not transcribed. 5811 and 4503 are printed in Groen van Prinsterer, Archives IV, Lettres CDLXXXIII (pp. 364-366) and CDLXXXIV (pp. 368-369, with omissions), cited in their own WVO records; our readings are re-decipherments that agree with those prints (N0).",
+      "grade": "5811: C 616, I 81, M 792, U 53 of 1542; 4503: 237 tokens, I 7 M 219 U 11 (single settled reading); 5810 single pass (M 2771 of 3096); novelty: 5811 N0, 4503 N0 (AUDIT.md 'WV2 letters (V7)', 24 Sept 2026), 5810 N0 (AUDIT.md 'AUDIT 2 (DEF1-LVN, 5 Oct 2026)', its first audit)",
+      "line": "Three 1574 letters read under the same table as 4610-4616, so 4612's failure is not a general 1574 change. 5799 (3 Apr 1573) fails the table (0 of 146 numerals give French, matched control 81.5%): a different key. 5194 and 5797 not transcribed. 5811 and 4503 are printed in Groen van Prinsterer, Archives IV, Lettres CDLXXXIII (pp. 364-366) and CDLXXXIV (pp. 368-369, with omissions), cited in their own WVO records; our readings are re-decipherments that agree with those prints (N0). 5810 is printed in Groen IV, Lettre CDLXVIII (pp. 320-324), cited in its WVO record (N0, DEF1-LVN 5 Oct 2026).",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74",
       "document_id": "WVO 5811 (Orange to Lodewijk van Nassau, 1574)",
       "documents": [
         "WVO 5811 (Orange to Lodewijk van Nassau, 1574)",
-        "WVO 4503 (Orange to Lodewijk van Nassau, 1574)"
+        "WVO 4503 (Orange to Lodewijk van Nassau, 1574)",
+        "WVO 5810 (Orange to Lodewijk van Nassau, 6 Jan 1574)"
       ],
       "claim_scope": "key-to-known-text",
       "plaintext_novelty": "N0",
       "mapping_novelty": "N0",
       "completeness": "616/1542",
-      "unresolved_spans": "5810 unclassed (single pass)",
+      "unresolved_spans": "4503 and 5810 all-M (two blind passes, digits uncertain): not regraded against Groen's print; next: align print to tokens and regrade C, ~$2",
       "audit_refs": [
-        "AUDIT.md '## WV2 letters (V7): WVO 5811 and 4503'"
+        "AUDIT.md '## WV2 letters (V7): WVO 5811 and 4503'",
+        "AUDIT.md '## AUDIT 2 (DEF1-LVN, 5 Oct 2026): WVO 5811, 5810, 4503'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "lodewijk-van-nassau-1573-74/AUDIT.md V7.1; 5811 C 616 of 1542"
+      "fields_source": "lodewijk-van-nassau-1573-74/AUDIT.md V7.1; 5811 C 616 of 1542",
+      "depth": "D2",
+      "depth_pct": 12.8,
+      "decode_status": "Partially decrypted",
+      "depth_check": "per item (DEF1-LVN): 5811 D2 39.9% (C 611 of 1530; key aligned from the period decipherments of 4613/4615, code values reading in two contexts; reading agrees with Groen IV CDLXXXIII, 32.7% in runs of 8+ vs <=3.2% control); 4503 D1 0% and 5810 D1 0% (all M; agree with Groen CDLXXXIV/CDLXVIII 95.1%/42.2% vs <=16.4%/<=3.8% control); row pct 611 of 4789 non-null cipher tokens. Note: 5811/4503 two audits (V7, DEF1-LVN); 5810 one (DEF1-LVN)",
+      "depth_sentence": "Orange, writing from Dordrecht on 13 April 1574 (WVO 5811), tells his brothers he has had their plan to bring their troops over by way of Grave and Tiel, and is ordering his captains to assemble near Tiel to receive them.",
+      "key": "period",
+      "text": "known"
     },
     {
       "date": "24 Sept 2026",

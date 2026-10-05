@@ -1329,3 +1329,117 @@ Requests: none (crops on disk). Subagents: none.
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **KHA A 3, 895/I (WVO 5797), Nassau brothers to Orange, 22 Oct 1573**: **D2** (Partially decrypted; outward "partially deciphered (about 11%)"), 11.1% (6 of 54 non-null cipher tokens of 5797 H/C/S (axmerge3/v2/reading_5797_full_tokens.tsv); the claim is two names in a printed letter). Check: code values 161 and 153 H from the period 5550 interlinear gloss, each reading in two contexts (5550 and 5797); rule-7 re-derivations byte-identical (AUDIT V8/A2). Sentence: "In the blanks Groen left in WVO 5797 the brothers name the Landgrave beside the Duke of Saxony (p.5, code 161) and the Elector Palatine as the one who 'helt sich wol und thut in warheit viel' (p.7, code 153)."
 - **WVO 4610 (Lodewijk van Nassau to Orange, 1573-74)**: **D2** (Partially decrypted; outward "partially deciphered (about 63%)"), 62.6% (C 2512 of 4012 audited (v2 files: 2112 of 2940 non-null for 4610/4611/4616 = 72%)). Check: key aligned from the period decipherments of WVO 4613 and 4615 (C); key_full v3 0 regressions on those controls. Sentence: "WVO 4610 opens 'il fault que on pardonne' in connection with a dispatch sent by messenger 'ce lundy', and later speaks of 'la rechute'."
+
+## AUDIT 2 (DEF1-LVN, 5 Oct 2026): WVO 5811, 5810, 4503
+
+Verifier DEF1-LVN (account 1, for LANE DEFAULT-account-1-20261005-2039), 5 Oct 2026, 20:46-20:56 UTC by `date -u`. A session
+separate from the solvers (W1/W2, AX) and from Audit 1 (V7). No decoding; the readings were not re-read. Claim under audit
+(status.json results[64]): "William of Orange to Louis of Nassau, 1574 (WVO 5811, 5810, 4503): partial readings under the
+letter table aligned from the 1573 sibling decipherments ... 5811 and 4503 ... re-decipherments that agree with those prints (N0)";
+grade field "5810 not audited".
+
+### DEF1.1 Was 5810 ever audited?
+
+No. 5810 is named in the result title but not in Audit 1's heading or verdict table (V7.1 classes 5811 and 4503 only), nor in A1,
+D1, V8, A2-A4, V-GATE2 or DEPTH-REGRADE. The only audit lines that touch it are VERIFY-LVN-173 (2 Oct 2026: its one sign 173 is
+M, "173 or 113", no value for list B) and the Revision log's quotation of AX-NAMES ("223 Harlem ... Groen IV CDLXVIII (5810)
+print"). status.json's grade field said so ("5810 not audited"). This section is therefore **Audit 1 for 5810** and **Audit 2
+for 5811 and 4503**.
+
+### DEF1.2 Verdict
+
+| item | date, place (WVO record, fetched 20:47 UTC today) | prior plaintext | class | key | text | depth |
+|---|---|---|---|---|---|---|
+| 5811 | 13 Apr 1574, Dordrecht; Orange (signed by Brunynck) to Lodewijk [and brothers]; KHAG A 3, 895/I | **yes**, Groen IV pp.364-366 Lettre CDLXXXIII, cited in WVO's own Brongegevens ("GPA IV, 364-366 nr. CDLXXXIII") | **N0 upheld** | period (R18 table rebuilt from the period decipherments of WVO 4613/4615) | known | **D2**, 39.9% (C 611 of 1530 non-null cipher tokens; U 53 M 785 I 81) |
+| 4503 | 15 Apr 1574, Gorinchem; Orange to Lodewijk; KHAG A 2, 723 A/I | **yes**, Groen IV pp.368-369 Lettre CDLXXXIV "(onv)" (with omissions), cited in WVO | **N0 upheld** | period (same table) | known | **D1**, 0% (M 219, I 7, U 11 of 237) |
+| 5810 | 6 Jan 1574, Vlissingen; Orange to Lodewijk; KHAG A 3, 895/I, "met een duplicaatschrijven" | **yes**, Groen IV pp.320-324 Lettre CDLXVIII, cited in WVO ("GPA IV, 320-324 nr. CDLXVIII") | **N0** (first class for this item) | period (same table) | known | **D1**, 0% (M 2697, I 103, U 222 of 3022 non-null) |
+
+Why N0 holds for all three: the holding catalogue (WVO, Huygens) links each cipher original to its Groen print entry by entry,
+and our readings align to those prints far above a matched control (DEF1.3). The V7 caveat (if Groen printed from a clear minute
+rather than a decipherment the class would read N1) is now weaker for 5810: Groen's own published correspondence (DEF1.4, family
+(b)) shows a correspondent in March 1847 discussing "de sleutel van den Franschen [brief] reeds ontcijferd" with footnotes to
+Archives IV p.320-4 and p.323 -- that is, a nineteenth-century decipherment of Orange's French cipher with its key, tied to this
+very letter's print. Snippet evidence only (Google Books, volume `t8Ru8AiCgCIC`, no page view); it supports N0 and changes no
+class. Nothing moves any item above N0.
+
+### DEF1.3 Alignment check (script, letters only, v/u j/i y/i folded, accents stripped, clear-text tokens removed, difflib)
+
+Reading files (`reading_<n>.txt`, `decode_wv2.json`; `tools/decode_key.py --config decode_wv2.json --check` "reading up to date",
+exit 0, 20:49 UTC) against the Groen letters on disk (`groen/`). Statistic: share of the reading's letters in matching runs of 8+.
+
+| reading | own print | controls (other Groen IV letters of 1573-74: CDLXVIII, CDLXXXIII, CDLXXXIV, CDXXXIII, CDXXIII, own excluded) |
+|---|---|---|
+| 5810 (2789 letters) | CDLXVIII **42.2%** (56.2% all matches) | 1.1-3.8% |
+| 5811 (1475) | CDLXXXIII **32.7%** | 1.5-3.2% |
+| 4503 (226) | CDLXXXIV **95.1%** | 4.0-16.4% |
+
+5810's and 5811's own-print figures sit near the 50% ceiling a single-pass alignment allows, because each manuscript carries the
+letter twice (WVO "met duplicaatschrijven") and Groen prints it once. The control can differ from the target on this statistic
+(rule 3): it changes the comparison text, which is what the statistic measures.
+
+### DEF1.4 Search log (5 Oct 2026; families new to Audit 1 marked *)
+
+| family | status | what | result |
+|---|---|---|---|
+| (d) Holding catalogue: WVO detail pages 5811, 5810, 4503 | searched | `wvo/app/brief?nr=<n>`, 3 requests 2.2 s apart | all three cite Groen IV by page and letter number (above); Opmerkingen "Grotendeels / Gedeeltelijk in cijferschrift"; no decipherment noted |
+| (a) Groen, Archives 1st ser. IV | searched | dbnl text on disk; Google Books phrase hits | the three prints confirmed; every 5810/5811/4503 phrase hit in Google Books is a copy of Groen IV (1837) |
+| *(a) Groen 1st ser. V and Supplément | searched (indirect) | Google Books full-text phrase search over every digitised Groen volume (the Archives scans are in GB) | no hit outside t. IV for any of the six phrases |
+| *(b) Gachard, Correspondance de Guillaume le Taciturne t. III (1851) | searched | IA `correspondancede03will` djvu text, table of contents and grep for Ziericxzee/Gorcum/Grave et Thiel/Jan-Apr 1574 | nearest letters are Orange to Noircarmes (Flushing 7 Jan 1574), to Middelburg garrison (11 Jan), to Mondragon (Bommel 23 Apr, Dordrecht 3 May); **none of the three letters** |
+| *(b) Groen's own correspondence, Schriftelijke nalatenschap, Briefwisseling II 1833-1848 (RGP, 1964) | searched (snippet) | Google Books API | letter 1078, C.M. van der Kemp to Groen, 1 Mar 1847: "De sleutel van den Franschen reeds ontcijferd medegedeelden brief ... Maar deze sleutel geldt niet voor den Duitschen brief", footnotes "6 Jan. 1574, Archives, IV, p. 320/4", "Archives, IV, p. 323", "... cijferschrift aan de Archives heeft gehad". A lead on who deciphered the French letters for Groen; not a print of a different text |
+| *(b) Blok, Correspondentie van en betreffende Lodewijk van Nassau (1887); Japikse | searched / not located | IA advancedsearch title query (0 records); Google Books names | no IA copy found by title; no edition of Orange's 1574 letters under Japikse located (his RGP editions begin later). Logged as not reached |
+| *(c) Juste, Histoire de la révolution des Pays-Bas; Le règne de Philippe II | found, not a print | IA be-api fts "Grave et Thiel" | paraphrase only ("troupes du prince d'Orange, postées entre Grave et Thiel"), no quotation of the letter |
+| *(e) IA full text (be-api fts) | searched | "Grave et Thiel", "rendition dudict Harlem" | only Groen IV copies (`archivesoucorre03pringoog`, `..03housgoog`, `..11pringoog`), a Dutch omnibus scan, and the two Juste books |
+| *(e) Google Books API (`country=US`, key) | searched | 9 quoted phrases + 2 keyword queries (incipits of all three letters, "rendition dudict Harlem", "Quant au Rittmaistre Schenk", "Escript à Gorichum ...") | only Groen IV 1837 copies, Groen's 1964 correspondence (above), Juste 1850/1868 (no quote) |
+| *(g) OpenAlex, Semantic Scholar, CORE, CrossRef | searched | 4 topic queries each (S2 one 429, not retried); CrossRef 3 phrases | nothing on these letters or their cipher |
+| *(f) Solver repos | searched | fresh shallow clones: dbourdeau/cyphersolver a439937, aaymeloglu/unsolved-ciphers d2800bb (cited, not copied); grep 5810/5811/4503/Lodewijk/Louis de Nassau/WVO | no row for these letters (only unrelated 1780s-1800s Dutch DECODE rows) |
+| *(g) JSTOR | queued | JSTOR-QUEUE.tsv: family (i) names + 1574 + cipher keyword; family (ii) bare phrases "prendre vostre chemyn entre Grave et Thiel", "depuis la rendition dudict Harlem", "sleutel van den Franschen" | never blocks an N0 |
+| Persée, HAL | not searched | box | an N0 floor cannot move up |
+
+### DEF1.5 Revisions after Audit 1, carried
+
+- **Revision log (26 Sept, AX-NAMES):** names.tsv and key_full were built partly *by aligning these three letters to Groen* (NULL
+  codes, 223 Harlem x4 in 5810, 241 Zeelande). Under key_full U falls 222 -> 30 (5810), 53 -> 23 (5811), 11 -> 2 (4503), words
+  disagreeing with Groen 0 (`axnames/sanity_*.out`). Consequence for this audit: those letters are in-sample for key_full, so
+  key_full's agreement with Groen on them is not independent evidence; the committed readings (`reading_<n>.txt`) are still the
+  key.tsv readings, and the depth figures above are taken from them. No class effect.
+- **Revision log v3 (26 Sept):** 127 kept NULL (C) against 4614's 'm' (its two "m hits" are 5810's "ville de Harle[m]"); 129 = m
+  rejected. No change to these readings' classes or depth.
+- **VERIFY-LVN-173 (2 Oct):** 5810's single 173 stays M ("173 or 113"), no list-B value. Carried; no effect.
+- **DEPTH-REGRADE (4 Oct):** did not grade results[64]; depth is set here for the first time.
+
+### DEF1.6 Depth (rule 4a)
+
+- **5811 D2** ("partially deciphered (about 40%)"). Check: every code value reads in two contexts (aligned on the period
+  decipherments of 4613/4615, read again in 5811), and the reading agrees with Groen's print (32.7% in runs of 8+ vs <= 3.2%
+  control). Longest C run: "donnerons ordre de vous accommoder de" (p1 L24, 32 tokens). Sentence: "Orange, writing from
+  Dordrecht on 13 April 1574, tells his brothers he has had their plan to bring their troops over by way of Grave and Tiel, and
+  is ordering his captains to assemble near Tiel to receive them."
+- **4503 D1** and **5810 D1** ("fragments read"): no token above M because the two blind passes left every digit uncertain; the
+  readings agree with the prints (95.1% / 42.2% in runs of 8+), but rule 4a counts graded tokens. The cheap lift V7 named (align
+  Groen's print to the tokens and regrade C, rule 4) has not been run; next: that alignment, ~$2.
+- Row depth (status.json results[64]): **D2** from 5811; depth_pct over all three letters 611 of 4789 non-null cipher tokens =
+  **12.8%**.
+
+### DEF1.7 Safe and unsafe sentences
+
+- **5810** safe: "Orange's letter of 6 January 1574 from Vlissingen to Lodewijk (WVO 5810) is printed in Groen van Prinsterer,
+  Archives IV, Lettre CDLXVIII (pp. 320-324); our reading under the 4613/4615 table is a re-decipherment that agrees with that
+  print." Unsafe: "an unread plea from besieged Middelburg", or any wording implying the text was unknown.
+- **5811, 4503**: V7.5's sentences stand unchanged.
+- Whole row: "Three 1574 letters of Orange to Lodewijk, all printed by Groen (1837), re-read under a key rebuilt from period
+  decipherments; one partially deciphered (about 40%), two in fragments." Unsafe: "partially deciphered (about 40%)" applied to
+  all three.
+
+### DEF1.8 Postmortem and corrections
+
+Failure: the result row named 5810 in its title from 24 Sept 2026 and carried "5810 not audited" in its grade field for eleven
+days, yet its novelty field read N0 for the row; no verifier was briefed on 5810 until this job. The class is N0 anyway (WVO
+cites the print, as V7.6 predicted for every GPA row). Corrections in place: status.json results[64] (5810 classed N0, audit_refs,
+audit_status, depth fields, grade-field note). Not changed: NOTES.md status word (`partial`); no SECOND-OPINIONS-QUEUE row (N0);
+no PROGRESS.tsv leaf rows exist for this target, none added.
+
+Requests: resources.huygens.knaw.nl 3; www.googleapis.com 20; archive.org 4 (advancedsearch 3, djvu text 1) and be-api.us.archive.org 5;
+api.openalex.org 4; api.semanticscholar.org 4 (one 429); api.core.ac.uk 4; api.crossref.org 3; github.com 2 clones. No subagents.
+
+`python3 tools/depth_check.py` after the status.json edit (exit 0; results[64] is N0, key-to-known-text, so not counted and
+not listed by line): "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0".
