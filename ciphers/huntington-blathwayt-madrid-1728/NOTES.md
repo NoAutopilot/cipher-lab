@@ -413,3 +413,11 @@ Confirmed (same night, owner): the result list starts at #224 (p.180); there are
 Polwarth V (msu.31293105166841, 472 scans, full view) are 1740s Marchmont letters. Polwarth V does not print BLA 191(a) or any
 1727-29 cipher letter: the "[ ] print: HMC Polwarth V" gap closes as a negative (search-inside "cypher" only; a "Pareti"
 search of V was not run). Hathi desk read H1 closed.
+
+## RUN6-BLATH: TNA Discovery API search for Paretti (LANE-RUN6 account-1 worker, 5 Oct 2026 05:03-05:05 UTC)
+Route: `discovery.nationalarchives.gov.uk/API/search/records` (JSON), 17 requests, >=1.6 s apart, no non-200. Control: `Madrid` in SP 94 -> 60 hits, `Keene` -> 56, so the series filter and API answer.
+- `Paretti`, `Pareti`, `Paretty`, `Abbe Paretti`, `Peretti abbe`, `Ripperda`, `cipher 1728`, each with series SP 94: 0 hits. `Paretti` with series SP 36 and SP 43: 0 hits.
+- Brief premise corrected: SP 94/36 is a 1620s piece (SP 94/32 = 1625), not 1728. The 1727-29 Spain pieces are SP 94/98 (1727 Mar-1728 Mar, "Francis Van Der Meer"), SP 94/99 (1728 Jan-Dec, "Benjamin Keene and Marquis de la Paz (to Keene)", C3665990), SP 94/100 (1729 Apr-Aug, "Benjamin Keene (Seville, Port St Maries), William Cayley (Cadiz) and John Parker (Corunna)", C3665991). Discovery catalogues these at piece level only (children listing of C3665990 empty), so a name search cannot see inside them: a non-test for item-level Paretti, not a negative.
+- Only Paretti/Pareti hits in State Papers: SP 78/176/39 (C7332296, 9 Apr 1725, Marchmont and Whitworth to Newcastle, "Abbé-Paretti", France series) and SP 78/211/56 (C7337693, 13 Mar 1736, Waldegrave to Newcastle, letter of introduction for "Abbé Pareti"; same name, identity unchecked). Neither is a copy or decipherment of BLA 186/191(a).
+- Not searched: SP 36/13-14 items by other terms, SP 98-100 (Discovery series check not run for SP 98), BL Newcastle papers.
+- Next (blocked from the cloud: needs item-level view of SP 94/99-100): page images or a reading-room check of SP 94/99-100 for Paretti letters, or the TNA SP 94 calendar if one exists; owner-side step, no ASKS row filed.
