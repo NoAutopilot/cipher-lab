@@ -4039,3 +4039,7 @@ collection most likely took this Cathcart record's extent (Erving appearing in i
 separate LOC "Erving papers" collection is confirmed. Not checked: the Cathcart container list (not pasted) and whether
 the 1807-1808 Madeira letterbooks touch Armstrong's Paris cipher. Next: one more desk look at the Cathcart container list
 for 1807-1808 letterbooks and any Erving/Armstrong entry (~5 min), else close ASKS 83 as "no Erving collection".
+Confirmed (same desk read, screenshot): the findingaids.loc.gov "Erving" search gives 18 results; the top one is the
+Cathcart Papers (MSS15388, 1785-1817), matched only through a note: "... George William Erving, and James Monroe. Receipts and
+accounts of funds dispersed by Cathcart on behalf ..." -- Erving appears as a party to Cathcart's accounts, not as a
+collection. The other 17 results were not pasted.
