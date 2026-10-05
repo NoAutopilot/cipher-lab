@@ -46,3 +46,17 @@ Then the f.23r passes run against the settled labels and the 6-line (7-row) alig
 
 
 Published 3 Oct 2026 ~10:47 UTC by the account-3 orchestrator (private Artifact, capabilities {"db": {}}): https://claude.ai/artifact/RxURcDEas5VU11B95kVoJo (ASKS 112).
+
+**Rebuilt 5 Oct 2026 (A4-SORTFIX, account 4): https://claude.ai/artifact/JXsSNDyRLhZT8AGoCMHmyD** (private Artifact, capabilities
+{"db": {}}). The first page's 21 check-first tiles asked "which sheet label?" but only 14 piles existed (no 0', v', o, D, t, Z ...),
+so they could not be placed (ROOM.md 5 Oct 22:52 flag). `sorter/add_cards.py` adds one grey **name card** per missing label -- every
+f.130 sheet label (f130/inventory.tsv) and every label a check-first reader offered: 1 m f w v' p z D al T h o div r . NEW:e-hook
+NEW:N-like 3 Z t -- and rewrites focus.tsv as focus_cards.tsv ("readers split 9 / 0'. Tap the 9 pile or the 0' pile ..."). Build:
+
+    python3 sorter/add_cards.py
+    python3 ../../tools/sign_sorter.py --signs sorter/signs_cards.tsv --labels sorter/labels_cards.tsv --pages sorter/pages \
+      --focus sorter/focus_cards.tsv --auto-clusters 6 --title "Dinteville f.23r Sign Sorter" --focus-note "..." --lede "..." --out <scratch>/din-f23r-sign-sorter.html
+
+(34 piles, 323 tiles = 303 signs + 20 cards, 2.5 MB; headless Chromium: R4.2 moved into the 0' pile, no page errors.) Sids of the 303
+signs are unchanged. **A name card is not a sign: drop every `card_` sid from the applied output** (`sign_sorter_apply.py` writes it like
+any tile). The old page (RxURcDEas5VU11B95kVoJo) belongs to another account and could not be read from account 4, so it was not replaced.
