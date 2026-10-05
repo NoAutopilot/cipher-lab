@@ -269,3 +269,24 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 14-15 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## HMC Supplementary Report on the Hamilton MSS (1932) pp.70-75 desk read (5 Oct 2026 03:59 UTC, owner borrowed archive.org supplementaryrep0000grea; LOCAL-QUEUE L7)
+
+Screenshots in the private repository (hamilton-1650/hmc-supp-1932/). What is printed:
+- p.70, editor's note under 'From "143" to [the Earl of Lanark]', [1648, March]: **"[The passages in italics on pages 70-4 are in
+  cipher in the original]."** So the 1648 letters to Lanark on pp.70-74 are printed **with their cipher passages already
+  deciphered** (in italics). Sender given only as code "143"; numbers left in clear in the text: "I sent you from 571", "229
+  which you will I hope finde safely done shortly".
+- Letters with italic (= cipher) passages: "143" to Lanark [Mar 1648] (pp.70-71); ---- to Lanark [Feb 1648] (pp.71-72, ends
+  "in companie with this I have at this tyme to trouble your Lo^p being in your first cipher with me"); ---- to Lanark [Mar 1648]
+  (p.72); ---- to Lanark [Apr 1648] (pp.72-74). Also printed, no italics: Lanark to Hamilton 26 May 1646; statement of money
+  owed by Charles I 1646-7; fragment [Apr 1648]; to the Lord Advocate 26 May 1648; Read and Black [Jul 1648]; Hamilton to
+  Belhaven 3 Jul 1648.
+- **No 1650 letter on these pages.** The four Charles II letters of Aug-Sept 1650 (this target) are not here.
+
+What it means for this target: not found-solved (wrong year). But the HMC editors had period decipherments (or a key) for the
+Lanark 1648 cipher in the Hamilton papers; italic passages are clear text of cipher stretches. If the 1648 Lanark cipher is a
+numeric nomenclator like the 1650 one, the printed italics are known plaintext only once the 1648 ciphertext itself is seen
+(GD406, NRS) -- the print gives no cipher figures. Next: (1) check the 1932 volume's index for 1650 entries and for "cipher"
+(the owner or a be-api fts search, ~$0.5); (2) compare the clear numbers 143/571/229 with the 1650 groups (163, 122, 223, 132
+...): no overlap in these three. L7 answered for pp.70-74.
