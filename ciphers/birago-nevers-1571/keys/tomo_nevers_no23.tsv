@@ -1,0 +1,28 @@
+# Nevers Collection cipher no.23 (BnF fr.3995 f.46-47, October 1589), the system Tomokiyo's blog post
+# "Variable-length Figure Cipher between Henry de la Tour and Duke of Nevers (1589, 1591)" (cryptiana.blogspot.com/2025/02/
+# variable-length-figure-cipher-between.html) identifies as the cipher of fr.3619 f.103. The post gives no table; the alphabet
+# below was read by TOMO-NUM (5 Oct 2026) from the period key itself, Gallica ark:/12148/btv1b525085665 canvas f95 (label 47r),
+# native crop pct:3,26,72,8 (keys/img/f95_alpha.jpg). Grade H for the key table (period key sheet).
+# design: variable length -- a-i single digits, m-u two digits with a dot over the tens digit; l is the letter 'x'; y a triangle.
+# Nulls: 0 (to be used most often), and 2 3 4 with two dots above. Words and names: 10-69 with an overbar (not transcribed).
+code	value
+3	a
+9	b
+4	c
+5	d
+2	e
+1	f
+8	g
+6	h
+7	i
+x	l
+79	m
+51	n
+97	o
+36	p
+42	qu
+18	r
+25	s
+84	t
+63	u
+0	_null_

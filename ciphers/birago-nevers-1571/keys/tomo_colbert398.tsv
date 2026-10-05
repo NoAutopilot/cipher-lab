@@ -1,0 +1,29 @@
+# Tomokiyo, "A Simple Numerical Cipher in Cinq Cent de Colbert 398 (1576-1577)", https://cryptiana.web.fc2.com/code/frenchnumerical.htm
+# table image sources/cryptiana/web/frenchnumerical.png (fetched 5 Oct 2026); his reconstruction, credited, transcribed here by TOMO-NUM.
+# office: French agent in Prague, letters to Catherine de Medicis 1576-77; language: fr; design: two-digit simple substitution, '7' (dotted both sides) = space
+# As printed: 31 appears under both a and m (kept as a|m; one is likely a slip in the table). y=11 and et=55 carry his '?'.
+# Nomenclature from his text: 23 elle, 38 et?. x and z cells are blank in his table.
+code	value
+31	a|m
+57	b
+52	c
+21	d
+47	e
+44	f
+26	g
+91	h
+54	i
+85	l
+66	n
+14	o
+84	p
+63	q
+18	r
+71	s
+59	t
+42	u
+11	y
+55	et
+23	elle
+38	et
+7	_space_
