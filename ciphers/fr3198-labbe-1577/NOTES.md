@@ -144,3 +144,34 @@ from the manifest; canvas 1 is 8400x5896 and ~7800x5600 after. Re-fetch: `python
 No decoding, no images viewed. Requests: gallica.bnf.fr 2 (SRU 1, manifest 1), both 200.
 Next (agent, ~USD 1.5): fetch the BnF archivesetmanuscrits record for fr.4695 (item list: does "no.51" = a piece number, with folio range and
 5 Feb 1577 date) to give --anchor canvas=folio pairs; then view the candidate leaf at native resolution via tools/iiif_lines.py. Status stays `blocked`.
+
+## D2-F3198 (5 Oct 2026, 23:02-23:08 UTC by date -u) -- fr.4695 no.51 located; it announces the cipher, but the key sheet is not bound with it
+
+Step 1 (Tomokiyo on disk) had already run (RUN6-LABBE, 0 hits); not repeated.
+Step 2, catalogue: the Gallica manifest's Relation field gives the BnF record, https://archivesetmanuscrits.bnf.fr/ark:/12148/cc57745v
+(curl, 200). Piece list: **"Fol. 116 . 51 Lettre de « D. LABBE » au duc de Nevers. Prague, 5 février 1577."** [FRBNFEAD000057745_d0e491].
+The record does not mention cipher. Neighbours: nos.47-50 Guazzo (ff.108ff), no.52-53 Guazzo (ff.118, 120), and a later l'Abbé sibling,
+**no.55, fol.125, "De Prague, ce 20 d'apvril 1577"** (also nos.40, f.94, Vienna 1 Apr 1576; 42-44, ff.98ff, Ratisbon Jul-Aug 1576).
+Canvas mapping (eye-checked folio stamps, 1000-px views): canvases are two-page spreads; canvas 118 = ff.108v/109r, canvas 125 =
+ff.115v/116r, 126 = 116v/117r, 127 = 117v/118r. So recto f.N sits on canvas N+9 in this range (anchor pairs 118=109r, 125=116r, 127=118r).
+Step 3, native crops (mandatory crop step, commands run):
+`python3 tools/iiif_lines.py --ark btv1b90582923 --canvas 125 --region 3780,0,3500,5400 --lines-per-crop 6 --prefix f116r --out ciphers/fr3198-labbe-1577/images`
+`python3 tools/iiif_lines.py --ark btv1b90582923 --canvas 127 --region 600,1900,3200,700 --lines-per-crop 8 --prefix f117v_date --out ciphers/fr3198-labbe-1577/images`
+(the line finder caught only 16 of ~45 lines on f.116r; the fetched native region was read in four strips instead).
+
+What the leaf is: no.51 runs ff.116r-117v, four pages of clear French in l'Abbé's hand. f.116r opens with receipt of Nevers's letters of
+14 November via "le s.r Ancel secretaire du Roy", the condolences for the late emperor, and the s.r Barquin. Read at native resolution on
+f.116r, line ~22: **"Je vous envoye presentement la chiffre affin que ie vous puisse escripre plus librement."** f.117v ends "... de Prague
+ce 5.e de febvrier 1577", a postscript naming "s.r Rina", the subscription "D. L'Abbé", and the address "A Monseigneur ... le duc de Nevers"
+with a dorse endorsement. f.118r is Guazzo's Italian letter (no.52).
+Cipher: no numeral cipher groups seen on f.116r (native strips) or on ff.116v-117v (1000-px views only, not native -- small inserted groups
+there are not excluded). **No key sheet / cipher table is bound at ff.116-117**: the enclosure the letter announces is not with it in fr.4695.
+So this letter confirms that a key went from l'Abbé to Nevers with the 5 Feb 1577 dispatch (consistent with the 2 March letter's "copie de
+la chiffre que je vous envoyay avec mesdictes dernieres"), but it is not itself a crib or key source.
+Not decoded; no transcription. Not found: the key sheet, in fr.4695 ff.115v-118r.
+Requests: gallica.bnf.fr 7 (manifest 1, 1000-px views 4 [canvases 118, 125, 126, 127], native regions 2 via iiif_lines), archivesetmanuscrits.bnf.fr 1; all 200.
+
+Next steps (one-line suggestions, not run): (a) no.55, f.125 (canvas 134 by the +9 offset, Prague 20 Apr 1577, after the key arrived):
+one native view for inserted numeral groups -- a third cipher letter in the same key, ~USD 1; (b) the detached key sheet may be in another
+Nevers volume: search the archivesetmanuscrits fr.3198-3200 / fr.4695-4715 piece lists for "chiffre" with l'Abbé's name, ~USD 1.
+Status stays `blocked` (line 1).
