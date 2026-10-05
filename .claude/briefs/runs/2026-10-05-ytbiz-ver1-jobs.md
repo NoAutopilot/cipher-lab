@@ -70,3 +70,16 @@ the items you audit if absent (one row per leaf).
 "11 C confirmed" (N9-COSV, 5 Oct; VER-GRACOS 4 Oct key-grade check). Novelty audit (Audit 1 if none in AUDIT.md assigns an N-class,
 else Audit 2), depth, PROGRESS.tsv row if absent. Sources: Este ambassadors' dispatches editions (Dispacci degli ambasciatori
 estensi, Carteggio degli oratori), Archivio di Stato di Modena inventories, DECODE record pages (login-free listing only).
+
+# Wave 2 (written 18:2x UTC; spawned only as wave-1 spend allows)
+
+## VER1-NOX -- fr16142-noailles-constantinople-1571, the basin reading (cap 5, box 60 min)
+No AUDIT.md yet. Readings: N8-NOX basin, N8-NOX2 key tie, RUN6-NOXREAD reader-sign decode (PASS, thin) -- NOTES.md "Remaining
+gaps". Audit 1: N-class for what is actually read (Charriere, Negociations dans le Levant III, prints much of this correspondence --
+NOTES.md top -- so check whether the c262 plaintext is in Charriere), key source, depth (expect D0/D1 unless a clause above the AD
+reads). Write AUDIT.md; status.json row if absent; PROGRESS.tsv row (one per letter/leaf actually read).
+
+## VER1-REG -- register fixes + Janssens audit 2 (cap 5, box 60 min)
+(a) na-schonenberg-1678-1716: AUDIT.md (2 Oct) classes the leaf N0, but PROGRESS.tsv col `1` = '.': set it from AUDIT.md,
+source = AUDIT.md; depth_check fields in status.json if missing. (b) na-janssens-java-1811: Audit 2 on Audit 1 (A3V-VJAN, N1).
+(c) fr3993-gonzague-nevers-1595: Audit 2 on A3V-VNV01. Each a separate AUDIT 2 section; stop at cap with what is done.
