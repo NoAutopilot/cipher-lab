@@ -325,7 +325,6 @@ exit 0
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 11 Beckwith/Kimber/Caldwell entries in Cipher No. 2 (section 8 and DEF1-ECK64, 5 Oct 2026: H 273, C 6, I 10, M 1, `decode_no2.py --check` exit 0); the rest of the ledger untranscribed.
-- Cipher No. 2 data conflict: Spit = Near in key-no2.md (p.22 l.26 R) but OR I/33 p.982 prints "men" in N2-E - blocker: not-attempted; found by DEF1-ECK64 5 Oct 2026 after its brief was met; next: re-read p.22 l.26 of mssEC 47 (pointer 580) and the same row in mssEC 48 at full size, ~$1
 - corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
 - Jan-Feb 1864 entries in the old vocabulary - blocker: not-attempted; section 5; next: read mssEC 67 (No. 9) or the No. 12 template and decode a sample of entries (cost not given in the folder; estimate), ~$3
 
@@ -335,9 +334,9 @@ Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H
 - [x] known-keys: Cipher No. 1 (mssEC 41) and Cipher No. 2 (mssEC 47) are the period key books in use
 - [x] print: OR series I sweep, ORN, Butler and Fox correspondence, Lincoln Collected Works (section 4, AUDIT.md)
 - [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries
-- [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026)
+- [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026); N2-E Spit re-read in mssEC 47, mssEC 48 and the ledger (D2-ECK64S, 5 Oct 2026: Spit = Near in both books, ledger Spit; conflict logged, not resolved)
 - [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
-Verdict: keep going: 2 internal gaps; cheapest next: the Spit/men conflict in Cipher No. 2 (re-read mssEC 47 p.22 l.26 and mssEC 48), ~$1 (updated DEF1-ECK64, 5 Oct 2026: the eight Beckwith/Kimber/Caldwell entries are read)
+Verdict: keep going: 1 internal gap; cheapest next: Jan-Feb 1864 entries in the old vocabulary (read mssEC 67 or the No. 12 template, decode a sample), ~$3 (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
 
 ## mssEC 18 check for E4/E5 copies, 5 Oct 2026 (RUN6-ECK, LANE-RUN6 wave 2)
 
@@ -378,3 +377,19 @@ listed in reading-no2.md -- a search result only, other volumes and editions not
 (rule 10). One data conflict: N2-E "Clarke Dwight Spit" decodes "6000 Near" with the book's Spit = Near, the OR prints
 "6,000 men"; logged in Remaining gaps, the key row is not changed. A be-api full-text phrase search (8 requests, one
 503, not retried) gave no further hits. Requests: hdl.huntington.org 11, archive.org 5, be-api.us.archive.org 8.
+
+## Spit/men in N2-E: both key books and the ledger re-read, 5 Oct 2026 (D2-ECK64S, LANE DEFAULT-account-1-20261005-2217)
+
+Intake gate (`python3 tools/intake_gate_check.py eckert-1864`, 23:19 UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+Crop step, as run (scratch, not committed; regenerable): Huntington IIIF regions at native resolution, `.../p16003coll11/580/1700,5500,3000,900/1500,/0/default.jpg` (mssEC 47 p.22 l.26) and `.../626/2200,5550,2700,500/1500,/0/default.jpg` (mssEC 48 p.22 l.26; mssEC 48 = object 636, page 22 = pointer 626, from `dmGetCompoundObjectInfo/p16003coll11/636`), plus the whole mssEC 48 p.22 at 1000 px to check the row order; ledger line from the committed image, `python3 tools/iiif_lines.py --image ciphers/eckert-1864/images/mssEC19_p8950.jpg --out $S/k2 --prefix E --region 120,100,2400,1080 --centres 50,154,...,986 --lines-per-crop 2 --max-width 2400` (crop E_L04). Read by the worker directly, one eye; no subagent.
+
+Witnesses:
+- mssEC 47 (Cipher Book #2, holders Eddy, Fuller, Caldwell, Beckwith, McCaine) p.22 l.26 right column: handwritten "Near", printed code word "Spit". Unambiguous at native size.
+- mssEC 48 (sister copy, holders Eckert, Beckwith, Stager, Bulkley) p.22 l.26 right column: handwritten "Near", printed "Spit". The whole page matches mssEC 47's rows as transcribed in key-no2.md (Summer = Men at l.20 L in both; Spoon = North, Spit = Near at l.26).
+- mssEC 19 p.58 (pointer 8950), N2-E, line 5: "Caldwell or Clarke Dwight Spit from Bedford to Jaunt &" -- the sender's code word is clearly Spit, not Summer or another Men word.
+- OR I/33 p.982 (Halleck to Grant, Washington, 26 Apr 1864, 2 p.m.): "5,000 or 6,000 men" (as recorded by DEF1-ECK64; not re-fetched here).
+
+Result: not a transcription error on our side and not a difference between the two key books. Both period key books give Spit = Near; the ledger's code word is Spit; the printed clear text has "men". The likeliest account is a slip by the encoding clerk in Washington (Men's own code words Summer, p.22 l.20 L, sits six rows above on the same page) that the receiving operator corrected from sense, but nothing in the four witnesses shows that, so it is not asserted. Rule 4: logged as a data conflict with its witnesses, not settled by majority; key-no2.md's row Spit = Near stays H (both books), and the N2-E token stays as the key reads it ("Near"), with the print's "men" recorded beside it in reading-no2.md. No grade count changes; `python3 decode_no2.py --check` exit 0 after this edit. What would settle it: the received copy at Grant's headquarters (Beckwith's received book or deciphered copy), if one survives; not searched here.
+
+Requests: hdl.huntington.org 5 (2 IIIF regions, 1 info.json, 1 page at 1000 px, 1 compound-object info), all 200.
