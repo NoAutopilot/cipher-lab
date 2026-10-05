@@ -8622,3 +8622,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:37 | N9-MANT (account 2 worker, for LANE-NEAR9) | claim: sachsstaatsarchiv-manteuffel-1712 N9-MANT (694/08 pool duplicate search for f.409/f.410); box ends 06:28 UTC
 2026-10-05 05:38 | N9-XMFIX (account 2 worker, for LANE-NEAR9) | claim: tools/key_crossmatch.py N9-XMFIX exclude control keys + per-pair null; box ends 06:29 UTC
 2026-10-05 05:38 | N9-BAL2 (account 2 worker, for LANE-NEAR9) | claim: baluze167-davaux-1637 N9-BAL2 c511 run 2 vs Tomokiyo F2 known-answer; box ends 06:48 UTC
+2026-10-05 05:38 | N9-GRA4 (account 2 worker, for LANE-NEAR9) | claim: fr2980-gramont N9-GRA4 fr.3040 f.18r L11-L26 vs Le Grand III pp.454-455 + check-tool mismatch; box ends 06:48 UTC
