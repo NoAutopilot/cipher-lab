@@ -234,6 +234,45 @@ def guard_test(argv):
     return out
 
 
+def print_free(argv):
+    """DEF1-ECK62P: the OR matcher over the 79 print-free readings (readings_free.md), real dates vs 20 date permutations."""
+    ordir = argv[argv.index("--print-free") + 1]
+    cls = {l.split("\t")[0]: l.split("\t")[9] for l in (HERE / "readings_free.tsv").read_text().splitlines()[1:]}
+    es, md = [], (HERE / "readings_free.md").read_text().split("\n")
+    for i, l in enumerate(md):
+        m = re.match(r"\*\*([\d.]+)\*\* \(Page \d+, (\d+)-(\d+)-(\d+);", l)
+        if m:
+            w = words(plain_of(md[i + 2]))
+            es.append({"id": m.group(1), "date": tuple(int(x) for x in m.groups()[1:]),
+                       "grams": {" ".join(w[k:k + 5]) for k in range(len(w) - 4)}})
+    vols, pos = or_index(ordir, set().union(*(e["grams"] for e in es)))
+    dates = {e["id"]: e["date"] for e in es}
+    real = match(es, vols, pos, dates)
+    rng, ids, perm = random.Random(SEED), [e["id"] for e in es], []
+    for k in range(20):
+        sh = ids[:]
+        rng.shuffle(sh)
+        perm.append(len(match(es, vols, pos, {a: dates[b] for a, b in zip(ids, sh)})))
+    out = ["id\tdate\tclass\tgrams\tor_vol\tor_page\tgrams_matched\tbest_any_date_vol\tbest_any_date_grams"]
+    for e in es:
+        best = max(((len({g for g in e["grams"] if any(v == vv for vv, _ in pos.get(g, ()))}), v) for v in vols),
+                   default=(0, "-"))
+        r = real.get(e["id"])
+        out.append(f"{e['id']}\t{'-'.join(map(str, e['date']))}\t{cls.get(e['id'], '?')}\t{len(e['grams'])}\t"
+                   + (f"{r[0]}\t{PAGE[r[0]][r[2]]}\t{r[1]}" if r else "-\t-\t0") + f"\t{best[1]}\t{best[0]}")
+    out.append(f"# OR vols {','.join(sorted(vols))}; matched (real dates) {len(real)}/{len(es)}; "
+               f"20 date permutations: {sorted(perm)}; min grams {MIN}")
+    txt = "\n".join(out) + "\n"
+    if "--write" in argv:
+        (HERE / "print_free.tsv").write_text(txt)
+    elif "--check" in argv:
+        if (HERE / "print_free.tsv").read_text() != txt:
+            print("stale: print_free.tsv")
+            return 1
+    print("\n".join(l for l in out if l.startswith("#") or "\twords\t" in l or "\t-\t-\t0" not in l))
+    return 0
+
+
 def main(argv):
     base = ROOT / "ciphers" / "eckert-1864"
     ok = tot = bad = 0
@@ -291,6 +330,8 @@ def main(argv):
         return assign_free(argv)
     if "--read-free" in argv:
         return read_free(argv)
+    if "--print-free" in argv:
+        return print_free(argv)
     data, ordir = argv[0], argv[1]
     bk = "2" if "--book" in argv and argv[argv.index("--book") + 1] == "2" else "1"
     other, sfx = ("1" if bk == "2" else "2"), ("_b2" if bk == "2" else "")

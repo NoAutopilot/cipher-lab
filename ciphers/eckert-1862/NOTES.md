@@ -1272,3 +1272,66 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries image-checked 5 Oct 2026 (DEF1-ECK62I, ec18/image_check.tsv: transcription confirmed 8/8)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 5 internal gaps; cheapest next: print-check the 2 word-clean print-free readings (9910.423, 9971.546) against OR vols. 41-46, ~$1; then the Lehigh key-page check, ~$2
+
+## DEF1-ECK62P (5 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261005-2039): print check of the two word-clean print-free readings; Lehigh on the key page image
+
+The two named next steps of DEF1-ECK62I's Verdict only.
+
+**(1) Print check.** New option `ec18.py --print-free ORDIR --write|--check` (`--check` exit 0): runs ec18.py's own matcher
+(`or_index` + `match`, 5-grams, >= 4 in one 400-word block, the entry's date within the preceding 1,500 words) over all 79
+readings in `readings_free.md`, real dates vs 20 date permutations (seed 18), output `ec18/print_free.tsv`. ORDIR = OR ser. I
+vols. 41.1-46.3, the 15 `_djvu.txt` of `or_volumes.tsv`, re-fetched to scratch, every sha256 matching the table (not committed).
+- Control: 27/79 entries match on their real dates; under 20 date permutations 0-4 (max 4). The matcher's hits are dated hits.
+- 9910.423 (book 1f, 8 Dec 1864): OR ser. I vol. 45 pt 2 p. 97, Halleck to Maj. Gen. Dodge, Saint Louis, 8 Dec 1864, 9 p.m.
+  (18 five-grams). Print: "Send all the troops you can spare to General Thomas by such route as you may deem best. They can be
+  returned to you when required. I think 5,000 men can be spared from Missouri." Brackets vs print: [8] date, [Troops], [Maj
+  Gen Geo. H. Thomas], [5000], [Men], [Missouri] agree; [General in Chief] stands for the signature (print: H. W. Halleck,
+  Major-General and Chief of Staff; the key's office title predates Halleck's March 1864 change of post, read as the sender,
+  not a conflict); [McMinnville] disagrees: the print has the addressee "Major-General Dodge", and Dodge = McMinnville in key.md
+  p.13 l.15 -- the same clear-name collision DEF1-ECK62I confirmed on the image for 9947.505 and 10020.609 (C, clear, print).
+- 9971.546 (book 2f, 4 Mar 1865): OR ser. I vol. 46 pt 2 p. 834, Halleck to Maj. Gen. Hancock, Winchester, 4 Mar 1865, 10.30
+  a.m. (12 five-grams). Print: "One new regiment from States east of Ohio is ordered to Baltimore. All others from such States
+  will be sent to such points as you may indicate to the Adjutant-General of the Army." All 11 body brackets agree ([1],
+  [Regiment], [East], [Ohio], [Order], [Baltimore], [Will be sent], [Point], [Adjutant General], [Of the], [Army]); tail
+  [General in Chief] = Halleck's signature as above. Two unbracketed words disagree with the print: "Minister" where the print
+  has the addressee (Hancock, Winchester) and "shoe" where it has "you" -- in-vocabulary words the word-clean rule
+  (`oov == 0`) cannot flag; neither is in key-no2.md. Not settled (no image read in this job).
+- So both print-free book assignments (1f, 2f) are confirmed by print for these two entries (book grade S -> C for them); their
+  agreeing bracketed tokens are C (known plaintext). Counts: 9910.423 C 7 (incl. signature), 1 clear-name collision (Dodge, C as
+  clear); 9971.546 C 12, 2 unkeyed words unresolved (M). The other 25 dated matches (all class 'not') are listed in
+  print_free.tsv and were not aligned (not in the brief; suggestion: align them with ec18_align.py, they include 9904.410 at 42
+  five-grams and 9991.571 at 47).
+
+**(2) Lehigh on the key page.** Huntington IIIF `p16003coll11/334/full/full/0/default.jpg` (mssEC 41 p. 17, native 2295 x
+3000), fetched once to scratch. Crop step (pasted): `python3 tools/iiif_lines.py --image p334.jpg --region 510,670,1290,210
+--out crops334 --prefix lehigh --max-width 2400` -> 2 lines (Leghorn, Lehigh); the Lehigh row committed as
+`images/ec18-check/mssEC41_p334_l6_Lehigh.jpg`. Read: "Lehigh .... -do -do -do .... Leopard", ditto marks under row 5's
+"Maj. Gen. S. A. Hurlbut"; no correction, interlineation or second hand on the row (the faint marks below are show-through).
+key.md p.17 l.6 (Hurlbut, H) is therefore what the book says. The conflict persists and is logged, not settled (rule 4):
+- Witness A (key): mssEC 41 Cipher No. 1, filled-in book, p.17 l.6 L: Lehigh = Maj. Gen. S. A. Hurlbut (ditto), image-checked
+  5 Oct 2026.
+- Witness B (print + sent ledger): mssEC 18 9947.505 (Lehigh, OR "general Canby") and 10020.609 (lehigh, OR "can be provided"),
+  both sent from Washington, 1865 (dates as `ec18/image_check.tsv`), ledger image confirmed by DEF1-ECK62I.
+- Inference only (grade I, not used): both print values are the sound "Canby"; a later issue or local re-assignment of Lehigh to
+  Canby, then used as a sound-alike for "can be", would fit both. Hurlbut served under Canby in 1865, which could also explain a
+  ditto-row change. The received copies of 27 Jan and 24 May 1865 and any later edition of the book were not checked here.
+Requests: hdl.huntington.org 1 (IIIF), archive.org 15 (+15 empty first attempts without -L, no data), >= 1.6 s apart; 0
+subagents. Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, DEF1-ECK62P, 5 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries (14 in OR, H 369 C 2) and 17 fully keyed Cipher No. 2 entries (12 in OR), from the volunteer text, read with the possessive option and collision guard (RUN3-ECK62); 79 of the 192 '?' entries given a book at S (RUN6-ECK62) and read with it (RUN6-ECK62R: S 1229, I 4; 2 word-clean, both now matched to OR 45.2 p.97 and 46.2 p.834, DEF1-ECK62P; 27/79 dated OR matches vs 0-4 shuffled); six collision/conflict entries image-checked (DEF1-ECK62I: C 5, M 3); Lehigh key row image-checked (DEF1-ECK62P: Hurlbut, conflict persists)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; mssEC 18 read by text with both books, aligned to OR, possessive and guard applied (RUN3-ECK62); six collision/conflict entries image-checked (DEF1-ECK62I); Lehigh key row read on mssEC 41 p.17 (DEF1-ECK62P): the book says Hurlbut, two 1865 sent telegrams print Canby/"can be" -- rule-4 conflict logged with witnesses, held M; next: the received copies of the 27 Jan and 24 May 1865 telegrams (Eckert received ledgers) for a third witness, ~$2
+- 77 print-free-assigned mssEC 18 entries not word-clean (RUN6-ECK62R) - blocker: not-attempted; 25 of them match OR on their own dates (ec18/print_free.tsv, DEF1-ECK62P) but are not aligned; next: align those 25 with ec18_align.py (C-grade tokens, book confirmation), ~$2; then image-reconcile the 16 with oov <= 2
+- 113 mssEC 18 entries still '?' (margin < 2 under both instruments) - blocker: not-attempted; no pre-registered rule decides them (RUN6-ECK62, ec18/assign_free_summary.tsv); next: the --print-free matcher on them with both books (a dated OR match decides the book from print), ~$1
+
+## Escalation (DEF1-ECK62P, 5 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [x] known-keys: Lehigh row checked on the mssEC 41 key page image 5 Oct 2026 (DEF1-ECK62P: Hurlbut, conflict with print logged per rule 4); 79 '?' entries assigned and read (RUN6-ECK62, RUN6-ECK62R)
+- [ ] print: OR vols. 5, 7-12, 51, 53, Nicolay-Hay, Grant Papers vol. 4 done for 1862; OR ser. I vols. 32-49 for mssEC 18 (A3V3-ECK18, A3V3-ECK2, A3V3-ECKC); print-free readings matched to OR 41-46 (DEF1-ECK62P: 27/79 dated); next: align the 25 unaligned dated matches, ~$2
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 5 internal gaps; cheapest next: --print-free matcher on the 113 '?' entries with both books, ~$1; then align the 25 dated print-free matches, ~$2
