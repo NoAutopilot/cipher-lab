@@ -420,6 +420,15 @@ mirrors) and only then ask. Lesson: a HathiTrust volume link left him facing "a 
   academia.edu download or a catalogue lookup goes to the owner's local runner first (owner, 5 Oct 2026: the Claude browser runner that did the 4 Oct JSTOR runs, not the ChatGPT one), as a LOCAL-QUEUE.tsv row (kinds
   ia-reader, hathitrust, catalogue-lookup ...; tools/local_queue_runner_prompt.md), not to the owner's desk. The owner gets
   it only if the runner fails or the step needs his own judgement (a hand comparison, a decision, a payment, a form in his name).
+- Machine first, then the owner (owner, 5 Oct 2026: "what's the divider between human does this and AI tried really
+  hard itself first"). A transcription or image task reaches the owner's board only when ALL hold, each written on the
+  card's source row: (1) the cloud tried the largest image the host serves (IIIF full/max) or is blocked (host table);
+  (2) the runner (LOCAL-QUEUE / ChatGPT browser) was tried or cannot do it (judgement, payment, his name); (3) two blind
+  machine passes ran and still split > 10% on signs, or the inventory is unsettled (TRANSCRIPTION.md); (4)
+  tools/lookalike_pass.py ran on the named split pairs; (5) the third-attempt clause (rule 3) has not already retired
+  the step; (6) the page/link was opened from the owner's account view and its question is answerable (named piles
+  exist, right leaf, Fix the cut present) -- the 5 Oct Dinteville / MLH links failed (6). A card missing any of these is
+  the brief's error and goes back to a worker, not to the owner.
 - Zoom-shot desk card (owner, 5 Oct 2026): when a reading is blocked by image resolution and the host blocks the cloud
   or serves only a small image (BNE, RAH, DECODE, HathiTrust, Folger, any viewer behind a challenge), the owner's zoomed
   screenshots are a standard board card (Ferdinand 1478 got from an unreadable 120 ppi PDF to a briefable transcription
