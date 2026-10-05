@@ -15,3 +15,6 @@ Publish to the private gallery, add the board card (desk kanban GNMEYAR5C1ZeBHvJ
 CORRECTION (parent, 5 Oct 05:0x UTC, owner spotted it): specimens/gurney1752_specimen_p6.jpg is a page of running instruction text,
 not a sign chart -- do not use it as system C. Find Gurney's real character plate (archive.org, or h24/h28 folders); if none, drop C
 and say so in NOTES. Check each other specimen is a real sign chart (Byrom p12 is prose with an inline alphabet: prefer a plate).
+ADD (parent, 05:1x UTC, owner's verdict): Armstrong's marks are joined cursive runs; every chart shows isolated engraved signs. For
+each system also show one engraved *connected-writing specimen* (a written passage in that system) beside a full Armstrong line, and
+ask "same family as written?" -- not only the alphabet cells.
