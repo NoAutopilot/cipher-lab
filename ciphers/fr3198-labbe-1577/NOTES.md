@@ -126,7 +126,7 @@ Queries (WebSearch, standard, 3 Oct 2026): (1) `Desiderio l'Abbé Nevers Prague 
 
 ## While waiting
 
-The one action that depends on nobody: Tomokiyo's fr.4695 pages (bnf4715.htm and neighbours on disk) searched for the 5 Feb 1577 no.51 key, disk-only, ~USD 0.3; then a Gallica fr.4695 manifest lookup (1 request). Status stays `blocked`.
+The one action that depends on nobody: search the archivesetmanuscrits piece lists of the other Nevers volumes (fr.3198-3200, fr.4696-4715) for l'Abbé letters of Feb-Apr 1577 (detached key sheet of 5 Feb; the letter of 17 Apr 1577 cited on fr.4695 f.125r), catalogue-only, ~USD 1 (D2-F3198B, 5 Oct 2026). fr.4695 nos.51 and 55 are done: both clear, no key bound. Status stays `blocked`.
 
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
@@ -175,3 +175,27 @@ Next steps (one-line suggestions, not run): (a) no.55, f.125 (canvas 134 by the 
 one native view for inserted numeral groups -- a third cipher letter in the same key, ~USD 1; (b) the detached key sheet may be in another
 Nevers volume: search the archivesetmanuscrits fr.3198-3200 / fr.4695-4715 piece lists for "chiffre" with l'Abbé's name, ~USD 1.
 Status stays `blocked` (line 1).
+
+## D2-F3198B (5 Oct 2026, 23:38-23:43 UTC by date -u) -- fr.4695 no.55, f.125r (Prague 20 Apr 1577): clear, no cipher groups
+
+Canvas check (1000-px view): canvas 134 = f.124v (left; an Italian letter's address to Nevers, endorsed "... 9 mag 1577") / **f.125r** (right;
+stamp "125", older foliation "114" struck). The +9 recto offset of D2-F3198 holds here (anchor pair 134=125r). Canvas 135 = f.125v / f.126r
+(stamp "126", older "131" struck); f.125v is blank (show-through only), so no.55 is a single leaf with no address or endorsement on its verso.
+Native crop (mandatory crop step, command run):
+`python3 tools/iiif_lines.py --ark btv1b90582923 --canvas 134 --region 3950,200,3700,3500 --lines-per-crop 6 --prefix f125r --out ciphers/fr3198-labbe-1577/images`
+(15 lines found, 6 crops; the whole native region was also read in four strips).
+What the leaf is: a short letter (14 lines) in clear French, headed "Monseigneur", signed "D. Labbé", dated **"De Prague ce 20e d'apvril 1577"**.
+It opens "Vous ayant ia escrit une lettre par ce mesme pourteur" (an earlier letter by the same bearer), mentions an ambassador
+("l'amb.deur de [struck word] [name, reading uncertain]") gone toward the Palatine elector and then to Vienna, that the emperor's departure will not be
+before 4 May and the English ambassador's "ce iourd'huy", and refers to "mesdictes precedentes du 17e du present" (a letter of 17 Apr 1577).
+Readings above are from the image, uncertain words marked, not a transcription.
+Cipher: **no numeral groups or cipher signs on f.125r at native resolution**, none on f.125v (blank). No key sheet. So no.55 is not a third
+cipher letter in the key sent on 5 Feb 1577; it is not a crib source either (it has no enciphered passage to align). It does point to an
+unlocated l'Abbé letter of **17 Apr 1577** ("mesdictes precedentes du 17e du present"), which is not among the fr.4695 pieces the BnF record lists
+around ff.94-125 (nos.40, 42-44, 51, 55) -- searched by D2-F3198's read of the cc57745v piece list, not re-fetched here.
+Not decoded. Not found: cipher groups or a key, on fr.4695 f.125r-v.
+Requests: gallica.bnf.fr 3 (1000-px views of canvases 134 and 135, native region 1 via iiif_lines); all 200.
+
+Next steps (one-line suggestions, not run): (b) of D2-F3198 stands -- search the archivesetmanuscrits piece lists of the other Nevers volumes
+(fr.3198-3200, fr.4696-4715) for l'Abbé letters of Feb-Apr 1577 (the detached key sheet; the 17 Apr letter), ~USD 1; the 20 Apr leaf removes
+option (a). Status stays `blocked` (line 1).
