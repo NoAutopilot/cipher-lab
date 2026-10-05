@@ -359,8 +359,9 @@ def audit(passa, passb, passc, conf_path, sample, plant, seed, k, include, crops
     for ln in used_lines:
         seq = seqs[ln]
         for i, tok in enumerate(seq):
-            if tok.startswith('['):
-                ctx[int(tok[1:].split(':')[0])] = (' '.join(seq[max(0, i - 3):i]), ' '.join(seq[i + 1:i + 4]))
+            m = re.match(r'\[(\d+):', tok)  # an audit bracket; a transcription's own [PLAIN:...] token is not one
+            if m:
+                ctx[int(m.group(1))] = (' '.join(seq[max(0, i - 3):i]), ' '.join(seq[i + 1:i + 4]))
     ids = sorted({c for it in items for c in it['candidates'].split(',')})
     order = [c['id'] for c in json.load(open(sheet_map))]
     cand_png = os.path.join(out, f'{run}_audit_candidates.png')

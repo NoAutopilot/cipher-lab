@@ -4,7 +4,7 @@
    (a sign dropped by reader A shifts the alignment instead of breaking the rest of the line).
 2. audit (case it must catch): --include positions are always audited and never planted; plants are swapped to the
    label's top confusion partner and keep the original among the candidates; the prompt carries ids only (no sheet-map
-   value) and brackets the audited positions.
+   value) and brackets the audited positions; (case it must NOT trip on) a [PLAIN:...] token in the reading is context.
 3. audit-score, the fixed rule: a firm pick != shown flags; a planted item is caught only when the pick is the original;
    (case it must NOT count) an L, SPLIT or X_NEW answer is never a flag; a catch below the gate reports NON-TEST and the
    CLI exits 3; with a truth file, fixed / broken are counted on unplanted items only and --out-corrected applies flags.
@@ -69,6 +69,16 @@ try:
                                     for i in planted), '2b plants swapped to top partner, original kept as candidate')
     prompt = open(os.path.join(out, 'T_audit_prompt.md')).read()
     check('VAL' not in prompt and prompt.count('[') >= 10, '2c prompt value-blind, audited positions bracketed')
+
+    # 2d (case it must NOT trip on): a transcription's own bracketed token ([PLAIN:Et], D2-C1161AUD 5 Oct 2026) beside an
+    # audited position under --hide-passc is context, not an audit bracket
+    Cp = [('X_L01', 1, '[PLAIN:Et]')] + [(l, p + 1, s) for l, p, s in C if l == 'X_L01']
+    tsv(os.path.join(tmp, 'pP.tsv'), H, Cp)
+    resp = run('audit', '--passa', os.path.join(tmp, 'pP.tsv'), '--passb', os.path.join(tmp, 'pP.tsv'),
+               '--passc', os.path.join(tmp, 'pP.tsv'), '--confusion', conf, '--sample', '9', '--plant', '0',
+               '--seed', '3', '--sheet', sheet, '--sheet-map', smap, '--out', os.path.join(tmp, 'outP'), '--run', 'P',
+               '--hide-passc')
+    check(resp['items'] == 9, f'2d [PLAIN:..] token in the reading does not break the audit prompt {resp}')
 
     # 3. score: answer every item; planted: catch all but one; unplanted: flag one firm, one L, one SPLIT, one X_NEW
     rows, unpl = [], [i for i in items if i['planted'] == '0']
