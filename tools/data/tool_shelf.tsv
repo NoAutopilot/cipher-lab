@@ -97,3 +97,4 @@ families/seeded_code.py	instrument	controlled-only	two-part code of syllables an
 families/syllabary.py	instrument	controlled-only	partial syllabary, a mark on a consonant is the following vowel; code plus mark	DSN/DSN2 controls collapse between 7% and 10% injected error (SALV-DIAG, CLAUDE.md rule 3)	-
 families/wordcode.py	instrument	controlled-only	letter-or-word nomenclator inside sign runs	family_run.py control rows in 3 HYPOTHESES.md files	-
 no_cracks.py	gate	n/a	every live target: next step, who acts, board card (MISSING / NO-NEXT)	-	-
+verify_backlog.py	gate	n/a	which readings still need a second audit or a count (depth) before they can be counted	-	-
