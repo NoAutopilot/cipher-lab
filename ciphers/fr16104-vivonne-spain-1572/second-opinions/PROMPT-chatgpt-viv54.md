@@ -25,3 +25,8 @@ QUESTIONS
 2. What did Saint-Gouard report to Charles IX between 5 and 12 September 1572, before the news of the massacre was
    formally delivered by Montaigne? Cite sources we can check.
 Do not invent citations. An unverifiable citation is worse than none.
+
+REVISION NOTE (5 Oct 2026, VER1-VIV, second audit): since this prompt was written, the 1884 Revue des questions historiques
+article (pp.386-412) was read in full (it cites only the plain part of the 5 Sept 1572 letter to the King, not this letter),
+and the readings of inks 53 and 54 were revised by a look-alike transcription pass (ink 63 gained six lines on f.194r). No prior print
+of this cipher passage was found by the second audit either.

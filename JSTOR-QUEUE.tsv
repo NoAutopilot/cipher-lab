@@ -252,3 +252,7 @@ ciphers/fr2980-gramont	("Gramont" OR "Tarbes") AND "Rochford" AND 1530 AND (chif
 ciphers/fr2980-gramont	"qui regardent les danseurs" [VER1-GRA, fr.3040 no.6, phrase family (ii), no cipher keyword]	2026-10-05	queued	
 ciphers/clairambault1225-paget-1714	"Paget" AND ("Tabarque" OR "Tabarka") AND "Lomellini"	2026-10-05	queued	
 ciphers/clairambault1225-paget-1714	"quoyque ce Dernier Duc n'ait que 36"	2026-10-05	queued	
+ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND Requesens AND "octobre 1573"	2026-10-05	queued	
+ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND "duc d'Anjou" AND (Simancas OR "San Goar") AND 1572	2026-10-05	queued	
+ciphers/fr16104-vivonne-spain-1572	"intention a entrer en ce"	2026-10-05	queued	
+ciphers/fr16104-vivonne-spain-1572	"vigilant et curieux"	2026-10-05	queued	

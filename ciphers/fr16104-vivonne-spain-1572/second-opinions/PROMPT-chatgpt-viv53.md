@@ -31,3 +31,9 @@ QUESTIONS
 2. Do the notes of Lettres de Henri III, vol. I, or any Spanish publication from Simancas (Estado K 1529-1530), cite or
    summarise Saint-Gouard's letters to Anjou of September 1572?
 Do not invent citations. An unverifiable citation is worse than none.
+
+REVISION NOTE (5 Oct 2026, VER1-VIV, second audit): since this prompt was written, the 1884 Revue des questions historiques
+article (pp.386-412) was read in full (it cites only the plain part of the 5 Sept 1572 letter to the King, not this letter),
+and the readings of inks 53 and 54 were revised by a look-alike transcription pass (ink 63 gained six lines on f.194r). No prior print
+of this cipher passage was found by the second audit either.
+(The fragment "capitaine qu'il entend" now reads "caglitaine" at one look-alike-settled sign, f.171v L15; treat it as uncertain.)

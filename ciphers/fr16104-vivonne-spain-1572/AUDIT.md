@@ -345,3 +345,99 @@ Key: **published** (S. Tomokiyo, credited). Text: unknown.
   -1.548 vs p99 -1.836 PASS; specificity real margin 0.288 vs wrong-key p99 0.064 PASS (43/200 wrong keys pass bare b2).
 - Longest all-H gap-free stretch in the new lines: 11 letters. The class (N3) and the depth (D1) above are **not altered** by this note; a depth
   re-check is a verifier's step.
+
+## AUDIT 2 (VER1-VIV, 5 Oct 2026) -- second adversarial audit of inks 53, 54 and 63, with a depth re-check
+
+Verifier VER1-VIV (account 2, LANE-VER1 worker, session_017QymPyiMyH1SA7cJyvVoDD), 5 Oct 2026 18:18-18:35 UTC. Brief:
+.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md "VER1-VIV". This session is neither the solver of any reading here nor any of
+the three Audit-1 verifiers above (VIV54-A1, VIV53-A1, VIV63-A1). No decoding; no reading, key or transcription file changed.
+Items: ink 53 (fr.16104 ff.170r-171v, to the duc d'Anjou, 5 Sept 1572), ink 54 (fr.16104 f.173r-v, to Charles IX, 7 Sept 1572),
+ink 63 (fr.16105 ff.190r-194r, cipher part of the letter to Charles IX of 10 Oct 1573).
+
+### 1. What is under audit now (readings revised after the Audit-1 sections)
+- ink 53: reading_piece53_L.tsv (N7-VIV53L look-alike pass + ': :' join): 4,394 tokens, H 3,641 (82.9%), M 540, U 213 (recounted
+  here from the file). Audit 1 graded the N6 reading (4,521 tokens, H 78.3%).
+- ink 54: reading_piece54_L.tsv (N7-VIV54L): 1,954 tokens, H 1,488 (76.2%), M 271, U 195. Audit 1 graded the N5 reading
+  (1,990 tokens, H 74.1%). N7-VIV54Q/54R added key cell Zu -> u but relabelled nothing; the reading did not move.
+- ink 63: reading_piece63.tsv incl. f.194r L05-L10 (N7-VIV63G): 15,762 tokens, H 12,151 (77.1%), M 2,329, U 1,282.
+- Rule-7: `tx/viv53L_decode.py --check`, `tx/viv54L_decode.py --check`, `tx/viv63_decode.py --check`, and the superseded
+  `tx/viv53_decode.py`, `tx/viv54_decode.py --check` all report "up to date" (run 18:2x UTC). Gates were not re-run here
+  (each was re-run byte-identical by its Audit 1; the N7 gates are on file in tx/viv53L_result.json, tx/viv54L_result.json,
+  tx/viv63g_result.json).
+- H is key-source grading (Tomokiyo's published key, held out on ink 40 vs clerk decipherment 41, N5-VIVK) on a settled
+  sign, not legibility and not a period decipherment.
+
+### 2. Depth re-check (rule 4a) -- measured by this verifier on the current files
+Longest run of consecutive H-graded decoded letters (script over the `grades` column; per line / across line ends):
+| piece | longest per line | longest across line ends | what it reads |
+|---|---|---|---|
+| 53 L | 37 (f.170r L11) | 41 | "etoutceraiooitauecqaeointeligencedeoa" -- "et tout ce ... avec q[u]e ... intelligence de", salad in the middle; the 41-letter cross-line runs are salad ("naraeuaeouiendracestearaeea...") |
+| 54 L | 26 (f.173v L07) | 26 | "entuieluaaaaendeestentreen" -- salad |
+| 63 | 32 (f.191r L11) | 40 | "raioantentenddredraauroatdangier"; cross-line "leaqesoailquonttousouautoutra..." -- salad |
+The solvers' best by-eye clauses all need liberties: ink 53 "intention a entrer en ce" (20 letters, word division only),
+"de contradiction il ne" (19) then "[p]ou[r]roit doubter" with 3-4 repairs, "grand bien q[u]i en adviendroit" (25, 1 repair);
+ink 54 "tousiour[s] [q]ont doubte [q]u c'este" (25, 1 repair + 2 q liberties), "toute [d]iligence de [U][f]aire" (21);
+ink 63 "les troubles ou [p]ar [d]oulceur d'un [p]ard[o]n genera[l] et bien a[mp]le" (~55 letters, 4 gaps + 4 repairs).
+Against French simple-substitution unicity about 28 letters and an authentication distance about 42 (higher for this
+homophonic key; Audit-1 figures, accepted), **no piece has a clause above the authentication distance without
+liberties**, no code value is tested in two contexts (letter key, no nomenclator), and this verifier cannot write one true,
+specific sentence about what any of the three cipher parts says (the vocabulary -- negotiation, the frontiers, "vostre
+altesse"; diligence, munitions; Poland, Orange, the commandeur, Flanders, a general pardon -- fits the dates but states
+nothing). The N7 passes made the readings cleaner (H +1 to +5 points, the doubled-c repairs gone) but did not join the
+fragments; N7-VIV54L's own registered stretch statistic was non-discriminating and N7-VIV53L's was a NON-TEST.
+**Verdict: hold D1 ("fragments read") for all three. Not raised, not lowered.** depth_check: per item as Audit 1, plus
+this longest-H-run measurement on the post-N7 files.
+
+### 3. Independent search (5 Oct 2026, 18:2x UTC) -- families Audit 1 left open or did not cover
+| family | what was searched | result |
+|---|---|---|
+| (a) canonical series | Gachard II (Google Books API, "Saint-Gouard" "10 octobre 1573"): LXIII "(En partie chiffrée, sans le déchiffrement)" snippet confirmed; "Saint-Gouard" "5 septembre" 1572 Anjou: only the 16 July Anjou entry | no print of any of the three cipher parts |
+| (b) sender/recipient | Douais, *Lettres de Charles IX à M. de Fourquevaux* (1897, IA lettresdecharle03chargoog, whole djvu text, 1 request): ends March 1572 (Saint-Gouard sent to replace Fourquevaux, index pp.376-377), nothing after; *Lettres de Henri III* I (Google Books snippets): letters to Saint-Gouard of 14 Apr 1572 etc., no 5/7 Sept 1572 letter; d'Ars book (Google Books + IA OCR on disk): see correction 5 below; d'Ars: "c'est seulement le 12 que Saint-Gouard écrit à Charles IX sur l'événement" -- d'Ars shows no knowledge of a 7 Sept letter's content | not found |
+| (c) documentary / secondary | Ribera, *Diplomatie et espionnage* (2007; Google Books snippets in vols 7p3mENOa3U0C and NDEjAQAAIAAJ): the Saint-Gouard letter to Anjou "de Madrid, le 7 novembre 1572" (St Bartholomew raised French prestige), note 18 "Ibid., de Madrid, le 5 septembre 1572; BNF, Fr., 16104" in the 27 Aug audience context (= ink 50, the King, as DESK-LAND/L51 found), 12 Sept 1572 cited pp.156-157 (via *Montaigne*, 2014); Ribera, "L'ambassade de Saint-Gouard et la crise du Portugal" (Classiques Garnier 2008 chapter, DOI 10.15122/isbn.978-2-8124-5612-1.p.0517; 1578-80, out of range); Morel-Fatio, "La vie de D. Luís de Requesens", *Bulletin hispanique* 6 (1904) 195-233 (Persée search snippet): quotes Saint-Gouard's dispatch of **20** Oct 1573 on Requesens, the subject ink 63's decode suggests; the full article PDF answered 403 (not retried) and its first page has no 10 Oct 1573 citation; Forneron II (IA FTS): 20 Oct 1573 to the Queen mother (fr.16105 f.68); Mondoucet, *Lettres et négociations* (IA FTS): Oct 1573 letters from Flanders naming Saint-Gouard, not his letters; Davila, *Historia delle guerre civili* (IA FTS "San Goart"): narrative mention of "le lettere di monsignore di San Goart", no text; Jouanna et al., *La Saint-Barthélemy* (2007; snippet): uses fr.16104 "Saint-Gouard, janvier-décembre 1572" and AN K 1530 as sources, no 5/7 Sept quotation surfaced | not found; Morel-Fatio 1904 in full not read |
+| (c') Spanish side | IA FTS "San Goar" 1572, "Sangoar" embaxador, "San Goart", "embajador de Francia" "San Goar": hymnbooks, the Rhine town, Davila only; Google Books "Negociaciones con Francia" "San Goar" (Godoy only), Paz *Catálogo IV* Simancas "San Goar" 0, "Simancas" "Saint-Gouard" "carta descifrada" 0; IA advancedsearch for Paz / Daumet Simancas catalogues and *Negociaciones con Francia*: no IA copy | not found; the K-series calendars themselves not read (no reachable copy) |
+| (d) holding archive | not re-run (Audit 1s: BnF records, fr.16104/16105 leaves viewed) | -- |
+| (e) full text / phrases | Google Books: "pardon general et bien ample" (329, Granvelle and others, no quotation of 63), "vigilant et curieux" Saint-Gouard 0, "inutile de negotier/négocier" Saint-Gouard 0, "Saint-Gouard" "7 septembre 1572" 3 (Catherine IV table only), "Saint-Gouard" "lettre chiffrée"/"en chiffre" 1572 Madrid (Kervyn, unrelated); IA FTS "Saint-Gouard" "inutile de negocier" 0, "Saint-Gouard" "dechiffre" 1573 (Gachard entries for other dates, Catherine IV, unrelated), "Saint-Gouard" Requesens "octobre 1573" (Kervyn 20 Oct, Forneron 20 Oct, Mondoucet); HathiTrust full text unreachable from the cloud | not found |
+| (f) solver repos / blogs | fresh shallow clones 5 Oct 2026: dbourdeau/cyphersolver (a439937, 3 Oct 2026) -- hits only Bourdeau's mirror of Tomokiyo's henryiii page and catalogue/SRU notices, no target or reading for Saint-Gouard's Spanish letters; aaymeloglu/unsolved-ciphers (d2800bb, 27 Sept 2026) -- 0 hits for vivonne/gouard/16104/16105 (grepped, nothing copied); Tomokiyo henryiii.htm (on disk): publishes the key and the misfiled-decipherment notes for fr.16105 ff.38-45, no decipherment of inks 53, 54 or 63; web search (cipher blogs, "Saint-Gouard Vivonne 1572 cipher letter deciphered"): Lasry, HistoCrypt 2022 "Deciphering a Letter from the French Wars of Religion" (League letters, PDF grepped: no Saint-Gouard), Spink lots, news items -- nothing on these letters | not found |
+| (g) scholarship | OpenAlex "Saint-Gouard" (479; top: the BnF manuscript records, Ribera 2008 chapter), "Saint-Gouard ambassadeur Espagne chiffre" (Hellin, "Espionnage et contre-espionnage ... Jérôme Gondi", *Revue historique* 2008, on the Spanish embassy in Paris -- not these letters); Semantic Scholar "Saint-Gouard" (Ribera 2007 only relevant); CrossRef (noise); HAL "Saint-Gouard" OR "Vivonne" 11 (unrelated); CORE non-JSON/empty answer, not retried; Persée "Saint-Gouard" 23 results (first page read: reviews of Mousset 1909/1912 and Catherine's letters, Gachard's 1877 report, Morel-Fatio 1904, Revue du Nord 1997 listing Flament, Vaillancourt 2010 on Henri III's letters) -- none prints these cipher parts; JSTOR: 4 rows appended (families i and ii) | not found |
+Unreachable / not done: Flament (1996) -- not lendable (L52), needs-physical-access; Ribera (2007) in full (snippets only);
+Morel-Fatio (1904) in full (Persée PDF 403); the Simancas K-series calendars (Paz 1914; no reachable copy) and AN K 1529-1531;
+HathiTrust full text; JSTOR (queued).
+Requests: archive.org 3 (advancedsearch 2 batches + 1 djvu) + be-api 10; googleapis 24 (one 503, not retried); openalex 5;
+semanticscholar 2; crossref 1; HAL 1; CORE 1; persee.fr 3 (search, doc page, PDF 403); ecp.ep.liu.se 1; github.com 2 clones;
+web search 1. All >= 1.5 s apart, one host at a time.
+
+### 4. Classification (unchanged; this audit is the second adversarial audit, Outreach gate 2)
+| item | N-class | key | text | depth | % H (current file) |
+|---|---|---|---|---|---|
+| ink 53, to Anjou, 5 Sept 1572 | **N3** | published (S. Tomokiyo) | unknown | **D1** | 82.9% (3,641/4,394) |
+| ink 54, to Charles IX, 7 Sept 1572 | **N3** | published (S. Tomokiyo) | unknown | **D1** | 76.2% (1,488/1,954) |
+| ink 63, to Charles IX, 10 Oct 1573 (cipher part) | **N3** | published (S. Tomokiyo) | unknown (plain part summarised by Gachard and paraphrased by d'Ars) | **D1** | 77.1% (12,151/15,762) |
+This second search found no prior plaintext, summary or decipherment of any of the three cipher parts. Not N4 for any:
+Flament (1996), Ribera (2007) in full, Morel-Fatio (1904) in full and the Simancas K papers remain unread, and inks 53/54
+carry partial period glosses on the leaf. Evidence quality moderate; confidence medium. Not counted as a unique solve (N3
+but D1). Safe and unsafe sentences: as in the three Audit-1 sections above, unchanged, with one addition for ink 63 --
+unsafe: "Saint-Gouard's report on Requesens" for 10 Oct 1573 (the printed Requesens dispatch is 20 Oct 1573, a
+different letter).
+
+### 5. Postmortem and corrections
+- No over-claim found in NOTES.md, status.json or the SO prompts for these items (all say "fragments", none says first/new).
+- **Correction to VIV-BREMOND (NOTES.md, 4 Oct 2026), dated 5 Oct 2026:** d'Ars's 1884 *book* does cite "5 septembre 1572,
+  Ms. Bibl. nat. F. fr. 16104" (p.43, the footnote to "du mauvais choix des gardiens de frontières"; visible in Google Books'
+  OCR of vols -VwIAAAAQAAJ / Cr2b_r4SQHsC, lost in the IA OCR at line ~2906 of lepredemadamede00dargoog). It is the same
+  plain-part passage of ink 50 (to the King) that the RQH article cites (L51) -- not ink 53 or 54 -- so the class is unaffected.
+- Revision propagation (rule 10): Audit 1s graded the pre-N7 readings; the N7 token counts above are now current, and the
+  status.json rows are updated to them. The SO-VIV53 prompt quotes "capitaine qu'il entend", which the N7-VIV53L look-alike
+  pass turned into "caglitaine" (one 2-of-3 settled sign, f.171v L15); a dated note is added to that prompt. The SO-VIV54/53
+  prompts' "Not read: RQH 35 (1884) in full" is out of date (read by L51, no print of these letters); noted in the same way.
+- Next steps that would move these items: N4 -- Ribera (2007) and Morel-Fatio (1904) in full (owner's browser / ILL; ~$1),
+  Flament (needs physical access, Lille); D2 -- the solvers' named label steps (ink 54 col-u row-3 relabel with hand-placed
+  crops, ink 53 gap tiles, ink 63 key questions), then a clause above ~42 letters without repairs.
+
+### 6. depth_check output
+`python3 tools/depth_check.py` (exit 0, 5 Oct 2026, after the status.json update; the three Saint-Gouard lines and the total):
+```
+note: class without a reading, not counted: Saint-Gouard to Charles IX, 7 Sept 1572 (BnF fr.16104 f.173r-v): Frenc (D1)
+note: class without a reading, not counted: Saint-Gouard to the duc d'Anjou, 5 Sept 1572 (BnF fr.16104 ff.170r-171 (D1)
+note: class without a reading, not counted: Saint-Gouard to Charles IX, 10 Oct 1573 (BnF fr.16105 ff.190r-194r): F (D1)
+unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 12; legacy ungraded: 0
+```
