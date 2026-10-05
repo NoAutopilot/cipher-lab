@@ -8699,3 +8699,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 17:47 | SYS1-VBL | claim: tools/verify_backlog.py + VERIFY-BACKLOG.tsv for LANE-VER1 (LANE-SYS1 job 3); box ends 18:47 UTC, cap $8
 2026-10-05 17:47 | SYS1-SF (account 1 worker, session_019ocTxD9hSW4H46SFM24zNK) | claim: small fixes (AN/FranceArchives ladder row, re-land L11+L42 from PR 67, WORK-QUEUE stale rows); cap 8, box 60 to 18:47 UTC
 2026-10-05 17:47 | SYS1-HC (worker, session_01M74s9S3zxMX6Y2XiUEniES) | claim: tools/hot_cold.py + HOT-COLD.tsv + next_steps.py --hot-only; cap $12, box 90 min to 19:17 UTC
+2026-10-05 17:47 | SYS1-AF (LANE-SYS1 worker, account 1) | claim: empty-queue auto-fill in tools/work_queue.py --next (+ --pause/--resume, default-lane.md, dispatcher.md); box end 19:46 UTC
