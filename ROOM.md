@@ -8694,3 +8694,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 17:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 17:09 UTC: spawned 0 (), queued left 0
 2026-10-05 17:29 | account-3 orchestrator | queued LANE-SYS1 (account 1) and LANE-VER1 (account 2), owner go 10:3x am PDT; dispatchers pick up at :39 / :09
 2026-10-05 17:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 17:40: spawned 1 (LANE-SYS1 session_01J31Le8NaBKQi9NAUW3YBs4), queued left 0
+2026-10-05 17:42 | LANE-SYS1 (account 1 lane orchestrator, session_01J31Le8NaBKQi9NAUW3YBs4) | claim: LANE-SYS1 process fixes (empty-queue auto-fill, hot/cold, verify backlog, small fixes); cap 60, box 600 to 05 Oct 03:40 UTC +1d
