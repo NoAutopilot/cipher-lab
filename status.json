@@ -3745,7 +3745,7 @@
       "plaintext_novelty": "N0",
       "mapping_novelty": "N0",
       "claim_scope": "key-to-known-text",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr16045-pisany-rome-1585",
       "depth": "D1",
@@ -3756,7 +3756,7 @@
       "grade": "N0 (one audit), key published (S. Tomokiyo, credited); text known from the f.248r-v period decipherment and the Colbert 16 pt II copy, one sentence printed in Aubery 1654 p.46. 365 tokens: C 236, M 122, U 7; known-answer PASS kp86g.",
       "line": "Fragments read (D1). Satoshi Tomokiyo's published 1586-87 table, applied to the cipher of f.247r, agrees letter by letter with the period decipherment on f.248v and the Colbert copy on about 65% of tokens (known-answer test passed against shuffled controls). The text was already known; this checks a published key, it is not a decipherment.",
       "depth_pct": 64.7,
-      "depth_check": "known-answer PASS kp86g 0.639 vs p99 0.431/0.494, control 5/5 at e 0.268; longest firm run 17 letters, below the authentication distance; VER1-PIS 5 Oct 2026"
+      "depth_check": "known-answer PASS kp86g 0.639 vs p99 0.431/0.494, control 5/5 at e 0.268; longest firm run 17 letters, below the authentication distance; VER1-PIS 5 Oct 2026; Audit 2 DEF1-PIS 5 Oct 2026: N0 and D1 upheld"
     },
     {
       "date": "5 Oct 2026",
@@ -3767,7 +3767,7 @@
       "plaintext_novelty": "N0",
       "mapping_novelty": "N0",
       "claim_scope": "key-to-known-text",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr16045-pisany-rome-1585",
       "depth": "D1",
@@ -3778,7 +3778,7 @@
       "grade": "N0 (one audit), key published (S. Tomokiyo, credited); passage printed whole in Aubery, Histoire du cardinal de Joyeuse (1654) pp.51-52, and deciphered on the leaf. 746 sign tokens: C 287, M 444, U 15; page PASS kp86h, lines 17-20 FAIL (M).",
       "line": "Fragments read (D1). Tomokiyo's published table reads the f.275v cipher at letter level against the leaf's own period decipherment and the Colbert copy (about 39% of tokens confirmed). The passage, on Mary Queen of Scots and the duc de Luxembourg's secret charge, has been in print since Aubery 1654; not a decipherment.",
       "depth_pct": 38.5,
-      "depth_check": "page PASS kp86h 0.514 vs p99 0.391/0.469, control 5/5 at e 0.190; L17-L20 FAIL kp86h/kp86i; longest firm run 15 letters; VER1-PIS 5 Oct 2026"
+      "depth_check": "page PASS kp86h 0.514 vs p99 0.391/0.469, control 5/5 at e 0.190; L17-L20 FAIL kp86h/kp86i; longest firm run 15 letters; VER1-PIS 5 Oct 2026; Audit 2 DEF1-PIS 5 Oct 2026: N0 and D1 upheld"
     },
     {
       "date": "5 Oct 2026",
@@ -3789,7 +3789,7 @@
       "plaintext_novelty": "N0",
       "mapping_novelty": "N0",
       "claim_scope": "key-to-known-text",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr16045-pisany-rome-1585",
       "depth": "D1",
@@ -3800,7 +3800,7 @@
       "grade": "N0 (one audit), key published (S. Tomokiyo, credited); text known from the leaf's 19-line margin decipherment and Colbert 16 pt II pp.341-342; not located in print (Aubery 1654, L'Epinois 1886, Hubner 1870 vols 1 and 3, searched 5 Oct 2026). 402 sign tokens: C 227, M 146, U 29; known-answer PASS kp87b.",
       "line": "Fragments read (D1). Tomokiyo's published table reads the f.302v cipher at letter level against the leaf's own margin decipherment and the Colbert copy (about 56% of tokens confirmed). The text was already known from those period manuscripts; not a decipherment.",
       "depth_pct": 56.5,
-      "depth_check": "known-answer PASS kp87b 0.590 vs p99 0.389/0.464, control 5/5 at e 0.335; longest firm run 13 letters; VER1-PIS 5 Oct 2026"
+      "depth_check": "known-answer PASS kp87b 0.590 vs p99 0.389/0.464, control 5/5 at e 0.335; longest firm run 13 letters; VER1-PIS 5 Oct 2026; Audit 2 DEF1-PIS 5 Oct 2026: N0 and D1 upheld; plaintext not located in print (two audits), known from the leaf margin decipherment and Colbert 16 pt II"
     },
     {
       "date": "5 Oct 2026",

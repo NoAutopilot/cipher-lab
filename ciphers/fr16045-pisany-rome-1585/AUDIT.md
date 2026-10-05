@@ -114,3 +114,73 @@ Depth check pasted (python3 tools/depth_check.py, 5 Oct 2026): exit 0; last line
 Requests (5 Oct 2026): Gallica 3; archive.org 3 + 12 downloads/metadata (Hübner 1-3, L'Épinois, Chéruel, Aubery djvu, hOCR,
 page numbers, metadata, advancedsearch 6); be-api 16; Google Books 13; OpenAlex 10; CrossRef 4; Semantic Scholar 4 (one 429);
 HAL 4; Persée 7 (one 403); GitHub 2 shallow clones. One request per host at a time, >= 1.5 s apart.
+
+## AUDIT 2 (DEF1-PIS, 5 Oct 2026) -- second adversarial audit of f.247r, f.275v, f.302v
+
+Verifier DEF1-PIS (account 1, LANE DEFAULT-account-1-20261005-2039; brief .claude/briefs/runs/2026-10-05-account1-default-2039-jobs.md
+"DEF1-PIS"). A fresh session: not a solver of any reading here and not VER1-PIS. Nothing decoded; no transcription, key or reading
+touched. Clock by `date -u`: start 20:46 UTC, this section written 20:59 UTC.
+
+### 0. Revisions since Audit 1
+None. No NOTES.md section and no commit to the folder after VER1-PIS (git log: last folder commit before this one is 279a0920,
+18:55 UTC, a Gallica manifest cache for another target). Readings, grade files and key are as Audit 1 audited them. No
+SECOND-OPINIONS-QUEUE.tsv row exists for this target (class below N3), so there is nothing to propagate.
+
+### 1. Re-checked from disk
+Token counts recomputed from the grade files: f.247r C 236 / M 122 / U 7 of 365 (kp86g/grades_f247r.tsv); f.275v C 287 / M 444 /
+U 15 of 746 (kp86h/grades_f275v.tsv); f.302v the file holds C 230 / M 143 / U 29 of 402 (kp87b/grades_f302v.tsv), 227 / 146 / 29
+with the three T31 tokens held at M as HYPOTHESES.md and Audit 1 report. Audit 1's figures stand.
+
+### 2. Independent search, aimed at f.302v (5 Oct 2026, 20:48-20:58 UTC)
+The open question was whether the f.302v plaintext (24 Mar 1587: "Je suis le plus trompé homme du monde si l'on ne persuade au Pape
+de s'entretenir avec Messieurs de Guise ... qu'eux seuls sont bastants pour faire l'entreprise d'Angleterre ... trop attaché à
+approuver leur entreprise de Sedan ... qu'elle ne se fie de ce Prince sinon autant qu'elle en verra") is in print.
+| family | what was searched (beyond Audit 1) | result |
+|---|---|---|
+| (a)/(c) documentary editions | **Desjardins, Négociations diplomatiques de la France avec la Toscane vol. IV** (IA gri_33125017127529, whole djvu text, accent-folded regex for trompé homme / bastan(t)s / fie de ce prince / entreprise de Sedan / entreprise d'Angleterre / Messieurs de Guise / Pisany); **Hübner, Sixte-Quint vol. 2** (IA sixtequint02hbne: djvu download 500, so be-api fts on the item for "trompé homme", "Pisany", "Sedan", "bastans"); Hübner 1882 edition vol. 1 (IA sixtequintdapre01hbgoog, whole text, same regexes); **L'Estoile, Journal de Henri III, 1744 ed. with Preuves** (Gallica bpt6k97695406, the only hit of a Gallica SRU exact-phrase search, then ContentSearch in the volume); Le Laboureur's 1731 Castelnau, Mémoires tome II (IA india.history.resource.100009) | Desjardins IV: none of the phrases; two Pisany mentions, both unrelated (the Navarre excommunication; a Florentine note on approaching the Pope through Pisani). Hübner 2: cites Pisany's dispatches ("Coll. Harlay 288") but none of the phrases. Hübner 1882: none. Journal de Henri III 1744: its "plus trompé homme du monde" (PAG_371) is a different sentence of 1588-89 ("Mais ou je suis le plus trompé homme du monde, ou le tems & les affaires vous enseignent maintenant"), not this dispatch; its Sedan pieces are Guise/La Châtre/Catherine papers, not Pisany. Castelnau 1731 t.II: OCR too poor to be a test (no Pisany at all): **logged as not a test** |
+| (b) sender/recipient print | d'Ars 1884 re-read around 1587 (IA lepredemadamede00dargoog djvu text); Lettres de Henri III (SHF, vols 1959-2018; Google Books NO_PAGES, snippets only); Aubery 1654 relied on Audit 1's full-text 16-gram match (not re-run) | d'Ars pp.~216-217 paraphrases the Pope's mood in several 1587 audiences ("Pisany se voit forcé de l'adoucir en lui faisant observer qu'une rupture avec eux serait bien dangereuse"; footnote illegible in OCR; Google Books places "24 mars 1587" near it) -- a paraphrase of another passage, not the f.302v text. Lettres de Henri III: snippets show summaries of the King's letters to Pisani (15 Mar, 3 May [1587]; Sedan and Jametz) -- the King's side, not Pisany's dispatch text; volumes not readable here: **unreachable** |
+| (e) full text | IA be-api fts, all items: "trompe homme du monde", "plus trompé homme du monde", "trompé homme du monde" Guise, "sont bastans pour faire", "bastants pour faire l", "approuver leur entreprise", "fie de ce Prince", "entretenir avec Messieurs de Guise" (one 503, not retried); Google Books API (key, country=US): 10 queries incl. "plus trompé homme du monde" Pape Guise, "bastans pour faire l'entreprise", "ne se fie de ce Prince", "s'entretenir avec Messieurs de Guise", "persuade au Pape" Guise Angleterre, "Pisany" "24 mars 1587" (one 503); Gallica SRU exact-phrase (text adj): three queries | IA: 61 hits for the trompé phrase, all other texts (Mazarin, d'Ossat, François de Sales, Dupuy correspondence, a 1835 Bulletin SHF piece on Mazarin, etc.); the three 16th-century-looking hits (bub_gb_dERgoHMqixkC "si S. S. n'aime & n'estime le Roi" = a d'Ossat-type sentence) do not carry the Guise clause. The other phrases: 0 or unrelated. Google Books: 0 exact hits; loose matches only (Hübner, L'Épinois, Revue critique 1886 review of L'Épinois citing the 24 Mar 1587 "querelles d'Allemagne" clear passage). Gallica: see row above |
+| (g) scholarship | OpenAlex (Bearer key) "Vivonne Pisany Rome ambassadeur Henri III"; CORE (Bearer, v3/search/works/) "Pisany" AND Sixte-Quint/Sixtus V; HAL API "Pisany" OR "marquis de Pisani"; CrossRef bibliographic query; Semantic Scholar (x-api-key) | OpenAlex 1 (Pineau 2023, Henri IV and the papacy, not these dispatches); CORE 3 (BnF manuscript-record entries, not editions); HAL 0 relevant; CrossRef nothing on the dispatches; S2 2 unrelated |
+| (f) solver repos, blogs | not re-cloned: Audit 1's grep of both repositories is from today (heads 3 Oct and 27 Sept 2026) | relied on Audit 1 |
+| JSTOR | one family (ii) row appended (bare phrase "qu'elle ne se fie de ce Prince"); Audit 1's three rows (family i + two phrases) stand | queued; does not block |
+| unreachable | Lettres de Henri III (SHF) page text; Anticona 2012-13 (Academia login wall, per CS-3); Hübner vol. 2 djvu download (500; fts route used instead); Castelnau 1731 OCR quality | logged |
+
+Requests (5 Oct 2026, DEF1-PIS): be-api 14 (one 503); archive.org metadata/download 8 (one 500); Google Books 15 (two 503); Gallica
+SRU 5 + ContentSearch 3; OpenAlex 2; CORE 1; HAL 1; CrossRef 1; Semantic Scholar 1. One request per host at a time, >= 1.5 s apart.
+
+### 3. Classification per page (rule 10), key source, witness
+| item | N-class | N0 holds on which witness | in print? | key | text |
+|---|---|---|---|---|---|
+| A f.247r (17 Sept 1586, second letter) | **N0 upheld** | the f.248r-v period "dechiffre" of this letter (manuscript, 1586) and the Colbert 16 pt II clear copy pp.54-55 (17th-c. manuscript) | about a third: one sentence in Aubery 1654 p.46 (Audit 1; not contradicted here) | published (Tomokiyo, credited) | known |
+| B f.275v (4 Nov 1586) | **N0 upheld** | the leaf's own period decipherment (head of page and margin) and Colbert pp.122-123; also print | yes, whole: Aubery 1654 pp.51-52 (Audit 1) | published (Tomokiyo) | known |
+| C f.302v (24 Mar 1587) | **N0 upheld** | the leaf's own 19-line margin decipherment (period) and Colbert pp.341-342 (manuscript). N0 rests on these manuscripts alone | **not located in print** after Audit 1's and this audit's searches (Aubery 1654, L'Épinois, Hübner 1-3 and 1882, Desjardins IV, d'Ars, Catherine 8-10, Journal de Henri III 1744, IA/Google Books/Gallica phrase searches); Lettres de Henri III (SHF) and Anticona unread | published (Tomokiyo) | known (in manuscript: the leaf's own decipherment and the Colbert copy) |
+The answer to the brief's question: f.302v's plaintext was not located in any printed edition searched; it exists in the leaf's
+own margin decipherment and the Colbert 16 pt II copy, both manuscript. That does not change the class: a period decipherment of
+this very item exists, so N0 holds whether or not it was ever printed. Confidence high for all three.
+
+### 3a. Depth (rule 4a) -- D1 confirmed on all three
+| item | % H/C/S tokens | unread | depth | check |
+|---|---|---|---|---|
+| A f.247r | 64.7 (C 236/365) | M 122, U 7: mostly ordinary letters, not names/codes | **D1** | longest firm run 17 letters, below the authentication distance; no code value read in two contexts; firm share < 80% |
+| B f.275v | 38.5 (C 287/746) | M 444, U 15 (L17-L20 all M) | **D1** | longest firm run 15 letters; as above |
+| C f.302v | 56.5 (C 227/402, T31 held) | M 146, U 29 | **D1** | longest firm run 13 letters; as above |
+The C grades are licensed by an aggregate known-answer alignment against the period text, with controls on file (Audit 1, 3a);
+they are scattered letters, not a clause of our own reading, so D2 is not reached. No D2 content sentence is required.
+
+### 4. Postmortem
+- No over-claim found in the folder; the solvers' wording ("a known-answer confirmation of the published table ..., not a
+  decipherment") and Audit 1's safe sentences stand unchanged.
+- Audit 1 named Hübner vol. 2 as "not on IA (404)"; it is on IA as sixtequint02hbne (the 404 was on hubner-sixte-quint-t-2).
+  Searched here through be-api: no phrase hit. Correction of fact only; Audit 1's conclusion does not change.
+- PROGRESS.tsv data rows 42-44 (file lines 49-51; "Pisany 17 Sept 1586 f.247r", "... 4 Nov 1586 f.275v", "... 24 Mar 1587
+  f.302v"): column `2` = x, `C` stays '.' (N0 never counts).
+- No SECOND-OPINIONS-QUEUE.tsv row: class below N3.
+
+### 5. Safe and unsafe sentences
+Audit 1's sentences stand. For f.302v the safe sentence is sharpened to: "Tomokiyo's published table reads the f.302v cipher (24 Mar
+1587) at letter level against the leaf's own period margin decipherment and the Colbert 16 pt II copy (known-answer PASS, about 56%
+of tokens confirmed; D1); the plaintext is known from those two manuscripts and was not located in print in the editions and
+full-text indexes searched on 5 Oct 2026 (two audits)." Unsafe: "an unpublished passage", "read for the first time", or any
+wording implying the text was unknown before this project.
+
+Depth check pasted (python3 tools/depth_check.py, 5 Oct 2026, DEF1-PIS): exit 0; last line "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0" (the three rows stay N0 / D1, not counted; status.json results[117-119] audit_status 'two audits'). tools/verify_backlog.py regenerated: "38 rows: audit2 8, both 4, counted 26".
