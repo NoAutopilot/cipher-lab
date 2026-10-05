@@ -1986,3 +1986,105 @@ reading.txt / reading_tokens.tsv STALE: that is the generic tool against the tar
 it reads was changed); flagged for the lane. `tools/gaps_check.py fr2980-gramont`: OK keep-going (2 internal gaps, 0 untried).
 Requests: gallica.bnf.fr 10 (5 manifest/info + 5 native regions via iiif_lines.py, all 200, >= 1.5 s apart, no challenge). Subagent
 calls: 0 (the eye check was done by this verifier). Cost: see the lane ledger.
+
+## AUDIT 1 for fr.3040 no.6 (VER1-GRA, 5 Oct 2026)
+
+Verifier VER1-GRA (account 2, for LANE-VER1; not N8-GRA2/N8-GRA3/N9-GRA4, not VER-GRACOS or N9-GRAV). Brief
+`.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md`, section VER1-GRA. Nothing decoded and no key value changed. No earlier section
+of this file classes either item (VER-GRACOS and N9-GRAV verified the ST = L key grade only), so this is Audit 1 for both.
+
+Items under audit:
+- **A. BnF fr.3040 no.6, f.18r L11-L21** (N9-GRA4, NOTES 5 Oct 2026): 403 cipher tokens, 287 keyed, 103 '?' (unsettled reader
+  split), agree 0.812 with Le Grand III pp.454-455 vs p99 0.335 (PASS).
+- **B. BnF fr.3040 no.6 as a whole letter**: Gramont, bishop of Tarbes, to the grand maître (Montmorency), "A Boulongne, le XXVIIIme
+  jour de mars" [1530] (Bologna). Cipher read: f.18r L01-L21, f.18v L01-L23, f.19r L01-L02 (N8-GRA2 + N8-GRA3 + N9-GRA4), 1693 tokens,
+  1302 keyed, 301 '?'. Not read: the few cipher signs ending the clear line above f.18r L01 ("pensa faire ...").
+Claim as the repo states it (NOTES N8-GRA2/N8-GRA3/N9-GRA4): "This checks key.tsv; it is not a reading of f.30." The solvers made no
+novelty claim; this audit classes the item as it will appear in the registers.
+
+### Verdict
+
+| item | N-class | key source | text | depth | % H/C/S | safe sentence |
+|---|---|---|---|---|---|---|
+| A. fr.3040 no.6 f.18r L11-L21 | **N0** | published (Tomokiyo, Gramont's Cipher (1530); Lasry's table) | known | **D2** | 71.2% (287 of 403; H 287, ST at C included) | "Lines 11-21 of the f.18r cipher block of BnF fr.3040 no.6 read with the published Gramont 1530 key and agree with the plaintext Le Grand printed in 1688 (and the leaf's own period decipherment) at 0.81, against a shuffled-text p99 of 0.34; the text was already known." |
+| B. fr.3040 no.6, whole letter | **N0** | published (as A); one row, ST = L, at C from this letter's own print (ours, VER-GRACOS/N9-GRAV) | known | **D2** | 76.9% (1302 of 1693) | "The cipher of Gramont's Boulogne letter of 28 March 1530 (BnF fr.3040 no.6) was already deciphered in its own time and printed by Le Grand in 1688; we used it as known plaintext to check the published Gramont 1530 key (agreement 0.81-0.87 against shuffled-text p99 0.33-0.35) and to confirm one sign value (ST = L)." |
+
+Unsafe for both: "deciphered", "read for the first time", "previously unread", "new decipherment", or any wording that presents the
+letter's content as recovered by us. It is a key check on a known text.
+
+### Why N0 (plaintext and decipherment of this very item already known)
+
+1. **The leaf carries a period decipherment.** Gallica `btv1b9059870w` canvas 32 (f.18r) viewed at 1100 px wide, 5 Oct 2026 (1 IIIF
+   request, 200): the left margin, beside the whole f.18r cipher block, holds a contemporary cursive clear text running from the
+   block's first line to below its last. Its opening words read as "il luy dict qu'il laissast la parolle aux autres car il estoit partie
+   [...] a vous dire verite [...] merveilleusement estonne [...] a sa grande instance le pape a surcis la matiere". That is Le Grand
+   p.454's text for the cipher that starts f.18r L01 (n8gra2/print_span.txt), so this is a period gloss of the cipher. N8-GRA2 saw the
+   notes ("marginal notes beside the cipher blocks (not read here)"); nobody had identified them. f.18v and f.19r were not viewed by this
+   audit. Whether their blocks carry the same gloss is a check left open; the class does not depend on it (point 2).
+2. **The plaintext is printed from this very volume.** Le Grand, *Histoire du divorce* III (*Preuves*, 1688) pp.454-457, "Lettre de Mr.
+   de Gramont Evesque de Tarbe à Mr. de Montmorency", subscribed "A Boulongne ce 28. jour de Mars", cites **Béthune vol. 8565**. The BnF
+   finding aid for Français 3040 (`archivesetmanuscrits.bnf.fr/ark:/12148/cc49499h`, fetched 5 Oct 2026, 200) gives **"Ancienne cote :
+   Anc. 8565"** and lists "Fol. 18 - 6 Lettre, en chiffre, de G[abriel] de Gramont, evesque de Tarbe ... A Boulongne, le XXVIIIme jour de
+   mars". So Le Grand printed from the volume that holds this leaf, and the print runs on through the cipher blocks (NOTES N8-GRA2 "The
+   pair"). That is a printed decipherment of this item, not only a parallel text. (Earlier sections cite "Béthune vol. 8565" without
+   tying it to fr.3040; the tie is new to this file, not to the record.)
+3. **The key was identified for this leaf in print.** Tomokiyo, francis.htm (cached, `sources/cryptiana/web/francis.htm`), Gramont's
+   Cipher (1530): "I noticed the same cipher is also used in two letters from Gramont to the Grand Master in BnF fr.3040 (f.12 (no.4)
+   from Rome, f.18 (no.6) from Boulogne, both deciphered)". GL.htm (cached) lists "f.18 no.6 ... *Gramont's Cipher (1530)".
+4. **Conflicting catalogue field, recorded.** DECODE record 4227 (Français 3040 fol. 18) carries status "Non-decrypted"
+   (`sources/decode/records-non-decrypted-2026-09-24.tsv` line 468). Points 1-2 contradict it. That is DECODE's field, not evidence
+   the item is unread. Bourdeau's `research/catalogue_harvest/decode/excluded.json` (cyphersolver head a439937, 3 Oct 2026) excludes
+   4227 as "catalogue no. 6, read (targets/gramont1529/)". But `targets/gramont1529/` holds transcriptions of fr.3091 ff.45-47 only, and
+   names fr.3040 f.18 as "Gramont's cipher (1530)" in its NOTES table: an identification, not a reading of f.18.
+
+### Depth (rule 4a, verifier step 3a)
+
+Count source: the committed recon files (`n8gra2/recon.tsv` 421 tokens / 69 '?', `n8gra3/recon.tsv` 869 / 129, `n9gra4/recon.tsv` 403 /
+103) and target.json (keyed 308, 707, 287). Keyed tokens take their value from key.tsv (published key, H; ST = L at C). '?' tokens are
+transcription splits the reconciliation left unsettled, not names or codes, so D3 is withheld on both counts (< 80% and the gaps are
+ordinary text). There is no committed reading file for this letter: the key-decoded strings below come from recon.tsv + key.tsv
+(regenerable by the committed scorers, rule 7), and the print gives the external check.
+- **A (f.18r L11-L21): D2, 71.2%.** Clause above the authentication distance, key-decoded L05-L11 (this audit, recon + key.tsv):
+  "...ETAMISCOMME..." (L05, "bons freres & amys, comme"), "...QVILNAVROITIAMAIS" (L07, "qu'il n'auroyt jamais"), L10-L11 "POV.T..IS OV
+  ...MOIS FE.OIE.T / COM.E C.VLD QVI ..." against the print's "pour trois ou quatre mois, seroyent comme ceux qui regardent les danseurs".
+  True sentence (verifier's): **"Gramont reports that Rochefort said his master and the English would, for three or four months, be like
+  those who watch the dancers, taking courage as they see the dancing go well or badly."**
+- **B (whole letter): D2, 76.9%.** Key-decoded f.18r L02: "CARILVSTOITPARTIEETAVOGDIREVVRIT?ILS?ST" (print: "car il estoit partie, &
+  à vous dire verité, il s'est"), L05-L06 "...DEMIPEV?ANTL?QVVLTE...ROY?ANGLE/TE...NVOIERA...POV?EROCE..ENLACAV". True sentence (verifier's):
+  **"Gramont tells Montmorency that, at Rochefort's great instance, the Pope has suspended the matter for a month and a half, during which
+  the King of England is to send a commission to proceed in the cause."**
+- Outward words, if ever used: "partially deciphered (about 71% / 77%)" is a statement about our key check. Since the text is N0, no
+  outward note should describe it as our decipherment at all.
+
+### Search log (5 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| holding archive catalogue | BnF archivesetmanuscrits, Français 3040 record (cc49499h), 1 request | Anc. 8565 = Le Grand's Béthune vol. 8565; f.18 no.6 "en chiffre"; no separate déchiffrement item listed |
+| the leaf | Gallica IIIF canvas 32 (f.18r), 1 request | period marginal decipherment beside the f.18r block (point 1) |
+| canonical print | Le Grand III pp.454-457 (already read page by page in this file: Second audit, N8-GRA2/GRA3) | prints the letter; cited, not re-fetched |
+| Pocock, *Records of the Reformation* | IA be-api fts: vol.2 `recordsofreforma02pocouoft` "danseurs" 0, "Boulongne" 0, "Tarbe" answered non-JSON (not retried); vol.1 `recordsreformat02pocogoog` "danseurs" 0, "Boulongne" 0, "Tarbe" 1 hit (English despatches, as the 24 Sept audit found) | not printed there |
+| *Letters and Papers* iv(3) | IA be-api fts `11332111bsb`: "Rochford" Tarbes 1 hit (Rochford's own conversation with Tarbes on the king's cause, an English-side calendar entry, not this letter); "Tarbes Boulogne March" 0 | no calendar entry of this letter found by these queries; Ehses (searched 24 Sept) cites Le Grand III.454 |
+| Google Books API (`country=US`, key) | "laissast la parole aux autres" 3 hits, **all Le Grand 1688** (positive control: the edition is found by a phrase of this letter); "regardent les danseurs" / "regardent les dansseurs" 104 each, top 8 unrelated; Gramont Tarbe Boulongne 1530 chiffre déchiffrement 0 | print confirmed; no secondary decipherment located |
+| OpenAlex (Bearer) | "Gramont Tarbes 1530 cipher" 0 | none |
+| solver repositories | dbourdeau/cyphersolver head a439937 (grep "3040"): identification only (point 4); aaymeloglu/unsolved-ciphers (shallow clone, grep "3040"): no hit outside its DECODE dump already logged in this file | no reading of f.18 |
+| cipher blogs | Tomokiyo francis.htm, GL.htm (cached): key identified, leaf called "deciphered" (point 3) | |
+| JSTOR | 2 rows appended to JSTOR-QUEUE.tsv (family (i) names+date+cipher keyword; family (ii) "qui regardent les danseurs", no cipher keyword) | queued; does not block the class |
+| not searched | CSP Spanish/Venetian (an English/Imperial/Venetian calendar entry would at most summarise; the class is already N0 from the print and the leaf); Semantic Scholar, Persée, HAL, CrossRef (not needed for N0); f.18v/f.19r margins not viewed | |
+
+Requests this session: archivesetmanuscrits.bnf.fr 1; gallica.bnf.fr 1; be-api.us.archive.org 8; archive.org advancedsearch 2;
+googleapis.com 4; api.openalex.org 1; github.com 2 shallow clones (scratchpad, not committed). All >= 1.5 s apart, no challenge.
+
+### Postmortem
+
+No over-claim found: the N8/N9 sections say "checks key.tsv; not a reading of f.30" and classify no novelty. One gap closed: the files
+called the margin notes "not read" and cited "Béthune vol. 8565" without saying it is fr.3040 itself. Both facts make this item N0, and
+the registers should never count it as a reading. Corrections made: none needed in NOTES.md. status.json gets a `key-to-known-text`
+row (N0, not counted); PROGRESS.tsv gets one row per leaf (f.18r, f.18v, f.19r) with C = '.'. No SECOND-OPINIONS-QUEUE.tsv row
+(below N3).
+
+Checks (5 Oct 2026, 18:26 UTC): `python3 tools/depth_check.py` exit 0, 0 FAIL; its summary line:
+```
+unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 9; legacy ungraded: 0
+```
+The new fr.3040 no.6 row is `key-to-known-text`, N0, one audit, so it is not counted (correct). key.tsv untouched; `decode.py --check` not needed.

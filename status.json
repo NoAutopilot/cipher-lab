@@ -3527,6 +3527,41 @@
       "depth_by": "session_01Cv98BirL9D1NvmfTJXv59m",
       "depth_date": "4 Oct 2026",
       "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "5 Oct 2026",
+      "kind": "contribution",
+      "title": "Gramont to Montmorency, Boulogne [Bologna], 28 March 1530 (BnF fr.3040 no.6, ff.18-19): published key checked against the printed, period-deciphered text",
+      "grade": "N0 (plaintext and decipherment of this item already known: period marginal decipherment on f.18r; printed by Le Grand 1688 from this volume, Anc. 8565); one audit",
+      "line": "Used as known plaintext to check the published Gramont 1530 key: 1302 keyed cipher tokens agree with Le Grand III pp.454-457 at 0.81-0.87 against shuffled-text p99 0.33-0.35 (N8-GRA2, N8-GRA3, N9-GRA4); one sign value confirmed at C (ST = L). A key check on a known text, not a decipherment.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont",
+      "key": "published",
+      "text": "known",
+      "document_id": "BnF fr.3040 no.6 (Anc. 8565), ff.18r-19r, Gramont to the grand maitre, A Boulongne le XXVIIIme jour de mars [1530]",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "1302/1693",
+      "unresolved_spans": "301 tokens '?' (unsettled reader splits); a few signs ending the clear line above f.18r L01 unread",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT 1 for fr.3040 no.6 (VER1-GRA, 5 Oct 2026)'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "no reading file; recon n8gra2/n8gra3/n9gra4 + key.tsv at this commit",
+      "superseded_by": "",
+      "fields_source": "fr2980-gramont/AUDIT.md VER1-GRA verdict table; counts from n8gra2/n8gra3/n9gra4 recon.tsv and target.json",
+      "depth": "D2",
+      "depth_pct": 76.9,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "301 '?' reader splits (z/zb, d/n6, q/g, f/fh mostly)"
+      },
+      "depth_sentence": "Gramont tells Montmorency that, at Rochefort's great instance, the Pope has suspended the matter for a month and a half, during which the King of England is to send a commission to proceed in the cause.",
+      "depth_check": "published key (Tomokiyo/Lasry) applied to two blind reconciled passes; agreement with Le Grand III pp.454-457 vs shuffled-print and shuffled-key nulls, planted control at 13% error (f.18r L11-L21 alone: D2, 71.2%, 287 of 403)",
+      "depth_note": "H/C 1302 of 1693; D3 withheld: below 80% and the gaps are ordinary text",
+      "depth_by": "VER1-GRA (LANE-VER1, account 2)",
+      "depth_date": "5 Oct 2026",
+      "decode_status": "Partially decrypted"
     }
   ],
   "lanes": [
