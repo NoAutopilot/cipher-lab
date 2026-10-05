@@ -29,3 +29,9 @@ Thank you for considering this.
 With kind regards,
 
 [SIGN-OFF]
+
+## Dutch version (added 5 Oct 2026 by the account-3 orchestrator, owner's rule: recipient's language first, separator, then English)
+The mailbox draft now carries a Dutch translation of the checked English text above, then a separator line and the English
+text unchanged (outreach/README.md rule 7). Subject in the mailbox: "Verzoek om een scan van KHA A11-XIVb-15-43 (Willem van
+Hessen aan Willem van Oranje, 28 januari 1567) / Request for a scan". The translation follows the English sentence by sentence
+and adds no claim; it has not had its own gate-7 pass (the English it renders was checked 3 Oct 2026 by OUT-CHECK-KHA).
