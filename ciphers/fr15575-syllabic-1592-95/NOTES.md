@@ -644,3 +644,55 @@ Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L0
 - [ ] image-check: f.228 L05-L08 gloss by per-band calls + multi-view vote (different instrument from the two one-call passes)
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
 Verdict: keep going: 5 internal gaps; cheapest next: f.228 L05-L08 gloss re-read by per-band anchored calls + --views vote under a pre-registered addendum (~$4.5); then the no.54 nomenclator (~$6); then fr.15576 f.2 alignment (~$9); the Simancas Estado 609 fol.86 desk row is an owner-minutes step that can run alongside
+
+## f.228 L05-L08 gloss by per-band 3-view calls (RUN6-NV05C, LANE-RUN6 account-1 worker, 5 Oct 2026 04:45-04:5x UTC)
+
+Prereg `f228/PREREG-ADDENDUM-NV05C.md` (f73a6885, 04:47 UTC) pushed before any call: N8B gate unchanged (S > p99 AND S >= 0.60,
+1000 value shuffles seed 1), ciphertext_b2.tsv unchanged; instrument changed only. Views (scratch, not committed; regen:
+`cd f228/images/b2 && python3 tools/iiif_lines.py --views pad,s125,contrast --views-of f228b2_L0*_s*.jpg --out <scratch>/nv05c`).
+Reads: 12 blind Sonnet calls (4 lines x 3 views), one line's 2 segment crops per call, anchored on the bold line's opening signs
+(`f228/gloss_c/read_{pad,s125,contrast}.tsv`, verbatim). Vote: `tools/reconcile_passes.py --vote`, keep a word iff 2 of 3,
+else [..] (`f228/build_gloss_c.py` -> `gloss_c_diplomatic.tsv` -> `gloss_c.tsv`, `--check`). No hand settlement; the
+prereg's drop-a-misplaced-read step was not used (no read's own note said so). Units: 12 calls + 1 mechanical vote.
+
+| gloss of L05-L08 | S real | control p99 (mean, max) | >= real | gate |
+|---|---|---|---|---|
+| L01-L04 gloss_v2 (N8-NV05, ref.) | 0.674 | 0.233 | 0 | PASS |
+| L05-L08 gloss_b2 (N8-NV05B) | 0.439 | 0.204 | 0 | FAIL |
+| **L05-L08 gloss_c (this job)** | **0.347 (34/98)** | **0.184 (0.119, 0.204)** | **0** | **FAIL** |
+| pooled L01-L08 gloss_v2+gloss_c (ungated) | 0.500 (92/184) | 0.190 | 0 | (FAIL) |
+
+Per line L05/L06/L07/L08: 12/25, 5/24, 8/23, 9/26 (`f228/score_c.tsv`, `score_c.py --check`). Key still beats its null
+(0 of 1000 reach real S), floor not met.
+Why (observed in the reads, not a re-score): the per-band calls did NOT isolate the line. Each crop band holds two faint
+cursive lines (the gloss above Ln's bold line and the next gloss below it); pad L05 ran on into "s.m. q quelo acabara ..."
+(L06's gloss by N8B's placement), pad L06 and contrast L06 ran into "de otra ... tambien ... entendimiento" (L07's), pad L07
+read "para conocer ..." (L08's), while s125/contrast L07 read a different opening ("mas dar gritos"). The 2-of-3 vote then
+kept cross-line words (L06 gloss_c carries "de otra mi tambien entendimiento") and dropped most words to [..] (views split on
+spelling). Anchoring by text in the prompt did not fix geometry; the crops did.
+Rule 3 third-attempt clause: third gloss-read attempt on f.228 B2 with machine one-pass reads of the same crops (N8B 2 passes,
+this job 12 view calls), each failing the same gate, numbers not moving together toward it (0.439 -> 0.347) -> instrument
+"machine gloss read of the b2 band crops" [retired] for f.228 L05-L08; logged untestable-by-this-tool, not refuted. The
+L05-L08 decode (H/U per VERIFY-NV05) is unchanged; no C grade. Reopens only with a different instrument (a person's gloss read,
+or crops cut to one faint line each, which is a geometry change, not another read of these crops) or new material.
+Requests: none (crops on disk). Subagent calls: 12 Sonnet.
+
+## Remaining gaps (RUN6-NV05C, 5 Oct 2026; supersedes the DESK-LAND list)
+
+Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (0.674 vs p99 0.233); L05-L08 gate FAIL three times (0.430/0.439 N8B, 0.347 NV05C vs p99 0.184); f.233 and fr.15576 f.2 unread.
+- Simancas original of the 5 Jan 1595 dispatch (AGS Estado leg. 609 fol. 86, Lefèvre IV no.811) - blocker: not-attempted; new material, a possible crib for fr.15576 f.2 (not for f.228); PARES dead from the cloud; next: LOCAL-QUEUE desk row for the PARES image of Estado 609 fol.86 or Manuscrits divers t.28 fol.183, ~owner minutes
+- f.228 L05-L08 gloss - blocker: not-attempted; machine gloss read of the b2 band crops retired (rule 3, NV05C); next: one-faint-line crops (re-cut b2 bands between the bold lines, gloss only, no cipher line) read by a person in the sign sorter, or new material, ~$2
+- key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
+- target decode fr.15576 f.2 - blocker: not-attempted; a 3-digit system outside no.54 with a period interlined decipherment; next: gloss (2 passes) + ~25 cipher lines aligned with tools/interlinear_align.py (grade C), ~$9
+- fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; unread, band crops mix two gloss lines (NV05C); next: 4-line batches only with gloss-only crops (one faint line per crop), NV05C lesson, ~$7.5 each
+
+## Escalation (RUN6-NV05C, 5 Oct 2026)
+
+- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
+- [ ] clear-pages: AGS Estado leg. 609 fol. 86 (Lefèvre IV no.811); planned: desk row for its image
+- [ ] known-keys: no.54 syllabary control-checked (NV05C fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3 at the floor, > null); nomenclator and no.31 still to transcribe (~$6, ~$4.5)
+- [x] print: Lefèvre IV p.278 no.811 read in full (L47, DESK-LAND); van Durme 1964 snippet only
+- [n/a] key-rebuild: the period key sheet exists and reads the target leaf far above its null
+- [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
+- [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
+Verdict: keep going: 5 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes); then the no.54 nomenclator (~$6); then fr.15576 f.2 alignment (~$9)

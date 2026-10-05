@@ -1,0 +1,34 @@
+metric	value
+control_draws	1000
+control_seed	1
+gloss	gloss_c.tsv (RUN6-NV05C 2-of-3 view vote)
+C_L05-L08_S_real	0.3469
+C_L05-L08_matched	34
+C_L05-L08_scored_tokens	98
+C_L05-L08_letter_agreement_real	0.5128
+C_L05-L08_control_mean	0.1189
+C_L05-L08_control_p99	0.1837
+C_L05-L08_control_max	0.2041
+C_L05-L08_control_ge_real	0
+C_L05-L08_gate	FAIL
+C_L05-L08_line_L05	12/25 tokens; 32/50 gloss letters
+C_L05-L08_line_L06	5/24 tokens; 22/60 gloss letters
+C_L05-L08_line_L07	8/23 tokens; 20/39 gloss letters
+C_L05-L08_line_L08	9/26 tokens; 26/46 gloss letters
+pooled_L01-L08_ungated_S_real	0.5000
+pooled_L01-L08_ungated_matched	92
+pooled_L01-L08_ungated_scored_tokens	184
+pooled_L01-L08_ungated_letter_agreement_real	0.5507
+pooled_L01-L08_ungated_control_mean	0.1368
+pooled_L01-L08_ungated_control_p99	0.1902
+pooled_L01-L08_ungated_control_max	0.2120
+pooled_L01-L08_ungated_control_ge_real	0
+pooled_L01-L08_ungated_gate	FAIL
+pooled_L01-L08_ungated_line_L01	14/20 tokens; 34/62 gloss letters
+pooled_L01-L08_ungated_line_L02	16/20 tokens; 36/60 gloss letters
+pooled_L01-L08_ungated_line_L03	10/21 tokens; 28/53 gloss letters
+pooled_L01-L08_ungated_line_L04	18/25 tokens; 41/64 gloss letters
+pooled_L01-L08_ungated_line_L05	12/25 tokens; 32/50 gloss letters
+pooled_L01-L08_ungated_line_L06	5/24 tokens; 22/60 gloss letters
+pooled_L01-L08_ungated_line_L07	8/23 tokens; 20/39 gloss letters
+pooled_L01-L08_ungated_line_L08	9/26 tokens; 26/46 gloss letters

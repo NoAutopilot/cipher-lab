@@ -1,0 +1,129 @@
+line	position	sign	confidence	alt	why
+L05	1	mi	M	B:[..]/C:m	differ
+L05	2	salvacion	M	A:saluacion	differ
+L05	3	manda	H		agree
+L05	4	me	M	C:-	gap
+L05	5	v.s.	M	B:-/C:mas	gap
+L05	6	por	M	B:v[..]s/C:[..]	differ
+L05	7	tolas	M	B:portales/C:portalas	differ
+L05	8	sus	H		agree
+L05	9	cartas	H		agree
+L05	10	que	H		agree
+L05	11	tenga	H		agree
+L05	12	por	M	C:par	differ
+L05	13	merced	M	B:buena/C:mi	differ
+L05	14	y	M	B:[..]/C:ora	differ
+L05	15	sirua	M	B:sirvia/C:[..]	differ
+L05	16	y	M	C:sirviaz	differ
+L05	17	trabaje	H		agree
+L05	18	que	M	B:-/C:-	gap
+L05	19	alo	M	B:-/C:-	gap
+L05	20	q[..];	M	B:-/C:-	gap
+L05	21	s.m.	M	B:-/C:-	gap
+L05	22	q	M	B:-/C:-	gap
+L05	23	quelo	M	B:-/C:-	gap
+L05	24	acabara	M	B:-/C:-	gap
+L05	25	por	M	B:-/C:-	gap
+L05	26	seruino	M	B:-/C:-	gap
+L05	27	usengans	M	B:-/C:-	gap
+L05	28	muy	M	B:-/C:-	gap
+L05	29	grande	M	B:-/C:-	gap
+L05	30	pensar	M	B:-/C:-	gap
+L05	31	que	H		agree
+L05	32	lo	M	B:-/C:-	gap
+L05	33	[..]	M	B:-/C:-	gap
+L05	34	..	M	B:-/C:-	gap
+L05	35	ninguno	M	B:-/C:-	gap
+L05	36	porq	M	B:-/C:-	gap
+L05	37	simas	M	B:atu/C:ata	differ
+L05	38	log[..]	M	A:...	differ
+L06	1	s.m.	H		agree
+L06	2	q	M	A:-/C:-	gap
+L06	3	q[..]e	M	B:quelo	differ
+L06	4	lo	M	A:-/B:-	gap
+L06	5	tocarana	M	B:ordenara/C:cardana	differ
+L06	6	por	H		agree
+L06	7	seruirno	M	B:seruirlo/C:servirle	differ
+L06	8	[..]	H		agree
+L06	9	es	M	A:-/C:-	gap
+L06	10	ysengaños	M	B:engaño/C:dengaños	differ
+L06	11	muy	H		agree
+L06	12	grande	H		agree
+L06	13	pensar	H		agree
+L06	14	q[..]	M	B:-/C:-	gap
+L06	15	q[..]	M	B:-/C:-	gap
+L06	16	el	M	B:que/C:-	gap
+L06	17	cabo	M	B:lo/C:que	differ
+L06	18	ningun	M	B:hago/C:lo	differ
+L06	19	[..]	H		agree
+L06	20	aunque	M	A:-/B:-	gap
+L06	21	pasos	M	B:-/C:ningunos	gap
+L06	22	[..]	M	C:porque	differ
+L06	23	mas	M	B:ninguno/C:sim[..]	differ
+L06	24	ganzas	M	B:porq/C:ançaz	differ
+L06	25	[..]	M	C:|	differ
+L06	26	de	M	B:-	gap
+L06	27	otra	M	B:-	gap
+L06	28	q[..]	M	B:-/C:[..]	gap
+L06	29	mi	M	B:-	gap
+L06	30	mucho	M	B:-/C:-	gap
+L06	31	deos	M	B:-/C:[..]	gap
+L06	32	lisaud	M	B:-/C:deslaguna	gap
+L06	33	muja	M	B:-/C:mejor	gap
+L06	34	tambien	M	B:-	gap
+L06	35	me[..]ado	M	B:-/C:metido	gap
+L06	36	entendimiento	M	B:[..]	differ
+L07	1	para	M	B:-/C:-	gap
+L07	2	conocer	M	B:-/C:-	gap
+L07	3	que	M	B:[..]mez/C:mas	differ
+L07	4	dar	M	A:lo	differ
+L07	5	tengo	M	B:gritos/C:[..]	differ
+L07	6	pasa(do)	M	B:ni/C:gritos	differ
+L07	7	[..]	H		agree
+L07	8	de	H		agree
+L07	9	otro	M	B:otra	differ
+L07	10	con	M	B:[..]	differ
+L07	11	mi	H		agree
+L07	12	mucho	M	C:-	gap
+L07	13	deseo	M	B:-/C:-	gap
+L07	14	lisaue	M	B:-/C:-	gap
+L07	15	meja	M	B:-/C:-	gap
+L07	16	tambien	M	B:-/C:-	gap
+L07	17	me	M	B:-/C:vntento	gap
+L07	18	tirado	M	B:dios/C:deos	differ
+L07	19	entrendimiento	M	B:liçaue/C:la	differ
+L07	20	[..]	M	C:sauia	differ
+L07	21	seruir	M	B:mesa/C:mejor	differ
+L07	22	[..]	H		agree
+L07	23	dondemy	M	B:-/C:-	gap
+L07	24	mandase	M	B:-/C:-	gap
+L07	25	an[..]	M	B:-/C:-	gap
+L07	26	sea	M	B:-/C:-	gap
+L07	27	trauando	M	B:-/C:-	gap
+L07	28	mil	M	B:-/C:-	gap
+L07	29	vezes	M	B:-/C:-	gap
+L07	30	tambien	M	A:al	differ
+L07	31	dia	M	B:meñado/C:metadado	differ
+L07	32	entendimiento	M	A:pro[..]	differ
+L08	1	para	M	B:par	differ
+L08	2	conocer	H		agree
+L08	3	que	H		agree
+L08	4	[..]	M	B:la/C:el	differ
+L08	5	tengo	M	C:largo	differ
+L08	6	para	M	B:-	gap
+L08	7	seruir	M	B:-/C:-	gap
+L08	8	a	M	B:pasa/C:[..]	differ
+L08	9	ihs.	M	B:[..]/C:suis	differ
+L08	10	m.	M	B:ins/C:sr	differ
+L08	11	donde	M	B:[..]/C:w	differ
+L08	12	my	M	B:dondemos/C:dondemi	differ
+L08	13	mandare	H		agree
+L08	14	aun	M	B:-/C:-	gap
+L08	15	que	M	B:angeza/C:-	gap
+L08	16	sea	M	B:[..]/C:an?ysea	differ
+L08	17	?mouiendo	M	B:mucho/C:[..]muuando	differ
+L08	18	mil	H		agree
+L08	19	vezes	H		agree
+L08	20	al	H		agree
+L08	21	dia	H		agree
+L08	22	pro	M	A:pro[..]	differ
