@@ -1,5 +1,5 @@
 id	kind	target	draft	to	subject	checked	status	result
-S1	form	ciphers/destaing-gerard-1779	outreach/mailbox/clements-destaing-1779.json	FORM: https://clements.umich.edu/research/contact-us	Duplication enquiry: Clinton Papers vol. 64:14-15 (d'Estaing to Gerard/Holker, 30 April 1779)	2026-09-26 17:50 (OUT-CHECK-V)	queued
+S1	form	ciphers/destaing-gerard-1779	outreach/mailbox/clements-destaing-1779.json	FORM: https://clements.umich.edu/research/contact-us	Duplication enquiry: Clinton Papers vol. 64:14-15 (d'Estaing to Gerard/Holker, 30 April 1779)	2026-09-26 17:50 (OUT-CHECK-V)	sent
 S2	email	ciphers/bl-james-1669 (+5 BL targets, ASKS 56; monck-1660 ASKS 6)	outreach/mailbox/bl-imaging-quote-batch.json	itemrequests@bl.uk	Digitisation/quote enquiry: seven items, Western Manuscripts and Blenheim Papers	2026-09-26 19:53 (OUT-CHECK-Q)	sent	sent by the owner 5 Oct 2026 ~02:25 UTC from the project mailbox
 S3	form	ciphers/espagnol142-mercy-1648	outreach/mailbox/agr-mercy-quote-form.json	FORM: https://www.arch.be/index.php?l=en&m=contact	(form has no subject field)	2026-09-26 19:53 (OUT-CHECK-Q)	queued	
 S4	form	ciphers/borssele-heinsius-1714	outreach/mailbox/na-heinsius-quote-form.json	FORM: https://www.nationaalarchief.nl/beleven/contactformulier-nationaal-archief	Reproductieverzoek 3.01.19, inv.nr. 1836 (Heinsius)	2026-09-26 19:53 (OUT-CHECK-Q)	queued	
