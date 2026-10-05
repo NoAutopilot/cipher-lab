@@ -1,0 +1,41 @@
+item	label	conf	second	note
+41	S	M	s	hooked S-shaped sign after q
+42	S	H	s	hooked S with curled tail at line end
+43	z	M	tz	barred z-like sign after S
+44	S	M	s	hooked S after crossed q
+45	+	M	4	plain cross after y
+46	z	M	tz	z with bar through it
+47	4	M	+	digit 4 after y
+48	th	M	dia	oval with horizontal bar
+49	4	M	+	digit 4 after p
+50	th	M	dia	oval crossed by bar
+51	z	M	tz	barred z after s
+52	4	M	+	digit 4 before 8
+53	th	M	dia	oval with bar
+54	S	L	s	hooked sign near end, window hard
+55	S	M	s	hooked S after crossed q
+56	th	M	dia	oval with bar
+57	th	M	dia	oval with bar
+58	th	M	dia	oval with bar
+59	z	M	tz	barred z
+60	th	M	dia	oval with bar
+61	4	L	+	digit 4 before eloop
+62	4	M	+	digit 4 after barred z
+63	qb	L	q	q with crossed descender
+64	S	M	s	hooked S
+65	S	L	th	hooked sign before iii
+66	4	L	q	digit 4
+67	S	M	s	hooked S
+68	z	M	tz	barred z
+69	z	L	tz	barred z
+70	th	M	dia	oval with bar
+71	z	M	tz	barred z
+72	S	M	s	hooked S after w
+73	4	L	+	digit 4 after p
+74	th	M	dia	oval with bar
+75	th	L	dia	oval with bar
+76	4	M	+	digit 4
+77	S	M	s	hooked S after 4
+78	z	M	tz	barred z after S
+79	4	M	+	digit 4
+80	th	M	dia	oval with bar

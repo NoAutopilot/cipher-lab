@@ -2072,3 +2072,43 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: th/z/S/4 split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); next: planted agreed-token audit on th/z/S/4, and the sorter for the 29 unsettled tiles and seven new shapes
 - [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
 Verdict: keep going: 3 internal gaps; cheapest next: planted agreed-token audit (lookalike_pass.py audit + windows --items) on th/z/S/4, ~$3
+
+## D2-C1161AUD: planted agreed-token audit on th/z/S/4 (account-1 worker for LANE-D2PUSH, 5 Oct 2026, 19:07-19:1x UTC by date -u)
+Brief `.claude/briefs/runs/2026-10-05-acct1-d2-c1161aud.md`. Intake gate, pasted before work:
+`ciphers/clair1161-avis-flandre-1688: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+PREREG `aud/PREREG_c1161aud.md` pushed before any re-read or score (0c5f581f3).
+- Items: `python3 aud/run_audit.py` (`lookalike_pass.audit`, pool narrowed to D2-C1161LA's agreed th/z/S/4 positions, 829 tokens:
+  4 222, S 266, th 197, z 144), seed 51, 120 items, 20 plants to the top confusion partner (th->dia 7, z->tz 6, 4->qb 4, S->s 3),
+  `--hide-passc`. Hidden answers `aud/c1161aud_audit_items.tsv`. Tool fix on the way (85a0caff3): a transcription's own
+  `[PLAIN:..]` token was parsed as an audit bracket and crashed the prompt; offline test 2d added, all three lookalike tests pass.
+- Instrument (pasted): `python3 tools/lookalike_pass.py windows --items aud/c1161aud_audit_items.tsv --passc la/passC.tsv
+  --manifest la/crops/manifest.json --crop-pattern '{line}_s*' --out aud --run c1161aud_win --per 10 --scale 1 --desc la/desc.tsv`
+  -- 120 per-item windows cut from the existing native line crops (made by the iiif_lines.py commands recorded above), 12 montages
+  (aud/win/, gitignored; regenerate with the command). 3 Sonnet calls of 40 items (aud/part{1,2,3}_prompt.md -> aud/reread.tsv).
+- Score (`lookalike_pass.py audit-score`, aud/score.json): **planted catch 13/20 = 0.65 < gate 0.80 (and < the brief's 0.70):
+  NON-TEST, exit 3.** No unplanted figure is interpreted and nothing is applied; ciphertext.tsv, key.tsv and grades unchanged
+  (C 353, S 1908, M 1114, U 33); no decode, depth or AUDIT propagation owed.
+- Diagnosis (information only, not a re-score): per plant class th->dia 7/7, z->tz 4/6, S->s 1/3, 4->qb 1/4. Of the 7 misses, 6
+  picked the original label but at conf L (the tool's rule counts only H/M), 1 picked the planted label at L. The reader marked
+  99 of 120 answers M and only 2 H: on this hand, at --scale 1 with the evenly-spaced x estimate, it does not commit on the
+  4/qb and S/s pairs, so the instrument cannot license a negative on agreed tokens there. Unplanted firm flags 5/100 (th->S 3,
+  4->qb 1, 4->+ 1; no class near the registered >= 10), so the conditional relabel test was not run; the 5 go to `aud/focus.tsv`
+  for the owner's sign sorter beside la/focus.tsv.
+Report what was found and where it was not found: no outside source searched; novelty not classified. Subagent calls: 3 (Sonnet).
+
+## Remaining gaps (D2-C1161AUD, 5 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged by this job; no grade moved).
+- 27 M-graded key signs (th, z, eloop, phi, 6r, 8, 2, tz, and the nine LOLO values K, iib, l, ls, o, rot, spiralG, to, x) and the contested S signs 4, S - blocker: not-attempted; neither known key on file fits (fr16142 2/16, fr.3281 f.4 2/17, both NO FIT); split-tile look-alike gate FAIL (D2-C1161LA); planted agreed-token audit NON-TEST (catch 0.65, D2-C1161AUD); next: the owner's sign sorter on la/focus.tsv (29 tiles) + aud/focus.tsv (5), then a held-out-leaf judge test of the sorted transcription, ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; agreed-but-wrong signs unmeasured: the Sonnet window reader missed the planted control on 4/qb and S/s (D2-C1161AUD); next: the same planted audit with a different instrument (per-line slope-followed re-cuts, iiif_lines.py --follow-slope, --scale 2, Opus reader), PREREG unchanged in gate, ~$4
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (D2-C1161AUD, 5 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; the nine's gain over the pre-JOINT9 key (+0.035) is inside a fr16-window null (p95 +0.082, VER-C1161J); the gloss PASSes the fr16 judge (-0.808), the decode FAILs
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key 2/16 vs p99 3 (N4-C1 4) and BnF fr.3281 f.4 Des Pruneaux Flanders key 2/17 vs p99 4 (D2-C1161PRU), both NO FIT; the fr.3281 Pruneaux-Aranger cipher (1579) not tested, a later key of a different design
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted agreed-token audit with the Sonnet window reader NON-TEST (catch 0.65 < 0.80, D2-C1161AUD); next: the owner's sign sorter on la/focus.tsv + aud/focus.tsv, or the audit with re-cut slope-followed windows and a stronger reader
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
+Verdict: keep going: 3 internal gaps; cheapest next: owner's sign sorter on la/focus.tsv + aud/focus.tsv, then a held-out-leaf judge test, ~$2
