@@ -13,6 +13,7 @@ for t in test_bad test_ctx test_ctx2 test_focus test_mobile_ctx test_sorter test
 run test_cluster_rank test_cluster_rank.js "$OUT/cluster.html" "$OUT/test_cluster_rank.png"
 run test_refs test_refs.js "$OUT/refs.html" "$OUT/test_refs.png"
 run test_pageview test_pageview.js "$OUT/region.html" "$OUT/test_pageview"
+run test_recut_quad test_recut_quad.js "$OUT/plain.html" "$OUT/test_recut_quad" "$OUT/region.html"
 run test_qa test_qa.js "$OUT/plain.html" "$OUT/dump"
 [ -n "$EXTRA" ] && run "test_qa ($EXTRA)" test_qa.js "$EXTRA"
 exit $fail

@@ -37,8 +37,11 @@ glyph_atlas atlas/classify run picks them up:
     --auto-clusters) are page-local and are never written to an atlas.
 Fixed cuts ("Fix the cut", 4 Oct 2026, SORTER-NUDGE): DIR/recuts/*.json ({sid, page, x, y, w, h, old, at}, source
 line-image pixels) are written to recuts.tsv beside --out (or --recuts-out): tile, page, old_x old_y old_w old_h, new_x
-new_y new_w new_h, at. A recut tile keeps its pile and status here; tools/sorter_apply_recuts.py re-crops it and updates
-signs.tsv. No recuts saved: no file is written.
+new_y new_w new_h, at, quad, mask. Since 5 Oct 2026 (SORTER-QUAD) a doc may carry quad [[x, y]] x 4 (TL, TR, BR, BL:
+corners moved one by one) and mask [{r, pts}] (brush strokes over a neighbour's ink); both go to the quad and mask cells as
+JSON, and new_x .. new_h are then the quad's bounding box. An old {x, y, w, h} doc leaves both cells empty. A recut tile
+keeps its pile and status here; tools/sorter_apply_recuts.py re-crops it and updates signs.tsv. No recuts saved: no file
+is written.
 Must NOT be used to write a cluster label the person did not choose: nothing here infers a code from shape."""
 import argparse, csv, glob, json, os, sys
 
@@ -151,19 +154,48 @@ def write_atlas(L, rows, piles, moves, cluster_docs, cluster_of, source=''):
     return entry
 
 
-RECUT_COLS = ['tile', 'page', 'old_x', 'old_y', 'old_w', 'old_h', 'new_x', 'new_y', 'new_w', 'new_h', 'at']
+RECUT_COLS = ['tile', 'page', 'old_x', 'old_y', 'old_w', 'old_h', 'new_x', 'new_y', 'new_w', 'new_h', 'at', 'quad', 'mask']
+num = lambda v: isinstance(v, (int, float)) and not isinstance(v, bool)
+
+
+def doc_quad(d):
+    """A recut doc's quad as [[x, y]] x 4 (TL, TR, BR, BL), or None when it has none or it is malformed."""
+    q = d.get('quad')
+    if isinstance(q, list) and len(q) == 4 and all(isinstance(p, list) and len(p) == 2 and all(num(v) for v in p) for p in q):
+        return [[round(float(v), 2) for v in p] for p in q]
+    return None
+
+
+def doc_mask(d):
+    """A recut doc's brush strokes [{r, pts}] (malformed strokes and points dropped)."""
+    out = []
+    for st in d.get('mask') or []:
+        if not isinstance(st, dict) or not num(st.get('r')) or st['r'] <= 0:
+            continue
+        pts = [[round(float(p[0]), 2), round(float(p[1]), 2)] for p in st.get('pts') or []
+               if isinstance(p, list) and len(p) == 2 and all(num(v) for v in p)]
+        if pts:
+            out.append({'r': round(float(st['r']), 2), 'pts': pts})
+    return out
 
 
 def recut_rows(docs):
-    """db 'recuts' documents -> recuts.tsv rows (sorted by tile); a doc without a full new box is dropped."""
+    """db 'recuts' documents -> recuts.tsv rows (sorted by tile). A doc needs a full new box {x, y, w, h} or a quad (whose
+    bounding box is then the new box); one with neither is dropped."""
     out = []
     for d in docs:
-        new = [d.get(k) for k in ('x', 'y', 'w', 'h')]
-        if not d.get('sid') or not all(isinstance(v, (int, float)) for v in new):
+        q, new = doc_quad(d), [d.get(k) for k in ('x', 'y', 'w', 'h')]
+        if q:
+            xs, ys = [p[0] for p in q], [p[1] for p in q]
+            l, t = int(round(min(xs))), int(round(min(ys)))
+            new = [l, t, int(round(max(xs))) - l, int(round(max(ys))) - t]
+        if not d.get('sid') or not all(num(v) for v in new):
             continue
         old = list(d.get('old') or [''] * 4)[:4]
-        out.append([d['sid'], d.get('page', '')] + [int(round(v)) if isinstance(v, (int, float)) else '' for v in old]
-                   + [int(round(v)) for v in new] + [d.get('at', '')])
+        m = doc_mask(d)
+        out.append([d['sid'], d.get('page', '')] + [int(round(v)) if num(v) else '' for v in old]
+                   + [int(round(v)) for v in new] + [d.get('at', ''), json.dumps(q, separators=(',', ':')) if q else '',
+                                                      json.dumps(m, separators=(',', ':')) if m else ''])
     return sorted(out)
 
 

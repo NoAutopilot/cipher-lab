@@ -5,11 +5,20 @@
       [--signs-out FILE] [--force] [--dry-run]
 
 recuts.tsv is what tools/sign_sorter_apply.py writes from the page's db collection 'recuts' (tile, page, old_x old_y old_w
-old_h, new_x new_y new_w new_h, at; source line-image pixels, the x y w h of signs.tsv). For each row this:
+old_h, new_x new_y new_w new_h, at, and since 5 Oct 2026 quad and mask; source line-image pixels, the x y w h of
+signs.tsv). For each row this:
   - re-crops the tile from PAGES_DIR/<page>.(png|jpg|jpeg) at the new box, with tools/sign_sorter.py's margins (0.9 h
     above, 0.35 h below, 5 px each side), into TILES_DIR/<tile>.jpg; the crop it replaces is kept once as
     <tile>.orig.jpg (cut at the old box if no <tile>.jpg existed), never overwritten by a second run;
   - sets the tile's x y w h in signs.tsv to the new box (in place unless --signs-out).
+Free corners and stray ink (SORTER-QUAD, owner 5 Oct 2026: on a wide looped sign the sheared box could not cover the sign
+without a neighbour's ink): a row whose quad cell holds four corners [[x, y], ...] (TL, TR, BR, BL) is cut by
+perspective-warping that quadrilateral to an upright tile W x H (W the longer of the top and bottom edges, H the longer of
+the left and right ones), with the same margins taken around it in the warped frame (pixels that fall off the page are
+white); new_x .. new_h are the quad's bounding box and are what signs.tsv gets. A mask cell [{r, pts: [[x, y], ...]}, ...]
+lists brush strokes (radius r, source pixels) over a neighbour's ink: they are painted white on the source before the cut,
+quad or plain box. A row without a quad cell (recuts.tsv written before 5 Oct 2026, or an {x, y, w, h} recut) is cut
+exactly as before.
 A row whose signs.tsv box is neither the recut's old box nor already its new box is skipped and reported (the folder was
 re-cut since the page was built, e.g. recut.py run again) unless --force; a row already at its new box is re-cropped but
 counts as already applied, so the tool can be run again after a rebuild that re-ran recut.py. Exit 0 when every row
@@ -17,14 +26,81 @@ applied or was already applied, 2 when any was skipped (stale or missing tile/pa
 Only boxes move: a recut tile keeps its sign label and pile (labels.tsv untouched). One tile = one box; the page has no
 "split here". Offline. Test: tools/tests/test_sorter_apply_recuts.py.
 """
-import argparse, csv, os, sys
+import argparse, csv, json, os, sys
 
-from PIL import Image
+import numpy as np
+from PIL import Image, ImageDraw
+
+PAPER = 255   # masked ink and off-page pixels become paper white
 
 
 def crop_box(im, x, y, w, h):
     top, bot, side = max(10, int(.9 * h)), max(6, int(.35 * h)), 5
     return im.crop((max(0, x - side), max(0, y - top), min(im.width, x + w + side), min(im.height, y + h + bot)))
+
+
+def margins(w, h):
+    """tools/sign_sorter.py's margins around a w x h box: (top, bottom, side)."""
+    return max(10, int(.9 * h)), max(6, int(.35 * h)), 5
+
+
+def quad_size(q):
+    """Upright size (W, H) of quad q [[x, y]] x 4 (TL, TR, BR, BL): the longer top/bottom edge, the longer left/right edge."""
+    d = lambda a, b: float(np.hypot(q[a][0] - q[b][0], q[a][1] - q[b][1]))
+    return max(1, int(round(max(d(0, 1), d(3, 2))))), max(1, int(round(max(d(0, 3), d(1, 2)))))
+
+
+def homography(src, dst):
+    """The 8 coefficients (a..h) of the projective map src[i] -> dst[i] (4 point pairs): x' = (a x + b y + c) / (g x + h y + 1),
+    y' = (d x + e y + f) / (g x + h y + 1); the order Pillow's Image.PERSPECTIVE takes (output -> input)."""
+    A, B = [], []
+    for (x, y), (u, v) in zip(src, dst):
+        A.append([x, y, 1, 0, 0, 0, -u * x, -u * y]); B.append(u)
+        A.append([0, 0, 0, x, y, 1, -v * x, -v * y]); B.append(v)
+    return [float(c) for c in np.linalg.solve(np.array(A, float), np.array(B, float))]
+
+
+def crop_quad(im, q):
+    """Warp quad q (source pixels, TL TR BR BL) to an upright tile with sign_sorter.py's margins around it."""
+    W, H = quad_size(q); top, bot, side = margins(W, H)
+    out = [(side, top), (side + W, top), (side + W, top + H), (side, top + H)]
+    return im.transform((W + 2 * side, H + top + bot), Image.PERSPECTIVE, homography(out, [tuple(p) for p in q]),
+                        Image.BILINEAR, fillcolor=PAPER)
+
+
+def paint_mask(im, mask):
+    """A copy of im with each brush stroke {r, pts} painted paper white (round caps and joins, as the page draws them)."""
+    if not mask:
+        return im
+    im = im.copy(); g = ImageDraw.Draw(im)
+    for st in mask:
+        r, pts = float(st['r']), [(float(x), float(y)) for x, y in st['pts']]
+        for x, y in pts:
+            g.ellipse((x - r, y - r, x + r, y + r), fill=PAPER)
+        if len(pts) > 1:
+            g.line(pts, fill=PAPER, width=max(1, int(round(2 * r))))
+    return im
+
+
+def parse_quad(cell):
+    """recuts.tsv quad cell -> [[x, y]] x 4 or None (empty = an old {x, y, w, h} row); ValueError when malformed."""
+    if not (cell or '').strip():
+        return None
+    q = json.loads(cell)
+    if not (isinstance(q, list) and len(q) == 4 and all(isinstance(p, list) and len(p) == 2 for p in q)):
+        raise ValueError('quad needs four [x, y] corners')
+    return [[float(p[0]), float(p[1])] for p in q]
+
+
+def parse_mask(cell):
+    """recuts.tsv mask cell -> [{r, pts}] ([] when empty); ValueError when malformed."""
+    if not (cell or '').strip():
+        return []
+    m = json.loads(cell)
+    if not isinstance(m, list) or not all(isinstance(s, dict) and float(s['r']) > 0 and isinstance(s['pts'], list) and
+                                          all(len(p) == 2 for p in s['pts']) for s in m):
+        raise ValueError('mask needs [{r, pts: [[x, y], ...]}, ...]')
+    return m
 
 
 def find_page(pages, page):
@@ -50,7 +126,8 @@ def run(recuts, signs, pages, tiles, signs_out=None, force=False, dry=False):
         try:
             new = [int(r[k]) for k in ('new_x', 'new_y', 'new_w', 'new_h')]
             old = [int(r[k]) for k in ('old_x', 'old_y', 'old_w', 'old_h')] if r.get('old_x', '') != '' else None
-        except (KeyError, ValueError):
+            quad, mask = parse_quad(r.get('quad')), parse_mask(r.get('mask'))
+        except (KeyError, ValueError, TypeError):
             rep['skipped'].append((sid, 'bad box')); continue
         if not s:
             rep['skipped'].append((sid, 'not in signs.tsv')); continue
@@ -69,7 +146,8 @@ def run(recuts, signs, pages, tiles, signs_out=None, force=False, dry=False):
                     os.replace(t, o)
                 else:
                     crop_box(im, *(old or cur)).save(o, 'JPEG', quality=90)
-            crop_box(im, *new).save(t, 'JPEG', quality=90)
+            src = paint_mask(im, mask)
+            (crop_quad(src, quad) if quad else crop_box(src, *new)).save(t, 'JPEG', quality=90)
             s.update({'x': str(new[0]), 'y': str(new[1]), 'w': str(new[2]), 'h': str(new[3])})
         rep[state].append(sid)
     if not dry and (rep['applied'] or rep['already']):
