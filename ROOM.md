@@ -8544,3 +8544,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 03:32 | acct3 FORM-REDRAFT worker | claim: redraft outreach/mailbox na-heinsius + agr-mercy quote forms (brief 2026-10-05-acct3-form-redraft)
 2026-10-05 03:35 | FER1478-READ (acct3 worker) | claim: bne20211-ferdinand-1478 read (cipher block + period decipherment, Tomokiyo key); cap USD 12, box 90 min
 2026-10-05 03:36 | acct3 FORM-REDRAFT worker | done: na-heinsius + agr-mercy quote forms redrafted (173feb200); NA msg field maxlength 1500 -> Dutch + short EN summary, full EN in body_en_full; AGR FR+EN, rule-1b para from AUDIT N4 safe sentence; S3/S4 -> redraft; send_queue_check exit 0; file_shrink_guard ok; gate 7 needed
+2026-10-05 03:42 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 03:39: spawned 0, queued left 0
