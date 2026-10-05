@@ -4106,6 +4106,37 @@ ledgered, archived) + orchestrator ~4.6 = ~43.4 of 60. No check-in armed. Nothin
 - Brief lesson: a premise step that looks for a misplaced decipherment before transcription saved one whole read (N5-VIV5S, ~$18); Gachard's
   "sans le dechiffrement" flag was wrong for both letters it named in this pool -- read the leaves, not the catalogue flag.
 
+## LANE RUN6 handoff (session_01DEPpt7wx123vjFcTqSzMpX, account 1), 5 October 2026 (04:41-06:1x UTC; closed: lane cap nearly spent)
+
+Brief `.claude/briefs/runs/2026-10-05-acct3-lane-run6.md`; worker briefs `2026-10-05-acct1-run6-wave1.md` .. `-wave5.md`. 23 workers USD 48.76
+(22 D, 1 D- = RUN6-SEURE2 11.41/9) + orchestrator 5.6 = ~54.4 of 60; all ledgered and archived; no check-in armed. Nothing called new; no
+status.json / NEAR.md / QUEUE.md / AUDIT.md edited. NEXT-STEPS.tsv regenerated at close.
+- **august-van-saksen-1561-64 (RUN6-AVS62).** Rachfahl II.1 p.209's "chiffrierter Zettel, Brüssel 13. August 1562" = WVO 74 (on disk). Prereg
+  714a53b6: Rachfahl's quoted German vs ciphertext under key.tsv S 0.796 vs shuffled-key p99 0.259 / shuffled-crib p99 0.494, control 0.803: PASS.
+  24/28 span signs gain a printed C witness; no value changed. **For account 3:** a printed known-answer confirmation of key_74, verifier's call.
+- **fr16045-pisany-rome-1585 (RUN6-PIS, -PISFIN).** f.275v block B (L17-L20): 8 Sonnet reads, page err 0.190; kp86h full page PASS (A 0.514 vs
+  p99 0.391/0.469, ctrl 5/5), page C 287 / M 444. L17-L20 alone FAIL in kp86h and again in kp86i with the Colbert p.123 span extended (A 0.497 vs
+  order p99 0.524; B 0.524 = p99) -> L17-L20 stay M; next: third reader on 4 lines ~$2. f.275r T31 relabel on blind B 0.659 -> 0.669, ctrl 5/5,
+  SUPPORTED; key86.tsv unchanged. f.246r-v (~$36) not opened (owner decision).
+- **fr15575-syllabic-1592-95 (RUN6-NV05C).** f.228 L05-L08 gloss by 12 per-band view calls + vote: 0.347 vs floor 0.60 (p99 0.184) FAIL; third
+  attempt -> machine gloss read of these band crops [retired]. Next is new material: AGS Estado 609 fol.86 desk row, or gloss-only crops for a person.
+- **fr16142-noailles-constantinople-1571 (NOXDEC, NOXREAD, NOXALIGN, NOXDUP).** Tile-stream decode non-test (Tomokiyo also at null on tiles);
+  basin consensus key on reconciled c262 reader signs R 0.309 PASS (thin: 1/924 non-locking subsets ties); decode-gloss LOLO alignment S 0/41
+  ties null 0 = non-test; gloss favours i2 -> i, o1/e2 -> o. All M. Dupuy 521 date-only matches: c330, c358, c409, c245/c464 confirmed by text,
+  c472-473 partial; Dupuy carries copyist clear passages for c330 and c245/c464 (ungraded) -- possible known plaintext, next worker's call.
+- **birago-fr3252-1571-72 (BIR138, BIR3637).** f.138 (cipher f.139v) digit share 0.03 vs f.100r 0.95 -> 1572 symbol key, not the Nov 1571
+  numerical system. f.36-37 193-split reconciliation in one call: 5 decided, non-discriminating (brief oversized the unit); next 4 per-page calls ~$2.
+- **bowes-walsingham-1583 (BOWESNRS).** NRS catalogue 403 Cloudflare, Wayback reset: non-test; LOCAL-QUEUE L56 queued for the GD406 search.
+- **fr3151-seure-1558 (SEURE, SEURE2).** All 20 f81R lines reconciled (err_R 0.095, agreement); nom_test R1 FAIL with control power met
+  (S* 0.230 vs p95 0.246) -- conditional on the reconciled read; R2 unscored (30-min background limit; re-run with a longer timeout ~$0.3).
+- **clairambault1225-paget-1714 (PAGET, PAGETR7).** 20-seed settle7: 126/86 13/20 -> stay M; 5 S -> M; fresh rule-7 SAME (0 diffs beyond M).
+- **eckert-1862 (ECK62, ECK62R).** Print-free book assignment gate PASS (known 0.896 vs shuffled max 0.707): 79/192 '?' entries assigned at S;
+  read: 2 word-clean (9910.423, 9971.546), 77 not; next print-check the 2.
+- **Search results (no grade moves):** eckert-1864 mssEC 18 has no E4/E5 copy (volunteer text); huntington-blathwayt SP 94/36 is 1620s, 1727-29
+  pieces item-less (non-test); lope-hurtado CSP no.497 = R9644/R9648 not R9649, Bourdeau now reads R9634 (duplicate risk); fr3198-labbe no key in
+  Tomokiyo snapshots, fr.4695 = btv1b90582923 (no folio labels); ra-karlxi NEXT-STEPS row stale (done 4 Oct); bullet-tuscany left to N9-BUL.
+- Lesson: two backlog rows were stale or already claimed when spawned -- read ROOM claims and the folder's last NOTES section, not NEXT-STEPS alone.
+
 ## LANE NEAR8 handoff (session_01HcZrXzQiZna9e3nfwzFqh6, account 2), 4 October 2026 (closed 17:4x UTC: lane cap reached)
 
 Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near8.md`; worker briefs `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md`, `-wave2.md`, `-wave3.md`.
