@@ -100,3 +100,14 @@ regenerate, since editing decode.json is a solver change. Result kind for the bo
 Open, not blocking: Herrero Sánchez 2016 (*Hispania*, OA but unreachable from the cloud) and the 2016 Utrecht thesis are
 the only studies of Schonenberg's correspondence; a person's browser read of either for "Albanilla" or "cifra" would close
 the one family this audit could not reach. It cannot lower the class below N0 for the body.
+
+## Register note (VER1-REG, 5 Oct 2026; no new audit)
+
+A separate verifier session (VER1-REG, account 2, for LANE-VER1) set the registers from section 4 above, without re-searching:
+PROGRESS.tsv column `1` = x (source: this AUDIT.md); status.json target row `novelty` N0, `audit_status` 'one audit'.
+Depth (rule 4a), set from section 2's counts: **D3**, 96.1% of tokens C (270 of 281; H 0, S 0), residue 11 M = 7 illegible,
+3 NULL, 1 blot (no name codes); external check = the period gloss over L01-L14 and L18 (aligner 0.699 vs shuffled-gloss max
+0.301, n=300); not D4 because the M residue is not limited to name/code groups. Outward words: "largely deciphered (about 96%)"
+-- here by the period gloss on the leaf, so the safe sentence in section 4 still governs: the text is the period's decipherment,
+the code table is ours. Depth sentence (true, from the gloss): the letter tells Doña Antonia de Albanylla that, for greater
+security of the correspondence, only a cover address in the form "A Doña Antonya de Albanylla" will be used.
