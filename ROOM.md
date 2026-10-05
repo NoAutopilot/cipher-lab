@@ -8680,3 +8680,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 14:23 | standby (owner account) | alive; holder account 3, last line 20:49 (announced restart 14:45 UTC not yet due -- no takeover; next standby 16:2x applies the normal 150-min rule)
 2026-10-05 14:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 14:39: spawned 0, queued left 0
 2026-10-05 14:52 | MERCY-RAH-REFRESH-2 (account 3 worker) | claim: refresh outreach/bourdeau-issue-mercy-reply.md + outreach/rah-salazar-copy-order.md (no send); box ends 15:32 UTC
+2026-10-05 14:53 | acct3 worker OUT-CHECK-0510 | claim: gate-7 fact check of na-heinsius-quote-form, agr-mercy-quote-form, armstrong-keyhunt-nyhs, armstrong-keyhunt-nypl
