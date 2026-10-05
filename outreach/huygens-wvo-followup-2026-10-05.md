@@ -1,0 +1,33 @@
+status: drafted 5 Oct 2026 02:0x UTC by OUT-GAPS (account-3 worker); awaiting the gate-7 fact check (a separate session) and then the owner's send. Not sent. No Gmail draft.
+to: reply in the owner's existing thread with dr. Ineke Huysman, Huygens Instituut, from the owner's own account (her address is already in that thread and in outreach/huygens-reply-2026-09-26.md). The institute's public address, for a cc if wanted: info@huygens.knaw.nl (read 5 Oct 2026 01:5x UTC on https://www.huygens.knaw.nl/informatie/contact/; the page also lists communicatie@huygens.knaw.nl). The first email of 24 Sept went to resources@huygens.knaw.nl, which the contact page no longer lists.
+subject: Re: Cipher passages in six WVO letters (4610, 4611, 4616; 53, 57, 126)
+sign-off: [SIGN-OFF]
+prior_contact: yes. The owner's own account: first email 24 Sept 2026 (outreach/huygens-nassau-saxony.md), her reply 26 Sept 2026, the owner's answer about 15:00 UTC on 26 Sept 2026 (outreach/huygens-reply-2026-09-26.md), and no reply since (CONTRIBUTIONS.md). Project mailbox searched 5 Oct 2026 for huygens.knaw.nl, all folders: no threads. So this goes as a reply in the owner's thread, not from the mailbox (README rule 8).
+targets: ciphers/lodewijk-van-nassau-1573-74 (WVO 5797, 4612), ciphers/jan-van-nassau-1572-75 (WVO 5551)
+audit: lodewijk-van-nassau-1573-74/AUDIT.md V8.6 and A2.5 (5797 safe sentence, N4; A2.6 gate 2), A4.3 (code 172 not classed), A1.5 (4612, N3); jan-van-nassau-1572-75/AUDIT.md V-TX and V-TX2 safe sentences (N3, key ours), "Gate 2 (V-GATE2)", "Marburg reply" (NOTES.md). Gate 2: every JSTOR-QUEUE row for both targets is done (lodewijk 10/10, jan-van-nassau 3/3), and the open-index pass and the second audit are on file.
+links: lodewijk folder https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74 ; its AUDIT.md https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/lodewijk-van-nassau-1573-74/AUDIT.md ; jan folder https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75 ; its AUDIT.md https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/jan-van-nassau-1572-75/AUDIT.md ; WVO 5797 https://resources.huygens.knaw.nl/wvo/app/brief?nr=5797 (scan https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05797.pdf) ; WVO 4612 https://resources.huygens.knaw.nl/wvo/app/brief?nr=4612 (scan .../04000-04999/04612.pdf) ; WVO 5551 https://resources.huygens.knaw.nl/wvo/app/brief?nr=5551 (scan .../05000-05999/05551.pdf) ; Groen IV no. CDXLIV on DBNL https://www.dbnl.org/tekst/groe009arch04_01/groe009arch04_01_0063.php -- all HTTP 200 on 5 Oct 2026 01:5x UTC
+note for the checker: WVO lists 5797 as a minuut, KHA A 3, 895/I, from Lodewijk, Jan and Hendrik van Nassau (read on the WVO page on 5 Oct). status.json says "Jan and Lodewijk". The draft follows WVO. Rule 2: 5551's table is ours (aligned from period decipherments), so it is offered as a proposed reading with the uncertain share stated. In 5797, the name values come from a period gloss (grade H), and only their location rests on our table.
+
+---
+
+Dear Dr Huysman,
+
+I am writing again in the thread of 26 September, with three more letters from the same correspondence. As before: I direct this project and send every message myself; the reading, the searches of the editions and the audits are done by AI agents (Anthropic's Claude models) in the open repository linked below, every step logged. I have not heard back since my last message, and if you would rather I held these until you have had a chance to answer, please say so and I will.
+
+None of the three was in my first email.
+
+WVO 5797 (the Nassau brothers to Orange, Dillenburg, 22 October 1573; KHA A 3, 895/I, minute). Groen van Prinsterer printed this letter (Archives IV, no. CDXLIV, pp. 217-226) with several passages left undeciphered. We located two of the blanks with a letter table that we recovered ourselves and took the two name codes from the contemporary interlinear gloss on the sibling letter WVO 5550. Read that way, the two blanks read in part: "the Palsgrave (Pfaltzgraf) holds well" and "... and the Landgrave ...". The names come from the period gloss and not from us. Codes 136 and 146 in those blanks are still unread, and the letter's other blanks are unread. The code in a further one-code blank, 172, has conflicting period values ("le Conte Jean" in WVO 4614, "Lumbres" in 7206, "le Conte Louis de Nassau" in 5801), so we have assigned it none. We found no prior decipherment of these blanks. Groen's text is the rest of the letter. We worked only from the WVO scan and Groen's print, and we have not looked for another copy of the letter.
+
+WVO 5551 (Jan van Nassau to Orange, Cologne, 17 April 1574). The letter ends in two lines of cipher. With the letter table we rebuilt from the period decipherments of WVO 4613 and 4615, 26 of the 32 codes take a value: 23 firmly, three uncertain. The other six codes are not in the table, and a torn edge cuts both lines. This is a proposed reading, not a text. It gives recognisable German: "der konig ... van polen ... will" and "offentli[ch] ... es". We have not settled what the King of Poland reference means. Glawischnig's 1973 study of Johann VI cites a letter of this date and place, but we found no sign that it prints or discusses the cipher lines. He also cites a copy at Marburg ("STAMa 4f Nld. 165"). The Hessisches Staatsarchiv told me on 28 September that the present file begins on 21 May 1574 and does not contain the 17 April letter, and that it found no earlier file. We found no prior plaintext or decipherment of the two lines.
+
+WVO 4612 (Lodewijk van Nassau to Orange, 6 March 1574). For completeness only. The same table reads the letter's clear passages and a few words in cipher, but most of its cipher does not yet read as French, so I am not offering a reading of it. We found no prior decipherment of it either.
+
+Every reading is regenerated by a script from our transcription and the key, and every token is graded. The folders, the keys and the full search logs are here:
+https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74 (AUDIT.md, sections V8.6, A2.5, A4.3 and A1.5)
+https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75 (AUDIT.md, sections V-TX and V-TX2)
+
+What I said on 26 September still holds. Nothing will be published beyond the repository without the editors' view, and the readings are the database's to use or ignore. If the WVO editors know of a decipherment of any of these passages, or of another copy of 5797 or 5551, I would be very glad to hear of it and will correct our notes.
+
+With kind regards,
+
+[SIGN-OFF]
