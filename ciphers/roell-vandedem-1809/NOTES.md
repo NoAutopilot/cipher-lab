@@ -309,7 +309,7 @@ one read for the design prior (KEY-DESIGN), not for this letter.
 ## D2B-ROELL (5 Oct 2026): NA 2.01.08 finding-aid grep for the 1808-09 code
 
 Worker D2B-ROELL (account 2, for LANE DEFAULT-account-2-20261005-2217), brief
-`.claude/briefs/runs/2026-10-05-account2-default-2217-jobs.md`, 23:52-23:57 UTC. Finding aid only; no scan read, no decoding.
+`.claude/briefs/runs/2026-10-05-account2-default-2217-jobs.md`, 23:52-23:55 UTC. Finding aid only; no scan read, no decoding.
 Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0 (no reading).
 
 **Route.** `www.nationaalarchief.nl/onderzoeken/archief/2.01.08/download/xml` fetched once (HTTP 200, 419,081 bytes, sha1
