@@ -1898,3 +1898,9 @@ Full-text search, all items (full view + search-only), babel.hathitrust.org/cgi/
 Caveat: the phrases are in our reading's spelling; a printed edition that modernised or re-spelled them would not match an exact
 phrase. Search result only, not a novelty verdict (rule 10). Decrue was already searched by the print-check pass (section above: no
 citation of these items), so the top hit adds nothing new.
+Tightened searches (owner, same session): Gramont Villandry chiffre 3,204 (too broad); "Gabriel de Gramont" Villandry 177 (top: Michon,
+*Les conseillers de François Ier* 2011, search-only; BnF *Catalogue des manuscrits français, ancien fonds* v.1 1902; Scheurer, *Corr.
+du cardinal Jean Du Bellay* v.1); **"evesque de Tarbes" Villandry: 6 results, all Weiss, *Papiers d'état du cardinal de Granvelle*
+t.2 (1841/1852, several copies, full view)**. Weiss t.I was read for this audit (row above: Tarb 0, Villandr 0); **t.II was not**.
+Next (~$1): full-text check of Weiss t.II (archive.org copy) for "evesque de Tarbes"/Villandry/1530/chiffre -- the Imperial side
+held intercepted French dispatches, so an intercepted Gramont letter with a decipherment would sit there. Queued to LANE-NEAR9 job 1.
