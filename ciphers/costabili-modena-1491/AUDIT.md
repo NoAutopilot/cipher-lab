@@ -96,3 +96,56 @@ the gloss over each (3 or more groups each), so they no longer rest on that corr
 **(4) Verdicts.** 10 CONFIRMED C (z and o conditional on keeping Ω apart), 0 LOWERED. `align/key_r1166p12_n8cos.tsv` grades unchanged; its z and
 o notes now name the Ω condition. Requests: de-crypt.org 1 login + 2 image fetches (1.8 s apart). Subagent calls: 0. Cost: see the lane ledger.
 Suggested next step (not run): a group-crop re-pass with Ω as its own label and the p1_u03/p1_u18 boxes widened to the left, before any P4 decode.
+
+## Verification of W = t at C (N9-COSVW, 5 Oct 2026)
+
+Account 2 verifier for LANE-NEAR9, 06:02-06:1x UTC by `date -u`; not the solver (N9-COS2, 0c150c16). Claim under audit: "W (dash + open loop,
+own label in align/labels.tsv) = t at C (A 3/5, B 3/4, 3 groups each); A 0.614 / B 0.521 vs p95 0.260/0.233" (NOTES N9-COS2, PREREG-N9-COS2
+d2fd89bd). **Verdict: CONFIRMED at C.** No grade change; `align/key_n9cos2.tsv` left as committed.
+
+**(1) Re-run.** `python3 ciphers/costabili-modena-1491/align/run_align.py <scratch> align/n9cos2_passA_W.tsv align/n9cos2_passB_W.tsv` ->
+`{"A": {"pairs": 17, "real": 0.614, "sh_mean": 0.213, "sh_p95": 0.26, "gate": true}, "B": {"pairs": 18, "real": 0.521, "sh_mean": 0.191,
+"sh_p95": 0.233, "gate": true}}` -- identical to the claim. W in the real alignments: A t 3/5 (agree p1_u02, p2_u02, p2_u09; conflict p1_u21 at
+"v" from the misread gloss "prevento", p2_u15 at d), B t 3/4 (agree p1_u02, p1_u20, p2_u09; conflict p1_u11 at n). (The key file's n for other
+signs follows the aligner's key output, e.g. d A 8/12 there vs 8/14 rows in the alignment file; agree counts are the same.)
+
+**(2) The 12 mechanical relabels against the image.** One DECODE browser login (06:03 UTC, `tools/decode_browser_login.js 1166 <scratch>
+--guess-fullsize --max-files 2 --delay 1800`): only P1 arrived under the file cap (the thumbnail counted as a file), sha1 7ea51a6f... =
+`images_manifest.tsv`; one plain-curl try for P2 returned a 17 KB placeholder (account-gated), so no second login. Scratch only, nothing
+committed. P1 crops cut from `align/n8cos_boxes.tsv` (x0-60 for p1_u03/p1_u18 per `n9cos2_boxes_fix.tsv`), read by this verifier's own eye.
+
+| crop | pos | eye: shape | gloss over it (eye) | slot in gloss |
+|---|---|---|---|---|
+| p1_u02 | 0 | dash + open loop (left edge clipped) | tradu(c)ta | t |
+| p1_u07 | 1 | dash + open loop | tuti | t (2nd t of "tuti") |
+| p1_u07 | 5 | dash + open loop | termini | t |
+| p1_u11 | 1 | dash + open loop | "ob no era primo" (gloss not over the group's start) | ambiguous |
+| p1_u12 | 2 | dash + open loop | satiffacto (= satisfacto) | t (s a t i s f a) |
+| p1_u15 | 6 | dash + open loop | facto | t (f a c t o) |
+| p1_u19 | 4 | dash + open loop | nanti | t (n a n t i) |
+| p1_u20 | 2 | dash + open loop | ritrouar | t (r i t r o) |
+| p1_u21 | 3 | dash + open loop | partito (both passes misread the gloss) | t (p a r t i t o) |
+| p2_u02 | 0 | not re-seen (P2 not fetched); N9-COSV eye-checked it as this shape | tradutta | t |
+| p2_u09 | 2 | not re-seen; N9-COSV eye-checked it as this shape | patria | t |
+| p2_u15 | 7 | not re-seen by this verifier or by N9-COSV | padre | d (contrary) |
+
+All 9 P1 relabels are the dash + open-loop shape, distinct from the zigzag z and the small dash+o (o = e) in the same crops (p1_u03 "Le nocie":
+g o y z q a o; p1_u19 "...re-": d o). No relabel is a different sign. Under-count confirmed on the image: p1_u21 position 5 (A z, B o) is the
+same shape at the second t of "partito", missed by the rule because difflib aligned the two rows off by one there; p1_u07's clipped first sign
+may be one more (initial t of "tuti"), not visible in the crop.
+
+**(3) W groups with the gloss chunk.** Aligner-counted agreeing groups: tradu- (p1_u02), tradutta (p2_u02), patria (p2_u09), ritrovar (p1_u20) --
+three distinct words, the W sign at a slot the C values around it fix (W d + T = t r a d; c + W d a = p a t r i; d a W d b = r i t r o). Eye-only
+(pairs lost to the 0.8-1.25 ratio filter or a gloss misread, not counted in the grade): termini, tuti, satisfacto, facto, nanti, partito (x2).
+So the gloss fixes t unambiguously on >= 2 independent groups (the brief's test) and the prereg C rule is met in both passes. Against: one
+token, p2_u15 under "padre" at the d slot, image unchecked (the sign may be misread, or the writer spelled "patre"); p1_u11 is not placeable.
+11 of 12 placeable W tokens (with the extra p1_u21 one) stand at t. Outside corroboration: decode-1168's `~` = t (C).
+
+**(4) The p1_u03/p1_u18 re-cut.** Diff of `n8cos_pass{A,B}_norm.tsv` -> `n9cos2_pass{A,B}_W.tsv`: the only non-W edits are the first token of
+p1_u03 (A, B) and p1_u18 (A; B already read g), d -> g. Both widened crops read g o y z/b q a o under "Le nocie": g = l at the head, consistent.
+Re-scoring with the W relabel but without the re-cut gives A 0.598 / p95 0.236, B 0.514 / 0.233; per-sign majority values identical with and
+without the re-cut for every sign; only d (A 8/16 -> 8/14, B 8/10 -> 8/9, the l-conflicts removed) and g (A l 2/5 -> 4/7, B 5/8 -> 6/9) counts
+move. No other sign's value moved.
+
+Requests: de-crypt.org 1 browser login + 1 image (1.8 s apart), 1 plain curl (placeholder). Subagent calls: 0. Cost: see the lane ledger.
+Suggestion (not run): eye-check p2_u15 at the next DECODE login (W at "padre"'s d), and relabel p1_u21 pos 5 as W in any re-pass.

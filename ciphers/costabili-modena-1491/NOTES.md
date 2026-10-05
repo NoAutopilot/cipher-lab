@@ -192,7 +192,7 @@ job, so R1165 = 2955 (MNL DF 295914) is a strong match by card, date and page co
 Requests: www.vestigia.hu 2 pages + 4 images, no 429/403.
 
 ## Remaining gaps (refreshed N8-COS, 4 Oct 2026; N9-COSV, N9-COS2, 5 Oct 2026)
-Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 11 sign values at C (N8-COS 10 + N9-COS2 W = t), the rest M
+Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 11 sign values at C (N8-COS 10 + N9-COS2 W = t), the rest M; W = t verified at C by N9-COSVW (5 Oct 2026, AUDIT.md; to do at the next DECODE login: eye-check p2_u15 W under "padre", and relabel p1_u21 pos 5 as W)
 - Key rebuild from the period decipherments: R1166 P1-P2 at C for 11 signs (N8-COS group crops 10; W = t added by N9-COS2's re-score with the dash+open-loop shape as its own label); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; the R1163/R1165 slips were tried with line crops against their clear slips (N9-COS2: pass A non-test at 2 pairs, pass B 0.250 = shuffle p95 at 4 pairs, FAIL) because anchor spans between clear words are too long for the 0.8-1.25 ratio filter; next: hand-cut span boxes at sub-line anchors (each clear word left in the cipher slip, plus line ends) so pairs stay short, 2 blind passes, ~$3; and a q-shape split (owner's sign sorter or group crops of q tokens), ~$2
 - R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align with the N8-COS C key as prior, ~$5
 - R1166 P4 unglossed groups (~100 signs) - blocker: not-attempted; P4 groups not yet transcribed; next: group crops + 2 blind passes of P4 (~$2.5), then decode only if >= 80% of its signs have a C value (PREREG-N8-COS)
@@ -228,6 +228,7 @@ only after, if the cap allows.
     gaps_check (N8-COS, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
     gaps_check (N9-COSV, 5 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
     gaps_check (N9-COS2, 5 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
+    gaps_check (N9-COSVW, 5 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
 
 ## Third shape W + R1163/R1165 slips (N9-COS2, 5 Oct 2026, 05:38-05:5x UTC by date -u)
 
