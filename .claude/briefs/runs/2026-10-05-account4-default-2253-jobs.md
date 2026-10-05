@@ -104,3 +104,27 @@ NOTES.md image-check line: crops f4_top.jpg / f4_mid.jpg cited in Cheap test 1 a
 f.4 runs and the 625/774/775 "section counter" exclusion need re-reading on the native image. Re-fetch f.4 (DECODE 4692 full-size route
 from A2-HDK, `--guess-fullsize`, or the HStAM route the folder used), cut lines with `tools/iiif_lines.py` (paste the command and the
 debug overlay check), one blind pass on the named tokens, record in the folder; the full two-pass transcription (~$11) is NOT this job.
+
+## Wave 2 (written 5 Oct 2026 23:4x UTC; spawn only after the exclusion check at spawn time)
+
+### A4-RFLOPE -- lope-hurtado-1522, R9634 residual (cap 6, box 75 min)
+NOTES.md Verdict: R9634 residual (Bourdeau already reads 71%, read_r9634.md) -- check his repository first (shallow clone, grep
+lope/R9634; credit, MIT code), then DECODE R9634 full size with `tools/decode_browser_login.js --guess-fullsize` (one login), cut the
+lines his reading leaves unread or M, one blind pass on those only, regrade, `--check` if a decode script exists.
+
+### A4-RFESP -- esp318-sicilia-1503, key-sheet re-cut with overlap (cap 1.5, box 30 min)
+NOTES.md image-check line / Verdict: re-cut the Gran-cifra key sheet with overlap so row m is visible (disk only), read the crops
+zoomed, record row m. Alphabet waits on ASKS 104 and the visorrey key on ASKS 105: do not touch either.
+
+### A4-RFLVN -- lodewijk-van-nassau-1573-74, WVO 5811 p1/p2/p5 at 300 dpi (cap 6, box 75 min; 3 pages x ~1.5 + 1 recon)
+NOTES.md "5811 disagreement settlement -- blocker found" (local copies 150 dpi only). Re-render p1/p2/p5 at 300 dpi from the WVO PDF
+(the route the 4612 300-dpi re-render used), line crops with `tools/iiif_lines.py --image`, settle the listed disagreements by one
+blind pass per page, regrade, `decode_key.py --check`. Folder size rule (AX2-SHRINK manifest) applies.
+
+### A4-RFCOL -- colbert26-lathuillerie-1644, canvas 20-21 gloss-vs-clear native re-read (cap 4, box 60 min)
+NOTES.md image-check line (and ZOOM-ASKS footer). Gallica native crops of canvases 20-21 (`tools/gallica_folio.py`, `tools/iiif_lines.py
+--ark --canvas`), one blind pass on the gloss-vs-clear positions the folder names, compare, regrade, `--check`.
+
+### A4-RFMAT -- matignon-mayenne-1586, f.110 line-crop sample (cap 9, box 90 min; 7 vision calls x ~1.1 + 1)
+NOTES.md Verdict gap 2: the f.110 line-crop sample with split_worklist.tsv's crops (two blind passes + reconciliation), the only
+instrument left for BOX/T/4/w/z. Pre-register what settles each label before the passes. Target stays `partial` either way (rule 5).
