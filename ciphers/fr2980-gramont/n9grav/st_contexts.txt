@@ -1,0 +1,92 @@
+f18r_L01 #0 ? -> L
+   ?=*:L ?=*:L h=V:V aq=I:I ?=*:- fh=D:D H=I:I
+f18r_L01 #1 ? -> L
+   ?=*:L ?=*:L h=V:V aq=I:I ?=*:- fh=D:D H=I:I 5=C:-
+f18r_L01 #4 ? -> -
+   ?=*:L ?=*:L h=V:V aq=I:I ?=*:- fh=D:D H=I:I 5=C:- m=T:T D=Q:Q g=V:V
+f18r_L01 #13 ? -> L
+   5=C:- m=T:T D=Q:Q g=V:V xr=I:I c=L:L ?=*:L x=A:A H=I:I T=SS:SS x=A:A 2=S:S yt=T:T
+f18r_L01 #20 ST -> L
+   x=A:A H=I:I T=SS:SS x=A:A 2=S:S yt=T:T ST=*:L z=A:A dl=P:P lam=A:A ?=*:R lt=O:O HASH=*:L
+f18r_L01 #24 ? -> R
+   2=S:S yt=T:T ST=*:L z=A:A dl=P:P lam=A:A ?=*:R lt=O:O HASH=*:L q=E:E x=A:A h=V:V xr=I:X
+f18r_L01 #36 ? -> E
+   xr=I:X lam=A:A g=V:V c=L:- m=T:T BOX=*:R ?=*:E 2=S:S 5=C:C x=A:A rs=R:R H=I:I c=L:L
+f18vA_L01 #0 ? -> Q
+   ?=*:Q g=V:V H=I:I dl=P:P oi=E:E Mx=*:N ?=*:E
+f18vA_L01 #6 ? -> E
+   ?=*:Q g=V:V H=I:I dl=P:P oi=E:E Mx=*:N ?=*:E n6=N:N m=T:T ?=*:H x=A:A z=A:R eh=D:D
+f18vA_L01 #9 ? -> H
+   dl=P:P oi=E:E Mx=*:N ?=*:E n6=N:N m=T:T ?=*:H x=A:A z=A:R eh=D:D H=I:I q=E:E b=O:-
+f18vA_L01 #18 ? -> E
+   eh=D:D H=I:I q=E:E b=O:- oi=E:S 2=S:S ?=*:E ?=*:S ?=*:E ST=*:L lt=O:O n6=N:N D=Q:Q
+f18vA_L01 #19 ? -> S
+   H=I:I q=E:E b=O:- oi=E:S 2=S:S ?=*:E ?=*:S ?=*:E ST=*:L lt=O:O n6=N:N D=Q:Q g=V:V
+f18vA_L01 #20 ? -> E
+   q=E:E b=O:- oi=E:S 2=S:S ?=*:E ?=*:S ?=*:E ST=*:L lt=O:O n6=N:N D=Q:Q g=V:V xr=I:I
+f18vA_L01 #21 ST -> L
+   b=O:- oi=E:S 2=S:S ?=*:E ?=*:S ?=*:E ST=*:L lt=O:O n6=N:N D=Q:Q g=V:V xr=I:I c=L:L
+f18vA_L01 #32 ? -> I
+   xr=I:I c=L:L H=I:- h=V:S g=V:V b=O:O ?=*:I oi=E:E n6=N:N yt=T:T q=E:B H=I:I oi=E:E
+f18vA_L03 #74 ? -> F
+   n6=N:N m=T:T D=Q:Q g=V:V oi=E:E br=R:R ?=*:F oi=E:E b=O:O H=I:I yt=T:T x=A:A h=V:V
+f18vA_L03 #84 ? -> E
+   yt=T:T x=A:A h=V:V T=SS:SS xr=I:I rho=F:S ?=*:E ?=*:R lt=O:O xr=I:I yt=T:T ST=*:L oi=E:E
+f18vA_L03 #85 ? -> R
+   x=A:A h=V:V T=SS:SS xr=I:I rho=F:S ?=*:E ?=*:R lt=O:O xr=I:I yt=T:T ST=*:L oi=E:E ?=*:R
+f18vA_L03 #89 ST -> L
+   rho=F:S ?=*:E ?=*:R lt=O:O xr=I:I yt=T:T ST=*:L oi=E:E ?=*:R lt=O:O A2=*:I 2=S:S b=O:O
+f18vA_L03 #91 ? -> R
+   ?=*:R lt=O:O xr=I:I yt=T:T ST=*:L oi=E:E ?=*:R lt=O:O A2=*:I 2=S:S b=O:O n6=N:N p=M:M
+f18vA_L03 #103 ? -> -
+   p=M:M x=A:A H=I:I 2=S:S m=T:T br=R:R ?=*:- ?=*:- ?=*:- ?=*:E
+f18vA_L03 #104 ? -> -
+   x=A:A H=I:I 2=S:S m=T:T br=R:R ?=*:- ?=*:- ?=*:- ?=*:E
+f18vA_L03 #105 ? -> -
+   H=I:I 2=S:S m=T:T br=R:R ?=*:- ?=*:- ?=*:- ?=*:E
+f18vA_L03 #106 ? -> E
+   2=S:S m=T:T br=R:R ?=*:- ?=*:- ?=*:- ?=*:E
+f18vB_L01 #4 ? -> V
+   5=C:C x=A:A z=A:R dl=P:P ?=*:V H=I:I 2=S:S D=Q:Q g=V:V oi=E:E c=L:L
+f18vB_L01 #19 ? -> P
+   D=Q:Q g=V:V x=A:I q=E:E 2=S:S m=T:T ?=*:P oi=E:E ?=*:E m=T:T lt=O:O h=V:V g=V:V
+f18vB_L01 #21 ? -> E
+   x=A:I q=E:E 2=S:S m=T:T ?=*:P oi=E:E ?=*:E m=T:T lt=O:O h=V:V g=V:V oi=E:E q=E:B
+f18vB_L03 #97 ? -> E
+   n6=N:N dl=P:P x=A:A m=T:T oi=E:E p=M:M ?=*:E n6=N:N yt=T:T b=O:- g=V:- D=Q:Q g=V:V
+f18vB_L04 #110 ? -> I
+   oi=E:E c=L:L lt=O:O n6=N:N aq=I:L h=V:V ?=*:I lam=A:A A2=*:I yt=T:T fh=D:D oi=E:E dl=P:P
+f18vB_L04 #117 ? -> -
+   lam=A:A A2=*:I yt=T:T fh=D:D oi=E:E dl=P:P ?=*:- g=V:V ?=*:I 2=S:S rho=F:F x=A:A H=I:I
+f18vB_L04 #119 ? -> I
+   yt=T:T fh=D:D oi=E:E dl=P:P ?=*:- g=V:V ?=*:I 2=S:S rho=F:F x=A:A H=I:I 5=C:- yt=T:T
+f18vB_L04 #126 ? -> E
+   2=S:S rho=F:F x=A:A H=I:I 5=C:- yt=T:T ?=*:E ?=*:N m=T:T oi=E:E n6=N:N fh=D:D ?=*:-
+f18vB_L04 #127 ? -> N
+   rho=F:F x=A:A H=I:I 5=C:- yt=T:T ?=*:E ?=*:N m=T:T oi=E:E n6=N:N fh=D:D ?=*:- ?=*:-
+f18vB_L04 #132 ? -> -
+   ?=*:E ?=*:N m=T:T oi=E:E n6=N:N fh=D:D ?=*:- ?=*:- ?=*:R n6=N:- ?=*:E
+f18vB_L04 #133 ? -> -
+   ?=*:N m=T:T oi=E:E n6=N:N fh=D:D ?=*:- ?=*:- ?=*:R n6=N:- ?=*:E
+f18vB_L04 #134 ? -> R
+   m=T:T oi=E:E n6=N:N fh=D:D ?=*:- ?=*:- ?=*:R n6=N:- ?=*:E
+f18vB_L04 #136 ? -> E
+   n6=N:N fh=D:D ?=*:- ?=*:- ?=*:R n6=N:- ?=*:E
+f18vC_L16 #526 ? -> E
+   oi=E:E n6=N:N 2=S:S x=A:A A2=*:I H=I:I ?=*:E D=Q:Q g=V:V H=I:I c=L:L ST=*:L ?=*:E
+f18vC_L16 #531 ST -> L
+   H=I:I ?=*:E D=Q:Q g=V:V H=I:I c=L:L ST=*:L ?=*:E p=M:M ?=*:E fh=D:D H=I:I 2=S:S
+f18vC_L16 #532 ? -> E
+   ?=*:E D=Q:Q g=V:V H=I:I c=L:L ST=*:L ?=*:E p=M:M ?=*:E fh=D:D H=I:I 2=S:S b=O:O
+f18vC_L16 #534 ? -> E
+   g=V:V H=I:I c=L:L ST=*:L ?=*:E p=M:M ?=*:E fh=D:D H=I:I 2=S:S b=O:O H=I:I yt=T:T
+f18vC_L16 #544 ? -> R
+   b=O:O H=I:I yt=T:T x=A:A c=L:L x=A:A ?=*:R oi=E:E D=Q:Q ?=*:E 2=S:S m=T:T sl=E:E
+f18vC_L16 #547 ? -> E
+   x=A:A c=L:L x=A:A ?=*:R oi=E:E D=Q:Q ?=*:E 2=S:S m=T:T sl=E:E ?=*:D 9=E:E c=L:L
+f18vC_L16 #551 ? -> D
+   oi=E:E D=Q:Q ?=*:E 2=S:S m=T:T sl=E:E ?=*:D 9=E:E c=L:L x=A:A h=V:V m=T:T oi=E:E
+f19r_L02 #597 ? -> I
+   lt=O:O H=I:I eh=D:D g=V:E c=L:L h=V:V ?=*:I lam=A:A H=I:I 2=S:L HASH=*:L g=V:E h=V:V
+f19r_L02 #606 ? -> -
+   2=S:L HASH=*:L g=V:E h=V:V z=A:R 2=S:S ?=*:- m=T:-

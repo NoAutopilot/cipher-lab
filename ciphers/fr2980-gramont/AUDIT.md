@@ -1909,3 +1909,80 @@ bub_gb_4NZnAAAAMAAJ are t.III; papiersdtatduca00weisgoog, -03grangoog, -02grango
 only "évesque de Tarbes" hits (papiersdtatduca00weisgoog, 3) are a 1540s French royal letter naming "l'évesque de Tarbes, nostre
 ambassadeur" with the bishop of Brissac at the Emperor's court -- a later bishop of Tarbes, not Gabriel de Gramont's 1530 letters.
 Negative for this item; the NEAR9 job-1 addition is satisfied (no worker needed).
+
+## Verification of ST = L at C (N9-GRAV, 5 Oct 2026)
+
+Account 2 worker for LANE-NEAR9, verifier (not N8-GRA2/N8-GRA3, not VER-GRACOS). Claim under audit: "ST = L now C in key.tsv (4/4,
+eye-checked)" (NOTES N8-GRA3 section; PREREG-N8-GRA2.md / PREREG-N8-GRA3.md). Nothing decoded; key.tsv unchanged. 05:19-05:3x UTC.
+
+**Verdict: CONFIRMED. ST = L stays at grade C.**
+
+1. **Scores reproduce exactly.** Re-ran both committed scorers in a scratch copy, with `ST` deleted from key.tsv (the key as it stood
+   when N8-GRA2/GRA3 scored), and again with the current key.tsv:
+
+   | run | key | agree | keyed | N1 p99 | N2 p99 | control mean (gate) |
+   |---|---|---|---|---|---|---|
+   | `n8gra2/score.py --target recon.tsv` (f.18r L01-L10) | without ST | **0.838** | 308 | 0.347 | 0.309 | 0.872 (>= 0.497), `--control --n 308` |
+   | same | current (ST = L) | 0.838 | 309 | 0.337 | 0.320 | -- |
+   | `n8gra3/score3.py --target` (f.18v L01-L23 + f.19r L01-L02) | without ST | **0.871** | 707 | 0.328 | 0.299 | 0.878 (>= 0.468), `--control` |
+   | same | current (ST = L) | 0.872 | 710 | 0.327 | 0.294 | -- |
+
+   No drift: the without-ST runs match target.json/control.json to every printed digit; ST's per-code row is 4/4 L, shuffled-print
+   all-same rate 0.000 (0.005 with ST keyed, 200 shuffles). The N1 null re-pairs the print, so it can differ from the target (rule 3).
+
+2. **Eye check on fresh crops (not the committed ones).** Commands run (Gallica, 5 native regions, all 200):
+   `tools/iiif_lines.py --ark btv1b9059870w --canvas 32 --region 560,1680,3300,300 --follow-slope 400 --prefix v32`;
+   `--canvas 33 --region 1000,270,2860,360 --follow-slope 400 --overlap 0 --prefix v33A`; `--canvas 33 --region 1000,1040,2900,640
+   ... --prefix v33B`; `--canvas 33 --region 1000,2230,2880,2200 ... --prefix v33C --only-lines 16,17`; `--canvas 34 --region
+   1080,200,2700,300 ... --prefix v34` (crops in the session scratchpad, not committed: the folder is already 41 MB).
+
+   | occurrence | sign on the crop | print word (Le Grand III) | L? |
+   |---|---|---|---|
+   | f.18r L01 (after "2 yt /") | compact long-s joined to t, crossbar | "qu'il laissast **la** parole" (p.454) | yes |
+   | f.18v L01 (after the "\|\|") | same | "hardiesse se**l**on qu'ils voyent" (p.455) | yes |
+   | f.18v L03 (after "xr yt") | same | "aussi seroit **le** Roy son Maistre" (p.455) | yes |
+   | f.18v L23 (= f18vC_L16, line's right edge) | same | "qu'il **le** me disoit" (p.456) | yes |
+
+   The key-decoded neighbours agree with the print on both sides at all four (`n9grav/st_contexts.txt`).
+   **Look-alikes the earlier passes left unscored.** Reader B wrote `ST` 7 more times where reader A wrote `sl`, `ss2` or `zb` (passB_u1
+   has 9 ST, 2 of them agreed). The reconciliation left all 7 as '?', so no earlier check scored or eye-checked them (all mapped in
+   `n9grav/st_contexts.txt`). On the crops, none is the ST shape:
+   - f.18v L03 #84: a tall long-s with a descender, overlapping a barred z. The print gives E.
+   - f.18v L04 #21, L06 #97 and L07 #126: each a tall long-s alone (sl = E). The print gives E at all three.
+   - Two at f.18v L07's line end (#132-136) and one at f.19r L02 #606: each the ss2 arch followed by a barred z. They align to a gap
+     or to R/E.
+   So on this hand ST (x-height, t joined, crossbar) and sl (tall, descending, no t) are distinct signs, and no ST-shaped sign aligns
+   to anything but L. These splits are reader-B labelling errors, not counter-cases. VER-GRACOS (4 Oct) did not examine them.
+
+3. **ST elsewhere.** f.29r: no ST token. f.30r-v: 19 ST tokens (`reading_f30_extended_tokens.tsv`), read with L:
+   - clear words (12): f30r L05 "pour **l**a", L07 "eu **l**es barolles", L16 "vou**l**dra", L25 "**l**es", L32 "**l**e", L34 "qui
+     **l**'entend", L35 "qu'il bar**l**e de la rep..."; f30v L01 "des**l**iberation", L02 "que **l**a declarat...", L07 "que **l**e
+     mieul...", L10 "de la **l**iberte", L15 "vous **l**ui aye...".
+   - neutral (7, in the noisy or not-French lines, where no other letter reads better either): f30r L03 "...ces **l**e ?ressi?e", L08
+     "dictes **l**e eres...", L09 "voyant **l** p grande", L11 x2 ("**l**e ?baimer", "que **l** com ve"), L12 "qvil **l** sy se", L22
+     "?eu**l** f que".
+   - counter-cases (L wrong and another letter clearly right): **0**.
+   This agrees with the grade S value key_extension_f30.tsv already held from f.30 inference, before any print (infer_unkeyed.py,
+   24 Sept 2026).
+
+4. **Is "C" the right grade?** Rule 4: C = from known plaintext. Le Grand, *Histoire du divorce* III, Preuves pp.454-457 (Béthune vol.
+   8565) prints Gramont to Montmorency, subscribed "A Boulongne ce 28. jour de Mars". The leaf fr.3040 no.6 (Gallica btv1b9059870w,
+   canvases 32-34) closes "A Boulongne ce 28. jour de mars". Its clear passages are the print's words (NOTES N8-GRA2 "The pair"), and
+   the print runs on through the cipher blocks without a break. key.tsv reads those blocks against it at the planted-control level
+   (0.838 / 0.871), which a different letter's text could not give. Same sender, recipient, date and place, so the print is this
+   letter's plaintext. Nothing in the print or on the leaf says whether Le Grand set it from the decipherment or from a clear copy;
+   either way it is known plaintext. The print's heading says "23. Mars" and the subscription "28": an internal slip in the edition,
+   not a mismatch with the leaf.
+   The C value comes from fr.3040 no.6 and is applied to f.30, a sibling letter in the same key family. This is the same practice that
+   gives f.30's H grades from the Tomokiyo/Lasry tables (rebuilt from fr.3019 and fr.3071). The z conflict shows such transfer can
+   fail cell by cell. ST does not: the f.30 contexts above independently support L (step 3).
+   Caveat: N = 4. The C rests on four occurrences at p < 0.005 per code. Corroboration comes from the 19 f.30 occurrences and the
+   prior S inference, not from more known plaintext; f.18r L11-L26, still unread, would add occurrences.
+
+Clerical (not changed, outside the brief): key.tsv's source note says "f.18v ... L24"; the occurrence is f.18v L23 (= f18vC_L16), as
+VER-GRACOS also noted. z not touched (N9-GRAZ). Depth unchanged.
+Checks: `decode.py --check` exit 0 (key.tsv untouched). `python3 tools/decode_key.py ciphers/fr2980-gramont --check` reports
+reading.txt / reading_tokens.tsv STALE: that is the generic tool against the target's own decode.py output, not caused by this pass (no file
+it reads was changed); flagged for the lane. `tools/gaps_check.py fr2980-gramont`: OK keep-going (2 internal gaps, 0 untried).
+Requests: gallica.bnf.fr 10 (5 manifest/info + 5 native regions via iiif_lines.py, all 200, >= 1.5 s apart, no challenge). Subagent
+calls: 0 (the eye check was done by this verifier). Cost: see the lane ledger.
