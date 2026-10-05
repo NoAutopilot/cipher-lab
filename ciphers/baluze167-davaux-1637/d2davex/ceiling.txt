@@ -1,0 +1,16 @@
+167f157 L03	5	e	exemplars_of_letter=1	singleton
+167f157 L03	6	u	exemplars_of_letter=2	testable
+167f157 L03	7	o	exemplars_of_letter=1	singleton
+167f157 L03	8	u	exemplars_of_letter=2	testable
+167f157 L03	10	n	exemplars_of_letter=4	testable
+167f157 L03	15	i	exemplars_of_letter=2	testable
+167f157 L03	16	x	exemplars_of_letter=1	singleton
+167f157 R2	4	n	exemplars_of_letter=4	testable
+167f157 R2	5	s	exemplars_of_letter=2	testable
+167f157 R2	7	i	exemplars_of_letter=2	testable
+167f157 R2	9	n	exemplars_of_letter=4	testable
+167f157 R2	10	n	exemplars_of_letter=4	testable
+167f157 R2	11	a	exemplars_of_letter=1	singleton
+167f157 R2	12	b	exemplars_of_letter=1	singleton
+167f157 R2	14	s	exemplars_of_letter=2	testable
+positions 15, letters 9 {'e': 1, 'u': 2, 'o': 1, 'n': 4, 'i': 2, 'x': 1, 's': 2, 'a': 1, 'b': 1}; oracle LOO ceiling 10/15 = 0.667; gate 0.80 UNREACHABLE by construction

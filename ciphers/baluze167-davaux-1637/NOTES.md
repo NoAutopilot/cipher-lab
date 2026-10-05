@@ -542,3 +542,44 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 - [ ] image-check: 170 c239-241 native crops still to do
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3)
 Verdict: keep going: 3 internal gaps; cheapest next: 170 ff.228-230 crops and passes, ~$6, or the exemplar-sheet labeller for f.247, ~$3
+
+## D2-DAVEX (account 1 worker, for LANE DEFAULT-account-1-20261005-2217), 5 Oct 2026, 23:19-23:26 UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-05-account1-default-2217-jobs.md` job D2-DAVEX. No novelty class.
+Intake gate (pasted): `baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+PREREG `d2davex/PREREG-D2DAVEX.md` pushed (d301eed81, 23:23 UTC by date -u) before any exemplar was cut or any call made.
+
+**Result: control cannot reach its gate by construction; non-test; no labelling call made, target not labelled (rule 3 order).**
+The pre-registered mechanical ceiling check (`python3 d2davex/ceiling.py`, output d2davex/ceiling.txt, exit 3): the 15 gloss-fixed
+letter-sign positions of 167 f.157 carry 9 letters, 5 of them once only (e, o, x, a, b). An oracle leave-one-out labeller that always
+names the right letter whenever another exemplar of it exists scores **10/15 = 0.667 < 0.80 gate**. So the briefed control cannot pass,
+whatever the reader.
+Shape check by eye on the cut sheet (`d2davex/exemplar_sheet.png`, `python3 d2davex/cut_exemplars.py`; boxes from each crop's column ink
+profile): the real ceiling is lower than 0.667. One shape (a ∂-like loop) is glossed both u (L03.6) and i (L03.15, R2.7). The two u's are
+different shapes (∂, γ), as are the two s's (a ~ wave and a v/ʋ). n is h three times and g+ once. Only the three h = n are a clean
+same-shape, same-letter set. A labeller of this hand needs several exemplars per *shape*, not per letter. The homophones also mean a shape
+can carry more than one letter, which a forced-choice labeller cannot express.
+Cost: no subagent calls. Requests: none (crops on disk). key.tsv, ciphertext.txt, reading.txt unchanged.
+Suggestion (not done): enlarge the exemplar set from more glossed leaves of the same key (survey.tsv lists 61 glossed letters; A3V3-BALB
+and RUN1-BAL crops of 167 ff.69, 157 etc. are on disk). For each, cut the gloss-fixed letter signs as single-sign crops with this
+folder's cut_exemplars.py. Stop when every *shape* in the f.247 transcription's label set (s:b, s:t, s:d, s:u, s:L, s:p, s:y ...) has >= 2
+glossed exemplars and the per-shape oracle ceiling is >= 0.9. Only then run the labeller control.
+
+## Remaining gaps (D2-DAVEX, 5 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: cipher located and transcribed by two blind passes on c510-511
+(err_2reader 0.280). Five known-answer instruments tried there: N8-BAL and N9-BAL2 non-tests, N9-BAL3 alignment retired, DEF1-DAV table
+labelling failed its own control 0/15, D2-DAVEX exemplar labelling a non-test (oracle ceiling 0.667 < 0.80 on the 15 exemplars of 167 f.157).
+- 168 f.246-247v bare passage - blocker: not-attempted; the exemplar set is too small (D2-DAVEX ceiling 0.667); next: harvest gloss-fixed letter-sign exemplars from 3-4 more glossed leaves of this key (cut_exemplars.py), re-run d2davex/ceiling.py per shape until >= 0.9, then the labeller control, ~$3
+- 170 ff.228-230 bare passage - blocker: not-attempted; ~32 lines (~380 groups); next: tools/iiif_lines.py crops of c239-241, one Sonnet pass per canvas for numerals + worker letter-sign pass with the Tomokiyo block, reconcile, decode_key, ~$6
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (5 Oct 2026, D2-DAVEX)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); exemplar labelling a non-test for want of exemplars (D2-DAVEX ceiling 0.667); untried: an enlarged per-shape exemplar set from more glossed leaves
+- [ ] image-check: 170 c239-241 native crops still to do
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3)
+Verdict: keep going: 3 internal gaps; cheapest next: enlarge the gloss-fixed exemplar set to >= 2 per shape, ~$3, or 170 ff.228-230 crops and passes, ~$6
