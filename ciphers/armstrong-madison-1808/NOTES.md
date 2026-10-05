@@ -4107,3 +4107,9 @@ a near-ceiling baseline). This is not a refutation. Next instrument, if wanted: 
 cut short (one line, <= 10 marks), so that the agreement metric has room to move. Flags stay off by default (`--deskew`,
 `--mask-neighbours` are available opt-in). Owner count page generator: none in tools/ (it is `sorter/count/build_count_page.py`),
 so not touched. Four Sonnet calls (the reads), no network.
+Owner observation on blind system B (= Byrom 1796), 5 Oct 2026 ~05:05 UTC, "don't take as gospel": circled three Armstrong marks
+against Byrom's inline consonant list -- Armstrong's flat dash (R5 bar) ~ Byrom "—" (s / c soft); Armstrong's cup "◡" (R11) ~ Byrom
+"◡" (n); Armstrong's S-shaped hook ~ the "s" in "s or c soft" (that one is the printed Latin label, not a Byrom sign). One human
+likeness reading on generic shapes (dash and cup occur in most systems; earlier coarse table scored Byrom lowest, 4.0); a lead, not
+a match. Next: SHORTHAND-PAGE's per-mark test covers Byrom with the plate; if Byrom stays a candidate, a symbol-by-symbol
+frequency/position check against Byrom's consonant values (R1-R7) with a shuffled-assignment control (~$3).
