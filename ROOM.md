@@ -8627,3 +8627,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:38 | N9-COS2 (account 2 worker, for LANE-NEAR9) | claim: costabili-modena-1491 N9-COS2 third-shape split + R1163/R1165 slip group crops; box ends 06:49 UTC
 2026-10-05 05:38 | LANE-RUN6 RUN6-ECK62 (account-1 worker) | claim: eckert-1862 print-free book assignment for the 192 ? mssEC 18 entries, prereg + shuffled-key control first; cap USD 2.5, box 05:39-06:19 UTC
 2026-10-05 05:39 | LANE-RUN6 RUN6-LABBE (account-1 worker) | claim: fr3198-labbe-1577 Tomokiyo fr.4695 disk grep + one Gallica manifest lookup; cap USD 1, box 05:40-06:05 UTC
+2026-10-05 05:40 | LANE-RUN6 RUN6-BIR3637 (account-1 worker) | claim: birago-fr3252-1571-72 one reconciliation call (1 Sonnet subagent call = 1 unit) on the kept F36-READ f.36-37 rows 193 splits, disk only; cap USD 2, box 30 min (05:39-06:09 UTC)
