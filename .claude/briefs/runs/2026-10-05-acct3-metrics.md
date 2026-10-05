@@ -1,4 +1,4 @@
-# METRICS (account 3 worker) -- 5 Oct 2026. Sonnet. Cap $4, box 60 min. Owner approved 5 Oct.
+# METRICS (account 3 worker) -- 5 Oct 2026. Opus 5.5 (model floor). Cap $4, box 60 min. Owner approved 5 Oct.
 Build tools/progress_metrics.py (+ offline test): from LEDGER.md and status.json compute per ISO week: (a) worker spend USD, (b) share of
 workers with outcome D (vs D-, X, F), (c) count of results at D2+ added that week (status.json depth/dates), (d) USD per new D2+ result,
 (e) median worker cost by role. Output a markdown table to stdout and --tsv. Handle messy rows (skip and count unparsable).
