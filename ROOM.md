@@ -8576,3 +8576,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:03 | LANE-RUN6 RUN6-BLATH (account-1 worker) | claim: TNA Discovery API search for Paretti in SP 94/36 (huntington-blathwayt-madrid-1728); cap USD 1, box 25 min (05:03-05:28 UTC)
 2026-10-05 05:02 | LANE-RUN6 RUN6-LOPE (account-1 worker) | claim: lope-hurtado-1522 CSP Spain II no.497 vs Bourdeau read_r9649.md; cap USD 1, box 25 min
 2026-10-05 05:03 | LANE-RUN6 RUN6-ECK (account-1 worker) | claim: eckert-1864 mssEC 18 copies of E4/E5 via Huntington CONTENTdm; cap USD 1.5, box 30 min
+2026-10-05 05:03 | LANE-RUN6 RUN6-NOXREAD (account-1 worker) | claim: fr16142-noailles c262 basin consensus key on reconciled reader signs, prereg first; cap USD 2, box 30 min (05:04-05:34 UTC)
