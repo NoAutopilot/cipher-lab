@@ -365,3 +365,22 @@ Clements Library sent "Clinton vol 64 fols. 14-15.pdf" (8.9 MB) by Hightail shar
 after Aeon registration. The cloud browser could not complete the Hightail download (3 attempts: the download button
 did not respond headless; stopped per the good-citizen rule). Owner downloads it once and puts it in the private repo
 (destaing-gerard-1779/). Next: transcription + key test from the received scan.
+
+## Clements scan on hand (5 Oct 2026, 22:1x UTC, account-3 orchestrator eye check)
+Owner downloaded the Hightail file; it is in the private repo, destaing-gerard-1779/Clinton_vol_64_fols_14-15.pdf
+(12 pages, phone-camera scans ~1700-2400 x 2100-3100 px, about 210-270 ppi; numbers clearly legible).
+- 64:14 is THREE British copies of the intercepted letter ("Copy of a Letter from Monsieur D'Estaing to Monsieur
+  Gerard in Cypher, dated on board the Languedoc, Martinique 30th April 1779. Intercepted"), each marked "2.da"
+  (secunda): copy A (pp.2-3, clear passages written in, signed "Signed Estaing"), copy B (p.5, same layout), copy C
+  (p.7, cipher only; the clear passage "Je me flatte ... si cela est" left as a gap; "(Signé) Estaing"). Docket p.8
+  "Intercepted Letter of D'Estaing".
+- 64:15 is two copies ("1.ma"/"3.tia"?) of a CLEAR covering letter, d'Estaing to "Monsieur Holker, Agent et Consul de
+  France", same date: Gerard is said to be returning to Europe for his health; d'Estaing hopes Gerard left Holker
+  "le Chiffre qui sert a sa Correspondance avec moi", so Holker can read "les Lettres que je mets a l'adresse de
+  Monsieur Gerard". Confirms the cipher is the Gerard-d'Estaing correspondence cipher and that Holker may hold it.
+- No decipherment, interlinear value or British working is written on any of the 12 pages (the planned "did
+  Clinton's office write a decipherment on or beside 64:14" check: answered no, eye check of all pages).
+- ciphertext.txt (from Bourdeau's transcription) matches copy A's opening run by a spot check of the first 3 lines;
+  a full three-witness comparison (A/B/C number by number) is the next step and replaces the image-check gap.
+Next: three-witness collation of the ~230 code numbers (one worker with the private repo in scope, ~$4); then the
+Holker lead (Holker papers, LoC) for the Gerard cipher key.
