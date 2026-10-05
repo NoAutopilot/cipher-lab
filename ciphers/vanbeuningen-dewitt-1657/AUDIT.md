@@ -339,3 +339,15 @@ present (AUD2). Requests this item: be-api.us.archive.org 14, archive.org 1, www
 **Verdict: gate 2 closed.** Class unchanged: item 1 (the letter's text) **N1**; item 2 (the key and decipherment of the cipher
 copy ff.210-211) **N3** (key `ours`). Postma 2006/2007, unread, remains the named gap toward N4 (a class question, not gate 2).
 No reply bears on this item (no outreach sent).
+
+## Revision carried in (rule 10 propagation), 5 Oct 2026 (A4-RFVB, solver-side, no reclassification)
+
+The reading was revised after this AUDIT.md was written: a native-resolution re-read of the cipher leaves found that the
+clerk's open-topped 8 had been transcribed 0 (after a digit) or 11 (alone). 45 tokens were corrected in `ciphertext.tsv`;
+codes 40 (d|a) and 11 (m|n) split into 40 a / 48 d and 11 n / 8 m; 20 is 28 (u/v); the nomenclator codes 104/105/106
+read 184/185/186 (186 newly keyed M, "Coningh van Sweden", from its position). `decode_key.py --check`: C 491, M 26 of
+517 coded tokens (was C 446, M 70, U 1). The figures in item 2 above ("446/517 coded tokens grade C", the decode_key
+line, and the code-40 d|a discussion) are superseded by NOTES.md section "Native-resolution re-read of codes 40 and 11".
+The plaintext is unchanged (it is the print); the key is still `ours`. The N-class and depth are a verifier's to restate;
+this note does not change them. The SECOND-OPINIONS-QUEUE row SO-VANBEUNINGEN-1657 is already checked; its prompt quotes
+the earlier key figures, so a verifier re-reading it should use this note's numbers.
