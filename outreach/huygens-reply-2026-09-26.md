@@ -35,3 +35,7 @@ visits herself. She is glad to stay in touch, meets cipher in her other projects
 turns up (e.g. in the Japikse copies or the minutes). "There is no need to hold anything back on our account. Please keep
 me informed." Consequences: the 5 Oct follow-up drops the 'hold these if you prefer' line and the 'no reply' remark; the
 Japikse-copies access question stays with us (she cannot visit).
+Decision 5 Oct 2026 (owner): no reply now. Write once, when the KHA (Japikse copies of 53/126, minute of 126; follow-up
+request drafted 5 Oct) or Dresden (minute of 57; requested 26 Sept, chase drafted 5 Oct) material arrives and has been
+checked against our readings, and include the offer to look at cipher in her other projects. Lesson: re-read what the
+recipient asked for before drafting; send only that.
