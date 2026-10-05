@@ -1,0 +1,17 @@
+line	pos	top1	sign_3r	note_3r	m16_label	m16_conf	new_grade
+L01	13	T45	T45	passC	T45	M	S
+L02	2	T85	T85	passC	T85	M	S
+L02	15	T66	T66	passC	T66	M	S
+L02	27	T98	T18	lookalike 2-of-3	T18	M	M
+L03	5	T95	T95	passC	T95	M	S
+L05	19	T45	T45	passC	T45	L	M
+L06	18	T45	T90	lookalike 2-of-3	T90	H	M
+L06	24	T45	T45	passC	T45	M	S
+L06	26	T45	T90	lookalike 2-of-3	T90	M	M
+L06	31	T36	T36	lookalike UNSETTLED	T88	L	M
+L07	23	T60	T60	lookalike UNSETTLED	X_NEW	L	M
+L07	27	T98	T98	lookalike UNSETTLED	T98	L	M
+L07	29	T81	T81	lookalike UNSETTLED	X_NEW	L	M
+L10	6	T57	T57	passC	T57	M	S
+L10	9	T84	T84	passC	X_NEW	M	M
+L10	10	T70	-	unaligned	T70	M	S

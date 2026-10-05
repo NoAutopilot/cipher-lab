@@ -57,3 +57,10 @@ f117	L08	6	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of
 f117	L08	19	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
 f117	L08	27	et	S	D2-B117KAPC S: top1 T29 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
 f117	L10	1	r	S	D2-B117KAPC S: top1 T83 and look-alike 3rd reader (lookalike 2-of-3) agree; printed key licensed at measured err 0.126/0.183 (la/PREREG-KAPC.md)
+f117	L01	13	e	S	D2-B117M S: top-1 T45 and m16 value-blind window read (M) agree
+f117	L02	2	a	S	D2-B117M S: top-1 T85 and m16 value-blind window read (M) agree
+f117	L02	15	e	S	D2-B117M S: top-1 T66 and m16 value-blind window read (M) agree
+f117	L03	5	s	S	D2-B117M S: top-1 T95 and m16 value-blind window read (M) agree
+f117	L06	24	e	S	D2-B117M S: top-1 T45 and m16 value-blind window read (M) agree
+f117	L10	6	s	S	D2-B117M S: top-1 T57 and m16 value-blind window read (M) agree
+f117	L10	10	g	S	D2-B117M S: top-1 T70 and m16 value-blind window read (M) agree

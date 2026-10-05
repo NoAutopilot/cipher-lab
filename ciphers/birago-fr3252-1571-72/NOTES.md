@@ -1728,3 +1728,57 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.
 - [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
 - [ ] retry: reconciliation of the kept f.36-37 rows' 193 splits in 4 per-page calls (one 193-row call was non-discriminating, RUN6-BIR3637); f.117r [x] power at the measured post-look-alike error done (D2-B117KAPC: 18/20 at 0.126, 16/20 at 0.183, rank 1/201 on 5/5 seeds), 27 M -> S
 Verdict: keep going: 10 internal gaps (f.117r now S 217/M 36); cheapest next: the kept f.36-37 rows' 193 splits in 4 per-page reconciliation calls (~$2, disk only); the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)
+
+## D2-B117M (5 Oct 2026, account-1 worker for LANE-D2PUSH): f.117r 16-tile value-blind window read (7 M -> S); T88=q on no.86 FAIL
+
+Brief `.claude/briefs/runs/2026-10-05-acct1-d2-b117m.md`. Disk only, 0 network requests, 1 Sonnet vision call (two 8-window montages +
+a 20-cell candidate sheet, ids only). Box 19:07-19:52 UTC, cap USD 2.5. Intake gate: `python3 tools/intake_gate_check.py
+birago-fr3252-1571-72` -> "birago-fr3252-1571-72: partial (line 1) -- edition/page or full-text-search citation found within 6 lines"
+(pass). PREREG `harvest/f117/la/m16/PREREG-M16.md` pushed in 09053e121 before any read or score.
+Crops (existing, made by): `python3 tools/iiif_lines.py --ark btv1b9060232m --canvas 118 --region 4380,1400,3150,1300 --out
+ciphers/birago-fr3252-1571-72/images/f117 --prefix f117 --centres 103,223,347,462,580,702,815,944,1062,1210 --max-width 1100 --overlap
+60 --debug`; windows: `tools/lookalike_pass.py windows --tiles la/m16/m16_in_tiles.tsv --status m16 --passc la/m16/top1_passc.tsv
+--manifest ../../images/f117/manifest.json --crop-pattern 'f117_{line}_s*' --out la/m16 --run m16 --per 8` (from harvest/f117).
+
+**Step 1.** The 16 plain-M tiles of `la/kapc/m_to_s.tsv` (owner's sorter and its 12 focus tiles untouched). Answers `la/m16/m16_reread.tsv`,
+grades `la/m16/m16_grades.tsv` (rule in `la/m16/m16_apply.py`, fixed in the PREREG): firm and equal to top-1 on 7 (L01.13, L02.2, L02.15,
+L03.5, L06.24, L10.6, L10.10) -> S. Echo control (can differ): on the 3 tiles where a firm earlier third read disagreed with top-1 the
+read matched top-1 0/3 and the earlier third read 3/3 -- not an echo; those 3 now have two blind instruments against top-1 (value
+changes, left to the owner's sorter, values not changed here). 5 answers L (line ends, a smudge), L10.9 X_NEW: stay M.
+
+    $ python3 tools/decode_key.py ciphers/birago-fr3252-1571-72 --config ciphers/birago-fr3252-1571-72/harvest/f117/la/kapc/decode_kapc.json --check
+    ../nevers-birago-fr3251-1572/harvest/tx_decode/eye/verify/ciphertext_f117_top1.tsv: tokens 279: M 29, S 224, U 26
+    reading up to date
+
+**f.117r per token (rule 4): H 0, C 0, S 224, M 29, I 0, U 26** (was S 217, M 36). Cryptanalytic result only. Longest S-only stretch
+**23 letters, 'nintentiondeconuenibaun' (L02.4-26)**, below the ~42-letter AD figure used for this key family; not a clause above AD,
+so no "verifier wanted" line; depth stays D1 (not raised here). depth_pct 77.8 -> 80.3 in status.json.
+
+**Step 2, T88 = q** on no.86 (`la/m16/t88q_test.py`, `t88q_result.txt`): T88 followed by a u cell 4/7 = 0.571; control 200 draws over
+32 other letter cells, median 0.000, max 0.077, target above 200/200 -- but under the pre-registered 0.6 floor: **FAIL**, logged in
+HYPOTHESES.md, not re-tuned. Secondary: no.87 2/4, no.90 1/4. T88 clearly precedes u more than any other cell, but n = 7 cannot
+separate q from g + u. Report: found 7 regrades and the T88 FAIL; not found: any S-only clause above AD.
+
+## Remaining gaps (D2-B117M, 5 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.117r: 279 tokens S 224, M 29, U 26 (D2-B117M); f.100r + f.119: 0 graded of 1,048 digits.
+- f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles, two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
+- f.36-37 kept rows at E 0.333 (700 positions, 193 splits) - blocker: not-attempted; one reconciliation call over all 193 returned 3 M / 190 L-or-? (RUN6-BIR3637: the reader did not open most crops; non-discriminating by PREREG item 4, nothing spliced) -- the unit was oversized, not the method; next: the same prompt split by page into 4 calls (r36_L01-L08 58, v36top 72, v36mid 52, r37 11 positions; harvest/f3637/adjudicate_in.tsv), disk only, ~$2
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r 29 M tokens - blocker: not-attempted; 8 A1-vs-BIR-OPEN conflicts, 12 BIR-OPEN-only rows, and 9 plain-M left by the D2-B117M window read: 3 where two blind instruments (look-alike 2-of-3 and the m16 read) agree on a sign other than top-1 (L02.27 T18 for T98, L06.18 and L06.26 T90 for T45: value changes, owner's call), 5 L-grade answers (L05.19, L06.31, L07.23, L07.27, L07.29: window position at line ends/smudge), L10.9 read X_NEW; next: owner sign sorter on the existing focus list plus these 3 value-change tiles, or native sub-crops of the 5 L tiles (iiif_lines --follow-slope at the line ends), disk only, ~$1; longest S-only stretch 23 letters ('nintentiondeconuenibaun', L02.4-26), below the ~42-letter AD figure, judge FAIL unchanged (-1.224); TXD-HOLDOUT lam-4 note unchanged: next verifier pass on the 32 lam-4 changed positions, ~$2
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; pre-registered on no.86 FAIL (D2-B117M: 4/7 = 0.571 u-follow vs 0.6 floor, though above 200/200 control draws); the caveat stays; untested-by-this-tool at n=7 (q vs g+u not separable); next: new material -- a 1572 leaf with >= 15 T88 tokens, or the no.87 clerk's clear sheet value at its 4 T88 positions (L03.1, L11.14, L22.23, V02.6), disk only, ~$0.5
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); spelled-crib tests without power (BIRAGO-NUM2, -NUM4); no key on disk (crossmatch control-backed, BIRAGO-NUM-TOOLS); 158 prefix letter design control-backed negative (BIRAGO-NUM-TOOLS); dotted groups and 1x/5x/8x units as nomenclator codes untested-by-this-tool (flank statistic, matched control power 2-4/20, N8-BIRNUM), no meaning licensed by the f.100r clear context; f.138 (no.71) is not a third letter in this system (RUN6-BIR138: symbol cipher, digit fraction 0.03 vs controls 0.95/0.0; 1572 key rank 1/201, NEVBIR-138); fr.3251/fr.3252 have no other numerical letter in Sept 1571-Mar 1572 (BIRAGO-NUM-SCOUT); next: new material -- a numerical-key letter in another Nevers/Birago volume (fr.3256, fr.4688 Guazzo, fr.4712-4715) by a catalogue/eye sweep, ~$2
+- Nov 1571 key table - blocker: no-key-material; fr.3995 undated tables all viewed and the sweep is closed (BIRAGO-NUM-KEYEYE, -KEYEYE2, -KEYEYE3, BIRAGO-76): no.73 and no.74 control-backed negatives, no.32, no.33 and no.71 under the coverage floor (no.71 also 1580s), no.75 three-figure codes with League-era names, no.48-51 symbol keys, no.76 a single-sign letter alphabet (digits 1-9 for a-i, symbols and letters for l-z, no 0) with two-figure word codes in a plain and an overlined series (BIRAGO-76); no key table in fr.3995 fits the digit-only 00-59/74-99 token set; the next instrument is new material: a Nov 1571 key in another volume of the Nevers/Birago papers (fr.3252 neighbours, fr.3251, fr.3256, fr.4712-4715 key sheets) located by a catalogue/eye sweep for "chiffre" leaves dated 1571-72
+- fr.3995 no.74 digraph signs 23-27 and no.32 superscript marks - blocker: not-attempted; read at ~0.5x, values not legible; only matters if a letter in either key turns up; next: none unless a matching letter is found
+
+## Escalation (D2-B117M, 5 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ); f.100r pooled with f.119 (BIRAGO-NUM); third numerical letter scouted in both volumes, none (BIRAGO-NUM-SCOUT)
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 and f.47r; 1572 key on f.117r; Nov 1571 system against all 66 digit keys on disk, none at gate, control 6/6 (BIRAGO-NUM-TOOLS); fr.3995 no.73 stat 1.10/-0.39, no.74 0.26/-0.16, no.32 0.79/1.23 (coverage 0.24-0.32) vs gate 3.292, controls 12/12 each (BIRAGO-NUM-KEYEYE, -KEYEYE2); no.71 letters coverage 0.26-0.31, stat -1.09 to 1.65, controls it 12/12, fr 9/12 (BIRAGO-NUM-KEYEYE3); no.76 single-sign letters, not two-figure, crossmatch not applicable (BIRAGO-76)
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss by per-sign tiles; f.47r pair check against it; T88=q [x] pre-registered on no.86, FAIL (D2-B117M), next the no.87 clear-sheet check; f.100r + f.119 codes: clear-context code reading run (N8-BIRNUM, untested-by-this-tool at this N), f.138 ruled out as a third letter (RUN6-BIR138); next a numerical letter in another volume
+- [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
+- [ ] retry: reconciliation of the kept f.36-37 rows' 193 splits in 4 per-page calls (one 193-row call was non-discriminating, RUN6-BIR3637); f.117r [x] power at the measured post-look-alike error done (D2-B117KAPC: 18/20 at 0.126, 16/20 at 0.183, rank 1/201 on 5/5 seeds), 27 M -> S; f.117r 16 plain-M window read (D2-B117M): 7 M -> S
+Verdict: keep going: 10 internal gaps (f.117r now S 224/M 29); cheapest next: the kept f.36-37 rows' 193 splits in 4 per-page reconciliation calls (~$2, disk only); the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)

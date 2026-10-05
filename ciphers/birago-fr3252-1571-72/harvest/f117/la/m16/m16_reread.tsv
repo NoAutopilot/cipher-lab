@@ -1,0 +1,17 @@
+passage	pos	label	conf	second	note
+L01	13	T45	M	T90	stem rising from a closed circle at the bottom
+L02	2	T85	M	X_NEW	plain cross, a vertical line crosses the right arm
+L02	15	T66	M	T95	small hooked head on a stem with a foot bar
+L02	27	T18	M	T98	open loop with a stem passing through
+L03	5	T95	M	T66	p-like loop with a cross bar on the stem
+L05	19	T45	L	T89	thin stem with a bowl at the bottom
+L06	18	T90	H	T45	cross on top of a small circle
+L06	24	T45	M	T90	thin stem with a bowl at the bottom
+L06	26	T90	M	T45	cross over circle, on a dark smudge
+L06	31	T88	L	X_NEW	black blob or oval at the line end
+L07	23	X_NEW	L		could not find a # shape at the tick
+L07	27	T98	L	T18	loop with stem near the tick, uncertain
+L07	29	X_NEW	L		end of line, blob at the tick
+L10	6	T57	M	X_NEW	diamond head with a curled tail
+L10	9	X_NEW	M	T70	inverted triangle with a bar
+L10	10	T70	M	T84	triangle with a cross below

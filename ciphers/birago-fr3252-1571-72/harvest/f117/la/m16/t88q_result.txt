@@ -1,0 +1,3 @@
+pool_no86.tsv	T88 n=7 u-follow=4/7=0.571	control cells=32 draws below=200/200 median=0.000 max=0.077	FAIL
+pool_no87.tsv	T88 n=4 u-follow=2/4=0.500	control cells=37 draws below=200/200 median=0.000 max=0.250	secondary
+pool_no90.tsv	T88 n=4 u-follow=1/4=0.250	control cells=33 draws below=196/200 median=0.044 max=0.250	secondary

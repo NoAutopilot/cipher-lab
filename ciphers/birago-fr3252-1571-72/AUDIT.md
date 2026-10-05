@@ -219,3 +219,11 @@ and 16/20, rank 1/201 on 5/5 seeds; harvest/f117/la/PREREG-KAPC.md), and 27 M to
 agree moved to S under the BIR-APPLY rule (NOTES.md "D2-B117KAPC"; harvest/f117/la/kapc/). Longest S-only stretch 17 letters, no
 clause; judge FAIL unchanged. The safe sentence above still holds; depth and N-class are left to a verifier. SECOND-OPINIONS-QUEUE row
 SO-BIR3252-117-47 checked: its prompt quotes no grade counts and values are unchanged, so it needs no edit.
+
+## Propagation note (D2-B117M, 5 Oct 2026; solver-side, not a verifier verdict)
+f.117r grades moved again: S 217 / M 36 -> **S 224 / M 29** (U 26), reading text unchanged. One value-blind window read
+(harvest/f117/la/m16/) of the 16 plain-M tiles agreed with top-1 on 7 firm answers (S under the BIR-APPLY rule); on the 3 tiles where
+an earlier firm third read disagreed with top-1 it sided with that third read 3/3 (L02.27 T18, L06.18 T90, L06.26 T90), so those stay
+M pending a value change by the owner's sorter. Longest S-only stretch 23 letters ('nintentiondeconuenibaun', L02.4-26), below the
+~42-letter AD figure, no clause above AD; judge FAIL unchanged. T88=q FAIL on no.86 (HYPOTHESES.md). Depth and N-class left to a
+verifier; SO-BIR3252-117-47 quotes no grade counts, no edit needed.
