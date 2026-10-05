@@ -4113,3 +4113,10 @@ against Byrom's inline consonant list -- Armstrong's flat dash (R5 bar) ~ Byrom 
 likeness reading on generic shapes (dash and cup occur in most systems; earlier coarse table scored Byrom lowest, 4.0); a lead, not
 a match. Next: SHORTHAND-PAGE's per-mark test covers Byrom with the plate; if Byrom stays a candidate, a symbol-by-symbol
 frequency/position check against Byrom's consonant values (R1-R7) with a shuffled-assignment control (~$3).
+Owner observation on blind system D (= Mavor 1792, Plate I), same session, "don't take as gospel": Armstrong's arch "⌒" ~ Mavor m
+("me, my, most"); Armstrong's slash with a dot beside it ("/·", twice circled) ~ Mavor's vowel-places table, the "/"-consonant row
+with the dot in a vowel position. The second is a structural point, not only a shape: Mavor writes vowels as a DOT placed around the
+consonant stroke (position = which vowel), and Armstrong's marks often carry a dot beside a stroke (R6 dots, "÷"-like marks). Caveat:
+Taylor 1786 (Tomokiyo's negative) and others also place vowel dots, so this narrows to the dot-vowel family, not to Mavor alone.
+Next: in SHORTHAND-PAGE / a follow-up, measure dot positions relative to strokes in Armstrong (above/beside/below x start/middle/end)
+and compare with Mavor's 6-position scheme vs Taylor's; a dot-position distribution that fits Mavor and not Taylor would be a real test.
