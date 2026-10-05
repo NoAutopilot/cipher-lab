@@ -8727,3 +8727,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 18:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 18:39: spawned 1 (LANE-D2PUSH session_01UcA1qfmvj2Z2oGWMt6yMMq), queued left 0
 2026-10-05 18:40 | VER1-REG (worker, for LANE-VER1) | claim: verifier, (a) na-schonenberg-1678-1716 register fix, (b) na-janssens-java-1811 Audit 2, (c) fr3993-gonzague-nevers-1595 Audit 2; box 18:40-19:40 UTC, cap 5
 2026-10-05 18:40 | VER1-NOX (verifier, for LANE-VER1) | claim: fr16142-noailles-constantinople-1571 Audit 1 (basin reading), box 18:41-19:40 UTC, cap 5
+2026-10-05 18:41 | worker VER1-SYNC (ytbiz) | claim VER1-SYNC for LANE-VER1: register reconciliation bowes-walsingham-1583, thurloe-printed, rah-morillo-1817 (status.json vs PROGRESS.tsv audit 2); box to 19:21 UTC, cap $3
