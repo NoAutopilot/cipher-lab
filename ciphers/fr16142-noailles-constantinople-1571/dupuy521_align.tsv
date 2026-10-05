@@ -8,17 +8,17 @@ fr16142_canvases	fr16142_date	to	fr16142_cover	dupuy521_canvases	dupuy_date	matc
 287-289	1572-05-08	King	sheet + partial interlinear	48R-51L	1572-05-08	date	
 297-303	1572-06-10	King	margin	52R-59L	1572-06-10?	date	day 'dixiesme?' low confidence
 318-324	1572-07-09	King	margin	60R-64L	1572-07-08	date	Dupuy reads 8 July; FT-D's 9 was a 400 px reading
-330	1572-07-08	Queen	open	64R-65L	1572-07-08	date	Dupuy opens 'Madame, Vos Majestés attendront...'; c330's second paragraph opens 'Madame voz Mtés entendront dud. Sr de Germiny' (1500 px): probably the same letter, abridged; not text-checked
+330	1572-07-08	Queen	open	64R-65L	1572-07-08	text	Dupuy opens 'Madame, Vos Majestés attendront...'; c330's second paragraph opens 'Madame voz Mtés entendront dud. Sr de Germiny' (1500 px): probably the same letter, abridged; not text-checked | RUN6-NOXDUP 5 Oct 2026: text-checked by eye (opening/clear phrase)
 346-351	1572-07	Anjou	margin	65R-66L	1572-07-08	date	
-358-361	1572-08-08/18 + PS 20 Aug	King (copy)	open	71L-73R	1572-08-18 + PS 1572-08-20	date	c358 heading read '8me' (or 18me) d'aoust with postscripts of the xviii and xx; Dupuy 73L dated 18 Aug, 73R 'Post Scripta du vingtiesme a la depesche du dixhuictiesme Aoust 1572'
+358-361	1572-08-08/18 + PS 20 Aug	King (copy)	open	71L-73R	1572-08-18 + PS 1572-08-20	text	c358 heading read '8me' (or 18me) d'aoust with postscripts of the xviii and xx; Dupuy 73L dated 18 Aug, 73R 'Post Scripta du vingtiesme a la depesche du dixhuictiesme Aoust 1572' | RUN6-NOXDUP 5 Oct 2026: text-checked by eye (opening/clear phrase)
 362-364	1572-08-25	King (duplicata)	sheet	73L-74R	1572-08-25	date	
 383-384	1572-09-03/04	King	sheet	75R	1572-09-04	date	
 389-392	1572-09	Anjou	sheet	77L	1572-09-02	date	
-409-410	1572-09-06	King	open	76L-77L	1572-09-06 (ends 'cinquiesme')	date	Dupuy 76L 'Autre Lre au Roy du sixiesme Septembre 1572 / Sire, ... escript a Vostre Majesté et a Monseigneur la resolution...' consistent with c409's clear lead-in ('... j'ay bien au long escript a vre Magesté et a Monseigneur'); probable, not word-checked
+409-410	1572-09-06	King	open	76L-77L	1572-09-06 (ends 'cinquiesme')	text	Dupuy 76L 'Autre Lre au Roy du sixiesme Septembre 1572 / Sire, ... escript a Vostre Majesté et a Monseigneur la resolution...' consistent with c409's clear lead-in ('... j'ay bien au long escript a vre Magesté et a Monseigneur'); probable, not word-checked | RUN6-NOXDUP 5 Oct 2026: text-checked by eye (opening/clear phrase)
 417-435	1572-11	Queen/Anjou/King	margin	85R-95L	1572-11-19/28/29	date	Branza lez Raguze letters
 454-461	1573-03	Queen (+dup)	sheet	119R-121R?	1573-03-06?	date	
-245-246 + 464	1573-03-08	King	open (enciphered pair)	121R-122L	1573-03-08	date	both fr.16142 copies open; Dupuy 122L dated 8 Mar 1573
-472-473	1573-03-08 + PS 12 Mar	Queen	open	122L-123R	1573-03-08 + PS 1573-03-12	date	Dupuy 123R 'Post Scripta a la Royne. Du douziesme de Mars 1573'
+245-246 + 464	1573-03-08	King	open (enciphered pair)	121R-122L	1573-03-08	text	both fr.16142 copies open; Dupuy 122L dated 8 Mar 1573 | RUN6-NOXDUP 5 Oct 2026: text-checked by eye (opening/clear phrase)
+472-473	1573-03-08 + PS 12 Mar	Queen	open	122L-123R	1573-03-08 + PS 1573-03-12	date	Dupuy 123R 'Post Scripta a la Royne. Du douziesme de Mars 1573' | RUN6-NOXDUP 5 Oct 2026: partial -- only the 12 Mar PS phrase shared; 8 Mar Queen body not found in Dupuy 122-124
 476-486	1573-03	Anjou (+dup)	sheet	124L-126R	1573-03-08 + PS 1573-03-12	date	
 488-490	1573-04	Queen	sheet	133L	1573-04-21	date	
 510-516	1574-07-07	King	open	221R-226R	1574-07-06 (vj or vij)	text	Dupuy 221R 'Au Roy / Sire, Le dernier du passé j'ay receu la depesche quil a pleu a Vostre Majesté me faire du xvij avril, j'avois pensé quelques jours auparavant la reception d'icelle que...' = c510 clear lead-in word for word; 226R 'Sire quelques jours avant recevoir vostre depesche du dix huictiesme d'avril j'avois entendu qu'il plaist a Vostre Majesté me mander des conspirations faictes contre sa personne...' = c516 clear lead-in; ends 226R '...de Pera lez Constantinople ce vj Juillet 1574'
