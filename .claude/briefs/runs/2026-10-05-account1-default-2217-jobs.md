@@ -144,3 +144,19 @@ D2-ECK62M (23:13): 57 dated matches aligned, AGREE 316/817 = 0.387 vs control 0.
 ### D2-F3198B -- fr3198-labbe-1577, native view of fr.4695 no.55 f.125 (Prague 20 Apr 1577) (cap 2.5, box 35 min)
 D2-F3198 (23:06): no.51 = ff.116r-117v, clear, "Je vous envoye presentement la chiffre", no key sheet bound there. Next named: no.55 f.125
 (canvas = folio + 9 for rectos per D2-F3198). Mandatory crop step; record what the leaf is (cipher? key? date) in NOTES.md; no decoding.
+
+# Wave 4 (written 23:3x UTC; spawned as wave-3 slots free; same rules)
+
+### D2-PIS275 -- fr16045-pisany-rome-1585, f.275v L17-L20 third reader + kp86i re-run (cap 3, box 40 min)
+Verdict: "f.275v L17-L20 third reader + kp86i re-run, ~$2 (kp86i FAILed, RUN6-PISFIN)". Mandatory crop step; the third reader is blind to the
+two earlier reads; kp86i re-run exactly as registered. Report both numbers; grades per rule 4; --check.
+
+### D2-HELR -- hellen-frederick-1752, words-level context test of R4386 on the 1763 1201-2000 band (cap 3.5, box 45 min)
+Verdict: "~$3 (low prior)". Pre-register the test, its control and gate before scoring (rule 3); report both numbers.
+
+### Edition-search jobs (Sonnet 5 workers allowed per default-lane.md "pure catalogue search"; search results only, rule 10; tools/print_check.py
+### and IA be-api/advancedsearch, Google Books API with country=US; log hosts and request counts; NOTES.md section + while-waiting update)
+- D2-ARSDAL (cap 1.5, box 30 min) -- arsenal-dallion-lanmary-1744: full-text search a Recueil des instructions volume for Sweden (1744-46).
+- D2-CL528 (cap 1.5, box 30 min) -- clairambault528-bouillon-1713: full-text search Cardinal de Bouillon's Mémoires (19th-c. ed.) on IA.
+- D2-CLERV (cap 1.5, box 30 min) -- clerville-francia-1648: Gallica SRU/ContentSearch + IA full-text search of 27 April 1648 with the Este
+  envoy's names (from the folder's NOTES.md).
