@@ -2244,12 +2244,18 @@
       "completeness": "not given in row",
       "unresolved_spans": "P3's postscript open",
       "audit_refs": [
-        "AUDIT.md '## P2, P3, P5+P6, P7, P8, P16-P24' Verdict"
+        "AUDIT.md '## P2, P3, P5+P6, P7, P8, P16-P24' Verdict",
+        "AUDIT.md '## AUDIT 2 (DEF1-THUR, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "thurloe-printed/AUDIT.md that section"
+      "fields_source": "thurloe-printed/AUDIT.md that section",
+      "depth": "D3",
+      "depth_pct": 95.5,
+      "depth_sentence": "Fauconberg writes to Henry Cromwell from Whitehall on 14 Sept 1658, in cipher, that 'certainly somwhat is brewing under hand'.",
+      "depth_check": "period decipherment printed by Birch 1742 (interlinear or following), aligned to the groups; P5+P6 also in MS. Rawl. A. 24/2 pp.324-327 (Bodleian, 28 Sept 2026); gaps P2 (translation only) and P3 postscript; no fresh rule-7 re-derivation (AUDIT 2, DEF1-THUR)",
+      "decode_status": "Partially decrypted"
     },
     {
       "date": "24 Sept 2026",
@@ -2325,7 +2331,7 @@
       "kind": "reading",
       "title": "Thurloe State Papers (Birch 1742): Blake 4 and 6 July 1655, the Protector to Blake and Mountagu 9 June 1656, Mountagu 16 Sept 1656, printed decipherments aligned to their groups",
       "grade": "N0",
-      "line": "Birch printed these four letters with their decipherment (vol. 3 pp.611-612, 620; vol. 5 pp.101-102, 421); we aligned it to the groups, extending the Blake and Montagu keys.",
+      "line": "Birch printed these four letters with their decipherment (vol. 3 pp.611-612, 620; vol. 5 pp.101-102, 421), and Powell 1937 prints the Blake letters and Mountagu's; we aligned it to the groups, extending the Blake and Montagu keys.",
       "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
       "key": "period",
       "document_id": "Birch 1742, Thurloe State Papers: P9, P10, P14, P15 (Blake 4 and 6 July 1655; Protector to Blake and Mountagu 9 June 1656; Mountagu)",
@@ -2335,12 +2341,18 @@
       "completeness": "not given in row",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## P9, P10, P14, P15 -- printed decipherment check'"
+        "AUDIT.md '## P9, P10, P14, P15 -- printed decipherment check'",
+        "AUDIT.md '## AUDIT 2 (DEF1-THUR, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "thurloe-printed/AUDIT.md that section"
+      "fields_source": "thurloe-printed/AUDIT.md that section",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_sentence": "Mountagu reports from the bay of Wyers on 16 Sept 1656 that the question whether to send home the great ships was resolved in the negative.",
+      "depth_check": "period decipherment printed by Birch 1742; external non-statistical check: Powell, Letters of Robert Blake (NRS 76, 1937) prints the same deciphered text of P9, P10 (incl. L10's 14 groups) and P15; no fresh rule-7 re-derivation (AUDIT 2, DEF1-THUR)",
+      "decode_status": "Partially decrypted"
     },
     {
       "date": "24 Sept 2026",

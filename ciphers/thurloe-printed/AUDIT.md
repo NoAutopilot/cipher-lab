@@ -1039,3 +1039,77 @@ reads as text -- 280 of 424 cipher tokens lie outside lines 53-61 -- or "partial
 figure stated as a token grade, never as a share read. depth_pct in status.json stays the token figure (97.9) with this
 note. What would raise it: the MS leaf showing what Birch set as "am"/"it"/"in" (route: Bodleian reproduction order,
 ASKS/LOCAL-QUEUE L19 line), then a re-check. N-class unchanged (N4, not re-examined here).
+
+## AUDIT 2 (DEF1-THUR, 5 Oct 2026)
+
+Verifier DEF1-THUR (account 1, session_01AM5yDn7WrjFBpFbgVeDDKD, for LANE DEFAULT-account-1-20261005-2039), 5 Oct 2026,
+20:47-21:1x UTC by `date -u`. Second adversarial audit (Outreach gate 2) of two status.json result rows that carried one audit
+each. I did not solve, align or audit these letters before; nothing decoded, no key or reading touched.
+- **results[43]** P2, P3, P5+P6, P7, P8, P16-P24 (Audit 1: "## P2, P3, P5+P6, P7, P8, P16-P24", V1, 24 Sept 2026).
+- **results[50]** P9, P10, P14, P15 (Audit 1: "## P9, P10, P14, P15", V2, 24 Sept 2026; plus "## P10 L10 groups", TX-VERP10, 25 Sept).
+
+**Revisions after Audit 1, checked.** "Revision after AUDIT (N8-THUR)", "(N8-THUR2)", "Depth (DEPTH-REGRADE)" and "Depth re-check,
+P4" all concern **P4 only** (not in either row). A3V2-THUR275 (NOTES, 4 Oct) regenerated `pool_1654/key_stamford.tsv` from the
+P5+P6/P7 alignment: one running-head numeral dropped, no meaning or grade changed -- the printed decipherment of P5+P6/P7 is
+untouched, so nothing to carry. MAIL-3 (28 Sept): the Bodleian reports a contemporary decipherment of P5+P6 in MS. Rawl. A. 24/2
+pp.324-327 beside the cipher (pp.319-323) -- a manuscript witness for the N0, carried here. TX-VERP10 (25 Sept): P10 L10's 14
+groups Birch left unglossed are read in Powell 1937 -- already carried into the row's class (N0, `published` for those 14). No
+SECOND-OPINIONS-QUEUE.tsv row exists for either result row (N0 rows are not queued), so nothing to propagate there.
+
+### Search log (this session, 5 Oct 2026)
+
+| Family | Status | What and result |
+|---|---|---|
+| (a) Canonical series | taken from Audit 1, spot-checked | Birch 1742 vols 2, 3, 5, 7; IA full text confirms "jealous of Stouppe" only in vol. 2 (`collectionofstat02thur`, the 1742 vol. 2 scan, and a BSB copy) and "correspondence with Overton" only in vol. 3 -- the printed decipherments of P2 and P7 |
+| (b) Sender-specific printed letters | **searched, positive** | J. R. Powell, *The Letters of Robert Blake* (NRS 76, 1937), IA `lettersofrobertb0000blak`, be-api in-item search: prints the deciphered text of **P8** ("there being four galleons designed for the Mediter. and six for..."), **P9** ("[other ships bound to America] shall be carefully observed as..."), **P10** ("to set forth a force of ships to secure the Plate fleet and to that end divers Holland"), and **P15**, Mountagu's 16 Sept 1656 letter, among its supplementary documents ("before us was, whether we shall send home the great ships; we have resolved it in the..."). **P14** (the Protector to Blake and Mountagu, 9 June 1656): two phrase searches ("give immediate notice unto us of their arrival", "design to be done there by the fleet") and "9 June 1656" returned 0 in Powell -- not located there by this method (Powell modernises spelling, so a negative here is weak) |
+| (b) Fauconberg / Henry Cromwell | searched, context | Huntington Library Quarterly, Apr 1935 (IA `huntington-library-quarterly_1935-04_7`) is the only IA full-text hit for "somwhat is brewing" outside Birch (P18 quoted, as Audit 1 found); Google Books adds a 1929 sale catalogue (*English Literature and History from the 15th to the 18th Century*) quoting the same phrase -- a manuscript or printed copy offered for sale, not a decipherment of the cipher. Gaunt, *Correspondence of Henry Cromwell* (Camden 2007) not reachable in full text this session |
+| (c) Documentary editions / histories | searched | Carlyle, *Letters and Speeches* (1884-1897 editions, 29 Google Books / 21 IA hits) prints P8's deciphered text; Gardiner, *History of the Commonwealth and Protectorate* vol. III/IV (1901; 1965) quotes P10's "to secure the Plate fleet"; Gardiner on Stouppe (P2), as Audit 1 found |
+| (c) Calendars: CSP Domestic 1655-6 / 1656-7 | partly | IA full text: a Commons-proceedings volume (`bwb_C0-AQX-812_1`) records "a letter from General Mountagu, from on board the Nasby, in the Bay of Wyers ... of the 19th of September 1656" read in the House (a different, later letter to Parliament, not P15's cipher). In-item search of the 1656-57 CSPD scan for "the great ships" Mountagu: 0. Google Books "Calendar of State Papers" Domestic 1655-6 Blake cipher Lagos: 0. CSP Venetian not searched (budget). Not needed for N0: the calendars abstract, they do not print decipherments |
+| (c) Firth, *Clarke Papers*; Corbett, NRS | not searched | budget; Powell (NRS 76) is the NRS volume that covers Blake and Mountagu's 1655-56 letters and is positive above |
+| (d) Holding archive (Bodleian Rawl. A.) | taken from MAIL-3 | the Bodleian's own report of a contemporary decipherment of P5+P6 (MS. Rawl. A. 24/2 pp.324-327) |
+| (e) Google Books API (key, country=US, 2 s apart) | searched | 10 queries; 8 answered 200, 2 answered 503 once (not retried): the Butler-phrase query and a Fauconberg cipher query. "whither wee shall send home the great ships": hits Birch vol. 5 only among relevant works |
+| (e) IA full text (be-api fts) | searched | 8 corpus-wide + 9 in-item queries; one corpus query ("other ships bound to America") 503, answered by the in-item Powell search instead |
+| (f) Solver repositories | searched | fresh shallow clones 5 Oct 2026, grep for fauconberg/stouppe/stamford/mountagu/montagu/lagos/naseby/thurloe: `dbourdeau/cyphersolver` `targets/thurloe/` is "four short pieces" (Beverning, Dugard, a Brussels letter, Waddall; README), none of these letters; `aaymeloglu/unsolved-ciphers` Thurloe hits are only `vande-perre-1653` and catalogue rows, none of these letters |
+| (g) Scholarship: OpenAlex (Bearer), Semantic Scholar (x-api-key), CrossRef, CORE (Bearer, v3/search/works/) | searched | 3 queries each ("Thurloe cipher decipherment", "Fauconberg Henry Cromwell cipher", "Robert Blake cipher letters Thurloe"): context only (Marshall/Wallis-type intelligence studies, e.g. *Breaking the Code. John Wallis and the Politics of Concealment* 2016; Marvell's Fauconberg wedding songs; "Letters to Henry Cromwell from Fleetwood and Thurloe" 1934). Nothing prints or deciphers these letters beyond the families above |
+| (g) JSTOR | queued | 4 rows appended to JSTOR-QUEUE.tsv (families i and ii per result row); a queued row does not block an N0 |
+| Persee, HAL | not searched | English-language Interregnum material; not expected to bear on an N0 from the 1742 print |
+
+Requests: www.googleapis.com 10, be-api.us.archive.org 19, api.openalex.org 3, api.semanticscholar.org 3, api.crossref.org 3,
+api.core.ac.uk 3, github.com 2 shallow clones. All one at a time, >= 1.1-2 s apart, descriptive User-Agent; no login; no
+credential printed.
+
+### Classification (per result row)
+
+| Row | Class | Key source | Text known | Depth | % H/C/S | Note |
+|---|---|---|---|---|---|---|
+| [43] P2, P3, P5+P6, P7, P8, P16-P24 | **N0 upheld** | `period` (the office's decipherment printed by Birch 1742; for P5+P6 also MS. Rawl. A. 24/2 pp.324-327) | yes (Birch 1742; P8 also Carlyle and Powell 1937; P18 also HLQ 1935) | **D3** | about 95.5% (about 6,960 of 7,290 cipher tokens C from the printed decipherment, counted from the pairs files and `pool_1654/tokens.tsv`, P2's tokens.tsv and P3's tokens.tsv) | gaps: P2's 267 tokens (Birch prints an English translation, not the French behind each group) and P3's 59-token postscript (no printed decipherment, keyed mostly M). Not D4: those two gaps are text, not names/codes, and no fresh rule-7 re-derivation was run for this row |
+| [50] P9, P10, P14, P15 | **N0 upheld** | `period` (Birch 1742 interlinear/italic decipherment); `published` for P10 L10's 14 groups (Powell 1937) | yes (Birch 1742; P9, P10, P15 also Powell 1937) | **D3** | about 100% of about 980 cipher tokens (pairs files) C from the printed decipherment, P10 L10's 14 groups from Powell | external non-statistical check: Powell 1937, edited from the manuscripts, prints the same deciphered text for P9, P10, P15. Not D4: no fresh rule-7 re-derivation for this row, and P14 is not in Powell by this search |
+
+Depth sentences (true, specific, from the printed decipherment):
+- [43]: "Fauconberg writes to Henry Cromwell from Whitehall on 14 Sept 1658, in cipher, that 'certainly somwhat is brewing under hand'."
+- [50]: "Mountagu reports from the bay of Wyers on 16 Sept 1656 that the question whether to send home the great ships was resolved in the negative."
+
+**Safe sentence ([43]).** Unchanged from Audit 1: "Birch printed these letters in 1742 (Thurloe State Papers vols 2, 3 and 7) with
+their contemporary decipherment, interlined or following the cipher. We aligned that printed decipherment to the cipher groups,
+which gives group-level keys for the Blake, Stamford and Fauconberg ciphers and real-data benchmarks. P3's three-line postscript
+is the one passage here with no printed decipherment." Add: "P8's deciphered text is also in Powell's *Letters of Robert Blake*
+(1937)."
+**Safe sentence ([50]).** "Birch printed these four letters in 1742 (vol. 3 pp.611-612 and 620, vol. 5 pp.101-102 and 421) with
+their contemporary decipherment, and Powell's *Letters of Robert Blake* (Navy Records Society 76, 1937) prints the deciphered text
+of the Blake letters of 4 and 6 July 1655 (including the 14 groups Birch left unglossed) and of Mountagu's 16 Sept 1656 letter. We
+aligned the printed decipherment to the groups."
+**Unsafe (both).** "We read, decoded or deciphered" any of these letters; any implication that the plaintext of any item here,
+including P10 L10, was not already in print.
+
+### Postmortem
+
+No over-claim found in the two rows: both say "aligned", class N0, key `period`. One under-statement corrected in the [50] row's
+line: Audit 1 (V2) left "the later-print question (Powell ...) not pursued"; Powell 1937 in fact prints P9, P10 and P15 as well as
+P8, so the row's prior print is two independent editions, not one. PROGRESS.tsv: no row added -- its schema is one row per live
+leaf/letter, and these 18 letters are found-solved N0 items under two multi-letter result rows; one row per result row would
+break the per-letter bar. Follow-up suggestion (not done): a CSP Venetian 1655-56 check for P2 (Stouppe) and Gaunt 2007 for the
+Fauconberg letters would only add later print to an N0.
+
+`python3 tools/depth_check.py` (5 Oct 2026, after this audit): exit 0, "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not
+counted D0/D1: 13; legacy ungraded: 0"; no line for results[43]/[50] (N0 key-to-known-text rows are not counted, by design).
+`python3 tools/verify_backlog.py`: "41 rows: audit2 14, both 4, counted 23".
