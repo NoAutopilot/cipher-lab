@@ -1,0 +1,13 @@
+row	tokens
+# N9-BAL2 pass A, blind Sonnet, one call over f.247r+v crops (returned text, verbatim)
+R510a	{a un point de consequence} 96 s:p s:u s:d s:t 5 s:b s:b s:b s:b' 33: 95 s:y s:d s:b s:b s:t
+R510b	41 7 s:b s:u s:n s:f i s:t 59 s:p s:t s:b s:i' {Les Ducs de Saxe Vaumenbourg et}
+R510c	{la france} i: s:t s:u s:y
+R1	11 s:b 3 s:L 58 s:d 83 s:p 4 s:t s:i s:b 72 s:b s:b s:b 19 92 70= 19 11 s:b s:b 2 5 s:b s:u
+R2a	{s.r de Beauregard} i s:b 51 90 71 s:L 776 y 40= s:d 1 4 5 1 74 s:t
+R2b	{Beauregard} i s:b 51 90 71 s:L 776 y 40= s:d 1 4 5 1 74 s:t 56 s:L
+R3a	72 s:K s:L 156 4' s:b s:f 60 s:L s:u s:K s:L 82 95 s:u s:b 5 y 19 s:b 72 11 51 s:f s:a s:t
+R3b	{Le} 29 31 {sur le}
+R4	58 s:d 83 s:p 6 11 4: 4 s:b s:L 55 6 4 1 s:y s:d s:t 72 s:u s:y s:b s:q s:p s:i s:b i: s:b' 69 y 13 19=
+R5a	{c'est sans doute pour porter la Voy a de plus} 7' 90 70' 6
+R5b	4 s:b' 5 87= 96= {Libs offres} 9

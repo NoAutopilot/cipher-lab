@@ -1,0 +1,21 @@
+seed 0: T 0.250 at r4 null1 p99 0.333 null2 p99 0.292 -> FAIL
+seed 1: T 0.250 at c510 null1 p99 0.271 null2 p99 0.312 -> FAIL
+seed 2: T 0.208 at r1 null1 p99 0.292 null2 p99 0.292 -> FAIL
+seed 3: T 0.250 at c510 null1 p99 0.292 null2 p99 0.312 -> FAIL
+seed 4: T 0.188 at r1 null1 p99 0.250 null2 p99 0.250 -> FAIL
+seed 5: T 0.188 at r3 null1 p99 0.250 null2 p99 0.250 -> FAIL
+seed 6: T 0.188 at r1 null1 p99 0.312 null2 p99 0.292 -> FAIL
+seed 7: T 0.229 at r4 null1 p99 0.312 null2 p99 0.292 -> FAIL
+seed 8: T 0.188 at r3 null1 p99 0.250 null2 p99 0.250 -> FAIL
+seed 9: T 0.208 at r1 null1 p99 0.271 null2 p99 0.271 -> FAIL
+seed 10: T 0.208 at r1 null1 p99 0.271 null2 p99 0.271 -> FAIL
+seed 11: T 0.188 at c510 null1 p99 0.292 null2 p99 0.250 -> FAIL
+seed 12: T 0.208 at r4 null1 p99 0.312 null2 p99 0.250 -> FAIL
+seed 13: T 0.208 at r4 null1 p99 0.292 null2 p99 0.292 -> FAIL
+seed 14: T 0.208 at r4 null1 p99 0.271 null2 p99 0.250 -> FAIL
+seed 15: T 0.208 at r4 null1 p99 0.250 null2 p99 0.271 -> FAIL
+seed 16: T 0.229 at r4 null1 p99 0.271 null2 p99 0.271 -> FAIL
+seed 17: T 0.208 at r3 null1 p99 0.250 null2 p99 0.250 -> FAIL
+seed 18: T 0.229 at r1 null1 p99 0.292 null2 p99 0.271 -> FAIL
+seed 19: T 0.188 at r3 null1 p99 0.229 null2 p99 0.250 -> FAIL
+control at err 0.28: T mean 0.211 min 0.188; PASS 0/20; F1 found at c510 in 3/20
