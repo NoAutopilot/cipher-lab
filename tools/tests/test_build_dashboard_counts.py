@@ -28,15 +28,15 @@ def row(title, kind, grade, **f):
 
 RESULTS = [
     row("A", "recovery", "N4", document_id="doc A1", documents=["doc A1", "doc A2"], claim_scope="recovered-passages",
-        plaintext_novelty="N4", mapping_novelty="N4", audit_status="two audits", key="ours"),
+        plaintext_novelty="N4", mapping_novelty="N4", audit_status="two audits", key="ours", depth="D3"),
     row("B", "solve", "N4 (no prior decipherment located)", document_id="doc B", claim_scope="recovered-passages",
         plaintext_novelty="N4", mapping_novelty="N4", audit_status="one audit"),
     row("C", "contribution", "key N3; text N1", document_id="doc C", claim_scope="key-to-known-text",
         plaintext_novelty="N1", mapping_novelty="N3", audit_status="two audits", key="ours"),
     row("D", "recovery", "N3", document_id="doc A2", claim_scope="recovered-passages",
-        plaintext_novelty="N3", mapping_novelty="N3", audit_status="two audits"),
+        plaintext_novelty="N3", mapping_novelty="N3", audit_status="two audits", depth="D2"),
     row("E", "solve", "N3", document_id="doc E", claim_scope="completed-reading",
-        plaintext_novelty="N3", mapping_novelty="N3", audit_status="two audits"),
+        plaintext_novelty="N3", mapping_novelty="N3", audit_status="two audits", depth="D2"),
     row("F", "contribution", "N0", document_id="doc F", claim_scope="catalogue-contribution",
         plaintext_novelty="N0", mapping_novelty="N0", audit_status="one audit"),
 ]

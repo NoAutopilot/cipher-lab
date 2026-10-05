@@ -435,7 +435,30 @@ counts = Counter(nclass(r) for r in classed)
 READING_SCOPES = ("recovered-passages", "completed-reading")
 
 
+def depth(r):
+    """Rule 4a depth as an int (status.json `depth`, "D0".."D4"), or None when no verifier has set it."""
+    m = re.match(r"\s*D([0-4])", str(r.get("depth") or ""))
+    return int(m.group(1)) if m else None
+
+
 def counted(r):
+    """Headline count (rule 4a, 4 Oct 2026; BOARD-DEPTH, 5 Oct 2026): a unique solve is N3+ AND depth D2+.
+    D1 rows are "fragments read" (counted_fragments, shown beside, never summed); rows with no depth are held out
+    (held_depth) until a verifier sets it."""
+    return counted_novelty(r) and (depth(r) or 0) >= 2
+
+
+def counted_fragments(r):
+    """Fifth figure: the same novelty/audit rule at depth D1 ("fragments read"); never added to the headline."""
+    return counted_novelty(r) and depth(r) == 1
+
+
+def held_depth(r):
+    """Passes the novelty/audit rule but carries no depth field: held out of both counts and listed."""
+    return counted_novelty(r) and depth(r) is None
+
+
+def counted_novelty(r):
     """A reading counts only with plaintext_novelty >= N3, two audits and a reading scope (recovered passages or a
     completed reading); a key to a text already in print is not a reading. A QA flag holds a result out until its
     lane clears it. Rows without the new fields keep the old rule (N3+ and the audit heuristic)."""
@@ -465,6 +488,12 @@ def n_docs(pred, rows):
 
 n_passages = n_docs(lambda r: counted(r) and r.get("claim_scope", "recovered-passages") == "recovered-passages", results)
 n_complete = n_docs(lambda r: counted(r) and r.get("claim_scope") == "completed-reading", results)
+n_fragments = n_docs(counted_fragments, results)
+held_rows = [r for r in results if held_depth(r)]
+if held_rows:
+    print("held out of the headline (no depth set): " + "; ".join(r["title"] for r in held_rows), file=sys.stderr)
+held_span = (f'<span title="{html.escape("; ".join(r["title"] for r in held_rows))}"><b>{len(held_rows)}</b> held out until a verifier sets depth</span>'
+             if held_rows else "")
 n_keys = n_docs(counted_key, results)
 n_contrib = n_docs(counted_contrib, results)
 n_unique = n_passages + n_complete
@@ -945,7 +974,7 @@ page = f'''<title>Cipher Lab Board</title>
   <h1>Cipher Lab Board</h1>
   <p class="small"><a href="https://github.com/NoAutopilot/cipher-lab/blob/main/SYSTEM.md">System</a>: how the work is done, roles, gates and levers</p>
   <p class="headline">{E(headline)}</p>
-  <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_passages}</b> documents with recovered passages, no prior decipherment located (N3+, two audits)</span><span><b>{n_complete}</b> completed readings (N3+, two audits)</span><span><b>{n_keys}</b> keys or mappings to text already in print (N3+, two audits)</span><span><b>{n_contrib}</b> catalogue contributions and corrections (with a verifier class)</span><span><b>{n_first}</b> with our own key and no earlier decipherment found</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
+  <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_passages}</b> documents with recovered passages, partially deciphered or better, no prior decipherment located (N3+, D2+, two audits)</span><span><b>{n_complete}</b> completed readings (N3+, D2+, two audits)</span><span><b>{n_fragments}</b> fragments read (N3+, D1, two audits; not in the counts above)</span>{held_span}<span><b>{n_keys}</b> keys or mappings to text already in print (N3+, two audits)</span><span><b>{n_contrib}</b> catalogue contributions and corrections (with a verifier class)</span><span><b>{n_first}</b> with our own key and no earlier decipherment found</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
 </header>
 
 <section class="near" id="near-solves">
@@ -1029,4 +1058,4 @@ page = f'''<title>Cipher Lab Board</title>
 open("dashboard.html", "w", encoding="utf-8").write(page)
 os.makedirs("docs", exist_ok=True)
 open("docs/index.html", "w", encoding="utf-8").write(page)
-print(f"dashboard.html and docs/index.html written: {len(page)} bytes, {len(targets_all)} targets, {len(workers_all)} workers, {len(results)} results; documents: {n_passages} recovered-passage / {n_complete} completed / {n_keys} keys-to-known-text / {n_contrib} contributions")
+print(f"dashboard.html and docs/index.html written: {len(page)} bytes, {len(targets_all)} targets, {len(workers_all)} workers, {len(results)} results; documents: {n_passages} recovered-passage / {n_complete} completed / {n_fragments} fragments-read (D1) / {len(held_rows)} held (no depth) / {n_keys} keys-to-known-text / {n_contrib} contributions")
