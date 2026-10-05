@@ -1294,6 +1294,44 @@ Requests this pass: gallica.bnf.fr 9 (3 x 1000 px canvas thumbnails, 1 info.json
 api.digitale-sammlungen.de 3 (OCR scans 461-463, all 200); >= 1.5 s apart, no challenge. Subagent calls: 4 (Sonnet blind passes);
 reconciliation and eye checks by this worker. Novelty not classified (rule 10).
 
+## z on fr.3040 no.6 vs f.30: two shapes, A stays (N9-GRAZ, account 2, 5 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-05-ytbiz-near9-wave1.md`, job N9-GRAZ. PREREG-N9-GRAZ.md pushed (0b93dcbc) before any strip was cut.
+Material: every token reconciled as `z` in n8gra2/recon.tsv (f.18r L01-L10) and n8gra3/recon.tsv (f.18v, f.19r): 31, aligned by N8-GRA2's
+registered aligner to the print letters R 22, A 7, T 1, gap 1 (recomputed; the "23 of 26" in the Verdict line came from the conflict lists).
+Also all 43 f.30 `z`, and four key-table cells (Tomokiyo a row 3, Tomokiyo r row 1, Lasry R row 5, Lasry Unknown 2nd). `n9graz/z_occ.py` and
+`table_cells.py` cut 78 unlabelled, shuffled strips (proportional position, the A2-GRA3 method) with the answer sheet in z_occ.tsv/table_cells.tsv.
+One Sonnet blind shape-sort call (sheets only, no values, no source; `n9graz/sort_sonnet.tsv`) returned two classes: **K1, a plain z with a long
+base or tail**, and **K2, a compact z with a bar across the diagonal (Ƶ)**. It also marked 21 strips OFF (tick missed the sign: 10 f.30, 11
+fr.3040, mostly f.18r, whose s1/s2 crops overlap). Key cells: Tomokiyo a row 3 -> K1; Tomokiyo r row 1 and Lasry R row 5 -> K2; Lasry Unknown -> none.
+
+| on-target strips | K1 (plain z) | K2 (barred z) |
+|---|---|---|
+| fr.3040 no.6, aligned R | 0 | 15 |
+| fr.3040 no.6, aligned not-R | 2 (both A) | 2 (A once, #45 f18vC_L03; gap once) |
+| f.30 | 33 | 0 |
+
+Fisher exact (two-sided) on the fr.3040 rows: **p = 0.035 < 0.05**. By this worker's eye on 12 strips (n9graz/strips 2, 9, 33, 41, 45, 68, 30,
+21, 17, 62, 57, 36), the stated feature is real: K2 has a short crossing bar and no tail, and K1 has no bar and a long sweeping base. The
+registered split criterion is met (outcome 1). **So the conflict is a reader label: the passes on fr.3040 wrote `z` for the barred z.** That is
+the shape both key tables put under R and the atlas files as `zb` (atlas_f29.png row zb). The plain z on f.30 is the Tomokiyo a-row-3 sign.
+- **z (plain) = A stays at H.** f.30 rank test (`n9graz/f30_test.py`, fr16 4-gram, z set to each of 23 letters): A ranks **1** (-1.3485),
+  R ranks 9 (-1.4392). Control signs of the nearest frequency at H: fh (n 44), z3 (46) and nr (49) each rank their own value 1st, so the
+  test has power at this N. The plain-z words are e.g. commAnde, eclArAtion, pArolles, AmbAssAde, repvtAtion.
+- **Effect on f.30.** Under the split: 0 words change, because every on-target f.30 z is K1. Under "one sign, key error" (z = R everywhere):
+  all 43 positions change, listed by f30_test.py (eclarAtion -> eclarRtion, parolles -> prrolles, commande -> commRnde, ...). That
+  hypothesis is rejected by the rank test.
+- **The barred class (K2) reads R on fr.3040 in 15 of 17 on-target strips.** The prereg grants C only with no other-letter alignment.
+  #45 aligns A, so the C grade is not met, and **key.tsv is unchanged**. key.tsv's `zb` (NULL M) is not changed either. A post-hoc
+  check outside the prereg (`n9graz/zb_test.py`) gave f.30's 39 `zb` tokens each of the 23 letters. R ranks 10 (-1.3789), below
+  dropping them as nulls (-1.3485); the best letter, I, scores -1.3458, about level with null. So f.30's zb behaves as a null (its
+  closing-run reading stands), while the same-looking barred z reads R in fr.3040 no.6 (28 March 1530). Either the barred z is R in
+  one letter and a null in another, or the f.30 zb is a different barred shape. This is not decided here.
+- Follow-ups (one line each, not run): relabel the 15 K2 `z` tokens in n8gra2/n8gra3 recon.tsv as the barred shape and re-score.
+  Put f.30 zb strips beside fr.3040 K2 strips in one blind sort to test whether they are the same shape (~$1).
+
+Requests this pass: none (disk only). Subagent calls: 1 (Sonnet blind shape-sort). Eye checks and scoring by this worker. Novelty not classified (rule 10).
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA and N8-GRA3, 4 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18, S 181, M 239; U 63 -- ST moved S -> C by N8-GRA3, 4 Oct 2026; after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
@@ -1308,7 +1346,7 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; cheapest next: image-check, the z sign against the Tomokiyo and Lasry key images and f.30's z occurrences, since fr.3040 no.6 aligns z to R in 23 of 26 occurrences against the key's A (N8-GRA2/N8-GRA3, 4 Oct 2026), ~$1; then siblings, fr.3040 f.18r L11-L26 (16 lines, unread) against Le Grand III pp.454-455 for more HASH/A2/Mx occurrences under PREREG-N8-GRA3, ~$3
+Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); cheapest next: siblings, fr.3040 f.18r L11-L26 (16 lines, unread) against Le Grand III pp.454-455 for more HASH/A2/Mx occurrences under PREREG-N8-GRA3, ~$3; then a blind sort of f.30 zb beside fr.3040 barred z (is zb R in some letters?), ~$1
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 

@@ -1,0 +1,75 @@
+id	src	line_pos	image	x_frac	aligned
+30	fr3040	f18r_L01 21	images/fr3040_f18/f18r_L01_s1.jpg	0.827	A
+58	fr3040	f18r_L03 1	images/fr3040_f18/f18r_L03_s1.jpg	0.056	R
+69	fr3040	f18r_L04 9	images/fr3040_f18/f18r_L04_s1.jpg	0.365	A
+43	fr3040	f18r_L04 20	images/fr3040_f18/f18r_L04_s1.jpg	0.788	A
+21	fr3040	f18r_L06 37	images/fr3040_f18/f18r_L06_s2.jpg	0.958	A
+6	fr3040	f18r_L09 19	images/fr3040_f18/f18r_L09_s1.jpg	0.780	R
+23	fr3040	f18r_L09 25	images/fr3040_f18/f18r_L09_s2.jpg	0.033	A
+55	fr3040	f18r_L10 2	images/fr3040_f18/f18r_L10_s1.jpg	0.100	R
+61	fr3040	f18vA_L01 12	images/fr3040_f18/f18vA_L01_a.jpg	0.833	R
+39	fr3040	f18vB_L01 2	images/fr3040_f18/f18vB_L01_a.jpg	0.167	R
+63	fr3040	f18vB_L02 33	images/fr3040_f18/f18vB_L02_b.jpg	0.974	A
+16	fr3040	f18vC_L02 9	images/fr3040_f18/f18vC_L02_a.jpg	0.594	R
+7	fr3040	f18vC_L02 19	images/fr3040_f18/f18vC_L02_b.jpg	0.194	R
+28	fr3040	f18vC_L02 29	images/fr3040_f18/f18vC_L02_b.jpg	0.750	R
+45	fr3040	f18vC_L03 13	images/fr3040_f18/f18vC_L03_a.jpg	0.900	A
+60	fr3040	f18vC_L03 25	images/fr3040_f18/f18vC_L03_b.jpg	0.583	R
+22	fr3040	f18vC_L04 2	images/fr3040_f18/f18vC_L04_a.jpg	0.147	R
+59	fr3040	f18vC_L04 36	images/fr3040_f18/f18vC_L04_b.jpg	0.812	R
+2	fr3040	f18vC_L06 4	images/fr3040_f18/f18vC_L06_a.jpg	0.300	R
+64	fr3040	f18vC_L06 24	images/fr3040_f18/f18vC_L06_b.jpg	0.475	R
+74	fr3040	f18vC_L07 8	images/fr3040_f18/f18vC_L07_a.jpg	0.531	R
+68	fr3040	f18vC_L08 5	images/fr3040_f18/f18vC_L08_a.jpg	0.393	-
+9	fr3040	f18vC_L09 0	images/fr3040_f18/f18vC_L09_a.jpg	0.033	R
+8	fr3040	f18vC_L10 30	images/fr3040_f18/f18vC_L10_b.jpg	0.833	R
+33	fr3040	f18vC_L13 26	images/fr3040_f18/f18vC_L13_b.jpg	0.500	R
+40	fr3040	f18vC_L13 36	images/fr3040_f18/f18vC_L13_b.jpg	0.976	T
+44	fr3040	f18vC_L14 8	images/fr3040_f18/f18vC_L14_a.jpg	0.531	R
+49	fr3040	f18vC_L14 18	images/fr3040_f18/f18vC_L14_b.jpg	0.114	R
+41	fr3040	f18vC_L15 1	images/fr3040_f18/f18vC_L15_a.jpg	0.083	R
+5	fr3040	f18vC_L15 34	images/fr3040_f18/f18vC_L15_b.jpg	0.688	R
+56	fr3040	f19r_L02 24	images/fr3040_f18/f19r_L02_b.jpg	0.679	R
+31	f30	f30r_L03 16	images/crops_f30/f30r_L03b.jpg	0.024	
+66	f30	f30r_L04 21	images/crops_f30/f30r_L04b.jpg	0.196	
+71	f30	f30r_L04 34	images/crops_f30/f30r_L04b.jpg	0.761	
+53	f30	f30r_L05 18	images/crops_f30/f30r_L05b.jpg	0.026	
+32	f30	f30r_L05 35	images/crops_f30/f30r_L05b.jpg	0.921	
+34	f30	f30r_L06 23	images/crops_f30/f30r_L06b.jpg	0.341	
+73	f30	f30r_L07 33	images/crops_f30/f30r_L07b.jpg	0.795	
+17	f30	f30r_L08 27	images/crops_f30/f30r_L08b.jpg	0.425	
+11	f30	f30r_L08 37	images/crops_f30/f30r_L08b.jpg	0.925	
+14	f30	f30r_L09 16	images/crops_f30/f30r_L09a.jpg	0.917	
+4	f30	f30r_L09 27	images/crops_f30/f30r_L09b.jpg	0.452	
+51	f30	f30r_L10 0	images/crops_f30/f30r_L10a.jpg	0.033	
+47	f30	f30r_L10 23	images/crops_f30/f30r_L10b.jpg	0.370	
+18	f30	f30r_L10 31	images/crops_f30/f30r_L10b.jpg	0.717	
+54	f30	f30r_L11 20	images/crops_f30/f30r_L11b.jpg	0.289	
+62	f30	f30r_L12 20	images/crops_f30/f30r_L12b.jpg	0.289	
+50	f30	f30r_L13 1	images/crops_f30/f30r_L13a.jpg	0.088	
+26	f30	f30r_L13 10	images/crops_f30/f30r_L13a.jpg	0.618	
+24	f30	f30r_L13 22	images/crops_f30/f30r_L13b.jpg	0.239	
+10	f30	f30r_L14 8	images/crops_f30/f30r_L14a.jpg	0.500	
+1	f30	f30r_L14 24	images/crops_f30/f30r_L14b.jpg	0.357	
+65	f30	f30r_L15 26	images/crops_f30/f30r_L15b.jpg	0.568	
+25	f30	f30r_L16 6	images/crops_f30/f30r_L16a.jpg	0.406	
+46	f30	f30r_L16 18	images/crops_f30/f30r_L16b.jpg	0.114	
+72	f30	f30r_L16 28	images/crops_f30/f30r_L16b.jpg	0.568	
+27	f30	f30r_L32 13	images/crops_f30/f30r_L32a.jpg	0.844	
+42	f30	f30r_L35 25	images/crops_f30/f30r_L35b.jpg	0.525	
+29	f30	f30v_L01 2	images/crops_f30/f30v_L01a.jpg	0.179	
+57	f30	f30v_L01 19	images/crops_f30/f30v_L01b.jpg	0.239	
+48	f30	f30v_L02 20	images/crops_f30/f30v_L02b.jpg	0.262	
+19	f30	f30v_L02 27	images/crops_f30/f30v_L02b.jpg	0.595	
+35	f30	f30v_L06 21	images/crops_f30/f30v_L06b.jpg	0.275	
+37	f30	f30v_L09 6	images/crops_f30/f30v_L09a.jpg	0.433	
+15	f30	f30v_L10 0	images/crops_f30/f30v_L10a.jpg	0.033	
+12	f30	f30v_L10 14	images/crops_f30/f30v_L10a.jpg	0.967	
+3	f30	f30v_L11 26	images/crops_f30/f30v_L11b.jpg	0.658	
+67	f30	f30v_L12 1	images/crops_f30/f30v_L12a.jpg	0.115	
+13	f30	f30v_L16 4	images/crops_f30/f30v_L16a.jpg	0.375	
+20	f30	f30v_L16 26	images/crops_f30/f30v_L16b.jpg	0.806	
+52	f30	f30v_L17 9	images/crops_f30/f30v_L17a.jpg	0.633	
+38	f30	f30v_L17 28	images/crops_f30/f30v_L17b.jpg	0.675	
+70	f30	f30v_L19 1	images/crops_f30/f30v_L19a.jpg	0.125	
+36	f30	f30v_L20 11	images/crops_f30/f30v_L20a.jpg	0.885	
