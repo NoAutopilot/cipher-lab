@@ -864,7 +864,7 @@ qu'il i a a perdre ... l'honneur". L01, L06 and parts of L04/L09/L10 remain unre
 Rule 7: `divide_f130.py --check` prints "check: committed outputs match"; `tools/decode_key.py ... --check` "reading up to
 date". Requests: none (disk only). Vision calls: none. Not touched: AUDIT.md, key files. Rule 10: no novelty claim.
 
-## Remaining gaps (DIN-WORDS, 3 Oct 2026; supersedes DIN-23P's list; f.23r row updated by DIN-SORTER)
+### Remaining gaps, superseded by D2-DIN0 below (DIN-WORDS, 3 Oct 2026; f.23r row updated by DIN-SORTER)
 Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4); word division drafted on top (f130/reading_f130_words.txt, C 177 / M 158 / I 192, D 0.687 vs shuffled-key max 0.636, pre-registered margin missed by 0.007, judge FAIL -1.181 vs real_p05 -0.880); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358; date line read, 4 July 1592
 - f.130 word-level reading - blocker: not-attempted; division drafted, gate FAIL by margin (DIN-WORDS, f130/words/result.json); the 39 U tokens enter as wildcards and help the shuffled control more than the real decode (sensitivity, not pre-registered); next: re-run f130/words/divide_f130.py with v'/0' keyed once f.23r settles them (the third gap), no new instrument, ~$2
 - `0` on f.128: one sign or two merged - blocker: not-attempted; DIN-3623's look was undecided (3 of 7 conflicting zeros have f.130's stemmed 0' shape, 4 look plain at line-crop resolution; look/PREREG.md); next: native-resolution sub-crops of the 7 positions (tools/iiif_lines.py --ark btv1b52524472n --canvas 265), one look, same rule, ~$5
@@ -872,7 +872,7 @@ Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; 
 - fr.4718 fols. 17, 21, 40 (three Dinteville cipher letters with decipherment, Jul-Aug 1592; catalogue ark:/12148/cc577680, no Gallica copy found) - blocker: waiting-on ASKS row 78 (BnF reproduction batch; fr.4718 to be added by the parent); not on Gallica
 - "fr.4075 f.37" (Drouot, 1589 deciphered letter, writer unnamed; Gallica fr.4075 is a 1613-41 Coeuvres volume) - blocker: needs-physical-access; Drouot's printed page is in an IA lending book, a person's read (ASKS row to be filed by the parent if wanted)
 
-## Escalation (DIN-WORDS, 3 Oct 2026; supersedes DIN-23P's list)
+### Escalation, superseded by D2-DIN0 below (DIN-WORDS, 3 Oct 2026)
 - [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2); fr.4718 catalogue read, three more Dinteville cipher-with-decipherment items found at fols. 17, 21, 40 (DIN-LEFT)
 - [ ] clear-pages: fr.3623 f.23r is a cipher slip with an interlinear Italian decipherment, same sign family (DIN-3623). The one-line pilot was a non-test: pass agreement 63%, G1 0.762 vs null max 0.818 (DIN-23P). Sign-sorter inputs built (DIN-SORTER, sorter/, 303 tiles, seven cipher rows); waiting on the owner's sort before the 7-row alignment (~$30-48). fr.4718 fols. 17/21/40 are not online (reproduction order)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
@@ -903,3 +903,68 @@ One look at TWO-LOOKS' crop images/f130_dateline2_L01_s1.jpg (Gallica f269, y ~4
   account-3 DIN-PRINT job (09d32335e) re-aligned the f.128 key to the 1882 print and marked the repair job superseded,
   so read the sections above before reviving this step.
 - May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.
+
+## f.128 `0` native re-look (D2-DIN0, account 1, 5 Oct 2026, 18:48-19:00 UTC)
+
+Brief `.claude/briefs/runs/2026-10-05-acct1-d2-din0.md`. Intake gate, run before work:
+```
+$ python3 tools/intake_gate_check.py ciphers/fr3621-dinteville-1592
+ciphers/fr3621-dinteville-1592: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+(exit 0)
+```
+Rule: `look/PREREG.md` unit 1, **unchanged**; the addendum naming the new crops and a mechanical tie-break was pushed
+(277c6a49e) before any crop was viewed. Crops, no network (the native f265 region already on disk):
+`python3 tools/iiif_lines.py --image ciphers/fr3621-dinteville-1592/images/src_ark_12148_btv1b52524472n_f265_200_1800_3700_560.jpg
+--out ciphers/fr3621-dinteville-1592/look/din0 --prefix f128n --centres 263,367,471 --lines-per-crop 1 --max-width 700
+--overlap 120 --mask-neighbours --debug` -> 21 segments of 700 px, laid two to a row with ImageMagick at native scale
+(`look/din0/sheet_f128L03.jpg`, `_L04`, `_L05`, 1416 x 792 each, so the viewer does not downscale; DIN-3623's sheet was
+2400 px wide). Vision: one look by this worker over the three sheets. Requests: none.
+
+**Result: merged, under the pre-registered rule; row `0` still not promoted.**
+
+| f.128 position | print letter | neighbours | shape at native scale |
+|---|---|---|---|
+| L03.1:13 | c (descendre) | `# 1. sq 0 0 f` | plain round zero |
+| L03.1:45 | p (despaigne) | `# 0 sq 0 v` | stemmed zero (0') |
+| L04.1:2 | s (besancon) | `div 0 0 D` | plain round zero |
+| L05.1:4 | s (iours) | `1 y m w 0 0 v` | stemmed, the smallest hook of the five (weakest call) |
+| L05.1:7 | p (prendre) | `0 v 0 w 1.` | stemmed zero (0') |
+| L05.1:28 | s (uesoul) | `m o 0 y a` | stemmed zero (0') |
+| L05.1:55 | s (descorte) | `3 1. 0 # y c` | stemmed zero (0') |
+
+Conflicting: 7 of 7 located, **5 marked**, 2 plain. Control on the same sheets (the e-reading `0`s, which the rule requires
+to stay unmarked): 11 located (L03.1:14, 26, 28, 43, 50; L04.1:1, 15, 23; L05.1:5, 14, 42), **1 marked** (L03.1:26, "gene",
+the zero before `# 0 m sq`; A2-DIN's passA had already written a `0'` here), 10 plain. Rule: >= 5 located, >= 4 marked,
+<= 1 e-reading marked -> **merged**. The call does not hang on the weak L05.1:4 (without it, 4 marked still meets the rule).
+The control could have failed: the statistic is the mark rate per occurrence, and the e-reading zeros sit in the same lines
+and hand (5/7 vs 1/11).
+
+Consequences as pre-registered: the five marked conflicts are re-classed `transcription` in `firm/conflicts.tsv` (the sign
+is 0', which the f.128 reconciliation folded into `0`), and `firm/firm_grades.py` accepts that class. The two plain ones
+(L03.1:13 c, L04.1:2 s) stay `unexplained`, so **row `0` is not promoted** under DIN-FIRM's rule (every conflict must be
+explained). **Strict grades unchanged: C 177, M 311, U 39; strict-C tokens moved: 0.** The orchestrator's "up to +68" is
+not reached: had row `0` been promoted it would have moved its 38 H-read f.130 tokens (sq 31 H and m 37 H are untouched,
+since this look changes no input of their checks, so step (b) was not re-run for them). Step (c) not run (C did not move).
+Rule 7: `firm/firm_grades.py --check` "committed outputs match"; `tools/decode_key.py ... --check` "reading up to date".
+
+Graded I, not used: on f.128 the stemmed zero (0') falls on s three times and p twice, and once on e (L03.1:26). That
+supports DIN-3623's guess that 0' is a sign mostly for s/p, but with three letters it stays M on f.130 (14 tokens). The
+two plain zeros reading c and s are still a polyphone or a scribal slip. Rule 10: no novelty claim; depth not touched.
+
+## Remaining gaps (D2-DIN0, 5 Oct 2026; supersedes DIN-WORDS's list)
+Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4, unchanged by D2-DIN0); word division drafted (D 0.687 vs shuffled-key max 0.636, margin missed by 0.007; judge FAIL -1.181 vs real_p05 -0.880); f.128 aligned to its 1882 print, 0.831 vs shuffle max 0.358; f.128's 7 conflicting zeros read at native scale: 5 are 0', 2 plain (D2-DIN0); date line read, 4 July 1592
+- f.130 word-level reading - blocker: not-attempted; division drafted, gate FAIL by margin (DIN-WORDS, f130/words/result.json); next: re-run f130/words/divide_f130.py with v'/0' keyed once f.23r settles them, no new instrument, ~$2
+- row `0` strict promotion (38 H tokens on f.130) - blocker: open-codes; two plain-zero conflicts (L03.1:13 c, L04.1:2 s) unexplained after DIN-LEFT's per-occurrence check and D2-DIN0's native look; only new material (fr.4718 or f.23r occurrences of plain 0) can separate polyphone from slip
+- v', 0' and the NEW signs (39 tokens, absent from f.128 except 0', now seen 6 times there) - blocker: waiting-on ASKS row 112 (the owner's sort in the f.23r sign sorter, sorter/README.md); after the sort, 2 passes against the settled labels + the 7-row alignment, ~$30-48
+- fr.4718 fols. 17, 21, 40 (three Dinteville cipher letters with decipherment, Jul-Aug 1592; ark:/12148/cc577680, no Gallica copy found) - blocker: waiting-on ASKS row 78 (BnF reproduction batch); not on Gallica
+- "fr.4075 f.37" (Drouot, 1589 deciphered letter, writer unnamed) - blocker: needs-physical-access; Drouot's printed page is in an IA lending book, a person's read
+
+## Escalation (D2-DIN0, 5 Oct 2026; supersedes DIN-WORDS's list)
+- [x] siblings: f.128r transcribed with its gloss and aligned (A2-DIN), re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT); fr.4718 catalogue read, three Dinteville cipher-with-decipherment items at fols. 17, 21, 40 (DIN-LEFT)
+- [ ] clear-pages: fr.3623 f.23r cipher slip with interlinear Italian decipherment, same sign family (DIN-3623); one-line pilot a non-test at 63% pass agreement (DIN-23P); sign-sorter inputs built (DIN-SORTER), waiting on the owner's sort (ASKS 112), then the 7-row alignment (~$30-48); fr.4718 fols. 17/21/40 on reproduction order (ASKS 78)
+- [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
+- [x] print: Gomberville seconde partie searched, letter absent; Revue de Champagne XII (1882) p.340 prints f.128 (VERIFY-DIN, DIN-PRINT); 1899 reprint, BnF catalogue 1868, Drouot 1937, ARCSI PDFs searched (VERIFY-DIN2)
+- [x] key-rebuild: key aligned to the 1882 print of f.128 (DIN-PRINT); conflict rows sq, m (DIN-FIRM), 0 and a (DIN-LEFT) checked per occurrence; 5 of row 0's 7 conflicts re-classed transcription (0') by D2-DIN0, 2 remain, none promoted; polyphones read in context by a word-division pass (DIN-WORDS)
+- [x] image-check: f.130 from Gallica f269 (2 blind passes + reconciliation, A2-DIN2); date line read 4 July; f.128's 7 conflicting zeros looked at at line-crop scale (DIN-3623, undecided 3/4) and at native scale (D2-DIN0, merged 5/7 vs e-reading control 1/11)
+- [n/a] retry: no failed instrument on this target; DIN-WORDS's re-run waits on v'/0' keys
+Verdict: keep going: 2 internal gaps; cheapest next: once the owner's f.23r sort lands (ASKS 112), two passes against the settled labels + the 7-row alignment (~$30-48), which would also test 0' = s/p and give plain-0 occurrences to settle row 0; then re-run divide_f130.py with v'/0' keyed (~$2). fr.4718 fols. 17/21/40 go to the BnF reproduction batch (ASKS 78)

@@ -2,7 +2,8 @@
 """DIN-FIRM step 2 (3 Oct 2026): strict-rule regrade of f.130r after the per-occurrence conflict check.
 
 Rule (firm/PREREG.md): VERIFY-DIN2's strict_no_conflict (agree >= 2, no conflicting print alignment, token read H),
-except that a row whose every conflict in firm/conflicts.tsv is 'spelling' or 'slip' counts as conflict-free.
+except that a row whose every conflict in firm/conflicts.tsv is 'spelling', 'slip' or (look/PREREG.md unit 1, D2-DIN0 5 Oct 2026)
+'transcription' (the sign is 0', merged under 0 by the f.128 transcription) counts as conflict-free.
 Writes f130/print/key_dk_strict.tsv (key_dk.tsv with the strict grade per row) and firm/result.json.
   python3 ciphers/fr3621-dinteville-1592/firm/firm_grades.py [--check]   (--check: exit 1 if outputs are stale)
 """
@@ -18,7 +19,7 @@ kp = {r["sign"]: r for r in csv.DictReader(open(TGT / "f128/print_align/key_prin
 conf = defaultdict(list)
 for r in csv.DictReader(open(HERE / "conflicts.tsv", encoding="utf-8"), delimiter="\t"):
     conf[r["row"]].append(r["class"])
-promoted = sorted(s for s, cl in conf.items() if cl and all(c in ("spelling", "slip") for c in cl))
+promoted = sorted(s for s, cl in conf.items() if cl and all(c in ("spelling", "slip", "transcription") for c in cl))
 
 
 def strict_ok(sign):
