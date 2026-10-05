@@ -404,3 +404,9 @@ Every row queued to account 3 (tagged third) names Fable, with Opus 5.5 as the o
 
 ## Restricted material guard (28 Sept 2026, owner-requested)
 Material a holder shares on a no-publication condition lives only in NoAutopilot/cipher-lab-private, which the owner fills by hand. This public repository has three layers against a mistake: tools/room.py refuses any push whose outgoing files match tools/restricted_fingerprints.txt (one-way fingerprints only, never the words); the restricted-guard GitHub Action scans every push and the whole tree daily; and every worker that pushes with plain git runs `python3 tools/restricted_guard.py --outgoing` first. New restricted sets are added by the orchestrator with `--fingerprint` from a private scratch file; the source words are never committed. A guard finding is a stop: remove the file from the commit, say so in ROOM without quoting it, and tell the owner.
+
+## Owner desk asks: one link, one action, one thing back (owner, 5 Oct 2026)
+When the owner must do something at his desk (a HathiTrust page, a catalogue record, a form), give him: (1) ONE link that opens the
+exact page or result -- never a volume home page or a search he has to refine; (2) ONE action, in a sentence ("screenshot the
+footnotes", "copy the number at the top"); (3) what to send back. Try every cloud route first (IA copy, Google Books API, other
+mirrors) and only then ask. Lesson: a HathiTrust volume link left him facing "a bunch of different options" and a Cloudflare page.
