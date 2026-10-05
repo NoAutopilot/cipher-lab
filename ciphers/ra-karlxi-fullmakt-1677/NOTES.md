@@ -343,3 +343,27 @@ Confirmed on the page (5 Oct 2026, owner's browser, HathiTrust nyp.3343309073841
 "Åttonde delen I, 1723-1739", ed. B. Boëthius (Stockholm, Norstedt); the first document is the Viborg border treaty of
 30 Mar 1723. So v.8 cannot hold a 1677 full power, matching the LIBRIS enumeration above (no part covers 1648-1723).
 Hathi desk read H4 closed.
+
+## RUN6-KARLXI (account-1 worker, 5 Oct 2026, 05:21-05:2x UTC by date -u): brief's step already done, no new requests
+The brief's named step (be-api retry on Actes de Nimègue 1680 + Dumont VII.1, "Next step" at the end of the Page-read section) was run on
+4 Oct 2026 by RUN1-KARL (18 requests, no failures; both volumes answered positive controls, Naes/Naas/Nesae/"6 May 1677" 0 hits) and widened by
+RUN3-KARL (13 scans, ~65 requests). Repeating the same terms on the same identifiers would add nothing; 0 requests made this session.
+Not searched, unchanged: other tomes of the 1680/1697 Actes (seven scans failed the Oxenstierna control, so their zeros are not a test), Dumont
+other volumes. Still pending, no network needed: Bakeš thesis grep ("1677"/"Nääs"/"fullmakt"), then the Riksarkivet owner/copy route (REQUEST.md).
+Requests 0, vision 0, subagents 0. Status stays `open`.
+
+## Remaining gaps (RUN6-KARLXI, 5 Oct 2026)
+Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not been located in any print or image (0 of 1 target document found)
+- Bakeš thesis full-text grep for "1677"/"Nääs"/"fullmakt" - blocker: not-attempted; no outside blocker; next: grep the theses.cz download, ~$0.3
+- Other tomes of Actes 1680/1697 and Dumont other volumes - blocker: not-attempted; seven scans failed the Oxenstierna control; next: be-api per scan with a passing control, ~$0.5
+- Riksarkivet owner/copy route - blocker: waiting-on the Riksarkivet reply to REQUEST.md; the owner-side copy request is unanswered
+
+## Escalation (RUN6-KARLXI, 5 Oct 2026)
+- [x] siblings: Emperor-Sweden sibling instruments checked (A2P4-KARL page read)
+- [x] clear-pages: n/a here, a single full power with no clear sibling page located
+- [n/a] known-keys: plain Latin instrument, no key
+- [x] print: CTS 15, Actes 1680/1697 scans, Dumont VII.1/VII.2, Sverges traktater v.8, all negative by snippet (RUN1/RUN3-KARL, IA-DESK-ALT)
+- [n/a] key-rebuild: no cipher key involved
+- [x] image-check: title page and page read via A2P4-KARL, Hathi H4
+- [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL), nothing to repeat
+Verdict: keep going: 2 internal gaps; cheapest next: Bakeš thesis grep, ~$0.3
