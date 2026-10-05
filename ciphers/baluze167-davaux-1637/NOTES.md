@@ -500,3 +500,45 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 - [ ] image-check: 170 c239-241 native crops still to do
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3)
 Verdict: keep going: 3 internal gaps; cheapest next: a Tomokiyo-table labelling pass on c510-511, ~$3, then 170 ff.228-230, ~$6
+
+## DEF1-DAV (account 1 worker, for LANE DEFAULT-account-1-20261005-2039), 5 Oct 2026, 21:05-21:1x UTC
+
+Brief: `.claude/briefs/runs/2026-10-05-account1-default-2039-jobs.md` job DEF1-DAV. No novelty class. PREREG `def1dav/PREREG-DEF1DAV.md`
+pushed (a7e12bdf3, 21:07 UTC by date -u; its header says "21:1x", an estimate written before reading the clock) before any pass was run.
+Scorer `def1dav/score.py`, prompt `def1dav/prompt.txt`, control pass `def1dav/passC_b167f157.tsv`, output `def1dav/score.txt`.
+
+**Result: control below gate; the target was not labelled (brief: target only if the control meets the gate).** One blind Sonnet call,
+forced-choice labelling of every letter sign on the 167 f.157 crops (b167f157_run1_L03/L04, run2_L02, already on disk) against
+images/louisxiii_davaux.png's letter row. Gate 1 (known-answer letter accuracy on the 15 letter-sign positions fixed by the period gloss):
+| pass | letter accuracy | shuffle floor mean / p99 | gate 0.80 |
+|---|---|---|---|
+| control 167 f.157 (blind Sonnet, Tomokiyo table) | **0/15 = 0.000** | 0.039 / 0.133 | CONTROL BELOW GATE |
+Numerals were read well (93' 26 65 73' 41' 42' 43 29: 40 55 3: all match ciphertext.txt bar a missing or dropped mark), so the failure is the
+letter-sign mapping, not the reading of the line. Per position (expected:label): e:m u:d o:h u:z n:h i:d x:e n:h s:n i:d n:h n:g a:t b:y s:n.
+The errors are partly consistent (n read as h 3 of 4 times, i as d 2 of 2): the reader sees stable shapes but the table's drawn forms do not
+match this hand's. This repeats A3V3-BALB's pass A on the same leaf, which also could not match letter signs (`passes/passA_b167f157.tsv`).
+Grades (rule 4): no reading claimed; key.tsv, ciphertext.txt, reading.txt unchanged. `python3 tools/decode_key.py ciphers/baluze167-davaux-1637
+--check`: see the done line. Target passes T1 (c510) and T2 (c511) were not run (2 calls saved). Caveat from the prereg stands: the control
+hand is the Paris secretary's, not the f.246-248 hand, so even a pass would only have licensed the labeller.
+Requests: none (crops on disk). Subagents: 1 Sonnet call.
+Suggestion (not done): a labeller calibrated by exemplar, not by the printed table -- cut the 29 gloss-fixed sign positions of 167 f.157 (and
+f.110r's) as a per-letter exemplar sheet, then label held-out control positions against it (leave-one-out), gate 0.80; it can only transfer to
+f.247 if that hand's signs are the same family, which N9-BAL3 judged by eye only.
+
+## Remaining gaps (DEF1-DAV, 5 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: cipher located and transcribed by two blind passes on c510-511
+(err_2reader 0.280). Four known-answer instruments tried there: N8-BAL and N9-BAL2 non-tests, N9-BAL3 alignment retired, DEF1-DAV table labelling failed its own control 0/15.
+- 168 f.246-247v bare passage - blocker: not-attempted; Tomokiyo-table labelling by a blind reader fails its control (DEF1-DAV, 0/15 on 167 f.157); next: exemplar-sheet labeller (gloss-fixed sign crops from 167 f.157 + f.110r as references, leave-one-out control gate 0.80), then f.247 only if it passes, ~$3
+- 170 ff.228-230 bare passage - blocker: not-attempted; ~32 lines (~380 groups); next: tools/iiif_lines.py crops of c239-241, one Sonnet pass per canvas for numerals + worker letter-sign pass with the Tomokiyo block, reconcile, decode_key, ~$6
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (5 Oct 2026, DEF1-DAV)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); untried: exemplar-sheet labelling from gloss-fixed sign crops
+- [ ] image-check: 170 c239-241 native crops still to do
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3)
+Verdict: keep going: 3 internal gaps; cheapest next: 170 ff.228-230 crops and passes, ~$6, or the exemplar-sheet labeller for f.247, ~$3

@@ -1,0 +1,2 @@
+per position (expected:label): e:m u:d o:h u:z n:h i:d x:e n:h s:n i:d n:h n:g a:t b:y s:n
+control letter accuracy 0/15 = 0.000; shuffle floor mean 0.039, p99 0.133; gate 0.80 -> CONTROL BELOW GATE
