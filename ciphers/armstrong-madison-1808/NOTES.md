@@ -4125,3 +4125,9 @@ Owner observation on blind system E (= Macaulay 1747 p.3), same session: Armstro
 (Macaulay qu) -- direct evidence that single generic shapes do not discriminate between systems; only distributions (frequency x
 position, dot placement) can. Macaulay's chart also places small dots/hooks by position inside the cell (a ".", e "°").
 - 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L54 blocked -- the Monroe Catalogue Online needs its printed guest sign-in, which the runner does not do; answer not landed (lq_answer_check exit 1). Owner desk: ASKS 142.
+Owner on blind system A (= Weston 1727) and overall, same session: "His writing is just much more squiggly than these others, there
+are some small similarities." Overall human verdict: no system looks like the same family on sight; Armstrong's marks are joined,
+cursive runs (e.g. the circled page-1 line of linked waves and 3-loops), while all five charts show isolated printed signs. Two
+readings of that, both open: (a) a real system written fast and joined looks very different from its engraved chart -- compare
+against each system's engraved *specimen passages* (connected writing), not only the alphabet table; (b) a personal or invented
+cipher alphabet written cursively, not a published shorthand. SHORTHAND-PAGE should add one connected-writing specimen per system.
