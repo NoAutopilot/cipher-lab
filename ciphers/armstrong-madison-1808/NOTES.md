@@ -4057,3 +4057,6 @@ is a number 4200" (a numeral misboxed as a mark stretch). Box quality: in 5 of 2
 neighbouring line -- the boxes came from token positions on a slanted line. Agent readers get the same crops, so clipped and
 bleeding boxes are a likely share of the ~16% reader disagreement. Next: compare these counts with the two transcriptions per
 stretch (worker, ~$2), and fix the crop (slant-aware line bands; see the parent's note to the owner, 5 Oct).
+Owner's instruction (same session): "my work isn't gospel ... don't assume it's right." Treat these counts as a third, independent
+reader with its own error, not as ground truth: where they agree with one transcription, that is 2-of-3 support; where they differ
+from both, the stretch is flagged for a fresh look, never overwritten from the counts alone. No grade is raised on the counts alone.
