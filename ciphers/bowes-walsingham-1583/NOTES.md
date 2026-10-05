@@ -613,3 +613,15 @@ England. That is a print identification for 32 (was M on context, above); grade 
 changed in codes.tsv by this note. Other editorial brackets gloss pronouns only ("[Bowes and Davison]" on p.370, no. 387;
 "[Walsingham]" after "with him" on p.371, which glosses "him", not "91"). The entry closes: "the errors in the cipher left with
 him by Sir George Cary" -- no decipherment printed. Not yet read: pp.566-568 (31 Jul 1583, LOCAL-QUEUE L44 part 2).
+
+## CSP Scotland vi pp.566-568 page read (5 Oct 2026 03:54 UTC, owner's browser, seq 610-612; LOCAL-QUEUE L44 part 2 -- L44 now done)
+
+No. 584, Robert Bowes to [Walsingham], 31 Jul 1583, Cott. Calig. C. VII fol.200, St Johnstone, "3½ pp. No flyleaf or address".
+The calendar does **not** decipher the sign cipher: every enciphered name is printed as a blank dash with the footnote
+"* In cipher" ("This day ——* and \"223\" have given him understanding"; "all that has been done by ——* late submission at
+——* shall nothing avail him"; "50,000 ——* sent to \"000\""; postscript "Albeit that ——* at his departure"). The numeric codes
+stay as numbers: "223" (x3, with Ruthven and "the King's remission for his fault at Ruthven" nearby, consistent with 223 =
+Gowrie), "54" and "85" ("an especial favour and good liking of \"54,\" and chiefly of \"85,\""), "000". So Stevenson printed
+only what was in clear or numeric; the sign-cipher stretches are blanks. Result for this target: no printed decipherment of
+the Cotton cipher signs in either CSP entry (389, 584); the CSP gives the clear context around each blank (useful as cribs:
+the blanks' positions are now known in the calendar's paraphrase). 85 is still unread. Screenshots private (csp-vi/).
