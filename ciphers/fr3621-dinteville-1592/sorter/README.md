@@ -60,3 +60,5 @@ NEW:N-like 3 Z t -- and rewrites focus.tsv as focus_cards.tsv ("readers split 9 
 (34 piles, 323 tiles = 303 signs + 20 cards, 2.5 MB; headless Chromium: R4.2 moved into the 0' pile, no page errors.) Sids of the 303
 signs are unchanged. **A name card is not a sign: drop every `card_` sid from the applied output** (`sign_sorter_apply.py` writes it like
 any tile). The old page (RxURcDEas5VU11B95kVoJo) belongs to another account and could not be read from account 4, so it was not replaced.
+Access (5 Oct 2026): the rebuilt page is private to account 4, so the owner cannot open it until it is shared ("anyone with the link")
+from account 4, or until an owner-account session republishes it (ASKS.md, A4-SORTFIX row). HUMAN-TX-ASKS.tsv rank 1 is marked BLOCKED until then.
