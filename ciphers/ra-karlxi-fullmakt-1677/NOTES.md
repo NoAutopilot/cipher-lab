@@ -338,3 +338,8 @@ These are search results only (rule 10). *Sverges traktater med främmande magte
 - the full title as a phrase: 0 items.
 
 On Google Books (keyed, country=US, query "Sverges traktater främmande magter"), the full-view records are dated 1877-1896, i.e. the early volumes. The 1890, 1934 and "192?" records are NO_PAGES. A query for "Sverges traktater 1677 fullmakt" returned no treaty-volume hit. So v.8 pt 1-2 (contents and date range, and any 1677 full power) **still needs HathiTrust** (`nyp.33433090738414`, and the search-only v.6 `nyp.33433090738372`).
+
+Confirmed on the page (5 Oct 2026, owner's browser, HathiTrust nyp.33433090738414, title page + p.1): Sverges traktater
+"Åttonde delen I, 1723-1739", ed. B. Boëthius (Stockholm, Norstedt); the first document is the Viborg border treaty of
+30 Mar 1723. So v.8 cannot hold a 1677 full power, matching the LIBRIS enumeration above (no part covers 1648-1723).
+Hathi desk read H4 closed.
