@@ -113,3 +113,62 @@ its Schlagwort "Geheimschrift". Second: the solver flagged the interlinear marks
 **Corrections made in the folder:** NOTES.md status word `partial` → `found-solved`. Correction notes were added under
 the check-solved verdict and the reading section. The status.json results row now carries the class and the safe
 sentence.
+
+## AUDIT 2 (VER1-LOWC, 5 Oct 2026)
+
+Verifier VER1-LOWC (for LANE-VER1, account ytbiz), 5 Oct 2026, 19:30-19:45 UTC by `date -u`. A separate session from Audit 1
+(V1 for LANE V4, 24 Sept 2026) and from the solver (LANE R4 F). Second adversarial audit under CLAUDE.md Outreach gate 2. No
+decoding; readings, keys and ciphertext unchanged.
+
+**Checks, fresh this session:**
+- **Rule 7:** `python3 tools/decode_key.py ciphers/trew-posthius-1614-18 --check` -> "reading up to date". Grades as committed:
+  1614 H 63, M 6 of 69; 1618 H 33, M 7 of 40 (status.json: H 96, M 13 of 109). Every M is a single letter value (1614: w, s, i,
+  u, k twice; 1618: z three times, m, q twice, b), none a name or code group.
+- **The Ärztebriefe records, re-fetched** (`www.aerztebriefe.de/id/00001955` and `/id/00001880`, both 301 -> 200): 00001955's
+  Bemerkungen still transcribe the 1618 key rows and the clear/cipher specimen ("der heid ist ein / sub yuzd zdb uzn" ...), so
+  1618's N0 stands on a public record. 00001880 still describes the 1614 cipher and key with no plaintext. **One detail Audit 1
+  did not quote:** the 00001880 regest introduces the cipher block with "[Notizen links unten auf dem Blatt:] Folgende
+  Beschreibung habe sein Vater einst von D[r]. Camerarius [II.] aus Nürnberg geschickt bekommen. [Es folgen vier Zeilen in
+  Geheimschrift ...]". On the cataloguer's reading, the note on the leaf says the *description* (most naturally the cipher
+  system, the "salutem"/"bignopqrwxyz" two-row table) came to Posthius's father, Johannes Posthius (d. 1597), from Joachim
+  Camerarius II. That makes the key a family system older than 1614, and it points to a place where the system (not this
+  plaintext) might be printed or described: the Johannes Posthius-Camerarius correspondence (Karrer's *Ausführliches Verzeichnis
+  der Briefe des Johannes Posthius*, 1991/1993, not opened). It cannot lower N0, which rests on the leaf gloss (1614) and the
+  leaf's clear lines (1618). Recorded for the solver as a possible key-source lead, not applied.
+
+**Search log, 5 Oct 2026** (one request at a time per host, >=1.6 s apart; descriptive UA):
+
+| family | status | what | result |
+|---|---|---|---|
+| Ärztebriefe database | searched | records 00001955, 00001880 re-fetched (2 requests) | as above; no plaintext of 1614 |
+| Google Books API (keyed, country=US) | searched | `"Erasmus Posthius" Eisenmenger` (10: Fabricius Hildanus *Opera* 1646/1682 name lists, Schmidt-Herrling 1940 catalogue without snippet); `"Posthius" "inversis literis"` (0); `"nachtbar wolt werden"` (246, all Weistümer/legal texts, none Posthius); `"Erasmus Posthius" Geheimschrift` (3 + related: the 1940 Erlangen Handschriften catalogue and Schmidt-Herrling 1940, no snippet; Karrer's Johannes Posthius letter list 1991) | no print of either plaintext; the two 1940 catalogues are catalogue entries (Audit 1 s.4 notes Schmidt-Herrling p.474 prints no cipher per the bavarikon notes quoting it; not opened here either) |
+| IA full text (be-api fts) | searched | `"Erasmus Posthius" Eisenmenger` (8: matriculation lists, bibliographies, the 2024 Merian volume Audit 1 read); `"Posthius" "Geheimschrift"` (64; top 8: Johannes Posthius in art-history and Camerarius-letter notices, no cipher); `"der abraham kein gelt"` (0) | nothing on these letters' ciphers |
+| OpenAlex (Bearer) | searched (Audit 1: unreachable) | `Erasmus Posthius Eisenmenger` (0); `Trew Briefsammlung Geheimschrift` (0) | 0 |
+| Semantic Scholar (x-api-key) | searched (Audit 1: unreachable) | `Erasmus Posthius` (38,235, dominated by the Erasmus exchange programme; top 8 read, none relevant) | nothing |
+| HAL | searched | `Posthius Eisenmenger` | 0 |
+| CrossRef | searched | `Erasmus Posthius Eisenmenger Heidelberg 1614` | a 2001 encyclopaedia entry on Johannes Posthius; nothing on these letters |
+| Solver repos | searched | fresh shallow clones 5 Oct 2026 (cyphersolver @a439937, unsolved-ciphers @d2800bb), grep `posthius`, `eysenmenger`, `eisenmenger` | none |
+| JSTOR | queued | 1 row appended 5 Oct 2026, family (ii) bare phrase `"inversis literis"` (family (i) already done 26 Sept, row 66: no relevant hit) | pending; does not block the class |
+| Schmidt-Herrling 1940 p.474; trew-letters.com; Karrer 1991/1993 | not opened | as Audit 1 | gap; cannot lower N0 |
+
+**Classification (Audit 2).**
+- **1618 specimen: N0 upheld.** Key `period` (the two-row table written on the leaf), text `known` (clear lines on the leaf, and
+  printed online in Ärztebriefe 00001955). **Depth D2**, 82.5% (H 33 of 40). Not D3: the 7 unread tokens are single letters (no
+  name/code groups) and are 17.5% of a 40-token specimen. External check: the clear lines on the leaf. Depth sentence: the 1618
+  specimen enciphers the sentence "der heis [Ärztebriefe: heid] ist ein feiner man, der abraham kein gelt".
+- **1614 cipher lines: N0 upheld.** Key `period` (the leaf table; on the 00001880 regest's reading, a system Johannes Posthius had
+  from Camerarius II), text `known` (the interlinear gloss on the leaf, legible on lines 1-2; no print located by either audit).
+  **Depth D2**, 91.3% (H 63 of 69). Not D3: the 6 unread tokens are single letters, and the external check (the gloss) covers only
+  lines 1-2. Depth sentence: the 1614 cipher lines tell Eysenmenger, in German, that the writer had not known he was to become
+  his neighbour "bei der dihlin", and wish him luck of it.
+- **Safe sentence (both):** "Both cipher passages in Erasmus Posthius's letters to J. C. Eysenmenger (UB Erlangen, Trew, E.
+  Posthius Nr. 2 and Nr. 8, 1614 and 1618) carry their plaintext on the leaf (an interlinear gloss in 1614, paired clear lines in
+  1618, the latter also transcribed in the Ärztebriefe database); applying the two-row tables written beside them reproduces it
+  (N0, two audits; partially deciphered, about 91% and 83% of tokens; key period)."
+- **Unsafe sentence:** "We deciphered / first read Posthius's cipher"; "previously unread"; "key recovered".
+
+**Correction (5 Oct 2026, VER1-LOWC):** status.json's results row has no `key` field; Audit 1's table did not name a key source
+either. Key source per rule 10: `period` (tables on the leaves, written by the correspondents), set in status.json this session.
+No other over-claim found; NOTES.md status `found-solved` is Audit 1's setting (1618 printed online) and is left as written.
+
+**depth_check (5 Oct 2026, after the status.json update):** `python3 tools/depth_check.py` -> exit 0; summary line: "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0" (these three are N0, so they are not in the unique-solve count).

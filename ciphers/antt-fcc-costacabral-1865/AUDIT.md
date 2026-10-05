@@ -117,3 +117,49 @@ fonds owner, Costa Cabral, Conde de Thomar, envoy at the Holy See. Corrections m
 marked "[V6 25 Sept 2026]"): status line to `solved`; "unpublished archival draft" to "an archival draft, no print of
 it located"; key source `ours` to `period`; the "scattered fragments" paragraph annotated with section 2 above. No
 status.json edit (brief). No second-opinion row: N0 is below N3.
+
+## AUDIT 2 (VER1-LOWC, 5 Oct 2026)
+
+Verifier VER1-LOWC (for LANE-VER1, account ytbiz), 5 Oct 2026, 19:30-19:45 UTC by `date -u`. A separate session from Audit 1
+(V6-COSTA, 25 Sept 2026) and from the solver (LANE R6 P4/P5). Second adversarial audit under CLAUDE.md Outreach gate 2. No
+decoding; reading, key and ciphertext unchanged; Audit 1's leads in s.6 (508 = te, 206 gloss, m0114 R5) remain unapplied.
+
+**Checks, fresh this session:**
+- **Rule 7:** `python3 tools/decode_key.py ciphers/antt-fcc-costacabral-1865 --check` -> "reading up to date"; C 63, M 19, U 2 of
+  84, as in Audit 1. No reading change since Audit 1; nothing to propagate (no SO row: N0).
+
+**Search log, 5 Oct 2026** (one request at a time per host, >=1.6 s apart; descriptive UA):
+
+| family | status | what | result |
+|---|---|---|---|
+| Google Books API (keyed, country=US) | searched | `"Caetano de Magalhães" "Costa Cabral" 1865`; `"padrinho" "Rei de Italia" 1865 "Santa Sé"`; `"Costa Cabral" Roma 1865 cifra` (0); `"Arquivo Costa Cabral" Torre do Tombo`; `Bonifácio "Costa Cabral" padrinho "Rei de Itália"` (0); `"Um Homem Singular" Costa Cabral 1865 padrinho` (0); `"padrinho" "infante D. Afonso" 1865 "Vítor Manuel" núncio` (0); `"Caetano de Magalhães" Thomar cifra` (0) | **context printed, item not:** *D. Manuel II, história do seu reinado* (1930, vol. `2IFPTB6UF44C`) snippet: "padrinho do herdeiro do monarca Fidelissimo, o senhor núncio lançava o seu protesto, porque não só o Rei de Itália ..." -- the nuncio's protest at the King of Italy as godfather, i.e. the very question the worksheet raises; Bonifácio, *Um Homem Singular* (2013), a Costa Cabral biography that cites the Arquivo Costa Cabral (ACC) at ANTT -- the fonds this leaf belongs to -- found by title only, no snippet on 1865 or the godfather question, not opened |
+| IA full text (be-api fts) | searched | `"padrinho do principe"` (48: a 1742 Gazeta de Lisboa formula "padrinho do Principe, ou Princeza, que nacer", other reigns); `"Costa Cabral" "Rei de Italia" padrinho` (104; *O Commercio do Porto* items: "escolhido por S. M. para padrinho do Infante recemnascido El-Rei de Italia Victor Manoel" and "do veto posto pelo nuncio a ser o rei de Italia padrinho do segundo filho dos reis de Portugal"); `"conde de Thomar" "Caetano de Magalhães"` (2, unrelated) | the godfather question and the nuncio's veto were reported in the press (issue dates not read); no hit prints the worksheet's text or the Magalhães letter |
+| OpenAlex (Bearer) | searched | `Costa Cabral embaixador Santa Sé 1865 Pio IX` (13, top 8 read: episcopal nominations, Vatican I diplomats 1869-70, and *Maria Pia de Sabóia (1847-1911) ... relações Portugal-Itália* (2013), the most likely scholarly place for the godfather affair -- not opened); `Victor Emmanuel godfather Portuguese infante 1865 Pius IX` (0) | nothing prints this item; one article unread (gap) |
+| Semantic Scholar (x-api-key) | searched | `Costa Cabral Holy See 1865` | 0 |
+| HAL | searched | `"Costa Cabral" Santa Sé` | 0 |
+| CrossRef | searched | `Costa Cabral Conde de Tomar Roma Santa Sé 1865 correspondência` | nothing relevant in top rows |
+| Solver repos | searched | fresh shallow clones 5 Oct 2026 (cyphersolver @a439937, unsolved-ciphers @d2800bb), grep `costa cabral`, `costacabral`, `FCC/001`, `thomar` | none |
+| JSTOR | queued | 1 row appended 5 Oct 2026, family (ii) bare phrase `"padrinho do principe ou princesa"` (family (i) done 26 Sept, row 78: context only) | pending; does not block the class |
+
+**Classification (Audit 2).**
+- **Class N0 upheld.** The clerk's Portuguese syllables written over every code are the plaintext of this very item (Audit 1 s.2,
+  endorsed). Key `period` (rebuilt from the period worksheet; Audit 1's correction of the solver's `ours` stands). Text `known`
+  on the leaf; **no print of the worksheet's text or the cover letter located** by either audit. What is in print is the context:
+  the godfather question and the nuncio's objection (1930 reign history; *O Commercio do Porto*), and the papal-letter affair of the
+  cover letter (1887 Livro Branco, Audit 1).
+- **Depth D2**, 75.0% (C 63 of 84; M 19 incl. the three two-value codes, U 2). Not D3: below 80%. The clause "convidar [o] Rei de
+  [I]talia para padrinho do princi[pe] ou prince[sa] que se espera" reads from the leaf's own gloss, and the 1930 print and the
+  press independently confirm the historical fact it states (an Italian royal godfather objected to by the nuncio).
+- **Depth sentence:** The worksheet's message says the King wishes to invite the King of Italy to be godfather to the prince or
+  princess then expected, and asks how far the Pope would tolerate it.
+- **Safe sentence:** "ANTT FCC/001/0021/00026 carries an 1865 syllabic-nomenclator encipherment worksheet with the clerk's own
+  Portuguese plaintext written over every code; we rebuilt a 52-row partial key from it (C 63, M 19, U 2 of 84 tokens). Its subject,
+  the King of Italy as godfather to the expected royal child, is known from print; the worksheet's own text was not found in print
+  (N0, two audits; partially deciphered, about 75%; key period)."
+- **Unsafe sentence:** "We deciphered an unpublished 1865 Portuguese cipher"; "first reading"; "the godfather affair revealed".
+
+**Postmortem (Audit 2).** No over-claim found: NOTES.md status `solved` with Audit 1's corrections; status.json `N0`, `key: period`.
+Audit 1's "nothing on an invitation of the King of Italy as godfather" (s.4 row (c)) is superseded by the two print hits above:
+the affair itself is in print; the item's text is not. That strengthens the reading's context and does not change the class.
+
+**depth_check (5 Oct 2026, after the status.json update):** `python3 tools/depth_check.py` -> exit 0; summary line: "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0" (these three are N0, so they are not in the unique-solve count).

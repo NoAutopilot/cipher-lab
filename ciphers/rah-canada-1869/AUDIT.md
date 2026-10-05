@@ -178,3 +178,53 @@ ruling (N0, plaintext already on the item).
 
 Requests this session: www.googleapis.com 11 (8 base queries + 3 `filter=full` re-runs on the queries with hits),
 one at a time, at least 3 s apart, key never printed. No other host.
+
+## AUDIT 2 (VER1-LOWC, 5 Oct 2026)
+
+Verifier VER1-LOWC (for LANE-VER1, account ytbiz), 5 Oct 2026, 19:30-19:45 UTC by `date -u`. A separate session from Audit 1
+(LANE W worker E, 24 Sept 2026) and from the solver (R8). Second adversarial audit under CLAUDE.md Outreach gate 2. No decoding;
+reading, key and ciphertext unchanged. The task for an N0 item: try to overturn N0, and look for any print of the note, its
+plaintext or its key that Audit 1 missed.
+
+**Checks, fresh this session:**
+- **Rule 7:** `python3 tools/decode_key.py ciphers/rah-canada-1869 --check` -> "reading up to date"; reading.txt header now reads
+  "tokens 667: H 0, C 665, S 0, M 2", so Audit 1's H -> C regrade (s.5) has been carried into the generated files and the
+  status.json grade. No reading change since Audit 1; nothing to propagate (no SO row exists: N0).
+- **The two M tokens** (`reading_tokens.tsv`): p302_c03 idx 7 `[g06]` = b ("brabo"), p303_c24 idx 10 `[plus]` = e ("realees").
+  Both are single letter signs, each a rare sign whose value is taken from the clear line above it.
+
+**Search log, 5 Oct 2026** (one request at a time per host, >=1.6 s apart; descriptive UA):
+
+| family | status | what | result |
+|---|---|---|---|
+| Google Books API (keyed, country=US) | searched | `"Conde de la Cañada" "Isabel II" Biarritz`; `"González Bravo" Biarritz 1869 cifra`; `"nota cifrada" "González Bravo"`; `"Conde de la Cañada" "González Bravo"`; `"Real Academia de la Historia" "Archivo de Isabel II" "González Bravo" 1869` (all different from LANE V's 8 of 24 Sept) | no print of the note. Hits: a 1910 Cortes index naming a Conde de la Cañada beside González Bravo (separate entries); *París, ciudad de acogida* (2010) on González Bravo, Nocedal and Marfori around the 1869-70 abdication question (context only, snippet does not quote the note); Fernández Larraín catalogue (González Bravo letters to Narváez, other matters) |
+| IA full text (be-api fts) | searched | `"Conde de la Cañada" "Biarritz"` (85); `"González Bravo" "nota cifrada"` (0); `"justísima restauración"` (3) | Cañada hits are the 18th-c. jurist (Acedo Rico), 1850s court lists and 20th-c. provincial press; the 3 "justísima restauración" hits are the Montevideo museum annal Audit 1 already found; nothing on this note |
+| OpenAlex (Bearer) | searched (Audit 1: 429) | `González Bravo Isabel II exilio 1869 correspondencia` (64); `Conde de la Cañada 1869 Isabel II` (42) | top rows read: duque de Sesto in Isabel II's exile (2025), Sexenio press and Cádiz studies; nothing prints or cites this note |
+| Semantic Scholar (x-api-key) | partly searched (Audit 1: 429) | `Archivo de Isabel II Real Academia de la Historia correspondencia exilio` (91; top 8 read: one 2001 paper on Sor Patrocinio's letters to Isabel II in the RAH, nothing on this note); `González Bravo Isabel II exile 1869` 429 twice (once after a pause), not retried further | unreachable for the second query |
+| HAL | searched | `"González Bravo" exil Isabelle II` | 0 |
+| CrossRef | searched | `Conde de la Cañada González Bravo 1869 Isabel II cifrada`; `Archivo de Isabel II Real Academia de la Historia catálogo` | the 1st Conde (Acedo Rico) again; an RAE archive digitisation paper (2023); nothing on this note |
+| Solver repos | searched | fresh shallow clones 5 Oct 2026: dbourdeau/cyphersolver @a439937, aaymeloglu/unsolved-ciphers @d2800bb; grep `cañada`, `gonz.lez bravo`, `9/6958` | none (three Bourdeau files matched a loose "canada" pattern on the country or unrelated catalogues, checked: none is this note) |
+| RAE "Copias de cartas de Isabel II 1869-1871", Burdiel 2010, Comellas 1999 | not searched | 403 host (Audit 1); books not open | gap; could only add "and also printed", cannot lower N0 |
+| JSTOR | queued | 2 rows appended 5 Oct 2026: family (i) names+date+cipher keyword, family (ii) bare phrase `"gana por momentos la idea"` | pending; does not block the class |
+
+**Classification (Audit 2).**
+- **Class N0 upheld.** The clear Spanish on the leaf above each cipher line is the plaintext of this very item (Audit 1 s.2, which
+  this audit endorses: the cipher was written under its own clear text and both went to the Queen). Key `period` (taken from the
+  note's own clear text, a document of the time). Text `known` (on the leaf; no print located by either audit).
+- **Depth D3** (rule 4a), 99.7%: C 665 of 667 tokens; the residue is two single letter signs (above), not name/code groups, so not
+  D4 ("every cipher-letter token H/C/S"). The external check is the period clear text on the leaf, checked by eye on the 117/2
+  image in Audit 1; it is the same text the key was aligned from, so it confirms the alignment rather than giving an independent
+  test, and there is no fresh-session rule-7 re-derivation on file. D3 is given rather than D2 because the residue is 0.3% of
+  tokens (two signs), not a body of unread letters as in the D2 precedents (dupuy452, clair1067).
+- **Depth sentence:** The Conde de la Cañada congratulates Isabel II on her saint's day and tells her that the idea of the "most
+  just restoration" gains ground by the moment and that no one exceeds him in wishing to be among the first to risk his life for it.
+- **Safe sentence:** "The Conde de la Cañada's note to Isabel II (RAH 9/6958, Leg. XIX nº 117/2-3, 15 Nov 1869) carries its own
+  clear Spanish above each cipher line; we set out its simple-substitution key from that clear text, and the key reproduces 665 of
+  667 signs (N0, two audits; largely deciphered, about 99.7%; key period)."
+- **Unsafe sentence:** "We deciphered / first read the Conde de la Cañada's cipher note"; "recovered the plaintext"; "unsolved".
+
+**Postmortem (Audit 2).** No over-claim found: NOTES.md status `solved` with Audit 1's dated correction; status.json `N0`, `key:
+period`, grade C 665 M 2. One gap stays as Audit 1 left it: the Conde de la Cañada of 1869 is not identified further (the GB hits
+show several holders and namesakes); that is a context gap, not a class question.
+
+**depth_check (5 Oct 2026, after the status.json update):** `python3 tools/depth_check.py` -> exit 0; summary line: "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0" (these three are N0, so they are not in the unique-solve count).

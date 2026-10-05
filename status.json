@@ -2413,12 +2413,18 @@
       "completeness": "665/667",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## Verdict'"
+        "AUDIT.md '## Verdict'",
+        "AUDIT.md '## AUDIT 2 (VER1-LOWC, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "rah-canada-1869/AUDIT.md verdict; C 665, M 2 of 667 from the grade"
+      "fields_source": "rah-canada-1869/AUDIT.md verdict; C 665, M 2 of 667 from the grade",
+      "depth": "D3",
+      "depth_pct": 99.7,
+      "depth_sentence": "The Conde de la Cañada congratulates Isabel II on her saint's day and tells her that the idea of the \"most just restoration\" gains ground by the moment and that no one exceeds him in wishing to be among the first to risk his life for it.",
+      "depth_check": "period clear text on the leaf above every cipher line (key aligned from it; checked by eye on 117/2 in Audit 1); decode_key.py --check C 665 M 2 up to date (VER1-LOWC 5 Oct 2026); not D4: 2 single-letter signs M, no fresh re-derivation",
+      "decode_status": "Partially decrypted"
     },
     {
       "date": "24 Sept 2026",
@@ -2815,12 +2821,19 @@
       "completeness": "96/109",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 1. Verdict'"
+        "AUDIT.md '## 1. Verdict'",
+        "AUDIT.md '## AUDIT 2 (VER1-LOWC, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "trew-posthius-1614-18/AUDIT.md section 1; H 96, M 13 of 109"
+      "fields_source": "trew-posthius-1614-18/AUDIT.md section 1; H 96, M 13 of 109",
+      "key": "period",
+      "depth": "D2",
+      "depth_pct": 88.1,
+      "depth_sentence": "The 1614 cipher lines tell Eysenmenger, in German, that the writer had not known he was to become his neighbour \"bei der dihlin\" and wish him luck of it; the 1618 specimen enciphers \"der heis ist ein feiner man, der abraham kein gelt\".",
+      "depth_check": "per item: 1614 D2 91.3% (H 63/69; interlinear gloss on the leaf, lines 1-2 legible), 1618 D2 82.5% (H 33/40; clear lines on the leaf, Ärztebriefe 00001955); decode_key.py --check up to date; not D3: unread tokens are single letters (VER1-LOWC 5 Oct 2026)",
+      "decode_status": "Partially decrypted"
     },
     {
       "date": "24 Sept 2026",
@@ -3005,12 +3018,18 @@
       "completeness": "63/84",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 1. Verdict' (V6-COSTA)"
+        "AUDIT.md '## 1. Verdict' (V6-COSTA)",
+        "AUDIT.md '## AUDIT 2 (VER1-LOWC, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "antt-fcc-costacabral-1865/AUDIT.md section 1; C 63, M 19, U 2 of 84"
+      "fields_source": "antt-fcc-costacabral-1865/AUDIT.md section 1; C 63, M 19, U 2 of 84",
+      "depth": "D2",
+      "depth_pct": 75.0,
+      "depth_sentence": "The worksheet's message says the King wishes to invite the King of Italy to be godfather to the prince or princess then expected, and asks how far the Pope would tolerate it.",
+      "depth_check": "period gloss over every code on the leaf; the godfather question and the nuncio's objection confirmed in print (D. Manuel II, 1930; O Commercio do Porto); decode_key.py --check C 63 M 19 U 2 up to date; not D3: 75.0% < 80 (VER1-LOWC 5 Oct 2026)",
+      "decode_status": "Partially decrypted"
     },
     {
       "date": "25 Sept 2026",
