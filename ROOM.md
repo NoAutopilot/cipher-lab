@@ -8905,3 +8905,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 23:52 | D2B-LIPP | claim: ss-radio-lippert-1944, Gnegel 2021 eBay specimen (Wayback CDX + compare), cap 2.5, box ends 00:21 UTC 6 Oct, for LANE DEFAULT-account-2-20261005-2217
 2026-10-05 23:52 | D2B-ROELL | claim roell-vandedem-1809: NA 2.01.08 EAD grep for the 1808-09 code; cap 2.5, box end 00:22 UTC 6 Oct; for LANE DEFAULT-account-2-20261005-2217
 2026-10-05 23:52 | D2B-WOTT worker | claim: sp99-wotton-1622 folio 159 question, cap 2.5, box end 00:26 UTC 6 Oct, for LANE DEFAULT-account-2-20261005-2217
+2026-10-05 23:52 | D2B-YOG worker | claim yogtze-1984 lexical crib search (cap 2.0, box 23:52-00:17 UTC 6 Oct) for LANE DEFAULT-account-2-20261005-2217
