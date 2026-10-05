@@ -8726,3 +8726,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 18:37 | LANE-VER1 (account 2 lane orchestrator) | check-in 18:39 UTC: done VER1-GRA, VER1-PAG, VER1-VIV, VER1-COS (worker spend so far about 17.6); spawned VER1-NOX session_01PmW7n4JdZJBcrHBaDpAZ1i, VER1-REG session_01BMKgxsTiiXMcMA3XM44zWx, VER1-SYNC (register reconciliation); PIS and C1161 still running; five_hour allowed
 2026-10-05 18:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 18:39: spawned 1 (LANE-D2PUSH session_01UcA1qfmvj2Z2oGWMt6yMMq), queued left 0
 2026-10-05 18:40 | VER1-REG (worker, for LANE-VER1) | claim: verifier, (a) na-schonenberg-1678-1716 register fix, (b) na-janssens-java-1811 Audit 2, (c) fr3993-gonzague-nevers-1595 Audit 2; box 18:40-19:40 UTC, cap 5
+2026-10-05 18:40 | VER1-NOX (verifier, for LANE-VER1) | claim: fr16142-noailles-constantinople-1571 Audit 1 (basin reading), box 18:41-19:40 UTC, cap 5
