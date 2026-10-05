@@ -95,3 +95,24 @@ API for SP 99/24 or the item's own record; read f.159 if imaged). Record; no dec
 ## Cap amendment (lane orchestrator, 23:5x UTC 5 Oct, from wave-1 get_session costs)
 Wave 1 measured an Opus session floor of about 1.7 (KARL 2.07 and RAY 1.70 on cap 1; THURP3 1.94 on cap 1.5; MANT27 5.76 on cap 5, 2 passes +
 reconciliation). Wave-2 caps: D2B-LIPP 2.5, D2B-YOG 2.0, D2B-ROELL 2.5, D2B-WOTT 2.5 (the figures above are superseded). Boxes unchanged.
+
+# Wave 3 (lane orchestrator, 23:5x UTC 5 Oct; same common rules; Opus floor ~1.7 per session)
+
+### D2B-ULA -- ula-degeer-1644, find De Geer's 21 Jan 1645 letter in SE/RA/1133/1133.08/~/2 (cap 3, box 40 min)
+Intake gate (23:5x UTC): `ula-degeer-1644: blocked (line 3) -- already terminal, nothing to gate` (a lookup step, no deep work).
+NOTES.md "While waiting (3 Oct 2026)": one vision pass over the first ~20 canvases of the digitised SE/RA/1133/1133.08/~/2 (lbiiif R0001367)
+to find the letter and say whether it carries any code group; thumbnail-size first, one native crop only if a numeral group is seen. Riksarkivet
+IIIF: >= 1.5 s apart, descriptive UA, stop on 403/429. Record the canvas, date, and cipher yes/no in NOTES.md; status per rule 5 only.
+
+### D2B-UNT -- untersberg-code, Walther Lexicon diplomaticum leaves 254 and 256-258 against symA (cap 3, box 45 min; 4 leaves x ~0.5 + floor)
+Intake gate (23:5x UTC): `untersberg-code: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md line ~416: view leaves 254, 256-258 (Tab. CCXIX tail, CCXXI ff.), one vision call per leaf in bands (crop step mandatory). Follow
+A2P4-UNT's PREREG (commit 4ea7ca25) criterion for a shape match; write the result as a reference-dictionary search, grade I unless the
+criterion is met. NEAR.md row: never closed-negative.
+
+### D2B-MATF110 -- matignon-mayenne-1586, gap 2: the f.110 line-crop sample (cap 10, box 75 min; 7 vision calls x ~1.1 + 1 reconciliation + floor)
+Intake gate (23:5x UTC): `matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict: "gap 2 -- the f.110 line-crop sample with split_worklist.tsv's crops (two blind passes + reconciliation, 7 vision calls), the only
+instrument left for BOX/T/4/w/z, ~$9". TRANSCRIPTION.md and the lookalike rules apply; use the crops split_worklist.tsv already names (no new
+fetch unless a crop is missing). Pre-register what result would let BOX/T/4/w/z labels collapse onto key.tsv labels before the passes. Report
+agreement and per-label outcomes; no key.tsv change unless the pre-registered gate passes; decode --check after any change. NEAR.md row stays.
