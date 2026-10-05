@@ -209,3 +209,7 @@ calls: 0. Downloaded djvu texts are cached under `sources/ia-fulltext/print-chec
    1642-51, 567 letters, per Carlton n.51) is a Hague-court source in the same circle as f.10's names (Brederode,
    Dona, Vantelet, "Mylord"); BL Add MS 33596 ("Royalist cipher keys", f.38v per Carlton) is a royalist key
    collection not yet in NOTES.md. Neither is a decipherment of f.10.
+
+## JSTOR run (local runner, 4 Oct 2026)
+
+Jason Peacey, "The Exploitation of Captured Royal Correspondence and Anglo-Scottish Relations in the British Civil Wars, 1645-46", The Scottish Historical Review 79 (2000) 213-232, https://www.jstor.org/stable/25530974 (JSTOR-QUEUE row: ("intercepted" OR "intercepted letter") AND "1646" AND ("Weckherlin" OR "Digby") AND (cipher OR cypher OR decipher*), 78 results). Read in the page viewer: it concerns the 1645 Digby papers seized at Sherburn and their 1646 publication; p.224 says the delay was blamed partly on "problems involved in deciphering the correspondence" and names George Weckherlin. No reference to the 21 May 1646 letter, BL Add MS 72438 or the Evelyn papers. Context only; this does not affect the reading's status. The phrase query "resolved to expect your Majesty" returned 0.
