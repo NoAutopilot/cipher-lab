@@ -1228,3 +1228,47 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 26 print-matched mssEC 18 entries were not; first the 3 unguarded collisions (white, animals, Hotel) and the Lehigh / weigh conflicts; next: image-reconcile with the eckert-1864 method, ~$4
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 5 internal gaps; cheapest next: read the 79 print-free-assigned mssEC 18 entries with their assigned book (ec18.py option), ~$1; then the image check of the six collision/conflict entries, ~$4
+
+## DEF1-ECK62I-eckert-1862 (5 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261005-2039): image check of the six collision/conflict mssEC 18 entries
+
+The named next step (RUN3-ECK62, RUN6-ECK62 gap 3). Route: Huntington IIIF, the eckert-1864 route
+(`https://hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/full/0/default.jpg`), pointers 9765, 9911, 9947, 9965,
+10010, 10020 (mssEC 18 pp. 99, 245, 281, 299, 344, 354; 6018-6146 x 7200 px), fetched once to scratch, not committed.
+Crop step (pasted, one per entry): `python3 tools/iiif_lines.py --image <scratch>/p<pointer>.jpg --region <x,y,w,h>
+--out <scratch>/crops/<pointer> --prefix e<id> --lines-per-crop 1-3 --max-width 2400` (regions in `ec18/image_check.tsv`);
+the six key-word crops are committed reduced to 1400 px in `images/ec18-check/` (124 KB). Each code word was read from the
+crop before its line in the volunteer text was compared (the collision/conflict word names themselves were known from the
+brief). vol18.json re-fetched, sha256 cb162574... (matches pilot1864/manifest.tsv).
+- Result: the image agrees with the volunteer transcription on all six entries and all eight checked tokens (white,
+  Animals, Lehigh, Dodge, weigh, Hotel with "beat at", lehigh, Dodge). No transcription input changed, so `ec18.py`,
+  `ec18_align.py` and the eckert-1864 decoders were not re-run (nothing they read changed; `--check` needs the uncommitted OR
+  texts). Every collision and conflict is therefore a decode or key question, not a reading error.
+- Decisions (per token, `ec18/image_check.tsv`): Animals (9911.425), Hotel (10010.593; "beat at Hotel" = OR "be at a
+  hotel") and weigh (9965.539; "be on the weigh." with the unity period, OR "on the way") are clear words over-read as code:
+  read clear, grade C from the print, the key meanings Monroe, Weldon, Threaten dropped for these tokens. Dodge (9947.505,
+  10020.609) clear name, C. white (9765.139): the image shows h (a tall loop as in "whack" on the line above, not the short r
+  of "hers"), so the clerk wrote the code word; "ascertain and [Report] to me" fits as well as the printed "write"; held M,
+  logged as a data conflict. Lehigh (9947.505, OR "general Canby") and lehigh (10020.609, OR "can be provided"): both
+  clearly written, so the key-vs-print conflict with key.md p.17 l.6 (Hurlbut) is a key question (rule 4: logged, not settled
+  by majority); both held M. Counts over the 8 tokens: C 5, M 3, H 0 added.
+- Not done: the guard rule was not changed (a later option could treat these three confirmed clear-word collisions as a
+  known-answer set); no other entry imaged. Requests: hdl.huntington.org 7 (1 dmQuery, 6 IIIF full images), >= 2 s apart;
+  0 subagents (vision by this worker on 8 crops). Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, DEF1-ECK62I, 5 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries (14 in OR, H 369 C 2) and 17 fully keyed Cipher No. 2 entries (12 in OR), from the volunteer text, read with the possessive option and collision guard (RUN3-ECK62); 79 of the 192 '?' entries given a book at S (RUN6-ECK62) and read with it (RUN6-ECK62R: S 1229, I 4; 2 word-clean); six collision/conflict entries image-checked (DEF1-ECK62I: transcription confirmed 8/8 tokens; C 5, M 3)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; mssEC 18 read by text with both books, aligned to OR, possessive and guard applied (RUN3-ECK62); the six collision/conflict entries image-checked 5 Oct 2026 (DEF1-ECK62I): the volunteer text is right on every token, Animals/Hotel/weigh are clear words (C), white and Lehigh/lehigh are key-vs-print data conflicts (M); next: settle Lehigh against the mssEC 41 key page image (key.md p.17 l.6) and the received copies of 27 Jan and 24 May 1865, ~$2
+- 77 print-free-assigned mssEC 18 entries read with the assigned book but not word-clean (oov > 0; RUN6-ECK62R, ec18/readings_free.tsv) - blocker: not-attempted; read by text only, no print or image check yet; next: print-check the 2 word-clean readings (9910.423, 9971.546) against OR ser. I vols. 41-46 with ec18.py's matcher, and image-reconcile the 16 entries with oov <= 2, ~$2
+- 113 mssEC 18 entries still '?' (margin < 2 under both instruments) - blocker: not-attempted; no pre-registered rule decides them (RUN6-ECK62, ec18/assign_free_summary.tsv); next: the image (marker words the volunteer text may have dropped; DEF1-ECK62I found the text faithful on 6 entries, so a low yield is expected), ~$4
+
+## Escalation (DEF1-ECK62I, 5 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); 79 of the 192 '?' mssEC 18 entries assigned and read (RUN6-ECK62, RUN6-ECK62R); next: check the Lehigh row on the mssEC 41 key page image, ~$2
+- [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; OR ser. I vols. 32-49 done for mssEC 18 (A3V3-ECK18, A3V3-ECK2); the 26 matches aligned word by word (A3V3-ECKC)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries image-checked 5 Oct 2026 (DEF1-ECK62I, ec18/image_check.tsv: transcription confirmed 8/8)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 5 internal gaps; cheapest next: print-check the 2 word-clean print-free readings (9910.423, 9971.546) against OR vols. 41-46, ~$1; then the Lehigh key-page check, ~$2
