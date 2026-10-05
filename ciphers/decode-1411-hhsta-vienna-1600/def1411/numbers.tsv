@@ -1,0 +1,208 @@
+line	pos	token	grade	note
+p2Lb_L01	1	17	ok	
+p2Lb_L01	2	94	ok	
+p2Lb_L01	3	9	ok	
+p2Lb_L01	4	21	ok	
+p2Lb_L01	5	70	ok	
+p2Lb_L01	6	66?	M	doubtful in a pass
+p2Lb_L01	7	92	ok	
+p2Lb_L01	8	56?	M	doubtful in a pass
+p2Lb_L01	9	53	M	split settled from crop
+p2Lb_L01	10	23	ok	
+p2Lb_L01	11	81	ok	
+p2Lb_L01	12	65	ok	
+p2Lb_L02	1	9	ok	intext (date/figure), not decoded
+p2Lb_L02	2	56	ok	
+p2Lb_L02	3	19	ok	
+p2Lb_L02	4	89	ok	
+p2Lb_L02	5	13	ok	
+p2Lb_L02	6	22	ok	
+p2Lb_L02	7	7	ok	
+p2Lb_L02	8	36	ok	
+p2Lb_L02	9	81	ok	
+p2Lb_L02	10	21?	M	doubtful in a pass
+p2Lb_L03	1	23	ok	
+p2Lb_L03	2	93	ok	
+p2Lb_L03	3	18	ok	
+p2Lb_L03	4	60	ok	
+p2Lb_L04	1	18	ok	
+p2Lb_L04	2	6?	M	doubtful in a pass
+p2Lb_L04	3	#	sign	graphic sign, not decoded
+p2Lb_L04	4	12	ok	
+p2Lb_L04	5	42	ok	
+p2Lb_L04	6	24	ok	
+p2Lb_L04	7	92	ok	
+p2Lb_L04	8	31	ok	
+p2Lb_L04	9	86?	M	doubtful in a pass
+p2Lb_L04	10	57	ok	
+p2Lb_L04	11	17	ok	
+p2Lb_L05	1	#	sign	graphic sign, not decoded
+p2Lb_L05	2	#	sign	graphic sign, not decoded
+p2Lb_L05	3	35	ok	
+p2Lb_L05	4	81	ok	
+p2Lb_L05	5	22	ok	
+p2Lb_L05	6	71?	M	doubtful in a pass
+p2Lb_L05	7	29?	M	doubtful in a pass
+p2Lb_L05	8	95	ok	
+p2Lb_L06	1	33	ok	
+p2Lb_L06	2	19?	M	doubtful in a pass
+p2Lb_L06	3	52	ok	
+p2Lb_L06	4	66	ok	
+p2Lb_L06	5	20	ok	
+p2Lb_L06	6	#	sign	graphic sign, not decoded
+p2Lb_L06	7	45	ok	
+p2Lb_L06	8	24	ok	
+p2Lb_L07	1	32	ok	
+p2Lb_L07	2	81	ok	
+p2Lb_L07	3	17	ok	
+p2Lb_L08	1	#	sign	graphic sign, not decoded
+p2Lb_L08	2	72	ok	
+p2Lb_L08	3	77	ok	
+p2Lb_L08	4	46	ok	
+p2Lb_L08	5	33	ok	
+p2Lb_L08	6	21	ok	
+p2Lb_L09	1	65	ok	
+p2Lb_L09	2	59	ok	
+p2Lb_L09	3	81?	M	doubtful in a pass
+p2Lb_L09	4	57	ok	
+p2Lb_L09	5	32	ok	
+p2Lb_L09	6	#	sign	graphic sign, not decoded
+p2Lb_L09	7	38	ok	
+p2Lb_L09	8	90	ok	
+p2Lb_L09	9	65	ok	
+p2Lb_L09	10	13	ok	
+p2Lb_L09	11	83	ok	
+p2Lb_L10	1	69	ok	
+p2Lb_L10	2	33	ok	
+p2Lb_L10	3	13	ok	
+p2Lb_L10	4	55	ok	
+p2Lb_L10	5	84	ok	
+p2Lb_L10	6	9	ok	
+p2Lb_L10	7	89	ok	
+p2Lb_L11	1	18	ok	
+p2Lb_L11	2	70	ok	
+p2Lb_L11	3	95	ok	
+p2Lb_L11	4	46	ok	
+p2Lb_L11	5	57	ok	
+p2Lb_L11	6	33	ok	
+p2Lb_L12	1	56	ok	
+p2Lb_L12	2	29	ok	
+p2Lb_L12	3	17	ok	
+p2Lb_L12	4	85	ok	
+p2R_L01	1	16	ok	
+p2R_L01	2	53	ok	
+p2R_L01	3	69	ok	
+p2R_L02	1	85	ok	
+p2R_L02	2	70	ok	
+p2R_L02	3	78	ok	
+p2R_L02	4	5	ok	
+p2R_L02	5	63	ok	
+p2R_L02	6	23	ok	
+p2R_L02	7	37	ok	
+p2R_L02	8	55	ok	
+p2R_L02	9	60	ok	
+p2R_L02	10	13	ok	intext (date/figure), not decoded
+p2R_L03	1	60	ok	
+p2R_L03	2	18	ok	
+p2R_L03	3	20	ok	
+p2R_L03	4	86	ok	
+p2R_L03	5	9	ok	
+p2R_L03	6	7	ok	
+p2R_L03	7	53	ok	
+p2R_L03	8	19	ok	
+p2R_L04	1	61	ok	
+p2R_L04	2	95	ok	
+p2R_L04	3	48	ok	
+p2R_L04	4	15	ok	
+p2R_L04	5	29	ok	
+p2R_L04	6	71	ok	
+p2R_L04	7	61?	M	doubtful in a pass
+p2R_L04	8	42	ok	
+p2R_L04	9	65	ok	
+p2R_L05	1	20	ok	
+p2R_L05	2	18	ok	
+p2R_L05	3	92	ok	
+p2R_L05	4	32	ok	
+p2R_L05	5	5	ok	
+p2R_L05	6	7	ok	
+p2R_L05	7	33	ok	
+p2R_L05	8	46	ok	
+p2R_L05	9	7	ok	
+p2R_L05	10	77	ok	
+p2R_L06	1	#	sign	graphic sign, not decoded
+p2R_L06	2	31?	M	doubtful in a pass
+p2R_L06	3	29	ok	
+p2R_L06	4	19	M	split settled from crop
+p2R_L06	5	95	ok	
+p2R_L06	6	53	ok	
+p2R_L06	7	13	ok	
+p2R_L06	8	65	ok	
+p2R_L06	9	96	ok	
+p2R_L06	10	18	ok	
+p2R_L06	11	68	ok	
+p2R_L07	1	31	ok	
+p2R_L07	2	14	ok	
+p2R_L07	3	64	ok	
+p2R_L07	4	29	ok	
+p2R_L07	5	7	ok	
+p2R_L07	6	42	ok	
+p2R_L07	7	30	ok	
+p2R_L07	8	#	sign	graphic sign, not decoded
+p2R_L07	9	15	ok	
+p2R_L07	10	57	ok	
+p2R_L07	11	96	ok	
+p2R_L07	12	23	ok	
+p2R_L07	13	33	ok	
+p2R_L08	1	17	ok	
+p2R_L08	2	72	ok	
+p2R_L08	3	65	ok	
+p2R_L08	4	8	ok	
+p2R_L08	5	12	ok	
+p2R_L08	6	66	ok	
+p2R_L08	7	15	ok	
+p2R_L08	8	62	ok	
+p2R_L08	9	81	ok	
+p2R_L08	10	17	ok	
+p2R_L09	1	22	ok	
+p2R_L09	2	33	ok	
+p2R_L09	3	46	ok	
+p2R_L09	4	20	ok	
+p2R_L09	5	13	M	split settled from crop
+p2R_L10	1	90	ok	
+p2R_L10	2	17	ok	
+p2R_L10	3	9	ok	
+p2R_L11	1	77	ok	
+p2R_L11	2	11	ok	
+p2R_L11	3	57	ok	
+p2R_L11	4	17	ok	
+p2R_L11	5	21	ok	
+p2R_L11	6	57	ok	
+p2R_L11	7	65	ok	
+p2R_L12	1	2	ok	intext (date/figure), not decoded
+p2R_L12	2	29	ok	
+p2R_L12	3	66	ok	
+p2R_L12	4	88	ok	
+p2R_L12	5	40	ok	
+p2R_L12	6	9	ok	
+p2R_L12	7	13	ok	
+p2R_L12	8	22	ok	
+p2R_L12	9	84	ok	
+p2R_L13	1	3	M	split settled from crop
+p2R_L13	2	34	ok	
+p2R_L13	3	75	ok	
+p2R_L13	4	24	ok	
+p2R_L13	5	20	M	split settled from crop
+p2R_L13	6	72	ok	
+p2R_L13	7	90	ok	
+p2R_L13	8	17	ok	
+p2R_L13	9	53	ok	
+p2R_L13	10	12	ok	
+p2R_L13	11	41	ok	
+p2R_L13	12	81	ok	
+p2R_L13	13	5?	M	doubtful in a pass
+p2R_L14	1	65	ok	
+p2R_L14	2	8	ok	
+p2R_L14	3	57	ok	
+p2R_L14	4	41	ok	
+p2R_L14	5	89	ok	
+p2R_L14	6	#	sign	graphic sign, not decoded

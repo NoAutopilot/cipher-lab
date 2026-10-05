@@ -388,3 +388,96 @@ Next instrument: a person's read of the 62-letter gloss (ASKS row 120: what Germ
 whether the letters read z and s are r and h), not a further machine pass. Token grades unchanged: H 0, C 0 new, S 0,
 M 176, I 0; gloss pairs C 54 / M 8. No reading-ready flag. Vision: 0. Requests: none. Status unchanged: open.
 
+
+## DEF1-1411 step: T and T21r (r at residue 21) frozen, tested on unused p.2 numerals (5 Oct 2026, account 1)
+
+Step run: GAPS150's named next step and the brief DEF1-1411 (LANE DEFAULT-account-1-20261005-2039). Pre-registration
+`def1411/PREREG-DEF1-1411.md` (commit 6cf4ff3c1) pushed before any new numeral was read: T = residue/frozen_table.tsv
+unchanged; T21r = T with residue 21 = r (`def1411/tables.py`). The 176 GAPS146 numbers were not rescored (contaminated for
+the r question).
+
+One DECODE browser login (tools/decode_browser_login.js 1411 --fetch IMG_R1411_I6596_P2.png, --max-files 1); sha1
+2e022ab8... matches images/manifest.json; not committed (30 MB rule). Crops (pasted commands; automatic line finding found
+0 lines on this grey scan, as in GAPS146, so centres were set by eye from --debug overlays; a first cut with misplaced
+centres was discarded before any pass):
+`python3 tools/iiif_lines.py --image IMG_R1411_I6596_P2.png --out images/def1411_crops --region 700,1270,1740,1650 --prefix
+p2Lb --centres 60,266,353,462,663,750,848,1049,1152,1261,1375,1592 --top-margin 45 --bottom-margin 40 --max-width 2400 --debug`
+(12 crops, p.2 left page below the GAPS146 p2L lines, numeral-bearing lines only) and
+`python3 tools/iiif_lines.py --image IMG_R1411_I6596_P2.png --out images/def1411_crops --region 2600,120,1880,1720 --prefix
+p2R --centres 118,217,300,388,511,582,676,776,1099,1187,1275,1475,1569,1675 --top-margin 45 --bottom-margin 40 --max-width
+2400 --debug` (14 crops, right page = f.183, numeral-bearing lines; its lower half is clear text). All crops < 2500 px wide.
+
+Two blind Opus passes, one call each, crops only, opposite reading orders (`def1411/passA.tsv` 198 numeral tokens, 14 "?";
+`def1411/passB.tsv` 202, 11 "?"): identical on 13 of 26 lines; most splits were a "?" flag on one side only. The worker
+settled the rest from the crops (one reconciliation unit; `def1411/reconcile_notes.tsv`): three B-only "10?"/"2." tokens
+are words or an enumeration and were dropped; p2Lb_L01 pos 9 = 53 (A 83?); p2R_L06 pos 3 = 19 (A 29?); p2R_L09 pos 5 = 13
+(B 17); p2R_L13 pos 1 = 3 (A 7?, B 3?) and pos 5 = 20 (A 70, B 20?). Settled splits and every "?" are graded M. Dates
+("9 Octob", "13 huius", "2./5. Octob") are in-text and not decoded. Reconciled: `def1411/numbers.tsv`, **195 cipher numbers,
+17 M**, 8 with residue 21.
+
+**Step 0 (ARM-C1), run before the target:** a shuffled copy of the 195 numbers (seed 1411) through tools/judge_plaintext.py:
+```
+T:    FAIL language: score=-2.218, null_p99=-1.847, real_p05=-0.866, real_median=-0.768, mode=both, N=195
+T21r: FAIL language: score=-2.186, null_p99=-1.847, real_p05=-0.866, real_median=-0.768, mode=both, N=195
+```
+Neither shuffled decode passes, so the judge is not void here.
+
+**Score (`def1411/score1411.py`, `--check` exits 0; de1600 raw; seed 1411):**
+
+| table | decode | shuffled-target p99 (>= decode) | shifted max (>= decode) | gloss (-1.423) minus... | PASS |
+|---|---|---|---|---|---|
+| T | -1.727 | -1.987 (0/200) | -2.039 (0/23) | decode 0.304 below gloss | no |
+| T21r | -1.600 | -1.963 (0/200) | -2.038 (0/23) | decode 0.178 below gloss | no |
+
+Judge at N=195: real_p05 -0.866, real_p01 -0.978, null_p99 -1.847. tools/judge_plaintext.py on the target decodes:
+```
+T:    FAIL language: score=-1.727, null_p99=-1.847, real_p05=-0.866, real_median=-0.768, mode=both, N=195
+T21r: FAIL language: score=-1.6, null_p99=-1.847, real_p05=-0.866, real_median=-0.768, mode=both, N=195
+```
+**Pre-registered verdict: CONTROLS BEATEN, JUDGE CANNOT DECIDE, for both tables** (each beats its shuffled target and all
+23 shifts on numerals neither was built from, but neither reaches the leaf's own gloss score). No PASS: no grade moves.
+
+**Residue-21 letter test (pre-registered, 8 occurrences >= 5): r favoured.** With every other residue fixed, r ranks
+1st of 24 letters for residue 21 (top five r, l, i, e, n), z ranks 14th. This settles the GAPS150 open question in favour of
+r on fresh material (cryptanalytic, conditional on this transcription); T21r is the preferred table for any later step.
+The gloss pairs at 21 and 93 stay graded C as glossed "z" (a letter-identity question about the gloss hand, now answered by
+the decode statistic, not by a re-read).
+
+Decode under T21r, per line (lower case = clean; upper case = M): p2Lb_L01 nsersOgDAten; L02 dpniscseR; L03 tros; L04
+oBsougcKen; L05 gesTAt; L06 ePzogru; L07 den; L08 uaser; L09 ngEedkonig; L10 reicsen; L11 ostsee; L12 dani; p2R_L01 mar;
+L02 isbaltics; L03 sogkecap; L04 itulatIon; L05 gogdacesca; L06 CaPtainuog; L07 ckmacobleute; L08 nundsolken; L09 sesgI;
+L10 one; L11 agenren; L12 aommeiss; L13 YfyuGuonasneA; L14 ndenn.
+
+**Post-hoc observation (seen after the score; not tested, licenses nothing):** runs read as words of a Baltic-trade/naval
+context: "konig", "ostsee", "dani|mar is baltic(i)" across the page turn (p2Lb_L12 -> p2R_L01), "cap|itulation" across a line
+break (p2R_L03 -> L04), "captain", "...leute", "und solchen" (nundsolken). Runs continuing across line and page breaks
+support the reading order used. "reicsen" and "isbaltics" fit residue 12 or 22 standing for h (reichsen?/baltichs?) rather
+than s, the GAPS150 h/s question, untested here. These words are hypotheses for a verifier or a person's read; the
+language judge, retired for this leaf by GAPS157, cannot gate them.
+
+Token grades (rule 4): new 195 numbers all M (H 0, C 0 new, S 0, M 195, I 0); 176 GAPS146 numbers M; gloss pairs C 54 /
+M 8 unchanged. No reading-ready flag. Vision: 2 subagent calls (Opus, 26 crops each) + 1 reconciliation unit (2 stacked
+crop views) + 4 worker placement views (overview, 2 grids, 1 debug overlay check, 1 crop check). Requests: de-crypt.org
+about 3 (1 login, record page, 1 image).
+
+Next step: a different instrument from the retired 4-gram judge -- pre-register a word-coverage test (tools/judge_plaintext.py
+NgramModel.cover on a de1600 + Latin chancery lexicon) of T21r against the same shuffled-target/shifted controls, with the
+h-at-residue-12/22 alternative frozen beside it, on numerals not yet read (p.3, IMG_R1411_I6597_P3.png, and any later
+cipher page), two blind passes; ~USD 6. In parallel, ASKS row 120 (a person's read of the gloss) stands. Status unchanged:
+open.
+
+## Remaining gaps (DEF1-1411, 5 Oct 2026)
+Read so far: 0 of about 371 cipher numbers at S or better (gloss pairs C 54 of 62; 371 unglossed numbers M)
+- unglossed numerals p.1-p.2 (371) - blocker: not-attempted; controls beaten but no gate passed (GAPS146, GAPS150, DEF1-1411); next: pre-registered word-coverage test of T21r (+ h alternative) on p.3 numerals, ~$6
+- gloss letter identities h/s at residues 12/22 - blocker: waiting-on ASKS row 120 (a person's read of the gloss); the r/z question is settled by the DEF1-1411 residue-21 test
+- pages 3-12 numerals - blocker: not-attempted; full-size images fetched in GAPS137 but no page after p.2 transcribed; next: cut and read p.3 numerals in two blind passes with the step above, ~$6
+
+## Escalation (DEF1-1411, 5 Oct 2026)
+- [x] siblings: GAPS136/GAPS137 checked the Ferdinand III posts and the Kopal Cyffra nova key (inconsistent sign class)
+- [x] clear-pages: clear words around the cipher read in GAPS137; context words used only as post-hoc observation
+- [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
+- [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a gate passes
+- [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r settled on fresh numerals (DEF1-1411)
+- [x] image-check: full-size DECODE images p.1-p.2 read on native crops (GAPS141, GAPS146, DEF1-1411)
+- [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause
+Verdict: keep going: 2 internal gaps; cheapest next: pre-registered word-coverage test of T21r on p.3 numerals, ~$6

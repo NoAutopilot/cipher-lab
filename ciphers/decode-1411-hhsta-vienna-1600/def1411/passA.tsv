@@ -1,0 +1,208 @@
+line	pos	token	note
+p2Lb_L01	1	17	anchor: (numerals from line start; word at end 'fies'?); crop centring ambiguous - numerals line upper, 'schicken' line lower; took numerals line
+p2Lb_L01	2	94	
+p2Lb_L01	3	9	
+p2Lb_L01	4	21	
+p2Lb_L01	5	70	
+p2Lb_L01	6	66?	ornate; alt 86
+p2Lb_L01	7	92	
+p2Lb_L01	8	56?	alt 50
+p2Lb_L01	9	83?	alt 33
+p2Lb_L01	10	23	
+p2Lb_L01	11	81	
+p2Lb_L01	12	65	
+p2Lb_L02	1	9	anchor: ist; intext '9 Octob'
+p2Lb_L02	2	56	
+p2Lb_L02	3	19	
+p2Lb_L02	4	89	
+p2Lb_L02	5	13	
+p2Lb_L02	6	22	
+p2Lb_L02	7	7	
+p2Lb_L02	8	36	
+p2Lb_L02	9	81	
+p2Lb_L02	10	21?	cut at right edge; second digit unclear
+p2Lb_L03	1	23	anchor: Commissarius
+p2Lb_L03	2	93	
+p2Lb_L03	3	18	
+p2Lb_L03	4	60	
+p2Lb_L04	1	18	anchor: neben
+p2Lb_L04	2	6?	followed by dot; alt 60
+p2Lb_L04	3	#	graphic sign like epsilon/C
+p2Lb_L04	4	12	
+p2Lb_L04	5	42	
+p2Lb_L04	6	24	
+p2Lb_L04	7	92	
+p2Lb_L04	8	31	
+p2Lb_L04	9	86?	alt 80
+p2Lb_L04	10	57	
+p2Lb_L04	11	17	
+p2Lb_L05	1	#	anchor: werden; graphic sign after 'werden' (hook with dot)
+p2Lb_L05	2	#	circle with bar (after 'das')
+p2Lb_L05	3	#	triangle (after 'wird')
+p2Lb_L05	4	35	
+p2Lb_L05	5	81	
+p2Lb_L05	6	22	
+p2Lb_L05	7	71?	alt 21
+p2Lb_L05	8	29?	alt 39
+p2Lb_L05	9	95	
+p2Lb_L06	1	33	anchor: mögen
+p2Lb_L06	2	19?	overwritten/corrected; alt 17
+p2Lb_L06	3	52	
+p2Lb_L06	4	66	
+p2Lb_L06	5	20	followed by a letter-like group 'hf' (not counted)
+p2Lb_L06	6	45	
+p2Lb_L06	7	24	
+p2Lb_L07	1	32	anchor: nachgegeben
+p2Lb_L07	2	81	
+p2Lb_L07	3	17	
+p2Lb_L08	1	#	anchor: ist nicht allein; circle-with-bar sign after 'allein'
+p2Lb_L08	2	72	
+p2Lb_L08	3	77	
+p2Lb_L08	4	46	
+p2Lb_L08	5	33	
+p2Lb_L08	6	21	
+p2Lb_L09	1	65	anchor: wird (after numerals)
+p2Lb_L09	2	59	
+p2Lb_L09	3	91?	alt 41
+p2Lb_L09	4	57	
+p2Lb_L09	5	32	
+p2Lb_L09	6	#	bracket-like sign '('
+p2Lb_L09	7	38	
+p2Lb_L09	8	90	
+p2Lb_L09	9	65	
+p2Lb_L09	10	13	
+p2Lb_L09	11	83	
+p2Lb_L10	1	69	anchor: landes (struck word before 69)
+p2Lb_L10	2	33	
+p2Lb_L10	3	13	
+p2Lb_L10	4	55	
+p2Lb_L10	5	84	
+p2Lb_L10	6	9	
+p2Lb_L10	7	89	
+p2Lb_L11	1	18	anchor: esse
+p2Lb_L11	2	70	
+p2Lb_L11	3	95	
+p2Lb_L11	4	46	
+p2Lb_L11	5	57	
+p2Lb_L11	6	33	
+p2Lb_L12	1	56	anchor: nommen (genommen)
+p2Lb_L12	2	29	
+p2Lb_L12	3	17	
+p2Lb_L12	4	85	
+p2R_L01	1	16	anchor: pertendiren
+p2R_L01	2	53	
+p2R_L01	3	69	
+p2R_L02	1	85	anchor: competit
+p2R_L02	2	70	
+p2R_L02	3	78	
+p2R_L02	4	5	
+p2R_L02	5	63	
+p2R_L02	6	23	
+p2R_L02	7	37	
+p2R_L02	8	55	
+p2R_L02	9	60	
+p2R_L02	10	13	intext 'den 13 huius'
+p2R_L03	1	60	anchor: begehrt
+p2R_L03	2	18	
+p2R_L03	3	20	
+p2R_L03	4	86	
+p2R_L03	5	9	stroke under it
+p2R_L03	6	7	
+p2R_L03	7	53	
+p2R_L03	8	19	
+p2R_L04	1	61	anchor: wegen
+p2R_L04	2	95	
+p2R_L04	3	48	
+p2R_L04	4	15	
+p2R_L04	5	29	
+p2R_L04	6	71	
+p2R_L04	7	61	
+p2R_L04	8	42	
+p2R_L04	9	65	
+p2R_L05	1	20	anchor: hinterlassene
+p2R_L05	2	18	
+p2R_L05	3	92	
+p2R_L05	4	32	
+p2R_L05	5	5	
+p2R_L05	6	7	
+p2R_L05	7	33	
+p2R_L05	8	46	
+p2R_L05	9	7	
+p2R_L05	10	77	
+p2R_L06	1	#	anchor: dar; circle-with-bar sign
+p2R_L06	2	31?	alt 21
+p2R_L06	3	29	
+p2R_L06	4	29?	alt 19
+p2R_L06	5	95	
+p2R_L06	6	53	
+p2R_L06	7	13	
+p2R_L06	8	65	
+p2R_L06	9	96	
+p2R_L06	10	18	
+p2R_L06	11	68	
+p2R_L07	1	31	anchor: anstatt?
+p2R_L07	2	14	
+p2R_L07	3	64	
+p2R_L07	4	29	
+p2R_L07	5	7	
+p2R_L07	6	42	
+p2R_L07	7	30	
+p2R_L07	8	#	bracket-like sign '('
+p2R_L07	9	15	
+p2R_L07	10	57	
+p2R_L07	11	96	
+p2R_L07	12	23	
+p2R_L07	13	33	
+p2R_L08	1	17	anchor: unter / commendo
+p2R_L08	2	72	
+p2R_L08	3	65	
+p2R_L08	4	8	
+p2R_L08	5	12	
+p2R_L08	6	66	
+p2R_L08	7	15	
+p2R_L08	8	62	
+p2R_L08	9	81	
+p2R_L08	10	17	
+p2R_L09	1	22	anchor: dieselbe (crop centre ambiguous; numerals on lower line 'bevorab in')
+p2R_L09	2	33	
+p2R_L09	3	46	
+p2R_L09	4	20	
+p2R_L09	5	13	
+p2R_L10	1	90	anchor: Rath / dabeneben
+p2R_L10	2	17	
+p2R_L10	3	9	
+p2R_L11	1	77	anchor: eines
+p2R_L11	2	11	
+p2R_L11	3	57	
+p2R_L11	4	17	
+p2R_L11	5	21	
+p2R_L11	6	57	
+p2R_L11	7	65	
+p2R_L12	1	2	anchor: Octob; intext 'Den 2. Octob'
+p2R_L12	2	29	
+p2R_L12	3	66	
+p2R_L12	4	88	
+p2R_L12	5	40	
+p2R_L12	6	9	
+p2R_L12	7	13	
+p2R_L12	8	22	
+p2R_L12	9	84	
+p2R_L13	1	7?	anchor: sandten; alt 2
+p2R_L13	2	34	
+p2R_L13	3	75	
+p2R_L13	4	24	
+p2R_L13	5	70	
+p2R_L13	6	72	
+p2R_L13	7	90	
+p2R_L13	8	17	
+p2R_L13	9	53	
+p2R_L13	10	12	
+p2R_L13	11	41	
+p2R_L13	12	81	
+p2R_L13	13	5?	cut at right edge; may be longer number
+p2R_L14	1	65	anchor: kommen
+p2R_L14	2	8	
+p2R_L14	3	57	
+p2R_L14	4	41	
+p2R_L14	5	89	
+p2R_L14	6	#	hook sign with dot before 'kommen'

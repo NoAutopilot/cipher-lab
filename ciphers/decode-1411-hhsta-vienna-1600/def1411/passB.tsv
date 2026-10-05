@@ -1,0 +1,211 @@
+line	pos	token	note
+p2Lb_L01	1	17	
+p2Lb_L01	2	94	
+p2Lb_L01	3	9	
+p2Lb_L01	4	21	
+p2Lb_L01	5	70	
+p2Lb_L01	6	66	
+p2Lb_L01	7	92	
+p2Lb_L01	8	56	
+p2Lb_L01	9	53	
+p2Lb_L01	10	23	
+p2Lb_L01	11	81	
+p2Lb_L01	12	65	
+p2Lb_L02	1	9	intext: '9 Octob'
+p2Lb_L02	2	56	
+p2Lb_L02	3	19	
+p2Lb_L02	4	89	
+p2Lb_L02	5	13	
+p2Lb_L02	6	22	
+p2Lb_L02	7	7	
+p2Lb_L02	8	36	
+p2Lb_L02	9	81	
+p2Lb_L02	10	2?	last group cut at right edge; second digit lost (21/24?)
+p2Lb_L03	1	23	
+p2Lb_L03	2	93	
+p2Lb_L03	3	18	
+p2Lb_L03	4	60	
+p2Lb_L04	1	18	
+p2Lb_L04	2	6?	written '6.' (or 0); followed by sign
+p2Lb_L04	3	#	e/rho-like sign after 6
+p2Lb_L04	4	12	
+p2Lb_L04	5	42	
+p2Lb_L04	6	24	
+p2Lb_L04	7	92	
+p2Lb_L04	8	31	
+p2Lb_L04	9	86	
+p2Lb_L04	10	57	
+p2Lb_L04	11	17	
+p2Lb_L05	1	2	intext: enumeration '2.' (cf. '1. das lit. H' line above)
+p2Lb_L05	2	#	circle with cross
+p2Lb_L05	3	#	triangle
+p2Lb_L05	4	35	
+p2Lb_L05	5	81	
+p2Lb_L05	6	22	
+p2Lb_L05	7	71	
+p2Lb_L05	8	29	
+p2Lb_L05	9	95	
+p2Lb_L06	1	33	
+p2Lb_L06	2	19?	second digit overwritten/corrected; 19 or 17
+p2Lb_L06	3	52	
+p2Lb_L06	4	66	
+p2Lb_L06	5	20	
+p2Lb_L06	6	#	H/A-like monogram sign after 20
+p2Lb_L06	7	45	
+p2Lb_L06	8	24	
+p2Lb_L07	1	32	
+p2Lb_L07	2	81	
+p2Lb_L07	3	17	
+p2Lb_L08	1	#	circle with cross
+p2Lb_L08	2	72	
+p2Lb_L08	3	77	
+p2Lb_L08	4	46	
+p2Lb_L08	5	33	
+p2Lb_L08	6	21	
+p2Lb_L09	1	65	
+p2Lb_L09	2	59	
+p2Lb_L09	3	81?	first digit odd-shaped; 81 or 91
+p2Lb_L09	4	57	
+p2Lb_L09	5	32	
+p2Lb_L09	6	#	rho/e-like sign
+p2Lb_L09	7	38	
+p2Lb_L09	8	90	
+p2Lb_L09	9	65	
+p2Lb_L09	10	13	
+p2Lb_L09	11	83	
+p2Lb_L10	1	69	
+p2Lb_L10	2	33	
+p2Lb_L10	3	13	
+p2Lb_L10	4	55	
+p2Lb_L10	5	84	
+p2Lb_L10	6	9	
+p2Lb_L10	7	89	
+p2Lb_L11	1	18	
+p2Lb_L11	2	70	
+p2Lb_L11	3	95	
+p2Lb_L11	4	46	
+p2Lb_L11	5	57	
+p2Lb_L11	6	33	
+p2Lb_L12	1	56	crop spans two lines; numerals on lower line 'nommen werden, belangt ... 56,29,17,85'; upper line has none
+p2Lb_L12	2	29	
+p2Lb_L12	3	17	
+p2Lb_L12	4	85	
+p2R_L01	1	16	
+p2R_L01	2	53	
+p2R_L01	3	69	
+p2R_L02	1	85	
+p2R_L02	2	70	
+p2R_L02	3	78	
+p2R_L02	4	5	
+p2R_L02	5	63	
+p2R_L02	6	23	
+p2R_L02	7	37	
+p2R_L02	8	55	
+p2R_L02	9	60	
+p2R_L02	10	13	intext: 'das 13 huius' date
+p2R_L03	1	60	
+p2R_L03	2	18	
+p2R_L03	3	20	
+p2R_L03	4	86	
+p2R_L03	5	9	
+p2R_L03	6	10?	written 'tio'/'+10' after 'begehret'; may be letters or 40/410
+p2R_L03	7	7	
+p2R_L03	8	53	
+p2R_L03	9	19	
+p2R_L04	1	61	
+p2R_L04	2	95	
+p2R_L04	3	48	
+p2R_L04	4	15	
+p2R_L04	5	29	
+p2R_L04	6	71	
+p2R_L04	7	61?	first digit 6 or 0
+p2R_L04	8	42	
+p2R_L04	9	65	
+p2R_L05	1	20	
+p2R_L05	2	18	
+p2R_L05	3	92	
+p2R_L05	4	32	
+p2R_L05	5	5	
+p2R_L05	6	7	
+p2R_L05	7	33	
+p2R_L05	8	46	
+p2R_L05	9	7	
+p2R_L05	10	77	
+p2R_L05	11	10?	final '1°m'/'10m' may be letters
+p2R_L06	1	#	circle with cross
+p2R_L06	2	31	
+p2R_L06	3	29	
+p2R_L06	4	19	
+p2R_L06	5	95	
+p2R_L06	6	53	
+p2R_L06	7	13	
+p2R_L06	8	65	
+p2R_L06	9	96	
+p2R_L06	10	18	
+p2R_L06	11	68	
+p2R_L07	1	31	
+p2R_L07	2	14	
+p2R_L07	3	64	
+p2R_L07	4	29	
+p2R_L07	5	7	
+p2R_L07	6	42	
+p2R_L07	7	30	
+p2R_L07	8	#	rho/e-like sign (could be letter)
+p2R_L07	9	15	
+p2R_L07	10	57	
+p2R_L07	11	96	
+p2R_L07	12	23	
+p2R_L07	13	33	
+p2R_L08	1	17	
+p2R_L08	2	72	
+p2R_L08	3	65	
+p2R_L08	4	8	
+p2R_L08	5	12	
+p2R_L08	6	66	
+p2R_L08	7	15	
+p2R_L08	8	62	
+p2R_L08	9	81	
+p2R_L08	10	17	
+p2R_L09	1	22	crop spans two lines; numerals on lower line 'dieselben ... in 22,33,46,20,17'; upper line 'anzunehmen' has none
+p2R_L09	2	33	
+p2R_L09	3	46	second digit 6 or 0
+p2R_L09	4	20	
+p2R_L09	5	17	
+p2R_L10	1	90	
+p2R_L10	2	17	
+p2R_L10	3	9	
+p2R_L11	1	77	
+p2R_L11	2	11	
+p2R_L11	3	57	
+p2R_L11	4	17	
+p2R_L11	5	21	
+p2R_L11	6	57	
+p2R_L11	7	65	
+p2R_L12	1	2	intext: '2. Octob'
+p2R_L12	2	29	
+p2R_L12	3	66	6/0 shape; 66 or 60
+p2R_L12	4	88	
+p2R_L12	5	40	
+p2R_L12	6	9	
+p2R_L12	7	13	
+p2R_L12	8	22	
+p2R_L12	9	84	
+p2R_L13	1	3?	z/3-shaped figure after 'sondern'; 3 or z
+p2R_L13	2	34	
+p2R_L13	3	75	
+p2R_L13	4	24	
+p2R_L13	5	20?	first digit 2 or 7
+p2R_L13	6	72	
+p2R_L13	7	90	
+p2R_L13	8	17	
+p2R_L13	9	53	
+p2R_L13	10	12	
+p2R_L13	11	41	
+p2R_L13	12	81	
+p2R_L13	13	5?	at right edge, possibly continues
+p2R_L14	1	65	written like '85'/'65'; 6 vs 8
+p2R_L14	2	10?	'fo' may be letters 'so'
+p2R_L14	3	8	
+p2R_L14	4	57	
+p2R_L14	5	41	
+p2R_L14	6	89	

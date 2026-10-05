@@ -1,0 +1,14 @@
+line	settlement
+p2Lb_L01	pos9 A 83? B 53: 53 on crop
+p2Lb_L02	pos1 9 = "9 Octob" date; pos10 cut at right edge (A 21?, B 2?)
+p2Lb_L05	B leading "2." is an enumeration after "werden", dropped
+p2Lb_L06	# = monogram after 20 (B)
+p2Lb_L09	pos3 A 91? B 81?: 81 on crop, M
+p2R_L03	B "10?" is the word before 7 (letters), dropped
+p2R_L05	B trailing "10?" is the word "sein", dropped
+p2R_L06	pos3 A 29? B 19: 19 on crop
+p2R_L09	pos5 A 13 B 17: 13 (3 as in this hand), M
+p2R_L13	pos1 A 7? B 3?: 3-form, M; pos5 A 70 B 20?: same form as "20" elsewhere on the page, M; pos13 cut at edge
+p2R_L14	B "10?" is the word "so", dropped
+p2R_L02	last 13 = "den 13 huius" date
+p2R_L12	pos1 2 = "Den 2./5. Octob" date

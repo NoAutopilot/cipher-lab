@@ -1,0 +1,86 @@
+{
+ "N": 195,
+ "n_M": 17,
+ "residue21_count": 8,
+ "step0_shuffled_copy": {
+  "T": {
+   "score": -2.2182,
+   "judge_pass": false
+  },
+  "T21r": {
+   "score": -2.1862,
+   "judge_pass": false
+  }
+ },
+ "judge_void": false,
+ "gloss_calibration": {
+  "N": 62,
+  "score": -1.4229
+ },
+ "judge": {
+  "real_p05": -0.8662,
+  "real_p01": -0.9779,
+  "real_median": -0.7677,
+  "null_p99": -1.847
+ },
+ "T": {
+  "score": -1.7265,
+  "shuffled_target_p99": -1.9868,
+  "shuffled_target_mean": -2.1591,
+  "shuffled_ge_real": 0,
+  "shifted_max": -2.0389,
+  "shifted_ge_real": 0,
+  "minus_gloss": -0.3036,
+  "beats_controls": true,
+  "PASS": false
+ },
+ "T21r": {
+  "score": -1.6004,
+  "shuffled_target_p99": -1.9627,
+  "shuffled_target_mean": -2.1307,
+  "shuffled_ge_real": 0,
+  "shifted_max": -2.0378,
+  "shifted_ge_real": 0,
+  "minus_gloss": -0.1775,
+  "beats_controls": true,
+  "PASS": false
+ },
+ "residue21_test": {
+  "rank_r": 1,
+  "rank_z": 14,
+  "top5": [
+   "r",
+   "l",
+   "i",
+   "e",
+   "n"
+  ],
+  "scores": {
+   "a": -1.7028,
+   "b": -1.7345,
+   "c": -1.7675,
+   "d": -1.6854,
+   "e": -1.635,
+   "f": -1.7432,
+   "g": -1.6837,
+   "h": -1.702,
+   "i": -1.6222,
+   "k": -1.741,
+   "l": -1.6082,
+   "m": -1.6897,
+   "n": -1.6429,
+   "o": -1.7561,
+   "p": -1.7367,
+   "q": -1.7676,
+   "r": -1.6004,
+   "s": -1.6433,
+   "t": -1.6847,
+   "u": -1.6677,
+   "w": -1.727,
+   "x": -1.7505,
+   "y": -1.7801,
+   "z": -1.7265
+  },
+  "verdict": "r favoured"
+ }
+}
