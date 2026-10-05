@@ -614,3 +614,10 @@ note of 24 Sept 2026 has no reply on file; nothing moves.
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **Huntington mssBLA 186 (Madrid, 13 Sept 1728, two cipher lines)**: **D2** (Partially decrypted; outward "partially deciphered (about 75%)"), 75.0% (C 129 of 172 across BLA 184, 186, 191(a)). Check: key of 395 groups from the run's contemporary decipherments (C), leave-one-item-out 0.68-0.91. Sentence: "In BLA 191(a) the writer complains that Mr Keene ('monsieur ken ne') likes him but has no orders concerning him, and asks to be sent some order."
+
+## Reading revision after this audit (A4-RFHUN, 5 Oct 2026; rule 10 propagation)
+
+Image check on native crops (NOTES.md "A4-RFHUN"): group 849 is glossed "parle" on BLA188 p3, not "monsieur" (the passes
+had the gloss one column left). BLA 186 p3 now reads mechanically *Monsieur de Patigno m'en a parlé ce soir*, 849 C (one
+gloss); the "[849, doubtful]" above and row 4 of the second-opinion table are superseded. 575 = j' (C) at two BLA 191(a)
+tokens. Target counts: C 131, M 20, U 21 of 172 (were C 129, M 22, U 21). No class changed by this worker (not a verifier).

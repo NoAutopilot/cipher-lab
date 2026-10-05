@@ -12,7 +12,8 @@ on both passes' group sequences: A L11 '? 665 576 1200 1020 660 899 831 1143' = 
 Rule 'key-consistent': at a column where A and B read different groups, take the gloss written over that column (either
 pass, normalised). If that gloss is attested for A's group elsewhere in the run (columns where both passes agree on the
 group) and not for B's, take A; the converse takes B. Same test settles 'agree-flagged' columns to H when the gloss
-there matches the group's gloss elsewhere. Rows 'image' are settled from a crop (settle_image.tsv, by eye, R17).
+there matches the group's gloss elsewhere. Rows 'image' are settled from a crop (settle_image.tsv, by eye, R17); its optional 'gloss' column
+re-places the gloss over that column when the passes attached it to the wrong group ('-' = none; A4-RFHUN, 5 Oct 2026).
 Everything else stays M with the alternative kept.
 """
 import csv, sys, unicodedata, re, collections, io, os
@@ -100,7 +101,7 @@ def build():
     p = os.path.join(HERE, 'settle_image.tsv')
     if os.path.exists(p):
         for r in csv.DictReader(open(p), delimiter='\t'):
-            img[(r['line'], int(r['pos']))] = (r['group'], r['conf'], r['note'])
+            img[(r['line'], int(r['pos']))] = (r['group'], r['conf'], r['note'], (r.get('gloss') or '').strip())
     ct, log = [], []
     for l, cols in table.items():
         for k, (x, y) in enumerate(cols, 1):
@@ -133,8 +134,10 @@ def build():
                     conf = 'M'; rule = 'undecided'
                 log.append((l, k, ga, gb, gl, ';'.join('%s:%s' % (g, ev[g].most_common(2)) for g in cand), rule, sign))
             if (l, k) in img:
-                s2, c2, note = img[(l, k)]
+                s2, c2, note, g2 = img[(l, k)]
                 sign, conf, rule = s2, c2, 'image:' + note
+                if g2:  # gloss re-placed from the image ('-' = no gloss over this column; A4-RFHUN, 5 Oct 2026)
+                    gl = '' if g2 == '-' else g2
                 log.append((l, k, ga, gb, gl, '', 'image', sign))
             ct.append((l, k, sign, conf, alt, rule, gl))
     return ct, log, ev

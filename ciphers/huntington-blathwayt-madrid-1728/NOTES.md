@@ -270,7 +270,7 @@ context fill was attempted and so no control was needed):
 - **BLA186 p1** (after "...s'il se trouve sur leurs estats.", Ripperda's escape): *l'ambassadeur [73] a été fort [470]
   [778] [190]te affaire.* ("[190]te affaire" is likely "cette affaire", an inference, not graded.)
 - **BLA186 p3** (after "...pour empescher les gallions de passer en Europe."): *Monsieur de Patigno m'en a [849 =
-  'monsieur', one gloss in BLA188, doubtful] ce soir.* Patiño, by the key's syllables pa-ti-g-no.
+  'monsieur', one gloss in BLA188, doubtful] ce soir.* (Superseded 5 Oct 2026, A4-RFHUN: 849 = parle, see that section.) Patiño, by the key's syllables pa-ti-g-no.
 - **BLA191 p5** (enclosure (a), 1729): *L'[805] que je vous ai, milord, est bien grande pour votre lettre du [6] [j'y|
   parle] ai ... quand ce [1210] de [689]ars à la première ad[..]ri... hier quand vous me [460]ri(?) sçavoi[r], comme je
   [285]is agit après le départ du [214], car Monsieur Keene m'a[i]me, mais il n'a aucun ordre des [1019][711]s pour
@@ -378,9 +378,9 @@ Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found
 - Action that depends on nobody: the TNA Discovery API search this folder names -- SP 94 and SP 98-100 descriptions for 1728-29 for "Paretti"/"Pareti", ~$0.5.
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
-Read so far: 129 of 172 target tokens at C (75.0%; R17 table: BLA184 3/7, BLA186 20/24, BLA191 p5 106/141), M 22, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
+Read so far: 131 of 172 target tokens at C (76.2%; R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), M 20, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
 - 18 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) (805, 6, 1210, 689, 460, 285, 214, 1019, 711, 1118, 1052, 836, 1152, 222, 73, 470, 778, 190) - blocker: not-attempted; R17 "What is left" names the method; next: context-fill pass with a matched control (blank the same share of glossed BLA185 and score), any fill graded S only if the control passes (cost estimated, not in the folder), ~$3
-- group 849 ("monsieur", one gloss) and the 7-as-'>'/')' check on the glossed training pages - blocker: not-attempted; R17 and V3a suggestion; next: crop the BLA188 gloss column and the disputed 7/3 columns from the 1200 px disk copies and eye-check, ~$0.5
+- the descending z-shaped digit in the BLA188 p5-p6 and BLA194 hands (read 3 in 1013, 396, 5 in 385/555, 9 in 1199; the key would want 7 at 1017 se, 796 on, 387 et) - blocker: not-attempted; A4-RFHUN (5 Oct 2026) set 6 such columns to M; next: a glyph census of that form across BLA188 p4-p6 and BLA194 p1 on native crops, settling it against every column whose gloss picks one reading, ~$2
 - BLA184 range 1150/1240/1243/1250/1259 (probable names section) - blocker: open-codes; R17: glosses of this range elsewhere do not fit, the glossed items never use it
 - a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: not-attempted; Verifier audit and Premise check (d); next: TNA Discovery API search of SP 94/98-100 and SP 36/13-14 descriptions for "Paretti"/"Pareti" (While waiting), ~$0.5
 
@@ -390,9 +390,9 @@ Read so far: 129 of 172 target tokens at C (75.0%; R17 table: BLA184 3/7, BLA186
 - [x] known-keys: the run's own period glosses give the key (395 groups, grade C)
 - [ ] print: TNA SP 94/98-100 and SP 36 descriptions; HMC Polwarth V (1961) for a decipherment of BLA191(a)
 - [x] key-rebuild: key.tsv rebuilt from the glosses by build_key.py (R17)
-- [ ] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages
+- [x] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap)
 - [ ] retry: context-fill of the 21 unkeyed groups with a BLA185 blanking control
-Verdict: keep going: 4 internal gaps; cheapest next: TNA Discovery API search for Paretti in SP 94/36, ~$0.5
+Verdict: keep going: 4 internal gaps; cheapest next: descending-glyph census on BLA188 p4-p6 / BLA194 p1, ~$2 (the TNA Discovery search was run by RUN6-BLATH, 5 Oct 2026: piece-level only, see below)
 
 ## IA-DESK-ALT (account-3 worker, 5 Oct 2026): HMC Polwarth IV and V via Internet Archive
 
@@ -421,3 +421,26 @@ Route: `discovery.nationalarchives.gov.uk/API/search/records` (JSON), 17 request
 - Only Paretti/Pareti hits in State Papers: SP 78/176/39 (C7332296, 9 Apr 1725, Marchmont and Whitworth to Newcastle, "Abbé-Paretti", France series) and SP 78/211/56 (C7337693, 13 Mar 1736, Waldegrave to Newcastle, letter of introduction for "Abbé Pareti"; same name, identity unchecked). Neither is a copy or decipherment of BLA 186/191(a).
 - Not searched: SP 36/13-14 items by other terms, SP 98-100 (Discovery series check not run for SP 98), BL Newcastle papers.
 - Next (blocked from the cloud: needs item-level view of SP 94/99-100): page images or a reading-room check of SP 94/99-100 for Paretti letters, or the TNA SP 94 calendar if one exists; owner-side step, no ASKS row filed.
+
+## A4-RFHUN: native image check of 849 and the 7/3 columns (account-4 worker, 5 Oct 2026 23:40-23:5x UTC)
+
+Native IIIF region crops (hdl.huntington.org/iiif/2/p15150coll7:<pointer>/<region>/2400,/0/default.jpg; pages are 8708 x 11608
+native, regions placed from the 1200 px disk copies), read by eye in this session, one pass; crops kept out of the repo (URLs
+reproducible from images/manifest.json pointers). Requests: hdl.huntington.org 23 (info.json + region for 11 crops, plus one info.json probe), 1.6 s apart.
+
+- **849 (BLA188 p3 L03).** The group is clearly 849. The interlinear gloss "j' ai parle avec monsieur Pa:" sits one group
+  further right than both passes recorded: 1255 carries no gloss, 575 = j' (as BLA190 p7 L01), 26 = ai (as BLA185, BLA190),
+  **849 = parle**, 101 = avec (as 12 other columns), 737 = monsieur, 822 = pa. The passes' "849 = monsieur" was this shift.
+  On BLA186 p3 the group is also clearly 849 (native crop). Mechanical reading of BLA186 p3 now: *Monsieur de Patigno m'en a
+  parle ce soir* (849 C, one gloss, n=1).
+- **7/3.** BLA188 p3 L03 pos 8 and BLA187 p3 L01 pos 6 read "73)": the final ')' is the hand's 7 (R17's BLA186/191 finding holds
+  on these glossed pages too), so 733 -> 737 (monsieur, now n=8); 733 leaves the key. BLA188 p3 L03 pos 2 reads "2)0" = 270
+  (gloss d either way). BLA187 p3 L06 pos 8 kept 250 (middle glyph matches the hand's 5 in 756, not its 7).
+- **Not settled:** a descending z-shaped digit in BLA188 p5-p6 and BLA194 p1 is transcribed 3 in 1013 ("se" x4) and 396
+  ("on" x2), 5 in 385 (et) and 555, 9 in 1199; the key would make it 7 (1017 se, 796 on, 387 et). Those 6 columns set to M in
+  settle_image.tsv (they no longer feed key.tsv; 396 leaves the key, 1013 n=27 -> 23). Not checked: BLA179 p6 L02 pos 6
+  (383, already M) and BLA189 p3 L19 pos 1 (1147 vi beside 1143 v, consistent glosses).
+- **Mechanism.** settle.py gained an optional `gloss` column in settle_image.tsv (re-places a gloss the passes attached to the
+  wrong column; '-' = none). `python3 settle.py && python3 build_key.py && python3 ../../tools/decode_key.py . --check`: 0.
+- **Effect on the targets (172 tokens): C 129 -> 131, M 22 -> 20, U 21** (the +2 C are the two BLA191 575 tokens). BLA186 p3 pos 10 849 monsieur -> parle (C, value only);
+  BLA191 p5 L02 pos 9 and L11 pos 4, 575 'parle|j'' (M) -> j' (C). Key 395 -> 392 rows.

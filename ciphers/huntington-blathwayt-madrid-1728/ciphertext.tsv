@@ -172,7 +172,7 @@ BLA187_p3_L01	2	731	H		agree	mettr
 BLA187_p3_L01	3	581	H		agree	ie
 BLA187_p3_L01	4	1013	H		agree-flagged,key-consistent	s
 BLA187_p3_L01	5	1240	H		agree	s
-BLA187_p3_L01	6	733	H		agree	monsieur
+BLA187_p3_L01	6	737	H		image:A4-RFHUN native crop 5 Oct 2026: 73) final glyph the hand's 7; passes both 733	monsieur
 BLA187_p3_L01	7	822	H		agree	ra
 BLA187_p3_L01	8	1109	H		agree	li
 BLA187_p3_L02	1	506	H		agree	gn
@@ -268,14 +268,14 @@ BLA188_p3_L02	6	1268	M		agree-flagged	e
 BLA188_p3_L02	7	697	H		agree	mi
 BLA188_p3_L02	8	665	H		agree	
 BLA188_p3_L03	1	941	H		agree	r
-BLA188_p3_L03	2	250	H		agree	d
-BLA188_p3_L03	3	1255	H		agree	j'ai
-BLA188_p3_L03	4	575	H		agree	parle
-BLA188_p3_L03	5	26	H		agree	avec
-BLA188_p3_L03	6	849	H		agree	monsieur
-BLA188_p3_L03	7	101	H		agree	pa
-BLA188_p3_L03	8	733	H		agree-flagged,key-consistent	monsieur
-BLA188_p3_L03	9	822	M		agree-flagged	ma
+BLA188_p3_L03	2	270	H		image:A4-RFHUN native crop 5 Oct 2026: 2)0, middle glyph the hand's 7 as in 5)5=575 on the same line	d
+BLA188_p3_L03	3	1255	H		image:A4-RFHUN native crop 5 Oct 2026: group clear; the gloss 'j' ai parle avec monsieur Pa' sits one group right of where both passes put it	
+BLA188_p3_L03	4	575	H		image:A4-RFHUN native crop 5 Oct 2026: gloss j' (as BLA190 p7 L01)	j'
+BLA188_p3_L03	5	26	H		image:A4-RFHUN native crop 5 Oct 2026: gloss ai (as BLA185, BLA190)	ai
+BLA188_p3_L03	6	849	H		image:A4-RFHUN native crop 5 Oct 2026: 849 clear; gloss written under it is 'parle', not 'monsieur'	parle
+BLA188_p3_L03	7	101	H		image:A4-RFHUN native crop 5 Oct 2026: gloss avec (as 12 other columns)	avec
+BLA188_p3_L03	8	737	H		image:A4-RFHUN native crop 5 Oct 2026: 73) final glyph the hand's 7; passes both 733	monsieur
+BLA188_p3_L03	9	822	H		image:A4-RFHUN native crop 5 Oct 2026: gloss 'Pa:' (as 5 other columns)	pa
 BLA188_p3_L04	1	1109	H		agree	ti
 BLA188_p3_L04	2	506	H		agree-flagged,key-consistent	g
 BLA188_p3_L04	3	758	H		agree	no
@@ -824,7 +824,7 @@ BLA188_p5_L12	8	1013	M	B:1018	undecided	fer
 BLA188_p5_L13	1	792	H		agree	oit
 BLA188_p5_L13	2	1185	H		agree	utile
 BLA188_p5_L13	3	1020	H		agree	si
-BLA188_p5_L13	4	396	M	B:796	undecided	on
+BLA188_p5_L13	4	396	M	B:796	image:A4-RFHUN native crop 5 Oct 2026: gloss on; first glyph unlike the plain 3 of 1013 on the same line; 796 (on, n=10) likely, not certain	on
 BLA188_p5_L13	5	1013	H		agree	s'explique
 BLA188_p5_L13	6	445	M	B:945	undecided	oit
 BLA188_p5_L13	7	792	H		agree	davantage
@@ -869,19 +869,19 @@ BLA188_p5_L18	5	943	H		agree	re
 BLA188_p5_L18	6	732	H		agree	mieux
 BLA188_p5_L18	7	169	H		agree	com
 BLA188_p5_L18	8	831	H		agree	po
-BLA188_p6_L01	1	1013	H		agree	se
+BLA188_p6_L01	1	1013	M		image:A4-RFHUN native crop 5 Oct 2026: gloss se; final/first glyph is the descending z-shaped form this hand also uses where the key needs 7 (796 on, 1017 se, 387 et); 3/5/7 not settled by eye	se
 BLA188_p6_L01	2	385	H		agree	et
 BLA188_p6_L01	3	1149	H		agree	une
 BLA188_p6_L01	4	555	M	B:955	undecided	nouvelle
 BLA188_p6_L01	5	21	H		agree	ad
 BLA188_p6_L01	6	945	H		agree	ra
-BLA188_p6_L01	7	1013	H		agree	se
+BLA188_p6_L01	7	1013	M		image:A4-RFHUN native crop 5 Oct 2026: gloss se; final/first glyph is the descending z-shaped form this hand also uses where the key needs 7 (796 on, 1017 se, 387 et); 3/5/7 not settled by eye	se
 BLA188_p6_L01	8	385	M	A:-	gap	et
 BLA188_p6_L02	1	932	H		agree	quelque
 BLA188_p6_L02	2	1041	H		agree	secours
 BLA188_p6_L02	3	385	H		agree	et
 BLA188_p6_L02	4	924	M	B:954	undecided	repon
-BLA188_p6_L02	5	1013	H	1015	key-consistent	se
+BLA188_p6_L02	5	1013	M	1015	image:A4-RFHUN native crop 5 Oct 2026: gloss se; final/first glyph is the descending z-shaped form this hand also uses where the key needs 7 (796 on, 1017 se, 387 et); 3/5/7 not settled by eye	se
 BLA189_p3_L01	1	208	H		agree	comme
 BLA189_p3_L01	2	659	H		agree	l'
 BLA189_p3_L01	3	78	H		agree	ambassadeur
@@ -1444,7 +1444,7 @@ BLA194_p1_L06	5	892	H		agree	premier
 BLA194_p1_L06	6	907	H		agree	proposition
 BLA194_p1_L06	7	1250	H		agree	
 BLA194_p1_L07	1	1020	H		agree	si
-BLA194_p1_L07	2	396	H		agree	on
+BLA194_p1_L07	2	396	M		image:A4-RFHUN native crop 5 Oct 2026: gloss on; final/first glyph is the descending z-shaped form this hand also uses where the key needs 7 (796 on, 1017 se, 387 et); 3/5/7 not settled by eye; 1199 on the same line has two of the same glyph	on
 BLA194_p1_L07	3	1199	M	B:1159	undecided	veu
 BLA194_p1_L07	4	1099	H		agree	h
 BLA194_p1_L07	5	60	H		agree	agreable
@@ -1469,7 +1469,7 @@ BLA194_p1_L09	7	433	H		agree	espera
 BLA194_p1_L10	1	926	H		agree	que
 BLA194_p1_L10	2	655	M		agree-flagged	l'arrondissement
 BLA194_p1_L10	3	96	H		agree	
-BLA194_p1_L10	4	1013	H		agree	se
+BLA194_p1_L10	4	1013	M		image:A4-RFHUN native crop 5 Oct 2026: gloss se; final/first glyph is the descending z-shaped form this hand also uses where the key needs 7 (796 on, 1017 se, 387 et); 3/5/7 not settled by eye	se
 BLA194_p1_L10	5	942	H		agree	ve
 BLA194_p1_L10	6	109	H		agree	aussitot
 BLA194_p1_L10	7	991	H		agree	faite
