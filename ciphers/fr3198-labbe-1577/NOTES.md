@@ -131,3 +131,16 @@ The one action that depends on nobody: Tomokiyo's fr.4695 pages (bnf4715.htm and
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: search Tomokiyo's fr.4695 pages on disk (bnf4715.htm and neighbours) for the 5 Feb 1577 no.51 key, disk-only, ~$0.3; then one Gallica fr.4695 manifest lookup. Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## RUN6-LABBE (5 Oct 2026, 05:39-05:42 UTC by date -u)
+
+Disk grep, sources/cryptiana (web/*.htm, blog, keys, CRYPTO-INDEX/READABLE/PAPERS tsv, md): "4695" 0 hits in Tomokiyo's pages
+(bnf4715.htm is fr.4715, a different Nevers volume, not 4695; nevers.htm's volume list has fr.4715 but no fr.4695). Also no Prague/Rudolf/Desiderio hit
+in nevers.htm. So Tomokiyo carries nothing on fr.4695 no.51 or a 5 Feb 1577 key. Not found in the local snapshots (a search result, not a novelty verdict).
+Gallica: 1 SRU query (`gallica all "Français 4695"` and `dc.type all "manuscrit"`, 3 hits) gave fr.4695 =
+https://gallica.bnf.fr/ark:/12148/btv1b90582923, "Recueil de pièces originales et de copies concernant l'histoire des années 1574 à 1590"
+(digitised). 1 manifest read (tools/gallica_folio.py): 209 canvases, all labelled 'NP', 0 folio labels, so "no.51" cannot be mapped to a canvas
+from the manifest; canvas 1 is 8400x5896 and ~7800x5600 after. Re-fetch: `python3 tools/gallica_folio.py btv1b90582923 --list`.
+No decoding, no images viewed. Requests: gallica.bnf.fr 2 (SRU 1, manifest 1), both 200.
+Next (agent, ~USD 1.5): fetch the BnF archivesetmanuscrits record for fr.4695 (item list: does "no.51" = a piece number, with folio range and
+5 Feb 1577 date) to give --anchor canvas=folio pairs; then view the candidate leaf at native resolution via tools/iiif_lines.py. Status stays `blocked`.
