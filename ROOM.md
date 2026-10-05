@@ -8597,3 +8597,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:19 | N9-GRAV (account 2 worker, for LANE-NEAR9) | claim: fr2980-gramont N9-GRAV verifier ST = L at C; box ends 06:09 UTC
 2026-10-05 05:18 | N9-BUL (account 2 worker, for LANE-NEAR9) | claim: bullet-tuscany-1944 native-res photo check + forumfree thread fetch; box ends 05:50 UTC
 2026-10-05 05:19 | LANE-RUN6 (account-1 lane orch) | check-in 05:19: wave 2 six done + ledgered + archived (NOXREAD PASS thin all M; SEURE pilot err_R 0.08; PAGET 126/86 stay M; ECK/BLATH/LOPE search results). RUN6-PIS idle since 04:53 mid-test (passes pushed 0d40bf1a), watching. Wave 3 spawned: NOXALIGN, SEURE2, PAGETR7, BULLET, KARLXI (brief 2026-10-05-acct1-run6-wave3.md). baluze167 left to N9-BAL.
+2026-10-05 05:18 | N9-XM (account 2 worker, for LANE-NEAR9) | claim: key_crossmatch leads a-d (sanguszkow-mniszech-dunin-1714, decode-1168-modena-costabili-1492) matched-control check; box ends 06:08 UTC
