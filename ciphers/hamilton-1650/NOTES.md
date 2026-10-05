@@ -295,3 +295,10 @@ for "cipher". p.n11 (lead, not this target): an 18th-century agreement with Jame
 muniments; he describes "searching out the keys to Ralph Sadler's cipher and making a key to Sir Francis Walsingham's" -- an
 18th-century key to Walsingham's cipher made from the Hamilton papers (now NRS GD406). Logged also in bowes-walsingham-1583.
 Spelling "cypher" and the word "1650" not yet searched in this volume.
+Search-inside "cypher" (5 Oct 2026 04:05 UTC, owner): 18 hits, none for 1650. p.194 (undated letter: "so much as your Lopp writ is necessary to be
+put in cypher"). The rest are **index entries for a cover-name code** printed on pp.40-41 (and 50, 61-68): Angus = England,
+Binnie lord = Elector Palatine, Chamberlan = Oxenstierna, "Clydesdaill" = ?, Innermeith lord = Patrick Ruthven, Laudian =
+Germany, Mar = Sweden, Ross/Rose = France, Rothes earl of = "duc de Ferroit", R R = Parliament; Mantua "a cypher word" (61, 65);
+"probably cypher": Iron Smiths (65), Jasper Jennings (68), Marre Martins (66), Swordis (67), Woollen Drapers (65); "Cypher,
+letters in" 40, 41, 67. That is a Scottish cover-name code of Hamilton's German/Swedish years (Oxenstierna, Elector Palatine,
+Patrick Ruthven: c. 1631-32), not the 1650 numeric nomenclator. Lead logged for the Swedish targets (riksarkivet-r4282-1628).

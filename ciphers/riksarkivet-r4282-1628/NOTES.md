@@ -1475,3 +1475,12 @@ Page numbers below come from the running heads in the OCR and are accurate to ab
 - **pp.821-822:** letter 602, Nürnberg 23 July 1632, is printed in raw numbers. That is the solved ciphers/oxenstierna-gustav-adolf-1632 (Torpadie 1888), not new.
 
 For this target: no 1628 Camerarius letter is in either volume. The letter-268 and letter-282 pairs plus the I:3 footnotes give a period chancery cipher (two-digit homophones, 3-4 digit nomenclator) that could be rebuilt as a key and compared with R4282's sign system. R4282 uses single digits, Greek letters and capitals, so a fit is unlikely on design grounds; that is inferred, not tested. Suggestion (not done, Usage 7): add letter 268 and letter 282 to aosb/ as `key_aosb1626.tsv` with `tools/interlinear_align.py`-style pairs, and run key_crossmatch over the Riksarkivet R-records, about $1. **No gap closes**: the Remaining-gaps print line already reads "every cloud-reachable route done".
+
+## Lead: a Hamilton cover-name code naming Oxenstierna (5 Oct 2026 04:05 UTC)
+
+HMC Supplementary Report on the Hamilton MSS (1932; archive.org supplementaryrep0000grea, owner's search-inside) indexes a
+cover-name code printed on pp.40-41: "Chamberlan, cypher for Oxenstierna", "Mar, cypher for Sweden" (p.50), "Angus, cypher for
+England", "Laudian, cypher for Germany", "Ross, cypher for France", "Binnie, lord, cypher for Elector Palatine", "Innermeith,
+lord, cypher for Patrick Ruthven". Probably Hamilton's 1631-32 expedition to Gustav Adolf (date not yet seen; pp.40-41 unread).
+A cover-name list, not a numeric key, so unlikely to read the 1628 Camerarius cipher directly; recorded as context for the
+Swedish targets. Next if wanted: pp.40-41 page read (owner loan, 2 min).
