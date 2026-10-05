@@ -1,0 +1,12 @@
+statistic	value
+flags	possessive=True guard=True markers_deleted=True
+known_answer_entries	479
+known_answer_decided	326
+known_answer_accuracy	0.896
+shuffled_key_accuracy_20	0.588 0.628 0.664 0.553 0.605 0.560 0.548 0.515 0.548 0.480 0.537 0.529 0.533 0.601 0.707 0.509 0.618 0.540 0.552 0.611
+shuffled_key_decided_20	228 234 238 244 253 207 221 229 241 221 218 244 227 243 239 234 249 235 230 247
+shuffled_key_accuracy_mean_max	0.571 0.707
+unassigned_entries	192
+unassigned_decided	79 (1: 21, 2: 58)
+gate	PASS
+assignment_used	yes

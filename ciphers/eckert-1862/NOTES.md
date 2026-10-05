@@ -1169,3 +1169,41 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 26 print-matched mssEC 18 entries were not; first the 3 unguarded collisions (white, animals, Hotel) and the Lehigh / weigh conflicts; next: image-reconcile with the eckert-1864 method, ~$4
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; cheapest next: print-free book assignment for the 192 '?' mssEC 18 entries (pre-registered, shuffled-key control), ~$2; then the image check of the six collision/conflict entries, ~$4
+
+## RUN6-ECK62-eckert-1862 (5 Oct 2026, account 1 worker for LANE-RUN6): print-free book assignment of the 192 '?' mssEC 18 entries
+
+Pre-registered and pushed before any number: `ec18/PREREG-ECK62-FREE.md` (commit fea9ffb3, 05:41 UTC). Script `ec18.py DATA
+--assign-free DIR62 --write|--check` (`--check` current); outputs `ec18/assign_free.tsv`, `ec18/assign_free_summary.tsv`.
+Statistic: per keyed word-kind meaning, bigram support (count >= 2) with its left or right neighbour in the 8 OR 1862
+volumes RUN3-ECK62 used as DIR62 (no 1864-65 print, so no entry's own telegram); both keys, possessive + guard as the
+committed outputs; marker words deleted from every entry; book = the key with >= 2 more supported meanings.
+- Known answer (479 marker-known entries, markers deleted): 326 decided, 292 right = 0.896. Per class: book 1 173/199
+  decided right (0.869; 112 undecided), book 2 119/127 (0.937; 41 undecided). Precision of a "1" decision 173/181 = 0.956,
+  of a "2" decision 119/145 = 0.821 (26 book-1 entries called 2).
+- Control (20 shuffled-meaning keys, word rows only, coverage and inventory kept): accuracy 0.480-0.707, mean 0.571;
+  per class on seeds 0-2 about 0.59-0.62 (book 1) and 0.59-0.75 (book 2). Gate (>= 0.85, >= 20 decided, > max shuffled,
+  >= mean + 0.15): PASS on all four.
+- Assigned: 79 of 192 '?' entries (21 -> `1f`, 58 -> `2f`); 113 stay '?' (margin < 2). The book of an `1f`/`2f` entry is
+  grade S (cryptanalytic, with control); its tokens keep the assigned key row's grade; by the known-answer precision expect
+  about 1 in 6 `2f` entries to be book 1. No reading regenerated with the assigned books (not in the brief); ec18.py's
+  book rule and the committed entries/readings are unchanged.
+- Data: vol18.json re-fetched (sha256 cb162574..., matches pilot1864/manifest.tsv); DIR62 8 `_djvu.txt` to scratch, not
+  committed (ids in RUN3-ECK62 above). Requests: hdl.huntington.org 1, archive.org 8, >= 1.6 s apart. 0 vision, 0 subagents.
+
+## Remaining gaps (finish-or-blocker pass, RUN6-ECK62, 5 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries (14 in OR, H 369 C 2) and 17 fully keyed Cipher No. 2 entries (12 in OR), from the volunteer text, read with the possessive option and collision guard (RUN3-ECK62); 79 of the 192 '?' entries given a book at S (RUN6-ECK62: 21 No. 1, 58 No. 2)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; mssEC 18 read by text with both books, aligned to OR, possessive and guard applied (RUN3-ECK62: 6/9 collisions removed, 0/198 false guards); white, animals, Hotel and the Lehigh / weigh conflicts stay open; next: image-reconcile those entries (9765.139, 9911.425, 10010.593, 9947.505, 10020.609, 9965.539) with the eckert-1864 method, ~$4
+- 79 print-free-assigned mssEC 18 entries, reading with the assigned book - blocker: not-attempted; next: an ec18.py option to read `1f`/`2f` entries with the assigned key and list fully keyed ones (book grade S), ~$1
+- 113 mssEC 18 entries still '?' (margin < 2 under both instruments) - blocker: not-attempted; next: same rule at margin 1 is not pre-registered and would need its own known-answer precision; or the image (marker words the volunteer text may have dropped), within the image-check step, ~$4
+
+## Escalation (RUN6-ECK62, 5 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); 79 of the 192 '?' mssEC 18 entries assigned print-free 5 Oct 2026 (RUN6-ECK62, 0.896 known answer vs shuffled-key mean 0.571); next: read them with the assigned book, ~$1
+- [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; OR ser. I vols. 32-49 done for mssEC 18 (A3V3-ECK18, A3V3-ECK2); the 26 matches aligned word by word (A3V3-ECKC)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [ ] image-check: the ten mssEC 15 readings were reconciled against the image (reading.md); the 26 print-matched mssEC 18 entries were not; first the 3 unguarded collisions (white, animals, Hotel) and the Lehigh / weigh conflicts; next: image-reconcile with the eckert-1864 method, ~$4
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 5 internal gaps; cheapest next: read the 79 print-free-assigned mssEC 18 entries with their assigned book (ec18.py option), ~$1; then the image check of the six collision/conflict entries, ~$4

@@ -5,6 +5,7 @@ Cipher No. 1 with ciphers/eckert-1864/decode.py (imported, not copied), then pri
 Usage: ec18.py DATA_DIR OR_DIR [--book 2] [--possessive] [--guard DIR62] [--write | --check]
        ec18.py DATA_DIR OR_DIR --guard-test DIR62 [--possessive]
        ec18.py DATA_DIR OR_DIR --assign [--possessive] [--guard DIR62] [--write | --check]
+       ec18.py DATA_DIR --assign-free DIR62 [--write | --check]
   DATA_DIR/vol18.json: one CONTENTdm dmQuery (URL and sha256 in ../pilot1864/manifest.tsv; the Decoding the Civil War
   volunteers' transcription, not committed). OR_DIR/<vol>.txt: IA _djvu.txt per OR volume (ids in or_volumes.tsv; not
   committed, re-fetch). --write rewrites entries.tsv, matches.tsv, control.tsv and readings.md; --check exits 1 if any
@@ -20,6 +21,9 @@ tokens it left plain to guard{_b2}.tsv. The committed outputs are written with t
 COLLISION word tokens caught vs AGREE word tokens wrongly guarded). --assign assigns Cipher No. 1 or No. 2 to the '?'
 entries by print agreement (PREREG-ECK62 section c) with a known-answer run on the marker-assigned entries and a
 rotated-window control, writing assign.tsv and assign_summary.tsv.
+RUN6-ECK62 (5 Oct 2026; PREREG-ECK62-FREE.md): --assign-free DIR62 assigns the book with no print of the entry: corpus
+bigram support (DIR62, OR 1862 volumes) for each keyed meaning against its neighbours, both keys, markers deleted;
+known answer on the marker-known entries; control = 20 shuffled-meaning keys. Writes assign_free{,_summary}.tsv.
 
 Entries: the volunteer text is split on blank lines; a block whose first three lines carry a clear date (month day
 year) opens an entry, a block without one continues the current entry (pages in page-number order). The header lines
@@ -278,6 +282,8 @@ def main(argv):
         return 0
     if "--assign" in argv:
         return assign(argv)
+    if "--assign-free" in argv:
+        return assign_free(argv)
     data, ordir = argv[0], argv[1]
     bk = "2" if "--book" in argv and argv[argv.index("--book") + 1] == "2" else "1"
     other, sfx = ("1" if bk == "2" else "2"), ("_b2" if bk == "2" else "")
@@ -474,6 +480,113 @@ def assign(argv):
             return 1
         print("current")
     print(outs["assign_summary.tsv"])
+    return 0
+
+
+MARK = N1 | N2
+UNIT = re.compile(r"\[[^\]]*\]|\{[^}]*\}|[^\s\[\]{}]+")
+
+
+def bigrams(d):
+    """Bigram counts over lowercased [a-z]+ words of every DIR62 file."""
+    c = collections.Counter()
+    for f in sorted(Path(d).glob("*.txt")):
+        w = re.findall(r"[a-z]+", f.read_text(errors="ignore").lower())
+        c.update(zip(w, w[1:]))
+    return c
+
+
+def support(reading, bg):
+    """Keyed word-kind meanings in a reading with corpus bigram support (>= 2) on the left or right (PREREG-ECK62-FREE)."""
+    units = []  # (kind, words): kind m = scored meaning, p = plain/other, b = boundary
+    for u in UNIT.findall(reading):
+        if u.startswith("{"):
+            units.append(("b", []))
+        elif u.startswith("["):
+            mw = meaning_words(u)
+            ws = re.findall(r"[a-z]+", re.sub(r"\(.*?\)", " ", u[1:-1].lower()))
+            units.append(("m" if mw and ws else "p", ws))
+        else:
+            units.append(("p", re.findall(r"[a-z]+", u.lower())))
+    n = 0
+    for k, (kind, ws) in enumerate(units):
+        if kind != "m":
+            continue
+        left = units[k - 1][1][-1:] if k and units[k - 1][0] != "b" else []
+        right = units[k + 1][1][:1] if k + 1 < len(units) and units[k + 1][0] != "b" else []
+        n += bool((left and bg[(left[0], ws[0])] >= 2) or (right and bg[(ws[-1], right[0])] >= 2))
+    return n
+
+
+def shuffled(key, seed):
+    rng = random.Random(seed)
+    ks = [k for k, v in key.items() if v[2] == "word"]
+    ms = [key[k][0] for k in ks]
+    rng.shuffle(ms)
+    out = dict(key)
+    for k, m in zip(ks, ms):
+        out[k] = (m,) + tuple(key[k][1:])
+    return out
+
+
+def assign_free(argv):
+    """PREREG-ECK62-FREE: print-free book assignment with a shuffled-key control."""
+    data, d62 = argv[0], argv[argv.index("--assign-free") + 1]
+    g = d1.CollisionGuard([f.read_text(errors="ignore") for f in sorted(Path(d62).glob("*.txt"))])
+    bg = bigrams(d62)
+    keys = {"1": d1.load_key(ROOT / "ciphers/eckert-1864/key.md"), "2": d1.load_key(ROOT / "ciphers/eckert-1864/key-no2.md")}
+    es = entries(data)
+    for e in es:
+        e["book"] = book(" ".join(e["body"]))
+        e["body"] = [" ".join(w for w in l.split(" ") if w.strip(" .,;:'\"()").lower() not in MARK) for l in e["body"]]
+
+    def scores(ks):
+        out = {}
+        for bk in "12":
+            decode_all(es, ks[bk], True, g)
+            for e in es:
+                out.setdefault(e["id"], []).append(support(e["reading"], bg))
+        return out
+
+    def decide(s):
+        return "1" if s[0] - s[1] >= 2 else "2" if s[1] - s[0] >= 2 else "?"
+
+    def known_acc(sc):
+        dec = [(e["book"], decide(sc[e["id"]])) for e in es if e["book"] in "12"]
+        dd = [x for x in dec if x[1] != "?"]
+        return sum(a == b for a, b in dd) / max(1, len(dd)), len(dd), len(dec)
+    real = scores(keys)
+    acc, ndec, nk = known_acc(real)
+    ctl = [known_acc(scores({b: shuffled(keys[b], 1000 * int(b) + s) for b in "12"})) for s in range(20)]
+    cacc = [c[0] for c in ctl]
+    cmean = sum(cacc) / len(cacc)
+    gate = acc >= 0.85 and ndec >= 20 and acc > max(cacc) and acc - cmean >= 0.15
+    unk = [e for e in es if e["book"] == "?"]
+    ud = [decide(real[e["id"]]) for e in unk]
+    out = ["id\tdate\tscore_key1\tscore_key2\tdecision\tassigned"]
+    for e, a in zip(unk, ud):
+        y, m, dd = e["date"]
+        s = real[e["id"]]
+        out.append(f"{e['id']}\t{y}-{m:02d}-{dd:02d}\t{s[0]}\t{s[1]}\t{a}\t{(a + 'f') if gate and a != '?' else '?'}")
+    summ = ["statistic\tvalue", "flags\tpossessive=True guard=True markers_deleted=True",
+            f"known_answer_entries\t{nk}", f"known_answer_decided\t{ndec}", f"known_answer_accuracy\t{acc:.3f}",
+            f"shuffled_key_accuracy_20\t{' '.join(f'{x:.3f}' for x in cacc)}",
+            f"shuffled_key_decided_20\t{' '.join(str(c[1]) for c in ctl)}",
+            f"shuffled_key_accuracy_mean_max\t{cmean:.3f} {max(cacc):.3f}",
+            f"unassigned_entries\t{len(unk)}",
+            f"unassigned_decided\t{sum(x != '?' for x in ud)} (1: {ud.count('1')}, 2: {ud.count('2')})",
+            f"gate\t{'PASS' if gate else 'FAIL'}", f"assignment_used\t{'yes' if gate else 'no'}"]
+    outs = {"assign_free.tsv": "\n".join(out) + "\n", "assign_free_summary.tsv": "\n".join(summ) + "\n"}
+    if "--write" in argv:
+        for k, v in outs.items():
+            (HERE / k).write_text(v)
+    elif "--check" in argv:
+        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        if stale:
+            sys.stderr.write("stale: " + ", ".join(stale) + "\n")
+            return 1
+        print("current")
+    print(outs["assign_free_summary.tsv"])
     return 0
 
 
