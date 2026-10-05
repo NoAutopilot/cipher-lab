@@ -264,3 +264,5 @@ ciphers/clair1161-avis-flandre-1688	"escript et mander a la royne"	2026-10-05	qu
 ciphers/fr16045-pisany-rome-1585	("Pisany" OR "Pisani" OR "Vivonne") AND Rome AND (1586 OR 1587) AND (chiffre OR déchiffrement OR cipher)	2026-10-05	queued	
 ciphers/fr16045-pisany-rome-1585	"le plus trompé homme du monde"	2026-10-05	queued	
 ciphers/fr16045-pisany-rome-1585	"leur entreprise de Sedan"	2026-10-05	queued	
+ciphers/fr16142-noailles-constantinople-1571	"évêque d'Acqs" AND Constantinople AND 1572 AND chiffre	2026-10-05	queued	
+ciphers/fr16142-noailles-constantinople-1571	"si comblés de bien et de mal"	2026-10-05	queued	

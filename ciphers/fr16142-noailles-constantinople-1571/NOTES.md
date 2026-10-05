@@ -1051,3 +1051,11 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] image-check: c262 re-cut; c510-516 native line bands; owner sort of the atlas piles
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS, thin), RUN6-NOXALIGN masked alignment (FAIL, non-test)
 Verdict: keep going: 6 internal gaps; cheapest next: denser-anchor masked alignment of the c262 decode to the gloss, ~$1
+
+## Correction note (VER1-NOX verifier, 5 Oct 2026)
+AUDIT.md "AUDIT 1 (VER1-NOX)": c262 and c510-516 both N0, D0, key published (Tomokiyo) / basin key ours. Two corrections to text
+above, not rewritten in place: (1) RUN1-NX's "on leaves no reader has seen before" reads "on leaves no reader in this repository had
+transcribed before" (rule 10); (2) the c262 passage (gloss.tsv L01-L13) is printed in Charrière III p.258, in the evêque d'Acqs's
+letter "Constantinople, 25 avril 1572" (from p.252), and differs from gloss.tsv at L01 "bruslent" (print "veullent"), L04 "le bestial"
+("l'antienne liberté"), L06 "la faim se trouva" ("la farce se jouera"), L08 "sendormir de ca" ("s'endorme de deçà"). One-line
+suggestion (not done): re-read the c262 gloss against Charrière III p.258 before any further c262 gate.
