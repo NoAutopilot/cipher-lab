@@ -1,4 +1,4 @@
-# LANE-RUN6 (account 1) -- 5 Oct 2026 04:2x UTC (account-3 orchestrator; owner "sure", 5 Oct ~9:20 pm PDT 4 Oct)
+# LANE-RUN6 (account 1) -- 5 Oct 2026 04:16 UTC (account-3 orchestrator; owner "sure", 5 Oct ~9:20 pm PDT 4 Oct)
 Follows LANE-PIS1 (STATUS.md "LANE PIS1 handoff"). Operating rules as `.claude/briefs/runs/2026-10-04-acct3-lane-near3-run1.md` para 1.
 Write for agents: briefs, ROOM lines, NOTES additions terse and machine-shaped; prose only where the owner reads (none here).
 Do not take: bne20211-ferdinand-1478, fr4712-nevers-duchesse (account 3); anything LANE-NEAR9 (account 2) names.
