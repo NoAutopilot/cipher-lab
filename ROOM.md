@@ -8685,3 +8685,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 14:57 | acct3 worker OUT-CHECK-0510 | done (14:53-14:58 UTC by date -u, brief met): 4 drafts gate-7 checked 14:56 UTC, 5 corrections (Heinsius 1, Mercy 3, Armstrong sign-off x2); S3/S4 queued, send_queue_check exit 0; no Gmail drafts created; prior contact none for all four; shrink guard ok
 2026-10-05 15:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 15:10 UTC: spawned 0 (), queued left 0
 2026-10-05 15:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 15:40: spawned 0, queued left 0
+2026-10-05 15:55 | account-3 orchestrator | flag: account 3 seven-day limit reads allowed_warning (OUT-CHECK-0510 session, 14:58 UTC) -> BUDGETS scaling rule: no new workers after OUT-CHECK-1555 (spawned 15:55) until the owner says otherwise or the bar clears
