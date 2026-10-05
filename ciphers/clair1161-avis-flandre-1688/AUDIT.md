@@ -222,3 +222,124 @@ exit 0.
 **4. Corrections.** key.tsv: nine rows S -> M with the reason. status.json: depth_pct 71.8 -> 67.0, depth_check rewritten.
 NOTES.md: VER-C1161J section, Remaining gaps and Escalation superseding JOINT9's. HYPOTHESES.md: row appended. Section 5's
 JOINT9 addendum ("C/S 71.8%") is superseded by this section. No N-class changes; no SECOND-OPINIONS-QUEUE.tsv row exists.
+
+## AUDIT 2 (VER1-C1161, 5 Oct 2026)
+
+Verifier: worker VER1-C1161 (account 2, for LANE-VER1), brief `.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md`; a session
+separate from Audit 1 (A3V2-C1161A1), from every solver (READ2-C1161*, NEAR3-C1*, N4-C1, RUN3-C1161MS, C1161-LOLO/GLOSS9/
+JOINT9) and from VER-C1161J. Clock by `date -u`: claim 18:17 UTC, searches 18:18-18:36 UTC. No decoding: key.tsv,
+ciphertext.tsv and reading.txt are unchanged by this audit.
+
+**Reading under audit (rule 10 propagation checked).** Audit 1 audited the 3,389-sign reading at C 353 / S 1697 / M 1325. Three
+changes followed it, each already carried into this file: RUN3-C1161MS (sign 7 M -> S; section 4 addendum), C1161-JOINT9 (nine
+values changed, S; section 5 addendum) and VER-C1161J (the nine back to M, letters kept; section 7). The current committed reading
+is the post-VER-C1161J one: `python3 tools/decode_key.py ciphers/clair1161-avis-flandre-1688 --check` at 18:19 UTC: `tokens 3408:
+C 353, M 1114, S 1908, U 33`, "reading up to date", exit 0. No commit to key.tsv or reading.txt after VER-C1161J (git log); NEAR.md's
+row predates the regrades but its figures are history, not the claim. Rule 7 for this reading: VER-C1161J section 7.2, SAME.
+No SECOND-OPINIONS-QUEUE.tsv row existed to propagate into (grep 18:2x UTC).
+
+### A2.1 Searches this session (5 Oct 2026, 18:18-18:36 UTC)
+
+Aimed first at the gaps Audit 1 named as blocking N4 (Lauer unread; CSP Foreign/Spanish and Teulet not searched; Semantic
+Scholar 429; Persée not queried), then repeating the families a second session should not take on trust.
+
+| family | source | searched by | result |
+|---|---|---|---|
+| (d) holding catalogue | Ph. Lauer, *Catalogue des manuscrits de la collection Clairambault* t. II (n° 782-1354), Gallica bpt6k209158x, IIIF page images f281, f300, f328, f334 (printed pp. 279, 298, 326, 332) read by eye | Gallica IIIF manifest + image API, 5 requests, browser UA, >= 2 s apart | **read.** Entry XLVII-LII series; Clairambault 1161 on p. 332, "Fol. 106 et suiv. Anne-Jules, duc de Noailles; Louis-Antoine de Noailles, cardinal...; Adrien-Maurice...; François de Noailles, comte d'Ayen (« Discours ... » *Impr.* Toulouse 1683 ...; Mémoire du même au Roi, 1704-1708; **Avis de Flandre, chiffrés ; lettre orig. de François II de Noailles, évêque de Dax, au marquis de Villars, 20 déc. 1570**). — Fol. 188 et suiv. ..." Same words as the online finding aid; no date, sender or recipient for the Avis, no mention of a decipherment, no printed reference. Closes Audit 1's main open catalogue item: the catalogue adds nothing |
+| (a)/(c) canonical calendars | *Calendar of State Papers, Foreign, Elizabeth* vol. IX, 1569-71 (IA calendarofstatep09grea_0, `_djvu.txt` 1.85 MB) | full text grep after folding accents, u/v, i/j | no "advis/avis de Flandre(s)", no Noailles, no bishop of Dax/Acqs; "Villars" 5 hits, all the marquis's admiralty/Guyenne commands 1569-70, none a cipher or an avis. Control: "cipher/chiffr" 51 hits, OCR reads |
+| (a)/(c) | *Calendar of Letters and State Papers ... Simancas* vol. II, 1568-79 (IA calendarofletter02greauoft) | same | no Noailles, no Dax/Acqs, no Villars, no avis de Flandre; "cipher" 85 hits (control) |
+| (c) | Teulet, *Relations politiques de la France et de l'Espagne avec l'Écosse* t. II (IA relationspolitiq02teul) | same | 4 "Noailles" hits, all Antoine/Gilles's 1550s London embassy and the abbé de l'Isle 1561; no Villars, no Flanders avis; 2 "fait de la religion" generic |
+| (b) recipient side | Honorat de Savoie, marquis de Villars: no printed correspondence (Audit 1, confirmed by WebSearch 2 queries this session: results were bishop lists, Wikipedia on Gilles and François de Noailles, and Spink lots of letters to Pierre de Villars, 1670s-80s, a different person) | WebSearch | nothing on this item |
+| (f) solver repositories | fresh shallow clones 5 Oct 2026 18:2x UTC: dbourdeau/cyphersolver a439937, aaymeloglu/unsolved-ciphers d2800bb, el-descifrador/cabinet-noir 47b6db9 (same heads as Audit 1) | grep -ril "clairambault 1161", "avis/advis de flandre", "btv1b90010063" | **0 / 0 / 0**. cyphersolver's mirror of Tomokiyo's Charles IX/Henry III page lists the Bishop of Acqs's Constantinople cipher (1571-74) and a "Chiffre envoyé en Flandres à monseigneur Des Pruneaux" in BnF fr. 3281 (late 1570s-80s); neither is this item, and neither is a print of its text |
+| (f) DECODE | repository snapshots `sources/decode/records-*-2026-09-24.tsv`, `keys-all-2026-09-28*.tsv` | grep "clairambault" | Clairambault 328, 417, 574, 577, 580 only; no 1161. Snapshot, not a live query (no login spent) |
+| (g) scholarship | Semantic Scholar (key; 4 queries: "Noailles Dax 1570 cipher" 0, "Avis de Flandre chiffre" 118 unrelated, "Clairambault Noailles cipher" 0, "Villars Noailles 1570" 2 unrelated); HAL (2 queries, 0); CrossRef (1 query, top 5 = Noailles family/Voltaire entries); OpenAlex (key, "Noailles Villars 1570": 62, top 5 by title, none on a cipher; one is the BnF's own description of the Saint-Esprit volumes); Persée (`"Avis de Flandre" Noailles`, 5,520 loose results, the exact phrase appears only as the echoed query) | APIs | nothing located |
+| (g) JSTOR | rows J22-J25 (Audit 1, both families) answered by the desk runner 4 Oct 2026: 9 / 0 / 0 / 0 hits, none relevant (NOTES.md "Desk runner 4 Oct 2026"); two more rows appended this session, family (i) `"Avis de Flandre" Noailles Villars` and family (ii) `"escript et mander a la royne"` | JSTOR-QUEUE.tsv | pending; a queued row never blocks the class |
+| (e) full text, scripted | `tools/print_check.py` re-run, section A2.2 | IA, IA full-text, Google Books, OpenAlex, CrossRef, Semantic Scholar | see A2.2 |
+| web | WebSearch, 2 standard queries (title + sender + recipient + year, in French) | - | no page discusses or deciphers the item |
+
+Not reached this session: Gallica btv1b100339270 (manuscript extracts of the Dax-Constantinople correspondence, 1571-74; later
+than the item and not a printed edition); a live DECODE query; Google Books page view (cloud-blocked).
+
+Requests this session (outside print_check): gallica.bnf.fr 5, archive.org 7 (4 advancedsearch, 3 `_djvu.txt`),
+api.semanticscholar.org 4, api.archives-ouvertes.fr 2, api.crossref.org 2 (one empty reply, one retry), api.openalex.org 1,
+persee.fr 1, github.com 3 clones, WebSearch 2. One host at a time, >= 1.2 s (S2) / >= 2 s apart; no 403/429/challenge.
+Subagent calls: 0.
+
+### A2.2 print_check.py (re-run)
+
+`python3 tools/print_check.py ciphers/clair1161-avis-flandre-1688 --max-requests 220 --delay 1.6` (18:24-18:35 UTC; overwrites
+`print-check.tsv` / `print-check-hosts.tsv`, Audit 1's run kept in git history at 7359efc88): 12 phrases x 10 listed sources = 148
+rows, 27 with hits; hosts be-api.us.archive.org 12, googleapis 12, openalex 13, semanticscholar 2, crossref 2. Semantic Scholar
+answered its first query (`Avis de Flandre chiffres`: 118 papers, top 5 unrelated -- a 1912 BCRH "Avis sur les remèdes à la
+situation de la Flandre", pharmacy and census papers) and HTTP 429 on the second; not retried (good-citizen rule); the direct keyed
+queries in A2.1 stand in for it. Four IA full-text and three Google Books calls answered 502/503 this run; the same phrases were
+searched in Audit 1's run (no relevant hit), so the union of the two runs covers every phrase on every host but s2. Hits read:
+same shape as Audit 1 -- Google Books for "Advis de flandres" (41 volumes, top 5: Wesenbeke's *Mémoires* 1859 x3, Vertot's
+*Ambassades de Noailles* 1763, Sully's *Oeconomies royales* 1683: the common phrase "advis de Flandres", news from Flanders);
+"quant au fet de la religion" and "reportees a la cour" return hundreds of generic volumes (religious history, Canadian law
+reports); IA full text "ce qui sera execute" = the Illinois/Cahokia records again; CrossRef = Noailles family entries.
+**Not found by this method on 5 Oct 2026** (a search result, not a novelty verdict).
+
+### A2.3 Classification
+
+**Prior plaintext: no. Prior decipherment: no** (beyond the leaf's own contemporary marginal gloss on the c186R block, which is
+part of the source; Audit 1 section 3). **Class: N3, confirmed** -- no prior plaintext or decipherment located after the searches
+of Audit 1 and this audit. **Key: ours. Text: not known in print.**
+
+Not N4, for reasons this audit could not remove: (1) the reading is at D1, so every phrase search (print_check, JSTOR family (ii),
+Google Books) can only test fragments; an edition that printed the plaintext of these avis in modernised or summarised form would
+not match "entreprinse ... seraient par ... executee" and could be missed by method, not by absence; (2) the sender and the year
+are not established (Lauer adds nothing; c187R "Juil 23" has no year; c. 1570 rests on the mounting beside the Dec 1570 Dax
+letter), so the sender-specific and year-specific editions cannot be declared covered. Audit 1's other blocking items are now
+closed: Lauer t. II read (p. 332, no date/sender/decipherment), CSP Foreign 1569-71, CSP Spanish II and Teulet II searched (no
+hit), Semantic Scholar run with the key (0 relevant). Confidence: high for "not in the editions read"; medium overall.
+
+- **Safe sentence:** "Under a key we recovered by cryptanalysis, the six 'Advis de flandres' cipher leaves in BnF Clairambault
+  1161 (c. 1570, Noailles bundle; 3,389 signs) read only in fragments, about two-thirds of the signs at grades C/S; the leaf's
+  own contemporary marginal gloss deciphers one 220-sign block and agrees with the key on 0.59 of its letters against a
+  shuffled-order maximum of 0.31. No prior plaintext or decipherment was located after the searches logged in AUDIT.md (N3,
+  two audits)."
+- **Unsafe sentence:** "The Noailles 'Avis de Flandre' cipher of 1570 has been deciphered for the first time" -- wrong on
+  depth (D1: no clause reads), on wording barred by rule 10 below N4, and on the sender, which is not established.
+
+### A2.4 Depth (rule 4a) and count
+
+Recounted from the committed `reading_tokens.tsv` by this verifier (no decoding): cipher tokens 3,375 (3,408 - 33 U); H/C/S =
+0 / 353 / 1,908 = **2,261 = 67.0%**; M 1,114. Longest contiguous C/S run **16** letters (c188L L10 "eiiruiereiceroia"), then 14,
+13, 12, 12, 12 -- none reads as French. Authentication distance: a 49-sign homophonic key over 26 letters carries about
+49 x log2(26) = 230 bits; at about 3.2 bits/letter redundancy for French the unicity distance is about 72 letters and 1.5 x that
+about 108 letters, before counting the 27 M signs, 7 unkeyed shapes and 5-9% two-reader transcription error as liberties. No
+C/S stretch, and no stretch even with M letters admitted, reads as a clause of that length (spot read of reading.txt c185R: "...
+aultres prisonniers et ...", "entreprinse ... par ... executee", "reportem s a la tour" (Audit 1 read "reportees a la cour"), "ce ... sera execute" between garbled
+runs). No code value reading in two contexts (the design has no code groups). External check: the c186R gloss, statistical,
+one block.
+
+**Depth: D1 ("fragments read"), confirmed.** No `depth_sentence` (as Audit 1: everything true about the content comes from the
+period gloss, not from the reading). **Unique solve (N3+ and D2+): no** -- class without a reading, not counted.
+status.json: a `results` row added (the folder had none, SYS1-VBL), `audit_status "two audits"`, `depth D1`, `depth_pct 67.0`,
+`decode_status "Non-decrypted"`, `key ours`, `text unknown`; the `near` entry's `novelty` field updated to two audits.
+PROGRESS.tsv: column 2 = x, C stays `.` (D1).
+
+`python3 tools/depth_check.py` (18:2x UTC, after the edit):
+```
+note: class without a reading, not counted: BnF Clairambault 1161, 'Advis de flandres' (six cipher leaves, c. 1570 (D1)
+unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 10; legacy ungraded: 0
+exit 0
+```
+
+**SECOND-OPINIONS-QUEUE.tsv:** row `SO-C1161` appended this session (N3, per the Operating-model rule; prompt
+`second-opinions/PROMPT-chatgpt.md`). Audit 1 had held it back because the depth was D1; other D1 N3 targets carry rows
+(SO-CEPPO-*, SO-VIV63), and the rule reads on the class, so it is filed now.
+
+### A2.5 Postmortem and corrections
+
+- No file in the folder, NEAR.md or status.json calls the reading new, first, unpublished or deciphered (grep of NOTES.md,
+  HYPOTHESES.md, AUDIT.md, NEAR.md row, status.json near entry, 18:2x UTC). Nothing to retract.
+- Stale figures, not over-claims: NEAR.md's row still quotes the N4-C1 counts (S 1697 / M 1325) and status.json's `near.title`
+  the same; both are the history of the row, and the current counts are in this AUDIT, the `depth_check` field and the new
+  results row. Left for the NEAR.md owner (LANE-NEAR4) to refresh; named here, not edited (NEAR.md is not in this brief).
+- Audit 1's "Not N4" reasons: Lauer now read (adds nothing), CSP and Teulet now searched (nothing). What still holds N3 is the
+  reading's depth and the unknown sender/year, not an unsearched catalogue.
+- Lead for the solvers, not actioned (Usage 7): Tomokiyo lists a "Chiffre envoyé en Flandres à monseigneur Des Pruneaux" in BnF
+  fr. 3281 (Charles IX / Henry III ciphers page, mirrored in cyphersolver); later than c. 1570 and of unknown design, but a
+  French Flanders key on file is a cheap known-keys shape test (~$1).

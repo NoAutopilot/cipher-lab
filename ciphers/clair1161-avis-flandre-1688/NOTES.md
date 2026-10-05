@@ -1982,3 +1982,10 @@ answered in JSTOR-QUEUE.tsv:
 | J25 | "Advis de Flandres" 1570 | 0 | -- |
 
 Search results, not a novelty verdict (rule 10); for the verifier to carry into AUDIT.md. No gap or escalation line changes.
+
+## AUDIT 2 (VER1-C1161, verifier, 5 Oct 2026)
+Second adversarial audit in AUDIT.md "## AUDIT 2 (VER1-C1161, 5 Oct 2026)": N3 confirmed, two audits, key ours, text not known
+in print; depth D1 (C/S 67.0%, longest C/S run 16), not counted. Lauer t. II p. 332 read from Gallica page images: the entry
+repeats the finding-aid words, no date, sender or decipherment. CSP Foreign 1569-71, CSP Spanish II, Teulet II: no hit.
+status.json results row added; SO-C1161 queued. Suggestion for a solver (not actioned): shape test against the "Chiffre envoyé
+en Flandres à monseigneur Des Pruneaux" (BnF fr. 3281, per Tomokiyo), ~$1. Novelty is classified only in AUDIT.md.

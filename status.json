@@ -3594,6 +3594,42 @@
       "depth_by": "VER1-COS (verifier)",
       "depth_date": "5 Oct 2026",
       "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "5 Oct 2026",
+      "kind": "cryptanalysis",
+      "key": "ours",
+      "title": "BnF Clairambault 1161, 'Advis de flandres' (six cipher leaves, c. 1570, Noailles bundle): fragments read under a key recovered by cryptanalysis",
+      "grade": "N3 after two audits (A3V2-C1161A1 4 Oct, VER1-C1161 5 Oct 2026), key ours. 3,408 tokens: C 353, S 1908, M 1114, U 33; C/S 2261 of 3375 cipher tokens = 67.0%. Two-instrument agreement 0.624 vs shuffled-order max 0.351; the leaf's period marginal gloss agrees 0.594 vs shuffled-order anneal max 0.312; fr16 judge FAIL -1.233 (real_p05 -0.905) while the gloss itself PASSes -0.808; rule-7 re-derivation SAME (VER-C1161J). Not N4: reading at D1, so phrase searches cover fragments only; sender and year not established.",
+      "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Under a key we recovered by cryptanalysis, the six 'Advis de flandres' cipher leaves in BnF Clairambault 1161 (c. 1570, Noailles bundle) read only in fragments (prisonniers, entreprinse, reportees a la cour, religion en ce royaulme, en plus grand repos); the leaf's own contemporary marginal gloss is a period decipherment of one 220-sign block. No prior plaintext or decipherment was located after the searches logged in AUDIT.md.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1161-avis-flandre-1688",
+      "novelty": "N3",
+      "document_id": "BnF Clairambault 1161, Gallica btv1b90010063 canvases c185R-c188L (IIIF f186-f189); finding aid cc137837/cd0e35310; Lauer t. II p. 332",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "2261/3375 cipher tokens at C/S (fragments, no clause)",
+      "unresolved_spans": "1114 M (27 M-graded key signs), 33 U (7 unkeyed shapes and clear words); no continuous text",
+      "audit_refs": [
+        "AUDIT.md '# AUDIT 1 (A3V2-C1161A1, 4 Oct 2026)' and sections 4-7 addenda",
+        "AUDIT.md '## AUDIT 2 (VER1-C1161, 5 Oct 2026)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "reading.txt / reading_tokens.tsv after VER-C1161J (decode_key.py --check exit 0, 5 Oct 2026 18:19 UTC)",
+      "superseded_by": "",
+      "fields_source": "clair1161-avis-flandre-1688/AUDIT.md, AUDIT 2 (VER1-C1161) verdict",
+      "text": "unknown",
+      "depth": "D1",
+      "depth_pct": 67.0,
+      "depth_unread": {
+        "names_codes": "0 identified (no nomenclator in the design)",
+        "other": "1114 M, 33 U"
+      },
+      "depth_check": "period-gloss letter agreement 0.594 on one 220-sign block (external, statistical); two-instrument agreement 0.624 vs shuffled max 0.351; fr16 judge FAIL; longest C/S run 16 letters, non-French, far below the authentication distance",
+      "depth_note": "C/S 2261 of 3375; longest C/S run 16 (c188L L10 'eiiruiereiceroia'), recounted by VER1-C1161 from reading_tokens.tsv",
+      "depth_by": "VER1-C1161 (account 2)",
+      "depth_date": "5 Oct 2026",
+      "decode_status": "Non-decrypted"
     }
   ],
   "lanes": [
@@ -3952,7 +3988,7 @@
       "depth_pct": 67.0,
       "decode_status": "Non-decrypted",
       "depth_check": "C/S 2261/3375 = 67.0%: VER-C1161J (4 Oct 2026) returned the nine C1161-LOLO values to M (content-specificity null FAIL: dG +0.0353 vs fr16-window p95 +0.0824); D1 kept, longest C/S run 16, rule-7 re-derivation SAME; period-gloss letter agreement 0.647 on one 220-sign block (not above its window null for the nine); fr16 judge FAIL",
-      "novelty": "N3 (AUDIT 1, A3V2-C1161A1, 4 Oct 2026; key ours; rule-7 re-derivation SAME, N4-RD1161)"
+      "novelty": "N3 after two audits (AUDIT 1 A3V2-C1161A1, 4 Oct 2026; AUDIT 2 VER1-C1161, 5 Oct 2026; key ours; rule-7 re-derivation SAME, VER-C1161J); results row added 5 Oct 2026"
     }
   ]
 }
