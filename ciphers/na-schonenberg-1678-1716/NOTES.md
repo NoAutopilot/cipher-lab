@@ -875,3 +875,8 @@ AUDIT.md written: body L01-L14 and L18 **N0** (the leaf's own interlinear period
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 Nothing depends on anyone: the Verdict is parked -- 7 groups illegible at the native image's limit and 3 line-start NULLs with no key material; reopened only by new material (a second Schonenberg letter in this key, or a higher-resolution scan of NA 1.02.04 inv.63). The verifier's re-derivation and AUDIT.md are already on disk (rederivation_report.md, AUDIT.md).
+
+## Verifier, Audit 2 (D2B-SCHON, account 2, 5 Oct 2026)
+AUDIT.md "## AUDIT 2" confirms the classes: body/L18 N0 (period plaintext on the leaf), L19 N2, leaf N0. Depth is recounted to D3,
+97.1% C (269/277; nulls excluded, was 96.1%). The three Utrecht Schonenberg theses (2012, 2015, 2016) were read in full by
+script and carry no Albanilla and no cipher; the Hispania 2016 full text is still unreachable (TLS). The status word is unchanged.

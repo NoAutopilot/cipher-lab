@@ -751,11 +751,11 @@
       "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
       "kind": "recovery",
       "novelty": "N0",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "depth": "D3",
-      "depth_pct": 96.1,
+      "depth_pct": 97.1,
       "depth_sentence": "The letter, addressed to Dona Antonia de Albanylla, says that for greater security of the correspondence only a cover address in the form 'A Dona Antonya de Albanylla' will be used (period interlinear gloss on the leaf, aligned to the cipher codes; not our plaintext).",
-      "depth_check": "C 270 / M 11 of 281 tokens (decode_key.py --check, VERIFY-SCHONENBERG rule-7 re-derivation 0 differences beyond M); M residue is 7 illegible, 3 NULL, 1 blot, not names; external check = period gloss over L01-L14/L18, aligner 0.699 vs shuffled-gloss max 0.301 (n=300); depth set by VER1-REG 5 Oct 2026 from AUDIT.md (VERIFY-SCHONENBERG, 2 Oct)",
+      "depth_check": "C 269 / M 8 of 277 non-null cipher tokens (4 NULL excluded per DECIPHERMENT-STANDARDS item 2; was 96.1% = 270/281 with nulls); 0 unread tokens, M residue = 8 uncertain letters at the native image's limit, no name/code groups; external check = period interlinear plaintext over L01-L14/L18, aligner 0.699 vs shuffled-gloss max 0.301 (n=300); Audit 1 rule-7 re-derivation 0 differences beyond M; recounted by D2B-SCHON Audit 2, 5 Oct 2026",
       "decode_status": "Partially decrypted"
     },
     {

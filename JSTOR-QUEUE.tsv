@@ -293,3 +293,6 @@ ciphers/costabili-modena-1491	("Beatrix" OR "Beatrice") AND "Eleonora" AND 1491 
 ciphers/costabili-modena-1491	"una cifra con la S. V. antiqua" [DEF1-GRACOS, Berzeviczy CXXXIV wording, phrase family (ii), no cipher keyword required]	2026-10-05	queued	
 ciphers/fr16142-noailles-constantinople-1571	"évêque d'Acqs" AND Constantinople AND 1574 AND chiffre	2026-10-05	queued	
 ciphers/fr16142-noailles-constantinople-1571	"merveilleusement diligens"	2026-10-05	queued	
+ciphers/na-schonenberg-1678-1716	"Schonenberg" AND (Lisboa OR Lisbon OR Portugal) AND (cifra OR cifrado OR cijferschrift OR cipher)	2026-10-05	queued	
+ciphers/na-schonenberg-1678-1716	"Albanylla"	2026-10-05	queued	
+ciphers/na-schonenberg-1678-1716	"de aver mudado este govierno"	2026-10-05	queued	
