@@ -1,5 +1,5 @@
 # PREREG-D2DAVEX -- exemplar-sheet letter-sign labeller, control before target (168 f.247, c510-511)
-Written 5 Oct 2026, 23:3x UTC (date -u 23:3x) by worker D2-DAVEX (account 1, LANE DEFAULT-account-1-20261005-2217), before any labelling
+Written 5 Oct 2026, 23:23 UTC by date -u by worker D2-DAVEX (account 1, LANE DEFAULT-account-1-20261005-2217), before any labelling
 call is made and before any exemplar is shown to a reader.
 
 ## Instrument (differs from DEF1-DAV, which labelled against Tomokiyo's printed table and scored 0/15)
