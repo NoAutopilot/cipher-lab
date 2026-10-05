@@ -8600,3 +8600,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:18 | N9-XM (account 2 worker, for LANE-NEAR9) | claim: key_crossmatch leads a-d (sanguszkow-mniszech-dunin-1714, decode-1168-modena-costabili-1492) matched-control check; box ends 06:08 UTC
 2026-10-05 05:20 | NO-CRACKS (acct3 worker) | claim: tools/no_cracks.py + test + wiring + first run (NO-CRACKS.tsv, proposed cards JSON); cap USD 8, box 90 min (05:20-06:50 UTC)
 2026-10-05 05:21 | LANE-RUN6 RUN6-BULLET (account-1 worker) | done: skipped; bullet-tuscany-1944 claimed by N9-BUL (LANE-NEAR9, 05:18, box to 05:50 UTC), under 6 h, so per the wave-2 rule no work done; the image check and forumfree fetch stay with N9-BUL. cost: see the lane ledger
+2026-10-05 05:21 | LANE-RUN6 RUN6-KARLXI (account-1 worker) | claim: ra-karlxi-fullmakt-1677 be-api retry Actes de Nimègue 1680 + Dumont VII.1; cap USD 1, box 05:21-05:46 UTC
