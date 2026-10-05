@@ -1,0 +1,6 @@
+to: mike.webb@bodleian.ox.ac.uk (cc specialcollections.enquiries@bodleian.ox.ac.uk); reply in the existing thread "Reproduction request: MS. Rawl. A. 24, William Stamford's letter from Calais, 13 March 1655" (his reply 28 Sept 2026)
+status: mailbox-draft placed 5 Oct 2026 by the account-3 orchestrator (rewritten at the owner's request: no repeated disclosure in a follow-up, outreach/README.md rule 1 refinement); awaiting the gate-7 check (OUT-CHECK-BOD94 covers the Clarendon/Roe items; the P4 paragraphs need their own pass) and the owner's send
+targets: ciphers/thurloe-printed (P4, old pp.73-76 of MS. Rawl. A. 24/1; MS. Clarendon 94, ASKS 139); ciphers/sp81-roe-1638 (Cal. Clar. i no.1486 item 14)
+facts used (sources): NOTES.md s.26 (Birch III p.188 "A letter of W. S. from Calais", 13 March 1654/5, margins Vol. xxiv p.76 / p.73, signed "W. S."; the 30 March letter P5+P6 printed with decipherment, N0); AUDIT.md (P4 N4, H 73 C 342 M 3 U 6 of 424, key from printed sibling decipherments + Tomokiyo table); REQUEST.md (Clarendon 94 record, Madan 16180, Sams/TLS 1977); sp81-roe-1638 NOTES (Cal. Clar. i p.215 no.1486 item 14).
+
+Body: as in the project mailbox draft (thread above), 5 Oct 2026 ~02:4x UTC.

@@ -5,6 +5,9 @@
    AI agents (Claude models) working in this open repository, every step logged. An editor of the WVO asked for this
    in so many words on 26 Sept 2026 (outreach/huygens-nassau-saxony.md, Reply, item 5). The first Huygens email did
    not say it; do not repeat that.
+   **Owner's refinement, 5 Oct 2026:** the disclosure is required in the FIRST message to a recipient or thread. A
+   follow-up in a thread where it was already stated does not repeat it (owner: "I don't think we have to say this intro
+   piece every time"); the gate-7 check confirms the thread's first message carried it.
 1a. **Voice, not just disclosure (26 Sept 2026).** Write every sentence after the disclosure in the voice of
    who actually did it: "I" for what the person decides, asks or sends (the request itself, the sign-off);
    "we" for what the agents did (searched, transcribed, compared, checked, ruled out) -- never smooth a "we"
