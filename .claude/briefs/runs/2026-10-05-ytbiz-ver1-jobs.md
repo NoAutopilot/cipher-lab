@@ -83,3 +83,10 @@ reads). Write AUDIT.md; status.json row if absent; PROGRESS.tsv row (one per let
 (a) na-schonenberg-1678-1716: AUDIT.md (2 Oct) classes the leaf N0, but PROGRESS.tsv col `1` = '.': set it from AUDIT.md,
 source = AUDIT.md; depth_check fields in status.json if missing. (b) na-janssens-java-1811: Audit 2 on Audit 1 (A3V-VJAN, N1).
 (c) fr3993-gonzague-nevers-1595: Audit 2 on A3V-VNV01. Each a separate AUDIT 2 section; stop at cap with what is done.
+
+## VER1-SYNC -- register reconciliation, no new searching (cap 3, box 40 min)
+VERIFY-BACKLOG.tsv note "REGISTERS DISAGREE" rows: bowes-walsingham-1583 (results[17]), thurloe-printed (results[43], [50]),
+rah-morillo-1817 (results[99]): PROGRESS.tsv says Audit 2 done, status.json does not. For each, read the folder's AUDIT.md: if it
+holds a second audit by a separate session, set status.json audit_status 'two audits' (and depth fields via depth_check.py if
+missing), citing the AUDIT.md section; if it does not, set PROGRESS.tsv `2` back to '.' with source AUDIT.md. Do not audit anew.
+Then re-run `python3 tools/verify_backlog.py` (regenerates VERIFY-BACKLOG.tsv) and push both registers + the backlog.
