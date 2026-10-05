@@ -1392,3 +1392,51 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 5 internal gaps; cheapest next: re-align the about 14 zero-agree print-free/print-q entries with the other key (pre-registered), ~$1; then the image of the 20 `?p` entries, ~$4
+
+## D2-ECK62R (5 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261005-2217): the zero-agree aligned entries re-aligned under the other book
+
+Intake gate (23:37 UTC): `eckert-1862: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Pre-registered and pushed before any number: `ec18/PREREG-ECK62-FLIP.md` (commit 039c3b379). Instrument: `ec18_align.py`
+unchanged in method (output suffix now follows the rows file; a `flip-*` source caps non-AGREE tokens at S); D2-ECK62M's
+`align_free_*` outputs reproduce byte-identically (`--check` current). Same ORDIR (48 `_djvu.txt`, all sha256 matching
+`or_volumes.tsv`, scratch, not committed), same vol18.json (sha256 matches the manifest), same anchors and control window.
+
+- Selection (mechanical, from `align_free_entries.tsv`): scored >= 5, agree rate <= 0.10, conflict >= 1 -> 19 entries
+  (`ec18/align_flip_rows.tsv`; 13 of them are the ones D2-ECK62M named, plus 9669.5, 9808.202, 9949.508, 9958.527, 9969.543,
+  10040.638). 9761.133 (0 conflicts) and 10031.631 (0 conflicts) fall outside the rule.
+- Negative control for the flip (rule 3): the 14 entries at agree rate >= 0.75 flipped the same way
+  (`ec18/align_flipctl_*.tsv`): AGREE 122/146 = 0.836 under their book -> 16/132 = 0.121 flipped (control window 0.045).
+  Gate (<= 0.15): PASS. A wrong book does not align, so the instrument can tell books apart.
+- Target (`ec18/align_flip_*.tsv`): AGREE 7/291 = 0.024 under the assigned book -> 20/261 = 0.077 flipped; control window
+  6/261 = 0.023; flipped conflicts 87, unfixed 149.
+- Accepted flip (rule 4 of the prereg): **1 of 19**, 9991.571 (15 Apr 1865, OR 46.3, print-free book 2 -> book 1):
+  3/31 = 0.097 -> 12/30 = 0.400, control window 0.033, 0 conflicts; e.g. Mentor = Maj Gen E. O. C. Ord, Oakum = arrest,
+  Garden = Richmond, saddled = guarded. Book recorded as `1r` here and in `align_flip_entries.tsv` (book grade S: aligned
+  against print, not marker-known); grades on its keyed tokens after alignment C 12, S 24. Its neighbour 9991.570 is
+  book 1 by print (D2-ECK62M), which fits. Not yet written into `assign_free.tsv` / `readings_free.*` (those feed
+  decode outputs; a follow-up, not this brief).
+- The other 18 do not align under either book (flipped rate 0-0.33; 9808.202 at 2/6 misses the >= 3 AGREE floor). A wrong book
+  is therefore **not** the explanation for them. Remaining causes, not tested here: the dated OR match is carried by clear words
+  and points to the wrong telegram (several are short, 5-17 scored), a cipher table change not covered by key.md/key-no2.md
+  (most are Feb-Apr 1865, 9924-9996), or volunteer transcription. Grades: their tokens stay as D2-ECK62M left them (S cap).
+- Requests: archive.org 48 (OR djvu), hdl.huntington.org 1 (vol18.json), >= 1.6 s apart; 0 vision, 0 subagents. Report what
+  was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, D2-ECK62R, 5 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); mssEC 18: 28 fully keyed Cipher No. 1 and 17 Cipher No. 2 entries (RUN3-ECK62), 26 print-aligned (A3V3-ECKC); 79 print-free-assigned entries read (RUN6-ECK62R); 13 of the 113 '?' entries given a book by print (D2-ECK62M); 57 dated matches aligned (D2-ECK62M: AGREE 316/817 = 0.387 vs control 0.073); 19 zero-agree entries re-aligned under the other book, 1 flip accepted (D2-ECK62R, flip control 0.836 -> 0.121)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), residue regenerated (GAPS197); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); next: the received copies of the 27 Jan and 24 May 1865 telegrams (Eckert received ledgers) for a third witness, ~$2
+- 18 aligned entries that agree with print under neither book (D2-ECK62R, ec18/align_flip_entries.tsv) - blocker: not-attempted; wrong book ruled out for them by the flip test, cause untested; next: check each dated match against the OR telegram's sender/recipient/heading (wrong-telegram test) and list the conflicts by month against the key's table-change dates, ~$1.5
+- 9991.571 book 1r not yet carried into assign_free.tsv / readings_free - blocker: not-attempted; outside this brief (decode outputs change); next: write it with decode outputs regenerated and --check, ~$0.5
+- 100 mssEC 18 entries still '?' - blocker: not-attempted; 20 have a dated OR match with margin under 2 and 80 none (D2-ECK62M); next: the image (marker words the volunteer text may have dropped) for the 20 `?p` entries, ~$4
+
+## Escalation (D2-ECK62R, 5 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [x] known-keys: Lehigh row checked on the mssEC 41 key page image (DEF1-ECK62P); '?' entries assigned print-free (RUN6-ECK62) and by print (D2-ECK62M); zero-agree entries re-aligned under the other book (D2-ECK62R, 1 of 19)
+- [ ] print: OR ser. I vols. 32-49 matched and 57 dated matches aligned (D2-ECK62M); 18 entries agree under neither book (D2-ECK62R); next: wrong-telegram test on those 18, ~$1.5
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 6 internal gaps; cheapest next: carry 9991.571 book 1r into assign_free/readings_free, ~$0.5; then the wrong-telegram test on the 18 neither-book entries, ~$1.5

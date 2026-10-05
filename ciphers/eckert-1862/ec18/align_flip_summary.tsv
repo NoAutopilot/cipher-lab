@@ -1,0 +1,12 @@
+statistic	value
+entries	19
+keyed_word_tokens_scored	261
+target_agree	20/261 = 0.077
+target_conflict	87
+target_unfixed	149
+target_partial	1
+target_collision	4
+control_agree	6/261 = 0.023
+entries_target_rate_above_control	6/19
+numerals_agree	0/28
+grades_after_all_tokens	H 0, C 20, S 279, I 1, M 0

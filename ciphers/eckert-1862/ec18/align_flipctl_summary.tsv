@@ -1,0 +1,12 @@
+statistic	value
+entries	14
+keyed_word_tokens_scored	132
+target_agree	16/132 = 0.121
+target_conflict	59
+target_unfixed	51
+target_partial	6
+target_collision	0
+control_agree	6/132 = 0.045
+entries_target_rate_above_control	8/14
+numerals_agree	0/2
+grades_after_all_tokens	H 0, C 16, S 120, I 0, M 0
