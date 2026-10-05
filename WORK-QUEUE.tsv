@@ -223,3 +223,5 @@ FER1478-READ2	account-4	.claude/briefs/runs/2026-10-05-acct3-fer1478-read2.md	Op
 DEFAULT-account-1-20261005-2039	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-05 21:43	2026-10-05 20:39	auto-fill: empty queue; 13 workers, lane ~44.6 of 60, backlog spent
 ZOOM-SCAN	account-1	.claude/briefs/runs/2026-10-05-acct3-zoom-scan.md	Opus 5.5	4	40	claimed session_01Lc92u6DKeSDydupxMTrBGD 2026-10-05 21:39	2026-10-05 21:12	owner: zoomed screenshots as a standard desk task; list targets they would unlock
 DEST-COLLATE	account-4	.claude/briefs/runs/2026-10-05-acct3-dest-collate.md	Opus 5.5	5	45	queued	2026-10-05 22:10	private repo: run in the account-4 standing session (not spawnable)
+SESSION-SWEEP-account-1	account-1	.claude/briefs/runs/2026-10-05-acct3-session-sweep.md	Opus 5.5	6	60	queued	2026-10-05 22:15	owner: every chat on every account pushed to GitHub (run on this account; sees only its own sessions)
+SESSION-SWEEP-account-2	account-2	.claude/briefs/runs/2026-10-05-acct3-session-sweep.md	Opus 5.5	6	60	queued	2026-10-05 22:15	owner: every chat on every account pushed to GitHub (run on this account; sees only its own sessions)
