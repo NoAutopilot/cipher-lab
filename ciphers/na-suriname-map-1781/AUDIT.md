@@ -592,3 +592,7 @@ as with L11:17. 2077 is H 538 C 10 M 61 U 49, --check exit 0. GAPS23's gate re-r
 N1 p99 0.461 / N2 p99 0.270, PASS, same pooled score as FT4k (the gate counts H only). Not new evidence. The same class
 [sigma] now aligns to i (L11:17) and e (L10:66); both stay M. No other APPLY token is undecided. No second-opinion row is
 filed for this target. Stage 9 blockers unchanged (LOCAL-QUEUE L36, L41). Re-class (if any) stays with VERIFY5.
+
+## JSTOR run (local runner, 4 Oct 2026)
+
+A. J. A. Quintus Bosz, "De geschiedenis van het fort Nieuw-Amsterdam in het verdedigingsstelsel van Suriname", Nieuwe West-Indische Gids 43 (1963-64) 103-148, https://www.jstor.org/stable/41848992 (only hit for ("Redout Leyden" OR "redoute Leiden") AND 1781). Read in the page viewer: the matches are "Redoute Leiden" on pp.125, 127, 129, 140 (p.125 the 1782 defence situation; p.140 its later quarantine use). No mention of Wollant, the 1781 maps, a legend or secret writing. Context only. The other nine Suriname queries (Wollant/geheimschrift, the de Leeuw and AMH phrases, Zeelandia 1781-82, the legend words) returned 0.

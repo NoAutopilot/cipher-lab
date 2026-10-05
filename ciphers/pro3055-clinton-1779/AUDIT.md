@@ -404,3 +404,7 @@ Postmortem: audit 1 searched Brymner for 3868 and 2380 (its own later sections) 
 1920; a phrase run of the decoded body through be-api fts (which indexes the Brymner microform) finds the 1888 calendar in
 one query. No over-claiming sentence in the folder's files found: none calls the 2894 text new; NOTES.md already treats it
 as known. PROGRESS.tsv audit-2 column set to x from this verdict. N0 queues no SECOND-OPINIONS row.
+
+## JSTOR run (local runner, 4 Oct 2026)
+
+"The Treason of Benedict Arnold, as Presented in Letters of Sir Henry Clinton to Lord George Germain", The Pennsylvania Magazine of History and Biography 22 (1898) 410-422, https://www.jstor.org/stable/20085812 (from "Clinton" AND "Haldimand" AND ("October 1780") AND (cipher OR cypher OR Arnold), 26 results). Read in the page viewer: Clinton to Germain, New York 11 Oct 1780; p.411 refers to "the inclosed Copy of a Letter from General Haldimand to me". The Haldimand letter is not printed and no cipher is mentioned. Context only. The four Clinton phrase queries ("still the clamours of their own officers", "jealousies of the inhabitants of Vermont", "great defection in the Spanish colonies", "Cork fleet which is much wanted") returned 0; the 1779 and 1781 Haldimand queries surfaced only Wilbur, Early history of Vermont v.2 (1900) and indexes.
