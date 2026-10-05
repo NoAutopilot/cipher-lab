@@ -1,0 +1,52 @@
+{
+ "n_tiles": 403,
+ "n_piles": 64,
+ "n_piles_keyed": 64,
+ "decoded_letters": 403,
+ "gloss_letters": 315,
+ "R": 0.1838,
+ "a_shuffled_key": {
+  "n": 1000,
+  "mean": 0.152,
+  "p99": 0.2479,
+  "max": 0.2758
+ },
+ "b_letter_order": {
+  "n": 1000,
+  "mean": 0.1607,
+  "p99": 0.2563,
+  "max": 0.273
+ },
+ "c_shuffled_dupuy": {
+  "values": [
+   0.1894,
+   0.156,
+   0.2033,
+   0.1699,
+   0.1643,
+   0.1532,
+   0.2006,
+   0.0891,
+   0.1114,
+   0.1281
+  ],
+  "max": 0.2033
+ },
+ "d_nonlocking": {
+  "n": 924,
+  "mean": 0.1594,
+  "p99": 0.2528,
+  "max": 0.2702
+ },
+ "single_L": {
+  "alt04": 0.2416,
+  "alt05": 0.2163,
+  "alt06": 0.1469,
+  "alt08": 0.1577,
+  "alt12": 0.1818,
+  "alt14": 0.1788
+ },
+ "provisional_ceiling": 0.2199,
+ "decode": "rpemeilsmieeallerpeooemlmneexlaodreepteuespemrauseuemvaxrelztmrscdmrzlaersmermlieertldosrsseessmesumsredseareedmselmemeoeelaxarumesmimesraeursetmdmdeaoosrerxrdropeeilsmedorsmbdsdocarnsttaexomeedasaeprmayesrytrlveeeccesussmcrmmdemeemmiuudedmmarseadsrmderscdmsrmeodroluptmretmeteudosprmsilsmmmlmnroelermxurrsemlasssrddlesdlzelassoesasioslcsseeeesossaesrimmroometdpastartlaretrtatsseillzeeseretorasseetesrd",
+ "verdict": "FAIL"
+}
