@@ -2785,3 +2785,36 @@ does both; it is the folder Verdict's "cheapest next" step, run at full scope.
 3. A Stamford value that **differs** from Butler's value for the same code is a rule-4 data conflict: listed with its
    witnesses (Butler: P3 body interlinear, John Butler to Thurloe, vol.2, 1654/56; Stamford: P5+P6/P7 printed
    decipherments, W. Stamford, Calais, March 1655), never settled by vote count; the P3 token keeps its grade.
+
+**Result (run after the rule above was pushed, commit 2e574c02c).** `tx/p3_postscript_stamford_all.py` (`--check` exits 0),
+output `tx/p3_postscript_stamford_all.tsv`: 59 postscript tokens, 32 distinct codes, 8 shared with `key_stamford.tsv`.
+The H/C-graded shared codes are 3 (2, 19, 26) and **0 agree**: Butler 2=e (C, 2 places) vs Stamford 2=m (40/42);
+Butler 19=n (C, 2) vs Stamford 19=a (57/57); Butler 26=t (C, 2) vs Stamford 26=f (17/19). Code 60 (C) and 405 (H) are
+not in the Stamford key. **Gate FAIL: no P3 token regraded; the reading and its grades (H9 C15 M33 U2 of 59) stand.**
+The other five shared codes are listed as data conflicts per rule 3 above, none settled: 40 (Butler M a / Stamford o,
+133/135), 39 (M e / p, 19/19), 31 (M e / y, 36/39), 24 (M d / u, 1/1), and U code 11 (Butler unread / Stamford f,
+15/16 -- not adopted, gate failed). Witnesses: Butler values from the P3 body interlinear (John Butler to Thurloe, Birch
+vol.2 pp.575-577); Stamford values from the printed decipherments of P5+P6 and P7 (W. Stamford, Calais, March 1655, Birch
+vol.3). Structural note: `key_stamford.tsv` spans codes 1-171 only, while 17 of the postscript's 32 distinct codes are
+400-912 -- a different nomenclator range, consistent with s.22 Job 3's finding. With s.22 Job 3 (Fauconberg and Stamford,
+M values) this is the second negative for the cross-key instrument on the postscript; the only same-system witness on
+disk is P3's own body, already used by `key_butler.tsv`. Reading unchanged, so no verifier propagation is needed.
+Requests: 0 (all files on disk). Files: `tx/p3_postscript_stamford_all.py`, `tx/p3_postscript_stamford_all.tsv`, this section.
+
+## Remaining gaps (D2B-THURP3, 5 Oct 2026; supersedes the DESK-LAND list above)
+Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.txt, N8-THUR2); P3 postscript H9 C15 M33 U2 of 59 (reading_P3.txt, unchanged by D2B-THURP3); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
+- P4's remaining 3 M tokens are code 1 'i' (x3, one printed vote) - blocker: no-key-material; not in Tomokiyo's table (GAPS148, N8-THUR2) and no other sibling occurrence on disk
+- A contemporary check of P4 against the manuscript (MS. Rawl. A. 24/1 p.76, 10 pp., partly cipher, undeciphered per the Bodleian reply of 5 Oct 2026) - blocker: waiting-on the Bodleian Imaging Services quote for p.76 + p.73 (Bodleian reply 5 Oct 2026; ASKS row 139)
+- P3 three-line postscript, 33 M + 2 U tokens - blocker: no-key-material; the only same-system witness is P3's own body (already in key_butler.tsv); cross-key tests against key_fauconberg.tsv and key_stamford.tsv both negative (s.22 Job 3; D2B-THURP3 gate FAIL, 0/3 H/C codes agree)
+- P10 p.620 line 10 (14 unglossed groups) - blocker: open-codes; Powell 1937 (NRS 76) prints the passage (AUDIT.md, N0); next: align tx/reading_P10_L10.tsv against Powell's printed sentence from the be-api snippets already in AUDIT.md to grade the 14 groups C, ~$1
+
+## Escalation (D2B-THURP3, 5 Oct 2026)
+- [x] siblings: P5+P6 and P7 (Stamford) printed decipherments aligned, key_stamford.tsv (s.16; A3V2-THUR275); P3 postscript cross-checked against them at all grades, gate FAIL (D2B-THURP3)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [x] known-keys: Tomokiyo's stamford.jpg compared (GAPS148, N8-THUR2); key_fauconberg.tsv and key_stamford.tsv against the P3 postscript (s.22 Job 3, D2B-THURP3)
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4); Powell 1937 for P10 L10 (AUDIT.md)
+- [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py, A3V2-THUR275)
+- [x] image-check: p.188 lines 50-61 and all five sibling cipher pages read from the page image (s.18; A3V2-THURBT, N8-THUR)
+- [x] retry: one-vote boundary test v3-full PASSed its pre-registered gate (N8-THUR, 4 Oct 2026)
+Verdict: keep going: 1 internal gaps; cheapest next: align P10 p.620 L10's 14 groups against Powell 1937's printed sentence (be-api snippets in AUDIT.md) to grade them C, ~$1

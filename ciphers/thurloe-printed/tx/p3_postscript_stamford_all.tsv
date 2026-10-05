@@ -1,0 +1,34 @@
+code	p3_ps_occurrences	butler_grade	butler_meaning	stamford_meaning	stamford_votes	stamford_total	stamford_share	stamford_grade	relation
+412	1	M	t						absent
+60	2	C	i						absent
+40	1	M	a	o	133	135	0.99	C	conflict
+411	3	M	c						absent
+405	9	H	e						absent
+401	3	M	c						absent
+2	2	C	e	m	40	42	0.95	C	conflict
+417	1	M	i						absent
+19	3	C	n	a	57	57	1.00	C	conflict
+50	1	M	h						absent
+546	2	M	n						absent
+910	1	M	e						absent
+11	1	U		f	15	16	0.94	C	butler_unread
+49	2	M	n						absent
+400	2	M	a						absent
+413	2	M	b						absent
+406	1	C	a						absent
+541	1	M	o						absent
+26	1	C	t	f	17	19	0.89	C	conflict
+13	1	M	a						absent
+419	4	C	e						absent
+409	2	M	province						absent
+530	1	M	when						absent
+421	1	M	you						absent
+414	1	C	r						absent
+48	3	M	d						absent
+24	1	M	d	u	1	1	1.00	M	conflict
+39	1	M	e	p	19	19	1.00	C	conflict
+44	2	M	a						absent
+912	1	U							absent
+31	1	M	e	y	36	39	0.92	C	conflict
+403	1	C	o						absent
+# postscript tokens 59, distinct codes 32, shared with key_stamford 8; H/C-graded shared 3, agreeing 0; gate FAIL; tokens regraded 0
