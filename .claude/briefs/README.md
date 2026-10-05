@@ -207,3 +207,4 @@ applied unchanged, and three named cycle-3 briefs written from it.
   F36-GLOSS: Sonnet retired on the f.36 gloss twice, then Opus on every gloss line read at chance for 18.33 against a 6 cap.
 
 - First command of every cloud worker (5 Oct 2026: RULES-SLIM and MERCY-RAH-REFRESH stalled because the container clone carried a stale local main from 1 Oct): `git fetch origin && git checkout -B main origin/main` before reading or editing anything.
+- Page images: take the largest the host serves -- IIIF full/max, then the viewer's JPEG/TIFF download, then 200-250% zoomed viewer screenshots in overlapping sections, the PDF last (library PDFs are often downsampled; LESSONS.md "Get the largest image", 5 Oct 2026). Record the pixel size used.

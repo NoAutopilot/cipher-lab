@@ -300,3 +300,15 @@ confirmed 9 of the 11 wrong labels it did see. Use the pass to tidy splits and t
 residual as the reader-error figure for a power control: bracket with the two-reader rate (rule 3) until a known-answer leaf
 says otherwise.
 
+
+## Get the largest image the site serves, not the PDF (5 Oct 2026, bne20211-ferdinand-1478)
+
+A library's PDF download is often a downsampled copy. On BNE MSS/20211/123 the PDF page was 1114x1520 (about 120 ppi),
+too coarse to tell the cipher signs apart; the viewer's own JPEG download was 1392x1899 (+25%, still too coarse); the
+owner's screenshots of the viewer zoomed to about 200-220%, taken section by section with a line of overlap, gave
+roughly twice the PDF's detail per sign and were enough to brief a transcription. Order to try, for workers, subagents
+and the desk runners alike: (1) IIIF `full/max` (or the image API's native size, `tools/iiif_lines.py`); (2) the
+viewer's JPEG/TIFF download; (3) zoomed viewer screenshots, 200-250%, overlapping sections; (4) the PDF last. Record
+the pixel size of what was used in NOTES.md. When the host blocks the cloud (BNE answered 403), the screenshots are a
+desk ask: "zoom to 200%+, screenshot 3-5 lines at a time with overlap, upload as files to the private repo" -- an image
+pasted only into chat does not reach the session's disk and cannot be handed to a worker.

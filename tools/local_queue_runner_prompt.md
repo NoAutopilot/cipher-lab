@@ -44,6 +44,12 @@ your browser:
    catalogue are two different systems at most of them, and a negative answer with no holding-catalogue record and
    quoted availability flag is bounced back to you unlanded (`tools/lq_answer_check.py`, see "Our side of the loop"
    above).
+   When a row asks for a page image, take the largest the site offers, in this order: a IIIF "full/max" or
+   "original" image; the viewer's own JPEG or TIFF download; screenshots of the viewer zoomed to about 200-250%,
+   one section at a time, overlapping by a line; a PDF download only as a last resort (library PDFs are often
+   downsampled). Write the pixel width and height of what you got in the answer. Do not commit image files; give
+   the URL you used and leave the files for the owner to place (5 Oct 2026: on one Spanish national library letter
+   the PDF was 1114 px wide, the JPEG download 1392 px, and a 220% screenshot about twice the PDF's detail).
    Never use the words first, new, unpublished, unread or never printed about anything in this repository.
 4. Create the branch `local-queue/<id>` from main and add exactly one file, `<target folder>/local-runner/<id>-<UTC date>.md`
    (the target folder is the row's target column; if it names two folders, use the first), whose first lines are:
