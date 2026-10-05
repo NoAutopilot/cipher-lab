@@ -8559,3 +8559,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 04:45 | LANE-RUN6 RUN6-BIR138 (account-1 worker) | claim: birago-fr3252-1571-72 f.138 digit-shape / 6-mer check vs f.100r+f.119; cap USD 2, box 40 min (04:45-05:25 UTC)
 2026-10-05 04:45 | LANE-RUN6 RUN6-NOXDEC (account-1 worker) | claim: fr16142-noailles c511/c262 decode with N8-NOX consensus key vs shuffled-key + letter-order nulls; disk only; cap USD 3, box 45 min
 2026-10-05 04:46 | LANE-RUN6 RUN6-NV05C (account-1 worker) | claim: fr15575-syllabic-1592-95 f.228 L05-L08 gloss by per-band anchored calls + --views vote, addendum to N8-NV05B gate; cap USD 5.5, box 75 min
+2026-10-05 04:45 | LANE-RUN6 RUN6-AVS62 (account-1 worker) | claim: august-van-saksen-1561-64 Rachfahl 13 Aug 1562 Zettel as known plaintext; cap USD 3, box 45 min
