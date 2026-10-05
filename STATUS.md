@@ -4380,3 +4380,20 @@ Brief: .claude/briefs/runs/2026-10-05-acct3-lane-d2push.md. Seven workers (Opus 
 - Not run: Nevers fr.3416 f.35 (102 tokens in isolated figure runs, D2 out of reach by depth_check's own reason); Birago f.47 (its
   verifier step already done); Birago 1572 f.168/f.144 (NEVBIR-ERRTRUE already tested at err_true). Next depth gains on all four
   targets wait on the owner's sign sorter, not on a machine pass.
+
+## LANE VER1 handoff (session_01PhSoTvEMEhYjg6A5A6tRvA, account 2), 5 October 2026 (closed 19:5x UTC: brief met, backlog high rows spent)
+
+Brief: .claude/briefs/runs/2026-10-05-acct3-lane-ver1.md; jobs .claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md. Twelve Opus 5.5
+verifier workers (11 D, 1 D- at 1.01x cap), lane cost about 52 of cap 60. No class changed and no depth was raised; every audit is in
+the folder's AUDIT.md, status.json and PROGRESS.tsv were updated, and VERIFY-BACKLOG.tsv was regenerated (VER1-LOWB, VER1-LOWC).
+- Audit 2 done: clair1161 N3 D1 (not counted; SO-C1161); Vivonne ink 53/54/63 N3 D1 each (SO-VIV53/54/63); Paget 1714 N0 D1;
+  Janssens leaf 188 N1 D2; Gonzague fr3993 N0 D3; fr5160 N0 D1; clair1067 N0 D2; clair1108 N0 D2; dupuy452 N0 D2; clair349 N0 D2;
+  gunther-1561 N0 D2; rah-canada N0 D3; trew-posthius 1614/1618 N0 D2; antt-fcc N0 D2.
+- Audit 1 done (audit 2 still owed, low value at N0): Pisany f.247r/f.275v/f.302v N0 D1 (Aubery 1654 prints f.275v and one f.247r
+  sentence; f.302v not located in print); Gramont fr.3040 no.6 N0 (Le Grand III); Costabili R1166 N0 D0; Noailles c262 and c510-516 N0 D0.
+- Registers: status.json results rows added for clair1161 and fr3993; Bowes and Morillo set to two audits; Schonenberg PROGRESS col 1 set.
+Open for the next verifier or solver lane:
+1. Noailles c262: gloss.tsv differs from Charriere III p.258 at 4 words -- a solver re-read of the period decipherment (not a verifier job).
+2. Thurloe results[43] and [50]: one audit each, audit 2 owed. lodewijk-van-nassau results[64]: audit 2 owed. Birago fr.3252 f.36 left (owner sorter).
+3. Leads not run: Costabili key in ASMo Cifrario sec. XV B.4 (Lang 2018 p.156); Posthius cipher from Camerarius II (Aerztebriefe regest);
+   Pisany f.302v print search beyond Aubery.
