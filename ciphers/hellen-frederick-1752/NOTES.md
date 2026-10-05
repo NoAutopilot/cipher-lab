@@ -1463,3 +1463,67 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2)
 Verdict: keep going: 3 internal gaps; cheapest next: words-level context test of R4386 on the 1763 1201-2000 band, ~$3 (low prior); larger: Fagel 5177 phrase corpus for codes 1-800, ~$12
+
+## D2-HELFAGEL (5 Oct 2026): phrase-crib pilot from Fagel 5177 clear Hellen pages, codes 1-800 of R1953 (account 1 worker for LANE-D2PUSH)
+
+Step run: N7-HEL86's larger named next, PILOT slice. Intake gate (`python3 tools/intake_gate_check.py hellen-frederick-1752`, 18:4x UTC):
+`hellen-frederick-1752: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (pass).
+PREREG `key_rebuild/PREREG-HELFAGEL.md` pushed 137b2d66b (18:50 UTC) before any page was transcribed or any score run; instruments
+`key_rebuild/phrase_crib.py` and `key_rebuild/reconcile_fagel.py` pushed 3049ea92a before the run.
+
+**Corpus H.** Eight clear Hellen pages nearest 4 Jan 1752: scan 93 R (No 36, 24 Dec 1751), 94 L, 94 R, 89 R (No 37, 28 Dec 1751),
+90 L (No 37 cont., the even scans 90 and 94 newly fetched), 85 L, 85 R, 87 L + 87 R tail. Images (NA `default` URLs from
+`fagel5177/manifest_na5177.json`) in scratch only. Crops, one command per page (pasted):
+`python3 tools/iiif_lines.py --image s<N>.jpg --region <box> --out c<N><side> --prefix s<N><side> --lines-per-crop 2 --distance 100 --prominence 40 --smooth 9 --debug`
+with boxes 93R 2650,450,2250,3300; 94L 750,200,2100,3550; 94R 2500,200,2350,3550; 89R 2750,600,1950,3000; 90L 750,200,1950,2000;
+85L 700,150,2050,3600; 85R 2550,200,2300,3550; 87L 800,150,2050,3600; 87R 2550,200,2300,500 (debug overlays checked for 89R, 85R,
+87L, 94L; 87L/94L/85L boxes widened once after the first overlay clipped the right edge).
+Passes: 2 blind Sonnet passes per page (one page's crops per call) = 16 calls + 1 re-run of 85R pass A (its first run skipped about a
+third of the lines under my "skip slivers" wording; the prompt was corrected for all later calls) = 17 vision calls. Reconciliation by
+script (agreement-only, `key_rebuild/fagel_agreement.tsv`): agreed share of pass A's words 0.854-1.000 per page; corpus H =
+**1,861 agreed words** (`key_rebuild/fagel_corpus_H.txt`; disagreements and uncertain words are phrase breaks).
+Topics read (context, not code values): the Port Franc project and its opposition by Utrecht and Gelderland (No 37), the Privy
+Council protocol of the 16th on the yield of Republic offices and the Traité de Londres copy sent to Eichel (No 36), the Barrier and
+the Vienna court, the Gotha subsidy, the funeral of the Prince of Orange at the Generality's charge, the regiments.
+
+**Result** (`python3 key_rebuild/phrase_crib.py`, output `key_rebuild/phrase_crib_output.txt`, `--check` exits 0):
+
+| | cribs | counted placements | S (codes proposed) | gate / reading |
+|---|---|---|---|---|
+| C1 fr18 slices x5 (1,861 words each) | 34-190 | 0 each | 0, 0, 0, 0, 0 (mean 0.00) | <= 1: PASS |
+| C2 U-code shuffles x20 | 111 | 0 | all 0 (mean 0, p95 0) | -- |
+| C3 known-answer, 182 keyed codes 801+ held out in 10 folds | 111 | 0 | 0 proposals, 0 correct | power: **none** |
+| TARGET R1953 | 111 | 0 | **0** | -- |
+
+**Decision (PREREG 7): no values.** Nothing was proposed by the target or by either control. The known-answer control C3 also
+proposed nothing, so this is **untestable by this instrument at 1,861 words**, not a negative about codes 1-800 (rule 3). No grade
+moves; R4369's reading stands (H 152 / S 304 / M 16 / U 374); `key_r4369/key.tsv` untouched; no depth change.
+Diagnostic, outside the PREREG and not used for any decision (`key_rebuild/phrase_crib_diag.txt`): with the authentication-distance
+gate removed, the 111 cribs (median 11 letters) give only 14 boundary-consistent placements in R1953; the best is about 6 letters
+short of the gate (k=1 U token, m=3-4 keyed letters: "les etats", "la cour de", "le comte de"); only 3 of the 111 cribs occur wholly
+inside a keyed letter run. The bottleneck is crib supply and the syllable-sized keyed tokens, not the gate setting.
+**Is the full 5-93 corpus worth it?** Estimate: about 40 Hellen pages, 2 passes each, about 80 Sonnet calls at about $0.35 plus
+crops and overhead, about $30-35. Not recommended on this evidence: five times the words gives more generic repeats ("les etats", "la
+republique"), but a counted placement needs a repeated phrase of about 14+ letters lying mostly across keyed tokens next to one U,
+and the pilot found 0 even before the gate in the known-answer arm. A different instrument (more ciphertext in the same code, or
+the image check of R1953 itself) is the better spend.
+Where it was not found: no code value for 1-800 from phrase cribs drawn from Hellen's 24-28 Dec 1751 letters (8 pages).
+Requests: service.archief.nl 6 (scans 85, 87, 89, 93 and 90, 94; `default` image URLs), 2 s apart, no 403/429/challenge. Vision
+calls 17 (Sonnet subagents), 0 by me on crops beyond 4 overlay checks. Cost: estimate about $8-9 total (lane reads get_session).
+
+## Remaining gaps (D2-HELFAGEL, 5 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; period tables R4370/R4372 retired (rule 3); context-fit anneal untestable at this N (N5-HEL7); phrase-crib placement from 8 Fagel 5177 pages untestable at 1,861 words, known-answer control 0 proposals (D2-HELFAGEL); next: image check of R1953 against DECODE's transcription where decoded spans break (rule 2), ~$6
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: no-key-material; R4369, R4372 and R4376 do not read it (N6-HEL76), no 1756 Hellen sheet in R4377-R4408 (N6-HEL81)
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: not-attempted; R4388 retired (N7-HELBC); R4386 blank-cell test NON-TEST at N=121 (N7-HEL86); next: a words-level test of R4386's 63 target cells on the 1763 1201-2000 band, pre-registered, ~$3, low prior
+
+## Escalation (D2-HELFAGEL, 5 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half; all Add MS 32276 records looked at (NEAR3-HEL3, N6-HEL81, N7-HELDK)
+- [x] clear-pages: Fagel 5177's clear Hellen copies looked at (N4-HEL5) and 8 pages of Dec 1751 transcribed as a phrase corpus (D2-HELFAGEL); context only, no ciphertext beside them
+- [ ] known-keys: R4369 reads R1953; R4370/R4372 retired for 1-800; R4376 fails on R1049; R4388 fails on 1763; R4386 NON-TEST at N=121; untried instrument: words-level context test of R4386's 63 target cells, ~$3
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: fr18-bigram anneal untestable (N5-HEL7); phrase-crib placement untestable at 8 pages, C3 power 0 (D2-HELFAGEL); untried: the same instrument on the full scans 5-93 corpus, ~$30-35, low prior (not recommended), or a further R4369-code letter if one is found
+- [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2), ~$6
+Verdict: keep going: 3 internal gaps; cheapest next: words-level context test of R4386 on the 1763 1201-2000 band, ~$3 (low prior); for codes 1-800: image check of R1953, ~$6

@@ -1,0 +1,12 @@
+# DIAGNOSTIC (outside PREREG-HELFAGEL; descriptive only, no decision, no values)
+cribs 111 median letters 11
+placements ignoring the AD gate: 14
+  margin -5.7 letters: crib 'quelecomte' tokens 357-359 k=1 m=4
+  margin -5.7 letters: crib 'lesetats' tokens 775-777 k=1 m=4
+  margin -5.7 letters: crib 'aussique' tokens 596-598 k=1 m=4
+  margin -6.7 letters: crib 'leprojet' tokens 41-43 k=1 m=3
+  margin -6.7 letters: crib 'lecomtede' tokens 280-282 k=1 m=3
+  margin -6.7 letters: crib 'lacourde' tokens 280-282 k=1 m=3
+  margin -9.1 letters: crib 'regimentde' tokens 196-199 k=2 m=4
+  margin -9.1 letters: crib 'quilsont' tokens 231-234 k=2 m=4
+cribs found wholly inside keyed letter runs of R1953 (no U): 3 of 111

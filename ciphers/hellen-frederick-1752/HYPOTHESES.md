@@ -138,3 +138,8 @@ nulls ("zero") dropped from gated keys. Pass = uni value-shuffle p and bi order-
 |---|---|---|---|---|
 | period key R4388, X as filled | 0.316 | 0.260 / 0.283 / 0.338 | 0.048 / 0.056 | FAIL (retired) |
 | period key R4388, X as blank | 0.326 | 0.288 / 0.311 / 0.369 | 0.048 / 0.056 | FAIL |
+
+## D2-HELFAGEL (5 Oct 2026): phrase-crib placement, codes 1-800 of R1953 (PREREG key_rebuild/PREREG-HELFAGEL.md)
+| family | corpus | control C1 fr18 (mean S, gate <=1) | control C2 shuffle (mean / p95) | C3 known-answer (proposed / correct) | target S | verdict |
+|---|---|---|---|---|---|---|
+| phrase cribs from Fagel 5177 Hellen pages (8 pages) | 1,861 words, 111 cribs | 0.00 PASS | 0 / 0 | 0 / 0 | 0 | untestable by this instrument at this corpus size (no power), not refuted |

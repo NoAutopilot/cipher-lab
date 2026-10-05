@@ -1,0 +1,11 @@
+# phrase_crib.py (PREREG-HELFAGEL). corpus H: 1861 words, 111 cribs; R1953 tokens 846 (K 452, U 374, break 20)
+C1 slice 0 offset 148757: cribs 96, counted placements 0, S = 0 
+C1 slice 1 offset 98994: cribs 124, counted placements 0, S = 0 
+C1 slice 2 offset 82162: cribs 76, counted placements 0, S = 0 
+C1 slice 3 offset 461929: cribs 34, counted placements 0, S = 0 
+C1 slice 4 offset 258057: cribs 190, counted placements 0, S = 0 
+C1 mean S = 0.00 (gate <= 1: PASS)
+C2 code-shuffle x20: S values [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; mean 0.00, p95 0
+C3 known-answer, 182 keyed codes 801+ in 10 folds: proposals for held-out codes 0, correct 0
+TARGET: counted placements 0, S = 0
+DECISION (PREREG 7): C1 pass; target S 0 vs C2 p95 0 and C1 mean 0.00 -> no values
