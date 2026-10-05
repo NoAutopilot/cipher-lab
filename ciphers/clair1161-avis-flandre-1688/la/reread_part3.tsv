@@ -1,0 +1,30 @@
+passage	pos	label	conf	second	note
+c188L_L15	12	z	M		bar-through z
+c188L_L16	20	S	M		hooked S with tail
+c188L_L16	21	th	H		oval with bar both sides
+c188L_L16	26	th	M	dia	oval with long bar and tail
+c188L_L17	4	z	M		z with bar
+c188L_L18	3	z	M		z with bar
+c188L_L18	14	z	M		z with bar
+c188L_L18	20	S	M	s	hooked S
+c188L_L18	24	S	M	s	hooked S
+c188L_L19	11	z	M		z with bar
+c188L_L19	18	z	M		z with bar
+c188L_L21	6	z	M		z with bar
+c188L_L21	12	z	M		z with bar
+c188L_L21	13	z	M		z with bar
+c188L_L21	16	z	M		z with bar
+c188L_L21	25	z	L		z with bar, window unclear
+c188L_L22	5	z	M		z with bar
+c188L_L23	7	z	M		z with bar
+c188L_L23	17	z	L	dia	z-like, possible cross blob
+c188L_L24	4	z	M		z with bar
+c188L_L24	16	z	L		sz pair; z
+c188L_L24	20	z	M		z with bar
+c188L_L25	1	wb	M	w	w with bar above
+c188L_L25	17	z	M		z with bar
+c188L_L26	2	z	M		z with bar
+c188L_L26	9	z	M		z with bar
+c188L_L26	16	z	M		z with bar
+c188L_L27	2	z	L		z after s
+c188L_L27	4	8	M	rot	8-like loop
