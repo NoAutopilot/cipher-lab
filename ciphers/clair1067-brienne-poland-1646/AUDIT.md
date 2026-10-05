@@ -118,3 +118,61 @@ Rows 41-42 answered (2 queries; Grell's article is not a JSTOR title). One hit o
 - Albert Vandal, "Un mariage politique au XVIIe siècle: Marie de Gonzague à Varsovie", *Revue des Deux Mondes*, 3e période, 55/3 (1er février 1883), pp. 671-694, https://www.jstor.org/stable/44753034 (read online). In-document search: "Brienne" 1 hit, a footnote on p. 694 citing Brégy to Loménie de Brienne, 28 July 1646 (Affaires étrangères); "Nivern" only the Nivernais governorship Louis XIII gave Marie (p. 673); "chiffre" 0. The narrative rests on Mazarin's and the queen's letters in the Affaires étrangères (e.g. the queen to the cardinal, 17 April 1646). The 19 May 1646 letter is neither printed nor cited.
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+---
+
+## AUDIT 2 (VER1-LOWA, 5 Oct 2026)
+
+Verifier VER1-LOWA (account 2 worker for LANE-VER1, brief `.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md`), 5 Oct 2026,
+from 19:03 UTC by `date -u`; a session separate from the LANE G2 solver/reconciler, Audit 1 (24 Sept 2026) and the
+DESENCLOS-PREMISE check. Claim under audit: Audit 1's **N0** (interlinear decipherment over every cipher line; C 307, M 31 of
+338; key period). No decoding.
+
+### Rule-7 check
+`python3 tools/decode_key.py ciphers/clair1067-brienne-poland-1646 --check` (5 Oct 2026): "tokens 338: C 307, M 31 / reading
+up to date". Unchanged since Audit 1.
+
+### Search (5 Oct 2026): the families Audit 1 could not reach, plus a fresh scripted pass
+| family | searched | result |
+|---|---|---|
+| scripted pass | `tools/print_check.py`, folder's 11 phrases, `--only ia-global,gbooks,openalex,crossref` (output in the session scratchpad; folder files untouched): be-api 11, Google Books 11 (key, country=US), OpenAlex 13, CrossRef 3 | IA global 0 for every phrase. Google Books: loose-match volume counts only (Monstrelet 1572, legal compilations, Chéruel's *Lettres de Mazarin* 1879 for "qu'il seroit impossible de le mettre en doubte" as a loose match -- Chéruel t.2 was searched exactly by Audit 1, 0). No print of the gloss text. |
+| (g) OpenAlex (429 for Audit 1) | "Brienne reine de Pologne 1646 Nivernais gouvernement" 0; "Louise-Marie de Gonzague gouvernement du Nivernais" 5 (unrelated); scripted keyword rows 109 (ballet, Vincent de Paul correspondence) | nothing on this letter |
+| (g) Semantic Scholar (429 for Audit 1) | same two queries | first returned 0; the next calls returned **HTTP 429**, host stopped |
+| (g) HAL | `"Clairambault 1067"` 0; `Brienne AND "reine de Pologne" AND 1646` 0 | 0 |
+| (g) CrossRef | scripted 3 keyword rows; DOI lookup of Grell, *Louise Marie de Gonzague (1611-1667) reine de Pologne*, 2 vols (Champion, 29 Mar 2024, doi 10.14375/np.9782745360762) | Grell 2024 is **closed access** (OpenAlex: closed, no repository copy; Google Books API `intitle:` query 0): the lead Audit 1 named, still not read. It could at most add a print (N0 with a print). |
+| (g) Persée | HTML search | not usable for a phrase test (the same generic count for unrelated quoted strings); unreachable in effect |
+| Google Books, manual | `"Nivernois" "reine de Pologne" Brienne 1646 chiffre` | 0 |
+| JSTOR | family (ii) row appended (bare quoted phrase, no cipher keyword): "le titre du gouvernement de Nivernois" | queued; family (i) rows 41-42 answered (Vandal 1883 read, no hit) |
+| solver repos, DECODE, Cryptiana | Audit 1 / solver greps and DESENCLOS-PREMISE (4 Oct) accepted | - |
+
+### Classification (Audit 2)
+**Brienne to the Queen of Poland, 19 May 1646 (Clairambault 1067 fol.226r-227r): N0 -- Audit 1 endorsed**, with its qualifier:
+the known decipherment is a manuscript interlinear gloss on the leaf, not mentioned in the catalogue entry, and no print of it
+was found (families above and Audit 1's). Key source **period** (rebuilt by us from the period gloss, not a cryptanalytic key);
+`text: known` (on the leaf).
+
+**Depth (rule 4a): D2, 90.8%** of cipher tokens C (307 of 338; no H/S; M 31). Not D3: the percentage passes, but the 31 M
+tokens are ordinary cipher-letter/syllable groups where the key value and the gloss part company or the sign is uncertain
+(e.g. `55` que, `y` b, `h_` y), not names or codes, so "gaps mostly names/codes" fails. External check: the gloss itself
+(non-statistical), plus pairing consistency 0.863 vs shuffled <=0.448. Depth sentence (true, specific, from the gloss and the
+C reading): Brienne writes that he had the Queen of Poland's dispatch communicated to the Queen regent and sets out how to
+answer the Duke of Mantua's ministers if they renew their instances over the title of the government of the Nivernois, held
+"en faveur des Ducs de Niuernois", citing a precedent in her favour, a promise of the "regres" to the Duc de Nevers.
+Outward words: "partially deciphered (about 91%)" -- by the period gloss; the safe sentence governs.
+
+**Safe sentence** (Audit 1's, unchanged): "The cipher passages of Brienne's letter to the Queen of Poland of 19 May 1646 (BnF
+Clairambault 1067, fol.226-227) carry an interlinear decipherment on the leaf itself (N0, two audits). Aligning that
+decipherment with the groups gives an 84-code key (grade C) that regenerates the reading: C 307, M 31 of 338 tokens. No print of
+the letter or its plaintext was located."
+**Unsafe:** "We deciphered Brienne's 1646 letter"; "first / previously unread"; "the Queen's (or Brienne's office's) decipherment"
+(the gloss hand is unidentified, Audit 1 s.3); "largely deciphered" (D3 not met).
+
+### Postmortem
+No over-claim found in NOTES.md, the results row or Audit 1. The results row lacked depth fields; added. No SECOND-OPINIONS-QUEUE
+row (N0).
+
+Requests: be-api.us.archive.org 11, www.googleapis.com 11 + 2, api.openalex.org 13 + 3, api.crossref.org 3 + 1,
+api.semanticscholar.org 2 (429), api.archives-ouvertes.fr 2, www.persee.fr shared with the fr5160 audit. No logins, no
+credentials printed.
+
+`python3 tools/depth_check.py` (5 Oct 2026, after this audit; the item is N0, not counted): `unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0` exit 0

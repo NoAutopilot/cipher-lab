@@ -150,3 +150,58 @@ api.openalex.org 2 (errors), api.crossref.org 1, api.semanticscholar.org 1, api.
 no logins, no subagents.
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+---
+
+## AUDIT 2 (VER1-LOWA, 5 Oct 2026)
+
+Verifier VER1-LOWA (account 2 worker for LANE-VER1, brief `.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md`), 5 Oct 2026,
+from 19:03 UTC by `date -u`; a session separate from the LANE G2 solver and from Audit 1 (24 Sept 2026, 08:51-09:05 UTC).
+Claim under audit: Audit 1's **N0** for letters A (26 Mar 1696, fol.249v-250r) and B (undated, fol.261v-262r), B' (nine
+unglossed groups) not classified; C 584, M 82, U 1 of 667; key period. No decoding.
+
+### Rule-7 check
+`python3 tools/decode_key.py ciphers/clair1108-duvergier --check` (5 Oct 2026): "signs.tsv: tokens 667: C 584, M 82, U 1 /
+reading up to date". Unchanged since Audit 1.
+
+### Search (5 Oct 2026)
+The folder had no `phrases.txt`; this audit wrote one (10 runs from the gloss and the clear text of A and B, 17th-c. spelling
+folded by the tool) and ran the scripted pass.
+
+| family | searched | result |
+|---|---|---|
+| scripted pass | `tools/print_check.py ciphers/clair1108-duvergier --only ia-global,gbooks,openalex,crossref` (output in the session scratchpad): be-api 10, Google Books 10 (key, country=US), OpenAlex 10, CrossRef 10 | IA global 0 for every phrase. Google Books and CrossRef: loose-match counts only (dictionaries, Maintenon's letters for "voila monseigneur son projet", Grimoard's Turenne collection 1781 for the Giraudin run -- word overlap, not the phrase). No print of A's or B's gloss text. |
+| (e) IA full text, by hand | be-api fts: "giraudin irlandois" (10 items: La Rochelle, Agenais bibliography, masonic, Revue d'histoire de l'Église -- none Vergier), `"coste de kent"` (3, Spanish newspapers, numismatics), "vergier middleton calais 1696" (4,220 loose; top hits La Roncière VI, already read by Audit 1, and a *Corsaires dunkerquois* title, generic) | nothing on these letters |
+| Google Books, by hand | `"chevalier Giraudin"` (7: an 1839 play, Agenais bibliography -- unrelated); `"Myddleton" Vergier Boulogne 1696` 0 | 0 |
+| (g) OpenAlex (errored for Audit 1) | "Vergier Pontchartrain 1696 Middleton Calais" 0; "Jacques Vergier commissaire de la marine Dunkerque" 27 (review notices, unrelated) | 0 relevant |
+| (g) Semantic Scholar (rate-limited for Audit 1) | same two queries | **HTTP 429** on both, host stopped |
+| (g) HAL | `"Clairambault 1108"` 0; `Vergier AND Middleton` 0 | 0 |
+| (g) Persée | HTML search | not usable for a phrase test (same generic count for unrelated quoted strings) |
+| sender-specific: Mancel 1903 (*Bulletin de l'Union Faulconnier*) | IA advancedsearch `title:faulconnier` and "Mancel Vergier" | **0 items on IA**; the volume remains readable only through Google Books search-inside (Audit 1: 57 terms, the gloss words absent). The pages pp.130-134 were still not read in full: a gap, not a hit. |
+| JSTOR | family (ii) row appended (bare quoted phrase, no cipher keyword): "impraticable sur la coste de Kent" | queued; family (i) rows 50-51 answered, no hit on these letters |
+| HathiTrust full text | not tried (Cloudflare from the cloud, standing finding) | unreachable |
+
+### Classification (Audit 2)
+- **A (fol.249v-250r, Boulogne 26 Mar 1696): N0 -- Audit 1 endorsed.** Prior decipherment: the interlinear gloss on the leaf;
+  no print of the plaintext located (folio-level citations only: Boislisle 1879, Mancel 1903, La Roncière 1909).
+- **B (fol.261v-262r): N0 -- Audit 1 endorsed**, except **B'** (the first nine groups of f265R R01, no gloss, no reading):
+  still not classified.
+- Key source **period** (rebuilt by us from the gloss); `text: known` (on the leaf).
+
+**Depth (rule 4a), A+B as one result: D2, 87.6%** of cipher tokens C (584 of 667; no H/S; M 82, U 1). Not D3: the residue is
+mostly ordinary syllable groups where the key value and the gloss part company (e.g. `143` et, `277` en, `290` ti), plus the
+nine unread B' groups, not names or codes. External check: the gloss (non-statistical). Depth sentence (true, specific, from
+the gloss and the C reading of A): Vergier reports Lord Middleton's view that a landing on the Kent coast had become almost
+impracticable because of the forces placed there, and his plan to land instead in the province of York, "ou sont presque tous
+les haras d'Angleterre", or in the West, or in both at once, embarking at Brest the troops for the West and at Calais those for
+York. Outward words: "partially deciphered (about 88%)" -- by the period gloss; the safe sentences of Audit 1 s.8 govern.
+
+**Unsafe** (added to Audit 1's): "largely deciphered" (D3 not met); any reading of B'.
+
+### Postmortem
+No over-claim found. The results row lacked depth fields and still said one audit; updated. No SECOND-OPINIONS-QUEUE row (N0).
+
+Requests: be-api.us.archive.org 10 + 3, archive.org 2, www.googleapis.com 10 + 2, api.openalex.org 10 + 2, api.crossref.org 10,
+api.semanticscholar.org 2 (429), api.archives-ouvertes.fr 2. No logins, no credentials printed.
+
+`python3 tools/depth_check.py` (5 Oct 2026, after this audit; the item is N0, not counted): `unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0` exit 0

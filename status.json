@@ -2255,7 +2255,7 @@
       "date": "24 Sept 2026",
       "kind": "recovery",
       "title": "Brienne to Ennemond Servien, 21 Nov 1659 (fr.5160 ff.86-88): key recovered from the contemporary decipherment on f.87",
-      "grade": "N0 (contemporary decipherment on f.87); key 74 groups C; f.86 C 72 / M 196, f.88 C 65 / M 88; N0 (f.87 is the contemporary decipherment)",
+      "grade": "N0 (two audits; contemporary decipherment on f.87); key period, 79 groups C; cipher tokens f.86 C 68 / M 200, f.88 (with the canvas-173 tail) C 101 / M 167 / U 3 (decode_1659.py --check, 5 Oct 2026)",
       "line": "f.87 deciphers both ciphered passages; the key reads f.88 at 114/143 against a control of 28-35. A key recovered from an existing decipherment, not a first reading. Verifier: N0, see AUDIT.md.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653",
       "key": "period",
@@ -2263,15 +2263,22 @@
       "claim_scope": "key-to-known-text",
       "plaintext_novelty": "N0",
       "mapping_novelty": "N0",
-      "completeness": "137/421",
+      "completeness": "169/539",
       "unresolved_spans": "",
       "audit_refs": [
-        "fr5160-letellier-1653/AUDIT.md '## 1. Verdict'"
+        "fr5160-letellier-1653/AUDIT.md '## 1. Verdict'",
+        "fr5160-letellier-1653/AUDIT.md '## AUDIT 2 (VER1-LOWA, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "fr5160-letellier-1653/AUDIT.md section 1; f.86 C 72 / M 196, f.88 C 65 / M 88 from the grade"
+      "fields_source": "fr5160-letellier-1653/AUDIT.md section 1; f.86 C 72 / M 196, f.88 C 65 / M 88 from the grade; AUDIT 2 (VER1-LOWA, 5 Oct 2026): grades and completeness from decode_1659.py --check",
+      "depth": "D1",
+      "depth_pct": 31.4,
+      "depth_sentence": "",
+      "decode_status": "Non-decrypted",
+      "depth_check": "longest C run 6 groups; held-out f.86-only key reads f.88 L01-L08 114/143 vs shuffled 28-35 (key validity, not a readable stretch); VER1-LOWA 5 Oct 2026",
+      "text": "known"
     },
     {
       "date": "24 Sept 2026",
@@ -2417,7 +2424,7 @@
       "date": "24 Sept 2026",
       "kind": "recovery",
       "title": "Loménie de Brienne to the Queen of Poland, 19 May 1646 (BnF Clairambault 1067 fol.226r-227r): key and reading of the cipher passages",
-      "grade": "N0 (interlinear decipherment on the leaf itself, not in the catalogue entry, no print located; AUDIT.md); C 307, M 31 of 338 tokens (no H: no key sheet)",
+      "grade": "N0 (two audits; interlinear decipherment on the leaf itself, not in the catalogue entry, no print located); C 307, M 31 of 338 tokens (no H: no key sheet)",
       "line": "A contemporary interlinear decipherment stands over every cipher line; aligning it gives key_1646 (84 codes, syllabic nomenclator; pairing consistency 0.863 vs shuffled <=0.448) and a reading decode_key.py regenerates. Same design family as Brienne's 1647/1651 tables, a different table.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1067-brienne-poland-1646",
       "key": "period",
@@ -2428,12 +2435,19 @@
       "completeness": "307/338",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 1. Verdict'"
+        "AUDIT.md '## 1. Verdict'",
+        "clair1067-brienne-poland-1646/AUDIT.md '## AUDIT 2 (VER1-LOWA, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "clair1067-brienne-poland-1646/AUDIT.md section 1; C 307, M 31 of 338"
+      "fields_source": "clair1067-brienne-poland-1646/AUDIT.md section 1; C 307, M 31 of 338; AUDIT 2 (VER1-LOWA, 5 Oct 2026)",
+      "text": "known",
+      "depth": "D2",
+      "depth_pct": 90.8,
+      "decode_status": "Partially decrypted",
+      "depth_sentence": "Brienne writes that he had the Queen of Poland's dispatch communicated to the Queen regent and sets out how to answer the Duke of Mantua's ministers if they renew their instances over the title of the government of the Nivernois, citing a precedent in her favour, a promise of the regres to the Duc de Nevers.",
+      "depth_check": "period interlinear gloss over every cipher line (non-statistical); pairing consistency 0.863 vs shuffled <=0.448; decode_key --check C 307 M 31 up to date; M residue is cipher-letter groups, not names (not D3); VER1-LOWA 5 Oct 2026"
     },
     {
       "date": "24 Sept 2026",
@@ -2500,7 +2514,7 @@
       "date": "24 Sept 2026",
       "kind": "recovery",
       "title": "Vergier to Jérôme de Pontchartrain, Boulogne, 26 Mar 1696 and a second letter (BnF Clairambault 1108 fol.249-250, 261v-262r): key and reading from the interlinear decipherment",
-      "grade": "C 584, M 82, U 1 of 667 groups (no H: no key sheet); novelty N0 (AUDIT.md)",
+      "grade": "C 584, M 82, U 1 of 667 groups (no H: no key sheet); novelty N0 (two audits, AUDIT.md); nine groups on fol.262r unread and unclassified",
       "line": "N0: both letters carry an interlinear decipherment on the leaf, in a second hand (probably contemporary), except nine groups on fol.262r that nothing reads; aligning it gives key_1696 (129 codes, grade C) that regenerates the reading. The folios are cited in print since 1879 (Boislisle's Saint-Simon, Mancel 1903); the deciphered text was not found in print. fol.249r is show-through, no cipher.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1108-duvergier",
       "key": "period",
@@ -2515,12 +2529,19 @@
       "completeness": "584/667",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 1. Verdict'"
+        "AUDIT.md '## 1. Verdict'",
+        "clair1108-duvergier/AUDIT.md '## AUDIT 2 (VER1-LOWA, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "clair1108-duvergier/AUDIT.md section 1; C 584, M 82, U 1 of 667"
+      "fields_source": "clair1108-duvergier/AUDIT.md section 1; C 584, M 82, U 1 of 667; AUDIT 2 (VER1-LOWA, 5 Oct 2026)",
+      "text": "known",
+      "depth": "D2",
+      "depth_pct": 87.6,
+      "decode_status": "Partially decrypted",
+      "depth_sentence": "Vergier reports Lord Middleton's view that a landing on the Kent coast had become almost impracticable because of the forces placed there, and his plan to land instead in the province of York, where nearly all England's stud farms are, or in the West, or both at once, embarking the troops at Brest and Calais.",
+      "depth_check": "period interlinear gloss over every cipher run except nine groups (non-statistical); decode_key --check C 584 M 82 U 1 up to date; M residue mostly syllable groups, not names (not D3); VER1-LOWA 5 Oct 2026"
     },
     {
       "date": "24 Sept 2026",
@@ -3786,6 +3807,32 @@
       "grade": "N0 (one audit), D0. Key ours (learned by alignment to the clear copy), nothing decoded. Text known: Dupuy 521 221R-226R (whole letter, text-confirmed), Charriere III pp.551-558 (excerpts).",
       "line": "No reading (D0). Aligning the seven cipher pages to the Dupuy 521 clear copy converges on one key (S 0.601 vs nulls 0.273/0.384) that agrees with the published key on 7 of 17 checked signs; the letter's text is known from Dupuy 521 and in part from Charriere III.",
       "depth_check": "N8-NOX basin S 0.601 vs N1 p99 0.273, N2 max 0.384; N8-NOX2 7/17 vs 4/5/5; no decode; VER1-NOX 5 Oct 2026"
+    },
+    {
+      "date": "5 Oct 2026",
+      "kind": "key application",
+      "key": "period",
+      "text": "known",
+      "novelty": "N0",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "claim_scope": "key-to-known-text",
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3993-gonzague-nevers-1595",
+      "depth": "D3",
+      "depth_pct": 95.2,
+      "depth_sentence": "The writer reports that scouts have come to warn that gabions are being brought up between the Porte du Mas and the ravelin, with a battery expected the next day and a danger of loss; the period interlinear gloss on the leaf reads the same.",
+      "decode_status": "Partially decrypted",
+      "fields_source": "fr3993-gonzague-nevers-1595/AUDIT.md: AUDIT 1 (A3V-VNV01, 4 Oct 2026) and AUDIT 2 (VER1-REG, 5 Oct 2026); row added by VER1-LOWA 5 Oct 2026",
+      "document_id": "BnF fr.3993 ff.71v-72r: Charles de Gonzague-Cleves to the duc de Nevers, 2 Aug 1595 (NV-01)",
+      "title": "Charles de Gonzague-Cleves to the duc de Nevers, 2 Aug 1595 (BnF fr.3993 ff.71v-72r): period key no.70 checked against the leaf's interlinear decipherment",
+      "grade": "N0 (two audits), key period (no.70, fr.3995 f.131r, identified by S. Tomokiyo, credited; transcribed by us). Text known: period interlinear decipherment on the leaf. 189 tokens: H 180, M 1, U 8.",
+      "line": "Largely deciphered (about 95%) by the period key, which agrees letter for letter with the contemporary interlinear decipherment on the leaf; a calibration of key no.70, not a reading of unknown text.",
+      "depth_check": "period interlinear gloss on the leaf checked by eye in both audits; decode_key.py --check H 180 M 1 U 8 up to date; z 14.4 vs 200 shuffled keys; VER1-REG 5 Oct 2026",
+      "audit_refs": [
+        "fr3993-gonzague-nevers-1595/AUDIT.md '## AUDIT 2 (VER1-REG, 5 Oct 2026)'"
+      ]
     }
   ],
   "lanes": [

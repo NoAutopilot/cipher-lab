@@ -314,3 +314,65 @@ a second pass.
 Requests: none (no network beyond git).
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+---
+
+## AUDIT 2 (VER1-LOWA, 5 Oct 2026)
+
+Verifier VER1-LOWA (account 2 worker for LANE-VER1, brief `.claude/briefs/runs/2026-10-05-ytbiz-ver1-jobs.md`), 5 Oct 2026,
+from 19:03 UTC by `date -u`; a session separate from the LANE G solvers and from Audit 1 (LANE V, 24 Sept 2026). Scope: the
+item of status.json results[44], **f.86 and f.88 cipher blocks of Brienne's letter of 21 Nov 1659 (decipherment f.87)**; the
+f.67 and 1653 sections above are not re-audited. No decoding; one rule-7 check only.
+
+**Claim under audit:** Audit 1's N0 ("f.87 is the contemporary decipherment"), key period, C 72 / M 196 (f.86), C 65 / M 88 (f.88).
+
+### Extract and rule-7 check
+`python3 decode_1659.py --check` (5 Oct 2026) exits 0 and prints **f.86 C 68 M 200 P 12; f.88 C 101 M 167 P 13 U 3**. The
+figures in Audit 1 and in the results row are stale: after Audit 1 the f.88 tail on canvas 173 (L09-L16) was transcribed and
+the regrade of NOTES.md "f.88 tail and regrade" (C only where the key value equals the f.87 text aligned at that position)
+was applied. Cipher tokens now 539 (P excluded): **C 169 (31.4%), M 367, U 3; no H, no S.** The tail continues f.87
+paragraph 2 to "quoy y pense" and the clear "je suis," (NOTES.md), so Audit 1's open point ("a remainder past the end of
+f.87 paragraph 2 ... needs its own audit") is closed: the whole of f.88's cipher sits under f.87 paragraph 2 and is N0 with
+the rest.
+
+### Search (5 Oct 2026), families not covered or not reached by Audit 1
+| family | searched | result |
+|---|---|---|
+| scripted pass | `tools/print_check.py` over the folder's 12 phrases, `--only ia-global,gbooks,openalex,crossref` (output kept in the session scratchpad, folder files untouched): IA be-api 12, Google Books 12 (key, country=US), OpenAlex 14 (Bearer), CrossRef 3 | IA global 0 for every phrase. Google Books: loose-match volume counts only (Corneille, Calvinism, dictionaries); the one exact-looking hit, "l'alliance est si disproportionnée" in *Pouvoirs et littoraux* (2000), is the 15th-c. Coëtivy case Audit 1 already dismissed; "pourroit prendre resolution de s'y marier" surfaces Chéruel's *Lettres de Mazarin* only as a loose match (Chéruel IX was searched exactly by Audit 1, 0). No print of the f.87 text. |
+| (g) OpenAlex (429 for Audit 1) | keys "Servien Turin 1659 Brienne" (23), "Ennemond Servien ambassade Savoie" (2), "Marguerite-Yolande de Savoie Parme 1659 mariage" (3), "Justine de Bressac ambassadrice" (1) | Conti 2024/2025 (*HES* 244, doi 10.3917/hes.244.0051): **closed access** (OpenAlex oa_status closed, no repository copy) -- still a lead, not read. Ieva, *La diplomatie savoyarde au cœur de l'Europe* (thesis 2020, HAL tel-03708318, open PDF): fetched and grepped -- "5160" 0, none of the 12 phrases; it cites Servien's Turin dispatches as AMAE CP Sardaigne vols 43-65 (manuscript) and two further studies, Gellard 2014 and Externbrink in Ferretti (dir.), *De l'ombre à la lumière. Les Servien* (2014), not reachable here. |
+| (g) Semantic Scholar (429 for Audit 1) | "Servien Turin 1659", "Ennemond Servien" | first query errored, second answered (786, nothing on this letter: Duccini on Abel Servien, Westphalia); a third call returned **HTTP 429**, host stopped (one call per second, no retry loop) |
+| (g) HAL | `"fr. 5160" Servien` | 0 |
+| (g) Persée | HTML search, quoted names | not usable: quoted queries returned the same generic count (1118) for unrelated strings; logged as unreachable for a phrase test |
+| (f) solver repos / DECODE | Audit 1's greps of 24 Sept accepted; not re-cloned | - |
+| JSTOR | family (ii) row appended (bare quoted phrase, no cipher keyword): "pour le ruiner dans l'esprit de monsieur son fils" | queued; family (i) rows 30-32, 61-62 already answered with no hit on this letter |
+| AMAE Correspondance politique Sardaigne 43-65 | manuscript ministerial series (Ieva's citation) | not searchable from here; a copy there would be a second manuscript witness, still N0 |
+
+### Classification (Audit 2)
+**f.86 + f.88 (Brienne to Ennemond Servien, 21 Nov 1659): N0 -- Audit 1 endorsed.** Prior decipherment of this very item:
+f.87 of the same volume, headed "Dechiffré de la lettre de M.r le Comte de Brienne du 21 9.bre 1659"; no print of the plaintext
+located after the families above. Key source **period** (rebuilt by us from the period decipherment, as the results row says);
+`text: known` (manuscript, f.87).
+
+**Depth (rule 4a): D1, 31.4%** of cipher tokens C (169 of 539; no H/S). The longest run of consecutive C tokens is 6 groups
+("r pa r le a ce", f.86); M dominates because the strict regrade makes every token M where the key row is in conflict or the
+value is not the aligned f.87 text. The held-out check (f.86-only key reads f.88 L01-L08 at 114/143 against a shuffled
+control of 28-35) shows the key is right in substance, but it is a key-validity check, not a readable stretch above the
+authentication distance, so D2 is not met. Outward words: "fragments read"; the text itself is the period decipherment's.
+No depth sentence (D1).
+
+**Safe sentence.** "The cipher passages of Brienne's letter of 21 Nov 1659 (BnF fr.5160 f.86, f.88) have a contemporary
+decipherment on f.87 of the same volume (N0, two audits). From it we rebuilt the 79-group key; the key reads f.88 against
+f.87 at 114 of 143 groups where a shuffled control reads 28-35. No printed edition of the letter was located."
+**Unsafe.** "We deciphered Brienne's 1659 letter"; "deciphered (about 31%)" or any D2+ wording; "to Abel Servien".
+
+### Postmortem and corrections
+- No novelty over-claim. Stale figures: the results row's grade and `completeness` ("137/421", f.88 C 65 / M 88) predate the
+  f.88 tail and the regrade; corrected in status.json to the `--check` figures above (C 169 of 539 cipher tokens).
+- Audit 1's "not classified" f.88 remainder is now covered by f.87 (above): N0, not a separate item.
+- Not changed: NOTES.md status word (`open`), the folder title's "Abel" (orchestrator's).
+
+Requests: be-api.us.archive.org 12, www.googleapis.com 12, api.openalex.org 14 + 5 by hand, api.crossref.org 3,
+api.semanticscholar.org 3 (one 429), api.archives-ouvertes.fr 1, theses.hal.science 1 (PDF), www.persee.fr 7. No logins, no
+credentials printed, no subagents.
+
+`python3 tools/depth_check.py` (5 Oct 2026, after this audit; the item is N0, not counted): `unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0` exit 0
