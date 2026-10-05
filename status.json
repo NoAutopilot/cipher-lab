@@ -3640,7 +3640,7 @@
       "date": "5 Oct 2026",
       "kind": "contribution",
       "title": "Gramont to Montmorency, Boulogne [Bologna], 28 March 1530 (BnF fr.3040 no.6, ff.18-19): published key checked against the printed, period-deciphered text",
-      "grade": "N0 (plaintext and decipherment of this item already known: period marginal decipherment on f.18r; printed by Le Grand 1688 from this volume, Anc. 8565); one audit",
+      "grade": "N0 (plaintext and decipherment of this item already known: period marginal decipherment on f.18r; printed by Le Grand 1688 from this volume, Anc. 8565); two audits (AUDIT 2 DEF1-GRACOS, 5 Oct 2026: also calendared L&P iv(3) no.6293 from Le Grand iii.454)",
       "line": "Used as known plaintext to check the published Gramont 1530 key: 1302 keyed cipher tokens agree with Le Grand III pp.454-457 at 0.81-0.87 against shuffled-text p99 0.33-0.35 (N8-GRA2, N8-GRA3, N9-GRA4); one sign value confirmed at C (ST = L). A key check on a known text, not a decipherment.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont",
       "key": "published",
@@ -3652,9 +3652,10 @@
       "completeness": "1302/1693",
       "unresolved_spans": "301 tokens '?' (unsettled reader splits); a few signs ending the clear line above f.18r L01 unread",
       "audit_refs": [
-        "AUDIT.md '## AUDIT 1 for fr.3040 no.6 (VER1-GRA, 5 Oct 2026)'"
+        "AUDIT.md '## AUDIT 1 for fr.3040 no.6 (VER1-GRA, 5 Oct 2026)'",
+        "AUDIT.md '## AUDIT 2 for fr.3040 no.6 (DEF1-GRACOS, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "no reading file; recon n8gra2/n8gra3/n9gra4 + key.tsv at this commit",
       "superseded_by": "",
       "fields_source": "fr2980-gramont/AUDIT.md VER1-GRA verdict table; counts from n8gra2/n8gra3/n9gra4 recon.tsv and target.json",
@@ -3675,7 +3676,7 @@
       "date": "5 Oct 2026",
       "kind": "contribution",
       "title": "Costabili to Eleonora d'Aragona, Esztergom 21 June 1491 (ASMo Amb. Ung. b.2/20 no.16; DECODE R1166): sign key rebuilt from the leaf's period interlinear decipherment",
-      "grade": "N0 (AUDIT.md AUDIT 1, VER1-COS, 5 Oct 2026); key period; 11 sign values C, 7 M; no running decode",
+      "grade": "N0 (AUDIT.md AUDIT 1, VER1-COS, and AUDIT 2, DEF1-GRACOS, 5 Oct 2026); key period; 11 sign values C, 7 M; no running decode",
       "line": "The cipher passages on P1-P2 carry a period interlinear decipherment; aligning it to the cipher groups gives 11 sign values at grade C (two blind passes over a gloss-shuffle control, re-verified by three verifier sessions). A key rebuilt from the period decipherment, not a reading: nothing beyond what the period decipherer read has been read. A period key sheet in ASMo (Cancelleria, Cifrario, sec. XV) is not excluded.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/costabili-modena-1491",
       "key": "period",
@@ -3688,9 +3689,10 @@
       "completeness": "key 11 C / 7 M; 0 of ~1,140 signs read as running text",
       "unresolved_spans": "R1166 P4 (~100 unglossed signs) not transcribed or read",
       "audit_refs": [
-        "costabili-modena-1491/AUDIT.md '## AUDIT 1 (VER1-COS, 5 Oct 2026)'"
+        "costabili-modena-1491/AUDIT.md '## AUDIT 1 (VER1-COS, 5 Oct 2026)'",
+        "costabili-modena-1491/AUDIT.md '## AUDIT 2 (DEF1-GRACOS, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "fields_source": "AUDIT.md AUDIT 1 (VER1-COS)",
       "depth": "D0",
       "depth_pct": 0.0,

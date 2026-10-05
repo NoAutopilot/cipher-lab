@@ -287,3 +287,7 @@ ciphers/thurloe-printed	"somwhat is brewing under hand"	2026-10-05	queued
 ciphers/thurloe-printed	"Blake" "Mountagu" 1656 cipher OR cypher OR deciphered	2026-10-05	queued	
 ciphers/thurloe-printed	"send home the great ships"	2026-10-05	queued	
 ciphers/fr16045-pisany-rome-1585	"qu'elle ne se fie de ce Prince"	2026-10-05	queued	
+ciphers/fr2980-gramont	"like those who look at dancers" [DEF1-GRACOS, fr.3040 no.6, phrase family (ii) from L&P iv(3) no.6293 wording, no cipher keyword]	2026-10-05	queued	
+ciphers/fr2980-gramont	"Tarbes" AND "Montmorency" AND "Bologna" AND 1530 AND (cipher OR chiffre OR decipher*) [DEF1-GRACOS, fr.3040 no.6, family (i)]	2026-10-05	queued	
+ciphers/costabili-modena-1491	("Beatrix" OR "Beatrice") AND "Eleonora" AND 1491 AND (cipher OR cifra OR "secret signs") [DEF1-GRACOS, R1166, family (i)]	2026-10-05	queued	
+ciphers/costabili-modena-1491	"una cifra con la S. V. antiqua" [DEF1-GRACOS, Berzeviczy CXXXIV wording, phrase family (ii), no cipher keyword required]	2026-10-05	queued	

@@ -192,6 +192,9 @@ reference for the same letter. 2955's page 1 carries the card "1491 06 15", "Amb
 job, so R1165 = 2955 (MNL DF 295914) is a strong match by card, date and page count, not an image-to-image comparison.
 Requests: www.vestigia.hu 2 pages + 4 images, no 429/403.
 
+## Suggestion: period key sheet (DEF1-GRACOS verifier, 5 Oct 2026; not run)
+One line, per Usage 7: (DEF1-GRACOS AUDIT 2, 5 Oct 2026): Berzeviczy CXXXIV (Beatrix to Eleonora, 13 Jun 1491, pp.190-191) says she sends "una copia" of the old cipher and names Costabili writing that week; the copy is not printed. Next: an ASMo request (Canc. Duc., Cart. di Princ. Est., B.a 2 Ungheria, and Cifrario sec. XV B.4) to compare its signs with align/key_n9cos2.tsv; owner-side request, ~$0.5 to draft
+
 ## Remaining gaps (refreshed N8-COS, 4 Oct 2026; N9-COSV, N9-COS2, 5 Oct 2026)
 Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 11 sign values at C (N8-COS 10 + N9-COS2 W = t), the rest M; W = t verified at C by N9-COSVW (5 Oct 2026, AUDIT.md; to do at the next DECODE login: eye-check p2_u15 W under "padre", and relabel p1_u21 pos 5 as W)
 - Key rebuild from the period decipherments: R1166 P1-P2 at C for 11 signs (N8-COS group crops 10; W = t added by N9-COS2's re-score with the dash+open-loop shape as its own label); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; the R1163/R1165 slips were tried with line crops against their clear slips (N9-COS2: pass A non-test at 2 pairs, pass B 0.250 = shuffle p95 at 4 pairs, FAIL) because anchor spans between clear words are too long for the 0.8-1.25 ratio filter; next: hand-cut span boxes at sub-line anchors (each clear word left in the cipher slip, plus line ends) so pairs stay short, 2 blind passes, ~$3; and a q-shape split (owner's sign sorter or group crops of q tokens), ~$2

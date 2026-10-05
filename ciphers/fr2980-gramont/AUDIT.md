@@ -2088,3 +2088,84 @@ Checks (5 Oct 2026, 18:26 UTC): `python3 tools/depth_check.py` exit 0, 0 FAIL; i
 unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 9; legacy ungraded: 0
 ```
 The new fr.3040 no.6 row is `key-to-known-text`, N0, one audit, so it is not counted (correct). key.tsv untouched; `decode.py --check` not needed.
+
+## AUDIT 2 for fr.3040 no.6 (DEF1-GRACOS, 5 Oct 2026)
+
+Verifier DEF1-GRACOS (account 1, for LANE DEFAULT-account-1-20261005-2039), 20:47-21:1x UTC by `date -u`. Not a solver of this
+letter, not VER1-GRA (Audit 1), not VER-GRACOS or N9-GRAV. Brief `.claude/briefs/runs/2026-10-05-account1-default-2039-jobs.md`,
+DEF1-GRACOS. Nothing decoded, no key value changed. Task: try to break Audit 1's N0 and log the families searched.
+**Revision check:** there is no dated NOTES.md section after Audit 1 (18:2x UTC) touching fr.3040 no.6 (`git log` on the folder since
+18:00 shows only an unrelated manifest cache). Nothing to carry forward. No SECOND-OPINIONS-QUEUE.tsv row exists for this item.
+
+### Result: N0 confirmed, and more firmly than Audit 1 recorded
+
+Two finds Audit 1's log did not have. Neither changes the class; both add printed witnesses of this very letter.
+1. **L&P iv(3) calendars this letter: no. 6293, "Bishop of Tarbes to Montmorency", 28 March [1530], p. 2829.** The margin gives the
+   source as **"Le Grand, iii. 454"**. The English abstract covers the cipher content: Rochford "was told to leave that to others, as he
+   was a party"; the Pope "has suspended the matter for a [month] and a half", during which the King of England is to send a commission;
+   "the English would act for three or four months like those who look at dancers, and take courage according as they see them dancing
+   ill or well"; the bishop of Worcester's advice about benefices for Rochford. Located by be-api fts on IA `11332111bsb` ("dancers" 1
+   hit), then read in that item's `_djvu.txt` (OCR lines 40388-40517, fetched once). The Google Books API confirms the entry (`"6293"
+   Tarbes Montmorency`: Calendar of State Papers 1876 and the 1965 reprint, snippet "6293. BISHOP OF TARBES to MONTMORENCY. According to
+   your instructions I have done my best to entertain my lord of Rocheford"). Audit 1's line "no calendar entry of this letter found by
+   these queries" is corrected here: the queries it ran ("Rochford" Tarbes; "Tarbes Boulogne March") missed it, because the calendar
+   reads "Rocheford" and dates the letter from **Bologna**, not "Boulogne". The calendar is a summary in English, not a decipherment, but
+   it puts the cipher content in print a second time, through Le Grand.
+2. **Modern scholarship cites and quotes it.** The Google Books API returns *Katharine of Aragon* (2013) with a note reading "Tarbes to
+   [Francis I], Bologna, 27 March 1530, and same to Montmorency, 28 March, ibid., nos 6290 and 6293, pp. 2826-9; quota[tion]". Ehses,
+   *Römische Dokumente* (1893; IA `rmischedokument00ehsegoog`, fts) points to "die Berichte von Kardinal Grammont bei Le Grand, namentlich
+   III. 454", which is this letter.
+3. **f.18v also carries the period decipherment** (closing Audit 1's open check). Gallica `btv1b9059870w` canvas 33 (f.18v), fetched
+   at 1100 px wide, 5 Oct 2026 (1 IIIF request, 200). Eye check: a contemporary cursive clear text runs down the left margin beside
+   both f.18v cipher blocks (the block after the clear line ending "selon le progect et desseing ..." and the block after "... plus proffitable pour le service dud. S[eigneu]r"; clear lines as eye-read, not checked against the print), and continues
+   in three full-width lines below the last cipher line. The three cipher lines at the head of f.18v carry no gloss beside them on this
+   page. Canvas 34 (f.19r): the two cipher lines at the head have no gloss on f.19r itself. Whether the f.18v foot gloss also covers f.19r
+   L01-L02 was not established (I did not read the gloss text). The page views were not committed; the canvas URLs re-fetch them.
+
+Nothing found that weakens N0. The printed plaintext comes from this volume (Anc. 8565 = Béthune 8565, Audit 1 point 2), the leaf carries
+the period decipherment on f.18r and f.18v, and the item is calendared and cited. The class could only be broken by showing Le Grand
+printed a different letter; L&P's own marginal citation "Le Grand iii. 454", dated 28 March, rules that out.
+
+| item | N-class | key source | text | depth | % H/C/S | safe sentence |
+|---|---|---|---|---|---|---|
+| A. fr.3040 no.6 f.18r L11-L21 | **N0** (endorsed) | published (Tomokiyo; Lasry) | known | **D2** (endorsed) | 71.2% (287/403) | Audit 1's sentence, unchanged |
+| B. fr.3040 no.6, whole letter | **N0** (endorsed) | published; ST = L at C (ours, from this letter's print) | known | **D2** (endorsed) | 76.9% (1302/1693) | "The cipher of Gramont's letter to Montmorency of 28 March 1530 (BnF fr.3040 no.6) carries its period decipherment in the margin. Le Grand printed it in 1688 from this volume, and Letters and Papers iv(3) calendars it as no. 6293. We used it as known plaintext to check the published Gramont 1530 key (agreement 0.81-0.87 against shuffled-text p99 0.33-0.35)." |
+
+Unsafe (both): "deciphered by us", "first decipherment", "previously unread", "not in print", "no calendar entry". The last two are now
+contradicted by L&P iv(3) no. 6293. Depth: Audit 1's counts were re-read from `n8gra2`/`n8gra3`/`n9gra4` target.json and recon.tsv and stand
+(D2). D3 is withheld (<80% and the gaps are ordinary text). The D2 sentence in status.json (Rochefort's instance; the Pope suspends the
+matter for a month and a half; a commission from the King of England) is true: it matches both Le Grand p.454 and L&P 6293. Outward words,
+if ever used: none. It is a key check on a known text.
+Place-name note: the leaf and Le Grand read "Boulongne"; L&P and the registers read Bologna. The registers' "Boulogne [Bologna]" is right
+(the Pope was at Bologna in March 1530).
+
+### Search log (5 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical series | L&P iv(3) (IA `11332111bsb`) be-api fts "Tarbes Montmorency" 1, "Bishop of Tarbes" 1, "dancers" 1; `_djvu.txt` read at the hit | **no. 6293, p.2829, from Le Grand iii.454** (find 1) |
+| (a) | CSP Spanish IV (IA `calendarofletter0004pasc`) be-api "Tarbes" 1 hit (Tarbes leaving for Rome; Chapuys/Mai notes), "dancers" 0; "Tarbe Boulogne" HTTP 502 (not retried) | no entry of this letter |
+| (b) sender/recipient print | Ehses 1893 (IA `rmischedokument00ehsegoog`) fts "Tarbes" 1, "Grammont" 1, "Le Grand" 1, "Montmorency" 1, "Gramont" 0; "Bologna Martii 1530" 503 (not retried) | cites Le Grand III.454 (find 2); does not print the letter. Pocock: Audit 1 (0 hits), not re-run |
+| (c) holding archive / leaf | Gallica canvases 33, 34 (2 requests) | f.18v period gloss (find 3); f.19r none on the page |
+| (e) Google Books API (`country=US`, key) | `"ceux qui regardent les danseurs"` 4 (3 Le Grand 1688 issues, 1 unrelated 1999); `"Tarbes" "Rochefort" 1530 chiffre` 5 unrelated; `"6293" Tarbes Montmorency` 5 (L&P 1876, 1965 reprint x2, *Katharine of Aragon* 2013); `Gramont Tarbes "Boulogne" 1530 "Montmorency" lettre chiffrée` 0 | print and calendar confirmed; no separate modern decipherment |
+| (g) scholarship | OpenAlex (Bearer) 2 queries, 0 and 0; Semantic Scholar 2 (one 429, stopped after the second, 0); CrossRef 1 (Michon, "Gabriel de Gramont (1486-1534)", 2011, a biographical notice); HAL 2 (the same Michon notice, halshs-00587643, no abstract; 0); CORE 1 (no relevant hit in top 5) | nothing on this letter's cipher |
+| (f) solver repositories | dbourdeau/cyphersolver HEAD a439937 (`git ls-remote`), unchanged since Audit 1's grep; aaymeloglu/unsolved-ciphers HEAD d2800bb (shallow clone, grep): DECODE catalogue rows 4227 (fol.18, "Non-decrypted") and fol.16 only | no reading |
+| JSTOR | 2 rows appended to JSTOR-QUEUE.tsv: (i) Tarbes+Montmorency+Bologna+1530+cipher keyword; (ii) bare phrase "like those who look at dancers" (L&P wording) | queued; Audit 1's 2 rows still queued; neither blocks the class |
+| not searched | CSP Venetian IV; Persée (the class is already N0 from three prints) | |
+
+Requests this session for this item: be-api.us.archive.org 12 (one 502, one 503), archive.org 4 (advancedsearch 3, one `_djvu.txt`),
+gallica.bnf.fr 2, www.googleapis.com 4, api.openalex.org 2, api.semanticscholar.org 2 (1 x 429), api.crossref.org 1,
+api.archives-ouvertes.fr 3, api.core.ac.uk 1, github.com 2 ls-remote + 1 shallow clone (scratchpad). All >= 1.5 s apart.
+
+### Postmortem
+
+No over-claim in the registers. One gap in Audit 1's search log is corrected above: it said no calendar entry was found, but L&P iv(3)
+no. 6293 calendars the letter. The cause was search terms. The calendar spells "Rocheford" and dates from Bologna, and a check run with
+the leaf's spelling ("Boulogne", "Rochford") missed it. **Lesson for later audits:** search an English calendar with its own normalised
+place names and spellings, and with a distinctive plaintext phrase translated into English ("dancers"), not only with the leaf's spelling.
+status.json results[114] and PROGRESS.tsv rows f.18r/f.18v/f.19r updated (two audits; f.18v margin now viewed). No SECOND-OPINIONS row (N0).
+
+depth_check (DEF1-GRACOS, 05 Oct 2026 21:00 UTC, exit 0, 0 FAIL; both items N0, not counted, so not listed by name):
+```
+unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0
+```

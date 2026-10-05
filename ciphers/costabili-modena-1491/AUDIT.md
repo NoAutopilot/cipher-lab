@@ -237,3 +237,73 @@ depth_check (VER1-COS, 5 Oct 2026, exit 0; this item is D0, not counted, so it i
 ```
 unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 12; legacy ungraded: 0
 ```
+
+## AUDIT 2 (DEF1-GRACOS, 5 Oct 2026)
+
+Verifier DEF1-GRACOS (account 1, for LANE DEFAULT-account-1-20261005-2039), 20:47-21:1x UTC by `date -u`. Not N8-COS, N9-COS2,
+VER-GRACOS, N9-COSV, N9-COSVW or VER1-COS. Brief `.claude/briefs/runs/2026-10-05-account1-default-2039-jobs.md`, DEF1-GRACOS.
+Nothing decoded. Task: try to break Audit 1's N0 / D0 / key period, and log the families searched.
+**Revision check:** no NOTES.md section dated after Audit 1 (18:4x UTC); `align/key_n9cos2.tsv` unchanged (11 C, 7 M). No
+SECOND-OPINIONS-QUEUE.tsv row exists. Nothing to carry forward.
+
+### Result: N0, key period, D0 endorsed; one lead sharpened
+
+1. **Berzeviczy 1914 does not print this letter.** Read from the volume's own table of contents (IA `aragoniaibeatrix00berz`,
+   `_djvu.txt` fetched once; OCR lines 1271-1393). Every 1491 item, CXXVII-CL, is listed. The June 1491 items are CXXXIV (13 June,
+   Beatrix to Eleonora), CXXXV (17 June, unsigned, Pavia), CXXXVI (20 June, Ippolito to his father) and CXXXVII (24 June, Beatrix to
+   the Duke). None is a Costabili report of 21 June. The Costabili reports printed are XCIV (Antonio, 1489), CLV (20/22 Mar 1492 =
+   R1168, already `found-solved`), CLXII (3 May 1492), CLXXXVIII, CXCV (1493), CCXCII (1502) and appendix IX (16 Jul 1490). This
+   confirms CS-4's whole-volume read.
+2. **Lead sharpened, not resolved: the period key was sent to Ferrara eight days earlier.** Berzeviczy **CXXXIV**, Beatrix to Eleonora,
+   Esztergom, 13 June 1491 (ASMo Canc. Duc., Cart. di Princ. Est., B.a 2, Ungheria; printed pp.190-191). The editor's summary reads
+   "új titkos jegyeket küld" ("sends new secret signs for their correspondence"). The text says: "io ho una cifra con la S. V. antiqua
+   ... per essere cifra multo vechia ... pertanto mando una copia d'essa ... et con questa scriverimo quando será bisogno". The same
+   letter names "el dicto Messer Beltramo [Costabili] scrive al presente" and says she has charged him "che scriva de omne cosa
+   copiosamente". Berzeviczy prints the letter, **not the cipher copy** (no sign table in the item, none in the volume's contents). So
+   a period key sheet for the queen's cipher went to Eleonora in June 1491, and Costabili was writing to her in the same week. Whether
+   R1166 uses that cipher is **not established**. If the copy survives in ASMo (Audit 1's Cifrario B.4 lead; Láng 2018 p.156, "the one
+   in which Beatrix is sending Eleanor the code key"), it would be an H-grade witness for the 7 M values. This is a suggestion for the
+   folder's next steps, not run. It does not change the class, which rests on the plaintext glossed on the leaf.
+3. **Nothing found that prints the R1166 plaintext or a sign table for it.** See the log below. *Nel segno del corvo* (Modena exhibition
+   catalogue, 2002) mentions in a note that a Costabili letter "è inserita tra quelle di Beatrice" (ASMo, Cancelleria ducale). Google
+   Books gives only that snippet. No query (`cifra`, `zifra`, `Strigonio giugno`) surfaced a transcription of a 21 June 1491 letter, and
+   the catalogue was not reached in full. Logged as not excluded.
+
+| item | class | key | text | depth | % H/C/S | check |
+|---|---|---|---|---|---|---|
+| R1166 P1-P2 sign key (11 C / 7 M) | **N0** (endorsed) | `period` (rebuilt by us from the leaf's period interlinear decipherment) | known (on the leaf; not found in print) | **D0** (endorsed) | 0% running text (0 of ~1,140 measured-estimate signs) | key-only: gloss alignment; no clause read by us, so no D2 sentence |
+
+**Safe sentence** (Audit 1's, unchanged): "Costabili's cipher report to Eleonora d'Aragona of 21 June 1491 (ASMo, Amb. Ung. b.2/20 no.16;
+DECODE R1166) carries a period interlinear decipherment on the leaf. Aligning it with the cipher groups gives 11 sign values at grade C.
+This is a key rebuilt from the period decipherment (N0, key period, text known on the leaf); nothing beyond what the period decipherer read
+has been read."
+**Unsafe:** "we deciphered Costabili's letter", "the first key of the Ferrara-Hungary cipher", "the key Beatrix sent in June 1491" (the
+identity of R1166's cipher with the queen's June 1491 copy is unproven), "previously unread", "printed by Berzeviczy" (it is not).
+
+### Search log (5 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical series | Berzeviczy 1914, `aragoniaibeatrix00berz`: be-api fts "Costabili" 1, "Beltrame" 1, "Strigonii" 1; full TOC read from `_djvu.txt`; CXXXIV text read | not printed (point 1); CXXXIV key-copy letter (point 2) |
+| (b) Nyáry | Nyáry Albert, "A modenai kir. levéltár magyar történelmi szempontból", *Századok* 1868: located by bibliography (Google Books snippets: *Magyar könyvészet* 1885, *Századok* 1868, *Párhuzamok* 2000); IA advancedsearch for Századok 1868 0 items | **unreachable** in full text; it is an archive survey from 1868, and Berzeviczy 1914 supersedes it as the edition. Not read |
+| (c) Dispacci estensi | Google Books `"dispacci" estensi Ungheria Costabili` 1 (*Savonarola da Ferrara all'Europa* 2001, unrelated); no printed "Dispacci degli ambasciatori estensi" series for Hungary 1491 located (as Audit 1) | none |
+| (e) Google Books API | `"Beltramo Costabili" 1491 cifra` 0; `"Costabili" "Strigonio" 1491 Eleonora` 1 (*Nel segno del corvo* 2002, point 3); `"tuti li termini sono passati"` 346, top 6 unrelated (keyword matches: Sanuto, 1611/1628 tracts); `"Nel segno del corvo" Costabili` x3 variants 0/1/1 snippets only; `Costabili 1491 "in cifra" Beatrice Eleonora` 0 | no transcription |
+| (g) scholarship | OpenAlex (Bearer) "Beltramo Costabili Esztergom" 0, "Beatrice of Aragon Eleonora cipher Modena" 0; Semantic Scholar 1 (HTTP 429, stopped); CrossRef "Beltramo Costabili Hungary" (top 5 unrelated); CORE `"Costabili" Ungheria cifra 1491` (top 5 unrelated); HAL "Costabili Ungheria" 0 | nothing on this cipher |
+| (f) solver repositories | aaymeloglu/unsolved-ciphers HEAD d2800bb (shallow clone, grep "costabili"/"1166"): DECODE catalogue rows R1162-R1168, R1095-R1097 only (the "1166" hit in starhemberg-1758 is a number, not this record); dbourdeau/cyphersolver HEAD a439937, unchanged since Audit 1's grep | no reading or key |
+| JSTOR | 2 rows appended: (i) Beatrix/Beatrice + Eleonora + 1491 + cipher keyword; (ii) bare phrase "una cifra con la S. V. antiqua" | queued; Audit 1's 3 rows still queued; neither blocks the class |
+| not searched | Vértesy 1961 (Audit 1: epa.oszk.hu 403; not retried, good-citizen rule); MDE III page by page (out of date range per Láng's citations) | |
+
+Requests this session for this item: archive.org 3 (advancedsearch 2, `_djvu.txt` 1), be-api.us.archive.org 3, www.googleapis.com 9,
+api.openalex.org 2, api.semanticscholar.org 1 (429), api.crossref.org 1, api.core.ac.uk 1, api.archives-ouvertes.fr 1; github shared with
+the fr2980-gramont audit. All >= 1.5 s apart.
+
+### Postmortem
+
+No over-claim found: the registers say "key rebuilt from the period decipherment, not a reading". One suggestion goes into the next steps
+(not run): look in ASMo for the cipher copy Beatrix sent with Berzeviczy CXXXIV (13 June 1491) and compare its signs with key_n9cos2.tsv.
+status.json results[115] and the PROGRESS.tsv R1166 row are updated (two audits). No SECOND-OPINIONS row (N0).
+
+depth_check (DEF1-GRACOS, 05 Oct 2026 21:00 UTC, exit 0, 0 FAIL; both items N0, not counted, so not listed by name):
+```
+unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0
+```
