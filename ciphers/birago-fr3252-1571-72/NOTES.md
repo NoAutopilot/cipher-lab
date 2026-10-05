@@ -1622,3 +1622,41 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.
 - [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
 - [ ] retry: reconciliation call on the kept f.36-37 rows' 193 splits; f.117r power at a measured post-look-alike error
 Verdict: keep going: 10 internal gaps; cheapest next: reconciliation call on the kept f.36-37 rows' 193 splits (~$1.5, disk only); the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)
+
+## RUN6-BIR3637 (5 Oct 2026, account-1 worker for LANE-RUN6): one reconciliation call on the kept f.36-37 rows' 193 splits
+
+Brief `.claude/briefs/runs/2026-10-05-acct1-run6-wave4.md` (job RUN6-BIR3637). Disk only, 0 network requests. Call count stated
+first: 1 Sonnet subagent call (= 1 unit). `harvest/f3637/`: `PREREG.md` (pushed in 34f61cf2 before the call), `build_in.py` ->
+`adjudicate_in.tsv` (193 rows: both readers read, ids differ, kept rows r36_L01-L08, v36top, v36mid, r37), `prompt_R.md`
+(F36R-REREAD's prompt), `adjudicate_out.tsv`. Crops regenerated with `cut_lines.cut('.../harvest/f36/crops', 850, 0, 120, 65, 2)`
+(108 crops, gitignored as before).
+
+Result: the reader returned 193 rows but said it decided only 5 from the crops; 3 M (r36_L01 p5 S40, p6 S80; r36_L03 p1 S45),
+2 L, 188 '?' L. **E before 0.333 (one-sided 40 + split 193 / 700); E after 0.329 ((40 + 190) / 700) if the 3 M were applied.** By the
+pre-registered rule (more than half '?' or L) the call is non-discriminating: nothing spliced, no passD_v3, no control re-run, no grade
+changes. This is an undersized-reader outcome (193 positions over ~80 crops in one call), not a test of the eye reconciliation that
+worked for r36n (38 positions, 26 H/M); the next step splits it by page. A second call here would have crossed 80% of the USD 2 cap.
+
+## Remaining gaps (RUN6-BIR3637, 5 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.117r: 276 signs, all M/U; f.100r + f.119: 0 graded of 1,048 digits.
+- f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles, two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
+- f.36-37 kept rows at E 0.333 (700 positions, 193 splits) - blocker: not-attempted; one reconciliation call over all 193 returned 3 M / 190 L-or-? (RUN6-BIR3637: the reader did not open most crops; non-discriminating by PREREG item 4, nothing spliced) -- the unit was oversized, not the method; next: the same prompt split by page into 4 calls (r36_L01-L08 58, v36top 72, v36mid 52, r37 11 positions; harvest/f3637/adjudicate_in.tsv), disk only, ~$2
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error, disk only, ~$1; TXD-HOLDOUT (3 Oct 2026, ../nevers-birago-fr3251-1572/harvest/tx_decode/holdout/RESULTS.md): TX-DECODE's lattice lam-4 rank 1/201 for f.117r survives the pre-registered held-out control (held-out no.87 lines choose lam 4; printed 1572 key beats all 218 same-design wrong keys, z 6.92; rank 1 at every lam 1-8, z 3.28-3.66), judge still FAIL -1.081 vs real_p05 -0.903; the wrong-key gate alone is weak (passes on 4 of 5 shuffled lattices); no reading, S at best; next: verifier pass on the 32 lam-4 changed positions against the native crops, ~$2
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: pre-registered test on another 1572 leaf with q-words, disk only, ~$1
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); spelled-crib tests without power (BIRAGO-NUM2, -NUM4); no key on disk (crossmatch control-backed, BIRAGO-NUM-TOOLS); 158 prefix letter design control-backed negative (BIRAGO-NUM-TOOLS); dotted groups and 1x/5x/8x units as nomenclator codes untested-by-this-tool (flank statistic, matched control power 2-4/20, N8-BIRNUM), no meaning licensed by the f.100r clear context; f.138 (no.71) is not a third letter in this system (RUN6-BIR138: symbol cipher, digit fraction 0.03 vs controls 0.95/0.0; 1572 key rank 1/201, NEVBIR-138); fr.3251/fr.3252 have no other numerical letter in Sept 1571-Mar 1572 (BIRAGO-NUM-SCOUT); next: new material -- a numerical-key letter in another Nevers/Birago volume (fr.3256, fr.4688 Guazzo, fr.4712-4715) by a catalogue/eye sweep, ~$2
+- Nov 1571 key table - blocker: no-key-material; fr.3995 undated tables all viewed and the sweep is closed (BIRAGO-NUM-KEYEYE, -KEYEYE2, -KEYEYE3, BIRAGO-76): no.73 and no.74 control-backed negatives, no.32, no.33 and no.71 under the coverage floor (no.71 also 1580s), no.75 three-figure codes with League-era names, no.48-51 symbol keys, no.76 a single-sign letter alphabet (digits 1-9 for a-i, symbols and letters for l-z, no 0) with two-figure word codes in a plain and an overlined series (BIRAGO-76); no key table in fr.3995 fits the digit-only 00-59/74-99 token set; the next instrument is new material: a Nov 1571 key in another volume of the Nevers/Birago papers (fr.3252 neighbours, fr.3251, fr.3256, fr.4712-4715 key sheets) located by a catalogue/eye sweep for "chiffre" leaves dated 1571-72
+- fr.3995 no.74 digraph signs 23-27 and no.32 superscript marks - blocker: not-attempted; read at ~0.5x, values not legible; only matters if a letter in either key turns up; next: none unless a matching letter is found
+
+## Escalation (RUN6-BIR3637, 5 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ); f.100r pooled with f.119 (BIRAGO-NUM); third numerical letter scouted in both volumes, none (BIRAGO-NUM-SCOUT)
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 and f.47r; 1572 key on f.117r; Nov 1571 system against all 66 digit keys on disk, none at gate, control 6/6 (BIRAGO-NUM-TOOLS); fr.3995 no.73 stat 1.10/-0.39, no.74 0.26/-0.16, no.32 0.79/1.23 (coverage 0.24-0.32) vs gate 3.292, controls 12/12 each (BIRAGO-NUM-KEYEYE, -KEYEYE2); no.71 letters coverage 0.26-0.31, stat -1.09 to 1.65, controls it 12/12, fr 9/12 (BIRAGO-NUM-KEYEYE3); no.76 single-sign letters, not two-figure, crossmatch not applicable (BIRAGO-76)
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss by per-sign tiles; f.47r pair check against it; T88=q pre-registered test; f.100r + f.119 codes: clear-context code reading run (N8-BIRNUM, untested-by-this-tool at this N), f.138 ruled out as a third letter (RUN6-BIR138); next a numerical letter in another volume
+- [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
+- [ ] retry: reconciliation of the kept f.36-37 rows' 193 splits in 4 per-page calls (one 193-row call was non-discriminating, RUN6-BIR3637); f.117r power at a measured post-look-alike error
+Verdict: keep going: 10 internal gaps; cheapest next: the kept f.36-37 rows' 193 splits in 4 per-page reconciliation calls (~$2, disk only); the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)
