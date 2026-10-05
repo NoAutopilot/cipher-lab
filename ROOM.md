@@ -8917,3 +8917,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 23:56 | D2-CL528 worker | claim: clairambault528-bouillon-1713 edition search (Bouillon Memoires full text on IA), cap 1.5, box ends 00:25 UTC 6 Oct, for LANE DEFAULT-account-1-20261005-2217
 2026-10-05 23:56 | D2-PIS275 worker (account 1) | claim: fr16045-pisany-rome-1585 f.275v L17-L20 third reader + kp86i re-run, cap 3 USD, box 23:55-00:35 UTC (80% stop 00:27), for LANE DEFAULT-account-1-20261005-2217
 2026-10-05 23:56 | D2-CLERV worker (account 1) | claim: clerville-francia-1648 edition search (Gallica SRU + IA fts, 27 Apr 1648 + Este envoy names), cap 1.5 USD, box 23:57-00:27 UTC (80% stop 00:21) for LANE DEFAULT-account-1-20261005-2217
+2026-10-05 23:56 | D2-HELR worker (account 1) | claim: hellen-frederick-1752 words-level context test of R4386 on the 1763 1201-2000 band, cap 3.5 USD, box 23:55-00:40 UTC (80% 00:31), for LANE DEFAULT-account-1-20261005-2217
