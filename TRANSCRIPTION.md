@@ -88,6 +88,12 @@ no.87 stops being held-out if that job names clusters from the no.87 sheet -- it
 - A symbol cipher with siblings in the same key family is segmented into the family atlas before any line read; a
   brief that skips it says why.
 - Person time goes through the sorter only, never blocking (CLAUDE.md Usage 6).
+- Owner sorts are reused family-wide (owner, 5 Oct 2026: "point number four is really good"). Before any machine pass
+  or new owner sorter session on a letter, apply every owner decision already made in its key family
+  (`tools/sign_sorter_apply.py`, cluster-level) and use the owner-labelled tiles as the exemplar sheet for that hand.
+  A brief that asks the owner to sort tiles of a family whose earlier owner decisions were not applied first is the
+  brief's error. Each owner session's decisions are scored afterwards against BENCHMARK-TX where a benchmark item
+  exists ("my work isn't gospel", owner, 5 Oct 2026): owner labels are one strong reader, not ground truth.
 - New capability goes into the shared tools above (Usage 8), never a private script in a target folder.
 
 ## Build plan (3 Oct 2026, account-3 orchestrator; jobs in WORK-QUEUE.tsv)
