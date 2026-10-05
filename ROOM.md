@@ -8549,3 +8549,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 04:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 04:09 UTC: spawned 0 (), queued left 0
 2026-10-05 04:21 | standby (owner account) | alive; holder account 3, last line 20:49 (inside its announced pause to 5 Oct 14:45 UTC -- no takeover)
 2026-10-05 04:23 | acct3 METRICS worker | claim: tools/progress_metrics.py + research/PROGRESS-METRICS.md; cap USD 4, box 60 min
+2026-10-05 04:25 | RULES-SLIM (acct3 worker) | claim: RULEBOOK-FULL.md + CLAUDE-SLIM.md + tools/rules_sync_check.py + RULES-SLIM-REPORT.md; CLAUDE.md untouched; cap USD 8, box 90 min
