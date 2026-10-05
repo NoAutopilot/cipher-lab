@@ -1,6 +1,6 @@
 # Mechanical partial reading of vanbeuningen-dewitt-1657 cipher copy (ff.210-211) with key.tsv (tools/decode_key.py).
 # ciphertext.tsv: cipher tokens 862: H 0, C 491, S 0, M 26, I 0, U 0 (U = code not yet keyed, shown as [code]). Plain Dutch words pass through as transcribed (grade 'clear', not counted above).
-# Status: PARTIAL. Nomenclator (9 codes) and 21 letters (53 code-values) recovered by voted alignment (align.py); 2 codes (11, 40) are genuine unresolved conflicts between two values (shown 'a|b', grade M); 1 code (106) stays unkeyed.
+# Status: PARTIAL. Nomenclator (9 codes) and 21 letters (53 code-values) recovered by voted alignment (align.py); codes 40/11 split by the 5 Oct 2026 image re-read into 40 a, 48 d, 11 n, 8 m.
 L01	Mijn Heer
 L02	Hier voort van dagh tot dagh met groot impatientie
 L03	verlangst na uw, d e h e e r r o s
