@@ -192,3 +192,4 @@ Verdict: parked: every gap has an outside blocker (ASKS row 106; LOCAL-QUEUE L40
 Waits on: the TNA page copy of SP 81/44/225 (REQUEST.md) and LOCAL-QUEUE L40 (Bodleian record for the Roe key).
 
 - S: fetch SP 81/44/88's full Discovery record detail (note field) to see whether its "decipher" names the cipher used, ~$0.5.
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L40 answer landed, local-runner/L40-2026-10-05.md -- Calendar vol. i no. 1486 lies in MS. Clarendon 19 (ark:29072/x0bk128b21xs, "NOT AVAILABLE ONLINE"); catalogued at volume level only, so the Roe cypher's folio is not online.

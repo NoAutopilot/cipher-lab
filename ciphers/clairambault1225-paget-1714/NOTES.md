@@ -1317,3 +1317,4 @@ Source: the owner's browser runner, outreach/local-runner/DESK-2026-10-04.md. Th
 
 Search results, not a novelty verdict (rule 10); for the verifier to carry into AUDIT.md's JSTOR line. No gap or escalation line
 changes (the print step was already [x]).
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L11 answer (PR 67) bounced by tools/lq_answer_check.py (missing holding-catalogue rung: catalogue_ladders.tsv has no Archives nationales/FranceArchives row); row back to queued, answer not landed.

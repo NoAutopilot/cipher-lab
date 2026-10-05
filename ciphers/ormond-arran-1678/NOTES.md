@@ -512,3 +512,4 @@ Verdict: keep going: 0 internal gaps; cheapest next: read the MS. Carte 50 fols.
 - While L39 is pending, read the 1871 Russell and Prendergast report (*The Carte Manuscripts in the Bodleian Library*,
 also DKPR 32nd Report) entry for MS. Carte 50 in a public-domain scan, for any description of fols. 439-440 or the
 f.472 key Kenyon used. This depends on nobody. The 57/58 image check was done on 3 Oct 2026 (FT4c): the print reads 58.
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L39 answer landed, local-runner/L39-2026-10-05.md -- MS. Carte 50 (ark:29072/x08c97kq77qq) "NOT AVAILABLE ONLINE", "a large collection of ciphers in use from 1662-82" from fol. 405; no item-level record for fols. 439-440.

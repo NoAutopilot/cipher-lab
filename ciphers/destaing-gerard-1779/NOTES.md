@@ -351,3 +351,4 @@ that depends on nobody:
 
 - S: build a period French dictionary headword list in tools/data (named by DES-PART U4), so the one-part band test in
   `tools/freq.py --onepart-dict` can run at headword resolution rather than fr18 word types. Script work, no person needed.
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L42 answer (PR 67) bounced by tools/lq_answer_check.py (missing holding-catalogue rung: catalogue_ladders.tsv has no Archives nationales/FranceArchives row); row back to queued, answer not landed.

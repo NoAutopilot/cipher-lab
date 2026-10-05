@@ -4124,3 +4124,4 @@ Owner observation on blind system E (= Macaulay 1747 p.3), same session: Armstro
 ("question"), a large cup. Note across the three owner readings: the cup "◡" now resembles a sign in B (Byrom n), D (Mavor n) and E
 (Macaulay qu) -- direct evidence that single generic shapes do not discriminate between systems; only distributions (frequency x
 position, dot placement) can. Macaulay's chart also places small dots/hooks by position inside the cell (a ".", e "°").
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L54 blocked -- the Monroe Catalogue Online needs its printed guest sign-in, which the runner does not do; answer not landed (lq_answer_check exit 1). Owner desk: ASKS 142.

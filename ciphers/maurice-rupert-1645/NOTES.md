@@ -610,3 +610,4 @@ Verdict: parked: every gap has an outside blocker
   Archive and grep it, with no login, for cipher numbers printed beside decipherments. Each printed pair would add a
   code-value row of the same ministers' family to key9119.tsv. Re-run keys/key_test.py only if coverage rises well
   above 35/93, because the power control needs more covered tokens. Depends on nobody; about $2. (GAPS52, 3 Oct 2026)
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L43 answer landed, local-runner/L43-2026-10-05.md -- MS. Firth c. 6-8 (1849 Rupert transcripts; c. 6 and c. 7 "NOT AVAILABLE ONLINE") carry no per-volume dates or item list; the 7 Jul 1645 letter not located in the catalogue; originals mostly BL Add. MSS. 18980-2.

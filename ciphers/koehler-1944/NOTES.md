@@ -321,3 +321,4 @@ exit 0
 
 $ python3 tools/next_steps.py --wait-only | grep koehler-1944
 (no line)
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L21 answer landed, local-runner/L21-2026-10-05.md -- Kahn 1981 loan still refused (print-disabled tier); BookReader search-inside OCR (not the page image) agrees with Bourdeau msgs.py at 5 of 6 disputed groups (mogex, gwwmn, ayddq, hklsf, alhon), msg 2 last group avl/evl unresolved. Not an image check.

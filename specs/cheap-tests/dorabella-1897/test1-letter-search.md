@@ -65,3 +65,4 @@ not reachable... stop") covers the whole test.
 Requests: archive.org (advancedsearch.php, 2x metadata, 1x djvu.txt fetch) = 4, >=1.5s apart;
 api.openalex.org (keyed) = 2, >=1.5s apart; ciphermysteries.com = 2 (1 search, 1 post fetch),
 >=1.5s apart. No 429/403/challenge on any host.
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L55 answer landed, specs/dorabella-1897/local-runner/L55-2026-10-05.md -- Powell, Memories of a Variation (1947), read in the reader: no quotation of Alice Elgar's July 1897 covering letter (not found); p.129 Appendix names it in one sentence only.

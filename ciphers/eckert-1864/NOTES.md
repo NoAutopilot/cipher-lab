@@ -319,6 +319,10 @@ exit 0
 ```
 `python3 tools/next_steps.py --wait-only | grep eckert-1864`: no line.
 
+## Local runner (PR-LAND-67, 5 Oct 2026)
+
+- 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L4 answer landed, local-runner/L4-2026-10-05.md -- blocked: HathiTrust Cloudflare check, no E4/E5 phrase query sent, no absence claimed. Row blocked; owner desk ASKS 141.
+
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 3 Beckwith/Kimber entries in Cipher No. 2 (section 8); the rest of the ledger untranscribed.
 - E4/E5 second copies in the parallel sent ledger mssEC 18 (object 10074) - blocker: not-attempted; section 2 and Premise check (c): never opened; next: Huntington CONTENTdm `CISOSEARCHALL` query for 21-22 Apr 1864 and one page read ("While waiting"), ~$1.5
