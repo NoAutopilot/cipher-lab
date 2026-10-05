@@ -860,3 +860,35 @@ Orange to August. His note (endnote p.23, "209, 1."): "Dresdner Archiv Locat 851
 1562)". This is not WVO 53/57/126 (1561, 1564). Next (~$1, worker): match Brussels 13 Aug 1562 to a WVO number and to our pool
 (ciphertext_*.tsv, System A/B); if the ciphertext is on disk, Rachfahl's quotation is a crib/known plaintext (grade C, printed).
 Other hits (pp.120, 150, 426, 9) are plain "Zettel" (slip of paper), not cipher.
+
+## RUN6-AVS62 (5 Oct 2026)
+
+Worker RUN6-AVS62 (LANE-RUN6, account 1), 04:45-04:5x UTC by `date -u`. Brief `.claude/briefs/runs/2026-10-05-acct1-run6-wave1.md`.
+- Match: Rachfahl II.1 p.209 n.1 "Locat 8510 (chiffrierter Zettel, d. Brüssel 13. August 1562)" = **WVO 74** (13-8-1562, to August,
+  Brussel, BVAN;KHAG;SAD; `sources/wvo/cipher-letters-2026-09-24.tsv`). Already on disk: `ciphertext_74.tsv` (R21 native read),
+  aligned to its f.19 decipherment (`pairs_74.tsv`), source of `key_74.tsv` (all 38 rows C). No new fetch; requests: 0 to any host.
+- Test (pre-registered `avs62/prereg_avs62.md`, pushed 714a53b6 before scoring; script `avs62/crib_test.py`, `--check` exit 0):
+  Rachfahl's quoted span only vs p3 l.9 idx 22 - l.13 idx 31 (155 signs), both sides normalised, difflib ratio.
+
+| item | S |
+|---|---|
+| known-answer control (f.19 units, same span) | 0.8025 PASS |
+| target (key_74 decode) | **0.7963** |
+| N1 shuffled key, 1000 | mean 0.162, p99 0.259 |
+| N2 shuffled crib words, 1000 | mean 0.330, p99 0.494 |
+| N3 wrong span, max of 401 windows | 0.366 |
+
+  Gate **PASS** (`avs62/result.tsv`). Per sign (`avs62/sign_witness.tsv`, conservative: a sign counts only if its whole normalised word
+  matches): 96 of 155 span tokens, 24 of 28 distinct signs (0 1 3 4 5 6 7 8 9 G1 G2 G3 G4 G6 J NL S T TL V VmV X XX Z) carry a second
+  witness, C (printed: Rachfahl 1907), beside their existing C from f.19. Not witnessed: HISP (Rachfahl "Hispania" vs "Hispanien"),
+  Wm and ZZ (in "dem König zu Frankreich beistandt zu thun", which Rachfahl's quotation drops without an ellipsis), T? l.10 idx 6.
+- What it changes: no key value is new and no grade on 53/57/126 moves (all 24 signs were already C). Two observations, M:
+  (1) T? at p3 l.10 idx 6 is n, not T=s: f.19 and Rachfahl both give "noch" (ciphertext_74.tsv keeps T?; a native re-look would settle
+  the sign). (2) Rachfahl agrees with the cipher where `plaintext_74.txt` (R14, 100 dpi, by eye) reads f.19 l.13 "machen sich keinem":
+  cipher and Rachfahl give "möchten wohl leiden"; R14's line is a likely misread of f.19 (not re-read here). Rachfahl's text tracks the
+  cipher's wording ("haben's aber mit Glimpf abgeschlagen") and paraphrases one clause ("zwar sind wir darum ersucht worden" for cipher
+  "wir gleichwol er sucht worden dem König zu Frankreich beistandt zu thun").
+- Print: Rachfahl II.1 (1907) p.209 now named as a printed partial clear text of WVO 74 (a sibling, not a target). Report only; no
+  novelty class (rule 10).
+- Remaining for this job: none. Follow-up suggestion (not run, Workers rule 7): native re-look of 74 p3 l.10 idx 6 and f.19 l.13 when 74
+  is next opened (re-fetch `pdf_url` for 00074 in images/manifest.json).
