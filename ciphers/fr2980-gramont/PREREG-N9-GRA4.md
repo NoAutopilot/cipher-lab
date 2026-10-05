@@ -1,4 +1,4 @@
-# PREREG N9-GRA4 addendum to PREREG-N8-GRA2 / PREREG-N8-GRA3: fr.3040 no.6 f.18r L11-L21 vs Le Grand III pp.454-455 (5 Oct 2026, written 05:5x UTC, before any crop is cut or read and before any score)
+# PREREG N9-GRA4 addendum to PREREG-N8-GRA2 / PREREG-N8-GRA3: fr.3040 no.6 f.18r L11-L21 vs Le Grand III pp.454-455 (5 Oct 2026, written 05:40 UTC, before any crop is cut or read and before any score)
 
 Brief: `.claude/briefs/runs/2026-10-05-ytbiz-near9-wave2.md`, job N9-GRA4 (account 2, for LANE-NEAR9). **Same instrument and
 gate as N8-GRA3, no knob changed**: statistic `agree`, decode, normalisation, NW aligner with free print-side end gaps, N1
@@ -6,7 +6,7 @@ gate as N8-GRA3, no knob changed**: statistic `agree`, decode, normalisation, NW
 score3.py), control gate mean >= max(N1,N2 p99) + 0.15, target gate agree >= 0.50 and > max(N1,N2 p99). Key: key.tsv at
 the commit that carries this file. Scorer: `n9gra4/score4.py`, importing N8-GRA2's registered functions unchanged.
 
-## Lines (Gallica btv1b9059870w canvas 32 = f.18r; counted by eye on a 1000 px thumbnail, 05:4x UTC)
+## Lines (Gallica btv1b9059870w canvas 32 = f.18r; counted by eye on a 1000 px thumbnail, 05:39 UTC)
 - The f.18r cipher block has **21** lines (the brief's "L11-L26, 16 lines" was an estimate from the Verdict line). N8-GRA2
   read L01-L10; its L11 crop sits at its region's bottom edge (partial) and was never read. This job reads **L11-L21**
   (11 lines; thumbnail y ~725 to ~1010, the last line ending in a double stroke before the clear "... Ehausser").
