@@ -906,3 +906,55 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] image-check: c262 re-cut; c510-516 native line bands; owner sort of the atlas piles
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test)
 Verdict: keep going: 6 internal gaps; cheapest next: basin key on the reconciled c262 reader transcription, ~$1
+
+## RUN6-NOXREAD (5 Oct 2026)
+LANE-RUN6 worker RUN6-NOXREAD (account 1), 05:03-05:08 UTC by `date -u`; brief `.claude/briefs/runs/2026-10-05-acct1-run6-wave2.md`.
+Pre-registered `sorter/owner-sort-2026-10-04/aln/PREREG-NOXREAD.md` (commit 1f39b1f1, 05:04 UTC, before any statistic): RUN6-NOXDEC's
+statistic, four nulls and gate unchanged, only the stream changed. Script `aln/noxread.py` (imports decode262/keytie unchanged);
+numbers `aln/results/noxread_summary.json`; `python3 aln/noxread.py check` exits 0. Disk only: requests 0, subagents 0. key.tsv unchanged.
+Stream: NX-RECUT's reconciled c262 reader signs (`witness/c262rc_recon.tsv`, 384 signs, 41 labels). Map: each label takes its
+majority owner pile in RUN2-NXATL's tile alignment (`run2/nxatl/c262_tile_alignment.tsv`, no gloss in it); 41/41 labels mapped onto
+30 piles; a sign reads as the basin consensus letter of its pile.
+
+| run | R vs c262 gloss (315 letters) |
+|---|---|
+| **basin consensus (six L) on the reader signs** | **0.3090** |
+| (a) shuffled key, 1000 | mean 0.1464, p99 0.2404 |
+| (b) letter-order shuffle, 1000 | mean 0.1547, p99 0.2518 |
+| (c) shuffled Dupuy, 10 seeds | max 0.2003 |
+| (d) non-locking 6-subsets, 924 | mean 0.1554, **p99 0.2833**, max 0.3090 (one subset ties) |
+| reported: single L runs | 0.127-0.312 |
+| positive reference: Tomokiyo's key on the same stream (recomputed) | 0.4548 |
+| for comparison: same basin key on atlas tiles (RUN6-NOXDEC) | 0.1838 |
+
+**Verdict: PASS as registered** (R > every gate). Thin on (d): 0.309 vs p99 0.2833, and the best of 924 non-locking subsets
+reaches 0.309 exactly, so the margin over keys the aligner did not lock with is about one subset in a thousand, not a wide gap.
+What it licenses, and only this: the key learned against Dupuy on c510-516, mapped to the reader signs, reads c262 toward its period
+gloss beyond the four nulls; it sits under the published key on the same stream (0.309 vs 0.4548). Reading what differs: on this
+stream the basin letter equals the label's own Tomokiyo letter for 12 of 34 letter labels (a1 a2 c1 d1 e3 l2 m2 p1 p2 r1 s2 t2),
+independently of key.tsv (the basin never saw it); the most frequent sign o1/e2 (66 of 384) reads 'm' under the basin key, which
+alone costs much of the gap to Tomokiyo. Conditional on one reconciler's labels, RUN2-NXATL's unchecked alignment and the owner's
+merges. All tokens M (the gloss is the period decipherment; C would need a per-token alignment, not in this brief).
+
+## Remaining gaps (RUN6-NOXREAD, 5 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner's lock-on onto Dupuy 221R-226R is a basin with one common key (N8-NOX PASS) that agrees with Tomokiyo's key on 7 of 17 bridge piles (N8-NOX2 PASS); that key mapped onto the reconciled c262 reader signs reads toward the gloss beyond four nulls (RUN6-NOXREAD PASS, thin vs non-locking keys; atlas-tile decode a non-test); 0 open leaves decoded
+- Per-token alignment of the c262 basin decode to the gloss (would move tokens off M) not run - blocker: not-attempted; next: tools/interlinear_align.py on decode vs gloss with a shuffled-gloss control, ~$1
+- Bridge from atlas piles to key.tsv covers only 17 piles - blocker: not-attempted; next: place c262 tiles under the owner's labels so more piles carry a key.tsv value, ~$1
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- Date-only Dupuy matches (c330, c358-361, c409-410, c245/c464, c472-473) not text-checked - blocker: not-attempted; next: one native look per pair, ~$1
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (RUN6-NOXREAD, 5 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv)
+- [x] basin test: the locked-on runs share one key (N8-NOX, pre-registered, PASS vs non-locking and shuffled-Dupuy nulls)
+- [x] key tie: basin count-based consensus vs key.tsv via the c262 bridge (N8-NOX2, pre-registered, PASS 7/17 vs 4/5/5)
+- [retired] decode on atlas tiles: c262 tile-stream decode vs gloss (RUN6-NOXDEC FAIL; published-key ceiling 0.2199 also under nulls), instrument atlas-tile stream + test0 ratio
+- [x] decode on a reader transcription: basin key mapped onto the reconciled c262 signs (RUN6-NOXREAD, pre-registered, PASS 0.309 vs p99 0.2404/0.2518/max 0.2003/0.2833)
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; reconciled text and one blind pass beat every null, gate pass failed
+- [x] print: Charrière III pp.520-524 and pp.551-558 read
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS, thin)
+Verdict: keep going: 6 internal gaps; cheapest next: per-token alignment of the basin decode to the c262 gloss, ~$1
