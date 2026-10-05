@@ -4027,3 +4027,15 @@ annealer setting is not a new attempt. Status stays `open`.
 Found: nothing about the target. Not found: no reading. The instrument fails on its own matched control.
 Files: `h73/` (PREREGISTRATION.md, run_h73.py, control_plain.txt, controls.tsv, results.tsv, battery_*.log, out/,
 diag_fixedpoint.py/.tsv). No network requests, no vision calls.
+
+## ASKS 83 desk read (5 Oct 2026 03:42 UTC, owner's browser, logged by the account-3 orchestrator)
+
+The owner searched findingaids.loc.gov for "Erving" (the old searchBrws.xq link of ASKS 83 now returns "Page Not Available")
+and pasted the finding aid that came up: the **James L. Cathcart papers** (Manuscript Division; journals and letterbooks; US
+consul Tripoli 1797-1801, Algiers 1802, Tunis 1803, **Madeira 1807-1815**, Cádiz 1815-1817; gift of Simon Gratz 1919 and
+Charles F. Cochran 1921, addition purchased 2022, revised 2024). Full extent **300 items, 3 containers, 1.2 linear feet, 1 microfilm
+reel** -- exactly the extent ASKS 83 gave for the "George William Erving papers". So ASKS 83's description of an Erving
+collection most likely took this Cathcart record's extent (Erving appearing in it as a correspondent or subject), and no
+separate LOC "Erving papers" collection is confirmed. Not checked: the Cathcart container list (not pasted) and whether
+the 1807-1808 Madeira letterbooks touch Armstrong's Paris cipher. Next: one more desk look at the Cathcart container list
+for 1807-1808 letterbooks and any Erving/Armstrong entry (~5 min), else close ASKS 83 as "no Erving collection".
