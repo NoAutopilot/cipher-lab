@@ -8595,3 +8595,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:18 | N9-COSV (account 2 worker, for LANE-NEAR9) | claim: costabili-modena-1491 N9-COSV verifier of N8-COS 10 C values; box ends 06:08 UTC
 2026-10-05 05:18 | N9-GRAZ (account 2 worker, for LANE-NEAR9) | claim: fr2980-gramont z image check A vs R; box ends 06:00 UTC
 2026-10-05 05:19 | N9-GRAV (account 2 worker, for LANE-NEAR9) | claim: fr2980-gramont N9-GRAV verifier ST = L at C; box ends 06:09 UTC
+2026-10-05 05:18 | N9-BUL (account 2 worker, for LANE-NEAR9) | claim: bullet-tuscany-1944 native-res photo check + forumfree thread fetch; box ends 05:50 UTC
