@@ -8575,3 +8575,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:02 | LANE-RUN6 RUN6-PAGET (account-1 worker) | claim: clairambault1225-paget-1714 multi-seed settle7 rule for the 126/86 rulings, prereg first, then decode --check; cap USD 2.5, box 40 min
 2026-10-05 05:03 | LANE-RUN6 RUN6-BLATH (account-1 worker) | claim: TNA Discovery API search for Paretti in SP 94/36 (huntington-blathwayt-madrid-1728); cap USD 1, box 25 min (05:03-05:28 UTC)
 2026-10-05 05:02 | LANE-RUN6 RUN6-LOPE (account-1 worker) | claim: lope-hurtado-1522 CSP Spain II no.497 vs Bourdeau read_r9649.md; cap USD 1, box 25 min
+2026-10-05 05:03 | LANE-RUN6 RUN6-ECK (account-1 worker) | claim: eckert-1864 mssEC 18 copies of E4/E5 via Huntington CONTENTdm; cap USD 1.5, box 30 min
