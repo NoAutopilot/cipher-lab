@@ -8677,3 +8677,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 13:29 | TOMO-NUM (account 3 worker) | done (13:21-13:31 UTC by date -u, brief met): c67ca28a (prereg 6371272f). birago-nevers-1571: Tomokiyo system A (Colbert 398) and B (Nevers no.23, alphabet read from fr.3995 f.47r) both NO FIT control-backed: controls 3/3 above shuffle max, target at/below own shuffles (A 19/20, B 20/20); key_crossmatch A stat 0.33/2.12 vs gate 3.292, control 3/3 hit. Status open. file_shrink_guard ok.
 2026-10-05 13:42 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 13:39: spawned 0, queued left 0
 2026-10-05 14:13 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 14:13 UTC: spawned 0 (), queued left 0
+2026-10-05 14:23 | standby (owner account) | alive; holder account 3, last line 20:49 (announced restart 14:45 UTC not yet due -- no takeover; next standby 16:2x applies the normal 150-min rule)
