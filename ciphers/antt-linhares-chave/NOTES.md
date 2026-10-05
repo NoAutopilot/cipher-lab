@@ -1256,3 +1256,32 @@ at 6. A fourth attempt with corrected boxes would change only the knob this atte
 material instead: a second, independent scan of Vieyra 1809 Part I (another copy) or a higher-resolution capture of leaves
 95 and 255, counted under a fresh pre-registration whose match rule names the duplicate-headword and drop-cap cases in advance.
 Vision calls 4 (Sonnet subagents) + 2 own looks at contact sheets and 1 debug overlay; network requests 0.
+
+## Ink-profile comparison of the 329011 first glyph (D2-LINK, 5 Oct 2026) -- PRE-REGISTRATION (pushed before any scored run)
+
+Third, different instrument on the p2l2pos6 first glyph (after two blind reads, A1B-LIN-M0002b: both 3 at 55%). Script
+only, no model reads a glyph. Source: `images/full_PT-TT-CLNH-0086-11_m0002.jpg.jpg` (1182 x 774, DigitArq full size, on
+disk; no fetch). Script: `scripts/glyph_ink_profile.py` (numpy + PIL only).
+
+1. Segmentation (may be adjusted while looking only at the debug overlay, before any feature is computed; frozen at the
+   first scored run): each of the four cipher lines is a fixed band; grey = mean of RGB; ink = pixels below Otsu's threshold
+   of the band; 8-connected components of at least 12 px and 6 px tall; components ordered left to right and split into
+   groups at x-gaps; a group whose main-digit component count equals the length of its transcribed group (ciphertext.tsv)
+   labels its components digit by digit from the transcription; any other group is dropped (logged).
+2. Labelled set: every 3 and 8 so labelled in groups graded H in ciphertext.tsv, excluding the target group (p2l2pos6) and
+   the two M rows (3241315, 283219). The target glyph is the first component of p2l2pos6; if it is not a single isolated
+   component there, the test is a non-test.
+3. Features (both fixed now): **F1 template** -- the component's grey-level ink (255-grey, background 0) in its bounding box,
+   resized to 12x18, zero-mean, unit-norm; score per class = mean correlation with that class's members; call = higher.
+   **F2 holes** -- count of enclosed background regions (>= 2 px, not 4-connected to the box border) in the component's
+   binary mask at native resolution; call 8 if >= 1 hole, else 3.
+4. Control (per feature, on the labelled set): leave-one-out call of each labelled 3 and 8; **balanced accuracy** (mean of
+   per-class recall, since 3s outnumber 8s); and 200 label permutations (same class counts) giving the permuted p95.
+   **Gate: a feature is an instrument iff n(8) >= 4, balanced accuracy >= 0.80, and balanced accuracy > permuted p95.**
+   Per-class recall is reported beside the blended figure.
+5. Outcome. All passing features call the target 3 -> p2l2pos6 "para" moves M -> H (two blind reads plus a script with a
+   passed control agree). Any passing feature calls 8 -> recorded as a split, token stays M, the Part II test (829011 as
+   written) is reopened as next step. No feature passes, or the glyph is not isolated -> non-test, token stays M, the
+   ink-profile step is logged "untestable by this tool at 1182 px" (new material: a higher-resolution image,
+   needs-physical-access). F1's margin (score3 - score8) and F2's hole count for the target are reported either way.
+No re-tuning of features, gate or segmentation after the first scored run.
