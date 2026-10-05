@@ -1,0 +1,14 @@
+# N9-BAL3 reconciliation of passA/passB_b168f110r.tsv by this worker against crops b168f110r_* and b168f110rG_* and the region overlay
+# (not blind to the gloss, which is on the leaf). Per-position log: L1 A "s:y s:z s:r s:i" / B "s:C s:y s:x r": the crop shows 5 letter signs
+# after 16 (d, 6-form, c-cedilla-form, crossed z-form, r-form) then clear "a fait"; A's s:i is the start of "a"; read s:d s:b s:y s:x s:r
+# (B's 6-form as s:b with A; the c-cedilla form as s:y with B; crossed z as s:x with B). L2 agree. L3 A s:x / B s:X: s:x. L4 agree
+# (the underlined sign and the last two signs are uncertain in both: kept, uncertain). Glosses: L1 "Rodenbourg" (A "Codenbourg"; B saw
+# the word but did not attach it) over 68 16 s:d s:b s:y s:x s:r; L2-L3 "particuliere" over 20 77 14 42 | s:w 66 (the word spans the line
+# break by position: 20 77 14 42 end L2, s:w 66 begin L3); L3 "le Roy d'Espagne et" over 32 96 46 s:f; "Messieurs" over 72 s:w s:y s:x s:p;
+# L4 "les Estatz" over 10 97' s:y 14 s:t s:& (by position: the gloss sits over the start of L4).
+gloss	tokens
+Rodenbourg	68 16 s:d s:b s:y s:x s:r
+particuliere	20 77 14 42 s:w 66
+le Roy d'Espagne et	32 96 46 s:f
+Messieurs	72 s:w s:y s:x s:p
+les Estatz	10 97' s:y 14 s:t s:&

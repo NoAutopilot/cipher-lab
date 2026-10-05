@@ -440,3 +440,63 @@ control 0/20 even at 0% error).
 - [ ] image-check: 170 c239-241 native crops still to do; f.110r (c234) crops to do
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2)
 Verdict: keep going: 3 internal gaps; cheapest next: f.110r gloss calibration of this hand's sign forms + anchored planted control, ~$4.5, then 170 ff.228-230, ~$6
+
+## N9-BAL3 (account 2 worker, for LANE-NEAR9), 5 Oct 2026, 06:02-06:1x UTC
+
+Brief: `.claude/briefs/runs/2026-10-05-ytbiz-near9-wave3.md` job N9-BAL3. No novelty class. PREREG `n9bal3/PREREG-N9BAL3.md` pushed (96958467,
+06:03 UTC) before any f.110r pass was read and before any control was run. Scripts: `n9bal3/anch.py` (N9-BAL2's fit_holdout with anchors as
+`interlinear_align.py --prior` plus fixed key values), `n9bal3/planted_control_anch.py` (N9-BAL2's planted control plus K true anchors).
+
+**Result: a non-test, and the instrument is retired for this hypothesis.** f.110r gives one letter-sign anchor at C (s:x = u). That label
+does not occur in the f.247 transcription, so k = 0 anchors transfer, and the pre-registered gate cannot be met. The power curve shows the
+deeper problem: even 15 correct anchors, more than the 12 letter-sign labels f.247 carries at all, pass only 6/20 (gate 10/20).
+
+**Crops** (pasted): `python3 tools/iiif_lines.py --ark btv1b9001503k --canvas 234 --region 850,2130,2680,700 --prefix b168f110r --out
+ciphers/baluze167-davaux-1637/images/crops --debug` -> 4 lines (centres 117 267 423 583). The line bands cut off the interlinear words, so
+it was re-cut per line with the gloss band included: `... --region 850,<c-120>,2680,180 --prefix b168f110rG_y<c>` for c = 2247, 2397,
+2553, 2713 -> 2+2+2+1 bands. Native c234 is 3674x5475.
+**Passes** (`passes/passA_b168f110r.tsv`, `passB_b168f110r.tsv`): two blind Sonnet calls, convention as N9-BAL2. Both agree on lines 2-4.
+Line 1 differs: A has `68 16 s:d s:b s:y s:z s:r s:i`, B has `s:G 16 d s:C s:y s:x r`. B did not attach any gloss, and A attached two of
+the five. The reconciliation is by this worker against the crops and the region overlay (`passes/reconciled_b168f110r.tsv`, log in its
+header). It has 5 glossed groups, 28 cipher tokens: "Rodenbourg" / 68 16 s:d s:b s:y s:x s:r; "particuliere" / 20 77 14 42 s:w 66;
+"le Roy d'Espagne et" / 32 96 46 s:f; "Messieurs" / 72 s:w s:y s:x s:p; "les Estatz" / 10 97' s:y 14 s:t s:&.
+Observation, not used as an anchor: several numerals agree with Tomokiyo's published table (66 re, 20 par, 10 les, 97' est). So f.110r
+reads as his d'Avaux key, the court's own key.
+**Anchors** (prereg step 2; `n9bal3/f110r_pairs.tsv` -> `f110r_align.tsv`, `f110r_key.tsv`): rule (a), an all-letter-sign group with
+1:1 letters, qualifies no group. Rule (b) gives one anchor: s:x = u, 2/2 occurrences, both agreeing. s:w (ie/ss) and s:y (bo/ie/s)
+conflict, and every other sign occurs once. The two passes' own labels for the same sign also drift (s:y vs s:z vs s:C on line 1), so
+label strings are a weak bridge between hands. Transfer: the reconciled f.247 transcription has 12 letter-sign labels (s:b 18, s:t 9,
+s:d 8, s:u 6, s:L 6, s:p 5, s:y 4, s:f 2, s:K 2, s:q 1, s:n 1, s:a 1). It has no s:x, so **k = 0**.
+**Anchored planted control** (prereg step 4; `python3 n9bal3/planted_control_anch.py passes/reconciled_b168f247v.tsv 0.28 K`, 20 seeds,
+200 null draws; output in n9bal3/curve_K*.txt; not gating except at the real k, which is 0):
+| K anchors (true values) | T mean | T min | PASS vs own nulls | F1 found at c510 |
+|---|---|---|---|---|
+| 0 (reproduces N9-BAL2 exactly) | 0.211 | 0.188 | 0/20 | 3/20 |
+| 5 | 0.233 | 0.188 | 0/20 | 8/20 |
+| 10 | 0.239 | 0.208 | 0/20 | 12/20 |
+| 15 | 0.255 | 0.167 | 6/20 | 14/20 |
+Gate (fixed in the prereg): >= 10/20 at the real k. The real k is 0, so the gate cannot pass, and step 5 (re-scoring the target) was not run.
+The F1 hold-out has no power at this N and err 0.28 for any anchor count this leaf pair can supply.
+**Rule 3, third-attempt clause.** This is the third failed instrument on the f.247 known-answer hypothesis: N8-BAL (Tomokiyo key, labels
+missing), N9-BAL2 (F2-only fit, control 0/20), and N9-BAL3 (anchored fit, k = 0, control below the gate even at K = 15). The F2-fit / F1
+hold-out alignment (interlinear_align.py on one 68-letter pair) is **retired for this hypothesis**: untested-by-this-tool, not refuted.
+Grades (rule 4): no reading claimed. key.tsv, ciphertext.txt and reading.txt are unchanged.
+Requests: gallica.bnf.fr 7 (1 at 1200 px, 1 info.json, 5 native regions; all HTTP 200, one at a time, >= 1.6 s). Subagents: 2 Sonnet calls (passes A, B).
+
+## Remaining gaps (N9-BAL3, 5 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: cipher located and transcribed by two blind passes on c510-511
+(err_2reader 0.280). Three known-answer instruments have been tried there: two are non-tests (N8-BAL, N9-BAL2), and the anchored alignment is retired (N9-BAL3).
+- 168 f.246-247v bare passage - blocker: not-attempted; the alignment instrument is retired, but labelling the hand's letter signs against Tomokiyo's letter table is untried. f.110r (court hand) reads as his key, and its sign forms resemble f.247's by eye; next: one blind Sonnet pass with images/louisxiii_davaux.png's letter row beside the c510-511 crops (labels as L:x), then decode_key with key.tsv and score F1/F2 overlap against a shuffled-label control, ~$3
+- 170 ff.228-230 bare passage - blocker: not-attempted; ~32 lines (~380 groups); next: tools/iiif_lines.py crops of c239-241, one Sonnet pass per canvas for numerals + worker letter-sign pass with the Tomokiyo block, reconcile, decode_key, ~$6
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (5 Oct 2026, N9-BAL3)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: F2-fit/F1-hold-out alignment retired (N9-BAL3, third instrument); untried: a blind letter-sign labelling pass of c510-511 against Tomokiyo's letter table
+- [ ] image-check: 170 c239-241 native crops still to do
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3)
+Verdict: keep going: 3 internal gaps; cheapest next: a Tomokiyo-table labelling pass on c510-511, ~$3, then 170 ff.228-230, ~$6
