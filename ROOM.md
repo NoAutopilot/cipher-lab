@@ -8594,3 +8594,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:18 | N9-BAL (account 2 worker, for LANE-NEAR9) | claim: baluze167-davaux-1637 N9-BAL re-fetch Baluze 168 c511-512 + survey f.246-hand glossed leaves; box ends 06:08 UTC
 2026-10-05 05:18 | N9-COSV (account 2 worker, for LANE-NEAR9) | claim: costabili-modena-1491 N9-COSV verifier of N8-COS 10 C values; box ends 06:08 UTC
 2026-10-05 05:18 | N9-GRAZ (account 2 worker, for LANE-NEAR9) | claim: fr2980-gramont z image check A vs R; box ends 06:00 UTC
+2026-10-05 05:19 | N9-GRAV (account 2 worker, for LANE-NEAR9) | claim: fr2980-gramont N9-GRAV verifier ST = L at C; box ends 06:09 UTC
