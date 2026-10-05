@@ -1028,6 +1028,342 @@
     "prominence": 100.2
    },
    "date": "04 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run1_L01.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,850,2200,200/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_850_2200_200.jpg",
+   "box": [
+    780,
+    903,
+    2980,
+    1003
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 146,
+    "distance": 102,
+    "prominence": 92.4
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run2_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,2330,2700,440/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_2330_2700_440.jpg",
+   "box": [
+    780,
+    2410,
+    3180,
+    2548
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 143,
+    "distance": 100,
+    "prominence": 125.1
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run2_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,2330,2700,440/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_2330_2700_440.jpg",
+   "box": [
+    1080,
+    2410,
+    3480,
+    2548
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 143,
+    "distance": 100,
+    "prominence": 125.1
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run2_L02_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,2330,2700,440/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_2330_2700_440.jpg",
+   "box": [
+    780,
+    2548,
+    3180,
+    2686
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 143,
+    "distance": 100,
+    "prominence": 125.1
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run2_L02_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,2330,2700,440/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_2330_2700_440.jpg",
+   "box": [
+    1080,
+    2548,
+    3480,
+    2686
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 143,
+    "distance": 100,
+    "prominence": 125.1
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run3_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,2900,2700,280/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_2900_2700_280.jpg",
+   "box": [
+    780,
+    3003,
+    3180,
+    3103
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 148,
+    "distance": 103,
+    "prominence": 110.0
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run3_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,2900,2700,280/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_2900_2700_280.jpg",
+   "box": [
+    1080,
+    3003,
+    3480,
+    3103
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 148,
+    "distance": 103,
+    "prominence": 110.0
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run45_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3190,2700,350/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3190_2700_350.jpg",
+   "box": [
+    780,
+    3190,
+    3180,
+    3281
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 160,
+    "distance": 112,
+    "prominence": 116.7
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run45_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3190,2700,350/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3190_2700_350.jpg",
+   "box": [
+    1080,
+    3190,
+    3480,
+    3281
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 160,
+    "distance": 112,
+    "prominence": 116.7
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run45_L02_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3190,2700,350/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3190_2700_350.jpg",
+   "box": [
+    780,
+    3281,
+    3180,
+    3424
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 160,
+    "distance": 112,
+    "prominence": 116.7
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run45_L02_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3190,2700,350/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3190_2700_350.jpg",
+   "box": [
+    1080,
+    3281,
+    3480,
+    3424
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 160,
+    "distance": 112,
+    "prominence": 116.7
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run45_L03_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3190,2700,350/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3190_2700_350.jpg",
+   "box": [
+    780,
+    3424,
+    3180,
+    3540
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 160,
+    "distance": 112,
+    "prominence": 116.7
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run45_L03_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3190,2700,350/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3190_2700_350.jpg",
+   "box": [
+    1080,
+    3424,
+    3480,
+    3540
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 160,
+    "distance": 112,
+    "prominence": 116.7
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run5b_L01.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3500,1100,220/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3500_1100_220.jpg",
+   "box": [
+    780,
+    3500,
+    1880,
+    3582
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 149,
+    "distance": 104,
+    "prominence": 51.1
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run5b_L02.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3500,1100,220/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3500_1100_220.jpg",
+   "box": [
+    780,
+    3582,
+    1880,
+    3720
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 149,
+    "distance": 104,
+    "prominence": 51.1
+   },
+   "date": "05 Oct 2026"
+  },
+  {
+   "crop": "b168f247v_run3b_L01.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9001503k/f511/780,3150,800,170/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9001503k_f511_780_3150_800_170.jpg",
+   "box": [
+    780,
+    3180,
+    1580,
+    3280
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 137,
+    "distance": 95,
+    "prominence": 28.5
+   },
+   "date": "05 Oct 2026"
   }
  ]
 }
