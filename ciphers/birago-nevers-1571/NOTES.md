@@ -138,3 +138,32 @@ notes his page does not mention BnF fr.3251. For the other letters he has no tim
 historians. Next: snapshot both pages to sources/cryptiana/, transcribe both systems, and test each against the pooled f.119+f.100
 digits with tools/key_crossmatch.py + its control (and, for the variable-length system, a segmentation test against the Nov 1571
 digit stream) -- worker TOMO-NUM (~$4). No reply owed now; a thank-you rides with the result (outreach README 1c).
+
+## Tomokiyo's two numerical systems tested (TOMO-NUM, 5 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-05-acct3-tomo-num.md`; PREREG `keys/PREREG-TOMO-NUM.md` pushed in 6371272f before any score.
+Script `keys/tomo_test.py`, output `keys/tomo_test_out.txt`. Credit: S. Tomokiyo (Cryptiana) for both leads and the Colbert 398 table.
+- **Sources.** `sources/cryptiana/web/frenchnumerical.htm` re-fetched 5 Oct 2026: byte-identical to the 26 Sept snapshot (sha1
+  e27ed5b0), so not re-saved; its table image `frenchnumerical.png` added. The 2025/02 post is saved as
+  `sources/cryptiana/blog/2025_02_variable-length-figure-cipher-between.html`; it prints no table but names the system: Nevers
+  collection no.23 (BnF fr.3995 f.46-47, Oct 1589). Its alphabet was read from the period key sheet itself (Gallica
+  btv1b525085665 canvas f95, label 47r; crop `keys/img/f95_alpha.jpg`): a3 b9 c4 d5 e2 f1 g8 h6 i7, l = the letter x, m79 n51
+  o97 p36 qu42 r18 s25 t84 u63 (dot over the tens figure), y a triangle; nulls 0 and dotted 2 3 4.
+- **Keys.** `keys/tomo_colbert398.tsv` (system A, two-digit + 7 = space; his table prints 31 under both a and m, kept as a|m)
+  and `keys/tomo_nevers_no23.tsv` (system B, grade H for the table).
+- **Test 1, segmentation fit** (985 digits, 48 runs; beam parse into each system's codes with a stray option; objective per digit):
+  | system | control (3 seeds, same length/runs/5% strays) vs its shuffle max | target | target shuffle max (20) | strays parsed | verdict |
+  |---|---|---|---|---|---|
+  | A Colbert 398 | -0.575/-0.585/-0.577 vs -1.16 to -1.19 (3/3 above) | -1.624 | -1.536 (19/20 shuffles >= target) | 71% | no fit (control-backed) |
+  | B Nevers no.23 | -0.697/-0.746/-0.671 vs -1.21 to -1.25 (3/3 above) | -1.293 | -1.252 (20/20 >= target) | 32% | no fit (control-backed) |
+- **Test 2, `tools/key_crossmatch.py` gate (system A, pair files):** f.119 coverage 0.15, stat 0.33; f.100r coverage 0.19, stat
+  2.12; both `none` against gate 3.292 / coverage 0.5. Matched control (system A synthetic, ~240 pairs, em-phase cut): 3/3 `hit`
+  (stat 16.9, 9.5, 8.9; coverage 0.74-0.79). Not run for B (its variable-length codes do not fit a pair cut).
+- **Outcome: no fit, control-backed, for both systems.** Neither table, nor a design with this table, is the Nov 1571 key. The
+  target scores at or below its own shuffles under both keys, so it is not even partly in either alphabet. Not a test of the
+  design family (an unknown two-digit or variable-length key), which stays open. No reading, no token graded.
+- Suggestion (not run, brief did not name it): Tomokiyo's France numerical page links a 2024/09 post, "duke-of-nevers-variable-
+  length-figure", which his 2025/02 post calls "the 1571 instance"; reading it for what he says about this letter's code
+  lengths is a ~$0.5 snapshot job.
+Status unchanged (`open`). Novelty not classified (rule 10). Requests: cryptiana.web.fc2.com 4, cryptiana.blogspot.com 1, Gallica
+IIIF 4.

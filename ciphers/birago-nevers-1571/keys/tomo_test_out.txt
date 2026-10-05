@@ -1,0 +1,17 @@
+target: 48 runs, 985 digits; stray -2.0 null -0.5 beam 300 shuffles 20
+A colbert398 CONTROL seed 1: obj -0.575 strays 0.056 lm -0.932 | shuffle max -1.188 mean -1.225 -> above
+A colbert398 CONTROL seed 2: obj -0.585 strays 0.062 lm -0.996 | shuffle max -1.162 mean -1.203 -> above
+A colbert398 CONTROL seed 3: obj -0.577 strays 0.066 lm -0.941 | shuffle max -1.184 mean -1.218 -> above
+A colbert398 TARGET: obj -1.624 strays 0.712 lm -1.811 | shuffle max -1.536 mean -1.586, 19/20 shuffles >= target -> NO FIT (control-backed)
+A colbert398 TARGET decode head (not a reading): hailetuctyetutifitiohtphfhoallltitdiethiffyifdfoaidtetoflftptdlletdifgpetitetdut
+B nevers_no23 CONTROL seed 1: obj -0.697 strays 0.049 lm -0.989 | shuffle max -1.217 mean -1.261 -> above
+B nevers_no23 CONTROL seed 2: obj -0.746 strays 0.045 lm -1.028 | shuffle max -1.213 mean -1.240 -> above
+B nevers_no23 CONTROL seed 3: obj -0.671 strays 0.040 lm -0.919 | shuffle max -1.249 mean -1.269 -> above
+B nevers_no23 TARGET: obj -1.293 strays 0.315 lm -1.448 | shuffle max -1.252 mean -1.268, 20/20 shuffles >= target -> NO FIT (control-backed)
+B nevers_no23 TARGET decode head (not a reading): ihbdgbcacaebbafdgdbfadgfsfebbafanebbeifebbebacfnedanaecccgcfbdccancheacbdccgfdbf
+Test 2 gate stat_min 3.292 min_coverage 0.5
+Test 2 TARGET ciphertext_f119_pairs.txt: n=228 coverage 0.15 stat 0.33 -> none
+Test 2 TARGET ciphertext_f100_pairs.txt: n=273 coverage 0.19 stat 2.12 -> none
+Test 2 CONTROL seed 1 (em-phase, ~250 pairs): n=241 coverage 0.79 stat 16.92 -> hit
+Test 2 CONTROL seed 2 (em-phase, ~250 pairs): n=241 coverage 0.74 stat 9.48 -> hit
+Test 2 CONTROL seed 3 (em-phase, ~250 pairs): n=240 coverage 0.78 stat 8.87 -> hit
