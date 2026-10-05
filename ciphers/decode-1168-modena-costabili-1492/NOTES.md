@@ -284,3 +284,16 @@ cose de la Regina furono differite ala futura diéta", and closes on p. 219 "Str
 Bel[trando] Cos.le [Costabile]" with a "Post datum" postscript. Confirms the status above: found-solved, source
 Berzeviczy 1914 no. CLV pp. 216-219 (printed in clear from the Modena state archive). Status word unchanged; any
 reading of this item is N0/N1 territory for the verifier (rule 10), not a new result.
+
+## Crossmatch leads (c)/(d): per-pair nulls (N9-XM, 5 Oct 2026, 05:18-05:26 UTC)
+
+Nightly `tools/key_crossmatch.py` (ROOM 5 Oct 02:53) flagged clair1161-avis-flandre-1688 two/key_shuf4_s1.tsv (stat 3.95) and
+pool/key_shuf3_s1.tsv (3.85) on ciphertext.tsv (gate 3.292). Both keys are that folder's own shuffled-value control keys, i.e. null
+draws by construction. Prereg research/PREREG-N9-XM.md; numbers research/n9xm/results.tsv; statistic reproduced exactly (3.952, 3.850;
+French model, n=130). 200 draws: (c) shuffled-key p99 2.987, in-class 3.543, random key 3.756; (d) 2.780, 3.331, 4.489. Both pass
+the registered per-pair gate, which shows the gate is not sufficient by itself, not that the keys read: decoded text is single
+letters with no word stretch ("e [g] e l i e [1] e o s [T] a ..."), and (d)'s 4-gram z is lower on the true order than the median
+order-shuffled draw (3.85 vs 4.14). The brief's expectation that this ciphertext scores high for any key is **not** borne out: 5 of
+400 in-class shuffled keys (1.3%) reach 3.292 here (1.0% on sanguszkow) -- the gate's per-pair rate is about as designed. The false
+leads come from multiplicity (815 scored pairs in KEY-CROSSMATCH.tsv, ~1% each) and from the sweep admitting control keys
+(`key_shuf*`) as candidate keys. Proposed tool fixes flagged in ROOM, not applied. Status line unchanged (found-solved).

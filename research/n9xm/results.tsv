@@ -1,0 +1,5 @@
+lead	key	ct	lang	n_tokens	coverage	nightly	S	z_ng	z_vf	p99_N1	p99_N1c	p99_N2	p99_N3	p99_N3_zng	p99_N3_zvf	frac_ge_gate_N1	frac_ge_gate_N1c	frac_ge_gate_N2	survives
+a	ciphers/fr3993-villeroy-1595/keys/key_f200_no57_syll.tsv	ciphers/sanguszkow-mniszech-dunin-1714/ciphertext.tsv	fr	232	0.737	4.12	4.12	3.434	4.12	3.001	3.64	3.596	4.776	4.776	4.12	0.005	0.01	0.01	True
+b	ciphers/hellen-frederick-1752/key_r4370/key_decode.tsv	ciphers/sanguszkow-mniszech-dunin-1714/ciphertext.tsv	fr	232	0.621	3.63	3.629	-0.222	3.629	2.69	3.766	3.492	3.629	-0.059	3.629	0.0	0.01	0.015	False
+c	ciphers/clair1161-avis-flandre-1688/two/key_shuf4_s1.tsv	ciphers/decode-1168-modena-costabili-1492/ciphertext.tsv	fr	130	0.7	3.95	3.952	1.364	3.952	2.987	3.543	3.756	3.952	2.505	3.952	0.005	0.015	0.01	True
+d	ciphers/clair1161-avis-flandre-1688/pool/key_shuf3_s1.tsv	ciphers/decode-1168-modena-costabili-1492/ciphertext.tsv	fr	130	0.7	3.85	3.85	3.85	1.679	2.78	3.331	4.489	6.517	6.517	1.679	0.005	0.01	0.015	True

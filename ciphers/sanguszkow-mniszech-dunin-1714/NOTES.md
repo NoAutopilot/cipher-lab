@@ -377,6 +377,26 @@ the control; choosing it by score does not.** The crib must come from outside th
 sister letter in the same key), or N must grow. Clear anchors were used for the language only: none sits next to a
 repeat in a way that fixes letters without a guess. Requests: none (offline). Subagent calls: 0. Cost: see the lane ledger.
 
+## Crossmatch leads (a)/(b): per-pair nulls (N9-XM, 5 Oct 2026, 05:18-05:26 UTC)
+
+Nightly `tools/key_crossmatch.py` (ROOM 5 Oct 02:53-02:54) flagged two foreign keys on this ciphertext: (a) fr3993-villeroy-1595
+keys/key_f200_no57_syll.tsv stat 4.12, (b) hellen-frederick-1752 key_r4370/key_decode.tsv stat 3.63 (gate 3.292). Prereg
+research/PREREG-N9-XM.md (f5c0997c, pushed before computing); script research/n9xm/xmatch_pair_null.py; numbers research/n9xm/results.tsv.
+Statistic reproduced exactly (4.120, 3.629; French model, the key's language, n=232). 200 draws per null:
+
+| lead | S | p99 shuffled key (all) | p99 shuffled key (in class) | p99 random key | order-shuffled target: z4gram real vs median | verdict |
+|---|---|---|---|---|---|---|
+| (a) villeroy f200 | 4.120 (z4g 3.43, zvf 4.12) | 3.001 | 3.640 | 3.596 | 3.43 vs 3.33 (43% of draws >= real) | passes the registered gate; see below |
+| (b) hellen R4370 | 3.629 (z4g -0.22, zvf 3.63) | 2.690 | 3.766 | 3.492 | -0.22 vs -0.66 | **does not survive** (below in-class p99) |
+
+(a) clears both registered shuffled-key p99s, but its letter-4-gram component is no better on the true token order than on a
+random order (43% of order-shuffled draws match or beat it), and its value-frequency component is order-invariant by construction
+(that control cannot vary on it, rule 3). So the excess is a code-frequency profile match, not sequence. First 60 decoded tokens:
+"[110] mi di [157] di gi ss be le [125] pi fr ll be le [128] ti de be [130] [107] [101] me [118] tt mi di ss de ru st fr [135] pi ji
+be le [141] by [130] que [153] [110] [109] [127] ci di qui nt be le [135] se ce [124] di ss be le ra" -- by eye no word stretch in
+French, Latin or Polish. No reading claimed, no grades written. Lead (a) is logged as a frequency coincidence at this N, not a key.
+Suggestion (not done): none for these keys; the target's own ladder (NOTES Key tests 1-2) is unchanged.
+
 ## Remaining gaps (RUN3-SANG, 4 Oct 2026)
 Read so far: 0 of 232 cipher tokens read; 232 of 232 transcribed (ciphertext.tsv, err_2reader 0.000, 231/232 with Bourdeau)
 - R7524 all 232 cipher tokens - blocker: no-key-material; the Potocka key is excluded (control-backed, H1), blind homophonic is a non-test at N=232/K=77 (H2), and crib-drag on the repeats is untested-by-this-tool at N=232 (H3: control 0.257 < 0.6, the true crib never ranks top 5 even when offered; a correct crib would read, ceiling 0.672); the next instrument needs an externally justified crib or more ciphertext in the same key -- see the sister-letter row
