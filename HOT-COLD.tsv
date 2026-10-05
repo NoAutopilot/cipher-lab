@@ -1,0 +1,289 @@
+# HOT-COLD.tsv -- built by tools/hot_cold.py (do not edit by hand; rerun it, --check for staleness). HOT = a key source on disk (period/published key, clear copy, period decipherment, gloss) or a sign-pool member with one; COLD = none found. kind: key|decipherment|gloss|clear|pool:<member>. evidence: file: phrase.
+folder	hot_cold	kind	evidence	pool
+aca-sanfelipe-duran-1718	COLD			
+addms33531-f101-mary-grange-1571	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+addms33531-oysell-guise-1559	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+alvin-gustav3-chiffre	COLD			
+antt-fcc-costacabral-1865	HOT	key	AUDIT.md: 'Key source: `period`. The key was rebuilt by us (R6 P5) from the period clerk's own code-o' ; AUDIT.md: 'key: period`, `text: on the leaf, no print located`. **Safe sentence:** "ANTT FCC/001/002'	
+antt-linhares-chave	HOT	key	ciphers/antt-linhares-chave/key.tsv: 24 H-graded rows ; ciphers/antt-linhares-chave/key_example.tsv: 12 H-graded rows	
+antt-msliv0638-brochado-1712	HOT	decipherment	NOTES.md: 'Per the brief's instruction: **this contemporary decipherment does not by itself make the item solved for our ' ; NOTES.md: 'job: rebuild the period key from the volume's own contemporary decipherments and report which body cipher pass'	
+armstrong-madison-1808	HOT	decipherment	NOTES.md: 'dozens of Bowdoin-Erving letters with **bracketed period decipherments** (keyhunt/extract_bt.py -> bt_pairs.ts' ; NOTES.md: 'o-Monroe letter (frames 740-744) and reported its interlinear glosses agreeing with the repository's WE028 tab'	
+arsenal-dallion-lanmary-1744	COLD			
+arsenal-ms6829-1708	COLD			
+arsenal6314-hanau-1635	HOT	decipherment	NOTES.md: 'acob de Hanau," 28 Oct 1635 -- cipher and its own contemporary decipherment both named in the same item, the M' ; NOTES.md: '177, as "Coppie (chiffrée et déchiffrée)": the period decipherment is in the same item, beside the cipher.'	
+arsenal6334-longueville-1650-59	COLD			
+asv-naro-paris-1624	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: '138r, **each with the period decipherment written above it on the leaf** (an interlinear'	
+august-van-saksen-1561-64	HOT	key	PROGRESS.tsv: ksrc p+o ; NOTES.md: '**74**: cipher (f.18-18v) AND its contemporary decipherment (f.19-20, clear German, headed with the cipher''	
+baluze103-letellier-marca-1644	HOT	key	NOTES.md: 'Key: Le Tellier-Marca Cipher (sources/cryptiana/web/louisxiv0.htm, table image louisxiv_0marca1' ; NOTES.md: '(f.50 (undeciphered), f.171, f.189, f.200, f.230 (deciphered on separate pages))."* — f.50 is the one leaf of '	
+baluze167-davaux-1637	HOT	key	ciphers/baluze167-davaux-1637/key.tsv: header 'Cryptiana' ; NOTES.md: 'nt "D'Avaux's Cipher (1637-1641) (DE=16') [key]" (Tomokiyo's key);'	
+baluze178-croissy-mazarin-1660	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'Key: Croissy-Mazarin Cipher (1660), reconstructed by S.'	
+beinecke-manchester-1699-1700	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'Both files described this row as "key printed (THE=454), Tomokiyo's page already glosses most c'	
+beinecke-mellon29-elia	COLD			
+belmesseri-napoli-1627	COLD			
+berthier-napoleon-1812	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'Tomokiyo re-reconstructed it but did not print a table);'	
+birago-fr3252-1571-72	HOT	key	PROGRESS.tsv: ksrc b ; PROGRESS.tsv: ksrc b+p	
+birago-nevers-1571	HOT	key	ciphers/birago-nevers-1571/keys/tomo_colbert398.tsv: header 'cryptiana' ; ciphers/birago-nevers-1571/keys/tomo_nevers_no23.tsv: header 'cryptiana'	
+bl-charles-digby	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; AUDIT.md: 'Key source: `published`. The key (about 90 homophones for letters plus a vocabulary of hig'	
+bl-farnese-cipher	HOT	decipherment	NOTES.md: 'rerio syllabic/polyphonic cipher letters carry an interlinear decipherment and cites Lasry et al.'	
+bl-gualterio-1700	HOT	key	NOTES.md: 'A Syllabic Cipher (ca.1715) of Cardinal Gualterio Reconstructed Manually" (cryptiana.web.fc2.com/code/gua' ; NOTES.md: 'ipher from his correspondence with others."* Tomokiyo has reconstructed a syllabic cipher key from Add MS'	
+bl-james-1669	COLD			
+bl-portugal-bombay-1661	COLD			
+bl-sacchetti-nunzio-1623	COLD			
+bl-wallis-letterbook	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+blitz-ciphers	COLD			
+bne20211-ferdinand-1478	HOT	key	PROGRESS.tsv: ksrc b+p ; NOTES.md: 'll 5 Oct 2026 from the owner's download (section "Tomokiyo 2018 read" below) -- prints a reconstructed key (Fi'	
+borssele-heinsius-1714	HOT	decipherment	NOTES.md: 'emt toe..." -- a same-correspondent cipher with a period decipherment slip, i.e.' ; NOTES.md: 'ier sibling letter 970 (6 Apr 1714, cipher plus a period decipherment slip) and Deel 16 no.104 in H.A.'	
+boswell-1628	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+bowes-walsingham-1583	HOT	key	PROGRESS.tsv: ksrc b+o ; NOTES.md: '32, 54 and 23 (29) are published identifications (key source published, class N0 for these codes);'	
+breda-statengeneraal-1624-25	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+bullet-tuscany-1944	COLD			
+burgess-mysteries-1912	COLD			
+castelcicala-1816	HOT	decipherment	NOTES.md: 'The crib is a contemporary interlinear decipherment on R9566 p.3 (1 Dec 1816, in the same busta) disc' ; NOTES.md: '- [x] clear-pages: the contemporary interlinear decipherments on R9566 p.3, R9569, R9571 and R9589 were Bourde'	
+catokwacopa-1875	COLD			
+censorship-manual-stego	COLD			
+ceppo-nevers-fr3251-1570s	HOT	key	PROGRESS.tsv: ksrc b ; AUDIT.md: 'Key source: `published`. The Ceppo-Nevers cipher was rebuilt by Satoshi Tomokiyo from BnF'	
+charles-rupert-1645	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'Method: George Lasry's previously reconstructed homophonic + nomenclator key for the Charles I'	
+clair1067-brienne-poland-1646	HOT	key	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv: file name key_brienne_1647.tsv ; ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv: file name key_brienne_1651.tsv	
+clair1108-duvergier	HOT	decipherment	NOTES.md: 'ear words written ABOVE the numeral groups are an interlinear decipherment, not part of the letter.** This rev' ; NOTES.md: 'en in lines with what appears to be a **partial interlinear gloss in a second, lighter hand** between severa'	
+clair1161-avis-flandre-1688	HOT	decipherment	NOTES.md: 're, chiffrés" is a genuine ciphertext, an already-deciphered copy, or a fragment too short to attack.' ; NOTES.md: 'So the gloss is a period decipherment of this block, and the blind key agrees with it f'	
+clair331-rangone-montmorency-1530	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'which the scout's own row summary paraphrased as "key printed (Gramont's cipher, 1530);'	
+clair349-este-guise-1556	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; AUDIT.md: 'Key: `period` -- rebuilt by this project (LANE YX/ZX) from the period key sheet BnF fr.209'	
+clair571-estrades-1645	HOT	key	NOTES.md: '**Lasry/Biermann reconstructions (recap, not re-fetched beyond what NOTES already' ; NOTES.md: '577/579 reconstructed by Lasry, Baluze 172 reconstructed, Clair.'	
+clair577-brienne-estrades-1647	HOT	key	NOTES.md: 'Lasry/Tomokiyo reconstructed the key from p.501/p.513 and state p.741 is undec'	
+clair577-estrades-piombino-1647	HOT	decipherment	NOTES.md: 'E=¯38), reconstructed by George Lasry (2025) from interlinear decipherments in the same volume (Clair.'	
+clairambault1225-paget-1714	HOT	key	PROGRESS.tsv: ksrc p+o ; ciphers/clairambault1225-paget-1714/key.tsv: 11 H-graded rows (source 'period')	
+clairambault296-paget-1713	HOT	decipherment	NOTES.md: 'hers/clairambault1225-paget-1714 now has a period interlinear decipherment of the 1714 Paget letters and a 114' ; NOTES.md: 'er Paget folder clairambault1225-paget-1714 has a period decipherment and a 114-code key (PAGET-KEY, 2 Oct 202'	
+clairambault351-paliano	COLD			
+clairambault361-marini-1610	COLD			
+clairambault528-bouillon-1713	COLD			
+clerville-francia-1648	COLD			
+colbert155-beziers-1670	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/colbert155-beziers-1670/keys/key_colbert_croissy_1668.tsv: header 'cryptiana'	
+colbert26-lathuillerie-1644	HOT	key	ciphers/colbert26-lathuillerie-1644/key_period.tsv: file name key_period.tsv ; NOTES.md: 'illerie -> Servien | Heavy cipher, **contemporary interlinear decipherment gloss confirmed** (see below) |'	
+colbert369-maisse	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'a de Maisse" table) matches, digit for digit, the key already published by Satoshi Tomokiyo as an image ("M'	
+colbert401-henri3-segur-1586	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'nt on f.321 itself) | digits (numerical cipher) | key printed, from the same volume's own interlinear decipher'	
+costabili-modena-1491	HOT	decipherment	NOTES.md: 'R1168 has a period interlinear decipherment and a clear Exemplum at f.13.' ; NOTES.md: 'CLXXXVIII), and every 1491 cipher passage has a period decipherment on its record except ~100 signs on R1166 P'	
+cotton-tudor-cluster	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: ', Vespasian, C I (calendared in Brewers (1920))." Tomokiyo independently reconstructed the cipher key (margin '	
+courten-diary	COLD			
+cylob-c1995	COLD			
+davaux-1633	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+debosnys-1883	COLD			
+decode-1162-modena-ambung-1492	HOT	key	NOTES.md: 'Key source: period (decode-1168's key, rebuilt from that leaf's peri' ; NOTES.md: 'leto, Buda 1483, R1107-R1118) "every letter has a contemporary decipherment (filed copies or clear slips paste'	
+decode-1168-modena-costabili-1492	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'Key source period (from the period gloss).'	
+decode-1411-hhsta-vienna-1600	HOT	gloss	NOTES.md: '## GAPS141 step: p.1 interlinear gloss -> numeral/letter table, held-out gate (3 Oct 202' ; NOTES.md: '**Table (grade C, period gloss;'	
+decode-2678-bnf-colbert127-gravel-1665	COLD			
+decode-2754-bnf-baluze156-1636	HOT	key	ciphers/decode-2754-bnf-baluze156-1636/key_sabran2_letters.tsv: header 'Cryptiana' ; ciphers/decode-2754-bnf-baluze156-1636/key_sabran_1631.tsv: header 'Lasry's reconstruction'	
+decode-2787-villeroi-henryiii-1577	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'decrypted status, 2 images, one attached document tagged [key], titled "Preliminary Assignment").'	
+decode-361-simancas-catherine-aragon-1509	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+decode-4450-bnf-fr20506-1525	COLD			
+decode-9482-bnf-colbert11-mazarin-bordeaux-1654	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'key published on cryptiana (louisxiv_0mazarin.png);'	
+decode-9970-simancas-1527	COLD			
+della-torre-olanda-1690	COLD			
+destaing-gerard-1779	COLD			
+dupuy111-sarpi	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+dupuy155-1597	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+dupuy452-carpi-1520	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/dupuy452-carpi-1520/key.tsv: header 'Tomokiyo's reconstruction'	
+dupuy468-anhalt	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/dupuy468-anhalt/key.tsv: header 'gloss'	
+dupuy63-139	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'of item 139 specifically, since a cipher key (Tomokiyo's) already exists and a reconstructed nomenclature i'	
+eckert-1862	HOT	key	NOTES.md: '21 Apr 2017) and marks the six that have rows "key source: published";'	
+eckert-1864	HOT	clear	NOTES.md: 'mbiguous and mssEC 25 is clear on a key word, the clear copy settles it.'	
+erba-2006	COLD			
+erving-1807	HOT	decipherment	NOTES.md: 'This is a full contemporary decipherment of exactly the letter in QUEUE.md rank 9: same se'	
+es132-vargas-mexia-1578	HOT	key	AUDIT.md: 'key: published`, `text: known` for the C part and `claim_scope` other than recovered-pas' ; ciphers/es132-vargas-mexia-1578/key.tsv: header 'Cryptiana'	
+esp318-sicilia-1503	HOT	key	ciphers/esp318-sicilia-1503/key/key_gran_cifra.tsv: header 'Bergenroth' ; NOTES.md: '**Key source.** Bergenroth's *Gran cifra* of the Gran Capitán, 1501-04, BNE'	
+espagnol142-mercy-1648	COLD			
+fair-game-2010	COLD			
+florence-dieci-responsive	HOT	decipherment	NOTES.md: '111 is a separately numbered item: a period decipherment (or clear copy) filed thirteen items before the c' ; NOTES.md: 'ing Neri Capponi, subscribed "Tomaso ...", with a period decipherment filed at filza 8 c.'	
+fr15564-mercoeur-1586	HOT	key	ciphers/fr15564-mercoeur-1586/key_lasry_gl.tsv: header 'Lasry's key' ; NOTES.md: '## f.151 sign count and inventory against Lasry's key (MERC151, 3 Oct 2026)'	
+fr15575-syllabic-1592-95	HOT	key	ciphers/fr15575-syllabic-1592-95/key_no54.tsv: 94 H-graded rows ; NOTES.md: 'rule 4, reported in the brief's scheme (syllables applied from the period key sheet are S, control-backed by N'	
+fr16045-pisany-rome-1585	HOT	key	PROGRESS.tsv: ksrc b ; NOTES.md: 'Key published (Tomokiyo), plaintext the period copy (on Gallica'	
+fr16092-maisse-1582	HOT	key	NOTES.md: 'rule 10, this is quoted rather than paraphrased: Tomokiyo has reconstructed the key from the image but state'	
+fr16104-vivonne-spain-1572	HOT	key	PROGRESS.tsv: ksrc b ; AUDIT.md: 'Key: **published** (S. Tomokiyo, credited). Text: unknown. - Safe sentence: "Using Satoshi'	
+fr16106-vivonne-longlee-1579	HOT	decipherment	NOTES.md: 'king: 21 dates (7 Jan - 6 Dec 1580) | 26 letters period decipherment (volume);' ; NOTES.md: 'o Catherine, 5 to Villeroi, 7 from Henri III | 28 period decipherment (volume);'	
+fr16142-noailles-constantinople-1571	HOT	key	ciphers/fr16142-noailles-constantinople-1571/key.tsv: header 'Cryptiana' ; NOTES.md: 'F fr.4735, f.276)." He has reconstructed the key (key printed on his page;'	
+fr16144-savary-lancosme-1588	HOT	decipherment	NOTES.md: '(2) The volume itself carries contemporary decipherments: separate clerk's decipherment leaves after ciphe' ; NOTES.md: '18 with cipher, of which **17 carry a period decipherment inside the volume** (10 with a left-margin deciph'	
+fr20140-danzay-1557	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/fr20140-danzay-1557/key.tsv: header 'Tomokiyo's reconstruction'	
+fr2751-dediou-mayenne	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv: header 'cryptiana'	
+fr2812-danzay-1578	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+fr2933-salviati-1525	COLD			
+fr2967-duprat	HOT	decipherment	NOTES.md: 'iption" pattern -- the items are already-existing period decipherments, so the live question is whether that p'	
+fr2980-gramont	HOT	key	AUDIT.md: 'Key source: `published` for the H tokens (Tomokiyo and Lasry 2023); the 199 S values, incl' ; ciphers/fr2980-gramont/key.tsv: 45 H-graded rows (source 'Lasry')	
+fr2988-ranzo-1520s	COLD			
+fr2996-morvillier	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'The worker read the section as "key published, letter unread";'	
+fr3022-garbino-1528	COLD			
+fr3034-landriano-1528	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'I, October 1528 and June 1529 -- deciphered with Lasry's key, extended: the siblings of the Landriano lette'	
+fr3083-langeac-montmorency	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'The key is **"Avranches' cipher 1"**, reconstructed by **George Lasry** (table dated 5 Nov 2023, on Tomokiyo's'	
+fr3151-noailles-1558	HOT	decipherment	NOTES.md: '**The marginal gloss is a period decipherment (a crib), not an archivist's note.** Written in a' ; NOTES.md: 'y are the same sender in the same weeks, with period decipherments bound beside the ciphertext.'	
+fr3151-seure-1558	COLD			
+fr3198-labbe-1577	COLD			
+fr3416-nevers-fils-1589	HOT	key	PROGRESS.tsv: ksrc b ; ciphers/fr3416-nevers-fils-1589/keys/key_no25_nomenclator.tsv: 192 H-graded rows	
+fr3621-dinteville-1592	HOT	key	PROGRESS.tsv: ksrc p ; NOTES.md: 'N3 for the f.130 cipher fragments, key source period.'	
+fr3625-lauriere-1593	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'decode run on the reconciled ciphertext with the interlinear gloss-hand words removed (they are a second, peri'	
+fr3789-mariedemedicis-savary-1610	HOT	key	NOTES.md: 'or, 24 Sept 2026 17:25 UTC: status set blocked -- the key (BnF fr.3642) is not on Gallica and its DECODE photo'	
+fr3975-vieuville-1587	HOT	key	NOTES.md: '(a) Folder's own files: Bourdeau's key no.16 (fr.3995 f.32v) reads the code numbers;'	
+fr3976-nevers-f133-1586	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: '(f.139, piece 74, itself carrying a contemporary interlinear decipherment).'	
+fr3983-pisany-nevers-1593	HOT	key	NOTES.md: '- Key: Tomokiyo's no.46 (fr.3995 f.86-87, "the place name on the' ; NOTES.md: 'This is a **contemporary interlinear decipherment**, not a modern annotation -- same pattern as t'	
+fr3984-sega-1593	HOT	decipherment	NOTES.md: 'f.184-185 and f.177 are the office's own contemporary decipherments of *sibling* letters (f.188, f.176) in '	
+fr3984-sillery-1593	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+fr3985-nevers-revol-1593	HOT	key	ciphers/fr3985-nevers-revol-1593/key.tsv: header 'reconstruction Satoshi Tomokiyo' ; NOTES.md: '- Key: Tomokiyo's no.60 ("the Court's symbol cipher", fr.3995 f.1'	
+fr3986-nevers-revol-1593	HOT	key	ciphers/fr3986-nevers-revol-1593/key.tsv: header 'Tomokiyo's reconstruction' ; NOTES.md: '- Key: Tomokiyo's no.60, same as fr.3985 (see that target's NOTES'	
+fr3987-nevers-revol-1593	HOT	key	ciphers/fr3987-nevers-revol-1593/key.tsv: header 'Tomokiyo's reconstruction' ; NOTES.md: 'key table transcribed by Daniel Bourdeau, CC BY 4.0, nevers1593/key60.txt).'	
+fr3989-nevers-revol-1594	HOT	key	NOTES.md: 'key transcribed by Daniel Bourdeau, CC BY 4.0, nevers1593/key60.txt).'	
+fr3990-nevers-henri4-1594	HOT	key	NOTES.md: 'key transcribed by Daniel Bourdeau, CC BY 4.0, nevers1593/key60.txt).' ; NOTES.md: 'The hand of f.27 is clean, but several of Bourdeau's KEY values conflict with his own enciphering-sheet co'	
+fr3993-gonzague-nevers-1595	HOT	key	PROGRESS.tsv: ksrc p ; NOTES.md: status found-solved (a published decipherment of this item exists)	
+fr3993-villeroy-1595	HOT	key	NOTES.md: 'rt cipher of 1593 and the Balagny–Nevers alphabet reconstructed by Tomokiyo from the same volume, fr.'	
+fr4102-dufaure-galepin	COLD			
+fr4137-sabran	COLD			
+fr4687-paleologue-nevers	COLD			
+fr4712-nevers-duchesse	HOT	key	ciphers/fr4712-nevers-duchesse/keys/key_no1.tsv: 86 H-graded rows ; NOTES.md: '13 ("Fragment de dépêche en clair et en chiffre", interlinear decipherment of two-digit word codes, "25 appear'	
+fr4715-evesque-nevers-1589	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'C", the same digits as Tomokiyo's, with a period interlinear gloss "a vostre" over 93 67 83 85 75 43.'	
+fr4715-f61-mayenne-1592	HOT	key	PROGRESS.tsv: ksrc p ; ciphers/fr4715-f61-mayenne-1592/keys/key_mayenne_1592.tsv: header 'cryptiana'	
+fr4715-montholon-1589	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/fr4715-montholon-1589/keys/key_vieuville_nevers.tsv: header 'cryptiana'	
+fr4715-vieuville-pool	HOT	key	NOTES.md: '**Rule 4 grades, 749 tokens:** 604 letter tokens read from the printed key (key-source values, AB in the key f' ; NOTES.md: '**Rule 4 grades, 443 tokens:** 308 letter tokens read from the printed key: 305 at H for the value, 3 at I (th'	fr4715-montholon-1589
+fr5160-letellier-1653	HOT	key	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv: file name key_brienne_1647.tsv ; ciphers/fr5160-letellier-1653/key_brienne_1651.tsv: file name key_brienne_1651.tsv	
+fr5761-election-1519	HOT	key	ciphers/fr5761-election-1519/key.tsv: 68 H-graded rows ; NOTES.md: '* (23 Sept 2026), via the leaf's own pre-existing interlinear gloss, not via any key from this document -- so '	
+fr7129-villeroy-bongars-1604	HOT	decipherment	NOTES.md: 'All four carry a contemporary interlinear decipherment: a clerk's plaintext written letter by letter abo' ; ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v3.tsv: header 'interlinear'	
+fr7131-beaumont-bongars-1603	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'v2 / _v3 (cipher no.3, f.275, built from a period interlinear decipherment of sibling folios).'	
+gla-claudiamedici-1633	COLD			
+goldbar-1933	COLD			
+guazzo-nevers-fr4688-1571-72	COLD			
+gunther-van-schwarzburg-1561	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/gunther-van-schwarzburg-1561/key.tsv: 76 C-graded rows (known plaintext)	
+hamilton-1650	HOT	decipherment	NOTES.md: 'But the HMC editors had period decipherments (or a key) for the Lanark 1648 cipher in the Hami'	
+harley-287-1587	HOT	decipherment	NOTES.md: 'The ff.86-87 entry is a deciphered copy bound two leaves from f.84 and one leaf from f.88' ; NOTES.md: 'independently by the cobham1588 session against contemporary glosses on f.89/R8493);'	
+heinsius-dopff-1702	COLD			
+heinsius-hermitage-1704	COLD			
+heinsius-vanhaersolte-1703	HOT	decipherment	NOTES.md: 'oor d'Alonne opgelost." So the edition prints a contemporary decipherment (by d'Alonne) of Haersolte's ciphe' ; NOTES.md: 'the printed deciphered passages are period decipherment text, not ours.'	
+hellen-frederick-1752	HOT	key	PROGRESS.tsv: ksrc p ; AUDIT.md: 'Key source: `period` -- agreed with AUDIT 1. BL catalogue (searcharchives.bl.uk, 4 Oct 202'	
+hessen-1824	HOT	key	PROGRESS.tsv: ksrc b ; status.json: key published	
+hessen-daenemark-1672	HOT	decipherment	NOTES.md: 'ey period, text known -- the leaf carries its own period decipherment (the bold glosses);' ; AUDIT.md: 'Key source: `period` -- the nomenclator values come from the bold glosses written on the l'	
+hstas-osiander-1627	COLD			
+huntington-blathwayt-madrid-1728	HOT	decipherment	NOTES.md: 'e same small collection carries several 1725-1729 contemporary decipherments in the same correspondence networ' ; NOTES.md: '**Yes, but with visible gaps** (a genuine partial contemporary decipherment, some letters left as dashes) | ~8'	
+huntington-luzerne-destouches-1781	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/huntington-luzerne-destouches-1781/key_tomokiyo.tsv: file name key_tomokiyo.tsv	
+hza-hohenlohe-1679	COLD			
+ingham-diary	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+intercepted-royalist-1646	HOT	key	PROGRESS.tsv: ksrc b ; NOTES.md: '129 as reconstructed by Aymeloglu reads 190 of 735 tokens of f.10 above 20 shuffled'	
+jan-van-nassau-1572-75	HOT	key	ciphers/jan-van-nassau-1572-75/key_1572.tsv: 89 H-graded rows ; ciphers/jan-van-nassau-1572-75/key_5549.tsv: 102 C-graded rows (source 'aligned')	
+kaliningrad-2015	COLD			
+koehler-1944	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+konstanz-talleyrand-sieyes-1798	COLD			
+la-garde-1577	HOT	gloss	NOTES.md: 'up cipher run beside it, so this reads as a short marginal gloss/label, not a word-for-word decipherment (cate' ; NOTES.md: 'ier le faict du grand"* and treated it as a short marginal gloss.'	
+lambeth-bacon-649	COLD			
+lambeth-casenowe-1586	COLD			
+lodewijk-van-nassau-1573-74	HOT	key	ciphers/lodewijk-van-nassau-1573-74/key_4614.tsv: 105 H-graded rows ; ciphers/lodewijk-van-nassau-1573-74/key_5801.tsv: 3 H-graded rows	
+lope-hurtado-1522	HOT	clear	NOTES.md: 'lues Bourdeau recovered from R9644's contemporary clear copy (key_codes.tsv, dbourdeau/cyphersolver lopehurtad' ; NOTES.md: 'ens) read**, from **the record's own contemporary clear copy** (f.'	
+lorraine377-breval	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'Tomokiyo gives the reconstructed nomenclature on the page (not reproduced here;'	
+malsburg-hessen-1636	HOT	key	status.json: key published ; NOTES.md: status found-solved (a published decipherment of this item exists)	
+marnix-1580	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+matignon-mayenne-1586	HOT	key	ciphers/matignon-mayenne-1586/key.tsv: 54 H-graded rows (source 'Bourdeau') ; NOTES.md: 'kiyo's openings essentially token for token under Bourdeau's key (f143r: 92 H agreements, 0 disagreements over'	
+maurice-rupert-1645	HOT	key	ciphers/maurice-rupert-1645/key118.tsv: header 'key sheet' ; ciphers/maurice-rupert-1645/keys/key9119.tsv: header 'reconstruction'	
+mccormick-1999	COLD			
+mlh-1976	COLD			
+monck-1660	COLD			
+moray-wood-1568	HOT	key	ciphers/moray-wood-1568/key.tsv: header 'Aymeloglu's key' ; NOTES.md: 'Wording: Aymeloglu's key and reading, Bourdeau's sign order, credited (rul'	
+mornington-1798	HOT	clear	NOTES.md: '77 = 9 Jul 1800 letter (Ingram's footnote) | clear copy of /36's letter;'	
+moustier-altars	COLD			
+na-janssens-java-1811	HOT	key	PROGRESS.tsv: ksrc p ; NOTES.md: 'AUDIT.md section 1: leaf 188 classed **N1**, key source period.'	
+na-oldenbarnevelt-2442-1605	COLD			
+na-raad-azie-1800	COLD			
+na-schonenberg-1678-1716	HOT	key	PROGRESS.tsv: ksrc p+o ; NOTES.md: '**Kind: recovery, key source period** (the leaf's own contemporary interlinear Spanis'	
+na-suriname-map-1781	HOT	key	ciphers/na-suriname-map-1781/key_period.tsv: file name key_period.tsv ; ciphers/na-suriname-map-1781/key_period_codes.tsv: file name key_period_codes.tsv	
+naf14913-rousseau-venice-1743	HOT	decipherment	NOTES.md: 's own mentions -- FOUND: the item carries its own period decipherment.** The finding aid (Thomas 1969 p.149) a' ; NOTES.md: 'pher's lead-in "les idees des" -- so f.206 is the period decipherment of the numeral passage on ff.205v/207r ('	
+nevers-birago-fr3251-1572	HOT	key	PROGRESS.tsv: ksrc b ; AUDIT.md: 'Key source: `published` (Tomokiyo's printed Nevers-Birago 1572 table, credited). Ours on t'	
+newcastle-stone-1728	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+nla-heinrich-braunschweig-1519	COLD			
+nls-20769	COLD			
+oldenbarnevelt-brederode-1605	COLD			
+orange-nassau-1572	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/orange-nassau-1572/key_nepveu.tsv: 24 H-graded rows	
+ormond-arran-1678	HOT	key	ciphers/ormond-arran-1678/keys/cipher1.tsv: 122 H-graded rows ; ciphers/ormond-arran-1678/keys/cipher2.tsv: 295 H-graded rows	
+oxenstierna-gustav-adolf-1632	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+pallotto-1628	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+pollaky-1865-1875	COLD			
+portugais33-saovicente-1667	COLD			
+pro30-shaftesbury-1682	COLD			
+pro3053-horesse-1717	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+pro3055-clinton-1779	HOT	key	PROGRESS.tsv: ksrc p ; NOTES.md: 'Verifier audit in AUDIT.md: item 2894 N0, key source period, text known;'	
+ra-celsing-dohsson-1779	COLD			
+ra-celsing-sillen-1755	COLD			
+ra-crusenstolpe-1809	COLD			
+ra-karlxi-fullmakt-1677	COLD			
+ra-morner-welin	COLD			
+ra-ud-chiffer-handlingar	COLD			
+ra-vellingk-1713	COLD			
+rah-canada-1869	HOT	decipherment	NOTES.md: '## Access notes and interlinear decipherment (24 September 2026, LANE R worker R4)' ; ciphers/rah-canada-1869/key.tsv: header 'interlinear'	
+rah-juan-manuel-1521	HOT	key	ciphers/rah-juan-manuel-1521/key.tsv: header 'cryptiana' ; NOTES.md: 'key published (Tomokiyo) |'	
+rah-morillo-1817	HOT	key	PROGRESS.tsv: ksrc p ; AUDIT.md: 'Key source: `period`, with 4 print-aligned signs `ours` (section 4). Safe sentence (audit'	
+rah-salazar-soria-sanchez-1524-28	HOT	key	NOTES.md: '): item 5 = CSP No.462 at A.42 f.443 exactly (N0, key published);' ; NOTES.md: 'ion (Ko.6 Lope de Soria, Ko.9 Alonso Sánchez) and Tomokiyo's own reconstruction, with a full substitution-alph'	
+rah-xiquena-1868	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+rah9-29-fernandez-1523	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+rah9-31-fernandez-1524	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+rah9-34-fernandez-1525	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+randolph-sussex-1569	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: '- **Found-solved:** contemporary decipherment on f.278 (DECODE R4932), reported by Bourdeau 21'	
+rayburn-2004	COLD			
+reddit-runaway-2021	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+riksarkivet-r4282-1628	COLD			
+roell-vandedem-1809	COLD			
+rubin-1953	COLD			
+rumpf-vandebie-heinsius-1716-19	COLD			
+sachsstaatsarchiv-manteuffel-1712	HOT	key	PROGRESS.tsv: ksrc b ; NOTES.md: '_inventory.tsv (loc, frame, document, cipher y/n, interlinear decipherment y/n, clear text).'	
+salvago-caraffa-1691	COLD			
+sanguszkow-mniszech-dunin-1714	COLD			
+scorpion-1991	COLD			
+sforza-maino-1446	COLD			
+siena-concistoro-2308	COLD			
+sp105-paget-1693	COLD			
+sp35-intercepts-1722	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+sp35-townshend-key-1719	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+sp36-ball-1745	COLD			
+sp36-stquentin-pretender-1743	COLD			
+sp53-16-78	COLD			
+sp53-16-79	COLD			
+sp53-22-f52	COLD			
+sp54-maclean-1745	COLD			
+sp77-nicholas-1659	HOT	decipherment	NOTES.md: 'ES.md cites a Nicholas-to-Ormond 1644 letter with interlinear decipherment (different letter, different year),'	
+sp78-cesy-1628	COLD			
+sp78-doncaster-1621	COLD			
+sp78-france-1583	COLD			
+sp78-waldegrave-delafaye-1734	COLD			
+sp78-yorke-1749	COLD			
+sp8-ehrenstein-1689	COLD			
+sp81-palavicino-1590	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+sp81-roe-1638	HOT	decipherment	NOTES.md: 'anding cipher for which TNA holds at least one contemporary decipherment, in the same piece as the target.' ; NOTES.md: 'oe cipher existed and that TNA holds at least one contemporary decipherment for this channel — worth ordering '	
+sp81-stanning-1631	COLD			
+sp81-wroth-1596	COLD			
+sp84-chauran-1662	COLD			
+sp87-brunswick-1759	HOT	decipherment	NOTES.md: 'ce of all 98 cipher-flagged pieces against in-box contemporary-decipherment companions, the Savory looser sear' ; NOTES.md: 'Several items show that **a contemporary decipherment already sits in the same box, filed as a separ'	
+sp87-chesterfield-1747	COLD			
+sp87-further-1712	HOT	decipherment	NOTES.md: 'it is **calibration material** (a period decipherment exists) rather than an unsolved target.' ; NOTES.md: 'SP 87/32/115 period decipherment - blocker: needs-physical-access;'	
+sp87-newcastle-1743	COLD			
+sp90-raby-1704	COLD			
+sp90-raby-whitworth-1705	COLD			
+sp99-wotton-1622	COLD			
+spinelli-beinecke-c1515	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/spinelli-beinecke-c1515/key.tsv: header 'published key'	
+ss-radio-lippert-1944	COLD			
+stair-townshend-1710	COLD			
+stas-waldburg-1653	COLD			
+stepney-manchester-1702	COLD			
+sufi-fiddle	COLD			
+szembek-bk1560	HOT	key	AUDIT.md: 'key: period). No printing of the letter was located in the sources logged in AUDIT.md; cla' ; AUDIT.md: 'Key source: `period` (rebuilt by us from a decipherment of the time on the leaf). Nothing'	
+taurello-roma-1527	COLD			
+throckmorton-add4136-1559	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+thurloe-barriere-1654	HOT	decipherment	NOTES.md: 's" in the sense CLAUDE.md's Lessons file means (a contemporary decipherment printed beside its own ciphertext)' ; ciphers/thurloe-barriere-1654/key_gloss.tsv: file name key_gloss.tsv	
+thurloe-printed	HOT	key	PROGRESS.tsv: ksrc p ; ciphers/thurloe-printed/key_blake_extended.tsv: 19 H-graded rows (source 'Tomokiyo')	
+trew-posthius-1614-18	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/trew-posthius-1614-18/key.tsv: 24 H-graded rows	
+trew-schellhammer-1653	COLD			
+ula-degeer-1644	COLD			
+untersberg-code	COLD			
+vanbeuningen-dewitt-1657	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; ciphers/vanbeuningen-dewitt-1657/key.tsv: 79 C-graded rows (known plaintext)	
+vanspaen-vandergoes-1808	COLD			
+vaudemont-willemiii-1699	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+viganego-torino-1717	COLD			
+wallis-emus203-undeciphered	HOT	decipherment	NOTES.md: 'ers 1640-53, each normally with cipher + Wallis's deciphered copy + key.'	
+wellington-maitland-1812	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists) ; NOTES.md: 'the dictionary-code scheme and one strip-cipher key were already published by Patrick Hayes and George Lasry b'	
+whitworth-1707	COLD			
+willem-van-hessen-1567	HOT	decipherment	NOTES.md: 'WVO's own remark: "solved on leaf" -- a contemporary decipherment accompanies the manuscript.' ; NOTES.md: 'are the cipher passage, each WITH a contemporary interlinear decipherment written in a second, smaller hand di'	
+williams-1690	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+wvo-hessen-1564	HOT	key	ciphers/wvo-hessen-1564/key.tsv: 8 H-graded rows ; NOTES.md: 'c/alchemical set OX-WV69 describes for **1069**'s interlinear gloss.'	
+yogtze-1984	COLD			
+zbz-busbecq-1587	COLD			
+zbz-ulrich-zwingli-1531	HOT	key	NOTES.md: status found-solved (a published decipherment of this item exists)	
+zeschau-seebach-1841	COLD			
+zodiac-z13-stress	COLD			

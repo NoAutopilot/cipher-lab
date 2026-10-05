@@ -71,6 +71,11 @@ Usage:
 
 --ciphers-dir, --ledger, --near and --out default to the real repository paths; all four exist so
 the offline test can point the tool at temporary fixtures instead of the real repo.
+
+Added 5 Oct 2026 (SYS1-HC, LANE-SYS1 job 2): `--hot-only [HOT-COLD.tsv]` prints the same TSV filtered to folders that
+tools/hot_cold.py marks HOT (a key source on disk, or a pool member with one), to stdout only; it never writes --out,
+so the default NEXT-STEPS.tsv output is byte-identical with or without the flag. It must NOT drop a HOT row or keep a
+COLD/unlisted one (tools/tests/test_hot_cold.py::test_next_steps_hot_only_filters_and_default_unchanged).
 """
 import argparse
 import glob
@@ -449,6 +454,20 @@ def print_wait_only_summary(rows):
         print(f"{r['folder']} | {r['blocker']}")
 
 
+def hot_folders(path):
+    """HOT folder names from tools/hot_cold.py's HOT-COLD.tsv (columns folder, hot_cold, ...; '#' comment lines)."""
+    lines = [l.rstrip("\n").split("\t") for l in open(path, encoding="utf-8") if l.strip() and not l.startswith("#")]
+    if not lines or "folder" not in lines[0] or "hot_cold" not in lines[0]:
+        return set()
+    fi, hi = lines[0].index("folder"), lines[0].index("hot_cold")
+    return {r[fi] for r in lines[1:] if len(r) > hi and r[hi] == "HOT"}
+
+
+def hot_only_rows(rows, hot):
+    """--hot-only filter: keep a NEXT-STEPS row only when its folder is HOT; order unchanged."""
+    return [r for r in rows if r["folder"] in hot]
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--ciphers-dir", default=os.path.join(ROOT, "ciphers"))
@@ -459,11 +478,23 @@ def main():
     ap.add_argument("--wait-only", action="store_true",
                      help="print only the blocked rows with no parallel action (folder | blocker), for the "
                           "check-in and the retrospective; exits 0 always (this is a report, not a staleness check)")
+    ap.add_argument("--hot-only", nargs="?", const=os.path.join(ROOT, "HOT-COLD.tsv"), default=None, metavar="HOT-COLD.tsv",
+                    help="print the NEXT-STEPS rows (header + TSV) for HOT folders only, reading tools/hot_cold.py's "
+                         "HOT-COLD.tsv (default path at the repo root); writes nothing and leaves --out untouched, so "
+                         "the default output is unchanged. Exit 2 if the HOT-COLD file is missing")
     args = ap.parse_args()
 
     ledger_text = open(args.ledger, encoding="utf-8", errors="replace").read() if os.path.exists(args.ledger) else ""
     near_text = open(args.near, encoding="utf-8", errors="replace").read() if os.path.exists(args.near) else ""
     rows = build_rows(args.ciphers_dir, ledger_text, near_text)
+
+    if args.hot_only:
+        if not os.path.exists(args.hot_only):
+            print(f"{args.hot_only} missing; run python3 tools/hot_cold.py first", file=sys.stderr)
+            return 2
+        hot = hot_folders(args.hot_only)
+        sys.stdout.write(render_tsv(hot_only_rows(rows, hot)))
+        return 0
 
     if args.wait_only:
         _, missing = wait_only_rows(rows)
