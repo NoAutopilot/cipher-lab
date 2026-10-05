@@ -325,13 +325,13 @@ exit 0
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 3 Beckwith/Kimber entries in Cipher No. 2 (section 8); the rest of the ledger untranscribed.
-- E4/E5 second copies in the parallel sent ledger mssEC 18 (object 10074) - blocker: not-attempted; section 2 and Premise check (c): never opened; next: Huntington CONTENTdm `CISOSEARCHALL` query for 21-22 Apr 1864 and one page read ("While waiting"), ~$1.5
+- E4/E5 second copies in the parallel sent ledger mssEC 18 (object 10074) - blocker: done 5 Oct 2026 (no copy in volunteer text pp.50-60, section "mssEC 18 check"); was not-attempted; section 2 and Premise check (c): never opened; next: Huntington CONTENTdm `CISOSEARCHALL` query for 21-22 Apr 1864 and one page read ("While waiting"), ~$1.5
 - the other seven selected Beckwith/Kimber/Caldwell entries (Cipher No. 2) - blocker: not-attempted; section 8 "Not done"; next: two transcription passes of those entries and decode_no2.py with key-no2.md (cost estimated from section 4's 20-entry pass, not measured), ~$4
 - corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
 - Jan-Feb 1864 entries in the old vocabulary - blocker: not-attempted; section 5; next: read mssEC 67 (No. 9) or the No. 12 template and decode a sample of entries (cost not given in the folder; estimate), ~$3
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
-- [ ] siblings: mssEC 25 second copy read for E4/E5 (Second reader, 24 Sept 2026; four corrections applied); the parallel sent ledger mssEC 18 not yet opened (While waiting step)
+- [ ] siblings: mssEC 25 second copy read for E4/E5 (Second reader, 24 Sept 2026; four corrections applied); mssEC 18 opened 5 Oct 2026, pp.50-60 text, no E4/E5 copy
 - [x] clear-pages: OR prints matched for 17 of 20 entries as the check (section 4)
 - [x] known-keys: Cipher No. 1 (mssEC 41) and Cipher No. 2 (mssEC 47) are the period key books in use
 - [x] print: OR series I sweep, ORN, Butler and Fox correspondence, Lincoln Collected Works (section 4, AUDIT.md)
@@ -339,3 +339,10 @@ Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H
 - [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026)
 - [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
 Verdict: keep going: 3 internal gaps; cheapest next: mssEC 18 copies of E4/E5 via CONTENTdm, ~$1.5
+
+## mssEC 18 check for E4/E5 copies, 5 Oct 2026 (RUN6-ECK, LANE-RUN6 wave 2)
+
+Route: Huntington CONTENTdm item API, `hdl.huntington.org/digital/api/collections/p16003coll11/items/<pointer>/false` (plain curl, browser UA, 1.6-3 s apart, 21 requests, one 'Empty reply' retried once). mssEC 18 = object 10074 (record `sources/mssEC18_obj10074.json`: title "Front_cover", compound object; its pages are separate pointers, page n = pointer - 9660 in this stretch). Dating probe: 9710 = p.50 (20 Apr 1864), 9714-9716 (21 Apr), 9717 (22 Apr), 9718 (23 Apr), 9720 (23 Apr), 9740 (19 May). Pages 9710-9720 (pp.50-60) saved as volunteers' text in `sources/mssEC18/p<pointer>.json`; no images fetched (the NOTES next step named a text/page read only).
+Found: mssEC 18 holds a different set of 21-22 Apr entries from mssEC 19 p.49 and mssEC 25 pp.77-79: Beckwith/Sheldon/Cutler/Benham/Meigs entries and a Horner NY 21 Apr 9.40 PM telegram "for Vulcan John Ericsson ... camels made to lift the Tecumseh" (p.56, pointer 9716, volunteers' text; appears in clear words, signed "Annal nine fifty"). Meigs 22 Apr 10 PM to Van Vliet (p.57, pointer 9717) is not E5 (E5 = Meigs/Bender to Butler, 22 Apr 10.45 AM).
+Not found: no entry to Butler at Fort Monroe, no Fox signature entry at 9.30 PM, and no 4,000-men/1,000-horses Meigs entry in the volunteer text of pointers 9710-9720 (searched Butler, Monroe, Roanoke, Bender, camels, 4000 by script). So no second copy of E4 or E5 in mssEC 18 was located; this is conditional on the volunteers' transcription (rule 2) and on 11 pages only (21-23 Apr), not a verdict on the image, and pp.52-53 (9712-9713) carry no date line in the transcription. No code word of key.md changes; no grade moves. Related, not a copy: the Ericsson/Tecumseh telegram is the Fox-Ericsson subject of E4's clear counterpart (ORN I/9 p.667 per section 1), a witness for context only; not graded, no novelty language.
+Next (not done): look at images of pp.52-53 if a person wants the undated pages checked; otherwise this gap is closed as "no copy located in 21-23 Apr text".
