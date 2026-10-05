@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	4	ok
+api.openalex.org	10	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22J%27ay%20les%20mains%20liees%20de%20ce%20cost%C3%A9%20de%20peur%20d%27alterer%20rien%22
+archive.org	3	ok (some errors)
+be-api.us.archive.org	16	ok
+www.googleapis.com	8	ok
