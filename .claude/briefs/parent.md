@@ -410,3 +410,7 @@ When the owner must do something at his desk (a HathiTrust page, a catalogue rec
 exact page or result -- never a volume home page or a search he has to refine; (2) ONE action, in a sentence ("screenshot the
 footnotes", "copy the number at the top"); (3) what to send back. Try every cloud route first (IA copy, Google Books API, other
 mirrors) and only then ask. Lesson: a HathiTrust volume link left him facing "a bunch of different options" and a Cloudflare page.
+- Runner before owner (owner, 5 Oct 2026): a page read in a lent archive.org book, a HathiTrust page or search-inside, an
+  academia.edu download or a catalogue lookup goes to the owner's local runner first, as a LOCAL-QUEUE.tsv row (kinds
+  ia-reader, hathitrust, catalogue-lookup ...; tools/local_queue_runner_prompt.md), not to the owner's desk. The owner gets
+  it only if the runner fails or the step needs his own judgement (a hand comparison, a decision, a payment, a form in his name).
