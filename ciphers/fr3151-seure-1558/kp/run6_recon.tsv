@@ -1,0 +1,5 @@
+line	reconciler	seq	src	conf
+L04	R1	* t/ 1 s3 o oe t 3 # = e/ R s n R s ca n1 oe ff x x 3 c 7	AB A B AB AB B B AB B AB AB AB AB AB A AB B N B A A A AB B AB	0.5
+L04	R2	* t/ x s3 o oe t 3 # = e/ R s n R s ca s7 oe ff x x 3 c 7	AB A A AB AB B B AB B AB AB AB AB AB A AB B A B A A A AB B AB	0.6
+L06	R1	e/ 5 ff 3 R Z 9 q t/ # mm s N e/ bs7 h 7 t/ I =/ J s2 P t o	AB B AB AB AB B AB A A B AB AB AB AB B A AB A B AB A A AB AB AB	0.5
+L06	R2	e/ 5 ff 3 R Z 9 q t/ # mm s N e/ s1 h 7 t/ J =/ J s2 P t o	AB B AB AB AB B AB A A B AB AB AB AB A A AB A A AB A A AB AB AB	0.5

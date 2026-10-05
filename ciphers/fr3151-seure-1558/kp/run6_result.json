@@ -1,0 +1,17 @@
+{
+ "err_R_pooled": 0.08,
+ "err_R_per_line": {
+  "L04": 0.08,
+  "L06": 0.08
+ },
+ "edits": 4,
+ "max_len_sum": 50,
+ "src_share": {
+  "A": 0.26,
+  "AB": 0.52,
+  "B": 0.21,
+  "N": 0.01
+ },
+ "gate": 0.24,
+ "verdict": "PASS"
+}

@@ -692,3 +692,41 @@ Read so far: 0 tokens read (0 H, 0 C); diagnostic reads only (kp/, f75L); fo. 85
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 2 internal gaps; cheapest next: reconcile f81R readers A/B to err < ~0.24, then re-run kp/nom_test.py unchanged, ~$3
+
+## RUN6-SEURE: f81R A/B reconciliation pilot (5 Oct 2026, 05:05-05:08 UTC by date -u, account 1)
+Worker RUN6-SEURE (LANE-RUN6, Opus 5.5; reconcilers Sonnet), brief `.claude/briefs/runs/2026-10-05-acct1-run6-wave2.md`.
+Prereg `kp/PREREG-RUN6.md` pushed 5e763f1f before any call (its header says ~05:10; date -u at commit was 05:05:53).
+Scope: per-line A/B err (err2.py method) is 0.26-0.72 on all 20 lines, so full reconciliation = 20 calls x 0.35 + 1 = ~USD 7.4 >
+cap 3.5; this job ran a PILOT, lines L04 (A/B 0.538) and L06 (0.480) fixed by rule (first two within +-0.10 of pooled 0.484).
+Units: 4 Sonnet calls (2 independent reconcilers x 2 lines, each given the line's two half-crops, A, and B in A's labels) + 1
+reconciliation unit (scoring). 0 network requests. Files: `kp/run6_recon.tsv`, `kp/run6_err.py`, `kp/run6_result.json`.
+
+| measure | value |
+|---|---|
+| err_R (R1 vs R2, pooled L04+L06, 50 signs) | **0.080** (L04 0.08, L06 0.08) vs gate 0.24 -> pilot PASS |
+| A/B err on the same two lines (before) | 0.538 / 0.480 |
+| reconciled sign source share | AB 0.52, A 0.26, B 0.21, neither 0.01 |
+| residual R1/R2 splits | L04: x/1, n1/s7 (one double-scroll sign: A read 2 signs, B 1); L06: s1/bs7, J/I |
+
+Reading: PASS is necessary, not sufficient (registered caveat): both reconcilers saw A and B and took 99% of signs from one of
+them, so their agreement is anchoring-inflated and is agreement, not accuracy (TRANSCRIPTION.md). Notably they converged on
+B's L04 middle (oe t 3 # ... ca ... oe) and B's L06 opening (5, Z, #) but A's L06 tail (h 7 t/ ... J s2), i.e. a genuine
+per-sign choice, not copying one reader. kp/nom_test.py NOT re-run: it needs all 20 lines and 2 reconciled lines cannot feed it
+(prereg). Not found: any measure of the reconciled read's true error (no benchmark sheet for this hand).
+
+## Remaining gaps (RUN6-SEURE, 5 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); diagnostic reads only (kp/, f75L); f81R L04/L06 reconciled by two Sonnet reconcilers (err_R 0.08, kp/run6_result.json); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; reconciliation pilot PASSed on L04/L06 (RUN6-SEURE); next: reconcile the other 18 f81R lines (one Sonnet reconciler per line, same prompt as kp/run6_recon.tsv's, plus a second reconciler on 2-3 lines to re-measure err_R), then re-run kp/nom_test.py unchanged with e = the measured err_R, ~$7.5
+- printed decipherment, if any - blocker: not-attempted; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened (SEURE-WEB); next: orchestrator queues a LOCAL-QUEUE row for both, ~$0.3
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (RUN6-SEURE, 5 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [ ] clear-pages: 44's clear text vs 43's cipher; both models non-tests at err_2reader 0.484; reconciliation pilot err_R 0.08 on 2 lines (RUN6-SEURE); needs the other 18 lines reconciled
+- [ ] known-keys: no Henri II-era French key (Tomokiyo's Henri II pages, Lasry GL) tried on Seure yet
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 2 internal gaps; cheapest next: reconcile f81R L01-03, L05, L07-20 (18 Sonnet calls + 1 unit), re-measure err_R on a sample, re-run kp/nom_test.py unchanged, ~$7.5
