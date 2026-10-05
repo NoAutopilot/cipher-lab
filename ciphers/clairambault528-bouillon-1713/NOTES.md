@@ -74,6 +74,27 @@ enquiry) stands unchanged; still blocked, waiting on the owner.
 Waits on a BnF reading-room visit or reproduction enquiry for Clairambault 528, "blocked, waiting on you"
 since 24 Sept 2026, unchanged through the 26 Sept 2026 NX-UNBLOCK check.
 
-- Full-text search Cardinal de Bouillon's own Mémoires (19th-c. ed.) on archive.org for this 1713 exile affair -- flagged as unrun. S, tools/print_check.py.
+- [x] Full-text search on archive.org (5 Oct 2026, D2-CL528): no memoir by the cardinal exists on IA; "Clairambault 528" 0 hits in all IA full text and Boislisle's Saint-Simon; see section above. Remaining: Boislisle p. reading, 1923 Clairambault catalogue (not on IA).
 - Run the open-index scholarship pass (Persée, OpenAlex, HAL) for "cardinal de Bouillon" 1713 exile correspondence chiffre, beyond the generic web search already tried. S.
 - Re-read the finding-aid description to judge whether this item (lowest-confidence of the M26/M27/M28 siblings) is a substantial cipher or a short annotation, before the reproduction request is escalated. S.
+
+## Edition search: Bouillon / Clairambault 528 on IA full text (D2-CL528, 5 Oct 2026, 23:55-00:00 UTC by date -u)
+
+Search results only (rule 10). Premise correction: the WAIT-PASS-A line says "Cardinal de Bouillon's own Mémoires (19th-c. ed.)";
+IA advancedsearch (title Bouillon + mémoires/cardinal) lists no memoir by the cardinal himself. The "Mémoires" hits are other Bouillons
+(Saumières 1708 *Mémoires du duc de Bouillon et du vicomte de Turenne*, `mmoiresdemonsi00saum`; Henri de La Tour d'Auvergne 1901,
+`mmoiresduvicom00boui`), plus 1706 *Apologie du cardinal de Bouillon* (`bub_gb_LYRzh_02ot0C`, `bub_gb_gKCVR89k_EkC`) and a 1710 English
+*Collection of some letters ... concerning ... the Cardinal de Bouillon* (`bim_eighteenth-century_a-collection-of-some-let_1710`) -- all
+pre-1713 or other persons, not opened. The 19th-c. edition that discusses his 1710s affair is Boislisle's Saint-Simon *Mémoires*.
+
+be-api fts (all items), exact phrases, 0 hits each: "Clairambault 528", "Clairambault, 528", "Clairambault, t. 528", "Clairambault, vol. 528",
+"ms. Clairambault 528", "Clairambault 528" cardinal; "Clairambault 528" Bouillon restricted to `memoiresdesaints14sain` (Saint-Simon/Boislisle vol. 14, which
+carries the cardinal's letters p.525ff and "Le cardinal de Bouillon et Baluze"): 0. Loose (non-phrase) queries return Boislisle's
+Saint-Simon volumes (`memoiresdesaints04sain`, `07sain`, `14sain`, `mmoires07sainuoft`, `mmoires14sainuoft`) citing *other* Clairambault volumes
+(290, 303, 664, 733) for the cardinal, never 528; no hit for "lettre chiffrée"/"en chiffre" tied to a Bouillon 1713 letter in any edition surfaced.
+Google Books API (country=US, key): `"Clairambault 528" Bouillon`, 12 items, snippets are index noise (Colbert *Lettres* vol. 430 fol. 208, Almanach de la Cour,
+Lorraine 1909, etc.); none names Clairambault 528 with the cardinal. The 1923 *Catalogue des manuscrits de la collection Clairambault* appears
+in Google Books (no snippet); not found on IA (advancedsearch, 0 rows), so the volume's own item list was not read.
+Not done (not in this job): Persée/OpenAlex/HAL pass, reading the Boislisle pages themselves, scanning the 1710 letters collection.
+Result: no print of this item or a decipherment of it located by these methods on 5 Oct 2026; conditional on OCR (all text-layer, no page images).
+Requests: archive.org advancedsearch 2, be-api 14, googleapis.com 1. No subagents.
