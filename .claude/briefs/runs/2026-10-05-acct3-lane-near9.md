@@ -11,5 +11,5 @@ Jobs, in order (verifiers are fresh sessions, never the solver of that reading; 
 4. Four key_crossmatch leads (ROOM 02:53-02:54 5 Oct): one ~$1 matched-control check each (does the cross key beat shuffled keys on the target?).
 5. NEXT-STEPS.tsv runnable backlog, S band first, known-plaintext rows first.
 Cap 60, box 600 min. Close with STATUS.md "LANE NEAR9 handoff" and one ROOM done line.
-ADD to job 1 (parent, 05:2x UTC): Gramont print check -- Weiss, Papiers d'état de Granvelle t.II (archive.org full text) for "evesque
+DONE BY PARENT, skip -- ADD to job 1 (parent, 05:2x UTC): Gramont print check -- Weiss, Papiers d'état de Granvelle t.II (archive.org full text) for "evesque
 de Tarbes", Villandry, 1530, chiffre (owner's HathiTrust search: 6 hits, all t.II; t.I already read, AUDIT.md row). ~$1. Log in AUDIT.md.

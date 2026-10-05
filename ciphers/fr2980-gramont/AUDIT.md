@@ -1904,3 +1904,8 @@ du cardinal Jean Du Bellay* v.1); **"evesque de Tarbes" Villandry: 6 results, al
 t.2 (1841/1852, several copies, full view)**. Weiss t.I was read for this audit (row above: Tarb 0, Villandr 0); **t.II was not**.
 Next (~$1): full-text check of Weiss t.II (archive.org copy) for "evesque de Tarbes"/Villandry/1530/chiffre -- the Imperial side
 held intercepted French dispatches, so an intercepted Gramont letter with a decipherment would sit there. Queued to LANE-NEAR9 job 1.
+Weiss t.II checked the same night by the account-3 orchestrator (IA full text, 5 copies fetched: bub_gb_768sAAAAQAAJ and
+bub_gb_4NZnAAAAMAAJ are t.III; papiersdtatduca00weisgoog, -03grangoog, -02grangoog): "1530" 0 and "Villandr" 0 in every copy; the
+only "évesque de Tarbes" hits (papiersdtatduca00weisgoog, 3) are a 1540s French royal letter naming "l'évesque de Tarbes, nostre
+ambassadeur" with the bishop of Brissac at the Emperor's court -- a later bishop of Tarbes, not Gabriel de Gramont's 1530 letters.
+Negative for this item; the NEAR9 job-1 addition is satisfied (no worker needed).
