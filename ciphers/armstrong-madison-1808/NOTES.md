@@ -4092,3 +4092,18 @@ condition's score = mean over the 15 units x 100. Also reported, not gated: exac
 on the 9 consensus units.
 **Gate.** PASS iff NEW score >= OLD score + 5 points AND no consensus unit loses a mark, where "loses" = max(NEW passes) < consensus
 <= max(OLD passes). FAIL otherwise: logged in HYPOTHESES.md with both numbers, flags stay off. One run, no re-tuning after the reads.
+
+## SLANT-CROP result (05 Oct 2026 04:56 UTC): GATE FAIL, flags stay off
+
+Four blind Sonnet passes as pre-registered (`slant/reads/`, key: old = setY, new = setX; `python3 slant/score_ab.py` ->
+`slant/ab_results.tsv`). Two-pass count agreement: OLD **92.7**, NEW **93.8** (+1.1 against a +5 gate); exact-count share 0.53 both;
+no consensus unit lost a mark. Not gated: mean |count - consensus| on the 9 consensus units 2.06 old vs 1.44 new, with most of that
+gain on p1f (old 28/37, new 38/42 vs consensus 39) and p3h (27/19 vs 24/28). The biggest change is on p3b (old 6/6, new 5/4 vs
+consensus 3), which moved toward the consensus too.
+Read with care (rule 3 headroom): the old crops already agree at 92.7, so a +5 gate had about 7 points of headroom. The
+disagreement left sits in the long multi-line units (p1f, p3d, p3h), where readers said their counts were approximate (+/-3).
+That is a counting-length limit, not a crop limit. Verdict: the crop flags are **untested by this metric at this N** (15 units,
+a near-ceiling baseline). This is not a refutation. Next instrument, if wanted: per-mark segmentation against the owner count page's boxes, or units
+cut short (one line, <= 10 marks), so that the agreement metric has room to move. Flags stay off by default (`--deskew`,
+`--mask-neighbours` are available opt-in). Owner count page generator: none in tools/ (it is `sorter/count/build_count_page.py`),
+so not touched. Five Sonnet calls (4 reads + 0 re-reads), no network.

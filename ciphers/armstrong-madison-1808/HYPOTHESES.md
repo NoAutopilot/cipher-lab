@@ -1392,3 +1392,8 @@ Logged: **untestable by this tool at N=369 (vocabulary prior, matched control 0.
 V1's wrong decode 470-550 nats above the true plaintext on every control (h73/diag_fixedpoint.tsv). V2 (vocabulary only)
 was not run: it is ARM-C1's sibling prior with one knob turned. This is the third attempt at the nomenclator objective
 here (ARM-C1, H27, H73), so the next attempt needs new material, not a further setting.
+
+## SLANT-CROP: deskew + mask-neighbours crops vs axis-aligned crops (05 Oct 2026 04:56 UTC)
+| family | control / baseline | target | gate | verdict |
+|---|---|---|---|---|
+| crop tool: `iiif_lines.py --deskew --mask-neighbours` vs old crops, 15 ms/glyphs disagreement stretches, 2 blind Sonnet passes each | OLD agreement 92.7 (exact 0.53; abs dev from 2-of-3 consensus 2.06) | NEW 93.8 (exact 0.53; abs dev 1.44); no consensus mark lost | NEW >= OLD + 5 | **FAIL**; the old baseline is near ceiling, so this is untested by this metric at N=15, not refuted. Flags stay default off |

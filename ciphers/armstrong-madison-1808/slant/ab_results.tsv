@@ -1,0 +1,20 @@
+stretch	unit	old_1	old_2	new_1	new_2	consensus
+p1d	u01	1	1	1	1	1
+p1e	u02	29	31	31	31	
+p1f	u03	28	37	38	42	39
+p1g	u04	8	8	8	8	
+p2a	u05	23	24	20	22	25
+p2b	u06	6	6	6	6	8
+p2c	u07	5	6	5	6	5
+p2e	u08	14	14	13	13	
+p2g	u09	5	5	5	5	6
+p2i	u10	5	5	5	5	
+p3b	u11	6	6	5	4	3
+p3c	u12	8	9	8	9	
+p3d	u13	20	24	21	24	
+p3h	u14	27	19	24	28	27
+p4a	u15	1	1	1	1	1
+#score	92.7	93.8
+#exact	0.533	0.533
+#consensus_mean_abs_dev	2.06	1.44
+#lost	-

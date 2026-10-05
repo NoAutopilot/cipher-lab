@@ -1,0 +1,16 @@
+unit	count	marks
+u15	1	short slanted stroke at left edge
+u14	19	wave | 3 | wave | 3 | wave | S | c | wave | hook | r | wave | small circle | % | dash | dash | wave | 3 | wave | 3
+u13	24	wave | 3 | wave | y | wave | S | wave | I | y | hook | 7 | small curl | r | slash | wave | slash-dot | dash | Z | wave | y | wave | c | 3 | wave
+u12	9	hook | wave-y | 1 | 1 | wave | curl | wave | S | wave
+u11	6	wave | Z | wave | y | Z | section sign
+u10	5	slash | brace | wave | epsilon | double dash
+u09	5	plus | wave | 3 | wave | 3
+u08	14	3 | wave | wave | 3 | wave | wave | wave | double dash | slash-dot | wave | wave | S | wave | 3
+u07	6	brace | wave | 1 | 1 | wave | brace
+u06	6	wave | slash | Z | tick | wave | wave-dot
+u05	24	wave | dash | 3 | double dash | wave | wave | wave | slash | Z | wave | y | wave | slash | double dash | 3 | s | 3 | Z | 4 | slash | dash | 1 | 1 | dash-brace
+u04	8	wave-dot | slash-dot | arc | curl | 3 | Z | 3 | hook
+u03	37	many small waves, curls and slashes (approximate count)
+u02	31	many small waves, curls and slashes (approximate count)
+u01	1	small 3 with tick

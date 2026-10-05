@@ -1,0 +1,16 @@
+unit	count	marks
+u01	1	loop with tick
+u02	31	approximate: crop a 19 (hook | tailed hook | 3 | hook | paren | slash | 3 | hook | wave | s | hook | tailed hook | hook | 3 | 3 | hook | s | slash | 3-tick) | crop b 12 (2 | hook | wave | slash | 3 | hook | wave pair | s | 3 | hook-dash | slash | end)
+u03	38	approximate: crop a 18 | crop b 20 (short hooks, waves, slashes, 3-forms)
+u04	8	hook-dot | slash | arc | hook-dot | tailed hook | 3 | 3 | s
+u05	20	crop a 1 hook | crop b 17 (dash | tailed hook | = | hook-dot | arch | wave | slash | I | wave | wave | slash | = | tailed hook | s | 3 | 3 | s-slash) | crop c 2 (hook | s)
+u06	6	wave | slash | Z | vertical tick | hook | hook-dot
+u07	5	s | hook | double stroke | hook | 3-curl
+u08	13	crop a 11 (tailed hook | hook | hook | 3 | hook | hook | hook | = | slash | hook | s) | crop b 2 (hook | 3)
+u09	5	f | hook | 3 | hook | s
+u10	5	slash | 3 | hook | epsilon | =
+u11	5	crop a 4 (hook | wave | I | wave-y) | crop b 1 (section sign)
+u12	8	arc | wave-y | double stroke | hook | arch | hook-dot | s | hook
+u13	21	crop a 8 (hook | 3 | wave | hook | s | hook | I | wave-y) | crop b 13
+u14	24	crop a 8 | crop b 16
+u15	1	tick at left
