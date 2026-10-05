@@ -162,3 +162,24 @@ reconciliation unit by you; stop before a unit that crosses 80% of cap or box. I
 the reader's word equals one reconciled candidate or the image shows it clearly to you as well; record per word. If the control
 fails: the line-strip instrument is logged and the step is [retired] with the instrument named (rule 3 third-attempt clause); no
 grade changes. Update Remaining gaps / Escalation and pass gaps_check.
+
+# Wave 3 (written 21:2x UTC)
+
+### DEF1-1411 -- decode-1411-hhsta-vienna-1600, pre-registered r-at-residue-21 table on unused numerals (cap 7, box 75 min;
+### 2 blind Opus passes x ~2 + 1 reconciliation + scoring)
+Intake gate (21:2x UTC): `decode-1411-hhsta-vienna-1600: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md "Next step" (after line 334) and "CORP-DE16 step": pre-register r at residue 21 as an alternative table beside the frozen one
+(both frozen in PREREG-DEF1-1411.md, committed and pushed BEFORE any new numeral is read), then cut (mandatory crop step, paste the
+`tools/iiif_lines.py` command; crops < 2500 px) and read the unused numerals (p.2 left lower half, p.2 right page) in two blind Opus
+subagent passes, reconcile, and score both tables with the shuffled-target and shifted controls already used in this folder; report
+under de1600 the decode beside the leaf's own gloss score (-1.423) and the shuffled controls (rule 3 ZX-DEC349 shape), not against
+real_p05 alone. Before scoring the target, score the frozen tables' decode of a shuffled copy of the new numerals through the same
+judge (rule 3 ARM-C1): a PASS on the shuffled decode voids the judge as a gate here. No grade moves unless the pre-registered gate
+passes; grades per rule 4. Update Remaining gaps / Escalation; gaps_check passes.
+
+### DEF1-ECK62P -- eckert-1862, print-check of two word-clean readings + the Lehigh key-page check (cap 3.5, box 40 min)
+Intake gate: as DEF1-ECK62I. NOTES.md Verdict (DEF1-ECK62I): (1) print-check the 2 word-clean print-free readings (9910.423,
+9971.546) against OR vols. 41-46 (IA full text; script, not a model reading volumes -- Usage 2); (2) check the Lehigh row on the mssEC
+41 key page image (key.md p.17 l.6, Hurlbut) -- one page fetch from the Huntington IIIF route DEF1-ECK62I used, crop the row
+(mandatory crop step), read it; record key-vs-print as a rule-4 data conflict with witnesses if it persists (never settled by
+majority). Update Remaining gaps / Escalation; gaps_check passes; decode --check before push.
