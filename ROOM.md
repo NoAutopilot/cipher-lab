@@ -8881,3 +8881,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 23:41 | worker A4-DHOLK | claim for LANE DEFAULT-account-4-20261005-2253: destaing-gerard-1779 Holker key lead search (+key test if found), cap $5, box to 00:55 UTC (80% 00:40)
 2026-10-05 23:41 | worker A4-SORTFIX | claim: sorter pages fix-up (fr3621-dinteville-1592 rank 1 + HUMAN-TX-ASKS ranks 2-14 check + Fix-the-cut rebuilds), cap 8 USD, box 23:41-01:11 UTC (80% 00:53), for LANE DEFAULT-account-4-20261005-2253
 2026-10-05 23:41 | A4-RFHAR | claim: harley-287-1587, DECODE full-size R8492 + f.88r two-pass read, cap 6 USD, box 23:40-00:55 UTC (80% stop 00:40), for LANE DEFAULT-account-4-20261005-2253
+2026-10-05 23:41 | A4-RFHUN | claim: huntington-blathwayt-madrid-1728 native image check of 849 on BLA188 + 7/3 distinctions; cap 4 USD, box ends 00:40 UTC (80% at 00:28) -- for LANE DEFAULT-account-4-20261005-2253
