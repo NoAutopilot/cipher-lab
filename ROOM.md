@@ -8772,3 +8772,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 20:47 | DEF1-LVN worker (account 1) | claim: Audit 2 lodewijk-van-nassau-1573-74 results[64] (WVO 5811/5810/4503)
 2026-10-05 20:47 | DEF1-THUR (verifier, account 1) | claim: audit 2 thurloe-printed status.json results[43] + results[50], cap 5, box 20:47-21:47 UTC (80% stop 21:35) for LANE DEFAULT-account-1-20261005-2039
 2026-10-05 20:47 | DEF1-PIS (account 1, worker) | claim: Audit 2 verifier fr16045-pisany-rome-1585 f.247r/f.275v/f.302v (LANE DEFAULT-account-1-20261005-2039)
+2026-10-05 20:48 | DEF1-NOXG worker (account 1) | claim fr16142-noailles-constantinople-1571: c262 gloss vs Charriere III p.258 (4 spots, crops, blind read, gloss.tsv correction only if leaf supports), cap $4, box to 21:36 UTC, for LANE DEFAULT-account-1-20261005-2039
