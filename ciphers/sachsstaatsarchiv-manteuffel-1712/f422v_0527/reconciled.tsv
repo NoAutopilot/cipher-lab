@@ -1,0 +1,47 @@
+run	page	crop	codes	gloss	gloss_grade	note
+1	f.422v	L_L01	585.515.485.513.586.613.482.583	ses propositions	M	gloss seen by reconciler only (zoom), over 485-586
+2	f.422v	L_L01	534.235.714.230.107.584.386.253	plus d'un commissaire	M	one line (passes split it at the crop edge); 'plus' over 534, 'd'un commissaire' over 714.230.107; A read 230?, B 384 for the 1st code of the right half -- zoom 584
+3	f.422v	L_L01	864.414.464.416	le Roy de Prusse luy	C	both passes 'le Roy de Prusse' over 864; 'luy' over 414 (reconciler)
+4	f.422v	L_L02	357.68.877.285.873	nommera dona Bartholdi et	M	gloss poorly legible (A 'nommé dona Bartholdet', B 'nomm. dona Bertholdet'); 873 B and zoom, A 973
+5	f.422v	L_L02	868	Ilgen	M	run missed by both passes; code read 868 on zoom (could be 98 with a lead stroke: key.tsv 98 = Ilgen); 'le pauvre Ilgen'
+6	f.422v	L_L03	214.286.253.717.345.237.588.384.64	confere quake tour de style	M	wraps 717 | 345; gloss doubtful in both passes and zoom; 64 B/zoom, A 69
+7	f.422v	L_L03	898	Ilgen	M	'il n'y eut que 898, dit on, qui parla'; gloss 'Ilgen' in the margin beside it, a second word over the code illegible; elsewhere 898 = l'Empire 4x on this leaf -- code or gloss placement doubtful; kept as read (conservative for the gate)
+8	f.422v	L_L03	521.402	parla	C	both passes
+9	f.422v	L_L03	238.304.312.200.45.612.602.193.364.312.67.109.401.610.253	difficultes les difficultes	M	wraps 200 | 45; 'difficultés' over 238.304.312 and again over 193.364.312 (312 in both); 304 B/zoom, A 309
+10	f.422v	L_L04	877	Bartholdi	M	gloss over 877 read on zoom only; key.tsv 877 Bartholdi M (GAPS195)
+11	f.422v	L_L04	625.282.403.583.515.485.240.442.237.737.297.583	toutes les propositions ou ministre de l'Empereur elles	M	wraps 515 | 485; 583 B/zoom, A 585; 'l'Empereur' over 737 (GAPS195 word hint 737 l'Empereur)
+12	f.422v	L_L05	898	l'Empire	C	both passes
+13	f.422v	L_L05	401.115.341.240.447.489	la guerre du nord	C	wraps 341 | 240; 'nord' over 240 (GAPS195: 240 inside 'du nord'); 341 B/zoom, A 941
+14	f.422v	L_L05	939	le Mecklenbourg	C	both passes
+15	f.422v	L_L06	416.447.330	marge	M	gloss doubtful (both passes 'marge?')
+16	f.422v	L_L06	544	provinces	M	gloss over 544 read on zoom only
+17	f.422v	L_L06	231.386.155.311.513.654.110.285.276.447.242.253.16.143.551.584.653.434.253	courir au feu pour l'eteindre avant qu'il s'augmente	M	wraps 110 | 285; 110 faint (A 110?, B cut); 16 A/zoom, B 18
+18	f.422v	L_L07	402.459.237.848	la neutralite de l'Empire	M	wraps 402 | 459; 848 both passes (could be 898 = l'Empire; not settled)
+19	f.422v	L_L07	151.141.184.560.714.163	assembler une armee	C	both passes; 184 B/zoom, A 187
+20	f.422v	L_L07	864.284.143.610.403.539.65.537.94.253	le Roy de Prusse estant le plus a portee	C	both passes
+21	f.422v	L_L07	636.285.403.539.235.378.281.284.115.100.161	lequel et le plus de interest a l'affaire	M	first gloss word doubtful
+22	f.422v	L_L08	227.148.560.610.467.642.401.482.584.564.389.275.562.560.272.588.384	concert aussi profit entrer en suitte	M	wraps 389 | 275; 584 B, A 514?; 389 B/zoom, A 384
+23	f.422v	L_L08	235.155.620.583.542.197.82.237.898	d'Angles puissances de l'Empire	M	'de l'Empire' over 237.898 (both passes)
+24	f.422v	L_L08	589.351.447.181.560.447	le C. Schonborn	M	gloss doubtful (B 'M. Schonborn', A 'Schomborn?')
+25	f.422v	L_L08	508.237.563.272.517.485.492.281.428.551.284.477.602.548.737.449.403.237.584.6xx.281.447.522	solde de rien monsieur mais qu'il etoit sur que l'Empereur ne le desavoueroit	M	wraps twice; 403 A/zoom, B 903; one code under a blot (6xx) dropped from pairs; 'l'Empereur' over 548.737
+26	f.422v	L_L08	754	S.M.	M	gloss 'S.M.' over 754 on zoom only (key.tsv 754 le Roi de Pologne; S.M. = Sa Majeste compatible)
+27	f.422v	L_L08	783.285.844	Czar et son Roy de Danemarc	M	gloss on zoom only, doubtful; 783 B/zoom, A 283
+28	f.422v	L_L09	825.585.642.401		M	gloss illegible; codes doubtful (A 861?.585.642.401, B 881.385.042.401)
+29	f.423	R_L01	898	l'Empire	C	both passes
+30	f.423	R_L01	864	le Roy de Prusse	C	passes saw the gloss but placed it over 898; zoom: it sits over 864, one line lower
+31	f.423	R_L03	357	Ilgen	C	A Hyen?, B Dyen?, zoom Ilgen (key.tsv 357 Ilgen C, RUN5-MANT5)
+32	f.423	R_L03	99	K	M	single letter
+33	f.423	R_L04	402.604.247.44.214.73	pour la Suedoise conference Ilgen	M	402 B/zoom, A 407; 'Ilgen' over 73 (GAPS195 conflict: 73 Ilgen vs Krauske)
+34	f.423	R_L04	496.492.389.384.107	oppositions	M	gloss over 496-384; 107 B/zoom, A 167
+35	f.423	R_L04	197.548.237.660.242.497	a que dependroit	M	wraps 242 | 497
+36	f.423	R_L04	100.163.588.261.496.253.82	l'armee suedoise Schonborn	M	one line split across the crop edge (A 504.261.446.353.82 + 100.103.388; B 504.261.440.353.82 + 100.103.388.201.190.255); zoom 100.163.588.261.496.253.[blot].82; 'Schonborn' over 82 (GAPS195 conflict: 82 Schonborn vs Krauske)
+37	f.423	R_L05	898	l'Empire	C	both passes
+38	f.423	R_L05	539	plus	C	both passes
+39	f.423	R_L05	703.237.341.272.898	de guerre dans l'Empire	M	wraps 703 | 237; zoom could read 403; GAPS195's 0528 has 79.237.341.272.898 'de guerre dans l'Empire'
+40	f.423	R_L06	583.716.143.613.371.331.542.282	et trois	M	gloss doubtful
+41	f.423	R_L06	235		M	small gloss ('bona'?) illegible
+42	f.423	R_L06	107	Schonborn	C	both passes
+43	f.423	R_L07	107	Schonborn	C	both passes
+44	f.423	R_L07	98	Ilgen	C	A Hyen, B Dyen?, zoom Ilgen
+45	f.423	R_L07	100.163.237.932.82	l'armee suedoise Schonborn	M	one code under a blot between 163 and 237 dropped; 100 zoom (A 102, B 402)
+46	f.423	R_L08	209.644.560.237.319	trouver le faim	M	gloss doubtful

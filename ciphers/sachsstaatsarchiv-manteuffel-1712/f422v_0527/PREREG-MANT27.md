@@ -23,3 +23,9 @@ Licensed on PASS (GAPS195 shape): only single-code glosses (code under its own g
 read is M; multi-code chunks stay M in leaf_values_0527.tsv, not key.tsv. A gloss contradicting an existing key.tsv value is not
 overwritten: logged in HYPOTHESES.md as a data conflict with both witnesses (rule 4). Single-code glosses vs existing key.tsv
 values reported (agree/disagree) as a known-answer side check, not a gate.
+
+## Addendum (5 Oct 2026, 23:40 UTC by date -u), after reconciliation, before any alignment or score
+Abbreviations in this leaf's reconciled glosses: "S.M." (run 26) and "le C." (run 24). Neither is added to the normalisation (no
+second occurrence on this leaf or in gloss_norm.tsv's sources to fix an expansion); gloss_norm_0527.tsv is not created. The code
+under a blot in runs 25, 36 and 45 is dropped from cipher_raw (unreadable), the run otherwise kept. Runs 5 and 7 (codes 868 / 898
+glossed "Ilgen", where 98 = Ilgen in key.tsv and 898 = l'Empire elsewhere on this leaf) are kept as read, not repaired.
