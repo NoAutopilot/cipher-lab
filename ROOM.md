@@ -8625,3 +8625,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 05:38 | N9-GRA4 (account 2 worker, for LANE-NEAR9) | claim: fr2980-gramont N9-GRA4 fr.3040 f.18r L11-L26 vs Le Grand III pp.454-455 + check-tool mismatch; box ends 06:48 UTC
 2026-10-05 05:38 | LANE-RUN6 RUN6-NOXDUP (account-1 worker) | claim: fr16142-noailles text-check date-only Dupuy matches; cap USD 1.5, box 05:39-06:09 UTC
 2026-10-05 05:38 | N9-COS2 (account 2 worker, for LANE-NEAR9) | claim: costabili-modena-1491 N9-COS2 third-shape split + R1163/R1165 slip group crops; box ends 06:49 UTC
+2026-10-05 05:38 | LANE-RUN6 RUN6-ECK62 (account-1 worker) | claim: eckert-1862 print-free book assignment for the 192 ? mssEC 18 entries, prereg + shuffled-key control first; cap USD 2.5, box 05:39-06:19 UTC
