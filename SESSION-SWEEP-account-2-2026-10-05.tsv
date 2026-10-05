@@ -1,0 +1,429 @@
+session_id	title	target	last_active	verdict	action	commit
+session_01J69aWeq2QaUGpDPaxaYDW4	LIVE parent worker DEFAULT-account-2-20261005-2217 (default lane: VERIFY-BACKLOG first, then next steps)		2026-10-05T23:13	skipped	skipped-live (this session / live lane inside its box)	36d20c9c1
+session_01WbvFeG6Ae2DeaRUyyToe6m	LIVE parent worker SESSION-SWEEP-account-2 (every chat on this account pushed to GitHub)		2026-10-05T23:13	skipped	skipped-live (this session / live lane inside its box)	
+session_017E8NVaLGF23Wd9DtaiA91T	LIVE dispatcher (account 2) · hourly WORK-QUEUE poller (was parent 7n)		2026-10-05T23:10	pushed	done line in ROOM.md with commit on origin/main	ddb278b96
+session_01PhSoTvEMEhYjg6A5A6tRvA	LIVE parent worker LANE-VER1 (standing verifier lane, oldest Audit-1-only readings first)		2026-10-05T19:49	pushed	done line in ROOM.md with commit on origin/main	dcd483ba3
+session_01FVSv1yhQz5doFrdfehV7o5	VER1-LOWC verifier (rah-canada, trew-posthius, antt-fcc audit 2)	trew-posthius-1614-18,antt-fcc-costacabral-1865	2026-10-05T19:38	pushed	done line in ROOM.md; commit found on origin/main by label	9bfbe036c
+session_01WPsYJaWpcs6HGDiCo1x8KL	VER1-LOWA verifier (fr5160, clair1067, clair1108 audit 2)		2026-10-05T19:17	pushed	done line in ROOM.md with commit on origin/main	25acc6397
+session_014WjTtHUkKixguutMJm3vip	VER1-LOWB verifier (dupuy452, clair349, gunther audit 2)	dupuy452-carpi-1520,clair349-este-guise-1556,gunther-van-schwarzburg-1561	2026-10-05T19:14	pushed	done line in ROOM.md with commit on origin/main	bc60649b2
+session_01WbeVzsspbUmsAZ8cp5FJoV	VER1-PIS verifier (Pisany known-answer pages)	fr16045-pisany-rome-1585	2026-10-05T19:03	pushed	done line in ROOM.md with commit on origin/main	ce64eea52
+session_01BMKgxsTiiXMcMA3XM44zWx	VER1-REG verifier (Schonenberg register, Janssens + Gonzague audit 2)	fr3993-gonzague-nevers-1595	2026-10-05T18:49	pushed	done line in ROOM.md with commit on origin/main	9f2b882c4
+session_01PmW7n4JdZJBcrHBaDpAZ1i	VER1-NOX verifier (Noailles basin audit 1)	fr16142-noailles-constantinople-1571	2026-10-05T18:49	pushed	done line in ROOM.md; commit found on origin/main by label	ac22c6416
+session_011p4QPJ8tUj9t9WLy97NL1v	VER1-SYNC register reconciliation		2026-10-05T18:42	pushed	done line in ROOM.md with commit on origin/main	bb11b817a
+session_01ENGSf91QreSQfTpaEGRNHp	VER1-C1161 verifier (Clairambault 1161 audit 2 + count)	clair1161-avis-flandre-1688	2026-10-05T18:37	pushed	done line in ROOM.md with commit on origin/main	019accea8
+session_019ESs9bcrBPwp7VVV4zjgKp	VER1-COS verifier (Costabili 1491)	costabili-modena-1491	2026-10-05T18:36	pushed	done line in ROOM.md with commit on origin/main	0b590779d
+session_017QymPyiMyH1SA7cJyvVoDD	VER1-VIV verifier (Vivonne ink 53/54/63 audit 2 + depth)	fr16104-vivonne-spain-1572	2026-10-05T18:31	pushed	done line in ROOM.md; commit found on origin/main by label	5f03f9ff2
+session_012iZ1x8WqdQaDjdhT5zgATR	VER1-PAG verifier (Paget 1714 audit 2 + count)	clairambault1225-paget-1714	2026-10-05T18:30	pushed	done line in ROOM.md with commit on origin/main	0f461804a
+session_01Nauit2Mk1z28Mf8vYBx2kk	VER1-GRA verifier (Gramont f.18r + fr.3040 no.6)		2026-10-05T18:27	pushed	done line in ROOM.md with commit on origin/main	80156c2a8
+session_011SW24uoRbdvoyBAWiy9m98	LIVE parent worker LANE-NEAR9 (verifiers Gramont and Costabili, Thurloe depth, crossmatch leads, backlog)		2026-10-05T06:28	pushed	done line in ROOM.md with commit on origin/main	7965ba11
+session_01B6tsAesNeqH8qiRTPNu4Sw	N9-MANT2 manteuffel frames 0504-0578		2026-10-05T06:10	pushed	done line in ROOM.md with commit on origin/main	bc4255ee
+session_01BA3thqUURvhDTq6Qf6ff3Z	N9-BAL3 baluze f.110r anchors	baluze167-davaux-1637	2026-10-05T06:08	pushed	done line in ROOM.md with commit on origin/main	5a208d5d
+session_01LjjKdnCwDVTiEserM8EPGD	N9-COSVW verifier costabili W=t	costabili-modena-1491	2026-10-05T06:07	pushed	done line in ROOM.md; commit found on origin/main by label	ee97afbe7
+session_01TtPXB3j2MB948b9LLm7BDR	N9-XMFIX key_crossmatch controls		2026-10-05T05:53	pushed	done line in ROOM.md with commit on origin/main	d7e51949
+session_01SruYXnS6hq2rs2Dmq1FZPX	N9-COS2 costabili slips	costabili-modena-1491	2026-10-05T05:51	pushed	done line in ROOM.md with commit on origin/main	0c150c16
+session_01D3MX4ip6h6VRKC2uNL6kgE	N9-BAL2 baluze c511 vs F2		2026-10-05T05:50	pushed	done line in ROOM.md with commit on origin/main	aab16037
+session_01V6ZBvzCjHSzqDcUnvFJ5ng	N9-GRA4 gramont f.18r L11-26	fr2980-gramont	2026-10-05T05:45	pushed	done line in ROOM.md with commit on origin/main	c7234cca
+session_01Nvv38vWZzmBzDpvUpyv6Hy	N9-MANT manteuffel duplicates	sachsstaatsarchiv-manteuffel-1712	2026-10-05T05:42	pushed	done line in ROOM.md with commit on origin/main	75dc84c8
+session_011UFuz6Mp85C9CZm89jZEku	N9-GRAV verifier gramont ST	fr2980-gramont	2026-10-05T05:30	pushed	done line in ROOM.md with commit on origin/main	0bd30ee8
+session_014Fq4kLj8CVhWc9G7V4xiVc	N9-XM crossmatch controls		2026-10-05T05:26	pushed	done line in ROOM.md with commit on origin/main	e83752c4
+session_01KwYmbweH4Hmgj1YbnuHL3H	N9-BAL baluze168 glossed leaves		2026-10-05T05:25	pushed	done line in ROOM.md with commit on origin/main	a4f17155
+session_015SQem7y9Ly9gJH4G5VAPAy	N9-COSV verifier costabili	costabili-modena-1491	2026-10-05T05:25	pushed	done line in ROOM.md with commit on origin/main	4de54ee7
+session_016sBqiNjQCJNJvhPribBQaF	N9-GRAZ gramont z image check		2026-10-05T05:25	pushed	done line in ROOM.md with commit on origin/main	f56ca72e
+session_01YMkkkQMUJrBhmKhbhrf2Ek	N9-BUL bullet-tuscany image+thread	bullet-tuscany-1944	2026-10-05T05:24	pushed	done line in ROOM.md with commit on origin/main	a8eb6859
+session_01HcZrXzQiZna9e3nfwzFqh6	LIVE parent worker LANE-NEAR8 (known-plaintext NEXT-STEPS rows first, then backlog)	fr2980-gramont,thurloe-printed,costabili-modena-1491	2026-10-04T17:35	pushed	done line in ROOM.md with commit on origin/main	27c5e310
+session_019PhvkqTT33zxKjWZsr8EJm	N8-THUR2 thurloe 32/33/38 regrade (LANE-NEAR8)	thurloe-printed	2026-10-04T17:26	pushed	done line in ROOM.md with commit on origin/main	3774a327
+session_01LTBX1Kpg9AY5UZkkGKKTHt	N8-GRA3 fr2980-gramont f.18v-19r vs Le Grand (LANE-NEAR8)	fr2980-gramont	2026-10-04T17:21	pushed	done line in ROOM.md with commit on origin/main	ec93af5a
+session_01U7YrEYjW19My76Q9bfwBBr	N8-THR7 thurloe rule-7 re-derivation (LANE-NEAR8)	thurloe-printed	2026-10-04T17:20	pushed	done line in ROOM.md with commit on origin/main	b7673404
+session_01HGF6UcN8vjTez7amX8HyT5	N8-NOX2 noailles count-based key tie (LANE-NEAR8)		2026-10-04T17:11	pushed	done line in ROOM.md with commit on origin/main	4c5d72d9
+session_01SNRha81pVq7KLiAuvyxe8k	N8-GRA2 fr2980-gramont Le Grand p.399 vs fr.3040 (LANE-NEAR8)	fr2980-gramont	2026-10-04T16:51	pushed	done line in ROOM.md with commit on origin/main	b2161680
+session_01SeD1cHTkNG4CbL3RQM9842	N8-COS costabili group-level crops (LANE-NEAR8)	costabili-modena-1491	2026-10-04T16:50	pushed	done line in ROOM.md with commit on origin/main	3d0fde2b
+session_01D48WvcYoVdJkKxvxiDTXji	N8-NV05B fr15575 f.228 L05-L08 vs gloss (LANE-NEAR8)		2026-10-04T16:50	pushed	done line in ROOM.md with commit on origin/main	8ebcf71f
+session_01V2uTxiohAohCa5amgBnwkC	N8-NOX fr16142-noailles basin test (LANE-NEAR8)		2026-10-04T16:49	pushed	done line in ROOM.md with commit on origin/main	29a256ef
+session_017ioampjgQFcuQC8afPsxdk	N8-SEU fr3151-seure-1558 nomenclator alignment (LANE-NEAR8)	fr3151-seure-1558	2026-10-04T16:48	pushed	done line in ROOM.md with commit on origin/main	7e3ff54c
+session_01D419s2CPFT7jSZmJ5qTmXQ	N8-THUR thurloe boundary test new pages (LANE-NEAR8)	thurloe-printed	2026-10-04T16:42	pushed	done line in ROOM.md with commit on origin/main	72444fb3
+session_01BTv5oNjDB23nhLPpJw9gQh	N8-GRA fr2980-gramont known plaintext (LANE-NEAR8)	fr2980-gramont	2026-10-04T16:26	pushed	done line in ROOM.md; commit found on origin/main by label	e602e1111
+session_01Q9HeJCooFRgmTSmiKJtnLN	N8-BAL baluze167 f.246-247 known answer (LANE-NEAR8)		2026-10-04T16:24	pushed	done line in ROOM.md with commit on origin/main	fc597be1
+session_019uEeyJZ7dyUwrfwPSVemjU	N8-BIRNUM birago-fr3252 numeral codes vs clear (LANE-NEAR8)	birago-fr3252-1571-72	2026-10-04T16:23	pushed	done line in ROOM.md with commit on origin/main	433a6233
+session_012GACV99HN9EGbvRY12YcfZ	N8-NV05 fr15575 f.228 gloss re-read (LANE-NEAR8)	fr15575-syllabic-1592-95	2026-10-04T16:22	pushed	done line in ROOM.md with commit on origin/main	2417b709
+session_011jxC5ygqRnFKn5qTCJAPNz	LIVE parent worker LANE-NEAR7 (Vivonne D1 to D2 via cleaner transcription, ink 63 gap, ink 52, Hellen, backlog)		2026-10-04T14:10	pushed	done line in ROOM.md; commit found on origin/main by label	315b16499
+session_01DKmnn3kNZW5z46AA3cBtLn	N7-VIV54R ink 54 col-u relabel		2026-10-04T13:52	pushed	done line in ROOM.md with commit on origin/main	9210e52f
+session_01MndHeTn7pM21qiyb4zUShP	N7-HEL86 Hellen R4386 blank-cell test	hellen-frederick-1752	2026-10-04T13:25	pushed	done line in ROOM.md with commit on origin/main	4958d37b
+session_01QRR8QnYAQkTzJA4Zbn6jyk	N7-VIV54Q ink 54 qae key question	fr16104-vivonne-spain-1572	2026-10-04T13:24	pushed	done line in ROOM.md with commit on origin/main	3ded771b
+session_01FyuCcXK466XaxQk1xzUT2X	N7-LKTOOL lookalike windows subcommand		2026-10-04T12:59	pushed	done line in ROOM.md; commit found on origin/main by label	439e106a8
+session_012buHqYTQEY8pnhk3x8KYTT	N7-HELBC Hellen R4388 blank-cell test	hellen-frederick-1752	2026-10-04T12:51	pushed	done line in ROOM.md with commit on origin/main	1c8e6c67
+session_01LfAkDbnJqZkszLWa81BTNn	N7-VIV63G ink 63 gap + key table		2026-10-04T12:50	pushed	done line in ROOM.md with commit on origin/main	c8c6983d
+session_01CxJjbcEYbwkcyAmDSQ2gXQ	N7-VIV53L ink 53 lookalike pass		2026-10-04T12:47	pushed	done line in ROOM.md with commit on origin/main	a5bf893d
+session_01MyAiDkirinfovHV9JyuYYR	N7-VIV54L ink 54 lookalike pass		2026-10-04T12:38	pushed	done line in ROOM.md with commit on origin/main	2293e372
+session_01FHN1r5gaeWEbysdpTzidiB	N7-HELDK Hellen R4386/R4388 dockets	hellen-frederick-1752	2026-10-04T12:24	pushed	done line in ROOM.md with commit on origin/main	91f7cc4a
+session_019jKS1wURJVECZN9M5sEAPj	LIVE parent worker LANE-NEAR6 (Vivonne pieces 52/53/63 with the proven key, NEAR5 follow-ups, backlog)		2026-10-04T11:56	pushed	done line in ROOM.md; commit found on origin/main by label	f9409b161
+session_01PegvkuTQKFsCrpdrYkEBF9	N6-VIV63C Vivonne ink 63 ff.193v-194r (LANE-NEAR6)	fr16104-vivonne-spain-1572	2026-10-04T11:47	pushed	done line in ROOM.md with commit on origin/main	36de39f5
+session_014DkNfpjip5cBJRkLJu7TNp	N6-VIV63B Vivonne ink 63 ff.192r-194r (LANE-NEAR6)	fr16104-vivonne-spain-1572	2026-10-04T11:08	pushed	done line in ROOM.md with commit on origin/main	1d9a6dd0
+session_015HbeZpfchj8cX3y4pQis9b	N6-VIV53B Vivonne ink 53 f.171v (LANE-NEAR6)	fr16104-vivonne-spain-1572	2026-10-04T11:03	pushed	done line in ROOM.md with commit on origin/main	d2acd3d7
+session_01HG2FyDWxAGAqFT3v4a8Cng	N6-HEL81 Hellen R4381-R4408 contact sheet (LANE-NEAR6)	hellen-frederick-1752	2026-10-04T11:01	pushed	done line in ROOM.md; commit found on origin/main by label	77c0c40da
+session_01X9Xm1xn7jzNnuTEXSPAShH	N6-VIV63 Vivonne ink 63 read (LANE-NEAR6)	fr16104-vivonne-spain-1572	2026-10-04T10:36	pushed	done line in ROOM.md with commit on origin/main	cb382868
+session_01Mx2S8QwPJkoqQJ43NorhHr	N6-HEL76 Hellen R4376 vs R1049 (LANE-NEAR6)	hellen-frederick-1752	2026-10-04T10:29	pushed	done line in ROOM.md with commit on origin/main	a6f0668b
+session_01DZP3wUVDg5wpcime4AgHfR	N6-VIV53 Vivonne ink 53 read (LANE-NEAR6)	fr16104-vivonne-spain-1572	2026-10-04T10:29	pushed	done line in ROOM.md with commit on origin/main	9af8ad2d
+session_01XkpE48tCDJyCndUQBE2CMk	N6-KERV Kervyn 1884 grep (LANE-NEAR6)		2026-10-04T10:17	pushed	done line in ROOM.md; commit found on origin/main by label	648cc7eb2
+session_012hS4hPgLzzQfHLW7vuq5KC	LIVE parent worker LANE-NEAR5 (Vivonne known-plaintext, Paget to audit, hellen gaps, NEXT-STEPS backlog)		2026-10-04T09:25	pushed	done line in ROOM.md; commit found on origin/main by label	368a5f900
+session_019dyzY5dQQvR7qXPmCLcqWP	N5-VIV54 Vivonne piece 54 read with key.tsv	fr16104-vivonne-spain-1572	2026-10-04T08:49	pushed	done line in ROOM.md with commit on origin/main	faa1ff17
+session_018ojo4SwjYv3aE9dkbqZoB9	N5-VIVTAB Vivonne per-letter decipherment table		2026-10-04T08:11	pushed	done line in ROOM.md; commit found on origin/main by label	48a59504e
+session_015bU2J3mZhALKtJgr1qqf2W	N5-HEL7 hellen codes 1-800 key-rebuild, control first	hellen-frederick-1752,blitz-ciphers	2026-10-04T07:53	pushed	done line in ROOM.md with commit on origin/main	e72d62c7
+session_01Unv31o2qqP2YHk2ABxuvrk	N5-VIV5S fr16104 5 Sept 1572 block with key.tsv	fr16104-vivonne-spain-1572	2026-10-04T07:03	pushed	done line in ROOM.md with commit on origin/main	95bf17e0
+session_01FPU37kDhcywoCA4x6fEgrF	N5-VIVK fr16104 Vivonne known-plaintext test	fr16104-vivonne-spain-1572	2026-10-04T06:48	pushed	done line in ROOM.md with commit on origin/main	dea9b614
+session_01LRQBWNfFKjoMQfG9LHoUuz	LIVE parent worker LANE-NEAR4 (clair1161 pooled reading, hellen Fagel 5177, crossmatch leads, Noailles sorter)		2026-10-04T05:27	pushed	done line in ROOM.md; commit found on origin/main by label	ac5cf169a
+session_01J3srK6fbDZF2SVpN7Y3fF4	N4-RD1161 clair1161 rule-7 (LANE-NEAR4)		2026-10-04T05:24	pushed	done line in ROOM.md with commit on origin/main	9f8c28be
+session_01PtDj12iLH3feQMsEB8JG4t	N4-RDPAG paget rule-7 (LANE-NEAR4)	clairambault1225-paget-1714	2026-10-04T05:21	pushed	done line in ROOM.md with commit on origin/main	93f6fa4c
+session_01Rfk3hX952T4vMi71cHJi1t	LIVE parent worker TX-ALTS (a/b? alternatives into the decode lattice)	nevers-birago-fr3251-1572	2026-10-04T05:20	pushed	done line in ROOM.md with commit on origin/main	3d1f42e8
+session_01BbgnNXAMVfwjpUNV8nGSHM	LIVE parent worker TX-VIEWS (multi-view voting: iiif_lines --views, reconcile N passes)		2026-10-04T05:20	pushed	done line in ROOM.md; commit found on origin/main by label	57d9ce1ae
+session_01TqMrxaXVVqs2VZQNT8jVc4	LIVE parent worker TX-AGREEAUDIT (audit of agreed signs with planted-error control)		2026-10-04T05:19	pushed	done line in ROOM.md with commit on origin/main	7e7395d0
+session_01EGKGo5Q6yFfXV58mAEnT3h	N4-VIV3 vivonne ink 38 + legibility (LANE-NEAR4)	fr16104-vivonne-spain-1572	2026-10-04T05:19	pushed	done line in ROOM.md with commit on origin/main	4ce80914
+session_01934SL6okugjBZ4mhCTm3z1	N4-PAG126 paget code 126 (LANE-NEAR4)		2026-10-04T04:59	pushed	done line in ROOM.md; commit found on origin/main by label	4f027dd59
+session_01Fdvn3vKYyj7SqcVw4kJYqN	N4-VIV2 vivonne 8 June duplicate (LANE-NEAR4)		2026-10-04T04:59	pushed	done line in ROOM.md; commit found on origin/main by label	d99391351
+session_01FGoGUQjSK7kqsDaHA67z8i	N4-NXS Noailles sorter page (LANE-NEAR4)		2026-10-04T04:52	pushed	done line in ROOM.md; commit found on origin/main by label	90097424b
+session_01FcpdTFnw6ojKrEAi4mRTdj	N4-VIV vivonne fr16104 date/bisect (LANE-NEAR4)	fr16104-vivonne-spain-1572	2026-10-04T04:43	pushed	done line in ROOM.md with commit on origin/main	aa314a01
+session_01N7KMfXCAg6Vr4ghbwdNgop	N4-ES132B es132 f.90r/f.91r (LANE-NEAR4)		2026-10-04T04:43	pushed	done line in ROOM.md with commit on origin/main	f4a2c483
+session_01Nyd2fZWjUrQCav3WxBFfiK	N4-HEL6 hellen R4372 bigram diagnosis (LANE-NEAR4)		2026-10-04T04:40	pushed	done line in ROOM.md; commit found on origin/main by label	f5dd973fa
+session_01LQYuNKQ5A2iBToRx4Zor41	N4-PAG213 paget code 213 (LANE-NEAR4)	clairambault1225-paget-1714	2026-10-04T04:38	pushed	done line in ROOM.md with commit on origin/main	08cfc358
+session_01V3kb6WF3nUiGuikQu76CVf	N4-C1 clair1161 pooled reading (LANE-NEAR4)	blitz-ciphers	2026-10-04T04:31	pushed	done line in ROOM.md with commit on origin/main	94f1bf9b
+session_01Y9ZXuhXPFKZ7pJqLR53tWE	N4-ES132 es132 f.119v/f.120r (LANE-NEAR4)		2026-10-04T04:28	pushed	done line in ROOM.md with commit on origin/main	f42c7d6e
+session_01EioaYtWLR2eSUTaGeDz3vc	N4-HEL5 hellen Fagel 5177 (LANE-NEAR4)	hellen-frederick-1752	2026-10-04T04:25	pushed	done line in ROOM.md with commit on origin/main	59648b14
+session_01Bz4bqa25Ey8zpczmzCz2Ev	N4-PAG65 paget codes 65/116 (LANE-NEAR4)	clairambault1225-paget-1714	2026-10-04T04:22	pushed	done line in ROOM.md with commit on origin/main	e74d7ba7
+session_01NYBxC6dmuLTQarutQH6eqC	N4-XM crossmatch leads (LANE-NEAR4)		2026-10-04T04:21	pushed	done line in ROOM.md; commit found on origin/main by label	fff1002d4
+session_01Au8dSL1TXFoCk5P5opEMVv	LIVE parent worker LANE-NEAR3 (hellen codes, clair1161 re-derivation and siblings)	hellen-frederick-1752,clair1161-avis-flandre-1688	2026-10-04T02:56	pushed	done line in ROOM.md; commit found on origin/main by label	755245375
+session_01Q2NnKPsKY5aU9F3q4v561i	NEAR3-C1POOL clair1161 held-out test + pooled re-anneal (LANE-NEAR3)		2026-10-04T02:46	pushed	done line in ROOM.md with commit on origin/main	5329826a
+session_01TB15ph1vCaksaYn1s2sSki	NEAR3-VHEL hellen-frederick-1752 verifier (LANE-NEAR3)	hellen-frederick-1752	2026-10-04T02:07	pushed	done line in ROOM.md with commit on origin/main	2e80c5a1
+session_0174f6XJL2n7zSoyqX8bdASo	NEAR3-TAUR taurello Sanuto Diarii search (LANE-NEAR3)		2026-10-04T01:57	pushed	done line in ROOM.md; commit found on origin/main by label	6505649ed
+session_01YXSJTJ88JYB2AuemubDbG5	NEAR3-C1TX-c188L clair1161 leaf transcription (LANE-NEAR3)		2026-10-04T01:53	pushed	done line in ROOM.md with commit on origin/main	ad631ae3
+session_01DVuBALVWeHTSpBLuYK2yAd	NEAR3-HEL4 hellen R4372 codes 1-800 transcription + test (LANE-NEAR3)		2026-10-04T01:47	pushed	done line in ROOM.md with commit on origin/main	453a570a
+session_01XoMK7oUQmgSQKf7a28mDrY	NEAR3-THUR thurloe one-vote M boundary test (LANE-NEAR3)	thurloe-printed	2026-10-04T01:43	pushed	done line in ROOM.md with commit on origin/main	f81d5073
+session_012wLFJLNGxgPrEUuWJpzAaZ	NEAR3-C1TX-c187R clair1161 leaf transcription (LANE-NEAR3)	clair1161-avis-flandre-1688	2026-10-04T01:43	pushed	done line in ROOM.md with commit on origin/main	a18df7ae
+session_014gfA5TP7z6fAGJJTugusb9	NEAR3-C1SPLIT clair1161 q/ls and S split test (LANE-NEAR3)	clair1161-avis-flandre-1688	2026-10-04T01:32	pushed	done line in ROOM.md with commit on origin/main	e6b33c38
+session_012qNu9WenskN8trHvNM8F7o	NEAR3-C1TX-c187L clair1161 leaf transcription (LANE-NEAR3)		2026-10-04T01:26	pushed	done line in ROOM.md with commit on origin/main	8e60f77f
+session_01BTAy3JY9SNdA6qRKFgCHiW	NEAR3-C1LOOSE clair1161 looser gloss repair (LANE-NEAR3)	clair1161-avis-flandre-1688	2026-10-04T01:26	pushed	done line in ROOM.md with commit on origin/main	32dd3ba0
+session_01TgDWakJg68UbiqNxnk4sHU	NEAR3-HEL3 hellen codes 1-800 sheet search (LANE-NEAR3)		2026-10-04T01:25	pushed	done line in ROOM.md with commit on origin/main	6750057a
+session_015Pybt1LMtFZkwhb71FKQ9Z	NEAR3-C1TX-c186L clair1161 leaf transcription (LANE-NEAR3)		2026-10-04T01:21	pushed	done line in ROOM.md with commit on origin/main	bdd87ed0
+session_01SsFJkgJVVmcbQT7WM7nbjJ	NEAR3-C1RD clair1161 rule-7 re-derivation (LANE-NEAR3)	clair1161-avis-flandre-1688	2026-10-04T01:16	pushed	done line in ROOM.md; commit found on origin/main by label	8980387be
+session_01AN8FVyeTNuzxjDdGnj7E5M	LIVE parent worker LANE-READ2 (read the images LANE-IMAGES unblocked)	hellen-frederick-1752,clair1161-avis-flandre-1688	2026-10-04T00:32	pushed	done line in ROOM.md; commit found on origin/main by label	4eb1bb090
+session_016TmcZZst4jj9zMdtfkCBJo	READ2-C1161B: gloss-match control + seeded repair	clair1161-avis-flandre-1688,blitz-ciphers	2026-10-04T00:29	pushed	done line in ROOM.md with commit on origin/main	c7fae941
+session_01N6gZhmd6PcX9GaVdFTDAQ6	READ2-HELRD: Hellen R1953 rule-7 re-derivation	hellen-frederick-1752	2026-10-03T23:59	pushed	done line in ROOM.md; commit found on origin/main by label	b94c728bb
+session_01B3evBivivdZEfcykvkVtCG	READ2-ROELL: inv. 164 crib-position test	roell-vandedem-1809	2026-10-03T23:52	pushed	done line in ROOM.md with commit on origin/main	0dd5812d
+session_01PmL2hMhHjzhP56HQKiUFXV	READ2-HEL2: R4370 as codes 1-800 of the Hellen key	hellen-frederick-1752	2026-10-03T23:48	pushed	done line in ROOM.md with commit on origin/main	5f408e91
+session_01KMjMcFbRYdP7V2hTX7x3Ju	READ2-C1161: Clairambault 1161 c185-c188 transcription	clair1161-avis-flandre-1688	2026-10-03T23:46	pushed	done line in ROOM.md with commit on origin/main	c8e4069e
+session_01P46Usti9qbTeowNZbDdB22	READ2-PAG: Paget 1714 homophone pass	clairambault1225-paget-1714	2026-10-03T23:45	pushed	done line in ROOM.md with commit on origin/main	0cfc96eb
+session_01Vxb4sMUH6bm83T1J7v3x3c	READ2-HEL: R4369 Hellen key + R1953 known-key test	hellen-frederick-1752	2026-10-03T23:32	pushed	done line in ROOM.md with commit on origin/main	ddb945a9
+session_01UBRoFFQuwb1DiusABZs8GE	READ2-SIENA: classify 11 Siena Concistoro 2308 records	siena-concistoro-2308	2026-10-03T23:23	pushed	done line in ROOM.md with commit on origin/main	8aca9389
+session_0171At9FjktiKou59VK5Fn5B	READ2-RELABEL: fix 6 mislabelled needs-image next steps	clairambault1225-paget-1714,fr5160-letellier-1653,fr7129-villeroy-bongars-1604,vanspaen-vandergoes-1808,moray-wood-1568,	2026-10-03T23:19	pushed	done line in ROOM.md; commit found on origin/main by label	f24e83c85
+session_01WnkjAxKcueTF2Q73yLhdSf	LIVE parent worker LANE-IMAGES (unblock needs-image targets with documented host routes)		2026-10-03T22:16	pushed	done line in ROOM.md; commit found on origin/main by label	74b36919a
+session_01L1v3PbQFUviq4rHAYC6vsx	IMG-DECODE2 (LANE-IMAGES worker)		2026-10-03T22:03	pushed	done line in ROOM.md; commit found on origin/main by label	8093ab7cd
+session_01KTF7ph67QmeaPoB5rGNHZs	IMG-GALLICA1 (LANE-IMAGES worker)		2026-10-03T21:50	pushed	done line in ROOM.md with commit on origin/main	c9bc69b9
+session_01HgRWPZEKZuRNbJjnvCsbvr	IMG-DECODE1 (LANE-IMAGES worker)		2026-10-03T21:36	pushed	done line in ROOM.md with commit on origin/main	1ec874bd
+session_01XZMxMikEityoUPmRDfojf2	IMG-GLA (LANE-IMAGES worker)	gla-claudiamedici-1633	2026-10-03T21:31	pushed	done line in ROOM.md; commit found on origin/main by label	352c541c2
+session_015RZin9VsfhyEAyGvVz4QtZ	IMG-AUDIT (LANE-IMAGES worker)	clairambault1225-paget-1714,fr5160-letellier-1653,fr7129-villeroy-bongars-1604,vanspaen-vandergoes-1808,moray-wood-1568,	2026-10-03T21:24	pushed	done line in ROOM.md with commit on origin/main	7b068eba
+session_01ESgKEHuwrKueZvW7WQTfc6	LIVE ARM-H74b (Armstrong 1808: sorter rebuilt with provisional piles)	armstrong-madison-1808	2026-10-03T19:50	pushed	done line in ROOM.md	907f8fde4
+session_01GiNCYdEvUXhoWYJr3cN51y	LIVE ARM-H73 (Armstrong 1808: vocabulary-prior solver, matched control first)		2026-10-03T19:48	pushed	done line in ROOM.md; commit found on origin/main by label	461e223e8
+session_01MFy7L3pUe6oAWYXiAy2Dpi	LIVE ARM-H74 (Armstrong 1808: shorthand sign-sorter page for the owner)		2026-10-03T19:32	pushed	done line in ROOM.md with commit on origin/main	057ef3e3
+session_01DzpAjKXGu45LG6bzS7zmMv	LIVE parent worker SWEEP-OWN-2 (account-2 session sweep: no lost work)		2026-10-03T19:17	pushed	done line in ROOM.md with commit on origin/main	ab7c7cf8
+session_014yZCbV1UwnU9CUzQuF73JH	LIVE parent worker LANE-A2PUSH4 (lane orchestrator on account 2, fourth incarnation)		2026-10-03T18:48	pushed	done line in ROOM.md with commit on origin/main	dbaf98c0
+session_014eX8eGURxjnX4oPDGijgJi	A2P4-HAER heinsius-vanhaersolte-1703 (LANE-A2PUSH4 worker)	heinsius-vanhaersolte-1703	2026-10-03T18:42	pushed	done line in ROOM.md with commit on origin/main	e7f8199b
+session_01QTgeqNVkjmtpbGSAKBrYTB	A2P4-BALL sp36-ball-1745 (LANE-A2PUSH4 worker)	sp36-ball-1745	2026-10-03T18:38	pushed	done line in ROOM.md; commit matched by target slug	8e4135ce5
+session_01EVuasP6Esf4o9wzRoPK8SL	A2P4-RABY04 sp90-raby-1704 (LANE-A2PUSH4 worker)	sp90-raby-1704	2026-10-03T18:34	pushed	done line in ROOM.md; commit matched by target slug	87bd98b68
+session_01Lr3i36UMDx7segBiURo8DF	A2P4-CELS ra-celsing-sillen-1755 (LANE-A2PUSH4 worker)	ra-celsing-sillen-1755	2026-10-03T18:34	pushed	done line in ROOM.md; commit found on origin/main by label	d644f1775
+session_01ViWzGR9HZ8Z8tY4rMGuKff	A2P4-CESY sp78-cesy-1628 (LANE-A2PUSH4 worker)	sp78-cesy-1628	2026-10-03T18:33	pushed	done line in ROOM.md; commit matched by target slug	db4d4fb00
+session_0183NfPZcemxbkGyWpv9JvMC	A2P4-SALV salvago-caraffa-1691 (LANE-A2PUSH4 worker)	salvago-caraffa-1691	2026-10-03T18:31	pushed	done line in ROOM.md; commit matched by target slug	bb2e80712
+session_01VwPAaTZdP9iz5DU8hhZgNM	A2P4-KARL ra-karlxi-fullmakt-1677 (LANE-A2PUSH4 worker)	ra-karlxi-fullmakt-1677	2026-10-03T18:21	pushed	done line in ROOM.md; commit matched by target slug	bce4ceaa3
+session_012chkSkXB5UQ3CVoky7ZqW9	A2P4-SCORP3 scorpion-1991 (LANE-A2PUSH4 worker)	scorpion-1991	2026-10-03T18:17	pushed	done line in ROOM.md with commit on origin/main	9fad4b05
+session_01NefWrqPi5SeAV7nvJVAzMD	A2P4-NEWC sp87-newcastle-1743 (LANE-A2PUSH4 worker)	sp87-newcastle-1743	2026-10-03T18:17	pushed	done line in ROOM.md; commit matched by target slug	dc1c3edb6
+session_01GUjKY1fwLxUZmpZeWKusua	A2P4-TAUR taurello-roma-1527 (LANE-A2PUSH4 worker)	taurello-roma-1527	2026-10-03T18:16	pushed	done line in ROOM.md; commit matched by target slug	781a7beb5
+session_01Eat5wCzQJov594NmrHCewS	A2P4-RABY sp90-raby-whitworth-1705 (LANE-A2PUSH4 worker)	sp90-raby-whitworth-1705	2026-10-03T18:16	pushed	done line in ROOM.md with commit on origin/main	a09a7751
+session_01Ah6pdWhVJhCHBJ3eVCSzLn	A2P4-SCORP2 scorpion-1991 (LANE-A2PUSH4 worker)	scorpion-1991	2026-10-03T18:05	pushed	done line in ROOM.md with commit on origin/main	4745c5b9
+session_01JtXjABCuAdv8jbCUoLJY95	A2P4-VRAHSAL verifier rah-salazar-soria-sanchez-1524-28 (LANE-A2PUSH4)	rah-salazar-soria-sanchez-1524-28	2026-10-03T18:04	pushed	done line in ROOM.md with commit on origin/main	c611e459
+session_0134hmtAHxWhXid6K2GXFhX5	A2P4-OUTCHECK two outreach drafts (LANE-A2PUSH4 worker)		2026-10-03T18:00	pushed	done line in ROOM.md with commit on origin/main	d997319c
+session_01JYCm62Gy5zFk4rrabs4ruq	A2P4-LVN98 lodewijk-van-nassau-1573-74 (LANE-A2PUSH4 worker)	lodewijk-van-nassau-1573-74	2026-10-03T17:59	pushed	done line in ROOM.md with commit on origin/main	d1c8541e
+session_01P9ZHuRPqy4iLxDBJbxNQon	A2P4-KAL5 kaliningrad-2015 (LANE-A2PUSH4 worker)	kaliningrad-2015	2026-10-03T17:58	pushed	done line in ROOM.md with commit on origin/main	f613b8ef
+session_01PQ13FjDEfMaBZxhJYfTV7n	A2P4-WOTT sp99-wotton-1622 (LANE-A2PUSH4 worker)	sp99-wotton-1622	2026-10-03T17:57	pushed	done line in ROOM.md; commit matched by target slug	14ce3b474
+session_018ZYSK5dXtxt9jkhyih6yz4	A2P4-KAL4 kaliningrad-2015 (LANE-A2PUSH4 worker)	kaliningrad-2015	2026-10-03T17:49	pushed	done line in ROOM.md with commit on origin/main	fbda87f4
+session_01BNion7x2kyL9DErKoRFnSj	A2P4-UNT untersberg-code (LANE-A2PUSH4 worker)	untersberg-code	2026-10-03T17:44	pushed	done line in ROOM.md with commit on origin/main	4ea7ca25
+session_01RQzuruzqRgzhfyV13YYX7V	A2P4-SCORP scorpion-1991 (LANE-A2PUSH4 worker)	scorpion-1991	2026-10-03T17:42	pushed	done line in ROOM.md with commit on origin/main	def9d260
+session_01TFaXBiY73UJZiD73vSyvCu	A2P4-YOR3 sp78-yorke-1749 (LANE-A2PUSH4 worker)	sp78-yorke-1749	2026-10-03T17:41	pushed	done line in ROOM.md; commit matched by target slug	14c1b857d
+session_012B8898QrrsrMRBWrKoFs65	A2P4-SANG sanguszkow-mniszech-dunin-1714 (LANE-A2PUSH4 worker)	sanguszkow-mniszech-dunin-1714	2026-10-03T17:39	pushed	done line in ROOM.md; commit found on origin/main by label	ddcb050c0
+session_01UFquPxPb1EuQbV6W6Y3WF4	A2P4-VIG viganego-torino-1717 (LANE-A2PUSH4 worker)	viganego-torino-1717	2026-10-03T17:38	pushed	done line in ROOM.md; commit matched by target slug	e318ef73c
+session_01XEXDEqmXH9ahhGzvudq5R9	A2P4-LVN97 lodewijk-van-nassau-1573-74 (LANE-A2PUSH4 worker)	lodewijk-van-nassau-1573-74	2026-10-03T17:29	pushed	done line in ROOM.md with commit on origin/main	7d636fe2
+session_01TVW11hvyTBH8Rc4AjFWtQL	A2P4-MATIG matignon-mayenne-1586 (LANE-A2PUSH4 worker)	matignon-mayenne-1586	2026-10-03T17:28	pushed	done line in ROOM.md with commit on origin/main	a357a7a3
+session_0181UdRviPuBfcd1x6d9LCSq	A2P4-LAMB3 lambeth-bacon-649 (LANE-A2PUSH4 worker)	lambeth-bacon-649	2026-10-03T17:25	pushed	done line in ROOM.md with commit on origin/main	5aeb743a
+session_013w4Zw4Pbzr8pCtWJbH3UNE	A2P4-CLINT pro3055-clinton-1779 (LANE-A2PUSH4 worker)	pro3055-clinton-1779	2026-10-03T17:24	pushed	done line in ROOM.md with commit on origin/main	92b3a087
+session_01HaYb6Y5roTt7qZJ4pX7RMq	A2P4-WROTH2 sp81-wroth-1596 (LANE-A2PUSH4 worker)	sp81-wroth-1596	2026-10-03T17:21	pushed	done line in ROOM.md with commit on origin/main	018fba6e
+session_01GmMJKSeKv8ZnRBRDF99RSD	LIVE parent worker LANE-A2PUSH2 (lane orchestrator on account 2, second incarnation)		2026-10-03T16:24	pushed	lane orchestrator; done line in ROOM.md lists its interrupted workers, closeout c92db36c1 on origin/main	e1a3a5ce
+session_01HhF3BJJUVzo814gSvoeVjt	LIVE parent worker LANE-A2PUSH3 (lane orchestrator on account 2, third incarnation)		2026-10-03T16:11	pushed	done line in ROOM.md; commit found on origin/main by label	e8fe90fd5
+session_01Jrw1LCFyjv8i9jP48ZeJFj	LIVE worker LAMB-POTT (LANE-A2PUSH3, account 2)	lambeth-bacon-649	2026-10-03T15:58	pushed	done line in ROOM.md; commit found on origin/main by label	ccb1c73c4
+session_01JxoBGhtWswFxniguoiVHCS	LIVE worker CS-BATCH6 (LANE-A2PUSH3, account 2)	sp53-16-78,lambeth-bacon-649	2026-10-03T15:46	pushed	done line in ROOM.md; commit found on origin/main by label	73d7669a1
+session_012DzYGT8YYSFU9CqEf4YUQ9	LIVE worker CS-BATCH4 (LANE-A2PUSH3, account 2)	della-torre-olanda-1690,salvago-caraffa-1691,aca-sanfelipe-duran-1718,decode-9970-simancas-1527	2026-10-03T15:41	pushed	done line in ROOM.md; commit found on origin/main by label	62faac704
+session_012sVuqTVC4WrvHux192QL93	LIVE verifier VERIFY-NV05 (LANE-A2PUSH3, account 2)		2026-10-03T15:40	pushed	done line in ROOM.md; commit found on origin/main by label	2e7961ca8
+session_014UbadDajsHibTcpdDXWghj	LIVE worker CS-BATCH5 (LANE-A2PUSH3, account 2)		2026-10-03T15:38	pushed	done line in ROOM.md; commit found on origin/main by label	d1e69c40e
+session_01XZW3GkQZoCVfH4msmoc9gH	LIVE worker MERC151B (LANE-A2PUSH3, account 2)		2026-10-03T15:32	pushed	done line in ROOM.md with commit on origin/main	f4b2bb42
+session_01UNeeRjetz8FcxJLNoduwG3	LIVE worker NV05E (LANE-A2PUSH3, account 2)		2026-10-03T15:25	pushed	done line in ROOM.md with commit on origin/main	15c16dc3
+session_01FfBVWPYNSmNQDxvJGu3eD8	LIVE worker TNA-NOTES (LANE-A2PUSH3, account 2)	sp87-further-1712,sp78-france-1583	2026-10-03T15:25	pushed	done line in ROOM.md with commit on origin/main	97dd23f7
+session_01C98yihkSdmYSuRNvbHvKE8	LIVE worker SP81-WROTH (LANE-A2PUSH3, account 2)	sp81-wroth-1596	2026-10-03T15:23	pushed	done line in ROOM.md	b812cbfe6
+session_01G5A2VnmUF2HRMFkfSe6bt8	LIVE worker NV05D (LANE-A2PUSH3, account 2)	fr15575-syllabic-1592-95	2026-10-03T15:23	pushed	done line in ROOM.md with commit on origin/main	04ed8646
+session_017sRTcMrX7RKGiTQojk9hYa	LIVE worker AVS175B (LANE-A2PUSH3, account 2)		2026-10-03T15:21	pushed	done line in ROOM.md with commit on origin/main	368e1578
+session_01NXpLsd2ZVRiwsqVRLnwvmL	LIVE worker NV05C (LANE-A2PUSH3, account 2)		2026-10-03T15:12	pushed	done line in ROOM.md with commit on origin/main	3d334551
+session_01GhDpMpACtLuCvo7KrUejC7	LIVE worker AVS175 (LANE-A2PUSH3, account 2)		2026-10-03T15:11	pushed	done line in ROOM.md with commit on origin/main	7609a09b
+session_01HfU4GDXrwtuuoXeGi8Bk9Z	LIVE worker MERC151 (LANE-A2PUSH3, account 2)		2026-10-03T15:05	pushed	done line in ROOM.md with commit on origin/main	fa68ca11
+session_011CyfyrJ21PPFqJZ9eVuzZ2	LIVE worker CS-BATCH3 (LANE-A2PUSH3, account 2)		2026-10-03T15:01	pushed	done line in ROOM.md; commit found on origin/main by label	d0e091e81
+session_01QuvCJg87Curw5vdXzmLqQy	LIVE worker SEURE-KP (LANE-A2PUSH3, account 2)	fr3151-seure-1558	2026-10-03T14:58	pushed	done line in ROOM.md with commit on origin/main	5c5c30b3
+session_01FLNw2eNwL43xSmbYDdr42R	LIVE worker CS-BATCH2 (LANE-A2PUSH3, account 2)		2026-10-03T14:49	pushed	done line in ROOM.md; commit found on origin/main by label	085e907b0
+session_01Uce6TmBFgzAiFpq2Z3tL25	LIVE worker MOD1162B (LANE-A2PUSH3, account 2)		2026-10-03T14:47	pushed	done line in ROOM.md with commit on origin/main	b928f2db
+session_012AgJrB4Y9gB8uinbUZS2q8	LIVE worker NV05B (LANE-A2PUSH3, account 2)		2026-10-03T14:46	pushed	done line in ROOM.md with commit on origin/main	d4a3a4b4
+session_01AoBZZmCSe64qxQdk6a9fSz	LIVE worker AVS-SPOT (LANE-A2PUSH3, account 2)		2026-10-03T14:44	pushed	done line in ROOM.md with commit on origin/main	06a98e4e
+session_01LPvv1yanXmaFts8JJYWjSA	LIVE worker CS-BATCH1 (LANE-A2PUSH3, account 2)		2026-10-03T14:42	pushed	done line in ROOM.md; commit found on origin/main by label	69bde7280
+session_01XsSWNXMRLY66hEtYxHN4AD	LIVE worker NV05-CS (LANE-A2PUSH3, account 2)	fr15575-syllabic-1592-95	2026-10-03T14:32	pushed	done line in ROOM.md with commit on origin/main	31f87c5a
+session_01JQa6mDJt7G6fwkZfiYZY2E	LIVE worker MOD1162 (LANE-A2PUSH3, account 2)		2026-10-03T14:31	pushed	done line in ROOM.md with commit on origin/main	53c61136
+session_01MYHvnwGWbtqkY1aqX8JFh7	LIVE worker AVS53 (LANE-A2PUSH3, account 2)		2026-10-03T14:26	pushed	done line in ROOM.md with commit on origin/main	063e926a
+session_01Hp5FZ2v1yUEsgdHKJA3Q94	LIVE worker TXB2 (LANE-A2PUSH3, account 2)		2026-10-03T14:24	pushed	done line in ROOM.md with commit on origin/main	595d249b
+session_01YXxSBBgTZbZcCpYnuRdJTf	LIVE worker NV04-CS (LANE-A2PUSH3, account 2)	fr3984-sillery-1593,fr3993-villeroy-1595	2026-10-03T14:24	pushed	done line in ROOM.md with commit on origin/main	53e72bfc
+session_017r5MruSnw92VUndGTpoP3D	LIVE worker FR17-RJ2 (LANE-A2PUSH3, account 2)	thurloe-barriere-1654	2026-10-03T14:22	pushed	done line in ROOM.md with commit on origin/main	7df57c61
+session_012VcKAxA7VXY6qNKK4U93Y4	LIVE worker A2-RAA12 (account 2, LANE-A2PUSH2)	fr3621-dinteville-1592,harley-287-1587,fr2980-gramont,na-raad-azie-1800	2026-10-03T05:31	nothing	turn failed/interrupted (account-2 limit); closed-interrupted by CLOSEOUT-A2, unfinished work recorded in target NOTES Interrupted section; container archived, nothing to recover	c92db36c1
+session_01Bdx5XaXVGRvDF8zAqG9EH7	LIVE worker A2-GRA7 (account 2, LANE-A2PUSH2)	fr3621-dinteville-1592,harley-287-1587,fr2980-gramont,na-raad-azie-1800	2026-10-03T05:31	nothing	turn failed/interrupted (account-2 limit); closed-interrupted by CLOSEOUT-A2, unfinished work recorded in target NOTES Interrupted section; container archived, nothing to recover	c92db36c1
+session_01NY3P2ciQ119oVa2duLBHn3	LIVE worker A2-COL18 (account 2, LANE-A2PUSH2)	fr3621-dinteville-1592,harley-287-1587,fr2980-gramont,na-raad-azie-1800	2026-10-03T05:31	nothing	turn failed/interrupted (account-2 limit); closed-interrupted by CLOSEOUT-A2, unfinished work recorded in target NOTES Interrupted section; container archived, nothing to recover	c92db36c1
+session_01F5vxGtQzEEETwsViBGh25G	LIVE worker A2-HAR8 (account 2, LANE-A2PUSH2)	fr3621-dinteville-1592,harley-287-1587,fr2980-gramont,na-raad-azie-1800	2026-10-03T05:31	nothing	turn failed/interrupted (account-2 limit); closed-interrupted by CLOSEOUT-A2, unfinished work recorded in target NOTES Interrupted section; container archived, nothing to recover	c92db36c1
+session_01AxPgo9YgE7zAnzNhurRFq5	LIVE worker A2-DIN4 (account 2, LANE-A2PUSH2)		2026-10-03T05:31	nothing	turn failed/interrupted (account-2 limit); closed-interrupted by CLOSEOUT-A2, unfinished work recorded in target NOTES Interrupted section; container archived, nothing to recover	c92db36c1
+session_01UHEftGM2FrW5GqrN5AFsjT	LIVE worker A2-HAR7 (account 2, LANE-A2PUSH2)	harley-287-1587	2026-10-03T05:28	pushed	done line in ROOM.md with commit on origin/main	7a0dea80
+session_01KYCPMBn9gRSXto4K5EmK5G	LIVE worker A2-GRA6 (account 2, LANE-A2PUSH2)	fr2980-gramont	2026-10-03T05:21	pushed	done line in ROOM.md with commit on origin/main	7cc24dfe
+session_011VWUW1gXaR5gubPkjhPYu9	LIVE worker A2-COL17 (account 2, LANE-A2PUSH2)	colbert26-lathuillerie-1644	2026-10-03T05:21	pushed	done line in ROOM.md with commit on origin/main	0e0e1bcd
+session_01X7yfQ14ZFTXYaeobz55uNw	LIVE worker A2-DIN3 (account 2, LANE-A2PUSH2)	fr3621-dinteville-1592	2026-10-03T05:19	pushed	done line in ROOM.md with commit on origin/main	d3b3b4f0
+session_01BvJg9cpXS9JsbcQmr5qHxg	LIVE parent worker VERIFY-NV02 (verifier on Nevers-to-son f.35 key no.25 reading)	fr3416-nevers-fils-1589	2026-10-03T05:17	pushed	done line in ROOM.md with commit on origin/main	f436b75a
+session_0123uSsx9UjKxCX3LaFWYEsh	LIVE worker A2-RAA11 (account 2, LANE-A2PUSH2)	na-raad-azie-1800	2026-10-03T05:16	pushed	done line in ROOM.md with commit on origin/main	6a48a774
+session_01W9udwDzy3DiKn3JXkYBesP	LIVE worker TOOL-DK-HASH (account 2, LANE-A2PUSH2)	antt-linhares-chave,rah-canada-1869	2026-10-03T05:15	pushed	done line in ROOM.md with commit on origin/main	525ee3b5
+session_01DrSnYtzLRTAYfUiKxbiwcm	LIVE parent worker BIRAGO-NUM-KEYEYE (find the Nov 1571 numerical key among fr.3995 key tables)		2026-10-03T05:15	pushed	done line in ROOM.md with commit on origin/main	c6275629
+session_01L1NsmF7RLufN7BcvokP3g2	LIVE parent worker FIX-NO71-DATE (correct the no.71 date claim in 4 files)	nevers-birago-fr3251-1572	2026-10-03T05:11	pushed	done line in ROOM.md with commit on origin/main	84ac7633
+session_0197ts8jPWVcG1z4ZbicXxCw	LIVE worker GF-A2B-1 (account 2, LANE-A2PUSH2)	lambeth-bacon-649	2026-10-03T05:09	pushed	done line in ROOM.md with commit on origin/main	7a7e6279
+session_01WATD8rPQtLUpdtxBYZFPvN	LIVE worker A2-HAR6 (account 2, LANE-A2PUSH2)	harley-287-1587	2026-10-03T05:07	pushed	done line in ROOM.md with commit on origin/main	791beeec
+session_01Pjrbxkn3aUKQ1yDuSwgrPS	LIVE worker A2-DIN2 (account 2, LANE-A2PUSH2)	fr3621-dinteville-1592	2026-10-03T05:07	pushed	done line in ROOM.md with commit on origin/main	474e237a
+session_01ULX5gEiCuw4XEceMSKCQgs	LIVE worker GF-A2B-2 (account 2, LANE-A2PUSH2)	lambeth-casenowe-1586,ra-celsing-dohsson-1779,ra-morner-welin	2026-10-03T05:04	pushed	done line in ROOM.md with commit on origin/main	a80cb94f
+session_01SckBTFj6679tdzJmEBpeZs	LIVE worker BIRAGO-NUM-TOOLS (account 2, for account-3 orchestrator)		2026-10-03T05:00	pushed	done line in ROOM.md with commit on origin/main	33f2a161
+session_01R4bTuCECMdoeQ9ZkZoXyz8	LIVE worker A2-RAA10 (account 2, LANE-A2PUSH2)	na-raad-azie-1800	2026-10-03T04:58	pushed	done line in ROOM.md with commit on origin/main	62043cad
+session_01DnEkN2UqskohiUZULGK6FB	LIVE worker A2-COL16 (account 2, LANE-A2PUSH2)	colbert26-lathuillerie-1644	2026-10-03T04:58	pushed	done line in ROOM.md with commit on origin/main	a11be1db
+session_01865J5hYdGZ4kCUCfdrWekK	LIVE worker A2-GRA5 (account 2, LANE-A2PUSH2)	fr2980-gramont	2026-10-03T04:57	pushed	done line in ROOM.md with commit on origin/main	284912a3
+session_01G1mGS77VkSA1WXTaxKxRPb	LIVE worker BIRAGO-NUM4 (account 2, for account-3 orchestrator)		2026-10-03T04:55	pushed	done line in ROOM.md with commit on origin/main	adb007e1
+session_01AZUw13iD3DqnzuYoYbtobf	LIVE worker A2-DIN (account 2, LANE-A2PUSH2)	fr3621-dinteville-1592	2026-10-03T04:46	pushed	done line in ROOM.md with commit on origin/main	b30b3db2
+session_01UUpSXWZY6S2FJSMT4pmzX9	LIVE worker A2-COL15 (account 2, LANE-A2PUSH2)	colbert26-lathuillerie-1644	2026-10-03T04:44	pushed	done line in ROOM.md with commit on origin/main	a93fb305
+session_01EDTLN5NWZDoDCSN94ycH1A	LIVE worker TOOL-SHELF (account 2, for account-3 orchestrator)		2026-10-03T04:41	pushed	done line in ROOM.md; commit found on origin/main by label	d703667ef
+session_01VfEA6dVtjHNEE7bUP5zEgp	LIVE worker A2-GRA4 (account 2, LANE-A2PUSH2)	fr2980-gramont	2026-10-03T04:40	pushed	done line in ROOM.md with commit on origin/main	b259c1e0
+session_01WfTuRRtpHL7CrNkX3U4oUN	LIVE worker A2-RAA9 (account 2, LANE-A2PUSH2)	na-raad-azie-1800	2026-10-03T04:36	pushed	done line in ROOM.md with commit on origin/main	5d281854
+session_01K5Xht9etL6MUB1G7L9ZZu8	LIVE worker TX-DECODE (account 2, for account-3 orchestrator)		2026-10-03T04:34	pushed	done line in ROOM.md with commit on origin/main	0b855b99
+session_01FT13d366vnAovbMfL9W4HU	LIVE worker TX-SORTER (account 2, for account-3 orchestrator)		2026-10-03T04:29	pushed	done line in ROOM.md; commit found on origin/main by label	4f25cd956
+session_01SjhxWPV7NrZ6GvLS27CzB8	LIVE worker TX-ATLAS-B72 (account 2, for account-3 orchestrator)	nevers-birago-fr3251-1572	2026-10-03T04:26	pushed	done line in ROOM.md with commit on origin/main	d69334bb
+session_01P8jFsSRww7yjP3QwXGQvWo	LIVE parent worker NV02-READ (Nevers vein NV-02/NV-03 under key no.25)	fr3416-nevers-fils-1589,fr4715-evesque-nevers-1589	2026-10-03T04:25	pushed	done line in ROOM.md with commit on origin/main	0214a626
+session_012Ujekwha7bGgoYR9S5WptM	LIVE parent worker NV01-READ (Nevers vein NV-01 fr.3993 f.71-72 under key no.70)	fr3993-gonzague-nevers-1595	2026-10-03T04:24	pushed	done line in ROOM.md with commit on origin/main	c0fd6127
+session_01M8GBovRR2s3QA7bxyA2kkB	LIVE worker TX-BENCH (account 2, for account-3 orchestrator)		2026-10-03T04:20	pushed	done line in ROOM.md with commit on origin/main	ee1e40cb
+session_017qScTVq5TDV71jzCnErxEw	LIVE parent worker F36R-REREAD (Birago f.36r rows 9-14 recut and re-read)	birago-fr3252-1571-72	2026-10-03T04:19	pushed	done line in ROOM.md with commit on origin/main	a7a79ea3
+session_0158vgozqMa1dgKmbFkV2zyv	LIVE parent worker NV-INTAKE (Nevers vein intake: NV-01/02/03/09 folders + check-solved)	fr3993-gonzague-nevers-1595,fr3416-nevers-fils-1589,fr4715-evesque-nevers-1589,fr4712-nevers-duchesse	2026-10-03T03:25	pushed	done line in ROOM.md with commit on origin/main	f6e442c5
+session_01LpiQYZ6ALkasXqnfsrufvm	LIVE parent worker LANE-A2PUSH (lane orchestrator on account 2, NEXT-STEPS backlog)		2026-10-03T03:16	pushed	done line in ROOM.md with commit on origin/main	8d44b57c
+session_01To3caueMBdmHFJXsG6CY3c	LIVE A2-COL14 (colbert26 canvas 47-49, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T03:08	pushed	done line in ROOM.md with commit on origin/main	8d44b57c
+session_015btWGtpZJ4dx5qX8xULq7C	LIVE SORTER-FLORENCE (acct3 row, via LANE-A2PUSH)	florence-dieci-responsive	2026-10-03T03:02	pushed	done line in ROOM.md with commit on origin/main	bdb6e053
+session_01B9sK9nJR4tXiNemtJmuUwB	LIVE A2-PAL3 (fr4687 window null, LANE-A2PUSH)	fr4687-paleologue-nevers	2026-10-03T02:59	pushed	done line in ROOM.md with commit on origin/main	f1fee7b7
+session_01Wk1HpjNhw81RDrvPBmny4W	LIVE A2-COL13 (colbert26 canvas 39-40, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T02:46	pushed	done line in ROOM.md with commit on origin/main	81ac0ab9
+session_01FwL6QzopzYiyQ7vjw6r1s4	LIVE TOOL-BRIEF-PRICE (acct3 row, via LANE-A2PUSH)		2026-10-03T02:41	pushed	done line in ROOM.md with commit on origin/main	009a0977
+session_011yh28wJ65vFhvwZkaVYmwd	LIVE A2-FLO3 (florence c.127 alignment, LANE-A2PUSH)	florence-dieci-responsive	2026-10-03T02:30	pushed	done line in ROOM.md with commit on origin/main	5f37d89d
+session_01JbgGxqazGhcxwvyk4GFpqN	LIVE parent worker NEVERS-VEIN (scout Tomokiyo nevers.htm for letters with a published key)		2026-10-03T02:26	pushed	done line in ROOM.md with commit on origin/main	0b9e9356
+session_01TQzwAP6CA6S5X2o5e6DtpQ	LIVE A2-COL12 (colbert26 joint key, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T02:25	pushed	done line in ROOM.md with commit on origin/main	24d978e3
+session_01RV4sE975Syyx8gSwbGHPfw	LIVE CS-A2-N (check-solved clair577-estrades-piombino, LANE-A2PUSH)	clair577-estrades-piombino-1647	2026-10-03T02:22	pushed	done line in ROOM.md; commit found on origin/main by label	81b050438
+session_011ahjqcefwJgnxWrpF8Ub5x	LIVE parent worker RETRO-2026-10-03-ACCT3 (retrospective: F36-GLOSS X + window review)		2026-10-03T02:19	pushed	done line in ROOM.md with commit on origin/main	e88cd258
+session_01FxQ18w6JMEYdsofJdw9SNT	LIVE A2-PAL2 (fr4687 shuffle null, LANE-A2PUSH)	fr4687-paleologue-nevers	2026-10-03T02:19	pushed	done line in ROOM.md with commit on origin/main	f6ec7f6b
+session_01YKANeAsrEHxkDeBM8VU24b	LIVE CS-A2-L (check-solved arsenal6334, LANE-A2PUSH)	arsenal6334-longueville-1650-59	2026-10-03T02:09	pushed	done line in ROOM.md with commit on origin/main	de17da72
+session_019EkUqVrudrPwLn7B7MWQZ6	LIVE A2-RAA8 (na-raad-azie vowel columns, LANE-A2PUSH)	na-raad-azie-1800	2026-10-03T02:06	pushed	done line in ROOM.md with commit on origin/main	961ebb80
+session_017WtATfcRquWtuKouvHX2Rf	LIVE A2-COL11 (colbert26 canvas 35-36, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T02:06	pushed	done line in ROOM.md with commit on origin/main	4870042b
+session_01CubCukiKMFEEy1UNJkQ3Zw	LIVE CS-A2-K (check-solved florence-dieci, LANE-A2PUSH)		2026-10-03T02:06	pushed	done line in ROOM.md with commit on origin/main	44763d27
+session_01Uo7hdSf9pMRaBpahz2De1P	LIVE CS-A2-M (check-solved bne20211, LANE-A2PUSH)	bne20211-ferdinand-1478	2026-10-03T02:05	pushed	done line in ROOM.md; commit matched by target slug	1f3332c52
+session_01XvDZhmnsp1Syv2CxorKA5E	LIVE VERIFY-MALSBURG-BOURDEAU (acct3 row, via LANE-A2PUSH)	malsburg-hessen-1636	2026-10-03T02:04	pushed	done line in ROOM.md with commit on origin/main	d59ac833
+session_01Yat5TBQdkYpCgEYK8u4PEr	LIVE F36-GLOSS (acct3 row, via LANE-A2PUSH)		2026-10-03T01:52	pushed	done line in ROOM.md with commit on origin/main	5be79ecc
+session_018Vr6Y2sqPtf1bDpRKEDYRM	LIVE VERIFY-CEPPO-WP (acct3 row, via LANE-A2PUSH)		2026-10-03T01:49	pushed	done line in ROOM.md with commit on origin/main	ac956c27
+session_01Y592MKxa3DFxFBeCtR9ygP	LIVE A2-RAA7 (na-raad-azie crib, LANE-A2PUSH)	na-raad-azie-1800	2026-10-03T01:48	pushed	done line in ROOM.md with commit on origin/main	e5eefcd4
+session_015bZjdKtkhR1hvsZTv8m6Ep	LIVE A2-COL10 (colbert26 canvas 33, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T01:47	pushed	done line in ROOM.md with commit on origin/main	c1291571
+session_019c739XchaQGYyNZJFoFGB5	LIVE A2-SAX2 (manteuffel 694/08-09 frames, LANE-A2PUSH)		2026-10-03T01:46	pushed	done line in ROOM.md with commit on origin/main	c29f35ca
+session_01CfWhYhHNxi3Z5B3VWHYk2N	LIVE A2-PAL (fr4687 crib test, LANE-A2PUSH)	fr4687-paleologue-nevers	2026-10-03T01:45	pushed	done line in ROOM.md with commit on origin/main	05f3fcb5
+session_01Az91CXRxyyxz8PFcDHciy7	LIVE NO87-FOLLOW (acct3 row, via LANE-A2PUSH)	nevers-birago-fr3251-1572	2026-10-03T01:44	pushed	done line in ROOM.md with commit on origin/main	9f94a4a0
+session_01HJesMsiWPaxqQBxTpbxj86	LIVE A2-FLO2 (florence N 115 pair, LANE-A2PUSH)	florence-dieci-responsive	2026-10-03T01:43	pushed	done line in ROOM.md with commit on origin/main	57bed475
+session_013wAGCH22aSrYbiFi8uhktP	LIVE GF-A2-13 (gate fix x4, LANE-A2PUSH)	fr2933-salviati-1525,roell-vandedem-1809,arsenal6314-hanau-1635,baluze103-letellier-marca-1644	2026-10-03T01:33	pushed	done line in ROOM.md with commit on origin/main	1084a8cd
+session_01AG85MwDhm5jbRDm8ZvUekQ	LIVE A2-RAA6 (na-raad-azie syllabary, LANE-A2PUSH)	na-raad-azie-1800	2026-10-03T01:33	pushed	done line in ROOM.md with commit on origin/main	d7f0fb85
+session_01DtD494vdAaEP1uBoB7pNdu	LIVE A2-FLO (florence DECODE fetch, LANE-A2PUSH)	florence-dieci-responsive	2026-10-03T01:31	pushed	done line in ROOM.md with commit on origin/main	9da5aeb8
+session_015BzJaaxeG6RBbzkDZ3urCq	LIVE A2-COL9 (colbert26 word re-pairing, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T01:28	pushed	done line in ROOM.md with commit on origin/main	3221eb85
+session_01VQNDiDwxDiLFxFUwy2hBKM	LIVE A2-SAX (manteuffel 1712 print/image, LANE-A2PUSH)	sachsstaatsarchiv-manteuffel-1712	2026-10-03T01:27	pushed	done line in ROOM.md with commit on origin/main	8689af72
+session_015CjWocDrcZ2AtkTGer2MBi	LIVE CS-A2-J (check-solved clair577-brienne, LANE-A2PUSH)	clair577-brienne-estrades-1647	2026-10-03T01:25	pushed	done line in ROOM.md; commit found on origin/main by label	183114895
+session_01VWibb4v3t81mGA3AiJfFmu	LIVE CS-A2-I (check-solved arsenal-ms6829, LANE-A2PUSH)		2026-10-03T01:24	pushed	done line in ROOM.md with commit on origin/main	0aa42b15
+session_01MMnhJhD3mwceobnFwQNGcg	LIVE parent worker F36-READ (fr.3252 f.36 read in full vs its period gloss)	birago-fr3252-1571-72	2026-10-03T01:24	pushed	done line in ROOM.md with commit on origin/main	74f97cfc
+session_01DBFTmfdMkcuVJNkrnS7xbs	LIVE parent worker NO87-LABELS (apply no.87 label rulings by value-blind pass)		2026-10-03T01:16	pushed	done line in ROOM.md with commit on origin/main	0cbf2e2d
+session_01RzBu2emAFUahhg8X3jSXBz	LIVE CEPPO-WITNESS-PAIRS (acct3 row, via LANE-A2PUSH)		2026-10-03T01:15	pushed	done line in ROOM.md with commit on origin/main	1942dc4d
+session_019652GAL4LrTmLosrHr54LK	LIVE A2-KAL3 (kaliningrad German homophonic, LANE-A2PUSH)	kaliningrad-2015	2026-10-03T01:10	pushed	done line in ROOM.md with commit on origin/main	3068b893
+session_01VHz8xhYLsysBi8RnQGdM9a	LIVE A2-COS2 (decode-1168 key alignment, LANE-A2PUSH)	decode-1168-modena-costabili-1492	2026-10-03T01:07	pushed	done line in ROOM.md with commit on origin/main	817d07a5
+session_013EFYESe7LwimNBbrZjwxgE	LIVE A2-COL8 (colbert26 align re-fit, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T01:05	pushed	done line in ROOM.md with commit on origin/main	1bb3ab20
+session_01AvHkr4xhyW8RouMij7H9Ww	LIVE CS-A2-H (check-solved aca-sanfelipe, LANE-A2PUSH)	aca-sanfelipe-duran-1718	2026-10-03T01:03	pushed	done line in ROOM.md; commit matched by target slug	02337620b
+session_01WTmnhP83pMN2KRreatF1GL	LIVE GF-A2-12 (gate fix x4, LANE-A2PUSH)	scorpion-1991,mlh-1976,censorship-manual-stego	2026-10-03T00:50	pushed	done line in ROOM.md; commit found on origin/main by label	bae69dee4
+session_012yH3iot6Ck8GDs5o5WF2sD	LIVE A2-COS (decode-1168 identity, LANE-A2PUSH)	decode-1168-modena-costabili-1492	2026-10-03T00:49	pushed	done line in ROOM.md with commit on origin/main	e7eade5f
+session_01XGwz9KHY71XjQBEDoFeTwM	LIVE A2-COL7 (colbert26 canvas 32 pooled, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T00:47	pushed	done line in ROOM.md with commit on origin/main	aaafeb97
+session_014xQZMDLVC6DFwkChXUpPrf	LIVE A2-RAA5 (na-raad-azie divider variant, LANE-A2PUSH)	na-raad-azie-1800	2026-10-03T00:46	pushed	done line in ROOM.md with commit on origin/main	153005e6
+session_01A8Qyf44qEqUdLwCoYtRjxA	LIVE CS-A2-F (check-solved bl-sacchetti, LANE-A2PUSH)	bl-sacchetti-nunzio-1623	2026-10-03T00:45	pushed	done line in ROOM.md with commit on origin/main	efd925db
+session_017DdDXHvdJtoNTXceuztRFe	LIVE A2-KAL2 (kaliningrad transposition test, LANE-A2PUSH)	kaliningrad-2015	2026-10-03T00:44	pushed	done line in ROOM.md with commit on origin/main	1462db52
+session_01HHTrQK46N6kT1V1V6AAUKz	LIVE parent worker NEVBIR-47C (fr.3252 f.47 third reader on split tiles)		2026-10-03T00:44	pushed	done line in ROOM.md with commit on origin/main	4916ba6a
+session_01Tgon93jNcv3tzUMj9iiQdC	LIVE CS-A2-G (check-solved bullet-tuscany, LANE-A2PUSH)	bullet-tuscany-1944	2026-10-03T00:43	pushed	done line in ROOM.md; commit found on origin/main by label	e5cbc8727
+session_01Bz16v1opDoBJ5rJRPYDBCK	LIVE A2-KAL (kaliningrad pt-B, LANE-A2PUSH)	kaliningrad-2015	2026-10-03T00:34	pushed	done line in ROOM.md with commit on origin/main	89f2f6d5
+session_01RqcLPkaxTMVU3TBCz7PVZG	LIVE parent worker SOLVERDIFF-AYMELOGLU (daily diff of the aymeloglu solver repo)	moray-wood-1568,intercepted-royalist-1646,sp53-16-78,sp53-16-79,sp53-22-f52,debosnys-1883	2026-10-03T00:34	pushed	done line in ROOM.md with commit on origin/main	df2aa768
+session_01SaieeudEaShYgD4BdJkmXn	LIVE GF-A2-11 (gate fix x4, LANE-A2PUSH)		2026-10-03T00:32	pushed	done line in ROOM.md; commit found on origin/main by label	1cf7c3fbc
+session_01DKiWEuAejDnTEvGzknfjUF	LIVE CS-A2-E (check-solved bl-farnese, LANE-A2PUSH)	bl-farnese-cipher	2026-10-03T00:31	pushed	done line in ROOM.md with commit on origin/main	d87ea1fa
+session_01B15JpKHBhq59LyrhmVTC5R	LIVE GF-A2-10 (gate fix x4, LANE-A2PUSH)	decode-1168-modena-costabili-1492,eckert-1862,huntington-blathwayt-madrid-1728,lope-hurtado-1522	2026-10-03T00:29	pushed	done line in ROOM.md with commit on origin/main	4dc8048a
+session_01DrZQMztFPjtVjMccbTR7ew	LIVE CS-A2-D (check-solved bl-portugal-bombay, LANE-A2PUSH)	bl-portugal-bombay-1661	2026-10-03T00:28	pushed	done line in ROOM.md with commit on origin/main	af549a71
+session_01R1TdziSZee8JWnYdkxQfqs	LIVE NEVBIR-NAMES (acct3 row, via LANE-A2PUSH)		2026-10-03T00:28	pushed	done line in ROOM.md with commit on origin/main	bca19aa3
+session_01HQpp9aunSvxX5mxJCy9G1W	LIVE A2-COL6 (colbert26 canvas 30, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T00:27	pushed	done line in ROOM.md with commit on origin/main	06fefc84
+session_01WfMKuBkRvY9MymyjX2xTAF	LIVE VERIFY-GRA (gramont f.30, LANE-A2PUSH)	fr2980-gramont	2026-10-03T00:27	pushed	done line in ROOM.md with commit on origin/main	66a64c49
+session_01KJkADGnPqVhZHxsfePgbpz	LIVE A2-RAA4 (na-raad-azie homophonic, LANE-A2PUSH)	na-raad-azie-1800	2026-10-03T00:25	pushed	done line in ROOM.md with commit on origin/main	d1a51bb0
+session_01FCyaE6JkqbZ9kfQYKZB7TX	LIVE parent worker SOLVERDIFF-BOURDEAU (daily diff of the bourdeau solver repo)	malsburg-hessen-1636,sp53-16-78,sp53-22-f52,fr4715-vieuville-pool,hessen-1824	2026-10-03T00:20	pushed	done line in ROOM.md with commit on origin/main	4c5b7692
+session_01FSVexjVQkMUpprwfdrkAEn	LIVE VERIFY-OLD (na-oldenbarnevelt-2442 B/C1, LANE-A2PUSH)	na-oldenbarnevelt-2442-1605	2026-10-03T00:11	pushed	done line in ROOM.md with commit on origin/main	cb93297d
+session_011EkfNBLrfaZR9XaoHEG34p	LIVE A2-CAS9 (castelcicala entry scorer, LANE-A2PUSH)	castelcicala-1816	2026-10-03T00:08	pushed	done line in ROOM.md with commit on origin/main	c6eb3d8a
+session_01TnqekTdWtW4oPibQBNN7Xy	LIVE A2-GRA3 (gramont f.30 shapes, LANE-A2PUSH)	fr2980-gramont	2026-10-03T00:08	pushed	done line in ROOM.md with commit on origin/main	a888c33f
+session_014qA6ujMq6LReZs65aWARfA	LIVE A2-LAG3 (la-garde masc, LANE-A2PUSH)	la-garde-1577	2026-10-03T00:08	pushed	done line in ROOM.md with commit on origin/main	03246d21
+session_01CrJwSgHo6fQRp1R4uxYZfe	LIVE SORTER-BIRAGO2 (via LANE-A2PUSH)	birago-fr3252-1571-72	2026-10-03T00:06	pushed	done line in ROOM.md with commit on origin/main	deb6a666
+session_017AssGsuWyKtEK36WKfjhwv	LIVE VERIFY-BIRAGO-SMALL (via LANE-A2PUSH)		2026-10-03T00:06	pushed	done line in ROOM.md with commit on origin/main	9b7964ef
+session_01G7Sj7DpnQ4a6uw4epRChRi	LIVE A2-COL5 (colbert26 sibling sort, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-03T00:05	pushed	done line in ROOM.md with commit on origin/main	9f62eefd
+session_012DN8bnN77PTTfdTP2KqTG4	LIVE A2-RAA3 (na-raad-azie masc, LANE-A2PUSH)	na-raad-azie-1800	2026-10-03T00:04	pushed	done line in ROOM.md with commit on origin/main	e6c4dd5d
+session_01Btih1t3bjaPKJ4HHjpE6NN	LIVE A2-CAS8 (castelcicala two-part homophonic, LANE-A2PUSH)	castelcicala-1816	2026-10-02T23:53	pushed	done line in ROOM.md with commit on origin/main	07ecd64c
+session_017kMUWJaXBonXdTRtex7zFk	LIVE NEVBIR-47 (via LANE-A2PUSH)		2026-10-02T23:51	pushed	done line in ROOM.md with commit on origin/main	1834a6f2
+session_011CCwjQ62Ev7fLQzqVmBr5T	LIVE A2-RAA2 (na-raad-azie leaf 2, LANE-A2PUSH)	na-raad-azie-1800	2026-10-02T23:50	pushed	done line in ROOM.md with commit on origin/main	827e731b
+session_01J13rHq8rtSCQmkMNx35Ug6	LIVE A2-COL4 (colbert26 postscript test, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-02T23:48	pushed	done line in ROOM.md with commit on origin/main	e632e5c9
+session_017Yy1GokUJymGsXr1XaNmmJ	LIVE BIRAGO-NUM-SCOUT (via LANE-A2PUSH)	birago-fr3252-1571-72	2026-10-02T23:48	pushed	done line in ROOM.md with commit on origin/main	8cd83637
+session_01WcHm1zJDmpCPkFQ8JtMenu	LIVE A2-OLD2 (oldenbarnevelt re-derive + print, LANE-A2PUSH)	na-oldenbarnevelt-2442-1605	2026-10-02T23:47	pushed	done line in ROOM.md with commit on origin/main	b3115dbe
+session_012kzn1v2Dm1QrRu75iK5kPA	LIVE A2-SHA2 (shaftesbury Forster edition, LANE-A2PUSH)		2026-10-02T23:46	pushed	done line in ROOM.md; commit found on origin/main by label	e3253eeba
+session_01AZ6M4jGJZQQPSdExzSXV6F	LIVE A2-YOR2 (sp78-yorke BL check, LANE-A2PUSH)	sp78-yorke-1749	2026-10-02T23:46	pushed	done line in ROOM.md with commit on origin/main	55db2866
+session_012qqHLKhbKyRdG1C2fVdSGy	LIVE A2-LAG2 (la-garde run 2, LANE-A2PUSH)	la-garde-1577	2026-10-02T23:45	pushed	done line in ROOM.md with commit on origin/main	cad94eab
+session_01323GSpUWoPtFRdV3iP7S33	LIVE A2-GRA2 (gramont Tb fix, LANE-A2PUSH)	fr2980-gramont	2026-10-02T23:44	pushed	done line in ROOM.md; commit found on origin/main by label	c9c9ef00c
+session_01XiHqYwQQDwJtiqwKBCsQYL	LIVE A2-YOR (sp78-yorke SP 78/232 items, LANE-A2PUSH)	sp78-yorke-1749	2026-10-02T23:31	pushed	done line in ROOM.md with commit on origin/main	5e7e71e7
+session_0156ugLpfcGLLmQKVBSEjjov	LIVE A2-OLD (na-oldenbarnevelt-2442 image pass, LANE-A2PUSH)	na-oldenbarnevelt-2442-1605	2026-10-02T23:31	pushed	done line in ROOM.md with commit on origin/main	cb9505cb
+session_016K3xzru38Bg7m4N24JVrMG	LIVE A2-CAS7 (castelcicala it19 corpus, LANE-A2PUSH)	castelcicala-1816	2026-10-02T23:30	pushed	done line in ROOM.md with commit on origin/main	136832c6
+session_01VmDjaBZ3kBCYkmY4ZdwChP	LIVE A2-GRA (fr2980-gramont key-image check, LANE-A2PUSH)	fr2980-gramont	2026-10-02T23:30	pushed	done line in ROOM.md with commit on origin/main	297d4b1e
+session_01LoZ9Nr3StbvzJDAZM4zMJ2	LIVE A2-COL3 (colbert26 f.23 re-pair, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-02T23:30	pushed	done line in ROOM.md with commit on origin/main	6eb904ce
+session_017NszQWxaYtmtvi4o4UwaMj	LIVE A2-RAA (na-raad-azie 209 vs code, LANE-A2PUSH)	na-raad-azie-1800	2026-10-02T23:29	pushed	done line in ROOM.md with commit on origin/main	621fe9fd
+session_01P8bjYZvk857DGXjMN4Y6Vg	LIVE A2-ULA (ula-degeer Oxenstierna search, LANE-A2PUSH)		2026-10-02T23:28	pushed	done line in ROOM.md with commit on origin/main	27d65fbd
+session_01G8GUYozVfbUf2d4xJJJChR	LIVE A2-LAG (la-garde Gand insertion, LANE-A2PUSH)	la-garde-1577	2026-10-02T23:28	pushed	done line in ROOM.md with commit on origin/main	28ce09ad
+session_019xz5FbGJnaN5BTAupi2Ytk	LIVE A2-SAV (fr3789 savary settle, LANE-A2PUSH)		2026-10-02T23:28	pushed	done line in ROOM.md with commit on origin/main	82c16112
+session_01L71WmDWV115HohJom5WWZm	LIVE A2-SHA (pro30-shaftesbury letter-book, LANE-A2PUSH)		2026-10-02T23:27	pushed	done line in ROOM.md with commit on origin/main	eed89fc5
+session_01Lx8MbmCoF4ZPEV9YVhqDJx	LIVE GF-A2-8 (gate-fix x4, LANE-A2PUSH)	heinsius-vanhaersolte-1703,fr5160-letellier-1653,na-raad-azie-1800,ra-karlxi-fullmakt-1677	2026-10-02T23:18	pushed	done line in ROOM.md with commit on origin/main	eedf2892
+session_01S3oNgVLh7vdgCgtgyPVk7U	LIVE A2-HAR5 (harley gloss redo, LANE-A2PUSH)		2026-10-02T23:17	nothing	superseded: alignment script pushed (eb8b231bc); gloss TSVs never pushed, later redone and pushed by A2-HAR6/A2-HAR8 line; closed-interrupted by CLOSEOUT-A2	eb8b231bc
+session_01VV2EYEV5z2ncYPpr2ZVnoB	LIVE BIRAGO-NUM3 (via LANE-A2PUSH)	birago-fr3252-1571-72	2026-10-02T23:17	pushed	done line in ROOM.md with commit on origin/main	81f249d8
+session_01E1akBRxiqxhGgfenirNaut	LIVE GF-A2-9 (gate-fix x4, LANE-A2PUSH)	sp105-paget-1693,sp90-raby-whitworth-1705,courten-diary,sp36-ball-1745	2026-10-02T23:15	pushed	done line in ROOM.md with commit on origin/main	525d2111
+session_01EePictubJooCSctizQNQbP	LIVE A2-COL2 (colbert26 f.23, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-02T23:14	pushed	done line in ROOM.md with commit on origin/main	951fdb54
+session_01HbdcSYyFA5reFEmx9ETtU1	LIVE A2-CAS6 (castelcicala R9587, LANE-A2PUSH)	castelcicala-1816	2026-10-02T23:11	pushed	done line in ROOM.md with commit on origin/main	fb9402f2
+session_01QutV6bfuUoVsb3JfLqeek6	LIVE VERIFY-F61R (LANE-A2PUSH)		2026-10-02T23:11	pushed	done line in ROOM.md; commit found on origin/main by label	b440f608b
+session_01JqThio3szLUoS4WpFuqdtZ	LIVE NEVBIR-117C (via LANE-A2PUSH)	birago-fr3252-1571-72	2026-10-02T23:10	pushed	done line in ROOM.md with commit on origin/main	ec09c3aa
+session_01EjxZwpBm1vjQCRd6fcKLVk	LIVE VERIFY-AVS4 (LANE-A2PUSH)		2026-10-02T23:09	pushed	done line in ROOM.md; commit found on origin/main by label	53653df6d
+session_01RN1b5Y9ki2PhspijSUndmM	LIVE A2-AVS4 (august-van-saksen WVO 124 align, LANE-A2PUSH)	august-van-saksen-1561-64	2026-10-02T22:59	pushed	done line in ROOM.md with commit on origin/main	c12d7bf2
+session_01B2DSYh6ogPMubzdbuSwZpB	LIVE A2-HAR4 (harley align + solve, LANE-A2PUSH)	harley-287-1587	2026-10-02T22:58	pushed	done line in ROOM.md; commit found on origin/main by label	14a97f118
+session_01Sno2gGTHNWtDfcwZQa8wxj	LIVE A2-COL (colbert26 interlinear key, LANE-A2PUSH)	colbert26-lathuillerie-1644	2026-10-02T22:57	pushed	done line in ROOM.md with commit on origin/main	5681bd8c
+session_01JWqxKgAcpqVPid2Gcsnmhs	LIVE A2-CAS5 (castelcicala pencil glosses, LANE-A2PUSH)	castelcicala-1816	2026-10-02T22:56	pushed	done line in ROOM.md; commit found on origin/main by label	1e2bc7d74
+session_01HdpC6ikv4HXrwxQsSEBBry	LIVE GF-A2-6 (gate-fix x4, LANE-A2PUSH)	sp99-wotton-1622,sp81-stanning-1631,sp8-ehrenstein-1689,pro30-shaftesbury-1682	2026-10-02T22:54	pushed	done line in ROOM.md; commit found on origin/main by label	14ce3b474
+session_01Wex8JgywQDiZ3gQ1LCa8X6	LIVE BIRAGO-NUM2 (via LANE-A2PUSH)		2026-10-02T22:54	pushed	done line in ROOM.md with commit on origin/main	b03ca5ac
+session_01LroqTeyR6sXHGFQWBEgchV	LIVE GF-A2-7 (gate-fix x4, LANE-A2PUSH)	hza-hohenlohe-1679,stas-waldburg-1653,nla-heinrich-braunschweig-1519,hstas-osiander-1627	2026-10-02T22:53	pushed	done line in ROOM.md; commit found on origin/main by label	f7d0c06a6
+session_01M94wz6Me3KVgeB41XXYZ8E	LIVE GF-A2-5 (gate-fix x4, LANE-A2PUSH)	bl-james-1669,na-oldenbarnevelt-2442-1605,rumpf-vandebie-heinsius-1716-19,heinsius-dopff-1702	2026-10-02T22:53	pushed	done line in ROOM.md; commit found on origin/main by label	8068ec4e2
+session_013wNERzUrux8G4r89TVH86x	LIVE A2-F61R (f.61r clear text, LANE-A2PUSH)	fr4715-f61-mayenne-1592	2026-10-02T22:52	pushed	done line in ROOM.md with commit on origin/main	d3e1dd18
+session_01DJpiYMfGEyH89RynHEhrHu	LIVE A2-WVH (willem-van-hessen minuut key, LANE-A2PUSH)	willem-van-hessen-1567	2026-10-02T22:47	pushed	done line in ROOM.md with commit on origin/main	7fa57cf9
+session_01HeLTQUuWbQ5uWhTg29wj7H	LIVE A2-AVS3 (august-van-saksen WVO 124, LANE-A2PUSH)	august-van-saksen-1561-64	2026-10-02T22:40	pushed	done line in ROOM.md; commit found on origin/main by label	19670b6f9
+session_014cws3sfTYbD4TnFrBtRG2T	LIVE GF-A2-4 (gate-fix x4, LANE-A2PUSH)	willem-van-hessen-1567,la-garde-1577,kaliningrad-2015,sp78-yorke-1749	2026-10-02T22:37	pushed	done line in ROOM.md; commit found on origin/main by label	7f43806d9
+session_01HVK1FyyntzPLvYWLWsNya2	LIVE GF-A2-3 (gate-fix x4, LANE-A2PUSH)	colbert26-lathuillerie-1644,fr2980-gramont,fr5761-election-1519,wvo-hessen-1564	2026-10-02T22:35	pushed	done line in ROOM.md; commit found on origin/main by label	89f175c1f
+session_01RVCCBgj24XJ58hbXKPVdXe	LIVE A2-HDK4 (hessen-daenemark Arcinsys, LANE-A2PUSH)	hessen-daenemark-1672	2026-10-02T22:34	pushed	done line in ROOM.md; commit found on origin/main by label	8b3d33938
+session_01P2xCfwQpuq87eEVXfjMynz	LIVE A2-F61M (fr4715-f61 merge, LANE-A2PUSH)	fr4715-f61-mayenne-1592	2026-10-02T22:34	pushed	done line in ROOM.md; commit found on origin/main by label	f8104092c
+session_017rbu1arn4H1SpvtD9mxAnh	LIVE BIRAGO-SMALL (via LANE-A2PUSH)		2026-10-02T22:34	pushed	done line in ROOM.md with commit on origin/main	2a750ceb
+session_019NanSp9XKi4daV18rMbHuP	LIVE A2-CAS4 (castelcicala R9571 correction, LANE-A2PUSH)	castelcicala-1816	2026-10-02T22:32	pushed	done line in ROOM.md; commit found on origin/main by label	125b8867d
+session_01VXFGFFgnPUaaMYmdSoxTdG	LIVE GUAZZO-KEY (via LANE-A2PUSH)		2026-10-02T22:32	pushed	done line in ROOM.md with commit on origin/main	df41c64f
+session_01PLVzK1biP3wmj3V2zzETaC	LIVE A2-CAT2 (catokwacopa 1879 ads, LANE-A2PUSH)	catokwacopa-1875	2026-10-02T22:31	pushed	done line in ROOM.md; commit found on origin/main by label	9cef88a77
+session_01GZwnMkqPbfb4FgLWtEgDz7	LIVE A2-LVN4 (lodewijk Orange replies, LANE-A2PUSH)	lodewijk-van-nassau-1573-74	2026-10-02T22:31	pushed	done line in ROOM.md; commit found on origin/main by label	0ea9a7794
+session_019YJeWTBQNzsna8qwQT6pXV	LIVE BIRAGO-NUM (via LANE-A2PUSH)		2026-10-02T22:31	pushed	done line in ROOM.md with commit on origin/main	d44f7dfbe
+session_01KLfk1EnuwELanBdc7AY5Zw	LIVE A2-HAR3 (harley gloss alignment, LANE-A2PUSH)	nevers-birago-fr3251-1572	2026-10-02T22:21	nothing	turn failed/interrupted (account-2 limit); closed-interrupted by CLOSEOUT-A2, unfinished work recorded in target NOTES Interrupted section; container archived, nothing to recover	c92db36c1
+session_01NpyDLyYXAbZSVtNLqtDMqY	LIVE NEVBIR-3252-B (via LANE-A2PUSH)		2026-10-02T22:21	pushed	done line in ROOM.md with commit on origin/main	382490e7
+session_01ELPRtuY65xCk92UrJatmm8	LIVE A2-HDK3 (hessen-daenemark key.tsv, LANE-A2PUSH)	hessen-daenemark-1672	2026-10-02T22:17	pushed	done line in ROOM.md; commit found on origin/main by label	04c31ca61
+session_01KzAMX5iLd8kWD6QfdkwHGZ	LIVE A2-CAS3 (castelcicala DECODE, LANE-A2PUSH)	castelcicala-1816	2026-10-02T22:16	pushed	done line in ROOM.md; commit found on origin/main by label	0520b0092
+session_01UaTGzpnZVUvN1vrTvc368L	LIVE CS-A2-C (check-solved x4, LANE-A2PUSH)	taurello-roma-1527,clerville-francia-1648,belmesseri-napoli-1627,ra-celsing-sillen-1755	2026-10-02T22:13	pushed	done line in ROOM.md; commit found on origin/main by label	61a27fd1c
+session_01AoQQkarTgkqV1KE2uewuvf	LIVE A2-LVN3 (lodewijk null band, LANE-A2PUSH)	lodewijk-van-nassau-1573-74	2026-10-02T22:12	pushed	done line in ROOM.md; commit found on origin/main by label	6f83ec150
+session_01HmMjynZZGC23qEikqj8CBR	LIVE VERIFY-F61-LL (LANE-A2PUSH)	fr4715-f61-mayenne-1592	2026-10-02T22:10	pushed	done line in ROOM.md; commit found on origin/main by label	f2d0f062c
+session_01WfVhJdE5Hn8DFn3ouP4F5J	LIVE NEVBIR-87ALIGN (via LANE-A2PUSH)		2026-10-02T21:59	pushed	done line in ROOM.md with commit on origin/main	a9afa379
+session_01NZsNEU6FNqwxRxRs6JyBkx	LIVE CS-A2-B (check-solved x4, LANE-A2PUSH)	sp78-waldegrave-delafaye-1734,della-torre-olanda-1690,salvago-caraffa-1691,viganego-torino-1717	2026-10-02T21:56	pushed	done line in ROOM.md; commit found on origin/main by label	1ea218501
+session_014pAGApN784RG6BKvov2mPi	LIVE AUDIT2-NEVBIR-90R (via LANE-A2PUSH)		2026-10-02T21:56	pushed	done line in ROOM.md with commit on origin/main	b51d9c2b
+session_01DbvDk2S6Gkr81RkdBU6tyH	LIVE A2-F61 (fr4715-f61 LL foil, LANE-A2PUSH)	fr4715-f61-mayenne-1592	2026-10-02T21:55	pushed	done line in ROOM.md with commit on origin/main	53c2d53c
+session_01KKQEfiP42Adrng1MEmZ8d7	LIVE VERIFY-CEPPO-SPLITS (via LANE-A2PUSH)		2026-10-02T21:55	pushed	done line in ROOM.md with commit on origin/main	6ada77ea
+session_014SNBbzbLP71YqJEqMhuSZW	LIVE A2-AVS-2 (august-van-saksen WVO 175, LANE-A2PUSH)		2026-10-02T21:54	pushed	respawn; done line under A2-AVS with commit on origin/main	6efd70689
+session_01G8y2zuNXpfhASjsyKDRFx8	LIVE A2-PAG3 (paget gutter groups, LANE-A2PUSH)	clairambault1225-paget-1714	2026-10-02T21:53	pushed	done line in ROOM.md with commit on origin/main	c6ff4f60
+session_01Xk8vNi9fk3DEvq3xoTbijV	LIVE VERIFY-LVN-173 (LANE-A2PUSH)		2026-10-02T21:52	pushed	done line in ROOM.md; commit found on origin/main by label	f64b245b4
+session_01QmKVJiF2F5Pgr1xyyEDX1m	LIVE NEVBIR-3252 (Birago fr.3252, via LANE-A2PUSH)		2026-10-02T21:47	pushed	done line in ROOM.md with commit on origin/main	382490e7
+session_01PYDcvVykrbaZQH2oHivm6J	LIVE A2-HDK-2 (hessen-daenemark keys, LANE-A2PUSH)	hessen-daenemark-1672	2026-10-02T21:42	pushed	respawn; done line under A2-HDK with commit on origin/main	fc1096ed1
+session_0136WwKu6uzuKve6ry5NS194	LIVE A2-HAR-2 (harley-287 step, LANE-A2PUSH)	harley-287-1587	2026-10-02T21:41	pushed	respawn; done line under A2-HAR with commit on origin/main	3655b9bfa
+session_01CKXvndiZZeQxf1fmKVLcWs	LIVE A2-LVN-2 (lodewijk code 173, LANE-A2PUSH)	lodewijk-van-nassau-1573-74	2026-10-02T21:39	pushed	respawn; done line under A2-LVN with commit on origin/main	eb79d986f
+session_01XDP1NV7hm6JQ7obUfzZn7y	LIVE GUAZZO-INTAKE (fr.4688, via LANE-A2PUSH)	guazzo-nevers-fr4688-1571-72	2026-10-02T21:39	pushed	done line in ROOM.md with commit on origin/main	e7c79420
+session_01VGcAMJ7LRBfB5EViRcENc7	LIVE CEPPO-SPLITS (Birago 1570-71, via LANE-A2PUSH)		2026-10-02T21:39	pushed	done line in ROOM.md with commit on origin/main	ffc4cb30
+session_015s2ftm7YxWNSDLD8tm9uuf	LIVE NEVBIR-OFFSHEET (Birago 1572, via LANE-A2PUSH)		2026-10-02T21:38	pushed	done line in ROOM.md with commit on origin/main	6c915406
+session_01CPkR7jJqyMzBY6zQ4FoCri	LIVE A2-CAS-2 (castelcicala concordance, LANE-A2PUSH)	castelcicala-1816	2026-10-02T21:37	pushed	respawn; done line under A2-CAS with commit on origin/main	b0b2880be
+session_01N7u9WPNG4WVYUBXN5g4fmj	LIVE A2-PAG2 (clairambault1225-paget image check, LANE-A2PUSH)	clairambault1225-paget-1714	2026-10-02T21:25	pushed	done line in ROOM.md with commit on origin/main	f009da8f
+session_01YSMKW3DAS6mrrNUUznxy6F	LIVE GF-A2-1 (gate-fix AVS/CAS/HDK/LVN, LANE-A2PUSH)	august-van-saksen-1561-64,castelcicala-1816,hessen-daenemark-1672,lodewijk-van-nassau-1573-74	2026-10-02T21:24	pushed	done line in ROOM.md with commit on origin/main	59dd17c3
+session_01Y7GTuwXXnrve3etrqXQS7a	LIVE GF-A2-2 (gate-fix HAR/F61/BOW, LANE-A2PUSH)	harley-287-1587,fr4715-f61-mayenne-1592,bowes-walsingham-1583	2026-10-02T21:23	pushed	done line in ROOM.md; commit found on origin/main by label	400da0430
+session_01VRrNrMfsi7KmwGv7nnYsFs	LIVE CS-A2-A (check-solved x4, LANE-A2PUSH)	sp81-wroth-1596,zbz-busbecq-1587,ula-degeer-1644,konstanz-talleyrand-sieyes-1798	2026-10-02T21:21	pushed	done line in ROOM.md; commit found on origin/main by label	0f8a75b4a
+session_01WPV9iV95eLj37dFeEgYPNt	LIVE parent worker VERIFY-NEVBIR-90REST (verifier: no.90 f.184v-f.185v)		2026-10-02T21:20	pushed	done line in ROOM.md with commit on origin/main	c898d9c4
+session_011xuxv8RaRTH16KZzyiCWUY	LIVE A2-CAT (catokwacopa, LANE-A2PUSH)	catokwacopa-1875	2026-10-02T21:19	pushed	done line in ROOM.md with commit on origin/main	f557a6be
+session_01Tps3UxmHUocLxLFwoPxDdv	LIVE GATE-TOOL (intake gate fix, LANE-A2PUSH)	catokwacopa-1875,clairambault1225-paget-1714,pollaky-1865-1875,mornington-1798,antt-linhares-chave,hessen-daenemark-1672	2026-10-02T21:15	pushed	done line in ROOM.md; commit matched by target slug	6bdf81af5
+session_01Ujg6wFD9173bh9dR5EKBGt	LIVE parent worker BIRAGO-SCOUT (Birago cipher letters beyond fr.3251; pool table)		2026-10-02T21:01	pushed	done line in ROOM.md with commit on origin/main	f72042c3
+session_019gTaJCgYqTheg8tnyHdJCT	LIVE A2-PAG (clairambault1225-paget, LANE-A2PUSH)	clairambault1225-paget-1714	2026-10-02T21:00	pushed	done line in ROOM.md with commit on origin/main	2f8c5f66
+session_01CfNC5g8ze9diV9AyjHEQY5	LIVE parent worker LOOKALIKE-TOOL (promote look-alike pass to tools/, validate on known-answer leaf)		2026-10-02T20:58	pushed	done line in ROOM.md; commit found on origin/main by label	a0637a8c2
+session_01XgX3iAzg38jt4gU5adYMVN	LIVE A2-LVN (lodewijk-van-nassau, LANE-A2PUSH)		2026-10-02T20:57	pushed	done line in ROOM.md with commit on origin/main	eb79d986
+session_01BQMU2a5RTEiMbuBhwPP1mf	LIVE A2-AVS (august-van-saksen, LANE-A2PUSH)	august-van-saksen-1561-64	2026-10-02T20:56	pushed	done line in ROOM.md; commit found on origin/main by label	aaf1615fc
+session_01BBUTYGL95vn3PDZwAqMGrX	LIVE parent worker TRANSLATE-NEVBIR (word-split Italian + English gloss, nos.71/86/90)		2026-10-02T20:56	pushed	done line in ROOM.md with commit on origin/main	af626ce7
+session_01HN8YEUMT3Jpgj6S7sXYAXb	LIVE A2-HAR (harley-287, LANE-A2PUSH)	harley-287-1587	2026-10-02T20:55	pushed	done line in ROOM.md; commit found on origin/main by label	c2962b0ae
+session_01B5D5ehCKDihdjhiTanMENN	LIVE A2-HDK (hessen-daenemark, LANE-A2PUSH)	hessen-daenemark-1672	2026-10-02T20:55	pushed	done line in ROOM.md; commit found on origin/main by label	8eca1e4ff
+session_01SiW2GD2pHxDzLos1gp1SNH	LIVE A2-CAS (castelcicala, LANE-A2PUSH)	castelcicala-1816	2026-10-02T20:55	pushed	done line in ROOM.md with commit on origin/main	b0b2880b
+session_01R4N4Px14NHHCRLiqn2LWin	LIVE parent worker NEVBIR-185B (nevers-birago no.90 f.185r/v remaining lines)		2026-10-02T20:27	pushed	done line in ROOM.md with commit on origin/main	bee2c107
+session_01E21irLisZHsarN4btdFciw	LIVE parent worker AUDIT2-NEVBIR (second audit nevers-birago nos.71/86/90)		2026-10-02T20:25	pushed	done line in ROOM.md with commit on origin/main	b51d9c2b
+session_01JRU1d5d7VpLr7j1atZLW3c	LIVE parent worker VERIFY-NEVBIR-86 (verifier: nevers-birago no.86)		2026-10-02T19:25	pushed	done line in ROOM.md with commit on origin/main	9b126e2b
+session_01QfXKNgPadKwarCDrUAw4d5	LIVE parent worker NEVBIR-185 (nevers-birago no.90 f.184v foot + f.185r/v)		2026-10-02T19:21	pushed	done line in ROOM.md with commit on origin/main	53b3d449
+session_01SLgdLnwEPVEAKbUo8Lkto9	LIVE parent worker NEVBIR-LOOKALIKE (nevers-birago no.73/no.85 look-alike re-read + control)	nevers-birago-fr3251-1572	2026-10-02T19:19	pushed	done line in ROOM.md with commit on origin/main	c5ac1829
+session_011vCzhATmNuHrrJGf2ot5YQ	LIVE parent worker NEVBIR-174V-B (nevers-birago no.86 f.174v half B + f.175r head + f.175v)		2026-10-02T18:28	pushed	done line in ROOM.md with commit on origin/main	bad39c69
+session_013ahvx17TsWWJJe4xzj7MhP	LIVE parent worker NEVBIR-174V-A (nevers-birago no.86 f.174v half A)		2026-10-02T18:24	pushed	done line in ROOM.md with commit on origin/main	a1d9bef2
+session_01M3xNSnLUyXZP6VMB9nCGLp	LIVE parent worker VERIFY-NEVBIR-82 (verifier: nevers-birago-fr3251-1572 no.82)	nevers-birago-fr3251-1572	2026-10-02T18:18	pushed	done line in ROOM.md with commit on origin/main	711950c3
+session_015DaE5rVM1789AY8g52Kg3w	LIVE parent worker NEVBIR-POOL (pooled shuffled-key test of no.73/85/86 short runs)	nevers-birago-fr3251-1572	2026-10-02T18:15	pushed	done line in ROOM.md with commit on origin/main	33d5113c
+session_01WUbAmKpe84hdvfko3z5Wej	LIVE parent worker VERIFY-NEVBIR-139V (verifier: nevers-birago-fr3251-1572 139V)	nevers-birago-fr3251-1572	2026-10-02T17:21	pushed	done line in ROOM.md with commit on origin/main	6398bd5d
+session_01JGpK1Y2GAepKNnMefC4AFU	LIVE parent worker VERIFY-NEVBIR-184 (verifier: nevers-birago-fr3251-1572 184)	nevers-birago-fr3251-1572	2026-10-02T17:19	pushed	done line in ROOM.md with commit on origin/main	7d108e37
+session_01BBypPYNQsGp3u886w3jTiZ	LIVE parent worker VERIFY-NEVBIR-152 (verifier: nevers-birago-fr3251-1572 152)	nevers-birago-fr3251-1572	2026-10-02T17:18	pushed	done line in ROOM.md with commit on origin/main	3e8e5e1e
+session_01BxmN1hUdxV8fy7aoGJnptk	LIVE parent worker OUT-CHECK-MERCY-REPLY2 (gate 7 on the revised Bourdeau reply)		2026-10-02T17:13	pushed	done line in ROOM.md; commit found on origin/main by label	22fd4e07c
+session_017e5Nuy581JVMgfWkge59b4	LIVE parent worker NEVBIR-184 (letter f.184 no.90: first test under the printed 1572 key)		2026-10-02T16:22	pushed	done line in ROOM.md with commit on origin/main	62d40a28
+session_0179rpJgZfob4E3Yx7rBXVCa	LIVE parent worker NEVBIR-168 (letter f.168 no.85: first test under the printed 1572 key)		2026-10-02T16:20	pushed	done line in ROOM.md with commit on origin/main	35ede562
+session_011pDRjmDSQFQ7rwDnfMcBaw	LIVE parent worker NEVBIR-170 (letter f.170 no.86: first test under the printed 1572 key)		2026-10-02T16:19	pushed	done line in ROOM.md with commit on origin/main	bdcd7c34
+session_015KUhz8BP7yByc9pgDnW3Ed	LIVE parent worker NEVBIR-162 (letter f.162 no.82: first test under the printed 1572 key)		2026-10-02T16:19	pushed	done line in ROOM.md with commit on origin/main	b5e121af
+session_01NFu5YWNMnkKL5i19Z8kMeT	LIVE parent worker NEVBIR-152 (letter f.152 no.77: first test under the printed 1572 key)		2026-10-02T15:20	pushed	done line in ROOM.md with commit on origin/main	103e9bd4
+session_01D4sjTS8weDL5wChQq3uQGY	LIVE parent worker NEVBIR-138 (letter f.138 no.71: first test under the printed 1572 key)		2026-10-02T15:19	pushed	done line in ROOM.md with commit on origin/main	29e2a43f
+session_01MP6iYvmyAVZwgM32EY49jj	LIVE parent worker NEVBIR-144 (letter f.144 no.73: first test under the printed 1572 key)		2026-10-02T15:18	pushed	done line in ROOM.md with commit on origin/main	3b7ccb17
+session_01SaoEQtBY6rZavSSUSdZjKR	LIVE parent worker MERCY-REPLY-UPD (update the Bourdeau reply draft with the blind code-15 result)		2026-10-02T15:12	pushed	done line in ROOM.md; commit found on origin/main by label	5d6a33759
+session_01XpsvVp55AzdfiYJcq7A875	LIVE parent worker PREMISE-NEVBIR (premise check on the 7 unread Birago 1572 letters)	nevers-birago-fr3251-1572	2026-10-02T13:23	pushed	done line in ROOM.md with commit on origin/main	fbc3b0ca
+session_01WQaq9TRcgPWiXbNhwGCSTT	LIVE parent worker PAGET-KEY (premise check + period glosses to key entries)	clairambault1225-paget-1714	2026-10-02T13:18	pushed	done line in ROOM.md with commit on origin/main	25ddb304
+session_011m6miavPpz3veDq3SrVQ4N	LIVE parent worker MERCY-C15 (blind reads of code 15 / v04:11)	espagnol142-mercy-1648	2026-10-02T13:17	pushed	done line in ROOM.md with commit on origin/main	53b615f0
+session_01F5eoBMKV5qnoww21vX8awM	LIVE parent worker VERIFY-ROYALIST-1646 (verifier: intercepted-royalist-1646)	intercepted-royalist-1646	2026-10-02T08:19	pushed	done line in ROOM.md with commit on origin/main	9b8eddcc
+session_01SKNBTP5akrsiRWNcd8aNDp	LIVE parent worker VERIFY-NEVBIR-1572 (verifier: nevers-birago-fr3251-1572)	nevers-birago-fr3251-1572	2026-10-02T08:17	pushed	done line in ROOM.md with commit on origin/main	46f98486
+session_01B5i6mN95fqddspfe1giK2h	LIVE parent worker VERIFY-CLINTON-2894 (verifier: pro3055-clinton-1779)	pro3055-clinton-1779	2026-10-02T08:16	pushed	done line in ROOM.md with commit on origin/main	d9c16008
+session_01CQvsNJyVmdztxTf96v4BGg	LIVE parent worker NEXT2-PAG (clairambault1225-paget-1714: web/blog intake check, decode.json, regenerate the reading)	clairambault1225-paget-1714	2026-10-02T06:15	pushed	done line in ROOM.md with commit on origin/main	c7a29283
+session_013og9Zxm3iWnEqMFXjdtfGy	LIVE parent worker MERCY-SIB (espagnol142-mercy-1648: hunt for other cipher pieces of the 1648 mission)	espagnol142-mercy-1648	2026-10-02T04:17	pushed	done line in ROOM.md with commit on origin/main	7eecc108
+session_01EtfdvqmmTMpDCtNyP9FSxD	LIVE parent worker VERIFY-BOWES-584 (bowes-walsingham-1583: verify NEXT-BOW's asterisk placements, update AUDIT.md)	bowes-walsingham-1583	2026-10-02T04:14	pushed	done line in ROOM.md; commit found on origin/main by label	898fa10f0
+session_01NWsNESKr69tCmuHLtie1S7	LIVE parent worker VERIFY-HESSEN-1824 (hessen-1824 found-solved by Bourdeau 28 Sept: confirm, AUDIT N0, retire NEAR row)	hessen-1824	2026-10-02T04:14	pushed	done line in ROOM.md with commit on origin/main	2b7a59e7
+session_01GejJsBNsYZyJFMyDEDfpAb	LIVE parent worker DISPATCH-STANDBY (add the fallback-chain standby check to account 2's dispatcher trigger)		2026-10-02T04:12	pushed	done line in ROOM.md; commit found on origin/main by label	047b9ce33
+session_01KJi8SACjBKvW5X5TVE9TQF	LIVE parent worker NEXT-HAR (harley-287-1587: cheapest next step from finish-or-blocker pass)	harley-287-1587	2026-10-02T03:33	pushed	done line in ROOM.md with commit on origin/main	1b723f6e
+session_019h7LDxX3JCrDUk2KxMg2EQ	LIVE parent worker NEXT-F61 (fr4715-f61-mayenne-1592: cheapest next step from finish-or-blocker pass)	fr4715-f61-mayenne-1592	2026-10-02T03:29	pushed	done line in ROOM.md with commit on origin/main	e07bc696
+session_01RWEGkv7gVS3PstXtHNZr44	LIVE parent worker NEXT-PAG (clairambault1225-paget-1714: cheapest next step from finish-or-blocker pass)	clairambault1225-paget-1714	2026-10-02T03:27	pushed	done line in ROOM.md with commit on origin/main	7d92609c
+session_012iQ1dQBqsx3trYWkKMPHgm	LIVE parent worker NEXT-HDK (hessen-daenemark-1672: cheapest next step from finish-or-blocker pass)	hessen-daenemark-1672	2026-10-02T03:25	pushed	done line in ROOM.md with commit on origin/main	cfb6e888
+session_01WpTzG8A1RociPMSjiCQeYG	LIVE parent worker NEXT-CAT (catokwacopa-1875: cheapest next step from finish-or-blocker pass)	catokwacopa-1875	2026-10-02T03:22	pushed	done line in ROOM.md with commit on origin/main	6bdf81af
+session_01JJFzvDFNWnrJvE7cgokdR8	LIVE parent worker NEXT-CAS (castelcicala-1816: cheapest next step from finish-or-blocker pass)	castelcicala-1816	2026-10-02T03:17	pushed	done line in ROOM.md; commit found on origin/main by label	cf4eb1fe1
+session_01MKAYpw1vTTxDoejN2zNNK4	LIVE parent worker NEXT-LVN (lodewijk-van-nassau-1573-74: cheapest next step from finish-or-blocker pass)	lodewijk-van-nassau-1573-74	2026-10-02T03:16	pushed	done line in ROOM.md with commit on origin/main	e78902d5
+session_01UyDf7AQLahXeV6RMKskKUC	LIVE parent worker NEXT-MAL (malsburg-hessen-1636: cheapest next step from finish-or-blocker pass)	malsburg-hessen-1636	2026-10-02T03:15	pushed	done line in ROOM.md; commit found on origin/main by label	34c70fbb6
+session_01QAzKiZ7c87uoRAhexQ2C1e	LIVE parent worker NEXT-PAG (clairambault1225-paget-1714: cheapest next step from finish-or-blocker pass)	clairambault1225-paget-1714	2026-10-02T03:13	pushed	done line in ROOM.md with commit on origin/main	7d92609c
+session_01L7JqrpFbvJGEJwefok3FCg	LIVE parent worker NEXT-MAL (malsburg-hessen-1636: cheapest next step from finish-or-blocker pass)	malsburg-hessen-1636	2026-10-02T03:10	pushed	done line in ROOM.md; commit found on origin/main by label	34c70fbb6
+session_01UV3ZK58Aeu6aLgbaQMqwc4	LIVE parent worker NEXT-LVN (lodewijk-van-nassau-1573-74: cheapest next step from finish-or-blocker pass)	lodewijk-van-nassau-1573-74	2026-10-02T03:10	pushed	done line in ROOM.md with commit on origin/main	e78902d5
+session_014K59JvDZkqFKon312gq7rA	LIVE parent worker NEXT-HDK (hessen-daenemark-1672: cheapest next step from finish-or-blocker pass)	hessen-daenemark-1672	2026-10-02T03:10	pushed	done line in ROOM.md with commit on origin/main	cfb6e888
+session_01UarVRVsUuXRgkrDCJX7MRn	LIVE parent worker NEXT-HAR (harley-287-1587: cheapest next step from finish-or-blocker pass)	harley-287-1587	2026-10-02T03:10	pushed	done line in ROOM.md with commit on origin/main	1b723f6e
+session_01BS7JjB1eXSbSuvn2jsVNki	LIVE parent worker NEXT-F61 (fr4715-f61-mayenne-1592: cheapest next step from finish-or-blocker pass)	fr4715-f61-mayenne-1592	2026-10-02T02:11	pushed	done line in ROOM.md with commit on origin/main	e07bc696
+session_015rfjfX3dZSBjwuWa3G3zfb	LIVE parent worker NEXT-CAT (catokwacopa-1875: cheapest next step from finish-or-blocker pass)	catokwacopa-1875	2026-10-02T02:11	pushed	done line in ROOM.md with commit on origin/main	6bdf81af
+session_01Fqe2kaNtq4hRVqgWe5f7E6	LIVE parent worker NEXT-CAS (castelcicala-1816: cheapest next step from finish-or-blocker pass)	castelcicala-1816	2026-10-02T02:10	pushed	done line in ROOM.md; commit found on origin/main by label	cf4eb1fe1
+session_01GGhhpUV2rrk233PjMRrtVc	LIVE parent worker NEXT-BOW (bowes-walsingham-1583: cheapest next step from finish-or-blocker pass)	bowes-walsingham-1583	2026-10-02T01:30	pushed	done line in ROOM.md; commit found on origin/main by label	4a0d9cf1a
+session_01Mcfa2Lg5uvT42XzAQ7Nyy9	LIVE parent worker NEXT-BRO (antt-msliv0638-brochado-1712: cheapest next step from finish-or-blocker pass)	antt-msliv0638-brochado-1712	2026-10-02T01:25	pushed	done line in ROOM.md with commit on origin/main	957b1d96
+session_01FP11WhB7VLKDUSr4x5Ke9V	LIVE parent worker NEXT-AVS (august-van-saksen-1561-64: cheapest next step from finish-or-blocker pass)	august-van-saksen-1561-64	2026-10-02T01:22	pushed	done line in ROOM.md with commit on origin/main	4f9b66ce
+session_01XDwXfXmotYxSF98UpnsanW	LIVE parent worker NEXT-LIN (antt-linhares-chave: cheapest next step from finish-or-blocker pass)	antt-linhares-chave	2026-10-02T01:19	pushed	done line in ROOM.md; commit found on origin/main by label	4a0d9cf1a
+session_01DDurLDWcXeTtyMzSCc6qvK	LIVE parent worker SOLVERDIFF-BOURDEAU (solver-repo diff vs dbourdeau/cyphersolver; flags found-solved targets)	malsburg-hessen-1636,sp53-16-78,sp53-22-f52,fr4715-vieuville-pool,hessen-1824	2026-10-02T00:27	pushed	done line in ROOM.md with commit on origin/main	4c5b7692
+session_011UoyCpsaQ4jhS2zvAAX5uy	LIVE parent worker SOLVERDIFF-AYMELOGLU (solver-repo diff vs aaymeloglu/unsolved-ciphers)	moray-wood-1568,intercepted-royalist-1646,sp53-16-78,sp53-16-79,sp53-22-f52,debosnys-1883	2026-10-02T00:21	pushed	done line in ROOM.md with commit on origin/main	df2aa768
