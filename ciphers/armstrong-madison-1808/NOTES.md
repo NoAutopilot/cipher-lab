@@ -4048,3 +4048,12 @@ the subject heading "Erving, George William, 1769-1850--Correspondence" (a Perso
 Papers' accounts note, and among the hits on the James Monroe Papers (MSS33217, 1758-1839). The other hits are unrelated
 Ervings (Erving Winslow, Julius Erving, Erving Goffman, Erving, Mass.). ASKS 83 closed: the LOC holds no Erving papers
 collection; any Erving-Armstrong 1808 material at the LOC would be in the Monroe Papers (already the ASKS 80 lead).
+
+## Owner mark counts, 27 stretches (5 Oct 2026 04:29-04:39 UTC, count page artifact TMbzp2zyengn2XufZRJSXP)
+
+All 27 stretches counted by the owner: owner-counts/counts-2026-10-05.tsv (exported from the page db). p1x: no count, "think this
+is a number 4200" (a numeral misboxed as a mark stretch). Box quality: in 5 of 27 the owner counted a mark the red box cut off
+(p1h left, p2c right, p3c right, p3d first mark after 740, p2a "<" before 78), and several boxes took in numerals or ink from the
+neighbouring line -- the boxes came from token positions on a slanted line. Agent readers get the same crops, so clipped and
+bleeding boxes are a likely share of the ~16% reader disagreement. Next: compare these counts with the two transcriptions per
+stretch (worker, ~$2), and fix the crop (slant-aware line bands; see the parent's note to the owner, 5 Oct).
