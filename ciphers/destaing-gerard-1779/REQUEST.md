@@ -33,3 +33,19 @@ images (JPEG/PDF) are free; publication-quality high-resolution images carry a s
 fee.
 
 No personal data (name, address, payment details) is recorded here or should be, per CLAUDE.md rule 9.
+
+---
+
+# Copy request -- Archives nationales, fonds Marine B4 (added 5 Oct 2026, A4-DHOLK)
+
+**Status:** not sent; route via LOCAL-QUEUE L42 (catalogue record and availability first) then a reproduction order.
+
+**What to request** (from Meng, *Despatches and Instructions of C. A. Gérard*, 1939, footnotes; see NOTES.md "Holker lead"):
+- AN Marine B4 143 f.175 -- Gérard to d'Estaing, 28 Aug 1778, signed original in cipher (clear draft: AAE CP EU Supt 1:128).
+- AN Marine B4 143 f.320 -- Gérard to d'Estaing, 24-26 Sept 1778, original (printed by Meng).
+- AN Marine B4 143 f.357 -- Gérard to d'Estaing, 22 Nov 1778 (draft AAE CP EU Supt 1:224).
+- AN Marine B4 168 f.11 -- Gérard to d'Estaing, 26 Jan 1779, original, partly in cipher, postscript in Gérard's hand.
+
+**Why:** ciphered originals of the same Gérard-d'Estaing correspondence whose clear text is in print give known-plaintext
+pairs for the code (grade C), the only key route found online. Reference-quality images of 4 leaves suffice.
+No personal data here (rule 9).

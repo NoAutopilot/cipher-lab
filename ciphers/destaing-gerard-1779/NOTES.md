@@ -346,18 +346,18 @@ Cost: see the lane ledger (6 Sonnet calls + 1 reconciliation unit).
 
 ## Remaining gaps (FT4-destaing-gerard-1779, 3 Oct 2026)
 Read so far: 0 of 216 code tokens (no key, no reading); transcription confirmed on three British copies (collation.tsv, 215/216, DEST-COLLATE 5 Oct 2026)
-- whole code text (216 tokens) - blocker: no-key-material; no French navy/AE key of 1778-80 on file, and the Luzerne 1781 key has chance-level overlap (FT4 above); the decipherment copy (AAE Corr. pol. Etats-Unis Supt.1) and the sender's register (AN Marine B4 168) are offline
+- whole code text (216 tokens) - blocker: no-key-material (A4-DHOLK 5 Oct 2026: none online; the named key route is the AN Marine B4 143/168 Gérard cipher originals, REQUEST.md); no French navy/AE key of 1778-80 on file, and the Luzerne 1781 key has chance-level overlap (FT4 above); the decipherment copy (AAE Corr. pol. Etats-Unis Supt.1) and the sender's register (AN Marine B4 168) are offline
 - sender's register copy in clear - blocker: waiting-on LOCAL-QUEUE L42 (AN Marine B4 168 catalogue record); francearchives JS-redirects the cloud, FT4 above
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: Meng and Clements finding aid swept (ZX2-EST, 25 Sept); none found; Doniol iv numeral sweep blocked by IA HTTP 500
-- [ ] clear-pages: sender's register copy may be in clear; planned step LOCAL-QUEUE L42 then a page read
+- [ ] clear-pages: sender's register copy may be in clear; planned step LOCAL-QUEUE L42 then a page read; also (A4-DHOLK, 5 Oct 2026) known-plaintext pairs for the same correspondence cipher: Gérard's ciphered originals to d'Estaing in AN Marine B4 143:175, 143:320, 143:357 and B4 168:11, whose clear text Meng prints from the drafts in AAE CP EU Supt 1 (REQUEST.md, AN section)
 - [x] known-keys: Marbois codes A-D (ZX2-EST) and Luzerne 1781 key (FT4) both at chance overlap
 - [x] print: Doniol iv, Meng, HMC American MSS i-ii, Stopford-Sackville ii, Continental Congress index (GF4-BATCH13)
 - [n/a] key-rebuild: 216 tokens of a ~600-entry code with no crib that reaches any code
 - [x] image-check: Clements scan of Clinton 64:14 (three British copies) collated against ciphertext.txt, 215/216 agree, 1 unsettled (pos 7 in copy B), 0 corrections (DEST-COLLATE, 5 Oct 2026)
 - [n/a] retry: no earlier step failed on transport other than the Doniol djvu download
-Verdict: keep going: 0 internal gaps; cheapest next: page read of AN Marine B4 168 once LOCAL-QUEUE L42 answers, ~$2
+Verdict: keep going: 0 internal gaps; cheapest next: page read of AN Marine B4 168 (incl. f.11) once LOCAL-QUEUE L42 answers, then a known-plaintext alignment of any Gérard cipher original against Meng's print with tools/interlinear_align.py, ~$2
 
 ## While waiting (GF4-BATCH13, account-4, 3 Oct 2026)
 
@@ -409,3 +409,62 @@ Owner downloaded the Hightail file; it is in the private repo, destaing-gerard-1
   a full three-witness comparison (A/B/C number by number) is the next step and replaces the image-check gap.
 Next: three-witness collation of the ~230 code numbers (one worker with the private repo in scope, ~$4); then the
 Holker lead (Holker papers, LoC) for the Gerard cipher key.
+
+## Holker lead (A4-DHOLK, 5 Oct 2026 23:40-23:56 UTC, account-4 worker for LANE DEFAULT-account-4-20261005-2253)
+
+Brief: `.claude/briefs/runs/2026-10-05-account4-default-2253-jobs.md` "A4-DHOLK". Question: is the Gérard-d'Estaing
+correspondence cipher ("le Chiffre qui sert a sa Correspondance avec moi", Clinton 64:15) reachable through Holker or
+anywhere online? **Result: no key and no key fragment found online; step 2 (key test) not run. One concrete route found:
+known-plaintext pairs for the same correspondence, Gérard's ciphered originals to d'Estaing in AN Marine B4, whose clear
+text Meng prints.** Grades: all statements below are search results (no tokens read, nothing graded H/C/S).
+
+Per family, searched or unreachable:
+1. **LoC Manuscript Division, John Holker papers, 1777-1822** (`hdl.loc.gov/loc.mss/eadmss.ms010087`, from the loc.gov
+   JSON search API): description "Correspondence, invoice book of ... Leray de Chaumont, depositions taken before Benjamin
+   Franklin ..."; subject terms include Gérard, La Luzerne, Sartine, Chastellux; `digitized: true` refers to the finding
+   aid only (no item images listed). The finding aid itself (findingaids.loc.gov PDF and hdl page) is **unreachable**:
+   Cloudflare "Just a moment" to curl (403) and to `tools/browser_fetch.js`; stopped on that host. loc.gov searches
+   "holker cipher", "holker estaing" and the AAE "foreign copies" terms returned only unrelated items (Washington Papers
+   Holker letters 1778-79, newspapers). Whether the papers hold a cipher table is **not established**.
+2. **Clements Library finding aids**: Wayback CDX (`findingaids.lib.umich.edu` Clinton) connection reset once this
+   session (and in ZX2-EST and earlier); clements.umich.edu not retried (403 on record). **Unreachable.**
+3. **AAE Correspondance politique, Etats-Unis** (via Meng, archive.org `despatchesinstru00fran`, djvu text grepped):
+   Meng's preface (p.12-13) says Gérard's ciphered despatches carry the Foreign Office's interlinear decipherment and
+   that intercepted copies of the despatches exist in the PRO (transcripts at LoC). Meng's footnotes name Gérard's own
+   letters **to d'Estaing** with the cipher original and a clear draft held separately:
+   - 28 Aug 1778: clear draft AAE CP EU Supt 1:128; "the signed original, in cipher, is in AN (Marine) B4 143:175" (Meng about p.240, fn 16).
+   - 24-26 Sept 1778 (printed by Meng, p.~313-14): original in AN (Marine) B4 143:320; a cipher copy for Versailles AAE CP EU 4:469.
+   - 22 Nov 1778: AN Marine B4 143:357; draft AAE CP EU Supt 1:224; an extract in cipher AAE CP EU 5:201 ("Joint au N° 22 à M. de Sartine") (Meng p.377, fn 4).
+   - 26 Jan 1779 (printed by Meng p.~495-99): "The original, with a postscript in Gerard's handwriting, is in AN (Marine) B4 168:11; partly in cipher"; copy AAE CP EU Supt 1:255.
+   - d'Estaing's letters received by Gérard: AAE CP EU Supt 1 (packet ff.79-135, Aug 1778; the 9 March 1779 letter at Supt 1:263, Meng p.623 fn 2).
+   If the two directions share one table (usual for a two-correspondent nomenclator, not established here, grade M), an
+   image of any of B4 143:175 / 143:320 / 143:357 / 168:11 aligned against Meng's printed text gives code values at grade
+   C with `tools/interlinear_align.py`, testable on collation.tsv with a shuffled-key control (known_key_test.py pattern).
+   Meng also shows Gérard held a separate cipher from Sartine ("le chiffre que ce ministre m'a remis", 16 Aug 1778, p.~228;
+   enclosure AAE CP EU 4:257 "entirely in cipher"): the Marine cipher is a second candidate for the d'Estaing table (M).
+4. **Doniol** (archive.org, be-api fts + vol. III djvu): vol. IV "Holker"/"chiffre" hits are the 6 Jan 1779 Martinique
+   "pli chiffré" sent "en double, dont l'un adressé à Holker" (supports Holker as a relay for ciphered packets, not a key);
+   vol. III "point de copie de vôtre chiffre" (Google Books matched it to d'Estaing) is in fact Vergennes to de Kalb
+   (Doniol III p.~171-72), not this correspondence; vol. V "chiffre" hits are Rochambeau/Ternay 1780. No cipher table printed.
+5. **Google Books API** (`country=US`, key): hits are Doniol (above), Nasatir & Monell *French Consuls in the United
+   States* (1967, NO_PAGES; says Holker's letters are partly in cipher; a calendar of AAE consular correspondence),
+   *B.F. Stevens's Facsimiles* index ("cipher from Mr Holker dated 2nd August [1778], brought by the vessel Fier Rodrigue"
+   -- a Holker-to-France cipher, a different channel), PCC index, Harvard Sparks MSS calendar (Holker items). No key.
+6. **HathiTrust bibliographic API / Open Library**: no published edition of the Holker papers exists to look up (Open
+   Library "holker papers": 0 relevant); HathiTrust bib API reachable (200) but nothing to resolve.
+7. **Europeana / DPLA** (keys): "Holker" 430 / 82 results, all unrelated (Holker Hall, Indiana court cases). Negative.
+8. **DECODE** (snapshot `sources/decode/keys-all-2026-09-28.tsv`, then one browser login this session for full-size
+   images, scratchpad only, not committed): the only 1778-80 "French?" numeric key, record 8792 (BL Add MS 32292 ff.48-49,
+   Dec 1780, a British decipherers' key collection), is endorsed on its face "Dec 1780 Russ" (the Russian embassy's
+   French-language key); record 8791 (ff.46-47) "1780 Russ". **Ruled out by eye**; no other French 1778-80 naval or consular
+   nomenclator in the snapshot.
+9. **FranceArchives** (AN Marine B4 143/168 availability): `tools/browser_fetch.js` (proxy-CA fix applied this session)
+   reached the site but its search redirect landed on "Page not found"; one attempt, not retried. LOCAL-QUEUE L42 stays the route.
+
+Settle it: an image of AN Marine B4 143 ff.175, 320, 357 and B4 168 f.11 (REQUEST.md, AN section; extends L42), or the
+Holker papers finding aid read from a person's browser (LoC Cloudflare). Not chased: PRO intercepted Gérard despatches
+(TNA, Meng's preface; a TNA Discovery API search is the cheap next look, ~$0.5).
+
+Requests: loc.gov 6 (one 503), findingaids.loc.gov 1 + 1 browser (Cloudflare, stopped); web.archive.org 2 (reset);
+be-api.us.archive.org 14; archive.org 3 (advancedsearch 1, djvu 2); googleapis.com/books 5; de-crypt.org 6 curl + 1 browser
+login session (8 files); api.dp.la 1; api.europeana.eu 1; openlibrary.org 1; catalog.hathitrust.org 1; francearchives.gouv.fr 1 browser.
