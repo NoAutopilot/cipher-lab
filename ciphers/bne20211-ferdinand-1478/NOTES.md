@@ -1,6 +1,5 @@
-open
-Tomokiyo 2018 (academia.edu/37751652), the one edition that could key item /123 or /126, NOT opened by CS-A2-M on 3 Oct 2026: academia.edu body still account/Cloudflare-gated, Wayback holds only the 18 KB landing page (CDX 10 Jul 2024), no Tomokiyo mirror; read instead his 29 Nov 2018 Cryptiana post (abstract only, 3 comments not retrievable) and eleanor1476.htm -- blocked.
-Corrected again by the LANE DX orchestrator, 25 Sept 2026 02:10 UTC: Galende Díaz read in full (below) and does not cover items /123 or /126, but Tomokiyo 2018's body is unread and its "Cipher (1476-1479)" (a syllable cipher of over 500 entries) covers the very window of R1172 (4 Nov 1478) and R1180 (4 Dec 1478); by check-solved.md an edition not opened keeps the verdict `blocked`. Unblock: ASKS row 45 (the owner reads the paper), or DECODE document access (ASKS row 42).
+partial
+Check-solved basis (head rewritten 5 Oct 2026 by FER1478-READ from sections already below, intake-gate fix only): Galende Díaz 1993-94 (Cuadernos de Estudios Medievales XVIII-XIX, pp.159-178) read in full 25 Sept 2026 -- names only items /56 and /73; Tomokiyo 2018 (academia.edu/37751652) read in full 5 Oct 2026 from the owner's download (section "Tomokiyo 2018 read" below) -- prints a reconstructed key (Fig. 4) built partly from item 123 but no decipherment or plaintext of item 123 or 126. Neither edition deciphers the letter; the earlier `blocked` (Tomokiyo body not yet opened) is lifted by that read.
 Galende Díaz 1993-94 (Cuadernos de Estudios Medievales y CC.TT.HH. XVIII-XIX, 1993-94, pp.159-178) read in full
 by this worker, 25 Sept 2026 (OCR text and the original PDF, both already on disk in dbourdeau/cyphersolver's
 `esp318/lit/galende1994.{txt,pdf}`, cross-checked against Dialnet record 255134 for the same article/journal/page
@@ -285,3 +284,74 @@ John II, 1476-79) with a published key and at least two period decipherments (12
 Not yet checked-solved per item: before deep work on any item other than 123/126, check-solved per
 .claude/briefs/check-solved.md and tools/intake_gate_check.py. Next: after FER1478-READ, one pool job: check-solved for
 the six, then key from 123+126 (per-unit gates), apply to all eight; ~$15, needs the parent's go.
+
+## Superseded head lines (kept for the record; replaced 5 Oct 2026 by the Tomokiyo read)
+
+- (3 Oct 2026, CS-A2-M) Tomokiyo 2018 (academia.edu/37751652), the one edition that could key item /123 or /126, not then opened by CS-A2-M on 3 Oct 2026: academia.edu body still account/Cloudflare-gated, Wayback holds only the 18 KB landing page (CDX 10 Jul 2024), no Tomokiyo mirror; read instead his 29 Nov 2018 Cryptiana post (abstract only, 3 comments not retrievable) and eleanor1476.htm -- verdict then `blocked`.
+- (25 Sept 2026, LANE DX) Corrected again by the LANE DX orchestrator, 25 Sept 2026 02:10 UTC: Galende Díaz read in full (below) and does not cover items /123 or /126, but Tomokiyo 2018's body was then not opened and its "Cipher (1476-1479)" (a syllable cipher of over 500 entries) covers the very window of R1172 (4 Nov 1478) and R1180 (4 Dec 1478); by check-solved.md an edition not opened kept the verdict blocked at that date. Unblock: ASKS row 45 (the owner reads the paper), or DECODE document access (ASKS row 42).
+## FER1478-READ, 5 Oct 2026 (account-3 worker, brief .claude/briefs/runs/2026-10-05-acct3-fer1478-read.md)
+
+Material: BNE MSS/20211/123 f.1r image p-000.jpg and Tomokiyo 2018 Fig. 4, both in the private repository
+(cipher-lab-private, bne20211-ferdinand-1478/), never committed here. The image is 1114x1520 px, 120 ppi; the BNE PDF
+beside it embeds the same 120 ppi JPEG (pdfimages -list), so no higher-resolution copy is on hand.
+
+Intake: tools/intake_gate_check.py first failed (line 2-3 still said Tomokiyo was not opened); fixed by rewriting
+only the head from the sections already below (old lines kept under "Superseded head lines"). Re-run:
+`ciphers/bne20211-ferdinand-1478: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**Step 1, verdict: the lower cursive block is a period DECIPHERMENT of the cipher block, not a continuation.**
+Layout of f.1r: clear opening ("Recebi la carta de v. alteza de xvij de setiembre ... sobre la reducion de charles
+darteida ... de lo qual soy maravillado"), then 22 lines of cipher, which close with the clear address formula
+"Exmo señor / La vida y Real estado de aquella por luengos tiempos ...". Below that, in a different, smaller cursive
+hand, there are about 15 lines of clear Spanish. Evidence:
+- Its first words, "porq sabe v. alteza lo q yo en ... en dias passados", are what the first cipher signs read
+  under Fig. 4: after "soy maravillado" come double-crossed ff (p), e: (o), gt (r), then a group, then
+  barred-b/q/long-s/crossed-t, i.e. s a b e. So the cipher reads "por[que] sabe".
+- A recurring cipher group, crossed-f/b/q/gt/curly-d/t/barred-b, reads c h a r l e s sign for sign under Fig. 4.
+  It occurs at least 4 times in the cipher block, and the cursive block names "el dicho charles" at least 5 times
+  (D01/D02, D05, D06, D12, D13; both passes).
+- The cursive block takes up the clear opening's subject: the "reducion" of Charles, the kingdom of Navarre, not
+  receiving "ninguno de los agramonteses" (the Agramont faction). It has no salutation or address of its own and
+  starts mid-sentence, which a continuation of the letter would not.
+- The faint interlinear writing above cipher lines 1-2 is a third hand (not read; too faint at 120 ppi).
+
+**Step 2, gate FAILED: the cipher block cannot be transcribed sign by sign from this image.** The crop step ran as
+the brief required:
+`python3 tools/iiif_lines.py --image p-000.jpg --out <scratch>/crops --region 150,355,860,745 --prefix cph --centres <22 eye-checked centres>`
+-> `region 860x745, 22 lines, 22 bands x 1 segments ... wrote 22 crops` (auto-detection gave 20-21 lines on this
+uneven block; the 22 centres came from the ink profile and were checked against the debug overlay; crops stay in
+the session scratchpad). Pass A ran as 4 Sonnet calls over line groups 1-4, 5-8, 9-12 and 13-16 (2x upscale).
+Every call reported the signs as unresolvable: "near-noise", "rough approximations from line shapes". L01 got 24
+labels against about 50 visible signs. A 3x half-line upscale (my own check, L01a/b) is still blurred: the cipher
+x-height is about 12-15 px at native size. TRANSCRIPTION.md's <=5% per-sign error target is out of reach at 120 ppi,
+so per the brief I stopped before pass B on the cipher. The pass-A labels are discarded, not committed. Steps 4-5
+(key.tsv, decode_key.py, reading.txt) were not run, and no reading is claimed.
+
+**Step 3, partly done:** the period decipherment has two blind passes, `period_decipherment_passes.tsv`: pass A by
+the worker (Opus), pass B by a Sonnet subagent (which said about half was legible and some words were filled from
+context). They are not reconciled. They agree on these spans (substance, spelling aside): "porq sabe v. alteza lo q
+yo en ... en dias passados ... el dicho / charles fazia de reduzir se"; "del dicho mes de setiembre"; "soy
+maravillado de lo q por aquesta carta me [scrive]"; "q he fecho al dicho charles"; "y reposo al regno de navarra ...
+por no venir en efecto la reducion del dicho charles"; "en dias passados ... al dicho q no recibiesse ninguno de los
+agra[monteses]"; "de aql regno no solo no lo estorbaria mas [con] todas mis fuerças lo". Both passes are
+low-confidence below line D08 (water stain on the right, faded ink).
+
+Not graded per rule 4: there is no cipher-token reading. This report finds and gives the substance of the period
+decipherment on the leaf only; no novelty is classified (rule 10). Fig. 4 (published) vs a period-derived key: not
+compared (step 4 not reached).
+
+## Remaining gaps (finish-or-blocker pass, 5 Oct 2026)
+Read so far: 0% of cipher tokens graded H/C/S; the period decipherment is in two unreconciled passes (15 lines, about 50% agreed spans)
+- cipher block sign transcription (22 lines, ~1,000 signs) - blocker: illegible; the only image on hand is 120 ppi (p-000.jpg and the same JPEG in the BNE PDF), and 4 blind passes rated it near-noise; next: a full-resolution BNE image of item 123 (bdh0000186627, 403 from the cloud, so owner desk download) or first check whether sibling item 126 (now in the private repo) is legible at its own resolution, ~$6 to transcribe once a legible image is in hand
+- period decipherment reconciliation (15 lines) - blocker: not-attempted; the two passes disagree on most words below D08; next: reconcile the two passes from the D1-D3 crops with the cipher's own "charles"/"por que" anchors, ~$2 (better after the high-resolution image)
+- key alignment against the period decipherment (step 4) and decode_key.py reading (step 5) - blocker: not-attempted; it needs the cipher transcription above; next: interlinear_align.py on cipher vs the reconciled decipherment, ~$3
+
+## Escalation (5 Oct 2026)
+- [ ] siblings: item 126 (Trujillo, 4 Dec 1478) is now on hand (private repo, images-126/; orchestrator note above): every cipher line carries an interlinear period decipherment, so its resolution is the next thing to check; plan the 126 alignment job named in that note
+- [x] clear-pages: the clear opening and the period decipherment on f.1r located and used (step 1 verdict)
+- [x] known-keys: Tomokiyo 2018 Fig. 4 (published) is in hand and was used to test the step-1 verdict
+- [ ] print: no printed text of the letter located so far (Galende Díaz, Tomokiyo checked); a print search on the decipherment's phrases (tools/print_check.py) once it is reconciled
+- [ ] key-rebuild: align the cipher with the period decipherment to rebuild the key and compare it with Fig. 4 value by value
+- [ ] image-check: a higher-resolution image of item 123 from bdh.bne.es (owner desk), the main gap
+- [ ] retry: transcription passes after the image-check, at 2 blind passes per 4-line group
+Verdict: keep going: 2 internal gaps; cheapest next: reconcile the period decipherment passes, ~$2 (the main gap needs the full-resolution BNE image from the owner's desk)
