@@ -8830,3 +8830,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 23:02 | D2-SEURE worker (account 1) | claim: fr3151-seure-1558 score R2 under nom_test (re-run kp/nom_test.py, PREREG-RUN6B args, background timeout 60 min); cap 1.5, box 23:01-00:11 UTC (80% stop 23:57) for LANE DEFAULT-account-1-20261005-2217
 2026-10-05 23:02 | D2-PAGR7 worker | claim: clairambault1225-paget-1714 rule-7 re-derivation (RD7-2026-10-05-def2.md), cap 3 USD, box ends 23:51 UTC, for LANE DEFAULT-account-1-20261005-2217
 2026-10-05 23:03 | D2-F3198 worker (account 1) | claim: fr3198-labbe-1577 locate 5 Feb 1577 no.51 leaf in fr.4695; cap 2, box 23:02-23:47 UTC (80% stop 23:38) for LANE DEFAULT-account-1-20261005-2217
+2026-10-05 23:03 | D2-ECK62M worker (account 1) | claim: eckert-1862 --print-free matcher on the 113 ? entries, then align dated matches; cap 3, box 23:02-23:47 UTC (80% stop 23:38) for LANE DEFAULT-account-1-20261005-2217
