@@ -151,3 +151,7 @@ settled token is M, so no N3 text moves toward S. Gate (b) still passes on every
 The class (N0 printed / N3 unprinted), the safe sentence ("about 1,940 ... cipher tokens", "graded M only") and the unsafe sentence need no
 change. No SECOND-OPINIONS-QUEUE.tsv row exists for this target (grep, 4 Oct 2026), so nothing to propagate there. A fresh rule-7
 re-derivation of the settled pages is owed (RD7-2026-10-04.md predates the settlement).
+
+## JSTOR run (local runner, 4 Oct 2026, second sitting)
+
+JSTOR query "Vargas Mexia" "Espagnol 132": 1 result, Geoffrey Parker, review of Reinbold and Vázquez de Prada, The American Historical Review 112 (2007) 930-931, https://www.jstor.org/stable/40006809 -- snippet: "a volume of secret correspondence left by one ambassador, Juan de Vargas Mexia, when he died in Paris may be found in the Bibliotheque Nationale de France (Manuscrit Espagnol 132)". Identifies the volume; prints nothing. The three Vargas Mexía phrase queries returned 0.

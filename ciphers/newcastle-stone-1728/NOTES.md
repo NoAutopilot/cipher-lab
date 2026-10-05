@@ -168,3 +168,7 @@ with the batch, 1.6 s apart); googleapis.com 1; WebSearch 4 + 3 blog-site search
   (C8106550, C8106566, seen only as search titles) -- not opened; no image route.
 - (d) Recipient's side: the despatch to Stanhope and H. Walpole (the side where the cypher paragraph went) is a separate item --
   not checked, named in the verdict as a scout suggestion.
+
+## JSTOR runner, 4 Oct 2026
+
+read 4 Oct 2026 (page viewer, no download), Basil Williams 1901 https://www.jstor.org/stable/548655: the only "private letter" match is p.311: "In a private letter of 6 Feb. 1728 the duke [Newcastle] writes to Lord Waldegrave, then at Paris, warning him strongly against Chauvelin" (n.1 Add. MS. 32754, f. 234 as read from the page image); no Stanhope/Walpole letter of 1728 and no cipher mentioned on the matched page
