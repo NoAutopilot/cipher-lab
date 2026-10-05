@@ -101,3 +101,7 @@ add one from its AUDIT.md (both audits, N0, key period, D3 95.2%) following neig
 ## VER1-LOWB (cap 5, box 60 min)
 Audit 2 in this order, stop at cap: dupuy452-carpi-1520 (results[15]), clair349-este-guise-1556 (results[96]),
 gunther-van-schwarzburg-1561 (results[62]).
+
+## VER1-LOWC (cap 5, box 60 min) -- last job of the lane
+Audit 2 in this order, stop at cap: rah-canada-1869 (results[53]), trew-posthius-1614-18 (results[72]),
+antt-fcc-costacabral-1865 (results[94]). Regenerate VERIFY-BACKLOG.tsv (tools/verify_backlog.py) before the final push.
