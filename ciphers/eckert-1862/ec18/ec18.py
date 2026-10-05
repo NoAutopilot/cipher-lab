@@ -7,6 +7,7 @@ Usage: ec18.py DATA_DIR OR_DIR [--book 2] [--possessive] [--guard DIR62] [--writ
        ec18.py DATA_DIR OR_DIR --assign [--possessive] [--guard DIR62] [--write | --check]
        ec18.py DATA_DIR --assign-free DIR62 [--write | --check]
        ec18.py DATA_DIR --read-free DIR62 [--write | --check]
+       ec18.py DATA_DIR --print-q ORDIR [--write | --check]
   DATA_DIR/vol18.json: one CONTENTdm dmQuery (URL and sha256 in ../pilot1864/manifest.tsv; the Decoding the Civil War
   volunteers' transcription, not committed). OR_DIR/<vol>.txt: IA _djvu.txt per OR volume (ids in or_volumes.tsv; not
   committed, re-fetch). --write rewrites entries.tsv, matches.tsv, control.tsv and readings.md; --check exits 1 if any
@@ -29,6 +30,10 @@ RUN6-ECK62R (5 Oct 2026): --read-free DIR62 reads each `1f`/`2f` entry of assign
 text, markers kept, --possessive and the DIR62 guard as the committed outputs). Grade cap S: the book is S, so every
 keyed token of an H/C key row counts as S; I and M rows keep I and M. "words" = >= 3 keyed tokens and oov 0 (the
 fully-keyed rule); otherwise "not" with the oov words listed. Writes readings_free.tsv and readings_free.md.
+
+D2-ECK62M (5 Oct 2026; PREREG-ECK62-Q.md): --print-q ORDIR decides the book of the 113 '?' entries by which key's
+reading gives the dated OR match (margin >= 2 five-grams), known answer on the marker-known entries, dates-permuted
+control; writes print_q{,_summary}.tsv and align_free_rows.tsv (input of ec18_align.py --rows).
 
 Entries: the volunteer text is split on blank lines; a block whose first three lines carry a clear date (month day
 year) opens an entry, a block without one continues the current entry (pages in page-number order). The header lines
@@ -330,6 +335,8 @@ def main(argv):
         return assign_free(argv)
     if "--read-free" in argv:
         return read_free(argv)
+    if "--print-q" in argv:
+        return print_q(argv)
     if "--print-free" in argv:
         return print_free(argv)
     data, ordir = argv[0], argv[1]
@@ -688,6 +695,118 @@ def read_free(argv):
             return 1
         print("current")
     print(summ)
+    return 0
+
+
+def print_q(argv):
+    """D2-ECK62M (PREREG-ECK62-Q): the dated OR matcher decides the book of the '?' entries; known answer on the
+    marker-known entries; control = dates permuted among the '?' entries. Writes print_q.tsv, print_q_summary.tsv and
+    align_free_rows.tsv (every dated match to align: print_free.tsv's plus the gated decisions here)."""
+    data, ordir = argv[0], argv[argv.index("--print-q") + 1]
+    keys = {"1": d1.load_key(ROOT / "ciphers/eckert-1864/key.md"), "2": d1.load_key(ROOT / "ciphers/eckert-1864/key-no2.md")}
+    asg = {l.split("\t")[0]: l.split("\t")[5] for l in (HERE / "assign_free.tsv").read_text().splitlines()[1:]}
+    es = entries(data)
+    for e in es:
+        e["mbook"] = book(" ".join(e["body"]))
+        e["body"] = [" ".join(w for w in l.split(" ") if w.strip(" .,;:'\"()").lower() not in MARK) for l in e["body"]]
+    q = [e for e in es if asg.get(e["id"]) == "?"]
+    kn = [e for e in es if e["mbook"] in "12"]
+    use = q + kn
+    gr = {}
+    for bk in "12":
+        decode_all(use, keys[bk], True, None)
+        for e in use:
+            w = words(plain_of(e["reading"]))
+            gr[(e["id"], bk)] = {" ".join(w[k:k + 5]) for k in range(len(w) - 4)}
+    # print_free.tsv's dated matches are re-found with their committed readings (readings_free.md), for the anchor
+    fr, md = [], (HERE / "readings_free.md").read_text().split("\n")
+    for i, l in enumerate(md):
+        m = re.match(r"\*\*([\d.]+)\*\* \(Page \d+, (\d+)-(\d+)-(\d+); book (\d)f", l)
+        if m:
+            w = words(plain_of(md[i + 2]))
+            fr.append({"id": m.group(1), "date": tuple(int(x) for x in m.groups()[1:4]), "bk": m.group(5),
+                       "grams": {" ".join(w[k:k + 5]) for k in range(len(w) - 4)}})
+    vols, pos = or_index(ordir, set().union(*gr.values(), *(e["grams"] for e in fr)))
+    res = {}
+    for bk in "12":
+        for e in use:
+            e["grams"] = gr[(e["id"], bk)]
+        res[bk] = match(use, vols, pos, {e["id"]: e["date"] for e in use})
+
+    def decide(i):
+        a, b = res["1"].get(i), res["2"].get(i)
+        g1, g2 = (a[1] if a else 0), (b[1] if b else 0)
+        if g1 >= MIN and g1 - g2 >= 2:
+            return "1", g1, g2
+        if g2 >= MIN and g2 - g1 >= 2:
+            return "2", g1, g2
+        return ("?p" if a or b else "?"), g1, g2
+    kc = collections.Counter()
+    for e in kn:
+        d = decide(e["id"])[0]
+        kc[(e["mbook"], d)] += 1
+    dec = sum(kc[(t, d)] for t in "12" for d in "12")
+    right = kc[("1", "1")] + kc[("2", "2")]
+    prec = right / max(1, dec)
+    # control: dates permuted among the '?' entries; a match under either book counts
+    qd = {e["id"]: e["date"] for e in q}
+    ids, rng, perm = [e["id"] for e in q], random.Random(SEED), []
+
+    def nmatch(dates):
+        hit = set()
+        for bk in "12":
+            for e in q:
+                e["grams"] = gr[(e["id"], bk)]
+            hit |= set(match(q, vols, pos, dates))
+        return len(hit)
+    real_n = nmatch(qd)
+    for k in range(20):
+        sh = ids[:]
+        rng.shuffle(sh)
+        perm.append(nmatch({a: qd[b] for a, b in zip(ids, sh)}))
+    gate = prec >= 0.90 and dec >= 20 and real_n > max(perm)
+
+    def fmt(d):
+        return f"{d[0]}-{d[1]:02d}-{d[2]:02d}"
+    out = ["id\tdate\tg1\tvol1\tpage1\tg2\tvol2\tpage2\tdecision\tassigned"]
+    rows = ["id\tbook\tsource\tdate\tor_vol\tor_page_ocr\tanchor\tgrams"]
+    for e in q:
+        d, g1, g2 = decide(e["id"])
+        a, b = res["1"].get(e["id"]), res["2"].get(e["id"])
+        asn = (d + "p") if gate and d in "12" else "?"
+        out.append(f"{e['id']}\t{fmt(e['date'])}\t{g1}\t{a[0] if a else '-'}\t{PAGE[a[0]][a[2]] if a else '-'}\t{g2}\t"
+                   f"{b[0] if b else '-'}\t{PAGE[b[0]][b[2]] if b else '-'}\t{d}\t{asn}")
+        if asn != "?":
+            r = res[d][e["id"]]
+            rows.append(f"{e['id']}\t{d}\tprint-q\t{fmt(e['date'])}\t{r[0]}\t{PAGE[r[0]][r[2]]}\t{r[2]}\t{r[1]}")
+    frm = match(fr, vols, pos, {e["id"]: e["date"] for e in fr})
+    for e in fr:
+        if e["id"] in frm:
+            r = frm[e["id"]]
+            rows.append(f"{e['id']}\t{e['bk']}\tprint-free\t{fmt(e['date'])}\t{r[0]}\t{PAGE[r[0]][r[2]]}\t{r[2]}\t{r[1]}")
+    summ = ["statistic\tvalue", f"q_entries\t{len(q)}", f"known_entries\t{len(kn)}",
+            "known_answer\t" + ", ".join(f"marker {t} -> {d}: {kc[(t, d)]}" for t in "12" for d in ("1", "2", "?p", "?")),
+            f"known_decided\t{dec}", f"known_precision\t{right}/{dec} = {prec:.3f}",
+            "known_precision_by_class\t" + ", ".join(
+                f"'{d}' {kc[(d, d)]}/{kc[('1', d)] + kc[('2', d)]}" for d in "12"),
+            f"q_dated_matches_real\t{real_n}", f"q_dated_matches_20_permutations\t{sorted(perm)}",
+            f"gate\t{'PASS' if gate else 'FAIL'} (precision >= 0.90 on >= 20 decided, real > max permuted)",
+            "q_decisions\t" + ", ".join(f"{k} {v}" for k, v in sorted(collections.Counter(
+                l.split('\t')[8] for l in out[1:]).items())),
+            f"print_free_dated_rematched\t{len(frm)}/{len(fr)}",
+            f"or_vols\t{len(vols)} ({min(vols)}-{max(vols)}); possessive on, guard off; min grams {MIN}"]
+    outs = {"print_q.tsv": "\n".join(out) + "\n", "print_q_summary.tsv": "\n".join(summ) + "\n",
+            "align_free_rows.tsv": "\n".join(rows) + "\n"}
+    if "--write" in argv:
+        for k, v in outs.items():
+            (HERE / k).write_text(v)
+    elif "--check" in argv:
+        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        if stale:
+            sys.stderr.write("stale: " + ", ".join(stale) + "\n")
+            return 1
+        print("current")
+    print(outs["print_q_summary.tsv"])
     return 0
 
 

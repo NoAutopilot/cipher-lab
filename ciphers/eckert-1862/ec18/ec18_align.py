@@ -3,7 +3,9 @@
 No. 2; ec18/matches.tsv, ec18/matches_b2.tsv) against the Official Records text of the same telegram, grade each keyed
 token C where the print fixes it, and list key-vs-print disagreements (rule 4: a data conflict, not an error to settle).
 
-Usage: ec18_align.py DATA_DIR OR_DIR [--write | --check]
+Usage: ec18_align.py DATA_DIR OR_DIR [--rows align_free_rows.tsv] [--write | --check]
+  --rows (D2-ECK62M, 5 Oct 2026): align the rows ec18.py --print-q wrote (print-free 1f/2f dated matches and the '?'
+  entries the print decided), anchors given; writes align_free_{tokens,entries,summary}.tsv; 1f/2f non-AGREE tokens S.
   DATA_DIR/vol18.json and OR_DIR/<vol>.txt exactly as for ec18.py (not committed; URLs and sha256 in
   ../pilot1864/manifest.tsv and or_volumes.tsv; only the 16 volumes named in the two matches files are needed).
   --write rewrites align_tokens.tsv, align_entries.tsv and align_summary.tsv; --check exits 1 if any is stale.
@@ -208,11 +210,18 @@ def main(argv):
     es = {e["id"]: e for e in ec18.entries(data)}
     keys = {"1": d1.load_key(ec18.ROOT / "ciphers/eckert-1864/key.md"),
             "2": d1.load_key(ec18.ROOT / "ciphers/eckert-1864/key-no2.md")}
-    rows = []
-    for bk, f in (("1", "matches.tsv"), ("2", "matches_b2.tsv")):
-        for line in (HERE / f).read_text().splitlines()[1:]:
-            i, date, v, pg, n, ctx = line.split("\t")
-            rows.append((bk, i, date, v, pg, ctx))
+    rows, src, sfx = [], {}, ""
+    if "--rows" in argv:  # D2-ECK62M: align_free_rows.tsv from ec18.py --print-q (anchor given, no context probe)
+        sfx = "_free"
+        for line in (HERE / argv[argv.index("--rows") + 1]).read_text().splitlines()[1:]:
+            i, bk, how, date, v, pg, j, n = line.split("\t")
+            rows.append((bk, i, date, v, pg, int(j)))
+            src[i] = how
+    else:
+        for bk, f in (("1", "matches.tsv"), ("2", "matches_b2.tsv")):
+            for line in (HERE / f).read_text().splitlines()[1:]:
+                i, date, v, pg, n, ctx = line.split("\t")
+                rows.append((bk, i, date, v, pg, ctx))
     tok_out = ["id\tbook\tor_vol\tor_page_ocr\tside\tidx\tcode_word\tmeaning\tkey_grade\tkind\tstatus\tprinted"]
     ent_out = ["id\tbook\tdate\tor_vol\tor_page_ocr\tscored\tagree\tconflict\tunfixed\tpartial\tcollision\tagree_rate\t"
                "ctl_vol\tctl_offset\tctl_agree\tctl_rate\tnum_agree\tnum_scored\tgrades_after"]
@@ -222,7 +231,7 @@ def main(argv):
         text = re.sub(r"\s+", " ", " ".join(e["body"])).strip()
         toks = tokens(text, keys[bk])
         vw = vols[v]
-        j = find_anchor(vw, ctx)
+        j = ctx if isinstance(ctx, int) else find_anchor(vw, ctx)
         assert j is not None, i
         res = align(toks, vw[max(0, j - 120):j + 400])
         sc = score(res)
@@ -240,7 +249,8 @@ def main(argv):
         g = collections.Counter()
         for k, (cw, mean, gr, kind, status, pr) in enumerate(res):
             if kind in ("word", "time", "month-free", "numeral", "punct", "sig"):
-                g["C" if status == "AGREE" else gr] += 1
+                # a print-free book (1f/2f) is grade S: its non-AGREE key-row tokens are capped at S
+                g["C" if status == "AGREE" else "S" if src.get(i) == "print-free" and gr in ("H", "C") else gr] += 1
             if kind != "plain" or status == "CONFLICT":
                 tok_out.append(f"{i}\t{bk}\t{v}\t{pg}\ttarget\t{k}\t{cw}\t{mean or ''}\t{gr or ''}\t"
                                f"{'plain-replaced' if kind == 'plain' else kind}\t{status}\t{pr}")
@@ -251,7 +261,7 @@ def main(argv):
                        f"{sc['PARTIAL']}\t{sc['COLLISION']}\t{sc['AGREE'] / max(1, scored):.3f}\t{cv}\t{(cp - j) if cv == v else 'other'}\t"
                        f"{csc['AGREE']}\t{csc['AGREE'] / max(1, cscored):.3f}\t{sc['num_AGREE']}\t"
                        f"{sum(x for k, x in sc.items() if k.startswith('num_'))}\t"
-                       + ", ".join(f"{k} {g[k]}" for k in "HCIM" if g[k]))
+                       + ", ".join(f"{k} {g[k]}" for k in "HCSIM" if g[k]))
     s = sum(tot[x] for x in ST)
     cs = sum(ctot[x] for x in ST)
     ents = ent_out[1:]
@@ -264,9 +274,9 @@ def main(argv):
             f"control_agree\t{ctot['AGREE']}/{cs} = {ctot['AGREE'] / max(1, cs):.3f}",
             f"entries_target_rate_above_control\t{above}/{len(rows)}",
             f"numerals_agree\t{tot['num_AGREE']}/{sum(x for k, x in tot.items() if k.startswith('num_'))}",
-            f"grades_after_all_tokens\t" + ", ".join(f"{k} {gtot[k]}" for k in "HCIM")]
-    outs = {"align_tokens.tsv": "\n".join(tok_out) + "\n", "align_entries.tsv": "\n".join(ent_out) + "\n",
-            "align_summary.tsv": "\n".join(summ) + "\n"}
+            f"grades_after_all_tokens\t" + ", ".join(f"{k} {gtot[k]}" for k in ("HCSIM" if sfx else "HCIM"))]
+    outs = {f"align{sfx}_tokens.tsv": "\n".join(tok_out) + "\n", f"align{sfx}_entries.tsv": "\n".join(ent_out) + "\n",
+            f"align{sfx}_summary.tsv": "\n".join(summ) + "\n"}
     if "--write" in argv:
         for k, val in outs.items():
             (HERE / k).write_text(val)
@@ -276,7 +286,7 @@ def main(argv):
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1
         print("current")
-    print(outs["align_summary.tsv"])
+    print(outs[f"align{sfx}_summary.tsv"])
     return 0
 
 
