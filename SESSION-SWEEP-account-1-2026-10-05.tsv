@@ -1,0 +1,252 @@
+session_id	title	target	last_active	verdict	action	commit
+session_015zLHDFr1wW4jifgYqBH36p	LIVE parent worker TX-HUMAN-ASKS (rank where a person moves a target most)		2026-10-05T22:43	skipped	skipped-live (inside box)	
+session_019Kz7yPGospqiXe5Jxz6ffm	LIVE lane DEFAULT-account-1-20261005-2217 (account 1)		2026-10-05T22:42	skipped	skipped-live (inside box)	
+session_01EBQM1kiiBy4Td9HSPZvMcS	LIVE parent worker SESSION-SWEEP-account-1 (check every account-1 session is pushed to GitHub)		2026-10-05T22:43	skipped	skipped-self	
+session_01Lc92u6DKeSDydupxMTrBGD	LIVE parent worker ZOOM-SCAN (list targets zoomed screenshots would unlock)		2026-10-05T21:45	pushed	none (ROOM done line + commit on origin/main)	dc36bffe0
+session_017e7e944BMVAsRfRKWjna2V	DEF1-ECK62P print + key page (LANE DEFAULT-account-1-20261005-2039)	eckert-1862	2026-10-05T21:29	pushed	none (ROOM done line + commit on origin/main)	7ef5e476e
+session_01E4Y1HQoRsCZQEQzjyfEGDX	DEF1-1411 r/z prereg (LANE DEFAULT-account-1-20261005-2039)	decode-1411	2026-10-05T21:33	pushed	none (ROOM done line + commit on origin/main)	b30b294d7
+session_01TjSnYp4wBPWuJiKjHzMM4v	DEF1-F3416 line strips (LANE DEFAULT-account-1-20261005-2039)	fr3416-nevers-fils-1589	2026-10-05T21:11	pushed	none (ROOM done line + commit on origin/main)	0ac49bde2
+session_018hvtDydRFmXpzGUCcCBMwy	DEF1-ECK64 Cipher No. 2 (LANE DEFAULT-account-1-20261005-2039)	eckert-1864	2026-10-05T21:20	pushed	none (ROOM done line + commit on origin/main)	40def55c2
+session_01WcvyX4dGgNY9twUxDSYBzG	DEF1-VIV54 relabel (LANE DEFAULT-account-1-20261005-2039)		2026-10-05T21:11	pushed	none (ROOM done line + commit on origin/main)	5f2ea136
+session_014RqbTk7EPTrFSUyhB82LfK	DEF1-DAV labelling (LANE DEFAULT-account-1-20261005-2039)	baluze167-davaux-1637	2026-10-05T21:09	pushed	none (ROOM done line + commit on origin/main)	a7e12bdf3
+session_01KsBUsv3QgCr5VVsFRqXPty	DEF1-NOXB blind read (LANE DEFAULT-account-1-20261005-2039)		2026-10-05T21:09	pushed	none (ROOM done line + commit on origin/main)	3c906d9c3
+session_01NmTnxBV7RRmsEz24rpiG5S	DEF1-ECK62I solver (LANE DEFAULT-account-1-20261005-2039)	eckert-1862	2026-10-05T20:54	pushed	none (ROOM done line + commit on origin/main)	e2afa773d
+session_01M82eidmbgC6aESGuWUEAFx	DEF1-NOXG solver (LANE DEFAULT-account-1-20261005-2039)		2026-10-05T20:58	pushed	none (ROOM done line + commit on origin/main)	3c906d9c3
+session_01DPN3kGXMCXqJUDkQWCuPKZ	DEF1-GRACOS verifier (LANE DEFAULT-account-1-20261005-2039)		2026-10-05T21:01	pushed	none (ROOM done line + commit on origin/main)	05b804d17
+session_01PArXBNCm3HDQNVtKXMbMYv	DEF1-PIS verifier (LANE DEFAULT-account-1-20261005-2039)		2026-10-05T21:00	pushed	none (ROOM done line + commit on origin/main)	cfd35572f
+session_01NuDrpRpuoUsT3PqPfdA3GG	DEF1-LVN verifier (LANE DEFAULT-account-1-20261005-2039)		2026-10-05T20:56	pushed	none (ROOM done line + commit on origin/main)	ba7e382d7
+session_01AM5yDn7WrjFBpFbgVeDDKD	DEF1-THUR verifier (LANE DEFAULT-account-1-20261005-2039)		2026-10-05T20:58	pushed	none (ROOM done line + commit on origin/main)	f2bb086f
+session_0129JoekeRPRo9Fsfv9XdQQi	LIVE lane DEFAULT-account-1-20261005-2039 (account 1)		2026-10-05T21:44	pushed	none (ROOM done line + commit on origin/main)	b30b294d7
+session_01DKAyPJm5on3tyNzWZwAV2f	LIVE parent worker FER1478-READ2 (Ferdinand 1478 read from viewer screenshots)		2026-10-05T19:44	pushed	none (ROOM done line + commit on origin/main)	2051c158
+session_01NQdAtKFPE41YfJoKPiANQa	D2-B117M (LANE-D2PUSH worker)		2026-10-05T19:13	pushed	none (ROOM done line + commit on origin/main)	670afd714
+session_01FhvwsZdTLJjpntXoUTeFVA	D2-C1161AUD (LANE-D2PUSH worker)		2026-10-05T19:10	pushed	none (ROOM done line + commit on origin/main)	f7995d156
+session_01Vv9por8nLxumc8bNQWKVdC	D2-HELFAGEL (LANE-D2PUSH worker)	hellen-frederick-1752	2026-10-05T18:57	pushed	none (ROOM done line + commit on origin/main)	f441e78f9
+session_018c6t5du3jMxqUm6D5ry2GM	D2-B117KAPC (LANE-D2PUSH worker)		2026-10-05T18:53	pushed	none (ROOM done line + commit on origin/main)	f8a9e214d
+session_01Vka12eukR9w3oYYqyLRV7m	D2-DIN0 (LANE-D2PUSH worker)	fr3621-dinteville-1592	2026-10-05T18:52	pushed	none (ROOM done line + commit on origin/main)	9c8b7dd4c
+session_01X18s1a7XGK5yT5uhrKsEDw	D2-C1161PRU (LANE-D2PUSH worker)		2026-10-05T18:55	pushed	none (ROOM done line + commit on origin/main)	1d145fe7f
+session_01Teq8MiC4U2kgjj9fw3gz8T	D2-C1161LA (LANE-D2PUSH worker)		2026-10-05T18:54	pushed	none (ROOM done line + commit on origin/main)	f8cdf3d74
+session_01UcA1qfmvj2Z2oGWMt6yMMq	LIVE lane LANE-D2PUSH (account 1)		2026-10-05T19:22	pushed	none (ROOM done line + commit on origin/main)	670afd714
+session_019ocTxD9hSW4H46SFM24zNK	LIVE lane worker SYS1-SF (small fixes, account 1)		2026-10-05T17:52	pushed	none (ROOM done line + commit on origin/main)	d70367ccc
+session_01NTVEj9A5xbRSv1HDv95RsT	LIVE lane worker SYS1-AF (empty-queue auto-fill, account 1)		2026-10-05T17:51	pushed	none (ROOM done line + commit on origin/main)	dd34a5bc0
+session_01M74s9S3zxMX6Y2XiUEniES	LIVE lane worker SYS1-HC (hot/cold split, account 1)		2026-10-05T18:01	pushed	none (ROOM done line + commit on origin/main)	dd34a5bc0
+session_01LQQtJnfJDToD9HruvPivDf	LIVE lane worker SYS1-VBL (verifier backlog list, account 1)	clair1161-avis-flandre-1688	2026-10-05T17:52	pushed	none (ROOM done line + commit on origin/main)	019accea8
+session_01J31Le8NaBKQi9NAUW3YBs4	LIVE lane LANE-SYS1 (account 1)		2026-10-05T18:19	pushed	none (ROOM done line + commit on origin/main)	dd34a5bc0
+session_01VAPyVj1o9jQCqSBLu8tmFz	RUN6-ECK62R read 79 entries	eckert-1862	2026-10-05T06:01	pushed	none (ROOM done line + commit on origin/main)	919018bb
+session_014kL6oqKqPmEWVXwCxRnKA8	RUN6-PISFIN kp86i		2026-10-05T06:08	pushed	none (ROOM done line + commit on origin/main)	13ded407
+session_01Df1QkCUJhGssenwcdx6oo7	RUN6-LABBE no.51 key lookup	fr3198-labbe-1577	2026-10-05T05:43	pushed	none (ROOM done line + commit on origin/main)	c8c73e399
+session_017ytGnNHzgfUAsjQH1FqbFp	RUN6-ECK62 book assignment		2026-10-05T05:44	pushed	none (ROOM done line + commit on origin/main)	fea9ffb3
+session_01MYfVs8Js1tMEvHpBwSAWJg	RUN6-BIR3637 f.36-37 splits	birago-fr3252-1571-72	2026-10-05T05:42	pushed	none (ROOM done line + commit on origin/main)	727d328e
+session_01H2s685kMCrDQ3vVgUjyP2y	RUN6-NOXDUP Dupuy date matches		2026-10-05T05:41	pushed	none (ROOM done line + commit on origin/main)	bc6357a4
+session_01VBF5vNXxzQGCwRWRjrBiZD	RUN6-KARLXI be-api retry		2026-10-05T05:22	pushed	none (ROOM done line + commit on origin/main)	eae2137f
+session_01JJVFU7GB6KmiwW3JzdBFL4	RUN6-BULLET image + thread	bullet-tuscany-1944	2026-10-05T05:21	nothing	skipped by its own brief (target claimed by N9-BUL)	
+session_01RQsdcwvtNzT3GmFsP35eio	RUN6-PAGETR7 rule-7 re-derivation		2026-10-05T05:23	pushed	none (ROOM done line + commit on origin/main)	374b3377a
+session_0153WhokQqhP1ifMBEHvCzAK	RUN6-SEURE2 f81R 18 lines		2026-10-05T06:13	pushed	none (ROOM done line + commit on origin/main)	3654942e
+session_01Sq2GLSTCJVa3zwK8bESiZw	RUN6-NOXALIGN c262 decode-gloss		2026-10-05T05:27	pushed	none (ROOM done line + commit on origin/main)	a5c1277d
+session_013JM6jvyW6Fzd4Qfmt9vHGi	RUN6-LOPE CSP vs Bourdeau		2026-10-05T05:05	pushed	none (ROOM done line + commit on origin/main)	e7ea8770e
+session_01PS9nK8n6nzAQHW2Rx2Nwhc	RUN6-BLATH TNA Paretti		2026-10-05T05:05	pushed	none (ROOM done line + commit on origin/main)	8d4e07be2
+session_018cvBonF7FaaGsmq7AtjeuX	RUN6-SEURE f81R reconcile		2026-10-05T05:08	pushed	none (ROOM done line + commit on origin/main)	5e763f1f
+session_015mDphuXUgxhaVuVyccanG6	RUN6-PAGET settle7 multi-seed	clairambault1225-paget-1714	2026-10-05T05:08	pushed	none (ROOM done line + commit on origin/main)	0f461804a
+session_012gBsFfXZD1tCncMCcUPkTc	RUN6-ECK mssEC 18		2026-10-05T05:07	pushed	none (ROOM done line + commit on origin/main)	22dd18e1
+session_01SH4Yyxb25HcswJBcF4odRg	RUN6-NOXREAD c262 reader signs		2026-10-05T05:07	pushed	none (ROOM done line + commit on origin/main)	4ef591e8c
+session_01AWrtqvNVgVJbBK6PCUWKny	RUN6-BOWESNRS GD406 Walsingham key		2026-10-05T04:47	pushed	none (ROOM done line + commit on origin/main)	4b3747e7a
+session_01Jm8ZoZ5D33rY32E942njeV	RUN6-BIR138 birago f.138 digits		2026-10-05T04:48	pushed	none (ROOM done line + commit on origin/main)	be5cf257
+session_01QjwKwzsoSQFBgvTcSVhr5B	RUN6-NOXDEC fr16142 consensus decode		2026-10-05T04:48	pushed	none (ROOM done line + commit on origin/main)	6de3a59e
+session_019fDazSNhzHpV2yptitCXvZ	RUN6-NV05C fr15575 f.228 L05-08		2026-10-05T04:52	pushed	none (ROOM done line + commit on origin/main)	26fd46ac
+session_01KGoJmfeqCGP1cauHFs8o6f	RUN6-AVS62 Rachfahl 1562 Zettel		2026-10-05T04:49	pushed	none (ROOM done line + commit on origin/main)	714a53b6
+session_01AvfvSMJDkaQV2HCB4HCJ6Q	RUN6-PIS fr16045 275v B + 275r		2026-10-05T05:37	pushed	none (ROOM done line + commit on origin/main)	d55d8140
+session_01DEPpt7wx123vjFcTqSzMpX	LIVE lane LANE-RUN6 (account 1)		2026-10-05T06:15	pushed	none (ROOM done line + commit on origin/main)	13ded407
+session_01FuJih1NtN4QB5BeFMezjeX	ARCHIVED PIS1-KEY2 (done 18:27, $2.98 D)		2026-10-04T18:27	pushed	none (ROOM done line + commit on origin/main)	b47207c0
+session_01MQH53DeH5fEjzAxAw2c6Ga	ARCHIVED PIS1-247 (done 17:52, $8.72 D)		2026-10-04T17:52	pushed	none (ROOM done line + commit on origin/main)	702913d6
+session_016RhQ98TTw1GQ9DZkD6RDm2	ARCHIVED PIS1-275V (done 17:38, $12.99 D)		2026-10-04T17:38	pushed	none (ROOM done line + commit on origin/main)	b47207c0
+session_01LY2KfcD4CkksbugBNNvdn4	ARCHIVED PIS1-KEY (stalled 17:22, $2.77 X)		2026-10-04T17:52	pushed	none (ROOM done line + commit on origin/main)	b47207c0
+session_01SKUxyQBBsRtCkcGnb8KipL	ARCHIVED PIS1-302 (done 17:29, $10.19 D)		2026-10-04T17:30	pushed	none (ROOM done line + commit on origin/main)	b47207c0
+session_01YDF5tk5xkYSGwiwfEoJQD2	ARCHIVED PIS1-INV (done 17:24, $6.39 D)	fr16045-pisany-rome-1585	2026-10-04T17:24	pushed	none (ROOM done line + commit on origin/main)	cb174d2d
+session_01JSBwmQEuSz9ucJAbRALV9W	LIVE lane LANE-PIS1 (account 1)		2026-10-04T18:32	pushed	none (ROOM done line + commit on origin/main)	b47207c0
+session_012amYWbCauc4MR8zsrYu5ZT	LANE-RUN5 RUN5-PIS4 (Pisany 1587 contacts, T31 compare)		2026-10-04T13:40	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_014SAABAjZxjgYoSxPbwxerz	LANE-RUN5 RUN5-MANT6 (Manteuffel per-unit re-grade)		2026-10-04T13:22	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_015RNmKYVxyA1DWS18vXtANa	LANE-RUN5 RUN5-ESFIX (es132 scorer clear-token fix)		2026-10-04T13:26	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01RFmvt99KATNHtobKNTFNXm	LANE-RUN5 RUN5-C1161RA (clair1161 M-sign re-anneal)		2026-10-04T13:33	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01HQzhrAdg6wiy6qWwkZmTB9	LANE-RUN5 RUN5-MANT5 (Manteuffel normalised gloss gate)		2026-10-04T13:09	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01E2kfBj7VrkjfxkbZxoZBBu	LANE-RUN5 RUN5-ES51 (es132 f.51v re-cut, f.52r)		2026-10-04T13:14	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01JAkbKxo2pgQsqvcRc3DLUG	LANE-RUN5 RUN5-MANT4 (Manteuffel 0500/0502 glossed runs)		2026-10-04T12:56	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01Rok8vrAewS1gk12U1pVYFj	LANE-RUN5 RUN5-C1161WC (clair1161 word-cover test)		2026-10-04T12:52	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01F87Hhnc9jYZwhpHyGyJdx7	LANE-RUN5 RUN5-PIS87 (Pisany 1588 headings, 24 Mar 1587)		2026-10-04T13:05	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01VqAsm4H9nXHKbKhr4eUMaB	LANE-RUN5 RUN5-ES50B (es132 f.50r pass B, f.51v)		2026-10-04T12:57	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01Fqn6emj1wWFEEECgLKKUC3	LANE-RUN5 RUN5-PIS3 (Pisany f.275r per-line re-pass)		2026-10-04T13:24	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_016V2y9rewX2Ubo51UgJ93dY	LIVE lane LANE-RUN5 (account 1)		2026-10-04T13:53	pushed	none (ROOM done line + commit on origin/main)	d18435d7
+session_01YJA9sHM6xDN7kgLPcHHbUY	RUN4-ES50R es132 f.50r (acct1 LANE-RUN4)	es132-vargas-mexia-1578	2026-10-04T11:48	pushed	none (ROOM done line + commit on origin/main)	4f50697d
+session_015bGCqZCauFbaLkScaTHjRQ	RUN4-WAITBF While-waiting backfill (acct1 LANE-RUN4)		2026-10-04T11:33	pushed	none (ROOM done line + commit on origin/main)	4bbff823
+session_011FLBLP3eoKN9Y83EnB1LMu	RUN4-RAA na-raad-azie thumbnail sweep (acct1 LANE-RUN4)	na-raad-azie-1800	2026-10-04T11:25	pushed	none (ROOM done line + commit on origin/main)	df932926
+session_0165pJFExQLkJuNEkLoNAN3h	RUN4-MANT3 manteuffel frames 0500/0502 (acct1 LANE-RUN4)	sachsstaatsarchiv-manteuffel-1712	2026-10-04T11:21	pushed	none (ROOM done line + commit on origin/main)	34064c08
+session_01N8RV6H6uJgTSea2UPPa44s	RUN4-ES50 es132 f.50r/f.51r (acct1 LANE-RUN4)	es132-vargas-mexia-1578	2026-10-04T11:32	pushed	none (ROOM done line + commit on origin/main)	7bb2044e
+session_01CVeM42fWvnfdzP8cmn7hWN	RUN4-PIS2 Pisany 4 Nov 1586 (acct1 LANE-RUN4)		2026-10-04T11:51	pushed	none (ROOM done line + commit on origin/main)	cdd4dc94
+session_017v2H5tJVj8HLht3Mqjrj7p	RUN4-RAPPLY retro apply (acct1 LANE-RUN4)		2026-10-04T11:17	pushed	none (ROOM done line + commit on origin/main)	8bdc3a2f
+session_01RxokPXWqtuieTd1apSgRns	RUN4-KAL kaliningrad Russian judge calibration (acct1 LANE-RUN4)		2026-10-04T11:05	pushed	none (ROOM done line + commit on origin/main)	f2b8989e
+session_01RxhvnLW2P5rJVc1raFzadD	RUN4-MANT2 manteuffel clear-vs-cipher diff (acct1 LANE-RUN4)	sachsstaatsarchiv-manteuffel-1712	2026-10-04T11:07	pushed	none (ROOM done line + commit on origin/main)	ddf18ffe
+session_01BW5AzthvfMGaYS3ZE1D5gn	RUN4-C1161GJ clair1161 gloss-and-judge (acct1 LANE-RUN4)		2026-10-04T11:04	pushed	none (ROOM done line + commit on origin/main)	947d0a4e
+session_01FWAxN5tqprJTGwuDHZJJPX	RUN4-MANT manteuffel witness diffs (acct1 LANE-RUN4)	sachsstaatsarchiv-manteuffel-1712	2026-10-04T10:52	pushed	none (ROOM done line + commit on origin/main)	2a2bc654
+session_01BZhCP4ZsHXK6LBYvtdtm87	RUN4-ES41V es132 next Cipher 3 page (acct1 LANE-RUN4)		2026-10-04T10:59	pushed	none (ROOM done line + commit on origin/main)	bff6a1f5
+session_01KQPBfTJ15SwNoAdKChtpDF	RUN4-PIS1 Pisany 17 Sept 1586 rest (acct1 LANE-RUN4)	fr16045-pisany-rome-1585	2026-10-04T11:41	pushed	none (ROOM done line + commit on origin/main)	dc66a76d
+session_01L8GHwis3zYrxBn48NdJzYo	RUN4-MOR moray R8345 P4 + anchors (acct1 LANE-RUN4)	moray-wood-1568	2026-10-04T10:54	pushed	none (ROOM done line + commit on origin/main)	c601d32a
+session_011Zj9v28ZdE8CUg1iNzTR9W	RUN4-C1161AU clair1161 AUDIT propagation (acct1 LANE-RUN4)		2026-10-04T10:50	pushed	none (ROOM done line + commit on origin/main)	fc1bf226
+session_01Wjfr96ytug5iooUfmu724v	RUN4-RETRO retrospective (acct1 LANE-RUN4)		2026-10-04T11:00	pushed	none (ROOM done line + commit on origin/main)	966253005
+session_01Hx7xwPp8rY3FXTn6WRkAbc	LIVE lane LANE-RUN4 (account 1)		2026-10-04T12:05	pushed	none (ROOM done line + commit on origin/main)	cdd4dc94
+session_01HoGrFjV4cxgck6FcZpPrf8	RUN3-ESSHR es132 images shrink		2026-10-04T09:47	pushed	none (ROOM done line + commit on origin/main)	6c8c4414
+session_01SDkLqimrKQ4KCpjjJ57Ftb	RUN3-MOR2 moray refsheet anchor fix		2026-10-04T09:43	pushed	none (ROOM done line + commit on origin/main)	2edda90d0
+session_018PFSk3jK9iyGw4nxaoRazL	RUN3-C1161R7B clair1161 rule-7 grades		2026-10-04T09:44	pushed	none (ROOM done line + commit on origin/main)	ffb85c1e9
+session_01Wo6pGnb4gedZ7xhNyzBqS1	RUN3-MANT manteuffel frame 0501	sachsstaatsarchiv-manteuffel-1712	2026-10-04T09:32	pushed	none (ROOM done line + commit on origin/main)	af592b48
+session_01HoubpnCrorWacT6mdi1cfE	RUN3-MOR moray refsheet eye check	moray-wood-1568	2026-10-04T09:25	pushed	none (ROOM done line + commit on origin/main)	c601d32a
+session_01UR8G4uJ1ZhiiHGUrZxXiuw	RUN3-COSK2 costabili R1166 re-pass	costabili-modena-1491	2026-10-04T09:34	pushed	none (ROOM done line + commit on origin/main)	e02f34e3
+session_01WSfBoCAHSMg6E4sqxuuP79	RUN3-PISA pisany 1586 known-plaintext	fr16045-pisany-rome-1585	2026-10-04T09:44	pushed	none (ROOM done line + commit on origin/main)	772aebda
+session_01BwFNwmrNgwrYXSheZ4oDfG	RUN3-RJM2 Salazar A.23 lookup	rah-juan-manuel-1521	2026-10-04T09:10	pushed	none (ROOM done line + commit on origin/main)	5ffcae1d5
+session_01QeUZkbbzJDYXnr66dD4fFk	RUN3-COSK costabili R1166 key rebuild	costabili-modena-1491	2026-10-04T09:16	pushed	none (ROOM done line + commit on origin/main)	9353a433
+session_01Q5eNxMdXYw6bEG2m3Louyw	RUN3-C1161MS clair1161 multi-seed consensus	clair1161-avis-flandre-1688	2026-10-04T09:27	pushed	none (ROOM done line + commit on origin/main)	4eb718e8
+session_019cuqPjJxV5RCgvDv31zjqN	RUN3-SANG sanguszkow crib run	sanguszkow-mniszech-dunin-1714	2026-10-04T09:15	pushed	none (ROOM done line + commit on origin/main)	d0d0fe53
+session_01GxW8tYq5vKrU1WyYdzP9Er	RUN3-PISD pisany Colbert date lines	fr16045-pisany-rome-1585	2026-10-04T09:12	pushed	none (ROOM done line + commit on origin/main)	66134fae
+session_01RZPkZVciPuqXaBih6Qnh1U	RUN3-KARL karlxi be-api retry		2026-10-04T08:54	pushed	none (ROOM done line + commit on origin/main)	eae2137f
+session_01JKygGou6c6QTozMB4zwKhH	RUN3-RJM juan manuel CSP date map	rah-juan-manuel-1521	2026-10-04T08:50	pushed	none (ROOM done line + commit on origin/main)	d2019887
+session_01D3Jd9vbuFz9mAhpQVxz574	RUN3-COST costabili print search	costabili-modena-1491	2026-10-04T08:55	pushed	none (ROOM done line + commit on origin/main)	4057a99b
+session_0115bgB7kmbxZgTnDMjESpd2	RUN3-ECK62 eckert-1862 decode options	eckert-1862	2026-10-04T09:49	pushed	none (ROOM done line + commit on origin/main)	baf59c2a3
+session_01JHZF6Di3p4gP3VBPWkLN47	RUN3-C1161R7 clair1161 rule-7	clair1161-avis-flandre-1688	2026-10-04T08:48	pushed	none (ROOM done line + commit on origin/main)	6e98c1011
+session_01SvjgsjNbjYHcG4WNjHikLF	RUN3-ES41 es132 f.41r settle + next C3 page	es132-vargas-mexia-1578	2026-10-04T08:58	pushed	none (ROOM done line + commit on origin/main)	900d66bf
+session_01PkVXjeSKs1t8vGeWp7Upd8	LIVE lane LANE-RUN3 (account 1)		2026-10-04T09:59	pushed	none (ROOM done line + commit on origin/main)	6c8c4414
+session_01CbyBrNmSG8yHZqYHFyDSyX	LANE-POOLS2 PIS-T fr16045-pisany-rome-1585 spec + first test (account 1)	fr16045-pisany-rome-1585	2026-10-04T07:52	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_01MFzGhYhd9QJPCVw89QF9x1	LANE-POOLS2 VIV-T fr16106-vivonne-longlee-1579 spec + first test (account 1)	fr16106-vivonne-longlee-1579	2026-10-04T07:33	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_014beB2mCVskfBAEPAbRuWfK	LANE-POOLS2 PIS-M fr16045-pisany-rome-1585 measure (account 1)	fr16045-pisany-rome-1585	2026-10-04T07:08	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_016UNWFzCENUzT2rnbb2yf3m	LANE-POOLS2 VIV-M fr16106-vivonne-longlee-1579 finish + measure (account 1)	fr16106-vivonne-longlee-1579	2026-10-04T06:57	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_01E1SWLtfaTgGD3ejR9egZ5V	LANE-POOLS2 ES132-C3 es132 Cipher 3 pool first test (account 1)		2026-10-04T06:33	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_01N4LkQv1zuSnCGpv5aDqWtW	LANE-POOLS2 COS-M costabili-modena-1491 measure + first test (account 1)	costabili-modena-1491	2026-10-04T06:15	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_017L8Gq3o2qKW96Aco3gRQjg	LANE-POOLS2 CS-3 fr16045-pisany-rome-1585 check-solved (account 1)	fr16045-pisany-rome-1585	2026-10-04T06:15	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_01Hc73f6fhnx6DdQsid6G1UN	LANE-POOLS2 CS-4 costabili-modena-1491 check-solved (account 1)	costabili-modena-1491	2026-10-04T05:49	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_01ULYzMcaeKzN6bcVuG6U1iS	LANE-POOLS2 CS-2 throckmorton-add4136-1559 check-solved (account 1)	throckmorton-add4136-1559	2026-10-04T05:51	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_01At76KCzVrzxn7YsSW7vWxh	LANE-POOLS2 CS-1 fr16106-vivonne-longlee-1579 check-solved (account 1)	fr16106-vivonne-longlee-1579	2026-10-04T05:51	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_01PgaUpXkg7BsMmu53s4rhfh	LIVE lane LANE-POOLS2 (account 1)		2026-10-04T08:01	pushed	none (ROOM done line + commit on origin/main)	f71d4557
+session_01Vig8WA3zXrddQtd7YrN7yT	RUN2-BAL Baluze 167 six partial letters native look	baluze167-davaux-1637	2026-10-04T03:54	pushed	none (ROOM done line + commit on origin/main)	470947956
+session_01PpBKQCfbCZjqddMU7LsadD	RUN2-PAG Paget 7 disagreeing codes	clairambault1225-paget-1714	2026-10-04T03:25	pushed	none (ROOM done line + commit on origin/main)	4257054e
+session_01GzvnzNm5gjaEH6uDUetYkP	RUN2-NXALN Noailles c510-516 vs Dupuy alignment		2026-10-04T03:45	pushed	none (ROOM done line + commit on origin/main)	af9c05ed
+session_01UspS7mqWiADN1g8PcS91if	RUN2-SAV Savary fr.17020 ff.372-382 survey		2026-10-04T02:51	pushed	none (ROOM done line + commit on origin/main)	1e414cd6
+session_01XNxejcfaZte5vAAXjfaT1A	RUN2-ES132 Vargas Mexia f.89 / f.119v under Cp.30		2026-10-04T02:55	pushed	none (ROOM done line + commit on origin/main)	ef5fc4c6
+session_01FtS5D1bD8n1EZRaJZy1KcX	RUN2-NXTB Noailles c516+c515 blind passes		2026-10-04T03:00	pushed	none (ROOM done line + commit on origin/main)	ca2b03b4
+session_01BBJawMYSA4gmvSNhjAEaGH	RUN2-NXTA Noailles c510+c511 blind passes		2026-10-04T03:00	pushed	none (ROOM done line + commit on origin/main)	13567da6
+session_012vHjKMJrR52kqDc3uRShKW	RUN2-NXATL Noailles c510-516 family atlas		2026-10-04T03:03	pushed	none (ROOM done line + commit on origin/main)	15118e6d
+session_01CZ7rgi4VAyYHfHvrhQihDX	RUN2-NXDUP Dupuy 521 221R-226R clear text		2026-10-04T02:59	pushed	none (ROOM done line + commit on origin/main)	cdc94f57
+session_01JUMamDKmVYMaxdMxbs1AVT	LIVE lane LANE-RUN2 (account 1)		2026-10-04T04:02	pushed	none (ROOM done line + commit on origin/main)	af9c05ed
+session_01VYEBVCHB93dfu9zAvvy3xA	STALE4 GAPS208 zeschau R5008 (for account 4)		2026-10-04T02:15	pushed	none (ROOM done line + commit on origin/main)	03edec02
+session_01Hx3zJPYjyCKPLyyLUgDrH6	STALE4 GAPS209 rah-morillo f.35 (for account 4)		2026-10-04T02:12	pushed	none (ROOM done line + commit on origin/main)	03edec02
+session_017MvTnQpRqSHbg7P12uREwt	STALE4 GAPS211 pollaky T-prime (for account 4)		2026-10-04T02:09	pushed	none (ROOM done line + commit on origin/main)	03edec02
+session_01S2c7M5fMuM1MaZEzUPnDwr	STALE4 GAPS207 manteuffel Loc.694/08 crops (for account 4)		2026-10-04T01:51	pushed	none (ROOM done line + commit on origin/main)	03edec02
+session_01JvSL56pfLjTf5ELq7psu9d	STALE4 GAPS210 rousseau NAF 14913 sweep (for account 4)		2026-10-04T02:06	pushed	none (ROOM done line + commit on origin/main)	03edec02
+session_01TMZVFF8T3js4u5CQHM6bTt	STALE4 GAPS206 eckert-1862 (for account 4)	eckert-1862	2026-10-04T01:53	pushed	none (ROOM done line + commit on origin/main)	03edec02
+session_01KdkphRDmh7RamWYUSRNorT	LIVE parent worker QUOTES-FILL (fill outreach/QUOTES.md from the project mailbox)		2026-10-04T01:43	pushed	none (ROOM done line + commit on origin/main)	67452bf01
+session_01QTSnypE8zXMowpapJcTVwz	LIVE parent worker STALE4 (re-run account 4's six unfinished 19:18 jobs)		2026-10-04T02:21	pushed	none (ROOM done line + commit on origin/main)	03edec02
+session_01BqU82FfmCFFTA3aDmjHk5F	RUN1-KARL (account 1 worker, LANE-RUN1) ra-karlxi be-api retry		2026-10-04T01:27	pushed	none (ROOM done line + commit on origin/main)	eae2137f
+session_014QQTNG4Gt6HmkhhQ9vu1eZ	RUN1-RAA (account 1 worker, LANE-RUN1) na-raad-azie item-page check		2026-10-04T01:26	pushed	none (ROOM done line + commit on origin/main)	0eeeacd96
+session_01XbJwVCLviqLjV7nChdDMBY	RUN1-BAL (account 1 worker, LANE-RUN1) baluze167 Tomokiyo PNG + leaf survey		2026-10-04T01:58	pushed	none (ROOM done line + commit on origin/main)	cab4be1f
+session_01AeSQAkmRUSGyC5gUriaLgw	RUN1-MOR (account 1 worker, LANE-RUN1) moray-wood no.804 reference sheet		2026-10-04T01:10	pushed	none (ROOM done line + commit on origin/main)	b696036c6
+session_01YGt8KYQ7Bj9fPXBvWiS1eh	RUN1-HAR (account 1 worker, LANE-RUN1) harley-287 rerun + masked f.84r		2026-10-04T01:20	pushed	none (ROOM done line + commit on origin/main)	fe10acae
+session_012EYTMUBJNsGC3DtuYHZoXT	RUN1-VIV2 (account 1 worker, LANE-RUN1) fr16104 Mousset + leaves		2026-10-04T01:09	pushed	none (ROOM done line + commit on origin/main)	785bd10fc
+session_01DVi747GBTPYh8rXBVvhhGS	RUN1-PAG (account 1 worker, LANE-RUN1) paget segmentation instrument		2026-10-04T01:34	pushed	none (ROOM done line + commit on origin/main)	6eac5bf2
+session_011ErF4Gt7PEBPFNDZG8sZDm	RUN1-VIV (account 1 worker, LANE-RUN1) fr16104 Mousset + leaves		2026-10-04T00:47	nothing	stopped: brief not on main; job redone as RUN1-VIV2 (785bd10fc)	
+session_01UhkatWeW1kpS91wNjFcKVY	RUN1-NX (account 1 worker, LANE-RUN1) fr16142 gloss look + Dupuy 521		2026-10-04T01:32	pushed	none (ROOM done line + commit on origin/main)	bd90b01c
+session_013Uw1XrqM3JDr2uRa8frn3F	RUN1-SAV (account 1 worker, LANE-RUN1) fr16144 savary cheap steps		2026-10-04T00:55	pushed	none (ROOM done line + commit on origin/main)	c13e1a4c
+session_01JntBibAFiq38R6PFi9XbWy	RUN1-ES132 (account 1 worker, LANE-RUN1) es132 test 1		2026-10-04T01:05	pushed	none (ROOM done line + commit on origin/main)	e8c71b2a
+session_0188DcDuLUeDMHzSCmWaAyKh	RUN1-SEG (account 1 worker, LANE-RUN1) rah-juan-manuel segmenter + sorter		2026-10-04T01:04	pushed	none (ROOM done line + commit on origin/main)	7005666e
+session_01S2B94d18voz7j6uJYybsgr	LIVE lane LANE-RUN1 (account 1)		2026-10-04T02:10	pushed	none (ROOM done line + commit on origin/main)	cab4be1f
+session_01Fv1fMUAdcR7hqJWGWUX1JP	JM-ALPHA rah-juan-manuel-1521 alphabet recovery (LANE-JM)	rah-juan-manuel-1521	2026-10-04T00:22	pushed	none (ROOM done line + commit on origin/main)	7eda7cab
+session_01WENM1JWBhiL7mq4uoJGQj1	VG-CN es132 Vargas vs cabinet-noir (LANE-JM)		2026-10-03T23:45	pushed	none (ROOM done line + commit on origin/main)	6dbfb1ec
+session_01ASd55Y3SNRffoQVLVRVCoR	SV-SORT fr16144 Savary sorter sheet (LANE-JM)		2026-10-04T00:00	pushed	none (ROOM done line + commit on origin/main)	6dbfb1ec
+session_013mPTYb9xBh1Y2ox9VVGvNu	NX-RECUT fr16142 Noailles c262 re-cut (LANE-JM)		2026-10-03T23:57	pushed	none (ROOM done line + commit on origin/main)	6dbfb1ec
+session_013HU9zT7ucorgKPoauaGisB	JM-K rah-juan-manuel-1521 Kolosova premise (LANE-JM)	rah-juan-manuel-1521	2026-10-03T23:49	pushed	none (ROOM done line + commit on origin/main)	6dbfb1ec
+session_018gnDuzVYFX5fPEar3GhNVz	LIVE lane LANE-JM (account 1)		2026-10-04T00:26	pushed	none (ROOM done line + commit on origin/main)	7eda7cab
+session_01195G6UjSbFtmTaNj3532vR	ARCHIVED POOLS-FT-D (done 22:56, $16.83 D-)		2026-10-03T22:56	pushed	none (ROOM done line + commit on origin/main)	b57963696
+session_01UKM5kvDPSG11DudeWLtN6E	ARCHIVED POOLS-FT-C (done 22:46, $3.52 D)		2026-10-03T22:44	pushed	none (ROOM done line + commit on origin/main)	ffb38be88
+session_01WKSD5E53djDmyUendovvXJ	ARCHIVED POOLS-FT-B (done 22:39, $4.57 D)		2026-10-03T22:39	pushed	none (ROOM done line + commit on origin/main)	5673f077d
+session_017sYvbBr3q6q9oz6d5w4BRc	ARCHIVED POOLS-FT-A (done 22:33, $3.54 D)		2026-10-03T22:33	pushed	none (ROOM done line + commit on origin/main)	80652a006
+session_017Q3wLu6uhsiuTfBUU5Y6NC	ARCHIVED POOLS-CS-6 (done 22:10, $2.14 D)		2026-10-03T22:11	pushed	none (ROOM done line + commit on origin/main)	f40d9862c
+session_01WRvromYVGyAaDjyo5WKbH3	ARCHIVED POOLS-CS-5 (done 22:15, $2.59 D)		2026-10-03T22:15	pushed	none (ROOM done line + commit on origin/main)	b3251114b
+session_01DMrfTvf4dnd6gXbNYs4jTM	ARCHIVED POOLS-CS-4 (done 22:12, $2.11 D)		2026-10-03T22:12	pushed	none (ROOM done line + commit on origin/main)	65ee5468b
+session_01CDV67Hpct5jcmuLRjLQs93	ARCHIVED POOLS-CS-3 (done 22:12, $2.14 D)		2026-10-03T22:12	pushed	none (ROOM done line + commit on origin/main)	290829078
+session_01FnxR8sFgHfDKBxz8cQD6wR	ARCHIVED POOLS-CS-2 (done 22:14, $2.54 D)		2026-10-03T22:14	pushed	none (ROOM done line + commit on origin/main)	0187229ac
+session_01Dkn6fBWtFhFadkdA32o6Wg	ARCHIVED POOLS-CS-1 (done 22:17, $3.09 D)		2026-10-03T22:16	pushed	none (ROOM done line + commit on origin/main)	6f33d5a2e
+session_01U7b1SmqEGqG8MgPBUr8H89	ARCHIVED POOLS-SCOUT-P4 (done 21:50, $2.03 D)		2026-10-03T21:50	pushed	none (ROOM done line + commit on origin/main)	fdd93ad5
+session_01JKWwDrwPsF5oppk97uubza	ARCHIVED POOLS-SCOUT-P3 (done 21:49, $1.56 D)		2026-10-03T21:49	pushed	none (ROOM done line + commit on origin/main)	bfcb7be48
+session_013y5n2Jiqukapc9ErXyt6Du	ARCHIVED POOLS-SCOUT-P2 (done 21:56, $2.28 D)	vivonne-longlee-spain-1579	2026-10-03T21:57	pushed	none (ROOM done line + commit on origin/main)	cc383678
+session_01AK9n8EKx4d2ZXe6FgbYYbi	ARCHIVED POOLS-SCOUT-P1 (done 21:56, $2.62 D)		2026-10-03T21:53	pushed	none (ROOM done line + commit on origin/main)	24b5cc543
+session_01JKkb3fmtQCnwhMQpdmzT1H	LIVE lane LANE-POOLS (account 1)		2026-10-03T22:59	pushed	none (ROOM done line + commit on origin/main)	b5796369
+session_01MfdpfAJN8MfVGZDRevem2X	ARM-A-H76 French side (account-1 worker)		2026-10-03T19:46	pushed	none (ROOM done line + commit on origin/main)	5e7d2712
+session_01FGvHYZPndneozK8iCnMfSi	ARM-A-H75 Bowdoin (account-1 worker)		2026-10-03T19:47	pushed	none (ROOM done line + commit on origin/main)	1b5a3d34
+session_011LsfWjmjanzg358BoQzfKe	ARM-A-H72 finding aids (account-1 worker)		2026-10-03T19:35	pushed	none (ROOM done line + commit on origin/main)	4ca7d5ff
+session_015uEektZv8ykdyEg8eNkWMX	ARM-A-H71 catalogue retry (account-1 worker)		2026-10-03T19:28	pushed	none (ROOM done line + commit on origin/main)	2d129eeb
+session_01VXG4dyHsuCJvU991UoLBjF	ARM-A-H70 crib sheet (account-1 worker)		2026-10-03T19:40	pushed	none (ROOM done line + commit on origin/main)	d7dae1b5
+session_01GZviub2FQXjy12TqJpwysi	SWEEP-OWN-1 (account-1 worker)		2026-10-03T19:25	pushed	none (ROOM done line + commit on origin/main)	89dc4bf5
+session_01NA19hNx5PxNXKiZgL19eni	A1B-CEPPO-36V (account-1 worker)		2026-10-03T18:38	pushed	none (ROOM done line + commit on origin/main)	e10c5179
+session_01DXvTZyzcNqwzbkS837ojCr	A1B-FILS-L05 (account-1 worker)	fr3416-nevers-fils-1589	2026-10-03T18:39	pushed	none (ROOM done line + commit on origin/main)	02b5442c
+session_01KQpeH2jDEUQvD82z7EWAmD	A1B-FILS-UPPER2 (account-1 worker)	fr3416-nevers-fils-1589	2026-10-03T18:40	pushed	none (ROOM done line + commit on origin/main)	02b5442c
+session_011KLnV2rVm12UZecTutrTjb	A1B-VILL-M (account-1 worker)		2026-10-03T18:25	pushed	none (ROOM done line + commit on origin/main)	785b1f26
+session_01QbGnMta4dMuBkYqVJfvL2w	A1B-FILS-UPPER (account-1 worker)	fr3416-nevers-fils-1589	2026-10-03T18:20	pushed	none (ROOM done line + commit on origin/main)	2230098f
+session_01NEC4ootNW42wQT4at7RSvn	A1B-CEPPO-87 (account-1 worker)		2026-10-03T18:14	pushed	none (ROOM done line + commit on origin/main)	3248cbff
+session_01QZstdihT9njNtQan89XjKG	A1B-FILS-XIIIJ2 (account-1 worker)		2026-10-03T18:02	pushed	none (ROOM done line + commit on origin/main)	10553d32
+session_01G6SUoBvCNikGBgd2cbx6Fn	A1B-LIN-ROWS (account-1 worker)		2026-10-03T18:06	pushed	none (ROOM done line + commit on origin/main)	b6c665c6
+session_01Ggwdn1konGP2xDkBXe3f3Z	A1B-VILL-L (account-1 worker)		2026-10-03T18:05	pushed	none (ROOM done line + commit on origin/main)	0b0a7303
+session_01XwJKqE8b5KPnWcFiZXsKrn	A1B-VILL-994 (account-1 worker)		2026-10-03T17:41	pushed	none (ROOM done line + commit on origin/main)	0e5239eb
+session_01WRSAbpB6GuMnRk57a9ctmU	A1B-CEPPO-CRIB (account-1 worker)		2026-10-03T17:45	pushed	none (ROOM done line + commit on origin/main)	6c38f2cb
+session_01DdVChseBb9MCcqQx6cf92D	A1B-FILS-F38B (account-1 worker)	fr3416-nevers-fils-1589	2026-10-03T17:43	pushed	none (ROOM done line + commit on origin/main)	6db34b3c
+session_01Bhd9fcYRSj9AbiGjiuJKAy	A1B-LIN-REDERIV (account-1 worker)		2026-10-03T17:42	pushed	none (ROOM done line + commit on origin/main)	1f04d6a3
+session_01Pyy5E8NEaafYA9eVDsRubY	A1B-CEPPO-11V (account-1 worker)		2026-10-03T17:24	pushed	none (ROOM done line + commit on origin/main)	c5412f90
+session_01KWoHknMsVC1nkKDuYvEcBD	A1B-FILS-XIIIJ (account-1 worker)		2026-10-03T17:21	pushed	none (ROOM done line + commit on origin/main)	a6deffe9
+session_01LVD6MVf9doj7nLKz7wuMpr	A1B-VILL-ASSENT (account-1 worker)		2026-10-03T17:33	pushed	none (ROOM done line + commit on origin/main)	a85e191c
+session_015zDe7DqavRNxSw4zf6wGDZ	A1B-VILL-TX2 (account-1 worker)		2026-10-03T17:38	pushed	none (ROOM done line + commit on origin/main)	188c08f7
+session_016iVyJ7wwRVcyqFLHJ44ne1	A1B-RANZO-SG (account-1 worker)		2026-10-03T17:33	pushed	none (ROOM done line + commit on origin/main)	3b08bfa6
+session_01LY2SbhBwBjV65caVmrEdys	A1B-LIN-M0002b (account-1 worker)		2026-10-03T17:23	pushed	none (ROOM done line + commit on origin/main)	cc130112
+session_0197DBhwjk71acZsY2ykXe6x	A1B-VILL-57-44 (account-1 worker)		2026-10-03T17:08	pushed	none (ROOM done line + commit on origin/main)	68f2a808
+session_01Q9c11eYXGNqBTE4EL4zxN1	A1B-CEPPO-36 (account-1 worker)		2026-10-03T17:05	pushed	none (ROOM done line + commit on origin/main)	c5412f90
+session_01727Rv1LXz4KZACgZH4wyy5	A1B-LIN-M0002 (account-1 worker)		2026-10-03T17:02	nothing	stopped at ROOM conflict; job redone as A1B-LIN-M0002b (cc130112b)	
+session_011Dmi6Mf6RFuKPxLaMcFdiE	A1B-LIN-PIX (account-1 worker)		2026-10-03T17:06	pushed	none (ROOM done line + commit on origin/main)	65184c9d
+session_012W2VbnPcYB2J3KvsGBrdYA	A1B-VERIFY-FILS-N4b (account-1 verifier)	fr3416-nevers-fils-1589	2026-10-03T17:03	pushed	none (ROOM done line + commit on origin/main)	d15c646e
+session_01FYL5YYNHjfJnky4P7Dgfio	A1B-RANZO-2WIT (account-1 worker)		2026-10-03T17:04	pushed	none (ROOM done line + commit on origin/main)	01663d2c
+session_01KoBZVeFDHc3xMPhHgyN6kN	A1B-CEPPO-POUND (account-1 worker)		2026-10-03T16:44	pushed	none (ROOM done line + commit on origin/main)	4f6566a9
+session_011shdhCCCpvaGyjrSNZYCF8	A1B-LIN-HOCR (account-1 worker)		2026-10-03T16:44	pushed	none (ROOM done line + commit on origin/main)	d48fbbd8
+session_01ThLnKGpnQYXRUUHXNcXw6K	A1B-FILS-L10 (account-1 worker)		2026-10-03T16:43	pushed	none (ROOM done line + commit on origin/main)	671a02a4
+session_019apmYW8GbaTF2JeF8KxR96	A1B-FILS-LQ (account-1 worker)		2026-10-03T16:42	pushed	none (ROOM done line + commit on origin/main)	671a02a4
+session_01HjqGUJN3rKtdHsyV5KuvpC	A1B-VILL-PAIR (account-1 worker)		2026-10-03T16:42	pushed	none (ROOM done line + commit on origin/main)	1cf9c6ec
+session_015rWTRZYuKLgHKfVpjMBGUW	LANE-A1B account orchestrator		2026-10-03T19:57	pushed	none (ROOM done line + commit on origin/main)	02b5442c
+session_01M2u8jR7BSipnWBzKrpTQ5k	A1-BIR-VERIFY (LANE-A1 verifier)		2026-10-03T12:26	pushed	none (ROOM done line + commit on origin/main)	934b1b7a
+session_01LbrKLtZWbexcjKHbAodvLY	A1-BIR-EYE (LANE-A1 worker)		2026-10-03T12:06	pushed	none (ROOM done line + commit on origin/main)	4bedf2b4
+session_01D51XboSs8eFmXHMCw9UQaH	A1-VILL-TABLE (LANE-A1 worker)	fr3993-villeroy-1595	2026-10-03T11:37	pushed	none (ROOM done line + commit on origin/main)	55b4b94a
+session_01HtmbCST8c5GUtMRwsSRHXC	A1-VILL-HOMO (LANE-A1 worker)		2026-10-03T11:54	pushed	none (ROOM done line + commit on origin/main)	cbbec013
+session_01AWqQ9HrQSwduGN866YYFzd	A1-POSNULL (LANE-A1 worker)		2026-10-03T11:46	pushed	none (ROOM done line + commit on origin/main)	8770357b
+session_01TGmtxYXJtS51446tikRo94	VILL-NOMEN (LANE-A1 worker)		2026-10-03T11:21	pushed	none (ROOM done line + commit on origin/main)	56efdee8
+session_01N3FAZYwt5eJUNX7oAWtqEe	VILL-SIGNS (LANE-A1 worker)	fr3993-villeroy-1595	2026-10-03T11:03	pushed	none (ROOM done line + commit on origin/main)	960e8750
+session_011UHujnxhfQYLvr2ZYci63L	DUCH-F13 (LANE-A1 worker)		2026-10-03T11:05	pushed	none (ROOM done line + commit on origin/main)	f8ac4670
+session_01KvhKhcyVz91yvxTzq3WU52	DIN-SORTER (LANE-A1 worker)	fr3621-dinteville-1592	2026-10-03T10:45	pushed	none (ROOM done line + commit on origin/main)	fc0f474e
+session_01HrwGXNavNiketnrYH6XBjF	FILS-RECON (LANE-A1 worker)	fr3416-nevers-fils-1589	2026-10-03T10:45	pushed	none (ROOM done line + commit on origin/main)	64dbc7c9
+session_01XK2syiFry3VVhhrMFaJsiQ	OLD-ES17A (LANE-A1 worker)		2026-10-03T10:49	pushed	none (ROOM done line + commit on origin/main)	6a61dd3a
+session_01JfkZvPeXd7HE4nXprL5Zpc	VILL-7280 (LANE-A1 worker)	fr3993-villeroy-1595	2026-10-03T10:50	pushed	none (ROOM done line + commit on origin/main)	66d99a25
+session_013rM418eaYyUM8kCgy2NtNC	DUCH-LEAVES (LANE-A1 worker)		2026-10-03T10:44	pushed	none (ROOM done line + commit on origin/main)	e671f422
+session_01C4wQN6jE3rve7va8yrdCki	DUCH-KEY4 (LANE-A1 worker)		2026-10-03T10:26	pushed	none (ROOM done line + commit on origin/main)	0a3ee1b3
+session_01L5EyTVrrdPvmFDy5j7jdcZ	OLD-PASS2 (LANE-A1 worker)	na-oldenbarnevelt-2442-1605	2026-10-03T10:29	pushed	none (ROOM done line + commit on origin/main)	0f4d8f22
+session_014ig7YeJy97UAic8pe8zTkM	FILS-UPPER (LANE-A1 worker)	fr3416-nevers-fils-1589	2026-10-03T10:28	pushed	none (ROOM done line + commit on origin/main)	2230098f
+session_0196bky56qVxhXL3P645jEgJ	DIN-WORDS (LANE-A1 worker)		2026-10-03T10:28	pushed	none (ROOM done line + commit on origin/main)	5cefabfe
+session_01AnfPzwdzM3ywgxe39pVgYz	VILL-STRIPS (LANE-A1 worker)	fr3993-villeroy-1595	2026-10-03T10:27	pushed	none (ROOM done line + commit on origin/main)	a13e6eca
+session_014oiqeoy4xJf5zM8yutETCV	RANZO-DUP (LANE-A1 worker)		2026-10-03T10:05	pushed	none (ROOM done line + commit on origin/main)	532eef0c
+session_01Bs41a2WDJG2XnxbWCFdaji	VILL-SIBS (LANE-A1 worker)	fr3993-villeroy-1595	2026-10-03T10:10	pushed	none (ROOM done line + commit on origin/main)	47eaa39c
+session_01UmoeapioMc9ztjtPJxkj2K	VILL-KEYS (LANE-A1 worker)		2026-10-03T10:08	pushed	none (ROOM done line + commit on origin/main)	76fb0713
+session_01FtAUt7FHqRdBNgGywC6FCq	FILS-F38 (LANE-A1 worker)		2026-10-03T10:09	pushed	none (ROOM done line + commit on origin/main)	db1e90fe
+session_01CvvYCSnwQDyLRQPNUmwNEG	DUCH-KEY1B (LANE-A1 worker)		2026-10-03T10:13	pushed	none (ROOM done line + commit on origin/main)	bac9d7f3
+session_013QPCLwDmhXx4KbVjZNhgdd	DIN-23P (LANE-A1 worker)	fr3621-dinteville-1592	2026-10-03T10:09	pushed	none (ROOM done line + commit on origin/main)	fc0f474e
+session_019pUNy3Lb7HrcTGcyHcaL7j	VILL-147 (LANE-A1 worker)	fr3993-villeroy-1595	2026-10-03T09:48	pushed	none (ROOM done line + commit on origin/main)	a87a9941
+session_01D7JZTpH9MkTii4ZoheC56z	DUCH-KEY1 (LANE-A1 worker)		2026-10-03T09:49	pushed	none (ROOM done line + commit on origin/main)	bf894e6b
+session_01JPqqidZKnjBdeRYm913YR4	GARB-PS (LANE-A1 worker)		2026-10-03T09:48	pushed	none (ROOM done line + commit on origin/main)	98c408a5
+session_01A7mBt5vnp1W4kca6ETfCeu	RANZO-NB (LANE-A1 worker)		2026-10-03T09:49	pushed	none (ROOM done line + commit on origin/main)	d1fa6f2e
+session_01AQEUC58EfXbsVgMqscM4xk	FILS-NOMEN (LANE-A1 worker)		2026-10-03T09:54	pushed	none (ROOM done line + commit on origin/main)	3401b6f8
+session_01P81vRFNrip4L91JMareEUG	DIN-3623 (LANE-A1 worker)		2026-10-03T09:50	pushed	none (ROOM done line + commit on origin/main)	a91639dc
+session_01QHVm1mkAvij8wuWGTUDv9b	DIN-LEFT (LANE-A1 worker)		2026-10-03T09:30	pushed	none (ROOM done line + commit on origin/main)	4d28d930
+session_01UEY2M585Vjep3vPTmQX3fd	VERIFY-FILS-N4 (LANE-A1 verifier)	fr3416-nevers-fils-1589	2026-10-03T09:32	pushed	none (ROOM done line + commit on origin/main)	d15c646e
+session_01PfJyzDbB6BVmmXzkL63UWu	FILS-CLEAR (LANE-A1 worker)		2026-10-03T09:29	pushed	none (ROOM done line + commit on origin/main)	7172ceb2
+session_01LzMhnBDft1bSoFPR1waq6L	NEVBIR-ERRTRUE (LANE-A1 worker)		2026-10-03T09:28	pushed	none (ROOM done line + commit on origin/main)	5a2b70cf
+session_01G6HZbm33h5wZ5eLd8ipx9F	TXD-HOLDOUT (LANE-A1 worker)		2026-10-03T09:32	pushed	none (ROOM done line + commit on origin/main)	0b9a9955
+session_01TwxTAyc8nBUNZZLR3ZMKeM	BIRAGO-76 (LANE-A1 worker)		2026-10-03T09:27	pushed	none (ROOM done line + commit on origin/main)	3469c984f
+session_01QXP6VgydPmcfBDw7m1mCDv	LANE-A1 orchestrator setup		2026-10-03T12:33	nothing	setup session blocked by permission; lane run by later sessions	
+session_016RDFFGFzat9o7MCKRCpaTg	LANE-A1 orchestrator setup		2026-10-03T09:16	nothing	setup session blocked by permission; lane run by later sessions	
+session_012NTadgrCBftz3oRtgw5jFu	LIVE campaign runner: fr4715-f61-mayenne-1592 (owner account, standing, continuous; runner 9, Opus 5.5, replaces runner 	fr4715-f61-mayenne-1592	2026-10-03T05:50	pushed	none (ROOM done line + commit on origin/main)	d3e1dd18
+session_01BuquErzUYdSB116KPAM8qh	LIVE campaign runner: armstrong-madison-1808 (owner account, standing, continuous; runner 3, Opus 5.5, replaces runner 2	armstrong-madison-1808	2026-10-05T22:26	pushed	standing runner; 5 Oct 22:25 wake on hold, no new work; last commit cited	766d77ee
