@@ -12,3 +12,6 @@ Build an owner page (Artifact, load artifact-design + artifact-capabilities firs
 - Note in NOTES that answers are one human reader's likeness judgement (owner: "my work isn't gospel"), not a match.
 Publish to the private gallery, add the board card (desk kanban GNMEYAR5C1ZeBHvJ9bXYxm, lane todo, "Which shorthand? (Armstrong)",
 ~10 min), commit, ROOM done line, 5-line report with the URL.
+CORRECTION (parent, 5 Oct 05:0x UTC, owner spotted it): specimens/gurney1752_specimen_p6.jpg is a page of running instruction text,
+not a sign chart -- do not use it as system C. Find Gurney's real character plate (archive.org, or h24/h28 folders); if none, drop C
+and say so in NOTES. Check each other specimen is a real sign chart (Byrom p12 is prose with an inline alphabet: prefer a plate).
