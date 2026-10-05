@@ -1344,6 +1344,14 @@ request, no vision call, no subagent. Pre-registration `align/PREREG_settle7ms.m
   shallow, the object is absent); environment, not a result. A fresh rule-7 re-derivation by a separate session is owed for this
   state (orchestrator's step). Requests: none. Subagents: none.
 
+## RUN6-PAGETR7 (5 Oct 2026, 05:22-05:24 UTC by date -u): rule-7 fresh-session re-derivation
+
+Fresh session, not RUN6-PAGET's; worked from spec + key only, at HEAD 12d15aaef after `git fetch --unshallow origin main`.
+- `python3 tools/decode_key.py ciphers/clairambault1225-paget-1714 --check`: "tokens 505: H 50, I 7, M 370, S 72, U 6 / reading up to date", exit 0.
+- `python3 ciphers/clairambault1225-paget-1714/align/pin_pagr.py --check`: "pin_pagr up to date (0 S/H rulings in exceptions.tsv)", exit 0.
+- Independent regeneration into a scratch copy of the folder (reading.txt and reading_tokens.tsv deleted first, then `decode_key.py` without --check): reading.txt byte-identical; reading_tokens.tsv 0 differing rows.
+Verdict: **SAME**. Differing tokens beyond M: 0. No grade changes.
+
 ## Remaining gaps (RUN6-PAGET, 5 Oct 2026)
 Read so far: token level H 50, S 72, M 370, I 7, U 6 of 505 (firm 122), tools/decode_key.py --check 5 Oct 2026; 99.2% of tokens lie under a period interlinear gloss read off the images on disk, so the run-level plaintext of both letters' cipher passages is in hand
 - Code-level values for the 370 M tokens (mostly single-attestation codes; settle7 multi-seed rulings 41 S / 37 M on 15 codes, 18 of 78 rulings not seed-stable; PAGA's eye readings 77 ce, 84 cette, 34 e, 38 i untested by the firm-neighbour pin) - blocker: open-codes; four instruments run (tools/interlinear_align.py; tools/gibbs_align.py, PREREG_seg2.md PASS; the pin, PREREG_pagr.md FAIL; multi-seed settle7, PREREG_settle7ms.md); next: fresh-session rule-7 re-derivation of the RUN6-PAGET state, then audit, ~$2
