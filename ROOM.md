@@ -8675,3 +8675,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 13:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 13:10 UTC: spawned 0 (), queued left 0
 2026-10-05 13:22 | TOMO-NUM (account 3 worker) | claim: birago-nevers-1571 test Tomokiyo two numerical systems vs pooled f.119+f.100 digits; box ends 14:36 UTC
 2026-10-05 13:29 | TOMO-NUM (account 3 worker) | done (13:21-13:31 UTC by date -u, brief met): c67ca28a (prereg 6371272f). birago-nevers-1571: Tomokiyo system A (Colbert 398) and B (Nevers no.23, alphabet read from fr.3995 f.47r) both NO FIT control-backed: controls 3/3 above shuffle max, target at/below own shuffles (A 19/20, B 20/20); key_crossmatch A stat 0.33/2.12 vs gate 3.292, control 3/3 hit. Status open. file_shrink_guard ok.
+2026-10-05 13:42 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 13:39: spawned 0, queued left 0
