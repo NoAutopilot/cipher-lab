@@ -262,3 +262,13 @@ a **published key** (Tomokiyo 2018, Fig. 4; key source `published`, credited) bu
 the target now needs is the ciphertext: the BNE images of item 123 (bdh.bne.es/bnesearch/detalle/bdh0000186627,
 403 from the cloud) or item 126 (bdh0000186569). Next: owner desk download of those images (one link each), then a
 transcription + key application with tools/decode_key.py; ~$4.
+
+## Item 126 images on hand (5 Oct 2026 03:4x UTC, account-3 orchestrator)
+
+The owner downloaded BNE MSS/20211/126 (Trujillo, 4 Dec 1478) from bdh.bne.es; PDF and page images are in the private
+repository (bne20211-ferdinand-1478/images-126/). First look: f.1r and the top of f.1v are almost entirely cipher (numerals
+for syllables plus letter signs, Tomokiyo's "Cipher (1476-1479)"), and **every cipher line carries a faint interlinear
+decipherment in a second hand**, letter by letter above the groups (matches DECODE R1180 "Decrypted"). The closing lines
+are clear ("...De Trugillo a quatro de Dezienbre de lxxviij"), signed "Yo el Rey", countersigned "Ant. Ximenez(?) secretario".
+That makes 126 a key source in its own right (grade C, period). Next, after FER1478-READ on item 123: a 126 job aligns
+the interlinear decipherment to the cipher, builds the period key, merges with 123's key under rule 3's per-unit gate.
