@@ -8517,3 +8517,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-05 01:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:10 UTC: spawned 0 (), queued left 0
 2026-10-05 01:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 01:39: spawned 0, queued left 0
 2026-10-05 01:51 | OUT-GAPS (acct3 worker) | claim: outreach matrix for D2+ counted docs x (key author, edition, archive, solver repos) + drafts for untold parties; no send, no Gmail drafts; cap USD 5, box 45 min
+2026-10-05 01:51 | BOARD-DEPTH (acct3 worker) | claim: tools/build_dashboard.py counted() requires depth D2+, separate 'fragments read' D1 figure, test, rebuild board; cap USD 2, box 25 min
