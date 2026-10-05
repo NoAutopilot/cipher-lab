@@ -2766,3 +2766,22 @@ is only partly in cipher, **undeciphered**. He is forwarding our quote request t
 P4 (read from Birch's printed numerals, D2, the p.188 incoherence being in Birch's print) can be checked against the manuscript once
 images come -- possible depth rise, and any cipher on p.76 that Birch did not print is unread text in a known key. Reply draft
 (thanks; quote for all of p.76 + p.73) placed in Gmail for the owner.
+
+## D2B-THURP3 -- P3 postscript vs the P5-P7 (Stamford) key, all grades, with support counts (5 Oct 2026, account 2, for LANE DEFAULT-account-2-20261005-2217)
+
+Step check: s.22 Job 3 (25 Sept 2026) already compared the postscript's 21 distinct **M-graded** values with
+`pool_1654/key_stamford.tsv` (4 present, 0 agreeing). It did not test the postscript's H/C-graded codes, which is the
+only way to ask whether the Stamford key shares Butler's system at all, and did not report support counts. This pass
+does both; it is the folder Verdict's "cheapest next" step, run at full scope.
+
+**Pre-registered rule (written and pushed before the lookup is run):**
+1. *Compatibility gate.* Take every distinct postscript code (djvu 48000-48004) graded H or C in `reading_P3.txt` that
+   also has an entry in `key_stamford.tsv`. If fewer than 3 such codes exist, or fewer than 2/3 of them carry the same
+   meaning in both keys, the Stamford key is not shown to share Butler's system: **no P3 token is regraded**, and the
+   result is logged as a negative for this instrument.
+2. Only if the gate passes: an M or U postscript token whose code has a Stamford value with >= 2 printed votes and
+   share >= 0.8 (no internal conflict) and **equal** to Butler's own M value -> C; equal with one Stamford vote -> stays M;
+   U with a Stamford value -> M at most (never C, cross-correspondent).
+3. A Stamford value that **differs** from Butler's value for the same code is a rule-4 data conflict: listed with its
+   witnesses (Butler: P3 body interlinear, John Butler to Thurloe, vol.2, 1654/56; Stamford: P5+P6/P7 printed
+   decipherments, W. Stamford, Calais, March 1655), never settled by vote count; the P3 token keeps its grade.
