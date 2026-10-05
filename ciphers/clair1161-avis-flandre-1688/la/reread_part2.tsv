@@ -1,0 +1,41 @@
+passage	pos	label	conf	second	note
+c187L_L11	21	S	M	sd	hooked s-like tail
+c187L_L12	21	6r	H		6 with hook
+c187L_L13	15	S	M	sd	hooked s
+c187L_L16	28	6r	M	6	6 with z-like hook
+c187L_L19	27	th	M	dia	oval crossed by bar
+c187L_L23	5	z	M	2	barred z with left hook
+c187L_L23	12	dia	M	th	solid blob crossed
+c187L_L23	28	6r	M	6	6 with hook
+c187L_L24	11	th	L	dia	messy cluster
+c187R_L02	11	qb	H		q with cross foot
+c187R_L04	1	th	H	dia	oval with bar
+c187R_L07	26	tz	M	3	bar over 3-like body
+c187R_L10	10	th	M	dia	dotted theta
+c187R_L15	28	z	M	x	crossed star-like
+c187R_L18	22	eloop	M	K	large looped sign
+c187R_L20	26	q	M	ls	long descender no cross
+c187R_L26	23	z	H		barred z
+c188L_L01	9	z	H		barred z
+c188L_L01	15	z	H		barred z
+c188L_L01	28	z	H		barred z
+c188L_L03	15	z	H		barred z
+c188L_L03	18	z	H		barred z
+c188L_L04	19	z	H		barred z
+c188L_L05	3	z	H		barred z
+c188L_L05	15	z	H		barred z
+c188L_L05	21	dia	H		filled diamond cross
+c188L_L06	4	tz	L	z	6z-like with bar
+c188L_L08	1	z	H		barred z
+c188L_L08	7	z	H		barred z
+c188L_L08	10	th	M	dia	blobby theta
+c188L_L08	16	z	H		barred z
+c188L_L09	4	z	H		barred z
+c188L_L09	6	th	H	dia	theta on q
+c188L_L11	6	z	H		barred z
+c188L_L12	8	z	H		barred z
+c188L_L12	11	z	H		barred z
+c188L_L13	15	z	H		barred z
+c188L_L13	21	z	M	th	z of sz
+c188L_L13	31	z	H		barred z
+c188L_L14	1	z	M	2	z-like with dot

@@ -1989,3 +1989,41 @@ in print; depth D1 (C/S 67.0%, longest C/S run 16), not counted. Lauer t. II p. 
 repeats the finding-aid words, no date, sender or decipherment. CSP Foreign 1569-71, CSP Spanish II, Teulet II: no hit.
 status.json results row added; SO-C1161 queued. Suggestion for a solver (not actioned): shape test against the "Chiffre envoyé
 en Flandres à monseigneur Des Pruneaux" (BnF fr. 3281, per Tomokiyo), ~$1. Novelty is classified only in AUDIT.md.
+
+## D2-C1161LA (account-1 worker for LANE-D2PUSH, 5 Oct 2026, 18:47-18:5x UTC by date -u)
+Brief `.claude/briefs/runs/2026-10-05-acct1-d2-c1161la.md`. Intake gate pasted: `ciphers/clair1161-avis-flandre-1688: partial (line 1)
+-- edition/page or full-text-search citation found within 6 lines` (exit 0). PREREG `la/PREREG_c1161la.md` pushed before any
+re-read or score (4baba1228). Scripts `la/build_align.py`, `la/make_tiles.py`, `la/la_test.py`.
+
+- Packet: C (ciphertext.tsv) vs readers A/B aligned per line: 3434 signs, agree 2971, split 299, split_gap 81. Tiles = every split
+  with th/z/S/4 on any side: **109** (merged z 45, s 17, th 11, S 6, 4 only 2). The other ~790 th/z/S/4 tokens have both readers
+  agreeing and cannot be moved by a 2-of-3 rule (LESSONS.md "Look-alike pass").
+- Instrument: `tools/lookalike_pass.py windows` (label hidden, candidates alphabetical, shapes from tx/labels_v2.md), 11 montages
+  of per-tile windows cut from the existing native line crops (la/win/, gitignored; regenerate with the PREREG command). 3 Sonnet
+  calls (40/40/29 tiles): conf H 31, M 63, L 15.
+- Reconcile (2-of-3): 80 settled (70 confirm passC, **10 relabel**), 29 UNSETTLED -> `la/focus.tsv` for the owner's sign sorter.
+  Residual 0.008 is agreement, not reader error.
+- Test (50 random same-label relabel seeds): dG real +0.0000 vs null p95 +0.0000 -- none of the 10 lies in the c186R block, so G
+  cannot discriminate (the PREREG's named case); dJ real +0.00128 vs null p95 -0.00048 (beats); longest C/S run 16 -> 16.
+  **GATE FAIL as registered; the 10 relabels are NOT applied.** ciphertext.tsv, key.tsv and grades unchanged (C 353, S 1908,
+  M 1114, U 33; C/S 67.0%); no decode, depth or AUDIT propagation owed. The judge gain alone is information only.
+- The 10 relabels for a future sorter/verifier (passD.tsv): c185R_L07.9 q->ls, c186L_L07.21 4->qb, c187L_L04.5 y->S,
+  c187L_L06.24/L11.21/L13.15 sd->S, c187L_L07.15 and L23.5 2->z, c187L_L23.12 th->dia, c187R_L15.28 w->z.
+Report what was found and where it was not found: no outside source searched; novelty not classified. Subagent calls: 3 (Sonnet).
+
+## Remaining gaps (D2-C1161LA, 5 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H. th/z/S/4 look-alike pass: 10 relabels found, gate FAIL (G non-discriminating outside c186R), not applied.
+- 27 M-graded key signs (th, z, eloop, phi, 6r, 8, 2, tz, and the nine LOLO values K, iib, l, ls, o, rot, spiralG, to, x) and the contested S signs 4, S - blocker: not-attempted; the c186R gloss (170 letters) cannot license value changes and the 2-of-3 look-alike pass cannot touch agreed tokens; next: the 29 unsettled tiles (la/focus.tsv) plus the 10 relabels through the owner's sign sorter, then a held-out-leaf judge test of the sorted transcription, ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; agreed-but-wrong signs are invisible to the look-alike pass (D2-C1161LA); next: a TX-AGREEAUDIT planted audit (`lookalike_pass.py audit` + `windows --items`) on agreed th/z/S/4 tokens, ~$3
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (D2-C1161LA, 5 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; the gloss PASSes the fr16 judge (-0.808), the decode FAILs
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key, shape-level test 2/16 vs permutation p99 3, NO FIT (N4-C1 4); fr.3281 Des Pruneaux key shape test with D2-C1161PRU (same lane)
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material
+- [ ] image-check: th/z/S/4 split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); next: planted agreed-token audit on th/z/S/4, and the sorter for the 29 unsettled tiles and seven new shapes, as in Remaining gaps
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
+Verdict: keep going: 3 internal gaps; cheapest next: planted agreed-token audit (lookalike_pass.py audit + windows --items) on th/z/S/4, ~$3
