@@ -1907,12 +1907,21 @@
       "completeness": "not given in row",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 3. Classification'"
+        "AUDIT.md '## 3. Classification'",
+        "AUDIT.md '## AUDIT 2 (VER1-LOWB, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "dupuy452-carpi-1520/AUDIT.md section 3; grade 'N0, F0'"
+      "fields_source": "dupuy452-carpi-1520/AUDIT.md section 3; grade 'N0, F0'",
+      "depth": "D2",
+      "depth_pct": 93.6,
+      "depth_sentence": "Raince writes that the cardinal of Como and his colleague had never held any but a bad opinion of the man and had believed what they were told of him (f.28r lines 17-18; Jacqueton glosses it as their view of Pescara).",
+      "depth_check": "external: Jacqueton 1892 P.J. XXXIII, printed from the period decipherment at f.31, 87.2% letter agreement (compare_print.py); decode.py --check OK; not D3: 333 of 355 M tokens are single letters, not name/code groups",
+      "decode_status": "Partially decrypted",
+      "depth_by": "VER1-LOWB (LANE-VER1)",
+      "depth_date": "5 Oct 2026",
+      "text": "known"
     },
     {
       "date": "23 Sept 2026",
@@ -2635,12 +2644,22 @@
       "completeness": "817/953",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 1. Verdict'"
+        "AUDIT.md '## 1. Verdict'",
+        "AUDIT.md '## AUDIT 2 (VER1-LOWB, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "gunther-van-schwarzburg-1561/AUDIT.md section 1 (printed deciphered in Japikse 1934 no.316)"
+      "fields_source": "gunther-van-schwarzburg-1561/AUDIT.md section 1 (printed deciphered in Japikse 1934 no.316)",
+      "depth": "D2",
+      "depth_pct": 85.7,
+      "depth_sentence": "William of Orange tells Günther that the old Duchess of Lorraine has let it be known that Günther is to have orders from the King of Denmark to pursue the marriage between Denmark and Lorraine.",
+      "depth_check": "external: Japikse 1934 no.316 spaced-type decipherment followed word for word; decode_key --check up to date; not D3: the 136 unread tokens are letter signs (M 53, U 83), not name/code groups",
+      "decode_status": "Partially decrypted",
+      "depth_by": "VER1-LOWB (LANE-VER1)",
+      "depth_date": "5 Oct 2026",
+      "key": "ours",
+      "text": "known"
     },
     {
       "date": "24 Sept 2026",
@@ -3026,12 +3045,20 @@
       "completeness": "289/1020",
       "unresolved_spans": "",
       "audit_refs": [
-        "AUDIT.md '## 1. Verdict' (V7-CL349)"
+        "AUDIT.md '## 1. Verdict' (V7-CL349)",
+        "AUDIT.md '## AUDIT 2 (VER1-LOWB, 5 Oct 2026)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
-      "fields_source": "clair349-este-guise-1556/AUDIT.md section 1; H 29, C 260 of 1020 from the grade"
+      "fields_source": "clair349-este-guise-1556/AUDIT.md section 1; H 29, C 260 of 1020 from the grade",
+      "depth": "D2",
+      "depth_pct": 28.3,
+      "depth_sentence": "The Cardinal of Ferrara tells Guise that he has sent men into Germany who have not yet reported anything, which makes him think things there are not as heated as the enemy would have people believe.",
+      "depth_check": "C/H stretches against the leaf's interlinear gloss and the 1839 print (Michaud-Poujoulat 1e ser. t.6 pp.238-239); decode_key --check up to date; below 80%, gaps are letters",
+      "decode_status": "Partially decrypted",
+      "depth_by": "VER1-LOWB (LANE-VER1)",
+      "depth_date": "5 Oct 2026"
     },
     {
       "date": "26 Sept 2026",

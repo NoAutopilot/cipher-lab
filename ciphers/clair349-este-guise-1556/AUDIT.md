@@ -143,3 +143,59 @@ STATUS.md if they say "not printed" or call the result a reading rather than a k
 spec's check-solved text if it repeats the claim.
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+## AUDIT 2 (VER1-LOWB, 5 Oct 2026)
+
+Verifier VER1-LOWB (for LANE-VER1, account ytbiz), 5 Oct 2026, from 19:03 UTC by `date -u`. A separate session from Audit 1's
+(V7-CL349, 25 Sept 2026) and from LANE ZX's solver sessions; second adversarial audit under CLAUDE.md Outreach gate 2. No
+decoding; reading, keys and ciphertext unchanged. Task for an N0 item: try to overturn N0 and look for an earlier print.
+
+**Checks, fresh this session:**
+- **The print, from a second, independent scan.** Audit 1 read the Toronto djvu (`nouvellecollecti06michuoft`) and did not view a
+  page image. This session's Google Books API phrase search (`"capitaine Livio" "cardinal de Ferrare"`, 43 volumes) returns the
+  same passage from Google's own scans of Michaud-Poujoulat 1e sér. t.6 (1839, and the 1851/1854/1857/1866 reissues): "...
+  capitaine Livio Grosso ; celluy qui en est autheur m'a escript qu'il est en meilleure volonté de la faire que ...". IA be-api
+  fts `"pratique du capitaine Livio"` hits three scans of the volume (`nouvellecollect04poujgoog`, `nouvellecollect00michgoog`
+  -- IA metadata date 1836 is the series start, `nouvellecollecti06michuoft`). The text is in print; N1 at least, N0 with the
+  interlinear decipherment on the leaf (Audit 1 s.2). **N0 stands.**
+- **Earlier print?** Every printed witness found is Michaud-Poujoulat 1839 or its reissues; Ribier 1666 was read by the earlier
+  print_check and gave nothing (Audit 1 s.4, not repeated). Earliest known print stays 1839.
+- **Rule 7:** `python3 tools/decode_key.py ciphers/clair349-este-guise-1556 --check` -> "tokens 1020: C 260, H 29, I 98, M 611,
+  U 22 / reading up to date".
+- **Audit 1's open date question** (print 3 Jan., leaf 4 Jan., Clair 348 f.304 a 3 Jan. copy) is not resolved here; it does not
+  bear on the class, since the text of this item is printed either way.
+
+**Search log, 5 Oct 2026** (one request at a time per host, >=1.5 s apart):
+
+| family | status | what | result |
+|---|---|---|---|
+| Recipient's papers (Guise, Mémoires-journaux, Michaud-Poujoulat t.6) | searched | Google Books phrase queries; IA be-api fts phrase | printed in clear, 1839 and reissues (N0 with the leaf's gloss) |
+| Google Books API (keyed, country=US) | searched | `"cardinal de Ferrare" "Livio" Guise 1556 lettre`; `"capitaine Livio" "cardinal de Ferrare"`; `"Clairambault 349" Ferrare` | only the Michaud-Poujoulat volume prints the letter; `Clairambault 349` hits Decrue 1889 (Montmorency), Romier 1913 and a 1974 reprint; their snippets do not concern this letter (not read further) |
+| IA full text (be-api fts) | searched | `"pratique du capitaine Livio"` | 3 scans of Michaud-Poujoulat t.6 only |
+| OpenAlex (Bearer) | searched | `Ippolito d'Este Guise 1557 cipher`; `Clairambault cipher Guise Ferrara` | 0 |
+| Semantic Scholar (x-api-key) | searched | `Ippolito d'Este Guise 1557`; `Clairambault cipher Guise Ferrara` | 0; one call 429 (not retried) |
+| HAL API | searched | `cardinal de Ferrare Guise 1556 chiffre` | 0 |
+| CrossRef | searched | same | name-authority records only (Charles de Guise), nothing on the letter |
+| Persée | searched | same | OR-ranked list, not discriminating; no item verified |
+| Solver repos (shallow clones, grepped, deleted) | searched | `Clairambault 349`, `Ferrare` | Bourdeau: Gallica sweep notices mention Ferrare for other items; no row for Clair 349 f.3; Aymeloglu: none |
+| JSTOR | family (i) done 26 Sept (rows 83-85); family (ii) queued | appended 5 Oct 2026: bare phrase `"choses n'y sont si eschauffées"` | pending; does not block the class |
+| Ribier 1666, Romier, Baguenault de Puchesse, Desenclos | not repeated | Audit 1 s.4 and DESENCLOS-PREMISE (4 Oct) | -- |
+
+**Classification (Audit 2).**
+- **Class N0 upheld.** Key `period` (fr.20974 no.15, identified by Tomokiyo). Text `known` (interlinear decipherment on the
+  leaf; print 1839).
+- **Depth D2** (rule 4a). H 29 + C 260 = 289 of 1020 tokens = 28.3% H/C/S; M 611, I 98, U 22. Stretches above the
+  authentication distance read at C/H against the leaf's gloss and the print (e.g. lines 29-30, "iay enuoie en allemaigne ...
+  encores rien"); not D3 (below 80%, and the gaps are letters, not name codes).
+- **Depth sentence:** The Cardinal of Ferrara tells Guise that he has sent men into Germany who have not yet reported anything,
+  which makes him think things there are not as heated as the enemy would have people believe.
+- **Safe sentence:** "The ciphered part of the Cardinal of Ferrara's letter to Guise of 3/4 January 1557 (BnF Clairambault 349
+  f.3) was deciphered on the leaf by an interlinear hand and is printed in clear in Guise's Mémoires-journaux (Michaud-Poujoulat
+  1e sér. t.6, 1839, pp.238-239) (N0, two audits). Applying the period key fr.20974 no.15, identified by Tomokiyo, regenerates
+  part of it (about 28% of tokens graded H/C): a key-and-leaf alignment of a known text."
+- **Unsafe sentence:** "We deciphered the Este-Guise letter"; "not printed"; "first reading"; "key recovered cryptanalytically".
+
+**Postmortem (Audit 2).** status.json results[96] already reads N0, `key: period`, `text: known`, "a key-and-leaf alignment,
+not a decipherment": no over-claim found. NOTES.md carries Audit 1's corrections. Audit 1's text left as written.
+
+**depth_check (5 Oct 2026, after the status.json update):** `python3 tools/depth_check.py` -> exit 0; summary line: "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0"

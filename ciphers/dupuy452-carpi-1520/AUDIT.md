@@ -205,3 +205,60 @@ files retained. No Gallica images fetched (per brief). No WebSearch used (the pr
 on disk, answered every question this audit needed). No logins, no credentials.
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+## AUDIT 2 (VER1-LOWB, 5 Oct 2026)
+
+Verifier VER1-LOWB (for LANE-VER1, account ytbiz), 5 Oct 2026, 19:03-19:2x UTC by `date -u`. A separate session from Audit 1's
+(24 Sept 2026) and from the solver's (commit ae97605); second adversarial audit under CLAUDE.md Outreach gate 2. No decoding;
+reading, key and ciphertext unchanged. The task for an N0 item: try to overturn N0 (wrong edition, wrong letter, print of a
+different text) and look for an earlier print than the one Audit 1 found.
+
+**Checks, all fresh this session:**
+- **The print, re-fetched** (`archive.org/download/lapolitiqueext00jacquoft/..._djvu.txt`, not the folder's `print/` copy):
+  Jacqueton 1892, P.J. XXXIII, heading "25 octobre 1525. Nicolas Raince à Madame. B. N. ms. Dupuy 452, f° 28 et 31. --
+  Original chiffré au f° 28 et déchiffrement au f° 31. Au dos : A Madame." This is the very item and names a period
+  decipherment of it in the same volume. N0 stands.
+- **Earlier print?** Jacqueton's own introduction (djvu lines 12428-12452) says Mignet "ne semble pas s'être servi des
+  lettres du ms. Dup. 452 que nous donnons dans nos Pièces Justificatives" and that the Italian historians of Morone
+  (Müller, Gioda) "n'ont pas connu les dépêches françaises du ms. Dupuy 452"; he cites P.J. XXXIII for the Carpi/Como
+  opinion of Pescara. No earlier print was found in any family below; earliest known print stays 1892.
+- **Rule 7:** `python3 decode.py --check` -> OK {H 5281, M 355, C 77, U 12}; `python3 compare_print.py` -> 87.2% of print
+  letters common, ratio 0.900 (same as Audit 1).
+
+**Search log, 5 Oct 2026** (one request at a time per host, >=1.5 s apart):
+
+| family | status | what | result |
+|---|---|---|---|
+| Canonical/documentary edition (Jacqueton 1892) | searched | IA djvu, fresh; be-api fts `Raince` in `lapolitiqueext00jacquoft` | prints this item from the f.31 decipherment (N0) |
+| Google Books API (keyed, country=US) | searched | `"Nicolas Raince" "Madame" 1525 chiffre`; `"Raince" "Dupuy 452"`; `"Dupuy 452" déchiffrement` | only Jacqueton 1892 (and its EPHE series reissue) prints the letter; Catalogue Dupuy 1899 and the 1868 BnF catalogue are catalogues; Du Bellay Correspondance (1969) cites other Raince letters (Dupuy 452 f.80v, 1530) |
+| IA full text (be-api fts) | searched | `"Nicolas Raince" "Dupuy 452"` | endpoint returned a non-JSON error once; not retried (good-citizen rule) |
+| OpenAlex (Bearer) | searched | `Raince Louise de Savoie cipher 1525`; `Raince chiffre Rome 1525 Carpi` | 0 |
+| Semantic Scholar (x-api-key) | searched | `Raince Louise de Savoie 1525` | 3: a review of Jacqueton 1892, two unrelated |
+| HAL API | searched | `Raince 1525 chiffre` | 0 |
+| CrossRef | searched | `Raince 1525 chiffre` | no relevant item in top rows (OR-ranked) |
+| Persée | searched | `Raince 1525 chiffre` | OR-ranked result list, not discriminating; no item verified |
+| Solver repos (shallow clones, grepped, deleted) | searched | `Raince`, `Dupuy 452` in dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers | Bourdeau lists Raince's 1526 letters (BnF fr.2984, Tomokiyo's 1526 key) and Gallica sweep rows for other Raince letters; no row for Dupuy 452 ff.28-31; Aymeloglu: none |
+| Desenclos bibliography | not repeated | covered by DESENCLOS-PREMISE, 4 Oct 2026 (above) | -- |
+| JSTOR | queued | 2 rows appended to JSTOR-QUEUE.tsv 5 Oct 2026: family (i) names+date+cipher keyword, family (ii) bare phrase `"aultre opinion que maulvaise"` | pending; does not block the class |
+
+**Classification (Audit 2).**
+- **Class N0 upheld.** Key `published` (Tomokiyo's 1526 Raince key, credited). Text `known` (printed 1892 from the period
+  decipherment at f.31).
+- **Depth D2** (rule 4a). Tokens H 5281 + C 77 = 5358 of 5725 = 93.6% H/C/S; external check = the 1892 print (87.2% letter
+  agreement, `compare_print.py`). D3's percentage bar is cleared but its gap condition is not: the 367 unread tokens are mostly
+  single cipher letters (333 of 355 M tokens are one-letter values; 10 U are the `<cross4>` sign), not name/code groups, so D2,
+  not D3. D3 is reachable if the M letters are settled against the print; that is the solver's step, not this audit's.
+- **Depth sentence:** Raince writes that the cardinal of Como and his colleague had never held any but a bad opinion of the man
+  and had believed what they were told of him (f.28r lines 17-18, matching Jacqueton's "aultre opinion que maulvaise", which
+  he glosses as their view of Pescara).
+- **Safe sentence:** "Raince's cipher letter to Louise de Savoie of 25 October 1525 (BnF Dupuy 452 ff.28r-29v) was deciphered
+  in its own time (decipherment at f.31) and printed by Jacqueton in 1892 (N0, two audits). Applying Tomokiyo's published 1526
+  key to a fresh transcription regenerates that text at 87% letter agreement: an independent re-decipherment of a known text,
+  partially deciphered by the depth standard (about 94% of tokens graded)."
+- **Unsafe sentence:** "We deciphered / first read Raince's 1525 letter"; "previously unread"; "key recovered".
+
+**Postmortem (Audit 2).** No over-claim found in the folder: NOTES.md status `found-solved`, status.json row `N0` with
+`key: published`. The folder name says "carpi-1520" while the item is Raince 1525; that is a naming legacy (the folder also holds
+the f.20 Carpi and f.24 transcriptions), recorded here, not renamed. Audit 1's text is left as written.
+
+**depth_check (5 Oct 2026, after the status.json update):** `python3 tools/depth_check.py` -> exit 0; summary line: "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0"
