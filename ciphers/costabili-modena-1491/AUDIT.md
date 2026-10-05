@@ -149,3 +149,91 @@ move. No other sign's value moved.
 
 Requests: de-crypt.org 1 browser login + 1 image (1.8 s apart), 1 plain curl (placeholder). Subagent calls: 0. Cost: see the lane ledger.
 Suggestion (not run): eye-check p2_u15 at the next DECODE login (W at "padre"'s d), and relabel p1_u21 pos 5 as W in any re-pass.
+
+## AUDIT 1 (VER1-COS, 5 Oct 2026)
+
+Novelty audit (rule 10) by an account 2 verifier for LANE-VER1, 18:17-18:4x UTC by `date -u`. This session is not N8-COS, N9-COS2,
+VER-GRACOS, N9-COSV or N9-COSVW, and it does not decode. No earlier section of this file assigns an N-class, so this is Audit 1.
+**Claim under audit:** "R1166 P1-P2 key: 11 sign values at C" (NOTES "Remaining gaps"; N8-COS 10 values, W = t added by N9-COS2;
+key-grade checks VER-GRACOS 4 Oct and N9-COSV / N9-COSVW 5 Oct). On disk, `align/key_n9cos2.tsv` gives 11 C (+ a, T d, a i, b o, c p,
+d r, g l, o e, y n, z o, W t) and 7 M. That matches the claim.
+**decode-1168-modena-costabili-1492 is not the same reading.** It is a different letter (b.2/21 no.8, 20 Mar 1492, R1168), already
+`found-solved`: Berzeviczy 1914 no. CLV prints it in clear. Here it appears only as a key witness and is not audited.
+
+### 1. Item extracted from the repository
+
+| field | value |
+|---|---|
+| item | DECODE R1166 = ASMo, Amb. Ung. b.2/20 no.16 = Vestigia 2977 = MNL DL-DF 295935 (same photograph, N8-COS) |
+| date, place | 21 Jun 1491 (archive date card "1491 ev 06 ho 21 nap"), Esztergom |
+| sender, recipient | Beltrame Costabili to Eleonora d'Aragona, Duchess of Ferrara |
+| cipher | graphic-sign substitution, dash lead-in strokes; P1 ~35 lines ~50% cipher, P2 ~20 lines ~40%, P4 ~10 lines ~50% (COS-M; ~1,140 signs, measured-estimate) |
+| what was read | no running decode. Only the sign-to-letter key, aligned to the **period interlinear decipherment written over the cipher groups on P1-P2** (grade C = known plaintext from that gloss) |
+| gloss phrases (eye-read) | "a la traductione", "Lo Re de Hungaria", "tuti Li termini sono [passati]", "Le nocie", "conveneria", "nanti la recu[peratione]", "cum pegiore satisfactione", "suo padre", "patria" |
+| solver searches (from NOTES) | CS-4: Berzeviczy 1914 whole volume (no 1491 Costabili letter printed). RUN3-COST: IA advancedsearch 10, be-api 17 (Ulaszlo series, Szazadok/Fraknoi, clear-slip phrases), Vestigia 2949-3008 (catalogue records only, no transcription). Earlier: decode-1162/1168 web, blog and Tomokiyo checks |
+
+### 2. Independent search (5 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical series | Berzeviczy, *Acta vitam Beatricis* (MHH Dipl. 39, 1914; IA `aragoniaibeatrix00berz`, `monumentahungari0039unse`, `beatrixkirlyn14500berz`) via `tools/print_check.py` listed sources, 9 phrases | no hit for any gloss phrase. CS-4's whole-volume read stands: no 1491 Costabili letter is printed there |
+| (b) sender/recipient correspondence | Magyar diplomacziai emlekek Matyas kiraly korabol (ends 1490: out of range); Szazadok 50 (Fraknoi, `szzadok50trgoog`) as a listed source | no gloss phrase found. Láng 2018 (below) cites MDE III pp. 13-17, 90-91, 166-168 for Beatrix-Eleonora cipher letters of 1482-86, not 1491. MDE III was not read page by page |
+| (c) documentary editions / archive inventories | Google Books API for the ASMo Cancelleria "Cifrario" series. "Cifre con Ambasciatori e Agenti estensi all'estero, Sec. XV" is listed in *Atti e memorie* (Deputazione di storia patria, Modena) 1924 (`TNMNAQAAIAAJ`) and 1927 (`cuqWamxfE00C`), snippet only. Ilardi, *Studies in the Renaissance* 9 (1962) (IA `studiesinrenaiss0009vari`) gives "Cifre con Ambasciatori e Agenti Estensi all'Estero, B. 4 (XV century)" | **lead, not examined:** ASMo holds a 15th-century series of Este embassy cipher tables. A period key sheet for Costabili's cipher may survive there. No printed copy of one was found. "Dispacci degli ambasciatori estensi" as a printed series for Hungary 1491 was not located |
+| (d) holding archive / project pages | DECODE RecordsView/1166, login-free, 1 request: Status "Partially decrypted", **Available Documents empty**, no key fields. Aymeloglu `catalogue/decode-catalog.csv`: no DECODE key record for Costabili / Modena / Ferrara. Vestigia 2977 (N8-COS, RUN3-COST): catalogue incipit/explicit and images, no transcription | no transcription or key attached to the record; no DECODE key record |
+| (e) IA / HathiTrust / Google Books full text | `print_check.py`: 9 gloss and clear-text phrases x ia-global, gbooks, 4 listed IA items, openalex, crossref (79 rows). Plus 8 be-api queries ("Beltrame Costabili" cifra; Costabili zifra; Costabili "in cifra" Ungheria; ambasciatori estensi cifra Ungheria; cifrari estensi; "Cifre con Ambasciatori"; Costabili 1491 inside `oapen-20.500.12657-53633`). Plus 5 Google Books queries (Costabili cifrario; Costabili rejtjel; "Beltrame Costabili" 1491 Strigonio; the Cifrario series title; Costabili cifra Eleonora Esztergom) | no verbatim hit for any phrase. Google Books "hits" are keyword matches in unrelated volumes (Li reali di Francia, Sanuto, Documenti di storia italiana 1836); none prints a 1491 Costabili text. be-api hits for Costabili + cifra/zifra are Berzeviczy's 1482-90 queen's-cipher passages, Lucrezia Borgia (Antonio Costabili, 1503) and Ariosto's letters: none is this letter. ia-global was not searched for 2 phrases (be-api HTTP 502) |
+| (f) solver repositories, cipher blogs | dbourdeau/cyphersolver (clone of 3 Oct 2026, grep): CANDIDATES.md B2 lists the Costabili records as "Valentini and Costabili not checked"; `targets/buda1489/vestigia/search_rows.json` has catalogue rows only; no key or decode. aaymeloglu/unsolved-ciphers (27 Sept 2026): catalogue rows only. Tomokiyo (`sources/cryptiana/`), Cipherbrain, Cipher Mysteries: none (decode-1168/CS-4 logs, not re-run) | no decipherment, key or working file for R1166 |
+| (g) scholarship | OpenAlex (Bearer key; 11 calls by print_check + 6 here): "Costabili Ferrara Hungary 1491", "Este ambassadors Hungary cipher", "Ferrara Hungary ambassadors cipher 1491", "Beatrice of Aragon Hungary cipher letters Este", "titkosiras Matyas kiraly Ferrara", "Lang Benedek cipher Hungary". CrossRef 3. HAL: "Costabili" 0, "Beatrice d'Aragona" cifra 0. Persée: "Costabili" 283 and "Costabili Ungheria" 966, first pages about art and horses, none on this cipher | **Láng, *Real Life Cryptology* (AUP 2018, open access, IA `oapen-20.500.12657-28452`, full text read by grep).** p.137 and p.156: Beatrix and Eleonora "used a simple monoalphabetic cipher with graphic signs"; the Modena letters include "the one in which Beatrix is sending Eleanor the code key". Appendix 10.2 (p.192): "50 letters related to Hungarian history in the Modena State Archives (Vestigia), 1482-1519, Beatrix, Eleonora, Ippolito d'Este and others, Latin and Italian, solved: y and n". Appendix 10.1 (cipher tables): no Ferrara-Hungary graphic-sign table. Costabili is not named. Pastrnak 2025 (*En la España Medieval*, Pecchinoli 1488-90): abstract has no cipher content. Vértesy, "Titkos írás egy Corvinában", *Magyar Könyvszemle* 77 (1961) 167-169 (a 1491 Beatrix note in a Corvina, mono graphic signs, solved per Láng): **unreachable** (epa.oszk.hu HTTP 403, not retried) |
+| Semantic Scholar | print_check s2 | **unreachable**: HTTP 429 on the first call, stopped (good-citizen rule) |
+| JSTOR | 3 rows appended to `JSTOR-QUEUE.tsv`: family (i) names + date + cipher keyword; family (ii) two bare quoted gloss phrases | queued; does not block the class |
+
+Requests this session: archive.org 7, be-api.us.archive.org 20 (2 HTTP 502), www.googleapis.com 19, api.openalex.org 19, api.crossref.org 3,
+api.semanticscholar.org 1 (429), de-crypt.org 1, api.archives-ouvertes.fr 2, www.persee.fr 2, epa.oszk.hu 1 (403), real-j.mtak.hu 1 (404),
+www.degruyter.com 2 (202 challenge, 0 bytes), github clone 2. No subagent calls.
+
+### 3. Classification
+
+| item | class | key | text | prior plaintext | prior decipherment | confidence |
+|---|---|---|---|---|---|---|
+| R1166 P1-P2 (b.2/20 no.16, 21 Jun 1491): sign key, 11 values C / 7 M, rebuilt from the leaf's interlinear decipherment | **N0** | `period` (rebuilt by us from the period interlinear decipherment on the same leaf) | known (on the leaf, as a period decipherment; not found in print) | yes: the period decipherer's interlinear gloss on P1-P2 (1491) | yes: the same gloss is the decipherment of these passages | high |
+
+- Why N0 and not higher. The plaintext and its decipherment are on the item itself, as in the decode-1162 (R1162, N0), Clairambault 1067
+  and RAH Canada precedents. Our work maps the period decipherment back onto the signs. It reads no passage that the period decipherer had
+  not already read.
+- Mapping. No printed or published sign-value table for this cipher was found: none in Láng 2018's table list, none on DECODE, none in
+  either solver repository. Two things are **not excluded**: (1) a period key sheet in ASMo Cancelleria, Cifrario ("Cifre con
+  Ambasciatori e Agenti estensi all'estero, sec. XV", B.4); (2) the key Beatrix sent Eleonora (Láng p.156; MDE III). Whether Costabili's
+  cipher is the queen's cipher is not established. Vértesy 1961 may print a sign table of a related 1491 Beatrix cipher and was not
+  reached. None of this changes the class, which rests on the plaintext.
+- The ~100 unglossed signs of R1166 P4 are not part of this item. Nothing has read them. If a later decode reads them, that is a separate
+  item for a separate audit.
+
+### 3a. Depth (rule 4a)
+
+| item | % cipher tokens H/C/S in a running reading | unread | depth | check |
+|---|---|---|---|---|
+| R1166 | 0% (no running decode; 0 of ~1,140 measured-estimate signs read by us as text) | all | **D0** | key-only: 11 sign values C from gloss alignment (N8-COS/N9-COS2 passes, re-verified VER-GRACOS, N9-COSV, N9-COSVW). No clause or sentence is read by us from the cipher, so no D2 content sentence is written |
+
+Outward words: none ("a key ranks first; nothing reads"). D0 here means no running reading exists. It is not a judgment on the 11 C
+values, which the earlier verifier sections confirm.
+
+**Safe sentence:** "Costabili's cipher report to Eleonora d'Aragona of 21 June 1491 (ASMo, Amb. Ung. b.2/20 no.16; DECODE R1166)
+carries a period interlinear decipherment on the leaf. Aligning it with the cipher groups gives 11 sign values at grade C. This is a key
+rebuilt from the period decipherment (N0, key period, text known on the leaf); nothing beyond what the period decipherer read has been
+read."
+**Unsafe sentence:** "We deciphered Costabili's 1491 letter" / "the first key of the Ferrara-Hungary cipher" / "previously unread
+passages". The plaintext is on the leaf; a period key sheet in ASMo is not excluded; and no running reading exists.
+
+### 4. Postmortem
+
+No over-claim found in this folder. NOTES.md calls the result a "key rebuild from the period decipherments, not cryptanalysis" (COS-M)
+and says "Read so far: 0 of ~5,060". The earlier verifier sections assign no class. One wording to watch: NOTES' Premise check (c) says
+a gloss means "found-solved for that leaf". That is correct for the plaintext, and it means any outward note must keep this item at N0.
+The open lead goes into the folder's next steps as a suggestion, not run: ASMo Cifrario B.4 (sec. XV) and MDE III pp. 13-17 for a period
+Ferrara-Hungary key sheet. Finding one would give an H-grade witness for the 7 M values.
+SECOND-OPINIONS-QUEUE.tsv: no row (N0, below N3). Search phrases and sources: `phrases.txt`, `sources.tsv`; results `print-check.tsv`,
+`print-check-hosts.tsv`.
+
+depth_check (VER1-COS, 5 Oct 2026, exit 0; this item is D0, not counted, so it is not listed by name):
+```
+unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 12; legacy ungraded: 0
+```

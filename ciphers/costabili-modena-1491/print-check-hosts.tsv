@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	3	ok
+api.openalex.org	11	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22la%20maesta%20de%20la%20signora%20regina%20sorella%22
+archive.org	4	ok
+be-api.us.archive.org	9	ok (some errors)
+www.googleapis.com	9	ok

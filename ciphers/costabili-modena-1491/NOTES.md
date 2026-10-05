@@ -1,5 +1,6 @@
 partial
 Read by LANE-POOLS2 CS-4 on 4 Oct 2026: Berzeviczy, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (Acta vitam Beatricis, MHH Diplomataria 39, 1914; IA `aragoniaibeatrix00berz`), the whole IA OCR (1.34 MB, grepped for every "Costabil*", "cifra", "írásjegy", "ziffra"), plus the 1491-93 table of contents (nos. CXXVII-CXCV) and nos. CLIV, CLV, CLVII, CLXXXVIII, CXCV at their headings.
+Novelty: AUDIT.md AUDIT 1 (VER1-COS, 5 Oct 2026): R1166 key N0, key period, text known (on the leaf), depth D0 (no running decode). Suggestion (not run): ASMo Cancelleria, Cifrario 'Cifre con Ambasciatori e Agenti estensi all'estero, sec. XV' (B.4) and MDE III pp.13-17 (the key Beatrix sent Eleonora, Lang 2018 p.156) for a period key sheet, which would be an H witness for the 7 M values.
 
 # costabili-modena-1491: Beltrame Costabili (Esztergom) to Eleonora d'Aragona 1491-92 and Ercole I d'Este 1493, pool of 8 unheld DECODE records
 
