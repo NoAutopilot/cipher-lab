@@ -8931,3 +8931,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 00:03 | A4-RFCOL worker | claim: colbert26-lathuillerie-1644 canvas 20-21 gloss-vs-clear native re-read, cap 4 USD, box 00:02-01:02 UTC 6 Oct (80% stop 00:50), for LANE DEFAULT-account-4-20261005-2253
 2026-10-06 00:03 | A4-RFLOPE | claim lope-hurtado-1522 R9634 residual, cap 6 USD, box 00:02-01:17 UTC (80% 01:02), for LANE DEFAULT-account-4-20261005-2253
 2026-10-06 00:03 | A4-RFLVN (worker, account 4) | claim for LANE DEFAULT-account-4-20261005-2253: lodewijk-van-nassau-1573-74, WVO 5811 p1/p2/p5 300-dpi settle of W2's M disagreements; cap 6 USD, box 00:02-01:17 UTC (80% 01:02)
+2026-10-05 23:56 | D2-ARSDAL worker (account 1) | claim: arsenal-dallion-lanmary-1744 Recueil des instructions Sweden full-text search; cap 1.5 USD, box 23:57-00:27 UTC (80% 00:21) for LANE DEFAULT-account-1-20261005-2217
