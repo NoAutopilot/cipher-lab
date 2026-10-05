@@ -349,6 +349,7 @@ takes none of its targets.
    belongs to a sign pool -- one sender, office and key family with 2,000 or more signs across its letters -- over a single
    short letter; every reading on the board so far came from a period key or a pool of siblings, and the controls say our
    solvers read code+mark only at pooled lengths. Famous short items enter only through the standing gold lane.
+   Tie-breaker, BnF (owner, 5 Oct 2026): between candidates of equal expected value, prefer a BnF-held item -- the project's record with the BnF is building toward a later researcher-call application (details kept off this repository).
    Selection rule (24 Sept 2026): rank by expected value = P(the first cheap test moves it) x value / cost, not by
    fame or by scout score alone. Prefer items with a transcription on disk, a formal constraint (a known key family,
    a crib, a host text, a form), a language with a corpus in tools/data, and no published matched-control negative.
