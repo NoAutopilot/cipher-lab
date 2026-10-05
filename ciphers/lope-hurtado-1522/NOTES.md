@@ -537,7 +537,6 @@ Bourdeau (no new flag).
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolver, credited, Job bLOP step 1): R9649 86/89 (97%), R9646 99/118 (84%); R9634 (ff. 14-16, about 6 pages) has no transcription anywhere.
 - R9634 transcription and decode with the full accumulated key - blocker: not-attempted; "What would actually move this target" item 1; Bourdeau's own NOTES line 657 names the same step (duplicate-effort risk, check his repo first); next: one DECODE browser login with `--guess-fullsize` (A2-HDK precedent, record 4692), line crops, two passes + reconcile, apply key_codes.tsv + R9649 values (cost estimated, not in the folder), ~$6
-- R9649 vs CSP Spain II no. 497 identity, and Bourdeau's own "no clear version" line for R9649 - blocker: not-attempted; check-solved above and Premise check (b) leave both unsettled; next: compare CSP no. 497's calendared text with read_r9649.md and his NOTES line 600 (disk + one clone), ~$0.5
 - R9646 remainder 19/118 and R9649 remainder 3/89 - blocker: illegible; Bourdeau's "Where the work is now limited": DECODE serves ~1700 px per folio, too little for per-glyph discrimination ("What would actually move this target" item 3)
 - Kolosova's Ko.7/Ko.10 tables (pp. 312, 333, 388, 405) and Bertomeu Masiá 2024 - blocker: waiting-on LOCAL-QUEUE.tsv row L17 and ASKS row 74; L17 is the owner's read of Kolosova 2017/2024, row 74 the RODERIC request-a-copy form, which takes the requester's own details (rule 9)
 
@@ -549,4 +548,15 @@ Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolv
 - [x] key-rebuild: Bourdeau's key_codes.tsv (49 confirmed) + 1524 key carried back, credited
 - [ ] image-check: R9634 full-size via DECODE `--guess-fullsize` (re-test per record before assuming blocked)
 - [n/a] retry: no attempt of ours on any of the three records to retry
-Verdict: keep going: 2 internal gaps; cheapest next: compare CSP Spain II no. 497 with Bourdeau's read_r9649.md, ~$0.5
+Verdict: keep going: 1 internal gap; cheapest next: R9634 residual (Bourdeau already reads 71%, read_r9634.md) - check his repo before any pass, then DECODE --guess-fullsize, ~$6
+
+## RUN6-LOPE (5 Oct 2026): CSP Spain II no. 497 vs Bourdeau's read_r9649.md (disk + one shallow clone; 0 network hosts besides github.com, 1 request)
+Source: dbourdeau/cyphersolver HEAD a43993754e2e (read 5 Oct 2026), `targets/lopehurtado/` read_r9649.md, read_r9644.md, NOTES.md; MIT code / CC BY 4.0 text, credited. No new reading, no decode; comparison of already-logged claims (bLOP2 section (1) above had the 497 identification; this job re-checks it against his files at the current HEAD).
+| item | CSP no. 497 (Bergenroth abstract, our bLOP2 re-read) | Bourdeau read_r9649.md | verdict |
+|---|---|---|---|
+| date | Rome, 1 Nov 1522 | De Roma .ix. de noviembre (9 Nov) | disagree: not the same despatch |
+| content | camarero Peter, Archbishop of Piacenza, Cisterer, safe-conduct, Prince Henry/Flanders/Castile, pp. 6 | Cardinal Santa Cruz and Ostia fortress, licenciado Bernardino; short note | disagree |
+| clear copy | contemporary deciphering noted by the calendar | f. 268r "Al Rey - De Lope hurtado de ix de noviembre", whole letter, 3 cipher runs | consistent: R9649 carries its own clear copy |
+| 497 vs read_r9644.md | camarero Pedro es el principal; Cisterer; principe don Enrique; Flandes/Castilla | R9644 (1 Nov, "primero de noviembre"; R9648 = duplicate) contains all four | agree: 497 = R9644/R9648, not R9649 (content match, grade S for the identification) |
+| his NOTES.md "no clear version" for R9649 | | line 600 reads "R9649 and R9656 later turned out to carry one" (self-corrected at HEAD); lines 280/495 still count it among the uncribbed | stale text in his file, resolved by read_r9649.md; not a disagreement with us |
+Found: R9649 identity settled, it is not no. 497. Not found: any CSP calendar entry for 9 Nov 1522 matching R9649 (bCSLOP whole-volume grep; Laiglesia regesta only). Side finding: Bourdeau's repo now has `read_r9634.md` (first worked 2 Oct 2026, 71% of tokens read, commit a439937, 3 Oct); the Premise check (b) line "no read_r9634.md" is out of date, and the R9634 step below is a duplicate-effort risk unless it targets his residual ~29%.
