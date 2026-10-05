@@ -91,3 +91,7 @@ Next step: fetch the NA 2.01.08 EAD once, grep cijfer/chiffre/Croiset/sleutel; r
 ### D2B-WOTT -- sp99-wotton-1622, folio 159 question (cap 1.5, box 35 min)
 NOTES.md recommended step (1): resolve whether "159" in the description is a correspondent code or a folio cross-reference (TNA Discovery
 API for SP 99/24 or the item's own record; read f.159 if imaged). Record; no decoding.
+
+## Cap amendment (lane orchestrator, 23:5x UTC 5 Oct, from wave-1 get_session costs)
+Wave 1 measured an Opus session floor of about 1.7 (KARL 2.07 and RAY 1.70 on cap 1; THURP3 1.94 on cap 1.5; MANT27 5.76 on cap 5, 2 passes +
+reconciliation). Wave-2 caps: D2B-LIPP 2.5, D2B-YOG 2.0, D2B-ROELL 2.5, D2B-WOTT 2.5 (the figures above are superseded). Boxes unchanged.
