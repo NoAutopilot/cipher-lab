@@ -4060,3 +4060,10 @@ stretch (worker, ~$2), and fix the crop (slant-aware line bands; see the parent'
 Owner's instruction (same session): "my work isn't gospel ... don't assume it's right." Treat these counts as a third, independent
 reader with its own error, not as ground truth: where they agree with one transcription, that is 2-of-3 support; where they differ
 from both, the stretch is flagged for a fresh look, never overwritten from the counts alone. No grade is raised on the counts alone.
+
+## Owner "which shorthand?" family check (5 Oct 2026 ~04:50 UTC, blind labels)
+
+Five composites sent to the owner: top = three Armstrong mark lines (images/shorthand/page1_L13, page3_L13, page2_L02), bottom =
+one system's alphabet plate, labelled A-E without the system's name to avoid bias. Key (not shown to the owner): A = Weston 1727,
+B = Byrom 1796, C = Gurney 1752 (specimen page), D = Mavor 1792, E = Macaulay 1747. Owner answers (same/maybe/no per letter) are a
+human family-likeness judgement, one reader, not a match; recorded below when given.
