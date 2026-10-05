@@ -4137,6 +4137,29 @@ status.json / NEAR.md / QUEUE.md / AUDIT.md edited. NEXT-STEPS.tsv regenerated a
   Tomokiyo snapshots, fr.4695 = btv1b90582923 (no folio labels); ra-karlxi NEXT-STEPS row stale (done 4 Oct); bullet-tuscany left to N9-BUL.
 - Lesson: two backlog rows were stale or already claimed when spawned -- read ROOM claims and the folder's last NOTES section, not NEXT-STEPS alone.
 
+## LANE NEAR9 handoff (session_011SW24uoRbdvoyBAWiy9m98, account 2), 5 October 2026 (closed 06:3x UTC: listed jobs done, lane cap nearly reached)
+
+Brief `.claude/briefs/runs/2026-10-05-acct3-lane-near9.md`; worker briefs `.claude/briefs/runs/2026-10-05-ytbiz-near9-wave1.md`, `-wave2.md`, `-wave3.md`.
+14 workers USD 46.98 (12 D, 2 D-: N9-GRAZ 3.64/2, N9-BUL 2.71/1.5) + orchestrator ~4.5 = ~51.5 of 60; all ledgered and archived; no check-in armed.
+Nothing called new or read beyond grade; no status line, status.json or NEAR.md edited except N9-BUL's NEAR row Evidence/Last-touched (allowed by its brief).
+- **Job 1 fr2980-gramont.** N9-GRAV (verifier): ST = L at C **CONFIRMED** (scores reproduce exactly; 4/4 ST eye-checked vs Le Grand III; f.30 19 ST, 0 counter-cases;
+  N=4 caveat), AUDIT.md section. N9-GRAZ: z splits into plain z (A; all 33 f.30 z) and barred zb (R on fr.3040, Fisher p 0.035); key.tsv unchanged, 0 f.30 words change.
+  N9-GRA4: f.18r block is 21 lines; L11-L21 PASS 0.812 on 287 keyed vs p99 0.335/0.321, control 0.871; no open code reached C (ST 5/5 L, HASH 4/7 L, zb R 10/11);
+  decode.json added so decode_key.py and decode.py --check agree. Weiss t.II print check was already done (128f686b). Next: eye-settle z/zb and d/n6, ~$1.
+- **Job 2 costabili-modena-1491.** N9-COSV (verifier): 10 N8-COS C values **CONFIRMED**, scores byte-identical; agreement with decode-1168 at C is 7, not 9.
+  N9-COS2: third shape W (dash + open loop) labelled, p1_u03/u18 re-cut: A 0.614 / B 0.521 vs p95 0.260/0.233 PASS; W = t at C (11 C). N9-COSVW (verifier): W = t **CONFIRMED** C.
+  R1163/R1165 slips: non-test/FAIL (spans too long); next: short-span boxes at clear words, ~$3; R1166 P4 group crops ~$2.5.
+- **Job 3 thurloe-printed:** already on main before this lane (status.json depth_pct 97.9; depth_check rc 0). Nothing done.
+- **Job 4 key_crossmatch leads (N9-XM):** all 4 false -- villeroy f200 on sanguszkow fails the order-shuffle check (43%); hellen R4370 below in-class p99; two were clair1161's own
+  shuffled control keys in the sweep. **N9-XMFIX:** `tools/key_crossmatch.py` now excludes shuf/control/null key files and posts a lead only past a per-pair in-class shuffled-key p99
+  and an order-shuffled z4gram p99 (9/9 offline test); 5 Oct nightly 4 -> 0 leads.
+- **Job 5 backlog.** bullet-tuscany-1944 (N9-BUL): 44/44 letters agree with Schmeh, leading mark M; forumfree login wall; parked. baluze167-davaux-1637 (N9-BAL, -BAL2, -BAL3):
+  Tomokiyo F2 sits on 168 c511 run 2; c511 transcribed (err_2reader 0.28); two NON-TESTs (planted control 0/20, anchored 0-6/20); F2-fit/F1-hold-out alignment [retired]
+  (rule 3 third attempt); next: blind Tomokiyo-table labelling of c510-511, ~$3. sachsstaatsarchiv-manteuffel-1712 (N9-MANT, -MANT2): only the known 0500-0502 copies; no f.410
+  P.S. copy in 0504-0578 (50 frames inventoried); **flag:** film label = file +1, GAPS195's leaf is ff.423v-424, not ff.422v-423; file 0527 (ff.422v-423) dense glossed,
+  untranscribed, ~$3-4 (best next known-plaintext step there).
+- Lesson: an Opus worker's start-up reading costs ~2.5 by itself; caps below ~3 run over regardless of job size.
+
 ## LANE NEAR8 handoff (session_01HcZrXzQiZna9e3nfwzFqh6, account 2), 4 October 2026 (closed 17:4x UTC: lane cap reached)
 
 Brief `.claude/briefs/runs/2026-10-04-acct3-lane-near8.md`; worker briefs `.claude/briefs/runs/2026-10-04-ytbiz-near8-wave1.md`, `-wave2.md`, `-wave3.md`.
