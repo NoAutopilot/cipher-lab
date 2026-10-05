@@ -126,3 +126,15 @@ key. Both rows are in `HYPOTHESES.md`. Summary:
 Status unchanged (`open`): no reading, no token graded. Novelty not classified (rule 10). Credit: D. Bourdeau
 (cyphersolver, f.119 transcription and the matched-control negative this builds on).
 
+
+## Tomokiyo's reply, 5 Oct 2026 10:58 UTC (project mailbox; logged 5 Oct 2026 13:16 UTC by the account-3 orchestrator)
+
+S. Tomokiyo answered the owner's note: he is "really interested in the numerical cipher of f.119 (no.63) of BnF fr.3251" and glad of
+the second letter in it (fr.3252 f.100r); he has no key for it and offers two related systems as leads: (1) "A Simple Numerical
+Cipher in Cinq Cent de Colbert 398 (1576-1577)", https://cryptiana.web.fc2.com/code/frenchnumerical.htm -- "the date is (a bit)
+close but this is a simple system"; (2) "Variable-length Figure Cipher between Henry de la Tour and Duke of Nevers (1589, 1591)",
+https://cryptiana.blogspot.com/2025/02/variable-length-figure-cipher-between.html -- "This is Nevers, but from a later date". He
+notes his page does not mention BnF fr.3251. For the other letters he has no time; once keys are identified he leaves the texts to
+historians. Next: snapshot both pages to sources/cryptiana/, transcribe both systems, and test each against the pooled f.119+f.100
+digits with tools/key_crossmatch.py + its control (and, for the variable-length system, a segmentation test against the Nov 1571
+digit stream) -- worker TOMO-NUM (~$4). No reply owed now; a thank-you rides with the result (outreach README 1c).
