@@ -1,0 +1,22 @@
+# N9-XMFIX, 5 Oct 2026: tools/key_crossmatch.py pair_lead_null (200 draws) -- before/after numbers (no network)
+## full sweep, tool before the change (7m16s): 99 non-own rows over gate 3.292 (94 hit, 5 short), 2 of them shuf control-key files
+## nightly --since-hours 25 (ref f58d50a6), --lead-draws 0 then default
+--since f58d50a6fc00ed886124d05a3364903d9e213f97: 5293 changed paths, 124 key files, 77 ciphertext files
+gate: stat >= 3.292 (n >= 100, cov >= 0.5); own-text pairs ranked first and clearing it: 4 of 64; non-own rows clearing it: 2 hit, 0 short
+  for the parent: xmatch hit (new lead): ciphers/fr3993-villeroy-1595/keys/key_f200_no57_syll.tsv reads ciphers/sanguszkow-mniszech-dunin-1714/ciphertext.tsv stat=4.12 (gate 3.292, null p99 3.498) cov=0.737 n=232 -- read by eye before any claim
+  for the parent: xmatch hit (new lead): ciphers/hellen-frederick-1752/key_r4370/key_decode.tsv reads ciphers/sanguszkow-mniszech-dunin-1714/ciphertext.tsv stat=3.63 (gate 3.292, null p99 3.498) cov=0.621 n=232 -- read by eye before any claim
+
+--since f58d50a6fc00ed886124d05a3364903d9e213f97: 5293 changed paths, 124 key files, 77 ciphertext files
+gate: stat >= 3.292 (n >= 100, cov >= 0.5); own-text pairs ranked first and clearing it: 4 of 64; non-own rows clearing it: 2 hit, 0 short
+per-pair nulls (200 draws, in-class shuffled-key p99 + order-shuffled z4gram p99): 0 of 2 survive as leads, 2 dropped
+  dropped (per-pair null): ciphers/fr3993-villeroy-1595/keys/key_f200_no57_syll.tsv on ciphers/sanguszkow-mniszech-dunin-1714/ciphertext.tsv stat=4.12 -- z4gram 3.434 <= order-shuffled p99 5.168
+  dropped (per-pair null): ciphers/hellen-frederick-1752/key_r4370/key_decode.tsv on ciphers/sanguszkow-mniszech-dunin-1714/ciphertext.tsv stat=3.63 -- z4gram -0.222 <= order-shuffled p99 0.028
+## N9-XM's four 5 Oct 02:53 leads through pair_lead_null
+a {"S": 4.12, "z_ng": 3.434, "p99_inclass": 3.001, "p99_order_zng": 5.168, "pass_inclass": true, "pass_order": false, "survives": false, "why": "z4gram 3.434 <= order-shuffled p99 5.168", "n_draws": 200}
+b {"S": 3.629, "z_ng": -0.222, "p99_inclass": 2.938, "p99_order_zng": 0.028, "pass_inclass": true, "pass_order": false, "survives": false, "why": "z4gram -0.222 <= order-shuffled p99 0.028", "n_draws": 200}
+c {"S": 3.952, "z_ng": 1.364, "p99_inclass": 2.987, "p99_order_zng": 2.454, "pass_inclass": true, "pass_order": false, "survives": false, "why": "z4gram 1.364 <= order-shuffled p99 2.454", "n_draws": 200}
+d {"S": 3.85, "z_ng": 3.85, "p99_inclass": 2.78, "p99_order_zng": 7.337, "pass_inclass": true, "pass_order": false, "survives": false, "why": "z4gram 3.85 <= order-shuffled p99 7.337", "n_draws": 200}
+## verified own pairs (must survive)
+gramont key.tsv/ciphertext.txt n=568: S 10.343 vs in-class p99 3.366; z4gram 10.343 vs order p99 4.603 -> survives
+mercy key.tsv/ciphertext.tsv n=529: S 15.222 vs 3.505; z4gram 15.222 vs 6.365 -> survives
+lodewijk key.tsv/ciphertext_4610.tsv n=1545: S 25.224 vs 2.807; z4gram 25.224 vs 5.26 -> survives
