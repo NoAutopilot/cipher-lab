@@ -420,3 +420,11 @@ mirrors) and only then ask. Lesson: a HathiTrust volume link left him facing "a 
   academia.edu download or a catalogue lookup goes to the owner's local runner first (owner, 5 Oct 2026: the Claude browser runner that did the 4 Oct JSTOR runs, not the ChatGPT one), as a LOCAL-QUEUE.tsv row (kinds
   ia-reader, hathitrust, catalogue-lookup ...; tools/local_queue_runner_prompt.md), not to the owner's desk. The owner gets
   it only if the runner fails or the step needs his own judgement (a hand comparison, a decision, a payment, a form in his name).
+- Zoom-shot desk card (owner, 5 Oct 2026): when a reading is blocked by image resolution and the host blocks the cloud
+  or serves only a small image (BNE, RAH, DECODE, HathiTrust, Folger, any viewer behind a challenge), the owner's zoomed
+  screenshots are a standard board card (Ferdinand 1478 got from an unreadable 120 ppi PDF to a briefable transcription
+  this way). Card shape, always: a link that opens the viewer AT THE PAGE; numbered steps -- 1) open the link, 2) go to
+  page N, 3) click zoom (+) until signs look like large handwriting (about 200-250%), 4) screenshot 3-5 lines at a time
+  with one line of overlap, top to bottom, from "<first words>" to "<last words>", about K shots, 5) open the private-repo
+  folder link, Add file -> Upload files, drag them in named 1..K, Commit. Never "paste in chat" (chat images do not reach
+  the disk). Tag `desk`, time 10 min. The job that reads them is run from a session with the private repo in scope.
