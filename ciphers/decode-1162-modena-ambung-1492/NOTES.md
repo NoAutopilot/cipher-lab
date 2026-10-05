@@ -492,3 +492,55 @@ Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 
 - [x] image-check: full-size p.1 re-fetched and read at native resolution, MOD1162B 3 Oct 2026
 - [n/a] retry: nothing failed that a retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: native tiles of the three g/q/sigma shapes from 1162 p.1 and 1168 f.12r into the sign sorter, then re-key and re-score, ~$3
+
+## D2-1162: native tiles of the g/q/sigma signs for the owner's sign sorter (account-1 worker, LANE DEFAULT-account-1-20261005-2217, 5 Oct 2026, 23:38-23:4x UTC)
+
+Intake gate (pasted): `decode-1162-modena-ambung-1492: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, EXIT 0.
+
+**Images.** One DECODE browser login, 23:40 UTC (`tools/decode_browser_login.js 1162 <scratch> --fetch <filesrv URLs of
+IMG_R1162_I5837_P1.png and IMG_R1168_I5864_P1.png> --max-files 2 --delay 1800`). The sha1s match both manifests (1a49a5f9...,
+c3f2a2ea...). The PNGs stay in scratch; the record page was deleted unread. Requests: de-crypt.org 1 login + 1 page + 2 files.
+Crops: the MOD1162 and A2-COS2 `tools/iiif_lines.py` commands, unchanged (9 + 14 line crops). Boxes were placed by this
+worker's eye on 1-px-ruled native crops and checked on contact sheets. Three rounds of corrections; in the final sheet,
+`sorter/tiles_contact.png`, every tile sits on one sign. No subagent.
+
+**What was built** (`sorter/`, see its README): `signs.tsv` (31 boxes in native px), `labels.tsv` (starting piles = current
+labels: g 13, q 18), `focus.tsv` (the 8 R1162 '?' signs), `build.sh`, and the built page `modena-gq-sorter.html` (1.06 MB,
+`--auto-clusters 4`). The tiles are every g/q sign in R1162 p.1's cipher runs (10) and in the 14 aligned R1168 f.12r groups
+(21). The rest of f.12r's g/q signs (the unaligned runs in `align/f12r_passA.tsv`) are not tiled.
+
+**Seen on the contact sheet. This is this worker's impression, grade M. It settles nothing and changes no label.** At least
+three shapes are visible:
+(A) g with a large looped descender: R1162 L01_1 pos2, L06_1 pos1, L08_1 pos5, and all seven R1168 `g`.
+(B) a descender crossed by a bar ("7/q with a cross"): R1162 L01_1 pos5 and L06_1 pos6 (both labelled **g**); R1168
+alafuturadieta pos5 and andasseabuda pos10 (both labelled **q**); and iniuria pos4 (q), possibly.
+(C) a small loop with a short straight tail, sigma/rho-like: the remaining q tiles of both letters, plus R1162 L01_1 pos6
+and L05_2 pos1 (labelled g?).
+MOD1162B saw a "bowl with straight descender" (i) and a "sigma with tail" (ii) as two shapes. At tile size they may be one
+shape, (C).
+The concrete collision is (B): R1162 labels it g, and 1168's key fits it as q (e). That is a candidate reason why R1162's
+`g?` signs read badly under 1168's key. The owner's sort decides.
+
+**Not done, because no settled labels exist:** no re-key of 1168, no `score_g.py` re-run, no `decode_key.py` change here.
+The reading and grades are unchanged (H 0, C 33, S 12, M 24, I 5, U 3). **Publishing is not done either.** The page is
+built and committed; publishing it with capabilities `{"db": {}}` and filing the ASKS row ("backlog, never blocking") is
+handed to the lane orchestrator. The reason is this job's cap. The ASKS row itself is filed: ASKS 144.
+
+Report: found three or more descender shapes across 31 tiles, with shape (B) labelled g in one letter and q in the other.
+Not found: any settled split. That waits on the owner's sort.
+
+## Remaining gaps (D2-1162, 5 Oct 2026)
+Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 5, U 3); verso has no cipher (DECODE doc 3593 and image 2); 31 g/q tiles of 1162 p.1 + 1168 f.12r built into a sorter page (D2-1162)
+- the g/q/sigma shape split (8 signs still '?', M) - blocker: waiting-on ASKS row 144 (the owner's sign sort of sorter/modena-gq-sorter.html; the lane orchestrator publishes the page and adds its link to the row); then sign_sorter_apply.py, re-key 1168 with split labels (align/run_align.py), re-run score_g.py and decode_key.py --check here, ~$2
+- the clear text of the letter (about 35 lines, DECODE doc 3593 is a rough transcription with many '?') - blocker: not-attempted; not needed for the cipher test, needed for a full edition of the letter; next: one transcription pass of the clear lines from the 9 crops plus re-cut full-line crops, ~$3
+- code groups `T o` (L01) and `.e.` (L06) - blocker: open-codes; one occurrence each, the L01 gloss is not separable from the letter group's, the L06 sign is unglossed
+
+## Escalation (D2-1162, 5 Oct 2026)
+- [x] siblings: decode-1168 key applied, gate PASS (G 0.729 vs control p99 0.525; fresh seeds p99 0.525), MOD1162/MOD1162B 3 Oct 2026
+- [x] clear-pages: verso and the clear lines read by DECODE doc 3593 (rough), fetched MOD1162 3 Oct 2026
+- [x] known-keys: decode-1168 key.tsv (period gloss key) is the known key, applied here
+- [x] print: Berzeviczy 1914 checked, letter absent (GF4-BATCH19 3 Oct 2026)
+- [ ] key-rebuild: split g/q into shapes from the owner's sort (sorter/ built D2-1162 5 Oct 2026), then re-key 1168 and re-score here; waits on the sort
+- [x] image-check: full-size p.1 and 1168 f.12r re-fetched and tiled at native resolution, D2-1162 5 Oct 2026
+- [n/a] retry: nothing failed that a retry would change
+Verdict: keep going: 2 internal gaps; cheapest next: the clear-text transcription pass (~$3), which does not wait on the sort; the g/q split waits on ASKS 144
