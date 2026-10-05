@@ -1,0 +1,24 @@
+cid	class	conf	note
+C01	ZED	M	top bar and bottom bar with diagonal from top-right sweeping down-left
+C02	ZED	M	diagonal from top-right to bottom-left, 2-shaped
+C03	ZED	M	diagonal from upper right to lower left between bars
+C04	ZED	M	z with diagonal from top-right to bottom-left
+C05	ZED	M	diagonal from top-right to bottom-left joining bars
+C06	ZED	M	2-shaped z, diagonal top-right to bottom-left
+C07	ZED	M	diagonal from top-right to bottom-left, small z
+C08	ZED	M	x/z-like with diagonal top-right to bottom-left
+C09	OTHER	M	round-topped 3-like with loop in lower part, not a bar-and-bar form
+C10	OTHER	L	x-like crossing strokes, no clear bars
+C11	ZED	L	short diagonal between bars, x/z-like
+C12	ZED	L	diagonal from top-right to bottom-left, small z
+C13	ZED	L	2-shaped with diagonal top-right to bottom-left
+C14	OTHER	M	round-topped 3 with lower loop, vertical stem with loop
+C15	ZED	M	2-shaped z with diagonal top-right to bottom-left
+C16	OTHER	M	round-topped 3 with a curled lower loop
+C17	UNSURE	H	no sign visible between ticks, blank area
+C18	OTHER	L	cross-hatched x/r-like squiggle, no clear bars
+C19	ZED	M	2-shaped, diagonal from top-right to bottom-left
+C20	OTHER	M	3-like with round lower loop, preceded by upright slash
+C21	OTHER	L	2 with round top and a hooked tail
+C22	OTHER	M	r-like form with a short stem, no bottom bar
+C23	ZED	L	short bold z with diagonal top-right to bottom-left

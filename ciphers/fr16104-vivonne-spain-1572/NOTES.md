@@ -1632,3 +1632,64 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
 - [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; next instrument: hand-placed per-position crops)
 Verdict: keep going: 13 internal gaps (Ribera note 18 answered by L51; Flament not lendable); cheapest next: ink 54 col-u-row-3 relabel with hand-placed per-position crops (PREREG-N7VIV54R rule), ~$1.5, then the ink 53 and ink 54 audits (depth re-check), ~$5 each
+
+
+## DEF1-VIV54 (5 Oct 2026, 21:05-21:1x UTC by date -u, account-1 worker for LANE DEFAULT-account-1-20261005-2039): ink 54 col-u-row-3 relabel, hand-placed crops
+Brief: .claude/briefs/runs/2026-10-05-account1-default-2039-jobs.md "DEF1-VIV54". Disk only (0 requests). Rule: PREREG-N7VIV54R.md unchanged (decision
+rule, classes, built-in check); the instrument swapped is the one N7-VIV54R named: per-position crops placed at hand-marked x instead of pos/len ticks.
+
+**Placement.** tx/viv54H_place.py cut native windows (+-8 signs around the old estimate, pixel ruler) of every after-"to" position (the PREREG's
+known-positive subset, 18 positions); this worker read the ruler and marked each sign's strip x by eye (three lines, f.173r L11/L14/L17, start
+far right of the estimate and were placed from a wider view). Plus 5 foils marked the same way: ordinary z/x positions N7-VIV54Q named as
+the non-Sigma comparison (f.173r L14.5, L07.26; f.173v L04.21, L04.40, L02.44). x marks: tx/lookalike54/viv54H_xmarks.tsv.
+tx/viv54H_crops.py cut strip x +-110 px native, 2x, red ticks at the mark, opaque ids C01-C23 shuffled (seed 20261054H; map in
+viv54H_key.tsv), plus the same ref.png (col u row 3 vs col a row 3). Sanity look at the first montage: ticks sit on the sign in every crop.
+One value-blind Sonnet call (no decoded text, no key value, no hypothesis); answers tx/lookalike54/viv54H_judge.tsv, tally tx/viv54H_tally.py
+-> tx/viv54H_tally.json. This time the reader gave a per-sign stroke note in every row (the gap N7-VIV54R logged).
+
+**Result: built-in check FAILS again -> NON-TEST, not applied.** After-"to" (18): SIGMA 0, ZED 13 (M 9, L 4), OTHER 4, UNSURE 1 (f.173r L17.7:
+"blank between ticks" -- this worker's one misplaced mark). Required >= 7 SIGMA at H/M. Foils (5): ZED 1, OTHER 4 (3-like loops), SIGMA 0.
+Because the after-"to" check fails on the full known-positive subset, placing the other 151 positions could not change the verdict, so they
+were not placed (no unit spent on them). No position relabelled; key.tsv row Zu stays as N7-VIV54R wrote it (unused by any transcription);
+reading_piece54_L.tsv unchanged (`tx/viv54L_decode.py --check`: up to date); b2/specificity not re-run (no change); AUDIT.md and SO-VIV54 untouched
+(rule 10 propagation applies only to a changed reading).
+**What the difference from N7-VIV54R means.** N7-VIV54R's failure could be blamed on misplaced ticks; here the ticks are on the sign and the reader
+names a diagonal stroke top-right to bottom-left for 13 of the 18 after-"to" signs. So a blind reader, given the same two key cells, does not
+see the col-u-row-3 Sigma shape in that slot; N7-VIV54Q's by-eye identification (a worker who knew the "que" context) is not reproduced.
+This does not refute "to"+sign = "qu(e)" (a scribal z-like u homophone, or a ligature, could still be meant); it says the shape test cannot
+separate it from the flat z at this image quality with this reader. Second instrument on the same hypothesis (windows N7-VIV54R, hand-placed
+crops here), both failing the same check: one more tuning of a machine shape judge is not the next step (rule 3 third-attempt clause would retire
+it); the next is a different instrument -- the owner's sign sorter with Zu as a pile, or a clerk-aligned occurrence (a deciphered sibling,
+ink 40/41, ink 50/51) showing which sign the clerk wrote for u after "q".
+Report what was found and where it was not found; no novelty classified. Requests: none. Subagent calls: 1 Sonnet.
+
+## Remaining gaps (DEF1-VIV54 refresh, 5 Oct 2026; supersedes the DESK-LAND list above, all its other lines kept)
+Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53
+ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
+N6-VIV63C, N7-VIV63G), whole piece -1.548 vs p99 -1.836, wrong-key specificity PASS (real 0.288 vs p99 0.064), H 12,151 / M 2,329 / U 1,282 of 15,762 tokens.
+Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, whose twin is deciphered).
+- ink 63 N4 (audit 1 done 4 Oct 2026 by VIV63-A1, AUDIT.md AUDIT 3: N3, D1 fragments read, key published; recipient the King; no decipherment in fr.16105 c95-c248) - blocker: not-attempted; d'Ars 1884 book (VIV-BREMOND) and d'Ars's RQH 35 (1884) article pp.386-412 (L51, DESK-LAND) both checked: neither cites 10 Oct 1573; Ribera 2007 seen as Google Books snippets only (L50: note 139 not visible); fr.16105 c1-c94 and the fr.16106 pieces Gachard skips not viewed; next: Ribera 2007 in full through the owner's interlibrary loan (ILL-SWEEP batch), reading note 139 and every 1573 Saint-Gouard citation, ~owner minutes + $0.5 to land
+- Flament 1996 (L'ambassade du marquis de Saint-Gouard en Espagne, maîtrise Lille 3, 158 p.) - blocker: needs-physical-access; only copy located Lille, Bib. G. Lefebvre, cote D 1996 3, "Non disponible pour le PEB" (SUDOC 201366568, L52, 4 Oct 2026); no digitised copy
+- tools/iiif_lines.py on steep, uneven line slopes - blocker: not-attempted; --follow-slope (and --centres with it) snapped bands onto neighbouring lines on f.194r; next: an option to deskew the region by a fitted angle before a flat cut (what N6-VIV63C did by hand with PIL), with an offline test, ~$2
+- ink 63 key questions (y, single o, c, V, e, 2, r) - blocker: not-attempted; context table done (N7-VIV63G, tx/viv63g_keyctx.tsv): the 4-gram fill is right on only 5/9 held-out codes at this N and biased to i/l, so only y->l (alignment + fill agree), V->n and e as an "m(m)" sign in "co_tandeur" stand as weak proposals; next: read cells h, l, m, n of Tomokiyo's key image (henryiii_Vivonne1.png) for a y-like l homophone, a V-like n and an e-like m/mm sign, then a PREREG'd key-change step with the wrong-key control, ~$1.5
+- ink 63 label splits and overlap duplication - blocker: not-attempted; r/z, 2/z (f.193v 25x), c/e and 6/b (f.192r, 19x) left at pass A; readers wrote some s1/s2 overlaps twice (f.192r L06, L34; f.193r L07); f.193r err_2reader 0.297; next: tools/lookalike_pass.py on those pairs + a pre-registered overlap-dedup step in tx/viv63_clean.py, re-decode, ~$4
+- ink 53 audit (depth re-check) - blocker: not-attempted; AUDIT 2 (VIV53-A1) set N3 / D1; the N7-VIV53L re-decode passes b2 + wrong-key again (PREREG-N7VIV53L) but no repair-free stretch reaches ~42 letters (longest 20); next: verifier session (account 3) on reading_piece53_L.tsv, ~$5
+- ink 53 residual label questions - blocker: not-attempted; 82 split tiles left UNSETTLED by the 2-of-3 rule and 270 one-reader gaps never re-read (tx/lookalike53L/*/focus.tsv), the ': :'-as-null alternative, and "rauldhoit" (f.171r L15, where French wants "pourroit") unresolved (N7-VIV53L); next: owner's sign sorter on the focus files, or a window re-read of the gap tiles (tx/viv53L_windows.py extended to gaps), ~$2
+- ink 54 clean reading - blocker: not-attempted; window look-alike pass done (residual 0.134), true-error audit a non-test, no stretch near ~42 letters (N7-VIV54L); next: owner's sign sorter on tx/lookalike54/*_focus.tsv (275 questions) or a window-instrument audit (lookalike_pass.py audit + viv53L_windows.py audit), ~$1.5
+- ink 54 key question "to z" (qae) - blocker: not-attempted; key cell added (key.tsv Zu -> u, col u row 3, N7-VIV54R); two machine shape judges under PREREG-N7VIV54R failed its built-in check: windows (3/18 SIGMA, ticks off; N7-VIV54R) and hand-placed crops (0/18 SIGMA, 13/18 ZED with ticks on the sign; DEF1-VIV54), so no position is relabelled and the reading has not moved; next: a different instrument -- the owner's sign sorter with Zu as a pile (tx/lookalike54/viv54H_xmarks.tsv gives the 18 positions), or a clerk-aligned u-after-q in ink 40/41 or 50/51, ~$1
+- ink 54 audit (depth re-check) - blocker: not-attempted; b2 + wrong-key PASS on the re-decode (PREREG-N7VIV54L); next: verifier session (account 3), ~$5
+- Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise (N5-VIV54, N6-VIV53); next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
+- fr.16104 ink 52 (5 Sept 1572, to the Queen, ~270 lines) - blocker: not-attempted; no decipherment beside it (N5-VIVTAB); next: look at c179/c181, then crops + 2 blind passes per page, decode with key.tsv, ~$30
+- fr.16104 5 Sept 1572 cipher block (ff.157-159v) against its decipherment ff.162r-163r - blocker: not-attempted; known-plaintext check, not a reading; next: crops + two blind passes, aligned as tx/vivk_test.py, ~$15
+- Unviewed stretches of the per-piece table - blocker: not-attempted; fr.16104 c1-c169, c192-c324 and fr.16105 c1-c94, c113-c191 not viewed (N5-VIVTAB); a decipherment of 63 filed in another volume (fr.16106 holds one such stray) not checked; next: 1200 px pass every second canvas, contact sheets, ~$3
+- fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
+- Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
+## Escalation (5 Oct 2026, DEF1-VIV54; from the DESK-LAND list)
+- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)
+- [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to inks 54, 53 and 63
+- [x] print: Gachard I-II, d'Ars (book 1884 and RQH 35 article, L51), Catherine IV-V, Groen IV read; Ribera 2007 snippets (L50); d'Ars re-checked by date and by k-mer/phrase overlap against inks 53, 54, 63 (VIV-BREMOND); Kervyn I-VI grepped (N6-KERV); print_check on ink 54, 53 and 63 phrases (pc63b/, pc63c/)
+- [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
+- [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G)
+- [ ] retry: ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and gaps (window look-alike pass done, N7-VIV53L); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; hand-placed judge NON-TEST 0/18, DEF1-VIV54; next instrument: sign sorter / clerk alignment, hand-placed per-position crops)
+Verdict: keep going: 13 internal gaps; cheapest next: the ink 53 and ink 54 audits (depth re-check), ~$5 each; the col-u-row-3 question needs a different instrument (sign sorter or clerk alignment), not a third machine shape judge

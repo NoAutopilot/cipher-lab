@@ -1,0 +1,210 @@
+{
+ "rows": [
+  {
+   "cid": "C01",
+   "id": "f173v.L04.24",
+   "label": "R",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C02",
+   "id": "f173v.L12.2",
+   "label": "R",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C03",
+   "id": "f173v.L04.17",
+   "label": "x",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C04",
+   "id": "f173r.L05.47",
+   "label": "z",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C05",
+   "id": "f173v.L12.9",
+   "label": "z",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C06",
+   "id": "f173r.L11.2",
+   "label": "z",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C07",
+   "id": "f173v.L17.15",
+   "label": "z",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C08",
+   "id": "f173r.L20.30",
+   "label": "x",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C09",
+   "id": "f173v.L02.47",
+   "label": "z",
+   "set": "after_to",
+   "class": "OTHER",
+   "conf": "M"
+  },
+  {
+   "cid": "C10",
+   "id": "f173v.L02.44",
+   "label": "x",
+   "set": "foil",
+   "class": "OTHER",
+   "conf": "L"
+  },
+  {
+   "cid": "C11",
+   "id": "f173r.L14.9",
+   "label": "z",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "L"
+  },
+  {
+   "cid": "C12",
+   "id": "f173r.L07.34",
+   "label": "z",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "L"
+  },
+  {
+   "cid": "C13",
+   "id": "f173v.L04.47",
+   "label": "z",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "L"
+  },
+  {
+   "cid": "C14",
+   "id": "f173v.L04.40",
+   "label": "z",
+   "set": "foil",
+   "class": "OTHER",
+   "conf": "M"
+  },
+  {
+   "cid": "C15",
+   "id": "f173r.L07.26",
+   "label": "z",
+   "set": "foil",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C16",
+   "id": "f173v.L04.21",
+   "label": "z",
+   "set": "foil",
+   "class": "OTHER",
+   "conf": "M"
+  },
+  {
+   "cid": "C17",
+   "id": "f173r.L17.7",
+   "label": "z",
+   "set": "after_to",
+   "class": "UNSURE",
+   "conf": "H"
+  },
+  {
+   "cid": "C18",
+   "id": "f173r.L14.5",
+   "label": "z",
+   "set": "foil",
+   "class": "OTHER",
+   "conf": "L"
+  },
+  {
+   "cid": "C19",
+   "id": "f173r.L26.15",
+   "label": "2",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "M"
+  },
+  {
+   "cid": "C20",
+   "id": "f173r.L10.40",
+   "label": "z",
+   "set": "after_to",
+   "class": "OTHER",
+   "conf": "M"
+  },
+  {
+   "cid": "C21",
+   "id": "f173v.L14.49",
+   "label": "z",
+   "set": "after_to",
+   "class": "OTHER",
+   "conf": "L"
+  },
+  {
+   "cid": "C22",
+   "id": "f173v.L04.43",
+   "label": "R",
+   "set": "after_to",
+   "class": "OTHER",
+   "conf": "M"
+  },
+  {
+   "cid": "C23",
+   "id": "f173r.L05.19",
+   "label": "z",
+   "set": "after_to",
+   "class": "ZED",
+   "conf": "L"
+  }
+ ],
+ "after_to": {
+  "n": 18,
+  "sigma_HM": 0,
+  "classes": {
+   "SIGMA": 0,
+   "ZED": 13,
+   "OTHER": 4,
+   "UNSURE": 1
+  }
+ },
+ "foil": {
+  "n": 5,
+  "sigma_HM": 0,
+  "classes": {
+   "SIGMA": 0,
+   "ZED": 1,
+   "OTHER": 4,
+   "UNSURE": 0
+  }
+ },
+ "check_after_to_ge7": false,
+ "verdict": "NON-TEST (after-to SIGMA H/M < 7)"
+}
