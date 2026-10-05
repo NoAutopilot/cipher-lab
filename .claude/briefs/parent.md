@@ -420,6 +420,7 @@ mirrors) and only then ask. Lesson: a HathiTrust volume link left him facing "a 
   academia.edu download or a catalogue lookup goes to the owner's local runner first (owner, 5 Oct 2026: the Claude browser runner that did the 4 Oct JSTOR runs, not the ChatGPT one), as a LOCAL-QUEUE.tsv row (kinds
   ia-reader, hathitrust, catalogue-lookup ...; tools/local_queue_runner_prompt.md), not to the owner's desk. The owner gets
   it only if the runner fails or the step needs his own judgement (a hand comparison, a decision, a payment, a form in his name).
+- Gmail drafts only after gate 7 (owner, 5 Oct 2026: "don't put the email in my drafts until these checks are done"): an outreach draft goes into the mailbox's Drafts only once its `checked:` line covers the current text; a revised draft is removed from Drafts until re-checked.
 - Machine first, then the owner (owner, 5 Oct 2026: "what's the divider between human does this and AI tried really
   hard itself first"). A transcription or image task reaches the owner's board only when ALL hold, each written on the
   card's source row: (1) the cloud tried the largest image the host serves (IIIF full/max) or is blocked (host table);

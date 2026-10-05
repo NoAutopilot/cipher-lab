@@ -31,3 +31,12 @@ says otherwise):**
 | -- | not yet listed (MAIL-3, 28 Sept 2026) |
 
 **Key question answered.** The museum found no key or cipher alphabet among Debosnys's papers (ASKS row 52).
+
+## Audit, 5 Oct 2026 23:3x UTC (account-3 orchestrator, owner's request)
+- tools/restricted_guard.py on every tracked file: clean (35,312 files, 47 fingerprints).
+- Every file in the private repository's Debosnys material (1,138 files, incl. the 43 museum scans) hashed and
+  compared byte for byte with every object in this repository's entire git history: no scan, crop or derived file
+  present. The single identical object is a 49-byte empty Google Books search response, not museum material.
+- No file under a `restricted/` path has ever been committed; no museum scan's file name appears anywhere in history.
+- The 85 Debosnys image paths ever committed are the public cryptogram images (Debosnys-Cryptogram-*, Poem, Poem-verso,
+  per images/manifest.json), crops/strips/sheets cut from those (c1-c4b), and two printed cipher-key figures.
