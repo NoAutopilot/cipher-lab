@@ -138,3 +138,27 @@ Intake gate (20:5x UTC): `eckert-1864: partial (line 3) -- edition/page or full-
 NOTES.md section 8 "Not done" names the entries; two transcription passes (subagents, crops only -- mandatory crop step, paste the
 command) then decode_no2.py with key-no2.md; grade per rule 4; rule 7 --check; OR print match where one exists (section 4 method).
 Spawn only after DEF1-ECK62I is done (same Huntington host). Update Remaining gaps / Escalation.
+
+### DEF1-NOXB -- fr16142-noailles-constantinople-1571, blind second read of the c262 gloss crops (cap 2, box 30 min)
+Written 21:0x UTC after DEF1-NOXG corrected gloss.tsv L01-L08 from the leaf, having seen Charrière's print first (the brief's own
+order -- the brief's error, not the worker's), so its read is not blind to the print. You must NOT open Charrière, gloss.tsv,
+reading files, NOTES.md sections after line 1000, AUDIT.md, or DEF1-NOXG's commit before you finish your read. Read only
+images/c262gx_L01.jpg ... c262gx_L08.jpg (already cut, native) and transcribe the interlinear French gloss on each, word by word,
+marking unclear words [?]. Control: in the same pass read L02, L03, L05, L07 (lines DEF1-NOXG did not change) -- their current
+gloss.tsv text is the known answer. Pre-register before reading, in ciphers/fr16142-noailles-constantinople-1571/PREREG-DEF1NOXB.md:
+gate = control word agreement >= 0.80 after normalisation (CLAUDE.md rule 3 PX-BRODEC: one case, expanded abbreviations, u/v i/j
+merged). Only then compare your L01/L04/L06/L08 reads with DEF1-NOXG's leaf readings (its NOTES.md table) and report per word:
+agree / differ. If the control misses the gate, the comparison licenses nothing; say so. Do not edit gloss.tsv; write a dated NOTES.md
+section with both numbers and, if the second read disagrees on a corrected word, mark that word for the next solver in Remaining gaps.
+
+### DEF1-F3416 -- fr3416-nevers-fils-1589, upper letter M/U rows as whole line strips (cap 7, box 70 min)
+Intake gate (21:0x UTC): run `python3 tools/intake_gate_check.py fr3416-nevers-fils-1589` and paste it into NOTES.md first.
+NOTES.md Remaining gaps: the word-window instrument is retired (two blind checks, both failed their own H-word controls); the named
+different instrument is whole-line strips to one blind Opus pass C. Pre-register in PREREG-DEF1F3416.md before reading: line strips
+(mandatory crop step: `tools/iiif_lines.py` from the folder's image or the Gallica ark per images/manifest.json; paste the command;
+crops < 2500 px), control = >= 6 H words spread over the same strips (their current H readings are the known answer, hidden from the
+reader), gate = control >= 5/6 (as before). One Opus subagent call per <= 4 strips, units priced at ~$1.2 per call + 1
+reconciliation unit by you; stop before a unit that crosses 80% of cap or box. If the control passes: move M/U words to H only where
+the reader's word equals one reconciled candidate or the image shows it clearly to you as well; record per word. If the control
+fails: the line-strip instrument is logged and the step is [retired] with the instrument named (rule 3 third-attempt clause); no
+grade changes. Update Remaining gaps / Escalation and pass gaps_check.
