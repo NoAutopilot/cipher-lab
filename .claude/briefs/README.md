@@ -205,3 +205,5 @@ applied unchanged, and three named cycle-3 briefs written from it.
   pre-registered share (default 0.7 of tokens). Below it, the read is retired for that model too (rule 3's third-attempt
   clause), and the next step is a different instrument (the owner's sign sorter, a better image), not a larger pass.
   F36-GLOSS: Sonnet retired on the f.36 gloss twice, then Opus on every gloss line read at chance for 18.33 against a 6 cap.
+
+- First command of every cloud worker (5 Oct 2026: RULES-SLIM and MERCY-RAH-REFRESH stalled because the container clone carried a stale local main from 1 Oct): `git fetch origin && git checkout -B main origin/main` before reading or editing anything.
