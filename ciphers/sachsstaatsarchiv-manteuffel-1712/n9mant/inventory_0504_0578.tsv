@@ -1,0 +1,56 @@
+# N9-MANT2 (5 Oct 2026, LANE-NEAR9, account 2): eye screen of the 50 never-inventoried frames of Loc. 694/08 0504-0578.
+# frame = URL file number in images/loc694-08-09/frames.tsv (the film's printed "Aufnahme Einheit" label is file+1 on every frame checked).
+# Screen: full-size frames fetched once (scratch, not committed), downscaled to 1300 px, 4 Sonnet calls of 11-14 frames each, every call with
+# file 0511 (f.410, known unglossed cipher) as an in-call positive control: read as cipher in 4/4 calls. Classes: blank / clear / cipher
+# (code groups, no gloss seen) / cipher? (one or two possible runs) / glossed (code groups with interlinear decipherment). Grade M (screen only).
+frame	label	folio_or_heading	class	note
+0504	0505	enclosure A (German)	clear	left page only, ~20 lines German; right blank
+0505	0506	enclosure A pts 1-3	clear	German numbered points, no code groups
+0506	0507	enclosure A pts 4-8	clear	German, no code groups
+0507	0508	A pts 9-10; B "Copie d'une lettre de ... baron d'Ilgen"	clear	endorsed "a la lettre de Mant. du 18 Nov. 1712"
+0508	0509	C "Copie d'une lettre de Copenhague"	clear	endorsed "a la lettre de Mant. du 18 Nov. 1712"; no cipher copy of the f.410 P.S. among the no. 96 enclosures
+0512	0513	left page	cipher	~8 lines French with underlined code runs, no gloss seen; right blank
+0514	0515	both pages	glossed	~12 short groups with small words above (e.g. "la Cour de Russie")
+0515	0516	both pages	clear	French draft with deletions, no code groups
+0517	0518	"Berl. ce 20 nov. 1712"	glossed	2 code lines with gloss
+0518	0519	f.416, paras 3-4	glossed	~10 code lines, gloss over some groups (eye read: "le Pr. de Dessau" over 391.103..); 71 groups eye-read (M), vs f.410: 0 shared 4-/6-grams
+0520	0521	"[Berl.] 23 nov. 1712"	glossed	one ~2-line run (365.374.60...)
+0521	0522	left page, foot	glossed	~3 code lines with gloss; signed
+0523	0524	f.420, both pages	glossed	dense runs ~12 lines/page
+0524	0525	left page	clear	French, no code groups
+0526	0527	f.422, "Berlin 24 nov 1712"	glossed	runs in lower half ("Bartholdi")
+0527	0528	ff.422v-423	glossed	dense, ~25 lines/page, both pages; NOT the leaf GAPS195 transcribed (see NOTES N9-MANT2); not transcribed
+0529	0530	f.425	glossed	~15 lines/page with runs
+0530	0531	paras 8-9; "P.S. ce 24 nov 1712", f.426	glossed	a few runs on each page
+0532	0533	f.428, "Berlin 27 nov 1712"	glossed	~15 lines with runs
+0533	0534	f.429	glossed	runs on ~15 lines
+0535	0536	short letter; German "Copie des relation"	glossed	~3 code lines on left; copy (right) clear, endorsed "a la lettre de Mant. du 27 Nov 1712"
+0536	0537	f.431	clear	German copy continued
+0538	0539	left page	clear	German continuation; right blank
+0539	0540	f.433, "Berlin 28 nov 1712"	glossed	runs in lower third
+0541	0542	left page	glossed	~8 code lines
+0542	0543	left = 0541's page; f.435 "Monsieur le B. de Mant." 2 X 1712	glossed	right page clear letter
+0544	0545	f.437	glossed	~6 code lines in items 2-3
+0545	0546	"P.S." 30 Nov 1712, f.438	cipher	~5 embedded runs with small words above (glossed in part)
+0547	0548	f.440, "recu 18 Xbre 1712"	cipher?	one or two short runs with words above
+0548	0549	f.441	glossed	isolated 3-digit codes (150-191) with words above
+0550	0551	f.439, "A Mr de Manteuffel, a Gustrow le 1 Xbre 1712"	clear	
+0551	0552	continuation	clear	
+0553	0554	f.444	clear	
+0554	0555	f.445	clear	
+0556	0557	f.447	cipher?	a few isolated 3-digit codes (150, 180)
+0557	0558	f.448, 7 Xbre 1712	clear	numerals are counts
+0559	0560	f.450	clear	
+0560	0561	f.451	cipher?	one short run (17.15 / 6.60.12)
+0562	0563	f.453	clear	
+0563	0564	f.454, "Copie d'une lettre ... 26 Nov. 1712"	clear	
+0565	0566	f.453 [sic, screen], "Berlin 12 Xbre 1712"	cipher	a few embedded runs (120.11.57, 103.34), small interlinear words
+0566	0567	f.455v-456	cipher	~4 embedded runs (66.21.33.401.60), some words above
+0568	0569	f.458 (German)	clear	
+0569	0570	f.459, "a Gustrow le 15 Xbre 1712"	clear	isolated numerals only
+0571	0572	continuation of f.459	clear	
+0572	0573	f.461, "a Berlin le 13 Xbre 1712"	clear	
+0574	0575	f.463, "Berlin ce 15 Xbre 1712"	glossed	dense, ~25 lines
+0575	0576	f.463v continued; f.464	glossed	~22 code lines on left
+0577	0578	f.466 "Pro memoria" (German)	clear	
+0578	0579	German, "Berlin den 13 ... 1712"	clear	
