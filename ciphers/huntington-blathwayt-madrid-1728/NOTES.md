@@ -402,3 +402,10 @@ These are search results only (rule 10). HathiTrust's Cloudflare check stopped t
   - IV prints cipher passages the HMC way: "[PS., in cypher.]", "(1) Name in cypher.", "[This paragraph is in cipher.]". It has Ripperda hits (1725) but nothing dated 1727-29 (date counts: 1724 391, 1725 139, 1728 1).
   - Search inside: https://archive.org/details/reportonmanuscri0000grea_g6z8?q=Pareti
 - **Vol. V (1961) is not on IA** (advancedsearch `title:(polwarth)`: 12 items, none vol. V). On Google Books every Polwarth record is NO_PAGES (`intitle:Polwarth manuscripts`; the 1961 copies are `_9sLAQAAIAAJ` and `JyBOAQAAMAAJ`). The 1727-29 Madrid/Port Ste Marie letters and any printed decipherment of BLA 191(a) therefore **still need HathiTrust** (`msu.31293105166841`).
+
+## HMC Polwarth V search-inside "cypher" (5 Oct 2026 03:51 UTC, owner's browser, HathiTrust msu.31293105166841; Hathi desk read H1)
+
+Hits seen (screenshot from #224 p.180 to #373 p.329) are all 1740s Marchmont material (e.g. "1746, Oct. 5, Stanwell"; Fox
+as Secretary at War): editorial notes "This letter is entirely in cypher", "The words in parentheses are in cypher", "This
+cypher has not been identified". None from 1727-29. Whether hits before p.180 exist: not seen (asked). If none, Polwarth V
+does not cover BLA 191(a)'s year and the "[ ] print: HMC Polwarth V" gap closes as a negative.

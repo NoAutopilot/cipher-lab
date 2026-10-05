@@ -849,3 +849,14 @@ Grep of the djvu text for Zettel / chiffr / Ziffer / Geheimschrift:
 - II.2: "Zettel" once (posters, 1566), plus Fray Lorenzo's "Schicke mir Eure Gnaden eine Chiffre" (early 1566, to Gonzalo Perez). Nothing about Kurfürst August or 1561/1564 cipher.
 
 Rachfahl II.1 as text **still needs HathiTrust** (`hvd.hnt3bj`).
+
+## Rachfahl II.1 search-inside "Zettel" (5 Oct 2026 03:51 UTC, owner's browser, HathiTrust hvd.hnt3bj; Hathi desk read H2)
+
+6 hits. The one that matters, p.209: "In einem chiffrierten Zettel gab Oranien dem Kurfürsten August Nachricht davon, daß zwar
+aus Italien und Spanien dem französischen Hofe Truppen geschickt würden, nicht aber aus den Niederlanden: ,Wir aber in diesen
+Niederlanden sind noch still; zwar sind wir darum ersucht worden, haben's aber mit Glimpf abgeschlagen und möchten wohl leiden,
+daß unser König in Hispania desgleichen auch tue ...'" -- Rachfahl quotes, in clear German, the content of a ciphered Zettel from
+Orange to August. His note (endnote p.23, "209, 1."): "Dresdner Archiv Locat 8510 (chiffrierter Zettel, d. Brüssel 13. August
+1562)". This is not WVO 53/57/126 (1561, 1564). Next (~$1, worker): match Brussels 13 Aug 1562 to a WVO number and to our pool
+(ciphertext_*.tsv, System A/B); if the ciphertext is on disk, Rachfahl's quotation is a crib/known plaintext (grade C, printed).
+Other hits (pp.120, 150, 426, 9) are plain "Zettel" (slip of paper), not cipher.
