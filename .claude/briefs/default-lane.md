@@ -13,6 +13,11 @@ Armstrong and Debosnys are off limits (owner sorters / private).
 
 0. `git fetch origin && git checkout -B main origin/main`; `python3 tools/room.py --start`; `date -u`. If your WORK-QUEUE row is still
    `queued`, `python3 tools/work_queue.py --claim <job_id> --session <your session id>` and push. ROOM claim line with box end time.
+0a. Push-check gate (owner, 5 Oct 2026: "each do that full worker update / check push to github before they dive into new work"):
+   if WORK-QUEUE.tsv has a SESSION-SWEEP-<your account> row that is not `done`, spawn NO worker yet. Post one ROOM line
+   "waiting on SESSION-SWEEP-<account>", then send_later 15 min and re-check (at most 90 min; after that, proceed and say so).
+   Once it is done, read its SESSION-SWEEP-<account>-*.tsv: any target with work recovered or newly pushed in the last day is
+   excluded from this lane's first wave (its owner session may still be finishing).
 1. Exclusions, before every assignment: no folder with a ROOM.md claim < 6 h old and no `done` (grep the folder name in the last
    ~600 ROOM lines); no folder a live lane brief names (`.claude/briefs/runs/` from the last 24 h, rows `claimed` in WORK-QUEUE.tsv);
    no folder the account-4 parent holds (its GAPS*/FT4* lines).
