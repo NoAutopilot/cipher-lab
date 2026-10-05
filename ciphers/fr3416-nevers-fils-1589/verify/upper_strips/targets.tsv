@@ -1,0 +1,13 @@
+row	seg	strip	mu_tokens_in_segment
+U03	s2	images/f43u_L03_s2.jpg	{cognoistre} | {q'} | {ce}
+U11	s2	images/f43u_L11_s2.jpg	{a} | [...] | [...]
+U12	s2	images/f43u_L12_s2.jpg	{au} | {adressez} | [...]
+U13	s1	images/f43u_L13_s1.jpg	{<del>Tremolett</del>} | [...] | {faire}
+U17	s2	images/f43u_L17_s2.jpg	{estoit} | {selon} | [...]
+U18	s1	images/f43u_L18_s1.jpg	[...] | {ce} | [...]
+B11	s1	images/f43b_L03_s1.jpg	[...] | {ce a la}
+U07	s2	images/f43u_L07_s2.jpg	{laisse / lequel} | {fait}
+U09	s2	images/f43u_L09_s2.jpg	{Buzy} | {par}
+U20	s2	images/f43u_L20_s2.jpg	{desquelz} | {si 7}
+U24	s2	images/f43u_L24_s2.jpg	{que de tout} | {q' le-}
+U25	s1	images/f43u_L25_s1.jpg	{estime} | {servitu-}
