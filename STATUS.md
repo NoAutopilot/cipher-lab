@@ -4361,3 +4361,22 @@ Brief: .claude/briefs/runs/2026-10-05-acct3-lane-sys1.md. Four workers (Opus 5.5
   work_queue --check malformed 4 -> 0; system_map_check fixed (IMAGES-AUDIT-2026-10-03.tsv row).
 LANE-VER1 (account 2) claimed by the account-2 dispatcher before this close.
 
+
+## LANE D2PUSH handoff (session_01UcA1qfmvj2Z2oGWMt6yMMq, account 1), 5 October 2026 (closed 19:2x UTC: backlog spent)
+
+Brief: .claude/briefs/runs/2026-10-05-acct3-lane-d2push.md. Seven workers (Opus 5.5) in two waves, 5 D / 2 D- (cap overruns 1.1x,
+1.27x); worker spend 27.2 + orchestrator about 3 = about 30 of cap 60 (get_session). No target reached D2; no "verifier wanted" line.
+- Birago fr.3252 f.117r (D2-B117KAPC, D2-B117M): pipeline error measured on no.87 known answer 0.126; printed 1572 key power 18/20
+  there (16/20 at 0.183), rank 1/201 5/5 seeds -> licensed; 34 M->S, now S 224 / M 29 / U 26, depth_pct 68.1 -> 80.3; longest S
+  stretch 23 letters, below AD: D1. T88=q on no.86 FAIL (4/7 vs 0.6 floor). 3 value-change tiles added to the owner sorter list.
+- Clairambault 1161 (D2-C1161LA, -PRU, -AUD): th/z/S/4 split-tile look-alike gate FAIL (10 relabels not applied); fr.3281 f.4 Des
+  Pruneaux key found (Gallica btv1b9060310c canvas 5), NO FIT 2/17 vs p99 4; planted agreed-token audit NON-TEST (catch 0.65 < 0.80).
+  C/S 67.0%, D1. Remaining steps are the owner sorter (la/focus.tsv, aud/focus.tsv, seven new shapes).
+- Dinteville fr.3621 (D2-DIN0): f.128's seven conflicting 0s at native scale, 5 stemmed / 2 plain, merged under look/PREREG.md; 2
+  unexplained, row 0 not promoted; strict C 177 unchanged (the brief's "+68" was wrong; promotion would have moved 38). Remaining:
+  f.23r sorter (ASKS 112), fr.4718 reproduction (ASKS 78).
+- Hellen R1953 (D2-HELFAGEL): Fagel 5177 pilot, 8 pages, 1,861 agreed words, 111 cribs: target 0 proposals, controls 0/0 ->
+  untestable at this size; full 5-93 corpus about 30-35, not recommended.
+- Not run: Nevers fr.3416 f.35 (102 tokens in isolated figure runs, D2 out of reach by depth_check's own reason); Birago f.47 (its
+  verifier step already done); Birago 1572 f.168/f.144 (NEVBIR-ERRTRUE already tested at err_true). Next depth gains on all four
+  targets wait on the owner's sign sorter, not on a machine pass.
