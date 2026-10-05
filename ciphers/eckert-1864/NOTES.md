@@ -325,7 +325,6 @@ exit 0
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 3 Beckwith/Kimber entries in Cipher No. 2 (section 8); the rest of the ledger untranscribed.
-- E4/E5 second copies in the parallel sent ledger mssEC 18 (object 10074) - blocker: done 5 Oct 2026 (no copy in volunteer text pp.50-60, section "mssEC 18 check"); was not-attempted; section 2 and Premise check (c): never opened; next: Huntington CONTENTdm `CISOSEARCHALL` query for 21-22 Apr 1864 and one page read ("While waiting"), ~$1.5
 - the other seven selected Beckwith/Kimber/Caldwell entries (Cipher No. 2) - blocker: not-attempted; section 8 "Not done"; next: two transcription passes of those entries and decode_no2.py with key-no2.md (cost estimated from section 4's 20-entry pass, not measured), ~$4
 - corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
 - Jan-Feb 1864 entries in the old vocabulary - blocker: not-attempted; section 5; next: read mssEC 67 (No. 9) or the No. 12 template and decode a sample of entries (cost not given in the folder; estimate), ~$3
@@ -338,7 +337,7 @@ Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H
 - [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries
 - [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026)
 - [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
-Verdict: keep going: 3 internal gaps; cheapest next: mssEC 18 copies of E4/E5 via CONTENTdm, ~$1.5
+Verdict: keep going: 2 internal gaps; cheapest next: Beckwith/Kimber/Caldwell entries in Cipher No. 2, ~$4
 
 ## mssEC 18 check for E4/E5 copies, 5 Oct 2026 (RUN6-ECK, LANE-RUN6 wave 2)
 
