@@ -1,10 +1,10 @@
 # BnF Baluze 103, f.50 — Michel Le Tellier (Secretary of War) to Pierre de Marca, governor of Catalonia, April 1644
 
 Status: blocked
-DECODE catalogue (files on disk, `aaymeloglu/unsolved-ciphers` cached snapshot; no login used, per lane rule
-that only the DECODE worker logs in) names a record whose shelfmark tag is this exact leaf and whose status is
-"Decrypted" — see below. This contradicts Tomokiyo's "undeciphered" tag for the same folio and cannot be
-resolved from files on disk; RecordsView needs a DECODE login this worker does not have.
+DECODE question answered 5 Oct 2026 (D2-BAL103, one login): record R2742 holds the four page images of f.50r-51v
+and one document, Tomokiyo's key table "Le Tellier-Marca Cipher (1644)" (category Key); no plaintext, no decipherment
+document, "Inline Plaintext: No". Its "Decrypted" status rests on the key, not on a reading of f.50. See the dated
+section "DECODE R2742 opened". Status word left for a check-solved re-verdict (the blocker named below is gone).
 
 Check-solved pass, 24 Sept 2026 (Sonnet, csKT/LANE N4, cap $5 shared with KT-01). Row KT-02 from
 `sources/solver-diffs/2026-09-24-tomokiyo-vs-siblings.tsv` (scTOMO, LANE N4).
@@ -179,3 +179,58 @@ No reading on disk -- no reading: status blocked (DECODE record question). Mazar
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: one browser login with `tools/decode_browser_login.js 2742 <dir>` (the DECODE login works since 24 Sept 2026, CLAUDE.md Access playbook item 3) to read record R2742's documents and see whether its "Decrypted" status carries a plaintext of f.50, ~$1. Who acts: agent. Source: this file's own blocker line ("the blocker stays DECODE R2742 (login needed to see its documents)"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## DECODE R2742 opened (D2-BAL103, 5 Oct 2026)
+
+Worker D2-BAL103 (account 1, LANE DEFAULT-account-1-20261005-2217), 23:03-23:0x UTC 5 Oct 2026 by `date -u`. One
+browser login (`tools/decode_browser_login.js 2742 <scratch> --guess-fullsize --listen`), accepted first time;
+nothing decoded, no reading attempted. Credit: DECODE database (de-crypt.org, DECRYPT project); record created
+22 May 2021 by DECODE user id 83 (uploader of both the images and the document); key image watermarked "S.Tomokiyo".
+
+What R2742 holds (RecordsView/2742, DocumentsList and ImagesList for fk_id=2742, read this session):
+- Metadata: name BnF_Baluze103_f50; holder "Bibliothèque nationale de France, Baluze 103, f.51-52"; sender and author
+  Le Tellier; receiver Pierre de Marca; date 1644-04-15 (start year/month/day fields); type Cipher; status
+  Decrypted; cipher type homophonic substitution + nomenclature; symbol sets graphic signs, alphabet, numerical
+  (notes: "diacritics"); pages 2; plaintext language French; Inline Cleartext No; Inline Plaintext No;
+  "Available Documents: Key"; access mode authentication required. Associated records: 0.
+- Documents: 1. ID 3821 "Le Tellier-Marca Cipher (1644)", category Key, uploaded 22 May 2021, public True, file
+  DOC_R2742_D3821_3821.png (72,190 bytes, sha1 bca557c67c045785c87fe0e8f1038c3f2df1ed4b). Content (viewed): an
+  alphabet row a-z with numeral homophones 10-23 and graphic-sign homophones under each letter, a few nulls/
+  doubles circled; "roy" and "Roine?" with two codes; "pour que qui" = 9 11 12 and "vous Barcelone ambassadeur
+  catalogne faire" = 26 32 34 39 81 (codes as drawn, overlined); watermark "S.Tomokiyo". This is the Le
+  Tellier-Marca 1644 table Tomokiyo publishes on louisxiv0.htm (built, per his page, from the four sibling letters
+  deciphered on separate pages). Not compared pixel-for-pixel with his page's PNG (no copy on disk).
+- Images: 4, uploaded 13 Jul 2021, full size served with `--guess-fullsize` (12-15 MB PNGs, not committed: folder
+  30 MB rule; re-fetchable from DECODE with a login): I17097 P1 = f.50r (cipher, heading struck/flourish at top,
+  ~20 lines), I17098 P2 = f.50v (cipher, ~13 lines, line-end dashes), I17099 P3 = f.51r (blank, gutter stub of the
+  f.50v lines), I17100 P4 = f.51v (address/docket leaf). Viewed at thumbnail size only. sha1 P1-P4:
+  59ea1b59645f..., 0e117ff441f9..., 8145cae036aa..., d3f67e0b8ece.... Each image has a Transcriptions sub-list
+  (TranscriptionsList?showmaster=images&fk_id=1709N); **not opened** (the listener had already quit; a second login
+  is against the single-login rule) -- ImagesList shows no transcription count, so whether any exists is unknown.
+
+Where a plaintext of f.50 was not found: not as a DECODE document (the only document is the key), not inline
+(Inline Plaintext: No), not in the record's metadata. Not checked: the four per-image TranscriptionsList pages.
+So DECODE's "Decrypted" status means "key available" (Tomokiyo's reconstructed table), consistent with Tomokiyo's
+"f.50 (undeciphered)": the record contradicts nothing. The holder string "f.51-52" plus a 2-page count and images of
+f.50r-51v supports reading (a) of the DECODE section above: the record is this leaf, mis-foliated in its holder field.
+
+Requests: de-crypt.org 1 login + record page + 4 thumbnails + 4 full-size images (tool auto-fetch) + 3 listener
+requests (key PNG, DocumentsList, ImagesList), 1.5 s apart.
+
+## Remaining gaps (D2-BAL103, 5 Oct 2026)
+Read so far: 0 of the f.50r-v cipher tokens (no transcription on disk, no reading attempted; DECODE R2742 carries only the key)
+- f.50r-v ciphertext, never transcribed or decoded against the published 1644 table - blocker: not-attempted; Tomokiyo's table (louisxiv0.htm, also DECODE document 3821) is published and the leaf is digitised (Gallica btv1b9001389d); next: two blind transcription passes of f.50r-v line crops (tools/iiif_lines.py) then decode against the table, key credited to Tomokiyo, ~$4
+- DECODE TranscriptionsList for images 17097-17100 - blocker: not-attempted; not opened this session (listener had quit, single-login rule); next: fetch the four TranscriptionsList pages in the next DECODE session that logs in for another record, ~$0.3
+
+## Escalation (D2-BAL103, 5 Oct 2026)
+- [ ] siblings: f.171, f.189, f.200, f.230 carry period decipherments on separate pages (Tomokiyo); not yet used here. Planned: use them as the calibration set for the table before decoding f.50
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [ ] known-keys: Tomokiyo's 1644 table is published (and is DECODE R2742's only document, 5 Oct 2026); planned: apply it to a transcription of f.50
+- [x] print: web, three blogs, both solver repositories and DECODE checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: a published key exists, so no statistical rebuild is needed before applying it
+- [ ] image-check: DECODE full-size images and Gallica native images both available; planned: line crops for the transcription passes
+- [ ] retry: nothing read yet, so nothing to re-derive; planned after the first decode (rule 7 --check)
+Verdict: keep going: 2 internal gaps; cheapest next: fetch the four DECODE TranscriptionsList pages in a session already logged in, ~$0.3; then transcribe f.50r-v and apply Tomokiyo's table, ~$4
+
+Status word: left `blocked` for the orchestrator to send a check-solved re-verdict, since the DECODE blocker named at the
+top is gone and no plaintext of f.50 was found in R2742.
