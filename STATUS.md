@@ -90,6 +90,609 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## Account-4 unfinished-work report (5 Oct 2026)
+
+Written 5 Oct 2026 22:3x UTC by the account-4 standing session (session_01PpZtGZsbseHrXViC8rzExA) for the account-3
+orchestrator. Scope: every Claude Code session on account 4 since 1 Oct (list_sessions mine:true, paged to the end: 572
+sessions, 1 Oct 23:11 to 5 Oct 22:13), ROOM.md lines signed account-4 parent/CLOSER/GAPS/FT4, and this file's account-4
+sections. Account 4 went silent at 3 Oct 19:19-19:33 UTC on the weekly limit ("resets Oct 5, 8pm (UTC)"), which is
+what left the items below open.
+
+Method (per session): a ROOM.md done line for its job id, and the commits that line names found on origin/main
+(history fetched to 29 Sept), else a commit whose message carries the job id, else a commit under ciphers/<target> inside
+the session's own time window; every session failing all three was read with list_events / get_session (final turn).
+Result: no finished work missing from GitHub. 561 pushed already, 2 pushed now (after a send_message), 8 nothing to
+recover, 1 this session. No transcript-only recovery was needed, so no "Recovered from session" NOTES.md section was written.
+
+| Item | Target | Was doing | Finished now / stopped where | Cost to finish | Next step |
+|---|---|---|---|---|---|
+| CLOSER-83 (session_015gHJKiJ682LM48LmmmksuV) | account-4 housekeeping | archive GAPS197, GAPS201-205, CLOSER-82 + LEDGER rows; cut off 3 Oct 19:19 after its claim | finished now: 5 Oct 22:23, 7 of 7 archived, LEDGER 96f3dba1, ROOM 34b505ff | USD 1.48 (total 2.18) | none |
+| account-4 parent 6 (session_01R7QqXBh1GmrfFWERrnuerT) | account-4 orchestration | check-in 92 (3 Oct 19:33) never ran | finished now: 5 Oct 22:22, closing paragraph in its STATUS section (1ac2d80f) + ROOM done (c1337be6); spawned nothing, armed nothing | USD 1.75 (total 4.61) | account-3 orchestrator decides account 4's queue |
+| GAPS206 eckert-1862 / GAPS207 sachsstaatsarchiv-manteuffel-1712 / GAPS208 zeschau-seebach-1841 / GAPS209 rah-morillo-1817 / GAPS210 naf14913-rousseau-venice-1743 / GAPS211 pollaky-1865-1875 (6 sessions, 3 Oct 19:17) | 6 targets | each cut off by the weekly limit within two minutes of its claim; nothing committed | finished already: all six re-run and pushed by STALE4 (account 1, 4 Oct 01:4x-02:2x, STATUS.md "STALE4 handoff"); GAPS210 half met (ff.290r-392v not swept, its own named next step) | 0 | none from account 4; GAPS210's remainder is in its NOTES.md |
+| GAPS68-vieuville (session_01RR2RU1N6QZfB1PjMdTtytx) | fr4715-vieuville-pool | f.7r image reconciliation, overran to USD 25.48 on cap 8, parent STOP 3 Oct 10:12 | stopped; what existed was pushed (445beed3, 4f716ed3); the step was re-run as GAPS82 the same morning | 0 | none |
+
+Not archived (the orchestrator's call, none holds unpushed work): parents 2-6 (01SnKHiQ, 01S3ZaR7, 011mUCfY, 016VEn6Z,
+01R7QqXB) and the six GAPS206-211 sessions; parent 2 is still titled LIVE.
+
+<details><summary>Every account-4 session checked (572 rows: session, created UTC, job / target, result)</summary>
+
+| Session | Created | Job / target | Result |
+|---|---|---|---|
+| session_01SEzoee67SivPooFpTkxMme | 10-01 23:11 | account-4 parent 1 | pushed already (handover to parent 2, 2 Oct 05:1x) |
+| session_01UJLdhhmacSvvBz1mkLx3Ls | 10-01 23:30 | BLZ-FR · blitz-ciphers | nothing to recover (blocked at intake gate 1 Oct 23:3x; re-run as BLZ-FR2, 5d077346) |
+| session_014dqrm8xcYzpqBX97q1TkNd | 10-01 23:30 | BER-FRCORP · berthier-napoleon-1812 | pushed already |
+| session_01HEME33yST2CvKoPyFqsVgy | 10-01 23:30 | LAU-U3U4 · fr3625-lauriere-1593 | pushed already |
+| session_018ACxUAfkh3KEb9c7egbL2c | 10-01 23:34 | WEBCHECK-maurice-rupert-1645 | pushed already |
+| session_01FvDDeQpd2RSmRCokU6cgPG | 10-01 23:34 | WEBCHECK-berthier-napoleon-1812 | pushed already |
+| session_01UoUX87ddxQDoRFRhBe8zQo | 10-01 23:34 | WEBCHECK-oldenbarnevelt-brederode-1605 | pushed already |
+| session_01YNVCrHHWmoGFbmKt4hdiSN | 10-01 23:34 | WEBCHECK-decode-4450-bnf-fr20506-1525 | pushed already |
+| session_01RKxGTPeardN1yqhfFzgc3S | 10-01 23:34 | WEBCHECK-huntington-luzerne-destouches-1781 | pushed already |
+| session_012QcdMgUh2mJKGEzrmBL5kk | 10-01 23:34 | WEBCHECK-hellen-frederick-1752 | pushed already |
+| session_0148PDxwSVvZVZKPT19S7iGR | 10-01 23:34 | WEBCHECK-fr3625-lauriere-1593 | pushed already (done line; commit found on main by target path and time) |
+| session_01BtQTXgSpNnucE2Ri9tP4N3 | 10-01 23:34 | WEBCHECK-blitz-ciphers | pushed already |
+| session_01WYFaBZMJFFu1EixG8WbuwQ | 10-02 00:13 | WEBCHECK-ormond-arran-1678 (stuck at a permission prompt, $0 X) | pushed already |
+| session_01V5fdXKTcNrNGFsM5gNsC6R | 10-02 00:13 | WEBCHECK-riksarkivet-r4282-1628 | pushed already |
+| session_01F7qYHeWHXYjbBAw4HsLgRh | 10-02 00:13 | BLZ-FR2 · blitz-ciphers | pushed already |
+| session_016qeNRMTT4MbPCkVPaZkUHX | 10-02 00:13 | OLD-DKEY · oldenbarnevelt-brederode-1605 | pushed already |
+| session_01YbUXd7BeYQHsFgk8gMbz7b | 10-02 00:13 | D4450-TAIL · decode-4450-bnf-fr20506-1525 | pushed already |
+| session_01TWkUR2z6NoA2EENcN7BX7Y | 10-02 00:13 | HEL-T2 · hellen-frederick-1752 | pushed already |
+| session_017hXeGtzDEVBq5LFzonFkKU | 10-02 00:15 | LAU-KEYSWAP · fr3625-lauriere-1593 | pushed already |
+| session_01HM18KhWTKdnbGzZAMazEzd | 10-02 01:03 | WEBCHECK-ra-crusenstolpe-1809 | pushed already (done line; commit found on main by target path and time) |
+| session_01JjR4Eif2GncopZ1Jzw9Yva | 10-02 01:03 | WEBCHECK-sp90-raby-1704 | pushed already |
+| session_016qNoaicFMFndKydYGSb9ft | 10-02 01:03 | WEBCHECK-mccormick-1999 | pushed already |
+| session_011ZoVs6RAzHoBAEbiLMXGfK | 10-02 01:03 | WEBCHECK-decode-2754-bnf-baluze156-1636 | pushed already (done line; commit found on main by target path and time) |
+| session_01FdF1meVkLrLhJnsBPvmoxK | 10-02 01:03 | WEBCHECK-esp318-sicilia-1503 | pushed already |
+| session_01BQG3VTxtpDGZEQokbhpZju | 10-02 01:03 | WEBCHECK-ormond-arran-1678 (2) | pushed already |
+| session_01XTGBF4hdM6i3uuoThkw6Li | 10-02 01:05 | RIK-CRIBS · riksarkivet-r4282-1628 | pushed already |
+| session_0169i5MTn6E1XuD5dtUWTEWr | 10-02 01:55 | SPEC-BOOK · three specs' cheap_test_done | pushed already |
+| session_01KbdR5dhNMYXZDRtodPrRnx | 10-02 01:55 | GAPS-wellington-maitland-1812 | pushed already |
+| session_011wuJ617DB8VYPb59ckjmVn | 10-02 01:55 | GAPS-vanbeuningen-dewitt-1657 | pushed already |
+| session_01J2PyaFfhFmMr7BWm9N477G | 10-02 01:55 | GAPS-spinelli-beinecke-c1515 | pushed already |
+| session_016SMw4shBXLR5kVfWzqK6d8 | 10-02 01:55 | GAPS-rah-morillo-1817 | pushed already |
+| session_01LXMKcV9PoTRa7ToKfgThyr | 10-02 01:55 | GAPS-pollaky-1865-1875 | pushed already |
+| session_01Acw6q6oxHLekbtZvRex31L | 10-02 01:55 | GAPS-na-suriname-map-1781 | pushed already |
+| session_01Q4KPpjcZ19iBtALPuvjPms | 10-02 01:55 | GAPS-na-schonenberg-1678-1716 | pushed already |
+| session_01Mroz6Mk7miNBXMecSjzAkc | 10-02 01:55 | GAPS-na-janssens-java-1811 | pushed already |
+| session_013YTLv5jzTtHAKydeMeHG95 | 10-02 01:55 | GAPS-mornington-1798 | pushed already |
+| session_01QMYKezb4HNpuC4xHnLeN5e | 10-02 01:55 | GAPS-moray-wood-1568 | pushed already |
+| session_01D7GPZvDbBcSSNaknmPxu4i | 10-02 01:55 | GAPS-matignon-mayenne-1586 | pushed already |
+| session_013LjzVMCTCYwHgQvedM9mYo | 10-02 02:44 | OPEN-sp90-raby-1704 | pushed already |
+| session_015shFaDUEQfWQ7Gy27U4AKG | 10-02 02:44 | OPEN-ra-crusenstolpe-1809 | pushed already |
+| session_01A5VtTu3GVgpTsW5XGd9fv2 | 10-02 02:44 | OPEN-mccormick-1999 | pushed already (done line; commit found on main by target path and time) |
+| session_01GangCsTwug62fovETu3Pxw | 10-02 02:44 | SPLIT-matignon-mayenne-1586 | pushed already |
+| session_01DhjoCTkng7UKRLPVNQdXYe | 10-02 02:44 | SPLIT-na-janssens-java-1811 | pushed already |
+| session_018zpPDnVaTZ5DEwHmbfdsc7 | 10-02 02:44 | GAPS2-na-schonenberg-1678-1716 | pushed already |
+| session_01EfEgJUJUwbmK5fa8FV8qxL | 10-02 02:44 | GAPS2-na-janssens-java-1811 | pushed already |
+| session_01STP9EcpLgCF4Erx1irFZmx | 10-02 02:44 | GAPS-pro3055-clinton-1779 | pushed already (done line; commit found on main by target path and time) |
+| session_01VDe6YYkRAAYfD2xUR8heaM | 10-02 02:44 | SHORTLIST · likely solves (owner ask, phase 1) | pushed already |
+| session_014qwVBGVW4BBZz8iSZpKHqM | 10-02 02:44 | CLOSER-1 · archive 12 finished sessions | pushed already |
+| session_01523cJVKzip4NxzG9yj2Wb9 | 10-02 03:33 | LIKELY-3-nevers-birago-fr3251-1572 | pushed already (done line; commit found on main by target path and time) |
+| session_01RYqvipKLhfbvUSUBXtZt8H | 10-02 03:33 | LIKELY-2-ceppo-nevers-fr3251-1570s | pushed already (done line; commit found on main by target path and time) |
+| session_01ULF4Vvd1gjstdaLLA7bhy2 | 10-02 03:33 | LIKELY-1-fr4715-vieuville-pool | pushed already (done line; commit found on main by target path and time) |
+| session_012ik9sp4yNPQanMH62Z8mo2 | 10-02 03:33 | CLOSER-2 · archive 10 finished sessions | pushed already |
+| session_01EBGyzfHwoDFrHwKUrdB5qw | 10-02 03:34 | GAPS2-matignon-mayenne-1586 | pushed already (done line; commit found on main by target path and time) |
+| session_01Rpvr153Dej86ptT2phcRAQ | 10-02 03:34 | GAPS2-na-suriname-map-1781 | pushed already (done line; commit found on main by target path and time) |
+| session_01PcrTnEwg9nTgX3nZb1zQsH | 10-02 03:34 | GAPS3-na-janssens-java-1811 | pushed already (done line; commit found on main by target path and time) |
+| session_017Z5EZboi3jdB2qdt1PGG3y | 10-02 03:34 | GAPS3-na-schonenberg-1678-1716 | nothing to recover (stuck at a permission prompt, USD 0, re-spawned) |
+| session_0194wz3eeXoQqdm8JBkddFdA | 10-02 03:34 | LIKELY-8-jan-van-nassau-5549 | pushed already (done line; commit found on main by target path and time) |
+| session_01ECJB6ntQeU12q7TBF9cxZz | 10-02 03:34 | LIKELY-5-fr3151-noailles-1558 | pushed already (done line; commit found on main by target path and time) |
+| session_01QTtS4gtoRiX5SnpcRjWQJB | 10-02 03:34 | LIKELY-4-decode-1162-modena-ambung-1492 | pushed already (done line; commit found on main by target path and time) |
+| session_01JmLF75n73FaBHdJuqfVREd | 10-02 04:23 | LIKELY-9-intercepted-royalist-1646 | pushed already (done line; commit found on main by target path and time) |
+| session_01Wh87KrDZHr6gvDnz8icwnQ | 10-02 04:23 | LIKELY-7-roell-vandedem-1809 | pushed already |
+| session_01DqgBmRuUuS3bsLYxSxohWy | 10-02 04:23 | GAPS2-pro3055-clinton-1779 | pushed already |
+| session_014hB18brjnfwZkYqcVGtjMn | 10-02 04:23 | GAPS-nevers-birago-fr3251-1572 (round 2) | pushed already |
+| session_01MEdGAhHGSVUynK4nBSL57f | 10-02 04:23 | CLOSER-3 · archive 11 finished sessions | pushed already |
+| session_01SnKHiQk7k7VPDGhfcPeiVV | 10-02 05:11 | account-4 parent 2 | pushed already (clean handover to parent 3, 3 Oct 01:07, successor prompt a47776b9) |
+| session_01Jwvj8MwaLVjXarQso7TmWg | 10-02 05:16 | GAPS-intercepted-royalist-1646 · intercepted-royalist-1646 | pushed already |
+| session_01TSsw7dmM8QVzh2gCnXkKcj | 10-02 05:16 | GAPS3-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_015ibJEXVjwop8C7mTuVDwL4 | 10-02 05:16 | GAPS3-nevers-birago-fr3251-1572 · nevers-birago-fr3251-1572 | pushed already |
+| session_01PCavN2VALchJ2uxrqDzAa3 | 10-02 05:16 | CLOSER-4 · archive 5 finished sessions | pushed already |
+| session_01QYdmP2XzX3kuC2ByhhkVFv | 10-02 05:17 | GAPS-fr4715-vieuville-pool · fr4715-vieuville-pool | pushed already |
+| session_01X9hXWn2ZNg5rgLuK8aDFjy | 10-02 05:17 | CHECK-fr4687-paleologue-nevers · fr4687-paleologue-nevers | pushed already (done line; commit found on main by target path and time) |
+| session_01PuPE9idBNMZQgCCYR5vRcS | 10-02 05:17 | GAPS2-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_014WdBPsseuZTqQj1XhBzVbd | 10-02 05:17 | GAPS2-mornington-1798 · mornington-1798 | pushed already |
+| session_013FPWQzwkoivQfkHcL8Vvqb | 10-02 05:17 | GAPS4-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_01SGZgpt6kSxBrRaZwdw22rn | 10-02 05:17 | GAPS4-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01Hghssrcc6qENKkctup4UBY | 10-02 05:17 | GAPS3-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01Xznr5oo8hFLzbWNPHd2w7V | 10-02 06:06 | RETRO-account4-1 · retrospective, account-4 lineage 1-2 Oct | pushed already |
+| session_01JK2W3H3Pu8P9Y9DftjnerN | 10-02 06:06 | LIKELY-6-fr3986-nevers-revol-1593 · fr3986-nevers-revol-1593 | pushed already |
+| session_013aBudv4C5u79CZYDjzVMzW | 10-02 06:06 | GAPS5-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01NJdbbEqZwHbrZ1i57XxTRQ | 10-02 06:06 | GAPS5-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_01FS4sjLBMSRBzWtvrz76XNq | 10-02 06:06 | GAPS3-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_019J5DkfNsXZAgbp2VRCpW5S | 10-02 06:06 | GAPS3-mornington-1798 · mornington-1798 | pushed already |
+| session_01MPssPmGyXUeeGapSEywtC5 | 10-02 06:06 | GAPS4-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_01GgYCnBmz7CTLo9ckgEZ9Jq | 10-02 06:06 | GAPS4-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_019K3ZAHo1v85gdLhSvKk4Nm | 10-02 06:06 | GAPS4-nevers-birago-fr3251-1572 · nevers-birago-fr3251-1572 | pushed already |
+| session_019P7VGLbDTcFfgiAicMnnJk | 10-02 06:06 | GAPS2-intercepted-royalist-1646 · intercepted-royalist-1646 | pushed already |
+| session_014SXS7AKCDCu7qpNqbYQnCr | 10-02 06:06 | CLOSER-5 · archive 11 finished sessions | pushed already |
+| session_01Xp9i8wZCZXN7xL3Z8EWzzk | 10-02 13:25 | RETRO-APPLY-account4-1 · proposals 2, 4, 5 of RETRO-2026-10-02-account | pushed already |
+| session_01A7NaPjfiQbg8vhVm2w97sL | 10-02 13:25 | GAPS4-mornington-1798 · mornington-1798 | pushed already |
+| session_015HMzzLUuepWTrd77VGxXhA | 10-02 13:25 | GAPS5-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_01Wyc8mhZ6Sh1iWHZ2RfMgQz | 10-02 13:25 | GAPS4-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01CRQncY7XNC755SubxRULBF | 10-02 13:25 | GAPS6-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01JdSnFfbyozUrzwbAZVQV5G | 10-02 13:25 | GAPS5-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_014zZdVBE2fFFczUrkc6tTAZ | 10-02 13:25 | CLOSER-6 · archive 11 finished sessions | pushed already |
+| session_01AhcGqoVjEwhySFKjwoJaJD | 10-02 14:18 | GAPS6-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_01BX9UM5HDTjUfeuQz6NDabr | 10-02 14:18 | GAPS-fr3986-nevers-revol-1593 · fr3986-nevers-revol-1593 | pushed already |
+| session_01CxwmwQFwqMPnwaLnKBUmkZ | 10-02 14:18 | GAPS-fr4715-vieuville-pool-2 · fr4715-vieuville-pool | pushed already |
+| session_01NrGiMwEPBQZoumFzqejSXH | 10-02 14:18 | GAPS7-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_016qHidDcUvEKHDUrm8S8UKG | 10-02 14:18 | GAPS5-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01AJLargCkwVyk11jY32NnbF | 10-02 14:18 | GAPS6-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_01U9pmXZ6LPgWeVbvcthMLJE | 10-02 14:18 | GAPS6-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_017a7onWV7Z2wkMKE8kbbTH3 | 10-02 14:18 | CLOSER-7 · archive 7 finished sessions | pushed already |
+| session_01R25RVFsdHYkY2p3S9Km2Fa | 10-02 15:05 | GAPS-fr3986-nevers-revol-1593-2 · fr3986-nevers-revol-1593 | pushed already |
+| session_01Aedui2Qg8qYdyuHWYXUmvC | 10-02 15:05 | GAPS7-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01XrDTVqDo85ksJHKLKxJB6S | 10-02 15:05 | GAPS7-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_01NkWUpH66eNPEHq5XPYjGC3 | 10-02 15:05 | GAPS6-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01Erg147mm334gRPtiJQBrZp | 10-02 15:05 | GAPS-fr4715-vieuville-pool-3 · fr4715-vieuville-pool | pushed already |
+| session_01XLRrj4hmqWvLBozrTxHHsZ | 10-02 15:05 | CLOSER-8 · archive 8 finished sessions | pushed already |
+| session_01UiEUjVdY2o3fjdUgjY2nJN | 10-02 20:49 | CLOSER-9 · archive 6 finished sessions | pushed already |
+| session_01Nmv3CUrvjHYaqPrYJzstr4 | 10-02 20:49 | GAPS7-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_01XYtebGkfv3pcr5tFe3x8Pj | 10-02 20:49 | GAPS-fr4715-vieuville-pool-4 · fr4715-vieuville-pool | pushed already |
+| session_017ot9sa7WfpnriDY4shwELE | 10-02 20:49 | GAPS8-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01N3udPn28E5DVaUeFYfYR8t | 10-02 20:49 | GAPS7-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01MdxHcb7HG25npGdDsBevq4 | 10-02 20:49 | GAPS8-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_015uX1Vrr8ktWkjbyHtF2GeH | 10-02 20:49 | GAPS3-fr3986-nevers-revol-1593 · fr3986-nevers-revol-1593 | pushed already |
+| session_01Lhy5LsQ8LVpSxxD83C7PRy | 10-02 21:09 | CLOSER-10 · archive 6 finished sessions | pushed already |
+| session_01ByZvaseAZDwD2vtqYkkTe2 | 10-02 21:09 | GAPS8-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_01GHnMCYaxG8AF8LRqHXNMpj | 10-02 21:09 | GAPS4-fr3986-nevers-revol-1593 · fr3986-nevers-revol-1593 | pushed already |
+| session_01SkL45rywG46ZNziftN1CHa | 10-02 21:09 | GAPS9-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_01XtfNcknkAp8DcjUgEs7CZo | 10-02 21:09 | GAPS9-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01PQmV6cry64cf4biumTV58v | 10-02 21:09 | GAPS8-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01YAb45xr17XBwD3MtS1L5Ls | 10-02 21:27 | CLOSER-11 · archive 5 finished sessions | pushed already |
+| session_011RgTN9hUKApKSTGK6rT757 | 10-02 21:27 | GAPS9-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01MZMxdXChqZJCs2gP1uV4PM | 10-02 21:27 | GAPS10-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01HWQeUPmuqh8MqfkixcjBKX | 10-02 21:27 | GAPS9-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_013Kvp4tcHV6YXfR16nJsgfE | 10-02 21:27 | VERIFY-CLINTON-3868-2380 · pro3055-clinton-1779 | pushed already |
+| session_015KN2fFW1ZKxTR1Fs2fE3TK | 10-02 21:27 | GAPS8-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01GLDz1ShrDBaXrqZutGFvUb | 10-02 21:44 | GAPS10-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_01V5wH8QCEZWW35g9ZNwgeym | 10-02 21:44 | GAPS5-fr3986-nevers-revol-1593 · fr3986-nevers-revol-1593 | pushed already |
+| session_0188qMniv49DyptCYSPD2qxU | 10-02 21:44 | GAPS-fr4715-vieuville-pool-5 · fr4715-vieuville-pool | pushed already |
+| session_013EWdhzTgtioVkEZpvyg5dD | 10-02 21:45 | CLOSER-12 · archive 6 finished sessions | pushed already |
+| session_01TxgFobadt14Fcd6tz3zUPa | 10-02 21:45 | GAPS11-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01FNgtiztSoayRs4X9UUBrz2 | 10-02 21:45 | GAPS10-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_011mmDBNivGN1XMKteFnvf1V | 10-02 22:03 | CLOSER-13 · archive 4 finished sessions | pushed already |
+| session_018zxrJGeUr2Apo983ujsTsM | 10-02 22:03 | GAPS10-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_019d98Ju7J8VA8pqKVh1nfLP | 10-02 22:03 | GAPS12-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01S7UQvQP3N3E3vb8tXp44qV | 10-02 22:03 | GAPS11-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_018TNg7kv2ZHcjGf6oqMHYiu | 10-02 22:20 | CLOSER-14 · archive 5 finished sessions | pushed already |
+| session_015Yq5Q2rvAXWxZswdkZNRCr | 10-02 22:20 | GAPS12-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_01Tv8i68FtGfhuq2rBK3BzGt | 10-02 22:20 | VERIFY-SURINAME-2061 · na-suriname-map-1781 | pushed already |
+| session_01TSNrp3q3ZXGafTwFrNxJM5 | 10-02 22:20 | GAPS11-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01SHX2KkPJBupKmzxv196Wuu | 10-02 22:20 | GAPS-fr4715-vieuville-pool-6 · fr4715-vieuville-pool | pushed already |
+| session_01L4j7x4tgPCWa3nftAtK4bT | 10-02 22:37 | GAPS13-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_01YGWdZ6H7AvcNwKuX8qVu3y | 10-02 22:37 | GAPS11-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_01Rdb7TPEx8ioWu8UjcUtfjZ | 10-02 22:37 | GAPS9-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01PV1tzoGiPnNphw1jvsKzVw | 10-02 22:37 | GAPS13-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01EMR2pJ4iUALmyPHqTDdDdH | 10-02 22:38 | CLOSER-15 · archive 7 finished sessions | pushed already |
+| session_01P51yRyJs1tEJQubFJWvxn8 | 10-02 22:38 | GAPS-fr4715-vieuville-pool-7 · fr4715-vieuville-pool | pushed already |
+| session_01EYB7ES9uMVFpcRomZU64qX | 10-02 22:38 | GAPS12-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01EsW9qL2nLBCUsHFwxmfH99 | 10-02 22:56 | CLOSER-16 · archive 7 finished sessions | pushed already |
+| session_01Njb4zgBthsSxd17YVTwRdc | 10-02 22:56 | GAPS10-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01QC8RVAs7RXiHvaTji2fvuL | 10-02 22:56 | GAPS13-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_015GEFgd1eUP4tFHFqQZauC2 | 10-02 22:56 | GAPS14-na-schonenberg-1678-1716 · na-schonenberg-1678-1716 | pushed already |
+| session_016eu5CFadKt96tWYJQgB9dW | 10-02 22:56 | GAPS-fr4715-vieuville-pool-8 · fr4715-vieuville-pool | pushed already |
+| session_01G1R1zkALiAy6cSEV4gJY4V | 10-02 22:56 | GAPS12-pro3055-clinton-1779 · pro3055-clinton-1779 | pushed already |
+| session_01UwhmSrQ1idh5EuQ3ZxWVGD | 10-02 22:56 | GAPS14-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01VAzByKPQ36cGaFydSqf8or | 10-02 23:15 | GAPS14-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01GTUDHTcrwUNdnWVMmNbDsZ | 10-02 23:15 | GAPS-fr4715-vieuville-pool-9 · fr4715-vieuville-pool | pushed already |
+| session_01QUBK7799FRFT7WP43Q2V5V | 10-02 23:15 | GAPS11-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_019u9TNPFrErYNXmLP8HUeU3 | 10-02 23:15 | VERIFY-SCHONENBERG · na-schonenberg-1678-1716 | pushed already |
+| session_01Ps4Mhot2WWBjPzeRmhaUJ9 | 10-02 23:15 | VERIFY-CLINTON-3050-3077 · pro3055-clinton-1779 | pushed already |
+| session_015oD3KnhQqijfRjskpS5auT | 10-02 23:15 | VERIFY-SURINAME-PERIOD · na-suriname-map-1781 | pushed already |
+| session_01EdNkbkefZQns5gWeRz6iLv | 10-02 23:16 | CLOSER-17 · archive 7 finished sessions | pushed already |
+| session_01J5xgcwadzkwNcQTqDrN4Pf | 10-02 23:33 | GF4-blitz-ciphers · blitz-ciphers | pushed already |
+| session_01SJ4as9pM1fFkVNhjDQt5JS | 10-02 23:33 | GF4-berthier-napoleon-1812 · berthier-napoleon-1812 | pushed already |
+| session_01CUFyBbFzcqqDyPEhH53YGM | 10-02 23:33 | GAPS15-moray-wood-1568 · moray-wood-1568 | pushed already |
+| session_01GEi6kbrL4hJMW8jGpRQUJf | 10-02 23:33 | GAPS12-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_018tX3jThFjyy757JyYj1cEb | 10-02 23:33 | GAPS15-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01HWbku3rF6QqjJScNfSzdpC | 10-02 23:34 | CLOSER-18 · archive 6 finished sessions | pushed already |
+| session_01MRDuNdom2gFm1K4kVowDd2 | 10-02 23:52 | CLOSER-19 · archive 7 finished sessions | pushed already |
+| session_016tT67ztqHk3sAu4ivatTgx | 10-02 23:52 | GF4-BATCH2 · 3 own targets premise checks | pushed already |
+| session_01BmhG7YsSoiR2LQiUB5LCJL | 10-02 23:52 | GF4-BATCH1 · 3 own targets premise checks | pushed already |
+| session_01Q3qZ5EQN6Lnb1V9ByjMAHd | 10-02 23:52 | GF4b-berthier-napoleon-1812 · berthier-napoleon-1812 | pushed already |
+| session_01T9RSgiJDRKGf9n2nGyn9XK | 10-02 23:52 | GAPS-fr4715-vieuville-pool-10 · fr4715-vieuville-pool | pushed already |
+| session_0167EXaWCfKedfnLmUUkfAth | 10-02 23:52 | GAPS13-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_011iV14R69bjfvowA7MrxEqP | 10-02 23:52 | GAPS16-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_013tR1NAfHc6EsQQf4r3uZij | 10-03 00:09 | CLOSER-20 · archive 5 finished sessions | pushed already |
+| session_01MMBsnFYKGpEDej1kZKuQbb | 10-03 00:09 | FT4-maurice-rupert-1645 · maurice-rupert-1645 | pushed already |
+| session_01WaHaf44EzytFge5Tv6tBoS | 10-03 00:09 | GF4-BATCH4 · 3 own targets premise checks | pushed already |
+| session_01Xea5ujuCxf6FZCP12MfzzP | 10-03 00:09 | GF4-BATCH3 · 3 own targets premise checks | pushed already |
+| session_01UVLDfPVZX29NjBCg2xL8Ni | 10-03 00:09 | GF4c-berthier-napoleon-1812 · berthier-napoleon-1812 | pushed already |
+| session_019DQs3T6zChphCNMj2BLCyc | 10-03 00:09 | GAPS14-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01UJk2F9DrdBiWx3xgYrwxNj | 10-03 00:27 | FT4b-maurice-rupert-1645 · maurice-rupert-1645 | pushed already |
+| session_018soUQDLJfE3pJn8mjEMm96 | 10-03 00:27 | GAPS15-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01LwARSNHu6DyKAr1pousWW9 | 10-03 00:27 | FT4-decode-2754-bnf-baluze156-1636 · decode-2754-bnf-baluze156-1636 | pushed already |
+| session_01SS23aaCGcWjYKD1vJj51pt | 10-03 00:27 | FT4-riksarkivet-r4282-1628 · riksarkivet-r4282-1628 | pushed already |
+| session_01Tz4Jf3SJNJjTFTq1xVWWXV | 10-03 00:27 | FT4-mccormick-1999 · mccormick-1999 | pushed already |
+| session_01SvpbgzC7v6JgNhNbBQTJWp | 10-03 00:27 | FT4-hellen-frederick-1752 · hellen-frederick-1752 | pushed already |
+| session_01XZRdkFANG48Cb6HRRkGNEb | 10-03 00:28 | CLOSER-21 · archive 7 finished sessions | pushed already |
+| session_016L49mrmzFwxhibgZUroHzp | 10-03 00:46 | FT4b-decode-2754-bnf-baluze156-1636 · decode-2754-bnf-baluze156-1636 | pushed already |
+| session_01Mfxt3pFeUNvaKb33cNUWGQ | 10-03 00:46 | FT4c-maurice-rupert-1645 · maurice-rupert-1645 | pushed already |
+| session_01DwAU8DLBapb6KXp138PkSz | 10-03 00:46 | FT4-esp318-sicilia-1503 · esp318-sicilia-1503 | pushed already |
+| session_019KTd6tLrsNNB5PHjRXUA3F | 10-03 00:46 | GF4d-berthier-napoleon-1812 · berthier-napoleon-1812 | pushed already |
+| session_01ULrqnADn4mREUyMswgeAfJ | 10-03 00:46 | GAPS-fr4715-vieuville-pool-11 · fr4715-vieuville-pool | pushed already |
+| session_01QZdxGBjW4Uc6o41D4GmF5d | 10-03 00:47 | CLOSER-22 · archive 7 finished sessions | pushed already |
+| session_016ozsNEZ4LoLA4iqgfnE5aj | 10-03 00:47 | GAPS16-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01Cg5adi8zY55eijnjtjay7C | 10-03 01:05 | CLOSER-23 · archive 6 finished sessions + ledger | pushed already |
+| session_01Lv6ETFFbQop4Eeu7cw1W6F | 10-03 01:05 | FT4-ra-crusenstolpe-1809 · ra-crusenstolpe-1809 | pushed already |
+| session_01FNRGdLiyChDAdqxWFukfEv | 10-03 01:05 | FT4-decode-4450-bnf-fr20506-1525 · decode-4450-bnf-fr20506-1525 | pushed already |
+| session_01DeGrV7xZoJQBXnpZG5MYzD | 10-03 01:05 | FT4b-esp318-sicilia-1503 · esp318-sicilia-1503 | pushed already |
+| session_01W41pgMxEbp5upS9LRzH7Kc | 10-03 01:05 | GAPS17-na-janssens-java-1811 · na-janssens-java-1811 | pushed already |
+| session_01G169VTsd9Vkbjusw8bmSwK | 10-03 01:05 | FT4d-maurice-rupert-1645 · maurice-rupert-1645 | pushed already |
+| session_01S3ZaR74RRQ7BPpHT5JGaGV | 10-03 01:06 | account-4 parent 3 | pushed already (clean handover to parent 4, 3 Oct 05:38) |
+| session_01TLrg2rrHyLVQgrnNhHemBf | 10-03 01:08 | GAPS-berthier-napoleon-1812 · berthier-napoleon-1812 | pushed already |
+| session_01TuBWpa2CDmyJe3yRGQBPRs | 10-03 01:26 | CLOSER-24 · archive 8 finished sessions + ledger | pushed already |
+| session_01QYowE9P7cF7XDCPyDmewux | 10-03 01:26 | FT4b-mccormick-1999 · mccormick-1999 | pushed already |
+| session_01TunneHLTSmkvmQJqyiM3id | 10-03 01:26 | FT4c-decode-2754-bnf-baluze156-1636 · decode-2754-bnf-baluze156-1636 | pushed already |
+| session_01XvzeC5U59aV1TVDNvgZfya | 10-03 01:26 | GAPS-esp318-sicilia-1503 · esp318-sicilia-1503 | pushed already |
+| session_01UevftxLF4nbvdpYfR61M6V | 10-03 01:26 | GAPS-riksarkivet-r4282-1628 · riksarkivet-r4282-1628 | pushed already (done line; commit found on main by target path and time) |
+| session_01MFAY4CPCzwBNzNhqzRzWfV | 10-03 01:26 | GAPS18-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_01LmdD5UFYCKq5aBuYpBwufV | 10-03 01:26 | GAPS-fr4715-vieuville-pool-12 · fr4715-vieuville-pool | pushed already |
+| session_01V5s3LaS1nFec1Qw9D4qv71 | 10-03 01:43 | FT4d-decode-2754-bnf-baluze156-1636 | pushed already |
+| session_01SaR7oa6nf9PaYAHn5pquW6 | 10-03 01:43 | GAPS2-riksarkivet-r4282-1628 · riksarkivet-r4282-1628 | pushed already |
+| session_01Fd8amRmcoEzvCPicX1ph5j | 10-03 01:43 | GF4-BATCH6 · spinelli-beinecke / vanbeuningen-dewitt / wellington-mait | pushed already |
+| session_01MngAKPHvEHbKWcJ67SSETH | 10-03 01:43 | GF4-BATCH5 · fr3151-noailles / matignon-mayenne / rah-morillo premise  | pushed already |
+| session_016RTHK8ZnFD3c2eKVZC2MJk | 10-03 01:44 | CLOSER-25 · archive 6 finished sessions + ledger | pushed already |
+| session_01RWTWnTtGGswmzC1NWhejtF | 10-03 01:44 | GAPS-fr4715-vieuville-pool-13 · fr4715-vieuville-pool | pushed already |
+| session_011GfYtVsJ9UTLB7i6tVrW28 | 10-03 02:01 | CLOSER-26 | pushed already |
+| session_01V9AiBby6iT4VFtb5Ub1nLK | 10-03 02:01 | FT4b-hellen-frederick-1752 | pushed already |
+| session_01PBphGnaMvnnMAF8m18K2ve | 10-03 02:01 | GAPS19-na-suriname-map-1781 · na-suriname-map-1781 | pushed already |
+| session_013RQXUyTcgrdBLjEYtGct2T | 10-03 02:01 | GAPS-matignon-mayenne-1586 | pushed already |
+| session_01JHfQeH2heiyJVdYaCbG3EM | 10-03 02:01 | FT4-fr3151-noailles-1558 | pushed already |
+| session_01QP6qHmbJXQUkinTDoKHUvN | 10-03 02:19 | GAPS-rah-morillo-1817 · rah-morillo-1817 | pushed already |
+| session_01ESLxNFhSPBxeP2zbnTtBbR | 10-03 02:20 | CLOSER-27 · archive 5 finished sessions + ledger | pushed already |
+| session_01B5j4VBpr8Y5xUZUo7FpWVa | 10-03 02:20 | GF4-BATCH7 · sp78-france-1583 / sp81-roe-1638 / sp77-nicholas-1659 che | pushed already |
+| session_01M3iWys2ZAJ6x4swyZ5ARn3 | 10-03 02:20 | FT4-ormond-arran-1678 · ormond-arran-1678 | pushed already |
+| session_01Fr41K1iUFtZsLnvd7NWTrr | 10-03 02:20 | GAPS2-matignon-mayenne-1586 · matignon-mayenne-1586 | pushed already |
+| session_01KgTRimEG6Vy7G9oUvyPvWN | 10-03 02:37 | CLOSER-28 · archive 6 finished sessions + ledger | pushed already |
+| session_01EUhMm8g3nozATtdxA3oE91 | 10-03 02:37 | GF4-BATCH9 · fr3621-dinteville-1592 / fr3993-villeroy-1595 / fr4715-mo | pushed already |
+| session_01Et9gbfKZYbcWhEjMWE5Gyi | 10-03 02:37 | GF4-BATCH8 · sp78-cesy-1628 / sp78-doncaster-1621 / sp87-chesterfield- | pushed already |
+| session_01M7y7vNAbDTJAdPsxPsh6rX | 10-03 02:37 | GAPS2-rah-morillo-1817 · rah-morillo-1817 | pushed already |
+| session_01Hd79tdoSnzZ498waLNZPyo | 10-03 02:37 | GAPS3-matignon-mayenne-1586 · matignon-mayenne-1586 | pushed already |
+| session_01S6cTfbiaCC2yRTZBWjGoRk | 10-03 02:37 | FT4b-ormond-arran-1678 · ormond-arran-1678 | pushed already |
+| session_01RAZN41ahW6HfDFSr5MVWsp | 10-03 02:55 | CLOSER-29 · archive 6 finished sessions + ledger | pushed already |
+| session_01F4pJfKsCqywZiY1tFXZ8ba | 10-03 02:55 | FT4-sp81-roe-1638 · sp81-roe-1638 | pushed already |
+| session_01RLXfKXbQFvQhne8R6B6y6j | 10-03 02:55 | FT4c-ormond-arran-1678 · ormond-arran-1678 | pushed already |
+| session_01K2a9GVd24sbs1o7FmxcWbR | 10-03 02:55 | GF4-BATCH11 · clair571-estrades-1645 / clair1161-avis-flandre-1688 / c | pushed already |
+| session_015GEf6Vn5qSU8aeuABTDYoW | 10-03 02:55 | GF4-BATCH10 · sp87-newcastle-1743 / sp36-stquentin-pretender-1743 / sp | pushed already |
+| session_01HfL7QqeQGuGVaSCTC1LEYm | 10-03 02:55 | CABNOIR-fr4715-vieuville-pool · premise vs Cabinet Noir + montholon NE | pushed already (done line; commit found on main by target path and time) |
+| session_01LHQnJLt5L72sbTM2BXDcgu | 10-03 03:13 | GF4-BATCH12 · sp35-townshend-key-1719 / sp87-brunswick-1759 / sp87-fur | pushed already |
+| session_01F9c6efztGZZjbCMbU5EEJe | 10-03 03:14 | CLOSER-30 | pushed already (its 7 unpushed LEDGER rows recovered by CLOSER-31, f3a6be9b) |
+| session_01NfHKbszTK2DnBQZLDmbiCX | 10-03 03:14 | GAPS20-na-suriname-map-1781 · 2077 reconciliation + decode | pushed already |
+| session_014UDPGZafPM2bLXBNWAJmxg | 10-03 03:14 | GAPS-fr4715-vieuville-pool-14 · key no.71 read | pushed already |
+| session_01FNfwhaPPZcefQBqtEnnD9F | 10-03 03:14 | FT4-clairambault296-paget-1713 · clairambault296-paget-1713 | pushed already |
+| session_014UXd6v98v4xrhPojENV49J | 10-03 03:14 | GF4-BATCH14 · fr2988-ranzo-1520s / fr3022-garbino-1528 / naf14913-rous | pushed already |
+| session_01GaMJqqLRPtn5g8SjyKVjZm | 10-03 03:14 | GF4-BATCH13 · pro3053-horesse-1717 / newcastle-stone-1728 / destaing-g | pushed already |
+| session_01HK3htzZ8Apvzmqp8CgWNiq | 10-03 03:31 | CLOSER-31 · archive 7 + ASKS 49 Paget line | pushed already |
+| session_01NgtTA7EQHMkpjQXwzw9xr8 | 10-03 03:31 | GF4-BATCH16 · gla-claudiamedici-1633 / vanspaen-vandergoes-1808 / arms | pushed already |
+| session_01CakPTXMSsWxjP2ePTUe1V2 | 10-03 03:31 | GF4-BATCH15 · antt-msliv0638-brochado / borssele-heinsius-1714 / heins | pushed already |
+| session_0161wjjZbnEk2Z1rATQrXLeH | 10-03 03:31 | FT4-naf14913-rousseau-venice-1743 · f.205v/f.207r vs f.206 slip | pushed already |
+| session_012YdK5wkNfGi9HdecRB7MEA | 10-03 03:31 | GAPS-fr4715-vieuville-pool-15 · key no.71 re-gate | pushed already |
+| session_01BEDuPYHMtXXCN3V5uuZK22 | 10-03 03:31 | NL18-CORPUS · na-suriname-map-1781 judge | pushed already |
+| session_01KNrXVUi53AMUfVWr4wnxnM | 10-03 03:32 | GF4-BATCH17 · koehler-1944 / rubin-1953 / yogtze-1984 | pushed already |
+| session_011XZ3EjDx4zXfPNDCoxCCJa | 10-03 03:50 | CLOSER-32 · archive 6 finished sessions + ledger | pushed already |
+| session_01Xoypw2vT4XLSLE1rzaNbon | 10-03 03:50 | FT4-vanspaen-vandergoes-1808 · NA 2.01.08 inv. 281 Jan 1808 leaves | pushed already |
+| session_012bKNAT24LcnesWZHDYPhsQ | 10-03 03:50 | FT4-borssele-heinsius-1714 · sibling 970 slip | pushed already |
+| session_01BMhrA752GMdtvaw7ABw7kt | 10-03 03:50 | GF4-BATCH18 · sufi-fiddle / ss-radio-lippert-1944 / rayburn-2004 | pushed already |
+| session_01S1UBpp5jfFePVxwWFiEubo | 10-03 03:50 | GAPS21-na-suriname-map-1781 · settle M signs on 2077 | pushed already |
+| session_01MdnAYXgNnMdA3ofqJhVTLm | 10-03 03:50 | GAPS-fr4715-vieuville-pool-16 · fr.4712 f.7r period pair | pushed already |
+| session_01QUWiwCFMJBXc8AGHaGuiig | 10-03 04:07 | CLOSER-33 · archive 7 finished sessions + ledger | pushed already |
+| session_01CxynsvDPcWZnwJNBCzDshR | 10-03 04:07 | FT4-sp87-brunswick-1759 · calibration siblings | pushed already |
+| session_01PwTqSP1ocJs7h3PELATu2V | 10-03 04:07 | FT4-sufi-fiddle · Bulliet Figure 1 vs our copy | pushed already |
+| session_01RQQTBqpysUQuzWSyU6cftV | 10-03 04:07 | GAPS3-riksarkivet-r4282-1628 · key 4307 p.4 | pushed already |
+| session_01SJGfSBYgkL17kvfkYbVKmu | 10-03 04:07 | GAPS22-na-suriname-map-1781 · rate-matched judge gate | pushed already |
+| session_01ENcVaWBLZuX3Be7t4tcMiY | 10-03 04:07 | FT4b-naf14913-rousseau-venice-1743 · sibling slips image check | pushed already |
+| session_01RfEXbZe3uYACi4ZFKfqx4X | 10-03 04:25 | REDERIVE-SURINAME-2077 · rule 7 fresh re-derivation | pushed already |
+| session_01GmtV8e9evBzauFZuEEEMF5 | 10-03 04:26 | CLOSER-34 · archive 6 finished sessions + ledger | pushed already |
+| session_01Tj4ENd7HeACxRaigZWBWRZ | 10-03 04:26 | FT4b-vanspaen-vandergoes-1808 · inv. 281 remaining scans | pushed already |
+| session_01CF52cLBrVvJzG2FdZiLck7 | 10-03 04:26 | GAPS4-riksarkivet-r4282-1628 · keys 4298/4299 | pushed already |
+| session_01HuWpQsKvdTfgBm1YmARq3Y | 10-03 04:26 | FT4c-naf14913-rousseau-venice-1743 · f.216v + f.217r slip | pushed already |
+| session_01BYjTCqFh7G9RJzNQb2Wr5T | 10-03 04:26 | VERIFY-SURINAME-2077 · novelty verifier | pushed already |
+| session_01TF9sw8Rebr7TgNypxjZt5o | 10-03 04:43 | CLOSER-35 · archive 5 finished sessions + ledger | pushed already |
+| session_01YEwfeVjLwrE1KHZsW1c8ek | 10-03 04:43 | FT4e-maurice-rupert-1645 · unread Osborne lines | pushed already |
+| session_015nipjZbwu6kwmhcfX3Q29f | 10-03 04:43 | FT4-destaing-gerard-1779 · next step | pushed already |
+| session_01J5r5J7GNkJzDwzFS5qaPxX | 10-03 04:43 | FT4-sp54-maclean-1745 · Murray of Broughton crib | pushed already |
+| session_01LjbhGujqAKaNN27HLNbtgC | 10-03 04:43 | FT4c-vanspaen-vandergoes-1808 · DECODE DocumentsList + scans 161-179 | pushed already |
+| session_011LVGbv22EdmgeriAhWtEpj | 10-03 04:43 | GAPS23-na-suriname-map-1781 · 2077 vs 2078 Nota known-plaintext check | pushed already |
+| session_01Fbq82yaPPxMpSHzqFuq1AD | 10-03 05:01 | FT4-antt-msliv0638-brochado-1712 · BL recipient copies request | pushed already |
+| session_01GNWYQgSGLBucCFKdTqAMzu | 10-03 05:01 | FT4b-sp54-maclean-1745 · Lyon in Mourning vol.1 read | pushed already |
+| session_0145DKXxzSCW3sCe3S5obaHL | 10-03 05:01 | FT4-sp87-further-1712 · next step | pushed already |
+| session_01Jp6hgbTAVvmNmoZFuYBGm4 | 10-03 05:01 | FT4d-naf14913-rousseau-venice-1743 · pooled consistency f.206+f.216v | pushed already |
+| session_01UiqkpqT4tUJsDoWchhk7Py | 10-03 05:01 | GAPS24-na-suriname-map-1781 · secondary pairs vs 2078 Nota | pushed already |
+| session_015P3DgsVAFEevUJJ9d4AgwF | 10-03 05:02 | CLOSER-36 · archive 7 finished sessions + ledger | pushed already |
+| session_01HjYaXG2M3siWLbzVfpCPwk | 10-03 05:19 | CLOSER-37 · archive 6 finished sessions + ledger | pushed already |
+| session_01JPWiZMa9wz2jQXbhHwoV17 | 10-03 05:19 | FT4f-maurice-rupert-1645 · BL Add MS 18980-82 route | pushed already |
+| session_01M2UMo3WTZxTDxRexU8u58F | 10-03 05:19 | FT4e-naf14913-rousseau-venice-1743 · f.249v/f.250r pair + pooled 3-pai | pushed already |
+| session_0186iCyYg4gHZgzrSzKmHbsf | 10-03 05:19 | VERIFY2-SURINAME-2077 · re-class after GAPS23/24 | pushed already |
+| session_011mUCfY7R8vtAG69d6fSJik | 10-03 05:37 | account-4 parent 4 | pushed already (clean handover to parent 5, 3 Oct 12:22) |
+| session_01TvA1vyPhZEU5t5HJZhVJRt | 10-03 05:37 | CLOSER-38 · archive 3 finished sessions + ledger | pushed already |
+| session_018BhzSF2qjz5fPKcxrQR95D | 10-03 05:37 | GAPS25-na-suriname-map-1781 · blind d/n/q sign call | pushed already |
+| session_011b1EE1Tw5MMMEcWVaGJkEN | 10-03 05:40 | GAPS28-lodewijk · gap 1 fr16 word-segmentation gate | pushed already |
+| session_01SxgTaS1KRssz5wwg24k4DN | 10-03 05:40 | GAPS27-r4282 · key records 4275/4305 | pushed already |
+| session_019cqKeoZp4z8NSB8mNowdsX | 10-03 05:40 | GAPS26-vanspaen · inv. 281 scans 141-159 | pushed already |
+| session_01DiqsB5RpXnBZ54RfeyJYAj | 10-03 05:57 | GAPS31-lodewijk · align 5810/5811 band tokens to print | pushed already |
+| session_01TdAahZCLexXWQTsRJJMYu1 | 10-03 05:57 | GAPS30-r4282 · key records 4305 pp.2-4 + 4263 | pushed already |
+| session_01XmTddjBCRke8gmMHZb5Xrj | 10-03 05:57 | GAPS29-suriname · blind g/l sign call | pushed already |
+| session_0135ndAnhkwc5pAK8xeeRUap | 10-03 05:57 | FT4g-rousseau · eye check 253/242/66 on f.249 | pushed already |
+| session_0163w5SfBTLQCZNkKA7LxxfF | 10-03 05:57 | CLOSER-39 · archive 5 | pushed already |
+| session_01PKJsvKzWhM8YzK22JxAT5Y | 10-03 06:16 | GAPS35-baluze156 · re-read f.157r vs Sabran sign shapes | pushed already |
+| session_013MY1S3i99xS486kat9Utwi | 10-03 06:16 | GAPS34-vanspaen · inv. 281 scans 1-99 + 137-139 | pushed already |
+| session_01AEU1YNaPgCz1AjhBXsf5fQ | 10-03 06:16 | GAPS33-lodewijk · blind local-window reading 5810/5811 | pushed already |
+| session_016pYw4i7PFEtU6dujyRD558 | 10-03 06:16 | GAPS32-r4282 · 9 remaining sign keys | pushed already |
+| session_01BAiwBJQ32ACy8HD6a9spVX | 10-03 06:16 | VERIFY3-SURINAME · AUDIT item 4 re-class (2077) | pushed already |
+| session_014bAMkDMgepK8cRpM9ZEDnu | 10-03 06:16 | CLOSER-40 · archive 4 | pushed already |
+| session_017akuwqHPMH4TkGxUKC3cGm | 10-03 06:34 | GAPS40-baluze156 · Avenel t.V crib | pushed already |
+| session_01N96wBHtXhxmmiUDNTVXSZW | 10-03 06:34 | GAPS39-lodewijk · 6 dropped band occurrences | pushed already |
+| session_01Amafu9o29xwLDVwanWTX7M | 10-03 06:34 | GAPS38-r4282 · second blind transcription pass | pushed already |
+| session_01BhQJr1263eEdTaYRsSCukD | 10-03 06:34 | GAPS37-suriname · same-hand g/l LOO call | pushed already |
+| session_017Dybqf7EwjVhmvobiijoXm | 10-03 06:34 | FT4h-rousseau · f.273r/274r native view | pushed already |
+| session_01Sp19CNDFr7Zqw1n3414x6W | 10-03 06:34 | GAPS36-vanspaen · match scans 81-82/85 to Bourdeau groups | pushed already |
+| session_019tyA7WY5zG5PVB4zCuiy5F | 10-03 06:34 | CLOSER-41 · archive 7 | pushed already |
+| session_01CA2GdcSEKa8L3efZwk2xp3 | 10-03 06:52 | TOOL-FSG-JPEG · file_shrink_guard binary fix | pushed already |
+| session_012aWo4azTsksmrnhjXPtvM7 | 10-03 06:52 | GAPS43-lodewijk · gap 4 word-level reassignment 4612 | pushed already |
+| session_01W7bJXEb1JsBttVoGMyTYjQ | 10-03 06:52 | GAPS42-r4282 · homophonic family_run, control first | pushed already |
+| session_01JTVsJAGYMAZEiqJdTXbHnr | 10-03 06:52 | FT4i-rousseau · one-edit alignment on infeasible pairs | pushed already |
+| session_015DXpgNcWsKM2vvA8C1ry8w | 10-03 06:52 | GAPS41-vanspaen · scans 1-74 for No 1-3/5 | pushed already |
+| session_01DGVy8Uo5HPSmgB45LpbfzK | 10-03 06:52 | VERIFY4-SURINAME · AUDIT item 4 re-class after g/l | pushed already |
+| session_01RUSjjtbg2zzKnrAkbwn8vH | 10-03 06:52 | CLOSER-42 · archive 7 | pushed already |
+| session_01NCctVq1E7mEgZ94bK3y4kE | 10-03 07:11 | GAPS47-maurice-rupert · Osborne cipher lines | pushed already |
+| session_01BsQq7nvo5UvHHqBUfR6Pks | 10-03 07:11 | GAPS46-baluze156 · spec + homophonic family_run N=139 | pushed already |
+| session_01Ce8QZtq1EjAqJSb5V96PeH | 10-03 07:11 | GAPS45-suriname · n/m call + half-M sensitivity | pushed already |
+| session_01EQivX7QY291F2i1rhhRMmT | 10-03 07:11 | GAPS44-vanspaen · scans 67, 73/74 native for a No 4 crib | pushed already |
+| session_01LmwUP6p24apybnchc1NiBD | 10-03 07:11 | CLOSER-43 · archive 5 | pushed already |
+| session_015n9x51Aepf4kqcFCBbnX5o | 10-03 07:30 | GAPS51-maurice-rupert · while-waiting key scan | pushed already |
+| session_01CgrTV1g4csgckdoaULLJX7 | 10-03 07:30 | TOOL-FR17 · era-matched 17th-c French judge corpus | pushed already |
+| session_014wc8ftKb6BMfmcZAPTQAok | 10-03 07:30 | GAPS50-r4282 · homophonic with nulls, control first | pushed already |
+| session_01S1xT7XA9HerXLyz779Z2Se | 10-03 07:30 | FT4j-rousseau · ff.270-280 sweep + one-edit controls at 60 s | pushed already |
+| session_013zkUCNwTEV6sy8Lx9MGEPM | 10-03 07:30 | GAPS49-suriname · inv.86 scan 0003 M/N row labels | pushed already |
+| session_01Nd6j9yWT7XQouypwS2NvRF | 10-03 07:30 | GAPS48-vanspaen · crib-placement test on No 4 | pushed already |
+| session_01FTEtiakobYcygXR3uKYJhF | 10-03 07:30 | CLOSER-44 · archive 7 | pushed already |
+| session_01TjRc9WoemWDcZTmfE3yRBz | 10-03 07:47 | GAPS55-suriname · M/N row-mark call with visible dots control | pushed already |
+| session_01LCqNhqLsRwz3BrRMqEgTrh | 10-03 07:47 | REJUDGE-FR17 · re-judge 1630s-50s French readings under fr17 | pushed already (done line; commit found on main by target path and time) |
+| session_01PFM17sRFY2oeQtUkiFz75v | 10-03 07:47 | GAPS54-vanspaen · one-part frequency-position test | pushed already |
+| session_01Htbrwv3wV7GaHznYoyXxoX | 10-03 07:47 | GAPS53-r4282 · wordcode family, control first | pushed already |
+| session_014chQDdEM33hPoptNV6tSFo | 10-03 07:47 | GAPS52-maurice-rupert · DECODE 9119/9117 key test | pushed already |
+| session_01U99usUVX3WD4fV5HYQYo2s | 10-03 07:47 | CLOSER-45 · archive 6 | pushed already |
+| session_01UeopRYuUWhaP4Gy7b8ioZm | 10-03 08:06 | GAPS59-bowes · codes_scan.tsv collation (gap 3) | pushed already |
+| session_01JoLDsyYeWF4R3fstFmcwra | 10-03 08:06 | GAPS58-vanspaen · locate dispatch No 1/No 5 | pushed already |
+| session_011NZEi6WiXCaDyxigAAFygg | 10-03 08:06 | GAPS57-r4282 · la17 corpus + re-judge GAPS42 decode | pushed already |
+| session_01D5vAg5B4N9fsUg12GtWxBx | 10-03 08:06 | GAPS56-suriname · n->m logging + 3 [u-dots] grades (script) | pushed already |
+| session_01PbVQ7nE4KRCTv4bRggjPMk | 10-03 08:06 | CLOSER-46 · archive 5 | pushed already |
+| session_011ZhpYc2a51zdQ2McTQxnSe | 10-03 08:23 | SPEC-FR17 · specs + judge for clair1067 and fr5160-letellier | pushed already |
+| session_016gxMfrXnXcMfWB6G7fLzn2 | 10-03 08:23 | GAPS62-r4282 · de17 corpus + homophonic into German | pushed already |
+| session_01QAUwUzbayYBMZyKYYCndGz | 10-03 08:23 | FT4k-rousseau · f249 control g at 60 s + suriname L11:21 knock-on | pushed already |
+| session_01MTRukBxxBgSa8t6rFmZZVk | 10-03 08:23 | GAPS61-vanspaen · NA catalogue pass for a Van Spaen key | pushed already |
+| session_01XiZsLzsLC4uBkV1ou8BdAD | 10-03 08:23 | GAPS60-bowes · AUDIT propagation of 32/000 + CSP Scotland LOCAL-QUEUE  | pushed already |
+| session_01D8wV2iPjoNmExjZU5xiHgB | 10-03 08:23 | CLOSER-47 · archive 7 | pushed already |
+| session_01HEC9PGMgpfj3ibPcxGupWt | 10-03 08:42 | GF4-BATCH20 · gate fix sp53-22-f52, goldbar-1933, eckert-1864 | pushed already |
+| session_01RaUihfdGwJ9PWfgvxSBGaS | 10-03 08:42 | GF4-BATCH19 · gate fix modena-ambung, osiander, vellingk | pushed already |
+| session_01CVKA2m2iMU6w6RcQanuu5s | 10-03 08:42 | VERIFY-BOWES · re-check N-class after 32/000 C grades | pushed already |
+| session_01FcmtVZQAGV7RafHnaELYsr | 10-03 08:42 | GAPS63-vanspaen · DECODE R1033 vs R1941 | pushed already |
+| session_014uFCPCJHMY8xR7FxPVSoYf | 10-03 08:42 | CLOSER-48 · archive 4 | pushed already |
+| session_01Gc5r77m8zx5rkT11H9qXqF | 10-03 08:59 | GF4-BATCH21 · costabili found-solved check + gate fix erba, fair-game, | pushed already |
+| session_01MSJXqFJhcFnBh5hFvb8ToU | 10-03 08:59 | GAPS66-vanspaen · inv. 20 verbaal + inv. 88 minutes, 14-18 Jan 1808 | pushed already |
+| session_016cUbTM2DBS2AZKxgiVMVuJ | 10-03 08:59 | GAPS65-r4282 · homophonic into French (fr17), control first | pushed already |
+| session_01YDAPcPKrhG6U2SSQM7qsg6 | 10-03 08:59 | GAPS64-suriname · L10:66 sigma decision + NEXT-STEPS refresh | pushed already |
+| session_013QxSEKvs6cJcgh2Z2Xingg | 10-03 08:59 | CLOSER-49 · archive 4 | pushed already |
+| session_01V9KyTTxMEm4NP2oCNS8Hzy | 10-03 09:17 | GF4-BATCH22 · thurloe-printed gate + fair-game transcript reconcile | pushed already |
+| session_01RR2RU1N6QZfB1PjMdTtytx | 10-03 09:17 | GAPS68-vieuville | pushed already (stopped by parent STOP 3 Oct 10:12; PREREG3_recon 445beed3 + NOTES 4f716ed3; no reconciled file existed; step re-run as GAPS82) |
+| session_01NCbjPVQ2JsMb73cdKLwVKJ | 10-03 09:17 | FT4l-rousseau · prereg amendment for unresolved control draws | pushed already |
+| session_01TbgZknXaaJvKeMAdECoASu | 10-03 09:17 | GAPS67-r4282 · sv17 corpus + homophonic into Swedish | pushed already |
+| session_01BSgX6QGCVzTZ7p5rDxdkCX | 10-03 09:17 | CLOSER-50 · archive 6 | pushed already |
+| session_011SZxp8QcsjM1bQLUqmTQNC | 10-03 09:35 | GAPS71-fair-game · test 2 on both line orders, control first | pushed already |
+| session_01A1e9BMHgBTno67VppzC6qz | 10-03 09:35 | GAPS70-vanspaen · find reply U.S. 86 via inv. 99 | pushed already |
+| session_01S7PKSoeqeBrdEvVCP1sUoC | 10-03 09:35 | CHECK-GOLDBAR · evaluate Milton Kim decipherment claim | pushed already |
+| session_01TS33zimbLKFS7uNoeXUARk | 10-03 09:35 | GAPS69-r4282 · periodic_masc period 2 on la17, control first | pushed already |
+| session_01KEJqEikkpSeceGp3b6ZwZx | 10-03 09:35 | CLOSER-51 · archive 4 | pushed already |
+| session_01UcR6xYjwc9u45SgJGWZvtD | 10-03 09:53 | CHECK-THURLOE-P4 · Sams 1973 / Clarendon MS 94 lead | pushed already |
+| session_019WSUqZUdoeH1GGej2fpG8k | 10-03 09:53 | GAPS73-r4282 · print step: AOSB ser. II + Camerarius 1628 | pushed already |
+| session_01Pg57cTVwrkb83nbzcJrEXX | 10-03 09:53 | GAPS72-vanspaen · inv. 204A codeur copies | pushed already |
+| session_01D1jboN5c6uCDhh6K68ccA6 | 10-03 09:53 | CLOSER-52 · archive 4 | pushed already |
+| session_01Q7aFcoybYyTFhXrpJLtbmr | 10-03 10:11 | FT4m-rousseau · eye check f.213v L02 group 73 (368) | pushed already |
+| session_01NQ2JCBeP2gjfrGbfqAKtHt | 10-03 10:11 | CLOSER-53 · archive 6 | pushed already |
+| session_016ZrhxGY8ZnVyWptMKtJafT | 10-03 10:12 | GAPS78-willem-van-hessen · 600 dpi render + grid overlay | pushed already |
+| session_01CZZjSn63s5kSXbhGZ5zZpv | 10-03 10:12 | GAPS77-untersberg · Kneissl line-1 interpretation fetch | pushed already |
+| session_01CzpLz8uutxmNTbo5ohamjd | 10-03 10:12 | GAPS76-vanspaen · Verdict step after inv. 204A | pushed already |
+| session_01VoxUNZ6tHa6aRtbBgFMi2A | 10-03 10:12 | GAPS75-r4282 · Riksarkivet online AOSB phrase search | pushed already |
+| session_01E6h9GkREcCZd4ZWuKcCFMD | 10-03 10:30 | GAPS82-vieuville · f.7r image reconciliation (re-run, bounded) | pushed already |
+| session_01GezXndWPUPZXZ3odNaC1vz | 10-03 10:30 | GAPS81-vanspaen · U.S. 86 in inv. 189 | pushed already |
+| session_01KoVhoGQcZcKXUiCa72Jopb | 10-03 10:30 | GAPS80-willem-van-hessen · 1069 p2 lines 4-6 | pushed already |
+| session_017oyjM4pf4zEhWYWMexND5m | 10-03 10:30 | GAPS79-r4282 · DECODE R4284 key-test leaf + second blind pass | pushed already |
+| session_01AzvryxrDXNMyaXDauusJsV | 10-03 10:30 | FT4n-rousseau · f249 controls (decomposition) + pooled gate with g73 d | pushed already |
+| session_01QzVmUYj9jKR3uvoXpiVYno | 10-03 10:30 | CLOSER-54 · archive 7 | pushed already |
+| session_019YFgNa8MwSbhSRw6aDS6dK | 10-03 10:47 | GAPS87-sufi-fiddle · Figure 1 line-crop re-transcription | pushed already |
+| session_012JuDpPQVkTSJvPEDL1MKYh | 10-03 10:47 | GAPS86-willem-van-hessen · target 1127 availability + park | pushed already |
+| session_01Y8juiiyhZPjvuqXA3S7woQ | 10-03 10:47 | GAPS85-r4282 · Verdict step after R4284 pass | pushed already |
+| session_01K9gzcpMBHJSDRvrV6Xr55J | 10-03 10:47 | GAPS84-vanspaen · inv. 261 Goldberg Berlin, else park | pushed already |
+| session_0171dSa6y4au751ugL3uzAvs | 10-03 10:47 | GAPS83-vieuville · G1 known-answer power check (offline) | pushed already |
+| session_01H4MeLKWPQduSQfUsteyVcZ | 10-03 10:47 | CLOSER-55 · archive 5 | pushed already |
+| session_01GcTGUAFotTJjV4AawSpxwN | 10-03 11:05 | CLOSER-56 · archive 7 | pushed already |
+| session_01A8mwscz7fSBkDH4RKFEhCi | 10-03 11:06 | OUT-KHA · draft KHA image request (Hessen 1567) | pushed already |
+| session_01KSoyCDtwyReBJoUgu9wNME | 10-03 11:06 | GAPS90-sufi-fiddle · Tausug word-list match, shuffled-group control | pushed already |
+| session_01Qk6zTfkK59SdYftd3sgCxL | 10-03 11:06 | GAPS89-r4282 · R4284 body sign inventory vs R4282 labels | pushed already |
+| session_01XvQRTv4uD7tQUYWB2sMXm2 | 10-03 11:06 | GAPS88-vieuville · fixed-key scoring of the 22 f.7r runs | pushed already |
+| session_01F2CUyafLZhA7AnuQpdoHb3 | 10-03 11:06 | FT4o-rousseau · what 722=ti forces in f.213 (pin-release scan) | pushed already |
+| session_01R8iQiyS81tEQL4pH6MHtda | 10-03 11:24 | FT4p-rousseau · f.274 slip 300 px sweep + 63/444/664 eye check | pushed already |
+| session_01L9GyjW9Wby6Lt4Xsqfj8a4 | 10-03 11:24 | OUT-CHECK-KHA · gate 7 fact-check of the KHA request draft | pushed already |
+| session_01GEuY5SjbioVyhEy6dbQ2qJ | 10-03 11:24 | GAPS93-sufi-fiddle · Malay and Arabic word-list match | pushed already |
+| session_0189RfWATeCTA1fEVXhu4VoV | 10-03 11:24 | GAPS92-r4282 · R4284 left-page letter-cipher, 2 passes | pushed already |
+| session_01Mr5xcu9ngErbixPha4iWrV | 10-03 11:24 | GAPS91-vieuville · G2 on f.7r marked-code gloss words | pushed already |
+| session_01H6rt3oXm1t2tU8fYZ86bmf | 10-03 11:24 | CLOSER-57 · archive 6 | pushed already |
+| session_01LTVMfKAbmNFAnvL8WiRY3B | 10-03 11:43 | GAPS97-bl-james · NEXT-STEPS row (stale-check first) | pushed already |
+| session_01H8SF3ND9jATskJLYwFyyvc | 10-03 11:43 | GAPS96-vieuville · no.60 f.83r top block vs Tomokiyo no.60 | pushed already |
+| session_01VPfdjWoFG6LbueMGs2SFMZ | 10-03 11:43 | GAPS95-r4282 · close gaps, park on L46/sorter/new material | pushed already |
+| session_018XDnDsTtfiZrG5QdUryi8c | 10-03 11:43 | GAPS94-sufi-fiddle · matched-span dump + blind Jawi/Arabic reading pas | pushed already |
+| session_01X4T3dB2efSMxnYDRgYazV7 | 10-03 11:43 | FT4q-rousseau · 722 polyvalence test + f.265r/f.266r pair transcriptio | pushed already |
+| session_01JinQUhbBtU2aUEgEXXTduU | 10-03 11:43 | CLOSER-58 · archive 6 | pushed already |
+| session_013zEujcxMJes9uuye3rK9cE | 10-03 12:01 | GAPS102-fr3151-seure · NEXT-STEPS row (stale-check first) | pushed already |
+| session_01Ft78MQC9Cyqh3RvKdQygiL | 10-03 12:01 | GAPS101-hza-hohenlohe · NEXT-STEPS row (stale-check first) | pushed already |
+| session_01D6NA91BGWKbZtN6wrwEvUZ | 10-03 12:01 | GAPS100-vieuville · Verdict step after no.60 | pushed already |
+| session_014hKamWaw5QJfxSRHA5AASf | 10-03 12:01 | GAPS99-bl-james · Bodleian Carte/EMLO Ormond counterpart | pushed already |
+| session_01BybUbmikghv7EekoCJcmbG | 10-03 12:01 | GAPS98-sufi-fiddle · blind vision reading of Fig. 1 lines | pushed already |
+| session_012imRqfFtjrnx6wnDbvBPmf | 10-03 12:01 | CLOSER-59 · archive 5 | pushed already |
+| session_0189NttUmNziUZark1Eu5w9L | 10-03 12:20 | GAPS106-florence-dieci · NEXT-STEPS row (stale-check first) | pushed already |
+| session_01RaMSyFvyPxJMtDC1QuhyyD | 10-03 12:20 | GAPS105-heinsius-dopff · NEXT-STEPS row (stale-check first) | pushed already |
+| session_011aHfgshfbZY5He4V8wbBpN | 10-03 12:20 | GAPS104-sufi-fiddle · Verdict step or park | pushed already |
+| session_01CZpBL6JTqkEnM2QNjwtvFC | 10-03 12:20 | GAPS103-hza-hohenlohe · LABW sibling Chiffre sweep + copy-order ASKS r | pushed already |
+| session_01JLG8DXrVABbyhWs59rk6FZ | 10-03 12:20 | FT4r-rousseau · f.265r/f.266r pair gate, 722=i vs ti | pushed already |
+| session_01A5bShTiEAYw226oq9MWSpV | 10-03 12:20 | CLOSER-60 · archive 7 | pushed already |
+| session_016VEn6Zrx768GbS6vBAQ79d | 10-03 12:21 | account-4 parent 5 | pushed already (clean handover to parent 6, 3 Oct 18:23) |
+| session_01KzNcHCQCz8VtsiehwqUQGg | 10-03 12:41 | GAPS111 · sp8-ehrenstein-1689 | pushed already |
+| session_01U8LHM7QsCA8oJ8D3U8iURE | 10-03 12:41 | GAPS110 · eckert-1862 | pushed already |
+| session_016oFeTRVacc9hHtERrVg9xG | 10-03 12:41 | GAPS109 · rumpf-vandebie-heinsius-1716-19 | pushed already (done line; commit found on main by target path and time) |
+| session_019qu2NJzyxRAVUe2scsnXjf | 10-03 12:41 | GAPS108 · florence-dieci-responsive | pushed already |
+| session_01Sovmmr91mpt1fpsPhgVmKm | 10-03 12:41 | GAPS107 · heinsius-dopff-1702 | pushed already |
+| session_01Gz4XiWtVyL6dArf8Mnj8uH | 10-03 12:41 | FT4s · naf14913-rousseau-venice-1743 | pushed already |
+| session_01TVG964kJ1jmZaj5oW2X35L | 10-03 12:41 | CLOSER-61 · archive 7 | pushed already |
+| session_01NMgeJuSomncyhSeLfdj2i9 | 10-03 12:58 | GAPS116 · stas-waldburg-1653 | pushed already |
+| session_01UpsL7dHuZ3h7xh1d9tCb1f | 10-03 12:58 | GAPS115 · rumpf-vandebie-heinsius-1716-19 | pushed already |
+| session_018o5Yoh9hrYKsQAaCHewwPr | 10-03 12:58 | GAPS114 · sp8-ehrenstein-1689 | pushed already |
+| session_018YiydiYM3WMkKBDgWzFnTG | 10-03 12:58 | GAPS113 · eckert-1862 | pushed already |
+| session_011Pnfx51SDxEoPcdT3K8xVJ | 10-03 12:58 | GAPS112 · florence-dieci-responsive | pushed already |
+| session_01M5nd2NqxRdEhbCbQB3C71f | 10-03 12:58 | FT4t · naf14913-rousseau-venice-1743 | pushed already |
+| session_01CqzSkdWr6mxT3mckummqsb | 10-03 12:58 | CLOSER-62 · archive 7 | pushed already |
+| session_01Tc8dduKJkx7hfyLJkvAqCe | 10-03 13:16 | GAPS121 · stas-waldburg-1653 | pushed already |
+| session_01NoWwvYgMgSYDXrfroZiBTK | 10-03 13:16 | GAPS120 · rumpf-vandebie-heinsius-1716-19 | pushed already |
+| session_01UXK58rJSTPC6diZgUTVW1T | 10-03 13:16 | GAPS119 · sp8-ehrenstein-1689 | pushed already |
+| session_01TuWFPJpmw5yJdyaNhmuPeq | 10-03 13:16 | GAPS118 · eckert-1862 | pushed already |
+| session_01PBnD31pyCLmx8FVY2Txz8t | 10-03 13:16 | GAPS117 · florence-dieci-responsive | pushed already |
+| session_011kppuZaxmFhTdBhXYSpAHM | 10-03 13:16 | FT4u · naf14913-rousseau-venice-1743 | pushed already |
+| session_01Jf2hT64b8BQuG2GMoLvotA | 10-03 13:16 | CLOSER-63 · archive 7 | pushed already |
+| session_01CohbDi1Evq5AxXCTnxF3dH | 10-03 13:34 | GAPS126 · sp81-stanning-1631 | pushed already |
+| session_013ZuSgr8SBmLowVmWBK5TLU | 10-03 13:34 | GAPS125 · nla-heinrich-braunschweig-1519 | pushed already |
+| session_01Am7cVf3zsdJRERnbYGoykY | 10-03 13:34 | GAPS124 · ula-degeer-1644 | pushed already |
+| session_01GqzqNuix95NE7Q6ppR1QDi | 10-03 13:34 | GAPS123 · sp8-ehrenstein-1689 | pushed already |
+| session_01X7YSLJgb8fKrLDhtcmPaZb | 10-03 13:34 | GAPS122 · eckert-1862 | pushed already |
+| session_01DK7T5NRXp8WYvpHSSpi4d4 | 10-03 13:34 | FT4v · naf14913-rousseau-venice-1743 | pushed already |
+| session_01M19X9jkwjTSDKFDgvNDfhT | 10-03 13:34 | CLOSER-64 · archive 7 | pushed already |
+| session_01T1THCfFn2DiyaYNctsinsW | 10-03 13:53 | GAPS131 · mlh-1976 | pushed already |
+| session_01UGjRpmDLJvn8sf1MCJrHu2 | 10-03 13:53 | GAPS130 · sp81-stanning-1631 | pushed already |
+| session_01WaCvGXf53Y7vfgQBDN8HBC | 10-03 13:53 | GAPS129 · nla-heinrich-braunschweig-1519 | pushed already |
+| session_01GdgetupJgdWEHn2MvqoMWP | 10-03 13:53 | GAPS128 · ula-degeer-1644 | pushed already |
+| session_01Grzg5wXg2wNK5ESD4ZcV2y | 10-03 13:53 | GAPS127 · eckert-1862 | pushed already |
+| session_01TSFL2PErYWYpXmoK9qKQsQ | 10-03 13:53 | FT4w · naf14913-rousseau-venice-1743 | pushed already |
+| session_01NNWbVniTkewXzwaGF31QvC | 10-03 13:53 | CLOSER-65 · archive 7 | pushed already |
+| session_01FYNMqXQtxVuvhNQygKkbFY | 10-03 14:11 | GAPS136 · decode-1411-hhsta-vienna-1600 | pushed already |
+| session_01KTvqxJWTAE7TsyQv6uAKVp | 10-03 14:11 | GAPS135 · mlh-1976 | pushed already |
+| session_01KqJG1WB7VraNebYuyuAgpB | 10-03 14:11 | GAPS134 · sp81-stanning-1631 | pushed already |
+| session_01JHf3tQ2aCsdKq2i88MTSW2 | 10-03 14:11 | GAPS133 · nla-heinrich-braunschweig-1519 | pushed already |
+| session_01DcW18zGvRSbKDVuHhieSBr | 10-03 14:11 | GAPS132 · eckert-1862 | pushed already |
+| session_01A6C4wLTd8zgL8yTJYsCsr2 | 10-03 14:11 | CLOSER-66 · archive 6 | pushed already |
+| session_01CSPdYPJ4QdmvkKvSAPgLJX | 10-03 14:28 | GAPS140 · eckert-1862 | pushed already |
+| session_0166rtnr9hQZpVxuSBziB7SB | 10-03 14:28 | TOOL-NS1 · next_steps.py follow-up parse | pushed already |
+| session_01Mz9542zAfAH5oKZq29wPR7 | 10-03 14:28 | GAPS139 · sp81-stanning-1631 | pushed already |
+| session_01CgNG86cLcpvZaMwk4SydKX | 10-03 14:28 | GAPS138 · mlh-1976 | pushed already |
+| session_01JYtUuddq8mGCVpvKNPcqfc | 10-03 14:28 | GAPS137 · decode-1411-hhsta-vienna-1600 | pushed already |
+| session_01SNK673p3cd7P9uPZDeyPYn | 10-03 14:28 | CLOSER-67 · archive 5 | pushed already |
+| session_01CF7x1nY2jNZWRvBTCQzW9D | 10-03 14:47 | GAPS145 · la-garde-1577 | pushed already |
+| session_01D9dpJnSdmQSWsZ7494e9W6 | 10-03 14:47 | GAPS144 · thurloe-printed | pushed already |
+| session_01Hpa55sE6q5HEKCLr4tLFsv | 10-03 14:47 | GAPS143 · sp81-stanning-1631 | pushed already |
+| session_0112SCrpWpmA8br2stnQeA98 | 10-03 14:47 | GAPS142 · eckert-1862 | pushed already |
+| session_01Scz3uJCm7dU6w8EbaRQRAQ | 10-03 14:47 | GAPS141 · decode-1411-hhsta-vienna-1600 | pushed already |
+| session_01418CNNWgAiTSCWpCDwHpsP | 10-03 14:47 | CLOSER-68 · archive 7 | pushed already |
+| session_01JssYFKC9Av3qkA1GLKzhTG | 10-03 15:04 | TOOL-NS2 · next_steps.py Verdict precedence | pushed already |
+| session_01HWtgpHxxSjGiXniduiAr3e | 10-03 15:04 | GAPS149 · la-garde-1577 | pushed already |
+| session_01Rj2mWJTa5tXvGQF5wXqV8d | 10-03 15:04 | GAPS148 · thurloe-printed | pushed already |
+| session_01QvYymnHnXY7HpGj1DVaiSg | 10-03 15:04 | GAPS147 · eckert-1862 | pushed already |
+| session_01MGsFFvcU99qZL8LGWZ1aSX | 10-03 15:04 | GAPS146 · decode-1411-hhsta-vienna-1600 | pushed already |
+| session_017QmZraNQV3MnR55JCGvred | 10-03 15:04 | CLOSER-69 · archive 6 | pushed already |
+| session_01YCXpfheXuP95PFWs8ZuxZF | 10-03 15:22 | GAPS152 · hessen-daenemark-1672 | pushed already |
+| session_01KNn6oLJdHKoFzQqSmn4cHq | 10-03 15:22 | GAPS151 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01EQT6BEmKZg1i2NUvcqX8qM | 10-03 15:22 | GAPS150 · decode-1411-hhsta-vienna-1600 | pushed already |
+| session_01AS3GsCtsKrP2ceU3wAgzzg | 10-03 15:22 | CLOSER-70 · archive 4 | pushed already |
+| session_01SbPKmcTBSf5ed4wNfGFfPH | 10-03 15:39 | GAPS156 · pollaky-1865-1875 | pushed already |
+| session_01RuckvXDLM6dw6F1mm55tFG | 10-03 15:39 | GAPS155 · hessen-daenemark-1672 | pushed already |
+| session_01KhN5dnxj1bP5nN18zQY4wD | 10-03 15:39 | GAPS154 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_015jWnCKoBPEtq3gBrv3ro1Q | 10-03 15:39 | CORP-DE16 · decode-1411 era corpus | pushed already |
+| session_01Rr8565endJx7hd3Xw2swUM | 10-03 15:39 | GAPS153 · eckert-1862 | pushed already |
+| session_015FoRdf1QaBEYu8QUq5ALmk | 10-03 15:39 | CLOSER-71 · archive 6 | pushed already |
+| session_01D6oQApiZB9oW6n84X1jGr2 | 10-03 15:57 | GAPS160 · pollaky-1865-1875 | pushed already |
+| session_01XmmjpNA7NAKmKhPqit8eER | 10-03 15:57 | GAPS159 · hessen-daenemark-1672 | pushed already |
+| session_014kS6Z83rWgpUrLud8YeCGL | 10-03 15:57 | GAPS158 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01F85jY4pb2xYUuWMXkA5h1d | 10-03 15:57 | GAPS157 · decode-1411-hhsta-vienna-1600 | pushed already |
+| session_01PpfwCjBD9W1LD4PStFHzJd | 10-03 15:57 | FT4x · naf14913-rousseau-venice-1743 | pushed already |
+| session_013WdJr7V15PuNaB1GSmC7st | 10-03 15:57 | CLOSER-72 · archive 6 | pushed already |
+| session_017pTyYL3sjVXKBzr9NEeFWM | 10-03 16:15 | GAPS165 · sp54-maclean-1745 | pushed already |
+| session_01JVSd9MfiCmmZttkegC3Mtz | 10-03 16:15 | GAPS164 · pollaky-1865-1875 | pushed already |
+| session_01XrZrPTu1UGfMSwwy1J8wu7 | 10-03 16:15 | GAPS163 · hessen-daenemark-1672 | pushed already |
+| session_01RrwmH3WRJdG6bpK1qXbdEE | 10-03 16:15 | GAPS162 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_018LhKmkq4qmACjTqWEBxoUC | 10-03 16:15 | GAPS161 · eckert-1862 | pushed already |
+| session_01Fj2hLjEior5STYeQqUgWgZ | 10-03 16:15 | FT4y · naf14913-rousseau-venice-1743 | pushed already |
+| session_01XtFAuCDE4n8QsKWCN79Toz | 10-03 16:15 | CLOSER-73 · archive 7 | pushed already |
+| session_01Wd9y9ADLyAH1fX6GQAFYAR | 10-03 16:33 | GAPS170 · sp54-maclean-1745 | pushed already |
+| session_01DYBm1xTRGh6vo7kuZQyTLF | 10-03 16:33 | GAPS169 · pollaky-1865-1875 | pushed already |
+| session_01GvohHWodpZQE5137wZ5JU9 | 10-03 16:33 | GAPS168 · hessen-daenemark-1672 | pushed already |
+| session_01PMG3Ls6ujipcEZq2Msi9hR | 10-03 16:33 | GAPS167 · eckert-1862 | pushed already |
+| session_01BgU5GiS1TZNktX6ixeFCy7 | 10-03 16:33 | FT4z · naf14913-rousseau-venice-1743 | pushed already |
+| session_01XA5m1rGFGRHkbp6e5JfT8m | 10-03 16:33 | GAPS166 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01YEiJvNyZBoipj8ThqQvJzK | 10-03 16:33 | CLOSER-74 · archive 7 | pushed already |
+| session_017Xkq2QWSFU3PBY8AajD8QG | 10-03 16:51 | GAPS172 · pollaky-1865-1875 | pushed already |
+| session_011fnYQrQCtQi8fm4u474yDr | 10-03 16:51 | GAPS171 · eckert-1862 | pushed already |
+| session_01WA5oCzyWDvQnaRUKJk6Heo | 10-03 16:51 | CLOSER-75 · archive 7 | pushed already |
+| session_01Rfzy4RoYMMvRhsknpafAJv | 10-03 16:51 | VERIFY-ROU121 · naf14913-rousseau-venice-1743 | pushed already |
+| session_01YZ1Zd1TTRL9W2sVKEgqK5S | 10-03 16:51 | VERIFY-HDK · hessen-daenemark-1672 | pushed already |
+| session_01QEFC48ZPcm2VWWJTbQ9Yo3 | 10-03 16:51 | VERIFY-MANT · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01LWA94dHw3CfJvZjnbMqG7m | 10-03 16:52 | GAPS173 · zeschau-seebach-1841 | pushed already |
+| session_01MnvPNokrNJKebp9cBoBMpd | 10-03 17:10 | DONE account-4 worker GAPS176 · hessen-daenemark-1672 | pushed already |
+| session_01XSqe3egrcoPRUPwtUze3cM | 10-03 17:10 | DONE account-4 worker CLOSER-76 · archive 7 | pushed already |
+| session_011UZhRfgmeJ8wAf9HHE7gHg | 10-03 17:10 | DONE account-4 worker GAPS175 · zeschau-seebach-1841 | pushed already |
+| session_01Bm5Ww44fuXRoDDTTgf43N9 | 10-03 17:10 | DONE account-4 worker GAPS174 · pollaky-1865-1875 | pushed already |
+| session_01Tr8v94Pj3BWKv2er9Zkfid | 10-03 17:10 | DONE account-4 worker FT4aa · naf14913-rousseau-venice-1743 | pushed already |
+| session_011S2v55CqnkiMnALPzJGgiL | 10-03 17:10 | VERIFY-ECK · eckert-1862 | pushed already |
+| session_01HAccv517iJADsD6wVYebHR | 10-03 17:10 | DONE account-4 worker AUDIT2-MANT · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01NtRWsZSuM2RXoVTcLxgZRZ | 10-03 17:28 | CLOSER-77 · archive 6 | pushed already |
+| session_01Rdsm7mcV8Zx3xJKpg1YzvJ | 10-03 17:28 | GAPS179 · zeschau-seebach-1841 | pushed already |
+| session_017jFjRBhwsfv4Kvny7abc8e | 10-03 17:28 | GAPS178 · pollaky-1865-1875 | pushed already |
+| session_01Fi59iDmdfVNeZ6xSWEgY48 | 10-03 17:28 | FT4ab · naf14913-rousseau-venice-1743 | pushed already |
+| session_01NCc6fyq4RsnxEhJqmovfsC | 10-03 17:28 | GAPS177 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01EQwnJCZQnNR3BhoP2fshF1 | 10-03 17:29 | RESULT-MANT · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01731rL7jV7m7HhvxYEHR5Y4 | 10-03 17:46 | CLOSER-78 · archive 7 | pushed already |
+| session_019mdZ2EoYy8Qstjq1Gc4aJy | 10-03 17:46 | GAPS183 · censorship-manual-stego | pushed already |
+| session_012w8EWZ3nLYUQS2LBMY4GUe | 10-03 17:46 | GAPS182 · pollaky-1865-1875 | pushed already |
+| session_01Y4bA8WRhCEHbiJHdA5LXKS | 10-03 17:46 | GAPS181 · eckert-1862 | pushed already |
+| session_01HPbKHehFSM2mw6u6QD3qyz | 10-03 17:46 | CHECK-ZESCHAU · zeschau-seebach-1841 | pushed already |
+| session_011fqyFuptz1HU8FPGLU144R | 10-03 17:46 | FT4ac · naf14913-rousseau-venice-1743 | pushed already |
+| session_017LF8dwPUYtduAMVWipcdpE | 10-03 17:46 | GAPS180 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01Cub2NHdgeggnYueiVkzw37 | 10-03 18:03 | GAPS184 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_014ABGtKqPzjEd7vyf4vZGQE | 10-03 18:04 | GAPS188 · hessen-daenemark-1672 | pushed already |
+| session_01QH2SHQ2Yv3jL5N4J51BqJb | 10-03 18:04 | CLOSER-79 · archive 7 | pushed already |
+| session_01EASq5JTyCUNR2aBiHFW2Ad | 10-03 18:04 | GAPS187 · eckert-1862 | pushed already |
+| session_016nNYiB65NKFwoimiNRaChS | 10-03 18:04 | GAPS186 · rah-morillo-1817 | pushed already |
+| session_01TvvM4RhqG2BiHNGz4Gnk1Q | 10-03 18:04 | GAPS185 · zeschau-seebach-1841 | pushed already |
+| session_01LzaKgVNjg9NAqpfvJoawdk | 10-03 18:04 | FT4ad · naf14913-rousseau-venice-1743 | pushed already |
+| session_01Ej9jXvrv3VSTXJyxZyDHwX | 10-03 18:21 | CLOSER-80 · archive 7 | pushed already |
+| session_01XBtLik7jAiCgRHwf7YpUJf | 10-03 18:21 | GAPS192 · rah-morillo-1817 | pushed already |
+| session_012jH5MA6DHQHH5aSMUHdhK3 | 10-03 18:21 | GAPS191 · eckert-1862 | pushed already |
+| session_012TeCdLWtvfpi2vgUDQXhrY | 10-03 18:21 | GAPS190 · zeschau-seebach-1841 | pushed already |
+| session_01Dctw8NqeidphuHJQydX178 | 10-03 18:21 | GAPS189 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_01R7QqXBh1GmrfFWERrnuerT | 10-03 18:22 | account-4 parent 6 | pushed now (check-in 92 closed 5 Oct 22:22: STATUS 1ac2d80f, ROOM c1337be6; spawned nothing) |
+| session_016PWfNQ7NmokYwjxvzctMMD | 10-03 18:24 | GAPS193 · hessen-daenemark-1672 | pushed already |
+| session_01SyxhtVV8XGci2X9iX5fCqV | 10-03 18:25 | GAPS194 · pollaky-1865-1875 | pushed already |
+| session_01VwEou9JF2goXt1XFf8vgTf | 10-03 18:43 | CLOSER-81 | pushed already |
+| session_01WofNVuHqE6S4dPBYWHcEdT | 10-03 18:43 | GAPS200 · pollaky-1865-1875 | pushed already |
+| session_01BQwqAE3pds6Zz5tyzxR5Ej | 10-03 18:43 | GAPS199 · hessen-daenemark-1672 | pushed already |
+| session_01QjSrxeEuhub5xvhL2kocLb | 10-03 18:43 | GAPS198 · rah-morillo-1817 | pushed already |
+| session_01SGng7VMqVoZWA3chjf2n3g | 10-03 18:43 | GAPS197 · eckert-1862 | pushed already |
+| session_01Xys9DxrtX66YnqF3chWhMg | 10-03 18:43 | GAPS196 · zeschau-seebach-1841 | pushed already |
+| session_016wRGQHsNx1PCgTKJUTYzVy | 10-03 18:43 | GAPS195 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_017d1ztGZsswFrvsnFAeAEGz | 10-03 19:00 | CLOSER-82 | pushed already |
+| session_01322djnYWh9X1ax86R76iB1 | 10-03 19:00 | GAPS205 · pollaky-1865-1875 gap 3 | pushed already |
+| session_016TfTuknRRR4JUDDuZrT43T | 10-03 19:00 | GAPS204 · naf14913-rousseau-venice-1743 | pushed already |
+| session_01AH98J8gdpuQPASWxxxf8HR | 10-03 19:00 | GAPS203 · rah-morillo-1817 | pushed already |
+| session_01FWKiCZZ3VxNBFykKQbQ96E | 10-03 19:00 | GAPS202 · zeschau-seebach-1841 | pushed already |
+| session_01H5fVvEBMvgSUBgmqhFt2Kq | 10-03 19:00 | GAPS201 · sachsstaatsarchiv-manteuffel-1712 | pushed already |
+| session_015gHJKiJ682LM48LmmmksuV | 10-03 19:17 | CLOSER-83 | pushed now (finished 5 Oct 22:23 after message: 7 archived, LEDGER 96f3dba1, ROOM 34b505ff) |
+| session_018N2ZyRZanaouyqsZDeM3Aj | 10-03 19:17 | GAPS211 · pollaky-1865-1875 | nothing to recover (cut off by the weekly limit 3 Oct 19:19 two minutes after its claim; job re-run and pushed by STALE4, account 1, 4 Oct) |
+| session_013YGVi4LZ1a4LWFF8DM3dtq | 10-03 19:17 | GAPS210 · naf14913-rousseau-venice-1743 | nothing to recover (cut off by the weekly limit 3 Oct 19:19 two minutes after its claim; job re-run and pushed by STALE4, account 1, 4 Oct) |
+| session_01HXzSzg6j4q2H9ZsJwngVbR | 10-03 19:17 | GAPS209 · rah-morillo-1817 | nothing to recover (cut off by the weekly limit 3 Oct 19:19 two minutes after its claim; job re-run and pushed by STALE4, account 1, 4 Oct) |
+| session_01J95PxEVtw7dcZaG7BNRsYz | 10-03 19:17 | GAPS208 · zeschau-seebach-1841 | nothing to recover (cut off by the weekly limit 3 Oct 19:19 two minutes after its claim; job re-run and pushed by STALE4, account 1, 4 Oct) |
+| session_0178suzKmAf8Sb4KYbZCUqmh | 10-03 19:17 | GAPS207 · sachsstaatsarchiv-manteuffel-1712 | nothing to recover (cut off by the weekly limit 3 Oct 19:19 two minutes after its claim; job re-run and pushed by STALE4, account 1, 4 Oct) |
+| session_01UWoR8gowBkKdPnXjxqxQGD | 10-03 19:17 | GAPS206 · eckert-1862 | nothing to recover (cut off by the weekly limit 3 Oct 19:19 two minutes after its claim; job re-run and pushed by STALE4, account 1, 4 Oct) |
+| session_01PpZtGZsbseHrXViC8rzExA | 10-05 22:13 | this session | n/a (live) |
+
+</details>
+
 ## Parent handoff (account-4, session_01SEzoee67SivPooFpTkxMme), from 1 Oct 2026 23:25 UTC, kept current
 
 New account joined 1 Oct 2026 23:25 UTC (clock read), depth 0 (created from the UI). Role field `account-4 parent`;
