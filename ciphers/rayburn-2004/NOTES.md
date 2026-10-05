@@ -89,3 +89,49 @@ $ python3 tools/next_steps.py --wait-only | grep rayburn-2004
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: compare the earliest Wayback capture of the Schneier post (Jan-Feb 2006) with images/Rayburn-Cryptogram.jpg for differences in the whited-out areas and mark the tokens that border a white-out in ciphertext.tsv, before test 2, ~$0.5. Who acts: agent. Source: this file's "## While waiting (GF4-BATCH18)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Copy condition: earliest image vs ours, white-out map (D2B-RAY, account 2, 5 Oct 2026)
+
+Wayback route blocked this session: `web.archive.org/cdx` reset the connection twice (one retry after a 5 s pause) and
+`archive.org/wayback/available` answered HTTP 429; host stopped per the good-citizen rule, no capture fetched.
+Fallback that answers the same question: the live post (schneier.com, 1 request, HTTP 200) embeds
+`wp-content/uploads/2006/01/cryptogram1-450px.jpg` and links `.../2006/01/cryptogram1-850px.jpg` -- the files uploaded
+with the 30 Jan 2006 post (upload path 2006/01; server Last-Modified 24 Jan 2020, a site migration). The 850px file
+(1 request, 240,374 bytes) is **byte-identical** to images/Rayburn-Cryptogram.jpg (SHA-1 93e1f92a...a923436 both): our
+scienceblogs.de copy (2013 path) is Schneier's own 2006 file, unchanged, so no white-out area differs between the
+2006 publication and our image. Not checked: whether Schneier's 2006 file differs from the family friend's emailed
+original (not public); a 2006 Wayback capture of the post (blocked today); the derivative enhanced image a commenter
+linked (bitculture.org `cryptogram1-850px_dhc.jpg`, not fetched -- a processed copy, not a source).
+Source fact from the post body, not previously in this folder: "The rectangle drawn over the top two lines was not done
+by the murderer. It was done by a family member afterwards." So the enclosure around main rows 1-2 is a later addition,
+like the white-out and the folds (Premise check (c)); it carries no information about the writer.
+
+White-out map (`python3 whiteout_map.py`, threshold 253 against a paper median of 247, then one look at the contrast
+stretch): seven flat, sharp-edged pure-white patches, all in the outer margins, outboard of the two margin columns --
+four on the left (beside left-margin rows 2, 4, 6, 8: `pct(%)`, `4/h7?`, `d-loop?`, `K*`) and three on the right (beside
+right-margin rows 2, 3, 6: `amp(&)`, `hash(#)`, `H-hash?`). Other components the script lists are the paper's bottom
+edge (y > 730), the horizontal fold crease (y ~ 330-360) and one soft lighter area at x 703-738 (paper texture, no sharp
+edge); none sits beside a main-grid token. Per-token flags in `copy_condition.tsv` (sidecar, because
+specs/cheap-tests/rayburn-2004/transcribe.py rewrites ciphertext.tsv): 7 of 74 tokens border a white-out, all margin
+tokens; 0 of 58 main-grid tokens. Reading: what the friends wrote (per the friend's own comment) was in the side margins
+next to the margin symbols, alternating rows on the left, so the margin columns may have carried more marks (or glosses)
+than the 16 transcribed; the main grid is untouched by white-out. Also seen, not in the transcription: a small vertical
+handwritten word beside right-margin row 2 (`amp(&)`), looks like "Approved"/"Appeared" -- either the writer's or a
+friend's; a second blind pass should decide whether it is a cipher token.
+Requests: web.archive.org 2 (both reset), archive.org 1 (429), www.schneier.com 2 (page, 850px image), all >= 2 s apart.
+
+## Remaining gaps (D2B-RAY, 5 Oct 2026)
+Read so far: nothing read; 74 tokens transcribed in one blind pass (bRAY); copy condition mapped (7 margin tokens border white-out, 0 main-grid tokens).
+- 2006 Wayback capture of the post and image - blocker: not-attempted; web.archive.org reset / archive.org 429 on 5 Oct 2026, low value now that the 2006 upload matches our file byte for byte; next: one retry from a later session, ~$0.2
+- Second blind transcription pass (K=59 unsettled; vertical word beside right-margin row 2 not classed) - blocker: not-attempted; K and the margin word need an independent eye; next: one crop-scoped blind pass + reconciliation, ~$1.5
+- Tests 2 and 3 of specs/rayburn-2004.json (diagram layout; matched homophonic/keyboard judge with control) - blocker: not-attempted; waits on the second pass settling K; next: test 2, ~$1
+
+## Escalation (D2B-RAY, 5 Oct 2026)
+- [x] siblings: none; a single sheet, original with the family/police (Premise check)
+- [x] clear-pages: none; the suicide note's text is quoted in the Schneier thread and gives no crib
+- [x] known-keys: none exists; no decipherment located (Verdict, 3 Oct 2026)
+- [x] print: Schneier thread, Bauer snippet, Cipherbrain, blogs, solver repos (GF4-BATCH18)
+- [ ] key-rebuild: not applicable until tests 2-3 say whether there is a substitution to rebuild
+- [ ] image-check: done 5 Oct 2026 (copy condition, this file); not done: second blind pass
+- [ ] retry: Wayback capture, once, later session
+Verdict: keep going: 3 internal gaps; cheapest next: Wayback retry ~$0.2, then second blind transcription pass ~$1.5, then test 2 ~$1

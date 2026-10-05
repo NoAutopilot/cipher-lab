@@ -1,0 +1,75 @@
+idx	group	row	type_id	whiteout_adjacent	patch_x0-x1,y0-y1_px
+1	main	1	W	no	
+2	main	1	j	no	
+3	main	1	u	no	
+4	main	1	P	no	
+5	main	1	D	no	
+6	main	2	a	no	
+7	main	2	X	no	
+8	main	2	o	no	
+9	main	2	R	no	
+10	main	2	w	no	
+11	main	2	i	no	
+12	main	2	s	no	
+13	main	3	M	no	
+14	main	3	rn?	no	
+15	main	3	g	no	
+16	main	4	H	no	
+17	main	4	k	no	
+18	main	4	e	no	
+19	main	4	I-bold	no	
+20	main	4	B	no	
+21	main	4	f	no	
+22	main	4	e	no	
+23	main	5	X	no	
+24	main	5	L?	no	
+25	main	5	o	no	
+26	main	5	y/x?	no	
+27	main	5	u	no	
+28	main	5	I-bold2	no	
+29	main	6	w	no	
+30	main	6	A	no	
+31	main	6	z	no	
+32	main	6	Q	no	
+33	main	6	Y	no	
+34	main	7	b	no	
+35	main	7	U	no	
+36	main	7	kr?	no	
+37	main	7	cross/t?	no	
+38	main	7	P	no	
+39	main	7	s	no	
+40	main	7	q	no	
+41	main	8	Am?	no	
+42	main	8	c	no	
+43	main	8	Z	no	
+44	main	8	i	no	
+45	main	8	Y	no	
+46	main	8	Z	no	
+47	main	8	D	no	
+48	main	9	RH?	no	
+49	main	9	V	no	
+50	main	9	h	no	
+51	main	10	E	no	
+52	main	10	f	no	
+53	main	10	b	no	
+54	main	10	d	no	
+55	main	10	av?	no	
+56	main	10	a	no	
+57	main	10	r	no	
+58	main	10	O	no	
+59	left-margin	1	p	no	
+60	left-margin	2	pct(%)	yes	L 3-43,165-198 (outboard, left of token)
+61	left-margin	3	K	no	
+62	left-margin	4	4/h7?	yes	L 0-47,302-348 (outboard)
+63	left-margin	5	p-loop?	no	
+64	left-margin	6	d-loop?	yes	L 17-61,463-498 (outboard, abuts loop)
+65	left-margin	7	Y-tail?	no	
+66	left-margin	8	K*	yes	L 25-73,642-672 (outboard, abuts asterisk)
+67	right-margin	1	X-cross?	no	
+68	right-margin	2	amp(&)	yes	R 790-822,149-193 (outboard)
+69	right-margin	3	hash(#)	yes	R 789-829,235-261 (outboard)
+70	right-margin	4	N?	no	
+71	right-margin	5	K	no	
+72	right-margin	6	H-hash?	yes	R 805-847,490-514 (outboard)
+73	right-margin	7	3	no	
+74	right-margin	8	dot-?	no	

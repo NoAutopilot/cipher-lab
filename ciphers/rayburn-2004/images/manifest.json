@@ -8,7 +8,8 @@
       "size_bytes": 240374,
       "sha1": "93e1f92a74470b2cc03370647f32cb3bca923436",
       "dimensions": "850x822",
-      "fetch_method": "curl, browser User-Agent, 1 request, HTTP 200"
+      "fetch_method": "curl, browser User-Agent, 1 request, HTTP 200",
+      "provenance_check": "D2B-RAY 5 Oct 2026: byte-identical (SHA-1) to https://www.schneier.com/wp-content/uploads/2006/01/cryptogram1-850px.jpg, the file uploaded with Schneier's 30 Jan 2006 post"
     }
   ],
   "derived": [
@@ -16,6 +17,11 @@
       "file": "grid_overlay.png",
       "made_by": "specs/cheap-tests/rayburn-2004/transcribe.py's coordinate work (a one-off script call, not committed -- the overlay itself is kept as the reference)",
       "note": "50px red/blue coordinate grid over the original image, used to fix each token's approximate (x,y) position while transcribing; kept so the next holder can check ciphertext.tsv's row numbers against the image without re-deriving the grid"
+    },
+    {
+      "file": "../copy_condition.tsv",
+      "made_by": "whiteout_map.py + one look at its --contrast output (D2B-RAY, 5 Oct 2026)",
+      "note": "per-token flag: token borders a white-out patch (copy condition, not a reading)"
     }
   ]
 }
