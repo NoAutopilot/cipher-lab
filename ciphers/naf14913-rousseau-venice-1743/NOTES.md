@@ -1540,3 +1540,7 @@ Not found in: Souchon 1915 pp.267-268 at N° 2031 and N° 2044 (ALTO text, 4 Oct
 Next (unchanged, needs new material): a plain side only from the recipient's archive copy (Montaigu's own deciphered file) or an
 unprinted Lorenzi/Rousseau slip outside ff.1r-392v; ask-row candidate, not queued by this worker.
 Checks (A3V3-SOU44, 4 Oct 2026): gaps_check run below.
+
+## JSTOR runner, 4 Oct 2026
+
+read 4 Oct 2026 (page viewer, no download), Hatzenberger 2015 https://www.jstor.org/stable/24719303: p.325 quotes Confessions VII (n.: p.349) on Rousseau deciphering the backlog ("en moins de huit jours j'eus déchiffré le tout"); p.326 states that in the diplomatic cipher "« République » s'écrivait « 136 », « Sénat » était retranscrit par « 219 » et « ambassadeur » par « 404 »" (source note not captured); p.329 "il chiffre et déchiffre"; pp.338-339 quote passages "chiffré par Rousseau" in deciphered form: letter to Amelot 29 Feb 1744 (n.53 DV p.1144), dispatch to the King 23 May 1744 "passage codé" (n.54 DV p.1195), letter to Amelot 9 Nov 1743 "un long paragraphe entièrement chiffré" (n.55 DV p.1069). Edition: "DV" pages in the 1000s with Candaux's introduction (n.17 "Candaux, p. ccxlix") -- i.e. the Pléiade Œuvres complètes III edition; full bibliographic note not viewed
