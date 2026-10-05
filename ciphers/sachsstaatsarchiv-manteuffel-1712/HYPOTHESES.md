@@ -44,3 +44,14 @@ key.tsv's source column (rows naming frame 0501):
 
 Grades in key.tsv: before C 129, M 39; after C 128, M 40. Code 770 does not occur in ciphertext.tsv, so reading token counts are
 unchanged (C 202, M 84, U 137 of 423). Not a refutation: two agreeing single-code glosses on one leaf are held, not dropped.
+
+### D2B-MANT27 (5 Oct 2026): file 0527 (ff.422v-423), per-leaf gate HELD -- witnesses only, nothing merged
+
+| code | key.tsv value | 0527 witness | status |
+|---|---|---|---|
+| 73 | s\|z (Krauske, M) | "Ilgen" over 73 at the end of run 33 (402.604.247.44.214.73, f.423, gloss "conference Ilgen", zoom) | third leaf with Ilgen over 73 (0528, 0501, now 0527); 0527 HELD, so it adds no cleared support; conflict open, M |
+| 82 | z (Krauske, C) | "Schonborn" over 82 ending runs 36 and 45 (f.423, "l'armee suedoise Schonborn", zoom) | second leaf with Schonborn over 82; 0527 HELD; conflict open, M |
+| 99 | s\|ss\|sa (Krauske, M) | single-code gloss "K" (f.423 run 32, zoom only, M) | disagreement logged; one M gloss, not resolved |
+| 868 / 898 | -- / -- | "Ilgen" beside 868 (run 5) and 898 (run 7) on f.422v; 898 = l'Empire 3x as single-code gloss on the same leaf | read doubtful (could be 98 = Ilgen with a lead stroke); kept as read, M |
+| 754 | le Roi de Pologne (C) | single-code gloss "S.M." (run 26, M) | compatible (Sa Majeste), not a conflict |
+Gate: f422v_0527/shuffle_control.tsv (S 0/52 vs p95 0.058; S_single 1/2 at N 2). Values: f422v_0527/leaf_values_0527.tsv.

@@ -60,6 +60,7 @@ def pool_streams():
     P["0502"] = segs_from_codes([r["codes"] for r in rows(T / "f0500_0502/reconciled_mant4.tsv") if r["frame"] == "0502"])
     P["0501"] = segs_from_codes([r["codes"] for r in rows(T / "f0501/reconciled.tsv")])
     P["0528"] = segs_from_codes([r["codes"] for r in rows(T / "f423_0528/reconciled.tsv")])
+    P["0527"] = segs_from_codes([r["codes"] for r in rows(T / "f422v_0527/reconciled.tsv")])   # D2B-MANT27, 5 Oct 2026
     P["0579_f467"] = segs_from_codes([r["code_groups"] for r in rows(T / "f467/passA.tsv") if r.get("code_groups")])
     f468 = [l.rstrip("\n").split("\t") for l in open(T / "f468/passes.tsv") if not l.startswith("#")]
     P["0580_f468"] = segs_from_codes([" ".join(r[4] for r in f468 if len(r) > 4)])
