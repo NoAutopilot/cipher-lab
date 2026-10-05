@@ -130,3 +130,20 @@ $ python3 tools/next_steps.py --wait-only | grep ss-radio-lippert-1944
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: find Gnegel's 2021 eBay specimen (ebay.de item 284276746819, Wayback CDX) and other "chiffrierter Funkspruch 1944" listings from the same seller and compare their cipher groups with ours (identical or shuffled groups would settle the souvenir-forgery question), ~$1. Who acts: agent. Source: this file's "## While waiting (GF4-BATCH18)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Second-specimen search (D2B-LIPP, account 2, 5 Oct 2026, 23:51-00:0x UTC, for LANE DEFAULT-account-2-20261005-2217)
+
+Job: find Gnegel's 2021 eBay specimen (ebay.de item 284276746819) and other "chiffrierter Funkspruch 1944" listings, and compare cipher groups with ours. **Result: no image or transcription of any second specimen was reachable, so no group comparison could be made.** Authenticity question unchanged; status stays open (rule 5).
+
+What was checked, and where nothing was found:
+- Wayback availability API (archive.org/wayback/available, answers 200): `ebay.de/itm/284276746819`, `www.ebay.de/itm/284276746819`, `ebay.com/itm/284276746819`, and the full slug URL from Gnegel's comment (`www.ebay.de/itm/chiffrierter-Funkspruch-geheime-Nachricht-1944-secret-cipher-code-message-/284276746819`): `archived_snapshots: {}` for all four. Also checked the comparison listing in the 2017 thread (`ebay.com/itm/401266966174`, a 1940 Lublin SS-Feldpost cover): no snapshot.
+- Wayback CDX (web.archive.org/cdx/search/cdx, wildcard `ebay.de/itm/*284276746819*`): **unreachable** -- web.archive.org reset every connection from this container (curl 35, proxy log `ws_closed_mid_exchange`), three attempts plus one retry after a pause; stopped per the good-citizen rule. The availability API above returns only the closest capture and can miss captures under a variant URL, so the CDX search is **not run** -- not a negative.
+- eBay live item page: HTTP 403 (eBay error page); one request, not retried.
+- Cipherbrain 2014 post (live re-fetch) and 2021 "Ungelöste ... (2)" post (live re-fetch), and the 2017 Top-50 no. 25 post (on disk, `sources/schmeh/posts/25-ss-radio.html`): every `<img>` and every eBay/ebayimg/imgur link listed. All three carry only the Lippert form itself (`SS-Code.jpg`, `SS-Code-Stempel.png`, header bars); no comment in any of the three threads attaches or links an image of the second specimen. The only eBay links are Gnegel's item URL (comment #28, 2017 thread) and the Lublin cover.
+- WebSearch (3 queries: `"chiffrierter Funkspruch" 1944 geheime Nachricht ebay`; `"secret cipher code message" 1944 Funkspruch Stempel Wachmannschaft Berchtesgaden`; `"Funkspruch" 1944 "Briefstempel" SS Fälschung Sammler chiffriert Andenken`): only the Cipherbrain posts and unrelated WW2 cipher/stamp pages; no other listing of a "chiffrierter Funkspruch 1944" found.
+
+Comparison: not run (no second ciphertext). Nothing graded; no reading claimed.
+
+Next step (agent, ~$0.5): the Wayback CDX search for `ebay.de/itm/*284276746819*` and for the seller's other items, from a session where web.archive.org answers (test `curl -sS -o /dev/null -w "%{http_code}" https://web.archive.org/` first), or as a LOCAL-QUEUE row if it stays unreachable from the cloud. Beyond that, the specimen itself is held by the 2021 commenter (thread comment #28); a request for a photo of its cipher groups would go through the blog thread or an outreach draft, the person's decision.
+
+Requests: archive.org 7 (wayback availability API, >= 2 s apart), web.archive.org 4 (all connection resets; stopped), ebay.de 1 (403), scienceblogs.de 2 (2014 and 2021 posts, > 2 s apart), WebSearch 3.
