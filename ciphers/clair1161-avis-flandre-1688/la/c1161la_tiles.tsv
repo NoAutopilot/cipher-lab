@@ -1,0 +1,110 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+c1161la	c185R_L01	2	s	s	S	split	split	s,S,f	3	iib qb a		
+c1161la	c185R_L01	22	s	s	S	split	split	s,S,f	+ y th	z th +		
+c1161la	c185R_L02	30	S	S	ls	split	split	S,ls,s,sd	x w iib			
+c1161la	c185R_L03	3	s	s	S	split	split	s,S,f	7 o	s wb s		
+c1161la	c185R_L03	4	s	s	S	split	split	s,S,f	7 o s	wb s s		
+c1161la	c185R_L03	6	s	s	S	split	split	s,S,f	s s wb	s z +		
+c1161la	c185R_L03	7	s	s	S	split	split	s,S,f	s wb s	z + o		
+c1161la	c185R_L05	1	s		S	split	split	S,s,f		s S p		
+c1161la	c185R_L05	2	s	s	S	split	split	s,S,f	s	S p 4		
+c1161la	c185R_L05	9	s		S	split	split	S,s,f	y + th	s wb +		
+c1161la	c185R_L05	10	s	s	S	split	split	s,S,f	+ th s	wb + a		
+c1161la	c185R_L07	9	q	S	ls	split	split	S,ls,q,qb	7 dia 6r	7 7 th		
+c1161la	c185R_L08	7	s		S	split	split	S,s,f	e th f	s S +		
+c1161la	c185R_L08	8	s	s	S	split	split	s,S,f	th f s	S + qb		
+c1161la	c185R_L09	1	s		S	split	split	S,s,f		s wb tri		
+c1161la	c185R_L09	2	s	s	S	split	split	s,S,f	s	wb tri S		
+c1161la	c185R_L09	25	s	s	S	split	split	s,S,f	z y ls	z th 4		
+c1161la	c185R_L11	3	S	sd	S	split	split	sd,S,s	p 4	c S th		
+c1161la	c185R_L11	21	3	3	z	split	split	3,z,tz,+	ee iii psi	q S q		
+c1161la	c185R_L12	7	x	S	th	split	split	S,th,x,w	e ls tz	z iii iii		
+c1161la	c185R_L16	3	s	s	S	split	split	s,S,f	p +	z S +		
+c1161la	c185R_L17	13	x		z	split	split	z,x,w	+ y iii	e qb eloop		
+c1161la	c185R_L18	27	z	z	tz	split	split	z,tz,dia	iii x x	/		
+c1161la	c185R_L21	20	s	s	S	split	split	s,S,f	y + 9	z blot S		
+c1161la	c185R_L24	1	z	7	z	split	split	7,z,tz,dia		4 qb p		
+c1161la	c185R_L24	17	tz	tz	th	split	split	tz,th,z,3	+ 3 wb	8 ls qb		
+c1161la	c186R_L02	16	S	e	S	split	split	e,S,s,sd	y 4 ee	q / s		
+c1161la	c186R_L03	3	th	a	+	split	split	a,+,th,dia,S	e qb	9 q psi		
+c1161la	c186R_L04	13	rot	S	8S	split	split	S,8S,rot,K,vdash	7 7 +	4 th +		
+c1161la	c186R_L07	7	eloop	Rloop	S	split	split	Rloop,S,eloop,L,K	l w wb	iii + wb		
+c1161la	c186L_L04	8	e	z	e	split	split	z,e,c,ee	S S phi	4 y z		
+c1161la	c186L_L04	24	4	+	4	split	split	+,4,qb	wb qb p	S z q		
+c1161la	c186L_L05	4	dia	z	dia	split	split	z,dia,th	z qb S	NEW_c186L_1 to w		
+c1161la	c186L_L05	14	dia	z	dia	split	split	z,dia,th	th 4 S	e box y		
+c1161la	c186L_L06	4	dia	z	dia	split	split	z,dia,th	p 4 S	w S S		
+c1161la	c186L_L07	21	4	qb	4	split	split	qb,4,+	+ d q	S S phi		
+c1161la	c187L_L04	5	y	y	S	split	split	y,S,3	o qb wb	+ phi +		
+c1161la	c187L_L06	24	sd	sd	S	split	split	sd,S,dia	z qb wb	+ y iii		
+c1161la	c187L_L07	15	2	2	z	split	split	2,z,sqc	th q c	4 th iib		
+c1161la	c187L_L09	14	th	th	dia	split	split	th,dia,S	8 4 +	e qb w		
+c1161la	c187L_L11	21	sd	sd	S	split	split	sd,S,dia	S y qb	z rot qb		
+c1161la	c187L_L12	21	6r	6r	z	split	split	6r,z,6	z + y	qb wb qb		
+c1161la	c187L_L13	15	sd	sd	S	split	split	sd,S,dia	S z q	th 3 o		
+c1161la	c187L_L16	28	6r	6r	z	split	split	6r,z,6	+ s z			
+c1161la	c187L_L19	27	th	dia	th	split	split	dia,th,S	q wb +			
+c1161la	c187L_L23	5	2	z	2	split	split	z,2,sqc	7 6 o	y 4 q		
+c1161la	c187L_L23	12	th	th	dia	split	split	th,dia,S	th 6 7	+ d wb		
+c1161la	c187L_L23	28	6r	6r	z	split	split	6r,z,6	f 3 p	q		
+c1161la	c187L_L24	11	th	th		split	split	th,dia,S	iii NEW_c187L_1 o	e 6 y		
+c1161la	c187R_L02	11	qb	4	qb	split	split	4,qb,q	7 sd y	S z +		
+c1161la	c187R_L04	1	th		th	split	split	th,dia,S		z w 8		
+c1161la	c187R_L07	26	tz	S	tz	split	split	S,tz,z,3	o w wb	4 y th		
+c1161la	c187R_L10	10	th	dia	th	split	split	dia,th,S	4 y +	S S +		
+c1161la	c187R_L15	28	w	w	z	split	split	w,z,wb,x	S + S	y		
+c1161la	c187R_L18	22	eloop	z	ee	split	split	z,ee,eloop,L,K	z 6r q	y 4 S		
+c1161la	c187R_L20	26	q	q	S	split	split	q,S,ls,qb	S z 6r	iii		
+c1161la	c187R_L26	23	z	z	dia	split	split	z,dia,tz	9 3 S	6r q [PLAIN:monsr]		
+c1161la	c188L_L01	9	z	tz	z	split	split	tz,z,dia	e 4 y	eloop 7 o		
+c1161la	c188L_L01	15	z	2	7	split	split	2,7,z,tz,dia	o p +	4 7 o		
+c1161la	c188L_L01	28	z	tz	z	split	split	tz,z,dia	q + S	rc		
+c1161la	c188L_L03	15	z	tz	z	split	split	tz,z,dia	qb 7 w	qb S z		
+c1161la	c188L_L03	18	z	tz	z	split	split	tz,z,dia	z qb S	eloop 7 7		
+c1161la	c188L_L04	19	z		z	split	split	z,tz,dia	a 4 ee	6r q 7		
+c1161la	c188L_L05	3	z	a	z	split	split	a,z,tz,dia	+ d	y + a		
+c1161la	c188L_L05	15	z	tz	z	split	split	tz,z,dia	S + y	4 a th		
+c1161la	c188L_L05	21	dia	dia	th	split	split	dia,th,z	th wb +	6r y qb		
+c1161la	c188L_L06	4	z	2	z	split	split	2,z,tz,dia	y th iii	qb 6r q		
+c1161la	c188L_L08	1	z	tz	z	split	split	tz,z,dia		4 a th		
+c1161la	c188L_L08	7	z	K	z	split	split	K,z,tz,dia	th w S	w o th		
+c1161la	c188L_L08	10	th	dia	th	split	split	dia,th,S	z w o	7 7 eloop		
+c1161la	c188L_L08	16	z	K	z	split	split	K,z,tz,dia	eloop 7 7	+ wb tz		
+c1161la	c188L_L09	4	z	tz	z	split	split	tz,z,dia	th 4 S	qb th 9		
+c1161la	c188L_L09	6	th	dia	th	split	split	dia,th,S	S z qb	9 + o		
+c1161la	c188L_L11	6	z	tz	z	split	split	tz,z,dia	9 w th	q qb p		
+c1161la	c188L_L12	8	z	tz	z	split	split	tz,z,dia	S 6 7	qb S z		
+c1161la	c188L_L12	11	z	tz	z	split	split	tz,z,dia	z qb S	7 o iib		
+c1161la	c188L_L13	15	z	tz	z	split	split	tz,z,dia	9 o 4	w 4 S		
+c1161la	c188L_L13	21	z	tz	z	split	split	tz,z,dia	S th s	th + 7		
+c1161la	c188L_L13	31	z	tz	z	split	split	tz,z,dia	q + S			
+c1161la	c188L_L14	1	z	2	7	split	split	2,7,z,tz,dia		4 e qb		
+c1161la	c188L_L15	12	z	tz	z	split	split	tz,z,dia	iii 6r qb	7 7 wb		
+c1161la	c188L_L16	20	S			split	split	S,s,sd	phi e wb	th w +		
+c1161la	c188L_L16	21	th			split	split	th,dia,S	e wb S	w + a		
+c1161la	c188L_L16	26	th		q	split	split	q,th,dia,S	+ a y			
+c1161la	c188L_L17	4	z	tz	z	split	split	tz,z,dia	box a wb	y + 9		
+c1161la	c188L_L18	3	z	tz	z	split	split	tz,z,dia	e S	qb o +		
+c1161la	c188L_L18	14	z	tz	z	split	split	tz,z,dia	S qb S	q a wb		
+c1161la	c188L_L18	20	S		S	split	split	S,s,sd	wb sqc qb	7 7 y		
+c1161la	c188L_L18	24	S		S	split	split	S,s,sd	7 7 y	w + y		
+c1161la	c188L_L19	11	z	tz	z	split	split	tz,z,dia	4 4 d	w S iib		
+c1161la	c188L_L19	18	z	tz	z	split	split	tz,z,dia	y + S	S S phi		
+c1161la	c188L_L21	6	z	tz	z	split	split	tz,z,dia	o 3 d	7 7 a		
+c1161la	c188L_L21	12	z	tz	z	split	split	tz,z,dia	a qb S	z 4 a		
+c1161la	c188L_L21	13	z	tz	z	split	split	tz,z,dia	qb S z	4 a z		
+c1161la	c188L_L21	16	z	tz	z	split	split	tz,z,dia	z 4 a	7 6 ls		
+c1161la	c188L_L21	25	z	tz	z	split	split	tz,z,dia	7 7 s	wb qb 6r		
+c1161la	c188L_L22	5	z	tz	z	split	split	tz,z,dia	q box S	wb + th		
+c1161la	c188L_L23	7	z	tz	z	split	split	tz,z,dia	S + y	7 7 e		
+c1161la	c188L_L23	17	z	tz	z	split	split	tz,z,dia	7 7 th	y q p		
+c1161la	c188L_L24	4	z	tz	z	split	split	tz,z,dia	o + S	iii NEW_c188L_3 4		
+c1161la	c188L_L24	16	z	tz	z	split	split	tz,z,dia	wb sqc s	wb 4 S		
+c1161la	c188L_L24	20	z	tz	z	split	split	tz,z,dia	wb 4 S	S + a		
+c1161la	c188L_L25	1	wb	th	vdash	split	split	th,vdash,wb,w		4 w 7		
+c1161la	c188L_L25	17	z	tz	z	split	split	tz,z,dia	phi + d	w wb rot		
+c1161la	c188L_L26	2	z	tz	z	split	split	tz,z,dia	w	q 3 7		
+c1161la	c188L_L26	9	z	tz	z	split	split	tz,z,dia	qb a wb	y q phi		
+c1161la	c188L_L26	16	z	tz	z	split	split	tz,z,dia	y qb S	th + w		
+c1161la	c188L_L27	2	z	tz	z	split	split	tz,z,dia	s	4 8 p		
+c1161la	c188L_L27	4	8	8	S	split	split	8,S,rot	s z 4	p y 4		
