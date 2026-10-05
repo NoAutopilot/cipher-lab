@@ -2757,3 +2757,12 @@ Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.t
 - [x] image-check: p.188 lines 50-61 read from the page image (s.18); all five sibling cipher pages and both printed decipherments read from the page image (A3V2-THURBT, N8-THUR, 4 Oct 2026)
 - [x] retry: one-vote boundary test v3-full on the image-read siblings PASSed its pre-registered gate (K 68.8% / 83.6%, W 0%); 67 and 153 M -> C, 84 re-read "although" at M (N8-THUR, 4 Oct 2026)
 Verdict: keep going: 1 internal gap (the P3/P10 open codes); cheapest next: a P3-postscript cross-check against the P5-P7 key for codes the postscript shares with them, ~$1 (the rule-7 re-derivation N8-THR7 is done, SAME; status.json depth_pct 97.9 entered by account 3, 4 Oct 2026)
+
+## Bodleian reply, 5 Oct 2026 17:06 UTC (Mike Webb; logged 5 Oct 2026 18:33 UTC)
+
+The "W. S." letter of 13 March 1655 is at **p.76 of MS. Rawl. A. 24/1**, and p.76 is a **10-page document** (the volume's numbering
+counts items, not pages). p.73 is the other W. S. letter (2 pp.); pp.74-75 are unrelated. **There is no separate decipher**, and p.76
+is only partly in cipher, **undeciphered**. He is forwarding our quote request to Imaging Services, W. S. letters included. Consequence:
+P4 (read from Birch's printed numerals, D2, the p.188 incoherence being in Birch's print) can be checked against the manuscript once
+images come -- possible depth rise, and any cipher on p.76 that Birch did not print is unread text in a known key. Reply draft
+(thanks; quote for all of p.76 + p.73) placed in Gmail for the owner.

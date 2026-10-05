@@ -193,3 +193,9 @@ Waits on: the TNA page copy of SP 81/44/225 (REQUEST.md) and LOCAL-QUEUE L40 (Bo
 
 - S: fetch SP 81/44/88's full Discovery record detail (note field) to see whether its "decipher" names the cipher used, ~$0.5.
 - 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L40 answer landed, local-runner/L40-2026-10-05.md -- Calendar vol. i no. 1486 lies in MS. Clarendon 19 (ark:29072/x0bk128b21xs, "NOT AVAILABLE ONLINE"); catalogued at volume level only, so the Roe cypher's folio is not online.
+
+## Bodleian reply, 5 Oct 2026 17:06 UTC (Mike Webb; logged 5 Oct 2026 18:33 UTC)
+
+The key listed in Cal. Clar. S.P. I p.215, no.1486 item 14 ("Sir Thos. Roe's cypher") should be in **MS. Clarendon 19** (calendar
+nos. 1415-1500; https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/172431). He has called the volume up and offers to
+check whether it is there. Reply draft (yes please; quote if found) placed in Gmail for the owner.
