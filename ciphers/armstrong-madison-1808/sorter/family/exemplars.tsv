@@ -1,0 +1,20 @@
+type	line	idx	note
+R1	p1-L06	1	wave on baseline (INVENTORY exemplar, L06 idx1; L06 tile count = mark count, so idx aligns)
+R1	p3-L07	1	wave
+R1	p1-L12	19	wave
+R2	p1-L06	2	numeral-3 loop (INVENTORY exemplar, L06 idx2)
+R2	p1-L12	2	numeral-3 loop
+R2	p3-L13	17	numeral-3 loop
+R3	p1-L06	7	back-curving hook (INVENTORY exemplar, L06 idx7, small variant)
+R3	p1-L13	8	back-curving hook
+R3	p1-L10	1	back-curving hook
+R4	p1-L10	2	small left hook (A-S12 lists p1L10:2)
+R4	p1-L09	16	small left hook, by eye
+R4	p3-L08	3	small left hook, by eye
+R5	p2-L03	1	short bar on baseline
+R5	p3-L05	7	short bar
+R5	p3-L13	7	short bar
+R6	p1-L10	3	isolated dot (the only clean one cut by the sorter)
+R7	p1-L05	2	diagonal slash (A-S3 lists p1L05:2; carries a dot at right, as most slashes in this hand do)
+R7	p1-L17	4	diagonal slash with dot
+R7	p1-L12	11	diagonal slash with dot

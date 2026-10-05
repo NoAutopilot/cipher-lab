@@ -4068,6 +4068,31 @@ one system's alphabet plate, labelled A-E without the system's name to avoid bia
 B = Byrom 1796, C = Gurney 1752 (specimen page), D = Mavor 1792, E = Macaulay 1747. Owner answers (same/maybe/no per letter) are a
 human family-likeness judgement, one reader, not a match; recorded below when given.
 
+### Owner which-shorthand page (SHORTHAND-PAGE, 5 Oct 2026 05:12 UTC, account-3 worker)
+
+Page: https://claude.ai/artifact/DTfwuc4PoX3kjNrin5pXLs (private, db; board card `arm-which-shorthand`, lane todo,
+"Which shorthand? (Armstrong)", ~10 min). Rows = mark types R1-R7 of `images/shorthand/INVENTORY_reconciled.tsv` (169 of
+222 marks, 76%), three padded one-mark tiles each, cut from the sorter boxes with neighbour ink outside the box masked
+(`sorter/family/exemplars.tsv`, `tiles.py`; exemplars picked by eye on contact sheets, INVENTORY positions used where the
+line's sorter tile count equals its mark count). Columns = the same five systems under the same blind labels, each alphabet
+table cut into one cell per letter (letter + sign, `sorter/family/cells.py`, 129 cells). Per (mark x system) the owner clicks
+the look-alike sign or "Nothing similar"; per system: same family / maybe / no / can't tell. Build:
+`python3 ciphers/armstrong-madison-1808/sorter/family/build_family_page.py OUT.html` (disk only). Answers: ArtifactData
+collections `picks` (doc `R1-A`: pick = cell index, -1 nothing similar, letter) and `verdicts` (doc `A`).
+
+Specimen corrections (owner spotted C; parent's brief correction): the composites above used, for C, Gurney's p.6, which is
+running instruction text, not a sign chart, and for B, Byrom p.12, prose with the alphabet inline. The page uses the real
+tables instead: C = Gurney 1752 "The Alphabet", archive.org bim_eighteenth-century_brachygraphy-or-short-_gurney-thomas_1752
+leaf n12 (`specimens/gurney1752_alphabet_p7.jpg`); B = Byrom 1796 "The Alphabet" plate, archive.org
+bim_eighteenth-century_an-abridgement-of-mr-by_byrom-john_1796 leaf n6 (`specimens/byrom1796_alphabet_plate_n6.jpg`). Both
+fetched once (w1800) and committed shrunk to 1100 px. A (Weston p.1 plate), D (Mavor Plate I) and E (Macaulay p.3 table) were
+checked by eye and are sign charts. So the owner's earlier "no" for C was given on a text page, not Gurney's alphabet.
+
+Whatever the owner answers is one human reader's likeness judgement ("my work isn't gospel"), not a match: an engraved alphabet
+of isolated signs against cursive joined marks. Not done here (out of brief): one connected-writing specimen per system, as the
+owner's verdict above asks; next: crop each book's own specimen passage (Gurney leaves 28-37, Byrom leaves ~50-60 and 92-99 on
+the thumbnail grid fetched this session) into a second page section, ~$2.
+
 ## SLANT-CROP pre-registration (5 Oct 2026 04:53 UTC, account-3 worker, brief .claude/briefs/runs/2026-10-05-acct3-slant-crop.md)
 
 Written before any reader call. Step 0 is done: `owner-counts/compare.tsv` (owner = third reader, not truth): of 27 stretches,

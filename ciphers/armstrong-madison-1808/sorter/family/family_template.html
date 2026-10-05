@@ -1,0 +1,187 @@
+<title>Which Shorthand? (Armstrong)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&family=Spectral:wght@500&display=swap">
+<style>
+/* Layout: one mark type per step; Armstrong's own marks pinned on the left, the five alphabets stacked on the right; stacks on a phone. Same palette as the Armstrong count page. */
+:root{
+  --bg:#eef0f2; --panel:#ffffff; --ink:#1d2430; --muted:#5b6474; --line:#d5dae1; --paper:#ffffff;
+  --accent:#1f5f8b; --accent-ink:#ffffff; --done:#2f7a4f; --none:#7a5a12; --pick:#c2410c;
+  --display:"Spectral", Georgia, serif; --body:"IBM Plex Sans", system-ui, sans-serif; --mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#13171d; --panel:#1b2129; --ink:#e6e9ee; --muted:#9aa3b2; --line:#2c3440; --paper:#e9e6df;
+  --accent:#6aa9d6; --accent-ink:#0d1520; --done:#5cbf86; --none:#d7b04a; --pick:#fb8a4c; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#13171d; --panel:#1b2129; --ink:#e6e9ee; --muted:#9aa3b2; --line:#2c3440; --paper:#e9e6df;
+  --accent:#6aa9d6; --accent-ink:#0d1520; --done:#5cbf86; --none:#d7b04a; --pick:#fb8a4c; color-scheme:dark }
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:16px;padding-block:20px 60px}
+h1{font:500 1.7rem/1.2 var(--display);margin:0 0 .3rem;text-wrap:balance}
+.lede{color:var(--muted);max-width:72ch;margin:0 0 .8rem}
+.how{font-size:.95rem;margin:0 0 1rem}
+.how b{font-weight:600}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding-block:10px;border-bottom:1px solid var(--line);margin-bottom:16px}
+.steps{display:flex;flex-wrap:wrap;gap:6px}
+.stepbtn{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;padding:4px 8px 4px 4px;cursor:pointer;font:500 .85rem var(--mono)}
+.stepbtn img{width:34px;height:34px;border-radius:4px;background:var(--paper)}
+.stepbtn .n{font-variant-numeric:tabular-nums;color:var(--muted)}
+.stepbtn.full .n{color:var(--done)}
+.stepbtn[aria-current="step"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.stepbtn.verd{padding:8px 12px;font-family:var(--body)}
+.save{font-size:.85rem;color:var(--muted);margin-left:auto} .save.err{color:var(--pick)}
+.stage{display:grid;grid-template-columns:260px minmax(0,1fr);gap:18px;align-items:start}
+.mark{position:sticky;top:76px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px;display:grid;gap:10px}
+.mark h2{font:500 1.25rem/1.2 var(--display);margin:0}
+.mark .meta{font:500 .8rem var(--mono);color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.tiles img{width:100%;aspect-ratio:1;object-fit:contain;background:var(--paper);border-radius:4px;border:1px solid var(--line)}
+.nav{display:flex;gap:8px}
+.nav button,.primary{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:6px;padding:8px 12px;font:500 .9rem var(--body);cursor:pointer}
+.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.systems{display:grid;gap:12px;min-width:0}
+.sys{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:grid;gap:8px;min-width:0}
+.sys.answered{border-color:var(--done)}
+.syshead{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+.syslab{font:600 .8rem var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.syslab b{font:500 1.15rem var(--display);color:var(--ink);letter-spacing:0;text-transform:none;margin-left:2px}
+.state{font-size:.85rem;font-weight:600;color:var(--muted)}
+.state.ok{color:var(--done)} .state.no{color:var(--none)}
+.cells{display:flex;flex-wrap:wrap;gap:5px}
+.cell{padding:2px;border:2px solid transparent;border-radius:6px;background:var(--paper);cursor:pointer;line-height:0}
+.cell img{height:42px;width:auto;display:block;border-radius:3px}
+.cell:hover{border-color:var(--line)}
+.cell[aria-pressed="true"]{border-color:var(--pick);box-shadow:0 0 0 2px var(--pick)}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:6px 12px;font:500 .85rem var(--body);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--none);border-color:var(--none);color:var(--accent-ink)}
+.chip.v[aria-pressed="true"]{background:var(--accent);border-color:var(--accent)}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.note{flex:1 1 240px;min-width:0;border:1px solid var(--line);border-radius:6px;padding:7px 9px;font:inherit;font-size:.9rem;background:var(--panel);color:var(--ink)}
+.picked{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.85rem;color:var(--muted)}
+.pair{display:inline-flex;align-items:center;gap:3px;background:var(--bg);border-radius:6px;padding:2px 5px}
+.pair img{height:30px;border-radius:3px;background:var(--paper)}
+.foot{color:var(--muted);font-size:.85rem;max-width:80ch;margin-top:24px}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:800px){ .stage{grid-template-columns:1fr} .mark{position:static} .save{margin-left:0} }
+</style>
+
+<div class="wrap">
+  <h1>Which shorthand did Armstrong use?</h1>
+  <p class="lede">The shorthand marks in Armstrong's letter to Madison (Paris, 20 February 1808, NARA M34 roll 14) beside the alphabets of five 18th-century English shorthand systems, labelled A to E so their names don't steer the eye. Your answers are one reader's view of likeness, not proof of a match.</p>
+  <p class="how"><b>For each mark on the left, click the sign in each alphabet that looks most like it, or "Nothing similar".</b> Click a picked sign again to undo. At the end, say whether each system looks like the same family.</p>
+  <div class="bar"><div class="steps" id="steps"></div><span class="save" id="save">Connecting&#8230;</span></div>
+  <div id="view"></div>
+  <p class="foot">Armstrong's marks are cut from the NARA frames with the mark sorter's boxes, three examples per type; the seven types cover about three quarters of the marks counted. Each alphabet is cut row by row from the period book's own sign table (archive.org scans). Answers save as you go.</p>
+</div>
+
+<script>
+const TYPES = /*TYPES*/[];
+const SYSTEMS = /*SYSTEMS*/[];
+const VERDICTS = [['same', 'Same family'], ['maybe', 'Maybe'], ['no', 'No'], ['cant', "Can't tell"]];
+const $ = id => document.getElementById(id);
+const picks = {};      // 'R1-A' -> cell index, -1 = nothing similar
+const verdicts = {};   // 'A' -> {verdict, note}
+let pickCol = null, verdCol = null, cur = 0;
+const LS = 'armFamily:v1';
+function loadLocal(){ try { const s = JSON.parse(localStorage.getItem(LS) || '{}'); Object.assign(picks, s.picks || {}); Object.assign(verdicts, s.verdicts || {}); } catch (e) {} }
+function saveLocal(){ try { localStorage.setItem(LS, JSON.stringify({picks, verdicts})); } catch (e) {} }
+try { const c = parseInt(localStorage.getItem(LS + ':step'), 10); if (c >= 0 && c <= TYPES.length) cur = c; } catch (e) {}
+const stamp = () => new Date().toISOString();
+function status(msg, err){ $('save').textContent = msg; $('save').className = 'save' + (err ? ' err' : ''); }
+function fail(err){ status('Not saved (' + (err && err.message || 'store unavailable') + '). Kept in this browser; reload to retry.', true); }
+function storePick(key){
+  saveLocal(); if (!pickCol) return;
+  const [t, s] = key.split('-'); status('Saving…');
+  const v = picks[key];
+  const p = v === undefined ? pickCol.doc(key).delete()
+    : pickCol.doc(key).set({type: t, system: s, pick: v, letter: v >= 0 ? SYSTEMS.find(x => x.id === s).cells[v].letter : null, updated: stamp()});
+  p.then(() => status('All answers saved')).catch(fail);
+}
+const vTimers = {};
+function storeVerdict(s){
+  saveLocal(); if (!verdCol) return;
+  clearTimeout(vTimers[s]);
+  vTimers[s] = setTimeout(() => { status('Saving…'); const v = verdicts[s] || {};
+    verdCol.doc(s).set({system: s, verdict: v.verdict || null, note: v.note || '', updated: stamp()}).then(() => status('All answers saved')).catch(fail); }, 300);
+}
+function setPick(key, v){ if (picks[key] === v) delete picks[key]; else picks[key] = v; storePick(key); render(); }
+function el(tag, cls, text){ const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function doneCount(t){ return SYSTEMS.filter(s => picks[t.id + '-' + s.id] !== undefined).length; }
+function stepsBar(){
+  const bar = $('steps'); bar.textContent = '';
+  TYPES.forEach((t, i) => { const b = el('button', 'stepbtn'); b.type = 'button';
+    const im = el('img'); im.src = t.tiles[0].src; im.alt = ''; const n = el('span', 'n', doneCount(t) + '/5');
+    b.append(im, el('span', null, t.id), n); b.setAttribute('aria-label', 'Mark ' + t.id + ': ' + t.name + ', ' + doneCount(t) + ' of 5 answered');
+    if (doneCount(t) === 5) b.classList.add('full'); if (i === cur) b.setAttribute('aria-current', 'step');
+    b.onclick = () => go(i); bar.append(b); });
+  const v = el('button', 'stepbtn verd', 'Family verdicts (' + SYSTEMS.filter(s => verdicts[s.id] && verdicts[s.id].verdict).length + '/5)'); v.type = 'button';
+  if (cur === TYPES.length) v.setAttribute('aria-current', 'step'); v.onclick = () => go(TYPES.length); bar.append(v);
+}
+function go(i){ cur = i; try { localStorage.setItem(LS + ':step', String(i)); } catch (e) {} render(); window.scrollTo({top: 0}); }
+function markPanel(t){
+  const m = el('aside', 'mark');
+  m.append(el('div', 'meta', t.id + ' · ' + t.count + ' marks counted (' + t.share + '%)'), el('h2', null, t.name));
+  const tl = el('div', 'tiles'); t.tiles.forEach(x => { const im = el('img'); im.src = x.src; im.alt = 'Armstrong mark ' + t.id + ' (' + x.sid + ')'; tl.append(im); });
+  const nav = el('div', 'nav');
+  if (cur > 0){ const p = el('button', null, '← Back'); p.type = 'button'; p.onclick = () => go(cur - 1); nav.append(p); }
+  const nx = el('button', 'primary', cur + 1 < TYPES.length ? 'Next mark →' : 'Family verdicts →'); nx.type = 'button'; nx.onclick = () => go(cur + 1); nav.append(nx);
+  m.append(tl, nav); return m;
+}
+function sysRow(t, s){
+  const key = t.id + '-' + s.id, v = picks[key];
+  const box = el('section', 'sys' + (v !== undefined ? ' answered' : ''));
+  const head = el('div', 'syshead'); const lab = el('span', 'syslab', 'System'); lab.append(el('b', null, s.id));
+  const none = el('button', 'chip', 'Nothing similar'); none.type = 'button'; none.setAttribute('aria-pressed', v === -1 ? 'true' : 'false'); none.onclick = () => setPick(key, -1);
+  const st = el('span', 'state' + (v >= 0 ? ' ok' : v === -1 ? ' no' : ''), v >= 0 ? 'Picked: ' + s.cells[v].letter : v === -1 ? 'Nothing similar' : 'Not answered');
+  st.setAttribute('aria-live', 'polite');
+  head.append(lab, none, st);
+  const cells = el('div', 'cells');
+  s.cells.forEach((c, i) => { const b = el('button', 'cell'); b.type = 'button'; b.setAttribute('aria-pressed', v === i ? 'true' : 'false');
+    b.setAttribute('aria-label', 'System ' + s.id + ' sign for ' + c.letter);
+    const im = el('img'); im.src = c.src; im.alt = ''; b.append(im); b.onclick = () => setPick(key, i); cells.append(b); });
+  box.append(head, cells); return box;
+}
+function verdictView(){
+  const wrap = el('div', 'systems');
+  SYSTEMS.forEach(s => {
+    const v = verdicts[s.id] || {};
+    const box = el('section', 'sys' + (v.verdict ? ' answered' : ''));
+    const head = el('div', 'syshead'); const lab = el('span', 'syslab', 'System'); lab.append(el('b', null, s.id)); head.append(lab);
+    const pk = el('div', 'picked');
+    const found = TYPES.filter(t => picks[t.id + '-' + s.id] >= 0), nonec = TYPES.filter(t => picks[t.id + '-' + s.id] === -1).length;
+    pk.append(el('span', null, 'Your look-alikes: ' + found.length + ' of ' + TYPES.length + (nonec ? ', nothing similar for ' + nonec : '') + (found.length ? ':' : '.')));
+    found.forEach(t => { const pr = el('span', 'pair'); const a = el('img'); a.src = t.tiles[0].src; a.alt = t.id; const b = el('img'); b.src = s.cells[picks[t.id + '-' + s.id]].src; b.alt = '';
+      pr.append(a, el('span', null, '≈'), b); pk.append(pr); });
+    const cells = el('div', 'cells'); s.cells.forEach(c => { const d = el('span', 'cell'); d.style.cursor = 'default'; const im = el('img'); im.src = c.src; im.alt = ''; d.append(im); cells.append(d); });
+    const row = el('div', 'row');
+    VERDICTS.forEach(([k, label]) => { const b = el('button', 'chip v', label); b.type = 'button'; b.setAttribute('aria-pressed', v.verdict === k ? 'true' : 'false');
+      b.onclick = () => { verdicts[s.id] = Object.assign({}, verdicts[s.id], {verdict: v.verdict === k ? null : k}); storeVerdict(s.id); render(); }; row.append(b); });
+    const note = el('input', 'note'); note.type = 'text'; note.id = 'note_' + s.id; note.placeholder = 'Note (optional)'; note.value = v.note || ''; note.setAttribute('aria-label', 'Note for system ' + s.id);
+    note.addEventListener('change', () => { verdicts[s.id] = Object.assign({}, verdicts[s.id], {note: note.value.slice(0, 400)}); storeVerdict(s.id); });
+    row.append(note);
+    box.append(head, pk, cells, row); wrap.append(box);
+  });
+  return wrap;
+}
+function render(){
+  const active = document.activeElement && document.activeElement.id;
+  stepsBar(); const view = $('view'); view.textContent = '';
+  if (cur < TYPES.length){ const t = TYPES[cur]; const st = el('div', 'stage'); const sy = el('div', 'systems');
+    SYSTEMS.forEach(s => sy.append(sysRow(t, s))); st.append(markPanel(t), sy); view.append(st); }
+  else { const h = el('p', 'how'); h.append(el('b', null, 'For each system: does it look like the same family as Armstrong’s marks?'), ' Your look-alike picks are shown as a reminder.'); view.append(h, verdictView()); }
+  if (active && $(active)) $(active).focus();
+}
+loadLocal(); render();
+(async () => {
+  let db = null; try { db = await window.claude?.use?.('db'); } catch (e) { db = null; }
+  if (!db){ status('Saving in this browser only'); return; }
+  pickCol = db.collection('picks'); verdCol = db.collection('verdicts');
+  status('Connected. Answers save as you go.');
+  Object.keys(picks).forEach(storePick); Object.keys(verdicts).forEach(storeVerdict);
+  pickCol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); const k = ch.doc.id;
+      if (ch.type === 'removed' || !d || d.pick == null) delete picks[k]; else picks[k] = d.pick; }); saveLocal(); render(); },
+    err => status('Could not load saved answers: ' + (err && err.message || 'unknown error') + '. Reload the page.', true));
+  verdCol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); const k = ch.doc.id;
+      if (ch.type === 'removed' || !d) delete verdicts[k]; else verdicts[k] = {verdict: d.verdict || null, note: d.note || ''}; }); saveLocal(); render(); },
+    err => status('Could not load saved answers: ' + (err && err.message || 'unknown error') + '. Reload the page.', true));
+})();
+</script>
