@@ -112,3 +112,29 @@ per rule 4; update decode/ec18 inputs only where the image disagrees with the tr
 check, record per entry: transcription, image read, decision, grade. If the images are not reachable from the cloud, stop, log the
 route tried and add the LOCAL-QUEUE.tsv/ASKS row per the Access playbook (after `python3 tools/key_livecheck.py` if a key is
 involved). Update Remaining gaps / Escalation; gaps_check passes.
+
+# Wave 2 (written 20:5x UTC; spawned as wave-1 slots free; same Common rules and Solver-job rules)
+
+### DEF1-DAV -- baluze167-davaux-1637, 168 f.246-247v (c510-511) letter-sign labelling against Tomokiyo's table (cap 4, box 50 min)
+Intake gate (20:5x UTC): `baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md Remaining gaps (N9-BAL3): the anchored alignment is retired (third instrument); untried: a blind letter-sign labelling pass of
+c510-511 against Tomokiyo's letter table (images/louisxiii_davaux.png letter row). Job: pre-register in PREREG-DEF1DAV.md before any
+reading (rule, control: the same labelling pass on f.110r/c234 or 167 f.157 known-answer crops of the same hand, gate = known-answer
+letter accuracy >= 0.80 on the control; the target is labelled only if the control meets the gate -- CLAUDE.md rule 3 / family_run
+order). Use the existing crops on disk (N9-BAL2/N9-BAL3); one blind Sonnet subagent call per canvas (2 target + 1 control = 3 calls)
++ 1 reconciliation unit by you. Decode with `tools/decode_key.py` and the folder's key; grade per rule 4; judge the decode with
+`tools/judge_plaintext.py` if the folder has a spec. Report both numbers. Update Remaining gaps / Escalation.
+
+### DEF1-VIV54 -- fr16104-vivonne-spain-1572, ink 54 col-u-row-3 relabel under PREREG-N7VIV54R (cap 2.5, box 35 min)
+Intake gate (20:5x UTC): `fr16104-vivonne-spain-1572: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Run the relabel exactly as PREREG-N7VIV54R.md registers it (hand-placed per-position crops), no new thresholds. If the reading changes,
+re-run the folder's decode with --check, and propagate per rule 10 into AUDIT.md (a dated "Revision after AUDIT" note: VER1-VIV's
+Audit 2 of ink 54 at 18:31 UTC 5 Oct 2026 was written on the old state) and into the SO-VIV54 row of SECOND-OPINIONS-QUEUE.tsv if its
+text changes. Update Remaining gaps / Escalation.
+
+### DEF1-ECK64 -- eckert-1864, the seven remaining Beckwith/Kimber/Caldwell entries in Cipher No. 2 (cap 5, box 60 min; 7 entries,
+### 2 passes each batched per page + 1 reconciliation)
+Intake gate (20:5x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md section 8 "Not done" names the entries; two transcription passes (subagents, crops only -- mandatory crop step, paste the
+command) then decode_no2.py with key-no2.md; grade per rule 4; rule 7 --check; OR print match where one exists (section 4 method).
+Spawn only after DEF1-ECK62I is done (same Huntington host). Update Remaining gaps / Escalation.
