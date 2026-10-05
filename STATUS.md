@@ -4342,3 +4342,22 @@ no status.json/NEAR.md/QUEUE.md/AUDIT.md change. Sonnet per-line readers through
 - **Next (NOTES Remaining gaps, PIS1-247 list):** f.246r + f.246v (~50 lines, two witnesses, crop commands in NOTES) ~$36 at the per-line rate;
   f.275v block B lines 12-15 ~$3.5; f.276-279 and the 9 Sept letter (margin glosses) per page ~$9-13; Brienne 354-356 for June 1588 (catalogue
   first, ~$1). Cost per dense page with an Opus worker + Sonnet per-line readers: USD 8.7-13.
+
+## LANE SYS1 handoff (session_01J31Le8NaBKQi9NAUW3YBs4, account 1), 5 October 2026 (closed 18:2x UTC: brief met)
+
+Brief: .claude/briefs/runs/2026-10-05-acct3-lane-sys1.md. Four workers (Opus 5.5), all D, lane cost about 13.8 of cap 60.
+- Job 1 auto-fill (SYS1-AF, e1606d247): `tools/work_queue.py --next` appends one DEFAULT-<account>-<ts> row (brief
+  .claude/briefs/default-lane.md, cap 60, box 600) when the account has no queued row, its last LANE row closed >= 60 min ago, no
+  `PAUSE-<account>` row is `paused`, and no default lane in 12 h; `--no-autofill` opts out; `--pause/--resume ACCOUNT`. Live
+  dispatcher triggers pick it up unchanged (they already run --next). Expect account 1 to auto-fill at the first dispatcher firing
+  >= 60 min after this close; `python3 tools/work_queue.py --pause account-1` stops it. dispatcher.md + both bootstrap pastes updated.
+- Job 2 hot/cold (SYS1-HC, dd34a5bc0): HOT-COLD.tsv HOT 172 / COLD 115 / 287 (key 134, decipherment 33, clear 3, gloss 2, pool 0);
+  `next_steps.py --hot-only` gives 91 rows. Borderline COLD: heinsius-hermitage-1704 (probable key in NA inventory). No status line changed.
+- Job 3 verifier backlog (SYS1-VBL, bbd83a345, 8e69cedf7): VERIFY-BACKLOG.tsv 35 rows (audit2 24, both 2, counted 9; high 8, low 18,
+  none 9). Open for the parent: registers disagree on audit2 for Bowes, Thurloe x2, Morillo; 11 status.json folders absent from
+  PROGRESS.tsv, 5 PROGRESS folders absent from status.json results (gonzague-1595, clair1161, janssens, clinton, royalist).
+- Job 4 small fixes (SYS1-SF, d70367ccc): AN/FranceArchives ladder row; lq_answer_check no longer reads a repo filename as a host;
+  L11 + L42 landed (PR 67 already closed; only L54, blocked, stays off main); TX-AGREEAUDIT, TX-ALTS, LANE-NEAR5/8/9 done;
+  work_queue --check malformed 4 -> 0; system_map_check fixed (IMAGES-AUDIT-2026-10-03.tsv row).
+LANE-VER1 (account 2) still queued at 18:2x for the account-2 dispatcher.
+
