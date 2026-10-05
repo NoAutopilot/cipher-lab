@@ -127,3 +127,7 @@ Queries (WebSearch, standard, 3 Oct 2026): (1) `Desiderio l'Abbé Nevers Prague 
 ## While waiting
 
 The one action that depends on nobody: Tomokiyo's fr.4695 pages (bnf4715.htm and neighbours on disk) searched for the 5 Feb 1577 no.51 key, disk-only, ~USD 0.3; then a Gallica fr.4695 manifest lookup (1 request). Status stays `blocked`.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: search Tomokiyo's fr.4695 pages on disk (bnf4715.htm and neighbours) for the 5 Feb 1577 no.51 key, disk-only, ~$0.3; then one Gallica fr.4695 manifest lookup. Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

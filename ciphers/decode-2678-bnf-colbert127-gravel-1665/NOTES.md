@@ -225,3 +225,7 @@ Gravel's printed dispatches.
 ## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
 
 No reading on disk -- no reading: status open, passA.tsv transcription only, no decoding attempted (NOTES 'No decoding attempted'). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: re-view canvases 355-356 of btv1b10035540v at native resolution (facing page, docket, slip) with tools/gallica_folio.py and tools/iiif_lines.py, then a crib test of the three enciphered names against the 1664-65 Regensburg pensioners named in Gravel's printed dispatches, ~$2. Who acts: agent. Source: this file's "Next action that depends on nobody"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

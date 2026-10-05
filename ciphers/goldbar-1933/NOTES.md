@@ -119,3 +119,7 @@ goldbar-1933: open (line 3) -- edition/page or full-text-search citation found w
 exit 0
 ```
 `python3 tools/next_steps.py --wait-only | grep goldbar-1933`: no line.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: read the Bin Tao v. Citibank docket (dockets.justia.com, 9th Cir. 09-56992, from Kim's comment 15) for any reading of the bars the claimant filed, a premise-check read, ~$1. Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

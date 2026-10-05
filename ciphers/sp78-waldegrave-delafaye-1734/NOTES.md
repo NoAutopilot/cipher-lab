@@ -95,3 +95,7 @@ Hosts this pass: archive.org 3 downloads, discovery.nationalarchives.gov.uk 2, d
 ## Re-check (CS-BATCH3, 3 Oct 2026)
 
 Google Books API (key, country=US), 1 query, `"Waldegrave" Delafaye "21 July 1734" cypher`: 0 results. Nothing new found; verdict unchanged (`open`, low confidence): the folio's own text may only describe a French copy of Newcastle's cipher letter, so a page check is still the first step. Not found: any print, gloss or key for the 21 July 1734 letter. While waiting stays as written above (Discovery catalogue only, copy order in REQUEST.md).
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: the TNA page check of SP 78/205 f.146 (REQUEST.md; not yet in outreach/tna-page-copy-batch.md as of 5 Oct 2026 -- add it to that basket, board card tna-batch) to see whether the folio holds cipher or only describes Newcastle's, ~$0 agent cost; nothing cloud-side remains. Who acts: owner. Source: this file's "## Re-check (CS-BATCH3)" ("a page check is still the first step"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

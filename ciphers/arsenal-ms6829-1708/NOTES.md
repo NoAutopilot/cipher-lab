@@ -103,3 +103,7 @@ a name from it first.
 
 Requests this section: archivesetmanuscrits.bnf.fr 1; archive.org 6 (Martin djvu 1, advancedsearch 3, be-api 1, plus 1 earlier
 redirect); googleapis 1; github.com 2 shallow clones; WebSearch 6.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: the images: add Ms-6829 fols 296-301 to the BnF Arsenal reproduction quote batch (ASKS 38, outreach/bnf-manuscrits-arsenal-quote-batch.md) for the owner to order, ~$0 agent cost; once the scan arrives, read the sender's name and transcribe the six leaves, ~$3. Who acts: owner. Source: this file's Verdict (images unreachable; standing gap: read a name from the leaf first); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

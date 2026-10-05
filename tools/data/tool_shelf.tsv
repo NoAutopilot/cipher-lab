@@ -96,3 +96,4 @@ families/phased_homophonic.py	instrument	controlled-only	two-digit homophonic wr
 families/seeded_code.py	instrument	controlled-only	two-part code of syllables and words with a partial key pinned	family_run.py control rows (castelcicala-1816 A2-CAS8)	-
 families/syllabary.py	instrument	controlled-only	partial syllabary, a mark on a consonant is the following vowel; code plus mark	DSN/DSN2 controls collapse between 7% and 10% injected error (SALV-DIAG, CLAUDE.md rule 3)	-
 families/wordcode.py	instrument	controlled-only	letter-or-word nomenclator inside sign runs	family_run.py control rows in 3 HYPOTHESES.md files	-
+no_cracks.py	gate	n/a	every live target: next step, who acts, board card (MISSING / NO-NEXT)	-	-

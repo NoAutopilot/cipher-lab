@@ -45,3 +45,7 @@ exit 0
 
 $ python3 tools/next_steps.py --wait-only | grep yogtze-1984
 (no line)
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: a lexical crib search of the six letters against 1984 German/Dutch licence-plate prefixes and food-technology abbreviations, logged as a search (UNSOLVED-SURVEY row 26), ~$0.5; or the parent re-labels the target per the premise note. Who acts: agent. Source: this file's "## While waiting (GF4-BATCH17)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

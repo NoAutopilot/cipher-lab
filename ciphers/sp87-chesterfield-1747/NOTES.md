@@ -159,3 +159,7 @@ Cronstrom in their OCR (the passage Google's own scan shows is in a private lett
 Waits on: the TNA page copy of SP 87/23/41, 51, 70 (ASKS row 57) and a person reading Dobrée vol. 2 in an IA loan.
 
 - S: grep the Newcastle-side printed sources (Coxe, *Pelham Administration*, 1829, on archive.org) for July-Aug 1747 Waldeck/Cronstrom despatches to Cumberland -- a free crib source for the cipher passages, no person needed.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: grep Coxe, Pelham Administration (1829, archive.org) for July-Aug 1747 Waldeck/Cronstrom despatches to Cumberland, a free crib source for the cipher passages, ~$0.5; the page copy of SP 87/23/41, 51, 70 is ASKS 57 (not yet in outreach/tna-page-copy-batch.md as of 5 Oct 2026). Who acts: agent. Source: this file's "## While waiting (3 Oct 2026, GF4-BATCH8)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

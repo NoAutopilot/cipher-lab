@@ -157,3 +157,7 @@ Requests: gallica.bnf.fr 15 (13 IIIF images + 1 manifest via gallica_folio.py x2
 ## Re-check (CS-BATCH1, 3 Oct 2026)
 
 Re-confirmed, no new material: WebSearch `Stefano Guazzo Nevers Casale 1571 1572 ... "Français 4688"` (3 Oct 2026) returned the Guazzo biography, BnF/Folger/Heidelberg catalogue records and the HistoCrypt Nevers papers, none carrying a decipherment of fr.4688. Local grep of `sources/cryptiana/web/codebreaking.htm` and the DECODE key lists: the "4688" hits are an unrelated Marburg key. Status stays `blocked` (needs-physical-access; the 2 Oct premise check and While-waiting entries stand, no new step).
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: add fr.4688 ff.15-18 and ff.65-86 to the next BnF reproduction quote batch (ASKS 38 pattern, REQUEST.md here) for the owner to order, ~$0 agent cost; while waiting, read fr.3995 undated tables nos.32-34, 71, 73, 76 by image for a Casale/Monferrato caption, ~$1. Who acts: owner. Source: this file's follow-up bullets (fr.4688 not digitised); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

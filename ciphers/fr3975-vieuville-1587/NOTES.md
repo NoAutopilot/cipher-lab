@@ -99,3 +99,7 @@ Related on-disk lead: the 1589 Vieuville-Nevers numerical cipher (phelippes.htm)
 ## While waiting
 
 The one action that depends on nobody: run `tools/print_check.py` phrase queries for the readable clear phrases of the letter ("eschevins et maire de ville", "St Aignen", 30 Sept 1587) against IA/Google Books/OpenAlex, disk-only, ~USD 0.5. Status stays `blocked` (copy-order: colour scan).
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: run tools/print_check.py with the letter's readable clear phrases ("eschevins et maire de ville", "St Aignen", 30 Sept 1587) against IA, Google Books and OpenAlex, ~$0.5; the colour scan stays a copy order (REQUEST.md). Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

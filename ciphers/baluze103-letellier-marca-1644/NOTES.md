@@ -175,3 +175,7 @@ Requests: gallica.bnf.fr 5 (IIIF image, 200 each, 2 s apart); github.com shared 
 ## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
 
 No reading on disk -- no reading: status blocked (DECODE record question). Mazarin tome I circularity check therefore not run; it applies as soon as a reading exists. No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: one browser login with `tools/decode_browser_login.js 2742 <dir>` (the DECODE login works since 24 Sept 2026, CLAUDE.md Access playbook item 3) to read record R2742's documents and see whether its "Decrypted" status carries a plaintext of f.50, ~$1. Who acts: agent. Source: this file's own blocker line ("the blocker stays DECODE R2742 (login needed to see its documents)"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

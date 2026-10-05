@@ -70,3 +70,7 @@ sp53-22-f52: open (line 1) -- edition/page or full-text-search citation found wi
 exit 0
 ```
 `python3 tools/next_steps.py --wait-only | grep sp53-22-f52`: no line.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: diff Tomokiyo's live unsolved.htm and mary.htm entries for f.52 against the 24 Sept snapshots on disk and check for an image reference (092.jpg/093.jpg), ~$0.2, before the TNA copy order (REQUEST.md; not yet in outreach/tna-page-copy-batch.md as of 5 Oct 2026). Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

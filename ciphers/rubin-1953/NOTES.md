@@ -157,3 +157,7 @@ exit 0
 
 $ python3 tools/next_steps.py --wait-only | grep rubin-1953
 (no line)
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: locate and read the FBI FOIA file on Rubin (FBI Vault search "Rubin", Cipher Foundation page, Bauer's Unsolved! notes for its citation) for the FBI's transcription of the slip, settling the 2013-photo vs 2018-reproduction disagreements, ~$1. Who acts: agent. Source: this file's "## While waiting (GF4-BATCH17)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

@@ -127,3 +127,7 @@ Requests: WebSearch 6; scienceblogs.de 3 (WebFetch); futilitycloset.com 1; newsl
 ciphermysteries.com 2 (site search, post); boingboing.net 1 (403); cloud.rotering-net.de 2 (share page, download).
 
 `python3 tools/intake_gate_check.py cylob-c1995` after both sections (3 Oct 2026, GF-A2-11): `cylob-c1995: open (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (exit 1 before).
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: fetch Rotering's 2015 partial transcription PDF again (the cloud.rotering-net.de share named above), turn it into ciphertext.tsv and check one grid page against the scan before any solve (rule 2), ~$2. Who acts: agent. Source: this file's "Next-step note (not run): Rotering's 2015 transcription"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

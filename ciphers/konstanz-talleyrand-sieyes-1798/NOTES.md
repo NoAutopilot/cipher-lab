@@ -78,3 +78,7 @@ Next, cheapest: compare P 1839/21's image (when copied) with Pallain p. 398 as a
 ## Re-check (CS-BATCH3, 3 Oct 2026)
 
 Google Books API (key, country=US), 1 query, `"Sieyes" "17 juillet 1798" chiffre Talleyrand`: 0 results. Nothing new; verdict unchanged (`open`; P 1839/21 stays calibration material because Pallain 1891 p. 398 prints its text, P 1839/5 not found in print). Gap left from the 2 Oct premise check: Pallain's other volumes and Bailleu vol. 2 not searched.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: search Pallain's other Talleyrand volumes and Bailleu vol. 2 for the 17 Jul 1798 Sieyes letter (the gap left by the 2 Oct premise check), IA full text, ~$0.5; the known-plaintext check of P 1839/21 against Pallain p.398 waits on a copy (~$3 once it exists). Who acts: agent. Source: this file's "Next, cheapest" and "Re-check (CS-BATCH3)" gap; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

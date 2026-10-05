@@ -129,3 +129,7 @@ Gate after this pass (3 Oct 2026, GF4-BATCH21):
 erba-2006: open (line 3) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: spec test 2: re-segment the confirmed digraph sequence on `xs` and compare its word-length profile with an unsegmented and a randomly segmented control (specs/erba-2006.json cheap_tests_in_order[1]), ~$1. Who acts: agent. Source: specs/erba-2006.json (test 1 done 25 Sept 2026, test 2 not run); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

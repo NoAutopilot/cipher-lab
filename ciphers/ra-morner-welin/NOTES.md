@@ -106,3 +106,7 @@ No plausible hit for this item. Requests: WebSearch 5 + 1 shared, Google Books A
 Waiting on a copy order (REQUEST.md). The one action that depends on nobody: read the printed Esplunda inventory
 (Google Books Kok4AAAAIAAJ, Riksarkivet Meddelande) around volume 153 through further Books API snippet queries, to
 settle whether "Welin - Östergren" is a surname range and whether any other volume notes cipher letters or a key.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: read the printed Esplunda inventory (Google Books Kok4AAAAIAAJ) around volume 153 through Books API snippet queries, to settle whether "Welin - Ostergren" is a surname range and whether any other volume notes cipher letters or a key, ~$0.5; the copy order stays in REQUEST.md. Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

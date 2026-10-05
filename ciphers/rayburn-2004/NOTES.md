@@ -85,3 +85,7 @@ exit 0
 
 $ python3 tools/next_steps.py --wait-only | grep rayburn-2004
 (no line)
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: compare the earliest Wayback capture of the Schneier post (Jan-Feb 2006) with images/Rayburn-Cryptogram.jpg for differences in the whited-out areas and mark the tokens that border a white-out in ciphertext.tsv, before test 2, ~$0.5. Who acts: agent. Source: this file's "## While waiting (GF4-BATCH18)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

@@ -141,3 +141,7 @@ of the 1779-82 Constantinople legation).
 ## Re-check (CS-BATCH3, 3 Oct 2026)
 
 The "While waiting" action (Riksarkivet Sök-API, `data.riksarkivet.se/api/records?text=Celsing&onlyDigitisedMaterials=true`) was tried twice, one retry after 5 s: curl error 35, SSL_ERROR_SYSCALL on connect to data.riksarkivet.se, HTTP 000 both times; the host is unreachable from this container, logged, not retried further. Verdict unchanged (`open`); the step stays as written, to be run from a session that can reach the host.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: the Riksarkivet Sok-API query (`data.riksarkivet.se/api/records?text=Celsing&onlyDigitisedMaterials=true`) from a host that reaches data.riksarkivet.se: a LOCAL-QUEUE catalogue-lookup row for the runner (the cloud got HTTP 000 twice, 3 Oct 2026), ~$0.3 to file. Who acts: agent. Source: this file's "## Re-check (CS-BATCH3, 3 Oct 2026)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

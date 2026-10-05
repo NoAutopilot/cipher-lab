@@ -1,0 +1,129 @@
+[
+ {
+  "id": "nc-decision",
+  "lane": "todo",
+  "title": "Decisions: 1 target(s)",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ciphers/aca-sanfelipe-duran-1718/NOTES.md",
+  "action": "Answer yes/no on each named question",
+  "back": "one word per question",
+  "folders": [
+   "aca-sanfelipe-duran-1718"
+  ],
+  "detail": "aca-sanfelipe-duran-1718: Verdict unchanged: `blocked`; next step remains the owner-side ACA/PARES description of leg.",
+  "refs": [],
+  "addedBy": "no_cracks.py"
+ },
+ {
+  "id": "nc-desk-read",
+  "lane": "todo",
+  "title": "Desk reads the runner could not do: 4 target(s)",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/LOCAL-QUEUE.tsv",
+  "action": "Open each bounced LOCAL-QUEUE row's page and read the named lines",
+  "back": "a screenshot or the quoted text",
+  "folders": [
+   "eckert-1864",
+   "fr2980-gramont",
+   "hstas-osiander-1627",
+   "mccormick-1999"
+  ],
+  "detail": "eckert-1864: Verdict: keep going: 2 internal gaps; cheapest next: Beckwith/Kimber/Caldwell entries in Cipher No. 2, ~$4; fr2980-gramont: Verdict: keep going: 2 internal gaps; cheapest next: image-check, the z sign against the Tomokiyo and Lasry key images and f.30's z occurren; hstas-osiander-1627: 1622); next: a desk-browser read of its 9 pages for any mention of Osiander's continuation (LOCAL-QUEUE candidate, not filed here).; mccormick-1999: **Next step.** The FBI's full-resolution image (the 2011 story's photograph, or the Vault PDF `ricky-mccormick-part-01- final`), fetched fro",
+  "refs": [
+   "ASKS 140",
+   "ASKS 141",
+   "ASKS 17",
+   "ASKS 32",
+   "ASKS 41",
+   "LQ L4"
+  ],
+  "addedBy": "no_cracks.py"
+ },
+ {
+  "id": "nc-eye",
+  "lane": "todo",
+  "title": "Eye checks: 1 target(s)",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ciphers/moustier-altars/NOTES.md",
+  "action": "Look at the named crop and answer the one question",
+  "back": "your answer in chat",
+  "folders": [
+   "moustier-altars"
+  ],
+  "detail": "moustier-altars: Suggested follow-ups (one line each, not run): - A closer/better-lit photo of altar 2 (Moustier-212.jpg was too oblique) would help settle t",
+  "refs": [],
+  "addedBy": "no_cracks.py"
+ },
+ {
+  "id": "nc-order",
+  "lane": "todo",
+  "title": "Copy orders / quotes: 19 target(s)",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "action": "Place (or approve) the copy order named in each target's REQUEST.md",
+  "back": "the order/quote confirmation",
+  "folders": [
+   "arsenal-dallion-lanmary-1744",
+   "arsenal-ms6829-1708",
+   "arsenal6334-longueville-1650-59",
+   "bl-gualterio-1700",
+   "bl-sacchetti-nunzio-1623",
+   "clairambault296-paget-1713",
+   "clairambault528-bouillon-1713",
+   "decode-2754-bnf-baluze156-1636",
+   "guazzo-nevers-fr4688-1571-72",
+   "harley-287-1587",
+   "heinsius-dopff-1702",
+   "heinsius-hermitage-1704",
+   "heinsius-vanhaersolte-1703",
+   "maurice-rupert-1645",
+   "na-raad-azie-1800",
+   "ormond-arran-1678",
+   "rumpf-vandebie-heinsius-1716-19",
+   "sp78-waldegrave-delafaye-1734",
+   "sp90-raby-1704"
+  ],
+  "detail": "arsenal-dallion-lanmary-1744: a Recueil des instructions volume for Sweden, was not run -- budget-limited, flagged as the next step for whoever returns to this row).; arsenal-ms6829-1708: next: the images: add Ms-6829 fols 296-301 to the BnF Arsenal reproduction quote batch (ASKS 38, outreach/bnf-manuscrits-arsenal-quote-batch; arsenal6334-longueville-1650-59: next: open Troyes Ms 2236 via CCFr/Calames for plain copies of the 1659 letters (depends on nobody), ~$1; the images themselves stay with th; bl-gualterio-1700: Cheapest next step: send the REQUEST.md question to the BL (owner-side email, ~USD 0 agent cost) asking for the folio list of the leaves sti; bl-sacchetti-nunzio-1623: Cheapest next step: send the REQUEST.md question to the BL (owner-side email, ~USD 0 agent cost) asking for the folio list of the leaves sti; clairambault296-paget-1713: Verdict: parked: every gap has an outside blocker (the letter is in undigitised Clairambault 297; next step is the BnF reproduction order vi; clairambault528-bouillon-1713: edition) were not full-text searched -- budget-limited, flagged as the next step.; decode-2754-bnf-baluze156-1636: Verdict: parked: every gap has an outside blocker (too-short at N=138 for a blind solve; fr.4141 needs physical access or a BnF reproduction; guazzo-nevers-fr4688-1571-72: next: add fr.4688 ff.15-18 and ff.65-86 to the next BnF reproduction quote batch (ASKS 38 pattern, REQUEST.md here) for the owner to order, ; harley-287-1587: Verdict: keep going: 10 internal gaps; 8 = c/d rerun and the gloss-masked f.84r control done (RUN1-HAR, 4 Oct 2026: no token changed; G1 PAS; heinsius-dopff-1702: Next step: none cheap remains in print.; heinsius-hermitage-1704: 2317 (the candidate key) should be requested together, since comparing them is the actual next step, not two separate visits.; heinsius-vanhaersolte-1703: ## Next step (cheap, depends on no one) 1.; maurice-rupert-1645: Verdict: parked: every gap has an outside blocker; na-raad-azie-1800: Verdict: parked: 0 internal gaps; both gaps too-short (N=370) and every escalation step done or retired; the sibling search ended with the 1; ormond-arran-1678: Verdict: keep going: 0 internal gaps; cheapest next: read the MS. Carte 50 fols. 439-440 key sheet and apply it to the 20 groups once LOCAL-; rumpf-vandebie-heinsius-1716-19: Follow-up suggestions (one line each): (1) the NA originals of letters 309 (H.A.; sp78-waldegrave-delafaye-1734: next: the TNA page check of SP 78/205 f.146 (REQUEST.md; it rides the TNA page-copy basket, board card tna-batch) to see whether the folio h; sp90-raby-1704: This closes the \"Riezler Bd 7 page text\" half of the A2P4-RABY04 next step.",
+  "refs": [
+   "ASKS 38",
+   "ASKS 46",
+   "ASKS 49",
+   "ASKS 56"
+  ],
+  "addedBy": "no_cracks.py"
+ },
+ {
+  "id": "nc-sorter",
+  "lane": "todo",
+  "title": "Sort piles: 2 target(s)",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/tools/sign_sorter.py",
+  "action": "Open each target's sorter page and settle its piles",
+  "back": "the sorter export (piles.json) per target",
+  "folders": [
+   "decode-1162-modena-ambung-1492",
+   "riksarkivet-r4282-1628"
+  ],
+  "detail": "decode-1162-modena-ambung-1492: Verdict: keep going: 3 internal gaps; cheapest next: native tiles of the three g/q/sigma shapes from 1162 p.1 and 1168 f.12r into the sign s; riksarkivet-r4282-1628: Verdict: parked: every gap has an outside blocker (no-key-material for the letter, the print step now done via L46; the Owner sign sorter's ",
+  "refs": [],
+  "addedBy": "no_cracks.py"
+ },
+ {
+  "id": "nc-waiting",
+  "lane": "waiting",
+  "title": "Waiting on replies: 4 target(s)",
+  "link": "https://github.com/noautopilot/cipher-lab/blob/main/ASKS.md",
+  "action": "Nothing to do; forward any reply that arrives",
+  "back": "the reply, when it comes",
+  "folders": [
+   "pro3055-clinton-1779",
+   "bl-james-1669",
+   "naf14913-rousseau-venice-1743",
+   "zeschau-seebach-1841"
+  ],
+  "detail": "pro3055-clinton-1779: Verdict: keep going: 7 internal gaps (3 Oct 2026, A2P4-CLINT: the 1920 vol. III date and B-citation grep found no further printed text of an; bl-james-1669: Verdict: parked: every gap has an outside blocker; naf14913-rousseau-venice-1743: Verdict: keep going: 6 internal gaps; cheapest next: Souchon 1915 N° 2044 (f.197r letter, 21 Dec 1743) and re-check N° 2031 text for a print; zeschau-seebach-1841: Verdict: keep going: 1 internal gap (key rebuild: GAPS202's 4-gram syllabary annealer failed its matched control twice, 0.032 then 0.000 vs ",
+  "refs": [
+   "ASKS 56",
+   "ASKS 64",
+   "ASKS 76",
+   "SEND S2:sent",
+   "SEND S5:sent"
+  ],
+  "addedBy": "no_cracks.py"
+ }
+]

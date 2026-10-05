@@ -303,3 +303,6 @@ recorded beside any cipher passage. Sloane MS 4019's neighbouring leaves are Slo
 returned a page with no result list in plain curl (script-rendered) -- unreachable by this route, not a negative.
 Next for the target remains the BL imaging request (REQUEST.md), Add MS 4956 with Sloane MS 4019 f.79.
 
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: wait for the BL Imaging reply to the 23 Sept 2026 request (ASKS 13, board card bl-chase), then transcribe Add MS 4956 against Madden's key at f.66 and Sloane MS 4019 f.79, ~$4 per 10 leaves; nothing cloud-side remains before the images. Who acts: outside. Source: this file's last line ("Next for the target remains the BL imaging request (REQUEST.md)"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

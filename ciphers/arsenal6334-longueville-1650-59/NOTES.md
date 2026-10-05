@@ -91,3 +91,7 @@ Not found solved or deciphered in any source above (found where: none; not found
 ## fr17 re-judge (FR17-RJ2, 3 Oct 2026)
 
 No reading on disk -- no ciphertext or reading: status blocked (REQUEST.md). No judge run (fr16 or fr17), no shuffled-decode control, no per-fold rate at a reading's N; the fr17 per-fold rates at N=138/300 are in tools/data/fr17/README.md.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: open Troyes Ms 2236 via CCFr/Calames for plain copies of the 1659 letters (depends on nobody), ~$1; the images themselves stay with the BnF Arsenal quote batch (ASKS 38, REQUEST.md). Who acts: agent. Source: this file's "Verdict (CS-A2-L, 3 Oct 2026)" While-waiting sentence; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

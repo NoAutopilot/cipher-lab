@@ -129,3 +129,7 @@ WebSearch (standard) `Wallis "e Musaeo 203" OR "e Mus. 203" Brasset Bordeaux 165
 
 ## While waiting
 Next action that depends on nobody: grep Thurloe vols 2-5 djvu text (`collectionofstat02thur`..`05thur`) for "Brasset", "Buckingham", "Townesend" and the Scotland 1651 window, about USD 0.2, to finish the printed-edition side before any Bodleian copy order.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: grep Thurloe vols 2-5 djvu text (collectionofstat02thur..05thur) for "Brasset", "Buckingham", "Townesend" and the Scotland 1651 window, ~$0.2, to finish the printed-edition side before any Bodleian copy order. Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

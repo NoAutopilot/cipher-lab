@@ -126,3 +126,7 @@ exit 0
 
 $ python3 tools/next_steps.py --wait-only | grep ss-radio-lippert-1944
 (no line)
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: find Gnegel's 2021 eBay specimen (ebay.de item 284276746819, Wayback CDX) and other "chiffrierter Funkspruch 1944" listings from the same seller and compare their cipher groups with ours (identical or shuffled groups would settle the souvenir-forgery question), ~$1. Who acts: agent. Source: this file's "## While waiting (GF4-BATCH18)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

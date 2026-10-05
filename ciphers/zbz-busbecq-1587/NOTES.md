@@ -80,3 +80,7 @@ Local `sources/cryptiana` last grepped 24 Sept 2026 (habsburg.htm names Busbecq'
 - (d) recipient's side: Rudolf II's Austrian side -- not searched this pass (no edition located; Busbecq's own letters-in-print end 1585 as above). Unreachable/unsearched. Lead: F&D vol. 2 Letter XIV prints a cipher/"code drawn up at Speyer" for the Emperor's use (undated); a sibling key may exist in print or in Vienna.
 
 Where it was not found: the printed Latin letters to Rudolf II cover 1582-85 only, so the 1587 letter lies outside every printed Busbecq edition opened; Austrian archive editions (HHStA Staatskanzlei Frankreich) were not searched.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: search the Austrian side: HHStA Staatskanzlei Frankreich finding aids and any printed edition of Busbecq's 1586-87 reports to Rudolf II, plus the Speyer code in F&D vol. 2 Letter XIV as a possible sibling key, ~$1. Who acts: agent. Source: this file's premise check (d) ("Austrian archive editions ... were not searched"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

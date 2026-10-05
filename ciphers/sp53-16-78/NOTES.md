@@ -58,3 +58,7 @@ Thorpe, *Calendar of State Papers relating to Scotland* (1858), Appendix/Mary Qu
 
 ## While waiting
 Next action that depends on nobody: be-api full-text search of the other Boyd volume copies and of CRS 5 (Pollen, `unpublisheddocum05poll`) for the letter's own wording is done at the snippet level; the open item is Boyd vol. 8 pp.211-212 -- LOCAL-QUEUE row L13 is the owner-side route; cost about USD 0.5 for a local-runner read.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: Boyd, CSP Scotland vol. 8 pp.211-212 read on the local runner (LOCAL-QUEUE row L13, HathiTrust miun.abe1726.0008.001), ~$0.5; then the TNA page copy of SP 53/16 no.78. Who acts: outside. Source: this file's "## While waiting" (LOCAL-QUEUE L13); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

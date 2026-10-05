@@ -126,3 +126,7 @@ target from shuffle (-150.9/-151.6 vs -151.6 to -153.7). The en judge has unknow
 line, N=34) would be a weaker non-test with the same anneal. Not run: the crib GF4-BATCH22 noted (per brief). Next
 step needs a different instrument, not more restarts: a crib/word-constrained solve, or the marker-scheme sweep
 aaymeloglu's SHORTLIST proposes.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: a crib/word-constrained solve or aaymeloglu's SHORTLIST marker-scheme sweep (a different instrument, not more anneal restarts; rule 3's third-attempt clause), with a matched control at N=67, ~$3. Who acts: agent. Source: this file's last paragraph ("Next step needs a different instrument"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.

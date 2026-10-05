@@ -30,6 +30,12 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    every check-in; a row it lists is a job to queue that hour (a WAIT-PASS worker writes the section from the
    folder's own NOTES/AUDIT/NEAR evidence), never a row to leave.
 
+0c. **No cracks (owner, 5 Oct 2026).** Run `python3 tools/next_steps.py` then `python3 tools/no_cracks.py --board <export>
+   --cards-json /tmp/nc-cards.json` (export the desk board's `cards` collection with ArtifactData list to a JSON file first);
+   add the proposed cards (or add the folder to an existing card's `folders`, or fix the stale ASKS row it names); every
+   NO-NEXT row gets a next step written in its NOTES ("next: <step>, ~$X"). Exit 0 means every live target has a next step
+   and every owner step or owed reply has a card.
+
 1. **Key livecheck.** `python3 tools/key_livecheck.py` (CLAUDE.md Access playbook; not the same tool as duty 0a's
    `key_probe.py` -- that one is name-presence across accounts, this one is a live test call per credential). If a
    credential's present/works result changed since the last KEYS-STATUS.md (absent->present, or failing->working),

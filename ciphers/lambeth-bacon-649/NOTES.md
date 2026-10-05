@@ -158,3 +158,7 @@ Requests: archive.org 41 (36 djvu/metadata, 4 advancedsearch, 1 page_numbers.jso
 
 ## While waiting (replaces the LAMB-POTT line)
 Next action that depends on nobody: read the page images of Baconiana Jan 1897 pp.23-29 (IA leaves 26-32; free item) to check the OCR of the printed cipher values and phrases, and test them against any image of ff.490-495 once one exists; a key fragment (about 10 values) is on record there. Owner-side: send outreach/francis-bacon-society-pott-1896.md after OUT-CHECK (ASKS row 122); the copy order in REQUEST.md is the other route.
+
+## Next step (NO-CRACKS, 5 Oct 2026)
+
+next: read the page images of Baconiana Jan 1897 pp.23-29 (IA leaves 26-32, a free item) to check the OCR of the printed cipher values, ~$1; the Francis Bacon Society email (board card fbs) runs in parallel. Who acts: agent. Source: this file's "## While waiting (replaces the LAMB-POTT line)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
