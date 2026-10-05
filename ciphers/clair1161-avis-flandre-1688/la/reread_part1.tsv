@@ -1,0 +1,41 @@
+passage	pos	label	conf	second	note
+c185R_L01	2	s	L		sign not clearly located
+c185R_L01	22	s	H	S	small s before z
+c185R_L02	30	S	L	ls	line end, unclear
+c185R_L03	3	s	M		small s in ss pair
+c185R_L03	4	s	M		small s in ss pair
+c185R_L03	6	s	M		small s after wb
+c185R_L03	7	s	M		small s
+c185R_L05	1	s	M		small s of ss pair
+c185R_L05	2	s	M		small s before S
+c185R_L05	9	s	M		small s of ss
+c185R_L05	10	s	M		small s of ss
+c185R_L07	9	ls	M	S	tall descending hooked stroke
+c185R_L08	7	s	M		small s of ss
+c185R_L08	8	s	M		small s of ss
+c185R_L09	1	s	M		small s of ss
+c185R_L09	2	s	M		small s of ss
+c185R_L09	25	s	L	S	not clear
+c185R_L11	3	S	H		hooked S
+c185R_L11	21	tz	L		window nearly blank
+c185R_L12	7	x	L		x-like after tz
+c185R_L16	3	s	H		small s before z
+c185R_L17	13	x	M		x shape
+c185R_L18	27	z	M	tz	barred z-like
+c185R_L21	20	s	H		small s before z
+c185R_L24	1	z	L	7	small barred
+c185R_L24	17	z	L	tz	unclear
+c186R_L02	16	e	L	s	small curl
+c186R_L03	3	th	L	S	unclear
+c186R_L04	13	rot	M	8S	hook fused to 8
+c186R_L07	7	eloop	M	Rloop	large looped sign
+c186L_L04	8	e	M	c	small epsilon
+c186L_L04	24	4	H		digit 4
+c186L_L05	4	dia	M	z	star-like blob cross
+c186L_L05	14	dia	M	z	star-like blob cross
+c186L_L06	4	dia	M	z	star-like blob cross
+c186L_L07	21	qb	H		q with crossed descender
+c187L_L04	5	S	M	y	hooked
+c187L_L06	24	S	M	sd	hooked
+c187L_L07	15	z	M		barred z
+c187L_L09	14	th	H		oval with bar
