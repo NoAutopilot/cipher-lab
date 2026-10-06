@@ -26,3 +26,10 @@ Decision rules (no other key change is allowed by this run):
 - Q2: if C and T pass and every converged restart gives G1 = G7 = s, recorded as confirmed on the native transcription
   (no key change; already S). Otherwise logged, no change.
 - Any other sign whose converged value differs from key_53.tsv (G6 = k by context included): reported, no change.
+
+## Deviation 1 (14:5x UTC, before any scored run)
+The exact-profile control could not be built: `make_profile_control` found no 364-letter window of align_74's text whose letter
+counts partition exactly by the target's sign counts (5000 tries each, seeds 1-3; no anneal ran). Run 1 uses the tool's standard
+matched control instead (`make_control`, K = 21, N = 364, homophones allotted to letters by corpus frequency): S1's own control
+design, same N and K as the target, same language and era. Gates and decision rules unchanged. Gate L is read on control signs
+with count <= 3 under this design.

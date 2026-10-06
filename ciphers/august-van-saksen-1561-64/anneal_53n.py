@@ -31,9 +31,11 @@ if mode == 'control':
         for w in l.split(':', 1)[1].split(';;'):
             if '|' in w:
                 words.append(w.split('|')[1].replace(' ', ''))
-    prof = ha.load_profile(CT, {'DOT', 'COL'})
-    seq, p, truth, start = ha.make_profile_control(' '.join(words), prof, seed)
-    res.update(plain=p, window_start=start, truth=truth)
+    # Deviation (prereg_avsk.md): the exact-profile control finds no 364-letter window of align_74 that partitions by
+    # the target's sign counts (5000 tries, seeds 1-3), so the tool's standard matched control (K, N, homophones by
+    # corpus frequency, S1's own design) is used instead.
+    seq, p, truth = ha.make_control(' '.join(words), len(set(seq)), len(seq), model, seed)
+    res.update(plain=p, truth=truth)
 elif mode == 'shuffle':
     random.Random(seed + 77).shuffle(seq)
 from collections import Counter
