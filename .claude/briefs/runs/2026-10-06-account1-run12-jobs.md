@@ -77,3 +77,31 @@ the grade of the affected token(s) per rule 4 (C needs known plaintext matched t
 this token unless the OR print of this telegram is the plaintext), record the decision with reasons in AUDIT.md "## Carry-over R12A-ECKV",
 apply it through the folder's decode script and --check (exit 0), carry into status.json / any SECOND-OPINIONS-QUEUE.tsv row for this target.
 Do not run the Leghorn/Leopard sweep (another job).
+
+## Wave 2 (spawned as wave-1 slots free, from 18:0x UTC)
+
+### R12A-D1411P4 -- decode-1411-hhsta-vienna-1600, p.4 numerals. Cap 6.5, box 90 min.
+Verdict's cheapest next: cut and read p.4 numerals in two blind Sonnet passes against the frozen T21r, reconcile, and score with the same
+coverage controls D4-1411P3 used for p.3 (shuffled p99, shifts max, leaf gloss reference; pre-register before scoring, copy D4-1411P3's prereg).
+Units: crops 1 + 2 passes + 1 reconcile + scoring 1 = 5 x 1.5 (well, ~1.3 each with Opus floor). Report both numbers; grades with counts.
+
+### R12A-BALS -- baluze167-davaux-1637, sign sorter for the 170 f.228 hand. Cap 3, box 50 min.
+Verdict's cheapest next. Build the sorter from D1-BAL170B's reconciled f.228r/f.228v crops with tools/sign_sorter.py (TRANSCRIPTION.md),
+PASS tools/sorter_preflight.py, open 5+ random tiles against the line image, then flag it to the account-3 orchestrator in ROOM to publish.
+Do not decode f.228 (that waits on the owner's sort). Update Remaining gaps / Escalation.
+
+### R12A-SEUT -- fr3151-seure-1558, Tournon 1556 key from fr. 3138 fo. 22r. Cap 6, box 90 min.
+Verdict's cheapest next: cut fo. 22r (13 lines, slip decipher legible at M) with tools/iiif_lines.py --ark/--canvas (gallica_folio.py for the
+canvas), build an image-exemplar reference sheet from the leaf, two blind Sonnet passes against it, reconcile; then try the Tournon key on the
+items 43/44 cipher body ONLY through a pre-registered gate with a matched control (same key on shuffled cipher / wrong-key control as R9-SEURE2
+did for La Guiche). Units: crops 1 + sheet 1 + 2 passes + 1 recon + test 1 = 6 x ~1. Gallica probe first.
+
+### R12A-AVS175 -- august-van-saksen-1561-64, WVO 175 pp.3-8 for a hand that separates Qf. Cap 4.5, box 70 min.
+RUN11 handoff item (3): look at WVO 175 pp.3-8 (on disk per images/inventory.tsv, or one fetch each from the R21 route) for a glossed hand
+that separates Qf (126's K and Qf M); crops first, then at most 5 lines read in one Sonnet pass; any grade change only through a pre-registered
+test; a reading change after AUDIT.md -> NOTES note + ROOM verifier flag (N4 target). Gaps_check.
+
+### R12A-ECKLEG -- eckert-1862, Leghorn/Legend/Leopard date-aligned sweep (after R12A-ECKV). Cap 3, box 50 min.
+Verdict's first half: the same date-aligned sweep D1-ECK62S ran for Lehigh (ec18/lehigh_uses.tsv, its script), for Leghorn, Legend and
+Leopard in mssEC 18-19 sent ledgers, against the OR print. Record in ec18/<word>_uses.tsv; no grade change by the worker (hand the result to a
+verifier via ROOM flag if a grade would move). decode --check exit 0.
