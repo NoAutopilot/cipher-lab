@@ -110,3 +110,26 @@ blind Sonnet pass per page on crops (~1.5 each) + one reconciliation unit = ~6, 
 unit that would cross 80% of cap or box. Apply the key with the folder's existing scripts; report per-cell agreement with the decipherment
 (grade H for key-consistent cells), any cell where the encipherer erred (Tomokiyo notes -1 letter-position slips on 2380), and update gap
 3 / Verdict. Keep images/h1649 under 30 MB (crops to scratchpad unless cited).
+
+Wave 1 results (check-in 07:37 UTC): all 5 D, workers 10.67 (get_session). Follow-ups below.
+
+### R10-SUR693 -- na-suriname-map-1781, gap 6: inv. 373 scan 0693 cipher + interlinear pair (cap 4, box 60 min)
+Intake gate: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Gap 6 (R10-SUR): fetch inv. 373 scans 0690-0696 at ~2000 px (<= 10 requests, service.archief.nl, >= 1.8 s), identify the letter (date,
+sender, place). Crop the cipher lines (tools/iiif_lines.py --image, paste command), transcribe cipher + interlinear plain (one blind Sonnet
+pass on crops ~1.5 + your reconciliation = 1 unit). Then the key question: is this the same sign system as the 1781 map key (inv. 86 /
+key.tsv)? Compare sign inventories by script; if it is, test the pair against key.tsv per sign (agreements, conflicts) and say which of the
+map's U/M signs it would settle -- no key.tsv edit in this job, write a candidate file and flag for a verifier. If budget remains below 80%,
+a 1-in-3 sweep of 0600-0800 for more passages (contact sheets, <= 30 requests). Update gap 6 / Verdict, gaps_check.
+
+### R10-JANS26B -- na-janssens-java-1811, invnr 26 page-through scans 59-191 (cap 4, box 60 min)
+Intake gate: `na-janssens-java-1811: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Continue R10-JANS26 (invnr26_scans.tsv on disk): scans 59 onward, same method (contact sheets with the leaf-188 positive control), one
+session of <= 60 requests; record paged/remaining. Any No.1 decipherment, plain copy, translation or further glossed cipher leaf: fetch at
+1200 px, describe, scan numbers; no transcription. Update gap 3 / Verdict, gaps_check.
+
+### R10-ROELL10 -- roell-vandedem-1809, NA inv. 990 (Van Dedem to Testa) early Feb 1809 (cap 2.5, box 40 min)
+Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R10-ROELL9's next: R1469 may be an incoming letter to the legation. Find NA inv. 990 (check the inventory number and its description on
+the item page first), bisect to late Jan - mid Feb 1809 (<= 30 requests, >= 1.8 s), and look for a 9 Feb 1809 item, a 7-page "Monsieur"
+letter, or any cipher. Compare with R1469's form; update the Verdict line.
