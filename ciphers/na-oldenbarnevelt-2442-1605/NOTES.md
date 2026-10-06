@@ -967,6 +967,68 @@ state letters, all 19th-century printings (one register, one printing kind), fol
 owner sign-sorter check of the 9/q, f/p, v/r, l/t and G/t pairs on this hand, if a known-answer accuracy figure is wanted
 for B/C1.
 
-## While waiting (RUN4-WAITBF, 4 Oct 2026)
+## 13. R7-OLDA, 6 Oct 2026: crop-and-read pass on blocks A and C2 (step (a')) -- the two blind passes split 19.0%, over the 10% rule; reconciled draft only, committed rows and reading unchanged; status stays open
 
-- Action that depends on nobody: step (a') of the latest Verdict (after OLD-ES17A) -- the crop-and-read pass on blocks A and C2 with the settled conventions (tools/iiif_lines.py crops first, per-pass pricing), ~$4.
+Brief: `.claude/briefs/runs/2026-10-06-account2-run7-jobs.md` (LANE LANE-RUN7-account-2, account 2), job R7-OLDA. Intake gate
+(01:2x UTC, pasted by the lane): `open (line 1) -- edition/page or full-text-search citation found within 6 lines`. Step (a') was
+still undone (no dated section after OLD-ES17A ran it). Rule, normalisation, figure and the stop rule were pre-registered in
+`transcription/PREREG_R7-OLDA.md` (commit df682ae2, pushed before any pass was read).
+
+**Crops (committed, `images/crops_AC2/`, 60 files, 1.4 MB, no network):**
+`python3 tools/iiif_lines.py --image images/001_3f72fc28-348d-42ae-974f-3a94f3c76007.jpg --region 900,1420,1790,1180 --centres 98,210,308,405,500,608,698,795,900,1005,1102 --deskew 200 --prefix A --top-margin 30 --bottom-margin 30 --max-width 900 --overlap 120 --out <dir> --debug`
+(A, folio 54, 11 lines x 3) and
+`python3 tools/iiif_lines.py --image images/006_d027ee45-9cd0-44db-82cd-45ed3575eecb.jpg --region 700,2640,1930,1090 --centres 167,275,375,550,667,767,883,967 --deskew 200 --prefix C2 --top-margin 30 --bottom-margin 30 --max-width 900 --overlap 120 --out <dir> --debug`
+(C2, folio 56, 8 lines x 3), plus `C2_L09_s1.jpg` cut by hand with PIL (box 2100,3520,2560,3680 of leaf 006) for the word
+written under line 8. The automatic line finder misplaced these sloping lines (first runs: 15 and 2 bands), so the centres were
+given by eye from a gridded view and `--deskew` levelled each line; manifests `images/crops_AC2/manifest_A.json`, `manifest_C2.json`.
+
+**Two blind passes** (Sonnet subagents, crops only, no key/reading/prior transcription; one block per call, 4 calls): pass A lines
+in order (`transcription/passF_blindA_R7OLDA.tsv`, 169 words), pass B lines reversed (`transcription/passG_blindB_R7OLDA.tsv`,
+167 words). Notation as PREREG_OLD-PASS2 item 1. Each reader set confidence by line or by rule, not word by word (their own notes),
+so the confidence column carries little.
+
+**Figure (pre-registered: `python3 transcription/diff_r7olda.py passF passG`, agreement between two readers, not accuracy):**
+
+| block | signs (mean of the two passes) | disagreement |
+|---|---|---|
+| A | 382 | 82 (21.4%) |
+| C2 | 313 | 50 (16.0%) |
+| A+C2 | 696 | **132 (19.0%)** -- over the 10.0% rule |
+
+Post hoc (not pre-registered): folding the letter-vs-digit notation of the vowels (u/v/2, e/8, a/4, o/7, i/y/3) and 5/s on both
+sides still leaves 105/696 = 15.1%, so the split is mostly real sign disagreement (d/8 for the looped d, p/g/l on long descenders,
+c/l/t, r/v, m/n/r minims and word division in lines A6-A10), not notation. For comparison, B/C1 split 12.1% between two readers
+(section 11), against a committed transcription that one reader had built with care.
+
+**Reconciliation (one unit, by eye on the crops, PREREG item 5):** `tools/reconcile_passes.py` on the normalised passes (81.7%
+column agreement, 132 disagreement columns, `transcription/disagreements_R7OLDA.tsv`), then each line settled from its three crops:
+`transcription/reconciled_AC2_R7OLDA.tsv`, 165 words, **36 marked `uncertain`**. Each pass against the reconciled draft: pass A
+10.6%, pass B 17.0%. Not gating (PREREG item 6): reconciled vs the committed A/C2 rows, whole block, normalised Levenshtein 98 of
+325 committed signs (A) and 97 of 287 (C2) -- rough, because the committed rows leave out the plain words the passes include.
+Sign observations from the crops, for the sorter and the next reader, not adopted into the committed rows:
+- A L2 `85p8` + A L3 `v4nc4s`: one word split over the line break. The `5` here is word-medial, so 5 = s is not only word-final in
+  this hand (A6 `52`, C2 L8 `5428n` the same shape).
+- A L4 and A L9 end in `4 2s^a.` and `d8 2s^a,` with a visible superscript a: the B/C1 "V.Sª" formula. This bears on committed
+  A57 `d8'25,` (section 5 read it as a date): the crop shows the abbreviation, not a numeral.
+- A L3 `l7` and C2 L2 `l7s`: the G-shaped ligature, which both passes wrote `c7`/`b7s`.
+- A L8 `d2q28` (both passes wrote the first sign as 8/d with a different second sign); A L7 `q24nd7` (committed `c24nd7`).
+- C2 L6 carries an interlinear `d8b8nd8` above `pv8d8`; C2 L8 opens with a struck word.
+
+**Stop (PREREG item 4):** the A+C2 split is over a tenth, so the job stops after reconciliation. `ciphertext.tsv`, `overrides.tsv`,
+`reading.txt` and the grades are **not changed**; no decode, no judge run, no third machine pass (CLAUDE.md Usage 6). The 36
+uncertain words are listed for the owner's sign sorter in `transcription/sorter_focus_R7OLDA.tsv` (crop, block, line, word): there is
+no sorter build for this hand yet, so this is the input list for one, not a `focus.tsv` keyed to tile ids.
+
+Not found: no gloss, key or second hand on the A/C2 crops; no reading was attempted from the draft. Do not classify novelty (rule 10).
+
+**Verdict: open.** **Next steps, cheapest first (after R7-OLDA):** (s) owner sign-sorter pass on this hand, seeded from
+`transcription/sorter_focus_R7OLDA.tsv` and the B/C1 look-alike pairs (9/q, f/p, v/r, l/t, G/t; section 11), then machine passes
+against the settled labels (TRANSCRIPTION.md order) -- waiting on the owner's sorter, not a machine step; (a'') once the alphabet
+is settled, replace the A/C2 rows with the reconciled draft re-checked against the labels, decode with `scripts/apply_key.py`,
+grade, judge with es17a (unknown reliability), ~$2; (d') a tighter era corpus if a judge PASS/FAIL is wanted, ~$5.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, 6 Oct 2026)
+
+- Action that depends on nobody: (d') of the latest Verdict -- the tighter era corpus (several CODOIN volumes of 1598-1621 state
+  letters, fold-checked), ~$5. Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
+  the owner's sorter.
