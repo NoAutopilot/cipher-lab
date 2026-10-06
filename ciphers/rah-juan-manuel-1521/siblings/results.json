@@ -1,0 +1,551 @@
+{
+ "primary": {
+  "firm_only": true,
+  "n_signs": {
+   "JM": 35,
+   "AS": 39
+  },
+  "V_shape_value_JM_vs_AS": {
+   "real": 1,
+   "null_mean": 0.728,
+   "p95": 2,
+   "p99": 3,
+   "max": 5,
+   "p_ge": 0.5304
+  },
+  "V_matches": [
+   "h6=null"
+  ],
+  "inventory_overlap": {
+   "shared": [
+    "3",
+    "4",
+    "9",
+    "Lo",
+    "g_tail",
+    "h6",
+    "hash",
+    "oo_linked",
+    "q",
+    "tt_bar",
+    "tt_o",
+    "venus",
+    "x",
+    "x_stroke",
+    "yogh"
+   ],
+   "JM_only": 18,
+   "AS_only": 21,
+   "jaccard": 0.278
+  },
+  "shared_shape_values": {
+   "3": {
+    "JM": [
+     "e"
+    ],
+    "AS": [
+     "d"
+    ]
+   },
+   "4": {
+    "JM": [
+     "o"
+    ],
+    "AS": [
+     "e"
+    ]
+   },
+   "9": {
+    "JM": [
+     "e"
+    ],
+    "AS": [
+     "l"
+    ]
+   },
+   "Lo": {
+    "JM": [
+     "n"
+    ],
+    "AS": [
+     "s",
+     "t"
+    ]
+   },
+   "g_tail": {
+    "JM": [
+     "d"
+    ],
+    "AS": [
+     "y"
+    ]
+   },
+   "h6": {
+    "JM": [
+     "null"
+    ],
+    "AS": [
+     "null"
+    ]
+   },
+   "hash": {
+    "JM": [
+     "g"
+    ],
+    "AS": [
+     "o"
+    ]
+   },
+   "oo_linked": {
+    "JM": [
+     "f"
+    ],
+    "AS": [
+     "d",
+     "g"
+    ]
+   },
+   "q": {
+    "JM": [
+     "l"
+    ],
+    "AS": [
+     "t"
+    ]
+   },
+   "tt_bar": {
+    "JM": [
+     "s"
+    ],
+    "AS": [
+     "p"
+    ]
+   },
+   "tt_o": {
+    "JM": [
+     "b",
+     "u"
+    ],
+    "AS": [
+     "null"
+    ]
+   },
+   "venus": {
+    "JM": [
+     "y"
+    ],
+    "AS": [
+     "s"
+    ]
+   },
+   "x": {
+    "JM": [
+     "e"
+    ],
+    "AS": [
+     "h"
+    ]
+   },
+   "x_stroke": {
+    "JM": [
+     "z"
+    ],
+    "AS": [
+     "x"
+    ]
+   },
+   "yogh": {
+    "JM": [
+     "r"
+    ],
+    "AS": [
+     "e"
+    ]
+   }
+  },
+  "ours_C": [
+   "yogh=r",
+   "co=s",
+   "alpha=a",
+   "xi=i",
+   "venus=y",
+   "4=de",
+   "9=e"
+  ],
+  "W_alphabet_tsv_vs_JM": {
+   "real": 5,
+   "null_mean": 0.342,
+   "p95": 1,
+   "p99": 2,
+   "max": 4,
+   "p_ge": 0.0
+  },
+  "W_alphabet_tsv_vs_AS": {
+   "real": 0,
+   "null_mean": 0.149,
+   "p95": 1,
+   "p99": 1,
+   "max": 3,
+   "p_ge": 1.0
+  },
+  "T_code_identity": {
+   "real": 0,
+   "null_mean": 0.061,
+   "p95": 1,
+   "p99": 1,
+   "max": 3,
+   "p_ge": 1.0
+  },
+  "T_detail": {
+   "words_in_both": 75,
+   "same_code": [],
+   "examples": {
+    "al": [
+     "zan",
+     "zud"
+    ],
+    "antes": [
+     "yeg",
+     "zel"
+    ],
+    "aquell": [
+     "yam",
+     "zom"
+    ],
+    "aqui": [
+     "yol",
+     "zem"
+    ],
+    "bien": [
+     "xag",
+     "yib"
+    ],
+    "carta": [
+     "vo",
+     "yeh"
+    ],
+    "como": [
+     "var",
+     "yon"
+    ],
+    "con": [
+     "tac",
+     "xa"
+    ],
+    "contra": [
+     "tig",
+     "xed"
+    ],
+    "cosa": [
+     "tas",
+     "xeb"
+    ],
+    "crehe": [
+     "se",
+     "xid"
+    ],
+    "creo": [
+     "sa",
+     "xod"
+    ]
+   },
+   "n_codes": {
+    "JM": 185,
+    "AS": 175
+   }
+  },
+  "ordering_rho": {
+   "JM": -0.985,
+   "AS": -0.993
+  },
+  "code_finals": {
+   "JM": "8bcdefghlmnpqrstvxyz",
+   "AS": "bcdfghlmno"
+  },
+  "code_initials": {
+   "JM": "bcdfghjklmnpqrstvxyz",
+   "AS": "cdfghlmnprstvxyz"
+  }
+ },
+ "sensitivity_all_signs": {
+  "firm_only": false,
+  "n_signs": {
+   "JM": 38,
+   "AS": 44
+  },
+  "V_shape_value_JM_vs_AS": {
+   "real": 1,
+   "null_mean": 0.896,
+   "p95": 3,
+   "p99": 3,
+   "max": 6,
+   "p_ge": 0.6091
+  },
+  "V_matches": [
+   "h6=null",
+   "tt_o=null"
+  ],
+  "inventory_overlap": {
+   "shared": [
+    "3",
+    "4",
+    "9",
+    "Lo",
+    "alpha",
+    "g_tail",
+    "h6",
+    "hash",
+    "oo_linked",
+    "q",
+    "tt_bar",
+    "tt_o",
+    "venus",
+    "x",
+    "x_stroke",
+    "yogh"
+   ],
+   "JM_only": 18,
+   "AS_only": 23,
+   "jaccard": 0.281
+  },
+  "shared_shape_values": {
+   "3": {
+    "JM": [
+     "e",
+     "i"
+    ],
+    "AS": [
+     "d"
+    ]
+   },
+   "4": {
+    "JM": [
+     "o"
+    ],
+    "AS": [
+     "e"
+    ]
+   },
+   "9": {
+    "JM": [
+     "e"
+    ],
+    "AS": [
+     "l"
+    ]
+   },
+   "Lo": {
+    "JM": [
+     "n"
+    ],
+    "AS": [
+     "s",
+     "t"
+    ]
+   },
+   "alpha": {
+    "JM": [
+     "a"
+    ],
+    "AS": [
+     "m"
+    ]
+   },
+   "g_tail": {
+    "JM": [
+     "d"
+    ],
+    "AS": [
+     "y"
+    ]
+   },
+   "h6": {
+    "JM": [
+     "null"
+    ],
+    "AS": [
+     "null"
+    ]
+   },
+   "hash": {
+    "JM": [
+     "g"
+    ],
+    "AS": [
+     "o"
+    ]
+   },
+   "oo_linked": {
+    "JM": [
+     "f"
+    ],
+    "AS": [
+     "d",
+     "g"
+    ]
+   },
+   "q": {
+    "JM": [
+     "l"
+    ],
+    "AS": [
+     "t"
+    ]
+   },
+   "tt_bar": {
+    "JM": [
+     "s"
+    ],
+    "AS": [
+     "p"
+    ]
+   },
+   "tt_o": {
+    "JM": [
+     "b",
+     "null",
+     "u"
+    ],
+    "AS": [
+     "null"
+    ]
+   },
+   "venus": {
+    "JM": [
+     "y"
+    ],
+    "AS": [
+     "s"
+    ]
+   },
+   "x": {
+    "JM": [
+     "e"
+    ],
+    "AS": [
+     "h"
+    ]
+   },
+   "x_stroke": {
+    "JM": [
+     "z"
+    ],
+    "AS": [
+     "m",
+     "x"
+    ]
+   },
+   "yogh": {
+    "JM": [
+     "r"
+    ],
+    "AS": [
+     "e"
+    ]
+   }
+  },
+  "ours_C": [
+   "yogh=r",
+   "co=s",
+   "alpha=a",
+   "xi=i",
+   "venus=y",
+   "4=de",
+   "9=e"
+  ],
+  "W_alphabet_tsv_vs_JM": {
+   "real": 5,
+   "null_mean": 0.335,
+   "p95": 1,
+   "p99": 2,
+   "max": 4,
+   "p_ge": 0.0
+  },
+  "W_alphabet_tsv_vs_AS": {
+   "real": 0,
+   "null_mean": 0.204,
+   "p95": 1,
+   "p99": 2,
+   "max": 3,
+   "p_ge": 1.0
+  },
+  "T_code_identity": {
+   "real": 0,
+   "null_mean": 0.069,
+   "p95": 1,
+   "p99": 1,
+   "max": 2,
+   "p_ge": 1.0
+  },
+  "T_detail": {
+   "words_in_both": 75,
+   "same_code": [],
+   "examples": {
+    "al": [
+     "zan",
+     "zud"
+    ],
+    "antes": [
+     "yeg",
+     "zel"
+    ],
+    "aquell": [
+     "yam",
+     "zom"
+    ],
+    "aqui": [
+     "yol",
+     "zem"
+    ],
+    "bien": [
+     "xag",
+     "yib"
+    ],
+    "carta": [
+     "vo",
+     "yeh"
+    ],
+    "como": [
+     "var",
+     "yon"
+    ],
+    "con": [
+     "tac",
+     "xa"
+    ],
+    "contra": [
+     "tig",
+     "xed"
+    ],
+    "cosa": [
+     "tas",
+     "xeb"
+    ],
+    "crehe": [
+     "se",
+     "xid"
+    ],
+    "creo": [
+     "sa",
+     "xod"
+    ]
+   },
+   "n_codes": {
+    "JM": 185,
+    "AS": 175
+   }
+  },
+  "ordering_rho": {
+   "JM": -0.985,
+   "AS": -0.993
+  },
+  "code_finals": {
+   "JM": "8bcdefghlmnpqrstvxyz",
+   "AS": "bcdfghlmno"
+  },
+  "code_initials": {
+   "JM": "bcdfghjklmnpqrstvxyz",
+   "AS": "cdfghlmnprstvxyz"
+  }
+ }
+}

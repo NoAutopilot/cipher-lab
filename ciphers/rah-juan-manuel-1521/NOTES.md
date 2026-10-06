@@ -446,3 +446,60 @@ Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.
 - [x] image-check: R9528 and R9529 full-size images re-fetched 6 Oct 2026 (sha1s match), crops and windows checked
 - [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
 Verdict: keep going: 1 internal gap (R9501 passes, gated on the held-out alphabet); the alphabet and transcription gaps wait on ASKS 138; cheapest next: the siblings comparison with the Sanchez records, ~$2
+
+## Siblings: shape and table fit against Alonso Sanchez's 1522 cipher (R11-RJMSIB, 6 Oct 2026, 09:55-10:0x UTC)
+Brief: .claude/briefs/runs/2026-10-06-account2-run11-jobs.md job R11-RJMSIB. Opus worker, no subagent calls. Gate pre-registered in
+siblings/PREREG.md (pushed 14f414aac before scripts/siblings.py ran). Material: Tomokiyo's two hand-drawn alphabet tables,
+JuanManuel.png (cryptiana.web.fc2.com/code/, 1 request, HTTP 200, sha1 7524f16d) and AlonsoSanchez.png (copy in Bourdeau's
+cyphersolver targets/sanchez1522/tomokiyo/, MIT, sparse clone of that target only, sha1 d6bbaea0); Tomokiyo's two code tables on
+disk (sources/cryptiana/keys/AlonsoSanchez_1.tsv Sanchez, _2.tsv Juan Manuel); this folder's alphabet.tsv. Images not committed.
+The Sanchez folder (ciphers/rah-salazar-soria-sanchez-1524-28) has no page image or sign table on disk (status blocked), so the
+Sanchez side is Tomokiyo's 1522 table as read by Bourdeau (sanchez1522/NOTES.md, alpha.py) and by this worker.
+Shape labels: siblings/shapes.tsv (one row per drawn sign, shared vocabulary, firm/uncertain), siblings/our_labels.tsv (this folder's
+inventory labels to the same vocabulary, from passes/inventory.md's own descriptions). Labels are this worker's eye at 3x; the worker
+had seen both tables before labelling (said in PREREG). Reproduce: `python3 scripts/siblings.py` (writes siblings/results.json,
+10,000 permutations, seed 1522); `--check` exits 1 if stale (ran: up to date).
+
+| statistic (firm signs) | real | null mean / p95 / p99 / max | control | verdict |
+|---|---|---|---|---|
+| V, letters sharing a sign shape with the same value, JM vs Sanchez table | 1 (h6 = null) | 0.73 / 2 / 3 / 5 | Sanchez values permuted | below p95: no shared alphabet |
+| W, this folder's 7 C-graded signs vs Tomokiyo's Juan Manuel table | 5 of 7 | 0.34 / 1 / 2 / 4 | table values permuted | above max |
+| W, the same 7 signs vs Tomokiyo's Sanchez table | 0 of 7 | 0.15 / 1 / 1 / 3 | table values permuted | at null |
+| T, words in both code tables with the identical code (75 shared words) | 0 | 0.06 / 1 / 1 / 3 | JM codes permuted among its words | no shared nomenclator |
+Sensitivity with the uncertain signs added: V 2 (h6, tt_o both null) vs p95 3; W and T unchanged.
+Descriptive (not gated; a value permutation cannot move them, and no shape-labelled unrelated 1520s Spanish alphabet is on disk):
+inventory overlap 15 shapes shared, 18 JM-only, 21 Sanchez-only (Jaccard 0.28), every shared letter-shape carrying a different letter
+(4: o vs e; 9: e vs l; 3: e vs d; # : g vs o; oo-linked: f vs d/g; venus: y vs s; tt-bar: s vs p; Lo: n vs s/t ...). Both code
+tables run backwards through the code space as the words run forwards (Spearman rho -0.985 JM, -0.993 Sanchez); code finals differ
+(Sanchez b c d f g h l m n o, Juan Manuel also p q r s t v x y z), as Bourdeau found from the Lope Hurtado leaves.
+
+Result: the two 1522 ciphers share a design (letter alphabet of the same cursive sign family plus a reverse-alphabetical 2-3 letter
+nomenclator, h6-type nulls) but not a key: no letter value and no code group carries over beyond the permutation null. The Sanchez
+records therefore give no table fit for this folder's alphabet or code layer; the siblings step is closed for this instrument.
+
+Found on the way (not acted on; no key, alphabet or reading changed): Tomokiyo's AlonsoSanchez.htm page carries a hand-drawn
+**letter alphabet for Juan Manuel's cipher** (JuanManuel.png: a-z homophones plus five nulls). This folder's earlier line "Tomokiyo
+gives the nomenclator only" (Remaining gaps, 3 Oct 2026) is wrong. JM-ALPHA's in-sample alphabet agrees with that published table on
+5 of its 7 C-graded signs (A=a, R=s, Z=r, K=y, 9=e; misses: 4 read 'de' where the table has o, F read 'i' where the table's
+ß-like sign is a null, which JM-ALPHA's own note already suspected). The shape mapping our_labels.tsv was written after seeing the
+table, so W is corroboration with that caveat, not an independent test. A published table changes the alphabet gap's next step:
+apply Tomokiyo's table (key source `published`) to the held-out page instead of waiting on the owner's sort alone; flagged in ROOM.md
+for the lane orchestrator, not done here (brief: no key or reading change).
+Requests: cryptiana.web.fc2.com 1; github.com 2 (sparse clone of cyphersolver, sanchez1522 only).
+
+## Remaining gaps (R11-RJMSIB, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S) and R9528 f.194 (249 code words, 161 matched by the gloss); letter alphabet 13 signs valued in sample (6 at C), 0 at S, 5 of 7 C signs agreeing with Tomokiyo's published Juan Manuel alphabet table; CSP Spain II abstracts located for 16 of 28 records (csp_date_map.tsv)
+- Letter alphabet held out - blocker: not-attempted; Tomokiyo's published alphabet table (JuanManuel.png, found by R11-RJMSIB) was never applied; next: transcribe it into a key TSV (grade from a published key, credited) and rerun scripts/test1.py's held-out branch on f.199 with the gate unchanged, ~$3; the owner's sort (ASKS.md row 138) still settles the label set
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, err_true unmeasured) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set; 39 unsettled look-alike tiles in sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- R9501 (no period decipherment in DECODE) passes and key test (job 2b) - blocker: not-attempted; next: two blind passes on R9501 f.34 with the same inventory, decode with the alphabet + Tomokiyo's nomenclator, judge, ~$5 (only after the held-out gate passes); the period decipherment is catalogued at Salazar A.23 ff.37-38 (RUN3-RJM2), not online
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, Premise check 2); without it every reading stays a cryptanalytic result
+
+## Escalation (R11-RJMSIB, 6 Oct 2026)
+- [x] siblings: R11-RJMSIB compared Tomokiyo's Juan Manuel and Sanchez 1522 tables (alphabet and nomenclator, Bourdeau sanchez1522 cited): same design, no shared key (V 1 vs p95 2; T 0 of 75 shared words); no table fit to carry over
+- [x] clear-pages: f.197 read to line 31 and f.201 read whole (single Sonnet pass); f.199's own clear lines identified
+- [x] known-keys: Tomokiyo's nomenclator run on R9528 and R9529 (anchors 161/249 and 44/117 code words); his Juan Manuel alphabet table located 6 Oct 2026, not yet applied (gap above)
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out gate FAIL at this transcription error
+- [x] image-check: R9528 and R9529 full-size images re-fetched 6 Oct 2026 (sha1s match), crops and windows checked
+- [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
+Verdict: keep going: 2 internal gaps (apply Tomokiyo's published Juan Manuel alphabet to the held-out page; R9501 passes, gated on it); the transcription gap waits on ASKS 138; cheapest next: Tomokiyo alphabet table -> key TSV -> held-out rerun, ~$3
