@@ -1,0 +1,45 @@
+# Tomokiyo's published letter alphabet for Juan Manuel's 1522 cipher, one row per drawn sign. key_source=published (credited:
+# Satoshi Tomokiyo, Cryptiana, https://cryptiana.web.fc2.com/code/JuanManuel.png, fetched 6 Oct 2026 10:1x UTC by R11-RJMKEY, 1 request, HTTP 200, 743x193 px,
+# sha1 7524f16daf7df6671a31bfeb002ff22c0b07267d; image not committed). Shapes in siblings/shapes.tsv's vocabulary (R11-RJMSIB's
+# eye at 3x), re-checked against the image at 2x by R11-RJMKEY: no change. firm=0: drawn grey, with '?', or column ambiguous.
+# Tomokiyo also draws a circled '3' under e with a line to a grey 'a' and to a '3?' under i: 3 is e (firm), i and a uncertain.
+# our_label: this folder's passes/inventory.md label for the same shape (siblings/our_labels.tsv); blank = no inventory label.
+letter	shape	firm	our_label	source	url	fetched	key_source
+a	alpha	1	A	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+b	tt_o	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+c	tt_hash	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+d	g_tail	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+e	9	1	9	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+e	x	1	X	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+e	3	1	3	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+f	oo_linked	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+g	hash	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+h	epsilon_big	1	E	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+h	epsilon	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+i	epsilon	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+i	3	0	3	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+l	q	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+l	k	0		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+l	rho	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+m	v_hook	1	V	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+n	d_o	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+n	y	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+n	Lo	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+o	4	1	4	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+p	eta_y	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+r	yogh	1	Z	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+r	delta	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+r	x_cross	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+s	co	1	R	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+s	tt_bar	1	T	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+t	o_tt	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+u	tt_o	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+u	8	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+y	venus	1	K	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+z	x_stroke	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+null	xi	1	F	Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+null	delta_loop	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+null	h6	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+null	triangle	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+null	oo_loop	1		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
+null	tt_o	0		Tomokiyo, Cryptiana, 'Juan Manuel's Cipher (1522)' alphabet table	https://cryptiana.web.fc2.com/code/JuanManuel.png	2026-10-06	published
