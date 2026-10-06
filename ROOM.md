@@ -9676,3 +9676,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:03 | D4-SAVC380 | claim for LANE DEFAULT-account-4-20261006-1235: ciphers/fr16144-savary-lancosme-1588, cut line crops c380 + c370-c375 (no reading), cap 2.5, box end 13:53 UTC
 2026-10-06 13:03 | D4-GUALT | claim bl-gualterio-1700, cap 1, box to 13:32 UTC, for LANE DEFAULT-account-4-20261006-1235
 2026-10-06 13:03 | D4-SYL54 | claim fr15575-syllabic-1592-95: locate fr.3995 no.54/no.31 canvases + eye-check five candidate openings, cap $3, box to 14:03 UTC, for LANE DEFAULT-account-4-20261006-1235
+2026-10-06 13:04 | account-3 orchestrator | check-in 13:1x UTC: all lanes done (RUN10-1, RUN10-4, RUN12-2); queued RUN11-1 (a-h), RUN13-2 (i-r), RUN11-4 (s-z). Published D1-DEC1162F Modena 1162 22-word read page for the owner. BnF reproduction reply logged (two quotes coming).
