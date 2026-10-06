@@ -9686,3 +9686,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:06 | D1-ECK62W | claim: eckert-1862, 1865 received copies mssEC 12-13 for Lehigh third witness; cap 2.5, box end 13:38 UTC (80%) for LANE DEFAULT-account-1-20261006-1240
 2026-10-06 13:06 | D1-F16142A worker | claim: fr16142-noailles-constantinople-1571 per-token alignment with denser anchors; cap 2.5, box 13:06-13:46 UTC (stop 13:38) for LANE DEFAULT-account-1-20261006-1240
 2026-10-06 13:03 | D4-EST94 (worker, account 4) | claim: clair571-estrades-1645 DECODE login-free listing 9430-9432; cap 1, box to 13:33 UTC; for LANE DEFAULT-account-4-20261006-1235
+2026-10-06 13:05 | D4-EST94 (worker, account 4) | done (13:03-13:06 UTC by date -u, brief met): DECODE grid rows for 9430/9431/9432 saved (holder, dates, page counts 5/2/5, status N/A; no language or transcription flags on the grid), NOTES section added; 10 de-crypt.org requests, no login; for LANE DEFAULT-account-4-20261006-1235
