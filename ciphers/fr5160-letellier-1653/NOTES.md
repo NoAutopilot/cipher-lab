@@ -2055,7 +2055,7 @@ every passage is on f.87/f.68r, AUDIT.md N0), but the f.86/f.88 readings as comm
 f.68r decipherments, not these readings, are what any quotation should use. Status, AUDIT.md and the readings unchanged.
 
 ## Next step (READ2-RELABEL, 3 Oct 2026)
-The images this folder needs are on disk or on Gallica, so the earlier "open the volume at the image" line (24 Sept 2026) is no longer an access problem. On disk: images/ holds f20, f100, f150 and the f9r line crops, with ciphertext_f1, f9, f67, f86 and f88 transcribed (passA/passB reconciled); colb26/ holds the Mélanges de Colbert 26 part III sample (Gallica ark btv1b10035069t, 779 canvases, all labelled NP; leaves_checked_part3.tsv lists the 104 of 375 canvases already looked at, none with cipher). (6 Oct 2026, R11A-F5160: the sweep was attempted and blocked by Gallica IIIF 503s, so it is still the next step whenever Gallica answers. The ark lookup below is done: 20660, 20563 and 23203-23204 have no Gallica link, and Français 20661-20662, Brienne's 1653 despatch minutes, are logged as a lead. See the R11A-F5160 section.) The next step is to finish that sweep: contact sheets of the 271 unsampled canvases (405-779 minus the checked ones), one request at a time with tools/gallica_folio.py, ~$3, reading only for numeral groups, an interlinear decipherment or an "en chiffre" note; a hit opens the intake steps for that leaf, a miss completes the part III negative. Français 20660, 20563 and 23203-23204 are named in the 24 Sept 2026 section by catalogue text only, and their digitisation status is unconfirmed, so a Gallica ark lookup (~$0.5) comes before any image work there. Nothing here is a reading step: f.86 and f.88 read C 68/M 200 and C 101/M 167 U 3 and fail the fr17 and fr judge (SPEC-FR17, 3 Oct 2026), while the contemporary decipherments on f.87 and f.68r carry their plaintext (AUDIT.md N0).
+The images this folder needs are on disk or on Gallica, so the earlier "open the volume at the image" line (24 Sept 2026) is no longer an access problem. On disk: images/ holds f20, f100, f150 and the f9r line crops, with ciphertext_f1, f9, f67, f86 and f88 transcribed (passA/passB reconciled); colb26/ holds the Mélanges de Colbert 26 part III sample (Gallica ark btv1b10035069t, 779 canvases, all labelled NP; leaves_checked_part3.tsv lists the 104 of 375 canvases already looked at, none with cipher). (6 Oct 2026, R11A-F5160: the sweep was attempted and blocked by Gallica IIIF 503s. 6 Oct 2026, R12A-F5160: 141 of the 271 were then checked, all clear; 130 remain, canvases 533, 562, 591, 593, 608, 623 and 624-779, see the R12A-F5160 section and colb26/sweep_405_779.tsv. The ark lookup below is done: 20660, 20563 and 23203-23204 have no Gallica link, and Français 20661-20662, Brienne's 1653 despatch minutes, are logged as a lead. See the R11A-F5160 section.) The next step is to finish that sweep: contact sheets of the 130 canvases still unchecked (colb26/sweep_405_779.tsv, result 'unchecked'), one request at a time with tools/gallica_folio.py, ~$3, reading only for numeral groups, an interlinear decipherment or an "en chiffre" note; a hit opens the intake steps for that leaf, a miss completes the part III negative. Français 20660, 20563 and 23203-23204 are named in the 24 Sept 2026 section by catalogue text only, and their digitisation status is unconfirmed, so a Gallica ark lookup (~$0.5) comes before any image work there. Nothing here is a reading step: f.86 and f.88 read C 68/M 200 and C 101/M 167 U 3 and fail the fr17 and fr judge (SPEC-FR17, 3 Oct 2026), while the contemporary decipherments on f.87 and f.68r carry their plaintext (AUDIT.md N0).
 
 ## R11A-F5160: Colbert 26 III sweep attempt and Brienne-papers ark lookup (6 Oct 2026, 13:48-14:0x UTC)
 
@@ -2098,3 +2098,38 @@ after stage 2). There is no cloud route.
 
 Requests: gallica.bnf.fr 4 (3 x 503, 1 empty reply), archivesetmanuscrits.bnf.fr 10 (home, 5 searches, 5 record pages
 including the control), all >= 2 s apart. No subagents, no images committed. Status unchanged (open).
+
+## R12A-F5160: Colbert 26 part III sweep, canvases 405-623 (6 Oct 2026, 17:49-18:3x UTC)
+
+Worker R12A-F5160 for LANE LANE-RUN12-account-1, running the next step above (finish the part III sweep).
+
+**Method.** Gallica answered a probe at 17:49 UTC (canvas 20, the known Part I cipher leaf, HTTP 200). Each of the 271 canvases
+not in `colb26/leaves_checked_part3.tsv` was fetched once, in canvas order, at IIIF `full/600,/0/native.jpg`, one request at a
+time and at least 1.6 s apart. Most responses took 10-30 s. No manifest fetch was needed, because the canvas index is the `fN`
+path. The thumbnails were tiled 4 to a row at 400 px a page-opening, at most 16 per sheet (one 13-tile sheet), and every tile was
+read by eye. There was no script pre-filter: at this volume's density, reading every tile cost about the same as reading flagged
+ones only, and it misses nothing a heuristic would. **Positive control:** canvas 20 sat on the first sheet at the same 400 px
+scale, and its numeral block (interlinear groups in the lower half of the right page) was visible there. Two dense-hand openings
+(497, 498) were re-read at 600 px and are clear prose.
+
+**Result: 141 canvases read (405-622 range), all clear.** None shows numeral groups, an interlinear decipherment or an "en chiffre"
+note. All are chancery-cursive despatch minutes and royal letters, Hollande/Angleterre/Espagne/Portugal/Rome, July-Dec 1661.
+Canvas 498 opens a section titled "Depesches des six derniers mois de l'annee 1661" (Rome, to Cardinal Antoine). Canvases 527 and
+528 look like the same opening (f.117) photographed twice, judged by eye at 400 px; the files differ byte for byte. The
+per-canvas record is `colb26/sweep_405_779.tsv` (canvas, ark, clear/unchecked, note). It includes the four canvases KX-COLB26
+could not fetch on 25 Sept (441, 465, 470, 485), all clear now.
+
+**Not done: 130 canvases.** Six fetches failed once each (533, 562, 591, 593, 608 and 623: empty reply or connection reset;
+483, 499 and 507 failed first and were then fetched on one retry after a pause). 124 canvases, 624-779 less the 104-leaf sample's
+own canvases there, were never requested. The fetcher stopped at its pre-set limit of 6 errors, at 18:25 UTC, under the
+good-citizen rule. Part III now stands at **245 of 375 canvases checked (65%), none with cipher**. Every leaf through canvas 622
+has been read except the six failures; past 622 only KX-COLB26's every-5th sample has been read. This is still a sample
+negative, not a sweep. It is a search result for the Brienne 1661 despatch register, not a statement about fr.5160.
+
+**Next step:** fetch the remaining 130 (`awk -F'\t' '$3=="unchecked"' colb26/sweep_405_779.tsv`) the same way in a later session,
+about $1.5. At today's server pace that is roughly 45-60 minutes of wall clock, so give it its own box. A hit opens intake for
+that leaf; a miss completes the part III negative. The fr.20661-20662 lead (R11A-F5160 (3)) is unaffected.
+
+Requests: gallica.bnf.fr 151 (1 probe, 141 thumbnails at 200, 9 failures: 1 HTTP 500 and 8 empty-reply/reset), all sequential
+and at least 1.6 s apart, with 30-45 s pauses after each failure. No other host was used, no subagents, no images committed
+(thumbnails stayed in the session scratchpad). Status unchanged (open).
