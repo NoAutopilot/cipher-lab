@@ -55,3 +55,237 @@ all Youth that can be
 temper = rarely spared must be
 sent forward immediately to Harp
 hers Very signed Applause Harriet
+
+# Thirteen further Jan-Mar 1864 entries of mssEC 19 pages 1-20, added 6 Oct 2026 (R7B-ECK64B, LANE LANE-RUN7-account-1).
+# Transcribed from the Decoding the Civil War volunteer text only (item API field "text", pointers 8893-8912, fetched
+# 6 Oct 2026; deletion tags dropped as decode.py would). NOT re-checked against the page images in this pass (cap): a
+# reading here is conditional on that transcription (CLAUDE.md rule 2), unlike O9-A..D. Chosen: every entry on pages 1-20
+# whose operator line is not Beckwith "1"/"2" or Caldwell (Ciphers No. 1 and No. 2, read in ciphertext.txt and
+# ciphertext-no2.txt) and whose code words read in mssEC 67. Left out: p.7 Baldwin 5 Feb (Pauline is blank in mssEC 67,
+# Quarrel = Pemberton and Abel = Sec. of State make no sense there: another key or a garbled entry), p.15 the two
+# Wright/San Francisco entries (Ida = Abingdon, Camden = Maine, Quadroon = Bragg make no sense for a San Francisco
+# treasury order: another key, Tomokiyo's Pacific coast cipher not checked), p.6 Beckwith 5 Feb ("Grapes ... Paradise",
+# Cipher No. 1). Operator marks "(9)" on pages 13, 17, 19, 20 (Sheldon, Horner, Davenport) name the book: Cipher No. 9.
+
+### O9-E | Page 1 | 8893 | 27 Jan 1864, D. H. Rucker to Butler at Fort Monroe (operator Sheldon)
+Sheldon F.  Washn Jany 27th 1864
+Pagan Jany twenty seventh Nancy For
+Audit Bakers relay have left here
+They should reach Palate some time
+to night DH Rucker Vermont
+
+### O9-F | Page 1 | 8893 | 28 Jan 1864, Halleck to Grant (operator Smith, St Louis)
+Smith St Louis Mo.  Jany 28. 1864.
+Pagan Jany twenty Eighth for Bangor
+period Vernon Sedgwick suppers that two
+Readings of Ewells Corps have left
+for Queenly or Long - street one
+on the 20th & one on
+the twenty fifth period Antwerp Anderson
+suppers from Lexington of an expected
+raid by Morgan through Stone or
+Sounding gap into Ky applause Martha
+
+### O9-G | Page 2 | 8894 | 30 Jan 1864, J. H. Taylor to Butler (operator Sheldon)
+Geo D. Sheldon  Jany 30th 1864
+Pagan Jany Thirtieth Clara for Audit
+on the absence of the Vernon
+commanding I have the honor to
+in form you that those men
+of Parkers Shylock of Relay now
+in Pagoda will leave this city
+tomorrow morning by Steamer period They
+will not number more than fifty
+enlisted men There are said to
+be some two hundred recruits for
+the Stanhope in Cadmus who should
+be sent to Hammer direct instead
+of through Pagan signed J. H.
+Taylor Chief Staff A. A. G
+
+### O9-H | Page 5 | 8897 | 1 Feb 1864, Halleck to Garrett, Baltimore (operator Baldwin)
+Geo. W. Baldwin Balto.  Washington Feby 1st 1864
+For Mr Garrett Prest Image and
+Castor Soap period Vernon Lock wood
+is ordered to send Yoke to
+Vermin Kelly Two Shylock and a
+Robin are ordered from here signed
+Abortion Martha what a disagreeable day
+plain: Lock
+
+### O9-I | Page 5 | 8897 | 2 Feb 1864, Halleck to Lockwood, Baltimore (operator Baldwin)
+Geo Baldwin Balto  Washington Feby 2nd 1864
+For Valley Lock = wood period
+As you have for = warded
+one Robin and one goes
+from here I think they
+will be sufficient unless others
+should be asked for signed
+Abortion Clara damp muddy here
+
+### O9-J | Page 6 | 8898 | 3 Feb 1864, Halleck to Sullivan, Harpers Ferry (operator Lawrence)
+Lawrence Harpers Ferry  Washington Feby 3rd 1864
+For Sully = van would it not
+be better to make your proposed
+Relay read on the world of
+Earlys forces to Warwick or Embar =
+race their Wean by destroying Rabbits
+and sup = plies and felling trees
+in the roads By this measure
+you may enable Vernon Kelly if
+he drives them back to over
+take and Capt your them The
+first Cuba Veteran Relay left here
+yesterday morning to report to you
+signed Abortion Nancy are you well
+
+### O9-K | Page 7 | 8899 | 5 Feb 1864, Halleck to Butler (operator Sheldon)
+G. D. Sheldon Ft Monroe  Washington D. C. Feby 5th 1864
+Abbey Your letter of the third
+just recd You will use your
+forces in Century as you may
+deem best for the real = leaf
+of North Carrol = line = a All
+avail - able Youth from this place
+and Camargo have been sent to
+West Cedar Vermin Sedge = wick has
+been asked to give you such
+cooper = ration as he can and
+to Commune = nick = eight directly with
+you by Supper signed Abortion Gertrude
+
+### O9-L | Page 11 | 8903 | 18 Feb 1864 1.10 PM, Halleck to Sullivan, Harpers Ferry (operator T. J. Lawrence)
+T. J. Lawrence  Washn Feby 18th 1864 110 PM Harpers Ferry
+Harriet For Valley Sullivan Comdg
+It is reported that the
+fords of the Gem between
+the mouth of the man
+Knock Casey and the hint
+of Rocks are practice able
+and left unguard - ed thus
+opening Camargo to raids of
+snow Roanoke Please see to
+this immediately signed abortion End
+
+### O9-M | Pages 12-13 | 8904-8905 | 18 Feb 1864 4 PM, Dana to P. H. Watson at New York (operator Jno Horner, NY)
+Jno Horner NY  Washn Feby 18th 1864 4 P. M
+Pagan Feby Eighteenth Henrietta For Amber at
+Metro polite an midas period It is
+of great import = ance that you should
+come here for two or three days
+if possible period Certain parties in Maroon
+among them Cattell President of the Corn
+Exchange and Mograth for = age deal
+er came for = ward yest = er =
+day and paid thirty three thous =
+and dol = ars to cover the
+sum which Stoddart con = fesses he
+has appropriat = ed period Ferg = u =
+son has al = so rest = ored
+thirty two thous = and doll = ars
+period The maroons came to me
+this morning to deem and that
+both this vil = lains should be
+rel = eased and that the papers
+and funds be = longing to them
+taken at the time of their
+Waggish should be rest = ored period
+It is my judge = ment that
+inst = ead of being rel = eased
+they should be re = man = did
+to Sol = it = ary con= fine
+ment until they clear up all the
+for = age frauds and make complete just
+= ice possible Then I would rel = ease
+them not be fore But I think
+it necessary that you should be here
+to prevent any false step at this
+stage of the affair sig
+C. A Da = na period
+Horner This is strictly con
+fi = den = tial deliver it
+in person and oblige yours
+
+### O9-N | Pages 13-14 | 8905-8906 | 29 Feb 1864, Halleck forwards Meade's telegram to Butler (operator Sheldon (9))
+Sheldon (9)  Washn Feby 29th 1864
+The following Telegram is forwarded for the
+information of Abbey by order of Applause
+quote From Yacht Walnut of gem Feby
+twenty ninth Florence For Abortion period a
+relay expe = di = tion left last evening
+with the inten = tion of at = tempt =
+= ting to carry Negus by a
+comp = di = main period Valley Kill
+pa = trick in com = mand if
+suc = cess = ful expects to be
+there by tomorrow P. M March
+first and may the next
+day be in the vicinity
+of Audits out posts and
+Sharpers Will you please not =
+in = fy that officer that
+his wafind posts may be
+war = ned signed Aqui quote
+
+### O9-O | Page 17 | 8909 | 6 Mar 1864, Fox to Olcott, New York (operator John Horner (9))
+John Horner (9)  Washington D. C. March 6, 1864
+For Col H. S Olcott Special
+Commissioner Navy Dept. thirty five Gramercy
+Place Merlin Arrest and send to
+Hosanna C. W. Schofield James L
+Savage and C. H. Raymond and
+take possession of their books and
+papers signed G. V. Fox Asst.
+Anthon by order of America Lucy
+plain: Raymond
+
+### O9-P | Page 19 | 8911 | 10 Mar 1864 8.30 PM, Fox to Olcott, New York (operator John Horner 9)
+John Horner 9  Washn Mar 10th 1864 830 P. M
+Pagan Katy Tenth for Vesper H. S.
+Ol = cott Special Comnr Navy Dept Thirty
+five Gram mercy Place Merlin period Telegram
+received Will attend to matters here period
+If any more Waddings are to be
+made in Midas it had better be
+done at once be fore you
+leave unless you are certain of
+them on your return period Be
+prepared to suggest a lawyer of
+integrity and ability to assist and
+prepare the cases for trial whilst
+you you are pursuing these investigations
+and others further period If any
+body should be wagged in the
+Navy yard call up on the
+Commandant to do so and this is
+your authority period If any of the
+parties here whom you suggest should be
+watched are sufficiently implicated to be wagged
+superb me early tomorrow period Murdock was
+discharged from the Dept a year a
+go period Let me know about
+Keeler He is civil engineer of
+the Navy yard and is now
+with the house Naval Committee on
+their way to Boston sig Annal
+
+### O9-Q | Page 20 | 8912 | 13 Mar 1864, Halleck to Grant (operator Davenport or Stevens (9))
+Davenport or Stevens (9)  Washn Mar 13th 1864
+Pagan Mar Thirteen Viola For Bangor
+Vermin Steele suppers that Amen with
+seventeen thousand & Blubber with ten
+thousand more from Alexandria on Shreveport
+and wish him to cooperate period
+He says he can go with
+seven thousand effective but objects to
+the Zebra on account of bad
+roads & guerillas and prefers to
+remain on the defensive line of
+the Frog period I have replied
+that he should cooper = ate with
+Alias & Black unless you direct
+other wise period His objections on
+account of guerrillas whimpering his walker
+will apply equally to an wafer
+at any time in to the
+Wardham County (sig) Abortion looks stormy

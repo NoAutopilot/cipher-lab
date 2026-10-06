@@ -108,5 +108,56 @@ Florence 10 a.m.); Harriet (1 p.m.) stands against the OR's 1.15 p.m. (the OR gi
 | Yankee/Yardstick | Reinforcements | H | p.[24] (1744) l.23 |
 | Youth/Yoke | Troops | H | p.[24] (1744) l.25 |
 | Zodiac/Zebra | Movement | H | p.[24] (1744) l.26 |
-| Pagan | [unread: the place-of-origin word of the date line, probably Washington; not located on the mssEC 67 pages read] | M | not on pp.[16]-[24] as read; context only |
 
+## 3. Further lines read 6 Oct 2026 (R7B-ECK64B, LANE LANE-RUN7-account-1)
+
+Pages p.[11]-[15], [17]-[19], [21] fetched from the IIIF server at 1400 px (pointers 1731-1735, 1737-1739, 1741, 1743;
+scratch, not committed; regenerable from `https://hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/1400,/0/default.jpg`)
+and p.[9], [10], [16], [24] from the committed ciphers/eckert-1862/images/mssEC67_p1729/p1730/p1736/p1744.jpg; read by the
+worker, one eye, no subagent. Each row is the printed pair and the handwritten meaning between them. Pagan (section 2's M row)
+is now read: Pagan/Pagoda = Washington, p.[18] l.20, and moves to H.
+
+| code word | meaning | grade | source |
+|---|---|---|---|
+| Abel/Austria | Sec. of State | H | p.[9] (1729) l.2 |
+| Anthon/America | Sec. of the Navy | H | p.[9] (1729) l.5 |
+| Alvord/Antwerp | Adjutant General | H | p.[9] (1729) l.9 |
+| Alps/Amber | P. H. Watson | H | p.[9] (1729) l.19 |
+| Atlas/Annal | G. V. Fox | H | p.[9] (1729) l.23 |
+| Alias/Amen | N. P. Banks | H | p.[10] (1730) l.6, Maj. Generals |
+| Abbey/Audit | B. F. Butler | H | p.[10] (1730) l.7, Maj. Generals |
+| Bangor/Bengal | U. S. Grant | H | p.[10] (1730) l.11, Maj. Generals |
+| Bellows/Belly | C. A. Dana | H | p.[11] (1731) l.24 |
+| Camden/Cadmus | Maine | H | p.[12] (1732) l.1, States |
+| Cuba/Champlain | New York (State) | H | p.[12] (1732) l.7, States |
+| Camargo/Census | Maryland | H | p.[12] (1732) l.10, States |
+| Century/Cedar | Virginia | H | p.[12] (1732) l.11, States |
+| Castor/Cologne | Ohio | H | p.[12] (1732) l.12, States |
+| France/Frog | Arkansas (river) | H | p.[14] (1734) l.1, Rivers |
+| Gem/Ginseng | Potomac | H | p.[14] (1734) l.14, Rivers |
+| Glasgow/Gilead | Roanoke (river) | H | p.[14] (1734) l.17, Rivers |
+| Hastings/Haven | Aquia Creek | H | p.[15] (1735) l.6 |
+| Hosanna/Husband | (Fort) La Fayette | H | p.[15] (1735) l.15, Forts |
+| Hammock/Hammer | (Fort) Monroe | H | p.[15] (1735) l.16, Forts |
+| Ida/Ink | Abingdon | H | p.[16] (1736) l.1, Places |
+| Merlin/Midas | New York | H | p.[17] (1737) l.17, Places |
+| Maroon/Mellow | Philadelphia | H | p.[17] (1737) l.24, Places |
+| Neptune/Negus | Richmond | H | p.[18] (1738) l.4, Places |
+| Pagan/Pagoda | Washington | H | p.[18] (1738) l.20, Places |
+| Palate/Palsy | Yorktown | H | p.[18] (1738) l.21, Places |
+| Plato/Plainfield | Jno. Morgan | H | p.[19] (1739) l.12, Rebel Generals |
+| Quorum/Quarrel | Pemberton | H | p.[19] (1739) l.26, Rebel Generals |
+| Raleigh/Reading | Brigade | H | p.[20] (1740) l.6 |
+| Richard/Rodney | Artillery | H | p.[20] (1740) l.2 |
+| Seneca/Sexton | Guards | H | p.[20] (1740) l.23 |
+| Sharper/Sheffield | Pickets | H | p.[21] (1741) l.4 |
+| Simms/Snow | Rebels | H | p.[21] (1741) l.8 |
+| Wafer/Wallace | Advance | H | p.[23] (1743) l.2 |
+| Walpole/Walnut | Army | H | p.[23] (1743) l.3 |
+| Whiff/Whimper | Threaten | H | p.[24] (1744) l.6 |
+| Wadding/Waggish | Arrest | H | p.[24] (1744) l.11 |
+| Yancey/Yacht | Hd. Qrs. | H | p.[24] (1744) l.22 |
+
+Read on these pages but blank in this copy (printed words with no handwritten meaning, so a ledger use cannot be read from
+mssEC 67): Paulding/Pauline (p.[19] l.5), the whole Pacific-Pine block of p.[19], Hayti/Helix, Honey/Humble, Hug/Hulk
+(p.[15]), Kitten/Kiss, Koran/Kennet (p.[16]), Agnew-Adverb (p.[9] ll.11-15), Empress/Embrace (p.[13]).

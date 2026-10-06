@@ -326,17 +326,17 @@ exit 0
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 11 Beckwith/Kimber/Caldwell entries in Cipher No. 2 (section 8 and DEF1-ECK64, 5 Oct 2026: H 273, C 6, I 10, M 1, `decode_no2.py --check` exit 0); the rest of the ledger untranscribed.
 - corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
-- Jan-Feb 1864 entries in the old vocabulary beyond the four-entry sample - blocker: not-attempted; sample read 6 Oct 2026 (R7A-ECK64 section below: mssEC 67's handwritten meanings read 4 of 4 entries, 33 H 1 M, all four printed in the OR and agreeing but for one rank conflict); next: transcribe the remaining entries of pages 1-20 (27 Jan-early Mar 1864, about 30 entries, excluding the Caldwell/Beckwith No. 2 entries) and table the further mssEC 67 lines they need, incl. pp.[11]-[15] and [18] not yet read (Pagan, Pagoda, Castor, Cuba, Cadmus, Hammer, Audit), ~$4
+- Jan-Mar 1864 old-vocabulary entries beyond pages 1-20 and the image check of O9-E..Q - blocker: not-attempted; 17 entries of pages 1-20 read 6 Oct 2026 (R7A-ECK64 four, R7B-ECK64B thirteen; H 147, M 0, decode_no9.py --check exit 0; nine of the thirteen printed in OR I/32-34 and agreeing in every coded word); next: image-check O9-E..Q against pages 1-20 and continue the "(9)" entries past page 20 (Horner, Sheldon, Davenport/Stevens), tabling any further mssEC 67 lines, ~$4
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
 - [ ] siblings: mssEC 25 second copy read for E4/E5 (Second reader, 24 Sept 2026; four corrections applied); mssEC 18 opened 5 Oct 2026, pp.50-60 text, no E4/E5 copy
 - [x] clear-pages: OR prints matched for 17 of 20 entries as the check (section 4)
 - [x] known-keys: Cipher No. 1 (mssEC 41) and Cipher No. 2 (mssEC 47) are the period key books in use
 - [x] print: OR series I sweep, ORN, Butler and Fox correspondence, Lincoln Collected Works (section 4, AUDIT.md)
-- [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries; for the Jan-Feb 1864 old vocabulary the period book is mssEC 67 (filled-in, Tomokiyo's No. 9), read on 9 pages for the sample (R7A-ECK64, 6 Oct 2026)
+- [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries; for the Jan-Feb 1864 old vocabulary the period book is mssEC 67 (filled-in, Tomokiyo's No. 9), read on 9 pages for the sample (R7A-ECK64, 6 Oct 2026) and on pp.[9]-[24] for the further entries (R7B-ECK64B, 6 Oct 2026)
 - [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026); N2-E Spit re-read in mssEC 47, mssEC 48 and the ledger (D2-ECK64S, 5 Oct 2026: Spit = Near in both books, ledger Spit; conflict logged, not resolved)
 - [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
-Verdict: keep going: 1 internal gap; cheapest next: the rest of the Jan-Feb 1864 old-vocabulary entries (pages 1-20 of mssEC 19, with key-no9.md extended from mssEC 67 pp.[11]-[15], [18]), ~$4 (updated R7A-ECK64, 6 Oct 2026: four-entry sample read with mssEC 67, decode_no9.py --check exit 0). Earlier note: (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
+Verdict: keep going: 1 internal gap; cheapest next: image-check the thirteen O9-E..Q entries (volunteer text only so far) and continue the "(9)"-marked entries past page 20 of mssEC 19, ~$4 (updated R7B-ECK64B, 6 Oct 2026: 17 old-vocabulary entries read with mssEC 67, H 147, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: the rest of the Jan-Feb 1864 old-vocabulary entries (pages 1-20 of mssEC 19, with key-no9.md extended from mssEC 67 pp.[11]-[15], [18]), ~$4 (updated R7A-ECK64, 6 Oct 2026: four-entry sample read with mssEC 67, decode_no9.py --check exit 0). Earlier note: (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
 
 ## mssEC 18 check for E4/E5 copies, 5 Oct 2026 (RUN6-ECK, LANE-RUN6 wave 2)
 
@@ -428,3 +428,36 @@ Gen.), from the volunteer text only; check on the image before reading them.
 
 Requests: hdl.huntington.org 26 (15 item-API pages, 9 mssEC 67 IIIF pages, 2 ledger IIIF pages), archive.org 2; all 200.
 
+## Jan-Mar 1864 old vocabulary: thirteen more entries of pages 1-20, 6 Oct 2026 (R7B-ECK64B, LANE LANE-RUN7-account-1)
+
+Step checked undone first: R7A-ECK64 (section above) read four entries and named pages 1-20 and mssEC 67 pp.[11]-[15], [18]
+as the next step. Kept as found: the Spit/men (N2-E) and Village/Garrard (O9-A) data conflicts stay logged, unchanged.
+
+Route: Huntington CONTENTdm item API (`hdl.huntington.org/digital/api/collections/p16003coll11/items/<pointer>/false`, field
+"text") for mssEC 19 pages 1-20 (pointers 8893-8912; scratch); mssEC 67 IIIF pages at 1400 px, pointers 1731-1735,
+1737-1739, 1741, 1743 (scratch, regenerable), plus the committed ciphers/eckert-1862/images/mssEC67_p1729/p1730/p1736/p1744.jpg.
+Read by the worker, one eye, no subagent call (so no crop step). OR check: warofrebellion33unit, 322unit and 342unit
+`_djvu.txt` from archive.org, phrase grep by script.
+
+Found: key-no9.md section 3 adds 38 rows (H, each with page and line): among them Pagan/Pagoda = Washington (the place-of-
+origin word, so R7A's one M token is now H), Abbey/Audit = B. F. Butler, Bangor/Bengal = Grant, Alias/Amen = Banks,
+Atlas/Annal = G. V. Fox, Anthon/America = Sec. of the Navy, Alps/Amber = P. H. Watson, Merlin/Midas = New York,
+Maroon/Mellow = Philadelphia, Neptune/Negus = Richmond, Hammock/Hammer = (Fort) Monroe, Hosanna/Husband = (Fort) La Fayette,
+Walpole/Walnut = Army, Yancey/Yacht = Hd. Qrs., Wadding/Waggish = Arrest. Thirteen further entries of pages 1-20
+(O9-E..O9-Q in ciphertext-no9.txt: every page 1-20 entry outside Ciphers No. 1 and No. 2 whose words read in mssEC 67)
+decode with H 113, M 0; the seventeen together H 147, C 0, I 0, M 0. `python3 decode_no9.py --check` exit 0. Five
+irregular forms are left ungraded and named in reading-no9.md (wafind, Aqui, wagged x2, Wardham). The ledger's operator
+mark "(9)" on pages 13, 17, 19, 20 names the book (Cipher No. 9), a direct period witness for Tomokiyo's numbering.
+Check: nine of the thirteen are printed in OR series I (I/32 pt 2; I/33 pp.488-489, 518-519, 615 and others; I/34 pt 2
+pp.581-582) and agree with the print in every coded word, the time words included (Martha 1.30 PM, Clara 10.30 AM, Nancy
+3.30 PM, Gertrude 12 noon, Florence 10 AM, Viola 12.30 PM exact; Martha against 1.24 and Harriet against 1.15 PM within
+the half hour). Rule 4 notes: the book's Maj. Gen. for Lockwood and Kelley in O9-H against Brig. Gen. for both in O9-C
+and O9-I, Rucker's Brig. Gen. in O9-E, and O9-P's time word in the month slot: logged in reading-no9.md, not settled.
+
+Not found / not done: O9-E and O9-G were not located in I/33 by the phrases tried; O9-M (Dana to Watson, Philadelphia forage
+frauds) and O9-O/P (Fox to Olcott, Navy Department) were not searched (ORN and other editions not read) -- search results
+only, no novelty question asked (rule 10). Left out: the p.7 Baldwin 5 Feb entry and the two p.15 Wright/San Francisco
+entries, whose code words do not make sense with mssEC 67 (ciphertext-no9.txt header). The thirteen were NOT re-checked
+against the page images in this pass (cap); that check is the named next step. Key source per rule 10: period (mssEC 67).
+
+Requests: hdl.huntington.org 31 (20 item-API pages, 11 IIIF pages), archive.org 3 (djvu full texts); all 200.
