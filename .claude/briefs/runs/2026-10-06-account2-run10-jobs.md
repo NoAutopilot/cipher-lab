@@ -203,3 +203,6 @@ AUDIT.md section. No novelty class.
 Intake gate: `na-janssens-java-1811: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
 Last 15 scans (R10-JANS26 method, <= 20 requests). Then write gap 3's state: invnrs 12, 7, 26 paged end to end; what (if anything) is left
 for the dispatch No.1 key source, and its blocker. Verdict line + gaps_check.
+
+Wave 4 sessions (08:16 UTC): R10-ROELL12 session_01Hn3gXWzehejCLrRvER3Rr3; R10-CLINV2 session_013oWCgg2otfyQbkQsVBwV98; R10-JANS26D
+session_01DJBsTw8HRnQZWvr6T7Mdih.
