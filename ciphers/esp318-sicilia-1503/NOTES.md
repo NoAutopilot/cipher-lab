@@ -408,9 +408,9 @@ Read so far: 0% of cipher tokens read; clear Spanish on f.120r (about 85 words) 
 - [ ] known-keys: Gran cifra tested (code overlap at chance, sign test a non-test); Cifra del visorrey BRAH 9/15 searched 3 Oct 2026, no online record or image, waiting-on ASKS 105; next untried key: none named
 - [ ] print: A. de la Torre, Documentos sobre relaciones internacionales vol. VI index under Sicilia/Lanuza (LOCAL-QUEUE/HathiTrust page read), named in Premise check (d)
 - [ ] key-rebuild: Bourdeau's named tool (groups as unknown words, sign alphabet annealed against Spanish) not built; needs a settled transcription first
-- [ ] image-check: re-cut the key sheet with overlap so row m is visible; read crops zoomed
+- [x] image-check: key sheet re-cut with overlap, row m read zoomed: 4 signs (key/key_gran_cifra.tsv m1-m4; A4-RFESP 6 Oct 2026)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps; cheapest next: re-cut the Gran-cifra key sheet with overlap so row m is visible (disk only; alphabet waiting on ASKS 104, visorrey key on ASKS 105), ~$0.5
+Verdict: keep going: 2 internal gaps; cheapest next: once ASKS 104 settles the alphabet, label the sorter piles against the full key sheet (key/ crops now cover row m; visorrey key on ASKS 105); meanwhile check the l/ll slot counts (A4-RFESP note), disk only, ~$0.3
 
 ## Sign sorter (FT4b-esp318-sicilia-1503, account-4, 3 Oct 2026)
 
@@ -425,5 +425,25 @@ Rebuild and apply-after-sort: sorter/README.md.
 
 ## While waiting
 
-- Depends on nobody, disk only: re-cut the Gran-cifra key sheet with overlap so row m is visible (key/), ~$0.5.
+- Depends on nobody, disk only: re-count every row of key/key_gran_cifra.tsv against the sheet (rows l and ll show 3 signs each, the TSV carries 5), ~$0.3.
+- (Done 6 Oct 2026: key sheet re-cut with overlap, row m read -- A4-RFESP.)
 - (Done 3 Oct 2026: the Cifra del visorrey search -- no online record or image; ASKS 105.)
+
+## Key-sheet re-cut, row m (A4-RFESP, account 4, 6 Oct 2026, 00:02-00:0x UTC)
+
+Step: the image-check line ("re-cut the key sheet with overlap so row m is visible; read crops zoomed"). The full source
+was not on disk, so Quirantes's image was fetched once (`Clave-Gran-Capitan-1.jpg`, 2467x3489, 300 dpi; kept in the
+session scratchpad, not committed; entry in images/manifest.json `key_sheet`). New crops: `key/gran_cifra_alpha_rows_k-o_overlap.jpg`
+(rows k-o, box 150,1300,1450,1720 at full size, row m whole) and `key/gran_cifra_row_l-ll-m_zoom2x.jpg` (rows l/ll/m, 2x).
+Read by eye, no subagent call.
+
+**Row m has 4 signs, not 6.** The FT4 key TSV had m1-m6 as placeholders (no reader could see the row). Now, grade H for
+the value m (sheet row), shapes as read: m1 Z with a top bar over a crossed 4; m2 an open epsilon with no middle bar
+(distinct from the barred epsilons of row ll); m3 a p-loop on a long descender crossed at the foot; m4 i followed by a
+looped, crossed-stem ligature (il/lp-like). m5/m6 removed from `key/key_gran_cifra.tsv`. `gran_cifra_test.py --check`
+and `code_overlap.py --check` still OK (the sign test and code list do not depend on the m slot count).
+Seen in the same crop, not changed (outside the step): row l shows 3 signs (dagger, dotted T, 6) and row ll 3 (two barred
+epsilons, a circled-dot with "="), where the TSV carries l1-l5 and ll1-ll5 -- a re-count of every row is the next
+disk-only step (While waiting). Bearing on no. 94: m2 (open epsilon) and the ll epsilons are a look-alike pair for the
+sorter; nothing read in the cipher. Requests: elprofedefisica.naukas.com 3 (two HTML pages, one image), >= 2 s apart.
+

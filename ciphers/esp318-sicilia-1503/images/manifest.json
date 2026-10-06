@@ -1386,5 +1386,43 @@
    },
    "date": "26 Sep 2026"
   }
+ ],
+ "key_sheet": [
+  {
+   "crop": "../key/gran_cifra_alpha_rows_k-o_overlap.jpg",
+   "source_url": "https://elprofedefisica.naukas.com/files/2018/02/Clave-Gran-Capitan-1.jpg",
+   "source_size": [
+    2467,
+    3489
+   ],
+   "box": [
+    150,
+    1300,
+    1450,
+    1720
+   ],
+   "scale": 1,
+   "note": "rows k-o with overlap, row m whole; source not committed (2.3 MB, re-fetch from source_url)",
+   "date": "6 Oct 2026",
+   "by": "A4-RFESP"
+  },
+  {
+   "crop": "../key/gran_cifra_row_l-ll-m_zoom2x.jpg",
+   "source_url": "https://elprofedefisica.naukas.com/files/2018/02/Clave-Gran-Capitan-1.jpg",
+   "source_size": [
+    2467,
+    3489
+   ],
+   "box": [
+    520,
+    1340,
+    1150,
+    1560
+   ],
+   "scale": 2,
+   "note": "rows l, ll, m zoomed 2x (Lanczos)",
+   "date": "6 Oct 2026",
+   "by": "A4-RFESP"
+  }
  ]
 }
