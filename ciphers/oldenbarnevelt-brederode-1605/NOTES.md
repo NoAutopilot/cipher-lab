@@ -553,4 +553,54 @@ Next cheap test: file the drafted OLD-DKEY LOCAL-QUEUE row (above): the owner's 
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: open DECODE record 2118 (NA 1.01.02 inv. 6894, States-General key, "1620 -") ourselves -- RecordsView pages are public (N6-HEL81, 4 Oct 2026) and a full-size image has been served after one browser login (A2-HDK, 2 Oct 2026) -- and say whether it maps names to Arabic numerals in the 30-741 range; image to scratch, never committed; ~$1 (estimate). This replaces waiting on the drafted OLD-DKEY LOCAL-QUEUE row unless the image is refused.
+- Action that depends on nobody (6 Oct 2026, R8-OBRED): screen the in-window Palatine/Hessian DECODE keys (Munich BayHStA 102, Marburg HStAM 20) from their public RecordsView pages for a numeral nomenclator reaching the 700s; ~2-3 (estimate).
+- [done 6 Oct 2026, R8-OBRED: record 2118 is a 1620 Levant key for Cornelis Haga, codes 1-116, does not fit; see the section below] Action that depended on nobody: open DECODE record 2118 (NA 1.01.02 inv. 6894, States-General key, "1620 -") ourselves -- RecordsView pages are public (N6-HEL81, 4 Oct 2026) and a full-size image has been served after one browser login (A2-HDK, 2 Oct 2026) -- and say whether it maps names to Arabic numerals in the 30-741 range; image to scratch, never committed; ~$1 (estimate). This replaces waiting on the drafted OLD-DKEY LOCAL-QUEUE row unless the image is refused.
+
+## DECODE record 2118 opened (R8-OBRED, 6 Oct 2026, 03:37-03:39 UTC)
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run8-jobs.md`, job R8-OBRED (the "While waiting" action above). One browser
+login (`tools/decode_browser_login.js 2118 <scratch> --guess-fullsize --max-files 8 --delay 1700`): logged in, RecordsView/2118
+saved, both full-size images served (IMG_R2118_I15025_P1.png and IMG_R2118_I15026_P2.png, 5472x3648 RGB, about 15.9 MB each,
+real photographs, not the forbidden.png placeholder). Images kept in the session scratchpad only, never committed (re-fetch:
+same command; images are "Authentication required" on DECODE). Requests: de-crypt.org 1 login + 1 record page + 4 files,
+1.7 s apart, no 403/429.
+
+**Record fields (H, read from RecordsView/2118):** name `NA_1.01.02._SG_inr.6894_Cornelis_Haga__key_1620`; Nationaal Archief
+1.01.02 (Staten-Generaal) inv. 6894; author/sender "Registry of the States General"; **receiver Cornelis Haga (1578-1653), Dutch
+ambassador in Constantinople**; dates "1620 -"; type Key; cipher type "Simple substitution, Nomenclatures"; symbol sets
+"Graphic signs, Numerical"; 2 pages; cleartext Dutch.
+
+**What the key maps (read by eye from the images, rotated 90 degrees; grade H for the rows quoted, from the key sheet itself):**
+- A letter alphabet a-z -> single graphic signs / letter-forms (two strips, a-l on the second image, m/n-z on the first) --
+  not numerals.
+- A nomenclator of names -> Arabic numerals **1 to 116** (the second image carries 1-~45, its right column cut off at the
+  photograph's edge; the first image carries 46-116, ending at 116 "de golff"). Headings: "Int hoff vanden Turcxschen
+  Keyser" (1 the present Sultan Osman, 2 Sultan Mustafa his uncle, 3 the vizier, 4 the capitan pasha, 7 the Mufti ...),
+  bashas and beys (13-23), "Eenige voorneme steden in Turkie" (24 Mecca?, 25 Cairo, 26 Alexandria, 27 Jerusalem,
+  28 Babylonia, 29 Aleppo, **30 Constantinopolis**, 31 Adrianopolis, 32 Buda, 33 Canisa), Mohammedan kings and their
+  ambassadors (34-36 ...), Christian princes in friendship with the Turk and their ambassadors (46-64: 49 the King of France,
+  51 the King of Great Britain, 55 the Republic of Venice, ~58 the States General's own ambassador), tributary princes
+  (60 Ragusa, 62 the Prince of Transylvania), Turkish ships and galleys (76-82), the Christian enemies of the Turkish lands
+  (83 France?, 84 Great Britain, 85 Venice, 86 the United Netherlands, 87-92 Spain, Naples, Sicily, the Pope, Malta, Tuscany),
+  Turkish islands and harbours (93-102: Cyprus, Rhodes, Scio, Smyrna, Negroponte, Modon, Coron, Navarino, Argiers, Tunis),
+  Christian ones (103-116: Candia, Zante, Corfu, Sardinia, Corsica, Messina, Napoli, Livorno, Genua, Marsilia, Ragusa,
+  Spalato, Venetia, de golff). Examples above are read from the downsized images; spellings and a few numbers marked "?"
+  are M, not checked at full resolution.
+
+**Does it fit this letter's numerals (30-741)?** No, on two independent counts, so no fit test was pre-registered or run:
+(1) range -- the key's codes stop at 116, while of the 123 two- and three-digit numbers in the printed p.110-111 text (a rough
+count, unfiltered for dates and footnote numbers) about 107 lie above 116, including every high group the editor could not
+read (241, 289, 337, 409, 433, 578, 611, 612, 636, 671, 741); (2) content -- the vocabulary is the Ottoman court and the
+Levant for Haga's Constantinople embassy (opened 1612), and code 30 is Constantinople, whereas no. 92 is a Heidelberg/Palatine
+letter of 1605 about levies and the Palatine-Brandenburg negotiation. The key's letter alphabet is signs, not numerals, so it
+cannot explain the letter's numerals as a spelled cipher either. Rule 10 wording: a key read and compared, not a verdict on
+the letter.
+
+Effect: route "DECODE 2118" is closed for this target (the drafted OLD-DKEY LOCAL-QUEUE row above is now unnecessary and must
+not be filed). DECODE then lists no States-General key from 1595-1615 at all (OLD-DKEY), so the remaining key routes are the
+correspondent side (the 122 unscreened Munich BayHStA / Marburg HStAM in-window DECODE keys, OLD-DKEY's "Not listed" paragraph)
+and the NA 1.01.02 / 3.01.14 archive hunts of "Key hunt". Status stays `open`.
+
+Next cheap step (named, not run): screen the in-window Palatine/Hessian DECODE key records (Munich BayHStA 102, Marburg HStAM 20)
+from their login-free RecordsView pages for a numeral nomenclator reaching the 700s, then open the best one or two images under
+one login; ~2-3 (estimate).
