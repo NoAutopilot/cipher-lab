@@ -9474,3 +9474,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:48 | R10-SEURE3 worker | claim for LANE LANE-RUN10-account-1: fr3151-seure-1558, rebuild Babou 1558 key (fr. 3138 no.13 f.32) and test on R1/R2; cap $4, box 09:47-10:37 UTC (80% 10:27)
 2026-10-06 09:48 | R10-ECK64C worker | claim for LANE LANE-RUN10-account-1: eckert-1864 image-check of O9-W..AG entries (mssEC 19 pp.26-61), cap 4.5, box 09:47-10:42 UTC (80% 10:31)
 2026-10-06 09:48 | R10-BAL103C worker | claim for LANE LANE-RUN10-account-1: baluze103-letellier-marca-1644 PREREG 9 shape split (g-tail vs short) on f.171r control 9s, cap 3, box 09:48-10:28 UTC (80% 10:20)
+2026-10-06 09:48 | R10-NEVF2 worker | claim for LANE LANE-RUN10-account-1: fr3416-nevers-fils-1589 L05 sign-sorter build (pos 4/5/7/13/15/16/17/20) + preflight, cap 3, box 09:48-10:23 UTC (80% 10:16), no publish
