@@ -281,3 +281,47 @@ II) and naval traffic (ORN) were never searched, and or_match's 5-grams miss tel
 out ("thirty five hundred") while the print uses digits (4995.1). "No M token" was used as a quality signal although an
 off-line C value passes it. Corrections made: NOTES.md (VERIFY-ECK section). candidates.tsv is generated and left as
 is; its "page in print" column must not be read as an entry-level verdict.
+
+## Carry-over R12A-ECKV (6 Oct 2026, verifier, account 1, for LANE LANE-RUN12-account-1): grade of the Lehigh tokens
+
+Claim under audit: D1-ECK62S (NOTES.md, 6 Oct 2026) found 13 Lehigh uses in the sent ledgers mssEC 18-19, 8 print-read all
+Canby (6) or "can be" (2), 0 Hurlbut, and held the two committed tokens (9947.505, 10020.609) at M "for a verifier grade decision".
+This section is the decision. It is a grade decision only: no novelty class changes (the readings of both committed entries
+are of telegrams printed in OR ser. I, N1 as before).
+
+Checked independently: OR ser. I vols. 41.4, 49.1, 49.2 `_djvu.txt` re-fetched (archive.org 3 requests, sha256 matching
+`ec18/or_volumes.tsv`) and the slots read by phrase: 9102 (41.4, "General Canby expected to leave New Orleans about the 15th
+instant", 24 Oct 1864, to Rosecrans), 9880 (41.4, "The orders of General Grant and General Canby are that the pursuit must be
+continued"), 9171 (49.1, 29 Jan 1865 to Thomas, "decides your question about sending troops > General Oaiiby" -- OCR of Canby;
+the ledger's "Whiff" stands in the troops slot), 9955 (49.1, "sent as quickly as possible to Canby to assist at Mobile"),
+10019 (49.2, "those sent home to be mustered out can be attached to"); 9952 (49.1, 4 Feb 1865, "... early - has many dismounted
+men": the Lehigh slot is the lost word) and 9174 (49.1, 1 Feb 1865 to R. Allen, "the -- made to send forage"; "notified of this
+arrangement" not in the OCR) are lacunae, as D1-ECK62S says. 9937, 9947, 10020 (45.2, 48.1, 48.2) were not re-fetched; 9947 and
+10020 were already image- and print-checked (DEF1-ECK62I, DEF1-ECK62P).
+
+Decision (rule 4), mechanised in `ec18/lehigh_grades.py` -> `ec18/lehigh_grades.tsv` (`--check` exit 0):
+- **C 8.** Each of the 8 print-read uses takes the word its own telegram's print has in the Lehigh slot: Canby (9102, 9880, 9937,
+  9947, 9171, 9955) or "can be" (10019, 10020). The print is the plaintext of this very use (same date, addressee and surrounding
+  words), so it is known plaintext, not a key value carried from elsewhere. For the two committed tokens this replaces the
+  held M: 9947.505 Lehigh = Canby (C), 10020.609 lehigh = can be (C).
+- **M 4.** 9174, 9952 (dated Feb 1865, slot lost in the OCR) and 9272, 9273 (Sept 1865, outside OR ser. I). Not H: the book's
+  value (Hurlbut, mssEC 41 p.17 l.6) is contradicted by every print-read use from 24 Oct 1864 to 24 May 1865, across both
+  sent ledgers and four addressees, so the book does not license H for an unread use in or after that window. Not C or S for
+  Canby either: "Canby" for these four is inference from the other uses (grade I at most), and neither lacuna is read.
+- **clear 1.** 9280 "Lehigh Iron" is a clear word, not a code token.
+- The key row stays H as the record of what the book says (ciphers/eckert-1864/key.md p.17 l.6, image-checked DEF1-ECK62P); the
+  witness record is unchanged: book = Hurlbut; operator use Oct 1864 - May 1865 = Canby / "can be". Not settled by count: the
+  C grades rest on each telegram's own print, not on the majority. A Lehigh token in any 1864-65 reading that no print reads is
+  M, not H.
+- Not decided here: Leghorn, Legend, Leopard (the same Hurlbut block, seen in passing by D1-ECK62S as Canby / "can be"); their
+  date-aligned sweep is R12A-ECKLEG's job and its grade decision a verifier's after it.
+
+Applied: `ec18/lehigh_grades.tsv` is the per-token grade of record for Lehigh. The committed `ec18/readings.md` and
+`ec18/s2/readings.md` (ec18.py output, key-book rendering) still print `[Maj Gen S. A. Hurlbut]` at H for 9947.505 and
+10020.609, and `align_tokens.tsv` (both) still marks them `H CONFLICT`; regenerating them through ec18.py needs vol18.json, about
+45 OR volumes and the DIR62 guard volumes and would re-run the whole split2 cascade, outside this box. Read those two brackets
+as superseded by lehigh_grades.tsv (Canby C, can be C); next: fold a per-token override table into ec18.py at the next full
+regeneration. Counts for the two entries after the decision: 9947.505 H 13 C 1 (was H 14 C 0); 10020.609 H 14 C 1 (was H 15 C 0).
+Checks: `ec18/lehigh_grades.py --check` current (exit 0), `decode.py --check` current (exit 0; mssEC 15 readings untouched).
+SECOND-OPINIONS-QUEUE.tsv: the target's only row (SO-ECK-4992, mssEC 15 entry 4992.3) does not contain Lehigh; nothing to carry.
+Requests: archive.org 3, 2 s apart; 0 subagents.

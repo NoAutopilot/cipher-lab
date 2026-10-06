@@ -1908,3 +1908,32 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; cheapest next: the same date-aligned sweep for Leghorn/Legend/Leopard in mssEC 18-19 and a verifier's grade decision on the Hurlbut row (D1-ECK62S: Lehigh reads Canby or 'can be' in all 8 print-read uses), ~$1; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
+## R12A-ECKV (6 Oct 2026, verifier, account 1, for LANE LANE-RUN12-account-1): grade decision on the Lehigh tokens
+
+Verifier, not solver. Decision and reasons in AUDIT.md "Carry-over R12A-ECKV"; mechanised in `ec18/lehigh_grades.py` ->
+`ec18/lehigh_grades.tsv` (`--check` exit 0). Of the 13 Lehigh uses in ec18/lehigh_uses.tsv: C 8 (each from its own telegram's
+OR print: Canby 6, "can be" 2; 5 of the 8 re-read in OR 41.4, 49.1, 49.2 by this session), M 4 (two OCR lacunae, two Sept 1865
+uses outside OR; the book's H value Hurlbut does not carry to an unread use once every read use in Oct 1864 - May 1865
+contradicts it), clear 1 (9280 "Lehigh Iron"). The two committed tokens move from held M to C: 9947.505 Lehigh = Canby,
+10020.609 lehigh = can be. The committed ec18.py outputs (readings.md, s2/readings.md, align_tokens.tsv) were not regenerated
+(full OR set + cascade, outside the box): their Hurlbut brackets for those two tokens are superseded by lehigh_grades.tsv.
+key.md's row stays H (what the book says). Leghorn/Legend/Leopard not graded (R12A-ECKLEG's sweep first).
+Requests: archive.org 3, 2 s apart; 0 subagents. decode.py --check exit 0.
+
+## Remaining gaps (finish-or-blocker pass, R12A-ECKV, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); received ledgers mssEC 01-14 all searched for residue twins (GAPS171, D1-ECK62L): 0 code-bearing twins; mssEC 18 cascade split2 (ec18/s2/): 729 entries, align_free AGREE 0.427 vs control 0.088; 17 neither-book entries: 0 wrong telegram, 5 right, 12 undecided
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L, 0 twins); next: the image of the residue pages against the volunteer text for the M-graded tokens (transcription slips the decode reads as code), ~$4
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; Nutmeg = James River gains a 5 Jul 1863 witness (C, D1-ECK62L) but no second 1862 telegram; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); received copies in mssEC 12-13: 0 (D1-ECK62W); every Lehigh in mssEC 18-19 aligned 6 Oct 2026 (D1-ECK62S: 13 uses, 8 print-read, all Canby or 'can be', 0 Hurlbut; ec18/lehigh_uses.tsv); Lehigh graded by a verifier (R12A-ECKV, AUDIT.md 'Carry-over R12A-ECKV', ec18/lehigh_grades.tsv: C 8, M 4, clear 1; 9947.505 = Canby C, 10020.609 = can be C, superseding the committed readings' Hurlbut brackets until ec18.py's next full regeneration); next: the same date-aligned sweep for Leghorn/Legend/Leopard in mssEC 18-19 (R12A-ECKLEG), then a verifier's grade on those three, ~$1
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; the 13 code words date 30 Dec 1864 - 13 Jul 1865, Cipher No. 3/No. 4 period; the Huntington holds only No. 5 (R8-ECK62); the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; 100 under the legacy split, 137 '?' entries under split2 print_q; next: the image (marker words the volunteer text may have dropped) for the dated `?p` entries under split2, ~$4
+
+## Escalation (R12A-ECKV, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171) and mssEC 04-14 6 Oct 2026 (D1-ECK62L, 0 twins, Nutmeg 1863 witness); mssEC 12-13 for the Lehigh 1865 copies (D1-ECK62W, 0); every Lehigh in sent ledgers mssEC 18-19 (D1-ECK62S, 8 print-read, all Canby or 'can be'); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram and conflict-pair tests done on legacy (R7B-ECK62, R7C-ECK62C) and split2 (R10-ECK62T: 0 wrong, 5 right, 12 undecided; primary untested at N 60); splitter fixed and adopted (R9-ECK62, R10-ECK62S, R10-ECK62T)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: the same date-aligned sweep for Leghorn/Legend/Leopard in mssEC 18-19 (Lehigh graded by R12A-ECKV: C 8 from each telegram's own print, M 4, clear 1), then a verifier's grade on those three, ~$1; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy

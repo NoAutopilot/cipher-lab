@@ -1,0 +1,15 @@
+ledger	pointer	date	entry_in_committed_readings	book_value	book_grade	decided_meaning	decided_grade	reason
+mssEC 19	9102	1864-10-24		Maj Gen S. A. Hurlbut	H	Canby	C	print of this telegram reads Canby
+mssEC 18	9880	1864-10-31		Maj Gen S. A. Hurlbut	H	Canby	C	print of this telegram reads Canby
+mssEC 18	9937	1865-01-19		Maj Gen S. A. Hurlbut	H	Canby	C	print of this telegram reads Canby
+mssEC 18	9947	1865-01-27	9947.505	Maj Gen S. A. Hurlbut	H	Canby	C	print of this telegram reads Canby
+mssEC 19	9171	1865-01-29		Maj Gen S. A. Hurlbut	H	Canby	C	print of this telegram reads Canby
+mssEC 19	9174	1865-02-01		Maj Gen S. A. Hurlbut	H		M	dated, OR slot lost in OCR; book H (Hurlbut) contradicted by all 8 print-read uses
+mssEC 18	9952	1865-02-04		Maj Gen S. A. Hurlbut	H		M	dated, OR slot lost in OCR; book H (Hurlbut) contradicted by all 8 print-read uses
+mssEC 18	9955	1865-02-04		Maj Gen S. A. Hurlbut	H	Canby	C	print of this telegram reads Canby
+mssEC 18	10019	1865-05-23		Maj Gen S. A. Hurlbut	H	can be	C	print of this telegram reads 'can be'
+mssEC 18	10020	1865-05-24	10020.609	Maj Gen S. A. Hurlbut	H	can be	C	print of this telegram reads 'can be'
+mssEC 19	9272	1865-09-02		Maj Gen S. A. Hurlbut	H		M	Sept 1865, not in OR ser. I; book H (Hurlbut) contradicted by all 8 print-read uses
+mssEC 19	9273	1865-09-02		Maj Gen S. A. Hurlbut	H		M	Sept 1865, not in OR ser. I; book H (Hurlbut) contradicted by all 8 print-read uses
+mssEC 19	9280	1865-09-12		Maj Gen S. A. Hurlbut	H		clear	clear word (Lehigh Iron)
+# counts: C 8, M 4, clear 1 (of 13 uses)
