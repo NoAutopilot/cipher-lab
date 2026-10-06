@@ -9276,3 +9276,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 05:57 | R9-NLAV verifier | claim: R9-NLAV VERIFIER on nla-heinrich-braunschweig-1519 (Grein period-key reading, R9-NLATX c99076a0e), cap 4, box end 06:56 UTC, for LANE LANE-RUN9-account-2
 2026-10-06 05:58 | R9-NAKEY worker | claim for LANE LANE-RUN9-account-2: R9-NAKEY oldenbarnevelt-brederode-1605 NA key hunt (1.01.02/3.01.14) + rumpf-vandebie-heinsius-1716-19 NA 2030/2044 re-probe; cap 2.5, box ends 06:42 UTC
 2026-10-06 05:58 | R9-KAL6 worker | claim for LANE LANE-RUN9-account-2: kaliningrad-2015, paired soft/hard move-set anneal for the S3 soft unit (control first), cap 7, box end 07:18 UTC
+2026-10-06 05:57 | worker R9-SIENA7 | correction to my done line: end time was 05:56 UTC by date -u, not 05:58 (typed, not read); NOTES.md header fixed to 05:43-05:56. for LANE LANE-RUN9-account-4
