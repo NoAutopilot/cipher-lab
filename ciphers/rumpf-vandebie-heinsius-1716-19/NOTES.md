@@ -322,6 +322,20 @@ Next cheap step: none under this lead. The 1743 book is closed as a design sourc
 reading is unchanged: the NA originals of letters 309/446/455 (NA 3.01.19 inv. 2030/2044, not digitised, ASKS row 46 /
 `REQUEST.md`).
 
+## D2B-RUMPF re-probe (6 Oct 2026, account 2, LANE DEFAULT-account-2-20261005-2217)
+
+The "While waiting" step below, run once more. Each item page's embedded `drupal-settings-json` viewer record,
+fetched 6 Oct 2026 00:3x UTC:
+- **NA 3.01.19 inv. 2030** (`www.nationaalarchief.nl/onderzoeken/archief/3.01.19/invnr/2030`): unittitle "Rumpf,
+  Hendrik Willem-, uit Stockholm.", `"scans":[]`, `"has_scan_navigation":false`, `"availability":"PHYSICAL"`.
+  **Still not digitised.**
+- **NA 3.01.19 inv. 2044** (same route): unittitle "Bie, Jacob de-, uit Hamburg, Lübeck en Stockholm.",
+  `"scans":[]`, `"has_scan_navigation":false`, `"availability":"PHYSICAL"`. **Still not digitised.**
+- No scan count or IIIF info.json to record; nothing fetched from service.archief.nl. Unchanged since the 24 Sept
+  and 3 Oct 2026 probes. The route to letters 309/446/455 is still the copy order (ASKS row 46, `REQUEST.md`).
+
+Requests: `www.nationaalarchief.nl` 2 (2 s apart, descriptive User-Agent). No other host, no subagents, no vision calls.
+
 ## While waiting
 
 - While the copy order for NA 3.01.19 inv. 2030/2044 waits on ASKS row 46: re-probe the two NA 3.01.19 item pages
