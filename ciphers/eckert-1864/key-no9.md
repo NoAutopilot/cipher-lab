@@ -180,3 +180,18 @@ scratch, regenerable as in section 3). Read by the worker, one eye, no subagent.
 | Spafford/Spartan | River | H | p.[21] (1741) l.10 |
 | Stomach/Stagger | Transportation | H | p.[21] (1741) l.24 |
 | Vincent/Vinton | Quartermaster | H | p.[22] (1742) l.24 |
+
+## 5. Further lines read 6 Oct 2026 (R9-ECK64B, LANE LANE-RUN9-account-1)
+
+Read by the worker, one eye, no subagent: p.[20] and p.[21] (pointers 1740, 1741) and p.[23] (1743) fetched at 1400 px from
+the IIIF server (scratch, regenerable), p.[24] from the committed ciphers/eckert-1862/images/mssEC67_p1744.jpg. Line numbers
+count the printed lines from the top of each page and agree with the rows already tabled (Richard l.2, Robin l.4, Relay l.7;
+Sharper l.4, Spafford l.10, Shylock l.12, Stomach l.24; Walden l.1, Wiley l.13; Wadding l.11). Needed by O9-X, O9-Z, O9-AG.
+
+| code word | meaning | grade | source |
+|---|---|---|---|
+| Ramsay/Ranson | Ammunition | H | p.[20] (1740) l.3 |
+| Rusty/Ruffle | Fleet | H | p.[20] (1740) l.17 |
+| Spoon/Spit | Transports | H | p.[21] (1741) l.26 |
+| White/Wick | Equipage | H | p.[23] (1743) l.12 |
+| Wedge/Wharf | Subsistence | H | p.[24] (1744) l.2 |

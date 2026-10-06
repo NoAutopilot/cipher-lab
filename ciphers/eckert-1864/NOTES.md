@@ -327,7 +327,7 @@ exit 0
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 11 Beckwith/Kimber/Caldwell entries in Cipher No. 2 (section 8 and DEF1-ECK64, 5 Oct 2026: H 273, C 6, I 10, M 1, `decode_no2.py --check` exit 0); the rest of the ledger untranscribed.
 - corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
-- old-vocabulary entries beyond page 60 of mssEC 19 - blocker: not-attempted; 22 entries read and image-checked so far (17 of pages 1-20 by R7A/R7B/R8; the five "(9)" entries of pages 21-60, O9-R..V, by R9-ECK64 6 Oct 2026: H 45, M 0, all twenty-two H 193, decode_no9.py --check exit 0); next: scan the item-API text of pages 61 onward for further "(9)" marks and for unmarked entries of pages 21-60 written in the old vocabulary (Pagan/Pagoda openings), read them with key-no9.md, and search O9-U/O9-V in OR I/35 pt 2 and ser. III vol. 4, ~$3
+- old-vocabulary entries of mssEC 19 not yet image-checked - blocker: not-attempted; 33 entries read (22 image-checked: O9-A..V by R7A/R7B/R8/R9-ECK64; 11 from the volunteer text only: O9-W..AG of pages 26-61 by R9-ECK64B 6 Oct 2026, H 93, M 0, all thirty-three H 286, decode_no9.py --check exit 0; no old-vocabulary entry on pp.62-72, which switch to Cipher No. 1/2 marks from 1 May 1864); next: image-check O9-W..AG on the page images (pointers 8918, 8933, 8936-8940, 8942, 8946, 8953; crops via tools/iiif_lines.py, one blind read per page batch, the R8/R9-ECK64 method), ~$4
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
 - [ ] siblings: mssEC 25 second copy read for E4/E5 (Second reader, 24 Sept 2026; four corrections applied); mssEC 18 opened 5 Oct 2026, pp.50-60 text, no E4/E5 copy
@@ -335,9 +335,9 @@ Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H
 - [x] known-keys: Cipher No. 1 (mssEC 41) and Cipher No. 2 (mssEC 47) are the period key books in use
 - [x] print: OR series I sweep, ORN, Butler and Fox correspondence, Lincoln Collected Works (section 4, AUDIT.md)
 - [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries; for the Jan-Feb 1864 old vocabulary the period book is mssEC 67 (filled-in, Tomokiyo's No. 9), read on 9 pages for the sample (R7A-ECK64, 6 Oct 2026) and on pp.[9]-[24] for the further entries (R7B-ECK64B, 6 Oct 2026)
-- [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026); N2-E Spit re-read in mssEC 47, mssEC 48 and the ledger (D2-ECK64S, 5 Oct 2026: Spit = Near in both books, ledger Spit; conflict logged, not resolved); O9-E..Q checked against the mssEC 19 page images (R8-ECK64, 6 Oct 2026, image-check-no9.tsv); O9-R..V likewise (R9-ECK64, 6 Oct 2026)
+- [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026); N2-E Spit re-read in mssEC 47, mssEC 48 and the ledger (D2-ECK64S, 5 Oct 2026: Spit = Near in both books, ledger Spit; conflict logged, not resolved); O9-E..Q checked against the mssEC 19 page images (R8-ECK64, 6 Oct 2026, image-check-no9.tsv); O9-R..V likewise (R9-ECK64, 6 Oct 2026); O9-W..AG not yet (R9-ECK64B, 6 Oct 2026, volunteer text only)
 - [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
-Verdict: keep going: 1 internal gap; cheapest next: scan mssEC 19 pages 61 onward (and the unmarked entries of pages 21-60) for further old-vocabulary entries, read them with key-no9.md, and search O9-U/O9-V in OR I/35 pt 2 and ser. III vol. 4, ~$3 (updated R9-ECK64, 6 Oct 2026: the five "(9)" entries of pages 21-60 read and image-checked, H 45, M 0, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: the "(9)"-marked Jan-Mar 1864 entries past page 20 of mssEC 19 read from the page images with key-no9.md, ~$4 (updated R8-ECK64, 6 Oct 2026: O9-E..Q image-checked, one code-word change, H 148, M 0, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: image-check the thirteen O9-E..Q entries (volunteer text only so far) and continue the "(9)"-marked entries past page 20 of mssEC 19, ~$4 (updated R7B-ECK64B, 6 Oct 2026: 17 old-vocabulary entries read with mssEC 67, H 147, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: the rest of the Jan-Feb 1864 old-vocabulary entries (pages 1-20 of mssEC 19, with key-no9.md extended from mssEC 67 pp.[11]-[15], [18]), ~$4 (updated R7A-ECK64, 6 Oct 2026: four-entry sample read with mssEC 67, decode_no9.py --check exit 0). Earlier note: (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
+Verdict: keep going: 1 internal gap; cheapest next: image-check the eleven O9-W..AG entries of pages 26-61 against the mssEC 19 page images, ~$4 (updated R9-ECK64B, 6 Oct 2026: pages 21-72 scanned for every form of the operator's "9" mark and for old-vocabulary words; eleven more entries read with key-no9.md, H 93, M 0, decode_no9.py --check exit 0; O9-Y and O9-AE matched in the OR, O9-U/V not in I/35 pt 2 or III/4). Earlier: keep going: 1 internal gap; cheapest next: scan mssEC 19 pages 61 onward (and the unmarked entries of pages 21-60) for further old-vocabulary entries, read them with key-no9.md, and search O9-U/O9-V in OR I/35 pt 2 and ser. III vol. 4, ~$3 (updated R9-ECK64, 6 Oct 2026: the five "(9)" entries of pages 21-60 read and image-checked, H 45, M 0, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: the "(9)"-marked Jan-Mar 1864 entries past page 20 of mssEC 19 read from the page images with key-no9.md, ~$4 (updated R8-ECK64, 6 Oct 2026: O9-E..Q image-checked, one code-word change, H 148, M 0, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: image-check the thirteen O9-E..Q entries (volunteer text only so far) and continue the "(9)"-marked entries past page 20 of mssEC 19, ~$4 (updated R7B-ECK64B, 6 Oct 2026: 17 old-vocabulary entries read with mssEC 67, H 147, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: the rest of the Jan-Feb 1864 old-vocabulary entries (pages 1-20 of mssEC 19, with key-no9.md extended from mssEC 67 pp.[11]-[15], [18]), ~$4 (updated R7A-ECK64, 6 Oct 2026: four-entry sample read with mssEC 67, decode_no9.py --check exit 0). Earlier note: (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
 
 ## mssEC 18 check for E4/E5 copies, 5 Oct 2026 (RUN6-ECK, LANE-RUN6 wave 2)
 
@@ -520,3 +520,35 @@ not searched (search results only, no novelty question asked). Unmarked entries 
 Pagoda openings without "(9)") and pages past 60 not examined. Requests: hdl.huntington.org 51 (40 item-API pages, two
 'Empty reply' retried once each; 5 ledger IIIF pages; 3 mssEC 67 IIIF pages, one retried), archive.org 3 (djvu full texts);
 all final responses 200.
+
+## Eleven more old-vocabulary entries of pages 26-61, 6 Oct 2026 (R9-ECK64B, LANE LANE-RUN9-account-1)
+
+Step checked undone first: R9-ECK64 (section above) named pages past 60 and the unmarked entries of pages 21-60 as not examined.
+Kept as found: the Spit/men (N2-E) and Village/Garrard (O9-A) conflicts and the O9-H/O9-P rule-4 notes, unchanged.
+
+Route: Huntington CONTENTdm item API (field "text") for mssEC 19 pages 21-72 (pointers 8913-8964; scratch); the ledger runs to
+page 400 (object 9302, 402 children). Scanned by script for the operator's book mark in every written form ("(9)", "9" in
+quotes, "No 9", "(No 9)") and for entries with three or more words in key-no9.md, each hit read by the worker. mssEC 67
+pp.[20], [21], [23] at 1400 px (pointers 1740, 1741, 1743; scratch) and the committed p.[24] for five new key rows (key-no9.md
+section 5). OR check: archive.org `_djvu.txt` of I/32 pt 3, I/33, I/34 pt 3, I/35 pt 2 and ser. III vol. 4
+(warofrebellion323unit, 33unit, 343unit, 352unit, waroftherebellio026242mbp), dehyphenated and phrase-searched by script.
+
+Found: R9-ECK64's "(9)"-only search missed the quoted and "No 9" forms of the mark; eleven further old-vocabulary entries,
+O9-W..AG (ciphertext-no9.txt; reading-no9.md section "Eleven further entries"): Stanton to Dix 28 Mar (arrest of Mrs Mary W.
+Rhodes, a rebel agent, to be sent to Fort Monroe), Meigs (Abbot/Aragon) to Van Vliet and to Capt. Wise at New York 19-22 Apr
+(steamers, tugs, transportation for Butler's expedition, artillery and ammunition barges), Halleck to Dix 19 Apr (the 14th
+New York Heavy Artillery), Stanton to Canby 21 Apr (state militia), Halleck to Columbus, Ohio 25 Apr (a militia regiment at
+Johnson's Island), Halleck to Banks and Steele 30 Apr (no troops withdrawn from the Red River operations). Code-word tokens:
+H 93, C 0, I 0, M 0 (all thirty-three old-vocabulary entries H 286); `python3 decode_no9.py --check` exit 0. Ungraded:
+"bologna", "Abbott", "Memphis", "Vain Talents" (reading-no9.md). New key rows: Ramsay = Ammunition, Rusty = Fleet, Spoon =
+Transports, White/Wick = Equipage, Wedge = Subsistence. Check: O9-Y (I/33 p.913, 4 p.m., Henrietta = 4 PM) and O9-AE (I/34
+pt 3 p.358, 10.30 p.m., Susan = 10.30 PM) agree with the print word for word. Pages 62-72 (1-18 May 1864): every entry is
+marked No 1/(1) or No 2/(2) or opens with Growl/Grapes; no old-vocabulary entry found there. Key source per rule 10: period
+(mssEC 67).
+
+Not found / not done: the eleven are from the volunteer text only, NOT image-checked (the named next step). O9-W, X, Z, AA,
+AB, AC, AD, AF, AG not located in the five OR volumes by the phrases tried (reading-no9.md table); O9-U and O9-V not located
+in I/35 pt 2 or ser. III vol. 4 either; ser. II (prisoners) and Quartermaster's letter books not searched -- search results
+only, no novelty question asked (rule 10). Pages past 72 not fetched. Requests: hdl.huntington.org about 59 (about 56 item-API
+calls: 52 pages, the parent object, three tries of pointer 8947 (page 55); 3 mssEC 67 IIIF pages), archive.org 15 (metadata, file lists, 5 djvu full
+texts, 1 advancedsearch); all final responses 200.
