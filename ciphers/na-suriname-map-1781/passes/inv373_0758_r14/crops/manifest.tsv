@@ -1,0 +1,21 @@
+# R14-SUR758 crops, 6 Oct 2026. Not committed (folder over 30 MB). Regenerate: fetch the native region, then cut.
+# base = https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/fb805061-1d38-44e1-8a87-80457924ba36.jp2
+#   (NL-HaNA_1.05.03_373_0758.tif, native 4834x3988; R13-SURSWP4 plan.tsv order 761)
+# right.jpg = {base}/2860,880,1974,2220/full/0/default.jpg  (fetched by: python3 tools/iiif_lines.py "{base}" --region 2860,880,1974,2220 --out R --dry-run)
+# cut: python3 tools/iiif_lines.py --image right.jpg --out cR --prefix p0758R --centres 101,243,407,573,740,922,1075,1206,1331,1430,1561,1700,1850,1995,2160 --debug
+crop	region_y_centre	content	to_reader
+L01	101	gloss "noopens den Staat" over cipher; cipher row opens with plain "nige eclaircissementen door vraagen"	yes
+L02	243	pair	yes
+L03	407	pair	yes
+L04	573	pair	yes
+L05	740	pair	yes
+L06	922	gloss "winnen" over a short cipher group	yes
+L07	1075	plain letter line	no
+L08	1206	plain letter line	no
+L09	1331	plain letter line	no
+L10	1430	plain letter line	no
+L11	1561	pair	yes
+L12	1700	pair	yes
+L13	1850	pair	yes
+L14	1995	pair	yes
+L15	2160	short gloss over a short group at the foot	yes
