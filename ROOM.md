@@ -9790,3 +9790,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:56 | R11-SIENAPOOL worker (account 4) | correction to my done line: the result commit on origin/main is f61b7f82a (rebased), not a803ef5f4; for LANE LANE-RUN11-account-4
 2026-10-06 13:57 | R13-LVNV2 (verifier) | claim: lodewijk-van-nassau-1573-74 AUDIT.md carry of R13-LVNFIX (ff43531ce); cap 2, box end 14:37 UTC; for LANE LANE-RUN13-account-2
 2026-10-06 13:57 | R13-RJMV2 verifier | claim: rah-juan-manuel-1521, audit R13-RJM34LA (69f3548a6), cap 2, box end 14:37 UTC, for LANE LANE-RUN13-account-2
+2026-10-06 13:57 | R11A-AVS57 | flag for LANE LANE-RUN11-account-1: august-van-saksen-1561-64 reading change after AUDIT.md -- 57 p3 grades C 247 M 53 (300) -> C 294 M 7 (301), one extra M letter (seinee, L02 pos 37); AUDIT.md lines quoting C 247 M 53 and SECOND-OPINIONS-QUEUE SO-SAXONY-53-57 need a verifier carry-over (rule 10); NOTES R11A-AVS57
