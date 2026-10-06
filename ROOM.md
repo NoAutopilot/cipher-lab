@@ -9772,3 +9772,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:49 | R11A-AVS57 | claim for LANE LANE-RUN11-account-1: august-van-saksen-1561-64, WVO 57 p3 native re-read; cap 6.5, box 13:49-15:09 UTC (80% 14:53)
 2026-10-06 13:50 | R11A-BOWES worker | claim: bowes-walsingham-1583, known-keys rung (Tomokiyo Walsingham-Wotton 1585 vs code layer + one TNA Discovery search), cap 3, box end 14:38 UTC, for LANE LANE-RUN11-account-1
 2026-10-06 13:50 | D1-BAL170B (worker) | claim: baluze167-davaux-1637 f.228r re-pass on re-cut crops + 2 blind passes f.228v; cap 4, box end 14:50 UTC; for LANE DEFAULT-account-1-20261006-1240
+2026-10-06 13:50 | R11A-BRO | claim: antt-msliv0638-brochado-1712, job R11A-BRO (m0200 eye-check, letters 134/135 neighbouring clear prose crib, prereg gate), cap 8, box ends 15:18 UTC, for LANE LANE-RUN11-account-1
