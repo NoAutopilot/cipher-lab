@@ -466,3 +466,37 @@ minute addressed to Van Dedem at Vienna or "en chiffre"; then 1.02.20's 1809 let
 
 **Requests:** service.archief.nl 62 (61 full openings at 1000 px plus 1 duplicate fetch of scan 8; all HTTP 200, >= 1.6 s
 apart, one at a time); no other host. Subagent calls: 0.
+
+## R8-ROELL5 (6 Oct 2026): NA 2.01.08 inv. 92 scans 176-230, the ministry's outgoing side 1-10 Feb 1809
+
+Worker R8-ROELL5 (account 2, for LANE LANE-RUN8-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run8-jobs.md`,
+03:52-03:57 UTC by `date -u`. Page images read by eye (IIIF 1000 px openings), no subagent, no decoding. Status unchanged:
+`open`. Grade counts: H 0, C 0, S 0, M 0, I 0 (no reading). Per-scan log: `na20108/inv92_scans_176-230.tsv` (34 scans not
+viewed by D2B-ROELL2, plus 175 re-viewed to confirm the scan-to-canvas offset; with `inv92_scans.tsv` every scan 175-230 is
+now logged).
+
+**Found.**
+- **No minute to Van Dedem, Vienna or Constantinople.** The February minutes (cover at scan 176) run fol. 138 (3 Feb) to fol.
+  177 (10 Feb), with some 1-2 Feb pieces filed after the 3 Feb ones (fol. 143-146). Addressees: the King (most), the French
+  ambassador Larochefoucauld, Bangeman Huygens at Cassel (No 3, 3 Feb), a consul-general (No 1, 3 Feb; post read as Trieste,
+  uncertain), the Vice-President of the Staatsraad, the Minister of Finance, and internal fee/fund letters of the
+  secretary-general (Bosscha). The one Vienna item (scan 194, fol. 152, 6 Feb) is a French note to the **Austrian** chargé
+  d'affaires at Amsterdam about the Gazette Royale, not a letter to Van Dedem.
+- **No cipher.** Every scan is clear Dutch or French; no cipher groups, no "in cijfers"/"en chiffre" note, no key. The only
+  confidential marking is "confidentiellement" in the text of a clear French minute to Larochefoucauld (8 Feb, fol. 163).
+- With D2B-ROELL2's 9 Feb read (scans 209-223), **inv. 92 has no outgoing minute to Van Dedem or the Constantinople legation
+  between 1 and 10 Feb 1809.** If R1469 (9 Feb 1809) is a ministry letter to Van Dedem on the road, its minute is not filed
+  in this volume's February run to the 10th, although the finding aid describes inv. 92 as ordinary and secret minutes
+  together ("Gewone en geheime minuten", D2B-ROELL); a letter written outside the ministry (the King's cabinet, another
+  minister) is not excluded. Inference about R1469, not established.
+
+**Not found / not searched.** Scans 231-330 (11-28 Feb), January (scans ~4-174) and March were not read in full, so a
+later covering letter or an earlier one sent ahead to Vienna is not excluded. Not searched: the legation archive 1.02.20's
+1809 letter-book; the King's cabinet papers for a letter to Van Dedem in Feb 1809.
+
+**Verdict line:** `open` -- inv. 92 has no 1-10 Feb 1809 minute to Van Dedem, Vienna or Constantinople and no cipher;
+cheapest next: the legation archive 1.02.20's 1809 letter-book (incoming side, Van Dedem's papers on the road) or the
+January run of inv. 92 (scans ~100-174, letters sent ahead to Vienna before 31 Jan; ~USD 2-3, <= 45 requests).
+
+**Requests:** service.archief.nl 35 (35 IIIF openings at 1000 px; all HTTP 200, >= 1.8 s apart, one at a time); no other
+host. Subagent calls: 0.
