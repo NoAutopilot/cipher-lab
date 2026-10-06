@@ -357,3 +357,19 @@ Read so far: 0 of ~5,000 open signs on L25 (c370-c375); seed table tested agains
 - [n/a] retry: no host failed
 Verdict: parked: every gap waits on the owner's sort or physical access; cheapest next after the sort: rerun savt/align.py on settled labels, ~$4
 gaps_check (A3V3-SAVT): `OK parked fr16144-savary-lancosme-1588: parked: 3 gap(s), all outside blockers`
+
+## D4-SAVC380 (LANE DEFAULT-account-4-20261006-1235, account-4 worker, 6 Oct 2026 13:03-13:1x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-06-account4-default-1235-jobs.md, job D4-SAVC380 (cut line crops of c380 and c370-c375).
+**Not run: the named step was already done.** SV-SORT (3 Oct 2026, section above) cut every one of these canvases with
+`tools/iiif_lines.py --follow-slope 600 --debug` and checked the overlays by eye: c370 25 lines/50 crops, c371 26/52,
+c372 31/62 (by-eye `--centres`), c373 27/54, c374 25/50, c375 6/12, c380 22/44 = 162 lines, 324 crops, all 324 in
+`images/manifest.json` (dated 03 Oct 2026); the crops were segmented (7,113 signs) and built into `sorter/index.html`. The
+"## While waiting" section at the end of the FT-C pass (which NEXT-STEPS.tsv still reads) predates SV-SORT and is stale; the
+dated section below supersedes it. The folder Verdict's cheapest next (rerun `savt/align.py` on settled labels, ~$4) waits on
+the owner's sort and is above this job's cap, so per the brief the job stopped here. No crops cut, no requests made
+(gallica.bnf.fr 0), no subagent calls, no reading.
+
+## While waiting (6 Oct 2026, D4-SAVC380)
+[done 3 Oct 2026, SV-SORT: line crops of c370-c375 and c380 cut, overlays checked, sorter built.] Nothing independent of the
+owner's sort remains on this folder: every gap in the Remaining gaps below (4 Oct 2026, A3V3-SAVT) waits on the settled
+alphabet or on physical access to fr.17020.
