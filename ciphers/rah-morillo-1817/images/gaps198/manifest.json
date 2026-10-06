@@ -111,6 +111,17 @@
    "file": null,
    "fetched": "2026-10-04 (GAPS209, STALE4 account-1 worker)",
    "content": "f.35: pencil folder divider only -- 'c)', '35', 'Francisco Warleta', 'Marzo-Oct. 1816'; lower half blank; no ink text, no cipher. Not committed (folder at the 30 MB line; re-fetch by URL, sha1 above)."
+  },
+  {
+   "record_id": 2240,
+   "idImagen": 10075081,
+   "url": "https://bibliotecadigital.rah.es/i18n/catalogo_imagenes/imagen_id.do?idImagen=10075081",
+   "native_size": "3352x4729",
+   "native_bytes": 1801537,
+   "native_sha1": "ff2400db1c8b5c1e09c7c402c6b0eb1ab397a8e1",
+   "file": null,
+   "fetched": "2026-10-06 (R8-MORIL, account-2 worker)",
+   "content": "f.1r of record 2240: clear autograph letter, Enrile to Morillo, Madrid 26 Jun 1817 (RV t.III doc. 607); no numerals, no cipher. Not committed (folder at the 30 MB line; re-fetch by URL)."
   }
  ]
 }
