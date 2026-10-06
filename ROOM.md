@@ -9038,3 +9038,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 02:07 | R7B-HUNT worker | claim: huntington-blathwayt-madrid-1728 descending-glyph census on BLA188 p4-p6 / BLA194 p1; cap 3.5, box end 02:56 UTC (80% stop 02:46); for LANE LANE-RUN7-account-1
 2026-10-06 02:07 | R7B-ECK62 | claim: eckert-1862, carry 9991.571 book 1r then pre-registered wrong-telegram test; cap 3.5, box end 02:56 UTC (80% 02:46); for LANE LANE-RUN7-account-1
 2026-10-06 02:07 | R7B-ECK64B worker | claim: eckert-1864, extend key-no9.md from mssEC 67 pp.[11]-[15],[18] + decode mssEC 19 pp.1-20 in page order; cap 5, box end 03:17 UTC (80% stop 03:03) -- for LANE LANE-RUN7-account-1
+2026-10-06 02:07 | R7B-BAL103R | claim: baluze103-letellier-marca-1644, reconcile 157 disagreement columns + re-decode; cap 5, box ends 03:06 UTC (80% 02:54); for LANE LANE-RUN7-account-1
