@@ -1,0 +1,100 @@
+item	label	conf	second	note
+1	NONE	L	:	gap after c
+2	:	H	NONE	two dots
+3	NONE	L	:	no sign after 7 tick
+4	@	M	A	big left curl
+5	NONE	L	:	gap
+6	NONE	L	P	gap
+7	:	L	NONE	dots at tick
+8	NONE	L	y	gap
+9	o	M	a	small round
+10	NONE	L	:	tick on dots
+11	m	M	S	three humps
+12	p	M	r	p with descender
+13	NONE	M	z	tz descender part
+14	NONE	L	#	to sign
+15	d	M	S	d with tall stem
+16	NONE	L	y	gap
+17	NONE	L	P	hook
+18	NONE	L	z	unclear
+19	NONE	L	y	gap
+20	x	M	z	x
+21	NONE	L	y	lead stroke
+22	NONE	L	y	faint marks
+23	tz	M	p	tz
+24	NONE	L	y	gap
+25	NONE	L		x gap
+26	P	L	S	pi-like with loop
+27	NONE	L	#	gap
+28	d	M	S	curled d
+29	NONE	L	:	gap
+30	x	M	z	x
+31	NONE	L		V unclear
+32	c	M	a	small c
+33	d	M	S	curled d
+34	NONE	L	p	gap
+35	NONE	L	:	gap
+36	NONE	L	:	after dots
+37	NONE	L	:	unclear
+38	V	L	S	long stroke
+39	NONE	L	d	gap
+40	2	M	3	e-like loop
+41	#	H	P	double cross
+42	NONE	L	:	gap
+43	3	M	z	small 3
+44	6	L	b	round with stem
+45	:	M	NONE	two dots
+46	NONE	L	:	gap
+47	P	M	r	pi bar
+48	NONE	L	:	gap
+49	NONE	L	f	gap
+50	NONE	L	p	gap
+51	d	M	S	dotted d
+52	4	L	p	crossed descender
+53	X_NEW	L	z	plain g
+54	S	L	:	tall loop stroke
+55	@	M	A	curl a
+56	NONE	L	:	gap
+57	m	M	3	three humps
+58	g	H	y	closed bowl g
+59	NONE	L	#	gap
+60	NONE	L	:	gap
+61	to	L	o	t with loop
+62	NONE	L	:	gap
+63	tz	M	z	tz
+64	NONE	L	:	gap
+65	NONE	L	#	gap
+66	L	M	P	capital L
+67	NONE	L	:	gap
+68	NONE	L	:	gap
+69	NONE	L	:	gap
+70	NONE	L	:	gap
+71	NONE	L	:	gap
+72	NONE	L	:	gap
+73	NONE	L	:	gap
+74	NONE	L	:	gap
+75	NONE	M	p	blank space
+76	x	H	z	x
+77	S	L	d	tall loop
+78	NONE	L	p	gap
+79	NONE	L	:	gap
+80	g	H	y	g
+81	m	L	3	squiggle
+82	NONE	L	:	gap
+83	:	L	NONE	single dot
+84	NONE	L	y	gap
+85	NONE	L	z	gap
+86	NONE	L	:	gap
+87	NONE	L	:	gap
+88	c	M	a	small c
+89	:	H	NONE	two dots
+90	d	H	S	d with stem
+91	c	M	a	small c
+92	NONE	L	:	gap
+93	NONE	L	:	gap
+94	NONE	L	:	gap
+95	NONE	L	:	gap
+96	i	L	NONE	dotted marks
+97	NONE	L	:	gap
+98	y	L	g	swash y
+99	o	M	a	small o
