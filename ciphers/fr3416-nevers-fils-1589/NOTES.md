@@ -345,7 +345,7 @@ Not found in print: nothing searched (transcription job).
 
 ## Remaining gaps
 Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
-- L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; glyph-atlas route tried once (A1B-FILS-L05): non-test at its own pre-registered class gate, since no H token on f.35r contains a 0 (class 0 has 0 exemplars, gate >= 3), and pos 15-16 fuse into one segmented box; next: re-register the atlas test with exemplars of this hand's 0 from a second leaf (the Nevers fils letters' other figure runs, once one is H-graded) or with the 8-vs-'01' question posed as one looped-8 box against the H 8 class and a joined 0+1 synthetic, then classify pos 5/13/17/20 (single boxes), ~$3
+- L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; glyph-atlas route tried twice: A1B-FILS-L05 non-test at its class gate (no H exemplar of 0), R9-NEVF (6 Oct 2026, class 0 dropped, pos 5/13/17/20) non-test at the leave-one-out gate (0.644 vs >= 0.90; every miss votes the unlabelled '_' class), 0 tokens moved; a FAIL logged, not re-tuned; next: a person's read of the L05 glyphs in the sign sorter (tools/sign_sorter.py with a focus.tsv of pos 4/5/7/13/15/16/17/20 against the H digit tiles of verify/l05_atlas/box_labels.tsv), ~$1 to build
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON); 251 words H, 43 M, 23 U - blocker: illegible; to every machine reader tried, measured by its own hidden H-word control: 1100-px word windows to Sonnet (A1B-FILS-UPPER, reads H neighbours wrong) and to Opus (A1B-FILS-UPPER2, 0/6 vs gate 5/6), then whole 2400-px line strips to Opus (DEF1-F3416, 5 Oct 2026, 1/6 vs gate 5/6, verify/upper_strips/): both instruments retired under rule 3's third-attempt clause; the M/U words need a person reading the hand (a palaeographer, or the owner on the strips images/f43u_*), not a fourth machine pass
@@ -359,8 +359,8 @@ Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
-- [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved; whole line strips of the upper letter to a blind Opus pass C (DEF1-F3416, 5 Oct 2026): 1/6 H controls (gate 5/6), non-test, 0 tokens moved, line-strip instrument retired
-Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the L05 glyph-atlas test re-registered without class 0 (pos 5/13/17/20), ~$3
+- [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved; the same re-registered without class 0 (R9-NEVF, 6 Oct 2026): non-test at the leave-one-out gate (0.644 vs 0.90), 0 tokens moved; whole line strips of the upper letter to a blind Opus pass C (DEF1-F3416, 5 Oct 2026): 1/6 H controls (gate 5/6), non-test, 0 tokens moved, line-strip instrument retired
+Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the L05 sign-sorter build for a person's read (pos 4/5/7/13/15/16/17/20), ~$1
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -702,4 +702,28 @@ H controls; the FILS-UPPER passes that produced the reading were two Opus reads 
 was 0.442, so the machine read of this hand is at its limit. The line-strip instrument is retired for this check; the next step for
 the M/U words is a person's read (gap list above). AUDIT.md and SECOND-OPINIONS-QUEUE.tsv quote no upper-letter word counts:
 nothing to propagate. Vision: 3 Opus subagent calls (12 strips), 0 own looks. Requests: 0 network (local source re-cut).
+Not found in print: nothing searched (transcription check only).
+
+## R9-NEVF results (account 1 for LANE LANE-RUN9-account-1, 6 Oct 2026, 06:07-06:2x UTC)
+
+Rules pre-registered in `PREREG-R9NEVF.md` (commit c7c943c1e, pushed 06:09 UTC before segmentation): the A1B-FILS-L05 test with the
+class-0 questions dropped (pos 4, 7 and the fused 15-16 stay M whatever happens); questions pos 5 (1 vs 9), 13 (7 vs nearest digit),
+17 (5 vs 6), 20 (6 vs 8). Commands (pasted; opencv/scikit-image/scikit-learn pip-installed first):
+`python3 tools/glyph_atlas.py segment --page f43=ciphers/fr3416-nevers-fils-1589/images/src_ark_12148_btv1b9058240c_f43_3950_3560_3150_1800.jpg --out <scratch>/ga --rel 0.7 --debug`
+-> 345 signs, 41 marks (reproduces A1B-FILS-L05); `cluster` defaults; `classify --out <scratch>/ga --labels verify/l05_atlas/labels.json --page f43 --tsv verify/l05_atlas/classify.tsv --topk 3 --knn 5 --holdout f43_05_`.
+L05 box map reproduces A1B-FILS-L05 (pos 5 -> box 18, 13 -> 26, 17 -> 29, 20 -> 32, 15+16 fused in 28).
+- Atlas: 87 single-digit boxes from H tokens of L02, L03, L04 and L10, labelled by eye on the box overlays before any classification
+  (`verify/l05_atlas/box_labels.tsv`; class counts 1:5, 2:10, 3:13, 4:16, 5:11, 6:5, 7:10, 8:12, 9:5 -- every named class >= 3).
+- **Gate (rule 2): leave-one-out 56/87 = 0.644 vs >= 0.90 -- FAIL, non-test, no grade moves (H 75, M 27 unchanged).** Per class:
+  1 0/5, 2 5/10, 3 8/13, 4 14/16, 5 6/11, 6 3/5, 7 7/10, 8 12/12, 9 1/5. All 31 misses vote '_' (the unlabelled boxes: script, M-token
+  digits, fused boxes), none votes a wrong digit. Shuffled-label control (labels permuted over the same 87 boxes, 200 runs, seed 20261006):
+  result added below when the run ends (it does not change the gate verdict, which is fixed by the 0.90 threshold).
+- For the record only, not used (the gate failed): pos 5 k1 1 s1 0.61; pos 13 k1 7 s1 0.79; pos 17 k1 5 s1 0.58 (under 0.60 anyway);
+  pos 20 k1 '_' s1 0.61, k2 6. No digit alternative (9, 6, 8) appears in any of the four top-3 lists.
+- Rule 3 reading: the HOG kNN atlas on this one leaf cannot separate the hand's digits from its own script and unlabelled digit boxes at
+  this exemplar count (5 per class for 1, 6, 9); labelling more boxes '_'-vs-digit or dropping '_' would be re-tuning after the answer, which
+  the brief forbids. Next step for L05 is a different instrument (a person in the sign sorter), recorded in Remaining gaps.
+- `python3 ciphers/fr3416-nevers-fils-1589/decode_f35.py --check`: see the done line. AUDIT.md safe sentence and SO-NV02-F35 prompt: counts
+  unchanged, nothing to propagate.
+Vision: 9 own looks at box overlays (L02-L05, L10; scratch, not committed), 0 subagent calls. Requests: 0 network (local source image).
 Not found in print: nothing searched (transcription check only).
