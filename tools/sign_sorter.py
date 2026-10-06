@@ -70,6 +70,10 @@ Size (N4-NXS, 4 Oct 2026): the page embeds every tile and every page image, so a
 16 MB (Noailles c510-516, 9,863 tiles: 92 MB at the defaults). --thumb, --tile-quality (greyscale JPEG tiles) and --page-scale /
 --page-quality (smaller context images; the page scales the boxes by DATA.pageScale) bring it down; the build prints the size.
 
+Preflight (SORTER-PREFLIGHT, 6 Oct 2026): after the build, tools/sorter_preflight.py runs on the page and prints its
+verdict (template, answerable focus box, tiles on the cipher lines, contact sheet <out stem>.preflight.png); a FAIL
+is not published. Give --cipher-lines, or keep cipher_lines.tsv / segment_pages.txt beside --signs; --no-preflight skips it.
+
 Never feed it restricted material (a holder's scans under RESTRICTED.md): the page carries the images.
 """
 import argparse, base64, csv, io, json, math, os, sys
@@ -435,6 +439,9 @@ def main(argv=None):
     ap.add_argument('--rank-sid', default='{line}_{pos:02d}', help='lattice (line, pos) -> sorter sid format')
     ap.add_argument('--rank-out', help='write the computed --rank-confusion scores as TSV')
     ap.add_argument('--rank-note', default='')
+    ap.add_argument('--cipher-lines', help='cipher-line list for the preflight (tools/sorter_preflight.py; default cipher_lines.tsv '
+                    'or segment_pages.txt beside --out or --signs)')
+    ap.add_argument('--no-preflight', action='store_true', help='skip tools/sorter_preflight.py after the build')
     a = ap.parse_args(argv)
     if a.atlas_topk:
         import tempfile
@@ -490,6 +497,9 @@ def main(argv=None):
           f"({data.get('clusterSource', 'none')}), {len(data.get('rank', []))} ranked, {len(html) // 1024} KB -> {a.out}")
     if len(html) > 15 * 1024 * 1024:
         print('WARNING: over 15 MB; the Artifact limit is 16 MB', file=sys.stderr)
+    if not a.no_preflight:   # SORTER-PREFLIGHT (6 Oct 2026): the gate before publishing; a FAIL is printed, the build stands
+        import sorter_preflight
+        sorter_preflight.run(page=a.out, cipher_lines=a.cipher_lines, search=[os.path.dirname(os.path.abspath(a.signs))])
 
 
 if __name__ == '__main__':

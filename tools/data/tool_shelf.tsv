@@ -99,3 +99,4 @@ families/wordcode.py	instrument	controlled-only	letter-or-word nomenclator insid
 no_cracks.py	gate	n/a	every live target: next step, who acts, board card (MISSING / NO-NEXT)	-	-
 verify_backlog.py	gate	n/a	which readings still need a second audit or a count (depth) before they can be counted	-	-
 sorter_apply_recuts.py	instrument	untested	apply a person's sign-sorter "Fix the cut" recuts (box, free quad, erase-ink mask) to tiles before relabelling	unit tests only: tools/tests/test_sorter_apply_recuts.py, test_sorter_apply_recuts_quad.py (22 checks, synthetic quad warp + mask); no known-answer measure of recut tiles on a real letter	SORTER-SHAPE 5 Oct 2026: quad perspective warp + mask added
+sorter_preflight.py	gate	n/a	a sign-sorter page about to be published: wrong line, unanswerable focus box, old template	-	-

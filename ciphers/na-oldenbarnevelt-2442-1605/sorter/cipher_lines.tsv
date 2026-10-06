@@ -1,0 +1,22 @@
+# Cipher lines of the R7-OLDFIX sorter strips (tools/sorter_preflight.py): 11 block-A + 8 block-C2 lines, R7-OLDA NOTES.md section 15.
+# The clear opening of A_L01 and the clear text right of A_L11's '8n8' are already outside the recut strips' tiles (README.md);
+# C2_L09 (the word under C2 line 8) is not a cipher line here. SORTER-PREFLIGHT, 6 Oct 2026.
+A_L01
+A_L02
+A_L03
+A_L04
+A_L05
+A_L06
+A_L07
+A_L08
+A_L09
+A_L10
+A_L11
+C2_L01
+C2_L02
+C2_L03
+C2_L04
+C2_L05
+C2_L06
+C2_L07
+C2_L08

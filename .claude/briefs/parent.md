@@ -84,6 +84,7 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    outreach/*.md `status: ready` drafts are the owner's desk. Nothing leaves the repository as "new" without a
    verifier's AUDIT.md class (rule 10). Run `python3 tools/desk_check.py --cap 5` at every check-in and act on every
    line it prints before republishing the board (CLAUDE.md Usage 8a; DESK-CHECK, 26 Sept 2026).
+   No sign-sorter page goes on the desk until `python3 tools/sorter_preflight.py PAGE.html --expect-owner-account` passes and its contact sheet has been eyed (SORTER-PREFLIGHT, 6 Oct 2026).
 
    **Desk (26 Sept 2026, OPTIMIZATION-2026-09-26.md (a), DESK-CAP).** Finding: 46 open asks on one person was not a
    queue, it was a wall -- the person cannot rank it, so nothing moves and each parent keeps adding. The parents
