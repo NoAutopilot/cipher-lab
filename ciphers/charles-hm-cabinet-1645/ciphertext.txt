@@ -1,0 +1,6 @@
+# Charles I to Henrietta Maria, Oxford, "Wednesday 9 April 1645" (Tomokiyo/QUEUE: "8 April"), by Binion. The only cipher passage.
+# Source A (printed, as transcribed, not repaired): The King's Cabinet Opened (1645), EarlyPrint A31932 text, read 6 Oct 2026; Harleian Miscellany 1808-1811 reprints agree (Google Books snippets, 6 Oct 2026).
+359 8 270 55 5 7 67 18 294 35 69 16 54 6 38 1 67 68 9 66
+# Source B (Tomokiyo, charlesi.htm, as transcribed): differs from A at the start ("3 9" for "359") -- 21 tokens vs 20. Unresolved without the image.
+3 9 8 270 55 5 7 67 18 294 35 69 16 54 6 38 1 67 68 9 66
+# Clear context (printed): "In a word, when I know none better (I speak not now in relation to business) then <CIPHER> thou may easily judge how my conversation pleaseth me."
