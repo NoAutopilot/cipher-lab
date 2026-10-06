@@ -163,3 +163,13 @@ Verdict cheapest next (R9-HUNT): bracket fix + margin-filtered gate against the 
 gate was seen post hoc on seeds 1-3, so the new PREREG fixes margin threshold and gate BEFORE running, on FRESH seeds only (4-6+),
 pushed first. If the control fails again, log "attempt 2 FAIL" and name a different instrument as next (rule 3 third-attempt clause);
 do not tune again.
+
+### R9-DEC2678C -- decode-2678-bnf-colbert127-gravel-1665: the 1672 Gravel key (Mel. Colbert 159 f.102) tested on R2678 (cap 4, box 50 min)
+R9-DEC2678B found Mel. Colbert 159 f.102r-v (btv1b10035602g canvases 107-108, Gravel to Colbert 23 Apr 1672) in the same two-digit+diacritics
+design with a contemporary interlinear decipherment; Tomokiyo reconstructs that key on louisxiv0.htm (cite him, rule 8). Job: (1) build the
+1672 key: Tomokiyo's table if on disk/snapshot-able (sources/cryptiana/, snapshot unmodified), else read f.102's interlinear pairs from line
+crops (tools/iiif_lines.py pasted) into tools/interlinear_align.py (grade H/period key). (2) PREREG before decoding R2678: statistic (e.g.
+fraction of R2678 groups covered + fr17 judge on the decode), matched controls that CAN differ (shuffled-key decode of R2678; a held-out f.102
+line decoded with the key built without it), gate. Push PREREG. (3) Run; report both numbers; grade per token (H period key where the key
+cell is read, M otherwise); a decode only via tools/decode_key.py with --check. A 1672 key on a 1665 letter may not fit: a FAIL is a result.
+Report what was found and where it was not found; do not classify novelty.
