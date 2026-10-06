@@ -140,3 +140,14 @@ Requests this pass (3 Oct 2026): discovery.nationalarchives.gov.uk 1; archive.or
 be-api.us.archive.org 2 (>=1.6 s apart). WebSearch 4.
 
 Gate re-run (GF4-BATCH10, 3 Oct 2026): `sp36-stquentin-pretender-1743: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1: no standard-edition citation). `tools/next_steps.py --wait-only | grep sp36-stquentin`: no line.
+
+## R9-SRCH (6 Oct 2026; worker session_014oHN8M2YCqbmoiEspiHbSg, Sonnet, LANE LANE-RUN9-account-4 -- committed by the lane orchestrator from the worker's own text, the worker's push being blocked)
+
+Ran the folder's own free step ("While waiting", GF4-BATCH10 "S:"): "St. Quentin" with "Chevalier" in published Stuart Papers selections. Question: who is the St. Quentin of SP 36/61/53 (1743)?
+Route: archive.org `_djvu.txt` whole-volume grep (`-L` needed, the bare download URL 302s) plus `be-api.us.archive.org/fts/v1/search?q=<term>&identifier=<id>`; no login.
+Texts grepped: Lang, *Pickle the Spy* (`picklespy00lang`, 646,943 B): "Quentin" 5 raw hits, all OCR-adjacent false matches ("aquenting", "frequenting"), 0 for the name; "Chevalier" 28, none near a St. Quentin. Lang, *Companions of Pickle* (`companionsofpick00lang`, 563,631 B): Quentin 0, Chevalier 10. Mahon, *History of England* 1713-1783 vol. VI (`bub_gb_HyJTAAAAcAAJ`, 920,488 B): Quentin 0, Chevalier 1; (`bub_gb_4CFTAAAAcAAJ`, 892,695 B, volume not identified from its OCR header): Quentin 0, Chevalier 1; `bub_gb_WiRTAAAAcAAJ_2` returned 404 (not read).
+be-api, items `picklespy00lang`, `companionsofpick00lang`, Browne `historyofhighla03brow`/`04brow`, HMC Stuart Papers `calendarofstuart07grea`, Taylor *Stuart Papers at Windsor* `stuartpapersatwi0000tayl`: "St. Quentin" 0, "St Quentin" 0 in all six; control "Chevalier" returns 1 in all six, but it is a per-item hit count, not a count of matches, so it shows the index answers, not that these OCRs are free of the name. HMC Stuart Papers vols stop at Dec 1718 (see 24 Sept sweep), so that item is a non-test for 1743.
+Result: not found in these sources, searched by whole-volume grep and be-api full text on 6 Oct 2026. No correspondent identified. Mahon vol. covering 1743 (vol. III of the 7-vol. set) and Taylor's book not read in full (be-api only). Grades: no reading made. A search result, not a verdict.
+Requests: archive.org 11 (incl. 4 advancedsearch, 1 404), be-api.us.archive.org 18, all >=1.7 s apart; no 429/403.
+Verdict: open, unchanged; next step remains the TNA page copy (REQUEST.md).
+(Same job, other three folders: sp78-doncaster-1621, sp87-chesterfield-1747 and sp87-newcastle-1743 had their named step already run by R7-DONC / R7-CHEST / R7-NEWC on 6 Oct 2026; not re-run, nothing added.)
