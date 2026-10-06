@@ -203,3 +203,26 @@ Read so far: nothing read; 80 tokens reconciled from two blind passes (grade M);
 - [x] image-check: copy condition mapped 5 Oct 2026; second blind pass and reconciliation 6 Oct 2026; sorter built 6 Oct 2026 (the rotated-margin eye pass is folded into the sorter's margin focus questions)
 - [ ] retry: Wayback capture, once, later session
 Verdict: keep going: 1 internal gaps; cheapest next: Wayback retry, ~$0.2 (test 3 waits on the owner's sorter pass)
+
+## Wayback retry (R11-RAYWB, 6 Oct 2026, 09:36-09:40 UTC)
+One CDX query (`web.archive.org/cdx/search/cdx?url=schneier.com/blog/archives/2006/01/handwritten_rea.html&output=json&from=2006&to=2007`)
+reset the connection (curl 35, proxy `ws_closed_mid_exchange`); one retry after a 10 s pause reset the same way. Host stopped per the
+good-citizen rule: 2 requests to web.archive.org, 0 captures fetched, no timestamps, no sha1 comparison made. Same outcome as the
+earlier attempt in this file (CDX reset twice). The image question stays answered only by the live-site fallback above (2006 upload
+path, byte-identical to our file); the Wayback capture itself remains untested, not refuted. Grades unchanged: 0 H, 0 C, 0 S; nothing read.
+
+## Remaining gaps (R11-RAYWB, 6 Oct 2026)
+Read so far: nothing read; 80 tokens reconciled from two blind passes (grade M); test 2 run; owner sign sorter built and preflighted.
+- Sign alphabet and margin identities settled by a person (80 tiles, 40 focus) - blocker: waiting-on the owner's reply in the Rayburn sign sorter; two blind passes split 52.9%, so a person settles the alphabet (sorter/README.md)
+- Test 3 of specs/rayburn-2004.json (homophonic/keyboard judge, matched control at N=80) - blocker: waiting-on the owner's reply in the Rayburn sign sorter; the matched control's K comes from the settled alphabet
+- 2006 Wayback capture of the post and image - blocker: not-attempted; web.archive.org reset the connection on 2 requests 6 Oct 2026 (2 earlier), low value as the live 2006 upload is byte-identical to our file; next: one CDX query from a later session or the owner's browser, ~$0.2
+
+## Escalation (R11-RAYWB, 6 Oct 2026)
+- [x] siblings: none; a single sheet, original with the family/police (Premise check)
+- [x] clear-pages: none; the suicide note's text is quoted in the Schneier thread and gives no crib
+- [x] known-keys: none exists; no decipherment located (Verdict, 3 Oct 2026)
+- [x] print: Schneier thread, Bauer snippet, Cipherbrain, blogs, solver repos (GF4-BATCH18)
+- [n/a] key-rebuild: no substitution is established until test 3 runs
+- [x] image-check: copy condition mapped 5 Oct 2026; second pass and reconciliation 6 Oct 2026; sorter built 6 Oct 2026
+- [ ] retry: Wayback CDX attempted 6 Oct 2026, reset twice; one more query from a later session
+Verdict: keep going: 1 internal gap; cheapest next: one more Wayback CDX query from a later session, ~$0.2 (test 3 waits on the owner's sorter pass)
