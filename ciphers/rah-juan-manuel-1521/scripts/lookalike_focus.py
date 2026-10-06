@@ -8,6 +8,8 @@ owner at a place, it does not claim the box is the sign. Only tiles with at leas
 between two Latin code groups is not a sorter question). Rows are appended after the RUN1-SEG rows, which are kept.
 
   python3 scripts/lookalike_focus.py --crops DIR194 --crops DIR199   (crops from the commands in NOTES.md; not committed)
+  python3 scripts/lookalike_focus.py --crops DIR34 --pages f34 --tag R13-RJM34LA   (R13-RJM34LA, 6 Oct 2026: R9501 f.34; each
+      tag's own rows are replaced, every other row kept)
 """
 import argparse, csv, importlib.util, sys
 from pathlib import Path
@@ -26,13 +28,15 @@ spec2.loader.exec_module(lt)
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--crops", action="append", required=True)
+    ap.add_argument("--pages", default="f194,f199")
+    ap.add_argument("--tag", default="R11-RJMLA")
     a = ap.parse_args()
     boxes = {}
     for r in csv.DictReader(open(HERE / "sorter/signs.tsv"), delimiter="\t"):
         boxes.setdefault(r["page"], []).append((int(r["x"]) + int(r["w"]) / 2, r["sid"]))
-    keep = [l for l in open(HERE / "sorter/focus.tsv").read().splitlines() if l and "R11-RJMLA" not in l]
+    keep = [l for l in open(HERE / "sorter/focus.tsv").read().splitlines() if l and a.tag not in l]
     rows, used = [], {l.split("\t")[0] for l in keep}
-    for page in ("f194", "f199"):
+    for page in a.pages.split(","):
         n = {}
         for r in csv.DictReader(open(HERE / f"lookalike/{page}_passC.tsv"), delimiter="\t"):
             n[r["passage"]] = n.get(r["passage"], 0) + 1
@@ -58,7 +62,7 @@ def main():
             if sid in used:   # two tiles on one box: the first question stands
                 continue
             used.add(sid)
-            rows.append(f"{sid}\tR11-RJMLA look-alike, about here ({ln} token {pos}, position approximate): readers "
+            rows.append(f"{sid}\t{a.tag} look-alike, about here ({ln} token {pos}, position approximate): readers "
                         f"{t['A'] or '-'} / {t['B'] or '-'}, third reader {r['label']} ({r['conf']}); "
                         f"which of {', '.join(sorted(set(cands)))}, or a code word?")
     (HERE / "sorter/focus.tsv").write_text("\n".join(keep + rows) + "\n")

@@ -1,0 +1,754 @@
+passage	pos	sign_id	conf	note	question
+f34_L01	1	F	H	lookalike 2-of-3	
+f34_L01	2	V		passC	
+f34_L01	3	~		lookalike UNSETTLED	f34_L01.3: readers F/-, look-alike F (L); which of F, K, ~?
+f34_L01	4	A		passC	
+f34_L01	5	P		passC	
+f34_L01	6	T		passC	
+f34_L01	7	~		lookalike UNSETTLED	f34_L01.7: readers R/T, look-alike 9 (L); which of 9, R, T, ~?
+f34_L01	8	~		lookalike UNSETTLED	f34_L01.8: readers ~/o, look-alike o (L); which of o, ~?
+f34_L01	9	p	M	lookalike 2-of-3	
+f34_L01	10	b	M	lookalike 2-of-3	
+f34_L01	11	yol		passC	
+f34_L01	12	Z		passC	
+f34_L01	13	um	M	lookalike 2-of-3	
+f34_L01	14	ka		passC	
+f34_L01	15	ott	H	lookalike 2-of-3	
+f34_L01	16	Z	H	lookalike 2-of-3	
+f34_L01	17	A		passC	
+f34_L01	18	T	M	lookalike 2-of-3	
+f34_L01	19	~		lookalike UNSETTLED	f34_L01.19: readers Z/-, look-alike Z (L); which of 3, Z, ~?
+f34_L01	20	~		lookalike UNSETTLED	f34_L01.20: readers ~/-, look-alike ~ (L); which of ~?
+f34_L01	21	E		passC	
+f34_L01	22	~		lookalike UNSETTLED	f34_L01.22: readers -/R, look-alike R (L); which of R, ~?
+f34_L01	23	sof		passC	
+f34_L01	24	~		lookalike UNSETTLED	f34_L01.24: readers K/-, look-alike F (M); which of F, K, ~?
+f34_L01	25	gap		passC	
+f34_L01	26	~		lookalike UNSETTLED	f34_L01.26: readers K/-, look-alike K (L); which of F, K, ~?
+f34_L01	27	g	M	lookalike confirms	
+f34_L01	28	A		passC	
+f34_L01	29	top		passC	
+f34_L01	30	qid		passC	
+f34_L01	31	gap		passC	
+f34_L01	32	T		passC	
+f34_L01	33	9	M	lookalike 2-of-3	
+f34_L01	34	Z		passC	
+f34_L01	35	ott	H	lookalike 2-of-3	
+f34_L01	36	Z		passC	
+f34_L01	37	oo	M	lookalike 2-of-3	
+f34_L01	38	E		passC	
+f34_L02	1	T		passC	
+f34_L02	2	A	M	lookalike 2-of-3	
+f34_L02	3	y	H	lookalike confirms	
+f34_L02	4	gap		passC	
+f34_L02	5	bas		passC	
+f34_L02	6	get		passC	
+f34_L02	7	sof		passC	
+f34_L02	8	Z		passC	
+f34_L02	9	as		passC	
+f34_L02	10	sad		passC	
+f34_L02	11	Z		passC	
+f34_L02	12	ez	M	lookalike confirms	
+f34_L02	13	mef		passC	
+f34_L02	14	K	H	lookalike 2-of-3	
+f34_L02	15	Z		passC	
+f34_L02	16	ez	M	lookalike confirms	
+f34_L02	17	pib		passC	
+f34_L02	18	F		passC	
+f34_L02	19	K	M	lookalike 2-of-3	
+f34_L02	20	rob	H	lookalike confirms	
+f34_L02	21	qes		passC	
+f34_L02	22	bue	M	lookalike 2-of-3	
+f34_L02	23	ler		passC	
+f34_L02	24	dix		passC	
+f34_L03	1	T		passC	
+f34_L03	2	D	M	lookalike 2-of-3	
+f34_L03	3	3		passC	
+f34_L03	4	9		passC	
+f34_L03	5	A		passC	
+f34_L03	6	bas		passC	
+f34_L03	7	F		passC	
+f34_L03	8	ya		passC	
+f34_L03	9	dim		passC	
+f34_L03	10	T		passC	
+f34_L03	11	D	M	lookalike 2-of-3	
+f34_L03	12	y	M	lookalike confirms	
+f34_L03	13	T		passC	
+f34_L03	14	6		passC	
+f34_L03	15	g	M	lookalike 2-of-3	
+f34_L03	16	kef		passC	
+f34_L03	17	sof		passC	
+f34_L03	18	min		passC	
+f34_L03	19	boz		passC	
+f34_L03	20	ler		passC	
+f34_L03	21	dim		passC	
+f34_L03	22	Z		passC	
+f34_L03	23	bay		passC	
+f34_L03	24	sof		passC	
+f34_L04	1	Z	M	lookalike 2-of-3	
+f34_L04	2	ul		passC	
+f34_L04	3	gap		passC	
+f34_L04	4	bas		passC	
+f34_L04	5	yip		passC	
+f34_L04	6	dim		passC	
+f34_L04	7	Z		passC	
+f34_L04	8	as		passC	
+f34_L04	9	g	H	lookalike confirms	
+f34_L04	10	dim		passC	
+f34_L04	11	F		passC	
+f34_L04	12	F		passC	
+f34_L04	13	A		passC	
+f34_L04	14	T		passC	
+f34_L04	15	D	M	lookalike 2-of-3	
+f34_L04	16	9		passC	
+f34_L04	17	~		lookalike UNSETTLED	f34_L04.17: readers 9/7, look-alike Z (M); which of 7, 9, Z, ~?
+f34_L04	18	sof		passC	
+f34_L04	19	dim		passC	
+f34_L04	20	gam		passC	
+f34_L04	21	kel		passC	
+f34_L04	22	dim		passC	
+f34_L05	1	rob	M	lookalike confirms	
+f34_L05	2	T		passC	
+f34_L05	3	D	M	lookalike 2-of-3	
+f34_L05	4	boz		passC	
+f34_L05	5	qid		passC	
+f34_L05	6	pib		passC	
+f34_L05	7	sof		passC	
+f34_L05	8	cly	M	lookalike 2-of-3	
+f34_L05	9	K	H	lookalike 2-of-3	
+f34_L05	10	qob		passC	
+f34_L05	11	A		passC	
+f34_L05	12	g	M	lookalike 2-of-3	
+f34_L05	13	D	M	lookalike 2-of-3	
+f34_L05	14	Z		passC	
+f34_L05	15	A		passC	
+f34_L05	16	Z		passC	
+f34_L05	17	as		passC	
+f34_L05	18	sad		passC	
+f34_L05	19	Z		passC	
+f34_L05	20	ez	M	lookalike confirms	
+f34_L05	21	pis		passC	
+f34_L05	22	F		passC	
+f34_L05	23	gef	M	lookalike 2-of-3	
+f34_L05	24	rob	H	lookalike confirms	
+f34_L05	25	yam		passC	
+f34_L05	26	~		lookalike UNSETTLED	f34_L05.26: readers -/Z, look-alike Z (L); which of 3, Z, ~?
+f34_L06	1	zar	H	lookalike 2-of-3	
+f34_L06	2	qes		passC	
+f34_L06	3	T		passC	
+f34_L06	4	boz		passC	
+f34_L06	5	qid		passC	
+f34_L06	6	yul		passC	
+f34_L06	7	ceo		passC	
+f34_L06	8	gi	M	lookalike 2-of-3	
+f34_L06	9	K	H	lookalike 2-of-3	
+f34_L06	10	ceo		passC	
+f34_L06	11	het	M	lookalike 2-of-3	
+f34_L06	12	~		lookalike UNSETTLED	f34_L06.12: readers nje/nec, look-alike nje (L); which of nec, nje, ~?
+f34_L06	13	A		passC	
+f34_L06	14	o	M	lookalike 2-of-3	
+f34_L06	15	T		passC	
+f34_L06	16	~		lookalike UNSETTLED	f34_L06.16: readers -/7, look-alike Z (M); which of 7, Z, ~?
+f34_L06	17	3		passC	
+f34_L06	18	~		lookalike UNSETTLED	f34_L06.18: readers b/Z, look-alike b (L); which of 3, Z, b, ~?
+f34_L06	19	4		passC	
+f34_L06	20	lep		passC	
+f34_L06	21	z	M	lookalike 2-of-3	
+f34_L06	22	F		passC	
+f34_L06	23	ler		passC	
+f34_L06	24	qes		passC	
+f34_L07	1	sof		passC	
+f34_L07	2	kan		passC	
+f34_L07	3	Z		passC	
+f34_L07	4	suf		passC	
+f34_L07	5	z	M	lookalike 2-of-3	
+f34_L07	6	gap		passC	
+f34_L07	7	~		lookalike UNSETTLED	f34_L07.7: readers z/Z, look-alike 3 (M); which of 3, Z, z, ~?
+f34_L07	8	ac		passC	
+f34_L07	9	qes		passC	
+f34_L07	10	T		passC	
+f34_L07	11	3		passC	
+f34_L07	12	9		passC	
+f34_L07	13	~		lookalike UNSETTLED	f34_L07.13: readers b/Z, look-alike Z (L); which of Z, b, ~?
+f34_L07	14	X		passC	
+f34_L07	15	qid		passC	
+f34_L07	16	get		passC	
+f34_L07	17	R		passC	
+f34_L07	18	Z		passC	
+f34_L07	19	~		lookalike UNSETTLED	f34_L07.19: readers ump/um, look-alike ump (L); which of um, ump, ~?
+f34_L07	20	R		passC	
+f34_L07	21	tas		passC	
+f34_L07	22	R		passC	
+f34_L07	23	gap		passC	
+f34_L07	24	R		passC	
+f34_L07	25	zy	M	lookalike 2-of-3	
+f34_L07	26	y	M	lookalike 2-of-3	
+f34_L08	1	rut		passC	
+f34_L08	2	ett	M	lookalike 2-of-3	
+f34_L08	3	sof		passC	
+f34_L08	4	bol		passC	
+f34_L08	5	g	H	lookalike confirms	
+f34_L08	6	~		passC	
+f34_L08	7	7	M	lookalike 2-of-3	
+f34_L08	8	3		passC	
+f34_L08	9	4		passC	
+f34_L08	10	K	H	lookalike 2-of-3	
+f34_L08	11	ler		passC	
+f34_L08	12	nin		passC	
+f34_L08	13	y	M	lookalike 2-of-3	
+f34_L08	14	sof		passC	
+f34_L08	15	gap		passC	
+f34_L08	16	~		lookalike UNSETTLED	f34_L08.16: readers 6/Z, look-alike 6 (L); which of 6, Z, ~?
+f34_L08	17	9		passC	
+f34_L08	18	D	M	lookalike 2-of-3	
+f34_L08	19	qes		passC	
+f34_L08	20	~		lookalike UNSETTLED	f34_L08.20: readers nq/nec, look-alike nq (L); which of nec, nq, ~?
+f34_L08	21	9		passC	
+f34_L08	22	Z		passC	
+f34_L08	23	A		passC	
+f34_L08	24	~		lookalike UNSETTLED	f34_L08.24: readers 7/Z, look-alike Z (L); which of 7, Z, ~?
+f34_L08	25	A		passC	
+f34_L08	26	bas		passC	
+f34_L09	1	var		passC	
+f34_L09	2	kef		passC	
+f34_L09	3	nin		passC	
+f34_L09	4	Z		passC	
+f34_L09	5	A		passC	
+f34_L09	6	y	M	lookalike confirms	
+f34_L09	7	qid		passC	
+f34_L09	8	pib		passC	
+f34_L09	9	gap		passC	
+f34_L09	10	hef		passC	
+f34_L09	11	kef		passC	
+f34_L09	12	A		passC	
+f34_L09	13	gap		passC	
+f34_L09	14	qus		passC	
+f34_L09	15	gat		passC	
+f34_L09	16	qes		passC	
+f34_L09	17	~		lookalike UNSETTLED	f34_L09.17: readers nq/nec, look-alike nq (L); which of nec, nq, ~?
+f34_L09	18	9		passC	
+f34_L09	19	Z		passC	
+f34_L09	20	A		passC	
+f34_L09	21	D	M	lookalike 2-of-3	
+f34_L09	22	B		passC	
+f34_L09	23	4		passC	
+f34_L10	1	30	M	lookalike 2-of-3	
+f34_L10	2	6		passC	
+f34_L10	3	~		lookalike UNSETTLED	f34_L10.3: readers 6/g, look-alike g (L); which of 6, g, ~?
+f34_L10	4	~		lookalike UNSETTLED	f34_L10.4: readers 9/-, look-alike 9 (L); which of 9, Q, ~?
+f34_L10	5	T		passC	
+f34_L10	6	÷	M	lookalike 2-of-3	
+f34_L10	7	taf		passC	
+f34_L10	8	B		passC	
+f34_L10	9	boz		passC	
+f34_L10	10	sa		passC	
+f34_L10	11	gap		passC	
+f34_L10	12	bas		passC	
+f34_L10	13	T		passC	
+f34_L10	14	~		lookalike UNSETTLED	f34_L10.14: readers az/iz, look-alike az (L); which of az, iz, ~?
+f34_L10	15	ler		passC	
+f34_L10	16	tag	M	lookalike 2-of-3	
+f34_L10	17	~		lookalike UNSETTLED	f34_L10.17: readers 9/-, look-alike 9 (L); which of 9, Q, ~?
+f34_L10	18	gap		passC	
+f34_L10	19	kef		passC	
+f34_L10	20	R		passC	
+f34_L10	21	bier		passC	
+f34_L10	22	R		passC	
+f34_L10	23	gap		passC	
+f34_L10	24	~		lookalike UNSETTLED	f34_L10.24: readers z/Z, look-alike 3 (M); which of 3, Z, z, ~?
+f34_L10	25	il		passC	
+f34_L10	26	X	M	lookalike 2-of-3	
+f34_L10	27	ord	M	lookalike 2-of-3	
+f34_L10	28	D	M	lookalike 2-of-3	
+f34_L11	1	bup		passC	
+f34_L11	2	hin		passC	
+f34_L11	3	A		passC	
+f34_L11	4	puz	M	lookalike 2-of-3	
+f34_L11	5	z	M	lookalike 2-of-3	
+f34_L11	6	qes		passC	
+f34_L11	7	kap	H	lookalike 2-of-3	
+f34_L11	8	R		passC	
+f34_L11	9	xor		passC	
+f34_L11	10	Z		passC	
+f34_L11	11	A		passC	
+f34_L11	12	~		lookalike UNSETTLED	f34_L11.12: readers -/D, look-alike D (L); which of 9, D, ~?
+f34_L11	13	tac		passC	
+f34_L11	14	rut		passC	
+f34_L11	15	cly	M	lookalike 2-of-3	
+f34_L11	16	nab		passC	
+f34_L11	17	Z		passC	
+f34_L11	18	T		passC	
+f34_L11	19	A		passC	
+f34_L11	20	bol		passC	
+f34_L11	21	qid		passC	
+f34_L11	22	ram		passC	
+f34_L12	1	~		lookalike UNSETTLED	f34_L12.1: readers kap/kar, look-alike kap (L); which of kap, kar, ~?
+f34_L12	2	R		passC	
+f34_L12	3	kab	M	lookalike 2-of-3	
+f34_L12	4	ad	M	lookalike 2-of-3	
+f34_L12	5	~		lookalike UNSETTLED	f34_L12.5: readers -/D, look-alike D (L); which of 9, D, ~?
+f34_L12	6	ott	H	lookalike 2-of-3	
+f34_L12	7	A		passC	
+f34_L12	8	D	M	lookalike 2-of-3	
+f34_L12	9	mus		passC	
+f34_L12	10	T		passC	
+f34_L12	11	A		passC	
+f34_L12	12	pp		passC	
+f34_L12	13	o		passC	
+f34_L12	14	g	H	lookalike confirms	
+f34_L12	15	T		passC	
+f34_L12	16	A		passC	
+f34_L12	17	yip		passC	
+f34_L12	18	hag		passC	
+f34_L12	19	~		lookalike UNSETTLED	f34_L12.19: readers kap/kar, look-alike kap (L); which of kap, kar, ~?
+f34_L12	20	R		passC	
+f34_L12	21	ras		passC	
+f34_L12	22	ob	M	lookalike 2-of-3	
+f34_L12	23	d	M	lookalike 2-of-3	
+f34_L12	24	oo3	M	lookalike 2-of-3	
+f34_L12	25	T		passC	
+f34_L12	26	boz		passC	
+f34_L12	27	y	M	lookalike confirms	
+f34_L13	1	qat		passC	
+f34_L13	2	R		passC	
+f34_L13	3	gap		passC	
+f34_L13	4	zil	M	lookalike 2-of-3	
+f34_L13	5	~		lookalike UNSETTLED	f34_L13.5: readers -/il, look-alike il (L); which of il, ~?
+f34_L13	6	T	H	lookalike 2-of-3	
+f34_L13	7	4		passC	
+f34_L13	8	bol		passC	
+f34_L13	9	g	H	lookalike 2-of-3	
+f34_L13	10	9		passC	
+f34_L13	11	Z	M	lookalike 2-of-3	
+f34_L13	12	~		lookalike UNSETTLED	f34_L13.12: readers -/D, look-alike D (L); which of 9, D, ~?
+f34_L13	13	ox	M	lookalike 2-of-3	
+f34_L13	14	y	H	lookalike 2-of-3	
+f34_L13	15	yer		passC	
+f34_L13	16	qid		passC	
+f34_L13	17	bee		passC	
+f34_L13	18	var		passC	
+f34_L13	19	hef		passC	
+f34_L13	20	qib		passC	
+f34_L13	21	li		passC	
+f34_L13	22	X	M	lookalike 2-of-3	
+f34_L13	23	ram		passC	
+f34_L13	24	gap		passC	
+f34_L14	1	ras		passC	
+f34_L14	2	ob	H	lookalike 2-of-3	
+f34_L14	3	sof		passC	
+f34_L14	4	bur		passC	
+f34_L14	5	nj	M	lookalike 2-of-3	
+f34_L14	6	Z		passC	
+f34_L14	7	4	M	lookalike 2-of-3	
+f34_L14	8	T		passC	
+f34_L14	9	nj	M	lookalike 2-of-3	
+f34_L14	10	9		passC	
+f34_L14	11	Z		passC	
+f34_L14	12	bi3	M	lookalike 2-of-3	
+f34_L14	13	y		lookalike UNSETTLED	f34_L14.13: readers y/y, look-alike y (L); which of Z, y?
+f34_L14	14	F		passC	
+f34_L14	15	K	H	lookalike 2-of-3	
+f34_L14	16	Z		passC	
+f34_L14	17	ut		passC	
+f34_L14	18	le		passC	
+f34_L14	19	gap		passC	
+f34_L14	20	dim		passC	
+f34_L14	21	Z		passC	
+f34_L14	22	bay		passC	
+f34_L14	23	X	M	lookalike 2-of-3	
+f34_L14	24	ag		passC	
+f34_L14	25	dug		passC	
+f34_L15	1	qid		passC	
+f34_L15	2	ram		passC	
+f34_L15	3	bas		passC	
+f34_L15	4	gap		passC	
+f34_L15	5	gat		passC	
+f34_L15	6	R		passC	
+f34_L15	7	obi	M	lookalike 2-of-3	
+f34_L15	8	ett	M	lookalike 2-of-3	
+f34_L15	9	dim		passC	
+f34_L15	10	nin		passC	
+f34_L15	11	y	M	lookalike 2-of-3	
+f34_L15	12	sof		passC	
+f34_L15	13	R		passC	
+f34_L15	14	boc		passC	
+f34_L15	15	T		passC	
+f34_L15	16	z	M	lookalike 2-of-3	
+f34_L15	17	y	M	lookalike confirms	
+f34_L15	18	T		passC	
+f34_L15	19	A		passC	
+f34_L15	20	~		lookalike UNSETTLED	f34_L15.20: readers -/x, look-alike x (L); which of x, ~?
+f34_L15	21	ram		passC	
+f34_L15	22	A		passC	
+f34_L16	1	pel		passC	
+f34_L16	2	g	M	lookalike 2-of-3	
+f34_L16	3	T		passC	
+f34_L16	4	X		passC	
+f34_L16	5	Z		passC	
+f34_L16	6	A		passC	
+f34_L16	7	puz	H	lookalike 2-of-3	
+f34_L16	8	z	M	lookalike 2-of-3	
+f34_L16	9	qes		passC	
+f34_L16	10	var		passC	
+f34_L16	11	sa		passC	
+f34_L16	12	gap		passC	
+f34_L16	13	bay		passC	
+f34_L16	14	kef		passC	
+f34_L16	15	njn	M	lookalike 2-of-3	
+f34_L16	16	ob	H	lookalike 2-of-3	
+f34_L16	17	ma		passC	
+f34_L16	18	T		passC	
+f34_L16	19	E		passC	
+f34_L16	20	4		passC	
+f34_L16	21	gap		passC	
+f34_L16	22	sof		passC	
+f34_L17	1	9	M	lookalike 2-of-3	
+f34_L17	2	7		passC	
+f34_L17	3	3		passC	
+f34_L17	4	A		passC	
+f34_L17	5	bas		passC	
+f34_L17	6	kin		passC	
+f34_L17	7	Z		passC	
+f34_L17	8	kuf		passC	
+f34_L17	9	nin		passC	
+f34_L17	10	X	M	lookalike 2-of-3	
+f34_L17	11	9		passC	
+f34_L17	12	Z	H	lookalike 2-of-3	
+f34_L17	13	bes		passC	
+f34_L17	14	4		passC	
+f34_L17	15	bos		passC	
+f34_L17	16	lo		passC	
+f34_L17	17	yaqes	M	lookalike 2-of-3	
+f34_L17	18	Z		passC	
+f34_L17	19	1	H	lookalike 2-of-3	
+f34_L17	20	3	H	lookalike 2-of-3	
+f34_L17	21	qul		passC	
+f34_L17	22	dim		passC	
+f34_L17	23	ob	H	lookalike 2-of-3	
+f34_L17	24	qid		passC	
+f34_L18	1	ros		passC	
+f34_L18	2	e	M	lookalike 2-of-3	
+f34_L18	3	R		passC	
+f34_L18	4	sof		passC	
+f34_L18	5	bee		passC	
+f34_L18	6	F		passC	
+f34_L18	7	hag		passC	
+f34_L18	8	gat		passC	
+f34_L18	9	nin		passC	
+f34_L18	10	Z		passC	
+f34_L18	11	bay		passC	
+f34_L18	12	ram		passC	
+f34_L18	13	R		passC	
+f34_L18	14	~		lookalike UNSETTLED	f34_L18.14: readers -/D, look-alike 9 (L); which of 9, D, ~?
+f34_L18	15	9		passC	
+f34_L18	16	g	M	lookalike 2-of-3	
+f34_L18	17	y	M	lookalike confirms	
+f34_L18	18	T		passC	
+f34_L18	19	~		lookalike UNSETTLED	f34_L18.19: readers 7/D, look-alike Z (H); which of 7, D, Z, ~?
+f34_L18	20	Z		passC	
+f34_L18	21	qes		passC	
+f34_L18	22	F		passC	
+f34_L18	23	beg		passC	
+f34_L18	24	sad		passC	
+f34_L18	25	Z		passC	
+f34_L19	1	pel		passC	
+f34_L19	2	~		lookalike UNSETTLED	f34_L19.2: readers z/Z, look-alike 3 (M); which of 3, Z, z, ~?
+f34_L19	3	an		passC	
+f34_L19	4	puf		passC	
+f34_L19	5	sof		passC	
+f34_L19	6	bas		passC	
+f34_L19	7	~	M	lookalike 2-of-3	
+f34_L19	8	F		passC	
+f34_L19	9	mus		passC	
+f34_L19	10	Z		passC	
+f34_L19	11	um		passC	
+f34_L19	12	nin		passC	
+f34_L19	13	X	M	lookalike 2-of-3	
+f34_L19	14	9		passC	
+f34_L19	15	Z	H	lookalike 2-of-3	
+f34_L19	16	kar		passC	
+f34_L19	17	R		passC	
+f34_L19	18	bay		passC	
+f34_L19	19	R		passC	
+f34_L19	20	A		passC	
+f34_L19	21	T		passC	
+f34_L19	22	D	M	lookalike 2-of-3	
+f34_L19	23	Z	M	lookalike 2-of-3	
+f34_L19	24	cly	M	lookalike 2-of-3	
+f34_L19	25	nuf		passC	
+f34_L20	1	4		passC	
+f34_L20	2	mus		passC	
+f34_L20	3	kig		passC	
+f34_L20	4	Z		passC	
+f34_L20	5	~		lookalike UNSETTLED	f34_L20.5: readers -/D, look-alike 7 (L); which of 7, 9, D, ~?
+f34_L20	6	Z		passC	
+f34_L20	7	ur		passC	
+f34_L20	8	e	M	lookalike 2-of-3	
+f34_L20	9	seg		passC	
+f34_L20	10	suf		passC	
+f34_L20	11	A		passC	
+f34_L20	12	tac		passC	
+f34_L20	13	nq	M	lookalike 2-of-3	
+f34_L20	14	A		passC	
+f34_L20	15	R		passC	
+f34_L20	16	3		passC	
+f34_L20	17	A		passC	
+f34_L20	18	sof		passC	
+f34_L20	19	puz		passC	
+f34_L20	20	qes		passC	
+f34_L20	21	F		passC	
+f34_L20	22	Q	H	lookalike 2-of-3	
+f34_L20	23	kin		passC	
+f34_L20	24	Z		passC	
+f34_L20	25	zan		passC	
+f34_L21	1	tac		passC	
+f34_L21	2	sof		passC	
+f34_L21	3	oo		passC	
+f34_L21	4	Z		passC	
+f34_L21	5	A		passC	
+f34_L21	6	ob	H	lookalike 2-of-3	
+f34_L21	7	T		passC	
+f34_L21	8	A		passC	
+f34_L21	9	nq	M	lookalike 2-of-3	
+f34_L21	10	A		passC	
+f34_L21	11	ob	H	lookalike 2-of-3	
+f34_L21	12	gap		passC	
+f34_L21	13	kar		passC	
+f34_L21	14	R		passC	
+f34_L21	15	sof		passC	
+f34_L21	16	ye		passC	
+f34_L21	17	xan		passC	
+f34_L21	18	X		passC	
+f34_L21	19	gup		passC	
+f34_L21	20	X		passC	
+f34_L21	21	kef		passC	
+f34_L21	22	ob	H	lookalike 2-of-3	
+f34_L21	23	rob	H	lookalike confirms	
+f34_L22	1	g	M	lookalike 2-of-3	
+f34_L22	2	g	M	lookalike 2-of-3	
+f34_L22	3	~		lookalike UNSETTLED	f34_L22.3: readers 6/-, look-alike Z (M); which of 6, Z, ~?
+f34_L22	4	9		passC	
+f34_L22	5	F		passC	
+f34_L22	6	Q	H	lookalike 2-of-3	
+f34_L22	7	gap		passC	
+f34_L22	8	lus		passC	
+f34_L22	9	dim		passC	
+f34_L22	10	kar		passC	
+f34_L22	11	R		passC	
+f34_L22	12	roc		passC	
+f34_L22	13	gap		passC	
+f34_L22	14	dim		passC	
+f34_L22	15	kar		passC	
+f34_L22	16	R		passC	
+f34_L22	17	~		lookalike UNSETTLED	f34_L22.17: readers A/X, look-alike A (L); which of A, X, ~?
+f34_L22	18	4		passC	
+f34_L22	19	y	M	lookalike confirms	
+f34_L22	20	4		passC	
+f34_L22	21	9		passC	
+f34_L22	22	mus		passC	
+f34_L22	23	nom		passC	
+f34_L23	1	rob	H	lookalike confirms	
+f34_L23	2	ler		passC	
+f34_L23	3	rex		passC	
+f34_L23	4	Z		passC	
+f34_L23	5	Z		passC	
+f34_L23	6	ump	M	lookalike 2-of-3	
+f34_L23	7	R		passC	
+f34_L23	8	A		passC	
+f34_L23	9	T		passC	
+f34_L23	10	E		passC	
+f34_L23	11	A		passC	
+f34_L23	12	gap		passC	
+f34_L23	13	R		passC	
+f34_L23	14	gap		passC	
+f34_L23	15	Z		passC	
+f34_L23	16	ez	M	lookalike confirms	
+f34_L23	17	fop		passC	
+f34_L23	18	Z		passC	
+f34_L23	19	cao		passC	
+f34_L23	20	qes		passC	
+f34_L23	21	tas		passC	
+f34_L23	22	R		passC	
+f34_L23	23	dim		passC	
+f34_L24	1	cil	M	lookalike 2-of-3	
+f34_L24	2	y	M	lookalike 2-of-3	
+f34_L24	3	g	H	lookalike confirms	
+f34_L24	4	ka		passC	
+f34_L24	5	ob	H	lookalike 2-of-3	
+f34_L24	6	T		passC	
+f34_L24	7	D	M	lookalike 2-of-3	
+f34_L24	8	R		passC	
+f34_L24	9	tac		passC	
+f34_L24	10	A		passC	
+f34_L24	11	Z		passC	
+f34_L24	12	F		passC	
+f34_L24	13	V		passC	
+f34_L24	14	P	H	lookalike 2-of-3	
+f34_L24	15	T		passC	
+f34_L24	16	o	M	lookalike 2-of-3	
+f34_L24	17	~		passC	
+f34_L24	18	o	M	lookalike 2-of-3	
+f34_L24	19	ob	H	lookalike 2-of-3	
+f34_L24	20	kef		passC	
+f34_L24	21	R		passC	
+f34_L24	22	Z		passC	
+f34_L24	23	um	M	lookalike 2-of-3	
+f34_L24	24	R		passC	
+f34_L24	25	~		lookalike UNSETTLED	f34_L24.25: readers ~/T, look-alike T (L); which of T, ~?
+f34_L24	26	heb		passC	
+f34_L24	27	R		passC	
+f34_L24	28	gap		passC	
+f34_L25	1	3	H	lookalike 2-of-3	
+f34_L25	2	um		passC	
+f34_L25	3	qid		passC	
+f34_L25	4	lal		passC	
+f34_L25	5	K	H	lookalike 2-of-3	
+f34_L25	6	cib		passC	
+f34_L25	7	K	H	lookalike 2-of-3	
+f34_L25	8	qid		passC	
+f34_L25	9	mus		passC	
+f34_L25	10	nom		passC	
+f34_L25	11	sof		passC	
+f34_L25	12	kif		passC	
+f34_L25	13	ler		passC	
+f34_L25	14	tar		passC	
+f34_L25	15	ben		passC	
+f34_L25	16	reb		passC	
+f34_L25	17	Q		passC	
+f34_L25	18	z	M	lookalike 2-of-3	
+f34_L25	19	R		passC	
+f34_L25	20	hef		passC	
+f34_L26	1	A		passC	
+f34_L26	2	D	M	lookalike 2-of-3	
+f34_L26	3	g	H	lookalike 2-of-3	
+f34_L26	4	e	M	lookalike 2-of-3	
+f34_L26	5	~		lookalike UNSETTLED	f34_L26.5: readers -/Z, look-alike 3 (L); which of 3, 7, Z, ~?
+f34_L26	6	T	H	lookalike 2-of-3	
+f34_L26	7	puc		passC	
+f34_L26	8	grer	M	lookalike 2-of-3	
+f34_L26	9	roo	H	lookalike 2-of-3	
+f34_L26	10	R	H	lookalike 2-of-3	
+f34_L26	11	D	M	lookalike 2-of-3	
+f34_L26	12	g	H	lookalike confirms	
+f34_L26	13	Q		passC	
+f34_L26	14	~		lookalike UNSETTLED	f34_L26.14: readers z/-, look-alike z (L); which of z, ~?
+f34_L26	15	~		lookalike UNSETTLED	f34_L26.15: readers T/-, look-alike T (L); which of T, ~?
+f34_L26	16	~		lookalike UNSETTLED	f34_L26.16: readers pnc/-, look-alike pnc (L); which of pnc, ~?
+f34_L26	17	~		lookalike UNSETTLED	f34_L26.17: readers gen/-, look-alike gen (L); which of gen, ~?
+f34_L26	18	~		lookalike UNSETTLED	f34_L26.18: readers roo/-, look-alike roo (L); which of roo, ~?
+f34_L26	19	~		lookalike UNSETTLED	f34_L26.19: readers R/-, look-alike R (L); which of R, ~?
+f34_L26	20	dg	M	lookalike 2-of-3	
+f34_L26	21	d	M	lookalike 2-of-3	
+f34_L26	22	ges		passC	
+f34_L26	23	K	H	lookalike 2-of-3	
+f34_L26	24	dim		passC	
+f34_L26	25	Z		passC	
+f34_L26	26	log		passC	
+f34_L26	27	ler		passC	
+f34_L26	28	o	M	lookalike 2-of-3	
+f34_L26	29	T	M	lookalike 2-of-3	
+f34_L26	30	z	M	lookalike 2-of-3	
+f34_L26	31	Z		passC	
+f34_L26	32	bo	M	lookalike 2-of-3	
+f34_L26	33	3	M	lookalike 2-of-3	
+f34_L26	34	F		passC	
+f34_L26	35	F		passC	
+f34_L27	1	grf	M	lookalike 2-of-3	
+f34_L27	2	bas		passC	
+f34_L27	3	ler		passC	
+f34_L27	4	fa		passC	
+f34_L27	5	nin		passC	
+f34_L27	6	X	M	lookalike 2-of-3	
+f34_L27	7	9		passC	
+f34_L27	8	7		passC	
+f34_L27	9	cly	M	lookalike 2-of-3	
+f34_L27	10	xar		passC	
+f34_L27	11	hef		passC	
+f34_L27	12	min		passC	
+f34_L27	13	K	H	lookalike 2-of-3	
+f34_L27	14	hef		passC	
+f34_L27	15	lal		passC	
+f34_L27	16	Z		passC	
+f34_L27	17	ez	M	lookalike confirms	
+f34_L27	18	bla		passC	
+f34_L27	19	A		passC	
+f34_L27	20	pib		passC	
+f34_L27	21	gap		passC	
+f34_L28	1	kef		passC	
+f34_L28	2	hog	M	lookalike 2-of-3	
+f34_L28	3	og	M	lookalike 2-of-3	
+f34_L28	4	rot		passC	
+f34_L28	5	A		passC	
+f34_L28	6	dim		passC	
+f34_L28	7	T		passC	
+f34_L28	8	D	M	lookalike 2-of-3	
+f34_L28	9	Z		passC	
+f34_L28	10	A		passC	
+f34_L28	11	d	M	lookalike 2-of-3	
+f34_L28	12	K	H	lookalike 2-of-3	
+f34_L28	13	A		passC	
+f34_L28	14	hon		passC	
+f34_L28	15	tes		passC	
+f34_L28	16	nin		passC	
+f34_L28	17	tac		passC	
+f34_L28	18	nq	M	lookalike 2-of-3	
+f34_L28	19	A	M	lookalike 2-of-3	
+f34_L28	20	Z		passC	
+f34_L28	21	A		passC	
+f34_L28	22	T		passC	
+f34_L28	23	3		passC	
+f34_L28	24	2		passC	
+f34_L28	25	y	M	lookalike 2-of-3	
+f34_L28	26	suf		passC	
+f34_L29	1	kiz		passC	
+f34_L29	2	F	M	lookalike 2-of-3	
+f34_L29	3	oo3	M	lookalike 2-of-3	
+f34_L29	4	3	M	lookalike 2-of-3	
+f34_L29	5	T		passC	
+f34_L29	6	~		lookalike UNSETTLED	f34_L29.6: readers 9/Z, look-alike D (M); which of 9, D, Z, ~?
+f34_L29	7	Z		passC	
+f34_L29	8	A		passC	
+f34_L29	9	dim		passC	
+f34_L29	10	le		passC	
+f34_L29	11	gap		passC	
+f34_L29	12	sof		passC	
+f34_L29	13	D	M	lookalike 2-of-3	
+f34_L29	14	Z		passC	
+f34_L29	15	bay		passC	
+f34_L29	16	sar		passC	
+f34_L29	17	Z		passC	
+f34_L29	18	geb		passC	
+f34_L29	19	ram		passC	
+f34_L29	20	gap		passC	
+f34_L29	21	qib		passC	
+f34_L29	22	fid		passC	
+f34_L29	23	sof		passC	
+f34_L29	24	R		passC	
+f34_L30	1	~		lookalike UNSETTLED	f34_L30.1: readers -/F, look-alike K (L); which of F, K, ~?
+f34_L30	2	~		lookalike UNSETTLED	f34_L30.2: readers -/V, look-alike V (L); which of V, ~?
+f34_L30	3	gap		passC	
+f34_L30	4	sof		passC	
+f34_L30	5	kuf		passC	
+f34_L30	6	K	H	lookalike 2-of-3	
+f34_L30	7	A	H	lookalike 2-of-3	
+f34_L30	8	d	M	lookalike 2-of-3	
+f34_L30	9	y	H	lookalike 2-of-3	
+f34_L30	10	ot	H	lookalike 2-of-3	
+f34_L30	11	qes		passC	
+f34_L30	12	sof		passC	
+f34_L30	13	cil	M	lookalike 2-of-3	
+f34_L30	14	Z	M	lookalike 2-of-3	
+f34_L30	15	as	H	lookalike 2-of-3	
+f34_L30	16	sad		passC	
+f34_L30	17	Z	M	lookalike 2-of-3	
+f34_L30	18	ez	M	lookalike 2-of-3	
+f34_L30	19	pib	H	lookalike 2-of-3	
+f34_L30	20	X	M	lookalike 2-of-3	
+f34_L30	21	z	M	lookalike 2-of-3	
+f34_L30	22	y	H	lookalike 2-of-3	
+f34_L30	23	nq	M	lookalike 2-of-3	
+f34_L30	24	3	M	lookalike 2-of-3	
+f34_L30	25	9	H	lookalike 2-of-3	
+f34_L30	26	dim		passC	
+f34_L30	27	mus		passC	
+f34_L30	28	nom	H	lookalike 2-of-3	
