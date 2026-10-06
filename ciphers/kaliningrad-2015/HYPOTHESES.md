@@ -1001,3 +1001,28 @@ this N when a restart lands; the miss is restart count, not N. Next step, a fres
 one: the same command at `--restarts 6` with seeds 1-5 (about 5 minutes of CPU at this job's rate), the same two gates, and the
 shuffled-target decode required beside the target as in gate 2. Bracketing note (rule 3): err 0.05 is not the target's
 measured error, which does not exist; a control PASS at 0.05 would license only that error band.
+
+## R14-KAL11, wordcode (marked types = codes) at restarts 6, seeds 1-5 (6 Oct 2026) -- PRE-REGISTRATION
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run14-jobs.md` "R14-KAL11" (LANE-RUN14, account 2). Written and pushed before any
+scored run. CPU only, no hosts, no subagents. The R13-KAL10 named next step: same hypothesis, same cipher file
+(`families/r13_kal10/cipher_marked.txt`, convention A, N 978, K 36), same corpus (ru19_lat s1s), same params (codes=marked,
+bnd=x, err=0.05), same two gates; the only knob changed is restarts 2 -> 6 and seeds 3 -> 5. This is attempt 2 of this
+instrument on this hypothesis (rule 3, third-attempt clause).
+
+**Command A** (spec = a scratch copy of `specs/kaliningrad-2015.json` with `judge.corpora` = `tools/data/ru19_lat/s1s.txt.gz`):
+```
+python3 tools/family_run.py <spec copy> --family wordcode --cipher ciphers/kaliningrad-2015/families/r13_kal10/cipher_marked.txt \
+  --tokens space --corpus tools/data/ru19_lat/s1s.txt.gz --param codes=marked --param bnd=x --param err=0.05 \
+  --seeds 5 --restarts 6 --gate 0.6 --label "R14-KAL11 wordcode ru s1s, marked = codes, conv. A, restarts 6"
+```
+**Command B** (only if A's control meets gate 1): the same plus `--shuffle-target 1` (the shuffled-target decode beside the target).
+
+**Gates (fixed now, unchanged from R13-KAL10).**
+1. Control licenses the target only if mean token accuracy over seeds 1-5 >= 0.6 AND code-class accuracy mean >= 0.3.
+   Otherwise: "untested-by-this-tool at this N" for this design (attempt 2 of the same instrument, restart count the one knob,
+   still below gate); a third attempt needs a different instrument or new material, not more restarts.
+2. If licensed: target decode and shuffled-target decode both through the spec's judge (ru19_lat s1s, real_p05 gate of unknown
+   reliability per RUN4-KAL). "Worth a verifier" only if the target PASSes and the shuffled decode FAILs; a shuffled PASS voids
+   the judge for this family (ARM-C1). Anything else: control-backed negative for this design, conditional on Ernst's
+   transcript and convention A, at err 0.05 only (no measured transcription error exists to bracket).
