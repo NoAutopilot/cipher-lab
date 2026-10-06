@@ -105,3 +105,13 @@ test; a reading change after AUDIT.md -> NOTES note + ROOM verifier flag (N4 tar
 Verdict's first half: the same date-aligned sweep D1-ECK62S ran for Lehigh (ec18/lehigh_uses.tsv, its script), for Leghorn, Legend and
 Leopard in mssEC 18-19 sent ledgers, against the OR print. Record in ec18/<word>_uses.tsv; no grade change by the worker (hand the result to a
 verifier via ROOM flag if a grade would move). decode --check exit 0.
+
+## Wave 3 (from 18:1x UTC)
+
+### R12A-REQ2678 -- decode-2678-bnf-colbert127-gravel-1665, draft REQUEST.md for AE CP Allemagne 194 (ASKS row 150). Cap 2, box 40 min.
+Draft `ciphers/decode-2678-bnf-colbert127-gravel-1665/REQUEST.md` per CLAUDE.md access playbook item 4 and outreach/README.md (rule 1 AI
+disclosure, rule 1a voice): what is needed (the Gravel cipher letters of Jan-May 1665 in AE CP Allemagne 194, and why: a second text in the
+f.349 key for code 29 and cells 22:/0), the institution's public contact address read from its own contact page with the date (Archives
+diplomatiques, La Courneuve), subject line, blank recipient-name and sign-off placeholders, links per Outreach gate (6). Status `drafted`; do
+not send, do not run the gate-7 fact check yourself (a separate session does). Write a ROOM flag naming the draft so the account-3
+orchestrator queues the gate-7 check. Update the folder's Remaining gaps line to "waiting-on ASKS 150". Rule 9: no personal data.
