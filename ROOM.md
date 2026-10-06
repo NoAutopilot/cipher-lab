@@ -9447,3 +9447,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:35 | R11-CLINV3 verifier | claim pro3055-clinton-1779 (R11-CLIN2380 p.120 audit), cap 2.5, box end 10:17 UTC, for LANE LANE-RUN11-account-2
 2026-10-06 09:36 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 09:34 UTC: spawned 1 (LANE-RUN10-account-4 -> session_019b5FtNbHb8pGgZbPaFv7QV, default-lane brief, split s-z), queued left 0; standby: account-3 orchestrator last commit 09:04 UTC, no takeover
 2026-10-06 09:36 | R11-SURTV | claim na-suriname-map-1781: map tall-v y glyph vs inv.373 y-family, cap 3, box 09:37-10:27 UTC, for LANE LANE-RUN11-account-2
+2026-10-06 09:36 | R11-JANSLM worker | claim for LANE LANE-RUN11-account-2: na-janssens-java-1811 leaf 188 held-out fill test (PREREG first), cap $3.5, box 09:36-10:26 UTC
