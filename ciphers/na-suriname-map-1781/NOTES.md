@@ -2462,6 +2462,15 @@ negative for the volume.
 Requests: www.nationaalarchief.nl 1 (item page), service.archief.nl 80 (IIIF 600 px); 81 in all (brief ceiling 90), all 200.
 Vision: the worker's own contact-sheet look only, no subagent. No reading, no key or token change; --check not needed.
 
+## R12-SURSIGN-na-suriname-map-1781 (6 Oct 2026, account 2)
+
+Job (LANE-RUN12-account-2, from the "While waiting" line): one Opus blind call on 2-3-sign context tiles for L08:51 / L10:30 g|l and
+[sigma] L11:17 vs L10:66. Not run: R7-SUR2 (above) already asked these exact questions with this instrument (gate PASS, control c1
+0.7, c2 0.65; no token changed), and R8-SUR3 marked the context-tile blind look [retired] for these four tokens under rule 3's
+third-attempt clause. The brief was drawn from the "While waiting" line, which still named the pre-R7-SUR2 step; that line is now
+pointed at the Verdict's actual cheapest next (the inv. 373 offset sweep, n = 2 mod 4). No PREREG, no vision call, no key or reading
+change; 2077 stays H 538 C 12 M 63 U 45 (R10-SURV figures). Requests: none. Vision calls: 0.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured on the target sheets. No 2039, 2046 or 2077 tokens have been transcribed to this folder's two-pass bar, so there is no target ciphertext.tsv and no reading (RD03D "State at close"). The key-source control (self-consistency only) is 37 of 56 tokens at grade C (66.1%), with M 1 and U 18 (reading.txt header; tools/decode_key.py --check exits 0, rerun on a scratch copy 1 Oct 2026). RD03D's "C 56, M 1, U 18" is a slip for the 56-token total. The key has 17 grade-C signs (key.tsv), period and ours.
 - 2007A key-source remainder: Nota clauses B/D/E/F (about two-thirds of the block), the Remarque paragraph after "Signatuure", and the other enciphered map labels on 2007A whose plain twins are on 2007B - blocker: not-attempted; the plain text is in hand (scratch_2007b_nota_plain.txt; images/2007b_remarques_crop.jpg is on disk but not transcribed). Only pass A of Nota B/D/E/F survives as a file (scratch_notaBDEF_passA.tsv); pass B exists only in the RD03C transcript. Each attempt so far gained signs (13, then 15, then 17), so rule 3's third-attempt clause does not apply. The з/Signatuure conflict belongs here too: single-reader zoom re-reads of that one word on crops already at native resolution failed twice (RD03C, RD03D), so settle з from its other occurrences in the aligned Remarque, not from a third read of the same word; next: transcribe 2007B's plain Remarque, run a fresh blind pass B over the Nota B/D/E/F crops, add a glyph-token option to tools/interlinear_align.py (it is numeral-only today; Usage 8, no private copy), and align against 2007B's plain text seeded with the 17 signs, ~$9
@@ -2585,4 +2594,4 @@ Checks (FT4k, 3 Oct 2026): `python3 tools/gaps_check.py na-suriname-map-1781` ->
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: the Verdict's cheapest next -- R7-SUR's single-sign Sonnet look failed its control gate (6 Oct 2026); re-ask L08:51 / L10:30 g|l and [sigma] L11:17 vs L10:66 with one Opus blind call on 2-3-sign context tiles, ~$4, 1 vision call. Stage 9 (VERIFY5) stays blocked on LOCAL-QUEUE L36/L41.
+- Action that depends on nobody: the Verdict's cheapest next -- the offset sweep of inv. 373 (labels n = 2 mod 4 between the 1-in-4 samples, ~125 scans per job) for further glossed passages, ~$2. (Updated 6 Oct 2026, R12-SURSIGN: the earlier text here -- "re-ask L08:51 / L10:30 g|l and [sigma] L11:17 vs L10:66 with one Opus blind call on 2-3-sign context tiles" -- was done by R7-SUR2 (gate PASS, no token changed) and that instrument is [retired] for these four tokens (R8-SUR3); it was queued twice more from this stale line, R8-SUR3 and R12-SURSIGN, neither re-ran it.) Stage 9 (VERIFY5) stays blocked on LOCAL-QUEUE L36/L41.
