@@ -1570,3 +1570,70 @@ and an audit of every `agree` label against passA/passB for 4610/4611/4616 (scri
 
 **N-class / depth.** Unchanged: 4616 N4; the six changes are inside an unprinted letter's token values. Requests:
 resources.huygens.knaw.nl 1.
+
+## R13-LVNV: R12-LVN16C's applied state carried into this file (6 Oct 2026)
+
+Verifier R13-LVNV (account 2, for LANE LANE-RUN13-account-2), 6 Oct 2026, 13:21-13:27 UTC by `date -u`. Separate from the
+solvers (R12-LVN16, R12-LVN16R, R12-LVN16C) and from the verifiers R12-LVNV and R12-LVNV2. Nothing decoded beyond `--check`;
+ciphertext, key and reading not edited. 4610/4611 not touched.
+
+**Re-derivation.** `python3 lvn16/apply.py --check`: exit 0 (control A3 193/210, B3 194/210, gate PASS; 6 rows
+`lvnv2-corrected`). `python3 tools/decode_key.py . --config decode_4616_full.json --check`: exit 0, "tokens 276: C 249, H 1,
+I 1, M 13, U 12", reading up to date. Commit 46885e4f (R12-LVN16C) diffed against its parent: exactly six token rows of
+reading_4616_full_tokens.tsv change, and they are R12-LVNV2's six, sign for sign: p1_L12/1 90->40 (f->u), p1_L13/1 79->39
+(d->u), p1_L14/2 91->81 (g->e), p1_L15/17 [pre 16] 36->31 (u->t), p1_L16/2 26->20 (s->q, C->M), p1_L17/2 91->81 (g->e); no
+other row moved. lvn16/corrections_lvnv2.tsv and the `was ... H` notes in ciphertext_4616.tsv cite R12-LVNV2 and the crop.
+NOTES.md "R12-LVN16C" counts recomputed from the three token files: 4610 C+H 1204/1545, 4611 905/1393, 4616 250/276;
+**2359 of 3214 (73.4%), four letters 2359 of 4047 (58.3%)** -- match NOTES.
+
+**R12-LVNV's two overturns are still not applied.** R12-LVN16C applied only R12-LVNV2's six rows. R12-LVNV's corrections
+note (this file, above) is still open in the committed files: (1) p1_L16/19 [pre 18] stays 91 'g' C (R12-LVNV: image 81,
+grade M pending); (2) p1_L17/15 sign 221 stays 'hollande' **H** (R12-LVNV: M in 4616 by rule 4's direction clause, the
+only H witness, 4496's gloss, is list B). So the committed reading and the audited state differ by two grades:
+
+| state | 4616 C | H | M | I | U | 4610/4611/4616 C/H | four letters |
+|---|---|---|---|---|---|---|---|
+| committed (R12-LVN16C) | 249 | 1 | 13 | 1 | 12 | 2359/3214 (73.4%) | 2359/4047 (58.3%) |
+| audited (+ R12-LVNV's two) | 248 | 0 | 15 | 1 | 12 | 2357/3214 (73.3%) | 2357/4047 (**58.2%**) |
+
+R12-LVNV's own audited count (C 249, H 0, M 14; 2358, 58.3%) predates R12-LVNV2 and is superseded by the second row. The
+image check below supports overturn (1): at 4x on the 300-dpi render p1_L16/19's first digit is a closed two-loop 8 with no
+tail (the hand's 9, e.g. 9 and 92 on the line above, has a long descender). For a solver: apply R12-LVNV's two rows
+(p1_L16/19 -> 81 grade M or 'e' C if the solver accepts this read; p1_L17/15 'hollande' graded M via an exception or a
+direction-scoped key row), then `decode_key.py --check`. Outward figure until then: "about 58%" holds under either row.
+
+**Depth and status.json.** results[60] depth D2, depth_pct 62.6 rests on the DEPTH-REGRADE basis ("C 2512 of 4012"), a
+different token basis; `python3 tools/depth_check.py` runs clean and reports no movement, so status.json is not edited.
+D2 holds: the changes are six token values inside 4616 and no stretch or sentence the D2 grade rests on is touched.
+
+**Safe sentence and SECOND-OPINIONS-QUEUE.tsv.** No safe sentence in this file quotes the 4616 token counts or any of the
+changed 4616 words (the safe sentences carry class and wording; the 58.3% figure appears only in R12-LVNV's count line and
+NOTES). The SO prompt PROMPT-chatgpt.md quotes 4616's opening ("Nous sommes cest soer icy arivé aupres de Goch et sommes"),
+lines p1_L01-L05, untouched by rows in p1_L12-L17. No plaintext word in a safe sentence changed, so no novelty search was run.
+SO-LODEWIJK-1573-74's notes column gets one clause pointing here; SO-LODEWIJK-5797 is unaffected (5797 not touched).
+
+**Eye check of uncontested H rows (the R12-LVNV2 next step).** Pool: ciphertext_4616.tsv rows with confidence H, why
+`agree`, no `alt`, numeric sign containing 3, 7, 8 or 9: 118. Sample: 30 by `random.seed(1313)`; 1 is the clear-text date
+1574 (p1_L21/5), dropped, leaving 29 cipher rows. Page re-fetched once (resources.huygens.knaw.nl, HTTP 200), p1 `pdftoppm -png
+-r 300` (sha1 4f47b490f28e2cfeebaf5352c34f64af87636148, matches R12-LVNV/LVNV2), crops re-cut with the logged command, pasted:
+`python3 tools/iiif_lines.py --image 04616-1.png --out crops --prefix 04616_p1 --region 380,320,2080,880 --distance 45
+--prominence 20 --top-margin 12 --bottom-margin 12 --debug` (13 lines, crop Lk = p1_L(k+4)). Read by this verifier's own eye on
+half-line crops, 4x page zooms where a 3/7 or 8/9 call decided. No subagents; crops kept in the session scratchpad, not committed.
+
+Rows read as transcribed (27): p1_L06/2 9, /18 9, /20 39; p1_L07/6 37, /18 313, /20 7; p1_L08/13 118, /16 82; p1_L09/5 81,
+/8 3, /9 77, /19 27; p1_L10/9 32, /17 92, /18 82; p1_L11/1 79, /9 81, /11 76, /16 78; p1_L12/14 31, /16 3; p1_L13/6 81, /8 77;
+p1_L15/16 81; p1_L16/10 81, /14 3; p1_L17/6 82.
+
+Rows that may be wrong (2 of 29), for a solver; nothing corrected here:
+
+| row | transcribed | image | note |
+|---|---|---|---|
+| p1_L07/8 | 17 ('q') | doubtful, 17 or 13 ('p') | second digit has a flat top but a curved, bowled lower stroke ending in a hook, unlike the straight-stemmed 7 of 37 at /6; the hand's 3 elsewhere is round-topped. Not decidable by eye here |
+| p1_L16/4 | 85 ('e') | leans 35 ('t') | faint ink; first digit shows an open upper hook and no closed upper loop, unlike the closed 8s on p1_L15. Already one of R12-LVNV's 12 contested rows (both 300-dpi readers 35), so not truly uncontested |
+
+Of the 28 rows not already contested, 1 is doubtful and 0 clearly wrong (0-4% by this sample), against 6 of 12 among the
+contested rows (R12-LVNV2): the `agree` label holds much better where the 300-dpi readers did not dissent. The script audit of
+every `agree` label against passA/passB for 4610/4611/4616 (R12-LVNV2's second next step, ~$0.3) is still not run.
+
+**N-class.** Unchanged: 4616 N4 (no prior decipherment located); 4610/4611 N4, 4612 N3, as above. Key source: ours (key_full,
+from the period decipherment sheets). Requests: resources.huygens.knaw.nl 1 (4616 PDF). No subagents.
