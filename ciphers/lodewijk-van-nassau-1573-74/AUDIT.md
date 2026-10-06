@@ -1637,3 +1637,52 @@ every `agree` label against passA/passB for 4610/4611/4616 (R12-LVNV2's second n
 
 **N-class.** Unchanged: 4616 N4 (no prior decipherment located); 4610/4611 N4, 4612 N3, as above. Key source: ours (key_full,
 from the period decipherment sheets). Requests: resources.huygens.knaw.nl 1 (4616 PDF). No subagents.
+
+## R13-LVNV2: R13-LVNFIX carried into this file (6 Oct 2026)
+
+Verifier R13-LVNV2 (account 2, for LANE LANE-RUN13-account-2), 6 Oct 2026, 13:57-14:03 UTC by `date -u`. Separate from the
+solvers (R12-LVN16, R12-LVN16C, R13-LVNFIX) and from the verifiers R12-LVNV, R12-LVNV2 and R13-LVNV. Nothing decoded beyond
+`--check`; ciphertext, key and reading not edited. The brief cites R13-LVNFIX as ff43531ce; that is the pre-rebase object, landed on
+main as **14b6ca64f** (13:43:02 UTC); cite 14b6ca64f.
+
+**Re-derivation.** `python3 lvn16/apply.py --check`: exit 0 (control A3 193/210, B3 194/210, gate PASS; 3 rows `lvnv-override`,
+6 `lvnv2-corrected`). `python3 tools/decode_key.py . --config decode_4616_full.json --check`: exit 0, "tokens 276: C 246, I 1,
+M 17, U 12", reading up to date. 14b6ca64f diffed against its parent: exactly four rows of reading_4616_full_tokens.tsv change,
+the four R13-LVNFIX names, and no other: p1_L07/8 17 'q' C -> 13 'p' M; p1_L16/4 85 'e' C -> 85 'e' M; p1_L16/19 91 'g' C -> 81
+'e' M; p1_L17/15 221 'hollande' H -> M (exceptions_4616.tsv, wired into decode_4616_full.json). Counts recomputed from the three
+full token files: 4610 C+H 1204/1545, 4611 905/1393, 4616 246/276; M 439, U 297, I 123; **2355 of 3214 (73.3%), four letters 2355
+of 4047 (58.2%)** -- match NOTES.md "R13-LVNFIX" and this file's R13-LVNV "audited" row less the two extra M regrades below.
+Outward figure "about 58%" holds.
+
+| state | 4616 C | H | M | I | U | 4610/4611/4616 C/H | four letters |
+|---|---|---|---|---|---|---|---|
+| R13-LVNV audited (R12-LVNV's two applied) | 248 | 0 | 15 | 1 | 12 | 2357/3214 (73.3%) | 2357/4047 (58.2%) |
+| committed after R13-LVNFIX (this audit) | 246 | 0 | 17 | 1 | 12 | 2355/3214 (73.3%) | 2355/4047 (58.2%) |
+
+**Image reads.** Page re-fetched once (resources.huygens.knaw.nl, HTTP 200), p1 `pdftoppm -png -r 300` (sha1
+4f47b490f28e2cfeebaf5352c34f64af87636148, matches), crops re-cut with the logged command, pasted: `python3 tools/iiif_lines.py
+--image p-1.png --out crops --prefix 04616_p1 --region 380,320,2080,880 --distance 45 --prominence 20 --top-margin 12
+--bottom-margin 12 --debug` (13 lines). Half-line crops at 2x, this verifier's own eye, no subagents, crops not committed.
+- p1_L07/8 (crop L03): the second digit has the flat top and bowled, hooked lower stroke of the 3 in 83 and 63 on the same line,
+  not the straight stem of the 7 in 37 beside it. 13 is the better read; the grade M (not C) is right because two independent
+  300-dpi readers and both 150-dpi passes gave 17. Concur: value 13, grade M.
+- p1_L16/4 (crop L12): faint ink, first digit not settled 8 vs 3 at 2x. Concur: sign kept 85, grade M, no value change.
+- p1_L16/19 and p1_L17/15 were R12-LVNV's overturns, image-checked twice already (R12-LVNV, R13-LVNV); not re-read (brief).
+No over-claim found: every changed row is graded M, none upgraded, and the control's pre-registered scoring is unchanged.
+
+**The stale-reading note is correct and needs a fix, in a solver job.** NOTES.md "R13-LVNFIX" says decode.json's 4616 job (key.tsv
+reading: `reading_4616.txt`, `reading_4616_tokens.tsv`) already failed `--check` before that job. Tested in throwaway worktrees with the
+current tools/decode_key.py: at 14b6ca64f^ and at 46885e4fb^ (before R12-LVN16C) `decode_key.py . --check` reports "STALE:
+reading_4616.txt, reading_4616_tokens.tsv"; at 0d10d1b6e^ (before R12-LVN16) the 4616 job is not stale. So R12-LVN16 (0d10d1b6e,
+6 Oct 2026 11:26 UTC) changed ciphertext_4616.tsv and regenerated only the key_full reading (decode_4616_full.json), not the
+key.tsv one; R12-LVN16C and R13-LVNFIX inherited it. Now: `decode_key.py . --check` exit 1 (4616 under key.tsv "C 245, I 1, M 16,
+U 14"). Fix: regenerate those two files with `python3 tools/decode_key.py .` (decode.json), then `--check` exit 0; no file in
+this folder's counts or safe sentences cites the key.tsv 4616 reading (the 58.2% figure is from reading_4616_full_tokens.tsv), so it
+is a rule-7 hygiene fix, not a correction to any claim; ~$0.2. Not done here (verifier: no decoding beyond --check).
+
+**Depth, status.json, safe sentence, SO queue.** D2 holds; status.json not edited (depth basis is DEPTH-REGRADE's, see R13-LVNV).
+No changed word is in a safe sentence or in PROMPT-chatgpt.md's quoted 4616 opening (p1_L01-L05). SO-LODEWIJK-1573-74's notes
+column gets one clause pointing here; SO-LODEWIJK-5797 unaffected.
+
+**N-class.** Unchanged: 4616 N4 (no prior decipherment located); 4610/4611 N4, 4612 N3. Key source: ours (key_full, from the period
+decipherment sheets). Requests: resources.huygens.knaw.nl 1 (4616 PDF). No subagents.
