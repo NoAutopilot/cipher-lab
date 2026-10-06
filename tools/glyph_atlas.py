@@ -42,6 +42,11 @@ segment  Per page: background-normalised binarisation (grey closing divides out 
          Output columns are the default mode's; rh/rw/dy are in units of xh, line is the band (1 for a strip), and
          pages.json records median_h = xh. Marks are not separated (cursive superscripts stay with their group).
          Offline test: tools/tests/test_glyph_atlas.py (synthetic joined line with a faint mirrored ghost).
+         --median-h PX|pool (R10-FLOR2, 6 Oct 2026; default mode only): every page uses one shared median sign height
+         instead of its own, so a line crop whose components are mostly specks (own median 4 px against ~50 on the
+         leaf) is cut at the leaf's scale; "pool" takes the median of the pages' own medians. pages.json then records
+         the shared value. Catches: a speck-dominated crop of a leaf whose other crops share one scale. Must NOT change:
+         a page whose own median already equals the shared value (identical boxes). Offline test: test_glyph_atlas.py.
 cluster  HOG (9 orientations, 8x8 cells, 2x2 blocks) of the bitmaps plus log relative height and width, PCA(40),
          k-means with a deliberate over-split (fixed seed), as carpi cluster.py; marks clustered separately.
          --split s52:3 re-splits a mixed cluster (labels 52.0 52.1 52.2). Writes DIR/clusters.tsv and DIR/sheet_signs_NN.png / sheet_marks.png contact sheets (row label "k:count").
@@ -140,6 +145,8 @@ def segment_page(name, path, box, a):
     areas = st[1:, 4]
     big = st[1:][areas >= np.percentile(areas, 60)]
     mh = float(np.median(big[:, 3])) if len(big) else 20.0
+    if getattr(a, 'shared_mh', None):
+        mh = a.shared_mh   # --median-h: one scale for every page (a speck-dominated crop's own median collapses)
     keep = [i for i in range(1, n) if st[i, 4] >= max(4, (a.min_area * mh) ** 2)
             and st[i, 3] <= 3.5 * mh and st[i, 2] <= 5 * mh]
     kept = np.zeros_like(ink)
@@ -332,9 +339,40 @@ SIGN_COLS = ['sid', 'page', 'line', 'pos', 'x', 'y', 'w', 'h', 'rh', 'rw', 'dy',
 MARK_COLS = ['mid', 'page', 'line', 'x', 'y', 'w', 'h', 'rh', 'rw', 'sid']
 
 
+def own_median_h(path, box, a):
+    """The page's own median sign height, exactly as segment_page computes it before any --median-h override."""
+    grey = np.array(Image.open(path).convert('L'))
+    if box:
+        x0, y0, x1, y1 = box
+        grey = grey[y0:y1, x0:x1]
+    ink = binarise(grey, a.rel)
+    ink = cv2.morphologyEx(ink, cv2.MORPH_OPEN, np.ones((2, 2), np.uint8)) if min(grey.shape) > 2500 else ink
+    n, lab, st, cen = cv2.connectedComponentsWithStats(ink, connectivity=8)
+    areas = st[1:, 4]
+    big = st[1:][areas >= np.percentile(areas, 60)] if len(areas) else st[1:]
+    return float(np.median(big[:, 3])) if len(big) else 20.0
+
+
 def cmd_segment(a):
     os.makedirs(os.path.join(a.out, 'crops'), exist_ok=True)
     allS, allM, scale = [], [], {}
+    a.shared_mh = None
+    if a.median_h:
+        if a.cursive:
+            sys.exit('--median-h applies to the default (non --cursive) mode only')
+        if a.median_h == 'pool':
+            own = []
+            for spec in a.page:
+                name, rest = spec.split('=', 1)
+                path, box = (rest.split('@') + [None])[:2]
+                own.append(own_median_h(path, [int(v) for v in box.split(',')] if box else None, a))
+            a.shared_mh = float(np.median(own))
+            print(f'--median-h pool: median of {len(own)} pages\' own medians = {a.shared_mh:.1f}px '
+                  f'(range {min(own):.0f}-{max(own):.0f})')
+        else:
+            a.shared_mh = float(a.median_h)
+            if a.shared_mh <= 0:
+                sys.exit('--median-h must be a positive number of pixels or "pool"')
     for spec in a.page:
         name, rest = spec.split('=', 1)
         path, box = (rest.split('@') + [None])[:2]
@@ -768,6 +806,9 @@ def main(argv=None):
     s.add_argument('--mark-h', type=float, default=0.55, help='mark if height < this x median height (0.55)')
     s.add_argument('--mark-above', type=float, default=0.3, help='mark bottom must sit this x median height above the line centre (0.3)')
     s.add_argument('--min-area', type=float, default=0.12, help='drop a component whose side is under this x median height (0.12); raise on a noisy page')
+    s.add_argument('--median-h', help='default mode: use this shared median sign height (px) on every page instead of each '
+                   'page\'s own; "pool" = the median of the pages\' own medians. For line crops of one leaf where a '
+                   'speck-dominated crop collapses its own median (R9-FLOR, c.127 L08_s1: 4 px against ~50)')
     s.add_argument('--merge-vgap', type=float, default=0.6, help='merge same-line, x-overlapping components only if the vertical gap between them is under this x median height (0.6); stops distant dust specks chaining into one giant box')
     s.add_argument('--cursive', action='store_true',
                    help='joined cursive hand with bleed-through: one line strip per --page, ghost floor, fragments grouped '

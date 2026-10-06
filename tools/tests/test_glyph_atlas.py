@@ -199,6 +199,42 @@ def main():
     xh = json.load(open(os.path.join(d5, 'pages.json')))['s1']['median_h']
     assert 15 <= xh <= 32, xh
     assert all(int(s['y']) + int(s['h']) > 61 for s in S5)        # no box made of ghost/neighbour ink alone
+
+    # --median-h (R10-FLOR2): a line crop whose components are mostly specks collapses its own median sign height
+    # (c.127 L08_s1: 4 px against ~50) and loses the real signs (height > 3.5 x median); a shared scale restores
+    # them. Must NOT change: a clean crop given its own median (identical boxes); "pool" = median of own medians.
+    d6 = tempfile.mkdtemp()
+    rng6 = np.random.default_rng(6)
+    def strip6(specks):
+        im = np.full((140, 2200), 235, np.uint8)
+        for k in range(20):
+            x = 40 + k * 105
+            cv2.rectangle(im, (x, 45), (x + 40, 95), 20, 5)
+        for _ in range(specks):
+            x, y = int(rng6.integers(10, 2180)), int(rng6.integers(8, 130))
+            if not im[max(0, y - 6):y + 10, max(0, x - 6):x + 10].min() < 100:
+                cv2.rectangle(im, (x, y), (x + 3, y + 3), 20, -1)
+        return im
+    pc, ps = os.path.join(d6, 'clean.png'), os.path.join(d6, 'specky.png')
+    cv2.imwrite(pc, strip6(0))
+    cv2.imwrite(ps, strip6(150))
+    sigs = lambda o: list(csv.DictReader(open(os.path.join(o, 'signs.tsv')), delimiter='\t'))
+    pj = lambda o: json.load(open(os.path.join(o, 'pages.json')))
+    run('segment', '--page', f'c={pc}', '--page', f's={ps}', '--out', d6 + '/own')
+    own = pj(d6 + '/own')
+    assert 45 <= own['c']['median_h'] <= 60 and own['s']['median_h'] <= 8, own   # the collapse being fixed
+    assert len([r for r in sigs(d6 + '/own') if r['page'] == 's']) != 20
+    mh_c = own['c']['median_h']
+    run('segment', '--page', f'c={pc}', '--page', f's={ps}', '--out', d6 + '/fix', '--median-h', str(mh_c))
+    fix = sigs(d6 + '/fix')
+    assert len([r for r in fix if r['page'] == 's']) == 20, len([r for r in fix if r['page'] == 's'])
+    key = lambda rows, pg: [(r['x'], r['y'], r['w'], r['h']) for r in rows if r['page'] == pg]
+    assert key(fix, 'c') == key(sigs(d6 + '/own'), 'c')                    # clean crop unchanged at its own scale
+    assert pj(d6 + '/fix')['s']['median_h'] == mh_c
+    out6 = run('segment', '--page', f'c={pc}', '--page', f'c2={pc}', '--page', f's={ps}', '--out', d6 + '/pool',
+               '--median-h', 'pool')
+    assert 'pool' in out6 and pj(d6 + '/pool')['s']['median_h'] == mh_c, out6
+    assert len([r for r in sigs(d6 + '/pool') if r['page'] == 's']) == 20
     print('ok')
 
 

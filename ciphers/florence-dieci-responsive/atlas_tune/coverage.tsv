@@ -1,42 +1,42 @@
-set	crop	boxes_default	boxes_tuned	ref_cipher_tokens	ratio_default	ratio_tuned	wide_tuned	lines_found_tuned	note
-pilot	c127b1_L01_s1	28	27	20	1.40	1.35	1	1	tuning; opens with clear "chomunita"
-pilot	c127b1_L01_s2	20	19	19	1.05	1.00	0	1	tuning
-pilot	c127b1_L02_s1	21	21	23	0.91	0.91	1	1	tuning
-pilot	c127b1_L02_s2	22	21	19	1.16	1.11	0	1	excluded: 3 clear tokens
-pilot	c127b1_L03_s2	22	22	8	2.75	2.75	1	1	held-out as registered; mixed crop (pass A: 4 clear words before the 8 cipher signs, dropped in recon)
-pilot	c127b1_L04_s1	22	21	23	0.96	0.91	1	1	held-out, pure cipher
-pilot	c127b1_L04_s2	21	19	8	2.62	2.38	3	1	excluded: 6 clear tokens
-c127b2	c127b2_L02_s1	20	20					1	opens with clear "ghalio"
-c127b2	c127b2_L02_s2	17	17					1	
-c127b2	c127b2_L03_s1	21	18					1	
-c127b2	c127b2_L03_s2	19	19					1	
-c127b2	c127b2_L04_s1	23	22					1	
-c127b2	c127b2_L04_s2	20	20					1	
-c127b2	c127b2_L05_s1	18	16					1	
-c127b2	c127b2_L05_s2	20	20					1	
-c127b2	c127b2_L06_s1	23	23					1	
-c127b2	c127b2_L06_s2	18	18					1	
-c127b2	c127b2_L07_s1	32	25					1	
-c127b2	c127b2_L07_s2	20	20					1	
-c127b2	c127b2_L08_s1	55	44					3	3 line bands found in one crop: neighbour-line or interlinear ink; check overlay
-c127b2	c127b2_L08_s2	19	19					1	
-c127b2	c127b2_L09_s1	33	30					1	
-c127b2	c127b2_L09_s2	19	19					1	
-c127b2	c127b2_L10_s1	27	26					1	
-c127b2	c127b2_L10_s2	22	21					1	
-c127b2	c127b2_L11_s1	23	20					1	
-c127b2	c127b2_L11_s2	24	22					1	
-c127b2	c127b2_L12_s1	22	22					1	
-c127b2	c127b2_L12_s2	16	16					1	
-c127b2	c127b2_L13_s1	22	20					1	
-c127b2	c127b2_L13_s2	17	17					1	
-c127b2	c127b2_L14_s1	22	21					1	
-c127b2	c127b2_L14_s2	18	18					1	
-c127b2	c127b2_L15_s1	23	23					1	
-c127b2	c127b2_L15_s2	19	19					1	
-c127b2	c127b2_L16_s1	20	20					1	
-c127b2	c127b2_L16_s2	18	18					1	
-c127b2	c127b2_L17_s1	23	22					1	
-c127b2	c127b2_L17_s2	21	21					1	
-c127b2	c127b2_L18_s1	24	23					1	
-c127b2	c127b2_L18_s2	25	24					1	ends in clear text
+set	crop	boxes_default	boxes_tuned	boxes_shared	ref_cipher_tokens	ratio_default	ratio_tuned	wide_tuned	lines_found_tuned	note
+pilot	c127b1_L01_s1	28	27	25	20	1.40	1.35	1	1	tuning; opens with clear "chomunita"
+pilot	c127b1_L01_s2	20	19	20	19	1.05	1.00	0	1	tuning
+pilot	c127b1_L02_s1	21	21	21	23	0.91	0.91	1	1	tuning
+pilot	c127b1_L02_s2	22	21	22	19	1.16	1.11	0	1	excluded: 3 clear tokens
+pilot	c127b1_L03_s2	22	22	22	8	2.75	2.75	1	1	held-out as registered; mixed crop (pass A: 4 clear words before the 8 cipher signs, dropped in recon)
+pilot	c127b1_L04_s1	22	21	22	23	0.96	0.91	1	1	held-out, pure cipher
+pilot	c127b1_L04_s2	21	19	21	8	2.62	2.38	3	1	excluded: 6 clear tokens
+c127b2	c127b2_L02_s1	20	20	20					1	opens with clear "ghalio"
+c127b2	c127b2_L02_s2	17	17	17					1	
+c127b2	c127b2_L03_s1	21	18	18					1	
+c127b2	c127b2_L03_s2	19	19	20					1	
+c127b2	c127b2_L04_s1	23	22	22					1	
+c127b2	c127b2_L04_s2	20	20	20					1	
+c127b2	c127b2_L05_s1	18	16	18					1	
+c127b2	c127b2_L05_s2	20	20	20					1	
+c127b2	c127b2_L06_s1	23	23	23					1	
+c127b2	c127b2_L06_s2	18	18	18					1	
+c127b2	c127b2_L07_s1	32	25	22					1	
+c127b2	c127b2_L07_s2	20	20	20					1	
+c127b2	c127b2_L08_s1	55	44	16					3	3 line bands found in one crop: neighbour-line or interlinear ink; check overlay
+c127b2	c127b2_L08_s2	19	19	20					1	
+c127b2	c127b2_L09_s1	33	30	22					1	
+c127b2	c127b2_L09_s2	19	19	19					1	
+c127b2	c127b2_L10_s1	27	26	23					1	
+c127b2	c127b2_L10_s2	22	21	20					1	
+c127b2	c127b2_L11_s1	23	20	19					1	
+c127b2	c127b2_L11_s2	24	22	23					1	
+c127b2	c127b2_L12_s1	22	22	21					1	
+c127b2	c127b2_L12_s2	16	16	16					1	
+c127b2	c127b2_L13_s1	22	20	19					1	
+c127b2	c127b2_L13_s2	17	17	17					1	
+c127b2	c127b2_L14_s1	22	21	21					1	
+c127b2	c127b2_L14_s2	18	18	18					1	
+c127b2	c127b2_L15_s1	23	23	23					1	
+c127b2	c127b2_L15_s2	19	19	19					1	
+c127b2	c127b2_L16_s1	20	20	20					1	
+c127b2	c127b2_L16_s2	18	18	18					1	
+c127b2	c127b2_L17_s1	23	22	23					1	
+c127b2	c127b2_L17_s2	21	21	21					1	
+c127b2	c127b2_L18_s1	24	23	24					1	
+c127b2	c127b2_L18_s2	25	24	24					1	ends in clear text
