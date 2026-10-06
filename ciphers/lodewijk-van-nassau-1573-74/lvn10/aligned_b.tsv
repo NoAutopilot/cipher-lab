@@ -1,0 +1,294 @@
+line	position	sign	confidence	alt	A5	B5	role
+p3_L12	1	137	H		-	-	control
+p3_L12	3	90	H		90	90	control
+p3_L12	4	24	H		24	24	control
+p3_L12	5	83	H		83	83	control
+p3_L12	6	92	H		92	92	control
+p3_L12	7	7	H		7	7	control
+p3_L12	8	38	H		38	38	control
+p3_L12	9	27	H		27	27	control
+p3_L12	10	85	H		85	85	control
+p3_L12	11	135	H		135	135	control
+p3_L12	12	120	H		126	126	control
+p3_L12	13	150	H		150	150	control
+p3_L12	17	20	H		20	20	control
+p3_L12	18	39	H		39	39	control
+p3_L12	19	65	M	B:61	61	61	target
+p3_L13	1	192	H		192	192	control
+p3_L13	2	135	H		185	185	control
+p3_L13	3	150	H		150	150	control
+p3_L13	4	78	H		78	78	control
+p3_L13	5	81	H		81	81	control
+p3_L13	6	29	H		29	29	control
+p3_L13	7	146	H		146	246	control
+p3_L13	8	83	H		83	83	control
+p3_L13	9	79	H		79	79	control
+p3_L13	10	85	H		85	85	control
+p3_L13	11	90	H		90	90	control
+p3_L13	12	105	H		105	105	control
+p3_L13	13	85	H		85	85	control
+p3_L13	14	24	H		24	24	control
+p3_L13	15	145	H		145	145	control
+p3_L13	16	123	H		123	123	control
+p3_L13	17	134	H		134	134	control
+p3_L13	18	138	H		138	138	control
+p3_L13	19	78	H		78	78	control
+p3_L14	1	40	H		40	40	control
+p3_L14	2	191	H		191	191	control
+p3_L14	3	140	H		140	140	control
+p3_L14	5	114	H		114	114	control
+p3_L14	6	81	H		81	81	control
+p3_L14	7	31	H		31	31	control
+p3_L14	8	21	H		21	21	control
+p3_L14	9	82	H		82	82	control
+p3_L14	10	131	M	B:121	131	131	target
+p3_L14	11	128	M	B:120	126	126	target
+p3_L14	17	84	H		84	84	control
+p3_L14	18	29	H		29	29	control
+p3_L14	19	75	H		75	75	control
+p3_L14	20	25	M	B:21	25	25	target
+p3_L14	21	105	H		105	105	control
+p3_L15	1	14	H		14	14	control
+p3_L15	2	85	H		35	35	control
+p3_L15	3	85	H		85	85	control
+p3_L15	4	145	H		145	145	control
+p3_L15	5	125	M	B:121	125	125	target
+p3_L15	6	200	H		200	200	control
+p3_L15	7	149	H		149	149	control
+p3_L15	8	129	H		129	129	control
+p3_L15	10	202	H		202	202	control
+p3_L15	11	150	H		150	150	control
+p3_L16	10	150	H		150	150	control
+p3_L16	11	80	M	B:70	80	80	target
+p3_L16	12	84	H		84	84	control
+p3_L16	13	112	H		112	112	control
+p3_L16	14	61	H		61	61	control
+p3_L16	15	12	H		12	12	control
+p3_L16	16	64	H		64	64	control
+p3_L16	17	101	H		101	101	control
+p3_L16	18	49	H		49	49	control
+p3_L16	19	148	H		148	148	control
+p3_L17	1	134	H		-	-	control
+p3_L17	2	4	H		4	4	control
+p3_L17	3	81	H		81	81	control
+p3_L17	4	91	H		91	91	control
+p3_L17	5	9	H		9	9	control
+p3_L17	6	61	H		31	31	control
+p3_L17	7	102	H		102	102	control
+p3_L17	8	63	H		63	63	control
+p3_L17	9	38	M	B:33	33	33	target
+p3_L17	10	104	H		104	104	control
+p3_L17	11	7	H		7	7	control
+p3_L17	12	8	M	B:3	3	3	target
+p3_L17	13	127	H		127	127	control
+p3_L17	14	141	H		141	141	control
+p3_L17	15	133	H		133	133	control
+p3_L17	17	51	H		51	51	control
+p3_L17	18	150	M	B:130	150	150	target
+p3_L17	19	65	H		65	65	control
+p3_L17	20	27	H		27	27	control
+p3_L17	21	30	H		30	30	control
+p3_L18	1	8	M	B:6	8	8	target
+p3_L18	2	101	H		101	101	control
+p3_L18	3	21	H		21	21	control
+p3_L18	4	121	H		121	121	control
+p3_L18	5	126	H		126	126	control
+p3_L18	6	137	H		137	137	control
+p3_L18	8	81	H		81	81	control
+p3_L18	9	9	H		9	9	control
+p3_L18	10	2	H		2	2	control
+p3_L18	11	77	H		77	77	control
+p3_L18	12	82	H		82	82	control
+p3_L18	13	116	H		116	116	control
+p3_L18	14	83	H		83	83	control
+p3_L18	15	3	H		3	3	control
+p3_L18	16	35	H		35	35	control
+p3_L18	17	135	H		135	135	control
+p3_L18	20	52	H		52	52	control
+p3_L18	21	81	M	B:61	-	-	target
+p3_L19	1	1	M	A:-	-	-	target
+p3_L19	2	31	M	A:-	-	-	target
+p3_L19	3	83	M	B:29	-	-	target
+p3_L19	4	71	M	B:84	-	-	target
+p3_L19	5	100	M	B:24	-	-	target
+p3_L19	6	100	M	B:84	-	-	target
+p3_L19	7	70	M	B:102	-	-	target
+p3_L19	8	60	M	B:3	-	-	target
+p3_L19	9	29	H		29	29	control
+p3_L19	10	20	M	B:26	-	-	target
+p3_L19	11	81	H		81	81	control
+p3_L19	12	36	H		36	36	control
+p3_L19	13	111	H		111	111	control
+p3_L19	14	82	H		82	82	control
+p3_L19	15	119	H		119	119	control
+p3_L19	16	83	H		83	83	control
+p3_L19	17	2	H		2	2	control
+p3_L19	18	33	H		33	33	control
+p3_L19	21	28	H		28	28	control
+p3_L20	1	100	M	B:148	100	100	target
+p3_L20	2	101	S	143	105	105	target
+p3_L20	3	85	H		85	85	control
+p3_L20	4	60	M	A:-	60	60	target
+p3_L20	5	127	H		127	127	control
+p3_L20	6	148	H		248	248	control
+p3_L20	7	139	H		239	139	control
+p3_L20	14	180	M	B:150	150	150	target
+p3_L20	15	102	H		161	161	control
+p3_L21	1	114	M	B:104	114	114	target
+p3_L21	2	61	H		61	61	control
+p3_L21	3	72	H		72	72	control
+p3_L21	4	9	H		9	9	control
+p3_L21	5	37	H		37	37	control
+p3_L21	6	21	H		21	21	control
+p3_L21	7	82	H		32	32	control
+p3_L21	8	133	H		133	133	control
+p3_L21	9	144	H		144	144	control
+p3_L21	10	78	H		78	78	control
+p3_L21	11	81	H		81	81	control
+p3_L21	12	151	M	B:251	151	251	target
+p3_L21	13	150	H		150	150	control
+p3_L21	17	118	M	A:-	118	118	target
+p3_L22	1	29	H		29	29	control
+p3_L22	2	101	H		101	101	control
+p3_L22	3	32	H		82	82	control
+p3_L22	4	39	H		39	39	control
+p3_L22	5	25	H		25	25	control
+p3_L22	6	135	H		135	135	control
+p3_L22	7	87	H		87	87	control
+p3_L22	8	21	H		21	21	control
+p3_L22	9	81	H		81	81	control
+p3_L22	10	24	H		24	24	control
+p3_L22	11	85	H		85	85	control
+p3_L22	12	76	H		75	76	control
+p3_L22	13	38	M	B:30	30	30	target
+p3_L22	14	192	H		192	192	control
+p3_L22	15	149	H		149	149	control
+p3_L22	17	84	H		-	-	control
+p3_L22	18	150	H		-	-	control
+p3_L22	19	27	H		-	-	control
+p3_L22	20	114	H		-	-	control
+p3_L22	21	81	H		-	-	control
+p3_L22	22	38	H		-	-	control
+p3_L22	23	21	M	B:-	-	-	target
+p3_L22	24	10	M	B:-	-	-	target
+p3_L22	25	55	M	B:-	-	-	target
+p3_L22	26	150	M	B:-	-	-	target
+p3_L22	27	125	M	B:-	-	-	target
+p3_L23	1	147	H		147	147	control
+p3_L23	2	94	H		94	94	control
+p3_L23	3	51	H		51?	51?	control
+p3_L23	4	28	H		28	28	control
+p3_L23	5	12	H		12	12	control
+p3_L23	6	62	H		62	62	control
+p3_L23	7	24	H		24	24	control
+p3_L23	8	184	H		184	184	control
+p3_L23	16	27	H		27	27	control
+p3_L23	17	84	H		84	84	control
+p3_L23	18	29	H		29	29	control
+p3_L23	19	84	H		84	84	control
+p3_L23	20	85	M	B:-	88	-	target
+p3_L23	21	64	M	B:-	64	-	target
+p3_L23	22	104	M	B:-	104	-	target
+p3_L23	23	73	M	B:-	73	-	target
+p3_L23	24	33	M	B:-	33	-	target
+p3_L24	2	28	M	A:-	-	28	target
+p3_L24	3	7	M	A:-	-	7	target
+p3_L24	4	112	M	A:-	-	112	target
+p3_L24	5	101	M	A:-	-	101	target
+p3_L24	6	72	M	A:-	-	72	target
+p3_L24	7	104	M	A:-	-	104	target
+p3_L24	8	9	M	B:111	9	-	target
+p3_L24	9	79	H		79	79	control
+p3_L24	10	82	H		82	82	control
+p3_L24	11	120	H		120	120	control
+p3_L24	12	62	H		62	62	control
+p3_L24	13	54	H		54	54	control
+p3_L24	14	125	H		125	125	control
+p3_L24	15	130	H		130	136	control
+p3_L24	16	147	H		147	147	control
+p3_L25	1	34	H		34	34	control
+p3_L25	2	78	H		78	78	control
+p3_L25	3	82	H		82	82	control
+p3_L25	4	151	H		151	151	control
+p3_L25	5	140	H		140	140	control
+p3_L25	9	53	M	B:-	53	53	target
+p3_L25	10	90	M	B:-	90	90	target
+p3_L25	11	63	M	B:-	63	63	target
+p3_L25	12	104	M	B:=otte	104	104	target
+p3_L25	13	74	M	B:=Tehussy	74	74	target
+p3_L25	14	34	M	B:77	34	34	target
+p3_L25	15	15	M	B:85	-	-	target
+p3_L25	16	115	M	B:113	-	-	target
+p3_L25	17	61	H		-	-	control
+p3_L25	18	14	H		-	-	control
+p3_L25	19	63	H		-	-	control
+p3_L25	20	23	H		-	-	control
+p3_L26	1	70	H		-	-	control
+p3_L26	2	7	H		7	-	control
+p3_L26	3	4	H		4	-	control
+p3_L26	4	144	H		144	-	control
+p3_L26	5	125	H		125	-	control
+p3_L27	1	111	H		111	111	control
+p3_L27	2	85	H		85	85	control
+p3_L27	3	122	H		122	122	control
+p3_L27	4	26	H		26	26	control
+p3_L27	5	101	H		101	101	control
+p3_L27	6	81	H		81	81	control
+p3_L27	10	150	H		92	-	control
+p3_L27	11	112	H		82	112	control
+p3_L27	12	81	H		133	81	control
+p3_L27	13	37	H		79	38	control
+p3_L27	14	84	H		61	84	control
+p3_L27	15	25	H		129	25	control
+p3_L27	16	145	H		298	148	control
+p3_L28	5	140	H		140	140	control
+p3_L28	6	85	H		85	85	control
+p3_L28	7	50	H		50	50	control
+p3_L28	8	75	M	B:-	75	-	target
+p3_L28	9	76	H		-	-	control
+p3_L29	1	82	H		-	82	control
+p3_L29	2	24	H		-	24	control
+p3_L29	3	144	H		-	144	control
+p3_L29	4	125	H		-	125	control
+p3_L29	8	59	M	B:19	-	39	target
+p3_L29	9	30	H		30	30	control
+p3_L29	10	83	H		83	83	control
+p3_L29	11	124	H		124	124	control
+p3_L29	14	21	M	B:-	21	21	target
+p3_L29	15	81	M	B:-	81	81	target
+p3_L29	16	31	M	B:-	31	31	target
+p3_L29	17	101	M	B:-	101	101	target
+p3_L29	18	22	M	B:-	22	22	target
+p3_L30	1	37	H		-	32	control
+p3_L30	2	24	H		24	24	control
+p3_L30	3	71	H		71	71	control
+p3_L30	4	9	H		9	9	control
+p3_L30	5	38	H		38	38	control
+p3_L30	6	26	H		26	26	control
+p3_L30	7	133	M	B:73	33	33	target
+p3_L30	8	81	H		81	81	control
+p3_L30	9	22	H		22	22	control
+p3_L30	15	85	H		51	85	control
+p3_L30	16	111	H		121	111	control
+p3_L30	17	118	H		127	115	control
+p3_L30	18	81	H		142	81	control
+p3_L30	19	150	H		135	250	control
+p3_L30	20	114	H		79	114	control
+p3_L30	21	83	H		82	83	control
+p3_L31	1	27	H		27	27	control
+p3_L31	2	101	H		101	101	control
+p3_L31	3	61	H		51	61	control
+p3_L31	4	12	H		12	12	control
+p3_L31	5	83	H		83	83	control
+p3_L31	6	23	H		23	23	control
+p3_L31	7	78	H		78	78	control
+p3_L31	8	38	H		38	38	control
+p3_L31	13	79	M	B:-	-	79	target
+p3_L31	14	82	M	B:-	-	82	target
+p3_L31	17	90	H		90	90	control
+p3_L31	18	6	H		6	6	control
+p3_L31	19	24	H		24	24	control
+p3_L31	20	75	H		75	75	control
+p3_L31	21	85	H		83	83	control
+p3_L31	22	25	H		25	25	control
+p3_L31	23	126	H		126	126	control
