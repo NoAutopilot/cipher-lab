@@ -103,3 +103,6 @@ First check whether ciphertext.tsv already is that settled file (git log, NOTES)
 (no fetch); group the ~72 disagreement rows by crop, one Sonnet subagent call per ~20 rows given only the crop paths and the two readings,
 plus your own reconciliation (units: 4 calls + 1 recon = 5 x 1.5 incl. floor). Write ciphertext.tsv with a per-row `settled_by` column;
 rows still split stay marked, never silently repaired (rule 2). No decoding in this job. NOTES section + next step line.
+
+Wave 2 sessions (14:24 UTC): R11A-AVS53 session_01MpRCUCgxYLJCKienJ4nxLe; R11A-HEIN session_01FeNp3N7ZVc64Q1zaSWuBP2; R11A-BOWES2
+session_01B4RSNSFCHKg1DFbL47x42K; R11A-F3789 session_015C49zvPbrq3PRZkSGoDAXM.
