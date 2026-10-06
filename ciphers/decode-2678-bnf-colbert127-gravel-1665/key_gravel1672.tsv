@@ -1,0 +1,118 @@
+# Colbert-Gravel cipher 1672, transcribed cell by cell from S. Tomokiyo's table (cryptiana.web.fc2.com/code/louisxiv0.htm,
+# image louisxiv_0gravel1672.png, snapshot sources/cryptiana/keys/img/), R9-DEC2678C 6 Oct 2026. Credit: Tomokiyo (rule 8).
+# code = number + mark (^ overline, _ underline, ' prime, none plain). Bracketed (inferred by Tomokiyo) cells grade M.
+code	value	grade	source	note
+2^	e	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+6	t	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+8	t	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+9	l	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+19_	r	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+31	g	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	plain cell: attested alphabet value kept; bracketed syllable [fu] dropped
+41	f	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+42	p	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+43	z|je	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	plain-cell collision: alphabet; syllable bracketed
+51	e	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	plain cell: attested alphabet value kept; bracketed syllable [lu] dropped
+60	null	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+61	d	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+62	n	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+63	x	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+71	c	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	plain cell: attested alphabet value kept; bracketed syllable [quu] dropped
+72	m	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+73	u	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+81	b	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+82	l	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	plain cell: attested alphabet value kept; bracketed syllable [ta] dropped
+83	t	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+91	a	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	plain cell: attested alphabet value kept; bracketed syllable [vu] dropped
+92	i	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+93	s	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	alphabet
+12	ba	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+13	be	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+14	bi	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+15	bo	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+16	bu	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+17	ca	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+18	ce	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+19	ci	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+20	co	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+21	cu	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+22_	da	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+23_	de	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+24	di	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+25	do	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+26	du	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+27	fa	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+28	fe	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+29	fi	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+30	fo	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+32	ga	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+33_	ge	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+34	gi	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+35	go	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+36	gu	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+37	ha	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+38	he	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+39	hi	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+40	ho	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+42_	ja	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+44	ji	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+45^	jo	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+46	ju	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+47^	la	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+48^	le	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+49^	li	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+50	lo	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+52_	ma	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+53_	me	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+54	mi	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+55^	mo	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+56	mu	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+57	na	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+58^	ne	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+59^	ni	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+60^	no	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+61_	nu	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+62_	pa	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+63_	pe	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+64	pi	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+65^	po	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+66^	pu	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+67	qua	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+68^	que	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+69^	qui	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+70^	quo	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+72_	ra	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+73_	re	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+74	ri	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+75	ro	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+76	ru	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+77	sa	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+78	se	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+79	si	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+80	so	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+81_	su	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+83_	te	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+84	ti	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+85	to	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+86	tu	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+87	va	M	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable bracketed
+88	ve	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+89	vi	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+90	vo	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	syllable
+5'	<en>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+6'	<est>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+11'	<eux>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+12'	<elle>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+13'	<France>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+14'	<Francfort>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+16'	<faire>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+58'	<austriche>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+61'	<partie>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+62'	<ordinaire>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+63'	<oit>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+64'	<pour>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+74'	<qualite>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+86'	<tout>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+89'	<vienne>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+93'	<vous>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+104'	<traicte>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
+106'	<on>	H	Tomokiyo louisxiv0.htm Colbert-Gravel 1672 (Mel. Colbert 159 f.102)	nomenclature
