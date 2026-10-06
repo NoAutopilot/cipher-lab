@@ -158,3 +158,18 @@ N=363, K=45, same anchor count, a nomenclator of the size you register, injected
 gate pre-registered (PREREG pushed before scoring). Control below gate -> "non-test at this N", stop. Else run the target, judge the candidate
 (tools/judge_plaintext.py, say whether the Italian corpus is era-matched) and the shuffled-target decode through the same judge (ARM-C1).
 No key.tsv beyond M without a verifier. HYPOTHESES.md row with both numbers. Status stays `open` unless rule 5 says otherwise.
+
+## Wave 4 (spawned 10:4x UTC 6 Oct; last wave)
+
+### R10-MANT518 -- sachsstaatsarchiv-manteuffel-1712, glossed frame 0518 (Opus; cap 5, box 70 min)
+Exactly as R10-MANT521, for frame 0518 (R10-MANTSCR's second-ranked frame): 2 blind passes + reconciliation on line crops (pasted), PREREG
+first, per-leaf gate, pooled SP gate with the leaf added. key.tsv at M only; decode --check; verifier flag on any reading change.
+
+### R10-ZESCRIB -- zeschau-seebach-1841, crib-drag of French diplomatic formulae for a near-exact seed (Opus; cap 3.5, box 55 min; disk only)
+R10-ZESBASIN's named next: the word-parse objective ranks the true key first but has no basin, so search needs a seed within ~1 swap. A
+different instrument (rule 3 third-attempt clause: not local search on the same objective): drag a short list of pre-registered French
+dispatch formulae (salutation/closing/date formulae of 1840s Saxon diplomatic French; list fixed in PREREG before scoring) along the pooled
+R5005-R5008 digits under Bourdeau's 7 grade-I values; score each placement by consistency with the syllabary's known values and by the
+objective. Matched control first: the same crib-drag on the synthetic control with its true key hidden -- does a correct placement rank in the
+top k, and does seeding from it reach the true key? Gate pre-registered; control below gate -> non-test, target not run. HYPOTHESES.md row,
+"## R10-ZESCRIB", gaps_check pass. No key beyond M.
