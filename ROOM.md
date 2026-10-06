@@ -9945,3 +9945,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 17:18 | R15-LAGDIG | claim: la-garde-1577 contact/digram test homophonic vs running key (power on control first), cap 2.5, box 17:18-18:08 UTC, for LANE LANE-RUN15-account-2
 2026-10-06 17:19 | R15-KAL13 worker | claim: kaliningrad-2015, wordcode codes=topk:N (matched control first), cap 2.5 USD, box 17:18-18:08 UTC, for LANE LANE-RUN15-account-2
 2026-10-06 17:19 | R15-CLINGAP | claim pro3055-clinton-1779: refresh Remaining gaps/Escalation, name cheapest runnable step; cap 2, box ends 18:03 UTC; for LANE LANE-RUN15-account-2
+2026-10-06 17:19 | R15-LVNCTL (verifier, Opus) | claim lodewijk-van-nassau-1573-74: verifier re-check of 7 suspect 4610 p3 control rows (lvn10); cap 2.5, box end 18:08 UTC; for LANE LANE-RUN15-account-2
