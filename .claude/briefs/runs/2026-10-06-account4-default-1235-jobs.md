@@ -123,3 +123,34 @@ Intake gate: `clair571-estrades-1645: open (line 1) -- edition/page or full-text
 `tools/decode_list.py` (login-free, 1.5-2 s apart, no login) for records 9430, 9431, 9432 (Clair 574/577/580 key records): record the
 descriptive text, dates, language, image counts and any transcription/decipherment flags in keys_decode/listing_9430-9432.tsv and a dated
 "## D4-EST94" NOTES.md section. No login, no image fetch, no key transcription.
+
+## Wave 3 (spawned 13:3x UTC 6 Oct). From here this lane takes folders i-z only (account 1's DEFAULT-1240 lane works a-h), except the
+verifier on this lane's own fr16106 result.
+
+### D4-VIVV -- VERIFIER on fr16106-vivonne-longlee-1579 D4-VIVMOUS (Opus; cap 3.5, box 60 min)
+Intake gate: `fr16106-vivonne-longlee-1579: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+You are not the solver's session and do not protect its conclusion. Claim under audit (NOTES.md "## D4-VIVMOUS"): "Mousset 1912's printed
+Longlee table, through key/crosswalk.tsv, aligns f.101v to the copy f.105r at 0.454 against a value-shuffle p99 of 0.400 (PREREG 49f195080,
+PASS), matched control 5/5; H 328 M 837 I 280; no clause reads." Do: (1) re-run vivmous.py --check and the scored run from the committed
+files; byte-identical numbers or say what differs. (2) Rule 3 checks: was PREREG pushed before the scoring commit (git log order)? Can the
+value-shuffle null vary on the statistic (yes/no, why)? Is the control's error level (e=0.576) the target's measured reader error, and is
+its design the target's? (3) Contamination: the worker saw the copy's first line before writing the crosswalk; re-score with the copy's
+first line (and the cipher span aligned to it) excluded, and with the 9 two-value labels fixed to each single value in turn; report each.
+(4) Check 10 random crosswalk rows against key/mousset1912_plviii_table.jpg / plix and the L01/L02/L05/L12 crops by eye: right glyph?
+(5) Rule 4: are the H grades defensible when sign identity rests on two machine readers at err 0.576? Correct to M where not.
+(6) Depth per rule 4a (D0/D1 expected) and the outward wording. No novelty class is needed (no reading is claimed); if you think one is,
+say why in one line. Write "## D4-VIVV (verifier)" in NOTES.md (and AUDIT.md only if the folder already has one), correct any over-claim in
+the folder's files, flag ROOM. Do not decode further, do not touch other targets.
+
+### D4-SP105 -- sp105-paget-1693, SOAS archives catalogue reachability + item lists of PP MS 4.02.27.01/.28.01 (Sonnet; cap 1, box 30 min)
+Intake gate: pasted at spawn below.
+Folder "## While waiting (RUN4-WAITBF)" action. One reachability test of the SOAS archives catalogue host(s) (curl -w http_code, descriptive
+UA; then tools/browser_fetch.js once if curl is challenged); if it resolves, fetch the item lists of PP MS 4.02.27.01 and .28.01 (Stepney
+1693-94 letters), <= 20 requests >= 2 s apart, and list items that mention cipher/cypher/key/Paget, in a TSV + "## D4-SP105" NOTES.md
+section. If it does not resolve, record the codes and stop (owner-side). Search result only.
+
+### D4-SP99 -- sp99-wotton-1622, SP 99/24-25 Discovery item notes for a numbered-agent list ("159") (Sonnet; cap 1.5, box 40 min)
+Intake gate: `sp99-wotton-1622: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder "Recommended next steps" item (2): with TNA Discovery's API (host table; tools/discovery_items.py if it fits), read the description of
+every item in SP 99/24 and SP 99/25 (not by keyword), and list any that look like a numbered code-name list, a cipher key, or a letter
+using numeric agent names (159 etc.), with Discovery ids, in a TSV + "## D4-SP99" NOTES.md section. Search result only; no status change.
