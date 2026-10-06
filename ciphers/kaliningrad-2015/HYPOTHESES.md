@@ -764,3 +764,36 @@ Reading by the pre-registered rules:
   -1.765, within 0.1 of the target: by the pre-registered rule **the target's score licenses nothing either way** --
   the decode is not separated from a decode of the same signs in random order. Not a control-backed negative; no
   reading. Conditional on Ernst's transcript.
+
+## R10-KAL7, lexicon word-segmentation coverage vs the shuffled-target decode (6 Oct 2026) -- second instrument on S3'
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run10-jobs.md` "R10-KAL7" (LANE-RUN10, account 2). The instrument R9-KAL6
+named after the ru19_soft n-gram judge could not tell the S3' two-stage decode (-1.733) from its shuffle (-1.765) at
+N 978. This is the **second instrument on the S3' design** (first: the ru19_soft n-gram judge, R9-KAL6). Disk and CPU only.
+
+**Pre-registration (committed and pushed before any scored run).**
+- Decoder: R9-KAL6's unit unchanged except the training corpus -- `tools/families/homophonic.solve`, profile=target,
+  alphabet=ru-s3p-soft, soft=two-stage, restarts 20, solve seed 1, convention A (ciphertext_signs.tsv, N 978, K 36) --
+  trained on the S3'-soft Synodal Bible **without the New Testament** (books 40-66; 51 files, 2,721,313 letters), driver
+  `ciphers/kaliningrad-2015/scripts/lexseg.py` (reproduce command in its docstring).
+- Lexicon (held out from every corpus the decoder used): word types of the NT books 40-66 in the same S3'-soft
+  transliteration, length >= 4, occurring >= 2 times: 7,586 types (from 16,491 types, 129,682 tokens);
+  `tools/data/ru19_soft/lexseg/lexicon_NT_s3p_soft_len4_min2.txt`.
+- Statistic: coverage = the largest number of decode letters covered by non-overlapping lexicon words (DP, per message
+  line, case-sensitive) / all decode letters.
+- Null: the target shuffled with family_run.py's own `--shuffle-target` procedure, RNG seeds 1-50, each decoded by the
+  identical pipeline; gate value G = the 95th percentile of those 50 coverages (sorted ascending, the 48th value).
+- Positive control FIRST: synthetic windows of the target's N, K and sign-count profile (homophonic.make_control,
+  profile=target, seeds 1-5, plaintext drawn from the NT-free training corpus, decoder trained on the window-removed
+  rest) through the same decoder; and that synthetic's own shuffle null (synthetic seed 1, its signs shuffled with RNG
+  seeds 1-20, same pipeline), p95 G_s. The control passes only if at least 4 of 5 synthetic coverages exceed both G and
+  G_s and their mean exceeds both. Otherwise CONTROL BELOW GATE: the target is not scored, logged as a non-test.
+- Rule-3 orthogonality check: coverage is computed from the decoded letter order, which a shuffle of the sign order
+  changes, so the shuffled control can differ from the target on this statistic; the G_s-vs-synthetic comparison shows
+  whether it does in fact.
+- Reading rules: target coverage > G = "decode separates from its own shuffle on a held-out lexicon" -- worth a
+  verifier, not a reading, no text described (rule 7 re-derivation and the judge owed). Target <= G with the control
+  passed = a control-backed negative for the S3' two-stage homophonic design on this statistic (conditional on Ernst's
+  transcript, convention A and the Bible-register lexicon). Secondary (not gating): coverage at word length >= 5.
+- Unscored build check before this registration: one synthetic window (seed 1) decoded once to time the driver (33 s;
+  recovery 0.961, coverage 0.444). Disclosed, not used to set G or the gate.
