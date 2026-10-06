@@ -1057,6 +1057,7 @@ cells from different key lines, not a slip from "Darby" = 11-6 11-8 11-7 1-1 16-
 sentence "the p.385 'Darby' is the decipherer's or copyist's error": this is a rule-4 data conflict -- cipher (sender side) DIGBY,
 period decipherment p.385 (recipient side) DARBY, 1871 print Digby -- recorded by witness, not settled.] `passes/p385_reading.txt`
 keeps "Darby" (it transcribes the decipherment). No reading change; no SECOND-OPINIONS row to propagate.
+
 ## R10-CLIN3868B (6 Oct 2026, account 2, LANE RUN10): 3868 cipher pp.383-384 checked against the decipherment on the 1778 key
 
 Run 07:58-08:08 UTC 6 Oct 2026 (clock read). Step: gap 3's named next after R10-CLIN3868. Pre-registered in
