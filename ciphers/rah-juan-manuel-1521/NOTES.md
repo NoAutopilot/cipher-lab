@@ -360,3 +360,27 @@ Result: **no digital record found for A.23 (= RAH sig. 9/23) ff.34-37; not locat
 - POSITIVE CONTROL: `"Salazar y Castro, 20630"` finds that record (302 to ficha, signatura 9/289). NEGATIVE: the same exact-phrase form for Índice nos. 2937, 2938, 2922, 2921, 2929 (A-23), 2391 (A-19), 6428, 6501 (A-42), 1000: "No hay ningún registro". Free-text "Juan Manuel embajador Roma 1522", '"Juan Manuel" cifra', "embajador Roma cifra", "descifrado", "Texto descifrado del documento anterior", "Signatura anterior: A-23": 0 hits; "9/23" bare = 991 noise hits (Isabel II, Pezuela), not a signatura filter. Caveat: the control is one record (D-series); the A-series numbering of digitised records is untested beyond those nine numbers.
 - Not done: Kolosova 2017/2024 (Teseo PDF fails TLS from the cloud, L17 row stands); RAH holding-catalogue availability flag for 9/23 (not on the digital site; ask the RAH library, biblioteca@rah.es as printed on the digital site's footer 4 Oct 2026). Requests (bibliotecadigital.rah.es): OAI 3, search POSTs 24, ficha 2, one connection reset (one retry).
 - Consequence for gap 3 (R9501 period decipherment): no online route; the next step is a reproduction request for A.23 ff.34-38 (outreach/ draft is the owner's, not drafted here) or the RAH's own catalogue flag.
+
+## Sorter hand-on check (R9-RJMSORT, 6 Oct 2026, 05:19-05:2x UTC)
+The RUN1-SEG sorter was handed on; the gap line "not yet published" was stale. ROOM.md 4 Oct 2026 01:04 (RUN1-SEG flag) -> ASKS.md row 138 (account 3,
+4 Oct 2026): published at https://claude.ai/artifact/YC3XqFjy3UbbbmGdF6Kkp9; HUMAN-TX-ASKS.tsv row 16 (21 "Check these first" tiles, 1,781 signs);
+ROOM.md 5 Oct 2026 22:53 (account-3 orchestrator): this link opens in the owner's account view. No rebuild, no preflight re-run, no tile check (the brief
+gated those on the sorter never having been handed on). Template commit 09b452df4 (6 Oct) changed only the fix-the-cut close-up (quad warp, Enter saves a
+cut); the published sheet predates it. A republish against the current template is optional and belongs to account 3; it was not done here.
+
+## Remaining gaps (R9-RJMSORT, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S) and R9528 f.194 (249 code words, 161 matched by the gloss); letter alphabet 13 signs valued in sample (6 at C), 0 at S; CSP Spain II abstracts located for 16 of 28 records (csp_date_map.tsv)
+- Letter alphabet held out - blocker: waiting-on: ASKS.md row 138 (the owner's sort of the published sorter, HUMAN-TX-ASKS row 16); test 1 FAILed its gate at reader error 0.42 with an unstable label set; after the sort: sign_sorter_apply.py, a label-anchored f.199 pass, then rerun scripts/test1.py's held-out branch with the gate unchanged, ~$4
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, err_true unmeasured) - blocker: not-attempted; two passes only; next: reconciliation pass from the image on the 88 + 114 split symbol tokens (disagreements listed by line in the reconciled TSVs as ~), ~$3
+- R9501 (no period decipherment in DECODE) passes and key test (job 2b) - blocker: not-attempted; next: two blind passes on R9501 f.34 with the same inventory, decode with alphabet.tsv + Tomokiyo, judge, ~$5 (only worth running after the held-out gate passes); the period decipherment is catalogued at Salazar A.23 ff.37-38 (RUN3-RJM2), not online; a reproduction request would make R9501 a key-source item
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, Premise check 2); without it every reading stays a cryptanalytic result
+
+## Escalation (R9-RJMSORT, 6 Oct 2026)
+- [ ] siblings: planned step: compare with Sanchez records of equal length (ciphers/rah-salazar-soria-sanchez-1524-28, Bourdeau sanchez1522) for symbol-shape and table fit
+- [x] clear-pages: f.197 read to line 31 and f.201 read whole (single Sonnet pass); f.199's own clear lines identified
+- [x] known-keys: Tomokiyo's nomenclator run on R9528 and R9529 (anchors 161/249 and 44/117 code words)
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out gate FAIL at this transcription error
+- [x] image-check: R9528 and R9529 full-size images fetched 4 Oct 2026 (sha1 in images/manifest.json), crops and overlays checked
+- [ ] retry: planned step: the reconciliation pass on the split symbol tokens (~$3) while the owner's sort (ASKS 138) is pending; the held-out gate reruns on the settled labels
+Verdict: keep going: 2 internal gaps; the alphabet gap waits on ASKS 138; cheapest next: reconciliation pass on the 88 + 114 split symbol tokens ~$3
