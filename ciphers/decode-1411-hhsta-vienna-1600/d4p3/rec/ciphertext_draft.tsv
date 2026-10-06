@@ -1,0 +1,329 @@
+line	position	sign	gloss	confidence	alt	why
+p3L_L01	1	58		H		agree
+p3L_L01	2	81		H		agree
+p3L_L01	3	13		H		agree
+p3L_L01	4	89		H		agree
+p3L_L01	5	50		M		agree-flagged
+p3L_L01	6	52		M		agree-flagged
+p3L_L01	7	72		M		agree-flagged
+p3L_L01	8	94		M		agree-flagged
+p3L_L01	9	20		M		agree-flagged
+p3L_L01	10	83		M		agree-flagged
+p3L_L01	11	66		M		agree-flagged
+p3L_L02	1	8		M		agree-flagged
+p3L_L02	2	69		H		agree
+p3L_L02	3	24		H		agree
+p3L_L02	4	11		H		agree
+p3L_L02	5	57		M		agree-flagged
+p3L_L02	6	89		H		agree
+p3L_L02	7	60		H		agree
+p3L_L02	8	42		H		agree
+p3L_L02	9	87		M		agree-flagged
+p3L_L02	10	22		H		agree
+p3L_L02	11	47		M		agree-flagged
+p3L_L02	12	93		M		agree-flagged
+p3L_L03	1	89		H		agree
+p3L_L03	2	29		M		agree-flagged
+p3L_L03	3	77		M		agree-flagged
+p3L_L03	4	39		H		agree
+p3L_L03	5	53		H		agree
+p3L_L03	6	41		H		agree
+p3L_L03	7	8		M		agree-flagged
+p3L_L03	8	85		M		agree-flagged
+p3L_L03	9	24		M		agree-flagged
+p3L_L03	10	83		M	B:63	differ
+p3L_L03	11	3		M		agree-flagged
+p3L_L04	1	5		H		agree
+p3L_L04	2	17		M		agree-flagged
+p3L_L04	3	48		M		agree-flagged
+p3L_L04	4	81		H		agree
+p3L_L04	5	20		H		agree
+p3L_L04	6	32		M		agree-flagged
+p3L_L04	7	96		M	B:90	differ
+p3L_L04	8	11		M		agree-flagged
+p3L_L04	9	79		M		agree-flagged
+p3L_L05	1	18		H		agree
+p3L_L05	2	88		H		agree
+p3L_L05	3	67		M		agree-flagged
+p3L_L05	4	53		H		agree
+p3L_L05	5	11		H		agree
+p3L_L05	6	65		M		agree-flagged
+p3L_L05	7	9		H		agree
+p3L_L05	8	34		M		agree-flagged
+p3L_L05	9	24		M		agree-flagged
+p3L_L05	10	33		M		agree-flagged
+p3L_L05	11	94		M		agree-flagged
+p3L_L05	12	25		M		agree-flagged
+p3L_L05	13	90		H		agree
+p3L_L05	14	83		M	B:63	differ
+p3L_L06	1	7		M		agree-flagged
+p3L_L06	2	36		H		agree
+p3L_L06	3	83		H		agree
+p3L_L06	4	78		M	B:28	differ
+p3L_L06	5	23		M		agree-flagged
+p3L_L06	6	70		M		agree-flagged
+p3L_L06	7	79		M		agree-flagged
+p3L_L06	8	28		M		agree-flagged
+p3L_L06	9	88		M		agree-flagged
+p3L_L07	1	67		M		agree-flagged
+p3L_L07	2	81		H		agree
+p3L_L07	3	45		M		agree-flagged
+p3L_L07	4	56		M		agree-flagged
+p3L_L07	5	9		H		agree
+p3L_L07	6	#		H		agree
+p3L_L07	7	53		M		agree-flagged
+p3L_L07	8	29		M		agree-flagged
+p3L_L07	9	89		M		agree-flagged
+p3L_L07	10	36		M		agree-flagged
+p3L_L08	1	57		M		agree-flagged
+p3L_L08	2	60		M		agree-flagged
+p3L_L08	3	40		M		agree-flagged
+p3L_L08	4	13		M		agree-flagged
+p3L_L08	5	96		M		agree-flagged
+p3L_L08	6	65		M		agree-flagged
+p3L_L08	7	35		M		agree-flagged
+p3L_L08	8	33		M		agree-flagged
+p3L_L08	9	26		M		agree-flagged
+p3L_L08	10	77		M		agree-flagged
+p3L_L08	11	39		M		agree-flagged
+p3L_L08	12	83		M	B:63	differ
+p3L_L09	1	81		H		agree
+p3L_L09	2	17		M		agree-flagged
+p3L_L09	3	22		H		agree
+p3L_L09	4	95		M		agree-flagged
+p3L_L09	5	57		M		agree-flagged
+p3L_L09	6	60		M		agree-flagged
+p3L_L09	7	95		M		agree-flagged
+p3L_L09	8	18		M		agree-flagged
+p3L_L09	9	69		M		agree-flagged
+p3L_L09	10	92		M		agree-flagged
+p3L_L09	11	75		M	B:25	differ
+p3L_L09	12	29		M		agree-flagged
+p3R_L01	1	4		H		agree
+p3R_L02	1	6		M		agree-flagged
+p3R_L02	2	77		M		agree-flagged
+p3R_L02	3	15		M		agree-flagged
+p3R_L02	4	40		M		agree-flagged
+p3R_L02	5	36		M		agree-flagged
+p3R_L02	6	24		M		agree-flagged
+p3R_L02	7	84		M		agree-flagged
+p3R_L02	8	5		M		agree-flagged
+p3R_L02	9	21		M		agree-flagged
+p3R_L02	10	40		M		agree-flagged
+p3R_L02	11	18		M		agree-flagged
+p3R_L03	1	88		H		agree
+p3R_L03	2	90		H		agree
+p3R_L03	3	#		M	B:-	gap
+p3R_L03	4	79		M		agree-flagged
+p3R_L03	5	24		H		agree
+p3R_L03	6	93		H		agree
+p3R_L03	7	37		M		agree-flagged
+p3R_L03	8	70		M	B:20	differ
+p3R_L03	9	9		H		agree
+p3R_L03	10	20		H		agree
+p3R_L03	11	21		M		agree-flagged
+p3R_L04	1	4		M	B:-	gap
+p3R_L04	2	70		M	B:20	differ
+p3R_L04	3	23		H		agree
+p3R_L04	4	47		M		agree-flagged
+p3R_L04	5	64		M		agree-flagged
+p3R_L04	6	6		H		agree
+p3R_L04	7	45		M		agree-flagged
+p3R_L04	8	96		H		agree
+p3R_L04	9	79		M		agree-flagged
+p3R_L04	10	38		M		agree-flagged
+p3R_L04	11	81		H		agree
+p3R_L04	12	65		M		agree-flagged
+p3R_L05	1	99		M	B:94	differ
+p3R_L05	2	49		H		agree
+p3R_L05	3	37		M		agree-flagged
+p3R_L05	4	21		H		agree
+p3R_L05	5	44		M		agree-flagged
+p3R_L05	6	13		M	B:23	differ
+p3R_L05	7	79		M	B:29	differ
+p3R_L05	8	60		H		agree
+p3R_L06	1	14		H		agree
+p3R_L06	2	81		H		agree
+p3R_L06	3	85		M		agree-flagged
+p3R_L06	4	17		H		agree
+p3R_L06	5	52		M		agree-flagged
+p3R_L06	6	28		H		agree
+p3R_L06	7	88		H		agree
+p3R_L06	8	64		H		agree
+p3R_L06	9	60		H		agree
+p3R_L06	10	20		H		agree
+p3R_L07	1	78		M		agree-flagged
+p3R_L07	2	57		M		agree-flagged
+p3R_L07	3	23		H		agree
+p3R_L07	4	21		M		agree-flagged
+p3R_L07	5	33		M		agree-flagged
+p3R_L07	6	39		M		agree-flagged
+p3R_L07	7	64		M		agree-flagged
+p3R_L08	1	24		H		agree
+p3R_L08	2	30		H		agree
+p3R_L08	3	87		M		agree-flagged
+p3R_L08	4	21		H		agree
+p3R_L08	5	44		H		agree
+p3R_L08	6	29		M	B:24	differ
+p3R_L08	7	96		M		agree-flagged
+p3R_L08	8	20		H		agree
+p3R_L08	9	81		H		agree
+p3R_L08	10	64		M		agree-flagged
+p3R_L08	11	47		M	B:49	differ
+p3R_L08	12	66		H		agree
+p3R_L08	13	92		M		agree-flagged
+p3R_L08	14	9		M		agree-flagged
+p3R_L08	15	89		M	B:84	differ
+p3R_L09	1	97		M		agree-flagged
+p3R_L09	2	13		M		agree-flagged
+p3R_L09	3	69		M	B:64	differ
+p3R_L09	4	36		H		agree
+p3R_L09	5	53		M		agree-flagged
+p3R_L09	6	28		M		agree-flagged
+p3R_L09	7	33		M		agree-flagged
+p3R_L09	8	17		H		agree
+p3R_L10	1	34		M		agree-flagged
+p3R_L10	2	81		M		agree-flagged
+p3R_L10	3	63		M		agree-flagged
+p3R_L11	1	8		M		agree-flagged
+p3R_L11	2	76		M	B:-	gap
+p3R_L11	3	28		M	B:71	differ
+p3R_L14	1	4		H		agree
+p3R_L14	2	31		H		agree
+p3R_L14	3	90		H		agree
+p3R_L14	4	44		M		agree-flagged
+p3R_L14	5	82		M		agree-flagged
+p3R_L14	6	27		H		agree
+p3R_L14	7	15		M		agree-flagged
+p3R_L14	8	80		M		agree-flagged
+p3R_L14	9	18		H		agree
+p3R_L16	1	24		M	B:25	differ
+p3R_L16	2	45		M	B:47	differ
+p3R_L16	3	64		M		agree-flagged
+p3R_L16	4	84		H		agree
+p3R_L16	5	9		H		agree
+p3R_L16	6	61		M		agree-flagged
+p3R_L16	7	40		H		agree
+p3R_L17	1	42		M		agree-flagged
+p3R_L17	2	45		M	B:-	gap
+p3R_L17	3	92		M	B:97	differ
+p3R_L17	4	31		H		agree
+p3R_L17	5	77		M	B:72	differ
+p3R_L18	1	21		M		agree-flagged
+p3R_L19	1	13		H		agree
+p3R_L19	2	49		M		agree-flagged
+p3R_L19	3	53		M		agree-flagged
+p3R_L19	4	25		M	B:-	gap
+p3R_L19	5	87		M		agree-flagged
+p3R_L19	6	17		H		agree
+p3R_L19	7	46		H		agree
+p3R_L19	8	23		H		agree
+p3R_L19	9	81		H		agree
+p3R_L19	10	64		M	B:65	differ
+p3R_L20	1	59		M		agree-flagged
+p3R_L20	2	72		M		agree-flagged
+p3R_L20	3	94		M		agree-flagged
+p3R_L20	4	23		H		agree
+p3R_L20	5	45		M	B:48	differ
+p3R_L20	6	66		H		agree
+p3R_L20	7	94		M		agree-flagged
+p3R_L21	1	29	p?	H		agree
+p3R_L21	2	69	z?	M		agree-flagged
+p3R_L21	3	33	c?	H		agree
+p3R_L21	4	#	a?	M		agree-flagged
+p3R_L21	5	43	p?	M		agree-flagged
+p3R_L21	6	43	a?	M		agree-flagged
+p3R_L21	7	69	z?	M		agree-flagged
+p3R_L21	8	5	a?	M		agree-flagged
+p3R_L21	9	71	a?	M		agree-flagged
+p3R_L21	10	42		M		agree-flagged
+p3R_L21	11	93		M		agree-flagged
+p3R_L21	12	13		M		agree-flagged
+p3R_L21	13	9		M		agree-flagged
+p3R_L21	14	8		M	A:-	gap
+p3R_L22	1	64		H		agree
+p3R_L22	2	33		H		agree
+p3R_L22	3	54		M	B:-	gap
+p3R_L22	4	66		H		agree
+p3R_L22	5	25		M	B:-	gap
+p3R_L22	6	89		M		agree-flagged
+p3R_L22	7	6		H		agree
+p3R_L22	8	90		H		agree
+p3R_L22	9	21		H		agree
+p3R_L22	10	55		M		agree-flagged
+p3R_L22	11	12		H		agree
+p3R_L23	1	79		M	B:29	differ
+p3R_L23	2	48		M		agree-flagged
+p3R_L23	3	58		M		agree-flagged
+p3R_L23	4	16		M		agree-flagged
+p3R_L23	5	90		H		agree
+p3R_L25	1	60		H		agree
+p3R_L25	2	90		H		agree
+p3R_L25	3	24		H		agree
+p3R_L25	4	63		H		agree
+p3R_L25	5	14		M		agree-flagged
+p3R_L25	6	81		H		agree
+p3R_L25	7	26		M		agree-flagged
+p3R_L25	8	77		M		agree-flagged
+p3R_L25	9	13		H		agree
+p3R_L25	10	65		M		agree-flagged
+p3R_L25	11	29		H		agree
+p3R_L25	12	31		H		agree
+p3R_L25	13	36		H		agree
+p3R_L25	14	21		H		agree
+p3R_L26	1	9		M		agree-flagged
+p3R_L26	2	47		M		agree-flagged
+p3R_L26	3	72		M		agree-flagged
+p3R_L26	4	61		M		agree-flagged
+p3R_L26	5	48		M		agree-flagged
+p3R_L26	6	9		M	B:97	differ
+p3R_L26	7	94		M		agree-flagged
+p3R_L27	1	10		H		agree
+p3R_L27	2	52		M		agree-flagged
+p3R_L27	3	13		H		agree
+p3R_L27	4	48		M		agree-flagged
+p3R_L27	5	8		H		agree
+p3R_L27	6	71		M		agree-flagged
+p3R_L28	1	20		M		agree-flagged
+p3R_L28	2	47		M		agree-flagged
+p3R_L28	3	24		M		agree-flagged
+p3R_L28	4	29		M		agree-flagged
+p3R_L28	5	44		M	B:48	differ
+p3R_L28	6	33		H		agree
+p3R_L28	7	14		M		agree-flagged
+p3R_L28	8	21		M		agree-flagged
+p3R_L28	9	29		M		agree-flagged
+p3R_L28	10	96		M		agree-flagged
+p3R_L28	11	47		M		agree-flagged
+p3R_L28	12	68		H		agree
+p3R_L29	1	18		M		agree-flagged
+p3R_L29	2	71		M		agree-flagged
+p3R_L29	3	12		M		agree-flagged
+p3R_L30	1	15		H		agree
+p3R_L31	1	10		M		agree-flagged
+p3R_L31	2	57		M	B:-	gap
+p3R_L31	3	37		M		agree-flagged
+p3R_L31	4	64		M		agree-flagged
+p3R_L31	5	8		M		agree-flagged
+p3R_L31	6	12		M		agree-flagged
+p3R_L31	7	90		M		agree-flagged
+p3R_L31	8	60		M		agree-flagged
+p3R_L31	9	81		M		agree-flagged
+p3R_L31	10	17		M		agree-flagged
+p3R_L32	1	22		H		agree
+p3R_L32	2	51		M	B:-	gap
+p3R_L32	3	87		M	B:84	differ
+p3R_L32	4	78		M	B:48	differ
+p3R_L32	5	90		M		agree-flagged
+p3R_L32	6	83		M		agree-flagged
+p3R_L32	7	17		M		agree-flagged
+p3R_L33	1	67	p	M		agree-flagged
+p3R_L33	2	72	a	M		agree-flagged
+p3R_L33	3	78	s	M	B:98	differ
+p3R_L34	1	6		H		agree
+p3R_L34	2	3		H		agree
+p3R_L36	1	36	h?	H		agree
+p3R_L36	2	18	o?	M		agree-flagged
+p3R_L36	3	87	l?	M		agree-flagged
+p3R_L36	4	62	d?	M		agree-flagged
+p3R_L36	5	81	e?	M		agree-flagged

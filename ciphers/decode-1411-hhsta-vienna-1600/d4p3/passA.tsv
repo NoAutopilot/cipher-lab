@@ -1,0 +1,333 @@
+line	pos	token	gloss	note
+p3L_L01	1	58		
+p3L_L01	2	81		
+p3L_L01	3	13		
+p3L_L01	4	89		
+p3L_L01	5	50?		
+p3L_L01	6	52		
+p3L_L01	7	72?		
+p3L_L01	8	94		
+p3L_L01	9	20		
+p3L_L01	10	83?		
+p3L_L01	11	66?		
+p3L_L02	1	8		intext
+p3L_L02	2	69		
+p3L_L02	3	24		
+p3L_L02	4	11		
+p3L_L02	5	57?		
+p3L_L02	6	89		
+p3L_L02	7	60		
+p3L_L02	8	42		
+p3L_L02	9	87		
+p3L_L02	10	22		
+p3L_L02	11	47?		
+p3L_L02	12	93		
+p3L_L03	1	89		
+p3L_L03	2	29		
+p3L_L03	3	77?		
+p3L_L03	4	39		
+p3L_L03	5	53		
+p3L_L03	6	41		
+p3L_L03	7	8		
+p3L_L03	8	85		
+p3L_L03	9	24		
+p3L_L03	10	83		
+p3L_L03	11	3?		
+p3L_L04	1	5		
+p3L_L04	2	17		
+p3L_L04	3	48		
+p3L_L04	4	81		
+p3L_L04	5	20		
+p3L_L04	6	32		
+p3L_L04	7	96		
+p3L_L04	8	11		
+p3L_L04	9	79?		
+p3L_L05	1	18		
+p3L_L05	2	88		
+p3L_L05	3	67?		
+p3L_L05	4	53		
+p3L_L05	5	11		
+p3L_L05	6	65		
+p3L_L05	7	9		
+p3L_L05	8	34		
+p3L_L05	9	24		
+p3L_L05	10	33		
+p3L_L05	11	94		
+p3L_L05	12	25		
+p3L_L05	13	90		
+p3L_L05	14	83?		
+p3L_L06	1	7?		
+p3L_L06	2	36		
+p3L_L06	3	83		
+p3L_L06	4	78?		
+p3L_L06	5	23		
+p3L_L06	6	70?		
+p3L_L06	7	79?		
+p3L_L06	8	28?		
+p3L_L06	9	88		
+p3L_L07	1	67?		
+p3L_L07	2	81		
+p3L_L07	3	45		
+p3L_L07	4	56?		
+p3L_L07	5	9		
+p3L_L07	6	#		circled cross
+p3L_L07	7	53		
+p3L_L07	8	29?		
+p3L_L07	9	89		
+p3L_L07	10	36		
+p3L_L08	1	57?		
+p3L_L08	2	60		
+p3L_L08	3	40		
+p3L_L08	4	13		
+p3L_L08	5	96?		
+p3L_L08	6	65?		
+p3L_L08	7	35		
+p3L_L08	8	33		
+p3L_L08	9	26?		
+p3L_L08	10	77?		
+p3L_L08	11	39		
+p3L_L08	12	83?		
+p3L_L09	1	81		
+p3L_L09	2	17		
+p3L_L09	3	22		
+p3L_L09	4	95		
+p3L_L09	5	57?		
+p3L_L09	6	60		
+p3L_L09	7	95		
+p3L_L09	8	18		
+p3L_L09	9	69		
+p3L_L09	10	92		
+p3L_L09	11	75?		
+p3L_L09	12	29		
+p3R_L01	1	4		intext
+p3R_L02	1	6		
+p3R_L02	2	77?		
+p3R_L02	3	15		
+p3R_L02	4	40		
+p3R_L02	5	36		
+p3R_L02	6	24		
+p3R_L02	7	84		
+p3R_L02	8	5		
+p3R_L02	9	21?		
+p3R_L02	10	40?		
+p3R_L02	11	18?		
+p3R_L03	1	88		
+p3R_L03	2	90		
+p3R_L03	3	#		e-like sign after 90
+p3R_L03	4	79?		
+p3R_L03	5	24		
+p3R_L03	6	93		
+p3R_L03	7	37?		
+p3R_L03	8	70?		
+p3R_L03	9	9		
+p3R_L03	10	20		
+p3R_L03	11	21?		after word; may be intext
+p3R_L04	1	4?		cross-like first sign
+p3R_L04	2	70?		
+p3R_L04	3	23		
+p3R_L04	4	47?		
+p3R_L04	5	64?		
+p3R_L04	6	6		
+p3R_L04	7	45?		
+p3R_L04	8	96		
+p3R_L04	9	79?		
+p3R_L04	10	38		
+p3R_L04	11	81		
+p3R_L04	12	65		
+p3R_L05	1	99?		
+p3R_L05	2	49		
+p3R_L05	3	37		
+p3R_L05	4	21		
+p3R_L05	5	44?		struck through
+p3R_L05	6	13?		
+p3R_L05	7	79?		
+p3R_L05	8	60		
+p3R_L06	1	14		
+p3R_L06	2	81		
+p3R_L06	3	85?		
+p3R_L06	4	17		
+p3R_L06	5	52?		
+p3R_L06	6	28		
+p3R_L06	7	88		
+p3R_L06	8	64		
+p3R_L06	9	60		
+p3R_L06	10	20		
+p3R_L07	1	78		
+p3R_L07	2	57		
+p3R_L07	3	23		
+p3R_L07	4	21		
+p3R_L07	5	33		
+p3R_L07	6	39		
+p3R_L07	7	64?		
+p3R_L08	1	24		
+p3R_L08	2	30		
+p3R_L08	3	87?		
+p3R_L08	4	21		
+p3R_L08	5	44		
+p3R_L08	6	29		
+p3R_L08	7	96		
+p3R_L08	8	20		
+p3R_L08	9	81		
+p3R_L08	10	64?		
+p3R_L08	11	47?		
+p3R_L08	12	66		
+p3R_L08	13	92		
+p3R_L08	14	9?		
+p3R_L08	15	89?		
+p3R_L09	1	97		
+p3R_L09	2	13		
+p3R_L09	3	69		
+p3R_L09	4	36		
+p3R_L09	5	53		
+p3R_L09	6	28?		
+p3R_L09	7	33?		
+p3R_L09	8	17		
+p3R_L10	1	34?		
+p3R_L10	2	81		
+p3R_L10	3	63		
+p3R_L11	1	8		
+p3R_L11	2	76?		
+p3R_L11	3	28?		
+p3R_L12	1	-		
+p3R_L13	1	-		
+p3R_L14	1	4		intext (list numeral)
+p3R_L14	2	31		
+p3R_L14	3	90		
+p3R_L14	4	44?		
+p3R_L14	5	82		
+p3R_L14	6	27		
+p3R_L14	7	15		
+p3R_L14	8	80		
+p3R_L14	9	18		
+p3R_L15	1	-		
+p3R_L16	1	24?		
+p3R_L16	2	45?		
+p3R_L16	3	64?		
+p3R_L16	4	84		
+p3R_L16	5	9		
+p3R_L16	6	61		
+p3R_L16	7	40		
+p3R_L17	1	42		
+p3R_L17	2	45?		
+p3R_L17	3	92?		
+p3R_L17	4	31		
+p3R_L17	5	77?		
+p3R_L18	1	21		intext?
+p3R_L19	1	13		intext (date "den 13. oct")
+p3R_L19	2	49		
+p3R_L19	3	53		
+p3R_L19	4	25?		
+p3R_L19	5	87?		
+p3R_L19	6	17		
+p3R_L19	7	46		
+p3R_L19	8	23		
+p3R_L19	9	81		
+p3R_L19	10	64?		
+p3R_L20	1	59?		
+p3R_L20	2	72		
+p3R_L20	3	94		
+p3R_L20	4	23		
+p3R_L20	5	45?		
+p3R_L20	6	66		
+p3R_L20	7	94		
+p3R_L21	1	29	p?	
+p3R_L21	2	69	z?	
+p3R_L21	3	33	c?	
+p3R_L21	4	#?	a?	struck-through number
+p3R_L21	5	43	p?	
+p3R_L21	6	43	a?	
+p3R_L21	7	69	z?	
+p3R_L21	8	5?	a?	
+p3R_L21	9	71?		
+p3R_L21	10	42?		
+p3R_L21	11	93		
+p3R_L21	12	13		
+p3R_L21	13	9?		
+p3R_L22	1	64		
+p3R_L22	2	33		
+p3R_L22	3	54?		
+p3R_L22	4	66		
+p3R_L22	5	25?		
+p3R_L22	6	89		
+p3R_L22	7	6		
+p3R_L22	8	90		
+p3R_L22	9	21		
+p3R_L22	10	55?		
+p3R_L22	11	12		
+p3R_L23	1	79?		
+p3R_L23	2	48?		
+p3R_L23	3	58?		
+p3R_L23	4	16		
+p3R_L23	5	90		
+p3R_L24	1	-		
+p3R_L25	1	60		
+p3R_L25	2	90		
+p3R_L25	3	24		
+p3R_L25	4	63		
+p3R_L25	5	14?		
+p3R_L25	6	81		
+p3R_L25	7	26		
+p3R_L25	8	77?		
+p3R_L25	9	13		
+p3R_L25	10	65?		
+p3R_L25	11	29		
+p3R_L25	12	31		
+p3R_L25	13	36		
+p3R_L25	14	21		
+p3R_L26	1	9?		
+p3R_L26	2	47?		
+p3R_L26	3	72		
+p3R_L26	4	61		
+p3R_L26	5	48		
+p3R_L26	6	9?		partly overwritten
+p3R_L26	7	94		
+p3R_L27	1	10		
+p3R_L27	2	52?		
+p3R_L27	3	13		
+p3R_L27	4	48		
+p3R_L27	5	8		
+p3R_L27	6	71		
+p3R_L28	1	20?		
+p3R_L28	2	47		
+p3R_L28	3	24		
+p3R_L28	4	29		
+p3R_L28	5	44?		
+p3R_L28	6	33		
+p3R_L28	7	14		
+p3R_L28	8	21		
+p3R_L28	9	29		
+p3R_L28	10	96		
+p3R_L28	11	47?		
+p3R_L28	12	68		
+p3R_L29	1	18		
+p3R_L29	2	71		
+p3R_L29	3	12		
+p3R_L30	1	15		intext (date "den 15.")
+p3R_L31	1	10?		gloss letters above line, illegible
+p3R_L31	2	57?		
+p3R_L31	3	37?		
+p3R_L31	4	64		
+p3R_L31	5	8		
+p3R_L31	6	12		
+p3R_L31	7	90		
+p3R_L31	8	60		
+p3R_L31	9	81		
+p3R_L31	10	17		
+p3R_L32	1	22		gloss letters above line, illegible
+p3R_L32	2	51?		
+p3R_L32	3	87		
+p3R_L32	4	78?		
+p3R_L32	5	90		
+p3R_L32	6	83		
+p3R_L32	7	17		
+p3R_L33	1	67?	p	
+p3R_L33	2	72?	a	
+p3R_L33	3	78?	s	heavy smudged
+p3R_L34	1	6		intext (lit. 6)
+p3R_L34	2	3		intext (n. 3)
+p3R_L35	1	-		
+p3R_L36	1	36	h?	
+p3R_L36	2	18	o?	
+p3R_L36	3	87	l?	
+p3R_L36	4	62	d?	
+p3R_L36	5	81	e?	

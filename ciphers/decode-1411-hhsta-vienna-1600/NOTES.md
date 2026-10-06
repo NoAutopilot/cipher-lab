@@ -466,18 +466,83 @@ h-at-residue-12/22 alternative frozen beside it, on numerals not yet read (p.3, 
 cipher page), two blind passes; ~USD 6. In parallel, ASKS row 120 (a person's read of the gloss) stands. Status unchanged:
 open.
 
-## Remaining gaps (DEF1-1411, 5 Oct 2026)
-Read so far: 0 of about 371 cipher numbers at S or better (gloss pairs C 54 of 62; 371 unglossed numbers M)
-- unglossed numerals p.1-p.2 (371) - blocker: not-attempted; controls beaten but no gate passed (GAPS146, GAPS150, DEF1-1411); next: pre-registered word-coverage test of T21r (+ h alternative) on p.3 numerals, ~$6
-- gloss letter identities h/s at residues 12/22 - blocker: waiting-on ASKS row 120 (a person's read of the gloss); the r/z question is settled by the DEF1-1411 residue-21 test
-- pages 3-12 numerals - blocker: not-attempted; full-size images fetched in GAPS137 but no page after p.2 transcribed; next: cut and read p.3 numerals in two blind passes with the step above, ~$6
+## D4-1411P3 step: word-coverage test of frozen T21r (+ h variants) on unread p.3 numerals (6 Oct 2026, account 4)
 
-## Escalation (DEF1-1411, 5 Oct 2026)
+Step run: DEF1-1411's named next step (Remaining gaps 1 and 3), brief D4-1411P3 (LANE DEFAULT-account-4-20261006-1235).
+Pre-registration `d4p3/PREREG-D4-1411P3.md` pushed before any p.3 numeral was read (commit c1f95116f; time line corrected in
+the next commit; Addendum A on the f.184 interlinear gloss, 05d174f91, pushed before either pass ran; `d4p3/score_p3.py`
+pushed 8eab22eaf, before the passes returned). Tables frozen: T21r (def1411/tables.py), T21r_h12 (residue 12 = h), T21r_h22
+(residue 22 = h). Statistic: tools/judge_plaintext.py NgramModel.cover (greedy word coverage), de1600 lexicon (10,487 words).
+Calibration on already-scored material was computed before the prereg and is quoted in it (p.2 T21r decode 0.631, its
+shuffles p99 0.508, shifts max 0.385; gloss 0.613).
+
+One DECODE browser login (tools/decode_browser_login.js 1411 --fetch IMG_R1411_I6597_P3.png --max-files 1); sha1 509fe691...
+matches images/manifest.json; not committed (30 MB rule). Crops (pasted commands; automatic line finding found 0 lines on this
+grey scan, as before, so centres came from an adaptive-threshold row profile and were checked on the --debug overlays; a first
+left-page cut with centres drifting ~40 px on lines 6-9 was discarded before any pass):
+`python3 tools/iiif_lines.py --image IMG_R1411_I6597_P3.png --out images/d4p3_crops --region 760,2040,1720,980 --prefix p3L
+--centres 36,134,232,330,428,526,624,722,820 --top-margin 50 --bottom-margin 45 --max-width 2400 --debug` (9 crops, left page
+= f.183v, numeral block) and `python3 tools/iiif_lines.py --image IMG_R1411_I6597_P3.png --out images/d4p3_crops --region
+2860,360,1600,2980 --prefix p3R --centres 46,131,216,283,351,445,515,589,669,748,818,894,971,1048,1133,1208,1285,1360,1445,
+1526,1612,1691,1772,1849,1930,2002,2094,2180,2264,2332,2406,2497,2575,2660,2735,2825 --top-margin 45 --bottom-margin 40
+--max-width 2400 --debug` (36 crops, right page = f.184r). All crops under 2500 px.
+
+Two blind Sonnet passes, one call each, crops only, opposite reading orders (`d4p3/passA.tsv` 332 rows, `d4p3/passB.tsv` 324).
+tools/reconcile_passes.py (`d4p3/rec/`): 290/328 aligned columns agree (88.4%), 38 splits, gloss columns 4/15. The worker
+settled the 38 splits from three stacked crop views (one reconciliation unit; `d4p3/reconcile_notes.tsv`): this hand writes 6
+as a looped "δ" (63 not 83 at three line ends, 96 not 90), its "zy" is 29, two one-pass tokens were word strokes and dropped,
+two non-numeral marks became signs. Every settled split is M. Reconciled: `d4p3/numbers.tsv`, **311 cipher numbers, 209 M**
+(pass B flagged most numbers doubtful), 11 in-text figures (dates "13. oct", "15.", enclosure "lit. 6 n. 3", list numerals)
+not decoded, 4 graphic signs not decoded.
+
+**Score (`d4p3/score_p3.py`, `--check` exits 0; de1600 coverage; seed 1411):**
+
+| table | cover | shuffled-target p99 / mean (>= real) | shifted max (>= real) | minus gloss (0.613) | 4-gram | PASS |
+|---|---|---|---|---|---|---|
+| T21r | 0.563 | 0.463 / 0.386 (0/200) | 0.370 (0/23) | -0.050 | -1.838 | no |
+| T21r_h12 | 0.540 | 0.437 / 0.364 (0/200) | 0.376 (0/23) | -0.073 | -1.790 | no |
+| T21r_h22 | 0.543 | 0.444 / 0.370 (0/200) | 0.370 (0/23) | -0.070 | -1.911 | no |
+
+de1600 real windows at N=311: coverage p05 0.881, median 0.939. **Pre-registered verdict: CONTROLS BEATEN, COVERAGE BELOW THE
+LEAF'S OWN GLOSS, for all three tables** -- the same shape as the 4-gram judge (GAPS146/150, DEF1-1411), now on a second
+instrument and on 311 numerals none of the tables was built from. No PASS: no grade moves. No variant is preferred.
+
+**Letter tests (pre-registered):** residue 21 (20 occurrences): **r favoured** -- r ranks 1st of 24 on coverage and on 4-gram
+(z 21st and 15th); this confirms DEF1-1411's r on a second fresh page. Residue 12 (18): undecided -- h ranks 1st on 4-gram but
+9th on coverage (s 5th on both). Residue 22 (13): undecided -- s 2nd on 4-gram, 7th on coverage; h 22nd and 18th.
+
+**Addendum A, f.184 gloss agreement:** both passes agree on the number and the letter at 10 glossed numbers (p3R_L21 29 p,
+69 z, 33 c; p3R_L33 67 p, 72 a; p3R_L36 36 h, 18 o, 87 l, 62 d, 81 e). Matches: T21r 4/10 (control p99 2, 2 of 10,000 draws
+>= real), T21r_h12 5/10 (0 of 10,000), T21r_h22 4/10 (4 of 10,000). **Gloss agrees with T21r** on the pre-registered rule
+(>= 8 pairs, real > control p99), on a gloss leaf the table was not built from. Mismatches, logged as data, not settled:
+69 glossed z where T21r has r (residue 21, the same gloss-hand "z" GAPS141 read on p.1, now opposite to the r the decode
+statistic favours on two pages: the gloss hand's r probably looks like z to our readers); 36 glossed h where T21r has s
+(residue 12; the h12 variant matches); 29 glossed p where residue 5 = a (7/7 on p.1; the number may be 19, residue 19 = p --
+an unsettled transcription question, not tested); 33 c vs e (residue 9; c/e is a common look-alike); 72 a vs u (residue 0,
+one gloss pair on p.1); 62 d vs k (residue 14, alphabet-filled, never glossed before). The 10 pairs are recorded as new
+known-plaintext pairs at grade M (each letter flagged doubtful by at least one pass); they did not retune any table.
+
+**Post-hoc observation (seen after the score; not tested, licenses nothing):** p3R_L21 decodes "aRePPRATORIE" (with the gloss's
+p for 29: "prepparatorie", a Latin-German chancery "praeparatoria"); p3R_L36 "sOLKE" against the gloss "holde"; p3R_L09
+"WIRsAZEn", p3L_L08 "ESMIUNGESALL". Hypotheses for a verifier or a person's read, not readings.
+
+Token grades (rule 4): new 311 numbers all M (H 0, C 0 new, S 0, M 311, I 0); 10 new f.184 gloss pairs M; earlier 371 numbers M
+and p.1 gloss pairs C 54 / M 8 unchanged. No reading-ready flag. Vision: 2 Sonnet subagent calls (45 crops each) + 1
+reconciliation unit (3 stacked crop views) + 4 worker placement views (overview, 3 debug overlays). Requests: de-crypt.org
+about 3 (1 login, record page, 1 image). Status unchanged: open.
+
+## Remaining gaps (D4-1411P3, 6 Oct 2026)
+Read so far: 0 of about 682 cipher numbers at S or better (p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; 682 unglossed numbers M)
+- unglossed numerals p.1-p.3 (682) - blocker: not-attempted; controls beaten on two instruments (4-gram GAPS146/150/DEF1-1411; word coverage D4-1411P3) but every table stays below the leaf's own gloss; next: a person's read of the p.1 and f.184 glosses (ASKS row 120) to fix the gloss calibration and letter identities, then a pooled residue-12/22 h-vs-s letter test on p.4 numerals, ~$6
+- gloss letter identities h/s at residues 12/22 - blocker: waiting-on ASKS row 120 (a person's read of the gloss); f.184 adds one h over 36 (residue 12) for that read
+- pages 4-12 numerals - blocker: not-attempted; full-size images fetched in GAPS137 but no page after p.3 transcribed; next: cut and read p.4 numerals in two blind passes with the frozen T21r and the same coverage controls, ~$6
+
+## Escalation (D4-1411P3, 6 Oct 2026)
 - [x] siblings: GAPS136/GAPS137 checked the Ferdinand III posts and the Kopal Cyffra nova key (inconsistent sign class)
 - [x] clear-pages: clear words around the cipher read in GAPS137; context words used only as post-hoc observation
 - [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
 - [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a gate passes
-- [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r settled on fresh numerals (DEF1-1411)
-- [x] image-check: full-size DECODE images p.1-p.2 read on native crops (GAPS141, GAPS146, DEF1-1411)
+- [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r on two fresh pages (DEF1-1411, D4-1411P3), f.184 gloss agrees with T21r 4/10 vs control p99 2 (D4-1411P3)
+- [x] image-check: full-size DECODE images p.1-p.3 read on native crops (GAPS141, GAPS146, DEF1-1411, D4-1411P3)
 - [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause
-Verdict: keep going: 2 internal gaps; cheapest next: pre-registered word-coverage test of T21r on p.3 numerals, ~$6
+Verdict: keep going: 2 internal gaps; cheapest next: cut and read p.4 numerals in two blind passes, frozen T21r, same coverage controls, ~$6
