@@ -226,11 +226,58 @@ WebSearch 0, subagents 0.
 legible under it), grade C, one token; it reads nothing in the target letter. Letter 588's spaced passages are period decipherments without
 their cipher numbers, so not a crib on the print alone. The 1703 system's key is still not located.
 
+## Van Haersolte letter list, Deel 2 (and Deel 3 page list) (R11A-HEIN2, 6 Oct 2026, 15:15-15:22 UTC)
+
+Brief: list every Van Haersolte letter in Deel 2 not among the 70 pages A2P4-HAER read, and say for each whether the print shows cipher
+numbers, spaced-type deciphered passages, or a number-to-word pair stated by the edition.
+
+Route. The `toc1` chronological-letter accessor that works for `retroboeken/willemiii` does **not exist** for this book:
+`retroboeken/heinsius/toc1/index_html?correspondent:ustring:utf-8=Haersolte` answers HTTP 404 (Huygens error page), and the book's root
+page links only the 19 volumes. The Deel 2 person index (pp.634-635, OCR) lists pages where Haersolte is *mentioned* ((I), 11, 15, 44,
+146, 154, 158, 227, 271, 287, 292, 318, 436, 480, 481, 522, 531, 548; "reis naar Polen" 50, 60, 63, 81, 99); it does not list his own letters
+(pp.130, 362, 397 are absent), so it is not a letter list. Used instead: every 1703 Haersolte letter is filed "H.A. 841", so a full-text search
+for `841` (`search_in_text`, 7 result pages, 130 hits parsed, 83 in Deel 2) lists his letter pages. Positive control: pp.130 (letter 341) and 362
+(929) are in the 841 hit list. 23 Deel 2 hit pages were not among the 70 read (or 361-362, 397-398); p.615 is an index page and p.326 a false hit
+(letter *number* 841, l'Hermitage), so 21 pages were fetched (OCR html), plus p.595 for the end of letter 1499.
+
+Result, Deel 2: **21 Van Haersolte letters not previously read** (`deel2_letters_r11a.tsv`: nos. 16, 38, 41, 72, 88, 119, 130, 155, 166, 181,
+203, 286, 296, 426, 481, 511, 843, 1197, 1333, 1483, 1499; 4 Jan - 29 Dec 1703; Riga, Frauenburg, Memel, Warsaw). Fifteen are printed only as a
+title ("Nouvelles uit Riga") or an editor's Dutch summary, which would not reproduce cipher; six print some full text (41, 155, 426, 1197, 1499,
+and 286's summary runs to p.107). **None** of the 21 shows a cipher number, a spaced-type passage or a cipher footnote on the pages fetched;
+grep for sleutel/cijfer/geheim/ontcijfer/opgelost/uitgekrabd/gespatieerd/chiffre and for 2-3 digit numbers in running text found nothing
+cipher-related (the "geheim" hits are "geheimraad"/"geheime dienst"). **No number-to-word pair is stated anywhere in them; no key change.**
+Graded tokens read by us: 0.
+
+Cross-check: a whole-edition search for `gespatieerd` (the editors' word for passages printed letter-spaced because they were in cipher; 5
+result pages, 96 hits) gives **no hit in Deel 1 or 2** and one in Deel 3 (p.208, letter 588, already known). On the OCR index, then, the 1703
+volume never uses the spaced-deciphered convention: the edition prints the 1703 Haersolte codes (341, 929, 1017) as bare numbers, with a
+decipherment only where the writer's erased word survived (929.2). A search for `uitgekrabd` returned **0** hits although footnote 929.2 contains
+the word (R11A-HEIN read it on the page image), so the OCR index misses that word: the zero is a failed positive control, not a negative.
+
+Deel 3 (1704, H.A. 918): the same search for `918` (7 result pages, 138 hits) gives **103 Deel 3 pages** (`hits_HA918_r11a.tsv`), too many to read
+under this brief's 60-request cap; not read. Only p.208 (letter 588) intersects the `gespatieerd` hits.
+
+Where it was not found: no printed key, no spaced deciphered passage, no number-to-word pair for the 1703 system in the 21 Deel 2 letters above,
+nor any `gespatieerd` footnote in Deels 1-2. Not covered: Haersolte letters whose OCR mangles both the name and "841" (none known; the 841 search
+and the 1432-hit name paging overlap well but are both OCR); the small-number sequences of the 1017 type on the 70 pages A2P4 read were grepped
+only for codes 140-199 (A2P4 section); Deel 3's 103 letter pages.
+
+Requests: resources.huygens.knaw.nl 49 (toc1 1 [404], book root 1, pages.json 1, index pp.634-635 and 659-660 4, `841` search 7, `918` search 7,
+`gespatieerd` search 5, `uitgekrabd` search 1, letter pages 22), all >= 2.2 s apart, descriptive UA, all HTTP 200 except the toc1 404. WebSearch
+0, vision 0, subagents 0.
+
+## Verdict (R11A-HEIN2, 6 Oct 2026)
+
+**Status: open (unchanged).** 21 more Deel 2 Haersolte letters listed and read: none carries cipher, and the edition never prints a spaced
+decipherment in Deel 2. The 1703 system's cipher extent is unchanged (letters 341, 929, 1017); the only glossed code is still 142 = de Russen
+(C, 1 token, letter 929). The key is still not located in print.
+
 ## Next step (cheap, depends on no one)
-1. Read Deel 2 letters by number for the Haersolte letters the snippets did not reach (the 70 pages read were only those the search listed);
-   look for more "uitgekrabd ... vervangen door het cijfer" footnotes, which gloss a code from the writer's own erased word (grep the Deel 2-3
-   OCR for "uitgekrabd", "cijfer" in footnotes, ~USD 0.5, script only).
-2. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
+1. Re-grep the 70 Deel 2 pages A2P4 read for the small-number runs of letter 1017's kind (1-70 inside text), which A2P4's 140-199 grep could not
+   catch: about 70 requests to resources.huygens.knaw.nl (one session, >= 2 s apart), ~USD 1, script only.
+2. Deel 3 (1704): read the 103 H.A. 918 pages in `hits_HA918_r11a.tsv` for codes in running text (same script; ~105 requests, so two sessions
+   or a cap above 60), ~USD 1.5; letter 588's d'Alonne decipherment suggests 1704 cipher letters exist there.
+3. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
 
 ## While waiting
-The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: next step 1 above.
+The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: next steps 1-2 above.
