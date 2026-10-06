@@ -66,3 +66,11 @@ settled by the more frequent value): 126 (Willem -> August, 16 Sep 1564) matches
 175 (9 Apr 1567), so 126's two K stay M whatever 175 gives; the witnesses are logged in HYPOTHESES.md and key_98's K row records both
 values. If 175 gives 'der' everywhere, K = der gains a witness and 126's two K stay M (context 'die'). A split inside 175 is logged.
 Nothing else is regraded from this job; other sign observations are logged only.
+
+## Addendum A4-AVS175B, 6 Oct 2026 00:3x UTC (worker A4-AVS175B, account 4; committed before any blind read of these lines)
+Scope: the last 5 cipher lines of WVO 175 p1 (f.348r), y~2345, 2445, 2550, 2662 (batch 3) and y~2762, read as one batch of 5 (the brief:
+"1 batch of 4 + 1 line"). Protocol, crops, reference sheet, the batch-2 label anchors (f.66 l.1 '3 Sb 8 Z Or 9 9'; l.5 'v' = N), statistic,
+nulls and gate exactly as the A4-AVS175 addendum above, computed over these 5 lines only (not pooled with batches 1-2 or c1-c3).
+Q2 Qf and Q3 K: the same decision rules as the A4-AVS175 addendum. In particular 126's two K stay M whatever these lines give (date
+proximity to 124); a clean K here only adds to the 175 witness count in HYPOTHESES.md and key_conflicts.tsv. Nothing else is regraded.
+Stop rule: if the session passes USD 3.6 (80% of 4.5) or 01:00 UTC before the reads are reconciled, stop and log what was read.
