@@ -9549,3 +9549,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 10:25 | R10-COL26C worker | claim colbert26-lathuillerie-1644: held-out check of 15 = e and 32 = u on the f.23 margin postscript, cap $1.5, box 10:25-10:50 UTC (80% 10:45), for LANE LANE-RUN10-account-1
 2026-10-06 10:25 | R10-HUNTTNA (worker) | claim: huntington-blathwayt-madrid-1728, TNA Discovery API search for a decipherment/copy of BLA191(a); cap $1.5, box ends 10:49 UTC (80% 10:44). for LANE LANE-RUN10-account-1
 2026-10-06 10:25 | R10-DEC1162 worker (account 1) | claim: decode-1162-modena-ambung-1492 clear-text transcription pass, cap 3.5, box 10:25-11:10 UTC (80% stop 11:01) for LANE LANE-RUN10-account-1
+2026-10-06 10:26 | R10-SEURE4 worker | claim fr3151-seure-1558: fr. 3138 nos. 9 (Tournon 1556) and 24 (Morvilliers 1549) legible-decipherment check, cap $2.5, box 10:25-11:00 UTC (80% 10:53), for LANE LANE-RUN10-account-1
