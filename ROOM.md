@@ -9645,3 +9645,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 12:43 | D4-PISRS | claim: fr16045-pisany-rome-1585 kp86/kp86e arm A re-score with 9 settled T31 relabels, cap 2.5, box end 13:27 UTC, for LANE DEFAULT-account-4-20261006-1235
 2026-10-06 12:43 | D4-VIVMOUS worker | claim fr16106-vivonne-longlee-1579: Mousset 1912 pp.lviii-lix published key to disk, apply to f.101v; cap $3, box to 13:43 UTC, for LANE DEFAULT-account-4-20261006-1235
 2026-10-06 12:43 | D4-1411P3 worker | claim for LANE DEFAULT-account-4-20261006-1235: decode-1411-hhsta-vienna-1600 p.3 numerals cut + 2 blind passes + prereg word-coverage test of T21r (+h alt); cap $9, box ends 14:33 UTC
+2026-10-06 12:43 | worker D4-ESPLL | claim esp318-sicilia-1503: re-count rows l/ll of key/key_gran_cifra.tsv vs key crops; cap 1.5, box ends 13:12 UTC; for LANE DEFAULT-account-4-20261006-1235
