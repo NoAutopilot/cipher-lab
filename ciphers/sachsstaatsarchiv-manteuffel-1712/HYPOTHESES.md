@@ -120,3 +120,12 @@ run keeps its as-read gloss "Ilgen" (M, doubtful) on 848 under PREREG-R8-MANT. 8
 | 515 | e (aligner, 3 of 6 runs; raw p 0.037, BH FAIL) | 'p' in 2 runs; 'Pr' / 'propose' in f0501 word_values (inconsistent) | r9mant/codes_r9.tsv; f0501/word_values.tsv; RUN5-MANT5 flag | conflict: unresolved; weakest footing in the key |
 | 402 | la (5 of 12; PASS p 0.003) | agrees: 0574 runs 10/16 '402.341 la guerre'; f0501 word_values 402 'la' | f463_0574/leaf_values_0574.tsv; f0501/word_values.tsv | corroborated, but the 0574 pair is one of the aligned runs (not independent) |
 | 341 | guerre (5 of 6; PASS p 0.001) | agrees: 0574 '402.341 la guerre' | f463_0574/leaf_values_0574.tsv | same non-independence note as 402 |
+
+## R10-MANT526 (6 Oct 2026, LANE LANE-RUN10-account-4, account 4): frame 0526 (f.422)
+| date | family / instrument | control | target | result |
+|---|---|---|---|---|
+| 6 Oct 2026 R10-MANT526 | per-leaf aligner gate, PREREG-MANT526 (14 runs, 11 glossed) | 200 gloss permutations, seed 526: mean 0.025, p95 0.250 | S 0.250 (N_rec 4) | HELD (tie) |
+| 6 Oct 2026 R10-MANT526 | pooled single-code-gloss gate, PREREG-MANTP + MANT526 addendum, 9 leaves (70 runs) | 1000 draws seed 7101: mean 0.026, p95 0.083 | S 0.667 (8/12) | PASS; 867 disagree (spelling only); sensitivity merging spellings 0.750, non-gating |
+Witnesses logged, not resolved: 867 "le feld mareschal" (0526 single, C) vs "le Feldmarechal" (0529 x2, C) -- same title, two spellings;
+0526 also writes "F.M." over 401.504.237.867. 714 opens "une conference" (0526 run 13, M placement) -- a further 'un/une' witness against
+the aligner's 'u' (rule 4: graded M, not settled by the majority chunk).
