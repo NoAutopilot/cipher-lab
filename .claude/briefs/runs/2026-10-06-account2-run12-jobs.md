@@ -187,3 +187,39 @@ the post-apply file); rerun and confirm 193/210 and 194/210 and a byte-identical
 control rows both readers contested (3 vs 7, 8 vs 9): open each at 300 dpi from the existing crops yourself, record what the image shows
 beside the H value; this tests the control, not the target -- if the H value looks wrong on the image, list it as a possible key-sheet or
 transcription conflict for a verifier (do not edit key or H rows). Push; ROOM done line.
+
+## Wave 4 (spawned 12:2x UTC 6 Oct). Wave 3 + KAL8 + OLDCORP done (all D); CATOK23 idle since 11:58 with a background check and no done
+line. Workers ledgered 31.63. Last wave (cap headroom). Intake gates as wave 1.
+
+### R12-RJMV -- verifier, rah-juan-manuel-1521: R12-RJM42's held-out PASS of Tomokiyo's published alphabet on R9502 (cap 2.5, box 40 min)
+You are a verifier, not the solver (R12-RJM42, commit 30d632ed6, PREREG 622a572e0). Check: the PREREG commit predates the scored run
+(git log times); `python3 scripts/test42.py --check` exits 0 and reproduces results_test42.json; open at least 10 aligned tokens in
+passes/align_f40_f42.tsv against the crops and the decipherment page and say whether each alignment is right; whether the shuffled-key
+control could vary on the statistic (rule 3, "a control that cannot vary"); whether Tomokiyo's printed incipit was kept out of the scored
+span; the f.40 vs f.42 naming (which leaf is cipher, which is the decipherment). Then write a dated AUDIT.md section (create AUDIT.md
+if absent: the test result's standing, not an N-class for a reading -- there is no reading yet) and say plainly whether R9501's decode
+with the published key is licensed. Do not decode.
+
+### R12-RJM147 -- rah-juan-manuel-1521, second held-out test: the 6 Jun 1522 letter (Salazar A-24 ff.147-148) against its CODOIN XXVI print (cap 5, box 70 min)
+Intake gate: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R12-RJMFRAG found that CODOIN XXVI núm. 36, pp. 49-50 prints a chapter of this letter as deciphered by the secretaría. First identify
+which DECODE record (R9523-R9529, NOTES.md table) carries A-24 f.147-148 and whether its image is reachable; if not, stop and say so.
+Then: locate the printed chapter's span in the cipher (by the period decipherment if on the images, else by position/length), crops
+(paste the command), two blind passes over that span only + reconciliation, PREREG pushed before scoring (same statistic and shuffled-key
+control as R12-RJM42's test42.py, reused not rewritten; gate fixed in advance), score key_tomokiyo_alpha.tsv and alphabet.tsv against the
+printed plaintext (grade C source: the print). Units: 2 passes + 1 recon + locate step at ~1.5 + floor; stop before a unit that crosses
+80%. Report both numbers; no key/grade change. This letter's chapter is in print (rule 1): note it in the folder's Premise/print lines.
+
+### R12-KAL9 -- kaliningrad-2015, R12-KAL8's named confirmation of the S3 conv. B excess (cap 2, box 35 min)
+Intake gate: `kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+KAL8 flagged S3 conv. B lexicon coverage 0.0394 vs gate 0.0375 on a 15-shuffle null (about a 28% chance across 5 units). Pre-register
+(push first) the same unit with shuffle seeds 16-50 (35 fresh shuffles), the gate (target above the 95th percentile of the 50-shuffle
+null) and what a pass licenses (a verifier look, not a reading). Run, report target rank among 50 and the p95, one HYPOTHESES.md row.
+
+### R12-LVNV2 -- verifier, lodewijk-van-nassau-1573-74: R12-LVN16R's six H control rows the image contradicts (cap 2, box 35 min)
+R12-LVN16R (commit 60c54303c) found 6 of 12 contested H control rows where the 300-dpi image supports the blind readers, not the H value
+(L12/1 40, L13/1 39, L14/2 81, L15/16 31, L16/2 20, L17/2 81; L17/2 contradicts R12-LVNV's own eye). For each: is the H row a transcription
+error in ciphertext_4616.tsv, a key-sheet value conflict, or a misread crop? Open the crops yourself, check the H source (which period
+decipherment gives the H, rule 4 witness record). Record per row in AUDIT.md (dated section); recompute the R12-LVN16 control on the
+corrected H rows and say whether its PASS (0.919/0.924 vs 0.90) still holds. Rows you find mis-transcribed: list them as corrections for
+a solver (do not edit ciphertext or key yourself).
