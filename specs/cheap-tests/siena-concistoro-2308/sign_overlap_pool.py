@@ -12,6 +12,11 @@ Nulls (pre-registered in PREREG-R11-SIENAPOOL.md):
   B: within-piece token shuffle of s and no. 7 (keeps inventories, destroys order); same p.
 Clears = p <= 0.05/m (Bonferroni over m siblings) on J; B reported beside it.
 --check reruns and compares with results_pool.json (rule 7).
+
+R13-SIENAJ (6 Oct 2026, PREREG-R13-SIENAJ.md): --blind DIR replaces the rows of nos. 7, 19 and 9 by a second reader's blind sign
+inventories (DIR/inv_noNN.tsv, first column = shape id; letters/digits named as themselves, drawn signs given per-letter ids), all
+other rows unchanged; J only (no sequences were read, so B is not computed). --liberal additionally merges the doubtful drawn-sign
+pairs of DIR/concordance.tsv (descriptive only, not gated). Output results_pool_blind[_liberal].json; --check works the same way.
 """
 import argparse, json, os, random, re, sys
 
@@ -120,11 +125,30 @@ def main():
     ap.add_argument('--seed', type=int, default=11)
     ap.add_argument('--inventory-only', action='store_true', help='print parsed sizes and stop (no scoring)')
     ap.add_argument('--check', action='store_true')
+    ap.add_argument('--blind', help='dir with inv_no07.tsv, inv_no19.tsv, inv_no09.tsv (R13-SIENAJ)')
+    ap.add_argument('--liberal', action='store_true', help='with --blind: merge the doubtful pairs of concordance.tsv')
     a = ap.parse_args()
     P = load(a.bourdeau)
     keys = sorted(P)
     inv = {k: {t for r in P[k][1] for t in r} for k in keys}
     ntok = {k: sum(len(r) for r in P[k][1]) for k in keys}
+    if a.blind:
+        merge = {}
+        if a.liberal:
+            for line in open(os.path.join(a.blind, 'concordance.tsv'), encoding='utf-8'):
+                if line.startswith('#') or line.startswith('liberal_id'):
+                    continue
+                f = line.rstrip('\n').split('\t')
+                for mbr in f[1].split():
+                    merge[mbr] = f[0]
+        for k in ('07', '19', '09'):
+            fp = os.path.join(a.blind, 'inv_no%s.tsv' % k)
+            if not os.path.exists(fp):
+                continue
+            ids = [l.split('\t')[0] for l in open(fp, encoding='utf-8') if not l.startswith('#') and not l.startswith('id\t') and l.strip()]
+            inv[k] = {merge.get(i, i) for i in ids}
+            P[k] = ('blind', P[k][1])
+            ntok[k] = None
     if a.inventory_only:
         for k in keys:
             print(k, P[k][0], 'tokens', ntok[k], 'types', len(inv[k]))
@@ -141,6 +165,27 @@ def main():
         rr = curveball(rows, rng, steps=5 * len(keys) * len(keys))
         for k in sib:
             nullJ[k].append(jacc(rr[keys.index(k)], rr[i7]))
+    if a.blind:
+        res = []
+        for k in sib:
+            nj = sorted(nullJ[k])
+            pJ = (sum(x >= obsJ[k] - 1e-12 for x in nj) + 1) / (a.null + 1)
+            shared = sorted(inv[k] & inv['07'])
+            res.append(dict(piece=k, transcriber=P[k][0], types=len(inv[k]), shared_types=len(shared), J=round(obsJ[k], 4),
+                            J_null_mean=round(sum(nj) / len(nj), 4), J_null_p99=round(nj[int(0.99 * len(nj)) - 1], 4),
+                            pJ=round(pJ, 5), clears=pJ <= 0.05 / m, shared=shared))
+        res.sort(key=lambda r: (r['pJ'], -r['J']))
+        out = dict(seed=a.seed, null=a.null, m=m, alpha=0.05 / m, liberal=a.liberal, no07_types=len(inv['07']), rows=res)
+        path = os.path.join(HERE, 'results_pool_blind%s.json' % ('_liberal' if a.liberal else ''))
+        if a.check:
+            if json.load(open(path)) != json.loads(json.dumps(out)):
+                print('STALE: %s differs' % os.path.basename(path)); sys.exit(1)
+            print('check ok'); return
+        json.dump(out, open(path, 'w'), indent=1, ensure_ascii=False)
+        print('piece tr types shared J Jnull_mean Jnull_p99 pJ clears')
+        for r in res:
+            print(r['piece'], r['transcriber'], r['types'], r['shared_types'], r['J'], r['J_null_mean'], r['J_null_p99'], r['pJ'], r['clears'])
+        return
     b7 = bigrams(P['07'][1])
     obsB = {k: len(bigrams(P[k][1]) & b7) for k in sib}
     nullB = {k: [] for k in sib}

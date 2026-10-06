@@ -962,3 +962,56 @@ Bourdeau's `keys/`) can be run through `run_test_r4750.py`'s T1/T2 by swapping t
 underpowered at this N for any sheet.
 Gap record (status `open`): no. 7 nomenclator layer -- R4750 tested (T1 non-test, T2 chance, T3 no match); next: second-reader concordance
 of no. 7 vs nos. 9/19, ~$3.
+
+## R13-SIENAJ -- agent-J confound check, blind second-reader sign inventories of nos. 7, 19, 9 (account 4 worker for LANE-RUN13-account-4, 6 Oct 2026, 17:42-18:0x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run13-jobs.md` job R13-SIENAJ (R11-SIENAPOOL / R11-SIENA4750 next step). Status unchanged:
+`open`. Pre-registration `PREREG-R13-SIENAJ.md`, pushed in be159e8c3 (17:45 UTC) before any scoring; blind inventories and concordance
+(`r13sienaj/inv_no07.tsv`, `inv_no19.tsv`, `inv_no09.tsv`, `concordance.tsv`) pushed in 3bc657f2b before agent J's transcripts were
+opened. Requests: de-crypt.org one browser login (`tools/decode_browser_login.js 4796`, record page + 5 full-size images: R4796 P1-P2,
+R4807, R4798 P1-P2; sha1 of the four already listed in images/manifest.json match; images and record page kept in the scratchpad, record
+page deleted, nothing committed); github.com one sparse shallow clone of dbourdeau/cyphersolver `targets/siena1421/transcripts` (HEAD
+adbf9a1, same as R11; read only, CC BY 4.0 text, credit Bourdeau and his agents). Crops: `tools/iiif_lines.py --image <file> --region
+60,2540,2190,620` (no. 7, the R10-SIENA7C region), `--region 500,1230,3300,560` (no. 19), `--region 450,980,2200,230` (no. 9), plus PIL
+1.5-2x autocontrast strips of the same bands; read by this worker's own eye, no subagent.
+
+**Method.** Per letter, a type inventory of the cipher signs: Latin letters and digits named as themselves (R11's convention), every
+other drawn sign given a per-letter id; cross-letter drawn-sign matches only when certain (none was judged certain; five doubtful groups
+listed in `concordance.tsv`). Statistic, null and gate unchanged from R11 (Jaccard vs no. 7; 2000 curveball swaps of the 16-piece
+matrix, seed 11; pJ <= 0.0033), with the rows of nos. 7, 19, 9 replaced by the blind inventories. Script `sign_overlap_pool.py --blind
+ciphers/siena-concistoro-2308/r13sienaj [--liberal]` -> `results_pool_blind.json` (scored) and `results_pool_blind_liberal.json`
+(doubtful drawn pairs merged; descriptive, not gated); `--check` regenerates both.
+
+| piece | R11 (agent J labels) J / pJ | R13 blind, conservative (scored) types / shared / J / pJ | clears | R13 liberal (descriptive) J / pJ |
+|---|---|---|---|---|
+| 19 | 0.323 / 0.001 | 38 / 19 / 0.346 / 0.0015 | **yes** | 0.480 / 0.0005 |
+| 9 | 0.304 / 0.003 | 20 / 12 / 0.273 / 0.0045 | no (just above) | 0.366 / 0.0005 |
+| 20 | 0.297 / 0.0065 | (row unchanged) 51 / 21 / 0.318 / 0.0015 | yes | 0.318 / 0.001 |
+| 21 | 0.250 / 0.059 | (unchanged) 35 / 12 / 0.203 / 0.237 | no | -- |
+| 11, 14, 15, 25 | below null | below null (pJ 0.96-1.0) | no | below null |
+
+Blind no. 7 inventory: 36 types (agent J 45); 22 of my 24 letter/digit types are also in J's no. 7; J names `#`, `+`, `=` as single
+characters where this reader gave drawn ids, and J joins ligature units (`oo`, `8o`, `TT`, `SI`) this reader split.
+
+**Result.** (1) **No. 19's overlap with no. 7 survives the agent-J confound**: on a second reader's blind labels it clears the same gate
+(pJ 0.0015). But the shared stock is **letters and digits only** (1 3 4 6 7 8 9 S b c f g k m o p q t x) -- exactly as it already was
+under J's labels (R11's shared list for no. 19 has no drawn sign either), so the reader confound was never what carried no. 19; what
+the statistic measures here is a common Latin-letter-plus-digit cipher alphabet, not a shared drawn-sign stock. No drawn sign of no. 7
+was judged certainly the same as one of no. 19 (the closest: backward-looped d, yogh-like 3, a B/ß form). (2) **No. 9 does not survive
+on the pre-registered conservative set** (pJ 0.0045 against 0.0033); R11's clearing for no. 9 rested on J's drawn names `6~`, `DEL`,
+`P_`, and it clears again only if the doubtful drawn merges are accepted (liberal 0.0005, not gated). Logged: no. 9's R11 signal is not
+separable from the reader at this N (46 tokens, 20 blind types). (3) With the blind no. 7 row, **no. 20 also clears** (0.0015; R11
+0.0065), which is a reminder that a letter/digit alphabet is shared beyond agent J's pieces; no. 23, no. 20's partner by Bourdeau's
+pairing, does not (0.146). Not followed here (outside the brief).
+**Control not run (disclosed):** the PREREG's reader-bias control (blind labels for no. 11) needed an image not on disk; the session's
+one DECODE login was already spent, so it was not fetched. Partial substitute, not pre-registered: the pieces this reader did not label
+keep their own agents' rows and fall where R11 put them (11, 14, 15, 25 below their null), and this reader's own no. 9 does not clear on
+the conservative set, so the labelling did not make all three of its own letters clear.
+Grades: no token read, nothing graded, no key change (no decode --check needed). Cryptanalytic result about sign stock only.
+
+**Next step (suggestion, not run):** pool no. 7 + no. 19 (481 tokens on J's transcripts, one naming convention) for the R10-SIENA7N
+homophonic + nomenclator family with a matched control at the pooled N, `tools/family_run.py` or the R10-SIENA7N script, about USD 2-3,
+disk only; keep no. 9 out of the pool unless a reader-bias control (blind no. 11, one DECODE login, about USD 1.5) clears the liberal
+merges. Caveat for that run: the pooling rests on a common letter/digit alphabet, which says nothing about a common key.
+Gap record (status `open`): no. 7 nomenclator layer -- agent-J confound checked (no. 19 survives on letters/digits, no. 9 does not);
+next: pooled 7+19 R10-SIENA7N family run, ~$3.
