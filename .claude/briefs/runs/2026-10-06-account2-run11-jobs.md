@@ -86,3 +86,45 @@ already on disk (images/manifest.json) or fetch once; crop (paste the command); 
 PREREG (key-consistent count vs shuffled-plaintext control) committed and pushed before scoring. Record any cipher/decipherment
 conflict by witness (rule 4), no majority. Stop before a page that would cross 80% of cap or box; write what remains.
 
+## Wave 2 (spawned 09:3x UTC 6 Oct). Wave 1 all done (6 D/D-, workers 17.67). Intake gates as wave 1 (all PASS lines, 09:1x UTC); rubin-1953 and rayburn-2004 below.
+
+### R11-CLIN2380B -- pro3055-clinton-1779, 2380 cipher pp.121-122 (Images 759-760) vs the period decipherment (cap 5, box 70 min)
+Continue R11-CLIN2380 (read its NOTES section and PREREG c5d45b736 first) on pp.121-122 exactly as it did p.120: crop (paste the command),
+one blind Sonnet pass per page + reconciliation, a PREREG for these pages committed and pushed before scoring, key-consistent count vs
+shuffled-plaintext control per page. Record cipher/decipherment conflicts by witness (rule 4). Do not edit AUDIT.md (a verifier,
+R11-CLINV3, is working on p.120 there now). Stop before a page that would cross 80% of cap or box.
+
+### R11-CLINV3 -- verifier, pro3055-clinton-1779 R11-CLIN2380 p.120 (cap 2.5, box 40 min)
+Verifier, separate from the solver. Check: PREREG c5d45b736 predates the scoring commit 0addfb26e; the gate re-scores (224/258 vs
+shuffled max 32); and the three flags of the R11-CLIN2380 ROOM line: (a) the cipher/decipherment conflict after "with us" (cipher
+1-7 i + 1-27 -16/-6 "a[m]", the decipherment omits it), (b) the doubled-figure rule L-PP = letter at P twice (6-77, 2-77, 5-22) and
+whether it explains GAPS9's 2-99/2-44/6-77, (c) the line-9 OFICERS count -- each by eye from the crops against the 1778 key. Write an
+AUDIT.md section (no change to N-class unless the evidence requires; depth fields only if they change) and correct any over-claim in
+NOTES.md. Touch AUDIT.md and your own NOTES section only.
+
+### R11-SURTV -- na-suriname-map-1781, the map's tall-v y glyph vs the inv. 373 letter's y-family (cap 3, box 50 min)
+R11-SURY's named next (its NOTES section): compare the map's tall-v y glyph (pp.2039/2061 per R11-SURY) with the letter's y-family
+tokens by eye from crops (paste the crop command), pre-registered feature list and a permutation control that can differ, to say
+whether the map's y (= d, M) and the letter's y-family (m/n by gloss) are the same sign at all. No key change without a passing gate;
+any change: decode --check exit 0 and a verifier flag. Update Remaining gaps / Escalation, gaps_check.
+
+### R11-RUBBAU -- rubin-1953, was the Bauer *Unsolved!* print check ever run? (Sonnet 5.5, cap 1.5, box 30 min)
+Intake gate: run `python3 tools/intake_gate_check.py rubin-1953` and paste it. R9-RUBIN4's next (NOTES "## Next step (R9-RUBIN4)"):
+grep this folder (NOTES, AUDIT, spec, print-check files) and ROOM.md for an actual read of Bauer, *Unsolved!* (2017), Rubin chapter,
+for a published transcription or reading. If not run: Google Books API (`&country=US&key=$GOOGLE_BOOKS_KEY`, never print it) and
+be-api/IA full-text snippet searches for the Rubin chapter (<= 20 calls, >= 1.5 s), record what is and is not shown; correct the spec's
+cheap_test_done note if it mislabels test 2. Report found / not found; do not classify novelty.
+
+### R11-RAYWB -- rayburn-2004, the Wayback retry of the 2006 post and image (Sonnet 5.5, cap 1, box 20 min)
+Intake gate: `rayburn-2004: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Escalation "[ ] retry": one CDX query and at most two capture fetches (web.archive.org, `if_` form, >= 1.5 s), record the capture
+timestamps and whether the image is byte-identical to the file on disk (sha1). Mark the retry row [x] or [retired]; gaps_check.
+
+### R11-JANSLM -- na-janssens-java-1811, leaf 188 unkeyed codes: held-out fill test (cap 3.5, box 50 min)
+RUN10 open item (1, second half): before filling any unkeyed code, test the instrument. PREREG first (committed, pushed): mask a
+random 20% of leaf 188's keyed (C) codes, fill them from context with a French word/character LM built from tools/data's French
+corpus (era-matched if one exists; say which), and score recovery against a shuffled-context control that can differ; gate stated
+in advance. Only if the gate passes, list candidate values for the unkeyed codes as M with their scores (no key.tsv change, no reading
+change; a verifier decides). If it fails, log "untestable by this method at this N" in HYPOTHESES.md (rule 3) and stop. AUDIT.md
+section 4's Collet crib values stay "found, not applied" unless the gate passes and they agree.
+
