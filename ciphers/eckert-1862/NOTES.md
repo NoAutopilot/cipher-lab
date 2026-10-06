@@ -1440,3 +1440,58 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 6 internal gaps; cheapest next: carry 9991.571 book 1r into assign_free/readings_free, ~$0.5; then the wrong-telegram test on the 18 neither-book entries, ~$1.5
+
+## R7B-ECK62 (6 Oct 2026, account 1 worker for LANE LANE-RUN7-account-1): 9991.571 book 1r carried; wrong-telegram test on the 18 neither-book entries
+
+Step check: neither step had run (D2-ECK62R's Verdict, 5 Oct 2026, is the latest section).
+- Carry (rule 7): `ec18.py` gains `flips()`, which applies PREREG-ECK62-FLIP rule 4 mechanically to the committed
+  `align_flip_entries.tsv` and returns exactly D2-ECK62R's one accepted flip (9991.571 -> book 1). `--assign-free` writes it in
+  `assign_free.tsv`'s assigned column as `1r` (decision column, the print-free '2', unchanged); `--read-free` reads it with key.md
+  and labels it `1r`. Before the edit both outputs reproduced byte-identically (`--check` current). 9991.571 after: keyed 42 -> 36,
+  S 41 -> 36, I 1 -> 0, oov 24 -> 26, class still `not` (its body runs into the next telegram, "Hd Qrs Washn Apl ... dispatch
+  recd"; Mentor = Ord, Oakum = arrest, Garden = Richmond, saddled = guarded now read in the file). One token to watch: "libby"
+  reads `{time: 6 PM}` in "put them in libby prison" (OR prints Libby Prison) -- a code/clear collision, left as the decoder
+  gives it, not repaired. readings_free summary: not 1f 20 -> 21, 2f 57 -> 56; tokens S 1229 -> 1224, I 4 -> 3.
+  Cascade, regenerated and `--check` current: `print_q` (only `align_free_rows.tsv` changes: 9991.571 book 2 -> 1, same anchor
+  289200, matched five-grams 45 -> 57) and `ec18_align.py --rows align_free_rows.tsv` (9991.571 AGREE 3/31 -> 12/30; pooled AGREE
+  316/817 = 0.387 -> 325/816 = 0.398, control 0.075; grades H 61, C 360, S 500, I 1). Since align_free_entries.tsv now aligns
+  9991.571 under book 1, `flips()` holds its pre-flip rate (0.097, D2-ECK62R) as a constant so the rule stays reproducible.
+  `align_flip_*`, `align_flipctl_*` also `--check` current.
+- Wrong-telegram test, pre-registered and pushed before any number: `ec18/PREREG-ECK62-WRONGTEL.md` (commit c98b3aaf4). The
+  brief's sender/recipient heading check was replaced in the prereg (the ledger header names the operator, Beckwith/Emerick, and
+  the addressee is a code word) by clear-word coverage: LCS(entry clear words, OR window) / entry clear words. Script
+  `ec18/ec18_wrongtel.py` -> `wrongtel_entries.tsv`, `wrongtel_summary.tsv`.
+  Positive control (14 entries at agree >= 0.75): median 0.871, p10 0.676. Negative control (32 same-week other-telegram windows):
+  median 0.206, p90 0.296. Gate PASS.
+  Targets (18): **0 wrong-telegram**, 7 right-telegram (9669.5, 9762.135, 9808.202, 9958.527, 9969.543, 9985.563, 9987.565),
+  11 undecided at coverage 0.49-0.67 (every one at least 0.19 above the negative p90; the prereg's stated selection bias means
+  this does not prove the right telegram, but no target looks like the negative windows). Median target coverage 0.655.
+  So for these 18 the dated match is the right telegram or close to it: neither book's code words agree with the print while
+  the clear words do. Remaining causes: a code table not covered by key.md / key-no2.md, or the volunteer transcription.
+  By month: undecided 10 of 11 fall Dec 1864 - Jul 1865 (1864-12 1, 1865-01 2, 02 1, 03 4, 04 2, 07 1); right-telegram spread
+  Jan 1864 - Apr 1865. Two targets (9985.563, 9985.564) share OR 46.3 p.572; 9985.564's body visibly carries a second heading
+  ("Hon CA Dana Richmond Va Washn Apl 5 1865": two telegrams merged by the blank-line split), which the descriptive
+  second-date counter (ec18.DATE) misses because it has no "Apl" form -- the counter's 0 is not evidence of no merges.
+  No key, book or reading changed by the test.
+- Requests: hdl.huntington.org 1 (vol18.json, sha256 matches the manifest), archive.org 56 (8 DIR62 + 48 OR `_djvu.txt`, all 48
+  OR sha256 matching `or_volumes.tsv`), >= 1.6 s apart, scratch, not committed. 0 vision, 0 subagents. Report what was found and
+  where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, R7B-ECK62, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); mssEC 18: 28 fully keyed Cipher No. 1 and 17 Cipher No. 2 entries (RUN3-ECK62), 26 print-aligned (A3V3-ECKC); 79 print-free-assigned entries read, 9991.571 now with book 1r (R7B-ECK62); 13 of the 113 '?' entries given a book by print (D2-ECK62M); 57 dated matches aligned (AGREE 325/816 = 0.398 vs control 0.075 after the carry); 18 neither-book entries: 0 wrong telegram, 7 right, 11 undecided (R7B-ECK62, gate PASS)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), residue regenerated (GAPS197); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); next: the received copies of the 27 Jan and 24 May 1865 telegrams (Eckert received ledgers) for a third witness, ~$2
+- 18 neither-book entries (right telegram or undecided, R7B-ECK62 wrongtel_entries.tsv) - blocker: not-attempted; wrong telegram ruled out for all 18 by the coverage test, so a third table or transcription is left; next: per entry, list the CONFLICT pairs (code word -> printed word) from align_flip_tokens.tsv/align_free_tokens.tsv for the 7 right-telegram entries and test whether one code word reads the same printed word in two entries (a third table, C grade only where two contexts agree), ~$1.5
+- 100 mssEC 18 entries still '?' - blocker: not-attempted; 20 have a dated OR match with margin under 2 and 80 none (D2-ECK62M); next: the image (marker words the volunteer text may have dropped) for the 20 `?p` entries, ~$4
+- merged telegrams in the volunteer text (9985.564, 9991.571 run into a second heading) - blocker: not-attempted; the splitter's DATE pattern has no 'Apl' form; next: add the "Apl"/"Washn" heading forms to the entry splitter and re-split, then re-run --check across ec18 outputs, ~$1
+
+## Escalation (R7B-ECK62, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [x] known-keys: Lehigh row checked on the mssEC 41 key page image (DEF1-ECK62P); '?' entries assigned print-free (RUN6-ECK62) and by print (D2-ECK62M); zero-agree entries re-aligned under the other book (D2-ECK62R, 1 of 19), the flip carried (R7B-ECK62)
+- [ ] print: wrong-telegram test done (R7B-ECK62: 0 wrong, 7 right, 11 undecided); next: the conflict-pair table test on the 7 right-telegram entries, ~$1.5
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 6 internal gaps; cheapest next: the conflict-pair table test on the 7 right-telegram neither-book entries, ~$1.5

@@ -30,6 +30,8 @@ RUN6-ECK62R (5 Oct 2026): --read-free DIR62 reads each `1f`/`2f` entry of assign
 text, markers kept, --possessive and the DIR62 guard as the committed outputs). Grade cap S: the book is S, so every
 keyed token of an H/C key row counts as S; I and M rows keep I and M. "words" = >= 3 keyed tokens and oov 0 (the
 fully-keyed rule); otherwise "not" with the oov words listed. Writes readings_free.tsv and readings_free.md.
+R7B-ECK62 (6 Oct 2026): an accepted D2-ECK62R flip (flips(), PREREG-ECK62-FLIP rule 4 on align_flip_entries.tsv) overrides
+the print-free book in assign_free.tsv's assigned column as '1r'/'2r' and is read with that book by --read-free.
 
 D2-ECK62M (5 Oct 2026; PREREG-ECK62-Q.md): --print-q ORDIR decides the book of the 113 '?' entries by which key's
 reading gives the dated OR match (margin >= 2 five-grams), known answer on the marker-known entries, dates-permuted
@@ -433,7 +435,8 @@ def main(argv):
           "image: every reading is conditional on that transcription, rule 2) and ciphers/eckert-1864/"
           f"{kfile.name} ({'mssEC 47' if bk == '2' else 'mssEC 41'}). "
           f"Brackets are {kfile.name} meanings with that row's grade; words outside brackets are as the volunteers wrote them. "
-          "Not a novelty claim (rule 10).", ""]
+          "Book 1r/2r: the print-free book overridden by an accepted D2-ECK62R flip (PREREG-ECK62-FLIP rule 4; aligned "
+          "against print, book grade S; carried here by R7B-ECK62, 6 Oct 2026). Not a novelty claim (rule 10).", ""]
     for e in full:
         m = real.get(e["id"])
         c = e["counts"]
@@ -584,6 +587,17 @@ def shuffled(key, seed):
     return out
 
 
+def flips():
+    """PREREG-ECK62-FLIP rule 4, applied mechanically to the committed align_flip_entries.tsv (flipped) against
+    align_free_entries.tsv (original): {id: new book} for each accepted flip (R7B-ECK62, 6 Oct 2026; D2-ECK62R accepted 1)."""
+    rd = lambda f: [l.split("\t") for l in (HERE / f).read_text().splitlines()[1:]]
+    orig = {r[0]: float(r[11]) for r in rd("align_free_entries.tsv")}
+    # once a flip is carried, align_free_entries.tsv aligns it under the new book: its pre-flip rate is frozen here
+    orig.update({"9991.571": 0.097})  # D2-ECK62R, align_free_entries.tsv before the R7B-ECK62 carry
+    return {r[0]: r[1] for r in rd("align_flip_entries.tsv") if int(r[6]) >= 3 and float(r[11]) >= 0.30
+            and float(r[11]) >= orig[r[0]] + 0.20 and float(r[11]) > float(r[15]) + 0.20}
+
+
 def assign_free(argv):
     """PREREG-ECK62-FREE: print-free book assignment with a shuffled-key control."""
     data, d62 = argv[0], argv[argv.index("--assign-free") + 1]
@@ -619,10 +633,12 @@ def assign_free(argv):
     unk = [e for e in es if e["book"] == "?"]
     ud = [decide(real[e["id"]]) for e in unk]
     out = ["id\tdate\tscore_key1\tscore_key2\tdecision\tassigned"]
+    fl = flips()  # R7B-ECK62: an accepted D2-ECK62R flip overrides the print-free book ('1r'/'2r'); decision column unchanged
     for e, a in zip(unk, ud):
         y, m, dd = e["date"]
         s = real[e["id"]]
-        out.append(f"{e['id']}\t{y}-{m:02d}-{dd:02d}\t{s[0]}\t{s[1]}\t{a}\t{(a + 'f') if gate and a != '?' else '?'}")
+        asn = (a + 'f') if gate and a != '?' else '?'
+        out.append(f"{e['id']}\t{y}-{m:02d}-{dd:02d}\t{s[0]}\t{s[1]}\t{a}\t{(fl[e['id']] + 'r') if e['id'] in fl else asn}")
     summ = ["statistic\tvalue", "flags\tpossessive=True guard=True markers_deleted=True",
             f"known_answer_entries\t{nk}", f"known_answer_decided\t{ndec}", f"known_answer_accuracy\t{acc:.3f}",
             f"shuffled_key_accuracy_20\t{' '.join(f'{x:.3f}' for x in cacc)}",
@@ -653,8 +669,8 @@ def read_free(argv):
     asg = {}
     for l in (HERE / "assign_free.tsv").read_text().splitlines()[1:]:
         f = l.split("\t")
-        if f[5] in ("1f", "2f"):
-            asg[f[0]] = f[5][0]
+        if f[5] in ("1f", "2f", "1r", "2r"):
+            asg[f[0]] = f[5]
     voc = vocab()
     es = [e for e in entries(data) if e["id"] in asg]
     tsv = ["id\tpage\tdate\tassigned\tkeyed\tS\tI\tM\toov\tclass\toov_words"]
@@ -667,7 +683,7 @@ def read_free(argv):
           "Not a novelty claim (rule 10).", ""]
     tot = collections.Counter()
     for e in es:
-        bk = asg[e["id"]]
+        bk, how = asg[e["id"]][0], asg[e["id"]][1]
         decode_all([e], keys[bk], True, g)
         c = e["counts"]
         bare = re.sub(r"\[[^\]]*\]|\{[^}]*\}", " ", e["reading"])
@@ -678,8 +694,8 @@ def read_free(argv):
         tot.update({"S": sg, "I": ig, "M": mg, cls: 1, "book" + bk + cls: 1})
         y, m, dd = e["date"]
         dt = f"{y}-{m:02d}-{dd:02d}"
-        tsv.append(f"{e['id']}\t{e['page']}\t{dt}\t{bk}f\t{keyed}\t{sg}\t{ig}\t{mg}\t{len(oovw)}\t{cls}\t{' '.join(oovw)}")
-        md += [f"**{e['id']}** (Page {e['page']}, {dt}; book {bk}f; S {sg} I {ig} M {mg}; oov {len(oovw)}; {cls})", "",
+        tsv.append(f"{e['id']}\t{e['page']}\t{dt}\t{bk}{how}\t{keyed}\t{sg}\t{ig}\t{mg}\t{len(oovw)}\t{cls}\t{' '.join(oovw)}")
+        md += [f"**{e['id']}** (Page {e['page']}, {dt}; book {bk}{how}; S {sg} I {ig} M {mg}; oov {len(oovw)}; {cls})", "",
                e["reading"], ""]
     summ = (f"entries {len(es)}; words {tot['words']} (1f {tot['book1words']}, 2f {tot['book2words']}); "
             f"not {tot['not']} (1f {tot['book1not']}, 2f {tot['book2not']}); tokens S {tot['S']} I {tot['I']} M {tot['M']}")
@@ -721,7 +737,7 @@ def print_q(argv):
     # print_free.tsv's dated matches are re-found with their committed readings (readings_free.md), for the anchor
     fr, md = [], (HERE / "readings_free.md").read_text().split("\n")
     for i, l in enumerate(md):
-        m = re.match(r"\*\*([\d.]+)\*\* \(Page \d+, (\d+)-(\d+)-(\d+); book (\d)f", l)
+        m = re.match(r"\*\*([\d.]+)\*\* \(Page \d+, (\d+)-(\d+)-(\d+); book (\d)[fr]", l)
         if m:
             w = words(plain_of(md[i + 2]))
             fr.append({"id": m.group(1), "date": tuple(int(x) for x in m.groups()[1:4]), "bk": m.group(5),

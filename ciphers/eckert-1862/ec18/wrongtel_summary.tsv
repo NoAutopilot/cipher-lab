@@ -1,0 +1,12 @@
+statistic	value
+targets	18
+positive_control	14 (classified on clear >= 6: 14)
+positive_median_p10	0.871 0.676
+negative_control	32 windows
+negative_median_p90	0.206 0.296
+gate	PASS (pos median >= 0.50, neg median <= 0.25, pos p10 > neg p90)
+target_classes	right-telegram 7, undecided 11
+target_median_coverage	0.655
+targets_with_second_date_line	0
+targets_sharing_an_or_page	2
+by_month	1864-01: right-telegram 1; 1864-06: right-telegram 1; 1864-08: right-telegram 1; 1864-12: undecided 1; 1865-01: undecided 2; 1865-02: right-telegram 1, undecided 1; 1865-03: right-telegram 1, undecided 4; 1865-04: right-telegram 2, undecided 2; 1865-07: undecided 1

@@ -1178,53 +1178,43 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9987.565	2	47.3	130	target	103	levels			plain-replaced	CONFLICT	100 cars
 9987.565	2	47.3	130	target	109	harp	Trenton	H	word	UNFIXED	norfolk roads
 9987.565	2	47.3	130	target	110	twinkles	Overtook (or taking) the Enemy	H	word	UNFIXED	norfolk roads
-9991.571	2	46.3	3	target	1	Mentor	Howard O O	H	word	UNFIXED	farmville tuesday jno gibbon major general 762 n and se va w
-9991.571	2	46.3	3	target	3	Oakum	Lee S P	H	word	UNFIXED	farmville tuesday jno gibbon major general 762 n and se va w
-9991.571	2	46.3	3	target	6	Campbell	Harker	H	word	COLLISION	campbell
-9991.571	2	46.3	3	target	17	Garden	Mobile	H	word	CONFLICT	bichmond
-9991.571	2	46.3	3	target	31	libby	6 PM (time word)	H	time	COLLISION	libby
-9991.571	2	46.3	3	target	36	saddled	Guard (-ed, -ing)	H	word	AGREE	guarded
-9991.571	2	46.3	3	target	45	Zebra	1000 (numeral)	H	numeral	UNFIXED	
-9991.571	2	46.3	3	target	47	odor	Porter D D	H	word	CONFLICT	arrest
-9991.571	2	46.3	3	target	49	numbered			plain-replaced	CONFLICT	paroled
-9991.571	2	46.3	3	target	60	Zodiac	Sunday	H	word	UNFIXED	
-9991.571	2	46.3	3	target	87	Irvings	Bragg	H	word	CONFLICT	president s
-9991.571	2	46.3	3	target	103	Nancy	8 PM (time word)	H	time	AGREE	
-9991.571	2	46.3	3	target	105	Meriden	Hunter D	H	word	UNFIXED	p m major general ord richmond va
-9991.571	2	46.3	3	target	118	oakum	Lee S P	H	word	CONFLICT	arrest
-9991.571	2	46.3	3	target	120	Camel	Florence	H	word	CONFLICT	campbell mayo
-9991.571	2	46.3	3	target	122	o			plain-replaced	CONFLICT	campbell mayo
-9991.571	2	46.3	3	target	136	leavit			plain-replaced	CONFLICT	leave it in the
-9991.571	2	46.3	3	target	137	sligo	Killing	H	word	CONFLICT	leave it in the
-9991.571	2	46.3	3	target	151	torch	Pursue (-ed, -ing)	H	word	CONFLICT	of the
-9991.571	2	46.3	3	target	154	John	Imboden	H	word	UNFIXED	
-9991.571	2	46.3	3	target	160	Caldwell	5 (numeral)	H	numeral	UNFIXED	
-9991.571	2	46.3	3	target	169	Imogene	3.30 PM (time word)	H	time	UNFIXED	
-9991.571	2	46.3	3	target	170	Knapp	16 (numeral)	H	numeral	UNFIXED	
-9991.571	2	46.3	3	target	172	negus	Sheridan P H	H	word	UNFIXED	
-9991.571	2	46.3	3	target	175	tulip	Period	H	punct	NOTSCORED	
-9991.571	2	46.3	3	target	182	yard	Period	I	punct	NOTSCORED	
-9991.571	2	46.3	3	target	188	Dawson	6 (numeral)	H	numeral	UNFIXED	
-9991.571	2	46.3	3	target	190	Edwards	8 (numeral)	H	numeral	UNFIXED	
-9991.571	2	46.3	3	target	191	Dwight	1000 (numeral)	H	numeral	UNFIXED	
-9991.571	2	46.3	3	target	192	pekin	Cavalry	H	word	UNFIXED	
-9991.571	2	46.3	3	target	194	Sweden	Join	H	word	UNFIXED	
-9991.571	2	46.3	3	target	195	flora	Maj Gen W T Sherman	H	word	UNFIXED	
-9991.571	2	46.3	3	target	196	Stanhope	Interrogation	H	punct	NOTSCORED	
-9991.571	2	46.3	3	target	201	Brooks	2 (numeral)	H	numeral	UNFIXED	
-9991.571	2	46.3	3	target	205	subject	Protect	H	word	UNFIXED	
-9991.571	2	46.3	3	target	207	Brooks	2 (numeral)	H	numeral	UNFIXED	
-9991.571	2	46.3	3	target	210	Fortune	Maj Gen W T Sherman	H	word	UNFIXED	
-9991.571	2	46.3	3	target	223	Tulip	Period	H	punct	NOTSCORED	
-9991.571	2	46.3	3	target	224	Whiff	Telegraph (-ed, -ing)	H	word	UNFIXED	
-9991.571	2	46.3	3	target	242	repeated	Order	C	word	UNFIXED	
-9991.571	2	46.3	3	target	243	yawl	Signed	H	sig	NOTSCORED	
-9991.571	2	46.3	3	target	244	magic	Grant U S	H	word	UNFIXED	
-9991.571	2	46.3	3	target	250	Pigeon	Cipher	H	word	UNFIXED	gbant lieutenant general chap lvm correspondence etc union 763 richmond va april
-9991.571	2	46.3	3	target	254	Mohawk	Meade G G	H	word	UNFIXED	gbant lieutenant general chap lvm correspondence etc union 763 richmond va april
-9991.571	2	46.3	3	target	257	Madrid	Grant U S	H	word	AGREE	gbant lieutenant general chap lvm correspondence etc union 763 richmond va april
-9991.571	2	46.3	3	target	258	Sampson	Ferry	H	word	UNFIXED	grant second telegram leaving the subject of arrest in my bands is
-9991.571	2	46.3	3	target	264	Negus	Sheridan P H	H	word	UNFIXED	call an extra session of
+9991.571	1	46.3	3	target	1	Mentor	Maj Gen E. O. C. Ord	H	word	AGREE	
+9991.571	1	46.3	3	target	2	unity	Period	H	punct	NOTSCORED	
+9991.571	1	46.3	3	target	3	Oakum	Arrest (-ed, -ing)	H	word	AGREE	
+9991.571	1	46.3	3	target	17	Garden	Richmond	H	word	AGREE	bichmond
+9991.571	1	46.3	3	target	31	libby	6 PM (time word)	H	time	COLLISION	libby
+9991.571	1	46.3	3	target	33	unity	Period	H	punct	NOTSCORED	
+9991.571	1	46.3	3	target	36	saddled	Guard (-ed, -ing)	H	word	AGREE	guarded
+9991.571	1	46.3	3	target	45	Zebra	Period	H	punct	NOTSCORED	
+9991.571	1	46.3	3	target	47	odor	Arrest (-ed, -ing)	H	word	AGREE	
+9991.571	1	46.3	3	target	49	numbered			plain-replaced	CONFLICT	paroled
+9991.571	1	46.3	3	target	60	Zodiac	Period	H	punct	NOTSCORED	
+9991.571	1	46.3	3	target	87	Irvings	President of the U.S.	H	word	AGREE	
+9991.571	1	46.3	3	target	103	Nancy	8 PM (time word)	H	time	AGREE	
+9991.571	1	46.3	3	target	104	Ghost	15 (numeral)	H	numeral	UNFIXED	p m major general
+9991.571	1	46.3	3	target	105	Meriden	Maj Gen E. O. C. Ord	H	word	AGREE	
+9991.571	1	46.3	3	target	118	oakum	Arrest (-ed, -ing)	H	word	AGREE	
+9991.571	1	46.3	3	target	120	Camel	Harpers Ferry	H	word	UNFIXED	campbell mayo
+9991.571	1	46.3	3	target	137	sligo	In the	H	word	AGREE	
+9991.571	1	46.3	3	target	151	torch	Of the	H	word	AGREE	
+9991.571	1	46.3	3	target	154	John	Maj Genl U.S. Grant	H	word	AGREE	
+9991.571	1	46.3	3	target	169	Imogene	3 PM (time word)	H	time	UNFIXED	second telegram leaving
+9991.571	1	46.3	3	target	172	negus	Jno A. Dahlgren	H	word	UNFIXED	second telegram leaving
+9991.571	1	46.3	3	target	175	tulip	Open (-ed, -ing)	H	word	UNFIXED	second telegram leaving
+9991.571	1	46.3	3	target	192	pekin	Comma	H	punct	NOTSCORED	
+9991.571	1	46.3	3	target	194	Sweden	Information	H	word	UNFIXED	second telegram leaving
+9991.571	1	46.3	3	target	195	flora	Newbern	H	word	UNFIXED	second telegram leaving
+9991.571	1	46.3	3	target	196	Stanhope	In the meantime	H	word	UNFIXED	second telegram leaving
+9991.571	1	46.3	3	target	210	Fortune	Newbern	H	word	UNFIXED	of arrest in my bands is received e o 0 ord major
+9991.571	1	46.3	3	target	223	Tulip	Open (-ed, -ing)	H	word	UNFIXED	call an extra session of
+9991.571	1	46.3	3	target	224	Whiff	Troops	H	word	UNFIXED	call an extra session of
+9991.571	1	46.3	3	target	243	yawl	Encountered enemy in strong force	H	word	UNFIXED	call an extra session of
+9991.571	1	46.3	3	target	244	magic	Maj Gen O. O. Howard	H	word	UNFIXED	call an extra session of
+9991.571	1	46.3	3	target	250	Pigeon	Cut off	H	word	PARTIAL	call an extra session of
+9991.571	1	46.3	3	target	254	Mohawk	Maj Gen J. G. Parke	H	word	UNFIXED	call an extra session of
+9991.571	1	46.3	3	target	257	Madrid	Maj Gen O. O. Howard	H	word	UNFIXED	call an extra session of
+9991.571	1	46.3	3	target	258	Sampson	Ferry	H	word	UNFIXED	call an extra session of
+9991.571	1	46.3	3	target	264	Negus	Jno A. Dahlgren	H	word	UNFIXED	call an extra session of
 9996.574	2	46.3	822	target	0	Hannah	1 PM (time word)	H	time	UNFIXED	out your loyalty shall protection and pardon be meted out to you
 9996.574	2	46.3	822	target	1	George	McCallum D C	H	word	UNFIXED	out your loyalty shall protection and pardon be meted out to you
 9996.574	2	46.3	822	target	2	Borgia	Secretary of State	H	word	UNFIXED	out your loyalty shall protection and pardon be meted out to you
