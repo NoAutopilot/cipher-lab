@@ -1443,3 +1443,77 @@ api.openalex.org 4; api.semanticscholar.org 4 (one 429); api.core.ac.uk 4; api.c
 
 `python3 tools/depth_check.py` after the status.json edit (exit 0; results[64] is N0, key-to-known-text, so not counted and
 not listed by line): "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0".
+
+## R12-LVNV: 4616 reading revision after R12-LVN16 (6 Oct 2026)
+
+Verifier R12-LVNV (account 2, for LANE LANE-RUN12-account-2), 6 Oct 2026, 11:39-11:44 UTC by `date -u`. Separate from the
+solver (R12-LVN16, commits c8e1f4d7b PREREG, 0d10d1b6e scored). Propagation under rule 10 and verifier step 4; nothing decoded.
+The solver's files are not edited here; overturned rows are listed in the corrections note below.
+
+**Re-derivation.** `python3 tools/decode_key.py ciphers/lodewijk-van-nassau-1573-74 --config .../decode_4616_full.json --check`:
+exit 0, "tokens 276: C 250, H 1, I 1, M 12, U 12", reading up to date. `lvn16/apply.py --check`: exit 0, control A3 193/210, B3
+194/210, gate PASS. **Defect in the logged reproduce line:** NOTES says run `lvn16/score.py && lvn16/apply.py --check`, but
+score.py aligns against the *current* ciphertext_4616.tsv (post-apply, renumbered by the splits), so running it now rewrites
+lvn16/aligned.tsv wrongly (control 183/217, 182/217, below gate) and apply.py --check then reports STALE. Run against
+lvn16/ciphertext_4616_pre.tsv (a scratch copy), score.py reproduces 193/210 and 194/210 and an aligned.tsv byte-identical
+to the committed one (checked). So the committed result stands; the script should read the _pre file. aligned.tsv restored.
+
+**Pre-registration order.** lvn16/PREREG.md committed 11:23:01 UTC (c8e1f4d7b); passes, aligned.tsv and the applied
+ciphertext committed 11:26:23 UTC (0d10d1b6e). PREREG predates the scored commit. It cannot show the blind passes were
+not already run before 11:23 (they were committed only with the result); the gate and settle rule are as registered.
+Minor: PREREG names crop region 0,320,2481,880; NOTES' pasted command used 380,320,2080,880 with margins. Same page
+render (sha1 4f47b490... re-derived here, matches), same 13 lines; no effect on the rows.
+
+**Image check.** WVO 4616 PDF fetched once (resources.huygens.knaw.nl, HTTP 200), p1 rendered `pdftoppm -r 300` (sha1
+match), crops re-cut with the worker's own `tools/iiif_lines.py --image 04616-1.png --out crops --prefix 04616_p1 --region
+380,320,2080,880 --distance 45 --prominence 20 --top-margin 12 --bottom-margin 12 --debug` (13 lines, as logged), read by
+eye, zoomed 2-3x where a 3/7 or 8/9 distinction decided. Settled rows (12 of 19) and confirmed rows (2 of 7):
+
+| row (pre pos) | change | image |
+|---|---|---|
+| p1_L06/16 | 9 -> 4 | supports 4 |
+| p1_L07/4 | 72/16 -> 32/16 | supports 32 (3 drawn as the hand's tailed 3, not the flat-topped 7 of 72 beside it) |
+| p1_L07/20 | 3 -> 31 | supports 31 (at the edge) |
+| p1_L09/3 | 735/71 -> 335/71 | supports 335 (same tailed 3 as the line's other 3s) |
+| p1_L12/7 | 123 -> 120 | supports 120 |
+| p1_L14/1 | 75 -> 78 | supports 78 |
+| p1_L15/20 | 8 -> 81 | supports 81 |
+| p1_L16/11 | 118 -> 116 | supports 116 |
+| **p1_L16/18** | **81 (S) -> 91** | **does not support: at zoom the first digit is a closed 8, no descender (the hand's 9 has a long tail, cf. p1_L17/2)** |
+| p1_L17/11 | 102 -> 101 | supports 101 (moderate) |
+| p1_L17/12 | 91 -> 81 | supports 81 |
+| p1_L17/15 | 121 -> 221 | supports 221 as a sign (first digit has the 2's hooked top; the line-final 121 has a straight 1); see value note |
+| p1_L06/18, p1_L07/14 | 40, 82 confirmed | support |
+
+Slash groups split (7 of 14 opened): 24/10 (L06), 64/112 (L07), 113/115 (L08), 81/28/2 (L12), 21/16 (L14), 28/12 (L14),
+81/16 (L16): in each the stroke is ink between two digit groups; the image supports the split.
+
+**121 -> 221 'hollande' H.** key_full: 221 = hollande, H, witness WVO 4496's contemporary interlinear gloss 'Hollando' (x3,
+AX-GLOSS), corroborated unglossed in 4614 ('tiré de la Haye en 221'). WVO's record for 4496 (fetched once today) gives it
+as **to** Lodewijk (Willem -> Lodewijk, April 1573: list B direction). 4616 is Lodewijk -> Willem (list A). This folder's own
+NOTES (AX2/AXMERGE4, "Q3") shows the name codes >= 145 differ by direction (172, 217, 339, 202 disagree) and proposes that
+key_full's codes >= 145 not cross direction. 221's list-A support is the single 4614 context, inferred, not a gloss. By rule 4's
+direction clause the value is graded **M in 4616**, not H: 'hollande' is the likely value, not a key-source reading here.
+
+**Corrections note (rows overturned; solver files not edited):**
+1. p1_L16/18: settled 91 (C 'g') -> contested; image reads 81 (the pre value). Grade M pending the next image pass.
+2. p1_L17/15: sign 221 stands; value 'hollande' H -> M in 4616 (witness is list B direction).
+Counts after this audit: 4616 C 249, H 0, I 1, M 14, U 12 (276 tokens); the worker's were C 250, H 1, M 12, U 12; before
+R12-LVN16 C 208, H 0, I 1, M 27, U 25 (261 tokens). 4610/4611/4616 C/H 2358 of 3214 (73.4%); four letters 2358 of 4047
+(**58.3%**, from 57.5%; the two overturns do not move the first decimal). The two rows are not applied to
+ciphertext_4616.tsv here (verifier, not solver); the committed reading still shows the worker's grades until a solver applies them.
+
+**Further finding (not a correction).** 12 of the block's H control rows have both blind readers agreeing on another value
+(L05/4 71->31, L05/14 76->36, L07/5 37->31, L07/11 84->64, L10/1 21->28, L12/1 90->40, L13/1 79->39, L14/2 91->81, L15/16 36->31,
+L16/2 26->20, L16/4 85->35, L17/2 91->81). At zoom, L07/5 is clearly 37 and L17/2 clearly 91 (readers wrong); L14/2 leans 81
+(readers right); L12/1 is ambiguous. The two readers share confusions (7->3/1, 9->8), so A3 == B3 is not independent
+evidence on exactly those pairs: L16/18 above is one. Next (one line): a zoomed eye pass on the 12 contested H rows and on
+every settle that crosses 3/7 or 8/9, ~$1.5.
+
+**N-class.** Unchanged: 4616 stays N4 (no prior decipherment located). The revision changes token grades inside an unprinted
+letter; nothing printed is affected. Depth: row results[60] stays D2; its depth_pct (62.6%, DEPTH-REGRADE basis "C 2512 of
+4012") is on a different token basis from the 57.5/58.3% figure and was not recomputed here; status.json not edited.
+SECOND-OPINIONS-QUEUE.tsv: rows SO-LODEWIJK-1573-74 and SO-LODEWIJK-5797 exist; neither quotes the 4616 token counts or a
+4616 phrase that changed, so no edit; a one-clause note is added to SO-LODEWIJK-1573-74's notes column pointing here.
+
+Requests: resources.huygens.knaw.nl 2 (4616 PDF, 4496 record). No subagents.
