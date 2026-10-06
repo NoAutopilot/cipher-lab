@@ -85,3 +85,6 @@ every sheet, as GAPS10-GAPS16 did for invnrs 12 and 7 (same scripts, read their 
 decipherment, a plain copy, or a Paris-side translation, or any further glossed Janssens cipher leaf. One session = <= 60 requests to
 service.archief.nl, >= 1.8 s apart; record which scans were paged and which remain. Any hit: fetch at 1200 px, describe, record scan
 numbers; no transcription in this job. Update Remaining gaps / Escalation / Verdict and gaps_check.
+
+Wave 1 sessions (07:20 UTC): R10-ROELL9 session_01Cagb6db2peK3oexuGJkRyQ; R10-SUR session_01Nt4mHFoFvhGfhLCgCS3TL8; R10-OBREDV
+session_0193bQtSBPEJ81F2fQ8Q43R7; R10-OBRED98 session_01JQLminjbY4FrRFVuk7J2EC; R10-JANS26 session_01C9XxTVekJp3AQYSZCSp5pr.
