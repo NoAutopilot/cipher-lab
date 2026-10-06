@@ -9330,3 +9330,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 06:25 | R9-BAL103B worker | claim: baluze103-letellier-marca-1644 circled/plain 9 crop read on the 42 tokens, cap 3, box 06:24-06:59 UTC (80% 06:52), for LANE LANE-RUN9-account-1
 2026-10-06 06:25 | R9-FLOR worker | claim: florence-dieci-responsive glyph_atlas threshold tuning on c.127 (no vision, script only), cap 3, box 06:25-07:05 UTC (80% 06:57), for LANE LANE-RUN9-account-1
 2026-10-06 06:25 | R9-DEC2678B worker | claim: decode-2678-bnf-colbert127-gravel-1665, locate Gravel other cipher letters (R2733 + AE CP Allemagne Jan 1665), locator only, cap 3, box 06:25-07:05 UTC (80% 06:57), for LANE LANE-RUN9-account-1
+2026-10-06 06:25 | R9-PIS2 worker | claim: fr16045-pisany-rome-1585, T31 per-token crop compare vs T45/T36 table cells; cap $3.5, box 06:24-07:09 UTC; for LANE LANE-RUN9-account-1
