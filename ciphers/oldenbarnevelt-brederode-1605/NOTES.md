@@ -781,3 +781,8 @@ Next steps (named, not run): (1) locate the 10 Aug 1598 key inside NA 3.01.14 in
 Brederode-side correspondence in NA 1.01.02 inv. 6016 from image order 261 on (named by TX-KEYS) for a sibling cipher letter with
 a gloss. Requests: `service.archief.nl` 10 (2 METS, 8 images), >= 2 s apart, descriptive UA, no 403/429/challenge. Subagents: 3
 Sonnet blind passes (one per page).
+
+## Verifier on the inv. 1490 corrections (R10-OBREDV, 6 Oct 2026, account 2)
+
+AUDIT.md "Verifier: R9-OBRED4 corrections": 170 -> 179 upheld (bowl and right stroke match the scan's 9, not its 0; the crease is
+only a thin line above the bowl), 704 upheld as undecidable (blot; print kept, M). ciphertext.txt unchanged; no test on disk changes.
