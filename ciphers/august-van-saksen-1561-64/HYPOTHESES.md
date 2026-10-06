@@ -9,3 +9,8 @@
 Not settled by the more frequent value. 126 stays M at both K: its date is closer to the 'der' witness. K may be a general article sign
 (der/die) in this system; that is a hypothesis, not tested. Test that would move it: a native re-look at 124 f.134's K (is it K?), or a
 further K in 175 pp.3-8 or 124 under 'der'.
+
+## R11A-AVSK (6 Oct 2026): homophonic_anneal on native 53 (prereg_avsk.md)
+| family | target | control | control result | target result | verdict |
+|---|---|---|---|---|---|
+| homophonic (tools/homophonic_anneal.py, anneal_53n.py) | ciphertext_53.tsv native, N 364, K 21 | make_control from align_74 (K 21, N 364; exact-profile control not constructible); seeds 1-3 identical by construction | 0.992 (gate C PASS); count<=3 signs 3/6 (gate L FAIL) | 4/6 restarts converge on key_53 + 9 = f; shuffle null 9 = f 0/6 (gate S PASS); G1 = G7 = s | Q1 untestable at this N by this control (9 stays M); Q2 confirmed; no key change |
