@@ -19,3 +19,8 @@ further K in 175 pp.3-8 or 124 under 'der'.
 | family | target | control | control result | target result | verdict |
 |---|---|---|---|---|---|
 | homophonic (tools/homophonic_anneal.py, anneal_53n.py control2) | ciphertext_53.tsv native, N 364, K 21; sign 9 count 2 | make_control on 10 seed-varied 364-letter windows of de1600/briefedespfalzgr01joha (1575-82), each with >= 1 count-2 sign | share mean 0.976 (gate C PASS); count<=3 signs 6/22 = 0.273 (gate L FAIL); count-2 signs 2/12 = 0.167 (gate L2 FAIL) | R11A-AVSK's: 4/6 converge, all 9 = f; shuffle 0/6 | the annealer does not read count-2 signs at N 364 (2/12); its 9 = f is not evidence; sign 9 stays M by context; no key change |
+
+## R12A-AVS175 (6 Oct 2026): does WVO 175 pp.3-8 separate Qf from Pf? (prereg_avs175.md addendum R12A-AVS175)
+| family | target | control | control result | target result | verdict |
+|---|---|---|---|---|---|
+| gloss-aligned sign shape (blind Sonnet read + reconciliation) | 175 pp.3/6/8, 5 gloss-f lines; class-A (loop on straight stem) calls under gloss f | random-position null, 2 draws from ~132 positions, 5 gloss-f positions, 1000 draws | null mean 0.036, p95 0.500 | S1 2/2 = 1.00 > p95; S2 = 1 shape | no separation: Qf stays M (untested-by-this-tool for Qf; f = one shape in 175) |

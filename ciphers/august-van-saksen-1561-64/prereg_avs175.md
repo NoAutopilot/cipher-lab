@@ -75,7 +75,7 @@ Q2 Qf and Q3 K: the same decision rules as the A4-AVS175 addendum. In particular
 proximity to 124); a clean K here only adds to the 175 witness count in HYPOTHESES.md and key_conflicts.tsv. Nothing else is regraded.
 Stop rule: if the session passes USD 3.6 (80% of 4.5) or 01:00 UTC before the reads are reconciled, stop and log what was read.
 
-## Addendum R12A-AVS175, 6 Oct 2026 ~18:40 UTC (worker R12A-AVS175, account 1, LANE-RUN12-account-1; committed before any blind read)
+## Addendum R12A-AVS175, 6 Oct 2026 18:29 UTC by date -u (worker R12A-AVS175, account 1, LANE-RUN12-account-1; committed before any blind read)
 Question: does any hand on WVO 175 pp.3-8 (pp.3, 5, 6, 8 carry cipher; 4 and 7 none) write two distinguishable f-signs, so that 98/126's
 Qf can be told from Pf? Source: 00175.pdf fetched again 6 Oct 2026 (1 request), native page images; 00098.pdf (1 request) f.66 for the
 reference. Crops: `tools/iiif_lines.py --image p{3,5,6,8}-000.jpg --out crops --prefix p00N --debug`, then cipher-only strips cut at native
