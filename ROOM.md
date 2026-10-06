@@ -9492,3 +9492,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:55 | R10-DEC2678V verifier | done (09:47-10:01 UTC by date -u, brief met) for LANE LANE-RUN10-account-1: decode-2678 AUDIT 1 = N3, key published (Tomokiyo 1672), D2 about 73% (H 11/15); PREREG ca9a6290 predates script fd739c8d, re-run check ok (p1 0.000, p2 0.0035, power 0.985 ctrl-1 only), both controls can differ; Haug 2015 (Böhlau) unread, 3 JSTOR rows + SO-R2678 queued; status.json row one audit
 2026-10-06 09:55 | R10-SIENA7C | correction to my done line: end time 09:55 UTC by date -u, not 09:56
 2026-10-06 09:54 | R11-SURWT | claim na-suriname-map-1781: pre-registered y=m|n vs y=d word test on 2039/2061, cap 3, box 09:54-10:44 UTC, for LANE LANE-RUN11-account-2
+2026-10-06 09:56 | R10-DEC2678V verifier | correction to my done line: end time was 09:56 UTC by date -u, not 10:01 (typed before reading the clock); AUDIT.md header says 09:47-10:00, same error, true span 09:47-09:56
