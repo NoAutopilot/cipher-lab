@@ -12,13 +12,19 @@ BOXES = {
                                      (3060, 3270), (3260, 3520)]},
     760: {'y': (640, 3480), 'cols': [(1990, 2190), (2255, 2455), (2520, 2730), (2790, 2995), (3060, 3260), (3320, 3540)]},
 }
+SHEAR = float(os.environ.get('SHEAR', '0.025'))  # 0 = the first cut (R11-CLIN2380B blind pass A read SHEAR=0 crops)
+PAD = int(os.environ.get('PAD', '30'))  # widen each box by PAD px both sides (0 for pass A's crops)
+
+
 def main(src, out):
     os.makedirs(out, exist_ok=True)
     for img, b in BOXES.items():
         im = ImageOps.autocontrast(Image.open(os.path.join(src, f'img{img}.jpg')).convert('L'), cutoff=1)
-        y0, y1 = b['y']; mid = (y0 + y1) // 2
+        y0, y1 = b['y']
+        if SHEAR:  # the columns drift right down the page (about 50-90 px over the height); undo it before boxing
+            im = im.transform(im.size, Image.AFFINE, (1, SHEAR, -SHEAR * y0, 0, 1, 0), resample=Image.BICUBIC, fillcolor=255); mid = (y0 + y1) // 2
         for k, (x0, x1) in enumerate(b['cols'], 1):
             for half, (a, z) in (('top', (y0, mid + 60)), ('bot', (mid - 60, y1))):
-                im.crop((x0, a, x1, z)).save(os.path.join(out, f'p{img - 638}_c{k}_{half}.jpg'), quality=70)
+                im.crop((x0 - PAD, a, x1 + PAD, z)).save(os.path.join(out, f'p{img - 638}_c{k}_{half}.jpg'), quality=70)
 if __name__ == '__main__':
     main(sys.argv[1], sys.argv[2])
