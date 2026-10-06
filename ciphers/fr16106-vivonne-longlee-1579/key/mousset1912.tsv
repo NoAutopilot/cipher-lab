@@ -1,0 +1,81 @@
+# Mousset, Dépêches diplomatiques de M. de Longlée (Paris 1912), pp. lviii-lix, "Chiffre de Longlée reconstitué d'après l'interprétation de ses dépêches".
+# Key source: published (Albert Mousset's modern reconstruction, credited). Read by D4-VIVMOUS, 6 Oct 2026, from IA dpchesdiplom00longuoft
+# leaves n67 (p.lviii) and n68 (p.lix), page images at 1800 px; the _djvu.txt OCR of the table is unusable (glyphs). Glyphs are described
+# in words; images: mousset1912_plviii_table.jpg, mousset1912_plix_w500.jpg. Order within a row is Mousset's left-to-right order (g1, g2, ...).
+# Tomokiyo (henryiii.htm): Vivonne used this table from 1579 and left it to Longlée, so it applies to fr.16107 (1580).
+value	glyph	description
+a	a.g1	small tilde/wave ~
+a	a.g2	'oz'/'oτ' ligature: open o joined to a z-like stroke
+a	a.g3	e-like loop with a long tail descending right (ɵ with tail)
+b	b.g1	figure 9 / ꝯ curl
+b	b.g2	H with a box (two verticals, top and middle bars)
+c	c.g1	figure 7
+c	c.g2	figure 6
+c	c.g3	φ (circle on a tall vertical)
+d	d.g1	two small o's tied by an arc (σ‿o)
+d	d.g2	δ joined to b (ꝺb)
+d	d.g3	three dots ∴
+e	e.g1	figure 3 / ʒ
+e	e.g2	small x
+f	f.g1	open box / U with tall left side
+f	f.g2	small J/ɟ with top bar
+g	g.g1	two verticals with two crossbars (#-like, ǂǂ)
+g	g.g2	Π-like tall double vertical with top and foot bar (Ⅱ)
+g	g.g3	'zr'/'ɀ' small ligature
+h	h.g1	wave with a rise (‿⌒ on the line)
+h	h.g2	a diamond on a vertical stem (♀-like, ⟡ on stem)
+i	i.g1	capital A
+i	i.g2	'Ly'/'Ꮭ' hooked sign ending in a descender loop
+l	l.g1	∞ (closed figure-eight lying)
+l	l.g2	Δ triangle
+l	l.g3	∂-like sign with a hook (ᘐ)
+m	m.g1	y with a crossbar on the descender (ɏ)
+m	m.g2	long-s ʃ
+m	m.g3	figure 8 (small, upright)
+m	m.g4	small s
+n	n.g1	⊥ (inverted T)
+n	n.g2	q-like: small bowl left of a long vertical (ɖ reversed, ꟼ)
+n	n.g3	ϸ-like: long hooked descender with a bowl right (þ/ꝥ)
+o	o.g1	δ with a horizontal cross stroke through the ascender (ð̶, 'ŏ' with a bar)
+o	o.g2	α
+p	p.g1	Y/Ꮖ (fork on a stem)
+p	p.g2	box on a stem (Ꝓ/⊤ with a box, '中'-like)
+q	q.g1	'ɠ/ɡ' tall q with a looped tail
+r	r.g1	figure 4 (open)
+r	r.g2	figure 4 (closed, cross on a vertical)
+r	r.g3	ϵ (lunate epsilon, small)
+s	s.g1	hooked ʔ with a small loop at top (ꞌ curl reversed)
+s	s.g2	three verticals crossed by two bars (###)
+t	t.g1	§§ / ʃʃ doubled long strokes
+t	t.g2	H (two verticals, one crossbar)
+u,v	u.g1	diamond on a horizontal line (–◇–)
+u,v	u.g2	rectangular bracket ⊐
+u,v	u.g3	∞ with a leading hook (a lying 8 with a left tail)
+x	x.g1	'10'
+y	y.g1	q with a cross on the descender (ꝗ)
+y	y.g2	capital E
+y	y.g3	‡ (vertical with two crossbars)
+z	z.g1	ɗ / round d with a curved ascender (đ-like)
+cc	cc.g1	figure 8 with a top bar (§-like)
+ff	ff.g1	'Ze' ligature: Z joined to a large open curl below
+pp	pp.g1	2/ẑ with a hat (circumflex) above
+rr	rr.g1	ʒ/ζ with a long foot stroke
+ss	ss.g1	open bowl rising to a small spiral (ꝯ with a hook, '૭')
+Portugal	W.Portugal	figure 8 with a tilde above (8̃)
+France	W.France	9 between two dots (·9·)
+Flandres	W.Flandres	VW / double v (vv) with a tick
+Italie	W.Italie	9 inside a large open circle with a hat (Ⓖ-like)
+Espagne	W.Espagne	h/ꜧ between two dots (·ɦ·)
+Angleterre	W.Angleterre	VW with a bar above
+le Roi	W.Roi	W with a bar above
+la Reine	W.Reine	δ/♁ with a cross above and below (± around o)
+car	W.car	l/L with a 3-like curl below ('ꞁʒ')
+fait	W.fait	'Ze'/'2e': a 2 or Z joined to a large open curl (close to ff.g1); "Fait (quelquefois nul)"
+j'ai	W.jai	flag on a vertical: a short top box opening left on a stem (ꟻ/ㅋ-like)
+vous	W.vous	box crossed by a vertical, on a horizontal line (⊏⊐ with a cross: ⊕-rectangle)
+quant	W.quant	Π with two inner verticals (┌┼┼┐)
+quel	W.quel	small S
+prince	W.prince	8 joined to a large curl (ℨ with a loop)
+par	W.par	figure 8 with a horizontal bar on top
+sur	W.sur	T with a second short bar below the top bar (Ŧ)
+com...	W.com	φ (circle on a vertical; close to c.g3)

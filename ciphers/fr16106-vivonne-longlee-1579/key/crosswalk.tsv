@@ -1,0 +1,37 @@
+# Crosswalk from VIV-T's provisional shape labels (tx/SIGNS.md) to Mousset 1912 glyphs (mousset1912.tsv). D4-VIVMOUS, 6 Oct 2026,
+# by eye from line crops images/c107_L01,L02,L05,L12 (s1/s2) against the printed table. It is a shape identification, not a fit:
+# no plaintext or copy was consulted to choose a value. match: one = one table glyph, one value; multi = shape fits glyphs of
+# different values (decoded as {a|b}, grade M); none = no table glyph (decoded '?', grade I). 'o o' adjacent = d.g1 (pair rule).
+label	glyphs	values	match	note
+x	e.g2	e	one	small x
+SS	t.g1	t	one	§§ doubled strokes
+s	m.g2	m	one	long-s
+:	d.g3	d	one	three dots
+a	a.g2	a	one	'oz/tr' ligature look
+t	o.g1	o	one	readers' 't/cross' class is on the crops the barred-δ (ŏ) shape
+e	r.g3	r	one	lunate epsilon
+z	e.g1	e	one	3/ʒ with tail
+d	l.g3	l	one	∂ with hook
+D	l.g2	l	one	Δ (split with A by the readers)
+A	i.g1	i	one	capital A
+y	m.g1	m	one	ɏ y with crossbar
+4	r.g1,r.g2	r	one	figure 4
+6	c.g2	c	one	figure 6
+7	c.g1	c	one	figure 7
+9	b.g1	b	one	figure 9
+u	u.g1,u.g2	u	one	v/u-like
+P	W.quant	quant	one	Π with inner bars
+1	n.g1	n	one	⊥ inverted T; the label also covers a plain ı stroke, which has no table glyph
+H	t.g2,g.g1	t|g	multi	H with one or two crossbars
+T	W.sur,y.g3	sur|y	multi	Ŧ with a flag or second bar
+E	r.g3,y.g2	r|y	multi	ϵ with a bar / E
+c	s.g1,a.g3	s|a	multi	ϱ/ę curl with tail below
+q	y.g1,q.g1	y|q	multi	q with descender (cross seen on L01)
+b	z.g1,d.g2	z|d	multi	đ/ƀ
+2	W.fait,ff.g1	fait|ff	multi	2e/Ze ligature
+S	W.quel,m.g4	quel|m	multi	small S
+8	m.g3,W.par	m|par	multi	figure 8
+R	-	?	none	'ı8' joined pair (r-hook + 8 loop); no single table glyph
+=	-	?	none	two short bars; no table glyph (null candidate)
+o	-	?	none	single small o; only the tied pair 'o o' is in the table (d.g1)
+F	-	?	none	reader's off-sheet label
