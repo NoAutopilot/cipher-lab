@@ -116,3 +116,10 @@ Verdict: "gap 2 -- the f.110 line-crop sample with split_worklist.tsv's crops (t
 instrument left for BOX/T/4/w/z, ~$9". TRANSCRIPTION.md and the lookalike rules apply; use the crops split_worklist.tsv already names (no new
 fetch unless a crop is missing). Pre-register what result would let BOX/T/4/w/z labels collapse onto key.tsv labels before the passes. Report
 agreement and per-label outcomes; no key.tsv change unless the pre-registered gate passes; decode --check after any change. NEAR.md row stays.
+
+### D2B-ROELL2 -- roell-vandedem-1809, find the 9 Feb 1809 minute in NA 2.01.08 inv. 92 (cap 5, box 50 min)
+Intake gate (00:1x UTC 6 Oct): `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+D2B-ROELL's priced next step (NOTES.md ~line 343): locate a 9 Feb 1809 minute to Van Dedem/Testa among inv. 92's 523 scans (Jan-Mar 1809).
+Navigate by date: bisect the scan sequence at thumbnail size (service.archief.nl IIIF, >= 1.5 s apart, <= 40 requests), one native crop only
+for a candidate; never a full-page image to a subagent. If a clear minute of the R1469/R1470 cipher letter is found, record scan, date and
+the clear text's opening lines in NOTES.md (grade nothing as a reading; the alignment is a later job). Stop at the 80% line with what was seen.
