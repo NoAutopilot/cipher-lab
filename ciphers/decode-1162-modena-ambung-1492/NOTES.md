@@ -603,3 +603,45 @@ Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 
 - [x] image-check: full-size p.1 and p.2 re-fetched and cut at native resolution, R10-DEC1162 6 Oct 2026
 - [n/a] retry: nothing failed that a retry would change
 Verdict: keep going: 2 internal gaps; cheapest next: a second blind pass over images/clear/ to settle the 41 doubtful clear-text words (~$2); the g/q split waits on ASKS 144
+
+## R10-DEC1162B: second blind pass over the clear-text crops (account-1 worker, LANE-RUN10-account-1, 6 Oct 2026, 10:43-10:5x UTC)
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-run10-jobs.md` "### R10-DEC1162B". No cipher reading, key, grade or gloss changed.
+
+**Pass.** One blind Sonnet pass per page (2 subagent calls) over the 20 committed crops in `images/clear/` only (no full page,
+no clear_text.tsv, no passA, no DOC 3593, no gloss): `clear/p1_passB.tsv`, `clear/p2_passB.tsv`. Then one reconciliation unit
+by this worker over the same crops (autocontrast, three crops per view, five views), deciding only the doubtful words. The
+reconciler had read clear_text.tsv, so the reconciliation is not blind; pass B is.
+
+**Result** (`clear/doubts_R10B.tsv`). The 41 'doubtful' count of R10-DEC1162 holds 34 words marked '?' in the text and 7 counted
+without a marker (lines 1.20, 1.21, 1.22, 1.24, 2.2, 2.4, 2.8; which words is not recorded, so they were not re-tested). Of the 34:
+12 settled from the crop with pass B or both blind passes behind it (e', inteso, posso [was porto?], lassato, forcia [was forza?],
+consc~ia, ricercha, intendo, viue~, tenire, porera, gr~a), 1 settled as a word only (m~tho = molto), 1 unread word now read but
+still doubtful (1.14 line end: 'grignol?', pass B 'grignol'), 20 stay. Two that stay are blind-pass agreements against the
+reconciled sense reading: 1.4 'tuto?' (both blind passes 'uno') and 1.17 't~pi?' (both 'spi'). Doubtful count now 29.
+
+**Raised.** The date line p.2 1.6, marked certain as "27^o febr~ 1491", is now doubted: both blind passes read the month as
+s~tbre / sitre, and the crop shows f-or-long-s + i-or-t + b + r + e. 'febr~' rested on the later-hand docket on p.1 ("27 feb^o").
+The month in the letter's own hand is not settled; September 1491 is not excluded by the image. The docket and the
+folder's 1492 dating are left as they are; this pass changes no date elsewhere.
+
+**Checked, no change.** Pass B read "se ya" before the p1L08_3 group on 1.23; 'ya' is already the first two signs of that group
+in ciphertext.tsv (yaqb8codayb), so the clear text is right to omit it.
+
+Cost: 2 Sonnet subagent calls + 1 reconciliation unit. Requests: none (all crops on disk).
+
+## Remaining gaps (R10-DEC1162B, 6 Oct 2026)
+Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 5, U 3); verso has no cipher (DECODE doc 3593 and image 2); 31 g/q tiles built into a sorter page (D2-1162); clear text of both pages transcribed, 42 lines, two blind passes, 29 doubtful words left (R10-DEC1162, R10-DEC1162B)
+- the g/q/sigma shape split (8 signs still '?', M) - blocker: waiting-on ASKS row 144 (the owner's sign sort of sorter/modena-gq-sorter.html); then sign_sorter_apply.py, re-key 1168 with split labels (align/run_align.py), re-run score_g.py and decode_key.py --check here, ~$2
+- the 29 doubtful clear-text words, the signature and the month of the date line - blocker: not-attempted; two machine passes leave them split, so per Usage 6 the next reader is a person or a palaeographer; next: one owner/palaeographer read of the 20 crops guided by clear/doubts_R10B.tsv rows marked 'stays', 'read-doubtful' or 'RAISED', ~$0.5 to prepare a focus sheet
+- code groups `T o` (L01) and `.e.` (L06) - blocker: open-codes; one occurrence each, the L01 gloss is not separable from the letter group's, the L06 sign is unglossed
+
+## Escalation (R10-DEC1162B, 6 Oct 2026)
+- [x] siblings: decode-1168 key applied, gate PASS (G 0.729 vs control p99 0.525; fresh seeds p99 0.525), MOD1162/MOD1162B 3 Oct 2026
+- [x] clear-pages: both pages' clear text transcribed from native crops, two blind passes, R10-DEC1162 and R10-DEC1162B 6 Oct 2026
+- [x] known-keys: decode-1168 key.tsv (period gloss key) is the known key, applied here
+- [x] print: Berzeviczy 1914 checked, letter absent (GF4-BATCH19 3 Oct 2026)
+- [ ] key-rebuild: split g/q into shapes from the owner's sort (sorter/ built D2-1162 5 Oct 2026), then re-key 1168 and re-score here; waits on the sort
+- [x] image-check: full-size p.1 and p.2 re-fetched and cut at native resolution, R10-DEC1162 6 Oct 2026
+- [n/a] retry: nothing failed that a retry would change
+Verdict: keep going: 2 internal gaps; cheapest next: a focus sheet of the 22 unsettled clear-text words (doubts_R10B.tsv 'stays'/'read-doubtful'/'RAISED') for a person's read, ~$0.5; the g/q split waits on ASKS 144

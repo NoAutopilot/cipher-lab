@@ -1,0 +1,36 @@
+page	line	crop	word_in_clear_text	passA	passB	verdict	new_text	note
+1	3	p1_L02a	ma~?	(not separately)	S^re mi^o	stays	ma~?	image: abbreviated word after Ill^ma unclear; B's S^re does not fit the feminine Ill^ma
+1	4	p1_L02b	e'?	e	e~	settled	e'	both blind passes and crop: a single e with a mark after the code group
+1	4	p1_L02b	inteso?	mi^eso	inteso	settled	inteso	crop: minims + teso after the et-sign; B reads it outright
+1	4	p1_L02b	tuto?	uno	uno	stays	tuto?	both blind passes read 'uno'; the crop's first letter is a minim-like stroke; 'tuto' (sense) vs 'uno' (letters) unresolved
+1	5	p1_L03a	porto?	posso	posso	settled	posso	crop shows a double long s; both blind passes read posso
+1	5	p1_L03a	[?]	(omitted)	...	stays	[?]	crop: three letters like 'ip^o' (ipso?); neither blind pass read it
+1	7	p1_L04a	lassato?	lassato	lassato	settled	lassato	all three readings and the crop agree
+1	7	p1_L04a	mor~?	mor~	mente	stays	mor~?	crop: m + o/e + r/n with a tilde; 'mente' (B) and 'mor~' both possible
+1	8	p1_L04b	oniente?	oniente	dimienti	stays	oniente?	crop: o/d + minims + ente; not settled
+1	11	p1_L06a	e~cc~?	ecc	ecce~	stays	e~cc~?	superscript 'ss' over the word in the crop; expansion unclear
+1	11	p1_L06a	m~tho?	m~tho	molto	settled-word	m~tho	crop m~(l)tho, B molto: word = molto, letter form kept
+1	12	p1_L06b	s^a?	s^a	Si	stays	s^a?	crop: S with superscript; not settled
+1	13	p1_L07a	forza?	forza	fozia	settled	forcia	crop reads 'forcia' (c-i, not z); cf. 'sforcio' 1.25
+1	14	p1_L07b	mdorcia?	mdorcia	madrin	stays	mdorcia?	crop m + d/a + orcia; not settled
+1	14	p1_L07b	[?]	(gloss taken as text)	grignol	read-doubtful	grignol?	crop: 'grignol'/'gnignol' at line end; B reads grignol; a name or a cipher-adjacent word, not settled
+1	15	p1_L08a	consc~ia?	(near)	Consia	settled	consc~ia	crop shows Cons + c + tilde + ia (conscientia)
+1	17	p1_L09a	ricercha?	ricercha	cerchia	settled	ricercha	crop: r + cercha with abbreviation; B lost the prefix
+1	17	p1_L09a	t~pi?	spi	spi	stays	t~pi?	both blind passes read 'spi'; tempi (sense) vs spi (letters) unresolved
+1	19	p1_L10a	intendo?	mirendo	ricordando	settled	intendo	crop: minims + tendo (A's mirendo is the same strokes); B's ricordando does not fit the stroke count
+1	19	p1_L10a	abse~a?	abmis	abonda	stays	abse~a?	crop ab + m/s + tilde + a; three different readings
+1	22	p1_L11b	m~ch~?	(near)	mato	stays	m~ch~?	crop m + abbreviation + ch; not settled
+1	22	p1_L11b	viue~?	(near)	...	settled	viue~	crop: viue with a tilde, clear
+1	29	p1_L15a	vocin?	(agree)	vozir	stays	vocin?	crop: voci + r/n; vocin vs vozir/vocir not settled
+1	30	p1_L15b	tenire?	(near)	[?]	settled	tenire	crop: tenire clear at line start (continues 'de' at 1.29 end)
+1	30	p1_L15b	seguij?	(near)	siglij	stays	seguij?	crop reads 'silgij'; B siglij; seguij (sense) not confirmed by the letters
+2	3	p2_L02a	porera?	(near)	poreti	settled	porera	crop: porera, final a clear
+2	3	p2_L02a	ho?	(near)	r	stays	ho?	crop: 'lo' + one small r-like sign; not settled
+2	4	p2_L02b	caricha?	(near)	certicha	stays	caricha?	crop c + a/e + r/ri + cha; not settled
+2	4	p2_L02b	lei?	(near)	her	stays	lei?	crop 'a lei/hei'; not settled
+2	5	p2_L03a	gr~a?	(near)	gr~a	settled	gr~a	crop g + r + abbreviation + a; B agrees (gratia)
+2	5	p2_L03a	Strig.?	Steig.	Ferrg	stays	Strig.?	crop S/F + t/e + r + e? + ig.; place not settled by letters
+2	8	p2_L04b	Seru~l^s?	illegible	Sum~	stays	Seru~l^s?	signature first word: S + minims + s + long s; not settled
+2	8	p2_L04b	Co~st^j?	illegible	cop~	stays	Co~st^j?	crop: co + long s + t + j; 'Cost' is the best letter reading, Costabili not confirmed
+2	11	p2addr_L01c	&c?	(agree)	&	stays	&c?	address panel not re-viewed in this unit
+2	6	p2_L03b	febr~ (marked 0, now doubted)	s~tbre	sitre	RAISED	febr~?	both blind passes read the month as s(e)tbre/sitre, and the crop shows f/s + i/t + b + r + e: 'febr~' rests on the later-hand p.1 docket (27 feb^o); the month in the letter's own hand is not settled -- September 1491 is not excluded
