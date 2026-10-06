@@ -1,0 +1,88 @@
+letter	page	line	pos	code	gloss	read
+P25	100	a	0	441	States Gen.	clear
+P25	100	a	1	464	C.M.	clear
+P25	100	a	2	69	was	clear
+P25	100	a	3	297	with	clear
+P25	100	a	4	44	their	clear
+P25	100	b	0	68	the	clear
+P25	100	b	1	441	St.Gen.	clear
+P25	100	b	2	397	had	clear
+P25	100	b	3	44	their	clear
+P25	100	b	4	105	war	clear
+P25	100	b	5	297	with	clear
+P25	100	b	6	435	prot.	clear
+P25	100	b	7	403	the	clear
+P25	100	b	8	293	pe	clear
+P25	100	b	9	10	a	clear
+P25	100	b	10	179	ce	clear
+P25	100	c	0	26	he	clear
+P25	100	c	1	487	Paris	clear
+P25	100	c	2	614	D.amb.	clear
+P25	100	c	3	212	to	clear
+P25	100	c	4	221	utter	clear
+P25	100	d	0	131	but	clear
+P25	100	d	1	122	his	clear
+P25	100	e	0	122	his	clear
+P25	100	e	1	3031	ma	clear-print; 3031 out of range, M
+P25	100	e	2	378	ſ	clear
+P25	100	e	3	343	t	clear
+P25	100	e	4	381	ers	clear
+P25	101	f	0	230	if	clear
+P25	101	f	1	88	my	clear
+P25	101	f	2	231	lord	clear
+P25	101	f	3	233	protector	clear
+P25	101	g	0	430	France	clear
+P25	101	g	1	433	Sweden	clear
+P25	101	h	0	447	Sweden	clear
+P25	101	i	0	480	Cardinall	clear
+P25	101	i	1	351	me	clear
+P25	101	i	2	100	n	clear
+P25	101	j	0	56	they	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	1	141	were	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	2	87	l	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	3	72	e	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	4	332	vi	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	5	108	ed	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	6	215	ch	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	7	250	ar	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	8	181	ge	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	9	364	of	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	j	10	448	France	clear; numeral row partly clipped at crop edge, read from p101b top
+P25	101	k	0	119	by	clear
+P25	101	k	1	430	France	clear
+P25	101	k	2	26	He	clear
+P25	101	k	3	92	thinks	clear
+P25	101	k	4	435	the prot.	clear
+P25	101	k	5	261	will	clear
+P25	101	k	6	10	a	clear
+P25	101	k	7	277	great	clear
+P25	101	k	8	281	part	clear
+P25	101	k	9	68	that	clear
+P25	101	k	10	547	army	clear
+P25	101	k	11	359	de	clear
+P25	101	k	12	13	fe	clear
+P25	101	k	13	124	nd	clear
+P25	101	k	14	403	the	clear
+P25	101	l	0	317	pl	clear
+P25	101	l	1	10	a	clear
+P25	101	l	2	179	ce	clear
+P25	101	m	0	435	the protector	clear
+P25	101	m	1	315	make	clear
+P25	101	m	2	174	re	clear
+P25	101	m	3	10	a	clear
+P25	101	m	4	60	dy	clear
+P25	101	m	5	403	the	clear
+P25	101	m	6	548	fleet	clear
+P25	101	m	7	1600	a yeare's	clear
+P25	101	m	8	374	it	clear
+P25	101	m	9	339	may	clear
+P25	101	n	0	413	put	clear
+P25	101	n	1	212	to	clear
+P25	101	n	2	91	ſea	clear
+P25	101	o	0	87	l	clear
+P25	101	o	1	288	end	clear
+P25	101	o	2	302	ing	clear
+P25	101	o	3	16	mo	clear
+P25	101	o	4	280	ny	clear
+P25	101	p	0	16	mo	clear
+P25	101	p	1	280	nies	clear

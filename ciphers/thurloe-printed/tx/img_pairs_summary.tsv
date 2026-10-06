@@ -1,0 +1,5 @@
+letter	tokens_ocr	C_ocr	M_ocr	tokens_img	C_img	M_img	old_C_confirmed	old_C_contradicted	repeat_codes	repeat_agree	shuffle_mean	shuffle_p95
+P25	26	22	4	87	86	1	4	18	15	11	0.07	1
+P26	14	10	4	22	22	0	1	9	2	2	0.04	0
+P27	123	79	44	154	153	1	23	56	28	22	0.20	1
+P28	77	66	11	105	105	0	45	20	20	20	0.12	1

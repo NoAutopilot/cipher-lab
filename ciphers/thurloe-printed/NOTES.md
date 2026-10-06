@@ -2815,7 +2815,7 @@ Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.t
 - [x] known-keys: Tomokiyo's stamford.jpg compared (GAPS148, N8-THUR2); key_fauconberg.tsv and key_stamford.tsv against the P3 postscript (s.22 Job 3, D2B-THURP3)
 - [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4); Powell 1937 for P10 L10 (AUDIT.md)
 - [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py, A3V2-THUR275)
-- [x] image-check: p.188 lines 50-61 and all five sibling cipher pages read from the page image (s.18; A3V2-THURBT, N8-THUR)
+- [x] image-check: p.188 lines 50-61 and all five sibling cipher pages read from the page image (s.18; A3V2-THURBT, N8-THUR); P25-P28 pages (vol. 5 pp.100-101, vol. 3 pp.382, 383, 409) re-paired from the image (R8-THUR25)
 - [x] retry: one-vote boundary test v3-full PASSed its pre-registered gate (N8-THUR, 4 Oct 2026)
 Verdict: keep going: 1 internal gaps; cheapest next: align P10 p.620 L10's 14 groups against Powell 1937's printed sentence (be-api snippets in AUDIT.md) to grade them C, ~$1
 
@@ -2850,8 +2850,49 @@ confirmed. Carried into AUDIT.md "Revision after AUDIT (R8-THURV ...)": class N0
 depth_pct 100 -> 99.8 (995 of 997 tokens); code-67 conflict logged in a created HYPOTHESES.md; no SO-queue row for P10.
 No Powell page number is on disk (be-api page_num not a locator); a page cite stays open.
 
-## Remaining gaps (R7-THURP10, 6 Oct 2026; supersedes the D2B-THURP3 list above)
-Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.txt, N8-THUR2); P3 postscript H9 C15 M33 U2 of 59 (reading_P3.txt); P10 p.620 L10 14 unglossed groups C12 M2 against Powell 1937 (tx/reading_P10_L10_powell.tsv); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+## R8-THUR25 -- P25-P28 re-paired from the page images (6 Oct 2026, 04:20-04:3x UTC by date -u, account 4, for LANE LANE-RUN8-account-4)
+
+Section 23's named S step, run. Pages (leaf from each item's own `_page_numbers.json`): vol. 5 p.100 (leaf 108) + p.101
+(leaf 109) = P25 Lockhart; vol. 3 p.382 (leaf 392) = P26 "Andrew Burton"; p.383 (leaf 393) = P27; p.409 (leaf 421) = P28.
+Five IIIF full leaves fetched once to scratch (not committed, 30 MB rule); one crop per cipher block cut with
+`python3 tools/iiif_lines.py --image <leaf> --out <dir> --region 0,y,w,h --prefix pNNN --lines-per-crop 30` (gloss line kept
+with the numeral line under it; 17 crops + manifest in `images/r8thur25/`). One vision pass per page by this session on the
+crops; each gloss was paired with the numeral directly under it by position, and every line's gloss count equals its numeral
+count (asserted in `tx/p25_rows.py`, `tx/p27_rows.py`, `tx/p28_rows.py`; P26 is `tx/img_pairs_P26.tsv` directly).
+
+**C-rate before/after (rule 4; `tx/img_pairs_compare.py`, output `tx/img_pairs_summary.tsv`):**
+
+| Letter | OCR align (s.23): tokens, C, M | Page image: tokens, C, M | old C confirmed / contradicted by the image |
+|---|---|---|---|
+| P25 Lockhart | 26, 22, 4 | 87, 86, 1 | 4 / 18 |
+| P26 Burton | 14, 10, 4 | 22, 22, 0 | 1 / 9 |
+| P27 Johnson | 123, 79, 44 | 154, 153, 1 | 23 / 56 |
+| P28 Johnson | 77, 66, 11 | 105, 105, 0 | 45 / 20 |
+| **Total** | **240, 177 (74%), 63** | **368, 366 (99.5%), 2** | **73 / 103** |
+
+The two M are codes printed out of range (P25 `3031` 'ma', P27 `2372` 'the'; 372 reads 'the' elsewhere) -- print or
+compositor slips, left as printed. **Grade change after AUDIT.md:** the section-23 OCR alignment was mostly shifted by one or
+more positions against the gloss (e.g. P26 293 's' -> 'ca', 172 'ca' -> 'me'); 103 of its 177 C tokens are contradicted by
+the page image. The image pairs supersede `align_P25..P28.tsv` and `key_lockhart/burton/johnson1/johnson2.tsv`; the
+image-based keys are `tx/key_{lockhart,burton,johnson1,johnson2}_img.tsv` (built by `tx/make_img_keys.py`). Old files are
+kept, not edited (they are cited). index.tsv's C/M columns for P25-P28 are now stale (left for the lane). N0 class is not
+touched by this (Birch prints the decipherments); a verifier is flagged in ROOM to carry the counts into AUDIT.md.
+
+Within-letter control (rule 3; a gloss shuffle can vary on this statistic): repeated codes whose printed glosses agree --
+P25 11 of 15 (shuffle mean 0.07, p95 1), P26 2/2 (0.04, 0), P27 22/28 (0.20, 1), P28 20/20 (0.12, 1). The P25/P27
+non-agreements are real print variants (e.g. P25 68 'the'/'that', 403 'the' x3), not pairing errors.
+
+**P27/P28 "sub-key mismatch" (s.23) is an artifact of the OCR alignment.** From the image keys
+(`tx/make_img_keys.py`): P27/P28 share 26 codes, 24 same meaning, the other 2 spelling only (1016 Collen/Colen, 460 at/att).
+P26 (Burton) shares the same key too: P26/P27 9 shared, 7 same + 1005 'C. S.'/'Ch.St.' (same person); one true conflict,
+1007 'Hide' (P26) vs 'prot.' (P27, x2). P25 Lockhart is a different key (0 of 11 shared codes agree with P27, 0/6 with P28),
+as s.23 found. So the third-Johnson-letter search the brief offered is not needed for the mismatch; not run.
+
+Requests: archive.org 2 (`_page_numbers.json` x2), iiif.archive.org 5 (leaves), >= 2 s apart, all 200. No subagents, no
+logins. Report of what was read; no novelty claim (all four letters are N0, AUDIT.md).
+
+## Remaining gaps (R7-THURP10, 6 Oct 2026; supersedes the D2B-THURP3 list above; R8-THUR25 adds P25-P28 below)
+Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.txt, N8-THUR2); P3 postscript H9 C15 M33 U2 of 59 (reading_P3.txt); P10 p.620 L10 14 unglossed groups C12 M2 against Powell 1937 (tx/reading_P10_L10_powell.tsv); P25-P28 re-paired from the page image C366 M2 of 368 (tx/img_pairs_summary.tsv, R8-THUR25); P2-P28's other items are printed decipherments (N0, AUDIT.md)
 - P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
 - P4's remaining 3 M tokens are code 1 'i' (x3, one printed vote) - blocker: no-key-material; not in Tomokiyo's table (GAPS148, N8-THUR2) and no other sibling occurrence on disk
 - A contemporary check of P4 against the manuscript (MS. Rawl. A. 24/1 p.76, 10 pp., partly cipher, undeciphered per the Bodleian reply of 5 Oct 2026) - blocker: waiting-on the Bodleian Imaging Services quote for p.76 + p.73 (Bodleian reply 5 Oct 2026; ASKS row 139)
@@ -2864,6 +2905,6 @@ Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.t
 - [x] known-keys: Tomokiyo's stamford.jpg compared (GAPS148, N8-THUR2); key_fauconberg.tsv and key_stamford.tsv against the P3 postscript (s.22 Job 3, D2B-THURP3)
 - [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4); Powell 1937 for P10 L10, aligned under a pre-registered gate (R7-THURP10)
 - [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py, A3V2-THUR275)
-- [x] image-check: p.188 lines 50-61 and all five sibling cipher pages read from the page image (s.18; A3V2-THURBT, N8-THUR)
+- [x] image-check: p.188 lines 50-61 and all five sibling cipher pages read from the page image (s.18; A3V2-THURBT, N8-THUR); P25-P28 pages (vol. 5 pp.100-101, vol. 3 pp.382, 383, 409) re-paired from the image (R8-THUR25)
 - [x] retry: one-vote boundary test v3-full PASSed its pre-registered gate (N8-THUR, 4 Oct 2026)
 Verdict: parked: every remaining gap is no-key-material or waiting-on ASKS row 139 (Bodleian Imaging Services quote)

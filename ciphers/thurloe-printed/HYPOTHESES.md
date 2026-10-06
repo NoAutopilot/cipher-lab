@@ -17,3 +17,5 @@ position 14, which follows it), C elsewhere where Birch prints it.
 All four witnesses share sender, recipient and direction, so direction does not split them (cf. lodewijk code 172).
 Open readings: Powell's "to" is not spelled group for group (67 = s, 95 unknown, the cipher dropping "o"), or 67 is
 homophonic. Settles only with the manuscript leaf (MS. Rawl. A., not imaged) or Powell's own page.
+
+- R8-THUR25 (6 Oct 2026): code 1007 printed "Hide" in P26 (Burton, Antwerp 26 Apr 1655, vol.3 p.382) vs "prot." twice in P27 (Johnson, p.383); same Manning key otherwise (24/26 and 7/9 shared codes agree). Data conflict between two printed glosses, not settled; graded M in both if used (tx/key_burton_img.tsv, tx/key_johnson1_img.tsv).
