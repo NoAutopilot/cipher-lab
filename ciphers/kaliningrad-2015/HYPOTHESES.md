@@ -731,3 +731,36 @@ Unscored synthetic check while building (a Gospels window, K 36, one restart per
   reliability); on the held-out gate, below the held-out min = FAIL, min to p01 = judge cannot decide, above p01 = PASS
   on that gate (worth a verifier, nothing more; no reading described, rule 7 re-derivation owed). If the shuffled
   target scores within 0.1 of the target or higher, the target's number licenses nothing either way.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 6 Oct 2026 06:06 | homophonic | N=978 K=36 restarts=20 corpus=s3p_soft.txt.gz profile=target,alphabet=ru-s3p-soft,soft=pair | 1-5 | 0.899 (0.526-0.994) | not run (control-only) | - | no | R9-KAL6 6-ru-soft-s3p-A-pair, control |
+| 6 Oct 2026 06:09 | homophonic | N=978 K=36 restarts=20 corpus=s3p_soft.txt.gz profile=target,alphabet=ru-s3p-soft,soft=two-stage | 1-5 | 0.990 (0.985-0.993) | not run (control-only) | - | yes | R9-KAL6 6-ru-soft-s3p-A-2stage, control |
+| 6 Oct 2026 06:12 | homophonic | N=978 K=36 restarts=20 corpus=s3p_soft.txt.gz profile=target,alphabet=ru-s3p-soft,soft=two-stage | 1 | 0.990 (0.985-0.993) | -3319.603 | FAIL language: score=-1.733, null_p99=-2.137, real_p05=-0.864, real_median=-0.811, mode=both, N=978 | yes (gate 0.9) | R9-KAL6 6-ru-soft-s3p-A-2stage, control then target |
+| 6 Oct 2026 06:16 | homophonic | N=978 K=36 restarts=20 corpus=s3p_soft.txt.gz profile=target,alphabet=ru-s3p-soft,soft=two-stage,shuffle_target=1 | 1 | 0.990 (0.985-0.993) | -3375.073 | FAIL language: score=-1.765, null_p99=-2.137, real_p05=-0.864, real_median=-0.811, mode=both, N=978 | yes (gate 0.9) | R9-KAL6 6-ru-soft-s3p-A-2stage, shuffled target (seed 1) |
+
+### R9-KAL6 result (6 Oct 2026; pre-registration commit 55a90309 before any scored run)
+
+| unit | solver | per-seed control (restarts 20) | mean | gate | target judge | shuffled target (seed 1) |
+|---|---|---|---|---|---|---|
+| 6-ru-soft-s3p-A-pair | soft=pair (pair_prob 0.3) | 0.993 / 0.992 / 0.989 / 0.994 / 0.526 | 0.899 | not met | not run (CONTROL BELOW GATE) | - |
+| 6-ru-soft-s3p-A-2stage | soft=two-stage | 0.993 / 0.991 / 0.988 / 0.992 / 0.985 | 0.990 | met at 5 | FAIL -1.733 (real_p05 -0.864, null_p99 -2.137) | FAIL -1.765 |
+| (A2P4-KAL4 5-ru-soft-s3p-A, for comparison) | plain anneal | 0.936 / 0.808 / 0.772 / 0.994 / 0.105 | 0.723 | not met | not run | - |
+
+Held-out calibration for this unit (pre-registered, before the target was scored): `tools/data/ru19_soft/holdout_s3p_N978.log`,
+the A2P4-KAL5 folds rebuilt (78 books, groups 5/12/5/5/12/5/22/12; per-group letter counts match holdout_s3p_N1066.log):
+per fold FN 25.0, 33.0, 35.0, 31.5, 9.0, 33.0, 27.5, 41.0 pct; blended 29.4 pct; spread 9.0-41.0 (4.6x); held-out p05
+-0.953, p01 -1.026, min -1.156.
+
+Reading by the pre-registered rules:
+- **pair: untested, not excluded.** Four seeds at 0.989-0.994, seed 5 at 0.526 (not < 0.5, so not the registered
+  6th-seed pattern); mean 0.899 misses the 0.9 gate by 0.001. Gate not lowered.
+- **two-stage: the instrument works on the control** (0.723 -> 0.990 at the same N, K, profile, window corpus and
+  soft-letter rate), so the S3' unit is now testable by this tool. Target: on the real_p05 gate "judge cannot decide"
+  (ru19_soft real_p05 of unknown reliability); on the held-out gate FAIL (-1.733 is 0.58 below the held-out minimum of
+  1,600 real windows, 0.40 above the null p99). But the shuffled target, through the identical pipeline, scores
+  -1.765, within 0.1 of the target: by the pre-registered rule **the target's score licenses nothing either way** --
+  the decode is not separated from a decode of the same signs in random order. Not a control-backed negative; no
+  reading. Conditional on Ernst's transcript.

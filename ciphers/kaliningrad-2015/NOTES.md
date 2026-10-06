@@ -502,3 +502,27 @@ here is a reading.
 
 **Next steps.** Unchanged from A2P4-KAL5: the S3' soft unit (control 0.723) needs a different instrument (paired
 soft/hard move set or two-stage solve, ~$6); further Russian FAILs are reported against the held-out distribution.
+
+## R9-KAL6, paired soft/hard move and two-stage solve for the S3' unit, 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run9-jobs.md` "R9-KAL6" (LANE-RUN9, account 2). The step A2P4-KAL4 named
+("paired soft/hard move set or two-stage solve, ~$6") was still undone. Disk and CPU only, no hosts.
+
+Tool step: `--param soft=pair|two-stage` on the shared homophonic family (`tools/families/homophonic.py`,
+`homophonic_anneal.soft_pairs`, `anneal(pairs=, pair_prob=)`), offline test `tools/tests/test_homophonic_soft.py`;
+the default path is byte-identical to HEAD's. Pre-registration in HYPOTHESES.md (commit 55a90309) before any scored run.
+Then, convention A, N 978, K 36, ru-s3p-soft (35 letters), profile=target, restarts 20, seeds 5, gate 0.9, control first:
+- **soft=pair**: control 0.899 (four seeds 0.989-0.994, one 0.526), CONTROL BELOW GATE by 0.001, untested.
+- **soft=two-stage**: control 0.990 (0.985-0.993), up from A2P4-KAL4's 0.723 with the plain anneal. Target judge
+  FAIL -1.733 (real_p05 -0.864, null_p99 -2.137); held-out at N 978 (measured this job, `tools/data/ru19_soft/
+  holdout_s3p_N978.log`): p01 -1.026, min -1.156, blended FN 29.4 pct (folds 9.0-41.0). Shuffled target (same pipeline)
+  -1.765.
+Reading (pre-registered): real_p05 gate "judge cannot decide"; held-out gate FAIL; but the shuffled target scores within
+0.1 of the target, so the target's number licenses nothing either way -- the decode does not separate from its own
+shuffle. Not a control-backed negative, no reading. Status stays `open`. Rule 10: nothing here is a reading.
+
+**Next steps.** The S3' design is now testable (two-stage control 0.990), and the judge cannot tell this target's decode
+from its shuffle at N 978 on ru19_soft. A different instrument, not a further tuning of this one, would be the next test:
+a judge statistic that the shuffle control can separate (for example the decode's word-segmentation rate against a
+Russian lexicon, with the shuffled target as its control), ~$2. Verdict: keep going (no outside blocker); the
+homophonic family on this target is otherwise spent.

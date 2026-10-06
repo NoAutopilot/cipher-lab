@@ -1,0 +1,28 @@
+# kaliningrad-2015 homophonic seed 1 restarts 20 6 Oct 2026 06:16 UTC; control mean 0.990 (0.985-0.993); score -3375.073; TARGET LETTERS SHUFFLED (seed 1, false-positive floor)
+# {"stage1_scores": [-3277.4, -3290.5, -3291.1, -3296.0, -3301.4, -3308.2, -3308.5, -3310.8, -3312.8, -3314.3, -3323.0, -3326.5, -3328.0, -3332.2, -3333.2, -3363.7, -3368.8, -3372.9, -3395.8, -3425.5], "key": {"-'": "r", "A": "p", "a": "s", "b": "b", "c": "n", "d": "m", "d'": "s", "e": "e", "f": "o", "f'": "r", "g": "o", "h": "s", "i": "w", "k": "y", "l": "n", "l'": "n", "m": "y", "m'": "t", "n": "i", "n'": "k", "o": "o", "p": "n", "s": "i", "s'": "a", "t": "e", "t'": "a", "u": "a", "v": "z", "w": "l", "x": "t", "x'": "d", "z": "r", "z'": "g", "ê": "a", "ö": "u", "ü": "a"}}
+tiisttsaketiiiwwedoeswowaiiikumyleei
+wnioetaotiswkeaoloiommeeaaweizilani
+listyaietseioiweiewosmetnoewwleetnin
+aeteeimoiiwsitekieaezwateewiwleenyeiet
+aionaineteeentangndeewiwnanieeesaiayred
+ieooozwsrewwkoyonuteeieiaiosaeenyisleiiiama
+asyoeeeamlwinslantenooeewswmsyaenkteeisseas
+siiismwiiseeseadetonmmeennepllmyolwn
+tebeoeaelktesytonsoetokeisskoeyktwttmeiieim
+etkoseaannyssnoiloteiiwlnyaneinonaisiiss
+taimirnieeomietoemlamrelotneieisaeeneaeitw
+kliowalmweattseeietnasystoilanraiiwse
+sskeilsseseotnoaembeitogamedeekaiseoikem
+wtootiimewiuesitwaimikonslyaswwbeki
+moeaissnasaesswiekeysworiaiwstsniweioeenikwwt
+srenyroeeyitaesiiieiieeesatwoirednsniewsti
+ielwymeyeoiselinoielstwenyiwremaiainemsooe
+ikortisoeasiwsesweiueslieotomkeeleassmt
+trsiidsstelasneekeiaiewitiiaiknietemwe
+simreimeydwemlalaewitakieedeetneilew
+iiisninatauiitakiiiesnakiysmeieeayniidi
+yansmdonskyiiinamweweewnowioiweealte
+yiseaaiaubediaesbeiotiikweeiisowiakliwa
+mseiloyltsiamsoeetotwiyaeteiyeinlmersa
+nesnieiwswoiotwuswmieimnmiwasosistat
+eeiil

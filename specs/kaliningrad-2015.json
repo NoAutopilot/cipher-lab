@@ -278,6 +278,22 @@
    "control": "0.995/0.997/0.988/0.997/0.999, mean 0.995 (gate 0.9 met at 5 seeds)",
    "target": "judge FAIL: score -1.992, real_p05 -0.859, null_p99 -2.242 (position 0.18 between null_p99 and real_p05)",
    "verdict": "control-backed negative for light homophonic Russian with each S3-softened consonant its own letter (13.2 pct soft letters), convention A, N 978 K 36. Conditional on Ernst's transcript. A2P4-KAL5 correction (3 Oct 2026): ru19_soft leave-one-book-group-out FN on real_p05 38.4 pct at N 978 (folds 14.5-49.5, one source) = unknown reliability (rule 3), so on the real_p05 gate this is 'judge cannot decide', not a negative; the score -1.992 is below every held-out real window (min -1.201, p01 -1.054)."
+  },
+  {
+   "test": "6-ru-soft-s3p-A-pair homophonic (convention A, Russian S3' with each softened consonant its own letter, 35 letters; paired soft/hard move)",
+   "date": "6 Oct 2026",
+   "method": "R9-KAL6: tools/family_run.py --family homophonic --param profile=target --param alphabet=ru-s3p-soft --param soft=pair --cipher ciphertext_signs.tsv --corpus tools/data/ru19_soft/s3p_soft.txt.gz --seeds 5 --restarts 20 --gate 0.9, control before target; judge block alphabet ru-s3p-soft, corpora the same file (restored afterwards). Pre-registration commit 55a90309.",
+   "control": "0.993/0.992/0.989/0.994/0.526, mean 0.899 (gate 0.9 not met; seed 5 not < 0.5, so no registered 6th seed)",
+   "target": "not run (CONTROL BELOW GATE)",
+   "verdict": "untested, not excluded (control 0.899 vs A2P4-KAL4's 0.723 with the plain anneal)."
+  },
+  {
+   "test": "6-ru-soft-s3p-A-2stage homophonic (convention A, Russian S3' soft letters, 35 letters; two-stage solve: 22 base letters, then the softness split)",
+   "date": "6 Oct 2026",
+   "method": "R9-KAL6: tools/family_run.py --family homophonic --param profile=target --param alphabet=ru-s3p-soft --param soft=two-stage --cipher ciphertext_signs.tsv --corpus tools/data/ru19_soft/s3p_soft.txt.gz --seeds 5 --restarts 20 --gate 0.9, control before target; judge block alphabet ru-s3p-soft, corpora the same file (restored afterwards). Shuffled target --shuffle-target 1 through the same command. Pre-registration commit 55a90309.",
+   "control": "0.993/0.991/0.988/0.992/0.985, mean 0.990 (gate 0.9 met at 5 seeds)",
+   "target": "judge FAIL: score -1.733, real_p05 -0.864, null_p99 -2.137; held-out (s3p_soft, 8 book-group folds, N 978) p05 -0.953, p01 -1.026, min -1.156, blended FN 29.4 pct (folds 9.0-41.0); shuffled target -1.765",
+   "verdict": "real_p05 gate: judge cannot decide (one source, wide fold spread). Held-out gate: FAIL (0.58 below the held-out minimum). Shuffled target scores within 0.1 of the target (-1.765 vs -1.733), so by the pre-registered rule the target's score licenses nothing either way: the decode is not separated from its own shuffle. Not a control-backed negative; no reading. Conditional on Ernst's transcript."
   }
  ]
 }

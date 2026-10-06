@@ -43,7 +43,7 @@ register, not of the alphabet.
 Each corpus is one file, so folds are 8 book groups rebuilt with the same command from `tools/data/ru19` (Pentateuch
 01-05, Historical 06-17, Poetic 18-22, Major prophets 23-27, Minor prophets 28-39, Gospels+Acts 40-44, Epistles+Rev
 45-66, Deuterocanon 67-84): `python3 tools/judge_plaintext.py --holdout <folds> --N N --alphabet ru-s3-soft|ru-s3p-soft`,
-200 windows per fold. Logs: holdout_s3_N978.log, holdout_s3_N1066.log, holdout_s3p_N1066.log.
+200 windows per fold. Logs: holdout_s3_N978.log, holdout_s3_N1066.log, holdout_s3p_N1066.log, holdout_s3p_N978.log (R9-KAL6, 6 Oct 2026: blended FN 29.4 pct, folds 9.0-41.0, held-out p05 -0.953, p01 -1.026, min -1.156).
 
 | check | per fold (Pent, Hist, Poet, MajP, MinP, Gosp, Epis, Deut) | blended | spread | held-out p05 / p01 / min |
 |---|---|---|---|---|

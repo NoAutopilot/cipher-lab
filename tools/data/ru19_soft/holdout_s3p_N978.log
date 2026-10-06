@@ -1,0 +1,9 @@
+file=s3p_g1.txt.gz	letters=555112	real_p05=-0.879	fn=50	n=200	fn_pct=25.0	held_p05=-0.984	held_min=-1.042
+file=s3p_g2.txt.gz	letters=747688	real_p05=-0.893	fn=66	n=200	fn_pct=33.0	held_p05=-1.047	held_min=-1.156
+file=s3p_g3.txt.gz	letters=310352	real_p05=-0.882	fn=70	n=200	fn_pct=35.0	held_p05=-0.942	held_min=-1.008
+file=s3p_g4.txt.gz	letters=484672	real_p05=-0.87	fn=63	n=200	fn_pct=31.5	held_p05=-0.924	held_min=-0.977
+file=s3p_g5.txt.gz	letters=105246	real_p05=-0.89	fn=18	n=200	fn_pct=9.0	held_p05=-0.901	held_min=-0.939
+file=s3p_g6.txt.gz	letters=378496	real_p05=-0.885	fn=66	n=200	fn_pct=33.0	held_p05=-0.946	held_min=-1.063
+file=s3p_g7.txt.gz	letters=268322	real_p05=-0.887	fn=55	n=200	fn_pct=27.5	held_p05=-0.916	held_min=-0.949
+file=s3p_g8.txt.gz	letters=518243	real_p05=-0.881	fn=82	n=200	fn_pct=41.0	held_p05=-0.939	held_min=-1.081
+N=978 samples=200 folds=8 blended_fn=29.4% spread=9.0-41.0% held_out_p05=-0.953 p01=-1.026 min=-1.156
