@@ -31,3 +31,14 @@ Compared beside R10-MANTSCR's 9-leaf result (SP: 0.833 vs p95 0.083).
 
 Known-answer (reported first, not a gate): every single-code gloss on this leaf whose code has a C value in key.tsv is scored
 agree / compatible / disagree.
+
+## Addendum (6 Oct 2026, 10:22 UTC by date -u), after reconciliation, before any alignment or score
+Crops (pasted): `tools/iiif_lines.py --image 0521.jpg --out crops --region 860,1180,1300,1400 --prefix L --distance 40 --lines-per-crop 3 --debug`
+found 14 lines in 5 bands, but the debug overlay showed the band cuts falling through glosses, so the same box was cut by PIL into 6
+overlapping full-width strips, native boxes (860,1180+220k,2160,+300) k=0..5 (S01-S06, 1300x300 px); passes got the strip paths only
+(A in order, B reversed). Reconciled: 7 runs, 39 code tokens; A vs B 37/39 (0.949; 177/147, 253/255), under the 10% stop line.
+Worker zooms (2x, scratch): the gloss 'manteuffel' (passes: illegible) sits over the second single 160 -> M; 'treve' over 160.463 (passes
+neve/neue) -> M; 548 (passes 543 'or 548'); 147 (B) -> M. Runs 4-6 are one run over three lines, each line with its own glosses; paired
+per line (the GAPS195 practice of one pair per glossed line of code). Run 7 (103...35) and the singles 160 (run 1), 257 are unglossed.
+Normalisation: MANT5 only, no gloss_norm_0521.tsv (the leaf writes out no abbreviation over a code). The illegible middle gloss word of
+run 6 is kept as '...' (stripped by the normalisation); declared here, before scoring.

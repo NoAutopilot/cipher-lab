@@ -1,0 +1,8 @@
+run	page	crop	codes	gloss	gloss_grade	note
+1	left	S02	160		-	A/B agree; 'au plan de 160.'; unglossed
+2	left	S02	257		-	A/B agree (A: or 237); 'et comme 257. le trouve fort a son gre'; unglossed
+3	left	S03	160	manteuffel	M	A/B agree on the code; both passes saw a small gloss above 'tremblent de peur' and read it as illegible ('mgnbuffel', 'mgnbuffes?'); worker zoom (2x, native 1400,1640,2000,1770): 'manteuffel', written between the lines directly over '160.' of the line below
+4	left	S03	714.481.102.160.463.227.666.242.90	un bon treve nous conviendra	M	A/B agree on all 9 codes; glosses un / bon / treve (passes neve, neue/neuve; zoom 2x native 1450,1780,2160,1900: 'treve' as on 0526's 'la treve', M) / nous / conviendra, written over the line; 666 kept (zoom 66 + a looped 6 or 0); 481 kept (zoom)
+5	left	S04	418.298.553.253.147.83.661.372.253.555.588.509.563.298.548	mieux qu'une battaille quelque superieur que	M	continuation of run 4 on the next line (no break after '90.'), underlined; 147 (B; A 177; zoom: a crossed 4, M); second 253 (A; B 255; zoom 253); last code 548 (both passes 543 'or 548'; zoom: closed lower loop, 548, M); gloss 'battaille' (A battaires, B battaille) over ~253.147.83, 'que' over 548
+6	left	S04	463.581.684.454	nous ... forcent	M	third line of the same run, underlined; A/B agree on the codes; zoom: 581 or 587, 454 or 457 (M); gloss small and cramped at left (A 'nous 1er forcent', B 'vous l.. favent'), middle word illegible, kept as 'nous ... forcent'
+7	left	S04/S05	103.30.66.17.8.50.11.35		-	A/B agree; letter-range run, unglossed; 'le Cap: Hake' written above the line before it (a clear-text interlinear insertion, not over the codes: 'le Cap: Hake demain partira d'ici [run], qui etoit venu ici avec le Cap. Nitkau')
