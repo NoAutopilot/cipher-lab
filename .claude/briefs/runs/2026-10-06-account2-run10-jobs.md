@@ -179,3 +179,27 @@ the listing lacks the field (then one browser login per CLAUDE.md, fetch only R1
 
 Wave 3 sessions (07:57 UTC): R10-SURV session_01Tg6hSrwYMSZreAqcZkkt2Z; R10-CLINV session_0174edi7AK17rH9B9j33WV82; R10-CLIN3868B
 session_01PGMWyUH1k9eUUy7hNXxSpR; R10-JANS26C session_01VQVmsMnHzSQK7Uz8wdnxWM; R10-ROELL11 session_01Xw2JXwAvVqTxbK15Gi6rz4.
+
+Wave 3 results (check-in 08:16 UTC): 2 D, 3 D- (CLINV 1.08x, CLIN3868B 1.05x, ROELL11 1.45x), workers 14.84; lane ~42.5 of 60.
+
+## Wave 4 (spawned 08:1x UTC 6 Oct; last wave, lane reserve held for close)
+
+### R10-ROELL12 -- roell-vandedem-1809, R1469/R1470 groups vs R2131 (Van Dedem 9 Feb 1793) and the inv. 804 clear copy (cap 2.5, box 40 min)
+Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R10-ROELL11's inference (not established): R1469 may be Van Dedem's 9 Feb 1793 despatch, not 1809. Test it on disk first: compare R1469/R1470
+code groups and layout with R2131 (same code family?) and, if this folder or a sibling holds a key for that family, whether R1469 decodes
+against the inv. 804 clear copy (scans 150R-152R) -- pre-register the comparison (PREREG pushed first) with a shuffled control that can vary on
+the statistic (e.g. group-overlap or crib-alignment score vs shuffled-copy alignment). If the date is wrong, say so in NOTES with the
+evidence and leave the folder rename/status to the orchestrator (flag in ROOM). Report both numbers.
+
+### R10-CLINV2 -- pro3055-clinton-1779, VERIFIER of R10-CLIN3868B's three words (cap 2, box 35 min)
+Intake gate: `pro3055-clinton-1779: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verifier, separate from R10-CLIN3868B. Check its PREREG predates the score (10e0744a4 vs 12d7b9f85/854780ec0), re-run the scoring, eye-check
+the cells for "to the kings peace", "Floquet" (q in clear) and "Cord" (21-1 21-2 21-3 21-8) on the crops against the 1778 key, and decide
+whether passes/p385_reading.txt's three M words change (if so: edit, --check exit 0, propagate into AUDIT.md and any SECOND-OPINIONS row).
+AUDIT.md section. No novelty class.
+
+### R10-JANS26D -- na-janssens-java-1811, invnr 26 scans 177-191, then close gap 3's page-through (cap 2, box 30 min)
+Intake gate: `na-janssens-java-1811: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Last 15 scans (R10-JANS26 method, <= 20 requests). Then write gap 3's state: invnrs 12, 7, 26 paged end to end; what (if anything) is left
+for the dispatch No.1 key source, and its blocker. Verdict line + gaps_check.
