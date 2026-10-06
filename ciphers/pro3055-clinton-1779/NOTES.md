@@ -1183,3 +1183,14 @@ one cell 5-17 out of range, reported apart -- and the 3 unpaired cells `18-17 4-
 looked at). Stopped here by the brief's rule (another page would cross 80% of the cap). Requests: image-uab.canadiana.ca 1 (Image
 758 full/max, 200). Vision calls: 1 blind Sonnet pass; worker looks at a 1/5 frame, one contact sheet and four zoom montages.
 Status unchanged: partial.
+
+## R11-CLINV3 corrections (6 Oct 2026, account 2, LANE RUN11; verifier of R11-CLIN2380, AUDIT.md section "R11-CLINV3")
+
+- R11-CLIN2380 "after 'with us' the cipher has three more words": two after "us" (`1-7`, `1-27 -16`); the native crop reads the
+  second cell plainly as ditto-16 (not "16 or 6"), so the cipher word is a-e / a-h on the key and "I a[m]" is inferred (m = I grade).
+  The conflict with the decipherment stands, by witness.
+- c5.51 `15-5?` reads 15-55 ("pp" in disappointed, line 15 letter 5 = p): a seventh doubled-figure cell. Pre-registered count with it
+  corrected: 223/258 (0.864), gate still PASS (control max 32). `passes/p120_c37_reconciled.tsv` not edited here; next session that
+  re-runs `check_2380_c37.py` changes that row and the JSON together (rule 7).
+- Line 9: all 16 compared cells fit "one place short"; 9 of them are one run, and no cell has P <= 3, so OFICERS is one reading of the
+  shift, not established over another. Gate, PREREG order and the 224/258 re-score confirmed.

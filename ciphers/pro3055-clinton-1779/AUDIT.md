@@ -502,3 +502,48 @@ stays N0, key `period`, text `known`.
    point it did not state: its "peace" mismatch cell admits a second layout reading (15-2) which does not change its counts'
    direction. Requests: image-uab.canadiana.ca 4 (Images 1031, 1032, 1033, 1034 full/max, all 200, browser UA + Referer, 2 s
    apart). Vision: 7 crops by this session's own eye, no subagent.
+
+## R11-CLINV3: verifier of R11-CLIN2380 (2380, p.120 columns 3-7) (6 Oct 2026, account 2, LANE RUN11; clock 09:35-09:4x UTC, `date -u`)
+
+A separate session from R11-CLIN2380 (NOTES.md section "R11-CLIN2380"). No novelty class asked; 2380 stays N0, key `period`,
+text `known` (VHS Collections vol. II, 1871, p.192). Depth fields unchanged.
+
+1. **Pre-registration order.** `PREREG_R11-CLIN2380.md` landed in c5d45b736 (09:19:15 UTC), an ancestor of the scoring commit
+   0addfb26e (09:24:28 UTC), which is the only commit touching `passes/check_2380_c37.py`, its JSON and both pass files; the PREREG
+   file has not changed since. The gate predates the score.
+2. **Re-score.** `passes/check_2380_c37.py --check` and `check_2380.py --check` exit 0. An independent re-scorer written in this
+   session (scratchpad only: the committed alignment, `title1778_reading.txt`, doubled letters collapsed) gives the same 258 compared
+   cells, 174 on the printed page, **224** under the pre-registered PERMISION/HONORABLE line 1, 240 with line 9 as OFICERS; its own
+   1000-seed shuffle of the compared decipherment letters (different seed) gives mean 18.3, max 33 against the committed 18.0 / 32.
+   The blind pass alone scores 219/258 (0.849), so the gate passes without the key-directed reconciliation; quote 224 with 219
+   beside it. The control moves decipherment letters against fixed key positions, so it can differ on this statistic.
+3. **Cells eye-checked** (Image 758 full/max, 6032x4056, one request to image-uab.canadiana.ca, scratchpad only; PIL box crops of
+   the worker's column boxes, read at native resolution):
+   - **(a) "with us".** c5.40-47 read `19-1..19-4 |` (with), `18-17 4-3 |` (us), `1-7 |`, `1-27`, ditto `-16 |`, then `13-10 ...`
+     (disappointed). The second cell of the last word is clearly a ditto mark and **16**: the 1 is a separate upright stroke, and the
+     7 of `1-7` sits two rows up, below its own underline, so it cannot be the stroke. On the 1778 key the word is a-e (variant line
+     1) or a-h (printed page); "am" needs 1-6 and is an inference (an off-by-ten slip), not a reading. Conflict confirmed and kept
+     by witness (rule 4): cipher p.120 (encipherment as copied at Quebec) "with us I a[?]"; decipherment p.134 "with us,
+     disappointed", no "I am". Grade the two extra cipher words: `1-7` i (C on the key), `1-27 -16` "a?" M, the "m" I. VHS II p.192
+     was not opened for this phrase in this session either.
+   - **(b) Doubled figures.** 6-77 (c4.51, "still"), 5-22 (c5.23, "officers") and 2-77 (c7.55, "arrived", 7s crossed) are all clear.
+     Each two-digit P is beyond its line's length on the key (line 6 has 23 letters, line 5 five, line 2 seventeen), so no plain
+     position competes, and the letter at the single figure P is the doubled letter every time. GAPS9's three excluded cells fit the
+     same rule on the same key: 2-9 = t ("letters"), 2-4 = s ("matross"), 6-7 = l ("artillery"). **Not reported by the worker:**
+     c5.51, logged `15-5?` in "disappointed", reads **15-55** on the native crop (two flat-topped 5s); line 15 (AN ALPHABETICAL
+     INDEX) letter 5 is p, so it is a seventh instance, "pp". Under the pre-registered rule a doubled figure counts as a failure, so
+     the corrected cell lowers the gate count to 223/258 (0.864), still PASS against control max 32. One counter-instance: "three"
+     writes its ee as one plain cell (6-22, itself a slip for 6-21), so the rule is how this encipherer usually, not always, wrote a
+     double. 7 of 7 doubled-figure cells on p.120 fit the rule; with a 30-line key the chance of one fitting by accident is about
+     1 in 15. Grade the six-plus-one cells S (cryptanalytic, rule found after the score, not pre-registered).
+   - **(c) Line 9 OFICERS.** All 16 compared line-9 cells fail the printed page and all 16 fit OFICERS (re-scorer above). Eye-checked
+     11 of them: the c7.13-21 run 9-20, ditto -21 ... -28 ("regiments") and c7.57-58 9-15, -16 ("arrived", v-e; the printed page
+     would give e-v) are clear. Caveats: (i) 9 of the 16 cells are one consecutive run, so the independent evidence is about eight
+     occurrences, not sixteen; (ii) no compared line-9 cell has P <= 3, so "one letter short in positions 1-3" is all the cells
+     show -- OFICERS is one spelling of that, not established over (say) a dropped O or a miscounted start. The NOTES wording "as
+     if ... OFICERS" and "one place short" already says this; it stands as post-hoc, not gated.
+4. **Corrections.** NOTES.md R11-CLIN2380 says the cipher has "three more words" after "with us"; it has two after "us" (`1-7`,
+   `1-27 -16`), three after "with". It says the image "shows 16 or 6 with a stroke that may be the 7 above"; on the native crop it
+   is 16. The c5.51 cell is 15-55, not 15-5. Written as a correction section in NOTES.md (the worker's section and pass files left
+   as committed; `p120_c37_reconciled.tsv` c5.51 is for the next session touching the scorer to change, with its `--check`).
+   Requests: image-uab.canadiana.ca 1 (200). No subagent calls.
