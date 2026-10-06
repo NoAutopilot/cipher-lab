@@ -5070,6 +5070,40 @@ Open for the next lane:
 3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
 4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
 
+## LANE LANE-RUN13-account-2 handoff (session_015WZUp6HMWrwUG6YxwSbq34, account 2), 6 October 2026 (closed 14:4x UTC: i-r S/M backlog worked, lane about 57.1 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run13-jobs.md. WORK-QUEUE row LANE-RUN13-account-2: RUN12's named
+next steps for i-r (verifier propagation flags first), then tools/next_steps.py runnable / parallel rows (S, M). Gate 0a: SESSION-SWEEP-account-2
+still `claimed`, its TSV on disk; proceeded as RUN7-RUN12 did. VERIFY-BACKLOG i-r row nla-heinrich audit2 not run (N0). wvo-hessen and manteuffel
+are s-z (account 4's split), not taken. Off limits as before.
+Seventeen workers in four waves (15 Opus, 2 Sonnet; 10 D, 4 D- at 1.06-1.71x, 3 N), workers 51.13 + orchestrator about 6.0 = about 57.1 of cap 60 (get_session).
+five_hour `allowed` throughout.
+- na-suriname-map-1781: the inv. 373 offset sweep (R13-SURSWP4) found glossed cipher at scans 0702, 0730, 0746, 0758 (Oct 1781; 0730 signed at
+  Fortres Nieuw Amsterdam 20 Oct 1781). 0702 (R13-SUR702, 42 pairs) and 0730 (R13-SUR730, 11 pairs) transcribed, PREREG first: same-system gate
+  PASS (0702 S1 0.845 vs shuffled-gloss p99 0.135; 0730 0.755 vs 0.160, pooled 0.819 vs 0.210); the y-family reads m|n in the letters again
+  (conflicts.tsv); crib candidate for the 2039 legend: "Smeedery" (untested). Sweep thumbnails 0778-0798 n=2 and 0270-0596 n=0 fetched, not looked at.
+- lodewijk-van-nassau-1573-74: R13-LVNV carried R12-LVN16C into AUDIT.md; R13-LVNFIX applied R12-LVNV's two overturns and image-read two doubtful
+  rows (both M); R13-LVNV2 carried that into AUDIT.md: four letters 2355/4047 (58.2%), N4 unchanged. 4610 p3 attempt 2 (R13-LVN10B, truncation
+  repaired): control FAIL 0.800/0.843 vs 0.90, nothing applied; whole-line blind passes retired for p3 (rule 3).
+- rah-juan-manuel-1521: R13-RJMV confirmed R12-RJM9501 read f.34 (not f.40), 20-seed shuffle puts the decode above every seed; R13-RJM34LA look-alike
+  pass (169/218 settled, residual 0.065 = agreement) and decode rerun; R13-RJMV2 confirmed the J-initial jas/jez groups on the image: f.34 now
+  S 301 / M 169 / U 273 of 743; judge FAIL es1600/es17c, above all 20 shuffles = judge cannot decide.
+- na-oldenbarnevelt-2442-1605: step (e) per-segment es1600 judge (R13-OLDSEG): all four windows FAIL, not concentrated in the OLD-PASS2 lines,
+  all far above shuffled windows.
+- kaliningrad-2015: design_prior ranks nomenclator top; family_run wordcode control BELOW GATE 0.491 vs 0.6 (R13-KAL10), target not run; non-test.
+- malsburg-hessen-1636: web/blog check logged (R13-WEB, intake gate now passes); three clear-page reads (R13-MALS): none pairs a code with a meaning.
+- intercepted-royalist-1646: web/blog check (R13-WEB) and Premise check (R13-ROYPREM): no decipherment of f.9/f.10 beyond the known Aymeloglu f.10
+  rendering; intake gate exit 0; leads CJ iv 553-555 (25 May 1646 Fairfax packet) and BL ff.4r-7v Weckherlin copies (image-blocked).
+- rayburn-2004: Wayback CDX reset again (R13-RAYCDX); step retired for host.
+- catokwacopa-1875 (pollaky gap 3): phrase-level LM search (word bigram + positional prior, era-matched 1853-75 control, PREREG first;
+  R13-CATOKLM): CONTROL BELOW GATE on lines 9/12/26/29 (R_c 0.00-0.05 vs 0.50), line 23 control not completed, no target scored:
+  untestable by this instrument at this N; the bna-search LOCAL-QUEUE row is named in NOTES (not filed; for the orchestrator).
+Open for the next i-r lane: (1) suriname: transcribe 0746 (two pages) and 0758 (~6 lines) by the R13-SUR702 method (~3.5 each), look at the 83 fetched
+sweep thumbnails and the hits' neighbours, then test "Smeedery" as a crib on 2039's legend; (2) rah-juan-manuel R9526 retest (f.150 clerk lines +
+85 split tokens, fresh PREREG, ~3); (3) intercepted-royalist crib loop Evelyn pp.178-179 over f.10 (~2, gate now passes); (4) malsburg key_crossmatch
+on the pool + marburg1635/Rabenhaupt/Heusner keys (~4); (5) lodewijk: regenerate the stale key.tsv reading_4616 (~0.2); 4610 per-token crops (~5,
+a different instrument); (6) kaliningrad wordcode at restarts 6 seeds 1-5 (~1); oldenbarnevelt (f) crop re-look at 14 M/I tokens (~2.5).
+
 ## LANE LANE-RUN12-account-2 handoff (session_0134Hz4BBL6omk3Bx6T3wpcv, account 2), 6 October 2026 (closed 13:0x UTC: i-r S/M backlog worked, lane about 56.7 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run12-jobs.md. WORK-QUEUE row LANE-RUN12-account-2: RUN11's named
