@@ -211,3 +211,35 @@ Hosts: scienceblogs.de 1 (2013 photo). Subagents 2 (Sonnet, blind crop reads).
 ## Next step (D2B-RUBIN2, 6 Oct 2026)
 
 next: CR p.67 Block C character by character, from the PDF re-rendered at 300 dpi for that page only (re-fetch the PDF from cipherfoundation.org, 1 request; render p.67, rotate, crop Block C). This settles the last witness on the three single-copy K slips and checks the vmie/vnie glyph in the cryptanalyst's own hand at full resolution, ~$1.5. Who acts: agent. Transcription is otherwise reconciled. The letter-text is unchanged in substance, so any cryptanalytic test is unblocked.
+
+## CR p.67 at 300 dpi (R8-RUBIN3, LANE LANE-RUN8-account-2, 6 Oct 2026)
+
+Intake gate (03:1x UTC 6 Oct, pasted by the lane): `rubin-1953: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**Fetch and render.** The FBI file PDF was re-fetched once from cipherfoundation.org (HTTP 200, 8,937,411 bytes, sha256 prefix 97f7e1153505, identical to D2B-RUBIN's copy). It is not committed (manifest only). Page 67 was rendered with `pdftoppm -f 67 -l 67 -r 300` (3521x4963), rotated 90 degrees (PIL `rotate(90, expand=True)`), and Block C cropped to (0,2120)-(4500,2580). **Crop step** (pasted): `python3 tools/iiif_lines.py --image blockC.png --out cropsC --prefix crC --debug` -> 3 lines, centres 78 220 346, 2 overlapping segments each. The crops, plus the A3 `...vnie oie` strip, are in `images/crops300/` (248 KB, manifest entry `crops_300dpi_p67_2026_10_06`).
+
+**Blind passes** (two Sonnet subagents, crops only, on-disk Block C not shown to them):
+- Pass A: `100.011x100.10x.1.0.011.1.xx0.101.x.001.011.101x1011.1001.10x1` / `0.001011x10.1x.11101.x1.001x1.001001` / `0.101.x.101110.x101.1101101.0101x1.1011`.
+- Pass B: `100.011x100.10x.10011.1.xx0.101.x.001.011.101x1011.1001..10x1` / `0.001011x10.1x.111101.x1.001x1.001001` / `0.101.x.1011110.x101.1101101.0101x1.1011`.
+- Both passes read the A3 strip as `UNGDREABOZV.NIE OIE`, with N after the V, about 90% (two verticals joined by a diagonal, with a small dot between the V and the N).
+
+**Reconciliation** (1 unit; worker's eye on 2-3x zooms of each disputed spot). The passes disagree with each other and with the disk at six spots. Five of them resolve in favour of ciphertext.txt:
+- L1 `10011` and L1 `001011`: the extra marks the passes read as '.' are small pen specks at the baseline inside the group. The same speck appears inside `011` in group 2, which no reader splits. The deliberate separators are larger round dots. Disk stands.
+- L1 `1001..10x1`: there is a round dot followed by a tick, so two marks. Disk stands (pass B).
+- L2 `11101`: an eye count at 2x shows three bars, then 0, then 1. Pass B's `111101` double-counted the segment overlap. Disk stands.
+- L3 `101110`: an eye count shows 1 0 1 1 1 0. Pass B's `1011110` added a bar. Disk stands.
+
+One spot is a CR-only difference:
+- **L2 char 2.** The disk reads `01.`, and so do the 2018 image (2 passes), K1 and K2. CR writes `0`, then a pencil circle drawn round an empty space, then `.`. This is the examiner's own mark, perhaps flagging a faint or doubtful character on Q5. It is recorded as variants row C2b. ciphertext.txt is not changed: four witnesses against one, and CR shows no letter there, only a circle.
+
+**The three single-copy K slips (C1, C2, C3)** all read with the disk in CR: the period after `100.10x` is present, the tick after `10.1x` is present, and the `1` in `0101x1.1011` is present. Each slip position now has the 2018 image, CR, and the other K copy against one K copy. The variants rows are updated.
+
+**vmie/vnie.** CR's own hand at 300 dpi shows a plain N: two blind reads at about 90%, plus the worker's eye. This confirms the CR witness behind D2B-RUBIN2's change at full resolution. The glyph stays **grade M**, because the 2018 reproduction still leans m and no image of Q5 itself exists in the file.
+
+**Result:** ciphertext.txt is unchanged. Block C (136 characters) is supported at every position by the 2018 image (2 blind passes), CR at 300 dpi (2 blind passes plus reconciliation; 1 position is circled and blank in CR only), and K1/K2 (one single-copy slip each at 3 positions). No reading is claimed, so rule 7 does not apply.
+
+Hosts: cipherfoundation.org 1 (PDF). Subagents 2 (Sonnet, crops only).
+
+## Next step (R8-RUBIN3, 6 Oct 2026)
+
+next: the transcription is reconciled against every witness in the FBI file. The remaining doubt is one M glyph (vnie) and one CR-circled position (L2 char 2), and both are settled only by an image of Q5 itself (FBI specimen, not in the released file), so no further transcription pass is useful. Cryptanalytic test: Block C as Morse-like or binary (0/1 as dot/dash or bits, x/'.' as separators) against an English decoder with a matched control of the same length and symbol design, ~$2. Who acts: agent.

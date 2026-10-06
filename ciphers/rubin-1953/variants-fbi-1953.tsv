@@ -10,14 +10,15 @@ A1	word 2 leading mark	'sawthn'g	'sawthn'g (mark before s present)	sawthn'g	sawt
 A1	word 5	meteore	meteore	meteore (2 of 3 retypings)	metore	METEORE	ciphertext.txt
 A2	word 2	greA'Lltenmn	greA'Lltenmn	greA'Ltermn / greA'Lternmn / greA'Ltrrmn (3 retypings)	greA'Lternmn	GREA'LLTENMN	ciphertext.txt (CR agrees; K copies are retyping slips)
 A3	word 2	albawmnabs	albawmnabs	albawnmabs	albawnmabs	ALBAWMNABS	ciphertext.txt (CR and img2018 agree; K copies transpose mn)
-A3	word 5	ungdreabozvmie	ungdreabozv?ie (glyph after v blurred; m or n)	ungereabozvnie	ungdreabozvnie	UNGDREABOZVNIE	FBI 3/3 read n. 6 Oct 2026 D2B-RUBIN2: blind 2018 pass reads m at medium confidence (2 clear stems + an inked blob; n not excluded); 2013 photo cuts the line at "ungdreaboz" (slip edge), no witness. ciphertext.txt now ungdreabozvnie, grade M; variant m (2018 image) kept here
+A3	word 5	ungdreabozvmie	ungdreabozv?ie (glyph after v blurred; m or n)	ungereabozvnie	ungdreabozvnie	UNGDREABOZVNIE	FBI 3/3 read n. 6 Oct 2026 D2B-RUBIN2: blind 2018 pass reads m at medium confidence (2 clear stems + an inked blob; n not excluded); 2013 photo cuts the line at "ungdreaboz" (slip edge), no witness. ciphertext.txt now ungdreabozvnie, grade M; variant m (2018 image) kept here; 6 Oct 2026 R8-RUBIN3: CR p.67 at 300 dpi shows a plain N (two verticals + diagonal, 'V.N' with a dot), 2 blind Sonnet reads ~90% N + eye; CR's n confirmed at full resolution, grade still M (image witness still leans m)
 A7	word 4	[SYM1]ly	overstrike	1/4 fraction + ly	1/4 fraction + ly	[1/4LY] glossed QUARTERLY	FBI 3/3: [SYM1] is the typewriter 1/4 key -> "¼ly" (resolves bRUB's best guess). 6 Oct 2026 D2B-RUBIN2: written as ¼ly in ciphertext.txt
 B	line	7469921	7469921	7469921	7469931, 7469931, 7469921 (two false starts)	7469921	ciphertext.txt
 D2	line	R-QR6	R-QR6	R*QR6 (overstruck hyphen)	R-QR6	R-QR6	ciphertext.txt
 # 6 Oct 2026 D2B-RUBIN2: Block C rows. ciphertext.txt Block C = bRUB pass 1; blind2 = second blind pass of the 2018 image (Sonnet subagent, crops images/crops2/r18_C*.jpg),
 # identical to pass 1 on all 136 characters (60/37/39). r13 = images/crops2/r13_blockC_x4.jpg (2013 newspaper photo, halftone): fragments only, not a per-position witness.
 # K1/K2 Block C compared character by character by eye (D2B-RUBIN2); CR p.67 too faint at 120 dpi, not compared. Only positions where any witness differs are listed.
-C1	after '100.10x' (char 16)	. (period)	present (pass 1 and blind2)	.	omitted (10x10011)	not compared	ciphertext.txt (image 2 passes + K1; K2 slip)
-C2	after '10.1x' (char 16)	. (period)	present (pass 1 and blind2)	omitted (1x11101)	.	not compared	ciphertext.txt (image 2 passes + K2; K1 slip)
-C3	'0101x1.1011' (char 34)	1	present (pass 1 and blind2)	omitted (0101x.1011)	1	not compared	ciphertext.txt (image 2 passes + K2; K1 slip)
-C1-C3	all other positions	as ciphertext.txt	agree	agree	agree	not compared	ciphertext.txt; r13 fragments consistent where legible (100.011x10.., 1.x.001, ..101x1.1011)
+C1	after '100.10x' (char 16)	. (period)	present (pass 1 and blind2)	.	omitted (10x10011)	present (R8-RUBIN3, 300 dpi)	ciphertext.txt (image 2 passes + K1; K2 slip; CR p.67 300 dpi agrees)
+C2	after '10.1x' (char 16)	. (period)	present (pass 1 and blind2)	omitted (1x11101)	.	present (R8-RUBIN3, 300 dpi)	ciphertext.txt (image 2 passes + K2; K1 slip; CR p.67 300 dpi agrees)
+C3	'0101x1.1011' (char 34)	1	present (pass 1 and blind2)	omitted (0101x.1011)	1	present (R8-RUBIN3, 300 dpi)	ciphertext.txt (image 2 passes + K2; K1 slip; CR p.67 300 dpi agrees)
+C1-C3	all other positions	as ciphertext.txt	agree	agree	agree	agree except C2 char 2 (R8-RUBIN3)	ciphertext.txt; r13 fragments consistent where legible (100.011x10.., 1.x.001, ..101x1.1011)
+C2b	char 2 (after leading '0')	1	present (pass 1 and blind2)	1	1	absent in ink: CR writes '0', then a pencil circle drawn round an empty space, then '.'; examiner's mark, not a letter	ciphertext.txt (image 2 passes + K1 + K2); CR circled the spot, perhaps marking a faint or doubtful character on Q5. R8-RUBIN3, 6 Oct 2026, crop images/crops300/crC_L02_start_zoom.png

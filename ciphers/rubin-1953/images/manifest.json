@@ -68,5 +68,21 @@
     "fetched": "5 Oct 2026, D2B-RUBIN",
     "note": "full PDF not committed (8.9 MB, re-fetchable); only the four Q5-copy pages rendered here"
   },
-  "crops_2026_10_06": "images/crops2018/ and images/crops2013/ (tools/iiif_lines.py --image, line crops + debug overlays); images/crops2/ (targeted PIL sub-crops: r18_A3_end_x5, r18_C1a/C1b_x4, r18_C2/C3_x3, r13_slip_rot, r13_blockC_x4, k2_C1_left_x4), D2B-RUBIN2"
+  "crops_2026_10_06": "images/crops2018/ and images/crops2013/ (tools/iiif_lines.py --image, line crops + debug overlays); images/crops2/ (targeted PIL sub-crops: r18_A3_end_x5, r18_C1a/C1b_x4, r18_C2/C3_x3, r13_slip_rot, r13_blockC_x4, k2_C1_left_x4), D2B-RUBIN2",
+  "crops_300dpi_p67_2026_10_06": {
+    "by": "R8-RUBIN3, 6 Oct 2026",
+    "source": "FBI file PDF p.67 (CR, cryptanalyst's hand copy), re-fetched once from http://cipherfoundation.org/wp-content/uploads/sites/4/2017/12/Paul-Rubin-FBI-file.pdf (8,937,411 bytes, sha256 prefix 97f7e1153505, same as fbi_file); PDF not committed",
+    "render": "pdftoppm -f 67 -l 67 -r 300 -png -> 3521x4963; PIL rotate(90, expand) -> 4963x3521; Block C region (0,2120)-(4500,2580); A3 vnie region (2500,1220)-(4100,1340)",
+    "crop_command": "python3 tools/iiif_lines.py --image blockC.png --out cropsC --prefix crC --debug -> 3 lines, centres 78 220 346, 2 segments each",
+    "files": [
+      "crops300/crC_L01_s1.jpg",
+      "crops300/crC_L01_s2.jpg",
+      "crops300/crC_L02_s1.jpg",
+      "crops300/crC_L02_s2.jpg",
+      "crops300/crC_L03_s1.jpg",
+      "crops300/crC_L03_s2.jpg",
+      "crops300/crA3_vnie.png",
+      "crops300/crC_L02_start_zoom.png"
+    ]
+  }
 }
