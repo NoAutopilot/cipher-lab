@@ -2055,4 +2055,46 @@ every passage is on f.87/f.68r, AUDIT.md N0), but the f.86/f.88 readings as comm
 f.68r decipherments, not these readings, are what any quotation should use. Status, AUDIT.md and the readings unchanged.
 
 ## Next step (READ2-RELABEL, 3 Oct 2026)
-The images this folder needs are on disk or on Gallica, so the earlier "open the volume at the image" line (24 Sept 2026) is no longer an access problem. On disk: images/ holds f20, f100, f150 and the f9r line crops, with ciphertext_f1, f9, f67, f86 and f88 transcribed (passA/passB reconciled); colb26/ holds the Mélanges de Colbert 26 part III sample (Gallica ark btv1b10035069t, 779 canvases, all labelled NP; leaves_checked_part3.tsv lists the 104 of 375 canvases already looked at, none with cipher). The next step is to finish that sweep: contact sheets of the 271 unsampled canvases (405-779 minus the checked ones), one request at a time with tools/gallica_folio.py, ~$3, reading only for numeral groups, an interlinear decipherment or an "en chiffre" note; a hit opens the intake steps for that leaf, a miss completes the part III negative. Français 20660, 20563 and 23203-23204 are named in the 24 Sept 2026 section by catalogue text only, and their digitisation status is unconfirmed, so a Gallica ark lookup (~$0.5) comes before any image work there. Nothing here is a reading step: f.86 and f.88 read C 68/M 200 and C 101/M 167 U 3 and fail the fr17 and fr judge (SPEC-FR17, 3 Oct 2026), while the contemporary decipherments on f.87 and f.68r carry their plaintext (AUDIT.md N0).
+The images this folder needs are on disk or on Gallica, so the earlier "open the volume at the image" line (24 Sept 2026) is no longer an access problem. On disk: images/ holds f20, f100, f150 and the f9r line crops, with ciphertext_f1, f9, f67, f86 and f88 transcribed (passA/passB reconciled); colb26/ holds the Mélanges de Colbert 26 part III sample (Gallica ark btv1b10035069t, 779 canvases, all labelled NP; leaves_checked_part3.tsv lists the 104 of 375 canvases already looked at, none with cipher). (6 Oct 2026, R11A-F5160: the sweep was attempted and blocked by Gallica IIIF 503s, so it is still the next step whenever Gallica answers. The ark lookup below is done: 20660, 20563 and 23203-23204 have no Gallica link, and Français 20661-20662, Brienne's 1653 despatch minutes, are logged as a lead. See the R11A-F5160 section.) The next step is to finish that sweep: contact sheets of the 271 unsampled canvases (405-779 minus the checked ones), one request at a time with tools/gallica_folio.py, ~$3, reading only for numeral groups, an interlinear decipherment or an "en chiffre" note; a hit opens the intake steps for that leaf, a miss completes the part III negative. Français 20660, 20563 and 23203-23204 are named in the 24 Sept 2026 section by catalogue text only, and their digitisation status is unconfirmed, so a Gallica ark lookup (~$0.5) comes before any image work there. Nothing here is a reading step: f.86 and f.88 read C 68/M 200 and C 101/M 167 U 3 and fail the fr17 and fr judge (SPEC-FR17, 3 Oct 2026), while the contemporary decipherments on f.87 and f.68r carry their plaintext (AUDIT.md N0).
+
+## R11A-F5160: Colbert 26 III sweep attempt and Brienne-papers ark lookup (6 Oct 2026, 13:48-14:0x UTC)
+
+Worker R11A-F5160 for LANE LANE-RUN11-account-1, running the READ2-RELABEL next step above.
+
+**(1) Colbert 26 part III sweep: not done, because Gallica IIIF was down.** The 271 canvases still unchecked (405-779 minus
+the 104 in `colb26/leaves_checked_part3.tsv`) were to be fetched at `full/900,` (a 7680 px opening gives about 450 px a page,
+twice KX-COLB26's 450 px) and read as 2x2 contact sheets, with canvas 20 (the known Part I cipher leaf) as the
+positive control. The first requests were canvas 441 (two tries) and canvas 446 (one try), 13:50-13:57 UTC. All three
+returned HTTP 503 (text/html) after waits of about 1-2 minutes each. The one probe allowed after a 60 s pause (canvas 447 at
+`full/450,`, 13:58:58 UTC) got `curl: (52) Empty reply from server`. Under the good-citizen rule the host was not
+hit again. Canvas 441 also failed for KX-COLB26 on 25 Sept, but the 446/447 failures point to the server, not to that
+canvas. Nothing was read, and `leaves_checked_part3.tsv` is unchanged: 104 of 375 checked, 271 not opened. The part III negative stays a
+sample, not a sweep. The tile fetcher/contact-sheet scripts were scratch work and are not committed. The method is above, and a
+rerun needs nothing beyond `curl` plus PIL.
+
+**(2) Gallica ark lookup for Français 20660, 20563, 23203-23204: none is digitised per the holding catalogue.**
+archivesetmanuscrits.bnf.fr simple search on each shelfmark (Cote facet), then the item record:
+- Français 20660, `ark:/12148/cc51893r/cd0e139` ("Lettres originales adressées en général au comte de Brienne ... 1652-1659 ...
+  Provence, les galères, la marine")
+- Français 20563, `ark:/12148/cc518506/cd0e12573` ("Papiers du comte de Brienne. Tome III (1630-1660)")
+- Français 23203 and 23204, `ark:/12148/cc525050` and `.../ca59722665118260` ("Papiers et lettres d'Henri-Auguste de
+  Loménie, comte de Brienne"; no item-level description beyond the shelfmark)
+
+None of these record pages carries a Gallica link or a btv1b ark (count 0). The control record for Mélanges de Colbert 26
+(`ark:/12148/cc955062`), fetched the same way, carries two Gallica links and `btv1b10035069t`, so the marker can tell
+the two cases apart. "chiffr" does not occur in the 20660, 23203 or 23204 records. In the 20563 page it occurs only in
+another item's description (Montmorency, Italy, 16th century). The catalogue record has no "not available online" wording, so
+"not digitised" here means no Gallica link on the BnF's own record, read 6 Oct 2026. These four volumes can only be
+consulted on site or by reproduction order. No image route exists.
+
+**(3) Lead on the same catalogue page (not opened and not checked, one line per Usage 7).** The Français 20657-20674 series record
+(`cc51893r`) lists **Français 20661, "Minutes des dépêches du comte de Brienne, janvier-juin 1653"** and **Français
+20662, "... (suite), juillet-décembre 1653"**. Both carry no Gallica link. They are the minutes of Brienne's outgoing
+despatches for the same half-years as fr.5160's 1653 band (folios 1-2 and 9, 752 sign tokens, no decipherment located).
+If the Servien letters are among them, a minute in clear would be a plain-copy crib for the open part of this folder.
+The series continues with 20663-20673 (minutes 1653-1659) and 20674 (copies of letters to Brienne, 1660-61). Next:
+a check-solved/intake row for 20661-20662, which needs an on-site read or a reproduction quote (REQUEST.md, person-side,
+after stage 2). There is no cloud route.
+
+Requests: gallica.bnf.fr 4 (3 x 503, 1 empty reply), archivesetmanuscrits.bnf.fr 10 (home, 5 searches, 5 record pages
+including the control), all >= 2 s apart. No subagents, no images committed. Status unchanged (open).
