@@ -9147,3 +9147,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 04:03 | R8-ZESCH worker | claim: zeschau-seebach-1841 crib test on R5008 (Bourdeau check first), cap 5 USD, box 04:03-05:18 UTC, for LANE LANE-RUN8-account-4
 2026-10-06 04:03 | R8-RABY | claim sp90-raby-1704 Preuss 1897 lookup, cap 2, box to 04:43 UTC, for LANE LANE-RUN8-account-4
 2026-10-06 04:04 | R8-TAUR | claim: taurello-roma-1527 Sanuto vol.46 mapping + vol XLII passage, cap 2 USD, box ends 04:43 UTC, for LANE LANE-RUN8-account-4
+2026-10-06 04:04 | R8-G2678 worker | claim for LANE LANE-RUN8-account-1: decode-2678-bnf-colbert127-gravel-1665, canvases 355-356 re-view + pre-registered crib test; cap 3.5, box 04:04-04:54 UTC (80% stop 04:44)
