@@ -103,7 +103,7 @@ B	33	p7rq28	p7rq28	porque	S	high
 B	34	h2b7	h2b7	hubo	S	medium	
 B	35	d8l	d8l	del	S	high	
 B	36	m23	m23	mui	S	high	
-B	37	bv8n4s	bv8n4s	bvenas	M	uncertain	
+B	37	bv8n4s	b28n4s	buenas	M	uncertain	u/v notation (R15-OLDUV, 6 Oct 2026, PREREG_R15-OLDUV item 1): the open u/v cup is one sign, written as 2 (key 2->u) throughout B/C1; renaming only, not a glyph re-read
 B	38	8sp8r4nc4s	8sp8r4nc4s	esperancas	S	high	
 B	39	3	3	i	S	high	
 B	40	m2ch4s	m2ch4s	muchas	S	high	
@@ -115,13 +115,13 @@ B	45	7tr4s	7tr4s	otras	S	high
 B	46	28c8s	28c8s	ueces	S	high	
 B	47	n7	n7	no	S	high	
 B	48	s8	s8	se	S	high	
-B	49	4tr8v8n	4tr8v8n	atreven	S	high	
+B	49	4tr8v8n	4tr828n	atreuen	S	high	u/v notation (R15-OLDUV, 6 Oct 2026, PREREG_R15-OLDUV item 1): the open u/v cup is one sign, written as 2 (key 2->u) throughout B/C1; renaming only, not a glyph re-read
 B	50	4	4	a	S	high	
 B	51	4bl4r	4bl4r	ablar	S	high	
 B	52	4l	4l	al	S	high	
 B	53	d2q28	d2q28	duque	S	high	
 B	54	c7n	c7n	con	S	high	
-B	55	v8r4s,	v8r4s,	veras,	S	high	
+B	55	v8r4s,	28r4s,	ueras,	S	high	u/v notation (R15-OLDUV, 6 Oct 2026, PREREG_R15-OLDUV item 1): the open u/v cup is one sign, written as 2 (key 2->u) throughout B/C1; renaming only, not a glyph re-read
 B	56	p7rq28	p7rq28	porque	S	high	
 B	57	t7d7s	t7d7s	todos	M	uncertain	
 B	58	t38n8n	t38n8n	tienen	S	high	
@@ -142,7 +142,7 @@ B	72	m2ch4s	m2ch4s	muchas	S	high
 B	73	28c8s	28c8s	ueces	S	high	
 B	74	n7	n7	no	S	high	
 B	75	s8	s8	se	S	medium	
-B	76	4tr8v8n	4tr8v8n	atreven	S	high	
+B	76	4tr8v8n	4tr828n	atreuen	S	high	u/v notation (R15-OLDUV, 6 Oct 2026, PREREG_R15-OLDUV item 1): the open u/v cup is one sign, written as 2 (key 2->u) throughout B/C1; renaming only, not a glyph re-read
 B	77	4	4	a	S	high	
 B	78	d8c3rl8	d8c3rl8	decirle	S	high	
 B	79	n4d4,	n4d4,	nada,	S	high	

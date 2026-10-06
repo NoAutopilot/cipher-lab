@@ -3,6 +3,8 @@
 transcription/PREREG_R13-OLDSEG.md. Four token-boundary windows; judge() per window; held-out real windows (holdout(),
 200 per fold) and shuffled-decode windows as matched controls; low-confidence load per window. Writes nothing.
 Run from the repository root or anywhere:  python3 ciphers/na-oldenbarnevelt-2442-1605/scripts/segment_judge.py
+--uv-fold (R15-OLDUV, PREREG_R15-OLDUV item 2): fold v -> u in every text the judge sees (target windows, corpus model and
+word list, held-out windows, nulls, shuffled decodes) by extending judge_plaintext.FOLD for this run only. Default off.
 """
 import csv, json, math, os, random, statistics, subprocess, sys
 from collections import defaultdict
@@ -15,6 +17,9 @@ LANG, SAMPLES, HOLD = "es1600", 400, 200
 
 
 def main():
+    if "--uv-fold" in sys.argv[1:]:
+        jp.FOLD = {**jp.FOLD, ord("v"): "u"}
+        print("uv-fold: v -> u in every judged text", flush=True)
     rows = [r for r in csv.DictReader(open(os.path.join(TGT, "reading_tokens.tsv"), encoding="utf-8"), delimiter="\t")
             if r["block"] in ("B", "C1")]
     ct = [r for r in csv.DictReader(open(os.path.join(TGT, "ciphertext.tsv"), encoding="utf-8"), delimiter="\t")

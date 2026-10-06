@@ -1251,9 +1251,51 @@ further judge run (~$1.5); (v) a verifier carries this reading change into AUDIT
 (v) done: R14-OLDV (verifier, 6 Oct 2026) confirmed --check, counts, crops T1/T4 and the re-judge log, and carried the
 change into AUDIT.md and the queued SO-OLDEN-2442-BC1 prompt (also correcting "quien" -> "quen", token C1_36, in both).
 
-## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF and R14-OLDF2, 6 Oct 2026)
+## 20. R15-OLDUV, 6 Oct 2026: u/v notation pass on B/C1 (step (n)) -- one naming applied, judge input folded v->u on both sides; all four windows still FAIL, gap to real_p05 narrowed by 0.03-0.12; status stays open
 
-- Action that depends on nobody: (n) the u/v notation pass (section 19 Verdict), ~$1.5. Step (f') ran on 6 Oct 2026
+Brief: `.claude/briefs/runs/2026-10-06-account2-run15-jobs.md` (LANE LANE-RUN15-account-2), job R15-OLDUV, step (n) of section 19.
+Pre-registration `transcription/PREREG_R15-OLDUV.md` (naming rule, judge normalisation, controls, reading of the result) pushed
+(abaf33532) before any score was computed.
+
+**Naming (PREREG item 1).** The open u/v cup in B/C1 is one sign, now written `2` (key 2 -> u) in every B/C1 token. Four B tokens
+had it as letter `v` and are renamed through `overrides.tsv` (ciphertext.tsv unchanged): B37 `bv8n4s` -> `b28n4s` (buenas, stays M),
+B49/B76 `4tr8v8n` -> `4tr828n` (atreuen), B55 `v8r4s,` -> `28r4s,` (ueras). Reading change: "bvenas ... atreven ... veras ...
+atreven" -> "buenas ... atreuen ... ueras ... atreuen". Grade counts unchanged: S=245, M=18, I=23. Rule 7: `python3
+scripts/apply_key.py digit_key.json ciphertext.tsv --overrides overrides.tsv --out reading.txt --check` -> `OK: reading.txt matches
+a fresh decode`. A/C2 not touched. Side fact (not changed): `apply_key.py`'s docstring says a raw letter v folds to u, but
+`decode_token` folds digits only, so A/C2's letter-v tokens (algvna, cveo, gve, ...) still print v; fixing it would change A/C2.
+**Reading change after AUDIT.md**: flagged in ROOM.md for a verifier (AUDIT.md and the queued SO-OLDEN-2442-BC1 prompt not edited here).
+
+**Judge normalisation (PREREG item 2).** es1600 spells u/v the modern way (verdad 283 vs uerdad 4; servir 520 vs seruir 0) while the
+reading keeps period u for consonantal v (uer, ueces, seruir, uerdad). `scripts/segment_judge.py --uv-fold` (option added; default
+off, R13/R14 logs still reproduce) extends `judge_plaintext.FOLD` with v->u for the run, so the target windows, the corpus model and
+word list, the held-out real windows, the nulls and the shuffled decodes are all folded alike. Under the fold the item-1 renaming is
+invisible to the judge, so all movement below is the fold. Full output `transcription/segment_R15-OLDUV.log`.
+
+| window | N | score (uv-fold) | real_p05 | held-out p05 | held-out share <= score | null_p99 | shuffled-decode (seeds 1-3) | word cover | judge | R14-OLDF2 score (real_p05) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | 159 | -0.933 | -0.864 | -0.907 | 2.9% | -1.853 | -2.072, -2.094, -2.169 | 0.906 | FAIL | -1.050 (-0.860) |
+| 1 | 160 | -0.880 | -0.876 | -0.906 | 9.1% | -1.846 | -2.064, -2.050, -2.024 | 0.956 | FAIL | -0.922 (-0.869) |
+| 2 | 163 | -0.893 | -0.868 | -0.907 | 6.9% | -1.822 | -2.040, -1.938, -2.107 | 0.951 | FAIL | -0.922 (-0.864) |
+| 3 | 154 | -0.968 | -0.875 | -0.908 | 1.8% | -1.873 | -2.111, -2.080, -1.958 | 0.948 | FAIL | -1.079 (-0.871) |
+
+The target moved 0.117 / 0.042 / 0.029 / 0.111; the real-prose controls moved under 0.01 (real_p05 -0.860..-0.871 -> -0.864..-0.876,
+held-out p05 unchanged to 0.001) and the shuffled decodes stayed near -2.0 to -2.2. PREREG item 4, as registered: no window flips
+FAIL -> PASS, so the notation gap is not the cause of the FAIL at this N. Descriptive only (not a gate): window 1 now sits 0.004 below
+its real_p05, and windows 1 and 2 score above their held-out p05 (9.1% and 6.9% of held-out real windows score at or below them);
+windows 0 and 3 (the high M/I-load windows, 0.126 and 0.162) remain below both. PREREG_R13-OLDSEG call: "not concentrated" (unchanged).
+
+Not found: no PASS in any window under one u/v convention on both sides.
+
+**Verdict: open.** Step (n) is done. Next steps: (a'') the owner's sign sorter for A/C2 (waiting, R7-OLDSORT/R7-OLDFIX), then a
+key-constrained re-read; (v2) a verifier carries the R15-OLDUV naming change into AUDIT.md and the queued SO prompt. Any later
+judge run on this reading uses `--uv-fold` (the reading keeps period u; the corpus does not).
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
+
+- Action that depends on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
+  the queued SO prompt, ~$1.5. Step (n) ran on 6 Oct 2026 (R15-OLDUV, section 20: one u/v naming, judge folded v->u on both sides,
+  all four windows still FAIL; gap to real_p05 narrowed 0.03-0.12, window 1 now 0.004 short). Step (f') ran on 6 Oct 2026
   (R14-OLDF2, section 19: C1_29 and C1_31 changed, re-judged, all four windows still FAIL). Step (f) ran on 6 Oct 2026 (R14-OLDF, section 18: no sign settled by the
   image, no re-judge). Step (e) ran on 6 Oct 2026 (R13-OLDSEG, section 17: all four windows
   FAIL, not concentrated in the OLD-PASS2 lines; deepest where the M/I tokens are). Step (d') ran on 6 Oct 2026 (R12-OLDCORP, section 16: es1600, FAIL by 0.140). Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
