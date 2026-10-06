@@ -5776,3 +5776,17 @@ done 23:21 5 Oct). VERIFY-BACKLOG: nothing actionable (Birago off limits; nla-he
 Workers 16.20 + orchestrator 3.63 = 19.83 of 60. Known-text share (rule: about a fifth): at most the Linhares job (2.02, about 12%).
 Open for the next lane: fr3151-noailles Tamizey de Larroque 1865 edition read for a clear 13 Nov 1558 text (S); ceppo f.21v L03.39 (one token);
 colbert26 canvas 20-21 positional test (~1, named by COL26P). Everything else on the hot-only list needs the owner, images, keys or editions.
+
+## LANE NEWT-B-account-2 handoff (session_01G6QuLXC8cNrSyEF4PeczQC, account 2), 6 October 2026 (closed 23:5x UTC: selection spent, lane about 12.4 of 60)
+
+Brief .claude/briefs/runs/2026-10-06-acct3-newtargets.md PART B; jobs .claude/briefs/runs/2026-10-06-account2-newtb-checks.md.
+Triage: QUEUE.md Tier A/B rows 1-37 and the scPOOL real-pool table, minus existing folders, diffed against fresh clones of
+both solver repositories (6 Oct 23:1x UTC). Only five survived; the rest are already read or keyed by Bourdeau (Wotton 1585,
+Add MS 4136 batch, Harley 1582/7001/260, wod1568, all five DECODE pools) or too short (Gun Wa, Percy 1559) or host-blocked (Folger).
+Five Sonnet check-solved workers, all D, 9.29 total:
+- hyde-add4166-1659 open, spec written; NEWT-A ran test 1 (structure vs shuffled pairing: no beat, conditional on print). Test 2 (Hyde-Barwick key below 693) open.
+- craven-rupert-1648 open, spec written; NEWT-A NA-CRAV running test 1 (DECODE R8447 fetch + transcription).
+- bagno-francia104-1652 blocked (DECODE login images, no edition; Bourdeau's own stated next step). While waiting: BL Add MS 8735 catalogue lookup.
+- cornwallis-pro3011-1780 blocked (Saberton 2019 keys in print; Cornwallis Papers 2010 unopened). While waiting: TNA Discovery descriptions.
+- charles-hm-cabinet-1645 blocked (20 symbols, too short; sibling ciphertext unlocated).
+Known-text share: about 17% (Cornwallis). What is left: nothing in Tier A/B worth a $3 test; new targets have to come from PART C's fresh scout.

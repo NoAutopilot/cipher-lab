@@ -7461,3 +7461,10 @@ disk. CS 4 fr16142-noailles-constantinople-1571: no cipher leaf located yet. CS 
 already deciphered on the leaf, <600 open signs -- **fails the pool bar, not sent on**. CS 6 baluze167-davaux-1637: interlinear
 decipherments, 5 undeciphered passages -- **likely below the bar, not sent on**. First cheap tests briefed for CS 1-4
 (`.claude/briefs/runs/2026-10-03-acct1-pools-first-tests.md`).
+
+### NEWT-B check-solved verdicts (LANE NEWT-B-account-2, 6 Oct 2026)
+
+Tier A/B and scPOOL rows not yet folders, after a fresh solver-repository diff: Hyde 1 Nov 1659 (Tier B 25) -> ciphers/hyde-add4166-1659 open;
+Craven 6 Nov 1648 (Tier B 34) -> ciphers/craven-rupert-1648 open; Bagno 5 Jan 1652 (scPOOL ASV remainder) -> ciphers/bagno-francia104-1652 blocked;
+Cornwallis PRO 30/11 (Tier A 6) -> ciphers/cornwallis-pro3011-1780 blocked; Charles I to Henrietta Maria 1645 (Tier B 26) -> ciphers/charles-hm-cabinet-1645 blocked.
+Every other Tier A/B row is a folder already, read or keyed by Bourdeau, too short, or host-blocked (list in .claude/briefs/runs/2026-10-06-account2-newtb-checks.md).
