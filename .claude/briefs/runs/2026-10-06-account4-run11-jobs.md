@@ -77,3 +77,15 @@ tools/system_map_check.py). Its solver may exploit the cycle constraint (e.g. ho
 Pre-register (HYPOTHESES.md row / PREREG file pushed first): control at N=70 K=53 (S1) and N=180 K=145-155 (S5 shape placeholder, as
 A2P4-SCORP3), seeds 3, gate 0.6. Run the target S1 only if the N=70 control clears the gate; S5 has no settled transcription, never run it.
 Report both numbers per run in HYPOTHESES.md. A control below gate = "untestable by this family at this N", not a negative.
+
+## Wave 2 (spawned 14:0x UTC 6 Oct)
+
+### R11-SIENA4750 -- siena-concistoro-2308 no. 7, R4750 key sheet word codes vs no. 7 low-count signs (Opus; cap 3, box 60 min)
+Intake gate: `siena-concistoro-2308: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder's step (b) (R10-SIENA7N and R11-SIENAPOOL "Next step"): one DECODE login per session with `tools/decode_browser_login.js` (host
+table row; scrub the account name from any saved page; if full-size images are blocked, use what the login serves and say so). Read the
+R4750 key sheet's word-code section (crop step pasted, one crop per subagent call, at most 2 blind passes + your reconciliation = 3 units
+x ~1.5; skip passes if the key is already transcribed on disk). Compare its word codes with the no. 7 signs that R9-SIENA7's fit leaves
+as low-count, high-cost tokens. Pre-register the match rule and a control (the same rule against a shuffled sign-to-code assignment, or
+against a fasc. 2 piece that R11-SIENAPOOL found does NOT share no. 7's sign set) in a PREREG file pushed before scoring. Grade any
+licensed token per rule 4; decode --check exit 0 if the key changes. No pooling with nos. 19/9 (agent-J confound named by R11-SIENAPOOL).
