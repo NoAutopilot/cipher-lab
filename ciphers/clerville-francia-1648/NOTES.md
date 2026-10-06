@@ -82,3 +82,19 @@ No reading on disk -- no ciphertext or reading: status blocked (REQUEST.md). No 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the step this folder's own pass (d) names -- a Gallica (SRU/ContentSearch) and archive.org full-text search of the 27 April 1648 date with the Este envoy's names in the French-side editions (Cheruel's Lettres du cardinal Mazarin, Recueil des instructions), ~$1 (estimate).
+
+
+## Edition search: 27 April 1648 and the Este envoy's names (D2-CLERV, 06 Oct 2026 00:00 UTC)
+
+Search results only (rule 10); not a novelty verdict. Status stays blocked (no image, no shelfmark; REQUEST.md unchanged).
+
+**Opened:** Cheruel, *Lettres du cardinal Mazarin pendant son ministere*, t. III (Jan 1648-Dec 1650), IA , full  read by script (OCR is rough). Its chronological table of analysed letters for 27 Apr 1648 lists one letter (Paris, Mazarin to Plessis-Praslin: fall of Guise at Naples, Prince Thomas to command the fleet, marquis Ville's diversion in Piedmont; "Imprime dans l'Histoire des revolutions de Naples, par le comte de Modene"). 28 Apr: Portugal; 30 Apr: letters including one "Au duc de Modene" (Cheruel's table, same volume; not read in full). No Este dispatch of 27 Apr 1648 and no cipher mention in the volume for that date.
+**Names found in print (leads, not matches):** (1) Cheruel t. III, Feb 1648 analysis: "le marquis Calcagnini (envoye du duc de Modene)", who returns to the Duke and is to brief d'Estrades; 100,000 francs to be paid to the Duke through him. That is a printed Este envoy at the French side in early 1648; the finding aid's "Clerville cav." is not matched to him or to anyone. (2) The chevalier de Clerville (Nicolas, 1610-1677, engineer) appears in the same volume as an engineer under Mazarin's orders (1649-50, and a 1650 note that he was to go to Piedmont for the next campaign, with d'Estrades, under the Duke of Modena and Plessis-Praslin); nothing there makes him an Este envoy. (3) Balthazar, French intendant sent to the Duke (Mar 1648). Whether the archive's "cav. Clerville" is that engineer remains unestablished.
+**IA full text (be-api fts, unquoted tokens so counts are upper bounds):** "Clerville Modene 1648" 810; "Clerville" "duc de Modene" 498; Clerville Modene ambassadeur 1648 chiffre 569; "27 avril 1648" Modene Mazarin 55; Italian queries (Clerville Este Francia 1648 dispaccio cifra 15; Clerville Francesco I Este ambasciatore 27). Top hits are Cheruel t. III/VIII/IX, Colbert's Lettres (Clerville as engineer, 1662-63), Memoires du comte de Modene, Inventaire sommaire (Affaires etrangeres), Bourelly *Cromwell et Mazarin*; none read for a 1648 Este dispatch with a cipher sheet. Not opened beyond snippets: t. VIII (, Clerville in a 1650s letter) and the Cheruel t. II/IX volumes.
+**Gallica SRU** (catalogue-level counts only; no full text opened): Calcagnini+Mazarin+Modene 168 (incl. Cheruel t. 2, Du Plessis-Besancon memoirs); chevalier de Clerville+Modene 613; Clerville+Este+1648 1024 (incl. BnF Recueil de lettres et memoires 1648-1665); Calcagnini+ambassadeur+Modene+1648 120. Titles only; hits are not shown to concern an Este dispatch.
+**Not found:** any printed or catalogued mention of a 27 Apr 1648 Este dispatch from Clerville, its cipher sheet, or a decipherment. **Not searched:** Italian-side editions (Modena archive publications, Calcagnini correspondence), Gallica ContentSearch inside Cheruel/Memoires de Du Plessis-Besancon, the Memoires du comte de Modene text.
+Requests: archive.org be-api 13, archive.org download 1, gallica SRU 5; all 200, 2 s apart.
+
+## While waiting (D2-CLERV, update)
+
+- Done: the French-side edition pass (Cheruel t. III, 27 Apr 1648). Next, no outside dependency: Gallica ContentSearch/IA fts of the Memoires de Du Plessis-Besancon and Cheruel t. II for "Calcagnini", then the ASMo finding aid with the name Calcagnini in case the "appendice" lists him (~USD 1).
