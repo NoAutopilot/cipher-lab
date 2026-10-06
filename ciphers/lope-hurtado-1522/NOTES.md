@@ -536,7 +536,8 @@ Bourdeau (no new flag).
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolver, credited, Job bLOP step 1): R9649 86/89 (97%), R9646 99/118 (84%); R9634 (ff. 14-16, about 6 pages) has no transcription anywhere.
-- R9634 transcription and decode with the full accumulated key - blocker: not-attempted; "What would actually move this target" item 1; Bourdeau's own NOTES line 657 names the same step (duplicate-effort risk, check his repo first); next: one DECODE browser login with `--guess-fullsize` (A2-HDK precedent, record 4692), line crops, two passes + reconcile, apply key_codes.tsv + R9649 values (cost estimated, not in the folder), ~$6
+- R9634 residual (Bourdeau 872/1191 = 73.2% read, read_r9634.md at his HEAD a02b838, credited): ~40 single-occurrence code groups - blocker: no-key-material; no clear copy in the record or in CSP Spain ii (his NOTES "Remaining gaps"); Kolosova's Ko.7/Ko.10 tables are the only named key source (L17 / ASKS 74)
+- R9634 residual spelled words (14r12, 14v03, 14v16, 15r11, 15v05, 15v13) - blocker: illegible; DECODE's full-size file is the only image online and was re-tested 6 Oct 2026 (A4-RFLOPE section); a blind sign pass at that resolution settled none; needs the RAH images of 9/26 ff.14-16 (owner's browser on bibliotecadigital.rah.es, or a reproduction request)
 - R9646 remainder 19/118 and R9649 remainder 3/89 - blocker: illegible; Bourdeau's "Where the work is now limited": DECODE serves ~1700 px per folio, too little for per-glyph discrimination ("What would actually move this target" item 3)
 - Kolosova's Ko.7/Ko.10 tables (pp. 312, 333, 388, 405) and Bertomeu Masiá 2024 - blocker: waiting-on LOCAL-QUEUE.tsv row L17 and ASKS row 74; L17 is the owner's read of Kolosova 2017/2024, row 74 the RODERIC request-a-copy form, which takes the requester's own details (rule 9)
 
@@ -546,9 +547,9 @@ Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolv
 - [ ] known-keys: Kolosova Ko.7/Ko.10 reconstructions (LOCAL-QUEUE L17), not opened
 - [x] print: CSP Spain II grepped whole-volume (bCSLOP); no. 497 flagged, not yet compared
 - [x] key-rebuild: Bourdeau's key_codes.tsv (49 confirmed) + 1524 key carried back, credited
-- [ ] image-check: R9634 full-size via DECODE `--guess-fullsize` (re-test per record before assuming blocked)
+- [x] image-check: R9634 full-size via DECODE `--guess-fullsize` re-tested 6 Oct 2026 (A4-RFLOPE): served, but byte-identical in size to Bourdeau's file (P1 1,427,572 B, 3256x2365 per two-page opening, his NOTES 3 Oct); no larger image on DECODE. RAH Biblioteca Digital search: Anubis challenge on the search POST twice, host stopped; A-26 = 9/26 digitisation not established
 - [n/a] retry: no attempt of ours on any of the three records to retry
-Verdict: keep going: 1 internal gap; cheapest next: R9634 residual (Bourdeau already reads 71%, read_r9634.md) - check his repo before any pass, then DECODE --guess-fullsize, ~$6
+Verdict: keep going: 0 internal gaps on R9634 (A4-RFLOPE, 6 Oct 2026: residual is no-key-material or illegible at DECODE's only resolution); cheapest next: siblings, BNE MSS/18697/29 and MSS/20212/27 catalogue/digital-collections check, ~$1
 
 ## RUN6-LOPE (5 Oct 2026): CSP Spain II no. 497 vs Bourdeau's read_r9649.md (disk + one shallow clone; 0 network hosts besides github.com, 1 request)
 Source: dbourdeau/cyphersolver HEAD a43993754e2e (read 5 Oct 2026), `targets/lopehurtado/` read_r9649.md, read_r9644.md, NOTES.md; MIT code / CC BY 4.0 text, credited. No new reading, no decode; comparison of already-logged claims (bLOP2 section (1) above had the 497 identification; this job re-checks it against his files at the current HEAD).
@@ -560,3 +561,22 @@ Source: dbourdeau/cyphersolver HEAD a43993754e2e (read 5 Oct 2026), `targets/lop
 | 497 vs read_r9644.md | camarero Pedro es el principal; Cisterer; principe don Enrique; Flandes/Castilla | R9644 (1 Nov, "primero de noviembre"; R9648 = duplicate) contains all four | agree: 497 = R9644/R9648, not R9649 (content match, grade S for the identification) |
 | his NOTES.md "no clear version" for R9649 | | line 600 reads "R9649 and R9656 later turned out to carry one" (self-corrected at HEAD); lines 280/495 still count it among the uncribbed | stale text in his file, resolved by read_r9649.md; not a disagreement with us |
 Found: R9649 identity settled, it is not no. 497. Not found: any CSP calendar entry for 9 Nov 1522 matching R9649 (bCSLOP whole-volume grep; Laiglesia regesta only). Side finding: Bourdeau's repo now has `read_r9634.md` (first worked 2 Oct 2026, 71% of tokens read, commit a439937, 3 Oct); the Premise check (b) line "no read_r9634.md" is out of date, and the R9634 step below is a duplicate-effort risk unless it targets his residual ~29%.
+
+## A4-RFLOPE (6 Oct 2026, 00:02-00:2x UTC by date -u): R9634 residual -- Bourdeau's repo, DECODE full size, one blind pass
+Brief: LANE DEFAULT-account-4-20261005-2253, wave 2. Grades unchanged: this repository still reads 0 tokens of R9634 itself; every reading figure below is Bourdeau's (dbourdeau/cyphersolver, MIT code / CC BY 4.0 text, credited).
+1. **His repository first** (shallow clone, HEAD a02b838, 5 Oct 2026): `targets/lopehurtado/read_r9634.md`, `r9634_cipher.txt` (1191 tokens, one line per MS line), `r9634_reading.tsv`, `key_1522_r9634.tsv`. R9634 = Genoa, 13 Sept 1522, ff.14-16; **872/1191 = 73.2% read as sense** (2-3 Oct 2026; the 71% in this folder's Verdict was his 2 Oct figure). His own Remaining gaps name the same two residual classes this job targeted: ~40 single-occurrence codes (no-key-material) and spelled words with one sign at the scan's limit (illegible). His NOTES (3 Oct) already record a logged-in DECODE full-size re-test, byte-identical to his file.
+2. **DECODE full size, one browser login** (`tools/decode_browser_login.js 9634 --guess-fullsize`): the three openings were served at 1,427,572 / 1,861,353 / 1,387,669 B (3256x2365, 3288x2410, 3288x2410; sha1s in images/manifest.json, files NOT committed). P1 matches his recorded byte count exactly: **no larger image exists on DECODE**; this re-test reproduces his finding, it does not extend it.
+3. **RAH Biblioteca Digital** (the better-image route both projects name): the search page loaded once in headless Chromium, but every search POST (the positive control `"Salazar y Castro, 20630"` from RUN3-RJM2, twice, and `"Salazar y Castro, 3269"` once) ended on the Anubis challenge page or failed mid-navigation; per the good-citizen rule the host was stopped after one retry. Digitisation of 9/26 (A-26; Índice no. 3269 per sources/salazar-castro-index/cipher_mentions.tsv) is **not established either way**: no query returned a results page.
+4. **One blind sign pass** (Sonnet subagent, 7 line crops cut with `tools/iiif_lines.py --image ... --mask-neighbours`, given the sign alphabet but not his transcription of these words) on the six unread spelled words, then compared with `r9634_cipher.txt` and two crops checked by eye:
+
+| line | Bourdeau (unread) | blind pass | eye check / verdict |
+|---|---|---|---|
+| 14r12 a | ʇʇ&48ʇʇ8∂ | a-o-n-r-f-e-s, NONE | first sign looks like # (f), not ʇʇ; "f/r o n e r e s" gives no word; unread |
+| 14r12 b | ∂7ɣ8ϑɣα4 | ∂7ʇʇ89 "pared" (5 signs) | the image shows ∂ 7 ɣ 8 ϑ/9 then a gap before ɣα4; the third sign is ɣ (c), not ʇʇ, so "pared" needs a sign the image does not show; his word split may be wrong (two groups), but no word results; unread |
+| 14v03 | y&Ɛʇʇα47 / xɩ4ε∠7x& | c-o-l-f-i-n-a / n-l-u-a-d-o, NONE | no word; unread (place names, as he suggests) |
+| 14v16 | 8&ɣʇʇα8ʇʇ7 | s-o-g-r-i-e-f-a, NONE | no word; unread |
+| 15r11 | zα∂ɷ8∂Hɣϑ&∂ | "...tres..." inside, rest NONE | partial fragment only, sign count disagrees; unread |
+| 15v05 | x838ɋHoɣ̊ / ʇʇʇα74Ho | ?-t-e / ?-i-a-n-?, NONE | unread |
+| 15v13 | ɭbʇʇ8∂98&∂ | ɭbʇʇ8∂ϑ& "presto" (6 signs) | the image shows ɭb ʇʇ 8 ∂ then two signs (9/ϑ, 8) before &; "presto" holds only if those two are one t; grade M at best ("que seria [xor8] ~presto"), not added |
+
+**Found:** nothing that raises R9634 above Bourdeau's 73.2%. "~presto" (15v13) is an M-grade candidate for a second reader with a better image to check. **Not found:** any larger DECODE image (re-test, 6 Oct 2026); an RAH digital record for 9/26 (search blocked by Anubis, not run). The residual is outside-blocked: illegible at the only online resolution, and no-key-material for the codes. Requests: github.com 1 (clone), de-crypt.org 1 login + 7 fetches (record page, 3 thumbnails, 3 full size), bibliotecadigital.rah.es 7 (curl 2, both Anubis 307; headless Chromium 5: 2 search-page loads, one failed mid-redirect, and 3 search POSTs, all challenged or failed). 1 subagent call.

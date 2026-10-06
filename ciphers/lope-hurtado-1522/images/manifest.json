@@ -1,0 +1,8 @@
+{
+  "note": "A4-RFLOPE, 6 Oct 2026. Fetched to the session scratchpad only, NOT committed: DECODE full-size files are behind the account login. Re-fetch: NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 9634 OUT --guess-fullsize. Line crops cut with tools/iiif_lines.py --image ... --mask-neighbours --mask-margin 30 --mask-keep 0.6 (regions below).",
+  "files": [
+    {"file": "IMG_R9634_I45360_P1.jpg", "bytes": 1427572, "px": "3256x2365", "sha1": "c7a149da7b40264c25952fc46134a98d78627704", "folios": "f.13v-14r", "crop_region": "1700,1230,1540,1135 prefix p14r"},
+    {"file": "IMG_R9634_I45360_P2.jpg", "bytes": 1861353, "px": "3288x2410", "sha1": "0a2b33a158ef5f467ec03727c7a218201f009529", "folios": "f.14v-15r", "crop_region": "160,260,1500,2150 p14v; 1720,260,1520,2150 p15r"},
+    {"file": "IMG_R9634_I45360_P3.jpg", "bytes": 1387669, "px": "3288x2410", "sha1": "793cea615138a4d1ad4ab3c13b1a4dd0552de57e", "folios": "f.15v-16r", "crop_region": "120,320,1460,1060 p15v"}
+  ]
+}
