@@ -1,0 +1,30 @@
+R11-SURWT score.py alt=1; target N=24, ctrl n(H) pool=45, d(H) pool=13
+CALIBRATION (H n tokens, 200 subsamples of 24, 1000 null draws + 1000 bootstraps each): n passes 179/200 = 0.895; d or m passes 0/200 = 0.000 -> GATE PASS (needs >=0.80 and <=0.05)
+descriptive d(H) N=13: S d=-55.16 m=-69.11 n=-63.78; null mean -65.68 p99 -55.36; boot wins d=0.968 m=0.000 n=0.033; passes ['d']
+TARGET y positions N=24: S d=-116.14 m=-145.66 n=-120.97; null mean -127.98 p99 -110.95; boot wins d=0.681 m=0.000 n=0.318
+TARGET verdict: FAIL (passing: [])
+  2039_leg_head:0	_etdek	d=-2.25	m=-0.65	n=-1.74	best=m
+  2039_leg_head:9	ekbge_ssood	d=-10.35	m=-9.53	n=-4.82	best=n
+  2039_leg_a:2	co_nante	d=-5.53	m=-4.58	n=-3.96	best=n
+  2039_leg_a:8	nante_tntk	d=-9.18	m=-8.82	n=-6.02	best=n
+  2039_leg_b:15	vootr_ebest	d=-6.69	m=-7.34	n=-7.65	best=d
+  2039_leg_d:11	q_bagts	d=-5.32	m=-2.49	n=-3.10	best=m
+  2039_leg_f:21	toriv_gdega	d=-7.83	m=-8.48	n=-11.87	best=d
+  2039_leg_f:23	rivdg_egacy	d=-3.95	m=-8.38	n=-6.56	best=d
+  2039_leg_g:0	_sgaea	d=-1.24	m=-1.36	n=-1.26	best=d
+  2039_leg_h:11	erieq_bagts	d=-10.07	m=-8.68	n=-7.42	best=n
+  2039_leg_i:5	renar_enaqg	d=-3.10	m=-3.05	n=-4.94	best=m
+  2039_leg_k:1	s_	d=0.00	m=0.00	n=0.00	best=d
+  2039_leg_m:5	corps_egard	d=-3.97	m=-10.98	n=-4.69	best=d
+  2039_leg_p:3	qa_eniti	d=-2.16	m=-3.97	n=-4.71	best=d
+  2039_leg_p:10	nitie_agaey	d=-4.72	m=-4.34	n=-5.07	best=m
+  2039_leg_p:21	npnop_ebatt	d=-3.08	m=-8.16	n=-5.43	best=d
+  2039_leg_q:9	svoor_ebend	d=-2.66	m=-5.13	n=-4.51	best=d
+  2039_leg_q:14	deben_itens	d=-3.59	m=-4.43	n=-5.25	best=d
+  2039_leg_s:15	brtee_braks	d=-5.82	m=-7.24	n=-3.29	best=n
+  2061_bat_L02:10	a_ito	d=-2.08	m=-3.54	n=-3.35	best=d
+  2061_bat_L06:18	terdr_ibast	d=-9.75	m=-13.22	n=-9.89	best=d
+  2061_bat_L07:0	_everd	d=-0.63	m=-0.70	n=-0.27	best=n
+  2061_bat_L09:36	esoip_ebatt	d=-3.78	m=-9.01	n=-6.72	best=d
+  2061_bat_L10:11	tedip_bbios	d=-8.42	m=-11.59	n=-8.47	best=d
+descriptive: decoded m 0 of 718 letters; nl18 expectation 15.9

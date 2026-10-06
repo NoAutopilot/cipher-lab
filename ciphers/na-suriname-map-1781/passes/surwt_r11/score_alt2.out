@@ -1,0 +1,5 @@
+R11-SURWT score.py alt=2; target N=24, ctrl n(H) pool=45, d(H) pool=13
+CALIBRATION (H n tokens, 200 subsamples of 24, 1000 null draws + 1000 bootstraps each): n passes 154/200 = 0.770; d or m passes 0/200 = 0.000 -> GATE FAIL (needs >=0.80 and <=0.05)
+descriptive d(H) N=13: S d=-54.51 m=-67.05 n=-65.91; null mean -65.36 p99 -55.70; boot wins d=0.991 m=0.001 n=0.009; passes ['d']
+TARGET not run: calibration gate failed -> non-test at this N.
+descriptive: decoded m 0 of 718 letters; nl18 expectation 15.9
