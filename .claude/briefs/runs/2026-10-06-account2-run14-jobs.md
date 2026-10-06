@@ -95,3 +95,58 @@ render (sha1 a41b5df838e49cefb71e30cdfbe0803f3947d591; re-fetch the WVO PDF once
 batches, against a fresh PREREG with the SAME gate (lvn10/PREREG.md control rows, >= 0.90 per pass; settle only when A == B), committed
 first. If PASS, apply via lvn10/apply.py, decode --check, flag the reading change for a verifier; if FAIL, apply nothing and log it.
 Units: 4 batch calls x ~1.5 + 1 scoring; stop before a unit that crosses 80% of the cap.
+
+## Wave 2 (spawned 15:3x UTC 6 Oct; lane about 19.5 of 60 at spawn). Intake gate output (15:32 UTC) pasted per job.
+Wave 1 results: SUR746 non-test (no word gaps); RJMZ jum merged (verifier flag); ROYCRIB 19/216 below control; KAL11 control-backed
+negative conv A; OLDF no sign settled, 4 C1 rows on shifted crops; LVN10C control FAIL with a named crop defect.
+
+### R14-RJMV -- VERIFIER, rah-juan-manuel-1521: carry R14-RJMZ into AUDIT.md (Opus; cap 2, box 40 min)
+Intake: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+Verifier, separate from every solver. Claim under audit: NOTES.md "R14-RJMZ" (467f60383): L24.22 "Z um" -> jum (otra) at M via
+lookalike/f34_exceptions.tsv; Jul/Jump J-groups not codes; 6 places yogh; f.34 S 300 / M 170 / U 272 of 742; judge FAIL above all 20
+shuffles. Re-run decode9501_la.py --check, look at L24.22 on the crops (and one of the 6 yogh places), confirm counts, carry into
+AUDIT.md and any SECOND-OPINIONS-QUEUE.tsv row. Correct only over-claims. Do not touch R9526 files (R14-RJM9526 runs there).
+
+### R14-RJM9526 -- rah-juan-manuel-1521: R9526 retest with f.150's clerk lines and settled splits (Opus; cap 4, box 70 min)
+Intake: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+Remaining gaps, R9526 line: "one Sonnet read of f.150's last 6 lines and a look-alike pass on the 85 split tokens of
+ciphertext_f147_reconciled.tsv, then a fresh PREREG (same gate) on the span, ~$3". Crop step pasted; PREREG committed first, same gate
+as the calibration that came out a non-test (0.491) -- say first whether the calibration can now reach its gate and stop if it cannot
+(CLAUDE.md rule 3 ARM-S3 lesson). The 2-of-3 residual is agreement, not error. Do not touch f.34 files or AUDIT.md.
+Units: 1 read + 1 look-alike pass + 1 scoring.
+
+### R14-SUR758 -- na-suriname-map-1781: inv. 373 scan 0758 glossed cipher, transcribe and align (Opus; cap 3.5, box 70 min)
+Intake: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+Same method as R13-SUR730 (reuse its PREREG shape and scripts): scan 0758, about 6 cipher lines with lighter plain lines above in a
+plain letter (right page lower half). PREREG committed first, one blind Sonnet pass on the crops + reconciliation + scoring against
+the pooled 0693+0702+0730 sign table vs a shuffled-gloss control; ask the readers to mark word gaps (R14-SUR746 lesson: without gaps
+the word-level score is a non-test). Report both numbers; conflicts.tsv for rule-4 conflicts; list crib words. Units 3 x ~1.2.
+
+### R14-SURDP -- na-suriname-map-1781: per-pair DP alignment of 0746 (Opus; cap 3, box 60 min)
+Intake: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+R14-SUR746's named next: its PREREG score was a non-test because the readers marked no word gaps. Pre-register (committed first) a
+per-pair sign-to-letter DP alignment of each 0746 gloss+cipher pair (tools/interlinear_align.py if it fits; else a short script, and
+say why), scored as per-sign agreement with the pooled 0693+0702+0730 sign table against a shuffled-gloss control that can vary
+(shuffle gloss lines between pairs). Report both numbers; no transcription changes, no new vision passes. CPU only.
+
+### R14-LVN10D -- lodewijk-van-nassau-1573-74: 4610 p3 per-token crops after the speck-filter repair (Opus; cap 5, box 80 min)
+Intake: `lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+R14-LVN10C named a crop defect (the speck filter drops detached leading digits) behind its control FAIL 0.726/0.722. Repair the filter
+(if it lives in a shared tool, add the option and an offline test; else fix the folder's crop script), re-cut, eye 10 random control
+crops for the missing digits BEFORE any read, then a PREREG addendum (layout change only, same gate >= 0.90, settle only when A == B)
+committed first and the two blind reads in crop batches. This is the defect repair of this instrument's attempt 1: if the control FAILs
+again with the crops eyed clean, log it, apply nothing, and mark per-token crops [retired] for 4610 p3 (rule 3). If PASS, apply via
+lvn10/apply.py, decode --check, flag for a verifier. Units: 4 batch calls x ~1.5 + 1 scoring.
+
+### R14-KAL12 -- kaliningrad-2015: pin the wordcode RNG, then convention B (Opus; cap 3, box 60 min)
+Intake: `kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+(1) R14-KAL11 found `tools/family_run.py --family wordcode` controls not seed-reproducible: pin the restart RNG to `--seed`, add an
+offline test in tools/tests/ that two runs with the same seed agree, keep defaults otherwise. (2) The NOTES next step: the same design
+(marked types as whole-word codes) under transcription convention B, PREREG (HYPOTHESES.md row) first, control first at the target's
+convention-B N and K, gate 0.6, target + shuffled-target beside it. Both numbers in HYPOTHESES.md. CPU only.
+
+### R14-OLDF2 -- na-oldenbarnevelt-2442-1605: re-read the 4 C1 rows that sat on shifted crops (Opus; cap 2.5, box 45 min)
+Intake: `na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+R14-OLDF section 18: four reader C1 rows (incl. C1_31, C1_05) were cut on the wrong crops. Re-cut those four on the right token
+positions (paste the command, eye each crop against the line image first), one blind Sonnet call on the four crops, reconcile; change
+a sign only where the image settles it, then re-judge per window under R13-OLDSEG's PREREG only if a sign changed. Units 1 + 1 (+1).
