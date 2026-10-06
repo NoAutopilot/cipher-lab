@@ -438,6 +438,111 @@ def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, no
     return results
 
 
+def anneal_nomen(seq, model, iters, rng, uni_w, vocab, word_prob=0.1, t0=4.0, fixed=None, word_bonus=0.0,
+                 unique_words=True):
+    """Homophonic + nomenclator anneal (R10-SIENA7N, 6 Oct 2026, siena-concistoro-2308 no. 7). Each sign decodes to one
+    plaintext letter OR to one whole word from `vocab` (a list of folded strings: the nomenclator layer, a sign standing
+    for a frequent word or name, R4750-style). The decode is the concatenation of the values, so its length varies;
+    score() is the same (n-gram + uni_w x the -N*KL letter term) on that concatenation. A move picks a free sign and,
+    with probability word_prob, a random vocab word, else a random letter. Incremental: only the n-grams touching the
+    changed tokens are re-scored, from a window of order-1 tokens on each side (every value is >= 1 char long).
+    word_bonus: added per extra character of each decoded word token (len(value)-1), offsetting the n-gram model's
+    length penalty (a 3-letter value pays about three characters' log-probability where a letter pays one); 0 = off.
+    unique_words: a vocab word may sit on at most one sign at a time (a move onto a word another sign holds is skipped);
+    without it a positive word_bonus lets the anneal pile one long word onto many signs.
+    Returns (score, key) with key {sign: value}; the score includes the bonus. Does not touch anneal()/solve(); their results are unchanged."""
+    o = model.order
+    signs = sorted(set(seq))
+    letters = list(getattr(model, "alpha", ALPHA))
+    weights = [model.freq[a] for a in letters]
+    vocab = [w for w in vocab if w]
+    pos = {s: [i for i, x in enumerate(seq) if x == s] for s in signs}
+    n = len(seq)
+    fixed = fixed or {}
+    key = {s: fixed.get(s) or rng.choices(letters, weights)[0] for s in signs}
+    free = [s for s in signs if s not in fixed]
+    clusters = {}
+    for s in signs:  # positions closer than o tokens share n-grams: group them so each n-gram is counted once
+        cl, cur = [], None
+        for i in pos[s]:
+            if cur and i - cur[-1] < o:
+                cur.append(i)
+            else:
+                cur = [i]
+                cl.append(cur)
+        clusters[s] = [(c[0], c[-1]) for c in cl]
+    pl = [key[x] for x in seq]
+    lp = model.logp
+    pad = o - 1
+
+    def local(a, b):
+        # n-grams of the window [a-pad, b+pad] that touch at least one char of tokens a..b
+        lo, hi = max(0, a - pad), min(n, b + pad + 1)
+        left = "".join(pl[lo:a])[-pad:] if a > lo else ""
+        mid = "".join(pl[a:b + 1])
+        right = "".join(pl[b + 1:hi])[:pad]
+        w = left + mid + right
+        st, en = len(left), len(left) + len(mid)
+        return sum(lp(w[j:j + o]) for j in range(max(0, st - o + 1), min(en, len(w) - o + 1)))
+
+    def total(vals):
+        return score(model, "".join(vals), uni_w) + word_bonus * sum(len(v) - 1 for v in vals)
+
+    from collections import Counter as _C
+    cnt = _C("".join(pl))
+    raw = sum(lp(t[j:j + o]) for t in ["".join(pl)] for j in range(len(t) - o + 1))
+
+    def uterm(c):
+        N = sum(c.values())
+        return sum(v * math.log(N * model.freq[a] / v) for a, v in c.items() if v > 0)
+
+    cur = raw + uni_w * uterm(cnt)
+    best, bestkey = cur, dict(key)
+    held = {v for v in key.values() if len(v) > 1}
+    for it in range(iters):
+        T = t0 * (1 - it / iters) + 0.02
+        s = rng.choice(free)
+        old = key[s]
+        new = rng.choice(vocab) if vocab and rng.random() < word_prob else rng.choice(letters)
+        if new == old or (unique_words and len(new) > 1 and new in held):
+            continue
+        before = sum(local(a, b) for a, b in clusters[s])
+        for i in pos[s]:
+            pl[i] = new
+        after = sum(local(a, b) for a, b in clusters[s])
+        m = len(pos[s])
+        c2 = cnt.copy()
+        for ch in old:
+            c2[ch] -= m
+        for ch in new:
+            c2[ch] += m
+        d = (after - before) + uni_w * (uterm(c2) - uterm(cnt)) + word_bonus * m * (len(new) - len(old))
+        if d >= 0 or rng.random() < math.exp(d / T):
+            key[s] = new
+            held.discard(old)
+            if len(new) > 1:
+                held.add(new)
+            cnt = c2
+            cur += d
+            if cur > best:
+                best, bestkey = cur, dict(key)
+        else:
+            for i in pos[s]:
+                pl[i] = old
+    return total([bestkey[x] for x in seq]), bestkey
+
+
+def solve_nomen(seq, model, restarts, iters, seed, uni_w, vocab, word_prob=0.1, fixed=None, word_bonus=0.0,
+                unique_words=True):
+    """Restarts of anneal_nomen(), best first; same seeding pattern as solve()."""
+    rng = random.Random(seed)
+    res = [anneal_nomen(seq, model, iters, rng, uni_w, vocab, word_prob, fixed=fixed, word_bonus=word_bonus,
+                         unique_words=unique_words)
+           for _ in range(restarts)]
+    res.sort(key=lambda x: -x[0])
+    return res
+
+
 def load_init_key(path):
     """--init: a key.tsv/key_full.tsv-style TSV (code, value, ...) -> {sign_str: letter}, folded and restricted
     to single a-z letters (NULL rows, name/word values and multi-letter values are skipped -- those signs start
