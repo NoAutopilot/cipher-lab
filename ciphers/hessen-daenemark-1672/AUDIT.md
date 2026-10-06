@@ -166,3 +166,67 @@ Result: no printed text of this letter's clear prose or of its glosses was locat
 class stays **N0**, because the decipherment is the period gloss on the leaf itself. Print adds no prior decipherment, and it also adds nothing
 that would change the class. Requests: be-api.us.archive.org 7 (incl. 1 to find Ribbeck's IA item), archive.org 2 (advancedsearch
 1, djvu download 1), www.googleapis.com 7, api.openalex.org 7, api.semanticscholar.org 3 (429), api.crossref.org 2.
+
+## R12D-HDKV: rule-7 fresh re-derivation and the gloss-hand question (account-4 verifier, 6 Oct 2026, 16:03-16:09 UTC by date -u)
+
+Verifier R12D-HDKV, a separate session from every solver on this folder (A2-HDK*, GAPS152-199) and from VERIFY-HDK. Brief:
+`.claude/briefs/runs/2026-10-06-account4-run12-jobs.md` "### R12D-HDKV". No key value and no reading was changed.
+
+**1. Re-derivation (rule 7).**
+```
+$ python3 tools/decode_key.py ciphers/hessen-daenemark-1672 --check
+ciphertext.tsv: tokens 65: C 9, I 1, M 25, S 28, U 2
+reading up to date                                                  EXIT 0
+$ python3 -I ciphers/hessen-daenemark-1672/keys/r12d_rederive.py ciphers/hessen-daenemark-1672
+mine      [C 9, I 1, M 25, S 28, U 2]
+committed [C 9, I 1, M 25, S 28, U 2]
+diffs 0 value diffs 0                                               EXIT 0
+```
+`keys/r12d_rederive.py` (new) was written from the file formats only, without reading decode_key.py's token loop: value from
+exceptions.tsv, else key.tsv / key_gloss.tsv, else `?`/U; grade lowered to M on an M-confidence sign or a `?` value. It
+agrees with the committed reading_tokens.tsv on all 65 tokens, values and grades. **No token differs, M-graded or otherwise.**
+
+**1a. Key cells against the period key image.** The re-derivation trusts key.tsv, so this verifier read by eye every
+letter-table cell the reading uses (33 distinct letter groups on f.4) against `keys/hcportal_key255_0013.jpg` (key 255
+f.13, letter table cropped at native resolution, two crops): 20 30 60 a, 22 32 b, 26 66 d, 28 38 68 e, 33 63 g, 55 h,
+37 67 i, 69 k, 110 l, 74 104 n, 76 96 o, 83 113 r, 75 85 s, 117 t, 119 u; doubled row (one column offset: CC under A)
+FF d, LL i, NN l, WW t, XX u, YY w; 6 in the f.13 null line "von 1. biß 20.". **33/33 agree with key.tsv.** (A2-HDK3's
+120/120 against the DECODE 4690 decipher scale is a second witness; this is a third, by a different eye.) The two cells the
+letter's own gloss contradicts (55 h vs gloss g; 6 null vs gloss t) are the table's values correctly copied: the
+contradiction is between the 1666 table and the 1672 encipherer, as VERIFY-HDK graded them (M), not a key.tsv error.
+
+**2. Gloss hand: period or modern (M, one eye, this verifier; method of manteuffel GAPS158).** Material: the existing
+`tools/iiif_lines.py` crops (`images/crops_p2/p2_L01, L03`, `images/crops_p3/p3_L08, L14`; commands and boxes in their
+manifest.json, GAPS155/GAPS159), viewed at native resolution, against the letter's clear text on the same lines and
+against the Kassel chancery hand of key 255 f.13 (1666; entries 180-185). Compared:
+- **Orthography.** Every gloss uses the 17th-century spelling, none the modern one: *Dennemarck* (not Dänemark),
+  *Kayser* (Kaiser), *Hertzog* (Herzog), *Franckreich* (Frankreich), *Cur Brandenburg* (Kurbrandenburg), *Gen. Staden*,
+  *Rex Daniae*. Key 255 (1666) writes the same forms: "Kön. dennemarck" 184, "Kayser" 180.
+- **Script choice.** The interlinear name glosses (K. Dennemarck, Dennemarck, Holstein) are in German Kurrent; the margin
+  gloss of run 1 writes the French loanword *disgustirt* in a Latin hand. That is the clear text's own convention on the
+  same leaf (loanwords *tractiren*, *present*, *affection* in Latin script, German words in Kurrent) and the chancery
+  convention of the period.
+- **Literalness.** The margin gloss copies the decryption letter by letter, spaced as decoded ("dis gustirt / unv ertanin")
+  and keeping the encipherer's spelling slips ("unvertanin" for unterthanin); a working decipherer's note, not an editor's
+  normalised reading.
+- **Ink and pen.** Iron-gall-type ink, brown-black, with no graphite sheen and no uniform modern stroke; the interlinear
+  glosses are blacker and heavier than the letter's brown ink and are squeezed between its lines, so they were written
+  in a different session from the letter, over the finished text (consistent with deciphering on receipt). The margin
+  gloss is lighter, nearer the letter's tone. (VERIFY-HDK's one look at p3_L08 called the margin ink "same tone as the
+  letter"; that holds for the margin, not for the interlinear glosses.)
+- **Hand.** Not the letter writer's hand (smaller, more angular, heavier pen). Not shown to be the key-255 scribe either:
+  the spelling and Kurrent forms agree, the pen does not; it does not name the decipherer.
+
+**Verdict: period (17th-century), M.** Every compared feature is of the period and none is modern; the most likely
+writer is a decipherer at the recipient's chancery in Kassel, not established. What would raise it above M: a
+palaeographer, or a dated Kassel chancery decipherment in the same hand. **Effect on grades: none.** The glosses are the
+known plaintext already graded C (rule 4: a period decipherment written on the leaf is plaintext, not a key source, so H
+does not apply); a modern hand would have weakened the `period` label of the key-source field, and this verdict
+supports it. Class stays **N0**, key `period`, text `known`.
+
+**3. Depth (rule 4a).** No grade changed (65 tokens: C 9, I 1, M 25, S 28, U 2; H/C/S 37/65 = 57%), so no depth field is
+written: status.json carries none for this target, and the brief allows a write only on a change. `tools/depth_check.py`
+not run for that reason.
+
+**Requests:** none (disk only). Vision: 4 looks by this verifier on native crops (2 key-255 table crops, 1 four-line gloss
+montage, 1 zoom/comparison montage); no subagents.
