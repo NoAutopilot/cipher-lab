@@ -649,7 +649,7 @@ Verdict: keep going: 10 internal gaps; cheapest next: T40 image compare ~$1; mos
 Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r and f.275v lines 1-16 (kp86f, err 0.181, C 355 / M 219); 24 Mar 1587 f.301v and f.302v (kp87b, err 0.335, C 227 / M 146): 7 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST. The 24 Mar 1587 letter's cipher (f.301v, f.302v) is fully tested; the inventory (PIS1-INV) locates the rest.
 - key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
 - 17 Sept 1586 second letter f.246r-f.247r (about 60 lines) vs Colbert pp.52-55 and the f.248r-v period decipherment - blocker: not-attempted; outside this brief; next: transcribe f.248r-v (faint, native region) and Colbert c445-c446, crops of c504-c506, per-line two-reader pipeline as kp87a, pre-registered, ~$45 for 60 lines
-- 4 Nov 1586 f.275v block B lines 12-15 (4 lines, crops not cut; native source re-fetch https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060906j/f563/950,950,2975,3650/full/0/native.jpg covers to line 14 only, line 15 needs y to about 4700) vs Colbert p.123 to "seureté d'icelle" - blocker: not-attempted; brief cap of 16 lines per page; next: 8 Sonnet calls + kp86f.py unchanged on the full page, ~$3.5
+- 4 Nov 1586 f.275v block B lines 12-15 (L17-L20, transcribed RUN6-PIS, tx86h; third reader tx86i, D2-PIS275): kp86h, kp86i and kp86j all FAIL (arm A 0.497/0.497/0.500 vs order p99 0.519/0.524/0.531, err 0.19/0.22/0.26), lines M - blocker: not-attempted; [retired] kp86d nw_score known-answer test for these lines (rule 3 third attempt, D2-PIS275); next: read the interlinear later-hand gloss above L17-L20 at native resolution, align it sign by sign to tx86i/local_ciphertext.tsv (C where gloss, key86 and copy agree), ~$2
 - 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; outside this brief; next: same per-line pipeline page by page, ~$12 per dense page
 - f.275v period decipherment (head of page and left margin, second hand, beside both cipher blocks) as a second witness - blocker: not-attempted; outside this brief; next: read the gloss at native resolution, normalise to one convention with the copy (rule 3 PX-BRODEC), score agreement, ~$2
 - 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
@@ -805,6 +805,30 @@ Brief: .claude/briefs/runs/2026-10-05-acct1-run6-wave5.md "RUN6-PISFIN" (LANE-RU
   reached); the next attempt should change the material (lower err by a third reader on the four lines, or the f.275v period gloss as witness), not the span.
 Report: found -- Colbert p.123 tail of the passage; kp86i FAIL both arms (A 0.497 vs order p99 0.524). Not found -- any C on L17-L20. Requests: Gallica 1. Subagent calls 0.
 
+## D2-PIS275 (5-6 Oct 2026)
+Brief: .claude/briefs/runs/2026-10-05-account1-default-2217-jobs.md "D2-PIS275" (LANE DEFAULT-account-1-20261005-2217, account 1), 23:55-00:12 UTC by date -u.
+Intake gate: `fr16045-pisany-rome-1585: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+- PREREG kp86j/PREREG_kp86j.md pushed (de4ad30cb) before reader C ran. Third attempt on L17-L20; changes the material (a third blind reader +
+  eye-reconcile), not the span, the statistic or the gate. Crops: RUN6-PIS's images/f275vB2_L01-L04_s1/_s2 (cut by its pasted iiif_lines.py command; no new crop).
+- Reader C: 4 blind Sonnet calls, prompt `sh tx86h/make_prompt.sh C Lnn` verbatim; replies verbatim tx86i/lines/C_L17-L20.txt -> tx86i/local_passC.tsv.
+- err_new (fixed before any eye work): `python3 tools/reconcile_passes.py tx86h/local_ciphertext.tsv tx86i/local_passC.tsv --out-dir tx86i/cmp`
+  -> C vs the RUN6-PIS reconciliation agree 132/179 = 73.7%, **err_new 0.263** (worse than the 0.223 A-B figure; A/B/C three-way 118/180 = 65.6%).
+  The third reader did not lower err; per the PREREG the run went ahead at 0.263.
+- Eye-reconcile of the 47 listed columns from the crops (shapes only; the small later-hand letters above the signs were not read for values):
+  12 tokens changed, tx86i/reconcile_log.tsv; rebuild `python3 tx86i/apply_reconcile.py --check` -> "tx86i/local_ciphertext.tsv up to date".
+- **kp86j (`python3 kp86j/kp86j.py --local --err 0.263 --inms "<kp86h phrase>"`, kp86j/kp86j_local_result.json): FAIL at err 0.263 with the control
+  passing, both arms.** Arm A reconciled 0.500 (N 194 letters) vs key-shuffle p99 0.490 / **order p99 0.531**; blind A 0.517, B 0.470, C 0.495 (each
+  below its order p99, 0.528-0.533); control 4/5 (pass >= 4/5). Arm B 0.518 vs order p99 0.534; control 5/5. Before: kp86i arm A 0.497 vs 0.524.
+- Reading (descriptive): every number moved by under 0.01; the reconciled decode sits above the key-shuffle null and below the order-shuffle null
+  on all three attempts (kp86h, kp86i, kp86j). Rule 3 third-attempt clause: the kp86d nw_score known-answer test is **retired for L17-L20**
+  (untestable by kp86d at N ~190 letters and err 0.22-0.26; not refuted). L17-L20 stay M; kp86h/grades_f275v.tsv (C 287, M 444, U 15) and
+  reading_f275v_M.txt stand; key86.tsv and the committed tx86h transcription unchanged (tx86i is beside it, not merged).
+- Seen on the crops: every one of L17-L20 carries small later-hand letters above the cipher signs (e.g. above L17 s1 and s2, L18 s1, L20 s1) --
+  an interlinear decipherment on these very lines, distinct from the head/margin gloss row below. That is the different instrument: a C-grade
+  witness read sign by sign, not a statistic.
+Report: found -- third reader read (err 0.263), kp86j FAIL both arms (A 0.500 vs order p99 0.531), interlinear gloss present over L17-L20.
+Not found -- any C on L17-L20; any err reduction from a third reader. Requests: none (disk only). Subagent calls: 4 Sonnet.
+
 ## Remaining gaps (RUN6-PIS, 5 Oct 2026; merges PIS1-KEY2's list; RUN6-PISFIN updates the f.275v B 12-15 row)
 Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.245r and (second letter) f.247r (kp86g, err 0.268, C 236 / M 122); 4 Nov 1586 f.275r and f.275v lines 1-16; 24 Mar 1587 f.301v and f.302v: 8 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST.
 - key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
@@ -829,5 +853,5 @@ Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.
 - [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
 - [ ] key-rebuild: T31 relabel SUPPORTED in aggregate (per-token crop check open); T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 image compare open
 - [x] image-check: f.247r cut one line per band, three bands re-cut fixed-y, montage checked
-- [ ] retry: f.246r/f.246v (crop commands above); f.275v B 12-15 (kp86i FAIL on the extended span; next a third reader to lower err); f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
-Verdict: keep going: 14 internal gaps; cheapest next: f.275v L17-L20 third reader + kp86i re-run, ~$2 (kp86i FAILed, RUN6-PISFIN); most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
+- [ ] retry: f.246r/f.246v (crop commands above); f.275v B 12-15 (kp86d test retired after kp86j, D2-PIS275; next the interlinear gloss over L17-L20); f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
+Verdict: keep going: 14 internal gaps; cheapest next: f.275v L17-L20 interlinear gloss read and sign-by-sign alignment, ~$2 (kp86j FAILed and retired kp86d for these lines, D2-PIS275); most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36

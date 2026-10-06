@@ -1,0 +1,13 @@
+line	col	old	new	why
+L17	40	T05	T57	circled w-shape (A and C read T57)
+L18	40	?[d]	T18	delta shape, as C's T18
+L18	42	?[bl]	T41	final single stroke (A's T41); ?[b] at col 41 kept
+L19	5	T14	T65	curved top, two bars, pound-sign shape (C)
+L19	41	T40	T17	y with descender after epsilon (C)
+L20	2	T40	T17	y with looped descender (C)
+L20	11	T02	T18	delta with ascender loop (C)
+L20	16	T08	T18	delta after o (C)
+L20	18	T29	-	no sign between 6 and caret (C)
+L20	30	T39	T40	n-like sign after v (C)
+L20	33	T54	T54 /	slash after the crossed p before y (C's /)
+L20	38	T29	T09	6-shape (C)
