@@ -1,0 +1,193 @@
+id	word_index	code_word	meaning	rule
+9668.3	7	Saint	Force	B
+9669.4	50	Valley	Presence	B
+9670.7	14	Harpers	Ewell	B
+9672.11	6	wick	Report	J
+9674.18	46	Color	Jasper	B
+9674.18	53	Valley	Presence	B
+9678.28	51	John	Maj Genl U.S. Grant	B
+9681.34	27	Valley	Presence	B
+9682.35	8	Beach	Adjt Genl. U.S.	B
+9682.35	46	Hang	Kirby Smith	B
+9684.39	23	John	Maj Genl U.S. Grant	B
+9685.41	37	college	Jasper	B
+9685.41	52	Princeton	Demoralize (-ed, -ing)	B
+9686.42	48	animals	Monroe	B
+9697.60	42	webb	Reinforcements	B
+9699.62c	2	Virtue	Pending	J
+9705.69e	58	Valley	Presence	B
+9709.69i	6	shelter	General	B
+9718.75	141	widow	Scatter (-ed, -ing)	B
+9722.76d	28	prospect	Demoralize (-ed, -ing)	B
+9723.77	153	Princeton	Demoralize (-ed, -ing)	B
+9724.78	120	Princeton	Demoralize (-ed, -ing)	B
+9724.78	136	Widow	Scatter (-ed, -ing)	B
+9727.80	67	Princeton	Demoralize (-ed, -ing)	B
+9728.82	19	Roanoke	Evacuate (-ed, -ing) - ion	B
+9728.82	34	Sandy	Fork	B
+9729.85	35	color	Jasper	B
+9736.100	104	Lock	Maj Gen N. P. Banks	J
+9737.101	20	summer	Impregnable	B
+9737.101	107	Summer	Impregnable	B
+9738.104	37	summer	Impregnable	B
+9739.105	82	princeton	Demoralize (-ed, -ing)	B
+9740.107	66	planting	Concentrate (-ed, -ing)	B
+9743.109	8	Barnard	" " Treasury	B
+9743.109	32	Pickets	Defeat (-ed, -ing)	B
+9746.115	17	Princeton	Demoralize (-ed, -ing)	B
+9747.116	96	white	Report	B
+9748.117	11	White	Report	B
+9749.118	78	White	Report	B
+9750.119	31	animals	Monroe	B
+9753.125	3	Submit	Maj. Gen. Lew Wallace (Baltimore)	B
+9765.139	20	whack	Towards	J
+9765.140	53	weakness	Reinforcements	B
+9765.140	87	Vermont	Pursue	B
+9767.143	36	squadron	Marine	B
+9769.146	19	Guns	Vicksburg	B
+9772.152	2	John	Maj Genl U.S. Grant	B
+9778.159	18	drilled	Memphis	B
+9779.160	24	Wallace	Ram	B
+9782.166	14	Wallace	Ram	B
+9784.168	25	question	Destroy (-ed, -ing)	B
+9785.169	152	Mud	Gen J. M. Brannon	B
+9785.169	295	Princeton	Demoralize (-ed, -ing)	B
+9788.172	179	embrace	Nashville	B
+9791.175	28	Summer	Impregnable	B
+9791.175	145	prospect	Demoralize (-ed, -ing)	B
+9791.175	163	hang	Kirby Smith	B
+9791.175	239	virtue	Pending	B
+9791.175	305	weakness	Reinforcements	B
+9794.177	225	planted	Concentrate (-ed, -ing)	B
+9798.181	24	princeton	Demoralize (-ed, -ing)	B
+9798.182	11	Webb	Reinforcements	B
+9799.184	153	college	Jasper	B
+9800.187	11	virtue	Pending	B
+9801.189	11	College	Jasper	B
+9804.195	126	virtue	Pending	B
+9805.196	169	valley	Presence	B
+9807.200	105	princeton	Demoralize (-ed, -ing)	B
+9808.202	28	valley	Presence	B
+9809.203	6	spencer	Has, or have been, reinforced	B
+9809.203	206	White	Report	B
+9809.203	322	Yankees	Drove in Enemys pickets	B
+9809.203	355	Yankee	Drove in Enemys pickets	B
+9816.216	15	Princeton	Demoralize (-ed, -ing)	B
+9820.226	29	trade	Outflank (-ed, -ing)	B
+9823.232	42	watched	Surrender (-ed, -ing)	B
+9824.233	5	College	Jasper	B
+9824.233	21	hotel	Longstreet	B
+9829.242	29	Fox	Philadelphia	B
+9829.242	60	Color	Jasper	B
+9830.243	39	Watch	Surrender (-ed, -ing)	B
+9831.247	27	Fox	Philadelphia	B
+9833.251	37	Hotel	Longstreet	B
+9835.253	15	watch	Surrender (-ed, -ing)	B
+9839.259	162	wharf	Today	B
+9840.260	41	Mud	Gen J. M. Brannon	B
+9843.269	43	John	Maj Genl U.S. Grant	B
+9845.272	19	Fox	Philadelphia	B
+9846.273	54	valley	Presence	B
+9846.273	75	John	Maj Genl U.S. Grant	B
+9848.277	15	John	Maj Genl U.S. Grant	J
+9848.278	7	prospect	Demoralize (-ed, -ing)	B
+9848.278	80	beach	Adjt Genl. U.S.	B
+9854.293	12	Stephen	In the	J
+9856.296	60	weakness	Reinforcements	B
+9857.298	46	wharf	Today	B
+9858.301	48	Fox	Philadelphia	B
+9859.303	17	Washington	Volunteer	B
+9860.308	37	Spencer	Has, or have been, reinforced	B
+9860.308	49	squadron	Marine	B
+9860.308	79	spencer	Has, or have been, reinforced	B
+9861.309	28	Squadron	Marine	B
+9861.309	61	Gideon	Petersburg	B
+9861.310	11	Sandy	Fork	B
+9861.310	12	Springs	Has, or have been, reinforced	B
+9863.313	6	Herald	Ewell	B
+9865.318	26	King	Maj Genl J. M. Schofield	B
+9865.319	34	Shannon	Gunboat	J
+9867.323	20	fortune	Newbern	B
+9867.324	43	Cedar	Grenada	B
+9869.327	11	Taylor	Mountain	B
+9873.340	18	Princeton	Demoralize (-ed, -ing)	B
+9875.344	68	Question	Destroy (-ed, -ing)	B
+9875.344	100	Question	Destroy (-ed, -ing)	B
+9876.346	81	question	Destroy (-ed, -ing)	B
+9880.358	15	vermont	Pursue	B
+9880.359	16	vermont	Pursue	B
+9880.359	30	spring	Has, or have been, reinforced	J
+9880.359	42	vermont	Pursue	B
+9881.361	56	weakness	Reinforcements	B
+9885.368	18	summit	Impregnable	B
+9888.375	49	Madrid	Maj Gen O. O. Howard	B
+9889.376	47	Madrid	Maj Gen O. O. Howard	B
+9890.380	129	village	Pontoon	B
+9890.380	242	squadron	Marine	B
+9892.382	13	Stanley	Invest (-ed, -ing)	B
+9892.382	28	Stanley	Invest (-ed, -ing)	B
+9893.383	36	Weakness	Reinforcements	B
+9894.385	29	question	Destroy (-ed, -ing)	B
+9896.388	53	Beach	Adjt Genl. U.S.	B
+9897.392	2	Madrid	Maj Gen O. O. Howard	B
+9901.401	34	Tracy	Outflank (-ed, -ing)	B
+9902.404	7	college	Jasper	B
+9902.404	31	valley	Presence	B
+9902.404	54	color	Jasper	B
+9902.404	82	Princeton	Demoralize (-ed, -ing)	B
+9903.407	26	College	Jasper	B
+9909.421	14	vermont	Pursue	B
+9911.426	61	Quaker	Danger	B
+9913.429	34	Relay	Evacuate (-ed, -ing) - ion	B
+9918.439	12	Pike	Cut off	B
+9918.440	85	summer	Impregnable	B
+9920.444	38	submit	Maj. Gen. Lew Wallace (Baltimore)	B
+9922.448	40	Fox	Philadelphia	B
+9927.455	86	valley	Presence	B
+9927.455	93	spencer	Has, or have been, reinforced	B
+9928.457	14	Lawn	Maj Gen Joseph Hooker	B
+9928.457	35	fox	Philadelphia	B
+9930.463	24	Eagle	Murfreesboro	B
+9937.479	172	Glasgow	Selma	B
+9939.485	25	snow	Harass (-ed, -ing)	B
+9946.502	11	Summer	Impregnable	B
+9946.502	36	Richard	Entrench (-ed, -ing)	B
+9950.511	33	Washington	Volunteer	B
+9951.514	7	dodge	McMinnville	B
+9957.525	8	Madrid	Maj Gen O. O. Howard	B
+9957.525	44	Summer	Impregnable	B
+9958.527	12	snow	Harass (-ed, -ing)	B
+9959.529	26	Wayne	Reinforce (-ed, -ing)	B
+9962.534	36	submit	Maj. Gen. Lew Wallace (Baltimore)	B
+9963.535	14	white	Report	B
+9966.542	66	guns	Vicksburg	B
+9967.542e	252	question	Destroy (-ed, -ing)	B
+9971.547b	11	Taylor	Mountain	B
+9972.547c	14	John	Maj Genl U.S. Grant	B
+9972.547c	19	Black	City Point	J
+9972.547c	92	bears	Bowling Green	B
+9973.548	165	trade	Outflank (-ed, -ing)	B
+9974.549	86	Wallace	Ram	B
+9976.551b	16	prospect	Demoralize (-ed, -ing)	B
+9988.567	6	College	Jasper	B
+9989.568	74	hang	Kirby Smith	B
+9990.569b	58	Madrid	Maj Gen O. O. Howard	B
+9998.576	3	John	Maj Genl U.S. Grant	B
+10000.576b	56	trade	Outflank (-ed, -ing)	B
+10003.579	21	Washington	Volunteer	B
+10005.584	19	John	Maj Genl U.S. Grant	B
+10014.600	7	children	Huntsville	B
+10016.603	14	John	Maj Genl U.S. Grant	B
+10020.611	90	Washington	Volunteer	B
+10023.617	19	Princeton	Demoralize (-ed, -ing)	B
+10023.617	45	college	Jasper	B
+10027.622	30	prospect	Demoralize (-ed, -ing)	B
+10028.626	57	summer	Impregnable	B
+10028.626	111	college	Jasper	B
+10032.634	248	Vermont	Pursue	B
+10037.637	247	Washington	Volunteer	B
+10043.642	6	Barton	Adjt Genl. U.S.	B
+10048.648	18	Washington	Volunteer	B
+10061.659	24	watch	Surrender (-ed, -ing)	B
+10064.665	13	questions	Destroy (-ed, -ing)	B
+10065.666	7	John	Maj Genl U.S. Grant	B

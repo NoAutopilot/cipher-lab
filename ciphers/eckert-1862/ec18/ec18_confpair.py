@@ -16,13 +16,14 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
+import ec18  # noqa: E402
 from ec18 import STOP  # noqa: E402
 
 PRIMARY = ["9669.5", "9762.135", "9808.202", "9958.527", "9969.543", "9985.563", "9987.565"]
 
 
 def rows(name):
-    lines = (HERE / name).read_text().splitlines()
+    lines = ec18.src(name).read_text().splitlines()
     head = lines[0].split("\t")
     return [dict(zip(head, ln.split("\t"))) for ln in lines[1:] if ln]
 
@@ -127,8 +128,8 @@ def main(argv):
     stale = 0
     for f, txt in want.items():
         if mode == "--write":
-            (HERE / f).write_text(txt)
-        elif not (HERE / f).exists() or (HERE / f).read_text() != txt:
+            (ec18.OUT / f).write_text(txt)
+        elif not (ec18.OUT / f).exists() or (ec18.OUT / f).read_text() != txt:
             print(f"STALE {f}")
             stale = 1
     print(want["confpair_summary.tsv"], end="")

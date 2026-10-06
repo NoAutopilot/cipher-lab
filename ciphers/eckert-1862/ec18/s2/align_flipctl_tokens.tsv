@@ -1,0 +1,183 @@
+id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	printed
+9849.279	1	43.2	136	target	0	Crowd	Knoxville	H	word	UNFIXED	being relieved by capt william mccarrol company b two hundred and first
+9849.279	1	43.2	136	target	1	Ireland	General-in-Chief	H	word	UNFIXED	
+9849.279	1	43.2	136	target	4	eggnog			plain-replaced	CONFLICT	sheridan s
+9849.279	1	43.2	136	target	7	lantern	Maj Gen Geo. H. Thomas	H	word	CONFLICT	general augur
+9849.279	1	43.2	136	target	12	wharf	Today	H	word	CONFLICT	troops
+9849.279	1	43.2	136	target	14	caldwell			plain-replaced	CONFLICT	5 000
+9849.279	1	43.2	136	target	15	dwight			plain-replaced	CONFLICT	5 000
+9849.279	1	43.2	136	target	18	pack			plain-replaced	CONFLICT	forward
+9849.279	1	43.2	136	target	23	Costume	Jefferson	H	word	UNFIXED	edwin m stanton secretary of war city point va september 22 1864
+9852.288	2	43.2	210	target	6	darling	Kingston	H	word	CONFLICT	martinsburg
+9852.288	2	43.2	210	target	8	Camel	Florence	H	word	CONFLICT	harper s ferry
+9852.288	2	43.2	210	target	11	plunder			plain-replaced	CONFLICT	700
+9852.288	2	43.2	210	target	13	paddle			plain-replaced	CONFLICT	800 men
+9852.288	2	43.2	210	target	14	prolong			plain-replaced	CONFLICT	800 men
+9852.288	2	43.2	210	target	15	spit	Near	H	word	CONFLICT	800 men
+9852.288	2	43.2	210	target	19	behead	Maj Gen H W Halleck	H	word	AGREE	
+9852.288	2	43.2	210	target	22	confess	Graysville Station	H	word	UNFIXED	cumberland as soon as trains can be furnished but it will use
+9852.288	2	43.2	210	target	29	biped	Maj Gen G G Meade	H	word	UNFIXED	harper s ferry if you require more officers for this purpose telegraph
+9801.190	2	37.2	458	target	0	Grapes	Maj Gen B. F. Butler	H	word	UNFIXED	hdqrs dept of washington 22 d army corps july 27 1864 col
+9801.190	2	37.2	458	target	1	Dorothy	8.30 AM (time word)	H	time	AGREE	
+9801.190	2	37.2	458	target	6	Camel	Florence	H	word	UNFIXED	a m major general hunter harper s ferry w va
+9801.190	2	37.2	458	target	18	torch	Pursue (-ed, -ing)	H	word	UNFIXED	move ments of the enemy a lincoln harper s ferry july 27
+9801.190	2	37.2	458	target	19	rome	Earthworks	H	word	UNFIXED	move ments of the enemy a lincoln harper s ferry july 27
+9801.190	2	37.2	458	target	21	Bologna	Davidson J W	H	word	UNFIXED	move ments of the enemy a lincoln harper s ferry july 27
+9824.233	1	42.2	291	target	0	happy	Lee	H	word	UNFIXED	report to general warren yery respectfully your obedient servant august y kautz
+9824.233	1	42.2	291	target	2	Helen	2 PM (time word)	H	time	AGREE	report to general warren yery respectfully your obedient servant august y kautz
+9824.233	1	42.2	291	target	3	crowd	Knoxville	H	word	UNFIXED	report to general warren yery respectfully your obedient servant august y kautz
+9824.233	1	42.2	291	target	5	College	Jasper	H	word	UNFIXED	general commanding to inform you that the third new york first district
+9824.233	1	42.2	291	target	14	sheriff			plain-replaced	CONFLICT	success
+9824.233	1	42.2	291	target	16	sobering			plain-replaced	CONFLICT	pushing across
+9824.233	1	42.2	291	target	17	glory	17 (numeral)	H	numeral	CONFLICT	pushing across
+9824.233	1	42.2	291	target	21	hotel	Longstreet	H	word	CONFLICT	weldon road
+9824.233	1	42.2	291	target	22	weak			plain-replaced	CONFLICT	weldon road
+9824.233	1	42.2	291	target	23	knees			plain-replaced	CONFLICT	weldon road
+9824.233	1	42.2	291	target	28	Simms	Heavy	H	word	AGREE	lieavy
+9824.233	1	42.2	291	target	30	tooth			plain-replaced	CONFLICT	to the enemy
+9824.233	1	42.2	291	target	31	robin	Effective	H	word	CONFLICT	to the enemy
+9824.233	1	42.2	291	target	40	hopes	19 (numeral)	H	numeral	COLLISION	hopes
+9824.233	1	42.2	291	target	43	Costume	Jefferson	H	word	UNFIXED	edwin m stanton secretary of war washington august 19 1864 10 a
+9851.286	1	43.2	178	target	0	Hannah	1.30 PM (time word)	H	time	PARTIAL	p m lieutenant general grant city point
+9851.286	1	43.2	178	target	3	Crowd	Knoxville	H	word	UNFIXED	p m lieutenant general grant city point
+9851.286	1	43.2	178	target	5	clarke			plain-replaced	CONFLICT	six michigan regiments
+9851.286	1	43.2	178	target	6	Brussels	Shenandoah	H	word	CONFLICT	six michigan regiments
+9851.286	1	43.2	178	target	7	Webbs	Reinforcements	H	word	CONFLICT	six michigan regiments
+9851.286	1	43.2	178	target	11	austin			plain-replaced	CONFLICT	three
+9851.286	1	43.2	178	target	15	repeated			plain-replaced	CONFLICT	ordered
+9851.286	1	43.2	178	target	28	tanner	Movement	H	word	CONFLICT	over the
+9851.286	1	43.2	178	target	30	flora	Newbern	H	word	CONFLICT	sherman telegraphs
+9851.286	1	43.2	178	target	31	whifs			plain-replaced	CONFLICT	sherman telegraphs
+9851.286	1	43.2	178	target	36	widows	Scatter (-ed, -ing)	H	word	CONFLICT	troops
+9851.286	1	43.2	178	target	37	savory	From the	H	word	AGREE	
+9851.286	1	43.2	178	target	38	would			plain-replaced	CONFLICT	west
+9851.286	1	43.2	178	target	42	subject			plain-replaced	CONFLICT	protect
+9851.286	1	43.2	178	target	44	plantations			plain-replaced	CONFLICT	communications
+9851.286	1	43.2	178	target	46	waynes	Reinforce (-ed, -ing)	H	word	CONFLICT	regiments
+9851.286	1	43.2	178	target	51	repeats			plain-replaced	CONFLICT	orders
+9851.286	1	43.2	178	target	55	Bridle	Chattanooga	H	word	CONFLICT	city point
+9851.286	1	43.2	178	target	60	recd			plain-replaced	CONFLICT	received
+9851.286	1	43.2	178	target	68	Walnuts	Rebel	H	word	CONFLICT	railroads
+9851.286	1	43.2	178	target	69	lady	Maj Gen Geo. H. Thomas	H	word	CONFLICT	railroads
+9866.321	2	43.2	352	target	0	Growl	Maj Gen B. F. Butler	H	word	UNFIXED	general sheridan if he comes over to rectortown cedar creek ya october
+9866.321	2	43.2	352	target	1	lucy	5.30 PM (time word)	H	time	PARTIAL	p m via rectortown and harper s ferry major general sheridan cedar
+9866.321	2	43.2	352	target	6	brutus	Delaware	H	word	CONFLICT	secretary of war
+9866.321	2	43.2	352	target	8	utah			plain-replaced	CONFLICT	you to
+9866.321	2	43.2	352	target	11	Grapes	Maj Gen B. F. Butler	H	word	CONFLICT	washington
+9866.321	2	43.2	352	target	23	polka			plain-replaced	CONFLICT	command general grant s
+9866.321	2	43.2	352	target	24	John	Imboden	H	word	CONFLICT	command general grant s
+9866.321	2	43.2	352	target	29	venus	Re-enforcements	H	word	CONFLICT	position
+9866.321	2	43.2	352	target	32	world	West	H	word	UNFIXED	valley as a basis
+9866.321	2	43.2	352	target	37	China	Decatur	H	word	CONFLICT	gordonsville c
+9866.321	2	43.2	352	target	38	etc			plain-replaced	CONFLICT	gordonsville c
+9866.321	2	43.2	352	target	46	sligo	Killing	H	word	CONFLICT	supplies in the
+9866.321	2	43.2	352	target	56	Sharper	Government	H	word	UNFIXED	manassas gap road h w il 4 lleck major general and chief
+9866.321	2	43.2	352	target	61	bennet	Secretary of Navy	H	word	UNFIXED	manassas gap road h w il 4 lleck major general and chief
+9897.392	1	42.3	622	target	0	Hannah	1.30 PM (time word)	H	time	UNFIXED	fifth pennsylvania volunteers deserted to
+9897.392	1	42.3	622	target	2	Madrid	Maj Gen O. O. Howard	H	word	UNFIXED	fifth pennsylvania volunteers deserted to
+9897.392	1	42.3	622	target	7	the			plain-replaced	CONFLICT	tlie
+9897.392	1	42.3	622	target	9	pelham	Corps	H	word	AGREE	
+9897.392	1	42.3	622	target	12	blithe			plain-replaced	CONFLICT	by the president
+9897.392	1	42.3	622	target	13	Balfour	" " Treasury	H	word	CONFLICT	by the president
+9897.392	1	42.3	622	target	15	trifle			plain-replaced	CONFLICT	will be
+9897.392	1	42.3	622	target	21	brooks			plain-replaced	CONFLICT	two as soon as
+9897.392	1	42.3	622	target	22	assures			plain-replaced	CONFLICT	two as soon as
+9897.392	1	42.3	622	target	28	Belcher	Qr Master Genl U.S.	H	word	UNFIXED	arrangements with the secretary of the treasury edwin m stanton secretary of
+9897.392	1	42.3	622	target	29	wiley	Road	H	word	AGREE	
+9897.392	1	42.3	622	target	30	Beach	Adjt Genl. U.S.	H	word	UNFIXED	evans brigade is on the right of the division wilcox
+9901.400	1	43.2	694	target	0	Hannah	1.30 PM (time word)	H	time	PARTIAL	p m major general sheridan kernstown va
+9901.400	1	43.2	694	target	2	Negus	Jno A. Dahlgren	H	word	UNFIXED	p m major general sheridan kernstown va
+9901.400	1	43.2	694	target	6	spencer	Has, or have been, reinforced	H	word	UNFIXED	information
+9901.400	1	43.2	694	target	11	Quaker	Danger	H	word	CONFLICT	s division
+9901.400	1	43.2	694	target	14	Query	Detach (-ed, -ing)	H	word	AGREE	detachment of the sixth
+9901.400	1	43.2	694	target	16	talbot	Movement	H	word	UNFIXED	detachment of the sixth
+9901.400	1	43.2	694	target	18	pelton	Corps	H	word	AGREE	
+9901.400	1	43.2	694	target	19	Stanhope	In the meantime	H	word	CONFLICT	president
+9901.400	1	43.2	694	target	20	the			plain-replaced	CONFLICT	president
+9901.400	1	43.2	694	target	21	College	Jasper	H	word	CONFLICT	president
+9901.400	1	43.2	694	target	23	Costume	Jefferson	H	word	CONFLICT	secretary of wtar
+9901.400	1	43.2	694	target	27	unsafe			plain-replaced	CONFLICT	useless
+9901.400	1	43.2	694	target	41	Waltzers	Surprise (-ed, -ing)	H	word	CONFLICT	steamers
+9901.400	1	43.2	694	target	43	Embrace	Nashville	H	word	UNFIXED	h w halleck major general and chief of staff kernstown va november
+9916.434	1	41.4	868	target	0	Yellow	Encountered enemy in strong force	H	word	UNFIXED	the settlers lake fanny is a small round one about half a
+9916.434	1	41.4	868	target	2	Mastiff	Maj Gen B. M. Prentiss	H	word	UNFIXED	received 26 th major general canby new orleans general
+9916.434	1	41.4	868	target	6	flora	Newbern	H	word	CONFLICT	sherman s army
+9916.434	1	41.4	868	target	7	pern			plain-replaced	CONFLICT	sherman s army
+9916.434	1	41.4	868	target	9	hebrew	Williamsburg	H	word	CONFLICT	savannah
+9916.434	1	41.4	868	target	19	widows	Scatter (-ed, -ing)	H	word	CONFLICT	troops
+9916.434	1	41.4	868	target	28	burglar	Columbus	H	word	CONFLICT	quartermaster general
+9916.434	1	41.4	868	target	37	say			plain-replaced	CONFLICT	pensacola
+9916.434	1	41.4	868	target	38	cooler			plain-replaced	CONFLICT	pensacola
+9916.434	1	41.4	868	target	50	wiley	Road	H	word	AGREE	
+9916.434	1	41.4	868	target	51	lamb	Maj Gen Geo. H. Thomas	H	word	PARTIAL	between the tensas station and pollard and will send an expedition against
+9916.434	1	41.4	868	target	52	Harriet	1 PM (time word)	H	time	AGREE	m crosby sec ond texas infantry relative to galveston tex there are
+9927.456	1	46.2	17	target	0	reliance	10.30 PM (time word)	H	time	PARTIAL	o clock to morrow if transportation can be furnished i will try
+9927.456	1	46.2	17	target	1	negus	Jno A. Dahlgren	H	word	UNFIXED	o clock to morrow if transportation can be furnished i will try
+9927.456	1	46.2	17	target	3	burglar	Columbus	H	word	UNFIXED	transportation at stephenson s depot at that time troops are encamped at
+9927.456	1	46.2	17	target	4	watsons	Resist	H	word	UNFIXED	transportation at stephenson s depot at that time troops are encamped at
+9927.456	1	46.2	17	target	9	weasel	Steam	H	word	CONFLICT	transportation
+9927.456	1	46.2	17	target	11	bard	Baton Rouge	H	word	CONFLICT	baltimore
+9927.456	1	46.2	17	target	13	Grammar	Tuscumbia	H	word	CONFLICT	philadelphia
+9927.456	1	46.2	17	target	15	saxons	From the	H	word	CONFLICT	fears
+9927.456	1	46.2	17	target	20	immy			plain-replaced	CONFLICT	immediately
+9927.456	1	46.2	17	target	22	Granada	Shelbyville	H	word	CONFLICT	new york
+9927.456	1	46.2	17	target	27	suppers	Killing	H	word	CONFLICT	movements
+9927.456	1	46.2	17	target	32	wayworn	Steam	H	word	CONFLICT	transportation
+9927.456	1	46.2	17	target	42	beach	Adjt Genl. U.S.	H	word	UNFIXED	edwin m stanton secretary of war winchester va january 2 1865 12
+9929.461	1	46.2	47	target	0	negus	Jno A. Dahlgren	H	word	UNFIXED	time of your arrival you will then await further orders by order
+9929.461	1	46.2	47	target	1	Weans	Skirmish (-ed, -ing)	H	word	UNFIXED	h terry a terky captain and amti stant adjutant general circular no
+9929.461	1	46.2	47	target	2	stephen	In the	H	word	AGREE	
+9929.461	1	46.2	47	target	3	bridle	Chattanooga	H	word	UNFIXED	commanding officer on each transport will keep on hand three days cooked
+9929.461	1	46.2	47	target	6	bard	Baton Rouge	H	word	CONFLICT	baltimore
+9929.461	1	46.2	47	target	9	insult			plain-replaced	CONFLICT	carry 4 000 infantry
+9929.461	1	46.2	47	target	10	baker			plain-replaced	CONFLICT	carry 4 000 infantry
+9929.461	1	46.2	47	target	11	dwight			plain-replaced	CONFLICT	carry 4 000 infantry
+9929.461	1	46.2	47	target	12	Sugar	Interrogation	H	punct	NOTSCORED	
+9929.461	1	46.2	47	target	16	baron	Baton Rouge	H	word	CONFLICT	baltimore to day
+9929.461	1	46.2	47	target	17	Wherry	Transportation	H	word	CONFLICT	baltimore to day
+9929.461	1	46.2	47	target	26	widows	Scatter (-ed, -ing)	H	word	CONFLICT	for the troops
+9929.461	1	46.2	47	target	30	saddle	Guard (-ed, -ing)	H	word	AGREE	
+9929.461	1	46.2	47	target	32	Weldon	Rail Road	H	word	CONFLICT	straggling
+9929.461	1	46.2	47	target	33	ning			plain-replaced	CONFLICT	straggling
+9929.461	1	46.2	47	target	35	Quadroon	Department	H	word	CONFLICT	desertion
+9929.461	1	46.2	47	target	41	Summer	Impregnable	H	word	CONFLICT	men
+9929.461	1	46.2	47	target	46	baron	Baton Rouge	H	word	CONFLICT	baltimore
+9929.461	1	46.2	47	target	58	windham	Road	H	word	UNFIXED	brokers edwin m stanton secretary of war winchestf r va january 5
+9929.461	1	46.2	47	target	59	barton	Adjt Genl. U.S.	H	word	UNFIXED	brokers edwin m stanton secretary of war winchestf r va january 5
+9932.470	2	46.2	66	target	0	Lucy	5.30 PM (time word)	H	time	PARTIAL	n and se va n c w va md and pa chap
+9932.470	2	46.2	66	target	3	Vincent	Rifle Pits	H	word	UNFIXED	quartermaster baltimore including suwo nada ashland and oriental have you transporta tion
+9932.470	2	46.2	66	target	4	Nabob	Schenck R C	H	word	UNFIXED	quartermaster baltimore including suwo nada ashland and oriental have you transporta tion
+9932.470	2	46.2	66	target	6	wicked	South	H	word	CONFLICT	reported
+9932.470	2	46.2	66	target	9	brutus	Delaware	H	word	CONFLICT	secretary of war
+9932.470	2	46.2	66	target	12	whimpers	Telegraph (-ed, -ing)	H	word	CONFLICT	transports
+9932.470	2	46.2	66	target	17	baptism	Baton Rouge	H	word	CONFLICT	baltimore
+9932.470	2	46.2	66	target	19	Shelter	Helping	H	word	CONFLICT	general
+9932.470	2	46.2	66	target	24	peru	Army	H	word	UNFIXED	as soon as possible colonel
+9932.470	2	46.2	66	target	26	Paradise	Cars	H	word	UNFIXED	as soon as possible colonel
+9932.470	2	46.2	66	target	30	banditti	Baton Rouge	H	word	CONFLICT	baltimore con sult
+9932.470	2	46.2	66	target	45	Bender	Secretary of Treasury	H	word	UNFIXED	tiicmas acting quartermaster general baltimore md january 7 1865 6 p m
+9971.546	1	46.2	834	target	0	Elizabeth	10.30 AM (time word)	H	time	AGREE	
+9971.546	1	46.2	834	target	4	wayland			plain-replaced	CONFLICT	regiment
+9971.546	1	46.2	834	target	7	roland	Favorable	H	word	CONFLICT	east
+9971.546	1	46.2	834	target	9	Biscay	Tombigbee	H	word	CONFLICT	ohio
+9971.546	1	46.2	834	target	11	repeated			plain-replaced	CONFLICT	ordered
+9971.546	1	46.2	834	target	13	Bard	Baton Rouge	H	word	CONFLICT	baltimore
+9971.546	1	46.2	834	target	19	tremendous			plain-replaced	CONFLICT	will be sent
+9971.546	1	46.2	834	target	22	trinitys	Our lines	H	word	CONFLICT	points as you
+9971.546	1	46.2	834	target	23	shoe			plain-replaced	CONFLICT	points as you
+9971.546	1	46.2	834	target	27	Bargain	Cleveland	H	word	UNFIXED	the adjutant general of the army ii w halleck major general and
+9971.546	1	46.2	834	target	28	talbot	Movement	H	word	UNFIXED	the adjutant general of the army ii w halleck major general and
+9971.546	1	46.2	834	target	29	persia	As soon as	H	word	UNFIXED	desirable or necessary to send the bat chap lviii i correspondence etc
+9971.546	1	46.2	834	target	30	welch	Rail Road	H	word	UNFIXED	
+9971.546	1	46.2	834	target	31	Embrace	Nashville	H	word	UNFIXED	
+10005.582	1	46.3	1104	target	0	Elizabeth	10.30 AM (time word)	H	time	AGREE	
+10005.582	1	46.3	1104	target	2	Lady	Maj Gen Geo. H. Thomas	H	word	UNFIXED	a m major general halleck richmond va you may
+10005.582	1	46.3	1104	target	7	pedlar	Comma	H	punct	NOTSCORED	
+10005.582	1	46.3	1104	target	8	inure			plain-replaced	CONFLICT	cavalry in your department
+10005.582	1	46.3	1104	target	9	quotient	Depot	H	word	CONFLICT	cavalry in your department
+10005.582	1	46.3	1104	target	19	bridle	Chattanooga	H	word	CONFLICT	city point
+10005.582	1	46.3	1104	target	29	Barber	Alexandria	H	word	AGREE	
+10005.582	1	46.3	1104	target	39	noun			plain-replaced	CONFLICT	now and
+10005.582	1	46.3	1104	target	48	trinities			plain-replaced	CONFLICT	points
+10005.582	1	46.3	1104	target	54	Magic	Maj Gen O. O. Howard	H	word	UNFIXED	
+10005.582	1	46.3	1104	target	57	Magic	Maj Gen O. O. Howard	H	word	UNFIXED	u s gbant lieutenant general bichmond va may 8 1865 3 45

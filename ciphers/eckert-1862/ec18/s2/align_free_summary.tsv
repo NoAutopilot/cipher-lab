@@ -1,0 +1,12 @@
+statistic	value
+entries	59
+keyed_word_tokens_scored	764
+target_agree	326/764 = 0.427
+target_conflict	119
+target_unfixed	275
+target_partial	18
+target_collision	26
+control_agree	67/764 = 0.088
+entries_target_rate_above_control	35/59
+numerals_agree	37/77
+grades_after_all_tokens	H 70, C 363, S 430, I 1, M 0

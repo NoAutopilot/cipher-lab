@@ -1,0 +1,13 @@
+statistic	value
+q_entries	137
+known_entries	503
+known_answer	marker 1 -> 1: 154, marker 1 -> 2: 6, marker 1 -> ?p: 20, marker 1 -> ?: 148, marker 2 -> 1: 8, marker 2 -> 2: 102, marker 2 -> ?p: 12, marker 2 -> ?: 53
+known_decided	270
+known_precision	256/270 = 0.948
+known_precision_by_class	'1' 154/162, '2' 102/108
+q_dated_matches_real	42
+q_dated_matches_20_permutations	[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2]
+gate	PASS (precision >= 0.90 on >= 20 decided, real > max permuted)
+q_decisions	1 15, 2 2, ? 95, ?p 25
+print_free_dated_rematched	42/78
+or_vols	48 (32.1-49.2); possessive on, guard off; min grams 4

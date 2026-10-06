@@ -4,15 +4,15 @@ entries	671
 book_1	311
 book_2	168
 book_unassigned	192
-fully_keyed	17
-fully_keyed_grades	H 253, C 8, I 7, M 0
-or_matches_real_dates	12
-or_matches_permuted_dates_mean	0.75
-or_matches_permuted_dates_max	2
-draw20_real_dates	12
+fully_keyed	18
+fully_keyed_grades	H 294, C 9, I 8, M 0
+or_matches_real_dates	13
+or_matches_permuted_dates_mean	0.90
+or_matches_permuted_dates_max	3
+draw20_real_dates	13
 draw20_rotated_dates	0
 all_entries_or_matches_real_dates	306
-all_entries_or_matches_permuted_dates_mean	3.40
+all_entries_or_matches_permuted_dates_mean	3.80
 all_entries_or_matches_by_book	1 124, 2 111, ? 71
 book2_matched_keyed_meanings_in_print	1668/2262 = 0.737
 book2_control_other_entry_window	961/2262 = 0.425

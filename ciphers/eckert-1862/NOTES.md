@@ -1631,6 +1631,46 @@ pilot1864/manifest.tsv).
   new key values. Requests: hdl.huntington.org 1. No subagents.
   Report what was found and where it was not found; no novelty class.
 
+## R10-ECK62S (6 Oct 2026, account 1 worker for LANE LANE-RUN10-account-1): split2 cascade regeneration
+
+Step check: not run before (R9-ECK62's Verdict named it). Data re-fetched to scratch, not committed: vol18.json (sha256
+cb162574..., matches pilot1864/manifest.tsv), DIR62 8 `_djvu.txt`, OR 32.1-49.2 48 `_djvu.txt` (all 48 sha256 match
+or_volumes.tsv).
+- Code: `--split2` on every ec18.py mode and on ec18_align.py / ec18_wrongtel.py / ec18_confpair.py (module flag
+  `ec18.SPLIT2`; `entries()` defaults to it). Outputs go to `ec18/s2/` under the legacy file names; an input is read from
+  `s2/` when this run wrote it, else from `ec18/` (`ec18.src()`). Without the flag nothing changes: the legacy split and every
+  legacy output stay as committed (legacy `--check` re-run after the edit, see below).
+- Legacy outputs found stale before any edit (same result with the unedited scripts, stash test): `readings.md`, the four
+  `_b2` outputs (an eckert-1864 key-no2.md edit since they were written: 5 entries gain one keyed token, 9746.115 joins the
+  fully keyed No. 2 entries -- fully_keyed 17 -> 18, H 253 -> 294, real-date OR matches 12 -> 13, permuted mean 0.75 -> 0.90,
+  max 2 -> 3), and `print_free.tsv` (built on OR 41.1-46.3, D1-ECK62P; stale on that same subset too, since readings_free
+  changed in R7B-ECK62's carry). Regenerated under rule 7 with their committed flags (`print_free` with OR 41.1-46.3); the
+  cascade below (`ec18_align.py` default, which reads matches_b2) regenerated in step.
+- split2 cascade (`--split2 --write`, then `--check`; same flags as the committed legacy runs: `--possessive --guard DIR62`;
+  print-free on OR 41.1-46.3; ORDIR 32.1-49.2 elsewhere). Legacy -> split2:
+  entries 671 -> 729 (book 1 311 -> 328, 2 168 -> 175, ? 192 -> 226); all-entry dated OR matches book-1 read 326 -> 350;
+  fully keyed No. 1 entries 28 both ways;
+  `--assign` known answer 257/267 = 0.963 -> 272/280 = 0.971, '?' print-matched 78 -> 88;
+  `--assign-free` known answer 0.896 (479) -> 0.897 (503), shuffled mean/max 0.571/0.707 -> 0.575/0.710, '?' decided 79 -> 89
+  (1: 28, 2: 61);
+  `--print-q` '?' 113 -> 137, known precision 242/259 = 0.934 -> 256/270 = 0.948, dated '?' matches 33 -> 42;
+  `ec18_align --rows align_free_rows.tsv` entries 57 -> 59, AGREE 325/816 = 0.398 -> 326/764 = 0.427, control 0.075 -> 0.088,
+  grades H 61 C 360 S 500 I 1 -> H 70 C 363 S 430 I 1;
+  `--rows align_flip_rows.tsv` (legacy rows file, no split2 rows list exists) AGREE 20/261 -> 14/227, control 6/261 -> 4/227.
+- The named entries: 9969.543 keeps book 2f (6/2 support) and its split-off 9969.543b (the received-time line R9-ECK62 flagged)
+  is '?' with nothing keyed to decide it; 9985.564 splits into 9985.564 / 9986.564b / 9986.564c, all three '?' (legacy 2f);
+  9709.70 and 9709.70b both stay '?' with no dated match; 9698.62 is book 2 by marker once 9699.62c (book 1f) is split
+  off; 9991.571 is book 1 by marker under split2 -- the same book R7B-ECK62 carried as `1r` from the print alignment (an
+  independent agreement), 9992.571b '?'; 9996.575's part 9997.575b is 2f.
+- Not regenerated under split2: `ec18_wrongtel.py` stops on its pre-registered assertion (PREREG-ECK62-WRONGTEL: 18 targets,
+  14 positive controls) -- split2 gives 16 positive-control entries at agree >= 0.75, so the registered rule does not apply as
+  written; not amended here. `ec18_confpair.py` reads wrongtel_entries.tsv, so it is not regenerated either (a trial run on
+  mixed legacy/split2 inputs was discarded). Both stay legacy-only; a split2 run needs a new prereg naming the new pools.
+- Checks: all 12 split2 outputs `--split2 --check` current; all 12 legacy runs `--check` current after the rule-7 regeneration (legacy wrongtel and confpair inputs unchanged, `--check` current at start); `ec18.py --split-report --check` current.
+- No key, book assignment in the committed (legacy) analyses, grade or reading claim changed by the split2 run; the split2
+  numbers are in ec18/s2/ for the next step to adopt or not. Requests: hdl.huntington.org 1, archive.org 56, >= 1.6 s apart.
+  0 subagents. Report what was found and where it was not found; no novelty class.
+
 ## Remaining gaps (finish-or-blocker pass, R9-ECK62, 6 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); mssEC 18: 28 fully keyed Cipher No. 1 and 17 Cipher No. 2 entries (RUN3-ECK62), 26 print-aligned (A3V3-ECKC); 79 print-free-assigned entries read, 9991.571 now with book 1r (R7B-ECK62); 13 of the 113 '?' entries given a book by print (D2-ECK62M); 57 dated matches aligned (AGREE 325/816 = 0.398 vs control 0.075 after the carry); 18 neither-book entries: 0 wrong telegram, 7 right, 11 undecided (R7B-ECK62, gate PASS); conflict-pair test: 7-entry pool untested (power 0.61), 18-entry pool 14 cross-entry code words p 0.0005 (R7C-ECK62C, descriptive); the 14 words looked up in Cipher No. 5 (mssEC 50): 11 printed in its template, 0 of 8 read values match, none carried (R8-ECK62)
 - residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), residue regenerated (GAPS197); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
@@ -1638,7 +1678,7 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); next: the received copies of the 27 Jan and 24 May 1865 telegrams (Eckert received ledgers) for a third witness, ~$2
 - 18 neither-book entries (R7C-ECK62C confpair_pairs.tsv) - blocker: no-key-material; the 14 code words date 30 Dec 1864 - 13 Jul 1865, i.e. Cipher No. 3 (from 25 Dec 1864) and No. 4 (from 23 Mar 1865) per Plum via Tomokiyo; the Huntington holds only No. 5 (mssEC 49-66, from 20 Jun 1865); 11 of the 14 are printed words of the shared No. 3/4/5 template but No. 5's meanings match none of 8 read (R8-ECK62, ec18/book5_lookup.tsv); the one known No. 4 copy (Friedman Collection, Marshall Foundation digital archive) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
 - 100 mssEC 18 entries still '?' - blocker: not-attempted; 20 have a dated OR match with margin under 2 and 80 none (D2-ECK62M); next: the image (marker words the volunteer text may have dropped) for the 20 `?p` entries, ~$4
-- merged telegrams in the volunteer text - blocker: not-attempted; the split2 splitter (R9-ECK62) separates 58 telegrams from 25 legacy entries (671 -> 729, ec18/split2.tsv) but the committed analyses still use the legacy split; 2 wrongtel/confpair targets (9969.543, 9985.564), 1 print_q '?' and 6 assign_free entries are affected; next: regenerate the ec18 cascade (main, --assign-free, --read-free, --print-q, ec18_align, ec18_wrongtel, ec18_confpair) under split2 with the OR volumes re-fetched, ~$3
+- merged telegrams in the volunteer text - blocker: not-attempted; the split2 cascade is regenerated in ec18/s2/ (R10-ECK62S: 729 entries, print_q known 0.948, align_free AGREE 0.427 vs control 0.088) but the committed analyses still use the legacy split, and wrongtel/confpair do not run under split2 (pre-registered pool sizes 18/14 become 18/16); next: a prereg for the split2 wrongtel/confpair pools and the decision to adopt s2/ as the committed cascade, ~$2
 
 ## Escalation (R9-ECK62, 6 Oct 2026)
 - [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
@@ -1648,4 +1688,4 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
-Verdict: keep going: 5 internal gaps; cheapest next: a received-ledger pass on mssEC 04-14 (~$2) or the split2 cascade regeneration (~$3); the No. 4 book for the 14 words waits on a desk-browser read of the Friedman copy
+Verdict: keep going: 5 internal gaps; cheapest next: a received-ledger pass on mssEC 04-14 (~$2) or a split2 wrongtel/confpair prereg and the adopt-s2 decision (~$2); the No. 4 book for the 14 words waits on a desk-browser read of the Friedman copy

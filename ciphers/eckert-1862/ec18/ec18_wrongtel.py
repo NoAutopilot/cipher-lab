@@ -44,7 +44,7 @@ def main(argv):
     keys = {"1": al.d1.load_key(ec18.ROOT / "ciphers/eckert-1864/key.md"),
             "2": al.d1.load_key(ec18.ROOT / "ciphers/eckert-1864/key-no2.md")}
     voc = ec18.vocab()
-    rd = lambda f: [l.split("\t") for l in (HERE / f).read_text().splitlines()[1:]]
+    rd = lambda f: [l.split("\t") for l in ec18.src(f).read_text().splitlines()[1:]]
     rows = {r[0]: (r[1], r[4], r[5], int(r[6])) for r in rd("align_free_rows.tsv")}
     acc = set(ec18.flips())
     tgt = [r[0] for r in rd("align_flip_entries.tsv") if r[0] not in acc]
@@ -106,9 +106,9 @@ def main(argv):
     outs = {"wrongtel_entries.tsv": "\n".join(out) + "\n", "wrongtel_summary.tsv": "\n".join(summ) + "\n"}
     if "--write" in argv:
         for k, val in outs.items():
-            (HERE / k).write_text(val)
+            (ec18.OUT / k).write_text(val)
     elif "--check" in argv:
-        stale = [k for k, val in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != val]
+        stale = [k for k, val in outs.items() if not (ec18.OUT / k).exists() or (ec18.OUT / k).read_text() != val]
         if stale:
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1

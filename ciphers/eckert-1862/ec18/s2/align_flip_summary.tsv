@@ -1,0 +1,12 @@
+statistic	value
+entries	19
+keyed_word_tokens_scored	227
+target_agree	14/227 = 0.062
+target_conflict	84
+target_unfixed	125
+target_partial	0
+target_collision	4
+control_agree	4/227 = 0.018
+entries_target_rate_above_control	6/19
+numerals_agree	0/27
+grades_after_all_tokens	H 0, C 14, S 248, I 1, M 0

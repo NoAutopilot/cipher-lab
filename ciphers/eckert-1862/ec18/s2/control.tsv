@@ -1,0 +1,23 @@
+statistic	value
+pages_with_entry_header	367
+entries	729
+book_1	328
+book_2	175
+book_unassigned	226
+fully_keyed	28
+fully_keyed_grades	H 369, C 2, I 0, M 0
+or_matches_real_dates	14
+or_matches_permuted_dates_mean	0.45
+or_matches_permuted_dates_max	1
+draw20_real_dates	8
+draw20_rotated_dates	1
+all_entries_or_matches_real_dates	350
+all_entries_or_matches_permuted_dates_mean	3.20
+all_entries_or_matches_by_book	1 174, 2 93, ? 83
+book1_matched_keyed_meanings_in_print	1790/2510 = 0.713
+book1_control_other_entry_window	977/2510 = 0.389
+book2_entries_read_with_key_md_in_print	449/2109 = 0.213
+or_volumes	48
+min_5grams	4
+flags	possessive=True guard=True
+guarded_tokens	192

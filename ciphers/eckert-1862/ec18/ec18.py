@@ -61,6 +61,15 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
+# R10-ECK62S (6 Oct 2026): --split2 on any mode (and on ec18_align/_wrongtel/_confpair, which import this module) reads
+# entries with entries(split2=True) and writes every output to ec18/s2/ under the same file name; an input file is read
+# from s2/ when that run has written it, else from ec18/ (the legacy cascade), so the legacy outputs stay as committed.
+SPLIT2 = "--split2" in sys.argv
+OUT = HERE / "s2" if SPLIT2 else HERE
+
+
+def src(f):
+    return OUT / f if (OUT / f).exists() else HERE / f
 sys.path.insert(0, str(ROOT / "ciphers" / "eckert-1864"))
 import decode as d1  # noqa: E402
 
@@ -102,7 +111,8 @@ def month_of(m):
     return ABBR[a] if a in ABBR else [x[:3].lower() for x in MONTHS].index(a)
 
 
-def entries(data, split2=False):
+def entries(data, split2=None):
+    split2 = SPLIT2 if split2 is None else split2
     recs = json.load(open(Path(data) / "vol18.json"))["records"]
     pages = []
     for r in recs:
@@ -265,7 +275,7 @@ def guard_test(argv):
     pos, g = "--possessive" in argv, make_guard(argv)
     es = {e["id"]: e for e in entries(argv[0])}
     keys = {"1": d1.load_key(ROOT / "ciphers/eckert-1864/key.md"), "2": d1.load_key(ROOT / "ciphers/eckert-1864/key-no2.md")}
-    rows = [l.split("\t") for l in (HERE / "align_tokens.tsv").read_text().splitlines()[1:]]
+    rows = [l.split("\t") for l in src("align_tokens.tsv").read_text().splitlines()[1:]]
     gset = {}
     for bk in "12":
         ids = {r[0] for r in rows if r[1] == bk}
@@ -295,8 +305,8 @@ def guard_test(argv):
 def print_free(argv):
     """DEF1-ECK62P: the OR matcher over the 79 print-free readings (readings_free.md), real dates vs 20 date permutations."""
     ordir = argv[argv.index("--print-free") + 1]
-    cls = {l.split("\t")[0]: l.split("\t")[9] for l in (HERE / "readings_free.tsv").read_text().splitlines()[1:]}
-    es, md = [], (HERE / "readings_free.md").read_text().split("\n")
+    cls = {l.split("\t")[0]: l.split("\t")[9] for l in src("readings_free.tsv").read_text().splitlines()[1:]}
+    es, md = [], src("readings_free.md").read_text().split("\n")
     for i, l in enumerate(md):
         m = re.match(r"\*\*([\d.]+)\*\* \(Page \d+, (\d+)-(\d+)-(\d+);", l)
         if m:
@@ -322,9 +332,9 @@ def print_free(argv):
                f"20 date permutations: {sorted(perm)}; min grams {MIN}")
     txt = "\n".join(out) + "\n"
     if "--write" in argv:
-        (HERE / "print_free.tsv").write_text(txt)
+        (OUT / "print_free.tsv").write_text(txt)
     elif "--check" in argv:
-        if (HERE / "print_free.tsv").read_text() != txt:
+        if (OUT / "print_free.tsv").read_text() != txt:
             print("stale: print_free.tsv")
             return 1
     print("\n".join(l for l in out if l.startswith("#") or "\twords\t" in l or "\t-\t-\t0" not in l))
@@ -379,7 +389,7 @@ def split_report(argv):
     analyses (wrongtel targets, confpair pool, print_q '?', assign_free) hold the legacy entry. Known answer: 9985.564 must
     separate at its second heading ("Hon CA Dana Richmond Va  Washn Apl 5 1865", R7B-ECK62)."""
     data = argv[0]
-    a, b = entries(data), entries(data, split2=True)
+    a, b = entries(data, split2=False), entries(data, split2=True)
     old = {e["id"]: e for e in a}
     kept = [e for e in b if e["id"] in old]
     assert [e["id"] for e in kept] == [e["id"] for e in a], "legacy ids changed"
@@ -430,7 +440,7 @@ def main(argv):
         return book_test()
     if "--guard-test" in argv:
         out = guard_test(argv)
-        (HERE / "guard_test.tsv").write_text("\n".join(out) + "\n")
+        (OUT / "guard_test.tsv").write_text("\n".join(out) + "\n")
         print("\n".join(l for l in out if l.startswith("#") or "COLLISION" in l or "\tB" in l or "\tJ" in l))
         return 0
     if "--assign" in argv:
@@ -558,9 +568,9 @@ def main(argv):
         outs[f"guard{sfx}.tsv"] = "\n".join(gd) + "\n"
     if "--write" in argv:
         for k, v in outs.items():
-            (HERE / k).write_text(v)
+            (OUT / k).write_text(v)
     elif "--check" in argv:
-        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        stale = [k for k, v in outs.items() if not (OUT / k).exists() or (OUT / k).read_text() != v]
         if stale:
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1
@@ -634,9 +644,9 @@ def assign(argv):
     outs = {"assign.tsv": "\n".join(out) + "\n", "assign_summary.tsv": "\n".join(summ) + "\n"}
     if "--write" in argv:
         for k, v in outs.items():
-            (HERE / k).write_text(v)
+            (OUT / k).write_text(v)
     elif "--check" in argv:
-        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        stale = [k for k, v in outs.items() if not (OUT / k).exists() or (OUT / k).read_text() != v]
         if stale:
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1
@@ -694,7 +704,7 @@ def shuffled(key, seed):
 def flips():
     """PREREG-ECK62-FLIP rule 4, applied mechanically to the committed align_flip_entries.tsv (flipped) against
     align_free_entries.tsv (original): {id: new book} for each accepted flip (R7B-ECK62, 6 Oct 2026; D2-ECK62R accepted 1)."""
-    rd = lambda f: [l.split("\t") for l in (HERE / f).read_text().splitlines()[1:]]
+    rd = lambda f: [l.split("\t") for l in src(f).read_text().splitlines()[1:]]
     orig = {r[0]: float(r[11]) for r in rd("align_free_entries.tsv")}
     # once a flip is carried, align_free_entries.tsv aligns it under the new book: its pre-flip rate is frozen here
     orig.update({"9991.571": 0.097})  # D2-ECK62R, align_free_entries.tsv before the R7B-ECK62 carry
@@ -754,9 +764,9 @@ def assign_free(argv):
     outs = {"assign_free.tsv": "\n".join(out) + "\n", "assign_free_summary.tsv": "\n".join(summ) + "\n"}
     if "--write" in argv:
         for k, v in outs.items():
-            (HERE / k).write_text(v)
+            (OUT / k).write_text(v)
     elif "--check" in argv:
-        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        stale = [k for k, v in outs.items() if not (OUT / k).exists() or (OUT / k).read_text() != v]
         if stale:
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1
@@ -771,7 +781,7 @@ def read_free(argv):
     g = d1.CollisionGuard([f.read_text(errors="ignore") for f in sorted(Path(d62).glob("*.txt"))])
     keys = {"1": d1.load_key(ROOT / "ciphers/eckert-1864/key.md"), "2": d1.load_key(ROOT / "ciphers/eckert-1864/key-no2.md")}
     asg = {}
-    for l in (HERE / "assign_free.tsv").read_text().splitlines()[1:]:
+    for l in src("assign_free.tsv").read_text().splitlines()[1:]:
         f = l.split("\t")
         if f[5] in ("1f", "2f", "1r", "2r"):
             asg[f[0]] = f[5]
@@ -807,9 +817,9 @@ def read_free(argv):
     outs = {"readings_free.tsv": "\n".join(tsv) + "\n", "readings_free.md": "\n".join(md)}
     if "--write" in argv:
         for k, v in outs.items():
-            (HERE / k).write_text(v)
+            (OUT / k).write_text(v)
     elif "--check" in argv:
-        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        stale = [k for k, v in outs.items() if not (OUT / k).exists() or (OUT / k).read_text() != v]
         if stale:
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1
@@ -824,7 +834,7 @@ def print_q(argv):
     align_free_rows.tsv (every dated match to align: print_free.tsv's plus the gated decisions here)."""
     data, ordir = argv[0], argv[argv.index("--print-q") + 1]
     keys = {"1": d1.load_key(ROOT / "ciphers/eckert-1864/key.md"), "2": d1.load_key(ROOT / "ciphers/eckert-1864/key-no2.md")}
-    asg = {l.split("\t")[0]: l.split("\t")[5] for l in (HERE / "assign_free.tsv").read_text().splitlines()[1:]}
+    asg = {l.split("\t")[0]: l.split("\t")[5] for l in src("assign_free.tsv").read_text().splitlines()[1:]}
     es = entries(data)
     for e in es:
         e["mbook"] = book(" ".join(e["body"]))
@@ -839,7 +849,7 @@ def print_q(argv):
             w = words(plain_of(e["reading"]))
             gr[(e["id"], bk)] = {" ".join(w[k:k + 5]) for k in range(len(w) - 4)}
     # print_free.tsv's dated matches are re-found with their committed readings (readings_free.md), for the anchor
-    fr, md = [], (HERE / "readings_free.md").read_text().split("\n")
+    fr, md = [], src("readings_free.md").read_text().split("\n")
     for i, l in enumerate(md):
         m = re.match(r"\*\*([\d.]+)\*\* \(Page \d+, (\d+)-(\d+)-(\d+); book (\d)[fr]", l)
         if m:
@@ -919,9 +929,9 @@ def print_q(argv):
             "align_free_rows.tsv": "\n".join(rows) + "\n"}
     if "--write" in argv:
         for k, v in outs.items():
-            (HERE / k).write_text(v)
+            (OUT / k).write_text(v)
     elif "--check" in argv:
-        stale = [k for k, v in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != v]
+        stale = [k for k, v in outs.items() if not (OUT / k).exists() or (OUT / k).read_text() != v]
         if stale:
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1

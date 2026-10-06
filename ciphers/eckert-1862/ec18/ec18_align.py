@@ -216,13 +216,13 @@ def main(argv):
     if "--rows" in argv:  # D2-ECK62M: align_free_rows.tsv from ec18.py --print-q (anchor given, no context probe)
         rf = argv[argv.index("--rows") + 1]  # align_<X>_rows.tsv -> align_<X>_*.tsv (D2-ECK62R: _flip, _flipctl)
         sfx = "_" + rf.split("_")[1]
-        for line in (HERE / rf).read_text().splitlines()[1:]:
+        for line in ec18.src(rf).read_text().splitlines()[1:]:
             i, bk, how, date, v, pg, j, n = line.split("\t")
             rows.append((bk, i, date, v, pg, int(j)))
             src[i] = how
     else:
         for bk, f in (("1", "matches.tsv"), ("2", "matches_b2.tsv")):
-            for line in (HERE / f).read_text().splitlines()[1:]:
+            for line in ec18.src(f).read_text().splitlines()[1:]:
                 i, date, v, pg, n, ctx = line.split("\t")
                 rows.append((bk, i, date, v, pg, ctx))
     tok_out = ["id\tbook\tor_vol\tor_page_ocr\tside\tidx\tcode_word\tmeaning\tkey_grade\tkind\tstatus\tprinted"]
@@ -282,9 +282,9 @@ def main(argv):
             f"align{sfx}_summary.tsv": "\n".join(summ) + "\n"}
     if "--write" in argv:
         for k, val in outs.items():
-            (HERE / k).write_text(val)
+            (ec18.OUT / k).write_text(val)
     elif "--check" in argv:
-        stale = [k for k, val in outs.items() if not (HERE / k).exists() or (HERE / k).read_text() != val]
+        stale = [k for k, val in outs.items() if not (ec18.OUT / k).exists() or (ec18.OUT / k).read_text() != val]
         if stale:
             sys.stderr.write("stale: " + ", ".join(stale) + "\n")
             return 1
