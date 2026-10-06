@@ -91,3 +91,44 @@ NOTES next: fetch Rotering's 2015 PDF again (NOTES l.104 gives its sha256; one r
 stop and log), turn its transcribed pages into ciphertext.tsv (source and date in the header, transcription conventions recorded), and check
 one grid page against the scan on disk (rule 2; crop step mandatory, one vision unit). No solve in this job. Credit Rotering (rule 8).
 Units: 1 fetch + script + 1 vision unit => cap 2.5.
+
+## Wave 2 (spawned 16:0x UTC 6 Oct). Intake gate output (16:0x UTC) pasted per job. Gallica still unprobed-green: no job depends on it.
+
+### R12D-HDKV -- hessen-daenemark-1672, rule-7 fresh re-derivation + clear-pages question (VERIFIER, Opus; cap 3, box 50 min)
+Intake gate: `hessen-daenemark-1672: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (GAPS199): a separate verifier re-derivation of the reading (rule 7: from the spec/ciphertext and key only,
+`tools/decode_key.py ciphers/hessen-daenemark-1672 --check`, plus an independent re-derivation script or decode.json run in a scratch copy;
+report any token that differs beyond the M-graded ones), then the clear-pages question: is the interlinear/margin glossing hand period or
+modern (ink, hand, spelling against the dated 1672 text; the same method as manteuffel GAPS158, grade M, say what was compared). You are a
+verifier, not a solver: do not decode beyond the key, do not change key values. Write a dated AUDIT.md section (re-derivation result, hand
+verdict, depth per rule 4a with `tools/depth_check.py` if the result changes anything) and update status.json depth fields only if your
+re-grade changes them. Disk only unless an image is missing. Units: 1 script + 1-2 vision units at ~1.5 => cap 3.
+
+### R12D-GOLD -- goldbar-1933, premise-check read of the Bin Tao v. Citibank docket (Opus; cap 1.8, box 30 min)
+Intake gate: `goldbar-1933: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+NO-CRACKS next (NOTES l.123): read the docket (dockets.justia.com, 9th Cir. 09-56992, from Kim's comment 15) for any reading of the bars the
+claimant filed. Fetch once (descriptive UA, or browser tool if challenged; one retry max), record what the docket lists and whether any filed
+document carries a reading; do not purchase PACER documents. Report found / not found with the URLs. Status unchanged unless rule 5 allows.
+
+### R12D-GRAZB -- fr2980-gramont, blind f.30 zb vs fr.3040 barred-z sort (Opus; cap 3, box 50 min)
+Intake gate: `fr2980-gramont: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+R12D-GRA's named next (NOTES latest section): zb -> R in 25/27 fr.3040 occurrences while key.tsv has zb NULL. Pre-register a blind shape
+sort: mixed per-token crops of f.30 zb, fr.3040 barred z (K2) and plain z, shuffled, one Sonnet subagent call (crop paths only, labels
+hidden), plus a decoy-control set of known-distinct signs; gate = sort recovers the decoys and states whether f.30 zb and fr.3040 barred z
+are one sign. Crops must come from images on disk (Gallica is down): if a needed leaf is not on disk, stop and report. Key change only if
+the gate licenses it (then decode --check, NOTES, ROOM verifier flag). BnF item. Units: crop script + 1 sort call + reconciliation => cap 3.
+
+### R12D-CYL3 -- cylob-c1995, spec cheap test 3 (fixed discrete alphabet structural check) with matched control (Opus; cap 2.5, box 45 min)
+Intake gate: `cylob-c1995: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+specs/cylob-c1995.json cheap_tests_in_order[2] on R12D-CYLOB's ciphertext.tsv (190 rows / 167 signs, Rotering pp.1-20). Pre-register the
+statistic (e.g. sign-inventory growth curve / type-token saturation and repeat structure vs (a) a synthetic English text enciphered with a
+fixed homophonic alphabet of the same inventory size and N, (b) a random/no-alphabet null at the same N); gate pre-registered; both numbers
+in the spec's cheap_test_done and NOTES.md; test 4 only if a later worker is briefed. Disk only. Cap 2.5.
+
+### R12D-ERBA3 -- erba-2006, modern Italian corpus (era-matched) + spec test 3 letter-like design (Opus; cap 3, box 55 min)
+Intake gate: `erba-2006: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+R12D-ERBA found the it19 corpus is the wrong era for a 2006 note. Step 1 (~12 min, V6-PTCORP pattern): build tools/data/<it-modern> from
+public-domain/openly licensed late-20th-century Italian prose (record sources + licence in a README; LOFO per-fold false-negative spread per
+rule 3 if a judge is used). Step 2: specs/erba-2006.json test 3 (letter-like design) with its control drawn from the new corpus at the same
+N and design, pre-registered; rerun test 2's design-L statistic on the new corpus control too and report whether the era caveat moves it.
+Both numbers into cheap_test_done. Shared asset: name the corpus in SYSTEM.md (tools/system_map_check.py). Cap 3.
