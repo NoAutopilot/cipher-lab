@@ -1,0 +1,39 @@
+source	reference	discovery_or_decode_id	covering_date	digitised	item_children	description
+TNA Discovery API	SP 106/1	C3677731	1558 Nov 17-1603 Mar 24	False	0	Ciphers used at the time of Elizabeth I, names A to L. Indexed.
+TNA Discovery API	SP 106/2	C3677732	1558 Nov 17-1603 Mar 24	False	0	Ciphers used at the time of Elizabeth I, names M to W. Indexed in SP 106/1.
+TNA Discovery API	SP 106/3	C3677733	c 1558 Nov 17-1603 Mar 24	False	0	Ciphers used at the time of Elizabeth I and before, names unknown. Indexed in SP 106/1.
+TNA Discovery API	SP 106/4	C3677734	1603 Mar 24-1625 Mar 27	not fetched	not fetched	Ciphers used at the time of James I, names unknown. Indexed in SP 106/1.
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106-1_Elizabeth_I_0005_48a	R3821	1558 - 1603	DECODE record (images account-gated)		cleartext English, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106-1_Elizabeth_I_0004_48a	R3820	1558 - 1603	DECODE record (images account-gated)		cleartext English, plaintext French, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106-1_Elizabeth_I_0003_36a	R3819	1558 - 1603	DECODE record (images account-gated)		cleartext English, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106-1_Elizabeth_I_0002_36a	R3818	1558 - 1603	DECODE record (images account-gated)		cleartext French, plaintext French, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106-1_Elizabeth_I_0001_36a	R3817	1558 - 1603	DECODE record (images account-gated)		cleartext English, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA: SP 106/1 Elizabeth I _ ff62-63(0065-0066)	R934	1594 - 1594	DECODE record (images account-gated)		cleartext English, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA: SP 106/1 Elizabeth I _ f61(0064)	R933	1558 - 1603	DECODE record (images account-gated)		cleartext English, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/3_ElizabethI_f58(0063)	R358	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext -, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/3_ElizabethI_f48(0053)	R357	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/3_ElizabethI_ff35-37(0040-0042)	R356	1559 - 1559	DECODE record (images account-gated)		cleartext -, plaintext English and Latin, 3 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/3_ElizabethI_f29(0034)	R355	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext French, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f162(0188)	R354	1554 - 1554	DECODE record (images account-gated)		cleartext -, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f158(0184)	R353	1558 - 1603	DECODE record (images account-gated)		cleartext English, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f151(0176)	R352	1559 - 1559	DECODE record (images account-gated)		cleartext -, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f122(0144)	R351	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f100(0117)	R350	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_ff90-91(0105-0106)	R349	1590 - 1590	DECODE record (images account-gated)		cleartext English, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f86(0101)	R347	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f63(0074)	R346	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext Italian, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f58(0069)	R345	1596 -	DECODE record (images account-gated)		cleartext French, plaintext French, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f51(0059)	R344	1566 - 1566	DECODE record (images account-gated)		cleartext English, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f50(0058)	R343	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f40(0046)	R342	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/2_ElizabethI_f5(0008)	R341	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f116(0120)	R340	1577 - 1577	DECODE record (images account-gated)		cleartext Spanish, plaintext Spanish, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f86(0089)	R339	1577 - 1577	DECODE record (images account-gated)		cleartext English, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f76(0079)	R338	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f74(0077)	R337	1588 - 1588	DECODE record (images account-gated)		cleartext -, plaintext English, 1 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f73(0076)	R336	1558 - 1603	DECODE record (images account-gated)		cleartext Latin, plaintext -, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f69(0072)	R335	1562 - 1562	DECODE record (images account-gated)		cleartext -, plaintext French, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f53(0056)	R331	1569 -	DECODE record (images account-gated)		cleartext -, plaintext French, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f50(0053)	R330	1587 - 1587	DECODE record (images account-gated)		cleartext English, plaintext -, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f49(0052)	R328	1558 - 1603	DECODE record (images account-gated)		cleartext -, plaintext English, 2 pp
+DECODE key list on disk (sources/decode, 28 Sept 2026)	TNA_SP106/1_ElizabethI_f48(0051)	R327	1509 - 1534	DECODE record (images account-gated)		cleartext -, plaintext Latin, 1 pp
