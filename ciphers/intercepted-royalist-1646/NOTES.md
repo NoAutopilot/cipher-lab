@@ -380,7 +380,7 @@ Read so far: 192 of 735 cipher tokens on f.10 carry a key value (C 164, H 6, I 1
 - the 545 unkeyed tokens of f.10 (word codes 100-430 and names 431-580 beyond the 45 H rows; the unexplained 581-697) - blocker: no-key-material; only one page of key 129 survives (f.77, names 559-580; Aymeloglu checked every other DECODE record of the volume) and the candidate rest-of-key leaves ff.100-109 are in REQUEST.md item 2, BL viewer offline since 2023
 - the 45 H values and 13 letter homophones, image-unchecked (rule 2) - 2 Oct 2026 (GAPS, OCR; GAPS2, page images of pp.178-179, 2 blind vision passes): 37 key rows read C from the page (every Evelyn word and letter Aymeloglu listed, plus 162 for, 200 having, 111 were), 141 de / 269 nor / 356 Southampton M, 520 I, 69 e unreached; 38 rows match the page vs shuffled-key mean 0.5. What is left of this gap is the 22 f.77 names (H) - blocker: waiting-on ASKS row 1; their witness is the key page f.77 (DECODE 8725's images), content-blocked for this account (NOTES.md 24-25 Sept 2026)
 - the letter homophones 0-99 beyond the 13 fixed (218 letter tokens on f.10) - blocker: open-codes; Aymeloglu's anneal control read 0.07-0.12 at this shape (his README), so no annealer run; the suffix runs after word codes are the hand-crib route (suggestion c)
-- f.9's own key (max 343, 226 = London per the f.4 key) - blocker: waiting-on ASKS row 1; DECODE document content access: the f.4 record's key document is content-blocked for this account (NOTES.md 24-25 Sept 2026)
+- f.9's own key (max 343, 226 = London per the f.4 key) [R13-ROYPREM, 6 Oct 2026: BL catalogue gives ff.4r-v, 5r-6v, 7r-v as Weckherlin copies of 1645 intercepts to 'My (Noble) Lord' with the deciphering written above the cipher words -- the period witness for this key, image-blocked like f.9] - blocker: waiting-on ASKS row 1; DECODE document content access: the f.4 record's key document is content-blocked for this account (NOTES.md 24-25 Sept 2026)
 - the contemporary decipher of f.10 (f.11; Tanner 59-60; SP 16/514) - blocker: needs-physical-access; REQUEST.md item 1 and the print check of 20 Sept 2026 above (not found in Cary, the Journals, Rushworth, TNA Discovery) [A3V-VROY2, 4 Oct 2026: the BL catalogue (040-001967027) describes ff.11r-v as a copy of Charles I to Ormond, n.d. [1645], not a decipherment of f.10; f.11 drops out of this gap, Tanner 59-60 and SP 16/514 remain; AUDIT.md audit 2 finding 2]
 - f.10 and f.9 transcriptions, image-unchecked (20 bare ? on f.10) - blocker: waiting-on ASKS row 1; DECODE full-size images are account-wide blocked (24-25 Sept 2026) and BL vdc_100162920089 is offline
 
@@ -412,3 +412,72 @@ Only the check-solved "Open web and blog comment threads" step was run; no statu
 - Also seen, not opened: Cipherbrain 2021-04-11 "Ungelöst: Die verschlüsselten Briefe von Karl I. an seinen Sohn" (title names a different correspondence).
 
 Result: no published decipherment or plaintext of f.9 (21 May 1646) or f.10 (13 May 1646) found in these searches. Not found by this method; not a novelty verdict (rule 10).
+
+## Premise check (R13-ROYPREM, 6 Oct 2026)
+
+Adversarial pass of `.claude/briefs/check-solved.md` "Premise check" (try to prove f.9 or f.10 is already read), run 13:38-13:48 UTC
+6 Oct 2026, after the six-source sweep (20 Sept), the print check (20 Sept, 2 Oct) and the web/blog step (R13-WEB, earlier today).
+No crib loop, no decode. Requests: british-history.ac.uk 29 (Commons Journal vol.4 index + 22 day pages, Lords Journal vol.8
+13 day pages, two 404 guesses among them), searcharchives.bl.uk 1, archive.org advancedsearch 3, be-api.us.archive.org 6,
+github.com 2 shallow clones (scratchpad, deleted after); all >= 1.6 s apart, no 429/403/challenge.
+
+**(a) Decipherments the folder already mentions -- opened; none is of f.9 or f.10.**
+- DECODE 8725 "Decipher of the beginning" (24-25 Sept sections): attached to f.104, a different leaf (BL "n.d."; DECODE
+  "Charles I and Prince Rupert (1647)"); content-blocked to this account. Not f.9/f.10.
+- Evelyn iv 178-179 (Nicholas's interlinear decipherments): the King's letters of 24 June and 16 Aug 1646, not f.10; already
+  used as key129's known-answer witness (GAPS/GAPS2). Not f.9/f.10.
+- "the deciphered f.4 intercept of 1645" (Aymeloglu's source for f.9's 226 = London): the BL catalogue (below) gives
+  ff.4r-v as a Weckherlin copy of a letter "to 'My Noble Lord', 6 Aug 1645 ... Some words have been written in cipher, and the
+  deciphering is written above them" -- a key witness for f.9's smaller key, not a decipherment of f.9.
+- f.11 as "contemporary decipher": already shown by A3V-VROY2 (4 Oct) to be a copy of Charles I to Ormond [1645]. Not f.10.
+- The Commons Journal entry that Aymeloglu's README cites (and R13-WEB saw): opened at the day pages. CJ iv 553-555 (25 May
+  1646): Fairfax's letter of 22 May "with several intercepted Letters inclosed" read; one of them, Glemham to Ashburnham of
+  21 May, read; "the several intercepted Letters in Characters be delivered over to Sir Walter Erle; to the end the said
+  Letters in Cypher may be decyphered ... being Five in Number". CJ iv 558-559 (30 May): Erle reports one decipherment, Nicholas
+  to Ashburnham, 15 May, "intercepted going out of Oxford". Walked every day page 25 May-9 June 1646 (CJ iv 553-570) and
+  Lords Journal viii 23 May-6 June (pp.325-363) for decypher/cipher/characters/intercepted: no other decipherment reported,
+  none printed. Inference only (I): f.9 (21 May, to "My Lord", signed "yor Lops humble servant") and f.10 (13 May) fit the
+  dates of this packet of five; the CJ names no recipient lord and no 13 May letter, so this is not established. If they were
+  in it, Erle's (or Weckherlin's) working decipherment of them, if one was made, is not in the Journals. Not found in print.
+
+**(b) Other solvers' working files -- found already (the known N0 basis), nothing further.**
+- aaymeloglu/unsolved-ciphers, shallow clone 6 Oct 2026: HEAD still d2800bb (27 Sept 2026), no later commit. `royalist-1646/`
+  holds `apply_key.py`, `key129.txt`, `f10_ct.txt`, `f9_ct.txt`, `solve.py`, README: key129 already rendered on f.10 (this is
+  AUDIT.md's N0, 2 Oct); f.9 "not attacked beyond noting ... 226 reads 'London'"; his `catalogue/decode-records.jsonl` rows for
+  8623/8624 carry no sender, receiver or plaintext field. No rendering of f.9 exists there.
+- dbourdeau/cyphersolver, shallow clone 6 Oct 2026 (HEAD adbf9a1, 5 Oct 2026): `targets/rupert/NOTES.md` #6 and
+  `profile.json` unchanged in substance -- ff.9-10 "offline-only", no key named, no rendering, no apply-key script.
+
+**(c) Physical neighbours -- catalogue read, images unreachable; no decipherment of f.9/f.10 described.** BL catalogue JSON
+(searcharchives.bl.uk/catalog/040-001967027?format=json, HTTP 200), item list ff.1-16: f.1 cipher with deciphered words over
+it (Weckherlin, 1643); f.2 notes on intercepted letters; f.3 Charles I copy (1645); **ff.4r-v, 5r-6v, 7r-v** Weckherlin copies
+of intercepted royalist letters of 6 Aug, 13 Sept and 14 Sept 1645, two of them to "My Lord"/"My Noble Lord" like f.9, each
+"Some words ... in cipher, and the deciphering is written above them"; f.8 T.D. to Compton, 9 Nov 1645, not ciphered; **f.9r**
+and **f.10r** "Largely in (undecoded) cipher"; ff.11r-v Ormond copy; ff.12r-15v Walsingham-Preston 1647 with decoding entered.
+So the leaves either side of f.9/f.10 carry period decipherments of *other* letters (1643-1645, 1647), the 1645 "My Lord" group
+being the likeliest key witness for f.9's smaller key (Aymeloglu's f.4 route); nothing in the catalogue places a clear copy or
+decipherment of f.9 or f.10 on a neighbour. Not seen: f.9v and f.10v (DECODE gives f.10 two pages, the BL describes only
+f.10r) and any slip laid in -- unreachable (BL viewer offline since 2023; DECODE full-size images content-blocked to this
+account, 24-25 Sept 2026; no thumbnail of 8623/8624 is on disk). Unreachable, not negative.
+
+**(d) Recipient's side -- not found.** f.10 is to Charles I (at Newcastle with the Scots after 5 May 1646); f.9's recipient lord
+is unnamed. Already searched by the 2 Oct print check: Bruce, *Charles I in 1646* (the King's side), Nicholas Papers i, Calendar
+of Clarendon State Papers i, HMC Portland i, CSPD 1645-7 (phrases.txt, no hits). Added today, be-api full-text with a positive
+control: Montereul, *Diplomatic Correspondence* i (SHS 1898; the French envoy with the King at Newcastle; IA
+`diplomaticcorres01montiala`): control "Newcastle" 1 hit (Montereul to Mazarin, Newcastle, May 1646), "Brederode" 0;
+Green, *Letters of Queen Henrietta Maria* (1857; f.10's key is "from the Queen's Court"; IA `lettersofqueenhe00henr`): control
+"Newcastle" 1 hit, "Brederode" 0, "Vantelet" 0; Birch, *Court and Times of Charles I* ii (`courttimesofchar02birc`):
+"Brederode" 0. The Parliament side (the intercepting office) is the CJ/LJ walk under (a). Not found by these searches.
+
+**Result.** None of (a)-(d) finds a decipherment, clear copy or printed plaintext of f.9 or f.10 beyond the already-recorded
+Aymeloglu partial rendering of f.10 (AUDIT.md N0). Found: the CJ 25/30 May 1646 packet (five cipher letters to Erle, one
+decipherment reported) as a dated lead for where a contemporary decipher of f.9/f.10 may have gone (Erle/Weckherlin papers,
+Tanner 59-60, SP 16/514: gap 5); and the ff.4-7 Weckherlin copies with interlinear decipherment as f.9's key witness (gap 4),
+image-blocked like f.9 itself. Status unchanged: `partial`. Not a novelty verdict (rule 10).
+
+Intake gate re-run after this section (`python3 tools/intake_gate_check.py intercepted-royalist-1646`), exit 0:
+```
+intercepted-royalist-1646: partial (line 4) -- edition/page or full-text-search citation found within 6 lines
+```
+`python3 tools/gaps_check.py intercepted-royalist-1646`: `OK keep-going ... 1 internal gap(s), 0 step(s) untried`. Next step
+unchanged: the crib loop on the unglossed Evelyn figures (Escalation Verdict line), not run here.
