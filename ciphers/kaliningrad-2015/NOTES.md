@@ -655,3 +655,27 @@ reading. Rule 10: nothing here is a reading.
 Next step: the letter-or-word nomenclator with marked types as codes is now logged at both conventions; what remains untried is
 a different design family (transposition beyond the A2-KAL2 unigram test, or codes on unmarked types, `codes=topk:N`), ~$1.5
 CPU each. Verdict: keep going (no outside blocker).
+
+
+## R15-KAL13, wordcode with codes on the most frequent types (codes=topk:N), 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run15-jobs.md` "R15-KAL13" (LANE-RUN15-account-2, account 2). CPU only, no hosts,
+no subagents. The R14-KAL12 named step "codes on unmarked types". `family_run.py --family wordcode` already took `codes=topk:N`, so no
+family change; this job added `--decode-tag TAG` to `tools/family_run.py` (offline test (9) in `tools/tests/test_family_run.py`; omitted,
+the decode name is unchanged), so the decodes no longer collide with the convention-A/B runs. Pre-registered in HYPOTHESES.md
+"R15-KAL13" (commits 4e22a1b4e, 6e4f87128) before scoring: convention B (`families/r14_kal12/cipher_marked_B.txt`, N 1066, K 28),
+ru19_lat s1s, err 0.05, restarts 6, seeds 1-5, gate 0.6; N fixed at **topk:2** (`e n`, 27.2% of tokens) and **topk:6** (`e n ap^a x i s`,
+55.3%; the brief's example 20/40 does not fit K 28).
+
+**Result: control-backed negative at both N, err 0.05.** Control means 0.747 (codes 0.766) at topk:2 and 0.832 (codes 0.875) at
+topk:6 meet gate 0.6; target judge FAIL -1.510 / -1.486 against real_p05 -0.904, with the shuffled-target decodes beside them also
+FAIL (-1.495 / -1.531), so the judge is not voided and the target is no better than its own shuffle. No decode reads a multi-letter
+code word. Caveat found in the run: the control could not reach the target's code share (0.07-0.11 vs 0.272; 0.12-0.16 vs 0.553),
+since N whole Russian words cannot cover that many sign tokens -- the control's code load is lighter than the hypothesis's, and the
+same fact says the design fits the target's frequency shape poorly. Conditional on Ernst's transcript and convention B. Status stays
+`open`; no reading. Rule 10: nothing here is a reading. Both numbers in HYPOTHESES.md ("R15-KAL13 result").
+Next step: the wordcode instrument has now run with three code-capable sets (marked at A, marked at B, top-2/top-6 at B), all
+licensed controls, all FAIL beside their shuffles; another code-set choice through the same tool is a further turn of the same knob
+(rule 3 third-attempt clause). What remains untried is a different instrument: a transposition design beyond A2-KAL2's unigram test
+(e.g. columnar transposition of a Russian-transliteration substitution, scored by bigram/judge with its own matched control), ~$2 CPU.
+Verdict: keep going (no outside blocker).

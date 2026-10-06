@@ -1147,3 +1147,36 @@ pre-registered wording: **control-backed negative for the letter-or-word nomencl
 whole-word codes, the rest letters, Russian s1s), conditional on Ernst's transcript and convention B, at err 0.05 only.**
 Caveat on the control's strength: with 4 code types the control's code vocabulary is the corpus's 4-5 commonest words (vocab
 k 4-5), an easy code class; the gate measures the letter part (0.78-0.96) as much as the codes.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 6 Oct 2026 17:28 | wordcode | N=1066 K=28 restarts=6 corpus=s1s.txt.gz codes=topk:6,bnd=x,err=0.05 | 1 | 0.832 (0.400-0.956) | -3434.928 | FAIL language: score=-1.486, null_p99=-2.082, real_p05=-0.904, real_median=-0.82, mode=both, N=1066 | yes (gate 0.6) | R15-KAL13 wordcode ru s1s, top-N types = codes, conv. B, restarts 6 |
+| 6 Oct 2026 17:28 | wordcode | N=1066 K=28 restarts=6 corpus=s1s.txt.gz codes=topk:2,bnd=x,err=0.05 | 1 | 0.747 (0.000-0.974) | -3425.211 | FAIL language: score=-1.51, null_p99=-2.082, real_p05=-0.904, real_median=-0.82, mode=both, N=1066 | yes (gate 0.6) | R15-KAL13 wordcode ru s1s, top-N types = codes, conv. B, restarts 6 |
+| 6 Oct 2026 17:37 | wordcode | N=1066 K=28 restarts=6 corpus=s1s.txt.gz codes=topk:6,bnd=x,err=0.05,shuffle_target=1 | 1 | 0.832 (0.400-0.956) | -3478.050 | FAIL language: score=-1.531, null_p99=-2.082, real_p05=-0.904, real_median=-0.82, mode=both, N=1066 | yes (gate 0.6) | R15-KAL13 wordcode ru s1s, top-N types = codes, conv. B, restarts 6 |
+| 6 Oct 2026 17:37 | wordcode | N=1066 K=28 restarts=6 corpus=s1s.txt.gz codes=topk:2,bnd=x,err=0.05,shuffle_target=1 | 1 | 0.747 (0.000-0.974) | -3437.539 | FAIL language: score=-1.495, null_p99=-2.082, real_p05=-0.904, real_median=-0.82, mode=both, N=1066 | yes (gate 0.6) | R15-KAL13 wordcode ru s1s, top-N types = codes, conv. B, restarts 6 |
+
+### R15-KAL13 result (6 Oct 2026, 17:22-17:39 UTC; pre-registration commits 4e22a1b4e, 6e4f87128 before any scored run)
+
+Ran A(2), A(6), then B(2), B(6) exactly as pre-registered, about 8 min CPU each (two at a time). The control is identical in A
+and B at every seed for each N (built from the unshuffled target).
+
+| N | control seeds 1-5 (blended) | control mean | code-class mean | target judge | shuffled-target judge | target / shuffle anneal |
+|---|---|---|---|---|---|---|
+| topk:2 | 0.974 / 0.000 / 0.959 / 0.900 / 0.903 | **0.747** | **0.766** (0.963/0.000/0.957/0.948/0.963) | FAIL -1.510 | FAIL -1.495 | -3425.2 / -3437.5 |
+| topk:6 | 0.956 / 0.400 / 0.954 / 0.955 / 0.894 | **0.832** | **0.875** (0.867/0.854/0.895/0.890/0.867) | FAIL -1.486 | FAIL -1.531 | -3434.9 / -3478.1 |
+
+Judge gate for all four: real_p05 -0.904, null_p99 -2.082 (ru19_lat s1s, N 1066).
+**Gate 1 met at both N. Gate 2: target FAIL and shuffled FAIL at both N** -- the judge is not voided, the target does not PASS,
+and the target judges within 0.05 of its own shuffle either way. Neither target decode assigns a multi-letter word to any
+code-capable type (code_tokens_decoded 0 in all four decodes): the solver maps the top types to one-letter words or the <NAME>
+wildcard, so the decodes are letter streams. By the pre-registered wording: **control-backed negative for the letter-or-word
+nomenclator with the 2 (or 6) most frequent types as whole-word codes, Russian s1s, conditional on Ernst's transcript and
+convention B, at err 0.05 only.**
+Caveat on the match (not in the pre-registration, found in the run): the control did not reach the target's code share --
+0.07-0.11 against 0.272 at topk:2, 0.12-0.16 against 0.553 at topk:6 -- because N code types drawn from Russian prose cannot
+cover that many sign tokens (in the control the commonest 2 words come to 7-11% of sign tokens, the commonest 6 to 12-16%). The control therefore tests the solver on a
+lighter code load than the target's hypothesis implies; the same mismatch says the design itself fits the target's frequency
+shape poorly (two signs at 27% of all tokens are too frequent for two whole Russian words). Read the negative with that caveat.
+Decodes: `families/wordcode-1-codes=topk_{2,6},bnd=x,err=0.05-s1stxt-convB.txt` and the `-shuffle1-` pair beside them.
