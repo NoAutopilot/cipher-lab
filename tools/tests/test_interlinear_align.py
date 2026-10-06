@@ -123,6 +123,16 @@ def main():
     kw = run(wc2, '--code-prefix', '@', '--word-code-prefix', '%', '--clear-consumes', '--code-chunk', '2',
              '--null-cost', '0')
     assert kw['%k']['meaning'] == 'alla' and kw['S']['meaning'] == 'en', kw
+    # --fix KEY.tsv (R9-MANTPOOL, 6 Oct 2026): codes 10 (le|la) and 18 (null) held fixed every iteration; free
+    # code 500 learns 'roi' from two runs; the null never takes a letter; a key row never re-estimates
+    d = tempfile.mkdtemp(); kf = os.path.join(d, 'fix.tsv')
+    with open(kf, 'w') as f:
+        f.write('code\tvalue\tgrade\n10\tle|la\tC\n18\t\tM\n')
+    fx = [['1', 'le roi part', '1', '10 500 18 600'], ['2', 'la roi vient', '2', '10 18 500 700'],
+          ['3', 'le roi', '3', '10 500']]
+    kx = run(fx, '--floor', '1', '--fix', kf)
+    assert kx['500']['meaning'] == 'roi' and kx['500']['agree'] == '3', kx
+    assert '18' not in kx, kx
     print('ok')
 
 

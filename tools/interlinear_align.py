@@ -86,6 +86,13 @@ among word codes; the word codes are written into the pairs as their decoded cle
 Default 1 reproduces the --code-prefix behaviour exactly. --word-code-prefix P (same job): with --code-prefix, a token
 marked P (e.g. "%kig", a code group missing from the published table) is a word code taking 0..--max-chunk letters,
 learned from the plain text like an above-floor numeral; its value keeps the prefix in the key.
+
+--fix KEY.tsv (6 Oct 2026, R9-MANTPOOL, sachsstaatsarchiv-manteuffel-1712): hold every code in KEY.tsv (columns code|value,
+any length, '|' separating alternative values, accents folded, non-letters dropped; a row with an empty value is a null and
+is held to no letters) at its key value through EVERY iteration, 10 counts per alternative, instead of seeding it once
+(--prior/--word-prior): the fixed codes act as anchors and only the codes absent from KEY.tsv are re-estimated. The fixed
+codes' own chunks still appear in the alignment TSV but are not evidence; report only the free codes. Use with a pooled
+PAIRS.tsv of many glossed multi-code runs, where a free code's chunk is learned from its agreement across runs.
 """
 import csv
 import itertools
@@ -155,6 +162,7 @@ MAX_DIGITS = 3      # --digits
 WORD_PRIOR = False  # --word-prior
 FOLD_FS = True      # --keep-fs turns this off
 CODE_CHUNK = 1      # --code-chunk N: a --code-prefix code may take up to N plain letters (default 1)
+FIXED = {}          # --fix KEY.tsv: code -> Counter held constant every iteration
 WORD_PFX = None     # --word-code-prefix P: with --code-prefix, a token marked P is a word code (0..--max-chunk letters)
 
 
@@ -273,6 +281,8 @@ def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None, null
                     sc += seg_bonus if ends[j + ln - 1] else 0.0
                     if len_prior:
                         sc -= len_prior * abs(ln - ratio)
+                    if kind in ('num', 'code') and val in FIXED and '' in FIXED[val]:
+                        continue                      # --fix: a null code takes no letters
                     if kind in ('num', 'code') and prior.get(val):
                         cnt = prior[val]
                         tot = sum(cnt.values())
@@ -327,6 +337,22 @@ def load_prior(path, floor, code_mode=False):
     return prior
 
 
+def load_fixed(path):
+    """--fix KEY.tsv -> {int code: Counter(folded alternative -> 10)}; '' marks a null."""
+    out = {}
+    with open(path, encoding='utf-8') as f:
+        for r in csv.DictReader((l for l in f if not l.startswith('#')), delimiter='\t'):
+            code = (r.get('code') or '').strip()
+            if not code.isdigit():
+                continue
+            alts = (r.get('value') or '').split('|')
+            c = Counter()
+            for a in alts:
+                c[fold(re.sub(r'[^a-z]', '', fold_accents(a).lower()))] += 10
+            out[int(code)] = c
+    return out
+
+
 def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_prefix=None,
               null_cost=-3.0, wildcard=None, max_chunk=MAXCHUNK, seg_bonus=1.0, len_prior=0.0):
     prepared = []
@@ -339,6 +365,10 @@ def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_
             cws = [plain_letters(t)[0] if k == 'clear' else '' for t, (k, _) in zip(raw, toks)]
         prepared.append((p, raw, toks, letters, starts, ends, cws))
     prior = prior or {}
+    if FIXED:
+        prior = defaultdict(Counter, {k: Counter(v) for k, v in prior.items()})
+        for v, c in FIXED.items():
+            prior[v] = Counter(c)
     for _ in range(iters):
         counts = defaultdict(Counter)
         shown = defaultdict(Counter)
@@ -352,6 +382,10 @@ def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_
                     counts[val][fold(letters[c[0]:c[1]])] += 1
                     shown[(val, fold(letters[c[0]:c[1]]))][letters[c[0]:c[1]]] += 1
         prior = counts
+        if FIXED:  # the key output keeps the observed chunks; only the next iteration's prior is held
+            prior = defaultdict(Counter, counts)
+            for v, c in FIXED.items():
+                prior[v] = Counter(c)
     return prepared, results, counts, shown
 
 
@@ -482,6 +516,10 @@ if __name__ == '__main__':
         if '--keep-fs' in a:
             FOLD_FS = False
             a = [x for x in a if x != '--keep-fs']
+        if '--fix' in a:
+            k = a.index('--fix')
+            FIXED.update(load_fixed(a[k + 1]))
+            a = a[:k] + a[k + 2:]
         for flag in ('--max-chunk', '--seg-bonus', '--len-prior'):
             if flag in a:
                 k = a.index(flag)
