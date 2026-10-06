@@ -423,9 +423,41 @@ Vision: 4 by this session (2 overviews, overlay, uncertain montage) plus 2 Opus 
 Suggestion (not done, rule 7 of Workers): rerun `crib_test.py` with an `r5008` target (R5008 is German, 260 digits, so
 power must be re-checked at this N first), and read the P2-left ticks against the pair phase.
 
+## R8-ZESCH-zeschau-seebach-1841 (6 Oct 2026, account-4, LANE-RUN8-account-4)
+
+Step run: the Verdict's cheapest next -- rerun `crib_test.py` on R5008 with the power check at N=260 first, then the
+crib-anchored key search if budget allowed. Script only: no vision, no subagents, no network except one git clone.
+
+- Duplicate-effort check first: fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD adbf9a1 (5 Oct 2026
+  21:27 -05:00), grep only, deleted after. `targets/zeschau1841/` still holds only `ct_R5005.*` ciphertext and its
+  NOTES.md line 30 still reads "R5006-R5008 are not transcribed yet"; "What would move it" item 3 unchanged. He has
+  not run this step, so the job went ahead.
+- Pre-registered in `PREREG-R8ZESCH.md` (commit da85904e, 04:05 UTC, before any statistic on R5008). The power
+  control was the primary gate and ran first: 200 contiguous 260-digit windows of **R5007** (German, same hand,
+  shown by GAPS196 to share R5005's profile), each scored by T1 against all of R5005 with its own 200-draw
+  shuffled-digit null. This matches N, symbol space, design and language with real cipher text of the same system.
+- `crib_test.py --target r5008` (seed 8008) -> `crib_test_r5008.json`; exits 3; `--check` reproduces it, and the
+  R5006/R5007 outputs are unchanged (`--check` exit 0 both).
+
+| statistic | R5008 target (260 digits) | matched control (200 R5007 windows, N=260) | gate | verdict |
+|---|---|---|---|---|
+| T1 power: share of windows with p < 0.01 | not computed | **0.465** (window cos mean 0.711, null mean 0.628) | >= 0.80 | CONTROL BELOW GATE |
+
+- What this says: at 130 pairs the pair-profile test detects the known-same German cipher less than half the time,
+  so a target result either way would mean nothing. Logged "untestable at N=260" (a non-test, not a negative about
+  R5008). The secondary R5005-window control was not reached (the script stops at the gate, as pre-registered).
+- Crib-anchored key search: **not attempted**, by the prereg's own stop condition. The sentence frame ("Indem ich nach
+  dem Eingang Ihrer Berichte NN. 21 und 22 ... bekenne, [cipher] habe ich die Ehre ...") is clear text on both sides
+  of the cipher; nothing inside the cipher is known, so there is no plaintext span to anchor a search, and no matched
+  control with a real anchor could be written. The frame bounds the register (a German clause or sentence, ~130
+  syllabary tokens), nothing more.
+- 0 tokens read or graded; pins stay Bourdeau's grade-I values. Rule 10: no novelty claim.
+
+Requests: github.com 1 shallow clone. No other host. Vision 0, subagents 0.
+
 ## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026)
 Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R5007 951 = 603 left + 348 right, GAPS190/196; R5008 260 = 113 on p.1 + 147 on p.2 left, GAPS208); R5007 p.1 and R5008 p.2 right hold no cipher; 0 tokens read
-- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); the letter-4-gram syllabary annealer is retired at this N (GAPS202: matched control 0.032 then 0.000 token accuracy vs gate 0.60, both times the annealer out-scored the control's own true key, target not run); next: a different instrument -- a crib-anchored search on R5008's known sentence frame (Bourdeau, What would move it item 3; R5008 now transcribed, GAPS208, and its P2-left pencil ticks logged), or a word-segmentation objective with its own control first, ~$3; rerun `crib_test.py` on R5008 (power check at N=260 first), ~$1
+- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); next: a different instrument -- a word-segmentation objective on the pooled R5005-R5007 pairs (2,666 tokens) with its own matched control first, optionally read R5008's P2-left pencil ticks against the pair phase as segmentation evidence, ~$3
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
@@ -433,10 +465,10 @@ Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; the letter-4-gram annealer failed its matched control twice (GAPS202, 0.032 / 0.000 vs gate 0.60, retired for that instrument); next a different instrument: crib-anchored search on R5008's sentence frame (R5008 transcribed, GAPS208)
+- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); next a different instrument: word-segmentation objective with its own control first
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 1 internal gap (key rebuild: GAPS202's 4-gram syllabary annealer failed its matched control twice, 0.032 then 0.000 vs gate 0.60, target not run -- a non-test, not a negative); all R5006-R5008 cipher now transcribed (1,903 digits, GAPS208 closed R5008); duplicate-effort risk with Bourdeau's stated next step (see Check-solved verdict and GAPS185); cheapest next: rerun crib_test.py on R5008 (~$1), then the crib-anchored key search on R5008's sentence frame with its own control first, ~$3
+Verdict: keep going: 1 internal gap (key rebuild: GAPS202's 4-gram annealer retired after failing its matched control twice; R8-ZESCH found R5008's crib test untestable at N=260, control 0.465 vs gate 0.80, and no in-cipher crib for an anchored search); all R5006-R5008 cipher transcribed (1,903 digits); duplicate-effort risk with Bourdeau's stated next step (his HEAD adbf9a1, 5 Oct 2026, has not run it); cheapest next: a word-segmentation objective on the pooled R5005-R5007 pairs with its own matched control first, ~$3
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 
@@ -515,4 +547,4 @@ No find in (a)-(d) makes the item calibration or found-solved.
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: the Verdict's cheapest next -- rerun crib_test.py on R5008 (German, 260 digits; re-check power at this N first), ~$1, then the crib-anchored key search on R5008's sentence frame with its own control first, ~$3. Check Bourdeau's stated next step first (duplicate-effort risk, GAPS185).
+- Action that depends on nobody: the Verdict's cheapest next -- a word-segmentation objective on the pooled R5005-R5007 pairs with its own matched control first, ~$3 (R5008 crib test and the crib-anchored search were closed by R8-ZESCH, 6 Oct 2026: untestable at N=260 / no in-cipher crib). Check Bourdeau's stated next step first (duplicate-effort risk, GAPS185).

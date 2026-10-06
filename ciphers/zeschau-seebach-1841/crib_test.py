@@ -2,9 +2,11 @@
 """GAPS185 crib test (PREREG-GAPS185.md): does R5006 share R5005's two-digit pair profile, and do
 Bourdeau's 7 published gloss values (grade I, dbourdeau/cyphersolver, CC BY 4.0) occur in R5006 above chance?
 
-Usage: python3 crib_test.py [--target r5007] [--check]   (--check exits 1 if the output json is stale)
+Usage: python3 crib_test.py [--target r5007|r5008] [--check]   (--check exits 1 if the output json is stale)
 Default target r5006 -> crib_test.json (GAPS185). --target r5007 -> crib_test_r5007.json (PREREG-GAPS196: same
 statistics, seed 196, power windows of the target's own N, plus T1 against R5006 as a descriptive extra).
+--target r5008 -> crib_test_r5008.json (PREREG-R8ZESCH: German power control first -- 200 R5007 windows of N=260 vs
+R5005, gate share p<0.01 >= 0.80 -- and the target only if it passes; else exit 3, "untestable at this N").
 """
 import json, math, random, sys
 from pathlib import Path
@@ -64,7 +66,9 @@ def spearman(x, y):
 
 
 TARGETS = {"r5006": (("r5006p1_ciphertext.txt", "r5006p2_ciphertext.txt"), SEED, "crib_test.json"),
-           "r5007": (("r5007p2l_ciphertext.txt", "r5007p2r_ciphertext.txt"), 196, "crib_test_r5007.json")}
+           "r5007": (("r5007p2l_ciphertext.txt", "r5007p2r_ciphertext.txt"), 196, "crib_test_r5007.json"),
+           "r5008": (("r5008_ciphertext.txt",), 8008, "crib_test_r5008.json")}
+GATE_R5008 = 0.80
 
 
 def stream(files):
@@ -87,6 +91,29 @@ def main():
     r5_pairs = [p for tag, d in r5_lines for p in pairs(d, off.get(tag, 0))]
     c5 = counts(r5_pairs)
     rng = random.Random(seed)
+    pv = lambda t, nl: (1 + sum(x >= t for x in nl)) / (1 + len(nl))
+    pre = {}
+    if tgt == "r5008":
+        # PREREG-R8ZESCH: matched German power control first (R5007 windows of the target's N vs all of R5005)
+        s7 = stream(TARGETS["r5007"][0]); gh, gt, gn = 0, [], []
+        for _ in range(NWIN):
+            st = rng.randrange(0, len(s7) - N + 1); w = s7[st:st + N]
+            t = cos(counts(best_pairs(w)), c5); wd = list(w); nl = []
+            for _ in range(NWDRAW):
+                rng.shuffle(wd); nl.append(cos(counts(best_pairs("".join(wd))), c5))
+            gh += pv(t, nl) < 0.01; gt.append(t); gn.append(sum(nl) / len(nl))
+        pre = {"german_power_windows_r5007": NWIN, "german_power_share_p_lt_0.01": round(gh / NWIN, 3),
+               "german_power_window_cos_mean": round(sum(gt) / NWIN, 4),
+               "german_power_window_null_mean": round(sum(gn) / NWIN, 4), "gate": GATE_R5008}
+        if gh / NWIN < GATE_R5008:
+            out = {"target": tgt, "files": list(files), "seed": seed, "n_digits": N, **pre,
+                   "verdict": "CONTROL BELOW GATE: untestable at this N; target not computed"}
+            js = json.dumps(out, indent=1) + "\n"; f = HERE / outname
+            if "--check" in sys.argv:
+                if not f.exists() or f.read_text() != js:
+                    print("STALE", outname); sys.exit(1)
+                print(outname, "up to date"); sys.exit(3)
+            f.write_text(js); print(js); sys.exit(3)
 
     p6 = best_pairs(r6); c6 = counts(p6)
     phase = 0 if p6 == pairs(r6, 0) else 1
@@ -96,7 +123,6 @@ def main():
     for _ in range(NDRAW):
         rng.shuffle(digs); q = best_pairs("".join(digs))
         null1.append(cos(counts(q), c5)); null2.append(cover(q))
-    pv = lambda t, nl: (1 + sum(x >= t for x in nl)) / (1 + len(nl))
     pc = lambda nl: sorted(nl)[int(0.95 * len(nl))]
 
     # positive control: N-digit windows (N=692 for R5006) of R5005 (stream in Bourdeau's line order) vs the rest of R5005
@@ -129,7 +155,7 @@ def main():
         "top10_pairs_r5": sorted(((c5[i], f"{i:02d}") for i in range(100)), reverse=True)[:10],
     }
     if tgt != "r5006":
-        out = {"target": tgt, "files": list(files), "seed": seed, **out}
+        out = {"target": tgt, "files": list(files), "seed": seed, **pre, **out}
         c6ref = counts(best_pairs(stream(TARGETS["r5006"][0])))
         out["descriptive_T1_cosine_vs_r5006"] = round(cos(c6, c6ref), 4)
         out["descriptive_T1_null_mean_vs_r5006"] = round(sum(cos(counts(best_pairs("".join(rng.sample(r6, N)))), c6ref)

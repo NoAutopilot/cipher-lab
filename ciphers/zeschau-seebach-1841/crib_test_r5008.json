@@ -1,0 +1,14 @@
+{
+ "target": "r5008",
+ "files": [
+  "r5008_ciphertext.txt"
+ ],
+ "seed": 8008,
+ "n_digits": 260,
+ "german_power_windows_r5007": 200,
+ "german_power_share_p_lt_0.01": 0.465,
+ "german_power_window_cos_mean": 0.7113,
+ "german_power_window_null_mean": 0.6283,
+ "gate": 0.8,
+ "verdict": "CONTROL BELOW GATE: untestable at this N; target not computed"
+}
