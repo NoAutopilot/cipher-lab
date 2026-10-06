@@ -10138,3 +10138,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 23:38 | LANE NEWT-C-account-4 | spawned 23:38 UTC (Sonnet 5.5, cap 6 each, box 50 min): NC-S1 DECODE session_01Wi6QKHGy95NHZ2cjA9a6kw; NC-S2 Gallica/Colbert session_01GmfeV7nPXcQP6otqmEd2Km; NC-S3 Europeana/DPLA session_017qnL7o9yjg9ws2bzpn1cPh; NC-S4 Tomokiyo session_01ABVyBTuG5hMkfU9jPTkUsg
 2026-10-06 23:40 | S4 scout | S4 scout (Tomokiyo key pages), cap 6, box end 00:30 UTC, for LANE NEWT-C-account-4
 2026-10-06 23:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 23:40: spawned 3 (NEVF-APPLY session_0173L7hGEus2gDt9JTnUR5sk, DEC1162-ENHANCE session_01HPeCHkFtFmVjwxQPiuxCVz, WVO-APPLY session_01F9iZTQrQmVUQX283xbpAUh), queued left 0
+2026-10-06 23:40 | S1 DECODE scout (NC-S1) | S1 DECODE key-doc scout, cap 6, box end 00:30 UTC 7 Oct, for LANE NEWT-C-account-4
