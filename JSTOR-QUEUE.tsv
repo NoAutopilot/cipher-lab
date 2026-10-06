@@ -296,3 +296,5 @@ ciphers/fr16142-noailles-constantinople-1571	"merveilleusement diligens"	2026-10
 ciphers/na-schonenberg-1678-1716	"Schonenberg" AND (Lisboa OR Lisbon OR Portugal) AND (cifra OR cifrado OR cijferschrift OR cipher)	2026-10-05	queued	
 ciphers/na-schonenberg-1678-1716	"Albanylla"	2026-10-05	queued	
 ciphers/na-schonenberg-1678-1716	"de aver mudado este govierno"	2026-10-05	queued	
+ciphers/wvo-hessen-1564	("Oranien" OR "Orange") AND ("Landgraf Wilhelm" OR "Wilhelm IV" OR "Landgrave") AND 1564 AND (Chiffre OR Ziffer OR Geheimschrift OR cipher)	2026-10-06	queued	
+ciphers/wvo-hessen-1564	"die adern zweimahl"	2026-10-06	queued	

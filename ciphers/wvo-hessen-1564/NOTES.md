@@ -506,3 +506,34 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair crops and sorter tiles
 - [n/a] retry: no step has failed that a retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: rebuild key.tsv per settled sign after the owner's sorter answers and cross-check against 1069 (~$1.5), else a careful two-pass transcription of the ten gloss rows (~$4.5); verifier R9-WVOV running
+
+## Verifier audit of the f.23 alignment (R9-WVOV, account 4, 6 Oct 2026, 06:20-06:4x UTC by date -u)
+
+Verifier session separate from R9-WVOALIGN and R9-WVOSORT. Full log and verdict: `AUDIT.md` "AUDIT 1".
+- Class **N0** (the period letter-over-sign decipherment on the leaf is the decipherment of this very item; repository
+  precedent clair1067 / clair1108 / fr5160 / fr3993); key source **period** (rebuilt by us from that gloss); text known
+  in manuscript, not found in print (phrase searches on the gloss: IA be-api, Google Books API, OpenAlex, Semantic Scholar,
+  6 Oct 2026; Demandt II and the HSAM key records unreached). Depth **D2**, about 40% (C 102 of 257).
+- Re-runs reproduce: `decode_key.py r9align --check` exit 0; aligner piles 10 vs p95 3, pass A 7 vs 5, pass B 11 vs 3.
+- Correction to a figure in "f.23 interlinear alignment": "the 92 C-graded tokens agree with the gloss letter over them 72
+  times" is the aligner's own agreement, not an eye check. A 10-tile random sample checked by eye on the page: 3 right,
+  1 plausible, 2 unclear, 4 where the tile sits under the neighbouring gloss letter (one-position slips; e.g. barred h is
+  c by eye but k11 = h in key.tsv; thorn-p is w by eye, k02 = z in key.tsv). The row pairing and the gate are sound; the
+  per-tile letters and the M rows of `r9align/key.tsv` are noisy. R9-WVOX's 1069 concordance (above) independently gives
+  p-shape = w, Mars = i, R = s, one-bar cross = r, matching the by-eye values. Text of the section otherwise kept.
+
+## Remaining gaps (finish-or-blocker pass, R9-WVOV, 6 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed); alignment gate PASS 10 vs shuffle p95 3 (re-run by the verifier); key 10 C / 18 M pile rows, per-tile letters noisy (verifier's 10-tile sample: 3 right, 4 one-position slips); f.23 shares values with the 1069 key (8 of 18 matched shapes); AUDIT 1: N0, key period, D2 about 40%
+- careful transcription of the ten German gloss rows (C03, C05, C09 have uncertain letters; R9-WVOALIGN's gloss is a reconciliation sketch) - blocker: not-attempted; outside the briefs run so far; next: two blind passes on crops_m/ German rows + reconciliation, then re-run build_pairs.py and the aligner, ~$4.5
+- sign-level key without one-position slips (pile ids mix shapes; aligner slips in 4 of 10 sampled tiles) - blocker: not-attempted; the sorter is built but not yet answered; next: after the owner's f23 sorter answers, apply them with tools/sign_sorter_apply.py, relabel tile_letters.tsv by sid, rebuild key.tsv with make_key.py and eye-check every C row against its tiles, cross-check against 1069 (r9wvox/concordance.tsv), ~$1.5
+- second audit (rule 10 two audits; Dupuy 468 counter-precedent would make it N2, never N3) - blocker: not-attempted; a verifier may not give the second audit of its own class; next: a second verifier session after the careful gloss pass, ~$2
+
+## Escalation (R9-WVOV, 6 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174 application; R9-WVOX concordance FAIL 0/7) and 1069 key (R9-WVOX concordance PASS 8/18)
+- [x] clear-pages: f.23's own interlinear gloss aligned and gated (R9-WVOALIGN), re-run and eye-checked by the verifier (R9-WVOV)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV)
+- [x] key-rebuild: pile-level key rebuilt from the leaf's gloss (R9-WVOALIGN, r9align/key.tsv)
+- [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair crops and sorter tiles; 10 tiles eye-checked (R9-WVOV)
+- [n/a] retry: no step has failed that a retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: rebuild key.tsv per settled sign after the owner's sorter answers, eye-checked and cross-checked against 1069 (~$1.5), else a careful two-pass transcription of the ten gloss rows (~$4.5); then a second audit

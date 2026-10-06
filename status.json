@@ -3908,6 +3908,37 @@
       "depth_by": "R9-NLAV",
       "depth_date": "6 Oct 2026",
       "decode_status": "Partially decrypted"
+    },
+    {
+      "date": "6 Oct 2026",
+      "kind": "recovery",
+      "key": "period",
+      "text": "known",
+      "title": "Willem van Oranje to Landgrave Wilhelm IV of Hesse, Brussels, 18 Sept 1564 (WVO 1109, HSAM Marburg Bestand 3II, f.23 cipher enclosure): key rebuilt from the leaf's own interlinear decipherment",
+      "grade": "N0 (AUDIT.md AUDIT 1, verifier R9-WVOV, 6 Oct 2026); key period (rebuilt by us from the contemporary letter-over-sign German gloss on the leaf). Text known in manuscript, not found in print. 257 tiles: C 102, M 155 (aligner counts; per-tile letters noisy, 10-tile eye sample 3 right, 4 one-position slips); row-shuffle control piles 10 vs p95 3",
+      "line": "f.23 carries a contemporary German decipherment written letter by letter over each of its ten cipher rows; aligning it with the signs gives a partial homophonic letter key (10 sign groups at C, 18 at M). Partially deciphered (about 40%) by the period decipherment on the leaf; a key recovered from that decipherment, not a reading of unknown text.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/wvo-hessen-1564",
+      "document_id": "HSAM Bestand 3II, Nassau-Niederlande, Korr. 1564-1565, f.23 (WVO briefnr 1109 enclosure)",
+      "claim_scope": "key-to-known-text",
+      "novelty": "N0",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "102/257 C",
+      "unresolved_spans": "155 tiles M (pile-level key mixes shapes; aligner one-position slips); gloss rows C03, C05, C09 uncertain letters",
+      "audit_refs": [
+        "wvo-hessen-1564/AUDIT.md '## AUDIT 1 (verifier R9-WVOV, ...)'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "wvo-hessen-1564/AUDIT.md AUDIT 1 sections 1, 2, 4; C 102 M 155 of 257",
+      "depth": "D2",
+      "depth_pct": 39.7,
+      "depth_sentence": "The enciphered passage, as its period interlinear gloss reads, reports that a woman ('ir', her) fell so ill that she had to be bled twice and purged twice.",
+      "depth_check": "period interlinear gloss on the leaf, 10-tile eye sample (R9-WVOV); row-shuffle control piles 10 vs p95 3 (1000 draws) re-run; decode_key.py r9align --check exit 0; not D3: C under 80%, gloss rows C03/C05/C09 a sketch",
+      "depth_by": "R9-WVOV",
+      "depth_date": "6 Oct 2026",
+      "decode_status": "Partially decrypted"
     }
   ],
   "lanes": [
