@@ -163,3 +163,14 @@ log "non-test" and stop. Apply only under GAPS23's rule; --check exit 0.
 - R7-FRA83 -- sp78-france-1583. Intake gate: `sp78-france-1583: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
   Step: fetch the TNA Discovery record details of SP 78/113/56 and /58 and of SP 78/111/92 and /94 (tools/discovery_items.py or the Discovery API)
   for a covering letter naming the writer or the cipher.
+
+## Wave 4 (spawned 02:1x UTC 6 Oct; last job of the lane). Wave 3 so far: 5 D (8.83), OLDFIX running.
+
+### R7-MANT529 -- sachsstaatsarchiv-manteuffel-1712, transcribe 0529 (ff.424v-425) and gate (cap 5.5, box 75 min; 2 blind passes + 1 reconciliation + scripts)
+Intake gate: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R7-MANTSCR (6 Oct) ranked 0529 first: second attestations of 898 l'Empire and 939 le Mecklenbourg as single-code glosses, and about 25
+occurrences of f.410 U codes. Same shape as R7-MANT463 exactly (folio check, crop step pasted, two blind passes one page per call, crop paths
+only, reconcile_passes.py, one reconciliation unit, decode_key.py, per-leaf gate, pooled gate re-run with a pre-pushed addendum). Codes enter
+key.tsv only per the per-unit merge rule (a code attested only on a leaf that ties its own control stays M). Report how many f.410 / f.409v U
+tokens move, the new f.410 C/M/U counts, and whether f.410 now has a clause above the authentication distance (the depth is the verifier's;
+flag in ROOM for a verifier if f.410's reading changes). If the passes split > 10% of tokens, stop after reconciliation.
