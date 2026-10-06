@@ -106,3 +106,21 @@ rows still split stay marked, never silently repaired (rule 2). No decoding in t
 
 Wave 2 sessions (14:24 UTC): R11A-AVS53 session_01MpRCUCgxYLJCKienJ4nxLe; R11A-HEIN session_01FeNp3N7ZVc64Q1zaSWuBP2; R11A-BOWES2
 session_01B4RSNSFCHKg1DFbL47x42K; R11A-F3789 session_015C49zvPbrq3PRZkSGoDAXM.
+
+## Wave 3 (spawned 14:5x UTC)
+
+### R11A-AVSK -- august-van-saksen-1561-64, the Verdict's cheapest next: homophonic_anneal on native 53. Cap 3, box 50 min.
+Re-run tools/homophonic_anneal.py (or the folder's own wrapper as the AVS53 section names it) on the native ciphertext_53.tsv from R11A-AVS53,
+with a matched synthetic control (same N, K, homophone design, German corpus) run first; target only if the control reads. Question: sign 9
+(= f by context) and the G1/G7 homophones. PREREG committed before scoring. A key/grade change after AUDIT.md -> NOTES note + ROOM flag; the
+lane's verifier carry-over (R11A-AVSV) runs after you, so do not touch AUDIT.md. decode --check exit 0; gaps_check.
+
+### R11A-BOWES3 -- bowes-walsingham-1583, DECODE metadata of the 20 undated SP 106/1-3 leaves (R11A-BOWES2's next). Cap 2, box 40 min.
+Login-free DECODE listing/record metadata only (tools/decode_list.py; one request at a time, >= 1.5 s): for each of the 20 undated leaves,
+record date clues, correspondents, script, and whether any could be a 1580-84 Scotland/Bowes key; no login, no images unless thumbnails are
+login-free. Add to sp106_browse.tsv; NOTES + gaps_check.
+
+### R11A-HAR -- harley-287-1587, the Verdict's cheapest next: lookalike pass on f.88r split pairs. Cap 3, box 50 min.
+Disk only: run tools/lookalike_pass.py on the f.88r pass split pairs (images/f88r); then build the owner sign-sorter page for images/f88r with
+its focus.tsv (tools/sign_sorter.py), PASS tools/sorter_preflight.py, open 5+ random tiles against the line image, and flag it in ROOM to the
+account-3 orchestrator to publish (never publish yourself, never edit ASKS.md). Lookalike residue is agreement, not accuracy. NOTES + gaps_check.
