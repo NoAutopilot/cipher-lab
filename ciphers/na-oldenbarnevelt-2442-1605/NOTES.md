@@ -1070,8 +1070,59 @@ names. The v1 cut is kept as `sorter/*_v1.tsv`.
 Committed rows, reading and grades unchanged. Not published, no ASKS row: the lane orchestrator does both. Do not classify
 novelty (rule 10).
 
+## 16. R12-OLDCORP, 6 Oct 2026: era-matched judge corpus es1600 (CODOIN 1598-1621 state letters, step (d')) and re-judge -- B/C1 FAILs a corpus that passes its own fold rule; status stays open
+
+Brief: `.claude/briefs/runs/2026-10-06-account2-run12-jobs.md` (LANE LANE-RUN12-account-2), job R12-OLDCORP. Step (d') only; no
+reading, key or grade changed. Pre-registration `transcription/PREREG_R12-OLDCORP.md` pushed before the build (8c411e472), with a
+pre-build amendment (3855e4f81: a content criterion added after the year-share survey admitted treatises and medieval chronicles;
+no corpus file existed and nothing was scored at that point).
+
+**Corpus.** `tools/data/es1600` (`LANG_CORPORA["es1600"]`, offline test `tools/tests/test_judge_plaintext_lang_es1600.py`): seven
+CODOIN tomes, one printing kind (Madrid 1863-90) and one register (state letters): XLII (Almirante de Aragon, Flanders 1599-1602),
+XLIII (Archduke Albert, 1598-1621), XLIV-XLVII (Osuna, Sicily/Naples, 1610s), XCVI (Pedro de Toledo to Philip III, 1615-18); only
+text inside documents dated 1598-1621, footnotes dropped, 650k-letter cap, about 3.64M letters. All 108 madruoft scans surveyed
+(archive.org: 2 advancedsearch + 108 djvu + 5 metadata requests, >= 1.6 s apart; tomos XXXVI, LXI, LXVIII, LXXXII, XCI answered 500,
+unread). Hold-out grep (Senisteros, Cisneros, Juan de la Pena): zero hits. Sources and stripping rule: `tools/data/es1600/README.md`.
+
+**Fold check (rule 3), N=634, 200 windows per fold** (`tools/data/es18/holdout_check.py --lang es1600 --N 634`):
+```
+es1600: TOTAL false-negative rate 155/1400 (11.1%); per-fold spread 5.0-19.0% (7 folds)
+        XLII 19.0, XLIII 9.0, XLIV 5.0, XLV 11.5, XLVI 12.0, XLVII 9.5, XCVI 11.5
+(es17a, same N: 62.1%, 22.5-97.0%, 5 folds; es17c: 21.0%, 8.0-35.5%, 3 folds)
+```
+By the pre-registered rule es1600 is **not** "unknown reliability" at this N (7 files; max fold 19.0%, under 20). Caveat: four
+folds are Osuna tomes, so their 5-12% rates are flattered by the three sibling Osuna tomes left in training; the non-Osuna folds
+(9.0, 11.5, 19.0%) are the fairer estimate of how often real held-out 1598-1621 state letters FAIL this gate at N=634.
+
+**Re-judge** (`python3 scripts/es17a_rejudge.py --langs es1600 es17a`, unchanged script; full log `transcription/rejudge_R12-OLDCORP.log`):
+```
+BC1_reading         es1600 FAIL score=-0.992 real_p05=-0.852 null_p99=-2.022 N=634  cover=0.901
+BC1_reading         es17a  FAIL score=-0.961 real_p05=-0.913 null_p99=-1.841 N=634  cover=0.95
+whole_reading       es1600 FAIL score=-1.125 real_p05=-0.817 null_p99=-2.036 N=1226 cover=0.864
+whole_reading       es17a  FAIL score=-1.083 real_p05=-0.902 null_p99=-1.857 N=1226 cover=0.924
+shuf1_committed_key es1600 FAIL -2.110 | es17a FAIL -1.946     shuf1_solver_key es1600 FAIL -2.042 | es17a FAIL -1.851
+shuf2_committed_key es1600 FAIL -2.095 | es17a FAIL -1.914     shuf2_solver_key es1600 FAIL -1.993 | es17a FAIL -1.785
+shuf3_committed_key es1600 FAIL -2.074 | es17a FAIL -1.892     shuf3_solver_key es1600 FAIL -1.958 | es17a FAIL -1.808
+```
+(es17a rows reproduce section 12 exactly.) Descriptive, not pre-registered: in-sample, 0.5% of 400 es1600 real N=634 windows score
+at or below -0.992 (lowest -1.152).
+
+**What this shows.** (1) ARM-C1 voiding check: no shuffled decode PASSes (all at or below null_p99 -2.022 to -1.958), so es1600 is
+not void as a gate for this family at N=634. (2) Under es1600, the one Spanish corpus on disk that passes its own fold rule at this N, the B/C1
+reading FAILs by 0.140 (es17a: 0.048; es17c: 0.152; es16: 0.244), and word cover is 0.901. The margin did not keep shrinking with the
+tighter corpus: es17a's smaller margin came with a 62% false-negative rate, i.e. a permissive model; with a model that FAILs held-out
+real letters only 9-19% of the time, the reading sits well below real prose but still about 1.0 above the shuffled decodes (the
+ZX-DEC349 shape). (3) This is a FAIL from a corpus of acceptable fold reliability, so, unlike sections 8-12, it counts against the reading
+as it stands; it does not say which part fails (the 12.1% per-sign disagreement of OLD-PASS2 and the 36 uncertain words are the
+nearest candidates), and it is not a verdict on the key's design. Not found: no corpus on disk under which B/C1 PASSes.
+
+**Verdict: open.** Next steps: (a'') the owner's sign sorter for A/C2 (waiting, R7-OLDSORT/R7-OLDFIX), then a key-constrained re-read;
+(e) a per-segment es1600 judge of B/C1 (e.g. 4 x ~160-letter windows against a matched real-window control at that N) to see whether
+the FAIL is concentrated in the low-confidence lines, ~$2; no further corpus building for this letter (the corpus knob is done:
+rule 3's third-attempt clause would apply to a fourth corpus).
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, 6 Oct 2026)
 
-- Action that depends on nobody: (d') of the latest Verdict -- the tighter era corpus (several CODOIN volumes of 1598-1621 state
-  letters, fold-checked), ~$5. Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
+- Action that depends on nobody: (e) of section 16's Verdict -- a per-segment es1600 judge of B/C1 with a matched
+  real-window control, ~$2. Step (d') ran on 6 Oct 2026 (R12-OLDCORP, section 16: es1600, FAIL by 0.140). Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
   the owner's sorter, seeded 6 Oct 2026 (R7-OLDSORT, `sorter/`, section 14) and re-cut on the cipher lines only (R7-OLDFIX, section 15).

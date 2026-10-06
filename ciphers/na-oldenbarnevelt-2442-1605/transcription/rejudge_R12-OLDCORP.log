@@ -1,0 +1,21 @@
+BC1_reading	es1600	FAIL	score=-0.992	real_p05=-0.852	null_p99=-2.022	N=634	cover=0.901
+BC1_reading	es17a	FAIL	score=-0.961	real_p05=-0.913	null_p99=-1.841	N=634	cover=0.95
+whole_reading	es1600	FAIL	score=-1.125	real_p05=-0.817	null_p99=-2.036	N=1226	cover=0.864
+whole_reading	es17a	FAIL	score=-1.083	real_p05=-0.902	null_p99=-1.857	N=1226	cover=0.924
+shuf1_committed_key	es1600	FAIL	score=-2.11	real_p05=-0.852	null_p99=-2.022	N=634	cover=0.574
+shuf1_committed_key	es17a	FAIL	score=-1.946	real_p05=-0.913	null_p99=-1.841	N=634	cover=0.664
+shuf1_solver_key	es1600	FAIL	score=-2.042	real_p05=-0.852	null_p99=-2.022	N=634	cover=0.607
+shuf1_solver_key	es17a	FAIL	score=-1.851	real_p05=-0.913	null_p99=-1.841	N=634	cover=0.691
+shuf2_committed_key	es1600	FAIL	score=-2.095	real_p05=-0.852	null_p99=-2.022	N=634	cover=0.571
+shuf2_committed_key	es17a	FAIL	score=-1.914	real_p05=-0.913	null_p99=-1.841	N=634	cover=0.656
+shuf2_solver_key	es1600	FAIL	score=-1.993	real_p05=-0.852	null_p99=-2.022	N=634	cover=0.623
+shuf2_solver_key	es17a	FAIL	score=-1.785	real_p05=-0.913	null_p99=-1.841	N=634	cover=0.7
+shuf3_committed_key	es1600	FAIL	score=-2.074	real_p05=-0.852	null_p99=-2.022	N=634	cover=0.598
+shuf3_committed_key	es17a	FAIL	score=-1.892	real_p05=-0.913	null_p99=-1.841	N=634	cover=0.697
+shuf3_solver_key	es1600	FAIL	score=-1.958	real_p05=-0.852	null_p99=-2.022	N=634	cover=0.659
+shuf3_solver_key	es17a	FAIL	score=-1.808	real_p05=-0.913	null_p99=-1.841	N=634	cover=0.744
+outdir: /tmp/claude-0/-home-user-cipher-lab/08e19c50-e4b3-5971-9c92-6bd0e41a6c74/scratchpad/oc/rejudge
+
+real	1m56.069s
+user	1m53.587s
+sys	0m0.317s
