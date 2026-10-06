@@ -202,3 +202,37 @@ D0/D1", no flag:
 ```
 unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0
 ```
+
+## Count (R12A-NOXV, 6 Oct 2026)
+Verifier R12A-NOXV (LANE LANE-RUN12-account-1, account 1; brief `.claude/briefs/runs/2026-10-06-account1-run12-jobs.md` R12A-NOXV), a session
+that solved nothing here; disk only, requests 0, subagents 0, nothing decoded. Clock by `date -u`: 17:47-17:5x UTC.
+
+Why the two rows sat in VERIFY-BACKLOG.tsv as "counted, high": PROGRESS.tsv rows 58-59 (backlog's "row 51/52") named N0 only in their
+`source` cell, and `tools/verify_backlog.py` reads the class and "not counted" from the `note` cell, so the count was undecided on paper
+although both audits had decided it in substance.
+
+Decision, per item (rule 4/4a; never raising the N-class):
+| item | N-class | depth | depth_pct (H/C/S) | grades of cipher tokens | count |
+|---|---|---|---|---|---|
+| A c262 (25 Apr 1572) | N0 (unchanged) | **D0** (unchanged) | 1.8 (was 0.0) | S 7, M 377, H 0, C 0, I 0 of 384 reader signs | **not countable** (N0, key-to-known-text) |
+| B c510-516 (7 Jul 1574) | N0 (unchanged) | **D0** (unchanged) | 0.0 | no decode | **not countable** (N0, key-to-known-text) |
+
+Carried in since Audit 2 / R7B-NOXV:
+- D1-F16142A (6 Oct): masked per-label alignment with W:-word anchors, PASS as pre-registered but thin; its PREREG rule grades S 7 sign
+  tokens (labels l2 -> l x4, a1 -> a x3). depth_pct for A moves 0.0 -> 1.8 (7/384). Depth stays D0: the S tokens are two letter values,
+  not a word; D1 needs scattered words. Both labels already agree with Tomokiyo's published key.
+- R10-NOX2 (6 Oct): read gloss L14-L21 into `gloss_below_L13.tsv` -- period-gloss words (H-source plaintext), not cipher tokens read by a
+  key; the cipher rows beside them are untranscribed. No depth effect on A or B.
+- B: nothing since Audit 2 touches c510-516.
+
+Edits: status.json c262 row `depth_pct` 1.8 and `depth_check` (S 7 / M 377 and why D0 holds; R12A-NOXV); c510-516 row unchanged;
+`depth`, `depth_sentence` ("" at D0), `decode_status` (Non-decrypted) unchanged on both. PROGRESS.tsv rows 58-59: `note` appended
+"N0 D0, not counted (key-to-known-text; depth_check.py, R12A-NOXV 6 Oct 2026)"; `C` stays `.` (not countable). No SECOND-OPINIONS row (N0).
+
+`python3 tools/depth_check.py` after the edits (6 Oct 2026, 17:49 UTC), exit 0; neither row is flagged (N0 and key-to-known-text are
+outside the counted set):
+```
+unique solves (N3+ and D2+): 17 -- D4 1, D3 3, D2 13; not counted D0/D1: 13; legacy ungraded: 0
+```
+`python3 tools/verify_backlog.py` re-run: both rows now `priority none`, "no verifier action: count decided: class N0, not countable
+(depth_check.py)".
