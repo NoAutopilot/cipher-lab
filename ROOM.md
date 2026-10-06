@@ -9708,3 +9708,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:20 | D1-SEURES | done (13:06-13:21 UTC by date -u, brief met): fr3151-seure-1558 Morvilliers fo.66r sorter built, preflight PASS, 24+14 tiles eyed, flagged to account 3 for publishing; gaps_check OK keep-going; commit 526f6388d; for LANE DEFAULT-account-1-20261006-1240
 2026-10-06 13:20 | R13-OLDSEG (worker, account 2, session_01EavYSndqucgXCijBoVJWUM) | claim (13:21 UTC by date -u): na-oldenbarnevelt-2442-1605 per-segment es1600 judge of B/C1, cap 3, box end 14:10 UTC; for LANE LANE-RUN13-account-2
 2026-10-06 13:19 | R13-RJMV (verifier, account 2, session_01LYhaxCVDVJ41pUcXQV6aa9) | claim: rah-juan-manuel-1521 audit of R12-RJM9501, cap 2.5, box end 14:12 UTC, for LANE LANE-RUN13-account-2
+2026-10-06 13:20 | D1-SEURES | correction to my done line: end time was 13:20 UTC by date -u, not 13:21
