@@ -744,3 +744,91 @@ Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L0
 - [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
 Verdict: keep going: 5 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes; row text staged in the D4-SYL54 section, waiting on the lane orchestrator to queue it); then the no.54 nomenclator (~$6); then fr.15576 f.2 alignment (~$9)
+
+## D4-15576 (account-4 worker for LANE DEFAULT-account-4-20261006-1235, 6 Oct 2026 13:26-13:4x UTC by date -u)
+
+Job: fr.15576 f.2 (Gallica btv1b9063777v canvas f8) body cipher with its period interlined decipherment, aligned with
+`tools/interlinear_align.py`. Folder `f2_fr15576/` (the existing NV05D folder; the brief's `f15576/` name not used, to keep one
+folder per leaf). Pre-registration `f2_fr15576/PREREG-D4-15576.md` (commit a52edd373) pushed before any pass output was seen.
+
+**Crops** (TRANSCRIPTION.md; before any vision call). Body = 21 cipher lines C01-C21 (the 5-line letter-sign block above the body
+and its own gloss, "alos 17 del pasado ...", are out of scope). One cipher-only cut, then the cut used: gloss and cipher centres
+alternating so that each gloss band holds one faint line only (NV05C's lesson), neighbour ink masked:
+
+    $ python3 tools/iiif_lines.py --ark btv1b9063777v --canvas 8 --region 5650,1700,3230,3100 --out .../f2_fr15576/body --prefix f2c \
+        --lines-per-crop 1 --max-width 1700 --overlap 150 --mask-neighbours --debug      # 21 lines, pitch 137 (overlay f2c_lines_debug.jpg)
+    $ python3 tools/iiif_lines.py ... --prefix f2i --centres 175,255,315,375,...,2929,2992 --lines-per-crop 1 --max-width 1700 \
+        --overlap 150 --mask-neighbours --mask-margin 45 --debug                          # 42 bands: odd = gloss G01-G21, even = cipher C01-C21
+    $ python3 tools/iiif_lines.py --views contrast --views-of <the 42 gloss crops> --out .../body
+
+Crop defects found at reconciliation: the lines slope up to the right, so on four lines (C05, C06, C12, C14) the cipher line's right
+end sits in the gloss band above it and the tight cipher band masked it to ghost outlines; those tails were read from the gloss crop
+and the f2c overlay. An f2g cut (gloss centres only) was discarded (cipher digits unmasked inside the band on sloping lines).
+
+**Reads.** Gloss: 2 blind Sonnet passes (A plain crops, B contrast views), `gloss_passA.tsv`, `gloss_passB.tsv`. Cipher: 2 blind
+Sonnet passes, `cipher_passA.tsv`, `cipher_passB.tsv` (wide forms `*_wide.tsv`). Cipher agreement (`tools/reconcile_passes.py`,
+`recon_cipher/`): 300/358 = 83.8%, 58 disagreement columns, above the 10% line, so no third pass. Reconciliation by the worker
+(`ciphertext_body.tsv`, a `settled` note per line): C01-C04 taken from NV05D's reconciled text (3 Oct); most splits were marks only,
+one pass dropping a group, or the masked tails; 6 groups stay unsettled (C05 4?1, C09 ?11, C10 41?, C11 58?, C14 5?9, C18 19?),
+graded M and listed below as the sorter focus. Gloss reconciliation (`gloss_reconciled.tsv`): words where both passes agree, plus
+the worker's eye on 9 contrast crops (G01, G03-G06, G09); unread or split words written as '???' wildcards. The gloss is poorly read:
+G12 has no agreed word, G13, G14, G18-G21 are mostly wildcards. Reading of the cipher: 334 cipher tokens + 23 clear letter tokens
+(y, p, q, k, V, sh/uu, +) on 21 lines; 145 distinct numeric values, all 3-digit except 1502, 4876, 5571; most frequent 199 (16),
+588 (14), 246, 702, 335 (11 each).
+
+**Alignment and gate** (pre-registered settings, unchanged; `build_pairs.py` -> `pairs.tsv`):
+
+    $ python3 tools/interlinear_align.py align f2_fr15576/pairs.tsv f2_fr15576/align.tsv f2_fr15576/key_f15576.tsv --floor 0 \
+        --max-chunk 14 --seg-bonus 1.0 --len-prior 0.5 --wildcard '?' --shuffle 200 --seed 1595 --min-share 0.6 --shuffle-out f2_fr15576/shuffle.json
+    tokens 358; values 93; {'single-segment': 53, 'conflict': 215, 'clear': 23, 'single': 31, 'agrees': 27, 'doubtful': 9}
+    shuffle control: real 8; control mean 12.06, p95 16, max 18, n 200; p = 0.9751; real > p95: False
+
+| statistic | real | control (200 gloss-line derangements) | gate |
+|---|---|---|---|
+| CONSISTENT values (top chunk >= 2x on >= 2 lines, share >= 0.6) | 8 | mean 12.06, p95 16, max 18; p = 0.975 | **FAIL** (needs >= 5 and p <= 0.01) |
+
+Per the prereg no value is C. `key_f15576.tsv` (value -> top chunk, n, agree) is kept as an M-grade working list; its strongest
+rows are 588 -> que (7 of 11 aligned occurrences agree) and 199 -> de (5 of 8), which fit Spanish frequencies but are not licensed
+by the gate. The real pairing scoring below the shuffled one is itself a sign the instrument is not measuring the key here: with most
+gloss words wildcards, the hard-EM fits wildcards and short function words wherever it can, on any line.
+
+**Decode** (rule 7): `decode.json` + `tools/decode_key.py f2_fr15576 --check` exit 0 (`reading.txt`, `reading_tokens.tsv`, key
+`key_decode.tsv` generated by `build_pairs.py`, every value M). Grades (rule 4), 334 cipher tokens: H 0, C 0, S 0, M 272, I 0, U 62.
+Cryptanalytic/working result only; the reading is not a decipherment and is not to be quoted as one.
+
+**Comparison with key no.54 and no.31.** key_no54.tsv has no 3-digit code at all (syllabary 10-99 only; nomenclator not
+transcribed); none of the 145 values on f.2 is a no.54 syllabary code (NV05D's P1 found the same on L01-L04). no.31 (fr.3995 f.62r,
+D4-SYL54) carries 3-digit codes only on its z row, za 704 ... zu 708 (first digit M); f.2 uses 704 (once, C20) and 708 (once, C05),
+and 701, 702 (702 eleven times). Two shared numbers out of 145, in a 3-digit system that spans 100-964, is not evidence of a shared
+key: shared or not is open, and the 702 glosses (que x2, to x2, then spread) do not fit a z-syllable either way.
+
+**Not found / not done.** No value reaches C; no clause reads. The 5-line letter-sign block and its gloss (top of the leaf) were not
+read. Requests: gallica.bnf.fr 3 (info.json, 1600 px overview, the native body region; all crops cut from that one fetch).
+Subagents: 4 Sonnet passes. Sorter focus (cipher, unsettled): C05 g17, C09 g14, C10 g8, C11 g17, C14 g9, C18 g10.
+
+Ungated diagnostic (allowed by the prereg, cannot license a C): the same run without `--wildcard` (the '???' positions stripped),
+100 derangements: real 1, control mean 1.01, p95 3, max 4, p = 0.63 (`f2_fr15576/ungated/nowild.log`). Without wildcards the
+alignment loses position and nothing recurs at all; with them it recurs no more than on the wrong lines. Either way the limit is
+the gloss read (about half its words agreed or eye-settled), not the cipher (83.8% two-pass agreement, 6 groups unsettled).
+This is the first alignment attempt on f.2 (rule 3's third-attempt clause does not apply); not a negative on the leaf or the gloss.
+
+## Remaining gaps (D4-15576, 6 Oct 2026; supersedes the D4-SYL54 list, other lines kept)
+
+Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (0.674 vs p99 0.233); L05-L08 gate FAIL three times; fr.15576 f.2 body C01-C21 transcribed (334 cipher tokens, 6 unsettled) and its gloss read twice, alignment gate FAIL (CONSISTENT 8 vs shuffle mean 12.06, p95 16; all M); f.233 unread.
+- Simancas original of the 5 Jan 1595 dispatch (AGS Estado leg. 609 fol. 86, Lefèvre IV no.811) - blocker: not-attempted; new material, a clear text of fr.15576 f.2 would allow `interlinear_align.py stream` against the whole cipher without the faint gloss; PARES dead from the cloud; next: LOCAL-QUEUE desk row for the PARES image of Estado 609 fol.86 or Manuscrits divers t.28 fol.183 (row text staged in the D4-SYL54 section), ~owner minutes
+- fr.15576 f.2 gloss (G01-G21) - blocker: not-attempted; two machine passes agree on about half the words, the alignment gate FAILed on that read (D4-15576); next: one-faint-line gloss crops (f2_fr15576/body f2i_L01..L41, contrast views) read by a person (sign sorter / desk row), then re-run the pre-registered alignment unchanged, ~$2 plus owner time
+- fr.15576 f.2 cipher - blocker: not-attempted; 6 unsettled groups (sorter focus: C05 g17, C09 g14, C10 g8, C11 g17, C14 g9, C18 g10); the 5-line letter-sign block at the top (and its gloss) unread; next: the 6 groups in the owner's sorter; top block 2 passes + reconcile against the no.31 letter signs, ~$4.5
+- f.228 L05-L08 gloss - blocker: not-attempted; machine gloss read of the b2 band crops retired (rule 3, NV05C); next: one-faint-line crops (re-cut b2 bands, as done for f.2 here) read by a person in the sign sorter, or new material, ~$2
+- key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; no.31 = f.62r canvas f126) - blocker: not-attempted; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6 (would show whether f.2's 3-digit codes are the no.54 nomenclator); no.31 grid + legend same method, ~$4.5
+- fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; unread, band crops mix two gloss lines (NV05C); next: 4-line batches with gloss-only crops (one faint line per crop, the f.2 cut here), ~$7.5 each
+
+## Escalation (D4-15576, 6 Oct 2026)
+
+- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
+- [ ] clear-pages: AGS Estado leg. 609 fol. 86 (Lefèvre IV no.811); planned: desk row for its image
+- [ ] known-keys: no.54 syllabary control-checked (fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3); f.2 is outside the no.54 syllabary (no 3-digit codes); nomenclator and no.31 still to transcribe (~$6, ~$4.5)
+- [x] print: Lefèvre IV p.278 no.811 read in full (L47, DESK-LAND); van Durme 1964 snippet only
+- [ ] key-rebuild: f.2's period gloss alignment run once (D4-15576, gate FAIL on a machine gloss read); next: a person's gloss read, same prereg
+- [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
+- [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
+Verdict: keep going: 6 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2); then the no.54 nomenclator (~$6)

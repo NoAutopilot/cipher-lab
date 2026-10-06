@@ -1,0 +1,2 @@
+tokens 358; values 138; {'single': 98, 'agrees': 32, 'conflict': 157, 'clear': 23, 'single-segment': 27, 'doubtful': 9, 'null-or-unaligned': 12}
+shuffle control: real 1; control mean 1.01, p95 3, max 4, n 100; p = 0.6337; real > p95: False

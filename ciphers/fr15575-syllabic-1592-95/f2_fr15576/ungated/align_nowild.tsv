@@ -1,0 +1,359 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+C01	0	201	num	201		di	single
+C01	1	775	num	775		xe	single
+C01	2	114	num	114		a	agrees
+C01	3	553	num	553		vm	conflict:a
+C01	4	246	num	246		en	agrees
+C01	5	sh	clear				clear
+C01	6	200	num	200		vna	single-segment
+C01	7	482	num	482		de	single-segment
+C01	8	199	num	199		sot	conflict:de
+C01	9	665	num	665		ros	single
+C01	10	941	num	941		come	single-segment
+C01	11	k	clear				clear
+C01	12	128	num	128		el	single-segment
+C01	13	244	num	244		co	single
+C01	14	137	num	137		nde	single
+C01	15	190	num	190		de	agrees
+C01	16	261	num	261		fu	single
+C01	17	246	num	246		en	agrees
+C01	18	727	num	727		tes	single
+C02	0	661	num	661		s	conflict:a
+C02	1	588	num	588		e	conflict:que
+C02	2	198	num	198		q	conflict:l
+C02	3	733	num	733		u	single
+C02	4	y	clear				clear
+C02	5	575	num	575		e	single
+C02	6	163	num	163		da	single
+C02	7	739	num	739		ua	conflict:e
+C02	8	246	num	246		pa	conflict:en
+C02	9	204	num	204		ra	conflict:de
+C02	10	390	num	390		a	single-segment
+C02	11	543	num	543		la	single-segment
+C02	12	y	clear				clear
+C02	13	400	num	400		fr	conflict:la
+C02	14	924	num	924		on	single
+C02	15	q	clear				clear
+C02	16	699	num	699		te	conflict:de
+C02	17	622	num	622		ra	agrees
+C02	18	199	num	199		de	agrees
+C03	0	266	num	266		fra	single
+C03	1	y	clear				clear
+C03	2	702	num	702		ncia	conflict:to
+C03	3	345	num	345		a	single-segment
+C03	4	p	clear				clear
+C03	5	668	num	668		to	conflict:ta
+C03	6	1502	doubtful			mar	doubtful
+C03	7	298	num	298		a	agrees
+C03	8	y	clear				clear
+C03	9	596	num	596		su	conflict:en
+C03	10	246	num	246		ca	conflict:en
+C03	11	588	num	588		rgo	conflict:que
+C03	12	735	num	735		aqual	single-segment
+C03	13	750	num	750		est	single
+C03	14	729	num	729		aua	single
+C03	15	201	num	201		que	conflict:di
+C03	16	109	num	109		ha	single-segment
+C03	17	100	num	100		dias	single-segment
+C04	0	588	num	588		que	agrees
+C04	1	411	num	411		le	agrees
+C04	2	717	num	717		te	conflict:ci
+C04	3	299	num	299		ngo	single
+C04	4	298	num	298		al	conflict:a
+C04	5	964	num	964		la	single
+C04	6	541	num	541		en	single-segment
+C04	7	451	num	451		que	conflict:d
+C04	8	739	num	739		in	conflict:e
+C04	9	834	num	834		mo	single
+C04	10	576	num	576		ui	conflict:h
+C04	11	263	num	263		ble	single
+C04	12	696	num	696		por	conflict:d
+C04	13	199	num	199		de	agrees
+C04	14	411	num	411		la	conflict:le
+C04	15	199	num	199		de	agrees
+C05	0	451	num	451		me	conflict:d
+C05	1	415	num	415		le	conflict:la
+C05	2	411	num	411		c	conflict:le
+C05	3	287	num	287		on	single
+C05	4	109	num	109		la	conflict:ha
+C05	5	183	num	183		s	conflict:con
+C05	6	400	num	400		at	conflict:la
+C05	7	484	num	484		is	single
+C05	8	588	num	588		fa	conflict:que
+C05	9	717	num	717		ci	single
+C05	10	298	num	298		on	conflict:a
+C05	11	209	num	209		q	single
+C05	12	708	num	708		ue	single
+C05	13	137	num	137		te	conflict:nde
+C05	14	y	clear				clear
+C05	15	451	num	451		ngo	conflict:d
+C05	16	4?1	doubtful			del	doubtful
+C06	0	335	num	335		d	agrees
+C06	1	739	num	739		e	single
+C06	2	246	num	246		p	conflict:en
+C06	3	166	num	166		or	single
+C06	4	466	num	466		es	single
+C06	5	198	num	198		t	conflict:l
+C06	6	203	num	203		os	conflict:do
+C06	7	576	num	576		se	conflict:h
+C06	8	240	num	240		cr	conflict:a
+C06	9	729	num	729		et	conflict:aua
+C06	10	653	num	653		os	single
+C06	11	551	num	551		y	single-segment
+C06	12	729	num	729		p	conflict:aua
+C06	13	66	num	66		or	conflict:l
+C06	14	576	num	576		h	single
+C06	15	335	num	335		au	conflict:d
+C06	16	762	num	762		er	single
+C07	0	661	num	661		el	conflict:a
+C07	1	244	num	244		of	conflict:co
+C07	2	V	clear				clear
+C07	3	922	num	922		rec	single
+C07	4	163	num	163		ido	conflict:da
+C07	5	203	num	203		a	conflict:do
+C07	6	y	clear				clear
+C07	7	702	num	702		tomar	conflict:to
+C07	8	345	num	345		este	conflict:a
+C07	9	240	num	240		de	conflict:a
+C07	10	699	num	699		tra	conflict:de
+C07	11	527	num	527		bajo	single
+C07	12	576	num	576		por	conflict:h
+C07	13	685	num	685		ser	single
+C07	14	763	num	763		uir	conflict:d
+C07	15	y	clear				clear
+C07	16	553	num	553		a	single-segment
+C07	17	66	num	66		vmd	conflict:l
+C08	0	335	num	335		h	conflict:d
+C08	1	374	num	374		az	single
+C08	2	448	num	448		er	single
+C08	3	114	num	114		me	conflict:a
+C08	4	440	num	440		a	single-segment
+C08	5	332	num	332		mi	single-segment
+C08	6	702	num	702		gu	conflict:to
+C08	7	190	num	190		sto	conflict:de
+C08	8	588	num	588		de	conflict:que
+C08	9	414	num	414		que	single-segment
+C08	10	411	num	411		le	agrees
+C08	11	337	num	337		he	single-segment
+C08	12	243	num	243		con	single-segment
+C08	13	183	num	183		el	conflict:con
+C08	14	246	num	246		ag	conflict:en
+C08	15	y	clear				clear
+C08	16	936	num	936		ra	single
+C08	17	228	num	228		de	single
+C08	18	163	num	163		sci	conflict:da
+C09	0	440	num	440		mi	conflict:a
+C09	1	246	num	246		en	agrees
+C09	2	702	num	702		tu	conflict:to
+C09	3	588	num	588		q	conflict:que
+C09	4	553	num	553		ue	conflict:a
+C09	5	650	num	650		vm	conflict:ado
+C09	6	121	num	121		ag	single
+C09	7	950	num	950		ora	single
+C09	8	202	num	202		a	single-segment
+C09	9	297	num	297		vmd	single-segment
+C09	10	y	clear				clear
+C09	11	553	num	553		que	conflict:a
+C09	12	586	num	586		ya	single-segment
+C09	13	?11	doubtful			es	doubtful
+C09	14	240	num	240		to	conflict:a
+C09	15	702	num	702		ha	conflict:to
+C09	16	335	num	335		ac	conflict:d
+C09	17	161	num	161		ab	single
+C09	18	650	num	650		ado	single
+C10	0	204	num	204		de	single-segment
+C10	1	441	num	441		h	single
+C10	2	188	num	188		az	single
+C10	3	199	num	199		er	conflict:de
+C10	4	335	num	335		pl	conflict:d
+C10	5	600	num	600		at	single
+C10	6	762	num	762		ic	conflict:er
+C10	7	41?	doubtful			an	doubtful
+C10	8	204	num	204		do	conflict:de
+C10	9	183	num	183		con	agrees
+C10	10	244	num	244		el	conflict:co
+C10	11	666	num	666		so	conflict:id
+C10	12	889	num	889		bre	single
+C10	13	400	num	400		la	agrees
+C10	14	282	num	282		fo	single
+C10	15	441	num	441		rma	conflict:h
+C11	0	246	num	246		e	conflict:en
+C11	1	588	num	588		n	conflict:que
+C11	2	335	num	335		q	conflict:d
+C11	3	739	num	739		u	conflict:e
+C11	4	199	num	199		e	conflict:de
+C11	5	579	num	579		h	single
+C11	6	161	num	161		au	conflict:ab
+C11	7	223	num	223		ia	single
+C11	8	246	num	246		de	conflict:en
+C11	9	y	clear				clear
+C11	10	596	num	596		en	single-segment
+C11	11	185	num	185		a	single-segment
+C11	12	298	num	298		a	agrees
+C11	13	66	num	66		qu	conflict:l
+C11	14	188	num	188		el	conflict:az
+C11	15	199	num	199		de	agrees
+C11	16	58?	doubtful			q	doubtful
+C11	17	762	num	762		ue	conflict:er
+C12	0	440	num	440			null-or-unaligned
+C12	1	192	num	192			null-or-unaligned
+C12	2	199	num	199			null-or-unaligned
+C12	3	668	num	668			null-or-unaligned
+C12	4	404	num	404			null-or-unaligned
+C12	5	370	num	370			null-or-unaligned
+C12	6	108	num	108			null-or-unaligned
+C12	7	110	num	110			null-or-unaligned
+C12	8	728	num	728			null-or-unaligned
+C12	9	698	num	698			null-or-unaligned
+C12	10	697	num	697			null-or-unaligned
+C12	11	199	num	199			null-or-unaligned
+C12	12	696	num	696		d	single
+C12	13	691	num	691		e	single
+C12	14	y	clear				clear
+C12	15	451	num	451		d	single
+C12	16	465	num	465		e	single
+C13	0	199	num	199		m	conflict:de
+C13	1	588	num	588		a	conflict:que
+C13	2	411	num	411		n	conflict:le
+C13	3	335	num	335		d	agrees
+C13	4	883	num	883		e	single
+C13	5	661	num	661		q	conflict:a
+C13	6	666	num	666		ue	conflict:id
+C13	7	889	num	889		le	conflict:bre
+C13	8	240	num	240		se	conflict:a
+C13	9	699	num	699		s	conflict:de
+C13	10	405	num	405		ob	single
+C13	11	588	num	588		re	conflict:que
+C13	12	661	num	661		a	single
+C13	13	183	num	183		te	conflict:con
+C13	14	717	num	717		q	conflict:ci
+C13	15	697	num	697		ue	conflict:s
+C13	16	626	num	626		se	single-segment
+C14	0	199	num	199		d	conflict:de
+C14	1	416	num	416		e	single
+C14	2	588	num	588		l	conflict:que
+C14	3	661	num	661		o	conflict:a
+C14	4	416	num	416		q	conflict:e
+C14	5	411	num	411		u	conflict:le
+C14	6	335	num	335		e	conflict:d
+C14	7	739	num	739		s	conflict:e
+C14	8	5?9	doubtful			e	doubtful
+C14	9	557	num	557		l	single
+C14	10	240	num	240		a	single
+C14	11	702	num	702		p	conflict:to
+C14	12	66	num	66		r	conflict:l
+C14	13	335	num	335		o	conflict:d
+C14	14	739	num	739		p	conflict:e
+C14	15	245	num	245		u	single
+C14	16	203	num	203		es	conflict:do
+C14	17	661	num	661		to	conflict:a
+C14	18	188	num	188		se	conflict:az
+C15	0	190	num	190		de	agrees
+C15	1	702	num	702		to	agrees
+C15	2	203	num	203		do	agrees
+C15	3	240	num	240		es	conflict:a
+C15	4	702	num	702		to	agrees
+C15	5	622	num	622		ra	agrees
+C15	6	701	num	701		ti	single
+C15	7	758	num	758		fi	single
+C15	8	150	num	150		ca	single
+C15	9	203	num	203		do	agrees
+C15	10	246	num	246		en	agrees
+C15	11	7	num	7		el	single
+C15	12	415	num	415		lo	conflict:la
+C15	13	183	num	183		con	agrees
+C15	14	440	num	440		ma	conflict:a
+C15	15	297	num	297		yo	conflict:vmd
+C16	0	114	num	114		a	agrees
+C16	1	400	num	400		la	agrees
+C16	2	581	num	581		s	single
+C16	3	942	num	942		e	single
+C16	4	661	num	661		h	conflict:a
+C16	5	335	num	335		a	conflict:d
+C16	6	y	clear				clear
+C16	7	901	num	901		q	single
+C16	8	622	num	622		ue	conflict:ra
+C16	9	203	num	203		no	conflict:do
+C16	10	588	num	588		ll	conflict:que
+C16	11	489	num	489		am	single
+C16	12	411	num	411		an	conflict:le
+C16	13	716	num	716		do	single
+C16	14	204	num	204		to	conflict:de
+C16	15	702	num	702		da	conflict:to
+C17	0	198	num	198		l	single
+C17	1	400	num	400		a	conflict:la
+C17	2	y	clear				clear
+C17	3	uu	clear				clear
+C17	4	702	num	702		a	conflict:to
+C17	5	626	num	626		u	conflict:se
+C17	6	951	num	951		t	single
+C17	7	66	num	66		o	conflict:l
+C17	8	118	num	118		r	single
+C17	9	666	num	666		id	single
+C17	10	417	num	417		ad	single
+C17	11	702	num	702		d	conflict:to
+C17	12	203	num	203		om	conflict:do
+C17	13	440	num	440		in	conflict:a
+C17	14	4876	doubtful			us	doubtful
+C18	0	5571	doubtful			p	doubtful
+C18	1	199	num	199		ue	conflict:de
+C18	2	699	num	699		de	single
+C18	3	508	num	508		s	single
+C18	4	593	num	593		er	single
+C18	5	100	num	100		q	conflict:dias
+C18	6	275	num	275		ue	single
+C18	7	588	num	588		no	conflict:que
+C18	8	488	num	488		se	conflict:al
+C18	9	19?	doubtful			pe	doubtful
+C18	10	569	num	569		nde	single
+C18	11	199	num	199		le	conflict:de
+C18	12	190	num	190		ot	conflict:de
+C18	13	393	num	393		ro	single
+C18	14	588	num	588		que	agrees
+C19	0	199	num	199		de	agrees
+C19	1	553	num	553		no	conflict:a
+C19	2	488	num	488		al	single-segment
+C19	3	+	clear				clear
+C19	4	622	num	622		ex	conflict:ra
+C19	5	106	num	106		eu	single
+C19	6	246	num	246		lo	conflict:en
+C19	7	441	num	441		po	conflict:h
+C19	8	335	num	335		rq	conflict:d
+C19	9	183	num	183		ue	conflict:con
+C19	10	663	num	663		ha	single-segment
+C19	11	199	num	199		q	conflict:de
+C19	12	622	num	622		u	conflict:ra
+C19	13	204	num	204		e	conflict:de
+C19	14	588	num	588		h	conflict:que
+C19	15	681	num	681		a	single
+C20	0	974	num	974		a	single
+C20	1	107	num	107		q	single
+C20	2	573	num	573		u	single
+C20	3	704	num	704		e	single
+C20	4	+	clear				clear
+C20	5	66	num	66		l	single
+C20	6	415	num	415		la	single
+C20	7	486	num	486		po	single
+C20	8	554	num	554		de	single
+C20	9	911	num	911		p	single
+C20	10	560	num	560		od	single
+C20	11	486	num	486		ra	conflict:po
+C20	12	y	clear				clear
+C20	13	186	num	186		n	single
+C20	14	698	num	698		i	single
+C21	0	622	num	622		a	conflict:ra
+C21	1	114	num	114		a	agrees
+C21	2	685	num	685		vm	conflict:ser
+C21	3	763	num	763		d	single
+C21	4	y	clear				clear
+C21	5	553	num	553		f	conflict:a
+C21	6	128	num	128		u	conflict:el
+C21	7	199	num	199		n	conflict:de
+C21	8	661	num	661		d	conflict:a
+C21	9	278	num	278		a	single
+C21	10	217	num	217		n	single
+C21	11	203	num	203		d	conflict:do
+C21	12	212	num	212		o	single
+C21	13	240	num	240		e	conflict:a
+C21	14	697	num	697		s	single
+C21	15	668	num	668		ta	single

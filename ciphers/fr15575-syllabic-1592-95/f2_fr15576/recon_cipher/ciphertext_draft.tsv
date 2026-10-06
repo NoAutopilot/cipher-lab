@@ -1,0 +1,359 @@
+line	position	sign	confidence	alt	why
+C01	1	201	H		agree
+C01	2	775	H		agree
+C01	3	114	H		agree
+C01	4	553	H		agree
+C01	5	246	H		agree
+C01	6	uu	H		agree
+C01	7	200	H		agree
+C01	8	482	H		agree
+C01	9	199	H		agree
+C01	10	663	H		agree
+C01	11	^941	H		agree
+C01	12	k	H		agree
+C01	13	¨128	H		agree
+C01	14	244	H		agree
+C01	15	¨137	H		agree
+C01	16	190	H		agree
+C01	17	261	H		agree
+C01	18	246	H		agree
+C01	19	727	H		agree
+C02	1	661	H		agree
+C02	2	588	H		agree
+C02	3	198	H		agree
+C02	4	733	H		agree
+C02	5	y	H		agree
+C02	6	575	H		agree
+C02	7	163	H		agree
+C02	8	739	H		agree
+C02	9	246	H		agree
+C02	10	204	H		agree
+C02	11	390	H		agree
+C02	12	543	H		agree
+C02	13	y	H		agree
+C02	14	400	H		agree
+C02	15	924	M	A:-	gap
+C02	16	9249	M	B:q	differ
+C02	17	693	M	B:699	differ
+C02	18	6?2	M	B:622	differ
+C02	19	199	H		agree
+C03	1	¨266	H		agree
+C03	2	y	H		agree
+C03	3	702	H		agree
+C03	4	345	H		agree
+C03	5	p	H		agree
+C03	6	668	H		agree
+C03	7	150	M		agree-flagged
+C03	8	201	M	A:-	gap
+C03	9	899	M	A:-	gap
+C03	10	d	M	A:-	gap
+C03	11	542	M	A:-	gap
+C03	12	298	M	B:202	differ
+C03	13	y	H		agree
+C03	14	596	M	B:-	gap
+C03	15	246	M	B:992	differ
+C03	16	246	H		agree
+C03	17	588	H		agree
+C03	18	735	M	B:335	differ
+C03	19	750	M	B:250	differ
+C03	20	729	M	B:739	differ
+C03	21	201	H		agree
+C03	22	109	H		agree
+C03	23	100	H		agree
+C04	1	588	H		agree
+C04	2	411	H		agree
+C04	3	717	H		agree
+C04	4	¨299	M	B:¨199	differ
+C04	5	298	H		agree
+C04	6	964	H		agree
+C04	7	141	H		agree
+C04	8	451	H		agree
+C04	9	739	H		agree
+C04	10	884	H		agree
+C04	11	576	H		agree
+C04	12	263	H		agree
+C04	13	696	H		agree
+C04	14	199	H		agree
+C04	15	411	H		agree
+C04	16	199	H		agree
+C05	1	451	H		agree
+C05	2	¨415	H		agree
+C05	3	411	H		agree
+C05	4	287	H		agree
+C05	5	109	H		agree
+C05	6	103	M	B:183	differ
+C05	7	400	H		agree
+C05	8	+484	M	B:484	differ
+C05	9	588	H		agree
+C05	10	717	H		agree
+C05	11	298	H		agree
+C05	12	209	H		agree
+C05	13	609	M	A:-	gap
+C05	14	708	H		agree
+C05	15	137	H		agree
+C05	16	y	H		agree
+C05	17	451	H		agree
+C05	18	?21	M	B:-	gap
+C06	1	335	H		agree
+C06	2	739.	H		agree
+C06	3	246	H		agree
+C06	4	166	H		agree
+C06	5	466	H		agree
+C06	6	198	H		agree
+C06	7	203	H		agree
+C06	8	576	H		agree
+C06	9	240	H		agree
+C06	10	729	M	B:739	differ
+C06	11	653	H		agree
+C06	12	551	H		agree
+C06	13	739	H		agree
+C06	14	576	M	A:-	gap
+C07	1	661	H		agree
+C07	2	244	H		agree
+C07	3	V	H		agree
+C07	4	922	H		agree
+C07	5	163	H		agree
+C07	6	203	H		agree
+C07	7	y	H		agree
+C07	8	702	H		agree
+C07	9	345	H		agree
+C07	10	240	H		agree
+C07	11	699	H		agree
+C07	12	¨527	H		agree
+C07	13	576	H		agree
+C07	14	685	H		agree
+C07	15	762	M	B:763	differ
+C07	16	y	H		agree
+C07	17	¨553.	M	A:-	gap
+C07	18	¨113	M	B:66	differ
+C08	1	335	H		agree
+C08	2	374	H		agree
+C08	3	448	H		agree
+C08	4	114	H		agree
+C08	5	440	H		agree
+C08	6	332	H		agree
+C08	7	702	H		agree
+C08	8	190	H		agree
+C08	9	588	H		agree
+C08	10	414	H		agree
+C08	11	411	H		agree
+C08	12	337	H		agree
+C08	13	^243	H		agree
+C08	14	183	H		agree
+C08	15	246	H		agree
+C08	16	y	H		agree
+C08	17	936	H		agree
+C08	18	228	H		agree
+C08	19	163	H		agree
+C09	1	440	H		agree
+C09	2	246	H		agree
+C09	3	702	H		agree
+C09	4	588	H		agree
+C09	5	553	H		agree
+C09	6	650	H		agree
+C09	7	121	H		agree
+C09	8	950	H		agree
+C09	9	202	M	B:702	differ
+C09	10	297	H		agree
+C09	11	y	H		agree
+C09	12	¨553	H		agree
+C09	13	586	H		agree
+C09	14	211	M	B:311	differ
+C09	15	240	H		agree
+C09	16	702	H		agree
+C09	17	335	H		agree
+C09	18	161	H		agree
+C09	19	650	H		agree
+C10	1	204	H		agree
+C10	2	441	H		agree
+C10	3	188	H		agree
+C10	4	199	H		agree
+C10	5	335	H		agree
+C10	6	600	H		agree
+C10	7	762	H		agree
+C10	8	414	M	B:416	differ
+C10	9	204	H		agree
+C10	10	¨183	M	B:183	differ
+C10	11	244	H		agree
+C10	12	666	H		agree
+C10	13	889	H		agree
+C10	14	400	H		agree
+C10	15	282	H		agree
+C10	16	441	H		agree
+C11	1	246	H		agree
+C11	2	588	H		agree
+C11	3	335	H		agree
+C11	4	739.	H		agree
+C11	5	199	H		agree
+C11	6	579	H		agree
+C11	7	161	H		agree
+C11	8	223	H		agree
+C11	9	246	H		agree
+C11	10	y	M	B:y.	differ
+C11	11	596	H		agree
+C11	12	185	H		agree
+C11	13	298	H		agree
+C11	14	^66	M	A:-	gap
+C11	15	188	H		agree
+C11	16	199	H		agree
+C11	17	580	H		agree
+C11	18	762	H		agree
+C12	1	440	H		agree
+C12	2	192	M	B:¨192	differ
+C12	3	199	H		agree
+C12	4	668	H		agree
+C12	5	404	H		agree
+C12	6	370	H		agree
+C12	7	^108	H		agree
+C12	8	110	M	B:+110	differ
+C12	9	728	H		agree
+C12	10	698	H		agree
+C12	11	697	H		agree
+C12	12	199	H		agree
+C12	13	691	H		agree
+C12	14	y	H		agree
+C13	1	199	H		agree
+C13	2	588	H		agree
+C13	3	411	H		agree
+C13	4	335	H		agree
+C13	5	883	H		agree
+C13	6	661	H		agree
+C13	7	666	H		agree
+C13	8	889	H		agree
+C13	9	240	H		agree
+C13	10	699	H		agree
+C13	11	405	H		agree
+C13	12	7	M	A:-	gap
+C13	13	588	H		agree
+C13	14	661	H		agree
+C13	15	183	M	A:-	gap
+C13	16	717	M	A:-	gap
+C13	17	697	M	A:-	gap
+C13	18	626.	M	A:-	gap
+C14	1	199	H		agree
+C14	2	416	H		agree
+C14	3	588	H		agree
+C14	4	661	H		agree
+C14	5	416	H		agree
+C14	6	411	H		agree
+C14	7	335	H		agree
+C14	8	739.	H		agree
+C14	9	579	M	B:519	differ
+C14	10	557	H		agree
+C14	11	240	H		agree
+C14	12	702	H		agree
+C14	13	?6	M	B:66	differ
+C14	14	335.	M	B:375.	differ
+C14	15	739	H		agree
+C14	16	245	H		agree
+C14	17	203	H		agree
+C14	18	661	H		agree
+C15	1	190	H		agree
+C15	2	702	H		agree
+C15	3	202	M	B:203	differ
+C15	4	240	H		agree
+C15	5	702	H		agree
+C15	6	622	H		agree
+C15	7	701	H		agree
+C15	8	758	H		agree
+C15	9	159	M	B:150	differ
+C15	10	203	H		agree
+C15	11	246	H		agree
+C15	12	7	H		agree
+C15	13	^415	H		agree
+C15	14	183	H		agree
+C15	15	440	H		agree
+C15	16	297	H		agree
+C16	1	114	H		agree
+C16	2	400	H		agree
+C16	3	581	H		agree
+C16	4	942	H		agree
+C16	5	661	H		agree
+C16	6	335	H		agree
+C16	7	y	H		agree
+C16	8	901	H		agree
+C16	9	622	H		agree
+C16	10	203	H		agree
+C16	11	588	H		agree
+C16	12	489	H		agree
+C16	13	411	H		agree
+C16	14	716	H		agree
+C16	15	204	H		agree
+C16	16	702	H		agree
+C17	1	198	H		agree
+C17	2	400	H		agree
+C17	3	y	H		agree
+C17	4	uu	H		agree
+C17	5	702	H		agree
+C17	6	626	H		agree
+C17	7	951	H		agree
+C17	8	688	M	B:^66	differ
+C17	9	118	H		agree
+C17	10	666	H		agree
+C17	11	417	H		agree
+C17	12	702	H		agree
+C17	13	203	H		agree
+C17	14	440	H		agree
+C17	15	4876	M	B:4876.	differ
+C18	1	5571	H		agree
+C18	2	199	H		agree
+C18	3	699	H		agree
+C18	4	508	H		agree
+C18	5	¨593	M	B:593	differ
+C18	6	100	M	B:²100	differ
+C18	7	275	H		agree
+C18	8	588	H		agree
+C18	9	488	H		agree
+C18	10	199	M	B:194	differ
+C18	11	569	H		agree
+C18	12	199	H		agree
+C18	13	190	H		agree
+C18	14	393	H		agree
+C18	15	588	H		agree
+C19	1	199	H		agree
+C19	2	^553	M	B:²553	differ
+C19	3	488	H		agree
+C19	4	+	H		agree
+C19	5	622	H		agree
+C19	6	106	H		agree
+C19	7	246	M	B:746	differ
+C19	8	441	H		agree
+C19	9	335	H		agree
+C19	10	183	H		agree
+C19	11	663	H		agree
+C19	12	199	H		agree
+C19	13	622	H		agree
+C19	14	204	H		agree
+C19	15	588	M	B:388	differ
+C19	16	681	H		agree
+C20	1	974.	H		agree
+C20	2	107	M	B:+107	differ
+C20	3	¨573	H		agree
+C20	4	704	H		agree
+C20	5	+	H		agree
+C20	6	66	M	A:-	gap
+C20	7	415	H		agree
+C20	8	486	M	B:436	differ
+C20	9	554	H		agree
+C20	10	^911	H		agree
+C20	11	560	M	B:860	differ
+C20	12	486	H		agree
+C20	13	y	H		agree
+C20	14	186	H		agree
+C20	15	698	H		agree
+C21	1	622	H		agree
+C21	2	114	H		agree
+C21	3	685	H		agree
+C21	4	763	H		agree
+C21	5	y	H		agree
+C21	6	553	M	B:¨553	differ
+C21	7	¨128	M	B:128	differ
+C21	8	199	H		agree
+C21	9	661.	H		agree
+C21	10	278	H		agree
+C21	11	217	H		agree
+C21	12	203	H		agree
+C21	13	212	H		agree
+C21	14	240	H		agree
+C21	15	697	M	A:-	gap
+C21	16	668	M	A:-	gap

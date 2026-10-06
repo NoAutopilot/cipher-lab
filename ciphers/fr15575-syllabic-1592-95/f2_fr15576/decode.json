@@ -1,0 +1,3 @@
+{"note": "D4-15576: fr.15576 f.2 body C01-C21 (ciphertext_body.tsv via build_pairs.py) read with the gloss-alignment key key_decode.tsv (every value M: the pre-registered shuffle gate FAILed, PREREG-D4-15576.md). Clear letter tokens (y, p, q, k, V, sh, uu, +) are w: words.",
+ "jobs": [{"ciphertext": "ciphertext_long.tsv", "key": "key_decode.tsv", "reading": "reading.txt", "tokens": "reading_tokens.tsv",
+   "format": "tsv", "style": "spaced", "uncertain_conf": ["M"]}]}
