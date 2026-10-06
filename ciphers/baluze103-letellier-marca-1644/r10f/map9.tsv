@@ -1,0 +1,43 @@
+line	position	sid	how
+f50r_L01	7	f50r_L01_18	aligned
+f50r_L01	13	f50r_L01_31	dropped: cluster 21
+f50r_L03	9	f50r_L03_14	aligned
+f50r_L04	14	f50r_L04_22	reshaped
+f50r_L05	15	f50r_L05_20	reshaped
+f50r_L06	4	f50r_L06_04	aligned
+f50r_L06	13	f50r_L06_18	aligned
+f50r_L07	15	f50r_L07_27	dropped: cluster 19
+f50r_L09	7	f50r_L09_08	reshaped
+f50r_L09	14	f50r_L09_17	reshaped
+f50r_L10	5	f50r_L10_10	dropped: cluster 58
+f50r_L11	3	f50r_L11_03	reshaped
+f50r_L11	9	f50r_L11_11	aligned
+f50r_L11	13	f50r_L11_18	reshaped
+f50r_L12	8	f50r_L12_13	dropped: cluster 9
+f50r_L12	20	f50r_L12_28	aligned
+f50r_L13	7	f50r_L13_09	shifted
+f50r_L14	6	f50r_L14_06	reshaped
+f50r_L14	9	f50r_L14_11	reshaped
+f50r_L15	2	f50r_L15_03	aligned
+f50r_L15	16	f50r_L15_22	aligned
+f50r_L16	15	f50r_L16_27	reshaped
+f50r_L16	18	f50r_L16_29	reshaped
+f50r_L18	6	f50r_L18_07	aligned
+f50r_L18	17	f50r_L18_25	aligned
+f50r_L19	15	f50r_L19_22	reshaped
+f50r_L20	18	f50r_L20_33	aligned
+f50v_L01	12	f50v_L01_19	reshaped
+f50v_L01	20	f50v_L01_40	dropped: cluster 4
+f50v_L02	8	f50v_L02_13	reshaped
+f50v_L02	18	f50v_L02_34	dropped: cluster 4
+f50v_L03	3	f50v_L03_06	reshaped
+f50v_L04	13	f50v_L04_21	dropped: cluster 7
+f50v_L04	14	f50v_L04_25	reshaped
+f50v_L05	4	f50v_L05_15	reshaped
+f50v_L06	10	f50v_L06_24	dropped: cluster 3
+f50v_L06	15	f50v_L06_34	adjacent
+f50v_L07	3	f50v_L07_07	aligned
+f50v_L09	10	f50v_L09_13	dropped: cluster 53
+f50v_L10	3	f50v_L10_04	dropped: cluster 0
+f50v_L10	14	f50v_L10_25	adjacent
+f50v_L11	20	f50v_L11_32	reshaped

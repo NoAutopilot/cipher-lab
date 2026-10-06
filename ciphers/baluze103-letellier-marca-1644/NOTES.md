@@ -824,3 +824,49 @@ Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditio
 - [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; 9 shape split untestable on f.171r (R10-BAL103D); planned: the 42 f.50 9 tiles into the sorter focus box (Remaining gaps)
 - [x] retry: fr17 test of 9 = s on f.50 against position and value nulls (R10-BAL103E, 6 Oct 2026): gate FAIL, D -0.042, no change
 Verdict: keep going: 1 internal gap; cheapest next: add the 42 f.50 9 tiles to the sorter focus box for the owner's shape split, ~$0.5
+
+## The 42 f.50 9s in the sorter focus box (R10-BAL103F, 6 Oct 2026)
+
+Worker R10-BAL103F (account 1, LANE LANE-RUN10-account-1), 10:43-10:49 UTC 6 Oct 2026 by `date -u`. Key source unchanged: published
+(Tomokiyo 1644 table + R7C's c = p). Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **Sorter rebuilt with the 9s in focus; preflight PASS.** `r10f/focus9.py` (`--check` exits 0) maps the 42 i|r|s 9 tokens of
+  r9/f50_choices.tsv to sorter tiles and writes `sorter/focus_9.tsv` and `r10f/map9.tsv` (per-token mapping and how);
+  `sorter/build.sh` now runs it and feeds `sorter/focus_all.tsv` (r8b's 28 + the 9 tiles) to `tools/sign_sorter.py --focus`. The
+  question asks for shape only (long looped g-like tail -> new pile 9g; short -> stay in 9; set aside if not a 9), with no decoded
+  context or lean. Tiles, piles and labels are unchanged (deterministic re-cut; signs/labels/clusters byte-identical).
+- **Mapping, and what an eye check changed.** Column alignment alone (clusters.tsv col = 1-based ciphertext position, checked 476/628
+  vs 28 for 0-based) mapped 41/42, but a contact sheet of those 42 tiles showed only about 18 were 9s (the 30-px alignment drifts a
+  tile or two). Added a shape step: clusters.tsv shape clusters 10 and 15 hold 14 of the 17 eyed true 9s; a mapped tile outside them
+  is replaced by the nearest tile within 3 on its line in those clusters and not taken ('reshaped', 17), else dropped (10). Result:
+  12 aligned, 2 adjacent, 1 shifted, 17 reshaped, 10 dropped -> **32 tiles**, of which 3 were already r8b focus tiles (kept under
+  their r8b question), so the box holds 57 (28 + 29). Eyed again: 30 of 32 are clean 9s, 2 are not (left for the owner's set-aside).
+  Caveat: a reshaped tile is a 9 near the token's column, not proven to be that token; the owner's shape split is a pool question,
+  and any later value rule must re-map shape piles to positions before touching exceptions.tsv. The 10 dropped tokens (map9.tsv)
+  stay unasked; the owner can still split them inside pile 9.
+- Preflight (`sorter/preflight.txt`):
+
+      PASS template: ok, Fix the cut present, marker 2026-10-06.1
+      PASS answerable: 57 focus tiles, 62 named piles of 62, 0 unanswerable
+      PASS right line: 1111 tiles; 0 tile(s) off the cipher lines, 32 of 32 listed lines have tiles; shape: 0 wide (>2.5x median 67 px), 1 strip-height boxes, 44 ink outside 3-60% of 1111 measured; 44 = 4.0% (limit 5%)
+      PASS contact sheet: 24 tiles beside their line strips -> .../sorter/out/baluze103_f50_sorter.preflight.png (seed 20261006; eye it before publishing)
+      preflight: PASS
+
+  Not published by this worker (brief); ROOM flag to the account-3 orchestrator to republish over Wn9GbXBcNCxcbMZbU2uqCZ.
+  key.tsv, exceptions.tsv and the reading untouched. Needed `pip install scipy scikit-learn` in a fresh container for build.sh.
+Where not found: no plaintext of f.50 used or consulted; no sibling read. Requests: none (all from disk; no subagent calls).
+
+## Remaining gaps (R10-BAL103F, 6 Oct 2026)
+Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditional), judge fr17 FAIL -1.445 vs real_p05 -0.852 after the 9 rule; the page decode sits near the r ~ 0.25-0.30 synthetic noise band (r8/result.tsv)
+- f.50 confusable sign pairs (m/mm/mt, tt/venus, venus/q, x/xc/xs/xbar, mm/tt, 9/venus; R/u, b/bt) - blocker: waiting-on the owner's answer on the f.50 sign sorter sorter/out/baluze103_f50_sorter.html, to be republished by the account-3 orchestrator (ROOM flag R10-BAL103F, 6 Oct 2026); two machine third readers settled one-directionally (R8-BAL103, R8-BAL103B), so per CLAUDE.md Usage 6 the pass is a person's
+- ambiguous 9 (i|r|s; 42 tokens on the R9 fr17 lean, grade M) - blocker: waiting-on the owner's answer on the f.50 sign sorter sorter/out/baluze103_f50_sorter.html, its 32 focus 9 tiles split by shape (ROOM flag R10-BAL103F, 6 Oct 2026); fr17 9 = s gate FAILs (R10-BAL103E), shape split untestable on f.171r (R10-BAL103D, k_i = 0)
+
+## Escalation (R10-BAL103F, 6 Oct 2026)
+- [x] siblings: f.171r L1-4 scored against f.172r (R7C-BAL103K: A 0.767 vs permutation p99 0.311, PASS); L5-L18 blind-passed and aligned for the 9 control (R10-BAL103D, 6 Oct 2026: 0.692 matched, strict 9s N = 6 all s)
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's table reads f.50 above a permutation null in both blind passes (R8-BAL103, 6 Oct 2026: -1.566/-1.602 vs p99 -1.99/-1.96); judge fr17 FAIL -1.445 after the 9 rule (R9-BAL103)
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: R8-BAL103's registered test puts the failure in the transcription, not the table; no April-table search or rebuild is licensed
+- [x] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter rebuilt with the 9 tiles in focus and preflight-PASSed (R10-BAL103F, 6 Oct 2026), waiting on republication and the owner's pass
+- [x] retry: fr17 test of 9 = s on f.50 against position and value nulls (R10-BAL103E, 6 Oct 2026): gate FAIL, D -0.042, no change
+Verdict: parked: both gaps wait on the owner's pass over the republished f.50 sorter (account-3 orchestrator republishes; ROOM flag R10-BAL103F)
