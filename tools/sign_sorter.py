@@ -399,6 +399,9 @@ def render(data, title, lede):
     t = open(TEMPLATE).read()
     esc = lambda s: s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
     data = {k: v for k, v in data.items() if not k.startswith('_')}
+    if data.get('focus'):   # a focus.tsv header row ("sid<TAB>question") or a stale sid is not a tile: drop it (preflight 'not a tile')
+        sids = {it['sid'] for p in data.get('piles', []) for it in p.get('items', [])}
+        data['focus'] = [f for f in data['focus'] if f.get('sid') in sids]
     # '</' inside the JSON would close the <script> element early (a pile named "</script>", a note); escape it
     return t.replace('__TITLE__', esc(title)).replace('__LEDE__', esc(lede)).replace('__DATA__', json.dumps(data).replace('</', '<\\/'))
 

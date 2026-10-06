@@ -189,6 +189,9 @@ body.traypad #offer{bottom:100px}
 #fixSave{font-weight:600;background:var(--accent);color:#fff;border-color:var(--accent)}
 #viewSeg[hidden],#ctxNbL[hidden]{display:none}
 #viewSeg button{font-size:.82rem;padding:4px 10px}
+.t .trash{position:absolute;left:1px;top:1px;width:22px;height:22px;border-radius:4px;font:700 13px/22px var(--f-body);text-align:center;background:var(--bad);color:#fff;opacity:0;cursor:pointer;transition:opacity .1s}
+.t:hover .trash,.t:focus-visible .trash{opacity:.9}
+@media (hover:none){.t .trash{display:none}}
 .t .rcb{position:absolute;left:1px;bottom:1px;font:600 9px/13px var(--f-body);background:var(--accent);color:#fff;border-radius:3px;padding:0 3px;pointer-events:none}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -207,7 +210,7 @@ body.traypad #offer{bottom:100px}
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <section id="s1">
-    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign to see it larger. Tap the orange <b>?</b> on a questioned sign to approve it. <b>Drag</b> a sign up from the tray onto the pile it belongs in.</p>
+    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign to see it larger. Tap the orange <b>?</b> on a questioned sign to approve it. <b>Drag</b> a sign onto another pile with the mouse (or up from the tray). The red <b>✕</b> on a sign (mouse: hover) trashes it: a page edge, shadow or stain, not a sign.</p>
     <div class="tapmode"><span class="hint">A tap on a sign:</span><span class="seg" role="group" aria-label="What a tap does"><button type="button" id="modeOut" class="on">Takes it out</button><button type="button" id="modeLook">Shows it large</button></span></div>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
     <details class="opts"><summary>Display options</summary><div class="row">
@@ -276,7 +279,7 @@ body.traypad #offer{bottom:100px}
       <label class="hint" for="ctxNb" id="ctxNbL"><input id="ctxNb" type="checkbox" checked> Lines above and below</label></div>
     <div class="row"><button type="button" id="ctxOut">Doesn’t belong: take out</button><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
       <button type="button" id="ctxNewB">None of these: new sign</button>
-      <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxClose">Close</button></div>
+      <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxTrash" title="Not a sign: page edge, shadow, stain (key: Delete)">Trash (not a sign)</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxClose">Close</button></div>
     <p class="hint" id="ctxMsg" aria-live="polite"></p>
     <p class="save err" id="ctxErr" role="alert" hidden></p>
   </div></div>
@@ -451,10 +454,16 @@ function tileEl(sid, pid, cls){
       g.title = fq ? 'Looks right: approve it in ' + pid : 'Approved. Tap to undo the approval';
       g.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); approveTile(sid, pid, !fq); }); } }
   attachPress(b, () => tapMode === 'look' ? showCtx(sid, pid) : takeOut(sid, b), () => showCtx(sid, pid));
+  if (pid !== 'NOT-LETTER'){ const tr = document.createElement('span'); tr.className = 'trash'; tr.textContent = '\u2715'; tr.setAttribute('role', 'button');
+    tr.title = 'Trash: not a sign (page edge, shadow, stain)'; tr.setAttribute('aria-label', 'Trash ' + sid + ': not a sign');
+    tr.addEventListener('pointerdown', e => e.stopPropagation()); tr.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); trashTile(sid, pid); }); b.append(tr); }
   pileDrag(b, sid, pid);
   return b;
 }
 // drag a sign straight from one pile onto another with a mouse or pen (touch keeps tap-out + tray, so a swipe still scrolls)
+// owner 6 Oct 2026: page edges and shadows get cut as signs; one click sends a tile to the not-a-letter pile ("trash")
+function trashTile(sid, pid){ remember([sid]); ensureSpecial('NOT-LETTER'); setDest(sid, 'NOT-LETTER'); hideOffer();
+  note_('Trashed ' + sid + ' (not a sign). Undo puts it back.'); renderSome([pid, 'NOT-LETTER']); }
 function pileDrag(b, sid, pid){
   // move/up are listened for on the window while a drag runs, so a lost pointer capture (seen in the hosted page,
   // owner 6 Oct 2026: the ghost stuck on screen) can never strand the ghost; Esc or leaving the window cancels.
@@ -1256,7 +1265,7 @@ function ctxAdvance(sid){
 function ctxMove(to){
   const sid = ctxSid;
   remember([sid]); setDest(sid, to);
-  $('ctxMsg').textContent = (to === 'OUT' ? 'Took ' + sid + ' out' : 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cuts' : to)) + '. Showing the next tile.';
+  $('ctxMsg').textContent = (to === 'OUT' ? 'Took ' + sid + ' out' : 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cuts' : to === 'NOT-LETTER' ? 'trash (not a sign)' : to)) + '. Showing the next tile.';
   render();
   ctxAdvance(sid);
   offerCluster([sid], to);
@@ -1280,7 +1289,8 @@ $('ctxUndo').onclick = () => { if (fix) fixStop(); const last = undo(); if (!las
 $('ctxNext').onclick = () => ctxStep(1);
 $('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
 $('ctxAside').onclick = () => ctxMove('ASIDE');
-$('ctxBad').onclick = () => { ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };   // tile box cut in the wrong place: parked for recutting
+$('ctxBad').onclick = () => { ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };
+$('ctxTrash').onclick = () => { ensureSpecial('NOT-LETTER'); ctxMove('NOT-LETTER'); };   // tile box cut in the wrong place: parked for recutting
 $('ctxNewB').onclick = () => ctxMove(makePile(pileOf(ctxSid)));
 document.addEventListener('keydown', e => { if ($('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === 'Enter' && fix && e.target.tagName !== 'BUTTON'){ e.preventDefault(); $('fixSave').click(); return; }   // owner, 6 Oct 2026: Enter saves the cut
@@ -1289,7 +1299,8 @@ const closeCtx = () => { if (fix) fixStop(); $('ctx').hidden = true; const o = $
 $('ctxClose').onclick = closeCtx;
 $('ctxX').onclick = closeCtx;
 $('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
-document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (!$('offer').hidden) hideOffer(); else closeCtx(); } });
+document.addEventListener('keydown', e => { if ((e.key === 'Delete' || e.key === 'Backspace') && !$('ctx').hidden && !fix && !/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)){ e.preventDefault(); $('ctxTrash').click(); return; }
+  if (e.key === 'Escape'){ if (!$('offer').hidden) hideOffer(); else closeCtx(); } });
 $('ctxZ').oninput = drawCtx; $('ctxNb').onchange = drawCtx;
 [0, 1, 2].forEach(n => $('ink' + n).onclick = () => {
   document.body.classList.remove('ink1', 'ink2'); if (n) document.body.classList.add('ink' + n);
