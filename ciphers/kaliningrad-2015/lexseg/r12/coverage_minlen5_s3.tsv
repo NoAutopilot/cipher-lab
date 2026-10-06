@@ -1,0 +1,24 @@
+shuf1.txt	10	1066	0.0094	{"kind": "shuf", "seed": 1, "score": -4159.9}
+shuf10.txt	0	1066	0.0000	{"kind": "shuf", "seed": 10, "score": -4154.6}
+shuf11.txt	15	1066	0.0141	{"kind": "shuf", "seed": 11, "score": -4141.4}
+shuf12.txt	10	1066	0.0094	{"kind": "shuf", "seed": 12, "score": -4198.0}
+shuf13.txt	5	1066	0.0047	{"kind": "shuf", "seed": 13, "score": -4139.2}
+shuf14.txt	16	1066	0.0150	{"kind": "shuf", "seed": 14, "score": -4103.1}
+shuf15.txt	15	1066	0.0141	{"kind": "shuf", "seed": 15, "score": -4159.1}
+shuf2.txt	5	1066	0.0047	{"kind": "shuf", "seed": 2, "score": -4181.5}
+shuf3.txt	5	1066	0.0047	{"kind": "shuf", "seed": 3, "score": -4118.3}
+shuf4.txt	15	1066	0.0141	{"kind": "shuf", "seed": 4, "score": -4126.1}
+shuf5.txt	10	1066	0.0094	{"kind": "shuf", "seed": 5, "score": -4207.4}
+shuf6.txt	0	1066	0.0000	{"kind": "shuf", "seed": 6, "score": -4182.8}
+shuf7.txt	0	1066	0.0000	{"kind": "shuf", "seed": 7, "score": -4133.5}
+shuf8.txt	10	1066	0.0094	{"kind": "shuf", "seed": 8, "score": -4189.9}
+shuf9.txt	5	1066	0.0047	{"kind": "shuf", "seed": 9, "score": -4123.4}
+synth1.txt	446	1066	0.4184	{"kind": "synth", "seed": 1, "recovery": 0.921, "score": -2354.2}
+synth2.txt	622	1066	0.5835	{"kind": "synth", "seed": 2, "recovery": 0.996, "score": -2246.4}
+synth3.txt	758	1066	0.7111	{"kind": "synth", "seed": 3, "recovery": 0.996, "score": -2100.7}
+synth4.txt	642	1066	0.6023	{"kind": "synth", "seed": 4, "recovery": 0.998, "score": -2094.7}
+synthshuf1.txt	0	1066	0.0000	{"kind": "synthshuf", "seed": 1, "recovery": 0.061, "score": -4175.1}
+synthshuf2.txt	10	1066	0.0094	{"kind": "synthshuf", "seed": 2, "recovery": 0.066, "score": -4120.0}
+synthshuf3.txt	0	1066	0.0000	{"kind": "synthshuf", "seed": 3, "recovery": 0.074, "score": -4167.3}
+synthshuf4.txt	15	1066	0.0141	{"kind": "synthshuf", "seed": 4, "recovery": 0.061, "score": -4158.1}
+target0.txt	10	1066	0.0094	{"kind": "target", "seed": 0, "score": -3982.7}

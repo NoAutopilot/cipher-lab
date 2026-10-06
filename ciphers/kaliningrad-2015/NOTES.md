@@ -549,3 +549,35 @@ true decodes from shuffles by 2-10x at this N; the homophonic family on this tar
 test the other Russian schemes (S1, S1s, S3, S3-soft) and German at no tool cost (~$1.5 each; lexicon from a held-out
 book group of the matching corpus), which would turn the earlier "judge cannot decide" Russian rows into decisive ones.
 Verdict: keep going (no outside blocker).
+
+## R12-KAL8, lexicon word-segmentation on S1, S3, S1s, S3-soft and German, 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run12-jobs.md` "R12-KAL8" (LANE-RUN12, account 2), the step R10-KAL7 named.
+Disk and CPU only, no hosts, no subagents. One pre-registration for all five units (HYPOTHESES.md "R12-KAL8", commit
+09fba2be) before any scored run. R10-KAL7's driver `scripts/lexseg.py` (env LEXSEG_CIPHER / LEXSEG_PARAMS added, default path
+unchanged), train corpora and held-out lexicons from `scripts/lexseg_build.py` (Russian: NT word types, decoder trained
+without the NT; German: de20 with two Fontane novels held out as the lexicon). Null sized to the box: 15 shuffled-target
+decodes per unit, gate G = their maximum; positive control first (4 synthetic windows, their own 4-shuffle null G_s).
+
+| unit | control (synthetic mean vs G / G_s) | target coverage vs G | result |
+|---|---|---|---|
+| S1, conv. B | 0.582 vs 0.070 / 0.059, PASS | 0.041 vs 0.070, rank 8 of 16 | control-backed negative |
+| S3, conv. B | 0.671 vs 0.038 / 0.033, PASS | 0.039 vs 0.038, rank 16 of 16 | above G by 2 letters of 1,066 -- see below |
+| S1s, conv. A | 0.515 vs 0.076 / 0.073, PASS | 0.041 vs 0.076, rank 3 | control-backed negative |
+| S3-soft, conv. A | 0.505 vs 0.038 / 0.034, PASS | 0.034 vs 0.038, rank 15 | control-backed negative |
+| German de20, conv. A | 0.640 vs 0.158 / 0.129, PASS | 0.114 vs 0.158, rank 7 | control-backed negative |
+
+S3 tops its 15 shuffles by the registered rule, but by 42 covered letters against 40, the secondary length->=5 figure sits
+at the null median, five units gated at "top of 16" give about a 28% chance of one such exceedance by luck, and the
+coverage is a tenth of the weakest synthetic decode. By the registered wording it is "worth a verifier, not a reading"; no
+text is described. All negatives are conditional on Ernst's transcript, the convention and the lexicon's register
+(rule 2). Full table, recoveries and the secondary figure in HYPOTHESES.md "R12-KAL8 result"; files in `lexseg/r12/`.
+Status stays `open`. Rule 10: nothing here is a reading.
+
+**Next steps.** (1) S3 convention B confirmation before any verifier: the same unit with shuffle seeds 16-50 added (G = p95
+of 50, R10-KAL7's null size), pre-registered, about 9 minutes of CPU, ~$1; a target that falls back inside the null closes
+S3 as a control-backed negative, one that stays at the top goes to a verifier with the rule-7 re-derivation. (2) If S3
+closes negative, the light homophonic family on this target is spent for every scheme tried with a lexicon instrument
+(S3', S1, S1s, S3-soft, German) and the next test needs a different design family (nomenclator/code groups or
+transposition), not another substitution scheme. Verdict: keep going (no outside blocker).
+

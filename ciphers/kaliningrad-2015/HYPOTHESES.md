@@ -857,3 +857,34 @@ on each remaining scheme. Disk and CPU only.
   the lexicon's register).
 - Unscored build check before this registration: one synthetic window (S3, seed 99, not one of the control seeds)
   decoded once to time the driver (59 s at N 1066). Disclosed, not scored, not used to set any gate.
+
+### R12-KAL8 result (6 Oct 2026, 11:41-12:06 UTC; pre-registration commit 09fba2be before any scored run)
+
+Per-file coverages and the five target decodes (not readings): `ciphers/kaliningrad-2015/lexseg/r12/`. 24 decodes per unit,
+4 in parallel; all five units ran inside the box. G = max of 15 shuffled-target decodes; G_s = max of 4 shuffled-synthetic.
+
+| unit | conv., N / K | synthetic control, len >= 4 (recovery) | G_s | null (15) range, **G** | **target**, rank of 16 | control | registered reading | len >= 5 (secondary): target / G |
+|---|---|---|---|---|---|---|---|---|
+| S1 | B, 1066 / 28 | 0.565 / 0.622 / 0.576 / 0.565, mean 0.582 (0.996-0.999) | 0.0591 | 0.0197-**0.0704** | **0.0413**, 8 | PASS | control-backed negative | 0.0000 / 0.0188 |
+| S3 | B, 1066 / 28 | 0.524 / 0.672 / 0.800 / 0.689, mean 0.671 (0.921-0.998) | 0.0328 | 0.0122-**0.0375** | **0.0394**, 16 | PASS | **> G** (see below) | 0.0094 / 0.0150 (rank 8) |
+| S1s | A, 978 / 36 | 0.625 / 0.628 / 0.123 / 0.684, mean 0.515 (0.992 / 0.992 / 0.327 / 0.993) | 0.0726 | 0.0204-**0.0757** | **0.0409**, 3 | PASS | control-backed negative | 0.0000 / 0.0266 |
+| S3-soft | A, 978 / 36 | 0.076 / 0.666 / 0.744 / 0.535, mean 0.505 (0.174 / 1.0 / 0.999 / 0.991) | 0.0337 | 0.0082-**0.0378** | **0.0337**, 15 | PASS | control-backed negative | 0.0051 / 0.0102 |
+| German (de20) | A, 978 / 36 | 0.723 / 0.561 / 0.629 / 0.645, mean 0.640 (0.919-0.993) | 0.1288 | 0.0695-**0.1575** | **0.1135**, 7 | PASS | control-backed negative | 0.0521 / 0.0675 |
+
+- **Controls**: all five pass; every synthetic window, including the two with poor anneal recovery (S1s seed 3 at 0.327,
+  S3-soft seed 1 at 0.174), reads above both G and G_s. True decodes sit 4-20x above the shuffle nulls, so the rule-3
+  orthogonality check holds in every unit (the shuffle can and does differ from a true decode on this statistic).
+- **S1, S1s, S3-soft, German: control-backed negatives** for each scheme's light homophonic design on this statistic,
+  conditional on Ernst's transcript, the stated convention and the lexicon's register (Bible NT for Russian, Fontane
+  novels for German). Each target lies inside its own shuffle null (ranks 3-15 of 16).
+- **S3 (convention B): above G by the registered rule, by the smallest possible margin.** 0.0394 = 42 covered letters of
+  1,066 against the null maximum 0.0375 (40); the secondary length->=5 figure is at the null median (rank 8); with five
+  units each gated at the top of 16, the chance that at least one target tops its null by luck alone is about 1 - (15/16)^5
+  = 0.28; and 0.039 is a tenth of the weakest synthetic control (0.524). Registered wording: "decode separates from its own
+  shuffle on a held-out lexicon" -- worth a verifier, not a reading, no text described. The cheap confirmatory step before
+  any verifier: the same S3 unit with R10-KAL7's null size (shuffle seeds 16-50 added, G = p95 of 50), pre-registered.
+- Non-gating observation: the in-model n-gram score of the S1, S3 and S3-soft target decodes is above every one of their
+  15 shuffles (e.g. S3 -3982.7 vs shuffles -4207.4 to -4103.1); S1s and German sit inside. A ciphertext with any sequential
+  structure keeps more n-gram fit than its shuffle, so this is not evidence of a language; R10-KAL7's S3' unit sat in the
+  middle (rank 26 of 51).
+- Rule 10: nothing here is a reading.
