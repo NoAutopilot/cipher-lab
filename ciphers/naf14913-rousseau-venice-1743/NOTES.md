@@ -1621,3 +1621,27 @@ shuffle control, before any key.tsv entry. Pre-registration `align/PREREG-R8-ROU
   carries the match.
 Checks (R8-ROUS3, 6 Oct 2026): decode_key --check exit 0 (key and reading untouched); gaps_check exit 0 (OK keep-going, 6 internal gaps, 0 untried).
 Requests: none (disk only).
+
+## R9-ROUSV-naf14913-rousseau-venice-1743 (6 Oct 2026, account 2 verifier for LANE-RUN9-account-2)
+
+Brief: verify R8-ROUS3's unregistered note that 501 (C "et") has the count vector (1,1,0,2) of "un", not "et" (0,1,0,2). Disk only,
+no new cryptanalysis: each slip-backed 501 read against its slip transcription and its cipher neighbours (verifier, not the solver).
+Slip-backed occurrences of 501: 7 (f.206r 2, f.213 1, f.216v 1, f.249 0, f.266r 2; ff.165/197v have no plain side, not counted).
+| Pair | 501 in context | Slip at that point | Verdict |
+|---|---|---|---|
+| f.205v-207r / f.206r | 628 **501** 715 | "Hongrie et particulierement" (628 = hongrie, C) | et, as before |
+| f.205v-207r / f.206r | 208 **501** 172 | "cette princesse et qu'ils" (172 = quils, C) | et, as before |
+| f.216v / f.217r L06 | 536 **501** 63 242 | "quelque parti et que pour" | et (63 = que by context only, I) |
+| f.266r / f.265r L08 | 582 **501** 755 663 | "le Bressan et le Bergamasc" | et (755 = le by context only, I) |
+| f.266r / f.265r L13 | 121 **501** 22 753 22 | "audits confins et de faire de" (121 = s, 22 = de, C; 22 753 = "de faire" also in L11 "dans la disposition de faire") | et |
+| f.213 / f.214r L01v | 46 / **501** 781 664 746 317 755 552 22 95 | "ont ete cedes par le Traite de Worms" (781 = e, C; 746 = des, M; 317 = par fits both "317 52" = "Par la" / "par la meme") | "et" as the syllable of été: 501 781 664 746 = et-e-ce-des |
+- Every one of the 7 is consistent with 501 = et; 6 are the word "et", 1 (f.213) the letters et inside "été". No occurrence is
+  better read "un": f.214r's single "un" ("y trouveroit un autre avantage") stands about ten words before "ete cedes"; on f.217r and
+  f.265r the slips' "un" and "et" counts are equal (1/1, 2/2), so those pairs cannot tell the two apart.
+- Why the count vector says "un": R8-ROUS3's statistic counts whole slip words, and the only pair where "et" and "un" counts differ is
+  f.213/f.214r, where 501 enciphers a syllable, not a word. The match is an artefact of whole-word counting (the same cause R8-ROUS3
+  gave post hoc for its known-answer 0/3), not a second witness for "un". No data conflict under rule 4 (no two witnesses disagree).
+- Grade: 501 = et stays C (f.206r slip as known plaintext; consistent at all 7 slip-backed occurrences). key.tsv, reading.txt untouched;
+  no AUDIT.md exists for this folder and SECOND-OPINIONS-QUEUE.tsv has no row for it (0 rows, grep 6 Oct 2026), so nothing to propagate.
+  The context values 63 = que, 755 = le, 317 = par are noted at I only, not entered in key.tsv (not this job's brief).
+Checks (R9-ROUSV, 6 Oct 2026): decode_key --check exit 0; gaps_check exit 0 (keep-going); file_shrink_guard ok. Requests: none (disk only).
