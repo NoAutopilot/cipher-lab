@@ -9156,3 +9156,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 04:05 | R8-NLA2 | claim: nla-heinrich-braunschweig-1519, fetch 8 Arcinsys images + manifest, cap 2, box end 04:36 UTC, for LANE LANE-RUN8-account-2
 2026-10-06 04:05 | R8-RABY | done (04:05 UTC, stopped: text blocked) Preuss 1897 located full view Google Books UfnriIriq9UC; PDF 429, no IA copy; pp.20-30,61 unread; for LANE LANE-RUN8-account-4
 2026-10-06 04:04 | R8-SEURE worker | claim: fr3151-seure-1558 null-tolerant nom_test with its own 10%-null control, cap 3.5, box 04:04-04:49 UTC (80% 04:40), for LANE LANE-RUN8-account-1
+2026-10-06 04:04 | worker R8-COST | claim: costabili-modena-1491, group crops of R1166 P4 with W as own label; cap 4, box 04:04-04:54 UTC (80% 04:44); for LANE LANE-RUN8-account-1
