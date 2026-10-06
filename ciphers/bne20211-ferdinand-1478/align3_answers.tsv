@@ -1,0 +1,80 @@
+# FER126-ALIGN3 reader answers (Opus, 8 calls, native-resolution segments; PREREG-ALIGN3.md): item, line, kind (real/decoy), syllables, answers. Gate FAIL: real yes 0.308, decoy yes 0.105, diff 0.203 (< 0.30), lines real>decoy 25/39 (< 26).
+item	line	kind	syllables	answers
+I01	R10	decoy	fi de be	? ? ?
+I02	V01	real	me me be la ca be sa ci da de se yo sa do	y ? ? y y ? ? ? ? ? ? ? y ?
+I03	R07	real	de lo se yo de lu mu	? y ? y y y y
+I04	R19	decoy	le ba bo do bo fe do mi	n n n n ? n ? ?
+I05	R02	real	de la do se	? y ? ?
+I06	R17	decoy	fi de be	? ? y
+I07	R20	decoy	be pa de ce mi la no no se ma de be	? ? y ? ? ? ? ? ? ? ? ?
+I08	R17	real	be la ne	? y ?
+I09	R25	real	de la se no na	y y y y ?
+I10	R10	real	be ca be	? ? ?
+I11	R15	real	be pa de ce mi la no no se ma de be	? ? ? ? ? y y ? y y ? ?
+I12	R05	decoy	de lo se yo de lu mu	n n ? n ? n n
+I13	R20	real	ba do bo do yo lo de ne pa de ci ba	? ? ? ? ? ? y y y y n ?
+I14	R18	decoy	sa de la po ci sa do na be	n y ? n n ? ? ? ?
+I15	R14	real	la se de ma mi mu ma da ba fa me ce be	y y ? ? ? y ? ? ? ? ? ? ?
+I16	R27	decoy	ca pa ci de de da ca	? ? ? ? ? n ?
+I17	R21	real	mo me mu sa me be no zi	? y ? ? ? ? ? ?
+I18	R25	decoy	mi do de do ne	? ? y ? ?
+I19	R23	real	la no be de fa ze fa lo be lo me no no se de da	? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?
+I20	R18	real	de no na be le me le be ma	y ? ? ? ? ? ? ? ?
+I21	R22	decoy	fi de be	? n n
+I22	R23	decoy	me me be la ca be sa ci da de se yo sa do	? ? ? ? ? ? ? ? ? ? ? ? ? ?
+I23	V09	real	de ce ca me ba ca be be ba do no le ma de	y n n y ? ? ? ? ? ? ? y y y
+I24	V05	real	ca da be da do	y y n ? n
+I25	R11	decoy	mi do de do ne	? ? ? ? ?
+I26	R11	real	la bo be ci bo	? ? ? ? ?
+I27	R28	real	do me ci de me ti da mi	? ? n ? ? ? ? ?
+I28	R08	decoy	de no na be le me le be ma	y ? ? n y ? ? ? n
+I29	V03	real	de ci de pa be se me be fi ci da be	y y n ? n y ? y ? y y n
+I30	R22	real	ne de mi	n n y
+I31	V02	real	sa de la po ci sa do na be	y y y y ? y ? ? ?
+I32	R12	real	le ba bo do bo fe do mi	? n n ? n n ? n
+I33	V03	decoy	be pa de ce mi la no no se ma de be	n n y n n ? ? ? y ? ? y
+I34	V11	decoy	de no na be le me le be ma	y ? y ? ? ? ? ? n
+I35	R26	decoy	de la do se	? ? ? ?
+I36	R13	real	ba bo ca le ca bi la	n n ? y y ? y
+I37	R04	decoy	de lo se yo de lu mu	n n ? n ? n n
+I38	R09	decoy	mi do de do ne	n n y n ?
+I39	R06	decoy	de ci ba me be	? y n ? ?
+I40	V07	real	la ca be ca ba ba	? n ? n ? ?
+I41	V01	decoy	de ce ca me ba ca be be ba do no le ma de	? ? ? y ? y ? ? ? ? ? ? ? ?
+I42	R04	real	ca pa ci de de da ca	y n ? ? ? y y
+I43	V09	decoy	me me be la ca be sa ci da de se yo sa do	y y ? ? ? ? ? ? ? ? ? ? ? ?
+I44	R02	decoy	ca be la be	? ? y y
+I45	V02	decoy	de no na be le me le be ma	y ? ? ? y ? ? ? ?
+I46	R21	decoy	le ba bo do bo fe do mi	n n ? ? ? ? ? ?
+I47	R24	real	no yo be do	n ? ? ?
+I48	R27	real	mu po se ya la da me	n y y ? y ? ?
+I49	R26	real	mu lo ca mi	n ? y ?
+I50	R28	decoy	le ba bo do bo fe do mi	n ? ? ? ? ? ? ?
+I51	R05	real	de fe gu be da gu sa	? y n n n n y
+I52	R16	decoy	de la do se	? y ? ?
+I53	V11	real	le ca se be ci de la mi de	n ? y ? ? y ? ? ?
+I54	V04	real	be ca mu da do pa do fa ze	n y y n y y ? y ?
+I55	R01	real	ci me be ca de de	? n ? ? y ?
+I56	V06	real	se ci ba fa la la mi	y ? ? ? ? ? n
+I57	R12	decoy	da do ba la do se de la	? ? y ? ? ? y ?
+I58	R14	decoy	ba do bo do yo lo de ne pa de ci ba	y ? ? ? ? ? ? ? ? ? ? ?
+I59	V10	real	be fa mi ti ca do da do ca	n ? y y y y y ? ?
+I60	V08	real	me pa ce lo mu ma do le ma de lu be	y y y ? ? y y y n y ? ?
+I61	R09	real	de ci ba me be	y n n y ?
+I62	R24	decoy	de la do se	n ? n ?
+I63	R03	decoy	be ca be	n ? n
+I64	R08	real	de la ce ci de la ca do fe do	y y y ? ? y n n n n
+I65	R16	real	ca be la be	n n y n
+I66	R01	decoy	la ca be ca ba ba	y y n ? n n
+I67	R07	decoy	ca pa ci de de da ca	n n n ? n n n
+I68	R03	real	fi de be	n y n
+I69	V07	decoy	ci me be ca de de	? n n n ? ?
+I70	V06	decoy	ca pa ci de de da ca	? n n n n n ?
+I71	R15	decoy	ba do bo do yo lo de ne pa de ci ba	? n n n n n ? n n ? n n
+I72	V08	decoy	be pa de ce mi la no no se ma de be	? y n y ? y n n ? ? y n
+I73	R13	decoy	ca pa ci de de da ca	? ? n n n n ?
+I74	V05	decoy	mi do de do ne	n ? n ? n
+I75	V10	decoy	de no na be le me le be ma	n n n n ? n n n n
+I76	R19	real	da do ba la do se de la	? y n y n y y ?
+I77	R06	real	mi do de do ne	n n n n ?
+I78	V04	decoy	de no na be le me le be ma	n n n n n n n n ?
