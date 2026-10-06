@@ -1,0 +1,60 @@
+# R13-MANTSCR (6 Oct 2026, LANE LANE-RUN13-account-4, account 4): stride-5 eye screen of Loc. 694/08 frames after 0580 and Loc. 694/09 0005-0300.
+# frame = URL file number in images/loc694-08-09/frames.tsv. Skipped as already seen: 694/09 0020 0100 0140 0180 0220 0260 0295 (frame_inventory.tsv); 0060 re-looked (unresolved before).
+# Method: full-size frames fetched once to scratch (not committed), cropped to the leaf area, contact sheets of 6 at ~900 px per frame read by the worker's own eye, no subagent; 3 frames zoomed to ~1600 px (0015, 0085, 0195). Control: known frames 694/08 0510 (code groups, unglossed) and 0579 (glossed) both read as code-bearing on a test sheet at the same scale.
+# code: y / n / possible; glossed: y / n / ? ; range: letter = all values seen <400, nomenclator = values >400 seen. Values read at sheet or zoom scale are M at best; light cipher (a few groups) is not excluded on an n frame read at sheet scale.
+loc	frame	code	glossed	range	note
+694/08	0585	n	n	-	f.472 short note, Hamburg 25 Dec 1712, bill of exchange; French clear
+694/08	0590	n	n	-	f.476 letter "Monsieur et tres honore Pere", Gustrow 25 Dec 1712; French clear
+694/09	0005	n	n	-	f.2 letter, Hamburg 15 Jan 1712[3]; French clear, condolence
+694/09	0010	possible	n	-	f.5 dense small hand, both pages; no code-group line resolved at sheet size
+694/09	0015	y	n	letter	f.8 report; runs 32.10.100.35.29.10.51.17.2.60.33.9.59.17.68.51, 100.2.51.2.26, 198.17.33.6.27.6.33.71, 159, 51.35.29.17.50.34.9.10.27.51.90.2.73.64.33.42.12.9.10.26.51; letters of 12 and 18 Nov; zoom confirms no gloss, max value 198
+694/09	0025	n	n	-	f.16 letter, Hamburg 28 Jan 1713; French clear, marginal note
+694/09	0030	n	n	-	f.19 German clear (P.S. on right page)
+694/09	0035	n	n	-	f.23 no.6, 1713; French clear at sheet size
+694/09	0040	possible	n	-	dense French page, one line near the foot may carry a short number run
+694/09	0045	n	n	-	f.31 no.9, 5 Feb 1713; French clear
+694/09	0050	n	n	-	f.35 French clear
+694/09	0055	n	n	-	f.38 French clear, letter signed off
+694/09	0060	possible	n	letter?	f.41 report + P.S.; a few short number groups in the left page's middle lines (e.g. "5.18"), still not resolved at sheet size (third look; GAPS184 also unresolved)
+694/09	0065	n	n	-	f.45 German Extract, a la lettre de Mant. du 19 Fevr 1713; clear
+694/09	0070	y	n	letter	f.49 minute with "Ad No 15/16" replies, light: 30 a 51.59, 7.16.19.120, 17.26.60, 30.50.22.28, 25.26.21; all <400, unglossed
+694/09	0075	y	n	letter	f.54 letter, Hamburg 2 Mars 1713, light: 29.28 near the foot; unglossed
+694/09	0080	possible	n	-	f.58 dense two-page report + P.S.; no clear run at sheet size
+694/09	0085	y	y	mixed (letter + nomenclator 483, 501)	f.60? report, left-page block of ~8 dotted runs (7.60, 257, 2.14.483..., ...501.349); short interlinear words over several runs (one reads "Grumbkow" over 7.60); zoom at ~1600 px, values M
+694/09	0090	n	n	-	f.67 note, Hamburg 4 Mars 1713, bill to Mr Maillette; French clear
+694/09	0095	n	n	-	end of a letter, signed; French clear
+694/09	0105	n	n	-	f.78 letter, Hamburg 12 Mars 1713, condolence; French clear
+694/09	0110	n	n	-	f.83? end of letter, Westerhausen/Hannover, C. de Nostitz; French clear
+694/09	0115	n	n	-	f.88 report no.23?, 22 Mars 1713; French clear at sheet size
+694/09	0120	n	n	-	f.92 German royal order/Kanzlei copy, 1713; clear
+694/09	0125	n	n	-	f.95 Copie de la relation ... 22 Mars 1713, a la lettre de Mant. du 27 Mars 1713; French clear
+694/09	0130	n	n	-	f.98 report no.38?, 1713; French clear at sheet size
+694/09	0135	n	n	-	f.101 Copie de la lettre ... 1 Avril 1713, a la lettre de Mant. du 1 Avril; French clear
+694/09	0145	n	n	-	dense French report end, signed; clear at sheet size
+694/09	0150	n	n	-	f.111 dense French report; clear at sheet size
+694/09	0155	n	n	-	f.116 Copie d'une lettre ... Varsovie 9 Avril 1713, a la lettre de Mant. du 16 Avril 1713; clear
+694/09	0160	n	n	-	f.120 numbered relation paras 2-4; French clear
+694/09	0165	n	n	-	f.124 report end, signed; French clear
+694/09	0170	possible	n	-	minute in a large hand, "a 139 ..." near the foot (a sum or a code); one group only
+694/09	0175	n	n	-	f.139 letter no.19, 12 May 1713, coffers for Mr Maillette; clear
+694/09	0185	n	n	-	f.141 letter no.20, 16 May 1713, Stenbock capitulation; French clear
+694/09	0190	n	n	-	f.145 minute with heavy-ink overwritten words, P.S.; no number runs
+694/09	0195	y	y (one)	letter	f.150 report no.46, Berlin 17 May 1713; runs 1.46.21.11.33.6.55.56.00.30.11, 34.44.35.51, 103.76.120.10.100; one marginal gloss "Holstein" at a run start; zoom at ~1600 px, values M
+694/09	0200	n	n	-	f.153 dense French report; clear at sheet size
+694/09	0205	n	n	-	f.157 Extrait d'une lettre ... Copenhague 16 May 1713; clear
+694/09	0210	n	n	-	f.161 Copie "Sire", a la lettre de Manteuffel du 28 May 1713; clear
+694/09	0215	n	n	-	f.165 report end + second letter; French clear at sheet size
+694/09	0225	n	n	-	f.171 relation (paras to 7); French clear
+694/09	0230	n	n	-	f.174 no.51, a Coslin? 1713; French clear at sheet size
+694/09	0235	n	n	-	f.179 letter no.25, 1713, Mr Goertz/Brockdorff; French clear
+694/09	0240	n	n	-	f.182 letter no.26, enclosures A/B, Copenhague, Pulteney; French clear
+694/09	0245	n	n	-	minute with deletions; French clear
+694/09	0250	n	n	-	f.191 P.S., prisoners; French clear
+694/09	0255	n	n	-	report end, signed, + second note; French clear
+694/09	0265	n	n	-	f.202 dense French report; clear at sheet size
+694/09	0270	n	n	-	f.204 letter "Madame"; French clear
+694/09	0275	n	n	-	f.210 Copie d'une lettre de Mr le Baron de Goertz ... Hambourg 1713; French clear
+694/09	0280	n	n	-	f.215 dense French report; clear at sheet size
+694/09	0285	n	n	-	f.218 dense French report; clear at sheet size
+694/09	0290	n	n	-	f.222 letter, Berlin 15 Sept? 1713, marriage congratulation, C. de Wackerbarth; clear
+694/09	0300	n	n	-	f.232 dense French report; clear at sheet size
