@@ -9302,3 +9302,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 06:07 | R9-NOX worker | claim: fr16142-noailles-constantinople-1571, text-check the date-only Dupuy matches, cap 3, box 06:07-06:42 UTC (80% 06:35), for LANE LANE-RUN9-account-1
 2026-10-06 06:08 | R9-VIEU worker | done (06:07-06:15 UTC by date -u, brief met): variant print_check, no printed text of the letter found, request counts 4/host; NOTES.md updated, for LANE LANE-RUN9-account-1
 2026-10-06 06:08 | R9-VIEU worker | correction: R9-VIEU done line end time should read 06:09 UTC (by date -u), not 06:15, for LANE LANE-RUN9-account-1
+2026-10-06 06:07 | R9-SEURE worker | claim: fr3151-seure-1558, Henri II-era French keys vs reconciled f81R reads (PREREG first), cap 4.5, box 06:06-07:01 UTC (80% 06:50), for LANE LANE-RUN9-account-1
