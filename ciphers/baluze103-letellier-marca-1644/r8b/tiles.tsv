@@ -1,0 +1,52 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+bal103b	f50r_L04	3	xbar	x	xbar	split	split	x,xbar,xc,xs	10 lb	bt o7 tt	x	xbar
+bal103b	f50r_L04	6	tt	tt	venus	split	split	tt,venus	xbar bt o7	f R 10	tt	venus
+bal103b	f50r_L05	1	xbar	x	xbar	split	split	x,xbar,xc,xs		theta 12 3	x	xbar
+bal103b	f50r_L05	13	tt	tt	mm	split	split	mm,tt	R ct b	P 9 delta	tt	mm
+bal103b	f50r_L06	1	tt	tt	venus	split	split	tt,venus		o7 mt 9	tt	venus
+bal103b	f50r_L06	6	xbar	x	xbar	split	split	x,xbar,xc,xs	mt 9 6	theta =y =3	x	xbar
+bal103b	f50r_L08	6	m	mt	m	split	split	m,mm,mt	21 R hz	theta hz 6	mt	m
+bal103b	f50r_L08	19	m	mt	m	split	split	m,mm,mt	bt hz xs	6 xbar bt	mt	m
+bal103b	f50r_L09	8	venus	venus	q	split	split	P,q,q2,venus	mt 6 9	u m xs	venus	q
+bal103b	f50r_L09	10	m	mt	m	split	split	m,mm,mt	9 venus u	xs o7 tt	mt	m
+bal103b	f50r_L09	11	xs	xbar	xs	split	split	x,xbar,xc,xs	venus u m	o7 tt 9	xbar	xs
+bal103b	f50r_L09	13	tt	tt	venus	split	split	tt,venus	m xs o7	9 f xs	tt	venus
+bal103b	f50r_L11	7	m	mm	m	split	split	m,mm,mt	t u mt	theta 9 a	mm	m
+bal103b	f50r_L11	17	xs	xbar	xs	split	split	x,xbar,xc,xs	=11 P 19	theta u bt	xbar	xs
+bal103b	f50r_L12	4	tt	tt	mm	split	split	mm,tt	13 u hz	xs delta m	tt	mm
+bal103b	f50r_L12	7	m	mt	m	split	split	m,mm,mt	tt xs delta	9 delta 4	mt	m
+bal103b	f50r_L13	5	tt	tt	venus	split	split	tt,venus	eps a hz	theta 9 6	tt	venus
+bal103b	f50r_L13	14	m	mt	m	split	split	m,mm,mt	14 t u	xc q z	mt	m
+bal103b	f50r_L13	15	xc	xs	xc	split	split	x,xbar,xc,xs	t u m	q z 6	xs	xc
+bal103b	f50r_L13	16	q	venus	q	split	split	P,q,q2,venus	u m xc	z 6 P	venus	q
+bal103b	f50r_L14	4	q	venus	q	split	split	P,q,q2,venus	6 u t	6 9 lb	venus	q
+bal103b	f50r_L14	8	tt	tt	venus	split	split	tt,venus	6 9 lb	9 R tt	tt	venus
+bal103b	f50r_L14	11	tt	tt	mm	split	split	mm,tt	tt 9 R	10 x 15	tt	mm
+bal103b	f50r_L14	13	x	x	xc	split	split	x,xbar,xc,xs	R tt 10	15 mt a	x	xc
+bal103b	f50r_L15	1	m	mm	m	split	split	m,mm,mt		9 u a	mm	m
+bal103b	f50r_L15	19	tt	tt	mm	split	split	mm,tt	9 14 6		tt	mm
+bal103b	f50r_L16	12	tt	tt	mm	split	split	mm,tt	mt hz hbar	tt theta 9	tt	mm
+bal103b	f50r_L16	16	m	mm	m	split	split	m,mm,mt	tt theta 9	10 9 delta	mm	m
+bal103b	f50r_L17	15	xc	x	xc	split	split	x,xbar,xc,xs	R u ct	15 tt P	x	xc
+bal103b	f50r_L17	17	tt	tt	venus	split	split	tt,venus	ct xc 15	P	tt	venus
+bal103b	f50r_L18	10	tt	tt	venus	split	split	tt,venus	6 23 6	mt a t	tt	venus
+bal103b	f50r_L18	14	m	mm	m	split	split	m,mm,mt	mt a t	19 m 9	mm	m
+bal103b	f50r_L18	16	m	mt	m	split	split	m,mm,mt	t m 19	9 q u	mt	m
+bal103b	f50r_L18	18	q	venus	q	split	split	P,q,q2,venus	19 m 9	u	venus	q
+bal103b	f50r_L19	14	m	mt	m	split	split	m,mm,mt	a 22 4	9 theta tt	mt	m
+bal103b	f50r_L19	17	tt	tt	venus	split	split	tt,venus	m 9 theta	=3	tt	venus
+bal103b	f50r_L20	16	xc	xs	xc	split	split	x,xbar,xc,xs	a 13 hz	m 9 19	xs	xc
+bal103b	f50r_L20	17	m	mt	m	split	split	m,mm,mt	13 hz xc	9 19	mt	m
+bal103b	f50v_L01	1	mm	mm	m	split	split	m,mm,mt		10 q2 4	mm	m
+bal103b	f50v_L03	6	m	mm	m	split	split	m,mm,mt	9 a delta	4 f venus	mm	m
+bal103b	f50v_L03	9	venus	venus	9	split	split	9,venus	m 4 f	f xc q2	venus	9
+bal103b	f50v_L03	14	m	mm	m	split	split	m,mm,mt	xc q2 4	14 22 a	mm	m
+bal103b	f50v_L04	1	venus	venus	9	split	split	9,venus		12 u 14	venus	9
+bal103b	f50v_L07	1	mm	mm	m	split	split	m,mm,mt		lb 9 mt	mm	m
+bal103b	f50v_L07	5	venus	venus	9	split	split	9,venus	lb 9 mt	H y a	venus	9
+bal103b	f50v_L09	18	venus	venus	9	split	split	9,venus	u f 6	19 xc lb	venus	9
+bal103b	f50v_L09	22	m	mm	m	split	split	m,mm,mt	19 xc lb	hz	mm	m
+bal103b	f50v_L10	6	m	mm	m	split	split	m,mm,mt	9 6 22	8s 12 6	mm	m
+bal103b	f50v_L11	3	venus	venus	9	split	split	9,venus	21 14	14 12 delta	venus	9
+bal103b	f50v_L11	11	m	mm	m	split	split	m,mm,mt	hz mt 21	u 8 n	mm	m
+bal103b	f50v_L12	11	venus	venus	9	split	split	9,venus	6 x ct	6 xc q2	venus	9

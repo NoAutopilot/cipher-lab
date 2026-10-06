@@ -1,0 +1,18 @@
+# shape descriptions (no values), from key.tsv column 4 and tx/PASS_INSTRUCTIONS.md, R8-BAL103B
+m	plain cursive m, three arches, no tail
+mm	double m: a longer run of arches (five or more), like two m's joined
+mt	m with a tail: last arch ends in a descending or curling tail stroke
+venus	q-like loop on a stem with a small cross stroke on the stem (venus sign)
+P	capital P: upright stem with a closed bowl at the top right
+q2	2-like stroke with a loop
+q	q-like loop on a stem with NO cross stroke
+x	plain x, two straight crossing strokes
+xbar	x crossed by a horizontal bar
+xc	curly x: crossing strokes with curled ends
+xs	x with an extra stroke
+tt	struck double t: two t stems joined by one long crossbar
+9	numeral 9, written like a cursive g
+6	numeral 6
+sigma	sigma / rotated 6
+hz	h with a z-like tail (circled in the table)
+hbar	h with a bar (circled in the table)
