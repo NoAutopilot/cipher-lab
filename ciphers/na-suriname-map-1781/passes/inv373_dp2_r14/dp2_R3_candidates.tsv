@@ -1,0 +1,4 @@
+# codes whose top DP-aligned letter (>=3) is outside this run's pooled table; for a verifier, NOT applied
+code	top	count	T	all
+K	o	26		o:26
+[thorn]	c	5		c:5 f:3

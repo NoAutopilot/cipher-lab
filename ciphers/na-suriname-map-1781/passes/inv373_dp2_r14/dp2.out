@@ -1,0 +1,4 @@
+regress 0702: pairs 42, signs 1596, letters 1571, T from _069+_073 (44 codes); keyed aligned 1508, A 0.966; C1 shuffled-gloss-lines mean 0.453 p99 0.481 max 0.488; C2 within-line permuted mean 0.445 p99 0.471 -> SAME SYSTEM (DP)
+R1 0758: pairs 11, signs 318, letters 310, T from _069+_070+_073 (46 codes); keyed aligned 284, A 0.947; C1 shuffled-gloss-lines mean 0.524 p99 0.590 max 0.605; C2 within-line permuted mean 0.490 p99 0.557 -> SAME SYSTEM (DP)
+R2 0730: pairs 7, signs 332, letters 338, T from _069+_070 (40 codes); keyed aligned 311, A 0.945; C1 shuffled-gloss-lines mean 0.370 p99 0.429 max 0.443; C2 within-line permuted mean 0.377 p99 0.440 -> SAME SYSTEM (DP)
+R3 0702: pairs 32, signs 1218, letters 1202, T from _069+_073 (44 codes); keyed aligned 1148, A 0.967; C1 shuffled-gloss-lines mean 0.452 p99 0.484 max 0.493; C2 within-line permuted mean 0.445 p99 0.480 -> SAME SYSTEM (DP)

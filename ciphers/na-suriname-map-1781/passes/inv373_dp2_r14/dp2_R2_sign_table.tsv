@@ -1,0 +1,37 @@
+code	in_T	letters_aligned
+&		f:1
+0	r	r:9
+3	d|e	e:40 i:1
+4	a|n|w	w:3 a:1
+5	v|w	v:9 n:1
+6	s	k:2 b:1
+7	a|e	e:19
+8	i	i:1
+9	g	g:6 l:2
+[delta]	a	a:16
+[ezh-dot]	e	e:2 b:1
+[hash]	o	o:19 v:1
+[other=_S-flourish]		p:1
+[other=_S-like_flourish]		p:1
+[other=_f-like]		i:4
+[other=_ff-like]		i:1
+[other=_large_printed-like_capital_F_with_period]		t:1
+[other=_ss-like]		h:6
+[psi]	s|z	s:16 f:1
+[w-tilde]		f:2
+[y-fam]	m|n	n:24 m:10
+b	k|o	k:7
+c	l|v	l:18
+d	b|e	b:9 e:1 l:1
+f	i	i:3 p:1
+g	g|l|p	t:1 l:1
+k	o	o:6
+l	n	n:6 p:1
+n	z	z:6
+o	r	r:7
+p	a|n	a:2 c:1
+r	d|e|t	d:3
+t	a|i	i:8
+w	d	d:12 r:1
+x	a|t	a:16
+λ	p|s|t	t:14 r:1

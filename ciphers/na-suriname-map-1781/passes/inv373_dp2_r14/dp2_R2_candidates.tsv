@@ -1,0 +1,4 @@
+# codes whose top DP-aligned letter (>=3) is outside this run's pooled table; for a verifier, NOT applied
+code	top	count	T	all
+[other=_f-like]	i	4		i:4
+[other=_ss-like]	h	6		h:6
