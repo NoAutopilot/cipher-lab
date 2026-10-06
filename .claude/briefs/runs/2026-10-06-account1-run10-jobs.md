@@ -94,3 +94,24 @@ first, control B and gate unchanged), then a per-code control for any new lead w
 ### R10-LIN -- WITHDRAWN 09:48 UTC (intake gate: check-solved verdict reads `blocked (pending L10: Textos Politicos 1993)`; not spawned) -- antt-linhares-chave: front-trim and join enumeration with its worked-example known-answer control (cap 3.5, box 45 min)
 Verdict cheapest next (R8-LIN): the front-trim and join enumeration, known-answer control first (PREREG pushed before the target run);
 control below gate = NON-TEST, stop. Use tools/judge_plaintext.py with the era-matched pt18 corpus. No depth/N-class edits.
+
+## Wave 3 (written 10:0x UTC from wave 1's own Verdict lines; intake gate exit 0 for every folder below, 6 Oct 09:4x-10:0x UTC)
+
+### R10-BAL103D -- baluze103-letellier-marca-1644: enlarge the f.171r 9 control to >= 7 known 9s, then run r10/PREREG.md (cap 3.5, box 45 min)
+Verdict cheapest next (R10-BAL103C): f.171r L5 onward, crops via tools/iiif_lines.py pasted, one blind pass + alignment against f.172r
+for the known values, until >= 7 known 9s (>= 2 of value i); then run r10/PREREG.md exactly as registered (no edits to its gate). If the
+enlarged control still cannot reach power, NON-TEST and stop; key.tsv/exceptions untouched unless the registered gate passes.
+
+### R10-DEC2678S -- decode-2678-bnf-colbert127-gravel-1665: sommaire sweep of Mel. Colbert 126-130 for Ratisbon cipher letters (cap 3, box 40 min)
+Verdict cheapest next (after R10-DEC2678V): Gallica IIIF manifests / tables (sommaires) of Melanges Colbert 126-130, one request at a time,
+for Gravel (or other Ratisbon) letters 1664-1666 in the same two-digit+diacritics design; log each volume checked, canvas/folio of every
+hit, and whether any carries an interlinear decipherment. No decoding in this job; list hits for the next brief.
+
+### R10-HUNTTNA -- huntington-blathwayt-madrid-1728: TNA Discovery API search for a contemporary decipherment of BLA191(a) (Sonnet-tier search, run on Opus; cap 1.5, box 25 min)
+Verdict cheapest next (R10-HUNT2): TNA Discovery API (per the host table) over SP 94/98-100 and SP 36/13-14 descriptions for a decipherment
+or copy of BLA191(a); record each query and hit count; no image fetches beyond one per real hit.
+
+### R10-SEURE4 -- fr3151-seure-1558: fr. 3138 nos. 9 (Tournon 1556) and 24 (Morvilliers 1549) for a legible decipherment (cap 2.5, box 35 min)
+Verdict cheapest next (R10-SEURE3): locate both on btv1b90601662 with tools/gallica_folio.py; look for a legible interlinear decipherment;
+if one reads, rebuild that key through tools/interlinear_align.py and test it on R1/R2 with the own-text power control first (PREREG
+pushed before scoring; power below gate = NON-TEST). If neither reads, log and stop.
