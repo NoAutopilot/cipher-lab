@@ -473,3 +473,67 @@ crops and zooms (about 4 leaf-units) plus 2 reference crops of Hs 2398. No subag
 
 Next step for symA (one line, not run): the same-scribe concordance across the 28 IIIF leaves on disk, with every crossed-descender p
 and every symA-like sign, to settle F4 (crossbar or curl) before any further reference-dictionary comparison. About USD 2-3 (WAIT-PASS-B item 3).
+
+## symA same-scribe concordance, F4 crossbar or curl (R8-UNTB (account-4), 6 Oct 2026, 03:44-03:5x UTC)
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run8-jobs.md` job R8-UNTB. Intake gate (as pasted in the brief): `untersberg-code: open
+(line 3) -- edition/page or full-text-search citation found within 6 lines`. The step was still undone (D2B-UNT's closing line says "not run").
+Decision rule pre-registered and pushed before any concordance crop was viewed: `specs/cheap-tests/untersberg-code/PREREG-R8-UNTB.md`
+(4e338bf0). Its control: the crops must show a crossbar on at least 3 crossed-descender p's ("ꝑ") of this hand before any symA call counts.
+
+**Correction to the step's premise.** "The 28 IIIF leaves on disk" was not true: only opening 11 (native) and opening 27 (1225 px) were on
+disk. The 28 media ids were re-read from the detail page (1 request) and are now listed here in display order, openings 1-28:
+1b269afd 4b5c42d3 / c77a3260 / 73ccf971 / 36d9b7c4 / ec0eefb6 / 2472faca / 85829ccf / ee3545c6 / c11153a3 / 56503bb8 / dc46a099 / ac4867cb /
+2a58d4c3 / 47c0cffb / 089cd7fc / b31bf664 / 326b6a91 / dfad071c / 43c1056a / d8f70845 / 3440046a / 23f8f47d / 8b15ec2f / 2e0e5eb7 / f29d99d8 /
+6c3da5b8 / e0f9d823 / 000a8f4e (first 8 hex digits; full UUIDs in the detail page, `.../iiif/iiif/2/{uuid}/full/{w},/0/default.jpg`).
+bUNT3's "openings 2-12ish are prose" is also off: opening 2 is a full-spread painting with no text.
+
+**Leaves viewed (units) and crop step.** Openings 1, 2, 3, 4, 5 fetched at 2450 px wide (half native) to the session scratchpad (not
+committed), plus opening 11 at native from disk. Crop step run and pasted, per page:
+`python3 tools/iiif_lines.py --image o{3,4,5}.jpg --out crops{N}{L,R} --columns 40:1225 | 1225:2420 --lines-per-crop 7 --max-width 1300`
+(3-4 band crops per page, viewed as stacked bands), `python3 tools/iiif_lines.py --image o1.jpg --out crops1 --region 330,640,1900,1300
+--lines-per-crop 1` (11 crops), and PIL zooms of the symA instances from `images/hs2398_opening11_inscription_leaf.jpg` (boxes
+880,680,1100,960 / 1060,1040,1280,1320 / 700,1380,920,1660 / 1280,1380,1500,1660; the L4 tok5 box was mis-placed twice and is not read).
+No subagents; the worker viewed the crops itself (8 band/zoom views of prose, 4 of symA).
+
+**Reference class R (crossed-descender p in this hand): 0 found.**
+| opening | pages | script | crossed-descender p | other p forms seen |
+|---|---|---|---|---|
+| 1 | title + text | Kurrent with Latin-script words (Sicillia, "Spirallamundi" [Speculum mundi], "Forhiria") | 0 | 1 plain Latin-script p in "Sp-": lead-in rising from baseline-left into the bowl, descender curling left at the foot, no bar |
+| 2 | painting | none | 0 | -- |
+| 3 | 2 prose | Kurrent | 0 | Kurrent p in "Cuper" (R page), plain descender |
+| 4 | 2 prose | Kurrent | 0 | none identified |
+| 5 | 2 prose | Kurrent | 0 | capital P in "Pallast", "Perlein"; no bar |
+| 11 | prose (R) + inscription (L) | Kurrent / painted Latin-style | 0 | inscription capital P (L3 tok1); no other p |
+The prose hand is German Kurrent and never needs the Latin *per/par/pro* abbreviation on these pages.
+
+**symA instances (S), recorded under the PREREG's X/C/U.**
+- L2 tok1 final glyph: U. A stroke runs from a heavy dot at baseline-left up through the stem into the top-right bowl; nothing crosses the
+  descender below the bowl, and the descender itself is plain and straight. Whether that rising stroke is a *per* bar or the letter's own
+  lead-in (as on the plain p of opening 1's "Sp-") cannot be told without the reference class.
+- L4 tok7: U, same construction as L2.
+- L6 tok2 first glyph: U, same construction (this is the mark D2B-UNT saw as "a short leftward mark on the stem at about baseline height":
+  it is the heavy dot at the start of the rising stroke).
+- L4 tok5: U, not adequately cropped this pass.
+- L6 tok3: C. The descender sweeps left into a large open hook (a z/ꝗ-like tail), with no stroke crossing it.
+- symA-rev (L6 tok2 second glyph): no descender at all; reported, not counted.
+
+**Result: F4 UNSETTLED (non-test).** The PREREG's resolution control failed: 0 R instances against the 3 required, because the scribe's
+prose hand on openings 1-5 and 11 never writes a crossed-descender p. So the crops cannot show what this hand's crossbar looks like, and
+no symA tally counts. Rule 3: the control could have passed (any Latin *per* in the prose would have counted) and did not, so this is a
+recorded non-test, not a negative. Rule 4: no token graded (H 0, C 0, S 0); counts unchanged from bUNT8/bUNT9 (C 0, M 4, H 0, I 1).
+
+**Observations, not graded.** (1) L6 tok3's tail curls into a large left hook while L2/L4 tok7/L6 tok2 have a straight plain descender
+with a rising stroke from a baseline dot: on these crops "symA" may be two different signs, which bUNT8 grouped as one (it noted only
+"a longer or shorter descender"). Any later sign-classification pass should keep L6 tok3 apart until settled. (2) The rising stroke from a
+baseline dot on the three straight-descender instances has the same direction as the lead-in of the scribe's plain Latin-script p
+on opening 1. If this is the same stroke, then the "crossbar" D2B-UNT saw is how this scribe builds p, not a *per* bar. One example cannot
+settle that.
+
+Requests: sammlung-online.salzburgmuseum.at 6 (detail page 1; IIIF full/2450 for openings 1-5, 5), at least 2 s apart, descriptive
+User-Agent, all HTTP 200. No other host.
+
+Next step for symA (one line, not run): find the reference class elsewhere, using Latin-script words and painted captions on the
+illustrated openings 12-28 (opening 27's tablets first, 1225 px on disk, then native). Screen with 400 px thumbnails first, then crop only
+the leaves that have Latin script. If no crossed-descender p turns up in the whole manuscript, F4 is untestable within this manuscript and
+goes to the paleographer crop packet (SO-UNTERSBERG-LEADS methodology item 2). About USD 2-3.
