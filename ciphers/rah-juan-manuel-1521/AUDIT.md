@@ -108,3 +108,22 @@ likeliest further merge), and L03 "Z bay", L07 "Z suf", L26 "Z log"/"Z bo", L29 
 
 Over-claims found: none that states content outside the repository. Corrections: the PREREG hash in NOTES.md (21427aac9 -> a15348c2d), and
 the S count after the J-merge (NOTES verifier note). SECOND-OPINIONS-QUEUE.tsv: no row for this target (no N3+ reading), nothing to carry.
+
+## R14-RJMV, 6 Oct 2026 (15:36-15:40 UTC): standing of R14-RJMZ's L24 J-merge and Z eye check on f.34
+Verifier session, separate from every solver (R12-RJM9501, R13-RJM34LA, R14-RJMZ) and from R13-RJMV/R13-RJMV2. Brief: .claude/briefs/runs/
+2026-10-06-account2-run14-jobs.md job R14-RJMV. Claim under audit: NOTES.md "R14-RJMZ" (467f60383). Requests: de-crypt.org 2 (one browser
+login: RecordsView 9501 + full-size P1, sha1 b510ebe5... = images/manifest.json); image and crops in the scratchpad only (RUN1-SEG's
+iiif_lines command, 30 crops). No subagent. A trial decode, not a reading of a letter: no N-class or depth assigned (none was before).
+
+| check | finding | standing |
+|---|---|---|
+| Reproducibility (rule 7) | decode9501_la.py --check and decode9501.py --check exit 0; `decode9501_la.py --judge` re-run here leaves every committed output byte-identical (git status clean). | holds |
+| Counts (rule 4) | grades_f34_tomokiyo_la.tsv: S 300 / M 170 / U 272 of 742; the parent of 467f60383 has S 301 / M 169 / U 273 of 743. L24.22 is now one token jum (readers verifier-merge, code, otra, M); H 0, C 0. | confirmed |
+| L24.22 eye check | On the L24 crop at 2x: "kef R Jum R [struck group] heb R gap" -- one group, a tall J with a flat top bar and a hook below the line joined to "um", the same J as L02's "Jas sad Jez" and "Jez pib" on the same image. Merge to jum (table code, otra) at M is within R12-RJMV's licence (one eye, never S). | confirmed |
+| Yogh place (one of the 6), L26.25 "Z log" | On the L26 crop at 2x: "dim Z log ler..." -- a small 7/yogh-shaped sign with its loop below the line, written apart from "log", unlike the tall J. L26.31 "Z bo" on the same crop shows the same separate yogh. | Z stands, confirmed |
+| Judge | es1600 FAIL -1.098 (real_p05 -0.822), es17c FAIL -1.063 (real_p05 -0.858); above all 20 shuffled seeds on both (max -1.162 / -1.072). Movement from R13-RJMV2 (+0.005 / +0.002) is far inside one shuffled sd. | holds; note the es17c margin over the shuffled max is 0.009, about a third of a shuffled sd |
+
+Over-claims found: none. R14-RJMZ's wording ("judge cannot decide", "M", "pointer, not applied") stays within the evidence. One precision added
+here, not a correction: "above all 20 shuffled seeds" on es17c rests on a 0.009 margin, so it should not be read as a clear separation from
+shuffled order on that corpus. The L01 "3um" pointer (R14-RJMZ) was not checked here (outside this brief). SECOND-OPINIONS-QUEUE.tsv: no row
+for this target (no N3+ reading), nothing to carry. status.json carries no f.34 counts, nothing to carry.

@@ -1027,3 +1027,10 @@ Read so far: 0 of 28 letters read in full; R9501 f.34 (30 lines) trial-decoded w
 - [x] image-check: R9528, R9529, R9502, R9526 and R9501 full-size images fetched (sha1s in images/manifest.json), crops and windows checked; f.34 out-of-table groups eye-checked (R13-RJM34LA: 23 of 24 confirmed as written); J-initial groups confirmed and merged (R13-RJMV2, 10 places; R14-RJMZ, 9 more places checked, 1 merged: L24 jum)
 - [x] retry: look-alike passes on f.194/f.199 (R11-RJMLA, residual 0.040 / 0.137) and f.34 (R13-RJM34LA, 169 of 218 split tiles settled, residual 0.065); agreement, not error; unsettled tiles to the sorter's focus list
 Verdict: keep going: 2 internal gaps (T/Q values from pooled alignments; R9526 retest with f.150's clerk lines and settled splits); the transcription and unread-token gaps wait on ASKS 138; cheapest next: pool the f.194/f.199/f.40/f.147 alignments for T/Q chunk counts, ~$2
+
+## Verifier note on R14-RJMZ (R14-RJMV, 6 Oct 2026, 15:36-15:40 UTC)
+Separate verifier session; full table in AUDIT.md "R14-RJMV". decode9501_la.py and decode9501.py --check exit 0; the judge re-run is
+byte-identical. Counts confirmed: S 300 / M 170 / U 272 of 742 (H 0, C 0). L24.22 "Jum" confirmed as one J-group on the re-fetched
+image (same J as L02's Jas/Jez); merge at M stands. L26.25 "Z log" (and L26.31 "Z bo") confirmed as a separate yogh. Over-claims: none.
+Note: on es17c the target clears the shuffled maximum by only 0.009 (about a third of a shuffled sd). AUDIT.md now carries R14-RJMZ.
+Requests: de-crypt.org 2 (one login). No subagent.
