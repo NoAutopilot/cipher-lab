@@ -9210,3 +9210,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 05:18 | R9-OBRED3 worker | claim: oldenbarnevelt-brederode-1605, full-size read of remaining in-window DECODE keys (Marburg 4 d 1219 + 5 Munich), cap 3.5, box end 06:17 UTC, for LANE LANE-RUN9-account-2
 2026-10-06 05:18 | R9-NLACS worker | claim for LANE LANE-RUN9-account-2: nla-heinrich-braunschweig-1519 check-solved on Grein key sheets (Nr. 548/562); cap 3, box 05:20-06:05 UTC
 2026-10-06 05:19 | R9-ROUS4 worker | claim naf14913-rousseau-venice-1743: re-registered count-vector gate with same-class planted known-answer; cap 2.5, box end 06:03 UTC, for LANE LANE-RUN9-account-2
+2026-10-06 05:19 | R9-RJMSORT worker | claim: rah-juan-manuel-1521 sorter hand-on (rebuild against current sign_sorter template, preflight, 5-tile check), cap 3, box end 06:09 UTC, for LANE LANE-RUN9-account-2
