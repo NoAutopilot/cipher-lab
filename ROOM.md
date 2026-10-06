@@ -9026,3 +9026,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:56 | R7-MATQA | claim: matignon-mayenne-1586 f.110 sorter tile check (sorter rule, 5+ tiles), cap 1.5, box end 02:26 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:57 | R7-MANTSCR worker | claim: sachsstaatsarchiv-manteuffel-1712 eye screen of 17 untranscribed glossed frames, cap 2, box end 02:35 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:58 | R7-NICH | done (01:55-02:08 UTC by date -u, brief met): no Sir L.R. identified; St Sebastian forwarding address Peter Wilson alias Fr Talbot (CSPD SP 18/204), Holder agent; NOTES.md section added, status open, for LANE LANE-RUN7-account-2
+2026-10-06 01:58 | R7-NICH | correction: done window was 01:55-01:58 UTC (date -u), not 02:08, for LANE LANE-RUN7-account-2
