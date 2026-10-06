@@ -1,0 +1,126 @@
+# {"sent_entries": 124, "received_pages": 3987, "null_draws": 2480, "null_p99": 0, "threshold": 3, "ctl_a_recall": "60/60", "ctl_a_code_subs_per_window": 0.72, "ctl_b_other_pages_with_04_twin": "270/3715", "twins": 2}
+sent_ptr	entry	date	best_score	twin	recv_vol	recv_ptr	recv_page
+4960	1	01 Feb 1862	1		mssEC 11	4791	Page 350
+4960	2	02 Feb 1862	1		mssEC 10	10472	Page 330
+4960	3	02 Feb 1862	0				
+4961	1	02 Feb 1862	1		mssEC 11	4467	Page 26
+4961	2	02 Feb 1862	1		mssEC 11	4676	Page 235
+4961	3	03 Feb 1862	0				
+4962	1	05 Feb 1862	0				
+4962	2	05 Feb 1862	2		mssEC 07	2538	Page 56
+4969	1	07 Feb 1862	1		mssEC 06	7100	Page 300
+4969	2	07 Feb 1862	0				
+4969	3	07 Feb 1862	0				
+4969	4	07 Feb 1862	1		mssEC 12	7909	Page 251
+4972	1	08 Feb 1862	0				
+4972	2	08 Feb 1862	0				
+4973	1	08 Feb 1862	0				
+4973	2	08 Feb 1862	0				
+4973	3	08 Feb 1862	1		mssEC 06	6972	Page 172
+4975	1	09 Feb 1862	0				
+4975	2	09 Feb 1862	1		mssEC 06	7015	Page 215
+4976	1	10 Feb 1862	0				
+4976	2	10 Feb 1862	0				
+4978	1	11 Feb 1862	0				
+4978	2	12 Feb 1862	1		mssEC 12	7748	Page 90
+4979	1	12 Feb 1862	0				
+4979	2	13 Feb 1862	2		mssEC 05	3222	Page 322
+4982	1	14 Feb 1862	2		mssEC 13	8755	Page 277
+4982	2	14 Feb 1862	0				
+4982	3	14 Feb 1862	1		mssEC 09	7364	Page 120
+4983	1	14 Feb 1862	0				
+4983	2	14 Feb 1862	0				
+4983	3	15 Feb 1862	0				
+4984	1	15 Feb 1862	0				
+4984	2	15 Feb 1862	0				
+4984	3	02 Mar 1862	1		mssEC 14	4860	Page 5
+4985	1	15 Feb 1862	1		mssEC 13	8736	Page 258
+4992	1	16 Feb 1862	0				
+4992	2	16 Feb 1862	0				
+4992	3	16 Feb 1862	0				
+4995	1	07 Feb 1862	0				
+4995	2	17 Feb 1862	0				
+4996	1	18 Feb 1862	0				
+4997	1	18 Feb 1862	1		mssEC 12	8010	Page 352
+4997	2	18 Feb 1862	0				
+4997	3	18 Feb 1862	1		mssEC 12	8010	Page 352
+4998	1	18 Feb 1862	0				
+4998	2	18 Feb 1862	1		mssEC 09	7487	Page 243
+4998	3	18 Feb 1862	0				
+4999	1	19 Feb 1862	0				
+4999	2	19 Feb 1862	0				
+4999	3	19 Feb 1862	0				
+5000	1	19 Feb 1862	1		mssEC 05	3100	Page 210
+5000	2	19 Feb 1862	0				
+5001	1	19 Feb 1862	1		mssEC 13	8863	Page 385
+5001	2	19 Feb 1862	0				
+5002	1	19 Feb 1862	1		mssEC 10	10170	Page 28
+5002	2	19 Feb 1862	1		mssEC 13	8649	Page 171
+5005	1	20 Feb 1862	1		mssEC 14	4904	Page 49
+5005	2	20 Feb 1862	0				
+5008	1	21 Feb 1862	0				
+5008	2	21 Feb 1862	1		mssEC 04	4300	Page 151
+5009	1	21 Feb 1862	1		mssEC 13	8587	Page 109
+5013	1	21 Feb 1862	0				
+5013	2	22 Feb 1862	1		mssEC 06	7026	Page 226
+5014	1	23 Feb 1862	1		mssEC 09	7571	Page 327
+5015	1	23 Feb 1862	1		mssEC 11	4841	Page 400
+5016	1	23 Feb 1862	2		mssEC 05	3076	Page 186
+5016	2	23 Feb 1862	0				
+5016	3	23 Feb 1862	0				
+5017	1	23 Feb 1862	0				
+5018	1	23 Feb 1862	0				
+5021	1	24 Feb 1862	2		mssEC 09	7565	Page 321
+5021	2	25 Feb 1862	3	twin	mssEC 05	3085	Page 195
+5022	1	25 Feb 1862	2		mssEC 09	7378	Page 134
+5022	2	25 Feb 1862	0				
+5023	1	25 Feb 1862	0				
+5024	1	25 Feb 1862	0				
+5024	2	25 Feb 1862	0				
+5025	1	25 Feb 1862	2		mssEC 10	10368	Page 226
+5025	2	25 Feb 1862	0				
+5028	1	27 Feb 1862	0				
+5028	2	27 Feb 1862	1		mssEC 07	2731	Page 253
+5029	1	27 Feb 1862	1		mssEC 12	7973	Page 315
+5030	1	27 Feb 1862	0				
+5030	2	27 Feb 1862	0				
+5030	3	27 Feb 1862	0				
+5030	4	28 Feb 1862	0				
+5031	1	27 Feb 1862	1		mssEC 05	3165	Page 265
+5031	2	28 Feb 1862	0				
+5031	3	28 Feb 1862	0				
+5032	1	01 Mar 1862	0				
+5032	2	01 Mar 1862	0				
+5035	1	03 Mar 1862	3	twin	mssEC 11	4452	Page 11
+5036	1	03 Mar 1862	2		mssEC 07	2769	Page 291
+5036	2	03 Mar 1862	0				
+5036	3	03 Mar 1862	0				
+5038	1	04 Mar 1862	1		mssEC 12	7686	Page 28
+5039	1	05 Mar 1862	0				
+5039	2	05 Mar 1862	0				
+5041	1	07 Mar 1862	0				
+5041	2	07 Mar 1862	0				
+5041	3	07 Mar 1862	1		mssEC 12	8001	Page 343
+5043	1	09 Mar 1862	1		mssEC 05	3284	Page 384
+5043	2	09 Mar 1862	1		mssEC 13	8643	Page 165
+5044	1	09 Mar 1862	1		mssEC 05	2891	Page 1
+5045	1	09 Mar 1862	1		mssEC 11	4478	Page 37
+5045	2	09 Mar 1862	1		mssEC 13	8651	Page 173
+5048	1	09 Mar 1862	1		mssEC 08	5304	Page 172
+5051	1	16 Mar 1862	2		mssEC 05	3002	Page 112
+5051	2	16 Mar 1862	0				
+5051	3	16 Mar 1862	1		mssEC 05	3127	Page 237
+5054	1	21 Mar 1862	0				
+5054	2	21 Mar 1862	0				
+5054	3	22 Mar 1862	1		mssEC 11	4730	Page 289
+5056	1	22 Mar 1862	1		mssEC 13	8851	Page 373
+5056	2	27 Mar 1862	1		mssEC 13	8826	Page 348
+5059	1	29 Apr 1862	0				
+5059	2	01 May 1862	1		mssEC 08	5315	Page 183
+5059	3	01 May 1862	0				
+5102	1	05 Jul 1862	0				
+5102	2	05 Jul 1862	1		mssEC 06	7100	Page 300
+5103	1	06 Jul 1862	2		mssEC 12	7861	Page 203
+5104	1	13 Jul 1862	0				
+5104	2	13 Jul 1862	0				
+5104	3	13 Jul 1862	0				

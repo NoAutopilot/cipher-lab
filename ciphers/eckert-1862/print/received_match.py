@@ -11,6 +11,9 @@ Usage: received_match.py RES_DIR RECV_DIR [--write | --check]
             mssEC 01 = object 6796 "War Department Ciphers Received Feby. 2 to July 30, 1862"; mssEC 02 = 3820 "Feby. 7
             to June 26, 1862"; mssEC 03 = 2129 "Feby. 22 to May 2, 1862". Not committed (their credit; re-fetch).
   --write rewrites print/residue/received_match.tsv; --check exits 1 if it is stale.
+  --vols 04,05,...,14 (D1-ECK62L, 6 Oct 2026): match against these received ledgers instead (volNN.json, same dmQuery
+            with mssEC%20NN); output goes to print/residue/received_match_<first>-<last>.tsv and control (b) takes the
+            first listed ledger as the reference. Without --vols the run is the GAPS171 one, unchanged.
 
 Method (word 5-grams, the GAPS113 or_match.py idea applied to the received side). A residue entry is decoded with the
 dated key (decode.py); its 5-grams are taken from the raw sent text AND from the decoded text (meanings in place of
@@ -48,9 +51,12 @@ def grams(ws):
     return {tuple(ws[i:i + N]) for i in range(len(ws) - N + 1)}
 
 
+VOLS = ("01", "02", "03")
+
+
 def received(recv_dir):
     pages = []
-    for v in ("01", "02", "03"):
+    for v in VOLS:
         for r in json.load(open(os.path.join(recv_dir, f"vol{v}.json")))["records"]:
             t = r.get("transc") if isinstance(r.get("transc"), str) else ""
             if t.strip():
@@ -131,12 +137,13 @@ def run(res_dir, recv_dir):
         sc, j = best(grams(enc) - common, pg)
         hit_a += (j == k and sc >= thr)
     # positive control (b): real cross-ledger twins (mssEC 02/03 pages against mssEC 01 pages)
-    v1 = [k for k, p in enumerate(pages) if p["vol"] == "01"]
-    oth = [k for k, p in enumerate(pages) if p["vol"] != "01"]
+    v1 = [k for k, p in enumerate(pages) if p["vol"] == VOLS[0]]
+    oth = [k for k, p in enumerate(pages) if p["vol"] != VOLS[0]]
     hit_b = sum(1 for k in oth if max((len(pg[k] & pg[j]) for j in v1), default=0) >= thr)
     summ = {"sent_entries": len(sent), "received_pages": len(pages), "null_draws": len(null), "null_p99": p99,
             "threshold": thr, "ctl_a_recall": f"{hit_a}/{len(pick)}", "ctl_a_code_subs_per_window": round(subs / len(pick), 2),
-            "ctl_b_02_03_pages_with_01_twin": f"{hit_b}/{len(oth)}",
+            ("ctl_b_02_03_pages_with_01_twin" if VOLS == ("01", "02", "03") else
+             f"ctl_b_other_pages_with_{VOLS[0]}_twin"): f"{hit_b}/{len(oth)}",
             "twins": sum(1 for _, sc, _ in rows if sc >= thr)}
     return rows, pages, summ
 
@@ -154,8 +161,12 @@ def render(rows, pages, summ):
 
 
 def main(argv):
+    global VOLS, OUT
     if len(argv) < 3 or argv[1] in ("-h", "--help"):
         print(__doc__); return 0
+    if "--vols" in argv:
+        VOLS = tuple(argv[argv.index("--vols") + 1].split(","))
+        OUT = HERE / "residue" / f"received_match_{VOLS[0]}-{VOLS[-1]}.tsv"
     rows, pages, summ = run(argv[1], argv[2])
     out = render(rows, pages, summ)
     print(json.dumps(summ, indent=1))

@@ -1752,3 +1752,60 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; cheapest next: a received-ledger pass on mssEC 04-14 by the GAPS171 method, ~$2; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
+
+## D1-ECK62L (6 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261006-1240): received ledgers mssEC 04-14 by the GAPS171 method
+
+- Harvest: one CONTENTdm `dmQuery` per ledger on `callid` (the GAPS171 URL form), fetched once 6 Oct 2026; rows appended to
+  print/residue/received_manifest.tsv with sha256 (texts not committed, their credit; re-fetch). mssEC 01-03 and the 58
+  residue pages of mssEC 15 were re-fetched by the same route: all 01-03 sha256 and all 58 page-text sha256 match the
+  GAPS171/pages_manifest values. Spans, by year counts in the volunteer text: 04 Apr-Jul 1863 (288 pages), 05 Aug-Dec
+  1862 into 1863 (408), 06 and 07 Apr-Jul 1863 (442, 410), 08 and 09 Jul-Nov 1863 (414 each), 10 and 11 Apr-Jul 1864
+  (414 each), 12 and 13 Jan-Aug 1865 (414 each), 14 1866-67 (104). 3,987 pages with text in all. None of them covers
+  Feb-Jul 1862, the residue's own span, so few twins were expected.
+- `print/received_match.py` gains `--vols` (default 01,02,03 unchanged: `--check` on the committed GAPS171 TSV exits 0).
+  Run `--vols 04,...,14 --write` -> print/residue/received_match_04-14.tsv: 124 residue entries, null p99 0, threshold 3;
+  control (a) synthetic coded twins 60/60 at rank 1 (0.72 code words per 40-word window, below the residue's 1.28 because
+  the 1863-67 vocabulary carries fewer 1862 key meanings: a weaker control than GAPS171's); control (b) 270 of 3,715
+  pages of 05-14 have a twin in 04 (duplicate copies across ledgers are common in these years).
+- Result: 2 entries at the threshold (score 3), both read and rejected as non-twins: 5021.2 (25 Feb 1862, Marcy to Lander)
+  shares only "at short notice signed R B Marcy" with mssEC 05 p.195 (27 Oct 1862, Marcy to Col. Clarke); 5035.1 (3 Mar
+  1862, to Rosecrans) shares only "the South Branch of the Potomac" with mssEC 11 p.11 (1 Feb 1864, Meade's HQ to Halleck).
+  Different dates, senders' business and wording otherwise. Entries matched: 0. Residue unchanged, 124 entries before
+  and after; no reading or key change, so decode.py --check not needed (run anyway: see the done line). The
+  shuffled-word null does not model shared formula and place-name phrases at 3,987 pages; a threshold-3 hit
+  needs reading before it counts as a twin.
+- Witness found outside the twin search (GAPS171's one-telegram-word check, applied to 04-14): Nutmeg occurs once, mssEC 04
+  p.210 (object 4359), Fort Monroe 5 Jul 1863, Ludlow to Dix: "the Confederate tug torpedo left her anchorage above new
+  ports news at half past one this after noon and proceeded up the Nutmeg". OR ser. II vol. 6 p.83 (Internet Archive
+  warofrebellion0206rootrich, djvu text, grepped) prints the same report to Stanton: "left her anchorage at 1.30 p.m. this
+  afternoon and proceeded up the James River". Aligned: Nutmeg = James River (C, received direction, 5 Jul 1863). The
+  same page carries Ludlow's copy to Stanton via Eckert in another code: Hannibal = James River, Martha = 1.30 [p.m.],
+  Japan = City Point (C, same print). key.md has Japan = Manassas (C, 25 May 1862): code words were reused with new
+  values between 1862 and 1863, so this 1863 witness agrees with the 1862 proposal Nutmeg = James River (5035.1, 3 Mar
+  1862, one telegram; GAPS142) but does NOT reach the >= 2 telegrams bar for an 1862 row. key.md unchanged; the
+  proposal stays held. Other one-telegram words in 04-14: Ellen 4 (one is the ship "Ellen S Terry", plain), Luna 4
+  (all mssEC 04, 1863, one a signature "Luna Commanding"), Lamb 7, Dawn 3, Andes 1 (a transposition-route 1863 text),
+  Indus 0; none read further (1863+ books, not the 1862 key).
+- Not done (one-line suggestion, rule 7): mssEC 12-13 (Jan-Aug 1865) are now harvested; they are where the received copies
+  of the 27 Jan and 24 May 1865 telegrams would be (the Lehigh third witness gap), ~$1.5.
+- Requests: hdl.huntington.org 16 (15 ledger queries, one retry of mssEC 07 after an empty reply); archive.org 4
+  (2 advancedsearch, 2 djvu text: warofrebellion273unit, ser. I vol. 27 pt 3, no hit; warofrebellion0206rootrich).
+  No vision, no subagents.
+
+## Remaining gaps (finish-or-blocker pass, D1-ECK62L, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); received ledgers mssEC 01-14 all searched for residue twins (GAPS171, D1-ECK62L): 0 code-bearing twins; mssEC 18 cascade split2 (ec18/s2/): 729 entries, align_free AGREE 0.427 vs control 0.088; 17 neither-book entries: 0 wrong telegram, 5 right, 12 undecided
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L, 0 twins); next: the image of the residue pages against the volunteer text for the M-graded tokens (transcription slips the decode reads as code), ~$4
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; Nutmeg = James River gains a 5 Jul 1863 witness (C, D1-ECK62L) but no second 1862 telegram; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); next: the received copies of the 27 Jan and 24 May 1865 telegrams in mssEC 12-13 (harvested 6 Oct 2026, D1-ECK62L) for a third witness, ~$1.5
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; the 13 code words date 30 Dec 1864 - 13 Jul 1865, Cipher No. 3/No. 4 period; the Huntington holds only No. 5 (R8-ECK62); the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; 100 under the legacy split, 137 '?' entries under split2 print_q; next: the image (marker words the volunteer text may have dropped) for the dated `?p` entries under split2, ~$4
+
+## Escalation (D1-ECK62L, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171) and mssEC 04-14 6 Oct 2026 (D1-ECK62L, 0 twins, Nutmeg 1863 witness); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram and conflict-pair tests done on legacy (R7B-ECK62, R7C-ECK62C) and split2 (R10-ECK62T: 0 wrong, 5 right, 12 undecided; primary untested at N 60); splitter fixed and adopted (R9-ECK62, R10-ECK62S, R10-ECK62T)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: the 1865 received copies in mssEC 12-13 for the Lehigh third witness, ~$1.5; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
