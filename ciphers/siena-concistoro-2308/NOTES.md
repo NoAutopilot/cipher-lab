@@ -544,7 +544,7 @@ Grades: no token read; no H or C. Nothing decoded as a reading and no key.tsv wr
 5 8 7 2 # ◎ 4, shares ◎ and #) and the other 1540s orator keys of fasc. 1 for a sheet carrying ◎, ⊔, barred x and R, about USD 2-3 (one
 login, key-sheet crops only). If none has them, no. 15 stays too-short with no fitting key.
 
-## R9-SIENA7 -- no. 7 anchored homophonic fit (account 4 worker for LANE-RUN9-account-4, 6 Oct 2026, 05:43-05:57 UTC by date -u)
+## R9-SIENA7 -- no. 7 anchored homophonic fit (account 4 worker for LANE-RUN9-account-4, 6 Oct 2026, 05:43-05:56 UTC by date -u)
 
 Brief `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-SIENA7 (R8-SIENA7's "Next step for no. 7"). Status unchanged:
 `open`. Disk only. Requests: github.com 1 sparse shallow clone of dbourdeau/cyphersolver `targets/siena1421` (HEAD adbf9a1, read
