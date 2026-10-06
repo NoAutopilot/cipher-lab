@@ -1,0 +1,17 @@
+# R15-SUR758 per-token image labels, worker's own eye, 6 Oct 2026 18:19-18:23 UTC; native region {base}/2860,880,1974,2220 (manifest:
+# ../inv373_0758_r14/crops/manifest.tsv), crops cut by tools/iiif_lines.py --centres as R14-SUR758, cipher row zoomed 1.6-4x by PIL.
+# Not blind to R15-SURALIAS's post-hoc hit list (PREREG caveat); labels decided on shape, description per row.
+unit	crop	reader_context	label	shape
+S1	L01	[pi] s 3 l 6	S	short s-form with a dot at the foot, x-height only, no tall stroke or loop
+S2	L04	g . s 3 v	SH	dot-headed short stroke joined to a tall long-s with closed loop and descender (reader split it as '.' + s)
+S3	L04	s s 3 r	SH	same ligature as S2: dot-headed short stroke joined to tall looped long-s, one sign
+S4	L05	e | s [delta]	SH	same ligature, dot-headed short stroke + tall looped long-s, one sign
+S5	L11	x | s s e h	SH	same ligature, dot-headed short stroke + tall looped long-s, one sign
+S6	L12	r s e 3	OTHER	small 5-like form with a flat top bar, x-height only, no tall stroke (could be the digit 5)
+S7	L13	0 s b	SH	dot-headed short stroke joined to tall looped long-s descending below the line, one sign
+S8	L13	o s m	SH	same ligature as S7, one sign
+S9	L14	3 s k	S	script capital S, about 1.5x x-height, sits on the line, no long-s descender
+IJ1	L03	e i j	ONE	i joined into j in one stroke, two dots above (Dutch ij letter form), distinct from the neighbouring y-form [y-fam]
+IJ2	L05	[delta] i j r	ONE	as IJ1, joined, two dots
+IJ3	L05	e i j d	ONE	as IJ1, joined, two dots
+IJ4	L12	[pi] i j n	ONE	as IJ1, joined, two dots
