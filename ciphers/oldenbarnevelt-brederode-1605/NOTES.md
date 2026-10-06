@@ -648,3 +648,40 @@ records (4578, 4579, 4581-4584, 4586, 4587, 4589-4593; about 20 images; Hessen-K
 the in-window Hessian chancery) plus Munich 9280/9282/9305/9306/9308, reading only the code column's range and the item
 date; ~3 (estimate). Pre-register a fit test only for a key whose names reach the 700s and whose date touches 1605.
 
+
+## Marburg 4 d 1219 and five Munich keys read at full size (R9-OBRED3, 6 Oct 2026, 05:18-05:30 UTC)
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run9-jobs.md`, job R9-OBRED3 (R8-OBRED2's named next step). One browser login
+(`tools/decode_browser_login.js 4578 <scratch> --fetch-page <17 RecordsView URLs> --guess-fullsize --max-files 140 --delay 1700`):
+logged in; all 64 full-size images of the 18 records served (none the forbidden.png placeholder). Images and the logged-in pages
+stay in the session scratchpad only, never committed (they carry the account name; re-fetch: same command). Each record read by eye
+from a per-record contact sheet of its full-size pages. Results, one row each in `decode_keys_palatine_hessian.tsv` (`fit` column):
+
+- **Marburg HStAM 4 d Nr. 1219 (13 records, 4578-4593): every code value stops at or below 100** (`no-range`). The bundle is
+  Hessen-Kassel chancery keys of Landgrave Moritz's time: homophonic numeral alphabets (10-99, 1-96, 10-78, 10-82, 19-99, 11-99)
+  with names keyed to graphic signs or letter pairs. The closest in content is **4586** (French, c.1609-14 by its names: 16 les
+  Estats du Paisbas, 26 le Prince Maurice, 28 Christian d'Anhalt, 30 le pal. Wolffg. Wilhelm, 33-38 the Electors including
+  Palatin, 46 l'Empereur; H for the rows quoted) -- the Palatine/Union network of this letter, but its alphabet is 10-78 and its
+  name list 10-46, so it cannot carry 241, 289, 337, 611, 617, 628 or 741. **4589** ("Clavis cum Illustrissimo Principe nostro":
+  letters 1-70, names 71-100, 82 Kon. Mattias, 95 Landgraf Moritz) and **4587** (homophonic 10-99, names as signs, Principes
+  Uniti, P. Moritz, Conte Jean) are in or near the window and also too small. 4593 is 1620s (Mansfeld, Tilly, Bethlen Gabor).
+- **Munich BayHStA KAA 4591 9280, 9282, 9305, 9306, 9308: out of window and wrong symbol set** (`no-date`). Four are copies of one
+  German key (Alba, Prinz von Oranien, Prinz von Conde, Admiral, Hugenotten, Pfalzgraf Casimir: c.1568-80) using capitals, Roman
+  numerals and signs, with Arabic numerals only for seven cities (No. 1-7) and a few words (und 10, der 2, die 6); 9282 is a
+  Cologne-War-era list (Erzherzog Mathias, Herzog Ernst, the Cologne postulation; 1580s) on the same pattern. DECODE's "Numerical"
+  tag on these rests on those small numbers.
+
+**Fit:** no record has numeral codes reaching the 700s, or even past 100, so no fit test was pre-registered or run (the brief's
+condition was not met). Rule 10: a reading of 18 DECODE key sheets on 6 Oct 2026, not a verdict on the letter and not evidence that
+no fitting key exists. A design observation for whoever continues (M, inferred): the in-window Palatine/Hessian chancery keys seen so
+far (4586, 4587, 4589, 4581) are all small two-digit systems; a 30-741 code range points to a larger nomenclator than this
+chancery's, e.g. a Dutch-side (Oldenbarnevelt/States) key, which is where "Key hunt" already looks.
+
+Requests: de-crypt.org 1 browser login + 18 RecordsView pages + 128 files (64 thumbnails, 64 full-size), 1.7 s apart; no
+403/429/challenge.
+
+Still unread at full size in the screened table: 74 Munich KAA 4591 records and Marburg 4687 and 4691 (Nr. 1234, `unknown-thumb`; 4690 of the same bundle was already read as post-1624); the Munich
+bundle's thumbnails show the same sign-based 16th-century family as the five read here, so they rank low. Status stays `open`.
+
+Next cheap step (named, not run): the NA 1.01.02 / 3.01.14 archive hunt for a States-side key of 1600-1610 ("Key hunt" above), not
+more Munich KAA 4591 sheets.
