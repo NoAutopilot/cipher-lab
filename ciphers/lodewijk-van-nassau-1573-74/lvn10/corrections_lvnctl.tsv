@@ -1,0 +1,11 @@
+line	pre_pos	old	new	confidence	note
+p3_L12	12	120	126	S	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade S per R15-LVNCTL
+p3_L13	2	135	185	M	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade M per R15-LVNCTL
+p3_L15	2	85	35	S	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade S per R15-LVNCTL
+p3_L17	6	61	31	S	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade S per R15-LVNCTL
+p3_L18	8	81	87	S	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade S per R15-LVNCTL
+p3_L20	15	102	161	M	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade M per R15-LVNCTL
+p3_L21	7	82	32	S	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade S per R15-LVNCTL
+p3_L22	3	32	82	S	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade S per R15-LVNCTL
+p3_L23	3	51	61	S	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade S per R15-LVNCTL
+p3_L24	15	130	136	S	image300 lvnctl: control value wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree; lvn10/control_recheck.tsv, control_corrected.tsv), grade S per R15-LVNCTL

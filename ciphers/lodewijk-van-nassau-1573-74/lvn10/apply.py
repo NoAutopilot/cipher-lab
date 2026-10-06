@@ -19,6 +19,10 @@ if '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'c': PA,
 # --round d (R14-LVN10D, 6 Oct 2026, lvn10/PREREG_D.md): repaired per-token crops, reads A7/B7, aligned_d.tsv -> apply_log_d.tsv, tag lvn10d.
 if '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'd': PA, PB, ALN, LOG, TAG = 'A7', 'B7', 'aligned_d.tsv', 'apply_log_d.tsv', 'lvn10d'
 pre = rd(os.path.join(H, 'ciphertext_4610_pre.tsv'))
+# R15-LVNAPP (6 Oct 2026): the 10 control values R14-LVNEYE and R15-LVNCTL both found wrong on the 300-dpi image
+# (lvn10/corrections_lvnctl.tsv, grades S/M per R15-LVNCTL), applied in every round after any settle. The control
+# gates above still score the uncorrected aligned_*.tsv control column; this does not re-score any round as a licence.
+post = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvnctl.tsv'))}
 al = {(r['line'], r['position']): r for r in rd(os.path.join(H, ALN))}
 ctl = {PA: [0, 0], PB: [0, 0]}
 for r in al.values():
@@ -55,6 +59,12 @@ for r in pre:
             act = act or 'slash-kept'
             if TAG not in alt: alt = (alt + '; ' if alt else '') + f'{TAG} {PA}:{A} {PB}:{B}'
         log.append([r['line'], r['position'], r['sign'] if act not in ('settled', 'confirmed') else r['sign'], r['confidence'], A, B, act or 'none'])
+    c = post.get((r['line'], r['position']))
+    if c:
+        assert sign == c['old'], (r['line'], r['position'], sign, c['old'])
+        alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
+        sign, conf, why = c['new'], c['confidence'], c['note'] + f' (pre pos {r["position"]})'
+        log.append([r['line'], r['position'], c['old'], r['confidence'], '', '', 'lvnctl-corrected'])
     pos += 1
     out.append([r['line'], str(pos), sign, conf, alt, why])
 def tsv(rows, head):
