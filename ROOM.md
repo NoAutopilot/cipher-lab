@@ -9118,3 +9118,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 03:46 | R8-COL26 worker | claim for LANE LANE-RUN8-account-1: colbert26-lathuillerie-1644 canvas 62-63 numerals+gloss, cap 4.5, box to 04:51 UTC
 2026-10-06 03:46 | R8-PIS worker | claim: fr16045-pisany-rome-1585, f.275v L17-L20 interlinear gloss as C witness; cap 3, box end 04:35 UTC; for LANE LANE-RUN8-account-1
 2026-10-06 03:46 | R8-NICH2 worker | done (03:44-03:47 UTC by date -u, brief met): sp77-nicholas-1659 Cal. Clar. iv pp.310-316 read, no entry names or quotes the f.289 letter, no Sir L.R.; NOTES.md section added, status open; for LANE LANE-RUN8-account-4
+2026-10-06 03:46 | R8-SPLOOK worker | done (03:44-03:46 UTC by date -u, brief met): a) f.52 Tomokiyo pages unchanged, 092/093.jpg 404, comment only; b) SP 81/44/88 record names no cipher; c) Thurloe vols 2-5 no Brasset/Townesend, Buckingham mentions only. NOTES ticked in 3 folders, for LANE LANE-RUN8-account-4
