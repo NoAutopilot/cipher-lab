@@ -51,7 +51,7 @@ system	sign	value	grade	n	units
 98	Dp	p	C	2	p:2
 98	EL8	das	C	4	das:3,das~:1
 98	HX	uns	M	1	uns~:1
-98	K	der	C	1	der:1
+98	K	der|die	M	2	der:1,die:1
 98	L	l	C	42	l:40,m~:1,l~:1
 98	Lf	m|l	M	23	m:18,m~:3,l:1,l~:1
 98	M	und	C	7	und:7
