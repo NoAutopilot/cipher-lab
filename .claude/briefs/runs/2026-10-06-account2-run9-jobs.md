@@ -132,3 +132,24 @@ fetch+rebase immediately before writing):
     (data.riksarkivet.se answers HTTP 000 from the cloud, re-tested 05:2x UTC 6 Oct): digitisation flag for the Celsing dispatches in
     Diplomatica Turcica 1746-1770 and Sillen's dag- och brefbocker, and every record under SE/RA/721512 (Biby), quoted flag + URL each.
 Then add one line under each folder's NOTES.md "While waiting"/Escalation naming the L-row. Push with tools/room.py --push.
+
+### R9-ROUSV2 -- naf14913-rousseau-venice-1743, verifier on the 605 = republique key entry (cap 2, box 40 min)
+Intake gate: `naf14913-rousseau-venice-1743: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+You are a verifier, not the solver. R9-ROUS4 (commit 66ffa091a, PREREG c962e56e5) entered 605 = republique into key.tsv at grade C from a
+count-vector gate (p 0.036/0.034, same-class planted known-answer). Check: (1) the PREREG was committed before the scored run (git log
+order) and the run followed it; (2) the known-answer control could fail differently from the target (rule 3) and the licence was met;
+(3) a count-vector gate licenses grade C (known plaintext) or only S (cryptanalytic with a control) under rule 4 -- C requires the
+plaintext from a slip/clear source at that occurrence; regrade if needed; (4) decode --check exit 0; (5) carry any change into AUDIT.md and
+any SECOND-OPINIONS-QUEUE.tsv row for this target (rule 10 propagation). Write a short dated verifier section. No new cryptanalysis.
+
+### R9-NLATX -- nla-heinrich-braunschweig-1519, numeral-group transcription + Grein sheet-key apply check (cap 6.5, box 80 min)
+Intake gate: `nla-heinrich-braunschweig-1519: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R9-NLACS (commit 5de199eb4): no printing located; the target stays open with a period key in hand. NOTES.md's costed next step: transcribe the
+numeral groups only (about 18 groups on Nr. 548 aufn 0003, about 12 on Nr. 562 aufn 0003; ~10 + ~8 lines). Units: crop step first
+(`tools/iiif_lines.py --image ciphers/nla-heinrich-braunschweig-1519/images/<file> --out .../images/crops`, paste the command), then one blind
+Sonnet pass per letter on line crops only (2 units) and one reconciliation from the crops (1 unit), ~1.5 each = ~4.5 + session floor.
+Transcribe each sheet's key table into key.tsv (one per letter: key_548.tsv, key_562.tsv or a decode.json layout), apply with
+tools/decode_key.py (grade H for every group the sheet's key reads; I for repairs, M for uncertain), diff against the sheet's own deciphered
+word list, and report agreements/disagreements with counts. Add a decode --check script per rule 7. Run tools/judge_plaintext.py only if a
+spec with a Low German judge exists (else say none). Status stays `open` or moves per rule 5 only with the counts written; flag in ROOM for a
+verifier (N-class and depth are the verifier's). Report what was found and where it was not found; do not classify novelty.
