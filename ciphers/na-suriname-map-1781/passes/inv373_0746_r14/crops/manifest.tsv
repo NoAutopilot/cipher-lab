@@ -1,0 +1,10 @@
+# R14-SUR746 crops, 6 Oct 2026. Not committed (folder over 30 MB). Regenerate: fetch the two native regions, then cut.
+# base = https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/6faa084a-09a4-42eb-bbba-0742e58d58a8.jp2
+#   (NL-HaNA_1.05.03_373_0746.tif, native 4992x4023; R13-SURSWP4 plan.tsv order 749)
+# left.jpg  = {base}/560,150,2040,3800/full/0/default.jpg   (left page; fetched by: python3 tools/iiif_lines.py "{base}" --region 560,150,2040,3800 --out L --dry-run)
+# right.jpg = {base}/3060,150,1900,1260/full/0/default.jpg  (right page text above the signatures)
+# python3 tools/iiif_lines.py --image left.jpg --out cL --prefix p0746L --centres 133,301,476,643,816,1006,1187,1376,1567,1745,1922,2123,2315,2493,2665,2828,2998,3171,3350,3528,3748 --debug
+# python3 tools/iiif_lines.py --image right.jpg --out cR --prefix p0746R --centres 179,356,534,671,840,1006 --debug
+# (centres = gloss+cipher pair midpoints from the --dry-run ink profile (--distance 45 --prominence 40/30), eye-checked on two contact sheets.)
+# Pass crop names: L01-L21 = p0746L_L01-L21 (L21 = catchword cipher with a plain word below), R01-R06 = p0746R_L01-L06
+# (R04 = "brengen." over "d07ygdl."; R06 = "oorlog de Valk" over the cipher group before "den 24 October 1781").
