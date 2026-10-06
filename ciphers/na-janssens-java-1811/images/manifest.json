@@ -681,6 +681,26 @@
    "local_thumb": null,
    "local_med": "images/229_med.jpg",
    "eye_check": "GAPS10 thumbnail only: numeric clusters (sums-like) + pasted prose slip, resembles 230's arithmetic jotting; 1200 px copy not yet eye-checked"
+  },
+  {
+   "invnr": 26,
+   "order": 10,
+   "label": "NL-HaNA_2.01.27.05_26_0010.jpg",
+   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/fad517af-1f61-4725-bbe3-31698f21ca3d",
+   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=4e/57/e5/96/8e/74/4f/b6/b2/af/95/52/d9/9f/fc/ab/fad517af-1f61-4725-bbe3-31698f21ca3d.jp2/info.json",
+   "local_thumb": null,
+   "local_med": "images/inv26_010_med.jpg",
+   "eye_check": "R10-JANS26 6 Oct 2026: second copy of dispatch No.1's cipher (right page, foliated 5); same code sequence as invnr 12 leaf 188 plus 5 leading codes; no gloss"
+  },
+  {
+   "invnr": 26,
+   "order": 11,
+   "label": "NL-HaNA_2.01.27.05_26_0011.jpg",
+   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/bb74ac71-85ea-4fdc-b385-bcd3df589f97",
+   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=4e/57/e5/96/8e/74/4f/b6/b2/af/95/52/d9/9f/fc/ab/bb74ac71-85ea-4fdc-b385-bcd3df589f97.jp2/info.json",
+   "local_thumb": null,
+   "local_med": "images/inv26_011_med.jpg",
+   "eye_check": "R10-JANS26 6 Oct 2026: last 2 code rows of the No.1 copy + Janssens signature and date line; right page the next prose letter"
   }
  ],
  "note_25sept_VX-RD02": "gap leaves 180-184/201-202/204-208/210 thumbnailed (all plain prose/tabular, no cipher); leaves 188/190/191/192/198/199/200 refetched at IIIF full/2561 for transcription (images/NNN_hi.jpg)",
@@ -689,5 +709,6 @@
  "note_2oct_GAPS6": "leaf 187 right-page slip fetched once at native IIIF resolution (region 2558,1229,2387,2626 of 5034x3914; images/crops_187/187_right_native.jpg, 2 Oct 2026, 2 requests incl. info.json); line crops and overlay in images/crops_187/ (tools/iiif_lines.py, see its manifest.json); transcription leaf187_text.txt",
  "note_2oct_GAPS10": "GAPS10 (2 Oct 2026, account-4): contact-sheet page-through of 45 invnr 12 leaves not on disk (137-178 unsampled ones, 220-232 unsampled ones), service.archief.nl /thumb/ 256 px, 3 sheets x 15-16 thumbnails, kept in scratch not the repo; per-leaf class in leaves_gaps10_contact_inventory.tsv; no cipher grid, gloss or plain copy found; leaf 229 numeric-uncertain fetched at IIIF 1200 px as images/229_med.jpg",
  "note_2oct_GAPS11": "GAPS11 (2 Oct 2026, account-4): 229_med.jpg eye-checked (arithmetic + French prose slip, not cipher); contact-sheet page-through of 58 invnr 12 leaves 68-136 not previously sampled (service.archief.nl /thumb/ 256 px, 4 sheets, scratch only) plus leaf 188 thumbnail as known-positive control; per-leaf class in leaves_gaps11_contact_inventory.tsv; no cipher grid, gloss or plain copy found",
- "note_2oct_GAPS12": "GAPS12 (2 Oct 2026, account-4): contact-sheet page-through of the 55 invnr 12 leaves 2-67 not previously sampled (service.archief.nl /thumb/ 256 px, 4 sheets, scratch only), leaf 188 thumbnail as known-positive control on every sheet; per-leaf class in leaves_gaps12_contact_inventory.tsv; no cipher grid, gloss or plain copy found. Invnr 7 scan list (190 scans, ids and thumb URLs) saved as invnr7_scans.tsv from one item-page request; no invnr 7 thumbnail fetched."
+ "note_2oct_GAPS12": "GAPS12 (2 Oct 2026, account-4): contact-sheet page-through of the 55 invnr 12 leaves 2-67 not previously sampled (service.archief.nl /thumb/ 256 px, 4 sheets, scratch only), leaf 188 thumbnail as known-positive control on every sheet; per-leaf class in leaves_gaps12_contact_inventory.tsv; no cipher grid, gloss or plain copy found. Invnr 7 scan list (190 scans, ids and thumb URLs) saved as invnr7_scans.tsv from one item-page request; no invnr 7 thumbnail fetched.",
+ "note_6oct_R10-JANS26": "invnr 26 (2.01.27.05, 191 scans; scan list invnr26_scans.tsv) entries carry 'invnr': 26; all other entries are invnr 12. Scans 1-58 paged by 256 px contact sheet (leaves_jans26_contact_inventory.tsv); 10 and 11 fetched at IIIF full/1200,/0."
 }
