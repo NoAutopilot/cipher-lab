@@ -128,3 +128,20 @@ R12A-PISRS committed 4 shape-settled T36 labels into tx86e (f.275r L04/L09/L12/L
 Check the change against the PREREG and the crops (do the 4 labels follow from the prereg'd shape rule?), confirm decode --check, and carry
 the revised counts into AUDIT.md (a "## Carry-over R12A-PISV" section even though f.275r itself is not yet an audited item: say so), status.json
 and any SECOND-OPINIONS-QUEUE.tsv row for this target. Do not raise any N-class or depth.
+
+## Wave 4 (18:4x UTC, last wave; lane at ~45 of 60)
+
+### R12A-F5160B -- fr5160-letellier-1653, finish the Colbert 26 part III sweep (130 canvases left). Cap 3.5, box 60 min.
+Continue R12A-F5160 exactly (colb26/sweep_405_779.tsv lists the 130 left: 533, 562, 591, 593, 608, 623, 624-779), same 600-px method and
+control canvas; Gallica >= 2 s apart this time; stop on 5 consecutive failures and record where. Update the tsv, the R12A-F5160 section and
+Remaining gaps / Escalation; gaps_check.
+
+### R12A-SEUT2 -- fr3151-seure-1558, reconcile the Tournon fo. 22r passes with the slip as known plaintext. Cap 4.5, box 70 min.
+R12A-SEUT's named next: reconcile passes A/B (err 0.318) using the slip decipherment (524 letters, M) as known plaintext, then a
+pre-registered held-out-half gate (lines 1-6 build, 7-13 score, against a shuffled-slip control that can fail differently); only if that gate
+passes, score the Tournon key on the items 43/44 body per PREREG-SEUT's R1/R2. Report both numbers. Units: recon 2 + gate 1 + test 1 x ~1.
+No key change unless gates pass; gaps_check.
+
+### R12A-D1411LA -- decode-1411-hhsta-vienna-1600, look-alike pass on the 4/5 splits of p.4. Cap 2.5, box 45 min.
+R12A-D1411P4's named next: `tools/lookalike_pass.py` on the p.4 4/5 splits (hand writes 5 as r-form, 4 as a cross), then re-score T21r coverage
+with the same pre-registered controls (D1411P4's prereg afc9de42d, re-used unchanged). 2-of-3 residual is agreement, not accuracy (LESSONS).
