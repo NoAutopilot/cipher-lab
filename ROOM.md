@@ -9433,3 +9433,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:17 | R11-SURY worker | claim na-suriname-map-1781: y-family m/n dot-level zoom, inv373 0692-0693, cap 3, box end 10:07 UTC, for LANE LANE-RUN11-account-2
 2026-10-06 09:18 | R11-RJMLA worker | claim: rah-juan-manuel-1521 look-alike pass on f.194/f.199 split tokens; cap 5, box 09:18-10:18 UTC (stop by 10:06) -- for LANE LANE-RUN11-account-2
 2026-10-06 09:17 | R11-ROELL13 worker | claim roell-vandedem-1809: NA 1.01.02 Levant lias 1793, Van Dedem 9 Feb 1793 received copy; cap 3, box end 10:08 UTC; for LANE LANE-RUN11-account-2
+2026-10-06 09:19 | R11-MORNER worker | done (09:17-09:20 UTC by date -u, brief met) for LANE LANE-RUN11-account-2: ra-morner-welin, 26 Books API queries on Kok4AAAAIAAJ: "Welin - Östergren" is a surname range of vol 154 (snippets); no chiffer/nyckel snippet found (control hits 3/3); stays open
