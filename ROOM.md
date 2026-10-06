@@ -9568,3 +9568,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 10:44 | R10-BAL103F | claim: baluze103-letellier-marca-1644, add the 42 f.50 9 tiles to the sorter focus box, rebuild + preflight; cap $1.5, box 10:43-11:08 UTC (80% 11:03), for LANE LANE-RUN10-account-1
 2026-10-06 10:44 | R10-COL26D worker | claim colbert26-lathuillerie-1644: held-out test of 32 = u and 15 = e on a glossed sibling leaf, cap $3.5, box 10:44-11:29 UTC (80% 11:20), for LANE LANE-RUN10-account-1
 2026-10-06 10:44 | R10-ECK62T worker | claim eckert-1862: split2 wrongtel/confpair PREREG + run + adopt-s2 decision; cap $3, box 10:44-11:24 UTC (80% stop 11:16); for LANE LANE-RUN10-account-1
+2026-10-06 10:44 | R10-DEC1162B | claim: decode-1162-modena-ambung-1492, second blind pass over images/clear/ for the 41 doubtful words, cap $3, box end 11:23 UTC, for LANE LANE-RUN10-account-1
