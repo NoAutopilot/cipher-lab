@@ -563,7 +563,7 @@ Vision calls: 0. Rule 10: this is a search and availability log; it makes no nov
 
 ## While waiting (FT4-fr3151-noailles-1558, 3 Oct 2026)
 
-- Survey the digitised Gallica fr. 10773 (btv1b52527305r: copies of Noailles's Venice/Constantinople dispatches) for a copied cipher alphabet, a key table or deciphered copies of the Nov 1558 letters: canvas labels first, then at most 2 vision calls at 1000 px, ~$2. This depends on nobody, unlike the fr. 4127 reproduction order.
+- Survey the digitised Gallica fr. 10773 (btv1b52527305r: copies of Noailles's Venice/Constantinople dispatches) for a copied cipher alphabet, a key table or deciphered copies of the Nov 1558 letters: canvas labels first, then at most 2 vision calls at 1000 px, ~$2. This depends on nobody, unlike the fr. 4127 reproduction order. Done: IMG-GALLICA1 (3 Oct 2026) and D22-F3151D (6 Oct 2026, below): fr. 10773 is La Vigne's Constantinople register and holds no copy of the 13 Nov 1558 letter.
 
 ## IMG-GALLICA1: fr. 10773 survey (3 Oct 2026, account 2 worker for LANE-IMAGES)
 
@@ -615,3 +615,60 @@ Vision calls: 2.
 Next step (one line, not actioned): a date-locating pass over fr. 10773, reading copy headings at about 1000 px by
 bisection on the folio labels (about 6-8 leaf views, about $2). Its aim is a clear copy of the 13 Nov 1558 letter to
 Lorraine, or of fr. 4127's Nov 1558 letters. FT4's (b), the fr. 4127 reproduction order, stands unchanged.
+
+## D22-F3151D: fr. 10773 date-locating pass (6 Oct 2026, 22:17-22:2x UTC, account 2 worker for LANE DEFAULT-account-2-20261006-2209)
+
+The step IMG-GALLICA1 named: locate Nov 1558 in Gallica fr. 10773 (btv1b52527305r) by reading copy headings and date
+lines, and find a clear copy of no. 33 (Noailles at Venice to the Cardinal de Lorraine, 13 Nov 1558) if it is there. No
+alignment to the cipher, no decoding.
+
+**What the volume is.** Every heading read is a letter *by* Jean de La Vigne at Constantinople (to the king or to
+Noailles) or a letter *to* La Vigne; none is a letter by Noailles. Read by this worker at about 900-1000 px:
+
+| folio (canvas, 0-based) | heading or date line read | date |
+|---|---|---|
+| 1r (c6) | "Discours que je donnai au Grand Seigneur a l'occasion de la venue du sieur de Boistaille" (top margin "Nouvelles acq. D.") | undated |
+| 13r (c30) | Italian letter ending "Constantinopoli. Alli 24 di Maio 1558" | 24 May 1558 |
+| 27r (c58) | "Lettre a Monsieur l'Evesque Dags Ambassadeur a Venise du 4 fevrier 1557" | 4 Feb 1557 (old style, = 1558) |
+| 31r (c66) | "Extrait d'une lettre de Monsieur de La Vigne escritte au Roi le 28 decemb. 1557 d'Andrinopoli" | 28 Dec 1557 |
+| 52r (c108) | mid-letter, no date on the leaf top | -- |
+| 65r (c136) | "Lettre a Monsr l'Evesque Dags du 19 Juin 1558" | 19 Jun 1558 |
+| 71v (c149) | king to La Vigne, "Escrit a Laon le treizieme jour d'Aoust 1558", signed Henry / Duthier, then a postscript to La Vigne | 13 Aug 1558 |
+| 77r (c160) | "Autre au meme du 29 septemb. 1558" | 29 Sep 1558 |
+| **83r (c172)** | letter ends "A Constantinople le 10 Novemb. 1558"; next heading "Autre au Roy du 14 novembre 1558" | **10 and 14 Nov 1558** |
+| **85r (c176)** | that letter ends "A Constantinople le 14 novemb. 1558"; next heading "Depesche au Roy du 7 fevrier 1559" | **14 Nov 1558, then 7 Feb 1559** |
+| 89r (c184) | mid-letter (the 7 Feb 1559 dispatch) | -- |
+| 93v (c193) | "Lettre du Monsr de La Vigne Ambassadeur pour le Roy de France vers le Grand Seigneur, A Monsr l'Evesque d'Acques, escritte le 20 mars 1559 de Constantinople" | 20 Mar 1559 |
+| 97r (c200) | "Lettre de Monsr de La Vigne a Monsr d'Acques du 19 may 1559" | 19 May 1559 |
+
+From f.17r on the copies run in date order (Dec 1557 to May 1559). Folios 1-16 are a front section of discourse and
+documents; only one date was read there (24 May 1558, f.13r). Leaves 84r-90v (c174-c192, 17 leaves) were viewed whole
+at 500 px by this worker's own eye for headings only. The only Nov 1558 copies in the volume are La Vigne's own two
+letters, 10 Nov 1558 (ending f.83r) and 14 Nov 1558 to the king (f.83r-85r). Then the volume jumps to 7 Feb 1559.
+
+**Result: fr. 10773 holds no copy of no. 33.** It contains no Noailles-to-Lorraine letter of 13 Nov 1558, and no other
+Nov 1558 letter by Noailles. This is conditional on the 13 heading and date points above and the 17-leaf heading scan
+of f.84-90. Folios 1-16 and the stretches between bisection points were not read line by line. But the dated run is
+monotone and is one sender's register, so a Noailles dispatch to Lorraine would be out of genre there. Two
+cross-references were seen in passing and not transcribed in full. On f.85v-86r, La Vigne's 7 Feb 1559 dispatch
+mentions letters received from "Mons. Dax" of 10 Dec and "vos depesches du 26 novemb." These are other letters, not
+no. 33.
+
+**Crops saved** (`tools/iiif_lines.py --ark btv1b52527305r --canvas N --region ... --debug`, manifest
+`images/fr10773_dates/manifest.json`; the overlays were checked by eye):
+- f.83r, canvas 173 (1-based), region 300,950,2600,750. This is the end of the 10 Nov letter plus the "Autre au Roy du
+  14 novembre 1558" heading: 5 lines, 10 crops.
+- f.85r, canvas 177 (1-based), region 200,2700,2800,700. This is "A Constantinople le 14 novemb. 1558" plus the
+  "Depesche au Roy du 7 fevrier 1559" heading: 4 lines, 8 crops.
+
+First and last lines of a no. 33 copy are not transcribed, since none was found.
+
+**Requests.** gallica.bnf.fr 37, one at a time and at least 2 s apart:
+- 31 leaf views (IIIF, 500-1000 px, the heading region or the whole leaf);
+- 2 info.json;
+- 3 native region fetches by iiif_lines. One of them missed the date line and was deleted and refetched.
+
+There was no 403, 429 or altcha. Vision subagent calls: 0, since every view was read by this worker's own eye. Rule
+10: this is a search log; it makes no novelty claim.
+
+Next step: Gallica SRU search for another digitised register of Noailles's own Venice dispatches of 1558 (dc.title or dc.source with "Noailles" and "Venise", plus BnF archivesetmanuscrits for "Noailles" "1558" copies), then a date check of any hit's Nov 1558 copies, ~$1.5; FT4's (b), the owner-side fr. 4127 fols. 131-151 reproduction order, stands unchanged and is still the route to a period cipher+decipherment pair of the same weeks.
