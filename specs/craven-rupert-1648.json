@@ -2,8 +2,10 @@
  "slug": "craven-rupert-1648",
  "name": "William, Baron Craven to Prince Rupert, The Hague, 6 Nov 1648 (BL Add MS 18982 ff.134-135, DECODE R8447)",
  "date": "6 Nov 1648",
- "language_candidates": ["en"],
- "ciphertext_pending": "No transcription in print (not in Warburton 1849) or as a DECODE attachment. DECODE R8447 has 3 pages, full images account-gated; BL images offline (searcharchives.bl.uk/catalog/040-002095608, 'digital images currently unavailable'). The BL note says the first part of the letter is heavily ciphered. Test 1 starts from a transcription.",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext_pending": "Transcribed 6 Oct 2026 (NA-CRAV): ciphers/craven-rupert-1648/ciphertext.txt from DECODE R8447 full-size images.",
  "alphabet": "numerical (DECODE: Symbol Sets Numerical, Cipher Type Unknown)",
  "constraints": {
   "tomokiyo": "seems to use some different cipher from the volume's solved letters (unsolved.htm)",
@@ -15,8 +17,24 @@
   "2. Key-family test: apply the decipherments of R8445/R8446/R8448/R8449 (cipher values vs plaintext from the volume) as candidate tables to R8447, and the Cryptiana Nicholas-Rupert and THE=g4 keys, vs a shuffled-key control at the same N and symbol count (rule 3, match the design). Cost ~$3."
  ],
  "matched_control": "shuffled-key control at the same N and K, same design (numeric code+nulls); to be run with test 2",
- "cheap_test_done": [],
- "judge": {"language": "en", "letters_min": 30, "letters_max": 400, "control_samples": 200, "note": "N unknown until test 1; 17th-century English, use an era-matched corpus if one exists in tools/data"},
+ "cheap_test_done": [
+  {
+   "date": "6 Oct 2026",
+   "by": "NA-CRAV (LANE NEWT-A-account-1)",
+   "test": "1. images + two-pass transcription + census + design_prior",
+   "target": "DECODE R8447 full-size obtained (3 pages); cipher only in 7 lines (f.134r 3, f.135v 4), rest of letter clear English; N=42 tokens (40 legible + 1 blotted X + 1 torn 18?), 35 distinct, range 18-1067, 26 two-digit + 15 three/four-digit, 2 half-marked (183h, 311h); repeats 63,29,404,97,52,85,65 x2; inter-pass agreement 41/43 = 95.3% (one span, settled 404 from image); design_prior: no family above its shuffled null (multi-sign d=0.23 vs null_p05 0.06; letter d=0.80 vs 0.32; code d=0.71 vs 0.64; mixed d=1.09 vs 0.29); advisory ranking nomenclator 0.25 < homophonic 0.28",
+   "control": "design_prior shuffled-input false-positive rate 0.140 (its own control at N=42)",
+   "verdict": "descriptive: images in hand, N=42 too short for design_prior to separate families; shape (2-digit units + 3-4 digit groups + halves) is consistent with a nomenclator; next: test 2 (sibling-letter tables) at the same N",
+   "cost": "read from get_session by the orchestrator"
+  }
+ ],
+ "judge": {
+  "language": "en",
+  "letters_min": 30,
+  "letters_max": 400,
+  "control_samples": 200,
+  "note": "N unknown until test 1; 17th-century English, use an era-matched corpus if one exists in tools/data"
+ },
  "value": "medium: sibling decipherments of the same correspondence are in the same volume; gated on image access",
  "model": "Sonnet",
  "written": "6 Oct 2026 by NB-CRAV (LANE NEWT-B-account-2)"

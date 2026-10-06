@@ -1,0 +1,12 @@
+# craven-rupert-1648 -- BL Add MS 18982 ff.134r, 135v (DECODE R8447 full-size images, 6 Oct 2026). As transcribed:
+# two blind passes (A: NA-CRAV worker; B: Sonnet subagent), reconciled from the native-resolution crops in images/.
+# Only the numeric groups are cipher; the rest of the letter (ff.134r, 135r, 135v) is in clear English.
+# h = raised fraction 1/2 after the number; X = group struck out and blotted, illegible; ? = partly lost to a tear.
+# One line per manuscript line; the clear words around each run are in NOTES.md.
+f134r.1	852 63 42 29 118
+f134r.2	248 404 1037
+f134r.3	18? 183h X 409 311h 183
+f135v.1	40 97
+f135v.2	52 35 85 72 60 52 65 63
+f135v.3	78 95 77 167 404 68 90 64 99 85 97
+f135v.4	86 65 29 107 1067 922 429

@@ -44,3 +44,32 @@ exit 0
 $ python3 tools/next_steps.py --wait-only | grep craven
 (no line)
 ```
+
+## Test 1: images and transcription (NA-CRAV, LANE NEWT-A-account-1, 6 Oct 2026 23:48-23:5x UTC)
+**Images.** I made one browser login to DECODE (`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 8447 <scratch> --guess-fullsize`). It returned all three full-size JPEGs: P1 f.134r 6975x9135, P2 f.135r 6975x9135, P3 f.135v 7023x9336, about 12 MB each. So R8447 is not account-blocked for full size, the same as A2-HDK found for record 4692. The full pages are not committed (36 MB). Their sizes, sha256 and the re-fetch route are in images/manifest.json `full_pages`. The saved record page was not committed, so no account name is on disk in the repo.
+**What the images show.** The letter is in clear English apart from seven lines of numeric groups: three near the foot of f.134r and the first four lines of f.135v. f.135r has no cipher. The BL catalogue says "the first part of the letter is heavily ciphered". On these images that describes about 42 groups, not a ciphered opening. Rough clear context, ungraded and not a reading: f.134r "...if it may bee done [852 ... 118]. [248.404.1037]. what you commanded to bee said to [18?.183½. X 409.311½.183.] is done..."; f.135v "your highnes may also write to .[40.97. 52.35.85.] & they will [72 ... 63. 78 ... 97. 86 ... 429.] I have done alreadie concerning Sr Edward Herbert...". The clear text is dated "Hage ye 6th Nov. 1648" on f.135v.
+**Crops (mandatory command, run):**
+```
+python3 tools/iiif_lines.py --image <scratch>/IMG_R8447_I39006_P1.jpg --out ciphers/craven-rupert-1648/images --region 850,5350,3800,1150 --prefix f134r --centres 330,640,830 --follow-slope 300 --lines-per-crop 1 --debug
+python3 tools/iiif_lines.py --image <scratch>/IMG_R8447_I39006_P3.jpg --out ciphers/craven-rupert-1648/images --region 2300,2050,4000,1100 --prefix f135v --centres 200,440,690,950 --follow-slope 300 --debug
+```
+I set the centres by eye, because the autocorrelation pitch misread the short blocks (59 px). The subagents saw crops only.
+**Passes.** Pass A was mine. Pass B was a blind Sonnet subagent, one call per cipher page (2 calls; f.135r has no cipher). `tools/reconcile_passes.py passes/passA.tsv passes/passB.tsv`: 41/43 = 95.3% agreement. There was one disagreeing span, f135v.3 col 5-6: A read 464, B read "4 . 64". I settled it from the native crop as **404**: there is no dot between the figures, and the raised middle figure is a 0 crossed by a descender from the line above. Both passes had misread it, so it is held at M. Agreed but M/L tokens: 63 (f134r.1), 18? (torn), X (blotted, possibly more than one group), 1037 (smudged 7), 90 (overwritten, possibly 80), 167, 40, 52, 86 (pass B). Output: ciphertext.txt.
+**Census.** N=42 tokens (40 legible, 1 struck X, 1 torn 18?), 35 distinct. Values run 18-1067: 26 two-digit and 15 three- or four-digit, with two carrying a ½ mark (183½, 311½; plain 183 also occurs). Repeats, each x2: 29, 52, 63, 65, 85, 97, 404 (404 once on each page).
+**design_prior (control-backed descriptive test).** `python3 tools/design_prior.py ciphers/craven-rupert-1648/ciphertext.txt`: 42 tokens, 35 distinct. No family scores above its shuffled null: multi-sign d=0.23 (null_p05 0.06), code 0.71 (0.64), letter-for-letter 0.80 (0.32), mixed 1.09 (0.29). Shuffled-input false-positive rate 0.140. Advisory ranking: nomenclator 0.25, homophonic 0.28. At N=42 the tool cannot separate families. The visible shape (two-digit units beside three- and four-digit groups and ½ marks) is consistent with a nomenclator of the volume's kind. That is an observation, not a test. No key was applied (test 2).
+**Requests:** DECODE 1 login session (record page + 3 full images + 3 thumbnails). No other hosts.
+
+## Remaining gaps (NA-CRAV, 6 Oct 2026)
+Read so far: 0 of 42 cipher tokens read (test 1 transcribed only; no key applied)
+- the 40 legible groups - blocker: not-attempted; sibling-letter tables and Rupert keys never applied to them; next: spec test 2 (shuffled-key control at N=42), ~$3
+- the struck group X and the torn 18? on f.134r - blocker: illegible; blotted strike-out and a tear through the figure on the DECODE image; next: the original or a BL image if the BL restores its images
+
+## Escalation (NA-CRAV, 6 Oct 2026)
+- [ ] siblings: apply R8445/R8446/R8448/R8449 tables from the same volume (spec test 2)
+- [ ] clear-pages: use the clear context around each run to constrain groups (after test 2)
+- [ ] known-keys: Cryptiana Nicholas-Rupert and THE=g4 keys (spec test 2)
+- [ ] print: no edition prints the letter (Warburton checked); recheck only if test 2 reads a name
+- [ ] key-rebuild: only if test 2 reads part of the letter
+- [x] image-check: DECODE full-size images obtained and transcribed 6 Oct 2026
+- [ ] retry: not applicable until test 2 has run
+Verdict: keep going: 1 internal gaps; cheapest next: spec test 2, ~$3
