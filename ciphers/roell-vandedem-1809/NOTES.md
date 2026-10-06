@@ -800,7 +800,7 @@ placeholder; 2 thumbnails; no login); www.nationaalarchief.nl 2 (item pages 804,
 ## R10-ROELL12 (6 Oct 2026): R1469/R1470 groups vs R2131 (Van Dedem, 9 Feb 1793)
 
 Worker R10-ROELL12 (account 2, for LANE LANE-RUN10-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run10-jobs.md`,
-08:19-08:25 UTC by `date -u`. Disk only, no subagent, no decoding. Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0
+08:19-08:24 UTC by `date -u`. Disk only, no subagent, no decoding. Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0
 (no reading). Pre-registration `r2131/PREREG.md` (pushed 7ed61121f before the run); script `r2131/overlap_test.py` (`--check` exit 0);
 output `r2131/overlap_result.tsv`. Inputs are transcriptions only (rule 2): Bourdeau's parse of DECODE's R1469/R1470, and his
 transcriptions of R2131 and of the 1788-89 Van Dedem family R1947, R2053, R2121, R2122 (dbourdeau/cyphersolver targets/dedem1788/tx,
