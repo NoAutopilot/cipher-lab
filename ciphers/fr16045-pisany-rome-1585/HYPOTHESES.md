@@ -102,3 +102,15 @@ overlay are unchanged, and all four tokens stay M.
   The blind read gave best K15 = T57 (la) at medium confidence, which matches tx86i. The gloss gives n, which fits the circled m2/n2 varpi cell
   (T32). This is a genuine data conflict (rule 4): T57 la (blind read, tx86i) against n (later-hand gloss, PIS1-302's T57 -> n 4 of 6). Both are
   kept, graded M.
+
+## R9-PIS2 per-token compare (6 Oct 2026): T31-labelled tokens vs the T31 / T36 / T45 table cells
+pis2/t31_tokens.tsv (blind Sonnet read per leaf + pre-registered eye admissible sets, PREREG_pis2.md). Witness only; key86.tsv unchanged.
+| witness | value / cell | sender -> recipient, date | supports |
+|---|---|---|---|
+| shape, f.244r L03 i35, L06 i15, L07 i28, L09 i30 | T36 (table s) | Pisany -> Henry III, Rome 17 Sept 1586 | the label T31 is a slip for an x+o form |
+| shape, f.244r L03 i25 | T45 (table o) | same | RUN5-PIS4's T45 reading of the loop form |
+| Colbert copy + Tomokiyo's printed reading at the f.244r T31 places | o | same | o, not s (RUN5-PIS3) |
+| shape, f.275r L04 i39, L09 i3, L12 i5, L14 i28 | T36 (table s) | Pisany -> Henry III, 4 Nov 1586 | s, matching the copy (RUN5-PIS4) |
+Data conflict (rule 4), not settled: on f.244r the shape match (T36 = s) and the copy (o) disagree. Either the hand's 17 Sept loop-x is a
+look-alike of T36 that stands for o (a sign the 688 px table copy does not separate), or the reader's T36/T31 split is too weak at this
+resolution (it put T36 or T31 as top two for 18 of 23 tokens). No token settled to the T31 (bare x) cell. Grades: every T31 token stays M.

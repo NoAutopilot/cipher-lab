@@ -1,0 +1,10 @@
+P01	A	G	medium	Cross-like x with a small loop and tail, resembling an alpha shape
+P02	F	A	low	T-shaped sign with a crossbar and a curved descending stroke
+P03	A	G	medium	Looped x-form with a small curl at the lower end
+P04	A	G	medium	x-form with a long tail stroke running to the lower left
+P05	E	D	medium	Script P-like sign, a loop on a vertical stem
+P06	E	B	low	Looped stem sign with a small hook, like a script rho
+P07	D	H	low	Curled backward-6 shape beside an x-like loop
+P08	E	C	low	Small looped rho-like sign with a tail beside an o
+P09	A	G	medium	x-form with a looped tail, between a q-shape and an h-shape
+P10	D	B	low	Compact curled S or 8-like sign with a hooked tail

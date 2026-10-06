@@ -1,0 +1,13 @@
+Q01	A	G	medium	X-like cross with curled loop at lower left end
+Q02	A	G	medium	X crossing with long diagonal stroke and small hooked lower right
+Q03	A	G	medium	X-shaped crossing, curved ends, slight hook at lower right
+Q04	G	A	low	X-like cross with a small loop at right, vertical tick left
+Q05	A	G	medium	X crossing with loop at lower left, hooked right end
+Q06	G	A	low	X-like cross with curl at bottom, small hook right
+Q07	E	C	low	small loop with rightward tail, p-like curl
+Q08	A	G	medium	X with a leading vertical slash left of it
+Q09	G	A	low	X-like crossing with small curl at right, diagonal above
+Q10	C	E	low	looped c/alpha-like curl, open at right
+Q11	A	G	medium	X crossing with hooked loop lower left, long diagonal
+Q12	G	A	low	small zigzag 3/x shape with slash left, small cross
+Q13	A	G	low	X-like cross with curled ends, loop at left

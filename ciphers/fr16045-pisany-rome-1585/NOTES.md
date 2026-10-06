@@ -866,6 +866,24 @@ Brief: .claude/briefs/runs/2026-10-06-account1-run9-jobs.md "R9-PIS" (LANE LANE-
 Report: found -- 2 of 4 gloss conflicts trace to transcription labels (T56 and T05 are not the signs on the page), C2 adds a witness to T31 -> T45, and C4 is a real data conflict (T57 la vs n). Not found -- any conflict settled to a key or transcription edit.
 Requests: none (disk only). Subagent calls: 4 Sonnet.
 
+## R9-PIS2 (6 Oct 2026)
+Brief: .claude/briefs/runs/2026-10-06-account1-run9-jobs.md "R9-PIS2" (LANE LANE-RUN9-account-1, account 1), 06:24-06:3x UTC by date -u. Step still undone (RUN6-PIS/R9-PIS Verdict named it).
+PREREG pis2/PREREG_pis2.md pushed (947d23ea5) before the blind replies were opened; it records my eye class per token as an admissible cell set.
+- Crops (disk only): table cells `python3 tools/iiif_lines.py --image sources/cryptiana/web/henryiii_Vivonne5.png --region <x-16>,<y-13>,32,26 --out ciphers/fr16045-pisany-rome-1585/pis2/cells --prefix k_<T> --lines-per-crop 1 --distance 400 --prominence 1`
+  for T31 T36 T45 T30 T17 T49 T47 T42 (key86 cell_xy). Tokens: located by eye on full-line strips stitched from the committed line crops (s2 pasted at x=1360 f.244r, 1250 f.275r);
+  iiif_lines --region on 140 px token windows picked the wrong ink row or clipped the sign on several of 23 (as in R9-PIS), so the token crops are PIL crops, x +/- 75 px, full strip height (pis2/tokens_pos.tsv, pis2/tok/), checked on a montage.
+  f.244r L09 i26 not located (excluded, stays T31/M): 23 of 24 tokens compared.
+- Readers: 2 blind Sonnet calls (one per leaf; 8 cells under shuffled labels A-H, tokens under shuffled ids, no key/copy/transcription). Replies verbatim pis2/blind/reader_f244r.txt, reader_f275r.txt.
+  Reconciliation: `python3 pis2/pis2.py` applies the pre-registered rule -> pis2/t31_tokens.tsv (`--check` "up to date").
+- **Result: 9 of 23 SETTLED, 14 UNSETTLED.** f.244r 5 of 10: T36 4 (L03 i35, L06 i15, L07 i28, L09 i30), T45 1 (L03 i25). f.275r 4 of 13: T36 4 (L04 i39, L09 i3, L12 i5, L14 i28).
+  No token settled T31 or T47: the f.275r bare-x tokens my eye put at T31/T47 were read T36 (2 medium, 1 low), T31 (low) or T45 (low), so the table's own x cell is not confirmed for any token either.
+- Caveat on the instrument: the reader put T36 or T31 as its top two for 18 of 23 tokens; at the 688 px table copy (cells ~25 px) it separates "x-form" from "loop/rho-form" but only weakly separates x+o (T36) from bare x (T31). The 9 settled rest on medium confidence plus my eye, not on a sharp cell match.
+- **Rule 4, logged in HYPOTHESES.md "R9-PIS2 per-token compare":** on f.244r the loop-x tokens settle T36 (table s) while the Colbert copy and Tomokiyo's printed reading give o at these places (RUN5-PIS3/PIS4 witnesses); RUN5-PIS4 had put the same form nearest T45 (o).
+  So the f.244r form is either a T36 look-alike with value o in this letter or a sign the published table does not draw separately: a data conflict, not settled here. On f.275r T36 = s agrees with the copy (RUN5-PIS4: s at both places looked at).
+- Standing: key86.tsv, tx86/tx86e, readings and grades unchanged (as pre-registered); every T31 token stays M.
+Report: found -- 9 of 23 T31-labelled tokens settle to another table cell by shape (8 T36, 1 T45), none to the T31 cell; on f.244r the T36 shape conflicts with the copy's o. Not found -- any token settled as the table's bare x (T31/T47); the f.244r L09 i26 token on the strip.
+Requests: none (disk only). Subagent calls: 2 Sonnet.
+
 ## Remaining gaps (RUN6-PIS, 5 Oct 2026; merges PIS1-KEY2's list; RUN6-PISFIN updates the f.275v B 12-15 row)
 Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.245r and (second letter) f.247r (kp86g, err 0.268, C 236 / M 122); 4 Nov 1586 f.275r and f.275v lines 1-16; 24 Mar 1587 f.301v and f.302v: 8 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST.
 - key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
@@ -875,7 +893,7 @@ Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.
 - 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; outside this brief; next: same per-line pipeline page by page, ~$12 per dense page
 - f.275v period decipherment (head of page and left margin, second hand, beside both cipher blocks) as a second witness - blocker: not-attempted; outside this brief; next: read the gloss at native resolution, normalise to one convention with the copy (rule 3 PX-BRODEC), score agreement, ~$2
 - 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
-- key86 T31 cell: relabel SUPPORTED on f.244r and f.275r (reconciled), but key86 m stands and every T31 token stays M - blocker: not-attempted; a token-level relabel needs each T31 token's own crop checked against the T45 / T36 table cells (PREREG_pis1key.md (a)); next: per-token crop compare, 11 tokens on f.244r + 13 on f.275r, disk only, ~$2
+- key86 T31 cell: relabel SUPPORTED on f.244r and f.275r (reconciled), but key86 m stands and every T31 token stays M - blocker: not-attempted; the per-token crop compare ran (R9-PIS2, 6 Oct 2026): 9 of 23 settle by shape (8 T36, 1 T45; pis2/t31_tokens.tsv), none to the T31 cell, and the f.244r T36 shape conflicts with the copy's o (rule 4); next: relabel only the 9 settled tokens in copies of tx86/tx86e (pre-registered as PIS1-KEY (a)) and re-run kp86/kp86e arm A, disk only, ~$1
 - key86 T45/T47/T49/T57 cells - blocker: not-attempted; held-out remap joint gate FAILed (G3 on f.301v: the all-e degenerate remap also beats arm A), so nw_score coordinate-ascent remapping (pis1key.py remap) is retired for this hypothesis (rule 3); a different instrument is open; next: per-token crop compare of the T45/T47/T57 tokens on f.275r/f.301v/f.302v against the table cells, disk only, ~$2
 - Versos not viewed (July-Aug 1585 St-Goard letters, Feb/July 1586, 22 Sept, 6-7 Oct 1586, letters to Villeroy) - blocker: not-attempted; outside this brief; next: about 40 more 360 px fills with the fill loop in images/manifest_pis1inv.tsv's URL pattern, ~$1
 - 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: grow key86 on the job-2 letters, then decode with the grown key and the 1585 table side by side, ~$5 per page
@@ -888,7 +906,7 @@ Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.
 - [x] clear-pages: f.247r mapped (9 cipher lines, then clear "Nous sommes prests ...", closing, date 17 Sept 1586)
 - [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.247r, f.275r, f.275v, f.301v, f.302v; 1585 table NON-TEST on f.75
 - [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
-- [ ] key-rebuild: T31 relabel SUPPORTED in aggregate (per-token crop check open); T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 image compare open
+- [ ] key-rebuild: T31 relabel SUPPORTED in aggregate; per-token compare 9 of 23 settled (R9-PIS2), re-score of the 9 open; T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 image compare open
 - [x] image-check: f.247r cut one line per band, three bands re-cut fixed-y, montage checked
 - [ ] retry: f.246r/f.246v (crop commands above); f.275v B 12-15 (kp86d retired; gloss read R8-PIS, 13 C; gl275 conflict compares R9-PIS, none settled); f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
-Verdict: keep going: 14 internal gaps; cheapest next: the T31 per-token crop compare against the T45/T36 table cells (11 tokens f.244r + 13 f.275r, ~$2; R9-PIS C2 adds a gloss-backed T31 = T45 witness); most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
+Verdict: keep going: 14 internal gaps; cheapest next: re-score kp86/kp86e arm A with only R9-PIS2's 9 settled T31 tokens relabelled (pis2/t31_tokens.tsv), disk only, ~$1; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
