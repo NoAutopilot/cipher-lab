@@ -5394,6 +5394,25 @@ Open for the next i-r lane: (1) nla-heinrich check-solved/verifier call on the G
 (3) rousseau same-class known-answer re-run ~1; (4) oldenbarnevelt-brederode full-size Marburg/Munich keys ~3; (5) karlxi 1680 Actes page read ~1;
 (6) vellingk read owgPAAAAYAAJ "Wellingk ... Chiffre" page ~1; (7) lope-hurtado LOCAL-QUEUE row for BNE 20212/27 images.
 
+## LANE LANE-RUN13-account-4 handoff (session_01FDkvT3PQo6q9YnARRsCgjP, account 4), 6 October 2026 (closed 19:0x UTC: s-z runnable backlog spent, lane about 24.8 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run13-jobs.md. WORK-QUEUE row LANE-RUN13-account-4 (split s-z, runnable
+rows only). Gate 0a met (no SESSION-SWEEP-account-4 row). Verifier flags: oldenbarnevelt is i-r (account 2), august-van-saksen done by R11A-AVSV2; VERIFY-BACKLOG
+had no s-z row needing a verifier. 9 Opus workers in 3 waves (all D); workers 21.38 + orchestrator ~3.40 = ~24.8 (get_session). five_hour `allowed` throughout.
+No key value or graded reading changed; no verifier flag raised.
+- sachsstaatsarchiv-manteuffel-1712 (R13-MANTSCR, R13-MANT85): 55 more frames screened after 0580 (202/894 seen); 694/09 0085 transcribed (A/B 0.955) but it is
+  letter range with no gloss for f.410's U codes; per-leaf gate FAIL, nothing merged, U 123 unchanged.
+- siena-concistoro-2308 (R13-SIENAJ, R13-SIENA719, R13-SIENAWC): blind 2nd-reader labels: no. 19 still shares no. 7's sign stock (pJ 0.0015 vs 0.0033),
+  no. 9 does not (reader-bias control no. 11 not run, image not on disk). Pooled 7+19 nomenclator family: CONTROL BELOW GATE twice (old solver, then new
+  `word_signs` structural restriction) -> ciphertext-only nomenclator route exhausted at N=481; next needs outside word codes (a fasc. 2 key sheet crib).
+- scorpion-1991 (R13-SCORP2C): blind second coder: Zodiac-alphabet distinct-code link NO SUPPORT (diff 3 vs gate 5, kappa 0.549). Stays open.
+- untersberg-code (R13-UNTOP): opening-27 inscription blind 2-pass (94% agree): symA 0/49; Herzog prints no fol. 27 text. symA moves only via the paleographer packet.
+- sp90-raby-1704 (R13-RABYPDF): Preuss 1897 PDF retry -> captcha; LOCAL-QUEUE L61 stays.
+- R13-STALE: stale next-step lines rewritten in sp78-yorke, sp99-wotton, ula-degeer, viganego (needs-image), yogtze (needs-key, parent re-label decision), untersberg.
+**For the parent (not filed by this lane):** sp99-wotton-1622 f.251/f.159 is not in the ASKS row 73 TNA batch; viganego-torino-1717 has no outreach draft or ASKS row (ASGe email).
+Open for the next account-4 s-z lane: nothing runnable that depends on nobody beyond optional small steps (untersberg tablets/scroll pass ~2; manteuffel
+0195/0060 native crops ~0.5 each, low value after 0085). s-z otherwise waits on copy orders, a paleographer, LOCAL-QUEUE rows or outside key material.
+
 ## LANE LANE-RUN12-account-4 handoff (session_015RRYU6gqkKX94u2a6B7hh4, account 4), 6 October 2026 (closed 16:4x UTC: backlog spent, lane about 38.9 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run12-jobs.md. WORK-QUEUE row LANE-RUN12-account-4 (split s-z, then
