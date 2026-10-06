@@ -1,0 +1,115 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+rjmla_f199	f199_L01	2	~	3	Z	split	split	3,Z	B	~ 4 ~		
+rjmla_f199	f199_L01	3	~		R	split	split	R	B ~	4 ~ B		
+rjmla_f199	f199_L01	5	~	T	~	split	split	T,9,~	~ ~ 4	B ric qid		
+rjmla_f199	f199_L01	17	~	qo	qot	split	split	qo,qot	burkus sof D	~ Z ~		
+rjmla_f199	f199_L01	18	~	T		split	split	T,9	sof D ~	Z ~ 4		
+rjmla_f199	f199_L01	20	~	b		split	split	b	~ ~ Z	4 sof		
+rjmla_f199	f199_L02	12	~	ap	gap	split	split	ap,gap	sad suf Z	hef tas cio		
+rjmla_f199	f199_L02	16	~	V	[vaz]	split	split	V,[vaz]	hef tas cio	~		
+rjmla_f199	f199_L02	17	~	ar		split	split	ar	tas cio ~			
+rjmla_f199	f199_L03	9	~	9	Q	split	split	9,Q,T,K	suf bed F	3 im le		
+rjmla_f199	f199_L03	16	~	gag	Z	split	split	Z,3,gag	sof nam gap	~ sof		
+rjmla_f199	f199_L03	17	~		ag	split	split	ag	nam gap ~	sof		
+rjmla_f199	f199_L04	2	~	T	ott	split	split	T,9,ott	gap	~ Z lep		
+rjmla_f199	f199_L04	3	~	9		split	split	9,Q,T	gap ~	Z lep A		
+rjmla_f199	f199_L04	8	~	9		split	split	9,Q,T	lep A T	Z ~ X		
+rjmla_f199	f199_L04	10	~	T	ott	split	split	T,9,ott	T ~ Z	X lep sad		
+rjmla_f199	f199_L04	14	~	9	Q	split	split	9,Q,T,K	X lep sad	cob qub Z		
+rjmla_f199	f199_L04	20	~	T	ott	split	split	T,9,ott	Z ap qid	qid ~ 3		
+rjmla_f199	f199_L04	22	~	9	Q	split	split	9,Q,T,K	qid ~ qid	3 X		
+rjmla_f199	f199_L05	9	~	B	Hb	split	split	B,Hb	F V T	mus nom sof		
+rjmla_f199	f199_L06	8	~	Z	sep	split	split	Z,3,sep	A ran D	~ 4 ~		
+rjmla_f199	f199_L06	9	~	ep		split	split	ep	ran D ~	4 ~ T		
+rjmla_f199	f199_L06	11	~	nol	noly	split	split	nol,noly	~ ~ 4	T A ~		
+rjmla_f199	f199_L06	14	~	Q	q	split	split	Q,K,9,q	~ T A	sad A poz		
+rjmla_f199	f199_L06	18	~	3		split	split	3,Z	sad A poz	F ~ ~		
+rjmla_f199	f199_L06	20	~	V	Tri	split	split	V,Tri	poz ~ F	~ ~		
+rjmla_f199	f199_L06	21	~	D	Hb	split	split	D,Hb,9,B	~ F ~	~		
+rjmla_f199	f199_L06	22	~	B		split	split	B,Hb	F ~ ~			
+rjmla_f199	f199_L07	1	~	[pesa mi q del Rey dya drectado d pasar vn mal tpo q doblo]	[pe sa amiq del rey ava drectado al pasar vn mal tpo al dobla]	split	split	[pesa mi q del Rey dya drectado d pasar vn mal tpo q doblo],[pe sa amiq del rey ava drectado al pasar vn mal tpo al dobla]				
+rjmla_f199	f199_L08	1	~	[porq yo soy testigo q es vn mal pasar (c. y soy no hizo mal]	[por q yo soy testigo q es vn mal pasa(j)e y yo no hizo mal]	split	split	[porq yo soy testigo q es vn mal pasar (c. y soy no hizo mal],[por q yo soy testigo q es vn mal pasa(j)e y yo no hizo mal]				
+rjmla_f199	f199_L09	1	~	[d Sr ortega. reco q se de tener buenos cuentos]	[al]	split	split	[d Sr ortega. reco q se de tener buenos cuentos],[al]		~ ~ F		
+rjmla_f199	f199_L09	2	~		~	split	split	~	~	~ F sof		
+rjmla_f199	f199_L09	3	~		[ortega. rec o q se de tener buenos cuentos]	split	split	[ortega. rec o q se de tener buenos cuentos]	~ ~	F sof V		
+rjmla_f199	f199_L09	8	~	W	~	split	split	W,~	sof V 4			
+rjmla_f199	f199_L10	1	~	[dix.]	[dir.]	split	split	[dix.],[dir.]		~ ~ 4		
+rjmla_f199	f199_L10	2	~	E	A	split	split	E,A	~	~ 4 sof		
+rjmla_f199	f199_L10	3	~	V	~	split	split	V,~	~ ~	4 sof sar		
+rjmla_f199	f199_L10	8	~	[pezo el pastor en vazquillo tengo pu~]	[pero el pa tre en vazquillo tengo pu]	split	split	[pezo el pastor en vazquillo tengo pu~],[pero el pa tre en vazquillo tengo pu]	sof sar F			
+rjmla_f199	f199_L11	1	~	[mal conseio. d virglo dya herho el otro cesar vn tempestad]	[mal consejo. al virglo dya herho el otro cesar vn tempestad]	split	split	[mal conseio. d virglo dya herho el otro cesar vn tempestad],[mal consejo. al virglo dya herho el otro cesar vn tempestad]				
+rjmla_f199	f199_L12	1	~	F	[ceu ce hieshta]	split	split	F,K,[ceu ce hieshta]		~ ~ ~		
+rjmla_f199	f199_L12	2	~	V	~	split	split	V,~	~	~ ~ ~		
+rjmla_f199	f199_L12	3	~	D		split	split	D,9	~ ~	~ ~ ~		
+rjmla_f199	f199_L12	4	~	B		split	split	B,Hb	~ ~ ~	~ ~ ~		
+rjmla_f199	f199_L12	5	~	T		split	split	T,9	~ ~ ~	~ ~ ~		
+rjmla_f199	f199_L12	6	~	9		split	split	9,Q,T	~ ~ ~	~ ~ ~		
+rjmla_f199	f199_L12	7	~	Q		split	split	Q,K,9	~ ~ ~	~ ~ mus		
+rjmla_f199	f199_L12	8	~	R		split	split	R	~ ~ ~	~ mus ~		
+rjmla_f199	f199_L12	9	~	Z		split	split	Z,3	~ ~ ~	mus ~ ~		
+rjmla_f199	f199_L12	11	~	R		split	split	R	~ ~ mus	~ ~ ~		
+rjmla_f199	f199_L12	12	~	kal		split	split	kal	~ mus ~	~ ~ ~		
+rjmla_f199	f199_L12	13	~	R		split	split	R	mus ~ ~	~ ~ hef		
+rjmla_f199	f199_L12	14	~	A		split	split	A,E	~ ~ ~	~ hef mus		
+rjmla_f199	f199_L12	15	~	burkus		split	split	burkus	~ ~ ~	hef mus ~		
+rjmla_f199	f199_L12	18	~	R		split	split	R	~ hef mus	lez ~		
+rjmla_f199	f199_L12	20	~	R		split	split	R	mus ~ lez			
+rjmla_f199	f199_L13	7	~		T	split	split	T,9	Q hef mus	~ ~ ~		
+rjmla_f199	f199_L13	8	~		A	split	split	A,E	hef mus ~	~ ~ gap		
+rjmla_f199	f199_L13	9	~		cb	split	split	cb	mus ~ ~	~ gap cas		
+rjmla_f199	f199_L13	10	~		A	split	split	A,E	~ ~ ~	gap cas sof		
+rjmla_f199	f199_L13	14	~		njn	split	split	njn	gap cas sof	~ Z sof		
+rjmla_f199	f199_L13	15	~		X	split	split	X	cas sof ~	Z sof li		
+rjmla_f199	f199_L13	19	~	biz		split	split	biz	Z sof li	suf ~ ~		
+rjmla_f199	f199_L13	21	~	A		split	split	A,E	li ~ suf	~ ~		
+rjmla_f199	f199_L13	22	~	gel		split	split	gel	~ suf ~	~		
+rjmla_f199	f199_L13	23	~	teng		split	split	teng	suf ~ ~			
+rjmla_f199	f199_L14	9	~		gob	split	split	gob	kef gap fa	~ sof li		
+rjmla_f199	f199_L14	10	~		Z	split	split	Z,3	gap fa ~	sof li ~		
+rjmla_f199	f199_L14	13	~		biz	split	split	biz	~ sof li	suf A ~		
+rjmla_f199	f199_L14	16	~	cb	gel	split	split	cb,gel	~ suf A	~ gap cas		
+rjmla_f199	f199_L14	17	~	A	teng	split	split	A,E,teng	suf A ~	gap cas sof		
+rjmla_f199	f199_L14	21	~	njn		split	split	njn	gap cas sof	~ ~ ~		
+rjmla_f199	f199_L14	22	~	X		split	split	X	cas sof ~	~ ~ hef		
+rjmla_f199	f199_L14	23	~	9		split	split	9,Q,T	sof ~ ~	~ hef		
+rjmla_f199	f199_L14	24	~	Z		split	split	Z,3	~ ~ ~	hef		
+rjmla_f199	f199_L15	4	~	3	Z	split	split	3,Z	li R E	E im F		
+rjmla_f199	f199_L15	8	~	B	Hb	split	split	B,Hb	E im F	A		
+rjmla_f199	f199_L16	1	~	[segun lo q ha tardado el finquito q se me hazeen biar]	[segun lo q ha tardado el finj gunto q se me ha de enbiar]	split	split	[segun lo q ha tardado el finquito q se me hazeen biar],[segun lo q ha tardado el finj gunto q se me ha de enbiar]				
+rjmla_f199	f199_L17	1	~	[rzeo q pmerzo benga. estaza el Rey en España. co y ydoyes]	[rec q pmezo benga. estaza el Rey en espana. coy loyes]	split	split	[rzeo q pmerzo benga. estaza el Rey en España. co y ydoyes],[rec q pmezo benga. estaza el Rey en espana. coy loyes]				
+rjmla_f199	f199_L18	1	~	[vm. lo mande daz. d don diego co d don pedro myghos]	[dim. lo mande daz. al don diego e al don pedro myshos]	split	split	[vm. lo mande daz. d don diego co d don pedro myghos],[dim. lo mande daz. al don diego e al don pedro myshos]				
+rjmla_f199	f199_L19	1	~	[c mee en bred el traslado. y suplicole q no se le olvide]	[me en bie al traslado. y suplicole q no se le olvide]	split	split	[c mee en bred el traslado. y suplicole q no se le olvide],[me en bie al traslado. y suplicole q no se le olvide]				
+rjmla_f199	f199_L20	11	~		kus	split	split	kus	sad lep bur	A lo ~		
+rjmla_f199	f199_L20	14	~	~	ge	split	split	~,ge	~ A lo	~ ~ ~		
+rjmla_f199	f199_L20	15	~		ste	split	split	ste	A lo ~	~ ~		
+rjmla_f199	f199_L20	16	~		vi	split	split	vi	lo ~ ~	~		
+rjmla_f199	f199_L20	17	~		dias	split	split	dias	~ ~ ~			
+rjmla_f199	f199_L21	5	~	9		split	split	9,Q,T	sof njn X	Z dim ~		
+rjmla_f199	f199_L21	8	~	Z	fur	split	split	Z,3,fur	~ Z dim	~ R qib		
+rjmla_f199	f199_L21	9	~	ur		split	split	ur	Z dim ~	R qib A		
+rjmla_f199	f199_L21	20	~	T	ott	split	split	T,9,ott	A ram sof	4 ka		
+rjmla_f199	f199_L22	9	~	ng	ug	split	split	ng,ug	hag kef qes	~ Z A		
+rjmla_f199	f199_L22	10	~	9		split	split	9,Q,T	kef qes ~	Z A ~		
+rjmla_f199	f199_L22	13	~	T	ott	split	split	T,9,ott	~ Z A	~		
+rjmla_f199	f199_L22	14	~	[plazeme dello. a vng]	[plazeme del co.ayng]	split	split	[plazeme dello. a vng],[plazeme del co.ayng]	Z A ~			
+rjmla_f199	f199_L23	1	~	[reco q seza]	R	split	split	R,[reco q seza]		~ ~ ~		
+rjmla_f199	f199_L23	2	~		eo	split	split	eo	~	~ ~ F		
+rjmla_f199	f199_L23	3	~		q	split	split	q	~ ~	~ F tac		
+rjmla_f199	f199_L23	4	~		seza	split	split	seza	~ ~ ~	F tac ges		
+rjmla_f199	f199_L23	8	~	T	ott	split	split	T,9,ott	F tac ges	Z A ~		
+rjmla_f199	f199_L23	11	~	~	lva	split	split	~,lva	~ Z A	A ~ R		
+rjmla_f199	f199_L23	13	~		ra	split	split	ra	A ~ A	R ~ R		
+rjmla_f199	f199_L23	15	~	ag	aq	split	split	ag,aq	A ~ R	R A Q		
+rjmla_f199	f199_L23	19	~	gof	qof	split	split	gof,qof	R A Q	F halex		
+rjmla_f199	f199_L24	7	~		kus	split	split	kus	yip F bur	sof ~ ~		
+rjmla_f199	f199_L24	9	~	D	dg	split	split	D,9,dg	bur ~ sof	~ gob Z		
+rjmla_f199	f199_L24	10	~	D		split	split	D,9	~ sof ~	gob Z gap		
+rjmla_f199	f199_L25	3	~	cry	cly	split	split	cry,cly	ram ler	T A qid		
+rjmla_f199	f199_L25	9	~	T	ott	split	split	T,9,ott	qid X qid	A sof bad		
+rjmla_f199	f199_L25	14	~	kork	vor	split	split	kork,vor	sof bad lo	R Q gap		
+rjmla_f199	f199_L26	4	~	D	cb	split	split	D,9,cb	njn T A	suf ~ ~		
+rjmla_f199	f199_L26	6	~	Z	Jom	split	split	Z,3,Jom	A ~ suf	~ R gom		
+rjmla_f199	f199_L26	7	~	imp		split	split	imp	~ suf ~	R gom ~		
+rjmla_f199	f199_L26	10	~	log	loz	split	split	log,loz	~ R gom	A ram R		
+rjmla_f199	f199_L26	17	~	9	D	split	split	9,D,Q,T	F sof T	A sad mus		
+rjmla_f199	f199_L26	21	~		F	split	split	F,K	A sad mus			

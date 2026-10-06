@@ -1,0 +1,89 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+rjmla_f194	f194_L01	4	~	hog	og	split	split	hog,og	F V T	~ bas mur		
+rjmla_f194	f194_L01	5	~	gtt	T	split	split	T,9,gtt	V T ~	bas mur ycf		
+rjmla_f194	f194_L01	10	~		R	split	split	R	mur ycf mus	bo gap le		
+rjmla_f194	f194_L01	18	~	F	d	split	split	F,K,d	per Z sof	~ ~ Z		
+rjmla_f194	f194_L01	19	~		qo	split	split	qo	Z sof ~	~ Z sof		
+rjmla_f194	f194_L01	20	~		T	split	split	T,9	sof ~ ~	Z sof ~		
+rjmla_f194	f194_L01	23	~	Q		split	split	Q,K,9	~ Z sof	~ ~		
+rjmla_f194	f194_L01	24	~	gtt		split	split	gtt	Z sof ~	~		
+rjmla_f194	f194_L01	25	~	Z		split	split	Z,3	sof ~ ~			
+rjmla_f194	f194_L02	7	~	ott	T	split	split	T,9,ott	kig sof tac	4 Z T		
+rjmla_f194	f194_L02	11	~	hog	9	split	split	9,Q,T,hog	4 Z T	Z 3 F		
+rjmla_f194	f194_L03	3	~	qct	get	split	split	qct,get	K sof	R boz ler		
+rjmla_f194	f194_L04	1	~	ccu	ceu	split	split	ccu,ceu		K ob ~		
+rjmla_f194	f194_L04	4	~	im	bim	split	split	im,bim	~ K ob	R F ya		
+rjmla_f194	f194_L04	10	~	Jnt	ju	split	split	Jnt,ju	ya A li	~ Z tac		
+rjmla_f194	f194_L04	11	~		t	split	split	t	A li ~	Z tac cob		
+rjmla_f194	f194_L04	16	~	ott	T	split	split	T,9,ott	tac cob R	qid qid dim		
+rjmla_f194	f194_L04	21	~	R	rag	split	split	R,rag	qid dim Z	~		
+rjmla_f194	f194_L04	22	~	eag		split	split	eag	dim Z ~			
+rjmla_f194	f194_L05	14	~	mg	mng	split	split	mg,mng	ram dim mus	T boz ~		
+rjmla_f194	f194_L05	17	~	do	cb	split	split	do,cb	~ T boz	zan		
+rjmla_f194	f194_L06	7	~	Jnm	ju	split	split	Jnm,ju	raf ler A	~ R ~		
+rjmla_f194	f194_L06	8	~		mp	split	split	mp	ler A ~	R ~ ~		
+rjmla_f194	f194_L06	10	~	ta	la	split	split	ta,la	~ ~ R	~ K sad		
+rjmla_f194	f194_L06	11	~	Jes	ju	split	split	Jes,ju	~ R ~	K sad sof		
+rjmla_f194	f194_L06	16	~	o		split	split	o	sad sof R	F K qid		
+rjmla_f194	f194_L06	21	~	~		split	split	~	K qid cor	pof		
+rjmla_f194	f194_L07	10	~	yags	yaqes	split	split	yags,yaqes	A nig sof	K pob qes		
+rjmla_f194	f194_L08	3	~	Jnr	ju	split	split	Jnr,ju	qub lep	~ sag ler		
+rjmla_f194	f194_L08	4	~		x	split	split	x	qub lep ~	sag ler dim		
+rjmla_f194	f194_L08	10	~	~	T	split	split	T,9,~	dim guf nin	~ 9 Z		
+rjmla_f194	f194_L08	11	~	~		split	split	~	guf nin ~	9 Z cob		
+rjmla_f194	f194_L08	15	~	~	W	split	split	W,~	9 Z cob	rul F V		
+rjmla_f194	f194_L08	19	~	db	cb	split	split	db,cb	rul F V	kef		
+rjmla_f194	f194_L12	2	~	D	d	split	split	D,9,d	A	Z ~ puc		
+rjmla_f194	f194_L12	4	~	ob	a	split	split	ob,a	A ~ Z	puc A bas		
+rjmla_f194	f194_L13	13	~	~	T	split	split	T,9,~	nin sof nin	~ 9 Z		
+rjmla_f194	f194_L13	14	~	~		split	split	~	sof nin ~	9 Z hef		
+rjmla_f194	f194_L14	8	~	db	cb	split	split	db,cb	A F V	suf ~ om		
+rjmla_f194	f194_L14	10	~	im	sim	split	split	im,sim	V ~ suf	om R qes		
+rjmla_f194	f194_L15	5	~	Jnt	ju	split	split	Jnt,ju	ina puc li	~ Z zan		
+rjmla_f194	f194_L15	6	~		t	split	split	t	puc li ~	Z zan ruc		
+rjmla_f194	f194_L15	16	~	ciy	cly	split	split	ciy,cly	qes gap A	~ sad		
+rjmla_f194	f194_L15	17	~	Jns	ius	split	split	Jns,ius	gap A ~	sad		
+rjmla_f194	f194_L16	7	~	K	y	split	split	K,Q,F,y	kaz qes gap	3 7 X		
+rjmla_f194	f194_L16	13	~	ob	W	split	split	W,ob	X dim suf	F A keg		
+rjmla_f194	f194_L17	19	~	g	9	split	split	9,Q,T,g	ram qid peh			
+rjmla_f194	f194_L18	13	~	Q	K	split	split	Q,K,9,F	sof bas F	A pus bin		
+rjmla_f194	f194_L18	21	~	Q	K	split	split	Q,K,9,F	ror R F	A		
+rjmla_f194	f194_L19	4	~	rue	rov	split	split	rue,rov	den bab lo	T F V		
+rjmla_f194	f194_L19	8	~	db	cb	split	split	db,cb	T F V	rec gvc ~		
+rjmla_f194	f194_L19	11	~	Q	K	split	split	Q,K,9,F	~ rec gvc	qib kam per		
+rjmla_f194	f194_L19	15	~		9	split	split	9,Q,T	qib kam per	Z ~ 4		
+rjmla_f194	f194_L19	17	~	9		split	split	9,Q,T	per ~ Z	4 ~ Z		
+rjmla_f194	f194_L19	19	~	ob	W	split	split	W,ob	Z ~ 4	Z an bun		
+rjmla_f194	f194_L20	2	~	c		split	split	c	det	~ sof ~		
+rjmla_f194	f194_L20	3	~	meestzidi		split	split	meestzidi	det ~	sof ~ dc		
+rjmla_f194	f194_L20	5	~	vocbott		split	split	vocbott	~ ~ sof	dc ~ ~		
+rjmla_f194	f194_L20	8	~	tteze	[tez deste q mees tz diuese q yo]	split	split	tteze,[tez deste q mees tz diuese q yo]	~ dc ~	~ ~ ~		
+rjmla_f194	f194_L20	9	~	deete		split	split	deete	dc ~ ~	~ ~ ~		
+rjmla_f194	f194_L20	10	~	q		split	split	q	~ ~ ~	~ ~ ~		
+rjmla_f194	f194_L20	11	~	meestzivese		split	split	meestzivese	~ ~ ~	~ ~		
+rjmla_f194	f194_L20	12	~	q		split	split	q	~ ~ ~	~		
+rjmla_f194	f194_L20	13	~	yo		split	split	yo	~ ~ ~			
+rjmla_f194	f194_L21	15	~	ciy	cily	split	split	ciy,cily	qal dim ob	nuf ~ ~		
+rjmla_f194	f194_L21	17	~	Jez	fez	split	split	Jez,fez	ob ~ nuf	~ tig puz		
+rjmla_f194	f194_L21	18	~	3		split	split	3,Z	~ nuf ~	tig puz qes		
+rjmla_f194	f194_L22	13	~		por	split	split	por	Z zan R	gap dim Z		
+rjmla_f194	f194_L22	19	~	g	9	split	split	9,Q,T,g	Z bay K	X 4 sar		
+rjmla_f194	f194_L24	1	~	9	T	split	split	9,T,Q		9 Z kef		
+rjmla_f194	f194_L24	12	~	sz	sef	split	split	sz,sef	dim qib bun	~ F kal		
+rjmla_f194	f194_L24	13	~		Z	split	split	Z,3	qib bun ~	F kal zan		
+rjmla_f194	f194_L25	4	~	Jaz	ja	split	split	Jaz,ja	gap ler le	~ A gap		
+rjmla_f194	f194_L25	5	~		Z	split	split	Z,3	ler le ~	A gap sof		
+rjmla_f194	f194_L27	10	~	8	qg	split	split	8,qg	ler dim sof	~ sez mus		
+rjmla_f194	f194_L27	11	~	g		split	split	g	dim sof ~	sez mus bog		
+rjmla_f194	f194_L27	17	~	im	sim	split	split	im,sim	bog sad suf	R puz		
+rjmla_f194	f194_L28	13	~	ciy	cyl	split	split	ciy,cyl	hef qol cor	R yod R		
+rjmla_f194	f194_L28	18	~	g		split	split	g	yod R F	qes		
+rjmla_f194	f194_L29	1	~	nog	reg	split	split	nog,reg		T bay q		
+rjmla_f194	f194_L29	14	~	ob	~	split	split	ob,~	qes ka sad	mus nuf ~		
+rjmla_f194	f194_L29	17	~	ng	F	split	split	F,K,ng	~ mus nuf	~ qid		
+rjmla_f194	f194_L29	18	~		rep	split	split	rep	mus nuf ~	qid		
+rjmla_f194	f194_L30	2	~	A	E	split	split	A,E	R	Z ~ dim		
+rjmla_f194	f194_L30	4	~	ob	a	split	split	ob,a	R ~ Z	dim Z g		
+rjmla_f194	f194_L31	5	~	gott	dott	split	split	gott,dott	qes tas kah	~ ka ~		
+rjmla_f194	f194_L31	6	~	3	Z	split	split	3,Z	tas kah ~	ka ~ hiz		
+rjmla_f194	f194_L31	8	~	K	F	split	split	K,F,Q	~ ~ ka	hiz R A		
