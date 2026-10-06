@@ -1,0 +1,8 @@
+# R11-SURY crop step (6 Oct 2026). 0692 tiles come from the R10 native crops (inv373_0693_r10/crops/p0692_*.jpg).
+# 0693 recut at native resolution (R10's 0693 crops were from a 2000-px download). NB: R10's crops/manifest.tsv names uuid
+# 81976bab (label _0691.tif, viewer order 693) as the 0693 source; that scan is folio 622 with no cipher (checked this job,
+# 1000-px view). The cipher continuation is uuid 9375dc44 (label _0693.tif, viewer order 695), fetched below.
+# curl -A "cipher-lab research script (contact via repository)" "https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/9375dc44-b603-4343-b1d3-e7695dd98fce.jp2/pct:13,20.5,38,21.5/full/0/default.jpg" -o s0693_native.jpg   (1886x865, not kept)
+# python3 tools/iiif_lines.py --image s0693_native.jpg --out c93n --prefix p0693n --centres 230,410,590,766
+#   -> c93n/p0693n_L01..L04.jpg (1886x180/180/178/178), each centred on the cipher line (gloss partly above).
+# Tiles for 0693 are cut from c93n/s0693_native.jpg directly (the iiif_lines crops above sat off the sign rows); centres in tokens.tsv.

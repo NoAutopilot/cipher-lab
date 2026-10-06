@@ -1,0 +1,27 @@
+F1: readable 21/21, agreement 0.524, control mean 0.456 p99 0.619, P(null>=obs) 0.4127, majority floor 0.571 -> FAIL
+  gloss m: 12 tokens, predicted n (dotted/ij) 9
+  gloss n: 9 tokens, predicted n (dotted/ij) 8
+  t01 L01 omtrent          gloss m read dotted
+  t02 L01 den              gloss n read dotted
+  t03 L02 permitteren      gloss m read dotted
+  t04 L02 omstandigheeden  gloss m read undotted
+  t05 L02 niet             gloss n read dotted
+  t06 L03 mij              gloss m read dotted
+  t07 L03 in               gloss n read dotted
+  t08 L06 versuymd         gloss m read undotted
+  t09 L06 om               gloss m read dotted
+  t10 L07 den              gloss n read dotted
+  t11 L08 gemakkelijk      gloss m read dotted
+  t12 L08 maaken           gloss m read dotted
+  t13 L09 men              gloss m read undotted
+  t14 L09 men              gloss n read undotted
+  t15 M01 en               gloss n read dotted
+  t16 M01 versuimd         gloss m read dotted
+  t17 M02 en               gloss n read dotted
+  t18 M02 omstandigheeden  gloss m read dotted
+  t19 M03 om               gloss m read dotted
+  t20 M03 een              gloss n read dotted
+  t21 M04 stellen          gloss n read dotted
+F2: readable 21/21, agreement 0.571, control mean 0.571 p99 0.571, P(null>=obs) 1.0000, majority floor 0.571 -> FAIL
+  gloss m: 12 tokens, predicted n (dotted/ij) 0
+  gloss n: 9 tokens, predicted n (dotted/ij) 0

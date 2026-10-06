@@ -1,0 +1,24 @@
+# R11-SURY: the 21 [y-fam] positions of align_words.tsv (R10-SUR693) with tile centres located by eye on the line crops.
+# src: 0692 = inv373_0693_r10/crops/p0692_Lnn.jpg (native); 0693 = c93n/s0693_native.jpg (native region, uuid 9375dc44, see crops.txt), x,y = sign centre in that file
+tok	line	word	pos_in_word	gloss	src	crop	x	y
+t01	L01	omtrent	2	m	0692	p0692_L01	185	
+t02	L01	den	3	n	0692	p0692_L01	615	
+t03	L02	permitteren	4	m	0692	p0692_L02	287	
+t04	L02	omstandigheeden	2	m	0692	p0692_L02	955	
+t05	L02	niet	1	n	0692	p0692_L02	1762	
+t06	L03	mij	1	m	0692	p0692_L03	138	
+t07	L03	in	2	n	0692	p0692_L03	1560	
+t08	L06	versuymd	7	m	0692	p0692_L06	1010	
+t09	L06	om	2	m	0692	p0692_L06	1362	
+t10	L07	den	3	n	0692	p0692_L07	1590	
+t11	L08	gemakkelijk	3	m	0692	p0692_L08	612	
+t12	L08	maaken	1	m	0692	p0692_L08	1693	
+t13	L09	men	1	m	0692	p0692_L09	275	
+t14	L09	men	3	n	0692	p0692_L09	365	
+t15	M01	en	2	n	0693	s0693_native	545	230
+t16	M01	versuimd	7	m	0693	s0693_native	1350	230
+t17	M02	en	2	n	0693	s0693_native	435	395
+t18	M02	omstandigheeden	2	m	0693	s0693_native	585	395
+t19	M03	om	2	m	0693	s0693_native	395	590
+t20	M03	een	3	n	0693	s0693_native	905	590
+t21	M04	stellen	7	n	0693	s0693_native	520	770

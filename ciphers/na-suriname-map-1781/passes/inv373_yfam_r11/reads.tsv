@@ -1,0 +1,24 @@
+# R11-SURY tile reads, 6 Oct 2026 09:2x UTC, this worker's eye on the anonymised sheets (make_tiles.py, seed 1781), before anon_key.tsv was joined to the gloss.
+# F1 dots above the sign: D dotted / U undotted / X unreadable. F2 form: y one-part / ij two-part / X. No two-part form was seen on any tile.
+anon	F1	F2	note
+A01	D	y	
+A02	D	y	
+A03	U	y	
+A04	D	y	
+A05	D	y	
+A06	D	y	
+A07	U	y	hash stroke passes left of the sign; no dot in the clear space above
+A08	D	y	
+A09	U	y	
+A10	D	y	
+A11	D	y	
+A12	D	y	
+A13	D	y	
+A14	D	y	
+A15	D	y	
+A16	D	y	re-centred once; two dots clear
+A17	D	y	
+A18	U	y	faint speck below-right, nothing above
+A19	D	y	
+A20	D	y	
+A21	D	y	
