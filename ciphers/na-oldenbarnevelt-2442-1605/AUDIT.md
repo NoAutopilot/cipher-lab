@@ -55,7 +55,7 @@ not about the accuracy of every word.
   tiempos que corren, i me enuio el pesame delo de Siguença, porque hubo del mui buenas esperanças; i muchas ueces no
   pueden, i otras ueces no se atreuen a ablar al duque con ueras ... i assi no ai sino paciencia i hacer lo que
   pudieremos comforme a los tiempos." (C1): "... i le besaua las manos. Estas dos cossas he hecho por ser tan
-  conuinientes en esta occassion ... suplico a V.Sª me perdone quien decirlo a V.Sª pudiendolo callar. Uera V.Sª [?]la
+  conuinientes en esta occassion ... supplico a V.Sª me perdone quen decirlo a V.Sª pudiendolo callar. Uera V.Sª [?]la
   uerdad que procedo, i con quantos desseos de acertar a seruir a V.Sª i darle gusto en todo-".
 - Distinctive phrases: the 13 in `phrases.txt`; names Sigüenza, Vanegas, Pamplona, Mattheo de Burgos (A block context).
 - What the solvers searched (sections 3, "Web and blog check", "Premise check", 9): Lonchay & Cuvelier t. I (full djvu
@@ -109,3 +109,19 @@ B/C1 crops (NOTES.md section 11) changed one B token after settling against the 
 SO-OLDEN-2442-BC1 prompt were updated to match. B line 7 `t7d7s` ("todos") is now graded M (first sign G-shaped,
 read as the `l7` ligature by the blind reader). Class and key source unchanged (N3, ours). Per-sign disagreement
 between the two readers: 12.1% (agreement, not accuracy).
+
+**Propagation note, R14-OLDV (verifier, account 2, LANE LANE-RUN14-account-2, 6 Oct 2026, 15:54-15:58 UTC; rule 10
+propagation, not a re-audit).** Claim carried: NOTES.md section 19 (R14-OLDF2, 84f4031ed) changed two C1 signs through
+`overrides.tsv` (ciphertext.tsv unchanged): C1_29 `p8r8` -> `p28r8` ("pere" -> "puere", grade I, not a word) and C1_31
+`s2pl3c7` -> `s2ppl3c7` ("suplico" -> "supplico", period spelling, grade M). Checked by this session: (1) `apply_key.py
+... --check` -> `OK: reading.txt matches a fresh decode`, reading now "sino puere ansi supplico"; (2) grade counts
+S=245, M=18, I=23, as stated; (3) crops `images/crops_R14OLDF2/T1.png` and `T4.png` opened against a wider cut of scan 006
+lines 4-6: T1 shows two long-descender p's before l (supported); T4 shows a separate open cup between the p and the looped
+8, and the leaf's own `p7r` (C1 L2) runs the p head straight into the next sign, so a fifth sign is supported -- its value
+(named 2) and the final 8 vs d stay unsettled, which grade I already says; (4) `transcription/segment_R14-OLDF2.log`
+agrees with section 19's table (windows 0-3 -1.050/-0.922/-0.922/-1.079, all FAIL; PREREG call "not concentrated").
+Corrections: the C1 quotation in section 2 above and the queued SO-OLDEN-2442-BC1 prompt
+(`second-opinions/PROMPT-chatgpt-BC1.md`) now read "supplico"; both also printed "quien" where token C1_36 `q28n` decodes
+"quen" (grade M) -- a silent regularization, now quoted as read. SECOND-OPINIONS-QUEUE.tsv row SO-OLDEN-2442-BC1 is
+still `queued` (no answer to reconcile); its row text quotes no reading, so it is unchanged. Class and key source
+unchanged (blocks B/C1 N3, ours); depth not reassessed here.

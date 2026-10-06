@@ -13,7 +13,7 @@ THE ITEM
 - Two passages (scan 2, folio 55; scan 6, folio 56) read, in period spelling, as a personal letter: "se lamenta de uer
   los tiempos que corren, i me enuio el pesame delo de Siguença, porque hubo del mui buenas esperanças", "no se atreuen
   a ablar al duque con ueras, porque todos tienen sus pretensiones i andan al aire de su gusto", "no ai sino paciencia
-  i hacer lo que pudieremos comforme a los tiempos", "suplico a V.Sª me perdone quien decirlo a V.Sª pudiendolo
+  i hacer lo que pudieremos comforme a los tiempos", "supplico a V.Sª me perdone quen decirlo a V.Sª pudiendolo
   callar". Other passages of the same letter name the bishopric of Sigüenza, don Antonio Vanegas (bishop of Pamplona,
   later of Sigüenza), "fr. Mattheo de Burgos" and, uncertainly read, a "secretario [Fran]cisco Gonçalez". The reading is from one image pass and
   fails our language judge; nothing more is claimed.

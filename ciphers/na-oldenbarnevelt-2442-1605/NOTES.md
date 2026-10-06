@@ -1248,6 +1248,9 @@ shift only because their boundaries moved. Not found: no window PASSes, and no w
 (n) a u/v notation pass: one naming for the shared u/v shape across B/C1, applied to the reading and the judge input, before any
 further judge run (~$1.5); (v) a verifier carries this reading change into AUDIT.md. Step (f') is done.
 
+(v) done: R14-OLDV (verifier, 6 Oct 2026) confirmed --check, counts, crops T1/T4 and the re-judge log, and carried the
+change into AUDIT.md and the queued SO-OLDEN-2442-BC1 prompt (also correcting "quien" -> "quen", token C1_36, in both).
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF and R14-OLDF2, 6 Oct 2026)
 
 - Action that depends on nobody: (n) the u/v notation pass (section 19 Verdict), ~$1.5. Step (f') ran on 6 Oct 2026
