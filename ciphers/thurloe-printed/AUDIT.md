@@ -1140,3 +1140,46 @@ Carries R7-THURP10 (NOTES.md section of that name; PREREG-R7-THURP10.md, commit 
   already given (no fresh rule-7 re-derivation for the row; P14 not in Powell; the 2 M are letters, not name codes).
   status.json results[50] depth_pct 100.0 -> 99.8 and depth_check updated.
 - SECOND-OPINIONS-QUEUE.tsv: no row is filed for P10 (the only thurloe-printed row is SO-THURLOE-P4); nothing to update.
+
+## Revision after AUDIT (R8-THURV2, 6 Oct 2026; rule 10 propagation)
+
+Verifier R8-THURV2 (account 4, for LANE LANE-RUN8-account-4; a session separate from the solver R8-THUR25). Carries
+R8-THUR25 (NOTES.md section of that name, commit aedddf34f) into the P25-P28 section above. Nothing decoded.
+
+- **Re-run here:** `tx/p25_rows.py`, `tx/p27_rows.py`, `tx/p28_rows.py` regenerate `tx/img_pairs_P25/P27/P28.tsv`
+  byte-identically; `tx/make_img_keys.py` regenerates the four `tx/key_*_img.tsv` byte-identically and prints the same
+  cross-letter agreement (P27/P28 26 shared, 24 same, 2 spelling only; P26/P27 9 shared, 7 same, 1005 C. S./Ch.St. same
+  person, 1007 Hide vs prot. the one true conflict; P25 0 agreements with P26/P27/P28); `tx/img_pairs_compare.py --check`
+  "ok". Counts confirmed: **368 tokens, C 366, M 2** (P25 87/86/1, P26 22/22/0, P27 154/153/1, P28 105/105/0); of the
+  old OCR alignment's 177 C, 73 confirmed and 103 contradicted (1 not comparable).
+- **Spot check against the committed crops (`images/r8thur25/`), read by this session:** 10 pairs drawn at random
+  (Python `random.Random(20261006).sample`, over all 368): P25 101 j 72 'e'; P26 382 b 460 'at'; P27 383 L1 102 'Ma',
+  L3 1007 'prot.', L3 343 's', L9 49 'r', L11 403 'England'; P28 409 L1 343 's', L2 293 'ca', L7 481 'or'. **10/10 match
+  the page image.** The whole lines around them were also read and agree (P26 b; P27 L1-L11; P28 L1-L2, L6-L8). One
+  caveat, not a correction: two single-code glosses sit above the top edge of their crop and could not be seen in the
+  committed crops (P28 L0 1016 'Colen' over "Spaw 1016"; P25 h 447 'Sweden'); both are consistent with the same code's
+  gloss in the sibling letters (1016 Collen in P26/P27) or unseen, so they stay as R8-THUR25 graded them.
+- **What is superseded above:** in the P25-P28 section, the claim-under-audit counts, the safe sentence's "(C 177, M 63 of
+  240 aligned tokens)" and check 4 ("C 177, M 63", the 31 `single` caveat, "240 is the tokens on the lines `pairs` could
+  split") rest on the OCR alignment (`align_P25..P28.tsv`, `key_lockhart/burton/johnson1/johnson2.tsv`), most of whose
+  pairs were shifted by one or more positions. Read instead: **C 366, M 2 of 368 tokens paired from the page image**
+  (`tx/img_pairs_P2x.tsv`, keys `tx/key_*_img.tsv`); the two M are codes printed out of range (P25 3031 'ma', P27 2372
+  'the'), print slips left as printed. The "P27/P28 sub-key mismatch" (index.tsv P27/P28) was an OCR-alignment artifact:
+  P26-P28 (Manning) share one key, P25 (Lockhart) is a different key. Code 1007 conflict (P26 'Hide' vs P27 'prot.' x2)
+  is logged in HYPOTHESES.md by R8-THUR25 (rule 4; graded M nowhere because each letter's own gloss is printed over it).
+- **Revised safe sentence:** "Birch printed these four letters (Lockhart to Thurloe, 19 June 1656, vol. 5 pp.100-101,
+  and three intelligence letters of Henry Manning signed 'Andrew Burton' and 'Zachary Johnson', April-May 1655, vol. 3
+  pp.382-383, 383 and 409) with the decipherment set above the cipher; we paired that printed decipherment to the numeral
+  groups from the page images, giving group-value keys for two correspondences (Lockhart; Manning) not covered by the
+  folder's other keys (C 366, M 2 of 368 tokens)." Unsafe sentence unchanged.
+- **Class: N0 unchanged for all four**, key `period`, text `known`. Why: the class rests on Birch's printed plaintext,
+  which the re-pairing does not touch; only how the gloss maps onto the groups changed.
+- **Depth (rule 4a), P25-P28 as one dataset row:** 366/368 = **99.5%** cipher tokens at C; residue 2 print slips, no
+  name codes unread. **D3**: >= 80% C, plus a check that can fail -- the within-letter repeated-code agreement against a
+  gloss-shuffle control (P25 11/15 vs shuffle mean 0.07, p95 1; P26 2/2 vs 0.04; P27 22/28 vs 0.20; P28 20/20 vs 0.12),
+  and the cross-letter agreement of two independently glossed Manning letters (P27/P28 24 of 26 shared codes same
+  meaning, the other 2 spelling only). Not D4: 2 M remain and no fresh rule-7 re-derivation by a separate session from
+  spec and key. Sentence: "Manning, writing as Zachary Johnson from the Buss on 6 May 1655, reports news that O'Neill had
+  escaped and was at the Hague." status.json results[97] line and depth fields, and index.tsv P25-P28 status cells,
+  updated to these counts.
+- SECOND-OPINIONS-QUEUE.tsv: no row is filed for P25-P28 (the only thurloe-printed row is SO-THURLOE-P4); nothing to update.

@@ -3128,8 +3128,12 @@
       "grade": "N0",
       "key": "period",
       "text": "known",
-      "line": "Birch 1742 (Thurloe State Papers vol.3 pp.382-383, 383, 409; vol.5 pp.100-101) prints the interlinear decipherment of all four letters, found by LANE TX under misattributed headings; our alignment (tools/interlinear_align.py, C 177 / M 63 of 240 tokens) regenerates that print. A dataset for the pool, not a decipherment (V7-TH25, N0 x4).",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed"
+      "line": "Birch 1742 (Thurloe State Papers vol.3 pp.382-383, 383, 409; vol.5 pp.100-101) prints the interlinear decipherment of all four letters, found by LANE TX under misattributed headings; our pairing of that print to the groups from the page images (R8-THUR25, C 366 / M 2 of 368 tokens; the earlier OCR alignment, C 177 / M 63 of 240, is superseded) regenerates it. A dataset for the pool, not a decipherment (V7-TH25, N0 x4).",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed",
+      "depth": "D3",
+      "depth_pct": 99.5,
+      "depth_sentence": "Manning, writing as Zachary Johnson from the Buss on 6 May 1655, reports news that O'Neill had escaped and was at the Hague.",
+      "depth_check": "printed decipherment (Birch 1742) paired from the page image, 366 C / 2 M (print slips) of 368; within-letter repeated-code agreement vs gloss-shuffle control and P27/P28 cross-letter agreement 24/26 (R8-THUR25; verified R8-THURV2 6 Oct 2026, 10/10 random pairs against the crops)"
     },
     {
       "date": "26 Sept 2026",

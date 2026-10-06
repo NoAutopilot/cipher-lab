@@ -2891,6 +2891,14 @@ as s.23 found. So the third-Johnson-letter search the brief offered is not neede
 Requests: archive.org 2 (`_page_numbers.json` x2), iiif.archive.org 5 (leaves), >= 2 s apart, all 200. No subagents, no
 logins. Report of what was read; no novelty claim (all four letters are N0, AUDIT.md).
 
+## R8-THURV2 -- verifier propagation of R8-THUR25 (6 Oct 2026, account 4, for LANE LANE-RUN8-account-4)
+Separate verifier session. R8-THUR25's scripts re-run byte-identical (`tx/p2x_rows.py`, `tx/make_img_keys.py`,
+`tx/img_pairs_compare.py --check` ok); counts C 366, M 2 of 368 confirmed; 10 random pairs (seed 20261006) read against
+`images/r8thur25/` crops, 10/10 match. AUDIT.md "## Revision after AUDIT (R8-THURV2 ...)": N0 x4 unchanged, revised safe
+sentence, depth D3 99.5% for the P25-P28 row; status.json results[97] and index.tsv P25-P28 status cells updated. Left as is
+(outside the brief's C/M scope, flagged): index.tsv P27/P28 `cipher_system` cells still describe the OCR-era "different
+sub-key" (2/15 agreement), which R8-THUR25 showed is an artifact (24/26 agree). No SO row exists for P25-P28.
+
 ## Remaining gaps (R7-THURP10, 6 Oct 2026; supersedes the D2B-THURP3 list above; R8-THUR25 adds P25-P28 below)
 Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.txt, N8-THUR2); P3 postscript H9 C15 M33 U2 of 59 (reading_P3.txt); P10 p.620 L10 14 unglossed groups C12 M2 against Powell 1937 (tx/reading_P10_L10_powell.tsv); P25-P28 re-paired from the page image C366 M2 of 368 (tx/img_pairs_summary.tsv, R8-THUR25); P2-P28's other items are printed decipherments (N0, AUDIT.md)
 - P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
