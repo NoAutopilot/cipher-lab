@@ -946,7 +946,7 @@ key, which the tool's --out does not). Outputs in `avsk/`.
 
 ## R11A-AVSV2: key_53 low-count S grades audited; G4 = p S -> M (6 Oct 2026, verifier, account 1, LANE-RUN11-account-1)
 
-Verifier R11A-AVSV2 (session_016ehBnRMygPFhJyQTY6HBYX), 16:00-16:10 UTC by `date -u`; separate from every R11A-AVS* worker and from
+Verifier R11A-AVSV2 (session_016ehBnRMygPFhJyQTY6HBYX), 16:00-16:05 UTC by `date -u`; separate from every R11A-AVS* worker and from
 R11A-AVSV. Question (brief): is S supported for each key_53 sign of count <= 3, or is the evidence the anneal alone?
 Counts are from the native `ciphertext_53.tsv` (key_53.tsv's `n=` notes are S1's 100 dpi counts and are stale for G6, now 7, and 8, now 5).
 

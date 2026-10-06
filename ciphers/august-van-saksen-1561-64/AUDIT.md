@@ -930,7 +930,7 @@ for this carry-over as rule 10 requires.
 
 ## Carry-over R11A-AVSV2 (6 Oct 2026, verifier, account 1, LANE-RUN11-account-1)
 
-Verifier R11A-AVSV2 (session_016ehBnRMygPFhJyQTY6HBYX), 16:00-16:10 UTC by `date -u`; separate from every R11A-AVS* worker and from
+Verifier R11A-AVSV2 (session_016ehBnRMygPFhJyQTY6HBYX), 16:00-16:05 UTC by `date -u`; separate from every R11A-AVS* worker and from
 R11A-AVSV. Question: are key_53's low-count (count <= 3) S grades backed by a control that can read that count? Nothing decoded,
 no new material, no network.
 
