@@ -537,3 +537,37 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair crops and sorter tiles; 10 tiles eye-checked (R9-WVOV)
 - [n/a] retry: no step has failed that a retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: rebuild key.tsv per settled sign after the owner's sorter answers, eye-checked and cross-checked against 1069 (~$1.5), else a careful two-pass transcription of the ten gloss rows (~$4.5); then a second audit
+
+## R10-WVOREPLY (WVO search, Hessen <-> Oranje, Oct 1564-Mar 1565; 6 Oct 2026, 09:43-09:5x UTC by date -u)
+Search results only: no decode, no transcription, no status change. Source: Huygens WVO, `wvo/app/brieven?jaar=...&af_naam_vol=Hessen` (the
+`jaar` filter only sorts here; `start=25` page and the 1565 query read), then `wvo/app/brief?nr=` for each Willem-van-Hessen letter dated
+4 Oct 1564-15 Mar 1565 (14 detail pages, saved in `raw/r10/`). Letters of Filips (de jongere) van Hessen in the window (4104, 3650, 4105, 5901, 5902,
+1048, 1049, 1050, 4115, 4116) and 5909 (1 Apr 1565, outside the window) were listed but not opened (a different correspondent / out of range).
+"Cipher" = the Opmerkingen/Inhoud field mentions cijfer/chiffre/ontcijferd: **none of the 14 does**.
+
+| nr | date | direction | relation to 1109 (18 Sept 1564) | cipher per WVO | source / scan |
+|---|---|---|---|---|---|
+| 1110 | 4 Oct 1564 | Hessen -> Oranje, Kassel | not tied to 1109; Levinus Pontanus safe-conduct (copies and a Dutch copy with the original) | no | KHAG A 11/XIV B/15-18, original; PDF 12.1 Mb |
+| 1111 | 14 Oct 1564 | Hessen -> Oranje, Kassel | **"Antwoord op nr. 1109"** (the reply) | no | KHAG A 11/XIV B/15-19, original; PDF 1.19 Mb |
+| 1112 | 6 Nov 1564 | Oranje -> Hessen, Breda | "Vgl. nr. 1110" (Pontanus) | no | HSAM 3II Nassau-Niederlande Korr. 1564-1565 f.17r-19v; PDF 2.8 Mb |
+| 1113 | 1 Dec 1564 | Hessen -> Oranje, Kassel | copy of his 4 Oct letter (1110), Pontanus; "vgl. 1112, 1115" | no | KHAG B 12, 6; PDF 4.62 Mb |
+| 1114 | 18 Dec 1564 | Oranje -> Hessen, Breda | none stated ("geen") | no | HSAM 3II Korr. 1564-1565; PDF 3.19 Mb |
+| 3616 | 17 Dec 1564 | Oranje -> Hessen, Breda (minute) | none; Christina of Hesse's wedding, addressee by title and content | no | KHAG A 11/XIV I/1 nr. 52; PDF 10.3 Mb |
+| 1115 | 6 Jan 1565 | Oranje -> Hessen, Brussels | Pontanus safe-conduct; 1117 answers it | no | HSAM 3II Korr. 1565; PDF 3.12 Mb |
+| 5908 | 17 Jan 1565 | Hessen -> Oranje, Kassel | none; holograph, thanks for the news of Maurits's birth | no | KHAG A 11/XIV B/15-20; PDF 2.38 Mb |
+| 1116 | 24 Jan 1565 | Oranje -> Hessen, Brussels | none stated | no | HSAM 3II Korr. 1565; PDF 6.86 Mb |
+| 4117 | 24 Jan 1565 | Hessen -> Oranje, Kassel | none ("geen"); August of Saxony's letter | no | KHAG B 12, 7; PDF 2.25 Mb |
+| 1117 | 5 Feb 1565 | Hessen -> Oranje, Kassel | "Antwoord op nr. 1115" (Pontanus) | no | KHAG A 11/XIV B/15-21; PDF 2.95 Mb |
+| 1118 | 27 Feb 1565 | Oranje -> Hessen, Brussels | none; news from Rome and Venice | no | HSAM 3II Korr. 1565; PDF 7.86 Mb |
+| 4120 | 2 Mar 1565 | Oranje -> Hessen, Brussels (minute) | "Vgl. 4117" | no | KHAG B 12, 7; PDF 3.0 Mb |
+| 4121 | 15 Mar 1565 | Oranje -> Hessen, Brussels (minute) | "zie ook 1110, 1112, 1113, 1117" (Pontanus) | no | KHAG B 12, 7 nr. 25; PDF 0.44 Mb |
+
+Reading of the table (search result, not a verdict):
+- The only letter WVO ties to 1109 is **1111** (14 Oct 1564, "Antwoord op nr. 1109"); the earlier note here already had 1111 transcribed
+  (`wvo1111_transcription.md`). No later letter in the window paraphrases 1109; the traffic from 4 Oct on is about the apothecary Pontanus,
+  the Hesse wedding, news and Maurits's birth.
+- No cipher mention in any of the 14 records. WVO's absence of a cipher remark is a search result, not proof of plain text (Brongegevens
+  "(onv)" and Opmerkingen are not a reliable cipher proxy, `sources/wvo/NOTES.md`).
+- Scans: every record links a free PDF (`resources.huygens.knaw.nl/media/wvo/images/<band>/<nr>.pdf`), no login, not fetched here. Originals are
+  KHAG (The Hague) or HSAM (Marburg, Bestand 3II); 1117 carries a note that Demandt addresses it wrongly to Lodewijk of Nassau.
+- Requests: huygens resources host 19 in total (1 form page, 4 result lists, 14 detail pages), >= 2.3 s apart, descriptive User-Agent, no 429/403.
