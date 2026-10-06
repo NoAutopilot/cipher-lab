@@ -7,6 +7,10 @@ Settings are S1's (24 Sept 2026): order 3, w as uu, corpus de16/composed_enhg.tx
   python3 anneal_53n.py control SEED OUT.json   exact-profile control (ciphertext_53.tsv's own sign counts) from align_74
   python3 anneal_53n.py target SEED OUT.json    the native 53 ciphertext
   python3 anneal_53n.py shuffle SEED OUT.json   the native 53 signs in shuffled order (null for per-sign agreement)
+  python3 anneal_53n.py control2 SEED OUT.json  R11A-AVS9C (prereg_avs9c.md): make_control on a seed-varied 364-letter window
+                                                of tools/data/de1600/briefedespfalzgr01joha (Johann Casimir letters, 1575-82,
+                                                not in the anneal model), windows filtered (before any anneal) to <= 21
+                                                distinct letters and >= 1 control sign of count 2, as sign 9 has
 """
 import json, os, random, sys
 D = os.path.dirname(os.path.abspath(__file__)); R = os.path.dirname(os.path.dirname(D))
@@ -36,6 +40,22 @@ if mode == 'control':
     # corpus frequency, S1's own design) is used instead.
     seq, p, truth = ha.make_control(' '.join(words), len(set(seq)), len(seq), model, seed)
     res.update(plain=p, truth=truth)
+elif mode == 'control2':
+    import gzip
+    from collections import Counter as _C
+    txt = ha.fold(gzip.open(os.path.join(R, 'tools', 'data', 'de1600', 'briefedespfalzgr01joha.txt.gz'), 'rt',
+                            encoding='utf-8').read())
+    K, N, rng = len(set(seq)), len(seq), random.Random(5000 + seed)
+    while True:  # design filter only: letter count and sign-count profile, never a score
+        start = rng.randrange(0, len(txt) - N + 1)
+        win = txt[start:start + N]
+        if len(set(win)) > K:
+            continue
+        cseq, p, truth = ha.make_control(win, K, N, model, seed)
+        if 2 in _C(cseq).values():
+            break
+    seq = cseq
+    res.update(plain=p, truth=truth, start=start)
 elif mode == 'shuffle':
     random.Random(seed + 77).shuffle(seq)
 from collections import Counter

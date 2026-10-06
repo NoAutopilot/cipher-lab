@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """S1, 24 Sept 2026: build ciphertext_53.tsv (53 p1 postscript, 10 lines) from recon53/ciphertext_draft.tsv
 (passA_53 + passB_53, tools/reconcile_passes.py) plus the settlements below, decided on the crops
-(images/crops_s1/53_L*.png and re-crops of L01, L08, L09). --check verifies the committed file."""
+(images/crops_s1/53_L*.png and re-crops of L01, L08, L09). --check verifies the committed file.
+F1, 24 Sept 2026, appended f.266v's three cipher lines (82 rows, 53p2_L01-L03) as one careful hand reading with no
+pass files; R11A-AVS9C (6 Oct 2026) moved those rows verbatim into f1_p2_53.tsv, the recorded input this script now
+appends, so --check covers the whole S1/F1 file (ciphertext_53_s1.tsv, p1+p2). R11A-AVS53 kept that file under the
+_s1 name; the current reading is ciphertext_53.tsv from settle_53n.py (native passes), not this script."""
 import sys
 SET = {  # draft (line, pos): (sign or None, why)
  ('53_L08', 28): (None, 'image: B\'s OQ is the two dots over the preceding triangle (diaeresis), not a sign'),
@@ -32,7 +36,8 @@ def build():
             why = (why + '; ' if why else '') + NOTE[(L, p)]
         pos[L] = pos.get(L, 0) + 1
         out.append([L, pos[L], s, c, why])
-    return 'line\tpos\tsign\tconf\twhy\n' + ''.join('\t'.join(map(str, r)) + '\n' for r in out)
+    p2 = [l for l in open('f1_p2_53.tsv')][1:]  # F1's f.266v hand reading, verbatim
+    return 'line\tpos\tsign\tconf\twhy\n' + ''.join('\t'.join(map(str, r)) + '\n' for r in out) + ''.join(p2)
 
 t = build()
 if '--check' in sys.argv:
