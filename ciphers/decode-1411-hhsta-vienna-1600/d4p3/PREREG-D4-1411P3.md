@@ -52,3 +52,14 @@ otherwise undecided. Residue 21: r confirmed iff r ranks 1st on both with >= 5 o
 No grade moves unless PASS(T21r) (or a preferred variant). On PASS: p.3 numerals whose residue letter is gloss-backed (frozen
 source 'gloss', or residue 21) move M -> S; alphabet-filled residues and doubtful numbers stay M. No PASS: all M. Nothing else
 in the folder is regraded. A PASS is "worth a verifier", never "read" (rule 10).
+
+## Addendum A (6 Oct 2026, pushed before either blind pass ran; nothing above changed)
+
+The right-page crop overlay (reduced, `images/d4p3_crops/p3R_lines_debug.jpg`) shows small interlinear letters above some
+numbers on a few lines of f.184 (around the 18th line and the last four lines) -- a second period gloss, not read by the worker.
+Both blind passes are asked to record, per number, any letter written directly above it (blank if none). Secondary test, not
+part of PASS(X): at every number with a gloss letter that both passes agree on (after reconciliation), compare that letter
+with T21r's letter (and each h variant's); statistic = matches / glossed numbers; control = 10,000 value-shuffled T21r tables
+(the 24 residue letters permuted, seed 1411), p99 and count >= real. "Gloss agrees with T21r" iff real > control p99 and
+>= 8 glossed numbers; fewer than 8: NON-TEST. u/v, i/j and u-with-ring count as one letter. Grade-C gloss pairs, if any, are
+recorded as new known-plaintext pairs (C) whatever this test reads; they do not retune T21r in this job.
