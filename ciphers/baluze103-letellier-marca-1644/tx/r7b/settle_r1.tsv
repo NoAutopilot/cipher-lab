@@ -1,0 +1,48 @@
+line	position	sign	conf	note
+f50r_L01	1	=19	M	bar over 19
+f50r_L02	1	venus	M	q with tail
+f50r_L02	2	tt	M	struck t
+f50r_L02	4	-	M	no sign between f and R
+f50r_L02	5	R	M	R-like shape
+f50r_L02	19	3	M	3 before final x
+f50r_L02	20	xs	M	x with extra stroke
+f50r_L03	2	eps	H	clear epsilon
+f50r_L03	7	81	M	8 with raised 1
+f50r_L03	11	c	M	plain c
+f50r_L03	12	tt	M	ornate double loop struck
+f50r_L03	15	dt	M	d with top stroke
+f50r_L04	2	lb	H	looped L with stroke
+f50r_L04	3	xbar	M	x crossed by bar
+f50r_L04	4	bt	M	b with top stroke
+f50r_L04	5	o7	H	o joined to 7
+f50r_L04	6	tt	M	struck t with p
+f50r_L04	8	R	H	R-like
+f50r_L05	1	xbar	M	x crossed by bar
+f50r_L05	10	R	M	R-like present
+f50r_L05	13	tt	M	ornate double loop
+f50r_L05	19	mt	M	m with tail
+f50r_L06	1	tt	M	struck t
+f50r_L06	2	o7	H	o joined to 7
+f50r_L06	5	6	M	six visible before x
+f50r_L06	6	xbar	M	x crossed by bar
+f50r_L06	9	=3	H	bar over 3
+f50r_L06	12	bt	M	b with top stroke
+f50r_L06	15	P	M	P after hz
+f50r_L07	4	R	H	R-like
+f50r_L07	6	lb	H	looped L
+f50r_L07	12	bt	M	b with top stroke
+f50r_L08	1	c	M	plain c
+f50r_L08	4	R	H	R-like
+f50r_L08	6	m	M	m no clear tail
+f50r_L08	16	bt	M	b with top stroke
+f50r_L08	18	xs	M	x with extra strokes
+f50r_L08	19	m	M	plain m
+f50r_L08	21	xbar	M	struck sign
+f50r_L08	22	bt	M	b with top stroke
+f50r_L09	8	venus	M	q with tail
+f50r_L09	10	m	M	plain m
+f50r_L09	11	xs	M	x with curl stroke
+f50r_L09	12	o7	H	o joined to 7
+f50r_L09	13	tt	M	struck t
+f50r_L09	18	15	M	open S-like 5
+f50r_L10	9	R	H	R-like

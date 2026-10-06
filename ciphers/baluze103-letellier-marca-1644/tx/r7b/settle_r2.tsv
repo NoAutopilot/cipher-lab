@@ -1,0 +1,45 @@
+line	position	sign	conf	note
+f50r_L11	7	m	M	three minims
+f50r_L11	12	bt	M	crossbar on b top
+f50r_L11	17	xs	M	x with extra stroke
+f50r_L11	19	u	M	small u-like
+f50r_L11	20	bt	M	crossbar on b top
+f50r_L12	4	tt	M	struck double t
+f50r_L12	7	m	M	three minims
+f50r_L13	5	tt	M	struck cross, no q
+f50r_L13	14	m	M	plain m
+f50r_L13	15	xc	M	curly x
+f50r_L13	16	q	H	plain q stem
+f50r_L13	17	z	M	z form
+f50r_L13	18	6	M	6 loop visible
+f50r_L14	4	q	H	plain q stem
+f50r_L14	7	lb	M	looped l
+f50r_L14	8	tt	M	struck cross
+f50r_L14	10	R	M	R-like hooked
+f50r_L14	11	tt	M	struck double
+f50r_L14	13	x	M	plain x
+f50r_L15	1	m	M	three minims
+f50r_L15	15	bt	M	crossbar on b
+f50r_L15	19	tt	M	struck double
+f50r_L16	6	delta	M	round d
+f50r_L16	7	t	M	t stroke over d
+f50r_L16	8	u	M	u after d
+f50r_L16	10	hz	H	h with tail
+f50r_L16	11	hbar	M	h with bar
+f50r_L16	12	tt	M	struck double
+f50r_L16	13	tt	M	struck double
+f50r_L16	16	m	M	three minims
+f50r_L17	11	venus	M	q-like sign
+f50r_L17	12	R	H	R-like
+f50r_L17	15	xc	M	curly x
+f50r_L17	17	tt	M	struck cross
+f50r_L18	10	tt	M	struck cross
+f50r_L18	14	m	M	three minims
+f50r_L18	16	m	M	plain m
+f50r_L18	18	q	M	plain q stem
+f50r_L19	6	bt	M	crossbar on b
+f50r_L19	7	R	M	R-like hook
+f50r_L19	14	m	M	plain m
+f50r_L19	17	tt	M	struck cross
+f50r_L20	16	xc	M	curly x
+f50r_L20	17	m	M	plain m
