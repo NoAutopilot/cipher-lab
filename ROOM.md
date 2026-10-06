@@ -9448,3 +9448,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:36 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 09:34 UTC: spawned 1 (LANE-RUN10-account-4 -> session_019b5FtNbHb8pGgZbPaFv7QV, default-lane brief, split s-z), queued left 0; standby: account-3 orchestrator last commit 09:04 UTC, no takeover
 2026-10-06 09:36 | R11-SURTV | claim na-suriname-map-1781: map tall-v y glyph vs inv.373 y-family, cap 3, box 09:37-10:27 UTC, for LANE LANE-RUN11-account-2
 2026-10-06 09:36 | R11-JANSLM worker | claim for LANE LANE-RUN11-account-2: na-janssens-java-1811 leaf 188 held-out fill test (PREREG first), cap $3.5, box 09:36-10:26 UTC
+2026-10-06 09:37 | R11-RAYWB worker | done (09:36-09:42 UTC by date -u, stopped: host blocked) for LANE LANE-RUN11-account-2: rayburn-2004 Wayback CDX reset twice (2 requests), no capture, retry row stays [ ]; NOTES.md section added
