@@ -31,13 +31,14 @@ book's row differs from the War Department office copy is not shown by these wit
 
 ## Thirteen further entries, O9-E to O9-Q (R7B-ECK64B, 6 Oct 2026)
 
-Transcribed from the volunteer text only (not re-checked on the page images in this pass; conditional on that
-transcription, rule 2). Code-word tokens over the thirteen: H 113, C 0, I 0, M 0 (the totals line below counts all
-seventeen: H 147). Not graded because not in key-no9.md (the decoder leaves them as written): "wafind" (O9-N, the print's
+Transcribed from the volunteer text (R7B-ECK64B) and image-checked on 6 Oct 2026 (R8-ECK64, image-check-no9.tsv: one blind
+read of line crops per page batch, every code-word disagreement settled on the page image). One code-word change: O9-Q
+"Wardham County" is "Windhams Country" on the page. Code-word tokens over the thirteen: H 114, C 0, I 0, M 0 (113 before
+the image check; the totals line below counts all seventeen: H 148). Not graded because not in key-no9.md (the decoder leaves them as written): "wafind" (O9-N, the print's
 "advanced"; Wafer = Advance, an irregular form), "Aqui" (O9-N signature, not located in mssEC 67 and not checked in the
-print), "wagged" twice (O9-P, by sense "arrested", Wadding/Waggish = Arrest, an irregular form), "Wardham County" (O9-Q,
-the print's "enemy's country"; Wiley/Windham = Enemy, so "Wardham" is likely the clerk's or the volunteer's slip for
-Windham; not read here). O9-J "Relay read" is the print's "cavalry raid" (volunteer "read"); O9-L "man Knock Casey" and
+print), "wagged" twice (O9-P, by sense "arrested", Wadding/Waggish = Arrest, an irregular form), "Wardham County" (O9-Q) was
+the volunteer's slip: the page reads "Windhams Country" (Wiley/Windham = Enemy, the print's "enemy's country"), graded H
+since the image check). "wafind" and "Aqui" were confirmed on the page image (image-check-no9.tsv) and stay ungraded. O9-J "Relay read" is the print's "cavalry raid" (volunteer "read"); O9-L "man Knock Casey" and
 "hint of Rocks" are the print's Monocacy and Point of Rocks, plain words split by sound, "hint" probably a misread "Point".
 
 | entry | OR (IA djvu full text) | print | agreement |
@@ -160,9 +161,9 @@ Code-word tokens: H 8.
 
 **O9-Q | Page 20 | 8912 | 13 Mar 1864, Halleck to Grant (operator Davenport or Stevens (9))**
 
-[Washington] Mar Thirteen {time: 12.30 PM} For [U. S. Grant] [Maj. Gen.] Steele [Telegraphs]'s that [N. P. Banks] with seventeen thousand & [W. S. Sherman] with ten thousand more from Alexandria on Shreveport and wish him to cooperate period He says he can go with seven thousand effective but objects to the [Movement] on account of bad roads & guerillas and prefers to remain on the defensive line of the [Arkansas (river)] period I have replied that he should cooperate with [N. P. Banks] & [W. S. Sherman] unless you direct other wise period His objections on account of guerrillas [Threaten]ing his [Rear] will apply equally to an [Advance] at any time in to the Wardham County (sig) [Halleck] looks stormy
+[Washington] Mar Thirteen {time: 12.30 PM} For [U. S. Grant] [Maj. Gen.] Steele [Telegraphs]'s that [N. P. Banks] with seventeen thousand & [W. S. Sherman] with ten thousand more from Alexandria on Shreveport and wish him to cooperate period He says he can go with seven thousand effective but objects to the [Movement] on account of bad roads & guerillas and prefers to remain on the defensive line of the [Arkansas (river)] period I have replied that he should cooperate with [N. P. Banks] & [W. S. Sherman] unless you direct other wise period His objections on account of guerrillas [Threaten]ing his [Rear] will apply equally to an [Advance] at any time in to the [Enemy]'s Country (sig) [Halleck] looks stormy
 
-Code-word tokens: H 15.
+Code-word tokens: H 16.
 
-Totals over the 17 entries: H 147, C 0, I 0, M 0.
+Totals over the 17 entries: H 148, C 0, I 0, M 0.
 <!-- decode.py: derived block ends -->

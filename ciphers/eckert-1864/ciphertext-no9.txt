@@ -58,7 +58,8 @@ hers Very signed Applause Harriet
 
 # Thirteen further Jan-Mar 1864 entries of mssEC 19 pages 1-20, added 6 Oct 2026 (R7B-ECK64B, LANE LANE-RUN7-account-1).
 # Transcribed from the Decoding the Civil War volunteer text only (item API field "text", pointers 8893-8912, fetched
-# 6 Oct 2026; deletion tags dropped as decode.py would). NOT re-checked against the page images in this pass (cap): a
+# 6 Oct 2026; deletion tags dropped as decode.py would). Image-checked 6 Oct 2026 (R8-ECK64; image-check-no9.tsv): one
+# code-word change, O9-Q last line "Wardham County" -> "Windhams Country" as on the page. Before that check: a
 # reading here is conditional on that transcription (CLAUDE.md rule 2), unlike O9-A..D. Chosen: every entry on pages 1-20
 # whose operator line is not Beckwith "1"/"2" or Caldwell (Ciphers No. 1 and No. 2, read in ciphertext.txt and
 # ciphertext-no2.txt) and whose code words read in mssEC 67. Left out: p.7 Baldwin 5 Feb (Pauline is blank in mssEC 67,
@@ -288,4 +289,4 @@ other wise period His objections on
 account of guerrillas whimpering his walker
 will apply equally to an wafer
 at any time in to the
-Wardham County (sig) Abortion looks stormy
+Windhams Country (sig) Abortion looks stormy

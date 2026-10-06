@@ -1,0 +1,20 @@
+# Image check of O9-E..O9-Q (ciphertext-no9.txt) against the mssEC 19 page images, 6 Oct 2026 (R8-ECK64, LANE LANE-RUN8-account-1).
+# Every code-word span where one blind Sonnet read of the line crops (tools/iiif_lines.py, 2-line crops of 2400 px page images)
+# disagreed with the volunteer text, plus the plain spans checked by the worker's eye. call: the worker's reading at 2400 px or
+# from a native-resolution IIIF region; applied: whether ciphertext-no9.txt was changed.
+entry	page	pointer	line	volunteer	blind_read	call	code_word	applied	note
+O9-Q	20	8912	last	Wardham County	Windham Eminity	Windhams Country	yes	yes	"Windhams" = Wiley/Windham (Enemy) with the clerk's s; print "enemy's country". +1 H token
+O9-E	1	8893	3	Palate	Palati	Palate	yes	no	final e as in "time" on the same line
+O9-F	1	8893	4	Queenly	Quenly	Queenly	yes	no	native-resolution region: Qu-e-enly; Queenly/Quotient = Joe Johnston
+O9-K	7	8899	7	Youth	South	Youth	yes	no	looped Y, same form as Youth elsewhere in the hand
+O9-L	11	8903	3	Gem	Pem	Gem (capital ambiguous G/P)	yes	no	native region: looped capital, G or P; no Pem in mssEC 67; Gem/Ginseng = Potomac fits "fords of the ... between the mouth of the Monocacy and Point of Rocks"; kept H, the doubt noted
+O9-N	13	8905	15	Abbey	Abby	Abbey/Abby	yes	no	same code word either spelling; key row Abbey/Audit
+O9-N	13	8905	20	Negus	Argus	Negus	yes	no	native region: the hand's looped N, then egus; Neptune/Negus = Richmond (Kilpatrick raid)
+O9-N	14	8906	4	Sharpers	Sharpin	Sharpers (ending doubtful)	yes	no	native region: Sharp + ers/ins; Sharper/Sheffield = Pickets
+O9-N	14	8906	6-7	wafind; Aqui	nafund?; Agm	wafind; Aqui	irregular	no	volunteer text confirmed; both stay ungraded as before
+O9-P	19	8911	6	Waddings	Weddings	Waddings	yes	no	clear a
+O9-P	19	8911	16,21	wagged x2	nagged x2	wagged	irregular	no	initial is the hand's w (as in "watched", same line)
+O9-P	19	8911	22	superb	Support	superb	yes	no	Supper/Superb = Telegraphs
+O9-P	19	8911	last	their way to Boston sig Annal	(not in crops)	their way to Boston sig Annal	yes	no	bottom line outside the crop region; read on the page image
+O9-N	13	8905	16	twenty ninth	ninety ninth	twenty ninth	no	no	date word; header 29 Feb 1864
+O9-E	1	8893	2	Bakers	Parkins	Parkins or Parkers	no	no	plain word, not changed (O9-G has "Parkers")
