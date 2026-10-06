@@ -135,3 +135,23 @@ Verdict cheapest next: the clear-text transcription pass (does not wait on the g
 image refs. No cipher reading changes in this job.
 
 (R10-HUNTTNA and R10-SEURE4 from wave 3 are spawned in this refill.)
+
+## Wave 5 (written 10:4x UTC from wave 4's own Verdict lines; last wave of this lane; intake gate exit 0 for every folder, 6 Oct 09:4x-10:2x UTC)
+
+### R10-BAL103F -- baluze103-letellier-marca-1644: add the 42 f.50 9 tiles to the sorter focus box (cap 1.5, box 25 min)
+Verdict cheapest next (R10-BAL103E). Rebuild the f.50 sorter with tools/sign_sorter.py including the 42 nine tiles in focus, run
+tools/sorter_preflight.py and paste; on PASS a ROOM flag for the account-3 orchestrator to republish (it published Wn9GbXBcNCxcbMZbU2uqCZ).
+Do not publish.
+
+### R10-DEC1162B -- decode-1162-modena-ambung-1492: second blind pass over images/clear/ for the 41 doubtful words (cap 3, box 40 min)
+Verdict cheapest next (R10-DEC1162). One blind pass on the existing crops (no full page to a subagent), then reconciliation; record which
+doubts settle and which stay; no cipher change.
+
+### R10-ECK62T -- eckert-1862: split2 wrongtel/confpair PREREG and run, then the adopt-s2 decision (cap 3, box 40 min)
+Verdict cheapest next (R10-ECK62S). New PREREG for the 16-target pool (control and gate stated before the run, pushed first); run under
+--split2; write the adopt-or-not decision with both numbers side by side; legacy outputs untouched; every --check passes.
+
+### R10-COL26D -- colbert26-lathuillerie-1644: held-out test of 32 = u and 15 = e on a glossed sibling leaf (cap 3.5, box 45 min)
+Verdict cheapest next (R10-COL26C). Pick the leaf from siblings_sort.tsv (not among the 14 anchor_split units), PREREG the span and gate
+with a power check first (if underpowered, NON-TEST and stop before any crop); crops via tools/iiif_lines.py pasted; key_f23 changes only
+on a gate pass.
