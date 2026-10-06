@@ -1097,3 +1097,40 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 2 internal gaps; cheapest next: Tournon 1556 key from fr. 3138 fo. 22r with an image-exemplar reference sheet before the two blind passes, ~$5
+
+## D1-SEURES: Morvilliers 1549 sign sorter built for the owner (6 Oct 2026, 13:06-13:2x UTC by date -u, account 1, LANE DEFAULT-account-1-20261006-1240)
+Named next step of D1-SEURE (two blind passes split at err 0.778; TRANSCRIPTION.md: the next pass is the owner's). No network beyond one Gallica
+IIIF request to re-fetch the canvas-70 region source (the images are not committed; `known_keys/regen_images.sh`).
+**Build.** `sh ciphers/fr3151-seure-1558/known_keys/sorter/build.sh` (no network): `tools/glyph_atlas.py segment` on the fo. 66r region source
+(788 signs, median height 49 px), `cluster --k 40`, then `known_keys/sorter/build_inputs.py`: line ids from D1-SEURE's 22 eye-set centres after
+de-sloping (mean residual 19 px, pitch about 120); clear words dropped (L06 'Neantmoins', L22 'Le S. Ascanio colonne est'); L01-L02 dropped (a long
+ruled stroke runs through both and the segmenter finds about 10 of their ~45 signs, also after removing the rule and stretching contrast); specks under
+20 px and the leaf edge dropped; boxes padded 4 px; one flattened strip per line as the page. Starting piles = the 40 shape clusters, each named by the
+label-sheet label the two passes most often give at that proportional position (a name, not a reading). Focus box ("Check these first", 18 tiles):
+the oddest tiles of the piles named in the passes' most frequent A/B substitution pairs (o/phi 4, d/f 4, ++/o 3, ++/d 3, #/d 3, ...).
+**Page.** `known_keys/sorter/out/morvilliers_fo66r_sorter.html` (4.1 MB, 695 tiles, 40 piles, lines 3-22). `tools/sorter_preflight.py`: PASS
+(template ok; answerable 18 focus tiles, 40 named piles, 0 unanswerable; right line 0 off-line, 3 wide = 0.4%, 0 ink outside 3-60%; contact sheet
+drawn). Eye checks: the 24-tile contact sheet (each tile beside its strip) and 14 random tiles opened against the unflattened region source: every
+tile sits on its cipher line; in the 14-tile check 9 are whole signs and 5 are pieces (descender tails from the line above, a speck, part of a stroke)
+-- the page's lede tells the owner to send those to BAD-CUT. Not published (handed to the account-3 orchestrator by a ROOM flag line).
+**Not done.** No reading, no key, no gate: 0 tokens read. The pile names are noisy starting guesses (a # tile sits in a pile named d.3).
+Lesson (one line): glyph_atlas's line finder merges two lines that share a long ruled stroke; assign lines from eye-set centres instead.
+
+## Remaining gaps (D1-SEURES, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE); Danzay 1557 key non-test (R9-SEURE); La Guiche 1551 key FAIL with control power under one map (R9-SEURE2); Babou 1558 key not rebuildable from the microfilm capture (R10-SEURE3); Morvilliers 1549 block two blind machine passes err 0.778 (D1-SEURE), sign sorter built and preflight PASS, handed for publishing (D1-SEURES); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; Danzay non-test, La Guiche FAIL under one map, Babou not rebuildable, Morvilliers transcription waits on the owner's sorter; next: Tournon 1556 key (fo. 22r, 13 lines, slip decipher legible at M) with an image-exemplar reference sheet cut from the leaf before two blind passes, ~$5
+- Morvilliers 1549 key (fr. 3138 fo. 66r) - blocker: waiting-on the owner's answer in the Morvilliers sign sorter (published by the account-3 orchestrator from the ROOM flag of 6 Oct 2026); page known_keys/sorter/out/morvilliers_fo66r_sorter.html; then tools/sign_sorter_apply.py, machine passes against the settled labels, and alignment to the margin decipher (which also needs a person's or a higher-contrast read); lines 1-2 still need a recut
+- Babou 1558 interlinear decipher (fr. 3138 fo. 35v) - blocker: illegible at the Gallica microfilm scan; reopens with a colour capture (BnF reproduction request) or a person's read in the reading room
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (D1-SEURES, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: Danzay non-test (R9-SEURE); La Guiche FAIL under one map (R9-SEURE2); Babou illegible (R10-SEURE3); Morvilliers sorter built, waits on the owner (D1-SEURES); Tournon 1556 (slip) untried
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gap; cheapest next: Tournon 1556 key from fr. 3138 fo. 22r with an image-exemplar reference sheet before the two blind passes, ~$5
