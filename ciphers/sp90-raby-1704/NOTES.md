@@ -413,3 +413,13 @@ Read pp.20-30 and p.61 of `UfnriIriq9UC` in a browser page view (owner's machine
 
 ### R9-HOUSE (account-4 worker, 6 Oct 2026, by date -u)
 LOCAL-QUEUE.tsv row L61 (ia-reader) filed for Preuss 1897 pp.20-30 and p.61, as R8-RABY's Next named; no existing row asked it (grep UfnriIriq9UC: 0). Google Books API livecheck 6 Oct 2026: HTTP 200. Status stays `open`; nothing read.
+
+### R13-RABYPDF (account-4 worker, 6 Oct 2026 17:42-17:43 UTC, by date -u): Preuss 1897 retry
+- LOCAL-QUEUE L61 checked first: still `queued`, no answer.
+- ONE retry of the PDF download (books.google.com/books/download/...pdf?id=UfnriIriq9UC&output=pdf, browser UA, single request): HTTP 302 to google.com/sorry (captcha), 456 bytes of HTML, no PDF. Host stopped, not retried.
+- Internet Archive advancedsearch (title "preussische Mediation" OR creator Preuss + 1897): 1 hit, `kpbc.umk.pl.287_culm_nachrichten_1897_207266` (a Culm newspaper issue, not this book). No IA copy. HathiTrust not retried (bib API 403 in R8-RABY; full text Cloudflare-blocked from the cloud).
+- Nothing read; pp.20-30 and p.61 remain unread. Found: none; not found: nothing, since no text was obtained.
+- Requests: books.google.com 1 (302 captcha), archive.org 1.
+
+### Next step (after R13-RABYPDF)
+waiting-on LOCAL-QUEUE L61 (owner's browser page read of Preuss 1897 pp.20-30 and p.61, Google Books UfnriIriq9UC). The cloud PDF route is closed twice (429 on 6 Oct 04:0x UTC, captcha on 6 Oct 17:4x UTC); do not retry it from the cloud.
