@@ -526,3 +526,26 @@ from its shuffle at N 978 on ru19_soft. A different instrument, not a further tu
 a judge statistic that the shuffle control can separate (for example the decode's word-segmentation rate against a
 Russian lexicon, with the shuffled target as its control), ~$2. Verdict: keep going (no outside blocker); the
 homophonic family on this target is otherwise spent.
+
+## R10-KAL7, lexicon word-segmentation gate for the S3' two-stage decode, 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run10-jobs.md` "R10-KAL7" (LANE-RUN10, account 2), the instrument R9-KAL6
+named. Disk and CPU only, no hosts. Pre-registration in HYPOTHESES.md "R10-KAL7" (commit 32b67fba) before any scored run.
+Driver `scripts/lexseg.py`: R9-KAL6's two-stage homophonic unit (ru-s3p-soft, convention A, N 978, K 36, restarts 20)
+retrained on the S3'-soft Synodal Bible without the New Testament; lexicon = NT word types (length >= 4, count >= 2,
+7,586 types, `tools/data/ru19_soft/lexseg/`), held out from every corpus the decoder used; statistic = share of decode
+letters covered by non-overlapping lexicon words (DP).
+- Null: 50 shuffles of the target through the same pipeline, coverage 0.020-0.087, p95 **0.0736**.
+- Positive control first: 5 synthetic windows at the target's N, K and sign-count profile read 0.160-0.729 (mean 0.469),
+  all above the gate and above their own shuffle null (p95 0.0654): **control PASS**, and the shuffle control is shown to
+  differ from a true decode on this statistic (rule 3 orthogonality).
+- Target: **0.0440**, the median of its own shuffle null (rank 26 of 51). By the registered rule: **control-backed
+  negative** for the S3' two-stage homophonic design on this statistic, conditional on Ernst's transcript, convention A
+  and a Bible-register lexicon. Second instrument on S3' (first: R9-KAL6's n-gram judge, "cannot decide").
+Status stays `open`. Rule 10: nothing here is a reading.
+
+**Next steps.** The Russian S3' homophonic hypothesis now has a control-backed negative from an instrument that separates
+true decodes from shuffles by 2-10x at this N; the homophonic family on this target is spent for S3'. The same driver can
+test the other Russian schemes (S1, S1s, S3, S3-soft) and German at no tool cost (~$1.5 each; lexicon from a held-out
+book group of the matching corpus), which would turn the earlier "judge cannot decide" Russian rows into decisive ones.
+Verdict: keep going (no outside blocker).

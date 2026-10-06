@@ -797,3 +797,25 @@ N 978. This is the **second instrument on the S3' design** (first: the ru19_soft
   transcript, convention A and the Bible-register lexicon). Secondary (not gating): coverage at word length >= 5.
 - Unscored build check before this registration: one synthetic window (seed 1) decoded once to time the driver (33 s;
   recovery 0.961, coverage 0.444). Disclosed, not used to set G or the gate.
+
+### R10-KAL7 result (6 Oct 2026, 07:26-07:37 UTC; pre-registration commit 32b67fba before any scored run)
+
+Per-file coverages: `ciphers/kaliningrad-2015/lexseg/coverage_minlen4.tsv` (gating) and `coverage_minlen5.tsv` (secondary);
+target decode `lexseg/target_decode_noNT.txt` (not a reading). 76 decodes, about 33 s each, 4 in parallel.
+
+| unit | N / K | runs | coverage, len >= 4 | coverage, len >= 5 (secondary) |
+|---|---|---|---|---|
+| shuffled target (null), seeds 1-50 | 978 / 36 | 50 | 0.020-0.087, mean 0.046; **G (p95) 0.0736** | 0.000-0.023; p95 0.0215 |
+| shuffled synthetic seed 1 (its own null), seeds 1-20 | 978 / 36 | 20 | 0.028-0.080; **G_s (p95) 0.0654** | 0.000-0.022; p95 0.0204 |
+| synthetic positive control, seeds 1-5 (recovery 0.961 / 0.438 / 0.991 / 0.976 / 0.953) | 978 / 36 | 5 | 0.444 / 0.160 / 0.729 / 0.550 / 0.461, mean 0.469 | 0.336 / 0.078 / 0.651 / 0.423 / 0.396 |
+| **target** (two-stage, NT-free training) | 978 / 36 | 1 | **0.0440** | 0.0153 |
+
+- **Positive control: PASS** -- 5 of 5 synthetic coverages above both G and G_s (even seed 2, recovery 0.438, reads 0.160,
+  twice G). The shuffle null and the synthetic separate by 2-10x on this statistic, so the rule-3 orthogonality check holds:
+  the shuffled control can and does differ from a true-plaintext decode here.
+- **Target: at or below G -> by the pre-registered rule, a control-backed negative for the S3' (ru-s3p-soft) two-stage
+  homophonic design on this statistic.** The target's 0.0440 sits in the middle of its own shuffle null (rank 26 of 51;
+  null median 0.0445); n-gram score -3328.9 against the shuffles' -3402.9 to -3301.9 (median -3346.9). Secondary figure
+  agrees (0.0153 vs p95 0.0215). Conditional on Ernst's transcript, convention A, and a Bible-register NT lexicon.
+- This is the **second instrument on the S3' design** (first: R9-KAL6's ru19_soft n-gram judge, which could not decide).
+  No reading claimed; nothing here is a reading (rule 10).
