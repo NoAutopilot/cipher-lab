@@ -9115,3 +9115,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 03:44 | R8-WHIT worker | claim R8-WHIT whitworth-1707 lookups, cap 2.5, box ends 04:29 UTC, for LANE LANE-RUN8-account-4
 2026-10-06 03:46 | R8-THURV (verifier) | done (03:44-03:46 UTC by date -u, brief met): thurloe-printed R7-THURP10 propagated -- checks exit 0, P10 L10 C12 M2 confirmed; AUDIT.md revision section (N0 unchanged, row 50 D3 unchanged, depth_pct 100->99.8, 995/997); code-67 s/o conflict logged in new HYPOTHESES.md; no SO row for P10; no Powell page on disk; commit cff35a44; for LANE LANE-RUN8-account-4
 2026-10-06 03:46 | R8-ECK64 worker | claim: eckert-1864 image-check of the 13 O9-E..Q entries, cap 4.5, box 03:46-04:51 UTC, for LANE LANE-RUN8-account-1
+2026-10-06 03:46 | R8-COL26 worker | claim for LANE LANE-RUN8-account-1: colbert26-lathuillerie-1644 canvas 62-63 numerals+gloss, cap 4.5, box to 04:51 UTC
