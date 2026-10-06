@@ -107,3 +107,8 @@ run keeps its as-read gloss "Ilgen" (M, doubtful) on 848 under PREREG-R8-MANT. 8
 | family | control | control result | target result | verdict |
 |---|---|---|---|---|
 | pooled hard-EM multi-run aligner, key.tsv fixed (`interlinear_align.py --fix`, PREREG-R9-MANTPOOL) | 1000 gloss shuffles within code-count bins, seed 9501 | mean 14.93, p95 19 | S 24 free codes agreeing in >= 2 runs (of 87 recurring) | PASS, thin: ~15 expected by chance; known-answer 5/5 (letter codes only); 24 codes into key.tsv at M; first attempt with this instrument |
+
+## Per-code shuffle test on R9-MANTPOOL's 24 codes (R9-MANTPC, 6 Oct 2026, LANE LANE-RUN9-account-4, account 4)
+| family | control | control result | target result | verdict |
+|---|---|---|---|---|
+| per-code agreement A vs the same code's A under 1000 within-bin gloss shuffles (PREREG-R9-MANTPC, seed 9501, BH q 0.10) | power: 5 known-answer C codes unfixed, same test | 5/5 PASS (p 0.001-0.015, n 10-15) | 7/24 PASS (letter 4/18, word 3/6) | 237 341 402 451 588 592 714 kept M "per-code PASS"; 285 515 636 kept M (raw p < 0.10); 197 253 272 281 295 403 447 513 560 562 583 585 613 737 removed (raw p 0.10-0.91); low-n FAILs are closer to untestable than refuted |
