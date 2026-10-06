@@ -9527,3 +9527,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 10:12 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 10:12 UTC: spawned 0 (), queued left 0
 2026-10-06 10:12 | R10-BAL103D | PREREG addendum (strict known-9 rule) pushed before the f.171r L12-18 pass is read; for LANE LANE-RUN10-account-1
 2026-10-06 10:13 | R10-BAL103D | wip: f.171r L5-L11 crops+blind pass, f.172r decipherment L8-19, enlarge9.py pushed; L12-18 pass running; for LANE LANE-RUN10-account-1
+2026-10-06 10:14 | R10-BAL103D | done (10:08-10:14 UTC by date -u, brief met): baluze103 f.171r 9 control enlarged to L1-L18 (2 blind Sonnet passes, decipherment read to f.172r L19, enlarge9.py --check 0): 29 9s, strict-known N=6 all s, k_i=0 -> registered gate cannot pass, NON-TEST against its own power control, shape read not run, key/exceptions untouched; descriptive loose s15 r4 i3; next fr17 test 9=s on f.50 ~$1.5; commit 4ba074f2e; for LANE LANE-RUN10-account-1
