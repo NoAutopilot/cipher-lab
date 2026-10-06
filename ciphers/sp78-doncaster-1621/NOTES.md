@@ -145,3 +145,21 @@ sit at the British Library, offline since 2023 (LESSONS.md), so are unreachable 
 Waits on: the TNA page copy of f.142/144/146/214/222 (ASKS row 73, batch order).
 
 - S: grep CSP Venice vol. 17 (1621-1623; BHO or archive.org full text) for the Venetian ambassador's reports of Doncaster's Sept 1621 audiences, a free crib source for the advertisement's subject -- no person needed.
+
+## CSP Venice vol. 17 grep (R7-DONC, 6 Oct 2026, for LANE LANE-RUN7-account-2)
+
+Source: *Calendar of State Papers ... Venice*, vol. 17, 1621-1623, ed. Hinds (1911), BHO full text (index page + four chapters: Aug 1-14 pp. 96-110,
+Aug 16-30 pp. 110-120, Sept pp. 120-139, Oct pp. 139-156; archive.org has no vol. 17 item in advancedsearch -- 3 queries, identifier guesses returned empty metadata).
+Grep: doncaster|hay|cipher|cypher|advertis|calvert. Requests: british-history.ac.uk 5, archive.org 7 (search + metadata), all >= 1.5 s apart, no 4xx/challenge.
+
+Found (calendar summaries only; none of them a report of an audience on or near 24 Sept 1621, none mentions a cipher advertisement):
+- 7 Aug (no. 126, Priuli, Paris): Doncaster arrived, visited by Priuli; says he comes to bring peace in France.
+- 7 Sept (no. 160, Priuli): Doncaster assured the king and the constable that, if matters go further, James could not restrain his subjects from helping those of the religion, esp. La Rochelle.
+- 10 Sept (London): Doncaster detained fifteen days in Paris; Calvert to the Rochelle commissioners, afraid the king can do little while engaged for his son-in-law.
+- 14 Sept (no. 168, Priuli): Doncaster has taken the sickness, near death, recovering.
+- 17 Sept (London): Doncaster ill on the way, business delayed. 24 Sept (London): per latest advices Doncaster, owing to sickness, had not begun his negotiations; king would let Rochelle commissioners levy troops if they fail.
+- Oct pp. 139-156: no Doncaster hit.
+
+Where it was not found: no Venetian report of an audience of Doncaster in the second half of Sept 1621 in this volume's Aug-Oct chapters as calendared; no mention of the advertisement. Use as crib: context only
+(Doncaster ill, negotiations stalled around 14-24 Sept; Rochelle/Huguenot subjects, possible levies of troops; Calvert as London recipient) -- subject words for a future crib list, ungraded. Not read: the Italian originals; later
+chapters (Oct-Dec) not grepped beyond October. Item stays `open`; wait line unchanged (TNA batch, ASKS 73).
