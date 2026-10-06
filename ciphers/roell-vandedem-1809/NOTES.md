@@ -425,3 +425,44 @@ then the legation archive 1.02.20's own 1809 letter-book (outgoing side) for a 9
 
 **Requests:** service.archief.nl 29 (24 views at 700 px, 4 crops at 1400 px, 1 info.json), all HTTP 200, >= 2 s apart; no
 other host. Subagent calls: 0.
+
+## R8-ROELL4 (6 Oct 2026): NA 2.01.08 inv. 348 scans 3-79 read in full
+
+Worker R8-ROELL4 (account 2, for LANE LANE-RUN8-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run8-jobs.md`,
+03:17-03:22 UTC by `date -u`. Page images read by eye (IIIF 1000 px openings, two per view), no subagent, no decoding. Status
+unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0 (no reading). Per-scan log: `na20108/inv348_scans_3-79.tsv` (60 scans
+not viewed by D2B-ROELL3, plus scan 8 re-viewed to confirm the scan-number-to-canvas offset; with `inv348_scans.tsv` every scan
+2-80 is now logged).
+
+**Found.**
+- **No cipher.** All 60 scans are clear French (Van Dedem's Nos 47-50, Testa's Nos 1-15 and 25-29, copies of notes and
+  translated Ottoman documents) or clear Dutch (Van Dedem's letters after his return). No cipher groups, no "en chiffre" note,
+  no deciphered interlinear copy, no key or table anywhere in scans 3-79.
+- **No 9 Feb 1809 item.** Van Dedem's numbered series ends with No 50 (Constantinople 24 Dec 1808, "Exhib. 7 Februarij 1809",
+  scan 14; scan 15: audience de congé the next day, departure the day after). Testa's series runs No 7 (10 Feb 1809) -> No 8
+  and No 9 (both 25 Feb 1809, scans 42-44) -> No 10 (10 Mar) -> No 11 (24 Mar) -> No 12 (26 Mar); No 8 cites "ma Dépêche du 15
+  janvier" and No 10 cites "No 8 du 25 du passé", so no Testa despatch of 9 Feb 1809 is implied by the series' own
+  cross-references either.
+- **Where Van Dedem was on 9 Feb 1809 (read, not graded).** Testa's No 8 (25 Feb 1809, scan 46): Van Dedem arrived at Bucharest
+  on 10 January and left it on 31 January [1809] for Vienna; Testa expects the minister to hear of his arrival there from Van
+  Dedem himself. On 9 Feb 1809 he was therefore on the road between Bucharest and Vienna, which fits an outgoing letter
+  addressed to him there (R1469's attribution "Röell to Van Dedem") better than a despatch from Constantinople. Inference
+  about R1469, not established.
+- **Context on the channel (read, not graded).** Testa's No 26 (6 Jul 1809, scans 56-57, 65): the ministry (secretary-general
+  Bosscha) had his despatches only to 19 Jan; packets of 10 and 26 April for Vienna were held at Buda, others presumed
+  "égarés et interceptés"; he sends duplicates from 11 and 25 April and will write on thin paper "d'un format différent ...
+  plus en petit" via merchants (the duplicates of Nos 25 and 26 at scans 70-75 are in that small hand). He speaks of
+  interception and changes paper and route, not of cipher, in every scan viewed. No 28 (scan 77) sends a despatch "dans le
+  pli de Mr W. Willinck que Mr l'Ambassadeur Van Dedem aura déjà présentée".
+
+**Not found / not searched.** No cipher piece and no 9 Feb 1809 item in inv. 348 scans 2-80 (complete). Not searched: inv. 348
+scans 81-508 (later 1809-1810 Testa and the 1808 Van Dedem series from ~scan 250), the legation archive 1.02.20's own 1809
+letter-book (outgoing side), and inv. 92's other February dates.
+
+**Verdict line:** `open` -- inv. 348's 1809 bundle (scans 2-80) carries no cipher and no 9 Feb 1809 piece; R1469 was most
+plausibly written to Van Dedem on the road (left Bucharest 31 Jan 1809 for Vienna). Cheapest next: the ministry's outgoing
+side for letters to Van Dedem at Vienna in Jan-Feb 1809 -- inv. 92 scans 176-230 (1-12 Feb, ~USD 2-3, <= 40 requests) for any
+minute addressed to Van Dedem at Vienna or "en chiffre"; then 1.02.20's 1809 letter-book.
+
+**Requests:** service.archief.nl 62 (61 full openings at 1000 px plus 1 duplicate fetch of scan 8; all HTTP 200, >= 1.6 s
+apart, one at a time); no other host. Subagent calls: 0.
