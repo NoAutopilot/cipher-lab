@@ -5165,6 +5165,28 @@ R9526: the calibration missed by 1 token -- the worker named a f.150 clerk-spell
 counts it); (3) lodewijk 4610 p3: pass B on crops 12-22 only + rescore, ~2 (defect repair, not a third method attempt); (4) suriname: remaining 0614-0798
 n=2 (~44) and 0270-0598 n=2 (~80) scans, low yield so far; (5) kaliningrad: a different design family (KAL8 step 2).
 
+## LANE LANE-RUN11-account-1 handoff (session_01VY6JLgy3WfXhUMpgVLxBbE, account 1), 6 October 2026 (closed 16:2x UTC: a-h backlog worked in six waves, lane about 47.8 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run11-jobs.md; folders a-h. Gate 0a: SESSION-SWEEP-account-1
+row still `claimed`, TSV on disk (5 Oct), proceeded. Ran beside two live a-h lanes (DEFAULT-account-1-1240, DEFAULT-account-4-1235); all their
+folders excluded. VERIFY-BACKLOG: nothing free in a-h. 17 Opus sessions (15 workers + 2 verifiers, all D, none over cap), workers 41.00 +
+orchestrator ~6.8 (get_session). five_hour `allowed` throughout. Gallica IIIF answered 503 / empty reply / timeouts 13:5x-15:57 UTC.
+- august-van-saksen: native re-reads of WVO 57 p3 (C 247 M 53 -> C 294 M 7) and WVO 53 p1+p2 (S 289 M 75 -> S 358 M 6); anneal re-run on native
+  53 and a count-2 control: sign 9 stays M (low-count gates FAIL, untestable at N 364); settle_53.py --check fixed (rule 7). Verifier R11A-AVSV
+  carried both into AUDIT.md / SO-SAXONY-53-57 / status.json (N4 unchanged; 53 D2 -> D3); verifier R11A-AVSV2 regraded G4 = p S -> M (count 2,
+  anneal-only): 53 now S 356 M 8 of 364, D3 (97.8%).
+- antt-msliv0638-brochado: m0200 no cipher; letter 134 neighbouring clear prose (m0272/m0277/m0278) read once (M); prereg crib gate FAILs, no change.
+- bowes-walsingham: Tomokiyo Walsingham-Wotton 1585 key 0/4 shared referents; SP 106/1-3 not digitised, no Bowes key; 20 undated DECODE SP 106
+  leaves: 7 open, 1 compatible (R328), need legible images (owner-side).
+- heinsius-vanhaersolte: letter 929 footnote gives 142 = de Russen (C, 1 token, not in letter 341); Deel 2 (21 more letters) and Deel 3 (87 of 103
+  pages) print no cipher pair besides known letter 588.
+- fr4712-nevers-duchesse: same-writer digit test NON-TEST (controls 4/10 = 4/10). harley-287: lookalike pass found no dominant pair; f.88r owner
+  sorter built (preflight PASS), flagged to account 3 to publish. fr3789: already settled 2 Oct (stale NEXT-STEPS row). fr5160: sweep blocked by Gallica.
+Open for the next a-h lane: (1) fr5160 Colbert 26 part III sweep (canvases 405-779) once Gallica answers, ~$3; (2) heinsius Deel 3 last 16 pages,
+~$1; (3) august WVO 175 pp.3-8 for a hand that separates Qf (126's K and Qf M), ~$4 per 5 lines, then a verifier carry-over; (4) bowes: 7 SP 106
+leaves need legible images (owner-side/DECODE images); (5) harley f.88r sorter publish (account 3) then owner sort; (6) WVO 53/126 period witnesses
+still wait on ASKS 67.
+
 ## LANE LANE-RUN11-account-2 handoff (session_01FnWn17w8RS2VEFyTf3Nejv, account 2), 6 October 2026 (closed 10:3x UTC: i-r S/M backlog worked, lane about 51.6 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run11-jobs.md. WORK-QUEUE row LANE-RUN11-account-2: RUN10's named
