@@ -112,3 +112,31 @@ searched: Guyot, *Le Directoire et la paix de l'Europe* (1911), and the AE Corre
 archive.org 20 (metadata 9, download 10, advancedsearch 2; >= 1.6 s apart, no errors). Status unchanged: `open`.
 Next, cheapest: Guyot 1911 full-text search for "17 juillet 1798"/"29 messidor" Sieyès, ~$0.5; the 17 Jul note to the Prussian ministry
 is a candidate identity for P 1839/5 only if the Konstanz leaf turns out to be a copy of an outgoing office, which needs the image.
+
+## Guyot 1911 full-text search (R9-KONS2, 6 Oct 2026, 05:36-05:42 UTC)
+
+Search result only, for P 1839/5 (17 Jul 1798 = 29 messidor an VI, Sieyès, Berlin). Guyot, *Le Directoire et la paix de l'Europe*
+(1911) is not on Internet Archive (advancedsearch by title phrase and by creator: 0 relevant items) and is NO_PAGES on Google Books
+(a9FnAAAAMAAJ, 1912 record); Gallica holds it (SRU: ark bpt6k115863g, thesis issue; also bpt6k62678238 and a reprint bpt6k72831). Method:
+Gallica's search-inside service (`/services/ContentSearch?ark=bpt6k115863g&query=...`, exact phrase in quotes) on ark bpt6k115863g, snippet
+per page; page ids are Gallica view numbers (PAG_n), printed page about n-7 (PAG_843 carries running head "836"; one header, offset not
+checked elsewhere). Positive controls: `"Repnin"` 10 hits (PAG_717-719, 724, 840-843: the 1798 Berlin conferences, index entry
+"Repnin 710-712, 717, 833, 836"); `Sieyès` 59 hits, the mission chapter at PAG_717-729.
+
+| query | hits | relevant to 17 Jul 1798 Sieyès? |
+|---|---|---|
+| `"29 messidor"` | 5 (PAG_228, 248, 262, 645, 807) | no: Moreau armistice 1796, Madrid 1796, Genoa arrêté, Brune to the Directoire, "Talleyrand, 29 messidor" in a Swiss-affairs note (PAG_645) |
+| `"17 juillet"` | 4 (PAG_228, 264, 395, 786) | no: 1796, 1799 (Bernadotte) and unrelated |
+| `"messidor an 6"` | 9 | no Sieyès letter; Talleyrand's rapport of 22 messidor (10 Jul 1798) cited from Pallain 294-95 |
+| `"Constance"` | 9 | no: the bishopric, the town in Swiss/Rastatt context; none ties a Sieyès letter to Konstanz |
+| `"Sieyès à Talleyrand"` | 3 | footnotes cite A.E. Prusse 223 pièce 125 (13 thermidor = 31 Jul 1798, PAG_727, about p. 720), pièce 187 (particulière, PAG_729), and Prusse 224 (20, 23 Oct, 17 Nov 1798, PAG_874) |
+
+Within the mission chapter Guyot narrates Sieyès's arrival in Berlin on 20 Jun (2 messidor, PAG_723) and the Zastrow approaches leading to
+the 31 Jul report; the snippets name no Sieyès letter of 17 Jul. Where it was not found: no printed text and no footnote citation of a
+Sieyès letter dated 17 Jul 1798 / 29 messidor an VI in Guyot 1911 (ContentSearch snippets only; footnotes giving a date in another form,
+e.g. "28 messidor" or a bare "le 17", would be missed). Useful by-product: Guyot cites Sieyès's July 1798 reports as A.E., Correspondance
+politique, Prusse 223 (pièce numbers), the volume to ask for if the Konstanz leaf is to be matched against the outgoing originals.
+Requests: gallica.bnf.fr 13 (SRU 1, ContentSearch 11, ALTO 1 -> HTTP 429; that endpoint stopped, one ContentSearch query sent after a
+50 s pause, answered 200), archive.org 3, googleapis.com 2; >= 2 s apart. Status unchanged: `open`.
+Next, cheapest: Gallica ALTO/texteBrut of PAG_723-729 (pp. ~716-722) to read the footnotes in full for any 26-29 messidor Sieyès item
+(local browser or a later cloud session, after the 429 clears), ~$0.5; else the image of P 1839/5 from Stadtarchiv Konstanz (REQUEST.md).
