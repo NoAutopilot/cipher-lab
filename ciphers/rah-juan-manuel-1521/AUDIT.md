@@ -42,3 +42,35 @@ shuffled-target decode through the same judge (rule 3, ARM-C1), and a rule-7 dec
 R9501's content is stated outside the repository. This test does not license changing alphabet.tsv's grades or replacing it.
 Over-claims found: none in NOTES.md's R12-RJM42 section; its wording ("lands on the clerk's letters well above every permuted
 control at reader error 0.28") is accurate.
+
+## R13-RJMV, 6 Oct 2026 (13:19-13:3x UTC): standing of R12-RJM9501's R9501 f.34 trial decode with Tomokiyo's published key
+Verifier session, separate from the solver (R12-RJM9501) and from R12-RJMV's solver. Brief: .claude/briefs/runs/2026-10-06-account2-
+run13-jobs.md job R13-RJMV. Requests: none to any host (all checks on committed files; the R9501 image was not re-fetched). PREREG for the
+shuffled spread: PREREG-R13-RJMV.md, pushed (df0591f6) before the scored run. This section rates a trial decode, not a reading of a
+letter: no N-class or depth is assigned (none was before; the evidence below does not require one).
+
+| check | finding | standing |
+|---|---|---|
+| Which leaf was read | images/manifest.json: IMG_R9501_I44762_P1.jpg, sha1 b510ebe5558b..., 3392x2436, record R9501, "f.34 (cipher)" (RUN1-SEG, 4 Oct); the solver's NOTES report the same sha1 for its fetch. images/crops_f34_manifest.json cuts every crop from that file. DECODE's listing (sources/decode/records-non-decrypted-2026-09-24.tsv) gives R9501 = "Signatura 9/23, f. 34-36", 3 images, so P1 is f.34. Content check: pass A's lower-case code words on lines 1-14 match the independent FT-A transcription of R9501 f.34 (ciphertext_f34.tsv) in order on the same line 120 of 147 times, against 13 (R9502 f.40 pass A), 17 (R9528 f.194) and 9 (R9526 f.147). The "f.40" in the solver's session summary is a slip (f.40 is R9502, the leaf of R12-RJM42's held-out test, which the decode script's docstring names); no committed file calls R9501's leaf f.40. | f.34 holds |
+| Reproducibility (rule 7) | `python3 scripts/decode9501.py --check` -> "up to date", exit 0 (13:2x UTC). | holds |
+| Grades inside R12-RJMV's licence | Of 753 tokens: S 309 = 169 agreed nomenclator codes + 140 agreed symbols, all of A/Z/R/4/F (Z 47, A 40, R 29, F 15, 4 9); M 113 = 51 codes one pass read + 62 agreed symbols of T/9/3/E/X/V; U 331 (218 split ~ plus 2 agreed-split, 101 out-of-table groups, 10 unvalued symbols). Script check over every row: 0 tokens at H or C, 0 S on a label outside A/Z/R/4/F, 0 S on a split or one-reader token, 0 agreed A/Z/R/4/F tokens below S. Split symbols sit at U, one step stricter than the licence's M. | 0 outside licence |
+| Judge, re-run | es1600 target -1.128, seed-1 shuffle -1.208; es17c target -1.067, seed-1 shuffle -1.129: all four reproduce the solver's numbers exactly. All FAIL against real_p05 (-0.839 es1600, -0.884 es17c). | holds |
+| Shuffled spread, 20 seeds (PREREG-R13-RJMV.md; scripts/shuffle_spread9501.py --check exit 0; results_shuffle_spread9501.json) | es1600: shuffled min -1.274, mean -1.214, max -1.169, sd 0.027; target above all 20 (z 3.2 vs mean, 1.5 vs max). es17c: min -1.198, mean -1.147, max -1.108, sd 0.024; target above all 20 (z 3.4 vs mean, 1.7 vs max). Seed 1 reproduces reading_f34_shuffled.txt byte for byte. | see below |
+
+What the spread changes. By the pre-registered rule the judge does see token order in the decode on both corpora (rank 1 of 21,
+empirical p < 0.05): the decode's sequence scores higher than any of 20 reshuffles of its own tokens. The solver's sentence "this judge
+barely separates the decode from its own shuffled control" rested on one seed and understates that; the margin is small in absolute
+terms (0.04-0.08 above the shuffled max) but clear of the spread. What it does not change: the target still FAILs real_p05 by 0.29
+(es1600) and 0.18 (es17c), with 44% of tokens unread and no 1520s Spanish corpus on disk, so "judge cannot decide" stands as the
+summary -- the order signal is a reason the decode is not noise in sequence, not a PASS and not a reading of the letter.
+
+Limits, stated. (1) The 140 S symbols include 15 F, which Tomokiyo reads as a null: they carry no plaintext letter, so S counts tokens
+graded, not letters recovered (125 S symbols yield a letter). (2) "Cardenal de Medi[ci]s" in NOTES.md is an inferred repair of the
+table's "Medins" (grade I in prose, not in the grade file, where the code is S as written); NOTES already marks it with brackets.
+(3) err_2reader 0.338, err_true unmeasured: the trial decode is at that reader error. (4) The order signal partly reflects the
+nomenclator's set phrases ("vuestra magestad" x9 reads as one code pair in sequence); it is not evidence for the letter alphabet's
+values on this leaf, which have no held-out test here.
+
+Over-claims found: none that states content outside the repository. One under-statement corrected in NOTES.md (dated verifier note
+below the R12-RJM9501 section): the one-seed "barely separates" is replaced by the 20-seed figures. No reading, key or grade changed by
+this audit. SECOND-OPINIONS-QUEUE.tsv: no row for this target (none filed; no N3+ reading exists), so nothing to propagate.
