@@ -136,3 +136,8 @@ Folder's named step for piece 7: crop the cipher block at native size (images/ma
 not on disk, tools/decode_browser_login.js, scrub the account name; test full-size per record) to read the faint glosses Bourdeau used (nine
 values) and look for more. Crop step pasted; one vision pass on crops, then a second blind pass if any gloss value is new; reconcile.
 Grade every gloss value (C if a period gloss, M if uncertain). No key rebuild in this job.
+
+Wave 1 closed 04:0x UTC: THURV 1.43, WVO1111 3.81, WHIT 1.21, SPLOOK 1.23, NICH2 0.85, UNTB 2.83 = 11.36 (all D).
+Wave 2 sessions (04:02 UTC): R8-ZESCH session_01YMesMZvJYF4uVjuKGH9Z2P (Opus, cap 5); R8-YOG3 session_017To169azKsJGb28EHb6azE (Opus, cap 2.5);
+R8-TAUR session_018VGEHgXyA7wrha6pfRK4xz (Sonnet, cap 2); R8-RABY session_018zvrxKT6onjgbBbtFRPUaA (Sonnet, cap 2); R8-SIENA7
+session_01Y1WNnXGknvYihADmNofDuG (Opus, cap 3). Caps 14.5.
