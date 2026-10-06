@@ -739,3 +739,81 @@ Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.
 - [x] image-check: R9528, R9529, R9502 and R9526 full-size images fetched (sha1s in images/manifest.json), crops and windows checked
 - [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
 Verdict: keep going: 3 internal gaps (R9501 passes + decode with Tomokiyo's published key; T/Q values from pooled alignments; R9526 retest with f.150's clerk lines and settled splits); the transcription gap waits on ASKS 138; cheapest next: two blind passes on R9501 f.34 and a decode with key_tomokiyo_alpha.tsv + AlonsoSanchez_2.tsv, ~$5, after R12-RJMV's verdict on results_test42.json
+
+## R9501 f.34: two blind passes and a trial decode with Tomokiyo's published key (R12-RJM9501, 6 Oct 2026, 12:41-12:4x UTC)
+Brief: .claude/briefs/runs/2026-10-06-account2-run12-jobs.md job R12-RJM9501, licensed by R12-RJMV (AUDIT.md: trial decode, S only for
+A Z R 4 F, M for the other labels and every split, nothing H or C). Opus worker, 2 Sonnet subagent passes, reconciliation by script
+(scripts/test1.py's reconcile, unchanged). Intake gate (brief): `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search
+citation found within 6 lines`.
+
+Material: one DECODE browser login, 2 requests to de-crypt.org (RecordsView 9501, full-size P1); sha1 b510ebe5... matches images/manifest.json
+(RUN1-SEG, 4 Oct). Image in the scratchpad only. Crops (pasted; RUN1-SEG's own command, images/crops_f34_manifest.json):
+```
+$ python3 tools/iiif_lines.py --image IMG_R9501_I44762_P1.jpg --region 1820,205,1570,1870 --out <scratch>/crops --prefix f34 --follow-slope 300 --slope-margin 22 --debug
+  wrote 30 crops   (overlay checked by eye: one cipher line per crop, no clear lines on f.34)
+```
+Passes: passes/f34_A.tsv (forward), passes/f34_B.tsv (read in reverse), shared passes/inventory.md. Pass A's ?1 ("ankh-like, a small cross
+with a loop above") is mapped to K, as f.194's passes were; pass B's ?1 ("triangle-like with a bar") has no inventory label and stays
+unvalued. **Pass B numbered its rows in its own reverse reading order, not by crop** (row k = crop L(31-k); row 30 = L01, row 2 = L29;
+its row 1 is a faint partial read of L30): found when the first reconcile gave err 0.86, checked by eye on rows 1-3 and 29-30, remapped
+in scripts/decode9501.py (LINE_MAP); the pass file is kept as written. After the remap: err_2reader **0.338** (484 of 731 tokens agree),
+above f.40 (0.28) and f.194 (0.23); err_true not measured. Both passes reported themselves rough.
+
+Decode: `python3 scripts/decode9501.py` (`--check` exit 0, 12:45 UTC). Key `published`: letter alphabet key_tomokiyo_alpha.tsv (firm
+labels: A=a, Z=r, R=s, T=s, 4=o, 9/X/3=e, E=h, V=m, K=y, F=null), nomenclator sources/cryptiana/keys/AlonsoSanchez_2.tsv (both Satoshi
+Tomokiyo, Cryptiana, credited). Outputs: ciphertext_f34_reconciled.tsv, grades_f34_tomokiyo.tsv (per token), reading_f34_tomokiyo.txt,
+reading_f34_shuffled.txt, results_decode9501.json. This replaces nothing: reading_f34_codewords.txt (FT-A, lines 1-14, one pass) is kept.
+
+Grades (rule 4), 753 reconciled tokens: **S 309** (169 agreed nomenclator codes; 140 agreed symbols: Z 47, A 40, R 29, F 15, 4 9),
+**M 113** (51 codes one pass read; 62 symbols: T 31, 9 14, 3 7, E 4, X 4, V 2), **U 331** unread (220 split ~, 101 Latin groups not in
+the table -- most often y 8, g 6, rob 5, ez 5, pib 4, kar 4 -- and 10 symbols with no firm value: Q, D, B, 7, 2, 6, P). H 0, C 0
+(no period decipherment of R9501 in DECODE; Salazar A.23 ff.37-38 catalogued, not online). S+M = 56% of tokens, S alone 41%.
+
+What reads (all S/M, a cryptanalytic result with a published key, word breaks inside letter runs not marked): the nomenclator gives
+running Spanish court-letter phrasing -- "vuestra magestad" 9 times, "que", "porque", "yo creo que vuestra magestad", "como lo hara",
+"lo de Italia", "en Napoles", "por Italia", "aleman", "Cardenal de Medi[ci]s" (the code word reads "Medins" in the table rendering),
+"frances", "gente", "la mayor", "xii mil", "escrito". Symbol runs read as short fragments (ra, se, es, sr, ea) and stay mostly
+uninterpretable at this reader error. What does not read: 44% of tokens (U), most of it split symbols; no sentence runs clear end
+to end; letter runs longer than 3 letters are rare. Nothing here is stated about R9501's content outside this repository (R12-RJMV).
+
+Judge (rule 7), `tools/judge_plaintext.py` on the decode (column 2 of reading_f34_tomokiyo.txt, '_' dropped by the judge's folding)
+and on the same key applied to the reconciled tokens in seeded random order (reading_f34_shuffled.txt, seed 1; ARM-C1 control). Corpus:
+**es1600** (1598-1621 CODOIN state letters) is the nearest on disk in era and register (diplomatic letters to the king), but it is
+~80 years late for a 1522 letter: no 1520s Spanish corpus exists in tools/data, so a PASS/FAIL here is of **unknown reliability**
+(es1600's own held-out false-negative 11.1%, folds 5.0-19.0%, 7 folds). The spec's es17c (1643-47) is reported beside it.
+```
+$ python3 tools/judge_plaintext.py <spec with judge.language=es1600> --file <reading_f34_tomokiyo.txt col 2>
+FAIL language: score=-1.128, null_p99=-2.057, real_p05=-0.839, real_median=-0.755, mode=both, N=912
+$ python3 tools/judge_plaintext.py <spec with judge.language=es1600> --file reading_f34_shuffled.txt
+FAIL language: score=-1.208, null_p99=-2.057, real_p05=-0.839, real_median=-0.755, mode=both, N=912
+$ python3 tools/judge_plaintext.py specs/rah-juan-manuel-1521.json --file <reading_f34_tomokiyo.txt col 2>      (es17c)
+FAIL language: score=-1.067, null_p99=-1.98, real_p05=-0.884, real_median=-0.793, mode=both, N=912
+$ python3 tools/judge_plaintext.py specs/rah-juan-manuel-1521.json --file reading_f34_shuffled.txt              (es17c)
+FAIL language: score=-1.129, null_p99=-1.98, real_p05=-0.884, real_median=-0.793, mode=both, N=912
+```
+Reading the judge: FAIL on both corpora, far above the letter-shuffled null and below real prose. The shuffled-order decode sits only
+0.06-0.08 below the target on both: the nomenclator words are Spanish whatever their order, so this judge barely separates the decode
+from its own shuffled control at N=912 with 44% unread -- "judge cannot decide", not a negative on the key (one shuffle seed; no
+spread computed). Rule 3: no gate was pre-registered for this job (a trial decode, not a test); no key or grade elsewhere changed.
+
+Requests: de-crypt.org 2 (one login). Subagent calls 2 (Sonnet). No other host.
+Not done: no look-alike pass on the 220 split tokens; f.34v-35 (R9501's other pages) not transcribed; the 101 out-of-table Latin groups
+not checked against the image (some may be misreads of table codes, e.g. "y"/"g" for K/Q symbols).
+
+## Remaining gaps (R12-RJM9501, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; R9501 f.34 (30 lines) trial-decoded with Tomokiyo's published key: 309 S + 113 M of 753 tokens (56%), 331 unread, judge FAIL on es1600 and es17c with the shuffled-order control close behind (judge cannot decide); nomenclator layer also decoded on R9528 f.194, R9502 f.40, R9526 ff.147-147v; Tomokiyo's alphabet PASSes held out on R9502 f.40 (0.276 vs control max 0.172); R9526 vs CODOIN XXVI a non-test (calibration 0.491)
+- R9501 f.34 unread tokens (220 split, 101 out-of-table groups) - blocker: not-attempted; outside this brief (one decode only); next: tools/lookalike_pass.py on the 220 split tokens of ciphertext_f34_reconciled.tsv and an eye check of the out-of-table groups y/g/rob/ez against the crops, then rerun scripts/decode9501.py, ~$2.5
+- T and the rare signs 9, X, V, E, 3 and Q have no value supported on a page outside the key sample - blocker: not-attempted; T takes no consistent chunk on f.40 (e 4, h 2, g 2 of 17); next: pool the f.194, f.199, f.40 and f.147 alignments for T/Q chunk counts and score Q against K after the look-alike check, ~$2
+- R9526 held-out test against the print is a non-test (calibration 0.491) - blocker: not-attempted; outside this brief (R9501 only); next: one Sonnet read of f.150's last 6 lines and a look-alike pass on the 85 split tokens of ciphertext_f147_reconciled.tsv, then a fresh PREREG (same gate) on the span, ~$3
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, f.40 0.28, f.147 0.27, f.34 0.34, err_true unmeasured) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set; 39 unsettled look-alike tiles in sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, R12-RJMPUB); without it every reading stays a cryptanalytic result
+
+## Escalation (R12-RJM9501, 6 Oct 2026)
+- [x] siblings: R11-RJMSIB compared Tomokiyo's Juan Manuel and Sanchez 1522 tables (alphabet and nomenclator, Bourdeau sanchez1522 cited): same design, no shared key (V 1 vs p95 2; T 0 of 75 shared words); no table fit to carry over
+- [x] clear-pages: f.197, f.201, f.42 read (single Sonnet pass each); f.199's, f.40's and f.147v's own clear lines identified; f.150 viewed (not transcribed); f.34 has no clear lines
+- [x] known-keys: Tomokiyo's nomenclator run on R9528, R9529, R9502, R9526 and R9501; his alphabet held out on R9502 f.40: PASS (R12-RJM42); R9501 f.34 trial decode with both (R12-RJM9501): 56% S/M, judge cannot decide
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); R12-RJMPUB found no published decipherment beyond Tomokiyo's first-line incipits; one chapter of R9526 printed in clear, CODOIN XXVI pp.49-50; Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out FAIL on f.199 and on f.40 (0.156 < 0.24)
+- [x] image-check: R9528, R9529, R9502, R9526 and R9501 full-size images fetched (sha1s in images/manifest.json), crops and windows checked
+- [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
+Verdict: keep going: 3 internal gaps (R9501 f.34 split tokens and out-of-table groups; T/Q values from pooled alignments; R9526 retest with f.150's clerk lines and settled splits); the transcription gap waits on ASKS 138; cheapest next: look-alike pass on f.34's 220 split tokens and a decode rerun, ~$2.5
