@@ -13,7 +13,7 @@ signs.tsv). For each row this:
   - sets the tile's x y w h in signs.tsv to the new box (in place unless --signs-out).
 Free corners and stray ink (SORTER-QUAD, owner 5 Oct 2026: on a wide looped sign the sheared box could not cover the sign
 without a neighbour's ink): a row whose quad cell holds four corners [[x, y], ...] (TL, TR, BR, BL) is cut by
-perspective-warping that quadrilateral to an upright tile W x H (W the longer of the top and bottom edges, H the longer of
+bilinearly warping that quadrilateral (Image.QUAD; projective until 6 Oct 2026) to an upright tile W x H (W the longer of the top and bottom edges, H the longer of
 the left and right ones), with the same margins taken around it in the warped frame (pixels that fall off the page are
 white); new_x .. new_h are the quad's bounding box and are what signs.tsv gets. A mask cell [{r, pts: [[x, y], ...]}, ...]
 lists brush strokes (radius r, source pixels) over a neighbour's ink: they are painted white on the source before the cut,
@@ -63,9 +63,13 @@ def homography(src, dst):
 def crop_quad(im, q):
     """Warp quad q (source pixels, TL TR BR BL) to an upright tile with sign_sorter.py's margins around it."""
     W, H = quad_size(q); top, bot, side = margins(W, H)
-    out = [(side, top), (side + W, top), (side + W, top + H), (side, top + H)]
-    return im.transform((W + 2 * side, H + top + bot), Image.PERSPECTIVE, homography(out, [tuple(p) for p in q]),
-                        Image.BILINEAR, fillcolor=PAPER)
+    # bilinear (Image.QUAD), not projective (6 Oct 2026): a perspective map flips sign inside the margins of a strongly
+    # sheared quad and cuts only paper; the margin corners are the bilinear map of the quad extended past [0, 1]
+    at = lambda s, t: tuple((1 - s) * (1 - t) * q[0][c] + s * (1 - t) * q[1][c] + s * t * q[2][c] + (1 - s) * t * q[3][c]
+                            for c in (0, 1))
+    s0, s1, t0, t1 = -side / W, 1 + side / W, -top / H, 1 + bot / H
+    data = at(s0, t0) + at(s0, t1) + at(s1, t1) + at(s1, t0)   # Image.QUAD order: upper left, lower left, lower right, upper right
+    return im.transform((W + 2 * side, H + top + bot), Image.QUAD, data, Image.BILINEAR, fillcolor=PAPER)
 
 
 def paint_mask(im, mask):

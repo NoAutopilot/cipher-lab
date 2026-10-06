@@ -268,7 +268,7 @@ body.traypad #offer{bottom:100px}
       <div id="fixBrushRow"><button type="button" id="fixBrush" aria-pressed="false">Erase stray ink</button>
         <label class="hint" for="fixBrushR">Brush <input id="fixBrushR" type="range" min="1" max="30" value="5"> <span id="fixBrushV">5</span> px</label>
         <button type="button" id="fixBrushUndo" disabled>Undo stroke</button><span class="hint" id="fixBrushN"></span></div>
-      <div class="row"><button type="button" id="fixSave">Save cut</button><button type="button" id="fixCancel">Cancel</button><button type="button" id="fixReset" hidden>Back to the first cut</button></div>
+      <div class="row"><button type="button" id="fixSave">Save cut (Enter)</button><button type="button" id="fixCancel">Cancel</button><button type="button" id="fixReset" hidden>Back to the first cut</button></div>
     </div>
     <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="1" max="8" value="3"></label>
@@ -890,8 +890,9 @@ function drawLine(sid, c, z, alive){
     // zoom = how much of the line is shown around the sign (owner, 3 Oct 2026: "zoom out doesn't work" on a phone, where the
     // old slider only resized the bitmap inside a fixed +-180 px window). Low = more of the line, high = a close-up.
     // editing a cut: a close-up (the sign some 50 px wide on a phone), still widened or narrowed by the zoom slider
-    const halfW = ed ? Math.round((w / 2 + Math.max(w * 1.5, h * 2, 40 * ps)) * Math.pow(1.4, 3 - z)) : Math.round(w / 2 + Math.max(w * 0.6, 2400 * ps / Math.pow(1.8, z - 1)));
-    const padY = ed ? Math.round(h * 1.5) + 10 : Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
+    const halfW = ed ? Math.round((w / 2 + Math.max(w * 1.5, h * 2, 90 * ps)) * Math.pow(1.4, 3 - z)) : Math.round(w / 2 + Math.max(w * 0.6, 2400 * ps / Math.pow(1.8, z - 1)));
+    const padY = ed ? Math.max(Math.round(h * 1.5) + 10, Math.round(40 * ps)) :   // floors (owner, 6 Oct 2026): a tiny first cut (24 x 15) opened at ~9x
+      Math.round(h * (z <= 2 ? 3 : z <= 4 ? 1.8 : 1.0)) + 10;
     const cxm = x + w / 2;
     const x0 = Math.max(0, Math.round(cxm - halfW)), x1 = Math.min(im.naturalWidth, Math.round(cxm + halfW));
     const py = (ia || ib) ? Math.round(h * 0.35) + 4 : padY;   // with neighbour lines shown, keep this strip to its own line
@@ -1017,6 +1018,7 @@ function homography(src, dst){   // the projective map src[i] -> dst[i] (4 point
     [A[c], A[p]] = [A[p], A[c]]; const pv = A[c][c] || 1e-12;
     for (let r = 0; r < 8; r++) if (r !== c){ const f = A[r][c] / pv; if (f) for (let j = c; j < 9; j++) A[r][j] -= f * A[c][j]; } }
   return A.map((row, i) => row[8] / (row[i] || 1e-12)); }
+const quadAt = (q, s, t) => [0, 1].map(c => (1 - s) * (1 - t) * q[0][c] + s * (1 - t) * q[1][c] + s * t * q[2][c] + (1 - s) * t * q[3][c]);   // bilinear point on quad q (TL TR BR BL), s, t may leave [0, 1]
 const hApply = (H, x, y) => { const w = H[6] * x + H[7] * y + 1; return [(H[0] * x + H[1] * y + H[2]) / w, (H[3] * x + H[4] * y + H[5]) / w]; };
 // a db or localStorage recut -> the page's form (null when unusable); an old {x, y, w, h} one has no quad and stays a plain box
 function recutFromDoc(d){
@@ -1049,8 +1051,10 @@ function renderRecut(sid, r){
       return cv.toDataURL('image/png'); }
     // a free quad: warped upright with its margins in the warped frame, bilinear, off the page = paper (sorter_apply_recuts.py)
     const q = r.quad, [W, H] = quadSize(q), [top, bot, side] = tileMargins(W, H), OW = W + 2 * side, OH = H + top + bot;
-    const Hm = homography([[side, top], [side + W, top], [side + W, top + H], [side, top + H]], q);
-    const ext = [[0, 0], [OW, 0], [OW, OH], [0, OH]].map(([u, v]) => hApply(Hm, u, v)), xs = ext.map(p => p[0] * ps), ys = ext.map(p => p[1] * ps);
+    // bilinear, not projective (6 Oct 2026, owner's slanted C2_L02_38: a perspective map flips sign inside the margins of a
+    // strongly sheared quad and samples only paper); output (u, v) -> s = (u - side) / W, t = (v - top) / H on the quad
+    const Hm = (u, v) => quadAt(q, (u - side) / W, (v - top) / H);
+    const ext = [[0, 0], [OW, 0], [OW, OH], [0, OH]].map(([u, v]) => Hm(u, v)), xs = ext.map(p => p[0] * ps), ys = ext.map(p => p[1] * ps);
     const rx0 = Math.max(0, Math.floor(Math.min(...xs)) - 1), ry0 = Math.max(0, Math.floor(Math.min(...ys)) - 1);
     const sw = Math.max(1, Math.min(im.naturalWidth, Math.ceil(Math.max(...xs)) + 1) - rx0), sh = Math.max(1, Math.min(im.naturalHeight, Math.ceil(Math.max(...ys)) + 1) - ry0);
     const sc = document.createElement('canvas'); sc.width = sw; sc.height = sh; const sg = sc.getContext('2d');
@@ -1061,7 +1065,7 @@ function renderRecut(sid, r){
     const g = cv.getContext('2d'), out = g.createImageData(cv.width, cv.height), D = out.data;
     const px = (x, y, ch) => x < 0 || y < 0 || x >= sw || y >= sh ? 255 : S[(y * sw + x) * 4 + ch];
     for (let j = 0; j < cv.height; j++) for (let i = 0; i < cv.width; i++){
-      const [sx, sy] = hApply(Hm, (i + .5) / (k * ps), (j + .5) / (k * ps)), fx = sx * ps - rx0 - .5, fy = sy * ps - ry0 - .5;
+      const [sx, sy] = Hm((i + .5) / (k * ps), (j + .5) / (k * ps)), fx = sx * ps - rx0 - .5, fy = sy * ps - ry0 - .5;
       const ax = Math.floor(fx), ay = Math.floor(fy), u = fx - ax, v = fy - ay, o = (j * cv.width + i) * 4;
       for (let ch = 0; ch < 3; ch++) D[o + ch] = Math.round((px(ax, ay, ch) * (1 - u) + px(ax + 1, ay, ch) * u) * (1 - v) + (px(ax, ay + 1, ch) * (1 - u) + px(ax + 1, ay + 1, ch) * u) * v);
       D[o + 3] = 255; }
@@ -1251,6 +1255,7 @@ $('ctxAside').onclick = () => ctxMove('ASIDE');
 $('ctxBad').onclick = () => { ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };   // tile box cut in the wrong place: parked for recutting
 $('ctxNewB').onclick = () => ctxMove(makePile(pileOf(ctxSid)));
 document.addEventListener('keydown', e => { if ($('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+  if (e.key === 'Enter' && fix && e.target.tagName !== 'BUTTON'){ e.preventDefault(); $('fixSave').click(); return; }   // owner, 6 Oct 2026: Enter saves the cut
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
 const closeCtx = () => { if (fix) fixStop(); $('ctx').hidden = true; const o = $('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); if (!o.hidden) placeOffer(); };
 $('ctxClose').onclick = closeCtx;
