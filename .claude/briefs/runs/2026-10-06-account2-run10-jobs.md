@@ -133,3 +133,6 @@ Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-se
 R10-ROELL9's next: R1469 may be an incoming letter to the legation. Find NA inv. 990 (check the inventory number and its description on
 the item page first), bisect to late Jan - mid Feb 1809 (<= 30 requests, >= 1.8 s), and look for a 9 Feb 1809 item, a 7-page "Monsieur"
 letter, or any cipher. Compare with R1469's form; update the Verdict line.
+
+Wave 2 sessions: R10-KAL7 session_01SQZH6fzyyk2YQy7ii2tJcp (07:21); 07:38 UTC: R10-SUR693 session_01GDgp2uN23R4v4zh8GwzAqL; R10-JANS26B
+session_019rGqipBasrN8CtjYxc9mv1; R10-ROELL10 session_0162ekU79BtHvtNvfvvL6XZ1; R10-CLIN3868 session_01NyhwwQnzUjyPXFiGNrJCoi.
