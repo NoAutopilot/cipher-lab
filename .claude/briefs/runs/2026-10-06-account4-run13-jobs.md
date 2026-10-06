@@ -114,3 +114,13 @@ tools/iiif_lines.py --image, crop step pasted; one Sonnet pass per line batch pe
 apparatus, to see whether symA-like signs occur in a second context. Read TRANSCRIPTION.md's sorter rule first: if the sign inventory is
 unsettled and the two passes split > 10%, stop after the passes and name the sorter step (do not run a third machine pass). Paste
 `python3 tools/intake_gate_check.py untersberg-code` output first; a nonzero exit stops the job. Report symA occurrences found / not found.
+
+## Wave 3 (spawned 18:4x UTC 6 Oct). Wave 2 cost (get_session): MANT85 3.40, SIENA719 1.53, UNTOP 3.19 = 8.12.
+
+### R13-SIENAWC -- siena-concistoro-2308: structural word-code restriction, control first (Opus; cap 3, box 50 min)
+R13-SIENA719's next step (b): add a tool option (to the shared annealer the R10-SIENA7N script uses, e.g. tools/families/homophonic_anneal.py
+or wherever it lives -- an option, not a private copy; offline test in tools/tests/) that allows word codes only on signs J tokenised as
+multi-character units or on drawn (non-letter, non-digit) signs. PREREG pushed first. Run the matched control at the pooled N=481, K=62 with the
+same restriction applied to the synthetic; G2 nomenclator recall gate as R13-SIENA719's PREREG. CONTROL BELOW GATE -> stop, log non-test, and
+since this is a genuinely different instrument, log it as such (not a third attempt at the old one). Only if the control clears, run nos. 7+19.
+HYPOTHESES.md row with both numbers. Disk only. Status stays open unless rule 5 says otherwise.
