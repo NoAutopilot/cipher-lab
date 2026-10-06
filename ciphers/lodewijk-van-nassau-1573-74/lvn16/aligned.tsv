@@ -1,0 +1,261 @@
+line	position	sign	confidence	alt	A3	B3	role
+p1_L05	1	86	H		86	86	control
+p1_L05	2	7	H		7	7	control
+p1_L05	3	21	H		21	21	control
+p1_L05	4	71	H		31	31	control
+p1_L05	5	81	H		81	81	control
+p1_L05	6	1	H		1	1	control
+p1_L05	7	12	H		12	12	control
+p1_L05	8	82	H		82	82	control
+p1_L05	9	101	M		101	101/2~	target
+p1_L05	10	2	H		2	83~	control
+p1_L05	11	93	H		83	-	control
+p1_L05	12	11	H		11	11	control
+p1_L05	13	6	H		6	6	control
+p1_L05	14	76	H		36	36	control
+p1_L05	15	22/112	H		23/112	22/112	target
+p1_L05	16	84	H		84	84	control
+p1_L05	17	1	M	B:-	iii~	=iii~	target
+p1_L05	18	111	H		-	-	control
+p1_L05	19	8	H		8	8	control
+p1_L05	20	91	H		91	91	control
+p1_L05	21	102	H		102	102	control
+p1_L05	22	81	M	B:91	81	81	target
+p1_L05	23	23	M	B:21	23?	21	target
+p1_L06	1	15	H		15	15	control
+p1_L06	2	9	H		9	9	control
+p1_L06	3	37	H		37	37	control
+p1_L06	4	23	H		23	23	control
+p1_L06	5	76	H		76	76	control
+p1_L06	6	85	H		85	85	control
+p1_L06	7	116	H		116	116	control
+p1_L06	8	61	H		61	61	control
+p1_L06	9	103	H		103	103	control
+p1_L06	10	3	H		3	3	control
+p1_L06	11	71	H		71	71	control
+p1_L06	12	62	H		62	62	control
+p1_L06	13	24/10	H		24/10	24/10	target
+p1_L06	14	5	H		5	5	control
+p1_L06	15	122	H		122	122	control
+p1_L06	16	9	M	B:4	4	4	target
+p1_L06	17	9	H		9	9	control
+p1_L06	18	40	M	B:90	40	40	target
+p1_L06	19	39	H		39	39	control
+p1_L06	20	131	H		131	131	control
+p1_L06	21	142	H		142?	142	control
+p1_L07	1	77	H		77	77	control
+p1_L07	2	104	H		104	104	control
+p1_L07	3	72	H		72	72	control
+p1_L07	4	72/16	M	B:32/16	32/16	32/16	target
+p1_L07	5	37	H		31	31	control
+p1_L07	6	83	H		83	83	control
+p1_L07	7	17	H		17	17	control
+p1_L07	8	63	H		63	63	control
+p1_L07	9	25	H		25	25	control
+p1_L07	10	79	H		79	79	control
+p1_L07	11	84	H		64	64	control
+p1_L07	12	113	H		113	113	control
+p1_L07	13	64/112	H		64/112	64/112	target
+p1_L07	14	82	M	B:89	82	82	target
+p1_L07	15	27	H		27	27	control
+p1_L07	16	313	H		313	313	control
+p1_L07	17	26	H		26	26	control
+p1_L07	18	7	H		7	7	control
+p1_L07	19	2	H		2	2	control
+p1_L07	20	3	M	B:31	31	31	target
+p1_L08	1	120	H		120	120	control
+p1_L08	2	64	H		64	64	control
+p1_L08	3	113/115	H		113/115	113/115	target
+p1_L08	4	8	H		8	8	control
+p1_L08	5	92	H		92	92	control
+p1_L08	6	65	H		65	65	control
+p1_L08	7	66	H		66	66	control
+p1_L08	8	111	H		111	111	control
+p1_L08	9	82	H		82	82	control
+p1_L08	10	2	H		2	2	control
+p1_L08	11	6	H		6	6	control
+p1_L08	12	118	H		118	118	control
+p1_L08	13	81	H		81	81	control
+p1_L08	14	120	H		120	120	control
+p1_L08	15	82	H		82	82	control
+p1_L08	16	3	H		3	3	control
+p1_L08	17	32/12	H		32/12	32/12	target
+p1_L08	18	7	H		7	7	control
+p1_L08	19	36	H		36	36	control
+p1_L08	20	22	H		22?	22?	control
+p1_L09	1	111	H		111	111	control
+p1_L09	2	62	H		62	62	control
+p1_L09	3	735/71	M	B:335/71	335/71	335/71	target
+p1_L09	4	81	H		81	81	control
+p1_L09	5	13	H		13	13	control
+p1_L09	6	82	H		82	82	control
+p1_L09	7	3	H		3	3	control
+p1_L09	8	77	H		77	77	control
+p1_L09	9	62	H		62	62	control
+p1_L09	10	4	H		4	4	control
+p1_L09	11	33/5	H		33/5	33/15	target
+p1_L09	12	6	H		6	6	control
+p1_L09	13	36	H		36	36	control
+p1_L09	14	25/81	M	B:25/51	25/51	26/51	target
+p1_L09	15	61	H		61	61	control
+p1_L09	16	40	H		40	40	control
+p1_L09	17	101	H		101	101	control
+p1_L09	18	27	H		27	27	control
+p1_L09	19	82	H		82	82	control
+p1_L10	1	21	H		28	28	control
+p1_L10	2	7	H		7	7	control
+p1_L10	3	4	H		4	4	control
+p1_L10	4	27/14	H		27/14	27/14	target
+p1_L10	5	112	H		112	112	control
+p1_L10	6	38	H		38	38	control
+p1_L10	7	27	H		27	27	control
+p1_L10	8	32	H		32	32	control
+p1_L10	9	7	H		7	7	control
+p1_L10	10	28	H		28	28	control
+p1_L10	11	33/77	H		33/77	33/77	target
+p1_L10	12	81	H		81	81	control
+p1_L10	13	=iii	M	B:iii	iii	=iii	target
+p1_L10	14	6	H		6	6	control
+p1_L10	15	92	H		92	92	control
+p1_L10	16	82	H		82	82	control
+p1_L10	17	21	H		21	21	control
+p1_L10	18	11	H		11	11	control
+p1_L10	19	61	H		61	61	control
+p1_L10	20	22	H		22?	22	control
+p1_L11	1	79	H		79	79	control
+p1_L11	2	84	H		84	84	control
+p1_L11	3	72	H		72	72	control
+p1_L11	4	62/28	H		62/28	62/28	target
+p1_L11	5	36	H		36	36	control
+p1_L11	6	22	H		22	22	control
+p1_L11	7	112	H		112	112	control
+p1_L11	8	81	H		81	81	control
+p1_L11	9	313	H		313	313	control
+p1_L11	10	76	H		76	76	control
+p1_L11	11	84	H		84	84	control
+p1_L11	12	77	H		77	77	control
+p1_L11	13	36	H		36	36	control
+p1_L11	14	72	H		72	72	control
+p1_L11	15	78	H		78	78	control
+p1_L11	16	81	H		81	81	control
+p1_L11	17	73	H		73	73	control
+p1_L11	18	112	H		112	112	control
+p1_L11	19	82	H		82	82	control
+p1_L11	20	1	M	B:-	10?	10?	target
+p1_L12	1	90	H		40	40	control
+p1_L12	2	81/28/2	H		81/28/2	81/28/2	target
+p1_L12	3	6	H		6	6	control
+p1_L12	4	117	H		117	117	control
+p1_L12	5	118	M	B:115	125	116	target
+p1_L12	6	81	H		81	81	control
+p1_L12	7	123	M	B:120	120	120	target
+p1_L12	8	40	H		40	40	control
+p1_L12	9	75	H		75	75	control
+p1_L12	10	61	H		61	61	control
+p1_L12	11	2	H		2	2	control
+p1_L12	12	31	H		31	31	control
+p1_L12	13	62	H		62	62	control
+p1_L12	14	3	H		3	3	control
+p1_L12	15	77	H		77	77	control
+p1_L12	16	63	H		63	63	control
+p1_L12	17	4	H		4	4	control
+p1_L12	18	31	H		31	31	control
+p1_L12	19	121	H		121	121	control
+p1_L12	20	13	M	B:132	13?	13?	target
+p1_L13	1	79	H		39	39	control
+p1_L13	2	7	H		7	7	control
+p1_L13	3	26	H		26	26	control
+p1_L13	4	31	H		31	31	control
+p1_L13	5	21	H		21	21	control
+p1_L13	6	81	H		81	81	control
+p1_L13	7	61	H		61	61	control
+p1_L13	8	77	H		77	77	control
+p1_L13	9	40	H		40	40	control
+p1_L13	10	102	H		102	102	control
+p1_L13	11	27/16	H		21/16	21/16	target
+p1_L13	12	2	H		2	2	control
+p1_L13	13	116	H		116	116	control
+p1_L13	14	62	H		62	62	control
+p1_L13	15	65	H		65	65	control
+p1_L13	16	76	H		76	76	control
+p1_L13	17	36	H		36	36	control
+p1_L13	18	81	H		81	81	control
+p1_L13	19	21	H		21	21	control
+p1_L13	20	34	M	B:3	31?	31?	target
+p1_L14	1	75	M	B:78	78	78	target
+p1_L14	2	91	H		81	81	control
+p1_L14	3	12	H		12	12	control
+p1_L14	4	40	H		40	40	control
+p1_L14	5	102	H		102	102	control
+p1_L14	6	21/16	H		21/16	21/16	target
+p1_L14	7	36	H		36	36	control
+p1_L14	8	92/2	H		92/2	82/2	target
+p1_L14	9	7	H		7	7	control
+p1_L14	10	31	H		31	31	control
+p1_L14	11	28/12	H		28/12	28/12	target
+p1_L14	12	8	H		8	8	control
+p1_L14	13	39	H		39	39	control
+p1_L14	14	111	H		111	111	control
+p1_L14	15	21	H		21	21	control
+p1_L14	16	102	H		102	102	control
+p1_L14	17	5	M	B:6	5/2?~	5	target
+p1_L14	18	2	M		-	2?	target
+p1_L15	1	114	H		114	114	control
+p1_L15	2	9	H		9	9	control
+p1_L15	3	92	H		92	92	control
+p1_L15	4	81	H		81	81	control
+p1_L15	5	21/76	H		21/76	21/76	target
+p1_L15	6	81	H		81	81	control
+p1_L15	7	118	H		118	118	control
+p1_L15	8	61	H		61	61	control
+p1_L15	9	103	H		103	103	control
+p1_L15	10	2	H		2	2	control
+p1_L15	11	9	M	B:4	2/6	2/16	target
+p1_L15	12	67	M		67	67	target
+p1_L15	13	82	H		82	82	control
+p1_L15	14	21	H		21	21	control
+p1_L15	15	81	H		81	81	control
+p1_L15	16	36	H		31	31	control
+p1_L15	17	3	H		3	3	control
+p1_L15	18	101	H		101	101	control
+p1_L15	19	78	H		78	78	control
+p1_L15	20	8	M	B:81	81	81	target
+p1_L15	21	21	M		21?	21	target
+p1_L16	1	61	H		61	61	control
+p1_L16	2	26	H		20	20	control
+p1_L16	3	30	H		30	30	control
+p1_L16	4	85	H		35	35	control
+p1_L16	5	122	H		122	122	control
+p1_L16	6	31	H		31	31	control
+p1_L16	7	=nous	H		=nous	=nous	control
+p1_L16	8	=Verrons	M	B:=Verons	=Ververs	=Veroib	target
+p1_L16	9	77	H		77	77	control
+p1_L16	10	81	H		81	81	control
+p1_L16	11	118	M	B:116	116	116	target
+p1_L16	12	62	H		62	62	control
+p1_L16	13	102	H		102	102	control
+p1_L16	14	3	H		3	3	control
+p1_L16	15	111	M	B:144	111	111	target
+p1_L16	16	81/16	H		81/16	81/16	target
+p1_L16	17	37	H		37	37	control
+p1_L16	18	81	S	89	91	91	target
+p1_L16	19	114	M	B:144	112?	114	target
+p1_L17	1	25	M	B:-	25	25	target
+p1_L17	2	91	H		81	81	control
+p1_L17	3	21	M	B:31	21	21	target
+p1_L17	4	61	H		61	61	control
+p1_L17	5	115	H		115	115	control
+p1_L17	6	82	H		82	82	control
+p1_L17	7	120	H		120	120	control
+p1_L17	8	85	H		85	85	control
+p1_L17	9	111	H		111	111	control
+p1_L17	10	115	H		115	115	control
+p1_L17	11	102	M	B:101	101	101	target
+p1_L17	12	91	M		81	81	target
+p1_L17	13	36	H		36	36	control
+p1_L17	14	21	H		21	21	control
+p1_L17	15	121	M	B:124	221	221	target
+p1_L17	16	132	H		132	132	control
+p1_L17	17	142	H		142	142	control
+p1_L17	18	149	H		149	149	control
+p1_L17	19	121	H		121	121	control
