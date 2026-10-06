@@ -1,0 +1,85 @@
+id	kind	parent	date	body_lines_old	body_lines_new	in_analyses	header
+9693.54	legacy	-	1864-03-31	26	14	-	No 11 3 / W. F. Mason Cairo Ill ( 1 )  Wash'n Mar 31st 1864 11.30 AM
+9693.54b	split	9693.54	1864-04-04	-	11	-	RR McCaine Cumberland ----  Washn 130 PM Apl 4th 1864
+9696.59	legacy	-	1864-04-07	11	6	-	No 1 F / Geo D Sheldon ( 1 ) Dunn June Sine  Washn Apr 7th 1864 1130 AM
+9696.59b	split	9696.59	1864-04-07	-	4	-	Beckwith Culpeper ----  Washington Apl 7th 1864
+9698.62	legacy	-	1864-04-08	37	8	assign_free	S. H. Beckwith ( 2 )  Wash'n Apr. 8th 1864 1130 AM
+9698.62b	split	9698.62	1864-04-08	-	11	-	S. H Beckwith Culpeper  Washn Apl 8th 1864
+9699.62c	split	9698.62	1864-04-08	-	16	-	John Horner N. York ----  Wash Apl 8th 1864
+9703.69	legacy	-	1864-04-13	117	5	-	Washn April 13th 1864
+9704.69b	split	9703.69	1864-04-14	-	7	-	11 PM / Sheldon Ft Monroe " 1 " Wash D. C Apl 14, 1864
+9704.69c	split	9703.69	1864-04-14	-	4	-	11 PM / Van Valkenburg " 1 "  Wash. Apl 14 1864
+9704.69d	split	9703.69	1864-04-16	-	8	-	Washn Apl 16th 1864
+9705.69e	split	9703.69	1864-04-16	-	13	-	SH Beckwith / Culpeper ----  Washn Apl 16th 1864 
+9706.69f	split	9703.69	1864-04-16	-	12	-	John Horner / N York  Washn Apl 16th 1864
+9706.69g	split	9703.69	1864-04-16	-	29	-	John Horner N. York  Washington Apl 16th 1864
+9708.69h	split	9703.69	1864-04-17	-	21	-	SH Beckwith Culpeper  Washn Apl 17th 1864
+9709.69i	split	9703.69	1864-04-18	-	6	-	Geo D Sheldon Ft Monroe  Washn Apl 18th 1864
+9709.70	legacy	-	1864-04-19	18	11	print_q_q,assign_free	John Horner ( N. Y. )  Washn D. C. Apr. 19th 1864
+9709.70b	split	9709.70	1864-04-20	-	6	-	Washington Apl 20th 1864
+9710.71	legacy	-	1864-04-20	103	5	-	No 2 Ft M / Geo. D. Sheldon ( 1 )  Washn D. C. Apr 20th 1864
+9710.71b	split	9710.71	1864-04-20	-	84	-	2 P. M. / Horner N. Y. " 9 "  Wash Apl 20. 1864
+9714.71c	split	9710.71	1864-04-21	-	10	-	130 PM / Beckwith Culpeper  Wash Apl 21 1864
+9715.73	legacy	-	1864-04-21	58	25	-	C. S. Cutler Albany NY  Washn D. C. Apr 21st 1864 530 PM
+9716.73b	split	9715.73	1864-04-21	-	8	-	No " 2 "  7PM / Caldwell Hd qrs AP  Wash Apl. 21. 1864 7 PM
+9716.73c	split	9715.73	1864-04-21	-	12	-	" 9 "  940 Pm / Horner NY  Washn D. C. Apl. 21. 1864
+9717.73d	split	9715.73	1864-04-22	-	7	-	3 Pm / Horner N. Y.  Wash. Apl. 22 1864
+9718.75	legacy	-	1864-04-23	57	19	-	S.H. Beckwith ( 2 )   Wash'n DC Apr 23rd 1864 113 0am
+9719.75b	split	9718.75	1864-04-23	-	5	-	" 1 "  2. P. M. / McCaine Cumberland  Wash. Apl 23 1864
+9719.75c	split	9718.75	1864-04-23	-	6	-	320 PM / Horner N. Y. " 9 "  Washn Apl 23. 1864
+9719.75d	split	9718.75	1864-04-23	-	7	-	" Card "  320 P. M. / Thayer Phila  Wash. D. C. Apl. 23 1864
+9720.75e	split	9718.75	1864-04-23	-	8	-	H. E. Thayer Phila  Washn Apl 23rd 1864 
+9720.75f	split	9718.75	1864-04-23	-	4	-	John Horner N. Y.  Washn Apl 23rd 1864
+9720.76	legacy	-	1864-04-23	54	6	-	715 P. M  Washn Apr 23rd 1864
+9721.76b	split	9720.76	1864-04-23	-	23	-	1 / Caldwell Hdqrs AP  Washn D.C. Apl 23 1864
+9722.76c	split	9720.76	1864-04-24	-	13	-	F. S. Van Valkenburg Nashville  Washn Apl 24th 1864
+9722.76d	split	9720.76	1864-04-25	-	7	-	230 PM / Caldwell no 2  Wash. Apl 25 1864
+9966.542	legacy	-	1865-03-01	76	11	-	1 / Capt Sam Bruch  Wash'n Mar 1st 1865
+9966.542b	split	9966.542	1865-03-02	-	4	-	SH Becksmith  Washn Mch 2d 1865 
+9966.542c	split	9966.542	1865-03-01	-	5	-	to Beckwith  Nashville Mch 1st 65
+9967.542d	split	9966.542	1865-03-02	-	6	-	SH Beckwith  Wash Mch 2d 1865
+9967.542e	split	9966.542	1865-03-02	-	45	-	no 10 / MS Quay Harrisburg  Washn Mch 2d 1865
+9969.543	legacy	-	1865-03-02	25	12	wrongtel_target,confpair,assign_free	3 / S. H. Beckwith  Wash'n Mar. 2nd 1865
+9969.543b	split	9969.543	1865-03-02	-	12	-	1215 AM Mch 3d  City Point Mch 2d 1865
+9971.547	legacy	-	1865-03-04	50	12	-	no 1  9 P. M. / Sheldon Ft. Mon.  Wash. Mar. 4 1865.
+9971.547b	split	9971.547	1865-03-07	-	5	-	SH Beckwith  Washn Mch 7th 1865
+9972.547c	split	9971.547	1865-03-08	-	31	-	SH Beckwith City Point  Washn Mch 8th 1865
+9976.551	legacy	-	1865-03-09	14	7	-	4 / S. H. Beckwith  Wash'n Mar 9th 1865
+9976.551b	split	9976.551	1865-03-10	-	5	-	3 pm / McCaine No 2  Washn Mch 10 1865
+9978.555	legacy	-	1865-03-12	24	11	-	No 2  12 M / Capt Gilmore Hilton Head  Wash Mar 12 1865
+9978.555b	split	9978.555	1865-03-12	-	8	-	330 pm Beckwith  Washn Mch 12th 1865 
+9978.555c	split	9978.555	1865-03-21	-	3	-	SH Beckwith  Washn Mch 21st 1865
+9980.557	legacy	-	1865-03-22	30	12	-	4 / S. H. Beckwith  Wash'n Mar. 22nd 1865 430 PM 
+9980.557b	split	9980.557	1865-03-23	-	9	-	RR McCaine Winchester  Washn Mch 23d 1865 
+9981.557c	split	9980.557	1865-03-25	-	7	-	SH Beckwith  Washn Mch 25th 1865
+9984.562	legacy	-	1865-04-05	15	4	-	930 AM  / Capt R. C. Clowry  Wash'n Apr 5th 1865
+9984.562b	split	9984.562	1865-04-05	-	9	-	No 4  6 pm / Beckwith City Pt  Wash. Apl 5. 1865
+9985.564	legacy	-	1865-04-05	26	4	wrongtel_target,confpair,assign_free	SH Beckwith  Apr. 5th 1865 8. P. M
+9986.564b	split	9985.564	1865-04-05	-	12	-	Hon CA Dana Richmond Va  Washn Apl 5 1865 
+9986.564c	split	9985.564	1865-04-06	-	7	-	No 4  5 pm / Plum Nashvl  Wash Apl 6 1865
+9988.567	legacy	-	1865-04-09	16	6	-	A. H. Caldwell A. of P.  Wash'n Apr 9th 1865 8. P. M
+9988.567b	split	9988.567	1865-04-10	-	9	-	Hon CA Dana  Washn Apl 10th 1865
+9989.569	legacy	-	1865-04-12	33	11	-	1 / J. H. Emerick  Wash'n Apr. 12th 1865
+9990.569b	split	9989.569	1865-04-12	-	20	-	( No 4 )  10.15 A. M. / Beckwith City Pt.  Wash. Apl. 12. 1865.
+9991.571	legacy	-	1865-04-15	37	10	assign_free	( 1 ) Emerick Richmond .  Washington D. C. April 15. 1865.
+9992.571b	split	9991.571	1865-04-15	-	11	-	No 1  8 PM / Emerick Richmond  Wash Apl 15 1865
+9992.571c	split	9991.571	1865-04-16	-	12	-	No 2  3.15 PM / Caldwell Hd Qrs A. P.  Washn Apl 16 1865
+9993.572	legacy	-	1865-04-16	62	15	-	1 / JH Emerick  Wash'n Apr 16th 1865
+9993.572b	split	9993.572	1865-04-16	-	8	-	No 1. / Clowry St Louis  Wash Apl 16. 1865.
+9994.572c	split	9993.572	1865-04-16	-	7	-	Carey Louisville Ky  Washn Apl 16th 1865
+9994.572d	split	9993.572	1865-04-16	-	4	-	JW Sampson  Washn Apl 16th 65 
+9994.572e	split	9993.572	1865-04-17	-	12	-	1.30 pm / Sherman mobile  Wash DC Apl 17 65
+9995.572f	split	9993.572	1865-04-17	-	9	-	Plum Nashville  Washn Apl 17th 65
+9995.573	legacy	-	1865-04-17	13	6	-	J. H. Emerick Richmond  Wash'n Apr. 17th 1865 
+9995.573b	split	9995.573	1865-04-18	-	6	-	AH Caldwell Burkesville Va  Wash Apl 18th 1865 
+9996.575	legacy	-	1865-04-19	31	10	assign_free	4  / R. R. McCaine  Wash'n Apr 19th 1865
+9997.575b	split	9996.575	1865-04-19	-	10	-	No 3 / Sheldon Ft Monroe  Wash. Apl. 19. 1865
+9997.575c	split	9996.575	1865-04-20	-	8	-	Eddy Raleigh NC  Washn Apl 20th 1865
+9998.576	legacy	-	1865-04-20	72	46	-	no 19 n  / John Horner  Little money lost  Wash'n Apr 20th 1865 
+10000.576b	split	9998.576	1865-04-20	-	17	-	830 pm / Caldwell Hd Qrs A. P.  Wash Apl 20 1865
+10000.576c	split	9998.576	1865-04-22	-	6	-	1 AM 22 Apl 22  Wash Apl 22 1865 
+10001.577	legacy	-	1865-04-23	40	13	-	No 1  1 P. M.  / Mason Cairo Ills.  Washn April 23d 1865
+10001.577b	split	10001.577	1865-04-29	-	7	-	( No. 1. )  9 AM / Horner N. Y.  Wash D. C. Apl 29 1865
+10002.577c	split	10001.577	1865-04-29	-	10	-	J. H. Emerick Richmond,  Washn Apl 29th 1865
+10002.577d	split	10001.577	1865-04-29	-	5	-	No 4  8 PM / Plum Nashville  Wash DC Apl 29. 65.
+# entries legacy 671, split2 729; legacy entries that split 25, split-off parts 58, merged 0; known answer 9985.564 at 'Hon CA Dana' PASS; affected by wrongtel_target 2, confpair 2, print_q_q 1, assign_free 6

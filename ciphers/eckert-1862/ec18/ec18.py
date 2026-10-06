@@ -8,6 +8,7 @@ Usage: ec18.py DATA_DIR OR_DIR [--book 2] [--possessive] [--guard DIR62] [--writ
        ec18.py DATA_DIR --assign-free DIR62 [--write | --check]
        ec18.py DATA_DIR --read-free DIR62 [--write | --check]
        ec18.py DATA_DIR --print-q ORDIR [--write | --check]
+       ec18.py DATA_DIR --split-report [--write | --check]   (R9-ECK62: "Apl"/"Mch" heading forms; see entries())
   DATA_DIR/vol18.json: one CONTENTdm dmQuery (URL and sha256 in ../pilot1864/manifest.tsv; the Decoding the Civil War
   volunteers' transcription, not committed). OR_DIR/<vol>.txt: IA _djvu.txt per OR volume (ids in or_volumes.tsv; not
   committed, re-fetch). --write rewrites entries.tsv, matches.tsv, control.tsv and readings.md; --check exits 1 if any
@@ -85,7 +86,23 @@ def clean(t):
     return t.replace("&", " and ").replace("\r", "")
 
 
-def entries(data):
+# R9-ECK62 (6 Oct 2026): the ledger's own heading abbreviations "Apl" (April) and "Mch" (March) are not month prefixes, so
+# DATE misses them and telegrams headed "Washn Apl 5 1865" run into the entry before. DATE2 adds the two forms; split2=True
+# also opens an entry at a heading line inside a block (a DATE2 date with year closing the line, optionally followed by a
+# time) -- the ledger often has no blank line between telegrams. The default (split2=False) is the committed splitter,
+# unchanged, so every committed output keeps its ids and bytes; --split-report writes the difference to split2.tsv.
+ABBR = {"apl": 3, "mch": 2}
+DATE2 = re.compile(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|Apl|Mch)[a-z]*\.?\s*(\d{1,2})(?:st|nd|rd|th|d)?\.?,?"
+                   r"\s*(?:18)?(6[3-6])\b", re.I)
+HEAD2 = re.compile(DATE2.pattern + r"\.?\s*(?:\d{1,4}\s*[AaPp]\.?\s*[Mm]\.?)?\s*$", re.I)
+
+
+def month_of(m):
+    a = m.group(1)[:3].lower()
+    return ABBR[a] if a in ABBR else [x[:3].lower() for x in MONTHS].index(a)
+
+
+def entries(data, split2=False):
     recs = json.load(open(Path(data) / "vol18.json"))["records"]
     pages = []
     for r in recs:
@@ -93,7 +110,16 @@ def entries(data):
         m = re.match(r"Page (\d+)", r["title"])
         if isinstance(t, str) and t.strip() and m:
             pages.append((int(m.group(1)), int(r["pointer"]), clean(t)))
-    out, cur = [], None
+    out, cur, n = [], None, -1
+
+    def opener(lines, i, m, legacy):
+        nonlocal cur, n
+        if legacy:
+            n += 1
+        cur = {"page": pg, "ptr": ptr, "date": (1800 + int(m.group(3)), month_of(m) + 1, int(m.group(2))),
+               "header": " / ".join(lines[: i + 1]), "body": [], "n": n, "legacy": legacy}
+        out.append(cur)
+
     for pg, ptr, t in sorted(pages):
         for blk in [b for b in re.split(r"\n\s*\n", t) if b.strip()]:
             lines = [l for l in blk.split("\n") if l.strip()]
@@ -103,16 +129,41 @@ def entries(data):
                 if m:
                     hit = (i, m)
                     break
+            if split2:
+                hit2 = None
+                for i, l in enumerate(lines[:3]):
+                    m = DATE2.search(l)
+                    if m:
+                        hit2 = (i, m)
+                        break
+                start = 0
+                if hit2:
+                    i, m = hit2
+                    opener(lines, i, m, hit is not None)
+                    start = i + 1
+                elif hit is None and cur is None:
+                    continue
+                for j in range(start, len(lines)):
+                    m = HEAD2.search(lines[j])
+                    if m and j > 0:
+                        opener(lines[j:j + 1], 0, m, False)
+                    elif cur is not None:
+                        cur["body"].append(lines[j])
+                continue
             if hit:
                 i, m = hit
-                mon = [x[:3] for x in MONTHS].index(m.group(1)[:3].title())
-                cur = {"page": pg, "ptr": ptr, "date": (1800 + int(m.group(3)), mon + 1, int(m.group(2))),
-                       "header": " / ".join(lines[: i + 1]), "body": lines[i + 1:]}
-                out.append(cur)
+                opener(lines, i, m, True)
+                cur["body"] = lines[i + 1:]
             elif cur is not None:
                 cur["body"] += lines
-    for n, e in enumerate(out):
-        e["id"] = f"{e['ptr']}.{n}"
+    seq = collections.Counter()
+    for e in out:
+        if e.pop("legacy"):
+            e["id"] = f"{e['ptr']}.{e['n']}"
+        else:
+            seq[e["n"]] += 1
+            e["id"] = f"{e['ptr']}.{e['n']}{'bcdefghijklmnopqrstuvwxyz'[seq[e['n']] - 1]}"
+        e.pop("n")
     return out
 
 
@@ -280,7 +331,7 @@ def print_free(argv):
     return 0
 
 
-def main(argv):
+def book_test(argv=None):
     base = ROOT / "ciphers" / "eckert-1864"
     ok = tot = bad = 0
     for f, want in (("ciphertext.txt", "1"), ("ciphertext-no2.txt", "2")):
@@ -323,6 +374,57 @@ def agreement(pairs, vols):
     return hit, tot
 
 
+def split_report(argv):
+    """R9-ECK62: legacy splitter vs split2; one row per legacy entry that splits, one per split-off part; which committed
+    analyses (wrongtel targets, confpair pool, print_q '?', assign_free) hold the legacy entry. Known answer: 9985.564 must
+    separate at its second heading ("Hon CA Dana Richmond Va  Washn Apl 5 1865", R7B-ECK62)."""
+    data = argv[0]
+    a, b = entries(data), entries(data, split2=True)
+    old = {e["id"]: e for e in a}
+    kept = [e for e in b if e["id"] in old]
+    assert [e["id"] for e in kept] == [e["id"] for e in a], "legacy ids changed"
+
+    def ids(f, role=None):
+        p = HERE / f
+        if not p.exists():
+            return set()
+        rows = [l.split("\t") for l in p.read_text().splitlines() if l and not l.startswith("#")]
+        h = rows[0]
+        return {r[0] for r in rows[1:] if role is None or (len(r) == len(h) and r[h.index(role[0])] == role[1])}
+
+    sets = {"wrongtel_target": ids("wrongtel_entries.tsv", ("role", "target")), "confpair": ids("confpair_pairs.tsv"),
+            "print_q_q": ids("print_q.tsv", ("decision", "?")), "assign_free": ids("assign_free.tsv")}
+    parts = collections.defaultdict(list)
+    cur = None
+    for e in b:
+        if e["id"] in old:
+            cur = e["id"]
+        else:
+            parts[cur].append(e)
+    out = ["id\tkind\tparent\tdate\tbody_lines_old\tbody_lines_new\tin_analyses\theader"]
+    for pid in sorted(parts, key=lambda x: [e["id"] for e in a].index(x)):
+        o, nw = old[pid], next(e for e in kept if e["id"] == pid)
+        tags = ",".join(k for k, v in sets.items() if pid in v) or "-"
+        out.append(f"{pid}\tlegacy\t-\t%d-%02d-%02d\t{len(o['body'])}\t{len(nw['body'])}\t{tags}\t{o['header']}"
+                   % o["date"])
+        for e in parts[pid]:
+            out.append(f"{e['id']}\tsplit\t{pid}\t%d-%02d-%02d\t-\t{len(e['body'])}\t-\t{e['header']}" % e["date"])
+    merged = [i for i in old if not any(e["id"] == i for e in kept)]
+    nsplit = sum(len(v) for v in parts.values())
+    hit = any("Hon CA Dana Richmond Va" in e["header"] for e in parts.get("9985.564", []))
+    out.append(f"# entries legacy {len(a)}, split2 {len(b)}; legacy entries that split {len(parts)}, split-off parts {nsplit}, "
+               f"merged {len(merged)}; known answer 9985.564 at 'Hon CA Dana' {'PASS' if hit else 'FAIL'}; affected by "
+               + ", ".join(f"{k} {sum(1 for p in parts if p in v)}" for k, v in sets.items()))
+    txt = "\n".join(out) + "\n"
+    if "--write" in argv:
+        (HERE / "split2.tsv").write_text(txt)
+    elif "--check" in argv and (HERE / "split2.tsv").read_text() != txt:
+        print("stale: split2.tsv")
+        return 1
+    print(out[-1])
+    return 0 if hit else 1
+
+
 def main(argv):
     if argv and argv[0] == "--book-test":
         return book_test()
@@ -341,6 +443,8 @@ def main(argv):
         return print_q(argv)
     if "--print-free" in argv:
         return print_free(argv)
+    if "--split-report" in argv:
+        return split_report(argv)
     data, ordir = argv[0], argv[1]
     bk = "2" if "--book" in argv and argv[argv.index("--book") + 1] == "2" else "1"
     other, sfx = ("1" if bk == "2" else "2"), ("_b2" if bk == "2" else "")

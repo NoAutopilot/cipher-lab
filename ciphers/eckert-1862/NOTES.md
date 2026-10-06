@@ -1596,3 +1596,56 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 5 internal gaps; cheapest next: add the "Apl"/"Washn" heading forms to the entry splitter and re-split (~$1); the No. 4 book for the 14 words waits on a desk-browser read of the Friedman copy
+
+## R9-ECK62 (6 Oct 2026, account 1 worker for LANE LANE-RUN9-account-1): "Apl"/"Mch" heading forms in the entry splitter, re-split
+
+Step check: not run before (R8-ECK62's Verdict named it as cheapest next). vol18.json re-fetched (1 request, sha256 matches
+pilot1864/manifest.tsv).
+- Survey of dated lines inside entry bodies (legacy splitter): the ledger abbreviates April "Apl" (46 body lines) and March "Mch"
+  (12); "Washn" itself was not the problem (DATE never needed the place word, and "Washn"/"Wash"/"Wash." already sit in 750+
+  headers). Two causes of merges: a block opening with an "Apl"/"Mch" heading did not open an entry, and many telegrams follow one
+  another with no blank line, so a heading inside a block was never looked for.
+- `ec18/ec18.py`: `DATE2` (DATE plus Apl -> April, Mch -> March), `HEAD2` (a DATE2 date with year closing the line, optionally a
+  time), `entries(data, split2=True)` opens an entry at a DATE2 date in a block's first three lines or at any HEAD2 line inside a
+  block. Default `split2=False` is the committed splitter: checked identical to the pre-edit function (same 671 entries, ids,
+  headers and bodies), so no committed output changes and every committed `--check` stays current. Split-off parts keep their
+  parent's id with a letter suffix (9985.564 -> 9986.564b, 9986.564c), so no legacy id is renumbered.
+- New option `ec18.py DATA --split-report --write|--check` -> `ec18/split2.tsv` (`--check` current), with a known answer
+  (9985.564 must separate at "Hon CA Dana Richmond Va  Washn Apl 5 1865", R7B-ECK62): PASS.
+- **Counts: 671 entries before, 729 after; 25 legacy entries split into 58 further parts; 0 merges.** Every split-off header was
+  read by eye: all 58 are telegram headings (operator or addressee, place, "Wash"/"Washn"/"Washington"/"City Point"/"Nashville",
+  date). Biggest: 9703.69 (13 Apr 1864, 117 body lines -> 5 plus 8 parts to 18 Apr), 9718.75, 9720.76, 9966.542, 9993.572,
+  9998.576. By month: Mar-Apr 1864 (legacy entries of 31 Mar-23 Apr, 9, 26 parts), Mar 1865 (6 entries, 12 parts), Apr 1865 (10 entries,
+  20 parts).
+- Committed analyses that hold a split entry: wrongtel targets 2 (9969.543, 9985.564 -- both also in the confpair 18-pool and
+  assign_free), print_q '?' 1 (9709.70), assign_free 6 (9698.62, 9709.70, 9969.543, 9985.564, 9991.571, 9996.575). So R7B-ECK62's
+  "9985.563/9985.564 share OR 46.3 p.572" and the confpair hits drawn from 9969.543/9985.564 rest partly on merged text.
+- Residue: at a mid-block split the line just above the heading (a serial or time, e.g. "No 4  5 pm") stays at the end of the
+  previous part's body; 9969.543b's heading is a received-time line ("1215 AM Mch 3d  City Point Mch 2d 1865") and may be a
+  receipt note rather than a separate telegram -- left as the rule splits it.
+- Also fixed: `--book-test` raised NameError (the book-rule function had been defined as a second `main` and shadowed); renamed
+  `book_test`, runs: 29/31 right, 0 wrong book, 2 unassigned.
+- Re-run: `ec18_confpair.py --check` current, `decode.py --check` current, `ec18.py --split-report --check` current. Not re-run:
+  the OR-dependent `--check`s (main, `--assign`, `--print-q`, `ec18_align.py`, `ec18_wrongtel.py`; 48 OR `_djvu.txt` not fetched
+  this job) -- unchanged by construction since the default splitter is byte-identical. No key, book, grade or reading changed; no
+  new key values. Requests: hdl.huntington.org 1. No subagents.
+  Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, R9-ECK62, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); mssEC 18: 28 fully keyed Cipher No. 1 and 17 Cipher No. 2 entries (RUN3-ECK62), 26 print-aligned (A3V3-ECKC); 79 print-free-assigned entries read, 9991.571 now with book 1r (R7B-ECK62); 13 of the 113 '?' entries given a book by print (D2-ECK62M); 57 dated matches aligned (AGREE 325/816 = 0.398 vs control 0.075 after the carry); 18 neither-book entries: 0 wrong telegram, 7 right, 11 undecided (R7B-ECK62, gate PASS); conflict-pair test: 7-entry pool untested (power 0.61), 18-entry pool 14 cross-entry code words p 0.0005 (R7C-ECK62C, descriptive); the 14 words looked up in Cipher No. 5 (mssEC 50): 11 printed in its template, 0 of 8 read values match, none carried (R8-ECK62)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), residue regenerated (GAPS197); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); next: the received copies of the 27 Jan and 24 May 1865 telegrams (Eckert received ledgers) for a third witness, ~$2
+- 18 neither-book entries (R7C-ECK62C confpair_pairs.tsv) - blocker: no-key-material; the 14 code words date 30 Dec 1864 - 13 Jul 1865, i.e. Cipher No. 3 (from 25 Dec 1864) and No. 4 (from 23 Mar 1865) per Plum via Tomokiyo; the Huntington holds only No. 5 (mssEC 49-66, from 20 Jun 1865); 11 of the 14 are printed words of the shared No. 3/4/5 template but No. 5's meanings match none of 8 read (R8-ECK62, ec18/book5_lookup.tsv); the one known No. 4 copy (Friedman Collection, Marshall Foundation digital archive) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- 100 mssEC 18 entries still '?' - blocker: not-attempted; 20 have a dated OR match with margin under 2 and 80 none (D2-ECK62M); next: the image (marker words the volunteer text may have dropped) for the 20 `?p` entries, ~$4
+- merged telegrams in the volunteer text - blocker: not-attempted; the split2 splitter (R9-ECK62) separates 58 telegrams from 25 legacy entries (671 -> 729, ec18/split2.tsv) but the committed analyses still use the legacy split; 2 wrongtel/confpair targets (9969.543, 9985.564), 1 print_q '?' and 6 assign_free entries are affected; next: regenerate the ec18 cascade (main, --assign-free, --read-free, --print-q, ec18_align, ec18_wrongtel, ec18_confpair) under split2 with the OR volumes re-fetched, ~$3
+
+## Escalation (R9-ECK62, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Lehigh row checked on the mssEC 41 key page image (DEF1-ECK62P); '?' entries assigned print-free (RUN6-ECK62) and by print (D2-ECK62M); zero-agree entries re-aligned under the other book (D2-ECK62R, 1 of 19), the flip carried (R7B-ECK62); Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram test done (R7B-ECK62: 0 wrong, 7 right, 11 undecided); conflict-pair test done (R7C-ECK62C: 7-entry pool untested at N 93, 18-entry pool 14 cross-entry code words outside the keys)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 5 internal gaps; cheapest next: a received-ledger pass on mssEC 04-14 (~$2) or the split2 cascade regeneration (~$3); the No. 4 book for the 14 words waits on a desk-browser read of the Friedman copy
