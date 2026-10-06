@@ -428,19 +428,38 @@ Controls per scan: Oxenstierna, Suede, Nimegue. Targets per scan: Naes, Naas, Ne
 - Requests: archive.org advancedsearch 3, be-api.us.archive.org 126 + 12 + 6 = 144 (no failures; one at a time, >= 1.6 s apart). Vision 0,
   subagents 0. Status stays `open`; nothing found, nothing read.
 
-## Remaining gaps (R8-KARL3, 6 Oct 2026)
+## Page read, German 1680 Actes Vollmacht section (R9-KARL4, account-2 worker, 6 Oct 2026, 05:37-05:41 UTC by date -u)
+Brief step (R8-KARL3 Verdict cheapest next). Method: fetched `_djvu.txt` and `_page_numbers.json` of both German 1680 scans (open, no loan),
+grepped for the Swedish full power, then read the page images (archive.org `page/nN_w1000.jpg`, one page per vision call, 1250 px wide).
+- **A Swedish Vollmacht is printed, but it is the 12 April 1676 instrument, not the Nääs 6 May 1677 one.** IA `bub_gb_mUtFAAAAcAAJ`,
+  *Nimwegisch Friedens-Memorial* pp. 102-104 = leaves n137-n139 (image-checked): heading "Der Herr Graff Oxenstirn und Herr Oliven Krantz
+  kamen zu Nimwegen an/den 22. und 31. August. 76. folgt seine I. Vollmacht Derer Herrn Schwedischen Abgesandten."; opening "Wir Carl von
+  GOttes Gnaden/König der Schweden/Gothen und Wenden/Groß-Hertzog von Finland ..."; names Benedict Oxenstierna and Johan Paulin
+  Olivenkrantz as Extraordinar-Ambassadeurs; closing p.104 "Geben in unsern Castel Holm 12. Aprilis 1676. Carl. Concordat cum originali
+  J. Berckeley W. Temple L. Jenkins." Next item on p.104 is the Danish Vollmacht (Hoeg). German translation, certified by the English mediators.
+- The same text is in `11211619bsb` (OCR lines 6285-6330, same heading "I. Vollmacht Derer Herrn Schwedischen Abgesandten"; leaf not
+  image-checked, OCR only).
+- No second Swedish Vollmacht in either volume: OCR grep for "Schweden/Gothen", "Carl von GOttes", "Carolus Dei", "Suecorum", "II. Vollmacht",
+  "Holm", "Nääs/Näs/Naes", "Maji/May/Mai 1677" found only the 1676 text, the 1675 Swedish-Dutch commerce treaty, the Emperor-Sweden treaty
+  preamble (already page-read, A2P4-KARL) and unrelated May 1677 dates. Conditional on OCR (Fraktur), not a page-by-page read of 850 leaves.
+- Relation to the target: date and place match the catalogue's *document (a)* of the same dossier ("Stockholm 12 april 1676", Latin, not in
+  cipher), not the ciphered document (b). Inference only (grade I): if (b) reuses (a)'s formulary, this German text is a crib for the clear
+  parts of (b); untestable until an image of (b) exists. No transcription of the target exists, so no comparison was possible.
+- Requests: archive.org metadata 2, download 4 (djvu.txt, page_numbers) + 7 page images = 13, one at a time, >= 1.6 s apart, no failures.
+  Vision reads 5 (own, no subagents). Status stays `open`.
+
+## Remaining gaps (R8-KARL3, 6 Oct 2026; updated R9-KARL4)
 Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not been located in any print or image (0 of 1 target document found)
 - Bakeš 2014 thesis full text - blocker: needs-physical-access; theses.cz "Soubory jsou nedostupné" and dk.upce.cz 10195/58052 PDF and text answer 401 without a Pardubice login (D2B-KARL section above); a person can use the repository's own request route or a Pardubice reader
 - Bakeš 2015/2016 ČČH articles (dk.upce.cz 10195/66550, 67724) - blocker: needs-physical-access; "Pouze v rámci univerzity", text bitstreams HTTP 401, no open copy via OpenAlex or Google Books (R8-KARL2 section above); the 2018 dissertation (10195/72172, open, 465 pp.) was grepped in full with 0 hits for the 1677 Nääs full power
-- German 1680 Actes Vollmacht section (IA `bub_gb_mUtFAAAAcAAJ`, `11211619bsb`) - blocker: not-attempted; fts cannot see a Swedish Vollmacht heading; next: page read of the Vollmacht pages from the public IA page images (both are open bub_gb/bsb scans, no loan), ~$1
 - Riksarkivet owner/copy route - blocker: waiting-on the Riksarkivet reply to REQUEST.md; the owner-side copy request is unanswered
 
-## Escalation (R8-KARL3, 6 Oct 2026)
+## Escalation (R8-KARL3, 6 Oct 2026; updated R9-KARL4)
 - [x] siblings: Emperor-Sweden sibling instruments checked (A2P4-KARL page read)
-- [n/a] clear-pages: a single full power with no clear sibling page located
+- [x] clear-pages: German print of the clear sibling, document (a) 12 Apr 1676, located (R9-KARL4, Actes 1680 pp. 102-104); no clear page of (b) itself
 - [n/a] known-keys: plain Latin instrument, no key
-- [ ] print: 27 Actes/Recueil/St Disdier/Dumont scans fts-searched, 0 target hits (12 of R8-KARL3's 14 with a passing control); German 1680 Actes print plenipotentiaries' Vollmachten, Swedish one not seen by fts; page read pending
+- [x] print: 27 Actes/Recueil/St Disdier/Dumont scans fts-searched, 0 target hits; German 1680 Actes page-read (R9-KARL4): the Swedish Vollmacht printed there is the 12 Apr 1676 one (document a), not Nääs 1677
 - [n/a] key-rebuild: no cipher key involved
 - [x] image-check: title page and page read via A2P4-KARL, Hathi H4
 - [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL); dk.upce.cz 401 not retried (auth gate, not a transient)
-Verdict: keep going: 1 internal gap; cheapest next: page read of the Vollmacht section in the German 1680 Actes (IA bub_gb_mUtFAAAAcAAJ / 11211619bsb, open scans), ~$1
+Verdict: parked: every remaining gap is outside-blocked (Bakeš texts needs-physical-access; Riksarkivet copy waiting-on REQUEST.md reply); the printed 1676 sibling (document a) is a possible crib once an image of (b) arrives
