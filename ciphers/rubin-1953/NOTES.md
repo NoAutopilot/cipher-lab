@@ -243,3 +243,51 @@ Hosts: cipherfoundation.org 1 (PDF). Subagents 2 (Sonnet, crops only).
 ## Next step (R8-RUBIN3, 6 Oct 2026)
 
 next: the transcription is reconciled against every witness in the FBI file. The remaining doubt is one M glyph (vnie) and one CR-circled position (L2 char 2), and both are settled only by an image of Q5 itself (FBI specimen, not in the released file), so no further transcription pass is useful. Cryptanalytic test: Block C as Morse-like or binary (0/1 as dot/dash or bits, x/'.' as separators) against an English decoder with a matched control of the same length and symbol design, ~$2. Who acts: agent.
+
+## Block C as Morse-like or binary (R9-RUBIN4, LANE LANE-RUN9-account-2, 6 Oct 2026)
+
+Intake gate (05:15 UTC 6 Oct, pasted by the lane): `rubin-1953: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Spec test 3 (`specs/rubin-1953.json`), not run before this session (cheap_test_done had only 1 and 2).
+
+**Pre-registration.** `blockc/PREREG-blockc-morse-binary.md` and `scripts/blockc_test.py` were pushed in f8965389d (05:59 UTC) before
+the scored run. Disclosure: a smoke run of the pipeline (50 shuffles, 20 controls) was made before that push, to check it executes. It
+showed target numbers of the same shape. No encoding, statistic or gate was changed after it.
+
+**Design.** Block C has 136 characters: 31 runs of 0/1 (97 bits) between '.'/'x' separators, with line breaks counted as separators.
+There are k = 74 encodings:
+- Morse in both polarities. Separator roles do not change the letter sequence, so they are not counted separately.
+- Each run read as a binary number, A1Z26, in both polarities.
+- 5-bit Bacon (26 and 24 letters), 5 offsets x 2 polarities.
+- ITA2 letters shift, 5 offsets x 2 polarities x 2 bit orders.
+- 7-bit and 8-bit ASCII bitstreams, every offset x 2 polarities.
+
+The statistic T is the mean log10 4-gram probability from `tools/judge_plaintext.py`'s NgramModel (en corpus), with each undecodable token scored -3.0.
+- The null is 3000 permutations of the 136 characters.
+- The control is 200 English windows, encoded in the same design and cut to the same 31 tokens or 97 bits.
+- Gate: p_shuffle < 0.05/74, T >= the control's p05, control power >= 0.8, and no more than 5% of shuffles reaching the control's p05.
+
+**Result** (`blockc/results.tsv`; `python3 scripts/blockc_test.py --check` exits 0):
+
+| | target | control | shuffle |
+|---|---|---|---|
+| encodings that are tests (control power >= 0.8) | 74/74 FAIL | power 0.995-1.000 on all 74 | 0/3000 reach control p05 on every encoding |
+| best encoding, ITA2 p1 o3 lsb | T -1.477, p 0.0040 (alpha 0.00068) | median -0.823, p05 -1.036 | median -2.168, theta -1.397 |
+| ITA2 p0 o0 lsb | T -1.503, p 0.0063 | p05 -1.029 | theta -1.415 |
+| Morse p0 / p1 | T -2.273 / -2.373 | p05 -0.947 | median -2.43 / -2.38 |
+
+- **No target decode reaches its control's p05, and none clears the Bonferroni threshold.**
+- In Morse, 7 of the 31 runs (lengths 5-7: `10011`, `001011` and the like) are not Morse letters. The letter-only decode is `DWDN?TEK?KYXNTA?...` (p0) and `WDWA?ETR?...` (p1).
+- All 74 target decodes are in `blockc/target_decodes.tsv`.
+- **Reading:** this is a control-backed negative for direct Morse/binary-to-English readings of Block C under these 74 encodings, conditional on the transcription (rule 2: no image of Q5 itself exists in the FBI file).
+- **What it does not test:**
+  - a second layer on top of the Morse or bits, such as a substitution or a key: 31 tokens is far too short for a keyed search with a control that reads;
+  - a language other than English;
+  - a code-number meaning for the runs.
+
+The ITA2/Bacon p-values near 0.004-0.01 do not survive correction across 74 encodings, and those decodes are not English-range.
+
+Hosts: none (offline). Subagents: 0.
+
+## Next step (R9-RUBIN4, 6 Oct 2026)
+
+next: the cheap tests in `specs/rubin-1953.json` are all run (1-3; test 2's print check of Bauer's *Unsolved!* for a published transcription or reading is listed in the spec but its cheap_test_done "2" holds the masc run instead -- check whether the Bauer print check itself was ever run before any further cryptanalysis; ~$1, agent). Block C under a keyed second layer is too short to test with a control that reads.

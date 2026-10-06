@@ -2,6 +2,10 @@
 
 Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
 
+## Block C Morse/binary (R9-RUBIN4, 6 Oct 2026, prose -- not a family_run.py family)
+
+74 pre-registered encodings (blockc/PREREG-blockc-morse-binary.md) of Block C (31 tokens, 97 bits) against English: control power 0.995-1.000 on all 74 (200 English windows, same design and length); target 74/74 FAIL (best ITA2 p1 o3 lsb T=-1.477, p_shuffle 0.0040 vs alpha 0.00068, control p05 -1.036); shuffled Block C reaches control p05 in 0/3000 on every encoding. Control-backed negative for direct Morse/binary-to-English, conditional on the transcription. Untested: a keyed second layer, other languages. blockc/results.tsv.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
