@@ -9754,3 +9754,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:39 | R13-MALS worker | claim malsburg-hessen-1636: three clear-page direct reads (f.12 cifrat cela + L39-43, f.14 foot, f.16 name list), cap 5, box end 14:59 UTC (80% 14:43), for LANE LANE-RUN13-account-2
 2026-10-06 13:41 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 13:41: spawned 1 (LANE-RUN11-account-1 session_01VY6JLgy3WfXhUMpgVLxBbE), queued left 0
 2026-10-06 13:42 | R11-MANTPOOL2 worker | claim: sachsstaatsarchiv-manteuffel-1712 pooled aligner re-run +0518/0521/0526, cap 2.5, box ends 14:32 UTC, for LANE LANE-RUN11-account-4
+2026-10-06 13:42 | R11-SCORPCYC worker | claim scorpion-1991: cycling_homophonic family module + matched control (N=70 K=53, N=180 K=145-155), cap 4, box end 14:57 UTC, for LANE LANE-RUN11-account-4
