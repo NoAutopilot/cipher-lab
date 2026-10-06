@@ -9020,3 +9020,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:56 | R7-SUR2 | claim for LANE LANE-RUN7-account-2: na-suriname-map-1781, Opus blind call on 2-3-sign context tiles (g|l L08:51/L10:30, sigma i/e L11:17 vs L10:66) with F1 control; cap 4.5 USD, box 01:54-02:39 UTC
 2026-10-06 01:56 | R7-OLDFIX | claim: na-oldenbarnevelt-2442-1605 re-cut A/C2 line map + sorter, cap 4, box to 02:54 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:56 | R7-FRA83 worker | claim for LANE LANE-RUN7-account-2: R7-FRA83 sp78-france-1583, cap 1.2, box ends 02:26 UTC; checking whether the /56 /58 /92 /94 Discovery step already ran
+2026-10-06 01:56 | R7-FRA83 worker | done (01:55-01:59 UTC by date -u, brief met): step already run 3 Oct 2026 (CS-BATCH2, TNA-NOTES); no new requests; NOTES.md section added, status open; for LANE LANE-RUN7-account-2
