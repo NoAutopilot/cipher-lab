@@ -1,0 +1,348 @@
+{
+ "pass_A": {
+  "source": "p406_passA.tsv",
+  "units": 71,
+  "cells": 197,
+  "print_span": "sir henry clinton with about six thousand men went on board a fleet of 28 sail of the line to try to relieve lord cornwallis he was forced to surrender on the 19th the very day our fleet sailed we have not heard from sir henry nor of our fleet sir henry and mr digby who is a joint commissioner on their arrival will consider and answer your letters about vermont",
+  "print_words_after_span": "i will willingly give a very good estate in that country and every provincial interest to fix these people in the interest of the crown but 1 doubt this recent event will defeat all your trouble general arnold says pere floquet is an inveterate enemy jacob roue no better and indeed the gros of the boston leaders little better he had no friendly aids from any of the noblesse",
+  "compared_cells": 197,
+  "a_printed_page": 196,
+  "b_gated": 191,
+  "b_share": 0.97,
+  "c_secondary": 183,
+  "control_b": {
+   "seeds": 1000,
+   "mean": 14.48,
+   "p95": 21,
+   "max": 28
+  },
+  "gate_pass": true,
+  "mismatches_b": [
+   "c1:4 2-8 key e / print h",
+   "c1:6 1-12 key o / print n",
+   "c1:14 1-11 key n / print o",
+   "c1:15 1-12 key o / print n",
+   "c1:38 1-12 key o / print n",
+   "c5:3 1-12 key o / print n"
+  ],
+  "apart": [],
+  "cipher_words_on_gap": [],
+  "print_words_on_gap_inside_span": [],
+  "glosses": [
+   {
+    "gloss": "went",
+    "print": "went",
+    "equal": true
+   },
+   {
+    "gloss": "on",
+    "print": "on",
+    "equal": true
+   },
+   {
+    "gloss": "of",
+    "print": "of",
+    "equal": true
+   },
+   {
+    "gloss": "25",
+    "print": "28",
+    "equal": false
+   },
+   {
+    "gloss": "of",
+    "print": "of",
+    "equal": true
+   },
+   {
+    "gloss": "the",
+    "print": "the",
+    "equal": true
+   },
+   {
+    "gloss": "he",
+    "print": "he",
+    "equal": true
+   },
+   {
+    "gloss": "was",
+    "print": "was",
+    "equal": true
+   },
+   {
+    "gloss": "19th",
+    "print": "19th",
+    "equal": true
+   },
+   {
+    "gloss": "the",
+    "print": "the",
+    "equal": true
+   },
+   {
+    "gloss": "very",
+    "print": "very",
+    "equal": true
+   },
+   {
+    "gloss": "we",
+    "print": "we",
+    "equal": true
+   },
+   {
+    "gloss": "have",
+    "print": "have",
+    "equal": true
+   },
+   {
+    "gloss": "not",
+    "print": "not",
+    "equal": true
+   },
+   {
+    "gloss": "nor",
+    "print": "nor",
+    "equal": true
+   },
+   {
+    "gloss": "sr",
+    "print": "sir",
+    "equal": false
+   },
+   {
+    "gloss": "henry",
+    "print": "henry",
+    "equal": true
+   },
+   {
+    "gloss": "and",
+    "print": "and",
+    "equal": true
+   },
+   {
+    "gloss": "mr",
+    "print": "mr",
+    "equal": true
+   },
+   {
+    "gloss": "digby",
+    "print": "digby",
+    "equal": true
+   },
+   {
+    "gloss": "who",
+    "print": "who",
+    "equal": true
+   },
+   {
+    "gloss": "is",
+    "print": "is",
+    "equal": true
+   },
+   {
+    "gloss": "a",
+    "print": "a",
+    "equal": true
+   },
+   {
+    "gloss": "joint",
+    "print": "joint",
+    "equal": true
+   },
+   {
+    "gloss": "commissioners",
+    "print": "commissioner",
+    "equal": false
+   },
+   {
+    "gloss": "and",
+    "print": "and",
+    "equal": true
+   },
+   {
+    "gloss": "your",
+    "print": "your",
+    "equal": true
+   },
+   {
+    "gloss": "about",
+    "print": "about",
+    "equal": true
+   }
+  ],
+  "reading_b": "sir eeory clintno with about six thousand meo WENT ON board a fleet OF 25 sail OF THE line to try to relieve lord cornwallis HE WAS forced to surrender on the 19TH THE VERY day our fleet sailed WE HAVE NOT heard from sir heory NOR of our fleet SR HENRY AND MR DIGBY WHO IS A JOINT COMMISSIONERS on their arrival will consider AND answer YOUR letters ABOUT vermont"
+ },
+ "reconciled": {
+  "source": "p406_reconciled.tsv",
+  "units": 71,
+  "cells": 197,
+  "print_span": "sir henry clinton with about six thousand men went on board a fleet of 28 sail of the line to try to relieve lord cornwallis he was forced to surrender on the 19th the very day our fleet sailed we have not heard from sir henry nor of our fleet sir henry and mr digby who is a joint commissioner on their arrival will consider and answer your letters about vermont",
+  "print_words_after_span": "i will willingly give a very good estate in that country and every provincial interest to fix these people in the interest of the crown but 1 doubt this recent event will defeat all your trouble general arnold says pere floquet is an inveterate enemy jacob roue no better and indeed the gros of the boston leaders little better he had no friendly aids from any of the noblesse",
+  "compared_cells": 197,
+  "a_printed_page": 196,
+  "b_gated": 191,
+  "b_share": 0.97,
+  "c_secondary": 183,
+  "control_b": {
+   "seeds": 1000,
+   "mean": 14.48,
+   "p95": 21,
+   "max": 28
+  },
+  "gate_pass": true,
+  "mismatches_b": [
+   "c1:4 2-8 key e / print h",
+   "c1:6 1-12 key o / print n",
+   "c1:14 1-11 key n / print o",
+   "c1:15 1-12 key o / print n",
+   "c1:38 1-12 key o / print n",
+   "c5:3 1-12 key o / print n"
+  ],
+  "apart": [],
+  "cipher_words_on_gap": [],
+  "print_words_on_gap_inside_span": [],
+  "glosses": [
+   {
+    "gloss": "went",
+    "print": "went",
+    "equal": true
+   },
+   {
+    "gloss": "on",
+    "print": "on",
+    "equal": true
+   },
+   {
+    "gloss": "of",
+    "print": "of",
+    "equal": true
+   },
+   {
+    "gloss": "25",
+    "print": "28",
+    "equal": false
+   },
+   {
+    "gloss": "of",
+    "print": "of",
+    "equal": true
+   },
+   {
+    "gloss": "the",
+    "print": "the",
+    "equal": true
+   },
+   {
+    "gloss": "he",
+    "print": "he",
+    "equal": true
+   },
+   {
+    "gloss": "was",
+    "print": "was",
+    "equal": true
+   },
+   {
+    "gloss": "19th",
+    "print": "19th",
+    "equal": true
+   },
+   {
+    "gloss": "the",
+    "print": "the",
+    "equal": true
+   },
+   {
+    "gloss": "very",
+    "print": "very",
+    "equal": true
+   },
+   {
+    "gloss": "we",
+    "print": "we",
+    "equal": true
+   },
+   {
+    "gloss": "have",
+    "print": "have",
+    "equal": true
+   },
+   {
+    "gloss": "not",
+    "print": "not",
+    "equal": true
+   },
+   {
+    "gloss": "nor",
+    "print": "nor",
+    "equal": true
+   },
+   {
+    "gloss": "sr",
+    "print": "sir",
+    "equal": false
+   },
+   {
+    "gloss": "henry",
+    "print": "henry",
+    "equal": true
+   },
+   {
+    "gloss": "and",
+    "print": "and",
+    "equal": true
+   },
+   {
+    "gloss": "mr",
+    "print": "mr",
+    "equal": true
+   },
+   {
+    "gloss": "digby",
+    "print": "digby",
+    "equal": true
+   },
+   {
+    "gloss": "who",
+    "print": "who",
+    "equal": true
+   },
+   {
+    "gloss": "is",
+    "print": "is",
+    "equal": true
+   },
+   {
+    "gloss": "a",
+    "print": "a",
+    "equal": true
+   },
+   {
+    "gloss": "joint",
+    "print": "joint",
+    "equal": true
+   },
+   {
+    "gloss": "commissioners",
+    "print": "commissioner",
+    "equal": false
+   },
+   {
+    "gloss": "and",
+    "print": "and",
+    "equal": true
+   },
+   {
+    "gloss": "your",
+    "print": "your",
+    "equal": true
+   },
+   {
+    "gloss": "about",
+    "print": "about",
+    "equal": true
+   }
+  ],
+  "reading_b": "sir eeory clintno with about six thousand meo WENT ON board a fleet OF 25 sail OF THE line to try to relieve lord cornwallis HE WAS forced to surrender on the 19TH THE VERY day our fleet sailed WE HAVE NOT heard from sir heory NOR of our fleet SR HENRY AND MR DIGBY WHO IS A JOINT COMMISSIONERS on their arrival will consider AND answer YOUR letters ABOUT vermont"
+ }
+}

@@ -1401,10 +1401,66 @@ unrepaired in `passes/vhs2_3537_print.txt`. Rules fixed in `PREREG_R15-CLIN3537.
   cipher (Image 958) is not compared with the print.
 Requests: archive.org 1 (the djvu text, 200, 1.67 MB). Vision calls 0. Grades: no reading claimed beyond the print; text is the 1871 print.
 
+## R15-CLIN3853 (6 Oct 2026, 18:17-18:3x UTC by date -u, account 2, LANE RUN15): 3853 cipher p.406 checked against the printed f.381 text on the 1778 key
+
+Brief R15-CLIN3853. Pre-registered in `PREREG_R15-CLIN3853.md` (pushed 9cca7e5a5 before the scored run). Script
+`passes/check_3853.py` (imports rows/chars from check_2380_c37.py; output `passes/check_3853.json`, `--check` exit 0). Printed
+text: `passes/p381_print1920.txt` (1920 vol. III doc. (260) p.214, archive.org djvu, one request). AUDIT.md not touched.
+
+**Frames.** H-1649 Image 1056 = B.147 p.406 (page label "406" read; LAC strip "Add. Mss. 21807 (B-147)"): opens in clear "Dear Sir --
+Thanks for the furs, Your Letters & the great pleasure I [have] here in being continued in Your Friendship", then six columns of
+figure pairs; left margin note "...copied pp.381 supra". Image 1057 is a second exposure of p.406, not p.407. **Image 1058 = p.407:
+the cipher continues** (six more columns, glosses "I will willingly give a very good", "and every", "in the Interest", "but I",
+"all your", "is an", "better and indeed the", "little", "he had no", "says"), ending "Oct. 31st 1781. J.R.", "Cypher L. Initialled",
+endorsed "From Genl. Robertson 31st Octr. 81. Recd. 14th May 82". So the cipher letter is two pages; p.406 stops at "about Vermont"
+(double rule and slash) and p.407 carries the rest of the printed text ("I will willingly give ... Noblesse"), by its glosses.
+
+**Crops.** `python3 tools/iiif_lines.py --image img1056.jpg --region 1525,900,1485,2350 --out il1056` wrote 0 crops (as on pp.120-122,
+382-384); columns cut with `passes/cut_2380_p121_122.py IMG_DIR OUT_DIR 1056` (box for Image 1056 added to the tool, optional image
+argument; default SHEAR 0.025, PAD 30), twelve half-column crops (scratchpad, not committed; the box re-derives them from
+`.../69429%2Fc0q52f84tj1f/full/max/0/default.jpg`, 5360x4056).
+
+**Pass and reconciliation.** One blind Sonnet pass (`passes/p406_passA.tsv`, 214 rows: 197 cells + 17 gloss rows; 4 marked ?). The
+worker re-read the uncertain cells and the key-failing ones on native crops (`passes/p406_reconciled.tsv`); no cell changed: c3.18
+9-7 and c6.32 -39 clear (both key-consistent), c1.4 a looped figure that the image does not settle between 2-8 and 2-2 (kept as read, M).
+
+| statistic (gate: (b) share >= 0.80 and (b) count > control max) | p.406 |
+|---|---|
+| cells / glosses | 197 / 17 rows |
+| compared cells (equal-count word pairs) | 197 (every cipher word paired; no cipher word on a gap) |
+| (b) line 1 PERMISION/HONORABLE (gated) | 191 (0.970) |
+| (a) printed 1778 page (not gated) | 196 |
+| (c) (b) + OFICERS (secondary) | 183 |
+| shuffled-plaintext control under (b), 1000 seeds: mean / p95 / max | 14.48 / 21 / 28 |
+| gate | PASS |
+
+The cipher read under (b), unedited, glosses in capitals: "sir eeory clintno with about six thousand meo WENT ON board a fleet OF 25
+sail OF THE line to try to relieve lord cornwallis HE WAS forced to surrender on the 19TH THE VERY day our fleet sailed WE HAVE NOT heard
+from sir heory NOR of our fleet SR HENRY AND MR DIGBY WHO IS A JOINT COMMISSIONERS on their arrival will consider AND answer YOUR letters
+ABOUT vermont".
+
+**Mismatches (6).** Five are line-1 cells 1-11/1-12 (o/n): they fit the printed page's "PERMISSION" (double s), not GAPS9's
+PERMISION variant that 2380 needed -- an observation after the fact, not gated; the (a) count is 196/197. The sixth is c1.4, ambiguous
+on the image (2-2 = h would fit). **Gloss/print conflicts (rule 4, by witness, not settled):** the cipher's clear gloss reads "a fleet
+of 25 sail" (clear on the native crop), the 1920 print of the f.381 decipherment "28"; "Commissioners" (gloss) vs "Commissioner"
+(print); "Sr" vs "Sir" is notation only.
+
+**Text beyond the extract: none on p.406.** Every p.406 cipher word pairs with a printed word, in order, from "Sir Henry Clinton" to
+"about Vermont"; the printed text runs on past p.406 and p.407's glosses place that rest on p.407, which this job did not pass.
+
+**Grades (rule 4), p.406's 197 cells against the print:** S 191 (key-consistent under the gated variant), M 6 (5 line-1 o/n cells that
+fit the printed page instead, 1 ambiguous figure). No H (no period decipherment of these cells was transcribed here; the 1920 print is
+an edition of one). No reading of ours changes: the text was already known from the print; this is a key-consistency check, plus the
+"25"/"28" witness conflict.
+
+Requests: image-uab.canadiana.ca 6 (Images 1054, 1056 at 1400 px; 1056 full/max; 1057 at 1000 px HTTP 500 then 1400 px 200 after a
+pause; 1058 at 1400 px), browser UA + Referer, >= 1.6 s apart; archive.org 1 (1920 vol. III djvu). Vision calls: 1 blind Sonnet pass;
+worker looks at three frames at 1400 px, one six-column contact sheet and two native montages. Status unchanged: partial.
+
 ## Remaining gaps (R15-CLINGAP refresh, 6 Oct 2026)
 Refresh only, 17:2x UTC 6 Oct 2026 (worker R15-CLINGAP, LANE RUN15, account 2): each gap restated from the dated sections GAPS-GAPS12, A2P4-CLINT, R10-CLIN3868/3868B, R10-CLINV/CLINV2, R11-CLIN2380/B/C, R11-CLINV3-5 and R12-CLINVHS; no new reading, no request made. The 1 Oct 2026 section above is superseded.
 Read so far: 20 of 20 items text-known or read at grade H/C -- the 12 named items (3689, 3753, 3784, 3803, 3813 at C from Stevens 1888; 6009, 6012 clear and printed; 2894, 3868, 2380 period decipherments read at H, N0 in AUDIT.md; 3853's f.381 decipherment printed 1920 vol. III doc 260; 4833 and its 22 June 1782 enclosure printed VHS Collections II pp.280-282) and the 8 Discovery siblings (2962, 3004, 4152 printed 1920 vol. III; 3502, 3537, 4216 printed VHS II; 3050, 3077 read at H from B.147 pp.245-246, N0) plus the 26 Oct 1782 note (Carleton 25 Sept 1782, p.102 read at H, GAPS7). Cipher side checked cell by cell on the 1778 Army List key: 2894 all 315 pairs (GAPS2), 3868 all four pages (GAPS8 cols 1-2 + R10: p.382 cols 3-6 97/100, pp.383-384 526/535), 2380 all three pages pp.120-122 (GAPS9 + R11: 224/258, 406/420, 244/254 after the R11-CLINV5/R12 bar fix); partly: 3050/3077 (118/118 opening cells, GAPS12) and the 25 Sept 1782 p.123 copy (32 opening pairs, GAPS7). Witness conflicts (Digby/Darby; the 650 Recruits clause, "I am", move/movements, Chesapeak) are recorded per witness (R10-CLINV, R12-CLINVHS), not gaps. What is left is cipher-side checking, one of which can still add text (3853).
-- 3853 cipher, f.406 (Robertson to Haldimand, 31 Oct 1781, PRO 30/55/33/47) - blocker: not-attempted; the printed f.381 text is a "decoded extract" (Tomokiyo), so the f.406 cipher may carry more than the extract -- the only remaining step that can change text rather than confirm a key; the frame is unconfirmed (about Image 1056 by Tomokiyo's f.1 = Image 1070 anchor arithmetic, GAPS gap 4); next: fetch the frame by the image-uab.canadiana.ca route in images/h1649/manifest.json, confirm the page label, cut column crops (tools/iiif_lines.py --image or passes/cut_cipher_cols.py), PREREG a key-consistency gate against the 1920 doc 260 text with the shuffled-plaintext control used in R10/R11, one blind Sonnet pass + reconciliation, ~$4.5
+- 3853 cipher, p.407 (Robertson to Haldimand, 31 Oct 1781, PRO 30/55/33/47) - blocker: not-attempted; p.406 checked (R15-CLIN3853, 6 Oct 2026: 191/197 cells key-consistent under the gated variant, control max 28; no p.406 text beyond the print); the cipher continues on p.407 (H-1649 Image 1058, seen at 1400 px), whose glosses place the rest of the printed text there ("I will willingly give ... Noblesse"), so p.407 is the one page left that could show text the print omits or alters; next: Image 1058 full/max, columns cut with passes/cut_2380_p121_122.py (add a box), one blind Sonnet pass + reconciliation, extend check_3853.py, ~$4
 - Reel ciphers of the other text-known siblings not checked: 2962, 3004, 3502 (Image 945), 3537 (Image 958), 4152, 4216 (Image 1090), and the rest of 3050/3077 (p.242 cols 4-6, pp.243-244, p.247 cols 3-8) - blocker: not-attempted; key-consistency checks on items whose text is printed or read at H, low value (GAPS11, GAPS12); next: per page, frame fetch + one blind pass + reconciliation, ~$3-4.5 a page, only after the 3853 step
 - Rest of the 25 Sept 1782 p.123 cipher (Image 1205, on disk as images/h1649/img1205_w1600.jpg; only 32 opening pairs checked, GAPS6/GAPS7) - blocker: not-attempted; text read at H from p.102 (218 words), a key check only; it may show the 1782 word-code elements Tomokiyo left blank; next: column crops from the native frame, PREREG, one blind pass + reconciliation, ~$3.5
 - Cipher of the 22 June 1782 letter enclosed in 4833 (Haldimand to Carleton No. 1) - blocker: needs-physical-access; the reel copy B.148 pp.39-40 (Images 1115-1116) is clear, headed "In Cypher" (GAPS10), so the enciphered copy exists only at Kew (PRO 30/55, Discovery digitised=false) or C.O. 5/106 p.361; text known (VHS II pp.280-282), a key check only
@@ -1417,5 +1473,5 @@ Read so far: 20 of 20 items text-known or read at grade H/C -- the 12 named item
 - [x] print: HMC vols 2-3, Stevens 1888, Brymner 1884-89, 1920 vol. III (A2P4-CLINT), VHS Collections II and Walton II (GAPS10-11, R12-CLINVHS), Google Books, JSTOR rows; verifiers VERIFY-CLINTON-* logged N0 for 2894, 3868, 2380, 3050, 3077
 - [n/a] key-rebuild: no key is being extended; the 1778 key reads every checked cell, and the 1782 word-code blanks matter only for the p.123 rest and the Kew 4833 cipher
 - [x] image-check: frames confirmed on the images (Image 759 = p.121, 889/890 = B.147 pp.245/246, 1205 = B.148 p.123, 1115-1116 = B.148 pp.39-40); every key-failing cell in R10/R11 re-read on zoomed crops; Brymner's foliation matches the reel (AX-HMC2, R11-CLIN2380B)
-- [ ] retry: the remaining cipher pages above are not yet passed; planned: the 3853 f.406 pass first (the one step that can add text); the 3537 print check ran (R15-CLIN3537, PASS)
-Verdict: keep going: 3 internal gaps (the 3537 print check ran, R15-CLIN3537, PASS 0.992 vs control max 0.663; its gap line removed, the reel Image 958 folded into the reel-cipher gap); cheapest next: the 3853 f.406 cipher against the printed f.381 extract, the one step that can still add text, ~$4.5; 2 gaps blocked outside (needs-physical-access, Kew/C.O. 5); the 2380 p.122 step named in the 1 Oct Verdict ran (R11-CLIN2380C) and the 3868 verifier ran (R10-CLINV2)
+- [ ] retry: the remaining cipher pages above are not yet passed; the 3853 p.406 pass ran (R15-CLIN3853, PASS 191/197 vs control max 28, no text beyond the print on p.406); planned: 3853 p.407 next (the one step that can still add text); the 3537 print check ran (R15-CLIN3537, PASS)
+Verdict: keep going: 3 internal gaps (R15-CLIN3853, 6 Oct 2026: the 3853 p.406 cipher matches the printed f.381 text cell by cell, 191/197 under the gated variant, control max 28, and stops at "about Vermont"; the cipher continues on p.407, Image 1058); cheapest next: the 3853 p.407 cipher against the rest of the printed text ("I will willingly give ... Noblesse"), one blind pass + reconciliation, ~$4; 2 gaps blocked outside (needs-physical-access, Kew/C.O. 5)
