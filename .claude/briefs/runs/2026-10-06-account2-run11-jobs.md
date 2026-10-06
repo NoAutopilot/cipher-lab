@@ -159,3 +159,19 @@ Bourdeau's sanchez1522 (cite, MIT; sparse clone only that target) for shared sym
 shape-overlap statistic with a control (an unrelated Spanish 1520s cipher alphabet on disk, or shuffled tiles) that can differ.
 Report overlap both ways; no key or reading change. Mark the siblings row [x] with the result; gaps_check.
 
+## Wave 4 (spawned 10:1x UTC 6 Oct). Wave 3 all done (3 D, 2 D- at 1.01x), workers so far 42.82; lane ~46.7. Last wave (cap headroom).
+
+### R11-RJMKEY -- rah-juan-manuel-1521, Tomokiyo's published Juan Manuel letter alphabet -> key TSV -> held-out rerun (cap 4, box 50 min)
+Intake gate: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+The Verdict's cheapest next (R11-RJMSIB): fetch cryptiana.web.fc2.com/code/JuanManuel.png once (descriptive UA), transcribe the table
+into key_tomokiyo_alpha.tsv (source column: Tomokiyo, Cryptiana, URL, fetch date; key = `published`, credited; rule 8), compare sign by
+sign with alphabet.tsv (agreements/conflicts listed by witness, rule 4). Then a PREREG (committed, pushed) for scripts/test1.py's
+held-out branch run with the published table in place of the in-house alphabet, gate unchanged from test 1, plus a shuffled-key control
+that can differ; report both numbers. Note in NOTES.md that a published key means a published decipherment may exist (rule 1 risk) and
+flag for a verifier; do not classify novelty. A PASS licenses no reading change here (verifier first); gaps_check.
+
+### R11-CLINV5 -- verifier, pro3055-clinton-1779 R11-CLIN2380C p.122 (cap 2, box 35 min)
+As R11-CLINV4 did for p.121: PREREG e2861d54e predates the p.122 scoring commit; the gate re-scores (242/252 vs control max 32;
+variants 247); the conflicts (move/movements, Chesapeak/Chesipeak, infavor/o f division, the P.S. lacking the Europe clause) checked
+by eye, recorded by witness. AUDIT.md section + correct any over-claim; touch nothing else.
+
