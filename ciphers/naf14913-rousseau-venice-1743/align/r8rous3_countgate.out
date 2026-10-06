@@ -1,0 +1,19 @@
+# sizes groups [84, 79, 111, 171] slip tokens [57, 52, 72, 102] draws 2000 seed 8
+# known-answer eligible (word >= 3 across slips): [('22', 'de'), ('501', 'et'), ('208', 'se')] ; ineligible: [('279', 'plus'), ('581', 'au'), ('31', 'la_reine'), ('628', 'hongrie'), ('172', 'quils'), ('379', 'interets'), ('781', 'e')]
+KNOWN	22=de	code (3, 3, 5, 7) word (4, 3, 6, 7)	MATCH False	UNIQUE False (codes with word's vector: [])	p_s 0.0000	p_g 0.0000	-	per-pair code/word: p1 3/4 p2 3/3 p3 5/6 p4 7/7
+KNOWN	501=et	code (1, 1, 0, 2) word (0, 1, 0, 2)	MATCH False	UNIQUE False (codes with word's vector: ['5', '312', '521', '564'])	p_s 0.0000	p_g 0.0000	-	per-pair code/word: p1 1/0 p2 1/1 p3 0/0 (0/0 non-discr.) p4 2/2
+KNOWN	208=se	code (0, 1, 4, 0) word (0, 1, 2, 0)	MATCH False	UNIQUE False (codes with word's vector: [])	p_s 0.0000	p_g 0.0000	-	per-pair code/word: p1 0/0 (0/0 non-discr.) p2 1/1 p3 4/2 p4 0/0 (0/0 non-discr.)
+# known-answer recovered 0/3 -> licence NOT MET
+PRIMARY	605=republique	code (2, 1, 2, 2) word (2, 1, 2, 2)	MATCH True	UNIQUE True (codes with word's vector: ['605'])	p_s 0.0360	p_g 0.0340	RECOVERED	per-pair code/word: p1 2/2 p2 1/1 p3 2/2 p4 2/2
+VERDICT	605=republique	NON-INFORMATIVE
+PRIMARY	739=venise	code (1, 1, 1, 1) word (1, 1, 1, 1)	MATCH True	UNIQUE True (codes with word's vector: ['739'])	p_s 0.0845	p_g 0.0785	-	per-pair code/word: p1 1/1 p2 1/1 p3 1/1 p4 1/1
+VERDICT	739=venise	NON-INFORMATIVE
+PRIMARY	52=la	code (4, 1, 4, 3) word (4, 1, 5, 3)	MATCH False	UNIQUE False (codes with word's vector: [])	p_s 0.0000	p_g 0.0000	-	per-pair code/word: p1 4/4 p2 1/1 p3 4/5 p4 3/3
+VERDICT	52=la	FAIL
+# secondary: 20 words with >= 3 tokens; 6 with a unique exact code match; threshold 0.05/6
+sec	506=dans	code (1, 1, 0, 1) word (1, 1, 0, 1)	MATCH True	UNIQUE True (codes with word's vector: ['506'])	p_s 0.0730	p_g 0.0860	-	per-pair code/word: p1 1/1 p2 1/1 p3 0/0 (0/0 non-discr.) p4 1/1
+sec	689=des	code (2, 0, 1, 0) word (2, 0, 1, 0)	MATCH True	UNIQUE True (codes with word's vector: ['689'])	p_s 0.0320	p_g 0.0250	RECOVERED	per-pair code/word: p1 2/2 p2 0/0 (0/0 non-discr.) p3 1/1 p4 0/0 (0/0 non-discr.)
+sec	506=en	code (1, 1, 0, 1) word (1, 1, 0, 1)	MATCH True	UNIQUE True (codes with word's vector: ['506'])	p_s 0.0745	p_g 0.0860	-	per-pair code/word: p1 1/1 p2 1/1 p3 0/0 (0/0 non-discr.) p4 1/1
+sec	605=republique	code (2, 1, 2, 2) word (2, 1, 2, 2)	MATCH True	UNIQUE True (codes with word's vector: ['605'])	p_s 0.0360	p_g 0.0340	RECOVERED	per-pair code/word: p1 2/2 p2 1/1 p3 2/2 p4 2/2
+sec	501=un	code (1, 1, 0, 2) word (1, 1, 0, 2)	MATCH True	UNIQUE True (codes with word's vector: ['501'])	p_s 0.0615	p_g 0.0655	-	per-pair code/word: p1 1/1 p2 1/1 p3 0/0 (0/0 non-discr.) p4 2/2
+sec	739=venise	code (1, 1, 1, 1) word (1, 1, 1, 1)	MATCH True	UNIQUE True (codes with word's vector: ['739'])	p_s 0.0845	p_g 0.0785	-	per-pair code/word: p1 1/1 p2 1/1 p3 1/1 p4 1/1
