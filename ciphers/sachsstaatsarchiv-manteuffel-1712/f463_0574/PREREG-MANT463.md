@@ -1,4 +1,4 @@
-# PREREG-MANT463 (R7-MANT463, 6 Oct 2026, written 01:5x UTC by date -u, LANE LANE-RUN7-account-2, account 2), before any pass was read or any statistic computed
+# PREREG-MANT463 (R7-MANT463, 6 Oct 2026, written 01:40 UTC by date -u, LANE LANE-RUN7-account-2, account 2), before any pass was read or any statistic computed
 
 Leaf unit "0574": SHStA Dresden 10026 Loc. 694/08 ff.463-463v, one letter "Berlin ce 15 Xbre 1712". URL file 0574 (film label 0575,
 sha256 5df616fb...8f26): right page carries "463" and the date at its head, left page blank/clear (f.462v). URL file 0575 (film label
