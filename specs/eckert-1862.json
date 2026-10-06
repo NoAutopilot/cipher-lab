@@ -11,5 +11,6 @@
   "judge": {
     "language": "en"
   },
-  "written": "3 Oct 2026"
+  "written": "3 Oct 2026",
+  "cheap_test_done": {"date": "6 Oct 2026", "by": "NEWT-A-account-1 (account 1, session_01XkZSCGtkqTz1SjaokR9ZcN), 6 Oct 2026 22:4x UTC: transcribed from the folder record, no test re-run, cost ~0", "test": "none: spec carries no cheap_tests_in_order (judge-only stub written by GAPS132, 3 Oct 2026, so the folder's readings have a judge)", "target": "n/a", "control": "n/a", "verdict": "not a breadth item: the target is past breadth (status partial, key.md code-word vocabulary, readings graded per token, verifier work R12A-ECKV2 6 Oct 2026); no first test to run", "source": "specs/eckert-1862.json ciphertext_note; ciphers/eckert-1862/NOTES.md"}
 }

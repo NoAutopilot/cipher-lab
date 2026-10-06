@@ -48,7 +48,7 @@
  "cheap_tests_in_order": [
   "1. judge the committed reading under fr17 and fr (SPEC-FR17, 3 Oct 2026): judge_input.py -> judge_1646.txt"
  ],
- "cheap_test_done": null,
+ "cheap_test_done": {"date": "3 Oct 2026", "by": "SPEC-FR17 (account-4); recorded here by NEWT-A-account-1 (account 1, session_01XkZSCGtkqTz1SjaokR9ZcN), 6 Oct 2026 22:4x UTC: transcribed from the folder record, no test re-run, cost ~0", "test": "1 (judge the committed reading under fr17 and fr)", "target": "judge_1646.txt FAIL fr17 -0.97 (real_p05 -0.88, null_p99 -1.879), fr -0.989 (real_p05 -0.893), N=531", "control": "period-gloss control judge_gloss_1646.txt (the leaf's own interlinear decipherment) FAIL fr17 -0.886 (real_p05 -0.878), fr -0.953 (real_p05 -0.886), N=546", "verdict": "judge cannot decide at this length and register (the genuine gloss also FAILs; rule 3 gloss paragraph); reading stays N0 grade C from the gloss", "source": "ciphers/clair1067-brienne-poland-1646/NOTES.md '## Judge under fr17 and fr (SPEC-FR17 ...)'"},
  "reading": "ciphers/clair1067-brienne-poland-1646/reading_1646.txt (judge input: judge_1646.txt from judge_input.py, letters of the deciphered groups only)",
  "judge": {
   "language": "fr17",

@@ -8,5 +8,6 @@
  "constraints": ["key candidate: fr.3995 no.1 'Chifre avec Madame' (June 1580), keys/key_no1.tsv", "the key instructs even spacing of two-digit units"],
  "cheap_tests_in_order": ["apply key no.1 under 3 segmentations, score vs 200 value-shuffled keys with a power control (PREREG_duchkey1b.md)"],
  "judge": {"language": "fr", "min_word_cover": 0.5, "control_samples": 200},
- "written": "3 Oct 2026, DUCH-KEY1B (account 1 for LANE-A1)"
+ "written": "3 Oct 2026, DUCH-KEY1B (account 1 for LANE-A1)",
+"cheap_test_done": {"date": "3 Oct 2026", "by": "DUCH-KEY1B (account 1 for LANE-A1); recorded here by NEWT-A-account-1 (account 1, session_01XkZSCGtkqTz1SjaokR9ZcN), 6 Oct 2026 22:4x UTC: transcribed from the folder record, no test re-run, cost ~0", "test": "1 (apply key no.1 under 3 segmentations vs 200 value-shuffled keys, with a power control; PREREG_duchkey1b.md)", "target": "f.10r, 37 tokens: key no.1 does not read it above the shuffled keys", "control": "power control 0/20 (the test cannot detect a true key at 37 tokens)", "verdict": "non-test at 37 tokens, not a negative on key no.1; target stays open", "source": "ciphers/fr4712-nevers-duchesse/NOTES.md line 2 and '## DUCH-KEY1B ...'"}
 }

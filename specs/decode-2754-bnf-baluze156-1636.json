@@ -41,5 +41,6 @@
   ],
   "era_note": "no 17th-century French corpus in tools/data (fr16 = Catherine de Medicis letters c.1560-89 and Marguerite de Valois letters to c.1615; fr18 = c.1680-1790 memoirs/gazette). fr16 is chosen as nearest in register (court letters) and era (about 20-70 years before 1636); not era-matched, so a judge verdict here is of reduced reliability (rule 3, pt17->pt18 lesson); building fr17 from 1630s letters is the fix if a candidate ever reaches the judge"
  },
- "written": "3 Oct 2026, GAPS46-decode-2754-bnf-baluze156-1636 (account-4)"
+ "written": "3 Oct 2026, GAPS46-decode-2754-bnf-baluze156-1636 (account-4)",
+  "cheap_test_done": {"date": "3 Oct 2026", "by": "GAPS46 (account-4); recorded here by NEWT-A-account-1 (account 1, session_01XkZSCGtkqTz1SjaokR9ZcN), 6 Oct 2026 22:4x UTC: transcribed from the folder record, no test re-run, cost ~0", "test": "1 (blind homophonic family_run, matched control first, N=138 K=38, fr16)", "target": "not run: CONTROL BELOW GATE (exit 3)", "control": "fr16 at N=138 K=38, seeds 1-3, gate 0.6: 0.147 at 8 restarts, 0.312 at 32, 0.309 at 128 (plateau ~0.31)", "verdict": "too-short at this N (rule 3), not a negative; HYPOTHESES.md rows 3 Oct 2026 07:15-07:18", "source": "ciphers/decode-2754-bnf-baluze156-1636/NOTES.md '## GAPS46 ...'"}
 }

@@ -19,5 +19,6 @@
   "min_word_cover": 0.5,
   "control_samples": 200
  },
- "written": "3 Oct 2026, A1-VILL-HOMO (account 1)"
+ "written": "3 Oct 2026, A1-VILL-HOMO (account 1)",
+  "cheap_test_done": {"date": "3 Oct 2026", "by": "A1-VILL-HOMO (account 1, LANE-A1); recorded here by NEWT-A-account-1 (account 1, session_01XkZSCGtkqTz1SjaokR9ZcN), 6 Oct 2026 22:4x UTC: transcribed from the folder record, no test re-run, cost ~0", "test": "1 (homophonic family_run, every sign/figure an unknown homophone, K as null, N=740 K=53, fr16, profile=target, 8 restarts)", "target": "best anneal -1919.1, judge FAIL fr16 -1.35 (real_p05 -0.873, null_p99 -1.868); shuffled-target floor -2000.4, FAIL -1.404", "control": "fr16 N=740 K=53 target profile: mean recovery 0.764 over 3 seeds (0.981/0.358/0.953), gate 0.6 met", "verdict": "control-backed negative for one-sign-one-letter homophonic over Bourdeau's single transcription pass with K as null (conditional on rule 2); says nothing against figure-pair codes / mixed tables (see A1B-VILL-PAIR section)", "source": "ciphers/fr3993-villeroy-1595/NOTES.md '## Homophonic family_run with K as null (A1-VILL-HOMO ...)'; prereg fr3995/PREREG-VILL-HOMO.md 5b97baef"}
 }

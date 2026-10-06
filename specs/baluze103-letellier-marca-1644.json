@@ -12,5 +12,6 @@
   "language": "fr17",
   "era_note": "fr17 = Richelieu (Avenel III, VI), Peiresc I-II, Chapelain I: French letters 1617-1642, era- and register-matched for a 1644 ministerial letter"
  },
- "written": "6 Oct 2026, R7A-BAL103 (account 1)"
+ "written": "6 Oct 2026, R7A-BAL103 (account 1)",
+  "cheap_test_done": {"date": "6 Oct 2026", "by": "R7A-BAL103, matched synthetic by R8-BAL103 (account 1); recorded here by NEWT-A-account-1 (account 1, session_01XkZSCGtkqTz1SjaokR9ZcN), 6 Oct 2026 22:4x UTC: transcribed from the folder record, no test re-run, cost ~0", "test": "1 (Tomokiyo's published 1644 table applied to a two-pass transcription of f.50r-v, judged with fr17)", "target": "judge fr17 FAIL -1.595 (real_p05 -0.901, null_p99 -1.873, N=669) at R7A; after crop settlement and the f.171r-calibrated c=p change -1.537; per-pass page scores -1.566 / -1.602 vs sign->letter permutation null p99 -1.99 / -1.96", "control": "sibling calibration: the table reads f.171r L1-4 at 0.767 against the f.172r period decipherment (permutation p99 0.311, PASS); matched synthetic (fr17 enciphered with this table + random-sign noise): r=0.15 mean -1.334, r=0.30 mean -1.663 -- f.50 sits at the r~0.25-0.30 band", "verdict": "table plausibly right, transcription ~25-30% sign error (registered rho 0.425, p 0.007); not a key negative; next is the owner's sign sorter on the confusable pairs, not another machine pass", "source": "ciphers/baluze103-letellier-marca-1644/NOTES.md R7A, R7C, R8 sections"}
 }

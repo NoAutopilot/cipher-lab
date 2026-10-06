@@ -4,5 +4,6 @@
   "ciphertext": "ciphers/sachsstaatsarchiv-manteuffel-1712/ciphertext.tsv (as transcribed; f.410 rows GAPS162 3 Oct 2026, two blind passes reconciled)",
   "alphabet": "numeric code groups 1-1056, letters/syllables below ~120, nomenclator above",
   "judge": {"language": "fr18", "letters_min": 40},
-  "note": "judge block written GAPS162 3 Oct 2026: fr18 (Torcy/Villars memoirs, Gazette, early 18th-c. French) matches the reports' language and era; the candidate is the keyed f.410 tokens (first alternative of an M value, U tokens dropped)"
+  "note": "judge block written GAPS162 3 Oct 2026: fr18 (Torcy/Villars memoirs, Gazette, early 18th-c. French) matches the reports' language and era; the candidate is the keyed f.410 tokens (first alternative of an M value, U tokens dropped)",
+  "cheap_test_done": {"date": "6 Oct 2026", "by": "NEWT-A-account-1 (account 1, session_01XkZSCGtkqTz1SjaokR9ZcN), 6 Oct 2026 22:4x UTC: transcribed from the folder record, no test re-run, cost ~0", "test": "none: spec carries no cheap_tests_in_order (judge-only stub written by GAPS162, 3 Oct 2026)", "target": "n/a", "control": "n/a", "verdict": "not a breadth item: the target is past breadth (status partial, Krauske 1893 period key table applied; frame screens and per-leaf gloss gates by LANE-RUN13-account-4, 6 Oct 2026); no first test to run", "source": "specs/sachsstaatsarchiv-manteuffel-1712.json note; ciphers/sachsstaatsarchiv-manteuffel-1712/NOTES.md"}
 }

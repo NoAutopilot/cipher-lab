@@ -36,7 +36,7 @@
  "cheap_tests_in_order": [
   "1. judge the three committed readings under fr17 and fr (SPEC-FR17, 3 Oct 2026): judge_input.py -> judge_f67_C.txt, judge_f86.txt, judge_f88.txt"
  ],
- "cheap_test_done": null,
+ "cheap_test_done": {"date": "3 Oct 2026", "by": "SPEC-FR17 (account-4); recorded here by NEWT-A-account-1 (account 1, session_01XkZSCGtkqTz1SjaokR9ZcN), 6 Oct 2026 22:4x UTC: transcribed from the folder record, no test re-run, cost ~0", "test": "1 (judge the three committed readings under fr17 and fr)", "target": "FAIL fr17: f.67 -0.891 (real_p05 -0.874, N=812), f.86 -1.181 and f.88 -1.267 (real_p05 -0.878, N=387); fr: -0.902, -1.219, -1.253", "control": "period-gloss controls PASS: f.68r clear copy fr17 -0.752 (real_p05 -0.87, N=916), f.87 decipherment fr17 -0.792 (real_p05 -0.873, N=908)", "verdict": "the judge can pass the true text of these leaves, so the FAILs measure the readings' own letter-level noise (M shares); not a key negative -- plaintext is on f.87/f.68r (AUDIT N0)", "source": "ciphers/fr5160-letellier-1653/NOTES.md '## Judge under fr17 and fr (SPEC-FR17 ...)'"},
  "reading": "ciphers/fr5160-letellier-1653/reading_f67_C.txt, reading_f86.txt, reading_f88.txt (judge inputs from judge_input.py: clear words and labels dropped)",
  "judge": {
   "language": "fr17",
