@@ -1214,7 +1214,7 @@ python3 tools/family_run.py ciphers/kaliningrad-2015/families/r15_kal13/spec_s1s
 |---|---|---|---|---|---|---|---|---|
 | 6 Oct 2026 18:04 | columnar_homophonic | N=1066 K=28 restarts=2 corpus=s1s.txt.gz profile=target,widths=2-12,iters=60000,ctrl_widths=7,10,5 | 1-3 | 0.064 (0.060-0.066) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | R15-KAL14 columnar x homophonic ru s1s, conv B |
 
-### R15-KAL14 pre-registration 2 (6 Oct 2026, 18:05 UTC by date -u): metric fix only, before the re-scored run
+### R15-KAL14 pre-registration 2 (6 Oct 2026, 18:04 UTC by date -u, pushed f45c63e1c): metric fix only, before the re-scored run
 
 Run 1 (above) ended CONTROL BELOW GATE, mean 0.064 (seeds 0.066 / 0.066 / 0.060). Diagnosis on synthetic data only (no
 target scoring): seed 1's solver picked the true width 7 by about 500 nats over every other width, and its decode reproduced
@@ -1227,3 +1227,23 @@ recovery is re-scored. Known before this run: seed 1 about 0.79. Seed 3 picked w
 1 and 3 (-3557 vs -3140/-3147), so the mean may still miss the gate. If below gate: "untestable by this instrument at this N
 and budget", stop. If met: the same command with `--shuffle-target 1` beside it, judge on both (reading only on target PASS with
 shuffle FAIL). Label: "R15-KAL14 run 2 (shift-tolerant recovery)".
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 6 Oct 2026 18:08 | columnar_homophonic | N=1066 K=28 restarts=2 corpus=s1s.txt.gz profile=target,widths=2-12,iters=60000,ctrl_widths=7,10,5 | 1-3 | 0.322 (0.083-0.795) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | R15-KAL14 run 2 (shift-tolerant recovery) |
+
+### R15-KAL14 result (6 Oct 2026, 18:00-18:08 UTC; pre-registrations d1ec59488 and f45c63e1c before each scored run)
+
+| run | metric | control seeds 1/2/3 (true widths 7/10/5) | width picked | control mean | gate 0.6 | target |
+|---|---|---|---|---|---|---|
+| 1 | strict per-position | 0.066 / 0.066 / 0.060 | 7 / ? / 10 | 0.064 | no | not run |
+| 2 | best of shifts -12..12 | **0.795** / 0.089 / 0.083 | 7 / ? / 10 | **0.322** | no | not run |
+
+Seed 1 reads (true width found, about 500 nats clear of every other width; decode score -3140 against the truth's -2396, so the
+anneal had not fully converged). Seed 2 (width 10) scored -3557, no width standing out. Seed 3 (true width 5) picked width 10 at
+-3147 over width 5 at -3305, both far above the rest -- the solver saw the period but not the right column order.
+**Verdict by the pre-registered wording: columnar transposition of a homophonic Russian (ru19_lat s1s) substitution is untestable
+by this instrument at N 1066 and this budget (restarts 2, 60000 iters, widths 2-12).** Not a negative on the target; the target and
+its shuffle were never decoded. Conditional on Ernst's transcript and convention B.

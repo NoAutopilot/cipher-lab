@@ -679,3 +679,29 @@ licensed controls, all FAIL beside their shuffles; another code-set choice throu
 (rule 3 third-attempt clause). What remains untried is a different instrument: a transposition design beyond A2-KAL2's unigram test
 (e.g. columnar transposition of a Russian-transliteration substitution, scored by bigram/judge with its own matched control), ~$2 CPU.
 Verdict: keep going (no outside blocker).
+
+## R15-KAL14, columnar transposition of a homophonic Russian substitution, 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run15-jobs.md` "R15-KAL14" (LANE-RUN15-account-2, account 2). CPU only, no hosts,
+no subagents. The R15-KAL13 named step: a different instrument from wordcode. `family_run.py` had no transposition family, so this
+job added `tools/families/columnar_homophonic.py` (offline test `tools/tests/test_columnar_homophonic.py`; listed in
+`family_run.py --help`): irregular columnar transposition (widths 2-12, keyed column order) of a homophonic substitution, solved by
+a joint numpy anneal over column order and key (trigram + -N*KL letter term). Its control is the `homophonic` family's own
+(profile=target, K 27-28) transposed at a seeded width. Since K 28 exceeds the 24-letter ru19_lat alphabet, the substitution
+layer is homophonic, not simple. Corpus ru19_lat s1s (Synodal Bible 1876; era/register mismatch with a 2015 find, as for every
+Russian run here). Convention B (N 1066, K 28).
+
+Pre-registered in HYPOTHESES.md "R15-KAL14" (d1ec59488) before scoring: restarts 2, 60000 iters, seeds 1-3, control widths 7/10/5,
+gate 0.6. Run 1: CONTROL BELOW GATE, mean 0.064. The diagnosis, on synthetic data only, found a metric fault: seed 1 picked the
+true width by about 500 nats, and its decode reads the control's Russian at 0.795 once shifted by 4 positions. A column-order
+rotation displaces the text, and the strict per-position recovery cannot see that. `score_recovery` now takes the best of shifts
+-12..12. Re-scored under pre-registration 2 (f45c63e1c), with the same deterministic decodes: **0.795 / 0.089 / 0.083, mean
+0.322, CONTROL BELOW GATE.** On seed 3 the solver found the period (width 10 for a true 5) but not the order. On seed 2 it found
+nothing.
+**Result: untestable by this instrument at N 1066 and this budget**, not a negative. The target and its shuffle were never
+decoded. Status stays `open`; no reading. Rule 10: nothing here is a reading.
+Next step: the same instrument at a larger budget is still a legitimate second attempt (this is its first licensed-metric run).
+Seed 1's decode scored -3140 against the truth's -2396, so the anneal had not converged. Candidates are restarts 6-8 at 150000
+iters on 5 seeds (~$1.5 CPU, about 25 min on 4 cores), or a two-stage instrument that fixes width and column order first from the
+sign-adjacency statistic and then runs the homophonic anneal on the untransposed stream. If the larger budget still misses the
+gate, the third-attempt clause (rule 3) retires this tool for the hypothesis.
