@@ -1700,3 +1700,50 @@ safe sentences in this file stand; the corrected values are candidates for an ap
 against lvn10/control_corrected.tsv, round d reads A7 0.863, B7 0.833 (was 0.813/0.791), still below the 0.90 gate: the [retired]
 marks on both 4610 p3 instruments stand. A different instrument needs the corrected control and a placement of the 26 control
 rows no reader tile aligned to (p3_L25-L30). N-class unchanged (4610 N4). Nothing applied, so no SECOND-OPINIONS-QUEUE.tsv row needs a change.
+
+## Carry-over (R15-LVNV): R15-LVNAPP's 10 applied 4610 p3 control corrections (6 Oct 2026)
+
+Verifier R15-LVNV (account 2, for LANE LANE-RUN15-account-2), 6 Oct 2026, 17:54-18:0x UTC by `date -u`. This session is not
+R15-LVNCTL (which checked the rows) or R15-LVNAPP (which applied them, 2e47b56ca). It decoded nothing beyond `--check` and did not
+edit the ciphertext, the key or any reading. The R15-LVNCTL note above ("Nothing applied") is **superseded** by this section.
+
+**Re-derivation.** `python3 tools/decode_key.py . --check` (decode.json): exit 0, 4610 "C 1097, I 57, M 102, U 289", up to date.
+`--config decode_4610_full.json --check`: exit 0, "tokens 1545: C 1193, H 9, I 54, M 133, U 156", up to date. `lvn10/apply.py --check`
+for rounds a, b, c and d: exit 0 each, `lvnctl-corrected` 10 in each.
+
+**Row match.** Each of the 10 rows in lvn10/corrections_lvnctl.tsv matches its row in lvn10/control_corrected.tsv (old, new, grade). In
+ciphertext_4610.tsv each one sits at its original position with `alt` = `was <old> H`, and the sign and confidence are as applied: p3_L12/12
+126 S, p3_L13/2 185 M, p3_L15/2 35 S, p3_L17/6 31 S, p3_L18/8 87 S, p3_L20/15 161 M, p3_L21/7 32 S, p3_L22/3 82 S, p3_L23/3 61 S,
+p3_L24/15 136 S. No row changed in control_corrected.tsv was left out. The three undecided rows (p3_L12/13, p3_L16/10, p3_L25/4) are
+unchanged, as R15-LVNCTL said they should be.
+
+**Spot check on the image.** The WVO PDF was re-fetched once (resources.huygens.knaw.nl, HTTP 200). p3 was rendered with
+`pdftoppm -png -r 300 -f 3 -l 3`; its sha1 a41b5df838e49cefb71e30cdfbe0803f3947d591 matches. Crops were cut with
+`python3 lvn10/eyecrops.py p-3.png eye` (2x context crops; not committed), and this verifier read them by eye, with no subagents:
+- p3_L15/2 (85->35): the first digit has the open, flat-topped 3. The next token on the same line (85) has a closed-loop 8. Concur: 35.
+- p3_L22/3 (32->82): the first digit has the same closed loop as the "8" that opens the crop. The "39" later on the same line has the flat-topped 3. Concur: 82.
+- p3_L24/15 (130->136): the last digit has the looped, descending 6. It is not a small round 0, and it differs from the 5 in the
+  "125" just before it. Concur: 136.
+
+**Counts (full-key token files, recomputed here).** 4610 C+H 1202/1545 (C 1193, H 9; was 1204), M 133 (was 131), I 54 (was 55),
+U 156 (was 155). 4611 905/1393 and 4616 246/276 are unchanged. Three letters: **2353 of 3214 (73.2%)**. Four letters: **2353 of
+4047 (58.1%)** (was 2355, 58.2%). The outward figure "about 58%" holds.
+
+| state | 4610 C/H | M | I | U | 4610/4611/4616 C/H | four letters |
+|---|---|---|---|---|---|---|
+| R13-LVNV2 audited | 1204 | 131 | 55 | 155 | 2355/3214 (73.3%) | 2355/4047 (58.2%) |
+| committed after R15-LVNAPP (this audit) | 1202 | 133 | 54 | 156 | 2353/3214 (73.2%) | 2353/4047 (58.1%) |
+
+**Over-claim check.** None found. The eight S rows take the key's grade for their value, as decode_key does; that is the tool's behaviour,
+already noted in NOTES.md "R15-LVNAPP". The two M rows are 185, which is not in key.tsv (now U), and 161, which reads "landgraf" (M).
+None of the changed rows was raised above S. The p3 control gates were not re-scored as a licence, and both [retired] marks stand. The
+five word changes (negotia, fondement, lacourt, sieur, gaspar, on p3 L17-L23) are all inside 4610 p3. None of them is in a safe sentence,
+the depth sentence (p1_L02 and p1_L07) or PROMPT-chatgpt.md's quoted passages; checked by grep.
+
+**Depth, status.json and SO queue.** D2 holds: the depth sentence is unchanged and still reads. `tools/depth_check.py` runs clean.
+status.json results[60] keeps depth_pct 62.6 on the DEPTH-REGRADE basis ("C 2512 of 4012"). A current-state clause has been added to its
+depth_note. SO-LODEWIJK-1573-74's notes column gets one clause pointing here. SO-LODEWIJK-5797 is not affected, because 5797 did not change.
+
+**N-class.** Unchanged, because the evidence does not move it: the change is a transcription correction to ten p3 tokens, and no
+searched-for phrase or prior print is affected. The classes stand at 4610/4611/4616 N4 (no prior decipherment located) and 4612 N3. Key
+source: ours (key_full, aligned from the period decipherment sheets). Requests: resources.huygens.knaw.nl 1 (the 4610 PDF). No subagents.

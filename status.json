@@ -2641,7 +2641,7 @@
       },
       "depth_sentence": "WVO 4610 opens 'il fault que on pardonne' in connection with a dispatch sent by messenger 'ce lundy', and later speaks of 'la rechute'.",
       "depth_check": "key aligned from the period decipherments of WVO 4613 and 4615 (C); key_full v3 0 regressions on those controls",
-      "depth_note": "C 2512 of 4012 audited (v2 files: 2112 of 2940 non-null for 4610/4611/4616 = 72%)",
+      "depth_note": "C 2512 of 4012 audited (v2 files: 2112 of 2940 non-null for 4610/4611/4616 = 72%) | 6 Oct 2026 (R15-LVNV, after R15-LVNAPP): full-key token files now 2353 C/H of 3214 for 4610/4611/4616 (73.2%), 2353 of 4047 over four letters (58.1%); depth_pct stays on the DEPTH-REGRADE basis; AUDIT.md \"Carry-over (R15-LVNV)\"",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
       "decode_status": "Partially decrypted"
