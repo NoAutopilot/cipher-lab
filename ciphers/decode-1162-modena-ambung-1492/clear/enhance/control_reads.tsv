@@ -1,0 +1,6 @@
+id	page	line	reference	readA	confA	readB	confB	A_right	B_right	note
+C1	1	13	forcia	forzia	probable	forzia	probable	0	0	both reads agree on z where the reconciled transcription has c
+C2	1	17	conditioni	conditione	probable	condictioni	probable	0	0	reads disagree with each other and with the reference
+C3	2	1	pensiero	pensiero	probable	pensiero	probable	1	1	
+C4	1	15	consc~ia	consci~a	probable	conscia~	probable	1	1	same letters, mark placed differently (marks stripped for scoring)
+C5	1	20	debito	dbito	probable	dbito?	doubtful	0	0	both read the looped d without the e the reference expands; right under a normalisation decided after the reads, not before

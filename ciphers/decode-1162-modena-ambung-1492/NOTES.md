@@ -3,6 +3,7 @@
 Status: partial
 (VERIFY-MOD1162, 3 Oct 2026: AUDIT.md -- plaintext of the cipher runs N0, period gloss on the leaf and DECODE doc 3593; the 1168-key finding re-derives and its control holds.)
 (MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
+(DEC1162-ENHANCE, 7 Oct 2026: 22 word crops enhanced, `clear/enhance/`; blind-read known-answer control 2/5 per read against a 4/5 gate, so untested-by-this-tool, no word changed, F19 month still open.)
 (D1-DEC1162F, 6 Oct 2026: focus sheet of the 22 unsettled clear-text words for a person's read built, `clear/focus/`, not published; no reading changed.)
 (R10-DEC1162, 6 Oct 2026: clear text of both pages transcribed from native crops, `clear/clear_text.tsv`, 42 lines, 41 doubtful words; no cipher reading changed.)
 (MOD1162B, 3 Oct 2026: 8 of 19 uncertain signs settled at native resolution, G unchanged, fresh-seed control PASS; tokens C 33, S 12, M 24, I 5, U 3; g/q/sigma split still open.)
@@ -656,3 +657,30 @@ word crop, boxed line, text now, blind pass A and B, crop note, transcribed line
 seed 1162) checked boxed on their line images (`check_contact.png`), all on their word; all 22 tiles viewed, 4 re-placed once.
 Not published; handed to the account-3 orchestrator by ROOM flag. The 7 unmarked doubts counted by R10-DEC1162 are not on
 the sheet (their words were never recorded). Requests: none (crops on disk).
+
+## DEC1162-ENHANCE, 6-7 Oct 2026 (image enhancement of the 22 split clear-text words; stopped at the control)
+
+Brief: `.claude/briefs/runs/2026-10-06-acct3-dec1162-enhance.md` (the person read of `clear/focus/` withdrawn; settle by image work).
+
+**Enhancement (step 1, done).** `clear/enhance/enhance.py` (run `python3 enhance.py ../focus/boxes.tsv out`): for each focus-sheet box,
+the line band of `images/clear/<crop>.jpg` is greyscaled, background-flattened by a morphological black top-hat (closing = MaxFilter
+then MinFilter, size 31 px), contrast-stretched between the 60th and 99.5th percentiles of the top-hat band, and inverted to dark ink on
+white (`<id>_grey.png`); then Sauvola-binarised (window 41, k 0.34, R 128; `<id>_bin.png`); the whole enhanced line with the word boxed
+in red is `<id>_line.png`. Native resolution, no upscaling; source images only read. Outputs: `clear/enhance/out/` (22 words x 3) and
+`clear/enhance/out_control/` (5 control words, boxes in `clear/enhance/boxes_control.tsv`, placed by eye on ruler views).
+
+**Known-answer control (step 2 gate): FAIL, 2/5 per read, gate 4/5.** Five words of the same hand already settled in
+`clear/clear_text.tsv` (forcia, conditioni, pensiero, consc~ia, debito), two blind Opus reads on the enhanced word, binarised word and
+enhanced line, images only, focus-sheet notation. Scoring rule fixed before the reads: right = same letters after stripping ^ ~ ?.
+Read A 2/5, read B 2/5 (both right on pensiero and consc~ia). Allowing the looped-d abbreviation in "debito" (a convention difference,
+rule 3's PX-BRODEC shape, but decided after seeing the reads) gives 3/5, still under the gate. Per-word table:
+`clear/enhance/control_reads.tsv`. The two reads agreed with each other on 4 of 5 words, including two that miss the reference
+(forzia, dbito): agreement between reads is not accuracy here, so "settle where both reads agree" would not be a safe rule on this hand.
+(C1 forcia/forzia may be a c/z question in the reference itself; not settled here.)
+
+Verdict: **untested-by-this-tool** -- two blind model reads on enhanced crops, at this hand and this crop size, do not pass their own
+known-answer control. No target read was run, no word in `clear/clear_text.tsv` or `clear/doubts_R10B.tsv` changed; F19 (the month on
+p.2 l.6, February or September) stays `febr~?` as before, unsettled by this job. The enhanced crops are on disk for a reader who can
+use them (they could replace the 2x-autocontrast tiles in `clear/focus/focus-sheet.html`). Next step needs a different instrument, not
+a re-tune of this one: a reader of 15th-century Italian chancery hands, or a key-constrained check of the month against the docket
+("27 febb^o", p.1 l.2) and the dating evidence already in this file.
