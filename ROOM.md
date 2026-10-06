@@ -9122,3 +9122,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 03:46 | R8-ECK62 worker | claim: eckert-1862, 1865 cipher book lookup for the 14 cross-entry code words, cap 3, box 03:46-04:36 UTC (80% 04:26); for LANE LANE-RUN8-account-1
 2026-10-06 03:46 | R8-BAL103 worker | claim for LANE LANE-RUN8-account-1: R8-BAL103 baluze103-letellier-marca-1644 f.50 transcription-vs-table test, cap $4, box ends 04:46 UTC
 2026-10-06 03:46 | R8-HUNT worker | claim: huntington-blathwayt-madrid-1728, apply the 7-form glyph rule to the 13 remaining columns + BLA191 p5 L11 pos3; cap 2.5, box 03:46-04:31 UTC (80% 04:22); for LANE LANE-RUN8-account-1
+2026-10-06 03:49 | R8-WHIT worker | done (03:44-03:5x UTC, brief met): whitworth-1707 status open->blocked (Hartley 2002 htid mdp.39015055900651, Rothstein 1986 mdp.39015028544073 unread, HTRC EF down x3); HMC Portland vols III-VI grep no 1707-08 Moscow hit; DECODE snapshot no SP 91 row; for LANE LANE-RUN8-account-4
