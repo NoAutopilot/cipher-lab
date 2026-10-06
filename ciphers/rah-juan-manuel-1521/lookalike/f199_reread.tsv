@@ -1,0 +1,115 @@
+passage	pos	label	conf	second	note
+f199_L01	2	3	M	Z	3 on line
+f199_L01	3	R	M		raised small sign
+f199_L01	5	T	L	9	crossed tt-like
+f199_L01	17	qot	M	qo	q with oit
+f199_L01	18	T	L	9	
+f199_L01	20	b	M		
+f199_L02	12	ap	M	gap	
+f199_L02	16	[vaz]	M	V	vaz flourish
+f199_L02	17	ar	M		
+f199_L03	9	9	L	T	
+f199_L03	16	gag	M	Z	
+f199_L03	17	ag	M		
+f199_L04	2	ott	M	T	
+f199_L04	3	9	M	Q	g shape
+f199_L04	8	9	M	Q	
+f199_L04	10	ott	M	T	
+f199_L04	14	Q	L	9	g with bar
+f199_L04	20	ott	M	T	
+f199_L04	22	Q	L	9	
+f199_L05	9	Hb	M	B	
+f199_L06	8	sep	M	Z	
+f199_L06	9	ep	M		
+f199_L06	11	noly	M	nol	
+f199_L06	14	Q	M	K	q with cross
+f199_L06	18	3	M	Z	
+f199_L06	20	Tri	H	V	triangle
+f199_L06	21	Hb	L	B	
+f199_L06	22	Hb	L	B	
+f199_L07	1	[pesa mi q del Rey dya drectado d pasar vn mal tpo q doblo]	L		
+f199_L08	1	[porq yo soy testigo q es vn mal pasar (c. y soy no hizo mal]	M		
+f199_L09	1	[d Sr ortega. reco q se de tener buenos cuentos]	L		
+f199_L09	2	~	L		
+f199_L09	3	[ortega. rec o q se de tener buenos cuentos]	L		
+f199_L09	8	W	M	~	
+f199_L10	1	[dir.]	M	[dix.]	
+f199_L10	2	E	M	A	
+f199_L10	3	V	L	~	
+f199_L10	8	[pezo el pastor en vazquillo tengo pu~]	M		
+f199_L11	1	[mal consejo. al virglo dya herho el otro cesar vn tempestad]	L		
+f199_L12	1	F	H		
+f199_L12	2	V	M	~	
+f199_L12	3	D	L	9	
+f199_L12	4	Hb	L	B	
+f199_L12	5	T	M	9	
+f199_L12	6	9	L	Q	
+f199_L12	7	Q	L	K	
+f199_L12	8	R	M		
+f199_L12	9	Z	L	3	
+f199_L12	11	R	M		
+f199_L12	12	kal	M		
+f199_L12	13	R	M		
+f199_L12	14	A	L	E	
+f199_L12	15	burkus	H		
+f199_L12	18	R	M		
+f199_L12	20	R	M		
+f199_L13	7	T	L	9	
+f199_L13	8	A	L	E	
+f199_L13	9	cb	L		
+f199_L13	10	A	L	E	
+f199_L13	14	njn	L		
+f199_L13	15	X	L		
+f199_L13	19	biz	M		
+f199_L13	21	A	L	E	
+f199_L13	22	gel	M		
+f199_L13	23	teng	M		
+f199_L14	9	gob	M		
+f199_L14	10	Z	L	3	
+f199_L14	13	biz	L		
+f199_L14	16	cb	L	gel	
+f199_L14	17	teng	L	A	
+f199_L14	21	njn	M		
+f199_L14	22	X	M		
+f199_L14	23	9	M	Q	
+f199_L14	24	Z	M	3	
+f199_L15	4	3	L	Z	
+f199_L15	8	Hb	L	B	
+f199_L16	1	[segun lo q ha tardado el finquito q se me hazeen biar]	M		
+f199_L17	1	[rzeo q pmerzo benga. estaza el Rey en España. co y ydoyes]	M		
+f199_L18	1	[vm. lo mande daz. d don diego co d don pedro myghos]	M		
+f199_L19	1	[c mee en bred el traslado. y suplicole q no se le olvide]	M		
+f199_L20	11	kus	M		
+f199_L20	14	ge	L	~	
+f199_L20	15	ste	L		
+f199_L20	16	vi	L		
+f199_L20	17	dias	M		
+f199_L21	5	9	L	Q	
+f199_L21	8	Z	L	fur	
+f199_L21	9	ur	L		
+f199_L21	20	ott	M	T	
+f199_L22	9	ng	L	ug	
+f199_L22	10	9	L	Q	
+f199_L22	13	ott	L	T	
+f199_L22	14	[plazeme dello. a vng]	M		
+f199_L23	1	[reco q seza]	M	R	
+f199_L23	2	eo	M		
+f199_L23	3	q	M		
+f199_L23	4	seza	M		
+f199_L23	8	ott	M	T	
+f199_L23	11	lva	L	~	
+f199_L23	13	ra	M		
+f199_L23	15	aq	L	ag	
+f199_L23	19	qof	M	gof	
+f199_L24	7	kus	M		
+f199_L24	9	dg	M	D	
+f199_L24	10	9	L	D	
+f199_L25	3	cly	L	cry	
+f199_L25	9	ott	M	T	
+f199_L25	14	kork	M	vor	
+f199_L26	4	cb	M		
+f199_L26	6	Jom	M	Z	
+f199_L26	7	imp	L		
+f199_L26	10	loz	M	log	
+f199_L26	17	T	M	9	
+f199_L26	21	K	M	F	

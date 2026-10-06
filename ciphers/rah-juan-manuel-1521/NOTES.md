@@ -384,3 +384,65 @@ Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.
 - [x] image-check: R9528 and R9529 full-size images fetched 4 Oct 2026 (sha1 in images/manifest.json), crops and overlays checked
 - [ ] retry: planned step: the reconciliation pass on the split symbol tokens (~$3) while the owner's sort (ASKS 138) is pending; the held-out gate reruns on the settled labels
 Verdict: keep going: 2 internal gaps; the alphabet gap waits on ASKS 138; cheapest next: reconciliation pass on the 88 + 114 split symbol tokens ~$3
+
+## Look-alike pass on the split tokens (R11-RJMLA, 6 Oct 2026, 09:18-09:2x UTC)
+Brief: .claude/briefs/runs/2026-10-06-account2-run11-jobs.md job R11-RJMLA. Opus worker, two Sonnet subagent re-reads (one per
+page). Material: one DECODE browser login, 3 requests to de-crypt.org (record page 9528 + full-size R9528 P2 and R9529 P2; sha1s
+match images/manifest.json). Images and windows in the scratchpad only. Rule fixed before the re-reads: lookalike/PREREG.md
+(pushed 3c0e96b6c).
+
+Crops (pasted; the JM-ALPHA commands, same counts):
+```
+$ python3 tools/iiif_lines.py --image IMG_R9528_I44887_P2.jpg --region 1860,200,1620,2200 --out <scratch>/crops194 --prefix f194 --follow-slope 300 --slope-margin 22 --debug
+  wrote 31 crops (pitch 62)
+$ python3 tools/iiif_lines.py --image IMG_R9529_I44892_P2.jpg --region 1860,180,1620,2200 --out <scratch>/crops199 --prefix f199 --follow-slope 300 --distance 48 --slope-margin 22 --debug
+  wrote 27 crops (pitch 68)
+$ python3 scripts/lookalike_tiles.py            # test1.py's alignment rebuilt: tiles = every reader-split '~'
+  f194 tiles 88 signs 528 ; f199 tiles 114 signs 351
+$ python3 tools/lookalike_pass.py windows --tiles lookalike/<p>_tiles.tsv --passc lookalike/<p>_passC.tsv --manifest <crops>/manifest.json --crop-pattern "{line}.jpg" --desc lookalike/desc.tsv ...
+  f194: 88 windows, 15 montages ; f199: 114 windows, 19 montages (label hidden, candidates alphabetical)
+$ python3 tools/lookalike_pass.py reconcile --tiles ... --reread lookalike/<p>_reread.tsv --out lookalike/<p>_passD.tsv --alt ... --focus lookalike/<p>_focus.tsv
+  f194 {"signs": 528, "flagged": 88, "relabelled": 65, "unsettled": 21, "residual": 0.04}
+  f199 {"signs": 351, "flagged": 114, "relabelled": 66, "unsettled": 48, "residual": 0.137}
+```
+Re-read confidence: f.194 H 2 / M 66 / L 20; f.199 H 3 / M 65 / L 46.
+
+| page | tiles | both readers had a token, settled 2-of-3 (A / B won) | unsettled | one reader only (other side empty), settled | unsettled | residual unsettled / all tokens |
+|---|---|---|---|---|---|---|
+| f.194 | 88 | 45 (32 / 13) | 7 | 22 | 14 | 21 / 528 = 0.040 |
+| f.199 | 114 | 33 (15 / 18) | 17 | 33 | 31 | 48 / 351 = 0.137 |
+
+What these numbers are: agreement among three machine readers, not reader error and not true error (no BENCHMARK-TX row for this
+hand; LESSONS.md "Look-alike pass"). The 55 "one reader only" settlements are weaker still: 24 + 35 tiles offered the re-reader a
+single candidate, so a firm answer there says the re-reader found a sign at about that place, not that it chose between shapes.
+The label inventory is not settled (f.199 pass B's own ?1/?2 mapped here to Hb/Tri; f.199 pass A and B not tied to f.194's labels),
+which is the case tools/lookalike_pass.py says it must not settle: passD is a pointer, not a transcription. Nothing downstream was
+changed: ciphertext_*_reconciled.tsv, alphabet.tsv, results_test1.json and the held-out gate (witness/gate_alpha.txt) stand;
+test 1 was not rerun (it waits on ASKS 138). No reading or key changed, so no decode --check was needed beyond
+`scripts/test1.py --check` and `scripts/lookalike_tiles.py --check` (both up to date).
+
+Focus for the owner: the 69 unsettled tiles are in lookalike/f194_focus.tsv and lookalike/f199_focus.tsv (tile ids passage.pos).
+The 39 of them that carry a symbol candidate and map to a distinct sorter box were appended to sorter/focus.tsv (now 21 RUN1-SEG
+rows + 39; `python3 scripts/lookalike_focus.py --crops <crops194> --crops <crops199>`). The box is the nearest glyph_atlas box to
+the token's even-spacing x estimate, so each question says "about here" and names the readers' labels. The published sorter
+(ASKS 138) predates these rows: a rebuild (sorter/build.sh, which needs R9501 P1 too and a second DECODE login) and a
+sorter_preflight PASS are the account-3 orchestrator's, flagged in ROOM.md; not rebuilt or published here.
+Files: lookalike/ (PREREG.md, confusion.tsv, desc.tsv, <p>_passC.tsv, <p>_tiles.tsv, <p>_reread.tsv, <p>_passD.tsv,
+<p>_passD_alt.tsv, <p>_focus.tsv), scripts/lookalike_tiles.py, scripts/lookalike_focus.py.
+
+## Remaining gaps (R11-RJMLA, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S) and R9528 f.194 (249 code words, 161 matched by the gloss); letter alphabet 13 signs valued in sample (6 at C), 0 at S; CSP Spain II abstracts located for 16 of 28 records (csp_date_map.tsv)
+- Letter alphabet held out - blocker: waiting-on: ASKS.md row 138 (the owner's sort of the published sorter, HUMAN-TX-ASKS row 16); test 1 FAILed its gate at reader error 0.42 with an unstable label set; after the sort: sign_sorter_apply.py, a label-anchored f.199 pass, then rerun scripts/test1.py's held-out branch with the gate unchanged, ~$4
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, err_true unmeasured) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set; the look-alike pass, R11-RJMLA, left 21 + 48 tiles unsettled at 2-of-3, 39 of them now in sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- R9501 (no period decipherment in DECODE) passes and key test (job 2b) - blocker: not-attempted; next: two blind passes on R9501 f.34 with the same inventory, decode with alphabet.tsv + Tomokiyo, judge, ~$5 (only worth running after the held-out gate passes); the period decipherment is catalogued at Salazar A.23 ff.37-38 (RUN3-RJM2), not online; a reproduction request would make R9501 a key-source item
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, Premise check 2); without it every reading stays a cryptanalytic result
+
+## Escalation (R11-RJMLA, 6 Oct 2026)
+- [ ] siblings: planned step: compare with Sanchez records of equal length (ciphers/rah-salazar-soria-sanchez-1524-28, Bourdeau sanchez1522) for symbol-shape and table fit
+- [x] clear-pages: f.197 read to line 31 and f.201 read whole (single Sonnet pass); f.199's own clear lines identified
+- [x] known-keys: Tomokiyo's nomenclator run on R9528 and R9529 (anchors 161/249 and 44/117 code words)
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out gate FAIL at this transcription error
+- [x] image-check: R9528 and R9529 full-size images re-fetched 6 Oct 2026 (sha1s match), crops and windows checked
+- [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
+Verdict: keep going: 1 internal gap (R9501 passes, gated on the held-out alphabet); the alphabet and transcription gaps wait on ASKS 138; cheapest next: the siblings comparison with the Sanchez records, ~$2

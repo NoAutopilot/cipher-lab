@@ -1,0 +1,89 @@
+passage	pos	label	conf	second	note
+f194_L01	4	og	M	hog	og letters
+f194_L01	5	gtt	L	T	est
+f194_L01	10	R	L		only candidate
+f194_L01	18	d	M	F	looped-ascender d
+f194_L01	19	qo	M		q then o
+f194_L01	20	T	M	9	ott-like crossed tt
+f194_L01	23	Q	L	K	est
+f194_L01	24	gtt	L		est
+f194_L01	25	Z	M	3	tail below line
+f194_L02	7	ott	M	T	o with crossed tt
+f194_L02	11	hog	M	T	h-like then og
+f194_L03	3	qct	M	get	q c t letters
+f194_L04	1	ccu	H	ceu	three c/u strokes
+f194_L04	4	bim	M	im	b visible
+f194_L04	10	Jnt	M	ju	J with nt
+f194_L04	11	t	M		small t
+f194_L04	16	ott	H	T	o + crossed tt
+f194_L04	21	R	M	rag	small raised ro
+f194_L04	22	eag	M		e a g
+f194_L05	14	mng	M	mg	n visible
+f194_L05	17	do	M	cb	d o
+f194_L06	7	Jnm	M	ju	J nm
+f194_L06	8	mp	M		m p
+f194_L06	10	la	M	ta	l a
+f194_L06	11	Jes	M	ju	J es
+f194_L06	16	o	L		est
+f194_L06	21	~	L		est
+f194_L07	10	yaqes	M	yags	q visible
+f194_L08	3	Jnr	M	ju	J nr
+f194_L08	4	x	L		est
+f194_L08	10	~	M		struck-through sign
+f194_L08	11	~	L		est
+f194_L08	15	~	L		est
+f194_L08	19	db	M	cb	d b
+f194_L12	2	d	L	D	est
+f194_L12	4	ob	L	a	est
+f194_L13	13	~	M		struck sign
+f194_L13	14	~	L		est
+f194_L14	8	db	M	cb	d b
+f194_L14	10	im	M	sim	i m
+f194_L15	5	Jnt	M	ju	J nt
+f194_L15	6	t	M		small t
+f194_L15	16	ciy	M	cly	c i y
+f194_L15	17	Jns	M	ius	J ns
+f194_L16	7	y	M	F	y shape
+f194_L16	13	ob	M	W	linked o b
+f194_L17	19	g	M	9	g
+f194_L18	13	K	M	F	cross
+f194_L18	21	K	M	F	cross on circle
+f194_L19	4	rov	M	rue	rov
+f194_L19	8	db	M	cb	d b
+f194_L19	11	K	M	F	cross on circle
+f194_L19	15	9	M	Q	numeral 9
+f194_L19	17	T	L	9	est
+f194_L19	19	ob	M	W	linked
+f194_L20	2	c	L		est
+f194_L20	3	meestzidi	M		long run
+f194_L20	5	vocbott	M		run
+f194_L20	8	tteze	M	[tez deste q mees tz diuese q yo]	run
+f194_L20	9	deete	M		run
+f194_L20	10	q	M		q
+f194_L20	11	meestzivese	M		run
+f194_L20	12	q	M		q
+f194_L20	13	yo	M		yo
+f194_L21	15	cily	L	ciy	est
+f194_L21	17	Jez	M	fez	J ez
+f194_L21	18	Z	M	3	tail below
+f194_L22	13	por	M		por
+f194_L22	19	g	M	Q	g
+f194_L24	1	9	M	Q	numeral 9
+f194_L24	12	sz	M	sef	sz
+f194_L24	13	Z	L	3	est
+f194_L25	4	Jaz	M	ja	J az
+f194_L25	5	3	L	Z	est
+f194_L27	10	8	M	qg	8
+f194_L27	11	g	M		g
+f194_L27	17	im	L	sim	est
+f194_L28	13	cyl	M	ciy	cyl
+f194_L28	18	g	M		g
+f194_L29	1	nog	M	reg	nog
+f194_L29	14	ob	M		ob
+f194_L29	17	ng	M	F	ng
+f194_L29	18	rep	M		rep
+f194_L30	2	E	L	A	est
+f194_L30	4	ob	L	a	est
+f194_L31	5	dott	M	gott	d ott
+f194_L31	6	3	M	Z	3 on line
+f194_L31	8	K	M	F	cross
