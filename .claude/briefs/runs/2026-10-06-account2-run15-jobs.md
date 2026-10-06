@@ -121,3 +121,28 @@ locate it on Internet Archive (advancedsearch + `_djvu.txt`, no login), grep pp.
 and write each printed pair to keys/evelyn_pairs.tsv (number, meaning, page, edition, grade C from the print). Compare with key9119.tsv
 (agree / conflict / extends). Re-run keys/key_test.py only if coverage rises well above 35/93 as the line says; otherwise report the
 coverage and stop. Request counts per host. Report what was found and where it was not found.
+
+## Wave 2b (spawned 17:3x UTC from wave-1 results). Intake gate output (17:3x UTC) pasted per job.
+
+### R15-LVNAPP -- lodewijk-van-nassau-1573-74: apply the 10 verifier-checked 4610 p3 control corrections (Opus; cap 2, box 40 min)
+Intake: `lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md "## R15-LVNCTL": lvn10/control_corrected.tsv lists 10 control values wrong on the 300-dpi image (R14-LVNEYE and R15-LVNCTL agree;
+8 S / 2 M per R15-LVNCTL). Apply exactly those rows to ciphertext_4610.tsv through the folder's existing correction route (a corrections TSV +
+apply script as lvn16/apply.py did, not hand edits), grades as R15-LVNCTL gives them; decode_key.py --check (or the folder's decode) exit 0 with
+the regenerated reading; report token-count changes per grade. Nothing else: no re-score as a licence, [retired] marks stay. Flag in ROOM for a
+verifier to carry the applied state into AUDIT.md (do not edit AUDIT.md's class). Update gap 3 / image-check text and pass gaps_check.
+
+### R15-CLIN3537 -- pro3055-clinton-1779: 3537 key check from the VHS II printed cipher specimen (Opus; cap 2, box 40 min)
+Intake: `pro3055-clinton-1779: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md Remaining gaps (R15-CLINGAP): fetch the archive.org djvu text of collectionsofver02vermuoft once, parse the printed figure pairs of
+pp.338-341, apply the 1778 key (passes/key_2894.tsv, check_2894_key.py logic; reuse, do not rewrite) against the printed translation pp.341-342,
+with a shuffled-plaintext control (PREREG first, the match rule fixed before scoring). OCR of figures is fragile: if the djvu figures are not
+parseable, look at the page images for those pages only (crop, one call per page) or stop and say so. Script only otherwise. Report both
+numbers, any key entries the print adds or contradicts (grade C from the print), request counts. gaps_check passes.
+
+### R15-LAGMI -- la-garde-1577: pre-registered Z_MI test, homophonic vs running key (Opus; cap 2, box 40 min)
+Intake: `la-garde-1577: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md R15-LAGDIG "Next cheapest step": a fresh PREREG with Z_MI as the primary statistic and NEW control seeds (none of R15-LAGDIG's), the
+same designs and error bracket (0, 10, 23, 30%), power gate fixed in advance (AUC >= 0.80 vs both running-key variants at e=0.23 on the new
+seeds). This is a second statistic, not a re-tune of the first: if power fails on the new seeds, log "untestable by this statistic" and stop;
+only if it passes, score the target and report where it falls against both control distributions. Reuse families/ scripts. CPU only.
