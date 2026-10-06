@@ -1,0 +1,81 @@
+# LANE LANE-RUN9-account-1 jobs (account 1) -- 6 Oct 2026 05:5x UTC, lane orchestrator session_014wVbQ4hZf7B7kGezriLmXz
+
+Lane brief: .claude/briefs/default-lane.md (cap 60, box 05:42-15:42 UTC 6 Oct). WORK-QUEUE row LANE-RUN9-account-1: RUN8's own named next
+steps for folders a-h first (STATUS.md "LANE LANE-RUN8-account-1 handoff"), then tools/next_steps.py --hot-only runnable rows (S, M), BnF
+tie-breaker. VERIFY-BACKLOG.tsv (regenerated 05:4x): only fr16142 "counted" rows (status.json already D0/not counted, AUDIT.md lines
+176/200 -- a register-note lag, not a verifier job) and Birago (off limits). Off limits: Birago (incl. ceppo-nevers, nevers-birago,
+birago-*), Armstrong, Debosnys, account-4 private-repo targets (bne20211-ferdinand, destaing-gerard, bowes-walsingham, hamilton-1650).
+outreach/huntington-eckert-followup-2026-10.md is account 3's OUT-CHECK: no worker edits any outreach/ file.
+Every worker: Opus 5.5, one job, then stop. Each solver job first checks that its named step is still undone (NEXT-STEPS.tsv lags the
+folders): if a dated NOTES.md section already ran it, take the folder's own Verdict "cheapest next" instead if it fits this job's cap and
+box and is not a campaign; otherwise stop and report. Caps per CLAUDE.md Usage 6: (subagent passes + 1 reconciliation) x ~1.5 per pass,
+plus ~1.5 Opus session floor.
+Intake gate (tools/intake_gate_check.py, 6 Oct 05:5x UTC): decode-2678-bnf-colbert127-gravel-1665, baluze103-letellier-marca-1644,
+fr16045-pisany-rome-1585, costabili-modena-1491, eckert-1864, eckert-1862, fr3151-seure-1558, colbert26-lathuillerie-1644 all exit 0
+("edition/page or full-text-search citation found within 6 lines").
+
+## Common rules for every job
+- First commands: `git fetch origin && git checkout -B main origin/main`, `python3 tools/room.py --start`, `date -u`, then a ROOM claim
+  line with `tools/room.py` naming your job id, folder, cap and box end time, addressed "for LANE LANE-RUN9-account-1".
+  If --start fails to push from a detached HEAD: `git push origin HEAD:main; git checkout -B main HEAD`.
+- Read the folder's NOTES.md tail (Remaining gaps / Escalation / latest dated sections) and AUDIT.md section list before acting.
+- Good-citizen rule and the CLAUDE.md host table for every request (one request per host at a time, >= 1.5 s apart; stop a host on
+  429/403/challenge). Report request counts per host.
+- Rebase before writing shared files (status.json, PROGRESS.tsv, SECOND-OPINIONS-QUEUE.tsv, JSTOR-QUEUE.tsv, ROOM.md); keep both facts
+  on conflict. Run `python3 tools/file_shrink_guard.py <every file you touched>` before the final push; push with
+  `python3 tools/room.py --push <paths>`.
+- Words: never "solved", "cracked", "novel", "first", "new" for anything this project did; rule 10 wording only. Never name the
+  owner; never print credentials (test presence with `test -n`). Never call AskUserQuestion. No depth/N-class edits (verifier's job).
+- Stop at the cap or at 80% of the box, whichever first; do not start a unit that would cross 80% of either. A stop with work half
+  done writes what was done and what remains into the folder's files.
+- Done: one ROOM line `done (<start>-<end> UTC by date -u, brief met|stopped at cap): <result, commit>` "for LANE
+  LANE-RUN9-account-1", then a five-line final report.
+
+## Solver jobs (solver template .claude/briefs/solver.md; report what was found and where it was not found; do not classify novelty;
+## rule 4 grades; rule 7 --check before push; pre-register any gate (PREREG file pushed before the answer is opened); a partial
+## target keeps Remaining gaps / Escalation and passes `python3 tools/gaps_check.py <target>`; crops via tools/iiif_lines.py pasted
+## before the first subagent call, never a full-page image to a subagent)
+
+### R9-DEC2678 -- decode-2678-bnf-colbert127-gravel-1665: premise fix (Guibert, not Gravel) + sibling Guibert letter search (cap 3, box 50 min)
+R8 read canvases 355-356: the letter is signed Guibert, maitre des courriers d'Allemagne (NOTES.md line ~250). Job: (1) correct the premise
+in the folder's own files -- NOTES.md opening lines (status line untouched), spec/ status.json title/sender text fields if present (not depth/
+N-class), with a dated note; do NOT rename the folder (record "folder name keeps the old catalogue label" in NOTES.md). (2) Run the NOTES.md
+"Next (1)" search: other Guibert letters to Colbert, Jan-Feb 1665 (and Guibert cipher letters generally), in the Melanges de Colbert volumes
+on Gallica (IIIF manifests / canvas labels via tools/gallica_folio.py; neighbouring canvases of vol. 127 and the adjacent volumes), DECODE
+listing (tools/decode_list.py, login-free), Google Books/IA full text for "Guibert" + "courriers" + 1665. Per hit: shelfmark, canvas, in
+cipher or clear, same cipher signs or not (thumbnail-level look only). Log every search with counts. Do not decode.
+
+### R9-BAL103 -- baluze103-letellier-marca-1644: the 9 context rule against calib/, then the f.50 sign sorter (cap 4, box 60 min)
+Verdict cheapest next: "the 9 context rule against calib/, ~$1.5, then the f.50 sign sorter from r8b/focus.tsv". Job: (1) pre-register and
+run the 9 context rule against calib/ (read the NOTES.md section that names it for the exact rule); report the numbers with control.
+(2) Build an owner sign sorter for f.50 from r8b/focus.tsv (tools/sign_sorter.py; tile cut via the folder's existing crops or
+tools/sorter_recut.py), run `python3 tools/sorter_preflight.py <sorter dir>` and paste its output; on PASS, append a ROOM flag "sorter ready
+for account-3 orchestrator to publish (db capability)" with the path. Do not publish it yourself. On FAIL, fix what preflight names once,
+re-run; if it still fails, report.
+
+### R9-PIS -- fr16045-pisany-rome-1585: the four gl275 conflict crop compares (cap 2.5, box 40 min)
+Verdict cheapest next: "the four gl275 conflict crop compares (T56, T31, T63, T05/T57) against the key table cells, ~$1". R8-PIS logged 4
+gloss/key conflicts (rule 4) in HYPOTHESES.md. Job: for each conflict, crop the gloss token and the key-table cell (tools/iiif_lines.py
+--region, pasted), one blind read per crop pair; record per conflict: key cell reads X / gloss reads Y / which side is a transcription
+slip, or a genuine data conflict (rule 4: keep both, grade M where the witness does not match). Update HYPOTHESES.md and key/exceptions
+only where a crop settles a transcription slip; --check; gaps_check.
+
+### R9-COST -- costabili-modena-1491: the q-shape split across R1166 P1/P2/P4 (cap 3.5, box 50 min)
+Verdict cheapest next: "the q-shape split (R8-COST, 6 Oct 2026) across R1166 P1/P2/P4 (~$2; with q and TT at C, P4 coverage would be
+0.846 on the same passes, arithmetic only)". Job: pre-register the split criterion and the C-coverage gate (the existing 0.80 PREREG gate,
+unchanged) before looking at outcomes; apply the split to the existing passes (no new full transcription; crop re-reads only for the q
+tokens, batched per page); recompute C coverage per page with the control the PREREG names; report both numbers. A pass under the gate is
+logged as such, not re-tuned (rule 3 third-attempt clause).
+
+### R9-ECK64 -- eckert-1864: "(9)"-marked Jan-Mar 1864 entries past page 20 of mssEC 19 (cap 5.5, box 75 min)
+Verdict cheapest next: "the (9)-marked Jan-Mar 1864 entries past page 20 of mssEC 19 read from the page images with key-no9.md, ~$4".
+Units: pages of mssEC 19 past p.20 with (9)-marked entries; per page one line-crop batch + one blind read (~1.5/pass), stop before a page
+that would cross 80% of cap or box. Fetch from Huntington CONTENTdm per the host notes (dmGetItemInfo / page images, one at a time,
+>= 1.5 s), manifest images/manifest.json. Decode with the folder's decode_no9.py (or its current decoder) --check; grade per token (H from
+the key book, M uncertain); report entries read, H/M counts before/after, and where OR prints the same telegram (compare, do not overclaim).
+Do not edit outreach/ files.
+
+### R9-ECK62 -- eckert-1862: "Apl"/"Washn" heading forms in the entry splitter, re-split (cap 2, box 35 min)
+Verdict cheapest next: "add the "Apl"/"Washn" heading forms to the entry splitter and re-split (~$1)". Job: add the forms to the folder's
+splitter (or the shared tool if it lives in tools/, with an offline test), re-split, re-run the folder's --check scripts, report entry
+counts before/after and any entries that newly separate or merge. No new key values.
