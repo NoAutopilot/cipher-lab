@@ -9994,3 +9994,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 17:54 | R15-SURALIAS (Opus worker) | claim na-suriname-map-1781: PREREG reader-code alias pass + re-score with R14-SURDP DP; cap 2.5, box 17:53-18:43 UTC, for LANE LANE-RUN15-account-2
 2026-10-06 17:54 | R15-LAGMI | claim: la-garde-1577 pre-registered Z_MI test (homophonic vs running key), cap 2 USD, box 17:53-18:33 UTC, for LANE LANE-RUN15-account-2
 2026-10-06 17:55 | R15-KAL14 | claim kaliningrad-2015: columnar transposition x ru19_lat substitution, control first; cap 2.5 USD, box ends 18:43 UTC 6 Oct; for LANE LANE-RUN15-account-2
+2026-10-06 17:49 | R12A-ECKV (verifier) | claim eckert-1862: Lehigh/Hurlbut grade decision (D1-ECK62S row), cap 2.5 USD, box 17:49-18:34 UTC, for LANE LANE-RUN12-account-1
