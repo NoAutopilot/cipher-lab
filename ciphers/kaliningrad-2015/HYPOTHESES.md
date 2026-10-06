@@ -1055,3 +1055,34 @@ target's real reliability).
 Observation, not a gate: control seeds 1 and 3 read differently between runs A and B (0.211 -> 0.954, 0.852 -> 0.536) with the
 same seed and params, so the wordcode control is not seed-reproducible in this tool (restart randomness not fully pinned by
 `--seed`); both runs met gate 1, so the verdict does not depend on it. One-line suggestion for a tools job, not done here.
+
+## R14-KAL12, wordcode (marked types = codes) at convention B, restarts 6, seeds 1-5 (6 Oct 2026) -- PRE-REGISTRATION
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run14-jobs.md` "R14-KAL12" (LANE-RUN14, account 2). Written and pushed before any
+scored run. CPU only, no hosts, no subagents. The R14-KAL11 named next step "convention B for the same design". Same tool,
+corpus (ru19_lat s1s), params (codes=marked, bnd=x, err=0.05), restarts 6, seeds 5 and gates as R14-KAL11; what changes is the
+transcription convention. Cipher file `families/r14_kal12/cipher_marked_B.txt`, built by `families/r14_kal12/make_cipher_marked.py B`
+from `ciphertext_signs_B.tsv` (the same script's convention-A path rebuilds `r13_kal10/cipher_marked.txt` byte for byte): one run
+per transcript line, N 1066, K 28. Under convention B the apostrophe is its own sign, so the marked (code-capable) types are the
+free-standing apostrophe (`ap^a`) and the three diacritic letters (`e^c`, `o^u`, `u^u`): 4 types, 113 tokens (10.6%); the 24
+unmarked types are letters. Hypothesis: those 4 types are whole-word codes, the rest letters, Russian s1s.
+Tool note: since commit 7f76260e1 (this job) `--shuffle-target` builds the control from the unshuffled target, so commands A and
+B below run the identical control at each seed (offline test (7) in tools/tests/test_wordcode.py).
+
+**Command A** (spec = a scratch copy of `specs/kaliningrad-2015.json` with `judge.corpora` = `tools/data/ru19_lat/s1s.txt.gz`):
+```
+python3 tools/family_run.py <spec copy> --family wordcode --cipher ciphers/kaliningrad-2015/families/r14_kal12/cipher_marked_B.txt \
+  --tokens space --corpus tools/data/ru19_lat/s1s.txt.gz --param codes=marked --param bnd=x --param err=0.05 \
+  --seeds 5 --restarts 6 --gate 0.6 --label "R14-KAL12 wordcode ru s1s, marked = codes, conv. B, restarts 6"
+```
+**Command B** (only if A's control meets gate 1): the same plus `--shuffle-target 1` (the shuffled-target decode beside the target).
+
+**Gates (fixed now, as R14-KAL11).**
+1. Control licenses the target only if mean token accuracy over seeds 1-5 >= 0.6 AND code-class accuracy mean >= 0.3.
+   Otherwise: CONTROL BELOW GATE, a non-test for this design at convention B with this tool at this setting, not a negative.
+2. If licensed: target decode and shuffled-target decode both through the spec's judge (ru19_lat s1s, real_p05 gate of unknown
+   reliability per RUN4-KAL). "Worth a verifier" only if the target PASSes and the shuffled decode FAILs; a shuffled PASS voids
+   the judge for this family (ARM-C1). Anything else: control-backed negative for this design, conditional on Ernst's
+   transcript and convention B, at err 0.05 only (no measured transcription error exists to bracket).
+Statistic check (rule 3, orthogonal-control paragraph): the shuffled target permutes token order, and the judge and anneal
+score both read order, so the shuffled decode can differ from the target's.
