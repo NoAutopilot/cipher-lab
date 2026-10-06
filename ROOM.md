@@ -9227,3 +9227,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 05:37 | R9-KARL4 worker | claim: ra-karlxi-fullmakt-1677, page read of German 1680 Actes Vollmacht section, cap 2.5, box end 06:22 UTC, for LANE LANE-RUN9-account-2
 2026-10-06 05:37 | R9-ROELL6 worker | claim: roell-vandedem-1809, January run of NA 2.01.08 inv. 92 (scans ~100-174), cap 3.5, box end 06:37 UTC, for LANE LANE-RUN9-account-2
 2026-10-06 05:37 | R9-KONS2 | claim konstanz-talleyrand-sieyes-1798: Guyot 1911 full-text search, cap 2, box end 06:07 UTC, for LANE LANE-RUN9-account-2
+2026-10-06 05:38 | R9-LQROWS worker | claim for LANE LANE-RUN9-account-2: three LOCAL-QUEUE.tsv rows (lope-hurtado-1522 viewer-capture, ra-vellingk-1713 page read, ra-celsing x2 catalogue-lookup); cap 1.5, box end 06:05 UTC
