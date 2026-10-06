@@ -1,0 +1,6 @@
+# candidate C-runs (>= 5): ranosfa lfaco retend ilataranossa; distinct 5-grams: 13
+leaf	L	T	hits	ctrl_windows	ctrl_len	ctrl_repeated	ctrl_median	ctrl_q	ctrl_max	T_shuffled_candidate	ctrl_q_shuffled	verdict
+m0272	597	2	anoss nossa	115	3454	no	0	4	4	0	0	FAIL
+m0277	747	0		109	3454	no	1	4	4	2	0	FAIL
+m0278	723	1	nossa	110	3454	no	1	4	4	0	0	FAIL
+# gate: FAIL (any leaf T > control p98.33 and T >= 3)
