@@ -80,34 +80,34 @@ Verdict cheapest next: "add the "Apl"/"Washn" heading forms to the entry splitte
 splitter (or the shared tool if it lives in tools/, with an offline test), re-split, re-run the folder's --check scripts, report entry
 counts before/after and any entries that newly separate or merge. No new key values.
 
-## Wave 2 (written 05:5x UTC; intake gate 6 Oct 05:5x UTC exit 0 for every folder below)
+## Wave 2 (written 05:5x UTC; caps raised 06:0x for the ~3 Opus session floor seen in wave 1; intake gate 6 Oct 05:5x UTC exit 0 for every folder below)
 
-### R9-SEURE -- fr3151-seure-1558: Henri II-era French keys vs the reconciled f81R reads (cap 4, box 55 min)
+### R9-SEURE -- fr3151-seure-1558: Henri II-era French keys vs the reconciled f81R reads (cap 4.5, box 55 min)
 Verdict cheapest next: "test Henri II-era French keys (Tomokiyo, Lasry GL) against the reconciled f81R reads, ~$3". Job: list candidate
 keys on disk or in sources/ (Tomokiyo cryptiana snapshots, Lasry GL tables already transcribed; no new transcription of a key beyond one
 small table), pre-register the fit statistic with a shuffled-key / wrong-era-key control that CAN differ from the target (rule 3 orthogonality
 paragraph), push PREREG, then score. Per key: fit, control, verdict. No decode claimed unless the control is cleared.
 
-### R9-COL26 -- colbert26-lathuillerie-1644: pre-registered per-code control for the anchor leads (cap 2, box 35 min)
+### R9-COL26 -- colbert26-lathuillerie-1644: pre-registered per-code control for the anchor leads (cap 3, box 35 min)
 Verdict cheapest next: "a pre-registered per-code control for the anchor leads 21 = t, 20 = i, 23 = n, 83 = s (R7A-COL26 post hoc) and 12 = c
 (38 of 58 off f.23) on every cleared unit, canvas 62-63 included (R8-COL26), ~$0.5". Script job, no vision: PREREG first, per-code real vs
 shuffle p95 on each cleared unit with per-unit breakdown (CLAUDE.md rule 3 per-unit paragraph); key changes only for codes the PREREG passes.
 
-### R9-HUNT -- huntington-blathwayt-madrid-1728: context-fill of the 18 unkeyed BLA186/191(a) groups (cap 4, box 55 min)
+### R9-HUNT -- huntington-blathwayt-madrid-1728: context-fill of the 18 unkeyed BLA186/191(a) groups (cap 4.5, box 55 min)
 Verdict cheapest next: "context-fill of the 18 unkeyed BLA186/191(a) groups with a BLA185 blanking control, ~$3". Run the BLA185 blanking
 control first (blank known groups, fill from context, measure recovery); only if it clears its pre-registered gate, fill the 18 groups,
 grade M/S per the gate. Report both numbers.
 
-### R9-NOX -- fr16142-noailles-constantinople-1571: text-check the date-only Dupuy matches (cap 2, box 35 min)
+### R9-NOX -- fr16142-noailles-constantinople-1571: text-check the date-only Dupuy matches (cap 3, box 35 min)
 Verdict cheapest next: "text-check the date-only Dupuy matches, ~$1". Read the matched Dupuy texts against the folder's readings/gloss
 for each date-only match; per match: text agrees / differs / not the same letter. Do not touch depth/N-class (status.json D0 stays; a
 verifier sets it). Also note in NOTES.md that PROGRESS.tsv rows 51-52 lack the "not counted" note VERIFY-BACKLOG keys on (one line, do
 not edit PROGRESS.tsv).
 
-### R9-VIEU -- fr3975-vieuville-1587: print_check of the clear phrases (cap 1.5, box 25 min)
+### R9-VIEU -- fr3975-vieuville-1587: print_check of the clear phrases (Sonnet, cap 1.5, box 25 min)
 NOTES next: run tools/print_check.py with the letter's readable clear phrases ("eschevins et maire de ville", "St Aignen", 30 Sept 1587)
 against IA, Google Books (country=US) and OpenAlex. Report hits (search results only, rule 10) in NOTES.md.
 
-### R9-NEVF -- fr3416-nevers-fils-1589: L05 glyph-atlas test re-registered without class 0 (cap 4, box 55 min)
+### R9-NEVF -- fr3416-nevers-fils-1589: L05 glyph-atlas test re-registered without class 0 (cap 4.5, box 55 min)
 Verdict cheapest next: "the L05 glyph-atlas test re-registered without class 0 (pos 5/13/17/20), ~$3". PREREG first (new registration,
 class 0 excluded, same gate otherwise), then run; report real vs control; a FAIL is logged, not re-tuned.
