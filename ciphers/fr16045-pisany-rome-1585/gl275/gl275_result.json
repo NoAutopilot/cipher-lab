@@ -1,0 +1,245 @@
+{
+ "per_line": {
+  "L17": {
+   "sign_tokens": 38,
+   "C": 11
+  },
+  "L18": {
+   "sign_tokens": 39,
+   "C": 2
+  },
+  "L19": {
+   "sign_tokens": 41,
+   "C": 0
+  },
+  "L20": {
+   "sign_tokens": 43,
+   "C": 0
+  }
+ },
+ "C": 13,
+ "M_glossed": 7,
+ "agree_key": 9,
+ "conflicts": [
+  {
+   "line": "L17",
+   "idx": 6,
+   "token": "T56",
+   "key": "faire",
+   "gloss": "m",
+   "grade": "C",
+   "tx86i_token": "T56"
+  },
+  {
+   "line": "L17",
+   "idx": 7,
+   "token": "T31",
+   "key": "m",
+   "gloss": "o",
+   "grade": "C",
+   "tx86i_token": "T31"
+  },
+  {
+   "line": "L17",
+   "idx": 9,
+   "token": "T63",
+   "key": "qui",
+   "gloss": "r",
+   "grade": "C",
+   "tx86i_token": "T63"
+  },
+  {
+   "line": "L17",
+   "idx": -4,
+   "token": "T05",
+   "key": "e",
+   "gloss": "n",
+   "grade": "C",
+   "tx86i_token": "T57"
+  }
+ ],
+ "rows": [
+  {
+   "line": "L17",
+   "idx": 5,
+   "token": "T23",
+   "key": "a",
+   "gloss": "a",
+   "grade": "C",
+   "tx86i_token": "T23"
+  },
+  {
+   "line": "L17",
+   "idx": 6,
+   "token": "T56",
+   "key": "faire",
+   "gloss": "m",
+   "grade": "C",
+   "tx86i_token": "T56"
+  },
+  {
+   "line": "L17",
+   "idx": 7,
+   "token": "T31",
+   "key": "m",
+   "gloss": "o",
+   "grade": "C",
+   "tx86i_token": "T31"
+  },
+  {
+   "line": "L17",
+   "idx": 8,
+   "token": "T46",
+   "key": "u",
+   "gloss": "u",
+   "grade": "C",
+   "tx86i_token": "T46"
+  },
+  {
+   "line": "L17",
+   "idx": 9,
+   "token": "T63",
+   "key": "qui",
+   "gloss": "r",
+   "grade": "C",
+   "tx86i_token": "T63"
+  },
+  {
+   "line": "L17",
+   "idx": 10,
+   "token": "T26",
+   "key": "e",
+   "gloss": "?",
+   "grade": "M",
+   "tx86i_token": "T26"
+  },
+  {
+   "line": "L17",
+   "idx": 11,
+   "token": "T37",
+   "key": "t",
+   "gloss": "t",
+   "grade": "C",
+   "tx86i_token": "T37"
+  },
+  {
+   "line": "L17",
+   "idx": -8,
+   "token": "T26",
+   "key": "e",
+   "gloss": "?",
+   "grade": "M",
+   "tx86i_token": "T26"
+  },
+  {
+   "line": "L17",
+   "idx": -7,
+   "token": "T12",
+   "key": "n",
+   "gloss": "n",
+   "grade": "C",
+   "tx86i_token": "T12"
+  },
+  {
+   "line": "L17",
+   "idx": -6,
+   "token": "T18",
+   "key": "t",
+   "gloss": "t",
+   "grade": "C",
+   "tx86i_token": "T18"
+  },
+  {
+   "line": "L17",
+   "idx": -5,
+   "token": "T41",
+   "key": "e",
+   "gloss": "?",
+   "grade": "M",
+   "tx86i_token": "T41"
+  },
+  {
+   "line": "L17",
+   "idx": -4,
+   "token": "T05",
+   "key": "e",
+   "gloss": "n",
+   "grade": "C",
+   "tx86i_token": "T57"
+  },
+  {
+   "line": "L17",
+   "idx": -3,
+   "token": "T25",
+   "key": "d",
+   "gloss": "d",
+   "grade": "C",
+   "tx86i_token": "T25"
+  },
+  {
+   "line": "L17",
+   "idx": -2,
+   "token": "T01",
+   "key": "a",
+   "gloss": "a",
+   "grade": "C",
+   "tx86i_token": "T01"
+  },
+  {
+   "line": "L18",
+   "idx": 1,
+   "token": "T43",
+   "key": "i",
+   "gloss": "?",
+   "grade": "M",
+   "tx86i_token": "T43"
+  },
+  {
+   "line": "L18",
+   "idx": 2,
+   "token": "T17",
+   "key": "s",
+   "gloss": "s",
+   "grade": "C",
+   "tx86i_token": "T17"
+  },
+  {
+   "line": "L18",
+   "idx": 3,
+   "token": "T01",
+   "key": "a",
+   "gloss": "a",
+   "grade": "C",
+   "tx86i_token": "T01"
+  },
+  {
+   "line": "L20",
+   "idx": 2,
+   "token": "T02",
+   "key": "b",
+   "gloss": "?",
+   "grade": "M",
+   "tx86i_token": "T02"
+  },
+  {
+   "line": "L20",
+   "idx": 3,
+   "token": "T01",
+   "key": "a",
+   "gloss": "?",
+   "grade": "M",
+   "tx86i_token": "T01"
+  },
+  {
+   "line": "L20",
+   "idx": 4,
+   "token": "T49",
+   "key": "s",
+   "gloss": "?",
+   "grade": "M",
+   "tx86i_token": "T49"
+  }
+ ],
+ "sign_tokens_L17_L20": 161,
+ "M_total": 148
+}

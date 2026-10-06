@@ -1,0 +1,23 @@
+s1	385	580	a m o n z (also "a" at ~585 faint)	med
+s1	385	460	a m	med
+s1	500	580	o n	med
+s1	640	665	z	low
+s1	745	765	a	low
+s1	815	835	+	med
+s2	30	50	z (tiny mark above first sign)	low
+s2	125	175	" a (a mark then a)	low
+s2	195	225	+	med
+s2	600	615	+	high
+s2	585	650	t o	med
+s2	690	705	s	low
+s3	0	40	o	low
+s3	60	95	s	low
+s3	650	700	+	high
+s4	385	435	" n t	low
+s4	470	500	+	high
+s4	545	620	" n d	low
+s4	655	675	a	low
+
+Notes: Gloss letters in this line are very sparse and tiny; most are at the s1 start (a m o n z a +) and the s4 end (n t + n d a). The s2/s3 gloss letters that look readable (t o s, a, e, etc.) appear to be at the level of the large signs themselves rather than clearly above them, so I did not count them as gloss. The first s1 row is the clearest: "a m o n z a" then "+". Letters at the bottom edge of every image (c, a, u, o, etc.) were ignored as next-line.
+
+OVERLAP: s1 "+" at ~815-835 appears in s2 at ~195-225 (the "+" above the "a l" sign) with the small "a" before it (s1 ~745-765, s2 ~125-175). The "t o s" run at s2 ~585-705 is the large-sign row repeated in s3 at 0-95 ("o s"); the "+" at s2 ~600 is probably the same mark as the cross on the large "t". The "a" at s4 ~0-40 repeats the s3 end.

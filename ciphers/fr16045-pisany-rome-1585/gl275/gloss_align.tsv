@@ -1,0 +1,22 @@
+line	tok_idx	expect_token	gloss	readerA	readerB	eye	grade	note
+L17	5	T23	a	a	a	a	C	group 'amour' over the five signs after the first '/' (3 y phi y m); gloss ~60-100 px left of its sign throughout
+L17	6	T56	m	m	m	m	C	
+L17	7	T31	o	o	o	o	C	
+L17	8	T46	u	n	n/u	u	C	reader 'n' = u (minim pair); 'amour' fixes it, eye settles
+L17	9	T63	r	z	z	r	C	'z'-shaped r (r rotunda), eye settles; group reads 'amour' (Colbert p.123 'affection amour et')
+L17	10	T26	?	a	a	a-with-two-dots	M	small a with two dots over the a-shaped sign; not settled as e; not a C
+L17	11	T37	t	+	+	t	C	the gloss hand's t is a cross (same form in 'ent' below); 'et' after 'amour'
+L17	-9	/	-	-	-	-	-	slash before the last word of L17
+L17	-8	T26	?	"	a/"	e-with-mark	M	first letter of 'ent...' read as a tick/a by readers; not settled
+L17	-7	T12	n	n	n	n	C	group 'e n t | e n d a' over a e S i w 2 c (c), Colbert 'entendant'
+L17	-6	T18	t	t	t/+	t	C	
+L17	-5	T41	?	?	u	e-with-mark	M	readers split (A tick, B u); not settled
+L17	-4	T05	n	n	n	n	C	
+L17	-3	T25	d	d	d	d	C	
+L17	-2	T01	a	a	a	a	C	
+L18	1	T43	?	+	+	+	M	a cross over lambda; cross = t elsewhere in this hand, but key i and no word frame; not a C
+L18	2	T17	s	p	p	long-s	C	'sa' (Sa Sainteté); readers' p = long s, eye settles
+L18	3	T01	a	a	a	a	C	
+L20	2	T02	?	6	c	b	M	'b a y' over the three signs after 'i y'; readers split on letter 1; 'bay' no word frame (PREREG 4c); key b a s
+L20	3	T01	?	a	a	a	M	
+L20	4	T49	?	y	y	y	M	gloss y vs key s; not C so not a logged conflict

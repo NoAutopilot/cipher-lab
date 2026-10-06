@@ -1,0 +1,23 @@
+s1	385	430	a	low
+s1	435	470	m	low
+s1	440	500	o n	low
+s1	510	535	o	low
+s1	555	580	n	low
+s1	640	670	z	low
+s1	745	770	a	low
+s1	815	835	+	med
+s2	25	50	z	low
+s2	40	60	m	low
+s2	130	150	a	low
+s2	200	230	+	med
+s3	(none clearly legible in the row above the signs; only large + marks near x 650-700 sit at the top edge, likely next-line or a cross mark)	-	-	low
+s4	385	405	a n	low
+s4	415	450	n t	low
+s4	460	505	+	med
+s4	550	595	u n	low
+s4	610	640	d	low
+s4	660	685	a	low
+
+Notes: the gloss row is faint and tiny. In s1 the group at x~385-580 reads roughly "a m o n u" (letters a, m, o, n, u or n, individually low confidence), then "z" near x~655 and "a" near x~755 (the groups at 640-670 and 745-770 are the "z" and "a" in the sequence a m o n z a). A "+" at x~825 in s1. s2 repeats the leading "z" and "m" (probably the small z/m at x~30-60) then "a" at x~140 and "+" at x~210; these match the s1 groups at x~655, 755, 825 (shift about 780 px per segment). s3 has no gloss letters I can read in the row. In s4 the gloss row reads "a n t" then "+" (x~475-500), then "u n" and "d" and "a" (roughly "und a" or "u n d a"), but with low confidence.
+
+OVERLAP: s1 groups at x~640-670 (z), x~745-770 (a) and x~815-835 (+) reappear in s2 at x~25-50 (z), x~130-150 (a) and x~200-230 (+). s3/s4 overlap: the s3 right-edge region has no readable gloss groups, so none are duplicated.

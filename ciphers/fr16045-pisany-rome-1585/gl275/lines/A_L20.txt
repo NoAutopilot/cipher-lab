@@ -1,0 +1,15 @@
+s1	50	110	" "	low
+s1	215	270	6 a y (the "6" above the first gloss letter group, then "a", "y")	low
+s1	215	300	c a y	low
+s1	350	385	" " (two small marks/dots)	low
+s1	580	660	c ? (a small curl/hook with a dot, maybe "c")	low
+s2	0	40	" (tick marks only)	low
+s2	595	720	? " b (a small "b" at about x=705, with dots before it at ~620-650)	med
+s3	0	110	" " b (tick marks, then "b" at about x=85)	med
+s3	380	470	c (a small hook/flourish at about x=400-440, possibly "c" or "~")	low
+s3	850	900	+	med
+s4	0	60	" " b (tick marks, then "b" at about x=85)	med
+s4	230	285	+	med
+s4	700	740	? (partial mark at the top edge, probably belongs to the line above)	low
+Notes: gloss letters on this line are sparse and mostly small marks, with few clear letters. The only clearly legible ones are "c a y" above s1 (x about 215-300), "b" above s2 (x about 705) and s3/s4 (the same "b"), and "+" marks above s3 (x about 870) and s4 (x about 265). The "+" in s4 at x about 265 is probably the same mark as the "X" shaped large sign above s3 at x about 320-340, so it may be a large-sign landmark rather than a gloss.
+OVERLAP: the "b" (s2 x about 705 = s3 x about 85 = s4 x about 85 is a repeat across neighbours, listed in s2, s3 and s4); the "+" at s3 x about 870 and s4 x about 265 are the same mark only if shifted by about 120 px overlap, so likely one mark listed twice.

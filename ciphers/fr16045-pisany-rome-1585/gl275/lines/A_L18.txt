@@ -1,0 +1,26 @@
+s1	20	50	+	high
+s1	190	280	? a (a '+' or cross-like mark at x~140 y~40 is a separate mark; letters: "ρ" like glyph then "a")	low
+s1	190	280	p a	med
+s1	470	545	? ? ? (small raised marks/abbreviation above bracket sign, perhaps "c" with dots)	low
+s1	595	640	c	low
+s1	645	690	c	low
+s1	705	725	c	low
+s1	775	800	c	low
+s1	820	850	c	low
+s2	20	110	c c (dotted)	low
+s2	60	90	a (large-ish gloss "a" at x~60-90, just left of sign)	med
+s2	155	190	a	low
+s2	195	240	c	low
+s2	265	300	c o	low
+s2	310	335	o	low
+s2	500	530	+ (small mark above sign at x~515)	low
+s3	485	560	c c (dotted c, then c)	low
+s3	540	555	c	med
+s3	585	620	c	med
+s3	470	515	a	high
+s3	830	900	a	high
+s4	240	270	a	high
+s4	290	340	+ (cross above the b-like sign)	med
+s4	780	830	?	low
+OVERLAP: s1/s2 shared region (s1 x~780-900 = s2 x~0-120: small c/c marks at s1 x 775-850 appear as s2 x 20-110; "a" at s1 x~800 / s2 x~60-90); s3/s4 shared (s3 x~830-900 "a" = s4 x~210-270 "a"; the cross above in s4 x~290-340 is beyond s3 edge).
+Note: gloss is sparse; mostly tiny dotted "c"-like marks and isolated "a"; reliable letters are only the "a"s (s1 x~250-280, s2 x~60-90, s3 x~470-515, s3/s4 right edge) and the cross marks (s1 x~140, s4 x~300). I did not recover full runs of letters; most small marks are low confidence.

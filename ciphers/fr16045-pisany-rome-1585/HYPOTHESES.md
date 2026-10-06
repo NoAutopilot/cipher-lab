@@ -80,3 +80,8 @@ Pre-registered pis1key/PREREG_pis1key.md; details NOTES.md "key86 T31 relabel an
 Witnesses beside it, not key changes: PIS1-302 f.302v (kp87b) T57 -> n 4 of 6, T47 -> f 2 of 4, T40 (table a) -> s 5 of 7 aligned
 (section "kp87b witness"); PIS1-275V f.275v (kp86f) T31 aligned o 5, e 4, m 3, i 1 (section "kp86f witness"). T57 -> n is also the
 one cell that alone beats arm A on both held-out pages (0.654, 0.658), but the per-cell rule needs the joint gate, which failed.
+
+gl275 witness (R8-PIS, 6 Oct 2026; f.275v L17-L20 later-hand interlinear gloss, gl275/gloss_align.tsv, gl275/gl275_result.json): 13 gloss letters
+aligned 1:1 to signs with no repair, 9 agree with key86. Conflicts, both witnesses kept, none settled: L17 idx 6 T56 key 'faire' / gloss 'm';
+L17 idx 7 T31 key 'm' / gloss 'o' (agrees with kp86f's T31 -> o and the T31 -> T45 relabel); L17 idx 9 T63 key 'qui' / gloss 'r'; L17 idx -4
+T05 key 'e' (tx86i reads T57) / gloss 'n' (agrees with PIS1-302's T57 -> n). Key cell or transcription label: not separable from these lines.

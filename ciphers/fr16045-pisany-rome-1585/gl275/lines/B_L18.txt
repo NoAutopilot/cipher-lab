@@ -1,0 +1,20 @@
+s1	130	155	+	high
+s1	190	280	p a	med
+s1	470	545	? ? ? (small mark/abbreviation-like cluster over a barred sign, perhaps "c c" with tick marks)	low
+s1	590	700	c c c	low
+s1	700	730	c	low
+s1	775	800	c	low
+s1	820	850	c c	low
+s1	745	800	a	low
+s2	20	150	c c c c (with tick marks above)	low
+s2	60	100	a	med
+s2	150	200	c c	low
+s2	200	240	c	low
+s2	270	300	c	low
+s2	315	340	o	low
+s2	500	530	+ (small tick/cross over the large sign)	low
+s3	490	630	c c (two small marks left of "c", then "c" with a second "c"-like letter)	med
+s4	(none visible in the row above the large signs; only strokes of the next-line ascenders at the top)	-	-	-
+OVERLAP: s1 right-edge groups (x 590-850) reappear as s2 left-edge groups (x 20-340); s2's final groups (x~500-530) are not repeated in s3; s3 shows only the c/c group at x 490-630, with no counterpart in s2 or s4.
+
+Reading notes: the gloss in this line is very sparse. The clearest letters are the "+" at s1 x~140 and "p a" at s1 x~200-270. Elsewhere the small marks are mostly tiny c-like or dot-like marks, which could be abbreviation ticks rather than letters. Treat all low-confidence entries as unreliable. The 'a' glyphs at s1 x~460-510 and s2 x~60-100, and the 'a' at s3 x~480-500 and s4 x~215-250, are large cipher signs, not gloss, so they are not listed.

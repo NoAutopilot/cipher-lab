@@ -1,0 +1,14 @@
+segment	x_start_px	x_end_px	letters	confidence
+s1	308	328	b	low
+s1	608	632	+	low
+s1	818	842	+	low
+s2	205	235	+	low
+s2	390	430	d	low
+s2	595	625	+	low
+s3	350	375	?	low
+s4	450	470	?	low
+s4	515	590	? ? ?	low
+
+Notes: s1 308-328 is a "b"-like tick above the "y" sign. s2 390-430 is a "d" or curl-like mark. s4 515-590 is two or three tiny marks like "ä" or "ï" with dots, above "am". s3 shows essentially no gloss row apart from x=350-375. Short strokes at s3 x~170 look like parts of the large signs. The black band at the right of s4 is the page edge.
+
+OVERLAP: The "+" at s1 818-842 is the same mark as s2 205-235; the segment shift is about 610 px. The "+" at s1 608-632 is the same as the partial mark at the left edge of s2. The "+" at s2 595-625 is the same as the mark at the left edge of s3 (x~10). The mark at s3 x~690 is the same as the one at the left edge of s4.

@@ -1,0 +1,11 @@
+segment	x_start_px	x_end_px	letters	confidence
+s1	305	325	b	med
+s2	395	430	?	low
+s4	505	535	a (diacritic dots above)	low
+s4	595	640	?	low
+
+I could not separate a gloss row from the large signs with any confidence. In s1 the only small mark above the large signs is the "b" at about x=315. The marks at the very top edge of s1, s2 and s3 belong to the previous line.
+
+The s2 mark at about x=410 is a "ɔ"- or "b"-like tick. The s4 mark at about x=520 looks like "ä" with two dots, possibly "u". The s4 mark at about x=600-640 is a curl with possible letters "v a e", but those sit at the size of the large signs, so I could not tell them from large signs.
+
+OVERLAP: none confidently listed twice. The s1 "b" at x≈315 does not recur in s2.

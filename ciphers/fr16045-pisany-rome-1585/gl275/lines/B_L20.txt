@@ -1,0 +1,16 @@
+s1	45	110	i n (small marks above, mostly dots)	low
+s1	215	300	c a y	med
+s1	360	385	" " (dots only, no letter)	low
+s1	585	650	? (curl, possibly a small flourish/c)	low
+s2	0	40	. . (dots only)	low
+s2	600	720	b (with dots left of it)	med
+s3	0	60	. . b	low
+s3	45	110	(left part: b with dots, same as s2's b)	low
+s3	840	900	+	low
+s4	0	60	. . b	low
+s4	235	290	+ (small cross over the sign at ~250-270)	med
+s4	840	900	(nothing legible)	low
+
+Note: gloss letters in this line are sparse. The clearest groups are "c a y" above the third and fourth large signs of s1 and the single "b" above s2/s3. Most other marks are dots or flourishes and I could not read them as letters. The first row of "i n" in s1 (x 45-110) is the large-sign "in" and may not be gloss.
+
+OVERLAP: the "b" at s2 x600-720 is the same as "b" at s3 x0-110 and s4 x0-60 (the repeated pattern ". . b" is one group seen in three segments); the "+" at s3 x840-900 is the same as the "+" at s4 x235-290.
