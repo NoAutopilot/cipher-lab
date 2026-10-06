@@ -1,4 +1,4 @@
-# LANE LANE-RUN11-account-2 jobs (account 2) -- 6 Oct 2026 09:2x UTC, lane orchestrator session_01FnWn17w8RS2VEFyTf3Nejv
+# LANE LANE-RUN11-account-2 jobs (account 2) -- 6 Oct 2026 09:1x UTC, lane orchestrator session_01FnWn17w8RS2VEFyTf3Nejv
 
 Lane brief: .claude/briefs/default-lane.md (cap 60, box 09:11-19:11 UTC 6 Oct). WORK-QUEUE row LANE-RUN11-account-2: same tier as
 RUN9/RUN10 -- RUN10's named next steps for this split (STATUS.md "LANE LANE-RUN10-account-2 handoff", "Open for the next i-r lane"),
@@ -35,7 +35,7 @@ dated NOTES.md section may already have run it); if so, stop and report rather t
 - Done: one ROOM line `done (<start>-<end> UTC by date -u, brief met|stopped at cap): <result, commit>` "for LANE LANE-RUN11-account-2",
   then a five-line final report.
 
-## Wave 1 (spawned 09:2x UTC 6 Oct). Intake gate output (09:1x UTC) pasted per job.
+## Wave 1 (spawned 09:1x UTC 6 Oct). Intake gate output (09:1x UTC) pasted per job.
 
 ### R11-JANS26TX -- na-janssens-java-1811, invnr 26 scans 10-11 (second signed copy of dispatch No.1) two-pass transcription vs leaf 188 (cap 5, box 70 min)
 Intake gate: `na-janssens-java-1811: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
