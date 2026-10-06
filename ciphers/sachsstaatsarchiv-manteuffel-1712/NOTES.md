@@ -1379,6 +1379,61 @@ key.tsv unchanged; `tools/decode_key.py . --check` exit 0, 423 tokens, C 202, M 
 flag for AUDIT.md. 714/515 conflicts left in HYPOTHESES.md (rule 4); 714 and 515 do not occur here.
 Requests: www.archiv.sachsen.de 1. Vision: 2 Sonnet subagent calls, worker zooms on 11 areas.
 
+## R12D-MANTSIB-sachsstaatsarchiv-manteuffel-1712 (6 Oct 2026, 15:44-15:58 UTC, LANE LANE-RUN12-account-4, account 4): sibling series Loc. 694/03, /04, /06 opened
+
+Escalation step "siblings" run. Intake gate (lane orchestrator, 15:4x UTC): `partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**Records and frame counts.** Search `https://www.archiv.sachsen.de/cps/suche.html?q=Manteuffel%20Flemming` (browser render; note the
+path is `/cps/`, `/archiv/cps/` is 404 and the bare `suche.html` redirects to sachsen.de's site search). Catalogue records (10026
+Geheimes Kabinett), quoted from the result list, each with a Digitalisat link, "Benutzung im Hauptstaatsarchiv Dresden":
+- Loc. 00694/03, 1706, guid 7c485ed7-d39f-4f28-91c1-6e757ffd37be, Manteuffel at the Danish court with Flemming ("Patkul mehrfach
+  erwähnt ... Manteuffels Heiratspläne, 1706"): **390 frames**.
+- Loc. 00694/04, 1707, guid 0808c9f7-e345-4dbe-9f99-3a8148439fe4, same mission ("Nordlicht in Kopenhagen, 1707.- Patkul, 1707"): **310 frames**.
+- Loc. 00694/06, 1710, guid d01bcc6c-6c0c-4530-adca-87ab324dbc0e, Manteuffel at the Danish court ("Krieg [der] Dänen contra
+  Schweden ... politischen Verhältnisse Dänemarks, 1710"): **538 frames**.
+- Found by the same search, not in the brief: **Loc. 00695/03, 1716, guid 9a79de97-e419-496c-94a0-bb5acb6b61f3, 402 frames**, whose
+  record reads "Enthält auch: Schlüssel zur Korrespondenz Flemmings mit Manteuffel, erschlossen durch Dr. Feldmann in Krakau, 1925
+  [Auflösung des dort verwendeten Zahlencodes]" (https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=9a79de97-e419-496c-94a0-bb5acb6b61f3);
+  and Loc. 00695/01, 1714, guid 3c002212-b764-4b04-9db1-ba9540c86d5a, 496 frames (listed only, not sampled). Not recorded anywhere in
+  the repo before this step (grep "Feldmann", "695/03").
+Frame URLs from `/digitalisate/<guid>/files.json`: `images/loc694-03/`, `loc694-04/`, `loc694-06/`, `loc695-01/`, `loc695-03/frames.tsv`.
+
+**Sample (stride 20 from frame 0010; 63 sibling frames) + 695/03 frames 0001-0006 and 0397-0402 (12).** Auto-cropped to the page and
+read on 2x2/2x3 contact sheets by this worker; three 694/06 frames re-read at native resolution with `tools/iiif_lines.py --image
+<frame> --region ... --lines-per-crop 8` (crops c0290_L01_s1/s2, c0510_L01-03, c0530_L01; scratch, not committed: the folder is at 28 MB
+and every frame re-fetches from frames.tsv). Per-frame result: `sibling_inventory_r12dmantsib.tsv`.
+- 694/03 (20 frames): 1 cipher (0010, 4-digit groups such as 2727, 2766, 1381.13.1013.1755.1016 at sheet scale -- a larger code, or
+  sums; M), 0 glossed, 19 clear (French and German).
+- 694/04 (16 frames): 0 sure, 2 possible (0170 one 4-digit number; 0210 crossed draft), 0 glossed.
+- 694/06 (27 frames): **3 cipher, all 3 glossed** (0290, 0510, 0530), 1 possible (0310). Code range seen on the three: letter range
+  (2-120) plus name codes 104, 130, 160, 184, 187, 227, 233, 289; **the only code above 400 seen is 939**, once, inside 0510's run glossed
+  "l'Administrateur" (44.25.120.13.9.14.939.91.60.66). Frame 0530 (Manteuffel to Flemming, Copenhagen 22 Nov 1710, f.420) is glossed
+  letter by letter over German clear text and per name.
+
+**Same key family (eye check, M, not a gate).** On 0530 the gloss "m a n h a" stands over 31.66.14.47.50, which is Krauske's 31 m,
+66 a, 14 n, 47 h, 50 a (all C in key.tsv); the next code 57 carries "t" where key.tsv has s (one disagreement or my placement); 160
+gl. "Mr Mant." = key 160 Manteuffel C; 187 gl. "le Roi de Suède" = key 187 C; 227 gl. "le Roi" (0530) and "au Roy de Dan." (0290) =
+key 227 le roi de Danemark M. On 0510, 42.10.13.17.39.60 gl. "l'Empire" reads l e m p ? r under key.tsv. So the 1710 Copenhagen letters
+use Krauske's 1712 table or a close ancestor: 694/06 is a second glossed pool for the same key, about 11% cipher-bearing on this
+sample, but its glossed runs sit in the letter range and low name range, not in the 381-1056 nomenclator range where f.410's U codes are.
+
+**Feldmann 1925 key, Loc. 695/03 frame 0004 (f. I).** A one-page slip, "Schlüssel zur Corresp. Flemmings mit Manteuffel, gefunden
+durch Dr. Feldmann in Krakau, 1925" (reading of the slip's note at sheet scale, M): homophone ranges 2-10 nulls ("nichts"), 11-15 a,
+16-18 b, 19-23 c, 24-27 d ... 97-100 x; 107-110 a-d; names 154 les confédérés, 156 le Roi de France, 158 Pologne, 194 (la Russie?),
+198 (Ilgen?). This is a **different system** from Krauske's (11 k, 13 m, 154 Feldmarschall, 156 Hoym, 198 Stanislas): the 1716 code,
+in use in 695/03's own letters (frame 0399: dense runs with codes to about 449, no gloss). It does not license any f.410 code; it is a
+period-of-reading key for the 1716 volume, a separate possible target.
+
+**Result against the goal.** No glossed leaf carrying nomenclator-range codes (>400) was found in the 63 sibling frames; the 49 M /
+23 U codes of f.410 gain no licensing material from this sample. 939 occurs once in a glossed multi-code run (0510), M.
+Requests: www.archiv.sachsen.de 2 browser renders (search) + 1 record page + 5 files.json + 75 full-size frames = 83, 1.6 s apart, no
+429/403. Vision: 13 sheet/crop reads by this worker, no subagent calls. Nothing transcribed; key.tsv, ciphertext.tsv and the reading
+unchanged.
+Next (suggestions, not run): (a) a full stride-5 screen of 694/06 frames 0480-0538 (Oct-Nov 1710 block, where all three glossed
+frames cluster; ~12 frames, ~$1) for glossed runs with codes >400; (b) 0530's letter-by-letter gloss is the strongest per-letter check
+of Krauske's letter range yet found (two passes + reconciliation ~$4.5); (c) Feldmann's 1716 slip (695/03 f. I) transcribed and
+applied to 695/03's 1716 cipher letters -- a separate target, check-solved first.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated R8-MANT530 6 Oct 2026, R8-MANT 6 Oct 2026, GAPS158 3 Oct 2026, GAPS177 3 Oct 2026, GAPS180 3 Oct 2026, GAPS184 3 Oct 2026, GAPS189 3 Oct 2026, GAPS195 3 Oct 2026, GAPS201 3 Oct 2026, GAPS207 4 Oct 2026, RUN3-MANT 4 Oct 2026, RUN4-MANT 4 Oct 2026, RUN4-MANT2 4 Oct 2026, RUN4-MANT3 4 Oct 2026, RUN5-MANT4 4 Oct 2026, RUN5-MANT6 4 Oct 2026, N9-MANT 5 Oct 2026)
 Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 47 of 894 report frames inventoried, 13 carry code groups (694/08 0510, 0511, 0579, 0580; GAPS184: 0513, 0528, 0531, 0534, 0540, 0549, 0558, 0573, 0576); print check closed for now (GAPS180, 3 Oct 2026: NASG, Acta Borussica I, Droysen IV.1, Haake 1902/1926/1939 and Rous 2016 searched with controls, no print of f.410; detail in AUDIT.md)
 - Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; f.467 gloss calibration DONE (GAPS166, 3 Oct 2026: period gloss G -1.417 vs real_p05 -1.033, margin -0.384, so fr18 cannot certify genuine gloss at 128 letters; f.410 windows at that length margin median +0.052; reading ready for a separate verifier); rest of file 0511 DONE (GAPS177, 3 Oct 2026: f.409v + upper f.410, 162 tokens, passes 69% agree on f.409v, C 39 M 21 U 102, keyed 37%; fr18 judge on decode vs 20 shuffled-key decodes: candidate -1.469, rank 16 of 21, non-discriminating; paragraph 8 letter run reads "ma negociation ... la piece s[u]sdite a quo[i] [j]e vise", M, under letters_min)
@@ -1386,14 +1441,14 @@ Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 
 - Loc. 694/08 and /09 ciphered reports, 847 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 98 inventoried (A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026: 13 cipher, 3 possible; GAPS201 3 Oct 2026: 51 more at stride 10 in 0001-0501, 6 possible; the Nov-Dec 1712 block 694/08 0510-0580 is the pool, ~41% of its frames carry code groups, mostly light); the 9 GAPS184 cipher frames classified (GAPS189, 3 Oct 2026: 7 glossed letter-range, 0528 glossed nomenclator-range, 0513 unglossed nomenclator-range; ranking in frame_rank_gaps189.tsv); 6 GAPS201 possibles classified at native (GAPS207, 4 Oct 2026: 5 code-group frames, 0351 none; inventory now 18 cipher frames of 98 seen); 0504-0578 screened (N9-MANT2, 5 Oct 2026: 50 frames, 24 code-bearing + 3 possible; inventory now 148 of 894 seen, 42 code-bearing + 3 possible; n9mant/inventory_0504_0578.tsv); next: the glossed letter-range frames 0540/0576/0291 for a Krauske check against their glosses (~$5 each)
 
 ## Escalation (3 Oct 2026)
-- [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
+- [x] siblings: Loc. 694/03, /04, /06 opened (R12D-MANTSIB, 6 Oct 2026: 390/310/538 frames, frames.tsv each; stride-20 sample 63 frames: 694/06 0290 0510 0530 cipher and glossed, same key family as Krauske (31 66 14 47 50, 160, 187, 227 agree, M), codes seen <=289 plus one 939; no glossed nomenclator-range leaf; Loc. 695/03 (1716) carries Feldmann's 1925 key slip, a different system); next: stride-5 screen of 694/06 0480-0538 (~$1)
 - [x] clear-pages: 694/08 f.468 glosses transcribed and scored against the key, 17/17 vs shuffled-key p99 5 (GAPS154, 3 Oct 2026); gloss hand judged period, not Krauske's (GAPS158, 3 Oct 2026, M)
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
 - [x] print: NASG 1893-98, Acta Borussica I, Droysen IV.1 (AUDIT2-MANT), Haake 1902/1926/1939 and Rous 2016 (GAPS180, 3 Oct 2026): no print of f.410 found; Haake's NO_PAGES titles unread (bag-of-words only where read)
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
 - [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 47 sampled (13 cipher, 3 possible; A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026), 847 to check; GAPS184's 9 cipher frames classified at native (GAPS189, 3 Oct 2026: 8 glossed, 2 nomenclator-range); 0528 transcribed (GAPS195, 3 Oct 2026); 0001-0501 stride 10 screened (GAPS201, 3 Oct 2026: 6 possible, 98 of 894 seen); the 6 possibles classified at native (GAPS207, 4 Oct 2026: 5 cipher, 1 clear; 0501 glossed nomenclator-range); 0501 transcribed and aligned (RUN3-MANT, 4 Oct 2026); 0501/f.409v witnesses settled (RUN4-MANT, 4 Oct 2026); clear-vs-cipher diff of 0501 (RUN4-MANT2, 4 Oct 2026: 2 pairs, M); 0500/0502 diffed (RUN4-MANT3, 4 Oct 2026: 0 pairs); pool duplicate search (N9-MANT, 5 Oct 2026: no copy of f.409/f.410 beyond 0500-0502; 0502/0503 looked at, copy ends at f.409v; 50 frames in 0504-0578 never inventoried, listed in NOTES N9-MANT; the 50 screened, N9-MANT2, 5 Oct 2026: 24 code-bearing + 3 possible, no f.410 P.S. copy; 148 of 894 seen, 746 to check)
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 3 internal gaps; pooled multi-code-run aligner gate PASS, thin (R9-MANTPOOL, 6 Oct 2026: S 24 vs shuffle p95 19, known-answer 5/5; 24 codes at M, U 137 -> 103, reading changed after AUDIT.md); per-code test done (R9-MANTPC, 6 Oct 2026: 7 of 24 per-code PASS, 14 removed, U 103 -> 123, reading changed after AUDIT.md again); verifier on the changed reading DONE (R9-MANTV, 6 Oct 2026: both runs reproduce byte-identically, key.tsv unchanged, N4 and D1 unchanged); frame 0526 done (R10-MANT526, 6 Oct 2026: per-leaf HELD tie, pooled PASS 0.667, 867 spelling split not licensed, 898/939 absent, key unchanged); spelling rule SP done (R10-MANTSCR, 6 Oct 2026: pooled PASS 0.833 vs p95 0.083, 867 M into key.tsv, reading unchanged; no single-code 898/939 in frames 0514-0548); frame 0521 done (R10-MANT521, 6 Oct 2026: per-leaf HELD tie, pooled SP PASS 0.833 unchanged, no licence change, 898/939 absent, key unchanged); frame 0518 done (R10-MANT518, 6 Oct 2026: 210 tokens, no single-code gloss, per-leaf HELD miss 0/38 vs p95 0.079, pooled SP PASS 0.833 unchanged, key unchanged); pooled aligner re-run with 0521/0526/0518 done (R11-MANTPOOL2, 6 Oct 2026: PASS S 27 vs p95 22, per-code 5/27, 451/588 PASS -> KEEP, key notes only, U 123); cheapest next: for 898/939 and the multi-code U codes screen the 694/08 pool beyond 0578 (~$1); orchestrator decision pending on 0501 (tied under normalisation, RUN5-MANT5; not cleared by the pooled run either, N floor)
+Verdict: keep going: 3 internal gaps; siblings opened (R12D-MANTSIB, 6 Oct 2026: 694/06 is a second glossed pool of the same key family, low code range; no >400 glossed leaf in the sample; Feldmann 1925 slip in 695/03 is a different, 1716 key); pooled multi-code-run aligner gate PASS, thin (R9-MANTPOOL, 6 Oct 2026: S 24 vs shuffle p95 19, known-answer 5/5; 24 codes at M, U 137 -> 103, reading changed after AUDIT.md); per-code test done (R9-MANTPC, 6 Oct 2026: 7 of 24 per-code PASS, 14 removed, U 103 -> 123, reading changed after AUDIT.md again); verifier on the changed reading DONE (R9-MANTV, 6 Oct 2026: both runs reproduce byte-identically, key.tsv unchanged, N4 and D1 unchanged); frame 0526 done (R10-MANT526, 6 Oct 2026: per-leaf HELD tie, pooled PASS 0.667, 867 spelling split not licensed, 898/939 absent, key unchanged); spelling rule SP done (R10-MANTSCR, 6 Oct 2026: pooled PASS 0.833 vs p95 0.083, 867 M into key.tsv, reading unchanged; no single-code 898/939 in frames 0514-0548); frame 0521 done (R10-MANT521, 6 Oct 2026: per-leaf HELD tie, pooled SP PASS 0.833 unchanged, no licence change, 898/939 absent, key unchanged); frame 0518 done (R10-MANT518, 6 Oct 2026: 210 tokens, no single-code gloss, per-leaf HELD miss 0/38 vs p95 0.079, pooled SP PASS 0.833 unchanged, key unchanged); pooled aligner re-run with 0521/0526/0518 done (R11-MANTPOOL2, 6 Oct 2026: PASS S 27 vs p95 22, per-code 5/27, 451/588 PASS -> KEEP, key notes only, U 123); cheapest next: for 898/939 and the multi-code U codes screen the 694/08 pool beyond 0578 (~$1); orchestrator decision pending on 0501 (tied under normalisation, RUN5-MANT5; not cleared by the pooled run either, N floor)
 
 ## While waiting (GAPS158, 3 Oct 2026)
 

@@ -1,0 +1,76 @@
+loc	frame	cipher	interlinear_decipherment	code_range_and_glosses	document_or_note
+694/03	0010	y	n	letter-range? 4-digit groups seen (2727, 2766, 1710.2147, 1381.13.1013.1755.1016) -- a different, larger code; sheet scale only	French, Flemming/Manteuffel 1706, f.5
+694/03	0030	n	n		clear text (French/German) at sheet scale
+694/03	0050	n	n		clear text (French/German) at sheet scale
+694/03	0070	n	n		clear text (French/German) at sheet scale
+694/03	0090	n	n		clear text (French/German) at sheet scale
+694/03	0110	n	n		clear text (French/German) at sheet scale
+694/03	0130	n	n		clear text (French/German) at sheet scale
+694/03	0150	n	n		clear text (French/German) at sheet scale
+694/03	0170	n	n		clear text (French/German) at sheet scale
+694/03	0190	n	n		clear text (French/German) at sheet scale
+694/03	0210	n	n		clear text (French/German) at sheet scale
+694/03	0230	n	n		clear text (French/German) at sheet scale
+694/03	0250	n	n		clear text (French/German) at sheet scale
+694/03	0270	n	n		clear text (French/German) at sheet scale
+694/03	0290	n	n		clear text (French/German) at sheet scale
+694/03	0310	n	n		clear text (French/German) at sheet scale
+694/03	0330	n	n		clear text (French/German) at sheet scale
+694/03	0350	n	n		clear text (French/German) at sheet scale
+694/03	0370	n	n		clear text (French/German) at sheet scale
+694/03	0390	n	n		clear text (French/German) at sheet scale
+694/04	0010	n	n		clear text (French/German) at sheet scale
+694/04	0030	n	n		clear text (French/German) at sheet scale
+694/04	0050	n	n		clear text (French/German) at sheet scale
+694/04	0070	n	n		clear text (French/German) at sheet scale
+694/04	0090	n	n		clear text (French/German) at sheet scale
+694/04	0110	n	n		clear text (French/German) at sheet scale
+694/04	0130	n	n		clear text (French/German) at sheet scale
+694/04	0150	n	n		clear text (French/German) at sheet scale
+694/04	0170	possible	n	one number "2727" at a line end, sheet scale; may be a date/sum	Manteuffel 31 May 1707, f.126
+694/04	0190	n	n		clear text (French/German) at sheet scale
+694/04	0210	possible	n	heavy crossings, groups not settled at sheet scale	French draft, f.159
+694/04	0230	n	n		clear text (French/German) at sheet scale
+694/04	0250	n	n		clear text (French/German) at sheet scale
+694/04	0270	n	n		clear text (French/German) at sheet scale
+694/04	0290	n	n		clear text (French/German) at sheet scale
+694/04	0310	n	n		clear text (French/German) at sheet scale
+694/06	0010	n	n		clear text (French/German) at sheet scale
+694/06	0030	n	n		clear text (French/German) at sheet scale
+694/06	0050	n	n		clear text (French/German) at sheet scale
+694/06	0070	n	n		clear text (French/German) at sheet scale
+694/06	0090	n	n		clear text (French/German) at sheet scale
+694/06	0110	n	n		clear text (French/German) at sheet scale
+694/06	0130	n	n		clear text (French/German) at sheet scale
+694/06	0150	n	n		clear text (French/German) at sheet scale
+694/06	0170	n	n		clear text (French/German) at sheet scale
+694/06	0190	n	n		clear text (French/German) at sheet scale
+694/06	0210	n	n		clear text (French/German) at sheet scale
+694/06	0230	n	n		clear text (French/German) at sheet scale
+694/06	0250	n	n		clear text (French/German) at sheet scale
+694/06	0270	n	n		clear text (French/German) at sheet scale
+694/06	0290	y	y	letter range + names: 160 gl. Manteuffel, 227 gl. au Roy de Dan., 289 (unglossed), runs 42.2.90.10.60.25.9 gl. Le Keraine(?), 14 gl. Loewendahl(? placement unsure), 44.50.83.39.21.53.12.2.60 gl. la Schindler; max code seen 289	French letter (incoming, to Manteuffel?), ff.232-233; native crop read
+694/06	0310	possible	n	dense crossed draft; a few numerals, sheet scale only	French draft, f.250
+694/06	0330	n	n		clear text (French/German) at sheet scale
+694/06	0350	n	n		clear text (French/German) at sheet scale
+694/06	0370	n	n		clear text (French/German) at sheet scale
+694/06	0390	n	n		clear text (French/German) at sheet scale
+694/06	0410	n	n		clear text (French/German) at sheet scale
+694/06	0430	n	n		clear text (French/German) at sheet scale
+694/06	0450	n	n		clear text (French/German) at sheet scale
+694/06	0470	n	n		clear text (French/German) at sheet scale
+694/06	0490	n	n		clear text (French/German) at sheet scale
+694/06	0510	y	y	letter range, glossed per run: la Cour de Holstein-Gottorf, la Suede, l'Empire (42.10.13.17.39.60), le B. de Gorz (48.16.26.28.73), l'Administrateur (44.25.120.13.9.14.939.91.60.66 -- 939 the only code >400 seen); max 939	Flemming(?) to Manteuffel, Danzig ..1710, f.415; native crop read
+694/06	0530	y	y	letter range + names, glossed letter by letter (German clear under cipher) and per name: 160 gl. Mr Mant., 227 gl. le Roi, 187 gl. le Roi de Suede, 104.66.120.13 gl. l'administrateur, 184 in a run gl. Dolgorouki, 233 gl. votre Conseil; max code seen 233	Manteuffel to Flemming, Copenhagen 22 Nov 1710, f.420; native crop read
+695/03	0001	n	n		Loc. 695/03 cover/clear
+695/03	0002	n	n		Loc. 695/03 cover/clear
+695/03	0003	n	n		Loc. 695/03 cover/clear
+695/03	0004	n	key	Feldmann 1925 key slip: "Schlüssel zur Corresp. Flemmings mit Manteuffel ... Dr. Feldmann in Krakau, 1925": homophone letter ranges 2-10 nulls, 11-15 a, 16-18 b, 19-23 c ... 97-100 x; 107-110 a-d; 154 les confédérés, 156 le Roi de France, 158 Pologne, 194 la Russie(?), 198 Ilgen(?) (eye, sheet scale, M); differs from Krauske 1712 (11 k, 13 m, 154 Feldmarschall, 156 Hoym, 198 Stanislas)	Loc. 695/03 (1716) f.I
+695/03	0005	n	n		Loc. 695/03 cover/clear
+695/03	0006	n	n		Loc. 695/03 cover/clear
+695/03	0397	n	n		Loc. 695/03 cover/clear
+695/03	0398	n	n		Loc. 695/03 cover/clear
+695/03	0399	y	n	dense numeric runs, codes to ~449 seen (sheet scale); 1716 letter, the code Feldmann's slip reads	Loc. 695/03 1716 letter
+695/03	0400	n	n		Loc. 695/03 cover/clear
+695/03	0401	n	n		Loc. 695/03 cover/clear
+695/03	0402	n	n		Loc. 695/03 cover/clear
