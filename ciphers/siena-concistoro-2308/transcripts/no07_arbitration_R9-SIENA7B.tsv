@@ -1,0 +1,25 @@
+# R9-SIENA7B 6 Oct 2026: worker's own reconciliation of agent J vs pass B splits on L03 and L08, read on autocontrast 2x zooms of the R4796 P1 full-size image (sha1 2b12f15a..., scratchpad only). NOT blind: J's labels were in view. verdict J = image agrees with agent J; amb = cannot decide at this zoom (counted against J for the upper bound).
+line	op	J	B	verdict	note
+L03	sub	V	x	J	gamma/checkmark shape, not a cross
+L03	del	G	-	J	G/circle sign present after m p
+L03	sub	a	QP	J	small a after G
+L03	sub	V	x	J	gamma after 3
+L03	sub	k	h	J	k with looped head
+L03	sub	sl	p	J	long descending stroke after o (legend sl)
+L03	sub	V	4	J	gamma after +
+L03	ins	-	g c p o	J	B ran into the clear word after the run
+L03	sub	9	h	J	9 with tail at run end
+L08	sub	7	4	amb	hooked first sign, 7 or 4
+L08	sub	8o	8	J	circle on stem over second circle
+L08	sub	P_	p	amb	foot bar faint
+L08	sub	9	q	J	closed bowl, tail curving left
+L08	sub	o	a	J	closed circle
+L08	sub	sl	p	J	descending stroke
+L08	sub	sl	p	J	descending stroke after a
+L08	sub	PCT	6~	J	% shape
+L08	sub	DEL	8	J	bowl with curl rising left
+L08	sub	PCT	x	J	% shape
+L08	sub	TU	7	J	lidded u-bowl
+L08	sub	h	3	amb	h (legend: z-like h) or 3
+L08	sub	7#	#	J	7-hook joined to the double upright
+L08	sub	P_	p	J	p with foot bar

@@ -480,7 +480,6 @@ Grades: no token read. No H or C; this is a cryptanalytic result about one sign.
 (R4804) would give more than three concordant signs, at about USD 3-4 (two images, one login, crops). Until then, no. 19 stays
 too-short with no fitting key.
 
-
 ## R9-SIENA15 -- no. 15 against key R4764, shape concordance (account 4 worker for LANE-RUN9-account-4, 6 Oct 2026, 05:43-05:5x UTC)
 
 Brief `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-SIENA15 (READ2-SIENA's "15:" next step). Status unchanged: `open`.
@@ -599,3 +598,54 @@ result only.
 against agent J (crops from R8-SIENA7's region, `tools/iiif_lines.py --image`, one DECODE login, about USD 3 for 2 passes + 1
 reconciliation). Then, if the error is under about 10%, a homophonic + nomenclator family (multi-sign codes for frequent words,
 R4750-style) with its own matched control. If it is over 10%, this negative is a non-test and is logged as one.
+
+## R9-SIENA7B -- no. 7 second blind line-crop pass, reader error figure (account 4 worker for LANE-RUN9-account-4, 6 Oct 2026, 06:21-06:3x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-SIENA7B (R9-SIENA7's "Next step for no. 7"). Status unchanged:
+`open`. No key change, no reading.
+
+**Route.** One headless DECODE login, `tools/decode_browser_login.js 4796 <scratch> --fetch <IMG_R4796_I27935_P1.jpg filesrv URL>
+--max-files 1`: full size 2248x4000, **sha1 2b12f15a... matches images/manifest.json**; saved RecordsView page deleted (account name);
+image and crops in the scratchpad only. github.com: one sparse shallow clone of dbourdeau/cyphersolver `targets/siena1421` (read only:
+the sign legend in `transcripts/no07.txt`). Requests: de-crypt.org about 4 (login 2, RecordsView 1, image 1), 1.5 s apart, no challenge;
+github.com 1.
+
+**Crop step (pasted, R8-SIENA7's command):**
+
+    $ python3 tools/iiif_lines.py --image IMG_R4796_I27935_P1.jpg --out crops --region 60,2540,2190,560 --prefix no7 \
+        --max-width 1150 --overlap 120 --distance 42 --prominence 20 --ink 120 --smooth 3 --lines-per-crop 2 --top-margin 20 --debug
+    ...(local): region 2190x560, 12 lines, 6 bands x 3 segments; pitch 48 distance 42 prominence 20.0
+      centres (region y): 7 57 102 155 199 250 300 348 400 444 506 548
+      wrote 18 crops
+
+**Pass B.** Two Sonnet subagent calls (L01-L06, L07-L12), crop paths only, reference sheet = Bourdeau's SIGN LEGEND with its
+line-location hints removed; his transcript not supplied. Output `transcripts/no07_passB_R9-SIENA7B.tsv`. **L12 sits on the crop's
+bottom edge (only the top half of the line is in the region; checked on no7_L06_s1.jpg)**, so the primary figure is L02-L11.
+
+**Disagreement, pass B vs agent J** (`specs/cheap-tests/siena-concistoro-2308/tx_error_no07.py`, token Levenshtein, `--check` exit 0,
+`tx_error_no07.json`):
+
+| lines | J tokens | B tokens | match | sub | ins (B only) | del (J only) | disagreement |
+|---|---|---|---|---|---|---|---|
+| L02-L11 (primary) | 327 | 320 | 231 | 76 (23.2%) | 13 (4.0%) | 20 (6.1%) | **33.3%** |
+| L02-L12 (all) | 363 | 338 | 243 | 82 (22.6%) | 13 (3.6%) | 38 (10.5%) | 36.6% |
+
+Top substitutions J->B: V->x 6, 7#-># 6, sl->p 5, 6~->6 5, DEL->8 5, o->oo 3, h->3 3, P_->p 3, 9->q 3. These are legend
+distinctions pass B collapses (B uses 36 labels against J's 45). **This is reader disagreement, not either reader's error.**
+
+**Reconciliation (one unit, the worker, not blind: J's labels in view).** Every J/B split on L03 and L08 (72 J tokens, 24 split
+spots) was read on autocontrast 2x zooms of the image (`transcripts/no07_arbitration_R9-SIENA7B.tsv`): 21 go to J, 3 are undecidable
+at that zoom (L08 7/4, P_/p, h/3), none go to B. On these two lines agent J's error is **0/72 to 3/72 (0-4.2%)**; Clopper-Pearson
+95% upper bound 5.0% (0/72) to 11.7% (3/72). Pass B's own error on the same lines is about 28 ops in 72 (about 39%): a Sonnet
+reader with this legend at this resolution is not usable as a second reader for no. 7.
+
+**What this means for R9-SIENA7.** The anchored-fit control falls to its 0.60 gate at about 10% injected sign error. Agent J's
+estimated error on the two arbitrated lines (0-4%) is below that crossover and below the brief's ~8% line, so **the R9-SIENA7
+negative stands as control-backed at that estimate**, with two limits: (1) the estimate rests on 2 of 11 lines and a non-blind
+arbitration; at the high end (3/72) its 95% upper bound (11.7%) reaches the crossover; (2) clear/cipher boundary calls (L06 "a f a
+H o", L03's run end) are a convention difference the control does not model. It remains a negative for plain homophonic
+substitution with the seven anchors only; the nomenclator and spelling caveats of R9-SIENA7 are unchanged.
+
+**Next step (suggestion, not run):** arbitrate the J/B splits on the other nine lines the same way (about 66 split spots, worker
+only, no subagent, about USD 1.5), which would put the error figure on all 327 tokens; then the homophonic + nomenclator family
+R9-SIENA7 names. A Sonnet second reader is not the instrument for that: it disagrees with J on a third of the signs.

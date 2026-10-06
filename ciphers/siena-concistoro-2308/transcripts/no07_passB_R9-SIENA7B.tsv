@@ -1,0 +1,13 @@
+# no. 7 (R4796 P1) pass B, R9-SIENA7B 6 Oct 2026: blind Sonnet line-crop read (two calls, L01-06 and L07-12), Bourdeau's sign legend as reference sheet (line-location hints removed), not his transcript. Crops: tools/iiif_lines.py --region 60,2540,2190,560 (R8-SIENA7's command). L12 lies on the crop's bottom edge (top half of the line only): excluded from the primary figure.
+L01	
+L02	[clear] 8? oo c oo 3 4 7# 2 [clear] 6 [clear] p 9 7# x 2 6 5 8 4 f o?
+L03	c x m p QP? t 3 x p c oo t h 8 o p = + 4 S x g [clear] c p o h [clear]
+L04	[clear] o p x 8? a 2 m x p c oo t 6 c oo 4 f oo 4 3 p S x 4 P_ 8 f q 4 7 + k H 3 8 6 4 2 qp?
+L05	[clear] 3 + x 7# m 7 8 3 9 x x P_ p 3 x 8 6 f 4 [clear]
+L06	[clear] o p 3 6 4 9 . 4 . x 8 m p a p oo c oo p . 4 . c oo 6 c [clear] c 8 a . 3 7 p c oo 1 + k [clear] H? o p 8 = x 3 oo c oo
+L07	p 7# 4 7# b 8? x 2 x 3 c [clear] 8 4 # 8 q S x 4 x + q [clear] 1 a 2 6 = 4 p oo
+L08	4 q 6 + B3 2 x + 8 c [clear] p q a p b a p c oo V 8 2 + oo 6~? S x 3 5 m 6 c 8 8? x k 7? 9 V k 3? 4 c x # 3 7 p 8
+L09	[clear] a t V 2 c oo q p x 6 q x 4 m [clear] f V = q a 8? q 4 # b [clear] q 4 # 2 TU 4 8 c oo
+L10	[clear] p f c 6 4 m t 6 q x 8 3 V 4 b 2 x # q p 7 k [clear]
+L11	[clear] 1 V 8 x 8 + oo q 8 q t m 4 # # h S c c oo 2 x 3 + q p [clear] p S f c 4 x p t f c 2 x p
+L12	[clear] 1 oo c V 2 4 4 8 4 x 3 + 4 q x 3 5 m [clear]

@@ -44,3 +44,8 @@ The sign matching is by name across transcribers, so a shape-level concordance i
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
 |---|---|---|---|---|---|---|---|---|
 | 6 Oct 2026 05:52 | homophonic, 7 C gloss values fixed (R9-SIENA7) | no. 7 N=363 K=45, restarts=20 iters=60000 order 3, model it16dip minus gri_33125010469852 (held out for control text) | control 1-5, target 1-3 | 0.916 anchored (0.884-0.959); blind 0.875 (0.722-0.959); post hoc injected error 10/20/30%: 0.597/0.425/0.346 | -907.1 | FAIL language: score=-1.242, null_p99=-1.764, real_p05=-0.932, real_median=-0.816, mode=both, N=363 (shuffled-target decodes -1.411/-1.326/-1.345, all FAIL) | yes (gate 0.6) | no. 7 anchored fit: control reads error-free, target does not; control falls below gate at ~10% sign error, no. 7's own error unmeasured -- negative conditional on the transcription, not a design exclusion (PREREG-R9-SIENA7.md) |
+
+R9-SIENA7B (6 Oct 2026, 06:2x UTC): transcription-error check for the R9-SIENA7 row. Pass B (blind Sonnet, legend only) vs agent J:
+33.3% token disagreement on L02-L11 (sub 23.2%, ins 4.0%, del 6.1%; tx_error_no07.py), almost all pass-B collapses of legend
+distinctions; worker arbitration of every split on L03+L08 gives agent J 0-3 errors in 72 tokens (0-4.2%, CP95 upper 5.0-11.7%),
+below the control's ~10% crossover. The R9-SIENA7 negative stands as control-backed at that estimate (2 of 11 lines arbitrated).
