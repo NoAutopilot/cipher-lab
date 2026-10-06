@@ -1,0 +1,8 @@
+# R13-SUR730 crops, 6 Oct 2026. Not committed (folder over 30 MB). Regenerate: fetch the native region, then cut.
+# base = https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/50305553-4d8b-40b9-bcad-ae7b33d3df5e.jp2
+#   (NL-HaNA_1.05.03_373_0730.tif, native 4783x3963; R13-SURSWP4 plan.tsv order 732)
+# p0730.jpg = {base}/180,130,2240,1800/full/0/default.jpg   (left page, all cipher; right page blank)
+# python3 tools/iiif_lines.py --image p0730.jpg --out cP --prefix p0730 --centres 128,277,431,584,742,890,1049,1191,1349,1514,1695 --debug
+# (auto profile, --dry-run, found 22 lines = 11 gloss lines each above its cipher line, centres 89 166 240 313 389 473 543 625 708 776
+#  850 929 1018 1080 1151 1231 1311 1387 1459 1569 1656 1734; the --centres are the pair midpoints; L01 and L10 eye-checked.)
+# Pass crop names: L01-L11 = p0730_L01-L11. Each crop = one gloss line + the cipher line below.
