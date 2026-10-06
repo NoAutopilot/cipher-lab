@@ -29,3 +29,9 @@ The sign matching is by name across transcribers, so a shape-level concordance i
 - no. 7 gloss conflict (R8-SIENA7, 6 Oct 2026): the L08 gloss gives 2=e (C); the L04 small "o" sits over the 4/2 junction, so it gives
   either 2=o (conflicting with L08) or 4=o. Both witnesses are on the same leaf in the same glossing hand. Graded M and left unsettled
   until a closer crop or a second reader places it (glosses_no07.tsv).
+- R8-SIENA19, 6 Oct 2026 (prose row; PREREG-R8-SIENA19.md, run_test_no19.py): no. 19 vs the no. 13/16 alignment (TRI=b, 3=l, CT=r;
+  V2 adds 0=a, TT=r). TARGET S1 -6.812 / S2 -1.814 (P); CONTROL value-shuffled mean S1 -2.379 (p 0.939), S2 -1.589 (p 0.702);
+  order-shuffled S2 mean -1.375. V2: TARGET -6.818 / -1.753, CONTROL -2.673 (p 0.924) / -1.553 (p 0.710), order-shuffled -1.378.
+  Positive-control power <= 0.78 in every cell: non-test at this N (pre-registered), not a negative. Post hoc: TRI 10/118 vs 1.13
+  expected for b; 0/100 H1 passages as low on S1.
+

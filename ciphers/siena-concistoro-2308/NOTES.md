@@ -399,7 +399,7 @@ unchanged: `open`.
 - 17: settle sender/recipient from a native crop of the foot of P1 and the P2 address (about USD 0.5). This names whose "cifra di Balìa"
   to look for among R4773-style 16th-century Balìa keys.
 - 19: compare its run signs with the no. 13/16 alignment (Bourdeau's) as a known-key fit with value-shuffled and order-shuffled controls
-  (about USD 2). This is disk plus one crop.
+  (about USD 2). This is disk plus one crop. [done R8-SIENA19, 6 Oct 2026: no fit, non-test by the pre-registered power gate; see below]
 - 15: Bourdeau's candidate key R4764 (Buoninsegni, oratore a S. M.tà) has not been tested in this folder. A shape concordance from the
   R4764 key image plus pp. 2 and 6 crops is needed first (one more DECODE record, about USD 3).
 - 9, 11, 21: no step on disk beyond these. 11 needs a Florentine key (Acciaiuoli 1478, none located); 9 and 21 are too short alone.
@@ -442,3 +442,41 @@ gloss was found, so the brief's conditional second blind pass and reconciliation
 **Next step for no. 7 (suggestion, not run):** an L04 crop at higher zoom, or a second reader, to place the "o" (2 or 4). Then a
 homophonic fit of the 363 tokens with the seven C values fixed, against a matched control of the same N, K=45 and fixed-value count
 (rule 3). Bourdeau files no. 7 as too-short. Fixed values change that only if the control reads at this N. About USD 3.
+
+## R8-SIENA19 -- no. 19 against the no. 13/16 alignment (account 4 worker for LANE-RUN8-account-4, 6 Oct 2026, 04:20-04:2x UTC)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run8-jobs.md` job R8-SIENA19 (the "19:" next step of READ2-SIENA). Status unchanged:
+`open`. Disk only: no crop was needed and none was cut. Requests: github.com 1 sparse shallow clone of dbourdeau/cyphersolver
+`targets/siena1421` (HEAD adbf9a1, read only: `NOTES.md`, `transcripts/no19.txt`). No other host.
+
+**What the "alignment" is.** The whole no. 13/16 alignment on disk is Bourdeau's two worked words (his NOTES.md, no. 13 + no. 16):
+bologna = ∇ E 3 E 17 φ ₀⁰; accordi con = ₀ ⁿθ(cc) E ‡ + 15 ƥ E φ. That is 12 sign values over ten letters. No transcript of no. 13
+exists in either repository. Only three no. 19 signs have a counterpart by legend: TRI (▽) = ∇ -> b, 3 -> l, CT (¢/‡-like) = ‡ -> r
+(primary, P). A wider variant (V2) adds small 0 = ₀ -> a and TT (ŧŧ) = ‡ -> r. Concordance fixed in advance.
+
+**Pre-registration:** `PREREG-R8-SIENA19.md` and `transcripts/no19.tok` (118 tokens, Bourdeau agent J, CC BY 4.0), pushed in
+d7818f743 before the scored run. Script `specs/cheap-tests/siena-concistoro-2308/run_test_no19.py` (`--check` exit 0), output
+`results_no19.json`. S1 = order-free count fit (sum of log10 binomial upper tails, it16 letter frequencies). S2 = mean it16 bigram
+log10 probability over adjacent covered pairs. Control (a) is 2000 value-shuffled keys drawn from the key's own ten letters, used for S1
+and S2. Control (b) is 200 order-shuffled streams, used for S2 only, because order cannot change S1 (rule 3).
+
+| variant | covered/118 | S1 real | S1 val-shuf mean (p95), p | S2 real (pairs) | S2 val-shuf mean, p | S2 order-shuf mean, n>=real | power S1 / S2 (H1a; H1b) |
+|---|---|---|---|---|---|---|---|
+| P | 17 | -6.812 | -2.379 (-0.164), 0.939 | -1.814 (bl lb bl lb) | -1.589, 0.702 | -1.375, 162/185 | 0.00/0.05; 0.00/0.02 |
+| V2 | 24 | -6.818 | -2.673 (-0.333), 0.924 | -1.753 (6 pairs) | -1.553, 0.710 | -1.378, 183/200 | 0.15/0.78; 0.18/0.23 |
+
+**Result.** Neither statistic reaches the gate (p <= 0.05) in either variant. The real key scores below the mean of both controls on
+both statistics. By the pre-registered rule, positive-control power is below 0.8 in every cell (best 0.78, V2/H1a/S2), so this is
+logged as a **non-test at this N** and not as a control-backed negative.
+
+**Post hoc, not in the PREREG (reported as such).** The misfit is in the counts. TRI occurs 10 times in 118 tokens, against 1.13
+expected for b. Homophones could only make a b-sign rarer, never commoner. In 100 it16 passages under H1, the true key never scored S1 as
+low as no. 19's real -6.81 (0/100 in all four cells). The repeated "TRI 3 TRI" = "blb" (L08, L10) points the same way. This points to
+▽ in no. 19 not being no. 13's b-sign. It is one sign identification, not a test of the key family, and it does not reach a gate.
+
+Grades: no token read. No H or C; this is a cryptanalytic result about one sign. No key was rebuilt and nothing was decoded (brief).
+
+**Next step for no. 19 (suggestion, not run):** none cheap on this key. A fuller no. 13 transcript (DECODE R4801) aligned to no. 16
+(R4804) would give more than three concordant signs, at about USD 3-4 (two images, one login, crops). Until then, no. 19 stays
+too-short with no fitting key.
+
