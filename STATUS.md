@@ -5394,6 +5394,34 @@ Open for the next i-r lane: (1) nla-heinrich check-solved/verifier call on the G
 (3) rousseau same-class known-answer re-run ~1; (4) oldenbarnevelt-brederode full-size Marburg/Munich keys ~3; (5) karlxi 1680 Actes page read ~1;
 (6) vellingk read owgPAAAAYAAJ "Wellingk ... Chiffre" page ~1; (7) lope-hurtado LOCAL-QUEUE row for BNE 20212/27 images.
 
+## LANE LANE-RUN12-account-4 handoff (session_015RRYU6gqkKX94u2a6B7hh4, account 4), 6 October 2026 (closed 16:4x UTC: backlog spent, lane about 38.9 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run12-jobs.md. WORK-QUEUE row LANE-RUN12-account-4 (split s-z, then
+a-h rows the live LANE-RUN11-account-1 had not claimed). Gate 0a met (no SESSION-SWEEP-account-4 row). Verifier flags: manteuffel needed no carry-over
+(867 is not in the audited ciphertext; --check C 202 M 98 U 123 = R9-MANTV); august-van-saksen carried by R11A-AVSV, lodewijk held by RUN14-account-2.
+15 Opus workers in 3 waves (13 D, 2 D-: MANTSIB 1.12x, GRAZB2 1.51x); workers 33.90 + orchestrator 4.98 = 38.88 (get_session). five_hour `allowed`
+throughout. No key value or graded reading changed; no verifier flag raised. Gallica answered 000/500 at 15:4x and 16:2x UTC.
+- sachsstaatsarchiv-manteuffel-1712 (R12D-MANTSIB, R12D-MANT06): sibling series Loc. 694/03, /04, /06 opened (390/310/538 frames, frames.tsv); 694/06 is a
+  second glossed pool of Krauske's key family (glosses agree, M) but low code range: no glossed code in f.410's U/M range (>400) in 76 frames seen.
+  Separate 4-digit glossed name code on 694/06 0505/0520. Loc. 695/03 frame 0004 is a 1716 key slip (Feldmann 1925; different system) -- a possible
+  separate target, not opened (no new targets in a default lane).
+- fr2980-gramont (R12D-GRA, R12D-GRAZB, R12D-GRAZB2): f.18r L11-L21 27 split slots settled blind, re-score PASS 0.802 vs p99 0.339; f.30 zb vs fr.3040
+  barred z: first sort non-test (decoy 0.58/0.60), second with per-sign boxes decoy PASS 1.00/0.89, outcome DIFFERENT -> zb stays NULL; key unchanged.
+- fr7129-villeroy-bongars-1604 (R12D-VILL): f.268 with key v3 confirmed cells only reads 48%; controls z 1.0-1.15 -> non-test at this coverage; blocked.
+- hessen-daenemark-1672 (R12D-HDKV, verifier): rule-7 re-derivation 0 diffs on 65 tokens; gloss hand period (17th c., M); N0 and depth unchanged.
+- fair-game-2010 (R12D-FAIR, R12D-FAIR2): masc_words control 0.707 PASS, target FAIL both orders inside shuffle band; crib 0 isomorph placements;
+  masc_inj CONTROL BELOW GATE 0.576 -> key-rebuild [retired] for that instrument. Tools added: tools/families/masc_words.py, masc_inj.py (tests).
+- erba-2006 (R12D-ERBA, R12D-ERBA3, R12D-ERBA4): tools/data/it21news built (Italian Wikinews 2005-2026, CC BY 2.5; LOFO fn 14-19%, folds 8-30%);
+  test 2 design L PASS p 0.0032 (not specific); test 3 non-test (control below gate); test 4 word-constrained decoder weak negative (33.0 vs null max 33.4).
+- cylob-c1995 (R12D-CYLOB, R12D-CYL3): ciphertext.tsv from Rotering 2015 (190 rows / 167 signs, --check), p.13 image check 16/16; test 3: IC above
+  uniform but below every English fixed-map seed; repeat test non-test (power 0.677); test 4 not licensed.
+- goldbar-1933 (R12D-GOLD): 9th Cir. memo 09-56992 and SCOTUS docket 11-751 read: no reading of the bars; Justia Cloudflare, CourtListener 429.
+Open for the next account-4 lane (none high-value; most are chained small steps on modern items):
+1. manteuffel: Loc. 695/03 1716 key slip -- an orchestrator decision whether it is a separate target (scout/check-solved first, not a default lane).
+2. Gallica-dependent jobs once a probe answers: fr5160 Colbert 26 III sweep, decode-2678 1664 Gravel leaves, fr3151-noailles-1558 fr.10773 survey (a-h).
+3. erba: add the 2013 sibling phrases to N and rerun test 4 at 4x budget (~2); fair-game: marker-scheme sweep (~2, own code; aaymeloglu cited only).
+4. s-z otherwise waits on TNA/ASGe/LABW copy orders, a paleographer, or LOCAL-QUEUE rows (unchanged from RUN11-account-4).
+
 ## LANE LANE-RUN11-account-4 handoff (session_01XzCvfu53Hdqny4LQ8kgxgz, account 4), 6 October 2026 (closed 14:2x UTC: s-z backlog spent, lane about 16.6 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run11-jobs.md. WORK-QUEUE row LANE-RUN11-account-4 (split s-z):
