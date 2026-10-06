@@ -1,0 +1,214 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "r8_ad1_L01.jpg",
+   "source_url": "",
+   "source_file": "ad1-1865-secret-writing.png",
+   "box": [
+    0,
+    1,
+    614,
+    53
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 56,
+    "distance": 39,
+    "prominence": 50.4
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad1_L02.jpg",
+   "source_url": "",
+   "source_file": "ad1-1865-secret-writing.png",
+   "box": [
+    0,
+    53,
+    614,
+    108
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 56,
+    "distance": 39,
+    "prominence": 50.4
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad1_L03.jpg",
+   "source_url": "",
+   "source_file": "ad1-1865-secret-writing.png",
+   "box": [
+    0,
+    108,
+    614,
+    149
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 56,
+    "distance": 39,
+    "prominence": 50.4
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad2_L01.jpg",
+   "source_url": "",
+   "source_file": "ad2-1871-telegram.png",
+   "box": [
+    0,
+    9,
+    578,
+    60
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 35,
+    "distance": 24,
+    "prominence": 38.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad2_L02.jpg",
+   "source_url": "",
+   "source_file": "ad2-1871-telegram.png",
+   "box": [
+    0,
+    60,
+    578,
+    107
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 35,
+    "distance": 24,
+    "prominence": 38.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad2_L03.jpg",
+   "source_url": "",
+   "source_file": "ad2-1871-telegram.png",
+   "box": [
+    0,
+    107,
+    578,
+    142
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 35,
+    "distance": 24,
+    "prominence": 38.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad2_L04.jpg",
+   "source_url": "",
+   "source_file": "ad2-1871-telegram.png",
+   "box": [
+    0,
+    142,
+    578,
+    186
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 35,
+    "distance": 24,
+    "prominence": 38.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad2_L05.jpg",
+   "source_url": "",
+   "source_file": "ad2-1871-telegram.png",
+   "box": [
+    0,
+    186,
+    578,
+    232
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 35,
+    "distance": 24,
+    "prominence": 38.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad2_L06.jpg",
+   "source_url": "",
+   "source_file": "ad2-1871-telegram.png",
+   "box": [
+    0,
+    232,
+    578,
+    276
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 35,
+    "distance": 24,
+    "prominence": 38.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r8_ad2_L07.jpg",
+   "source_url": "",
+   "source_file": "ad2-1871-telegram.png",
+   "box": [
+    0,
+    276,
+    578,
+    321
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 35,
+    "distance": 24,
+    "prominence": 38.7
+   },
+   "date": "06 Oct 2026"
+  }
+ ]
+}
