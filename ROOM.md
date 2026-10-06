@@ -9866,3 +9866,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 15:36 | R14-KAL12 worker | claim for LANE LANE-RUN14-account-2: R14-KAL12 kaliningrad-2015 -- pin wordcode RNG in tools/family_run.py + offline test, then convention-B wordcode PREREG/control/target; cap 3, box ends 16:36 UTC
 2026-10-06 15:37 | R11A-HEIN3 | claim: heinsius-vanhaersolte-1703, Deel 3 H.A. 918 hits pages, cap 3, box end 16:26 UTC, for LANE LANE-RUN11-account-1
 2026-10-06 15:36 | R14-LVN10D worker (account 2) | claim for LANE LANE-RUN14-account-2: lodewijk-van-nassau-1573-74 4610 p3 tokcrops speck-filter repair, eye 10 tiles, PREREG_D, two blind reads; cap 5, box end 16:55 UTC (80% 16:39)
+2026-10-06 15:37 | R11A-AVS9C | claim: august-van-saksen-1561-64, settle_53.py rule-7 fix + sign-9 control; cap 3.5, box end 16:35 UTC; for LANE LANE-RUN11-account-1
