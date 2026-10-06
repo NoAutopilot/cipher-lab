@@ -1,0 +1,67 @@
+# Mousset 1912 key applied to f.101v (D4-VIVMOUS). {a|b} = shape fits two table glyphs; ? = no table glyph.
+## pass A
+L01	l a {sur|y} a {y|q} a n t e e n ? ? t e n ? t e {r|y} m a ? d n ? n o o a ? c e {z|d} ? a l e m ? {t|g} ? a quant a
+L02	{s|a} m d e ? o ? e {sur|y} e {t|g} d e ? e n ? e n o e {s|a} e t d e {quel|m} e t n ? a m o {t|g} {y|q} r m {m|par} e ? ?
+L03	e n o e a ? ? o {sur|y} e e n o a d m a o a a n {s|a} e ? e n ? ? e m {quel|m} {y|q} o {r|y} ? {t|g} ? ? n e t e e t c o n
+L04	{s|a} e d e n ? {r|y} a n t r {s|a} {sur|y} l a ? ? o ? o e {r|y} e {z|d} {z|d} e n ? c e l ? {z|d} {y|q} d e {s|a} c a {z|d} ? o {y|q}
+L05	e {s|a} e a {y|q} o r {s|a} e n {s|a} t n o m e ? e ? {s|a} {t|g} e {t|g} {r|y} e {s|a} {z|d} ? {r|y} e m e n ? {t|g} e d e n ? m ? o
+L06	{y|q} l a o m e n ? a ? e n ? c l e m e a ? o m m {s|a} m e o ? {s|a} c o e {z|d} ? e ? {sur|y} ? o n ? d e n c
+L07	e {s|a} a {s|a} {m|par} m d {s|a} e {z|d} {r|y} e {s|a} n d e c e c o {s|a} ? t e a l a {z|d} ? m e {s|a} {z|d} ? e {t|g} o e t m o r {s|a} {r|y} t
+L08	d e n ? {y|q} a e {s|a} t ? o o m o a e {s|a} e n ? c a n ? a c ? {t|g} e n d {z|d} l e m {quel|m} {z|d} ? {y|q} o {r|y} ?
+L09	e {s|a} a n ? c a n ? a c ? {t|g} e n d {z|d} l e {quel|m} {z|d} ? {y|q} o {r|y} ? ? n ? {s|a} e {z|d} ? {r|y} ? e c e a ? n ? e l e quant e ? ? {s|a} t
+L10	{t|g} e e ? n o a {z|d} n ? ? {r|y} {s|a} a {y|q} a d ? e {r|y} ? {t|g} e e d e c e quant c e ? {y|q} e {s|a} ? n a e {t|g}
+L11	e d e c e ? c o r e {s|a} ? {t|g} e l a n e ? a d t n a {z|d} n e n o a ? e n a c ?
+L12	t a e o {t|g} e {sur|y} e o a t a e l e ? ? {t|g} e {s|a} o {s|a} o {r|y} a ? {t|g} e d e d e l n ? l {t|g} e n c e d e t e {r|y}
+L13	? ? e r t o ? n {t|g} c e m {sur|y} e {t|g} o ? e b e {z|d} r m d m l a d e {y|q} e {s|a} n ? c ? e d e c e c o ? e
+L14	l e r quant e e ? {y|q} t {sur|y} c e {s|a} t e e ? n ? {t|g} a m {s|a} a d e ? {r|y} e d e ? c t e t c {r|y} o {y|q}
+L15	e e n ? {y|q} r ? {s|a} r m e ? quant l {r|y} m e ? n {r|y} a ? {sur|y} o {r|y} {s|a} ? {t|g} e r m o ? ? c o
+L16	? n ? {t|g} e r ? {s|a} t {r|y} a ? {quel|m} {sur|y} o {r|y} {s|a} ? {t|g} e r m o ? ? c n ? ? {r|y} e r m e d ? ? ? e ? ?
+L17	? c e quant e {s|a} ? {t|g} o e t d e {y|q} r ? ? {s|a} ? e ? c {r|y} e t e n c e ? {s|a} t a e {s|a} ? a e {r|y} e e {r|y} e
+L18	e e o e {r|y} e {s|a} a {z|d} ? e {s|a} ? {t|g} {r|y} e a ? o ? e t {fait|ff} d e l {r|y} e {s|a} ? {t|g} {r|y} a n d l o m
+L19	e o e {quel|m} {z|d} ? l c e {s|a} ? l e ? {t|g} e e n d e ? {s|a} ? e a e {r|y} e ? e ? o ? {s|a} ? {t|g} {r|y}
+L20	a e {r|y} e {s|a} e d e ? o ? {s|a} ? {t|g} {r|y} e ? a ? d ? {t|g} e {s|a} r m l ? ? {y|q} a {y|q}
+L21	a n t c o o {z|d} ? c e {r|y} ? {t|g} e l e n e ? m a {r|y} e {s|a} ? c ? a l {z|d} ? d e {t|g} e l e ? {t|g} a
+L22	{r|y} d e r m a ? e c ? e l e l e e ? m {s|a} a ? o {r|y} a d r e {s|a} a ? a {y|q}
+L23	e m {quel|m} {s|a} a ? {z|d} {y|q} o a r ? e {s|a} {z|d} ? l e o o e {z|d} ? a {z|d} ? e {s|a} a t d e ? {s|a} a l ? {z|d} ? c e ?
+L24	d e ? a ? e l ? {s|a} a o ? {r|y} {r|y} e ? {r|y} e o e c e r ? e o c e ? e
+L25	{s|a} e e {z|d} ? {t|g} n e ? {r|y} a {t|g} ? {s|a} o l l {z|d} a o a {z|d} ? e {s|a} e n e e ? e c t {sur|y} e n ? {t|g} e n
+L26	d e e l e ? d e {z|d} t e m ? {t|g} {t|g} {r|y} a e {z|d} ? {t|g} e a ? e c ?
+L27	? {t|g} a m m ? a d e ? {r|y} a {t|g} {r|y} {z|d} ? a e {z|d} ? {t|g} e {s|a} ? {r|y} ? a a e ? n e d e m c e c o
+L28	e c o {z|d} ? e ? e {r|y} e {s|a} a m ? {r|y} e {s|a} a ? o m {r|y} d o {s|a} a n e c o m ? {y|q} {t|g} e ? n {t|g} e
+L29	e ? e n {y|q} a {r|y} ? t e c {z|d} ? ? e e {r|y} e ? {r|y} n e n t c e d e c e quant c e {s|a} ? t o e
+L30	o e t {y|q} a m {s|a} e a r e d a {t|g} {r|y} e {z|d} ? n o {t|g} ? e e a o t l o ? e ? t e t ?
+L31	e ? o {s|a} t o o e n ? e ? l e {r|y} a r ? a l ? e n e ? ? ? o t ? l e n ? e n ? {t|g} e n ? o e d e c e n {s|a}
+L32	a ? t e e o e n {z|d} ? e {s|a} a ? e {z|d} ? {t|g} e n ? r e c {s|a} n e n ? c a {t|g} {r|y} a e c ? {t|g} e a ? e c ?
+## pass B
+L01	i {s|a} {sur|y} {s|a} {y|q} {s|a} n t e e ? ? t e n ? t e {r|y} ? {s|a} ? ? n o l {s|a} c e l l {s|a} {s|a} i e m ? {s|a} {s|a} {s|a}
+L02	{s|a} {s|a} d e ? {r|y} {s|a} ? e {sur|y} e {t|g} d e ? e ? e ? n e l e {y|q} {s|a} e t d e {s|a} e t ? {s|a} {s|a} m l l {y|q} {s|a} {s|a} l e {s|a}
+L03	{s|a} {sur|y} l o e ? ? {s|a} i {s|a} {y|q} l o {sur|y} e {s|a} d c e {s|a} quant {s|a} e ? e ? ? e m {y|q} l {r|y} ? {t|g} ? ? n e t e ? t c l n
+L04	{s|a} e d e ? {r|y} {s|a} n t {s|a} {s|a} quant i {s|a} ? ? o ? {s|a} e {r|y} e {s|a} e n ? c e l ? {s|a} {s|a} {y|q} d e {s|a} c {s|a} l ? ? l
+L05	e {s|a} e {s|a} {y|q} l {s|a} e n c t n l m e c e ? {s|a} {t|g} e {t|g} {r|y} e {s|a} l ? {r|y} e {s|a} e n ? {t|g} e d e ? m ? l
+L06	{y|q} i {s|a} o l m e ? {s|a} ? e ? c i e m e o e {s|a} ? o e {s|a} m e o ? {s|a} c l e l ? e ? ? {sur|y} o {sur|y} n ? d e n c
+L07	{s|a} {s|a} a ? {s|a} d {s|a} e {s|a} {s|a} {r|y} e {s|a} n d e c e c o {s|a} ? t e i {s|a} l ? m o e {s|a} l ? {t|g} o e t m o {s|a} {s|a} {r|y} t
+L08	d e ? {y|q} {s|a} e {s|a} t ? n {s|a} l o {s|a} {s|a} e {s|a} e {s|a} e {sur|y} ? c {s|a} ? {s|a} c ? {t|g} e {sur|y} d l ? i e m {z|d} ? {y|q} l {r|y} ?
+L09	{t|g} e {sur|y} c e e c e {s|a} ? ? t l e t ? {s|a} l {s|a} l {sur|y} ? {s|a} e quant e {s|a} l l ? {r|y} ? e c e m ? ? e l e {t|g} e ? ? {s|a} t
+L10	e e ? n {s|a} {s|a} ? ? {r|y} {y|q} {s|a} {y|q} {s|a} d ? e {r|y} ? {t|g} e e d e c e quant c e ? {y|q} e {s|a} ? {sur|y} {s|a} e {t|g}
+L11	e d e c e ? c l {s|a} {s|a} {s|a} ? {t|g} e i {s|a} n e ? {s|a} d t {sur|y} {s|a} e ? l ? l {s|a} e {sur|y} l e ? {s|a} e {s|a} e o {s|a}
+L12	t {s|a} e o i e {sur|y} {s|a} e {t|g} l ? ? {t|g} e {s|a} l {s|a} l {r|y} ? {t|g} e d e d e l ? i {t|g} e n c e d e t e {r|y}
+L13	{s|a} e r t l ? {t|g} c e {sur|y} quant {y|q} e {s|a} {s|a} d m i {s|a} d e {y|q} e {s|a} ? c {s|a} e d e c e c l ? e
+L14	i e r quant e ? {y|q} t {sur|y} c e {s|a} t e t e m ? ? {t|g} {s|a} {s|a} {s|a} d e ? {r|y} {s|a} d e ? c t ? t c {r|y} l {y|q}
+L15	e e o ? {y|q} l ? {y|q} {s|a} {s|a} ? quant i {s|a} {s|a} ? ? {t|g} e ? {s|a} t {r|y} {s|a} ? {sur|y} l {r|y} {s|a} ? {t|g} e {s|a} l ? ? c l
+L16	{s|a} ? ? {r|y} e r l ? ? {s|a} ? l ? e ? e quant e {s|a} ? {t|g} o e t d e {y|q} i ? ? {s|a} ? e ? c r e t
+L17	e {sur|y} c e ? {s|a} t {s|a} e {s|a} ? {s|a} e {s|a} {r|y} e ? {s|a} l {sur|y} {y|q} {s|a} l l e {s|a} ? {t|g} {r|y} e {s|a} ? l ? e t {fait|ff}
+L18	d e i {r|y} {s|a} {y|q} ? {t|g} {r|y} {s|a} {sur|y} d l l e l ? i c e {y|q} ? i e ? {t|g} e e n d e ? {y|q} {s|a} e
+L19	{s|a} e {r|y} e {y|q} {sur|y} d e ? l ? {y|q} ? {t|g} {r|y} e ? ? {s|a} ? {t|g} e {y|q} ? {t|g} e {s|a} i ? ? {y|q} {s|a} {y|q}
+L20	{s|a} n t c l o l ? c e {r|y} ? {t|g} e i e e ? m {s|a} {s|a} {r|y} e {y|q} ? c {s|a} {s|a} i l ? d e {t|g} e l e ? {t|g} {s|a}
+L21	{r|y} d e {s|a} {s|a} ? e c ? e l e i e e ? m {y|q} {s|a} ? o {s|a} c e i {s|a} ? i ? ? {y|q} {t|g} {s|a} e {y|q} o
+L22	e t {y|q} e {r|y} l ? d {r|y} e {y|q} {z|d} l i e ? o {s|a} {s|a} {z|d} m ? e {s|a} {s|a} t d e ? {s|a} {s|a} {s|a} ? l ? l c e ?
+L23	d e ? a ? e i ? r {s|a} n {t|g} {r|y} e ? {r|y} e ? o e {sur|y} e e e ? ? c e r ? t o e m t {fait|ff} ?
+L24	r e e l ? {t|g} n e ? {r|y} {s|a} {t|g} ? r o {s|a} l e o {r|y} l ? e {y|q} e n e e ? e c t c e n ? {t|g} e n
+L25	d l m i e ? d e c t e m ? {t|g} ? {t|g} {s|a} m ? ? {s|a} d e ? {r|y} {s|a} {t|g} {r|y} l ? {s|a} e c ? {t|g} e {y|q} ? {r|y}
+L26	? i {s|a} e e ? n e e d e m c e c l {s|a} ? ? e e {r|y} {s|a} ? o ? ? {r|y} e r {s|a} ? o e {r|y} d l
+L27	{s|a} e o e c l m ? {y|q} {t|g} e n ? {t|g} e ? ? e {sur|y} {y|q} {s|a} {r|y} ? t e c l ? e ? e e {r|y} e ? {r|y} o e n
+L28	d e c e quant c e r ? t o e t {y|q} {s|a} ? e r e d {s|a} {t|g} {r|y} e l ? {sur|y} l {t|g} e ? e m {s|a}
+L29	o ? n t i l ? e ? t e t {t|g} e ? n {sur|y} e {r|y} ? l e ? e ? {r|y} ? e ? e {sur|y} ? e t ? e {sur|y} n t o ? ? {t|g}
+L30	d e ? ? c ? {s|a} e ? {r|y} {s|a} ? t i t e o ? {sur|y} d e e ? ? o ? i e c m e
+L31	m e e {t|g} {r|y} {s|a} e c ? {t|g} e {s|a} ? e c ? i e d e c t {t|g} e l c l e {t|g} {s|a} {r|y} d e l ? ? {y|q} b
+L32	e {sur|y} ? o r m n m {t|g} n o m r m o e ? ? e e o ? i ? {t|g} {r|y} e ? m e o e {sur|y} t ? e ? ? t

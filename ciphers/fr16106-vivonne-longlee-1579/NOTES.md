@@ -78,19 +78,54 @@ Read so far: 57 canvases sampled (VIV-M); one pair located (2 Mar 1580, c107-c10
 - Clerk's copy f.105r-106v only half read - blocker: not-attempted; beyond this brief (one pair, one first test); next: a second independent read of f.105r plus f.105v-106v at native resolution with a paleography-focused pass, ~$3
 - Test 1 at power: re-run test1.py on settled labels over the whole letter (c107-c109 left, five pages, against the four-page copy) - blocker: not-attempted; beyond this brief (one pair, one first test); next: after the two gaps above, ~$4
 - Which Vivonne cipher letters 1580-82 lack a clerk's decipherment - blocker: not-attempted; beyond this brief (one pair, one first test); next: walk the dense-cipher runs and the "Dechifre" pages (about 150-200 canvases at 600 px, ~USD 4)
-- Mousset pp.lviii-lix reconstruction of the Longlee/Vivonne table not on disk as a table - blocker: not-attempted; beyond this brief (one pair, one first test); next: read those pages from the IA djvu and page images, apply to f.101v as a published-key check, ~$1
+- Mousset table applied but label-to-glyph crosswalk is by eye on an unsettled inventory (D4-VIVMOUS: PASS 0.454 vs null p99 0.400; 261 tokens multi, 234 no glyph incl. the frequent 'R' and '=') - blocker: not-attempted; beyond this brief (published-key check only); next: after the owner sorter, re-label the piles against key/mousset1912.tsv glyphs and re-run vivmous.py, ~$1.5
 - Mousset printed page column and the 46 undated rows of the TSV - blocker: not-attempted; beyond this brief (one pair, one first test); next: second script pass on letter headings, ~USD 0.5
 - github.com/larrycbeck/cyphersolver and Cipherbrain/Cryptiana comment threads not opened - blocker: not-attempted; beyond this brief (one pair, one first test); next: one README fetch, ~USD 0.1
 ## Escalation (VIV-T, 4 Oct 2026)
 - [ ] siblings: fr16104 folder (1572-74 cipher, Tomokiyo's Vivonne1 table) is a sibling with a different key; not merged and not written
 - [x] clear-pages: one pair located (2 Mar 1580: cipher c107-c109 left, copy c110 right-c112 left); test 1 ran on f.101v vs f.105r: NON-TEST at err_2reader 0.576
-- [ ] known-keys: Mousset pp.lviii-lix reconstruction exists in print; not yet applied
+- [x] known-keys: Mousset pp.lviii-lix table on disk (key/mousset1912.tsv, published) and applied to f.101v through a shape crosswalk (D4-VIVMOUS, 6 Oct 2026): PASS (0.454 vs null p99 0.400) with a 5/5 matched control; a key check, not a reading; see the D4-VIVMOUS section
 - [x] print: Mousset 1912, Gachard II, d'Ars 1884 read; no print of the 2 Mar 1580 letter's text found (d'Ars paraphrase only)
 - [ ] key-rebuild: test 1 fitted a grade-C key, unusable at this transcription error; rebuild after the sorter
 - [x] image-check: 57 canvases sampled; c107-c112 viewed; c107 cut to native line crops
 - [ ] retry: test 1 re-run on settled labels and the whole letter (gap 3)
-Verdict: keep going: 7 internal gaps; cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then a full read of the copy, then test 1 re-run at power on the whole letter, ~$8 plus owner time
+Verdict: keep going: 7 internal gaps; cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then re-label against the Mousset glyphs and re-run vivmous.py, a full read of the copy, and test 1 re-run at power on the whole letter, ~$8 plus owner time
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the known-keys rung (Escalation [ ] known-keys) -- read Mousset 1912 pp.lviii-lix (the printed Longlee/Vivonne table) from the IA djvu and page images into a table on disk and apply it to f.101v as a published-key check, ~$1. The owner sign sorter on the c107 crops stays the only person-side step.
+
+## D4-VIVMOUS: Mousset 1912 published key applied to f.101v (6 Oct 2026, 12:42-13:13 UTC)
+Source: Mousset 1912 pp.lviii-lix, "Chiffre de Longlée reconstitué d'après l'interprétation de ses dépêches" (IA dpchesdiplom00longuoft,
+leaves n67-n68; the `_djvu.txt` OCR of the table is glyph garbage, so the table was read from the 1800 px page images, one page at a time).
+p.lviii: letters a-z (no k, w), with 1-4 homophones each (e = '3' and 'x'; t = '§§' and 'H'; d = 'oo' tied, 'ꝺb', '∴'), plus cc, ff, pp, rr, ss.
+p.lix: 19 word signs (Portugal, France, Flandres, Italie, Espagne, Angleterre, le Roi, la Reine, car, fait "(quelquefois nul)", j'ai,
+vous, quant, quel, prince, par, sur, com...). Mousset (p.lii) says the table also has null signs but does not print them. On disk:
+key/mousset1912.tsv (81 rows, glyphs described in words, key source `published`, credited to Albert Mousset), page images
+key/mousset1912_plviii_table.jpg and key/mousset1912_plix_w500.jpg.
+Crosswalk: key/crosswalk.tsv maps VIV-T's 29 provisional shape labels to the table by eye on crops L01, L02, L05, L12; 20 labels one glyph,
+9 labels fit glyphs of two values (decoded {a|b}), 4 have no glyph (R 'ı8', '=', single 'o', F). Values were chosen from shape only; the
+worker had seen the copy's first line ("Quant a l'affaire qui touche le marquisat de Salluces") before writing the crosswalk, not the rest.
+Not decode_key.py: the ambiguous labels and the 'o o' -> d pair rule needed a small script, vivmous.py (`--check` exit 0, rule 7).
+Test: PREREG_vivmous.md, pushed 49f195080 before scoring. Statistic: nw_score of the decoded letter stream against the copy f.105r
+(tx/plain_c110_f105r.txt, test1.py folding) from its start; null: 1000 permutations of the letter values over the crosswalk labels.
+| run | tokens (one/multi/none) | decoded letters | real | null p99 (mean) | verdict |
+|---|---|---|---|---|---|
+| pass A (gating) | 1293 (798/261/234) | 1133 | 0.454 | 0.400 (0.322) | PASS |
+| pass B (reported) | 1257 (671/352/234) | 1125 | 0.420 | 0.405 (0.313) | PASS |
+| control e=0.576, 5 seeds (copy enciphered by the inverted crosswalk, then reader noise) | ~1293 | 1105-1162 | 0.635-0.652 | 0.383-0.396 (0.315-0.324) | 5/5 PASS |
+Verdict (pre-registered): **PASS**. Exploratory, not pre-registered: with the two e-labels (x, z) held fixed and the other values permuted
+(200 draws), pass A still beats every draw (0.454 vs max 0.433, p99 0.426), so the margin is not only "x = e". Read as: Mousset's table,
+through this crosswalk, aligns about 514 of 1133 decoded letters to an identical copy letter against about 365 for a shuffled table; the
+target sits well below the control (0.45 vs 0.64), consistent with the crosswalk and the transcription both being rough. Short French
+runs appear in the raw decode ("d e c e" in L07, L10, L11; "e n c e d e t e r" L12) but no clause reads.
+Grades (rule 4, per ciphertext_draft.tsv column, 1,445 columns): H 328 (both readers agree on the label and the label maps to one table
+glyph -- H for the key, the sign identity still rests on two machine readers with err_2reader 0.576 and no owner sorting), M 837, I 280.
+No token is graded C or S. This is a published-key check with a passed matched control, not a reading: depth D0-D1 at most.
+Agreement with the copy where test 1 aligned it: test 1's fitted key read 0.370 on the held-out half against nulls of 0.385-0.396
+(FAIL/NON-TEST); the printed key, with no fit, reads 0.454 over the whole page against 0.400.
+Where not found: no null-sign list in Mousset (p.lii names nulls, the table does not print them); no glyph in the table for VIV-T's 'R'
+(about 85 occurrences, the second-commonest label) or '=' -- either nulls, word signs missing from Mousset, or a 1580 sign Longlée dropped.
+Requests: archive.org 6 (djvu text 1, page_numbers.json 1, page images 4; all 200; ~2 s apart). No other host.
+Next (one line, not done): after the owner's sorter, re-label the piles directly against the Mousset glyphs (adding the 'R' and '=' piles
+as candidate nulls) and re-run vivmous.py; then decode f.102r-103v the same way.
