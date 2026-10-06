@@ -1,0 +1,12 @@
+line	pos	sign	conf	layout
+L01	1	S0V1P2B0	H	one tall bar, two dots stacked to its right, level with upper and lower parts
+L02	1	S1V0P2B0	H	one dash, two dots side by side above
+L02	2	S0V1P5B0	H	one bar; three dots stacked on left; one dot at top right and one at bottom right (corner dots)
+L02	3	S3V0P2B0	H	three stacked dashes; two dots stacked to the right (beside middle and lower dash)
+L02	4	S1V0P4B0	H	one dash at left; four dots in a diagonal descending line to the right
+L02	5	S0V1P1B0	H	one bar with one dot to the right at mid height
+L02	6	S1V0P2B0	H	one dash, two dots side by side above
+L02	7	S0V0P3B1	H	bracket pair ( ) enclosing three vertically stacked dots
+L02	8	S1V0P3B0	H	one dash, three dots in a row above
+L02	9	S2V0P2B0	H	two stacked dashes; one dot above-left of upper dash; one dot below-right of lower dash
+L02	10	S0V3P4B0	H	three bars; three dots stacked on left; one dot right of the last bar

@@ -1,0 +1,10 @@
+line	col	A	B	flagged	crop	both_conf
+L03	4	9	9	A		A:M/B:H
+L04b	1	447	447	AB		A:L/B:L
+L04b	2	415	415	AB		A:L/B:L
+L04b	3	91	91	AB		A:L/B:L
+L04b	4	437	437	AB		A:L/B:L
+L04b	5	801	801	AB		A:L/B:L
+L04b	6	10031	10031	AB		A:L/B:L
+L04b	7	874	874	AB		A:L/B:L
+L04b	8	92	92	AB		A:L/B:L

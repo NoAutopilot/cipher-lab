@@ -1,0 +1,37 @@
+line	pos	sign	conf	sep_after
+L02	1	56	H	.
+L02	2	717	H	.
+L02	3	9362	H	.
+L02	4	81720	H	.
+L03	1	19736	H	.
+L03	2	14	H	.
+L03	3	618	H	.
+L03	4	9	H	: (colon inside group 9:77314)
+L03	5	77314	H	.
+L03	6	390	H	.
+L03	7	400	H	.
+L03	8	272	H	.
+L04	1	20	H	=
+L04	2	211	H	.
+L04	3	59	H	.
+L04	4	91	H	.
+L04	5	881	H	.
+L04	6	460	H	. -
+L04	7	80	H	.
+L04	8	401	H	.
+L04	9	70	H	.
+L04b	1	447	L	none (line clipped top and bottom; no own crop, between L04 and L05)
+L04b	2	415	L	.
+L04b	3	91	L	none
+L04b	4	437	L	. .
+L04b	5	801	L	none
+L04b	6	10031	L	.
+L04b	7	874	L	.
+L04b	8	92	L	.
+L05	1	871	H	.
+L05	2	2391	H	.
+L05	3	941	H	.
+L05	4	72050	H	.
+L05	5	67321	H	.
+L05	6	438921	H	.
+L06	1	150	H	. -
