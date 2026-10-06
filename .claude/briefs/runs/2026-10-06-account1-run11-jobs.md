@@ -160,3 +160,5 @@ decode --check 0; gaps_check.
 Same method and rules as R11A-HEIN2 (hits_HA918_r11a.tsv; >= 2 s apart, descriptive UA, <= 110 requests): for each Deel 3 page, cipher
 numbers / spaced deciphered passages / a printed number-to-word pair (C only when the edition states it). Check against the folder's target
 letter 341 codes. Update NOTES next step + Verdict.
+
+Wave 5 sessions (15:34 UTC): R11A-AVS9C session_01EtYtm4B6qr1ABmeuFWWvTp; R11A-HEIN3 session_01KpNSXbezLGqrNP8YzdmvtA.
