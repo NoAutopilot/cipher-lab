@@ -149,3 +149,48 @@ multiple-comparison correction stated in advance (e.g. Benjamini-Hochberg q 0.10
 codes; rule 3 AX-NAMES lesson). Codes that clear: note "per-code PASS" in key.tsv's note at M (no S without a verifier); codes that fail:
 key.tsv note "per-code FAIL", and if a code's value is no better than chance remove it from key.tsv (decode --check exit 0, recount U).
 Update NOTES.md, HYPOTHESES.md, Remaining gaps / Escalation; gaps_check.py pass; ROOM flag for a verifier (reading changed after AUDIT.md).
+
+## Wave 3 (spawned 06:2x UTC 6 Oct). Intake gate output (05:40 UTC) pasted per job.
+
+### R9-WVOV -- wvo-hessen-1564 f.23, VERIFIER (Opus; cap 4, box 70 min)
+Intake gate: `wvo-hessen-1564: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (now `partial`, R9-WVOALIGN).
+You are a VERIFIER, separate from the solver (R9-WVOALIGN, session_018jdurbcUgRBMVtqcdMv3yV). Claim under audit: NOTES.md section "f.23
+interlinear alignment" (R9-WVOALIGN, 6 Oct 2026): f.23 of WVO 1109 (Orange to Wilhelm of Hesse, 18 Sept 1564, HSAM) carries its own
+letter-over-sign interlinear decipherment; PREREG-R9-WVOALIGN gate PASS (pile ids 10 vs row-shuffle p95 3); key.tsv 10 C / 18 M; decode
+C 102 M 155. Follow CLAUDE.md "Verifier brief (template)" steps 1-5 in full, plus: (a) re-run the alignment and `tools/decode_key.py
+ciphers/wvo-hessen-1564 --check` yourself; check 10 random gloss-over-sign pairs against the row-pair crops by eye; check the
+row-shuffle control can vary on the statistic; (b) is the German gloss a period decipherment (grade H/C per rule 4 -- say which and why)
+and does it read as continuous text (paste it); (c) novelty search per the template, with phrase searches on the gloss text (Groen van
+Prinsterer 1e serie I, WVO's own Opmerkingen, Demandt's Nassau-oranische Korrespondenzen if reachable, Google Books / IA / HathiTrust EF);
+JSTOR rows to JSTOR-QUEUE.tsv in both families; (d) depth per rule 4a with `tools/depth_check.py`; (e) write AUDIT.md (N-class, key
+source per rule 10, depth, safe/unsafe sentence); if N3+, append the SECOND-OPINIONS-QUEUE.tsv row in the same session; (f) status.json:
+wvo-hessen-1564 has no entry -- add the result fields the way other targets' entries are shaped (read two first) and run
+`tools/near_check.py` if you touch NEAR.md. Do not decode beyond re-running the solver's scripts; do not touch other targets.
+
+### R9-WVOX -- wvo-hessen-1564 f.23 key vs the 1069 and 174 keys of willem-van-hessen-1567 (Opus; cap 3, box 60 min; disk only)
+Intake gate: as R9-WVOV; `willem-van-hessen-1567: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Same two correspondents, 1564 / 1567 / 1069's date: does f.23's interlinear key (wvo-hessen-1564/r9align/, key.tsv) share sign->letter values
+with willem-van-hessen-1567/siblings/key_1069.tsv and key_174_nomenclator.tsv? Build a shape concordance between the three sign inventories
+(by sign description/crop, from files on disk; crop step pasted if you cut any), pre-register (PREREG-R9-WVOX.md in wvo-hessen-1564, pushed
+before scoring) the statistic = number of concordant shapes carrying the same letter, control = letter labels permuted within each key
+(>= 1000 draws; it can vary on the statistic -- check). If PASS, apply f.23's C values to the 174 letter body's transcribed spans that have
+no value yet (willem-van-hessen-1567 files; M grade only), decode --check where a decode config exists, and say what reads. If FAIL, log it
+in both folders' HYPOTHESES.md. Coordinate with R9-WVOV (it writes AUDIT.md/status.json of wvo-hessen-1564; you do not).
+
+### R9-SIENA7B -- siena-concistoro-2308 no. 7, second blind line-crop pass for an error figure (Opus; cap 4, box 70 min)
+Intake gate: `siena-concistoro-2308: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R9-SIENA7 named next: the anchored-fit negative is conditional on transcription (control falls to gate at ~10% injected error; no. 7 error
+unmeasured). One DECODE login (tools/decode_browser_login.js 4796, as R8-SIENA7 did; scrub account name; image in scratchpad, sha1 vs
+manifest), R8-SIENA7's iiif_lines.py crop command (pasted), one blind Sonnet pass over the cipher lines (Bourdeau's sign labels supplied as
+the reference sheet, not his transcript; <= 3 calls, crops only), then measure per-sign disagreement vs Bourdeau's no07.tok (aligned; report
+substitution/insertion/deletion rates) as the error figure. If the error is below ~8%, say the R9-SIENA7 negative stands as control-backed at
+that error; if above, say it is a non-test and name the next step. No key change. Price: 3 passes x 1.5 + 1 reconciliation.
+
+### R9-ZESCH2 -- zeschau-seebach-1841 same word-parse objective, stronger search (Opus; cap 4, box 70 min; disk only)
+Intake gate: `zeschau-seebach-1841: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R9-ZESCH named next: control was below gate (0.0026 vs 0.60) but the true key scores 1181.7 > annealer best 957.4, so the search is the limit.
+Same objective (wordseg_syllabary.py, unchanged), a genuinely stronger search (parallel tempering or many-restart + crib-free greedy
+initialisation; say how it differs), PREREG-R9-ZESCH2.md pushed before scoring, matched control FIRST at the same N/inventory (>= 3 seeds,
+gate 0.60 unchanged). Control below gate: stop, log "non-test at this N" -- and since this is the second attempt at this objective, say
+explicitly whether a third would be rule 3's third-attempt case. Control at gate: run the target, judge the decode with a French corpus
+(say era) and the shuffled-target decode through the same judge (ARM-C1). Status partial; gaps_check pass.
