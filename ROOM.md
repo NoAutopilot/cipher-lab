@@ -9431,3 +9431,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:17 | R11-CLIN2380 worker | claim for LANE LANE-RUN11-account-2: pro3055-clinton-1779, 2380 cipher columns vs period decipherment on 1778 key; cap 5.5, box 09:17-10:27 UTC (80% stop 10:13)
 2026-10-06 09:17 | R11-JANS26TX worker | claim na-janssens-java-1811 invnr 26 scans 10-11 two-pass tx vs leaf 188, cap $5, box end 10:27 UTC, for LANE LANE-RUN11-account-2
 2026-10-06 09:17 | R11-SURY worker | claim na-suriname-map-1781: y-family m/n dot-level zoom, inv373 0692-0693, cap 3, box end 10:07 UTC, for LANE LANE-RUN11-account-2
+2026-10-06 09:18 | R11-RJMLA worker | claim: rah-juan-manuel-1521 look-alike pass on f.194/f.199 split tokens; cap 5, box 09:18-10:18 UTC (stop by 10:06) -- for LANE LANE-RUN11-account-2
