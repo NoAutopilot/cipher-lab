@@ -85,7 +85,10 @@ dividers), auto (default) = letters when the spec's alphabet says a-z/Latin/lett
 overrides with a long-format TSV (header with a `sign` column, DOT/COL rows dropped) or a text file.
 --shuffle-target SEED replaces the target ciphertext's own letters/tokens with a random permutation of themselves
 (Random(SEED).shuffle, redistributed back into the original message lengths, so N/K/design are unchanged) before
-the target solve; the control is unaffected (still the ordinary matched-corpus control). This is the false-positive
+the target solve; the control is unaffected (still the ordinary matched-corpus control, built from the unshuffled
+target's params["target_msgs"]: before R14-KAL12, 6 Oct 2026, the shuffled tokens were passed, so a family whose
+control reads the target's token order -- wordcode's Counter.most_common tie order -- built a different control under
+--shuffle-target than without it at the same --seed, which R14-KAL11 logged as 'not seed-reproducible'). This is the false-positive
 floor for a gate-plus-judge PASS on garbage of the same shape (CLAUDE.md rule 3); the decode file and row are
 marked shuffle=SEED so they never collide with the real target's own row. A judge PASS on this shuffled decode
 voids the judge as a gate for this family at this N (CLAUDE.md rule 3; ARM-C1, 26 Sept 2026: the en18 judge
@@ -321,6 +324,7 @@ def main(argv=None):
         msgs, mode = read_cipher_file(a.cipher, a.tokens)
     else:
         msgs, mode = read_spec_cipher(spec, a.tokens)
+    ctl_msgs = msgs  # the control is built from the unshuffled target (R14-KAL12, 6 Oct 2026: see --shuffle-target)
     if a.shuffle_target is not None:
         import random
         rng = random.Random(a.shuffle_target)
@@ -335,7 +339,7 @@ def main(argv=None):
     N, K = len(toks), len(set(toks))
     if N == 0:
         raise SystemExit("no ciphertext tokens read")
-    params.update({"N": N, "K": K, "lengths": [len(m) for m in msgs], "target_msgs": msgs,
+    params.update({"N": N, "K": K, "lengths": [len(m) for m in msgs], "target_msgs": ctl_msgs,
                    "messages_independent": "separate" in mode})
     N_display = N
     if a.control_n is not None:

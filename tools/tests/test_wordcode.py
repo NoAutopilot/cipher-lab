@@ -10,7 +10,10 @@
 (5) context option (SALV-CTX, 26 Sept 2026): read_context parses a TSV (header, blanks, '#' lines), the padded trigram
     sum scores exactly the run's own trigrams plus the 2*(order-1) that cross into the padding, a control with
     context=control carries context on its runs (ctxshare=0.5 blanks the last half), and on the zero-error toy control
-    the true key's recovery with context (2 x 30k, same seed) is at least the no-context recovery.
+    the true key's recovery with context (2 x 30k, same seed) is at least the no-context recovery;
+(6) bnd= boundary letter (R13-KAL10);
+(7) seed reproducibility (R14-KAL12, 6 Oct 2026): two family_run.py --control-only runs at the same --seed (different
+    PYTHONHASHSEED) print identical CONTROL lines, and so does a third with --shuffle-target 1.
 Run: python3 tools/tests/test_wordcode.py   (under two minutes)"""
 import json, os, random, subprocess, sys, tempfile, time
 
@@ -117,6 +120,25 @@ def main():
     wc._set_bnd({})
     assert wc.BND == "w" and wc.words_of("swet axe") == ["axe"]
     print("(6) bnd=x boundary, words_of, j refused, default w restored: ok")
+    # (7) seed reproducibility (R14-KAL12, 6 Oct 2026): the same --seed gives the same control in two processes with
+    # different PYTHONHASHSEED, and --shuffle-target leaves the control unchanged (it used to be built from the shuffled
+    # tokens, whose Counter.most_common tie order differs, so R14-KAL11 saw controls 'not seed-reproducible')
+    with tempfile.TemporaryDirectory() as d:
+        sp = os.path.join(d, "s.json")
+        json.dump({"slug": "wordcode-test", "ciphertext": [" ".join(m) for m in msgs], "alphabet": "sign tokens",
+                   "judge": {"language": "it"}}, open(sp, "w"))
+        base = [sys.executable, os.path.join(ROOT, "tools", "family_run.py"), sp, "--family", "wordcode", "--tokens",
+                "space", "--control-only", "--seeds", "2", "--restarts", "1", "--param", "iters=3000", "--param", "err=0.05",
+                "--out", os.path.join(d, "H.md")]
+        for f in ("alcuneletteredip00ferr.txt", "letterescrittea01vanzgoog.txt", "lettereinedited00tassgoog.txt"):
+            base += ["--corpus", os.path.join(ROOT, "tools", "data", "it16", f)]
+        outs = []
+        for hs, extra in (("1", []), ("2", []), ("1", ["--shuffle-target", "1"])):
+            r = subprocess.run(base + extra, capture_output=True, text=True, env=dict(os.environ, PYTHONHASHSEED=hs))
+            assert r.returncode == 0, r.stdout + r.stderr
+            outs.append([ln for ln in r.stdout.splitlines() if ln.startswith("CONTROL seed")])
+        assert len(outs[0]) == 2 and outs[0] == outs[1] == outs[2], outs
+    print(f"(7) same seed -> same control across hash seeds and under --shuffle-target ({outs[0][0].split(': ', 1)[1]}): ok")
     print(f"all ok in {time.time() - t0:.0f}s")
 
 
