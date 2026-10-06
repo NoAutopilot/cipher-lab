@@ -1,4 +1,4 @@
-# PREREG R12D-GRAZB (6 Oct 2026, written 16:1x UTC by date -u, before any strip is cut or looked at)
+# PREREG R12D-GRAZB (6 Oct 2026, written 16:07 UTC by date -u, before any strip is cut or looked at)
 
 Job: LANE-RUN12-account-4 R12D-GRAZB (`.claude/briefs/runs/2026-10-06-account4-run12-jobs.md`). Question: is the f.30 `zb`
 (key.tsv `zb NULL M`) the same sign as the fr.3040 no.6 barred z (N9-GRAZ class K2; reads R in 25 of 27 aligned places)?
