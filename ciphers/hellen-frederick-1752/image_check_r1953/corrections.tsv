@@ -1,0 +1,13 @@
+pos	image	line	decode_tx	image_value	confidence	readers	note
+40	13447	L04	1114	414	high	Sonnet pass A + reconciler	"405. 414. 990" -- one leading 1 too many in the transcription
+65	13447	L05	952	752	high	Sonnet pass A + reconciler	first figure matches the 7 of 764 on the same line
+549	13448	L13	898	838	high	Sonnet pass B + reconciler	"310. 838. 1272"; the repeated passage (L16) has 838 too
+682	13448	L21	128?3	1283	high	reconciler	doubtful digit settled: the hand's 8 is a barred loop
+716	13448	L23	23?8	278	high	reconciler	"979. 278. 998"
+829	13446	L08	8?09	809	high	reconciler	doubtful digit settled (barred-loop 8)
+124	13447	L09	66__8?__	668	high	Sonnet pass A + reconciler	doubtful digit settled; underlined
+757	13446	L03	28?0	280	high	reconciler	doubtful digit settled
+89	13447	L07	1050	1058	medium	Sonnet pass A + reconciler	last figure a barred loop (8) beside the plain 0s of 1500; 0/8 is this hand's main ambiguity
+136	13447	L09	806	886	medium	Sonnet pass A + reconciler	both inner loops barred
+386	13448	L03	142__6__9__0__3	1426 903	medium	Sonnet pass A + reconciler	one ink run with no dot, underline under 690; read as two groups 1426. 903 (the line already has 903 two groups earlier)
+671	13448	L21	42	43	medium	Sonnet pass B + reconciler	second figure has the round-bottomed 3 of 1013 on the same line, not the 2 of 422

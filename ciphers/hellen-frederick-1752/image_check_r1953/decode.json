@@ -1,0 +1,30 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "R1953_pipe_high.txt",
+   "key": "../key_r4369/key_decode.tsv",
+   "format": "pipe",
+   "style": "spaced",
+   "reading": "reading_R1953_high.txt",
+   "tokens": "reading_R1953_high_tokens.tsv",
+   "header": [
+    "# hellen-frederick-1752 R1953 re-decoded after the R7A-HEL53 image check (6 Oct 2026), corrections: high only (image_check_r1953/corrections.tsv).",
+    "# Key: key_r4369/key_decode.tsv unchanged (READ2-HEL, R4369 = BL Add MS 32276 f.44). ciphertext_R1953.txt (DECODE's transcription) is not modified.",
+    "# tokens {total}: {HCSMIU}"
+   ]
+  },
+  {
+   "ciphertext": "R1953_pipe_all.txt",
+   "key": "../key_r4369/key_decode.tsv",
+   "format": "pipe",
+   "style": "spaced",
+   "reading": "reading_R1953_all.txt",
+   "tokens": "reading_R1953_all_tokens.tsv",
+   "header": [
+    "# hellen-frederick-1752 R1953 re-decoded after the R7A-HEL53 image check (6 Oct 2026), corrections: high + medium (image_check_r1953/corrections.tsv).",
+    "# Key: key_r4369/key_decode.tsv unchanged (READ2-HEL, R4369 = BL Add MS 32276 f.44). ciphertext_R1953.txt (DECODE's transcription) is not modified.",
+    "# tokens {total}: {HCSMIU}"
+   ]
+  }
+ ]
+}

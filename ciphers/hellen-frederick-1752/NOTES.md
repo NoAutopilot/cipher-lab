@@ -1577,3 +1577,82 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370, R4372, R4376, R4386 and R4388 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2), ~$6
 Verdict: keep going: 2 internal gaps; cheapest next: image check of R1953 against DECODE's transcription for codes 1-800, ~$6
+
+## R7A-HEL53 (6 Oct 2026): image check of R1953 against DECODE's transcription (account 1 worker for LANE LANE-RUN7-account-1)
+
+Step run: the Remaining-gaps "next" of D2-HELR (rule 2: the image, not the transcription). Intake gate passed (lane brief, 6 Oct
+01:5x UTC). One DECODE browser login (`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 1953 <scratch> --guess-fullsize
+--delay 1700 --max-files 8`): **full-size images were served** for all three pages, plus DECODE's own transcription document. Kept in
+the scratchpad only, not committed (not public domain). sha1: IMG_R1953_I13447_P2.png 16a4504954eef2126946ae716606df895ea05e97,
+IMG_R1953_I13448_P3.png 16f742a99255e05c8ebfb100efc16adac8605320, IMG_R1953_I13446_P1.png f57cf8adb3b047041038635310b29cda0fd40f67
+(5472x3648, photographed sideways; reading order P2 = image 13447, P3 = 13448, P1 = 13446), DOC_R1953_D3616_3616.txt
+f08e2126a78fc4b778eee5ecdc725d9b3ecc4e68 (transcriber "KL", 26 Jan 2020, 2 h, manual).
+
+**Transcription = DOC.** `image_check_r1953/doc_tokens.py` splits the DOC by page and line: 846 groups, 0 digit mismatches with
+`ciphertext_R1953.txt` (P2 22 lines, P3 23, P1 9). So any error found below is DECODE's, carried unchanged into this folder.
+
+**Crops and reads.** Pages rotated upright; P3 and P1 levelled by 3.4 and 2.6 degrees (PIL) after `--deskew` produced duplicated
+bands; then `python3 tools/iiif_lines.py --image <page> --region ... --distance 115-150 --prominence 5 --max-width 1700 --overlap 120`
+(crops in the scratchpad). Three blind Sonnet calls, no transcription shown: pass A on page 2 and on pages 3+1 (first cut), pass B
+re-read of the bands the first cut had garbled (P2 L18-L22, P3 L12-L22, P1 L01-L09). `image_check_r1953/compare.py` aligns each read
+to the DOC per page by edit distance (`compare.tsv`, merged read `pass_merged.tsv`): 747 same, 13 same-with-doubt, 32 differ, 54 DOC
+groups no read reached (P3 L07, L22, L23 and the tail of P2 L22), 18 read-only (duplicate bands). Reconciliation (this worker, one
+unit): every differ/doubt token and every unreached line looked at on the levelled crops (6 review sheets + 2 hand cuts at the foot
+of P3). All 846 groups were seen in the image by at least one reader.
+
+**What the image shows.** This hand writes 8 as a loop with a slanted bar, close to its 0; almost every Sonnet-vs-DECODE split was
+that pair (308/300, 1458/1450, 284/204, 848/840, 998/990, 681/601 ...), and the image upheld DECODE in all but the cases below.
+The repeated three-line passage on P3 (DOC L11-L13 = L14-L16) is real ink, as Bourdeau's audit says. Underlining (single, double,
+triple) is real and DECODE's `_` marks follow it.
+
+`image_check_r1953/corrections.tsv` (12 rows; `ciphertext_R1953.txt` is not modified):
+
+| pos | DECODE | image | conf | key effect (R4369) |
+|---|---|---|---|---|
+| 40 | 1114 | 414 | high | U -> U (1-800) |
+| 65 | 952 | 752 | high | H "re" -> U (1-800) |
+| 549 | 898 | 838 | high | H "quel" -> H "que" (the repeated line has 838 too) |
+| 682 | 128?3 | 1283 | high | U -> S "obten" |
+| 716 | 23?8 | 278 | high | U -> U |
+| 829 / 124 / 757 | 8?09 / 668? / 28?0 | 809 / 668 / 280 | high | doubtful 8 settled; no grade change |
+| 89 | 1050 | 1058 | medium | S "mi" -> S "di" |
+| 136 | 806 | 886 | medium | H "avance" -> H "prince de" |
+| 386 | 1426903 (one group) | 1426 . 903 | medium | U -> S "et" + H "qu'" (one ink run, no dot) |
+| 671 | 42 | 43 | medium | U -> U |
+
+Re-decode with the R4369 key unchanged (`python3 tools/decode_key.py ciphers/hellen-frederick-1752/image_check_r1953`, `--check`
+exit 0, "reading up to date"; config `image_check_r1953/decode.json`, corrections applied by `apply_corrections.py`):
+
+| version | tokens | H | S | M | U |
+|---|---|---|---|---|---|
+| DECODE transcription (key_r4369/reading_R1953.txt) | 846 | 152 | 304 | 16 | 374 |
+| high-confidence corrections | 846 | 152 | 305 | 16 | 373 |
+| high + medium corrections | 847 | 153 | 306 | 16 | 372 |
+
+**Finding.** Codes 1-800 are not unread because of transcription. Of the 374 U tokens, the image confirms all but 8 as DECODE
+transcribed them, and none of those 8 moves a code from 1-800 into R4369's range except the two settlements above (1283, the
+1426/903 split). The 1-800 gap is a key gap, as the earlier tests assumed. Transcription error found: 3 high-confidence wrong groups
+(1114, 952, 898) and 4 medium, out of 846 (0.4-0.8%), plus 5 doubtful digits settled. Two key-reading tokens change value (952 "re"
+-> unread, 898 "quel" -> "que"). The main reading in `key_r4369/` is left as it was; adopting the corrections there is the lane
+orchestrator's call (it would change a counted reading).
+
+**Where it was not found:** no marginal key note, docket or interlinear decipherment on any of the three images (cleartext is only
+the heading, the opening sentence, "Je suis" and the signature line "/: signé :/ de Hellen", which is the form of a copy). Requests: de-crypt.org 9 (1 login + RecordsView + 3 thumbnails +
+3 full-size + 1 document), 1.7 s apart, no challenge. Subagent calls: 3 Sonnet reads + 1 reconciliation (this worker).
+
+## Remaining gaps (R7A-HEL53, 6 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U on DECODE's transcription; 459 of 847 (H 153, S 306) with the image-check corrections (image_check_r1953/)
+- codes 1-800 of the Hellen key (372 R1953 tokens) - blocker: no-key-material; the image check confirms the U tokens as transcribed (R7A-HEL53), period tables R4370/R4372 retired (rule 3), no other Hellen sheet in Add MS 32276 (NEAR3-HEL3, N6-HEL81); context-fit anneal untestable at this N (N5-HEL7); phrase-crib placement untestable at 8 Fagel pages (D2-HELFAGEL)
+- empty cells inside 801-1796 (14 tokens), the 16 M tokens and the 0/8 look-alike in S/H tokens - blocker: open-codes; this hand's 8 is a barred 0, and only the tokens a reader disputed were checked; next: a 0/8 pass over every 801-1796 token whose 0<->8 twin is also keyed with a different meaning, on the R7A-HEL53 crops, ~$2
+- the 1756 letter (R1049) - blocker: no-key-material; R4369, R4372 and R4376 do not read it (N6-HEL76), no 1756 Hellen sheet in R4377-R4408 (N6-HEL81)
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; both positional candidates retired by pre-registered tests with passed controls (N7-HELBC, D2-HELR); reopens only with new material
+
+## Escalation (R7A-HEL53, 6 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half; all Add MS 32276 records looked at (NEAR3-HEL3, N6-HEL81, N7-HELDK)
+- [x] clear-pages: Fagel 5177's clear Hellen copies looked at (N4-HEL5) and 8 pages of Dec 1751 transcribed as a phrase corpus (D2-HELFAGEL); context only
+- [x] known-keys: R4369 reads R1953; R4370/R4372 retired for 1-800; R4376 fails on R1049; R4388 and R4386 fail on 1763
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: fr18-bigram anneal untestable (N5-HEL7); phrase-crib placement untestable at 8 pages (D2-HELFAGEL); untried: the same instrument on the full scans 5-93 corpus, ~$30-35, low prior, or a further R4369-code letter if one is found
+- [x] image-check: R4369, R4370, R4372, R4376, R4386, R4388 read from full-size images; R1953 itself checked against DECODE's transcription (R7A-HEL53: 846/846 groups seen, 12 corrections, U unchanged in substance)
+- [x] retry: the R1953 image check (R7A-HEL53)
+Verdict: keep going: 1 internal gap; cheapest next: the 0/8 pass over keyed 801-1796 tokens on the R7A-HEL53 crops, ~$2 (the 1-800 key-rebuild on the full Fagel corpus stays ~$30-35, low prior)
