@@ -410,3 +410,6 @@ Search results only (rule 10). Status stays `open`. Script only, no vision.
 
 ### Remaining gaps / Next (after R8-RABY)
 Read pp.20-30 and p.61 of `UfnriIriq9UC` in a browser page view (owner's machine, LOCAL-QUEUE row is a suggestion here, not filed), or retry the PDF download from a later session after the 429 clears.
+
+### R9-HOUSE (account-4 worker, 6 Oct 2026, by date -u)
+LOCAL-QUEUE.tsv row L61 (ia-reader) filed for Preuss 1897 pp.20-30 and p.61, as R8-RABY's Next named; no existing row asked it (grep UfnriIriq9UC: 0). Google Books API livecheck 6 Oct 2026: HTTP 200. Status stays `open`; nothing read.

@@ -2916,3 +2916,6 @@ Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.t
 - [x] image-check: p.188 lines 50-61 and all five sibling cipher pages read from the page image (s.18; A3V2-THURBT, N8-THUR); P25-P28 pages (vol. 5 pp.100-101, vol. 3 pp.382, 383, 409) re-paired from the image (R8-THUR25)
 - [x] retry: one-vote boundary test v3-full PASSed its pre-registered gate (N8-THUR, 4 Oct 2026)
 Verdict: parked: every remaining gap is no-key-material or waiting-on ASKS row 139 (Bodleian Imaging Services quote)
+
+### R9-HOUSE (account-4 worker, 6 Oct 2026, by date -u)
+index.tsv P27/P28 `cipher_system` cells corrected to R8-THUR25 / AUDIT.md R8-THURV2 (same Manning key; 24 of 26 shared values agree on the page-image pairs; the 2/15 "different sub-key" note was an OCR-alignment shift). No other cell touched.
