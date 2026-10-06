@@ -37,3 +37,5 @@ article (pp.386-412) was read in full (it cites only the plain part of the 5 Sep
 and the readings of inks 53 and 54 were revised by a look-alike transcription pass (ink 63 gained six lines on f.194r). No prior print
 of this cipher passage was found by the second audit either.
 (The fragment "capitaine qu'il entend" now reads "caglitaine" at one look-alike-settled sign, f.171v L15; treat it as uncertain.)
+REVISION NOTE (6 Oct 2026, D1-F16104I depth re-check): a further gap re-read (R7A-VIV53) removed 16 letters and regraded others; the
+fragments quoted above are unchanged by it. Depth is held at "fragments read".

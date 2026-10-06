@@ -3593,22 +3593,22 @@
       "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr16104-vivonne-spain-1572",
-      "fields_source": "fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 2 -- ink piece 53, its audit 1 (VIV53-A1, account 3); fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 2 (VER1-VIV, account 2, 5 Oct 2026) -- second audit of inks 53, 54, 63",
+      "fields_source": "fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 2 -- ink piece 53, its audit 1 (VIV53-A1, account 3); fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 2 (VER1-VIV, account 2, 5 Oct 2026) -- second audit of inks 53, 54, 63; fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 4 (D1-F16104I, account 1, 6 Oct 2026) -- ink 53 depth re-check",
       "document_id": "BnF fr.16104 ff.170r-171v (ink 53): Jean de Vivonne, sr de Saint-Gouard, to the duc d'Anjou, Madrid, 5 Sept 1572",
       "title": "Saint-Gouard to the duc d'Anjou, 5 Sept 1572 (BnF fr.16104 ff.170r-171v): French fragments read under Tomokiyo's published 1572-74 key",
       "grade": "N3 (two audits), key published (S. Tomokiyo, credited). 4,521 tokens: H 3539, M 768, U 214; gloss gate on ff.170r-171r FAIL at floor (0.577 < 0.60; null p95 0.353); b2 order gate PASS (whole piece -1.667 vs p99 -1.843) and wrong-key specificity PASS (0.176 vs p99 0.051; 44/200 wrong keys pass b2 alone); judge not a gate; rule-7 --check up to date, viv53b_test.py re-run byte-identical.",
       "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Using Satoshi Tomokiyo's published 1572-74 key, we read fragments of Saint-Gouard's cipher letter to the duc d'Anjou of 5 September 1572 (BnF fr.16104 ff.170r-171v); a repeated cipher group reads 'vostre alte[sse]', the style due to its addressee. No printed plaintext or separate decipherment of this letter was located in the editions searched.",
       "text": "unknown",
       "depth": "D1",
-      "depth_pct": 82.9,
+      "depth_pct": 85.2,
       "depth_unread": {
-        "names_codes": "not identified (213 U labels outside key.tsv; no nomenclator in key.tsv)",
-        "other": "540 M"
+        "names_codes": "not identified (212 U labels outside key.tsv; no nomenclator; key.tsv gives no label the meanings f, m, p)",
+        "other": "436 M"
       },
-      "depth_check": "key held out on ink 40 vs clerk decipherment 41 (N5-VIVK) + b2 order gate and 200-wrong-key specificity (N6-VIV53B, re-run byte-identical by VIV53-A1) + 12-sign ciphertext repeat decoding to the addressee's style 'vostre alte-' (VIV53-A1); interlinear-gloss gate FAIL at its 0.60 floor; no content check; longest-H-run re-measured on the current file (VER1-VIV, 5 Oct 2026)",
-      "depth_note": "Post-N7-VIV53L reading: H 3641 of 4394; longest all-H run 37 letters per line / 41 across line ends, not clean French; best clauses 'intention a entrer en ce' 20 and 'de contradiction il ne' 19 letters; below the ~42-letter authentication distance (VER1-VIV re-check: hold D1)",
-      "depth_by": "session_01Vap6PnSM2j7fVXirX6Dtd2; session_017QymPyiMyH1SA7cJyvVoDD",
-      "depth_date": "5 Oct 2026",
+      "depth_check": "key held out on ink 40 vs clerk decipherment 41 (N5-VIVK) + b2 order gate and 200-wrong-key specificity (N6-VIV53B, re-run byte-identical by VIV53-A1) + 12-sign ciphertext repeat decoding to the addressee's style 'vostre alte-' (VIV53-A1); interlinear-gloss gate FAIL at its 0.60 floor; no content check; longest-H-run re-measured on the current file (VER1-VIV, 5 Oct 2026); R7A-VIV53 G reading: gates re-run byte-identical and decoded text checked for missing letters (no f, m, p) (D1-F16104I, 6 Oct 2026)",
+      "depth_note": "Post-R7A-VIV53 reading (reading_piece53_G.tsv): H 3732 of 4380; longest all-H run 37 per line / 41 across line ends, not clean French; best clauses 'intention a entrer en ce' 20, 'de contradiction il ne' 19; below the ~42-letter authentication distance; the decode has no f, m or p (no key label carries them), the D2 path is a key-change step for those (D1-F16104I re-check: hold D1)",
+      "depth_by": "session_01Vap6PnSM2j7fVXirX6Dtd2; session_017QymPyiMyH1SA7cJyvVoDD; session_01U1pR2Yrm1tsZKGCNdhQ6aT",
+      "depth_date": "6 Oct 2026",
       "decode_status": "Non-decrypted"
     },
     {

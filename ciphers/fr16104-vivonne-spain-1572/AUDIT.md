@@ -441,3 +441,61 @@ note: class without a reading, not counted: Saint-Gouard to the duc d'Anjou, 5 S
 note: class without a reading, not counted: Saint-Gouard to Charles IX, 10 Oct 1573 (BnF fr.16105 ff.190r-194r): F (D1)
 unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 12; legacy ungraded: 0
 ```
+
+## AUDIT 4 (D1-F16104I, 6 Oct 2026) -- ink 53 depth re-check on the R7A-VIV53 reading
+
+Verifier D1-F16104I (account 1, worker for LANE DEFAULT-account-1-20261006-1240, session_01U1pR2Yrm1tsZKGCNdhQ6aT), 6 Oct 2026
+13:06-13:3x UTC by date -u. Brief: .claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md "D1-F16104I". Not the solver of any
+ink 53 reading and none of the earlier verifiers. No decoding; no reading, key or transcription file changed. Depth only (rule 4a);
+the N-class is not re-examined (AUDIT 2 VER1-VIV holds N3 for ink 53; no new search was run).
+
+### 1. What is under audit
+The reading revised after VER1-VIV: reading_piece53_G.tsv (R7A-VIV53, 6 Oct 2026 01:48 UTC, one-reader gap tiles re-read under
+PREREG-R7VIV53G; decoy control 40/48 = 0.833 PASS). Rule 7: `tx/viv53G_decode.py --check` and `tx/viv53L_decode.py --check` both
+"up to date" (exit 0). `tx/viv53G_decode.py --gates` re-run in full here (4 min 7 s): tx/viv53G_result.json regenerated
+**byte-identical** (no git diff): C1 f.103r -1.715 vs p99 -1.893, C2 ink 54 -1.658 vs -1.829, whole piece -1.604 vs p99 -1.838,
+all PASS; wrong keys real margin 0.234 vs p99 0.050 (max 0.064), 32/200 wrong keys pass b2 alone -> PASS.
+
+### 2. Per-token grades, before and after (recounted here from the files)
+| reading | tokens | H | M | U | H % |
+|---|---|---|---|---|---|
+| N6 (AUDIT 2 VIV53-A1) | 4,521 | 3,539 | 768 | 214 | 78.3 |
+| N7-VIV53L (AUDIT 2 VER1-VIV) | 4,394 | 3,641 | 540 | 213 | 82.9 |
+| R7A-VIV53 G (this audit) | 4,380 | 3,732 | 436 | 212 | 85.2 |
+H = key-source grade on a settled sign (Tomokiyo's published key, held out on ink 40 vs decipherment 41, N5-VIVK); no C, no S.
+The 13 changed lines (diff of decode columns L -> G) are all single-letter removals (16 tokens judged absent) or M -> H regrades;
+no line gains a letter and no fragment is joined to another.
+
+### 3. Depth (rule 4a)
+- Longest all-H run: 37 letters per line (f.170r L11 "etoutceraiooitauecqaeointeligencedeoa", salad in the middle), 41 across
+  line ends (f.171v L16-17 "lierarieniaaesteaduertauungaesregiaenttae"; f.171r L27-28, salad) -- the same runs as VER1-VIV
+  measured on 53L. Registered stretch statistic (PREREG-R7VIV53G, re-run): top-1 20 before and after ("intention a entrer en ce",
+  word division + 1 line end + 1 look-alike settled + 1 ': :' join), null p99 19-21. By-eye clauses unchanged: "de contradiction il
+  ne [p]ou[r]roit doubter" (repairs), "grand bien q[u]i en adviendroit" (25, 1 repair), "vostre alte-" (repeat, 2x).
+- **No clause reaches the ~42-letter authentication distance without liberties**, no code value reads in two contexts (letter
+  key, no nomenclator), and this verifier cannot write one true, specific sentence about what the letter says.
+- **Why the gap passes cannot move this to D2 (observation, measured here):** the decoded text (4,168 letters) contains **no f, m,
+  p, v, x or y at all** -- key.tsv / key_tomokiyo.tsv give no transcription label the meanings f, m or p (Tomokiyo's Vivonne1
+  homophones for them have no separate label, NOTES.md N5-VIVK). French prose has roughly 7% f+m+p, so about one letter in 14 is
+  forced into a U gap or a wrong value. The U label `e` stands before "rontiere(s)" 3 of 3 times (f.170v L06, f.171v L03, L12) and
+  before "aict" twice (f.170v L12, f.171v L12); the labels `o`, `r`, `c`, `2`, `V` (33/32/30/27/16 U tokens) sit in similar
+  places ("co_t", "_artir", "regiaent" with a for m). Any clause above ~42 letters would need these as liberties. This is the
+  D2 path: map Vivonne1's f, m, p cells to the U labels, as a pre-registered key-change step with the wrong-key control
+  (the same shape as NOTES.md's "ink 63 key questions"), not more label passes.
+- **Verdict: hold D1 ("fragments read"). Not raised, not lowered.** depth_pct 85.2. depth_check: as AUDIT 2 VER1-VIV, plus gates
+  re-run byte-identical on the G reading and the missing-letter count.
+
+### 4. Postmortem and propagation
+- No over-claim found: NOTES.md R7A-VIV53 says "does not join the fragments" and "No depth suggestion"; status.json says
+  "fragments read". status.json ink-53 row updated to the G counts (depth_pct 82.9 -> 85.2, unread U 212 / M 436).
+- SO-VIV53 prompt: the fragments it quotes are unchanged by the G pass ("doubteranentrasten" -> "doubteraentrasten" only); a
+  dated note is added to second-opinions/PROMPT-chatgpt-viv53.md. The SECOND-OPINIONS-QUEUE row stays queued.
+- No vision call was made: the depth verdict rests on the decode files and gates, and no stretch long enough to check on the image
+  exists. Requests: none. Subagent calls: none.
+
+### 5. depth_check output
+`python3 tools/depth_check.py` (exit 0, 6 Oct 2026, after the status.json update; the ink-53 line and the total):
+```
+note: class without a reading, not counted: Saint-Gouard to the duc d'Anjou, 5 Sept 1572 (BnF fr.16104 ff.170r-171 (D1)
+unique solves (N3+ and D2+): 17 -- D4 1, D3 2, D2 14; not counted D0/D1: 13; legacy ungraded: 0
+```
