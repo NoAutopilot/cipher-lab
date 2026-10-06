@@ -15,4 +15,10 @@ Sök-API, 24 Sept 2026). `sok.riksarkivet.se` is captcha-walled to automated acc
 **Where to send it:** Riksarkivet i Stockholm/Täby, same fonds as R1 (Beskickningsarkivet från Biby) — combine
 into one fonds-level reproduction order rather than two separate ones, per QUEUE.md's own note on this row.
 
+**Siblings to consider adding (fact, R8-CELS, 6 Oct 2026):** Westrin's inventory of Diplomatica Turcica (*Meddelanden från
+Svenska Riksarkivet* III, 1891, p. 413 and 415) lists, in the Riksarkivet's own Diplomatica Turcica series (not Biby): Gustaf
+Celsing's letters to Kanslipresidenten 1746-1770, among them letters from G. W. Sillén 1753 and 1758; his letters to
+Kanslikollegium 1746-1760, among them a letter from Sillén 1759; and Sillén's own "dag- och brefböcker". The inventory does not name
+the Biby volume above, whose shelfmark is unchanged. Digitisation status of these siblings not yet checked.
+
 **Status:** waiting on you. Stage 2 (verified unsolved) — see NOTES.md's check-solved sweep, 24 Sept 2026.

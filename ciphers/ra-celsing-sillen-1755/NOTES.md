@@ -111,3 +111,44 @@ While waiting: grep Staf 1977 (legationspredikanterna) full text for "Sillen" in
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: check archive.org availability of `meddelandenfrns05riksgoog` (a Google-scan item) and, if its full text is open, grep its _djvu.txt for Celsing/Sillen to read the accession entry naming the Riksarkivet volume; only if the item is lending-only does the read become a person's (the folder's own condition); ~$0.5 (estimate). The copy order follows from that volume number.
+
+## Meddelanden accession entry read (R8-CELS, 6 Oct 2026)
+
+Step run as named in "While waiting" above. Intake gate output: `ra-celsing-sillen-1755: blocked (line 3) -- already terminal, nothing to gate`.
+
+Availability: archive.org metadata API (6 Oct 2026, 03:5x UTC) for `meddelandenfrns05riksgoog`: collection `americana`, no
+`access-restricted-item` flag, files `_djvu.txt`, `.pdf`, `_text.pdf` and `_page_numbers.json` all downloadable without login. Not
+lending-only, so the read is not a person's. Correction to the A2P4-CELS line above: the item is not "new series vol. 5"; its title
+page reads *Meddelanden från Svenska Riksarkivet*, utg. C. T. Odhner, **Tredje bandet, 1885-1890** (Stockholm 1891; IA metadata
+`volume: 3`, `date: 1877` is wrong). The entry sits in "Förteckning öfver i Riksarkivet förvarade Ministeriella handlingar: X.
+Turcica, af Th. Westrin", p. 411 ff. (the Riksarkivet's own Diplomatica Turcica series of the Kanslikollegium/ministerial papers),
+**printed p. 413 = IA leaf 435** (inner pagination 169), per `_page_numbers.json` (confidence 100).
+
+The entry, from the _djvu.txt (OCR normalised for å/ä/ö; column layout as printed, years in a separate column):
+- "Kommissionssekreteraren, sedan 1747 Residenten, sedan 1750 e. o. Envoyéen Gustaf Celsings bref till Kanslipresidenten [fn 4]" --
+  1746-1770; "Densammes bref till Kanslikollegium [fn 5]" -- 1746-1760; "» riksdagsberättelser" -- later years (OCR column
+  alignment of the year column for this row uncertain: 1762-1768 / 1761, 1765, 1769, 1771).
+- fn 4: "Deribland ett par bref till Kongl. Maj:t samt bref från Dragomanen Louis d'Anton [OCR "Lomis tVAnton"] 1750, 1763, Kommissionssekreterarne
+  Georg Wilhelm Sillén 1753, 1758 och Ulrik Celsing 1758, 1763, 1768, 1770 samt Chanceliern Juan Antonio Molinari 1760."
+- fn 5: "Deribland bref från Legationspredikanten Petrus Nensén 1750 och Kommissionssekreteraren G. W. Sillén 1759."
+- p. 415-416 (leaves 437-438), "III. Öfriga handlingar": "Kommissionssekreteraren Georg Wilhelm Silléns dag- och brefböcker"
+  (year column for this row not settled from the OCR: a bracketed run "1734-1735, 1737-1738, 1741-1745, 1750-1754, 1758-1759"
+  stands beside the Banneval / Sillén / Heidenstam rows; which ranges are Sillén's needs the leaf image).
+
+What this establishes (a search result, not an identification of the target volume):
+1. The A2P4-CELS snippet reading "till Georg Wilhelm Sillen ... och Ulrik Celsing" was a snippet misread: the footnote lists letters
+   **from** Sillén (1753, 1758, 1759) **to** Gustaf Celsing, filed among Celsing's dispatches in Diplomatica Turcica.
+2. The entry does **not** name the target volume. The target (SE/RA/721512/II/II 1/II 1 B/4) is in "Beskickningsarkivet från Biby",
+   the Celsing family's legation archive, a different fonds from Diplomatica Turcica; Westrin's 1890 inventory covers only the
+   latter. The target's shelfmark stands as already recorded; no volume number changes.
+3. Two Riksarkivet series hold the other side and the neighbourhood of the target's correspondence: Sillén's letters to Celsing in
+   Diplomatica Turcica (Celsing's dispatches to Kanslipresidenten 1746-1770, fn 4; to Kanslikollegium 1746-1760, fn 5) and Sillén's
+   own day- and letter-books (dag- och brefböcker) in the same series. A copy order for the target could add these as siblings
+   (possible plain copies or replies to the Celsing-Sillén drafts, and the letter-books may carry the same cipher). Neither is
+   checked here for cipher; neither's digitisation status is checked here (Sök-API not queried this session).
+
+Requests: archive.org 3 (metadata, _djvu.txt, _page_numbers.json); no 403/429. Vision 0, subagents 0.
+
+Verdict (update): blocked, unchanged (needs a copy of the undigitised Biby volume). Next: the Riksarkivet Sök-API digitisation flag
+for the Diplomatica Turcica Celsing dispatches 1746-1770 and Sillén's dag- och brefböcker (~$0.5), then add them to REQUEST.md's
+order as siblings if not digitised; if digitised, they are a free image check for the same cipher.
