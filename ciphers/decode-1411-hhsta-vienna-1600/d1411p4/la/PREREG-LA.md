@@ -1,4 +1,4 @@
-# PREREG-LA: look-alike re-read of the p.4 4/5 forms (written 6 Oct 2026 18:52 UTC by date -u, before any re-read)
+# PREREG-LA: look-alike re-read of the p.4 4/5 forms (written 6 Oct 2026 18:46 UTC by date -u, before any re-read)
 
 Job R12A-D1411LA (LANE LANE-RUN12-account-1). The scoring pre-registration is PREREG-D1411P4.md (commit afc9de42d), re-used
 unchanged: same frozen tables, same statistic, same controls, same PASS rule, same letter and gloss tests. Only the input
