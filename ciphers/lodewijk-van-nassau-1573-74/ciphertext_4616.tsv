@@ -169,7 +169,7 @@ p1_L11	18	73	H		agree
 p1_L11	19	112	H		agree
 p1_L11	20	82	H		agree
 p1_L11	21	1	M	B:-; lvn16 A3:10? B3:10?	gap
-p1_L12	1	90	H		agree
+p1_L12	1	40	H	was 90 H	image300 lvnv2: 4 with crossbar, as 40 at p1_L14/4 (AUDIT.md R12-LVNV2; crop 04616_p1 L08) (pre pos 1)
 p1_L12	2	81	H		split lvn16 from pre pos 2 (81/28/2), part 1/3; image300 A3=B3
 p1_L12	3	28	H		split lvn16 from pre pos 2 (81/28/2), part 2/3; image300 A3=B3
 p1_L12	4	2	H		split lvn16 from pre pos 2 (81/28/2), part 3/3; image300 A3=B3
@@ -191,7 +191,7 @@ p1_L12	19	4	H		agree
 p1_L12	20	31	H		agree
 p1_L12	21	121	H		agree
 p1_L12	22	13	M	B:132; lvn16 A3:13? B3:13?	differ
-p1_L13	1	79	H		agree
+p1_L13	1	39	H	was 79 H	image300 lvnv2: round-bowled 3, no flat top (AUDIT.md R12-LVNV2; crop 04616_p1 L09) (pre pos 1)
 p1_L13	2	7	H		agree
 p1_L13	3	26	H		agree
 p1_L13	4	31	H		agree
@@ -212,7 +212,7 @@ p1_L13	18	81	H		agree
 p1_L13	19	21	H		agree
 p1_L13	20	34	M	B:3; lvn16 A3:31? B3:31?	differ
 p1_L14	1	78	H	was 75 M; B:78	image300 lvn16 (A3=B3=78; pre pos 1)
-p1_L14	2	91	H		agree
+p1_L14	2	81	H	was 91 H	image300 lvnv2: two-loop 8, no tail (AUDIT.md R12-LVNV2; crop 04616_p1 L10) (pre pos 2)
 p1_L14	3	12	H		agree
 p1_L14	4	40	H		agree
 p1_L14	5	102	H		agree
@@ -247,14 +247,14 @@ p1_L15	13	67	H	was 67 M	image300 lvn16 (A3=B3=67; pre pos 12)
 p1_L15	14	82	H		agree
 p1_L15	15	21	H		agree
 p1_L15	16	81	H		agree
-p1_L15	17	36	H		agree
+p1_L15	17	31	H	was 36 H	image300 lvnv2: 3 then the hand's 1-stroke (AUDIT.md R12-LVNV2; crop 04616_p1 L11) (pre pos 16)
 p1_L15	18	3	H		agree
 p1_L15	19	101	H		agree
 p1_L15	20	78	H		agree
 p1_L15	21	81	H	was 8 M; B:81	image300 lvn16 (A3=B3=81; pre pos 20)
 p1_L15	22	21	M	lvn16 A3:21? B3:21	agree-flagged
 p1_L16	1	61	H		agree
-p1_L16	2	26	H		agree
+p1_L16	2	20	M	was 26 H	image300 lvnv2: oval 0, 2 heavily re-inked, possible writer's correction; value 'q' doubtful, grade M (AUDIT.md R12-LVNV2; crop 04616_p1 L12) (pre pos 2)
 p1_L16	3	30	H		agree
 p1_L16	4	85	H		agree
 p1_L16	5	122	H		agree
@@ -274,7 +274,7 @@ p1_L16	18	37	H		agree
 p1_L16	19	91	H	was 81 S; 89	image300 lvn16 (A3=B3=91; pre pos 18)
 p1_L16	20	114	M	B:144; lvn16 A3:112? B3:114	differ
 p1_L17	1	25	H	was 25 M; B:-	image300 lvn16 (A3=B3=25; pre pos 1)
-p1_L17	2	91	H		agree
+p1_L17	2	81	H	was 91 H	image300 lvnv2: closed two-loop 8, no tail; 150-dpi passes never agreed (A 91, B 31), the H/agree label was wrong (AUDIT.md R12-LVNV2; crop 04616_p1 L13) (pre pos 2)
 p1_L17	3	21	H	was 21 M; B:31	image300 lvn16 (A3=B3=21; pre pos 3)
 p1_L17	4	61	H		agree
 p1_L17	5	115	H		agree

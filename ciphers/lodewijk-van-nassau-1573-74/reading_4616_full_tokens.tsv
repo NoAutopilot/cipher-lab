@@ -152,7 +152,7 @@ p1_L11	18	73	c	C
 p1_L11	19	112	l	C
 p1_L11	20	82	e	C
 p1_L11	21	1	n	M
-p1_L12	1	90	f	C
+p1_L12	1	40	u	C
 p1_L12	2	81	e	C
 p1_L12	3	28	s	C
 p1_L12	4	2	n	C
@@ -174,7 +174,7 @@ p1_L12	19	4	n	C
 p1_L12	20	31	t	C
 p1_L12	21	121	NULL	C
 p1_L12	22	13	p	M
-p1_L13	1	79	d	C
+p1_L13	1	39	u	C
 p1_L13	2	7	o	C
 p1_L13	3	26	s	C
 p1_L13	4	31	t	C
@@ -195,7 +195,7 @@ p1_L13	18	81	e	C
 p1_L13	19	21	r	C
 p1_L13	20	34	t	M
 p1_L14	1	78	d	C
-p1_L14	2	91	g	C
+p1_L14	2	81	e	C
 p1_L14	3	12	p	C
 p1_L14	4	40	u	C
 p1_L14	5	102	i	C
@@ -230,14 +230,14 @@ p1_L15	13	67	b	I
 p1_L15	14	82	e	C
 p1_L15	15	21	r	C
 p1_L15	16	81	e	C
-p1_L15	17	36	u	C
+p1_L15	17	31	t	C
 p1_L15	18	3	n	C
 p1_L15	19	101	i	C
 p1_L15	20	78	d	C
 p1_L15	21	81	e	C
 p1_L15	22	21	r	M
 p1_L16	1	61	a	C
-p1_L16	2	26	s	C
+p1_L16	2	20	q	M
 p1_L16	3	30	s	C
 p1_L16	4	85	e	C
 p1_L16	5	122	NULL	C
@@ -255,7 +255,7 @@ p1_L16	18	37	u	C
 p1_L16	19	91	g	C
 p1_L16	20	114	l	M
 p1_L17	1	25	r	C
-p1_L17	2	91	g	C
+p1_L17	2	81	e	C
 p1_L17	3	21	r	C
 p1_L17	4	61	a	C
 p1_L17	5	115	l	C

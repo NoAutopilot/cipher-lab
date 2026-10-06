@@ -1,0 +1,7 @@
+line	pre_pos	old	new	confidence	note
+p1_L12	1	90	40	H	image300 lvnv2: 4 with crossbar, as 40 at p1_L14/4 (AUDIT.md R12-LVNV2; crop 04616_p1 L08)
+p1_L13	1	79	39	H	image300 lvnv2: round-bowled 3, no flat top (AUDIT.md R12-LVNV2; crop 04616_p1 L09)
+p1_L14	2	91	81	H	image300 lvnv2: two-loop 8, no tail (AUDIT.md R12-LVNV2; crop 04616_p1 L10)
+p1_L15	16	36	31	H	image300 lvnv2: 3 then the hand's 1-stroke (AUDIT.md R12-LVNV2; crop 04616_p1 L11)
+p1_L16	2	26	20	M	image300 lvnv2: oval 0, 2 heavily re-inked, possible writer's correction; value 'q' doubtful, grade M (AUDIT.md R12-LVNV2; crop 04616_p1 L12)
+p1_L17	2	91	81	H	image300 lvnv2: closed two-loop 8, no tail; 150-dpi passes never agreed (A 91, B 31), the H/agree label was wrong (AUDIT.md R12-LVNV2; crop 04616_p1 L13)

@@ -12,6 +12,8 @@ H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
 def rd(p): return list(csv.DictReader(open(p), delimiter='\t'))
 pre = rd(os.path.join(H, 'ciphertext_4616_pre.tsv'))
 al = {(r['line'], r['position']): r for r in rd(os.path.join(H, 'aligned.tsv'))}
+# R12-LVN16C (6 Oct 2026): R12-LVNV2's six image-checked H-row corrections (AUDIT.md), applied before the settles.
+cor = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvnv2.tsv'))}
 ctl = {'A3': [0, 0], 'B3': [0, 0]}
 for r in al.values():
     if r['role'] == 'control':
@@ -25,6 +27,12 @@ for r in pre:
     a = al.get((r['line'], r['position']))
     sign, conf, alt, why = r['sign'], r['confidence'], r['alt'], r['why']
     act = ''
+    c = cor.get((r['line'], r['position']))
+    if c:
+        assert sign == c['old'], (r['line'], r['position'], sign, c['old'])
+        alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
+        sign, conf, why = c['new'], c['confidence'], c['note'] + f' (pre pos {r["position"]})'
+        log.append([r['line'], r['position'], c['old'], r['confidence'], '', '', 'lvnv2-corrected'])
     if a and a['role'] == 'target' and gate:
         A, B = a['A3'], a['B3']
         clean = A == B and '?' not in A and '~' not in A and A != '-'
