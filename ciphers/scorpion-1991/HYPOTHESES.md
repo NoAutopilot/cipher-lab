@@ -47,6 +47,14 @@ Can the control vary on the statistic? Yes: recovery is per-position letter agre
 seed; the cycle term changes the solver's search, not the scoring. The module's offline test must show the cycle term
 reading an easy cycling control (N=400) at least as well as lam=0, so a low N=70 figure is the N, not a broken solver.
 
+**Amendment to PREREG R11-SCORPCYC (6 Oct 2026, 14:0x UTC, before any scored run; only the module's offline test had run).**
+The violation count is changed from the period-m check to a gap check: between two consecutive occurrences of one sign
+in a letter's sign sequence no other sign may appear twice (in a strict cycle every other sign appears exactly once);
+each extra appearance is one violation. Reason: on the easy offline control (N=400, K=40, seed 1, 4 restarts) the
+period-m term stalled the anneal (recovery 0.030 at lam=2 vs 0.953 at lam=0) because one wrong sign shifts m and rescores
+the whole letter; the gap check reads 0.995 at lam=2 (0 violations) vs 0.953 at lam=0. Runs, N, K, seeds, restarts,
+corpora, lam values and the 0.6 gate are unchanged.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
