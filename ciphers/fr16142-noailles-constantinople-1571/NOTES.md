@@ -1245,7 +1245,7 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB blind second read (control 0.667 < 0.80 gate, licenses nothing), D2-NOXB2 blind read with valid control (0.714 < 0.80, licenses nothing; whole-line eye not to be re-tried)
 Verdict: keep going: 9 internal gaps; cheapest next: c262 gloss L09-L13 native cut and read, ~$0.5
 
-## R7A-NOX262: c262 gloss L09-L13 native cut and read (6 Oct 2026, 01:47-02:0x UTC by date -u, account-1 worker)
+## R7A-NOX262: c262 gloss L09-L13 native cut and read (6 Oct 2026, 01:47-01:59 UTC by date -u, account-1 worker)
 Brief: `.claude/briefs/runs/2026-10-06-account1-run7-jobs.md` R7A-NOX262 (LANE LANE-RUN7-account-1). Step still undone at start (D2-NOXB2's
 Verdict). Requests 0 (native canvas 262 on disk), subagents 0; one print-aware read by this worker, as DEF1-NOXG's (Charrière III p.258 known).
 
@@ -1295,6 +1295,16 @@ change in the reference can re-anchor the whole match and move R by 0.23. The pa
 of its size to the same effect. The nulls use the same statistic, so the registered verdicts stand as registered, but any single test0 R on
 these short texts carries this swing; a verifier should not read pass B's 0.55 as a better decode than pass D's 0.33.
 
+**Dupuy text-check residue (brief's second step, 01:57-01:58 UTC by date -u).** The date-only matches were already text-checked by RUN6-NOXDUP
+(c330, c358, c409, c245/c464 confirmed; c472-473 partial). Its one open step, "check Dupuy 133L-134" for the c472 8 March 1573 Queen body,
+was run: Gallica ark:/12148/btv1b100339270 canvases 131-133 at 1400 px (3 requests, gallica.bnf.fr, 2 s apart, all 200). The only Queen
+letter there is 131R-133L, "A la Royne ... Madame, Jusques aujourd'huy je ne me retrouve de plus fresche lettre de voz Majestez que celle du
+treize et dixsept Decembre ...", dated "De la Vigne de Pera ce vingt uniesme Avril mil cinq cens soixante et treze" (133L), on the Chaoux,
+Pologne and the Bassa; read by eye page by page, no "oultre le duplicata", "ce petit mot" or "presente le sr de Germiny". 133L's next piece is
+"Du Roy, Monsieur d'Acqs ...". So c472's 8 March Queen body is in neither Dupuy 122-124 nor 131R-133L; with dupuy521_dates.tsv showing no
+other Queen heading between 124L and 133L, Dupuy 521 most likely omits it (the 12 March PS on 123R is the only part copied). The gap is
+closed as a search result, not a finding; c472-473 stays "partial" in letters_coverage terms (shared PS phrase only).
+
 **Revision after AUDIT** (rule 10 propagation; AUDIT.md not edited by this job): status.json's fr16142 depth_check quotes RUN6-NOXREAD's
 nulls b p99 0.2496 and d p99/max 0.2581/0.2749; on the L09/L13-corrected gloss these are 0.2525 and 0.2546/0.2721 (R 0.3506 unchanged,
 verdict unchanged). Flagged in ROOM for a verifier.
@@ -1309,7 +1319,6 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - Bridge from atlas piles to key.tsv covers only 17 piles - blocker: not-attempted; next: place c262 tiles under the owner's labels so more piles carry a key.tsv value, ~$1
 - c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
 - c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
-- c472-473 8 March Queen letter body not located in Dupuy 122-124 - blocker: not-attempted; next: check Dupuy 133L-134, ~$0.3
 - "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
 
 ## Escalation (R7A-NOX262, 6 Oct 2026)
@@ -1325,4 +1334,4 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [n/a] key-rebuild: a published key exists
 - [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262); c510-516 native line bands; owner sort of the atlas piles
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read
-Verdict: keep going: 10 internal gaps; cheapest next: exact-LCS variant of test0, pre-registered, ~$0.3
+Verdict: keep going: 9 internal gaps; cheapest next: exact-LCS variant of test0, pre-registered, ~$0.3
