@@ -738,3 +738,48 @@ Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditio
 - [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; circled/plain 9 read void (premise, R9-BAL103B); 9 shape split untestable on the N = 3 control (R10-BAL103C); planned: enlarge the f.171r control (Remaining gaps)
 - [x] retry: decode_key --check and fr17 re-judge after the 9 context rule (R9-BAL103, 6 Oct 2026): -1.537 -> -1.445
 Verdict: keep going: 1 internal gap; cheapest next: enlarge the f.171r 9 control (L5 onward, blind pass + f.172r alignment) to >= 7 known 9s, then run r10/PREREG.md, ~$3.5
+
+## Enlarged f.171r 9 control (R10-BAL103D, 6 Oct 2026)
+
+Worker R10-BAL103D (account 1, LANE LANE-RUN10-account-1), 10:08-10:1x UTC 6 Oct 2026 by `date -u`. Key source unchanged: published
+(Tomokiyo 1644 table + R7C's c = p). Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **Material.** f.171r page lines 5-18 cut with `tools/iiif_lines.py --ark btv1b9001389d --canvas 366 --region 900,2470,3250,1530
+  --centres 213,366,548,751,1026,1198,1381 --follow-slope 400 --prefix f366x` (lines 5-11; the auto profile mis-banded, overlay
+  checked) and `--region 900,3930,3250,1500 --follow-slope 400 --prefix f366y` (lines 12-18, auto centres, overlay checked);
+  crops in `r10/images/`. Two blind Sonnet passes (one per block, tx/PASS_INSTRUCTIONS.md, crops and key sheet only, never the
+  decipherment): `r10/f171r_L05-11_passA.tsv`, `r10/f171r_L12-18_passA.tsv`. The f.172r period decipherment read on by eye past
+  line 7 to line 19: `r10/f172r_decipherment_ext.txt` (struck words omitted; uncertain readings listed in its header).
+- **Known-9 rule fixed before the second block was read** (r10/PREREG.md addendum, pushed ca856a318 / 7ce9efdfa): strict = aligned
+  letter in {i, r, s} and two matching letters on each side; loose (calib's rule) = aligned letter in {i, r, s}, descriptive.
+- **Alignment** (`r10/enlarge9.py`, `--check` exits 0; `r10/nines.tsv`): f.171r L1-L18 blind passes, 442 decoded letters, 306
+  matched against the decipherment (0.692, against R7C's 0.767 on L1-4 alone). **29 standalone 9 tokens**, all listed with their
+  aligned letter and context.
+- **Strict known 9s: N = 6, all value s** (L4 "soing", L9 "estoit", L11 "dans", L15 "est", L15 "entremis", L18 "ses"); k_i = 0.
+  `r10/power9.tsv`: with k_i = 0 there is no i class at all, and even N >= 7 needs k_i >= 2. **The registered gate cannot pass:
+  NON-TEST at the enlarged control, shape read not run, key.tsv / exceptions.tsv / reading / judge untouched** (fr17 -1.445, R9-BAL103).
+- **Descriptive (not gated):** loose rule 22 9s aligned in {i, r, s}: s 15, r 4, i 3. Of the 3 i: L4 "pris" (R7C's), L18
+  "intentions", and L5 "faire" -- the last is very likely the word code =81 faire read by the pass as "9 [i]" (the same "8i" group
+  recurs on L11 before "nommer", read "8 [i]"); by eye, not a correction to the pass. Every strict-known 9 on this hand is s, and the
+  r/i alignments sit in poorly aligned stretches. This is the f.171r hand in September; whether f.50 (April) uses 9 the same way is
+  not tested here.
+- What would settle the f.50 9 next, with a different instrument (the shape split is untestable on this sibling: 18 of about 26
+  lines read, 0 strict i): a pre-registered fr17 comparison on f.50 of "9 = s everywhere" against the R9 context rule, with the
+  matched synthetic control r8/ already uses -- ~$1.5.
+Where not found: no plaintext of f.50 used or consulted; f.171r L19-L26 and f.172r past line 19 not read.
+Requests: gallica.bnf.fr 7 (2 overview canvases, 3 decipherment regions, 2 cipher regions), >= 2 s apart. Subagent calls: 2 (Sonnet).
+
+## Remaining gaps (R10-BAL103D, 6 Oct 2026)
+Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditional), judge fr17 FAIL -1.445 vs real_p05 -0.852 after the 9 rule; the page decode sits near the r ~ 0.25-0.30 synthetic noise band (r8/result.tsv)
+- f.50 confusable sign pairs (m/mm/mt, tt/venus, venus/q, x/xc/xs/xbar, mm/tt, 9/venus; R/u, b/bt) - blocker: waiting-on the owner's answer on the f.50 sign sorter sorter/out/baluze103_f50_sorter.html, to be published by the account-3 orchestrator (ROOM flag R9-BAL103, 6 Oct 2026); two machine third readers settled one-directionally (R8-BAL103, R8-BAL103B), so per CLAUDE.md Usage 6 the pass is a person's
+- ambiguous 9 (i|r|s; 42 tokens on an fr17 context lean, grade M) - blocker: not-attempted; the shape split is untestable on the f.171r control (R10-BAL103D: strict N = 6, all s, k_i = 0); next: pre-registered fr17 comparison on f.50 of "9 = s everywhere" vs the R9 context rule, with r8/'s matched synthetic control, ~$1.5
+
+## Escalation (R10-BAL103D, 6 Oct 2026)
+- [x] siblings: f.171r L1-4 scored against f.172r (R7C-BAL103K: A 0.767 vs permutation p99 0.311, PASS); L5-L18 blind-passed and aligned for the 9 control (R10-BAL103D, 6 Oct 2026: 0.692 matched, strict 9s N = 6 all s)
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's table reads f.50 above a permutation null in both blind passes (R8-BAL103, 6 Oct 2026: -1.566/-1.602 vs p99 -1.99/-1.96); judge fr17 FAIL -1.445 after the 9 rule (R9-BAL103)
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: R8-BAL103's registered test puts the failure in the transcription, not the table; no April-table search or rebuild is licensed
+- [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; 9 shape split untestable on the enlarged f.171r control (R10-BAL103D, strict k_i = 0); planned: fr17 test of 9 = s on f.50 (Remaining gaps)
+- [x] retry: decode_key --check and fr17 re-judge after the 9 context rule (R9-BAL103, 6 Oct 2026): -1.537 -> -1.445
+Verdict: keep going: 1 internal gap; cheapest next: pre-registered fr17 comparison on f.50 of "9 = s everywhere" vs the R9 context rule with r8/'s matched control, ~$1.5

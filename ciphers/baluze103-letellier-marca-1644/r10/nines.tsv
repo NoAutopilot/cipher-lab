@@ -15,4 +15,17 @@ line	token_index	sign	aligned_letter	context_D	context_P	neighbours_match	known
 10	223	9	-	elrop[i]coile	-	no	no
 11	249	9	s	tedan[i]barce	ledan[s]barce	yes	yes
 11	262	9	-	ooxme[i]dedes	-	no	no
-# letters D 287, decipherment span P 393, matched 193 (0.672)
+12	273	9	s	eprqo[i]tnycl	eurpo[s]teaux	no	no
+13	313	9	s	sduuu[i]queqo	dupay[s]quece	no	no
+14	333	9	r	fquee[i]tauft	ueles[r]caual	no	no
+15	344	9	s	leese[i]tfort	leese[s]tfort	yes	yes
+15	354	9	s	nremi[i]pours	tremi[s]pourf	yes	yes
+15	361	9	s	rsreu[i]srese	rereu[s]sirce	no	no
+16	373	9	s	esecl[i]eproq	tquil[s]eprop	no	no
+16	385	9	-	edete[i]sacom	-	no	no
+17	397	9	r	pagoe[i]dgcei	pagne[r]enche	no	no
+18	410	9	s	ourle[i]begic	ourle[s]bieni	no	no
+18	418	9	m	egico[i]erdes	infor[m]erdes	no	no
+18	425	9	s	rdese[i]integ	rdese[s]inten	yes	yes
+18	432	9	i	integ[i]ons	ntent[i]onset	no	no
+# letters D 442, decipherment span P 536, matched 306 (0.692)

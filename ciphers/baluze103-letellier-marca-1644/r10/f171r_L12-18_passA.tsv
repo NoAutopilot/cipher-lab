@@ -1,0 +1,15 @@
+f366y_L01_s1	f c delta 9 6 ?{6 with t bar} a ?{long slashed loop} n i 12 19 P 13 ?{m-like loop} ?{n-z loop} u a 6 rho ?{k-like} n
+f366y_L01_s2	n i 12 19 P 13 ?{m-like loop} ?{n-z loop} u a 6 rho ?{k-like} n |>z ?{q-like} theta delta
+f366y_L02_s1	13 14 ?{n-z loop} 10 x 15 xc rho f u 7 t hbar m m ?{ff loop} 29 9 =11
+f366y_L02_s2	15 xc rho f u 7 t hbar m m ?{ff loop} 29 9 =11 |>c eps 12 19
+f366y_L03_s1	6 u m f c 19 xc rho f ?{z with x} xc =11 ?{h-loop} u 9 6 10 4 xc 6
+f366y_L03_s2	rho f ?{z with x} xc =11 ?{h-loop} u 9 6 10 4 xc 6 |>19 u 14
+f366y_L04_s1	7 u 9 6 [fort] ?{6 with t bar} a ?{h-loop} z u b rho 9 =9 8 ?{g with i} f u m 9 7 ?{n-z loop}
+f366y_L04_s2	a ?{h-loop} z u b rho 9 =9 8 ?{g with i} f u m 9 7 ?{n-z loop} |>f ?{k-like} u
+f366y_L05_s1	7 2 14 ?{h-loop} 12 19 9 u 23 z delta c delta ?{n-z loop} u [de] 6 u 9
+f366y_L05_s2	19 9 u 23 z delta c delta ?{n-z loop} u [de] 6 u |>8
+f366y_L06_s1	ct ?{a struck through} 12 22 b 23 ct y delta u 9 t y x ?{a-like} theta ?{f-x loop} 18 a
+f366y_L06_s2	23 ct y delta u 9 t y x ?{a-like} theta ?{f-x loop} 18 |>a [pour]
+f366y_L07_s1	19 u 9 11 ?{q} u y 18 x delta 9 ?{o7} 14 dt [de] 8 theta 9 rho
+f366y_L07_s2	y 18 x delta 9 ?{o7} 14 dt [de] 8 theta 9 rho |>a 6 bt y ?{h-loop} 9 delta a 7
+# notes: unsure: L01 sign after 6 (6 with t bar) and long slashed sign before n i; n-z loop signs (several); 'ii' read as 11; 'q' sign in L07 and L01_s2; '7 2' read as 7 then 2 (raised 2); 29 in L02 could be 2 9; h-loop sign (h/g with loop) uncertain; ?{ff loop} could be hz-like; bracketed words [fort] [de] [pour]; the first s2 tokens are approximate where crops are cut at edges.
