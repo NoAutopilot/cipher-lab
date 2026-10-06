@@ -1,0 +1,25 @@
+# R11-SURTV tile specs (6 Oct 2026). cls: MAPY / LETY / DREF (PREREG.md). src file, x,y = sign centre located by eye (ruler views),
+# hw = half width, up/down = rows above/below centre. LETY rows are R11-SURY tokens.tsv t01-t21 with its own centres.
+# d01 (2061 L06:5 [v-tall]) dropped before scoring: the readers order h r [v-tall] but the line shows h, a y-shape, r; segmentation cannot be placed (PREREG drop rule).
+# d09 (letter L06 versuymd final d) dropped before scoring: m and d after the y cannot be told apart on the crop (PREREG drop rule).
+tok	cls	ref	src	x	y	hw	up	down
+m01	MAPY	2039 head:0	2039	768	115	70	90	110
+m02	MAPY	2039 a:2	2039	183	565	40	55	55
+m03	MAPY	2039 a:8	2039	352	565	40	55	55
+m04	MAPY	2039 g:0	2039	1900	675	40	55	55
+m05	MAPY	2061 L02:10	2061	452	140	30	40	45
+m06	MAPY	2061 L04:10	2061	478	240	30	40	45
+m07	MAPY	2061 L06:18	2061	640	372	30	40	45
+m08	MAPY	2061 L06:22	2061	773	372	30	40	45
+m09	MAPY	2061 L07:0	2061	455	500	30	40	45
+m10	MAPY	2061 L09:36	2061	1125	640	30	40	45
+m11	MAPY	2061 L10:11	2061	355	725	30	40	45
+d02	DREF	2061 L08:27 v	2061	985	555	30	40	45
+d03	DREF	2061 L08:45 v	2061	1580	555	30	40	45
+d04	DREF	2061 L08:50 v	2061	1727	555	30	40	45
+d05	DREF	2061 L10:0 v	2061	150	725	30	40	45
+d06	DREF	2039 c:0 v	2039	1412	565	40	55	55
+d07	DREF	letter L01 den d	p0692_L01	513		70		
+d08	DREF	letter L07 den d	p0692_L07	1498		70		
+d10	DREF	letter M01 versuimd d	s0693	1440	230	70	95	75
+d11	DREF	letter M02 omstandigheeden d	s0693	890	395	70	95	75

@@ -1,0 +1,8 @@
+# R11-SURTV crop step (6 Oct 2026), run from passes/surtv_r11 on files already on disk (no network):
+python3 ../../../../tools/iiif_lines.py --image ../../images/2061_battery_legend_native.jpg --out c2061 --prefix m2061 --debug
+#   -> 15 bands, centres (region y) 95 144 195 240 290 339 382 445 511 558 609 643 701 735 787
+python3 ../../../../tools/iiif_lines.py --image ../../images/2039_legend_native.jpg --region 0,0,2100,700 --out c2039 --prefix m2039 --debug
+#   -> 4 bands, centres 123 385 566 675
+# Sign centres were then placed by eye on ruler views of those bands (ruler.py) and tiles cut from the native region files by
+# make_tiles.py (tokens.tsv); letter tiles from R11-SURY's crops (inv373_0693_r10/crops, inv373_yfam_r11/c93n). c2039/c2061 band
+# crops are not committed (re-derivable with the two commands above).

@@ -1,0 +1,10 @@
+MAPY: n=11 Y-form 10 (0.909), V-form 1, other 0, two dots 2
+LETY: n=21 Y-form 21 (1.000), V-form 0, other 0, two dots 14
+DREF: n=9 Y-form 0 (0.000), V-form 9, other 0, two dots 0
+A (MAPY Y-form) 0.909  B (DREF Y-form) 0.000  T 0.909  control mean 0.003 p99 0.505  P(null>=T) 0.0001
+LETY Y-form 1.000  -> SAME SIGN
+MAPY: n=11 Y-form 9 (0.818), V-form 2, other 0, two dots 2
+LETY: n=21 Y-form 21 (1.000), V-form 0, other 0, two dots 14
+DREF: n=9 Y-form 0 (0.000), V-form 9, other 0, two dots 0
+A (MAPY Y-form) 0.818  B (DREF Y-form) 0.000  T 0.818  control mean 0.002 p99 0.616  P(null>=T) 0.0001
+LETY Y-form 1.000  -> SAME SIGN  [sensitivity: F1=0 for ['B05']]
