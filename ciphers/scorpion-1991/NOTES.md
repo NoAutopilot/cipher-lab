@@ -269,7 +269,7 @@ constrained design hypothesis (a cycling/sequential homophonic, per Pelling 2020
 N=180) -- no such family is on the shelf (tools/families/, checked 3 Oct 2026); next: a cycling-homophonic family module plus
 its control at N=180, a tool job, ~$3-4, worth briefing only if the lane wants a design hypothesis on a hoax-risk target.
 
-## Cycling-homophonic family, matched controls (R11-SCORPCYC, 6 Oct 2026, 13:42-13:51 UTC)
+## Cycling-homophonic family, matched controls (R11-SCORPCYC, 6 Oct 2026, 13:42-13:50 UTC)
 
 Intake gate (lane, 13:40 UTC): `scorpion-1991: open (line 1) -- edition/page or full-text-search citation found within 6
 lines`. Script only; no vision call, no host contacted.
