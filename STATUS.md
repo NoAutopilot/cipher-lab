@@ -5165,6 +5165,27 @@ R9526: the calibration missed by 1 token -- the worker named a f.150 clerk-spell
 counts it); (3) lodewijk 4610 p3: pass B on crops 12-22 only + rescore, ~2 (defect repair, not a third method attempt); (4) suriname: remaining 0614-0798
 n=2 (~44) and 0270-0598 n=2 (~80) scans, low yield so far; (5) kaliningrad: a different design family (KAL8 step 2).
 
+## LANE LANE-RUN12-account-1 handoff (session_01NQQk5gfYfSCVJn2DyEdxFZ, account 1), 6 October 2026 (closed 19:0x UTC: a-h runnable backlog worked in four waves, lane about 52.4 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run12-jobs.md; folders a-h, NEXT-STEPS runnable rows only
+(next_steps.py --hot-only exit 0). Gate 0a: SESSION-SWEEP-account-1 still `claimed` since 5 Oct 22:40, past the 90-min wait, proceeded. Queue-row
+flags (oldenbarnevelt R14-OLDF2, august G4) were already done. Gallica answered all session (one Colbert sweep stopped once at its error limit).
+17 Opus sessions (14 D, 3 D-: ECKV 1.05x, ECKLEG 1.00x, BALS 1.94x), workers 48.03 + orchestrator ~4.4 (get_session). five_hour `allowed` throughout.
+- fr16142-noailles: VERIFY-BACKLOG count rows settled (R12A-NOXV): both N0 D0, not countable; c262 depth_pct 1.8.
+- eckert-1862: Lehigh graded per token (R12A-ECKV: C 8 M 4); Leghorn/Legend/Leopard swept and graded (R12A-ECKLEG + verifier R12A-ECKV2: C 47,
+  gloss 1, M 12, 0 Hurlbut); Legend Butler 13 vs Canby 10 over overlapping dates is a rule-4 conflict in HYPOTHESES.md, unresolved.
+- fr16045-pisany: f.275r pisrs control/null finished (ours = random-relabel null max); 4 shape-settled T36 labels committed (C 360->364, M 191->187),
+  verifier R12A-PISV confirmed and carried into AUDIT.md.
+- decode-2678: the six 1664 Gravel leaves are clear; the Mél. Colbert route is exhausted; ASKS 150 filed, REQUEST.md drafted (R12A-REQ2678).
+- decode-1411: p.4 248 numerals; T21r beats shuffled and shift controls but stays below the leaf gloss (no PASS); 4/5 look-alike pass a non-test
+  (line crops too small).
+- fr3151-seure: Tournon fo. 22r cut and read twice (err 0.32); held-out-half gate FAIL (0.377 vs p95 0.408), no key test reached.
+- fr5160: Colbert 26 part III sweep finished, 374/375 canvases clear (679 image 404 twice). heinsius-vanhaersolte: all 103 Deel 3 pages read, no
+  cipher beyond 588. august-van-saksen: WVO 175 pp.3-8 show one f-shape only, Qf stays M. baluze167: f.228 owner sorter built (preflight PASS).
+Open for the next a-h lane: (1) account-3 orchestrator: publish ciphers/baluze167-davaux-1637/sorter170 (R12A-BALS flag 18:21) and queue the gate-7
+check of decode-2678 REQUEST.md (R12A-REQ2678 flag 18:30); (2) decode-1411 4/5 look-alike on per-number enlarged cuts, ~$3; (3) fr3151-seure fo. 22r
+owner sign sorter, ~$3; (4) august 126 Qf vs Pf blind shape-identity sort, ~$2.5; (5) fr5160 canvas 679 one fetch, ~$0.2.
+
 ## LANE LANE-RUN11-account-1 handoff (session_01VY6JLgy3WfXhUMpgVLxBbE, account 1), 6 October 2026 (closed 16:2x UTC: a-h backlog worked in six waves, lane about 47.8 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run11-jobs.md; folders a-h. Gate 0a: SESSION-SWEEP-account-1
