@@ -10,3 +10,5 @@ Opened 6 Oct 2026 (R14-SUR2039). Rule 3: each row gives the target number beside
 | 6 Oct 2026 | R15-SURALIAS | A5 0730 `[other: f-like]` = sheet long f `f` (i), image-checked | 7/7 = 1.000; scan A 0.954 -> 0.955 | alias share mean 0.225 p99 0.714 | PASS |
 | 6 Oct 2026 | R15-SURALIAS | A2 every 0758 reader `s` (and `s s`) = [sh-lig] (h) | 6/9 = 0.667; scan A 0.947 -> 0.936 (drop 0.011 > 0.010 tolerance) | alias share mean 0.154 p99 0.500; scan C1 p99 0.569 | FAIL (scan-A clause; misses L01 p, L12 v, L13 i: the blanket alias is too broad, reader s also covers the sheet's s = p code) |
 | 6 Oct 2026 | R15-SURALIAS | A1 on 0758 (1 token); A3 0758 `i j` = [ij] (4 tokens, 4/4) | n_al 1 / 4 | alias share p99 1.000 / 1.000 | non-test (n_al < 5) |
+| 6 Oct 2026 | R15-SUR758 | 0758 reader `s` tokens image-labelled SH (6 of 9) = [sh-lig] (h); PREREG f53d915f1 | 5/6 = 0.833; scan A 0.947 -> 0.942 | class share mean 0.138 p99 0.667; scan C1 p99 0.574 | PASS |
+| 6 Oct 2026 | R15-SUR758 | 0758 `i j` image-labelled ONE (4 of 4) = [ij] (m/n) | 4/4 = 1.000 | class share p99 1.000 | non-test (n_al < 5) |

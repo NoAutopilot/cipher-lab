@@ -1,0 +1,4 @@
+0758 before: pairs 11, signs 318, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 284, A 0.947; C1 mean 0.524 p99 0.590 max 0.605 -> SAME SYSTEM (DP)
+0758 after : pairs 11, signs 312, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 295, A 0.942; C1 mean 0.512 p99 0.574 max 0.597 -> SAME SYSTEM (DP); aliased tokens 10
+  0758 A2 -> [sh-lig] (image SH): n_al 6, agree 5, share 0.833; C1 share mean 0.138 p99 0.667; scan A 0.947 -> 0.942 -> PASS
+  0758 A3 -> [ij] (image ONE): n_al 4, agree 4, share 1.000; C1 share mean 0.409 p99 1.000; scan A 0.947 -> 0.942 -> non-test (n_al < 5)
