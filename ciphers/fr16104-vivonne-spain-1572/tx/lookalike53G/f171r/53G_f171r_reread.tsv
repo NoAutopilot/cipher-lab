@@ -1,0 +1,51 @@
+item	label	conf	second	note
+1	c	M	a	small open c before oo
+2	NONE	L		faint line start
+3	d	H		curled-back ascender
+4	#	M		crossed bars
+5	o	H		small round
+6	o	M	NONE	round
+7	d	M		curled d
+8	d	M	S	tall curl sign
+9	y	L	g	scribble swash
+10	m	H		three humps
+11	z	M	3	flat top slash
+12	2	L		curl
+13	NONE	L		unclear
+14	:	H		dots
+15	d	M	S	tall stroke sign
+16	t	M		t with loop
+17	:	H		dots
+18	:	H		dots
+19	d	M	S	tall sign
+20	{curl}	M	g	looped S curl
+21	:	H		dots
+22	NONE	L		unclear
+23	o	M		small loop
+24	p	H	4	descender crossbar
+25	:	H		dots
+26	tz	H		t+z
+27	S	M	P	long stroke below
+28	NONE	M		swash tail
+29	NONE	M		thin stroke of p
+30	P	M		pi sign
+31	:	H		dots
+32	:	M		dots
+33	c	M	a	small c
+34	:	H		dots
+35	{curl}	M		curl under o
+36	o	H		round o
+37	NONE	M		part of S stroke
+38	:	H		dots
+39	NONE	L		single dot low
+40	tz	H		t+z
+41	o	H		round
+42	NONE	M		none seen
+43	p	H		long descender
+44	d	M	S	tall curl sign
+45	d	M	S	tall curl sign
+46	NONE	M		flourish
+47	g	H		g with bar
+48	tz	M		tz-like
+49	NONE	L		unclear
+50	y	H		y
