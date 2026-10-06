@@ -1,0 +1,55 @@
+item	label	conf	second	note
+1	:	M		two dots
+2	S	L	NONE	tall stroke
+3	p	M	4	p with blob
+4	3	H		round 3
+5	z	L	p	unclear
+6	z	M	2	z shape
+7	@	M		big curl
+8	m	M		humps
+9	g	M		g hook
+10	y	H		y
+11	:	L		dots
+12	d	M		ascender curl
+13	S	M		long stroke
+14	NONE	L		no sign
+15	NONE	L		dot only
+16	:	H		two dots
+17	tz	M		tz
+18	y	M		y
+19	y	H		y
+20	o	M	a	small o
+21	:	H		two dots
+22	@	M		curl
+23	:	H		two dots
+24	z	M	2	z-like
+25	:	H		two dots
+26	p	M	4	p with bar
+27	y	L	NONE	y
+28	NONE	L		gap
+29	NONE	L		part of word
+30	4	L	p	crossed p
+31	z	L	3	z end
+32	:	M		two dots
+33	:	M		two dots
+34	z	L		z end
+35	p	L	r	yp
+36	z	L		z end
+37	5	M		loop tail
+38	:	M		two dots
+39	y	M		y
+40	o	M		o in loop
+41	NONE	L		stem
+42	X_NEW	M		big loop
+43	o	M		o
+44	o	L		unsure
+45	NONE	L	c	blank left
+46	p	M		p
+47	p	L		yp
+48	P	M		pi
+49	NONE	L		gap
+50	:	M		dots
+51	g	M	curl	o with tail
+52	o	L		unsure
+53	{dash}	M		lead-in dash
+54	2	M	z	2-like
