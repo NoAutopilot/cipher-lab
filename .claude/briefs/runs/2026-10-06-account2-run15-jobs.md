@@ -214,3 +214,22 @@ R10-CLIN3868/R11-CLIN2380 did: cells matching the printed f.381 text on the 1778
 passes per page + 1 reconciliation at ~1.5 each; stop before starting a unit that would cross 80% of cap or box. Report where f.406 carries text
 beyond the f.381 extract (grade H only from a period decipherment, else S with the gate), --check if a reading file is written, flag a verifier
 in ROOM if any text is added. Reuse check_3868.py / the 2380 scripts; do not rewrite them.
+
+## Wave 5 (spawned 18:4x UTC; last wave, lane closes when both report). Intake gate output (18:4x UTC) pasted per job.
+
+### R15-CLIN407 -- pro3055-clinton-1779: 3853 cipher continued on p.407 (Image 1058) against the printed f.381 text (Opus; cap 4.5, box 60 min)
+Intake: `pro3055-clinton-1779: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+R15-CLIN3853 (e66b18fd2): p.406 matches the printed f.381 text 191/197 under PREREG 9cca7e5a5 and stops at "about Vermont"; the cipher continues on
+p.407 (Image 1058). Same method and scripts as R15-CLIN3853 (reuse its PREREG gate shape; write a short PREREG addendum for p.407 before scoring):
+fetch Image 1058 once, confirm label, cut column crops (paste the command), 2 blind passes + 1 reconciliation at ~1.5 each, stop before a unit
+that would cross 80% of cap or box. Report whether p.407 carries text beyond the f.381 print; any added text is graded S with the gate (H only
+with a period decipherment) and flagged in ROOM for a verifier; --check if a reading file is written. Keep the "25 vs 28 sail" witness conflict
+logged, not resolved.
+
+### R15-SURV2 -- na-suriname-map-1781: verifier on R15-SUR758's [sh-lig] class (Opus, verifier hat; cap 2, box 40 min)
+Intake: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+ROOM flag R15-SUR758 18:22: 0758 image-labelled [sh-lig] PASS 5/6 0.833 vs C1 p99 0.667 (PREREG f53d915f1; passes/inv373_0758_tok_r15/). You are
+not R15-SUR758, R15-SURALIAS or R15-SURV. Re-run its re-score (must reproduce), check the PREREG predates the run (git order), eye 3 of the 6
+SH tokens and the OTHER token on the crops, and decide whether a [sh-lig] key entry is licensed (pooled with R15-SURALIAS's 0730 ss-like 7/7)
+and at what grade. If licensed, make the key entry through the folder's key/exceptions route with decode --check exit 0, carry it into
+AUDIT.md (carry-over) and any SO row for this target; if not, say why in AUDIT.md. Class unchanged unless the evidence moves it.
