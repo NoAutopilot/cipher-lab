@@ -326,17 +326,17 @@ exit 0
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 11 Beckwith/Kimber/Caldwell entries in Cipher No. 2 (section 8 and DEF1-ECK64, 5 Oct 2026: H 273, C 6, I 10, M 1, `decode_no2.py --check` exit 0); the rest of the ledger untranscribed.
 - corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
-- Jan-Feb 1864 entries in the old vocabulary - blocker: not-attempted; section 5; next: read mssEC 67 (No. 9) or the No. 12 template and decode a sample of entries (cost not given in the folder; estimate), ~$3
+- Jan-Feb 1864 entries in the old vocabulary beyond the four-entry sample - blocker: not-attempted; sample read 6 Oct 2026 (R7A-ECK64 section below: mssEC 67's handwritten meanings read 4 of 4 entries, 33 H 1 M, all four printed in the OR and agreeing but for one rank conflict); next: transcribe the remaining entries of pages 1-20 (27 Jan-early Mar 1864, about 30 entries, excluding the Caldwell/Beckwith No. 2 entries) and table the further mssEC 67 lines they need, incl. pp.[11]-[15] and [18] not yet read (Pagan, Pagoda, Castor, Cuba, Cadmus, Hammer, Audit), ~$4
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
 - [ ] siblings: mssEC 25 second copy read for E4/E5 (Second reader, 24 Sept 2026; four corrections applied); mssEC 18 opened 5 Oct 2026, pp.50-60 text, no E4/E5 copy
 - [x] clear-pages: OR prints matched for 17 of 20 entries as the check (section 4)
 - [x] known-keys: Cipher No. 1 (mssEC 41) and Cipher No. 2 (mssEC 47) are the period key books in use
 - [x] print: OR series I sweep, ORN, Butler and Fox correspondence, Lincoln Collected Works (section 4, AUDIT.md)
-- [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries
+- [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries; for the Jan-Feb 1864 old vocabulary the period book is mssEC 67 (filled-in, Tomokiyo's No. 9), read on 9 pages for the sample (R7A-ECK64, 6 Oct 2026)
 - [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026); N2-E Spit re-read in mssEC 47, mssEC 48 and the ledger (D2-ECK64S, 5 Oct 2026: Spit = Near in both books, ledger Spit; conflict logged, not resolved)
 - [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
-Verdict: keep going: 1 internal gap; cheapest next: Jan-Feb 1864 entries in the old vocabulary (read mssEC 67 or the No. 12 template, decode a sample), ~$3 (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
+Verdict: keep going: 1 internal gap; cheapest next: the rest of the Jan-Feb 1864 old-vocabulary entries (pages 1-20 of mssEC 19, with key-no9.md extended from mssEC 67 pp.[11]-[15], [18]), ~$4 (updated R7A-ECK64, 6 Oct 2026: four-entry sample read with mssEC 67, decode_no9.py --check exit 0). Earlier note: (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
 
 ## mssEC 18 check for E4/E5 copies, 5 Oct 2026 (RUN6-ECK, LANE-RUN6 wave 2)
 
@@ -393,3 +393,38 @@ Witnesses:
 Result: not a transcription error on our side and not a difference between the two key books. Both period key books give Spit = Near; the ledger's code word is Spit; the printed clear text has "men". The likeliest account is a slip by the encoding clerk in Washington (Men's own code words Summer, p.22 l.20 L, sits six rows above on the same page) that the receiving operator corrected from sense, but nothing in the four witnesses shows that, so it is not asserted. Rule 4: logged as a data conflict with its witnesses, not settled by majority; key-no2.md's row Spit = Near stays H (both books), and the N2-E token stays as the key reads it ("Near"), with the print's "men" recorded beside it in reading-no2.md. No grade count changes; `python3 decode_no2.py --check` exit 0 after this edit. What would settle it: the received copy at Grant's headquarters (Beckwith's received book or deciphered copy), if one survives; not searched here.
 
 Requests: hdl.huntington.org 5 (2 IIIF regions, 1 info.json, 1 page at 1000 px, 1 compound-object info), all 200.
+
+## Jan-Feb 1864 old vocabulary: four entries read with mssEC 67, 6 Oct 2026 (R7A-ECK64, LANE LANE-RUN7-account-1)
+
+Step checked undone first: no dated section had read a Jan-Feb 1864 entry (sections 2 and 5 name the vocabulary only).
+Kept as found: the Spit/men data conflict of N2-E (D2-ECK64S section above) stays logged, unchanged.
+
+Route: Huntington CONTENTdm item API (`hdl.huntington.org/digital/api/collections/p16003coll11/items/<pointer>/false`,
+field "text") for mssEC 19 pages 1-15 (pointers 8893-8907, the volunteers' text, scratch, not committed); IIIF images of
+mssEC 67 (object 1750) pages 1720 (TIME), 1731-1733, 1743 at 1000 px and 1737-1741 at 1400 px, plus the committed
+ciphers/eckert-1862/images/mssEC67_p1736/p1742/p1744.jpg; ledger pages 3-4 (8895, 8896) at 1500 px for the image check.
+Read by the worker directly, one eye; no subagent call, so no crop step was needed (CLAUDE.md Usage 6 applies to subagent
+transcription calls). OR check: warofrebellion322unit and warofrebellion33unit `_djvu.txt` from archive.org.
+
+Found: mssEC 67's handwritten meanings are the Jan-Feb 1864 War Department vocabulary. Four entries of 30 Jan and 1 Feb 1864
+on ledger pages 3-4 (Halleck to Thomas; to Lockwood; to Kelley and Sullivan; to Chesebrough) were transcribed from the
+volunteer text and checked against the page images (no code-word disagreement) into ciphertext-no9.txt, and read by
+key-no9.md (the whole TIME page and 29 arbitrary lines, each with page, line and pointer) through decode_no9.py (decode.py's
+machinery, file names changed). Code-word tokens: H 33, C 0, I 0, M 1 (Pagan, the place-of-origin word, not on the pages
+read). `python3 decode_no9.py --check` exit 0. Rule 4: H, read from a period key book; the OR is the check, not the source.
+Every one of the four is printed in OR series I (I/32 pt 2 p.263; I/33 pp.488, 488, 489) and agrees with the print in every
+coded word, the times included (Catharine 11.30 AM, Florence 10 AM as printed; Harriet 1 PM against 1.15), with one data
+conflict: "Village K Garrard" reads Major by the book, the print has Brig. Gen. (reading-no9.md; logged, not settled; the
+token stays H as the book reads it). Examples of the vocabulary the print confirms: Blubber = W. S. Sherman, Quotient = Joe
+Johnston, Lonesome = Mobile, Java = Corinth, Relay = Cavalry (also "Relay Bureau" = Cavalry Bureau), Shylock/Stanhope =
+Regiment, Seymour = Infantry, Robin = Battery, Soap/Somers = Rail Road, Valley/Vermont = Brig. Gen., Vernon/Vermin = Maj. Gen.
+
+Not found / not done: pages [1]-[9] (routes, cabinet), [11]-[15] and [18] of mssEC 67 not read, so Pagan, Pagoda, Castor,
+Cuba, Cadmus, Hammer and Audit (in other Jan-Feb entries) have no row yet; the other ~30 Jan-Feb entries not transcribed.
+No novelty question arises: all four are printed (no claim made; rule 10 is a verifier's). Key source per rule 10's key
+field: period (mssEC 67). One more observation for the next worker, not a reading: entry 2 of page 5 (2 Feb, to Lockwood)
+and page 5's Garrett entry use Vernon/Vermin (Maj. Gen.) for Lockwood and Kelley where page 3-4 use Valley/Vermont (Brig.
+Gen.), from the volunteer text only; check on the image before reading them.
+
+Requests: hdl.huntington.org 26 (15 item-API pages, 9 mssEC 67 IIIF pages, 2 ledger IIIF pages), archive.org 2; all 200.
+

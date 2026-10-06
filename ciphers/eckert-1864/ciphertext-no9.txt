@@ -1,0 +1,57 @@
+# Four Jan-Feb 1864 entries from Huntington Library mssEC 19, "United States Military Telegraph, War Department. Sent"
+# (object 9302), in the older Stager vocabulary (NOTES.md section 2), chosen on 6 Oct 2026 (R7A-ECK64) as the first sample
+# read with the mssEC 67 meanings (key-no9.md): the Willard entry of page 3 and the three Halleck entries of 1 Feb 1864 on
+# pages 3-4 whose addressees are not Caldwell (the Caldwell entry on page 4, "For Nestor ... Midas ... Bard & Biscay Walnut",
+# is the Meade headquarters cipher of section 8 and is not read here). Transcribed 6 Oct 2026 from the Decoding the Civil
+# War volunteer text (item API field "text", pointers 8895-8896) and checked word by word by the worker against the page
+# images (IIIF, 1500 px wide, one eye): the two agree on every code word. Same conventions as ciphertext.txt: first line the
+# ledger's own header, then one manuscript line per line, spelling as written; " = " marks the clerk's syllable splits.
+# Block header: ### id | ledger page | pointer | date, addressee.
+
+### O9-A | Page 3 | 8895 | 30 Jan 1864, Halleck to G. H. Thomas (operator Capt J. P. Willard)
+Capt J. P. Willard  Washn Jan. 30. 1864.
+Pagan Jany Thirtieth Catharine for
+Vernon Thomas Probably Quotients detachment
+is made to counter act
+Blubbers Zodiacs as I presume
+no immediate Wales on Lonesome
+is expected period Village K
+Garrard late chief of Relay
+Bureau has been ordered to
+report to you for duty
+period What is it about
+the evacuate = ion of Java
+sig Applause very warm here
+
+### O9-B | Page 3 | 8895 | 1 Feb 1864, Halleck to Lockwood at Baltimore (operator Baldwin)
+Baldwin  Washn Feby 1st 1864
+For Vermont Lock = wood Please
+send imm'y to Harpers Ferry
+such youth as you can
+spare for a few days
+for the protection of the
+Somers against raids period Reply
+how many can you send
+Ab = or = tion Florence raining
+
+### O9-C | Page 4 | 8896 | 1 Feb 1864, Halleck to Kelley at Cumberland and Sullivan at Harpers Ferry (operator Lawrence / Kelly)
+Lawrence Lt W. B. Kelly  Washn Feby 1st 1864
+For Vermont Kelly Cumberland and Valley
+Sullivan Harpers Ferry period Valley Lock
+wood has been directed to send
+you all available Yoke in his
+Dept also one Robin one Stanhope
+of Relay and one Shylock of
+Seymour have been ordered from this
+place period As these will soon
+reach Harpers Ferry Yankees can be
+drawn from that place sig Applause
+plain: Lock
+
+### O9-D | Page 4 | 8896 | 1 Feb 1864, Halleck to Chesebrough at Baltimore (operator Geo Baldwin)
+Geo Baldwin Balto  Washington Feby 1st 1864
+For Vulture Venus Cheese = brough
+all Youth that can be
+temper = rarely spared must be
+sent forward immediately to Harp
+hers Very signed Applause Harriet
