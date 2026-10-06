@@ -1495,3 +1495,53 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 6 internal gaps; cheapest next: the conflict-pair table test on the 7 right-telegram neither-book entries, ~$1.5
+
+## R7C-ECK62C (6 Oct 2026, account 1 worker for LANE LANE-RUN7-account-1): conflict-pair table test on the neither-book entries
+
+Step check: not run before (R7B-ECK62's Verdict, 6 Oct 2026, is the latest section). Pre-registered and pushed before any number:
+`ec18/PREREG-ECK62-CONFPAIR.md` (commit b5e25e25c). Script `ec18/ec18_confpair.py --write|--check` (committed TSVs only, no
+network, seed 0) -> `ec18/confpair_summary.tsv`, `ec18/confpair_pairs.tsv`; `--check` current.
+Statistic S: distinct code words that stand opposite agreeing printed words (content words >= 4 letters) in two different
+entries; null: printed spans shuffled across the pool's CONFLICT pairs (2000); positive control: AGREE pairs of the
+non-target aligned entries (a real table), subsampled by whole entries to the pool's N, 200 x 500 shuffles, power = share at
+p <= 0.05, gate >= 0.80.
+
+| pool | entries | pairs | S | p (shuffle) | control power at N | gate |
+|---|---|---|---|---|---|---|
+| primary: the 7 right-telegram entries | 7 | 93 | 0 | 1.000 | 0.610 | FAIL |
+| all 18 (descriptive in the prereg) | 18 | 376 | 18 | 0.0005 | 1.000 | (PASS) |
+| all 18 strict (added after the prereg, descriptive: have/will/been-type words out, entries on one OR page one context) | 18 | 376 | 14 | 0.0005 | 1.000 | (PASS) |
+
+- Pre-registered verdict: **untested-by-this-tool at N = 93** (the 7-entry pool: control power 0.61 < 0.80). Not a negative.
+- Descriptive, the 18-entry pool (its own control power 1.0 at its N): 14 code words, none in key.md, key-no2.md or the
+  eckert-1864 tables (key.md, key-no2.md, key-no9.md grepped 6 Oct 2026; Hoax there reads Longstreet / Weldon, here Richmond),
+  stand opposite the same printed word in two different telegrams, every one dated Dec 1864 - Jul 1865:
+  artists = (steam) boats (9934.472, 9974.549); thrash = Ohio [rail]road (9934.472, 9974.549); hogarth = (Alabama) river
+  (9958.527, 9974.549); harm = New Berne, levels = cars, line = Morehead City (9983.561, 9987.565); hoax = Richmond
+  (9985.564, 9987.565); loath = command (9977.553, 10040.638); scold = number (9982.559, 9983.561); shower = order (9983.561,
+  9985.563); forge = move (9934.472, 9958.527); lunch = work (9924.452, 9974.549); joint = telegraph (9954.519, 9974.549);
+  fence = left (9954.519, 9958.527). Dropped by the strict variant: credit = Weitzel (only 9985.563/9985.564, one OR page),
+  duplicate, pimple, xenia (function words only).
+  So most of the neither-book entries look like a code table not on disk (late 1864 - 1865), not transcription. Candidates
+  only, ungraded (the gated pool did not license a grade); nothing written into any key file. The 9983.561 / 9987.565 pair
+  shares a subject (rolling stock to New Berne), so its three words are two telegrams on one topic, not two independent topics.
+- Requests: none (0 network, 0 vision, 0 subagents). Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, R7C-ECK62C, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); mssEC 18: 28 fully keyed Cipher No. 1 and 17 Cipher No. 2 entries (RUN3-ECK62), 26 print-aligned (A3V3-ECKC); 79 print-free-assigned entries read, 9991.571 now with book 1r (R7B-ECK62); 13 of the 113 '?' entries given a book by print (D2-ECK62M); 57 dated matches aligned (AGREE 325/816 = 0.398 vs control 0.075 after the carry); 18 neither-book entries: 0 wrong telegram, 7 right, 11 undecided (R7B-ECK62, gate PASS); conflict-pair test: 7-entry pool untested (power 0.61), 18-entry pool 14 cross-entry code words p 0.0005 (R7C-ECK62C, descriptive)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), residue regenerated (GAPS197); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); next: the received copies of the 27 Jan and 24 May 1865 telegrams (Eckert received ledgers) for a third witness, ~$2
+- 18 neither-book entries (R7C-ECK62C confpair_pairs.tsv) - blocker: not-attempted; 14 code words outside every key on disk agree across two telegrams (Dec 1864 - Jul 1865, p 0.0005, descriptive), so a later table is the likely cause; next: find the 1865 cipher book among the Eckert papers' key books (Huntington mssEC catalogue, CISOSEARCHALL form; Tomokiyo's USMT cipher list) and read these 14 words' meanings there (H grade), ~$2
+- 100 mssEC 18 entries still '?' - blocker: not-attempted; 20 have a dated OR match with margin under 2 and 80 none (D2-ECK62M); next: the image (marker words the volunteer text may have dropped) for the 20 `?p` entries, ~$4
+- merged telegrams in the volunteer text (9985.564, 9991.571 run into a second heading) - blocker: not-attempted; the splitter's DATE pattern has no 'Apl' form; next: add the "Apl"/"Washn" heading forms to the entry splitter and re-split, then re-run --check across ec18 outputs, ~$1
+
+## Escalation (R7C-ECK62C, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Lehigh row checked on the mssEC 41 key page image (DEF1-ECK62P); '?' entries assigned print-free (RUN6-ECK62) and by print (D2-ECK62M); zero-agree entries re-aligned under the other book (D2-ECK62R, 1 of 19), the flip carried (R7B-ECK62); next: the 1865 cipher book for the 14 R7C-ECK62C code words, ~$2
+- [x] print: wrong-telegram test done (R7B-ECK62: 0 wrong, 7 right, 11 undecided); conflict-pair test done (R7C-ECK62C: 7-entry pool untested at N 93, 18-entry pool 14 cross-entry code words outside the keys)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 6 internal gaps; cheapest next: the 1865 cipher book (Huntington mssEC key books) for the 14 cross-entry code words of R7C-ECK62C, ~$2

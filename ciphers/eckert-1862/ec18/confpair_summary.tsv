@@ -1,0 +1,4 @@
+pool	n_entries	n_pairs	S	p_shuffle	ctl_power	ctl_median_S	gate	verdict	hits
+primary7	7	93	0	1.0000	0.610	1	FAIL	untested-by-this-tool	-
+all18	18	376	18	0.0005	1.000	8	PASS	descriptive	artists,credit,duplicate,fence,forge,harm,hoax,hogarth,joint,levels,line,loath,lunch,pimple,scold,shower,thrash,xenia
+all18_strict	18	376	14	0.0005	1.000	8	PASS	descriptive	artists,fence,forge,harm,hoax,hogarth,joint,levels,line,loath,lunch,scold,shower,thrash
