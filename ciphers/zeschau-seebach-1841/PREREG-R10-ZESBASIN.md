@@ -1,6 +1,6 @@
 # PREREG-R10-ZESBASIN: basin width of the word-parse objective on its matched control (6 Oct 2026, account-4, LANE-RUN10-account-4)
 
-Written and pushed 6 Oct 2026 (about 09:51 UTC by date -u) before any scored run. The only run before this file is one
+Written and pushed 6 Oct 2026 (09:44 UTC by date -u) before any scored run. The only run before this file is one
 `basin_width.py --time` call (k = 32, draw 0), which printed the number of accepted swaps and elapsed seconds only; no
 return fraction or J value was printed.
 
