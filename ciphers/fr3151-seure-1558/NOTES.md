@@ -1055,3 +1055,45 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 2 internal gaps; cheapest next: transcribe the Morvilliers 1549 cipher block (fr. 3138 fo. 66r) and rebuild its key from the marginal decipherment, then test on R1/R2 with the own-text power control first, ~$6
+
+## D1-SEURE: Morvilliers 1549 cipher block, two blind passes disagree at 0.778 -- stopped before reconciliation (6 Oct 2026, 12:48-12:5x UTC by date -u, account 1, LANE DEFAULT-account-1-20261006-1240)
+Named next step of R10-SEURE4 (known-keys). Brief `.claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md` ### D1-SEURE.
+**Crops.** BnF fr. 3138 fo. 66r, Gallica btv1b90601662 canvas 70. Region fetched once (`tools/iiif_lines.py --ark btv1b90601662 --canvas 70
+--region 4800,700,2950,2850 --prefix morv_c70` and the margin `--region 4200,400,700,3850 --prefix morv_c70margin`, 2 requests). The tool's
+auto line detection mis-centred several lines (crops straddling two lines), so the block was re-cut from the local source with eye-set centres,
+slope following and neighbour masking: `tools/iiif_lines.py --image .../src_ark_12148_btv1b90601662_f70_4800_700_2950_2850.jpg --centres
+90,195,...,2730 --follow-slope 300 --mask-neighbours --top-margin 20 --bottom-margin 15 --max-width 1500 --overlap 0 --prefix mv --debug`
+(full command in `known_keys/regen_images.sh`; 22 lines x 2 halves, each half 1500 px wide, all 22 checked by eye as one cipher line each).
+Images are not committed (folder rule); `known_keys/images/.gitignore` keeps them out, `regen_images.sh` rebuilds them.
+**Passes.** Shared label sheet `known_keys/morv/labels.md` (about 40 labels, written by this worker from the debug overlay); two blind Sonnet
+readers, one call each, crops only (`morv/pass_inputs.txt`): `morv/passA.tsv` 429 signs, `morv/passB.tsv` 698 signs. Agreement:
+`morv/pass_err.py` (per-line edit distance / longer line), `morv/pass_err.json`: **err 0.778** (560 edits over 720 max-length signs; per line
+0.35-0.91). Pass A undercounts (about 60% of B's length and of R10-SEURE4's 650-750 estimate); both readers called their own read low-confidence.
+**Margin.** One Sonnet read of the 45 margin crops (`morv/margin_read.tsv`, `.txt`): 85 words, 72 marked uncertain, 3 lines at M
+("Neantmoings", "le dangier", "Guillaume"); the opening "dont ilz ... quelle" only loosely. Not usable as an alignment text at this capture.
+**Stop.** Per the brief and TRANSCRIPTION.md, disagreement above a tenth means the next pass is the owner's sign sorter, not a machine
+reconciliation; the reconciliation unit was also not started because it would have crossed 80% of the cap (session 4.36 of 8 before it).
+No alignment, no key, no PREREG, no power control, no score on R1/R2: nothing to gate. Not a negative for the Morvilliers key. 0 tokens read.
+Requests: gallica.bnf.fr 2 (two IIIF regions); 3 Sonnet subagent calls (passes A, B, margin).
+Not found: a machine transcription of the Morvilliers block that two blind readers agree on within a tenth; a legible machine read of the margin.
+Lesson (one line): a label sheet written in prose does not align two blind readers on a 40-sign symbol inventory (err 0.78, f81R's A/B was 0.48);
+a symbol cipher needs the settled alphabet first (sorter), then reads against image exemplars.
+
+## Remaining gaps (D1-SEURE, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE); Danzay 1557 key non-test (R9-SEURE); La Guiche 1551 key FAIL with control power under one map (R9-SEURE2); Babou 1558 key not rebuildable from the microfilm capture (R10-SEURE3); Morvilliers 1549 block two blind machine passes err 0.778, margin read 85% uncertain (D1-SEURE, known_keys/morv/); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; Danzay non-test, La Guiche FAIL under one map, Babou not rebuildable, Morvilliers transcription unsettled (D1-SEURE err 0.778); next: Tournon 1556 key (fo. 22r, 13 lines, slip decipher legible at M) with an image-exemplar reference sheet cut from the leaf before two blind passes, ~$5
+- Morvilliers 1549 key (fr. 3138 fo. 66r) - blocker: not-attempted; two blind passes split at 0.778 (TRANSCRIPTION.md: the next pass is the owner's, in the sign sorter); next: build a sign sorter for the Morvilliers inventory from known_keys/images/mv/ (tools/sign_sorter.py, sorter_preflight PASS) and hand it to the account-3 orchestrator to publish, ~$2; the margin decipher also needs a person's or a higher-contrast read
+- Babou 1558 interlinear decipher (fr. 3138 fo. 35v) - blocker: illegible at the Gallica microfilm scan; reopens with a colour capture (BnF reproduction request) or a person's read in the reading room
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (D1-SEURE, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: Danzay non-test (R9-SEURE); La Guiche FAIL under one map (R9-SEURE2); Babou illegible (R10-SEURE3); Morvilliers passes err 0.778, held for the sorter (D1-SEURE); Tournon 1556 (slip) untried
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 2 internal gaps; cheapest next: Tournon 1556 key from fr. 3138 fo. 22r with an image-exemplar reference sheet before the two blind passes, ~$5
