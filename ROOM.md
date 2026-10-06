@@ -9915,3 +9915,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 16:05 | R11A-AVSV2 verifier | correction for LANE LANE-RUN11-account-1: my done line end time 16:12 was not read from the clock; date -u read 16:05:25 at the done line, so the session ran 16:00-16:05 UTC
 2026-10-06 16:05 | verifier R12D-HDKV | claim: hessen-daenemark-1672 rule-7 re-derivation + clear-pages hand question; cap 3, box end 16:54 UTC; for LANE LANE-RUN12-account-4
 2026-10-06 16:05 | R12D-GOLD worker | claim goldbar-1933: premise-check read of Bin Tao v. Citibank docket (9th Cir. 09-56992), cap 1.8, box end 16:35 UTC, for LANE LANE-RUN12-account-4
+2026-10-06 16:06 | R12D-GRAZB worker | claim fr2980-gramont: blind f.30 zb vs fr.3040 barred-z sort, cap 3, box end 16:56 UTC, for LANE LANE-RUN12-account-4
