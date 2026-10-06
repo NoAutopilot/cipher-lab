@@ -26,3 +26,9 @@ Gate (fixed now): same-writer verdict only if ALL of
 (a) pass, (b) or (c) fail -> "not shown the same writer by this test" (not "different writer"); the six carries stay M by
 this test. If the gate passes, the six H codes may go M -> C per PREREG_duchf13.md's crib gate, with decode --check.
 One call only (Units: 1 Sonnet pass ~1.5); no re-run with changed panels or wording.
+
+Deviation, logged 14:0x UTC 6 Oct 2026 before the scored call: the Gallica fetch of N (canvas f25 region 1150,1150,800,1000)
+answered HTTP 503 (1 request, not retried). N is instead cut by `tools/iiif_lines.py --image images/key_no4/f9v_code_columns_sheet.jpg
+--region 0,0,450,820 --out images/hand --prefix ctrl_k4 --lines-per-crop 40` (the same f.9v leaf, DUCH-KEY4's on-disk sheet,
+first column A 11-39) and upscaled by 1/0.55 to native-equivalent scale -> images/hand/ctrl_k4_native.jpg. Same hand and
+leaf as planned; only resampling differs (slightly softer strokes). Gate unchanged.

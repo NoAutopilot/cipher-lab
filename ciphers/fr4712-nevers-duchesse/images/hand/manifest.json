@@ -1,0 +1,25 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "ctrl_k4_L01.jpg",
+   "source_url": "",
+   "source_file": "f9v_code_columns_sheet.jpg",
+   "box": [
+    0,
+    46,
+    450,
+    820
+   ],
+   "lines_in_crop": 14,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 54,
+    "distance": 37,
+    "prominence": 39.0
+   },
+   "date": "06 Oct 2026"
+  }
+ ]
+}
