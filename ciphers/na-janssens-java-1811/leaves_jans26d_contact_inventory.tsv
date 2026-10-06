@@ -1,0 +1,17 @@
+scan	label	class	note	grade	sheet	thumb_url
+177	NL-HaNA_2.01.27.05_26_0177.jpg	table	two-page list of numbered entries with signatures under each column	M	jans26d_sheet_1	https://service.archief.nl/api/file/v1/thumb/81d8cd3b-9af2-49b3-bb2d-34d63e6ca7ca
+178	NL-HaNA_2.01.27.05_26_0178.jpg	blank	blank or near-blank (faint show-through or a few lines)	M	jans26d_sheet_1	https://service.archief.nl/api/file/v1/thumb/cb2448f4-2fa4-45e8-8af3-a5f008ff41b3
+179	NL-HaNA_2.01.27.05_26_0179.jpg	table	list page on the right, flourish across it; left blank	M	jans26d_sheet_1	https://service.archief.nl/api/file/v1/thumb/767904a3-e7db-43a9-be07-6065c3216f6c
+180	NL-HaNA_2.01.27.05_26_0180.jpg	table	list block top left, flourish and signatures below; right blank	M	jans26d_sheet_1	https://service.archief.nl/api/file/v1/thumb/2dbc0c54-1cdc-4526-915d-3813cb944e76
+181	NL-HaNA_2.01.27.05_26_0181.jpg	table	numbered list on the right page, signatures at foot	M	jans26d_sheet_1	https://service.archief.nl/api/file/v1/thumb/48d3f19a-2265-4ca8-b7dc-1f61adea84d1
+182	NL-HaNA_2.01.27.05_26_0182.jpg	blank	blank or near-blank (faint show-through or a few lines)	M	jans26d_sheet_1	https://service.archief.nl/api/file/v1/thumb/5bf213a1-24f4-45ff-8bc9-9d00a20fa5a4
+183	NL-HaNA_2.01.27.05_26_0183.jpg	prose	prose with a short list block on the right page, flourishes; left blank	M	jans26d_sheet_1	https://service.archief.nl/api/file/v1/thumb/d5a73796-2e82-44ed-9d7a-27c2cad5e54c
+184	NL-HaNA_2.01.27.05_26_0184.jpg	prose	short signed pieces on the left page, paper strip on the right	M	jans26d_sheet_1	https://service.archief.nl/api/file/v1/thumb/89118d2e-33d5-4787-a674-01851e1a5819
+185	NL-HaNA_2.01.27.05_26_0185.jpg	prose	short signed pieces with a paper strip across the left page; right blank	M	jans26d_sheet_2	https://service.archief.nl/api/file/v1/thumb/92dc17a2-327b-4c6c-9b5d-2c298f01f7d6
+186	NL-HaNA_2.01.27.05_26_0186.jpg	prose	right page headed (possibly 'Annexe'), prose paragraphs; left blank	M	jans26d_sheet_2	https://service.archief.nl/api/file/v1/thumb/587ff2ef-a8ff-4330-91c3-6bf2c045d3db
+187	NL-HaNA_2.01.27.05_26_0187.jpg	prose	prose on the left page, signed; right blank	M	jans26d_sheet_2	https://service.archief.nl/api/file/v1/thumb/456c57fb-5067-4539-becc-f462df8c1940
+188	NL-HaNA_2.01.27.05_26_0188.jpg	prose	short formal piece on the right page, two signatures; left blank	M	jans26d_sheet_2	https://service.archief.nl/api/file/v1/thumb/02fbee4d-2ff6-4d52-abb4-519754d4cf7e
+189	NL-HaNA_2.01.27.05_26_0189.jpg	blank	near-blank, offset/show-through and inserted slips	M	jans26d_sheet_2	https://service.archief.nl/api/file/v1/thumb/76648f64-e0fc-498b-a088-1057e8547bcd
+190	NL-HaNA_2.01.27.05_26_0190.jpg	blank	near-blank, offset/show-through and inserted slips	M	jans26d_sheet_2	https://service.archief.nl/api/file/v1/thumb/4f7325b1-0ead-4008-b90a-8561fbf58608
+191	NL-HaNA_2.01.27.05_26_0191.jpg	cover	back board / cover	M	jans26d_sheet_2	https://service.archief.nl/api/file/v1/thumb/db8a67c0-a0fc-4211-ad92-9d7a33beb348
+CTRL188	leaf 188 (invnr 12, local images/188_med.jpg)	control	known-positive control: digit-group rows and signature visible on both sheets	-	jans26d_sheet_1-2	-
