@@ -1,0 +1,10 @@
+letters	655
+nine_positions	42
+S_committed	-1.4454
+all_s	m=24	D=-0.0418	null1_p95=-0.0163	null1_median=-0.0535	pctl1=0.712	null2_p95=-0.0498	null2_median=-0.0727	pctl2=0.992
+all_i	m=31	D=-0.0915	null1_p95=0.0147	null1_median=-0.0166	pctl1=0.000	null2_p95=-0.0803	null2_median=-0.1057	pctl2=0.821
+all_r	m=29	D=-0.0904	null1_p95=-0.0312	null1_median=-0.0710	pctl1=0.225	null2_p95=-0.0694	null2_median=-0.0955	pctl2=0.628
+G1	fail
+G2	fail
+G3	pass
+gate	FAIL

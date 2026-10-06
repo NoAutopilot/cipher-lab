@@ -783,3 +783,44 @@ Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditio
 - [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; 9 shape split untestable on the enlarged f.171r control (R10-BAL103D, strict k_i = 0); planned: fr17 test of 9 = s on f.50 (Remaining gaps)
 - [x] retry: decode_key --check and fr17 re-judge after the 9 context rule (R9-BAL103, 6 Oct 2026): -1.537 -> -1.445
 Verdict: keep going: 1 internal gap; cheapest next: pre-registered fr17 comparison on f.50 of "9 = s everywhere" vs the R9 context rule with r8/'s matched control, ~$1.5
+
+## fr17 test of 9 = s on f.50 (R10-BAL103E, 6 Oct 2026)
+
+Worker R10-BAL103E (account 1, LANE LANE-RUN10-account-1), 10:24-10:3x UTC 6 Oct 2026 by `date -u`. Key source unchanged: published
+(Tomokiyo 1644 table + R7C's c = p). Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **Gate FAIL; no change.** `r10e/PREREG.md` (pushed e657ca5b3 before any r10e score; it discloses that R9's all-s -1.487 was already on
+  file, so G1 was expected to fail) registered D_s = fr17 S(all 42 nines = s) - S(committed R9 lean), against two nulls that can differ
+  from it: null 1 = the same number of s-substitutions at random non-9 positions (varies on position/context); null 2 = random letters
+  (f.50's own frequencies) at the same 9 positions (varies on value). `r10e/test9s.py` (`--check` exits 0), `r10e/result.tsv`, seed 1644,
+  2,000 draws each, 655 letters, S(committed) -1.4454:
+
+| variant | changed | D | null 1 p95 | pctl in null 1 | null 2 p95 | pctl in null 2 |
+|---|---|---|---|---|---|---|
+| all s | 24 | -0.042 | -0.016 | 0.71 | -0.050 | **0.99** |
+| all i | 31 | -0.092 | +0.015 | 0.00 | -0.080 | 0.82 |
+| all r | 29 | -0.090 | -0.031 | 0.23 | -0.069 | 0.63 |
+
+  G1 (D_s >= 0) fail, G2 (above null 1 p95) fail, G3 (above null 2 p95) pass -> gate FAIL. key.tsv, exceptions.tsv and the reading are
+  untouched; `tools/decode_key.py . --check`: up to date, tokens 630: H 451, M 165, U 14. The judge stays fr17 -1.445 FAIL (R9-BAL103).
+- **Descriptive (licenses nothing):** s is the only constant that fits the 9 positions better than random letters there (0.99 in null 2;
+  i 0.82, r 0.63), which agrees with the f.171r sibling where all 6 strict-known 9s are s (R10-BAL103D). But s at the 9 positions is no
+  better than s at random positions (0.71 in null 1), and it loses to the R9 lean, which was chosen with the same fr17 4-grams the judge
+  scores (bias by construction, disclosed). i at the 9 positions scores below every i at random positions (0.00): a weak sign against i,
+  not a reading. The language instrument has now been used twice on this question (R9 rule, this test) without licensing a value.
+Where not found: no plaintext of f.50 used or consulted; no sibling read. Requests: none (all from disk; no subagent calls).
+
+## Remaining gaps (R10-BAL103E, 6 Oct 2026)
+Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditional), judge fr17 FAIL -1.445 vs real_p05 -0.852 after the 9 rule; the page decode sits near the r ~ 0.25-0.30 synthetic noise band (r8/result.tsv)
+- f.50 confusable sign pairs (m/mm/mt, tt/venus, venus/q, x/xc/xs/xbar, mm/tt, 9/venus; R/u, b/bt) - blocker: waiting-on the owner's answer on the f.50 sign sorter sorter/out/baluze103_f50_sorter.html, to be published by the account-3 orchestrator (ROOM flag R9-BAL103, 6 Oct 2026); two machine third readers settled one-directionally (R8-BAL103, R8-BAL103B), so per CLAUDE.md Usage 6 the pass is a person's
+- ambiguous 9 (i|r|s; 42 tokens on the R9 fr17 lean, grade M) - blocker: not-attempted; fr17 9 = s gate FAILs (R10-BAL103E: D -0.042, null-1 pctl 0.71), shape split untestable on f.171r (R10-BAL103D, k_i = 0); next: add the 42 f.50 9 tiles to the sorter's focus box so the owner's pass splits them by shape, ~$0.5
+
+## Escalation (R10-BAL103E, 6 Oct 2026)
+- [x] siblings: f.171r L1-4 scored against f.172r (R7C-BAL103K: A 0.767 vs permutation p99 0.311, PASS); L5-L18 blind-passed and aligned for the 9 control (R10-BAL103D, 6 Oct 2026: 0.692 matched, strict 9s N = 6 all s)
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's table reads f.50 above a permutation null in both blind passes (R8-BAL103, 6 Oct 2026: -1.566/-1.602 vs p99 -1.99/-1.96); judge fr17 FAIL -1.445 after the 9 rule (R9-BAL103)
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: R8-BAL103's registered test puts the failure in the transcription, not the table; no April-table search or rebuild is licensed
+- [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; 9 shape split untestable on f.171r (R10-BAL103D); planned: the 42 f.50 9 tiles into the sorter focus box (Remaining gaps)
+- [x] retry: fr17 test of 9 = s on f.50 against position and value nulls (R10-BAL103E, 6 Oct 2026): gate FAIL, D -0.042, no change
+Verdict: keep going: 1 internal gap; cheapest next: add the 42 f.50 9 tiles to the sorter focus box for the owner's shape split, ~$0.5
