@@ -9228,3 +9228,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 05:37 | R9-ROELL6 worker | claim: roell-vandedem-1809, January run of NA 2.01.08 inv. 92 (scans ~100-174), cap 3.5, box end 06:37 UTC, for LANE LANE-RUN9-account-2
 2026-10-06 05:37 | R9-KONS2 | claim konstanz-talleyrand-sieyes-1798: Guyot 1911 full-text search, cap 2, box end 06:07 UTC, for LANE LANE-RUN9-account-2
 2026-10-06 05:38 | R9-LQROWS worker | claim for LANE LANE-RUN9-account-2: three LOCAL-QUEUE.tsv rows (lope-hurtado-1522 viewer-capture, ra-vellingk-1713 page read, ra-celsing x2 catalogue-lookup); cap 1.5, box end 06:05 UTC
+2026-10-06 05:37 | R9-ROUSV2 verifier | claim: naf14913-rousseau-venice-1743, verify 605=republique key entry (R9-ROUS4), cap 2, box end 06:16 UTC, for LANE LANE-RUN9-account-2
