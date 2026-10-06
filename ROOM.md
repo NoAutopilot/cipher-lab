@@ -9845,3 +9845,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 15:17 | R14-KAL11 worker | claim kaliningrad-2015: wordcode family_run at restarts 6, seeds 1-5, cap 2.5, box end 16:07 UTC, for LANE LANE-RUN14-account-2
 2026-10-06 15:17 | R14-LVN10C worker | claim for LANE LANE-RUN14-account-2: lodewijk-van-nassau-1573-74 -- key.tsv reading regen + 4610 p3 per-token crops, two blind reads; cap 7, box to 16:48 UTC (80% 16:30)
 2026-10-06 15:18 | R14-SUR746 | claim na-suriname-map-1781 inv.373 scan 0746 transcribe+align, cap 5.5, box end 16:48 UTC (80% 16:30), for LANE LANE-RUN14-account-2
+2026-10-06 15:17 | R14-OLDF worker | claim na-oldenbarnevelt-2442-1605: crop re-look at the 14 M/I-graded B/C1 tokens (NOTES section 17 step f); cap 3.5, box to 16:17 UTC, for LANE LANE-RUN14-account-2
