@@ -176,3 +176,24 @@ for 1.05.03 and the 4.VEL / Wollant context with cijfer, cyfer, sleutel, chiffre
 number, description, and digitisation flag (drupal-settings availability, never the boilerplate); (3) if a digitised key-sheet candidate
 exists, fetch only its index thumbnail/first scan and say whether it is a key. No decode. Update the Escalation known-keys line and
 Remaining gaps; pass tools/gaps_check.py. <= 40 requests to nationaalarchief hosts, >= 1.5 s apart.
+
+### R9-NLAV -- nla-heinrich-braunschweig-1519, VERIFIER (CLAUDE.md "Verifier brief (template)") on the Grein period-key reading (cap 4, box 60 min)
+Claim under audit (R9-NLATX, commit c99076a0e): the in-line cipher words of NLA BU L 1 Nr. 548 (letter to Countess Anna, 1519) and Nr. 562
+(K. Schepper, Trier 8 Aug 1522) read with the 1858/1860 archivist key sheets: 548 18/18 words agree with the sheet's list (H 84, M 17
+numbers), 562 11/12 (H 83, M 6; lant vs land). You are not the solver. Steps 1-5 of the template, plus: (a) circularity -- the
+reconciliation was key-aware; check that H tokens are only those the blind pass and the reconciliation agree on and that the "agreement
+with Grein's list" figure is not driven by M tokens settled toward the list; recompute the agreement on H-only tokens; (b) key source is
+`period` (archivist's sheet of 1858/1860; say whether that is a period key under rule 10 or an archival modern decipherment, and grade
+accordingly); (c) rule-5 status call: is the target `found-solved` (the decipherment of this very item already exists in the archive,
+N0-style) and record it with the evidence -- the status line and status.json follow your call; (d) depth per rule 4a: the cipher tokens
+are single words inside clear Low German letters -- state % of cipher tokens H/C/S and D-level with tools/depth_check.py; (e) the R9-NLACS
+search log (8 queries) is the solver-side log; extend it (Niedersachsen journals, Schaumburg history, Heinrich d. J. biographies, Grein's
+own publications, Google Books country=US, IA fts, OpenAlex/S2 with keys). Write AUDIT.md, status.json fields, any SECOND-OPINIONS row if
+N3+. Do not decode afresh; do not touch other targets.
+
+### R9-ROELL7 -- roell-vandedem-1809, NA inv. 996 (Hogendorp at Vienna 1809) read for the Feb 1809 letter (cap 3.5, box 60 min)
+Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R9-ROELL6's cheapest next: inv. 996 (Van Hogendorp at Vienna 1809, digitised per EAD). Same route (service.archief.nl IIIF at 1000 px,
+>= 1.8 s apart, <= 45 requests; one scan = one unit ~0.05). Look for a letter to/from Van Dedem or a cipher letter/key of Jan-Mar 1809
+matching the target's description in NOTES.md; record scan numbers read and what each holds. No decode unless a key sheet is found (then
+describe it and stop for a fit-test brief).
