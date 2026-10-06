@@ -175,3 +175,7 @@ Source: IA `1897-vol-v-new-series-no-17-20`, the item PDF (fetched once, not com
 - pp.26-29 are page-number numerology in the 1623 Folio and carry no further values or text from the letter. Not found in pp.23-29: a folio number, date, writer's name, or the letter's full text.
 Requests: archive.org 3 (metadata 1, PDF 1, leaf JPEG 1), >= 1.6 s apart.
 Next action that depends on nobody: unchanged. Test these 13 values against an image of ff.490-495 once one exists (REQUEST.md copy order; outreach/francis-bacon-society-pott-1896.md for Pott's 1896 manuscript, ASKS row 122). Until then the values are a lead, not a key.
+
+## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
+
+next: no agent step is left. The Baconiana Jan 1897 page-image check named above ran 5 Oct 2026 (D2-BACON, section above, 13 values in baconiana-1897-values.tsv). The values are tested only against an image of Lambeth MS 649 ff.490-495, which needs the copy order in REQUEST.md (and Pott's 1896 manuscript via the Francis Bacon Society, ASKS row 122). Who acts: owner. Blocker class: needs-image.

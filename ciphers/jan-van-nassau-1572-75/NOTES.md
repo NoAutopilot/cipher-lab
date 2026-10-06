@@ -1497,3 +1497,7 @@ Requests: archive.org 1 (advancedsearch), be-api.us.archive.org 2; github.com 2 
 siena-concistoro-2308, bl-gualterio-1700, cylob-c1995 this job).
 
 `python3 tools/intake_gate_check.py jan-van-nassau-1572-75` after this section (3 Oct 2026, GF-A2-11): `jan-van-nassau-1572-75: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
+
+next: the body needs a sibling letter in the "verendertte" key. The candidates are HStAM 4 f Staaten N, Frankreich 340 and Niederlande 134 (Marburg reply MAIL-3, above), and both are microfiche only. The step is a follow-up email to HStAM (drafted in outreach/ and sent by the owner, ASKS row 48 thread). The ENHG corpus the earlier line asked for now exists (tools/data/de16), but no annealer run is named until there is more ciphertext. Who acts: owner. Blocker class: needs-person.

@@ -191,9 +191,13 @@ Read so far: unmeasured -- no ciphertext on disk; both holdings undigitised, onl
 - [n/a] key-rebuild: no ciphertext on disk to rebuild a key from
 - [n/a] image-check: no image of either holding is available online
 - [n/a] retry: no attempt has been made that could be retried
-Verdict: keep going: 2 internal gaps; cheapest next: desk-browser read of HRSH vol. 6 pp. 223 ff., ~$0.5
+Verdict: keep going: 2 internal gaps; cheapest next: desk-browser read of HRSH vol. 6 pp. 223 ff., ~$0.5 (queued for the owner's local runner as LOCAL-QUEUE row L59, 6 Oct 2026, R9-LQROWS)
 
 Gate re-run (GF4-BATCH19, 3 Oct 2026): `ra-vellingk-1713: blocked (line 3) -- already terminal, nothing to gate`, exit 0 (was exit 1 as an uncited open); status moved open -> blocked by this pass.
 
 ## While waiting (R9-LQROWS, 6 Oct 2026)
 LOCAL-QUEUE row L59 (page read of HRSH vol. 6 pp. 223 ff., HathiTrust wu.89107728503 / Google Books owgPAAAAYAAJ) queued 6 Oct 2026.
+
+## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
+
+next: the desk-browser read of HRSH vol. 6 pp. 223 ff. is queued as LOCAL-QUEUE row L59 (R9-LQROWS, 6 Oct 2026); the HathiTrust page view does not open from the cloud. Who acts: the owner's local runner. Blocker class: needs-person.

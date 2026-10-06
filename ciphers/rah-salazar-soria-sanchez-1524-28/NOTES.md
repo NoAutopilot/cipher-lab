@@ -468,3 +468,7 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 
 - `"Lope de Soria" AND "Alonso Sánchez" AND "Carlos V" AND cifra`: no relevant hit (0 results, none about the letter).
 - `"Colección Salazar y Castro" AND "en cifra"`: no relevant hit (0 results, none about the letter).
+
+## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
+
+next: no agent step is left. Status stays `blocked`: items 2 and 4 need a page image (no image online; bibliotecadigital.rah.es has no record, tested by NX2-GATE2), so REQUEST.md is the route; items 1, 3 and 5 are text-known (AUDIT.md, A2P4-VRAHSAL). Who acts: owner. Blocker class: needs-image.

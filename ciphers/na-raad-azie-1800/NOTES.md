@@ -916,7 +916,7 @@ Read so far: 0 of 370 leaf-2 cells read (no family or crib has produced a readin
 - [retired] key-rebuild: cell-wise substitution families masc, homophonic, divider-removed, syllable-table (family_run.py, rule 3 third-attempt shape a)
 - [x] image-check: leaf 3 checked before transcription: mirror bleed-through of leaf 2's cipher page, no independent cipher body (A2-RAA9, r 0.541 vs controls <=0.162)
 - [x] retry: vowel-column order test re-run with stronger statistics at N=370, POS/ALT first (A2-RAA10): trigram T weak negative (target p 0.209, power about 0.7), cross-cell MI X non-discriminating (ALT 19/20); homophonic on a pooled N needs a sibling letter (leaf 3 is not one, A2-RAA9)
-Verdict: parked: 0 internal gaps; both gaps too-short (N=370) and every escalation step done or retired; the sibling search ended with the 167-leaf sweep of 2.01.27.03 invnr 207/144 (RUN4-RAA 4 Oct 2026, no cipher leaf seen); reopens only with new material (a second cipher letter of this correspondence, e.g. from a correspondent's own papers or an uncatalogued bundle)
+Verdict: parked: 0 internal gaps (no image of any second cipher letter exists, LANE-RUN15 6 Oct 2026); both gaps too-short (N=370) and every escalation step done or retired; the sibling search ended with the 167-leaf sweep of 2.01.27.03 invnr 207/144 (RUN4-RAA 4 Oct 2026, no cipher leaf seen); reopens only with new material (a second cipher letter of this correspondence, e.g. from a correspondent's own papers or an uncatalogued bundle)
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 
@@ -978,3 +978,7 @@ a single coded line or a code number quoted inside prose (one line cannot move t
 
 Grades: H 0, C 0, S 0, M 0, I 0. Requests: www.nationaalarchief.nl 2, service.archief.nl 168 (1 test + 167 leaves, all 200).
 Vision: 3 looks (two 6-tile sheets, one check sheet).
+
+## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
+
+next: none runnable. The Verdict above is `parked` (every escalation step done or retired; N=370 is too short). It reopens only with new material: a second cipher letter of this correspondence, for which no image exists in any NA finding aid swept so far. Who acts: nobody until new material appears. Blocker class: needs-image.

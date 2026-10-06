@@ -349,3 +349,7 @@ Requests: `www.nationaalarchief.nl` 2, 2 s apart, descriptive User-Agent.
 - While the copy order for NA 3.01.19 inv. 2030/2044 waits on ASKS row 46: re-probe the two NA 3.01.19 item pages
 (`drupal-settings-json` availability, 2 requests) at the next pass in case they have been digitised; it depends on nobody.
 (The earlier while-waiting step, scans 2-3 of NA 1.10.29 inv. 1233, was run by GAPS120 on 3 Oct 2026: nomenclator-only.)
+
+## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
+
+next: no agent step is left beyond the re-probe. NA 3.01.19 inv. 2030 and 2044 are still not digitised (re-probed twice on 6 Oct 2026, D2B-RUMPF and R9-NAKEY, above), so letters 309/446/455 wait on the copy order (ASKS row 46, REQUEST.md). While waiting: re-probe the two item pages at a later pass (2 requests), not more than once a day. Who acts: owner. Blocker class: needs-image.

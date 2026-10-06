@@ -303,3 +303,7 @@ Run now (snippet searches only; no page was read, no loan taken):
 - Requests: googleapis.com/books 6; archive.org advancedsearch 1; be-api.us.archive.org 7 (all >= 2 s apart, no 429/403).
 
 Remaining unread piece: pp.289-304 of Bauer in full, owner-side only (reader view of the IA loan, a person's eyes); not queued here (no ASKS/LOCAL-QUEUE row written; probe not needed, the block is the documented obfuscation).
+
+## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
+
+next: no agent step is left. The Bauer *Unsolved!* print check that R9-RUBIN4 named ran 6 Oct 2026 (R11-RUBBAU, section above: snippets only, no reading or decipherment claim seen). What remains unread is the full chapter, pp.289-304, which the cloud cannot read (the IA copy is lending-only and its loan images are obfuscated); a reader-view read by the owner (a LOCAL-QUEUE row, not yet filed) is the route. The two doubtful glyphs need an image of the Q5 specimen itself (not in the released FBI file). Who acts: owner. Blocker class: needs-person.
