@@ -1053,3 +1053,40 @@ control run, about USD 2-3, disk only). Run (b)'s control first; if it too is be
 material.
 Gap record (status `open`): no. 7 nomenclator layer -- pooled 7+19 control below gate (non-test, second attempt with this instrument);
 next: structural word-code restriction (b), ~$3.
+
+## R13-SIENAWC -- nos. 7 + 19 pooled, nomenclator family with a structural word-code restriction, matched control (account 4 worker for LANE-RUN13-account-4, 6 Oct 2026, 18:39-18:4x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run13-jobs.md` job R13-SIENAWC (R13-SIENA719's next step (b)). Status unchanged: `open`.
+Disk only, no requests to any host. No key, no reading. Pre-registration `PREREG-R13-SIENAWC.md`, pushed in ee8c3af6a (header time
+corrected to 18:41 by date -u in 657b2184b, no content change) before the scored control; no dev runs.
+
+**Instrument (a different one, not a third run of R10/R13-SIENA719's).** New option `word_signs` on the shared
+`tools/homophonic_anneal.py solve_nomen()/anneal_nomen()`: a vocab word is proposed only for signs in the set; `None` is bit-identical to
+the old call (offline test `tools/tests/test_homophonic_nomen.py` part 4). Script `specs/cheap-tests/siena-concistoro-2308/
+run_test_pool719_wc.py` imports R13-SIENA719's wrapper unchanged and replaces only the solver call and the control's eligible set.
+Target eligible set: the 27 unfixed signs agent J tokenised as multi-character units or drawn marks (110 of 481 tokens: oo, 7#, TRI, DEL,
+sl, P_, 6~, SI, =, OB, ...); every single letter/digit-shaped sign is letters only. Control: the 10 word-code signs plus 17 letter
+homophones count-matched to the target's eligible counts (142-147 eligible tokens, slightly looser than the target's 110).
+`--check` exit 0 (`results_pool719_wc.json`); R10's and R13-SIENA719's `--check` still exit 0.
+
+**Matched control** (N=481, K 59-62, seeds 1-5):
+
+| injected error | mean token accuracy | mean nomenclator recall (seeds) | unrestricted, R13-SIENA719 (acc / recall) |
+|---|---|---|---|
+| 0% | 0.826 | **0.133** (0.222, 0.444, 0, 0, 0) | 0.824 / 0.122 |
+| 3.5% | 0.769 | 0.217 | 0.747 / 0.094 |
+| 7% | 0.645 | 0.078 | 0.668 / 0.078 |
+
+G1 met; G2 (>= 0.50 at 0%) **not met**: CONTROL BELOW GATE. Target and shuffled target **not run**; nothing to the judge. The solver still
+puts `che` on some eligible sign in every run and rarely places other codes correctly: halving the candidate signs does not supply the
+evidence a code seen one to three times lacks.
+
+**Result: non-test at pooled N=481 for this restricted instrument** (first attempt with it). Together with R10-SIENA7N (N=363) and
+R13-SIENA719 (N=481 unrestricted), the ciphertext-only nomenclator layer on nos. 7/19 is untestable at these lengths: a nomenclator is
+neither shown nor excluded. Grades: no token read, no key change. Cryptanalytic result only.
+
+**Next step (suggestion, not run):** new material only -- a fasc. 2 key sheet or legend whose word-code list carries drawn signs that occur
+in nos. 7/19 (planted as a crib, control first), or more ciphertext in the same sign set from a reader other than agent J. Not another
+ciphertext-only run of `solve_nomen` on these transcripts.
+Gap record (status `open`): no. 7 nomenclator layer -- structural restriction control below gate (non-test); ciphertext-only route
+exhausted at N<=481; next: outside word-code material (a fasc. 2 key/legend with drawn word codes), cost unknown until one is found.
