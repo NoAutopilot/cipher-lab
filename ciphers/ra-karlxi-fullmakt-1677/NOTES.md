@@ -372,19 +372,49 @@ J. Kubeš) for "1677"/"Nääs"/"fullmakt"/"plenipotentia". Not done: the full te
 Requests: theses.cz 4 (two meta-refresh stubs, then cookie + page), portal.upce.cz 1, dk.upce.cz 7 (search, bundles, item, PDF 401, text 401,
 two review texts 200). Vision 0, subagents 0. Status stays `open`.
 
-## Remaining gaps (D2B-KARL, 5 Oct 2026)
+## Bakeš 2018 dissertation + 2015/16 articles, dk.upce.cz (R8-KARL2, account-2 worker, 6 Oct 2026, 03:16-03:20 UTC by date -u)
+Brief step (D2B-KARL Verdict "cheapest next"): list the bitstreams of dk.upce.cz 10195/72172, 66550, 67724 and grep any open text.
+1. 10195/72172 (item 03e06868-6ad9-4cd7-91fe-f1cc84041fc5): Martin Bakeš, *Diplomatem v půlnoční zemi. Zástupci Habsburků ve Švédském
+   království mezi lety 1650-1730*, Univerzita Pardubice doctoral dissertation (disertační práce), 2018, supervisor J. Kubeš, dc.rights
+   "Bez omezení". The PDF (BakesM_Diplomatemvpulnocnizemi__JK_2018.pdf, 2,701,198 bytes, 465 pages) is **open** (HTTP 200). Note: the
+   repository's own extracted-text bitstream (.pdf.txt, 109,097 bytes) stops at printed p. 29, so a grep of that bitstream alone would
+   have been a non-test; the grep below ran on `pdftotext -layout` of the full PDF (197,113 words).
+2. Grep for 1677, Nääs/Näs/Naas, fullmakt, plenipot-, plná moc/plnou moc/plnomoc, chiff-/šifr-, Nijmegen/Nimwegen/Nimègue, traktat, Loenbom:
+   - 1677 is on 15 lines, none about the Swedish full power: Harrach's and Valdštejn's missions (1673-1677, 1677-1679), ennoblements
+     dated 10.3.1677, Simon Grundel-Helmfelt and Auersperg/Lobkovic death dates, a French legation chaplain in 1677, a 1677-1680
+     propaganda study, and the chronology line "1677 Samuel von Pufendorf becomes Swedish royal historiographer".
+   - Nääs/Naas/fullmakt/plenipot-: 0. "plnou moc" once (Karl XI gave Bengt Oxenstierna "full power" over foreign
+     policy, a general statement, not an instrument). Nijmegen: twice (Oxenstierna's approach to Vienna "with the assistance of the
+     imperial envoy in Nijmegen"; the chronology's 1679 peace line); neither cites a Swedish commissioners' full power.
+   - Cipher: "šifrovací klíč" (Montecuccoli's key, HHStA Dänemark kart. 9, 1658), "převážně šifrované" (Gebsattel's reports 1668,
+     RA Stockholm Diplomatica Germanica kart. 291), and a general sentence that secretaries knew the cipher keys. None about 1677.
+   - Riksarkivet citations (33 lines) are to Diplomatica Germanica (kart. 278-369) and family archives; "traktat" appears only as
+     Rudelius's *garantitraktaten* (1681-84); no citation of Originaltraktater / Tyskland / Kejsaren (SE/RA/25.3/4/II/7/B).
+   - The opponent's review (HojdaZ_...doc, open, text bitstream 18,633 bytes): 0 hits for the same terms.
+   So the 2018 dissertation, on the imperial envoys' side at Stockholm 1650-1730, does not cite or transcribe the 6 May 1677 Nääs full
+   power in any form these terms reach.
+3. 10195/66550 (Bakeš 2015, "Diplomatická mise jako nejistá investice", Český časopis historický 2015/3, Nostitz at Stockholm
+   1685-1690) and 10195/67724 (Bakeš 2016, "Legační kaplani ...", ČČH 114/4): dc.rights "Pouze v rámci univerzity"; both text
+   bitstreams answer HTTP 401. Not retried. Both cover dates after 1677 (1685-90) or chaplains, and the dissertation that absorbs
+   them has no 1677 instrument, so a hit there is unlikely. One OpenAlex search ("Bakeš Nostic Stockholm"; an earlier wording
+   returned 0) found 1 unrelated 2021 article (Hřebíková on Kounice), no open copy of either; one Google Books API query (title
+   phrases, country=US, key) found 1 volume, *Habsburkové* 2017, NO_PAGES.
+Requests: dk.upce.cz 14 (3 pid lookups, 3 items, 3 bundle lists, 2 text 200, 2 text 401, 1 PDF 200; one at a
+time, 2 s apart), api.openalex.org 2, googleapis.com 1. Vision 0, subagents 0. Status stays `open`; nothing found, nothing read.
+
+## Remaining gaps (R8-KARL2, 6 Oct 2026)
 Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not been located in any print or image (0 of 1 target document found)
 - Bakeš 2014 thesis full text - blocker: needs-physical-access; theses.cz "Soubory jsou nedostupné" and dk.upce.cz 10195/58052 PDF and text answer 401 without a Pardubice login (D2B-KARL section above); a person can use the repository's own request route or a Pardubice reader
-- Bakeš 2018 book / 2015-16 articles (dk.upce.cz 10195/72172, 66550, 67724) - blocker: not-attempted; same author and subject, access untested; next: list each item's bitstreams on dk.upce.cz and grep any open text for 1677/Nääs/fullmakt, ~$0.3
+- Bakeš 2015/2016 ČČH articles (dk.upce.cz 10195/66550, 67724) - blocker: needs-physical-access; "Pouze v rámci univerzity", text bitstreams HTTP 401, no open copy via OpenAlex or Google Books (R8-KARL2 section above); the 2018 dissertation (10195/72172, open, 465 pp.) was grepped in full with 0 hits for the 1677 Nääs full power
 - Other tomes of Actes 1680/1697 and Dumont other volumes - blocker: not-attempted; seven scans failed the Oxenstierna control; next: be-api per scan with a passing control, ~$0.5
 - Riksarkivet owner/copy route - blocker: waiting-on the Riksarkivet reply to REQUEST.md; the owner-side copy request is unanswered
 
-## Escalation (D2B-KARL, 5 Oct 2026)
+## Escalation (R8-KARL2, 6 Oct 2026)
 - [x] siblings: Emperor-Sweden sibling instruments checked (A2P4-KARL page read)
 - [n/a] clear-pages: a single full power with no clear sibling page located
 - [n/a] known-keys: plain Latin instrument, no key
-- [ ] print: Bakeš 2018 book and articles on dk.upce.cz untested; CTS 15, Actes 1680/1697 scans, Dumont VII.1/VII.2, Sverges traktater v.8 negative by snippet
+- [ ] print: Bakeš 2018 dissertation grepped in full, 0 hits (R8-KARL2); Bakeš 2014 thesis and 2015/16 articles login-gated; CTS 15, Actes 1680/1697 other tomes and Dumont other volumes still untested by a scan with a passing control; Sverges traktater v.8 negative by snippet
 - [n/a] key-rebuild: no cipher key involved
 - [x] image-check: title page and page read via A2P4-KARL, Hathi H4
 - [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL); dk.upce.cz 401 not retried (auth gate, not a transient)
-Verdict: keep going: 2 internal gaps; cheapest next: Bakeš 2018 book and articles, dk.upce.cz bitstream check and grep, ~$0.3
+Verdict: keep going: 1 internal gap; cheapest next: be-api per scan of the other Actes 1680/1697 tomes and Dumont volumes, each with a passing Oxenstierna control, ~$0.5
