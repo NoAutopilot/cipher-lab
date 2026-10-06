@@ -10,9 +10,13 @@ Note: ../settle.py also writes ciphertext_4610.tsv (R20 lineage); do not run it 
 import csv, io, os, sys
 H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
 def rd(p): return list(csv.DictReader(open(p), delimiter='\t'))
+# --round b (R13-LVN10B, 6 Oct 2026, lvn10/PREREG_B.md): passes A5/B5, aligned_b.tsv -> apply_log_b.tsv, tag lvn10b.
+# After a round-b apply, round b is the canonical rebuild of ciphertext_4610.tsv (round a's gate failed, it changed nothing).
+RB = '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'b'
+PA, PB, ALN, LOG, TAG = ('A5', 'B5', 'aligned_b.tsv', 'apply_log_b.tsv', 'lvn10b') if RB else ('A4', 'B4', 'aligned.tsv', 'apply_log.tsv', 'lvn10')
 pre = rd(os.path.join(H, 'ciphertext_4610_pre.tsv'))
-al = {(r['line'], r['position']): r for r in rd(os.path.join(H, 'aligned.tsv'))}
-ctl = {'A4': [0, 0], 'B4': [0, 0]}
+al = {(r['line'], r['position']): r for r in rd(os.path.join(H, ALN))}
+ctl = {PA: [0, 0], PB: [0, 0]}
 for r in al.values():
     if r['role'] == 'control':
         for k in ctl: ctl[k][1] += 1; ctl[k][0] += r[k] == r['sign']
@@ -26,26 +30,26 @@ for r in pre:
     sign, conf, alt, why = r['sign'], r['confidence'], r['alt'], r['why']
     act = ''
     if a and a['role'] == 'target' and gate:
-        A, B = a['A4'], a['B4']
+        A, B = a[PA], a[PB]
         clean = A == B and '?' not in A and '~' not in A and A != '-'
         if conf != 'H':
             if clean:
                 act = 'settled' if A != sign else 'confirmed'
                 alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
-                sign, conf, why = A, 'H', f'image300 lvn10 (A4=B4={A}; pre pos {r["position"]})'
+                sign, conf, why = A, 'H', f'image300 {TAG} ({PA}={PB}={A}; pre pos {r["position"]})'
             else:
                 act = 'stays'
-                alt = (alt + '; ' if alt else '') + f'lvn10 A4:{A} B4:{B}'
+                alt = (alt + '; ' if alt else '') + f'{TAG} {PA}:{A} {PB}:{B}'
         if '/' in sign:
             if clean and A == sign:
                 parts = sign.split('/')
                 for j, p in enumerate(parts):
                     pos += 1
-                    out.append([r['line'], str(pos), p, conf, '', f'split lvn10 from pre pos {r["position"]} ({sign}), part {j + 1}/{len(parts)}; image300 A4=B4'])
+                    out.append([r['line'], str(pos), p, conf, '', f'split {TAG} from pre pos {r["position"]} ({sign}), part {j + 1}/{len(parts)}; image300 {PA}={PB}'])
                 log.append([r['line'], r['position'], r['sign'], r['confidence'], A, B, (act + '+' if act else '') + 'split'])
                 continue
             act = act or 'slash-kept'
-            if 'lvn10' not in alt: alt = (alt + '; ' if alt else '') + f'lvn10 A4:{A} B4:{B}'
+            if TAG not in alt: alt = (alt + '; ' if alt else '') + f'{TAG} {PA}:{A} {PB}:{B}'
         log.append([r['line'], r['position'], r['sign'] if act not in ('settled', 'confirmed') else r['sign'], r['confidence'], A, B, act or 'none'])
     pos += 1
     out.append([r['line'], str(pos), sign, conf, alt, why])
@@ -54,8 +58,8 @@ def tsv(rows, head):
     for x in rows: s.write('\t'.join(x) + '\n')
     return s.getvalue()
 outs = {os.path.join(T, 'ciphertext_4610.tsv'): tsv(out, cols),
-        os.path.join(H, 'apply_log.tsv'): tsv(log, ['line', 'pre_pos', 'pre_sign', 'pre_conf', 'A4', 'B4', 'action'])}
-print('control A4 %d/%d, B4 %d/%d, gate %s' % (*ctl['A4'], *ctl['B4'], 'PASS' if gate else 'FAIL'))
+        os.path.join(H, LOG): tsv(log, ['line', 'pre_pos', 'pre_sign', 'pre_conf', PA, PB, 'action'])}
+print('control %s %d/%d, %s %d/%d, gate %s' % (PA, *ctl[PA], PB, *ctl[PB], 'PASS' if gate else 'FAIL'))
 stale = False
 for p, s in outs.items():
     if '--check' in sys.argv:
