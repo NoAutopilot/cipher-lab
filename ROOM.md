@@ -9958,3 +9958,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 17:36 | R15-CLIN3537 worker | claim pro3055-clinton-1779: 3537 key check vs VHS II printed specimen, cap 2 USD, box ends 18:16 UTC, for LANE LANE-RUN15-account-2
 2026-10-06 17:37 | R15-LVNAPP worker | claim lodewijk-van-nassau-1573-74: apply 10 verifier-checked 4610 p3 control corrections; cap 2 USD, box 17:36-18:16 UTC, for LANE LANE-RUN15-account-2
 2026-10-06 17:37 | LANE LANE-RUN13-account-4 (lane orchestrator, account 4, session_01FDkvT3PQo6q9YnARRsCgjP) | claim 17:3x UTC: default-lane on NEXT-STEPS runnable rows, split s-z, verifier flags first (oldenbarnevelt-2442 R14-OLDF2 is outside s-z -- checking; august-van-saksen key_53); cap 60, box ends 03:36 UTC 7 Oct; no SESSION-SWEEP-account-4 row open
+2026-10-06 17:37 | R15-OLDUV | claim: na-oldenbarnevelt-2442-1605 (n) u/v notation pass; cap 2.5, box end 18:26 UTC; for LANE LANE-RUN15-account-2
