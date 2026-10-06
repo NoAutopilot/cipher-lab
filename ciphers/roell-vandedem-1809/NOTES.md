@@ -627,3 +627,58 @@ Dedem or the ministry) rather than an outgoing one.
 
 **Requests:** www.nationaalarchief.nl 1 (item page 1.02.20/978, HTTP 200); service.archief.nl 13 (IIIF, 12 openings at
 1000 px + 1 header crop, all HTTP 200, >= 1.9 s apart, one at a time). Subagent calls: 0.
+
+## R10-ROELL9 (6 Oct 2026): NA 1.02.20 inv. 980, Testa's copies to Van Dedem, the 10 Feb 1809 letter
+
+Worker R10-ROELL9 (account 2, for LANE LANE-RUN10-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run10-jobs.md`,
+07:22-07:27 UTC by `date -u`. Page images read by eye (IIIF 1000 px openings; header and P.S. crops at 1400-1600 px), no
+subagent, no decoding. Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0 (no reading). Per-scan log:
+`na10220/inv980_scans.tsv`; IIIF info URLs for all 143 scans: `na10220/inv980_iiif_info_urls.json`.
+
+**What inv. 980 is.** Item page `www.nationaalarchief.nl/onderzoeken/archief/1.02.20/invnr/980`, `availability: DIGITALIZED`,
+143 scans, "Brieven aan F.G. van Dedem van de Gelder. Afschriften." Testa's letters to Van Dedem in date order, from
+Constantinople le 30 Xbre 1808 (scan 1). The run read here is entirely in clear French, apart from Dutch passages from March
+1809 on (below); each letter opens "Excellence!" (or "Exc.") and the copies are signed "(signé) Gd. Testa".
+
+**The early-February run (located by bisection: scans 1, 72, 12, 24, 18, 23, then 10-17).**
+- Scan 10 left: end of the letter of 25 Jan 1809, with a P.S.: "Ayant écrit le 19 ct au Mr Roëll par le C[ourier] fr[ançais]
+  qui n'est parti que la nuit passée, et faute de matière digne de son attention je me dispense de lui adresser aujourd'hui
+  une nouvelle dépêche. Le change sur Amsterdam est à 65." (day read as 19; the "1" is faint.)
+- **Scans 10 right to 16 left: the 10 Feb 1809 letter**, headed "Copie" in the margin, "Constple le 10 février 1809",
+  "Excellence!", signed "(signé) Gd. Testa". It opens "Depuis l'acheminement de ma précédente en date du 25 janvier, que
+  j'ai adressée à Mess. Geymuller & Cie à Vienne", so **Testa wrote Van Dedem nothing between 25 Jan and 10 Feb; there is no
+  9 Feb item.** Length: about 12 pages of copy (half of scan 10 and of scan 16, all of scans 11-15). Content: Van Dedem's
+  letters from Bucharest of 17 and 21 Jan, the firman and the Janissaries, the inventories and sale of furniture, Adair at Pera
+  since 27 Jan, Hochepied after the Dardanelles event of 5 Jan, the rupture with the Austrian legation, a request for an
+  "ostensible" letter from Minister Röell, the birth of Sultan Mahmud's daughter, five enclosed letters. On scan 14 Testa
+  writes "V.E. verra par la copie de la Dépêche d'aujourd'hui, que je lui transmets ci-joint": Van Dedem also got a copy of
+  that day's despatch, i.e. of No 7 to Röell (inv. 978, R9-ROELL8). No cipher groups, no blank left for cipher, no "en
+  chiffre" note anywhere in scans 10-16.
+- Scan 16 right: the next letter, "Constple le 2[5 or 6] février 1809" (second digit overwritten; Bourdeau has 26), "Exc.",
+  referring to "ma précédente du 10 ct". So inv. 980's February run is 10 Feb and 25/26 Feb only, as Bourdeau recorded.
+- From 24 March (scan 23) Testa switches into Dutch, underlined, for one sensitive passage (breaking off relations with the
+  Austrian legation in case of war), and scan 24 is wholly in Dutch; scan 17 notes Van Dedem had asked him to write in
+  Dutch. A change of language, not a cipher; recorded because it shows how this correspondence kept passages private.
+
+**Compared with R1469 (7 pages, "Monsieur", 9 Feb 1809).** The 10 Feb copy is a different letter: different date, about 12
+pages against 7, "Excellence!" against "Monsieur", clear French throughout, and Testa addresses Van Dedem as "Excellence"
+in every letter seen here (30 Dec 1808, 10 Feb, 25/26 Feb, 24 Mar 1809). **So inv. 980 shows R1469 to be neither a copy of
+a Testa letter to Van Dedem nor any letter of 9 Feb in this file.** Inference, not established: the address form argues
+against Testa -> Van Dedem as the pair behind R1469 at all, since a chargé d'affaires writing to his ambassador uses
+"Excellence"; a "Monsieur" letter fits a writer of equal or higher rank to a lower-ranked addressee (e.g. Van Dedem to
+Testa, as inv. 990 is addressed per Bourdeau, or the ministry to a chargé). Not checked: the length of a cipher page against
+a page of copy (2,585 groups over R1469 and R1470 together; the split per letter is not on disk), so the page counts are a
+weak comparison.
+
+**Not found.** No cipher, key or clear copy of R1469/R1470 in the 16 scans read; no 9 Feb 1809 item in inv. 980. Not read:
+scans 2-9 (30 Dec 1808 to 25 Jan 1809), 19-22, 25-71, 73-143.
+
+**Verdict line:** `open` -- inv. 980 holds no 9 Feb 1809 letter (Testa's letters to Van Dedem run 25 Jan -> 10 Feb ->
+25/26 Feb), and its 10 Feb copy is a different, clear, ~12-page "Excellence!" letter that encloses a copy of No 7 to Röell.
+Both plis of the 10 Feb cover to Van Hogendorp are now matched to clear 10 Feb letters seen on the page (inv. 978 No 7,
+inv. 980 10 Feb), and neither is R1469. Cheapest next: test R1469 as an *incoming* letter -- inv. 990 (Van Dedem to Testa,
+1809-11, "Monsieur" per Bourdeau) at its early-February 1809 run for a 9 Feb letter, and whether any letter there says
+"en chiffre" or encloses a cipher (bisection, <= 20 requests, ~USD 2).
+
+**Requests:** www.nationaalarchief.nl 1 (item page 1.02.20/980, HTTP 200); service.archief.nl 16 (IIIF, 12 openings at
+1000 px + 4 region crops, all HTTP 200, >= 1.9 s apart, one at a time). Subagent calls: 0.
