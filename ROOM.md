@@ -8991,3 +8991,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:37 | R7-DONC worker | claim for LANE LANE-RUN7-account-2: R7-DONC sp78-doncaster-1621, cap 1.2 USD, box to 02:10 UTC
 2026-10-06 01:37 | R7-OLDSORT | claim: na-oldenbarnevelt-2442-1605 seed the owner sign sorter for blocks A/C2 from R7-OLDA crops (cap 2, box 01:37-02:17 UTC, no vision) for LANE LANE-RUN7-account-2
 2026-10-06 01:37 | R7-WVOH worker | claim R7-WVOH wvo-hessen-1564: WVO search Hessen->Oranje Oct-Dec 1564, cap 1.2 USD, box to 02:07 UTC, for LANE LANE-RUN7-account-2
+2026-10-06 01:38 | R7-NEWC worker | claim R7-NEWC sp87-newcastle-1743, cap 1.2, box ends 02:07 UTC, for LANE LANE-RUN7-account-2
