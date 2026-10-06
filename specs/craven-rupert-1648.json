@@ -1,0 +1,23 @@
+{
+ "slug": "craven-rupert-1648",
+ "name": "William, Baron Craven to Prince Rupert, The Hague, 6 Nov 1648 (BL Add MS 18982 ff.134-135, DECODE R8447)",
+ "date": "6 Nov 1648",
+ "language_candidates": ["en"],
+ "ciphertext_pending": "No transcription in print (not in Warburton 1849) or as a DECODE attachment. DECODE R8447 has 3 pages, full images account-gated; BL images offline (searcharchives.bl.uk/catalog/040-002095608, 'digital images currently unavailable'). The BL note says the first part of the letter is heavily ciphered. Test 1 starts from a transcription.",
+ "alphabet": "numerical (DECODE: Symbol Sets Numerical, Cipher Type Unknown)",
+ "constraints": {
+  "tomokiyo": "seems to use some different cipher from the volume's solved letters (unsolved.htm)",
+  "sibling_keys": "same volume carries deciphered 1648 letters R8445 (f.114), R8446 (f.123), R8448 (f.141), R8449 (ff.146-147); no DECODE Key records for 18982",
+  "sender_recipient": "Craven (Baron, later Earl) at the Hague to Rupert at Helvoetsluys, royalist fleet"
+ },
+ "cheap_tests_in_order": [
+  "1. Obtain the three pages (DECODE R8447 full-size via one browser login, record-specific; or BL if images return), transcribe by TRANSCRIPTION.md, count groups, value range, repeats. Cost ~$3.",
+  "2. Key-family test: apply the decipherments of R8445/R8446/R8448/R8449 (cipher values vs plaintext from the volume) as candidate tables to R8447, and the Cryptiana Nicholas-Rupert and THE=g4 keys, vs a shuffled-key control at the same N and symbol count (rule 3, match the design). Cost ~$3."
+ ],
+ "matched_control": "shuffled-key control at the same N and K, same design (numeric code+nulls); to be run with test 2",
+ "cheap_test_done": [],
+ "judge": {"language": "en", "letters_min": 30, "letters_max": 400, "control_samples": 200, "note": "N unknown until test 1; 17th-century English, use an era-matched corpus if one exists in tools/data"},
+ "value": "medium: sibling decipherments of the same correspondence are in the same volume; gated on image access",
+ "model": "Sonnet",
+ "written": "6 Oct 2026 by NB-CRAV (LANE NEWT-B-account-2)"
+}
