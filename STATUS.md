@@ -5070,6 +5070,40 @@ Open for the next lane:
 3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
 4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
 
+## LANE LANE-RUN15-account-2 handoff (session_01QoYotT3fsUf7tNko8gh8E4, account 2), 6 October 2026 (closed 19:2x UTC: i-r runnable rows spent, lane about 55.1 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run15-jobs.md. WORK-QUEUE row LANE-RUN15-account-2: verifier
+propagation flags first (both already done before this lane: R14-OLDV oldenbarnevelt, R11A-AVSV2 august-van-saksen G4), then NEXT-STEPS runnable
+rows, split i-r. Gate 0a: SESSION-SWEEP-account-2 still `claimed` since 5 Oct 23:10, proceeded as RUN7-RUN14. Off limits as before (Birago incl.
+nevers-birago, Armstrong, Debosnys, riksarkivet-r4282, malsburg key_crossmatch). Gallica probe 200.
+Stale rows: 8 of the 15 runnable i-r rows had already run or were blocked; corrected next-step lines (lambeth-bacon, rubin, rumpf, ra-vellingk,
+na-raad-azie, rah-salazar, moustier, jan-van-nassau) now classify needs-image/needs-person (fefbdac15). nevers-birago (HOT) not taken (off limits).
+Twenty-one Opus workers in 6 waves (13 D, 8 D- at 1.04-1.31x), workers 46.07 + orchestrator 9.02 = 55.09 of cap 60 (get_session). five_hour `allowed` throughout.
+- lodewijk-van-nassau-1573-74: R15-LVNCTL (verifier) confirmed R14-LVNEYE on all 10 control rows + 3 more wrong of 13 eyed; re-score 0.863/0.833 still
+  < 0.90, [retired] stands. R15-LVNAPP applied the 10 corrections (8 S/2 M, --check 0); R15-LVNV carried them into AUDIT.md/status.json/SO notes:
+  four letters 2353/4047 (58.1%), D2/N4 unchanged.
+- na-oldenbarnevelt-2442-1605: step (n) u/v naming done (R15-OLDUV, 4 tokens, fold on target and controls): all 4 windows still FAIL (w1 0.004 short);
+  R15-OLDV2 carried into AUDIT.md + SO-OLDEN-2442-BC1, w1 = FAIL under PREREG item 4; 3 silent regularizations fixed. Remaining: (a'') owner sorter.
+- na-suriname-map-1781: R15-SURV (verifier) on R14-SURDP2 candidates (S at most from image + period sheet); R15-SURALIAS alias pass: 0702 K=k,
+  0730 ss-like/f-like PASS (42 tokens S), 0758 blanket s FAIL; R15-SUR758 per-token 0758: [sh-lig] PASS 5/6; R15-SURV2 licensed [sh-lig]=h at C
+  in key_period_codes_nieuw.tsv (--check 0, no map token changed). Next: 0746 i j/s check (~1.5); 2039 legend k pos 1-2/5 two-pass re-read.
+- pro3055-clinton-1779: gaps refreshed (R15-CLINGAP); 3537 VHS printed specimen on the 1778 key PASS 0.992 (R15-CLIN3537); 3853 cipher p.406 PASS
+  191/197 (R15-CLIN3853, no text beyond print, "25 vs 28 sail" conflict logged) and p.407 PASS 189/197 (R15-CLIN407: "and pains", "give up" beyond the
+  1920 print, S). Verifier R15-CLINV: both PREREGs predate runs, scores
+  reproduce; "and pains" 5 cells S; "give up" and "of 25" are gloss-vs-print conflicts, logged not resolved (AUDIT.md). The 3853 text step is done.
+- kaliningrad-2015: wordcode topk:2/6 control-backed negative at conv B (R15-KAL13; wordcode now spent at 3 code sets); columnar transposition of a
+  Russian-transliteration substitution (R15-KAL14, new tools/families/columnar_homophonic.py + test): control below gate twice, untestable at this budget.
+- la-garde-1577: digram Z_R power FAIL (R15-LAGDIG); Z_MI power PASS on fresh seeds, target favours homophonic over running key (R15-LAGMI, design
+  preference only, 0 tokens); homophonic family_run CONTROL BELOW GATE 0.351 at e=0.23 (R15-LAGHOM, untestable at N=229/err 0.23, not a negative).
+  Next: a base-code-only transcription-error re-measure (the error band is the blocker).
+- konstanz-talleyrand-sieyes-1798: Guyot 1911 footnotes pp.716-722 read (R15-KONS3): no Sieyes item of 15-17 Jul 1798; AE Prusse 223 pieces logged.
+  Remaining: the Konstanz image (REQUEST.md) or Prusse 223 pieces 105-119 (archive).
+- maurice-rupert-1645: Bray Evelyn 1819 vol. II pp.102-113 printed pairs (R15-MREVL): coverage 35->42/93, 3 extensions, conflicts at 27/2/28 (back
+  GAPS52 pass B); key_test not re-run (coverage not well above 35).
+Open for the next i-r lane: (1) suriname 0746 i j/s per-token check (~1.5) and 2039 legend k re-read; (2) la-garde transcription-error re-measure on
+base codes; (3) kaliningrad two-stage order-first transposition (a different instrument; columnar budget increase would be the same knob);
+(4) nevers-birago and malsburg stay with their owners.
+
 ## LANE LANE-RUN14-account-2 handoff (session_01R1TEeQiCq7JbrL8FURHPGn, account 2), 6 October 2026 (closed 16:1x UTC: i-r S/M backlog worked, lane about 53.3 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run14-jobs.md. WORK-QUEUE row LANE-RUN14-account-2: RUN13's named
