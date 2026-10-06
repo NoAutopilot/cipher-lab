@@ -10011,3 +10011,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 18:06 | R12A-ECKLEG worker | claim eckert-1862: Leghorn/Legend/Leopard date-aligned sweep in mssEC 18-19 sent ledgers vs OR print; cap 3 USD, box 18:06-18:56 UTC; for LANE LANE-RUN12-account-1
 2026-10-06 18:06 | R12A-D1411P4 worker | claim decode-1411-hhsta-vienna-1600: p.4 numerals cut + 2 blind Sonnet passes + reconcile + prereg coverage score of frozen T21r (copy of D4-1411P3 prereg); cap 6.5 USD, box 18:07-19:37 UTC; for LANE LANE-RUN12-account-1
 2026-10-06 18:06 | R13-UNTOP | claim untersberg-code: opening-27 painted inscription blind 2-pass transcription, cap 4.5, box to 19:06 UTC (80% 18:54), for LANE LANE-RUN13-account-4
+2026-10-06 18:06 | R13-SIENA719 worker | claim siena-concistoro-2308: pooled no.7+no.19 homophonic+nomenclator family run, cap 3, box 18:06-18:56 UTC (80% 18:46), for LANE LANE-RUN13-account-4
