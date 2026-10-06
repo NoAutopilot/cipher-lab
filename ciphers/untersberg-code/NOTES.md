@@ -537,3 +537,71 @@ Next step for symA (one line, not run): find the reference class elsewhere, usin
 illustrated openings 12-28 (opening 27's tablets first, 1225 px on disk, then native). Screen with 400 px thumbnails first, then crop only
 the leaves that have Latin script. If no crossed-descender p turns up in the whole manuscript, F4 is untestable within this manuscript and
 goes to the paleographer crop packet (SO-UNTERSBERG-LEADS methodology item 2). About USD 2-3.
+
+## symA reference class from the illustrated openings, F4 (R9-UNTB2 (account-4), 6 Oct 2026, 06:01-06:11 UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-UNTB2. Intake gate (pasted): `untersberg-code: open (line 3) --
+edition/page or full-text-search citation found within 6 lines`. The step was still undone (R8-UNTB's closing line: "not run").
+PREREG: `specs/cheap-tests/untersberg-code/PREREG-R9-UNTB2.md` (3dfacf6e), pushed before any opening 12-28 was viewed. It reuses
+PREREG-R8-UNTB unchanged and only widens the units.
+
+**Leaves and crop step.** All 17 openings 12-28 were screened at 400 px (one contact sheet). Opening 27 was fetched at native size,
+4900x3064. Then all prose and caption openings were fetched at 2450 px: 12-16 and 19-26, plus openings 6-10, which no pass had read at
+reading size (bUNT4 had sampled 8-10 only as 600 px thumbnails). Openings 17 and 18 are paintings with no text, and 28 is the back cover
+with the library stamp. Images were saved to the session scratchpad and not committed. Crop step run and pasted:
+`python3 tools/iiif_lines.py --image o27.jpg --out c27top --region 2500,0,2400,560 --lines-per-crop 1 --max-width 1300` (inscription
+lines 1-2), `--out c27ins3 --region 2560,380,2100,260` (line 3), `--out c27L --region 1640,1120,280,540`, `--out c27L2 --region
+1820,1100,200,580` (left tablet), `--out c27R --region 2700,960,680,700` (right scroll); `--image m16.jpg --out c16 --region
+1270,490,1080,140`, `--image m12.jpg --out c12 --region 700,30,500,110`, `--image m21.jpg --out c21 --region 1450,1240,300,110`,
+`--image m25.jpg --out c25 --region 1340,80,380,110`, `--image m9.jpg --out c9 --region 60,560,330,120`, `--image m10.jpg --out c10
+--region 50,50,1100,110`. On single words the tool trims to one ink band (c9 came out 49 px high, the c21 crop missed its word), so
+those two were read from PIL zooms of the same 2450 px file instead (m9 box 40,440,560,560 at 2x). No subagents were used. The worker
+viewed the images itself: 1 contact sheet, 9 page or page-pair overviews, 7 crops or zooms.
+
+**Reference class R (crossed-descender p in this hand): 0 found, now across all 28 openings.**
+| opening | Latin-script words / painted text seen | p forms | R |
+|---|---|---|---|
+| 6, 7, 8 | none (Kurrent prose) | Kurrent only | 0 |
+| 9 | "Speculmundi" [Speculum mundi], L page | 1 Latin-script minuscule p in "Spe-": the descender ends in a leftward curl or loop at the foot, with no bar on either side. Same build as R8-UNTB's opening-1 "Sp-" | 0 |
+| 10 | title "Die Prophezeyung so im Undtersperg ..." (Kurrent display hand) | Kurrent p, plain | 0 |
+| 12 | "Prelat"-type word (Latin-style capital P), L line 1 | capital P with a loop, plain stem | 0 |
+| 13 | captions in Kurrent | -- | 0 |
+| 14 | "Instrument", "Musical-", "Coricanten" | none | 0 |
+| 15 | "Figuriren", "Musicalische Instrument", "Refent" | none | 0 |
+| 16 | "Refent", "Liberey", "Cardinal", "Bischoff", "Prälaten", "Probst", "Prior" | capital P (x2) plain; Kurrent p in "Probst", plain descender | 0 |
+| 19 | "Musicalischen Instrumenten", "Figuriren" | none | 0 |
+| 20, 22, 23, 24 | "Nation" (23) | none | 0 |
+| 21 | "Prälat" (not cropped adequately) | -- | 0 |
+| 25 | "Practi(c)ena" [Practiken], R line 2 | Latin-script capital P with an open loop and a plain stem | 0 |
+| 26 | INRI titulus (painted) | -- | 0 |
+| 27 | 3-line painted inscription (R page) + left tablet of symbol columns + right scroll | inscription "...ONP·..." has a plain capital P; the tablet and scroll have no p-shaped sign with a crossed descender | 0 |
+Carried forward from R8-UNTB: openings 1-5 and 11 had 0. Total R = 0 against the 3 required.
+
+**Result: F4 untestable within this manuscript (non-test).** The PREREG resolution control fails for the second time, now with every
+text-bearing opening of Hs 2398 viewed at 2450 px or native. This scribe never writes a crossed-descender p. The control could have
+passed: any Latin *per/par/pro* abbreviation in the Latin-script words would have counted. It did not, so no symA tally was run. Rule 4:
+no token graded (H 0, C 0, S 0). Counts are unchanged from bUNT8/bUNT9 (C 0, M 4, H 0, I 1). By the PREREG this is "untestable here",
+not a negative on F4.
+
+**Observation, not graded.** The two Latin-script minuscule p's this scribe writes (opening 1 "Sp-", opening 9 "Spe-") both end the
+descender in a leftward foot-curl, with no crossing stroke. That fits R8-UNTB observation 2, that a stroke near the descender may be how
+this hand builds p. Two examples do not settle it, and symA is in the painted inscription hand, not the prose hand.
+
+**Observation, not graded (opening 27).** The R page carries a 3-line painted inscription in the same alphabet family as the opening-11
+six-liner. Read by eye, unverified: "ISYRLEDETREUTEEIHS / SYREKSTERYTONP·DXYZ / ELTUAAXdÿGHES". The left figure's tablet carries two to
+three columns of symbols (3, 9, c, +, 8, ε, a, r, x, e, s ...). The right figure's scroll reads roughly "de Naleesge.. / zotaasdes / ahFa·
+Nea:". Line 342 above calls opening 27 "tablets of pseudo-writing". The tablets may be, but the top inscription is a full painted text
+and is Herzog's "Vgl. fol. 27" sibling inscription. Not transcribed blind, and not checked against Herzog pp. 45-50 this pass.
+
+**Paleographer crop packet (SO-UNTERSBERG-LEADS methodology item 2): add F4.** "Does symA (L2 tok1 final, L4 tok5, L4 tok7, L6 tok2
+first glyph; L6 tok3 kept apart) carry a *per*-bar or this hand's own p lead-in/foot-curl? No crossed-descender p occurs anywhere in Hs
+2398 (R8-UNTB + R9-UNTB2, all 28 openings), so the question needs an outside reference hand. Include as comparanda the two plain
+Latin-script p's (opening 1 'Sp-', opening 9 m9 2450 px box 40,440,560,560) and the opening-27 inscription's 'P'."
+
+Requests: sammlung-online.salzburgmuseum.at 37 (detail page 1, 400 px thumbnails 17, native opening 27 1, 2450 px 18), at least 2 s
+apart, descriptive User-Agent, all HTTP 200. No other host.
+
+Next step for symA (one line, not run): F4 can only move through the paleographer packet (outside reference hand). The cheapest
+in-folder step instead is a blind 2-pass transcription of the opening-27 inscription (3 lines, native crops above), collated against
+Herzog's "Vgl. fol. 27" apparatus. It is a sibling text in the same alphabet and may show symA-like signs in a second context. About
+USD 3-5. It is a machine transcription of a symbol inscription, so check the TRANSCRIPTION.md sorter rule before briefing it.
