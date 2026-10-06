@@ -197,3 +197,28 @@ R9-ROELL6's cheapest next: inv. 996 (Van Hogendorp at Vienna 1809, digitised per
 >= 1.8 s apart, <= 45 requests; one scan = one unit ~0.05). Look for a letter to/from Van Dedem or a cipher letter/key of Jan-Mar 1809
 matching the target's description in NOTES.md; record scan numbers read and what each holds. No decode unless a key sheet is found (then
 describe it and stop for a fit-test brief).
+
+## Wave 4 (written 06:0x UTC 6 Oct; spawned as wave-3 slots free).
+
+### R9-KAL6 -- kaliningrad-2015, paired soft/hard move-set anneal for the S3' unit (cap 7, box 80 min)
+Intake gate: `kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+The different instrument named by A2P4-KAL4 and carried by A2P4-KAL5 / RUN4-KAL ("paired soft/hard move set or two-stage solve, ~$6"): the
+S3' soft unit's control did not converge (0.723) with the existing anneal; restarts alone are retired (rule 3 third-attempt clause). Build
+the paired move (swap a soft/hard letter pair as one move, e.g. n<->N) or the two-stage solve as an option on the shared solver in tools/
+(never a private copy; offline test in tools/tests/), pre-register (PREREG committed and pushed before any scored run), run the matched
+control FIRST at the target's N, K and soft-letter rate (tools/family_run.py order: control below gate -> stop, log "control below gate",
+no target run), then the target only if the control passes. Judge Russian decodes against the held-out distribution (p01 about -1.05 at N
+about 1000) as well as real_p05 (A2P4-KAL5/RUN4-KAL: real_p05 alone is "judge cannot decide"), and score the shuffled target through the
+same pipeline. Report control, target and shuffle numbers. Unit = one control or target run; size the run count from the per-run time you
+measure on the first control run and stop before a run that would cross 80% of cap or box. HYPOTHESES.md row with both numbers.
+
+### R9-NAKEY -- oldenbarnevelt-brederode-1605 NA States-side key hunt + rumpf-vandebie-heinsius-1716-19 NA re-probe (cap 2.5, box 45 min)
+Intake gates: `oldenbarnevelt-brederode-1605: open (line 1) -- ...within 6 lines`; `rumpf-vandebie-heinsius-1716-19: open (line 1) --
+...within 6 lines`. (1) oldenbarnevelt-brederode "Next cheap step" (NOTES ~l.686): the NA 1.01.02 (States-General) / 3.01.14
+(Oldenbarnevelt) archive hunt for a States-side cipher key of 1600-1610 (see the folder's "Key hunt" section for what was already tried).
+Search the NA catalogue (www.nationaalarchief.nl / service.archief.nl EAD per the CLAUDE.md host table, NOT data.nationaalarchief.nl) for
+cijfer, cyfer, chiffre, sleutel, geheimschrift in those two archives; record inventory numbers, descriptions and digitisation flags
+(drupal-settings availability). If a digitised key of the window exists, fetch only its first scan and say whether it is a numeral
+nomenclator whose range could fit (no fit test). (2) rumpf "While waiting": re-probe NA 3.01.19 inv. 2030 and 2044 item pages
+(drupal-settings availability, 2 requests) and record the flag. <= 40 requests to nationaalarchief hosts, >= 1.5 s apart. Update both
+NOTES.md files.
