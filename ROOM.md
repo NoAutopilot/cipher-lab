@@ -8978,3 +8978,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:18 | R7-ROUS worker | claim naf14913-rousseau-venice-1743: Souchon 1915 No 2044/2031 check, cap 1.5, box ends 01:48 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:18 | R7-OLDA worker | claim for LANE LANE-RUN7-account-2: R7-OLDA, na-oldenbarnevelt-2442-1605, crop-and-read blocks A and C2; cap 6 USD, box 01:18-02:28 UTC
 2026-10-06 01:18 | R7-MANTP worker | claim: sachsstaatsarchiv-manteuffel-1712 pooled single-code-gloss gate, cap 2.5, box end 02:02 UTC, for LANE LANE-RUN7-account-2
+2026-10-06 01:20 | R7-ROUS worker | done (01:18-01:20 UTC by date -u, brief met): naf14913-rousseau-venice-1743 Souchon No 2044/2031 check was already on file (A3V3-SOU44, 4 Oct, both bare date lines, no plain side in print); 2044 re-read p.268 and confirmed; gallica 429 on p.267, host stopped; verdict and gap line updated, next = Hatzenberger 404/219 fit check ~$1; commit 6e391cc4, for LANE LANE-RUN7-account-2
