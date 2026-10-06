@@ -527,7 +527,7 @@ precision at a margin threshold chosen on seeds 1-3 and tested on fresh seeds 4-
 same threshold; S only for target groups above it. If that also fails, the step is [retired] for this instrument (rule 3 third-
 attempt clause applies after attempt 3, so attempt 2 is still a fair test). No network requests this job.
 
-## R10-HUNT2: context-fill attempt 2, re-registered gate (account-1 worker, 6 Oct 2026 09:47-10:05 UTC by date -u)
+## R10-HUNT2: context-fill attempt 2, re-registered gate (account-1 worker, 6 Oct 2026 09:47-09:59 UTC by date -u)
 
 Pre-registered in fill/PREREG-R10.md (pushed 022e9ca7e at 09:50 UTC, before fill/context_fill_r10.py existed). Same LM, corpus (fr18),
 candidates, context and BLA185 columns as R9; two changes: the inverted-bracket fix ([min, max] of the six bracket values when the
