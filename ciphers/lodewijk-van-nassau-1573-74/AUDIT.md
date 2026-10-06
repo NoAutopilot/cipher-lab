@@ -1517,3 +1517,56 @@ SECOND-OPINIONS-QUEUE.tsv: rows SO-LODEWIJK-1573-74 and SO-LODEWIJK-5797 exist; 
 4616 phrase that changed, so no edit; a one-clause note is added to SO-LODEWIJK-1573-74's notes column pointing here.
 
 Requests: resources.huygens.knaw.nl 2 (4616 PDF, 4496 record). No subagents.
+
+## R12-LVNV2: the six H control rows of 4616 that R12-LVN16R found contradicted by the image (6 Oct 2026)
+
+Verifier R12-LVNV2 (account 2, for LANE LANE-RUN12-account-2), 6 Oct 2026, 12:17-12:20 UTC by `date -u`. Separate from the
+solvers (R12-LVN16, R12-LVN16R) and from R12-LVNV. Nothing decoded; ciphertext, key and reading not edited.
+
+**What "H" means on these rows.** In ciphertext_4616.tsv (lvn16/ciphertext_4616_pre.tsv) "H" is a *transcription*
+confidence, why=`agree`: the two 150-dpi passes (passA.tsv, passB.tsv) agreed. It is not a rule-4 key-source grade: 4616
+(Lodewijk -> Willem, 12 Apr 1574) has no period decipherment, gloss or print, so no witness gives these signs. The six codes'
+values in key_full (90 f, 40 u, 79 d, 39 u, 91 g, 81 e, 36 u, 31 t, 26 s, 20 q) are all C from the 4613/4615 alignment;
+none is in key_conflicts.tsv. So the question "transcription error vs key-sheet conflict" resolves to transcription for
+all six; no key value is in dispute. Exception found: **p1_L17/2 was never agreed at 150 dpi** (passA 91, passB 31), yet the
+row carries H/`agree`; a bookkeeping error in the H label itself, which also makes it unfit as a control row.
+
+**Image check.** WVO 04616.pdf fetched once (resources.huygens.knaw.nl, HTTP 200), p1 `pdftoppm -png -r 300` (sha1
+4f47b490f28e2cfeebaf5352c34f64af87636148, matches), crops re-cut with the logged command, pasted:
+`python3 tools/iiif_lines.py --image 04616-1.png --out crops --prefix 04616_p1 --region 380,320,2080,880 --distance 45
+--prominence 20 --top-margin 12 --bottom-margin 12 --debug` (13 lines; crop L08-L13 = p1_L12-p1_L17). Read by this
+verifier's own eye at 3x (line starts; L15 middle) and 4x from the page render (L16/L17 starts, taller window so no
+descender is cut). No subagents.
+
+| row (pre pos) | H (150 dpi) | 150-dpi passes | image (300 dpi) | verdict | decode H -> image, context |
+|---|---|---|---|---|---|
+| p1_L12/1 | 90 | 90/90 | **40**: 4 with crossbar, same form as 40 at p1_L14/4 | transcription error | f -> u |
+| p1_L13/1 | 79 | 79/79 | **39**: round-bowled 3, no flat top | transcription error | d -> u; "u ostre" (vostre) reads |
+| p1_L14/2 | 91 | 91/91 | **81**: two-loop 8, no tail; 78·81·12·40 | transcription error | g -> e; "c e pui[s]" reads |
+| p1_L15/16 | 36 | 36/36 | **31**: 3 then the hand's 1-stroke (as in 21, 81 beside it) | transcription error | u -> t; "obere t nidor" |
+| p1_L16/2 | 26 | 26/26 | **20**: oval 0, no ascender (cf. 6 of 61 at p1_L17/4); the 2 is heavily re-inked, possibly a writer's correction | transcription error, value doubtful | s -> q; 'q' (key_full 1x attested) makes "a q se t", 's' made "asse t": grade M after correction |
+| p1_L17/2 | 91 | **91/31** (not agreed) | **81**: closed two-loop 8, no tail (the hand's 9 at p1_L15/2 has a long tail) | transcription error + H-label error | g -> e |
+
+All six agree with R12-LVN16R's eye and with both 300-dpi blind readers (A3 == B3 at every row). On p1_L17/2 this verifier
+does not support R12-LVNV's "clearly 91"; at 4x on the taller window it is 81. p1_L12/1, the row R12-LVNV called ambiguous,
+reads 40 here.
+
+**Control recomputed (R12-LVN16, lvn16/aligned.tsv, role=control, N=210).** As committed: A3 193/210 (0.919), B3 194/210
+(0.924). With the six H rows set to the image values: **A3 199/210 (0.948), B3 200/210 (0.952)**. With the six rows dropped
+instead: 193/204 (0.946), 194/204 (0.951). Gate 0.90: **the PASS holds, with more margin**, under either treatment. Caveat as
+R12-LVNV logged: the readers share 7/3 and 9/8 confusions, so the corrected rows are settled by the image read here, not by
+A3 == B3; the remaining 11/10 misses include the 6 R12-LVN16R rows where the image supports H (readers wrong).
+
+**Corrections for a solver (not applied here; verifier, not solver):** in ciphertext_4616.tsv (renumbered positions may
+differ from the pre positions above) change p1_L12/1 90->40, p1_L13/1 79->39, p1_L14/2 91->81, p1_L15/16 36->31,
+p1_L16/2 26->20 (grade M, re-inked, value 'q' does not fit), p1_L17/2 91->81; why `image300 lvn2v`. Then
+`tools/decode_key.py ... --config decode_4616_full.json` rewrite and `--check`. Token grade counts move only at p1_L16/2
+(C -> M); the other five stay C with changed letters.
+
+**Implication.** 6 of 12 contested H rows (and 1 of them never agreed at all) were wrong at 150 dpi, so H in 4616's
+uncontested rows means "two 150-dpi readers agreed", which the shared 9/8 and 7/3 confusions can satisfy wrongly. Next
+(one line): a sample eye check of ~30 uncontested H rows of 4616 holding 3, 7, 8 or 9, against the 300-dpi crops, ~$1;
+and an audit of every `agree` label against passA/passB for 4610/4611/4616 (script, no image, ~$0.3).
+
+**N-class / depth.** Unchanged: 4616 N4; the six changes are inside an unprinted letter's token values. Requests:
+resources.huygens.knaw.nl 1.
