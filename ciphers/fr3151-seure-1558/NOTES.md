@@ -917,3 +917,51 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gap; cheapest next: fetch Bourdeau's guiche1551 key and test it against R1/R2 with a coverage-checked statistic and own-text power control first, ~$2.5
+
+## R9-SEURE2: Bourdeau's La Guiche 1551 key vs the reconciled f81R reads (6 Oct 2026, 06:42-06:47 UTC by date -u, account 1, LANE-RUN9-account-1)
+Named next step of R9-SEURE (known-keys). Brief `.claude/briefs/runs/2026-10-06-account1-run9-jobs.md` ### R9-SEURE2. Key and own text
+from D. Bourdeau, cyphersolver `targets/guiche1551/` (NOTES.md key line + 30 Sept corrections; `guiche_ct.txt`), fetched from
+raw.githubusercontent.com 6 Oct 2026 (5 requests) and copied with credit (`keytest/guiche_key.tsv`, `keytest/guiche_ct.txt`; CC BY 4.0).
+Prereg `keytest/PREREG-R9B.md` (commit cc6eec8b4, pushed before any score). Script `keytest/guiche_fit.py` (`--check` OK), output
+`keytest/result_r9b.json`. Images viewed by this worker: Gallica btv1b90601662 f65 (1 request, 2000 px) and `images/kp/f81R_L03_s1.jpg`,
+to fix the shape map. 0 subagent calls.
+
+Design note (before scoring): La Guiche is a 22-sign simple substitution with no numerals; the f81R reads have 93 labels and 12 numeral
+word codes. The La Guiche key cannot be Seure's key as a whole; the test asks only whether the shared shapes carry La Guiche's values.
+Statistic: coverage-free unigram fit (R9-SEURE's lesson), U = mean fr16 log10 P(letter) over mapped signs, vs a 1000-draw shuffled-key
+null (values permuted across the 17 mapped codes; U depends on value-at-position, so the null can differ).
+
+| run | U | mapped signs | null mean / p95 | pass |
+|---|---|---|---|---|
+| control: La Guiche own text, true key on the 17 codes, err 0 (3 seeds) | -1.173 | 348 of 430 | -1.417 / -1.29 | 3/3 |
+| control, err 0.095 | -1.19 to -1.20 | 342-349 | -1.42 / -1.30 | 3/3 |
+| control, err 0.242 | -1.22 to -1.25 | 334-348 | -1.41 / -1.31 to -1.32 | 3/3 |
+| target R1 | -1.351 | 198 of 461 | -1.419 / -1.289 | **no** |
+| target R2 | -1.374 | 200 of 461 | -1.419 / -1.295 | **no** |
+
+**Result: power condition holds (3/3 at E 0.095 and at 0.242); both reads FAIL, sitting near their null mean.** A negative for the La
+Guiche 1551 key under this one shape map only: not for the key family, not for other maps. The control is design-matched to La Guiche
+(simple substitution), not to Seure (homophonic + word codes), so it measures the statistic's power for this key on its own text.
+Observation (M): under the map Seure's frequent `ff` (20) reads q and `#` (38) reads i, a profile no French text has. No reading claimed,
+no grades changed, key.tsv and decode not run.
+Not found: any fit of the La Guiche values to the shared shapes of the f81R reads above the shuffled-key null.
+Lead (not acted on): Tomokiyo's Henri II page (`sources/cryptiana/web/henryii.htm`, l.129) lists BnF fr. 3138 no. 13, f. 32 (pp. 38-44),
+"Lettre avec chiffre et dechiffrement de Philibert Babou ... au roy ... De Romme, XIme jour de jung 1558": a same-year French
+diplomatic cipher with its period decipherment, from which a key can be rebuilt (Gallica btv1b90601662, same volume as La Guiche).
+
+## Remaining gaps (R9-SEURE2, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE); Danzay 1557 key non-test (R9-SEURE); La Guiche 1551 key FAIL with control power under one map (R9-SEURE2, keytest/result_r9b.json); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; Danzay 1557 non-test (R9-SEURE), La Guiche 1551 FAIL under one map (R9-SEURE2); next: rebuild the Babou 1558 key from fr. 3138 no. 13 f. 32 (cipher + period decipherment, Gallica btv1b90601662) and test it with keytest/guiche_fit.py's unigram statistic and own-text power control, ~$3
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (R9-SEURE2, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: Danzay 1557 non-test (R9-SEURE); La Guiche 1551 FAIL with control power under one map (R9-SEURE2); Babou 1558 (fr. 3138 no. 13, cipher with period decipherment) untried
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gap; cheapest next: rebuild the Babou 1558 key (fr. 3138 no. 13 f. 32, cipher + decipherment) and test it on R1/R2 with the unigram statistic and own-text power control first, ~$3

@@ -1,0 +1,118 @@
+{
+ "own_len": 430,
+ "control": [
+  {
+   "U": -1.1732,
+   "n": 348,
+   "null_mean": -1.4169,
+   "null_p95": -1.295,
+   "null_max": -1.2404,
+   "pass": true,
+   "err": 0.0,
+   "seed": 1
+  },
+  {
+   "U": -1.1732,
+   "n": 348,
+   "null_mean": -1.4168,
+   "null_p95": -1.291,
+   "null_max": -1.2356,
+   "pass": true,
+   "err": 0.0,
+   "seed": 2
+  },
+  {
+   "U": -1.1732,
+   "n": 348,
+   "null_mean": -1.4179,
+   "null_p95": -1.289,
+   "null_max": -1.1873,
+   "pass": true,
+   "err": 0.0,
+   "seed": 3
+  },
+  {
+   "U": -1.1982,
+   "n": 343,
+   "null_mean": -1.4161,
+   "null_p95": -1.3041,
+   "null_max": -1.2234,
+   "pass": true,
+   "err": 0.095,
+   "seed": 1
+  },
+  {
+   "U": -1.1905,
+   "n": 349,
+   "null_mean": -1.4214,
+   "null_p95": -1.3022,
+   "null_max": -1.2168,
+   "pass": true,
+   "err": 0.095,
+   "seed": 2
+  },
+  {
+   "U": -1.1984,
+   "n": 342,
+   "null_mean": -1.4198,
+   "null_p95": -1.2997,
+   "null_max": -1.228,
+   "pass": true,
+   "err": 0.095,
+   "seed": 3
+  },
+  {
+   "U": -1.215,
+   "n": 334,
+   "null_mean": -1.4137,
+   "null_p95": -1.3114,
+   "null_max": -1.2581,
+   "pass": true,
+   "err": 0.242,
+   "seed": 1
+  },
+  {
+   "U": -1.2418,
+   "n": 348,
+   "null_mean": -1.4175,
+   "null_p95": -1.3238,
+   "null_max": -1.2528,
+   "pass": true,
+   "err": 0.242,
+   "seed": 2
+  },
+  {
+   "U": -1.2453,
+   "n": 335,
+   "null_mean": -1.4147,
+   "null_p95": -1.3223,
+   "null_max": -1.2639,
+   "pass": true,
+   "err": 0.242,
+   "seed": 3
+  }
+ ],
+ "power": true,
+ "R1": {
+  "U": -1.3513,
+  "n": 198,
+  "null_mean": -1.4194,
+  "null_p95": -1.2887,
+  "null_max": -1.2129,
+  "pass": false,
+  "signs": 461,
+  "mapped": 198,
+  "decode_sample": "i....y....p..i...q.a....d.r...i.....gpld.iiq....i.b.r....rei.u........q..e...q.....p..dedp.i.....divu.qe....ri...u...r....yr.........qcpq..i..d......l..r.igb.vg.v.c.ie...di.ldq.q.p...id.rqe..pibvv...."
+ },
+ "R2": {
+  "U": -1.3739,
+  "n": 200,
+  "null_mean": -1.4192,
+  "null_p95": -1.2946,
+  "null_max": -1.2026,
+  "pass": false,
+  "signs": 461,
+  "mapped": 200,
+  "decode_sample": "i....y....p..q...q.a....d.r...i.....gpld.iiq.....i.b.r....rei.u........q..e...q..y.p..dedp.q.....divu.qe....ri...u...r....yr.........qcpq..i.dr.......l..b.igb.vg.o.c.ie...di.ldq.q.p...id.rqe..pibvv..."
+ }
+}
