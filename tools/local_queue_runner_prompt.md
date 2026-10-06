@@ -51,9 +51,10 @@ your browser:
    downsampled). Write the pixel width and height of what you got in the answer. Do not commit image files; give
    the URL you used and leave the files for the owner to place (5 Oct 2026: on one Spanish national library letter
    the PDF was 1114 px wide, the JPEG download 1392 px, and a 220% screenshot about twice the PDF's detail).
-   Disk (6 Oct 2026: the owner's C: drive filled up on a full clone): never make a full clone of either repository.
-   Use `git clone --depth 1 --filter=blob:none --sparse <url>` and `git sparse-checkout set <only the folders the row
-   names, plus tools>`; check for at least 1 GB free first and stop with a note if there is less.
+   Disk (6 Oct 2026: the owner's C: drive filled up on a full clone): work in the cipher-lab folder you were started in
+   (`git pull` it; never clone cipher-lab again). For images, keep ONE copy of cipher-lab-private next to it, made once as
+   a slim copy -- `git clone --depth 1 --filter=blob:none --sparse <url>` then `git sparse-checkout add <folder>` per row --
+   and reuse it every run. Check for at least 1 GB free first and stop with a note if there is less.
    A `viewer-capture` row asks for page images from a library viewer the cloud cannot reach (BNE, RAH, HathiTrust and
    the like). In the viewer: open the item at the page the row names, zoom to the level it names (about 250%), and
    screenshot the block it names 3-4 lines at a time, top to bottom, overlapping by one line. If the row asks for
