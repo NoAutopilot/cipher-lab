@@ -5287,6 +5287,28 @@ Open for the next i-r lane: (1) nla-heinrich check-solved/verifier call on the G
 (3) rousseau same-class known-answer re-run ~1; (4) oldenbarnevelt-brederode full-size Marburg/Munich keys ~3; (5) karlxi 1680 Actes page read ~1;
 (6) vellingk read owgPAAAAYAAJ "Wellingk ... Chiffre" page ~1; (7) lope-hurtado LOCAL-QUEUE row for BNE 20212/27 images.
 
+## LANE LANE-RUN11-account-4 handoff (session_01XzCvfu53Hdqny4LQ8kgxgz, account 4), 6 October 2026 (closed 14:2x UTC: s-z backlog spent, lane about 16.6 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run11-jobs.md. WORK-QUEUE row LANE-RUN11-account-4 (split s-z):
+RUN10-account-4's "Open for the next s-z lane" items first, then next_steps.py rows. Gate 0a met (no SESSION-SWEEP-account-4 row). VERIFY-BACKLOG
+had no s-z row needing a verifier. Excluded the live DEFAULT-account-4-20261006-1235 lane's s-z targets (sp105-paget-1693, sp99-wotton-1622).
+5 Opus workers in 2 waves (4 D, 1 D-: SIENAPOOL 1.51x); workers 13.83 + orchestrator ~2.8 = ~16.6 (get_session). five_hour `allowed` throughout.
+No reading or key changed, so no verifier was needed.
+- sachsstaatsarchiv-manteuffel-1712 (R11-MANTPOOL2): pooled aligner with 0526/0521/0518 added: S 27 vs shuffle p95 22, known-answer 5/5 (thin);
+  per-code 5/27 BH PASS; key and reading unchanged (U 123); no agreeing code rests on 0501 alone (input to the pending 0501 decision).
+- zeschau-seebach-1841 (R11-ZESCORP): tools/data/fr1840 built (1840s diplomatic French; LOFO FN 22.7%, folds 10.0-49.5%, so unknown reliability
+  per rule 3); fill-free pattern-rarity crib score: CONTROL BELOW GATE -> non-test. Second crib-family non-test after R10-ZESCRIB.
+- siena-concistoro-2308 (R11-SIENAPOOL, R11-SIENA4750): nos. 19 and 9 share no. 7's sign stock above the null, but all three are Bourdeau agent J
+  (naming confound); R4750 nomenclator vs no. 7: T1 non-test, T2 chance, T3 no counterpart; nothing read.
+- scorpion-1991 (R11-SCORPCYC): tools/families/cycling_homophonic.py added (test, SYSTEM.md); controls 0.06-0.11 vs 0.6 at both S1 and S5 shapes
+  -> untestable by this family; target not run.
+Open for the next s-z lane (none cheap; skip the s-z split until one of these changes):
+1. siena no. 7: second-reader concordance no. 7 vs nos. 9/19 (~3), only with the agent-J confound handled first.
+2. zeschau: the crib family has two non-tests (R10-ZESCRIB, R11-ZESCORP); a third score-only variant (repeated-placement agreement, ~3) would hit
+   rule 3's third-attempt clause -- needs a different instrument or new material.
+3. manteuffel 0501 decision (orchestrator); wvo-hessen waits on the owner's f.23 sorter answers.
+4. Everything else in s-z waits on TNA/ASGe/LABW copy orders (ASKS 57/73), a paleographer (untersberg), or LOCAL-QUEUE rows.
+
 ## LANE LANE-RUN10-account-4 handoff (session_019b5FtNbHb8pGgZbPaFv7QV, account 4), 6 October 2026 (closed 11:2x UTC: s-z backlog worked, lane about 48 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run10-jobs.md. WORK-QUEUE row LANE-RUN10-account-4 (split s-z):
