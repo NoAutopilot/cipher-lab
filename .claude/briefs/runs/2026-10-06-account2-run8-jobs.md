@@ -176,3 +176,27 @@ NOTES.md named step: "run tools/htrc_ef_headwords.py for 'Vellingk' against Sver
 works from the cloud)". Read the tool's --help; find the volumes' htids via the HathiTrust bibliographic API; run it (>= 1.5 s apart);
 report the pages carrying Vellingk / chiffre terms per volume, and whether any is full view (IA or Google Books copy) so a page can be read.
 Update NOTES.md; search result only.
+
+## Wave 4 (last; spawned as wave 3 slots free). Intake gate output (03:1x-03:5x UTC) pasted per job.
+
+### R8-ROUS3 -- naf14913-rousseau-venice-1743, registered count-vector gate over the slip-backed pairs (cap 2.5, box 40 min; disk only)
+Intake gate: `naf14913-rousseau-venice-1743: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (R8-ROUS2, 6 Oct): "a registered count-vector gate over the four slip-backed pairs (f.213/214, f.216v/217, f.249/250,
+f.266r/265) for whole-word codes, starting with 605 = republique, 739 = venise, 52 = la, with a shuffle control, before any key.tsv entry,
+~$1.5". PREREG pushed first (statistic, shuffle of slip words across pairs or codes across pairs that CAN change the count match, gate, and a
+known-answer control from a value already at C if one exists); report per-pair contributions (rule 3 per-unit paragraph). Only on PASS enter
+values at the prereg's grade; decode --check; flag a verifier in ROOM if the reading changes after AUDIT.md.
+
+### R8-OBRED2 -- oldenbarnevelt-brederode-1605, screen in-window Palatine/Hessian DECODE keys (cap 3, box 45 min)
+Intake gate: `oldenbarnevelt-brederode-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Action that depends on nobody (R8-OBRED, 6 Oct): "screen the in-window Palatine/Hessian DECODE keys (Munich BayHStA 102, Marburg HStAM 20)
+from their public RecordsView pages for a numeral nomenclator reaching the 700s; ~2-3". Use tools/decode_list.py (login-free) to list the
+candidate records; read RecordsView metadata and thumbnails; at most one browser login if a full-size image is needed (scrub account name;
+images to scratch only). Table of records screened (id, holding, date, key type, numeral range, fit yes/no/unknown). No fit test unless a
+record plausibly fits; then name it as next step with a cost.
+
+### R8-KONS -- konstanz-talleyrand-sieyes-1798, Pallain's other volumes and Bailleu vol. 2 (cap 2, box 30 min; lookup only)
+Intake gate: `konstanz-talleyrand-sieyes-1798: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md next: "search Pallain's other Talleyrand volumes and Bailleu vol. 2 for the 17 Jul 1798 Sieyes letter (the gap left by the 2 Oct
+premise check), IA full text, ~$0.5". Identify the IA items, be-api fts per item with a positive control term, quote any hit with context.
+Update NOTES.md; search result only.
