@@ -1,0 +1,51 @@
+line	position	sign	confidence	alt	why
+p1_L05	9	101	M		agree-flagged
+p1_L05	15	22/112	H		agree
+p1_L05	17	1	M	B:-	gap
+p1_L05	22	81	M	B:91	differ
+p1_L05	23	23	M	B:21	differ
+p1_L06	13	24/10	H		agree
+p1_L06	16	9	M	B:4	differ
+p1_L06	18	40	M	B:90	differ
+p1_L07	4	72/16	M	B:32/16	differ
+p1_L07	13	64/112	H		agree
+p1_L07	14	82	M	B:89	differ
+p1_L07	20	3	M	B:31	differ
+p1_L08	3	113/115	H		agree
+p1_L08	17	32/12	H		agree
+p1_L09	3	735/71	M	B:335/71	differ
+p1_L09	11	33/5	H		agree
+p1_L09	14	25/81	M	B:25/51	differ
+p1_L10	4	27/14	H		agree
+p1_L10	11	33/77	H		agree
+p1_L10	13	=iii	M	B:iii	differ
+p1_L11	4	62/28	H		agree
+p1_L11	20	1	M	B:-	gap
+p1_L12	2	81/28/2	H		agree
+p1_L12	5	118	M	B:115	differ
+p1_L12	7	123	M	B:120	differ
+p1_L12	20	13	M	B:132	differ
+p1_L13	11	27/16	H		agree
+p1_L13	20	34	M	B:3	differ
+p1_L14	1	75	M	B:78	differ
+p1_L14	6	21/16	H		agree
+p1_L14	8	92/2	H		agree
+p1_L14	11	28/12	H		agree
+p1_L14	17	5	M	B:6	differ
+p1_L14	18	2	M		agree-flagged
+p1_L15	5	21/76	H		agree
+p1_L15	11	9	M	B:4	differ
+p1_L15	12	67	M		agree-flagged
+p1_L15	20	8	M	B:81	differ
+p1_L15	21	21	M		agree-flagged
+p1_L16	8	=Verrons	M	B:=Verons	differ
+p1_L16	11	118	M	B:116	differ
+p1_L16	15	111	M	B:144	differ
+p1_L16	16	81/16	H		agree
+p1_L16	18	81	S	89	settled-a nc=2 margin=0.35
+p1_L16	19	114	M	B:144	differ
+p1_L17	1	25	M	B:-	gap
+p1_L17	3	21	M	B:31	differ
+p1_L17	11	102	M	B:101	differ
+p1_L17	12	91	M		agree-flagged
+p1_L17	15	121	M	B:124	differ
