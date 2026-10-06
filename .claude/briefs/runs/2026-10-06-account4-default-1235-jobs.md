@@ -86,3 +86,40 @@ Folder `parallel` action: refresh phrases.txt with the reconciled, normalised ph
 While-waiting line describes), run `python3 tools/print_check.py ciphers/fr4715-f61-mayenne-1592` (IA full text, Google Books with
 country=US + key, OpenAlex with the key header), and write the hits/no-hits table into a dated "## D4-F61PR" NOTES.md section. Search result
 only: a no-hit is a search result for the log, never a novelty verdict. Update that Remaining gap's line; gaps_check.py pass.
+
+## Wave 2 (spawned 13:0x UTC 6 Oct). Intake gate output (13:0x UTC) pasted per job. Each job's named step is the folder's own
+"## While waiting" (or `parallel`) action: read that section in full first; NEXT-STEPS.tsv truncates it.
+
+### D4-CASTREQ -- castelcicala-1816, draft the two requests the Remaining gaps name (Sonnet; cap 1.5, box 40 min)
+Intake gate: `castelcicala-1816: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Write ciphers/castelcicala-1816/REQUEST.md (BL Add MS 41525 f.38 and the second item the Remaining gaps name): shelfmark, folio, what is
+wanted, why (one sentence each), the holding catalogue record URL and its quoted availability flag (CLAUDE.md access playbook; BL catalogue
+JSON route `searcharchives.bl.uk?format=json` only, <= 10 requests >= 2 s apart), cost if published. Do NOT edit ASKS.md or LOCAL-QUEUE.tsv:
+post one ROOM flag line "flag for the account-4 orchestrator: castelcicala-1816 REQUEST.md ready for an ASKS row" with the commit. No
+personal data. Update the Remaining gaps line (drafted, waiting-on the ASKS row); gaps_check.py pass.
+
+### D4-SYL54 -- fr15575-syllabic-1592-95, locate fr.3995 no.54 (fol.96) and no.31 (fol.62r) canvases; eye-check the five candidate openings (Opus; cap 3, box 60 min)
+Intake gate: `fr15575-syllabic-1592-95: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+`tools/gallica_folio.py <fr.3995 ark> --folio 96` / `--folio 62` (eye-checked --anchor pairs if the labels are unusable), then native-
+resolution corner crops (tools/iiif_lines.py --ark/--canvas --region, crop step pasted) of the five candidate openings the folder names,
+read by you on zooms. Record canvas numbers, the anchors used and what each opening shows (cipher? which system? clear heading/date?) in a
+dated "## D4-SYL54" NOTES.md section; no transcription pass, no key work. Gallica >= 1.5 s apart, one request at a time. gaps_check.py pass.
+
+### D4-SAVC380 -- fr16144-savary-lancosme-1588, cut line crops of c380 (margin-glossed) and c370-c375 (open) (Opus; cap 2.5, box 50 min)
+Intake gate: `fr16144-savary-lancosme-1588: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder "While waiting" action, exactly: `tools/iiif_lines.py --ark ark:/12148/btv1b9060974c --canvas <N> --out ciphers/fr16144-savary-lancosme-1588/<dir> --debug`
+for c380 and c370-c375; check every debug overlay yourself, re-run with --distance/--prominence where lines are merged or split; manifest
+entries; folder under 30 MB. No reading, no transcription pass (the owner's sort is the blocker). Write "## D4-SAVC380" in NOTES.md (crop
+counts per canvas, overlay verdicts, which canvases carry cipher vs clear). Update Remaining gaps; gaps_check.py pass.
+
+### D4-GUALT -- bl-gualterio-1700, Add MS 20582 scope text + Stuart Papers calendar entries for the Vernon group from disk (Sonnet; cap 1, box 30 min)
+Intake gate: `bl-gualterio-1700: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder `parallel` action: from `bl_catalogue_2026-10-03.tsv` already on disk (no fetch unless the file lacks the row; then BL catalogue JSON,
+<= 10 requests >= 2 s apart), extract Add MS 20582's scope text and list the Vernon-group entries the action names, as a TSV + a dated
+"## D4-GUALT" NOTES.md section. Search result only; no status change.
+
+### D4-EST94 -- clair571-estrades-1645, DECODE login-free listing for records 9430-9432 (Sonnet; cap 1, box 30 min)
+Intake gate: `clair571-estrades-1645: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+`tools/decode_list.py` (login-free, 1.5-2 s apart, no login) for records 9430, 9431, 9432 (Clair 574/577/580 key records): record the
+descriptive text, dates, language, image counts and any transcription/decipherment flags in keys_decode/listing_9430-9432.tsv and a dated
+"## D4-EST94" NOTES.md section. No login, no image fetch, no key transcription.
