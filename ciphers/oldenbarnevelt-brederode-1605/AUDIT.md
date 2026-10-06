@@ -1,6 +1,6 @@
 # AUDIT -- oldenbarnevelt-brederode-1605
 
-## Verifier: R9-OBRED4 corrections (R10-OBREDV, 6 Oct 2026, 07:22-07:3x UTC, account 2)
+## Verifier: R9-OBRED4 corrections (R10-OBREDV, 6 Oct 2026, 07:22-07:24 UTC, account 2)
 
 Separate session from the solver (R9-OBRED4). Scope: the two cipher-group rows of `imagecheck_1490/corrections.tsv` only. No novelty
 class asked or given. Evidence: the line crops on disk (`images/crops_1490/s2L_L20/L21/L22/L24.jpg`, cut from
