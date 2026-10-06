@@ -1,4 +1,4 @@
-# R9-HUNT context-fill pre-registration (written 6 Oct 2026 06:16 UTC by date -u, before any fill or control was run)
+# R9-HUNT context-fill pre-registration (written 6 Oct 2026 06:09 UTC by date -u (header first typed 06:16, corrected from the clock), before any fill or control was run)
 
 Worker R9-HUNT (LANE LANE-RUN9-account-1). Nothing below has been computed yet; the script does not exist at push time.
 

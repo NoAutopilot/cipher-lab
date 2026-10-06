@@ -379,7 +379,7 @@ Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 130 of 172 target tokens at C (75.6%; R8-HUNT 6 Oct 2026: census finished, BLA191 p5 L11 pos3 385 C -> M, C 131 -> 130, M 20 -> 21; R7B-HUNT 6 Oct 2026: counts unchanged, one C value changed (BLA191 p5 L11 pos3 et -> es); earlier: R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), M 20, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
-- 18 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) (805, 6, 1210, 689, 460, 285, 214, 1019, 711, 1118, 1052, 836, 1152, 222, 73, 470, 778, 190) - blocker: not-attempted; R17 "What is left" names the method; next: context-fill pass with a matched control (blank the same share of glossed BLA185 and score), any fill graded S only if the control passes (cost estimated, not in the folder), ~$3
+- 18 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) (805, 6, 1210, 689, 460, 285, 214, 1019, 711, 1118, 1052, 836, 1152, 222, 73, 470, 778, 190) - blocker: not-attempted; R9-HUNT (6 Oct 2026) ran the pre-registered char-6-gram + alphabetical-bracket fill: BLA185 control 0.346 vs gate 0.40, FAIL, no fill entered; next: one re-registered run with the inverted-bracket defect fixed (470-type empty candidate sets) and a margin-filtered gate (control precision at margin >= t vs shuffled-context precision at the same t), ~$2
 - BLA184 range 1150/1240/1243/1250/1259 (probable names section) - blocker: open-codes; R17: glosses of this range elsewhere do not fit, the glossed items never use it
 - a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: not-attempted; Verifier audit and Premise check (d); next: TNA Discovery API search of SP 94/98-100 and SP 36/13-14 descriptions for "Paretti"/"Pareti" (While waiting), ~$0.5
 
@@ -390,8 +390,8 @@ Read so far: 130 of 172 target tokens at C (75.6%; R8-HUNT 6 Oct 2026: census fi
 - [ ] print: TNA SP 94/98-100 and SP 36 descriptions; HMC Polwarth V (1961) for a decipherment of BLA191(a)
 - [x] key-rebuild: key.tsv rebuilt from the glosses by build_key.py (R17)
 - [x] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap)
-- [ ] retry: context-fill of the 21 unkeyed groups with a BLA185 blanking control
-Verdict: keep going: 3 internal gaps; cheapest next: context-fill of the 18 unkeyed BLA186/191(a) groups with a BLA185 blanking control, ~$3 (R8-HUNT, 6 Oct 2026; the 7-form census is finished); before that: finish the 7-form census, ~$1.5 (R7B-HUNT, 6 Oct 2026); earlier cheapest next was the census itself, ~$2 (the TNA Discovery search was run by RUN6-BLATH, 5 Oct 2026: piece-level only, see below)
+- [ ] retry: context-fill of the 18 unkeyed groups with a BLA185 blanking control (R9-HUNT, 6 Oct 2026: attempt 1 FAIL, control 0.346 vs gate 0.40; one re-registered attempt with a different gate is untried)
+Verdict: keep going: 3 internal gaps; cheapest next: re-registered context-fill (bracket fix + margin-filtered gate against the shuffled-context control at matched margin), ~$2 (R9-HUNT, 6 Oct 2026: attempt 1 control 0.346 vs gate 0.40, FAIL; high-margin subset 34/48 = 0.71 vs shuffled 9/28 = 0.32, not pre-registered as the gate); earlier: context-fill attempt 1, ~$3 (R8-HUNT)
 
 ## IA-DESK-ALT (account-3 worker, 5 Oct 2026): HMC Polwarth IV and V via Internet Archive
 
@@ -496,3 +496,33 @@ out of the repo, regions are disk-copy px x 7.2567 of the line positions), read 
   `python3 settle.py && python3 build_key.py && python3 ../../tools/decode_key.py . --check`: exit 0.
 - Side observation, not acted on: BLA194 p1 L11 pos2 "555" (gloss Heureux): its first glyph is also the 7-form (755), as R7B-HUNT
   found for 555 on BLA188 p6 L01.
+
+## R9-HUNT: context-fill of the 18 unkeyed BLA186/191(a) groups, BLA185 control first (account-1 worker, 6 Oct 2026 06:07-06:12 UTC by date -u)
+
+Pre-registered in fill/PREREG-R9.md (pushed c5d85deb0 at 06:09 UTC, before the script existed; its header time was first typed
+06:16 and corrected from the clock). Method (fill/context_fill.py, deterministic, `--check` 0): leave-one-code-out key; candidates =
+fr18 corpus word types (count >= 3) plus key values inside the alphabetical bracket of the 3 keyed codes either side (the key is a
+one-part code, 298 of 387 adjacent pairs in order); score = character 6-gram log P(candidate + right context | left context), 15
+characters each side, fr18 (Torcy, Villars, Maintenon, Gazette 1786; era-matched), spaces and accents removed.
+
+| run (BLA185, 103 glossed H columns, 11% of other columns blanked, seeds 1-3) | seed 1 | seed 2 | seed 3 | mean |
+|---|---|---|---|---|
+| control (own context) | 0.359 | 0.350 | 0.330 | **0.346** |
+| shuffled-context control (context from another BLA185 position) | 0.165 | 0.185 | 0.214 | 0.188 |
+
+**Gate: FAIL** (control 0.346 < 0.40; the second condition, control - shuffled = 0.158 >= 0.10, holds). Per the pre-registration,
+no fill enters reading_tokens.tsv; the 18 groups stay U; target counts unchanged (C 130, M 21, U 21, H 0). The 16 target
+candidates in fill/target_fill.tsv are marked `ungraded` and are not a reading.
+
+Not part of the gate, reported for the next attempt only: t* (smallest margin with pooled control precision >= 0.70 on >= 15
+columns) exists, 2.786: 34 of 48 control columns at or above it are right (0.71), against 9 of 28 shuffled-context columns at the
+same margin (0.32). Four target groups clear that margin (689, 285, 214, 1152). A gate built on that subset was not
+registered before the run, so it licenses nothing here.
+Defect found after the run (not fixed, to keep the registered method): when the bracket's median values are out of order
+(470: 468 fort above 473 faire) the candidate set is empty and the column is scored a miss; 3 BLA185 columns per seed (9 of 309
+control rows) and 1 target group (470) hit this. Fixing it would raise the control by at most 0.03, still under 0.40.
+
+Next (one re-registered attempt, a different gate, not a re-tune of the 0.40 threshold): fix the inverted bracket, and gate on
+precision at a margin threshold chosen on seeds 1-3 and tested on fresh seeds 4-6 against the shuffled-context control at the
+same threshold; S only for target groups above it. If that also fails, the step is [retired] for this instrument (rule 3 third-
+attempt clause applies after attempt 3, so attempt 2 is still a fair test). No network requests this job.
