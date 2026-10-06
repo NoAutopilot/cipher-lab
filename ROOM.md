@@ -9008,3 +9008,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:48 | R7A-BAL103 worker | claim baluze103-letellier-marca-1644: f.50r-v transcription + Tomokiyo 1644 key table (cap 8, box 01:47-03:27 UTC, self-stop 03:07) for LANE LANE-RUN7-account-1
 2026-10-06 01:48 | R7A-ECK64 worker | claim eckert-1864: Jan-Feb 1864 old-vocabulary sample decode, cap 4 USD, box 01:48-02:48 UTC (80% 02:36), for LANE LANE-RUN7-account-1
 2026-10-06 01:48 | R7A-VIV53 worker | claim fr16104-vivonne-spain-1572 ink 53 gap tiles (cap 3.5, box end 02:48 UTC) for LANE LANE-RUN7-account-1
+2026-10-06 01:48 | R7A-NOX262 worker | claim for LANE LANE-RUN7-account-1: fr16142-noailles-constantinople-1571, c262 gloss L09-L13 native cut and read; cap 2.5, box 01:47-02:27 UTC
