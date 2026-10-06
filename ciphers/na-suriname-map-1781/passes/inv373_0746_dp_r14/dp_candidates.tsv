@@ -1,0 +1,3 @@
+# codes whose top DP-aligned letter (>=3) is outside the pooled table; for a verifier, NOT applied
+code	top	count	T	all
+[w-tilde]	d	4	f	d:4 f:3 h:1

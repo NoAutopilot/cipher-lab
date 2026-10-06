@@ -1,0 +1,45 @@
+code	in_T	letters_aligned
+&	f	f:7 h:3 d:2 t:1 k:1
+0	l|r	r:37 b:1 l:1
+1		a:1
+3	a|d|e|o	e:94 h:3 a:2 d:1 s:1 l:1
+4	a|n|w	w:16 a:3 n:2 g:1
+5	s|v|w	v:28 t:1 i:1 e:1
+6	k|s	b:1 s:1
+7	a|e	e:33 n:3 m:2 a:1 o:1
+8	i	i:11 c:1
+9	g|r	g:22 a:1 p:1 n:1 h:1 r:1 l:1
+S	p	p:10 g:1
+[delta]	a|e|i	a:27 e:1 w:1
+[ezh-dot]	e	b:1
+[hash]	e|o	o:40 e:4 r:1 a:1
+[other=_S-like]		h:2
+[other=_cut_off_at_right_edge]		e:1
+[other=_f-like]	i	i:3
+[other=_f-like_sign_with_long_ascender]		i:1
+[other=_l-like_cut_off]		n:1
+[other=_x-like_sign_with_flourish]		i:1
+[other=_x-like_with_loop]		c:1 d:1
+[pi]	o|t	c:1
+[psi]	n|s|z	s:18 n:2 a:1 z:1
+[w-tilde]	f	d:4 f:3 h:1
+[x-dot]	a	a:2
+[y-fam]	m|n	n:54 m:11 k:1 a:1 d:1
+a	e	e:1
+b	k|o	k:19 v:1
+c	d|l|v	l:34 n:1 d:1
+d	b|e|z	b:11 e:9 o:1
+e	e|v	v:2 r:1
+f	i	i:6
+i		z:1
+j		n:1 g:1
+k	o	o:14 m:2 h:1
+l	g|l|n	n:17 s:1
+n	b|z	z:10
+o	r	r:8
+p	a|n	a:3
+r	d|e|t	d:29 t:8 e:2 a:1 c:1 v:1
+t	a|i	i:18
+w	d|l|t	d:5
+x	a|t	a:5 c:1
+λ	d|p|s|t	t:51 d:4 s:3 e:3 a:1 p:1
