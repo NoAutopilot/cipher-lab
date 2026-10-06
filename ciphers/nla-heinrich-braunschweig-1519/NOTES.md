@@ -273,4 +273,39 @@ Requests: services.dnb.de 1, www.wallstein-verlag.de 2, wallstein-open-library.d
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: GAPS129 step (3), the Arcinsys Niedersachsen re-test for NLA BU L 1 Nr. 548/562 (online availability flag, quoted, before any copy order), ~$0.5 (estimate). The Bei der Wieden / Bohnenkamp read is a library or purchase read (about EUR 28, the owner decides).
+- Action that depends on nobody: fetch the 8 Arcinsys images of NLA BU L 1 Nr. 548/562 into images/ with a manifest and look at what the cipher is (R8-NLA, 6 Oct 2026, found both digitised and free), ~$0.5 (estimate). (Done: GAPS129 step (3), the Arcinsys re-test, R8-NLA.) The Bei der Wieden / Bohnenkamp read is a library or purchase read (about EUR 28, the owner decides).
+
+## R8-NLA: Arcinsys Niedersachsen re-test (6 Oct 2026, account 2, LANE-RUN8)
+
+GAPS129 step (3), run 03:52-04:00 UTC by `date -u`. **Both items are digitised and viewable online, free, no login.**
+
+- Route: Arcinsys simple search ("Geheimschrift Heinrich", 1519-1522, all archives) through `tools/browser_fetch.js`
+  (the result table is client-side; plain curl got the empty shell and two TCP resets). Both rows came back under
+  "Nds. Landesarchiv, Abt. Bückeburg (2)", each with a thumbnail flagged "Digital copy of NLA BU, L 1, Nr. 548" /
+  "... Nr. 562".
+- **NLA BU, L 1, Nr. 548** -- detail page
+  https://www.arcinsys.niedersachsen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4764730 ;
+  former identifier "I Ca 30 Bd. 1"; index object "Geheimschrift"; Representations list Original (Akte), Sicherungsfilm,
+  **Nutzungsdigitalisat** (representationId 8741856) and Micro-/Macrofiche; "Show digital copies" ->
+  https://www.arcinsys.niedersachsen.de/arcinsys/digitalMediaViewer.action?archivalDescriptionId=4764730 ;
+  4 images, `https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._548/m_bu_l_1_nr._548_aufn_000{1..4}.jpg`.
+- **NLA BU, L 1, Nr. 562** -- detail page
+  https://www.arcinsys.niedersachsen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4765000 ;
+  former identifier "I Ca 30 Bd. 2"; index person "Braunschweig-Lüneburg, Heinrich d. M., Herzog von"; same four
+  representations, Nutzungsdigitalisat representationId 8741920; viewer
+  https://www.arcinsys.niedersachsen.de/arcinsys/digitalMediaViewer.action?archivalDescriptionId=4765000 ;
+  4 images, `.../nla_bu/l_1/nr._562/m_bu_l_1_nr._562_aufn_000{1..4}.jpg`.
+- Confirmation fetch (one image, to scratch, not committed): `m_bu_l_1_nr._548_aufn_0001.jpg`, HTTP 200 image/jpeg,
+  1,715,020 bytes, 3276 x 2975 px, black-and-white film-derived scan (film header "Schbg. Des. L 1 I Ca Nr. 30 I").
+  It shows the opened file: a blank left page and a later archival wrapper (19th-century hand, foliated 267) reading
+  "Herzog Heinrich d. J. an Gräfin Anna 1519." -- the wrapper's description, not a reading of the letter. If right,
+  it names the recipient (a countess Anna), which may bear on the Bückeburg provenance question; not checked further
+  this pass. Images 2-4 (and all of Nr. 562) were not fetched or read: the brief named one confirmation image.
+- Consequence: no copy order is needed for the images; REQUEST.md is updated to say so. The two items together are
+  8 images; at about 3.3k px wide they should support crop-based transcription (`tools/iiif_lines.py --image`) once
+  fetched into the folder with a manifest.
+
+Requests: www.arcinsys.niedersachsen.de 6 by curl (2 reset), 4 by the browser tool; www.arcinsys-digitalisate.niedersachsen.de 1.
+
+**Next (one line, not run):** fetch the 8 images into `images/` with `images/manifest.json` (~$0.5), then a premise look at
+images 2-4 / 1-4 to see what the cipher is (letter cipher, nomenclator, how many signs) before any transcription brief.

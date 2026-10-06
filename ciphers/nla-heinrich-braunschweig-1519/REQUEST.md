@@ -1,8 +1,10 @@
 # Copy request — NLA Abt. Bückeburg, L 1 Nr. 548 and Nr. 562
 
-**Status:** waiting on you (a person needs to place/confirm this; not an archive-request draft an agent can
-send) — pending a re-check of Arcinsys Niedersachsen's viewer for a possible copy-free route first (see
-NOTES.md).
+**Status:** not needed for images (R8-NLA, 6 Oct 2026): Arcinsys Niedersachsen shows both items as digitised
+("Nutzungsdigitalisat", 4 images each) and serves them free with no login -- viewer
+https://www.arcinsys.niedersachsen.de/arcinsys/digitalMediaViewer.action?archivalDescriptionId=4764730 (Nr. 548) and
+...?archivalDescriptionId=4765000 (Nr. 562); see NOTES.md "R8-NLA". The text below is kept as the earlier request;
+order a copy only if the film-derived scans prove illegible.
 
 **What to request:** page copies (photographs or scans) of two items in the **Niedersächsisches Landesarchiv,
 Abteilung Bückeburg**, Bestand L 1:
