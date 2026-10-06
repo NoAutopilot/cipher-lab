@@ -846,7 +846,7 @@ were not touched: next session, add the second 175 K = die witness to both (one 
 
 ## R11A-AVS53: WVO 53 p1+p2 re-read from the native scan (6 Oct 2026, worker R11A-AVS53, account 1, LANE-RUN11-account-1)
 
-14:25-14:40 UTC by `date -u`. Brief: `.claude/briefs/runs/2026-10-06-account1-run11-jobs.md`, job R11A-AVS53 (Remaining gap "53 p1+p2").
+14:25-14:36 UTC by `date -u`. Brief: `.claude/briefs/runs/2026-10-06-account1-run11-jobs.md`, job R11A-AVS53 (Remaining gap "53 p1+p2").
 - Fetch: `00053.pdf` (pdf_url in images/manifest.json, same Huygens route as R11A-AVS57), once, HTTP 200. Embedded JPEGs: p1 2633x4175
   gray, p2 2567x4187 RGB (about 300 dpi; 3x the 100 dpi PNGs S1 and F1 read). PDF and page JPEGs kept in the scratchpad, not committed
   (folder at 29 MB).
