@@ -356,3 +356,39 @@ either is in it.
 
 Requests: googleapis.com 9 (all 200), books.google.com 1 (429, stopped), archive.org 1 (advancedsearch, no copy of
 this title), runeberg.org 3 (200), WebSearch 1. No vision. Nothing read, graded or tested.
+
+## R12-CRUSLB: Litteraturbanken.se works and full-text search (6 Oct 2026, account-2 worker)
+
+Run 6 Oct 2026 11:20-11:25 UTC (clock read). Intake gate `exit=0` (open, line 3). Status word unchanged: **open**.
+Closes the "JS-rendered, browser-tool fetch not tried" gap of NX-UNBLOCK above: no browser needed, the site's own JSON API
+(`litteraturbanken.se/api`, OpenAPI at `/api/openapi.json`) answers curl. Raw responses in `passes/lb/`.
+
+**Works held (author id `CrusenstolpeMJ`, `list_all/etext,faksimil,pdf/CrusenstolpeMJ`, 21 records):** *Morianen* (etext + faksimil,
+parts 1-6), *Huset Tessin* (faksimil, parts 1-5), *Carl Johan och svenskarne* (parts 1, 2, 3 in two halves), *Året 1772*
+(play), *Tvenne äktenskap*, *Bigtfadren*, *Kollerstad*, *Vedergällningsrätten*, *Första fjetet på skriftställarebanan*.
+**Not held:** *Portefeuille* (Del 1-5) and *1720, 1772, 1809* (1836): the edition risk named in the Verdict is not closed by
+this host; those two stay on Project Runeberg (searched 2 Oct 2026, OPEN section).
+
+**Full-text queries** (`search_count/<q>?authors=CrusenstolpeMJ`; hits = works, then fragments read via `search/`):
+`chiffer` 6 works/12 fragments; `chiffre` 4/6; `Portefeuille` 10/51; `1809` 13/209; `spion` 2/3; `spionrapport` 0;
+`chifferskrift` 0; `nyckel` 16/85 (keys of doors etc., not read).
+Fragments of `chiffer`/`chiffre`, read: Morianen 6 (Gustaf III's monogram "chiffer" on an inscription: monogram sense);
+Morianen 4 ("en hemlig statsskrift i chiffer" from the Swedish envoy at Stanislaus; an author's note that the numeric "chiffrer"
+were let in at random, "Den sista chiffren 9174 betyder Ryssland" -- a fictional/period 18th-c. code gloss, Holstein-Gottorp
+era); Morianen 5 and 2 (a letter "på en chiffer som jag ey har"; letters in cipher from Sprengtporten, 18th c.);
+Huset Tessin 1 ("svårare att utfundera än chiffer"); Huset Tessin 2-4 (French "chiffre" = royal monogram, once "en chiffre"
+as an advice on a message); Carl Johan och svenskarne 3 ("Sekreterare i färdigheten att tyda chiffer?" followed by a note
+citing a newspaper). `spion`: two spy mentions in Carl Johan och svenskarne 1-2, narrative. `Portefeuille` fragments are the
+author's footnotes citing his own Del 1-3 (Del 1 p.103 and sid. 329 etc.), i.e. pointers to a work we already searched on Runeberg.
+**None is an 1809 spy report, a ciphertext, a key or a decipherment of the Ericsbergsarkivet bundle.** These are novels and
+history-novels of the 1840s; the numeric-code gloss in Morianen 4 is a different (18th-century) matter. A search result,
+rule 10; not read: the 1809 fragments (209 in 13 works) beyond counts, since they are narrative of the coup and no query
+tied them to cipher material. A reader who wants them can run `search/1809?authors=CrusenstolpeMJ`.
+No cipher text exists in these results, so no key, no control and no grading (rule 3/4 not engaged).
+
+**Updated While waiting / Verdict:** Litteraturbanken parallel action done; it adds no printed 1809 cipher document. The open
+edition risk is unchanged (Portefeuille and 1720-1772-1809 are not on this host; Runeberg pass of 2 Oct stands). Next step
+remains the Riksarkivet copy order (REQUEST.md), naming the Manderfelt (Aug 1809) and Pollier (1810) leads from FT4.
+
+Requests: litteraturbanken.se 24 (curl, 2 s apart, all HTTP 200 except 3 early 404/422 probes of wrong parameter names).
+No browser, no vision, no credentials.
