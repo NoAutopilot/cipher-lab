@@ -1,0 +1,639 @@
+{
+ "posthoc_not_gated_line9_OFICERS": 240,
+ "source": "H-1649 Image 758 (B.147 p.120) full/max, columns 3-7 cut by PIL box (NOTES.md R11-CLIN2380)",
+ "cells_read": 273,
+ "cipher_words": 58,
+ "decipherment_words_from": 26,
+ "decipherment_words_available": 213,
+ "aligned_pairs_equal_count": 55,
+ "compared_cells": 258,
+ "exact_printed_page": 174,
+ "exact_line1_variant": 224,
+ "share_variant": 0.868,
+ "control_variant": {
+  "seeds": 1000,
+  "mean": 18.03,
+  "p95": 24,
+  "max": 32
+ },
+ "gate": "PASS",
+ "doubled_figure_cells_not_in_gate": [
+  {
+   "cell": "6-77",
+   "at": "c4:51",
+   "want": "l",
+   "letter_at_single_P": "l",
+   "word": "still"
+  },
+  {
+   "cell": "5-22",
+   "at": "c5:23",
+   "want": "f",
+   "letter_at_single_P": "f",
+   "word": "officers"
+  },
+  {
+   "cell": "2-77",
+   "at": "c7:55",
+   "want": "r",
+   "letter_at_single_P": "r",
+   "word": "arrived"
+  }
+ ],
+ "mismatches": [
+  {
+   "cell": "9-15",
+   "at": "c3:4",
+   "want": "v",
+   "page_variant": "e",
+   "word": "convention",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-15",
+   "at": "c3:32",
+   "want": "v",
+   "page_variant": "e",
+   "word": "having",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "13-16",
+   "at": "c3:38",
+   "want": "d",
+   "page_variant": "e",
+   "word": "had",
+   "found_at_offset": []
+  },
+  {
+   "cell": "9-15",
+   "at": "c3:48",
+   "want": "v",
+   "page_variant": "e",
+   "word": "view",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "1-24",
+   "at": "c4:13",
+   "want": "t",
+   "page_variant": "n",
+   "word": "negociation",
+   "found_at_offset": []
+  },
+  {
+   "cell": "18-7",
+   "at": "c4:37",
+   "want": "u",
+   "page_variant": "m",
+   "word": "purpose",
+   "found_at_offset": []
+  },
+  {
+   "cell": "1-25",
+   "at": "c4:38",
+   "want": "r",
+   "page_variant": "o",
+   "word": "purpose",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "6-77",
+   "at": "c4:51",
+   "want": "l",
+   "page_variant": "?",
+   "word": "still",
+   "found_at_offset": []
+  },
+  {
+   "cell": "9-4",
+   "at": "c5:4",
+   "want": "c",
+   "page_variant": "i",
+   "word": "clamours",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "6-16",
+   "at": "c5:6",
+   "want": "a",
+   "page_variant": "o",
+   "word": "clamours",
+   "found_at_offset": []
+  },
+  {
+   "cell": "1-25",
+   "at": "c5:10",
+   "want": "r",
+   "page_variant": "o",
+   "word": "clamours",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "1-25",
+   "at": "c5:18",
+   "want": "r",
+   "page_variant": "o",
+   "word": "their",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "5-22",
+   "at": "c5:23",
+   "want": "f",
+   "page_variant": "?",
+   "word": "officers",
+   "found_at_offset": []
+  },
+  {
+   "cell": "1-27",
+   "at": "c5:45",
+   "want": "u",
+   "page_variant": "a",
+   "word": "us",
+   "found_at_offset": []
+  },
+  {
+   "cell": "1-16",
+   "at": "c5:46",
+   "want": "s",
+   "page_variant": "e",
+   "word": "us",
+   "found_at_offset": []
+  },
+  {
+   "cell": "1-9",
+   "at": "c6:1",
+   "want": "s",
+   "page_variant": "i",
+   "word": "so",
+   "found_at_offset": [
+    -1
+   ]
+  },
+  {
+   "cell": "1-11",
+   "at": "c6:2",
+   "want": "o",
+   "page_variant": "n",
+   "word": "so",
+   "found_at_offset": [
+    -1,
+    1
+   ]
+  },
+  {
+   "cell": "1-23",
+   "at": "c6:49",
+   "want": "h",
+   "page_variant": "o",
+   "word": "however",
+   "found_at_offset": [
+    -1
+   ]
+  },
+  {
+   "cell": "9-15",
+   "at": "c6:53",
+   "want": "v",
+   "page_variant": "e",
+   "word": "however",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "6-10",
+   "at": "c7:1",
+   "want": "i",
+   "page_variant": "d",
+   "word": "i",
+   "found_at_offset": [
+    2
+   ]
+  },
+  {
+   "cell": "1-25",
+   "at": "c7:11",
+   "want": "r",
+   "page_variant": "o",
+   "word": "three",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "6-22",
+   "at": "c7:12",
+   "want": "e",
+   "page_variant": "r",
+   "word": "three",
+   "found_at_offset": [
+    -1
+   ]
+  },
+  {
+   "cell": "9-20",
+   "at": "c7:13",
+   "want": "r",
+   "page_variant": "l",
+   "word": "regiments",
+   "found_at_offset": [
+    -2,
+    1
+   ]
+  },
+  {
+   "cell": "9-21",
+   "at": "c7:14",
+   "want": "e",
+   "page_variant": "r",
+   "word": "regiments",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-22",
+   "at": "c7:15",
+   "want": "g",
+   "page_variant": "e",
+   "word": "regiments",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-23",
+   "at": "c7:16",
+   "want": "i",
+   "page_variant": "g",
+   "word": "regiments",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-24",
+   "at": "c7:17",
+   "want": "m",
+   "page_variant": "i",
+   "word": "regiments",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-25",
+   "at": "c7:18",
+   "want": "e",
+   "page_variant": "m",
+   "word": "regiments",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-26",
+   "at": "c7:19",
+   "want": "n",
+   "page_variant": "e",
+   "word": "regiments",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-27",
+   "at": "c7:20",
+   "want": "t",
+   "page_variant": "n",
+   "word": "regiments",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-28",
+   "at": "c7:21",
+   "want": "s",
+   "page_variant": "t",
+   "word": "regiments",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "2-77",
+   "at": "c7:55",
+   "want": "r",
+   "page_variant": "?",
+   "word": "arrived",
+   "found_at_offset": []
+  },
+  {
+   "cell": "9-15",
+   "at": "c7:57",
+   "want": "v",
+   "page_variant": "e",
+   "word": "arrived",
+   "found_at_offset": [
+    1
+   ]
+  },
+  {
+   "cell": "9-16",
+   "at": "c7:58",
+   "want": "e",
+   "page_variant": "v",
+   "word": "arrived",
+   "found_at_offset": [
+    -1,
+    1
+   ]
+  }
+ ],
+ "pairs_apart_count_differs": [
+  {
+   "decipherment_word": "reinforcement",
+   "cells": [
+    "1-17",
+    "1-4",
+    "1-11",
+    "1-13",
+    "5-1",
+    "5-17",
+    "2-6",
+    "2-3",
+    "1-6",
+    "1-4",
+    "1-11",
+    "1-21"
+   ],
+   "page_letters_variant": "renfo?cement"
+  }
+ ],
+ "unpaired": [
+  {
+   "cipher_word_without_decipherment": [
+    "18-17",
+    "4-3"
+   ],
+   "page_letters_variant": "us"
+  },
+  {
+   "cipher_word_without_decipherment": [
+    "1-7"
+   ],
+   "page_letters_variant": "i"
+  }
+ ],
+ "alignment": [
+  [
+   "21-1 11-2 12-2 9-15 5-5 12-2 2-9 1-7 1-10 1-11",
+   "convention"
+  ],
+  [
+   "13-1 7-6",
+   "by"
+  ],
+  [
+   "5-5 15-19 2-6 1-20 1-27 1-11 1-19 1-4",
+   "exchange"
+  ],
+  [
+   "1-21 1-20 2-3",
+   "the"
+  ],
+  [
+   "6-5 5-5 1-28 1-4 4-1 2-4",
+   "rebels"
+  ],
+  [
+   "1-20 1-27 9-15 1-7 1-11 1-19",
+   "having"
+  ],
+  [
+   "7-4 1-27 13-16",
+   "had"
+  ],
+  [
+   "1-11 1-10 2-9 1-20 4-2 1-11 1-19",
+   "nothing"
+  ],
+  [
+   "4-2 6-3",
+   "in"
+  ],
+  [
+   "9-15 1-7 1-4 19-1",
+   "view"
+  ],
+  [
+   "13-1 16-6",
+   "by"
+  ],
+  [
+   "14-1 14-4 11-5",
+   "the"
+  ],
+  [
+   "6-3 5-5 1-19 1-10 2-6 1-7 1-27 1-24 4-2 5-1 6-3",
+   "negociation"
+  ],
+  [
+   "4-4 1-20 1-4 7-6",
+   "they"
+  ],
+  [
+   "1-3 1-5 5-1 15-5 11-2 7-2 11-5 11-6",
+   "proposed"
+  ],
+  [
+   "5-2 1-10 1-17",
+   "for"
+  ],
+  [
+   "4-4 5-4 1-27 4-4",
+   "that"
+  ],
+  [
+   "1-3 18-7 1-25 15-5 1-10 2-4 5-5",
+   "purpose"
+  ],
+  [
+   "1-28 18-17 1-21",
+   "but"
+  ],
+  [
+   "4-4 5-1",
+   "to"
+  ],
+  [
+   "7-2 5-3 4-2 6-77",
+   "still"
+  ],
+  [
+   "12-3 12-4 12-5",
+   "the"
+  ],
+  [
+   "9-4 6-7 6-16 1-6 1-10 18-17 1-25 2-4",
+   "clamours"
+  ],
+  [
+   "1-10 1-13",
+   "of"
+  ],
+  [
+   "1-21 1-20 1-4 1-7 1-25",
+   "their"
+  ],
+  [
+   "5-1 19-1 1-11",
+   "own"
+  ],
+  [
+   "1-23 5-22 4-2 2-6 5-5 6-5 2-4",
+   "officers"
+  ],
+  [
+   "1-3 1-5 1-9 2-4 1-10 1-11 2-3 1-5 4-3",
+   "prisoners"
+  ],
+  [
+   "19-1 19-2 19-3 19-4",
+   "with"
+  ],
+  [
+   "18-17 4-3",
+   null
+  ],
+  [
+   "1-7",
+   null
+  ],
+  [
+   "1-27 1-16",
+   "us"
+  ],
+  [
+   "13-10 4-2 2-4 1-27 15-5 1-10 1-9 1-11 2-9 2-3 6-15",
+   "disappointed"
+  ],
+  [
+   "1-9 1-11",
+   "so"
+  ],
+  [
+   "1-6 2-12",
+   "my"
+  ],
+  [
+   "5-5 15-19 15-5 1-4 2-6 2-9 1-27 2-9 1-7 1-10 1-11 2-4",
+   "expectations"
+  ],
+  [
+   "1-10 1-13",
+   "of"
+  ],
+  [
+   "1-27",
+   "a"
+  ],
+  [
+   "1-17 1-4 1-11 1-13 5-1 5-17 2-6 2-3 1-6 1-4 1-11 1-21",
+   "reinforcement"
+  ],
+  [
+   "1-13 2-7 5-1 1-6",
+   "from"
+  ],
+  [
+   "4-4 1-20 1-4",
+   "the"
+  ],
+  [
+   "2-15 2-3 2-4 2-9",
+   "west"
+  ],
+  [
+   "1-7 1-11 6-15 4-2 5-5 4-3",
+   "indies"
+  ],
+  [
+   "1-23 5-1 2-15 5-5 9-15 2-3 6-5",
+   "however"
+  ],
+  [
+   "6-10",
+   "i"
+  ],
+  [
+   "7-2 2-3 6-3 4-4",
+   "sent"
+  ],
+  [
+   "2-12 1-10 18-17",
+   "you"
+  ],
+  [
+   "4-4 1-20 1-25 6-22",
+   "three"
+  ],
+  [
+   "9-20 9-21 9-22 9-23 9-24 9-25 9-26 9-27 9-28",
+   "regiments"
+  ],
+  [
+   "8-1 6-3 6-2",
+   "one"
+  ],
+  [
+   "5-1 5-2",
+   "of"
+  ],
+  [
+   "2-15 5-4 4-2 2-6 5-4",
+   "which"
+  ],
+  [
+   "2-15 3-1 4-3",
+   "was"
+  ],
+  [
+   "13-1 13-2 13-3 13-4 13-5 13-6 13-7",
+   "british"
+  ],
+  [
+   "14-3 14-4 14-5 14-6 14-7",
+   "which"
+  ],
+  [
+   "5-4 3-1 6-15",
+   "had"
+  ],
+  [
+   "7-3 7-4 7-5 7-6",
+   "they"
+  ],
+  [
+   "3-1 2-77 4-2 9-15 9-16 6-15",
+   "arrived"
+  ]
+ ]
+}
