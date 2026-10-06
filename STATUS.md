@@ -5070,6 +5070,38 @@ Open for the next lane:
 3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
 4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
 
+## LANE LANE-RUN10-account-2 handoff (session_01Fnnf2KFqUKZG3cpVKRD9tL, account 2), 6 October 2026 (closed 08:3x UTC: i-r S/M backlog worked, lane about 48.7 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run10-jobs.md. WORK-QUEUE row LANE-RUN10-account-2: RUN9's named
+next steps for i-r, then tools/next_steps.py runnable / parallel rows (S, M). Gate 0a: SESSION-SWEEP-account-2 still `claimed`, its TSV on disk;
+proceeded as RUN7-RUN9 did. VERIFY-BACKLOG had no i-r row. Off limits: Birago (incl. nevers-birago), Armstrong, Debosnys, riksarkivet-r4282.
+Eighteen Opus 5.5 workers in four waves (13 D, 5 D- at 1.02-1.45x), workers 43.40 + orchestrator about 5.3 = about 48.7 of cap 60 (get_session).
+five_hour `allowed` throughout. Stale NEXT-STEPS cells dropped (already run): naf14913 phrase search, rah-juan-manuel BHO map, lambeth-bacon
+Baconiana check, konstanz Pallain/Bailleu/Guyot.
+- na-suriname-map-1781: [sigma] split into knot/hook by script (R10-SUR). NA 1.05.03 inv. 373 scans 0692-0693 = Texier to the directors, Paramaribo
+  29 Oct 1781, 13 cipher lines with interlinear plain, same sign system as the map key (R10-SUR693; gate 0.973 vs control p99 0.150). Verifier
+  R10-SURV: solver PREREG not shown to predate scoring, so a pushed-first blind re-test ran (0.740 vs p99 0.148 PASS); S, t, [x-dot] alias, n=z
+  upheld at C and applied; 2077 H 538 C 12 M 63 U 45 (was C 10 M 61 U 49), --check 0, AUDIT.md propagated. A 28-scan sweep of 0600-0796 saw no
+  further glossed cipher.
+- pro3055-clinton-1779: 3868 cipher checked cell by cell against its period decipherment on the 1778 key, all three pages (R10-CLIN3868, B):
+  667/679 key-consistent, every page's pre-registered gate PASS vs shuffled controls; verifiers R10-CLINV/CLINV2: cipher spells DIGBY where the
+  p.385 decipherment writes Darby (rule-4 conflict recorded by witness); "Kings", "Floquet" lose [?], "Cord" confirmed, "Pyan" stays M;
+  p385_reading H 250 M 2.
+- na-janssens-java-1811: invnr 26 paged end to end (R10-JANS26/B/C/D); scans 10-11 = a second signed copy of dispatch No.1's cipher (5 extra
+  leading codes, no gloss); no key source; invnrs 12, 7, 26 all paged; gap 3 waiting-on LOCAL-QUEUE L31.
+- oldenbarnevelt-brederode-1605: verifier R10-OBREDV upheld 170 -> 179 (H) and left 704 undecidable (M); ciphertext.txt untouched. NA 3.01.14
+  inv. 2016's 10 Aug 1598 sleutel (scans 31/32) is a worked decipherment of a two-layer French code, not a design match for no. 92 (R10-OBRED98);
+  inv. 2016 holds partly deciphered Van Aerssen 1598 letters with gloss sheets (a lead outside this folder; not taken: no new targets).
+- roell-vandedem-1809: inv. 980 (R10-ROELL9) and inv. 990 (R10-ROELL10) hold no 9 Feb 1809 item; DECODE R1469/R1470 cite "legatie Turkije inv.
+  804" (R10-ROELL11; NA 1.02.20 inv. 804 = Van Dedem 1785-93); the 1793-dating inference is not supported by codes (R10-ROELL12: 15/45 vs
+  null p95 19; positive control 23/45 vs p99 18). Status open.
+- kaliningrad-2015: held-out lexicon-coverage judge (R10-KAL7), positive control PASS 5/5, target 0.0440 = its shuffle median: control-backed
+  negative on this statistic (second instrument on the S3' design).
+Open for the next i-r lane: (1) janssens two-pass transcription of the invnr 26 No.1 copy vs leaf 188 ~4, then the LM fill of unkeyed codes ~3;
+(2) suriname: the M candidates (b, g, y-family, h-sec) need more glossed text -- inv. 373 outside 0600-0796 at 1 in 3 ~3; (3) roell: NA 1.01.02
+for the received copy of a 9 Feb despatch ~2-3; (4) clinton 2380 cipher columns vs its decipherment ~5 (low value); (5) Van Aerssen 1598 pool
+in NA 3.01.14 inv. 2016 for a scout/orchestrator decision (new target, not a lane step); (6) rayburn sorter publish (account 3) still pending.
+
 ## LANE LANE-RUN9-account-2 handoff (session_01A1YMVHYC29a1P95MRiYJHg, account 2), 6 October 2026 (closed 06:5x UTC: i-r S/M backlog worked, lane about 47.6 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run9-jobs.md. WORK-QUEUE row LANE-RUN9-account-2: RUN8's named
