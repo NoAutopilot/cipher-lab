@@ -119,5 +119,6 @@ resolution (it put T36 or T31 as top two for 18 of 23 tokens). No token settled 
 | page | relabel | old arm A | new | key-shuffle p99 | order p99 | control | random 9-token null mean / p95 | verdict |
 |---|---|---|---|---|---|---|---|---|
 | f.244r | 4 x T31->T36, 1 x T31->T45 | 0.6771 | 0.6793 | 0.351 | 0.428 | 5/5 | 0.6796 / 0.6815 | SUPPORTED (gain not above random relabels) |
-| f.275r | 4 x T31->T36 | 0.6471 | 0.6527 | 0.466 | 0.495 | not finished (killed at cap; relabel-independent, 5/5 in kp86e/RUN6-PIS) | not run (killed at cap) | SUPPORTED |
+| f.275r | 4 x T31->T36 | 0.6471 | 0.6527 | 0.466 | 0.495 | 5/5 (R12A-PISRS) | 0.6502 / 0.6527 (ours = null max; 7.5% reach it) | SUPPORTED |
 Gate unchanged from PIS1-KEY (a); key86.tsv, tx86/tx86e, readings and grades unchanged; T31 tokens stay M. f.244r T36 shape vs copy o conflict (rule 4) stands.
+R12A-PISRS (6 Oct 2026; pisrs/PREREG_t36commit.md): the 4 f.275r labels committed into tx86e (tx86e/apply_t36.py; pre-edit file tx86e/ciphertext_f275r_preT36.tsv), reading regenerated (4 letters m -> s), kp86e grades C 360 -> 364 / M 191 -> 187; f.244r and the 9 UNSETTLED f.275r T31 tokens stay M; key86 unchanged.

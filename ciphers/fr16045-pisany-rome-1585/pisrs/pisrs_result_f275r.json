@@ -1,0 +1,108 @@
+{
+ "err": 0.215,
+ "picks": {
+  "L04 i39": "T36",
+  "L09 i3": "T36",
+  "L12 i5": "T36",
+  "L14 i28": "T36"
+ },
+ "old": {
+  "tx86e/ciphertext_f275r.tsv": {
+   "tokens": 554,
+   "dropped": 7,
+   "decoded_letters": 717,
+   "score": 0.6471,
+   "keyshuffle_p99": 0.4678,
+   "order_p99": 0.4965,
+   "above_both": true
+  },
+  "tx86e/passA.tsv": {
+   "tokens": 538,
+   "dropped": 5,
+   "decoded_letters": 707,
+   "score": 0.6308,
+   "keyshuffle_p99": 0.468,
+   "order_p99": 0.488,
+   "above_both": true
+  },
+  "tx86e/passB.tsv": {
+   "tokens": 540,
+   "dropped": 7,
+   "decoded_letters": 695,
+   "score": 0.659,
+   "keyshuffle_p99": 0.4661,
+   "order_p99": 0.4921,
+   "above_both": true
+  }
+ },
+ "new": {
+  "pisrs/tx_relabel/tx86e_ciphertext_f275r.tsv": {
+   "tokens": 554,
+   "dropped": 7,
+   "decoded_letters": 717,
+   "score": 0.6527,
+   "keyshuffle_p99": 0.466,
+   "order_p99": 0.4951,
+   "above_both": true
+  }
+ },
+ "positive_control": {
+  "seeds": [
+   {
+    "seed": 0,
+    "N": 717,
+    "score": 0.6552,
+    "keyshuffle_p99": 0.4578,
+    "order_p99": 0.4601,
+    "pass": true
+   },
+   {
+    "seed": 1,
+    "N": 717,
+    "score": 0.7392,
+    "keyshuffle_p99": 0.4483,
+    "order_p99": 0.4553,
+    "pass": true
+   },
+   {
+    "seed": 2,
+    "N": 717,
+    "score": 0.6853,
+    "keyshuffle_p99": 0.4494,
+    "order_p99": 0.4487,
+    "pass": true
+   },
+   {
+    "seed": 3,
+    "N": 717,
+    "score": 0.6831,
+    "keyshuffle_p99": 0.453,
+    "order_p99": 0.4573,
+    "pass": true
+   },
+   {
+    "seed": 4,
+    "N": 717,
+    "score": 0.6814,
+    "keyshuffle_p99": 0.4534,
+    "order_p99": 0.4622,
+    "pass": true
+   }
+  ],
+  "passed": 5,
+  "pass": true
+ },
+ "supported": true,
+ "random_relabel_null": {
+  "n": 200,
+  "mean": 0.6502,
+  "p95": 0.6527,
+  "max": 0.6527,
+  "share_ge_settled": 0.075
+ },
+ "identical": {
+  "tokens_with_new_label": 5,
+  "identical": 5,
+  "note": "counts all tokens now carrying the new label, incl. ones that already had it"
+ }
+}

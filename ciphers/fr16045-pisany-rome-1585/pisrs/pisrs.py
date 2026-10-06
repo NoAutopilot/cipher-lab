@@ -75,6 +75,8 @@ def main():
             continue
         clear, ptext = P.clear_of(cl, drop)
         rec = f'{d}/ciphertext_{pg}.tsv'
+        if os.path.exists(os.path.join(T, f'{d}/ciphertext_{pg}_preT36.tsv')):  # R12A-PISRS: scored on the pre-edit file
+            rec = f'{d}/ciphertext_{pg}_preT36.tsv'
         check_context(pg, rec)
         picks = {(l, i): v for (lf, l, i), v in SET.items() if lf == pg}
         lines = read(rec); body = {x[0]: x[1] for x in lines if x}

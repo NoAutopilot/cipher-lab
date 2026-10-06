@@ -3,15 +3,15 @@
 L01	r p
 L02	a le est qui o u e [/] e que [/] f est o i t [?[bar-ic]] [?[circle-n]] o r t est qui faire car a i [?[cross]] l e [/] e n o o n [/] e a [?[y-hook]] [?[q]] r i [?[S-loop]] e x o o le [/]
 L03	l entreprise [/] d Angleterre [/] a u o i t [/] roy e [/] m a i l e e [/] i t [/] d e r e r l [/] u o le o i t [/] m d e u r o
-L04	s e [/] e n t r e m est a a n d [/] d a n g e r a n t n i a n t [/] e a r e e car roy e r i [/] d e m l a roy e a
+L04	s e [/] e n t r e m est a a n d [/] d a n g e r a n t n i a n t [/] e a r e e car roy e r i [/] d e s l a roy e a
 L05	m l o a e e que pour [/] roy r e [/] b i e n [/] a s a n e [/] a o est d e l d [/] d t n t [/] i l [/] a e u t a d r o
 L06	l e t e s c u o l e r [/] t a i u a n t t e t l a e s a n t [/] la la d e t u [/] t o s l t que d e u o n
 L07	c r e r s l a e i s a [/] m f i r e [/] pour e l le
 L08	[/] m [/] n e [/] le d e u c o u r i r o i t [/] monsieur [/] a u a n e [/] i l l u s est m u l votre
-L09	[?[cc]] e n m l e c r e t [/] pour votre <null> [/] f e i o t [/] e t u est e o t e r t e [/] d t f i c e [/] e a [/] le x e i
+L09	[?[cc]] e n s l e c r e t [/] pour votre <null> [/] f e i o t [/] e t u est e o t e r t e [/] d t f i c e [/] e a [/] le x e i
 L10	c l e u r e t e [/] d e la d e m [/] d e car c t s e [/] c r t e a n t [/] n que e n [/] a b e a u c t l o d e
 L11	i b c o c e [/] i n t e l e i e n c e m e t le u m e e a roy o n d faire la c e [/] a u e la le e l e d Angleterre [/] e t
-L12	s u r c e m u b i e e t a t h d a l a votre qui e a n e e votre faire d s r d e l u c e i <null> n t u r i [/]
+L12	s u r c e s u b i e e t a t h d a l a votre qui e a n e e votre faire d s r d e l u c e i <null> n t u r i [/]
 L13	le n c h a r g e a n t [/] m que o e r s t faire e [/] la e s s t o t m s n i la a t i o la [/] d e c e
-L14	faict que votre o e u l e <null> [/] d e t e r a n t [/] que c e l a f a o t [/] o i m t e c r e t [/] r l qui e [/]
+L14	faict que votre o e u l e <null> [/] d e t e r a n t [/] que c e l a f a o t [/] o i s t e c r e t [/] r l qui e [/]
 L15	i la u t s i o a u [/] m o e u l e m e n i [/] u t u monsieur l o [/] e a la i r e [/] faire a m n la t n c e
