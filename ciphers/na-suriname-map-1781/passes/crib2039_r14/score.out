@@ -1,0 +1,15 @@
+entries 18 (a b c d e f g h i k l m n o p q r s), tokens 444; cribs 13; control vocabulary 315 words
+
+REAL totals: tier1 2  tier2 2
+
+placements (crib entry@off tier A free M-agree | window values | p_b n_ctrl verdict):
+  smeedery k@0 t2 A4 free3 M-agree0 | sd?edbrt KffKKfKK | p_b 0.000 (0/40) SURVIVES
+  werken s@42 t2 A3 free2 M-agree0 | atrnen fKKfKK | p_b 0.068 (4/59) fails
+  linie r@5 t1 A3 free2 M-agree0 | i?nie ffKKK | p_b 0.000 (0/50) SURVIVES
+  tovwen d@19 t1 A5 free1 M-agree0 | bovwen fKKKKK | p_b 0.000 (0/59) SURVIVES
+
+control (a) within-entry shuffle, 1000 seeds, tier1: mean 0.15, p95 1, real 2, frac seeds >= real 0.009
+
+control (a) within-entry shuffle, 1000 seeds, tier2: mean 0.62, p95 2, real 2, frac seeds >= real 0.128
+
+survivors (p_b <= 0.05): [('smeedery', 'k', 0, 2), ('linie', 'r', 5, 1), ('tovwen', 'd', 19, 1)]
