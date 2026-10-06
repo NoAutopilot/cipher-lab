@@ -685,3 +685,61 @@ bundle's thumbnails show the same sign-based 16th-century family as the five rea
 
 Next cheap step (named, not run): the NA 1.01.02 / 3.01.14 archive hunt for a States-side key of 1600-1610 ("Key hunt" above), not
 more Munich KAA 4591 sheets.
+
+## NA States-side key hunt, wider terms (R9-NAKEY, 6 Oct 2026, 05:58-06:03 UTC, account 2)
+
+The step named above ("NA 1.01.02 / 3.01.14 archive hunt"), re-run on freshly downloaded full EAD XML of both finding aids
+(`www.nationaalarchief.nl/onderzoeken/archief/<toegang>/download/xml`, 3.01.14 4.97 MB, 1.01.02 22.7 MB) with a wider term set
+than TX-KEYS (25 Sept: sleutel, cijfer, chiffre, cijferschrift): `cijfer|cyfer|ciffer|cyffer|chiffre|chiffer|zijffer|sleutel|
+geheimschrift|gecijferd|ontcijfer|dechiffr|code`, matched per `<c>` element's own text, not its children.
+
+**The letter's own manuscript is in NA 3.01.14 and is digitised (H, read from the catalogue and the first scan).**
+- **NA 3.01.14 inv. 1490** (handle `http://hdl.handle.net/10648/7d46913b-93cd-43ac-9f7d-b60fe6e2dee0`): "Missive van Johan
+  Wilhelm, hertog van Gulik, Kleef en Berg en Duitsland, aan Johan van Oldenbarnevelt van 21 februari 1605, betreffende de
+  diplomatieke en militaire omstandigheden in de Palts, 1605; afschrift (begin 17e eeuw). Met een bijlage, 1605; afschrift.
+  2 stukken. 1. Gedeeltelijk in geheimschrift. 2. RGP 108: p. 110-111." Item page `drupal-settings-json`: `"availability":
+  "DIGITALIZED"`, 7 scans (METS `https://service.archief.nl/gaf/api/mets/v1/a39ba4d8-4706-43fc-8e9b-3b56d1fe5f57`).
+- First scan fetched (`images/na_301_14_1490_p0001.jpg`, 2510x3740) and looked at once, downscaled, by this worker (no
+  transcription): headed "Duplicata" top left, a later pencil note "(Brederode aan Oldenb.?)" at the top, Dutch text with
+  numeral groups inline -- e.g. "vanden 671 vanden 611 ende 612", "578 337 241 97 409 420 108 289", "741", "146 110 252 433",
+  "636", "241 200 50 160 440 210 300 217", "671 ... 613". These are the codes of the printed no. 92 (241, 289, 337, 611, 741
+  among those the key screens above tested against). So the manuscript the edition cites as "A.R.A., Holland 2613, e.
+  Duplicata" is this item, and route A of YX-OBR (tracing Holland 2613 to a modern toegang) is answered: 3.01.14 inv. 1490.
+- Why TX-KEYS missed it: the catalogue says "geheimschrift", not "cijfer"/"sleutel"; and the NA cataloguer gives the sender as
+  Johann Wilhelm of Jülich-Cleves-Berg, where the editor (in square brackets) and the pencil note give P. van Brederode. The
+  attribution conflict is recorded, not settled (M either way).
+- Consequence for this folder (rule 2): `ciphertext.txt` comes from the printed edition only; a page image of the cipher itself
+  now exists. The printed numerals have not been checked against the 7 scans.
+
+**States-side keys in or near the window (catalogue, H; key design read from one scan, H for what is visible):**
+- **NA 3.01.14 inv. 2028** (`http://hdl.handle.net/10648/86f02055-7104-4de5-90ff-25c725a8c62d`): "Stuk houdende de sleutel voor
+  de decodering van de code die Johan van Oldenbarnevelt gebruikte in zijn correspondentie met Paul Choart, heer Van Buzanval,
+  ambassadeur van Frankrijk in de Republiek, [eind 16e eeuw]; afschrift." Digitised, 3 scans (METS
+  `https://service.archief.nl/gaf/api/mets/v1/676010c8-0563-4b90-ba2a-801de20fea7b`). First scan fetched
+  (`images/na_301_14_2028_p0001.jpg`): a **syllabary**, columns "Sillabes" (ba be bi bo bu by, ca ... ry, sa) and "Supplet
+  Letters" (a-z), each syllable or letter mapped to one to three **numbers from about 1 to 99**, some with a bar or cross mark
+  over the digit, a few to letters or short words; a worked example on the right ("Exempel ... Wy hebben het gerucht laten
+  luyden") enciphered syllable by syllable. Old number "2625 l" in pencil at the foot (the same old Holland numbering as
+  "Holland 2613 e"). **No three-digit numbers on this scan**, so as seen it is not a numeral nomenclator reaching 241-741; scans
+  2-3 (possibly a names list) were not fetched, per the brief. Fit test: not run (brief).
+- **NA 3.01.14 inv. 2016-2025**: François van Aerssen to Oldenbarnevelt, 1598-1602 and 1605-1609, originals, "Gedeeltelijk in
+  cijfercode. Gedeeltelijk gedecodeerd. Bij de missive van 1598 augustus 10 bevindt zich een sleutel." Inv. 2016 (1598) is
+  digitised (METS `https://service.archief.nl/gaf/api/mets/v1/70426ba3-d59c-474d-bd4b-f9906cbe37de`, 81 scans); the key's
+  scan was not located or fetched (it is inside the pack, not the first scan). Partly decoded originals of the same chancery
+  1605-1609 = a deciphered-sibling source for Oldenbarnevelt's own cipher practice in the window.
+- **NA 3.01.14 inv. 1769**: Oldenbarnevelt to Otto Hendrik van Bylandt, 14 Oct 1595, minute, "In het Frans, gedeeltelijk in
+  geheimschrift", RGP 80 pp.318-319, digitised (dao present; flag not fetched). Outgoing States-side cipher, 10 years early.
+- Other 3.01.14 hits (inv. 937 verdeelsleutel 1586; 2442 Spanish 1605, its own target folder; 2980 a 1594 "codebrief"; 3429
+  1590 Egmond annexes) are not this correspondence.
+- **NA 1.01.02**: 78 hits, none dated 1595-1615 except the already-logged Ottoman key (12578.1, 1618-22); the rest are
+  1629-1691 ("gedeeltelijk in cijfer" letters from Copenhagen, Stockholm, London, Madrid; "Cijfers, 1652"). No States-General
+  key of 1600-1610 under these terms.
+
+Next steps (named, not run): (1) read the 7 scans of 3.01.14 inv. 1490 and check `ciphertext.txt` against them -- an image
+check, one subagent pass per scan on line crops (`tools/iiif_lines.py --image`), ~1.5 per scan, ~12 with reconciliation;
+(2) fetch scans 2-3 of inv. 2028 to see whether the Buzanval key has a three-digit names list (2 requests; no fit test before
+a PREREG); (3) locate the 10 Aug 1598 key inside inv. 2016 (81 scans, thumbnails first). Status stays `open`.
+
+Requests: `www.nationaalarchief.nl` 3 (two EAD XML, item page 1490); `service.archief.nl` 5 (METS 1490, 2016, 2028; two
+first-scan images); all >= 2 s apart, descriptive User-Agent, no 403/429/challenge. (Plus 2 for the Rumpf re-probe, logged
+in that folder.) No subagents.

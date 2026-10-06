@@ -336,6 +336,14 @@ fetched 6 Oct 2026 00:3x UTC:
 
 Requests: `www.nationaalarchief.nl` 2 (2 s apart, descriptive User-Agent). No other host, no subagents, no vision calls.
 
+## R9-NAKEY re-probe (6 Oct 2026, account 2, LANE LANE-RUN9-account-2)
+
+The "While waiting" step, run again about 5.5 hours after D2B-RUMPF. Item pages' `drupal-settings-json`, fetched 6 Oct 2026
+06:00 UTC: **NA 3.01.19 inv. 2030** ("Rumpf, Hendrik Willem-, uit Stockholm."): `"availability":"PHYSICAL"`,
+`"has_scan_navigation":false`, `"scans":[]`. **NA 3.01.19 inv. 2044** ("Bie, Jacob de-, uit Hamburg, Lübeck en
+Stockholm."): same three values. **Still not digitised**; the route is still the copy order (ASKS row 46, `REQUEST.md`).
+Requests: `www.nationaalarchief.nl` 2, 2 s apart, descriptive User-Agent.
+
 ## While waiting
 
 - While the copy order for NA 3.01.19 inv. 2030/2044 waits on ASKS row 46: re-probe the two NA 3.01.19 item pages
