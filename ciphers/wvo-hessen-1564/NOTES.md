@@ -632,3 +632,29 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair and gloss-row crops and sorter tiles
 - [n/a] retry: no step has failed that a retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: a verifier on the revised gloss and key (~$2), and after the owner's sorter answers, rebuild key.tsv per settled sign and settle the uncertain gloss letters against it (~$1.5)
+
+## Verifier audit 2 of the revised gloss and key (R10-WVOV, account 4, 6 Oct 2026, 10:01-10:1x UTC by date -u)
+
+AUDIT.md "AUDIT 2". R10-WVOTX's alignment, key and decode re-run from the committed files: byte-identical (piles 17 vs p95
+3, passA 15 vs 5, passB 13 vs 3; key.tsv, tile_letters.tsv, ciphertext.tsv identical; `decode_key.py --check` exit 0).
+PREREG landed 09:47:22, scored outputs 09:54:29 (push order). 8 random C tiles: 8 of 8 under the gloss letter the key gives.
+**Correction to R10-WVOTX's figure:** "decode C 142" is a pile-level count; at tile level 107 of the 142 agree with the
+gloss letter over them (17 conflicts, 18 unaligned), so depth uses 107 of 257 (41.6%), D2, N0 unchanged. k28: the two
+aligned tiles are one triangle sign under a clear "b" (right); the three unaligned k28 tiles are other shapes decoded "b"
+at C (over-graded until the sorter-settled rebuild). In "kin" (C04/C05) the k carries a raised abbreviation-like stroke;
+expansion unsettled (M).
+
+## Remaining gaps (finish-or-blocker pass, R10-WVOV, 6 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed), transcribed in two blind passes, reconciled and verified (AUDIT 2); alignment gate PASS 17 vs shuffle p95 3; key 16 C / 12 M pile rows; 107 of 257 tiles C at tile level (pile-level C 142)
+- uncertain gloss letters in C03 ("sehd he voans sp"), C07, C08, the end of C09, and the abbreviation after "kin" - blocker: not-attempted; two machine passes misread this hand's letter forms and the reconciler could not settle these by eye; next: compare each uncertain letter with the cipher sign under it once the owner's sorter settles the signs (the key then predicts the letter), ~$1
+- sign-level key without mixed piles (k28 holds a triangle = b plus three other shapes decoded b at C) - blocker: not-attempted; the sorter is built but not yet answered; next: after the owner's f23 sorter answers, apply them with tools/sign_sorter_apply.py, relabel tile_letters.tsv by sid, rebuild key.tsv with make_key.py and eye-check every C row against its tiles, cross-check against 1069 (r9wvox/concordance.tsv), ~$1.5
+
+## Escalation (R10-WVOV, 6 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174 application; R9-WVOX concordance FAIL 0/7) and 1069 key (R9-WVOX concordance PASS 8/18)
+- [x] clear-pages: f.23's own interlinear gloss transcribed in two blind passes, reconciled and re-aligned (R10-WVOTX), verified (R10-WVOV)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
+- [x] key-rebuild: pile-level key rebuilt from the careful gloss (R10-WVOTX, r9align/key.tsv, 16 C)
+- [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair and gloss-row crops and sorter tiles; 13 tiles eye-checked against the gloss (R10-WVOV)
+- [n/a] retry: no step has failed that a retry would change
+Verdict: keep going: 2 internal gaps; cheapest next: after the owner's f23 sorter answers, rebuild key.tsv per settled sign and settle the uncertain gloss letters against it (~$1.5)

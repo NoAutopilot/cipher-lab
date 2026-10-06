@@ -1,5 +1,105 @@
 # AUDIT -- wvo-hessen-1564, f.23 cipher enclosure (WVO briefnr 1109)
 
+## AUDIT 2 (verifier R10-WVOV, account 4, 6 Oct 2026, 10:01-10:1x UTC by date -u)
+
+Verifier session separate from the solver (R10-WVOTX, session_01DMESDnz54WgbwPpkiXAZUY). Brief:
+`.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` job R10-WVOV. AUDIT 1 below is kept unchanged; where the two
+differ, this section is current.
+
+**Claim under audit** (NOTES.md "f.23 careful gloss transcription and alignment re-run", R10-WVOTX): the f.23 gloss,
+transcribed in two blind passes and reconciled (`r10tx/gloss_r10.tsv`), re-aligned under PREREG-R9-WVOALIGN parameters
+gives CONSISTENT piles 17 vs shuffle p95 3 (R9: 10); `r9align/key.tsv` 16 C / 12 M (was 10 / 18); decode C 142, M 115 of
+257; k28 changed value a -> b at grade C.
+
+### 1. Verdict
+
+| Item | Class | Key source | Text | Depth | Prior plaintext | Prior decipherment |
+|---|---|---|---|---|---|---|
+| f.23 cipher enclosure, 10 cipher rows, 257 tiles (+1 clear "E.L.") | **N0** (unchanged) | **period** (pile-level key rebuilt by us from the leaf's own interlinear decipherment) | known (in manuscript, on the leaf; not found in print) | **D2**, about 42% (107 of 257 tiles C *and* agreeing with the gloss letter over them; pile-level grade count C 142 = 55%) | yes, in manuscript (the gloss) | yes: the gloss is the decipherment of this item |
+
+- **Safe sentence:** "f.23 of WVO 1109 (Willem van Oranje to Landgrave Wilhelm IV of Hesse, 18 Sept 1564, HSAM Marburg)
+  carries a contemporary letter-over-sign German decipherment above each of its ten cipher rows. Aligning that
+  decipherment with the signs gives a partial homophonic letter key (16 sign groups at grade C, 12 at M); the enciphered
+  passage, as the gloss reads it, reports that '[die] kin' fell so gravely ill ('heftig kranck') that she was bled twice and
+  purged twice. The decipherment is the period one on the leaf; this is a key recovered from it, not a reading of unknown
+  text."
+- **Unsafe sentence:** "deciphered", "read for the first time", "previously unread", or "55% deciphered" (the 142 counts
+  piles, not tiles: see 2d).
+
+### 2. Checks run by this verifier
+
+a. **Commits on origin/main.** R10-WVOTX's work is on origin/main (979c049f1 and the "update" commits that `tools/room.py
+   --push` folded it into). The PREREG's own hashes (724553df5, add122311) no longer exist in the shared history (folded by
+   the rebase, CLAUDE.md rule 6's known gap); push order is the clock instead: `PREREG-R10-WVOTX.md` landed at 09:47:22
+   (eaac4ed1d, margins edit 09:47:36 f448eca69), passB 09:48:01, gloss_r10.tsv + passA 09:52:41, the scored alignments,
+   key and decode 09:54:29 (979c049f1). **PREREG predates the scored run: yes.**
+b. **Byte-identical re-run.** In a scratch copy: `build_pairs.py` (pairs_piles/passA/passB identical), then
+   `tools/interlinear_align.py align ... --code-prefix @ --seg-bonus 0 --keep-fs --null-cost -1.0 --shuffle 1000 --seed 1564`
+   for each label set: piles real 17, mean 1.39, p95 3, max 5, p 0.001; passA 15, 2.43, 5, 7, 0.001; passB 13, 1.35, 3, 6,
+   0.001 -- the solver's numbers exactly. align_*.tsv, key_*.tsv, then `make_key.py` key.tsv, tile_letters.tsv and
+   ciphertext.tsv all **byte-identical** to the committed files. `tools/decode_key.py ciphers/wvo-hessen-1564/r9align --check`
+   exit 0 (C 142, M 115). `r10tx/gloss_r10.tsv` gloss column = `r9align/gloss_reconciled.tsv` gloss column.
+c. **Control can vary on the statistic: yes.** The row-derangement shuffle moves each gloss onto another row's signs, so
+   label->letter agreement across rows (CONSISTENT) can and does fall; the controls stayed flat between R9 and R10 (piles
+   mean 1.46 -> 1.39, p95 3 -> 3) while every real count rose (10 -> 17, 7 -> 15, 11 -> 13): the bMAT2/bCAS shape of a
+   non-test does not apply. One caveat the shuffle cannot see: the reconciler read the gloss with `r9align/crops_m/`
+   (row-pair crops showing the signs) and with the R9 pile key on file, so a letter could have been nudged toward the
+   key. The changes I checked by eye (2e) are letter-form facts, not key-driven, so I find no sign of that; it is recorded
+   as a limit, not a fault.
+d. **Per-tile check of the C grade.** make_key grades a whole pile C, so every tile in a C pile decodes at C. Of the 142
+   C-pile tiles, the gloss letter aligned over the tile equals the pile's value on 107; 17 are aligner conflicts and 18
+   are unaligned (`tile_letters.tsv`, statuses). Only the 107 are C at tile level; this audit uses 107 for depth.
+   **k28 (a -> b at C):** all five k28 tiles opened against the gloss on the image. The two aligned ones (C03 idx 25,
+   C04 idx 9) are the same triangle sign under a clear gloss "b" ("bekommen", "haben"): b is right for that shape. The
+   three unaligned k28 tiles (C06 idx 2, C06 idx 12, C09 idx 3) are **not** triangles (a small looped sign, a small ring, a
+   theta-like sign): the k-means pile mixes shapes, and the decode gives them "b" at grade C. Those three are over-graded;
+   they are already outside the 107. R9's "a" for k28 rested on 3 of 4 misaligned positions; a C value that flips between
+   runs on 2 occurrences shows the C threshold (>= 2 times on >= 2 rows) is thin for piles. Not a finding against the
+   solver: the gaps section already names the sorter-settled rebuild as the fix.
+   **Random C tiles:** 8 tiles drawn (Python `random.seed(20261006)` over C-pile tiles with status agrees), each cropped
+   with the gloss row above it from `images/01109_p3_400full.jpg`: k12 e (C06), k03 t (C01), k22 d (C08), k28 b (C03), k26
+   e (C06), k09 s (C02), k26 e (C09), k19 g (C07). **8 of 8 sit under the gloss letter the key gives** (k09's "s" is the
+   round final s of "das", a shape close to the gloss b; k19's "g" is the 8-shaped g). AUDIT 1 found one-position slips in
+   4 of 10 on R9's sketch gloss; none in this sample.
+e. **Gloss words changed by R10-WVOTX, by eye on `r10tx/view/row_L07.jpg` and `row_L09.jpg`:** "haben das die kin so"
+   (C04) and "heftig kranck worden sei das" (C05) read as the solver gives them; R9's "gaben" and "gefrid" were wrong. In
+   "kin" the k is followed by a raised stroke in both places it is written (C04 end, C05 start), which looks like an
+   abbreviation mark ("K'in"); the expansion is not settled here (M), and the content sentence keeps "a woman ('ir')"
+   rather than naming anyone.
+
+### 3. Novelty search delta (rule 10; only what changed since AUDIT 1)
+
+New gloss phrases searched exactly: "heftig kranck worden", "zweimahl purgieren", "adern zweimahl schlagen" on Internet
+Archive full text (be-api fts) and Google Books (API, country=US, keyed). IA: "heftig kranck worden" 10 hits, all 17th-18th
+c. prose (Urlsperger's Salzburger Nachrichten, Jung-Stilling, a BSB chronicle) unrelated to 1564, Oranje or Hessen; the
+other two 0. Google Books: generic matches (the API loosens quoted phrases), no volume on Oranje, Hessen or 1564.
+Requests: www.googleapis.com 3, be-api.us.archive.org 4, >= 2 s apart. Class **N0 unchanged**: the item's own decipherment
+is on the leaf; no search can lower that and none can raise it.
+
+### 4. Depth (rule 4a)
+
+- Tokens: 257 cipher tiles (+1 clear). Pile-level grades (decode_key.py): C 142, M 115, H/S/I 0. Tile-level C (pile C and
+  the gloss letter over the tile agrees): **107 (41.6%)**; this is depth_pct. The residue is not name/code groups but
+  letters the pile key mixes (k28-type piles) or the aligner places one off.
+- **D2** (unchanged). A clause above the authentication distance reads under the signs: "das die kin so heftig kranck
+  worden sei das man ir die adern zweimahl schlagen" (C04-C06), with code values reading in two contexts (k26 = e in C06
+  and C09; k28 triangle = b in "bekommen" and "haben"). True sentence: *the enciphered passage reports that a woman ('ir',
+  her) fell gravely ill and had to be bled twice and purged twice.* Not D3: under 80% of tokens at tile-level C, and C03,
+  C07-C09 still hold uncertain gloss letters.
+- Check used: re-run byte-identical; row-shuffle control (p95 3 vs 17); 8 random + 5 k28 tiles eye-checked on the image;
+  two gloss rows eye-checked. Outward wording: "partially deciphered (about 40%)", only with "by the period decipherment on
+  the leaf".
+
+### 5. Postmortem and corrections
+
+- Over-claim check on R10-WVOTX's section: wording clean (no novelty word; "the decode is a check on the key"). One figure
+  over-reads in the same way AUDIT 1 found: "decode C 142" counts pile grades, and 35 of those tiles disagree with or are
+  not aligned to the gloss; corrected here to 107 at tile level and noted in NOTES.md.
+- status.json result row updated (depth D2, depth_pct 41.6, counts, audit_status "two audits"). No SECOND-OPINIONS-QUEUE
+  row exists or is owed (class below N3). Status stays `partial`.
+- No subagent; no login.
+
+
 ## AUDIT 1 (verifier R9-WVOV, account 4, 6 Oct 2026, 06:20-06:4x UTC by date -u)
 
 Verifier session separate from the solver (R9-WVOALIGN, session_018jdurbcUgRBMVtqcdMv3yV) and from the sorter builder
