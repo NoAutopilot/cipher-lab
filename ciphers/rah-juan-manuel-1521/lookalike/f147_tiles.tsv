@@ -1,0 +1,86 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+rjm9526_f147	f147_L01	2	~	4	~	split	split	4,?3,~	puc	F B ~		
+rjm9526_f147	f147_L01	5	~	enbiaronseles	cub	split	split	enbiaronseles,cub	~ F B	~ ~ ~		
+rjm9526_f147	f147_L01	6	~	nuqtanyll	[ ]	split	split	nuqtanyll,[ ]	F B ~	~ ~ ~		
+rjm9526_f147	f147_L01	7	~	dus	[ ]	split	split	dus,[ ]	B ~ ~	~ ~ ~		
+rjm9526_f147	f147_L01	8	~		?2	split	split	?2	~ ~ ~	~ ~ B		
+rjm9526_f147	f147_L01	9	~		~	split	split	~	~ ~ ~	~ B kef		
+rjm9526_f147	f147_L01	10	~		~	split	split	~	~ ~ ~	B kef ~		
+rjm9526_f147	f147_L01	13	~	cosof	R	split	split	R,cosof	~ B kef	sof naf ver		
+rjm9526_f147	f147_L02	1	~	D	~	split	split	D,9,A,~		R A ~		
+rjm9526_f147	f147_L02	4	~	D	W	split	split	D,W,9,A	~ R A	sof cor mus		
+rjm9526_f147	f147_L02	11	~		~	split	split	~	R ram R	T A Z		
+rjm9526_f147	f147_L03	5	~	~	7	split	split	7,~	dim ka R	3 ~ E		
+rjm9526_f147	f147_L03	7	~	4	?3	split	split	4,?3,Q	R ~ 3	E 9 dim		
+rjm9526_f147	f147_L03	12	~	Z	7	split	split	Z,7,3,F	9 dim di	~ 3 kac		
+rjm9526_f147	f147_L03	13	~	~		split	split	~	dim di ~	3 kac Z		
+rjm9526_f147	f147_L03	17	~	Q	?3	split	split	Q,?3,9,4	3 kac Z	~ ~ tup		
+rjm9526_f147	f147_L03	18	~	rea	reaz	split	split	rea,reaz	kac Z ~	~ tup R		
+rjm9526_f147	f147_L03	19	~	Z		split	split	Z,3,F	Z ~ ~	tup R sof		
+rjm9526_f147	f147_L04	1	~	3	Z	split	split	3,Z,F		ar ~ pib		
+rjm9526_f147	f147_L04	3	~	D	A	split	split	D,A,9,E	~ ar	pib F ya		
+rjm9526_f147	f147_L04	7	~	ges	yag	split	split	ges,yag	pib F ya	~ ~ gap		
+rjm9526_f147	f147_L04	8	~	ki	es	split	split	ki,es	F ya ~	~ gap kef		
+rjm9526_f147	f147_L04	9	~	Z	kiz	split	split	Z,3,F,kiz	ya ~ ~	gap kef rin		
+rjm9526_f147	f147_L04	18	~	gastaran	[gastaran en ello]	split	split	gastaran,[gastaran en ello]	W gap ler	~		
+rjm9526_f147	f147_L04	19	~	enello		split	split	enello	gap ler ~			
+rjm9526_f147	f147_L05	7	~		A	split	split	A,E,D	xor R T	sad A co		
+rjm9526_f147	f147_L05	13	~	Q	?3	split	split	Q,?3,9,4	co 4 F	Z ~ om		
+rjm9526_f147	f147_L05	15	~		3	split	split	3,Z	F ~ Z	om boz kef		
+rjm9526_f147	f147_L05	20	~	yef	?5	split	split	?5,yef	boz kef ric	kef ~ dos		
+rjm9526_f147	f147_L05	22	~		gen	split	split	gen	ric ~ kef	dos		
+rjm9526_f147	f147_L06	21	~	Q	?3	split	split	Q,?3,9,4	A coh F	Z ~ ~		
+rjm9526_f147	f147_L06	23	~	il	3	split	split	3,Z,il	F ~ Z	~		
+rjm9526_f147	f147_L06	24	~		ul	split	split	ul	~ Z ~			
+rjm9526_f147	f147_L07	10	~	de		split	split	de	sad naf puc	~ ~ tac		
+rjm9526_f147	f147_L07	11	~	ver		split	split	ver	naf puc ~	~ tac dim		
+rjm9526_f147	f147_L07	12	~	Z		split	split	Z,3,F	puc ~ ~	tac dim T		
+rjm9526_f147	f147_L07	19	~	Q	Z	split	split	Q,Z,9,?3,3,F	9 Z biz	A cih		
+rjm9526_f147	f147_L08	1	~	huc	lucy	split	split	huc,lucy		Z F ~		
+rjm9526_f147	f147_L08	4	~	ibget	?6	split	split	?6,ibget	~ Z F	~ R ~		
+rjm9526_f147	f147_L08	5	~		ger	split	split	ger	Z F ~	R ~ R		
+rjm9526_f147	f147_L08	7	~	mc	nuc	split	split	mc,nuc	~ ~ R	R ler dim		
+rjm9526_f147	f147_L08	18	~	Q	?7	split	split	Q,?7,9,?3	qid kef naf	~ R ~		
+rjm9526_f147	f147_L08	19	~		~	split	split	~	kef naf ~	R ~ mus		
+rjm9526_f147	f147_L08	21	~	ar		split	split	ar	~ ~ R	mus		
+rjm9526_f147	f147_L09	1	~	un	unf	split	split	un,unf		~ ~ nab		
+rjm9526_f147	f147_L09	2	~	ft	T	split	split	T,9,ft	~	~ nab hag		
+rjm9526_f147	f147_L09	3	~	q	qnab	split	split	q,qnab	~ ~	nab hag ler		
+rjm9526_f147	f147_L09	20	~	buc	bic	split	split	buc,bic	ler dim mus	F ha		
+rjm9526_f147	f147_L10	9	~	mdb	mind	split	split	mdb,mind	gap ka R	~ ~ gat		
+rjm9526_f147	f147_L10	10	~	ud	W	split	split	W,D,ud	ka R ~	~ gat Z		
+rjm9526_f147	f147_L10	11	~		und	split	split	und	R ~ ~	gat Z ~		
+rjm9526_f147	f147_L10	14	~	um	ump	split	split	um,ump	~ gat Z	R ~ ~		
+rjm9526_f147	f147_L10	16	~	dg	dig	split	split	dg,dig	Z ~ R	~ ~ ~		
+rjm9526_f147	f147_L10	17	~	9	~	split	split	9,Q,D,~	~ R ~	~ ~		
+rjm9526_f147	f147_L10	18	~	W	ger	split	split	W,D,ger	R ~ ~	~		
+rjm9526_f147	f147_L10	19	~	ges		split	split	ges	~ ~ ~			
+rjm9526_f147	f147_L11	1	~	F	f	split	split	F,?3,K,f		3 ~ ~		
+rjm9526_f147	f147_L11	3	~	Z	ul	split	split	Z,3,F,ul	~ 3	~ ka R		
+rjm9526_f147	f147_L11	4	~	il		split	split	il	~ 3 ~	ka R ~		
+rjm9526_f147	f147_L11	7	~	hemb	7	split	split	7,hemb	~ ka R	~ ~ F		
+rjm9526_f147	f147_L11	8	~		yem	split	split	yem	ka R ~	~ F dim		
+rjm9526_f147	f147_L11	9	~		W	split	split	W,D	R ~ ~	F dim Z		
+rjm9526_f147	f147_L11	19	~	F	?3	split	split	F,?3,K,Q,4	ul gap bas	3 X dim		
+rjm9526_f147	f147_L12	6	~	ln	W	split	split	W,D,ln	seg R A	~ ~ gap		
+rjm9526_f147	f147_L12	7	~	Z	ul	split	split	Z,3,F,ul	R A ~	~ gap yer		
+rjm9526_f147	f147_L12	8	~		3	split	split	3,Z	A ~ ~	gap yer nab		
+rjm9526_f147	f147_L12	14	~		?3	split	split	?3,Q,4	nab hiq F	gap oul sof		
+rjm9526_f147	f147_L12	19	~		~	split	split	~	oul sof T	9 Z lib		
+rjm9526_f147	f147_L13	4	~		3	split	split	3,Z	sof dus Z	im ~		
+rjm9526_f147	f147_L13	6	~	[no recogha para falta y es muy sufinente ombre para]	[no recogí hara falta y es muy suficiente ombre para]	split	split	[no recogha para falta y es muy sufinente ombre para],[no recogí hara falta y es muy suficiente ombre para]	Z ~ im			
+rjm9526_f147	f147_L14	1	~	[mo y el tohara de buena voluntad y terna rason para ello]	[ello y el tohara de buena voluntad y terna causa para ello]	split	split	[mo y el tohara de buena voluntad y terna rason para ello],[ello y el tohara de buena voluntad y terna causa para ello]				
+rjm9526_f147	f147_L15	7	~	rjn	rin	split	split	rjn,rin	fed ler kef	sof X ges		
+rjm9526_f147	f147_L15	17	~	Q	?3	split	split	Q,?3,9,4	A Z F	~ gif hef		
+rjm9526_f147	f147_L15	18	~	F	Z	split	split	F,Z,?3,K,3	Z F ~	gif hef ler		
+rjm9526_f147	f147_L16	12	~	fad	fed	split	split	fad,fed	A ram qib	ram W E		
+rjm9526_f147	f147_L16	19	~	ocy	ax	split	split	ocy,ax	9 Z W	ram		
+rjm9526_f147	f147_L17	4	~		4	split	split	4,?3	dim 4 T	9 3 T		
+rjm9526_f147	f147_L17	17	~		?8	split	split	?8	fed kah mun	~ ~ ~		
+rjm9526_f147	f147_L17	19	~	E	~	split	split	E,A,~	mun ~ ~	~ ~ ~		
+rjm9526_f147	f147_L17	20	~	9		split	split	9,Q,D	~ ~ ~	~ ~ ram		
+rjm9526_f147	f147_L17	21	~	W		split	split	W,D	~ ~ ~	~ ram		
+rjm9526_f147	f147_L17	22	~	cy		split	split	cy	~ ~ ~	ram		
+rjm9526_f147	f147_L18	18	~		7	split	split	7	Z 10 F	~ ~ ~		
+rjm9526_f147	f147_L18	20	~	7		split	split	7	F ~ ~	~		
+rjm9526_f147	f147_L18	21	~	dto		split	split	dto	~ ~ ~			
