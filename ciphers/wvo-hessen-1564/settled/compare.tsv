@@ -1,0 +1,259 @@
+sid	row	idx	gloss_letter	pile	pile_value	pile_grade	settled_sign	settled_status	settled_value	settled_grade
+f23_C01_01_001	C01	0		k25	a	M	k02	moved	w	C
+f23_C01_01_002	C01	1	i	k10	i	M	k13	moved	i	C
+f23_C01_01_003	C01	2	r	k14	r	M	k14	kept	r	C
+f23_C01_01_004	C01	3	k	k13	k	M	k13-c	moved	k	M
+f23_C01_01_005	C01	4	o	k22	d	C	k22-b	moved	o	C
+f23_C01_01_006	C01	5	n	k21	n	C	k05	moved	n	C
+f23_C01_01_007	C01	6	n	k21	n	C	k20	moved	n	C
+f23_C01_01_008	C01	7	e	k06	e	C	k06	kept	e	C
+f23_C01_01_009	C01	8	n	k05	n	C	k05	kept	n	C
+f23_C01_01_010	C01	9	a	k11	a	M	k11	kept	c	M
+f23_C01_01_011	C01	10		k03	t	C	k03-c	moved		M
+f23_C01_01_012	C01	11	u	k11	a	M	k11	kept	c	M
+f23_C01_01_013	C01	12	h	k08	h	M	k08	kept	h	C
+f23_C01_01_014	C01	13		k25	a	M	[PLAIN:E.L.]	moved	E.L.	clear
+f23_C01_01_015	C01	14	i	k23	i	C	k23	kept	i	C
+f23_C01_01_016	C01	15	n	k20	n	C	k20	kept	n	C
+f23_C01_01_017	C01	16	f	k24	f	C	k24	kept	f	C
+f23_C01_01_018	C01	17	r	k02	w	M	k07	moved	r	C
+f23_C01_01_019	C01	18	e	k12	e	C	k12	kept	e	C
+f23_C01_01_020	C01	19	u	k16	u	M	k16	kept	u	M
+f23_C01_01_021	C01	20	n	k05	n	C	k05	kept	n	C
+f23_C01_01_022	C01	21	d	k22	d	C	k22	kept	d	C
+f23_C01_01_023	C01	22	t	k03	t	C	k03	kept	t	C
+f23_C01_01_024	C01	23	l	k01	l	M	k01	kept	l	C
+f23_C01_01_025	C01	24	i	k08	h	M	k08	kept	h	C
+f23_C01_01_026	C01	25		k11	a	M	k11	kept	c	M
+f23_C01_01_027	C01	26	c	k14	r	M	k08	moved	h	C
+f23_C01_01_028	C01	27	h	k04	o	M	X-aside	aside		U
+f23_C02_01_001	C02	0		k25	a	M	k26	moved	e	C
+f23_C02_01_002	C02	1	n	k21	n	C	k20	moved	n	C
+f23_C02_01_003	C02	2	v	k11	a	M	k11	kept	c	M
+f23_C02_01_004	C02	3	e	k26	e	C	k26	kept	e	C
+f23_C02_01_005	C02	4		k21	n	C	k21	kept		M
+f23_C02_01_006	C02	5	r	k08	h	M	k16	moved	u	M
+f23_C02_01_007	C02	6	t	k03	t	C	k03	kept	t	C
+f23_C02_01_008	C02	7	r	k22	d	C	k14	moved	r	C
+f23_C02_01_009	C02	8	a	k18	a	C	k18	kept	a	C
+f23_C02_01_010	C02	9	u	k16	u	M	k16	kept	u	M
+f23_C02_01_011	C02	10	e	k26	e	C	k26	kept	e	C
+f23_C02_01_012	C02	11	n	k21	n	C	k05	moved	n	C
+f23_C02_01_013	C02	12	n	k21	n	C	k05	moved	n	C
+f23_C02_01_014	C02	13	i	k14	r	M	k03	moved	t	C
+f23_C02_01_015	C02	14	t	k03	t	C	k03	kept	t	C
+f23_C02_01_016	C02	15	v	k16	u	M	k16	kept	u	M
+f23_C02_01_017	C02	16	o	k06	e	C	k06	kept	e	C
+f23_C02_01_018	C02	17	r	k07	r	C	k07	kept	r	C
+f23_C02_01_019	C02	18	h	k27	a	M	k08	moved	h	C
+f23_C02_01_020	C02	19	a	k14	r	M	k25	moved	a	C
+f23_C02_01_021	C02	20	l	k01	l	M	k01	kept	l	C
+f23_C02_01_022	C02	21	t	k03	t	C	k03	kept	t	C
+f23_C02_01_023	C02	22	e	k26	e	C	k26	kept	e	C
+f23_C02_01_024	C02	23	n	k20	n	C	k20	kept	n	C
+f23_C02_01_025	C02	24		k04	o	M	k04	kept		M
+f23_C02_01_026	C02	25	d	k22	d	C	k22	kept	d	C
+f23_C02_01_027	C02	26	a	k18	a	C	k18	kept	a	C
+f23_C02_01_028	C02	27	s	k09	s	C	k09	kept	s	C
+f23_C02_01_029	C02	28		k18	a	C	k02	moved	w	C
+f23_C02_01_030	C02	29	w	k10	i	M	k13	moved	i	C
+f23_C02_01_031	C02	30	i	k14	r	M	k14	kept	r	C
+f23_C02_01_032	C02	31	r	k04	o	M	X-aside	aside		U
+f23_C03_01_001	C03	0	s	k09	s	C	k09	kept	s	C
+f23_C03_01_002	C03	1	e	k26	e	C	k26	kept	e	C
+f23_C03_01_003	C03	2	h	k03	t	C	k08	moved	h	C
+f23_C03_01_004	C03	3	d	k22	d	C	k22	kept	d	C
+f23_C03_01_005	C03	4	h	k11	a	M	k08	moved	h	C
+f23_C03_01_006	C03	5	e	k12	e	C	k12	kept	e	C
+f23_C03_01_007	C03	6	v	k14	r	M	k14	kept	r	C
+f23_C03_01_008	C03	7	o	k22	d	C	k22-c	moved	o	M
+f23_C03_01_009	C03	8	a	k27	a	M	k27	kept	a	C
+f23_C03_01_010	C03	9	n	k16	u	M	k16	kept	u	M
+f23_C03_01_011	C03	10	s	k09	s	C	k09	kept	s	C
+f23_C03_01_012	C03	11	s	k27	a	M	k27-b	moved	s	M
+f23_C03_01_013	C03	12	p	k01	l	M	k18-b	moved	p	M
+f23_C03_01_014	C03	13	z	k06	e	C	k06	kept	e	C
+f23_C03_01_015	C03	14	e	k13	k	M	k13	kept	i	C
+f23_C03_01_016	C03	15	i	k23	i	C	k23	kept	i	C
+f23_C03_01_017	C03	16		k05	n	C	k05-b	moved		M
+f23_C03_01_018	C03	17	t	k18	a	C	k23	moved	i	C
+f23_C03_01_019	C03	18	t	k16	u	M	k23	moved	i	C
+f23_C03_01_020	C03	19	u	k16	u	M	k16	kept	u	M
+f23_C03_01_021	C03	20	n	k20	n	C	k20	kept	n	C
+f23_C03_01_022	C03	21	g	k19	g	C	k19	kept	g	C
+f23_C03_01_024	C03	22	e	k06	e	C	k06	kept	e	C
+f23_C03_01_025	C03	23		k17	e	M	X-bad-cut	bad-cut		U
+f23_C03_01_026	C03	24	n	k20	n	C	k20	kept	n	C
+f23_C03_01_027	C03	25	b	k28	b	C	k28	kept	b	C
+f23_C03_01_028	C03	26	e	k26	e	C	k26	kept	e	C
+f23_C03_01_029	C03	27	k	k13	k	M	k13-e	moved	k	C
+f23_C03_01_031	C03	28		k08	h	M	k22-b	moved	o	C
+f23_C03_01_033	C03	29		k23	i	C	k13-d	moved	m	C
+f23_C03_01_035	C03	30	o	k04	o	M	X-aside	aside		U
+f23_C03_01_036	C03	31	m	k04	o	M	X-aside	aside		U
+f23_C04_01_001	C04	0		k25	a	M	k25-c	moved		M
+f23_C04_01_002	C04	1		k02	w	M	k02-b	moved		M
+f23_C04_01_003	C04	2		k27	a	M	k13-d	moved	m	C
+f23_C04_01_004	C04	3		k08	h	M	k08-b	moved		M
+f23_C04_01_005	C04	4	e	k26	e	C	k26	kept	e	C
+f23_C04_01_006	C04	5		k20	n	C	k20	kept	n	C
+f23_C04_01_007	C04	6	n	k20	n	C	k20-b	moved	n	M
+f23_C04_01_008	C04	7	h	k08	h	M	k08	kept	h	C
+f23_C04_01_009	C04	8	a	k25	a	M	k25	kept	a	C
+f23_C04_01_010	C04	9	b	k28	b	C	k28	kept	b	C
+f23_C04_01_012	C04	10	e	k17	e	M	k17	kept	e	M
+f23_C04_01_013	C04	11	n	k05	n	C	k05	kept	n	C
+f23_C04_01_014	C04	12	d	k27	a	M	k22	moved	d	C
+f23_C04_01_015	C04	13	a	k27	a	M	k27	kept	a	C
+f23_C04_01_016	C04	14	s	k09	s	C	k09	kept	s	C
+f23_C04_01_017	C04	15	d	k22	d	C	k22	kept	d	C
+f23_C04_01_018	C04	16	i	k09	s	C	k23	moved	i	C
+f23_C04_01_019	C04	17	e	k12	e	C	k12	kept	e	C
+f23_C04_01_021	C04	18		k03	t	C	k03-b	moved		M
+f23_C04_01_022	C04	19	k	k13	k	M	k13	kept	i	C
+f23_C04_01_023	C04	20	i	k13	k	M	k13	kept	i	C
+f23_C04_01_024	C04	21	n	k20	n	C	k20	kept	n	C
+f23_C04_01_025	C04	22	s	k25	a	M	k09	moved	s	C
+f23_C04_01_026	C04	23		k08	h	M	k22-b	moved	o	C
+f23_C04_01_027	C04	24	o	k04	o	M	X-aside	aside		U
+f23_C05_01_001	C05	0	h	k13	k	M	k08	moved	h	C
+f23_C05_01_002	C05	1	e	k26	e	C	k26	kept	e	C
+f23_C05_01_003	C05	2	f	k24	f	C	k24	kept	f	C
+f23_C05_01_004	C05	3	t	k03	t	C	k03	kept	t	C
+f23_C05_01_005	C05	4	i	k08	h	M	k08	kept	h	C
+f23_C05_01_006	C05	5	g	k19	g	C	k19	kept	g	C
+f23_C05_01_007	C05	6	k	k13	k	M	k13-b	moved	k	M
+f23_C05_01_008	C05	7	r	k07	r	C	k07	kept	r	C
+f23_C05_01_009	C05	8	a	k18	a	C	k18	kept	a	C
+f23_C05_01_010	C05	9	n	k05	n	C	k05	kept	n	C
+f23_C05_01_011	C05	10	c	k27	a	M	k11	moved	c	M
+f23_C05_01_012	C05	11	k	k13	k	M	k13-e	moved	k	C
+f23_C05_01_013	C05	12	w	k02	w	M	k02	kept	w	C
+f23_C05_01_014	C05	13	o	k22	d	C	k22-b	moved	o	C
+f23_C05_01_015	C05	14	r	k07	r	C	k07	kept	r	C
+f23_C05_01_016	C05	15	d	k22	d	C	k22	kept	d	C
+f23_C05_01_017	C05	16	e	k06	e	C	k06	kept	e	C
+f23_C05_01_018	C05	17	n	k20	n	C	k20	kept	n	C
+f23_C05_01_019	C05	18	s	k09	s	C	k09	kept	s	C
+f23_C05_01_020	C05	19	e	k26	e	C	k26	kept	e	C
+f23_C05_01_021	C05	20	i	k13	k	M	k13	kept	i	C
+f23_C05_01_022	C05	21	d	k15	d	C	k22	moved	d	C
+f23_C05_01_023	C05	22	a	k25	a	M	k25	kept	a	C
+f23_C05_01_024	C05	23	s	k09	s	C	k09	kept	s	C
+f23_C06_01_001	C06	0		k03	t	C	k13-d	moved	m	C
+f23_C06_01_002	C06	1		k13	k	M	k27	moved	a	C
+f23_C06_01_003	C06	2		k28	b	C	k28-c	moved		M
+f23_C06_01_004	C06	3	n	k05	n	C	k05	kept	n	C
+f23_C06_01_005	C06	4		k02	w	M	k12	moved	e	C
+f23_C06_01_006	C06	5	i	k10	i	M	k13	moved	i	C
+f23_C06_01_007	C06	6	r	k14	r	M	k14	kept	r	C
+f23_C06_01_008	C06	7	d	k22	d	C	k22	kept	d	C
+f23_C06_01_009	C06	8		k06	e	C	k03	moved	t	C
+f23_C06_01_010	C06	9	i	k02	w	M	k23	moved	i	C
+f23_C06_01_011	C06	10	e	k12	e	C	k12	kept	e	C
+f23_C06_01_012	C06	11	a	k27	a	M	k27	kept	a	C
+f23_C06_01_013	C06	12		k28	b	C	k28-b	moved		M
+f23_C06_01_014	C06	13	d	k22	d	C	k22	kept	d	C
+f23_C06_01_015	C06	14	e	k26	e	C	k26	kept	e	C
+f23_C06_01_016	C06	15	r	k07	r	C	k07	kept	r	C
+f23_C06_01_017	C06	16	n	k05	n	C	k05	kept	n	C
+f23_C06_01_018	C06	17		k01	l	M	k18-b	moved	p	M
+f23_C06_01_019	C06	18	z	k17	e	M	X-bad-cut	bad-cut		U
+f23_C06_01_020	C06	19	w	k02	w	M	k02	kept	w	C
+f23_C06_01_021	C06	20	e	k26	e	C	k26	kept	e	C
+f23_C06_01_022	C06	21	i	k23	i	C	k23	kept	i	C
+f23_C06_01_023	C06	22		k13	k	M	k13-d	moved	m	C
+f23_C06_01_024	C06	23		k13	k	M	k13	kept	i	C
+f23_C06_01_025	C06	24		k18	a	C	k18	kept	a	C
+f23_C06_01_026	C06	25	m	k23	i	C	k08	moved	h	C
+f23_C06_01_027	C06	26	a	k01	l	M	k01	kept	l	C
+f23_C06_01_028	C06	27	h	k17	e	M	X-bad-cut	bad-cut		U
+f23_C06_01_029	C06	28	l	k04	o	M	X-aside	aside		U
+f23_C07_01_001	C07	0	s	k09	s	C	k09	kept	s	C
+f23_C07_01_002	C07	1	c	k11	a	M	k11	kept	c	M
+f23_C07_01_003	C07	2	h	k08	h	M	k08	kept	h	C
+f23_C07_01_004	C07	3	l	k01	l	M	k01	kept	l	C
+f23_C07_01_005	C07	4	a	k27	a	M	k27	kept	a	C
+f23_C07_01_006	C07	5	g	k19	g	C	k19	kept	g	C
+f23_C07_01_007	C07	6	e	k26	e	C	k26	kept	e	C
+f23_C07_01_008	C07	7	n	k03	t	C	k05	moved	n	C
+f23_C07_01_010	C07	8	v	k16	u	M	k16	kept	u	M
+f23_C07_01_011	C07	9	n	k20	n	C	k20	kept	n	C
+f23_C07_01_012	C07	10	d	k15	d	C	k22	moved	d	C
+f23_C07_01_013	C07	11		k23	i	C	k23	kept	i	C
+f23_C07_01_014	C07	12		k23	i	C	k23-b	moved		M
+f23_C07_01_015	C07	13	t	k16	u	M	k16	kept	u	M
+f23_C07_01_016	C07	14	a	k11	a	M	k11	kept	c	M
+f23_C07_01_018	C07	15	u	k08	h	M	k08	kept	h	C
+f23_C07_01_019	C07	16	s	k10	i	M	X-bad-cut	bad-cut		U
+f23_C07_01_020	C07	17	h	k18	a	C	k18-b	moved	p	M
+f23_C07_01_021	C07	18	w	k02	w	M	k02	kept	w	C
+f23_C07_01_022	C07	19	e	k26	e	C	k26	kept	e	C
+f23_C07_01_023	C07	20		k18	a	C	k13	moved	i	C
+f23_C07_01_024	C07	21	i	k13	k	M	k13	kept	i	C
+f23_C07_01_025	C07	22	m	k10	i	M	k13-d	moved	m	C
+f23_C07_01_026	C07	23	a	k18	a	C	k18	kept	a	C
+f23_C07_01_027	C07	24	h	k11	a	M	k11	kept	c	M
+f23_C07_01_028	C07	25	l	k01	l	M	k01	kept	l	C
+f23_C08_01_001	C08	0	p	k18	a	C	k18-c	moved	p	M
+f23_C08_01_002	C08	1	u	k16	u	M	k16	kept	u	M
+f23_C08_01_003	C08	2	r	k14	r	M	k14	kept	r	C
+f23_C08_01_004	C08	3	g	k19	g	C	k19	kept	g	C
+f23_C08_01_005	C08	4	i	k10	i	M	k13	moved	i	C
+f23_C08_01_006	C08	5	e	k06	e	C	k06	kept	e	C
+f23_C08_01_007	C08	6	r	k07	r	C	k07	kept	r	C
+f23_C08_01_008	C08	7	e	k12	e	C	k12	kept	e	C
+f23_C08_01_009	C08	8	n	k20	n	C	k20	kept	n	C
+f23_C08_01_010	C08	9	m	k10	i	M	k13-d	moved	m	C
+f23_C08_01_011	C08	10	u	k16	u	M	k16	kept	u	M
+f23_C08_01_012	C08	11	s	k09	s	C	k09	kept	s	C
+f23_C08_01_013	C08	12	s	k09	s	C	k09	kept	s	C
+f23_C08_01_014	C08	13	e	k26	e	C	k26	kept	e	C
+f23_C08_01_015	C08	14	n	k05	n	C	k05	kept	n	C
+f23_C08_01_016	C08	15	d	k22	d	C	k22	kept	d	C
+f23_C08_01_017	C08	16	e	k26	e	C	k26	kept	e	C
+f23_C08_01_018	C08	17	r	k07	r	C	k07	kept	r	C
+f23_C08_01_019	C08	18	m	k10	i	M	k13-d	moved	m	C
+f23_C08_01_020	C08	19	a	k18	a	C	k18	kept	a	C
+f23_C08_01_021	C08	20	s	k09	s	C	k09	kept	s	C
+f23_C08_01_022	C08	21	s	k09	s	C	k09	kept	s	C
+f23_C08_01_023	C08	22	e	k12	e	C	k12	kept	e	C
+f23_C08_01_024	C08	23	n	k20	n	C	k20	kept	n	C
+f23_C09_01_001	C09	0	d	k22	d	C	k22	kept	d	C
+f23_C09_01_002	C09	1	a	k27	a	M	k27	kept	a	C
+f23_C09_01_003	C09	2	s	k09	s	C	k09	kept	s	C
+f23_C09_01_004	C09	3		k28	b	C	k28-b	moved		M
+f23_C09_01_005	C09	4	s	k09	s	C	k09	kept	s	C
+f23_C09_01_006	C09	5	w	k10	i	M	k13	moved	i	C
+f23_C09_01_007	C09	6		k24	f	C	k06	moved	e	C
+f23_C09_01_008	C09	7	i	k23	i	C	k23	kept	i	C
+f23_C09_01_009	C09	8	r	k14	r	M	k14	kept	r	C
+f23_C09_01_010	C09	9	e	k26	e	C	k26	kept	e	C
+f23_C09_01_011	C09	10	r	k14	r	M	k14	kept	r	C
+f23_C09_01_012	C09	11	f	k24	f	C	k24	kept	f	C
+f23_C09_01_013	C09	12	r	k14	r	M	k14	kept	r	C
+f23_C09_01_014	C09	13	u	k16	u	M	k16	kept	u	M
+f23_C09_01_015	C09	14	c	k11	a	M	k11	kept	c	M
+f23_C09_01_016	C09	15	h	k08	h	M	k08	kept	h	C
+f23_C09_01_018	C09	16	t	k16	u	M	k23	moved	i	C
+f23_C09_01_019	C09	17		k25	a	M	k03	moved	t	C
+f23_C09_01_020	C09	18	e	k26	e	C	k26	kept	e	C
+f23_C09_01_021	C09	19	r	k07	r	C	k07	kept	r	C
+f23_C09_01_022	C09	20	f	k01	l	M	k01	kept	l	C
+f23_C09_01_023	C09	21	e	k06	e	C	k06	kept	e	C
+f23_C09_01_024	C09	22		k08	h	M	k22	moved	d	C
+f23_C09_01_025	C09	23		k03	t	C	k03	kept	t	C
+f23_C09_01_027	C09	24	d	k21	n	C	k21-b	moved	d	M
+f23_C09_01_028	C09	25	i	k23	i	C	k19	moved	g	C
+f23_C09_01_029	C09	26	g	k11	a	M	k11	kept	c	M
+f23_C09_01_031	C09	27	e	k20	n	C	k03	moved	t	C
+f23_C09_01_033	C09	28	d	k02	w	M	k03	moved	t	C
+f23_C10_01_002	C10	0	w	k21	n	C	k02	moved	w	C
+f23_C10_01_003	C10	1	o	k20	n	C	k20-c	moved	o	M
+f23_C10_01_004	C10	2	r	k14	r	M	k14	kept	r	C
+f23_C10_01_005	C10	3	d	k02	w	M	k22	moved	d	C
+f23_C10_01_006	C10	4	e	k26	e	C	k26	kept	e	C
+f23_C10_01_007	C10	5	n	k20	n	C	k20	kept	n	C
+f23_C10_01_008	C10	6	s	k25	a	M	k09	moved	s	C
+f23_C10_01_009	C10	7	e	k26	e	C	k26	kept	e	C
+f23_C10_01_010	C10	8	i	k13	k	M	k13	kept	i	C

@@ -658,3 +658,67 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair and gloss-row crops and sorter tiles; 13 tiles eye-checked against the gloss (R10-WVOV)
 - [n/a] retry: no step has failed that a retry would change
 Verdict: keep going: 2 internal gaps; cheapest next: after the owner's f23 sorter answers, rebuild key.tsv per settled sign and settle the uncertain gloss letters against it (~$1.5)
+
+## f.23 key rebuilt per the owner's settled signs (WVO-APPLY, account 1 for account 3, 6 Oct 2026, 23:41-23:5x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-06-acct3-wvo-apply.md`. Input: the owner's f.23 sorter answers as applied by the account-3
+orchestrator (`sorter/settled_labels.tsv`: 258 tiles, 165 kept, 83 moved, 6 aside, 4 bad-cut; 28 piles -> 48 signs). Files in
+`settled/` (`make_key.py` writes key.tsv, ciphertext.tsv, findings.tsv, compare.tsv; `decode.json` for `tools/decode_key.py`).
+No network, no subagent, no image opened.
+- Method: **no re-alignment.** Each tile keeps the gloss letter the R10-WVOTX alignment put over it (`r9align/tile_letters.tsv`);
+  only its sign label changes, by sid, to the owner's settled sign. Grade per settled sign with the PREREG-R9-WVOALIGN statistic
+  unchanged (C: top letter >= 2 times on >= 2 rows and >= 0.6 of aligned occurrences; else M), so a 1-tile owner pile is M even
+  when the gloss reads it. Aside and bad-cut tiles (10) get no key row. The new key lives in `settled/`, not the folder's top
+  level: the top-level `key.tsv`/`reading.txt` remain NX-WVO174's 174-key negative (indexed in KEY-CROSSMATCH.tsv), as every
+  job since R9 has kept them.
+- Key: 47 settled signs (48 piles less BAD-CUT) -> 24 at C, 23 at M (11 of the M rows have no aligned tile, value blank; 12 tiles).
+  Was 16 C / 12 M pile rows. k28 is now the triangle alone (b, 2/2 aligned, C); the three other shapes the verifier flagged
+  went to k28-b / k28-c (no aligned tile, M blank). k22 splits as R9 saw by eye: k22 = d (13/13, C), k22-b = o (2/2, C).
+  k13 splits into i (k13, C), m (k13-d, 3/3, C), k (k13-e, 2/2, C; k13-b and k13-c single k tiles, M).
+- `python3 tools/decode_key.py ciphers/wvo-hessen-1564/settled --check`:
+  ```
+  ciphertext.tsv: tokens 257: C 202, M 33, U 22
+  reading up to date
+  ```
+  exit 0. (U 22 = 10 aside/bad-cut tiles + 12 tiles on blank-value M signs.)
+- Rule 4 counts on the 257 tiles, before (pile key, R10-WVOTX) -> after (settled key): **H 0 -> 0, C 142 -> 202, S 0 -> 0,
+  M 115 -> 33 valued + 12 blank, I 0 -> 0, ungraded 0 -> 10** (aside/bad-cut), plus 1 clear token (E.L.) both times.
+  Tile level, the verifier's measure (AUDIT 2: a C tile counts only where its value equals the gloss letter over it):
+  **107 -> 159 of 257 (41.6% -> 61.9%)**; C tiles conflicting with the gloss letter 17 -> 22, C tiles with no aligned letter
+  18 -> 21. Of the 159: 105 were already C-agree, 47 were M, 7 were C-conflict. 93 tiles changed value.
+- Depth: not set by this job (rule 4a: the verifier sets it). 61.9% stays under D3's 80%, so the figures do not move D2 on their
+  own; `tools/depth_check.py` exit 0 (17 unique solves, unchanged; this item is N0, not counted). status.json untouched.
+- Findings (`settled/findings.tsv`), listed not smoothed:
+  - settled signs uniting tiles under different gloss letters (11): k01 l:4,a:1,f:1; k03 t:5,i,e,d; k06 e:5,o,z; k08
+    h:8,i:2,c,m,u; **k11 c:3,a:2,u,v,h,g (3/9, M -- the owner's pile does not hold one letter)**; k13 i:7,w:2,e,k; k14 r:8,i,v;
+    k16 u:6,v:2,r,n,t (M); k18-b p,h (M); k19 g:4,i; k23 i:6,t:3. Most minority letters sit in runs where the gloss row and the
+    cipher row are offset by one place (C03 "zeit tungen", C07 "taush zweimahl", C09 end), so they read as alignment slips more
+    than as mixed piles; k11 and k23 (t:3 on one run in C03/C09) are the two that look like more than that.
+  - gloss letters spread over several settled signs (homophones, expected in this design): a over k18, k27, k25 (all C) and
+    k11/k01 strays; e over k26, k12, k06 (C); n over k20, k05 (C); r over k14, k07 (C); i over k13, k23 (C); o over k22-b (C)
+    and singletons; d over k22 (C) and k21-b; k over k13-e and two singletons; p only on two 1-tile owner piles.
+- Uncertain gloss letters against the key (by script, grade M, predictions not settlements; the image was not reopened):
+  C08 "purgieren mussen dermassen" -- every C sign agrees with the gloss as reconciled, so the minims of "mussen" are
+  consistent with u (k16, M). C03 "voans": the key gives v -> r* and n -> u* (both M signs), not a check either way.
+  C09 end: at tile f23_C09_01_022 the gloss reads f and the sign is k01 = l at C; the settled decode runs "e r l e d ... g ...",
+  which would fit "erlediget" (freed, relieved) better than the reconciled "erfed iged". An eye check of that gloss letter
+  against `r10tx/crops/` is needed before the gloss is changed; not done here. C07 "taush": the decode is offset by one place
+  from the gloss over "taush zweimahl", so the key cannot test the s.
+- Not run (brief): the crib-placement test; any new family; a re-alignment with the settled labels.
+
+## Remaining gaps (finish-or-blocker pass, WVO-APPLY, 6 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, two audits); key rebuilt per the owner's settled signs, 24 C / 23 M; 159 of 257 tiles C and agreeing with the gloss letter over them (was 107); decode_key settled/ --check exit 0
+- alignment slips (one-place offsets in C03, C07, C09 leave 22 C tiles in conflict and 21 unaligned; the alignment was made on the mixed piles) - blocker: not-attempted; outside this job's brief (no re-alignment); next: re-run tools/interlinear_align.py with the settled labels under the PREREG-R9-WVOALIGN parameters and its --shuffle control, rebuild settled/key.tsv from it, ~$1
+- uncertain gloss letters (C03 "voans sp", C07 s, C09 end where the key predicts l for f, "erlediget"?; the abbreviation after "kin") - blocker: not-attempted; needs an eye check of the gloss crops against the settled key's predictions; next: one Opus pass over r10tx/crops/ rows C03, C07, C09 with settled/compare.tsv, ~$1.2
+- verifier on the settled key and the revised tile-level figure (159/257) before status.json or depth moves - blocker: not-attempted; a solver may not verify its own key; next: a verifier session with settled/, AUDIT.md AUDIT 2 and the sorter answers, ~$2
+- crib-placement test - blocker: not-attempted; named by the brief as not to run here; next: the crib-placement test against the settled key, ~$2
+
+## Escalation (WVO-APPLY, 6 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174; R9-WVOX concordance FAIL 0/7) and 1069 key (R9-WVOX concordance PASS 8/18)
+- [x] clear-pages: f.23's own interlinear gloss transcribed, reconciled, aligned and verified (R9-WVOALIGN, R10-WVOTX, R10-WVOV)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
+- [x] key-rebuild: key rebuilt per the owner's settled signs (WVO-APPLY, settled/key.tsv, 24 C)
+- [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair and gloss-row crops and sorter tiles; owner sorted all 258 tiles
+- [n/a] retry: no step has failed that a retry would change
+Verdict: keep going: 4 internal gaps; cheapest next: re-align with the settled labels under the PREREG and its shuffle control (~$1), then an eye check of the C03/C07/C09 gloss letters against the key (~$1.2), then a verifier

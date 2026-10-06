@@ -1,0 +1,37 @@
+{
+  "ciphertext": "ciphertext.tsv",
+  "key": "key.tsv",
+  "format": "tsv",
+  "style": "spaced",
+  "include_clear": true,
+  "reading": "reading.txt",
+  "tokens": "reading_tokens.tsv",
+  "header": [
+    "# wvo-hessen-1564 f.23, sorter tile stream relabelled by the owner's settled signs (sorter/settled_labels.tsv,",
+    "# 6 Oct 2026) and decoded with the key rebuilt per settled sign from the leaf's own interlinear gloss (WVO-APPLY,",
+    "# settled/make_key.py; alignment unchanged from R10-WVOTX). A check on the key, not a reading: the period decipherment",
+    "# is the gloss itself (r9align/gloss_reconciled.tsv). Aside/bad-cut tiles are X-*, ungraded. Grades: {grades_sorted}."
+  ],
+  "token_columns": [
+    [
+      "line",
+      "line"
+    ],
+    [
+      "pos",
+      "pos"
+    ],
+    [
+      "sign",
+      "raw"
+    ],
+    [
+      "value",
+      "value"
+    ],
+    [
+      "grade",
+      "grade"
+    ]
+  ]
+}

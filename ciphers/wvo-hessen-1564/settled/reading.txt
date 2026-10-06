@@ -1,0 +1,14 @@
+# wvo-hessen-1564 f.23, sorter tile stream relabelled by the owner's settled signs (sorter/settled_labels.tsv,
+# 6 Oct 2026) and decoded with the key rebuilt per settled sign from the leaf's own interlinear gloss (WVO-APPLY,
+# settled/make_key.py; alignment unchanged from R10-WVOTX). A check on the key, not a reading: the period decipherment
+# is the gloss itself (r9align/gloss_reconciled.tsv). Aside/bad-cut tiles are X-*, ungraded. Grades: C 202, M 33, U 22.
+C01	w i r k o n n e n c [k03-c] c h E.L. i n f r e u n d t l h c h [X-aside]
+C02	e n c e [k21] u t r a u e n n t t u e r h a l t e n [k04] d a s w i r [X-aside]
+C03	s e h d h e r o a u s s p e i i [k05-b] i i u n g e [X-bad-cut] n b e k o m [X-aside] [X-aside]
+C04	[k25-c] [k02-b] m [k08-b] e n n h a b e n d a s d i e [k03-b] i i n s o [X-aside]
+C05	h e f t h g k r a n c k w o r d e n s e i d a s
+C06	m a [k28-c] n e i r d t i e a [k28-b] d e r n p [X-bad-cut] w e i m i a h l [X-bad-cut] [X-aside]
+C07	s c h l a g e n u n d i [k23-b] u c h [X-bad-cut] p w e i i m a c l
+C08	p u r g i e r e n m u s s e n d e r m a s s e n
+C09	d a s [k28-b] s i e i r e r f r u c h i t e r l e d t d g c t t
+C10	w o r d e n s e i
