@@ -154,3 +154,33 @@ the image check stays with REQUEST.md (f.251 and f.159), which is unchanged. Sta
 
 Suggestion (not run): if the f.251 image is ordered, read whether "159" stands at the head or foot of the leaf in Wotton's hand (a
 signature/heading numeral) or is a later archivist's pencil folio note; that one look closes step (1) at grade H/C.
+
+## D4-SP99 (6 Oct 2026, 13:2x-13:4x UTC by date -u): item notes for every item of SP 99/24 and SP 99/25
+
+Job: read the description AND note of every item in both pieces (not by keyword) for a numbered code-name list, a cipher key or a letter
+using numeric agent names. Tool: `tools/discovery_items.py --notes <piece id>` (children listing + one details record per item, 1.6 s apart).
+Pieces: SP 99/24 = C3666170 (105 items, ff. 1-251), SP 99/25 = C3666171 (55 items, ff. 3-131 plus the `f 283` cross-reference).
+Output on disk: `discovery_sp99_24_items.tsv`, `discovery_sp99_25_items.tsv` (reference, date, Discovery id, note, cipher flag, description);
+`d4sp99_candidates.tsv` = flagged or relevant rows. Requests, discovery.nationalarchives.gov.uk: about 164 (2 children listings, 160 details,
+1 failed series search HTTP 500 to look up SP 99/25's id, not retried; then 1 details lookup each of C3666171 and C3666169), one at a time,
+>= 1.6 s apart; no 429/403.
+
+Found:
+1. Only one of 160 items carries a cipher word in its note or description: SP 99/24/251 (C6915573), "Letter in cipher from 159.", note
+   "? Wotton's hand". None in SP 99/25. No item in either piece is described as a numbered list, a key, a table of names or a letter
+   from/to another numeral. "159" appears as a person nowhere else.
+2. **A cross-reference the 5 Oct pass (D2B-WOTT) did not have.** SP 99/24/239 (C6915568), "Dominis on arrival and reception at Rome.",
+   carries the note **"See f 251 below"**. So the catalogue links f.251 to the Dominis papers (ff. 214, 220, 239), not to f.159. The 5 Oct
+   pass read `physicalDescription`/`relatedMaterials` of f.251 and f.159 only, not the note field of the neighbours. Read: f.251 is, by this
+   catalogue's own pointer, filed with the Dominis-at-Rome matter (Dominis reached Rome in 1622); this leans against "159" being a folio
+   pointer to Nys f.159 and toward a numeral designation of a correspondent at Rome (cf. SP 99/24/119 "Wotton to Calvert with enclosure from
+   Rome of Sept. 1621", and Pearsall Smith ii. 169-170 on intelligence from an unnamed Rome correspondent in cipher). Grade I; not settled.
+3. Other notes that are pointers: 99/24/43 "See f 243", 99/24/67 "See ff 245 247", 99/25/3 "See f 283" (f.283 is outside both listings; piece
+   99/26 or later, not read), Pearsall Smith / Ven. Cal. page references on about 8 items. None names a cipher or a key.
+4. Enclosures from Rome/Venice in the pieces (possible host letters for numeric agents, unread, no cipher flag): 99/24/119, 99/25/33
+   ("Enclosure: Copy of letter from Rome"), 99/25/66 (conclave papers), 99/25/84 ("Advice from Venice").
+Not found: any item described as a code-name list or cipher key in SP 99/24-25; any other letter "from <numeral>"; any note beyond the one
+above tying f.251 to a named sender. Items are `digitised: false` per the 5 Oct pass, so no image was looked at. Search result only; the
+status stays `open` and no novelty class is claimed. Counts: 0 H, 0 C, 0 S, 2 I.
+
+Suggestion (not run): when REQUEST.md's f.251 image is ordered, ask for f.239 as well (the "See f 251 below" partner).
