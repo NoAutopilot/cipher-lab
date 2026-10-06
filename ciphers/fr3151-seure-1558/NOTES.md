@@ -869,3 +869,51 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gap; cheapest next: test Henri II-era French keys (Tomokiyo, Lasry GL) against the reconciled f81R reads, ~$3
+
+## R9-SEURE: Henri II-era known key (Danzay 1557) vs the reconciled f81R reads (6 Oct 2026, 06:06-06:1x UTC by date -u, account 1, LANE-RUN9-account-1)
+Named next step of R8-SEURE (known-keys). Brief `.claude/briefs/runs/2026-10-06-account1-run9-jobs.md` ### R9-SEURE. Prereg
+`keytest/PREREG-R9.md` (commit fd7b23c74, pushed before any decode or score). Script `keytest/key_fit.py` (`--check` OK), output
+`keytest/result_r9.json`. 0 network requests, 0 subagent calls; images viewed by this worker: Tomokiyo's `danzay_1557.png` and one
+f81R half-line crop (`images/kp/f81R_L02_s1.jpg`), to fix the label map.
+
+**Candidate keys on disk.** Only one Henri II-era French symbol key is transcribed in this repository: Danzay 1557 (BnF fr.20140,
+Tomokiyo's reconstruction, `ciphers/fr20140-danzay-1557/key.tsv`). The other Henri II-era keys on Tomokiyo's GL page (Marillac 1550,
+La Guiche 1551, Babou) are images that are not on disk; the two Lasry GL tables on disk are fr.3071 (1530s) and fr.15564 (1580s),
+both the wrong era. Bourdeau's `guiche1551` (fr.3151 no.22, same recueil) is not in sources/cyphersolver.
+**Design note (observation, not scored):** Seure uses numerals >= 12 as word codes (70, 100, 13, 17, 30, 40 ...) and plain digits as
+signs; Danzay's key has no numeral word codes, and only its digit-like glyphs (2, 4, 6, 7, 8, 9, 3) and a few symbols resemble
+Seure's. The map (24 labels -> 19 glyph codes, PREREG table) covers 230/461 R1 signs.
+
+| run (shuffled-key null, 1000 draws) | F (fr16 trigram mean) | trigrams | null p95 | pass |
+|---|---|---|---|---|
+| control: Danzay text, true key on the same 19 codes, err 0 (3 seeds) | -1.074 | 8 | -1.069 / -0.993 / -1.021 | 0/3 |
+| control, err 0.095 | -1.25 to -1.27 | 6-8 | -1.05 to -1.10 | 0/3 |
+| control, err 0.242 | -1.52 to -2.29 | 3-11 | -0.98 to -1.15 | 0/3 |
+| target R1 | -1.465 | 64 | -1.439 (mean -1.772) | no |
+| target R2 | -1.435 | 63 | -1.469 (mean -1.770) | nominal yes |
+
+**Result: non-test (PREREG-R9 power condition failed).** The 19 codes the map can reach cover only 27% of Danzay's own ciphertext, so
+even the true key on its own text gives 8 trigrams and does not beat its shuffled-key null at zero error. R2's nominal pass over its
+null (by 0.034) therefore licenses nothing. Read by eye, its runs are not French: "m" (Seure '#') is the most frequent output, and
+the runs include "dgmm", "iiphhlesym" and "hmpim" (M). No reading claimed, no grades changed, key.tsv and decode not run. Per the prereg,
+this is not a negative for the Danzay key, and not for the key family, under any map.
+Not found: any Henri II-era key other than Danzay's transcribed on disk; any French run in the f81R reads under Danzay's key with this map.
+Lesson (one line): a known-key fit gated on n-grams needs the map to cover enough of the control's own text. Check the control's
+covered trigram count before running the target, or use a coverage-free statistic such as unigram fit over the mapped signs.
+
+## Remaining gaps (R9-SEURE, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE); Danzay 1557 key under one shape map is a non-test (R9-SEURE, keytest/result_r9.json); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; Danzay 1557 key test is a non-test (power control 0/3, R9-SEURE); next: fetch Bourdeau's guiche1551 key (fr.3151 no.22, same recueil, MIT) and test it with a coverage-checked statistic (unigram fit over mapped signs, shuffled-key null, Danzay-style own-text power control first), ~$2.5
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (R9-SEURE, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: Danzay 1557 tried, non-test (R9-SEURE, power control 0/3 at 27% coverage); La Guiche 1551 (Bourdeau guiche1551, same recueil) untried
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gap; cheapest next: fetch Bourdeau's guiche1551 key and test it against R1/R2 with a coverage-checked statistic and own-text power control first, ~$2.5
