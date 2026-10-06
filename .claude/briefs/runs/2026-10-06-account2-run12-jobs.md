@@ -223,3 +223,23 @@ error in ciphertext_4616.tsv, a key-sheet value conflict, or a misread crop? Ope
 decipherment gives the H, rule 4 witness record). Record per row in AUDIT.md (dated section); recompute the R12-LVN16 control on the
 corrected H rows and say whether its PASS (0.919/0.924 vs 0.90) still holds. Rows you find mis-transcribed: list them as corrections for
 a solver (do not edit ciphertext or key yourself).
+
+## Wave 5 (spawned 12:4x UTC 6 Oct). Wave 4 + CATOK23 done (all D); workers ledgered 45.12, orchestrator ~5.8. Final two jobs, sized
+to the remaining cap.
+
+### R12-LVN16C -- lodewijk-van-nassau-1573-74, apply R12-LVNV2's six 4616 H-row transcription corrections (cap 1.8, box 30 min)
+AUDIT.md "R12-LVNV2" lists six ciphertext_4616.tsv H rows that the 300-dpi image shows were 150-dpi transcription errors (40, 39, 81, 31, 20,
+81). Apply exactly those six as corrections with a per-row note citing R12-LVNV2 and the crop, regenerate (decode_4616_full.json), decode
+--check exit 0, recount 4616 and the four-letter share, update NOTES.md gaps item 3 and run gaps_check. Do not touch AUDIT.md (a verifier
+carries the change in later; flag it in ROOM). Nothing else.
+
+### R12-RJM9501 -- rah-juan-manuel-1521, R9501 f.34 two blind passes and trial decode with the published key (cap 4.5, box 60 min)
+Intake gate: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Licensed by R12-RJMV (AUDIT.md, 90049a25c): a trial decode of R9501 with Tomokiyo's published alphabet + nomenclator, grades S only for
+A Z R 4 F, M otherwise. Remaining gaps item "R9501 passes and key test (job 2b)". Crops for f.34's letter-cipher lines (paste the command),
+two blind Sonnet passes (shared inventory as R12-RJM42 used) + reconciliation; units 3 at ~1.5 + floor: if the reconciliation would cross
+80% of cap, stop after the passes and hand it on. Decode with the folder's decode route (decode_key.py / decode.json) under key_tomokiyo_alpha.tsv
++ the nomenclator, per-token grades per the verifier's rule, `--check` exit 0, and `tools/judge_plaintext.py` on the reading with the
+era-matched Spanish corpus (es1600 is 1598-1621; say which corpus and why, unknown reliability if none is era-matched) pasted into NOTES.md
+with the shuffled-null controls. Key is `published` (Tomokiyo, credited); the period decipherment is catalogued at Salazar A.23 ff.37-38,
+not online. Report what reads and what does not; do not classify novelty.
