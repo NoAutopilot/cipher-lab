@@ -1,0 +1,52 @@
+line	position	sign	conf	note
+f50v_L01	1	mm	H	wide five-minim m
+f50v_L01	3	q2	H	2 with small loop
+f50v_L01	14	lb	H	looped lb present
+f50v_L02	1	eps	M	curled a-like, epsilon lean
+f50v_L02	11	y	H	y with bar
+f50v_L03	6	m	M	three-minim, narrow
+f50v_L03	9	venus	M	q with straight tail
+f50v_L03	12	q2	H	2 with loop
+f50v_L03	14	m	M	three-minim, narrow
+f50v_L03	19	P	M	P with crossed stem
+f50v_L04	1	venus	H	q straight tail
+f50v_L04	11	xs	H	x with bar
+f50v_L04	13	9	H	cursive g present
+f50v_L04	19	lb	H	looped lb present
+f50v_L05	7	H	M	double-stroke looped H form
+f50v_L06	11	-	H	clear word "a quoy"
+f50v_L07	1	mm	H	wide five-minim
+f50v_L07	2	lb	H	looped lb present
+f50v_L07	5	venus	M	q straight tail, not g
+f50v_L07	6	H	M	H-with-loop form
+f50v_L07	7	y	H	y with bar
+f50v_L07	15	l	M	big looped l flourish
+f50v_L07	18	xc	M	curly x
+f50v_L07	20	lb	H	looped lb present
+f50v_L08	1	P	M	P with crossed stem
+f50v_L08	20	=mm	M	barred thick m
+f50v_L09	4	m	M	small three-minim m
+f50v_L09	5	z	H	z with tail
+f50v_L09	6	xc	H	curly x
+f50v_L09	7	P	M	P with crossed stem
+f50v_L09	8	xs	M	x with bars
+f50v_L09	12	H	M	double looped form
+f50v_L09	13	m	M	wide, more than u
+f50v_L09	18	venus	H	q straight tail
+f50v_L09	21	lb	H	looped lb present
+f50v_L09	22	m	M	small three-minim
+f50v_L09	23	hz	M	h with looped z-tail
+f50v_L10	6	m	M	small three-minim
+f50v_L10	7	8s	H	8 with stroke
+f50v_L10	22	P	M	loop top, straight crossed stem
+f50v_L11	3	venus	M	q with tail
+f50v_L11	7	y	M	y-with-bar shape
+f50v_L11	11	m	M	small three-minim
+f50v_L11	14	n	M	arch with long stem
+f50v_L11	18	8s	H	8 with stroke
+f50v_L12	11	venus	H	q straight tail
+f50v_L12	14	q2	M	2 after xc
+f50v_L12	15	t	M	t before theta
+f50v_L12	17	-	M	one glyph only, A slot
+f50v_L12	18	mm	M	single wide m glyph
+f50v_L12	19	10	H	i-o numeral present

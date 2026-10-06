@@ -362,12 +362,12 @@ transcribed with the same 70-84% agreement), and the transcription is unreconcil
 Where not found: no plaintext of f.50 used or consulted; Tomokiyo's sibling decipherments not opened.
 Requests: gallica.bnf.fr 2 (IIIF native images); cryptiana.web.fc2.com 1 (key PNG).
 
-## Remaining gaps (R7A-BAL103, 6 Oct 2026)
+### Gaps as of R7A-BAL103, 6 Oct 2026 (superseded by R7B-BAL103R below)
 Read so far: unmeasured as a reading -- 402 of 640 draft tokens agree across two blind passes and key to one letter, but the judge FAILs (fr17 -1.595 vs real_p05 -0.901) and no stretch has been verified
 - f.50r-v transcription disagreements (157 columns) - blocker: not-attempted; the two blind passes are aligned (tx/rec_r, tx/rec_v disagreements.tsv + uncertain.tsv) but not settled from the crops; next: one reconciliation pass over the listed columns per page with the crops, choosing among the passes' signs with the key and French sense as tie-breaker, then decode_key --check and re-judge, ~$3
 - Tomokiyo table calibration - blocker: not-attempted; the table's sign names and the ambiguous 9 (i/r/s) and 3 (h/x) were not tested on a deciphered sibling; next: transcribe 3-4 lines of f.171 (or f.189) with its period decipherment from Gallica btv1b9001389d and check the table cell by cell, ~$2
 
-## Escalation (R7A-BAL103, 6 Oct 2026)
+### Escalation as of R7A-BAL103, 6 Oct 2026 (superseded by R7B-BAL103R below)
 - [ ] siblings: f.171, f.189, f.200, f.230 carry period decipherments (Tomokiyo; DECODE R2743-R2746); planned: calibrate the table on a few lines of one of them
 - [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
 - [x] known-keys: Tomokiyo's 1644 table applied to the two-pass draft of f.50r-v (R7A-BAL103, 6 Oct 2026); judge fr17 FAIL -1.595, above null
@@ -376,3 +376,53 @@ Read so far: unmeasured as a reading -- 402 of 640 draft tokens agree across two
 - [ ] image-check: crops cut and two blind passes done; planned: settle the 157 disagreement columns from the crops
 - [ ] retry: planned after the reconciliation (decode_key --check, re-judge with fr17)
 Verdict: keep going: 2 internal gaps; cheapest next: reconcile the 157 disagreement columns from the crops and re-decode, ~$3
+
+## Reconciliation from the crops and re-decode (R7B-BAL103R, 6 Oct 2026)
+
+Worker R7B-BAL103R (account 1, LANE LANE-RUN7-account-1), 02:06-02:1x UTC 6 Oct 2026 by `date -u`. Key source unchanged: published
+(Tomokiyo 1644 table). Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **Stale alignment found and fixed.** `tx/f50r_passB_long.tsv` had been generated *before* the L11/L12 relabel recorded in
+  `tx/f50r_passB.tsv`, so R7A's f.50r alignment compared A's L11 with B's L12 and vice versa (38 of the 157 columns). Regenerated with
+  `tx/prep_passes.py` into `tx/r7b/f50r_passB_long.tsv` (the other three long files regenerate byte-identical) and re-aligned with
+  `tools/reconcile_passes.py` into `tx/r7b/rec_r`, `tx/r7b/rec_v`: f.50r **77.7%** (299/385; was 70.2%), f.50v 83.9% (unchanged).
+  Remaining: 126 disagreement columns + 16 agreed-but-flagged = 142 to settle.
+- **Settlement from the crops:** three Sonnet calls (f.50r L01-10, L11-20, f.50v), crops and key sheet only, told to decide from the
+  ink alone without decoding or French sense (so the judge below is not fed by the settler's guesses at plaintext). Tasks
+  `tx/r7b/task_*.txt`, answers `tx/r7b/settle_{r1,r2,v}.tsv` (line, draft column, sign, H/M, note). **36 settled H, 103 settled M**
+  (r1 11 H / 36 M; r2 4 H / 40 M -- "weak leans"; v 22 H / 29 M), 3 columns dropped as "-". `tx/r7b/apply_settle.py` writes
+  `ciphertext.tsv`; every settled row keeps the draft column and both pass readings in `alt` (no silent repair); pass files untouched.
+  The settler could not zoom (no PIL in the container), and named its weakest calls: the ornate double-loop sign (f.50r L03/12,
+  L05/13 read tt), L08/21 (xbar), the H/xs, P/g+, m/mm calls on f.50v.
+- **Re-decode** (`tools/decode_key.py . --check`: reading up to date). Tokens, before -> after: **H 402 -> 451, M 228 -> 165,
+  U 10 -> 14** (640 -> 630 tokens; C, S, I 0). H still means "two passes agree, or the settler read it H, and the published key gives
+  one letter"; with the table uncalibrated every H is conditional (rule 4). U now: 2, 81, =18, =19, =3 (x2), =mm, =n, =o, =y, q (x3)
+  -- signs the passes or settler wrote that the table lacks.
+- **Judge** (`tools/judge_plaintext.py specs/baluze103-letellier-marca-1644.json --file tx/r7b/judge_after.txt`; input built by
+  `tx/r7b/judge_input.py`: first value of each a|b, U dropped -- the same rule reproduces R7A's -1.595 exactly from the old tokens,
+  `tx/r7b/judge_before.txt`), corpus fr17:
+
+      FAIL language: score=-1.554, null_p99=-1.872, real_p05=-0.852, real_median=-0.783, mode=both, N=655
+      FAIL - baluze103-letellier-marca-1644 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+  Before -1.595 / after -1.554: the settlement moved the score by 0.04 against a 0.70 gap to real_p05. Reconciling the transcription
+  is not what holds this draft back. Two remaining candidates, untested here: (a) the ambiguous 9 (i|r|s, 42 tokens) and 3 (h|x)
+  forced to their first value; (b) the table itself (sign naming against Tomokiyo's drawing, cell values) never calibrated on a
+  deciphered sibling. Neither is a negative on the key: no matched control was run.
+- **Sibling calibration: not run** (brief: only if >= 40% of cap remained; $3.65 of $5 spent after the settlement).
+Where not found: no plaintext of f.50 used; sibling decipherments not opened. Requests: none (all from disk).
+
+## Remaining gaps (R7B-BAL103R, 6 Oct 2026)
+Read so far: unmeasured as a reading -- 451 of 630 draft tokens graded H (conditional), judge fr17 FAIL -1.554 vs real_p05 -0.852; no stretch verified
+- Tomokiyo table calibration - blocker: not-attempted; the table's sign names, cell values and the ambiguous 9 (i/r/s) and 3 (h/x) were never tested on a deciphered sibling, and the crop settlement (R7B-BAL103R) moved the judge only 0.04, so the table is now the main suspect; next: transcribe 3-4 lines of f.171 (or f.189) with its period decipherment from Gallica btv1b9001389d, pre-register the cell-by-cell test, check the table, ~$3
+- 103 settled-M columns (weak by-eye leans, no zoom) - blocker: not-attempted; worth doing only once the table is calibrated; next: only after calibration, a zoomed re-look at the columns whose two candidate signs decode to different letters, ~$2
+
+## Escalation (R7B-BAL103R, 6 Oct 2026)
+- [ ] siblings: f.171, f.189, f.200, f.230 carry period decipherments (Tomokiyo; DECODE R2743-R2746); planned: calibrate the table on a few lines of one of them (next job)
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's 1644 table applied to the two-pass draft (R7A-BAL103) and to the crop-settled text (R7B-BAL103R, 6 Oct 2026); judge fr17 FAIL -1.595 then -1.554
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: a published key exists; a rebuild is considered only if the sibling calibration fails
+- [x] image-check: 142 columns settled from the crops (R7B-BAL103R, 6 Oct 2026): 36 H, 103 M, 3 dropped
+- [x] retry: decode_key --check and fr17 re-judge after settlement (R7B-BAL103R, 6 Oct 2026)
+Verdict: keep going: 2 internal gaps; cheapest next: calibrate Tomokiyo's table on 3-4 lines of a deciphered sibling (f.171 or f.189), pre-registered, ~$3
