@@ -183,3 +183,34 @@ or the convention the PREREG names), enciphered with the same design, solved by 
 control meets the gate (family_run.py pattern; add a family module with an offline test if family_run cannot express it, no private copy).
 Shuffled-target run beside the target. HYPOTHESES.md rows; CPU only. If the control cannot read at this budget, log "untestable by this
 instrument at this N" and stop.
+
+## Wave 4 (spawned 18:1x UTC from wave-3 results). Intake gate output (18:1x UTC) pasted per job.
+
+### R15-LAGHOM -- la-garde-1577: homophonic solve through family_run.py at noise 0.23, matched control first (Opus; cap 2.5, box 50 min)
+Intake: `la-garde-1577: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+R15-LAGMI (Z_MI, power PASS on fresh seeds) favours homophonic over running key as a design preference (0 tokens read). Next named step:
+`tools/family_run.py` --family homophonic on the base codes (N=229, K=26, fr16 corpus; profile=target as the HYPOTHESES rows used), with the
+control's injected error bracketing the target's measured ~23% (rule 3: run the control at 0.23 at least; add 0.10 for the curve), gate and
+seeds pre-registered (PREREG committed first), control first, target only if the control mean meets the gate, shuffled-target run beside it.
+If the control is below gate: CONTROL BELOW GATE, "untestable by this family at this N/error", stop. Judge any target decode with
+tools/judge_plaintext.py on the spec (and score the shuffled decode through the same judge: CLAUDE.md rule 3, ARM-C1). HYPOTHESES.md rows.
+CPU only. No reading is claimed from a statistic.
+
+### R15-SUR758 -- na-suriname-map-1781: per-token image check of 0758 's' and 'i j' (Opus; cap 2, box 40 min)
+Intake: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+R15-SURALIAS: 0758 blanket s=[sh-lig] FAILed tolerance (6/9; scan A 0.947 -> 0.936); 0758 K (1) and 'i j' (4) were non-tests. Next named step:
+per-token image check of the 0758 s tokens (9) and 'i j' tokens (4) on the native crops already on disk (crop per token with neighbours, paste
+the command; one blind look per token batch, your own eye or one subagent call on crop paths only), each labelled s / [sh-lig] / other and
+'i j' as one sign / two. PREREG first (labels, the re-score rule: only per-token labels from the image, then R14-SURDP's DP with its
+shuffled-gloss control). Report before/after per scan. Pass-file changes via the existing scripts; key.tsv only if PREREG + gate allow, with
+--check and a ROOM verifier flag. Do not start the 2039 legend k re-read.
+
+### R15-CLIN3853 -- pro3055-clinton-1779: 3853 f.406 cipher against the printed f.381 extract on the 1778 key (Opus; cap 5, box 70 min)
+Intake: `pro3055-clinton-1779: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md Remaining gaps line "3853 cipher, f.406" (R15-CLINGAP): fetch the frame by the image-uab.canadiana.ca route recorded in
+images/h1649/manifest.json (about Image 1056; confirm the page label before cutting; one image per request, >= 1.5 s apart), cut column crops
+with the folder's passes/cut_cipher_cols.py or tools/iiif_lines.py --image (paste the command), PREREG the key-consistency gate first (as
+R10-CLIN3868/R11-CLIN2380 did: cells matching the printed f.381 text on the 1778 key vs shuffled-plaintext p95). Units (Usage 6): 2 blind
+passes per page + 1 reconciliation at ~1.5 each; stop before starting a unit that would cross 80% of cap or box. Report where f.406 carries text
+beyond the f.381 extract (grade H only from a period decipherment, else S with the gate), --check if a reading file is written, flag a verifier
+in ROOM if any text is added. Reuse check_3868.py / the 2380 scripts; do not rewrite them.
