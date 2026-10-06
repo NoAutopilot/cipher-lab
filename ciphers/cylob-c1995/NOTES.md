@@ -165,3 +165,42 @@ Run for LANE-RUN12-account-4, 6 Oct 2026, 15:45-15:50 UTC. No solve attempted.
   (grid-vs-cipher structural check) with a matched control, ~$2.
 
 Requests: cloud.rotering-net.de 2 (first without -L, 307; one follow-up); scienceblogs.de 1. All HTTP 200/307, no blocks.
+
+## Spec cheap test 3: fixed discrete alphabet structural check, with matched control (R12D-CYL3, 6 Oct 2026)
+
+Run for LANE-RUN12-account-4, 6 Oct 2026, 16:05-16:12 UTC (date -u). Disk only, no requests. Pre-registered in
+`PREREG-test3.md` (pushed 0b48ed25e before the scored run); script `structural_test3.py` (seed 20261006, `--check` exits 1 if
+`test3_results.json` is stale). Conditional on Rotering's 2015 partition into signs (rule 2; one page eye-checked by R12D-CYLOB).
+
+Scored sequence: p.1 (once) + pp.5-16, header then grid rows: **N=140, K=16** (A B F J M N O P Q R S T U V W X). p.20 kept apart.
+
+| statistic | target | English, fixed 26->16 map (300 seeds) mean [p05-p95] | uniform K=16 null p95 | order-shuffle null p95 | p (target vs null) |
+|---|---|---|---|---|---|
+| S1 index of coincidence | 0.0696 | 0.1008 [0.0804-0.1277] | 0.0667 | (invariant) | 0.0065 vs uniform |
+| S2 repeated within-page trigram tokens | 21 | 24.7 [12-43] | 8 | 10 | <0.0005 vs shuffle |
+| S3 repeated 3-sign grid rows | 4 | 3.9 [0-9] | 2 | 2 | 0.028 vs shuffle |
+| bigram-repeat tokens (descriptive) | 70 | 86.1 [73-98] | 60 | 67 | 0.018 vs shuffle |
+| new types in 2nd half (descriptive) | 1 | 1.0 [0-3] | 1 | -- | -- |
+
+Gates (as pre-registered): **G0 power** S1 1.00 (pass), S2 0.677 (**fail**, below 0.80: at N=140 the English control beats its
+own shuffle p95 on S2 only 68% of the time). **G1** alphabet skew: PASS (0.0696 > 0.0667). **G2** sequential structure: the
+target's S2 (21) is far above the shuffle p95 (10) and S3 (4) above its p95 (2), but because G0 failed for S2 the pre-registered
+rule makes G2 a non-test for licensing the verdict -- reported, not used. Neither S2 nor S3 is above the English p99.
+
+Reading (cryptanalytic, no H/C tokens; nothing read):
+- The inventory saturates: all 16 standard signs appear in the first half, 1 new type in the second -- a fixed discrete
+  alphabet under Rotering's partition, not continuously varying patterns.
+- It is skewed above a flat draw (G1), but **flatter than every one of the 300 English seeds** through a fixed 16-sign map
+  (target IC 0.0696 below the English p05 0.0804; 100% of seeds >= target), and its bigram repetition (70) sits below the
+  English p05 (73) while its trigram and whole-row repetition (21, 4) sit at the English median. Shape: little bigram texture,
+  but whole units recurring (e.g. rows `TAP FJN` on pp.6 and 16) -- more like repeated blocks over a near-flat alphabet than
+  like English letters through a simple many-to-one table. Not a refutation of a language cipher (a homophonic or
+  nomenclator design, or another language, would be flatter); English through a fixed 16-sign map is disfavoured at this N.
+- p.20 (descriptive): 25 tokens, 12 types, `LECKAI DJIEDG FEHGFB AEDCBA` + trailer G; its last row runs A E D C B A and the
+  rows share runs (E D, F E/F B, D C B A), table-like rather than text-like. Not scored.
+
+Spec verdict word: G1 pass, G2 non-test (G0 failed) -> "skewed fixed alphabet; order structure beyond shuffle observed but
+not licensed at this N". Test 4 (English IC/frequency against this alphabet) is **not** licensed by this test's own gate, and
+S1 already places the target below the English-through-16-signs control. One-line suggestion (not run): a design test on the
+repeat structure itself -- positional placement of repeated rows/headers across pages and the p.20 table against a matched
+synthetic grid -- before any language test, ~$2.

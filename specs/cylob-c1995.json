@@ -9,7 +9,12 @@
  ],
  "primary_sources": {
   "post": "https://scienceblogs.de/klausis-krypto-kolumne/2017/02/08/the-top-50-unsolved-encrypted-messages-50-the-cylob-cryptogram/",
-  "fetched_to": ["sources/schmeh/posts/50-cylob.html", "sources/schmeh/posts/50-cylob.txt", "sources/schmeh/posts/50-cylob-all.html", "sources/schmeh/posts/50-cylob-all.txt"],
+  "fetched_to": [
+   "sources/schmeh/posts/50-cylob.html",
+   "sources/schmeh/posts/50-cylob.txt",
+   "sources/schmeh/posts/50-cylob-all.html",
+   "sources/schmeh/posts/50-cylob-all.txt"
+  ],
   "fetched_25_Sept_2026": true,
   "german_2015_article_url": "https://scienceblogs.de/klausis-krypto-kolumne/2015/05/01/cylob-manuskript-ein-ungeloestes-raetsel/",
   "german_2015_article_fetched": false,
@@ -66,6 +71,50 @@
    "action": "Fetched Cipherbrain post 50 (2 requests to scienceblogs.de, >=1.5s apart, browser UA, both HTTP 200: the default paginated render and the ?all=1 combined render for the full article + all 7 comments in one extra request) to sources/schmeh/posts/50-cylob.html/.txt and 50-cylob-all.html/.txt. Updated ciphertext/alphabet/constraints/images fields above from the primary source. Images (20 grid pages) not fetched: only 11 are embedded in the post at all, and the brief scopes this test to the post fetch only.",
    "corrections_from_survey": "form is 'rectangles with geometrical patterns, no letters or numbers' not a confirmed discrete alphabet; the '24 symbols/Torsten' claim not found in this post; provenance (Dillon's Arts bookshop, later Waterstone's, central London) confirmed; new lead -- a partial-transcription link at cloud.rotering-net.de, not yet fetched (out of host scope this pass)",
    "control": "not applicable -- a fetch, not a cryptanalytic test, per brief"
+  },
+  "3": {
+   "date": "6 Oct 2026",
+   "worker": "R12D-CYL3 (LANE-RUN12-account-4, Opus)",
+   "prereg": "ciphers/cylob-c1995/PREREG-test3.md (commit 0b48ed25e, before the run)",
+   "script": "ciphers/cylob-c1995/structural_test3.py --check; results ciphers/cylob-c1995/test3_results.json",
+   "data": "Rotering 2015 transcription, p.1 once + pp.5-16, N=140, K=16; p.20 descriptive only",
+   "target": {
+    "S1_ic": 0.0696,
+    "S2_rep_tri": 21,
+    "S3_rep_rows": 4,
+    "bigram_rep": 70,
+    "types": 16,
+    "new_types_2nd_half": 1
+   },
+   "control_english_fixed_map_mean": {
+    "S1_ic": 0.1008,
+    "S2_rep_tri": 24.7367,
+    "S3_rep_rows": 3.9133,
+    "bigram_rep": 86.0867,
+    "new_types_2nd_half": 1.0367
+   },
+   "control_english_S1_p05": 0.0804,
+   "uniform_null_S1_p95": 0.0667,
+   "shuffle_null_p95": {
+    "S2_rep_tri": 10,
+    "S3_rep_rows": 2,
+    "bigram_rep": 67
+   },
+   "G0_power": {
+    "S1_frac": 1.0,
+    "S2_frac": 0.677
+   },
+   "gates": {
+    "G0_S1": true,
+    "G0_S2": false,
+    "G1": true,
+    "G2": true,
+    "S3_above_shuffle_p95": true,
+    "S2_above_english_p99": false,
+    "S3_above_english_p99": false
+   },
+   "verdict": "skewed fixed alphabet (G1 PASS, IC 0.0696 vs uniform p95 0.0667); repeated trigrams/rows far above shuffle (21 vs p95 10; 4 vs 2) but G0 power for S2 failed (0.677<0.80), so G2 is a non-test; target IC below every English-through-16-sign-map seed (p05 0.0804). Test 4 not licensed by this gate.",
+   "next": "design test on the repeat structure (repeated rows/headers by page position; p.20 table) vs a matched synthetic grid, ~$2; not run"
   }
  },
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block is still a deliberately unconstrained placeholder (letters_min=1, letters_max=100000, no language) since no alphabet or symbol count is confirmed from a primary source and the form itself may not be a language cipher (see constraints.form).",

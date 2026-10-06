@@ -1,0 +1,141 @@
+{
+ "N": 140,
+ "K": 16,
+ "signs": "ABFJMNOPQRSTUVWX",
+ "seed": 20261006,
+ "target": {
+  "S1_ic": 0.0696,
+  "S2_rep_tri": 21,
+  "S3_rep_rows": 4,
+  "bigram_rep": 70,
+  "types": 16,
+  "new_types_2nd_half": 1
+ },
+ "english_fixed_map": {
+  "S1_ic": {
+   "mean": 0.1008,
+   "p05": 0.0804,
+   "p50": 0.0988,
+   "p95": 0.1277,
+   "p99": 0.1456
+  },
+  "S2_rep_tri": {
+   "mean": 24.7367,
+   "p05": 12,
+   "p50": 24,
+   "p95": 43,
+   "p99": 52
+  },
+  "S3_rep_rows": {
+   "mean": 3.9133,
+   "p05": 0,
+   "p50": 4,
+   "p95": 9,
+   "p99": 13
+  },
+  "bigram_rep": {
+   "mean": 86.0867,
+   "p05": 73,
+   "p50": 86,
+   "p95": 98,
+   "p99": 102
+  },
+  "new_types_2nd_half": {
+   "mean": 1.0367,
+   "p05": 0,
+   "p50": 1,
+   "p95": 3,
+   "p99": 4
+  }
+ },
+ "uniform_null": {
+  "S1_ic": {
+   "mean": 0.0624,
+   "p05": 0.059,
+   "p50": 0.0621,
+   "p95": 0.0667,
+   "p99": 0.0692
+  },
+  "S2_rep_tri": {
+   "mean": 3.0705,
+   "p05": 0,
+   "p50": 2,
+   "p95": 8,
+   "p99": 10
+  },
+  "S3_rep_rows": {
+   "mean": 0.434,
+   "p05": 0,
+   "p50": 0,
+   "p95": 2,
+   "p99": 4
+  },
+  "bigram_rep": {
+   "mean": 49.2915,
+   "p05": 38,
+   "p50": 50,
+   "p95": 60,
+   "p99": 65
+  },
+  "new_types_2nd_half": {
+   "mean": 0.1725,
+   "p05": 0,
+   "p50": 0,
+   "p95": 1,
+   "p99": 2
+  }
+ },
+ "shuffle_null": {
+  "S2_rep_tri": {
+   "mean": 4.1375,
+   "p05": 0,
+   "p50": 4,
+   "p95": 10,
+   "p99": 12
+  },
+  "S3_rep_rows": {
+   "mean": 0.548,
+   "p05": 0,
+   "p50": 0,
+   "p95": 2,
+   "p99": 4
+  },
+  "bigram_rep": {
+   "mean": 57.234,
+   "p05": 47,
+   "p50": 57,
+   "p95": 67,
+   "p99": 71
+  }
+ },
+ "G0_power": {
+  "S1_frac": 1.0,
+  "S2_frac": 0.677
+ },
+ "p_shuffle": {
+  "S2_rep_tri": 0.0,
+  "S3_rep_rows": 0.028,
+  "bigram_rep": 0.018
+ },
+ "p_uniform_S1": 0.0065,
+ "frac_english_ge_target": {
+  "S1_ic": 1.0,
+  "S2_rep_tri": 0.63,
+  "S3_rep_rows": 0.55,
+  "bigram_rep": 0.98
+ },
+ "p20_descriptive": {
+  "tokens": 25,
+  "types": 12,
+  "seq": "LECKAIDJIEDGFEHGFBAEDCBAG"
+ },
+ "gates": {
+  "G0_S1": true,
+  "G0_S2": false,
+  "G1": true,
+  "G2": true,
+  "S3_above_shuffle_p95": true,
+  "S2_above_english_p99": false,
+  "S3_above_english_p99": false
+ }
+}
