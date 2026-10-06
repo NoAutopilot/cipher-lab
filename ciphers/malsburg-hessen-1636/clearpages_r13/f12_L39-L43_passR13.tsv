@@ -1,0 +1,8 @@
+# f.12 L39-L43 numeral cipher, one blind Sonnet pass (R13-MALS, 6 Oct 2026) on crops/0012/hstam_4_h_1411_0012_L{39..43}_s{1,2}.jpg (re-cut by regen_images.sh from recorded boxes).
+# Grade M throughout (single pass). L39 and L42 eye-checked by the worker token by token against the s1 crop: all tokens agree. Pass flagged look-alike pairs 84/87, 44/42, 18/16/10, 62/82, 66/68, 49/19.
+line	tokens
+L39	79 W 66 7 71 73 44 43 58 94 84 97 87 39 83 94 39 24 66 13 95 97 49 60 32 70 P 57 55 44 52 58 [mark: f. G + circled sign, not counted]
+L40	25 84 29 18 83 74 53 58 30 43 29 61 X 78 73 W 84 22 # 43 48 13 39 44 96 48 83 31 55 N [P78/PZ8]
+L41	92 V 83 84 22 68 70 15 58 47 42 38 35 31 67 71 38 94 88 42 52 64 49 97 60 G 99 48 63 82 18 25 66
+L42	44 43 48 63 10 18 25 66 N 98 84 41 56 11 D 46 18 65 F 62 L 82 55 99 60 61 97 44 84 P 49 15 97
+L43	89 60 27 62 W 27 61 65 91 11 X 93 T 88 93 44 18 95 97 40 10 88 97 43 28 22 66 82 85 36 56 5 43

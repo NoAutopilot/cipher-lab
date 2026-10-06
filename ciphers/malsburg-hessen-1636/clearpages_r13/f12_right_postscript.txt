@@ -1,0 +1,9 @@
+f.12 right-hand passage below the signature "Otto von der Malsburg" (crops/0012_ps, --region 1840,3020,994,1220). Worker's own read
+during reconciliation (not a blind pass; R13-MALS, 6 Oct 2026), grade M, right edge clipped by the leaf edge. Clear German, no cipher.
+"Weill ich itzo erst erfahren daß [der] Statthalter verstorben, undt ich nu mehr der elteste im geschlechte bin, deßwegen die lehne
+zu ... empfangen undt wider verleihen ... von dem ... mich mitt der ... verschickung ubersehen undt ein par [tage] meinen privatis
+abzuwarten [erlauben] wolten, so tehten sie mihr undt meinem ganzen geschlechte eine große gna[de] ... Das unser amptman ...
+sehr verstorben, das ich also von den ... sache, weill ich mich bey des Statthalters leben selbiger nicht angenohmen, ...
+nichts weiß undt mich auf des ... ietzt ... erfordert."
+Content: a private request -- the writer, now eldest of his family after a Statthalter's death, asks leave to attend to the family fiefs.
+Code-meaning pairing: none.

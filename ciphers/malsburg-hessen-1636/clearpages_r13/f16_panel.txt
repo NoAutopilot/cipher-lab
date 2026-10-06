@@ -1,0 +1,13 @@
+f.16 right-hand panel of the two-page opening (crops/0016_panel: --region 2650,230,1658,230 "top", 2130,400,920,1100 "left",
+3050,470,1100,440 "mid"). One blind Sonnet pass + worker reconciliation against the debug overlays (R13-MALS, 6 Oct 2026). Grade M; names L.
+Clear German. A casualty/prisoner list from an action, with ransom figures; no cipher numbers or signs; no code-meaning pairing.
+Top: "Ihro ... kommen 2 Lieutenants so gefangen gewesen, einer von Wilich, der ander von Kamp(?) in den ...; das folgende officirer
+  noch beym feindt gefangen," -- far right: "50 Rthl. vor Leut. von Wilich(?) ... 40 Rthl. vor Leut. von Kamp(?) ranzion" (ransom; M/L)
+Left list (margin "gefangen"/"gfangen" bracket words at three entries; pass read "pfaßes"):
+  Obrist Leutenant ...; Rittmeister Köhmer(?); Cap. Leut. Jagues(?) ist gestorben; Leutenant von Wilhen(?); Cornet von Eilsen(?);
+  Capitain Daniel/Daniz(?); Capitain Zoxias/Tobias(?); Leutenant von Wilde(?); Leut. von ...ias(?); Leut. von Wilde;
+  Friedrich von ...(?); "50 gemeine Knechte, deren 26 gestorben in der [Gefangenschaft?]"; Obrist Leut. Wolbram todt; Capitain Jobing(?) todt.
+Middle, bracket headed "Officirer vom feindt": Obrist Golling(?) ... ; Obrister von Jan de Wert verwundt; Obristwachtmeister todt;
+  Cornet todt; 3 Cornet gefangen(?); 50 gemeine Knecht vom feindt todt.
+Numbers are counts and sums (2, 50, 40, 26, 3, 50), each beside a plain noun. Name match against cribs.tsv (226 rows, 509 code
+contexts): grep for Wert, Wilich, Wolbram, Kamp, Jagues, Lippstadt, Münster, ranz -- 0 hits; no row has class 'name'. No name here is matched to a code.

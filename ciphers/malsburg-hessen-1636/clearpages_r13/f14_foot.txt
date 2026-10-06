@@ -1,0 +1,16 @@
+f.14 (record 502) foot passage below the dateline (crops/0014_foot, iiif_lines --image images/hstam_4_h_1411__14.jpg --region 100,3260,1500,650;
+image re-fetched byte-identical, sha1 0be6c17c...). One blind Sonnet pass + worker reconciliation against the crops (R13-MALS, 6 Oct 2026). Grade M.
+Clear German in a smaller, faster hand than the letter body (pass: probably the same writer in a postscript register; not settled).
+Not a decipherment: no cipher numbers or signs, and it pairs no code with a meaning.
+L01 Datum [Lippstadt?] den 16/26 Januarij Ao 1637   (pass: "10. 2." ; stacked old/new-style date, M)
+L02 Die Regimenter im Stifft Münster haben nunmehr alle ihre
+L03 Verpflegungs gelder empfangen, wie es nun mit der Lippstadt
+L04 und dem weitern ... gehalten werden soll, erwarte Ew. Gn.
+L05 gnädigen befehl; ich habe mich zwar understanden nach Lippstadt
+L06 einen wechsel zu machen, dannach aber niemandt daselbst ist, der die
+L07 gelder verschießen können, als hatt es müßen angestellt verbleiben.
+L08 Erwartet des H. Gen: Lieut: mit Verlangen antwort [auf] sein
+L09 schreiben seine privat sachen betreffend.
+Content: the regiments in the Stift Münster have all received their pay money; the writer awaits orders on Lippstadt; a bill of
+exchange to Lippstadt could not be arranged because nobody there could advance the money; the Generalleutnant awaits an answer
+to his letter about his private affairs.

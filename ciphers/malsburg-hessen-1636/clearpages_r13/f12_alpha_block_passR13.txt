@@ -1,0 +1,18 @@
+f.12 lower-left letter block (the passage earlier notes called "cifrat cela"), crops/0012_cifrat (iiif_lines --image images/hstam_4_h_1411_0012.jpg --region 0,2930,1960,720).
+One blind Sonnet pass (R13-MALS, 6 Oct 2026) + worker's eye on a 2x zoom of the margin. Grade M; many glyphs uncertain.
+NOT clear text: ten lines of lowercase letters with a few digit groups (.43. .45.) and signs -- a letter cipher. This is the block
+read by L. Beck with ChatGPT, integrated into D. Bourdeau's repository 2 Oct 2026 (targets/malsburg1637/alphabetic/; AUDIT.md row, key `published`).
+Not compared against Beck's transcription in this job (not in the brief).
+Margin note, beside block lines 1-2: worker reads "Chifft: / cla:" (pass: "Elixt: / cla:"); earlier notes "cifrat cela". Unsettled, M.
+Plausibly a label (e.g. cipher / clear), not a code-meaning pair.
+L01 (clear line above): "Churfurst in Bayern salve geschossen worden;" (pass: "Chunfurst in Bayern salve gefosters wertnis") -- M.
+L02 hKu.43.7Winhaljergxxkrwwt{5Klysgol p.45.xKmtgWmKyppLWtgnsytfnng
+L03 lpyghotisnuprkgtgnyxlcragsgntgygm[?]xhgygh[?]geltxofopnhlaxixKrgnh llp
+L04 aaukar.45.KWacyfeltixiithKliaghfx7lioIygywrbrtKghgcimlugntl
+L05 lfisyotfhoh7embhKgrbmKgwghe[u/a]nKWaqxyht,o7yxlpleafo.LLcgtm
+L06 upiymooismaoixKlhnKolfsgbdixgguinnplusgfoglegWun7tungVy
+L07 alooaynKhydimhywismaiilghtmssxlpxtWagpqhalgrymlgxidolr
+L08 bd[blot]lmrhKfxiynytiilhrnnmzunyKdpKrfyikjaogCtxKmtgikoln
+L09 sllyismac7llgnyKq7grihyprnqtlcgnmotirmabnmgtgx7daxrip
+L10 uipofomioxigr7h7twnxh7neiwlp
+Code-meaning pairing: none.
