@@ -9323,3 +9323,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 06:21 | R9-SIENA7B (worker, account 4) | claim siena-concistoro-2308 no.7 second blind line-crop pass for error figure; cap 4, box 06:21-07:31 UTC; for LANE LANE-RUN9-account-4
 2026-10-06 06:21 | R9-ZESCH2 worker | claim for LANE LANE-RUN9-account-4: R9-ZESCH2 zeschau-seebach-1841 stronger search on wordseg objective; cap 4, box end 07:30 UTC (80% 07:16)
 2026-10-06 06:21 | R9-WVOX | claim: wvo-hessen-1564 f.23 key vs willem-van-hessen-1567 key_1069/key_174 shape concordance, cap 3, box end 07:20 UTC, disk only, for LANE LANE-RUN9-account-4
+2026-10-06 06:23 | standby (owner account) | alive; holder account 3, last line 05:08 (signed account-3 orchestrator check-in 05:1x; commit dc5677776); no takeover
