@@ -6,8 +6,9 @@ R7-MANT463 (6 Oct 2026, PREREG-MANT463 addendum): --add0574 appends leaf 0574 (f
 _0574; --norm0574 also applies ../f463_0574/gloss_norm_0574.tsv (non-gating sensitivity, suffix _0574n).
 R7-MANT529 (6 Oct 2026, PREREG-MANT529 addendum): --add0529 appends leaf 0529 (ff.424v-425) after 0574 (implies --add0574), suffix _0529.
 R8-MANT530 (6 Oct 2026, PREREG-MANT530 addendum): --add0530 appends leaf 0530 (ff.425v-426) after 0529 (implies --add0529), suffix _0530.
-R10-MANT526 (6 Oct 2026, PREREG-MANT526 addendum): --add0526 appends leaf 0526 (f.422) after 0530 (implies --add0530), suffix _0526."""
-import csv, os, re, random, sys
+R10-MANT526 (6 Oct 2026, PREREG-MANT526 addendum): --add0526 appends leaf 0526 (f.422) after 0530 (implies --add0530), suffix _0526.
+R10-MANTSCR (6 Oct 2026, ../r10mantscr/PREREG-R10-MANTSCR.md): --sp applies spelling rule SP1-SP6 after MANT5 to every gloss, suffix +sp."""
+import csv, os, re, random, sys, unicodedata
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.join(HERE, '..')
 LEAVES = [('0502', 'f0500_0502/pairs_0502.tsv', 'f0500_0502/reconciled_mant4.tsv'),
@@ -29,6 +30,15 @@ NORM = {r['token']: r['expansion'] for r in csv.DictReader(open(os.path.join(T, 
 if '--norm0574' in sys.argv:
     NORM.update({r['token']: r['expansion'] for r in csv.DictReader(open(os.path.join(T, 'f463_0574/gloss_norm_0574.tsv')), delimiter='\t')}); SUF += 'n'
 norm = lambda g: ' '.join(NORM.get(t, t) for t in re.sub(r"[.,;:'\"]", ' ', g.lower()).split())
+def sp(g):
+    g = ''.join(ch for ch in unicodedata.normalize('NFD', g) if not unicodedata.combining(ch))
+    t = g.split()
+    if len(t) > 1 and t[0] in ('le', 'la', 'les', 'l'): t = t[1:]
+    t = [re.sub(r's(?=[bcdfghjklmnpqrstvwxz])', '', w.replace('y', 'i')) for w in t]  # SP4, SP5 within a word
+    g = ''.join(t).replace('-', '')  # SP3
+    return re.sub(r'(.)\1+', r'\1', g)
+if '--sp' in sys.argv:
+    _n0 = norm; norm = lambda g: sp(_n0(g)); SUF += 'sp'
 rd = lambda p: [r for r in csv.DictReader((l for l in open(os.path.join(T, p)) if not l.startswith('#')), delimiter='\t')]
 
 def load():

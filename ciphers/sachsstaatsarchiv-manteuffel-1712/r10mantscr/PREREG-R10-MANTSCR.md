@@ -1,4 +1,4 @@
-# PREREG-R10-MANTSCR (6 Oct 2026, written 10:08 UTC by date -u, LANE LANE-RUN10-account-4, account 4), before any statistic under the rule is computed
+# PREREG-R10-MANTSCR (6 Oct 2026, written 10:02 UTC by date -u (header first typed 10:08 by mistake, corrected before any run), LANE LANE-RUN10-account-4, account 4), before any statistic under the rule is computed
 
 Question: a spelling-variant normalisation rule, general enough to apply to every gloss in the pool (not written for 867), applied to the
 pooled single-code-gloss gate of PREREG-MANTP as extended to 9 leaves by the PREREG-MANT526 addendum (--add0526). Does 867 license at M,
@@ -28,3 +28,7 @@ only on uncleared leaves enters key.tsv at M; never overwrite a Krauske row; no 
 under SP does not PASS, nothing enters key.tsv.
 Sensitivity (reported, not a gate): per code, licence under the registered MANT5 table vs under SP; any code that changes is listed.
 Implementation: pooled_mantp/pooled_gate.py --add0526 --sp (outputs suffix _0526sp). Output kept beside the registered run, never in its place.
+
+Clarification (10:05 UTC by date -u, before any scored run): a unit check of sp() on sample strings showed SP5 applied after SP3 turned
+"s m" into "m" (an s before the next word's consonant). SP4 and SP5 apply within each word, before SP3 removes word division. No pool
+statistic had been computed.
