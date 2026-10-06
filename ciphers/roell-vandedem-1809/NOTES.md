@@ -838,3 +838,36 @@ the provenance directly.
 
 **Requests:** github.com 1 sparse clone (dbourdeau/cyphersolver, targets/dedem1788 + roell1809); api.github.com 1 (refused, scope).
 No archive or DECODE request. Subagent calls: 0.
+
+## R11-ROELL13 (6 Oct 2026): the States General's received copy, NA 1.01.02 Levant liassen 1793
+
+Worker R11-ROELL13 (account 2, for LANE LANE-RUN11-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run11-jobs.md`,
+09:17-09:22 UTC by `date -u`. No subagent, no decoding, no gate (lookup only). Status unchanged: `open`. Grade counts: H 0, C 0, S 0,
+M 0, I 0 (no reading). Manifest: `na10102/lias_1793.tsv`.
+
+**Inventory numbers (from NA's own EAD for 1.01.02, downloaded once, 22.7 MB, parsed by script, not committed).** Under "De Liassen
+Buitenland > De 'Liassen Italiën, Savoyen, Constantinopelen, Zalée ende Barbariën', 1596-1796" there are two runs:
+- 11a, ingekomen **ordinaris** brieven en stukken, inv. 6888-6996, one lias per year in the 1780s-90s: **inv. 6994 = 1793**
+  (6993 = 1792, 6995 = 1794, 6996 = 1795-1796).
+- 11b, ingekomen **secrete** brieven en stukken, inv. 6997-7009: **inv. 7009 = 1784-1796** (the bundle where Kroll's 1784-85 cipher
+  letters sit, per R10-ROELL11).
+No item-level description exists in the EAD for either (unittitle is the year only), and no other 1.01.02 row names Van Dedem in
+1793 (the only "Dedem" hit is a 1775 verbaal, inv. 9142).
+
+**Availability (each item page's `drupal-settings-json` -> `viewer.response`).** inv. 6994: `availability: PHYSICAL`, 0 scans.
+inv. 7009: `availability: PHYSICAL`, 0 scans. Neither is digitised, so the 9 Feb 1793 despatch cannot be located by scan bisection,
+and whether the received copy is enciphered, and whether its form matches R1469/R1470 (7 + 6 pages, opening "Monsieur?", 4-digit
+groups), cannot be seen from here.
+
+**Not found.** No digitised States General received copy of the 9 Feb 1793 despatch; no cipher original, interlinear decipherment or key
+seen (nothing to see: both bundles are paper-only online).
+
+**Verdict line:** `open` -- the States General's received copy of Van Dedem's 9 Feb 1793 despatch would be in NA 1.01.02 inv. 6994
+(ordinary Levant lias 1793) or, if secret, inv. 7009 (secret lias 1784-1796); both are PHYSICAL with 0 scans, so the last online
+test of the 1793 dating is blocked: **needs-physical-access**. Next steps, both outside a session: (1) an NA scan-on-request (or
+reading-room look) of inv. 6994 for the despatch dated Pera 9 Feb 1793 and of inv. 7009 for any 1793 Van Dedem leaves, saying whether
+it is in 4-digit groups and whether it matches R1469/R1470's 13 pages; (2) the DECODE photographs' archive stamp/folio at full size
+(account-gated). The parent decides whether to raise (1) as an ASKS/REQUEST row; this worker does not edit ASKS.md.
+
+**Requests:** www.nationaalarchief.nl 3 (item pages 7009, 6994; EAD XML download 1), all HTTP 200, >= 2 s apart, one at a time;
+service.archief.nl 0. Subagent calls: 0.
