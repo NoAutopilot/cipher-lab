@@ -1039,8 +1039,39 @@ sign count along each line, see sorter/README.md). Not published and no ASKS row
 Committed rows, reading and grades unchanged. Verdict unchanged (open): step (s) now waits on the owner's pass over
 `sorter/`; then (a'').
 
+## 15. R7-OLDFIX, 6 Oct 2026: A/C2 line map checked, sorter re-cut on the cipher lines only; R7-OLDA's figure stands; status stays open
+
+Brief: `.claude/briefs/runs/2026-10-06-account2-run7-jobs.md` (LANE LANE-RUN7-account-2), job R7-OLDFIX; no vision subagent, no
+network. Cause: the account-3 orchestrator withdrew the R7-OLDSORT sorter (tile A_L01_001 cut from the clear "la breuedad que
+desseo y espero" ahead of the cipher; tiles laid out by sign count reaching other lines; "Fix the cut" not responding).
+
+**(1) Line map, from the leaf images with a 50 px grid overlay (leaf 001 block A, leaf 006 block C2).** Block A: 11 written lines
+from "labreuedad que desseo y espero, 8l s8cr8t4r37 fran" (y about 1500 at the left) to "r3d7 3 mas n7s c7n23 8n8" (about 2525);
+the clear lines "...servicio que conobro se concluya el qual sea con" above and "nome valdo..." below are outside. Line A1 is
+*mixed*: a clear Spanish opening (5 words), then cipher from "8l". Lines A2-A11 are cipher. Block C2: the clear line "don Antº
+Vanegas del consejo supremo de yng..." above; 8 cipher lines from "3 4rnq28 37 n7 cr87" to "~h8ch7 t4m 4nch7 ... d8s", the lines
+rising about 3.5-5 degrees to the right, and "p8n4n" written under line 8. R7-OLDA's `--centres` (section 13) put one band on each
+of these 19 lines in order: its stacked crops (A middle segments, C2 left segments) each show the right line, none a clear line.
+(At C2's region middle the horizontal centre marks look a line off because of the slope; the per-line deskew follows each line.)
+
+**(2) R7-OLDA's crops and passes read the right lines, so its figure is not void.** The only clear text in them is A1's opening,
+which both readers transcribed; dropping those 5 words from both passes (post hoc, `diff_r7olda.py` on filtered copies) gives
+A 80/356 = 22.4%, C2 50/313 = 16.0%, A+C2 130/670 = **19.4%** (was 19.0%): the split over the 10% rule stands, and so does the
+hand-off to the owner's sorter. The reconciled draft stays a draft (36 uncertain words), unchanged. No HYPOTHESES.md in this folder.
+
+**(3) Sorter re-cut** (`sorter/recut.py`, `tools/sorter_recut.py`; details, limits and the five-tile check in `sorter/README.md`):
+689 tiles on 19 deskewed line strips, cipher text only (A1 from "8l"; A11 cut at "8n8"), one tile per ink group; 589 start in
+the pile of the draft sign they line up with, the rest by shape cluster; 24 focus tiles (18 blind-pass splits, 6 by shape). Built
+with the current `tools/sign_sorter.py` template and `--region` page view: `test_qa.js` ALL PASS (141) on the page; Fix the cut
+opens, drags, saves the db `recuts` row and redraws the tile on this page (`test_recut_quad.js`, one nudge-geometry check failed,
+no page errors). Five random tiles (C2_L04_02, A_L03_30, A_L09_02, A_L09_04, A_L01_38) each sit on the cipher line their label
+names. The v1 cut is kept as `sorter/*_v1.tsv`.
+
+Committed rows, reading and grades unchanged. Not published, no ASKS row: the lane orchestrator does both. Do not classify
+novelty (rule 10).
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, 6 Oct 2026)
 
 - Action that depends on nobody: (d') of the latest Verdict -- the tighter era corpus (several CODOIN volumes of 1598-1621 state
   letters, fold-checked), ~$5. Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
-  the owner's sorter, seeded 6 Oct 2026 (R7-OLDSORT, `sorter/`, section 14).
+  the owner's sorter, seeded 6 Oct 2026 (R7-OLDSORT, `sorter/`, section 14) and re-cut on the cipher lines only (R7-OLDFIX, section 15).
