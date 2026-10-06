@@ -1686,3 +1686,17 @@ column gets one clause pointing here; SO-LODEWIJK-5797 unaffected.
 
 **N-class.** Unchanged: 4616 N4 (no prior decipherment located); 4610/4611 N4, 4612 N3. Key source: ours (key_full, from the period
 decipherment sheets). Requests: resources.huygens.knaw.nl 1 (4616 PDF). No subagents.
+
+## R15-LVNCTL: carry-over note, 4610 p3 control rows re-checked on the image (6 Oct 2026)
+
+Verifier hat (account 2, LANE-RUN15-account-2), separate session from R14-LVNEYE; full log in NOTES.md "R15-LVNCTL" and
+lvn10/control_recheck.tsv. On the 300-dpi p3 render (sha1 a41b5df8..., WVO PDF fetched once) 10 of the 150-dpi H control
+values of ciphertext_4610.tsv p3 read differently on the image: p3_L12/12 120->126, p3_L15/2 85->35, p3_L17/6 61->31,
+p3_L18/8 81->87, p3_L22/3 32->82, p3_L23/3 51->61, p3_L24/15 130->136 (all S, as R14-LVNEYE read them), p3_L21/7 82->32 (S),
+p3_L13/2 135->185 (M; 185 not in key.tsv), p3_L20/15 102->161 (M). Three rows stay undecided (p3_L16/10 and p3_L12/13
+150/250, p3_L25/4 151/251: a hooked initial that matches neither this hand's flat-based 2 nor its plain 1; 150/151 are NULL in
+key.tsv). **Nothing applied**: ciphertext_4610.tsv, key.tsv and every reading are unchanged, so the 4610 counts, depth (D2) and
+safe sentences in this file stand; the corrected values are candidates for an apply job (~$1, decode_key --check). Re-scored
+against lvn10/control_corrected.tsv, round d reads A7 0.863, B7 0.833 (was 0.813/0.791), still below the 0.90 gate: the [retired]
+marks on both 4610 p3 instruments stand. A different instrument needs the corrected control and a placement of the 26 control
+rows no reader tile aligned to (p3_L25-L30). N-class unchanged (4610 N4). Nothing applied, so no SECOND-OPINIONS-QUEUE.tsv row needs a change.

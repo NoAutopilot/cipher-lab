@@ -1,0 +1,24 @@
+row	line	position	control	A7	B7	image_read	grade	agree_LVNEYE	verdict	note
+01	p3_L12	12	120	126	126	126	S	y	control wrong	final glyph is this hand's 6 (bowl, rising stroke), not the round 0 of 250/80 beside it
+02	p3_L15	2	85	35	35	35	S	y	control wrong	first glyph descends below the line (3); next token 85 has the flat-topped 8 on the line
+03	p3_L16	10	150	250	250	150 or 250	M	y (undecided)	undecided	initial is a stroke with a large left-turning top hook and a foot; unlike the full flat-based 2 of 200/202 on L15, unlike the plain 1 of 150 on L13; key.tsv has 150 NULL and no 250 -- leans 150
+04	p3_L16	13	112	12	12	112	S	y	control right	two strokes before the 2; readers dropped a leading 1
+05	p3_L17	6	61	31	31	31	S	y	control wrong	first glyph has the top bar and descender of the 3 of 63 on the same line; that 6 has no top bar
+06	p3_L18	8	81	87	87	87	S	y	control wrong	second glyph matches the 7s of 137 and 77 on the same line
+07	p3_L22	3	32	82	82	82	S	y	control wrong	flat-topped double bowl on the line (8); the 3s of 39/135 beside it descend
+08	p3_L23	3	51	61	61	61	S	y	control wrong	first glyph is the 6 of 62 on the same line; 5 here is the long s
+09	p3_L24	15	130	136	136	136	S	y	control wrong	final glyph is the 6 form, as row 01
+10	p3_L31	4	12	2	2	12	S	y	control right	1 then 2, clear; readers dropped a leading 1
+x01	p3_L12	13	150	250?	250	150 or 250	M	n/a	undecided	same hooked initial as row 03 (next token after 126)
+x02	p3_L13	2	135	185	185?	185	M	n/a	control wrong	middle glyph two bowls sitting on the line (8), unlike the descending 3 of 135 on L12; 185 is not in key.tsv
+x03	p3_L16	15	12	22	12	12	S	n/a	control right	plain 1 then 2 (A7 misread)
+x04	p3_L17	8	63	63	63?	63	S	n/a	control right	
+x05	p3_L17	17	51	51	-	51	S	n/a	control right	B7 missed the tile (after 'pour')
+x06	p3_L18	13	116	116	126	116	S	n/a	control right	two plain strokes before the 6 (B7 misread)
+x07	p3_L20	7	139	239	139?	139	S	n/a	control right	initial is the same plain hooked 1 as 148 beside it (A7 misread)
+x08	p3_L20	15	102	162	161?	161	M	n/a	control wrong	1, the 6 form, then a final stroke with a foot (1, not the flat-based 2); token after 180
+x09	p3_L21	2	61	61	61?	61	S	n/a	control right	
+x10	p3_L21	7	82	32	32	32	S	n/a	control wrong	first glyph flat top and descender, as the 3 of 37 beside it
+x11	p3_L21	8	133	133	133?	133	S	n/a	control right	
+x12	p3_L25	4	151	251	251	151 or 251	M	n/a	undecided	same hooked initial as rows 03/x01; plain 1 of 140 beside it differs; key.tsv has 151 NULL and no 251
+x13	p3_L31	23	126	126	125?	126	S	n/a	control right	
