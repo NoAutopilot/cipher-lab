@@ -1,0 +1,31 @@
+label_a	label_b	n	n_target	examples
+#	I	3	0	f88r_lookalike:L13.3 f88r_lookalike:L13.15 f88r_lookalike:L13.19
+#	:	2	0	f88r_lookalike:L09.13 f88r_lookalike:L14.11
+#	A	2	0	f88r_lookalike:L05.42 f88r_lookalike:L12.14
+#	T	2	0	f88r_lookalike:L04.1 f88r_lookalike:L04.23
+7	T	2	0	f88r_lookalike:L04.6 f88r_lookalike:L07.7
+:	y	2	0	f88r_lookalike:L03.12 f88r_lookalike:L05.30
+T	t	2	0	f88r_lookalike:L10.5 f88r_lookalike:L13.27
+X	x	2	0	f88r_lookalike:L02.16 f88r_lookalike:L04.13
+d	o	2	0	f88r_lookalike:L05.29 f88r_lookalike:L05.37
+l	p	2	0	f88r_lookalike:L10.8 f88r_lookalike:L13.6
+#	V	1	0	f88r_lookalike:L14.12
+#	c	1	0	f88r_lookalike:L19.6
+#	k	1	0	f88r_lookalike:L04.26
+#	struck	1	0	f88r_lookalike:L04.5
++	X	1	0	f88r_lookalike:L04.21
+7	Z	1	0	f88r_lookalike:L08.17
+8	l	1	0	f88r_lookalike:L10.6
+:	h	1	0	f88r_lookalike:L02.3
+:	p	1	0	f88r_lookalike:L03.1
+A	l	1	0	f88r_lookalike:L10.22
+A	n	1	0	f88r_lookalike:L13.12
+A	r	1	0	f88r_lookalike:L12.5
+I	Z	1	0	f88r_lookalike:L04.15
+I	y	1	0	f88r_lookalike:L04.24
+L	O	1	0	f88r_lookalike:L09.11
+Q	c	1	0	f88r_lookalike:L05.28
+U	c	1	0	f88r_lookalike:L04.25
+c	d	1	0	f88r_lookalike:L05.45
+c	x	1	0	f88r_lookalike:L10.4
+p	r	1	0	f88r_lookalike:L10.2
