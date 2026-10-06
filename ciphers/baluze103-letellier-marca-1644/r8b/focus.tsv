@@ -1,0 +1,28 @@
+bal103b_f50r_L04_3	f50r_L04.3: readers x/xbar, look-alike xs (M); which of x, xbar, xc, xs?
+bal103b_f50r_L05_13	f50r_L05.13: readers tt/mm, look-alike tt (L); which of mm, tt?
+bal103b_f50r_L06_6	f50r_L06.6: readers x/xbar, look-alike xs (M); which of x, xbar, xc, xs?
+bal103b_f50r_L08_19	f50r_L08.19: readers mt/m, look-alike m (L); which of m, mt?
+bal103b_f50r_L09_11	f50r_L09.11: readers xbar/xs, look-alike xc (M); which of xbar, xc, xs?
+bal103b_f50r_L11_17	f50r_L11.17: readers xbar/xs, look-alike xc (M); which of xbar, xc, xs?
+bal103b_f50r_L12_4	f50r_L12.4: readers tt/mm, look-alike tt (L); which of mm, tt?
+bal103b_f50r_L13_14	f50r_L13.14: readers mt/m, look-alike m (L); which of m, mt?
+bal103b_f50r_L14_11	f50r_L14.11: readers tt/mm, look-alike tt (L); which of mm, tt?
+bal103b_f50r_L15_1	f50r_L15.1: readers mm/m, look-alike mm (L); which of m, mm?
+bal103b_f50r_L15_19	f50r_L15.19: readers tt/mm, look-alike tt (L); which of mm, tt?
+bal103b_f50r_L17_15	f50r_L17.15: readers x/xc, look-alike xc (L); which of x, xc?
+bal103b_f50v_L01_1	f50v_L01.1: readers mm/m, look-alike mm (L); which of m, mm?
+bal103b_f50v_L07_1	f50v_L07.1: readers mm/m, look-alike mm (L); which of m, mm?
+bal103b_f50v_L11_3	f50v_L11.3: readers venus/9, look-alike 9 (L); which of 9, venus?
+bal103b_f50r_L04_6	f50r_L04.6: readers tt/venus, look-alike venus settled 2-of-3 but NOT applied (fr17 judge fell); which of tt, venus?
+bal103b_f50r_L06_1	f50r_L06.1: readers tt/venus, look-alike venus settled 2-of-3 but NOT applied (fr17 judge fell); which of tt, venus?
+bal103b_f50r_L09_8	f50r_L09.8: readers venus/q, look-alike q settled 2-of-3 but NOT applied (fr17 judge fell); which of P, q, q2, venus?
+bal103b_f50r_L09_13	f50r_L09.13: readers tt/venus, look-alike venus settled 2-of-3 but NOT applied (fr17 judge fell); which of tt, venus?
+bal103b_f50r_L11_7	f50r_L11.7: readers mm/m, look-alike mm settled 2-of-3 but NOT applied (fr17 judge fell); which of m, mm, mt?
+bal103b_f50r_L13_5	f50r_L13.5: readers tt/venus, look-alike venus settled 2-of-3 but NOT applied (fr17 judge fell); which of tt, venus?
+bal103b_f50r_L14_8	f50r_L14.8: readers tt/venus, look-alike venus settled 2-of-3 but NOT applied (fr17 judge fell); which of tt, venus?
+bal103b_f50r_L16_16	f50r_L16.16: readers mm/m, look-alike mm settled 2-of-3 but NOT applied (fr17 judge fell); which of m, mm, mt?
+bal103b_f50r_L17_17	f50r_L17.17: readers tt/venus, look-alike venus settled 2-of-3 but NOT applied (fr17 judge fell); which of tt, venus?
+bal103b_f50r_L18_10	f50r_L18.10: readers tt/venus, look-alike venus settled 2-of-3 but NOT applied (fr17 judge fell); which of tt, venus?
+bal103b_f50r_L18_14	f50r_L18.14: readers mm/m, look-alike mm settled 2-of-3 but NOT applied (fr17 judge fell); which of m, mm, mt?
+bal103b_f50r_L19_17	f50r_L19.17: readers tt/venus, look-alike venus settled 2-of-3 but NOT applied (fr17 judge fell); which of tt, venus?
+bal103b_f50r_L20_16	f50r_L20.16: readers xs/xc, look-alike xs settled 2-of-3 but NOT applied (fr17 judge fell); which of x, xbar, xc, xs?

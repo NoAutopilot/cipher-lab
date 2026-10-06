@@ -231,7 +231,7 @@ f50r_L13	1	xs	H		agree
 f50r_L13	2	eps	H		agree
 f50r_L13	3	a	H		agree
 f50r_L13	4	hz	H		agree
-f50r_L13	5	venus	M	col5 draft=tt B:venus r8 old=tt C:venus	r8-2of3
+f50r_L13	5	tt	M	col5 draft=tt B:venus r8 tried=venus C:venus	r8-reverted
 f50r_L13	6	theta	H		agree
 f50r_L13	7	9	H		agree
 f50r_L13	8	6	H		agree
@@ -254,13 +254,13 @@ f50r_L13	24	l	H		agree
 f50r_L14	1	6	H		agree
 f50r_L14	2	u	H		agree
 f50r_L14	3	t	H		agree
-f50r_L14	4	venus	M	col4 draft=venus B:q r8 old=q C:venus	r8-2of3
+f50r_L14	4	q	M	col4 draft=venus B:q r8 tried=venus C:venus	r8-reverted
 f50r_L14	5	6	H		agree
 f50r_L14	6	9	H		agree
 f50r_L14	7	lb	M	col7 draft=lb B:H	settled-M
 f50r_L14	8	tt	M	col8 draft=tt B:venus	settled-M
 f50r_L14	9	9	H		agree
-f50r_L14	10	u	M	col10 draft=R B:u r8 old=R C:u	r8-2of3
+f50r_L14	10	R	M	col10 draft=R B:u r8 tried=u C:u	r8-reverted
 f50r_L14	11	tt	M	col11 draft=tt B:mm	settled-M
 f50r_L14	12	10	H		agree
 f50r_L14	13	x	M	col13 draft=x B:xc	settled-M
@@ -301,10 +301,10 @@ f50r_L16	9	mt	H		agree
 f50r_L16	10	hz	H	col10 draft=hz A:-	settled-H
 f50r_L16	11	hbar	M	col11 draft=hbar B:venus	settled-M
 f50r_L16	12	tt	M	col12 draft=tt B:mm	settled-M
-f50r_L16	13	6	M	col13 draft=tt B:6 r8 old=tt C:6	r8-2of3
+f50r_L16	13	tt	M	col13 draft=tt B:6 r8 tried=6 C:6	r8-reverted
 f50r_L16	14	theta	H		agree
 f50r_L16	15	9	H		agree
-f50r_L16	16	mm	M	col16 draft=mm B:m r8 old=m C:mm	r8-2of3
+f50r_L16	16	m	M	col16 draft=mm B:m r8 tried=mm C:mm	r8-reverted
 f50r_L16	17	10	H		agree
 f50r_L16	18	9	H		agree
 f50r_L16	19	delta	H		agree
@@ -427,7 +427,7 @@ f50v_L03	2	u	H		agree
 f50v_L03	3	9	H		agree
 f50v_L03	4	a	H		agree
 f50v_L03	5	delta	H		agree
-f50v_L03	6	mm	M	col6 draft=mm B:m r8 old=m C:mm	r8-2of3
+f50v_L03	6	m	M	col6 draft=mm B:m r8 tried=mm C:mm	r8-reverted
 f50v_L03	7	4	H		agree
 f50v_L03	8	f	H		agree
 f50v_L03	9	venus	M	col9 draft=venus B:9	settled-M
@@ -435,7 +435,7 @@ f50v_L03	10	f	H		agree
 f50v_L03	11	xc	H		agree
 f50v_L03	12	q2	H	col12 draft=q2	settled-H
 f50v_L03	13	4	H		agree
-f50v_L03	14	mm	M	col14 draft=mm B:m r8 old=m C:mm	r8-2of3
+f50v_L03	14	m	M	col14 draft=mm B:m r8 tried=mm C:mm	r8-reverted
 f50v_L03	15	14	H		agree
 f50v_L03	16	22	H		agree
 f50v_L03	17	a	H		agree
@@ -546,7 +546,7 @@ f50v_L08	22	19	H		agree
 f50v_L09	1	14	H		agree
 f50v_L09	2	a	H		agree
 f50v_L09	3	ct	H		agree
-f50v_L09	4	mm	M	col4 draft=mm B:- r8 old=m C:mm	r8-2of3
+f50v_L09	4	m	M	col4 draft=mm B:- r8 tried=mm C:mm	r8-reverted
 f50v_L09	5	z	H	col5 draft=z B:m	settled-H
 f50v_L09	6	xc	H	col6 draft=xc B:	settled-H
 f50v_L09	7	P	M	col7 draft=P	settled-M
@@ -554,7 +554,7 @@ f50v_L09	8	xs	M	col8 draft=xs B:H	settled-M
 f50v_L09	9	14	H		agree
 f50v_L09	10	9	H		agree
 f50v_L09	11	12	H		agree
-f50v_L09	12	xs	M	col12 draft=xs B:H r8 old=H C:xs	r8-2of3
+f50v_L09	12	H	M	col12 draft=xs B:H r8 tried=xs C:xs	r8-reverted
 f50v_L09	13	m	M	col13 draft=u	settled-M
 f50v_L09	14	hbar	H		agree
 f50v_L09	15	u	H		agree
@@ -564,7 +564,7 @@ f50v_L09	18	venus	H	col18 draft=venus B:9	settled-H
 f50v_L09	19	19	H		agree
 f50v_L09	20	xc	H		agree
 f50v_L09	21	lb	H	col21 draft=lb B:	settled-H
-f50v_L09	22	mm	M	col22 draft=mm B:m r8 old=m C:mm	r8-2of3
+f50v_L09	22	m	M	col22 draft=mm B:m r8 tried=mm C:mm	r8-reverted
 f50v_L09	23	hz	M	col23 draft=hz B:gz	settled-M
 f50v_L10	1	8	H		agree
 f50v_L10	2	5	H		agree

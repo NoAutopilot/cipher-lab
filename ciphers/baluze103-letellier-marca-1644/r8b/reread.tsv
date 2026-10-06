@@ -1,0 +1,52 @@
+passage	pos	label	conf	second	note
+f50r_L04	3	xs	M	xc	double-x look, extra stroke
+f50r_L04	6	venus	M	tt	stem with cross stroke and loop on top
+f50r_L05	1	xbar	M	xs	x with horizontal bar through
+f50r_L05	13	tt	L	mm	looped ligature run, crossing stroke
+f50r_L06	1	venus	M	tt	stem with cross stroke, loop top
+f50r_L06	6	xs	M	xc	double-x with extra stroke
+f50r_L08	6	m	M	mt	three arches no tail
+f50r_L08	19	m	L	mt	three arches, tick uncertain
+f50r_L09	8	q	H	venus	loop on plain stem, no cross
+f50r_L09	10	m	M	mm	three arches
+f50r_L09	11	xc	M	xs	x with curled ends
+f50r_L09	13	venus	M	tt	stem cross stroke and loop
+f50r_L11	7	mm	M	m	four-five arches run
+f50r_L11	17	xc	M	xs	curled x
+f50r_L12	4	tt	L	mm	looped double stroke
+f50r_L12	7	m	M	mt	three arches, runs into next
+f50r_L13	5	venus	M	tt	stem cross loop
+f50r_L13	14	m	L	mt	three arches, right end sweeps down
+f50r_L13	15	xc	M	xs	curly x
+f50r_L13	16	q	H	venus	loop on stem no cross
+f50r_L14	4	q	H	P	loop on plain stem
+f50r_L14	8	venus	M	tt	stem cross loop
+f50r_L14	11	tt	L	mm	looped ligature
+f50r_L14	13	x	M	xc	small x
+f50r_L15	1	mm	L	m	four arch run
+f50r_L15	19	tt	L	mm	looped ligature
+f50r_L16	12	tt	M	mm	tall double stem with crossing bar
+f50r_L16	16	mm	M	m	run of 4-5 arches
+f50r_L17	15	xc	L	x	x with curl
+f50r_L17	17	venus	M	tt	stem cross loop
+f50r_L18	10	venus	M	tt	stem cross loop
+f50r_L18	14	mm	M	m	run of arches
+f50r_L18	16	m	M	mt	small three arch
+f50r_L18	18	q	M	venus	loop on stem slight notch
+f50r_L19	14	m	M	mt	three arches
+f50r_L19	17	venus	M	tt	stem cross loop
+f50r_L20	16	xs	M	xc	double-x extra stroke
+f50r_L20	17	m	M	mt	three arches
+f50v_L01	1	mm	L	m	four arches
+f50v_L03	6	m	M	mt	three arches
+f50v_L03	9	venus	M	9	loop on stem
+f50v_L03	14	m	M	mt	three arches
+f50v_L04	1	venus	M	9	loop on long stem
+f50v_L07	1	mm	L	m	four arches
+f50v_L07	5	venus	M	9	loop on stem
+f50v_L09	18	venus	M	9	loop on stem
+f50v_L09	22	m	M	mt	three arches
+f50v_L10	6	m	M	mm	three arches
+f50v_L11	3	9	L	venus	cut off, rounded loop
+f50v_L11	11	m	M	mm	three arches
+f50v_L12	11	venus	M	9	loop on stem

@@ -1,0 +1,48 @@
+label_a	label_b	n	n_target	examples
+m	mm	11	0	r8b:f50r_L11.7 r8b:f50r_L15.1 r8b:f50r_L16.16 r8b:f50r_L18.14
+R	u	8	0	r8b:f50r_L02.4 r8b:f50r_L04.8 r8b:f50r_L07.4 r8b:f50r_L08.4
+b	bt	8	0	r8b:f50r_L04.4 r8b:f50r_L07.12 r8b:f50r_L08.16 r8b:f50r_L08.22
+m	mt	8	0	r8b:f50r_L08.6 r8b:f50r_L08.19 r8b:f50r_L09.10 r8b:f50r_L12.7
+tt	venus	8	0	r8b:f50r_L04.6 r8b:f50r_L06.1 r8b:f50r_L09.13 r8b:f50r_L13.5
+9	venus	6	0	r8b:f50v_L03.9 r8b:f50v_L04.1 r8b:f50v_L07.5 r8b:f50v_L09.18
+mm	tt	5	0	r8b:f50r_L05.13 r8b:f50r_L12.4 r8b:f50r_L14.11 r8b:f50r_L15.19
+H	xs	4	0	r8b:f50v_L05.7 r8b:f50v_L07.6 r8b:f50v_L09.8 r8b:f50v_L09.12
+q	venus	4	0	r8b:f50r_L09.8 r8b:f50r_L13.16 r8b:f50r_L14.4 r8b:f50r_L18.18
+H	lb	3	0	r8b:f50r_L04.2 r8b:f50r_L07.6 r8b:f50r_L14.7
+o7	theta	3	0	r8b:f50r_L04.5 r8b:f50r_L06.2 r8b:f50r_L09.12
+x	xbar	3	0	r8b:f50r_L04.3 r8b:f50r_L05.1 r8b:f50r_L06.6
+-	6	2	0	r8b:f50r_L06.5 r8b:f50r_L13.18
+c	ct	2	0	r8b:f50r_L03.11 r8b:f50r_L08.1
+x	xc	2	0	r8b:f50r_L14.13 r8b:f50r_L17.15
+xbar	xs	2	0	r8b:f50r_L09.11 r8b:f50r_L11.17
+xc	xs	2	0	r8b:f50r_L13.15 r8b:f50r_L20.16
+-	3	1	0	r8b:f50r_L02.18
+-	9	1	0	r8b:f50v_L04.13
+-	d	1	0	r8b:f50r_L16.6
+-	hz	1	0	r8b:f50r_L16.10
+-	mm	1	0	r8b:f50v_L09.4
+-	q2	1	0	r8b:f50v_L12.14
+-	t	1	0	r8b:f50r_L16.7
+-	tt	1	0	r8b:f50r_L02.2
+-	venus	1	0	r8b:f50r_L17.11
+15	18	1	0	r8b:f50r_L09.18
+19	=19	1	0	r8b:f50r_L01.1
+2	t	1	0	r8b:f50v_L12.15
+3	=3	1	0	r8b:f50r_L06.9
+6	tt	1	0	r8b:f50r_L16.13
+8	81	1	0	r8b:f50r_L03.7
+P	g+	1	0	r8b:f50v_L10.22
+P	hz	1	0	r8b:f50r_L06.15
+R	q	1	0	r8b:f50r_L17.12
+a	eps	1	0	r8b:f50v_L02.1
+a	xbar	1	0	r8b:f50r_L08.21
+bt	t	1	0	r8b:f50r_L06.12
+delta	u	1	0	r8b:f50r_L16.8
+dt	t	1	0	r8b:f50r_L03.15
+gz	hz	1	0	r8b:f50v_L09.23
+hbar	venus	1	0	r8b:f50r_L16.11
+hz	xbar	1	0	r8b:f50r_L03.12
+m	z	1	0	r8b:f50v_L09.5
+mm	xs	1	0	r8b:f50r_L08.18
+n	u	1	0	r8b:f50v_L11.14
+xc	y	1	0	r8b:f50v_L07.7

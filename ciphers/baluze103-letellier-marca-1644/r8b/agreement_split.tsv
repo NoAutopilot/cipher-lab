@@ -1,0 +1,124 @@
+passage	posA	idA	idB	status
+f50r_L01	1	19	=19	split
+f50r_L02	2	tt	-	split
+f50r_L02	4	R	u	split
+f50r_L02	18	3	-	split
+f50r_L03	7	8	81	split
+f50r_L03	11	ct	c	split
+f50r_L03	12	xbar	hz	split
+f50r_L03	15	dt	t	split
+f50r_L04	2	lb	H	split
+f50r_L04	3	x	xbar	split
+f50r_L04	4	bt	b	split
+f50r_L04	5	o7	theta	split
+f50r_L04	6	tt	venus	split
+f50r_L04	8	R	u	split
+f50r_L05	1	x	xbar	split
+f50r_L05	10	R		split
+f50r_L05	13	tt	mm	split
+f50r_L06	1	tt	venus	split
+f50r_L06	2	o7	theta	split
+f50r_L06	5	-	6	split
+f50r_L06	6	x	xbar	split
+f50r_L06	9	3	=3	split
+f50r_L06	12	bt	t	split
+f50r_L06	15	P	hz	split
+f50r_L07	4	R	u	split
+f50r_L07	6	lb	H	split
+f50r_L07	12	bt	b	split
+f50r_L08	1	c	ct	split
+f50r_L08	4	R	u	split
+f50r_L08	6	mt	m	split
+f50r_L08	16	bt	b	split
+f50r_L08	18	xs	mm	split
+f50r_L08	19	mt	m	split
+f50r_L08	21	a	xbar	split
+f50r_L08	22	bt	b	split
+f50r_L09	8	venus	q	split
+f50r_L09	10	mt	m	split
+f50r_L09	11	xbar	xs	split
+f50r_L09	12	o7	theta	split
+f50r_L09	13	tt	venus	split
+f50r_L09	18	18	15	split
+f50r_L10	9	R	u	split
+f50r_L11	7	mm	m	split
+f50r_L11	12	bt	b	split
+f50r_L11	17	xbar	xs	split
+f50r_L11	19	R	u	split
+f50r_L11	20	bt	b	split
+f50r_L12	4	tt	mm	split
+f50r_L12	7	mt	m	split
+f50r_L13	5	tt	venus	split
+f50r_L13	14	mt	m	split
+f50r_L13	15	xs	xc	split
+f50r_L13	16	venus	q	split
+f50r_L13	18	-	6	split
+f50r_L14	4	venus	q	split
+f50r_L14	7	lb	H	split
+f50r_L14	8	tt	venus	split
+f50r_L14	10	R	u	split
+f50r_L14	11	tt	mm	split
+f50r_L14	13	x	xc	split
+f50r_L15	1	mm	m	split
+f50r_L15	15	bt	b	split
+f50r_L15	19	tt	mm	split
+f50r_L16	6	-	d	split
+f50r_L16	7	-	t	split
+f50r_L16	8	delta	u	split
+f50r_L16	10	-	hz	split
+f50r_L16	11	hbar	venus	split
+f50r_L16	12	tt	mm	split
+f50r_L16	13	tt	6	split
+f50r_L16	16	mm	m	split
+f50r_L17	11	venus	-	split
+f50r_L17	12	R	q	split
+f50r_L17	15	x	xc	split
+f50r_L17	17	tt	venus	split
+f50r_L18	10	tt	venus	split
+f50r_L18	14	mm	m	split
+f50r_L18	16	mt	m	split
+f50r_L18	18	venus	q	split
+f50r_L19	6	bt	b	split
+f50r_L19	7	R	u	split
+f50r_L19	14	mt	m	split
+f50r_L19	17	tt	venus	split
+f50r_L20	16	xs	xc	split
+f50r_L20	17	mt	m	split
+f50v_L01	1	mm	m	split
+f50v_L01	14	lb		split
+f50v_L02	1	eps	a	split
+f50v_L03	6	mm	m	split
+f50v_L03	9	venus	9	split
+f50v_L03	14	mm	m	split
+f50v_L04	1	venus	9	split
+f50v_L04	13	-	9	split
+f50v_L04	19	lb		split
+f50v_L05	7	xs	H	split
+f50v_L07	1	mm	m	split
+f50v_L07	2	lb		split
+f50v_L07	5	venus	9	split
+f50v_L07	6	xs	H	split
+f50v_L07	7	y	xc	split
+f50v_L07	15		lb	split
+f50v_L07	18	xc		split
+f50v_L07	20	lb		split
+f50v_L08	20	=mm		split
+f50v_L09	4	mm	-	split
+f50v_L09	5	z	m	split
+f50v_L09	6	xc		split
+f50v_L09	8	xs	H	split
+f50v_L09	12	xs	H	split
+f50v_L09	18	venus	9	split
+f50v_L09	21	lb		split
+f50v_L09	22	mm	m	split
+f50v_L09	23	hz	gz	split
+f50v_L10	6	mm	m	split
+f50v_L10	22	P	g+	split
+f50v_L11	3	venus	9	split
+f50v_L11	11	mm	m	split
+f50v_L11	14	u	n	split
+f50v_L12	11	venus	9	split
+f50v_L12	14	q2	-	split
+f50v_L12	15	t	2	split
+f50v_L12	17	mm		split
+f50v_L12	18	10		split
