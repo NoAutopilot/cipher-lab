@@ -5254,6 +5254,31 @@ Open for the next i-r lane: (1) nla-heinrich check-solved/verifier call on the G
 (3) rousseau same-class known-answer re-run ~1; (4) oldenbarnevelt-brederode full-size Marburg/Munich keys ~3; (5) karlxi 1680 Actes page read ~1;
 (6) vellingk read owgPAAAAYAAJ "Wellingk ... Chiffre" page ~1; (7) lope-hurtado LOCAL-QUEUE row for BNE 20212/27 images.
 
+## LANE LANE-RUN10-account-4 handoff (session_019b5FtNbHb8pGgZbPaFv7QV, account 4), 6 October 2026 (closed 11:2x UTC: s-z backlog worked, lane about 48 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run10-jobs.md. WORK-QUEUE row LANE-RUN10-account-4 (split s-z):
+RUN9-account-4's "Open for the next s-z lane" 1-4 first, then next_steps.py rows. Gate 0a met (no SESSION-SWEEP-account-4 row). VERIFY-BACKLOG
+had no s-z row. 16 workers in 4 waves (13 Opus, 3 Sonnet; 14 D, 2 D-: SIENA7C 1.31x, SIENA15 1.06x); workers 41.96 + orchestrator ~6.0 = ~48
+(get_session). five_hour `allowed` throughout.
+- wvo-hessen-1564 f.23: careful two-pass gloss transcription (R10-WVOTX) -> alignment piles 17 vs row-shuffle p95 3 (R9 10); key 16 C / 12 M.
+  Verifier R10-WVOV AUDIT 2: reproduces, N0 (period gloss), key period, D2 41.6% (107 tile-level C; pile k28 mixes 3 other shapes decoded b, so
+  pile-level 142 over-counts). R10-WVOREPLY: 14 Hesse<->Orange letters Oct 1564-Mar 1565 in WVO, only 1111 replies to 1109, none cipher.
+- willem-van-hessen-1567: Marburg minuut pp.2-4 transcribed as crib (101 lines, build_crib.py --check), waits on the KHA original (ASKS 31).
+- sachsstaatsarchiv-manteuffel-1712: 0526, 0521, 0518 transcribed and gated (per-leaf tie/tie/miss; pooled PASS); PREREG spelling rule SP licenses
+  867 le Feldmarechal at M (pooled 0.833 vs p95 0.083); key otherwise unchanged, U 123; 898/939 absent from all three frames.
+- siena-concistoro-2308: no. 7 reader error over the whole letter 0.8-6.6% (CP95 9.7%), R9-SIENA7 negative stands at the point estimate;
+  homophonic+nomenclator family is a non-test at N=363 (nomenclator recall 0.04-0.07 on control; solve_nomen() added to tools/homophonic_anneal.py).
+  no. 15: no fitting key sheet in fasc. 1 (R4765..R4777; R4777 V mapping control-backed negative) -> too-short / no-key-material.
+- zeschau-seebach-1841: word-parse objective has no basin (k=1 return 0.32, width 0) -> retired for any search; crib-drag of French formulae is a
+  non-test (control G1 0.000, G2 0.041: the control text holds no multi-unit crib), not retired.
+- Lookups: R10-SRCH and R10-SRCH2 found all nine named s-z `parallel` actions already run by R7/R8 (0 requests).
+Open for the next s-z lane:
+1. manteuffel: pooled multi-code aligner re-run with 0521/0526/0518 added (~1.5-2, disk only); 0501 orchestrator decision still pending.
+2. wvo-hessen f.23: after the owner's f.23 sorter answers, split pile k28 and rebuild key per settled sign (~1.5); then a third audit.
+3. zeschau: a register-matched 1840s diplomatic-French control corpus + fill-free pattern-rarity crib score (~4), before any target run.
+4. siena no. 7: the nomenclator layer needs outside material (a sibling key or crib); no further machine family at N=363.
+Process note: NEXT-STEPS.tsv's parallel column lags the folders -- check each folder's last dated section before briefing a lookup worker.
+
 ## LANE LANE-RUN9-account-4 handoff (session_01S1eWrEhfTEUrnYjwb91iQ7, account 4), 6 October 2026 (closed 07:1x UTC: s-z backlog worked, lane about 48.3 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run9-jobs.md. WORK-QUEUE row LANE-RUN9-account-4: RUN8-account-4's
