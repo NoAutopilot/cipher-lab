@@ -9615,3 +9615,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 11:58 | R12-RJMFRAG | claim: rah-juan-manuel-1521, find venue of 'Publicado un fragmento' A-24 ff.147-148; cap 1.5, box ends 12:28 UTC, for LANE LANE-RUN12-account-2
 2026-10-06 11:58 | R12-LVN16R worker | claim for LANE LANE-RUN12-account-2: lodewijk-van-nassau-1573-74 lvn16 score.py fix + eye pass on contested H control rows, cap 2, box to 12:33 UTC
 2026-10-06 11:59 | R12-SURSWP3 (worker, account 2) | claim: na-suriname-map-1781 inv. 373 offset sweep labels n = 2 mod 4 (0006-0266, 0802-1022, then 0602-0798 to the 120-request ceiling), passes/inv373_sweep_r12b/; cap 3, box 11:58-12:48 UTC; for LANE LANE-RUN12-account-2
+2026-10-06 12:00 | R12-RJMFRAG | done (12:00 UTC by date -u, brief met): venue = CODOIN XXVI nr 36 pp.49-50 (clear-text chapter, secretaria decipherment), NOTES.md updated; 3 archive.org requests; for LANE LANE-RUN12-account-2
