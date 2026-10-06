@@ -73,3 +73,35 @@ Verdict: "c262 gloss L09-L13 native cut and read, ~$0.5" (L13 "quon" vs gloss.ts
 (--centres extended), one read, re-run the scripts listed in that section (RUN6-NOXREAD statistic and its controls), report old/new R vs
 p99/max. Then, if within cap: "text-check the date-only Dupuy matches, ~$1". AUDIT.md is not edited by this job; if a number in AUDIT.md
 or status.json depth_check moves, write a "Revision after AUDIT" note in NOTES.md and flag it in ROOM for a verifier (rule 10 propagation).
+
+## Wave 2 (6 Oct 2026 02:1x UTC). Wave-1 lesson: three of six ran 1.2-1.8x cap; an Opus session costs ~1.5 before any work, and a
+## "window pass" is many subagent calls, not one -- count calls, and stop before a call that would cross 80% of the cap.
+
+### R7B-BAL103R -- baluze103-letellier-marca-1644, reconcile the 157 disagreement columns + re-decode (cap 5, box 60 min)
+Verdict after R7A-BAL103: "reconcile the 157 disagreement columns from the crops and re-decode, ~$3". Settle each from the crops (batched,
+<= 4 Sonnet calls, crops only; or your own reading of the crops as one priced unit), write the settled ciphertext (never silently repair:
+keep the pass files and a settlement TSV), re-decode with key.tsv (decode_key.py --check), H/M/U before and after, re-run the fr17 judge
+with its null. Then, only if >= 40% of cap remains: calibrate the table on a few lines of one sibling with a period decipherment
+(f.171/f.189/f.200/f.230). Key changes only as a known-answer test on the sibling licenses (pre-registered).
+
+### R7B-ECK64B -- eckert-1864, the rest of the Jan-Feb 1864 old-vocabulary entries (cap 5, box 70 min)
+Verdict after R7A-ECK64: "pages 1-20 of mssEC 19, with key-no9.md extended from mssEC 67 pp.[11]-[15], [18], ~$4". Extend key-no9.md from
+those mssEC 67 pages (H, period), decode as many entries as the cap allows in page order, decode_no9.py --check, OR comparison where the
+folder already does it; log any rank/word conflict under rule 4 (Spit/men and Village conflicts stay logged). Huntington CONTENTdm per
+CLAUDE.md (CISOSEARCHALL form), >= 1.5 s apart.
+
+### R7B-ECK62 -- eckert-1862, carry 9991.571 book 1r, then the wrong-telegram test (cap 3.5, box 50 min)
+Verdict: "carry 9991.571 book 1r into assign_free/readings_free, ~$0.5; then the wrong-telegram test on the 18 neither-book entries,
+~$1.5". Pre-register the wrong-telegram test (statistic, control, gate) and push before running it.
+
+### R7B-HUNT -- huntington-blathwayt-madrid-1728, descending-glyph census (cap 3.5, box 50 min)
+Verdict: "descending-glyph census on BLA188 p4-p6 / BLA194 p1, ~$2". Read the A4-RFHUN section (23:4x 5 Oct) first. Crops via
+tools/iiif_lines.py or the folder's own crop route; one subagent call per page at most.
+
+### R7B-NOXV -- fr16142-noailles-constantinople-1571, verifier propagation of the R7A-NOX262 revision (cap 2.5, box 40 min)
+You are a verifier, not the solver (never R7A-NOX262's session). R7A-NOX262 corrected gloss.tsv L09/L13 and re-ran RUN6-NOXREAD: R 0.3506
+unchanged, but the nulls quoted in status.json depth_check moved (b p99 0.2496->0.2525; d p99/max 0.2581/0.2749 -> 0.2546/0.2721) and a
+test0 difflib swing was found (NOTES.md "R7A-NOX262" and its "Revision after AUDIT" note). Check those numbers from the committed outputs
+(re-run the scripts if cheap), then propagate per rule 10: a dated "## Revision after AUDIT (R7B-NOXV, 6 Oct 2026)" note in AUDIT.md (never
+rewrite earlier audits), the status.json c262 row's depth_check string, and any SECOND-OPINIONS-QUEUE.tsv row for this target. N-class
+and depth should not change (N0, D0); say so or say why not. `python3 tools/depth_check.py` after; paste its line for the row.
