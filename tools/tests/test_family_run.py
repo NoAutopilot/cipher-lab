@@ -10,6 +10,7 @@ the target's own tokens (N/K unchanged), writes a distinctly-suffixed decode fil
 (8) a --label given adds a corpus/label-derived suffix to the decode filename so two runs of the same family/seed
 on different corpora never collide (bBLZ4, 26 Sept 2026: bBLZ3's German-corpus masc-1 run silently overwrote
 bBLZ2's English masc-1.txt); no --label keeps the exact old bare filename.
+(9) --decode-tag TAG adds -TAG to the decode filename; omitted keeps the old name (R15-KAL13, 6 Oct 2026).
 test_control_n (bMALC, 26 Sept 2026): --control-n builds the homophonic control at a projected N above the
 target's own N, keeping the target's own K and scaling a profile=target sign-count profile proportionally;
 checks the control message is actually built at the projected length, "projected N" appears in the plan and the
@@ -156,6 +157,11 @@ def test_family_run():
             before = os.path.getmtime(out)
             rc, log = run(sp, "--family", "masc", "--dry-run", "--out", out)
             assert rc == 0 and "N=300 signs, K=" in log and os.path.getmtime(out) == before, log
+            # (9) --decode-tag adds its own suffix to the decode name (R15-KAL13); without it the name is unchanged
+            rc, log = run(sp, "--family", "masc", "--dry-run", "--out", out, "--param", "iters=20000", "--decode-tag", "convB")
+            assert rc == 0 and "families/masc-1-iters=20000-convB.txt" in log, log
+            rc, log = run(sp, "--family", "masc", "--dry-run", "--out", out, "--param", "iters=20000")
+            assert rc == 0 and "families/masc-1-iters=20000.txt" in log, log
         finally:
             import shutil
             shutil.rmtree(fdir, ignore_errors=True)

@@ -303,6 +303,9 @@ def main(argv=None):
                     help="build the control at this projected N instead of the target's own N (requires "
                          "--control-only); K stays the target's own K, any profile=target sign-count profile is "
                          "scaled proportionally to N")
+    ap.add_argument("--decode-tag", default="", metavar="TAG",
+                    help="extra suffix on the decode filename (R15-KAL13, 6 Oct 2026: two --cipher files with the same "
+                         "family/params/corpus, e.g. convention A and B, otherwise write one decode file); omitted = old name")
     ap.add_argument("--dry-run", action="store_true", help="print the plan (N, K, corpora, paths) and run nothing")
     a = ap.parse_args(argv)
 
@@ -372,6 +375,8 @@ def main(argv=None):
         tag = re.sub(r"[^A-Za-z0-9]+", "", tag_src).lower()[:16]
         if tag:
             dsuffix += f"-{tag}"
+    if a.decode_tag:
+        dsuffix += "-" + re.sub(r"[^A-Za-z0-9_-]+", "", a.decode_tag)[:24]
     plan = (f"family {a.family}: {fam.DESCRIPTION}\nspec {a.spec} slug {slug}\nciphertext: {len(msgs)} message(s), "
             f"N={N_display} signs, K={K} distinct, tokens={mode}" +
             (f" (target letters shuffled, seed {a.shuffle_target}, false-positive floor)" if a.shuffle_target is not None else "") +
