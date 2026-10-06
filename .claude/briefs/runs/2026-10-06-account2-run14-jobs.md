@@ -150,3 +150,38 @@ Intake: `na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text
 R14-OLDF section 18: four reader C1 rows (incl. C1_31, C1_05) were cut on the wrong crops. Re-cut those four on the right token
 positions (paste the command, eye each crop against the line image first), one blind Sonnet call on the four crops, reconcile; change
 a sign only where the image settles it, then re-judge per window under R13-OLDSEG's PREREG only if a sign changed. Units 1 + 1 (+1).
+
+## Wave 3 (spawned 15:5x UTC 6 Oct; lane about 39.5 of 60 at spawn). Intake gates as wave 2 (unchanged lines, re-run 15:5x).
+Wave 2: RJMV carried RJMZ; RJM9526 calibration PASS 0.679, both alphabets below 0.24 floor but rank 1/201; SUR758 transcribed (word score
+non-test); SURDP 0746 0.920 vs p99 0.556 SAME SYSTEM; LVN10D control FAIL again, per-token crops retired for 4610 p3; OLDF2 two signs
+changed (verifier flag). KAL12 still running.
+
+### R14-OLDV -- VERIFIER, na-oldenbarnevelt-2442-1605: carry R14-OLDF2 into AUDIT.md (Opus; cap 2, box 40 min)
+Verifier, separate from every solver. Claim under audit: NOTES.md section 19 "R14-OLDF2" (84f4031ed): C1_29 p8r8 -> p28r8 ("pere" ->
+"puere"), C1_31 s2pl3c7 -> s2ppl3c7 ("suplico" -> "supplico") via overrides.tsv; S/M/I 245/18/23; re-judge windows 0-3 all FAIL. Re-run
+apply_key --check, open the two crops (T1-T5) against the line image, confirm counts and the re-judge, carry into AUDIT.md and the
+SECOND-OPINIONS-QUEUE.tsv row SO-OLDEN-2442-BC1 (and its PROMPT file if it quotes either word). Correct only over-claims.
+
+### R14-SURDP2 -- na-suriname-map-1781: per-pair DP of 0758 and the unaligned 0702/0730 lines (Opus; cap 2, box 40 min)
+The Verdict's cheapest next, with R14-SURDP's script and PREREG shape (reuse, do not rewrite): a short PREREG addendum committed first
+naming the lines, then the same per-pair DP vs the pooled sign table (now including 0746 if R14-SURDP pooled it; say which) against the
+shuffled-gloss-line control. Report both numbers per scan. CPU only; no vision, no key edits.
+
+### R14-SUR2039 -- na-suriname-map-1781: "Smeedery" and fortress-work glosses as cribs on 2039's legend (Opus; cap 2.5, box 50 min)
+R13-SUR730 listed crib words for 4.VEL 2039's a-u "Verklaringe der Letteren": Smeedery, Affuyten/Affuyt, beslag, geschut, Fortres N.A.;
+R14-SUR746/758 may have listed more (Fortificatie werken, Linie, Verstopping, boom). Using ciphertext_2039_legend.tsv and the current key
+(reading_2039_legend*), pre-register (committed first) the crib list, the placement rule (legend entries whose unread/M positions have
+the crib's length and are consistent with keyed letters), and a control that can vary (the same cribs placed on 2039's legend shuffled
+within entries, or random Dutch words of the same lengths from the 0693-0758 glosses). Report hits beside the control; any placement
+that survives is graded S at most (rule 4), entered in no key file; NOTES section + HYPOTHESES.md row. Do not edit key.tsv.
+
+### R14-RJMTQ -- rah-juan-manuel-1521: T/Q values from pooled alignments (Opus; cap 2.5, box 50 min)
+Remaining gaps: "pool the f.194, f.199, f.40 and f.147 alignments for T/Q chunk counts and score Q against K after the look-alike check,
+~$2". PREREG committed first (the counts that would settle T or Q, and a shuffled-alignment control that can vary). No grade change
+without the gate; any value is S at most. CPU only. Do not touch f.34 or AUDIT.md.
+
+### R14-LVNEYE -- lodewijk-van-nassau-1573-74: eye check of the 10 control rows the 4610 p3 readers agreed against (Opus; cap 2, box 40 min)
+R14-LVN10D's named next: the per-token control FAILed twice with clean crops; look at the 10 control rows where both blind readers
+agreed against the control sign, on the 300-dpi crops, and say whether the control sign itself looks wrong (that would point at the
+control, not the readers). List them in NOTES.md; change nothing in the key or reading; the [retired] mark stays unless the control is
+shown wrong on >= 5 of 10 (then say so for the orchestrator; do not re-run).
