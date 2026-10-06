@@ -1,9 +1,9 @@
 # R9501 f.34 trial decode after the look-alike pass (R13-RJM34LA), key published (Tomokiyo), grades in grades_f34_tomokiyo_la.tsv; '_' = unread; letter runs joined, word breaks not marked
 1	m _ a _ s _ _ _ _ aqui r _ le _ ras _ _ h _ de _ que _ _ a _ en que ser _ r _ h
-2	sa _ que vuestra magestad _ de r _ da r _ _ yr _ _ y _ es _ no _
+2	sa _ que vuestra magestad _ de parti da para _ y para _ y _ es _ no _
 3	s _ eea vuestra magestad aleman se s _ _ s _ _ lo de Italia yo no se r va de
-4	r _ que vuestra magestad _ se r _ _ se as _ e _ de se _ _ se
-5	_ s _ yo en _ de _ y ello a _ _ rar _ da r _ _ _ _ aquell _
+4	r _ que vuestra magestad _ se parti _ se as _ e _ de se _ _ se
+5	_ s _ yo en _ de _ y ello a _ _ ra parti da para _ _ _ aquell _
 6	_ es s yo en aquel _ _ y _ _ _ a _ s _ e _ o ni _ no es
 7	de _ r del _ que _ _ es see _ e en _ sr _ s cosa s que s _ _
 8	_ _ de vi _ _ _ eoy no ha _ de que _ e _ es _ era _ a vuestra magestad
@@ -21,11 +21,11 @@
 20	o la mayo r _ r _ _ della del a con _ asea de frances es _ _ r al
 21	con de _ ra _ sa _ a _ que _ s de _ _ e _ e lo _ _
 22	_ _ _ e _ que _ se _ s _ que se _ s _ o _ oe la _
-23	_ no _ rr _ sasha que s que r _ _ r _ es cosa s se
+23	_ no _ rr _ sasha que s que para _ r _ es cosa s se
 24	_ _ _ le _ s _ s con arm _ s _ _ _ _ lo sr _ s _ _ s que
 25	e _ en Napoles y _ y en la _ de _ no _ _ dezi _ _ s por
 26	a _ _ _ _ s escrito _ _ s _ _ _ _ _ _ _ _ _ _ _ _ y se r _ no _ s _ r _ e
-27	_ vuestra magestad no quiere ha ee _ _ _ por Italia y por Napoles r _ _ a _ que
+27	_ vuestra magestad no quiere ha ee _ _ _ por Italia y por Napoles para _ a _ que
 28	lo _ _ _ a se s _ ra _ ya pora _ ha con _ arase _ _ del
 29	_ _ es _ ra se me que de _ r va dexa r _ do que el _ de s
-30	_ _ que de luego ya _ _ _ es de _ r _ da r _ _ e _ _ _ ee se la _
+30	_ _ que de luego ya _ _ _ es de _ parti da para _ e _ _ _ ee se la _

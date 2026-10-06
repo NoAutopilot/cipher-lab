@@ -74,3 +74,37 @@ values on this leaf, which have no held-out test here.
 Over-claims found: none that states content outside the repository. One under-statement corrected in NOTES.md (dated verifier note
 below the R12-RJM9501 section): the one-seed "barely separates" is replaced by the 20-seed figures. No reading, key or grade changed by
 this audit. SECOND-OPINIONS-QUEUE.tsv: no row for this target (none filed; no N3+ reading exists), so nothing to propagate.
+
+## R13-RJMV2, 6 Oct 2026 (13:57-14:1x UTC): standing of R13-RJM34LA's f.34 look-alike pass and decode rerun, and the J-initial regrade
+Verifier session, separate from every solver (R12-RJM9501, R13-RJM34LA) and from R13-RJMV. Brief: .claude/briefs/runs/2026-10-06-account2-
+run13-jobs.md job R13-RJMV2. Requests: de-crypt.org 2 (one browser login: RecordsView 9501 + full-size P1, sha1 b510ebe5... = images/
+manifest.json); image and crops in the scratchpad only (RUN1-SEG's iiif_lines command, 30 crops). No subagent. This rates a trial decode,
+not a reading of a letter: no N-class or depth assigned (none was before; the evidence does not require one).
+
+| check | finding | standing |
+|---|---|---|
+| PREREG before the re-reads | lookalike/PREREG_f34.md is on main from a15348c2d (13:45:37 UTC push order), byte-identical to today's file; the re-read and its outputs (f34_reread.tsv, passD, the _la results) first appear in 69f3548a6 (13:52:36). The hash the solver cites, 21427aac9, does not resolve on main: its local commit was folded by room.py's rebase into another session's commit (CLAUDE.md rule 6's known shape). | order holds; cited hash corrected to a15348c2d |
+| Reproducibility (rule 7) | decode9501.py --check and decode9501_la.py --check exit 0 (before and after this audit's exception). | holds |
+| Grades vs R12-RJMV's licence (solver's rerun, 753 tokens) | S 309 = 169 agreed codes + 140 agreed A/Z/R/4/F; every look-alike-settled token at M (48) or U (120), none S; 0 H/C; 0 S on a split, one-reader or non-licensed label; 0 agreed A/Z/R/4/F below S; S unchanged by the pass (0 tokens moved in or out of S). | 0 outside licence |
+| Residual wording | NOTES and the PREREG report 0.065/0.066 as "agreement among three machine readers, not reader error and not true error" and name the 62 one-reader settlements as weaker. | correct (Usage 6) |
+| J-initial pointer, eye check | All 8 S-graded places (L02.8, .11, .15; L04.7; L05.16, .19; L23.15; L27.16) and the 2 M places on L30 (.14, .17) read at 2x: each is one group, a tall capital J (flat top bar, vertical stem, large leftward hook below the line) joined to as/ez -- "Jas sad Jez" (L02, L05, L30), "dim Jas g dim" (L04), "gap Jez fop" (L23), "lal Jez bla" (L27). The Z sign (yogh, r) on the same lines is small and slanted, written apart: L05 "g D Z A Jas", L23 "fop Z cao". jas (parti) and jez (para) are table codes. | pointer confirmed |
+
+Regrade applied (the brief allows it): lookalike/f34_exceptions.tsv (one rule, 10 places) merges each "Z as"/"Z ez" into the table code
+jas/jez at M (one eye, not two blind readers; never S). decode9501_la.py reads it after passD and exits if a row does not match. Before ->
+after, rule 4: **S 309 / M 161 / U 283 of 753 -> S 301 / M 169 / U 273 of 743** (8 S yogh tokens out; 10 codes in at M; 2 M yogh and 10 U
+as/ez merged away). H 0, C 0. Line 2 now reads "... que vuestra magestad _ de parti da para _ y para ...". decode9501.py and its outputs are
+untouched (the pre-pass record stays as R12-RJM9501 and R13-RJMV rated it, with S 309 there now known to include 8 code initials).
+
+Judge after the regrade (same 20 shuffled-order seeds, results_shuffle_spread9501_la.json):
+```
+es1600: FAIL score=-1.103, real_p05=-0.833   shuffled -1.267..-1.169 (mean -1.208, sd 0.026), target above all 20
+es17c:  FAIL score=-1.065, real_p05=-0.858   shuffled -1.198..-1.096 (mean -1.145, sd 0.023), target above all 20
+```
+Up from -1.129 / -1.093 (solver's rerun) by 0.026 / 0.028, about one shuffled sd; still FAIL by 0.27 / 0.21. "Judge cannot decide" stands.
+
+Pointers, not applied: L04.1 "Z ul" and L23.5 "Z ump" look J-initial on the image too ("Jul", "Jump"), but jul/jump are not table codes,
+so they stay as read. Other "Z + lower-case group" pairs in the rerun, not eye-checked here: L24 "Z um" (jum = otra is a table code, the
+likeliest further merge), and L03 "Z bay", L07 "Z suf", L26 "Z log"/"Z bo", L29 "Z bay"/"Z geb" (no j-code in the table). No "Z as"/"Z ez" is left.
+
+Over-claims found: none that states content outside the repository. Corrections: the PREREG hash in NOTES.md (21427aac9 -> a15348c2d), and
+the S count after the J-merge (NOTES verifier note). SECOND-OPINIONS-QUEUE.tsv: no row for this target (no N3+ reading), nothing to carry.

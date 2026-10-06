@@ -1,0 +1,16 @@
+# R13-RJMV2 (verifier, 6 Oct 2026): one rule, applied by scripts/decode9501_la.py after passD. Where both readers split a J-initial
+# group into the sign Z (yogh, letter r) + "as"/"ez", the image writes one group: a tall capital J with a flat top bar, a vertical
+# stem and a large leftward hook below the line, joined to as/ez, unlike the small slanted yogh on the same lines (L05 "g D Z A Jas",
+# L23 "fop Z cao"). Eye-checked on the DECODE full-size P1 (sha1 b510ebe5...) at 2x, all ten places. The merged token is the table
+# code jas (parti) / jez (para), graded M (one eye, not two blind readers; R12-RJMV's licence).
+line	pos	from	to
+2	8	Z as	jas
+2	11	Z ez	jez
+2	15	Z ez	jez
+4	7	Z as	jas
+5	16	Z as	jas
+5	19	Z ez	jez
+23	15	Z ez	jez
+27	16	Z ez	jez
+30	14	Z as	jas
+30	17	Z ez	jez

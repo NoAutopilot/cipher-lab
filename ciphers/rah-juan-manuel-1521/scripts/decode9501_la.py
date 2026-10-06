@@ -34,10 +34,19 @@ def passd():
     return out
 
 
+def exceptions():
+    """lookalike/f34_exceptions.tsv (R13-RJMV2): (line, pos of the Z) -> merged J-initial table code."""
+    out = {}
+    with open(H / "lookalike/f34_exceptions.tsv", encoding="utf-8") as f:
+        for r in csv.DictReader((x for x in f if not x.startswith("#")), delimiter="\t"):
+            out[(int(r["line"]), int(r["pos"]))] = (r["from"].split(), r["to"])
+    return out
+
+
 def build():
     key, alp = d.t1.load_key(), d.alpha()
     rec, *_ = d.t1.reconcile(d.load("A"), d.load("B"), key)
-    pd = passd()
+    pd, ex = passd(), exceptions()
     grades, lines, flat, before = [], [], [], Counter()
     for n in sorted(rec):
         toks = []
@@ -50,6 +59,16 @@ def build():
                     sys.exit("unexpected passD change at L%02d.%d" % (n, j + 1))
                 t, st = r["sign_id"], "lookalike"
                 v, g, kind = d.decode_tok(t, "split-code", key, alp)   # one-reader grading: never S
+            if (n, j) in ex:                               # second half of a merged J-group: dropped
+                continue
+            if (n, j + 1) in ex:
+                frm, to = ex.pop((n, j + 1))
+                nxt = pd[("f34_L%02d" % n, j + 2)]["sign_id"]     # the passD label (= the raw token unless settled)
+                if [t, nxt] != frm or to not in key:
+                    sys.exit("exception does not match at L%02d.%d: %s %s" % (n, j + 1, t, nxt))
+                ex[(n, j + 1)] = None                          # mark pos j+2 (index j+1) to drop
+                t, st = to, "verifier-merge"
+                v, g, kind = d.decode_tok(t, "split-code", key, alp)   # one eye: M, never S
             grades.append((n, j + 1, t, st, kind, v, g))
             toks.append((v, kind))
             flat.append((t, st))

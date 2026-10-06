@@ -44,15 +44,12 @@ line	pos	token	readers	kind	value	grade
 2	5	bas	agree	code	vuestra magestad	S
 2	6	get	agree	miss	_	U
 2	7	sof	agree	code	de	S
-2	8	Z	agree	sym	r	S
-2	9	as	agree	miss	_	U
+2	8	jas	verifier-merge	code	parti	M
 2	10	sad	agree	code	da	S
-2	11	Z	agree	sym	r	S
-2	12	ez	agree	miss	_	U
+2	11	jez	verifier-merge	code	para	M
 2	13	mef	agree	miss	_	U
 2	14	K	lookalike	sym	y	M
-2	15	Z	agree	sym	r	S
-2	16	ez	agree	miss	_	U
+2	15	jez	verifier-merge	code	para	M
 2	17	pib	agree	miss	_	U
 2	18	F	agree	sym		S
 2	19	K	lookalike	sym	y	M
@@ -91,8 +88,7 @@ line	pos	token	readers	kind	value	grade
 4	4	bas	agree	code	vuestra magestad	S
 4	5	yip	agree	miss	_	U
 4	6	dim	agree	code	se	S
-4	7	Z	agree	sym	r	S
-4	8	as	agree	miss	_	U
+4	7	jas	verifier-merge	code	parti	M
 4	9	g	agree	miss	_	U
 4	10	dim	agree	code	se	S
 4	11	F	agree	sym		S
@@ -122,11 +118,9 @@ line	pos	token	readers	kind	value	grade
 5	13	D	lookalike	sym-novalue	_	U
 5	14	Z	agree	sym	r	S
 5	15	A	agree	sym	a	S
-5	16	Z	agree	sym	r	S
-5	17	as	agree	miss	_	U
+5	16	jas	verifier-merge	code	parti	M
 5	18	sad	agree	code	da	S
-5	19	Z	agree	sym	r	S
-5	20	ez	agree	miss	_	U
+5	19	jez	verifier-merge	code	para	M
 5	21	pis	agree	miss	_	U
 5	22	F	agree	sym		S
 5	23	gef	lookalike	miss	_	U
@@ -561,8 +555,7 @@ line	pos	token	readers	kind	value	grade
 23	12	gap	agree	code	que	S
 23	13	R	agree	sym	s	S
 23	14	gap	agree	code	que	S
-23	15	Z	agree	sym	r	S
-23	16	ez	agree	miss	_	U
+23	15	jez	verifier-merge	code	para	M
 23	17	fop	agree	miss	_	U
 23	18	Z	agree	sym	r	S
 23	19	cao	agree	miss	_	U
@@ -668,8 +661,7 @@ line	pos	token	readers	kind	value	grade
 27	13	K	lookalike	sym	y	M
 27	14	hef	agree	code	por	S
 27	15	lal	agree	code	Napoles	S
-27	16	Z	agree	sym	r	S
-27	17	ez	agree	miss	_	U
+27	16	jez	verifier-merge	code	para	M
 27	18	bla	agree	miss	_	U
 27	19	A	agree	sym	a	S
 27	20	pib	agree	miss	_	U
@@ -737,11 +729,9 @@ line	pos	token	readers	kind	value	grade
 30	11	qes	split-code	code	es	M
 30	12	sof	split-code	code	de	M
 30	13	cil	lookalike	miss	_	U
-30	14	Z	lookalike	sym	r	M
-30	15	as	lookalike	miss	_	U
+30	14	jas	verifier-merge	code	parti	M
 30	16	sad	split-code	code	da	M
-30	17	Z	lookalike	sym	r	M
-30	18	ez	lookalike	miss	_	U
+30	17	jez	verifier-merge	code	para	M
 30	19	pib	lookalike	miss	_	U
 30	20	X	lookalike	sym	e	M
 30	21	z	lookalike	miss	_	U
