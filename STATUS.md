@@ -5053,3 +5053,28 @@ Open for the next lane / parent:
 3. fr16045 f.275v L17-L20: read the later-hand interlinear gloss over those lines as a C witness, ~$2.
 4. fr16142 c262 gloss: a blind read with a different instrument (word-level crops) or a person; two machine control reads have failed.
 5. hellen R1953 codes 1-800 image check, ~$6.
+
+## LANE DEFAULT-account-2-20261005-2217 handoff (session_01J69aWeq2QaUGpDPaxaYDW4, account 2), 6 October 2026 (closed 00:5x UTC: cheap m-z backlog worked, lane about 49.7 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-05-account2-default-2217-jobs.md. Gate 0a waited 23:12-23:30 for
+SESSION-SWEEP-account-2 (done 23:21, 0 targets recovered, no exclusions; its WORK-QUEUE row was still `claimed` when read). Backlog per WORK-QUEUE
+row 229: VERIFY-BACKLOG.tsv (only Schonenberg open in m-z), then plain `tools/next_steps.py` runnable rows, folders m-z. Seventeen Opus 5.5 workers
+in four waves (11 D, 6 D-), workers 43.23 + orchestrator about 6.5 = lane about 49.7 of cap 60 (get_session). five_hour `allowed` throughout.
+- Audit 2: na-schonenberg-1678-1716 body/L18 N0, L19 N2, leaf N0 upheld; depth D3 recounted 97.1% C; status.json two audits, PROGRESS col 2 x.
+- Transcription/gates (nothing entered a key): manteuffel frame 0527 (= ff.422v-423; 0528 is ff.423v-424) 248 tokens, per-leaf gate held;
+  matignon f.110 sample: known-answer control passes, every label gate fails, A-B 58.5% -> the sign sorter is next, not a machine pass;
+  thurloe P3 postscript vs key_stamford pre-registered gate FAIL, 5 conflicts logged; untersberg Walther plates CCXIX-CCXXIII all checked, no match.
+- Transcription evidence: rubin-1953 FBI file located (Cipher Foundation PDF, 142 pp.), three 1953 copies compared, vmie->vnie at M with
+  witnesses, Block C two blind passes agree on 136 chars; rayburn-2004 live Schneier 2006 upload is byte-identical to ours, 7 white-out
+  patches mapped (all margins).
+- Lookups/searches (search results only): ra-karlxi Bakes thesis login-gated; ss-radio-lippert 2021 eBay specimen not reachable; yogtze
+  plate/abbreviation crib search non-discriminating; sp99-wotton "159" leans to a correspondent designation (I); ula-degeer 21 Jan 1645
+  item is a Crown copy, all clear; roell-vandedem EAD has no key item, inv. 92 9 Feb window and inv. 348 handover read, no Constantinople
+  minute found; rumpf NA 3.01.19 inv. 2030/2044 still physical only (6 Oct 2026).
+Open for the next lane:
+1. roell-vandedem-1809: inv. 348 scans 3-79 in full and the Constantinople legation archive (NA 1.02.20), ~$3-4 (D2B-ROELL3).
+2. rubin-1953: FBI p.67 cryptanalyst copy at 300 dpi, ~$1.5 (D2B-RUBIN2).
+3. matignon-mayenne-1586 f.110: owner sign-sorter pass on T/z/BOX/U (D2B-MATF110; TRANSCRIPTION.md rule).
+4. manteuffel: pooled gate across 0501/0502/0527/0528 (~$1) is the orchestrator decision still pending, then 0574/0575 (~$3-4).
+5. ra-karlxi: Bakes 2018 book on dk.upce.cz, ~$0.3+floor.
+Lesson for the next brief: an Opus session floor is about 1.4-1.7 per worker; never cap an Opus job below 2.
