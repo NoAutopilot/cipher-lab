@@ -127,3 +127,19 @@ account-3 orchestrator to publish (never publish yourself, never edit ASKS.md). 
 
 Wave 3 sessions (14:48 UTC): R11A-AVSK session_014ScaXKcd9HVfkeSV9mgHig; R11A-BOWES3 session_01M1SyaFd4hDLfaELEnbKEoe; R11A-HAR
 session_015vGpuBo35CergURwf6MpZj.
+
+## Wave 4 (spawned 15:1x UTC). Gallica still unreachable at 15:1x (manifest probe timed out, 000).
+
+### R11A-AVSV -- VERIFIER (not a solver; separate session from every R11A-AVS* worker): august-van-saksen-1561-64 carry-over. Cap 4, box 60 min.
+CLAUDE.md "Verifier brief (template)" steps 3a-5 only, as a carry-over (rule 10 last paragraph): readings/grades revised after AUDIT.md by
+R11A-AVS57 (57 p3 C 247 M 53 -> C 294 M 7, one letter) and R11A-AVS53 (53 S 289 M 75 -> S 358 M 6; L01 itc->itz, L10 mrch->mich), with
+R11A-AVSK (no change; sign 9 stays M). Re-run `tools/decode_key.py` / the folder's decode scripts with --check yourself; confirm the counts;
+carry them into AUDIT.md (a dated section) and into the SECOND-OPINIONS-QUEUE.tsv row SO-SAXONY-53-57 and its PROMPT file where they quote the
+old counts or words; re-run tools/depth_check.py and set depth fields per rule 4a in status.json if they change (rebase first); a class change
+needs the full template, otherwise say "N-class unchanged" with the reason. Correct any over-claiming sentence. Do not decode new material.
+
+### R11A-HEIN2 -- heinsius-vanhaersolte-1703, "Next step" step 3. Cap 3, box 50 min.
+Huygens retroboeken Heinsius edition, toc1 accessor (chronological letter index) and per-letter pages (>= 2 s apart, descriptive UA, <= 60
+requests): list every Van Haersolte letter in Deel 2 (and Deel 3 if the index makes it cheap) not yet among the 70 pages read; for each, note
+whether the print shows cipher numbers or spaced-type deciphered passages, and any number-to-word pair (C grade only when the edition itself
+states the pair, as letter 929's footnote did). No key change without the pair stated in print. Update NOTES next-step section + Verdict.
