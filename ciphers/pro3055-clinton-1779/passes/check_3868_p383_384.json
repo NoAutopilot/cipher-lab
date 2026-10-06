@@ -1,0 +1,159 @@
+{
+ "pass_A": {
+  "p383": {
+   "cells_read": 323,
+   "compared_cells": 313,
+   "match_strict": 295,
+   "match_i_eq_j": 295,
+   "share_i_eq_j": 0.942,
+   "control_shuffled_plaintext": {
+    "seeds": 1000,
+    "mean": 22.063,
+    "p95": 30,
+    "max": 38
+   },
+   "gate_pass": true
+  },
+  "p384": {
+   "cells_read": 237,
+   "compared_cells": 201,
+   "match_strict": 196,
+   "match_i_eq_j": 197,
+   "share_i_eq_j": 0.98,
+   "control_shuffled_plaintext": {
+    "seeds": 1000,
+    "mean": 14.233,
+    "p95": 20,
+    "max": 25
+   },
+   "gate_pass": true
+  },
+  "pooled": {
+   "compared_cells": 514,
+   "match_strict": 491,
+   "match_i_eq_j": 492,
+   "share_i_eq_j": 0.957,
+   "control_shuffled_plaintext": {
+    "seeds": 1000,
+    "mean": 36.342,
+    "p95": 47,
+    "max": 56
+   },
+   "gate_pass": true
+  }
+ },
+ "reconciled": {
+  "p383": {
+   "cells_read": 323,
+   "compared_cells": 311,
+   "match_strict": 305,
+   "match_i_eq_j": 305,
+   "share_i_eq_j": 0.981,
+   "control_shuffled_plaintext": {
+    "seeds": 1000,
+    "mean": 21.543,
+    "p95": 30,
+    "max": 36
+   },
+   "gate_pass": true,
+   "apart": [
+    {
+     "word": "promise",
+     "cells": "18-27 18-9 18-14 18-10 18-13 18-12",
+     "page_letters": "proise",
+     "apart": "6 cells for 7 letters"
+    },
+    {
+     "word": "truth",
+     "cells": "18-4 18-9 18-17 18-4 18-5 18-6",
+     "page_letters": "truthe",
+     "apart": "6 cells for 5 letters"
+    }
+   ],
+   "mismatches": [
+    "c1.5 18-4 page t / decipherment m",
+    "c1.43 20-4 page d / decipherment e",
+    "c5.7 24-1 page a / decipherment c",
+    "c5.8 24-3 page l / decipherment r",
+    "c5.9 24-2 page l / decipherment o",
+    "c7.44 1-2 page y / decipherment e"
+   ]
+  },
+  "p384": {
+   "cells_read": 239,
+   "compared_cells": 224,
+   "match_strict": 220,
+   "match_i_eq_j": 221,
+   "share_i_eq_j": 0.987,
+   "control_shuffled_plaintext": {
+    "seeds": 1000,
+    "mean": 15.991,
+    "p95": 23,
+    "max": 28
+   },
+   "gate_pass": true,
+   "apart": [
+    {
+     "word": "practising",
+     "cells": "18-27 18-9 2-6 18-4 18-10 18-13 18-10 18-11 6-1",
+     "page_letters": "prctising",
+     "apart": "9 cells for 10 letters"
+    },
+    {
+     "word": "before",
+     "cells": "1-1 18-16 18-14 18-9 18-6",
+     "page_letters": "bfore",
+     "apart": "5 cells for 6 letters"
+    },
+    {
+     "word": "arnold",
+     "cells": "3-1",
+     "page_letters": "a",
+     "apart": "1 cells for 6 letters"
+    }
+   ],
+   "mismatches": [
+    "c2.30 6-9 page n / decipherment g",
+    "c4.17 18-14 page o / decipherment e",
+    "c4.18 18-15 page n / decipherment s"
+   ]
+  },
+  "pooled": {
+   "compared_cells": 535,
+   "match_strict": 525,
+   "match_i_eq_j": 526,
+   "share_i_eq_j": 0.983,
+   "control_shuffled_plaintext": {
+    "seeds": 1000,
+    "mean": 37.567,
+    "p95": 47,
+    "max": 58
+   },
+   "gate_pass": true
+  }
+ },
+ "same_key_as_2894": {
+  "distinct_cells": 128,
+  "also_in_key_2894": 58,
+  "agree": 58
+ },
+ "reconciled_changes": [
+  "p383 c1.22 -1 (pass -13; image: 1 (then 3 below), \"leaders\" l e a d e r s)",
+  "p383 c1.48 -1 (pass -14; image: two cells 1 and 4)",
+  "p383 c4.11 -9 | (rule under 9 (pass set it under an extra -1))",
+  "p383 c4.31 4-1 (pass 4-7; line 4 has 4 letters, so 7 is out of range; the hand's 1 carries a hooked top; M)",
+  "p383 c4.33 \"I\" (pass -3[?]; image: the gloss I, written above \"apprehend\")",
+  "p383 c5.27 -7 (pass -4; image 7 (stroke like 4))",
+  "p383 c5.28 -6 (pass -16; image 6 with a lead-in stroke)",
+  "p383 c5.29 -2 (pass -9; image 2)",
+  "p383 c5.39 -17[?] (pass -14[?]; image damaged, 14/17; the next cells read 4, 5, 6 tightly written)",
+  "p383 c7.44 -2 (pass 15-2; image: a lone 2 set under 1-3, then 15- before 1)",
+  "p384 c1.12 -6 (pass -16; image 6 then a separate 1)",
+  "p384 c2.6 -1 (pass 2-16[?]; image: a lone 1, then 2-6)",
+  "p384 c3.3 2-6 (pass 2-16[?]; image 2-6 clear, no a cell between 9 and 2-6)",
+  "p384 c3.34a -1 (inserted: image 5, 1, 1-1 (pass omitted the lone 1))",
+  "p384 c5.26 3-1 (pass 3-15[?]; the 5 belongs to the neighbouring column)",
+  "p384 c6.4 \"q\" (pass \"a[?]\"; a q written in clear (the key page has no q))",
+  "p384 c6.8 \"Mess\" (pass \"Next[?]\"; gloss Mess(rs))"
+ ]
+}
