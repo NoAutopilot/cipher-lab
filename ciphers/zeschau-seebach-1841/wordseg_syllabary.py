@@ -204,7 +204,30 @@ def control(out):
 def target(out, shuffled):
     if json.loads((HERE / "wordseg_control.json").read_text())["verdict"] != "CONTROL PASSES GATE":
         sys.exit("CONTROL BELOW GATE: target not run (PREREG-R9-ZESCH)")
-    sys.exit("target mode: write after the control passes (PREREG-R9-ZESCH step 4)")
+    held, lms, inv, *_ = setup()
+    rng = random.Random(2020)
+    segs = []
+    for name, lang, ps, _ in G.target_segments():
+        ps = list(ps)
+        if shuffled:
+            d = list("".join(ps)); rng.shuffle(d); ps = G.pairs("".join(d), 0)
+        segs.append((lang, np.array([int(p) for p in ps], dtype=np.int64)))
+    pins = {int(c): inv.index(u) for c, u in G.PINS.items()}
+    best = None
+    for sd in SEEDS:
+        m, s = anneal(segs, inv, lms, pins, sd)
+        print(sd, round(s, 1), flush=True)
+        if best is None or s > best[1]:
+            best = (m, s, sd)
+    m = best[0]
+    dec = {"fr": "", "de": ""}
+    for lang, cs in segs:
+        dec[lang] += "".join(inv[m[c]] for c in cs)
+    for lang, t in dec.items():
+        (HERE / f"{out.stem}_decode_{lang}.txt").write_text(t + "\n")
+    res = {"mode": out.stem, "best_seed": best[2], "J": round(best[1], 1),
+           "key": {f"{c:02d}": inv[m[c]] for c in sorted({int(x) for _, cs in segs for x in cs})}}
+    out.write_text(json.dumps(res, indent=1) + "\n")
 
 
 if __name__ == "__main__":

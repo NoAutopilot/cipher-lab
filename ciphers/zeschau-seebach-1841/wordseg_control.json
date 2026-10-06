@@ -1,0 +1,33 @@
+{
+ "mode": "control",
+ "objective": "word-parse LLR vs letter unigram, injective key",
+ "K": 98,
+ "N_tokens": 2666,
+ "units": 98,
+ "inventory": 276,
+ "error_rate": 0.01,
+ "chunk": 20,
+ "moves": 50000,
+ "restarts": 2,
+ "true_key_J": 1181.7,
+ "seeds": [
+  {
+   "seed": 2091,
+   "J": 957.4,
+   "token_acc": 0.0
+  },
+  {
+   "seed": 2092,
+   "J": 929.8,
+   "token_acc": 0.0079
+  },
+  {
+   "seed": 2093,
+   "J": 900.5,
+   "token_acc": 0.0
+  }
+ ],
+ "mean_token_acc": 0.0026,
+ "gate": 0.6,
+ "verdict": "CONTROL BELOW GATE"
+}
