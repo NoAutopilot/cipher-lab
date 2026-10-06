@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """D4-PISRS (6 Oct 2026; pisrs/PREREG_pisrs.md): PIS1-KEY (a) re-run with only the 9 SETTLED tokens of pis2/t31_tokens.tsv
 relabelled. pis1key.py imported unchanged (run_files, relabel_file, clear_of, ctrl86, control, identical).
-    python3 pisrs/pisrs.py   -> pisrs/tx_relabel/*, pisrs/pisrs_result.json"""
+    python3 pisrs/pisrs.py [f244r] [f275r]   -> pisrs/tx_relabel/*, pisrs/pisrs_result_<page>.json, pisrs/pisrs_result.json"""
 import json, os, random, sys
 H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
 sys.path.insert(0, os.path.join(T, 'pis1key'))
@@ -53,22 +53,26 @@ def write(lines, new, dst):
 
 
 def check_context(leaf, path):
+    """Sanity check against pis2/tokens_pos.tsv: the bracketed token is T31 and its non-'/' neighbours match."""
     lines = {x[0]: x[1].split() for x in read(path) if x}
     for (lf, l, i), ctx in pos.items():
         if lf != leaf:
             continue
         t = [x for x in lines[l] if x != '/']
-        c = ctx.split(); m = c.index(next(x for x in c if x.startswith('[')))
-        got = t[i - m:i - m + len(c)]
-        want = [x.strip('[]') for x in c]
-        assert [g.strip('?[]') for g in got] == [w.strip('?[]') for w in want], (lf, l, i, got, want)
+        c = [x for x in ctx.split() if x != '/']; m = next(n for n, x in enumerate(c) if x.startswith('['))
+        lo = i - m
+        got = [t[k] if 0 <= k < len(t) else None for k in range(lo, lo + len(c))]
+        assert [g.strip('?[]') if g else None for g in got] == [w.strip('?[]') for w in c], (lf, l, i, got, c)
 
 
 def main():
     key = P.load_key(); out = {}
     pages = [('f244r', 'tx86', 'kp86/colbert_p49_50.txt', '', 0.284),
              ('f275r', 'tx86e', 'kp86d/colbert_p121_123.txt', 'Mais croyant que Monsieur de Luxembourg', 0.215)]
+    only = sys.argv[1:] or ['f244r', 'f275r']
     for pg, d, cl, drop, err in pages:
+        if pg not in only:
+            continue
         clear, ptext = P.clear_of(cl, drop)
         rec = f'{d}/ciphertext_{pg}.tsv'
         check_context(pg, rec)
@@ -90,18 +94,22 @@ def main():
         for _ in range(200):
             pk = dict(zip(rnd.sample(cand, len(targets)), targets))
             toks = [t for t in ' '.join(relabel_some(body, pk)[x[0]] for x in lines if x).split()]
-            tmp = write(lines, relabel_some(body, pk), 'pisrs/tx_relabel/_tmp.tsv')
+            tmp = write(lines, relabel_some(body, pk), f'pisrs/tx_relabel/_tmp_{pg}.tsv')
             tk, _ = load_tokens(tmp); draws.append(float(nw_score(dec(tk, key), clear)))
-        os.remove(os.path.join(T, 'pisrs/tx_relabel/_tmp.tsv'))
+        os.remove(os.path.join(T, f'pisrs/tx_relabel/_tmp_{pg}.tsv'))
         draws.sort()
         r["random_relabel_null"] = {"n": 200, "mean": round(sum(draws) / 200, 4), "p95": round(draws[189], 4),
                                     "max": round(draws[-1], 4),
                                     "share_ge_settled": round(sum(x >= r["new"][newf]["score"] - 1e-9 for x in draws) / 200, 3)}
         r["identical"] = P.identical(newf, cl, key, {'T31': 'T36'})
         out[pg] = r
-    out["supported_both"] = bool(out['f244r']["supported"] and out['f275r']["supported"])
-    json.dump(out, open(os.path.join(H, 'pisrs_result.json'), 'w'), indent=1)
-    print('supported_both', out["supported_both"])
+    for pg, r in out.items():
+        json.dump(r, open(os.path.join(H, f'pisrs_result_{pg}.json'), 'w'), indent=1)
+    if len(only) == 2 or all(os.path.exists(os.path.join(H, f'pisrs_result_{p}.json')) for p in ('f244r', 'f275r')):
+        both = {p: json.load(open(os.path.join(H, f'pisrs_result_{p}.json'))) for p in ('f244r', 'f275r')}
+        both["supported_both"] = bool(both['f244r']["supported"] and both['f275r']["supported"])
+        json.dump(both, open(os.path.join(H, 'pisrs_result.json'), 'w'), indent=1)
+        print('supported_both', both["supported_both"])
 
 
 if __name__ == '__main__':
