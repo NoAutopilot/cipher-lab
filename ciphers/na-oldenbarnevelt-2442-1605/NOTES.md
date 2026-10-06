@@ -1160,9 +1160,50 @@ window falls to the shuffled-decode level.
 crops only and the result re-judged per window under this PREREG's cut, ~$2.5. No further corpus building (section 16); a further judge run on the
 unchanged reading adds nothing -- re-judge only after (f) or (a'') changes a sign.
 
-## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA and R13-OLDSEG, 6 Oct 2026)
+## 18. R14-OLDF, 6 Oct 2026: crop re-look at the 14 M/I-graded B/C1 tokens (step (f)) -- no sign settled by the image, so no re-judge; status stays open
 
-- Action that depends on nobody: (f) of section 17's Verdict -- a crop re-look at the 14 M/I-graded B/C1 tokens (windows 0
-  and 3 first), one blind pass, re-judged per window, ~$2.5. Step (e) ran on 6 Oct 2026 (R13-OLDSEG, section 17: all four windows
+Brief: `.claude/briefs/runs/2026-10-06-account2-run14-jobs.md` (LANE LANE-RUN14-account-2), job R14-OLDF, step (f) of section 17 only.
+Pre-registration `transcription/PREREG_R14-OLDF.md` (change rule, re-judge rule) pushed with the crops (64d761fd5) before the blind
+pass was read. No reading, key, grade or corpus changed (rule 7 not triggered).
+
+**Crops (committed, `images/crops_R14OLDF/`, 14 tokens x {3x, 1x}, 2.7 MB):** `python3 scripts/token_crops_R14OLDF.py` -- per-token
+boxes cut with PIL from scans 002 (B) and 006 (C1) on disk in the A2-OLD region coordinates, 3x Lanczos enlargement; boxes adjusted
+once after a contact-sheet check (the committed `crops_BC1` line crops straddle two text lines in C1, so they were not reused).
+
+**Blind pass** (one Sonnet subagent call, the 14 3x crops only; no key, no committed rows, no values; OLD-PASS2 notation). Output and
+the worker's reconciliation per token: `transcription/passH_blind_R14OLDF.tsv`. Four of the reader's C1 rows do not match their crops
+(C1_29 unreadable as given; C1_31's reading is the C1_36 word, C1_36's is the C1_44 word, C1_44 "unreadable") -- the reader shifted
+rows; those four are not a blind read of their tokens. Literal per-sign agreement on the 10 aligned rows: 28 of 49 committed signs
+(57.1%; agreement, not accuracy; no look-alike folding). Most of the gap is naming: the hand's d/8 loops named 2/8, 4 named q, g named
+9, the long-descender p dropped.
+
+**Reconciliation (PREREG item 3: a sign changes only where the blind reader names a different sign and the image settles it).** No sign
+met the rule. Kept, with two candidates and one convention point noted for the next re-read:
+- B37 `bv8n4s`: the reader names sign 2 as `2`. The shape is the one this hand uses for both u and v -- committed as `v` in `v8r4s`
+  (B55) and as `2` in `q28`/`28r` -- so the image cannot decide v vs 2; it is a convention choice (u/v), not a misread. Normalising the
+  u/v naming across B/C1 is a notation step (the CLAUDE.md rule 3 PX-BRODEC lesson), not a transcription correction; not done here.
+- C1_05 `b8s424`: after `b8` the crop may show a doubled s as in `d8ss87` (B6), i.e. `b8ss424`; the reader also gives one extra sign.
+  Not settled at this resolution; either way the word is "besaua"/"bessaua".
+- C1_31 `s2pl3c7`: the crop shows two long descenders before the l (`s2ppl3c7`, the "supplico" spelling). The reader's row for this
+  crop is shifted (it read q28n), so PREREG item 3(a) is not met; left as committed and flagged.
+- B28, B29, B31, B57, B64, C1 3, 21, 29, 30, 36, 44: the image is consistent with the committed rows or does not settle the difference.
+
+**Re-judge: not run.** PREREG item 4 / section 17: with no sign changed, a further judge run on the unchanged reading adds nothing.
+Section 17's per-window figures (windows 0-3: -1.050, -0.911, -0.933, -1.080 against held-out p05 -0.906 to -0.910; all FAIL) stand.
+
+Not found: no image-settled change in any of the 14 tokens; the M/I tokens stay M/I. A second blind call to re-read the four shifted
+C1 crops (C1_29, C1_31, C1_36, C1_44) was not made (one pass was the brief's unit count).
+
+**Verdict: open.** Next steps: (a'') the owner's sign sorter for A/C2 (waiting, R7-OLDSORT/R7-OLDFIX), then a key-constrained re-read;
+(f') one blind call on the four shifted C1 crops only (`images/crops_R14OLDF/C1_29,31,36,44.png`, one file per call so rows cannot
+shift), ~$1.5, then settle C1_31 `s2ppl3c7` and C1_05 `b8ss424` under PREREG_R14-OLDF; (n) a u/v notation pass (one naming for the
+shared u/v shape across B/C1, applied to both the reading and the judge input) before any further judge run. Re-judge only if (f'),
+(n) or (a'') changes the text.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG and R14-OLDF, 6 Oct 2026)
+
+- Action that depends on nobody: (f') of section 18's Verdict -- one blind call per file on the four C1 crops the R14-OLDF
+  reader shifted, ~$1.5; or (n) the u/v notation pass. Step (f) ran on 6 Oct 2026 (R14-OLDF, section 18: no sign settled by the
+  image, no re-judge). Step (e) ran on 6 Oct 2026 (R13-OLDSEG, section 17: all four windows
   FAIL, not concentrated in the OLD-PASS2 lines; deepest where the M/I tokens are). Step (d') ran on 6 Oct 2026 (R12-OLDCORP, section 16: es1600, FAIL by 0.140). Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
   the owner's sorter, seeded 6 Oct 2026 (R7-OLDSORT, `sorter/`, section 14) and re-cut on the cipher lines only (R7-OLDFIX, section 15).

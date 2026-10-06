@@ -1,0 +1,15 @@
+id	committed	blind_reading	blind_conf	aligned	reconciliation
+B28	8l	8c	low	yes	keep: second sign is this hand's l (same C-shape as the l of 4l, B64 crop left edge); l/c naming
+B29	p8s4m8	85qm8	medium	yes	keep: crop shows the long-descender p at the left, which the reader dropped; 5 = the hand's s (section 8); q/4 naming
+B31	d8s3g2	228392	medium	yes	keep: reader names the hand's d and 8 loops as 2/8 and g as 9; image consistent with committed
+B37	bv8n4s	6283n48	medium	yes	keep, convention noted: reader names sign 2 as '2'; the shape is the same one committed as v in v8r4s (B55) and as 2 in q28/28r -- one shape for u/v, so the image cannot settle v vs 2; reader's extra 3 not in the crop
+B57	t7d7s	6275	medium	yes	keep: first sign is the t/G-ligature look-alike; not settled
+B64	43r8	2328	low	yes	keep: crop reads 4 3 r 8 cleanly to the worker; reader low confidence
+C1_03	3	393	low	yes	keep: one sign, 3
+C1_05	b8s424	67884424	medium	yes	keep, flagged: after b8 the crop may show a doubled s (as in d8ss87), i.e. b8ss424; reader also gives one extra sign; not settled at this resolution
+C1_21	p4r8c8rm8	pqr2c8rm8	medium	yes	keep: q/4 naming; reader's 2 at sign 4 is the hand's open 8; not settled
+C1_29	p8r8	83883	low	no (reader's signs do not match the crop)	keep
+C1_30	4ns3	4n88s	low	yes	keep: final sign at crop edge
+C1_31	s2pl3c7	92n	medium	no (matches the C1_36 crop, q28n)	keep, flagged: crop shows two long descenders (s2ppl3c7, 'supplico' spelling) -- the blind reader did not read this crop, so rule 3 of PREREG not met
+C1_36	q28n	9nl4	medium	no (matches the C1_44 crop, qnl4)	keep: crop reads q 2 8 n
+C1_44	qnl4	unreadable	low	no	keep: crop reads q n l 4 clearly to the worker (and the reader's shifted C1_36 row gives 9nl4 for this word)
