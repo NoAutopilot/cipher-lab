@@ -1,0 +1,7 @@
+c20	agrees_all	real 13	control mean 5.4 p95 11 max 15	P(ctl>=real) 0.015
+c20	agrees_unseeded	real 6	control mean 4.7 p95 10 max 14	P(ctl>=real) 0.400
+c20	GATE FAIL
+c21	agrees_all	real 9	control mean 7.3 p95 13 max 17	P(ctl>=real) 0.335
+c21	agrees_unseeded	real 6	control mean 7.1 p95 12 max 17	P(ctl>=real) 0.715
+c21	GATE FAIL
+joint	agrees_all 32 agrees_unseeded 22 (diagnostic, not gated)
