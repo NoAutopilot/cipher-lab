@@ -431,6 +431,7 @@ mirrors) and only then ask. Lesson: a HathiTrust volume link left him facing "a 
   the step; (6) the page/link was opened from the owner's account view and its question is answerable (named piles
   exist, right leaf, Fix the cut present) -- the 5 Oct Dinteville / MLH links failed (6). Before posting a sorter, open 3 random tiles and confirm each sits on a CIPHER sign of the right line and that Fix the cut responds (6 Oct: the Oldenbarnevelt page cut its tiles from the clear line above). A card missing any of these is
   the brief's error and goes back to a worker, not to the owner.
+  Publish every sorter with `capabilities: {"db": {}}` (tools/sign_sorter.py docstring): without it the page shows "Storage not connected" and the owner's moves and Fix-the-cut edits stay in his browser (Oldenbarnevelt, 6 Oct 2026: republished as v2 with db).
 - Zoom-shot desk card (owner, 5 Oct 2026): when a reading is blocked by image resolution and the host blocks the cloud
   or serves only a small image (BNE, RAH, DECODE, HathiTrust, Folger, any viewer behind a challenge), the owner's zoomed
   screenshots are a standard board card (Ferdinand 1478 got from an unreadable 120 ppi PDF to a briefable transcription
