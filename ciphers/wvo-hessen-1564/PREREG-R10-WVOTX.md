@@ -7,7 +7,8 @@ Only the gloss input changes. Everything else is PREREG-R9-WVOALIGN.md, unchange
 - gloss: two blind Sonnet passes over gloss-row-only crops (r10tx/passA.tsv, r10tx/passB.tsv), crops cut by
   `tools/iiif_lines.py --image ciphers/wvo-hessen-1564/images/01109_p3_400full.jpg --out ciphers/wvo-hessen-1564/r10tx/crops
   --region 530,120,2790,1840 --centres 90,180,260,325,410,480,580,655,745,820,930,1015,1100,1190,1290,1375,1480,1560,1630,1720
-  --lines-per-crop 1 --max-width 1000 --overlap 120 --top-margin 15 --bottom-margin 10 --prefix f23G --debug`
+  --lines-per-crop 1 --max-width 1000 --overlap 120 --top-margin 25 --bottom-margin 50 --prefix f23G` (a first cut at --top-margin 15
+  --bottom-margin 10 clipped the sloping right end of the rows; re-cut and both passes restarted before any output, 09:5x UTC)
   (the 10 odd-numbered bands = the German rows kept, the cipher bands deleted), reconciled by this worker against those crops
   and r9align/crops_m/ (1 unit) into r10tx/gloss_r10.tsv, which replaces r9align/gloss_reconciled.tsv (the R9 sketch is kept
   as r9align/gloss_reconciled_r9.tsv).
