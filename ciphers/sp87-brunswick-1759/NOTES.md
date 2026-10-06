@@ -248,7 +248,7 @@ recipient-side text of a sampled item located. Status stays **open**.
 
 Waits on: TNA page copies of the six paired items (REQUEST.md, ASKS row 57).
 
-- S (FT4, 3 Oct 2026): read Westphalen 1871 (Google Books CUoSqn-TycQC, full view) at the "composition secrète ...
+- S (FT4, 3 Oct 2026; R8-SPS2 6 Oct: API snippets only, addressee/date still open): read Westphalen 1871 (Google Books CUoSqn-TycQC, full view) at the "composition secrète ...
   Ehrenbreitstein" passage and record addressee and date against SP 87/36/9 (11 Oct 1759) -- a browser page read, no
   login, no payment (books.google page view is captcha-blocked only from the cloud).
 - S: identify the HMC 3rd Report collection that calendars the Ferdinand-Holdernesse run -- read the 1872 report's appendix
@@ -323,3 +323,6 @@ Read so far: 0 of 98 cipher-flagged items read; no leaf imaged or transcribed.
 - [n/a] image-check: no images exist from the cloud
 - [n/a] retry: no failed method to retry here
 Verdict: keep going: 1 internal gaps; cheapest next: read Westphalen 1871 CUoSqn-TycQC at the "composition secrète" hit (owner-desk LOCAL-QUEUE row; addressee + date vs SP 87/36/9), ~$0.5
+
+## R8-SPS2 (a) pass (6 Oct 2026, 04:22-04:30 UTC): Westphalen 1871 "composition secrète" via Books API
+googleapis.com/books/v1 with country=US and key, 7 requests (volume record 1, searches 6), books.google.com page view not used (blocked from the cloud). CUoSqn-TycQC ("Geschichte der Feldzüge des Herzogs Ferdinand von Braunschweig-Lüneburg", 1871, ALL_PAGES) is the only volume returned for the quoted phrase combined with Ehrenbreitstein. Snippets read: "...Ehrenbreitstein par une composition secrète avec le commandant françois. Si cela arrive, j'ay du temps de reste pour prendre encore la ville de Giessen; peutêtre pourrai-je prendre aussi Francfort et établir mes quartiers d'hyver..." and, in a second snippet, a header-like fragment "1759 ... No.58 ... C'est avec une joïe infinie, que j'ay lû les bonnes ..." and "Holdernesse me repond au sujet de la Lettre du comte de Staremberg". Snippets give no addressee or date line, so the match to SP 87/36/9 (11 Oct 1759) is not established; the passage reads as Ferdinand's own letter in the Westphalen print (grade I). The Books API gives no page text or page locator; the LOCAL-QUEUE row stands. Status unchanged: `open`.

@@ -84,3 +84,7 @@ Status unchanged: `blocked`. Intake gate unchanged (terminal status, exit 0).
 One action that depends on nobody: full-text search of Atti della Società Ligure di Storia Patria (memoriedigitaliliguri.it) for "Caraffa" 1691 and "Coysis", to see whether item 299's cipher was printed; ~USD 1.
 
 Update 3 Oct 2026 (A2P4-SALV): the Atti search above was run (0 for Coysis, Carafa hits all 16th-century). Next: ASGe copy enquiry (REQUEST.md, owner-side), or retry with spelling variants Coisis/Coissy in the same 31 volumes plus Giornale Ligustico (~USD 0.5).
+
+## R8-SPS2 (b) pass (6 Oct 2026, 04:30-04:36 UTC): spelling variants in the Atti set
+Route as the A2P4-SALV pass: IA advancedsearch (31 Atti ids) then be-api fts, quoted term + identifier, 1.6 s apart. Terms "Coisis", "Coissy", "Coysis", control "Salvago". Requests: archive.org 1, be-api 124.
+Result: Coisis 0 of 31 (1 request errored, not retried), Coissy 0 of 31, Coysis 0 of 31. Control "Salvago": 22 of 31 volumes, so the OCR is read. Not found in these volumes; snippets only, no page locators. Giornale Ligustico and memoriedigitaliliguri.it's own search not used. Grade I for any claim about the Atti. Status unchanged: `blocked`.

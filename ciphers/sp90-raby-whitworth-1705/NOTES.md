@@ -241,3 +241,6 @@ Open, unchanged. The two named free checks are negative: no draft of 1 Aug 1705 
 
 ## Discovery availability flag (IMG-AUDIT, 3 Oct 2026)
 TNA Discovery /records/v1/details, fetched once each: C6554948 (SP 90/3/358), C6555516 (SP 90/7/126), C6555524 (/149), C6555549 (/212), C6555649 (SP 90/8/80), C6555650 (/84): `digitised` = False for all six. Replaces the earlier "per the QUEUE row" wording. Requests: discovery.nationalarchives.gov.uk about 8.
+
+## R8-SPS2 (c) (6 Oct 2026): not re-run
+The named step (BL Add MS 31128-31152 and HMC Portland vols 4/8) already ran on 3 Oct 2026 (A2P4-RABY, negative, retired above); no request made.
