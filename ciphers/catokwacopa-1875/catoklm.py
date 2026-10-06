@@ -7,7 +7,8 @@ search.py, MIT; snapshot sources/cyphersolver/2026-10-02/catokwacopa/), read, no
 catok23.py's (R12-CATOK23), imported unmodified; only the scorer changes (word bigram + positional prior).
 
   python3 catoklm.py run        control first per line, target only if that line's control meets the gate -> catoklm.json
-  python3 catoklm.py --check    re-run and exit 1 if catoklm.json is stale
+  python3 catoklm.py run --line N / merge   one line per process, then merge into catoklm.json
+  python3 catoklm.py --check [--line N]   re-run the completed lines (or one) and exit 1 if catoklm.json is stale
 """
 import collections, json, math, os, random, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -185,14 +186,24 @@ if __name__ == '__main__':
         ln = int(a[a.index('--line') + 1])
         json.dump(run([ln]), open(os.path.join(HERE, 'catoklm_line%d.json' % ln), 'w'), indent=1)
     elif a[:1] == ['merge']:
-        parts = [json.load(open(os.path.join(HERE, 'catoklm_line%d.json' % ln))) for ln in UNREAD]
-        res = dict(parts[0]); res['lines'] = [p['lines'][0] for p in parts]
+        # a line whose control run did not finish inside the worker's box is recorded as such, not scored
+        res = None; rows = []
+        for ln in UNREAD:
+            f = os.path.join(HERE, 'catoklm_line%d.json' % ln)
+            if os.path.exists(f):
+                p = json.load(open(f)); res = res or dict(p); rows.append(p['lines'][0]); os.remove(f)
+            else:
+                rows.append({'line': ln, 'control': None, 'target': None,
+                             'verdict': 'control run not completed inside the box; target not scored'})
+        res['lines'] = rows
         json.dump(res, open(os.path.join(HERE, 'catoklm.json'), 'w'), indent=1)
-        for ln in UNREAD: os.remove(os.path.join(HERE, 'catoklm_line%d.json' % ln))
     elif a[:1] == ['run']:
         json.dump(run(), open(os.path.join(HERE, 'catoklm.json'), 'w'), indent=1)
-    elif a[:1] == ['--check']:
-        new = json.loads(json.dumps(run()))
+    elif a[:1] == ['--check']:   # re-runs the lines that completed (or --line N for one, ~10 min each at 12 letters)
         old = json.load(open(os.path.join(HERE, 'catoklm.json')))
-        print('OK' if new == old else 'STALE'); sys.exit(0 if new == old else 1)
+        done = [r['line'] for r in old['lines'] if r['control'] is not None]
+        if '--line' in a: done = [int(a[a.index('--line') + 1])]
+        new = json.loads(json.dumps(run(done)))['lines']
+        ok = new == [r for r in old['lines'] if r['line'] in done]
+        print('OK' if ok else 'STALE', done); sys.exit(0 if ok else 1)
     else: print(__doc__)

@@ -19,3 +19,12 @@ Opened 6 Oct 2026 (R12-CATOK23, account 2). Rule 3: target and matched control s
 | 23 | no (0.01) | 0.00 / 0.00 | untestable-by-this-tool |
 | 26 | no (0.65) | 0.00 / 0.00 | untestable-by-this-tool |
 | 29 | no (0.83) | 0.00 / 0.00 | untestable-by-this-tool |
+
+## Unread lines 9/12/23/26/29, phrase-level search (word bigram + positional prior, 18,943 words, held-out era-matched control) -- R13-CATOKLM, 6 Oct 2026, PREREG-CATOKLM.md
+| line | control R_c / W_c / planted in top 20 (n=20) | target | result |
+|---|---|---|---|
+| 9 | 0.00 / 0.05 / 0.30 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |
+| 12 | 0.05 / 0.05 / 0.35 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |
+| 23 | not completed (stopped 14:36 UTC at the 80% box line) | not scored | not completed |
+| 26 | 0.05 / 0.00 / 0.25 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |
+| 29 | 0.05 / 0.10 / 0.20 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |

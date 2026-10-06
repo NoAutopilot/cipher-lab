@@ -1,0 +1,161 @@
+{
+ "prereg": "PREREG-CATOKLM.md",
+ "vocab": 18943,
+ "bigrams": 490016,
+ "lines": [
+  {
+   "line": 9,
+   "A": "mistrl",
+   "B": "otenpu",
+   "letters": 12,
+   "control": {
+    "n": 20,
+    "unique": 0.05,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.05,
+    "planted_in_top20": 0.3,
+    "word_acc_top1": 0.4607,
+    "examples": [
+     {
+      "planted": "replied half defeated",
+      "A": "rhdeed",
+      "B": "piedff",
+      "top": "replied had offered"
+     },
+     {
+      "planted": "the grounds and had paid",
+      "A": "thghdp",
+      "B": "edsand",
+      "top": "though depends and"
+     },
+     {
+      "planted": "the arm i could use",
+      "A": "thacou",
+      "B": "erldus",
+      "top": "the air could us"
+     }
+    ],
+    "gate_met": false
+   },
+   "target": null,
+   "verdict": "CONTROL BELOW GATE: untestable by this instrument at this N; target not scored"
+  },
+  {
+   "line": 12,
+   "A": "caselcluchozamot",
+   "B": "ndtsfindseseo",
+   "letters": 29,
+   "control": {
+    "n": 20,
+    "unique": 0.1,
+    "correct_unique": 0.05,
+    "wrong_unique": 0.05,
+    "planted_in_top20": 0.35,
+    "word_acc_top1": 0.5978,
+    "examples": [
+     {
+      "planted": "who hitherto had held his peace no one can be that",
+      "A": "whetohhpcncabeta",
+      "B": "hoitradhisoet",
+      "top": "who hitherto had his hip conceivable that"
+     },
+     {
+      "planted": "to stipulate that he was not in pain mrs milvey was",
+      "A": "tulatthwnonmmywa",
+      "B": "stthaaianrils",
+      "top": "stipulate that that i want none mr milvey was"
+     },
+     {
+      "planted": "given here was very much admired by the ladies and",
+      "A": "hwasrmcddbthelen",
+      "B": "giverveyaeyia",
+      "top": "give her was very much admired by the like an"
+     }
+    ],
+    "gate_met": false
+   },
+   "target": null,
+   "verdict": "CONTROL BELOW GATE: untestable by this instrument at this N; target not scored"
+  },
+  {
+   "line": 23,
+   "control": null,
+   "target": null,
+   "verdict": "control run not completed inside the box; target not scored"
+  },
+  {
+   "line": 26,
+   "A": "mistrl",
+   "B": "oatvpu",
+   "letters": 12,
+   "control": {
+    "n": 20,
+    "unique": 0.05,
+    "correct_unique": 0.05,
+    "wrong_unique": 0.0,
+    "planted_in_top20": 0.25,
+    "word_acc_top1": 0.3764,
+    "examples": [
+     {
+      "planted": "you in what you said",
+      "A": "ywhysi",
+      "B": "ontoua",
+      "top": "only what you said"
+     },
+     {
+      "planted": "the light left his face ever",
+      "A": "thllef",
+      "B": "etheve",
+      "top": "the all the fever"
+     },
+     {
+      "planted": "been to see her when sir james",
+      "A": "bhwsjs",
+      "B": "etsnia",
+      "top": "bent his own sir james"
+     }
+    ],
+    "gate_met": false
+   },
+   "target": null,
+   "verdict": "CONTROL BELOW GATE: untestable by this instrument at this N; target not scored"
+  },
+  {
+   "line": 29,
+   "A": "ereflodbr",
+   "B": "rileohmae",
+   "letters": 18,
+   "control": {
+    "n": 20,
+    "unique": 0.15,
+    "correct_unique": 0.05,
+    "wrong_unique": 0.1,
+    "planted_in_top20": 0.2,
+    "word_acc_top1": 0.5312,
+    "examples": [
+     {
+      "planted": "of christianity with four",
+      "A": "crtywthfr",
+      "B": "ofstiniio",
+      "top": "of christianity with for"
+     },
+     {
+      "planted": "that you will not be chary of",
+      "A": "tywllntay",
+      "B": "touibecof",
+      "top": "that you will be intimacy of"
+     },
+     {
+      "planted": "yourself to give him no restorative",
+      "A": "ygehinort",
+      "B": "ueloimtie",
+      "top": "yourself oblige him not write"
+     }
+    ],
+    "gate_met": false
+   },
+   "target": null,
+   "verdict": "CONTROL BELOW GATE: untestable by this instrument at this N; target not scored"
+  }
+ ]
+}
