@@ -552,3 +552,29 @@ in I/35 pt 2 or ser. III vol. 4 either; ser. II (prisoners) and Quartermaster's 
 only, no novelty question asked (rule 10). Pages past 72 not fetched. Requests: hdl.huntington.org about 59 (about 56 item-API
 calls: 52 pages, the parent object, three tries of pointer 8947 (page 55); 3 mssEC 67 IIIF pages), archive.org 15 (metadata, file lists, 5 djvu full
 texts, 1 advancedsearch); all final responses 200.
+
+## Image check of O9-W..O9-AG, 6 Oct 2026 (R10-ECK64C, LANE LANE-RUN10-account-1)
+
+Step checked undone first: R9-ECK64B (section above) read the eleven from the volunteer text only and named this check.
+Kept as found: the Spit/men (N2-E) and Village/Garrard (O9-A) conflicts and the O9-H/O9-P rule-4 notes, unchanged.
+
+Route: Huntington IIIF, mssEC 19 pointers 8918, 8933, 8936-8940, 8942, 8946, 8953 at 2400 px wide (scratch, regenerable:
+`hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`). Crop step, run before any subagent call:
+`python3 tools/iiif_lines.py --image pages/p<pointer>.jpg --out crops --prefix p<pointer> --region 60,250,2280,2550
+--prominence 40 --distance 65 --lines-per-crop 2` (106 crops). Two blind Sonnet reads (five pages each), given only crop
+paths; compared with the volunteer text by script (difflib per entry); every code-word disagreement and every line the blind
+reads dropped or merged settled by the worker on the crops, and O9-X's last line on a 2400 px foot region (below the crop band).
+
+Found (image-check-no9.tsv, R10 rows, 13 spans): no code-word change. Every disputed code word is the volunteer's reading on
+the image: hammer (O9-W, the clerk's looped h, blind "Chamner"), Aragon (O9-X last line; O9-AA, blind "Aldgon"), Champlain
+and Shylock (O9-Y, rows the blind read merged), Pagan (O9-Z, blind "Sagan"), Merlin x2, Raven (blind "Ravin"), Vulcan
+(O9-AG, first vowel open, kept). One plain correction: O9-AG line 3 reads "Wise" on the page, not "Wide" -- "Vulcan Wise",
+Captain Wise, the addressee of O9-Z; ciphertext-no9.txt and its plain: line changed, reading regenerated. O9-AE line 2 is
+"&" (a faint offset "Bangor" shows beside it, not written there). O9-Z "Vain Talents": the second word starts with a
+crossed T and does not read "Fleet" as the blind read guessed; left as the volunteer's, doubtful, ungraded.
+Code-word tokens over the eleven unchanged (H 93, C 0, I 0, M 0; all thirty-three old-vocabulary entries H 286);
+`python3 decode_no9.py --check` exit 0.
+
+Not done: plain words outside the disagreement list were not re-read word by word; O9-AE's line "be with drawn from
+operations against" was skipped by the blind read and not re-read (plain words only). Requests: hdl.huntington.org 10
+(ten page images), all 200.

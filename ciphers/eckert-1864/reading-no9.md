@@ -90,7 +90,7 @@ words: R9-ECK64's "(9)"-only search had missed the quoted and "No 9" forms. O9-W
 and "9"), O9-AB (p.48, 21 Apr, unmarked), O9-AG (p.48, 21 Apr, "9"), O9-AC (p.50, 22 Apr, unmarked), O9-AD (p.54, 25 Apr,
 "No 9"), O9-AE (p.61, 30 Apr, "(No 9)"). From p.62 (1 May 1864) every entry read is marked "No 1"/"(1)" or "No 2"/"(2)" or
 opens with Growl/Grapes, the Cipher No. 1 openings; no old-vocabulary entry was found on pp.62-72 (pages past 72 not
-fetched). Transcribed from the volunteer text only: these eleven are NOT image-checked (the named next step). Five new key
+fetched). Transcribed from the volunteer text; image-checked 6 Oct 2026 (R10-ECK64C, image-check-no9.tsv): no code-word change, O9-AG "Wide" corrected to "Wise". Five new key
 rows (key-no9.md section 5: Ramsay = Ammunition, Rusty = Fleet, Spoon = Transports, White/Wick = Equipage, Wedge =
 Subsistence). Code-word tokens over the eleven: H 93, C 0, I 0, M 0 (all thirty-three: H 286). Not graded: "bologna"
 (O9-AD, the addressee at Columbus, Ohio, by place Heintzelman; not located in mssEC 67), "Abbott" (O9-AC signature, spelt
@@ -304,7 +304,7 @@ Code-word tokens: H 3.
 
 **O9-AG | Page 48 | 8940 | 21 Apr 1864, Meigs (Quartermaster General) to Van Vliet at New York (operator Horner N. Y., "9", 330 PM)**
 
-Van Vliet See my dispatch of Eleven forty five AM to [Captain] Wide Period For [Transports]ing [Artillery] & [Ammunition] barges are preferred Period If you send forty or fifty to [Washington] towed by powerful Steamers so as to arrive as soon as possible they will be of great value Period New demands for [Transportation] constantly arise sig [Quartermaster General] {time: 3.30 PM}
+Van Vliet See my dispatch of Eleven forty five AM to [Captain] Wise Period For [Transports]ing [Artillery] & [Ammunition] barges are preferred Period If you send forty or fifty to [Washington] towed by powerful Steamers so as to arrive as soon as possible they will be of great value Period New demands for [Transportation] constantly arise sig [Quartermaster General] {time: 3.30 PM}
 
 Code-word tokens: H 8.
 
