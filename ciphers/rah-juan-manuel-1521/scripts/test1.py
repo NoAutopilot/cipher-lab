@@ -22,6 +22,9 @@ Steps
      the alignment is fixed, so the permutation CAN move S (rule 3). Gate: witness/gate_alpha.txt (pre-registered).
 
   python3 scripts/test1.py [--check]      (--check: exit 1 if results_test1.json / alphabet.tsv differ from a rerun)
+  python3 scripts/test1.py --alphabet key_tomokiyo_alpha.tsv [--check]
+     (R11-RJMKEY, 6 Oct 2026: the same held-out S and permutation control with a published key in place of alphabet.tsv;
+      gate witness/PREREG_tomokiyo_alpha.md; writes results_test1_tomokiyo.json only, alphabet.tsv untouched)
 """
 import argparse, csv, difflib, importlib.util, json, random, re, sys
 from collections import Counter
@@ -168,6 +171,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--shuffles", type=int, default=200)
+    ap.add_argument("--alphabet", help="published key TSV (letter, shape, firm, our_label ...) scored instead of alphabet.tsv")
     a = ap.parse_args()
     key = load_key()
     res = {}
@@ -235,6 +239,8 @@ def main():
                                "of": len(null) + 1, "code_words_matched": code_hit2,
                                "code_words": sum(1 for k in kinds2 if k == "code"),
                                "symbol_tokens_all": sum(1 for k in kinds2 if k == "sym")}
+    if a.alphabet:
+        return published(a, recs, (raw, kinds, chunks), g197, key)
     out_json = json.dumps(res, indent=1, sort_keys=True) + "\n"
     if a.check:
         ok = (HERE / "results_test1.json").read_text() == out_json and (HERE / "alphabet.tsv").read_text() == alpha_txt
@@ -246,6 +252,54 @@ def main():
     for page, rec in recs.items():
         rc[page] = "".join("%d\t%s\n" % (n, " ".join(t for t, _ in rec[n])) for n in sorted(rec))
         (HERE / f"ciphertext_{page}_reconciled.tsv").write_text("line\ttokens\n" + rc[page])
+    print(out_json)
+
+
+def score(raw, kinds, chunks, values, shuffles):
+    """S = share of symbol tokens (labels in values) whose aligned chunk equals the value; null = values permuted."""
+    idx = [i for i, k in enumerate(kinds) if k == "sym" and raw[i][1:] in values]
+
+    def stat(vals):
+        return sum(ia.fold(chunks[i]) == vals[raw[i][1:]] for i in idx) / len(idx) if idx else 0.0
+    real = stat(values)
+    labs = sorted(values)
+    null = []
+    for s in range(1, shuffles + 1):
+        rnd = random.Random(s)
+        perm = [values[l] for l in labs]
+        rnd.shuffle(perm)
+        null.append(stat(dict(zip(labs, perm))))
+    null.sort()
+    per = {}
+    for i in idx:
+        l = raw[i][1:]
+        h, n = per.get(l, (0, 0))
+        per[l] = (h + (ia.fold(chunks[i]) == values[l]), n + 1)
+    return {"N_symbol_tokens": len(idx), "S_real": round(real, 4), "null_mean": round(sum(null) / len(null), 4),
+            "null_p95": round(null[int(0.95 * len(null)) - 1], 4), "null_max": round(null[-1], 4),
+            "rank": 1 + sum(x >= real for x in null), "of": len(null) + 1,
+            "gate": "PASS" if real > null[-1] and real >= 0.24 else "FAIL",
+            "per_label": {l: "%d/%d" % per[l] for l in sorted(per)}}
+
+
+def published(a, recs, f194, g197, key):
+    values = {}
+    for r in csv.DictReader((l for l in open(HERE / a.alphabet) if not l.startswith("#")), delimiter="\t"):
+        if r["firm"] == "1" and r["our_label"]:
+            for lab in r["our_label"].split(","):
+                values[lab] = "" if r["letter"] == "null" else r["letter"]
+    res = {"key": a.alphabet, "values": values}
+    res["f194_secondary"] = score(*f194, values, a.shuffles)
+    g201 = gloss_text([HERE / "passes/gloss_f201.tsv"])
+    raw2, kinds2, chunks2, _, _ = align(recs["f199"], g201, key)
+    res["heldout_f199"] = score(raw2, kinds2, chunks2, values, a.shuffles)
+    out_json = json.dumps(res, indent=1, sort_keys=True) + "\n"
+    out = HERE / "results_test1_tomokiyo.json"
+    if a.check:
+        ok = out.exists() and out.read_text() == out_json
+        print("up to date" if ok else "STALE")
+        sys.exit(0 if ok else 1)
+    out.write_text(out_json)
     print(out_json)
 
 

@@ -503,3 +503,76 @@ Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.
 - [x] image-check: R9528 and R9529 full-size images re-fetched 6 Oct 2026 (sha1s match), crops and windows checked
 - [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
 Verdict: keep going: 2 internal gaps (apply Tomokiyo's published Juan Manuel alphabet to the held-out page; R9501 passes, gated on it); the transcription gap waits on ASKS 138; cheapest next: Tomokiyo alphabet table -> key TSV -> held-out rerun, ~$3
+
+## Tomokiyo's published alphabet as a key, held out (R11-RJMKEY, 6 Oct 2026, 10:16-10:2x UTC)
+Brief: .claude/briefs/runs/2026-10-06-account2-run11-jobs.md job R11-RJMKEY. Opus worker, no subagent calls. Gate pre-registered in
+witness/PREREG_tomokiyo_alpha.md (pushed 20e5afca8 before the scored run). Requests: cryptiana.web.fc2.com 1 (JuanManuel.png,
+HTTP 200, sha1 7524f16d, same file R11-RJMSIB saw; image not committed).
+
+Key: key_tomokiyo_alpha.tsv, Tomokiyo's hand-drawn "Juan Manuel's Cipher (1522)" letter table transcribed one row per drawn sign
+(38 rows: a-z homophones and five nulls, plus a '?' null), key source **published** (Satoshi Tomokiyo, Cryptiana, credited, rule 8),
+shapes in R11-RJMSIB's shared vocabulary, re-checked against the image at 2x (no change). 12 of this folder's inventory labels map
+to a firm Tomokiyo sign (siblings/our_labels.tsv); Q, B, D, W and 7 have none and are not scored.
+
+Sign by sign against alphabet.tsv (two witnesses, rule 4: conflicts recorded by witness, not settled by majority). Witness 1 =
+alphabet.tsv, this folder's alignment of R9528 f.194 (Juan Manuel, Rome, 1522; cipher as sent) against the clerk's decipherment
+f.197 (recipient side, period). Witness 2 = Tomokiyo's table (published; his own source not stated on the image).
+
+| label | witness 1 (alphabet.tsv, grade) | witness 2 (Tomokiyo) | |
+|---|---|---|---|
+| A | a (C, 18/25) | a | agree |
+| R | s (C, 21/26) | s | agree |
+| Z | r (C, 12/30) | r | agree |
+| K | y (C, 6/10) | y | agree |
+| 9 | e (C, 5/5) | e | agree |
+| 4 | de (C, 2/6) | o | conflict |
+| F | i (C, 3/20; JM-ALPHA already suspected a null) | null | conflict (witness 1's own counts favour null) |
+| T | d (M, 1/10) | s | conflict |
+| V | ne (M, 1/5) | m | conflict |
+| X | an (M, 1/5) | e | conflict |
+| 3 | d (M, 1/4) | e (i and a drawn as uncertain) | conflict |
+| E | on (M, 1/3) | h | conflict |
+| 7 | i (M, 1/1) | no matching shape | -- |
+Agreements 5 (all C), conflicts 7 (two C, five M). The label->shape map was written by R11-RJMSIB after seeing both witnesses.
+
+Scored run: `python3 scripts/test1.py --alphabet key_tomokiyo_alpha.tsv` (option added this job; writes results_test1_tomokiyo.json
+only, alphabet.tsv and results_test1.json untouched; `--check` exits 1 if stale: ran, up to date; the plain `--check` also up to
+date). Same prior-free alignments as test 1; S = share of symbol tokens whose aligned chunk equals the key's value (null = empty
+chunk); control = 200 keys with Tomokiyo's 12 values permuted among the 12 labels (the values differ, so it can move S).
+
+| page | role | N symbol tokens | S real | control mean / p95 / max (200) | rank | gate |
+|---|---|---|---|---|---|---|
+| R9529 f.199 vs f.201 | held out, the gate | 82 | 0.037 | 0.024 / 0.049 / 0.098 | 69 of 201 | **FAIL** |
+| R9528 f.194 vs f.197 | secondary, corroboration only | 149 | 0.503 | 0.073 / 0.201 / 0.315 | 1 of 201 | above max (not a licence: label map written after seeing f.194's values) |
+Test 1's own alphabet on the same f.199 alignment: 0.049 vs control max 0.061 (FAIL). Per label on f.199 under Tomokiyo's key:
+A 1/21, Z 0/16, F 0/12, R 2/8, everything else 0; on f.194: A 18/25, R 21/26, Z 12/30, F (as null) 11/20, 9 5/5, K 6/10, T 0/10, V 0/5.
+
+Reading: on f.199 even the sign both witnesses agree on (A = a) lands on its letter 1 time in 21, so the held-out failure sits in the
+f.199 alignment (reader error 0.42, 44 of 117 nomenclator words anchored on f.201), not in either key: two different keys fail
+identically on the same alignment. Logged as **untested at this transcription error** for the second time on this page (rule 3:
+attempt 2 of this instrument on f.199; the knob changed was the key, and the numbers did not move toward the gate). A third run on
+f.199 with this alignment is not worth doing; the next held-out test needs a different page. On f.194 Tomokiyo's table explains
+F as a null (11 of 20 F tokens take no letter) and gives T, V, X, 3, E values the f.194 alignment does not support (0 of 27); with the
+mapping caveat above, that is corroboration of A R Z K 9 and of F=null, nothing more. No key, grade or reading changed in this job.
+
+Rule 1 risk (for a verifier, not classified here): Tomokiyo publishes both this cipher's nomenclator and its letter alphabet, so he
+(or his source) has had working decipherments of Juan Manuel's 1522 letters; a published decipherment of some of the 28 may exist.
+Any reading built on key_tomokiyo_alpha.tsv is read with a `published` key and is at best an independent re-decipherment until a
+verifier has searched Tomokiyo's pages, Kolosova (LOCAL-QUEUE L17) and the RAH's own description. Flagged in ROOM.md.
+
+## Remaining gaps (R11-RJMKEY, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S) and R9528 f.194 (249 code words, 161 matched by the gloss); letter alphabet: 5 signs agree between alphabet.tsv (C) and Tomokiyo's published table, 7 conflict; held-out gate on f.199 FAIL with both keys (0.049 and 0.037)
+- Letter alphabet held out on a fresh page - blocker: not-attempted; R9529 f.199's alignment fails both keys alike (R11-RJMKEY), so f.199 is spent for this instrument; next: two blind passes (shared inventory) on the first page of another record with a period decipherment in DECODE (e.g. R9502 with f.42) plus a gloss read, then score key_tomokiyo_alpha.tsv and alphabet.tsv there under a fresh PREREG, ~$6
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, err_true unmeasured) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set; 39 unsettled look-alike tiles in sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- R9501 (no period decipherment in DECODE) passes and key test (job 2b) - blocker: not-attempted; next: two blind passes on R9501 f.34 with the same inventory, decode with Tomokiyo's alphabet + nomenclator, judge, ~$5 (only after a held-out gate passes); the period decipherment is catalogued at Salazar A.23 ff.37-38 (RUN3-RJM2), not online
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, Premise check 2); without it every reading stays a cryptanalytic result
+
+## Escalation (R11-RJMKEY, 6 Oct 2026)
+- [x] siblings: R11-RJMSIB compared Tomokiyo's Juan Manuel and Sanchez 1522 tables (alphabet and nomenclator, Bourdeau sanchez1522 cited): same design, no shared key (V 1 vs p95 2; T 0 of 75 shared words); no table fit to carry over
+- [x] clear-pages: f.197 read to line 31 and f.201 read whole (single Sonnet pass); f.199's own clear lines identified
+- [x] known-keys: Tomokiyo's nomenclator run on R9528 and R9529 (anchors 161/249 and 44/117); his Juan Manuel alphabet table transcribed (key_tomokiyo_alpha.tsv) and scored by R11-RJMKEY: f.199 held-out FAIL 0.037 vs control max 0.098, f.194 0.503 vs max 0.315 (corroboration only)
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out gate FAIL at this transcription error
+- [x] image-check: R9528 and R9529 full-size images re-fetched 6 Oct 2026 (sha1s match), crops and windows checked
+- [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
+Verdict: keep going: 2 internal gaps (held-out test of the published alphabet on a fresh page with a period decipherment; R9501 passes, gated on it); the transcription gap waits on ASKS 138; cheapest next: two blind passes + gloss read on R9502's first page, score both keys under a fresh PREREG, ~$6
