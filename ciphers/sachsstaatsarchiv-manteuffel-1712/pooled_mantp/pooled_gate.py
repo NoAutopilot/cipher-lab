@@ -4,7 +4,8 @@ Reads the four leaves' pairs.tsv + reconciled.tsv and ../key.tsv; writes pooled_
 per_leaf.tsv beside this script and prints the gate. Disk only. Usage: pooled_gate.py [--add0574 [--norm0574]]
 R7-MANT463 (6 Oct 2026, PREREG-MANT463 addendum): --add0574 appends leaf 0574 (ff.463-463v) and writes the outputs with suffix
 _0574; --norm0574 also applies ../f463_0574/gloss_norm_0574.tsv (non-gating sensitivity, suffix _0574n).
-R7-MANT529 (6 Oct 2026, PREREG-MANT529 addendum): --add0529 appends leaf 0529 (ff.424v-425) after 0574 (implies --add0574), suffix _0529."""
+R7-MANT529 (6 Oct 2026, PREREG-MANT529 addendum): --add0529 appends leaf 0529 (ff.424v-425) after 0574 (implies --add0574), suffix _0529.
+R8-MANT530 (6 Oct 2026, PREREG-MANT530 addendum): --add0530 appends leaf 0530 (ff.425v-426) after 0529 (implies --add0529), suffix _0530."""
 import csv, os, re, random, sys
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.join(HERE, '..')
@@ -14,10 +15,12 @@ LEAVES = [('0502', 'f0500_0502/pairs_0502.tsv', 'f0500_0502/reconciled_mant4.tsv
           ('0528', 'f423_0528/pairs.tsv', 'f423_0528/reconciled.tsv')]
 PRIOR_CLEARED = {'0502', '0528'}
 SUF = ''
-if '--add0574' in sys.argv or '--add0529' in sys.argv:
+if '--add0574' in sys.argv or '--add0529' in sys.argv or '--add0530' in sys.argv:
     LEAVES.append(('0574', 'f463_0574/pairs.tsv', 'f463_0574/reconciled.tsv')); SUF = '_0574'
-if '--add0529' in sys.argv:
+if '--add0529' in sys.argv or '--add0530' in sys.argv:
     LEAVES.append(('0529', 'f424v_0529/pairs.tsv', 'f424v_0529/reconciled.tsv')); SUF = '_0529'
+if '--add0530' in sys.argv:
+    LEAVES.append(('0530', 'f425v_0530/pairs.tsv', 'f425v_0530/reconciled.tsv')); SUF = '_0530'
 DRAWS, SEED = 1000, 7101
 NORM = {r['token']: r['expansion'] for r in csv.DictReader(open(os.path.join(T, 'f0500_0502/gloss_norm.tsv')), delimiter='\t')}
 if '--norm0574' in sys.argv:

@@ -96,3 +96,9 @@ y-shaped 4 (as in 364 on the next line), while the leaf's undisputed 898 (f.422v
 "Ilgen" in the left margin, not over the code; the word over the code is unsettled (worker "l'Empire", blind read "Alexapice?", low), so the
 run keeps its as-read gloss "Ilgen" (M, doubtful) on 848 under PREREG-R8-MANT. 848 occurs elsewhere only inside multi-code runs glossed
 "... de l'Empire" (0527 run 18, 0529 run 6): a possible homophone or "l'Empereur", M, not tested here.
+
+## Leaf 0530 (ff.425v-426) per-leaf gate and pooled gate with the leaf added (R8-MANT530, 6 Oct 2026, LANE LANE-RUN8-account-4, account 4)
+| family | control | control result | target result | verdict |
+|---|---|---|---|---|
+| per-leaf gloss alignment (PREREG-MANT530, seed 530) | 200 gloss permutations across the leaf's 11 glossed runs | mean 0.017, p95 0.000 | S 1/3 = 0.333 (N_rec 3, floor) | PASS as registered, conditional: rests on run 5's M gloss (864 "le Roy de Prusse", worker zoom); passes' "le Roy de Suede" gives S 0.000 = p95, HELD |
+| pooled single-code-gloss gate, 7 leaves (PREREG-MANTP + PREREG-MANT530 addendum) | 1000 permutations, seed 7101 | mean 0.036, p95 0.167 | S 9/12 = 0.750 | PASS, unchanged from R8-MANT; 357 Ilgen 3rd attestation; no code licensed that key.tsv lacks |

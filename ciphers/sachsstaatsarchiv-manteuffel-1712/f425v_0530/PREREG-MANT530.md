@@ -32,7 +32,7 @@ that agrees, and does any code that so far sits only on uncleared leaves (898, 8
 Known-answer (reported first, not a gate): every single-code gloss on this leaf whose code has a C value in key.tsv is scored
 agree / compatible / disagree. If the two passes split on more than 10% of code tokens, stop after reconciliation (brief).
 
-## Addendum (6 Oct 2026, 04:56 UTC by date -u), after reconciliation, before any alignment or score
+## Addendum (6 Oct 2026, 04:43 UTC by date -u), after reconciliation, before any alignment or score
 Reconciled: 12 runs, 44 code tokens (f.425v 10 runs / 32 tokens, f.426 2 runs / 12 tokens), 11 glossed, 4 of them single-code (107, 864 x2,
 357) (reconciled.tsv, pairs.tsv). Pass agreement A vs B by token alignment: f.425v 30/32 (0.938; yy vs 44, 71 vs 74), f.426 11/11 (A adds a
 doubtful single "4"), under the 10% stop line; each pass vs the reconciled text f.425v 26/32 and 28/32, f.426 11/11. Worker zooms settled
