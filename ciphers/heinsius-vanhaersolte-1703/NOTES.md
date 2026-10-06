@@ -183,7 +183,7 @@ least 2.2 s apart, descriptive UA, no 429/403. WebSearch 0, vision 0, subagents 
 leads for more material: letter 929 (24 July 1703, Deel 2 p.362, code 142 in the OCR text, same H.A. 841) and letter 588 (1 July 1704, Deel 3
 p.208, passages in cipher printed deciphered by d'Alonne, different year).
 
-## Page images of letters 929 and 588 (R11A-HEIN, 6 Oct 2026, 14:26-14:30 UTC)
+## Page images of letters 929 and 588 (R11A-HEIN, 6 Oct 2026, 14:26-14:29 UTC)
 
 Route: `retroboeken/heinsius/pages.json?source=2` and `?source=3` (one each) for the `image_url`/`html_url`, then the page JPEGs
 (native size as served, about 864x1376) `images/heinsius_02_GS163_361.jpg`, `_362.jpg`, `images/heinsius_03_GS169_208.jpg` and the three
