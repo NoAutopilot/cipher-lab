@@ -153,3 +153,26 @@ tools/decode_key.py (grade H for every group the sheet's key reads; I for repair
 word list, and report agreements/disagreements with counts. Add a decode --check script per rule 7. Run tools/judge_plaintext.py only if a
 spec with a Low German judge exists (else say none). Status stays `open` or moves per rule 5 only with the counts written; flag in ROOM for a
 verifier (N-class and depth are the verifier's). Report what was found and where it was not found; do not classify novelty.
+
+## Wave 3 (written 05:4x UTC 6 Oct; spawned as wave-2 slots free).
+
+### R9-RUBIN4 -- rubin-1953, Block C as Morse-like / binary with a matched control (cap 3.5, box 50 min)
+Intake gate: `rubin-1953: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Next (R8-RUBIN3): transcription reconciled against every witness; test Block C as Morse-like or binary (0/1 as dot/dash or bits, x/'.' as
+separators) against an English decoder, with a matched control of the same length and symbol design (synthetic English encoded the same
+way, several seeds), ~$2. Pre-register (PREREG committed and pushed before the scored run): the encodings tried (enumerate them; count
+them), the scoring (tools/judge_plaintext.py or an n-gram score), the gate, and the multiple-comparison correction across encodings.
+Also score shuffled Block C through the same pipeline (rule 3: a shuffled-target PASS voids the gate). Report target, control and shuffle
+numbers per encoding. A negative is a control-backed negative only if the control reads at the target's length; otherwise "non-test".
+Update spec cheap_test_done if the spec names this test. No reading claimed unless the gate passes and the shuffle fails.
+
+### R9-SURKEY -- na-suriname-map-1781, known-keys escalation step: NA 1.05.03 key-sheet search + design_prior (cap 2.5, box 45 min)
+Intake gate: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Escalation "known-keys" is [ ] (1 Oct 2026): KEY-OFFICES.tsv has no Suriname/WIC/Wollant row and no tools/design_prior.py run is recorded;
+"Planned: an NA catalogue search of 1.05.03 (Societeit van Suriname) for 1781 'cijfer'/'sleutel' items" plus Wollant's papers and Governor
+Texier's 1781 correspondence. Do: (1) run tools/design_prior.py for this target and paste the output into NOTES.md; (2) search the
+Nationaal Archief catalogue (www.nationaalarchief.nl search / service.archief.nl per the CLAUDE.md host table; NOT data.nationaalarchief.nl)
+for 1.05.03 and the 4.VEL / Wollant context with cijfer, cyfer, sleutel, chiffre, geheimschrift, 1780-1782; record each hit's inventory
+number, description, and digitisation flag (drupal-settings availability, never the boilerplate); (3) if a digitised key-sheet candidate
+exists, fetch only its index thumbnail/first scan and say whether it is a key. No decode. Update the Escalation known-keys line and
+Remaining gaps; pass tools/gaps_check.py. <= 40 requests to nationaalarchief hosts, >= 1.5 s apart.
