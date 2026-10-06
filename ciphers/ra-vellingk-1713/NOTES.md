@@ -1,7 +1,7 @@
 # Mauritz Vellingk reports partly in cipher, Hamburg exile, 1713-1714
 
 **Status: blocked**
-Handlingar rörande Skandinaviens historia vol. 8 (Stockholm 1820, IA `handlingarrrand01swegoog`) read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text grep of the djvu OCR: it prints Erik Sparre's drafts of letters to Vellingk father and son, Paris, 20 May 1713 - 1715, marked 'partie en chiffre', with the editor's note that Vellingk's own letters answered by them are printed in vol. 6 (1818), register 6:223 ff.; vol. 6 is full view only on books.google.com (id 6d1AAAAAcAAJ, BSB copy), which serves no page text to the cloud, and is on no IA item, so the sender-side print stays to be read from a desk browser. Both Riksarkivet holdings are undigitised (copy order, REQUEST.md).
+Handlingar rörande Skandinaviens historia vol. 8 (Stockholm 1820, IA `handlingarrrand01swegoog`) read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text grep of the djvu OCR: it prints Erik Sparre's drafts of letters to Vellingk father and son, Paris, 20 May 1713 - 1715, marked 'partie en chiffre', with the editor's note that Vellingk's own letters answered by them are printed in vol. 6 (1818), register 6:223 ff.; vol. 6 is full view on books.google.com (6d1AAAAAcAAJ, owgPAAAAYAAJ) and on HathiTrust (wu.89107728503, nyp.33433066618947; R8-VELL, 6 Oct 2026), neither of which serves page text to the cloud, and is on no IA item, so the sender-side print stays to be read from a desk browser. Both Riksarkivet holdings are undigitised (copy order, REQUEST.md).
 
 ## Item
 
@@ -145,11 +145,52 @@ decipherment of this item.**
 (d) Recipient-side edition: the Kanslikollegium reports (E VI/1) have no known printed edition; for the Sparre letters,
 HRSH vol. 8 (Sparre's side) read, vol. 6 (Vellingk's side) blocked from the cloud. Not found.
 
-## Remaining gaps
+## HTRC EF headword run (R8-VELL, 6 Oct 2026)
 
-- [ ] HRSH vol. 6 (1818) pp. 223 ff., Vellingk's letters to Sparre -- waiting-on a desk-browser read (books.google.com
-  blocked from the cloud; draft task above).
-- [ ] Riksarkivet copies of SE/RA/1411/E/E VI/1 and SE/RA/720626/E/E 6015 -- needs-physical-access / copy order
-  (REQUEST.md, since 24 Sept 2026).
+Brief: run `tools/htrc_ef_headwords.py` for 'Vellingk' against Sveriges traktater / Carlson's Karl XII letters.
+Volume ids found (HathiTrust Bibliographic API, `api/volumes/brief/recordnumber/N.json`; record numbers from the Online
+Books Page title search, extended shelves):
+- **HRSH** (record 008697824, OCLC 1605152, all 40 vols + register full view): **vol. 6 (1818) = `wu.89107728503`,
+  `nyp.33433066618947`, `hvd.hnt6vv` (v.5-6)**; vol. 8 (1820) = `wu.89107728545`, `nyp.33433066618962`; register
+  1-40 = `wu.89107728388`, `inu.30000123989836`, `nyp.33433082301353`. This corrects the 3 Oct line "vol. 6 is full view
+  only on books.google.com": it is full view on HathiTrust in three copies too (HathiTrust's own reader is still
+  Cloudflare-blocked from the cloud, so this changes the desk route, not the cloud one).
+- **Carlson, *Konung Karl XII:s egenhändiga bref*** (1893, record 006031530): `hvd.hnndj7`, `hvd.hnnczt`,
+  `inu.30000053834564`, all full view. German ed. 1894: `hvd.32044084710946` (rec. 100375180), `uc1.$b761736`
+  (rec. 009959877).
+- **Sveriges traktater med främmande magter**: no title hit on the Online Books Page (standard or extended shelves);
+  not located on HathiTrust this pass (Open Library, the usual OCLC route, reset the connection twice: stopped).
+The run itself: **not done -- the HTRC EF API answered HTTP 500** (`PrimaryUnavailableException: No primary node is
+available`) for all four htids tried (vol. 6 x2, Carlson 1893, Carlson 1894) at 03:55 UTC and on the one permitted
+retry at 03:56 UTC; R8-WHIT (account 4) logged the same outage ("HTRC EF down x3") at 03:49 UTC. Untested-by-this-
+tool today, not a negative.
+Google Books API (keyed, `country=US`), query `Wellingk chiffre Sparre`: a second full-view copy of vol. 6,
+**`owgPAAAAYAAJ`** (416 pp., `ALL_PAGES`, PDF listed available), snippet: "... Wellingk, till Friherren,
+Ambassadören och Generalen, sist Riks-Rådet och Fält-marskalken Gref Erik Sparre ... Chiffre. **) Detta skämt lärer
+syftat på Friherre Spa[rre] ..." -- so vol. 6 prints Vellingk-to-Sparre letters with "Chiffre" headings (search
+result, page not located). Three further Wellingk/Hamburg/1713-1714 queries: no items. The listed PDF download
+(books.google.com) answered HTTP 429 (sorry page) on one attempt: stopped.
+Requests: data.htrc.illinois.edu 6, catalog.hathitrust.org 5, onlinebooks.library.upenn.edu 4, openlibrary.org 2
+(reset), www.googleapis.com 5, books.google.com 1 (429).
+Next (desk or a later cloud session): rerun `python3 tools/htrc_ef_headwords.py wu.89107728503 hvd.hnndj7
+--words vellingk,wellingk,welling,chiffre,chiffer --target x=1` once the EF API is back (~$0.5), which gives the
+seq numbers of the Wellingk/Chiffre pages in vol. 6 for the desk read; or the desk browser opens vol. 6 directly
+(HathiTrust `wu.89107728503` full text search "Wellingk", or Google Books owgPAAAAYAAJ / 6d1AAAAAcAAJ) at p. 223 ff.
+
+## Remaining gaps (R8-VELL, 6 Oct 2026)
+Read so far: unmeasured -- no ciphertext on disk; both holdings undigitised, only the clear side of the correspondence printed.
+- HRSH vol. 6 (1818) pp. 223 ff., Vellingk's letters to Sparre (snippet confirms "Chiffre" headings) - blocker: not-attempted; books.google.com (6d1AAAAAcAAJ, owgPAAAAYAAJ; PDF 429) and HathiTrust (wu.89107728503) both blocked from the cloud, R8-VELL section; next: a LOCAL-QUEUE desk-browser row for the draft task above, ~$0.5
+- HTRC EF page location of Wellingk/Chiffre in vol. 6 and Carlson 1893 - blocker: not-attempted; the HTRC EF API answered HTTP 500 (outage logged 6 Oct 2026 03:49 and 03:55 UTC); next: rerun the command in the R8-VELL section once the API answers, ~$0.5
+- Riksarkivet copies of SE/RA/1411/E/E VI/1 and SE/RA/720626/E/E 6015 - blocker: needs-physical-access; undigitised, copy order in REQUEST.md since 24 Sept 2026
+
+## Escalation (R8-VELL, 6 Oct 2026)
+- [n/a] siblings: no ciphertext of any sibling letter is on disk or online
+- [ ] clear-pages: HRSH vol. 6 Vellingk letters (clear print, possible crib) to be read from a desk browser
+- [n/a] known-keys: no Swedish 1713 key located; nothing to apply without ciphertext
+- [x] print: HRSH vols. 8 and 9 grepped (GF4-BATCH19); vol. 6 located in full view on HathiTrust and Google Books (R8-VELL)
+- [n/a] key-rebuild: no ciphertext on disk to rebuild a key from
+- [n/a] image-check: no image of either holding is available online
+- [n/a] retry: no attempt has been made that could be retried
+Verdict: keep going: 2 internal gaps; cheapest next: desk-browser read of HRSH vol. 6 pp. 223 ff., ~$0.5
 
 Gate re-run (GF4-BATCH19, 3 Oct 2026): `ra-vellingk-1713: blocked (line 3) -- already terminal, nothing to gate`, exit 0 (was exit 1 as an uncited open); status moved open -> blocked by this pass.
