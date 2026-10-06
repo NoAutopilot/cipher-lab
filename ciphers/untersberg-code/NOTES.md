@@ -302,7 +302,7 @@ No decode, no other host touched, no credentials, no AskUserQuestion, no solved/
 Waits on: LOCAL-QUEUE.tsv row L26 (the owner's desk runner reading Lang 2010's zobodat.at PDF, Anubis-blocked
 from the cloud by both curl and headless Chromium), filed 27 Sept 2026.
 
-- S: check Cappelli's Lexicon abbreviaturarum (archive.org) and Walther's Lexicon diplomaticum (Google Books) against symA's shape -- SO-UNTERSBERG-LEADS reference-dictionary items. Done: Cappelli p.634 no match (bUNT8); Walther Tab. CCXX does not match (A2P4-UNT, 3 Oct 2026); Walther leaves 254 and 256-258 not viewed.
+- S: check Cappelli's Lexicon abbreviaturarum (archive.org) and Walther's Lexicon diplomaticum (Google Books) against symA's shape -- SO-UNTERSBERG-LEADS reference-dictionary items. Done: Cappelli p.634 no match (bUNT8); Walther Tab. CCXX does not match (A2P4-UNT, 3 Oct 2026); Walther leaves 254 and 256-258 (Tab. CCXIX, CCXXI-CCXXIII) do not match either (D2B-UNT, 6 Oct 2026), so Walther's general-sign plates CCXIX-CCXXIII are covered.
 - S: fetch Schöppner's Sagenbuch der Bayerischen Lande vol. 1 (1852) for its shorter initials tradition 'S.O.R.C.E.J.S.A.T.O.M.' to compare against symA -- witness-print lead. Done (A2P4-UNT, 3 Oct 2026): identical to Herzog Hs 3, no symA position reached.
 - M: build the same-scribe abbreviation concordance across all 28 IIIF leaves (already on disk) before any further Cappelli/Walther comparison -- methodology lead, unchecked.
 
@@ -413,5 +413,63 @@ Rule 3: neither item is a statistic, so there is no control figure. Item 2 is a 
 Requests: upload.wikimedia.org 1 (429); archive.org 9 (advancedsearch 2, djvu.txt 3, djvu.xml 2, page jpg 2, page_numbers 1), spaced at least 2 s apart.
 Vision: 2 calls (Schöppner line plus a blank header crop; Walther Tab. CCXX in 4 bands).
 
-Next step for symA (one line, not run): view Walther leaves 254 and 256-258 (Tab. CCXIX tail, CCXXI ff.), 1 vision call
+Next step for symA (one line; run by D2B-UNT, 6 Oct 2026, see below): view Walther leaves 254 and 256-258 (Tab. CCXIX tail, CCXXI ff.), 1 vision call
 per leaf in bands, about USD 0.5. Better still, build the same-scribe concordance across the 28 leaves first (WAIT-PASS-B item 3).
+
+## Walther leaves 254 and 256-258 against symA (D2B-UNT (account-2), 6 Oct 2026, 00:15-00:2x UTC)
+
+Brief: `.claude/briefs/runs/2026-10-05-account2-default-2217-jobs.md` job D2B-UNT. Intake gate (6 Oct 2026, 00:16 UTC):
+`untersberg-code: open (line 3) -- edition/page or full-text-search citation found within 6 lines`. This step was still undone:
+the NOTES.md line ending A2P4-UNT's section names it as not run. The criterion is A2P4-UNT's own, committed before any plate was viewed
+(`specs/cheap-tests/untersberg-code/PREREG-A2P4-UNT.md`, 4ea7ca25), and was not changed here. A match needs one sign with F1 (hook
+at top-left), F2 (vertical stem with a top serif), F3 (loop at the join) and F4 (long descender, plain, NO crossbar). 3 of 4 is
+partial. No sign reaching 3 of 4 means "does not match".
+
+**Source and crop step.** The copy is Internet Archive `gri_33125011161557`, page images `page/n{254,256,257,258}_w1887.jpg`
+(each 1846-1887 x 3000). Crop step, run and pasted: `python3 tools/iiif_lines.py --image w<N>.jpg --out crops<N> --prefix w<N>`
+found 3/2/3/4 "lines" on leaves 254/256/257/258. A plate is a table of signs, not text lines, so the same happened as on leaf 255.
+Explicit column-band crops were cut with PIL (`im.crop((150,350,1700,1500))` and `im.crop((150,1450,1700,2650))` per leaf,
+reduced to about 1240 px wide). Native-size zooms went to the candidate signs only. For a side-by-side check, a reference crop of
+symA was cut from `images/hs2398_opening11_inscription_leaf.jpg` (lines 4-6, box 200,1050,2300,1560, plus a zoom of line 6
+"ꝑꝑmi", box 700,1380,1000,1560). A2P4-UNT compared only against bUNT8's written description, so this side-by-side check is an addition.
+The crops stayed in the session scratchpad and were not committed (the commands above regenerate them).
+
+**What the leaves are.**
+
+| leaf | plate | cols | content |
+|---|---|---|---|
+| 254 | Tab. CCXIX | 437-441 | alphabetical YMO-ZZ (ym° imago ... zz zinziber); then *communi*, *completorium*, *componitur* and 27 *con* signs (col. 439-441) |
+| 256 | Tab. CCXXI | 445-447 | about 60 *et* signs and ligatures (1155-S.XIV), 21 *et cetera* forms, *et dicitur* |
+| 257 | Tab. CCXXII | 448-450 | *etenim*, about 25 *etiam* signs, *ex*, *id est*, *-nt*; *pupilla*, *-rum*, *secundum naturam*, *sed*, *subscripsi* monograms, *VT*; Isidore's critical notae (Accentus, Aduersae, Alogi, Anchorae, Antigraphi, Antisigmatis, Apostrophes, Aspirationis; Ceraunii, Choenix, Circumflexi, Coniunctionis, Coronidis x2, Crismi, Cryphiae, Diastoles, Diples x5, Dragma, Grauis, Libra, Limnisci, Obeli, Obolus, Oxiae, Phietronis, Positurae, Psyches, Rectae et Auersae obelatae, Semiuncia, Uncia) |
+| 258 | Tab. CCXXIII | 451-453 | calendar signs (Capitis Draconis, planets); characters before a document's first line (S.VIII-1085, large monogram and chrismon flourishes); puncta 1143-1379; *Punctorum vicarii in fine Diplomatis* (S.VIII) |
+
+**Nearest signs per leaf, against F1-F4.**
+- 254: the "9"-shaped *con* and *communi* forms have a top loop and sometimes a tail, but no stem with a serif: 2 of 4. This is the same
+  shape class A2P4-UNT found on Tab. CCXX. In the alphabetical half, the *per* p of "yꝑdlia hiperdulia" (S.XIV m) has a stem, a bowl and
+  a lead-in, but its descender is **crossed**, which fails F4 by the PREREG's own wording: 2-3 of 4 at best, with the missing feature F4.
+- 256: the *et* forms are e+t ligatures (loop plus crossed t ascender). The flourished 1155 forms have a loop and a tail but no
+  vertical serifed stem: 2 of 4.
+- 257: the nearest is *Coronidis nota* (second form, a ρ-shape: bowl top-right, plain diagonal descender to the lower left). It has F4 and
+  arguably F3, but no hook at top-left and no serifed vertical stem: 2 of 4. *sed* 1448 (long-s ligature) has a stem and descender with
+  its hook at top-**right** and no loop: 2 of 4. *Phietronis nota* (φ with a ring through the stem) fails F4.
+- 258: the "pp" *punctum* (S.VIII, Punctorum vicarii) has two p-shapes with long plain descenders and bowls (F3, F4) but no hook at
+  top-left and no top serif: 2 of 4. Puncta 1311/1357/1379 (hooks and s-curves) and the calendar signs reach 2 or fewer.
+
+**Result: does not match (leaves 254, 256, 257, 258).** No sign on any of the four leaves reaches 3 of 4 features. With A2P4-UNT's
+Tab. CCXX (leaf 255), all five of Walther's general-sign plates CCXIX-CCXXIII are now viewed against the PREREG with no match. This is a
+reference-dictionary search result, not a reading. symA stays ungraded (bUNT9's correction: "no signal", not I). No token is graded from
+Walther. It is a reference dictionary, not a key for this hand (rule 4: H 0, C 0, S 0). Rule 3: this is not a statistic and there is
+no control figure; it is a pre-registered by-eye shape match. Counts unchanged from bUNT8/bUNT9 (C 0, M 4, H 0, I 1).
+
+**Observation for the next step (not acted on).** In the side-by-side zoom of line 6 "ꝑꝑmi", the first symA instance seems to carry a
+short leftward mark on the stem at about baseline height. At this crop (about 1:1 of the 4884 px leaf) the mark cannot be told apart
+from the descender's own curl. If it is a crossbar, symA is closer to the ordinary *per/par/por* p (Cappelli's crossed-descender p;
+Walther's "yꝑdlia" above) than bUNT8's F4 "no crossbar" allows. That would make F4, and so the PREREG criterion itself, the thing to
+re-check. This is not graded and does not change any token. It belongs with the same-scribe concordance (WAIT-PASS-B item 3): compare
+all five symA instances with every crossed-descender p across the 28 leaves.
+
+Requests: archive.org 4 (page jpg x4, 2 s apart, descriptive User-Agent), all HTTP 200. No other host. Vision: the four leaves' band
+crops and zooms (about 4 leaf-units) plus 2 reference crops of Hs 2398. No subagents.
+
+Next step for symA (one line, not run): the same-scribe concordance across the 28 IIIF leaves on disk, with every crossed-descender p
+and every symA-like sign, to settle F4 (crossbar or curl) before any further reference-dictionary comparison. About USD 2-3 (WAIT-PASS-B item 3).
