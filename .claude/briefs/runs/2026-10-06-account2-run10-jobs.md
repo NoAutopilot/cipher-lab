@@ -136,3 +136,43 @@ letter, or any cipher. Compare with R1469's form; update the Verdict line.
 
 Wave 2 sessions: R10-KAL7 session_01SQZH6fzyyk2YQy7ii2tJcp (07:21); 07:38 UTC: R10-SUR693 session_01GDgp2uN23R4v4zh8GwzAqL; R10-JANS26B
 session_019rGqipBasrN8CtjYxc9mv1; R10-ROELL10 session_0162ekU79BtHvtNvfvvL6XZ1; R10-CLIN3868 session_01NyhwwQnzUjyPXFiGNrJCoi.
+
+Wave 2 results (check-in 07:56 UTC): 4 D, 1 D- (R10-SUR693 1.10x), workers 12.85; lane ~26.8 of 60 (get_session).
+
+## Wave 3 (spawned 07:5x UTC 6 Oct)
+
+### R10-SURV -- na-suriname-map-1781, VERIFIER of R10-SUR693's candidates_0693.tsv (cap 3, box 50 min)
+Intake gate: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+You are a verifier, separate from the solver (R10-SUR693). Check passes/inv373_0693_r10/ (transcription, PREREG, scoring, candidates_0693.tsv)
+against the scan crops: (1) the PREREG predates the scored run (git log times); (2) re-run the scoring script, same numbers; (3) eye-check
+each candidate value's occurrences on the crops (one look per sign class, plus one control look at an already-keyed sign); (4) per candidate:
+uphold (grade C, from the interlinear known plaintext) / M / reject, with reasons. Only for upheld candidates: apply to the map key the way
+the folder already records key changes (key.tsv / exceptions, with a source column naming inv. 373 0692-0693), rerun the decode --check
+(exit 0), and report the 2077 grade counts before/after. A reading change after AUDIT.md: write it into AUDIT.md and any SECOND-OPINIONS
+row (rule 10 propagation). No novelty class asked here. Update Verdict / gaps_check.
+
+### R10-CLINV -- pro3055-clinton-1779, VERIFIER of R10-CLIN3868 (cap 2, box 40 min)
+Intake gate: `pro3055-clinton-1779: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verifier, separate from R10-CLIN3868. Check its PREREG predates the scored run; re-run the scoring; eye-check the "digby" cells
+(11-6 4-2 11-9 1-1 16-6) on the crop against the 1778 key and the p.385 copy-book "Darby"; decide: an encipherer/copyist discrepancy to
+record as a data conflict (rule 4: record witnesses, do not settle by majority) and whether the reading file's word changes (if so,
+propagate into AUDIT.md and SECOND-OPINIONS rows). Write an AUDIT.md section. A concurrent worker (R10-CLIN3868B) works pp.383-384 in the
+same folder; touch only AUDIT.md and your own notes section.
+
+### R10-CLIN3868B -- pro3055-clinton-1779, 3868 pp.383-384 cells (cap 4.5, box 60 min)
+Intake gate: as R10-CLINV. Continue R10-CLIN3868 (read its NOTES section and PREREG first; reuse its scripts and gate): pp.383-384 (Images
+1031-1032), crops by tools/iiif_lines.py --image (paste), one blind Sonnet pass per page (~1.5) + reconciliation; stop before a unit that
+would cross 80% of cap/box. Same reporting. A verifier session (R10-CLINV) edits AUDIT.md concurrently: do not touch AUDIT.md.
+
+### R10-JANS26C -- na-janssens-java-1811, invnr 26 scans 117-191 (cap 2.5, box 45 min)
+Intake gate: `na-janssens-java-1811: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Finish the invnr 26 page-through (R10-JANS26/26B method, <= 60 requests). Then update gap 3: with invnr 26 done, say which page-throughs
+remain anywhere (if none, the gap's verdict).
+
+### R10-ROELL11 -- roell-vandedem-1809, the archival source of DECODE R1469/R1470 (cap 2.5, box 40 min)
+Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R10-ROELL10's next: neither Testa/Van Dedem direction holds R1469. Find which archive file DECODE's R1469/R1470 images come from: the
+DECODE record metadata (tools/decode_list.py login-free listing; record page fields: archive, shelfmark, folio, provenance notes), and the
+folder's own earlier notes. Then, if it names an NA inventory number not yet read, check its item page for digitisation (drupal-settings
+availability) and locate 9 Feb 1809 (<= 25 requests). Report the provenance found and whether the original is reachable. No login unless
+the listing lacks the field (then one browser login per CLAUDE.md, fetch only R1469/R1470 metadata).
