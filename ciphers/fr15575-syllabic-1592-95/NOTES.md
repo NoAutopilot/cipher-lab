@@ -677,22 +677,70 @@ L05-L08 decode (H/U per VERIFY-NV05) is unchanged; no C grade. Reopens only with
 or crops cut to one faint line each, which is a geometry change, not another read of these crops) or new material.
 Requests: none (crops on disk). Subagent calls: 12 Sonnet.
 
-## Remaining gaps (RUN6-NV05C, 5 Oct 2026; supersedes the DESK-LAND list)
+## D4-SYL54 (account-4 worker for LANE DEFAULT-account-4-20261006-1235, 6 Oct 2026 13:03-13:2x UTC)
+
+Named step (While waiting): locate fr.3995 no.54 (fol.96) and no.31 (fol.62r) canvases; eye-check the five candidate openings.
+Already done for no.54 and the five openings by NV05B (3 Oct 2026, section "Leaf location and key no.54"): fr.15575 f.228 = canvas
+235, f.233 = canvas 240, fr.15576 f.2 = canvas 8 (right pages); no.54 = fr.3995 canvas f188 (f.96v-97r spread; f.96r = f187). Not
+re-fetched. The part left undone was no.31, located only from the manifest label ("low-res overview only"); this job eye-checked it.
+
+Location (manifest labels; fr.3995's labels are usable but carry 20 offsets and 3 duplicate labels, so the label, not a formula):
+
+    $ python3 tools/gallica_folio.py btv1b525085665 --folio 62
+    folio 62: canvas f126 label '62r' 4043x6157 [label]
+    folio 62: canvas f127 label '62v' 4100x6146 [label]
+    $ python3 tools/gallica_folio.py btv1b525085665 --folio 96
+    folio 96: canvas f187 label '96r' 4077x6134 [label]
+
+No --anchor pairs needed: the corner of canvas f126 reads "62" in ink (1400 px overview), matching the label.
+
+What f.62r shows (1400 px overview + one native crop, read by this worker; no transcription pass, no key work):
+- Heading "1590  Ch. d'Hespagne" (sic, top left); foliation "62" top right. A half-sheet mounted on a guard.
+- A syllable grid with the same design as no.54: one row per consonant, five vowels, two-digit codes running up or down by 1
+  (ba 10 ... bu 14; ca 19 ... cu 15; da 24 ... du 20; ha 40 ... hu 44; qua 74 ... quu 70; sa 90 ... su 94; xa 95 ... xu 99).
+- Native crop (command below): the row key_no54.tsv reads "y" is written with a z-like letter (ʒ) here and runs ascending,
+  ʒa 35, ʒe 36, ʒi 37, ʒo 38, ʒu 39; key_no54.tsv has ya 39 (M, overwritten) ... yu 35, descending. The z row, which has no codes
+  on no.54 (key_no54.tsv grade I), carries three-digit codes here: za 704, ze 705, zi 706, zo 707, zu 708 (first digit read 7
+  by its shape against the 7s of 97/37 in the same crop; 1 not excluded, M).
+- Lower left: an alphabet with letter signs (a z 4, c 8, d o, e n f q ... lines continue to "l h" at the bottom edge).
+- Right margin: a legend of marks, e.g. "apres une syllabe a", "dessus double", "dessous marque de nulle", "dessus marque de nulle",
+  "dessus marque de nombre" (mark rules; not transcribed).
+- No nomenclator on f.62r. So no.31 is a separate, earlier-dated (1590) sheet of the same syllabary design, consistent with
+  Tomokiyo's "partial version"; f.62v (canvas f127) not viewed.
+These y/z differences are observations from one look, not key edits; key_no54.tsv is unchanged. Whether the target leaves use
+the no.31 or the no.54 values for y/z is untested.
+
+Crop step (before reading):
+
+    $ python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 126 --region 1150,4400,2050,550 \
+        --out ciphers/fr15575-syllabic-1592-95/images/fr3995 --prefix f62r_yz --max-width 2400 --debug
+    region 2050x550, 3 lines, 3 bands x 1 segments ... wrote 3 crops (f62r_yz_L01-L03: x, y/ʒ, z rows)
+
+Staged desk row (the Verdict's cheapest next; not written to LOCAL-QUEUE.tsv by this worker, handed to the lane orchestrator):
+  kind: image-read; target: ciphers/fr15575-syllabic-1592-95; ask: on PARES (pares.cultura.gob.es, dead from the cloud), find
+  AGS Estado leg. 609 fol. 86 (Ernest to Philip II, Bruselas 5 enero 1595; Lefèvre IV p.278 no.811) and the Manuscrits divers
+  t.28 fol.183 copy if listed; quote the PARES catalogue record (signatura, URL, whether images are online) and, if images are
+  online, save the image(s) of fol.86 and say whether any part is in cipher or carries a decipherment. Purpose: a possible crib
+  for fr.15576 f.2.
+
+Requests: gallica.bnf.fr 4 (2 manifest reads by gallica_folio.py, 1 overview of f126, 1 native region). Subagents 0.
+
+## Remaining gaps (D4-SYL54, 6 Oct 2026; supersedes the RUN6-NV05C list, other lines kept)
 
 Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (0.674 vs p99 0.233); L05-L08 gate FAIL three times (0.430/0.439 N8B, 0.347 NV05C vs p99 0.184); f.233 and fr.15576 f.2 unread.
 - Simancas original of the 5 Jan 1595 dispatch (AGS Estado leg. 609 fol. 86, Lefèvre IV no.811) - blocker: not-attempted; new material, a possible crib for fr.15576 f.2 (not for f.228); PARES dead from the cloud; next: LOCAL-QUEUE desk row for the PARES image of Estado 609 fol.86 or Manuscrits divers t.28 fol.183, ~owner minutes
 - f.228 L05-L08 gloss - blocker: not-attempted; machine gloss read of the b2 band crops retired (rule 3, NV05C); next: one-faint-line crops (re-cut b2 bands between the bold lines, gloss only, no cipher line) read by a person in the sign sorter, or new material, ~$2
-- key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; f.62r = canvas f126) - blocker: not-attempted; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 same method, ~$4.5
+- key nomenclator and no.31 (fr.3995 f.96v-97r lower 3/4; no.31 = f.62r canvas f126, eye-checked D4-SYL54: a separate 1590 'Ch. d'Hespagne' syllabary + letter signs + mark legend, y row ascending 35-39 and z row 3-digit 704(?)-708, both against key_no54.tsv) - blocker: not-attempted; next: iiif_lines.py crops of canvas f188 y 1600-6055 in 4-6 bands, 2 blind passes + reconcile, ~$6; no.31 grid + legend same method, ~$4.5
 - target decode fr.15576 f.2 - blocker: not-attempted; a 3-digit system outside no.54 with a period interlined decipherment; next: gloss (2 passes) + ~25 cipher lines aligned with tools/interlinear_align.py (grade C), ~$9
 - fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; unread, band crops mix two gloss lines (NV05C); next: 4-line batches only with gloss-only crops (one faint line per crop), NV05C lesson, ~$7.5 each
 
-## Escalation (RUN6-NV05C, 5 Oct 2026)
+## Escalation (D4-SYL54, 6 Oct 2026)
 
 - [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
 - [ ] clear-pages: AGS Estado leg. 609 fol. 86 (Lefèvre IV no.811); planned: desk row for its image
-- [ ] known-keys: no.54 syllabary control-checked (NV05C fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3 at the floor, > null); nomenclator and no.31 still to transcribe (~$6, ~$4.5)
+- [ ] known-keys: no.54 syllabary control-checked (NV05C fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3 at the floor, > null); nomenclator and no.31 still to transcribe (~$6, ~$4.5); no.31 canvas f126 eye-checked (D4-SYL54)
 - [x] print: Lefèvre IV p.278 no.811 read in full (L47, DESK-LAND); van Durme 1964 snippet only
 - [n/a] key-rebuild: the period key sheet exists and reads the target leaf far above its null
 - [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
-Verdict: keep going: 5 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes); then the no.54 nomenclator (~$6); then fr.15576 f.2 alignment (~$9)
+Verdict: keep going: 5 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes; row text staged in the D4-SYL54 section, waiting on the lane orchestrator to queue it); then the no.54 nomenclator (~$6); then fr.15576 f.2 alignment (~$9)
