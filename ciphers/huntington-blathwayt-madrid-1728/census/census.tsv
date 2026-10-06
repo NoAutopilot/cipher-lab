@@ -1,0 +1,45 @@
+set	line	pos	read	gloss	class	settled
+T	BLA188_p6_L01	1	1013	se	Z	1017
+T	BLA188_p6_L01	2	385	et	Z	387
+T	BLA188_p6_L01	4	555	nouvelle	Z(first)	755 M
+T	BLA188_p6_L01	7	1013	se	unclear	M
+T	BLA188_p6_L01	8	385	et	Z	387
+T	BLA188_p6_L02	3	385	et	Z	387
+T	BLA188_p6_L02	5	1013	se	unclear	M
+T	BLA188_p5_L04	2	454	fais	Z	474
+T	BLA188_p5_L04	9	596	on	Z	796
+T	BLA188_p5_L06	7	385	et	Z	387
+T	BLA188_p5_L06	9	596	on	Z	796
+T	BLA188_p4_L06	9	596	on	Z	796
+T	BLA194_p1_L07	2	396	on	Z	796
+A	BLA188_p4_L06	4	258	de	Z	278 (258 and 278 both 'de'; glyph decides)
+A	BLA188_p5_L05	3	945	ri	Z	947 (945 and 947 both 'ri'; glyph decides)
+K	BLA188_p4_L05	1	53	affaire	3=flat-top,5=flagged	-
+K	BLA188_p4_L05	2	922	qu	9 plain	-
+K	BLA188_p4_L05	6	924	quand	9 plain	-
+K	BLA188_p4_L05	7	588	il	5 flagged	-
+K	BLA188_p4_L06	1	929	quil	9 plain	-
+K	BLA188_p4_L06	2	386	est	3 flat-top	-
+K	BLA188_p4_L07	9	551	mettre	Z,Z	551 M (771? 551 mettre n=1 elsewhere)
+K	BLA188_p5_L04	3	581	ie	5 flagged	-
+K	BLA188_p5_L04	4	1013	s	3 flat-top	-
+K	BLA188_p5_L04	5	659	l	5,9 plain	-
+K	BLA188_p5_L05	2	695	me	9,5 plain	-
+K	BLA188_p5_L06	2	386	est	3 flat-top	-
+K	BLA188_p5_L07	1	356	donne	3 flat-top,5 flagged	-
+K	BLA188_p5_L07	5	1149	une	9 plain	-
+K	BLA188_p5_L07	6	843	paix	3 flat-top	-
+K	BLA188_p6_L01	3	1149	une	9 plain	-
+K	BLA188_p6_L02	1	932	quelque	9 plain,3 flat-top	-
+K	BLA194_p1_L04	2	1154	vous	5 flagged	-
+K	BLA194_p1_L04	3	381	en	3 flat-top	-
+K	BLA194_p1_L05	1	588	il	5 flagged	-
+K	BLA194_p1_L05	3	659	l'	5,9 plain	-
+K	BLA194_p1_L05	6	692	mais	9 plain	-
+K	BLA194_p1_L05	7	588	il	5 flagged	-
+K	BLA194_p1_L05	8	754	n	5 flagged (7 = 7-form)	-
+K	BLA194_p1_L06	5	892	premier	9 plain	-
+S	BLA194_p1_L06	2	278	de	7-form	-
+S	BLA194_p1_L07	7	278	de	7-form	-
+S	BLA194_p1_L07	8	1176	votre	7-form	-
+S	BLA194_p1_L06	6	907	proposition	7-form	-

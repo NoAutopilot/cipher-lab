@@ -378,9 +378,9 @@ Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found
 - Action that depends on nobody: the TNA Discovery API search this folder names -- SP 94 and SP 98-100 descriptions for 1728-29 for "Paretti"/"Pareti", ~$0.5.
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
-Read so far: 131 of 172 target tokens at C (76.2%; R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), M 20, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
+Read so far: 131 of 172 target tokens at C (76.2%; R7B-HUNT 6 Oct 2026: counts unchanged, one C value changed (BLA191 p5 L11 pos3 et -> es); earlier: R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), M 20, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
 - 18 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) (805, 6, 1210, 689, 460, 285, 214, 1019, 711, 1118, 1052, 836, 1152, 222, 73, 470, 778, 190) - blocker: not-attempted; R17 "What is left" names the method; next: context-fill pass with a matched control (blank the same share of glossed BLA185 and score), any fill graded S only if the control passes (cost estimated, not in the folder), ~$3
-- the descending z-shaped digit in the BLA188 p5-p6 and BLA194 hands (read 3 in 1013, 396, 5 in 385/555, 9 in 1199; the key would want 7 at 1017 se, 796 on, 387 et) - blocker: not-attempted; A4-RFHUN (5 Oct 2026) set 6 such columns to M; next: a glyph census of that form across BLA188 p4-p6 and BLA194 p1 on native crops, settling it against every column whose gloss picks one reading, ~$2
+- the 7-form census left half done: R7B-HUNT (6 Oct 2026) settled the descending glyph as this hand's 7 on 11 columns (gate passed, census/), not yet read on the other test columns (BLA188 p4 L09/L11/L14/L15/L18, p5 L01/L11/L12/L13, BLA194 p1 L08/L10/L11), and the flip of BLA191 p5 L11 pos 3 (385 et -> es) is untested against its own glyph - blocker: not-attempted; stopped at the R7B-HUNT cap; next: read the 13 remaining crops (bands already defined in census/bands.txt) and a native crop of BLA191 p5 L11 pos 3, ~$1.5
 - BLA184 range 1150/1240/1243/1250/1259 (probable names section) - blocker: open-codes; R17: glosses of this range elsewhere do not fit, the glossed items never use it
 - a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: not-attempted; Verifier audit and Premise check (d); next: TNA Discovery API search of SP 94/98-100 and SP 36/13-14 descriptions for "Paretti"/"Pareti" (While waiting), ~$0.5
 
@@ -392,7 +392,7 @@ Read so far: 131 of 172 target tokens at C (76.2%; R17 table updated by A4-RFHUN
 - [x] key-rebuild: key.tsv rebuilt from the glosses by build_key.py (R17)
 - [x] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap)
 - [ ] retry: context-fill of the 21 unkeyed groups with a BLA185 blanking control
-Verdict: keep going: 4 internal gaps; cheapest next: descending-glyph census on BLA188 p4-p6 / BLA194 p1, ~$2 (the TNA Discovery search was run by RUN6-BLATH, 5 Oct 2026: piece-level only, see below)
+Verdict: keep going: 4 internal gaps; cheapest next: finish the 7-form census (13 columns + BLA191 p5 L11 pos3), ~$1.5 (R7B-HUNT, 6 Oct 2026); earlier cheapest next was the census itself, ~$2 (the TNA Discovery search was run by RUN6-BLATH, 5 Oct 2026: piece-level only, see below)
 
 ## IA-DESK-ALT (account-3 worker, 5 Oct 2026): HMC Polwarth IV and V via Internet Archive
 
@@ -444,3 +444,32 @@ reproducible from images/manifest.json pointers). Requests: hdl.huntington.org 2
   wrong column; '-' = none). `python3 settle.py && python3 build_key.py && python3 ../../tools/decode_key.py . --check`: 0.
 - **Effect on the targets (172 tokens): C 129 -> 131, M 22 -> 20, U 21** (the +2 C are the two BLA191 575 tokens). BLA186 p3 pos 10 849 monsieur -> parle (C, value only);
   BLA191 p5 L02 pos 9 and L11 pos 4, 575 'parle|j'' (M) -> j' (C). Key 395 -> 392 rows.
+
+## R7B-HUNT: descending-glyph census (account-1 worker, 6 Oct 2026 02:06-02:1x UTC by date -u)
+
+Pre-registered in census/PREREG.md (pushed f9d20057d before any crop was viewed). Candidates from census/swapstats.py: on BLA188 p4-p6
+and BLA194 p1, against a key built with these four pages left out, the commonest single-digit fix that turns a glossed column's group
+into its gloss's key value is 5->7 (17 columns) and 3->7 (6); every other swap occurs at most twice. Native IIIF bands
+(hdl.huntington.org, 16 requests incl. one empty reply retried once, >= 1.7 s apart; crops kept out of the repo, regions in
+census/bands.txt as disk-copy px x 7.2567) read by eye in this session, one pass, not blind (the reader knew the glosses).
+Of 15 bands fetched, 4 were read before the cap (p6a, p4b, p5b, q1b); census/census.tsv has every classed column.
+
+- **The glyph.** The "descending z-shaped digit" is this hand's 7: a short top bar and a long descender curving left, with no lower
+  bowl. It has the same form as the 7 in 278 de, 1176 votre and 907 proposition on BLA194 p1 (S control, 4 of 4). The hand's 3 is a
+  different flat-top form with a lower bowl (1013 s, 381 en, 386 est, 843 paix), and its 5 carries a flag. These are side by side in
+  one group on BLA188 p6 L01 ("38" + 7-form, gloss et) and BLA188 p5 L06.
+- **Gate.** T: 11 of the 11 classed test digits are the 7-form (2 more were unclear: BLA188 p6 L01 pos7 and L02 pos5, 1013 'se'; they
+  stay M). K: 1 of the 25 gloss-confirmed 3/5/9 columns shows the 7-form (4%; BLA188 p4 L07 pos9, 551 mettre, both 5s look like 7s,
+  and the only other 551 = mettre witness is BLA187). Both gate conditions hold, so the 7 reading is settled on the columns read.
+- **Settled (settle_image.tsv, H):** 1013->1017 se (p6 L01 pos1); 385->387 et (p6 L01 pos2, L01 pos8, L02 pos3; p5 L06 pos7);
+  596->796 on (p4 L06 pos9; p5 L04 pos9, L06 pos9); 396->796 on (BLA194 p1 L07 pos2); 454->474 fais (p5 L04 pos2). Two columns where
+  both readings carry the same gloss are decided by the glyph: 258->278 de (p4 L06 pos4) and 945->947 ri (p5 L05 pos3). Set M: 555->755
+  (p6 L01 pos4; first glyph the 7-form, but 755 = ni n=1 does not match 'nouvelle'); 551 (p4 L07 pos9) kept as read and pending.
+- **Effect.** `python3 settle.py && python3 build_key.py && python3 ../../tools/decode_key.py . --check`: 0. Target tokens are still
+  C 131, M 20, U 21. There is one value change: **385 now keys 'es' (6) over 'et' (4)**, so BLA191 p5 L11 pos3 reads 'es', not 'et'.
+  This follows from the majority rule after the 385-et columns read here moved to 387. The remaining 385 = et glosses are on columns
+  not yet read (BLA188 p5 L01, BLA194 p1 L08/L11), and "accommodement et j'..." reads better in context, so the token should be
+  checked against its own glyph before it is cited. Key rows: 387 et n=8->12, 796 on n=10->14, 1017 se 3->4, 474 fais 1->2; 596 on
+  6->3 (only unread columns left). Leave-one-out share (key_items.tsv): BLA188 0.752, BLA194 0.667.
+- **Not done (cap):** the other test columns in the bands already fetched (BLA188 p4 L09/L11/L14/L15/L18, p5 L01/L11/L12/L13,
+  BLA194 p1 L08/L10/L11), and the BLA191 p5 L11 pos3 glyph. Next step is in Remaining gaps.

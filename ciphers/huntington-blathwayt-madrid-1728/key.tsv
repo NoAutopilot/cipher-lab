@@ -76,13 +76,13 @@ code	value	grade	source	note
 251	d	C	gloss	n=1 items=BLA188
 255	dans	C	gloss	n=1 items=BLA188
 256	correspondance	C	bracket	n=2 items=BLA189,BLA190
-258	de	C	gloss	n=6 items=BLA187,BLA188,BLA194 other=afait:1;cotes:1
+258	de	C	gloss	n=5 items=BLA187,BLA188,BLA194 other=afait:1;cotes:1
 259	cour	C	bracket+gloss	n=3 items=BLA188,BLA190
 263	credit	C	gloss	n=1 items=BLA188
 270	d	C	gloss	n=3 items=BLA185,BLA188,BLA190
 271	d'	C	bracket+gloss	n=3 items=BLA185,BLA190
 275	dans	C	gloss	n=1 items=BLA185
-278	de	C	bracket+gloss	n=29 items=BLA179,BLA185,BLA188,BLA189,BLA190,BLA194
+278	de	C	bracket+gloss	n=30 items=BLA179,BLA185,BLA188,BLA189,BLA190,BLA194
 279	dem	C	bracket	n=1 items=BLA190
 281	der	C	bracket	n=1 items=BLA190
 282	des	C	bracket+gloss	n=5 items=BLA185,BLA188,BLA190,BLA194
@@ -112,9 +112,9 @@ code	value	grade	source	note
 379	el	C	gloss	n=2 items=BLA188
 381	en	C	bracket+gloss	n=19 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194 other=on:1;ier:1;perfectioner:1
 384	er	C	bracket+gloss	n=4 items=BLA187,BLA188,BLA190 other=en:1
-385	et	C	bracket+gloss	n=15 items=BLA187,BLA188,BLA190,BLA194 other=es:5;ce:1;envoyes:1
+385	es	C	bracket+gloss	n=12 items=BLA187,BLA188,BLA190,BLA194 other=et:4;ce:1;envoyes:1
 386	est	C	bracket+gloss	n=10 items=BLA188,BLA189,BLA190,BLA194 other=oit:1;c'est:1
-387	et	C	bracket+gloss	n=8 items=BLA185,BLA187,BLA189,BLA190,BLA194
+387	et	C	bracket+gloss	n=12 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194
 388	en	C	gloss	n=1 items=BLA190
 389	eu	C	bracket	n=1 items=BLA189
 390	ex	C	bracket	n=1 items=BLA190
@@ -144,7 +144,7 @@ code	value	grade	source	note
 465	fin	C	bracket	n=1 items=BLA189
 468	fort	C	gloss	n=1 items=BLA190
 473	faire	C	bracket+gloss	n=4 items=BLA185,BLA189,BLA190
-474	fais	C	bracket	n=1 items=BLA190
+474	fais	C	bracket+gloss	n=2 items=BLA188,BLA190
 475	faire	C	gloss	n=1 items=BLA194
 476	faut	C	gloss	n=1 items=BLA188
 477	faute	C	bracket	n=1 items=BLA190
@@ -169,7 +169,7 @@ code	value	grade	source	note
 535	moins	C	gloss	n=1 items=BLA188
 538	moque	C	gloss	n=1 items=BLA188
 542	moyen	C	gloss	n=1 items=BLA188
-551	mettre	C	gloss	n=2 items=BLA187,BLA188
+551	mettre	C	gloss	n=1 items=BLA187
 555	heureux	C	gloss	n=1 items=BLA194
 558	au	C	gloss	n=1 items=BLA187
 560	fais	C	bracket	n=1 items=BLA190
@@ -186,7 +186,7 @@ code	value	grade	source	note
 593	ir	C	bracket+gloss	n=2 items=BLA187,BLA189
 594	is	C	bracket+gloss	n=6 items=BLA188,BLA190,BLA194 other=surpris:1;oit:1
 595	it	C	bracket+gloss	n=5 items=BLA185,BLA188,BLA190,BLA194 other=il:1;j':1
-596	on	C	gloss	n=6 items=BLA188
+596	on	C	gloss	n=3 items=BLA188
 597	jalouse	C	bracket	n=1 items=BLA190
 599	jamais	C	bracket	n=1 items=BLA189
 600	icy	C	bracket+gloss	n=3 items=BLA188,BLA189,BLA190 other=ici:1
@@ -245,7 +245,7 @@ code	value	grade	source	note
 770	nonobstant	C	bracket	n=2 items=BLA189
 792	oit	C	bracket+gloss	n=8 items=BLA187,BLA188,BLA190 other=davantage:1
 795	vient	C	gloss	n=1 items=BLA188
-796	on	C	bracket+gloss	n=10 items=BLA185,BLA187,BLA188,BLA189,BLA190
+796	on	C	bracket+gloss	n=14 items=BLA185,BLA187,BLA188,BLA189,BLA190,BLA194
 797	ont	C	bracket	n=1 items=BLA189
 802	ou	C	bracket+gloss	n=4 items=BLA188,BLA189,BLA190 other=on:1
 807	obstin	C	bracket	n=1 items=BLA189
@@ -301,8 +301,8 @@ code	value	grade	source	note
 942	ra	C	bracket+gloss	n=8 items=BLA185,BLA188,BLA190,BLA194 other=va:1;ri:1;ve:1
 943	re	C	bracket+gloss	n=7 items=BLA185,BLA188,BLA190,BLA194 other=ve:2;pris:1;vi:1
 944	ren	C	bracket	n=1 items=BLA189
-945	ri	C	gloss	n=4 items=BLA188 other=ra:1
-947	ri	C	bracket+gloss	n=2 items=BLA179,BLA189
+945	ri	C	gloss	n=3 items=BLA188 other=ra:1
+947	ri	C	bracket+gloss	n=3 items=BLA179,BLA188,BLA189
 948	ro|re	C	gloss	n=2 items=BLA187,BLA188 other=re:1
 951	rendre	C	gloss	n=1 items=BLA188
 958	recommence	C	bracket+gloss	n=2 items=BLA185,BLA189
@@ -323,7 +323,7 @@ code	value	grade	source	note
 1013	s	C	bracket+gloss	n=23 items=BLA185,BLA187,BLA188,BLA190,BLA194 other=s'entendre:2;f:1;s':1
 1014	sa	C	bracket+gloss	n=5 items=BLA187,BLA188,BLA190 other=la:2
 1016	sans	C	gloss	n=3 items=BLA179,BLA185,BLA190
-1017	se	C	bracket+gloss	n=3 items=BLA185,BLA189,BLA190 other=ra:1
+1017	se	C	bracket+gloss	n=4 items=BLA185,BLA188,BLA189,BLA190 other=ra:1
 1018	sec|ser	C	bracket+gloss	n=3 items=BLA189,BLA190,BLA194 other=ser:1;s:1
 1020	si	C	bracket+gloss	n=9 items=BLA187,BLA188,BLA189,BLA190,BLA194 other=on:1
 1022	so	C	bracket+gloss	n=2 items=BLA185,BLA190
