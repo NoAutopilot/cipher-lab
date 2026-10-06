@@ -21,6 +21,42 @@
       "folio": "350v or the outer address fold of the same folded letter",
       "content": "address panel: 'A Monseigneur ... Colbert', docketed 'M. Guibert, 6 [?] Jan[vie]r 1665' in a filing hand -- 'Guibert' not 'Gravel': flagged, not resolved this pass (may be a scribe/courier name, or this pass's sender identification needs re-checking against La Roncière's catalogue entry Bourdeau cites, t. I p. 270)",
       "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/pct:0,0,33,60/1200,/0/native.jpg"
+    },
+    {
+      "file": "c355_signature.jpg",
+      "canvas": "f355",
+      "region": "5930,3974,1640,630",
+      "content": "subscription and signature: 'V[ost]re tres humble et tres obeiss[an]t serviteur / Guibert m[aîtr]e des cour[rier]s d'Allemagne / a directeur des bureaux de Normandie [et] Bretagne' (reading of the title M)",
+      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/5930,3974,1640,630/1800,/0/native.jpg",
+      "fetched_utc": "2026-10-06T04:06Z",
+      "by": "R8-G2678"
+    },
+    {
+      "file": "c355_closing.jpg",
+      "canvas": "f355",
+      "region": "4416,1072,3280,820",
+      "content": "closing lines of the letter (f.350r?, stamp read '348'/'350'): 'd'attendre ces Rixd[alles] jusques au premier Juillet prochain, que l'on ne manquera pas de les luy payer. J'attends en particulier cette grace de v[ost]re generosite apres tant d'autres que nous avons receues en general et que vous croirez avec tout le respect que je doibs'",
+      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/4416,1072,3280,820/1800,/0/native.jpg",
+      "fetched_utc": "2026-10-06T04:06Z",
+      "by": "R8-G2678"
+    },
+    {
+      "file": "c356_docket.jpg",
+      "canvas": "f356",
+      "region": "3154,2082,694,1198",
+      "content": "docket on the address panel, rotated: 'M. Guibert / [?] Janv. 166[5?]' -- confirms the 24 Sept read 'M. Guibert'",
+      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/3154,2082,694,1198/1800,/0/native.jpg",
+      "fetched_utc": "2026-10-06T04:06Z",
+      "by": "R8-G2678"
+    },
+    {
+      "file": "c355_dateline.jpg",
+      "canvas": "f355",
+      "region": "4416,4353,820,157",
+      "content": "date line bottom left: 'ce 29 Janvier 166[4 or 5]' -- last digit reads as 4 by eye (M)",
+      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/4416,4353,820,157/1200,/0/native.jpg",
+      "fetched_utc": "2026-10-06T04:06Z",
+      "by": "R8-G2678"
     }
   ],
   "fetched_utc": "2026-09-24T09:05:00Z",

@@ -1,6 +1,7 @@
 # [The abbé de Gravel] to Jean-Baptiste Colbert, Ratisbon, 29 Jan 1665, BnF Mélanges de Colbert 127, f.349-350
 
 **Status: open** (not attacked; already someone else's active work-in-progress — see below).
+Sender correction (R8-G2678, 6 Oct 2026): the letter is **signed "Guibert", maître des courriers d'Allemagne** (canvas 355, signature crop `images/c355_signature.jpg`), docketed "M. Guibert"; not the abbé de Gravel as DECODE, Bourdeau and this folder's title say. See the section of that date.
 Clément, *Lettres, instructions et mémoires de Colbert* (IA items colbert-lettres-instructions-et-memoires-de-colbert-v-1 to v-7), full-text search (be-api) for "Gravel", "Frichmann", "rixdales" and "Ratisbonne" run by this worker (GF-A2B-1, 3 Oct 2026): Gravel hits only Colbert's own letters to the abbé de Gravel at Mainz (1669-70, t. II pt 2, t. V) and editorial notes; no Gravel letter of 29 Jan 1665 and none of the enciphered pension names.
 
 ## Item
@@ -229,3 +230,47 @@ No reading on disk -- no reading: status open, passA.tsv transcription only, no 
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: re-view canvases 355-356 of btv1b10035540v at native resolution (facing page, docket, slip) with tools/gallica_folio.py and tools/iiif_lines.py, then a crib test of the three enciphered names against the 1664-65 Regensburg pensioners named in Gravel's printed dispatches, ~$2. Who acts: agent. Source: this file's "Next action that depends on nobody"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Canvases 355-356 re-view and crib test (R8-G2678, 6 Oct 2026)
+
+Manifest fetched once with `tools/gallica_folio.py btv1b10035540v` (595 canvases, every label "NP", cached at
+sources/gallica-manifests/btv1b10035540v.json); canvases 355 and 356 viewed whole at 1400 px, then four native
+crops (`images/manifest.json`, entries by R8-G2678).
+
+**Canvas 356** (as on 24 Sept): left = the outer address leaf ("Monseigneur / Monseigneur Colbert", two seals);
+right = f.349r, the letter's first page with all four cipher passages. Docket, rotated, on the address leaf
+(`images/c356_docket.jpg`): **"M. Guibert / [?] Janv. 166[5]"** -- the 24 Sept read "M. Guibert" is right.
+
+**Canvas 355** (not viewed before): right = the letter's second page (folio stamp read "348" at 1400 px; not
+re-read at native size, M), six closing lines (`images/c355_closing.jpg`): "d'attendre ces Rixd[alles] jusques
+au premier Juillet prochain, que l'on ne manquera pas de les luy payer. J'attends en particulier cette grâce de
+v[ost]re générosité après tant d'autres que nous avons receues en général et que vous croirez avec tout le
+respect que je doibs" -- then "Monseigneur", the date line bottom left **"ce 29 Janvier 166[4/5]"** (last digit
+looks like 4 by eye, M; the docket reads 1665), and the subscription (`images/c355_signature.jpg`):
+**"V[ost]re très humble et très obéiss[an]t serviteur / Guibert m[aîtr]e des cour[rier]s d'Allemagne / a[ncien?]
+directeur des bureaux de Normandie [et] Bretagne"** (name H; title words M). Left of canvas 355 = blank verso
+with bleed-through. No slip, gloss, decipherment or clear copy on either canvas. No place name was seen on
+either page: "Ratisbon" (DECODE metadata) is not on these two canvases.
+
+What this changes (findings, not novelty claims): the writer is Guibert, a postal official (master of the German
+couriers), not Gravel. The 24 Sept "Guibert vs Gravel" flag is resolved in Guibert's favour. The catalogue label
+"l'abbé de Gravel" (La Roncière t. I p. 270, via Bourdeau) may name the person the letter concerns rather than the
+writer; one reading consistent with the text is that `29` (15,000 of 17,100 Rd, a single code group) is Gravel or
+the Diet envoy who distributes the money -- grade I, inferred only, not tested. The money arithmetic closes:
+15000 + 500 + 600 + 1000 = 17100, the bill named in line 3, so every amount (including passA's "600 or 60") is
+confirmed.
+
+**Crib test: pre-registered, judged a non-test, not run** (`PREREG-crib-2026-10-06.md`, pushed 3dc99035a before
+any candidate was tried). The 12 groups of the two spelled names are all distinct, so under any letter or syllable
+substitution every candidate name of compatible length fits and so does every control name: the control cannot
+fail differently from the target (CLAUDE.md rule 3, AX-5799/bCAS shape). No candidate list was drawn up and no
+name is reported as fitting. The premise of the brief's candidate source ("Gravel's printed dispatches") is also
+weakened by the sender correction. Grades: no token read (0 H, 0 C, 0 S, 0 M, `29`=Gravel 1 I).
+
+Next (one line each, not done here): (1) find another Guibert-to-Colbert letter of Jan-Feb 1665 in Mélanges de
+Colbert 127/127bis (same volume, btv1b10035540v; the BnF sommaire tree, ark:/12148/cc954302, lists writers per
+folio) that uses the same two-digit groups -- the only route to a crib test that can fail; ~$2; (2) read La
+Roncière t. I p. 270's entry for f.349 to see why it names Gravel.
+
+Requests this job: gallica.bnf.fr 9 (1 manifest, 2 canvas overviews, 6 region crops; >= 2 s apart, all HTTP 200);
+github.com 1 (shallow clone of dbourdeau/cyphersolver, grepped for item a).
