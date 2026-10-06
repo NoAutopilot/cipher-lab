@@ -1181,7 +1181,7 @@ lighter code load than the target's hypothesis implies; the same mismatch says t
 shape poorly (two signs at 27% of all tokens are too frequent for two whole Russian words). Read the negative with that caveat.
 Decodes: `families/wordcode-1-codes=topk_{2,6},bnd=x,err=0.05-s1stxt-convB.txt` and the `-shuffle1-` pair beside them.
 
-### R15-KAL14 pre-registration (6 Oct 2026, 18:17 UTC, before any scored run)
+### R15-KAL14 pre-registration (6 Oct 2026, 18:00 UTC by date -u, before any scored run; pushed d1ec59488)
 
 Brief `.claude/briefs/runs/2026-10-06-account2-run15-jobs.md` "R15-KAL14". Family: `columnar_homophonic` (new module
 `tools/families/columnar_homophonic.py`, offline test `tools/tests/test_columnar_homophonic.py`): an irregular columnar
