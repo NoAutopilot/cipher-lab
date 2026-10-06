@@ -1527,3 +1527,53 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370, R4372 and R4376 read from the full-size images, two blind passes plus reconciliation each
 - [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2), ~$6
 Verdict: keep going: 3 internal gaps; cheapest next: words-level context test of R4386 on the 1763 1201-2000 band, ~$3 (low prior); for codes 1-800: image check of R1953, ~$6
+
+## D2-HELR (6 Oct 2026): pre-registered words-level frequency-fit test of R4386 (f.75) on the 1763 1201-2000 band (account 1 worker for LANE DEFAULT-account-1-20261005-2217)
+
+Step run: N7-HEL86's named next (the different instrument after its NON-TEST). Intake gate (`python3 tools/intake_gate_check.py
+hellen-frederick-1752`, 5 Oct 2026 23:54 UTC): `hellen-frederick-1752: partial (line 1) -- edition/page or full-text-search citation found
+within 6 lines` (pass, exit 0). PREREG `key_r4386/PREREG-D2HELR.md` pushed 02115fd90 (5 Oct 23:58-23:59 UTC; its header's "about 00:00"
+is corrected in the file) before the images were fetched; control run and pushed 990801f28 before any word was read. One DECODE browser login
+(`--guess-fullsize`), R4386 P1-P4 full size to scratch only (P2/P3 sha1 match N7-HELDK). Tiles: N7-HEL86's `crop_cells.py` with a new
+`--scale 1.0` option (same 163 cells, same attribution). Units: 2 blind Sonnet passes (one call each, 11 tiles) + 1 reconciliation.
+
+**Reading.** 163 cells, the passes disagree on 25 (15%; mostly `?`-marks, abbreviations and null cells); 8 settled (`key_r4386/words_read.tsv`
+column `settled`): 1242 (x8) BLANK -- pass A read the neighbouring row 241 "affaires", N7-HEL86 checked row 242 empty at full resolution;
+1202 BLANK (N7-HEL86); 1522 "dernieres" and 1227 "a l'egard de" from the crop. Non-target disagreements took pass B.
+
+**Statistic** (PREREG): S = token-weighted mean log10 fr18 frequency of each 1763 token's R4386 word; null = 10,000 permutations of the 163
+read words over the cells. `python3 key_r4386/words_test.py --control --score` (`words_control.txt`, `words_score.txt`):
+
+| | S | null median / p95 / p99 | P(null >= S) | control R4369 on R1953 at ~121 tokens: share S > own p99 (gate >= 0.80) | wrong key (gate <= 0.05) | verdict |
+|---|---|---|---|---|---|---|
+| reconciled (primary) | **-4.788** | -4.678 / -4.366 / -4.226 | **0.736** | **1.000** | 0.005 | **FAIL** |
+| pass A only (sensitivity) | -4.639 | -4.714 / -4.411 / -4.285 | 0.331 | | | inconclusive |
+| pass B only (sensitivity) | -4.783 | -4.674 / -4.362 / -4.218 | 0.733 | | | FAIL |
+
+**Verdict (pre-registered rule): FAIL -- R4386 retired for the 1763 1201-2000 band (instrument: words-level frequency fit).** With power
+1.000 at this N, R4386's words sit at or below a random reassignment of its own words: 58 of the 121 tokens land on a blank, "zero" or a
+non-word, and the three most frequent 1763 codes read BLANK (1242 x8), "bre" (1337 x8) and BLANK (1497 x7), where a true key puts
+function words. Pass A's inconclusive line comes only from its 1242 misread (the neighbour row). Caveat: the control's R1953 values are
+the R4369 reading itself (152 H, 304 S tokens), so the control is partly circular for its S tokens; the wrong-key line (0.005) shows the
+statistic does not pass a key of the same design by construction.
+
+**Where it was not found:** R4386 does not carry the 1763 1201-2000 values (this test); R4388 does not carry the 2001-3900 values
+(N7-HELBC); no other Add MS 32276 record R4381-R4408 is a 1763 positional candidate (N6-HEL81). Requests: de-crypt.org about 10 (1 login +
+RecordsView 4386 + 4 thumbnails + 4 full-size), 1.7 s apart, no challenge. Subagent calls: 2 (Sonnet). Cost: see the lane ledger.
+
+## Remaining gaps (D2-HELR, 6 Oct 2026)
+Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16; 374 U (unchanged)
+- codes 1-800 of the Hellen key (374 R1953 tokens) - blocker: not-attempted; period tables R4370/R4372 retired (rule 3); context-fit anneal untestable at this N (N5-HEL7); phrase-crib placement from 8 Fagel 5177 pages untestable at 1,861 words, known-answer control 0 proposals (D2-HELFAGEL); next: image check of R1953 against DECODE's transcription where decoded spans break (rule 2), ~$6
+- empty cells inside 801-1796 (14 tokens) and the 16 M tokens - blocker: open-codes; scattered codes the sheet leaves blank or the readers could not settle
+- the 1756 letter (R1049) - blocker: no-key-material; R4369, R4372 and R4376 do not read it (N6-HEL76), no 1756 Hellen sheet in R4377-R4408 (N6-HEL81)
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; both positional candidates in Add MS 32276 retired by pre-registered tests with passed controls, R4388 for 2001-3900 (N7-HELBC) and R4386 for 1201-2000 (D2-HELR); no other 1763 sheet in R4381-R4408 (N6-HEL81); reopens only with new material (a 1763 Hellen/La Haye key sheet elsewhere)
+
+## Escalation (D2-HELR, 6 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half; all Add MS 32276 records looked at (NEAR3-HEL3, N6-HEL81, N7-HELDK)
+- [x] clear-pages: Fagel 5177's clear Hellen copies looked at (N4-HEL5) and 8 pages of Dec 1751 transcribed as a phrase corpus (D2-HELFAGEL); context only, no ciphertext beside them
+- [x] known-keys: R4369 reads R1953; R4370/R4372 retired for 1-800; R4376 fails on R1049; R4388 fails on 1763 (N7-HELBC); R4386 fails on 1763 under the words-level test (D2-HELR)
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: fr18-bigram anneal untestable (N5-HEL7); phrase-crib placement untestable at 8 pages, C3 power 0 (D2-HELFAGEL); untried: the same instrument on the full scans 5-93 corpus, ~$30-35, low prior (not recommended), or a further R4369-code letter if one is found
+- [x] image-check: R4369, R4370, R4372, R4376, R4386 and R4388 read from the full-size images, two blind passes plus reconciliation each
+- [ ] retry: an image check of R1953 itself against DECODE's transcription where decoded spans break (rule 2), ~$6
+Verdict: keep going: 2 internal gaps; cheapest next: image check of R1953 against DECODE's transcription for codes 1-800, ~$6

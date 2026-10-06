@@ -143,3 +143,8 @@ nulls ("zero") dropped from gated keys. Pass = uni value-shuffle p and bi order-
 | family | corpus | control C1 fr18 (mean S, gate <=1) | control C2 shuffle (mean / p95) | C3 known-answer (proposed / correct) | target S | verdict |
 |---|---|---|---|---|---|---|
 | phrase cribs from Fagel 5177 Hellen pages (8 pages) | 1,861 words, 111 cribs | 0.00 PASS | 0 / 0 | 0 / 0 | 0 | untestable by this instrument at this corpus size (no power), not refuted |
+
+## D2-HELR (6 Oct 2026): R4386 (f.75) as the key of the 1763 letters, codes 1201-2000 (PREREG key_r4386/PREREG-D2HELR.md)
+| family | statistic | control R4369 on R1953 (power, gate >= 0.80) | wrong key (gate <= 0.05) | target S / null median / p99 | P(null >= S) | verdict |
+|---|---|---|---|---|---|---|
+| period sheet R4386, words-level frequency fit (fr18) | token-weighted mean log10 freq | 1.000 PASS | 0.005 PASS | -4.788 / -4.678 / -4.226 | 0.736 | FAIL: R4386 retired for the 1763 1201-2000 band |

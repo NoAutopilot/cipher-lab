@@ -1,0 +1,164 @@
+order	code	set	tokens	A	B	word	settled
+0	1254	N	0	alliance	alliance	alliance	
+1	1361	N	0	zero	zero	zero	
+2	1851	N	0	insister	insister	insister	
+3	1461	N	0	contracter	contracter	contracter	
+4	1908	N	0	lequel	lequel	lequel	
+5	1219	T	1	am	am	am	
+6	1274	T	1	argent	argent	argent	
+7	1309	N	0	autrichiens?	autrichiens	autrichiens	B taken (null cell or ?-mark only)
+8	1351	N	0	boheme	boheme	boheme	
+9	1687	N	0	faudroit	faudroit	faudroit	
+10	1650	N	0	exister	expedier	expedier	B taken (null cell or ?-mark only)
+11	1276	N	0	armer	armee?	armee?	B taken (null cell or ?-mark only)
+12	1820	N	0	idées	idées	idées	
+13	1671	N	0	BLANK	BLANK	BLANK	
+14	1293	N	0	avez	avez	avez	
+15	1855	N	0	intr?	int?	int?	B taken (null cell or ?-mark only)
+16	1807	N	0	BLANK	BLANK	BLANK	
+17	1832	N	0	l'Imp: de Russie?	l'Imperatrice reine	l'Imperatrice reine	B taken (null cell or ?-mark only)
+18	1407	T	1	changement	changement	changement	
+19	1337	T	8	bre	bre	bre	
+20	1609	N	0	en	en	en	
+21	1710	N	0	font	font	font	
+22	1957	N	0	mate?	mate	mate	B taken (null cell or ?-mark only)
+23	1226	N	0	ce sujet	a ce sujet	a ce sujet	B taken (null cell or ?-mark only)
+24	1304	T	4	aussi bien	aussi bien	aussi bien	
+25	1285	N	0	attachement	attachement	attachement	
+26	1244	T	2	agir	agir	agir	
+27	1249	T	1	ajouter	ajouter	ajouter	
+28	1786	N	0	hanovre?	hanovre	hanovre	B taken (null cell or ?-mark only)
+29	1372	T	1	chu	chu	chu	
+30	1823	N	0	jeune	jeune	jeune	
+31	1437	N	0	concilier	concilier	concilier	
+32	1243	N	0	afin	afin	afin	
+33	1679	N	0	BLANK	BLANK	BLANK	
+34	1877	N	0	jusqu'ici	jusqu'ici	jusqu'ici	
+35	1837	N	0	impression	impression	impression	
+36	1815	N	0	jaloux	jaloux	jaloux	
+37	1842	N	0	indices	indices	indices	
+38	1948	N	0	maniere	maniere	maniere	
+39	1880	T	1	k	k	k	
+40	1465	T	4	convaincre	convaincre	convaincre	
+41	1513	N	0	demander	demander	demander	
+42	1483	T	1	de	de	de	
+43	1302	N	0	auroit	auroit	auroit	
+44	1636	N	0	etre	etre	etre	
+45	1619	N	0	equiper	equiper	equiper	
+46	1291	T	1	avertissement	avertissement	avertissement	
+47	1742	N	0	gli	gli	gli	
+48	1646	N	0	execution	execution	execution	
+49	1668	N	0	BLANK	BLANK	BLANK	
+50	1306	N	0	autres	autres	autres	
+51	1231	T	1	absolument	absolument	absolument	
+52	1800	T	1	hommes	hommes	hommes	
+53	1363	T	1	ca	ca	ca	
+54	1251	T	2	ait	ait	ait	
+55	1325	N	0	b	b	b	
+56	1381	N	0	ero?	ero	ero	B taken (null cell or ?-mark only)
+57	1522	T	1	dernieres?	derniers	dernieres	crop: final -es
+58	1434	N	0	compris	compris	compris	
+59	1467	T	1	conversation	conversation	conversation	
+60	1910	N	0	les	lesquels	lesquels	B taken (null cell or ?-mark only)
+61	1227	T	1	l'egard de	a l'egard de	a l'egard de	crop: a before l'egard
+62	1364	N	0	ce	ce	ce	
+63	1296	N	0	aujourdhuy	aujourdhuy	aujourdhuy	
+64	1919	N	0	lieu	lieu	lieu	
+65	1352	N	0	bonne	bonne	bonne	
+66	1341	N	0	balancer	balancer	balancer	
+67	1897	N	0	lette de?	le Cte de	le Cte de	B taken (null cell or ?-mark only)
+68	1803	N	0	hors	hors	hors	
+69	1691	N	0	BLANK	BLANK	BLANK	
+70	1652	N	0	experience	experience	experience	
+71	1335	N	0	blu	blu	blu	
+72	1242	T	8	affaires	BLANK	BLANK	N7-HEL86 full-res: row 242 empty; A read neighbour 241
+73	1925	N	0	loir	loir	loir	
+74	1347	T	2	berlin	berlin	berlin	
+75	1319	T	3	BLANK	BLANK	BLANK	
+76	1738	N	0	gu	gu	gu	
+77	1992	N	0	moment	moment	moment	
+78	1489	T	1	dri	dri	dri	
+79	1558	N	0	BLANK	BLANK	BLANK	
+80	1731	N	0	BLANK	BLANK	BLANK	
+81	1771	N	0	BLANK	BLANK	BLANK	
+82	1755	N	0	gue	gue	gue	
+83	1941	N	0	madrid	madrid	madrid	
+84	1531	T	6	destine	destine	destine	
+85	1776	N	0	zera	zera	zera	
+86	1535	N	0	detruire	detruire	detruire	
+87	1336	T	1	bre	bre	bre	
+88	1594	N	0	eloigner	eloigner	eloigner	
+89	1224	N	0	at	at	at	
+90	1713	N	0	fortement	fortement	fortement	
+91	1562	N	0	dur.	dur.	dur.	
+92	1610	N	0	ent	ent	ent	
+93	1575	N	0	es	es	es	
+94	1633	N	0	ete	ete	ete	
+95	1277	T	2	arrangemens	arrangemens	arrangemens	
+96	1410	T	1	chef	chef	chef	
+97	1229	T	1	abandonnera	abandonnera	abandonnera	
+98	1331	T	1	ble?	ble	ble	A/B agree on ble
+99	1346	T	2	beaucoup	beaucoup	beaucoup	
+100	1739	N	0	gla	gla	gla	
+101	1378	T	1	cre	cre	cre	
+102	1420	N	0	BLANK	circonstance?	BLANK	N7-HEL86 state B
+103	1201	N	0	zero	zero	zero	
+104	1398	N	0	cependant	cependant	cependant	
+105	1314	T	1	BLANK	BLANK	BLANK	
+106	1356	N	0	brouillerie	brouillerie	brouillerie	
+107	1282	T	2	assistance	assistance	assistance	
+108	1213	N	0	al	ac	ac	B taken (null cell or ?-mark only)
+109	1598	N	0	BLANK	BLANK	BLANK	
+110	1210	T	2	a	a	a	
+111	1874	N	0	jusqu? ici?	jusqu'ici	jusqu'ici	B taken (null cell or ?-mark only)
+112	1502	T	3	decider	decider	decider	
+113	1480	T	3	zero	zero	zero	
+114	1453	T	5	conserver	conserver	conserver	
+115	1665	N	0	BLANK	BLANK	BLANK	
+116	1241	N	0	affaires	affaires	affaires	
+117	1214	N	0	ad	ad	ad	
+118	1497	T	7	BLANK	BLANK	BLANK	
+119	1651	N	0	experience	expedier	expedier	B taken (null cell or ?-mark only)
+120	1525	N	0	BLANK	BLANK	BLANK	
+121	1250	T	1	all	all	all	
+122	1847	N	0	BLANK	BLANK	BLANK	
+123	1553	T	1	done	done	done	
+124	1830	N	0	immediatement	il n'y a pas	il n'y a pas	B taken (null cell or ?-mark only)
+125	1370	T	1	chi	chi	chi	
+126	1647	N	0	exemple	exemple	exemple	
+127	1246	T	1	agrement	agrement	agrement	
+128	1887	N	0	?	l	l	B taken (null cell or ?-mark only)
+129	1373	T	1	cla	cla	cla	
+130	1852	N	0	instances	instances	instances	
+131	1532	T	1	detail	detail	detail	
+132	1550	T	1	dit	dit	dit	
+133	1962	N	0	BLANK	BLANK	BLANK	
+134	1349	T	1	bientot	bientot	bientot	
+135	1661	N	0	BLANK	BLANK	BLANK	
+136	1202	T	1	zero	BLANK	BLANK	N7-HEL86 state B
+137	1819	N	0	ici	ici	ici	
+138	1520	T	1	depuis	depuis	depuis	
+139	1530	N	0	dessus	dessus	dessus	
+140	1403	T	1	cette	cette	cette	
+141	1238	T	1	action	action	action	
+142	1552	T	2	doit	doit	doit	
+143	1701	T	2	finances	finances	finances	
+144	1464	T	4	contribuer	contribuer	contribuer	
+145	1332	T	1	ble	bli	ble	B bli; floor either way
+146	1655	N	0	zero	BLANK	zero	A; null cell
+147	1718	N	0	francois	francois	francois	
+148	1283	T	1	assurance	assurance	assurance	
+149	1892	N	0	lo	lo	lo	
+150	1324	T	1	BLANK	BLANK	BLANK	
+151	1401	T	4	c'est que	c'est que	c'est que	
+152	1478	T	1	curieux	curieux	curieux	
+153	1923	N	0	loin	loin?	loin?	B taken (null cell or ?-mark only)
+154	1515	N	0	demonstration	demonstration	demonstration	
+155	1417	T	3	chose	chose	chose	
+156	1223	N	0	as	as	as	
+157	1470	T	1	coup	coup	coup	
+158	1416	T	1	choisir	choisir	choisir	
+159	1751	N	0	gri	gri	gri	
+160	1236	N	0	accueillir	accueillir	accueillir	
+161	1440	T	1	conduite	conduite	conduite	
+162	1554	T	1	dont	dont	dont	
