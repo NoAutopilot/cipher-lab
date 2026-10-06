@@ -24,3 +24,12 @@ beside the R7-MANTP result without it.
 Known-answer (not a gate, but reported first): every single-code gloss on this leaf whose code has a Krauske C value in key.tsv is
 scored agree / compatible / disagree (names: same person or office; "S.M." compatible with a sovereign code).
 If the two passes split on more than 10% of code tokens, stop after reconciliation (brief).
+
+## Addendum (6 Oct 2026, 01:45 UTC by date -u), after reconciliation, before any alignment or score
+Reconciled: 32 runs, 353 code tokens, 30 glossed, 12 single-code (reconciled.tsv). Pass agreement by token alignment: f.463 264/279
+(0.946), f.463v 75/78 (0.962), under the 10% stop line. Abbreviation in this leaf's own glosses: "Mant." / "Mant:" (runs 8, 18, 32)
+beside "Manteuffel" written out over the same code on this leaf (runs 2, 23, 30). Per PREREG-MANT27's rule, gloss_norm_0574.tsv
+(mant -> manteuffel) is used by the per-leaf gate. The pooled gate keeps MANT5 normalisation exactly as PREREG-MANTP registered it
+(gating); the same run with gloss_norm_0574.tsv added is reported beside it as a non-gating sensitivity row (CLAUDE.md rule 3,
+notation-before-diff lesson). Struck codes ("de [blot]0" before run 6; the struck group in run 5) and the code after 54 in run 29
+are dropped as unreadable; runs 16 and 20 carry illegible glosses and are not pairs.
