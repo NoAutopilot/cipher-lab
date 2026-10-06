@@ -14,6 +14,9 @@ pre = rd(os.path.join(H, 'ciphertext_4616_pre.tsv'))
 al = {(r['line'], r['position']): r for r in rd(os.path.join(H, 'aligned.tsv'))}
 # R12-LVN16C (6 Oct 2026): R12-LVNV2's six image-checked H-row corrections (AUDIT.md), applied before the settles.
 cor = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvnv2.tsv'))}
+# R13-LVNFIX (6 Oct 2026): R12-LVNV's p1_L16/18 overturn and R13-LVNV's two doubtful rows, applied after the settles
+# (an image read overrides an A3 == B3 settle where the readers share the 9/8, 7/3 confusions).
+post = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvnv.tsv'))}
 ctl = {'A3': [0, 0], 'B3': [0, 0]}
 for r in al.values():
     if r['role'] == 'control':
@@ -55,6 +58,12 @@ for r in pre:
             act = act or 'slash-kept'
             if 'lvn16' not in alt: alt = (alt + '; ' if alt else '') + f'lvn16 A3:{A} B3:{B}'
         log.append([r['line'], r['position'], r['sign'] if act not in ('settled', 'confirmed') else r['sign'], r['confidence'], A, B, act or 'none'])
+    c = post.get((r['line'], r['position']))
+    if c:
+        assert sign == c['old'], (r['line'], r['position'], sign, c['old'])
+        alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
+        sign, conf, why = c['new'], c['confidence'], c['note'] + f' (pre pos {r["position"]})'
+        log.append([r['line'], r['position'], c['old'], conf, '', '', 'lvnv-override'])
     pos += 1
     out.append([r['line'], str(pos), sign, conf, alt, why])
 def tsv(rows, head):

@@ -69,7 +69,7 @@ p1_L07	4	32	H		split lvn16 from pre pos 4 (32/16), part 1/2; image300 A3=B3
 p1_L07	5	16	H		split lvn16 from pre pos 4 (32/16), part 2/2; image300 A3=B3
 p1_L07	6	37	H		agree
 p1_L07	7	83	H		agree
-p1_L07	8	17	H		agree
+p1_L07	8	13	M	was 17 H	image300 lvnfix: second digit flat-topped with a curved bowl, same form as the 3 of 37 and 83 beside it, not the straight-stemmed 7 of 37; R13-LVNV judged it undecidable and both 300-dpi readers gave 17, so grade M (AUDIT.md R13-LVNV; NOTES.md R13-LVNFIX; crop 04616_p1 L03) (pre pos 7)
 p1_L07	9	63	H		agree
 p1_L07	10	25	H		agree
 p1_L07	11	79	H		agree
@@ -256,7 +256,7 @@ p1_L15	22	21	M	lvn16 A3:21? B3:21	agree-flagged
 p1_L16	1	61	H		agree
 p1_L16	2	20	M	was 26 H	image300 lvnv2: oval 0, 2 heavily re-inked, possible writer's correction; value 'q' doubtful, grade M (AUDIT.md R12-LVNV2; crop 04616_p1 L12) (pre pos 2)
 p1_L16	3	30	H		agree
-p1_L16	4	85	H		agree
+p1_L16	4	85	M	was 85 H	image300 lvnfix: faint ink, first digit not settled 8 vs 3 at 4x; both 300-dpi readers 35; sign kept, regraded M (AUDIT.md R13-LVNV; NOTES.md R13-LVNFIX; crop 04616_p1 L12) (pre pos 4)
 p1_L16	5	122	H		agree
 p1_L16	6	31	H		agree
 p1_L16	7	=nous	H		agree
@@ -271,7 +271,7 @@ p1_L16	15	111	H	was 111 M; B:144	image300 lvn16 (A3=B3=111; pre pos 15)
 p1_L16	16	81	H		split lvn16 from pre pos 16 (81/16), part 1/2; image300 A3=B3
 p1_L16	17	16	H		split lvn16 from pre pos 16 (81/16), part 2/2; image300 A3=B3
 p1_L16	18	37	H		agree
-p1_L16	19	91	H	was 81 S; 89	image300 lvn16 (A3=B3=91; pre pos 18)
+p1_L16	19	81	M	was 91 H; was 81 S; 89	image300 lvnv: R12-LVNV overturn of the lvn16 settle 91 (A3=B3, shared 9/8 confusion); first digit a closed two-loop 8, no tail (R12-LVNV, R13-LVNV at 4x); grade M pending another image pass (AUDIT.md R12-LVNV, R13-LVNV; crop 04616_p1 L12) (pre pos 18)
 p1_L16	20	114	M	B:144; lvn16 A3:112? B3:114	differ
 p1_L17	1	25	H	was 25 M; B:-	image300 lvn16 (A3=B3=25; pre pos 1)
 p1_L17	2	81	H	was 91 H	image300 lvnv2: closed two-loop 8, no tail; 150-dpi passes never agreed (A 91, B 31), the H/agree label was wrong (AUDIT.md R12-LVNV2; crop 04616_p1 L13) (pre pos 2)

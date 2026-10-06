@@ -1,0 +1,4 @@
+line	pre_pos	old	new	confidence	note
+p1_L16	18	91	81	M	image300 lvnv: R12-LVNV overturn of the lvn16 settle 91 (A3=B3, shared 9/8 confusion); first digit a closed two-loop 8, no tail (R12-LVNV, R13-LVNV at 4x); grade M pending another image pass (AUDIT.md R12-LVNV, R13-LVNV; crop 04616_p1 L12)
+p1_L07	7	17	13	M	image300 lvnfix: second digit flat-topped with a curved bowl, same form as the 3 of 37 and 83 beside it, not the straight-stemmed 7 of 37; R13-LVNV judged it undecidable and both 300-dpi readers gave 17, so grade M (AUDIT.md R13-LVNV; NOTES.md R13-LVNFIX; crop 04616_p1 L03)
+p1_L16	4	85	85	M	image300 lvnfix: faint ink, first digit not settled 8 vs 3 at 4x; both 300-dpi readers 35; sign kept, regraded M (AUDIT.md R13-LVNV; NOTES.md R13-LVNFIX; crop 04616_p1 L12)
