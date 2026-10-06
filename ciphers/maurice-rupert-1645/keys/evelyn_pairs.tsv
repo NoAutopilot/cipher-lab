@@ -1,0 +1,20 @@
+# evelyn_pairs.tsv -- printed cipher numbers beside their printed decipherments (Nicholas's interlinear decipherments as set in type),
+# Bray (ed.), Memoirs illustrative of the life and writings of John Evelyn, 2nd ed. 1819, vol. II, "Correspondence between K. Charles I.
+# and Sir Edward Nicholas", pp.102-113 -- the pages the DECODE 9119 form (Add MS 32256 ff.8-9, "From Evelyn's Memoirs", P.102/111/113) cites.
+# Source: Internet Archive memoirsillustrat02eveluoft, leaves n469-n480 (page_numbers.json), read by eye on iiif_lines crops of the page images
+# (R15-MREVL, 6 Oct 2026). Scope: only the codes the 7 July 1645 letter uses that key9119.tsv leaves blank and that print on pp.102-113, plus
+# the 9119 rows those glosses test. Gloss words are set above the numbers and drift by up to one code, so 'conf' says how the word was tied
+# to the code. Grade C = from the printed decipherment; M = the tie of word to code is uncertain; I = inferred from neighbouring form values.
+# vs9119: agree / conflict / extends (code blank on the 9119 form).
+code	meaning	page	context_as_printed	grade	conf	vs9119	note
+340	Chester	103	then I turne to Chester / 277:27:174: shall 17:43:3:28:37:290:340	C	med	extends	King to Nicholas, Bridgnorth 9 Aug 1645; last gloss word, last code; 290=to on the form; glosses on this line sit one code left of their numbers
+28	n	103	turne = 17:43:3:28:37	I	med	conflict	key9119 reads 28=h (pass A h, pass B n; GAPS52 settled h, 'ascender visible'); 'turne' with 17=t 43=u 3=r 37=e from the form needs 28=n; R15-MREVL re-looked at crop p2c1_L02: the 28 glyph does carry a tall stroke, so the form and the print disagree here; not settled
+27	n	103,107	then I = 277:27:174 (p.103); then = 18:39:36:27 (p.107, 'rather then to be')	I	high	conflict	key9119 reads 27=h (low; pass A h, pass B n); both 'then' glosses need 27=n with 277=the 18=t 39=h 36=e from the form; crop p2c1_L02 shows an n with no ascender at 27, so key9119.tsv row 27 looks like a misread of the form (27 is not among the letter's codes; key9119.tsv left unchanged, flagged)
+277	the	107	rather = 2:33:277:3	C	med	agree	'r a the r' with 33=a 3=r on the form; 277 also spells 'the' in 'then' (p.103, p.107)
+293	un (in 'under')	106	my horse under Lo: Goring / 224:173:293:83:36:3:380	C	high	extends	gloss 'under' sits over 293; 83=d 36=e 3=r on the form, so 293 carries 'un' (value 'un' is I-grade, the word 'under' is C); King to Nicholas, Oct 1645 (p.106)
+212	march	111	a daye or two's march and if Montrosse be in / 32:20:118:51:232:568:212:60:96:175:417:104:176	M	low-med	extends	'march' sits between 568 and 212, nearer 212; 568 then 'two's' (or part); 20 and 60 nulls on the form; King to Nicholas, Oct 1645 (p.111)
+41	-	103	that there is no dispatch yet come / 229:124:72:32:17:61:41:315	-	-	-	inside a spelled stretch under the single gloss 'dispatch'; no value can be tied to 41 from the print
+323	-	107	army rather then to be besieged / 95:323:47:90:2:33:277:...	-	-	-	no gloss over 323 ('army' over 95); not attributable
+48	-	113	(... 71:2:48:19:30:279:290:169 :)	-	-	-	this p.113 passage is printed without decipherment
+136	-	113	279:447:79:18:47:136:236	-	-	-	printed without decipherment
+2	r	107	rather = 2:33:277:3	I	med	conflict	key9119 reads 2=p (low; pass A p, pass B r); "rather" needs 2=r; supports pass B

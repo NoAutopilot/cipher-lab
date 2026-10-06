@@ -585,12 +585,48 @@ Requests:
 - No other host.
 - Vision calls: 3 (passes A, B, C), plus the worker's own two crop checks for reconciliation.
 
+## R15-MREVL-maurice-rupert-1645 (6 Oct 2026, account-2, LANE LANE-RUN15-account-2)
+
+Run 6 Oct 2026, 17:35-17:5x UTC (`date -u`). The step was the "While waiting" line: find the edition the 9119 form's
+"Evelyn's Memoirs" pp.102-113 means and harvest printed cipher-number/decipherment pairs from it.
+
+- **Edition.** Bray (ed.), *Memoirs illustrative of the life and writings of John Evelyn*, 2nd ed. 1819 (4to), vol. II,
+  "Correspondence between K. Charles I. and Sir Edward Nicholas" (running heads "CORRESPONDENCE BETWEEN K. CHARLES I." /
+  "AND SIR EDWARD NICHOLAS."). Internet Archive `memoirsillustrat02eveluoft` (the item holds both parts; pp.102-113 of the
+  correspondence are leaves n469-n480 by its page_numbers.json, not n123-n134, which are the diary's pp.102-113). The
+  Bridgnorth 9 Aug 1645 letter with "Digby hates 358:39:31:19" is on p.103 and "your new cyfer ... 2:50:151:51:60" on p.102,
+  matching the form's worked notes, so this is the edition the 1820 reconstructor used (the 1818 first edition was not
+  checked for identical pagination).
+- **What the pages print.** Ten King/Rupert-to-Nicholas letters, Jul-Oct 1645, with long cipher stretches; Nicholas's
+  decipherment is set in small type above the numbers, word by word, often one code off. Some stretches (e.g. p.113) are
+  printed with no decipherment. The 9119 form is built from exactly these glosses.
+- **Method.** djvu.txt grep for the letter's codes that key9119.tsv leaves blank (41 codes); 11 occur on pp.102-113 as
+  numbers, 4 of them only in prose (dates, counts). The other 7 occurrences were read by eye on `tools/iiif_lines.py
+  --image <leaf> --region ...` crops of the page images (7 crops, scratchpad, not committed; re-fetch
+  `archive.org/download/memoirsillustrat02eveluoft/page/n<leaf>_w2000.jpg`). Results in `keys/evelyn_pairs.tsv`.
+- **Pairs that extend 9119 for this letter** (grade from the print): 340 = Chester (C, med; p.103), 293 = "un" in "under"
+  (word C, value I; p.106), 212 = march (M; p.111, gloss between 568 and 212). 41, 323, 48, 136: no gloss can be tied to
+  the code (inside a spelled stretch, no gloss over it, or printed undeciphered).
+- **Conflicts with key9119.tsv** (both support GAPS52's pass B over the settled value): 27 = n, not h (both "then" glosses,
+  pp.103 and 107; R15-MREVL's look at form crop p2c1_L02 also shows an n without ascender at 27); 2 = r, not p ("rather",
+  p.107); 28 = n by the print ("turne", p.103) where the form's glyph does carry a tall stroke, so form and print disagree.
+  key9119.tsv is a transcription of the form and was left unchanged; 27 and 2 are not among the letter's codes, 28 is
+  (1 token). Agree: 277 = the, 290 = to, 17 = t, 3 = r, 36 = e, 18 = t, 39 = h.
+- **Coverage.** 35/93 with key9119 alone; with 293, 340, 212 added, 42/93 (293 four times, 212 twice, 340 once). Not well
+  above 35, so keys/key_test.py was not re-run (the power control was 0/50 at 35 tokens). Grades on the letter: none
+  (rule 4); this is key material for a family test, not a reading. "Chester" as a cipher word in a letter from Worcester
+  is a fact about the print's code book, not evidence that 9119 is this letter's key.
+- Not done: a full harvest of every printed pair on pp.102-113 (only the target-relevant codes and the 9119 rows those
+  glosses test were read). Requests: archive.org 9 (advancedsearch 1, metadata 1, two djvu.txt, page_numbers.json,
+  djvu.xml, 5 page images), 1.5-2 s apart. Vision: worker's own eye on 7 crops plus 1 form crop; no subagent.
+- Rule 10: search results only.
+
 ## Remaining gaps (FT4f, 3 Oct 2026; GAPS47, GAPS52 3 Oct 2026)
 Read so far: 0 of 93 tokens at any grade. Keys tested, all with judge FAIL: no. 118 (rank 80/201); Osborne P4 (rank 175/201); Osborne extended (rank 148/201); DECODE 9119 reconstruction (banded 4-gram rank 159/1001, coverage at the banded median, power 0/50 so a non-test); DECODE 9117 (chance on every statistic). See NOTES FT4b, FT4d, FT4e and GAPS52.
 - The letter's own key, or a decipherment of the 7 July 1645 leaf, in Rupert's papers BL Add MS 18980-82 (the leaf is not itemised in the catalogue) - blocker: needs-physical-access; BL images have been offline since the 2023 cyberattack, and the copy order is ASKS row 56 / REQUEST.md. Every key reachable online was tested: Digby cabinet no. 118, the DECODE 8627 index, Osborne 8443/8444 in full, Cryptiana Nicholas-Rupert, Bourdeau's King-Queen SP106-5, and DECODE 9119/9117 (GAPS52).
 - Secondary witnesses for the 7 July leaf (GAPS47, 3 Oct 2026): BL Add MS 30305 is read from its catalogue record. It has no Maurice letter and no 7 July 1645 item. Bodleian MSS Firth c. 6-8, the transcripts of Rupert's letters made for Warburton - blocker: waiting-on LOCAL-QUEUE row L43; their holding record is Anubis-blocked from the cloud, so the owner's desk runner reads the Firth c. 6-8 record, its availability flag and the 7 July 1645 folio
 - The "Keys to cyphers" at BL Add MS 30305 f.86 (Charles I, undated; Nicholas 1646-58), which could hold a key covering this letter's codes - blocker: needs-physical-access; the record has no Digitised Content line, and BL images are offline since 2023. Added to REQUEST.md beside the ASKS row 56 BL copy order
-- The 9119 key family (Charles I/Nicholas ministers' cipher) at this letter's coverage (GAPS52, 3 Oct 2026). The 1820 reconstruction fills only the codes its source letters used. At 35/93 tokens the 4-gram test has 0/50 power, so the family is untested by this instrument, not refuted. A fuller key of the same family would reopen it - blocker: needs-physical-access; the candidates are the Add MS 30305 f.86 keys (gap above) and the 7 July leaf itself, under ASKS row 56
+- The 9119 key family (Charles I/Nicholas ministers' cipher) at this letter's coverage (GAPS52, 3 Oct 2026). The 1820 reconstruction fills only the codes its source letters used. At 35/93 tokens the 4-gram test has 0/50 power, so the family is untested by this instrument, not refuted. Bray's Evelyn Memoirs (1819) vol. II pp.102-113 add 293, 340, 212 (R15-MREVL, 6 Oct 2026: 42/93, still too few for the test). A fuller key of the same family would reopen it - blocker: needs-physical-access; the candidates are the Add MS 30305 f.86 keys (gap above) and the 7 July leaf itself, under ASKS row 56
 - Statistical key rebuild from the 93 tokens alone - blocker: too-short; 93 tokens with 63 distinct codes in a letters-plus-words nomenclator. The rule 3 controls on file show code+mark designs read only at pooled lengths (22-67% blind at N=720), so no solver can be expected to read this at N=93.
 
 ## Escalation (FT4f, 3 Oct 2026; GAPS47, GAPS52 3 Oct 2026)
@@ -605,7 +641,8 @@ Verdict: parked: every gap has an outside blocker
 
 ## While waiting
 
-- The one action that depends on nobody is to find where the 9119 reconstructor's source letters are printed. The form
+- DONE 6 Oct 2026 (R15-MREVL): the edition is Bray's Evelyn Memoirs 1819 vol. II (IA memoirsillustrat02eveluoft); keys/evelyn_pairs.tsv; coverage 42/93, key_test not re-run. Remaining cheap step: a full harvest of every printed pair on the correspondence pages (pp.~90-120), which could add more of the family; next: one worker, ~$2.5. Original line follows.
+  The one action that depends on nobody is to find where the 9119 reconstructor's source letters are printed. The form
   cites "Evelyn's Memoirs", pages 102-113, with King-to-Nicholas letters of Oct 1645. Locate that edition on Internet
   Archive and grep it, with no login, for cipher numbers printed beside decipherments. Each printed pair would add a
   code-value row of the same ministers' family to key9119.tsv. Re-run keys/key_test.py only if coverage rises well
