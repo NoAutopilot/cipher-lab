@@ -5047,6 +5047,31 @@ Open for the next lane:
 3. eckert-1862/1864: the new N2-E conflict (key "Spit = Near" vs OR "men"), white/Lehigh conflicts held M; eckert-1864 D/F/I print not located
    beyond one OR volume each.
 
+## LANE LANE-RUN7-account-1 handoff (session_017EaoA9jsirqf8k8M7LCMwt, account 1), 6 October 2026 (closed 02:4x UTC: three waves, lane about 53 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run7-jobs.md. Gate 0a clear (SESSION-SWEEP-account-1 done
+22:49 5 Oct, row not marked, 0 exclusions). VERIFY-BACKLOG had nothing actionable in a-l (Birago off limits; fr16142 depth already set).
+Backlog: next_steps.py runnable rows incl. cost band M, folders a-l. 13 Opus workers in three waves: 10 D, 3 D- (VIV53 1.76x, HEL53 1.28x,
+NOX262 1.18x cap); workers 48.18 + orchestrator ~4.9 = ~53.1 (get_session). five_hour `allowed` throughout. No N-class or depth changed.
+- baluze103-letellier-marca-1644: f.50r-v transcribed (2 blind passes/page, 142 columns settled) and decoded with Tomokiyo's published 1644
+  table: H 451 M 165 U 14 of 630; table calibrated on f.171r vs the f.172r period decipherment (A 0.767 vs p99 0.311 PASS, one change c=p);
+  fr17 judge still FAILs f.50 (-1.537 vs real_p05 -0.852), so the f.50 transcription or a different (April) table is the suspect.
+- eckert-1864: key-no9.md +38 H rows from mssEC 67; 17 Jan-Feb 1864 entries decoded H 147 M 1, 13 of 17 agree with OR in every coded word;
+  Village rank conflict logged (rule 4), Spit/men kept. eckert-1862: 9991.571 carried (AGREE 0.398); wrong-telegram test PASS (0 wrong,
+  7 right, 11 undecided); conflict-pair test: 14 code words outside every key agree across telegrams (descriptive, p 0.0005).
+- hellen R1953: full-size images on one DECODE login; transcription = DECODE DOC; 12 corrections, U 374->373; codes 1-800 are a key gap.
+- fr16104 ink 53: gap tiles re-read (decoy control PASS), H 82.9->85.2%, longest repair-free stretch still 20 letters (no D2).
+- fr16142 c262: gloss L09/L13 corrected from native crops, R 0.3506 unchanged; verifier R7B-NOXV propagated nulls into AUDIT.md/status.json.
+- colbert26: anchor_split with c54-56 PASS (S 47 vs p95 43), 21 candidates in key_f23_anchor_5456.tsv, key unchanged.
+- huntington-blathwayt: descending glyph = the hand's 7 (gate 11/11 vs 1/25); 9 columns settled, 13 left.
+Open for the next lane:
+1. baluze103: re-read the f.50 lines where the decode breaks (transcription suspect), or look for an April 1644 table, ~$3-4.
+2. eckert-1864: image check of the decoded Jan-Feb entries (volunteer text only so far), ~$3. eckert-1862: the 1865 cipher book for the 14
+   agreeing code words, ~$2.
+3. fr16104 ink 53: the 82 UNSETTLED split tiles (owner sorter or window pass), ~$3; still no D2 stretch.
+4. huntington-blathwayt: 13 columns left; colbert26: canvas 62-63 numerals + gloss, ~$3.
+5. hellen 1-800: no-key-material unless a key turns up; fr16142: exact-LCS variant of test0, ~$0.3.
+
 ## LANE DEFAULT-account-1-20261005-2217 handoff (session_019Kz7yPGospqiXe5Jxz6ffm, account 1), 6 October 2026 (closed 00:2x UTC: four waves run, lane about 49 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-05-account1-default-2217-jobs.md. Gate 0a met at 22:59 (SESSION-SWEEP-account-1
