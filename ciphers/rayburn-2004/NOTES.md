@@ -164,13 +164,13 @@ not of a grid tableau. Spec test 3 (homophonic/keyboard judge with matched contr
 means the effective alphabet may be case-folded (K about 40 when folded), which test 3's control should match.
 Requests: none (all local). Grades: 0 H, 0 C, 0 S read tokens; nothing read.
 
-## Remaining gaps (R8-RAY2, 6 Oct 2026)
+### Remaining gaps (R8-RAY2, 6 Oct 2026; superseded by R9-RAYSORT below)
 Read so far: nothing read; 80 tokens reconciled from two blind passes (grade M); test 2 run (mark = case marker, p<0.0001 vs permutation control).
 - 2006 Wayback capture of the post and image - blocker: not-attempted; low value since the 2006 upload is byte-identical to our file; next: one retry from a later session, ~$0.2
 - Margin sign identities under the rotated-writing reading (8+8 signs) - blocker: not-attempted; needs an eye pass on the margin crops turned 90 degrees; next: one Sonnet pass on rotated margin crops + reconciliation, ~$1.5
 - Test 3 of specs/rayburn-2004.json (homophonic/keyboard judge, matched control at N=80, case-folded and case-sensitive K) - blocker: not-attempted; test 2 only ran this session; next: test 3 with family_run.py homophonic, ~$2.5
 
-## Escalation (R8-RAY2, 6 Oct 2026)
+### Escalation (R8-RAY2, 6 Oct 2026; superseded by R9-RAYSORT below)
 - [x] siblings: none; a single sheet, original with the family/police (Premise check)
 - [x] clear-pages: none; the suicide note's text is quoted in the Schneier thread and gives no crib
 - [x] known-keys: none exists; no decipherment located (Verdict, 3 Oct 2026)
@@ -179,3 +179,27 @@ Read so far: nothing read; 80 tokens reconciled from two blind passes (grade M);
 - [x] image-check: copy condition mapped 5 Oct 2026; second blind pass and reconciliation done 6 Oct 2026
 - [ ] retry: Wayback capture, once, later session
 Verdict: keep going: 3 internal gaps; cheapest next: test 3 (homophonic judge at N=80 with matched control) ~$2.5, then rotated margin pass ~$1.5
+
+## Owner sign sorter built (R9-RAYSORT, account 2, 6 Oct 2026)
+`sorter/` (README.md there): 80 tiles = the 80 reconciled tokens, cut by `sorter/build_inputs.py` from the image on disk
+(connected components on row base lines, no vision model, no network), 58 case-sensitive starting piles, 40 focus tiles
+(every position where blind passes A and B differ). `python3 tools/sorter_preflight.py` PASS (template, answerable,
+right line 0/80 bad, contact sheet); 24 contact-sheet tiles and 8 further random tiles opened against the line image, all
+on their sign. Handed to the account-3 orchestrator to publish (ROOM flag); not published here, no ASKS row written.
+Requests: none. Grades unchanged: 0 H, 0 C, 0 S; nothing read.
+
+## Remaining gaps (R9-RAYSORT, 6 Oct 2026)
+Read so far: nothing read; 80 tokens reconciled from two blind passes (grade M); test 2 run (mark = case marker, p<0.0001 vs permutation control); owner sign sorter built and preflighted.
+- Sign alphabet and margin identities settled by a person (80 tiles, 40 focus) - blocker: waiting-on the owner's reply in the Rayburn sign sorter; two blind passes split 52.9% (pass2/), over the 10% line, so Usage 6 sends it to a person (sorter/README.md; the account-3 orchestrator publishes it)
+- Test 3 of specs/rayburn-2004.json (homophonic/keyboard judge, matched control at N=80, K from the settled alphabet) - blocker: waiting-on the owner's reply in the Rayburn sign sorter; the matched control's K (case-folded or not, 16 margin signs) comes from the settled alphabet (sorter/README.md)
+- 2006 Wayback capture of the post and image - blocker: not-attempted; low value since the 2006 upload is byte-identical to our file; next: one retry from a later session, ~$0.2
+
+## Escalation (R9-RAYSORT, 6 Oct 2026)
+- [x] siblings: none; a single sheet, original with the family/police (Premise check)
+- [x] clear-pages: none; the suicide note's text is quoted in the Schneier thread and gives no crib
+- [x] known-keys: none exists; no decipherment located (Verdict, 3 Oct 2026)
+- [x] print: Schneier thread, Bauer snippet, Cipherbrain, blogs, solver repos (GF4-BATCH18)
+- [ ] key-rebuild: not applicable until test 3 says whether there is a substitution to rebuild
+- [x] image-check: copy condition mapped 5 Oct 2026; second blind pass and reconciliation 6 Oct 2026; sorter built 6 Oct 2026 (the rotated-margin eye pass is folded into the sorter's margin focus questions)
+- [ ] retry: Wayback capture, once, later session
+Verdict: keep going: 1 internal gaps; cheapest next: Wayback retry, ~$0.2 (test 3 waits on the owner's sorter pass)
