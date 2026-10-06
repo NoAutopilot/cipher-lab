@@ -272,11 +272,48 @@ Requests: resources.huygens.knaw.nl 49 (toc1 1 [404], book root 1, pages.json 1,
 decipherment in Deel 2. The 1703 system's cipher extent is unchanged (letters 341, 929, 1017); the only glossed code is still 142 = de Russen
 (C, 1 token, letter 929). The key is still not located in print.
 
+## Deel 3 (1704, H.A. 918) page read (R11A-HEIN3, 6 Oct 2026, 15:37-15:46 UTC)
+
+Brief: for each of the 103 Deel 3 pages in `hits_HA918_r11a.tsv`, say whether the print shows cipher numbers, spaced (deciphered) passages or a
+number-to-word pair stated by the edition, and check them against the target letter's codes (341: 178, 198; with 1017's 143, 144, 180 and 929's 142).
+
+Route: OCR html `retroapp/service_heinsius/03_169/html/heinsius_03_GS169_<page>.html`, 2.2 s apart, descriptive UA. Pages below 100 are
+zero-padded (`_012.html`, read from `pages.json?source=3`); the first pass used unpadded names and got HTTP 500 (BookServicePageNotFoundError) on
+22 pages. Inside the 110-request cap, 6 of those 22 were re-fetched (pp.33, 40, 46, 51, 67, 71: the autograph or full-text ones by their
+snippets); **16 were not read** (pp.12, 13, 16, 20, 23, 25, 31, 43, 48, 52, 59, 63, 74, 77, 81, 86: all "Ondert. orig." letters whose snippet opens
+with the editor's Dutch summary, a form that does not reproduce cipher; a summary not read is still not a negative). Per page: `deel3_pages_r11a.tsv`.
+
+Result on the 87 pages read: 80 Van Haersolte letter headings (nos. 87 to 1327, 1 Feb - 31 Dec 1704; 23 "Eigenh. orig.", 15 with 600+ characters
+of text). Script checks, per page:
+- cipher keywords (cijfer, ontcijfer, gespatieerd, opgelost, chiffre, sleutel, uitgekrabd): **only p.208** (letter 588, footnote 588.1, known).
+- code numbers in running text (a 2-3 digit number after an article or preposition, dates, quantities, page and letter cross-references
+  excluded): **none**. Positive control (string level, the printed sentences on disk in this file): the same pattern catches "le 178 que 198"
+  (letter 341) and "tegens 142" (letter 929); it would miss an OCR-mangled context like the "ris 142" A2P4 met on p.362.
+- the target codes 142/143/144/178/180/198: present only as printed page numbers (pp.142, 178, 180, 198) and in the index on p.494 -- **no code
+  token**.
+- letter-spaced runs in the OCR: present, but they are OCR spacing of words with m/o glyphs ("h o m m e", "c o m m e", "d o e n", "m o e t"),
+  not editorial spacing; and the method fails its own positive control -- letter 588's five spaced cipher passages come through the OCR mostly
+  closed up (only "c o n ." and "H o . Mo." survive). So the OCR cannot show spaced-type passages; only the editors' footnote (588.1) can, and the
+  keyword check above covers that.
+
+Where it was not found: no printed key, no code number, no number-to-word pair, and no cipher footnote other than 588.1 in the 87 Deel 3 pages
+read. Not covered: the 16 unread pages above; spaced passages the editors may have printed without a footnote (the OCR cannot show them; only the
+page images would); Haersolte letters whose heading OCR misses the name (the block split matched HAERSOLTE/HAKRSOLTE/HALRSOLTE). Graded tokens
+read by us: 0. No key change.
+
+Requests: resources.huygens.knaw.nl 110 (1 test page, 102 pages of which 22 were HTTP 500 [wrong file names, my error], 1 pages.json, 6 re-fetched
+pages), all >= 2.2 s apart, descriptive UA, no 429/403. WebSearch 0, vision 0, subagents 0.
+
+## Verdict (R11A-HEIN3, 6 Oct 2026)
+
+**Status: open (unchanged).** Deel 3's H.A. 918 pages show cipher in one letter only (588, d'Alonne's deciphered passages, no numbers); none of
+the target's codes (178, 198) or the 1703 name codes appears as a code in 1704 print. The 1703 system's key is still not located in print.
+
 ## Next step (cheap, depends on no one)
 1. Re-grep the 70 Deel 2 pages A2P4 read for the small-number runs of letter 1017's kind (1-70 inside text), which A2P4's 140-199 grep could not
    catch: about 70 requests to resources.huygens.knaw.nl (one session, >= 2 s apart), ~USD 1, script only.
-2. Deel 3 (1704): read the 103 H.A. 918 pages in `hits_HA918_r11a.tsv` for codes in running text (same script; ~105 requests, so two sessions
-   or a cap above 60), ~USD 1.5; letter 588's d'Alonne decipherment suggests 1704 cipher letters exist there.
+2. Deel 3 (1704): R11A-HEIN3 read 87 of the 103 H.A. 918 pages (no cipher beyond letter 588). Left: the 16 unread pages listed in its section
+   (zero-padded names `_012.html` etc., 16 requests, ~USD 0.3, script only).
 3. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
 
 ## While waiting
