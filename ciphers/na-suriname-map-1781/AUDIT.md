@@ -604,3 +604,19 @@ S, t, [x-dot] M -> C; rows [x-dots] = a (C) and n = z (C) added. Item 4 (2077) n
 U 49); `decode_key.py --check` exit 0. Reading change: L01 "planens·t·at" -> "planens·taat" (staat); L05, L08, L14 "nag·syn" ->
 "nagasyn" (magazijn, Wollant's N for M). No N-class asked or changed in this pass; the item 4 safe sentence is unaffected beyond the
 grade counts. No SECOND-OPINIONS-QUEUE.tsv row exists for this target (checked 6 Oct 2026). Details: NOTES.md "R10-SURV".
+
+## Carry-over (R15-SURV, verifier, account 2, 6 Oct 2026, 17:19-17:36 UTC -- candidate verdicts, no re-class, no key change)
+Verifier on R14-SURDP2's descriptive value candidates (inv. 373 per-pair DP) and on R14-SUR2039's "smeederyen" placement on
+4.VEL 2039 legend k. Full table in NOTES.md "R15-SURV". R14-SURDP2's dp2_run.py was regenerated from scratch: byte-identical dp2.out and all nine run tsv files (3 min 35 s CPU). The
+candidates were pre-registered only as a descriptive output class, with no gate, so every value is post hoc. A grade above M needs
+an image check plus agreement with the inv. 86 period sheet.
+- 0702 K -> o: **S at most**. On the image the reader's K is the sheet's lowercase k (O row), a reader case split.
+- 0758 s -> h: **S at most**. The image shows the sheet's [sh-lig] long-s ligature, which the reader split in two in L04.
+- 0758 j -> n: **S at most**. The reader's "i j" is one dotted [ij] sign (sheet N).
+- 0702 [thorn] -> c/f: **M**. One checked instance has no glyph of its own (a phantom token).
+- 0730 ss-like -> h and f-like -> i: **M**. They fit the sheet's descriptions but were not image-checked.
+- 2039 k: the image does not allow s-m-e-e-d-e-r-y-e-n. Pos 1-2 look like one dotted [ij] sign (n), which contradicts m+e. Pos 5 looks
+  like [delta-small] (e), which supports it. Pos 7 is a clear separate r (t), which contradicts the drop. "smederyen" is reachable only
+  through Wollant's N-for-M habit plus an extra t. Not a reading, not graded above M as a word.
+No N-class asked or changed. No key, transcription or reading changed (decode --check not needed). No SECOND-OPINIONS-QUEUE.tsv row
+exists for this target.
