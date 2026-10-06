@@ -73,7 +73,7 @@ canvas	ark	result	notes
 529	btv1b10035069t	clear	
 531	btv1b10035069t	clear	
 532	btv1b10035069t	clear	
-533	btv1b10035069t	unchecked	fetch-failed: curl: (52) Empty reply from server (one attempt; not retried under the good-citizen stop)
+533	btv1b10035069t	clear	left page heading only, right letter in clear; R12A-F5160B 6 Oct 2026
 534	btv1b10035069t	clear	
 536	btv1b10035069t	clear	
 537	btv1b10035069t	clear	
@@ -96,7 +96,7 @@ canvas	ark	result	notes
 558	btv1b10035069t	clear	
 559	btv1b10035069t	clear	
 561	btv1b10035069t	clear	
-562	btv1b10035069t	unchecked	fetch-failed: curl: (35) Recv failure: Connection reset by peer (one attempt; not retried under the good-citizen stop)
+562	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
 563	btv1b10035069t	clear	
 564	btv1b10035069t	clear	
 566	btv1b10035069t	clear	
@@ -119,9 +119,9 @@ canvas	ark	result	notes
 587	btv1b10035069t	clear	
 588	btv1b10035069t	clear	
 589	btv1b10035069t	clear	
-591	btv1b10035069t	unchecked	fetch-failed: curl: (52) Empty reply from server (one attempt; not retried under the good-citizen stop)
+591	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
 592	btv1b10035069t	clear	
-593	btv1b10035069t	unchecked	fetch-failed: curl: (52) Empty reply from server (one attempt; not retried under the good-citizen stop)
+593	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
 594	btv1b10035069t	clear	
 596	btv1b10035069t	clear	
 597	btv1b10035069t	clear	
@@ -133,7 +133,7 @@ canvas	ark	result	notes
 604	btv1b10035069t	clear	
 606	btv1b10035069t	clear	
 607	btv1b10035069t	clear	
-608	btv1b10035069t	unchecked	fetch-failed: curl: (35) Recv failure: Connection reset by peer (one attempt; not retried under the good-citizen stop)
+608	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
 609	btv1b10035069t	clear	
 611	btv1b10035069t	clear	
 612	btv1b10035069t	clear	
@@ -145,128 +145,128 @@ canvas	ark	result	notes
 619	btv1b10035069t	clear	
 621	btv1b10035069t	clear	
 622	btv1b10035069t	clear	
-623	btv1b10035069t	unchecked	fetch-failed: curl: (35) Recv failure: Connection reset by peer (one attempt; not retried under the good-citizen stop)
-624	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-626	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-627	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-628	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-629	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-631	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-632	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-633	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-634	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-636	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-637	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-638	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-639	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-641	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-642	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-643	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-644	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-646	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-647	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-648	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-649	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-651	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-652	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-653	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-654	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-656	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-657	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-658	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-659	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-661	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-662	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-663	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-664	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-666	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-667	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-668	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-669	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-671	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-672	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-673	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-674	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-676	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-677	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-678	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-679	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-681	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-682	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-683	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-684	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-686	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-687	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-688	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-689	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-691	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-692	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-693	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-694	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-696	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-697	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-698	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-699	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-701	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-702	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-703	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-704	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-706	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-707	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-708	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-709	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-711	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-712	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-713	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-714	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-716	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-717	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-718	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-719	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-721	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-722	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-723	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-724	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-726	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-727	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-728	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-729	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-731	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-732	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-733	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-734	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-736	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-737	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-738	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-739	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-741	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-742	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-743	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-744	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-746	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-747	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-748	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-749	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-751	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-752	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-753	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-754	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-756	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-757	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-758	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-759	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-761	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-762	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-763	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-764	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-766	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-767	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-768	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-769	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-771	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-772	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-773	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-774	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-776	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-777	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
-778	btv1b10035069t	unchecked	not reached: sweep stopped at Gallica error limit
+623	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+624	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+626	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+627	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+628	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+629	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+631	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+632	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+633	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+634	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+636	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+637	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+638	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+639	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+641	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+642	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+643	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+644	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+646	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+647	btv1b10035069t	clear	right page: section title Lettres du Roy a Mons. le Cardinal Antoine, clear; R12A-F5160B 6 Oct 2026
+648	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+649	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+651	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+652	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+653	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+654	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+656	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+657	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+658	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+659	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+661	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+662	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+663	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+664	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+666	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+667	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+668	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+669	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+671	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+672	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+673	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+674	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+676	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+677	btv1b10035069t	clear	left page blank; right page section title Lettres du Roy, clear; R12A-F5160B 6 Oct 2026
+678	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+679	btv1b10035069t	fetch-failed	HTTP 404 on full/600, twice (30 s pause between); info.json answers 200 (7853x6176), so the canvas exists; not retried further under the good-citizen rule; R12A-F5160B 6 Oct 2026
+681	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+682	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+683	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+684	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+686	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+687	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+688	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+689	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+691	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+692	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+693	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+694	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+696	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+697	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+698	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+699	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+701	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+702	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+703	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+704	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+706	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+707	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+708	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+709	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+711	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+712	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+713	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+714	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+716	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+717	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+718	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+719	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+721	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+722	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+723	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+724	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+726	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+727	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+728	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+729	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+731	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+732	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+733	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+734	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+736	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+737	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+738	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+739	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+741	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+742	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+743	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+744	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+746	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+747	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+748	btv1b10035069t	clear	right page: section heading, Lettre(s) du Roy, Nov 1661, clear; R12A-F5160B 6 Oct 2026
+749	btv1b10035069t	clear	right page: section heading, Lettre(s) du Roy, Nov 1661, clear; R12A-F5160B 6 Oct 2026
+751	btv1b10035069t	clear	dense small hand, re-read at 600 px, clear prose; R12A-F5160B 6 Oct 2026
+752	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+753	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+754	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+756	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+757	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+758	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+759	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+761	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+762	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+763	btv1b10035069t	clear	right page heading: Lettre du Roy au Grand Seigneur, clear; R12A-F5160B 6 Oct 2026
+764	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+766	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+767	btv1b10035069t	clear	left page blank; R12A-F5160B 6 Oct 2026
+768	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+769	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+771	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+772	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+773	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+774	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
+776	btv1b10035069t	clear	text ends on left page, right page blank; R12A-F5160B 6 Oct 2026
+777	btv1b10035069t	clear	blank end leaves; R12A-F5160B 6 Oct 2026
+778	btv1b10035069t	clear	blank end leaves; R12A-F5160B 6 Oct 2026
