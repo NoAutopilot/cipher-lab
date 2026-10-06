@@ -9209,3 +9209,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 05:18 | R9-RAYSORT (worker, account 2) | claim for LANE LANE-RUN9-account-2: rayburn-2004 owner sign sorter (sign_sorter.py + focus.tsv + sorter_preflight), cap 3.5, box end 06:18 UTC
 2026-10-06 05:18 | R9-OBRED3 worker | claim: oldenbarnevelt-brederode-1605, full-size read of remaining in-window DECODE keys (Marburg 4 d 1219 + 5 Munich), cap 3.5, box end 06:17 UTC, for LANE LANE-RUN9-account-2
 2026-10-06 05:18 | R9-NLACS worker | claim for LANE LANE-RUN9-account-2: nla-heinrich-braunschweig-1519 check-solved on Grein key sheets (Nr. 548/562); cap 3, box 05:20-06:05 UTC
+2026-10-06 05:19 | R9-ROUS4 worker | claim naf14913-rousseau-venice-1743: re-registered count-vector gate with same-class planted known-answer; cap 2.5, box end 06:03 UTC, for LANE LANE-RUN9-account-2
