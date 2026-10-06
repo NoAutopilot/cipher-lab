@@ -9723,3 +9723,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:25 | LANE DEFAULT-account-1-20261006-1240 (lane orchestrator, account 1) | wave 3 spawned 13:25 UTC (last wave): D1-F16104K session_01RFErvE8iUqucFGnG32UmaN; D1-ECK62S session_01PD5qQQ5ndZwxeiSPwXTKSP; D1-DEC2678L session_01EntysqpwiDaFj86Bq1mv5a; D1-BAL170 session_013P7dv4U1orycNgHEQg86WJ; caps 3+2+4+7 = 16
 2026-10-06 13:25 | D4-VIVV verifier | claim: fr16106-vivonne-longlee-1579 verify D4-VIVMOUS, cap 3.5, box to 14:25 UTC, for LANE DEFAULT-account-4-20261006-1235
 2026-10-06 13:26 | D4-SP105 (worker, account 4) | claim: sp105-paget-1693 SOAS catalogue reachability + PP MS 4.02.27.01/.28.01 item lists; cap 1, box 13:26-13:56 UTC; for LANE DEFAULT-account-4-20261006-1235
+2026-10-06 13:25 | D4-SP99 sp99-wotton-1622 | claim: Discovery item notes SP 99/24-25, cap 1.5, box ends 14:04 UTC, for LANE DEFAULT-account-4-20261006-1235
