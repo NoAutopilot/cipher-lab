@@ -16,6 +16,8 @@ RB = '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'b'
 PA, PB, ALN, LOG, TAG = ('A5', 'B5', 'aligned_b.tsv', 'apply_log_b.tsv', 'lvn10b') if RB else ('A4', 'B4', 'aligned.tsv', 'apply_log.tsv', 'lvn10')
 # --round c (R14-LVN10C, 6 Oct 2026, lvn10/PREREG_C.md): per-token crop reads A6/B6, aligned_c.tsv -> apply_log_c.tsv, tag lvn10c.
 if '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'c': PA, PB, ALN, LOG, TAG = 'A6', 'B6', 'aligned_c.tsv', 'apply_log_c.tsv', 'lvn10c'
+# --round d (R14-LVN10D, 6 Oct 2026, lvn10/PREREG_D.md): repaired per-token crops, reads A7/B7, aligned_d.tsv -> apply_log_d.tsv, tag lvn10d.
+if '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'd': PA, PB, ALN, LOG, TAG = 'A7', 'B7', 'aligned_d.tsv', 'apply_log_d.tsv', 'lvn10d'
 pre = rd(os.path.join(H, 'ciphertext_4610_pre.tsv'))
 al = {(r['line'], r['position']): r for r in rd(os.path.join(H, ALN))}
 ctl = {PA: [0, 0], PB: [0, 0]}

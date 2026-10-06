@@ -5,7 +5,9 @@ lvn10/tokcrops.py contact sheets) into lvn10/pass<P>.tsv in page order (blobs.ts
 and reads_A6.tsv beside this script). Offline."""
 import csv, os, sys
 H = os.path.dirname(os.path.abspath(__file__)); P = sys.argv[1]
-bl = {r['label']: r for r in csv.DictReader(open(os.path.join(H, 'blobs.tsv')), delimiter='\t')}
+# --blobs FILE (R14-LVN10D): the repaired cut's label map, lvn10/blobs_d.tsv; default blobs.tsv (round c)
+BF = sys.argv[sys.argv.index('--blobs') + 1] if '--blobs' in sys.argv else 'blobs.tsv'
+bl = {r['label']: r for r in csv.DictReader(open(os.path.join(H, BF)), delimiter='\t')}
 rd = {}
 for line in open(os.path.join(H, 'reads_%s.tsv' % P)):
     f = line.rstrip('\n').split('\t')

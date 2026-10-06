@@ -10,6 +10,8 @@ RB = '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'b'
 PA, PB, ALN = ('A5', 'B5', 'aligned_b.tsv') if RB else ('A4', 'B4', 'aligned.tsv')
 # --round c (R14-LVN10C, 6 Oct 2026, lvn10/PREREG_C.md): per-token crop reads A6/B6, page-ordered by blobs2pass.py -> aligned_c.tsv
 if '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'c': PA, PB, ALN = 'A6', 'B6', 'aligned_c.tsv'
+# --round d (R14-LVN10D, 6 Oct 2026, lvn10/PREREG_D.md): repaired per-token crop reads A7/B7 -> aligned_d.tsv
+if '--round' in sys.argv and sys.argv[sys.argv.index('--round') + 1] == 'd': PA, PB, ALN = 'A7', 'B7', 'aligned_d.tsv'
 ct = [r for r in csv.DictReader(open(os.path.join(H, 'ciphertext_4610_pre.tsv')), delimiter='\t')
       if 'p3_L12' <= r['line'] <= 'p3_L31' and not r['sign'].startswith('=')]
 def load(n):
