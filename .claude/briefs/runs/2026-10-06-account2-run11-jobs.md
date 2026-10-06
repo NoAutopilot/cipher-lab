@@ -128,3 +128,34 @@ in advance. Only if the gate passes, list candidate values for the unkeyed codes
 change; a verifier decides). If it fails, log "untestable by this method at this N" in HYPOTHESES.md (rule 3) and stop. AUDIT.md
 section 4's Collet crib values stay "found, not applied" unless the gate passes and they agree.
 
+## Wave 3 (spawned 09:5x UTC 6 Oct). Wave 2 all done (5 D, 1 D-), workers so far 30.07. Intake gates as wave 1 (PASS lines, 09:1x UTC).
+
+### R11-CLIN2380C -- pro3055-clinton-1779, 2380 cipher p.122 (Image 760) vs the period decipherment (cap 4.5, box 60 min)
+Continue R11-CLIN2380B (its NOTES section, PREREG 4aa284973): p.122's six column crops are already cut. One blind Sonnet pass +
+reconciliation, a p.122 PREREG committed and pushed before scoring, key-consistent count vs shuffled-plaintext control; apply the
+verified doubled-figure rule (R11-CLINV3) only as a separately reported variant. Conflicts by witness (rule 4). Do not edit AUDIT.md
+(R11-CLINV4 is auditing p.121 there now).
+
+### R11-CLINV4 -- verifier, pro3055-clinton-1779 R11-CLIN2380B p.121 (cap 2, box 35 min)
+Verifier, separate from the solver: PREREG 4aa284973 predates the p.121 scoring commit; the gate re-scores (406/420 vs control max 45,
+and the reported variants); the conflict "cipher lacks 'with the 650 Recruits and Artillery from Europe'" checked by eye on the cipher
+crops and the decipherment image, recorded by witness. AUDIT.md section + correct any over-claim in NOTES.md; touch nothing else.
+
+### R11-SURWT -- na-suriname-map-1781, pre-registered word test y = m|n vs y = d on the 2039/2061 readings (cap 3, box 50 min)
+The Verdict's cheapest next (R11-SURTV): PREREG first (committed, pushed): decode every 2039/2061 word containing y under y=d, y=m,
+y=n (other signs as the current key), score each variant by a Dutch dictionary/LM from tools/data (say which corpus and era) against
+a control that can differ (y substituted by random letters at the same positions, many draws). Gate stated in advance. A PASS for one
+value is a candidate for a verifier (no key change here); a tie or FAIL leaves y at M with the conflict as logged. gaps_check.
+
+### R11-SURSWP -- na-suriname-map-1781, sampled sweep of the rest of NA 1.05.03 inv. 373 for further glossed cipher (cap 3.5, box 60 min)
+R11-SURTV's second next: inv. 373 outside 0600-0796 (0001-0599, 0800-1028), thumbnails at ~600 px via service.archief.nl IIIF,
+<= 120 requests, >= 1.8 s, one at a time; 0800-1028 first (after the 29 Oct letter), then 0001-0599, at 1 in 4, contact sheets by
+your own eye, a positive control (scan 0693) on every sheet. Record scan numbers of any cipher, gloss or key and stop at 120 requests
+with the covered ranges written down. No reading. Append your own NOTES section only (R11-SURWT edits the same folder: rebase first).
+
+### R11-RJMSIB -- rah-juan-manuel-1521, Escalation "[ ] siblings": symbol-shape and table fit against the Sanchez records (cap 3, box 45 min)
+Escalation's planned step: compare this folder's alphabet.tsv / sorter tiles with ciphers/rah-salazar-soria-sanchez-1524-28 and
+Bourdeau's sanchez1522 (cite, MIT; sparse clone only that target) for shared symbol shapes and nomenclator table fit. Pre-register a
+shape-overlap statistic with a control (an unrelated Spanish 1520s cipher alphabet on disk, or shuffled tiles) that can differ.
+Report overlap both ways; no key or reading change. Mark the siblings row [x] with the result; gaps_check.
+
