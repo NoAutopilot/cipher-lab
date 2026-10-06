@@ -657,8 +657,46 @@ Waits on nobody outside the repository: the M9 hold-out gate (0.340 vs 0.70 bar)
 instrument choice, not access, since 27 Sept 2026 (VB-KEY).
 
 - Transcribe f.260 lines with the clerk's decipherment in view, sign-aligned by one reader and checked by a second -- a different instrument than the two blind passes tried. L.
-- Decode f.268 restricted to key v3's high-confidence cells only (23 confirmed, cells attested by 2+ occurrences such as s=i, p=i, o=e, r=e, m=u, b=u, e=p, 26=en), leaving the rest as `[MARK]` -- a partial, honestly-graded reading testable now with no new material. M.
+- [done 6 Oct 2026, R12D-VILL: no signal at this coverage, see section below] Decode f.268 restricted to key v3's high-confidence cells only (23 confirmed, cells attested by 2+ occurrences such as s=i, p=i, o=e, r=e, m=u, b=u, e=p, 26=en), leaving the rest as `[MARK]` -- a partial, honestly-graded reading testable now with no new material. M.
 - Re-run the known-plaintext alignment through `tools/interlinear_align.py` (the general shared tool) on the same f.260 pairs, instead of the private `kp_key_v3.py`, to check whether the shared tool's hard-EM separates the g/9/y/f/u/d families any better. M.
 
 ## Next step (READ2-RELABEL, 3 Oct 2026)
 The images are not the blocker. On disk: images/keys/ holds the native Gallica captures of f.268 r and v (canvases 541, 542, 3721x5914, copy-free, no login) and of the three key tables f.270r, 271r, 274r and 275r (manifest.json), and images/sweep/ holds the f.258-f.267 thumbnails. Only f.260 itself is not on disk at full size (its native crops from the 27 Sept 2026 known-plaintext pass were scratch only). The next step is the first "While waiting" bullet above, a different instrument from the two blind crop passes: re-fetch f.260r (canvas 525) at native size with tools/iiif_lines.py, cut line crops, and transcribe the lower and upper cipher blocks with the clerk's decipherment in view, sign-aligned by one reader and checked by a second, then run the alignment through tools/interlinear_align.py; ~$8-10 at the per-pass rate. The status line above stays `blocked` for the Tomokiyo paper route (paper still unread); that is a separate gap and does not stop this step.
+
+## Restricted-key decode of f.268 (R12D-VILL, 6 Oct 2026): no signal at this coverage
+
+Account 4, LANE LANE-RUN12-account-4; the second "While waiting" bullet. Disk only, no requests, no subagents. Status
+unchanged: `blocked`. Pre-registered in `PREREG-R12D-VILL.md` (pushed a6bdb8fce before the scored run). Script
+`decode_restricted.py` (`--check` exits 0), output `reading_restricted.txt` (a mechanical decode, not a reading).
+
+**Set.** key v3 rows flagged confirmed/confirmed-unclear (f.275 value of record = clerk-alignment majority) with count
+>= 2: 30 cells (letters 3/x/Hr=a, ls=d, r/q/o=e, qo=h, s/p/un=i, Hun=l, Hu=m, k/cc=n, do=o, e=p, d=r, a/Z/od=s,
+Zt/t=t, b/m=u; words 15 de, 26 en, 61 la, 76 mil, ^16 sa). The secondary set (adding unclear=0 cells) decodes
+identically: its extra cells (20, 5, ...) do not occur in f.268.
+
+**Coverage and grades (rule 4).** ciphertext.txt (13 lines, 362 tokens): H 6, M 168, U ([MARK]) 188 -- 48.1% decoded,
+no C, no S. ciphertext_v2.txt (verso, 136): H 5, M 62, U 69. The clerk alignment's own agreement for the cells as used
+in f.268 averages 0.417 (v1) / 0.410 (v2): by the sibling evidence, more than half of the decoded tokens are expected
+to be wrong. "Cryptanalytic result" at best; nothing here is a reading.
+
+**Control (200 class-shuffled restricted keys, seed 20261006; coverage and run positions fixed, only run letters vary).**
+Runs of >= 4 letters: v1 4 runs / 18 letters, v2 2 runs / 12 letters.
+```
+v1 fr16: real -1.4358; shuffled mean -1.9125 sd 0.4738 max -0.7472; z 1.01; rank 38 of 201
+v1 fr17: real -1.3618; shuffled mean -1.9150 sd 0.4802 max -0.7320; z 1.15; rank 22 of 201
+v2 fr16: real -2.2715; shuffled mean -1.9560 sd 0.4824 max -0.8224; z -0.65; rank 148 of 201
+v2 fr17: real -1.9396; shuffled mean -1.9313 sd 0.5085 max -0.9431; z -0.02; rank 112 of 201
+```
+Gate (z >= 3, rank 1 on fr16) not met. Rule 7 judge on the run text (runs joined, N=189): fr16 `FAIL language:
+score=-1.495, null_p99=-1.831, real_p05=-0.9, real_median=-0.777`; fr17 `FAIL language: score=-1.438, null_p99=-1.776,
+real_p05=-0.888, real_median=-0.775` (pre-registered as expected and uninformative: the runs are fragments).
+Corpus note: fr16 (c.1560-1615) is the nearest era for 1604, fr17 (1617-1644) the nearest register; neither is exact,
+and with 18 scorable letters the corpus is not the limit.
+
+**What it shows.** Restricting to the confirmed cells marks every other sign in the block, which breaks the decode into
+runs of 1-3 letters: the test has almost nothing to score (18 letters), so "no signal" here is a non-test of the key at
+this coverage, not a negative. Fragments such as v1 "EN EN t ... urs" (the "tous ... iours" VB-DECODE noted) recur, but
+two runs do not license anything. This confirms VB-KEY: the families that would join the runs (g, 9, y, f, u, the d
+family, single digits) are exactly the unconfirmed ones, so the limit is still sign transcription.
+Next step unchanged: the first "While waiting" bullet / READ2-RELABEL (f.260 transcribed with the clerk's decipherment in
+view, one reader + one checker, then tools/interlinear_align.py), ~$8-10; it needs f.260r re-fetched from Gallica.
