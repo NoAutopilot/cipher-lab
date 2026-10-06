@@ -252,6 +252,41 @@
    "leaf": 103,
    "printed_page": 89,
    "content": "col.2 has 10 headwords (Canotilho..Cantico) -- fetched by LX-FIX to test digit=9 (page89); rank19 does not exist (10<19)"
+  },
+  {
+   "file": "partII_leaf0506_p090_col1_top.jpg",
+   "leaf": 506,
+   "printed_page": "II-90",
+   "content": "col.1 top: rank1 = To Congreet (P2a: 829011 as 8+29011, trim5 -> Con / eet)",
+   "note": "R8-LIN, 6 Oct 2026: Part II (English-Portuguese) of the same scan, leaf fetched at scale=2 (949x1081) via the BookReaderImages URL in download_note; crop only committed; printed page number read off the image; Part II leaf-print offset 416 at pp. 90-290"
+  },
+  {
+   "file": "partII_leaf0706_p290_col1_top.jpg",
+   "leaf": 706,
+   "printed_page": "II-290",
+   "content": "col.1 top: rank1 = To Reel (P2b: trim5 empties the 4-letter word)",
+   "note": "R8-LIN, 6 Oct 2026: Part II (English-Portuguese) of the same scan, leaf fetched at scale=2 (949x1081) via the BookReaderImages URL in download_note; crop only committed; printed page number read off the image; Part II leaf-print offset 416 at pp. 90-290"
+  },
+  {
+   "file": "partII_leaf0697_p281_col3_top.jpg",
+   "leaf": 697,
+   "printed_page": "II-281",
+   "content": "col.3 top: rank1 = Purchasable (P2c: 328131/3 -> Purchasa / chasable)",
+   "note": "R8-LIN, 6 Oct 2026: Part II (English-Portuguese) of the same scan, leaf fetched at scale=2 (949x1081) via the BookReaderImages URL in download_note; crop only committed; printed page number read off the image; Part II leaf-print offset 416 at pp. 90-290"
+  },
+  {
+   "file": "partII_leaf0682_p266_col2_top.jpg",
+   "leaf": 682,
+   "printed_page": "II-266",
+   "content": "col.2 top: carry-over 'pranchas' not counted; Planked, Plant, To Plant, Plantation (P2c: 326624 rank4)",
+   "note": "R8-LIN, 6 Oct 2026: Part II (English-Portuguese) of the same scan, leaf fetched at scale=2 (949x1081) via the BookReaderImages URL in download_note; crop only committed; printed page number read off the image; Part II leaf-print offset 416 at pp. 90-290"
+  },
+  {
+   "file": "partII_running_heads_p090_p266_p281_p290.jpg",
+   "leaf": "506/682/697/706",
+   "printed_page": "II-90/266/281/290",
+   "content": "running heads with printed page numbers, page identification",
+   "note": "R8-LIN, 6 Oct 2026: Part II (English-Portuguese) of the same scan, leaf fetched at scale=2 (949x1081) via the BookReaderImages URL in download_note; crop only committed; printed page number read off the image; Part II leaf-print offset 416 at pp. 90-290"
   }
  ],
  "download_note_lxfix": "LX-FIX, 25 Sept 2026: leaves 92-96 and 100-103 fetched via the same BookReaderImages.php route to sweep p80-84,86-89 for the p3l1pos4 caret-digit fix (see NOTES.md). Leaf offset is NOT constant across leaf98-99: leaf98 is a page-turn photograph (operator's hand visible, oversized 1456x2184 image) and leaf99 returned a similarly unusable frame, both skipped; offset is +12 (leaf-print) through leaf97/page85, then +14 from leaf100/page86 onward -- confirmed by reading the printed page number in each image, never assumed."
