@@ -82,3 +82,33 @@ Google Books API (key, country=US), 1 query, `"Sieyes" "17 juillet 1798" chiffre
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: search Pallain's other Talleyrand volumes and Bailleu vol. 2 for the 17 Jul 1798 Sieyes letter (the gap left by the 2 Oct premise check), IA full text, ~$0.5; the known-plaintext check of P 1839/21 against Pallain p.398 waits on a copy (~$3 once it exists). Who acts: agent. Source: this file's "Next, cheapest" and "Re-check (CS-BATCH3)" gap; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Pallain's other volumes and Bailleu vol. 2 (R8-KONS, 6 Oct 2026, 04:05-04:10 UTC)
+
+Search result only, for P 1839/5 (17 Jul 1798, Sieyès, Berlin). Method: Internet Archive advancedsearch for creator Pallain / Bailleu, each
+item's `_djvu.txt` OCR fetched once (all open-access, not lending-only, so the full text was grepped rather than be-api snippets), then a
+script search on accent-stripped, de-hyphenated text for `Sieyès`, `17 juillet/Juli 1798`, `29 messidor` (= 17 Jul 1798), `messidor an VI`,
+`thermidor an VI`, with positive control terms per volume (Pallain: letter XLVI "5 brumaire an VII", which CS-A2-A had read at p. 398;
+Bailleu: Lucchesini, Haugwitz).
+
+| IA item | what it is | control | result for 17 Jul 1798 |
+|---|---|---|---|
+| diplomatiquetalle00talluoft | Pallain, *La mission de Talleyrand à Londres en 1792* (1889) | n/a (out of period) | 0 hits; 2 "17 juillet" hits are 1792 |
+| correspondenceof00talluoft | Pallain, *Talleyrand and Louis XVIII during the Congress of Vienna* (1881, Eng.) | n/a (out of period) | 0 |
+| correspondanced00tall | Pallain, *Ambassade de Talleyrand à Londres 1830-1834* (1891) | n/a (out of period) | 0 |
+| correspondance00tall, correspondanced00pallgoog | two more scans of *Le ministère de Talleyrand sous le Directoire* (1891) | XLVI found in both | only "29 messidor" hit is the Rastatt plenipotentiaries' conference, not a Sieyès letter |
+| preussenundfran00bailgoog, preussenundfran03bailgoog | Bailleu vol. 2 (*Zweiter Theil, 1800-1807*) | Lucchesini 167-169, Haugwitz ~340 | 0; vol. 2 starts in 1800 and cannot hold the letter |
+| bub_gb_mqRDAAAAYAAJ | Bailleu vol. 1 (*Erster Theil, 1795-1800*), another scan | Haugwitz 167, Sieyès 337 | one hit, below |
+
+The one hit (Bailleu vol. 1, Vierter Anhang, Urkunde Nr. 10, Talleyrand's Rapport au Directoire, footnote 2, about p. 488): "Am 17. Juli
+hatte Sieyès das preussische Ministerium zur Absendung von Gelehrten »chargés de concourir avec les savants français à la fixation de
+l'unité fondamentale des poids et mesures« eingeladen" -- the cabinet's refusal is dated 16 August. That is a Sieyès note *to the
+Prussian ministry* (an invitation to the metric commission), not a report to Talleyrand and not cipher; it shows Sieyès wrote officially
+on 17 July 1798 but does not print the Konstanz letter. Bailleu vol. 1's Sieyès reports in Anhang IV stay as CS-A2-A read them (26 messidor
+= 14 Jul and 6 thermidor = 24 Jul an VI); the main-text documents with Sieyès in the heading begin at Nr. 191 (3 Aug 1798).
+
+Where it was not found: no printed text of a Sieyès letter of 17 Jul 1798 in any Pallain volume on IA or in either Bailleu volume. Not
+searched: Guyot, *Le Directoire et la paix de l'Europe* (1911), and the AE Correspondance politique Prusse 222-223 originals. Requests:
+archive.org 20 (metadata 9, download 10, advancedsearch 2; >= 1.6 s apart, no errors). Status unchanged: `open`.
+Next, cheapest: Guyot 1911 full-text search for "17 juillet 1798"/"29 messidor" Sieyès, ~$0.5; the 17 Jul note to the Prussian ministry
+is a candidate identity for P 1839/5 only if the Konstanz leaf turns out to be a copy of an outgoing office, which needs the image.
