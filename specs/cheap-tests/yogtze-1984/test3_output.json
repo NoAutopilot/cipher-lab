@@ -1,0 +1,132 @@
+{
+ "prereg": "PREREG-test3.md",
+ "seed": 20261006,
+ "draws": 1000,
+ "target": "yogtze",
+ "langs": {
+  "de": {
+   "list_size": 23838,
+   "sources": [
+    "pg15736_Der_Mann_von_vierzig_Jahren.txt.gz",
+    "pg36905_Schach_von_Wuthenow.txt.gz",
+    "pg41051_Peter_Camenzind.txt.gz",
+    "pg41907_Demian.txt.gz",
+    "pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
+    "pg46184_Frau_Jenny_Treibel.txt.gz",
+    "pg5323_Effi_Briest.txt.gz",
+    "pg2404_Italienische_Reise_Band1.txt.gz",
+    "pg2405_Italienische_Reise_Band2.txt.gz",
+    "pg31538_Peter_Schlemihl.txt.gz"
+   ],
+   "target_H": 0,
+   "target_hits": {
+    "yogtze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yogze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "vogtze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "ydgtze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yoctze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yogfze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yogtse": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yogtzf": {
+     "one_word": [],
+     "two_word": []
+    }
+   },
+   "control": {
+    "mean": 18.74,
+    "median": 11,
+    "p05": 0,
+    "p95": 65,
+    "min": 0,
+    "max": 117,
+    "frac_zero": 0.201
+   },
+   "P_le": 0.201,
+   "P_lt": 0.0
+  },
+  "en": {
+   "list_size": 15064,
+   "sources": [
+    "pg1342_pride.txt",
+    "pg64317_gatsby.txt",
+    "pg76_huckfinn.txt",
+    "pg1661_holmes.txt",
+    "pg2701_mobydick.txt"
+   ],
+   "target_H": 6,
+   "target_hits": {
+    "yogtze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yogze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "vogtze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "ydgtze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yoctze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yogfze": {
+     "one_word": [],
+     "two_word": []
+    },
+    "yogtse": {
+     "one_word": [],
+     "two_word": [
+      "gets yo",
+      "got yes",
+      "togs ye",
+      "ye togs",
+      "yes got",
+      "yo gets"
+     ]
+    },
+    "yogtzf": {
+     "one_word": [],
+     "two_word": []
+    }
+   },
+   "control": {
+    "mean": 25.65,
+    "median": 14,
+    "p05": 0,
+    "p95": 86,
+    "min": 0,
+    "max": 205,
+    "frac_zero": 0.164
+   },
+   "P_le": 0.355,
+   "P_lt": 0.303
+  }
+ }
+}

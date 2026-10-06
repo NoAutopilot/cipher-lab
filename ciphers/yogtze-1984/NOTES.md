@@ -63,3 +63,17 @@ Result: no fit beyond what the same look-alike freedom gives a random ordering o
 ## Next step (D2B-YOG, 6 Oct 2026)
 
 next: none cheap left in the lexical family -- tests 1 (initials), 2 (plates/abbreviations, this pass) are logged; spec test 3 (720-anagram enumeration against German/English word lists) is the last untried, ~$0.5; or the parent re-labels the target per the 3 Oct premise note (no surviving witness of the slip). Who acts: agent.
+
+## Anagram enumeration, spec test 3 (R8-YOG3, account 4, 6 Oct 2026)
+
+Ran the "Next step (D2B-YOG)" line. A lexical search, no reading claimed. Pre-registered in `specs/cheap-tests/yogtze-1984/PREREG-test3.md` (commit 3e8b84811, pushed before the run); script `test3_anagrams.py`, output `test3_output.json`, same folder.
+- Reading set (8 strings): YOGTZE; YOGZE (T struck, as D2B-YOG); single look-alike swaps Y->V, G->C, T->F, Z->S, E->F, O->D. Every distinct ordering checked as one word and as two words (each >= 2 letters).
+- Word lists (corpus words with count >= 2): German tools/data/de20 + de19, 23,838 words; English tools/data/en + Holmes + Moby-Dick, 15,064 words. Gutenberg prose, not a dictionary: rare words and 1980s technical vocabulary are under-covered.
+- Target: German H = 0 (no one- or two-word anagram for any string); English H = 6, all two-word phrases from the Z->S variant only (yes got, got yes, yo gets, gets yo, togs ye, ye togs). No one-word anagram in either language.
+- Control (can differ: it changes the letters, not only their order): 1000 draws of 6 distinct letters from each list's own letter frequency, same freedom. German mean 18.7, median 11, p05 0, p95 65, 20.1% of draws score 0; English mean 25.7, median 14, p05 0, p95 86. Target percentile P(control <= target): de 0.201, en 0.355.
+- Verdict, as pre-registered: **non-discriminating** in both languages. YOGTZE is somewhat anagram-poor, but not outside what random distinct letters give. Not a reading, not a negative on any other hypothesis.
+Requests: none (all data on disk).
+
+## Next step (R8-YOG3, 6 Oct 2026)
+
+Lexical family exhausted: spec tests 1 (initials), 2 (plates/abbreviations) and 3 (anagrams) are all run and none discriminates. No cheap untried step is left for the letters themselves (N = 6, below any unicity; the slip is lost per the Hagen prosecutor, 2025). next: the parent decides whether to re-label the target per the 3 Oct premise note (no surviving witness of the slip). Who acts: parent.

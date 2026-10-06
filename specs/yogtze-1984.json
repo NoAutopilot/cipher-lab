@@ -31,9 +31,62 @@
    "date": "25 Sept 2026",
    "worker": "bYOG (Sonnet)",
    "method": "Initials/acrostic feasibility: for the 6 letters Y-O-G-T-Z-E, the minimum across the six positions of (count of distinct wordlist entries starting with that letter) -- the acrostic's bottleneck letter -- computed once for German (tools/data/de20, 42,047 distinct words) and once for English (tools/data/pg1661_holmes.txt + pg2701_mobydick.txt, 19,547 distinct words). No phrase assembled or proposed; hit/no-hit only. Script and full output: specs/cheap-tests/yogtze-1984/{test1_initials.py,test1_output.json,README.md}.",
-   "target": {"de_min_count": 12, "de_bottleneck_letter": "Y", "en_min_count": 18, "en_bottleneck_letter": "Z"},
-   "control": {"n": 20, "draw": "6-letter strings sampled (with replacement) from the same wordlist's own first-letter frequency distribution, same min-count statistic", "de_min_count_range": [337, 1879], "de_min_count_mean": 997.9, "en_min_count_range": [57, 825], "en_min_count_mean": 456.3},
+   "target": {
+    "de_min_count": 12,
+    "de_bottleneck_letter": "Y",
+    "en_min_count": 18,
+    "en_bottleneck_letter": "Z"
+   },
+   "control": {
+    "n": 20,
+    "draw": "6-letter strings sampled (with replacement) from the same wordlist's own first-letter frequency distribution, same min-count statistic",
+    "de_min_count_range": [
+     337,
+     1879
+    ],
+    "de_min_count_mean": 997.9,
+    "en_min_count_range": [
+     57,
+     825
+    ],
+    "en_min_count_mean": 456.3
+   },
    "verdict": "no-hit -- in both languages the target's own bottleneck-letter count sits below the entire 20-draw control range (percentile 0.0), i.e. YOGTZE is markedly harder to complete as a six-word acrostic than a same-length random letter-string would be, in both German and English general prose. Not evidence for the acrostic hypothesis; a small piece of support for Schmeh's own 'no language knows this word' extended to acrostic initials. No candidate phrase reported."
+  },
+  {
+   "test": 3,
+   "date": "6 Oct 2026",
+   "worker": "R8-YOG3 (Opus, account 4)",
+   "prereg": "specs/cheap-tests/yogtze-1984/PREREG-test3.md (commit 3e8b84811, pushed before the scored run)",
+   "method": "All distinct orderings of each string in an 8-string reading set (YOGTZE; YOGZE with T struck; six single look-alike swaps Y->V, G->C, T->F, Z->S, E->F, O->D) checked as one word (S1) and as two words of length >=2 (S2) against corpus word lists (count >=2): de = tools/data/de20+de19 (23,838 words), en = tools/data/en + holmes + mobydick (15,064 words). Headline H = S1+S2 summed over the set. Script and output: specs/cheap-tests/yogtze-1984/{test3_anagrams.py,test3_output.json}.",
+   "target": {
+    "de_H": 0,
+    "en_H": 6,
+    "en_hits": "two-word only, all from the Z->S variant YOGTSE: gets yo, got yes, togs ye, ye togs, yes got, yo gets; no one-word anagram in either language for any string"
+   },
+   "control": {
+    "n": 1000,
+    "draw": "6 distinct letters sampled from each list's token-weighted letter frequency, same reading-set freedom (4th letter struck, same look-alike map), seed 20261006",
+    "de": {
+     "mean": 18.74,
+     "median": 11,
+     "p05": 0,
+     "p95": 65,
+     "frac_zero": 0.201
+    },
+    "en": {
+     "mean": 25.65,
+     "median": 14,
+     "p05": 0,
+     "p95": 86,
+     "frac_zero": 0.164
+    }
+   },
+   "P_target_le_control": {
+    "de": 0.201,
+    "en": 0.355
+   },
+   "verdict": "non-discriminating (pre-registered band 0.05 < P < 0.95 in both languages): YOGTZE yields no one-word anagram in German or English, but a fifth (de) to a third (en) of random distinct-letter draws do no better. The English two-word hits need the Z->S look-alike and are trivial phrases. No reading proposed. With tests 1-3 run, the lexical family is logged exhausted for this target."
   }
  ],
  "judge": {
