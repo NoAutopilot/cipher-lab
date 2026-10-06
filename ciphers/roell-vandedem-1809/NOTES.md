@@ -548,3 +548,44 @@ around Jan-Feb 1809 (Testa's copies; 362 scans, bisect by date); then inv. 92 sc
 
 **Requests:** service.archief.nl 45 (IIIF /full/1000,/0/ openings; all HTTP 200, >= 1.9 s apart, one at a time);
 www.nationaalarchief.nl 2 (EAD xml 1.02.20, item page 1.02.20/978; both HTTP 200). Subagent calls: 0.
+
+## R9-ROELL7 (6 Oct 2026): NA 1.02.20 inv. 996, Testa and Van Hogendorp at Vienna, 1809 (all 22 scans)
+
+Worker R9-ROELL7 (account 2, for LANE LANE-RUN9-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run9-jobs.md`,
+05:57-06:01 UTC by `date -u`. Page images read by eye (IIIF 1000 px openings; scans 19-22 from a 700 px contact sheet of
+the same downloads), no subagent, no decoding. Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0 (no
+reading). Per-scan log: `na10220/inv996_scans.tsv`; IIIF info URLs: `na10220/inv996_iiif_info_urls.json`.
+
+**What inv. 996 is.** Item page `www.nationaalarchief.nl/onderzoeken/archief/1.02.20/invnr/996`, drupal-settings
+`availability: DIGITALIZED`, 22 scans (title "Brieven van en aan D. van Hogendorp, gezant te Wenen."). It is Testa's file of
+his own letters to Van Hogendorp at Vienna, 11 Jan to 26 Jun 1809 (wrapper "Par Monsieur Gaspard Testa, Chargé d'Affaires
+... près la Sublime Porte"; most marked "(signé) Gaspd. Testa", i.e. copies, scan 5 headed "Copie"), plus one original from
+Van Hogendorp (Vienna, 3 Mar 1809, docketed received 29 Mar, answered 11 Apr). Every page is clear French; **no cipher
+groups, no key, no "en chiffre" note anywhere in the 22 scans.**
+
+**Found (relevant to R1469, 9 Feb 1809).**
+- **Testa's 10 Feb 1809 cover to Van Hogendorp (scans 5-6, copy) carries an enclosure for Van Dedem.** It ends: "Je prie V.E.
+  de vouloir bien donner cours au pli ci-joint pour S.E. le Ministre Röell et avoir la bonté de remettre à S.E. l'Ambassadeur
+  Van Dedem que je suppose déjà à Vienne, celui à son adresse également ci-joint" (read at 1000 px; spelling normalized).
+  So one pli for Röell and one for Van Dedem left Constantinople with the 10 Feb post. A 9 Feb 1809 French "Monsieur" letter
+  (R1469) fits either enclosure by date. Inference, not established: the cover gives no date for the enclosures, and
+  Bourdeau's read of inv. 980 (Testa to Van Dedem, copies) records copies of 10 and 26 Feb 1809 to Van Dedem and none of
+  9 Feb, so the Van Dedem enclosure is more likely the 10 Feb copy in inv. 980 than R1469; the Röell enclosure is unchecked.
+- Testa used Van Hogendorp as a forwarding post for both Röell and Van Dedem throughout: 16 and 22 Jan (plis for Röell and
+  for "Monsr. l'Ambassadeur Van Dedem", by a French courier), 10, 25 and 26 Feb, 10 and 24 Mar ("les deux incluses pour
+  Mrs Van Dedem Père et fils"), 11 and 25 Apr, 10 and 25 May, 26 Jun.
+- Van Hogendorp, 3 Mar 1809: received Testa's letters of 11, 15 and 16 Jan and forwarded "les incluses pour S.Exc. le
+  Ministre Röell" at once; "Monsieur l'Ambassadeur de Dedem vient d'arriver ici, il y a deux jours" (Van Dedem at Vienna
+  about 1 Mar 1809). Testa's 10 Mar letter acknowledges the news.
+
+**Not found.** No cipher, key or clear copy of R1469/R1470 in inv. 996; no letter dated 9 Feb 1809 in it; no Van
+Hogendorp letter to Testa between 3 Mar and the end of the file (only the one original). Not searched: inv. 978 (Testa's
+copies to Röell, 1809-10, 362 scans) for the pli sent with the 10 Feb cover; inv. 997 (Silliman at Vienna).
+
+**Verdict line:** `open` -- inv. 996 holds no cipher and no 9 Feb 1809 letter, but shows a Röell pli and a Van Dedem pli
+enclosed in Testa's 10 Feb 1809 cover to Vienna. Cheapest next: 1.02.20 inv. 978, Testa's copies to Röell, at early
+Feb 1809 (bisect the 362 scans by date; <= 20 requests, ~USD 2) for a 9 or 10 Feb letter and whether it was sent in cipher;
+then inv. 980's 10 Feb copy to Van Dedem compared against R1469's length and form (Bourdeau's scan list).
+
+**Requests:** www.nationaalarchief.nl 1 (item page 1.02.20/996, HTTP 200); service.archief.nl 22 (IIIF /full/1000,/0/,
+all HTTP 200, >= 1.9 s apart, one at a time). Subagent calls: 0.
