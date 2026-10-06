@@ -68,6 +68,8 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
   masc_words         simple substitution, n-gram anneal + dictionary-segmentation polish (R12D-FAIR 6 Oct 2026)
   masc_inj           strictly injective simple substitution by a left-to-right word-pattern beam (R12D-FAIR2 6 Oct 2026,
                      fair-game-2010: control 0.576 at N=67 beam 1000, bimodal -- a wrong opening is never recovered)
+  columnar_homophonic irregular columnar transposition (widths 2-12) of a homophonic substitution, joint numpy anneal
+                     over column order and key (R15-KAL14 6 Oct 2026, kaliningrad-2015); --param widths=, iters=, ctrl_widths=
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds

@@ -16,6 +16,13 @@ def test_roundtrip():
         assert list(plain) == seq, w
 
 
+def test_shift_recovery():
+    t = "abcdefghijklmnopqrstuvwxyz" * 4
+    assert F.score_recovery(t, t) == 1.0
+    assert F.score_recovery("xxxx" + t[:-4], t) > 0.9
+    assert F.score_recovery("z" * len(t), t) < 0.1
+
+
 def test_widths():
     assert F._widths("2-4,7") == [2, 3, 4, 7]
 
@@ -32,4 +39,4 @@ def test_width1_reads():
 
 
 if __name__ == "__main__":
-    test_roundtrip(); test_widths(); test_width1_reads(); print("ok")
+    test_roundtrip(); test_shift_recovery(); test_widths(); test_width1_reads(); print("ok")

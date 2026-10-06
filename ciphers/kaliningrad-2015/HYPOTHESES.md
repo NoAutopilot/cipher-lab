@@ -1207,3 +1207,23 @@ python3 tools/family_run.py ciphers/kaliningrad-2015/families/r15_kal13/spec_s1s
   --seeds 3 --restarts 2 --gate 0.6 --param profile=target --param widths=2-12 --param iters=60000 --param ctrl_widths=7,10,5 \
   --target-only-if-gated --decode-tag convB --label "R15-KAL14 columnar x homophonic ru s1s, conv B"
 ```
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 6 Oct 2026 18:04 | columnar_homophonic | N=1066 K=28 restarts=2 corpus=s1s.txt.gz profile=target,widths=2-12,iters=60000,ctrl_widths=7,10,5 | 1-3 | 0.064 (0.060-0.066) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | R15-KAL14 columnar x homophonic ru s1s, conv B |
+
+### R15-KAL14 pre-registration 2 (6 Oct 2026, 18:05 UTC by date -u): metric fix only, before the re-scored run
+
+Run 1 (above) ended CONTROL BELOW GATE, mean 0.064 (seeds 0.066 / 0.066 / 0.060). Diagnosis on synthetic data only (no
+target scoring): seed 1's solver picked the true width 7 by about 500 nats over every other width, and its decode reproduced
+outside family_run (same seed, same budget) reads the control's Russian at **0.795 once shifted by 4 positions** (0.066 strict)
+-- a rotation of the column order decodes the right text displaced, and the strict per-position metric cannot see it. So run 1's
+number measured the metric, not the solver. Fix: `columnar_homophonic.score_recovery` now takes the best of global shifts
+-12..12 (offline test `test_shift_recovery`). Everything else unchanged: same command as run 1 (same budget, seeds 1-3, control
+widths 7/10/5, gate 0.6); the solver is deterministic per seed, so the control decodes are the same as run 1's and only the
+recovery is re-scored. Known before this run: seed 1 about 0.79. Seed 3 picked width 10 (true 5), seed 2 scored far below seeds
+1 and 3 (-3557 vs -3140/-3147), so the mean may still miss the gate. If below gate: "untestable by this instrument at this N
+and budget", stop. If met: the same command with `--shuffle-target 1` beside it, judge on both (reading only on target PASS with
+shuffle FAIL). Label: "R15-KAL14 run 2 (shift-tolerant recovery)".

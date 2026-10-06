@@ -12,7 +12,8 @@ Solver: for every width in `widths` (default 2-12) it runs `restarts` joint anne
 key) scored by a smoothed trigram log-likelihood of the untransposed decode (numpy, model trained on the corpora given,
 which for the control exclude its own window); moves: reassign one sign or swap two signs' letters (p 1-order_p together), swap two columns (0.6 order_p), move one
 column (0.4 order_p; order_p default 0.25); linear temperature t0 -> 0 over `iters`. The best score over all widths wins; info keeps the per-width
-bests. Recovery = share of plaintext positions read correctly (the control's untransposed truth).
+bests. Recovery = share of plaintext positions read correctly (the control's untransposed truth), best over a shift of
+-12..12 (a column-order rotation displaces the text; see score_recovery).
 params: widths (e.g. 2-12 or 5,7), iters (default 30000), t0 (1.0), uni_weight (1.0, the -N*KL letter term), ctrl_widths, plus the homophonic family's
 control params (profile, noise, alphabet). Width 1 is the no-transposition baseline if listed."""
 import math
@@ -179,6 +180,10 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     return dec, float(sc), info
 
 
-def score_recovery(plain, truth):
+def score_recovery(plain, truth, max_shift=12):
+    """Share of positions read correctly, maximised over a global shift of -max_shift..max_shift (R15-KAL14 fix,
+    6 Oct 2026): a rotation of the column order decodes the right text displaced by a few positions, which a strict
+    per-position comparison scores near 0 (seed 1 of the first control: 0.066 strict, 0.795 at shift 4)."""
     n = max(1, len(truth))
-    return sum(1 for a, b in zip(plain, truth) if a == b) / n
+    return max(sum(1 for a, b in zip(plain[max(0, k):], truth[max(0, -k):]) if a == b)
+               for k in range(-max_shift, max_shift + 1)) / n
