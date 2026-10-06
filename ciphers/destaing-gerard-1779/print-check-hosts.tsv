@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	1	ok
+api.openalex.org	8	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Je%20me%20flatte%20que%20j%27aurai%20l%27ordre%20ou%20la%20permission%20de%20suivre%22
+archive.org	2	ok (some errors)
+be-api.us.archive.org	14	ok
+www.googleapis.com	7	ok

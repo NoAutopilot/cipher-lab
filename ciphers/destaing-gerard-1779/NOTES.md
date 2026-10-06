@@ -344,6 +344,20 @@ British copies; the measured per-group disagreement among the copies is 1/216. C
 B possible). The image-check gap is closed. No decoding was done; no novelty words (rule 10). Requests: 0 network (disk only).
 Cost: see the lane ledger (6 Sonnet calls + 1 reconciliation unit).
 
+## LANE-PRIV1 step 2, key hunt, 6 Oct 2026 02:0x UTC (account-4 standing session)
+
+The Holker lead was already run by A4-DHOLK (LANE DEFAULT-account-4, 5 Oct 23:40-23:56 UTC, ROOM): no key or key fragment
+online (LoC Holker finding aid Cloudflare-blocked; DECODE 8791/8792 1780 keys endorsed Russ, ruled out); the route it found is
+Gerard's ciphered originals to d'Estaing in AN Marine B4 143 (175/320/357) and B4 168:11, whose clear texts Meng prints, i.e.
+known-plaintext pairs for the same correspondence cipher (REQUEST.md, AN section). Not repeated here.
+Print check of this letter's clear passages (brief step 2), `tools/print_check.py` with phrases.txt (7 phrases) and sources.tsv
+(Doniol iv, Meng, an OpenAlex keyword row): **no phrase hit** in Meng (djvu downloaded and searched), the IA full-text search
+across all items, or OpenAlex; Google Books' "hits" are loose word matches over hundreds of unrelated volumes (no phrase match
+among the top five of any row; 2 rows HTTP 503). Not reached: Doniol iv's djvu text (IA HTTP 500, as on 3 Oct; be-api fts
+found nothing for any phrase), Semantic Scholar (HTTP 429). Requests: archive.org 2, be-api 14, googleapis 7, openalex 8,
+semanticscholar 1, crossref 1. A search result, not a novelty verdict (rule 10). print-check.tsv / print-check-hosts.tsv.
+No key or fragment found, so the 216 collated groups were not tested.
+
 ## Remaining gaps (FT4-destaing-gerard-1779, 3 Oct 2026)
 Read so far: 0 of 216 code tokens (no key, no reading); transcription confirmed on three British copies (collation.tsv, 215/216, DEST-COLLATE 5 Oct 2026)
 - whole code text (216 tokens) - blocker: no-key-material (A4-DHOLK 5 Oct 2026: none online; the named key route is the AN Marine B4 143/168 Gérard cipher originals, REQUEST.md); no French navy/AE key of 1778-80 on file, and the Luzerne 1781 key has chance-level overlap (FT4 above); the decipherment copy (AAE Corr. pol. Etats-Unis Supt.1) and the sender's register (AN Marine B4 168) are offline
