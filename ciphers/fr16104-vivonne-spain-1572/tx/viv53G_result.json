@@ -1,0 +1,370 @@
+{
+ "seed": "20261053G",
+ "draws": 200,
+ "decoys": {
+  "n": 48,
+  "correct": 40,
+  "none": 0,
+  "correct_rate": 0.833,
+  "none_rate": 0.0,
+  "pass_": true
+ },
+ "fold_applied": true,
+ "gap_verdicts": {
+  "f170r": {
+   "present": 20,
+   "absent": 0,
+   "kept": 22,
+   "echo": 26,
+   "none": 7,
+   "other": 9
+  },
+  "f170v": {
+   "present": 60,
+   "absent": 9,
+   "kept": 34,
+   "echo": 69,
+   "none": 14,
+   "other": 20
+  },
+  "f171r": {
+   "present": 21,
+   "absent": 5,
+   "kept": 12,
+   "echo": 21,
+   "none": 10,
+   "other": 7
+  },
+  "f171v": {
+   "present": 20,
+   "absent": 2,
+   "kept": 65,
+   "echo": 27,
+   "none": 56,
+   "other": 4
+  }
+ },
+ "C1_full": {
+  "letters": 1770,
+  "s": -1.7145,
+  "cover": 0.709,
+  "b1": {
+   "null_median": -2.133,
+   "null_p99": -1.656,
+   "pass": false,
+   "headroom_ok": false
+  },
+  "b2": {
+   "null_median": -1.9566,
+   "null_p99": -1.8933,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "C2_full": {
+  "letters": 1793,
+  "s": -1.658,
+  "cover": 0.795,
+  "b1": {
+   "null_median": -2.1268,
+   "null_p99": -1.7834,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8774,
+   "null_p99": -1.8292,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "whole": {
+  "letters": 4168,
+  "s": -1.6037,
+  "cover": 0.783,
+  "b1": {
+   "null_median": -2.1355,
+   "null_p99": -1.7066,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.868,
+   "null_p99": -1.8376,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "verdict_b_ii": "PASS",
+ "c": {
+  "wrong_keys": 200,
+  "b2_passes": 32,
+  "share": 0.16,
+  "margin_median": -0.036,
+  "margin_p99": 0.0503,
+  "margin_max": 0.0641,
+  "real_margin": 0.2339,
+  "pass": true
+ },
+ "V_strict": 772,
+ "stretch_before_53L": {
+  "top": [
+   {
+    "page": "f170r",
+    "lines": "L16-L17",
+    "letters": 20,
+    "decoded": "intentionaentrerence",
+    "words": "intention a entrer en ce",
+    "n_words": 5,
+    "M": 0,
+    "K": 1,
+    "J": 1,
+    "line_ends": 1
+   },
+   {
+    "page": "f171r",
+    "lines": "L24",
+    "letters": 20,
+    "decoded": "ueuoontasanoentreaul",
+    "words": "ueu o ont a san o entre aul",
+    "n_words": 8,
+    "M": 0,
+    "K": 2,
+    "J": 0,
+    "line_ends": 0
+   },
+   {
+    "page": "f171v",
+    "lines": "L16-L17",
+    "letters": 15,
+    "decoded": "arieniaaesteadu",
+    "words": "a rien ia a es te a du",
+    "n_words": 8,
+    "M": 0,
+    "K": 1,
+    "J": 0,
+    "line_ends": 1
+   },
+   {
+    "page": "f170r",
+    "lines": "L17",
+    "letters": 14,
+    "decoded": "esteaceoheureo",
+    "words": "es te a ce o heure o",
+    "n_words": 7,
+    "M": 1,
+    "K": 0,
+    "J": 1,
+    "line_ends": 0
+   },
+   {
+    "page": "f171r",
+    "lines": "L08",
+    "letters": 14,
+    "decoded": "ouneintentiona",
+    "words": "ou ne intention a",
+    "n_words": 4,
+    "M": 0,
+    "K": 0,
+    "J": 0,
+    "line_ends": 0
+   },
+   {
+    "page": "f170v",
+    "lines": "L27-L28",
+    "letters": 13,
+    "decoded": "ouraoaenceuie",
+    "words": "our a o a en ce uie",
+    "n_words": 7,
+    "M": 0,
+    "K": 0,
+    "J": 1,
+    "line_ends": 1
+   },
+   {
+    "page": "f171r",
+    "lines": "L28-L29",
+    "letters": 13,
+    "decoded": "touteooorteoa",
+    "words": "toute o o or te o a",
+    "n_words": 7,
+    "M": 0,
+    "K": 0,
+    "J": 0,
+    "line_ends": 1
+   },
+   {
+    "page": "f171r",
+    "lines": "L14",
+    "letters": 13,
+    "decoded": "ontentendrece",
+    "words": "ont entendre ce",
+    "n_words": 3,
+    "M": 0,
+    "K": 0,
+    "J": 0,
+    "line_ends": 0
+   },
+   {
+    "page": "f170v",
+    "lines": "L10",
+    "letters": 12,
+    "decoded": "aireoilauoit",
+    "words": "aire o il auoit",
+    "n_words": 4,
+    "M": 0,
+    "K": 0,
+    "J": 0,
+    "line_ends": 0
+   },
+   {
+    "page": "f171r",
+    "lines": "L17",
+    "letters": 12,
+    "decoded": "enceteauoouo",
+    "words": "en ce te au o ou o",
+    "n_words": 7,
+    "M": 1,
+    "K": 0,
+    "J": 1,
+    "line_ends": 0
+   }
+  ],
+  "real_top1": 20,
+  "real_top3mean": 18.33,
+  "null_top1_median": 13,
+  "null_top1_p99": 21,
+  "null_top3mean_median": 11.67,
+  "null_top3mean_p99": 15.67
+ },
+ "stretch_after_53G": {
+  "top": [
+   {
+    "page": "f170r",
+    "lines": "L16-L17",
+    "letters": 20,
+    "decoded": "intentionaentrerence",
+    "words": "intention a entrer en ce",
+    "n_words": 5,
+    "M": 0,
+    "K": 1,
+    "J": 1,
+    "line_ends": 1
+   },
+   {
+    "page": "f171r",
+    "lines": "L24",
+    "letters": 20,
+    "decoded": "ueuoontasanoentreaul",
+    "words": "ueu o ont a san o entre aul",
+    "n_words": 8,
+    "M": 0,
+    "K": 2,
+    "J": 0,
+    "line_ends": 0
+   },
+   {
+    "page": "f171v",
+    "lines": "L16-L17",
+    "letters": 15,
+    "decoded": "arieniaaesteadu",
+    "words": "a rien ia a es te a du",
+    "n_words": 8,
+    "M": 0,
+    "K": 1,
+    "J": 0,
+    "line_ends": 1
+   },
+   {
+    "page": "f170r",
+    "lines": "L17",
+    "letters": 14,
+    "decoded": "esteaceoheureo",
+    "words": "es te a ce o heure o",
+    "n_words": 7,
+    "M": 1,
+    "K": 0,
+    "J": 1,
+    "line_ends": 0
+   },
+   {
+    "page": "f171r",
+    "lines": "L08",
+    "letters": 14,
+    "decoded": "ouneintentiona",
+    "words": "ou ne intention a",
+    "n_words": 4,
+    "M": 0,
+    "K": 0,
+    "J": 0,
+    "line_ends": 0
+   },
+   {
+    "page": "f170v",
+    "lines": "L27-L28",
+    "letters": 13,
+    "decoded": "ouraoaenceuie",
+    "words": "our a o a en ce uie",
+    "n_words": 7,
+    "M": 0,
+    "K": 0,
+    "J": 1,
+    "line_ends": 1
+   },
+   {
+    "page": "f171r",
+    "lines": "L28-L29",
+    "letters": 13,
+    "decoded": "touteooorteoa",
+    "words": "toute o o or te o a",
+    "n_words": 7,
+    "M": 0,
+    "K": 0,
+    "J": 0,
+    "line_ends": 1
+   },
+   {
+    "page": "f171r",
+    "lines": "L14",
+    "letters": 13,
+    "decoded": "ontentendrece",
+    "words": "ont entendre ce",
+    "n_words": 3,
+    "M": 0,
+    "K": 0,
+    "J": 0,
+    "line_ends": 0
+   },
+   {
+    "page": "f170v",
+    "lines": "L10",
+    "letters": 12,
+    "decoded": "aireoilauoit",
+    "words": "aire o il auoit",
+    "n_words": 4,
+    "M": 0,
+    "K": 0,
+    "J": 0,
+    "line_ends": 0
+   },
+   {
+    "page": "f171r",
+    "lines": "L17",
+    "letters": 12,
+    "decoded": "enceteauoouo",
+    "words": "en ce te au o ou o",
+    "n_words": 7,
+    "M": 0,
+    "K": 1,
+    "J": 1,
+    "line_ends": 0
+   }
+  ],
+  "real_top1": 20,
+  "real_top3mean": 18.33,
+  "null_top1_median": 13,
+  "null_top1_p99": 19,
+  "null_top3mean_median": 11.67,
+  "null_top3mean_p99": 15.67
+ }
+}
