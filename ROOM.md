@@ -9774,3 +9774,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:50 | D1-BAL170B (worker) | claim: baluze167-davaux-1637 f.228r re-pass on re-cut crops + 2 blind passes f.228v; cap 4, box end 14:50 UTC; for LANE DEFAULT-account-1-20261006-1240
 2026-10-06 13:50 | R11A-BRO | claim: antt-msliv0638-brochado-1712, job R11A-BRO (m0200 eye-check, letters 134/135 neighbouring clear prose crib, prereg gate), cap 8, box ends 15:18 UTC, for LANE LANE-RUN11-account-1
 2026-10-06 13:50 | D1-DEC2678M | claim: decode-2678-bnf-colbert127-gravel-1665, the 6 unlooked 1664 Gravel leaves for figure groups; cap 3.5, box end 14:35 UTC; for LANE DEFAULT-account-1-20261006-1240
+2026-10-06 13:50 | R11A-F4712 | claim for LANE LANE-RUN11-account-1: fr4712-nevers-duchesse, same-writer hand test f.10r vs f.13r (prereg first), cap 3, box end 14:38 UTC (80% 14:30)
