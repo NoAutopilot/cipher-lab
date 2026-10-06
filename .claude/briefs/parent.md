@@ -417,7 +417,7 @@ exact page or result -- never a volume home page or a search he has to refine; (
 footnotes", "copy the number at the top"); (3) what to send back. Try every cloud route first (IA copy, Google Books API, other
 mirrors) and only then ask. Lesson: a HathiTrust volume link left him facing "a bunch of different options" and a Cloudflare page.
 - Runner before owner (owner, 5 Oct 2026): a page read in a lent archive.org book, a HathiTrust page or search-inside, an
-  academia.edu download or a catalogue lookup goes to the owner's local runner first (owner, 5 Oct 2026: the Claude browser runner that did the 4 Oct JSTOR runs, not the ChatGPT one), as a LOCAL-QUEUE.tsv row (kinds
+  academia.edu download or a catalogue lookup goes to the owner's local runner first (owner, 5 Oct 2026: the Claude browser runner that did the 4 Oct JSTOR runs, not the ChatGPT one); 6 Oct 2026: run it in Claude Code (desktop app, local session on the cipher-lab folder), not the Chrome extension, which the owner found much slower, as a LOCAL-QUEUE.tsv row (kinds
   ia-reader, hathitrust, catalogue-lookup ...; tools/local_queue_runner_prompt.md), not to the owner's desk. The owner gets
   it only if the runner fails or the step needs his own judgement (a hand comparison, a decision, a payment, a form in his name).
 - Gmail drafts only after gate 7 (owner, 5 Oct 2026: "don't put the email in my drafts until these checks are done"): an outreach draft goes into the mailbox's Drafts only once its `checked:` line covers the current text; a revised draft is removed from Drafts until re-checked.
