@@ -1,5 +1,9 @@
 # Second opinion request: WVO 53 and 57, William of Orange and Elector August of Saxony, Oct-Nov 1561
 
+<!-- Revised 6 Oct 2026 (verifier R11A-AVSV, AUDIT.md 'Carry-over R11A-AVSV'): counts and three words carried in from the native-scan
+re-reads R11A-AVS53 and R11A-AVS57 (53: itc -> itz, mrch -> mich, S 238 M 126 -> S 358 M 6; 57: seine -> seinee, C 247 M 53 of 300 -> C 294 M 7 of 301).
+The answer on file (chatgpt-2026-09-24-SO-SAXONY-53-57.md, pull request 9) was given to the 24 Sept 2026 text. -->
+
 I am checking whether two sixteenth-century cipher passages have already been deciphered or printed. Please answer
 only with sources you can cite exactly: author, title, volume, year, and page or letter number. If you are unsure a
 source exists, say so. Do not guess.
@@ -10,17 +14,17 @@ Hauptstaatsarchiv Dresden, Geheimer Rat (Geheimes Archiv), Locat 9941/3 "Printze
 Willem van Oranje, letter 53 (https://resources.huygens.knaw.nl/wvo/app/brief?nr=53). The clear letter begins
 "Wiewoll ich E. Churf. G. diesmals nichtz sonders zu schrieben gehebt" and mentions dogs and ferrets sent as gifts. Part
 of it is in a symbol cipher.
-Our partial reading of the cipher, **normalised** (word division, u/uu to v/w, and the emendations "zu bergen", "[mich]"
-are ours; checked 24 Sept 2026, SO-SAXONY-53-57). Sign-level output verbatim (`reading_53.txt`, S 238 M 126 of 364, no key
-source): "neiuuer zeittung hab ich itc malsn icht zuberzuschreiben danCOLdas demprintzenzuhispanien ... und danein
-gemeingeCOLschretCOListes uuolle der hertzoguon uandosmen seinkonigreich nauarramitder guteoderkriguuiederholenmrch |
+Our partial reading of the cipher, **normalised** (word division, u/uu to v/w, and the emendation "zu bergen"
+are ours; checked 24 Sept 2026, SO-SAXONY-53-57). Sign-level output verbatim (`reading_53.txt`, S 358 M 6 of 364 after a re-read
+from the native scan on 6 Oct 2026, no key source): "neiuuer zeittung hab ichCOLitz malsn icht zuberzusc hreiben danCOLdas demprintzenzuhispanien ... und danein
+gemeinge schretCOListes uuolle der hertzoguon uandosmen seinkonigreich nauarramitder guteoderkriguuiederholenmich |
 dunck aber dieuueilderkonnigzufranck reich nochsoiungistesuuerdekeinen furganggeuuinnen".
-Normalised excerpt: "neiuuer zeittung hab ich itcmals [itzmals?] nicht zu bergen zu schreiben, dan das
+Normalised excerpt: "neiuuer zeittung hab ich itzmals nicht zu bergen zu schreiben, dan das
 dem printzen zu hispanien seines hern vatters schwester ehlich vermahlet werden und hieruber diese lande zu regieren
 khomen sollen, und dan ein gemein geschret [geschrey?] ist, es wolle der hertzog von Vandosmen sein konigreich Navarra mit der
 gute oder krieg wiederholen..." (News: the Prince of Spain, Don Carlos, is to marry his father's sister and come to
 govern these lands; the Duke of Vendôme wants to recover Navarre by agreement or war.)
-The passage continues on fol. 266v (our reading): "[mich] dunck aber, dieweil der konnig zu franckreich noch so iung
+The passage continues on fol. 266v (our reading): "mich dunck aber, dieweil der konnig zu franckreich noch so iung
 ist, es werde keinen furgang gewinnen" (but it seems to me that, as the King of France is still so young, it will make
 no progress). Note: N. Japikse, *Correspondentie van Willem den Eerste* I (1934) ends in September 1561 and does not
 print this letter; if you know of a later volume or of printed use of the Japikse copies, cite it.
@@ -32,8 +36,8 @@ Abt. 171 M nr. 319-321, fol. 4 and 40; regest in K. E. Demandt, "Nassau-oranisch
 Hessisches Jahrbuch für Landesgeschichte 38 (1988), p. 78, nr. 113. Record:
 https://resources.huygens.knaw.nl/wvo/app/brief?nr=57.
 Our reading of the cipher, normalised (brackets = sign groups read as abbreviations, e.g. [wir], [E.L.], [Keiser]; `reading_57.txt`,
-C 247 M 53 of 300, key of WVO 74) (excerpt): "auff freundtlich hoch vertrawen wollen wir E.L. nitt bergen, das der Keiser fur
-wenig tagen durch seine stadtliche gesanndten bei uns suchen lasen, seinen sohn König Maximilianum noch bei seinem,
+C 294 M 7 of 301 after a re-read from the native scan on 6 Oct 2026, key of WVO 74) (excerpt): "auff freundtlich hoch vertrawen wollen wir E.L. nitt bergen, das der Keiser fur
+wenig tagen durch seine [the sign string reads "seinee", one stroke uncertain] stadtliche gesanndten bei uns suchen lasen, seinen sohn König Maximilianum noch bei seinem,
 des Keisers, leben zu einem römischen Könige zu erwelen..." (The Emperor's envoys asked August to elect Maximilian
 King of the Romans in the Emperor's lifetime; the other Electors would be asked too; keep it secret.)
 

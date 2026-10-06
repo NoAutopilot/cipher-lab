@@ -861,3 +861,69 @@ Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / 
 - **Dresden Loc. 9941/3 f.266r-v (WVO 53), Orange to August, Breda 24 Oct 1561 (cipher postscr**: **D2** (Partially decrypted; outward "partially deciphered (about 65%)"), 65.4% (S 238 of 364 at the audits (reading_53.txt now S 289, M 75); below 80%, so D2). Check: AD + matched control: homophonic_anneal synthetic control of the same design read 99.3%; no external check (key ours). Sentence: "Orange's cipher postscript reports news that the Prince of Spain is to marry his father's sister and come to govern these lands, and that the Duke of Vendome wants to recover his kingdom of Navarre by fair means or war."
 - **KHA A 11/XIV B/41-6 p3 (WVO 57), August to Orange, Torgau 18 Nov 1561 (cipher enclosure)**: **D3** (Partially decrypted; outward "largely deciphered (about 82%)"), 82.3% (C 247 of 300; D4 withheld: 53 M letter tokens). Check: period key: System A recovered from the contemporary decipherment of sibling WVO 74 (C); text reads through all seven lines. Sentence: "August tells Orange in confidence that the Emperor has recently, through a formal embassy, asked him to elect his son Maximilian King of the Romans in the Emperor's own lifetime, and that the other Electors will be asked the same."
 - **Dresden Locat 8510/5 f.139 (WVO 126), Orange to August, Brussels 16 Sept 1564 (cipher post**: **D3** (Partially decrypted; outward "largely deciphered (about 89%)"), 89.2% (C 214 of 240 at the audits (reading_126.txt now C 234, M 6); D4 withheld: M tokens remain). Check: period key: System B aligned from Orange's 1563 letter WVO 98 and its contemporary decipherment (C); text reads through. Sentence: "Orange tells August that news from Spain says the Queen fell so ill that she was bled twice and purged twice, and lost the child she was carrying."
+
+## Carry-over R11A-AVSV (6 Oct 2026, verifier, account 1, LANE-RUN11-account-1)
+
+Verifier R11A-AVSV (session_01Fnch9NWA9fjZi8vmp6UEnb), 15:13-15:25 UTC by `date -u`; a separate session from every R11A-AVS* worker.
+Rule 10 carry-over (verifier template steps 3a-5) of three solver-side revisions made after the audits above: R11A-AVS57 (57 p3
+re-read from the native scan), R11A-AVS53 (53 p1+p2 re-read from the native scan), R11A-AVSK (homophonic_anneal re-run on the
+native 53; no change). Nothing decoded here; no new material read.
+
+**Re-derived counts.** `python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check`: exit 0, "reading up to date";
+126 tokens 240: C 234, M 6; 57 tokens 301: C 294, M 7; 53 tokens 364: S 358, M 6. `settle_53n.py`, `settle_57n.py`,
+`settle_57.py`, `regrade_53.py`, `regrade_53b.py` `--check` all exit 0. The workers' before figures were reproduced
+independently: 57 rebuilt in a scratch copy from `ciphertext_57_s1.tsv` with the OQ exception at its old position gives
+tokens 300: C 247, M 53 (as R11A-AVS57 states); 53's before figures S 289, M 75 are in the committed reading_53.txt at 7b5682bf3.
+
+**What changed in the text** (diffed, not taken from the workers' notes):
+- 53: L01 'itc' -> 'itz' (barred z; 'itzmals'), L10 'mrch' -> 'mich' (an x, not V; runs on as 'mich dunck aber'); otherwise
+  separators only. The emendation "[mich]" in the SO prompt is now a reading, and "itcmals [itzmals?]" is settled as itzmals.
+- 57: L02 'seine' -> 'seinee' (one extra upright stroke read as e, graded M: possibly the 7's tail); otherwise separators only.
+- 126: unchanged by this round (C 234 M 6 dates from AVS175B, 3 Oct 2026; the AUDIT.md notes above carried it to C 232 M 8 at
+  AVS-SPOT; AVS175B's NW = wir to C is carried here: **C 234, M 6 of 240**).
+- R11A-AVSK: no key, grade or text change; sign 9 stays M (its pre-registered low-count gate L failed 3/6, the matched control has
+  no count-2 sign); G1 = G7 = s confirmed. Recorded, not regraded.
+
+**N-class unchanged for all three items (53 N4, 57 N4, 126 N4; witnesses named as in the Huysman-reply section).** Reason: the
+revisions are grades and three letters of an already-audited reading; no new prior-print evidence, no source family uncovered,
+and the Collectie Japikse copies (53, 126) and the Dresden 'Zettel' (57) are still unseen. The revised words (itzmals, mich,
+seinee) do not change the distinctive phrases the audits searched ('dem printzen zu hispanien', 'konigreich nauarra',
+'Maximilianum ... romischen Konige'); no further phrase search was needed for a class decision. Key source unchanged: 53 `ours`,
+57 and 126 `period`.
+
+**Depth (rule 4a, step 3a), re-set from the current counts.**
+
+| item | cipher tokens H/C/S | M | depth before | depth now | outward |
+|---|---|---|---|---|---|
+| WVO 53 (Dresden Loc. 9941/3 f.266r-v) | S 358 of 364 = 98.4% | 6 letters (2 sign-9 = f by context; 4 stroke-level illegible) | D2 (65.4%, audited S 238) | **D3** | "largely deciphered (about 98%)" -- still a proposed cryptanalytic reading |
+| WVO 57 (KHA A 11/XIV B/41-6 p3) | C 294 of 301 = 97.7% | 7 (4 word signs: wir, Keiser x2, Churfurs; G1h = x; 2 stroke-level) | D3 (82.3%) | **D3** (D4 withheld) | "largely deciphered (about 98%)" |
+| WVO 126 (Dresden Locat 8510/5 f.139) | C 234 of 240 = 97.5% | 6 (Qf = f; Λ l.1 pos 32 = m; K = die x2, a word sign; 1 = i x2) | D3 (89.2%) | **D3** (D4 withheld) | "largely deciphered (about 98%)" |
+
+Why 53 rises to D3: >= 80% H/C/S (98.4%); the gaps are 6 tokens inside words that read through all 13 lines (the same reading
+of "gaps mostly names/codes" that DEPTH-REGRADE applied to 57 at D3 with 53 letter-level M); check = AD + matched control
+(homophonic_anneal synthetic control of the same design 99.3%, S1; re-run on the native transcription by R11A-AVSK, control
+0.992, 4 of 6 target restarts converge on key_53, shuffle null 0/6 for 9 = f). Not D4: no external check, key `ours`. Why 57 and 126
+stay below D4: letter-level M tokens remain (57's G1h and two stroke-level calls; 126's Qf, Λ and 1-as-i), so not every cipher-letter
+token is H/C/S (126's Qf and 1 = i are letters). Depth sentences unchanged (still true of the current readings).
+
+**Corrections (step 4).**
+- Over-stated uncertainty, now stale: the 26 Sept safe sentence for 53 says "about a third of its signs uncertain"; that described
+  S 238 M 126. Current safe sentence for 53: "No prior decipherment located in the principal editions and by phrase search; the
+  twentieth-century copies in the Koninklijk Huisarchief's Collectie Japikse, which a WVO editor names as the likeliest place for
+  one, have not been seen. A proposed reading from a recovered key (cryptanalytic result); 6 of 364 signs remain uncertain after a
+  re-read from the native scan (6 Oct 2026)." Unsafe: dropping the Japikse witness, or calling 53 a text rather than a proposal,
+  or "deciphered" without "largely".
+- The figures "S 238, M 126" (53), "C 247, M 53 of 300" (57) and "C 214, M 26" (126) in the sections above are the audited
+  figures of their date and stay as written; the current figures are those of this section.
+- `second-opinions/PROMPT-chatgpt-53-57.md`: counts and the quoted sign-level output updated (itz, mich, seinee; S 358 M 6;
+  C 294 M 7 of 301), with a dated note that the answer on file (PR 9) was given to the 24 Sept text. The SECOND-OPINIONS-QUEUE.tsv
+  row SO-SAXONY-53-57 quotes no counts or words (status `checked`, outcome text unaffected), so it is left as is.
+- status.json results for 53, 57 and 126: grade/completeness/unresolved/depth fields carried to the figures above.
+- Housekeeping, not a reading issue: `settle_53.py --check` exits 1. It builds 53 p1 only (306 rows, S1, 24 Sept) while
+  `ciphertext_53_s1.tsv` holds p1 + F1's p2 (392 rows); the same mismatch existed before R11A-AVS53 renamed the file (the old
+  `ciphertext_53.tsv` was also 392 rows). The current ciphertext is built and checked by `settle_53n.py` (exit 0), so rule 7 holds
+  for the committed reading; settle_53.py is a superseded S1 builder for p1. One-line follow-up: make settle_53.py append F1's p2
+  rows (or check only the p1 rows).
+
+Postmortem: no over-claim found; the one stale sentence understated certainty, and the workers flagged both revisions in ROOM
+for this carry-over as rule 10 requires.
