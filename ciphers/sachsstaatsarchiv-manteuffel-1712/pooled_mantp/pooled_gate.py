@@ -7,6 +7,7 @@ _0574; --norm0574 also applies ../f463_0574/gloss_norm_0574.tsv (non-gating sens
 R7-MANT529 (6 Oct 2026, PREREG-MANT529 addendum): --add0529 appends leaf 0529 (ff.424v-425) after 0574 (implies --add0574), suffix _0529.
 R8-MANT530 (6 Oct 2026, PREREG-MANT530 addendum): --add0530 appends leaf 0530 (ff.425v-426) after 0529 (implies --add0529), suffix _0530.
 R10-MANT526 (6 Oct 2026, PREREG-MANT526 addendum): --add0526 appends leaf 0526 (f.422) after 0530 (implies --add0530), suffix _0526.
+R10-MANT521 (6 Oct 2026, ../f0521/PREREG-MANT521.md addendum): --add0521 appends leaf 0521 after 0526 (implies --add0526), suffix _0521.
 R10-MANTSCR (6 Oct 2026, ../r10mantscr/PREREG-R10-MANTSCR.md): --sp applies spelling rule SP1-SP6 after MANT5 to every gloss, suffix +sp."""
 import csv, os, re, random, sys, unicodedata
 from collections import defaultdict
@@ -17,14 +18,16 @@ LEAVES = [('0502', 'f0500_0502/pairs_0502.tsv', 'f0500_0502/reconciled_mant4.tsv
           ('0528', 'f423_0528/pairs.tsv', 'f423_0528/reconciled.tsv')]
 PRIOR_CLEARED = {'0502', '0528'}
 SUF = ''
-if '--add0574' in sys.argv or '--add0529' in sys.argv or '--add0530' in sys.argv or '--add0526' in sys.argv:
+if '--add0574' in sys.argv or '--add0529' in sys.argv or '--add0530' in sys.argv or '--add0526' in sys.argv or '--add0521' in sys.argv:
     LEAVES.append(('0574', 'f463_0574/pairs.tsv', 'f463_0574/reconciled.tsv')); SUF = '_0574'
-if '--add0529' in sys.argv or '--add0530' in sys.argv or '--add0526' in sys.argv:
+if '--add0529' in sys.argv or '--add0530' in sys.argv or '--add0526' in sys.argv or '--add0521' in sys.argv:
     LEAVES.append(('0529', 'f424v_0529/pairs.tsv', 'f424v_0529/reconciled.tsv')); SUF = '_0529'
-if '--add0530' in sys.argv or '--add0526' in sys.argv:
+if '--add0530' in sys.argv or '--add0526' in sys.argv or '--add0521' in sys.argv:
     LEAVES.append(('0530', 'f425v_0530/pairs.tsv', 'f425v_0530/reconciled.tsv')); SUF = '_0530'
-if '--add0526' in sys.argv:
+if '--add0526' in sys.argv or '--add0521' in sys.argv:
     LEAVES.append(('0526', 'f422_0526/pairs.tsv', 'f422_0526/reconciled.tsv')); SUF = '_0526'
+if '--add0521' in sys.argv:
+    LEAVES.append(('0521', 'f0521/pairs.tsv', 'f0521/reconciled.tsv')); SUF = '_0521'
 DRAWS, SEED = 1000, 7101
 NORM = {r['token']: r['expansion'] for r in csv.DictReader(open(os.path.join(T, 'f0500_0502/gloss_norm.tsv')), delimiter='\t')}
 if '--norm0574' in sys.argv:
