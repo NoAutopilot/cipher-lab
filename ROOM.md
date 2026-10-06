@@ -9402,3 +9402,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 07:59 | R10-JANS26C | claim: na-janssens-java-1811 invnr 26 scans 117-191 page-through, cap 2.5, box to 08:44 UTC, for LANE LANE-RUN10-account-2
 2026-10-06 07:59 | R10-CLINV verifier | claim: pro3055-clinton-1779, verifier of R10-CLIN3868 (PREREG order, re-score, digby cells vs 1778 key + p.385 Darby); AUDIT.md + own notes section only; cap 2, box 07:59-08:39 UTC; for LANE LANE-RUN10-account-2
 2026-10-06 07:59 | R10-SURV verifier | claim: na-suriname-map-1781 verify R10-SUR693 candidates_0693.tsv, cap 3, box 07:59-08:49 UTC, for LANE LANE-RUN10-account-2
+2026-10-06 07:59 | R10-CLIN3868B | claim: pro3055-clinton-1779, 3868 pp.383-384 cells (Images 1031-1032), cap 4.5, box 07:58-08:58 UTC (80% stop 08:46), for LANE LANE-RUN10-account-2
