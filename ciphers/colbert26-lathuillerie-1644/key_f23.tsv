@@ -11,7 +11,7 @@ code	value	grade	source	note
 20	i	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=9 agree=3 others=u:2,n:1,o:1,r:1,t:1
 21	e	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=uil:1
 22	m	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=6 agree=4 others=o:2
-23	n	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=18 agree=7 others=a:1,b:1,e:1,f:1,g:1,i:1,iance:1,intendance:1,j:1,o:1,uon:1
+23	n	C	R9-COL26 per-code control (siblings/percode_control.py)	was n(M) from f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), n=18 agree=7; R9-COL26 anchor-span H 16/23 vs control B p95 13, P 0.0008 (Bonferroni 0.01), held-out c62+c63 3/4
 24	n	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=2 others=o:1
 25	p	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=3 others=s:1
 26	aines	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=lareyne:1

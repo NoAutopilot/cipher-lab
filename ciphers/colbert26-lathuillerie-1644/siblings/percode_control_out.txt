@@ -1,0 +1,55 @@
+lines 234  units ['c32', 'c33', 'c3536', 'c3940', 'c47', 'c48', 'c49', 'c50', 'c54', 'c55', 'c56', 'c62', 'c63', 'f23']
+interior spans 207  eligible 78  per unit {'f23': 1, 'c32': 3, 'c33': 4, 'c3536': 2, 'c3940': 7, 'c47': 8, 'c48': 4, 'c49': 4, 'c50': 18, 'c54': 3, 'c55': 7, 'c56': 6, 'c62': 6, 'c63': 5}  spans in a length class of one 3
+
+Part A: per-code anchor-span control (control B, 5000 draws)
+code	value	spans_with_code	H_real	units	ctrl_mean	p95	max	P	held_out_H	held_out_spans	gate
+21	t	11	6	6	3.41	5	7	0.0294	0	0	FAIL
+20	i	6	5	4	1.95	3	5	0.0010	0	0	HELD-OUT-UNTESTABLE
+23	n	23	16	9	10.01	13	16	0.0008	3	4	PASS
+83	s	3	3	3	0.89	2	3	0.0108	0	0	FAIL
+
+per-unit breakdown (code unit spans_with_code real ctrl_mean ctrl_p95)
+21	c3536	1	1	0.47	1
+21	c3940	2	1	0.92	2
+21	c47	3	1	0.24	1
+21	c48	1	1	0.45	1
+21	c50	3	1	1.25	2
+21	c55	1	1	0.07	1
+20	c3940	1	1	0.60	1
+20	c47	2	2	0.95	2
+20	c49	1	0	0.00	0
+20	c54	1	1	0.20	1
+20	c55	1	1	0.20	1
+23	c33	2	1	1.08	2
+23	c3940	3	1	1.43	3
+23	c47	4	4	1.97	4
+23	c48	2	1	0.39	1
+23	c49	1	1	0.34	1
+23	c50	4	4	1.49	3
+23	c55	2	1	0.93	2
+23	c56	1	0	0.07	1
+23	c62	2	2	1.15	2  held-out
+23	c63	2	1	1.16	2  held-out
+83	c32	1	1	0.50	1
+83	c50	1	1	0.32	1
+83	c56	1	1	0.07	1
+
+Part B: code 12 = c, ordered walk vs length-matched f23-window control (5000 draws), 13 units off f.23
+code	value	occurrences	W_real	ctrl_mean	p95	max	P	gate
+12	c	58	36	23.02	29	35	0.0000	PASS
+per-unit breakdown (unit occurrences real ctrl_mean ctrl_p95)
+12	c32	7	5	3.07	5
+12	c33	4	1	2.08	4
+12	c3536	5	2	1.51	3
+12	c3940	5	3	1.40	3
+12	c47	4	3	0.85	2
+12	c48	4	2	1.10	2
+12	c49	5	3	1.70	4
+12	c50	10	7	5.12	8
+12	c54	3	2	1.57	3
+12	c55	4	2	1.82	3
+12	c56	1	1	0.29	1
+12	c62	4	4	1.76	3
+12	c63	2	1	0.76	2
+
+verdicts: 21=FAIL 20=HELD-OUT-UNTESTABLE 23=PASS 83=FAIL 12=PASS
