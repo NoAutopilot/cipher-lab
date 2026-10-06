@@ -190,3 +190,26 @@ Patria for "Caraffa" 1691 and "Coysis/Coisis/Coissy". (c) sp90-raby-whitworth-17
 Wave 3 sessions (04:18 UTC): R8-MANT session_0171LACT55Rv74BBCkKP8Yjj (Opus, cap 7); R8-THUR25 session_0146p9rCB43frsz3Mt4BWpDX (Opus, cap 5);
 R8-SIENA19 session_018zvN7KcRaJC9NptR2REy4K (Opus, cap 3); R8-SPS1 session_017kugvC8MJ3iBM7FEM4dkDt (Sonnet, cap 2.5); R8-SPS2
 session_01VByht8Dn85zZJE2kVx3KMM (Sonnet, cap 2.5). Caps 20.
+
+Wave 3 at 04:37 UTC: MANT 3.05 (step 1 only; correctly stopped before 0530), THUR25 3.61, SIENA19 1.76, SPS1 1.31 done; SPS2 running.
+Lane at 04:37: workers ~35.2 + orchestrator 5.2 = ~40.4 of 60.
+
+## Wave 4 (written 04:3x UTC 6 Oct). Intake gate output (04:37 UTC) pasted per job.
+
+### R8-MANT530 -- sachsstaatsarchiv-manteuffel-1712, transcribe frame 0530 (Opus; cap 8, box 90 min; 2 pages x 2 Sonnet passes + 1 reconciliation = 5 units at ~1.5)
+Intake gate: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (NOTES.md line ~1132, after R8-MANT): transcribe frame 0530 (ff.425v-426, same letter as 0529): folio check first, line
+crops (paste command), 2 blind Sonnet passes one page per call, reconciliation (one unit), then the per-leaf gate and pooled_mantp/pooled_gate.py
+with the leaf added (pre-registered rule already on disk; rule 3: a code enters key.tsv only from a unit that cleared its own gate). decode --check
+exit 0 before push; a reading change after AUDIT.md (N4 AUDIT2-MANT) -> flag a verifier in ROOM. Stop before a unit that would cross 80% of cap
+or box. Update Remaining gaps / Escalation; gaps_check.py passes.
+
+### R8-THURV2 -- thurloe-printed, verifier propagation of R8-THUR25 (Opus; cap 3, box 50 min; no vision)
+Intake gate: `thurloe-printed: partial (line 2) -- edition/page or full-text-search citation found within 6 lines`.
+You are a VERIFIER, separate from the solver (R8-THUR25). R8-THUR25 (6 Oct 04:20-04:28, commit aedddf34f; ROOM flag 04:28) re-paired P25-P28 from
+page images: C 177/M 63 of 240 (OCR) -> C 366/M 2 of 368; 103 old C contradicted; old align/key files superseded by tx/img_pairs_*,
+tx/key_*_img.tsv; code 1007 conflict logged. (1) Re-run its scripts and confirm the counts; spot-check 10 random pairs against the crops in
+images/r8thur25/ (read them yourself). (2) Carry the revision into AUDIT.md ("## Revision after AUDIT (R8-THURV2, 6 Oct 2026; rule 10
+propagation)"), class per item unchanged unless your check finds otherwise (say why); recount per-token grades and depth (rule 4a;
+tools/depth_check.py) for P25-P28 and update status.json depth fields and index.tsv C/M columns only where numbers moved; update any
+SECOND-OPINIONS-QUEUE.tsv row for P25-P28. Do not decode anything new.
