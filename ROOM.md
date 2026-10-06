@@ -9843,3 +9843,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 15:15 | R11A-HEIN2 worker | claim heinsius-vanhaersolte-1703 Next step 3 (Huygens retroboeken toc1 sweep of Van Haersolte letters), cap 3, box end 16:02 UTC, for LANE LANE-RUN11-account-1
 2026-10-06 15:17 | R14-ROYCRIB | claim for LANE LANE-RUN14-account-2: intercepted-royalist-1646 crib loop of unglossed Evelyn figures over f.10; cap 3, box end 16:17 UTC
 2026-10-06 15:17 | R14-KAL11 worker | claim kaliningrad-2015: wordcode family_run at restarts 6, seeds 1-5, cap 2.5, box end 16:07 UTC, for LANE LANE-RUN14-account-2
+2026-10-06 15:17 | R14-LVN10C worker | claim for LANE LANE-RUN14-account-2: lodewijk-van-nassau-1573-74 -- key.tsv reading regen + 4610 p3 per-token crops, two blind reads; cap 7, box to 16:48 UTC (80% 16:30)
