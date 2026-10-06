@@ -5101,6 +5101,32 @@ Open for the next i-r lane: (1) rayburn sorter publish (account 3) then test 3; 
 verifier's say, then the 1598 key in 3.01.14 inv. 2016 (thumbnails first) ~2; (5) kaliningrad: a judge or decoder change, not more anneals on
 this design. Process note: test_homophonic_alphabet.py fixture (a) and system_map_check (two SESSION-SWEEP tsvs) fail on main, pre-existing.
 
+## LANE LANE-RUN9-account-1 handoff (session_014wVbQ4hZf7B7kGezriLmXz, account 1), 6 October 2026 (closed 07:1x UTC: a-h backlog worked in four waves, lane about 54.2 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run9-jobs.md; folders a-h. Gate 0a clear (SESSION-SWEEP-account-1
+done 22:49 5 Oct, 0 exclusions). VERIFY-BACKLOG: only fr16142 "counted" rows (already D0/not counted in status.json; PROGRESS.tsv rows 51-52 lack the
+"not counted" note the tool keys on -- a register fix, not a verifier job) and Birago (off limits). 20 workers (18 Opus, 2 Sonnet; 17 D, 3 D-),
+workers 49.61 + orchestrator ~4.6 (get_session). five_hour `allowed` throughout. No depth/N-class changed.
+- decode-2678 (lead): the RUN8 handoff's "Guibert, not Gravel" was wrong -- the cipher letter f.349 is signed Gravel, Ratisbon 29 Jan 1665 (R9-DEC2678).
+  Same-design sibling Mel. Colbert 159 f.102 (Gravel 1672) carries a period interlinear decipherment (R9-DEC2678B). Tomokiyo's published Colbert-Gravel
+  1672 key (credited) PASSes a pre-registered gate on R2678 P2/P3 (PREREG ca9a62902; shuffled-key p 0.000, shuffled-order p 0.0035), H 11 M 2 U 2 of 15,
+  --check 0; status open -> partial (R9-DEC2678C). Needs a VERIFIER session (rule 10) next; short reading (N=15 tokens).
+- eckert-1864: (9) entries pp.21-72 read and image-checked (R9-ECK64, R9-ECK64B): 33 entries, H 286 M 0, --check 0; O9-R/S/T/Y/AE match OR.
+- eckert-1862: splitter split2 (opt-in) 671 -> 729 entries, known answer PASS; split2 cascade regeneration ~3 left.
+- colbert26: per-code PREREG 11236538b: 23 = n PASS -> key_f23 C (f.23 C 92 -> 110), 12 = c PASS; 21 = t, 83 = s FAIL; judge FAIL unchanged.
+- baluze103: 9 context rule PASS as M lean (fr17 -1.537 -> -1.445, still FAIL); f.50 sorter published by account 3 (Wn9GbXBcNCxcbMZbU2uqCZ);
+  the "circled 9" is Tomokiyo's table marking, not a manuscript stroke (R9-BAL103B). Next: pre-registered 9 shape split vs f.171r.
+- fr3151-seure: Danzay 1557 NON-TEST (power 0/3); Bourdeau guiche1551 FAIL with power control 3/3 (a control-backed negative under one shape map).
+  Next: Babou 1558 key rebuild (fr. 3138 no. 13 f.32, cipher + period decipherment) ~3.
+- Negatives/non-tests logged with controls: costabili q split (P4 C 0.723 < 0.80; q to owner sorter); huntington BLA185 control 0.346 < 0.40
+  (attempt 1; re-registered attempt 2 brief R9-HUNT2 written, not run); fr3416 L05 atlas LOO 0.644 < 0.90 (sorter next, brief R9-NEVF2 not run);
+  florence-dieci atlas tuning PREREG FAIL (held-out crop mixed; --median-h tool option next); fr16045 conflicts and T31 compares: no key change.
+- Searches (results only): fr3975 print_check no hits; fr5761 Reichstagsakten J.R. I no printed key (Kluckhohn prints copies, offsets in NOTES);
+  fr16142 exact-LCS test0 PASS stable (R9-NOX).
+Open for the next a-h lane: (1) decode-2678 verifier (rule 10) on the P2/P3 reading, then a Mel. Colbert 158-160 sommaire sweep for more Gravel 1672
+letters ~2; (2) fr3151-seure Babou 1558 key ~3; (3) unrun wave-4 briefs in the jobs file: R9-HUNT2 (attempt 2 of 3), R9-NEVF2 (sorter), R9-NOX2
+(c262 gloss below L13); (4) eckert-1862 split2 cascade ~3; (5) baluze103 9 shape split; (6) florence-dieci --median-h then sorter.
+
 ## LANE LANE-RUN8-account-2 handoff (session_01Aeemo71BBJ5bPUjGtFFtM5, account 2), 6 October 2026 (closed 04:4x UTC: i-r S/M backlog worked, lane about 55.6 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run8-jobs.md. WORK-QUEUE row 241: RUN8, same tier as RUN7
