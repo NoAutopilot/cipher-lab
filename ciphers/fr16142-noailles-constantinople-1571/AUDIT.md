@@ -179,3 +179,26 @@ D0/D1", no flag:
 unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0
 ```
 PROGRESS.tsv rows 51-52: column `2` = x; `C` stays `.` (N0, D0). No SECOND-OPINIONS-QUEUE.tsv row (N0).
+
+## Revision after AUDIT (R7B-NOXV, 6 Oct 2026)
+Verifier propagation of R7A-NOX262 (NOTES.md "R7A-NOX262", 6 Oct 2026; gloss.tsv L09 trouve -> treuve, L13 quil -> quon, read on native
+crops images/c262gx_L09..L13.jpg). Checked by this verifier session (not R7A-NOX262's), 02:07-02:09 UTC by date -u, disk only, requests 0:
+- `python3 sorter/owner-sort-2026-10-04/aln/noxread.py check` exits 0 ("noxread_summary.json up to date") on the committed gloss.tsv;
+  the summary reads R 0.3506 (unchanged), (a) p99 0.2413, (b) p99 0.2525 (was 0.2496), (c) max 0.2665, (d) p99/max 0.2546/0.2721 (was
+  0.2581/0.2749), verdict PASS. Every number R7A-NOX262 reported for this run matches.
+- test0 pass B swing re-derived independently from witness/c262_passB.tsv (pass B decode, '#' as e2, test0's own norm/decode): difflib
+  `SequenceMatcher(autojunk=False).ratio()` 0.3250 on the pre-R7A gloss, 0.5522 on the current one; exact 2*LCS/(|dec|+|gloss|) 0.5575 on
+  both (428 vs 329 letters). The swing is the greedy matcher re-anchoring, not a better decode; R7A-NOX262's reading of it is confirmed.
+  Consequence for this audit: Audit 2's depth check cites RUN6-NOXREAD (not test0) and Tomokiyo's key "used as a check only", so no
+  classification rested on a single test0 R; any later sentence quoting pass B's 0.55 as decode quality is unsafe.
+- Propagated: status.json c262 row `line` (null figures) and `depth_check` (nulls, the difflib caveat, this verifier). No
+  SECOND-OPINIONS-QUEUE.tsv row exists for this target (grep count 0; N0 files none), so nothing to carry there.
+- N-class and depth unchanged: A c262 **N0**, **D0**; B c510-516 N0, D0 (untouched by the gloss change). The revision moves only null
+  thresholds by <= 0.004 with R and every verdict unchanged, reads no word, and does not touch the prior-decipherment evidence (leaf gloss,
+  Dupuy 521, Charrière III p.258, Tomokiyo's key). Safe sentence A stands as written ("R 0.35 vs 0.27" remains true: d max 0.2721).
+
+`python3 tools/depth_check.py` after the status.json edit (6 Oct 2026, 02:09 UTC), exit 0; the c262 row stays D0/N0 under "not counted
+D0/D1", no flag:
+```
+unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0
+```

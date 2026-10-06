@@ -3824,8 +3824,8 @@
       "document_id": "BnF fr.16142 c262 (Gallica btv1b9060927q): Noailles, bishop of Acqs, to Charles IX, Constantinople, 25 Apr 1572",
       "title": "Noailles to Charles IX, 25 Apr 1572 (BnF fr.16142 c262): a key learned from a clear copy scored against the leaf's period decipherment",
       "grade": "N0 (two audits), D0. Key published (S. Tomokiyo, credited); the basin key (ours, learned against Dupuy 521) reads no word. Text known: period margin decipherment on the leaf, Dupuy 521 36L-36R, Charriere, Negociations dans le Levant III (1853) p.258. 384 reader signs, all M.",
-      "line": "No reading (D0). A key learned from the Dupuy 521 clear copy of a later letter scores above four shuffled controls against this leaf's own period decipherment (R 0.3506 vs p99 0.2413/0.2496, max 0.2665/0.2749, on the leaf-corrected gloss) but reads no words; the text was already printed by Charriere in 1853 and the key reconstructed by S. Tomokiyo from this volume.",
-      "depth_check": "RUN6-NOXREAD R 0.3506 vs p99 0.2413/0.2496, max 0.2665, non-locking p99/max 0.2581/0.2749 (DEF1-NOXG corrected gloss); NOXALIGN S 2 of 41 vs null max 1 (very thin); all 384 signs M; judge FAIL -2.045 on the basin decode; VER1-NOX + D2-NOXA2 5 Oct 2026"
+      "line": "No reading (D0). A key learned from the Dupuy 521 clear copy of a later letter scores above four shuffled controls against this leaf's own period decipherment (R 0.3506 vs p99 0.2413/0.2525, max 0.2665/0.2721, on the leaf-corrected gloss) but reads no words; the text was already printed by Charriere in 1853 and the key reconstructed by S. Tomokiyo from this volume.",
+      "depth_check": "RUN6-NOXREAD R 0.3506 vs p99 0.2413/0.2525, max 0.2665, non-locking p99/max 0.2546/0.2721 (gloss L01-L13 leaf-corrected, DEF1-NOXG + R7A-NOX262); NOXALIGN S 2 of 41 vs null max 1 (very thin); test0 difflib ratio swings 0.23 on a two-letter gloss change (exact LCS stable), single test0 R not a decode-quality ranking; all 384 signs M; judge FAIL -2.045 on the basin decode; VER1-NOX + D2-NOXA2 5 Oct 2026, R7B-NOXV 6 Oct 2026"
     },
     {
       "date": "5 Oct 2026",
