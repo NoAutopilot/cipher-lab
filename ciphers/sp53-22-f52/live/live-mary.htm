@@ -1,0 +1,1270 @@
+<HTML>
+<HEAD>
+<TITLE>Ciphers of Mary, Queen of Scots
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Mary, Queen of Scots, Mary Stuart">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Ciphers of Mary, Queen of Scots</H1>
+<P>The present article lists ciphers and ciphertexts related to Mary, Queen of Scots.</P>
+<P>Mary's cipher used in her fatal correspondence with Anthony Babington is well-known <span class="note">(see below)</span>. But apart from the Babington Cipher, not much attention has been paid to the variety of ciphers related to Mary. The authority in cryptography, David Kahn (1967), <i>The Codebreakers</i>, merely cites a nineteenth century publication: Schooling "Secrets in Cipher", <i>Pall Mall Magazine</i>, VIII (1896), p.119-129, No.9 (<A HREF="https://books.google.co.jp/books?id=ucohAQAAIAAJ&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q=mary&f=false">Google</A>) when it comes to specific ciphers other than Babington's. Those ciphers in Schooling (1896) are all taken from SP53/22 or SP53/23 in The National Archives (TNA) (see below). The present article is an attempt to update this situation.</P>
+<P><font size="2">(The following may include what I learned when coauthoring a paper: George Lasry, Norbert Biermann, Satoshi Tomokiyo (2023), "Deciphering Mary Stuart’s Lost Letters from 1578-1584", <A HREF="https://www.tandfonline.com/doi/full/10.1080/01611194.2022.2160677">Cryptologia</A>.)</font></P>
+
+<H2>The Cipher Used in the Babington Plot</H2>
+<P>It is well-known that Mary's cipher letter, intercepted and deciphered by the English, doomed her to death (<A HREF="https://en.wikipedia.org/wiki/Babington_Plot">the Babington Plot</A>).</P>
+
+<H3>Babington Plot</H3>
+<P>Mary had been captive in England for many years since 1568. In 1585, when Sir Amias Paulet, her new jailor, put a stricter watch, Mary lost her secret communication channels. Early in 1586, she found a new means for smuggling letters by the help of a Catholic priest, Gilbert Gifford. However, this was a trap set by Walsingham, Queen Elizabeth's spymaster. Every letter passing the hand of Gifford was deciphered by Thomas Phelippes and passed on to Walsingham.</P>
+<P>In July, Mary received a letter from Anthony Babington about a plot to rescue her, to which she replied on 17 July. This was what Walsingham had been looking for for years. The letter included a fatal passage "the dispatch of the usurping competitor", and her reply was taken to be evidence that Mary endorsed a plan to assassinate Queen Elizabeth. Mary was found guilty in the trial and was beheaded in 1587.</P>
+
+<H3>Forged Postscript</H3>
+<P>After deciphering the letter in question, Phelippes added a postscript in the same cipher, and let the letter be delivered to Babington as if there had been no interception. In the postscript, Mary was made to ask the names of the six conspirators, but it was never answered. Naturally, the forged postscript was not brought against Mary in her trial.</P>
+<P>The postscript was mentioned in William Camden's Annales published during James I's reign. The 19th century historian Patrick Fraser Tytler found its draft by Phelippes in the archives (SP53/18/55) <span class="note">(Lasry et al. (2023) n.33)</span>. The famous text is printed in numerous publications (e.g., Richards (1974) no.24).</P>
+<img src="mary_Babington1.png" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<img src="mary_Babington2.jpg" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>Babington Cipher</H3>
+<P>The key used in the correspondence with Babington is preserved in SP12/193/54. The cipher is annotated "Cifar with Anthony Babington" and accompanied by signed confessions:</P>
+<DIV class="kakomi">
+"This was the alphabet with Babington<br>
+Gilbert Curll"<br>
+"This last is the alphabet, by w^ch only I have written<br>
+vnto the Queene of Scots or receaved letters from her<br>
+Anthonie Babington"<br>
+(At the bottom) "Acknowledged & subscribed by Babington<br>
+primo Sept: 1586 in y^e presence of Edwarde Barker"<br>
+</DIV>
+<P>The cipher is a very simple one. Every letter of the alphabet is assigned one symbol (monoaphabetic substitution). Five nulls are defined. There is a symbol to double a preceding letter. 49 symbols are arranged, of which 35 are assigned to common words (with the remaining 14 undefined).</P>
+<P>The simplicity of this famous cipher is often quoted as evidence of low level of ciphers used by Mary. But it should be pointed out Mary used more than a hundred ciphers at various times and with various correspondents, and this Babington cipher is merely one of the simplest among them.</P>
+
+<H3>Two Other Ciphers on the Same Sheet</H3>
+<P>The same sheet contains two more ciphers.</P>
+<P>The first is "Alphabet with the Lady Fernihurst" <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Janet_Scott,_Lady_Ferniehirst">Wikipedia</A>)</span>, accompanied by Curll's confession  "I think this be the alphabet with the Lady of fairnyhurst / Gilbert Curll." I wonder the meaning of the marginal note "the watche wordes / Dilligently or faithfully."</P>
+<P>The second cipher on the same sheet is annotated "Alphabet with D. Lewes", "This alphabet I think be with doctor Lewes / Gilbert Curll". (This cipher is used in letter no.18 of Richards (1974) <span class="note">(see below)</span>.)</P>
+<!--
+<P>Already done by Lemon and printed in Tytler.</P>
+-->
+
+<H2>A Polyalphabetic Cipher of Mary, Queen of Scots</H2>
+<P>Mary's letter in a polyalphabetic cipher was auctioned in Berlin in 2012 (<A HREF="https://www.yumpu.com/de/document/read/4325097/202-orangerie-ausgewahlte-objekte-villa-grisebach">Villa Grisebach, Auction No. 202</A>, item 211<sup>R</sup>). (I thank Oliver Storz for this information.) The signature in clear "Votre bien bonne amye Marie R" appears to be Mary's autograph.</P>
+<P>According to the catalogue, the letter, dated 16 September 1568, is addressed to Gusman di Selua (Guzman de Silva), Spanish ambassador in England, and received and endorsed by the new ambassador, Don Guerao de Spes (Guerau de Spes), 22 September 1568<!--Auf dem Adressblatt der Empfangsvermerk des neuen spanischen Botschafters, Don Guerao de Spes, 22.9.1568. -->. It was deciphered in the French foreign ministry under Robert Schuman (d.1963).</P>
+<!--Dabei verwendet sie eine Geheimschrift, die heutige Betrachter an agyptische Hieroglyphen oder die Sonderzeichen auf einer Computer-Tastatur erinnern.
+In jungerer Zeit dechiffriert wurde das Schreiben durch einen in geheimdienstlichen Angelegenheiten versierten Beamten des franzosichen Aussenministeriums - der Auftrag dazu erging durch Robert Schuman, den Aussenminister, Ministerprasidenten und ersten Prasidenten des von ihm massgeblich mitbegrundeten Europaischen Parlamentes in Strassburg, aus dessen Besitz dieses einmalige Dokument stammt. -->
+
+<!--
+monsieur lambassadeur a ce que je puis con*noistre et voir que pour sortir dicy je suis contraincte de consentir aux trois poincts dont je vous ay escript cydavant ce que beaucoup** de ce pais qui tiennent la part et mesmes tous ceux de la vieille religion ne me conseil*ent de ce faire et cestoient offers a moy pour soustenir et garder le droict qui ma partient en ce pai et aussi quils esperoitent le secours de france et espaigne* pour les soustenir et remectre en la religion catholi*que laquelle je proteste a dieu tenir et garder et ne* voyant nulle apparence je suis contraincte dobvier a ce qui est* chose bien ame**e et contre ma volonte et de tous ceux qui tiennent
+ma part lesquels pensoient que je leur leusse e**oyee de dieu pour les mainctenir et remectre ladicte religion et me voyant reffusee du roy de france je ne puis plus que penser pour le moigns lon ne dira que ce soict la faulte car je le faict 
+entendre assez amplement au roy de france et de vous je vous pryray den avertir le roy vostre maistre et le duc dalbe je vous prie tenir cecy secret
+-->
+
+<P>Mary had fled to England in May 1568 and was held in Bolton Caslte from July 1568 to January 1569 <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Bolton_Castle">Wikipedia</A>)</span>. This letter was written in this initial stage of her captivity in England, which was to last for nineteen years until her execution in 1587.</P>
+<P>Silva is known to have sent Mary a cipher in 1566, but De Spes, who arrived in London on 3 September 1568 <span class="note">(<A HREF="https://es.wikipedia.org/wiki/Guerau_de_Esp%C3%A9s">Wikipedia in Spanish</A>)</span> to succeed Silva, could not find it (see <A HREF="spanish3.htm">another article</A>). The cipehr used in the present letter may be the one Silva sent in 1566 <span class="note">(No letter from Mary to Silva or De Spes, either in clear or in cipher, is recorded in Labanoff ii.)</span>.</P>
+<P>This cipher can be tentatively reconstructed as follows.</P>
+<img src="mary_Silva.jpg" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>This cipher is polyalphabetic, unlike many other ciphers used by Mary. It repeats three substitution alphabets periodically (polyalphabetic) and each alphabet appears to have more than one symbol for each letter (homophonic). The above assignment marks the same symbols being used for more than one letter in each alphabet (polyphonic), but I suspect these may be errors (enciphering errors, my reconstruction errors, or simply similar glyphs hard to distinguish), though there is one known Spanish polyphonic cipher from about this time with the Bishop of Ross (Cp.24 designated by Devos).</P>
+<P>The letter is accompanied with a key different from the above. The following is my transcription.</P>
+<img src="mary_Silva2.jpg" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>This appears to be polyalphabetic (each column represents a separate substitution alphabet) and polyphonic (two letters on the left are enciphered into the same symbol).</P>
+<P>It will be interesting to look for other specimens of Mary's letters in polyalphabetic and/or polyphonic cipher.</P>
+
+<H2>Ciphers in Papers of Earl of Morray</H2>
+<P>According to <i>Sixth Report of the Historical Manuscripts Commissions</i> (1877) (<A HREF="https://archive.org/details/reportofroyalcom06grea/page/638/mode/2up">Internet Archive</A>), p.634　ff., Papers of the Earl of Moray, then preserved in the Charter Room at Donybristle [Donibristle], includes letters from Mary and documents relating to her (1568-1584). James Stewart, Earl of Moray, was Mary's half-brother and regent of Scotland from 1567 (when Mary was forced to abdicate) until his assassination in 1570.</P>
+<P>The collection includes a cipher "partly composed of Arabic numerals" and entitled "The Queens Sipher."</P>
+<P>Another, entitled "The Queins Cipher" is transcribed:</P>
+<img src="mary_Moray1.png" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<P>A pigpen cipher is also included in the collection.</P>
+<img src="mary_Moray2.png" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+
+<H2>Cipher Letters Related to Mary in The British Library</H2>
+<H3>Add MS 33531</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?index=13&ref=Add_MS_33531">BL</A></P>
+<H4>Mary-Hamilton Cipher (1569) (Mary to John Hamilton, Archbishop of St. Andrews, Bolton, 18 January 1569, f.73r-74v)</H4>
+<P>The cipher can be reconstructed as follows. A symbol like 4 is used to represent "th" or "y". It may have been a symbol for a thorn. (There are some ciphers in which the alphabet has TH or a thorn after Z (SP53/22 no.14 and possibly also SP53/23 no.35, no.36).)</P>
+<img src="mary_hamilton.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<!--★Labanoff ii p.281付近になし p.245に同じトピック"agreit that my sonne sould be delyverit in her handes to be norishit in this country"
+"it hes bein proposit to me to consent that my sone sould be delyverit in * handis ..."
+Some symbols are left undeciphered.
+SP53/22, SP53/23になし-->
+
+<H4>Throckmorton-Moray Cipher (1569) (Sir Nicholas Throckmorton to the Regent, Greenwich, 20 July 1569, f.79r-80v)</H4>
+<P>Throckmorton befriended Mary during his embassy in France <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Nicholas_Throckmorton">Wikipedia</A>)</span>.</P>
+<P>In 1567, Throckmorton was sent to Scotland to help Mary held captive at Lochleven by the Scottish lords. Although his mission failed, he was thanked by Mary for the good feeling shown to her. <span class="note">(<A HREF="https://www.historyofparliamentonline.org/volume/1558-1603/member/throckmorton-sir-nicholas-151516-71">The History of Parliament</A>; Add MS 88966 (<A HREF="https://www.bl.uk/manuscripts/Viewer.aspx?ref=add_ms_88966_f001r">BL</A>), Elizabeth to Throckmorton, 27 July 1567, ordering "to continue in his efforts to see her and to secure her freedom by persuasion or force")</span>.</P>
+<P>The cipher can be reconstructed as follows. (I don't know why Throckmorton had a cipher with the Regent Moray.)</P>
+<img src="mary_throckmorton_moray.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H4>Chisholm-Grange Cipher (1571) (John Chisholm to Laird of Grange, f.99, f.103)</H4>
+<P>A letter from John Chisholm <span class="note">(<A HREF="https://en.wikipedia.org/wiki/John_Chisholm_(soldier)">Wikipedia</A>)</span> to the Laird of Grange <span class="note">(<A HREF="https://en.wikipedia.org/wiki/William_Kirkcaldy_of_Grange">Wikipedia</A>)</span>, captain of the castle of Edinburgh, 7 February 1571 uses the following cipher. Part of the cipher symbols are alphabetical letters in reverse order. Another letter of Chisholme (f.103) from 24 February 1571 <span class="note">(MS has "1570", which I believe is "1571" in modern calendar; catalogue also says "1571")</span>  also uses the same cipher.<!--f.103 "xxiiii day of februar? 1570"[カタログでは1571] from John Chisholm--></P>
+<img src="mary_chisholm_grange.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>In another letter (f.105), I could spot only a few code symbols, which seem to be different from the above.</P>
+
+<H4>Mary-Grange Cipher (1571) (Mary? to Grange, f.101)</H4>
+<P>This is catalogued together with the three letters above as "Four letters, partly in cipher, from John Chisholme to the Laird of Grange, 6 and 24 February 1571 and no date, London." But the handwriting of the ciphertext looks very similar to that of Mary's letters we deciphered <span class="note">(Lasry et al. (2023))</span>. Moreover, the first person in the expression "my restitution" revealed by deciphering seems to support the identification of the author as Mary.</P>
+<P>This undeciphered letter can be read with the key in SP53/23 no.50 "An Alphabeth betwene the Queene of Scotts and y^e L. of Liddington". Although generally it is not easy to identify the key from many candidates by trials and errors, this particular ciphertext included a peculiar looking symbol consisting of X and a vertical bar over it. Looking for a cipher alphabet including this symbol readiy identified the key.
+There are some symbols not in the key of SP53/23, which is not surprising because the key in SP53/23 is a codebreaker's reconstruction, and thus may not be complete.</P>
+<P>Since the key is found among the cipher book of John Somer, an English codebreaker, a deciphered copy may be found in the archives.</P>
+
+<!--Curllがいつからメアリーのもとにいたか。（1568年にいた。Lang, The Household of p.346に"Gilbert Curle, Secretary" と"Nawe, a Secretary"）
+Labanoff iii, p.171付近になし
+-->
+
+<br>
+<br>
+<P>A book catalogue for Cotton MSS in The British Library is available at <A HREF="https://books.google.co.jp/books?id=oxtm1kAA0SIC&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false">Google</A>, <A HREF="https://books.google.co.jp/books?id=h2p8tEBZ9YYC">Google2</A>, <A HREF="https://archive.org/details/ACatalogueOfTheManuscripts1802">Internet Archive</A>. See also a list of manuscripts in the Cotton Library at <A HREF="https://en.wikipedia.org/wiki/List_of_manuscripts_in_the_Cotton_library">Wikipedia</A>.</P>
+
+<H3>BL Cotton MS, Caligula B IX</H3>
+<H4>Mary to ?John Hamilton, Archbishop of St. Andrews (1568)</H4>
+<P>This appears to be what is catalogued as "167 Mary Q. of Scots, to some bishop (not of Ross); instructions in case Frenchmen should land in scotland (the greatest part in cypher) Bolton, Sept. 9, 1568 315b"<!--pdfのp.419　未解読--> </P>
+<P>The Mary-Hamilton Cipher above is used. The decipherment is found in the previous leaf, and is printed in Labanoff ii, p.175. The cipher used indicates a possibility that the recipient is John Hamilton, Archbishop of St. Andrews.</P>
+
+<H4>Mary to Norfolk (1569)</H4>
+<P> This appears to be what is catalogued as "165 A cypher (perhaps of Mary Q. of Scots.) 314.b" <!--pdfのp.420-->The endorsement has a name "Norfolk."</P>
+<P>The Mary-Norfolk Cipher (1570) below is used. The decipherment, filed a few leaves before this<!--pdfのp.417-->, is printed in Labanoff iii, p.4. The literal decipherment of the beginning is as follows: "I perceave you ar ofendet that I have utred my suspition of your meslyking is grounde[d] but apon yours I vas not the furst for you did me the first vrong to credit that I had vreyt ne an[y] uder veies to the Queen of England n[o]r you devysed and yet in that you have not satisfied me for you tel me not in your with if you belive them or me for I have svorne to you I never ment suche a thing for that I fered your ive<s>ve</s>l op[i]n[i]on [o]f me you asure me of the contrer. I am most gled thereof and therefore when you see you will be to me [as] I will t[hen] shal you remen my oun god lord and as you subscryved ons with god's grace and ...." </P>
+<P>Comparing the ciphertext with the plaintext in print will reveal further cipher symbols.</P>
+
+<!--書籍カタログで見て注文した
+Order Reference: 	IS23W473381P
+NETBANX Authorisation: 	3BRVUEXYASFT1NYTCK
+Item 1: 	Cotton MS Caligula B IX Codex chartaceus
+Mary Queen of Scots no.165-167 (f.314b,315,315b)
+-->
+
+
+
+<H3>BL Cotton MS, Caligula C II</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_II">BL</A></P>
+
+<H4>Mary to Norfolk, 31 January 1570</H4>
+<P>I identified correspondence between ciphertexts and known plaintexts.</P>
+
+<P><b>f.66r</b>, transcribed in <b>f.67</b> with some errors, deciphered in <b>f.72</b>, printed in Labanoff, iii, p.19.</P>
+<P>Although the cipher is quite simple, use of nulls within words shows a good sense of security. The cipher can be reconstructed as follows.</P>
+<img src="mary_Norfolk.png" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<!--Cotton MS　Caligula, CII f.66 (transcribed in f.67 with some errors)
+--Myoun--lord,Ivrettoyoubefortoknouyourpl-easurifIschouldsiktomakan-ientrepryse;ifitplesyou,Ideernotformyden-ger;but　Ivischeyouwouldsiktodothelyk;forifyouandIcouldee-sceap
+both,toanicuntreueywouldfindfriendesaneu-chandforyourlandes,Ihoptheyschouldnotbelost;
+for-,beiingf-reyandhonorablibound[to]gueder,youmychtmaksucheg-o--od
+ofresforthecontrey-andQofEnglandasthe[y]co-uldnotrefus.Ourfaltvarnotschemful;you
+havepromysedtobemyn,andIyours;[I]beliveQofEnglandandcun-nt--reyschould
+lykofit.Andyouhrkeipitbemeanesoffriends,therfor,youhavesouchtyourliberty,andsati
+sfactionofyourconsiancmeiningthatyouhadpromistmeyoucouldnotlaveme.
+Ifyoufin-dthe-dengertogret,doasyout[h]inkbest,andletmeknouwhatyoupley-sI
+do-;forIwilleverbe,foryoursek,aperpetualpriso-ner,orputmylyfinperelforyour
+velandmyn.Asyoupleascomandme,forIwill,aforalthevorld,falouyour[comands],soyoubenotindenger
+formeinthesudenIwillederifIva-routbehumblesumision,andalmykenvareague
+nsit,orbe-utherweyesvorkforourlibertesolongIlea-ve.-niuLetmeknou
+yourmynd,andwhetheryouarnotofendetatme;forIfearyoubeseingthatIhardnovourdfromyou.I
+preyGod:preserveyouandkip*usbothfromdesetfulfriends.lastofja--ua
+ryourounefe[i]thful--itodeath,QueenofScots,-tomy--Norfolk
+-->
+
+
+<H4>Mary to Norfolk, 15 January 1570</H4>
+<P><b>f.69</b>, deciphered in <b>f.70</b>, printed in Labanoff, iii, p.11.</P>
+<P>The known text has "But alas! I fear of Murray, you should never believe [he] shall be too true" but the ciphertext reads "But alas! I feir may profesy of Murray that you would never belive schal be to tru". That is, Mary wrote her prophesy about Murray is true, instead of Murray is not true. (Since the prophesy is something feared, the overall sense may not change.)</P>
+
+<H4>Mary to Norfolk, 20th, 1570?</H4>
+<P><b>f.74</b> undeciphered. Simply dated "tventi of this instant" in cipher. No matching letter is found in Labanoff iii or Froude, <i>History of England from the Fall of Wolsey to the Death of Elizabeth</i>, vol.10 (<A HREF="https://books.google.co.jp/books?id=KWkBAAAAQAAJ&pg=PA121&lpg=PA121&dq=%22knit+the+knot+of+sure%22&source=bl&ots=oOj-1lVyqI&sig=ACfU3U3N7KWNd3wF3UQoxOxzVC93DYiDzA&hl=ja&sa=X&ved=2ahUKEwiKurS6ieT3AhUGY94KHUV8DqIQ6AF6BAgEEAM#v=onepage&q=%22knit%20the%20knot%20of%20sure%22&f=false">Google</A>).</P>
+<P>The phrase "my oun good lord" suggests this is also from Mary to Norfolk.</P>
+<P>The above key allows reading this. With modernized spelling, the beginning reads something like: "I have, my own good lord, your friendly [letter??] [with??] no [g?]entle satisfaction and for * I will never [do??] anything in hand ...."<!--* Somewhere good may come of it to me. Anything except I was sure it was to your weal as for myn[d?] and if that might be so to us both, I would be sure all should not be in danger for I have experience * that r/m v o u r that me o u n e f ****** s but no, my own lord, that your * and my nyf would not believe so to u e s a way can * nothing content * Queen of England. I find be that the cardinals with that is veil minded to help me * for find means that our c a u s d e men not for fault of solicitation write to the b of your part and I shall be your sister s c r u p or other to cause * know your mind for I have no means that he may be sure of forces and had all friends * in hand r I trust god he will help us as he be s/g e n e t e a l ready in? deliveri[n]g us of our * the Queen of England ....".--></P>
+<img src="mary_CottonCaligulaCII_f74.png" width="700" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<img src="mary_autograph.jpg" width="700" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>By the way, the handwriting of the Norfolk ciphertext above looks dissimilar to that of ciphertexts from later years known to be in a secretary's hand. It reminded me of Mary's own handwriting. But the form of "h" does not match, and the spelling convention also seems different from that in a letter known to be Mary's autograph (e.g., Mary to the Bishop of Ross, 21 November 1570, printed in Labanoff iii, p.121).</P>
+<P><b>(June 2024:</b> According to Bishop Kyle (see below), Mary's cipher letters to Beaton about the same time are in her secretary Raulet's hand, in which "the characters are large & bold" and are written "very elegantly & regularly, & with wonderful correctness." It would be worthwhile to check whether Raulet's hand matches the above.)</P>
+
+
+<H4>Mary to Norfolk, 18 April 1570</H4>
+<P><b>f.75</b>, roughly corresponding to clear text in <b>f.73</b>, printed in Labanoff, iii, p.35.</P>
+
+
+<H4>Mary to Bishop of Ross, 8 February 1571</H4>
+<P><b>f.518</b>, printed in Labanoff, iii, p.181.</P>
+<P>Some words are in cipher symbols: R. (Duke of Norfolk), V. (Queen of England), G. (France), A. (French King), D. (Queen of Scots), B. (Duke of Alva), M. (King of Spaine). Considering handwriting variety, these may correspond to the symbols used with Norfolk above.</P>
+
+<H3>BL Cotton MS Caligula C III</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_III">BL</A> (The numbering of the catalogue of this volume does not seem to match the numbers on the folios. I followed what I see on the folios.)</P>
+
+ 
+<P><b>no.36 (f.104v)</b> A few symbols in cipher. "The cyphers written by the D. of Norfolk on the back of Grafton's chronicles, copied by Ld. Burleigh."</P>
+
+<P><b>no.164 (f.382)</b> Lethington to Mary, 10 August 1572 (extract, deciphered 5 December). The key is SP53/23 no.51.</P>
+
+<P><b>no.175. (f.410)</b> Lethington and Grange to la Motte-Fenelon, French ambassador, Castle of Lisleburg, 17 January 1573 (deciphering worksheet). The key is SP53/23 no.53.</P>
+
+<P><b>no.183. (f.426)</b> Mary to James Beaton, Archbishop of Glasgow. The key is SP53/23 no.38 (the "Beaton Cipher").</P>
+<P>The cover letter from Walsingham to John Somer (Sommers) is dated 24 October 1582. Although the catalogue says "probably 1572", the content (the Ruthven Raid) matches 1582. Labanoff v, p.308 prints an extract in SP53/12<!--https://books.google.co.jp/books?id=jIGMclnmfx8C&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q=cipher&f=false p.934-->.</P>
+
+<P><b>no.211b? (f.486)</b> A deciphering worksheet (with only a few portions in cipher; the left margin has a cipher symbol for the first symbol of each line). The key is SP53/23 no.37 (a cipher with the Cardinal of Lorraine and Archbishop of Glasgow).</P>
+
+<P><b>no.213 (f.489-f.497)</b> Cardinal of Lorraine and Archbishop of Glasgow to Mary, 7 February 1573. The key is SP53/23 no.37. 
+<P>The ciphertext of f.490 discusses errors of cipher. The endorsement of f.497v reads "From the Cardinall of Lorrain and Bisshop of Glasco To the Queen of Scotts. The extract[?] of the Ciffre decifred by me [probably John Somer/Sommers]."</P>
+<!--
+"tost moyen vo* mander seurement et par homme expres ...
+Mons^r est venu icy est assigne sur une pension que se paye .... 
+satisfaict de quatre mil liures de rente que lon vous a es parg...."; 
+-->
+
+<P><b>no.222 (f.508-f.513v)</b> Several fragments/extracts "said on the back to be (probably) from sir Fr. Englefield in Flanders, to the duchess of feria in Spain, and to have been intercepted Nov. 12, 1574. (some in cypher.) N.B. One of them is from a husband to his wife, dated London, March 5."</P>
+<P>f.509 June 1574 (cover letter?); f.509v, the key is SP53/23 no.64; f.510, the key is SP53/23 no.33; f.512, the key is SP53/23 no.31.</P>
+
+<P><b>no.224 (f.515)</b> Bishop of Ross to Duke of Norfolk, 11 October 1575.</P>
+<P>Undeciphered; partial decryption on the first line. The key is the same as that of C II (the Norfolk Cipher), f.66-75. Deciphered in Froude, <i>History of England from the Fall of Wolsey to the Death of Elizabeth</i>, vol.10 (<A HREF="https://books.google.co.jp/books?id=KWkBAAAAQAAJ&pg=PA121&lpg=PA121&dq=%22knit+the+knot+of+sure%22&source=bl&ots=oOj-1lVyqI&sig=ACfU3U3N7KWNd3wF3UQoxOxzVC93DYiDzA&hl=ja&sa=X&ved=2ahUKEwiKurS6ieT3AhUGY94KHUV8DqIQ6AF6BAgEEAM#v=onepage&q=%22knit%20the%20knot%20of%20sure%22&f=false">Google</A>), p.120-121 (the year is "1570"), taken from SP53/5 (the year is "1570")<!-- https://books.google.co.jp/books?id=jIGMclnmfx8C&pg=PA922&lpg=PA922&dq=%22bishop+of+glasgow%22+cipher&source=bl&ots=i7YC2Segfi&sig=ACfU3U313uiQNiNJEY1rtPZ900Qg56YKFg&hl=ja&sa=X&ved=2ahUKEwiupO-Z1oT3AhXGZ94KHSv8A00Q6AF6BAgYEAM#v=onepage&q=%22bishop%20of%20glasgow%22%20cipher&f=false (p.893)--></P>
+
+<P><b>no.229 (f.526)</b> Archbishop of Glasgow to his brother, August 1575. The key is SP53/23 no.34=no.39.</P>
+<P>Deciphered in Cotton MS Caligula C V, f.78, in which a reconstructed key as well as some notes for deciphering such as "daye and month" are in the margin. <!--calendared in CSP, Scotland, vol.5, no.190 https://archive.org/details/calendarstatepa01boydgoog/page/182/mode/2up -->
+
+<P><b>no.235 (f.533)</b> Mary to Andre Beaton, Sheffield, 22 August 1577. The key is SP53/23 no.34.</P>
+
+<P><b>no.236 (f.535-540)</b> Mary to Glasgow (three extracts), August 1577. The key is SP53/23 no.38. There are some unmatching symbols, which may be some error. F.538 has several undeciphered symbols.</P>
+
+<P><b>no.240 (f.545?)</b> Nau to his brother in France, Sheffield, 6 August 1577. The key is SP53/23 no.43 ("cest lettre est en h...").</P>
+
+<P><b>no.241 (f.546?)</b> Nau to his brother in France, Sheffield, 31 August 1577. The key is SP53/23 no.43 ("frere, je vous...")</P>
+
+<P><b>no.242 (f.547)</b> The key is SP53/23 no.44.</P>
+<P>"Copies and extracts of letters, supposed from Saunders, an English traitor in Spain, to sir Fr. Englefield and Dr. Allan; conveying intelligemce and words in cypher. Madrid, Oct. 4, Nov. 30. and 6, 1577."</P>
+
+<P><b>no.245 (f.554)</b> Mary to Doctor William Allen, 3 August 1577.</P>
+<P>Undeciphered. Deciphered in Cotton MS, Caligula C V, f.103, which is printed in Labanoff, iv, p.374. The key, not found in SP53/22, SP53/23, can be reconstructed as follows.</P>
+<img src="mary_Allen.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>BL Cotton MS Caligula C IV</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_IV">BL</A></P>
+
+<H3>BL Cotton MS Caligula C V</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_V">BL</A></P>
+
+<H3>BL Cotton MS Caligula C VI</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_VI">BL</A></P>
+
+<H3>BL Cotton MS Caligula C VII</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_VII">BL</A></P>
+<P><b>f.35</b> Mary to James Beaton, Archbishop of Glasgow, Sheffield Castle, 22 August 1582. The key is SP53/23 no.39=no.34.</P>
+<P>"Late 16th- or early 17th-century copy." The ciphertext at the head corresponds to the beginning of the body: "--sur-l'esperance que j'a[v]ois de [votre] retour en bref, -t tant par [v]oz * ce[ll]
+s de l'ambassadeur de [france]" This corresponds to C III f.533.</P>
+
+<P><b>f.325</b> Mary's letter, 26 September 1583. A code number "26" remains undeciphered, with a marginal note: "France or some other Contrey." (Not in Labanoff.)</P>
+
+<!--There are also deciphered letters (only plaintext), not listed here.-->
+
+<H3>Cotton MS Caligula C VIII</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_VIII">BL</A></P>
+
+<H3>Cotton MS Caligula C IX/1</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_IX/1">BL</A></P>
+<!--No word "cipher" in catalogue.-->
+
+<H3>Cotton MS Caligula C IX/2</H3>
+<P><A HREF="https://www.bl.uk/manuscripts/FullDisplay.aspx?Source=BrowseScribes&letter=A&ref=Cotton_MS_Caligula_C_IX/2">BL</A></P>
+<!--No word "cipher" in catalogue.-->
+<P>According to Sheila Richards, <i>Secret Writing</i>, p.54, n., f.375-8 is the famous letter (only in clear/plaintext) by Mary, to which the "Babbington Postscript" was appended.</P>
+
+<H3>Add MS 33594</H3>
+<P><A HREF="http://www.bl.uk/manuscripts/Viewer.aspx?ref=add_ms_33594_fs001r">BL</A></P>
+<!--The folio numbers do not match numbers in catalogue. In the following, the records with “cited for context” are included in the list merely for synchronization.→folio番号はアイテム番号の解説の後に書かれていると解釈すればOK-->
+<P><b>no.15 (f.34, f.36)</b> George Seton to Mary, 16 September 1583. Ciphertext (f. 34) deciphered (f. 36). The reconstructed key is on f.34, which is not in SP53/23, SP53/23.</P>
+
+<P><b>no.16 (f.35, f.36)</b> James VI to Mary, Stirling, 8 November [1583]. Ciphertext (f. 35) deciphered (f. 36). The same as the key on f.34.</P>
+
+<P><b>no.17 (f.36v)</b> Patrick Gray to Mary, 22 April [1584]. Decipherment (f.36v).</P>
+<P>Walsingham's cover letter to Sommer and the latter's deciphering worksheet are in f.38-40. The key is on f.39.</P>
+
+<H3>Preconcerted Code Words in Add MS 33594</H3>
+<P>Gilbert Curll [Curle], Mary's Scottish secretary, used code words such as "the merchant of London" (Queen of England), "the merchant of Newscastle" (Queen of Scotland), "the merchants wyfe" (Walsingham) in a letter to Thomas Baldwin dated 20 September 1584: "yf I will write the Scottishe Queen shal not be remoued then to write the marchant of newcastle shall not goe beyond the sea." <span class="note">(Daybell, <i>The Material Letter in Early Modern England</i>, p.158, citing Add Ms 33594 (f.85, f.87; Curle's cipher is in f.86))</span>.</P>
+<P>Curll [or Curle] is known to have enciphered at least some of Mary's letters (using an ordinary substitution cipher) and used ciphers himself (SP53/22 f.28 etc.), but appears to have used only code names with Baldwin.</P>
+<P>Baldwin was arrested in October 1584. The following report from Ralph Sadler, Mary's gaolor at the time, may refer to this letter.</P>
+<DIV class="kakomi">
+Sadler to Wansingham, 20 October 1584<br>
+... Your lettres of the 17th of this present, I receyved the 19th of the same, together with <b>the copie of Curle's letter to Baldewyn and of the cipher bytwen them</b>; upon consideracion wherof, it semeth unto me, that these words (Mr Somer, letters) conteynid in the saide ciphre, to signefie the caryer and the cariers man are not rightly taken; but that the same words should rather be as I thinke, som names of som other of the erle's men mete for the purpose; the trewthe wherof, upon ex amynacion of the said Baldwyn, I thinke wolde easelie be founde out. Wherfore, it may please you to loke better upon the originall of the saide ciphre, and to let me understand whether I may conferre therupon with this queene; and also with Curle, or otherwise as yow shall advise....<br>
+<br>
+Sadler to Walsingham, 6 November 1584<br>
+.... As touching Curle and that pevishe dealing, like himself, he hath ben delt withall in apart and before the quene his mistres, about <b>the lettre and cipher</b> so vaynly sent to Baldwyn, and both sheued and read with good leasure....<br>
+<br>
+<i>The State Papers and Letters of Sir Ralph Sadler</i>, vol.2  (1809) (<A HREF="https://books.google.co.jp/books?id=Occ_AAAAcAAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q=cipher&f=false">Google</A>), p.422, 441
+<!--CSP Colonial: Ralph Sadler to Sir Francis Walsyngham, Wingfield, 7 November 1584
+https://books.google.co.jp/books?id=jIGMclnmfx8C&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=snippet&q=baldwin&f=falseは上記の6 Nov.のことらしい-->
+</DIV>
+
+
+<H2>Cipher Letters Studied by Richards (1974)</H2>
+<P>Sheila R. Richards (1974), <i>Secret Writing in the Public Records, Henry VIII-George II</i> includes decipherments of the following letters (all from SP53).</P>
+<P>no.11. (SP53/16 no.29(1)) Mary to Albert Fontenay, 1584 *Plate II</P>
+<P>no.12. (SP53/18 no.64(2)) Mary to Albert Fontenay, [1586]</P>
+<P>no.13. (SP53/16 no.28(2)) Albert Fontenay to Mary, 1584</P>
+<P>no.14. (SP53/16 no.28(1)) Albert Fontenay to Claude Nau, 1584</P>
+<P>no.15. (SP53/16 no.27) Albert Fontenay to Mary, 1586</P>
+<P>no.16. (SP53/16 no.25) Albert Fontenay to Claude Nau, 1586</P>
+<P>no.17. (SP53/16 no.1) Albert Fontenay to Claude Nau, 1585</P>
+<P>(For nos.11-17, the key is not in SP53/22 or SP53/23. An incomplete 19th-century key is in SP106/1, no.48A. The following is my reconstruction, called Mary-Fontenay Cipher herein.)</P>
+<img src="mary_SP53_16Fontenay.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>no.18. (SP53/18 no.64(3)) Mary to Dr. Lewis, 1586 *Plate III (The key is SP12/193, no.54<!--I confirmed a few words in Plate III can be correctly deciphered with the second key on SP12/193/54 provided by DECRYPT.-->) *The key is on the same sheet as the Babington cipher (the sheet contains three ciphers).</P>
+<P>no.19. (SP53/18 no.60(5)) Mary to Dr. Lewis, 1586 (The key for the preceding (no.18) is "relevant".)</P>
+<P>no.20. (SP53/18 no.64(4)) Mary to Gabriel Denis, 1586 (The key is SP53/22, no.25)</P>
+<P>no.21. (SP53/18 no.95(1)) Mary to Baron Paget, 1586 (The key is SP53/22, no.46)</P>
+<P>no.22. (SP53/18 no.64(5)) Mary to Don Bernardino Mendoza, 1586 (The key is SP53/22, no.39)</P>
+<P>no.23. (SP53/18 no.95(2)) Mary to Don Bernardino Mendoza, 1586 (ditto)</P>
+<P>no.24. (SP53/18 no.55) Mary to Anthony Babington, postscript, 1586 (the famous Babington postscript; The key (the Babington cipher above) is SP12/193, no.54; a 19th-century copy of the key is in an Index volume (IND 6892))</P>
+<P>no.25. (SP53/19 no.72) Chateauneuf to Courcells, 1586 (intercepted copy; a 19th-century key is in SP106/1, no.36A)</P>
+<P>no.26. (SP53/19 no.73) Courcelles to Chateauneuf, [1586] (ditto)</P>
+<P>no.27. (SP53/20 no.4) Courcelles to Chateauneuf, 1586 (ditto)</P>
+
+<H2>Letters in Cipher in SP53</H2>
+<P>Richards (1974) studied letters related to Mary in SP53 but does not mention ciphertexts already deciphered and those she could not (or did not) decipher. I studied some (but not all) of them. The descriptions below relies on CSP.</P>
+
+<H3>SP53/10 (1575-1577)</H3>
+<H3>SP53/10 no.85: 3 August 1577, Sheffield House. Mary to Ligons in France</H3>
+<P>A letter in cipher. Deciphered in no.86. The key is SP53/23 no.41 (called Liggons' Cipher herein).<!--missing around Labanoff iv, p.375--></P>
+ 
+<H3>SP53/10 no.91: 31 August 1577, Mary to James Beaton, Archbishop of Glasgow</H3>
+<P>A letter in cipher. Deciphered in no.92. Labanoff iv, p.382. The key is SP53/23 <s>no.17</s> no.38 (called the Mary-Beaton Cipher herein after Lasry et al. (2023)).</P>
+
+<H3>SP53/10 no.96: 7 November 1577, Mary to Glasgow</H3>
+<P>A letter in cipher<!--which I have not seen-->. Deciphered in no.97.<!--missing around Labanoff iv, p.397--></P>
+
+<H3>SP53/10 no.99: Paris, 25 December 1577, Thomas Morgan to Countess of Northumberland</H3>
+<P>A letter with an undeciphered ciphertext. The key appears to be SP53/23, no.46/52 25 December 1577 "Alphabeth betwene Thomas Morgan an English traytor then in france and the Comtesse of Northumberland".</P>
+<!--★OTA_Works\SP53_10_99に解読した-->　 
+
+<H3>SP53/11 (1578-1581)</H3>
+<H3>SP53/11 no.35: 1580?: Anonymous to Mary "Sent to the Q. Mother by L'Abbadia from Portugall"</H3>
+<P>This appears to be a deciphering worksheet of John Somers [Somer], with the key on f.39. A matching key is not found in SP53/22 or SP53/23.</P>
+
+<H3>SP53/11 no.50: 21 July 1581, London, Walsingham to John Somers</H3>
+<P>Encloses a letter in cipher found in Mary's letter, which Queen Elizabeth requests Somers will decipher.</P>
+<P>The enclosure (no.50I) is entirely in cipher, not deciphered. <A HREF="SP53_11_50b.txt">Here</A> is my transcription.</P>
+<!--A symbols like XX (or V+interted V) is not unusual but not so common, either. One cipher that has this symbol is SP53/22 f.38 (Liggons), but it does not seem to match. Also SP53/23 no.40/46 (Morgan), no.57 (La Mothe-Fenelon), no.58 (Seton).-->
+
+<!--★プログラムで解読できない-->
+<!--
+<DIV class="kakomi">〓
+Sir,The encloased cypher was found in a letter of the Queen
+of Scots that has* bin intercepted. I shal committed* yt
+to my froanul* Philips to do yt but that fres* was* visited*
+... found extremelie 
+pleasure 26 your should take four paymet recall ...
+... ... shall* have good leisure* so do betwin* these h ....
+my command* to paris*, and so I doms* you to god,
+
+At London the xxi ... of Jului 1581
+</DIV>
+-->
+
+<H3>SP53/12 (1582-1583)</H3>
+<H3>SP53/12 no.12: 28 May 1582, Dalkeith, James VI to Mary</H3>
+<P>A letter in cipher, deciphered. The key appears to be SP53/22 f.21.</P>
+
+<H3>SP53/13 (January - September 1584)</H3>
+<H3>SP53/13 no.37: 23 July 1584, Falkland. James VI to Mary</H3>
+<P>A letter in cipher, deciphered, in the handwriting of Phelippes. Endorsed by Lords Burghley, Shrewsbury, Hunsdon, Cobham, and Walsingham. (I have not seen this.)</P>
+<P>A deciphered copy is also in Cecil Papers, vol.3, no.94 (<A HREF="https://www.british-history.ac.uk/cal-cecil-papers/vol3/pp44-47">British History Online</A>).</P>
+
+<H3>SP53/14 (October-December 1584)</H3>
+<H3>SP53/14 no.1: 2 October 1584, Florence, Anthony Standen to Mary</H3>
+<P>A letter entirely in cipher, deciphered in no.2 in the hand of Phelippes. The cipher (not found in SP53/22 or SP53/23) can be reconstructed as follows:</P>
+<img src="mary_SP53_14_1.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>SP53/14 no.30: [November] 1584: Mary to the Master of Gray</H3>
+<P>A letter in cipher, imperfectly deciphered in the hand of Phelippes. <font size="2">(The ciphertext corresponding to the word "pour" is underlined, which may indicate where Phelippes used as a clue in deciphering. This is a homophonic substitution cipher with a nomenclature with diacritics. This suggests that he could break ciphers of this complexity, not only simple ciphers as used by Babington. It may be of interest to study how hard this ciphertext is to break.)</font> The cipher (not found in SP53/22 or SP53/23) can be reconstructed as follows (called Mary-Gray Cipher herein):</P>
+<img src="mary_SP53_14_30Gray.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>SP53/14 no.38: 16 November 1584, Englefield to Philip II</H3>
+<P>A letter in cipher, deciphered in SP53/15 no.4; Another copy in SP53/17 no.75. The key is SP53/22 f.29 (called Englefield's Cipher herein).
+ 
+<H3>SP53/14 no.39: 18 November, Paris, Hieronymo Martelli to Mary</H3>
+<P>A letter in cipher with interlinear decipherment by Phelippes, endorsed by Burghley and others. Deciphered in no.40 in the hand of Phelippes. <!--[*Interesting because Mary is warned of Castelnau. I think I've seen a similar warning somehwere.]--> The cipher (not found in SP53/22 or SP53/23) can be reconstructed as follows (called Mary-Martelli Cipher herein):</P>
+<img src="mary_SP53_14_39Martelli.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>SP53/14 no.73: 5 December 1584. Englefield to Mary</H3>
+<P>A letter in cipher, deciphered in SP53/15 no.4. The key is SP53/22 f.29 (Englefield's Cipher).</P>
+<P>Another letter is appened. The cipher seems generally the same. The beginning reads something like "...at the vriing of my last dated the vivteneth of decembre uppon an advise from Morgan .. meane of zuy unto you ..." and the last line reads something like "proced not t* that which he beleveth to be infactible."</P>
+ 
+<H3>SP53/14 no.74: 6 December 1584, Paris, Hieronymo Martelli to one of Mary's Secretaries</H3>
+<P>A letter in cipher with interlinear decipherment by Mr Phelippes, endorsed by Burghley and others. The key is Mary-Martelli Cipher.</P>
+
+<H3>SP53/14 no.89: 14 December 1584, Namur, Liggons to Mary</H3>
+<P>A letter in cipher, deciphered in no.90. The key is SP53/22 f.37.</P>
+ 
+<H3>SP53/14 no.104: 29 December 1584</H3>
+<P>A letter in cipher. What appears to be a decipherment in a later hand is attached.) Deciphered in SP53/17, no.75. The key is Englefield's Cipher.</P>
+
+<H3>SP53/14 no.105: December 1584, Rome, Hieronymo Martelli to Mary</H3>
+<P>In Mary-Martelli Cipher (1584).</P>
+ 
+<H3>SP53/15 (January-June 1585)</H3>
+<H3>SP53/15 no.3: 2 January 1585, Englefield to Mary</H3>
+<P>A letter in cipher (another copy is in SP53/14 no.73). Deciphered in no.4<!--which I have not seen--> as well as SP53/17 no.75. The key is Englefield's Cipher.</P> 
+
+<H3>SP53/15 no.6: 4 January 1585, Charles Paget to Mary</H3>
+<P>A letter in cipher, endorsed by Burghley and others. Deciphered in no.7. The key is SP53/22 f.47 (called Paget's Cipher herein).</P>
+<P>A deciphered copy is also in Cecil Papers, vol.3, no.136 (<A HREF="https://www.british-history.ac.uk/cal-cecil-papers/vol3/pp89-91">British History Online</A>)</P>
+
+<H3>SP53/15 no.25: 31 January 1585, Paris, Thomas Morgan to Mary</H3>
+<P>A letter in cipher, deciphered by Phelippes, endorsed by Burghley and others. Deciphered in SP53/16 no.7. The key is either SP53/22 f.43 or f.45 (both are loosely called Morgan's Cipher herein). <!--冒頭のヌルやand,ofのコードはf.43に合う。f.45だとf＝Ruisseauので、合わない。ただUが・で表されてる点はf.45と同じ。--></P>
+ 
+<H3>SP53/15 no.34: 15 February 1585, Thomas Morgan to Mary</H3>
+<P>A letter in cipher, endorsed by Burghley and others. Deciphered in no.35. The key is SP53/22 f.43 (not f.45 because f=Duke of Guise) (Morgan's Cipher).</P>
+
+<!--Letters sent over in a coffer by Fontenay only just discovered★秘密に送られた手紙がたったいま見つかった（検閲の話ではない）.-->
+<!--
+<DIV class="kakomi">
+It may please your ma^tie Sithence my last letters unto your ma^te of
+the 10th of this instant I receaved some letters out of Scotlande from
+Fontenay who in some of his letters to his frendes here promisess to retorne hither
+into these partes verye shortelye but he doth not write so to me. About
+three monthes Fontenay sent to this contrye a coffer and did hide in a
+secret place in the bottome of the said coffer certayne letters written by the
+k. your sonne to your ma^tie and to the D. of Guise and to Mons. de Mayne
+and to the B. of Rosse≪f.45にある；フェリペスは後から解読≫ with good allowance of his service and promise of favors.
+The said coffer was addressed to Du Ruisseau but he never opened the same
+untill this present w^ch is the cause y^t your ma^ties letters hide bene so longe
+by the way. And the same being now come to my handes I have presumed to
+send the same to your ma^tie in hope y^t where so ever you be the passage
+for a convoye of your ma^ties letters is by this time found as I pray god it
+may continue to the cofort of your ma^tie and all yours.
+Bruce is retorned from the D. of Guise w^th letters ....
+</DIV>
+-->
+<H3>SP53/15 no.64: 30 March 1585, Thomas Morgan to Mary</H3>
+<P>A letter in cipher, endorsed by Burghley and others. Deciphered in no.65 in the hand of Phelippes. The key is SP53/22 f.43 (Morgan's Cipher).</P>
+<!--★f.33?に、Personages w^ch he desireth to be gratified for his sakeとして人名リストがあり、Foljambeもある。Fontenayの記号はf.45だが？-->
+<P>A deciphered copy is also in Cecil Papers, vol.3, no.149 (<A HREF="https://www.british-history.ac.uk/cal-cecil-papers/vol3/p96">British History Online</A>)</P>
+
+<H3>SP53/15 no.72: 13 April 1585, the Bastille, Thomas Morgan to Mary</H3>
+<P>A letter in cipher, endorsed by Burghley and others. Deciphered in SP53/16 no.17. The key is Morgan's Cipher.</P>
+ 
+<H3>SP53/15 no.75: 27 April 1585, Charles Paget to Mary</H3>
+<P>A letter in cipher (reporting Morgan's imprisonment in The Bastille, among others), endorsed by Burghley and others. Deciphered in no.76 in the hand of Phelippes. The key is Paget's Cipher (SP53/22 f.47).</P>
+ 
+<H3>SP53/15 no.81: 30 April 1585, Paris, Liggons to Mary</H3>
+<P>A letter in cipher, with interlinear decipherment by Phelippes. Endorsed by Burghley and others. Another copy in no.82. The key is SP53/22 f.37.</P>
+ 
+<H3>SP53/15 no.83: 30 April 1585, Thomas Throckmorton to Mary</H3>
+<P>A letter in cipher, with interlinear decipherment. Endorsed by Burghley and others. The key is SP53/22 f.54.</P>
+ 
+<H3>SP53/15 no.93: 15 May 1585, Paris, Liggons to Mary</H3>
+<P>A letter in cipher with interlinear decipherment by Mr Phelippes. Endorsed by Burghley and others. A deciphered copy in no.94 in the hand of Phelippes. Another copy in no.95 is "Deciphered by me Gilbert Curll, 5th Oct. 1586." [i.e., confession of Curll after his arrest at the discovery of the Babington Plot.] The key is SP53/22 f.37. (There appears to be some additions, such as a symbol for "10th".)</P>
+ 
+<H3>SP53/16 (July-December 1585)</P>
+<H3>SP53/16 no.1: 1 July 1585, Fontenay to Nau</H3>
+<P>A letter in cipher, with an interlinear decipherment. Deciphered in Sheila Richards (1974), no.17. The key is SP106/1/48a.</P>
+ 
+<H3>SP53/16 no.15: 17 July 1585, Charles Paget to Mary</H3>
+<!-- Introducing the bearer [Christopher Blunt], whom he thinks able to do her service, but recommends her to make some proof of him before she trusts him with any matters of importance.-->
+<P>A letter in cipher, endorsed by Burghley and others. Deciphered in no.16. The key is SP53/22 f.47 (Paget's Cipher).</P>
+ 
+ 
+<H3>SP53/16 no.25: [5 April 1586]: Fontenay to Nau</H3>
+<P>A letter in cipher, deciphered in no.26 by Phelippes. [*Deciphered in Sheila Richards (1974), no.16. Dated 1 August 1585 by CSP.]</P>
+ 
+<H3>SP53/16 no.27: [7 April 1586], Fontenay to Mary</H3>
+<P>A letter in cipher, partially deciphered. [*Deciphered in Sheila Richards (1974), no.15.]</P>
+
+<H3>SP53/16 no.28: 1585?, Copies of five letters in cipher</H3>
+<H4>(1) Fontenay to Nau, Edinburgh, 9 March 1584</H4>
+<P>Partially deciphered. Marked "Decifred", but the contemporary decipherment is probably lost. Fully deciphered in Sheila Richards (1974), no.14 (Mary-Fontenay Cipher above).</P>
+<H4>(2) Fontenay to Mary, Edinburgh, 9 March 1584</H4>
+<P>Partially deciphered. Marked "Decifred", but the contemporary decipherment is probably lost. Fully deciphered in Sheila Richards (1974), no.13 (Mary-Fontenay Cipher).</P>
+<H4>(3) "1585", addressed to "ff"</H4>
+<P>Entirely in cipher, not deciphered. <A HREF="SP53_16_28c.txt">Here</A> is my transcription.</P>
+<P>The key in SP53/22/27, SP53/22/28, and SP53/22/49, for "Emilio", define a symbol "ff" to mean "your self", but this key does not seem to match.</P>
+<!--★３番目は未解読か。SP53/22 f.25のDenis暗号ではないらしい。転記したが解読不能。-->
+<H4>(4) Denis to Mary, 14 October 1585</H4>
+<P>Partially deciphered. English. Marked "Decifred", but the contemporary decipherment is probably lost. The key appears to be SP53/22 f.25.</P>
+<!--★４番目のDenis宛はSP53/22 f.25のDenis暗号らしい。-->
+<H4>(5) Denis to Mary, 1586</H4>
+<P>Partially deciphered. English. Marked "Decifred", but the contemporary decipherment is probably lost. The key appears to be SP53/22 f.25.</P>
+<!--★５番目のDenis to Maryも。SP53/22 f.25のDenis暗号らしい。-->
+<!--最後の解読ul*sumgiectfaq*yelDenis1587-->
+
+<H3>SP53/16 no.29: Copies of three other letters in cipher</H3>
+<H4>(1) Mary to Fontenay, Wingfield, 31 October [1584]</H4>
+<P>Deciphered in Richards (1974), no.11 (Mary-Fontenay Cipher).</P>
+<H4>(2) 27 March [1585]</H4>
+<P>Entirely in cipher, not deciphered. The cipher can be deciphered as follows. The letter begins with "[Monsieur? Morgan?] est pri[s]onnier en la Bastille q?ue la nuict du premier dimenche de ...." Thus, this is information from France.</P>
+<!--★２番目が未解読で解読した。SP53/22, SP53/23にはないらしい。 -->
+<img src="mary_SP53_16_29_2.png" width="500" style="margin:1em 1em 1em;"><br>
+<H4>(3) Unidentified</H4>
+<P>Marked "Decifred", but the contemporary decipherment is probably lost. Neither key from (1) nor (2) solves this, though some symbols look like those of Mary-Fontenay Cipher. <A HREF="SP53_16_29c.txt">Here</A> is my transcription.</P>
+
+<H3>SP53/16 no.78: 1585?</H3>
+<P>Anonymous letter in cipher to Mr. Tempest, an English priest resident at Paris. Cleartext lines are in French. Endorsed by Phelippes. Not deciphered. <A HREF="SP53_16_78.txt">Here</A> is my transcription.</P>
+
+<H3>SP53/16 no.79 1585?</H3>
+<P>Another anonymous letter in cipher in the same handwriting (copyist's?), addressed to Doctor Barret, President of the English seminary at Rheims. Endorsed by Phelippes. <A HREF="SP53_16_79.txt">Here</A> is my transcription.</P>
+<!--★未解読。上記と似た記号を使っているが、割り当ては異なるかも。上記を解読するときにも出てきたMONTAGUが表れてどきっとしたが、またやってみると２．５か所も出てくる。言語モデルが偏っていたのかもしれない。その前にはWIL「LIAM SHAKESPE」AREみたいのも出てきた。--> 
+ 
+<H3>SP53/17 (January-May 1586)</H3>
+<H3>SP53/17 no.32: 21 March 1586, Thomas Morgan to Mary</H3>
+<P>Interlined decipherment (deciphering worksheet?). The key is SP53/22 f.43 (f.45 does not match f=Duke of Guise) (Morgan's Cipher). Page "viii" is followed by page "ix", titled "the instructions for the letter to be sent to the Countesse of Arundell" in the same cipher. The letter and the draft "instructions" are deciphered in no.33.</P> 
+<!--1枚目l.17の Your cifars inclosed in mine for the D. of Guise thus marked and for your Embassador I sent unto them by William Herte:→no.33の1枚目の最後の段落；p.2冒頭I am by way of argumentはno.33のp.3の下から７行目；p.2末尾のDuke of Alenconはno.33のp.6の２段落目の末尾
+手紙本体の最終段落のMonsieur Chasteauneuf for whose name this marke * standeth hath informations sufficient to know ....は最後から６番目の画像の左ページ（"416"）の本体の最終段落に対応；マージンにある細かい字は不詳だが、右ページ（417）がThe Instructions for the ....
+"420"の途中からはCharles Paget to Mary, 10 April 1586NS
+-->
+
+<H3>SP53/17 no.40: 29 March 1586, Thomas Morgan to Mary</H3>
+<P>Deciphered in SP53/19 no.50. The key appears to be SP53/22 f.43 (Morgan's Cipher).</P>
+ 
+<H3>SP53/17 no.47: 9 April 1586, Thomas Morgan to Mary</H3>
+<P>Deciphered in SP53/19 no.50. The key appears to be SP53/22 f.43 (Morgan's Cipher).</P>
+ 
+<H3>SP53/17 no.55: 24 April 1586, London, Gilbert Gifford to --</H3>
+<!--The young Prince pensioned.　ベリック条約のこと？--> 
+<P>Partly in cipher and deciphered by Gilbert Curll. The cipher can be reconstructed as follows.</P>
+<img src="mary_SP53_17_55Gifford.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>SP53/17 no.73: 20 May 1586, Curll to --</H3>
+
+<!--Shall he send an alphabet to his brother?-->
+<P>Includes a note in cipher, deciphered by Phelippes. Asks "Let me knovv if I shall send an alphabet to your brother in case this be not commoun betvveen you"; "packet here inclosed is for the French ambassador."</P>
+<P>The key is SP53/22 f.49.</P>
+<P>Jargons are used: and=packet; when=France[French]; for=ambassador; must=Chartley; your=for me[Curll?].</P>
+
+<H3>SP53/18 (June-July 1586)</H3>
+<H3>SP53/18 no.13: 24 June 1586, Thomas Morgan to Mary</H3>
+<P>Deciphered in no.14, in the hand of Phelippes. (Morgan's Cipher)</P>
+ 
+<H3>SP53/18 no.15: 25 June 1586, Paris, Bernardino de Mendoza to Mary</H3>
+<P>Deciphered in no.16 in the hand of Phelippes. The key is SP53/22 f.39.</P>
+<P>This specimen shows the correspondence between Mendoza and Mary used Mary's cipher, not a Spanish cipher.</P>
+ 
+<H3>SP53/18 no.16A: 25 June 1586 Chartley, Mary to [Babington?] / ? June 1586, Chartley, Gilbert Curll? to [Thomas Barnes?]</H3>
+<P>The ciphertext on the recto, not deciphered, is in Babington's Cipher. It was deciphered by Robert Lemon of the State Paper Office (editor of some CSP Domestic) and confirmed to correspond to a known letter ("My very good friend, albeit be long since you heard from me, no more than I have done from you, ...") by Patrick Fraser Tytler, <i>History of Scotland</i>, vol.4, p.121, n.5 (<A HREF="https://books.google.co.jp/books?id=CQl5Ok77cs4C&pg=PA122&lpg=PA122&dq=%22no+more+than+i+have+done+from+you%22&source=bl&ots=5DnmfiB1pB&sig=ACfU3U3oQp2T8Q6_i0yClL257nBnxevSCw&hl=ja&sa=X&ved=2ahUKEwjjzZK02-n8AhUymVYBHZUcBVUQ6AF6BAgJEAM#v=onepage&q=%22no%20more%20than%20i%20have%20done%20from%20you%22&f=false">Google</A>).<!--OTAで作業済み--></P>
+<P>The ciphertext on the verso is deciphered in the hand of Phelippes (the first half of the plaintext on the verso, the second half on the recto). The key (at least the substitution alphabet) is SP53/22 f.28.</P>
+
+
+<!--no.17 L'Aubespine to Mary. Expecting to hear of the receipt of his letters. Sends others. Has been so informed of her that he has been on the point of burning them. Begs advertisement from her as often as possible. Fr. In the handwriting of Phelippes. [*Letter from Chateuaneuf (via Gifford) was intercepted and read by Phelippes. 30 April 1586 according to the marginal note.]
+-->
+
+<H3>SP53/18 no.30: 2[12?] July 1586, Chartley. [Gilbert Curll? to Thomas Barnes?]</H3>
+<!--Her Majesty [the Queen of Scots] prays him to send the packet safely to the French Ambassador.-->
+<P>Decipher by Phelippes. The key (at least the substitution alphabet) is SP53/22 f.28, but the nomenclature (symbols with ":" for words such as ambassador, Chartley, majesty, packet, French) do not match.</P>
+
+
+<H3>SP53/18 no.42: 12 July 1586, Gilbert Curll to [Thomas Barnes]</H3>
+<P>In cipher with decipher.</P>
+<!--注文して取り寄せたが行方不明-->
+
+<H3>SP53/18 no.55: ? July 1586</H3>
+<P>The Babington postscript, that is, a draft of a postscript forged by Phelippes. Endorsed by Phelippes, "The Postscript of the Scottish Queen's letter to Babington". Deciphered in Sheila Richards (1974) and others.</P>
+
+<H3>SP53/18 no.60: [July] 1586</H3>
+<P>Five letters in cipher are on one sheet of paper, endorsed by Thomas Phelippes.</P>
+
+<H4>(1) Mary to Glasgow, 12 July and 30 June 1586</H4>
+<P>Marked "Decifred 16 July 1586", which appears to be the date of Phelippes' deciphering. Dated 12 July 1586, printed in Labanoff (1844) vi, p.362. The postscript is addressed to Monsieur de Mondevis [Montdevis], Cardinal de Laurea, dated 30 June 1586, printed in Labanoff vi, p.347<!--Loreaについて注あり-->, except for the complementary ending like "bonne bien affectionnee amye Marie R" and explanation of enclosures. The original decipherment by Phelippes (including the postscript) is SP53/18 no.41 (which I have not seen).</P>
+<P>The key is not found among SP53/23 (which includes ciphers related to Glasgow: no.17=no.52; no.34b/40b; no.38/44; no.39/45) or SP53/22, but can be reconstructed as follows. <font size="2">(Identification of the key was a bit more than trivial. The beginning and end of the ciphertext has interlinear decipherment for a few words (something like "ies peroys ceste heure" "l&egrave;sler chartley") in a later hand. It appears someone (unsuccessfully) tried to align the symbols with the words of the 12 July letter. I noted the pattern like "4. x 4." occurs several times in the ciphertext, and thought this must be either "quelque", "mesme", or "cherche". The first two instances of "quelque" in the 12 July letter occur at just about right places. With some knowledge of Mary's ciphers (e.g., symbols with diacritics tend to represent syllables such as "de", "en", "ant", or even "endre"), this allowed me to find matching symbols.)</font></P>
+<img src="mary_SP53_18_60Glasgow.png" width="600" style="margin:1em 1em 1em;"><br>
+
+<H4>(2) Mary to Glasgow, 16 July 1586</H4>
+<P>Marked "Decifred ut supra." Dated 16 July 1586, printed in Labanoff (1844), vi, p.381.</P>
+<P>The same cipher as in (1) is used.</P>
+<P>Recurring errors in the ciphertext are observed: use of "o" for A to represent ET; use of a symbol for A to represent E. (Note (28 August 2023): as it turned out, this symbol is more often used as "ET" than as "A". So, the correct identification may be "ET".)</P>
+
+<H4>(3) Mary to Charles Paget, 2 July 1586</H4>
+<P>Marked "Decifred 18 July 1586." This corresponds to the letter dated 2 July 1586, printed in Labanoff (1844) vi, p.358 from BL Cotton MS, of which SP53/18, no.28 (which I have not seen) seems to be a copy. <!--From symbol frequency, I thought "+" would be E. Then, I looked for a cipher with "+"="E" and found the key. At first, I thought the cipher used was more complicated and didn't apply it in earnest. I was induced to check it after realizing the 2 July letter is probable. The cipher text has 1889 symbols and the letter of 2 July has about 2400 letters, which seems to be just about right, considering that some words/syllables would be represented by one symbol.--></P>
+<P>The key is SP53/22 f.47 (Paget's Cipher).</P>
+
+<H4>(4) Mary to La Rue, 30 June 1586</H4>
+<P>Marked "Decifred." This appears to be Mary's letter to La Rue dated 30 June 1586 printed in Labanoff (1844), vi p.349, from SP53/18, with the key in SP53/22 f.36.</P>
+
+<H4>(5) Mary to D Lewes, 18 July 1586</H4>
+<P>Marked "Decifred 18 July 1586" but the contemporary decipherment appears to be lost. Deciphered in Sheila Richards (1974).</P>
+ 
+<H3>SP53/18 no.64</H3>
+<P>Five letters are on one sheet, and endorsed by Phelippes.</P>
+
+<H4>(1) "To Fulgeame"</H4>
+<P>The recipient is probably Godfrey Foljambe, also in record as Fuljambe, Fullgham, or Foulgiam.</P>
+<P>Marked "Decifred 21 Julye 1586" but the contemporary decipherment appears to be lost. My transcription is not ready.</P>
+
+<H4>(2) "To Fontenay"</H4>
+<P>Deciphered in Sheila Richards (1974)</P>
+
+<H4>(3) Mary to D Lewes</H4>
+<P>Marked "Decifred 18 July 1586" but the contemporary decipherment appears to be lost. Deciphered in Sheila Richards (1974).</P>
+
+<H4>(4) "To Mr Denis"</H4>
+<P>Deciphered in Sheila Richards (1974).</P>
+
+<H4>(5) "To Don Bernardino de Mendosa."</H4>
+<P>Marked "Decifred 21 July 1586" but the contemporary decipherment appears to be lost. Deciphered in Sheila Richards (1974).</P>
+ 
+<H3>SP53/18 no.76: 27 July 1586, Chartley, Mary to Englefield</H3>
+<P>In cipher. Deciphered in no.77 in the hand of Phelippes. The key appears to be Englefield's Cipher above.</P>
+ 
+<H3>SP53/18 no.83: 29 July 1586, Rouen, Bishop of Ross to Mary</H3>
+<P>In cipher, with interlinear decipherment by Phelippes. Deciphered in no.84, by Phelippes. The key appears to be SP53/22 f.50.</P>
+
+<H3>SP53/18 no.95: [July 1586]</P>
+<H4>(1) Mary to Paget</H4>
+<P>Deciphered in Sheila Richards (1974).</P>
+
+<H4>(2) "Mendosa to the Scottish Q"</H4>
+<P>Marked "decifred the 16th of August 1580" but the contemporary decipherment appears to be lost. Deciphered in Sheila Richards (1974).</P>
+ 
+<H3>SP53/19 (August, September 1586)</H3>
+<H4>SP53/19 no.72: 1 September 1586, Chateauneuf, French ambassador in England to Courcells in Scotland</H4>
+<P>In cipher. Deciphered in Sheila Richards (1974) no.25, with the key in SP106/1 no.36A.</P>
+ 
+<H4>SP53/19 no.73: Courcelles to Chateauneuf</H4>
+<P>In cipher. Deciphered in Sheila Richards (1974) no.26, with the key in SP106/1 no.36A.</P>
+
+<H4>SP53/19 no.108: 21 September 1586</H4>
+<P>Calendared as "Letter in cipher deciphered, respecting a report spread against the person addressed, that he was practising a marriage for the son of the Duke of Parma with the Lady Arbella Stewart. Indorsed by Phelippes "From Clitherow to Baynes"."
+ 
+<H3>SP53/20 (October-December 1586)</H3>
+<H3>SP53/20 no.4: Courcelles, French ambassador in Scotland, to Chateauneuf</H4>
+<P>Partially deciphered. Deciphered in Sheila Richards (1974).</P>
+
+
+
+<!--注文した
+SP53/16
+I need the following pieces (My source of information is CSP Colonial.)
+- no.25 Mons. Fontenay to Mons. Nau. In cipher.
+- no.26 Decipher of the same. 1 August [1585]
+
+SP53/18
+I need the following pieces. (My source of information is CSP Colonial.)
+
+no.16A Gilbert Curll? to [Thomas Barnes?], June? 1586 [In cipher, with decipher] printed in Pollen (1922), p.14
+no.30 [Guilbert Curll? to Thomas Barnes?], 2 July 1586 [In cipher with decipher]
+no.42 Gilbert Curll to [Thomas Barnes]. 12 July 1586. [In cipher with decipher]
+no.64 [Five] Letters in cipher ... on one sheet
+no.76 Queen of Scots to Sir Francis Englefield. [In cipher]
+no.77 Deciphered copy.
+-->
+
+<H2>Mary's Letters in Cipher Discovered in the French National Library (1578-1584)</H2>
+<P>Mary's letters in cipher were discovered in the Biblioth&egrave;que nationalde de France (BnF, the French national library) and reported in George Lasry, Norbert Biermann, Satoshi Tomokiyo (2023), "Deciphering Mary Stuart's Lost Letters from 1578-1584", <A HREF="https://www.tandfonline.com/doi/full/10.1080/01611194.2022.2160677">Cryptologia</A>.</P>
+<P>Of the total of 57 letters, 49 are hitherto unknown letters (of the other eight, seven are preserved in plaintext in other archives and one has only small portions in cipher). Most (54) are addressed to Michel de Castelnau, seigneur de La Mauvissi&egrave;re, the French ambassador in London (of the other three, two are to La Mothe-F&eacute;nelon and one is from Mary's secretary to Castelnau's secretary).</P>
+<P>My introduction of the paper is <A HREF="http://cryptiana.web.fc2.com/code/mary_castelnau_e.htm">here</A> (and <A HREF="http://cryptiana.web.fc2.com/code/mary_castelnau.htm">here</A> in Japanese).</P>
+
+<H2>SP53/22</H2>
+<P>SP53/22 (<A HREF="https://discovery.nationalarchives.gov.uk/browse/r/h/C3828782">TNA catalogue</A>) is a collection of "Ciphers, including those for papers seized at Chartley Castle on the discovery of the conspiracy in 1586 which were used, when deciphered, to implicate Mary and bring her to trial." (Mary was moved from Tutbury Castle to Chartley Manor about Christmas 1585. She was arrested on 11 August 1586 for implication in the Babington Plot while riding.<!--https://en.wikipedia.org/wiki/Chartley_Castle-->).</P>
+
+<P>The title page reads "Cyphers of Mary Q. of Scots / These are arranged alphabetically / and it will be best to have / each one repaired separately and put / upon thin strong paper and all / of one uniform size." That is, ciphers are arranged according to names (starting with "anonymous") and it looks each sheet is extended to a uniform size by pasting additional paper on the margin. In the following, my transcription may include many errors (especially when marked with *).</P>
+<P>Many ciphers of this volume are endorsed. The signers appear to be some of the principal councillors of Elizabeth: Burghley, Derby, Hunsdon, Cobham, Howard, James Crost, and Walsingham. <span class="note">(Teulet, <i>Relations Politiques de la France Et de L'Espagne Avec L'Ecosse</i>, vol.3 (<A HREF="https://books.google.co.jp/books?id=xqIxAQAAIAAJ&pg=PA351&lpg=PA351&dq=burghlay+walsingham&source=bl&ots=kjDVlqyiRc&sig=ACfU3U2vPl4Yw2JE_y2PjdSwkgmwIs4_jQ&hl=ja&sa=X&ved=2ahUKEwjcgsKkuKz3AhWtQPUHHfvyCrgQ6AF6BAgFEAM#v=onepage&q=burghlay%20walsingham&f=false">Google</A>), p.341, n.1. An instance of such signatures is found on p.351.)</span> The endorsement is usually omitted in the following.</P>
+
+
+<H3>SP53/22 f.1 <!--003.jpg 004.jpg--></H3>
+<P>The nomenclature (English) symbols have a dot to the right.</P>
+
+<H3>SP53/22 f.2<!--005.jpg--></H3>
+<P>A small nomenclature. The symbols have a dot or a vertical stroke to the right. It may look like a sequel to f.1, but it is not the case. The symbol for "uppon" (line 2) is "the Lord Scrope" (column 2) in f.1; the symbol for "ion" (line 3) is "her" (column 6) in f.1.; "have" is in both (column 6 in f.1, line 1 in f.2); "dilligence" is in both (column 5 in f.1, line 4 in f.2).</P>
+
+<H3>SP53/22 f.3<!--006.jpg--></H3>
+<P>Anonymous cipher</P>
+
+<H3>SP53/22 f.4<!--007.jpg--></H3>
+<P>Anonymous cipher</P>
+ 
+<H3>SP53/22 f.5<!--008.jpg--></H3>
+<P>Anonymous cipher</P>
+
+
+<H3>SP53/22 f.6<!--009.jpg--></H3>
+<P>Anonymous cipher. The substitution alphabet has an additional symbol after Z (probably "&").</P>
+ 
+
+<H3>SP53/22 f.7<!--010.jpg 011.jpg--> ("Anonymous" "Monsieur J'Alnenodetgvd**")</H3>
+<P>Anonymous cipher</P>
+ 
+
+<H3>SP53/22 f.8<!--012.jpg--></H3>
+<P>Anonymous cipher</P>
+ 
+
+<H3>SP53/22 f.9<!--013.jpg--></H3>
+<P>Anonymous cipher</P>
+ 
+
+<H3>SP53/22 f.10<!--014.jpg--></H3>
+<P>Anonymous cipher. The substitution alphabet has an additional symbol after Z ("et").</P>
+ 
+
+<H3>SP53/22 f.11<!--015.jpg--></H3>
+<P>Anonymous cipher</P>
+ 
+
+<H3>SP53/22 f.12<!--016.jpg 017.jpg--> ("Anonymous", Christopher Hatton)</H3>
+<P>A numerical cipher.</P>
+<P>"To the right Hono<sup>ble</sup> his Singuler* / good master Sr Christopher / Hatton knyght virerhamt* / et* of her ma<sup>ties</sup> most
+honorable pryvie counsel / Court"</P>
+ 
+<H3>SP53/22 f.13<!--018.jpg 019.jpg --> ("Anonymous")</H3>
+<P>A list of pseudonyms.</P>
+
+<H3>SP53/22 f.[14] <!--020.jpg 021.jpg--> ("Anonymous")</H4>
+<P>The substitution alphabet has additional symbols "W" and "TH" (thorn?) after Z.</P>
+<P>The nomenclature symbols have a dot or a vertical stroke to the right.</P>
+
+<H3>SP53/22 f.15 <!--022.jpg 023.jpg--></H3>
+<P>"Queen of Scots" "after 1571 after 1581 Sir F. Drake"</P>
+ <P>The nomenclature symbols (including syllables) have a dot to the right, a virgule to the right, or a slash.</P>
+
+<H3>SP53/22 f.16 <!--024.jpg 025.jpg--> (Curle and Barnes)</H3>
+<P>"Barnes" "Alphabet betwene [Gilbert] Curle and [Thomas] Barnes". <span class="note">(For Barnes, see Pollen (1922) p.1-2; Alford (2012) p.203.)</span></P>
+ 
+<H3>SP53/22 f.17 <!--026.jpg 027.jpg--> (Gabriel Blunt)</H3>
+<P>Substantially the same as f.18.</P>
+<P>"Blunt" "the alphabet betwene queen's* ma<sup>te</sup> and Gabriel Blunt"</P>
+ 
+
+<H3>SP53/22 f.18<!--028.jpg 029.jpg--></H3>
+<P>Substantially the same as f.17.</P>
+ <P>Printed in Schooling, "Secrets in Cipher", <i>Pall Mall Magazine</i>, VIII (1896), p.119-129, No.9 (<A HREF="https://books.google.co.jp/books?id=ucohAQAAIAAJ&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q=mary&f=false">Google</A>)</P>
+
+<H3>SP53/22 f.19<!--030.jpg 031.jpg--> ("Bruce*")</H3>
+<P>"Alphabet with Bruce*"</P>
+ 
+
+<H3>SP53/22 f.20 <!--032.jpg 033.jpg--> ("Br&auml;gebingth*")</H3>
+<P>The nomenclature is in Latin.</P> 
+
+<H3>SP53/22 f.21 <!--034.jpg 035.jpg--></H3>
+<P>[endorsement illegible]</P>
+<!--Probably used in SP53/22 no.12 何のこと？f.40は19と書いてあるが?〓-->
+
+<H3>SP53/22 f.22 <!--036.jpg 037.jpg--> (Chateauneuf)</H3>
+<P>"Alphabete betwene the Scottish Q. and Mons. Chauneuf"
+"Chastenauf"
+"Alphabet betwene the Scottish Q. and the French Embassador [which] now is Mons. de Chasteauneuf.</P>
+<P>The substitution alphabet has an additional symbol after Z (probably "&").</P>
+<P>There is a symbol for "1580", but it is before Chateauneuf became ambassador. There is a symbol for "Sir Amias Paulet", who became Mary's keeper in January 1585.</P>
+<P>This may be the one Mary sent early in 1586 <span class="note">(Mary to Ch&acirc;teauneuf, 31 January 1586, printed in Labanoff (1844), vi, p.258; Guy (2004), p.480; Ch&acirc;teauneuf's narrative says it arrived on 1 March (NS?), op. cit. p.283)</span>.</P>
+ 
+<P>The nomenclature symbols have a virgule to the right, a dot or two dots to the right, or an overbar.</P>
+<P>"En escripuant de ce chiffre Il fault mectre les virgules poincts seuls et deux points et toutes aultres marques adjoustees dans ce p[oi]nt Alphabet aux caracteres d'Icluy* dautant que la diversite desdits* marques faict aussi signifier ausdits* caracteres diverses choses connue pour exemple o simple signiffie la lettre A Et avec un poinct en ceste sorte* o. Il signiffier ance. avec deux points o: Il signiffier escri et avec une virgule o, Il signiffie Le Pape."</P>
+ 
+<H3>SP53/22 f.23 <!--038.jpg 039.jpg--> (Cherelles)</H3>
+<P>"Alphabett betwene the Q. of Scotts & Cherelles"</P>
+<P>The substitution alphabet has an additional symbol after Z (probably "&").</P>
+<P>Most nomenclature symbols have an umlaut or a virgule to the right.</P>
+
+<H3>SP53/22 f.24 <!--040.jpg 041.jpg--> (Courcelles)</H3>
+<P>"Alphabett betwene the Q. of Scottes and Courcelles"</P>
+<P>The substitution alphabet has an additional symbol after Z (probably "&").</P>
+ 
+<H3>SP53/22 f.25 <!--042.jpg 043.jpg--> (Gabriel Denis)</H3>
+<P>"Alphabet with Gabriel Denis"</P>
+<!--https://www.cambridge.org/core/journals/british-catholic-history/article/abs/fr-joseph-creswells-informacion-for-philip-ii-and-the-archduke-ernest-ca-august-1594/4109E08A623539B86E4860E9233A67C6
+Gabriel Denis (1537-1626) had arrived in the Low Countries in 1561 and became a pensioner with military and advisory duties under Juan, Don (Loomie, p 248)-->
+<P>Use: Mary to Gabriel Denis, Chartley, 20 June 1586 (Sheila Richards, <i>Secret Writing in the Public Records</i>, no.20)</P>
+
+<H3>SP53/22 f.26 <!--044.jpg 045.jpg--> (George Douglas)</H3>
+<P>"Geo. Douglas"</P>
+ 
+<P>The nomenclature elements have a dot to the right, an umlaut, a slash to the right, a virgule to the right, or "u" to the right.</P>
+
+<H3>SP53/22 f.27 <!--046.jpg 047.jpg--></H3>
+<P>Very similar to f.28. (The nomenclature is arranged in the order: symbols with no diacritics, those with ".", those with ":", those with "?", and those "!".)</P>
+<P>The substitution alphabet and symbols without diacritics are very similar to those in f.49 (with a slight difference in form in symbols for "N").</P>
+<P>"Alphabet for Emilio" "Emilio / see also Pierre"</P>
+<P>Emilio was Barnes' brother? (Pollen (1922), p.10)</P>
+
+<H3>SP53/22 f.28 <!--048.jpg 049.jpg--></H3>
+<P>Very similar to f.27. (The nomenclature is arranged in the order: symbols with no diacritics, those with ".", those with "!", those with ":", and those "?".)</P>
+<P>"Alphabet betwene [Gilbert] Curle and Emilio"</P>
+<P>"Emilio / see also Pierre"</P>
+ 
+
+<H3>SP53/22 f.29 <!--050.jpg 051.jpg-->("Englefield")</H3>
+<P>"Alphabet with Sr Fr. Englesel"
+"acknowledged by me Gilbert Curll xxix september 1586"  (Mary's secretary Gilbert Curle was implicated in the Babington Plot and was arrested around August 1586.)</P>
+ 
+<H3>SP53/22 f.30<!--052.jpg--></H3>
+<P>A placeholder page reading: "Evelin see treteed*"</P>
+
+<H3>SP53/22 f.31 <!--053.jpg 054.jpg--> (Fontenay, James VI)</H3>
+"Duke dalencon" "LAbbier*" "R. d'Escosse + Fontenay" "Fontenay"
+<P>For Fontenay, see Strickland (<A HREF="https://books.google.de/books?id=oh8WQaJDkmcC&lpg=PA134&ots=eYYzHLW-Q3&dq=%22Rieusieux%22%20%22Fontenay%22&hl=de&pg=PA134#v=onepage&q=Nau%20%22Rieusieux%22%20%22Fontenay%22&f=false">Google</A>).</A> 
+ 
+<P>Use: James VI of Scotland to Mary (22 July 1584) (SP53/13, no.37); Also Fontenay's letters printed in <i>Secret Writing in the Public Records</i>.</P>
+
+<H3>SP53/22 f.32<!--055.jpg--></H3>
+<P>The note in the bottom-right illegible ("cipher with SSS Charsenters***"?).</P>
+<P>French. There is "1583" in the nomenclature.</P>
+<P>The substitution alphabet has an additional symbol after Z (probably "&").</P>
+<P>The nomenclature elements have dot(s) to the right or above.</P>
+
+<H3>SP53/22 f.33 <!--056.jpg 057.jpg--> (Claude Hamilton)</H3>
+<P>"Alphabet betwene the Scottish Q. and Cl[aude] Hamilton" "Cl. Hamilton"</P>
+<P>The substitution alphabet has an additional symbol after Z ("et").</P>
+<P>The nomenclature has "M<sup>r</sup> de Chasteauneuf Ambassadeur du Roy tres repun* en Ang^r".</P>
+<P>The nomenclature elements have dot(s) or a virgule.</P>
+
+<H3>SP53/22 f.34 <!--058.jpg 059.jpg--> (Huntley the Elder)</H3>
+<P>"for therle of Huntley the old"</P>
+<P>"Huntley the Elder" (?<A HREF="https://en.wikipedia.org/wiki/George_Gordon,_5th_Earl_of_Huntly">Wikipedia</A>).</P>
+  
+
+<H3>SP53/22 f.35 <!--060.jpg 061.jpg--> (Huntley the Younger)</H3>
+<P>"Hut: the new"</P>
+<P>"Huntley the Younger" (? <A HREF="https://en.wikipedia.org/wiki/George_Gordon,_1st_Marquess_of_Huntly">Wikipedia</A>)</P>
+<P>"alphabet with the Erle of Huntley"</p>
+ 
+<H3>SP53/22 f.36 <!--062.jpg 063.jpg--> (La Rue)</H3>
+<P>"Alphabet betwene the Scottish Q. and La Rue" "La Rue".</P>
+<P>The substitution alphabet has an additional symbol after Z ("et").</P>
+<P>Le P[erre?] la Rue was Mary's chaplain (Teulet, iii, p.341 (<A HREF="https://books.google.co.jp/books?id=xqIxAQAAIAAJ&pg=PA351&lpg=PA351&dq=burghlay+walsingham&source=bl&ots=kjDVlqyiRc&sig=ACfU3U2vPl4Yw2JE_y2PjdSwkgmwIs4_jQ&hl=ja&sa=X&ved=2ahUKEwjcgsKkuKz3AhWtQPUHHfvyCrgQ6AF6BAgFEAM#v=onepage&q=%22la%20rue%22&f=false">Google</A>). According to Bossy, <i>Under the Molehill</i>, p.124, Monsieur de la Rue was an alias of "Mary's clandestine Jesuit servant Henri de Samerie".</P>
+ 
+
+<H3>SP53/22 f.37 <!--064.jpg 065.jpg-->(Liggons)</H3>
+<P>"Alphabet with Liggons" "Liggons"</P>
+ 
+<H3>SP53/22 f.38 <!--066.jpg 067.jpg--> (Liggons)</H3>
+<P>"part of Liggons Alpha=bet" "Liggons" "Betwene Liggons & M. Cornwallis** … Liggons"</P>
+ 
+<H3>SP53/22 f.39 <!--068.jpg 069.jpg--> (Bernardino de Mendosa)</H3>
+<P>"Mendosa" "Alphabet with Duc Bernardino de Mendosa"</P>
+ 
+<P>Use: Mary to Don Bernardino de Mendoza, Chartley, 2 July 1586 (Sheila Richards, <i>Secret Writing in the Public Records</i>, no.22)</P>
+
+<H3>SP53/22 f.40 <!--070.jpg 071.jpg--></H3>
+<P>A short ciphertext on the verso (apparently not in the cipher on the recto) is annotated as "This alphabet is to serve be=twene his ma<sup>tie</sup> and Mercuir" "Mercuir is Abington [signed] Tho: Phelippes"</P>
+ 
+
+<H3>SP53/22 f.41 <!--072.jpg 073.jpg--> (Morgan)</H3>
+<P>"Alphabet with Morgan" "Morgan"</P>
+<P>Codebreaker's key is in SP53/23 no.40.</P>
+ 
+<H3>SP53/22 f.42 <!--074.jpg 075.jpg--> [addition to f.41]</H3>
+<P>"Let these letters and characters following to be for the names hereafter mentioned"</P>
+<P>"Addition to the Alphabett betwene the Scottish Q. and Morgan" "Morgan"</P>
+
+<H3>SP53/22 f.43 <!--076.jpg 077.jpg--> (Morgan)</H3>
+<P>"Alphabet with Morgan" "Morgan"</P>
+<P>The substitution alphabet is substantially identical with f.45, but not the nomenclature. F.43 is English, while f.45 is French.)</P>
+ 
+<P>Use: Thomas Morgan to Mary (1585, Mar. 30./Apr. 9.) (SP53/15, no.64, no.65) *Code for "and" on line 1 confirms this is f.43, not f.45.</P>
+
+<H3>SP53/22 f.44 <!--078.jpg 079.jpg--> (Morgan) (three ciphers)</H3>
+<P>"Morgan" "Alphabet with Morgan"</P>
+<P>"Alphabet with Morgan" "Morgan"</P>
+<P>Most nomenclature elements have some marks.</P>
+
+<H3>SP53/22 f.45 <!--080.jpg 081.jpg--> (Morgan)</H3>
+<P>The substitution alphabet is substantially identical with f.43, but not the nomenclature. F.43 is English, while f.45 is French.</P>
+<P>"Alphabet betwene the Scottish Q. and Morgan"</P>
+<P>"This cypher was written by me at her m<sup>ts</sup> comandment xxi sept. I meane the 02* my miltods* / Gilbert Curll"</P>
+ 
+<H3>SP53/22 f.46 <!--082.jpg 083.jpg--> (Paget)</H3>
+<P>"Lord* Paget" "the Lo: Pa:"</P>
+ 
+<P>Use: Mary to Baron Paget, Chartley, 27 July 1586 (Sheila Richards, <i>Secret Writing in the Public Records</i>, no.21)</P>
+
+<H3>SP53/22 f.47 <!--084.jpg 085.jpg--> (Paget)</H3>
+<P>"Alphabet with Charles Pagett" "Gilbert Curll" "Char Paget"</P>
+<P>Use: Charles Paget to Mary, 4 January 1585 (SP53/15 no.6), 27 April 1585 (SP53/15 no.75), 17 July 1585 (SP53/16 no.15)</P>
+
+<H3>SP53/22 f.48 <!--086.jpg 087.jpg--> (Prelio*)</H3>
+<P>"Alphabet with Prelio*" "Prelio*"</P>
+ 
+
+<H3>SP53/22 f.49 <!--088.jpg 089.jpg--> ("Pierre soigne and Emilio russo")</H3>
+<P>"Bac:" "Alphabet with Emilio" "see also Emilio russo / Pierre Soigne"</P>
+<P>The substitution alphabet and symbols without diacritics are very similar to those in f.27 (with a slight difference in form in symbols for "N").</P>
+<P>The nomenclature includes not only symbols for common words but also jargons ("for" representing "ambassador", "if" representing "Majesty", etc.)</P>
+<P>Use: Curll to -- (20 May [1586?]) (SP53/17 no.73)</P>
+
+<H3>SP53/22 f.50 <!--090.jpg 091.jpg--> (Bishop of Ross)</H3>
+<P>"Alphabet with the B. of Rosse"</P>
+<P>Most nomenclature elements have double slashes or double dots to the right.</P>
+
+<H3>SP53/22 f.51 [skipped number]</H3>
+
+<H3>SP53/22 f.52 <!--092.jpg 093.jpg--></H3>
+<P>"Cifer with* Spanish Spye:" "Spanish spy"</P>
+<P>A short ciphertext. (Transcription: 6b;4b;8b;8b;5;10b;7b;4;7b;7;4b;2;4;7;9b;2b;8;2;9b;8;6b;8;7;12;9;6;6;9;0;5;
+8;10b;8b;5;2;8b;5b;2b;9;5b;0;0;9;2b;9;2;5;9;2;2;6b;3b;9;2b;0;2;3b;3;5;
+3b;5b;11;7b;8b;8;10;5;4;3;5;2b;13;9;5b;2;3;9b;6b;0;9;0;13;7;5;)</P>
+
+<H3>SP53/22 f.53 <!--094.jpg 095.jpg--></H3>
+<P>A cipher with a nomenclature in French including Charles Paget (83), Charles Arundel (84), Morgan (85), and Fontenay (86) among many others.</P>
+
+<H3>SP53/22 f.54<!--096.jpg 097.jpg--> (Thomas Throckmorton)</H3>
+<P>A cipher with a short nomenclature in English. "Alphabet with Tho. Throgmorton" "Throgmorton ***"</P>
+<P>Thomas Throckmorton was a trusted friend of Mary. He was the brother of Francis Throckmorton executed in 1584 but he had fled to Paris in 1582 <span class="note">(Conyers Read (1909), <i>The Bardon Papers</i>, p.93)</span>.</P>
+
+<H3>SP53/22 f.55 <!--098.jpg 099.jpg--> (La Mothe-Fenelon)</H3>
+<P>"Chiffre pour service entre Monsieur de la Mothe fenelon, ch[eva]l[ie]r de l[']ordre du Roy gentil gouuer ors^s
+de sa chaumbre son conseiller et ambassadeur 
+pour sa ma<sup>te</sup> en ang<sup>re</sup> et le s<sup>ur</sup>* sr* lers*" </P>
+<P>"1571" "Fenelon" "Rerad*" "see also Fenelon"</P>
+<P>Codebreaker's key is in SP53/23 no.13 and no.56.</P>
+<P>La Mothe-Fenelon was a French ambassador in England from 1568-1575 <span class="note">(<A HREF="https://fr.wikipedia.org/wiki/Bertrand_de_Salignac_de_La_Mothe-F%C3%A9nelon">Wikipedia</A>)</span>.</P>
+<P>This cipher appears to be a typical French court cipher as of 1571, consisting of a homophonic cipher alphabet with symbols for "nulles", "doubles", "monosyllables", and a short list of names.</P>
+
+<H2>SP53/23</H2>
+<P>SP53/23 (<A HREF="https://discovery.nationalarchives.gov.uk/details/r/C3828783">TNA catalogue</A>) includes a collection of ciphers broken by John Somer. (The first page is a note attributing these to John Somer. So, "no. 1" is the second page. Some are given two numbers <font size="2">*Those deciphered during the reign of Queen Elizabeth are also given numbers of their own sequence. So "no. 7" is also given "no. 1".</font>. Numbering from no.48 is mine. The first eight are not directly related to Mary and are already described (with some others) in <A HREF="elizabeth.htm">another article</A>, but are included here for completeness' sake.)</P>
+<P>The ciphers in this volume span 1554-1577. Probably, this is when Somer was active in codebreaking. (Somer’s work is also in Cotton MS, Caligula III, which seems to be from 1570 or 1575 (need further check).) In the following, my transcription may include many errors (especially when marked with *).</P>
+
+<P><b>French ciphers in the 1550s</b></P>
+<H3>SP53/23 no. 1 (1554) Cipher between King Henry II of France and Antoine de Noailles</H3>
+<P>Antoine de Noailles <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Antoine,_1st_comte_de_Noailles">Wikipedia</A>)</span>, was a French ambassador (1553-1556) in England<!--Secret Writing p.17--></P>
+
+<H3>SP53/23 no. 2 (1557) Cipher between Noailles the Prothonotary and d'Oisel</H3>
+<P>Fran&ccedil;ois de Noailles the Prothonotary was a French ambassador in England <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Fran%C3%A7ois_de_Noailles">Wikipedia</A>)</span> and d'Oisel <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Henri_Cleutin">Wikipedia</A>)</span> was a French representative in Scotland.</P>
+
+<H3>SP53/23 no. 3 (1557) Cipher between Henry II and d'Oisel</H3>
+
+<H3>SP53/23 no. 4 (1557) Cipher between Sevre and Captain of Dieppe</H3>
+<P>Sevre was a French ambassador in Portugal <span class="note">(cf. <A HREF="http://en.wikipedia.org/wiki/Michel_de_S%C3%A8vre">Wikipedia</A>)</span>. The Captain of Dieppe may be ?Monsieur de Fosse [Fors] <span class="note">(<A HREF="https://www.google.co.jp/search?q=%22captain+of+dieppe%22+fors&ie=utf-8&oe=utf-8&hl=ja#hl=ja&q=%22monsieur+de+fosse%22+dieppe">search on Google</A>)</span>.</P>
+
+<H3>SP53/23 no. 5 (1557) Cipher between the Lord of Lorne in Scotland and a French man</H3>
+<H3>SP53/23 no. 6 (1557) Cipher between a French noble and one of Scotland</H3>
+<br>
+
+<P><b>Ciphers of Mary of Guise, Queen Dowager of Scotland</b></P>
+<H3>SP53/23 no. 1/7 (1559) Cipher between Mary of Guise and Gilles de Noailles</H3>
+<P>This is a cipher between Mary of Guise, Queen Dowager of Scotland, and "Noailles the Counsellour", Gilles de Noailles <span class="note">(<A HREF="http://fr.wikipedia.org/wiki/Gilles_de_Noailles">Wikipedia</A>)</span>, French ambassador to the Queen Dowager<!--Noailles the Councillorはhttp://www.british-history.ac.uk/cal-state-papers/venice/vol7/pp79-94によると1559.5.にロンドン着任．https://books.google.co.jp/books?id=oEgTAAAAYAAJ&pg=PA617&dq=%22noailles%22+1559+ambassador&hl=ja&sa=X&ei=e4_LVKKMHeaomgWL-YKIDw&ved=0CCwQ6AEwAg#v=onepage&q=%22noailles%22%201559%20ambassador&f=falseによるとちょうど５月からロンドン発の手紙があるGilles de Noaillesが該当；https://books.google.co.jp/books?id=Z1FAAQAAMAAJ&pg=PA210&dq=%22noailles%22+1559+ambassador&hl=ja&sa=X&ei=e4_LVKKMHeaomgWL-YKIDw&ved=0CDQQ6AEwAw#v=onepage&q=%22noailles%22%201559%20ambassador&f=false（Calendar of State Papers: Foreign Series, of the Reign of Elizabeth ...）の索引を見てもGilleでよい--> </P>
+<P>This corresponds to the cipher of Table 1, as reconstrued in V. Nachef, J. Patarin, and A. Dubois-Nayt, "Mary of Guise's Enciphered Letters" in Ryan et al. (ed), <i>The New Codebreakers: Essays Dedicated to David Kahn on the Occasion of His 85th Birthday</i> (2016). It was used in Mary of Guise's three letters in 1559. (Their Table 1 is a cipher used in a letter of Mary of Guise to Antoine de Noaille in 1553.)</P>
+<!--https://books.google.co.jp/books?id=NA_NCwAAQBAJ&pg=PA7&lpg=PA7&dq=%22mary+of+guise%27s+enciphered+letters%22&source=bl&ots=fpj3mxXd_d&sig=ACfU3U0954RTzEu1JcbnmmddtKFrf3pmjg&hl=ja&sa=X&ved=2ahUKEwiag_Wi1aTgAhWGUbwKHXepAAcQ6AEwCXoECAYQAQ#v=onepage&q=%22mary%20of%20guise's%20enciphered%20letters%22&f=false-->
+
+<H3>SP53/23 no. 2/8 (1560) Cipher between the Queen Dowager and the Cardinal of Lorraine and Duke of Guise</H3>
+<P>The substitution alphabet has an additional symbol after Z ("&"?).</P>
+
+
+<P><b>Ciphers of Mary, Queen of Scots</b><P>
+<H3>SP53/23 no. 3/9 (1569) Cipher between Ch&acirc;tellerault and the Commendator of Kilwinning of Scotland</H3>
+<P>This is between the Duke of Ch&acirc;tellerault <span class="note">(<A HREF="http://en.wikipedia.org/wiki/James_Hamilton,_Duke_of_Ch%C3%A2tellerault">Wikipedia</A>)</span>, regent for Mary, Queen of Scots, and the Commendator of Kilwinning of Scotland <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Gavin_Hamilton_%28archbishop_of_St_Andrews%29">Wikipedia</A>)</span></P>
+
+<H3>SP53/23 no. 4/10 (1571) Cipher between Mary, Queen of Scots, and "some of hers" in Scotland</H3>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+
+<H3>SP53/23 no. 5/11 (1571) Cipher between Mary, Queen of Scots, and the Duke of Alva, Spanish lieutenant general in the Low Countries</H3>
+
+<H3>SP53/23 no. 6/12 (1571) Cipher between Mary, Queen of Scots, and la Motte, French ambassador</H3>
+<!--https://books.google.co.jp/books?id=0BArv_j5WskC&pg=PA396&lpg=PA396&dq=%22la+motte%22+ambassador+mary&source=bl&ots=gPkMCgPURb&sig=HKwx8s3CUubkCzUVNPrYQ3nfQPY&hl=ja&sa=X&ei=t7TMVJKBDOPcmgXQy4HQCg&ved=0CB0Q6AEwAA#v=onepage&q=%22la%20motte%22&f=false--></P>
+
+<H3>SP53/23 no. 7/13 (1570) Cipher between Mary, Queen of Scots, and la Motte, French ambassador</H3>
+<P>The original is in SP53/22 f.55.</P>
+
+<H3>SP53/23 no. 28/34 [sic, filed before no.2/8]<!--私が受け取ったコピーではno.8/14の前にあった;no.9/15は欠番--> (1573) Lethington [Liddington] and Grange and their secretary.</H3>
+<P>This is a cipher between Lethington [Liddington] <span class="note">(<A HREF="http://en.wikipedia.org/wiki/John_Maitland,_1st_Lord_Maitland_of_Thirlestane">Wikipedia</A>)</span><!--, holding her party in Scotland--> and Grange <span class="note">(<A HREF="http://en.wikipedia.org/wiki/William_Kirkcaldy_of_Grange">Wikipedia</A>)</span> and a secretary of theirs sent into France to obtain an aid, a little before Edinburgh castle was besieged.</P>
+
+<H3>SP53/23 no. 8/14 B(1570) Cipher between Mary, Queen of Scots and Lethington [Lidington]</H3>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+
+<H3>SP53/23 no. 10/16 (1571) Cipher between Mary, Queen of Scots and Lethington [Lidington]</H3>
+
+<H3>SP53/23 no. 11/17 (1571) Cipher between Mary, Queen of Scots and the Bishop of Glasgow</H3>
+<P>The Archbishop of Glasgow was Mary's ambassador in France.</P>
+
+<H3>SP53/23 no. 12/18 (1571) Cipher between Mary, Queen of Scots and Verac; also (1572) between la Motte and Lethington</H3>
+<P>Verac was in Scotland for the French King. La Motte [Mothe]-Fenelon was a French ambassador in England.</P>
+
+<H3>SP53/23 no. 13/19 (1571) Cipher between la Motte and Verac</H3>
+<P>With symbols for double letters, names, and short words, this appears to be a typical French court cipher at the time.</P>
+
+<H3>SP53/23 no. 14/20 (1572) Cipher between la Motte and Verac</H3>
+
+<H3>SP53/23 no. 15/21 (1571) Cipher between Mary, Queen of Scots and Lord Seton</H3>
+<P>Lord Seton <span class="note">(<A HREF="http://en.wikipedia.org/wiki/George_Seton,_7th_Lord_Seton">Wikipedia</A>)</span> was sent to the Duke of Alva for aid and money.</P>
+
+<H3>SP53/23 no. 16/21 (1571) Another alphabet of the L. Setons</H3>
+
+<H3>SP53/23 no. 17/23 (1571) Another alphabet of the L. Setons</H3>
+
+<H3>SP53/23 no. 18/24 (1571) Queen of Scots</H3>
+
+<P><b>Ciphers of Agents?</b></P>
+
+<H3>SP53/23 no. 19/25 (1571) Bishop of Ross and his servant Charles Baily, bourgougnon</H3>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+
+<H3>SP53/23 no. 20/26 (1571) Bishop of Ross and a servant of his in Scotland</H3>
+
+<H3>SP53/23 no. 21/27 (1571) L. of Granges and some noble man in Scotland</H3>
+
+<H3>SP53/23 no. 22/28 (1569) "Another Scottish Alphabeth. To Meluil. from som of the sc. Q. party"</H3>
+
+<H3>SP53/23 no. 23/29 (1571) "Another Scottish Alphabeth from the L. of Liddington"</H3>
+
+<H3>SP53/23 no.24/30 (1570) <!--(filename: SP_53_23_002.jpg)--> =no.65 (1571) <!--(filename: SP_53_23_044.jpg)--> Alphabeth betwene an Englisshman in flandres, and his frend in England unnamed</H3>
+
+<H3>SP53/23 no.25/31 (1571) <!--(filename: SP_53_23_003.jpg)--> Alphabeth of an English Rebell (man or woman) fled into flandres, To som frend of his in England</H3>
+ 
+<H3>SP53/23 no.26/32 <!--(filename: SP_53_23_004.jpg)--> Another Scottish Alphabeth</H3>
+ 
+<H3>SP53/23 no.27/33 <!--(filename: SP_53_23_005.jpg)--> Alphabeth betwene the frenche king and Verac or du Croc his agent in Scotland</H3>
+ 
+
+<H3>SP53/23 no.28/34 <!--(filename: SP_53_23_006.jpg)--> Alphabeth betwene theim* of Edinburg Castle: LL. Grange, and Liddington and James Kirkandy soliciting for aid for them, in France</H3>
+<P>James Kircaldy held the Edinburgh Castle for Mary until 1573 <span class="note">(<A HREF="https://en.wikipedia.org/wiki/James_Kirkcaldy">Wikipedia</A>)</span>.</P>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+ 
+<H3>SP53/23 no.29/35 (1574) <!--(filename: SP_53_23_007.jpg)--> Alphabeth betwene one fled into the Low Contrees, naming himself in his letter J. Carr. directed to his suster Dorothy Carr. and dated from St Davids in Walls</H3>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+ 
+
+<H3>SP53/23 no.30/36 (1573) <!--(filename: SP_53_23_008.jpg)--> Alphabeth from one that was a rebell. written* to his wife gone over with* the Comtesse of Northumberland</H3>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+ 
+<H3>SP53/23 no.31/37 (1574) <!--(filename: SP_53_23_009.jpg)--> Alphabeth betwene s<sup>r</sup> Francis Inglefeld [Englefield] and the Duchesse of Feria, he being in the low contrees and she in Spayne</H3>
+<P>The alphabet includes "ll". It also has an additional symbol after Y ("w") (there is no "Z").</P>
+<P>Use: Cotton MS, Caligula, C III f.512</P>
+
+<H3>SP53/23 no.32/38 (1574) <!--(filename: SP_53_23_010.jpg)--> Alphabeth betwene s<sup>r</sup> Francis Inglefeld being in the low contrees, and Doctor Sanders being in great credit in Spayne</H3>
+
+<H3>SP53/23 no.33/39 (1574) <!--(filename: SP_53_23_011.jpg)--> Alphabeth betwene a Scottish gentleman &* an Englissh woman</H3>
+ 
+<P>Use: Cotton MS, Caligula, C III f.510</P>
+<P>Printed in Schooling, "Secrets in Cipher", <i>Pall Mall Magazine</i>, VIII (1896), p.119-129, No.13 (<A HREF="https://books.google.co.jp/books?id=ucohAQAAIAAJ&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q=mary&f=false">Google</A>).</P>
+
+<P><b>Mary and Ambassadors</b></P>
+<H3>SP53/23 no.34/40 (1575) <!--(filename: SP_53_23_012.jpg)-->  Alphabeth betwene the Bisshop of Glasco the Q of Scots ambassador in france and a brother of his in Scotland & serveth also to that Queene</H3>
+<P>Substantially identical to no.39/45.</P>
+<P>James Beaton, Archbishop of Glasgow, was the second of the seven sons of John Beaton <span class="note">(<i>Biographical Dictionary of Eminent Scotsmen</i> (1853), vol.1 (<A HREF="https://books.google.co.jp/books?id=6jkEAAAAYAAJ&pg=PA183&dq=%22john+beaton%22+%22archbishop+of+glasgow%22&hl=ja&newbks=1&newbks_redir=0&sa=X&ved=2ahUKEwjiv5WXqtr8AhVIs1YBHcHABmoQ6AF6BAgEEAI#v=onepage&q=%22john%20beaton%22%20%22archbishop%20of%20glasgow%22&f=false">Google</A>), p.183)</span>. One brother is Andre Beaton, Mary's maitre d'hotel. Another brother is John Beaton (Labanoff vii, p.137).</P>
+
+<P>On the verso <!--(filename: SP_53_23_013.jpg)--> [no.34b/40b] is a cipher (crossed out) very similar to no.38/44 (1577) <!--(filename: SP_53_23_017.jpg)--> : Another Alphabet betwene them and Beton (=Glasgow or his brother).</P>
+ 
+
+<H3>SP53/23 no.35/41 (1574) <!--(filename: SP_53_23_014.jpg)--> Alphabeth from some Englishman being beyond sea, to some person of value in England directed to one Barrister* in London</H3>
+<P>The substitution alphabet has additional symbols after Z ("&"/"thorn"/"w"?).</P>
+
+
+<H3>SP53/23 no.36/42 (1575) <!--(filename: SP_53_23_015.jpg)--> Alphabeth betwene some fugitif Irish man remarying in the low contrees and some persons of valeu in Irland</H3>
+<P>The substitution alphabet has an additional symbol after Z ("w"/"thorn"?).</P>
+ 
+
+<H3>SP53/23 no.37/43 (1573) <!--(filename: SP_53_23_016.jpg)--> Alphabeth betwene the Queene of Scottes and the Cardinall of Lorraine and also the Bisshop of Glasco her ambassador in France</H3>
+<P>"somewhat altered from an other before ... 1571 augmented in notes." *The 1571 version seems to be no.52/no.17.</P>
+ 
+<P>Use: Cotton MS, Caligula, C III f.486, f.489, f.490 [f.490 has a marginal note like "all this line is but abuses*"; partly no.53? (around "au lieu…" on line 4)? Need further check], f.491 [partly no.52? around the last line of f.491v ("son ..."); need further check], f.493
+
+<H3>SP53/23 no.38/44 (1577) <!--(filename: SP_53_23_017.jpg)--> Another Alphabeth betwene the said Q. and y<sup>e</sup> said B. of Glasco.</H3>
+<P>Very similar to no.34b/40b<!--(filename: SP_53_23_013.jpg)-->. "Deciph. in December" (what we call "the Beaton Cipher" causing cross-cipher contamination).</P>
+ 
+<P>Use: Mary to Bishop of Glasgow, 10 September 1582 [Labanoff, v, p.308; 24 October 1582 in MS (which is the date of Walsingham's note), annotated as "probably 1572" in catalogue (which appears to be wrong because SP53/12 given by Labanoff matches 1582 (the "Ruthven" raid))] (Cotton MS, Caligula, C III f.426); August 1577 (Cotton MS, Caligula, C III f.535-540)</P>
+
+<H3>SP53/23 no.39/45 (1577) <!--(filename: SP_53_23_018.jpg)--> Alphabeth betwene the said Q. and Beton brother to the said Bisshop of Glasco</H3>
+<P>The alphabet is almost identical with no.34/40 <!--12.jpg--> from 1575.</P>
+ 
+<P>Use:</P> 
+<P>Glasgow, partly to his brother and partly to Mary; 1575 "---- mon frere ce peti[t] mot ...." (Cotton MS, Caligula C V, f. 78); ciphertext is in CottonMS Caligula C III f.526; calendared in CSP, Scotland, vol.5, no.190 (<A HREF="https://archive.org/details/calendarstatepa01boydgoog/page/182/mode/2up">Internet Archive</A>); in this letter, Glasgow requests his brother to hand the cipher to Mary.</P>
+<P>Mary to brother of Glasgow, 22 August 1577 (Cotton MS Caligula C III f.533)</P>
+<P>Mary to Beaton, brother of Bishop of Glasgow, 22 August 1582 (deciphered copy, which keeps some ciphertext; the ciphertext at the top corresponds to the beginning of the body: "--sur-l'esperance que j'a[v]ois de [votre] retour en bref, -t tant par [v]oz * ce[ll]/s de l'ambassadeur de [france]") (Cotton MS, Cligula C VII, f.35)</P>
+
+<H3>SP53/23 no.40/46 (1577) <!--(filename: SP_53_23_019.jpg)--> Alphabeth betwene the Q. of Scotts and Morgan an Englishman, than in france</H3>
+<P>The original is SP53/22 f.41<!--072.jpg--></P>
+ 
+
+<H3>SP53/23 no.41/47 (1577) <!--(filename: SP_53_23_020.jpg)--> Alphabeth betwene the said Queene and Ligons an Englishman than in France</H3>
+<P>Use: Mary to Ligons, 3 August, SP53/10 no.85</P>
+
+<H3>SP53/23 no.43/49 (1577) <!--(filename: SP_53_23_021.jpg)--> Alphabeth betwene Nau, the said Queenes secretary, and a brother of his in France</H3>
+<P>The substitution alphabet has an additional symbol after Z ("&"?).</P>
+<P>Use: Nau to his brother in France, 6 August 1577 (Cotton MS, Caligula, C III f.545), 31 August 1577 (Cotton MS, Caligula, C III f.546)</P>
+
+<H3>SP53/23 no.44/50 (October 1577 & November) <!--(filename: SP_53_23_022.jpg)--> Alphabeth betwene Sr Francis Inglefeld and an other English fugitif &* traitor in Spayne</H3>
+ 
+<P>Use: "supposed from Saunders, an English traitor in Spain, to sir Fr. Englefield and Dr. Allan", Madrid, Oct. 4, Nov. 30. and 6, 1577 (Cotton MS, Caligula, C III, f.547)</P>
+
+<H3>SP53/23 no.45/51 (November 1577) <!--(filename: SP_53_23_023.jpg)--> Part of an Alphabet from an English Traytor in Spayne, To Doctor Alen at Dorway ay as Liege</H3>
+ 
+
+
+<H3>SP53/23 no.46/52 (25 December 1577) <!--(filename: SP_53_23_024.jpg)--> Alphabeth betwene Thomas Morgan an English traytor then in france and the Comtesse of Northumberland at Liege</H3>
+<P>The Countess of Northumberland <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Anne_Percy,_Countess_of_Northumberland">Wikipedia</A>)</span> lived in exile in Flanders after the failed Northern Rebellion in 1569.</P>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+<P>Used: SP53/10 no.98</P>
+
+<H3>SP53/23 no.47/53 March (1576)  <!--(filename: SP_53_23_025.jpg)--> Alphabeth betwene the Queene mother [Catherine de Medicis] of france and Charles Pasibal a fr. man being then for the fr. king in Polonia</H3>
+
+
+<H3>SP53/23 not numbered</H3>
+<P><!--(filename: SP_53_23_026.jpg)--> "forain Alphabethes of Cifres found out by senes michelmas 1571"</P>
+<P>Just a title to the following images? (In the following, the ciphers are not numbered. The numbering below is mine.)</P>
+
+<H3>SP53/23 no.48 m a<sup>o</sup> (1571) <!--(filename: SP_53_23_027.jpg)--> An Alphabeth betwene the Q. of Scots and the frenche ambassador in England la Motthe Fenelon</H3>
+<!--a^oはannoの略だろう-->
+ 
+<P>Printed in Schooling, "Secrets in Cipher", <i>Pall Mall Magazine</i>, VIII (1896), p.119-129, No.8 (<A HREF="https://books.google.co.jp/books?id=ucohAQAAIAAJ&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q=mary&f=false">Google</A>)</P>
+
+
+<H3>SP53/23 no.49 m a<sup>o</sup> (1571) <!--(filename: SP_53_23_028.jpg)--> An Alphabeth betwene the Q. of Scotts and the Duke of Alva then Lieutenant generall for the king of spain in the Low Contrees</H3>
+ 
+
+<H3>SP53/23 no.50 m a<sup>o</sup> (1570) <!--(filename: SP_53_23_029.jpg)--> An Alphabeth betwene the Queene of Scotts and y^e L. of Liddington</H3>
+<P>The alphabet is very similar to no.62 (1571) <!--(filename: SP_53_23_041.jpg)-->, which lacks nomenclature. </P>
+
+<H3>SP53/23 no.51 m a<sup>o</sup> (1571) <!--(filename: SP_53_23_030.jpg)--> Another Alphabeth betwene the Q. of Scotts and the L. of Liddington</H3>
+ 
+<P>Use: Lethington to Mary, 10 August 1572 (Cotton MS, Caligula, C III f.382)</P>
+
+<H3>SP53/23 no.52 m a<sup>o</sup> (1571) <!--(filename: SP_53_23_031.jpg)--> An Alphabeth betwene the Q. of Scotts and the Bisshop of Glasco, then her ambassador <s>in france</s> or solicitor in france</H3>
+<P>This is the same as no.17.</P> 
+<P>Printed in Schooling, "Secrets in Cipher", <i>Pall Mall Magazine</i>, VIII (1896), p.119-129, No.12 (<A HREF="https://books.google.co.jp/books?id=ucohAQAAIAAJ&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q=mary&f=false">Google</A>).</P>
+<P>Used in SP53/10 no.91, Mary to Glasgow, 31 August 1577 (Labanoff p.382)</P>
+
+
+<H3>SP53/23 no.53 m a<sup>o</sup> (1571) <!--(filename: SP_53_23_032.jpg)--> Alphabeth betwene the Q. of Scotts and Mons Verac being for the fr. king in Scotland</H3>
+ 
+<P>Use: Lethington and Grange to la Motte-Fenelon, 17 January 1572-3 (Cotton MS, Caligula, C III f.410)</P>
+
+<H3>SP53/23 no.54 (1571) <!--(filename: SP_53_23_033.jpg)--> An Alphabeth betwene the Q. of Scotts, and the L. Seton of Scotland</H3>
+ 
+<H3>SP53/23 no.55 (1572) <!--(filename: SP_53_23_034.jpg)--> Another Alphabeth of the lord Setons</H3>
+ 
+
+<H3>SP53/23 no.56 (1571) <!--(filename: SP_53_23_035.jpg)--> An Alphabeth betweene the frenche Ambassador La Mothe Fenelon and Monsr Veras, being in Scotland from the frenche king.</H3>
+<P>The original is in SP53/22 f.55. </P>
+
+<H3>SP53/23 no.57 (1572) <!--(filename: SP_53_23_036.jpg)--> Another Alphabeth betwene the same Ambassador [La Mothe Fenelon] and the said Verac</H3>
+ 
+
+<H3>SP53/23 no.58 (1572) <!--(filename: SP_53_23_037.jpg)--> Another Alphabeth of the L. Setons</H3>
+ 
+
+<H3>SP53/23 no.59 (1571) <!--(filename: SP_53_23_038.jpg)--> An Alphabeth of the L. of Grange of Scotland</H3>
+ 
+
+<H3>SP53/23 no.60 (1571) <!--(filename: SP_53_23_039.jpg)--> A Scottish Alphabeth</H3>
+ 
+
+<H3>SP53/23 no.61 (1571) <!--(filename: SP_53_23_040.jpg)--> Another Scottish Alphabeth</H3>
+<P>Identical with no.22 <!--001.jpg--></P>
+<P>The substitution alphabet has an additional symbol after Z ("tt"?).</P>
+
+
+<H3>SP53/23 no.62 (1571) <!--(filename: SP_53_23_041.jpg)--> An Alphabeth betwene the Bisshop of Ross, then ambassador or Sollicitor for the Q. of Scotts in England, And Charles Bailly his servant* sequestred from him</H3>
+<P>Very similar to the alphabet of no.50 m a^o 1570 <!--(filename: SP_53_23_029.jpg)-->.</P>
+<P>The substitution alphabet has additional symbols after Z ("et", "de").</P>
+
+<H3>SP53/23 no.63 (1571) <!--(filename: SP_53_23_042.jpg)--> An Alphabeth betwene the said Bisshop of Rosse, and one in Scotland</H3>
+ 
+
+<H3>SP53/23 no.64 1571 <!--(filename: SP_53_23_043.jpg)--> An English Alphabeth betwene a Rebell fled into flandres, and a frend of his in England</H3>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+
+<P>Use: Cotton MS, Caligula, C III f.509v (1574)</P>
+
+<H3>SP53/23 no.65 (1571) <!--(filename: SP_53_23_044.jpg)--> =no.24/30 (1570) <!--(filename: SP_53_23_002.jpg)--> Alphabeth of another English man <s>Rebell fled</s> in<s>to</s> flandres</H3>
+<P>The substitution alphabet has an additional symbol after Z ("w").</P>
+<P>Printed in Schooling, "Secrets in Cipher", <i>Pall Mall Magazine</i>, VIII (1896), p.119-129, No.11 (<A HREF="https://books.google.co.jp/books?id=ucohAQAAIAAJ&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q=mary&f=false">Google</A>)</P>
+
+
+
+<H2>SCA JB - Archbishop James Beaton's papers</H2>
+<P>The University of Aberdeen, Scottish Catholic Archives, Archbishop James Beaton's Papers (<A HREF="https://calm.abdn.ac.uk/archives/Record.aspx?src=CalmView.Catalog&id=SCA+JB">SCA JB</A>) preserves many cipher letters including those from Mary to James Beaton, Archbishop of Glasgow (SCA JB 2) as well as decipherments and reconstructed keys by Bishop Kyle (SCA JB 3).</P>
+<!--<P>The following is my transcription of the substitution alphabets of Kyle's reconstruction in SCA JB 3/14. (Most of them also include a nomenclature, called "conventional marks" by Kyle.)</P>
+<img src="mary_Kyle.png" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+-->
+<P>The following is based on Kyle's notes.</P>
+
+<H4>Cypher No. I</H4>
+<P>Used in letter No. IV ("Memoire de ce que le Seigneur Rodolphi a faict entendre a la Royne", 6 Feb 1571) in Kyle's transcriptions.</P>
+
+<H4>Cypher No. II (Raulet's Cipher; also SP53/23 no.37/43)</H4>
+<P>This is the main cipher used by Mary's secretary Raulet and was occasionally used after his death in August 1574<!--Labanoff iv, 215--> (by Curle, according to Kyle). Kyle observes this cipher "varies their alphabetical signification" in the course of its use and gives "1st Mode" and "2nd Mode" in his reconstruction. The nomenclature is the same, but the symbols are followed by "?" in the 1st Mode, but by ":" in the 2nd Mode.</P>
+<P>The 1st Mode is used in letters VII (Raulet to Beaton, 12 June 1571), VIII (Mary to Beaton, 12 June 1571), IX (Mary to Beaton, 18 July 1571), XI (Mary to Beaton, 28 August 1571), XII (Raulet to Beaton, 28 August 1571), XIII (Mary to Beaton, 19 September 1571), and XIV (Raulet to Beaton, 20 Setember 1571), in the last of which a new mode, different from the 2nd Mode, was proposed but was never put in use.</P>
+<P>The 2nd Mode is used in letters XVII (Mary to Beaton, 29 March 1574), XXIII (Mary to Beaton, 4 August 1574), XXV (Mary to Beaton, 26 December 1574), XXVI (Mary to Beaton, 9 January 1575), LVIII (Mary to Beaton, 24 July 1580), LVII (Mary to Beaton, 6 April 1580), and LXV (Mary to Beaton, 20 May 1580). It is also used in XLIX (Mary to Beaton, 4 July 1579) in English, but the nomenclature symbols other than persons and places are different (a short note at the end of LXV also uses this).</P>
+
+<!--
+The letter with first form of the cypher are written by Raulet's hand & the characters are large & bold; those in the second form are written by Curl, the characters are more minute but still very distinct. Both write very elegantly & regularly, & with wonderful correctness.-->
+
+<H4>Cypher No. III (also, SP53/23 no.28/34)</H4>
+<P>Used in No X (Maitland of Lethington to Beaton, 28 August 1571).</P>
+
+<H4>Cypher No.IV</H4>
+<P>Used in No. XVI (? to Beaton, 25 January 1574).</P>
+
+<H4>Cypher No.V (Beaton-Beaton Cipher; also, SP53/23 no.34/40)</H4>
+<P>Used in XVIII (Mary to Beaton and Lorraine, June 1574), XIX (Beaton's brother to Beaton, 4 July 1574), XXI (Mary to Beaton, 4 August 1574), XXII (Mr. Beaton to Beaton, 4 August 1574), XXVII (Mary to Beaton, 11 November 1574), XXVIII (Mary to Beaton, 9 January 1575), & XXXIV (Beaton of Balfour to Beaton, received "le jour de Pasques 1576").</P>
+<P>Kyle says "the dates of these letters are also given in cypher, a key to which could not be found." </P>
+
+<H4>Cypher No.VI</H4>
+<P>Used in XXIV (Mary to Cardinal de Lorraine, 8 November 1574) & a note accompanying it.</P>
+
+<H4>Cypher No. VII</H4>
+<P>No nomenclature. Used in XXIX (Beaton of Balfour to Beaton, 12 October 1575), XXX (ditto, 20 November 1575), XXXI (ditto, 27 November 1575), XXXII (ditto, 5 December 1575), & XXXIII (Mary to Beaton, 20 February 1576), written in Scotch by Beaton of Balfour, a brother of the archbishop James.</P>
+
+<!--The writing is excedingly coarse & clumsy, & so incorrect that the maning in many places is very obscure and in one place p.86, line 3, quite unintelligible. These letters are all written in Scotch by M Beatoun of Balfour another brother of the Archbishop. Part of them is in ordinary characters, nearly as illegible as the cypher.
+-->
+
+<H4>Cypher No. VIII (Nau's Cipher, Mary-Beaton Cipher; also, SP53/23 no.38/44)</H4>
+<P>This is the main cipher used between Mary and Beaton at least from 1576. Used in no less than 25 letters in Kyle's collection.</P>
+<P>According to Kyle, this was used by Nau (who came over from France to enter Mary's service in 1575).</P>
+
+<!--This is the cypher used by Secretary Nau.... The characters are very minutely & closely written, so that with the numerous abbreviations employed the writing makes a sort of stenography. & comprises long despatches on very moderately sized pieces of paper; still as they are most beautifully & correctly written they can be read without much difficulty.
+-->
+
+<H4>Cypher No. IX</H4>
+<P>Used by Lord Ogilvy in XXXVIII (Ogilvie to Beaton, received 15 April 1577), XLIII (Ogilvie to Beaton, 26 February 1578), & LXI (Ogilvy to Beaton, 16 April 1581).</P>
+<!--
+They are written rather coarsely, but considering the complicacy of the cypher, with tolerable, though not absolute, accuracy.
+-->
+
+<H4>Cypher No. X</H4>
+<P>Used in XLVI, probably by George Douglas.</P>
+
+<H4>Cypher No. XI</H4>
+<P>Used in XLVIII, probably by Mr Robert Bruce, a priest.</P>
+
+<H4>Cypher No. XII</H4>
+<P>Used in LXIII (Lennox to Archbishop Beaton, endorsed "De Mons. le conte de Lenox du XVIII Avril 1581 par Grendiston le XXII May 1581 a Paris").<!--SCA JB2 5/4のこと；Hosack II B25；Hosack, Mary Queen of Scotts and Her Accusers, vol.2, p.225 https://www.google.co.jp/books/edition/Mary_Queen_of_Scotts_and_Her_Accusers/Ko5pAAAAcAAJ?hl=fr&gbpv=0--></P>
+
+<H4>Cypher No. XIII</H4>
+<P>Used in LXXI, from Don Bernardino de Mendoza to Beaton, endorsed "Recu le XVIII Juin 1582 de Londres le sup<sup>me</sup> de dict moys D.B.M.". Kyle says there are many errors in French grammar and orthography as well as in ciphering.</P>
+
+<H4>Cypher No. XIV</H4>
+<!--52がiとdにある-->
+<P>Used only in a short letter in Latin, LXXII. </P>
+<!-- Kyle: The writer signs Ricardo Millino. But in an indorsed note, Mr Thomas Innes[?] states that he is F.[?] Robert Parsons the famous Jesuit. Mr Innes had many grounds whereon to found the conjecture, which I have not. This cypher is very complicated, & required some study to make it out, especially as so little is written in it.-->
+
+
+
+
+<H2>References</H2>
+<H3>Links</H3>
+<P>Labanoff (1844-  ), <i>Lettres, instructions et m&eacute;moires de Marie Stuart</i>, 
+vol. 1 (<A HREF="https://books.google.co.jp/books?id=XApaAAAAcAAJ">Google</A>, 
+<A HREF="https://archive.org/details/lettresinstruct08marygoog/page/n8/mode/2up">Internet Archive</A>), 
+vol. 2 (<A HREF="https://books.google.co.jp/books?id=fQpaAAAAcAAJ">Google</A>, 
+<A HREF="https://archive.org/details/lettresinstruct02marygoog/page/n8/mode/2up">Internet Archive</A>), 
+vol. 3 (<A HREF="https://books.google.co.jp/books?id=OQlaAAAAcAAJ">Google</A>, 
+<A HREF="https://archive.org/details/lettresinstruct10marygoog/page/n6/mode/2up">Internet Archive</A>), 
+vol. 4 (<A HREF="https://books.google.co.jp/books?id=SwlaAAAAcAAJ">Google</A>, 
+<A HREF="https://archive.org/details/lettresinstruct21marygoog/page/n6/mode/2up">Internet Archive</A>), 
+vol. 5 (<A HREF="https://books.google.co.jp/books?id=dwlaAAAAcAAJ">Google</A>, 
+<A HREF="https://archive.org/details/lettresinstruct00marygoog/page/n12/mode/2up">Internet Archive</A>), 
+vol. 6 (<A HREF="https://books.google.co.jp/books?id=jQlaAAAAcAAJ">Google</A>), 
+vol. 7 (<A HREF="https://books.google.co.jp/books?id=pAlaAAAAcAAJ">Google</A>).
+</P>
+<P>Teulet (1859), <i>Lettres de Marie Stuart, Supplement au recueil du prince Labanoff</i> (<A HREF="https://books.google.co.jp/books?id=clIBAAAAQAAJ&printsec=frontcover&hl=ja&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false">Google</A>)</P>
+<P><A HREF="https://discovery.nationalarchives.gov.uk/browse/r/h/C13595">TNA SP53</A></P>
+
+
+<H3>Acknowledgement</H3>
+<P>Part of this study is helped by the <A HREF="https://de-crypt.org/decrypt-web/RecordsList">DECRYPT</A> database:</P>
+<P>H&eacute;der, M ; Megyesi, B. The DECODE Database of Historical Ciphers and Keys: Version 2. In: Dahlke, C; Megyesi, B (eds.) Proceedings of the 5th International Conference on Historical Cryptology HistoCrypt 2022. Linkoping, Sweden : LiU E-Press (2022) pp. 111-114. , 4 p. [<A HREF="https://eprints.sztaki.hu/10338/1/Heder_111_32898863_ny.pdf">pdf</A>]</P>
+<P>Megyesi Be&aacute;ta, Esslinger Bernhard, Forn&eacute;s Alicia, Kopal Nils, L&aacute;ng Benedek, Lasry George, Leeuw Karl de, Pettersson Eva, Wacker Arno, Waldisp&uuml;hl Michelle. Decryption of historical manuscripts: the DECRYPT project. CRYPTOLOGIA 44 : 6 pp. 545-559. , 15 p. (2020) [<A HREF="https://www.tandfonline.com/doi/full/10.1080/01611194.2020.1716410">link</A>]</P>
+<P>Megyesi, B., Blomqvist, N., and Pettersson, E. (2019) The DECODE Database: Collection of Historical Ciphers and Keys. In Proceedings of the 2nd International Conference on Historical Cryptology. HistoCrypt 2019, June 23-25, 2019, Mons, Belgium. NEALT Proceedings Series 37, Link&ouml;ping Electronic Press. [<A HREF="https://cl.lingfil.uu.se/~bea/publ/decode-histocrypt-2019.pdf">pdf</A>]</P>
+<P>and CTTS: CrypTool Transcriber & Solver developed by George Lasry and the CrypTool team.</P>
+<br>
+<br>
+<font size="2">
+&COPY;2023 S.Tomokiyo<br>
+First posted on 9 February 2023. Last modified on 29 June 2024.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

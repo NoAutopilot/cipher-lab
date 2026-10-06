@@ -74,3 +74,9 @@ exit 0
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: diff Tomokiyo's live unsolved.htm and mary.htm entries for f.52 against the 24 Sept snapshots on disk and check for an image reference (092.jpg/093.jpg), ~$0.2, before the TNA copy order (REQUEST.md; not yet in outreach/tna-page-copy-batch.md as of 5 Oct 2026). Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## While waiting, step ticked (R8-SPLOOK, 6 Oct 2026 03:45 UTC)
+
+- [x] Live re-read of Tomokiyo's pages, fetched once each (cryptiana.web.fc2.com/code/, descriptive UA, 6 Oct 2026; copies in `live/live-unsolved.htm`, `live/live-mary.htm`; `sources/` untouched). Diff against the on-disk snapshots (`sources/cryptiana/web/unsolved-2026-09-24.htm`, `mary.htm`, line endings normalised): **mary.htm is identical**; unsolved.htm differs elsewhere (other items' notices and solved marks) but its f.52 entry (`<H4>SP53/22 f.52 <!--092.jpg 093.jpg-->`, "a short undeciphered ciphertext endorsed 'Cifer with[?] Spanish Spye:'") is **identical** to the 24 Sept snapshot.
+- Image reference: `092.jpg` and `093.jpg` remain only an HTML comment on both pages (no `<img>`, no link); fetching `/code/092.jpg` and `/code/093.jpg` returned HTTP 404 (1 request each). So no image of f.52 is online from this source, and what the leaf holds beyond the ciphertext is still open: the TNA copy order (REQUEST.md) stays the route.
+- Search result only, not a novelty verdict (rule 10). Status word unchanged. Requests: cryptiana.web.fc2.com 6 (2 plain 302s, 2 redirected fetches, 2 jpg probes), all >= 2 s apart.

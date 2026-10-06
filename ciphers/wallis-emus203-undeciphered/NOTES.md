@@ -133,3 +133,19 @@ Next action that depends on nobody: grep Thurloe vols 2-5 djvu text (`collection
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: grep Thurloe vols 2-5 djvu text (collectionofstat02thur..05thur) for "Brasset", "Buckingham", "Townesend" and the Scotland 1651 window, ~$0.2, to finish the printed-edition side before any Bodleian copy order. Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Thurloe vols 2-5 grep (R8-SPLOOK, 6 Oct 2026 03:45 UTC)
+
+Edition read by script: Thurloe, *A Collection of the State Papers* (Birch 1742), archive.org djvu full text, each volume fetched once and grepped whole: `collectionofstat02thur` .. `05thur` (4 requests, archive.org, 2 s apart, all HTTP 200, 4.1-4.4 MB each). OCR prints long-s as "f", so "Brasset" was also searched as "Braffet".
+| term | vol 2 | vol 3 | vol 4 | vol 5 |
+|---|---|---|---|---|
+| Brasset | 0 | 0 | 0 | 0 |
+| Braffet (OCR) | 7 | 0 | 0 | 0 |
+| Buckingham | 7 | 5 | 3 | 6 |
+| Townesend / Townsend | 0 | 0 | 0 | 0 |
+- Braffet, vol 2: six body hits (lines 18035-21775, "the lord resident Braffet ... returning into France", a present to him, "went away from hence on wednesday the 29th") are about his departure from the Hague, not a letter of 4 April 1653 to Bordeaux-Neufville; plus the index entry. No Brasset-to-Bordeaux item found.
+- Buckingham, vols 2-5: all 21 hits are mentions of the duke or index lines (e.g. vol 3 line 32165, "the duke of Buckingham is said to be now with the protector"; vol 5 lines 37980-37983); none is a letter by or to Buckingham matching the undated item, and none mentions a cipher in the line read. Not read beyond the grep line.
+- Townesend/Townsend: zero in vols 2-5 (zero in vols 6-7 on 3 Oct), so no print of the 1658 Townesend item found in vols 2-7.
+- Scotland 1651 window: "Scotland" is frequent (141-335 lines per volume) and "1651" appears 6-13 times per volume, mostly retrospective references (e.g. vol 2 lines 1436-1453, 28292); no letter dated in 1651 turned up, which fits the edition starting at 1638 but weighted to 1653-60. Not a page-level read.
+Result: in Thurloe vols 2-5 no print of the four items was found by these terms on 6 Oct 2026 (OCR long-s noise possible; a search result, not a novelty verdict, rule 10). With 3 Oct's vols 1, 6, 7 the printed-edition side of the Thurloe series is now grepped; Beeley/Scriba's *Correspondence of John Wallis* remains unread. Status `blocked` unchanged (no Bodleian image, no catalogue availability flag quoted).
+- [x] While-waiting step (Thurloe vols 2-5 grep) ticked.

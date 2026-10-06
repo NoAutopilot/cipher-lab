@@ -199,3 +199,7 @@ Waits on: the TNA page copy of SP 81/44/225 (REQUEST.md) and LOCAL-QUEUE L40 (Bo
 The key listed in Cal. Clar. S.P. I p.215, no.1486 item 14 ("Sir Thos. Roe's cypher") should be in **MS. Clarendon 19** (calendar
 nos. 1415-1500; https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/172431). He has called the volume up and offers to
 check whether it is there. Reply draft (yes please; quote if found) placed in Gmail for the owner.
+
+## While waiting, step ticked (R8-SPLOOK, 6 Oct 2026 03:45 UTC)
+
+- [x] SP 81/44/88 full TNA Discovery record (API `/API/records/v1/details/C7775340`, 1 request, HTTP 200): citable reference "SP 81/44/88", covering date 1638 May 30, description "Folio 88: Coke to Roe, with decipher and copy.", `note` null, `digitised` false, held by TNA Kew, no scope text beyond that line. The record does **not** name the cipher used; "decipher" is the whole statement. Nothing further to read online; the page copy (ASKS row 106) is still the route. Search result only (rule 10); status and Verdict unchanged. Requests: discovery.nationalarchives.gov.uk 1.
