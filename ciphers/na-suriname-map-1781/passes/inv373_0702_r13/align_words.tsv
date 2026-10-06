@@ -1,0 +1,112 @@
+crop	gloss_word	signs	status
+L01	en de woelings vadems van malkander gerekent	3 [y-fam] | w 7 | 4 [hash] d c f [y-fam] 9 6 | 5 4 | w 3 [y-fam] [psi] | e 4 [y-fam] | [y-fam] x c b 4 [y-fam] | w 3 0 | 9 3 0 7 a b 3 [y-fam] λ	skip-line (7 gloss words, 9 cipher groups)
+L02	maakt	[y-fam] [delta] x	skip-len (5 vs 3)
+L02	op	b λ	aligned
+L02	ieder	[hash] S f 3 r 7 0	skip-len (5 vs 7)
+L02	touw	λ [hash] 5 4	aligned
+L02	woelings	4 [hash] 3 c 8 [y-fam] 9 [psi]	aligned
+L02	dus	w 5 [psi]	aligned
+L02	trossen	λ 0 [hash] [psi] 6 3 [y-fam]	aligned
+L03	de	w 3	aligned
+L03	zwaare	[psi] 4 4 x 0 3	aligned
+L03	ankers	p [y-fam] b 3 0 [psi]	aligned
+L03	die	w f 3	aligned
+L03	deeze	r 3 7 n d	aligned
+L03	verstopping	5 3 0 [psi] λ k S g f [y-fam] 9	aligned
+L03	moeten	[y-fam] k 3 λ 7 [y-fam]	aligned
+L03	hou	[h-sec] [hash] 5	aligned
+L04	den	r 3 [y-fam]	aligned
+L04	dienen	w f 3 h 7 h [y-fam] f 3 λ	skip-len (6 vs 10)
+L04	niet	5 3 0 w 7 0	skip-len (4 vs 6)
+L04	verder	r [delta] h	skip-len (6 vs 3)
+L04	dan	3 7 l	aligned
+L04	een	[h-sec] [delta] c [other=Q-like]	skip-len (3 vs 4)
+L04	half	[other=curl] x	skip-len (4 vs 2)
+L04	cabellengte	d 3 c g 3 [y-fam] 9 [y-fam] 7	skip-len (11 vs 9)
+L05	van	e 4 [y-fam]	aligned
+L05	elkander	3 c b 4 [y-fam] w 7 0	aligned
+L05	geplaatst	9 3 S c [delta] x x λ [psi] λ	skip-len (9 vs 10)
+L05	te	λ 7	aligned
+L05	zyn	n t [y-fam]	aligned
+L05	en	3 l	aligned
+L05	dus	r 5 [psi]	aligned
+L05	daartoe	w [delta] x o λ [hash] 3	aligned
+L06	noodig ankers waartoe nog noodig zyn	[y-fam] k [hash] w f 9 | [delta] [y-fam] b 3 0 [psi] | 4 x | p o λ k 3 | [y-fam] [hash] 9 | l k [hash] w f 9 | n t [y-fam] | 1 2	skip-line (6 gloss words, 8 cipher groups)
+L07	zwaare touwen kunnende ieder touw voor	[psi] 4 x p 0 7 | [other=struck-out_word] | λ K 5 4 3 [y-fam] | b 5 [y-fam] h 3 l w 7 | f 3 r 7 0 | λ [hash] 5 4 | c k [hash] 0	skip-line (6 gloss words, 7 cipher groups)
+L08	twee ankers dienen met beide de enden daar in te	λ 4 3 7 | [delta] [y-fam] b 3 0 [psi] | r f 3 l 7 [y-fam] | [y-fam] 3 λ | d 3 f w 7 | r 3 | d [y-fam] w 3 l | w [delta] x o f [y-fam] λ 7	skip-line (10 gloss words, 8 cipher groups)
+L09	steeken en de verstopping touwen door de bogten	[psi] λ 3 7 6 d [y-fam] | 3 l | [y-fam] d | e 3 0 [psi] λ k S g f [y-fam] 9 | λ [hash] 5 4 3 l | w k [hash] 0 | r 3 d k g λ 3 [y-fam]	skip-line (8 gloss words, 7 cipher groups)
+L10	te	r 3	aligned
+L10	neemen	4 7 d [y-fam] a [y-fam]	aligned
+L10	en	3 l	aligned
+L10	daarop	w [delta] x o [hash] S	aligned
+L10	vast	5 [delta] [psi] λ	aligned
+L10	te	r 3	aligned
+L10	woelen	4 k 3 c 7 [y-fam]	aligned
+L10	dan	w [y-fam]	skip-len (3 vs 2)
+L10	behooren	d 3 [psi] k [hash] 0 λ	skip-len (8 vs 7)
+L11	door	r k [hash] 0	aligned
+L11	ieder	f 3 w 7 0	aligned
+L11	twee	λ 4 3 7	aligned
+L11	ankers	[delta] [y-fam] b 3 0 [psi]	aligned
+L11	die	r f 3	aligned
+L11	voor	c k [hash] 0	aligned
+L11	vloed	5 c k 3 r	aligned
+L11	staan	[psi] λ x [y-fam] p [y-fam]	skip-len (5 vs 6)
+L11	een	3 7 l	aligned
+L12	anker voor eb geplaatst te worden waartoe nog	[delta] [y-fam] b 3 0 | 5 k [hash] 0 | 3 d | 9 3 S c [delta] x λ [psi] r | λ 7 | 4 k o w 3 [y-fam] | 4 x [delta] o λ k 3 [y-fam] [hash] 9	skip-line (8 gloss words, 7 cipher groups)
+L13	ankers dienen te weezen dog kunnen iets ligter	[delta] [y-fam] b 3 0 [psi] | w f 3 [y-fam] 3 l λ d 4 3 7 n d h | w k g | b 5 [y-fam] l 3 [y-fam] | f 3 λ [psi] | c f g λ 3 0	skip-line (8 gloss words, 6 cipher groups)
+L14	zyn gelyk ook de touwen en ieder anker voor een	n t [y-fam] | 9 3 c t b k [hash] b | w 3 | λ K 5 4 3 [y-fam] | 3 [y-fam] | f 3 w 7 0 | [delta] [y-fam] b 3 0 | 5 k [hash] 0 3 7 [y-fam]	skip-line (10 gloss words, 8 cipher groups)
+L15	half	[h-sec] [delta] c [other=Q-like]	aligned
+L15	touw	λ K 5 [hash] 4	skip-len (4 vs 5)
+L15	gerekent	9 3 0 7 d b 3 [y-fam] λ	skip-len (8 vs 9)
+L15	zyn	n t [y-fam]	aligned
+L15	daartoe	w [delta] x o λ [hash] 3	aligned
+L15	noodig	[y-fam] k [hash] w f 9	aligned
+L15	nog	l k [y-fam]	aligned
+L16	touwen van duim de touwen door de	6 | λ K 5 4 3 [y-fam] | 5 [delta] [y-fam] | r 5 t [y-fam] | N 3 | w 7 λ [hash] 5 4 3 l | 5 k [hash] 0 | w 7	skip-line (7 gloss words, 8 cipher groups)
+L17	verstopping behooren niet minder te zyn als	5 3 0 [psi] λ k S g f [y-fam] 9 | d 3 [other=diamond] k [hash] 0 3 [y-fam] | l f 3 λ [y-fam] f [y-fam] w 3 0 | λ 7 | n t [y-fam] | [delta] c [psi]	skip-line (7 gloss words, 6 cipher groups)
+L18	duym wylende vaart van een schip of scheepen	w 5 t [y-fam] | 4 t c 3 [y-fam] | w 7 | 5 [delta] x o λ | e 4 [y-fam] | 3 7 l | [psi] [other=curl] c [h-sec] f [h-sec] | [hash] [other=Q-like] | [psi] [other=curl] 3 7 [h-sec] d [y-fam]	skip-line (8 gloss words, 9 cipher groups)
+L19	die dikwyls met een bezylde wind en altoos voor	r f 3 | w 3 b 4 f c [psi] | [y-fam] 3 λ 7 d [y-fam] | d 3 n t c w 7 | 4 8 [y-fam] r | 3 l [delta] c λ K [hash] [psi] | 5 k [hash] 0	skip-line (9 gloss words, 7 cipher groups)
+L20	stroom af koomen moeten kunnen uitstaan zonder	[psi] λ 0 k [hash] [y-fam] x [other=Q-like] | b k [hash] [y-fam] 3 l | [y-fam] k 3 λ 7 [y-fam] | b 5 [y-fam] l 3 h | 5 t λ [psi] λ [delta] x [y-fam] | [psi] [hash] [y-fam]	skip-line (7 gloss words, 6 cipher groups)
+L21	der	w 3 0	aligned
+L21	te	λ 7 d 0 3 7	skip-len (2 vs 6)
+L21	breeken	6 d [y-fam]	skip-len (7 vs 3)
+L21	en	3 l 4 [delta] [psi]	skip-len (2 vs 5)
+L21	was	5 t λ	aligned
+L21	uit	w f 3 [y-fam]	skip-len (3 vs 4)
+L21	dien	[y-fam] h k [hash] [w-tilde]	skip-len (4 vs 5)
+L21	hoofde	r 3	skip-len (6 vs 2)
+L21	des	w 7 [psi]	aligned
+L21	te	λ 7	aligned
+L22	beeter dat ter lengte van roeden in de	d 3 7 λ d 0 | w x λ | r 3 0 | c 3 4 9 λ 3 | 5 [delta] [y-fam] | [delta] 1 0 | 0 [hash] 3 w 7 [y-fam] | f [y-fam] | w l	skip-line (8 gloss words, 9 cipher groups)
+R01	rivier suriname nog eene verstopping voor deeze	o f 2 8 3 0 | [psi] 5 0 f [y-fam] [delta] [y-fam] 3 | [y-fam] [hash] 9 3 7 [y-fam] d | 5 7 0 [psi] [thorn] λ | K S g f [y-fam] g | 5 [hash] K o w 3 7 n d	skip-line (7 gloss words, 6 cipher groups)
+R02	geplaatst weerd om daarmede de vaart der schee	9 3 S c [delta] x λ [psi] r | 4 f 3 0 r | [hash] [y-fam] w x p o [y-fam] 3 7 r d | w 3 | 5 [delta] x o λ | w 3 0 [psi] [thorn] [h-sec] 3 7	skip-line (8 gloss words, 6 cipher groups)
+R03	pen te stuyten en zoo die met een frissche koelte	S [y-fam] λ 7 [psi] λ 5 t λ 3 [y-fam] | 3 l n k [hash] w f 3 [y-fam] d λ 3 7 [y-fam] | [thorn] o f [psi] [thorn] [h-sec] 3 | b [hash] 3 c λ 7	skip-line (10 gloss words, 4 cipher groups)
+R04	al weerd stuk gezyld was de vaart der scheepen be	A c [delta] f 3 0 r [psi] λ 5 b | 9 3 n t e r | [delta] [delta] [psi] w 3 | 5 [delta] x o λ r 3 0 [psi] [thorn] [h-sec] 3 7 S 7 [y-fam] d 3	skip-line (10 gloss words, 4 cipher groups)
+R05	noomen en moeten derhalven voor de tweede ver	[y-fam] K [hash] [y-fam] 4 3 [y-fam] | 3 [y-fam] [y-fam] [hash] 3 λ 7 [y-fam] r 3 0 [h-sec] x c 5 7 [y-fam] | 5 K [hash] 0 w 7 λ 4 3 7 r 3 | 5 3 0 [psi] λ	skip-line (8 gloss words, 4 cipher groups)
+R06	stopping absoluut opstormen en aanstonds dwars	[hash] S g f [y-fam] g | [delta] [ezh-dot] [psi] K c 5 λ | k λ [hash] o [y-fam] 3 l | 3 [y-fam] [delta] x [y-fam] [psi] x [hash] [y-fam] r [psi] | r 4 [delta] o [psi]	skip-line (6 gloss words, 5 cipher groups)
+R07	strooms vallen wanneer se gemakkelijk door de	[psi] λ o k [hash] [y-fam] [psi] | 5 x c g 3 [y-fam] | A x [y-fam] l 3 7 0 [psi] a | 9 3 [y-fam] x | b b 3 c t b | w k [hash] 0 w 7	skip-line (7 gloss words, 6 cipher groups)
+R08	redoeten	F	skip-len (8 vs 1)
+R08	en	0 3 r [hash] 7 λ 7 [y-fam]	skip-len (2 vs 8)
+R08	linie	3 [y-fam] c f [y-fam] 8 3	skip-len (5 vs 7)
+R08	der	w 7 0 [psi] [thorn] [h-sec] 3 7	skip-len (3 vs 8)
+R08	scheepen	S d [y-fam]	skip-len (8 vs 3)
+R08	waardoor	4 x [delta] 0 w k [hash] 0	aligned
+R09	die verstopping van alle kanten gedefendeert	4 f 3 [other=crossed-5] 3 0 [psi] λ K S g f [y-fam] g | 5 x [y-fam] p g c 3 | b x [y-fam] λ 3 l | 9 3 r 7 [thorn] 3 [y-fam] w 7 3 0 λ	skip-line (6 gloss words, 4 cipher groups)
+R10	word kunnen vernield worden nog is er tot	4 [hash] 0 r | b 5 [y-fam] l 3 h | 5 3 0 [y-fam] f 7 c r 4 K 0 w 3 l | [y-fam] [hash] 9 f [psi] 3 0 λ [hash] λ	skip-line (8 gloss words, 4 cipher groups)
+R11	deeze verstopping noodig een meenigte plat hoe	r 3 7 n d | 5 3 0 [psi] λ K S g f [y-fam] g | [y-fam] K [hash] r f 9 | 3 7 [y-fam] [y-fam] 3 7 [y-fam] f 9 λ 3 | S c [delta] λ [y-fam] [hash] 3	skip-line (7 gloss words, 5 cipher groups)
+R12	pel yzer en kettings om tusschen de woelings	S 3 c t n 3 0 | 3 [y-fam] | b 3 λ λ f [y-fam] 9 [psi] | [hash] [y-fam] λ 5 [psi] [thorn] [h-sec] 3 [y-fam] | w 7 4 K 3 c f [y-fam] 9 [psi]	skip-line (8 gloss words, 5 cipher groups)
+R13	ingeplaatst te worden om meede daardoor het	f [y-fam] 9 3 S c [delta] x λ [psi] λ | r 3 | 4 K o w 3 [y-fam] | K [y-fam] [y-fam] 3 7 r d | w [delta] x o r K [hash] 0 | [h-sec] 3 λ	skip-line (7 gloss words, 6 cipher groups)
+R14	kappen der vyanden voor te koomen waarvan men	b [delta] S 9 3 7 | w d o | 5 t [delta] [y-fam] w 3 l | 5 K [hash] o λ 3 | b K [hash] [y-fam] 3 [y-fam] | [delta] x p o 5 p [y-fam] [y-fam] 3 [y-fam]	skip-line (8 gloss words, 6 cipher groups)
+R15	volgens deeze berekening in holland zelfs	5 K c 9 3 [y-fam] [psi] | w 3 7 n d | d 3 0 | 3 7 b d [y-fam] f [y-fam] 9 | f [y-fam] [h-sec] K g c x [y-fam] r n 3 c [thorn] [psi]	skip-line (6 gloss words, 5 cipher groups)
+R16	de	w 3 P [delta] c f 5 5 c	skip-len (2 vs 9)
+R16	calcul	w 3 0	skip-len (6 vs 3)
+R16	der	x 5 [delta] [y-fam] λ 8 λ 3 f r	skip-len (3 vs 10)
+R16	quantiteit	b [delta] [y-fam]	skip-len (10 vs 3)
+R16	kan	[y-fam] x p	aligned
+R16	maaken	b 3 [y-fam]	skip-len (6 vs 3)
+R16	voor	5 K [hash] 0	aligned
+R17	commewyne is geen tweede linie van verstopping	r [hash] [y-fam] [y-fam] 3 4 t [y-fam] 3 f [psi] | 9 3 7 [y-fam] λ 4 3 7 r d | c f [y-fam] 8 3 | 5 x [y-fam] | 5 3 0 [psi] λ [hash] S g f [y-fam] g	skip-line (7 gloss words, 5 cipher groups)
+R18	noodig om dat er geen zwaare schepen de rivier	l K [hash] w f 9 | [hash] [y-fam] w x λ 3 0 | 9 3 7 [y-fam] | [psi] 4 x p o 3 | [psi] [thorn] [h-sec] 3 7 | S d [y-fam] | w f 3 0 8 5 m 3 0	skip-line (9 gloss words, 7 cipher groups)
+R19	uyt hoofde der ondieptens kunnen opkoomen en	5 t λ [h-sec] K [hash] 5 w 3 | r 7 0 [hash] [y-fam] r f 3 l λ 7 [y-fam] [psi] | b 5 [y-fam] l 3 h | [hash] l b K [hash] [y-fam] 3 [y-fam] | 3 [y-fam]	skip-line (7 gloss words, 5 cipher groups)
+R20	ook altoos behalven by extra ordenaire gevallen	K [hash] b λ c λ K [hash] [psi] | d 3 [h-sec] [delta] c 5 7 [y-fam] | d t 3 λ λ o [delta] [hash] o r f [y-fam] x | 8 0 3 9 3 5 x g c 3 [y-fam]	skip-line (7 gloss words, 4 cipher groups)

@@ -1,0 +1,21 @@
+# from the 0702 gloss pair (blind tokens), for a verifier; NOT applied to any key
+code	suggested	count	nieuw_value	note
+3	e	25	e	mixed; all: e:25 d:1
+4	w	6	w	mixed; all: w:6 a:3 n:1
+5	v	8	v	mixed; all: v:8 w:1
+7	e	11	e	mixed; all: e:11 a:1
+K	o	1		unkeyed; all: o:1
+[h-sec]	h	2		unkeyed; all: h:2
+[other=Q-like]	f	1		unkeyed; all: f:1
+[psi]	s	9	s	mixed; all: s:9 z:1
+[y-fam]	n	14	m|n	mixed; all: n:14 m:2 g:1 k:1
+b	k	3	k|i	mixed; all: k:3 o:1
+c	l	5	l	mixed; all: l:5 v:1
+d	e	2	b	conflict; all: e:2
+e	v	1	e	conflict; all: v:1
+g	p	1	g|l	conflict; all: p:1
+p	a	1	a	mixed; all: a:1 n:1
+r	d	6	t	mixed; all: d:6 t:2
+t	i	2	y	mixed; all: i:2 a:1
+x	a	6	q	conflict; all: a:6
+λ	t	10	t	mixed; all: t:10 p:1 s:1

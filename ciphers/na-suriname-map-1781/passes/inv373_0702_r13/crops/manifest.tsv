@@ -1,0 +1,9 @@
+# R13-SUR702 crops, 6 Oct 2026. Not committed (folder over 30 MB). Regenerate: fetch the two native regions, then cut.
+# base = https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/167f4f68-1d73-45e0-9d03-fa5a0f7d0294.jp2
+#   (NL-HaNA_1.05.03_373_0702.tif, native 4904x4017; R13-SURSWP4 plan.tsv order 704)
+# left.jpg  = {base}/180,100,2340,3820/full/0/default.jpg   (left page)
+# right.jpg = {base}/2500,100,2380,3820/full/0/default.jpg  (right page, folio 630)
+# python3 tools/iiif_lines.py --image left.jpg --out cL --prefix p0702L --centres 265,417,568,720,868,1017,1170,1323,1477,1645,1805,1953,2107,2254,2409,2580,2735,2884,3030,3200,3390,3536 --debug
+# python3 tools/iiif_lines.py --image right.jpg --out cR --prefix p0702R --centres 251,410,565,740,893,1053,1243,1415,1620,1798,1959,2128,2307,2478,2677,2825,2986,3173,3340,3485 --debug
+# (centres = gloss+cipher pair midpoints, chosen from the ink profile and eye-checked on the page views.) Each crop = one gloss line + the cipher line below.
+# Pass crop names: L01-L22 = p0702L_L01-L22, R01-R20 = p0702R_L01-L20.
