@@ -91,7 +91,7 @@ line	pos	sign	value	grade
 2039_leg_c	10	g	g|l	M
 2039_leg_c	11	o	r	M
 2039_leg_c	12	6	s	M
-2039_leg_c	13	S	p	M
+2039_leg_c	13	S	p	C
 2039_leg_c	14	o	r	H
 2039_leg_c	15	m	i	H
 2039_leg_c	16	[hash]	o	H
@@ -99,7 +99,7 @@ line	pos	sign	value	grade
 2039_leg_c	18	[f-loop]	i	M
 2039_leg_c	19	o	r	H
 2039_leg_c	20	m	i	H
-2039_leg_c	21	n	?	U
+2039_leg_c	21	n	z	C
 2039_leg_c	22	k	o	H
 2039_leg_c	23	l	n	H
 2039_leg_c	24	3	e	H
@@ -179,7 +179,7 @@ line	pos	sign	value	grade
 2039_leg_e	25	k	o	H
 2039_leg_e	26	[w-tilde]	f	M
 2039_leg_e	27	[tilde]	?	U
-2039_leg_e	28	t	y	M
+2039_leg_e	28	t	y	C
 2039_leg_e	29	r	t	M
 2039_leg_e	30	[ezh-dot]	e	M
 2039_leg_e	31	8	i	H
@@ -194,7 +194,7 @@ line	pos	sign	value	grade
 2039_leg_f	4	g	g|l	M
 2039_leg_f	5	p	a	H
 2039_leg_f	6	[thorn]	c|z	M
-2039_leg_f	7	t	y	M
+2039_leg_f	7	t	y	C
 2039_leg_f	8	l	n	H
 2039_leg_f	9	&	?	U
 2039_leg_f	10	g	g|l	M
@@ -279,7 +279,7 @@ line	pos	sign	value	grade
 2039_leg_k	5	d	b	M
 2039_leg_k	6	o	r	H
 2039_leg_k	7	r	t	H
-2039_leg_k	8	t	y	M
+2039_leg_k	8	t	y	C
 2039_leg_k	9	3	e	H
 2039_leg_k	10	l	n	H
 2039_leg_k	11	[lambda-label?]	?	U
@@ -289,7 +289,7 @@ line	pos	sign	value	grade
 2039_leg_l	3	r	t	H
 2039_leg_l	4	o	r	H
 2039_leg_l	5	3	e	H
-2039_leg_l	6	t	y	M
+2039_leg_l	6	t	y	C
 2039_leg_m	0	[thorn]	c	H
 2039_leg_m	1	k	o	H
 2039_leg_m	2	o	r	H
@@ -334,7 +334,7 @@ line	pos	sign	value	grade
 2039_leg_p	12	g	g|l	M
 2039_leg_p	13	p	a	H
 2039_leg_p	14	[ezh-dot]	e	M
-2039_leg_p	15	t	y	M
+2039_leg_p	15	t	y	C
 2039_leg_p	16	l	n	H
 2039_leg_p	17	s	p	M
 2039_leg_p	18	h	n	H
@@ -348,13 +348,13 @@ line	pos	sign	value	grade
 2039_leg_p	26	[lambda]	t	H
 2039_leg_p	27	7	e	M
 2039_leg_p	28	o	r	H
-2039_leg_p	29	t	y	M
+2039_leg_p	29	t	y	C
 2039_leg_p	30	r	t	H
 2039_leg_p	31	h	n	H
 2039_leg_q	0	[s-loop]	p	M
 2039_leg_q	1	f	i	H
 2039_leg_q	2	3	e	M
-2039_leg_q	3	t	y	M
+2039_leg_q	3	t	y	C
 2039_leg_q	4	6	s	H
 2039_leg_q	5	5	v	H
 2039_leg_q	6	[hash]	o	H
@@ -392,7 +392,7 @@ line	pos	sign	value	grade
 2039_leg_r	13	[psi]	s	H
 2039_leg_r	14	g	g|l	M
 2039_leg_r	15	5	v	H
-2039_leg_r	16	t	y	M
+2039_leg_r	16	t	y	C
 2039_leg_r	17	6	s	H
 2039_leg_r	18	s	p	M
 2039_leg_r	19	k	o	H
@@ -401,7 +401,7 @@ line	pos	sign	value	grade
 2039_leg_r	22	[hash]	o	H
 2039_leg_r	23	h	n	H
 2039_leg_r	24	6	s	H
-2039_leg_r	25	S	p	M
+2039_leg_r	25	S	p	C
 2039_leg_r	26	g	g|l	M
 2039_leg_r	27	p	a	H
 2039_leg_r	28	h	n	H

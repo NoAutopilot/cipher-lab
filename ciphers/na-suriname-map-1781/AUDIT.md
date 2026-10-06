@@ -596,3 +596,11 @@ filed for this target. Stage 9 blockers unchanged (LOCAL-QUEUE L36, L41). Re-cla
 ## JSTOR run (local runner, 4 Oct 2026)
 
 A. J. A. Quintus Bosz, "De geschiedenis van het fort Nieuw-Amsterdam in het verdedigingsstelsel van Suriname", Nieuwe West-Indische Gids 43 (1963-64) 103-148, https://www.jstor.org/stable/41848992 (only hit for ("Redout Leyden" OR "redoute Leiden") AND 1781). Read in the page viewer: the matches are "Redoute Leiden" on pp.125, 127, 129, 140 (p.125 the 1782 defence situation; p.140 its later quarantine use). No mention of Wollant, the 1781 maps, a legend or secret writing. Context only. The other nine Suriname queries (Wollant/geheimschrift, the de Leeuw and AMH phrases, Zeelandia 1781-82, the legend words) returned 0.
+
+## Revision carried in (R10-SURV, verifier of R10-SUR693, account 2, 6 Oct 2026, 07:59-08:0x UTC -- rule 10 propagation, no re-class)
+Key change from Texier's glossed cipher letter (NA 1.05.03 inv. 373 scans 0692-0693, Paramaribo 29 Oct 1781; same sign system
+as the map key, blind-pass re-test 0.740 vs control p99 0.148, passes/inv373_0693_r10/verify_blind.out): key_period_codes_nieuw.tsv
+S, t, [x-dot] M -> C; rows [x-dots] = a (C) and n = z (C) added. Item 4 (2077) now **H 538 C 12 M 63 U 45** (was H 538 C 10 M 61
+U 49); `decode_key.py --check` exit 0. Reading change: L01 "planens·t·at" -> "planens·taat" (staat); L05, L08, L14 "nag·syn" ->
+"nagasyn" (magazijn, Wollant's N for M). No N-class asked or changed in this pass; the item 4 safe sentence is unaffected beyond the
+grade counts. No SECOND-OPINIONS-QUEUE.tsv row exists for this target (checked 6 Oct 2026). Details: NOTES.md "R10-SURV".

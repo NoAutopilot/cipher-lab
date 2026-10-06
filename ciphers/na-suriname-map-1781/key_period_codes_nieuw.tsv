@@ -5,6 +5,8 @@
 # g=g|l (M) although the Nieuw sheet has g only for L -- reader-code identity is an image question, not settled here.
 # GAPS15 (2 Oct 2026): one blind image call (passes/signcmp_gaps15/result.tsv) settled [MM], [ladder-III], [hand-box] (H) and
 # [thorn] = c; per-token results in exceptions_nieuw_image.tsv. g, y, b at code level unchanged (calls below 0.6).
+# R10-SURV (verifier, 6 Oct 2026): S, t, [x-dot] M -> C and rows [x-dots] a, n z added from Texier's glossed cipher letter
+# (NA 1.05.03 inv. 373 scans 0692-0693, Paramaribo 29 Oct 1781; passes/inv373_0693_r10/, verify_blind.out). b, g, y unchanged.
 code	value	grade	source	note
 2	a	H	inv86 0002/0003	identical
 [delta]	a	H	inv86 0002/0003	identical; key.tsv C agrees
@@ -39,7 +41,7 @@ k	o	H	inv86 0002/0003	identical; crib (k=o) agrees
 q	p	H	inv86 0002/0003	identical
 s	p	M	inv86 0002/0003	sheet script S read as s, by shape name
 [s-loop]	p	H	inv86 0002/0003	sheet script S; key.tsv C (p) agrees
-S	p	M	inv86 0002/0003	sheet script S
+S	p	C	inv86 0002/0003 + NA 1.05.03 inv.373 0692-0693 gloss	sheet script S; R10-SURV 6 Oct 2026: Texier's glossed letter (inv. 373 scans 0692-0693) reads script S = p (permitteren, eye-checked), grade C
 p	a	H	inv86 0003	Nieuw A row lowercase p, identical
 x	q	H	inv86 0002/0003	identical
 0	r	H	inv86 0002/0003	identical
@@ -53,12 +55,14 @@ r	t	H	inv86 0002/0003	sheet script R read as r; crib (r=t) agrees
 [lambda]	t	H	inv86 0002/0003	identical
 5	v	H	inv86 0002/0003	identical; key.tsv C agrees
 4	w	H	inv86 0002/0003	identical; key.tsv C agrees
-t	y	M	inv86 0002/0003	sheet tau (Y); crib gave j (i/j/y class): 'yser', 'batterijen', 'magazijn'
+t	y	C	inv86 0002/0003 + NA 1.05.03 inv.373 0692-0693 gloss	sheet tau (Y); crib gave j (i/j/y class): 'yser', 'batterijen', 'magazijn'; R10-SURV 6 Oct 2026: inv. 373 0692-0693 gloss t = ij/y 3/3 (mij, gemakkelijk, tyd; blind pass 3/3), grade C
 [thorn]	c	M	inv86 0003	GAPS15 blind image call: two big-capital tokens (2039 a:0, m:0) = Nieuw C row script C (0.75, H by exception); the Nieuw sheet has no script N (Z = n), so the Oud-sheet z alternative is dropped; f:6 (looped-p form) not separated, kept c|z by exception
 [w-tilde]	f	M	inv86 0003	Nieuw (and Oud) F row omega with bar, by shape name
 [u-dots]	n	M	inv86 0003	Nieuw N row ij with dots, by shape name
 [d-loop]	b	M	inv86 0003	Nieuw B row looped script d, by shape name
-[x-dot]	a	M	inv86 0003	Nieuw A row third sign (x with dots), by shape name
+[x-dot]	a	C	inv86 0003 + NA 1.05.03 inv.373 0692-0693 gloss	Nieuw A row third sign (x with dots); R10-SURV 6 Oct 2026: inv. 373 0692-0693 gloss x-with-dots = a 8/8 (blind pass x=a 7/8, dots eye-checked on 0692 L08), grade C
+[x-dots]	a	C	inv86 0003 + NA 1.05.03 inv.373 0692-0693 gloss	reader-code alias of [x-dot] (NOTES 'A [x-dots] = B [x-dot]', GAPS20-era two-reader comparison); value as [x-dot], R10-SURV 6 Oct 2026
+n	z	C	inv86 0003 + NA 1.05.03 inv.373 0692-0693 gloss	Nieuw Z row lowercase n (key_period_nieuw.tsv, H); R10-SURV 6 Oct 2026: inv. 373 0692-0693 gloss n = z 3/3 (deeze, dezelve, beezig; blind pass 3/3), grade C
 [dots-tri]	a	M	inv86 0003	Nieuw A row third sign (x with dots), by shape name
 [MM]	stukgeschut	H	inv86 0003	Nieuw code group AA struck through = Stuk geschut; GAPS15 blind image call 0.9 (2061 L01:3); stands after gun counts
 [ladder-III]	buskruit	H	inv86 0003	Nieuw code group: barred rectangle with three spires = de Buscruijt; GAPS15 blind image call 0.6 (2061 L09:11), grouped with [hand-box]

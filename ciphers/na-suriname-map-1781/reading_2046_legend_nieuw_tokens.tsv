@@ -1,7 +1,7 @@
 line	pos	sign	value	grade
 2046_title1	0	q	p	H
 2046_title1	1	e	e	H
-2046_title1	2	[x-dot]	a	M
+2046_title1	2	[x-dot]	a	C
 2046_title1	3	l	n	H
 2046_title1	4	3	e	H
 2046_title1	5	[h-tilde]	?	U
@@ -29,7 +29,7 @@ line	pos	sign	value	grade
 2046_title2	8	[hash]	o	H
 2046_title2	9	5	v	H
 2046_title2	10	[lambda]	t	H
-2046_title2	11	S	p	M
+2046_title2	11	S	p	C
 2046_title2	12	5	v	H
 2046_title2	13	o	r	H
 2046_title2	14	[u-dots]	n	M
@@ -41,7 +41,7 @@ line	pos	sign	value	grade
 2046_title2	20	a	e	H
 2046_head1	0	[psi]	s	H
 2046_head1	1	[lambda]	t	H
-2046_head1	2	[x-dot]	a	M
+2046_head1	2	[x-dot]	a	C
 2046_head1	3	[delta]	a	H
 2046_head1	4	[lambda]	t	H
 2046_head1	5	v	d	H
@@ -54,14 +54,14 @@ line	pos	sign	value	grade
 2046_head1	12	a	e	H
 2046_head1	13	[o-flag]	?	U
 2046_head1	14	3	e	H
-2046_head1	15	t	y	M
+2046_head1	15	t	y	C
 2046_head1	16	[d-loop]	b	M
 2046_head1	17	l	n	H
 2046_No1	2	[MM]	stukgeschut	H
 2046_No1	3	[delta-grave]	?	U
 2046_No1	5	g	g|l	M
 2046_No1	6	[d-loop]	b	M
-2046_No1	7	t	y	M
+2046_No1	7	t	y	C
 2046_No1	8	[psi]	s	H
 2046_No1	9	3	e	H
 2046_No1	10	o	r	H
@@ -87,7 +87,7 @@ line	pos	sign	value	grade
 2046_No1	33	[x-dot-grave]	?	U
 2046_No1	35	g	g|l	M
 2046_No1	36	[d-loop]	b	M
-2046_No1	37	t	y	M
+2046_No1	37	t	y	C
 2046_No1	38	6	s	H
 2046_No1	39	a	e	H
 2046_No1	40	o	r	H
@@ -96,7 +96,7 @@ line	pos	sign	value	grade
 2046_No1	44	[3-breve]	?	U
 2046_No1	45	g	g|l	M
 2046_No1	46	[d-loop]	b	M
-2046_No1	47	t	y	M
+2046_No1	47	t	y	C
 2046_No1	48	[psi]	s	H
 2046_No1	49	[d-hook]	?	U
 2046_No1	50	o	r	H
@@ -104,7 +104,7 @@ line	pos	sign	value	grade
 2046_No2	3	[p-grave]	?	U
 2046_No2	5	g	g|l	M
 2046_No2	6	[d-loop]	b	M
-2046_No2	7	t	y	M
+2046_No2	7	t	y	C
 2046_No2	8	6	s	H
 2046_No2	9	a	e	H
 2046_No2	10	o	r	H
@@ -118,7 +118,7 @@ line	pos	sign	value	grade
 2046_No2	19	[delta-grave]	?	U
 2046_No2	21	g	g|l	M
 2046_No2	22	[d-loop]	b	M
-2046_No2	23	t	y	M
+2046_No2	23	t	y	C
 2046_No2	24	[psi]	s	H
 2046_No2	25	7	e	H
 2046_No2	26	o	r	H
@@ -127,7 +127,7 @@ line	pos	sign	value	grade
 2046_No3	4	[3-breve]	?	U
 2046_No3	5	g	g|l	M
 2046_No3	6	[d-loop]	b	M
-2046_No3	7	t	y	M
+2046_No3	7	t	y	C
 2046_No3	8	6	s	H
 2046_No3	9	3	e	H
 2046_No3	10	o	r	H
@@ -148,7 +148,7 @@ line	pos	sign	value	grade
 2046_head2	14	[f-loop]	i	M
 2046_head2	15	g	g|l	M
 2046_head2	16	h	n	H
-2046_head2	17	[x-dot]	a	M
+2046_head2	17	[x-dot]	a	C
 2046_head2	18	r	t	H
 2046_head2	19	5	v	H
 2046_head2	20	e	e	H
@@ -174,7 +174,7 @@ line	pos	sign	value	grade
 2046_leg_abc	18	g	g|l	M
 2046_leg_abc	19	v	d	H
 2046_leg_abc	20	[delta]	a	H
-2046_leg_abc	21	[x-dot]	a	M
+2046_leg_abc	21	[x-dot]	a	C
 2046_leg_abc	22	[lambda]	t	H
 2046_leg_abc	23	3	e	H
 2046_leg_abc	24	h	n	H
@@ -189,8 +189,8 @@ line	pos	sign	value	grade
 2046_leg_abc	34	b	k|i	M
 2046_leg_abc	35	g	g|l	M
 2046_leg_abc	36	a	e	H
-2046_leg_abc	37	t	y	M
-2046_leg_abc	38	t	y	M
+2046_leg_abc	37	t	y	C
+2046_leg_abc	38	t	y	C
 2046_leg_abc	39	l	n	H
 2046_leg_abc	40	3	e	H
 2046_leg_abc	41	g	g|l	M
@@ -211,7 +211,7 @@ line	pos	sign	value	grade
 2046_leg_d	1	[d-loop]	b	M
 2046_leg_d	2	[delta]	a	H
 2046_leg_d	3	o	r	H
-2046_leg_d	4	[x-dot]	a	M
+2046_leg_d	4	[x-dot]	a	C
 2046_leg_d	5	b	k|i	M
 2046_leg_d	6	b	k|i	M
 2046_leg_d	7	3	e	H
@@ -278,11 +278,11 @@ line	pos	sign	value	grade
 2046_leg_efgh	9	m	i	H
 2046_leg_efgh	10	3	e	H
 2046_leg_efgh	11	[u-dots]	n	M
-2046_leg_efgh	12	[x-dot]	a	M
+2046_leg_efgh	12	[x-dot]	a	C
 2046_leg_efgh	13	g	g|l	M
 2046_leg_efgh	14	[delta]	a	H
 2046_leg_efgh	15	[thorn]	c	M
-2046_leg_efgh	16	t	y	M
+2046_leg_efgh	16	t	y	C
 2046_leg_efgh	17	l	n	M
 2046_leg_efgh	18	[lambda]	t	H
 2046_leg_efgh	19	8	i	H
@@ -293,12 +293,12 @@ line	pos	sign	value	grade
 2046_leg_efgh	24	v	d	H
 2046_leg_efgh	25	a	e	H
 2046_leg_efgh	26	[d-loop]	b	M
-2046_leg_efgh	27	[x-dot]	a	M
+2046_leg_efgh	27	[x-dot]	a	C
 2046_leg_efgh	28	[lambda]	t	H
 2046_leg_efgh	29	r	t	H
 2046_leg_efgh	30	[d-hook]	?	U
 2046_leg_efgh	31	o	r	H
-2046_leg_efgh	32	t	y	M
+2046_leg_efgh	32	t	y	C
 2046_leg_efgh	33	7	e	H
 2046_leg_efgh	34	l	n	H
 2046_leg_efgh	36	[thorn]	c	M
@@ -312,7 +312,7 @@ line	pos	sign	value	grade
 2046_leg_efgh	45	[psi]	s	H
 2046_leg_efgh	46	g	g|l	M
 2046_leg_efgh	47	5	v	H
-2046_leg_efgh	48	t	y	M
+2046_leg_efgh	48	t	y	C
 2046_leg_efgh	49	6	s	H
 2046_leg_efgh	51	g	g|l	M
 2046_leg_efgh	52	[delta]	a	H
@@ -324,7 +324,7 @@ line	pos	sign	value	grade
 2046_leg_efgh	58	[d-hook]	?	U
 2046_leg_efgh	59	[s-hook]	?	U
 2046_leg_efgh	60	g	g|l	M
-2046_leg_efgh	61	[x-dot]	a	M
+2046_leg_efgh	61	[x-dot]	a	C
 2046_leg_efgh	62	p	a	H
 2046_leg_efgh	63	[lambda]	t	H
 2046_leg_efgh	64	[psi]	s	H
@@ -344,7 +344,7 @@ line	pos	sign	value	grade
 2046_leg_ki	15	7	e	H
 2046_leg_ki	16	[delta-dots]	?	U
 2046_leg_ki	17	5	v	H
-2046_leg_ki	18	[x-dot]	a	M
+2046_leg_ki	18	[x-dot]	a	C
 2046_leg_ki	19	6	s	H
 2046_leg_ki	20	3	e	H
 2046_leg_ki	21	a	e	H

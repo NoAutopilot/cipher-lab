@@ -1,7 +1,7 @@
 line	pos	sign	value	grade
 2061_bat_L01	3	[MM]	stukgeschut	H
 2061_bat_L01	4	[dots-tri]	a	H
-2061_bat_L01	10	t	y	M
+2061_bat_L01	10	t	y	C
 2061_bat_L01	11	[psi]	s	H
 2061_bat_L01	12	3	e	H
 2061_bat_L01	13	o	r	M
@@ -13,7 +13,7 @@ line	pos	sign	value	grade
 2061_bat_L02	13	[hash]	o	H
 2061_bat_L03	3	[MM]	stukgeschut	H
 2061_bat_L03	4	[delta]	a	M
-2061_bat_L03	10	t	y	M
+2061_bat_L03	10	t	y	C
 2061_bat_L03	11	o	r	H
 2061_bat_L03	12	d	b	H
 2061_bat_L03	13	o	r	H
@@ -25,14 +25,14 @@ line	pos	sign	value	grade
 2061_bat_L03	24	k	o	H
 2061_bat_L04	3	[MM]	stukgeschut	H
 2061_bat_L04	4	p	a	H
-2061_bat_L04	9	t	y	M
+2061_bat_L04	9	t	y	C
 2061_bat_L04	10	y	s	H
 2061_bat_L04	11	a	e	H
 2061_bat_L04	12	o	r	H
 2061_bat_L04	14	b	k|i	M
 2061_bat_L04	15	g	g|l	M
 2061_bat_L04	16	r	t	H
-2061_bat_L04	17	t	y	M
+2061_bat_L04	17	t	y	C
 2061_bat_L04	18	h	n	H
 2061_bat_L04	19	a	e	H
 2061_bat_L04	20	[psi]	s	H
@@ -73,7 +73,7 @@ line	pos	sign	value	grade
 2061_bat_L05	13	7	e	H
 2061_bat_L05	15	[MM]	stukgeschut	H
 2061_bat_L05	16	p	a	H
-2061_bat_L05	20	t	y	M
+2061_bat_L05	20	t	y	C
 2061_bat_L05	21	[psi]	s	M
 2061_bat_L05	22	3	e	H
 2061_bat_L05	23	o	r	M
@@ -81,7 +81,7 @@ line	pos	sign	value	grade
 2061_bat_L06	3	h	n	H
 2061_bat_L06	4	r	t	H
 2061_bat_L06	5	[v-tall]	d	M
-2061_bat_L06	6	[x-dot]	a	M
+2061_bat_L06	6	[x-dot]	a	C
 2061_bat_L06	7	g	g|l	M
 2061_bat_L06	8	[delta]	a	H
 2061_bat_L06	9	l	n	M
@@ -105,7 +105,7 @@ line	pos	sign	value	grade
 2061_bat_L06	27	b	k|i	M
 2061_bat_L06	29	[MM]	stukgeschut	H
 2061_bat_L06	30	[a-caret]	?	U
-2061_bat_L06	35	t	y	M
+2061_bat_L06	35	t	y	C
 2061_bat_L06	36	[psi]	s	M
 2061_bat_L06	37	3	e	H
 2061_bat_L06	38	o	r	M
@@ -128,7 +128,7 @@ line	pos	sign	value	grade
 2061_bat_L07	16	e	e	H
 2061_bat_L07	17	h	n	H
 2061_bat_L07	18	[psi]	s	H
-2061_bat_L07	19	t	y	M
+2061_bat_L07	19	t	y	C
 2061_bat_L07	20	l	n	H
 2061_bat_L08	1	[hash]	o	H
 2061_bat_L08	2	[w-tilde]	f	M
@@ -186,7 +186,7 @@ line	pos	sign	value	grade
 2061_bat_L09	5	9	g	H
 2061_bat_L09	6	x	q	H
 2061_bat_L09	7	[psi-hook]	s	M
-2061_bat_L09	8	t	y	M
+2061_bat_L09	8	t	y	C
 2061_bat_L09	9	h	n	H
 2061_bat_L09	11	[ladder-III]	buskruit	H
 2061_bat_L09	12	&	?	U
@@ -205,7 +205,7 @@ line	pos	sign	value	grade
 2061_bat_L09	25	u	?	U
 2061_bat_L09	26	[s-loop]	p	M
 2061_bat_L09	27	s	p	M
-2061_bat_L09	28	t	y	M
+2061_bat_L09	28	t	y	C
 2061_bat_L09	29	b	k|i	M
 2061_bat_L09	30	m	i	H
 2061_bat_L09	31	3	e	H
@@ -222,7 +222,7 @@ line	pos	sign	value	grade
 2061_bat_L09	42	7	e	H
 2061_bat_L09	43	o	r	H
 2061_bat_L09	44	b	k|i	M
-2061_bat_L09	45	t	y	M
+2061_bat_L09	45	t	y	C
 2061_bat_L09	46	a	e	H
 2061_bat_L09	47	h	n	H
 2061_bat_L09	49	g	g|l	M
@@ -266,4 +266,4 @@ line	pos	sign	value	grade
 2061_bat_L10	29	g	p	M
 2061_bat_L10	30	r	t	H
 2061_bat_L10	31	o	r	H
-2061_bat_L10	32	t	y	M
+2061_bat_L10	32	t	y	C

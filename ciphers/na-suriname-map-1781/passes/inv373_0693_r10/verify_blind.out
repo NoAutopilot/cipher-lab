@@ -1,0 +1,10 @@
+blind tokens paired 249, keyed 223, agree 0.740; control mean 0.100 p99 0.148 -> SAME SYSTEM (blind)
+reconciler S: blind reads [hash]=p:1
+reconciler [x-dot]: blind reads x=a:7 r=a:1
+reconciler b: blind reads b=k:4
+reconciler t: blind reads t=ij:2 t=y:1
+reconciler g: blind reads g=l:2 a=g:1 9=l:1 g=g:1
+reconciler n: blind reads n=z:3
+reconciler [h-sec]: blind reads 3=h:1
+reconciler [y-fam]: blind reads [y-fam]=m:10 [y-fam]=n:9 r=m:1 [hash]=m:1
+reconciler x: blind reads x=a:1 x=t:1
