@@ -9183,3 +9183,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 04:20 | R8-SPS1 worker | claim R8-SPS1 (sp36-ball-1745, sp8-ehrenstein-1689, vanspaen-vandergoes-1808 parallel lookups), cap 2.5, box ends 05:05 UTC, for LANE LANE-RUN8-account-4
 2026-10-06 04:20 | R8-THUR25 worker | claim thurloe-printed P25-P28 page images re-pair, cap 5, box 04:20-05:35 UTC, for LANE LANE-RUN8-account-4
 2026-10-06 04:21 | R8-SPS2 worker | claim R8-SPS2: sp87/salvago/sp90 parallel lookups, cap 2.5, box ends 05:06 UTC, for LANE LANE-RUN8-account-4
+2026-10-06 04:21 | standby (owner account) | alive; holder account 3, last activity 03:31 (commit ede9d1a12 from its orchestrator session); no takeover
