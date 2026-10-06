@@ -276,7 +276,7 @@ The statistic T is the mean log10 4-gram probability from `tools/judge_plaintext
 | Morse p0 / p1 | T -2.273 / -2.373 | p05 -0.947 | median -2.43 / -2.38 |
 
 - **No target decode reaches its control's p05, and none clears the Bonferroni threshold.**
-- In Morse, 7 of the 31 runs (lengths 5-7: `10011`, `001011` and the like) are not Morse letters. The letter-only decode is `DWDN?TEK?KYXNTA?...` (p0) and `WDWA?ETR?...` (p1).
+- In Morse, 8 (p0) or 7 (p1) of the 31 runs (every run of length 6-7, plus some 5-element runs) decode to nothing in the table. The letter-only decode is `DWDN?TEK?KYXNTA?...` (p0) and `WDWA?ETR?...` (p1).
 - All 74 target decodes are in `blockc/target_decodes.tsv`.
 - **Reading:** this is a control-backed negative for direct Morse/binary-to-English readings of Block C under these 74 encodings, conditional on the transcription (rule 2: no image of Q5 itself exists in the FBI file).
 - **What it does not test:**
