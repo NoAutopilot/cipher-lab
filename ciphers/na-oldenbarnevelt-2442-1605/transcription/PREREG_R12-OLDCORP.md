@@ -21,3 +21,14 @@ Scoring (only after the fold check, corpus frozen): scripts/es17a_rejudge.py --l
 reading (N=634), the whole reading.txt (N=1226), and the six shuffled-target decodes of PREREG_OLD-ES17A (seeds 1-3,
 committed key and blind solver key). Gate: the judge's own (score > real_p05 and word cover >= 0.5). Voiding rule
 (ARM-C1): any shuffled decode PASS voids es1600 as a gate for this family at this N. No reading or key is changed.
+
+## Amendment, 6 Oct 2026 ~11:55 UTC -- after the year-share survey, BEFORE any corpus file was built or any score run
+
+The share rule alone admitted 12 volumes, five of them not 1598-1621 letters (title pages read): 48 (Gonzalez de Najera's
+*Desengano y reparo de la guerra de Chile*, a treatise), 60 (a Felipe III-IV chronicle), 81, 100, 106 (15th-century and
+medieval chronicles, admitted by a few stray years). Since the brief is "state letters 1598-1621", the selection adds a
+second, content criterion: the volume's own title/first heading names letters or state papers of 1598-1621. Kept, 7 files:
+42 (letters of the Almirante de Aragon, Flanders 1596-1602), 43 (documents of the Archduke Albert 1598-1621, mostly
+letters), 44-47 (Osuna's Naples/Sicily correspondence, 1610s), 96 (letters of Pedro de Toledo, marques de Villafranca,
+to Felipe III, 1616-18). Five volumes (36, 61, 68, 82, 91) answered HTTP 500 on their djvu text and are unread
+(logged). All other rules unchanged.
