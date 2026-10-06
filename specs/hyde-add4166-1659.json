@@ -1,0 +1,24 @@
+{
+ "slug": "hyde-add4166-1659",
+ "name": "Hyde to Mr Milles, intercepted letter, 1 Nov 1659 (BL Add MS 4166 ff.92-93, DECODE R4886)",
+ "date": "1 Nov 1659 (copy in the Thurloe papers)",
+ "language_candidates": ["en"],
+ "ciphertext_pending": "No transcription of the leaf exists. Printed numerals only: Birch 1742, Thurloe State Papers vol. 7 pp.775-776 (BHO thurloe-papers/vol7/pp771-781), 133 numerals, 103 distinct, max 966, read 6 Oct 2026 and not yet checked against the image (BL images 'currently unavailable'; DECODE image needs login). Any test on the print text is conditional on that transcription.",
+ "alphabet": "decimal numbers 5-966 in space-separated groups; f.93 is laid out as number groups followed by cover names (Mr. Perkins, Mr. Tush, ...), with a few clear English words interleaved",
+ "constraints": {
+  "layout": "two opening lines of numerals with clear words, then about 45 lines of short number groups each ending in a cover name, then a clear closing paragraph saying a cypher is sent",
+  "known_keys_to_test": "Hyde-Barwick key (THE=370, numbers 1-692, Vita 1721 plate; Bourdeau targets/hyde/barwick_key.py) can cover at most the groups below 693; BL f.95r (DECODE R4887) may hold the key for this intercept",
+  "cribs": "the cover names after each line are in clear: they may be the plaintext or the cover names for the number groups"
+ },
+ "cheap_tests_in_order": [
+  "1. No key: census plus structure test on the printed groups. Count groups per name line, test whether the number of groups matches the letters of the cover name (e.g. 9 20 23 12 772 25 = 'Holt' is six groups for four letters) against a shuffled-pairing control with the same line lengths. Cost under $3, Sonnet.",
+  "2. Apply the Hyde-Barwick key to groups below 693 and report hits against a shuffled-group control; a key that produces nothing on the cover-name lines is a negative conditional on the print transcription.",
+  "3. Only with image access (a person's DECODE login or BL reader): check the print numerals against the leaf and read f.94-f.95r for the key."
+ ],
+ "matched_control": "shuffled pairing of number lines to names (same line lengths) for test 1; shuffled groups for test 2; not yet run",
+ "cheap_test_done": [],
+ "judge": {"language": "en", "letters_min": 20, "letters_max": 200, "control_samples": 200, "note": "N is about 133 numerals and the plaintext is partly names; a language judge is meaningful only for a reading that covers the interleaved clear-word lines."},
+ "value": "low-medium: a short table-like intercept with cover names in clear, a printed key family nearby, and no reading found in any source checked.",
+ "model": "Sonnet",
+ "written": "6 Oct 2026 by worker NB-HYDE (LANE NEWT-B-account-2)"
+}
