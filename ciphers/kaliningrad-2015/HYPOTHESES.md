@@ -1180,3 +1180,30 @@ cover that many sign tokens (in the control the commonest 2 words come to 7-11% 
 lighter code load than the target's hypothesis implies; the same mismatch says the design itself fits the target's frequency
 shape poorly (two signs at 27% of all tokens are too frequent for two whole Russian words). Read the negative with that caveat.
 Decodes: `families/wordcode-1-codes=topk_{2,6},bnd=x,err=0.05-s1stxt-convB.txt` and the `-shuffle1-` pair beside them.
+
+### R15-KAL14 pre-registration (6 Oct 2026, 18:17 UTC, before any scored run)
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run15-jobs.md` "R15-KAL14". Family: `columnar_homophonic` (new module
+`tools/families/columnar_homophonic.py`, offline test `tools/tests/test_columnar_homophonic.py`): an irregular columnar
+transposition (width w, keyed column order) of a homophonic substitution into ru19_lat s1s (Synodal Bible 1876,
+transliterated; era/register mismatch with a 2015 find noted in tools/data/ru19_lat README -- the same corpus every
+Russian run on this target used). Solver: joint numpy anneal over (column order, sign->letter key), trigram + -N*KL
+letter term, widths 2-12 all tried, best score wins.
+- Cipher: convention B, `families/r14_kal12/cipher_marked_B.txt` (N 1066, K 28), spec `families/r15_kal13/spec_s1s.json`.
+- Budget (fixed): restarts 2 per width, iters 60000, t0 1.0, order_p 0.25, uni_weight 1.0; seeds 1-3 (control widths 7, 10, 5
+  by seed; random order per seed; homophonic layer profile=target as the homophonic family builds it).
+- Gate: control mean recovery >= 0.6 (family_run --gate 0.6). If not met: CONTROL BELOW GATE, the target is not run, and the
+  family is logged "untestable by this instrument at this N" (the brief's stop rule).
+- If met: target run and `--shuffle-target 1` run beside it, both through the spec's judge (ru19_lat s1s); a reading is claimed
+  only on a judge PASS of the target with the shuffled decode FAIL.
+- Calibration done before this pre-registration, on synthetic controls only (no target scoring): the anneal reads a width-1
+  homophonic control at 0.99 (60000 iters, 3 restarts), but with a known width 5/7/12 and up to 200000 iters it read
+  0.04-0.08 -- so the expected outcome at this budget is CONTROL BELOW GATE.
+
+Command:
+```
+python3 tools/family_run.py ciphers/kaliningrad-2015/families/r15_kal13/spec_s1s.json --family columnar_homophonic \
+  --cipher ciphers/kaliningrad-2015/families/r14_kal12/cipher_marked_B.txt --tokens space --corpus tools/data/ru19_lat/s1s.txt.gz \
+  --seeds 3 --restarts 2 --gate 0.6 --param profile=target --param widths=2-12 --param iters=60000 --param ctrl_widths=7,10,5 \
+  --target-only-if-gated --decode-tag convB --label "R15-KAL14 columnar x homophonic ru s1s, conv B"
+```
