@@ -387,3 +387,41 @@ from 24 Feb) for a clear or deciphered copy of a 9 Feb letter from Constantinopl
 
 **Requests:** service.archief.nl 35 (32 full-opening views at 700-900 px, 3 header crops), all HTTP 200, >= 2 s apart; no
 other host. Subagent calls: 0.
+
+## D2B-ROELL3 (6 Oct 2026): NA 2.01.08 inv. 348, the Van Dedem / Testa handover
+
+Worker D2B-ROELL3 (account 2, for LANE DEFAULT-account-2-20261005-2217), brief
+`.claude/briefs/runs/2026-10-05-account2-default-2217-jobs.md`, 00:37-00:42 UTC by `date -u`. Page images read by eye (IIIF
+700 px openings plus four 1400 px header/body crops), no subagent, no decoding. Status unchanged: `open`. Grade counts: H 0,
+C 0, S 0, M 0, I 0 (no reading). Per-scan log: `na20108/inv348_scans.tsv` (22 scans).
+
+**Layout of inv. 348.** Not one chronological run. The pak opens with the bundle received in 1809: Van Dedem's last despatches
+(No 47, Constantinople 25 Nov 1808, rec. 7 Jan 1809, scan 2; No 48, 10 Dec 1808, scan 8) and Dutch letters of his (scans 17,
+20 -- the latter dated "den 31 van Hooymaand 1809", on travel costs for his return to Holland), then Testa's numbered series
+from scan ~22 (No 1, 11 Jan 1809, scan 30; No 3, 12 Jan, scan 22; No 5 and No 6, both 19 Jan, scans 34-36; No 7, 10 Feb,
+scan 40; No 16/18, 10 May, scan 80; No 36, 11 Dec 1809, scan 200). The 1808 Van Dedem series follows later (scan 350 = No 3,
+5 March 1808). Within the 1809 bundle the order is not strictly by number (No 3 at scan 22 before No 1 at scan 30).
+
+**The handover, read.** The inventory's dates (Van Dedem to 7 Feb 1809, Testa from 24 Feb 1809) are not the writing dates.
+Van Dedem's No 48 (10 Dec 1808, scan 13) says he will leave Constantinople by Bucharest and Vienna and present Testa to the
+Porte as chargé d'affaires during his absence; Testa's No 1 (11 Jan 1809, scan 30) reports that Van Dedem left the residence
+on the 2x of the previous month (December 1808). From January 1809 the legation's despatches are Testa's.
+
+**The 9 Feb 1809 window.** Testa's No 6 is dated 19 Jan 1809 (scan 36) and No 7 is dated 10 Feb 1809 (scan 40); No 7 opens by
+citing "ma respectueuse Dépêche sous No 5 en date du 19 du passé" and goes straight on to the Dardanelles peace and the frigate
+Seahorse, with no mention of a despatch of the 9th. **No despatch dated 9 Feb 1809 was seen in Testa's numbered series, and
+every scan viewed (22 of 508) is in clear French or Dutch; no cipher groups, no "en chiffre" note and no deciphered
+interlinear copy were seen.** If R1469 is a Constantinople despatch of 9 Feb 1809, it is not one of Testa's numbered ones
+(No 6 and No 7 bracket it); an unnumbered or separately sent ciphered despatch, or one from Van Dedem on the road (he was
+travelling by Bucharest/Vienna in Dec 1808-Feb 1809), is not excluded. Inference, not established.
+
+**Not found / not searched.** Scans 3-7, 9-12, 14-16, 18-19, 21, 23-24, 26, 28-29, 31-33, 38, 41-42, 44-46, 48-79 were not
+viewed, so an unnumbered enclosure or a cipher piece filed inside a despatch in the 1809 bundle is not excluded; nothing from
+Van Dedem dated on the road (Bucharest, Vienna) was seen in the scans viewed.
+
+**Next step (priced, one line):** read inv. 348 scans 3-79 in full (~75 openings at 700 px, by eye, ~USD 3-4, <= 2 sessions at
+the 40-request limit) for any cipher piece, unnumbered despatch or Van Dedem letter from the road dated around 9 Feb 1809;
+then the legation archive 1.02.20's own 1809 letter-book (outgoing side) for a 9 Feb 1809 minute.
+
+**Requests:** service.archief.nl 29 (24 views at 700 px, 4 crops at 1400 px, 1 info.json), all HTTP 200, >= 2 s apart; no
+other host. Subagent calls: 0.
