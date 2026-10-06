@@ -524,10 +524,27 @@ Allemagne 194) is still the test. Images: `images/mc133_c66_gravel_f443r_1000px.
 Requests this job: gallica.bnf.fr 33 (2 SRU, 4 IIIF manifests via tools/gallica_folio.py, 27 image requests of which one HTTP 500
 with the browser UA, retried once with the descriptive UA, 200; the rest 200), at least 2 s apart. No subagent calls.
 
-## Remaining gaps (R9-DEC2678C, 6 Oct 2026; updated R10-DEC2678S, D1-DEC2678L)
+## D1-DEC2678M (6 Oct 2026): the 1664 Gravel leaves -- not looked at, Gallica unreachable
+
+Look-only job, no decoding; no cipher token of R2678 read (0 H, 0 C, 0 S, 0 M, 0 I). Stopped before any leaf: Gallica failed every
+request this session, 13:52-13:57 UTC 6 Oct 2026 by date -u. SRU (`dc.title all "Correspondance de Colbert" and dc.title all "1664"`)
+answered HTTP 500 after about two minutes; the one retry (browser UA) got an empty reply (curl 52); the Mél. Colbert 124 IIIF manifest
+failed through tools/gallica_folio.py and once more by curl (empty reply, 000). The agent proxy reported healthy and archive.org answered
+200 at the same minute, so the failure was Gallica's side. Host stopped per the good-citizen rule (no retry loop).
+
+Found from disk (no request): Mél. Colbert 124's sommaire (sources/bnf-aem/cc95427j_melcolbert124.html) links its Gallica copy,
+**btv1b10035535p** (f.55 Robert de Gravel is in this volume). The sommaires of 120-120bis, 121-121bis and 123-123bis carry no Gallica link;
+their arks need the SRU search once Gallica answers. Also from the sommaire text: 121 f.221 is "l'abbé de Gravel", ambassadeur à
+Ratisbonne -- the sommaire's own wording, which may be a slip for Robert (the other five entries say R. or Robert de Gravel); the leaf decides.
+Not found: no leaf of 120 f.348, 445; 121 f.221, 746; 123 f.589; 124 f.55 was seen, so nothing is known about figure groups on them.
+
+Requests this job: gallica.bnf.fr 4 (2 SRU, 2 manifest), all failed (500, empty, empty, empty); proxy status 1; archive.org 1 (200,
+reachability control). No subagent calls.
+
+## Remaining gaps (R9-DEC2678C, 6 Oct 2026; updated R10-DEC2678S, D1-DEC2678L, D1-DEC2678M)
 Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - `29`, a single-group payee name (15,000 Rd) - blocker: open-codes; a 1665 nomenclature code outside the 1672 table; Gravel's clear letters of 29 Oct and 19 Nov 1665 (D1-DEC2678L) name the Elector of Mainz as payee of a 15,000-rixdollar gratification, a context candidate (grade I), unchecked against any key; next: the 1665 nomenclature from AE CP Allemagne 194, an owner-side reproduction request
-- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); Mél. Colbert 126-130bis swept 6 Oct 2026 (R10-DEC2678S), Gravel's four other 1665 letters there all in clear; Mél. Colbert 120-125 and 131-133 swept 6 Oct 2026 (D1-DEC2678S), 15 Gravel entries, none marked chiffre; the six 1665 Gravel letters of 131bis-133 looked at 6 Oct 2026 (D1-DEC2678L), all clear, no figure groups (131 f.263 is Barrillon's leaf); next: look at the 6 unlooked 1664 Gravel leaves (120 f.348, 445; 121 f.221, 746; 123 f.589; 124 f.55), ~$2-3
+- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); Mél. Colbert 126-130bis swept 6 Oct 2026 (R10-DEC2678S), Gravel's four other 1665 letters there all in clear; Mél. Colbert 120-125 and 131-133 swept 6 Oct 2026 (D1-DEC2678S), 15 Gravel entries, none marked chiffre; the six 1665 Gravel letters of 131bis-133 looked at 6 Oct 2026 (D1-DEC2678L), all clear, no figure groups (131 f.263 is Barrillon's leaf); D1-DEC2678M (6 Oct 2026, 13:52-13:57 UTC) found Gallica down (SRU 500, manifests empty replies) and looked at none of the 1664 leaves; 124 = btv1b10035535p (from its sommaire); next: look at the 6 unlooked 1664 Gravel leaves (120 f.348, 445; 121 f.221, 746; 123 f.589; 124 f.55) once Gallica answers, SRU for the 120/121/123 arks first, ~$2-3
 - novelty above N3 (verifier R10-DEC2678V gave N3; second audit D1-DEC2678A2 confirmed N3, 6 Oct 2026, AUDIT.md AUDIT 2: Depping and Clément negative, DECODE/Tomokiyo/Bourdeau all list the passages undeciphered) - blocker: waiting-on JSTOR-QUEUE.tsv rows 301-303 and the SO-R2678 second-opinion answer; Haug 2015, the study closest to this pension list, is not readable from the cloud
 
 ## Escalation (R9-DEC2678C, 6 Oct 2026)
@@ -535,7 +552,7 @@ Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - [x] clear-pages: f.349r-v clear text read (R8-G2678, R9-DEC2678); it gives the context for P1-P3
 - [x] known-keys: Tomokiyo's 1672 Colbert-Gravel key passes the pre-registered gate (this section)
 - [x] print: verifier R10-DEC2678V ran print_check and a logged search, 6 Oct 2026 (AUDIT.md AUDIT 1: N3, key published, D2 about 73%); Haug 2015 not readable from the cloud, JSTOR rows queued; second adversarial audit D1-DEC2678A2, 6 Oct 2026 (AUDIT 2): N3 confirmed, Depping t. III prints other 1665 Gravel letters but not this one
-- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; Mél. Colbert 126-130bis swept (R10-DEC2678S, 6 Oct 2026), no Ratisbon cipher letter; Mél. Colbert 120-125 and 131-133 swept (D1-DEC2678S, 6 Oct 2026), no sommaire marks a Ratisbon letter chiffre; the 1665 Gravel leaves of 131bis-133 looked at (D1-DEC2678L, 6 Oct 2026), all six in clear; next: the 1664 Gravel leaves 120 f.348, 445; 121 f.221, 746; 123 f.589; 124 f.55
+- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; Mél. Colbert 126-130bis swept (R10-DEC2678S, 6 Oct 2026), no Ratisbon cipher letter; Mél. Colbert 120-125 and 131-133 swept (D1-DEC2678S, 6 Oct 2026), no sommaire marks a Ratisbon letter chiffre; the 1665 Gravel leaves of 131bis-133 looked at (D1-DEC2678L, 6 Oct 2026), all six in clear; the 1664 leaves not reached by D1-DEC2678M (Gallica down 13:52-13:57 UTC 6 Oct 2026); next: the 1664 Gravel leaves 120 f.348, 445; 121 f.221, 746; 123 f.589; 124 f.55 (124 = btv1b10035535p) once Gallica answers
 - [x] image-check: native crop re-read of all three passages (this section)
 - [n/a] retry: first attempt passed its gate, nothing to retry
-Verdict: keep going: 2 internal gaps; cheapest next: look at the 6 unlooked 1664 Gravel leaves of Mél. Colbert 120-124 for figure groups, ~$2-3 (the 1665 leaves of 131bis-133 looked at 6 Oct 2026, all clear; a context candidate for `29`, the Elector of Mainz, grade I, awaits the 1665 nomenclature)
+Verdict: keep going: 2 internal gaps; cheapest next: look at the 6 unlooked 1664 Gravel leaves of Mél. Colbert 120-124 for figure groups once Gallica answers (down 13:52-13:57 UTC 6 Oct 2026, D1-DEC2678M), ~$2-3 (the 1665 leaves of 131bis-133 looked at 6 Oct 2026, all clear; a context candidate for `29`, the Elector of Mainz, grade I, awaits the 1665 nomenclature)
