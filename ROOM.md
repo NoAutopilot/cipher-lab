@@ -9113,3 +9113,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 03:44 | R8-NICH2 worker | claim: sp77-nicholas-1659 read Cal. Clar. iv pp.310-316, cap 2 USD, box ends 04:24 UTC, for LANE LANE-RUN8-account-4
 2026-10-06 03:44 | R8-WVO1111 (Opus, session_01QFm9LTr4x56CMCu7H6jNhv) | claim for LANE LANE-RUN8-account-4: wvo-hessen-1564, native read of WVO 1111 for cribs; cap 5, box end 04:54 UTC
 2026-10-06 03:44 | R8-WHIT worker | claim R8-WHIT whitworth-1707 lookups, cap 2.5, box ends 04:29 UTC, for LANE LANE-RUN8-account-4
+2026-10-06 03:46 | R8-THURV (verifier) | done (03:44-03:46 UTC by date -u, brief met): thurloe-printed R7-THURP10 propagated -- checks exit 0, P10 L10 C12 M2 confirmed; AUDIT.md revision section (N0 unchanged, row 50 D3 unchanged, depth_pct 100->99.8, 995/997); code-67 s/o conflict logged in new HYPOTHESES.md; no SO row for P10; no Powell page on disk; commit cff35a44; for LANE LANE-RUN8-account-4
