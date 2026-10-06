@@ -3,6 +3,7 @@
 Status: partial
 (VERIFY-MOD1162, 3 Oct 2026: AUDIT.md -- plaintext of the cipher runs N0, period gloss on the leaf and DECODE doc 3593; the 1168-key finding re-derives and its control holds.)
 (MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
+(R10-DEC1162, 6 Oct 2026: clear text of both pages transcribed from native crops, `clear/clear_text.tsv`, 42 lines, 41 doubtful words; no cipher reading changed.)
 (MOD1162B, 3 Oct 2026: 8 of 19 uncertain signs settled at native resolution, G unchanged, fresh-seed control PASS; tokens C 33, S 12, M 24, I 5, U 3; g/q/sigma split still open.)
 Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
 
@@ -544,3 +545,61 @@ Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 
 - [x] image-check: full-size p.1 and 1168 f.12r re-fetched and tiled at native resolution, D2-1162 5 Oct 2026
 - [n/a] retry: nothing failed that a retry would change
 Verdict: keep going: 2 internal gaps; cheapest next: the clear-text transcription pass (~$3), which does not wait on the sort; the g/q split waits on ASKS 144
+
+## R10-DEC1162: clear-text transcription pass (account-1 worker, LANE-RUN10-account-1, 6 Oct 2026, 10:24-10:3x UTC)
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-run10-jobs.md` "### R10-DEC1162". No cipher reading, key, grade or gloss changed.
+
+**Images.** One DECODE browser login, 10:26 UTC (`tools/decode_browser_login.js 1162 <scratch> --fetch <filesrv URLs of
+IMG_R1162_I5837_P1.png, IMG_R1162_I5838_P2.png> --max-files 2 --delay 1800`). p.1 sha1 1a49a5f9... matches the manifest;
+p.2 sha1 53689139... (2592x3888). Full PNGs stay in scratch; the record page was deleted unread. Requests: de-crypt.org 1 login
++ 1 page + 2 files.
+
+**Crops (commands, pasted).** Two-line, non-overlapping bands, centres from the row ink profile (ink < 80, 25-px smoothing):
+`python3 tools/iiif_lines.py --image IMG_R1162_I5837_P1.png --out <scratch>/c1 --region 540,640,1850,2620 --prefix p1
+--centres 40,102,171,256,350,434,523,619,725,813,904,993,1092,1160,1265,1363,1461,1565,1660,1746,1842,1934,2024,2120,2195,2288,2370,2438,2501,2577
+--lines-per-crop 2 --top-margin 0 --bottom-margin 0 --ink 80` (15 crops, 30 lines);
+`python3 tools/iiif_lines.py --image IMG_R1162_I5838_P2.png --out <scratch>/c2 --region 555,778,1750,840 --prefix p2 --centres
+36,111,189,264,333,422,550,792 --lines-per-crop 2 --top-margin 0 --bottom-margin 0 --ink 80` (4 crops) and `--region
+1250,1840,600,420 --prefix p2addr --centres 60,140,215,330 --lines-per-crop 4` (address panel). All 20 crops are committed in
+`images/clear/` (about 1 MB); a contact check confirmed every main line falls in exactly one crop.
+
+**Passes.** One blind Sonnet pass per page (2 subagent calls, crops only, no DOC 3593, no key): `clear/p1_passA.tsv`,
+`clear/p2_passA.tsv`. Then one reconciliation unit by this worker's eye over the same crops (autocontrast, 1500 px wide, two
+crops per view), with DECODE doc 3593 (RP, 2020) as a second, non-blind witness. The reconciler had seen DOC 3593, the gloss and
+the cipher reading, so the reconciled text is not blind. Result: `clear/clear_text.tsv`, 42 lines (p.1 30, p.2 12), one row
+per line with its crop file and row (a/b/...), cipher groups referenced in braces by their `ciphertext.tsv` ids
+(`{p1L05_1}`), 41 words marked doubtful ('?'). Pass A against the reconciled line: agree 9, near 23, differs 10.
+
+**What the clear text says (reading level, this worker's, not checked by a second reader):** the envoy reports from
+Strigonio (Esztergom) on "27 febr 1491" as written (the folder dates it 1492), to Eleonora d'Aragona, Duchess of Ferrara (address panel, p.2). He has followed her
+orders about the government of the archbishopric of Esztergom; complains that members of the household (gloss "famiglia
+d arciuescouo") attend only to disorder and are poorly contented; says he tries "con parolle et fatti" to keep them
+content; reports that "Tadio" had a bad eye illness and has recovered, and that someone left the charge of the
+wardrobe ("la cura de la guardaroba"). The signature reads "Seru~l^s? Bel. Co~st^j?" (M); it fits a Costabili
+(see "## Edition citation"), but this pass does not settle the name.
+
+**Found against the prior witness.** DOC 3593 omits p.1 line 5 ("secondo il commandam^to suo me mi porto? ... al melgio che
+scio et posso") entirely; the pass and the crop both have it. Pass A read the p.2 date as "s~tbre"; the crop and the p.1
+docket read febr~/febb^o, kept as febr~. Pass A took the interlinear gloss over p.1 line 14 for main text; the gloss stays in
+`gloss.tsv`, unchanged.
+
+**Not done.** No second blind pass (the brief named one blind pass + reconciliation); no expansion of abbreviations into
+a reading edition; no Italian-language judge run on the clear text (it is not a cipher reading). Cost: 2 Sonnet subagent
+calls + 1 reconciliation unit.
+
+## Remaining gaps (R10-DEC1162, 6 Oct 2026)
+Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 5, U 3); verso has no cipher (DECODE doc 3593 and image 2); 31 g/q tiles built into a sorter page (D2-1162); clear text of both pages transcribed, 42 lines, 41 doubtful words (R10-DEC1162)
+- the g/q/sigma shape split (8 signs still '?', M) - blocker: waiting-on ASKS row 144 (the owner's sign sort of sorter/modena-gq-sorter.html); then sign_sorter_apply.py, re-key 1168 with split labels (align/run_align.py), re-run score_g.py and decode_key.py --check here, ~$2
+- the 41 doubtful words of the clear text and the signature - blocker: not-attempted; one pass + reconciliation is all this brief named; next: one second blind pass of the 20 crops in images/clear/ by a reader who has not seen clear_text.tsv or DOC 3593, then settle only the rows marked doubtful or 'differs', ~$2
+- code groups `T o` (L01) and `.e.` (L06) - blocker: open-codes; one occurrence each, the L01 gloss is not separable from the letter group's, the L06 sign is unglossed
+
+## Escalation (R10-DEC1162, 6 Oct 2026)
+- [x] siblings: decode-1168 key applied, gate PASS (G 0.729 vs control p99 0.525; fresh seeds p99 0.525), MOD1162/MOD1162B 3 Oct 2026
+- [x] clear-pages: both pages' clear text transcribed from native crops, R10-DEC1162 6 Oct 2026 (DOC 3593 as second witness)
+- [x] known-keys: decode-1168 key.tsv (period gloss key) is the known key, applied here
+- [x] print: Berzeviczy 1914 checked, letter absent (GF4-BATCH19 3 Oct 2026)
+- [ ] key-rebuild: split g/q into shapes from the owner's sort (sorter/ built D2-1162 5 Oct 2026), then re-key 1168 and re-score here; waits on the sort
+- [x] image-check: full-size p.1 and p.2 re-fetched and cut at native resolution, R10-DEC1162 6 Oct 2026
+- [n/a] retry: nothing failed that a retry would change
+Verdict: keep going: 2 internal gaps; cheapest next: a second blind pass over images/clear/ to settle the 41 doubtful clear-text words (~$2); the g/q split waits on ASKS 144

@@ -1,0 +1,43 @@
+page	line	crop	crop_row	text	doubtful	passA_vs_reconciled
+1	1	images/clear/p1_L01.jpg	a	1491.	0	agree
+1	2	images/clear/p1_L01.jpg	b	27 febb^o	0	agree (docket, later hand)
+1	3	images/clear/p1_L02.jpg	a	Ill^ma ma~? mia: dopo mi humille recomandatione &c. ho veduto q^to	1	differs (passA ricevuto)
+1	4	images/clear/p1_L02.jpg	b	me scriue V^ra Ex^a circa {p1L01_1} {p1L01_2} e'? et inteso? il tuto?: et	3	differs (passA [?] for 'me scriue V^ra Ex^a'; mi^eso il uno)
+1	5	images/clear/p1_L03.jpg	a	secondo il commandam^to suo me mi porto? [?] al melgio che scio et posso	2	differs (passA posso; DOC 3593 omits this line)
+1	6	images/clear/p1_L03.jpg	b	usando q^to piu vigillanza io posso in ogni cossa. Et p_ che dopoj	0	differs (passA [?] [?] pm)
+1	7	images/clear/p1_L04.jpg	a	siamo qui {p1L02_1} mi ha pero lassato? mi^o mor~? ne le cosse occurreno: li	2	near
+1	8	images/clear/p1_L04.jpg	b	significo che in cossa che volgij {p1L03_1} io no sono oniente?: ma p_ che li sono	1	near
+1	9	images/clear/p1_L05.jpg	a	alcuni in casa sua che no atendeno se no a disordinare: et qualche volta {p1L04_1}	0	near
+1	10	images/clear/p1_L05.jpg	b	li crede p_ la loro importunita. mi pare alcuna volta di admonstrar~ che	0	near (passA Cesti)
+1	11	images/clear/p1_L06.jpg	a	io conosco il suo. et no e~cc~? m~tho? facille alle cosse che occurreno che no mi	2	near
+1	12	images/clear/p1_L06.jpg	b	parecciamo da fare: s^a? usando alq^o di discretione. p_ che so che in mani	1	near
+1	13	images/clear/p1_L07.jpg	a	et no facendo cusi {p1L05_1} {p1L05_2} se forza? {p1L05_3} et pochi	1	agree
+1	14	images/clear/p1_L07.jpg	b	{p1L06_1} et {p1L06_2} se mi mdorcia? {p1L06_3} : [?]	2	near (passA took gloss 'Servitiana...' as text; gloss in gloss.tsv)
+1	15	images/clear/p1_L08.jpg	a	m^to io operi poocho no sencia~ mio grand stimolo di consc~ia? et q^sto lo	1	near
+1	16	images/clear/p1_L08.jpg	b	tenga V. Ex^a p_ evangelio, se ben no mi expendo a p_ticullarita p_ no essere	0	near (passA priuillorutia)
+1	17	images/clear/p1_L09.jpg	a	tropo longo, et p_ che no mi pare lo ricercha? la conditioni di li t~pi?. p_ la	2	near (passA spi)
+1	18	images/clear/p1_L09.jpg	b	qualle cossa {p1L07_1} mostra no essere di me cussi satisfacto (como solino.	0	near
+1	19	images/clear/p1_L10.jpg	a	se ben alcuna volta intendo? che il mi lauda in abse~a? et dice che io fa-	2	differs (passA mirendo, landa in abmis, fra)
+1	20	images/clear/p1_L10.jpg	b	cio il debito mio. Il che adviso a V. Ex^a significandoli che no mi regio po-	1	differs (passA Ill et amiso)
+1	21	images/clear/p1_L11.jpg	a	mi uno sencia discretione: et non mi parto dal commandam^to di quella:	1	near
+1	22	images/clear/p1_L11.jpg	b	no li secondo m~ch~? che se l~a {p1L08_1} {p1L08_2} vole viue~? bisogna	3	near
+1	23	images/clear/p1_L12.jpg	a	che se {p1L08_3} : li qualli tuti stano malle contenti p_ vedessi	0	near (passA uni)
+1	24	images/clear/p1_L12.jpg	b	pocho grati: p_ li qualli q^n io parlo, mi ha dicto che no me ni debia curar~	1	near
+1	25	images/clear/p1_L13.jpg	a	Assaj mi sforcio io con p_olle et fatti, p_ q^to io posso, di tenerli ben contenti:	0	differs (passA fon polle et fasti; venich)
+1	26	images/clear/p1_L13.jpg	b	et di bona volgia: Ricordo m~to a V. Ex^a che q^do quella li scrivisse: on	0	near
+1	27	images/clear/p1_L14.jpg	a	scrivisse a me che li potesse mostrare p_ conforto loro seria ben facto.	0	agree
+1	28	images/clear/p1_L14.jpg	b	Tadio hebe a questi di grand malle a li ochi, mo e guarito: et como li significaj	0	near (passA Tidio bebe)
+1	29	images/clear/p1_L15.jpg	a	p_ una altra mia, il vocin? lassao la cura de la guardaroba, et m~to de	1	agree
+1	30	images/clear/p1_L15.jpg	b	tenire? dinari, che dubito no seguij? cu~ m~to di piu disordini. et no mi	2	near
+2	1	images/clear/p2_L01.jpg	a	pare che p_ altro se movi, se no p_ no vole~ pensiero ni fatiche	0	near
+2	2	images/clear/p2_L01.jpg	b	Il portator de la p~nte alogia cu~ nuj in casa: sapera dire qualche altra cossa a	1	differs (passA alogeri on ruj in casi sop^a)
+2	3	images/clear/p2_L02.jpg	a	V^ra Ex^a: la qualle li porera? p_stare fede, p_ che lo ho? discreto. Et io no	2	near
+2	4	images/clear/p2_L02.jpg	b	mi extendero piu ult^a p_ no la caricha? de altro a lei? p_ che cusi vole	3	near
+2	5	images/clear/p2_L03.jpg	a	chi lo manda. me gr~a? di V. Ex^a di continuo me recomando. Strig.?	2	near (passA/DOC Steig.)
+2	6	images/clear/p2_L03.jpg	b	27^o febr~ 1491	0	differs (passA s~tbre; the docket on p.1 reads febb^o)
+2	7	images/clear/p2_L04.jpg	a	E. V. Ex~e	0	near
+2	8	images/clear/p2_L04.jpg	b	Seru~l^s? Bel. Co~st^j? (signature, right)	3	differs (passA illegible; DOC s**s * Bel. Copj)
+2	9	images/clear/p2addr_L01.jpg	a	Ill^me ac Exc^me D~ne	0	agree (address panel)
+2	10	images/clear/p2addr_L01.jpg	b	Helionore d Aragon~	0	agree
+2	11	images/clear/p2addr_L01.jpg	c	Ducisse ferr~e &c? d~ne	1	agree
+2	12	images/clear/p2addr_L01.jpg	d	[mark]	0	agree
