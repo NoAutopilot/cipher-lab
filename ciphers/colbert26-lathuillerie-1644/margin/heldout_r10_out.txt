@@ -1,0 +1,4 @@
+code	value	unit_spans	H_real	occ	ctrl_mean	p95	max	P	P_min	gate
+32	u	M2:sou;M3:quilfassefaire	2	2	1.05	2	2	0.2144	0.2144	UNDERPOWERED
+15	e	M2:sestra	1	1	0.76	1	1	0.7562	0.7562	UNDERPOWERED
+32	o	M2:sou;M3:quilfassefaire	1	2	0.80	2	2	0.6784	0.1226	not gated
