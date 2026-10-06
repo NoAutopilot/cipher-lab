@@ -136,3 +136,15 @@ did your named step, stop and report").
 ### A4-AVS175 -- august-van-saksen-1561-64, WVO 175 p1 remaining 11 lines for Qf and K (cap 9, box 75 min; folder estimate ~$12 for all 11 lines: do 4-line batches in order and stop before a batch that would cross 80% of cap or box; report lines done)
 NOTES.md Verdict "cheapest next": the other 11 lines of WVO 175 p1 for Qf and K (2 blind reads in 4-line batches, 1 gloss read). Crop
 step pasted first; regrade 126/53/57 tokens the result touches; `decode_key.py --check`.
+
+## Wave 3 (written 6 Oct 2026 00:2x UTC; last wave, lane spend ~49 of 60 at writing)
+
+### A4-COLALN -- colbert26-lathuillerie-1644, interlinear_align on the reconciled c20/c21 pairs (cap 2.5, box 40 min)
+A4-RFCOL's named next step: run `tools/interlinear_align.py` on interlinear/c20c21_reconciled.tsv (grade C, every meaning from the
+period hand); fix the one-line-off canvas 20 gloss column in ciphertext.tsv only if the native crops already on disk show it; merge into
+key_period.tsv per rule 3's per-unit clause (c20 and c21 each need their own deranged-gloss control before merge); keep the 25 = m / par
+conflict as rule 4 data conflict; decode_key.py --check; gaps_check. No new image fetch unless a crop is missing.
+
+### A4-AVS175B -- august-van-saksen-1561-64, WVO 175 p1 last 5 lines (cap 4.5, box 45 min; 1 batch of 4 + 1 line: 2 blind + 1 gloss read)
+A4-AVS175 (1c1913734) stopped before batch 3. Same protocol and gates as its batches 1-2 (pre-registered, already in the folder); the K
+der/die conflict and Qf stay as logged unless these lines carry a clean K or Qf instance. --check; gaps_check.
