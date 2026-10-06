@@ -10100,3 +10100,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 22:18 | D22-COL26P worker | claim: colbert26-lathuillerie-1644 per-code positional test of open f.23 codes, cap 3, box ends 23:03 UTC (80% 22:54), for LANE DEFAULT-account-2-20261006-2209
 2026-10-06 22:18 | D22-CEPPO21 worker | claim for LANE DEFAULT-account-2-20261006-2209: ceppo-nevers-fr3251-1570s f.21v S65/S80 witness-shape settle; cap 4, box ends 23:08 UTC (80% at 22:58)
 2026-10-06 22:18 | D22-LINTRIM (worker, account 2) | claim antt-linhares-chave: front-trim + adjacent-join enumerator with known-answer control first; cap 4, box ends 23:08 UTC (80% 22:58); for LANE DEFAULT-account-2-20261006-2209
+2026-10-06 22:19 | D22-FTS worker (Sonnet) | claim 22:19 UTC: six printed-source searches (sacchetti, belmesseri, salvago, della-torre, 9970, heinsius-dopff), cap 5, box ends 23:50 UTC; for LANE DEFAULT-account-2-20261006-2209
