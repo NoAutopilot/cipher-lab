@@ -1190,3 +1190,49 @@ must be checked on the control first.
 
 Requests: none. Vision: 0 calls. New files: `families/periodicity_prereg.md`, `families/periodicity_check.py`,
 `families/periodicity_check.tsv`.
+
+## R15-LAGDIG: contact/digram test, homophonic vs running key, power on the control first (6 Oct 2026, account 2, LANE-RUN15-account-2)
+
+**Job:** GAPS149's cheap scripted option. Can a contact/digram statistic separate homophonic from running key at
+N=229 and the measured error? Scripts only: no network, no vision, no subagents. Intake gate (lane orchestrator,
+17:1x UTC): `la-garde-1577: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**Pre-registration:** `families/digram_prereg.md`, commit 5ecf5fd21, pushed before any run. The primary statistic is
+Z_R, the repeated-bigram count (sum of C(n_b, 2) over adjacent bigrams) z-scored against 200 shuffles of the same
+sequence. Shuffles keep the unigram profile, so Z_R measures order only. Adjacent mutual information (Z_MI) was
+registered as descriptive and decides nothing. Controls, 40 seeds each:
+- homophonic: `homophonic.py make_control`, K=26, fr16, `profile=target`;
+- running key with a fr16 key from a different book (RK-fr);
+- running key with a 17th-c. Dutch key from `tools/data/nl_repo` (RK-nl).
+
+Noise was a profile redraw at 0, 0.10, 0.23 and 0.30. The gate: power passes only if AUC(Z_R) >= 0.80 against both
+running-key variants at e=0.23. If power failed, the target would not be scored. Z_R depends on token order, so the
+designs can differ on it (rule 3 check).
+
+**Result (step 1, power, controls only):** `families/digram_check.py` (seeded, `--check` ok),
+`families/digram_check.tsv`.
+
+| error | AUC Z_R homo vs RK-fr | vs RK-nl | AUC Z_MI vs RK-fr (descriptive) | vs RK-nl |
+|---|---|---|---|---|
+| 0.00 | 0.977 | 0.949 | 0.996 | 0.983 |
+| 0.10 | 0.934 | 0.906 | 0.981 | 0.962 |
+| **0.23** | **0.759** | **0.710** | 0.885 | 0.843 |
+| 0.30 | 0.679 | 0.710 | 0.759 | 0.774 |
+
+Mean Z_R at e=0.23 is 1.19 for homophonic (p05-p95 -0.74 to 3.81) and 0.01 / 0.18 for the two running-key variants
+(p95 1.35 / 2.06). **Power FAIL** (min AUC 0.710 < 0.80). The pre-registered primary statistic cannot separate
+homophonic from running key at N=229 and 23% error. The target was **not scored**, and its Z_R was not computed. Up to
+10% error the statistic separates the designs well (AUC >= 0.90), so this is another place where the transcription
+error, not the method, is the limit. 0 tokens read (H 0, C 0, S 0, M 0, I 0). Status unchanged (`open`).
+
+**Observation (not a result).** The descriptive Z_MI clears 0.80 against both running-key variants at e=0.23 (0.885 /
+0.843), but not at 0.30. That was seen after the run, so under rule 3 it cannot be promoted to the gate here.
+
+**Next cheapest step:** a fresh pre-registration with Z_MI as the primary statistic and new control seeds, about
+USD 1, CPU only. It is a different instrument, not a re-tune of Z_R. Its power at the error ceiling is marginal: it
+fails at 0.30, so the measured error band (20-25%) sits near its edge. If its power holds on fresh seeds, score the
+target. Otherwise, as GAPS149 said, the target waits for new material: a sharper image of KHA A 11/XIV C/M-12, or
+pooled same-system ciphertext.
+
+Requests: none. Vision: 0 calls. New files: `families/digram_prereg.md`, `families/digram_check.py`,
+`families/digram_check.tsv`.

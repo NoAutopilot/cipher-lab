@@ -1,0 +1,21 @@
+# R15-LAGDIG digram test; target N=229 K=26; controls fr16 (+nl_repo key) N=229, 40 seeds, 200 shuffles each; prereg digram_prereg.md (5ecf5fd21)
+design	error	seeds	ZR_mean	ZR_p05	ZR_p95	ZMI_mean	ZMI_p05	ZMI_p95
+homophonic_K26	0.00	40	4.55	1.62	8.50	5.52	2.39	7.86
+running_key_fr	0.00	40	0.25	-1.13	2.27	0.31	-1.18	1.90
+running_key_nl	0.00	40	0.34	-1.64	3.20	0.33	-1.79	2.86
+homophonic_K26	0.10	40	2.46	0.69	5.87	3.28	1.62	5.95
+running_key_fr	0.10	40	0.15	-0.96	1.90	0.19	-0.84	1.87
+running_key_nl	0.10	40	0.26	-1.60	2.24	0.25	-1.75	2.55
+homophonic_K26	0.23	40	1.19	-0.74	3.81	1.66	0.09	3.55
+running_key_fr	0.23	40	0.01	-1.50	1.35	0.04	-1.33	1.38
+running_key_nl	0.23	40	0.18	-1.86	2.06	0.16	-1.62	2.35
+homophonic_K26	0.30	40	0.69	-0.75	2.95	1.07	-0.64	3.27
+running_key_fr	0.30	40	0.06	-0.94	1.43	0.09	-0.95	1.33
+running_key_nl	0.30	40	-0.12	-1.55	1.90	-0.12	-1.66	1.98
+error	AUC_ZR_homo_vs_rkfr	AUC_ZR_homo_vs_rknl	AUC_ZMI_homo_vs_rkfr	AUC_ZMI_homo_vs_rknl
+0.00	0.977	0.949	0.996	0.983
+0.10	0.934	0.906	0.981	0.962
+0.23	0.759	0.710	0.885	0.843
+0.30	0.679	0.710	0.759	0.774
+# power at e=0.23 (min AUC_ZR 0.710 vs gate 0.8): FAIL
+# target not scored (untestable by this statistic at this N/error)
