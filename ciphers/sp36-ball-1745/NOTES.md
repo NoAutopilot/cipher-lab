@@ -141,4 +141,8 @@ Status stays **open**. The named free step (Marischal 30 Nov 1745 in print) foun
 
 ## While waiting
 
-Run the SP 106 (Deciphering Branch) Discovery search for Nov 1745 and the three unread editions above; none depends on the copy order.
+Run the SP 106 (Deciphering Branch) Discovery search for Nov 1745 [done 6 Oct 2026 R8-SPS1: no Ball/Marischal record] and the three unread editions above; none depends on the copy order.
+
+## R8-SPS1 (a): SP 106 Deciphering Branch search for Nov 1745 (6 Oct 2026, 04:2x UTC)
+
+Intake gate: `open (line 1)`. TNA Discovery API (`API/search/records`, series SP 106, 9 requests, 2 s apart, all HTTP 200). Terms Marischal, Mareschal, Dunkirk, 6000, Ball, Scotland: 0 records each (also 0 with a Oct 1745-Jan 1746 date window). `cipher` 14 and `decipher` 22 records in SP 106; 1745 items only: SP 106/23 and /25 (cipher, Keene and Villettes, printed), /24 and /26 (decipher / French decipher, printed), /41 (cipher in manuscript, French, 18th c.), /44-/46 ("Duplicate of Cipher"). None names Ball, Marischal or any Scottish/Jacobite correspondent. Found: no SP 106 record for this item. Not found is a search result only (Discovery indexes descriptions, not the content of the printed sheets; SP 106/44-46 and /41 undescribed beyond those words). Rule 10: no novelty claim. Next, unchanged: copy order SP 36/74/1/60-62 (REQUEST.md); Blaikie/Elcho/Murray of Broughton IA full text. Host requests: discovery.nationalarchives.gov.uk 9.

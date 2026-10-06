@@ -297,6 +297,10 @@ Sicherungsfilm) for the person's desk, about USD 0 of model time plus the archiv
 
 ## While waiting
 
-- Action that depends on nobody: read the remaining 29 rows of the Arcinsys `Bernstorff` 1688-1690 list (page 2-3)
+- [done 6 Oct 2026 R8-SPS1, pages 2-3 read, no hit; Celle Br. 16 / Cal. Br. 24 tree lists not done] Action that depends on nobody: read the remaining 29 rows of the Arcinsys `Bernstorff` 1688-1690 list (page 2-3)
 and the Celle Br. 16 / Cal. Br. 24 England series lists in the Arcinsys tree for any 1689 file naming Sweden,
 Gyldenstolpe or Ehrenstein (web only, about USD 1).
+
+## R8-SPS1 (b): Arcinsys `Bernstorff` 1688-1690, pages 2-3 (6 Oct 2026, 04:2x UTC)
+
+Intake gate: `open (line 1)`. Same query as GAPS123 (rechercheBean.defaultfield=Bernstorff, von 1688, bis 1690): 49 hits, 3 result pages, all three read via `recherchePaging.action?pagingvalues=N` (sessioned, 2 s apart). Pages 2-3 carry no Ehrenstein, Gyldenstolpe/Güldenstolpe or Chiffre/cipher wording (regex over all three pages: 0 hits). Items seen: NLA HA Cal. Br. 1 Nr. 2341 (Harpstedt prisoner, 1689-1701); NLA ST Rep. 5a Nr. 128 (Reichskammergericht move, 1680-95, includes letters of Carl XI of Sweden, not Ehrenstein); NLA WO 2 Alt Nr. 18282 (intercessions to Hessen-Darmstadt); NLA ST Rep. 5a Nr. 2441 (Reduktion donierter Güter); NLA WO LB Nr. 2981 (Trauerschriften). Page 1 additionally lists Cal. Br. 24 Nr. 3005 (P. Siegel to Bernstorff from The Hague, 1689), Cal. Br. 24 Nr. 1597 (instruction for Schütz's mission to England, 1689), Cal. Br. 11 Nr. 1085 and Celle Or. 8 Nr. 1295/1 (5 Dec 1689 treaty extension, Heeckeren/Bernstorff): England-adjacent 1689 items, none naming Ehrenstein or a cipher. Found: no Ehrenstein or cipher item in the list. Not done: the Celle Br. 16 / Cal. Br. 24 England series tree lists (second half of the While-waiting line). A search result, not a novelty verdict. Host requests: www.arcinsys.niedersachsen.de 8.

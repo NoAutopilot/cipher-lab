@@ -182,7 +182,7 @@ Host requests: www.nationaalarchief.nl 1, service.archief.nl 4 (IIIF, 2 s apart)
 ## While waiting (GF4-BATCH16, account-4, 3 Oct 2026; refreshed GAPS84, 3 Oct 2026)
 
 Parked on no-key-material (GAPS84). The earlier action here (inv. 281 matched, siblings and clear letters read) is done.
-- Action that depends on nobody: grep the public EAD of the King's cabinet archive at the NA (Kabinet des Konings, 1806-1810)
+- [done 6 Oct 2026 R8-SPS1: no codebook unit; Kabinet fonds is in Paris AN] Action that depends on nobody: grep the public EAD of the King's cabinet archive at the NA (Kabinet des Konings, 1806-1810)
   and of the Berg/Grand Duchy holdings for cijfer/sleutel/chiffre/Spaen units, to find a ministry codebook 1806-1810 outside
   2.01.08 (new material, the only route that reopens the key-rebuild step). S.
 
@@ -918,3 +918,7 @@ Read so far: 0 of 304 groups (229 letter + 75 annex; image reading GAPS36, Bourd
 - [x] image-check: native scans 81, 82, 85 fetched and committed (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
 Verdict: parked: every gap has an outside blocker (no-key-material); the images are on disk and read, and new material reopens it: a ministry code book or key list 1806-1810 in another archive, or D. Bourdeau's own key work on R1941
+
+## R8-SPS1 (c): public EAD of Kingdom-of-Holland royal-cabinet holdings at the NA (6 Oct 2026, 04:2x UTC)
+
+Intake gate: `open (line 1)`. The NA has no separate toegang "Kabinet des Konings 1806-1810": the 2.01.* tree has no 2.01.01-2.01.06 pages as such (404 on 2.01.02-.06, .09, .10), and 2.02.01 "Kabinet des Konings" is the 1813-1840 archive. The Staatssecretarie under Lodewijk Napoleon, toegang **2.01.01.07** (1806-1811), says in its own introduction that the Kabinet des Konings archive (the king's private affairs) is now in the Archives Nationales, Paris (Secretairerie d'Etat). EAD XML (`/onderzoeken/archief/<toegang>/download/xml`) read for: 2.01.01.07 (433 kB), 2.01.01.08 Kabinetsarchief Prins Stedehouder (1810; 57 kB), 2.01.25 Kroondomein 1806-1813 (402 kB). Regex over text for cijfer*, sleutel*, chiffre*, Spaen, Goes, Voorstonden, Dusseldorf: 0 hits in 2.01.01.07 and 2.01.01.08; 2.01.25 one Spaen hit (inv. 224, R. Spaen capital repayment 1812, a financial item, unrelated). Only "geheim" series in 2.01.01.07: secret royal decisions inv. 356-362* (9 June 1806-12 July 1811), geheime index 565, geheime agenda 566C, geheim verbaal 387 (20 July 1806-30 Jan 1809), 430-431 (Raad van Ministers 1809-10), 628; and Minister of Foreign Affairs's verbaal inv. 262-263, 446 (11 July 1806-31 Dec 1810) and the Eerste Secretaris Kabinet verbaal 386, 440. None is catalogued as a code, key or cipher. Found: no ministry codebook unit in these EADs. Not done: Berg/Grand Duchy holdings (not at the NA; Dusseldorf/Landesarchiv NRW) and the Paris Kabinet fonds (AN, Secretairerie d'Etat; needs a person/owner step). Search result, not novelty verdict. Host requests: www.nationaalarchief.nl about 20 (incl. 3 EAD downloads, 2 s apart); WebSearch 1.
