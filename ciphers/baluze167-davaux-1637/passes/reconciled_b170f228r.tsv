@@ -1,0 +1,12 @@
+# D1-BAL170 reconciliation of passA/passB_b170f228r.tsv by this worker (Opus) against the native source regions
+# images/crops/src_ark_12148_btv1b90015040_f239_4250_2150_3450_560.jpg and ..._4250_2700_3450_330.jpg (not the clipped first-cut crops).
+# Signs as shape classes of d1bal167/exemplar_sheet.png; trailing ? = uncertain (M). Raw split A/B 0.25 (d1bal170/rec_f228r/), above the 0.10 gate.
+# Per-position: a_L02 col1 A 72' / B 72: 73' (first cut clipped the digits' lower half; source shows 3); col3 B extra s:u4: one u4 then 45';
+# col5 A 45' / B 5': 45'; the n-like sign after 45' both s:u4 -> kept as s:u4|4u? (two minims, no 4 visible); col9 s:v (A v|hook, B v).
+# c_L01 both 16' 2: -> 86' 9: (first cut showed only the marks). b_L01 col3 A 29: / B 29: 29 (no dots visible). b_L02 col3 A v|hook / B wave:
+# s:wave? ; col9 A y+ / B 7=: s:y+ (crossed y, as col6); col10 A 81 / B 8.1: 81? (a dot between the digits, may be a mark); col14 h.
+line	tokens
+b170f228r_a_L02	73' s:h s:u4 45' s:u4|4u? 70' 77' s:v 98' s:?(ff_crossed_double_long_s) 16' 73= {a ce que l on nous}
+b170f228r_c_L01	86' 9:
+b170f228r_b_L01	{point a propos dans cette Conjoncture} 16 41' 29 s:y+ 16'
+b170f228r_b_L02	40' 46 s:wave? 46' 73' s:y+ 76 {que} 33: s:y+ 81? s:?(ff_crossed_double_long_s) 98 40 s:h 51 s:w

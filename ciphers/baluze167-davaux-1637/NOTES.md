@@ -643,3 +643,60 @@ The exemplar set is now 63 signs from two court-hand leaves. f.247's commonest s
 - [ ] image-check: 170 c239-241 native crops still to do
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167)
 Verdict: keep going: 3 internal gaps; cheapest next: 170 ff.228-230 crops and passes with the court-hand exemplar sheet, ~$6, or a search for a glossed text in the f.247 hand, ~$3
+
+## D1-BAL170 (account 1 worker, for LANE DEFAULT-account-1-20261006-1240), 6 Oct 2026, 13:27-13:3x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md` job D1-BAL170. No novelty class. Intake gate (pasted in the brief):
+`baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`. PREREG
+`d1bal170/PREREG-D1BAL170.md` pushed (66ce67f01, 13:31 UTC by date -u) before any pass.
+
+**Layout found (overview at 1000 px, c239-241).** Baluze 170 is microfilmed as openings: f.228r = c239 right page (4 cipher lines in two
+blocks), f.228v = c240 left (2 + 7 cipher lines), f.229r = c240 right (~20 cipher lines), f.229v = c241 left (~9 cipher lines), f.230r =
+c241 right (clear close, "Amyens ce 25 Aoust 1640", Chavigny's signature). So the bare passage is 4 leaf-pages, ~42 cipher lines, mostly
+numerals with marks, letter signs of the court-hand family on the D1-BAL167 sheet (h, y+, u4, w, wave/v; a crossed double long s "ff"
+not on the sheet). Per brief, f.228 first.
+Crop step (pasted): `python3 tools/iiif_lines.py --ark btv1b90015040 --canvas 239 --region 4250,2150,3450,560 --prefix b170f228r_a ...`,
+`--region 4200,4150,3500,500 --prefix b170f228r_b`, `--region 4250,2700,3450,330 --prefix b170f228r_c`; c240 `--region 850,1250,3200,480
+--prefix b170f228v_a`, `--region 850,3560,3200,1340 --prefix b170f228v_b` (all `--out ciphers/baluze167-davaux-1637/images/crops --debug`);
+re-banded from the same source files with `--image ... --centres` where the auto bands split a line.
+
+**Result: f.228r passes split 0.25 (> 0.10 gate) -> reconciled by eye, stopped; f.228v not passed (brief: stop after reconciliation).**
+`d1bal170/norm.py` (drops {clear words}) then `python3 tools/reconcile_passes.py d1bal170/normA_b170f228r.tsv d1bal170/normB_b170f228r.tsv
+--out-dir d1bal170/rec_f228r`: lines 4, signs A 35 / B 36, agree 27/36 = 75.0% (agreement between two Sonnet passes, not accuracy).
+Deviation from the PREREG text: it named `--keep-plain` but also "clear words excluded"; the brace words were stripped by norm.py and the
+tool run without `--keep-plain`, i.e. cipher tokens only, as the PREREG's stated intent.
+Cause of most of the split is this worker's crop fault, not the readers: the first cut of a_L02 clipped the lower half of the digits and
+c_L01 showed only the marks (both passes read "16' 2:" for 86' 9:). Of the 9 disagreement columns, 3 (72'/72, an extra u4, 45'/5') sit on
+the clipped a_L02. Both crops were re-cut whole (`--centres 140,340,480` and `--centres 125,240`); the re-cut files replace the old ones.
+So the 0.25 is not a clean measure of reader disagreement on this hand; a re-pass on the re-cut crops is the cheap way to get one.
+Reconciled (`passes/reconciled_b170f228r.tsv`, from the native source regions, per-position log in its header), cipher tokens only:
+ a_L02: 73' s:h s:u4 45' s:u4|4u? 70' 77' s:v 98' s:?(ff) 16' 73= {a ce que l on nous}
+ c_L01: 86' 9:
+ b_L01: {point a propos dans cette Conjoncture} 16 41' 29 s:y+ 16'
+ b_L02: 40' 46 s:wave? 46' 73' s:y+ 76 {que} 33: s:y+ 81? s:?(ff) 98 40 s:h 51 s:w
+35 cipher tokens on f.228r; 5 marked uncertain. Not decoded (gate failed; no reading claimed). Grades (rule 4): none; key.tsv,
+ciphertext.txt, reading.txt unchanged.
+Crops on disk and ready for f.228v (b170f228v_a_L01-L02, b170f228v_b_L01-L07; a_L03 and b_L08 are clear text), checked against the debug
+overlays (whole lines, accents inside the band). f.229r (c240 right) and f.229v (c241 left) not cropped.
+Requests: gallica.bnf.fr 11 (3 overview canvases at 1000 px, 1 info.json, 7 native regions incl. 2 c240 regions discarded for a clipped left edge; all HTTP 200, no challenge, >= 1.5 s apart).
+Subagents: 2 Sonnet calls (f.228r passes A, B).
+Suggestion (not done): the "ff" (crossed double long s) is not on the exemplar sheet; it recurs (2 of 35 tokens here) and may be two S
+signs (s s) or one sign; the sorter should give it its own pile.
+
+## Remaining gaps (D1-BAL170, 6 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter
+signs unlabelled. 170 f.228-229v (4 leaf-pages, ~42 cipher lines): f.228r reconciled (35 tokens), f.228v cropped, f.229r-v not started.
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 ff.228-229v bare passage - blocker: not-attempted; f.228r passes split 0.25, mostly from clipped first-cut crops (D1-BAL170); next: re-pass f.228r on the re-cut crops and pass f.228v (crops ready) with d1bal170/prompt.txt, 4 Sonnet calls; if the split stays > 0.10, a sign sorter of the letter signs (h, y+, u4, wave/v, ff) for the owner; then crop and pass f.229r-v, ~$7
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (6 Oct 2026, D1-BAL170)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3); f.166 glosses agree with key.tsv on every numeral used to split a word (D1-BAL167)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); exemplar set enlarged to 63 court-hand signs (D1-BAL167, per-shape ceiling 0.698) but f.247's b/L/K/u forms have no glossed counterpart; untried: a glossed text in the f.247 hand
+- [ ] image-check: 170 c239-240 native crops cut for f.228r-v (D1-BAL170); f.229r-v (c240 right, c241 left) still to crop
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut after a clipped first cut (D1-BAL170)
+Verdict: keep going: 3 internal gaps; cheapest next: re-pass f.228r on the re-cut crops and pass f.228v (crops ready), ~$3, then f.229r-v or a sign sorter
