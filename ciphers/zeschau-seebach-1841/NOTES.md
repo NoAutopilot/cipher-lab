@@ -569,7 +569,7 @@ matched control. Not a search and not a target run. Script only (`basin_width.py
   near-key enumeration was not measured (no addendum in this job). Since the pre-registered rule reads w = 0, the next
   instrument needs a seed that is almost exact (a crib inside the cipher, or the R5006 pencil decipherment recovered by
   imaging), i.e. new material, not another objective-plus-search on the same 2,666 tokens.
-- `basin_width.py --check` re-runs the 18-minute job and compares the json (result in the done line). 0 tokens graded;
+- `basin_width.py --check` re-ran the 18-minute job and matched the committed json: exit 0 (10:21 UTC). 0 tokens graded;
   pins stay Bourdeau's grade-I values (dbourdeau/cyphersolver, CC BY 4.0). Rule 10: no novelty claim.
 
 Requests: none (disk only). Vision 0, subagents 0.
