@@ -1,0 +1,321 @@
+{
+ "GATED_both_primary_lines_2_18": {
+  "calibration": {
+   "code_words": 106,
+   "code_words_matched": 72,
+   "gate": 0.5,
+   "share": 0.6792,
+   "verdict": "PASS"
+  },
+  "gloss_letters": 809,
+  "keys": {
+   "alphabet.tsv": {
+    "heldout": {
+     "N": 118,
+     "S_real": 0.1864,
+     "gate": "FAIL",
+     "null_max": 0.1271,
+     "null_mean": 0.0281,
+     "null_p95": 0.0763,
+     "of": 201,
+     "per_label": {
+      "3": "0/9",
+      "4": "0/7",
+      "7": "0/3",
+      "9": "2/8",
+      "A": "4/18",
+      "E": "0/4",
+      "F": "1/11",
+      "R": "9/18",
+      "T": "0/14",
+      "X": "0/4",
+      "Z": "6/22"
+     },
+     "rank": 1
+    },
+    "values": {
+     "3": "d",
+     "4": "de",
+     "7": "i",
+     "9": "e",
+     "A": "a",
+     "E": "on",
+     "F": "i",
+     "K": "y",
+     "R": "s",
+     "T": "d",
+     "V": "ne",
+     "X": "an",
+     "Z": "r"
+    }
+   },
+   "key_tomokiyo_alpha.tsv": {
+    "heldout": {
+     "N": 115,
+     "S_real": 0.2261,
+     "gate": "FAIL",
+     "null_max": 0.1565,
+     "null_mean": 0.0503,
+     "null_p95": 0.1217,
+     "of": 201,
+     "per_label": {
+      "3": "0/9",
+      "4": "2/7",
+      "9": "2/8",
+      "A": "4/18",
+      "E": "0/4",
+      "F": "2/11",
+      "R": "9/18",
+      "T": "1/14",
+      "X": "0/4",
+      "Z": "6/22"
+     },
+     "rank": 1
+    },
+    "values": {
+     "3": "e",
+     "4": "o",
+     "9": "e",
+     "A": "a",
+     "E": "h",
+     "F": "",
+     "K": "y",
+     "R": "s",
+     "T": "s",
+     "V": "m",
+     "X": "e",
+     "Z": "r"
+    }
+   }
+  },
+  "symbol_tokens": {
+   "labels": {
+    "3": 9,
+    "4": 7,
+    "7": 3,
+    "9": 8,
+    "?3": 5,
+    "A": 18,
+    "B": 1,
+    "D": 3,
+    "E": 4,
+    "F": 11,
+    "R": 18,
+    "T": 14,
+    "W": 10,
+    "X": 4,
+    "Z": 22
+   },
+   "scored": 137
+  }
+ },
+ "baseline_reported": {
+  "calibration": {
+   "code_words": 106,
+   "code_words_matched": 52,
+   "gate": 0.5,
+   "share": 0.4906,
+   "verdict": "FAIL"
+  },
+  "gloss_letters": 804,
+  "keys": "not reported: diagnostic run (PREREG_f147b.md), licenses nothing",
+  "symbol_tokens": {
+   "labels": {
+    "3": 7,
+    "4": 7,
+    "7": 1,
+    "9": 7,
+    "A": 17,
+    "B": 1,
+    "D": 2,
+    "E": 3,
+    "F": 11,
+    "R": 18,
+    "T": 14,
+    "W": 8,
+    "X": 4,
+    "Z": 20
+   },
+   "scored": 120
+  }
+ },
+ "err_2reader": 0.2717,
+ "gloss": {
+  "clerk_words": 80,
+  "join": "last clerk word 'seguridad' = print word 79",
+  "print_words_after_join": 132
+ },
+ "gloss_only_reported": {
+  "calibration": {
+   "code_words": 106,
+   "code_words_matched": 52,
+   "gate": 0.5,
+   "share": 0.4906,
+   "verdict": "FAIL"
+  },
+  "gloss_letters": 809,
+  "keys": "not reported: diagnostic run (PREREG_f147b.md), licenses nothing",
+  "symbol_tokens": {
+   "labels": {
+    "3": 7,
+    "4": 7,
+    "7": 1,
+    "9": 7,
+    "A": 17,
+    "B": 1,
+    "D": 2,
+    "E": 3,
+    "F": 11,
+    "R": 18,
+    "T": 14,
+    "W": 8,
+    "X": 4,
+    "Z": 20
+   },
+   "scored": 120
+  }
+ },
+ "sensitivity_line1_tail": {
+  "calibration": {
+   "code_words": 109,
+   "code_words_matched": 75,
+   "gate": 0.5,
+   "share": 0.6881,
+   "verdict": "PASS"
+  },
+  "gloss_letters": 809,
+  "keys": {
+   "alphabet.tsv": {
+    "heldout": {
+     "N": 121,
+     "S_real": 0.1901,
+     "gate": "FAIL",
+     "null_max": 0.1322,
+     "null_mean": 0.0276,
+     "null_p95": 0.0826,
+     "of": 201,
+     "per_label": {
+      "3": "0/9",
+      "4": "0/7",
+      "7": "0/3",
+      "9": "2/9",
+      "A": "4/18",
+      "E": "0/4",
+      "F": "1/11",
+      "R": "10/19",
+      "T": "0/14",
+      "X": "0/5",
+      "Z": "6/22"
+     },
+     "rank": 1
+    },
+    "values": {
+     "3": "d",
+     "4": "de",
+     "7": "i",
+     "9": "e",
+     "A": "a",
+     "E": "on",
+     "F": "i",
+     "K": "y",
+     "R": "s",
+     "T": "d",
+     "V": "ne",
+     "X": "an",
+     "Z": "r"
+    }
+   },
+   "key_tomokiyo_alpha.tsv": {
+    "heldout": {
+     "N": 118,
+     "S_real": 0.2288,
+     "gate": "FAIL",
+     "null_max": 0.161,
+     "null_mean": 0.0504,
+     "null_p95": 0.1271,
+     "of": 201,
+     "per_label": {
+      "3": "0/9",
+      "4": "2/7",
+      "9": "2/9",
+      "A": "4/18",
+      "E": "0/4",
+      "F": "2/11",
+      "R": "10/19",
+      "T": "1/14",
+      "X": "0/5",
+      "Z": "6/22"
+     },
+     "rank": 1
+    },
+    "values": {
+     "3": "e",
+     "4": "o",
+     "9": "e",
+     "A": "a",
+     "E": "h",
+     "F": "",
+     "K": "y",
+     "R": "s",
+     "T": "s",
+     "V": "m",
+     "X": "e",
+     "Z": "r"
+    }
+   }
+  },
+  "symbol_tokens": {
+   "labels": {
+    "3": 9,
+    "4": 7,
+    "7": 3,
+    "9": 9,
+    "?3": 5,
+    "A": 18,
+    "B": 1,
+    "D": 3,
+    "E": 4,
+    "F": 11,
+    "R": 19,
+    "T": 14,
+    "W": 10,
+    "X": 5,
+    "Z": 22
+   },
+   "scored": 140
+  }
+ },
+ "splits_only_reported": {
+  "calibration": {
+   "code_words": 106,
+   "code_words_matched": 69,
+   "gate": 0.5,
+   "share": 0.6509,
+   "verdict": "PASS"
+  },
+  "gloss_letters": 804,
+  "keys": "not reported: diagnostic run (PREREG_f147b.md), licenses nothing",
+  "symbol_tokens": {
+   "labels": {
+    "3": 9,
+    "4": 7,
+    "7": 3,
+    "9": 8,
+    "?3": 5,
+    "A": 18,
+    "B": 1,
+    "D": 3,
+    "E": 4,
+    "F": 11,
+    "R": 18,
+    "T": 14,
+    "W": 10,
+    "X": 4,
+    "Z": 22
+   },
+   "scored": 137
+  }
+ },
+ "splits_settled_applied": 45,
+ "tilde_left": 42
+}

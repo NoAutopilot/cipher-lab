@@ -1,0 +1,354 @@
+passage	pos	sign_id	conf	note
+f147_L01	1	puc		passC
+f147_L01	2	?3		lookalike UNSETTLED
+f147_L01	3	F		passC
+f147_L01	4	B		passC
+f147_L01	5	enbiaronseles	H	lookalike 2-of-3
+f147_L01	6	nuqtanyll	M	lookalike 2-of-3
+f147_L01	7	dus	M	lookalike 2-of-3
+f147_L01	8	~		lookalike UNSETTLED
+f147_L01	9	~		lookalike UNSETTLED
+f147_L01	10	~		lookalike UNSETTLED
+f147_L01	11	B		passC
+f147_L01	12	kef		passC
+f147_L01	13	R	M	lookalike 2-of-3
+f147_L01	14	sof		passC
+f147_L01	15	naf		passC
+f147_L01	16	ver		passC
+f147_L01	17	X		passC
+f147_L01	18	9		passC
+f147_L02	1	9		lookalike UNSETTLED
+f147_L02	2	R		passC
+f147_L02	3	A		passC
+f147_L02	4	D	M	lookalike 2-of-3
+f147_L02	5	sof		passC
+f147_L02	6	cor		passC
+f147_L02	7	mus		passC
+f147_L02	8	R		passC
+f147_L02	9	ram		passC
+f147_L02	10	R		passC
+f147_L02	11	~		lookalike UNSETTLED
+f147_L02	12	T		passC
+f147_L02	13	A		passC
+f147_L02	14	Z		passC
+f147_L02	15	D		passC
+f147_L02	16	9		passC
+f147_L02	17	mus		passC
+f147_L02	18	R		passC
+f147_L02	19	gap		passC
+f147_L02	20	boz		passC
+f147_L02	21	per		passC
+f147_L03	1	gap		passC
+f147_L03	2	dim		passC
+f147_L03	3	ka		passC
+f147_L03	4	R		passC
+f147_L03	5	~		lookalike UNSETTLED
+f147_L03	6	3		passC
+f147_L03	7	?3	M	lookalike 2-of-3
+f147_L03	8	E		passC
+f147_L03	9	9		passC
+f147_L03	10	dim		passC
+f147_L03	11	di		passC
+f147_L03	12	F		lookalike UNSETTLED
+f147_L03	13	~		lookalike UNSETTLED
+f147_L03	14	3		passC
+f147_L03	15	kac		passC
+f147_L03	16	Z		passC
+f147_L03	17	?3	H	lookalike 2-of-3
+f147_L03	18	reaz	M	lookalike 2-of-3
+f147_L03	19	Z	M	lookalike 2-of-3
+f147_L03	20	tup		passC
+f147_L03	21	R		passC
+f147_L03	22	sof		passC
+f147_L04	1	Z	M	lookalike 2-of-3
+f147_L04	2	ar		passC
+f147_L04	3	A	M	lookalike 2-of-3
+f147_L04	4	pib		passC
+f147_L04	5	F		passC
+f147_L04	6	ya		passC
+f147_L04	7	~		lookalike UNSETTLED
+f147_L04	8	~		lookalike UNSETTLED
+f147_L04	9	~		lookalike UNSETTLED
+f147_L04	10	gap		passC
+f147_L04	11	kef		passC
+f147_L04	12	rin		passC
+f147_L04	13	T		passC
+f147_L04	14	A		passC
+f147_L04	15	W		passC
+f147_L04	16	gap		passC
+f147_L04	17	ler		passC
+f147_L04	18	gastaran	H	lookalike 2-of-3
+f147_L04	19	enello	H	lookalike 2-of-3
+f147_L05	1	ram		passC
+f147_L05	2	R		passC
+f147_L05	3	lo		passC
+f147_L05	4	xor		passC
+f147_L05	5	R		passC
+f147_L05	6	T		passC
+f147_L05	7	~		lookalike UNSETTLED
+f147_L05	8	sad		passC
+f147_L05	9	A		passC
+f147_L05	10	co		passC
+f147_L05	11	4		passC
+f147_L05	12	F		passC
+f147_L05	13	?3	M	lookalike 2-of-3
+f147_L05	14	Z		passC
+f147_L05	15	3	M	lookalike 2-of-3
+f147_L05	16	om		passC
+f147_L05	17	boz		passC
+f147_L05	18	kef		passC
+f147_L05	19	ric		passC
+f147_L05	20	yef	M	lookalike 2-of-3
+f147_L05	21	kef		passC
+f147_L05	22	gen	M	lookalike 2-of-3
+f147_L05	23	dos		passC
+f147_L06	1	T		passC
+f147_L06	2	7		passC
+f147_L06	3	Z		passC
+f147_L06	4	3		passC
+f147_L06	5	9		passC
+f147_L06	6	4		passC
+f147_L06	7	A		passC
+f147_L06	8	mus		passC
+f147_L06	9	R		passC
+f147_L06	10	mic		passC
+f147_L06	11	R		passC
+f147_L06	12	gap		passC
+f147_L06	13	dim		passC
+f147_L06	14	bad		passC
+f147_L06	15	bay		passC
+f147_L06	16	W		passC
+f147_L06	17	kuf		passC
+f147_L06	18	A		passC
+f147_L06	19	coh		passC
+f147_L06	20	F		passC
+f147_L06	21	?3	H	lookalike 2-of-3
+f147_L06	22	Z		passC
+f147_L06	23	~		lookalike UNSETTLED
+f147_L06	24	~		lookalike UNSETTLED
+f147_L07	1	gap		passC
+f147_L07	2	qes		passC
+f147_L07	3	T		passC
+f147_L07	4	E		passC
+f147_L07	5	W		passC
+f147_L07	6	D		passC
+f147_L07	7	sad		passC
+f147_L07	8	naf		passC
+f147_L07	9	puc		passC
+f147_L07	10	de	H	lookalike 2-of-3
+f147_L07	11	ver	H	lookalike 2-of-3
+f147_L07	12	~		lookalike UNSETTLED
+f147_L07	13	tac		passC
+f147_L07	14	dim		passC
+f147_L07	15	T		passC
+f147_L07	16	9		passC
+f147_L07	17	Z		passC
+f147_L07	18	biz		passC
+f147_L07	19	9		lookalike UNSETTLED
+f147_L07	20	A		passC
+f147_L07	21	cih		passC
+f147_L08	1	~		lookalike UNSETTLED
+f147_L08	2	Z		passC
+f147_L08	3	F		passC
+f147_L08	4	ibget	M	lookalike 2-of-3
+f147_L08	5	~		lookalike UNSETTLED
+f147_L08	6	R		passC
+f147_L08	7	nuc	M	lookalike 2-of-3
+f147_L08	8	R		passC
+f147_L08	9	ler		passC
+f147_L08	10	dim		passC
+f147_L08	11	net		passC
+f147_L08	12	Z		passC
+f147_L08	13	4		passC
+f147_L08	14	W		passC
+f147_L08	15	qid		passC
+f147_L08	16	kef		passC
+f147_L08	17	naf		passC
+f147_L08	18	~		lookalike UNSETTLED
+f147_L08	19	~		lookalike UNSETTLED
+f147_L08	20	R		passC
+f147_L08	21	~		lookalike UNSETTLED
+f147_L08	22	mus		passC
+f147_L09	1	unf	M	lookalike 2-of-3
+f147_L09	2	ft	M	lookalike 2-of-3
+f147_L09	3	q	M	lookalike 2-of-3
+f147_L09	4	nab		passC
+f147_L09	5	hag		passC
+f147_L09	6	ler		passC
+f147_L09	7	fe		passC
+f147_L09	8	Z		passC
+f147_L09	9	4		passC
+f147_L09	10	W		passC
+f147_L09	11	net		passC
+f147_L09	12	Z		passC
+f147_L09	13	dim		passC
+f147_L09	14	qid		passC
+f147_L09	15	qob		passC
+f147_L09	16	F		passC
+f147_L09	17	ler		passC
+f147_L09	18	dim		passC
+f147_L09	19	mus		passC
+f147_L09	20	~		lookalike UNSETTLED
+f147_L09	21	F		passC
+f147_L09	22	ha		passC
+f147_L10	1	hef		passC
+f147_L10	2	mus		passC
+f147_L10	3	R		passC
+f147_L10	4	sof		passC
+f147_L10	5	T		passC
+f147_L10	6	gap		passC
+f147_L10	7	ka		passC
+f147_L10	8	R		passC
+f147_L10	9	~		lookalike UNSETTLED
+f147_L10	10	~		lookalike UNSETTLED
+f147_L10	11	~		lookalike UNSETTLED
+f147_L10	12	gat		passC
+f147_L10	13	Z		passC
+f147_L10	14	um	M	lookalike 2-of-3
+f147_L10	15	R		passC
+f147_L10	16	dg	M	lookalike 2-of-3
+f147_L10	17	~		lookalike UNSETTLED
+f147_L10	18	~		lookalike UNSETTLED
+f147_L10	19	~		lookalike UNSETTLED
+f147_L11	1	K		lookalike UNSETTLED
+f147_L11	2	3		passC
+f147_L11	3	ul	M	lookalike 2-of-3
+f147_L11	4	~		lookalike UNSETTLED
+f147_L11	5	ka		passC
+f147_L11	6	R		passC
+f147_L11	7	hemb	M	lookalike 2-of-3
+f147_L11	8	~		lookalike UNSETTLED
+f147_L11	9	W	M	lookalike 2-of-3
+f147_L11	10	F		passC
+f147_L11	11	dim		passC
+f147_L11	12	Z		passC
+f147_L11	13	bay		passC
+f147_L11	14	boz		passC
+f147_L11	15	sof		passC
+f147_L11	16	ul		passC
+f147_L11	17	gap		passC
+f147_L11	18	bas		passC
+f147_L11	19	~		lookalike UNSETTLED
+f147_L11	20	3		passC
+f147_L11	21	X		passC
+f147_L11	22	dim		passC
+f147_L11	23	T		passC
+f147_L11	24	A		passC
+f147_L11	25	Z		passC
+f147_L12	1	T		passC
+f147_L12	2	4		passC
+f147_L12	3	seg		passC
+f147_L12	4	R		passC
+f147_L12	5	A		passC
+f147_L12	6	ln	M	lookalike 2-of-3
+f147_L12	7	~		lookalike UNSETTLED
+f147_L12	8	3	M	lookalike 2-of-3
+f147_L12	9	gap		passC
+f147_L12	10	yer		passC
+f147_L12	11	nab		passC
+f147_L12	12	hiq		passC
+f147_L12	13	F		passC
+f147_L12	14	~		lookalike UNSETTLED
+f147_L12	15	gap		passC
+f147_L12	16	oul		passC
+f147_L12	17	sof		passC
+f147_L12	18	T		passC
+f147_L12	19	~		lookalike UNSETTLED
+f147_L12	20	9		passC
+f147_L12	21	Z		passC
+f147_L12	22	lib		passC
+f147_L12	23	A		passC
+f147_L12	24	Z		passC
+f147_L12	25	X		passC
+f147_L13	1	sof		passC
+f147_L13	2	dus		passC
+f147_L13	3	Z		passC
+f147_L13	4	Z		lookalike UNSETTLED
+f147_L13	5	im		passC
+f147_L13	6	[no recogha para falta y es muy sufinente ombre para]	M	lookalike 2-of-3
+f147_L14	1	[ello y el tohara de buena voluntad y terna causa para ello]	M	lookalike 2-of-3
+f147_L15	1	F		passC
+f147_L15	2	hag		passC
+f147_L15	3	qib		passC
+f147_L15	4	fed		passC
+f147_L15	5	ler		passC
+f147_L15	6	kef		passC
+f147_L15	7	rjn	M	lookalike 2-of-3
+f147_L15	8	sof		passC
+f147_L15	9	X		passC
+f147_L15	10	ges		passC
+f147_L15	11	T		passC
+f147_L15	12	A		passC
+f147_L15	13	ott		passC
+f147_L15	14	A		passC
+f147_L15	15	Z		passC
+f147_L15	16	F		passC
+f147_L15	17	?3	M	lookalike 2-of-3
+f147_L15	18	~		lookalike UNSETTLED
+f147_L15	19	gif		passC
+f147_L15	20	hef		passC
+f147_L15	21	ler		passC
+f147_L16	1	ka		passC
+f147_L16	2	A		passC
+f147_L16	3	boc		passC
+f147_L16	4	X		passC
+f147_L16	5	qes		passC
+f147_L16	6	T		passC
+f147_L16	7	A		passC
+f147_L16	8	ott		passC
+f147_L16	9	A		passC
+f147_L16	10	ram		passC
+f147_L16	11	qib		passC
+f147_L16	12	fad	M	lookalike 2-of-3
+f147_L16	13	ram		passC
+f147_L16	14	W		passC
+f147_L16	15	E		passC
+f147_L16	16	9		passC
+f147_L16	17	Z		passC
+f147_L16	18	W		passC
+f147_L16	19	ocy	M	lookalike 2-of-3
+f147_L16	20	ram		passC
+f147_L17	1	dim		passC
+f147_L17	2	4		passC
+f147_L17	3	T		passC
+f147_L17	4	~		lookalike UNSETTLED
+f147_L17	5	9		passC
+f147_L17	6	3		passC
+f147_L17	7	T		passC
+f147_L17	8	4		passC
+f147_L17	9	A		passC
+f147_L17	10	dus		passC
+f147_L17	11	Z		passC
+f147_L17	12	3		passC
+f147_L17	13	an		passC
+f147_L17	14	fed		passC
+f147_L17	15	kah		passC
+f147_L17	16	mun		passC
+f147_L17	17	~		lookalike UNSETTLED
+f147_L17	18	~		passC
+f147_L17	19	E	M	lookalike 2-of-3
+f147_L17	20	9	M	lookalike 2-of-3
+f147_L17	21	W	M	lookalike 2-of-3
+f147_L17	22	cy	M	lookalike 2-of-3
+f147_L17	23	ram		passC
+f147_L18	1	A		passC
+f147_L18	2	bas		passC
+f147_L18	3	pam		passC
+f147_L18	4	W		passC
+f147_L18	5	ram		passC
+f147_L18	6	ka		passC
+f147_L18	7	qib		passC
+f147_L18	8	fed		passC
+f147_L18	9	cob		passC
+f147_L18	10	qid		passC
+f147_L18	11	ram		passC
+f147_L18	12	qib		passC
+f147_L18	13	pob		passC
+f147_L18	14	B		passC
+f147_L18	15	Z		passC
+f147_L18	16	10		passC
+f147_L18	17	F		passC
+f147_L18	18	7	M	lookalike 2-of-3
+f147_L18	19	~		passC
+f147_L18	20	7	M	lookalike 2-of-3
+f147_L18	21	dto	H	lookalike 2-of-3

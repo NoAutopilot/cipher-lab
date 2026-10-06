@@ -115,11 +115,11 @@ def main():
     out = {"err_2reader": round(err, 4), "splits_settled_applied": n_set,
            "tilde_left": sum(1 for l in rec_la.values() for t, _ in l if t == "~"),
            "gloss": {"clerk_words": len(cw), "join": rule, "print_words_after_join": len(tail)}}
-    out["baseline_reported"], _ = t147.run(prim(rec), g0, key, 0)
-    out["gloss_only_reported"], _ = t147.run(prim(rec), g1, key, 0)
-    out["splits_only_reported"], _ = t147.run(prim(rec_la), g0, key, 0)
+    out["baseline_reported"], _ = t147.run(prim(rec), g0, key, a.shuffles)
+    out["gloss_only_reported"], _ = t147.run(prim(rec), g1, key, a.shuffles)
+    out["splits_only_reported"], _ = t147.run(prim(rec_la), g0, key, a.shuffles)
     for k in ("baseline_reported", "gloss_only_reported", "splits_only_reported"):
-        out[k].pop("keys", None)
+        out[k]["keys"] = "not reported: diagnostic run (PREREG_f147b.md), licenses nothing"
     out["GATED_both_primary_lines_2_18"], al = t147.run(prim(rec_la), g1, key, a.shuffles)
     sens = prim(rec_la)
     bs = [j for j, (t, s) in enumerate(rec_la[1]) if t == "B"]

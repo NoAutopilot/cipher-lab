@@ -1034,3 +1034,75 @@ byte-identical. Counts confirmed: S 300 / M 170 / U 272 of 742 (H 0, C 0). L24.2
 image (same J as L02's Jas/Jez); merge at M stands. L26.25 "Z log" (and L26.31 "Z bo") confirmed as a separate yogh. Over-claims: none.
 Note: on es17c the target clears the shuffled maximum by only 0.009 (about a third of a shuffled sd). AUDIT.md now carries R14-RJMZ.
 Requests: de-crypt.org 2 (one login). No subagent.
+
+## R9526 retest with f.150's clerk lines and settled splits (R14-RJM9526, 6 Oct 2026, 15:35-15:4x UTC)
+Brief: .claude/briefs/runs/2026-10-06-account2-run14-jobs.md job R14-RJM9526 (the R9526 gap of R12-RJM147). Opus worker, 2 Sonnet subagent
+passes (f.150 read; look-alike re-read), scoring by script. Rule fixed first: witness/PREREG_f147b.md, pushed 8aeea08d0 (15:40:26 UTC)
+before either pass returned or any run. **Can the calibration reach its gate? (stated in the PREREG before anything was read):** yes in
+arithmetic. R12-RJM147 missed by one code word (52/106), and 48 code tokens (20 missed) sit on pass lines 2-8, under the f.150 text.
+Material: one DECODE browser login, 4 requests to de-crypt.org (record page + full-size P1, P2, P3; sha1s match images/manifest.json);
+images and crops in the scratchpad only. Crops (pasted):
+```
+$ python3 tools/iiif_lines.py --image IMG_R9526_I44875_P2.jpg --region 1990,1690,1480,500 --out <scratch>/crops150 --prefix f150 --follow-slope 300 --slope-margin 22 --debug
+  wrote 7 crops   (a first region from y=1770 missed the "// Los de genova" line; redone, overlay checked: L01 = "...scrito // Los de genova", L07 ends "con seguridad")
+$ python3 tools/iiif_lines.py --image IMG_R9526_I44875_P1.jpg --region 1880,1700,1592,754 --out <scratch>/crops --prefix f147 --follow-slope 300 --slope-margin 22 --debug
+  wrote 9 crops   (R12-RJM147's command, same count)
+$ python3 tools/iiif_lines.py --image IMG_R9526_I44875_P3.jpg --region 150,420,1600,1150 --out <scratch>/crops --prefix f147v --follow-slope 300 --distance 40 --slope-margin 22 --debug
+  wrote 17 crops  (same)
+$ python3 scripts/lookalike_tiles147.py      # lookalike_tiles.py's page_rows() on f147 with NORM147; passC = ciphertext_f147_reconciled.tsv token for token
+  {'f147_passC.tsv': 353, 'f147_tiles.tsv': 85}
+$ python3 tools/lookalike_pass.py windows --tiles lookalike/f147_tiles.tsv --passc lookalike/f147_passC.tsv --manifest <scratch>/pl/manifest.json --crop-pattern "{line}.jpg" --desc <desc.tsv + pass B ?2-?8 notes + 7> --status split --out <scratch>/win147
+  {"windows": 85, "montages": 15}   (pl/ = the 18 crops renamed to pass-line ids)
+$ python3 tools/lookalike_pass.py reconcile --tiles lookalike/f147_tiles.tsv --passc lookalike/f147_passC.tsv --reread lookalike/f147_reread.tsv --out lookalike/f147_passD.tsv --alt lookalike/f147_passD_alt.tsv --focus lookalike/f147_focus.tsv
+  {"signs": 353, "flagged": 85, "relabelled": 45, "unsettled": 40, "residual": 0.113}
+```
+f.150 read (passes/f150_clerk.tsv): the Sonnet pass is weak, with line confidence M 2 / L 5. "escrevi q se les" came back as "e premi
+q petes", "servicio" as "ssmo", "santidad" as "pan.t" and "puede" as "pide". The PREREG fixed one read taken as given, so it was used
+unchanged: 80 clerk words, joined to the print after "seguridad" (print word 79), then 132 print words (passes/gloss_f147b.tsv).
+Re-read confidence: H 8 / M 43 / L 34. Of the 45 settled tiles, 16 are symbols (?3 5, Z 2, W 2, 7 2, 3 2, R, E, D, A, 9) and 29 are
+groups or clear words. Two of those are the long clear brackets on pass lines 14-15 ("no ... falta y es muy suficiente ombre para",
+"ello y el lo hara de buena voluntad y terna causa para ello"), where one reader had written clear text and the other cipher groups.
+Residual 40 unsettled / 353 = 0.113. That is agreement among three machine readers, not reader error. 42 '~' are left.
+
+Scored run: `python3 scripts/test147b.py` (results_test147b.json, ciphertext_f147_reconciled_la.tsv, passes/align_f147b.tsv; `--check`
+exits 0; test147.py `--check` exits 0, its outputs unchanged). Statistic, aligner, keys and control are test147.py's, unchanged.
+
+| run | calibration (code words on own word) | gate 0 | alphabet.tsv S (N) vs control mean / p95 / max | Tomokiyo S (N) vs control mean / p95 / max | verdict per key (S > max AND S >= 0.24) |
+|---|---|---|---|---|---|
+| baseline (= R12-RJM147), reported | 0.491 (52/106) | FAIL | -- | -- | -- |
+| gloss only, reported | 0.491 (52/106) | FAIL | -- | -- | -- |
+| splits only, reported | 0.651 (69/106) | (PASS) | not scored | not scored | -- |
+| **GATED: both, lines 2-18** | **0.679 (72/106)** | **PASS** | **0.186 (118) vs 0.028 / 0.076 / 0.127** | **0.226 (115) vs 0.050 / 0.122 / 0.157** | **FAIL / FAIL (both under the 0.24 floor)** |
+| sensitivity (+ line 1 tail), reported | 0.688 (75/109) | PASS | 0.190 (121) vs max 0.132 | 0.229 (118) vs max 0.161 | FAIL / FAIL |
+
+Per label in the gated run (Tomokiyo / alphabet.tsv): R 9/18 both, Z 6/22 both, A 4/18 both, 9 2/8 both, F 2/11 vs 1/11, 4 2/7 vs 0/7,
+T 1/14 vs 0/14, 3 0/9, E 0/4, X 0/4.
+Reading: the calibration now passes, so this is a test, not a non-test. Under the registered rule it is a held-out FAIL for both letter
+alphabets at reader error 0.27 with 42 '~' left. Both keys still rank first of 201 against their permuted-value controls (Tomokiyo
+0.226 vs max 0.157). Both miss the 0.24 floor that PREREG_f42 set and PREREG_f147/f147b kept. Tomokiyo's table is short by about
+2 of 115 tokens. The f.40 PASS (R12-RJM42, 0.276) is not corroborated at the registered floor here. It is not contradicted either:
+the control-relative signal is as strong as on f.40. What moved the calibration was the settled splits (52 -> 69 alone), above all the two
+clear brackets restored on lines 14-15. The clerk's f.150 text moved nothing (52 -> 52), at least as this one weak read gives it.
+The settled tokens are one-reader (2-of-3) material: they license no S grade.
+Rule 3: second attempt on this page with an unchanged aligner and gate. Unlike R12-RJM147 it passed its own calibration, so the
+third-attempt clause does not apply. The registered result is a FAIL for both keys on this page. No looser floor is applied after
+the fact.
+Grades: unchanged; no key or reading changed (key.tsv, alphabet.tsv, key_tomokiyo_alpha.tsv untouched). Requests: de-crypt.org 4 (one
+login). Subagent calls 2 (Sonnet). The 40 unsettled tiles are in lookalike/f147_focus.tsv; they were not appended to sorter/focus.tsv.
+
+## Remaining gaps (R14-RJM9526, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; R9501 f.34 (30 lines) trial-decoded with Tomokiyo's published key after the look-alike pass and J-merges: 300 S + 170 M of 742 tokens (63%), judge cannot decide; nomenclator layer also decoded on R9528 f.194, R9502 f.40, R9526 ff.147-147v; Tomokiyo's alphabet PASSes held out on R9502 f.40 (0.276 vs control max 0.172); on R9526 against CODOIN XXVI (calibration now 0.679) both alphabets FAIL the 0.24 floor while above their control max (Tomokiyo 0.226 vs 0.157; alphabet.tsv 0.186 vs 0.127)
+- R9501 f.34 unread tokens (49 unsettled splits, 98 settled Latin fragments, 101 out-of-table groups) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set and the Latin-vs-symbol notation; 34 f.34 tiles appended to sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- T and the rare signs 9, X, V, E, 3 and Q have no value supported on a page outside the key sample - blocker: not-attempted; T takes 1/14 on f.147 and no consistent chunk on f.40; next: pool the f.194, f.199, f.40 and f.147b alignments for T/Q chunk counts and score Q against K after the look-alike check, ~$2
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, f.40 0.28, f.147 0.27, f.34 0.34, err_true unmeasured) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set; 39 + 34 unsettled look-alike tiles in sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md; f.147's 40 in lookalike/f147_focus.tsv)
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, R12-RJMPUB); without it every reading stays a cryptanalytic result
+
+## Escalation (R14-RJM9526, 6 Oct 2026)
+- [x] siblings: R11-RJMSIB compared Tomokiyo's Juan Manuel and Sanchez 1522 tables (alphabet and nomenclator, Bourdeau sanchez1522 cited): same design, no shared key (V 1 vs p95 2; T 0 of 75 shared words); no table fit to carry over
+- [x] clear-pages: f.197, f.201, f.42 read (single Sonnet pass each); f.199's, f.40's and f.147v's own clear lines identified; f.150's last 7 lines read (one weak Sonnet pass, R14-RJM9526); f.34 has no clear lines
+- [x] known-keys: Tomokiyo's nomenclator run on R9528, R9529, R9502, R9526 and R9501; his alphabet held out on R9502 f.40: PASS (R12-RJM42); on R9526 vs CODOIN XXVI: FAIL at the 0.24 floor, above control max (R14-RJM9526); R9501 f.34 trial decode: 63% S/M, judge cannot decide
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); R12-RJMPUB found no published decipherment beyond Tomokiyo's first-line incipits; one chapter of R9526 printed in clear, CODOIN XXVI pp.49-50; Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out FAIL on f.199, on f.40 (0.156 < 0.24) and on f.147 (0.186 < 0.24)
+- [x] image-check: R9528, R9529, R9502, R9526 and R9501 full-size images fetched (sha1s in images/manifest.json), crops and windows checked; f.34 out-of-table groups and J-initial groups eye-checked (R13-RJM34LA, R13-RJMV2, R14-RJMZ)
+- [x] retry: look-alike passes on f.194/f.199 (R11-RJMLA, residual 0.040 / 0.137), f.34 (R13-RJM34LA, 0.065) and f.147 (R14-RJM9526, 0.113); agreement, not error; R9526 retest run with settled splits (calibration passes, both keys FAIL the floor)
+Verdict: keep going: 1 internal gap (T/Q values from pooled alignments); the transcription and unread-token gaps wait on ASKS 138; cheapest next: pool the f.194/f.199/f.40/f.147b alignments for T/Q chunk counts, ~$2
