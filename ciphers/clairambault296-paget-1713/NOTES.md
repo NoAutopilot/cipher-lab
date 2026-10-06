@@ -596,3 +596,47 @@ Waits on a BnF reproduction of Clairambault 297 p. 249 (to be folded into the AS
 
 - Apply the sister folder's 1714 Paget key to the 1714 letters' own unglossed spans and list which codes stay open, so the 1713 letter can be tested against a known residue the day it arrives. S, disk only.
 
+
+## D4-PAG13 (6 Oct 2026, 12:42-12:5x UTC by date -u, account 4): 1714 Paget key applied to the 1714 letters; residue table for the 1713 letter
+
+Disk only, 0 network requests. Sister folder read only (clairambault1225-paget-1714: key.tsv 111 codes, ciphertext.tsv, reading_tokens.tsv,
+votes.tsv, exceptions.tsv at the D2-PAGR7 state, whose `tools/decode_key.py --check` re-ran exit 0 this pass: "tokens 505: H 50, I 7, M 370,
+S 72, U 6 / reading up to date"). `residue_1714.py` (this folder; `--check` exits 1 if a table is stale) writes:
+
+- `residue_1714_codes.tsv`: one row per code in the two 1714 letters (124 incl. the ILLEGIBLE group): token count, how many sit under a
+  period gloss chunk of their own (votes.tsv value), letters, positions (`*` = unglossed), key value or OPEN, key grade, per-token grades,
+  what each token reads as (`(exc)` = an exceptions.tsv image/settle ruling), and a status: **firm** (key grade H/C/S) 21 codes / 176 tokens;
+  **weak** (key value at grade M) 90 codes / 314 tokens; **OPEN** (no key value) 13 codes / 15 tokens. 46 codes occur once.
+- `residue_1714_unglossed.tsv`: the 13 cipher tokens with no gloss chunk of their own, key applied.
+
+Unglossed spans, key applied (of 505 tokens, 492 carry a gloss chunk):
+| span | codes | key gives | note |
+|---|---|---|---|
+| f66L 169-172 (L2) | 400 4 19 600 | OPEN OPEN OPEN OPEN | none of the four recurs in either letter; 400 and 600 are two of only five codes above 250 (267, 276, 692 the others, each once) |
+| f61L 48 (L1) | ILLEGIBLE | OPEN | solid-inked group; gloss read, code not |
+| f65L 48 (L1) | 222 | OPEN | 222's two other readings are image overrides to 223 (c); this one stays 222 on the passes |
+| f66L 25, 31, 371 (L2) | 22, 25, 44 | OPEN, read as numerals | grade I: the gloss repeats the number |
+| f65R 55, f66L 290 (L2) | 2 | key "pr" (M, single attestation) | read as the numeral 2 here (grade I): 2 is either a numeral or "pr"; the 1713 letter can test which |
+| f66R 23, 63 (L2) | 36, 35 | key "u" (M), "rme" (M) | read as numerals here (grade I) |
+
+So the 1714 letters themselves leave only the f66L 400-4-19-600 run, the ILLEGIBLE group and f65L 222 unread; everything else is either glossed
+or a numeral. The weak class is the real residue for the 1713 test: 90 codes whose value rests on one aligned occurrence or an unsettled
+alignment (D2-PAGR7 gap 1). The 21 firm codes (32 c, 47 t, 52 et, 67 be, 87 de, 90 du, 135 je, 145 la, 146 le, 147 li, 155 ma, 174 na,
+175 ne, 185 on, 196 po, 205 qui, 212 re, 221 se, 233 te, 240 ion, 244 ve) are the ones to apply first to Clairambault 297 p.249 once
+imaged; a weak or OPEN code that reads plausibly there in a second context would move its grade, a firm code that fails there would be
+evidence against the same key. Whether the 1713 letter uses this key at all is untested (no image; the sender identity is inference, FT4).
+Reading or key: unchanged (no file in the sister folder written). No status change: stays open, parked on the BnF reproduction.
+
+## Remaining gaps (D4-PAG13, 6 Oct 2026)
+Read so far: 0 of the letter (no image of Clairambault 297 p. 249 exists online; 0 cipher signs transcribed); the 1714 key's residue is tabled (residue_1714_codes.tsv) for the first test
+- whole letter (Clairambault 297 p. 249, 14 Jan 1713) - blocker: needs-physical-access; Clairambault 297 is not digitised (finding aid has no avecDaoGal marker on d0e934; Gallica SRU dc.source 0 records vs control 296 = 1), so the page needs a BnF reproduction order; next: the parent adds "Clairambault 297 p. 249" to the BnF quote batch already drafted for ASKS 49 (outreach/bnf-manuscrits-arsenal-quote-batch.md), ~$0.5
+
+## Escalation (D4-PAG13, 6 Oct 2026)
+- [x] siblings: sister Paget folder clairambault1225-paget-1714 key applied to its own letters (D4-PAG13): firm 21 codes / 176 tokens, weak 90 / 314, OPEN 13 / 15; residue_1714_codes.tsv
+- [n/a] clear-pages: no image of the letter or its neighbours online to read
+- [n/a] known-keys: no ciphertext of this letter exists on disk to apply a key to; the 1714 key and its residue table are the first test once the page is reproduced
+- [x] print: Wentworth Papers read (LANE CX); web, three blogs, both solver repositories and Cabinet Noir nothing (GF4-BATCH11)
+- [n/a] key-rebuild: nothing to rebuild from without the ciphertext itself
+- [x] image-check: finding aid read and Gallica SRU run with a control; Clairambault 297 not digitised; btv1b9000759b (296) swept 316/316
+- [n/a] retry: no failed fetch left; every request answered 200
+Verdict: parked: every gap has an outside blocker (the letter is in undigitised Clairambault 297; next step is the BnF reproduction order via the ASKS 49 batch)

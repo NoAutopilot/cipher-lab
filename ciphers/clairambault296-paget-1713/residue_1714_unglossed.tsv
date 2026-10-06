@@ -1,0 +1,14 @@
+line	pos	letter	code	key_value	key_grade	token_grade	read_as	code_n_tokens
+f61L	48	L1	ILLEGIBLE	OPEN	-	U	?	1
+f65L	48	L1	222	OPEN	-	U	?	3
+f65R	55	L2	2	pr	M	I	2	3
+f66L	25	L2	22	OPEN	-	I	22	1
+f66L	31	L2	25	OPEN	-	I	25	1
+f66L	169	L2	400	OPEN	-	U	?	1
+f66L	170	L2	4	OPEN	-	U	?	1
+f66L	171	L2	19	OPEN	-	U	?	1
+f66L	172	L2	600	OPEN	-	U	?	1
+f66L	290	L2	2	pr	M	I	2	3
+f66L	371	L2	44	OPEN	-	I	44	1
+f66R	23	L2	36	u	M	I	36	2
+f66R	63	L2	35	rme	M	I	35	5
