@@ -1291,6 +1291,9 @@ Not found: no PASS in any window under one u/v convention on both sides.
 key-constrained re-read; (v2) a verifier carries the R15-OLDUV naming change into AUDIT.md and the queued SO prompt. Any later
 judge run on this reading uses `--uv-fold` (the reading keeps period u; the corpus does not).
 
+Step (v2) done (R15-OLDV2, verifier, 6 Oct 2026): carried into AUDIT.md (propagation note) and the queued SO prompt; judge re-run
+reproduces all four windows exactly; window 1's 0.004 shortfall is a FAIL under the pre-registered rule and rule 3, not "judge cannot decide".
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - Action that depends on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and

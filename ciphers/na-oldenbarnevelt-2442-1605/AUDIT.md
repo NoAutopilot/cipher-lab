@@ -51,8 +51,8 @@ not about the accuracy of every word.
   scan 6 (folio 56, block C1) in `images/`.
 - Cipher: vowels written as digits (a=4, e=8, i=3, o=7, u=2) inside otherwise plain Spanish words; in B/C1 "5" is the
   hand's final s, "6" the hand's b, `2s`+superscript a = "V.Sª" (NOTES section 8).
-- Plaintext as read (B): "la he dicho que solo desseo uer aca a V.Sª, i ella lo dessea harto, i se lamenta de uer los
-  tiempos que corren, i me enuio el pesame delo de Siguença, porque hubo del mui buenas esperanças; i muchas ueces no
+- Plaintext as read (B): "la he dicho que solo desseo uer aca a V.Sª, i ella lo dessea arto, i se lamenta de uer los
+  tiempos que corren, i me enuio el pesame delo desigu enca [de Siguenca], porque hubo del mui buenas esperancas; i muchas ueces no
   pueden, i otras ueces no se atreuen a ablar al duque con ueras ... i assi no ai sino paciencia i hacer lo que
   pudieremos comforme a los tiempos." (C1): "... i le besaua las manos. Estas dos cossas he hecho por ser tan
   conuinientes en esta occassion ... supplico a V.Sª me perdone quen decirlo a V.Sª pudiendolo callar. Uera V.Sª [?]la
@@ -125,3 +125,30 @@ Corrections: the C1 quotation in section 2 above and the queued SO-OLDEN-2442-BC
 "quen" (grade M) -- a silent regularization, now quoted as read. SECOND-OPINIONS-QUEUE.tsv row SO-OLDEN-2442-BC1 is
 still `queued` (no answer to reconcile); its row text quotes no reading, so it is unchanged. Class and key source
 unchanged (blocks B/C1 N3, ours); depth not reassessed here.
+
+**Propagation note, R15-OLDV2 (verifier, account 2, LANE LANE-RUN15-account-2, 6 Oct 2026, 17:54-18:00 UTC; rule 10
+propagation, not a re-audit).** Claim carried: NOTES.md section 20 (R15-OLDUV, ec902d21b) renamed the open u/v cup in four B
+tokens through `overrides.tsv` (ciphertext.tsv unchanged): B37 `bv8n4s` -> `b28n4s` (buenas, M), B49/B76 `4tr8v8n` ->
+`4tr828n` (atreuen), B55 `v8r4s,` -> `28r4s,` (ueras); and re-judged with `scripts/segment_judge.py --uv-fold`. Checked by
+this session: (1) `apply_key.py ... --check` -> `OK: reading.txt matches a fresh decode`; (2) crops
+`images/crops_BC1/B_L04_s2`, `B_L06_s1`, `B_L06_s2`, `B_L09_s1`: the sign after `b`, after `tr8` (twice) and before `8r4s`
+is the same open cup as the `2` in `q28`/`p7rq28` on the same lines -- one sign, so the renaming is supported (a naming,
+not a glyph re-read); (3) git order: `transcription/PREREG_R15-OLDUV.md` landed in abaf33532 (17:38:58 UTC), the scored log
+`segment_R15-OLDUV.log` only in ec902d21b (17:41:54 UTC) -- the pre-registration predates the run; (4) the fold extends
+`judge_plaintext.FOLD`, which `fold()` and the `NgramModel` word list read at call time with no cache, so the corpus model,
+word list, held-out real windows, nulls and shuffled decodes are folded exactly as the target is (rule 3 normalisation on
+both sides); the real_p05 values moved under 0.01 and the shuffled decodes stayed at -1.94..-2.17, consistent with that;
+(5) full re-run of `segment_judge.py --uv-fold` this session reproduces the log exactly in all four windows (scores
+-0.933/-0.880/-0.893/-0.968; real_p05 -0.864/-0.876/-0.868/-0.875; all FAIL; call "not concentrated").
+On window 1 (-0.880 vs real_p05 -0.876, 0.004 short): under the pre-registered rule (PREREG_R15-OLDUV item 4, "if all four
+still FAIL, the notation gap is ruled out as the cause of the FAIL at this N") and under rule 3 it is a **FAIL**, not
+"judge cannot decide": rule 3's "cannot decide" reading needs an independent period gloss on the same leaf scoring near the
+shuffled nulls (the clair349 case), and this letter has none. The gate is not moved. Descriptively only: 9.1% of held-out
+real es1600 windows score at or below window 1 (blended held-out false-negative rate 11.6%), so this FAIL is weak evidence
+against the reading, inside the judge's own false-negative band at N=160, and not evidence for it.
+Corrections: the four B words were already quoted in u-form ("buenas", "atreuen", "ueras") in section 2 above and in the
+queued SO prompt (`second-opinions/PROMPT-chatgpt-BC1.md`) -- a silent regularization at the time, now matching the
+reading. Both also printed "harto", "Siguença" and "esperanças" where the reading has "arto", "delo desigu enca" and
+"esperancas" (no cedilla is written in the transcription); now quoted as read, with "[de Siguenca]" as an editorial gloss.
+SECOND-OPINIONS-QUEUE.tsv row SO-OLDEN-2442-BC1 is still `queued`; its row text quotes no reading, so it is unchanged.
+Class and key source unchanged (blocks B/C1 N3, ours); depth not reassessed here.

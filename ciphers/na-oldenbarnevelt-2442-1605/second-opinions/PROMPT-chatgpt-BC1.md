@@ -11,7 +11,7 @@ THE ITEM
   "merendeels in cijferschrift" (mostly in cipher). The cipher writes vowels as digits (a=4, e=8, i=3, o=7, u=2) inside
   otherwise plain words; we recovered that key ourselves, no key or decipherment was found with the letter.
 - Two passages (scan 2, folio 55; scan 6, folio 56) read, in period spelling, as a personal letter: "se lamenta de uer
-  los tiempos que corren, i me enuio el pesame delo de Siguença, porque hubo del mui buenas esperanças", "no se atreuen
+  los tiempos que corren, i me enuio el pesame delo desigu enca [de Siguenca], porque hubo del mui buenas esperancas", "no se atreuen
   a ablar al duque con ueras, porque todos tienen sus pretensiones i andan al aire de su gusto", "no ai sino paciencia
   i hacer lo que pudieremos comforme a los tiempos", "supplico a V.Sª me perdone quen decirlo a V.Sª pudiendolo
   callar". Other passages of the same letter name the bishopric of Sigüenza, don Antonio Vanegas (bishop of Pamplona,
