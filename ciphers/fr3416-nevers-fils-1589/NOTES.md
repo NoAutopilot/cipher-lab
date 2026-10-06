@@ -345,7 +345,7 @@ Not found in print: nothing searched (transcription job).
 
 ## Remaining gaps
 Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
-- L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; glyph-atlas route tried twice: A1B-FILS-L05 non-test at its class gate (no H exemplar of 0), R9-NEVF (6 Oct 2026, class 0 dropped, pos 5/13/17/20) non-test at the leave-one-out gate (0.644 vs >= 0.90; every miss votes the unlabelled '_' class), 0 tokens moved; a FAIL logged, not re-tuned; next: a person's read of the L05 glyphs in the sign sorter (tools/sign_sorter.py with a focus.tsv of pos 4/5/7/13/15/16/17/20 against the H digit tiles of verify/l05_atlas/box_labels.tsv), ~$1 to build
+- L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; glyph-atlas route tried twice: A1B-FILS-L05 non-test at its class gate (no H exemplar of 0), R9-NEVF (6 Oct 2026, class 0 dropped, pos 5/13/17/20) non-test at the leave-one-out gate (0.644 vs >= 0.90; every miss votes the unlabelled '_' class), 0 tokens moved; a FAIL logged, not re-tuned; next: a person's read of the L05 glyphs in the sign sorter (tools/sign_sorter.py with a focus.tsv of pos 4/5/7/13/15/16/17/20 against the H digit tiles of verify/l05_atlas/box_labels.tsv), ~$1 to build; BUILT 6 Oct 2026 (R10-NEVF2, sorter/l05/, preflight PASS), waiting-on: a person's read in the published sorter (ROOM flag 6 Oct 2026 to the account-3 orchestrator)
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON); 251 words H, 43 M, 23 U - blocker: illegible; to every machine reader tried, measured by its own hidden H-word control: 1100-px word windows to Sonnet (A1B-FILS-UPPER, reads H neighbours wrong) and to Opus (A1B-FILS-UPPER2, 0/6 vs gate 5/6), then whole 2400-px line strips to Opus (DEF1-F3416, 5 Oct 2026, 1/6 vs gate 5/6, verify/upper_strips/): both instruments retired under rule 3's third-attempt clause; the M/U words need a person reading the hand (a palaeographer, or the owner on the strips images/f43u_*), not a fourth machine pass
@@ -360,7 +360,7 @@ Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
 - [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved; the same re-registered without class 0 (R9-NEVF, 6 Oct 2026): non-test at the leave-one-out gate (0.644 vs 0.90), 0 tokens moved; whole line strips of the upper letter to a blind Opus pass C (DEF1-F3416, 5 Oct 2026): 1/6 H controls (gate 5/6), non-test, 0 tokens moved, line-strip instrument retired
-Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the L05 sign-sorter build for a person's read (pos 4/5/7/13/15/16/17/20), ~$1
+Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: publish the built L05 sorter (R10-NEVF2, sorter/l05/; account-3 orchestrator) for a person's read; then sign_sorter_apply.py and a rule-4 re-grade of the 7 L05 tokens
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -727,3 +727,24 @@ L05 box map reproduces A1B-FILS-L05 (pos 5 -> box 18, 13 -> 26, 17 -> 29, 20 -> 
   unchanged, nothing to propagate.
 Vision: 9 own looks at box overlays (L02-L05, L10; scratch, not committed), 0 subagent calls. Requests: 0 network (local source image).
 Not found in print: nothing searched (transcription check only).
+
+## R10-NEVF2 results (account 1 for LANE LANE-RUN10-account-1, 6 Oct 2026, 09:48-09:5x UTC)
+
+Built the L05 sign sorter named in Remaining gaps, for a person's read; not published (`sorter/l05/`, README there).
+Command (pasted): `python3 tools/sign_sorter.py --signs sorter/l05/signs.tsv --labels sorter/l05/labels.tsv --pages sorter/l05/pages.json
+--title "Nevers fils L05 Sign Sorter" --out sorter/l05/sorter.html --lede "BnF fr.3416 f.35r (Gallica btv1b9058240c f43), line L05: eight
+digits two blind readers split on. The other piles are digits from settled (H) tokens on lines L02-L04 and L10, as examples of this hand."
+--focus sorter/l05/focus.tsv --focus-note "Each question names the readers' two options. Leave a tile where it is if the starting pile is
+right." --cipher-lines sorter/l05/cipher_lines.tsv` -> 9 piles (digits 1-9), 95 tiles (87 H exemplars + 8 L05 questions), 1820 KB.
+Box 28 (pos 15+16 fused) was cut in two by eye at x=2781 (one own look at an L05 overlay). Preflight (pasted, `sorter/l05/preflight.txt`):
+```
+PASS template: ok, Fix the cut present, marker 2026-10-06.1
+PASS answerable: 8 focus tiles, 9 named piles of 9, 0 unanswerable
+PASS right line: 95 tiles; 0 tile(s) off the cipher lines, 1 of 1 listed lines have tiles; shape: 0 wide (>2.5x median 62 px), 0 strip-height boxes, 0 ink outside 3-60% of 95 measured; 0 = 0.0% (limit 5%)
+PASS contact sheet: 24 tiles beside their line strips -> sorter.preflight.png (seed 20261006; eye it before publishing)
+preflight: PASS
+```
+The first preflight FAILed answerable (pos 4 and 7 offered "0", which has no pile: no H token on this leaf has a 0). Fixed by asking the
+real question in prose (one looped 8, or two signs -> Fix the cut), not by adding an empty 0 pile; a second FAIL was a header row read as a
+focus sid (removed). Contact sheet eyed once: 24 of 24 tiles are single digits on cipher lines. No grade moves (H 75, M 27);
+`decode_f35.py --check` OK. Requests: 0 network. Vision: 2 own looks, 0 subagent calls. Not found in print: nothing searched (build job).

@@ -1,0 +1,5 @@
+PASS template: ok, Fix the cut present, marker 2026-10-06.1
+PASS answerable: 8 focus tiles, 9 named piles of 9, 0 unanswerable
+PASS right line: 95 tiles; 0 tile(s) off the cipher lines, 1 of 1 listed lines have tiles; shape: 0 wide (>2.5x median 62 px), 0 strip-height boxes, 0 ink outside 3-60% of 95 measured; 0 = 0.0% (limit 5%) [list: ciphers/fr3416-nevers-fils-1589/sorter/l05/cipher_lines.tsv]
+PASS contact sheet: 24 tiles beside their line strips -> ciphers/fr3416-nevers-fils-1589/sorter/l05/sorter.preflight.png (seed 20261006; eye it before publishing)
+preflight: PASS
