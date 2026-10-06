@@ -1,0 +1,40 @@
+POOLED: runs 71, N_rec 12, consistent 8, S 0.667 vs shuffle mean 0.026 p95 0.083 -> PASS
+  (not gating) within-leaf shuffle mean 0.038 p95 0.167
+  leaf 0502: runs 4, N_rec 1, S 1.000 vs p95 1.000 -> HELD (N floor); cleared yes
+  leaf 0501: runs 4, N_rec 1, S 1.000 vs p95 1.000 -> HELD (N floor); cleared no
+  leaf 0527: runs 16, N_rec 2, S 1.000 vs p95 0.500 -> HELD (N floor); cleared no
+  leaf 0528: runs 18, N_rec 4, S 1.000 vs p95 0.250 -> PASS; cleared yes
+  leaf 0574: runs 12, N_rec 2, S 0.500 vs p95 0.500 -> HELD (N floor); cleared no
+  leaf 0529: runs 9, N_rec 2, S 1.000 vs p95 0.500 -> HELD (N floor); cleared no
+  leaf 0530: runs 4, N_rec 1, S 1.000 vs p95 1.000 -> HELD (N floor); cleared no
+  leaf 0526: runs 3, N_rec 1, S 1.000 vs p95 1.000 -> HELD (N floor); cleared no
+  leaf 0521: runs 1, N_rec 0, S 0.000 vs p95 0.000 -> HELD (N floor); cleared no
+  leaf 0518: runs 0, N_rec 0, S 0.000 vs p95 0.000 -> HELD (N floor); cleared no
+  38	1	0574	h	M	single-attested	h	C	known-answer
+  73	2	0501,0528	ilgen	CC	C	s|z	M	
+  82	1	0528	schonborn	C	single-attested	z	C	known-answer
+  98	4	0527,0528	ilgen	CCCC	C	Ilgen	C	circular
+  99	1	0527	k	M	single-attested	s|ss|sa	M	
+  107	12	0527,0528,0529,0530	schonborn	CCCCCCCCCCCC	C	Schonborn	C	circular
+  150	2	0574	s m	CC	M	le Roi de Pologne	C	known-answer
+  160	7	0521,0574	mant | manteuffel	CCCCCCM	disagree	Manteuffel	C	known-answer
+  187	1	0574	le roy de suede	C	single-attested	Roi de Suède	C	known-answer
+  266	1	0574	l electeur de hannovre	M	single-attested	Hannover|Electeur de Hanovre	M	
+  313	1	0574	hambourg	C	single-attested	Hambourg	C	known-answer
+  357	3	0502,0527,0530	ilgen	CCM	C	Ilgen	C	circular
+  539	1	0527	plus	C	single-attested			
+  544	1	0527	provinces	M	single-attested			
+  714	1	0529	un	M	single-attested	u	M	
+  754	2	0527,0528	le roy de pologne | s m	MC	disagree	le Roi de Pologne	C	circular
+  770	2	0501	manteuffel	CC	M	Manteuffel	M	circular
+  783	1	0529	le czar	C	single-attested			
+  848	1	0527	ilgen	M	single-attested			
+  864	9	0502,0527,0528,0530	le roy de prusse | roy de prusse	CCCCCCCCC	disagree	le Roi de Prusse	C	circular
+  865	1	0501	prince royal	C	single-attested	le Prince Royal	M	circular
+  867	3	0526,0529	le feld mareschal | le feldmarechal	CCC	disagree	le Feldmarechal	M	circular
+  868	1	0527	ilgen	M	single-attested			
+  877	5	0526,0527,0528	bartholdi	MMMCC	C	Bartholdi	M	circular
+  879	1	0528	hannovre	C	single-attested	Hannovre	C	circular
+  898	4	0527,0529	l empire	CCCC	M	l'Empire	M	circular
+  936	1	0502	la butte	M	single-attested	La Butte	M	circular
+  939	1	0527	le mecklenbourg	C	single-attested			

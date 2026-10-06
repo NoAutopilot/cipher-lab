@@ -1,0 +1,29 @@
+code	n_single	leaves	glosses_norm	gloss_grades	licence	key_value	key_grade	key_check
+38	1	0574	h	M	single-attested	h	C	known-answer
+73	2	0501,0528	ilgen	CC	C	s|z	M	
+82	1	0528	chonborn	C	single-attested	z	C	known-answer
+98	4	0527,0528	ilgen	CCCC	C	Ilgen	C	circular
+99	1	0527	k	M	single-attested	s|ss|sa	M	
+107	12	0527,0528,0529,0530	chonborn	CCCCCCCCCCCC	C	Schonborn	C	circular
+150	2	0574	sm	CC	M	le Roi de Pologne	C	known-answer
+160	7	0521,0574	mant | manteufel	CCCCCCM	disagree	Manteuffel	C	known-answer
+187	1	0574	roidesuede	C	single-attested	Roi de Suède	C	known-answer
+266	1	0574	electeurdehanovre	M	single-attested	Hannover|Electeur de Hanovre	M	
+313	1	0574	hambourg	C	single-attested	Hambourg	C	known-answer
+357	3	0502,0527,0530	ilgen	CCM	C	Ilgen	C	circular
+539	1	0527	plus	C	single-attested			
+544	1	0527	provinces	M	single-attested			
+714	1	0529	un	M	single-attested	u	M	
+754	2	0527,0528	roidepologne | sm	MC	disagree	le Roi de Pologne	C	circular
+770	2	0501	manteufel	CC	M	Manteuffel	M	circular
+783	1	0529	czar	C	single-attested			
+848	1	0527	ilgen	M	single-attested			
+864	9	0502,0527,0528,0530	roidepruse	CCCCCCCCC	C	le Roi de Prusse	C	circular
+865	1	0501	princeroial	C	single-attested	le Prince Royal	M	circular
+867	3	0526,0529	feldmarechal	CCC	M	le Feldmarechal	M	circular
+868	1	0527	ilgen	M	single-attested			
+877	5	0526,0527,0528	bartholdi	MMMCC	C	Bartholdi	M	circular
+879	1	0528	hanovre	C	single-attested	Hannovre	C	circular
+898	4	0527,0529	empire	CCCC	M	l'Empire	M	circular
+936	1	0502	bute	M	single-attested	La Butte	M	circular
+939	1	0527	mecklenbourg	C	single-attested			

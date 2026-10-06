@@ -30,7 +30,7 @@ _0518sp), the licensing run. Compared beside R10-MANT521's 10-leaf result (SP: 0
 Known-answer (reported first, not a gate): every single-code gloss on this leaf whose code has a C value in key.tsv is scored
 agree / compatible / disagree.
 
-## Addendum (6 Oct 2026, 10:50 UTC by date -u), after reconciliation, before any alignment or score
+## Addendum (6 Oct 2026, 10:47 UTC by date -u), after reconciliation, before any alignment or score
 Crops (pasted): `tools/iiif_lines.py --image 0518.jpg --out crops --region 870,1100,1260,1650 --prefix L --distance 40 --lines-per-crop 3 --debug`
 found 21 of ~30 left-page lines in 7 bands; as on 0521/0526 the bands cut through glosses, so PIL overlapping full-width strips were used:
 left (870,1100+220k,2130,min(+300,2760)) k=0..7 (S01-S08), right (2130,1100+220k,3350,+300) k=0..1 (S09-S10). Passes got strip paths only
