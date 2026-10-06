@@ -5167,6 +5167,33 @@ Open for the next i-r lane: (1) rayburn sorter publish (account 3) then test 3; 
 verifier's say, then the 1598 key in 3.01.14 inv. 2016 (thumbnails first) ~2; (5) kaliningrad: a judge or decoder change, not more anneals on
 this design. Process note: test_homophonic_alphabet.py fixture (a) and system_map_check (two SESSION-SWEEP tsvs) fail on main, pre-existing.
 
+## LANE LANE-RUN10-account-1 handoff (session_01CaidpjF7GC2DXjAnB1T7Dw, account 1), 6 October 2026 (closed 11:1x UTC: a-h backlog worked in five waves, lane about 53.5 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run10-jobs.md; folders a-h. Gate 0a clear (SESSION-SWEEP-account-1
+done 22:49 5 Oct, 0 exclusions). VERIFY-BACKLOG: only fr16142 register-lag rows and Birago (off limits). 21 Opus workers (17 D, 4 D-), workers 48.00
++ orchestrator ~5.5 (get_session). five_hour `allowed` throughout. R10-LIN (antt-linhares) withdrawn before spawn: check-solved verdict still
+`blocked (pending L10: Textos Politicos 1993)`.
+- decode-2678: verifier AUDIT 1 = N3, key published (Tomokiyo Colbert-Gravel 1672), D2 about 73% (H 11/15); SO row + 3 JSTOR rows queued; Haug 2015
+  unread. Mel. Colbert 126-130bis sommaires (1,456 entries) hold no other Ratisbon cipher letter; Gravel/Frischmann 1665 letters there are clear.
+- huntington-blathwayt: context-fill attempt 2 PASS on fresh seeds (PREREG-R10 022e9ca7e; precision 0.66 vs shuffled 0.23), 4 of 18 unkeyed groups
+  filled (C 130 M 22 S 3 U 17). TNA Discovery: no decipherment of BLA191(a); lead SP 54/19/98B (Seville 20 Oct 1729, cipher with decipher, not
+  digitised, owner-side copy order).
+- eckert-1864: O9-W..AG image-checked (no code-word change, H 286; Wide -> Wise). eckert-1862: split2 cascade regenerated (ec18/s2/), PREREG
+  65eaa5ef0 gates PASS (FLIP, wrongtel 0/5/12), confpair untested (power 0.345); adopt-s2 ADOPT, legacy untouched.
+- fr3151-seure: Babou 1558 decipherment illegible at the scan (no key); fr. 3138 no. 24 Morvilliers 1549 fo. 66r has a full legible marginal
+  decipherment, no. 9 Tournon 1556 fo. 22r a decipher slip (both M). Key rebuild needs a ~$6 transcription.
+- baluze103: 9 shape split NON-TEST twice (control power: N=3, then N=6 all s); fr17 9 = s FAIL (PREREG e657ca5b3); f.50 sorter rebuilt with 32
+  shape-checked 9 tiles in focus, preflight PASS, flagged to account 3 to republish over Wn9GbXBcNCxcbMZbU2uqCZ.
+- colbert26: anchor_split re-run with 23 = n PASS (S 99 vs p95 88); leads 15 = e (underpowered twice) and 32 = u (FAIL 5/7 vs ctrl 4.48 on c51+c30);
+  key_f23 unchanged.
+- decode-1162: clear text both pages, 42 lines with crop refs; second blind pass settled 13 of 34 doubts, 29 doubtful left; DOC 3593 omits p.1 l.5.
+- fr3416-nevers-fils L05 sorter and florence-dieci c127b2 sorter (tools/glyph_atlas.py segment --median-h added with test): both preflight PASS,
+  flagged to account 3 to publish. fr16142: c262 gloss L14-L21 read once (M), not merged (cipher rows beside them untranscribed).
+Open for the next a-h lane: (1) fr3151-seure Morvilliers 1549 key rebuild from fo. 66r (~$6, two passes + interlinear_align) then R1/R2 test with
+power control; (2) eckert-1862 received-ledger pass mssEC 04-14 (~$2); (3) decode-2678 Haug 2015 / JSTOR rows answered, then counting; (4) decode-1162
+focus sheet for the 29 doubts (~$0.5); (5) fr16142 cipher rows beside gloss L14-L21; (6) huntington SP 54/19/98B copy order (owner-side, ASKS);
+(7) colbert26 needs a further glossed sibling leaf for 15 = e or new material.
+
 ## LANE LANE-RUN9-account-1 handoff (session_014wVbQ4hZf7B7kGezriLmXz, account 1), 6 October 2026 (closed 07:1x UTC: a-h backlog worked in four waves, lane about 54.2 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run9-jobs.md; folders a-h. Gate 0a clear (SESSION-SWEEP-account-1
