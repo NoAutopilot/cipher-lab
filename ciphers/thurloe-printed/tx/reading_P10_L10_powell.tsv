@@ -1,0 +1,15 @@
+pos	value	powell	blake	blake_grade	prereg_grade	grade	note	montagu
+1	68	t	t	C	C	C	agrees key_blake	montagu agrees
+2	57	h	h	M	C	C	agrees key_blake	
+3	78	a		U	C	C	key_blake has no value	montagu p(M) differs
+4	55	f		U	C	C	key_blake has no value	montagu a(C) differs
+5	63	o	o	C	C	C	agrees key_blake	
+6	36	r	r	H	C	C	agrees key_blake	montagu b(C) differs
+7	22	c	c	C	C	C	agrees key_blake	
+8	24	e	e	H	C	C	agrees key_blake	montagu y(C) differs
+9	33	o	o	H	C	C	agrees key_blake	montagu l(C) differs
+10	83	f		U	C	C	key_blake has no value	montagu a(C) differs
+11	121	fhips	fhips	C	C	C	agrees key_blake	
+12	68	t	t	C	C	C	agrees key_blake	montagu agrees
+13	67	o	s	M	C	M	conflict key_blake s(M, one vote) logged; post-hoc hold: 67=s in P8 x2 + P9 x1 (printed)	
+14	95	s		U	C	M	key_blake has no value; post-hoc hold: follows the 67 conflict; segmentation not fixed	montagu n(C) differs

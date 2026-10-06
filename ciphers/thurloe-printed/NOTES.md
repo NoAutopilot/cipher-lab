@@ -2818,3 +2818,46 @@ Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.t
 - [x] image-check: p.188 lines 50-61 and all five sibling cipher pages read from the page image (s.18; A3V2-THURBT, N8-THUR)
 - [x] retry: one-vote boundary test v3-full PASSed its pre-registered gate (N8-THUR, 4 Oct 2026)
 Verdict: keep going: 1 internal gaps; cheapest next: align P10 p.620 L10's 14 groups against Powell 1937's printed sentence (be-api snippets in AUDIT.md) to grade them C, ~$1
+
+## R7-THURP10 -- P10 p.620 L10's 14 unglossed groups aligned to Powell 1937 (6 Oct 2026, 01:18-01:2x UTC by date -u, account 2, for LANE LANE-RUN7-account-2)
+
+Rule pre-registered and pushed first (`PREREG-R7-THURP10.md`, commit 06f758dc), then `tx/align_p10_l10_powell.py`
+(`--check` exits 0), output `tx/reading_P10_L10_powell.tsv`. Input: the Powell, *Letters of Robert Blake* (NRS 76,
+1937) English already quoted in AUDIT.md "P10 L10 groups" s.4 ("to set forth a force of ships to secure the Plate
+fleet"); it covers all 14 groups, so no be-api query was made. Requests: 0.
+
+- Count gate: Powell's span between Birch's own glosses "set for" and "ecure the" is "th a force of ships to s" =
+  14 units with code 121 = "fhips" as one unit; 14 groups. PASS.
+- Agreement gate with matched control: of the 8 gap positions whose code has an H/C value in key_blake_extended.tsv
+  (independent of Powell), 8/8 agree with Powell's letter; shuffled-Powell control (1000 seeds) mean 1.01, p95 3. PASS.
+- Grades of the 14 groups: prereg rule C14; **final C12 M2** after a post-hoc hold (stricter than the prereg, found
+  after the scored run): code 67 (pos 13), which Powell's alignment reads "o", reads "s" in three printed places --
+  P9 p.612 L5 "gives" (26 28 39 24 67) and P8 "of Cape Maries" and "...use" (P8_pairs.tsv lines 11 and 22) -- so
+  Powell's "to s" over 68 67 95 is not fixed letter by letter (the cipher may spell t-s-? with the o dropped); positions
+  13 (67) and 14 (95, attested nowhere else in P8-P10) are held M. Rule-4 data conflict for code 67, not settled:
+  "s" (P9 p.612 interlinear, P8 interlinear, Blake to Thurloe/the Protector, 1655) vs "o" (Powell 1937's English for
+  P10 p.620, Blake to the Protector, 6 July 1655).
+- Values supplied by Powell where key_blake had none (C): 78=a, 55=f, 83=f, (95=s held M). key_montagu_extended.tsv
+  (different correspondent, comparison only) differs at 7 of 14 positions; it changes no grade.
+- Glossed tail (out of scope, listed): pos 16 code 22, Birch prints "t", Powell "c" ("secure"), key_blake c (C).
+- Key files are not edited (key_blake_extended.tsv is generated from the printed interlinear pairs); the reading of
+  line 10 is now t h a f o r c e o f [ships] t [67] [95] + Birch's "ecure the" -- AUDIT.md's class N0 (Powell 1937,
+  key `published`) is unchanged by this; the grade change is flagged in ROOM for a verifier.
+
+## Remaining gaps (R7-THURP10, 6 Oct 2026; supersedes the D2B-THURP3 list above)
+Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.txt, N8-THUR2); P3 postscript H9 C15 M33 U2 of 59 (reading_P3.txt); P10 p.620 L10 14 unglossed groups C12 M2 against Powell 1937 (tx/reading_P10_L10_powell.tsv); P2-P28's other items are printed decipherments (N0, AUDIT.md)
+- P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
+- P4's remaining 3 M tokens are code 1 'i' (x3, one printed vote) - blocker: no-key-material; not in Tomokiyo's table (GAPS148, N8-THUR2) and no other sibling occurrence on disk
+- A contemporary check of P4 against the manuscript (MS. Rawl. A. 24/1 p.76, 10 pp., partly cipher, undeciphered per the Bodleian reply of 5 Oct 2026) - blocker: waiting-on the Bodleian Imaging Services quote for p.76 + p.73 (Bodleian reply 5 Oct 2026; ASKS row 139)
+- P3 three-line postscript, 33 M + 2 U tokens - blocker: no-key-material; the only same-system witness is P3's own body (already in key_butler.tsv); cross-key tests against key_fauconberg.tsv and key_stamford.tsv both negative (s.22 Job 3; D2B-THURP3 gate FAIL, 0/3 H/C codes agree)
+- P10 p.620 L10 positions 13-14 (codes 67, 95) M - blocker: no-key-material; 67 reads s in three printed places vs Powell's o, 95 occurs nowhere else on disk; Powell's own page is in a lending-only IA item whose page images are obfuscated for scripts (CLAUDE.md IA borrow row), and the manuscript is not imaged
+
+## Escalation (R7-THURP10, 6 Oct 2026)
+- [x] siblings: P5+P6 and P7 (Stamford) printed decipherments aligned, key_stamford.tsv (s.16; A3V2-THUR275); P3 postscript cross-checked against them at all grades, gate FAIL (D2B-THURP3); P8/P9 Blake siblings checked for code 67 (R7-THURP10)
+- [x] clear-pages: P4's clear text and endorsement used as context throughout (s.16, s.21)
+- [x] known-keys: Tomokiyo's stamford.jpg compared (GAPS148, N8-THUR2); key_fauconberg.tsv and key_stamford.tsv against the P3 postscript (s.22 Job 3, D2B-THURP3)
+- [x] print: Birch, CSPD Interregnum, BHO, Google Books and IA phrase searches, Clarendon Calendar III/IV (s.14, s.19, CHECK-THURLOE-P4); Powell 1937 for P10 L10, aligned under a pre-registered gate (R7-THURP10)
+- [x] key-rebuild: rebuilt from the printed sibling decipherments (pool_1654/align_stamford.py, A3V2-THUR275)
+- [x] image-check: p.188 lines 50-61 and all five sibling cipher pages read from the page image (s.18; A3V2-THURBT, N8-THUR)
+- [x] retry: one-vote boundary test v3-full PASSed its pre-registered gate (N8-THUR, 4 Oct 2026)
+Verdict: parked: every remaining gap is no-key-material or waiting-on ASKS row 139 (Bodleian Imaging Services quote)
