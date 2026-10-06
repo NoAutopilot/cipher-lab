@@ -424,10 +424,44 @@ is a verifier's job.
 Requests this job: cryptiana.web.fc2.com 1 (key image, HTTP 200); gallica.bnf.fr 2 (info.json of f356 and one native region
 crop, >= 2 s apart, HTTP 200). No subagent calls.
 
-## Remaining gaps (R9-DEC2678C, 6 Oct 2026)
+## Sommaire sweep of Mél. Colbert 126-130 for Ratisbon cipher letters (R10-DEC2678S, 6 Oct 2026)
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-run10-jobs.md` "R10-DEC2678S" (the key-rebuild step below). Locator job, no
+decoding; no cipher token of R2678 read (0 H, 0 C, 0 S, 0 M, 0 I). Every volume's BnF sommaire (archivesetmanuscrits) was fetched
+whole and grepped for Ratisbon/Gravel/chiffre and for every German or Rhine place and office (Allemagne, Francfort, Mayence,
+Vienne, Cologne, électeur, Empire, Munich, Bavière, palatin, Brandebourg, Saxe, Hambourg, Strasbourg, Metz). Snapshots in
+`sources/bnf-aem/` (MANIFEST rows of this date). The sommaires never say whether a letter is enciphered, so every Ratisbon hit,
+and the one entry naming a person from R2678's clear text, was then looked at on Gallica at 1000 px.
+
+| Volume (sommaire ark; Gallica) | Entries | Ratisbon / Gravel hits | Look at the leaf |
+|---|---|---|---|
+| 126, Dec 1664 (cc954291) | 177 | none (German posts: Grémonville at Vienna f.151, 434; Du Fresne at Mainz f.368-371) | -- |
+| 127-127bis, Jan-Feb 1665 (cc954302) | 330 | f.349 (R2678 itself); 127bis f.968, 1078 R. de Gravel | already seen in clear (R9-DEC2678) |
+| 128-128bis, Mar-Apr 1665 (cc954319) | 343 | none (Graveline only) | -- |
+| 129-129bis, May 1665 (cc95432j; 129 = btv1b100355436) | 290 | none; but **f.329 "Frischmann, résident pour le service du Roi à Strasbourg"**, the "Mr Frichmann" named in clear in R2678's cipher passage | canvas 336 right = f.329r ("De Strasbourg ce 1er May 1665"), canvas 337 = f.329v-330r, signed "Frischmann, Résident pour le service du Roy à Strasbourg". **In clear**, no figure groups. Saved `images/mc129_c337_f329v_frischmann_1may1665.jpg` |
+| 130, June 1665 (cc954341; btv1b100355453) | 316 (130+130bis) | **f.149 R. de Gravel, à Ratisbonne** | canvas 154 right = f.149r, canvas 155 = f.149v-150r, canvas 156 left = docket "M. de Gravel ... juin 1665". Dated "Ratisbonne le 11 Juin 1665", signed Gravel. **In clear**: two bills of exchange (2,000 and 4,000 "Reisdalles"), his appointments through a banker in the rue Quincampoix, the "Estat de la Recepte et de la dépense de l'argent de la Caisse de l'Alliance", and tin-plate workers ("Martelleurs et Blanchisseurs de fer blanc") from Bohemia. No figure groups. Saved `images/mc130_c155_f149v-150r_gravel_11jun1665.jpg` |
+| 130bis, July 1665 (btv1b100309307, ff.515-1097) | (above) | **f.578 R. de Gravel, à Ratisbonne** | canvas 69 right = f.578r (canvas 72 right = f.581): "Ratisbonne le 2e Juillet 1665", signed Gravel, on finding two "Marteleurs" and two "blanchisseurs". **In clear**, one page; f.578v blank (canvas 70). Saved `images/mc130bis_c69_f578r_gravel_2jul1665.jpg` |
+
+Finding: Mél. Colbert 126-130bis hold **no cipher letter from Ratisbon**. Gravel wrote to Colbert at least five times between
+January and July 1665 (127 f.349, 127bis f.968 and f.1078, 130 f.149, 130bis f.578); only R2678 carries cipher, and only in the
+pension passage. The sweep gives no second text for the 1665 cells `22:` and `0`. Two context links worth carrying forward, not
+evidence about the cipher: the June letter's "Caisse de l'Alliance" accounts (that R2678's pension sums come from the same
+Alliance fund is an inference, grade I), and Frischmann at Strasbourg writing to Colbert in clear on 1 May 1665.
+
+Next (not done here): (1) the same sweep one step wider, Mél. Colbert 120-125 (1664) and 131-133 (Aug-Dec 1665): sommaire arks
+cc95423k (120-120bis), cc95427j (124) and cc954358 (131-131bis) are already recorded in
+`sources/solver-diffs/2026-09-24-lane-g2-servien.tsv`; ~$3; (2) AE CP Allemagne 194 (Jan-May 1665), owner-side reproduction
+request, unchanged.
+
+Requests this job: archivesetmanuscrits.bnf.fr 19 (home 1; free-text search POSTs 5, all answered "Requête incorrecte"; ark
+records 8, of which the first three (including the known-good control cc577658) answered a "page n'existe pas" stub and, after one 20 s pause, every later one worked;
+ajaxGetCompDisplay 4; one tools/browser_fetch.js render, also the stub), >= 2 s apart; gallica.bnf.fr 12 (manifests 3 via
+tools/gallica_folio.py, canvas images at 1000 px 9), >= 2 s apart, all HTTP 200. No subagent calls.
+
+## Remaining gaps (R9-DEC2678C, 6 Oct 2026; updated R10-DEC2678S)
 Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - `29`, a single-group payee name (15,000 Rd) - blocker: open-codes; a 1665 nomenclature code outside the 1672 table, which no context on f.349 narrows; next: the 1665 nomenclature from AE CP Allemagne 194, an owner-side reproduction request
-- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); next: find another 1664-66 Gravel or Colbert letter in the same design, where these marks recur, by a sommaire sweep of Mél. Colbert 126-130 for cipher letters from Ratisbon, ~$3
+- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); Mél. Colbert 126-130bis swept 6 Oct 2026 (R10-DEC2678S), Gravel's four other 1665 letters there all in clear; next: the same sommaire sweep of Mél. Colbert 120-125 and 131-133, ~$3
 - novelty above N3 (verifier R10-DEC2678V gave N3, 6 Oct 2026, AUDIT.md) - blocker: waiting-on JSTOR-QUEUE.tsv rows 301-303 and the SO-R2678 second-opinion answer; Haug 2015, the study closest to this pension list, is not readable from the cloud
 
 ## Escalation (R9-DEC2678C, 6 Oct 2026)
@@ -435,7 +469,7 @@ Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - [x] clear-pages: f.349r-v clear text read (R8-G2678, R9-DEC2678); it gives the context for P1-P3
 - [x] known-keys: Tomokiyo's 1672 Colbert-Gravel key passes the pre-registered gate (this section)
 - [x] print: verifier R10-DEC2678V ran print_check and a logged search, 6 Oct 2026 (AUDIT.md AUDIT 1: N3, key published, D2 about 73%); Haug 2015 not readable from the cloud, JSTOR rows queued
-- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; planned sweep of Mél. Colbert 126-130 for Ratisbon cipher letters
+- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; Mél. Colbert 126-130bis swept (R10-DEC2678S, 6 Oct 2026), no Ratisbon cipher letter; next: sweep Mél. Colbert 120-125 and 131-133
 - [x] image-check: native crop re-read of all three passages (this section)
 - [n/a] retry: first attempt passed its gate, nothing to retry
-Verdict: keep going: 2 internal gaps; cheapest next: sommaire sweep of Mél. Colbert 126-130 for Ratisbon cipher letters in the same design, ~$3 (verifier step done 6 Oct 2026, AUDIT.md)
+Verdict: keep going: 2 internal gaps; cheapest next: sommaire sweep of Mél. Colbert 120-125 and 131-133 for Ratisbon cipher letters in the same design, ~$3 (126-130bis swept 6 Oct 2026, none; verifier step done 6 Oct 2026, AUDIT.md)
