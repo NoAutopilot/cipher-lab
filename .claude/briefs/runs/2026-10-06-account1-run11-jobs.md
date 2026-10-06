@@ -145,3 +145,18 @@ whether the print shows cipher numbers or spaced-type deciphered passages, and a
 states the pair, as letter 929's footnote did). No key change without the pair stated in print. Update NOTES next-step section + Verdict.
 
 Wave 4 sessions (15:12 UTC): R11A-AVSV session_01Fnch9NWA9fjZi8vmp6UEnb; R11A-HEIN2 session_012dQCx28Jsw3KESStRFEJ6K.
+
+## Wave 5 (spawned 15:3x UTC). Gallica still down at 15:33 (empty reply).
+
+### R11A-AVS9C -- august-van-saksen-1561-64: rule-7 fix of settle_53.py, then the sign-9 control. Cap 3.5, box 60 min.
+(1) R11A-AVSV found `settle_53.py --check` exits 1 (a p1-only builder against the p1+p2 file R11A-AVS53 wrote). Make it regenerate the
+committed file from the native passes (or retire it in favour of settle_53n.py, saying so in NOTES and in its header) so every committed
+reading's script --check exits 0 (rule 7). No reading change. (2) The Verdict's cheapest next: a control for sign 9 = f that has count-2
+signs -- a seed-varied make_control window (or an exact-profile control from a longer era-matched German text), PREREG before scoring, the
+same gates R11A-AVSK registered; sign 9 leaves M only if the control passes its low-count gate. A grade change -> NOTES + ROOM verifier flag.
+decode --check 0; gaps_check.
+
+### R11A-HEIN3 -- heinsius-vanhaersolte-1703, Deel 3 H.A. 918 letters (R11A-HEIN2's listed 103 pages). Cap 3, box 50 min.
+Same method and rules as R11A-HEIN2 (hits_HA918_r11a.tsv; >= 2 s apart, descriptive UA, <= 110 requests): for each Deel 3 page, cipher
+numbers / spaced deciphered passages / a printed number-to-word pair (C only when the edition states it). Check against the folder's target
+letter 341 codes. Update NOTES next step + Verdict.
