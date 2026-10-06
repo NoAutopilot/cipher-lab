@@ -347,3 +347,43 @@ C-grade crib for R1469/R1470 (and a plaintext). Inv. 348's last Van Dedem / firs
 (~USD 2). inv. 204A (274 scans, 1795-1807) is for KEY-DESIGN, not this letter.
 
 **Requests:** www.nationaalarchief.nl 4 (EAD 2.01.08; item pages 204A, 348, 92), all HTTP 200, >= 2 s apart; no other host.
+
+## D2B-ROELL2 (6 Oct 2026): the 9 Feb 1809 window in NA 2.01.08 inv. 92
+
+Worker D2B-ROELL2 (account 2, for LANE DEFAULT-account-2-20261005-2217), brief
+`.claude/briefs/runs/2026-10-05-account2-default-2217-jobs.md`, 00:14-00:20 UTC by `date -u`. Page images read by eye
+(IIIF 700-900 px views plus three header crops), no subagent, no decoding. Status unchanged: `open`. Grade counts: H 0, C 0,
+S 0, M 0, I 0 (no reading). Per-scan log: `na20108/inv92_scans.tsv` (scan, folio, date as written, addressee).
+
+**Layout of inv. 92.** One bound volume of minutes in strict date order, ordinary and secret together (no separate secret
+block was seen at the February/March boundary or at the end): January to scan ~174, a "Februarij 1809" cover at scan 175,
+February to scan ~330 (scan 318 = 27 Feb, fol. 256), March from about scan 331 (334 = 2 March, fol. 269) to scan 521
+(31 March, fol. 409). Months are written in Dutch as Sprokkelmaand/Lentemaand as well as Februarij/Maart (scan 350 is
+"6en van Lentemaand", i.e. 6 March, not February -- a first misreading corrected by the 9 March and 15 March headers).
+
+**The 9 Feb 1809 window, read in full.** 8 Feb ends at scan 208 (fol. 165, to Larochefoucauld); 10 Feb begins at scan 224
+(fol. 171, to the King). Every scan between, 209-223, was viewed. The 9 Feb minutes are: to the King (fol. 166, consul at
+Rouen); the Minister van Oorlog (fol. 167); Marshal Verhuell in Paris, No 13 and No 14 (fol. 168-169, Dutch); a French
+minute to a member of the Dutch embassy in Paris (fol. 170); and the Staatssecretaris (fol. 170bis) with an 8-page
+enclosure of corrections to the Koninklijke Almanak for 1809 (scans 216-223). **No minute to Van Dedem, Testa or
+Constantinople is filed under 9 Feb 1809.** None of the 9 Feb minutes viewed carries a note of encipherment (no
+"in cijfers"/"en chiffre" marginal seen at this resolution; the marginal notes are registration marks of the "(I.S. 9 Feb)"
+kind).
+
+**One context fact (read, not graded).** The almanac enclosure, scan 223, "Turkijen pag. 85": "De Baron van Dedem tot de
+Gelder ... valt weg"; "De Heer [Testa], secretaris van legatie en charge d'affaires" -- on 9 Feb 1809 the ministry was
+already listing Testa, not Van Dedem, as the post's head for the 1809 almanac. This fits inv. 348's change of series
+(Van Dedem to 7 Feb 1809, Testa from 24 Feb 1809) and makes an outgoing ministry letter to Van Dedem dated 9 Feb less
+likely than a letter *from* the Constantinople legation (Van Dedem's last or Testa's first), which would sit in inv. 348 or
+in the legation archive 1.02.20, not here. Inference, not established.
+
+**Not found / not searched.** No 9 Feb minute to Constantinople in inv. 92 (scans 209-223 complete). Not searched: the other
+February dates (only 200, 208, 230, 245, 318 sampled), so a minute to Constantinople dated otherwise (e.g. a covering
+letter that the cipher letter answers or encloses) is not excluded; January and March were bracketed, not read.
+
+**Next step (priced, one line):** inv. 348's scans around the break (Van Dedem's last despatches to 7 Feb, Testa's first
+from 24 Feb) for a clear or deciphered copy of a 9 Feb letter from Constantinople (~USD 2-3, bisect by date as here,
+<= 30 requests); then a page-by-page read of February in inv. 92 for any minute to Constantinople (~scans 176-330, ~USD 4).
+
+**Requests:** service.archief.nl 35 (32 full-opening views at 700-900 px, 3 header crops), all HTTP 200, >= 2 s apart; no
+other host. Subagent calls: 0.
