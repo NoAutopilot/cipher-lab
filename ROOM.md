@@ -9503,3 +9503,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 10:01 | R10-SIENA4777 | claim: siena-concistoro-2308 no. 15 vs R4777 nomenclator shape concordance, cap 3, box end 10:50 UTC, for LANE LANE-RUN10-account-4
 2026-10-06 10:01 | R10-MANTSCR worker | claim for LANE LANE-RUN10-account-4: sachsstaatsarchiv-manteuffel-1712, 867 normalisation rule (PREREG first) + disk-only eye screen of 14 N9-MANT2 frames for 898/939; cap 3, box end 10:50 UTC
 2026-10-06 10:01 | R10-WVHMIN worker | claim: willem-van-hessen-1567 Marburg minuut (WVO 01127.pdf pp.2-4) clear-text transcription as crib; cap 6, box to 11:21 UTC (80% 11:05); for LANE LANE-RUN10-account-4
+2026-10-06 10:01 | R10-SRCH2 worker | claim for LANE LANE-RUN10-account-4: s-z catalogue/print lookups (taurello, salvago, vanspaen, sp8-ehrenstein, sp78-france), cap 2.5, box 10:02-10:52 UTC (80% 10:42)
