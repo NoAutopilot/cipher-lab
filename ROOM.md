@@ -9386,3 +9386,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 07:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 07:39: spawned 0, queued left 0 (autofill: default lane < 12 h)
 2026-10-06 07:40 | R10-ROELL10 worker | claim: roell-vandedem-1809, NA inv. 990 (Van Dedem to Testa) early Feb 1809, cap 2.5, box end 08:20 UTC, for LANE LANE-RUN10-account-2
 2026-10-06 07:40 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 07:34 UTC (handled 07:40): spawned 0; FER126-ALIGN3 (private repo) claimed and running in this session; queued left 0; standby: account-3 orchestrator last commit 07:03 UTC, no takeover
+2026-10-06 07:40 | R10-SUR693 worker | claim na-suriname-map-1781 gap 6: inv. 373 scan 0693 cipher + interlinear pair, cap 4, box ends 08:40 UTC (80% 08:28), for LANE LANE-RUN10-account-2
