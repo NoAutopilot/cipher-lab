@@ -1,0 +1,27 @@
+crop	kind	text	conf	remarks
+L01	gloss	ontrent den Staat der Fortificatien	0.5	approx
+L01	cipher	k [ij] r o 3 l [lambda] | r r [ij] | b r [delta] x [lambda] | w a o | / [pi] o [lambda] 8 w m p [delta] p r / 3 [ij]	0.4	tokens guessed
+L02	gloss	Vermitteren de omstandigheeden wiet	0.5	approx
+L02	cipher	/ 3 o [ij] m r r a o d l | w a [hash] u b r : l r f a 3 3 7 w e h [ij] m 3 r	0.4	tokens guessed
+L03	gloss	nu per deeze gelegendheid in eenige	0.5	approx
+L03	cipher	[ij] t | 9 3 0 | r a d n 7 | 9 3 9 r a 9 a [ij] s f e m r | f [ij] | 3 3 l 9 d	0.4	tokens guessed
+L04	gloss	detailed in te laaten; alleen kan Dh	0.5	approx
+L04	cipher	r 3 r [delta] f e g 7 | m [ij] r 3 c p [delta] x r e l ; | [delta] c g a d h / b [delta] [ij] f b	0.4	tokens guessed
+L05	gloss	uwee de Groos Acht Badne grenselhengs	0.5	approx
+L05	cipher	i 4 3 9 3 7 3 9 3 9 0 [hash] [pi] [lambda] [delta] x 3 [lambda] [d-loop] [delta] x o e | 5 3 0 [psi] a e b 7 o a l	0.4	tokens guessed
+L06	gloss	dat niets versuymd is, om dezelve in	0.5	approx
+L06	cipher	w x r 7 | l f a x 6 | 5 7 0 6 e m y s | f 6 , k [ij] | r 3 n 7 9 5 e f l	0.4	tokens guessed
+L07	gloss	Jordaanig Staat te brengen dat den Vyand	0.5	approx
+L07	cipher	[psi] k k r [delta] x l f 9 3 6 r p [delta] [pi] [lambda] 3 d 0 7 l g a h | r p r r 3 [ij] 5 l [delta] l w	0.4	tokens guessed
+L08	gloss	er Sig niet Gemakkelijk meester van sal maaken,	0.5	approx
+L08	cipher	' 3 0 6 f 9 l m e r g 7 [ij] x b b 3 c t b m a e f 3 0 5 [delta] h 6 x c [ij] [delta] x b 3 l	0.4	tokens guessed
+L09	gloss	Dat men nog dagelijx Beezig is dezelve te	0.5	approx
+L09	cipher	r p r y 7 y l [?:l with caret] 9 r x [delta] 9 3 9 l [?:t-like] d 7 7 n m 9 8 6 [?:backward-3-like] 8 3 n 7 c e d [lambda] a	0.4	tokens guessed
+M01	gloss	verbeeteren, endat niets versuimd word,	0.5	approx
+M01	cipher	s t d a r 3 o e h / 3 [ij] r 3 [?:flourish] h f d r p e a o [psi] 5 8 [ij] w 4 [hash] o 8 ,	0.4	tokens guessed
+M02	gloss	wat tyd en omstandigheeden toelaa,	0.5	approx
+M02	cipher	4 x r x t r 3 [ij] k [ij] b r [delta] l w m g [?:d-loop] 3 7 3 w a h / r [pi] 3 g x p	0.4	tokens guessed
+M03	gloss	ren, om alles op een respectablen voes	0.5	approx
+M03	cipher	r a l , [hash] [ij] [delta] c c [d-loop] 6 k g a d [ij] o 3 6 [?:S-like] a p r x p 6 c e h 5 k 3	0.4	tokens guessed
+M04	gloss	te Stellen.	0.5	approx
+M04	cipher	r 7 [psi] [lambda] 3 g c e [ij]	0.4	tokens guessed

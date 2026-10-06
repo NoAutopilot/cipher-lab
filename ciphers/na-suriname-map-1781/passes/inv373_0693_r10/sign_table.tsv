@@ -1,0 +1,39 @@
+code	nieuw_value	nieuw_grade	keytsv_value	letters_seen	agree	conflict	verdict
+0	r	H		r:3	3	0	agree
+3	e	H		e:18	18	0	agree
+4	w	H	w	w:2	2	0	agree
+5	v	H	v	v:6	6	0	agree
+6	s	H	s	s:12	12	0	agree
+7	e	H	e	e:9	9	0	agree
+8	i	H		i:2	2	0	agree
+9	g	H		g:5	5	0	agree
+S	p	M		p:1	1	0	agree
+[delta]	a	H	a	a:9	9	0	agree
+[ezh-dot]	e	H	e	e:6	6	0	agree
+[h-sec]				h:2	0	0	unkeyed
+[hash]	o	H	o	o:3	3	0	agree
+[pi]	o	H		o:2 t:1	2	1	mixed
+[psi]	s	H		s:3	3	0	agree
+[x-dot]	a	M		a:8	8	0	agree
+[y-fam]				m:12 n:9	0	0	unkeyed
+a	e	H		e:11	11	0	agree
+b	k|i	M		k:4	4	0	agree
+c	l	H	l	l:5	5	0	agree
+d	b	H		b:2	2	0	agree
+e	e	H		e:5 v:2	5	2	mixed
+f	i	H		i:8	8	0	agree
+g	g|l	M		l:3 g:2	5	0	agree
+h	n	H		n:5	5	0	agree
+k	o	H		o:6	6	0	agree
+l	n	H		n:12	12	0	agree
+m	i	H		i:7	7	0	agree
+n				z:3	0	0	unkeyed
+o	r	H		r:8	8	0	agree
+p	a	H		a:4	4	0	agree
+q	p	H		p:2	2	0	agree
+r	t	H		t:17 e:1	17	1	mixed
+t	y	M		i:3	3	0	agree
+v	d	H		d:10	10	0	agree
+w	d	H		d:10	10	0	agree
+x	q	H		a:1 t:1	0	2	conflict
+λ	t	H	t	t:7	7	0	agree

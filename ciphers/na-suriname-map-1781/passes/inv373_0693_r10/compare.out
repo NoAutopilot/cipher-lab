@@ -1,0 +1,4 @@
+all aligned: positions 252, keyed in nieuw 226, agree 0.973; control mean 0.101 p99 0.150 -> SAME SYSTEM
+  vs key.tsv (map C key): keyed 59, agree 1.000
+rv=1 rows dropped: positions 196, keyed in nieuw 176, agree 0.977; control mean 0.100 p99 0.148 -> SAME SYSTEM
+  vs key.tsv (map C key): keyed 49, agree 1.000

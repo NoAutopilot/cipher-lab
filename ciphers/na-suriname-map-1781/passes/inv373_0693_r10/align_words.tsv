@@ -1,0 +1,73 @@
+# R10-SUR693, 6 Oct 2026: reconciled word-level alignment of NA 1.05.03 inv. 373 scans 0692 (right page, 9 cipher lines L01-L09)
+# and 0693 (left page, 4 lines M01-M04): letter of Governor B. Texier, Paramaribo 29 Oct 1781 (signature on scan 0694).
+# Reader: this worker's own eye on the crops (crops/), with the Sonnet blind pass (passA_sonnet_blind.tsv) as the second read.
+# Plain = the contemporary interlinear gloss above each cipher line (lighter ink), spelling as written; ij counted as one letter.
+# Only words whose sign count equals their letter count and whose signs this worker could read are 'aligned';
+# the rest are 'skip' with the reason. Sign codes follow key_period_codes_nieuw.tsv; codes not in that file:
+#   [y-fam] = y / y-with-dots; dots not reliably separable at this resolution (key has y and [u-dots]).
+#   [h-sec] = a section-sign/looped d shape standing for h (omstandigheeden x2).
+#   z-shape is written 'n' (a plain n-shaped sign); v-shape: in this hand v and r are look-alikes; where the gloss has d the
+#   sign was coded v -- flagged rv=1, because that choice used the gloss (graded lower in compare.py).
+line	plain	signs	status	rv	note
+L01	omtrent	k [y-fam] r o 3 l λ	aligned	0	gloss may read 'ontrent'; m/n of the gloss not certain
+L01	den	v r [y-fam]	aligned	1	second sign looks like r
+L01	staat	6 r [delta] [x-dot] λ	aligned	0
+L01	der	w a o	aligned	0
+L01	fortificatien	[F-amp] [pi] o λ 8 [w-tilde] m [thorn] [delta] p r f 3 [y-fam]	skip	0	14 signs for 13 letters; F-sign is an ampersand-like shape; 'p r f' region unresolved
+L02	permitteren	S 3 o [y-fam] m r r a o [ezh-dot] l	aligned	0
+L02	de	w a	aligned	0
+L02	omstandigheeden	[hash] [y-fam] 6 r [x-dot] l v f g [h-sec] 3 7 w e h	aligned	1
+L02	niet	[y-fam] m 3 r	aligned	0
+L03	mij	[y-fam] t	aligned	0	t superscript
+L03	per	q 3 0	aligned	0
+L03	deeze	v a [ezh-dot] n 7	aligned	1
+L03	gelegendheid	9 3 9 r a 9 a [y-fam] s f e m r	skip	0	13 signs for 12 letters, several look-alikes
+L03	in	f [y-fam]	aligned	0
+L06	dat	w [x-dot] r	aligned	0
+L06	niets	l f a λ 6	aligned	0
+L06	versuymd	5 7 0 6 e m [y-fam] w	aligned	0
+L06	is	f 6	aligned	0
+L06	om	k [y-fam]	aligned	0
+L06	dezelve	v 3 n 7 g 5 e	aligned	1
+L06	in	f l	aligned	0
+L07	soodaanige	[psi] k k v [delta] [x-dot] l f 9 3	aligned	1	gloss 'Soodaanig' + following e-sign
+L07	staat	6 r p [delta] [pi]	aligned	0	last sign pi-like (a hooked lambda?)
+L07	te	λ 3	aligned	0
+L07	brengen	d o 0 7 l g a h	skip	0	8 signs for 7 letters
+L07	dat	v p r	aligned	1
+L07	den	v 3 [y-fam]	aligned	1
+L07	vyand	5 m [delta] l w	aligned	0	second sign a dotted i/m shape
+L08	er	3 0	aligned	0
+L08	sig	6 f 9	aligned	0	gloss spelling
+L08	niet	l m e r	aligned	0
+L08	gemakkelijk	9 7 [y-fam] [x-dot] b b 3 c t b	aligned	0
+L08	meester	m [a-plain] [psi] 3 0	skip	0	5 signs for 7 letters
+L08	van	5 [delta] h	aligned	0
+L08	sal	6 [x-dot] c	aligned	0
+L08	maaken	[y-fam] [delta] [x-dot] b 3 l	aligned	0
+L09	dat	v p r	aligned	1
+L09	men	[y-fam] 7 [y-fam]	aligned	0
+L09	nog	l [pi] 9	aligned	0
+L09	dagelijx	v [x-dot] [delta] 9 3 9 l t	skip	0	8 signs for 7 letters (d a g e l ij x)
+L09	beezig	d 7 7 n m 9	aligned	0
+L09	is	8 6	aligned	0
+L09	dezelve	[d-loop] 3 n 7 c e [ezh-dot]	skip	0	first and last signs uncertain
+L09	te	λ a	aligned	0
+M01	verbeteren	5 [ezh-dot] o d a r 3 o e h	aligned	0
+M01	en	3 [y-fam]	aligned	0
+M01	dat	w [delta] λ	aligned	0
+M01	niets	h f [ezh-dot] r 6	aligned	0
+M01	versuimd	e a o [psi] 5 8 [y-fam] w	aligned	0
+M01	word	4 [hash] o v	aligned	1
+M02	wat	4 x r	aligned	0
+M02	tyd	x t v	aligned	1	first sign an x-like cross
+M02	en	3 [y-fam]	aligned	0
+M02	omstandigheeden	k [y-fam] 6 r [delta] l w m g [h-sec] 3 7 w a h	aligned	0
+M02	toelaa	r [pi] 3 g [x-dot] p	aligned	0	word continues 'ten' on M03
+M03	ten	r a l	aligned	0
+M03	om	[hash] [y-fam]	aligned	0
+M03	alles	[delta] c c [ezh-dot] 6	aligned	0
+M03	op	k q	aligned	0
+M03	een	a [ezh-dot] [y-fam]	aligned	0
+M03	respectablen	o 3 6 S a p r [x-dot] p 6 c e h	skip	0	13 signs for 12 letters
+M04	stellen	[psi] λ 3 g c e [y-fam]	aligned	0	preceded by 'r 7' (end of 'voet' / 'te')

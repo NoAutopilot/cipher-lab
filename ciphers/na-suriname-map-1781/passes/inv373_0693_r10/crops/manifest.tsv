@@ -1,0 +1,21 @@
+# R10-SUR693 crops, 6 Oct 2026. Cut by tools/iiif_lines.py (commands below) from two local source files; regenerate by refetching.
+# 0692 source: IIIF https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/751ba293-3710-43f2-a22c-724a4ca71385.jp2/pct:49,39,50,43/full/0/default.jpg (2498x1716, native)
+# 0693 source: IIIF .../81976bab-f73c-4200-80cd-769f02aaf09a.jp2/full/2000,/0/default.jpg (2000x1621; the native pct region request cut off lines 3-4 and the 10-request budget was spent)
+#   NB: viewer labels: NL-HaNA_1.05.03_373_0690.tif = viewer order 692 ... 0693 = viewer order 695 (R10-SUR's offset note).
+# python3 tools/iiif_lines.py --image r0692.jpg --region 450,0,1990,1716 --out c92 --prefix p0692 --centres 119,286,421,596,768,933,1143,1310,1448 --debug
+# python3 tools/iiif_lines.py --image s0693.jpg --region 270,340,730,370 --out c93 --prefix p0693 --centres 45,135,212,290 --debug
+# Each crop = one gloss line + the cipher line below it. Sonnet blind pass read p0693_*_x2 (2x Lanczos upscales, not kept).
+crop	scan	pair	box_in_source
+p0692_L01.jpg	0692 right page	L01	450,36,2440,202
+p0692_L02.jpg	0692 right page	L02	450,202,2440,353
+p0692_L03.jpg	0692 right page	L03	450,353,2440,508
+p0692_L04.jpg	0692 right page	L04	450,508,2440,682
+p0692_L05.jpg	0692 right page	L05	450,682,2440,850
+p0692_L06.jpg	0692 right page	L06	450,850,2440,1038
+p0692_L07.jpg	0692 right page	L07	450,1038,2440,1226
+p0692_L08.jpg	0692 right page	L08	450,1226,2440,1379
+p0692_L09.jpg	0692 right page	L09	450,1379,2440,1531
+p0693_L01.jpg	0693 left page	M01	270,346,1000,430
+p0693_L02.jpg	0693 left page	M02	270,430,1000,513
+p0693_L03.jpg	0693 left page	M03	270,513,1000,591
+p0693_L04.jpg	0693 left page	M04	270,591,1000,669
