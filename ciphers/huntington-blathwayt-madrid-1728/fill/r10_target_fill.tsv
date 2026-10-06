@@ -1,0 +1,19 @@
+line	pos	group	left	right	pred	margin	grade	top5
+BLA186_p1_L01	3	73	lambassadeur	aetefort	aur	1.584	U	aur ame at aui ar
+BLA186_p1_L01	7	470	aetefort		fe	0.464	U	fe fo fi fl fm
+BLA186_p1_L01	8	778			o	1.391	U	o on nt oi ns
+BLA186_p1_L01	9	190		teaffaire	ce	1.128	U	ce cef cen cel cer
+BLA191_p5_L01	2	805	l	quejevousaimico	ordre	0.926	U	ordre or ont opinion ordinaire
+BLA191_p5_L02	8	6	urvotrelettredu	jyaiquandce	aout	0.569	U	aout bre be c a
+BLA191_p5_L03	3	1210	jyaiquandce	de	lle	0.289	U	lle lui mois ment ne
+BLA191_p5_L03	5	689	de	arsalapremierea	m	3.438	S	m ll lil li lui
+BLA191_p5_L04	8	460	hierquandvousme	riscavoicommeje	favo	2.061	U	favo fe fepa fau fig
+BLA191_p5_L05	3	285	riscavoicommeje	isagitapreslede	do	4.621	S	do dm di doi dn
+BLA191_p5_L06	1	214	apresledepartdu	carmonsieurkenn	commen	3.092	S	commen comme comtes comte commer
+BLA191_p5_L07	4	1019	naaucunordredes		se	0.945	U	se so sei seigneur si
+BLA191_p5_L07	5	711		spourmoiquoyque	mi	0.024	U	mi me men mme moi
+BLA191_p5_L08	10	1118	sseejeluiaifait	bon	t	0.602	U	t tort ton te tn
+BLA191_p5_L09	1	1052	bon	cesansquilmaitj	so	1.058	U	so sne sor si sf
+BLA191_p5_L11	2	836	uxalaccommodeme	esj	pr	1.301	U	pr porte premier prevenu prefent
+BLA191_p5_L11	8	1152	nore	intentionsetjes	v	3.527	S	v ven ur ves une
+BLA191_p5_L13	9	222	lqueordrepourma		conf	0.09	U	conf cons cond confe condui

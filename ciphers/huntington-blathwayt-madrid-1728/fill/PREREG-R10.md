@@ -1,4 +1,4 @@
-# R10-HUNT2 context-fill pre-registration, attempt 2 of at most 3 (written 6 Oct 2026 09:5x UTC by date -u, before any R10 run)
+# R10-HUNT2 context-fill pre-registration, attempt 2 of at most 3 (written 6 Oct 2026 09:50 UTC by date -u, before any R10 run)
 
 Worker R10-HUNT2 (LANE LANE-RUN10-account-1). Nothing below has been computed; fill/context_fill_r10.py does not exist at push time.
 Attempt 1 (R9-HUNT, PREREG-R9.md) FAILed its gate (control 0.346 < 0.40). This attempt changes the gate (precision above a margin

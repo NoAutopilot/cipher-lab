@@ -1,0 +1,5 @@
+line	pos	value	grade	reason
+BLA191_p5_L03	5	m	S	R10-HUNT2 context-fill (fill/context_fill_r10.py, PREREG-R10.md 022e9ca7e): margin 3.438 >= 2.786; control precision above that margin 0.66 (33/50, fresh seeds 4-6) vs shuffled-context 0.23 (7/31), Fisher p=0.00014; expect about 1 in 3 S fills wrong
+BLA191_p5_L05	3	do	S	R10-HUNT2 context-fill (fill/context_fill_r10.py, PREREG-R10.md 022e9ca7e): margin 4.621 >= 2.786; control precision above that margin 0.66 (33/50, fresh seeds 4-6) vs shuffled-context 0.23 (7/31), Fisher p=0.00014; expect about 1 in 3 S fills wrong
+BLA191_p5_L06	1	commen	S	R10-HUNT2 context-fill (fill/context_fill_r10.py, PREREG-R10.md 022e9ca7e): margin 3.092 >= 2.786; control precision above that margin 0.66 (33/50, fresh seeds 4-6) vs shuffled-context 0.23 (7/31), Fisher p=0.00014; expect about 1 in 3 S fills wrong
+BLA191_p5_L11	8	v	S	R10-HUNT2 context-fill (fill/context_fill_r10.py, PREREG-R10.md 022e9ca7e): margin 3.527 >= 2.786; control precision above that margin 0.66 (33/50, fresh seeds 4-6) vs shuffled-context 0.23 (7/31), Fisher p=0.00014; expect about 1 in 3 S fills wrong

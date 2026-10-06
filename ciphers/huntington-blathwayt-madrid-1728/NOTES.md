@@ -379,7 +379,7 @@ Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 130 of 172 target tokens at C (75.6%; R8-HUNT 6 Oct 2026: census finished, BLA191 p5 L11 pos3 385 C -> M, C 131 -> 130, M 20 -> 21; R7B-HUNT 6 Oct 2026: counts unchanged, one C value changed (BLA191 p5 L11 pos3 et -> es); earlier: R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), M 20, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
-- 18 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) (805, 6, 1210, 689, 460, 285, 214, 1019, 711, 1118, 1052, 836, 1152, 222, 73, 470, 778, 190) - blocker: not-attempted; R9-HUNT (6 Oct 2026) ran the pre-registered char-6-gram + alphabetical-bracket fill: BLA185 control 0.346 vs gate 0.40, FAIL, no fill entered; next: one re-registered run with the inverted-bracket defect fixed (470-type empty candidate sets) and a margin-filtered gate (control precision at margin >= t vs shuffled-context precision at the same t), ~$2
+- 14 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) below the R10 margin (805, 6, 1210, 460, 1019, 711, 1118, 1052, 836, 222, 73, 470, 778, 190) - blocker: open-codes; R10-HUNT2 (6 Oct 2026, attempt 2, PREREG-R10.md) PASSed its gate and filled the 4 groups above margin 2.786 (689 m, 285 do, 1152 v at S; 214 commen at M, its sign conf M); the 14 below the margin have no instrument that clears a control (below-margin control precision is under 0.25); they reopen only with new glossed siblings using these codes
 - BLA184 range 1150/1240/1243/1250/1259 (probable names section) - blocker: open-codes; R17: glosses of this range elsewhere do not fit, the glossed items never use it
 - a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: not-attempted; Verifier audit and Premise check (d); next: TNA Discovery API search of SP 94/98-100 and SP 36/13-14 descriptions for "Paretti"/"Pareti" (While waiting), ~$0.5
 
@@ -390,8 +390,8 @@ Read so far: 130 of 172 target tokens at C (75.6%; R8-HUNT 6 Oct 2026: census fi
 - [ ] print: TNA SP 94/98-100 and SP 36 descriptions; HMC Polwarth V (1961) for a decipherment of BLA191(a)
 - [x] key-rebuild: key.tsv rebuilt from the glosses by build_key.py (R17)
 - [x] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap)
-- [ ] retry: context-fill of the 18 unkeyed groups with a BLA185 blanking control (R9-HUNT, 6 Oct 2026: attempt 1 FAIL, control 0.346 vs gate 0.40; one re-registered attempt with a different gate is untried)
-Verdict: keep going: 3 internal gaps; cheapest next: re-registered context-fill (bracket fix + margin-filtered gate against the shuffled-context control at matched margin), ~$2 (R9-HUNT, 6 Oct 2026: attempt 1 control 0.346 vs gate 0.40, FAIL; high-margin subset 34/48 = 0.71 vs shuffled 9/28 = 0.32, not pre-registered as the gate); earlier: context-fill attempt 1, ~$3 (R8-HUNT)
+- [x] retry: context-fill of the 18 unkeyed groups with a BLA185 blanking control (R9-HUNT attempt 1 FAIL; R10-HUNT2 attempt 2 PASS on fresh seeds 4-6, 4 groups filled, 14 stay U)
+Verdict: keep going: 3 internal gaps; cheapest next: TNA Discovery API search of SP 94/98-100 and SP 36/13-14 descriptions for a contemporary decipherment of BLA191(a), ~$0.5 (R10-HUNT2, 6 Oct 2026: context-fill attempt 2 PASS, 4 of 18 unkeyed groups filled, C 130 M 22 S 3 U 17)
 
 ## IA-DESK-ALT (account-3 worker, 5 Oct 2026): HMC Polwarth IV and V via Internet Archive
 
@@ -526,3 +526,36 @@ Next (one re-registered attempt, a different gate, not a re-tune of the 0.40 thr
 precision at a margin threshold chosen on seeds 1-3 and tested on fresh seeds 4-6 against the shuffled-context control at the
 same threshold; S only for target groups above it. If that also fails, the step is [retired] for this instrument (rule 3 third-
 attempt clause applies after attempt 3, so attempt 2 is still a fair test). No network requests this job.
+
+## R10-HUNT2: context-fill attempt 2, re-registered gate (account-1 worker, 6 Oct 2026 09:47-10:05 UTC by date -u)
+
+Pre-registered in fill/PREREG-R10.md (pushed 022e9ca7e at 09:50 UTC, before fill/context_fill_r10.py existed). Same LM, corpus (fr18),
+candidates, context and BLA185 columns as R9; two changes: the inverted-bracket fix ([min, max] of the six bracket values when the
+lower median sorts above the upper), and a gate on precision at a margin fixed in advance as the number 2.786 (R9's t*, seen on seeds
+1-3, so the gate uses fresh seeds 4-6 only), against the shuffled-context control at the same margin. The control can differ from the
+shuffled control for this statistic (score and margin depend on the context the shuffle replaces).
+
+| BLA185, 103 columns x 3 seeds, margin >= 2.786 | columns | right | precision | all-column top-1 |
+|---|---|---|---|---|
+| control (own context), fresh seeds 4-6 | 50 | 33 | **0.66** | 0.337 |
+| shuffled-context control, seeds 4-6 | 31 | 7 | 0.23 | 0.159 |
+| control, seeds 1-3, fixed bracket (not gated) | 44 | 30 | 0.68 | 0.340 |
+| shuffled, seeds 1-3, fixed bracket (not gated) | 25 | 8 | 0.32 | 0.168 |
+
+**Gate: PASS** (control precision 0.66 >= 0.60 on 50 >= 30 columns; one-sided Fisher exact p = 0.00014 < 0.05 against the shuffled
+control at the matched margin). Four target groups clear the margin and go into exceptions.tsv at grade S (decode_key.py downgrades
+a conf-M sign to M, per its rule):
+
+| token | group | left context | fill | right context | margin | grade |
+|---|---|---|---|---|---|---|
+| BLA191_p5_L03 5 | 689 | de | m | arsalapremierea | 3.438 | S |
+| BLA191_p5_L05 3 | 285 | riscavoicommeje | do | isagitapreslede | 4.621 | S |
+| BLA191_p5_L06 1 | 214 | apresledepartdu | commen | carmonsieurkenn | 3.092 | M (sign conf M) |
+| BLA191_p5_L11 8 | 1152 | nore | v | intentionsetjes | 3.527 | S |
+
+Expect about one in three S fills to be wrong (control precision 0.66). Target counts: C 130, M 22, S 3, U 17 of 172
+(`tools/decode_key.py . --check` 0; `fill/context_fill_r10.py --check` 0). The other 14 fills stay U (fill/r10_target_fill.tsv
+lists them as U). Note: the bracket fix lowered the seeds 1-3 all-column control from R9's 0.346 to 0.340, so the fix did not by
+itself help; the gate change is what passed. The R9 files (context_fill.py, control.tsv, summary.json, target_fill.tsv) are kept
+unchanged under R9's registration. No network requests this job.
+

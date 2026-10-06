@@ -1,0 +1,43 @@
+{
+ "t": 2.786,
+ "n_columns_per_seed": 103,
+ "gate_seeds": [
+  4,
+  5,
+  6
+ ],
+ "gate_seeds_stats": {
+  "control": {
+   "top1_mean": 0.3366,
+   "n_above_t": 50,
+   "hits_above_t": 33,
+   "precision_above_t": 0.66
+  },
+  "shuffled": {
+   "top1_mean": 0.1586,
+   "n_above_t": 31,
+   "hits_above_t": 7,
+   "precision_above_t": 0.2258
+  }
+ },
+ "fisher_one_sided_p": 0.000141,
+ "gate": {
+  "control_precision>=0.60_on>=30": true,
+  "fisher_p<0.05": true,
+  "pass": true
+ },
+ "comparison_seeds_1_3_fixed_bracket (not gated)": {
+  "control": {
+   "top1_mean": 0.3398,
+   "n_above_t": 44,
+   "hits_above_t": 30,
+   "precision_above_t": 0.6818
+  },
+  "shuffled": {
+   "top1_mean": 0.1683,
+   "n_above_t": 25,
+   "hits_above_t": 8,
+   "precision_above_t": 0.32
+  }
+ }
+}
