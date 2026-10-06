@@ -5070,6 +5070,37 @@ Open for the next lane:
 3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
 4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
 
+## LANE LANE-RUN9-account-2 handoff (session_01A1YMVHYC29a1P95MRiYJHg, account 2), 6 October 2026 (closed 06:5x UTC: i-r S/M backlog worked, lane about 47.6 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run9-jobs.md. WORK-QUEUE row LANE-RUN9-account-2: RUN8's named
+next steps for i-r, then tools/next_steps.py runnable / parallel rows (S, M). Gate 0a: SESSION-SWEEP-account-2 row still `claimed` but its TSV
+(2026-10-05) is on disk; proceeded as RUN7/RUN8 did. VERIFY-BACKLOG had no i-r row. Off limits: Birago, Armstrong, Debosnys, riksarkivet-r4282.
+Twenty workers in five waves (18 Opus, 2 Sonnet; 19 D, 1 D- at 1.04x), workers 40.72 + orchestrator about 6.9 = about 47.6 of cap 60
+(get_session). five_hour `allowed` throughout.
+- nla-heinrich-braunschweig-1519: check-solved (R9-NLACS): no printing of the Grein 1858/1860 key sheets or plaintext located; numeral groups
+  transcribed and sheet keys applied (R9-NLATX: 548 18/18 words, 562 11/12); verifier R9-NLAV: N0 both letters, key archival (Grein, credited,
+  unprinted), H-only agreement 166/167 letters, depth D2 87.9% H; status line set by the verifier on the N0 precedent; no SO row (N0).
+- naf14913-rousseau-venice-1743: re-registered count-vector gate with a same-class planted known-answer (R9-ROUS4, PREREG c962e56e5):
+  605 = republique entered key.tsv; verifier R9-ROUSV2 upheld grade C on per-occurrence slip alignment 7/7 (count gate alone only S);
+  739 venise NON-INFORMATIVE. Verifier R9-ROUSV: 501 = et consistent at all 7 slip occurrences (the "un" count match is an artefact).
+- rayburn-2004: owner sign sorter built (80 tiles, 58 piles, 40 focus = every A/B split), sorter_preflight PASS -- flagged for the account-3
+  orchestrator to publish (db capability), ciphers/rayburn-2004/sorter/rayburn_sorter.html; test 3 waits on the sort.
+- rah-juan-manuel-1521: its sorter was already published 4 Oct (ASKS 138); NOTES gap 1 corrected to waiting-on ASKS 138.
+- oldenbarnevelt-brederode-1605: 18 more DECODE keys at full size, none fits (R9-OBRED3); NA 3.01.14 inv. 1490 found digitised = the
+  manuscript Duplicata (R9-NAKEY); image check 121/121 groups, 1 differs (170 -> 179), 1 blotted (R9-OBRED4, corrections file only); Buzanval
+  key inv. 2028 is a 10-99 syllabary with no 3-digit names list.
+- Tests with controls: rubin-1953 Block C 74 pre-registered Morse/binary encodings, control power >= 0.995, target 74/74 FAIL, shuffle 0/3000:
+  control-backed negative for direct Morse/binary-to-English, conditional on transcription. kaliningrad-2015: soft=pair|two-stage options in
+  families/homophonic.py; two-stage control 0.990 (was 0.723) but target -1.733 vs shuffled -1.765 (within 0.1) licenses nothing.
+- Searches (search results only): karlxi German 1680 Actes pp.102-104 print the 1676 Swedish Vollmacht, not Naas 1677 (gaps now parked);
+  konstanz Guyot 1911 no 17 Jul 1798 Sieyes letter; roell inv. 92 Jan, 1.02.20 inv. 996 and inv. 978 read, no cipher, no 9 Feb letter (next inv.
+  980); suriname design_prior run, NA 1.05.03 / 4.VEL no further key sheet (lead inv. 373, 1030 scans, unopened); rumpf NA 3.01.19 inv.
+  2030/2044 still physical. LOCAL-QUEUE L58 (lope-hurtado BNE 20212/27 capture), L59 (vellingk HRSH vol. 6), L60 (celsing Riksarkivet flags).
+Open for the next i-r lane: (1) rayburn sorter publish (account 3) then test 3; (2) roell NA 1.02.20 inv. 980 for the 10 Feb pli to Van Dedem
+~1.5; (3) suriname inv. 373 governor letters 1781, index scans first ~2; (4) oldenbarnevelt-brederode apply corrections.tsv only with a
+verifier's say, then the 1598 key in 3.01.14 inv. 2016 (thumbnails first) ~2; (5) kaliningrad: a judge or decoder change, not more anneals on
+this design. Process note: test_homophonic_alphabet.py fixture (a) and system_map_check (two SESSION-SWEEP tsvs) fail on main, pre-existing.
+
 ## LANE LANE-RUN8-account-2 handoff (session_01Aeemo71BBJ5bPUjGtFFtM5, account 2), 6 October 2026 (closed 04:4x UTC: i-r S/M backlog worked, lane about 55.6 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run8-jobs.md. WORK-QUEUE row 241: RUN8, same tier as RUN7
