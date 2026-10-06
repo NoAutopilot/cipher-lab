@@ -1856,3 +1856,55 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; cheapest next: every other Lehigh in the sent ledgers mssEC 18-19 aligned to OR (Lehigh second sent context; the mssEC 12-13 received copies gave none, D1-ECK62W), ~$1; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
+
+## D1-ECK62S (6 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261006-1240): every Lehigh in the sent ledgers mssEC 18-19, aligned to OR
+
+Step check: not run before (D1-ECK62W's Verdict named it). Data re-fetched to scratch, not committed: vol18.json and vol19.json
+(sha256 cb162574... and be11447f..., both match pilot1864/manifest.tsv); OR `_djvu.txt` 41.4, 45.2, 48.1, 48.2, 49.1, 49.2 (all six
+sha256 match ec18/or_volumes.tsv).
+- Method: case-insensitive grep of the volunteer text for lehig/leheigh on every page of both ledgers; each hit's telegram header
+  (date, operator, place) read off the page; the OR volume for that date and theatre grepped for the clear words on either side of
+  Lehigh (a phrase match, then the printed date and addressee checked against the ledger header). No gate, no score: each row is a
+  same-date, same-addressee telegram whose surrounding words match the print, read by eye. Table: `ec18/lehigh_uses.tsv`.
+- Found: 13 occurrences (mssEC 18: 7, mssEC 19: 6). 10 aligned to a dated OR telegram (2 already known: 9947.505, 10020.609):
+  - 8 print a word in the Lehigh slot, and all 8 read Canby: 6 as the person ("General Canby"/"Canby": 9102 24 Oct 1864 OR 41.4
+    p.219; 9880 31 Oct 1864 OR 41.4 p.343; 9937 19 Jan 1865 OR 45.2 p.614; 9947 27 Jan 1865 OR 48.1 p.646; 9171 29 Jan 1865 OR
+    49.1 pp.602-606, OCR "General Oaiiby"; 9955 4 Feb 1865 OR 49.1 p.647) and 2 as the sound "can be" (10019, the 23 May 1865
+    9.10 a.m. telegram to Thomas, OR 49.2 p.882, "those sent home to be mustered out can be attached"; 10020 24 May 1865 OR 48.2
+    p.573). 0 read Hurlbut.
+  - 2 matched by date and addressee but the Lehigh slot falls in OCR margin damage (9952 4 Feb 1865 OR 49.1 p.646, "early - has
+    many dismounted men"; 9174 1 Feb 1865 to R. Allen, OR 49.1 p.624): no reading either way from the OCR.
+  - 3 not aligned (mssEC 19 9272, 9273, 9280; Bates to Stanton, Sept 1865, outside OR ser. I); 9280's "Lehigh Iron" is a clear word
+    (the same telegram writes "canby made" in clear for "can be made").
+- Grade (rule 4), the 6 new aligned tokens: Canby / "can be" at C from their own print (6), against the key book's H value Hurlbut;
+  the 2 OCR-lacuna tokens M; the 3 Sept 1865 tokens not graded. Nothing was changed in key.md, decode.py or the committed readings
+  (decode.py --check exit 0); the two tokens held M by DEF1-ECK62P stay M until a verifier decides.
+- Does it settle the conflict? It settles what Lehigh meant in use, not why the book differs: witness A (mssEC 41 p.17 l.6, Hurlbut,
+  image-checked) stands alone against 8 dated sent uses, 24 Oct 1864 - 24 May 1865, from both sent ledgers and four addressees
+  (Rosecrans, Thomas, Dodge, Pope), every one Canby or "can be". Rule 4 forbids settling by count alone; the witness record is: book
+  = Hurlbut; operator use Oct 1864 - May 1865 = Canby. Seen in passing, not swept: other words of the same Hurlbut block are used
+  the same way in the same telegrams -- Leghorn = "General Canby" (9952 "to leghorn than first ordered", OR "to General Canby than
+  first ordered"; 9171 "leghorn is ready", OR "Canby is ready") and "can be" (9937 "leghorns ready in time", OR "can be ready in
+  time"; 10019 "Whips leghorn consolidates", OR "Regiments can be consolidated"); Leopard = Canby (9174 "presume leopard has no
+  great surplus", OR "I presume Canby has no great [surplus]"). Inference only (grade I, not used): the Hurlbut row's four words
+  (Leghorn, Legend, Lehigh, Leopard, key.md) were in practice used for Canby, and then for the sound "can be", by October 1864.
+- Requests: hdl.huntington.org 2 (vol18, vol19 dmQuery), archive.org 6 (OR djvu), >= 2 s apart; 0 subagents, 0 vision.
+  Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, D1-ECK62S, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); received ledgers mssEC 01-14 all searched for residue twins (GAPS171, D1-ECK62L): 0 code-bearing twins; mssEC 18 cascade split2 (ec18/s2/): 729 entries, align_free AGREE 0.427 vs control 0.088; 17 neither-book entries: 0 wrong telegram, 5 right, 12 undecided
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L, 0 twins); next: the image of the residue pages against the volunteer text for the M-graded tokens (transcription slips the decode reads as code), ~$4
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; Nutmeg = James River gains a 5 Jul 1863 witness (C, D1-ECK62L) but no second 1862 telegram; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); received copies in mssEC 12-13: 0 (D1-ECK62W); every Lehigh in mssEC 18-19 aligned 6 Oct 2026 (D1-ECK62S: 13 uses, 8 print-read, all Canby or 'can be', 0 Hurlbut; ec18/lehigh_uses.tsv); next: a verifier's grade decision on the Hurlbut-row words (Lehigh, Leghorn, Legend, Leopard) and the same date-aligned sweep for Leghorn/Legend/Leopard in mssEC 18-19, ~$1
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; the 13 code words date 30 Dec 1864 - 13 Jul 1865, Cipher No. 3/No. 4 period; the Huntington holds only No. 5 (R8-ECK62); the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; 100 under the legacy split, 137 '?' entries under split2 print_q; next: the image (marker words the volunteer text may have dropped) for the dated `?p` entries under split2, ~$4
+
+## Escalation (D1-ECK62S, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171) and mssEC 04-14 6 Oct 2026 (D1-ECK62L, 0 twins, Nutmeg 1863 witness); mssEC 12-13 for the Lehigh 1865 copies (D1-ECK62W, 0); every Lehigh in sent ledgers mssEC 18-19 (D1-ECK62S, 8 print-read, all Canby or 'can be'); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram and conflict-pair tests done on legacy (R7B-ECK62, R7C-ECK62C) and split2 (R10-ECK62T: 0 wrong, 5 right, 12 undecided; primary untested at N 60); splitter fixed and adopted (R9-ECK62, R10-ECK62S, R10-ECK62T)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: the same date-aligned sweep for Leghorn/Legend/Leopard in mssEC 18-19 and a verifier's grade decision on the Hurlbut row (D1-ECK62S: Lehigh reads Canby or 'can be' in all 8 print-read uses), ~$1; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
