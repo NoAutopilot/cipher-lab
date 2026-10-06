@@ -233,3 +233,15 @@ not R15-SUR758, R15-SURALIAS or R15-SURV. Re-run its re-score (must reproduce), 
 SH tokens and the OTHER token on the crops, and decide whether a [sh-lig] key entry is licensed (pooled with R15-SURALIAS's 0730 ss-like 7/7)
 and at what grade. If licensed, make the key entry through the folder's key/exceptions route with decode --check exit 0, carry it into
 AUDIT.md (carry-over) and any SO row for this target; if not, say why in AUDIT.md. Class unchanged unless the evidence moves it.
+
+## Wave 6 (19:0x UTC; one verifier for the R15-CLIN407 flag, then the lane closes)
+
+### R15-CLINV -- pro3055-clinton-1779: verifier on R15-CLIN3853 + R15-CLIN407 (Opus, verifier hat; cap 2, box 40 min)
+Intake: `pro3055-clinton-1779: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+ROOM flag R15-CLIN407 18:51: 3853 p.407 cipher reads "all your trouble and pains" where the 1920 print of f.381 has "all your Trouble", and gloss
+"give up" vs print "give"; graded S under gate PASS 189/197 (PREREG 6f7ae4ab6, f2a8ff92d); p.406 PASS 191/197 (R15-CLIN3853, e66b18fd2; "25 vs 28
+sail" witness conflict). You are neither worker. Re-run both scripts with --check / reproduce the scores, confirm each PREREG predates its run
+(git order), eye the cells carrying "and pains", "up" and "25" on the column crops, and decide each grade (S with the gate, M, or rejected).
+Rule 4: these are witness differences between the cipher and a printed decipherment, logged as conflicts, not resolved by preference. Write
+an AUDIT.md carry-over (class unchanged unless the evidence moves it; if the added words are kept, rule 10 propagation into any SO row for
+this target) and correct any over-claiming sentence in NOTES.md.
