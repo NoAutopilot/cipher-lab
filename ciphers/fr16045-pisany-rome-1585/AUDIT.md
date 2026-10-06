@@ -184,3 +184,39 @@ full-text indexes searched on 5 Oct 2026 (two audits)." Unsafe: "an unpublished 
 wording implying the text was unknown before this project.
 
 Depth check pasted (python3 tools/depth_check.py, 5 Oct 2026, DEF1-PIS): exit 0; last line "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0" (the three rows stay N0 / D1, not counted; status.json results[117-119] audit_status 'two audits'). tools/verify_backlog.py regenerated: "38 rows: audit2 8, both 4, counted 26".
+
+## Carry-over R12A-PISV (6 Oct 2026) -- R12A-PISRS's f.275r T36 relabel (not an audited item)
+
+Verifier session R12A-PISV (LANE LANE-RUN12-account-1, account 1), brief .claude/briefs/runs/2026-10-06-account1-run12-jobs.md
+"R12A-PISV"; 18:25-18:28 UTC by `date -u`. Not the solver; nothing decoded or re-transcribed. **f.275r is not an item of AUDIT 1 or 2**
+(those cover f.247r, f.275v, f.302v); this section records the carry-over the reading change after AUDIT.md requires (rule 10), and
+classes nothing. No N-class, depth or status.json row is raised or added.
+
+Change under check (commit ef557ad7b, 18:11 UTC): tx86e/ciphertext_f275r.tsv, four tokens T31 -> T36 (L04 i39, L09 i3, L12 i5, L14 i28,
+0-based over non-'/' tokens); reading_f275r_M.txt m -> s at those four places ("de[s]a personne", "en [s]ecret", "sur ce [s]ubiet",
+"si [s]ecret"); kp86e/grades_f275r.tsv C 360 -> 364, M 191 -> 187, U 10 unchanged (561 tokens).
+
+Checks:
+- PREREG precedes the edit: pisrs/PREREG_t36commit.md landed in 709a81b3d (18:08:22 UTC; the rebase in `tools/room.py --push` folded it under
+  another session's commit title, so the hash e78873a18 quoted in NOTES.md and the job brief no longer exists in history), three minutes before ef557ad7b.
+- The four labels follow from the pre-registered rule, mechanically: pis2/PREREG_pis2.md "SETTLED-<cell> iff the reader's top choice is <cell>,
+  confidence medium or high, and <cell> in my admissible set". pis2/t31_tokens.tsv: Q02 (L04 i39), Q11 (L09 i3), Q05 (L12 i5), Q03 (L14 i28)
+  each have blind reader top A = T36 at medium and admissible {T36}; the 3 other f.275r tokens admissible {T36} (L04 i7, L05 i0, L15 i9) have
+  reader top T31 at low and stay UNSETTLED, as the rule says; no token outside the four was relabelled. A diff of tx86e/ciphertext_f275r_preT36.tsv
+  against the committed file finds exactly these four changes, token counts per line unchanged.
+- Crops (pis2/blind/Q02, Q11, Q05, Q03 beside pis2/cells/k_T36_L01, k_T31_L01 and the bare-x Q08, Q01), my own eye: the four show the crossed
+  form with a long diagonal and a loop at lower right, the T36 cell's shape; Q08/Q01 are bare x. I agree with the labels. Caveat: the key
+  cells are 32x26 px crops of a 688 px table copy, a weak witness; the labels are medium-confidence transcription calls, not key evidence.
+- Reproducibility (rule 7): `python3 tx86e/apply_t36.py --check` "up to date" exit 0; `python3 tools/decode_key.py ciphers/fr16045-pisany-rome-1585
+  --ciphertext tx86e/ciphertext_f275r.tsv --key key86.tsv --reading reading_f275r_M.txt --tokens reading_f275r_tokens.tsv --check` "reading up to
+  date" exit 0 (623 tokens: H 554, U 69); `kp86e/t31_grades.py --grade` regenerates grades_f275r.tsv byte-identical (no git diff).
+  The bare `tools/decode_key.py <folder> --check` fails FileNotFoundError ciphertext.tsv: the folder has no default ciphertext.tsv or decode.json
+  (pre-existing, not from this change); the per-page form above is the folder's working check.
+- Grade note: the four become C because the decoded s aligns to the Colbert copy's s (kp86e rule unchanged). The copy's s is also named in the
+  commit PREREG as supporting evidence, but the settlement itself (PIS2) was blind to the copy, so the C is not circular; it rests on a
+  medium-confidence shape label. R12A-PISRS's random 9-token relabel null (ours = null max 0.6527, 7.5% of draws reach it) is descriptive, not a gate.
+- Audited items unaffected: ef557ad7b touches only f.275r files (and pisrs outputs); f.247r, f.275v, f.302v counts, N0 and D1 stand as AUDIT 1-2 wrote.
+
+Propagation: status.json carries no f.275r row (results 117-119 are f.247r, f.275v, f.302v) -- nothing to change, none added;
+SECOND-OPINIONS-QUEUE.tsv has no row for this target -- nothing to change. NOTES.md's "(e78873a18)" corrected to 709a81b3d.
+Verdict: change consistent with its PREREG and the crops; carried over; no class raised.

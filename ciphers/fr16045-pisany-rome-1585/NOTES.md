@@ -914,7 +914,7 @@ Brief: .claude/briefs/runs/2026-10-06-account1-run12-jobs.md "R12A-PISRS" (LANE 
   Random 9-token relabel null (200 draws, same 4 T36 labels on random T31 tokens): mean 0.6502, p95 0.6527, max 0.6527; 7.5% of draws reach ours.
   So on f.275r the shape-settled tokens sit at the top of the null (tied with its maximum), where on f.244r they sat at its mean (29%): descriptive, not a gate.
   identical(): all 5 f.275r tokens now carrying T36 (the 4 relabelled + 1 already T36) decode to the copy's letter (s), consistent with RUN5-PIS4 (shape and copy both s).
-- (b) Commit of the 4 labels, PREREG pisrs/PREREG_t36commit.md pushed (e78873a18) before the edit: pre-edit file kept byte-identical as tx86e/ciphertext_f275r_preT36.tsv;
+- (b) Commit of the 4 labels, PREREG pisrs/PREREG_t36commit.md pushed (e78873a18; landed as 709a81b3d after the push rebase, R12A-PISV) before the edit: pre-edit file kept byte-identical as tx86e/ciphertext_f275r_preT36.tsv;
   `python3 tx86e/apply_t36.py` derives tx86e/ciphertext_f275r.tsv (L04 i39, L09 i3, L12 i5, L14 i28: T31 -> T36; `--check` up to date). pisrs.py now reads the _preT36 copy
   so its committed result stays reproducible; kp86e.py, pis1key.py and relabel_f275r.py results were computed on the pre-edit file (same bytes as _preT36).
   Regenerated: reading_f275r_M.txt / reading_f275r_tokens.tsv by `python3 tools/decode_key.py ciphers/fr16045-pisany-rome-1585 --ciphertext tx86e/ciphertext_f275r.tsv --key key86.tsv
