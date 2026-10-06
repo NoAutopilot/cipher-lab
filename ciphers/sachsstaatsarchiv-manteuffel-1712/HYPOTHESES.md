@@ -55,3 +55,9 @@ unchanged (C 202, M 84, U 137 of 423). Not a refutation: two agreeing single-cod
 | 868 / 898 | -- / -- | "Ilgen" beside 868 (run 5) and 898 (run 7) on f.422v; 898 = l'Empire 3x as single-code gloss on the same leaf | read doubtful (could be 98 = Ilgen with a lead stroke); kept as read, M |
 | 754 | le Roi de Pologne (C) | single-code gloss "S.M." (run 26, M) | compatible (Sa Majeste), not a conflict |
 Gate: f422v_0527/shuffle_control.tsv (S 0/52 vs p95 0.058; S_single 1/2 at N 2). Values: f422v_0527/leaf_values_0527.tsv.
+
+## Pooled single-code-gloss gate (R7-MANTP, 6 Oct 2026, LANE LANE-RUN7-account-2, account 2)
+
+| date | instrument | control | target | verdict |
+|---|---|---|---|---|
+| 6 Oct 2026 R7-MANTP | single-code glosses pooled across leaves 0502, 0501, 0527, 0528 (42 runs), S = share of recurring codes with identical MANT5-normalised glosses; PREREG-MANTP (fa516827) | gloss strings permuted across the pooled single-code runs, 1000 draws seed 7101: mean 0.053, p95 0.222 (within-leaf permutation, not gating: mean 0.046, p95 0.222) | S = 6/9 = 0.667 (N_rec 9) | **PASS**. Per leaf, same instrument: 0528 PASS (4/4 vs p95 0.250), 0502/0501/0527 HELD at the N floor (N_rec 1, 1, 2). Licensed: 98, 107, 357 (C, already C), 73 Ilgen (C by the rule but a Krauske row, s\|z M: not overwritten, conflict above stays open, now 2 leaves incl. cleared 0528), 770 (M, 0501 only, already M), 877 (M, every gloss read M, already M). Disagree: 864 ("le roy de prusse" vs "roy de prusse", article only), 754 ("s m" vs "le roy de pologne", compatible), 898 ("ilgen" x1 vs "l empire" x3). key.tsv unchanged; U tokens moved 0. The values the gate was meant to reach (898, 939, 539, 544) are single-attested in the pool, so no gloss gate can license them until another leaf glosses them. |
