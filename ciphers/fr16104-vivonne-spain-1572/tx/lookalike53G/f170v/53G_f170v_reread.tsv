@@ -1,0 +1,116 @@
+item	label	conf	second	note
+1	2	H		digit 2 flat
+2	S	M	V	long tail swash
+3	NONE	L		place unclear
+4	o	M	a	second o
+5	y	H		swash y
+6	4	M	t	crossed descender
+7	V	M		backslash stroke
+8	NONE	M		no sign after 7
+9	NONE	M		nothing between p and m
+10	d	L	S	curl before o
+11	4	L	p	p with top bar
+12	4	M		stem+bar p-like
+13	a	M	c	a before x
+14	NONE	M		none between tz and L
+15	NONE	M		
+16	5	M		5-like before o
+17	P	H		pi
+18	j	H		j
+19	y	M		swash y
+20	y	M		swash y
+21	P	M		pi at tick
+22	d	M		small d
+23	m	L	NONE	unclear
+24	#	M	P	flat double bars
+25	d	H		d curl
+26	L	H		L
+27	y	M		swash y
+28	NONE	M		
+29	z	M	2	flat-topped z
+30	#	M		
+31	m	L	NONE	unclear
+32	z	M	3	z with swash
+33	d	H		d
+34	y	M		
+35	f	M		g with crossbar
+36	m	L	NONE	unclear
+37	#	M	P	pi with bars
+38	g	L		
+39	y	M		
+40	d	L	NONE	
+41	p	M	4	p with dash
+42	d	M		
+43	NONE	M		
+44	:	M		two dots
+45	m	M		
+46	S	L	NONE	tall vertical bar
+47	NONE	M		
+48	k	M		
+49	c	M		small c
+50	p	M		
+51	m	M		
+52	m	M		
+53	#	M		
+54	NONE	L		
+55	3	L	z	
+56	p	L	NONE	
+57	:	M		two dots
+58	p	M		
+59	m	L	NONE	
+60	m	M		
+61	:	H		two dots
+62	y	M		
+63	7	H		
+64	#	H		
+65	V	M		big backslash
+66	tz	H		
+67	c	M		
+68	p	M	4	
+69	p	M	4	
+70	#	M		
+71	m	H		
+72	m	H		
+73	p	M		
+74	#	H		
+75	P	L	NONE	
+76	NONE	M		
+77	a	L	NONE	A-like glyph
+78	{curl}	M		big curl
+79	y	M		
+80	:	M		
+81	l	H		
+82	NONE	L		
+83	:	H		
+84	P	M		
+85	NONE	L		
+86	r	M		
+87	:	M		
+88	@	M		
+89	o	H		
+90	o	H		
+91	d	H		
+92	S	H		
+93	2	H		
+94	#	M		
+95	d	H		
+96	z	M		
+97	tz	H		
+98	y	M		
+99	y	M	D	
+100	NONE	L		
+101	z	M		
+102	P	M		
+103	tz	H		
+104	z	L		
+105	@	H		
+106	P	M	#	
+107	@	M		
+108	NONE	M		
+109	g	M		
+110	P	H		
+111	p	M		
+112	y	M		
+113	m	M		
+114	m	M		
+115	o	M		
