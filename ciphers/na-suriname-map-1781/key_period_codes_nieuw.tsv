@@ -7,6 +7,7 @@
 # [thorn] = c; per-token results in exceptions_nieuw_image.tsv. g, y, b at code level unchanged (calls below 0.6).
 # R10-SURV (verifier, 6 Oct 2026): S, t, [x-dot] M -> C and rows [x-dots] a, n z added from Texier's glossed cipher letter
 # (NA 1.05.03 inv. 373 scans 0692-0693, Paramaribo 29 Oct 1781; passes/inv373_0693_r10/, verify_blind.out). b, g, y unchanged.
+# R15-SURV2 (verifier, 6 Oct 2026): row [sh-lig] = h added at C from the inv. 373 glossed letters 0730/0758 (passes/inv373_alias_r15, passes/inv373_0758_tok_r15).
 code	value	grade	source	note
 2	a	H	inv86 0002/0003	identical
 [delta]	a	H	inv86 0002/0003	identical; key.tsv C agrees
@@ -63,6 +64,7 @@ t	y	C	inv86 0002/0003 + NA 1.05.03 inv.373 0692-0693 gloss	sheet tau (Y); crib g
 [x-dot]	a	C	inv86 0003 + NA 1.05.03 inv.373 0692-0693 gloss	Nieuw A row third sign (x with dots); R10-SURV 6 Oct 2026: inv. 373 0692-0693 gloss x-with-dots = a 8/8 (blind pass x=a 7/8, dots eye-checked on 0692 L08), grade C
 [x-dots]	a	C	inv86 0003 + NA 1.05.03 inv.373 0692-0693 gloss	reader-code alias of [x-dot] (NOTES 'A [x-dots] = B [x-dot]', GAPS20-era two-reader comparison); value as [x-dot], R10-SURV 6 Oct 2026
 n	z	C	inv86 0003 + NA 1.05.03 inv.373 0692-0693 gloss	Nieuw Z row lowercase n (key_period_nieuw.tsv, H); R10-SURV 6 Oct 2026: inv. 373 0692-0693 gloss n = z 3/3 (deeze, dezelve, beezig; blind pass 3/3), grade C
+[sh-lig]	h	C	inv86 0003 + NA 1.05.03 inv.373 0730/0758 gloss	Nieuw H row [sh-lig] "long-s / f with loop" (key_period_nieuw.tsv, shape M); R15-SURV2 6 Oct 2026: inv. 373 interlinear gloss, image-labelled reader codes (0730 ss-like 7/7 = h, R15-SURALIAS A4, C1 p99 0.500; 0758 SH 5/6 = h, R15-SUR758 PREREG f53d915f1, C1 p99 0.667; each scan cleared its own control; 3 of 6 0758 SH tokens re-eyed), pooled 12/13, grade C. Reader codes on the 4.VEL legends ([s-loop], [s-hook]) are NOT aliased to it (not image-compared)
 [dots-tri]	a	M	inv86 0003	Nieuw A row third sign (x with dots), by shape name
 [MM]	stukgeschut	H	inv86 0003	Nieuw code group AA struck through = Stuk geschut; GAPS15 blind image call 0.9 (2061 L01:3); stands after gun counts
 [ladder-III]	buskruit	H	inv86 0003	Nieuw code group: barred rectangle with three spires = de Buscruijt; GAPS15 blind image call 0.6 (2061 L09:11), grouped with [hand-box]

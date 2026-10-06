@@ -620,3 +620,12 @@ an image check plus agreement with the inv. 86 period sheet.
   through Wollant's N-for-M habit plus an extra t. Not a reading, not graded above M as a word.
 No N-class asked or changed. No key, transcription or reading changed (decode --check not needed). No SECOND-OPINIONS-QUEUE.tsv row
 exists for this target.
+
+## Carry-over (R15-SURV2, verifier of R15-SUR758, account 2, 6 Oct 2026, 18:46-18:51 UTC -- key row added, no re-class)
+R15-SUR758's re-score (passes/inv373_0758_tok_r15/retok_run.py) reproduces byte-identical; its PREREG (f53d915f1, 18:19:00) predates
+the labels and the scored run (2c651efba, 5f7ed3421). Own eye on 3 of the 6 0758 SH tokens and the OTHER token: 4/4 agree with the
+labels. [sh-lig] = h is **licensed at C** and entered in key_period_codes_nieuw.tsv: 0730 7/7 (R15-SURALIAS A4) and 0758 5/6, each
+past its own deranged-gloss control before pooling (12/13), matching the inv. 86 Nieuw sheet's H row. Labels were not blind to the
+earlier hit list (logged). No 4.VEL ciphertext carries [sh-lig], so no map reading or token count changed (decode --check exit 0); the
+4.VEL [s-loop]/[s-hook] codes are not aliased to it pending an image comparison. `i j` = [ij] stays M (n=4). No N-class asked or
+changed; no SECOND-OPINIONS-QUEUE.tsv row exists for this target.
