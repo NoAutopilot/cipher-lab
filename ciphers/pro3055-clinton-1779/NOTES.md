@@ -1334,3 +1334,14 @@ cipher copy (pp.120-122) are now checked cell by cell against the period deciphe
 
 Requests: image-uab.canadiana.ca 1 (Image 760 full/max, 200). Vision calls: 1 blind Sonnet pass; worker looks at a 1/5 frame,
 one six-column contact sheet and two native-resolution montages. Status unchanged: partial.
+
+## R11-CLINV5 corrections (6 Oct 2026, account 2, LANE RUN11; verifier of R11-CLIN2380C, AUDIT.md section "R11-CLINV5")
+
+- The PREREG commit e2861d54e cited in R11-CLIN2380C and in `passes/check_2380_p122.py` does not resolve on origin/main; the
+  reachable one is 99d7ccc3e (10:00:17 UTC), ahead of the scoring commit 62c179565 (10:02:35 UTC). Order holds.
+- Conflict (3) is half wrong: c4.6 `1-12` has no underline on the image (only the paper's printed ruling), so "of" is one cipher
+  word `1-12 1-13|`. Only "infavor" is a word-division difference. With c4.6 corrected: 254 compared, (b) 244/254, (c)/(d) 249,
+  control max 32, PASS; grades C 244 / M 48. `p122_reconciled.tsv` is left as committed (the verifier does not edit the worker's
+  files); a later session that touches it should drop the bar at c4.6 and rerun `check_2380_p122.py`.
+- Confirmed by eye: "move" (cipher) vs "movements" (decipherment), "Chesapeak" vs "Chesipeak", and the P.S. without the
+  Recruits-from-Europe clause. Blind pass alone scores the same 242/252 (no cell changed at reconciliation).

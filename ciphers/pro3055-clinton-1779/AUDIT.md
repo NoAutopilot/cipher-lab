@@ -588,3 +588,44 @@ text `known` (VHS Collections vol. II, 1871, p.192). Depth fields unchanged.
    paired "would" with "Europe" are dropped as a leading gap and not listed there (the NOTES prose does name the clause). None
    changes the gate or the C 406 / M 39 grades. Written as a correction section in NOTES.md; the worker's files are left as
    committed. Requests: image-uab.canadiana.ca 1 (200). No subagent calls.
+
+## R11-CLINV5: verifier of R11-CLIN2380C (2380, p.122) (6 Oct 2026, account 2, LANE RUN11; clock 10:16-10:2x UTC, `date -u`)
+
+A separate session from R11-CLIN2380C (NOTES.md section "R11-CLIN2380C"). No novelty class asked; 2380 stays N0, key `period`,
+text `known` (VHS Collections vol. II, 1871, p.192). Depth fields unchanged.
+
+1. **Pre-registration order.** The hash the worker cites, e2861d54e, is not an object on origin/main (folded by `tools/room.py
+   --push`'s rebase, the same gap R11-CLINV4 found for p.121). `PREREG_R11-CLIN2380C.md` first reaches origin/main in 99d7ccc3e
+   (10:00:17 UTC, titled "ROOM: done ... na-suriname-ma", a folded commit), an ancestor of 62c179565 (10:02:35 UTC), the only
+   commit carrying `passes/check_2380_p122.py`, its JSON, `p122_passA.tsv` and `p122_reconciled.tsv`; the PREREG file has not
+   changed since. The gate predates the score by push order; cite 99d7ccc3e, not e2861d54e.
+2. **Re-score.** `passes/check_2380_p122.py --check` exits 0 and reproduces every reported number: 292 cells, 59 cipher words, 252
+   compared, (a) 180, **(b) 242 (0.960, gated)**, (c) 247, (d) 247; control (1000 seeds) mean/p95/max 18.05/25/32 under (b), max 31
+   under (c) and (d); gate PASS; five mismatches as listed. The control shuffles decipherment letters against fixed key positions,
+   so it can differ on this statistic. **Blind pass alone** (`--cells passes/p122_passA.tsv`): identical, (b) 242/252, because the
+   reconciliation changed no cell (only two `?` marks dropped); unlike p.121, the PASS here does not rest on a key-aware re-read.
+3. **Cells eye-checked** (Image 760 full/max, one request to image-uab.canadiana.ca, scratchpad only; crops by
+   `python3 passes/cut_2380_p121_122.py IMG_DIR OUT_DIR`, read at 2-3x of native):
+   - **"move" vs "movements" -- confirmed.** c4 cells 19-22 `1-6 1-10 9-15 1-4` with a heavy underline under 1-4, then
+     `2-15 2-2 4-2 1-29 1-30|` "while", `3-1|` "a", `21-1 ...`. No further cells of "movements". The decipherment (p.135 crops
+     L04, `images/h1649/p135_lines`) reads "in favor of the Southern movements/" by eye. Kept by witness (rule 4), not settled.
+   - **"Chesapeak" vs "Chesipeak" -- confirmed.** c5 cells 31-39 `21-1 5-4 1-4 4-3 6-6 1-3 1-4 6-6 7-10` with a double underline
+     (end of the main text); cell 35 is a clear 6-6, the same figure as cell 38 (a). The decipherment (p.135 L07) reads "in the
+     Chesipeak." by eye. Kept by witness.
+   - **Word division "in favor of" -- partly wrong in the transcription.** c3 foot `1-7 1-11` has no underline, and c4 opens
+     `5-2 6-6 9-15 1-10 1-5|`, so "infavor" is one cipher word (confirmed). But **c4.6 `1-12` carries no underline**: the only
+     line between 1-12 and 1-13 is the faint printed ruling of the paper; the heavy underline is under 1-13 alone. "of" is one
+     cipher word `1-12 1-13|`, not two. Re-scored in scratch with c4.6 = `1-12` (no bar; `--cells`): 58 cipher words, 254
+     compared, (b) **244/254 (0.961)**, (c) 249, (d) 249, control max 32 / 31 / 31, gate PASS, the same five mismatches. So the
+     only word-division difference is "infavor"; "of" is written normally.
+   - **The P.S. lacks the Recruits-from-Europe clause -- confirmed.** The P.S. column (c6) is headed "P. S." and carries 40 cells,
+     `1-7|` "I" ... `2-13` under a double underline, then "(Signed) H: Clinton"; all read as "I have received your Dispatches by
+     the Defiance" under the key (two slips 4-1, 2-13 as listed). No cell group for "with the 650 Recruits and Artillery from
+     Europe" on p.122. The p.121 conflict stands as R11-CLINV4 recorded it: Niagara cipher copy without the clause, Halifax-route
+     decipherment with it. Not checked by this session: VHS II p.192 (the worker's named next step), the Halifax-route cipher copy.
+4. **Corrections (over-claims).** NOTES.md R11-CLIN2380C, the script header and the PREREG-citing lines cite e2861d54e, which does
+   not resolve on origin; the reachable commit is 99d7ccc3e. Conflict (3) "of as two [words] (1-12| 1-13|)" is a transcription
+   error at c4.6: one word. The figures become C 244 / M 48 with the cell corrected (C 242 / M 50 as committed); gate and
+   conclusion unchanged. The worker's files are left as committed; written as a correction section in NOTES.md. Conflicts carried
+   forward by witness: Recruits-from-Europe clause (p.121), "I a[m]" (p.120), "move", "Chesapeak" -- three text differences plus
+   the "infavor" division. Requests: image-uab.canadiana.ca 1 (200). No subagent calls.
