@@ -1,4 +1,4 @@
-# PREREG-MANT521 (R10-MANT521, 6 Oct 2026, written 10:27 UTC by date -u, LANE LANE-RUN10-account-4, account 4), before any pass was read or any statistic computed
+# PREREG-MANT521 (R10-MANT521, 6 Oct 2026, written 10:20 UTC by date -u, LANE LANE-RUN10-account-4, account 4), before any pass was read or any statistic computed
 
 Leaf unit "0521": SHStA Dresden 10026 Loc. 694/08, URL file 0521 (film label 0522, sha256 5b42d15f...bead46bea1b80abf6c1ab0,
 www.archiv.sachsen.de, 1 request, HTTP 200). One written page (left: the end of a letter, ~14 lines, signed), right page blank.
