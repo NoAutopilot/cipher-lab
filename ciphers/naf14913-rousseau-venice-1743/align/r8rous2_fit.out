@@ -1,0 +1,11 @@
+passages: ['f213', 'f216v', 'f249', 'f266r'] distinct codes: 195
+republique: slip vector [2, 1, 2, 2]; codes with equal vector: 1 ['605']
+senat: slip vector [0, 0, 0, 0]; codes with equal vector: n/a (all-zero) 
+ambassadeur: slip vector [0, 0, 0, 0]; codes with equal vector: n/a (all-zero) 
+code 136: vector [0, 0, 0, 0]
+code 219: vector [0, 0, 1, 0]
+code 404: vector [0, 0, 1, 0]
+code 605: vector [2, 1, 2, 2]
+f165 404 at 47: ...420 268 121 63 506 [404] 14 168 114 501 715...
+f165 605 at 4: ...276 52 501 231 [605] 22 739 311 14 242...
+f165 605 at 88: ...10 664 352 63 52 [605] 24 311 14 473 443...
