@@ -1086,3 +1086,29 @@ python3 tools/family_run.py <spec copy> --family wordcode --cipher ciphers/kalin
    transcript and convention B, at err 0.05 only (no measured transcription error exists to bracket).
 Statistic check (rule 3, orthogonal-control paragraph): the shuffled target permutes token order, and the judge and anneal
 score both read order, so the shuffled decode can differ from the target's.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 6 Oct 2026 15:47 | wordcode | N=1066 K=28 restarts=6 corpus=s1s.txt.gz codes=marked,bnd=x,err=0.05 | 1 | 0.870 (0.800-0.962) | -3391.715 | FAIL language: score=-1.562, null_p99=-2.082, real_p05=-0.904, real_median=-0.82, mode=both, N=1066 | yes (gate 0.6) | R14-KAL12 wordcode ru s1s, marked = codes, conv. B, restarts 6 |
+| 6 Oct 2026 15:52 | wordcode | N=1066 K=28 restarts=6 corpus=s1s.txt.gz codes=marked,bnd=x,err=0.05,shuffle_target=1 | 1 | 0.870 (0.800-0.962) | -3445.885 | FAIL language: score=-1.566, null_p99=-2.082, real_p05=-0.904, real_median=-0.82, mode=both, N=1066 | yes (gate 0.6) | R14-KAL12 wordcode ru s1s, marked = codes, conv. B, restarts 6 |
+
+### R14-KAL12 result (6 Oct 2026, 15:42-15:53 UTC; pre-registration commit 586a73621 before any scored run)
+
+Ran commands A and B exactly as pre-registered. About 5 min CPU each. The control is now identical in A and B at every seed
+(the 7f76260e1 fix), so the two rows share one control.
+
+| run | control seeds 1-5 (blended) | control mean | code-class mean | target judge | target anneal score |
+|---|---|---|---|---|---|
+| A (target) | 0.915 / 0.800 / 0.962 / 0.801 / 0.871 | **0.870** | **0.951** (0.955/0.947/0.950/0.911/0.992) | FAIL -1.562 (real_p05 -0.904, null_p99 -2.082) | -3391.7 |
+| B (shuffled target, seed 1) | identical to A | 0.870 | 0.951 | FAIL -1.566 (real_p05 -0.904, null_p99 -2.082) | -3445.9 |
+
+**Gate 1 met** (0.870 >= 0.6, codes 0.951 >= 0.3). **Gate 2: target FAIL, shuffled FAIL** -- the judge is not voided, and the
+target does not PASS. The target judges no better than its own shuffle (-1.562 vs -1.566); its anneal score is 54 points above
+the shuffle's, against a control-seed spread of about 170, and about 660-830 points below every control seed. The target decode
+assigns no whole-word code to any of the 4 marked types (code_tokens_decoded 0): the solver reads them as letters. By the
+pre-registered wording: **control-backed negative for the letter-or-word nomenclator design (apostrophe + 3 diacritic types =
+whole-word codes, the rest letters, Russian s1s), conditional on Ernst's transcript and convention B, at err 0.05 only.**
+Caveat on the control's strength: with 4 code types the control's code vocabulary is the corpus's 4-5 commonest words (vocab
+k 4-5), an easy code class; the gate measures the letter part (0.78-0.96) as much as the codes.

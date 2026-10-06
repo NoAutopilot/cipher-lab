@@ -1,0 +1,28 @@
+# kaliningrad-2015 wordcode seed 1 restarts 6 6 Oct 2026 15:47 UTC; control mean 0.870 (0.800-0.962); score -3391.715
+# {"restart_scores": [-3391.7, -3392.5, -3398.0, -3446.8, -3460.1, -3481.2], "score_per_token": -3.1817, "context_runs": 0, "code_tokens_decoded": 0, "name_types": 0, "code_words": [], "err": 0.05, "vocab_k": 4, "common_a": 2, "code_share": 0.111, "target_code_share": 0.106, "code_types": 3, "extra_code_names": 0, "control_types": 34, "del": 20, "ins": 16, "code": 11, "per_class": {"letters": 0.857, "codes": 0.992, "n_letters": 948, "n_codes": 118, "codes_in_wordlist": 1.0, "codes_hapax": 0.0, "n_hapax": 1, "codes_repeated": 1.0, "n_repeated": 117}}
+itosartwowoketoawiinelsysleyiniwiwiniels
+iliwoetitwntititonalsawaliiswlwoieswa
+iislyaiawlleinytitwiiesiswwetiteesya
+woiteysoieleiatlietyaeseeoeeoewawaeeiwowoyia
+wniwtelseinnintitiwosiieteeesiissiseinois
+isewisltwltslitwillinawlnasysesstistoteewsiy
+setsisoeystekeswotnesliklatsoteletoiieisotitot
+issiywnsilotoiemtoinoiwoaastyntiiilewteii
+iaewosistotoaelwsesmiislslaoieaottselwkwoislitlye
+ieiestewtetiaisitstoasawwywowosiwelosaiiiwii
+iiiloltwwiisesisetoiloititewetssitoweseaweetys
+lntatiimwletwieielwoeleiieaseswoeiistno
+awoieriswtwosesiiottmoetoeseiweinineinliwtoe
+wsitstinywieiesenitoslesiiissloiisetoa
+ontsaweeislienesiitiwoslwotonwotsatowtseeennsstwsm
+wolitylonosewslieisssiasiisetlntoiyttesiititas
+sitotiwostleoiteeetoistawtenosieewietnaeesaoi
+seiwotlotieewsiesoottamiliittaoillwsiowtist
+ilwsmossslostottoeiiliwskiwesieoewoeytwwemi
+sislatkloisiistailssitonyloweleinoteiiew
+kaitistleieiteilwssyswsyiliinltstoiewoits
+estwtoiiestannswonaoneiawnteotoiirsoiiiwmoe
+wiyimettsiiittoettwieosittlalissssloiiswi
+esamwontieawlatltloitsilitweiewettiisnois
+aiatwoietoiwwliselwiostolwseileelslieii
+iseew

@@ -630,3 +630,28 @@ Suggestion (not done): `family_run.py --family wordcode` controls are not seed-r
 between two runs with identical params); a tools job could pin the restart RNG to `--seed`.
 Next step: the letter-or-word nomenclator with marked types as codes is now logged; a different design family or convention B
 for the same design (~$1.5, CPU only) remain. Verdict: keep going (no outside blocker).
+
+
+## R14-KAL12, wordcode RNG pin and convention B, 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run14-jobs.md` "R14-KAL12" (LANE-RUN14, account 2). CPU only, no hosts, no subagents.
+
+(1) Tool. The wordcode control's restart RNG was already pinned to `--seed` (two processes, different PYTHONHASHSEED, gave
+identical controls and decodes). What R14-KAL11 saw was its run B passing `--shuffle-target 1`: `family_run.py` handed the
+*shuffled* tokens to the family as `params["target_msgs"]`, and wordcode's control reads the target's `Counter.most_common()`
+order, whose ties follow token order, so the shuffled run built a different control at the same seed. Fixed in commit
+7f76260e1: the control is built from the unshuffled target, as the `--shuffle-target` docstring already promised; runs without
+`--shuffle-target` are unchanged byte for byte. Offline test (7) in `tools/tests/test_wordcode.py` (fails on the old code,
+passes on the new; `test_family_run.py` also passes).
+
+(2) Convention B. Pre-registered in HYPOTHESES.md "R14-KAL12" (commit 586a73621). Cipher `families/r14_kal12/cipher_marked_B.txt`
+(N 1066, K 28; marked = free apostrophe + ê ö ü, 113 tokens). **Result: control-backed negative for this design at convention B,
+err 0.05.** Control mean 0.870 (codes 0.951) meets gate 0.6; target judge FAIL -1.562 vs real_p05 -0.904, shuffled-target
+decode FAIL -1.566 beside it (same control in both runs). The target decode uses no code words at all. Decodes: `families/r14_kal12/decode_target_B.txt` and
+`decode_shuffle1_B.txt` (moved there: family_run.py's decode name omits the cipher file, so the runs wrote over R14-KAL11's
+convention-A decodes, which were restored from git; a tools job could add the --cipher basename to the decode name). Conditional on Ernst's
+transcript and convention B, and only for the 0.05 band (no measured transcription error exists). Status stays `open`; no
+reading. Rule 10: nothing here is a reading.
+Next step: the letter-or-word nomenclator with marked types as codes is now logged at both conventions; what remains untried is
+a different design family (transposition beyond the A2-KAL2 unigram test, or codes on unmarked types, `codes=topk:N`), ~$1.5
+CPU each. Verdict: keep going (no outside blocker).

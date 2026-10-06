@@ -1,0 +1,28 @@
+# kaliningrad-2015 wordcode seed 1 restarts 6 6 Oct 2026 15:52 UTC; control mean 0.870 (0.800-0.962); score -3445.885; TARGET LETTERS SHUFFLED (seed 1, false-positive floor)
+# {"restart_scores": [-3445.9, -3455.4, -3466.2, -3513.7, -3527.6, -3547.5], "score_per_token": -3.2325, "context_runs": 0, "code_tokens_decoded": 0, "name_types": 0, "code_words": [], "err": 0.05, "vocab_k": 4, "common_a": 2, "code_share": 0.111, "target_code_share": 0.106, "code_types": 3, "extra_code_names": 0, "control_types": 34, "del": 20, "ins": 16, "code": 11, "per_class": {"letters": 0.857, "codes": 0.992, "n_letters": 948, "n_codes": 118, "codes_in_wordlist": 1.0, "codes_hapax": 0.0, "n_hapax": 1, "codes_repeated": 1.0, "n_repeated": 117}}
+iklyiiwyiesniisienssiiinieeiitesiinsiywl
+teliitteteliiestssieeetisisyimseoimee
+toiesyeidititeiyststwelssiseeeeeemii
+eeweieelaeyiilioletiieinesaiieeiieewinmeisis
+wodeseeasilesewesiiiiklelaseliisotieeeish
+tieieitwtietseesyeiiliiileeeiteyiiiiolnieisw
+sseiiliiisestseetleewnoskiesislwstiysswiweelee
+etieeiiyynaetesiyimitliiskteitseiisiieilt
+nedineaeteeseslisseesteniiatlisiesiiseeseeeiioona
+tweiiowsnieniwieseiyiietilenenioiwisssiseloi
+ieiisiiieeeiieewniieetesuioiisanodiletsoeiosie
+osnneseeitwoeeetmelnynseiinyeisilielies
+nietieiesisoksitimiiiienlileaesiieeiitseytie
+ieeioatwoiieniniylsewetselinoenitesoee
+imitstetiseoeideiniymeeiiiieieieieseimiswsienowiii
+mliisstieeeiiisettmoiwissieetyewisiesneokseiit
+kieeeoaeteiwwtsttiotoiidemedsioiilitsswwtotie
+titneliiiaessietiieeydeawieesoiiiniyseistnl
+liseinseieseletniesieisieestttetiliosmeniii
+ikswetsissieyiimeseeieeeistaniwieteieesi
+istestnetieiieaseiestesnoewseieisiseiliit
+desiswseyeieleweeleseesmesiimsekhiiditiiiie
+siiesetesieeeeeetentiyieseiwtswiliioeteie
+eaewesiieieeseliettwtoeloitleiikeyshisili
+ieieswsnetiisweestieeeostksstnieniosdnn
+itwwi
