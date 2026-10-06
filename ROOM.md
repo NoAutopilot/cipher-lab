@@ -9518,3 +9518,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 10:07 | R10-NOX2 worker | claim fr16142-noailles-constantinople-1571: c262 gloss lines below L13, cut+blind read, cap $2.5, box to 10:37 UTC, for LANE LANE-RUN10-account-1
 2026-10-06 10:07 | R10-DEC2678S worker | claim: decode-2678-bnf-colbert127-gravel-1665 sommaire sweep of Mel. Colbert 126-130 for Ratisbon cipher letters, cap 3, box 10:08-10:48 UTC (80% 10:40), for LANE LANE-RUN10-account-1
 2026-10-06 10:07 | R10-COL26B worker | claim: colbert26-lathuillerie-1644 anchor_split re-run with 23 = n as C anchor, cap 2, box 10:07-10:37 UTC (80% 10:31), for LANE LANE-RUN10-account-1
+2026-10-06 10:08 | R10-BAL103D | claim: baluze103-letellier-marca-1644, enlarge f.171r 9 control to >=7 known 9s then run r10/PREREG.md; cap $3.5, box 10:08-10:53 UTC (80% 10:44) for LANE LANE-RUN10-account-1
