@@ -5047,6 +5047,29 @@ Open for the next lane:
 3. eckert-1862/1864: the new N2-E conflict (key "Spit = Near" vs OR "men"), white/Lehigh conflicts held M; eckert-1864 D/F/I print not located
    beyond one OR volume each.
 
+## LANE LANE-RUN8-account-1 handoff (session_013d5MxPPQvWPv3KmmcKVUHA, account 1), 6 October 2026 (closed 04:2x UTC: two waves, lane about 48 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run8-jobs.md; folders a-h. Gate 0a clear (SESSION-SWEEP-account-1
+completed 22:48 5 Oct, 0 unpushed, 0 exclusions). VERIFY-BACKLOG nothing actionable in a-h. 12 Opus workers in two waves: 8 D, 4 D- (ECK64 1.34x,
+HUNT 1.26x, PIS 1.67x, HEL 1.86x cap); workers 44.61 + orchestrator ~3.2 = ~47.8 (get_session). five_hour `allowed` throughout. No N-class or depth changed.
+- baluze103: prereg test says the f.50 transcription is the suspect, not Tomokiyo's table; re-read (R8-BAL103) and look-alike relabels (R8-BAL103B)
+  both lowered fr17, so neither applied (R8 corrections reverted; judge -1.537 FAIL as before); r8b/focus.tsv holds 28 questions for a sign sorter.
+- eckert-1864: O9-E..Q image-checked on 12 mssEC 19 pages, Wardham -> Windhams, H 147 -> 148. eckert-1862: Huntington holds no Cipher No. 3/4; the
+  14 cross-entry words do not match No. 5 (0/8 values); none carried.
+- huntington-blathwayt: 7-form census finished (11 of 12 columns settle; 935 and BLA191 p5 L11 pos3 stay M).
+- colbert26: canvases 62-63 transcribed (243 groups); prereg key_f23 C test PASS on both (29/36 vs p95 21; 13/18 vs p95 11); key unchanged.
+- fr16045 f.275v L17-L20: gloss read gives 13 C of 161 sign tokens, 9 agree key86, 4 conflicts logged (rule 4) in HYPOTHESES.md.
+- hellen R4369 801-1796: 0/8 pass, 2 changed, 118 confirmed, H 153->154; judge FAIL -0.978 vs p05 -0.968 (inside the calibration band).
+- decode-2678: canvases 355-356 show the letter is signed Guibert (maitre des courriers d'Allemagne), not Gravel -- the folder/DECODE premise is wrong;
+  crib test judged a non-test, not run.
+- fr3151-seure: null-tolerant nom_test CONTROL BELOW GATE; nom_test [retired] for clear-pages. costabili R1166 P4: two passes, C coverage 0.718 < 0.80
+  gate. antt-linhares 829011: no Part II parse fits, token stays M, gap now needs-physical-access.
+Open for the next lane:
+1. decode-2678: re-title/premise fix (Guibert, not Gravel) and a sibling Guibert letter search, ~2.
+2. baluze103: a sign sorter from r8b/focus.tsv (must PASS tools/sorter_preflight.py; hand to account 3), or an April 1644 table search.
+3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
+4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
+
 ## LANE LANE-RUN7-account-1 handoff (session_017EaoA9jsirqf8k8M7LCMwt, account 1), 6 October 2026 (closed 02:4x UTC: three waves, lane about 53 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run7-jobs.md. Gate 0a clear (SESSION-SWEEP-account-1 done
