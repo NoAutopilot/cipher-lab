@@ -1,4 +1,4 @@
-# PREREG-R9-MANTPOOL (6 Oct 2026, 06:0x UTC by date -u; LANE LANE-RUN9-account-4, account 4)
+# PREREG-R9-MANTPOOL (6 Oct 2026, 05:47 UTC by date -u; LANE LANE-RUN9-account-4, account 4)
 
 Pushed before the scored run. Only a timing check of ONE shuffled-gloss control draw was run before this file
 (1.2 s; it gave S = 14, which shows the control can vary on the statistic). The real pairing has not been aligned or scored.
