@@ -30,3 +30,32 @@ Apply after the owner's pass: `ArtifactData list` for piles/moves/newpiles, then
 `python3 tools/sign_sorter_apply.py --labels sorter/labels.tsv --db DIR --out sorter/settled_labels.tsv --summary sorter/summary.json`
 (from the target folder). A settled label is still a shape decision (grade I), not a value: it feeds the next key-
 constrained decode of f.110 (NOTES.md "Remaining gaps", gap 2).
+
+## Tile check (R7-MATQA, 6 Oct 2026, 01:56-02:0x UTC): NOT fit to hand on
+
+Sorter rule (LANE-RUN7-account-2, 6 Oct 2026): 5+ random tiles checked against the line images. Method: the six band
+strips (`pages/f110_L01..L06.jpg`, contiguous native bands canvas y 429-758) stacked into one 3330 x 329 image with the
+band edges drawn, and each tile's box drawn on that stack (random.seed(20261006); no network).
+
+What the stack shows: the region holds **five** written lines, not six, and they slope upward to the right (about one
+band over the strip's width), while the bands are flat and only 51-60 px against a line pitch of about 66 px. So each
+band cuts across lines: written line 1 sits at the bottom of L01 on the left and the top of L01 on the right; line 2
+straddles L02/L03 on the left; line 3 straddles L03/L04; lines 4 and 5 fall mostly in L05 and L06. L03 is not an odd
+line, it is the cut between lines 2 and 3, and the other bands carry pieces of their neighbours.
+
+| tile | label | what the box holds |
+|---|---|---|
+| f110_L03_32 | L03-unplaced | the descender tail of a sign of written line 2 (right third), not a sign |
+| f110_L03_06 | L03-unplaced | a 9 px sliver of a line-2 descender (the stem of a q-shape), not a sign |
+| f110_L01_44 | w- | a fragment under the struck-through stretch at the right of line 1, not a w- |
+| f110_L06_19 | m | a 34 x 13 px strip of faint ink between two signs, not an m |
+| f110_L04_17 | e | a 9 x 4 px speck, no sign |
+| f110_L05_12 | o | an 81 x 60 px box over two signs (a 5-shape and a T-shape), not an o |
+
+6 of 6 off their label. Template: `build.sh` calls the current `tools/sign_sorter.py`, but without `--region`, so the
+larger view cannot show a tile on the original page and a cut cannot be checked or fixed there.
+
+Fix (not done here, over this job's cap): re-cut with `tools/sorter_recut.py` (deskew + one-tile-one-sign, as LL-RECUT /
+PIS-RECUT): one Gallica fetch of the native region (canvas 116, x 4780-8110, y 300-860, the source of `images/f110/`, not
+kept on disk), five line traces, reader columns from ciphertext.txt f110-1..5, rebuild with `--region`, then this check
+again; about $3. Until then the sorter must not be published or put on the owner's card.
