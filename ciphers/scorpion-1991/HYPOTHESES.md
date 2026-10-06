@@ -27,6 +27,26 @@ with A2P4-SCORP's N=70 result, untestable by this family on both published crypt
 target). If only the K=145 sensitivity run meets the gate, the result is "depends on K": a settled K is the next step
 before any transcription spend.
 
+## PREREG R11-SCORPCYC (6 Oct 2026, 13:5x UTC, committed before any scored run)
+
+Family: `cycling_homophonic` (new module tools/families/cycling_homophonic.py, this job): Pelling 2020's design hypothesis
+for the Scorpion, each plain letter's homophones used in one fixed cyclic order (the i-th occurrence of a letter with m
+homophones writes homophone (offset + i) mod m). Control design: a plaintext window held out of the solver's corpus, K
+homophones allotted by corpus letter frequency (as homophonic_anneal.make_control), each letter's homophones then used in
+cyclic order from a random offset. Solver: an n-gram anneal over the sign -> letter key whose objective adds
+-lam x (cycle violations): for each letter, its sign sequence in text order must repeat with period m = its number of
+distinct signs; every position where it does not counts one violation (a true key has none). Same spec judge corpora
+(pg1661_holmes + pg2701_mobydick), seeds 1-3, restarts 8, gate 0.6 (control mean recovery).
+Runs: (1) primary S1: N=70, K=53, lam default (2.0), on `scripts/s1_ours_oneline.txt`; (2) S5 shape placeholder N=180,
+K=155 (`scripts/s5_shape_N180_K155.txt`, A2P4-SCORP3) control-only; (3) sensitivity N=180, K=145 control-only;
+(4) sensitivity S1 N=70 K=53 with `--param lam=50` (cycle as a near-hard constraint), control-only unless it alone meets
+the gate. Target S1 is run (ours and Bourdeau's transcription) only if the N=70 control mean >= 0.6, then judged by the spec's
+judge block (en corpus of unknown reliability, EN-FOLDS: a PASS = "worth a verifier", never a reading). S5 is never run (no
+settled transcription). A control below gate = "untestable by this family at this N, K" (rule 3), not a negative.
+Can the control vary on the statistic? Yes: recovery is per-position letter agreement on a fresh enciphered window per
+seed; the cycle term changes the solver's search, not the scoring. The module's offline test must show the cycle term
+reading an easy cycling control (N=400) at least as well as lam=0, so a low N=70 figure is the N, not a broken solver.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
