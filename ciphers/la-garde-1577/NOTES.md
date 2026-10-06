@@ -1228,11 +1228,63 @@ error, not the method, is the limit. 0 tokens read (H 0, C 0, S 0, M 0, I 0). St
 **Observation (not a result).** The descriptive Z_MI clears 0.80 against both running-key variants at e=0.23 (0.885 /
 0.843), but not at 0.30. That was seen after the run, so under rule 3 it cannot be promoted to the gate here.
 
-**Next cheapest step:** a fresh pre-registration with Z_MI as the primary statistic and new control seeds, about
+**Next cheapest step:** ~~a fresh pre-registration with Z_MI as the primary statistic and new control seeds, about
 USD 1, CPU only. It is a different instrument, not a re-tune of Z_R. Its power at the error ceiling is marginal: it
 fails at 0.30, so the measured error band (20-25%) sits near its edge. If its power holds on fresh seeds, score the
 target. Otherwise, as GAPS149 said, the target waits for new material: a sharper image of KHA A 11/XIV C/M-12, or
-pooled same-system ciphertext.
+pooled same-system ciphertext.~~ Done by R15-LAGMI below (power PASS, target scored).
 
 Requests: none. Vision: 0 calls. New files: `families/digram_prereg.md`, `families/digram_check.py`,
 `families/digram_check.tsv`.
+
+## R15-LAGMI: adjacent mutual information (Z_MI), homophonic vs running key, fresh seeds (6 Oct 2026, account 2, LANE-RUN15-account-2)
+
+**Job:** R15-LAGDIG's next cheapest step. Z_MI is the primary statistic this time, with fresh control seeds; it is a second
+statistic, not a re-tune of Z_R. Scripts only: no network, no vision, no subagents. Intake gate (lane orchestrator, 17:1x
+UTC): `la-garde-1577: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**Pre-registration:** `families/mi_prereg.md`, commit 12aa5e559, pushed at 17:55 UTC before any run. It keeps
+R15-LAGDIG's designs, noise recipe and error bracket (0, 0.10, 0.23, 0.30) and its scoring rule, applied to Z_MI. The
+homophonic seeds are 1001-1040 (R15-LAGDIG used 1-40), and the window/noise/shuffle RNG is 20261006 (R15-LAGDIG used
+1577). The power gate is AUC(Z_MI) >= 0.80 against both running-key variants at e=0.23. Z_R is reported only
+descriptively and decides nothing.
+
+**Result:** `families/mi_check.py` (seeded, `--check` exit 0), `families/mi_check.tsv`.
+
+| error | AUC Z_MI homo vs RK-fr | vs RK-nl | AUC Z_R vs RK-fr (descriptive) | vs RK-nl |
+|---|---|---|---|---|
+| 0.00 | 0.999 | 0.999 | 0.987 | 0.988 |
+| 0.10 | 0.984 | 0.995 | 0.929 | 0.944 |
+| **0.23** | **0.879** | **0.912** | 0.812 | 0.836 |
+| 0.30 | 0.818 | 0.816 | 0.715 | 0.704 |
+
+**Power PASS** at e=0.23 (min AUC 0.879 >= 0.80). On these seeds Z_MI also holds 0.82 at e=0.30. R15-LAGDIG's
+post-hoc Z_MI numbers (0.885 / 0.843) were in the same range, so this result replicates on fresh seeds.
+
+**Target (scored per the prereg):** Z_MI = 1.79. Control distributions at e=0.23:
+- homophonic: mean 1.97, p05 0.09, p95 3.64; the target sits at the 45th percentile;
+- RK-fr: mean 0.09, p95 1.50; the target sits at the 97.5th percentile;
+- RK-nl: mean -0.19, p95 1.71; the target is above all 40 seeds.
+
+Under the pre-registered rule the verdict is **favours homophonic**: the target's Z_MI is above both running-key p95s and
+at or above the homophonic p05. The target's Z_R is 2.10 (descriptive only; R15-LAGDIG showed Z_R is unpowered here).
+
+**What this does and does not say.**
+- It is a design preference between two designs, not a reading. 0 tokens read (H 0, C 0, S 0, M 0, I 0).
+- The margin over RK-nl's p95 is thin (1.79 against 1.71) at 40 seeds.
+- Only homophonic K=26 and running key were in the comparison. A nomenclator or code layer, or masc (which GAPS145's IC
+  had already excluded), were not controls here. So "favours homophonic" means "has more adjacent contact than a running
+  key at this error", not "is homophonic".
+- Insertions and deletions were not modelled (caveat, as GAPS149).
+
+Together with GAPS145 (IC excludes masc; running_key pct 0.45-0.90, homophonic pct 0.075) and GAPS149 (no periodic
+signal), the base codes now look most like a low-K homophonic or similar contact-preserving substitution. A running key
+is disfavoured but not excluded. Status unchanged (`open`). This is a statistic, not a solver; it is logged in
+HYPOTHESES.md.
+
+**Next cheapest step:** `homophonic` through `tools/family_run.py` on `families/basecode_cipher.txt`, matched control
+first at noise 0.23 (about USD 1.5, CPU only). Expect CONTROL BELOW GATE: masc's own control was 0.367 at 0.23
+(A2-LAG3), and homophonic is harder. If that happens, the row is a non-test at this error, and the target waits for
+GAPS149's new material: a sharper image of KHA A 11/XIV C/M-12 to lower the error, or pooled same-system ciphertext.
+
+Requests: none. Vision: 0 calls. New files: `families/mi_prereg.md`, `families/mi_check.py`, `families/mi_check.tsv`.
