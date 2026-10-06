@@ -101,12 +101,57 @@
   {
    "file": "IMG_R9501_I44762_P1.jpg",
    "sha1": "b510ebe5558bef931d35f3ad9cc922194b5feffe",
-   "size_px": [3392, 2436],
+   "size_px": [
+    3392,
+    2436
+   ],
    "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9501_I44762_P1.jpg",
    "record": "R9501",
    "folio": "f.34 (cipher)",
    "fetched": "04 Oct 2026 00:49 UTC",
    "by": "RUN1-SEG",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9502_I44766_P1.jpg",
+   "sha1": "53ff7123adb9c76704145fc680174c3dcdbf1463",
+   "size_px": [
+    3392,
+    2436
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9502_I44766_P1.jpg",
+   "record": "R9502",
+   "folio": "f.40 (cipher, right page; f.39v left)",
+   "fetched": "06 Oct 2026 11:59 UTC",
+   "by": "R12-RJM42",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9502_I44766_P2.jpg",
+   "sha1": "9041ae2d3b8a22639dad9c0b02ab01c4c3f4f319",
+   "size_px": [
+    3392,
+    2436
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9502_I44766_P2.jpg",
+   "record": "R9502",
+   "folio": "f.40v-41 (cipher continues, left)",
+   "fetched": "06 Oct 2026 11:59 UTC",
+   "by": "R12-RJM42",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9502_I44766_P3.jpg",
+   "sha1": "c9b31254970b2bae5ceaa8158293fe32c9e89835",
+   "size_px": [
+    3392,
+    2436
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9502_I44766_P3.jpg",
+   "record": "R9502",
+   "folio": "f.42 (clerk's decipherment, right)",
+   "fetched": "06 Oct 2026 11:59 UTC",
+   "by": "R12-RJM42",
    "committed": false
   }
  ],

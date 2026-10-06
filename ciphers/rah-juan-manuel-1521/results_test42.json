@@ -1,0 +1,164 @@
+{
+ "agree_tokens": 396,
+ "calibration": {
+  "code_words": 210,
+  "code_words_matched": 132,
+  "gate": 0.5,
+  "share": 0.6286,
+  "verdict": "PASS"
+ },
+ "clear_lines_dropped": [
+  21,
+  22,
+  23,
+  24
+ ],
+ "err_2reader": 0.28,
+ "gloss_letters": 1157,
+ "gloss_starts_with_incipit": false,
+ "incipit_letters": 33,
+ "keys": {
+  "alphabet.tsv": {
+   "heldout": {
+    "N": 135,
+    "S_real": 0.1556,
+    "gate": "FAIL",
+    "null_max": 0.1259,
+    "null_mean": 0.0253,
+    "null_p95": 0.0741,
+    "of": 201,
+    "per_label": {
+     "3": "0/2",
+     "4": "0/20",
+     "7": "0/1",
+     "9": "0/5",
+     "A": "8/22",
+     "E": "0/4",
+     "F": "0/29",
+     "R": "4/6",
+     "T": "1/17",
+     "V": "0/4",
+     "X": "0/4",
+     "Z": "8/21"
+    },
+    "rank": 1
+   },
+   "line1_incipit_separate": {
+    "N": 9,
+    "S_real": 0.1111,
+    "gate": "FAIL",
+    "null_max": 0.1111,
+    "null_mean": 0.0078,
+    "null_p95": 0.1111,
+    "of": 201,
+    "per_label": {
+     "4": "0/1",
+     "F": "0/2",
+     "T": "0/3",
+     "V": "0/1",
+     "X": "0/1",
+     "Z": "1/1"
+    },
+    "rank": 15
+   },
+   "values": {
+    "3": "d",
+    "4": "de",
+    "7": "i",
+    "9": "e",
+    "A": "a",
+    "E": "on",
+    "F": "i",
+    "K": "y",
+    "R": "s",
+    "T": "d",
+    "V": "ne",
+    "X": "an",
+    "Z": "r"
+   }
+  },
+  "key_tomokiyo_alpha.tsv": {
+   "heldout": {
+    "N": 134,
+    "S_real": 0.2761,
+    "gate": "PASS",
+    "null_max": 0.1716,
+    "null_mean": 0.0636,
+    "null_p95": 0.1269,
+    "of": 201,
+    "per_label": {
+     "3": "0/2",
+     "4": "7/20",
+     "9": "0/5",
+     "A": "8/22",
+     "E": "0/4",
+     "F": "10/29",
+     "R": "4/6",
+     "T": "0/17",
+     "V": "0/4",
+     "X": "0/4",
+     "Z": "8/21"
+    },
+    "rank": 1
+   },
+   "line1_incipit_separate": {
+    "N": 9,
+    "S_real": 0.4444,
+    "gate": "PASS",
+    "null_max": 0.3333,
+    "null_mean": 0.07,
+    "null_p95": 0.2222,
+    "of": 201,
+    "per_label": {
+     "4": "1/1",
+     "F": "2/2",
+     "T": "0/3",
+     "V": "0/1",
+     "X": "0/1",
+     "Z": "1/1"
+    },
+    "rank": 1
+   },
+   "values": {
+    "3": "e",
+    "4": "o",
+    "9": "e",
+    "A": "a",
+    "E": "h",
+    "F": "",
+    "K": "y",
+    "R": "s",
+    "T": "s",
+    "V": "m",
+    "X": "e",
+    "Z": "r"
+   }
+  }
+ },
+ "lines": 26,
+ "max_tokens": 550,
+ "symbol_tokens": {
+  "all": 158,
+  "excluded_line1_incipit": 9,
+  "labels": {
+   "3": 2,
+   "4": 21,
+   "7": 1,
+   "8": 1,
+   "9": 5,
+   "A": 22,
+   "B": 5,
+   "E": 4,
+   "F": 31,
+   "Q": 8,
+   "R": 6,
+   "T": 20,
+   "V": 5,
+   "X": 5,
+   "Z": 22
+  },
+  "scored": 149
+ },
+ "symbols_agreed": 158,
+ "symbols_split": 128
+}

@@ -1,0 +1,559 @@
+i	line	kind	token	chunk
+0	1	sym	@F	
+1	1	sym	@V	
+2	1	sym	@F	
+3	1	sym	@T	
+4	1	unk	@~1	
+5	1	unk	@~2	e
+6	1	unk	@~3	s
+7	1	unk	@~4	t
+8	1	unk	@~5	a
+9	1	code	otra	otra
+10	1	code	le	le
+11	1	unk	@~6	t
+12	1	sym	@Z	r
+13	1	unk	@~7	a
+14	1	code	se	s
+15	1	sym	@T	
+16	1	code	contra	crevi
+17	1	sym	@X	
+18	1	sym	@4	o
+19	1	unk	@~8	a
+20	1	code	no	no
+21	1	sym	@T	c
+22	1	unk	@~9	h
+23	1	miss	%g	e
+24	1	unk	@~10	y
+25	1	code	no	no
+26	1	code	pudo	pudo
+27	2	unk	@~11	pa
+28	2	unk	@~12	rt
+29	2	code	el	ir
+30	2	unk	@~13	el
+31	2	code	correo	correo
+32	2	sym	@F	o
+33	2	sym	@4	y
+34	2	unk	@~14	e
+35	2	miss	%ges	s
+36	2	code	veni	veni
+37	2	code	da	da
+38	2	code	nueua	nueva
+39	2	code	que	que
+40	2	code	el	el
+41	2	miss	%bao	visorey
+42	2	miss	%get	de
+43	2	unk	@~15	na
+44	2	miss	%kor	pestamenos
+45	2	code	mal	mal
+46	2	sym	@4	o
+47	2	sym	@F	
+48	3	code	mas	mas
+49	3	code	en	end
+50	3	code	vi	u
+51	3	code	da	da
+52	3	sym	@4	o
+53	3	code	en	en
+54	3	miss	%leh	muerte
+55	3	unk	@~16	su
+56	3	code	va	ya
+57	3	code	es	es
+58	3	miss	%lon	m
+59	3	sym	@4	uy
+60	3	code	que	que
+61	3	code	vuestramagestad	vuestramagestad
+62	3	miss	%qu	co
+63	3	unk	@~17	mo
+64	3	code	otra	otras
+65	3	unk	@~18	ve
+66	3	sym	@9	ze
+67	4	sym	@X	st
+68	4	code	es	en
+69	4	unk	@~19	go
+70	4	unk	@~20	di
+71	4	sym	@F	ho
+72	4	code	porque	porque
+73	4	unk	@~21	su
+74	4	code	en	en
+75	4	miss	%ou	f
+76	4	unk	@~22	e
+77	4	sym	@Z	r
+78	4	code	me	me
+79	4	code	da	da
+80	4	miss	%g	d
+81	4	code	ni	ni
+82	4	unk	@~23	sa
+83	4	code	ni	ni
+84	4	code	da	da
+85	4	unk	@~24	d
+86	4	code	no	not
+87	4	code	de	ie
+88	5	miss	%dg	n
+89	5	unk	@~25	e
+90	5	unk	@~26	d
+91	5	miss	%ott	ilatar
+92	5	sym	@A	la
+93	5	sym	@Z	pr
+94	5	unk	@~27	ov
+95	5	code	el	isi
+96	5	sym	@F	on
+97	5	unk	@~28	y
+98	5	code	ha	ha
+99	5	code	de	de
+100	5	code	se	se
+101	5	sym	@Z	r
+102	5	miss	%xan	
+103	5	sym	@A	
+104	5	sym	@Q	b
+105	5	unk	@~29	u
+106	5	unk	@~30	e
+107	5	sym	@Z	n
+108	5	miss	%ott	a
+109	5	sym	@A	y
+110	6	code	porque	porque
+111	6	code	es	es
+112	6	code	de	de
+113	6	miss	%nol	g
+114	6	miss	%niet	ran
+115	6	miss	%do	imp
+116	6	sym	@T	or
+117	6	code	va	ta
+118	6	sym	@F	nc
+119	6	sym	@F	ia
+120	6	unk	@~31	y
+121	6	code	se	
+122	6	code	al	p
+123	6	miss	%g	e
+124	6	code	se	se
+125	6	unk	@~32	a
+126	6	unk	@~33	l
+127	6	unk	@~34	d
+128	6	unk	@~35	i
+129	6	sym	@A	a
+130	6	sym	@T	b
+131	6	unk	@~36	l
+132	6	sym	@4	o
+133	6	code	porque	porque
+134	6	code	no	no
+135	7	miss	%get	e
+136	7	miss	%mat	sta
+137	7	sym	@T	h
+138	7	sym	@E	ec
+139	7	sym	@A	ha
+140	7	code	un	un
+141	7	unk	@~37	a
+142	7	sym	@4	o
+143	7	code	italia	
+144	7	sym	@F	ha
+145	7	code	que	que
+146	7	unk	@~38	l
+147	7	unk	@~39	a
+148	7	sym	@R	s
+149	7	miss	%tast	cosas
+150	7	code	esto	esto
+151	7	code	vi	vi
+152	7	unk	@~40	e
+153	7	unk	@~41	s
+154	7	sym	@A	s
+155	7	miss	%y	en
+156	7	code	de	de
+157	8	code	otra	otra
+158	8	miss	%koh	mane
+159	8	sym	@F	ra
+160	8	sym	@Q	y
+161	8	code	el	el
+162	8	code	conselo	consejo
+163	8	code	no	no
+164	8	code	ha	ha
+165	8	miss	%kiz	menester
+166	8	miss	%kor	menos
+167	8	miss	%fup	remedio
+168	8	code	que	que
+169	8	code	el	el
+170	8	code	visorey	visorey
+171	8	unk	@~42	y
+172	8	sym	@F	as
+173	8	unk	@~43	si
+174	8	unk	@~44	ot
+175	8	unk	@~45	os
+176	9	code	ha	ha
+177	9	sym	@Z	r
+178	9	miss	%ott	t
+179	9	unk	@~46	o
+180	9	sym	@R	s
+181	9	unk	@~47	of
+182	9	unk	@~48	fi
+183	9	sym	@B	ci
+184	9	sym	@4	al
+185	9	unk	@~49	es
+186	9	sym	@F	el
+187	9	sym	@B	ca
+188	9	unk	@~50	rd
+189	9	sym	@F	en
+190	9	unk	@~51	al
+191	9	unk	@~52	de
+192	9	sym	@B	m
+193	9	code	el	ed
+194	9	sym	@X	ic
+195	9	unk	@~53	is
+196	9	code	creo	creo
+197	9	code	que	que
+198	9	code	enbia	enbia
+199	9	sym	@Z	r
+200	9	sym	@A	a
+201	10	code	luego	luego
+202	10	code	lo	los
+203	10	sym	@R	di
+204	10	code	x	ez
+205	10	code	mil	myl
+206	10	miss	%rue	que
+207	10	sym	@T	y
+208	10	code	que	ote
+209	10	code	yo	n
+210	10	unk	@~54	go
+211	10	code	escrito	escripto
+212	10	code	para	para
+213	10	code	lo	lo
+214	10	sym	@R	s
+215	10	code	aleman	aleman
+216	10	miss	%ges	e
+217	10	sym	@F	s
+218	10	sym	@Q	y
+219	10	code	quiere	quiere
+220	11	code	que	que
+221	11	code	yo	yo
+222	11	code	me	m
+223	11	sym	@4	
+224	11	sym	@T	e
+225	11	unk	@~55	
+226	11	unk	@~56	
+227	11	unk	@~57	o
+228	11	sym	@9	b
+229	11	unk	@~58	l
+230	11	unk	@~59	i
+231	11	unk	@~60	g
+232	11	unk	@~61	u
+233	11	sym	@F	e
+234	11	code	que	que
+235	11	miss	%ges	e
+236	11	code	ha	sa
+237	11	sym	@Z	l
+238	11	miss	%ott	g
+239	11	sym	@4	o
+240	11	miss	%ba	trabajoso
+241	11	code	para	para
+242	11	code	mi	mi
+243	11	code	se	se
+244	11	sym	@T	g
+245	11	unk	@~62	un
+246	11	miss	%y	la
+247	11	unk	@~63	f
+248	12	code	con	ian
+249	12	miss	%ooz	
+250	12	unk	@~64	
+251	12	miss	%do	
+252	12	sym	@T	a
+253	12	code	yo	yo
+254	12	miss	%rug	tengo
+255	12	code	de	d
+256	12	code	esto	esto
+257	12	sym	@R	s
+258	12	code	de	de
+259	12	code	napoles	napyta
+260	12	sym	@F	m
+261	12	unk	@~65	b
+262	12	unk	@~66	i
+263	12	unk	@~67	e
+264	12	miss	%ag	n
+265	12	code	creo	creo
+266	12	code	que	que
+267	12	code	enbia	enbia
+268	13	sym	@Z	r
+269	13	sym	@A	a
+270	13	miss	%yed	algunap
+271	13	unk	@~68	ar
+272	13	unk	@~69	te
+273	13	code	del	del
+274	13	sym	@A	a
+275	13	code	gente	gente
+276	13	code	de	de
+277	13	code	florencia	florenas
+278	13	unk	@~70	
+279	13	unk	@~71	
+280	13	sym	@Z	e
+281	13	code	se	
+282	13	code	con	con
+283	13	miss	%nns	l
+284	13	code	de	a
+285	13	code	vuestramagestad	cesareamagestad
+286	14	sym	@F	
+287	14	sym	@V	
+288	14	sym	@F	
+289	14	sym	@T	e
+290	14	unk	@~72	l
+291	14	unk	@~73	c
+292	14	miss	%i	a
+293	14	unk	@~74	r
+294	14	unk	@~75	d
+295	14	code	el	e
+296	14	unk	@~76	
+297	14	unk	@~77	
+298	14	sym	@9	
+299	14	miss	%ott	
+300	14	sym	@Z	
+301	14	unk	@~78	
+302	14	unk	@~79	n
+303	14	sym	@T	a
+304	14	sym	@4	l
+305	14	code	me	me
+306	14	code	escriviescrevi	
+307	14	sym	@4	a
+308	14	unk	@~80	y
+309	14	unk	@~81	e
+310	14	unk	@~82	r
+311	14	code	que	que
+312	14	miss	%maz	e
+313	14	sym	@A	ra
+314	15	unk	@~83	q
+315	15	sym	@Q	ue
+316	15	code	yo	yo
+317	15	code	enbia	enbia
+318	15	code	se	s
+319	15	unk	@~84	s
+320	15	unk	@~85	e
+321	15	unk	@~86	de
+322	15	sym	@A	a
+323	15	code	mi	q
+324	15	code	ver	ue
+325	15	sym	@Z	
+326	15	sym	@X	l
+327	15	sym	@9	s
+328	15	sym	@T	e
+329	15	sym	@8	o
+330	15	sym	@Z	r
+331	15	sym	@4	f
+332	15	unk	@~87	i
+333	15	sym	@A	a
+334	15	code	mente	
+335	15	unk	@~88	n
+336	15	code	aquel	aque
+337	16	code	de	
+338	16	miss	%poz	a
+339	16	code	que	
+340	16	code	ali	lli
+341	16	code	tiene	tiene
+342	16	sym	@F	
+343	16	sym	@F	
+344	16	code	yo	yo
+345	16	code	he	he
+346	16	code	enbia	enbia
+347	16	code	do	do
+348	16	miss	%yac	al
+349	16	sym	@F	la
+350	16	sym	@F	y
+351	16	code	me	me
+352	16	miss	%dif	rogo
+353	16	code	en	en
+354	16	unk	@~89	s
+355	17	unk	@~90	u
+356	17	code	carta	carta
+357	17	code	que	que
+358	17	code	yo	yo
+359	17	code	escriviescrevi	
+360	17	unk	@~91	st
+361	17	code	se	uvi
+362	17	sym	@A	es
+363	17	code	vuestramagestad	seconsumagestad
+364	17	code	en	en
+365	17	unk	@~92	su
+366	17	code	favor	favor
+367	17	sym	@Q	y
+368	17	code	de	de
+369	17	code	aquell	aquella
+370	17	sym	@A	co
+371	17	code	xvi	unid
+372	17	code	de	de
+373	18	code	sena	sena
+374	18	code	dezi	dizi
+375	18	code	en	en
+376	18	code	do	do
+377	18	code	que	que
+378	18	unk	@~93	
+379	18	unk	@~94	
+380	18	unk	@~95	
+381	18	unk	@~96	
+382	18	unk	@~97	
+383	18	sym	@A	q
+384	18	code	vuestramagestad	ueriasumagestad
+385	18	sym	@V	c
+386	18	miss	%ar	omo
+387	18	code	yo	yo
+388	18	miss	%fe	quisiessei
+389	18	code	se	te
+390	18	sym	@F	m
+391	18	code	escriviescrevi	
+392	18	code	le	le
+393	18	code	que	que
+394	19	code	yo	yo
+395	19	code	lo	lo
+396	19	code	ha	har
+397	19	sym	@Z	ia
+398	19	code	va	uan
+399	19	unk	@~98	do
+400	19	code	el	el
+401	19	sym	@4	h
+402	19	code	vi	om
+403	19	unk	@~99	es
+404	19	code	se	se
+405	19	miss	%mat	s
+406	19	sym	@T	e
+407	19	sym	@E	o
+408	19	sym	@4	r
+409	19	code	lo	lo
+410	19	code	de	d
+411	19	code	este	este
+412	19	code	possible	presono
+413	19	sym	@F	
+414	19	miss	%lex	
+415	20	code	se	se
+416	20	code	lo	lo
+417	20	code	que	que
+418	20	code	ha	h
+419	20	sym	@Z	
+420	20	sym	@A	a
+421	20	sym	@F	
+422	20	sym	@F	
+423	20	unk	@~100	
+424	20	unk	@~101	
+425	20	unk	@~102	r
+426	25	sym	@F	a
+427	25	sym	@X	t
+428	25	code	en	en
+429	25	sym	@T	g
+430	25	sym	@4	o
+431	25	code	de	se
+432	25	sym	@T	o
+433	25	sym	@E	r
+434	25	sym	@9	q
+435	25	sym	@Z	ue
+436	25	sym	@3	m
+437	25	code	no	e
+438	25	unk	@~103	ha
+439	25	code	enbia	enbia
+440	25	code	do	do
+441	25	unk	@~104	a
+442	25	code	dezi	dezi
+443	25	sym	@Z	r
+444	25	miss	%il	agora
+445	25	code	que	que
+446	25	code	el	el
+447	25	code	no	no
+448	25	miss	%get	esta
+449	26	code	del	del
+450	26	miss	%rot	to
+451	26	code	con	do
+452	26	code	contra	conve
+453	26	unk	@~105	r
+454	26	miss	%ott	t
+455	26	sym	@A	i
+456	26	code	do	do
+457	26	code	con	con
+458	26	code	el	elr
+459	26	miss	%fed	ydefrancia
+460	26	code	no	no
+461	26	code	se	se
+462	26	code	si	
+463	26	code	lo	lo
+464	26	miss	%rac	dize
+465	26	code	por	por
+466	26	code	en	en
+467	27	sym	@T	m
+468	27	sym	@A	es
+469	27	unk	@~106	a
+470	27	sym	@Z	go
+471	27	unk	@~107	ra
+472	27	code	me	me
+473	27	sym	@F	h
+474	27	sym	@V	a
+475	27	sym	@F	n
+476	27	sym	@T	d
+477	27	unk	@~108	i
+478	27	unk	@~109	c
+479	27	unk	@~110	h
+480	27	unk	@~111	o
+481	27	unk	@~112	q
+482	27	sym	@Q	u
+483	27	unk	@~113	e
+484	27	code	el	el
+485	27	code	duquedemilan	
+486	27	unk	@~114	d
+487	27	code	vi	u
+488	27	sym	@A	
+489	27	unk	@~115	q
+490	27	code	de	ue
+491	27	code	parti	
+492	27	sym	@Z	
+493	28	code	de	de
+494	28	miss	%ott	c
+495	28	sym	@Z	am
+496	28	code	en	in
+497	28	sym	@Q	
+498	28	sym	@4	
+499	28	sym	@A	
+500	28	miss	%ben	o
+501	28	code	de	d
+502	28	code	este	est
+503	28	code	ahunque	eaunque
+504	28	unk	@~116	
+505	28	unk	@~117	y
+506	28	code	parti	
+507	28	unk	@~118	o
+508	28	code	el	al
+509	28	code	primer	primer
+510	28	sym	@4	o
+511	29	code	bien	bien
+512	29	code	creo	creo
+513	29	code	que	que
+514	29	sym	@T	h
+515	29	sym	@3	i
+516	29	sym	@7	e
+517	29	sym	@4	ro
+518	29	code	ni	ni
+519	29	sym	@4	
+520	29	miss	%zig	
+521	29	code	le	m
+522	29	sym	@R	
+523	29	unk	@~119	
+524	29	unk	@~120	
+525	29	unk	@~121	
+526	29	sym	@T	
+527	29	sym	@E	
+528	29	miss	%ott	
+529	29	sym	@A	
+530	29	sym	@Z	
+531	29	unk	@~122	
+532	29	sym	@F	
+533	29	sym	@V	
+534	29	sym	@F	
+535	29	unk	@~123	o
+536	29	miss	%i	a
+537	29	unk	@~124	d
+538	29	unk	@~125	o
+539	29	sym	@B	r
+540	29	sym	@4	n
+541	30	sym	@B	o
+542	30	code	el	el
+543	30	code	marquesdepescara	marquesdepescara
+544	30	miss	%ges	queria
+545	30	code	se	se
+546	30	sym	@Z	r
+547	30	unk	@~126	c
+548	30	miss	%pep	apitan
+549	30	code	del	del
+550	30	sym	@A	a
+551	30	code	visorey	yglesia
+552	30	sym	@Q	y
+553	30	unk	@~127	ha
+554	30	unk	@~128	me
+555	30	code	roga	rog
+556	30	code	marquesdepescara	adoquelomismoalp
+557	30	code	que	are

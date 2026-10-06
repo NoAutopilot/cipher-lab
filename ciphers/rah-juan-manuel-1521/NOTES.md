@@ -598,3 +598,74 @@ Consequence: any reading of these letters built on Tomokiyo's table stays `publi
 - Rule 10: this is a search result. A printed clear-text chapter of one letter (CODOIN XXVI pp.49-50) located; no prior mapping of its ciphertext to that text beyond the secretaría's own is claimed or excluded. Not classified.
 - Page check: printed page numbers read from OCR only; the page image was not opened. Requests: archive.org 3 (djvu x2, advancedsearch 1), no other host.
 - Next, for a verifier: open CODOIN XXVI pp.49-50 image at IA to confirm page numbers and whether the printed text is the whole chapter; test whether R9526's first page matches the printed chapter (grade C known plaintext, would give a held-out check on Tomokiyo's table).
+
+## Both letter alphabets held out on R9502 f.40 / f.42 (R12-RJM42, 6 Oct 2026, 11:58-12:08 UTC)
+Brief: .claude/briefs/runs/2026-10-06-account2-run12-jobs.md job R12-RJM42. Opus worker, 3 Sonnet subagent calls (2 cipher passes,
+1 gloss read; reconciliation by script). Intake gate (brief): `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search
+citation found within 6 lines`. Pre-registration witness/PREREG_f42.md, pushed in 622a572e0 before the scored run (two slips in its
+prose, recorded here, not changed: it says "written 12:1x UTC" -- the clock read 12:02 UTC; it says the incipit is 32 letters -- the
+committed script counts 33, `len(plain_letters(INCIPIT))`, and the script is what ran).
+
+Material: one DECODE browser login, record 9502 (Juan Manuel to Charles V, Rome, 8 Mar 1522), 7 requests to de-crypt.org (login,
+RecordsView, 3 thumbnails, 3 full-size images). P1 right page = f.40 (cipher: 20 lines, 4 lines in clear, 6 lines cipher); P3 right page
+= f.42, the clerk's decipherment ("De don Joan manuel de Roma 8 de março 1522"), with "Claro" where f.40's clear passage stands. Images in
+the scratchpad only; sha1s in images/manifest.json, crop boxes in images/crops_f40_f42_manifest.json. Crops (pasted):
+```
+$ python3 tools/iiif_lines.py --image IMG_R9502_I44766_P1.jpg --region 1700,150,1620,2010 --out <scratch>/crops --prefix f40 --follow-slope 300 --slope-margin 22 --debug
+  wrote 30 crops   (contact sheet checked by eye: one text line per crop, L21-L24 the clear passage)
+$ python3 tools/iiif_lines.py --image IMG_R9502_I44766_P3.jpg --region 1720,130,1620,1960 --out <scratch>/crops --prefix f42 --follow-slope 300 --slope-margin 15 --debug
+  wrote 27 crops   (overlay checked)
+```
+Passes: passes/f40_A.tsv (forward), passes/f40_B.tsv (reverse order), shared passes/inventory.md; passes/gloss_f42.tsv (one read, 27 rows,
+24 [?], L01 heading). Reconciled: ciphertext_f40_reconciled.tsv; err_2reader 0.280 (396 of 550 tokens agree; f.194 was 0.23, f.199 0.42);
+symbols 158 agreed, 128 split. err_true not measured.
+
+Scored run: `python3 scripts/test42.py` (results_test42.json, passes/align_f40_f42.tsv; `--check` exits 1 if stale: ran, up to date).
+Test 1's aligner and settings unchanged, prior-free.
+
+| step | statistic | real | control (200 value-permuted keys): mean / p95 / max | rank | N | verdict |
+|---|---|---|---|---|---|---|
+| gate 0, calibration | nomenclator code tokens landing on their own word | 0.629 (132/210) | -- | -- | 210 | PASS (>= 0.50) |
+| Tomokiyo's alphabet (key_tomokiyo_alpha.tsv, 12 labels), held out | S | **0.276** | 0.064 / 0.127 / 0.172 | 1 of 201 | 134 | **PASS** |
+| alphabet.tsv (13 labels, f.194/f.197), held out | S | 0.156 | 0.025 / 0.074 / 0.126 | 1 of 201 | 135 | FAIL (above the control max, below the 0.24 floor) |
+| Tomokiyo, line 1 / incipit span only (Tomokiyo prints it; not gated) | S | 0.444 | 0.070 / 0.222 / 0.333 | 1 of 201 | 9 | reported only |
+| alphabet.tsv, line 1 / incipit span only | S | 0.111 | 0.008 / 0.111 / 0.111 | 15 of 201 | 9 | reported only |
+
+Per label, held out (Tomokiyo / alphabet.tsv): A=a 8/22 both; Z=r 8/21 both; R=s 4/6 both; 4: o 7/20 vs de 0/20; F: null 10/29 vs i 0/29;
+T: s 0/17 vs d 1/17; 9=e 0/5; 3, E, V, X 0 of 2-4 each. The two keys agree on A, Z, R; the difference is 4 and F, the two C-grade conflicts
+in R11-RJMKEY's witness table, and on both this held-out page sides with Tomokiyo.
+
+Post hoc diagnostics (after the gate, not a re-test): (1) the empty chunk is 29 of 149 symbol tokens overall and 10 of 29 on F, so F=null is
+above the base rate, not only riding it; (2) with F removed from both keys, Tomokiyo 0.257 vs control max 0.171 (N 105), alphabet.tsv 0.198
+vs 0.160 (N 106): Tomokiyo's pass does not rest on the null sign alone; (3) T is supported by neither key (chunks e 4, h 2, g 2, a 2 of 17),
+and 9, X, V, E, 3 have too few tokens to say anything; (4) Q (no value in either key) takes y 4 of 8 -- possibly the K/Q look-alike the
+sorter's focus list already carries, not checked here; (5) the gloss reader wrote "screvio" where Tomokiyo reads "se cerro", so the
+incipit exclusion ran on letter offset (first 33 gloss letters) plus cipher line 1, as pre-registered.
+
+Reading: on a page held out from both keys (no letter of R9502 entered alphabet.tsv; Tomokiyo's table was built "mainly" on R9528 and
+checked against first lines, which are excluded here), Tomokiyo's published letter values for A, Z, R, 4 and F (null) land on the clerk's
+letters well above every permuted control at reader error 0.28. No letter key had passed a held-out gate in this folder before this run;
+alphabet.tsv's 4=de and F=i are not supported on f.40. Per the PREREG, no key, grade or reading is changed in this job: the PASS goes
+to a verifier first, and any reading built on key_tomokiyo_alpha.tsv is read with a `published` key (rule 10 key source). Rule 3: this is a
+different page and alignment from the two f.199 FAILs (R11-RJMKEY's "the next held-out test needs a different page"), not a third attempt
+on f.199.
+
+Grades: unchanged. Requests: de-crypt.org 7 (one login). No other host.
+Not done: f.40v-41 (P2, cipher continues) not read; no per-sign look-alike pass on f.40's 128 split symbols; T's value unresolved.
+
+## Remaining gaps (R12-RJM42, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S), R9528 f.194 (161/249 matched by the gloss) and R9502 f.40 (132/210 matched by f.42); letter alphabet: Tomokiyo's published table PASSes the held-out gate on R9502 f.40 (0.276 vs control max 0.172, N 134), alphabet.tsv FAILs there (0.156, below the 0.24 floor); f.199 FAIL with both keys stands as untested at that reader error
+- R9501 (no period decipherment in DECODE) passes and key test (job 2b) - blocker: not-attempted; next: two blind passes on R9501 f.34 with the same inventory, decode with Tomokiyo's alphabet + nomenclator (published key), judge, ~$5 -- the held-out gate it waited on now passes (R12-RJM42); a verifier should see results_test42.json first
+- T and the rare signs 9, X, V, E, 3 and Q have no value supported on a page outside the key sample - blocker: not-attempted; T takes no consistent chunk on f.40 (e 4, h 2, g 2 of 17) and the rest have 2-8 tokens; next: pool the f.194, f.199 and f.40 alignments for T/Q chunk counts and score Q against K after the look-alike check, ~$2
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, f.40 0.28, err_true unmeasured) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set; 39 unsettled look-alike tiles in sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, R12-RJMPUB); without it every reading stays a cryptanalytic result
+
+## Escalation (R12-RJM42, 6 Oct 2026)
+- [x] siblings: R11-RJMSIB compared Tomokiyo's Juan Manuel and Sanchez 1522 tables (alphabet and nomenclator, Bourdeau sanchez1522 cited): same design, no shared key (V 1 vs p95 2; T 0 of 75 shared words); no table fit to carry over
+- [x] clear-pages: f.197, f.201 and f.42 read (single Sonnet pass each); f.199's and f.40's own clear lines identified
+- [x] known-keys: Tomokiyo's nomenclator run on R9528, R9529 and R9502 (anchors 161/249, 44/117, 132/210); his alphabet held out on R9502 f.40: PASS 0.276 vs control max 0.172 (R12-RJM42)
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); R12-RJMPUB found no published decipherment beyond Tomokiyo's first-line incipits; Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out FAIL on f.199 and on f.40 (0.156 < 0.24); its 4=de and F=i are not supported on f.40
+- [x] image-check: R9528, R9529 and R9502 full-size images fetched (sha1s in images/manifest.json), crops and windows checked
+- [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
+Verdict: keep going: 2 internal gaps (R9501 passes + decode with Tomokiyo's published key, now unblocked by the f.40 PASS; T/Q values from pooled alignments); the transcription gap waits on ASKS 138; cheapest next: two blind passes on R9501 f.34 and a decode with key_tomokiyo_alpha.tsv + AlonsoSanchez_2.tsv, ~$5, after a verifier has looked at results_test42.json
