@@ -9245,3 +9245,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 05:44 | R9-MANTPOOL worker (account 4) | claim: sachsstaatsarchiv-manteuffel-1712 pooled multi-code-run aligner gate, cap 4 USD, box ends 06:54 UTC, for LANE LANE-RUN9-account-4
 2026-10-06 05:44 | R9-SRCH worker | claim R9-SRCH: folders sp87-chesterfield-1747, sp78-doncaster-1621, sp87-newcastle-1743, sp36-stquentin-pretender-1743; cap 3 USD, box ends 06:43 UTC; for LANE LANE-RUN9-account-4
 2026-10-06 05:44 | R9-HOUSE | claim: thurloe-printed index cells + sp90-raby-1704 LOCAL-QUEUE row, cap 2, box ends 06:20 UTC, for LANE LANE-RUN9-account-4
+2026-10-06 05:44 | R9-WVOSORT worker | claim: wvo-hessen-1564 f.23 owner sign sorter build (sign_sorter.py + sorter_preflight), cap 3.5 USD, box ends 06:44 UTC, for LANE LANE-RUN9-account-4
