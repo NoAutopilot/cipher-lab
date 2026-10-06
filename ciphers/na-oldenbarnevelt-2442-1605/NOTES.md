@@ -1027,8 +1027,20 @@ against the settled labels (TRANSCRIPTION.md order) -- waiting on the owner's so
 is settled, replace the A/C2 rows with the reconciled draft re-checked against the labels, decode with `scripts/apply_key.py`,
 grade, judge with es17a (unknown reliability), ~$2; (d') a tighter era corpus if a judge PASS/FAIL is wanted, ~$5.
 
+## 14. R7-OLDSORT, 6 Oct 2026: owner's sign sorter for blocks A/C2 seeded (step (s)); status stays open
+
+Brief: `.claude/briefs/runs/2026-10-06-account2-run7-jobs.md` (LANE LANE-RUN7-account-2), job R7-OLDSORT; no vision, no network.
+Built `sorter/` (build.sh, build_inputs.py, signs.tsv, labels.tsv, focus.tsv, fit.tsv, pages/, README.md) from R7-OLDA's crops
+(`images/crops_AC2/`) and reconciled draft, the same shape as `ciphers/matignon-mayenne-1586/sorter/`: 692 tiles on 20 line
+strips, 30 piles (the draft's sign labels), 103 "check these first" tiles where the blind passes wrote another sign than the
+draft after the notation fold (10 on the named look-alike pairs v/r and the G-shaped ligature; 32 on R7-OLDA's d/8, 5/s, p/g/l,
+c/t, m/n/r; 61 others). Rendered headless: 797 images, 0 page errors. Tiles are approximate (cursive hand; words laid out by
+sign count along each line, see sorter/README.md). Not published and no ASKS row written: the lane orchestrator does both.
+Committed rows, reading and grades unchanged. Verdict unchanged (open): step (s) now waits on the owner's pass over
+`sorter/`; then (a'').
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, 6 Oct 2026)
 
 - Action that depends on nobody: (d') of the latest Verdict -- the tighter era corpus (several CODOIN volumes of 1598-1621 state
   letters, fold-checked), ~$5. Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
-  the owner's sorter.
+  the owner's sorter, seeded 6 Oct 2026 (R7-OLDSORT, `sorter/`, section 14).
