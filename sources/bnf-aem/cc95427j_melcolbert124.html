@@ -1,0 +1,733 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000095427">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000095427">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Mélanges Colbert</div>
+					<h1>Mélanges de Colbert 124</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000095427_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427">Mélanges de Colbert 124 • Correspondance de Colbert d'octobre 1664.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1178">Fol. 1 • François Rouxel « de Médavy, é[vêque] de Sées »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1184">Fol. 3 • « Roger de Harlay, é[vêque] de Lodève »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1190">Fol. 5 • Gaston-Jean-Baptiste, comte de « Comenge », ambassadeur à Londres</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1196">Fol. 7 • « M. Brodeau », veuve de Talement, maître des Requêtes</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1202">Fol. 9, 91, 145, 219 • le maréchal de « La Feuilliade », François d'Aubusson</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1208">Fol. 11, 13 • « J. Cadeau », trésorier de la Maison du roi</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1214">Fol. 17 • les officiers de la grande Chancellerie</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1220">Fol. 19, 417 • « N[icolas de] Nicolay », premier président de la Chambre des Comptes</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1226">Fol. 21 • César de Choiseul, comte du « Plessy Praslain », maréchal de France</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1232">Fol. 23, 85, 217, 411, 578 • Fr. Bochart de « Saron Champigny »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1238">Fol. 25 • Jacques-Auguste « de Thou »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1244">Fol. 27 • « de Peyrelongue »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1250">Fol. 29, 233 • A. « de Sève »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1256">Fol. 31 • « les gens tenents la Cour des aydes et finances de Guienne »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1262">Fol. 33, 198, 364, 421, 551 • Charles Colbert de Croissy</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1268">Fol. 34 • « Nozereau », créancier de M. de Guise (lettre au sieur Girardin)</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1274">Fol. 36 • « Girardin »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1280">Fol. 39, 568 • « l'abbé de Saint-Martin Bares »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1286">Fol. 41, 108, 279, 437, 549 • Charles « Colbert » de Brisach,</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1292">Fol. 43, 137, 194, 285, 461, 564, 566 • « Du Lieu », maître de la poste à Lyon</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1298">Fol. 45 • « de Boisset », capitaine commandant la maréchaussée des Landes</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1304">Fol. 53, 196 • Jean de « Coligny », commandant du corps français en Hongrie</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1310">Fol. 55 • Robert « de Gravel », à Ratisbonne</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1316">Fol. 57 • Fr. d'Epinay de « Sainct-Luc », lieutenant général en Guyenne</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1322">Fol. 59, 172, 325, 455, 574 • le comte G. « d'Estrades », ambassadeur à La Haye</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1328">Fol. 63 • « les lieutenant, gens du conseil et eschevins de la ville de Reims »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1334">Fol. 65 • « Rebuti », hôtelier de Saint-Victor de Marseille et prieur de Manosque</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1340">Fol. 51, 67, 114, 204, 407, 467, 536, 602 • Cl. « Pellot »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1346">Fol. 69 • « l'abbate [L.] Strozzi », représentant de la France à Florence</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1352">Fol. 71 • « F. Emery », fondeur de canons</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1358">Fol. 73 • « Hyacinthe [Serroni], évesque de Mande »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1364">Fol. 75 • « Leplessis de Besançon », gouverneur du château d'Auxonne</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1370">Fol. 77, 78 • « les présidens et trésoriers généraux de France à Montpellier, intendans des gabelles de Languedoc »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1376">Fol. 81 • « Giron François, [marquis] Ville », ambassadeur de Savoie en France</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1382">Fol. 83, 110, 186, 379, 540 • Henri de Forbin, baron d' « Oppède »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1388">Fol. 87, 88 • « C[harles] d'Anglure [de Bourlémont], arch[evêque] de Toulouse »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1394">Fol. 93, 398, 590 • « Desjardins », ingénieur à Bordeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1400">Fol. 95 • « Borros », procureur du roi à Sainte-Foyd'Agenais</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1406">Fol. 97, 452 • R. « de Bernières », à Rouen</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1412">Fol. 99, 160, 164 • « Neuilli », vicomte de Caen</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1418">Fol. 102 • « il card[inale] Maidalchini »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1424">Fol. 104, 250, 289, 391, 493 • J. « Barin » de la Galisonnière</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1430">Fol. 106, 185, 200, 272, 317, 389, 503 • J.-B. « Voysin de la Noiraye »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1436">Fol. 112 • « Ranvail », serviteur de Bernard de Fortia</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1442">Fol. 116, 419 • « Dournel », à Aix</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1448">Fol. 118 • « Chaiz », à Lyon</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1454">Fol. 120 • « Soeur Louise-Antoinette Colbert », religieuse de la Visitation</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1460">Fol. 122 • Antoine-Pierre-Olivier « de Prélabbé », trésorier de l'Argenterie</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1466">Fol. 124 • « Vassal », procureur du roi au présidial de Rodez</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1472">Fol. 126, 530 • « l'abb[at]e Benedetti », à Rome</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1478">Fol. 128, 520 • Emmanuel-Joseph de Vignerot « le comte de Richelieu »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1484">Fol. 130, 387 • P. « de Cheverry »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1490">Fol. 132 • « Daliès de la Tour »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1496">Fol. 139 • « de Saint-Aubin », à Metz</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1502">Fol. 141 • « les présidents et trésoriers généraux de France à Poitiers »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1508">Fol. 143 • Jean « Talon », intendant de Hainaut</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1514">Fol. 154, 592 • Cl. « Bouchu », intendant de Bourgogne</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1520">Fol. 156 • Madame « J. de la Rivière »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1526">Fol. 158, 254 • de « La Garde Belin », à Amsterdam</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1532">Fol. 166, 580 • « les conseillers des païs et comté de Seelande »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1538">Fol. 168, 510 • Philippe-Jules Mancini, « duc de Nevers »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1544">Fol. 170, 229, 329, 330, 509, 511 • Ph. Lebas</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1550">Fol. 174 • « l'abbé du Guémadeuc »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1556">Fol. 176, 295, 335, 425, 514 • « Metezeau », architecte</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1562">Fol. 178 • Charles, marquis de « Riberpré de Moy », gouverneur de Ham</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1568">Fol. 180, 348, 479, 608 • Louis « de Machault », intendant</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1574">Fol. 182 • « Du Teilloys »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1580">Fol. 184, 383 • « Derbaud et Delafitte », à Rouen</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1586">Fol. 188 • « Y. Morice », à Nantes</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1592">Fol. 190 • « les maire et eschevins d'Orléans »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1598">Fol. 192 • « de Meautrix », à Evreux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1604">Fol. 202, 360, 560 • Jean « Desmaretz », intendant à Soissons</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1610">Fol. 206 • « Choart », trésorier des fortifications</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1616">Fol. 208, 309, 465, 570 • le marquis Bivel de « Montpesat », à Dunkerque</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1622">Fol. 211 • Guy « Chamillart », intendant</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1628">Fol. 213 • « Deniset » (?), trésorier de France en Bourgogne</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1634">Fol. 215 • « C. Mangot », à Rouen</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1640">Fol. 221, 516 • « François », à Cosne</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1646">Fol. 223 • « Fr. Robert Drolin », religieux Minime</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1652">Fol. 225 • Claude « Boulley », notaire à Autun</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1658">Fol. 231 • Fr. « Le Vau le jeune »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1664">Fol. 234 • Achille « de Harlay », procureur général</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1670">Fol. 235 • « les majeur et eschevins de Saint-Vuallery[-sur-Somme] » (lettre au précédent)</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1676">Fol. 237 • « de Boullongne », procureur du roi à Abbeville (lettre au procureur général de Harlay)</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1682">Fol. 240, 275, 507, 526, 547, 606 • « Petitpas », au Havre</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1688">Fol. 242 • Nicolas « Le Camus », premier président de la Cour des aides</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1694">Fol. 244, 610 • D. « de Matharel-Marcilly »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1700">Fol. 246, 441 • Bernard « de Fortia », intendant</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1706">Fol. 248 • le président Jacques « Lecoigneux », à Morfontaine</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1712">Fol. 252 • « Salomon », à Hambourg</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1718">Fol. 256 • « le chevalier [H. de] Terlon », ambassadeur de France auprès des puissances du Nord</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1724">Fol. 260 • le P. « M. Boutault », de la Compagnie de Jésus</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1730">Fol. 262, 551 • « Fran[cesco] Ma[ria], card[inale] Mancini »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1736">Fol. 264, 475 • « le duc [Charles] de Créquy », ambassadeur à Rome</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1742">Fol. 266 • de « Formeville », second président au Parlement de Toulouse et commissaire général de la navigation au ressort dudit Parlement</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1748">Fol. 268 • « Chabert », à Aix</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1754">Fol. 270 • « Castellan », à Marseille</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1760">Fol. 277 • J. « de Faverolles », intéressé à la ferme des gabelles à Paris</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1766">Fol. 281, 356 • le P. « Paul Ragueneau », Jésuite</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1772">Fol. 283 • P. « de Hocqueville », à Rouen</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1778">Fol. 287, 527 • « les présidens trésoriers de France à Montauban »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1784">Fol. 291, 371 • Robert « de Pomereu », intendant à Moulins</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1790">Fol. 297 • « de Marucell », serviteur du duc Henri-Jules de Bourbon</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1796">Fol. 299, 541 • Paul « Barrillon »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1802">Fol. 301, 302 • « les gens tenant les Chambres des Vaccations au Parlement de Dauphiné »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1808">Fol. 305 • « Du Moustier », lieutenant général à Caen</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1814">Fol. 307 • René de « Mauroy », grand maître des eaux et forêts</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1820">Fol. 311 • L. de « Breteuil »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1826">Fol. 313 • Denis Legoux de « la Berchère »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1832">Fol. 315 • L. de « Béchameil »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1838">Fol. 327 • « Hubert », à La Rochelle</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1844">Fol. 337 • « les bailly, bourgmestre et eschevins de la ville de Dunkerque »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1850">Fol. 339, 481 • J. « Lombart », ingénieur</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1856">Fol. 341 • « Thierry », armateur, à Honfleur</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1862">Fol. 344, 604 • Honoré « Courtin »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1868">Fol. 350 • Ennemond de « Servient », ambassadeur à Turin</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1874">Fol. 352, 522 • « le chevalier [J.] de Grémonville », ambassadeur à Vienne</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1880">Fol. 354 • « Rigoley », à Dijon</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1886">Fol. 357 • Louis Rouer « de Villeray », membre du Conseil souverain du Canada (lettre au P. Ragueneau)</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1892">Fol. 362 • « de Mariny », à Turin</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1898">Fol. 366 • Philippe, comte de Palluau, « m[aréch]al [de] Clérambault »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1904">Fol. 369 • « Labenazie », à Agen</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1910">Fol. 373 • « Daliès », à Paris, père de Daliès de la Tour</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1916">Fol. 375 • « les consuls d'Aix, procureurs du pais de Provence »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1922">Fol. 277 • « Hurez », à Montpellier</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1928">Fol. 381, 548 bis • « Anne-Marie-Louise d'Orléans », duchesse de Montpensier, dite la Grande Mademoiselle</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1936">Fol. 385 • « les consulz gouverneurs et viguier de la ville de Beaucaire »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1942">Fol. 394, 543 • « Soeur [Claire] Colbert », abbesse de Sainte-Claire de Reims</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1948">Fol. 396 • « Marie », à Auxerre</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1954">Fol. 400 • Antoine Le Tonnelier, « chevalier de Breteuil »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1960">Fol. 402 • « Giul[io] Antonio Costa Pre[vosto] », auteur d'une histoire généalogique des Mazarini</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1966">Fol. 405, 427 • « Dalon », avocat général du roi à Bordeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1972">Fol. 409 • « Du Sault », à Bordeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1978">Fol. 413 • Nicolas « Arnoul »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1984">Fol. 415 • Madame « F. Fervessiau », veuve de M. de Lavallée Gatinniau</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1990">Fol. 429 • Ch. « Chertemps [et H.] Bachelier »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e1996">Fol. 431 • « Leroi », trésorier des galères à Ollioules</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2002">Fol. 439 • « la maréchale de Castelnau », Marie Girard</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2008">Fol. 443 • « F. Simon », agent de l'Ordre de Malte à Marseille (lettre à M. de Souvré)</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2014">Fol. 444 • Jacques, commandeur « de Souvré »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2020">Fol. 447 • « V. Pronti », agent de Colbert à Rome</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2026">Fol. 449 • Marie Mancini, « conétable Colonna »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2032">Fol. 451 • « G[eorges de La Feuillade], arch[evêque] d'Ambrun », ambassadeur à Madrid</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2038">Fol. 457, 558 • « Aulesens », à Toulon</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2044">Fol. 459 • « les présidens trésoriers de France et généraux des finances à Soissons »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2050">Fol. 463 • « Bail »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2056">Fol. 469 • Louis Phélypeaux, marquis de « La Vrillière », secrétaire d'Etat</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2062">Fol. 471 • le comte de « Mérinville »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2068">Fol. 473 • le baron de « Rochepierre »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2074">Fol. 475 • « le m[arquis François] de Créquy »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2080">Fol. 477 • A. « de Pontac », procureur général au Parlement de Bordeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2086">Fol. 483 • « Frère Jean-Baptiste Dupire », religieux de Saint-André-lez-Clermont</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2092">Fol. 485 • « de Caupos », à Bordeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2098">Fol. 487 • Claude des « Ponts », procureur du roi au siège de Briançon</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2104">Fol. 495 • « P. Du Boys Mutigny », marchand de fer à Châlons-sur-Marne</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2110">Fol. 497 • « Hocquebert », à Reims</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2116">Fol. 518 • « J.-V. [de Tulles], éves[que] de Lavaur »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2122">Fol. 524, 584 • Jean « de Choisy », intendant, à Toul</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2128">Fol. 528 • « Meurdrac », greffier du bailliage de Caen</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2134">Fol. 532 • Daniel « Voysin »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2140">Fol. 533 bis • le duc François de « Beaufort »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2148">Fol. 534 • Camille de Neufville de Villeroy, « arche[vesque] de Lyon »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2154">Fol. 538 • « le chevalier de Cremeaulx », capitaine de galère</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2160">Fol. 545 • « les présidens trésoriers généraux de France à Riom »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2166">Fol. 553 • Bernard « de Fieubet », à Toulouse</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2172">Fol. 562 • « Maximilien Henry, électeur de Cologne »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2178">Fol. 572 • « Bourel », à Abbeville</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2184">Fol. 582 • Hippolyte, comte de « Béthune »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2190">Fol. 586 • « Janne Baptiste de la Rovere »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2196">Fol. 588 • « le duc [P.] de Villars »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2202">Fol. 594 • « Marin », ingénieur, à Bordeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2208">Fol. 596 • « Macqueron », à Céret</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2214">Fol. 598 • A. de « Ribeyre », premier président de la Cour des aides de Clermont-Ferrand</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2220">Fol. 600 • G. de « Régusse », à la Ciotat</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095427_d0e2226">Fol. 606 • « Petitpas », au Havre</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Mélanges de Colbert 124 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc95427j&Cote=Mélanges de Colbert 124&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10035535p">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 12279 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc95427j&Cote=MF 12279&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Mélanges de Colbert 124 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-label">
+<div class="did-unittitle">Correspondance de Colbert d'octobre 1664.</div>
+</div>
+<div class="divdid">611 feuillets.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="accessrestrict-class">
+<div class="label-part">
+<p class="commonBam-label">Conditions d'accès</p>
+</div>
+<div class="description-part">
+<span>
+<p>En raison de son état de conservation, la consultation de ce document est soumise à autorisation, sur demande motivée.</p>
+</span>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Le volume contient en outre les pièces suivantes : Exploit d'une saisie faite à la requête d'un créancier de feu monseigneur de Guise, Louis de Lorraine (fol. 38). — Procès-verbaux de la sédition d'Hagetmau, dans les Landes, (septembre 1664) (fol. 47, 49). — Sentence rendue contre le vicomte de Caen, à la requête des procureur et avocat généraux du bailliage (fol. 160). — Certificat du chevalier de Terlon, ambassadeur auprès des Cours du Nord, et du baron Bidal, résident de France à Hambourg, attestant que divers navires se rendant en France sont exempts de la maladie, sévissant à Hambourg (fol. 253). — Plan des magasins de la Compagnie des Indes, au Havre (fol. 274). — Extraits de deux lettres d'Amsterdam relatives à la maladie contagieuse, sévissant en cette ville et à la fabrication des canons (fol. 319, 321). — Requête présentée à la Chambre des comptes de Nevers par Marguerite, marquise de Sommelsdier (Sommersdick), à propos de la terre de Châtillon (fol. 330). — Prospectus d'une publication sur une médaille frappée en l'honneur de Mazarin, par le chanoine Costa, auteur des <emph render="italic">Elogia Mazarinorum (imprimé)</emph> (fol. 403). — Vérification des titres de la communauté de Villars-Saint-Pancrace, près Briançon (fol. 488). — Arrêt du Conseil, réglant les ventes de bois à faire pour l'année 1665, dans les forêts de Normandie (fol. 504). — Elégie du chevalier de Lontaud au duc de Beaufort (fol. 533 <emph render="super">ter</emph>).</p>
+<p>Lettres adressées à Colbert par</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 12279. Cote de la matrice (pour commander une reproduction) : R 138465.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution : R 138464.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10035535p" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10035535p.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10035535p.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>AIX-EN-PROVENCE • Lettres des consuls</p>
+<p>AMSTERDAM • Lettres, écrites d'Amsterdam</p>
+<p>ANGLURE DE BOURLEMONT (Charles-François D'), évêque de Castres, puis archevêque de Toulouse • Lettres (1661-1664)</p>
+<p>ARNOUL (Nicolas et Pierre) • Lettres (1661-1665)</p>
+<p>AULESENS • Lettre</p>
+<p>BACHELIER (Henri), sr de Montcel • Lettres (1665-1675)</p>
+<p>BAIL (Le sr) • Lettres</p>
+<p>BARIN DE LA GALISSONNIERE (Jacques) • Lettres (1662-1665)</p>
+<p>BARRILLON D'AMONCOURT (Paul DE) • Lettres</p>
+<p>BEAUCAIRE (Gard) • Lettre des consuls</p>
+<p>BEAUFORT (François de Bourbon-Vendôme, duc DE) • Lettres (1661-1665)</p>
+<p>BEAUFORT (François de Bourbon-Vendôme, duc DE) • Poésie à lui adressée</p>
+<p>BECHAMEIL (Louis), marquis de Nointel • Lettres (1662-1665)</p>
+<p>LA BENAZIE, à Agen • Lettre</p>
+<p>BENEDETTI (Abbé Elpidio) • Lettres (1661-1665)</p>
+<p>LA BERCHERE (Urbain Le Goux DE) • Lettres</p>
+<p>BERNIERES (Roland DE) • Lettres</p>
+<p>BETHUNE (Hippolyte DE), comte de Selles • Lettres</p>
+<p>BIDAL (Pierre), baron d'Asfeld • Certificat</p>
+<p>BOISSET (Capitaine DE) • Lettres</p>
+<p>BORROS, à Sainte-Foy d'Agenais • Lettre</p>
+<p>BOUCHU (Claude) • Lettres (1664-1665)</p>
+<p>BOULLEY (Claude) • Lettre</p>
+<p>BOULLONGNE DE BEAUREPAIRE (Le sr DE) • Lettres</p>
+<p>BOUREE, à Abbeville • Lettre</p>
+<p>BOUTAULT (Le P. M.) • Lettres</p>
+<p>BRODEAU-LALLEMENT (Marie) • Lettres</p>
+<p>CADEAU (Jean) • Lettres</p>
+<p>CAEN • Sentence rendue contre le vicomte de Caen</p>
+<p>CANONS • Fabrication et fonderies</p>
+<p>CASTELLAN (Jean) • Lettres</p>
+<p>CASTELNAU (Marie Girard, maréchale DE) • Lettres</p>
+<p>CAUMONT DE FIEUBET (Gaspard DE) • Lettres (1661-1664)</p>
+<p>CAUPOS (Jean-Marc DE) • Lettre</p>
+<p>CHABERT, à Arles • Lettres</p>
+<p>CHAIZE (François) • Lettres</p>
+<p>CHAMILLART (Gui) • Lettres (1660-1664)</p>
+<p>CHAMPIGNY (François Bochart de Saron DE) • Lettres (1663-1664)</p>
+<p>CHANCELLERIE • Lettres des officiers</p>
+<p>CHATILLON-EN-BAZOIS (Nièvre) • Requêtes au sujet de cette terre</p>
+<p>CHERTEMPS DU MOUSSET (Pierre) • Lettres (1664-1665)</p>
+<p>CHOART (François) • Lettres</p>
+<p>CHOISEUL (César DE), comte du Plessis-Praslain • Lettres</p>
+<p>CHOISY (Jean-Paul DE) • Lettres (1664-1665)</p>
+<p>COLBERT (Charles), marquis de Croissy, frère du ministre • Lettres (1663-1664)</p>
+<p>COLBERT (Charles), procureur au Conseil d'Alsace, dit Colbert d'Alsace ou de Brisach cousin du ministre • Lettres (1664-1665)</p>
+<p>COLBERT (Claire), abbesse de Sainte-Claire de Reims • Lettres</p>
+<p>COLBERT (Jean-Baptiste) • Correspondance</p>
+<p>COLBERT (Jean-Baptiste) • Lettres à lui adressées</p>
+<p>COLBERT (Soeur Louise-Antoinette) • Lettres (1661-1666)</p>
+<p>COLIGNY-SALIGNY (Jean DE) • Lettres</p>
+<p>COLONNA (Marie Mancini, connétable) • Lettres (1661-1664)</p>
+<p>COMMINGES (Gaston-Jean-Baptiste, comte DE) • Lettres</p>
+<p>COSTA (Chanoine Giulio-Antonio) • Lettre</p>
+<p>COSTA (Chanoine Giulio-Antonio) • Prospectus d'une publication en l'honneur de Mazarin</p>
+<p>COUR DES AIDES DE GUYENNE</p>
+<p>COURTIN (Honoré) • Lettres (1664-1665)</p>
+<p>CREMEAULX (Chevalier DE) • Lettre</p>
+<p>CREQUY (Charles, duc DE) • Lettres</p>
+<p>CREQUY (François, marquis DE) • Lettres</p>
+<p>DALIES DE LA TOUR (Samuel) • Lettres (1664-1665)</p>
+<p>DALIES (Jean) • Lettre</p>
+<p>DALON (Raimond) • Lettres</p>
+<p>DAUPHINE (Parlement de) • Lettres des membres de la Chambre des vacations</p>
+<p>DENISET (N.) • Lettres</p>
+<p>DES ESCHERNES (Le sr) • Ordre à lui donner</p>
+<p>DES PONTS (Claude) • Lettre</p>
+<p>DESJARDINS, ingénieur • Lettres</p>
+<p>DESMARETS (Jean) • Lettres</p>
+<p>DOURNEL (Claude) • Lettre</p>
+<p>DROLIN (Le Fr. Robert) • Lettre</p>
+<p>DU BOIS-MUTIGNY (P.) • Lettre</p>
+<p>DU LIEU (Jean-Baptiste) • Lettres (1664-1665)</p>
+<p>DU MOUSTIER (Nicolas) • Lettres</p>
+<p>DU PLESSIS-PRASLIN (César de Choiseul, maréchal-comte) • Lettres</p>
+<p>DU SAULT (F.) • Lettres</p>
+<p>DU TEILLOYS • Lettres</p>
+<p>DUNKERQUE • Lettres des échevins</p>
+<p>DUPIRE (Le Fr. Jean-Baptiste) • Lettre</p>
+<p>DUPLESSIS DE BESANÇON, à Auxonne • Lettres</p>
+<p>ÉMERY (F.) • Lettre</p>
+<p>ERBAUD (Bertrand D') • Lettres</p>
+<p>ESTRADES (Godefroy, comte D') • Lettres (1664-1665)</p>
+<p>FAVEROLLES (Jean DE) • Lettres</p>
+<p>LA FEUILLADE (François d'Aubusson, duc DE) • Lettres</p>
+<p>LA FEUILLADE (Georges d'Aubusson DE), évêque de Metz, puis archevêque d'Embrun • Lettres (1664-1665)</p>
+<p>LA FITTE (M. DE), à Rouen • Lettres</p>
+<p>FORMEVILLE (Président DE) • Lettre</p>
+<p>FORTIA (Bernard DE) • Lettres (1664-1665)</p>
+<p>FRANÇOIS (L'Ingénieur) • Lettres (1660-1664)</p>
+<p>LA GARDE-BELIN (M. DE), à Amsterdam • Lettres</p>
+<p>GERVESSIAU (Mme F.), veuve de Lavallée-Gatineau • Lettre</p>
+<p>GIRARDIN (Claude) • Lettre à lui adressée</p>
+<p>GIRARDIN (Claude) • Lettres</p>
+<p>GIROMAGNY (Haut-Rhin)</p>
+<p>GRAVEL (Robert DE) • Lettres</p>
+<p>GREMONVILLE (Jacques Bretel, chevalier DE), Dépêche • Lettres</p>
+<p>GUEMADEUC (Sébastien DE), évêque de Saint-Malo • Lettres (1664-1672)</p>
+<p>GUISE (Henri de Lorraine, 5e duc DE) • Exploit de saisie fait à la requête des créanciers</p>
+<p>GUISE (Henri de Lorraine, 5e duc DE) • Lettre d'un de ses créanciers</p>
+<p>GUYENNE (Cour des Aides de) • Lettres de membres de la cour</p>
+<p>HAGETMAU (Landes) • Procès-verbaux de la sédition de 1664</p>
+<p>HAMBOURG</p>
+<p>HARLAY (Achille II DE) • Lettres (1663-1664)</p>
+<p>HARLAY DE CESY (Roger DE) évêque de Lodève • Lettres</p>
+<p>HOCQUEVILLE (Pierre de Becdelièvre, marquis DE) • Lettres (1661-1664)</p>
+<p>HOQUEBERT (André) • Lettres</p>
+<p>HUBERT, à La Rochelle • Lettres</p>
+<p>HUREZ (Jean-Baptiste) • Lettres</p>
+<p>LANGUEDOC • Trésoriers-généraux</p>
+<p>LE CAMUS (Nicolas) • Lettres (1664-1665)</p>
+<p>LE COIGNEUX (Président Jacques) • Lettres</p>
+<p>LE HAVRE-DE-GRACE • Plans des bâtiments de la Compagnie des Indes</p>
+<p>LE TONNELIER DE BRETEUIL (Chevalier Antoine) • Lettres</p>
+<p>LE TONNELIER DE BRETEUIL (Louis) • Lettres</p>
+<p>LE VAU le jeune (François) • Lettres</p>
+<p>LEBAS (François) • Lettres</p>
+<p>LEROY (Commissaire) • Lettres</p>
+<p>LOMBARD (Joseph) • Lettres (1664-1665)</p>
+<p>LONTAUD (Chevalier DE) • Élégie au duc de Beaufort</p>
+<p>LOSTANGE DE MONTAUSIER (Chevalier DE) • Lettre</p>
+<p>LOUIS XIV, roi de France • Lettres</p>
+<p>MACHAULT (Louis DE) • Lettres (1661-1664)</p>
+<p>MACQUERON (Charles) • Lettres</p>
+<p>MAIDALCHINI (Cardinal Francesco) • Lettres (1661-1665)</p>
+<p>MALADIES CONTAGIEUSES à Amsterdam</p>
+<p>MALADIES CONTAGIEUSES à Hambourg</p>
+<p>MALTE (Ordre DE)</p>
+<p>MANCINI (Cardinal François-Marie) • Lettres</p>
+<p>MANCINI-MAZARIN (Philippe-Jules DE), duc de Nevers • Lettres</p>
+<p>MANCINI-MAZARIN (Philippe-Jules DE), duc de Nevers • Ordre</p>
+<p>MANGOT (C.) • Lettres</p>
+<p>MARIE (Thomas), baron d'Avigneau • Lettres</p>
+<p>MARIN, au Château-Trompette • Lettres</p>
+<p>MARINY (M. DE), à Turin • Lettres</p>
+<p>MARUCELL (Le sr DE) • Lettre</p>
+<p>MATHAREL-MARCILLY (Denis DE) • Lettres</p>
+<p>MAUROY (René DE) • Lettres</p>
+<p>MAZARIN (Cardinal Jules) • Médaille en son honneur</p>
+<p>MAZARIN (Famille) • Histoire généalogique</p>
+<p>MEAUTRIX (Capitaine DE) • Lettres</p>
+<p>MEDAILLES et objets d'art • Médaille en l'honneur de Mazarin</p>
+<p>MERINVILLE (François des Monstiers, comte DE) • Lettres (1664-1677)</p>
+<p>METEZEAU (Charles) • Lettres</p>
+<p>MEURDRAC (Charles DE) • Lettres</p>
+<p>MONTAUBAN (Tarn-et-Garonne) • Lettres des trésoriers</p>
+<p>MONTPELLIER • Lettres des trésoriers</p>
+<p>MONTPENSIER (Anne-Marie-Louise d'Orléans, duchesse DE), la Grande-Mademoiselle • Lettres</p>
+<p>MONTPEZAT (Jean-François [et non Bivel] de Trémolet de Bucelli, marquis DE) • Lettres (1664-1665)</p>
+<p>MORICE (Y.) • Lettres</p>
+<p>MUTIGNY (P. Dubois-)</p>
+<p>NEUFVILLE DE VILLEROY (Camille DE), archevêque de Lyon • Lettres (1662-1665)</p>
+<p>NEUILLY (Simon de Fontaines, sr DE) • Lettre</p>
+<p>NEUILLY (Simon de Fontaines, sr DE) • Sentence rendue contre lui</p>
+<p>NEVERS (Chambre des Comptes de) • Requête présentée à la Chambre</p>
+<p>NEVERS (Philippe-Julien Mancini, duc DE) • Lettres</p>
+<p>NEVERS (Philippe-Julien Mancini, duc DE) • Ordre</p>
+<p>NICOLAY (Président Nicolas DE) • Lettres</p>
+<p>NORMANDIE • Ventes des bois en 1665</p>
+<p>OPPEDE (Henri de Maynier de Forbin, baron, puis marquis D') • Lettres (1664-1665)</p>
+<p>ORDRES • Ordre de Malte</p>
+<p>ORLEANS (Anne-Marie-Louise D'), Mlle de Montpensier • Lettres</p>
+<p>ORLEANS • Lettres des échevins</p>
+<p>OZEREAU (N.) • Lettre</p>
+<p>PALLUAU (Philippe, comte DE), maréchal de Clairambault • Lettres</p>
+<p>PELLOT (Claude II) • Lettres (1663-1664)</p>
+<p>PETITPAS (Jean DE) • Lettres</p>
+<p>PEYRELONGUE (Pierre DE) • Lettres</p>
+<p>POITIERS • Lettres des trésoriers-généraux</p>
+<p>POMEREU DE LA BRETECHE (Auguest-Robert DE) • Lettres (1664)</p>
+<p>PONTAC (Arnaud DE) • Lettres (1664-1665)</p>
+<p>PRELABBE (Antoine-Pierre-Olivier DE) • Lettres</p>
+<p>PRONTI (Vincenzio) • Lettres</p>
+<p>PROVENCE • Lettre des procureurs du pays</p>
+<p>RAGUENEAU (Le P. Paul) • Lettre à lui adressée</p>
+<p>RAGUENEAU (Le P. Paul) • Lettres</p>
+<p>RANVAIL • Lettre</p>
+<p>REBUFI, à Manosque • Lettres</p>
+<p>REIMS • Lettres des échevins</p>
+<p>RIBERPRE (Charles de Moy, marquis DE) • Lettre</p>
+<p>RIBEYRE (François DE), sr de Fontenilles • Lettres</p>
+<p>RICHELIEU (Emmanuel-Joseph de Vignerot, comte DE) • Lettres</p>
+<p>RIGOLEY, à Dijon • Lettre</p>
+<p>RIOM • Lettres de trésoriers</p>
+<p>LA RIVIERE (Mme J. DE) • Lettres</p>
+<p>ROCHEPIERRE (Baron DE) • Lettres</p>
+<p>ROUSSEAU, avocat • Lettres</p>
+<p>ROUXEL DE MEDAVY (François), évêque de Séez, puis archevêque de Rouen • Lettres</p>
+<p>LA ROVERE (Jeanne-Baptiste DE) • Lettre</p>
+<p>SAINT-ANDRE-LES-CLERMONT (Abbaye de)</p>
+<p>SAINT-AUBIN (S. DE) • Lettres</p>
+<p>SAINT-LUC (François d'Épinay, marquis DE) • Lettres (1661-1664)</p>
+<p>SAINT-MARTIN (Daniel BARES, abbé DE) • Lettres</p>
+<p>SAINT-VALERY-SUR-SOMME (Somme) • Lettres des échevins</p>
+<p>SALOMON, à Hambourg • Lettres</p>
+<p>SERRONI (Hyacinthe), évêque de Mende • Lettres (1661-1665)</p>
+<p>SERVIEN (Ennemond) • Lettres</p>
+<p>SEVE (Alexandre DE) • Lettres</p>
+<p>SIMON (F.) • Lettre</p>
+<p>SOISSONS • Lettres des trésoriers de France</p>
+<p>SOUVRE (Commandeur Jacques DE) • Lettre à lui adressée</p>
+<p>SOUVRE (Commandeur Jacques DE) • Lettres</p>
+<p>STROZZI (Abbé Luigi) • Lettres</p>
+<p>TALON (Philippe) • Lettres (1661-1664)</p>
+<p>TERLON (Hugues, chevalier DE) • Certificats</p>
+<p>TERLON (Hugues, chevalier DE) • Lettres (1661-1664)</p>
+<p>THIERRY, à Honfleur • Lettres</p>
+<p>THOU (Jacques-Auguste DE) • Lettres</p>
+<p>TULLES (Jean-Vincent DE), évêque de Lavaur • Lettres</p>
+<p>VAN SOMMELSDIJCK (Corneille Aëersens, marquis) • Requête à la Chambre des comptes de Nevers</p>
+<p>VASSAL, à Rodez • Lettre</p>
+<p>VILLA, ou VILLE (Giron-François), marquis de Cigliano • Lettres</p>
+<p>VILLARD-SAINT-PANCRACE (Isère) • Vérification des titres de la communauté</p>
+<p>VILLARS (Pierre, marquis DE) • Lettres</p>
+<p>VILLERAY (Louis Rouer DE) • Lettres</p>
+<p>VISET (J. DE), et non DENISET • Lettre</p>
+<p>VOYSIN (Daniel) • Lettres (1661-1664)</p>
+<p>VOYSIN DE LA NOIRAYE (Jean-Baptiste) • Lettres (1664-1665)</p>
+<p>LA VRILLIERE (Louis Phélypeaux, marquis DE) • Lettres</p>
+<p>ZELANDE • Lettres des conseillers</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1178');">François Rouxel « de Médavy, é[vêque] de Sées »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1184');">« Roger de Harlay, é[vêque] de Lodève »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1190');">Gaston-Jean-Baptiste, comte de « Comenge », ambassadeur à Londres</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1196');">« M. Brodeau », veuve de Talement, maître des Requêtes</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1202');">le maréchal de « La Feuilliade », François d'Aubusson</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1208');">« J. Cadeau », trésorier de la Maison du roi</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1214');">les officiers de la grande Chancellerie</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1220');">« N[icolas de] Nicolay », premier président de la Chambre des Comptes</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1226');">César de Choiseul, comte du « Plessy Praslain », maréchal de France</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1232');">Fr. Bochart de « Saron Champigny »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1238');">Jacques-Auguste « de Thou »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1244');">« de Peyrelongue »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1250');">A. « de Sève »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1256');">« les gens tenents la Cour des aydes et finances de Guienne »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1262');">Charles Colbert de Croissy</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1268');">« Nozereau », créancier de M. de Guise (lettre au sieur Girardin)</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1274');">« Girardin »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1280');">« l'abbé de Saint-Martin Bares »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1286');">Charles « Colbert » de Brisach,</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1292');">« Du Lieu », maître de la poste à Lyon</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1298');">« de Boisset », capitaine commandant la maréchaussée des Landes</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1304');">Jean de « Coligny », commandant du corps français en Hongrie</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1310');">Robert « de Gravel », à Ratisbonne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1316');">Fr. d'Epinay de « Sainct-Luc », lieutenant général en Guyenne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1322');">le comte G. « d'Estrades », ambassadeur à La Haye</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1328');">« les lieutenant, gens du conseil et eschevins de la ville de Reims »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1334');">« Rebuti », hôtelier de Saint-Victor de Marseille et prieur de Manosque</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1340');">Cl. « Pellot »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1346');">« l'abbate [L.] Strozzi », représentant de la France à Florence</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1352');">« F. Emery », fondeur de canons</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1358');">« Hyacinthe [Serroni], évesque de Mande »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1364');">« Leplessis de Besançon », gouverneur du château d'Auxonne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1370');">« les présidens et trésoriers généraux de France à Montpellier, intendans des gabelles de Languedoc »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1376');">« Giron François, [marquis] Ville », ambassadeur de Savoie en France</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1382');">Henri de Forbin, baron d' « Oppède »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1388');">« C[harles] d'Anglure [de Bourlémont], arch[evêque] de Toulouse »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1394');">« Desjardins », ingénieur à Bordeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1400');">« Borros », procureur du roi à Sainte-Foyd'Agenais</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1406');">R. « de Bernières », à Rouen</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1412');">« Neuilli », vicomte de Caen</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1418');">« il card[inale] Maidalchini »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1424');">J. « Barin » de la Galisonnière</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1430');">J.-B. « Voysin de la Noiraye »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1436');">« Ranvail », serviteur de Bernard de Fortia</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1442');">« Dournel », à Aix</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1448');">« Chaiz », à Lyon</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1454');">« Soeur Louise-Antoinette Colbert », religieuse de la Visitation</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1460');">Antoine-Pierre-Olivier « de Prélabbé », trésorier de l'Argenterie</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1466');">« Vassal », procureur du roi au présidial de Rodez</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1472');">« l'abb[at]e Benedetti », à Rome</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1478');">Emmanuel-Joseph de Vignerot « le comte de Richelieu »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1484');">P. « de Cheverry »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1490');">« Daliès de la Tour »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1496');">« de Saint-Aubin », à Metz</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1502');">« les présidents et trésoriers généraux de France à Poitiers »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1508');">Jean « Talon », intendant de Hainaut</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1514');">Cl. « Bouchu », intendant de Bourgogne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1520');">Madame « J. de la Rivière »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1526');">de « La Garde Belin », à Amsterdam</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1532');">« les conseillers des païs et comté de Seelande »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1538');">Philippe-Jules Mancini, « duc de Nevers »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1544');">Ph. Lebas</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1550');">« l'abbé du Guémadeuc »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1556');">« Metezeau », architecte</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1562');">Charles, marquis de « Riberpré de Moy », gouverneur de Ham</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1568');">Louis « de Machault », intendant</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1574');">« Du Teilloys »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1580');">« Derbaud et Delafitte », à Rouen</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1586');">« Y. Morice », à Nantes</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1592');">« les maire et eschevins d'Orléans »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1598');">« de Meautrix », à Evreux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1604');">Jean « Desmaretz », intendant à Soissons</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1610');">« Choart », trésorier des fortifications</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1616');">le marquis Bivel de « Montpesat », à Dunkerque</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1622');">Guy « Chamillart », intendant</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1628');">« Deniset » (?), trésorier de France en Bourgogne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1634');">« C. Mangot », à Rouen</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1640');">« François », à Cosne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1646');">« Fr. Robert Drolin », religieux Minime</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1652');">Claude « Boulley », notaire à Autun</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1658');">Fr. « Le Vau le jeune »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1664');">Achille « de Harlay », procureur général</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1670');">« les majeur et eschevins de Saint-Vuallery[-sur-Somme] » (lettre au précédent)</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1676');">« de Boullongne », procureur du roi à Abbeville (lettre au procureur général de Harlay)</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1682');">« Petitpas », au Havre</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1688');">Nicolas « Le Camus », premier président de la Cour des aides</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1694');">D. « de Matharel-Marcilly »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1700');">Bernard « de Fortia », intendant</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1706');">le président Jacques « Lecoigneux », à Morfontaine</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1712');">« Salomon », à Hambourg</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1718');">« le chevalier [H. de] Terlon », ambassadeur de France auprès des puissances du Nord</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1724');">le P. « M. Boutault », de la Compagnie de Jésus</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1730');">« Fran[cesco] Ma[ria], card[inale] Mancini »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1736');">« le duc [Charles] de Créquy », ambassadeur à Rome</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1742');">de « Formeville », second président au Parlement de Toulouse et commissaire général de la navigation au ressort dudit Parlement</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1748');">« Chabert », à Aix</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1754');">« Castellan », à Marseille</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1760');">J. « de Faverolles », intéressé à la ferme des gabelles à Paris</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1766');">le P. « Paul Ragueneau », Jésuite</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1772');">P. « de Hocqueville », à Rouen</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1778');">« les présidens trésoriers de France à Montauban »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1784');">Robert « de Pomereu », intendant à Moulins</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1790');">« de Marucell », serviteur du duc Henri-Jules de Bourbon</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1796');">Paul « Barrillon »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1802');">« les gens tenant les Chambres des Vaccations au Parlement de Dauphiné »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1808');">« Du Moustier », lieutenant général à Caen</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1814');">René de « Mauroy », grand maître des eaux et forêts</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1820');">L. de « Breteuil »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1826');">Denis Legoux de « la Berchère »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1832');">L. de « Béchameil »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1838');">« Hubert », à La Rochelle</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1844');">« les bailly, bourgmestre et eschevins de la ville de Dunkerque »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1850');">J. « Lombart », ingénieur</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1856');">« Thierry », armateur, à Honfleur</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1862');">Honoré « Courtin »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1868');">Ennemond de « Servient », ambassadeur à Turin</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1874');">« le chevalier [J.] de Grémonville », ambassadeur à Vienne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1880');">« Rigoley », à Dijon</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1886');">Louis Rouer « de Villeray », membre du Conseil souverain du Canada (lettre au P. Ragueneau)</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1892');">« de Mariny », à Turin</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1898');">Philippe, comte de Palluau, « m[aréch]al [de] Clérambault »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1904');">« Labenazie », à Agen</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1910');">« Daliès », à Paris, père de Daliès de la Tour</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1916');">« les consuls d'Aix, procureurs du pais de Provence »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1922');">« Hurez », à Montpellier</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1928');">« Anne-Marie-Louise d'Orléans », duchesse de Montpensier, dite la Grande Mademoiselle</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1936');">« les consulz gouverneurs et viguier de la ville de Beaucaire »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1942');">« Soeur [Claire] Colbert », abbesse de Sainte-Claire de Reims</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1948');">« Marie », à Auxerre</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1954');">Antoine Le Tonnelier, « chevalier de Breteuil »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1960');">« Giul[io] Antonio Costa Pre[vosto] », auteur d'une histoire généalogique des Mazarini</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1966');">« Dalon », avocat général du roi à Bordeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1972');">« Du Sault », à Bordeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1978');">Nicolas « Arnoul »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1984');">Madame « F. Fervessiau », veuve de M. de Lavallée Gatinniau</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1990');">Ch. « Chertemps [et H.] Bachelier »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e1996');">« Leroi », trésorier des galères à Ollioules</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2002');">« la maréchale de Castelnau », Marie Girard</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2008');">« F. Simon », agent de l'Ordre de Malte à Marseille (lettre à M. de Souvré)</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2014');">Jacques, commandeur « de Souvré »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2020');">« V. Pronti », agent de Colbert à Rome</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2026');">Marie Mancini, « conétable Colonna »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2032');">« G[eorges de La Feuillade], arch[evêque] d'Ambrun », ambassadeur à Madrid</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2038');">« Aulesens », à Toulon</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2044');">« les présidens trésoriers de France et généraux des finances à Soissons »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2050');">« Bail »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2056');">Louis Phélypeaux, marquis de « La Vrillière », secrétaire d'Etat</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2062');">le comte de « Mérinville »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2068');">le baron de « Rochepierre »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2074');">« le m[arquis François] de Créquy »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2080');">A. « de Pontac », procureur général au Parlement de Bordeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2086');">« Frère Jean-Baptiste Dupire », religieux de Saint-André-lez-Clermont</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2092');">« de Caupos », à Bordeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2098');">Claude des « Ponts », procureur du roi au siège de Briançon</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2104');">« P. Du Boys Mutigny », marchand de fer à Châlons-sur-Marne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2110');">« Hocquebert », à Reims</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2116');">« J.-V. [de Tulles], éves[que] de Lavaur »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2122');">Jean « de Choisy », intendant, à Toul</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2128');">« Meurdrac », greffier du bailliage de Caen</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2134');">Daniel « Voysin »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2140');">le duc François de « Beaufort »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2148');">Camille de Neufville de Villeroy, « arche[vesque] de Lyon »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2154');">« le chevalier de Cremeaulx », capitaine de galère</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2160');">« les présidens trésoriers généraux de France à Riom »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2166');">Bernard « de Fieubet », à Toulouse</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2172');">« Maximilien Henry, électeur de Cologne »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2178');">« Bourel », à Abbeville</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2184');">Hippolyte, comte de « Béthune »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2190');">« Janne Baptiste de la Rovere »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2196');">« le duc [P.] de Villars »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2202');">« Marin », ingénieur, à Bordeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2208');">« Macqueron », à Céret</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2214');">A. de « Ribeyre », premier président de la Cour des aides de Clermont-Ferrand</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2220');">G. de « Régusse », à la Ciotat</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095427_d0e2226');">« Petitpas », au Havre</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

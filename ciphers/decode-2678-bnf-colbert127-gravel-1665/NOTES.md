@@ -458,10 +458,43 @@ records 8, of which the first three (including the known-good control cc577658) 
 ajaxGetCompDisplay 4; one tools/browser_fetch.js render, also the stub), >= 2 s apart; gallica.bnf.fr 12 (manifests 3 via
 tools/gallica_folio.py, canvas images at 1000 px 9), >= 2 s apart, all HTTP 200. No subagent calls.
 
+## D1-DEC2678S (6 Oct 2026): sommaire sweep of Mél. Colbert 120-125 and 131-133
+
+Locator job, no decoding; no cipher token of R2678 read (0 H, 0 C, 0 S, 0 M, 0 I). Same method as R10-DEC2678S above: each volume's
+BnF sommaire (archivesetmanuscrits) fetched whole, saved under `sources/bnf-aem/` (MANIFEST rows of this date) and grepped for Ratisbon,
+Gravel, chiffre and the German/Rhine posts. The BnF ark check character is the NOID one over "cc"+number (positions from 1; it
+reproduces all eight arks already on file), which gave the six arks not on file: 121 cc95424t, 122 cc954252, 123 cc954269, 125 cc95428s,
+132 cc95436h, 133 cc95437r (all answered HTTP 200 and the right volume title). The sommaires never say whether a letter is enciphered.
+
+| Volume (sommaire ark) | Gravel / Ratisbon entries | Marked chiffre |
+|---|---|---|
+| 120-120bis, Apr 1664 (cc95423k) | f.348, 445 R. de Gravel, envoyé à Ratisbone (f.348 or 445 "lettre au duc de Mazarin") | no |
+| 121-121bis (cc95424t) | f.221 "l'abbé de Gravel", ambassadeur à Ratisbonne; f.746 R. de Gravel | no |
+| 122 (cc954252) | none (Ratisbon-free; Nouvelles de Vienne/Francfort/Passau only) | no |
+| 123-123bis (cc954269) | f.589 Robert de Gravel | no |
+| 124, Oct 1664 (cc95427j) | f.55 Robert de Gravel (index heading "GRAVEL (Robert DE) - Lettres") | no |
+| 125 (cc95428s) | none | no |
+| 131-131bis, Aug-Sept 1665 (cc954358) | f.263, 808, 890 R. de Gravel | no |
+| 132-132bis (cc95436h) | f.630, 829 R. de Gravel (also Frischmann at Strasbourg f.146, 488) | no |
+| 133 (cc95437r) | f.258, 443, 624 R. de Gravel | no (the one "chiffre" entry, f.246, is G. de Jeure Millet at Danzig, "chiffre et lecture", not Ratisbon) |
+
+Found: 15 Gravel entries in these nine volumes (plus the 5 already listed for 126-130bis); no sommaire entry for any of them says chiffre.
+Not found: any sommaire entry marking a Ratisbon letter as cipher. A sommaire silence is not a clear-text verdict (the f.349 entry itself
+does not say chiffre either), so the 15 leaves are candidates, not negatives.
+Leaf looked at: 133 f.258 area (Gallica btv1b100319205 canvas 263, 1000 px, `images/mc133_c263_gravel_f258area_1000px.jpg`): letter text
+in running hand, no figure groups visible at that size (grade I, one leaf, not a read). Other 14 leaves not looked at: this ark's canvases
+carry no folio labels (all 'NP'), so each needs a probe of about one to three canvases; 131 and 132 sommaires carry no Gallica link.
+
+Next (not done here): look at the 14 remaining Gravel leaves, 1665 first (131 f.263, 808, 890; 132 f.630, 829; 133 f.443, 624), at 1000 px, about USD 3-4;
+the 1664 volumes only matter if the 1665 cell set matches a 1664 key.
+
+Requests this job: archivesetmanuscrits.bnf.fr 9 (3 re-fetched known arks, 6 computed arks), 3 s apart, all HTTP 200;
+gallica.bnf.fr 3 (2 manifests via tools/gallica_folio.py, 1 canvas at 1000 px), 2 s apart, all 200. No subagent calls.
+
 ## Remaining gaps (R9-DEC2678C, 6 Oct 2026; updated R10-DEC2678S)
 Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - `29`, a single-group payee name (15,000 Rd) - blocker: open-codes; a 1665 nomenclature code outside the 1672 table, which no context on f.349 narrows; next: the 1665 nomenclature from AE CP Allemagne 194, an owner-side reproduction request
-- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); Mél. Colbert 126-130bis swept 6 Oct 2026 (R10-DEC2678S), Gravel's four other 1665 letters there all in clear; next: the same sommaire sweep of Mél. Colbert 120-125 and 131-133, ~$3
+- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); Mél. Colbert 126-130bis swept 6 Oct 2026 (R10-DEC2678S), Gravel's four other 1665 letters there all in clear; Mél. Colbert 120-125 and 131-133 swept 6 Oct 2026 (D1-DEC2678S), 15 Gravel entries, none marked chiffre; next: look at the 14 unlooked Gravel leaves, 1665 first (131 f.263, 808, 890; 132 f.630, 829; 133 f.443, 624), ~$3-4
 - novelty above N3 (verifier R10-DEC2678V gave N3; second audit D1-DEC2678A2 confirmed N3, 6 Oct 2026, AUDIT.md AUDIT 2: Depping and Clément negative, DECODE/Tomokiyo/Bourdeau all list the passages undeciphered) - blocker: waiting-on JSTOR-QUEUE.tsv rows 301-303 and the SO-R2678 second-opinion answer; Haug 2015, the study closest to this pension list, is not readable from the cloud
 
 ## Escalation (R9-DEC2678C, 6 Oct 2026)
@@ -469,7 +502,7 @@ Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - [x] clear-pages: f.349r-v clear text read (R8-G2678, R9-DEC2678); it gives the context for P1-P3
 - [x] known-keys: Tomokiyo's 1672 Colbert-Gravel key passes the pre-registered gate (this section)
 - [x] print: verifier R10-DEC2678V ran print_check and a logged search, 6 Oct 2026 (AUDIT.md AUDIT 1: N3, key published, D2 about 73%); Haug 2015 not readable from the cloud, JSTOR rows queued; second adversarial audit D1-DEC2678A2, 6 Oct 2026 (AUDIT 2): N3 confirmed, Depping t. III prints other 1665 Gravel letters but not this one
-- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; Mél. Colbert 126-130bis swept (R10-DEC2678S, 6 Oct 2026), no Ratisbon cipher letter; next: sweep Mél. Colbert 120-125 and 131-133
+- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; Mél. Colbert 126-130bis swept (R10-DEC2678S, 6 Oct 2026), no Ratisbon cipher letter; Mél. Colbert 120-125 and 131-133 swept (D1-DEC2678S, 6 Oct 2026), no sommaire marks a Ratisbon letter chiffre; next: look at the 1665 Gravel leaves 131 f.263, 808, 890; 132 f.630, 829; 133 f.443, 624
 - [x] image-check: native crop re-read of all three passages (this section)
 - [n/a] retry: first attempt passed its gate, nothing to retry
-Verdict: keep going: 2 internal gaps; cheapest next: sommaire sweep of Mél. Colbert 120-125 and 131-133 for Ratisbon cipher letters in the same design, ~$3 (126-130bis swept 6 Oct 2026, none; verifier step done 6 Oct 2026, AUDIT.md)
+Verdict: keep going: 2 internal gaps; cheapest next: look at the 14 unlooked Gravel leaves of Mél. Colbert 120-125/131-133 (1665 first) for figure groups, ~$3-4 (sommaires 120-133 swept 6 Oct 2026, none marked chiffre; verifier step done 6 Oct 2026, AUDIT.md)
