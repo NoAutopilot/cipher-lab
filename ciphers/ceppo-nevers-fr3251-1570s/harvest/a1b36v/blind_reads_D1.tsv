@@ -1,0 +1,7 @@
+tile	recon_target	target_idx	readerA	readerA_conf	readerB	readerB_conf	readerC_opus	readerC_conf	votes(M/H primary)	agreed_2of3	note
+T1	v36mid_L05 pos10 S32 (A=B)	3	k-like	L	k/r-like	L	n (alt u,r)	L	none	none	C: may be two symbols (delta + 3)
+T2	v36mid_L01 pos2 S76/S58	2	unreadable	L	unreadable	L	ii (alt u)	L	none	none	
+T3	v36mid_L02 pos11 S76/S58	3	k/h-like	L	k/h-like	L	tt (alt ll)	M	C:tt	none	
+T4	v36mid_L06 pos9 S76/S58	2	ii	L	ll	M	ll (alt 11,u)	M	B:ll C:ll	ll	meets 2-of-3 (PREREG-D1)
+T5	v36mid_L06 pos15 S76/S58	2(B)	ii	L	ll	M	ss (alt ll,ff)	M	B:ll C:ss	none	
+T6	v36top_L02 pos7 S76/S58	2	ii	L	ll	M	ss (alt ll,ff)	M	B:ll C:ss	none	

@@ -1032,7 +1032,7 @@ Read so far: 411 of 682 tokens at S across the four letters (f.11r 53/135, f.21v
 HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
 on every folio.
 - f.21v, 66 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026, verifier count 156), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
-- f.87, 62 M + 4 U tokens of 204 (S 138) - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, VERIFY-CEPPO-WP, 3 Oct 2026: 7 applied, L04.41/L05.42 t at M contested, L02.35 rejected); L04.39 read barred by both blind readers but gate (iii) fails, S65 kept at M (A1B-CEPPO-87); S31/S32/S76 still have no witness rule (no agreed gloss on f.36r S31 x2, f.37r S76 (A1B-CEPPO-87), nor on f.36v S32 x1 and S76/S58 x5 (A1B-CEPPO-36V, 3 Oct 2026, 2 blind Sonnet reads each); f.36v S76/S58 x3 carry a two-stroke gloss both readers see (ii/ll/11, not z) but name no letter); next: same f.36v tiles T3-T6 to one blind Opus reader at higher magnification, ~$4
+- f.87, 62 M + 4 U tokens of 204 (S 138) - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, VERIFY-CEPPO-WP, 3 Oct 2026: 7 applied, L04.41/L05.42 t at M contested, L02.35 rejected); L04.39 read barred by both blind readers but gate (iii) fails, S65 kept at M (A1B-CEPPO-87); S31/S32/S76 still have no witness rule (no agreed gloss on f.36r S31 x2, f.37r S76 (A1B-CEPPO-87), nor on f.36v S32 x1 and S76/S58 x5 (A1B-CEPPO-36V, 3 Oct 2026, 2 blind Sonnet reads each); f.36v S76/S58 x3 carry a two-stroke gloss both readers see (ii/ll/11, not z) but name no letter); D1-CEPPO (6 Oct 2026): a third, blind Opus reader on a1b36v T1-T6 gives 2-of-3 agreement on one tile only (T4, "ll" over S76/S58, against printed z; logged as a data conflict in HYPOTHESES.md); the same reader reads the same looped sign as "ss" on T5/T6, so no shape rule; f.87's six S76 tokens were already M, no grade change; next: the owner's sign sorter for the S31/S32/S76 looped family (sorter/), or a further glossed Birago/Ceppo leaf with the looped sign -- blind model reads of the a1b36v tiles are [retired] (three readers, A1B-CEPPO-36V + D1-CEPPO)
 - f.11r, 12 I tokens (the pound sign read l from context) - blocker: no-key-material; every witness on disk or one fetch away is now searched: ff.27/39/82 (A1B-CEPPO-POUND), fr.3252 f.36r/f.36v/f.37r + slip (A1B-CEPPO-36: one occurrence, gloss not legible blind), fr.3252 f.47r (A1B-CEPPO-11V, 3 Oct 2026: 0 X_POUND labels in passA/passB/recon, and the leaf carries no interlinear gloss, so no glossed occurrence is possible), f.11v (A1B-CEPPO-11V: show-through of f.11r and a docket only, no cipher, no decipherment); stays I under PREREG c5412f90. f.117r is not a gloss source either (no slip or clear copy, birago Premise check (c)) and waits on the owner's sorter; reopens only with a new glossed Birago/Ceppo leaf.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
 
@@ -1045,7 +1045,7 @@ on every folio.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: f.36v S76/S58 gloss tiles (a1b36v/tiles) to one blind Opus reader, ~$4 (2 Sonnet reads gave no agreed letter, A1B-CEPPO-36V 3 Oct 2026); L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
+Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: f.21v S65/S80 witness-shape settle on 4x tiles (~$4); f.36v S76/S58 gloss tiles read by three blind readers (A1B-CEPPO-36V 2 Sonnet, D1-CEPPO 1 Opus, 6 Oct 2026): one tile agrees on "ll" (data conflict with printed z), no rule -- [retired] instrument: blind model reads of the a1b36v tiles; L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1338,4 +1338,32 @@ their grades; decode and judge not re-run (nothing changed); AUDIT.md and SO-CEP
 Next: tiles T3-T6 to one blind Opus reader at higher magnification (~$4), or the owner's sign sorter.
 
 Grades: no change. Report: what was found and where it was not found; no novelty class.
+
+## D1-CEPPO: f.36v gloss tiles to a third, blind Opus reader (6 Oct 2026, account 1)
+
+Brief `.claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md` (D1-CEPPO). Pre-registration `harvest/a1b36v/PREREG-D1.md`
+(pushed b8298e03e before the read): 2 of 3 readers agree on a primary letter group at M/H over the target sign, or the tile stays M.
+Crop step: none new -- the committed tiles from `sh harvest/a1b36v/cut_tiles.sh` (ImageMagick, 3x; PIL still absent, so
+`tools/iiif_lines.py` cannot run here). One Opus subagent call, six tile paths only, no prior reads, no key, no target named.
+Result `harvest/a1b36v/blind_reads_D1.tsv`:
+
+| tile | target | A (Sonnet) | B (Sonnet) | C (Opus) | 2 of 3 |
+|---|---|---|---|---|---|
+| T1 | S32 | k-like L | k/r-like L | n L | none |
+| T2 | S76/S58 | unreadable | unreadable | ii L | none |
+| T3 | S76/S58 | k/h-like L | k/h-like L | tt M | none |
+| T4 | S76/S58 | ii L | ll M | ll M | **ll** |
+| T5 | S76/S58 | ii L | ll M | ss M | none |
+| T6 | S76/S58 | ii L | ll M | ss M | none |
+
+One tile (T4, v36mid_L06 pos 9) meets the rule, with "ll" over an S76/S58 instance; printed S76 = z, S58 = t. Per the prereg this is
+logged as a data conflict (rule 4) in HYPOTHESES.md, not a key value. It is weak: reader C reads the same looped sign family as "ss"
+on T5 and T6 (long s and l are near-identical at this size), and A read "ii" at L throughout; all three readers agree only that the
+gloss over this looped sign is a two-stroke group, never a single z. No key change; f.87's six S76 tokens were already M (no grade
+change); `tools/decode_key.py . --check` exit 0 ("reading up to date": f.87 S 138 / M 62 / U 4). AUDIT.md and SO rows need no edit
+(no reading change). The S32 tile (T1) has no agreed gloss. Blind model reads of these tiles have now run three readers: the
+instrument is retired for these tiles; the next step is the owner's sign sorter or a further glossed leaf.
+
+Grades: no change. Vision: 1 Opus subagent call (6 tiles). Hosts: none (0 network requests). Report: what was found and where it was
+not found; no novelty class.
 
