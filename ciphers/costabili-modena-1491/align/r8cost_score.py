@@ -29,7 +29,7 @@ def tokens(signs):
 def load(path):
     lines = {}
     for r in csv.DictReader(open(path), delimiter="\t"):
-        m = re.match(r"p4_(L\d)_s(\d+)", r["crop"])
+        m = re.match(r"(?:p4_)?(L\d)_s(\d+)", r["crop"])
         if not m: continue
         lines.setdefault(m.group(1), []).append((int(m.group(2)), r.get("signs") or "", r.get("gloss") or ""))
     joined = {}

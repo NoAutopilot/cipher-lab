@@ -199,7 +199,7 @@ One line, per Usage 7: (DEF1-GRACOS AUDIT 2, 5 Oct 2026): Berzeviczy CXXXIV (Bea
 Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 11 sign values at C (N8-COS 10 + N9-COS2 W = t), the rest M; W = t verified at C by N9-COSVW (5 Oct 2026, AUDIT.md; to do at the next DECODE login: eye-check p2_u15 W under "padre", and relabel p1_u21 pos 5 as W)
 - Key rebuild from the period decipherments: R1166 P1-P2 at C for 11 signs (N8-COS group crops 10; W = t added by N9-COS2's re-score with the dash+open-loop shape as its own label); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; the R1163/R1165 slips were tried with line crops against their clear slips (N9-COS2: pass A non-test at 2 pairs, pass B 0.250 = shuffle p95 at 4 pairs, FAIL) because anchor spans between clear words are too long for the 0.8-1.25 ratio filter; next: hand-cut span boxes at sub-line anchors (each clear word left in the cipher slip, plus line ends) so pairs stay short, 2 blind passes, ~$3; and a q-shape split (owner's sign sorter or group crops of q tokens), ~$2
 - R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align with the N8-COS C key as prior, ~$5
-- R1166 P4 unglossed groups (~100 signs) - blocker: not-attempted; P4 groups not yet transcribed; next: group crops + 2 blind passes of P4 (~$2.5), then decode only if >= 80% of its signs have a C value (PREREG-N8-COS)
+- R1166 P4 (7 cipher lines, ~188 signs; 5 lines carry interlinear gloss, L4-L5 do not) - blocker: not-attempted; transcribed by R8-COST (6 Oct 2026, 2 blind passes, err_2reader 0.029) but the PREREG decode gate FAILs at C coverage 0.718 (< 0.80): the shortfall is q (15 agreed tokens, two shapes under one label), TT (9) and 8/L/x/u/v (8), plus 21 split positions; next: a q-shape split (group crops of every q token on P1/P2/P4, 2 blind passes with q1/q2 labels, re-run the N8-COS statistic per shape), ~$2, then re-score P4 coverage with align/r8cost_score.py
 - Vestigia image map: done for 2977 = R1166 (same photograph, 21 Jun 1491); 2955 = R1165 by card/date/page count only - blocker: not-attempted; R1165's own image not re-fetched this job, so no image-to-image comparison; next: fetch R1165 P1 in the next DECODE login and compare, ~$0.3
 
 ## Escalation (4 Oct 2026, refreshed N8-COS)
@@ -210,7 +210,7 @@ Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running 
 - [ ] key-rebuild: R1166 P1-P2 at C for 11 signs (N8-COS group crops + N9-COS2 W relabel); R1163/R1165 slips tried by anchor spans (N9-COS2, non-test/FAIL: spans too long), short-span boxes untried; R1167 copy untried
 - [x] image-check: one DECODE login, all 31 images full size, per-page table above; Vestigia 2977 = R1166 (N8-COS)
 - [x] retry: Ulaszlo-series and Vestigia search for the four 1491 dates (RUN3-COST, 4 Oct 2026): no printed text of any of the four letters found; Vestigia holds catalogue records (incipit/explicit only), cipher-flagged, for 15 Jun and 21 Jun 1491
-Verdict: keep going: 4 internal gaps; cheapest next: group crops of R1166 P4 with W as its own label (~$2.5), then short-span boxes of the R1163/R1165 slips (~$3)
+Verdict: keep going: 4 internal gaps; cheapest next: the q-shape split (R8-COST, 6 Oct 2026) across R1166 P1/P2/P4 (~$2; with q and TT at C, P4 coverage would be 0.846 on the same passes, arithmetic only), then short-span boxes of the R1163/R1165 slips (~$3)
 
 Gate output (COS-M, 4 Oct 2026):
     gaps_check (RUN3-COSK2, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
@@ -283,3 +283,41 @@ Units: 4 Sonnet reader calls + this worker's reconciliation (the planned 6 less 
 step 1. Requests: de-crypt.org 1 login + 5 image fetches (1.8 s apart). Cost: see the lane ledger.
 Suggested next (not run): short-span boxes on the slips cut at each clear word and at line ends (pairs of one to three groups), then the same
 two passes; and P4 group crops with W as its own label.
+
+## R1166 P4 group crops with W as its own label (R8-COST, 6 Oct 2026, 04:04-04:1x UTC by date -u)
+
+Account 1 worker for LANE-RUN8-account-1. PREREG first: `align/PREREG-R8-COST.md` (e3ce963d5, pushed 04:08 UTC before any crop was cut or
+read). One DECODE browser login (`tools/decode_browser_login.js 1166 <scratch> --fetch "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1166_I5856_P4.png" --max-files 1 --delay 1800`),
+one image, sha1 7d53e868... = `images_manifest.tsv`, scratch only, nothing committed. Requests: de-crypt.org 1 login + 1 page + 1 image.
+
+**Correction to the COS-M table:** P4 is not "only partly glossed ~100 unglossed signs". It has 7 cipher lines (~188 signs as read); 5 of them
+(L1-L3, L6, L7) carry an interlinear clear line written above them ("sentir il parere e volunta de quelli Baroni ...", "molto oppresso et lo
+dicho che sua M.ta impone epsi ...", "il volere loro", "la Regina pochi de epsi", "ne sono Amici"); L4 and L5 have none, and L5 runs on into
+clear text ("... alcuna cosa mi fard ..."). Glosses as read by this worker at contact scale, M at most.
+
+Crop step (the command, run before any reader call, boxes committed first in 7c2638dda):
+`python3 ciphers/costabili-modena-1491/align/r8cost_cut.py` (run in the scratch folder holding `dec/`) -> 29 segment crops of ~460 px,
+400 px step (60 px overlap, 2-3 groups each, gloss above kept), boxes in `align/r8cost_boxes.tsv`. Deviation stated: boxes are fixed-width
+segments over each line's cipher span, not one box per group (P4's group gaps are irregular); the struck-out clear words on L6 were left out.
+Readers: 2 blind Sonnet calls, pass A page order, pass B reverse, labels.tsv incl. `W`, no value/gloss/key; reads as returned in
+`align/r8cost_reads/pass{A,B}.tsv` (pass B wrote crop ids without the `p4_` prefix; the scorer accepts both, no read edited).
+Score: `python3 align/r8cost_score.py align/r8cost_reads/passA.tsv align/r8cost_reads/passB.tsv --out align/r8cost_score.tsv`:
+
+| measure | value |
+|---|---|
+| aligned sign positions (A vs B, difflib per line after joining overlaps) | 188 |
+| A = B | 167 (21 positions split or indel) |
+| err_2reader (same-length substitutions / comparable positions) | 0.029 (5/172) |
+| C coverage (agreed AND C in key_n9cos2.tsv) | 135/188 = **0.718** |
+| PREREG decode gate (>= 0.80) | **FAIL: no running decode written** |
+
+Shortfall by sign (agreed tokens on M signs): q 15, TT 9, 8 3, L 2, x 1, v 1, u 1. W was read by neither pass on P4. If q and TT were both C
+the same passes would give (135+24)/188 = 0.846 (arithmetic, not a result). q is the binding sign: its two shapes (u/c) were already the open
+gap from N8-COS/N9-COS2.
+Held-out check (prereg: reported, licenses nothing, key unchanged): under the C values plus the M values in key_n9cos2.tsv, glossed groups
+follow their glosses word by word where read: L6 `g z d z` -> "loro" under "il volere loro" (all C); L1 `c + d o d o` -> "parere" (all C) under
+"sentir il parere"; the recurring group `o c TT a` -> e p [s] i = the gloss's own spelling "epsi" (L2, L3, L7; TT = s is M); L7 `+ 8 a q a` ->
+a [m] i [q] i under "Amici", i.e. q = c in this token (M; the q split would test it). No count was pre-registered for this check, so none is
+claimed. Grades: no reading is reported from this job (gate FAIL); all P4 values stay at their key_n9cos2.tsv grades.
+Units: 2 Sonnet reader calls + this worker's scoring; no reconciliation call. Step 2 of the brief (short-span boxes of the R1163/R1165 slips)
+not started: it needs a second DECODE login (single-login rule; this session's login fetched P4 only), so it is left as the named next step.
