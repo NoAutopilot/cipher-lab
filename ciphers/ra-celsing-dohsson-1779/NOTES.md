@@ -145,3 +145,6 @@ The "While waiting" action (Riksarkivet Sök-API, `data.riksarkivet.se/api/recor
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: the Riksarkivet Sok-API query (`data.riksarkivet.se/api/records?text=Celsing&onlyDigitisedMaterials=true`) from a host that reaches data.riksarkivet.se: a LOCAL-QUEUE catalogue-lookup row for the runner (the cloud got HTTP 000 twice, 3 Oct 2026), ~$0.3 to file. Who acts: agent. Source: this file's "## Re-check (CS-BATCH3, 3 Oct 2026)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## While waiting (R9-LQROWS, 6 Oct 2026)
+The SE/RA/721512 Sok-API step is LOCAL-QUEUE row L60 (queued 6 Oct 2026), shared with ra-celsing-sillen-1755.

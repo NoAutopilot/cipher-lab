@@ -152,3 +152,6 @@ Requests: archive.org 3 (metadata, _djvu.txt, _page_numbers.json); no 403/429. V
 Verdict (update): blocked, unchanged (needs a copy of the undigitised Biby volume). Next: the Riksarkivet Sök-API digitisation flag
 for the Diplomatica Turcica Celsing dispatches 1746-1770 and Sillén's dag- och brefböcker (~$0.5), then add them to REQUEST.md's
 order as siblings if not digitised; if digitised, they are a free image check for the same cipher.
+
+## While waiting (R9-LQROWS, 6 Oct 2026)
+LOCAL-QUEUE row L60 (Riksarkivet digitisation flags: Diplomatica Turcica Celsing dispatches, Sillen dag- och brefbocker, SE/RA/721512) queued 6 Oct 2026; data.riksarkivet.se HTTP 000 from the cloud again.

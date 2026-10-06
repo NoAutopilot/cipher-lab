@@ -614,3 +614,6 @@ digitised. Not found: an image of either (BNE Digital Cloudflare-blocked from th
 in 20212/27. Requests: bne.alma.exlibrisgroup.com 4 (SRU, all 200), raw.githubusercontent.com 1, bnedigital.bne.es 2 (curl 403 challenge, headless
 Chromium challenge), bdh-rd.bne.es 1 (403 challenge), web.archive.org 2 (CDX, connection reset by the proxy both times; stopped). 0 subagent calls.
 
+
+## While waiting (R9-LQROWS, 6 Oct 2026)
+LOCAL-QUEUE row L58 (viewer-capture of BNE MSS/20212/27, 14 leaves) queued 6 Oct 2026; a sign-inventory check against the 1522/1524 keys follows its images.

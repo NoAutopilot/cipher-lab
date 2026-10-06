@@ -194,3 +194,6 @@ Read so far: unmeasured -- no ciphertext on disk; both holdings undigitised, onl
 Verdict: keep going: 2 internal gaps; cheapest next: desk-browser read of HRSH vol. 6 pp. 223 ff., ~$0.5
 
 Gate re-run (GF4-BATCH19, 3 Oct 2026): `ra-vellingk-1713: blocked (line 3) -- already terminal, nothing to gate`, exit 0 (was exit 1 as an uncited open); status moved open -> blocked by this pass.
+
+## While waiting (R9-LQROWS, 6 Oct 2026)
+LOCAL-QUEUE row L59 (page read of HRSH vol. 6 pp. 223 ff., HathiTrust wu.89107728503 / Google Books owgPAAAAYAAJ) queued 6 Oct 2026.
