@@ -597,9 +597,27 @@ pairs C 54 / M 8 and f.184 pairs M 10 unchanged. No reading-ready flag. Vision: 
 follow-up) + 1 reconciliation unit (3 stacked crop views + 1 zoom) + 6 worker placement views (overview, 4 half views/sheets, 1 debug).
 Requests: de-crypt.org about 3 (1 login, record page, 1 image). Status unchanged: open.
 
+## R12A-D1411LA step: look-alike re-read of the p.4 4/5 forms (6 Oct 2026, account 1)
+
+Step run: R12A-D1411P4's Verdict "cheapest next" (brief R12A-D1411LA, LANE LANE-RUN12-account-1). Rule pinned before any re-read in
+`d1411p4/la/PREREG-LA.md` (pushed cafba26e3, time corrected f376b6b96); scoring would re-use PREREG-D1411P4 (afc9de42d) unchanged.
+`d1411p4/la/build_tiles.py` lists **83 tiles** (p.4 numbers where pass A, pass B or the committed token has a 4 or 5) on 29 crops and
+writes a value-blind prompt (`la/prompt.md`: each 4/5 digit shown as '#', reader names its shape X cross / R r-form / O other / ?).
+tools/lookalike_pass.py's packet step needs a sign sheet and sheet map (symbol ciphers) and does not fit a numeral hand, so the tiles
+and the same 2-of-3 reconcile rule are applied by the folder script; a numeral mode for the tool is a suggestion, not built here.
+
+**Result: void re-read.** One blind Sonnet call on the 29 line crops (images/d1411p4_crops, native resolution, about 1840 x 112 px)
+answered **83 of 83 tiles '?'** (`la/reread.tsv`): the reader reported the masked digits too small to call a shape and could not
+match three left-page crops (p4La_L01, p4Lb_L01, p4Lb_L02) to the listed sequences. Under the pinned rule every tile is UNSETTLED
+and keeps its committed value, so the corrected numbers equal `numbers.tsv` and the T21r rescore is identical to R12A-D1411P4's
+(0.581) by construction: **non-test, not a negative**; no rescore was run, no number, grade or table changed (rule 7 untouched).
+Residual 83/83 is reader abstention, not error. Lesson: a whole-line crop given to a shape question about one digit is too coarse;
+the re-read needs per-number tiles (each number cut and enlarged on its own, a few hundred px per tile), or the owner's sign sorter.
+Vision: 1 Sonnet subagent call. Requests: none (crops on disk). Status unchanged: open.
+
 ## Remaining gaps (R12A-D1411P4, 6 Oct 2026)
 Read so far: 0 of about 930 cipher numbers at S or better (p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; 930 unglossed numbers M)
-- unglossed numerals p.1-p.4 (930) - blocker: not-attempted; controls beaten on three fresh pages and two instruments, but every table stays 0.03-0.07 below the leaf's own gloss in coverage; next: settle the 4/5 look-alike (r-form 5 vs cross 4) on p.2-p.4 with a lookalike pass (tools/lookalike_pass.py) and rescore T21r on the corrected numbers against the same frozen controls, ~$4
+- unglossed numerals p.1-p.4 (930) - blocker: not-attempted; controls beaten on three fresh pages and two instruments, but every table stays 0.03-0.07 below the leaf's own gloss in coverage; next: re-run the p.4 4/5 re-read (R12A-D1411LA's la/ tiles, prompt and pinned rule) on per-number tiles cut from the line crops and enlarged (the line-crop re-read came back 83/83 '?'), then rescore T21r against the same frozen controls, ~$3
 - gloss letter identities h/s at residues 12/22 and n/u, k at residue 14 - blocker: waiting-on ASKS row 120 (a person's read of the gloss); p.4 adds 42 pairs (left page f.184v, lines 1-9) for that read
 - pages 5-12 numerals - blocker: not-attempted; full-size images fetched in GAPS137, none after p.4 transcribed; next: cut and read p.5 numerals in two blind passes with the frozen T21r, same coverage and gloss controls, ~$6
 
@@ -611,4 +629,4 @@ Read so far: 0 of about 930 cipher numbers at S or better (p.1 gloss pairs C 54 
 - [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r on three fresh pages (DEF1-1411, D4-1411P3, R12A-D1411P4), p.4 gloss agrees with T21r 25/42 vs control p99 8 (R12A-D1411P4)
 - [x] image-check: full-size DECODE images p.1-p.4 read on native crops (GAPS141, GAPS146, DEF1-1411, D4-1411P3, R12A-D1411P4)
 - [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause
-Verdict: keep going: 2 internal gaps; cheapest next: lookalike pass on the 4/5 forms across p.2-p.4 and a rescore of T21r against the same frozen controls, ~$4
+Verdict: keep going: 2 internal gaps; cheapest next: the 4/5 re-read on per-number enlarged tiles (R12A-D1411LA's line-crop re-read was void, 83/83 '?') and a rescore of T21r against the same frozen controls, ~$3
