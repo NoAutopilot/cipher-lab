@@ -1,0 +1,12 @@
+0702 before: pairs 42, signs 1596, T _069+_073+[sh-lig] (45 codes); keyed aligned 1508, A 0.966; C1 mean 0.453 p99 0.481 max 0.488 -> SAME SYSTEM (DP)
+0702 after : pairs 42, signs 1596, T _069+_073+[sh-lig] (45 codes); keyed aligned 1536, A 0.967; C1 mean 0.450 p99 0.477 max 0.485 -> SAME SYSTEM (DP); aliased tokens 28
+  0702 A1 -> k: n_al 28, agree 28, share 1.000; C1 share mean 0.268 p99 0.480; scan A 0.966 -> 0.967 -> PASS
+0730 before: pairs 11, signs 516, T _069+_070+[sh-lig] (41 codes); keyed aligned 477, A 0.954; C1 mean 0.387 p99 0.435 max 0.454 -> SAME SYSTEM (DP)
+0730 after : pairs 11, signs 516, T _069+_070+[sh-lig] (41 codes); keyed aligned 491, A 0.955; C1 mean 0.381 p99 0.432 max 0.451 -> SAME SYSTEM (DP); aliased tokens 14
+  0730 A4 -> [sh-lig]: n_al 7, agree 7, share 1.000; C1 share mean 0.156 p99 0.500; scan A 0.954 -> 0.955 -> PASS
+  0730 A5 -> f: n_al 7, agree 7, share 1.000; C1 share mean 0.225 p99 0.714; scan A 0.954 -> 0.955 -> PASS
+0758 before: pairs 11, signs 318, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 284, A 0.947; C1 mean 0.524 p99 0.590 max 0.605 -> SAME SYSTEM (DP)
+0758 after : pairs 11, signs 312, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 298, A 0.936; C1 mean 0.509 p99 0.569 max 0.596 -> SAME SYSTEM (DP); aliased tokens 14
+  0758 A1 -> k: n_al 1, agree 1, share 1.000; C1 share mean 0.313 p99 1.000; scan A 0.947 -> 0.936 -> non-test (n_al < 5)
+  0758 A2 -> [sh-lig]: n_al 9, agree 6, share 0.667; C1 share mean 0.154 p99 0.500; scan A 0.947 -> 0.936 -> FAIL
+  0758 A3 -> [y-fam]: n_al 4, agree 4, share 1.000; C1 share mean 0.378 p99 1.000; scan A 0.947 -> 0.936 -> non-test (n_al < 5)
