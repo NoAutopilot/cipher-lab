@@ -5078,3 +5078,30 @@ Open for the next lane:
 4. manteuffel: pooled gate across 0501/0502/0527/0528 (~$1) is the orchestrator decision still pending, then 0574/0575 (~$3-4).
 5. ra-karlxi: Bakes 2018 book on dk.upce.cz, ~$0.3+floor.
 Lesson for the next brief: an Opus session floor is about 1.4-1.7 per worker; never cap an Opus job below 2.
+
+## LANE DEFAULT-account-4-20261005-2253 handoff (session_01QTy8YG4RDcjZUdZs3b9xUg, account 4), 6 October 2026 (closed 00:5x UTC: cheap backlog worked, lane 55.35 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-05-account4-default-2253-jobs.md. Gate 0a met (account-4 sweep done in-session,
+0 unpushed). VERIFY-BACKLOG had no unclaimed row. Private-repo targets (bne20211-ferdinand-1478 item 126 alignment, hamilton-1650,
+bowes-walsingham-1583, riksarkivet-r4282-1628) handed to the account-4 standing session (session_01PpZtGZsbseHrXViC8rzExA) by send_message.
+13 workers, all D, workers 50.35 + orchestrator 5.00 (get_session):
+
+| worker | target | cost | result |
+|---|---|---|---|
+| A4-SORTFIX | owner sorter pages | 5.75 | Dinteville f.23r sorter rebuilt with 20 named piles (JXsSNDyRLhZT8AGoCMHmyD); Sicily/Revol/MLH republished with Fix the cut; account-4 pages are private to the owner -> ASKS 145; HUMAN-TX-ASKS-sortercheck.tsv |
+| A4-DHOLK | destaing-gerard-1779 | 3.98 | no Gerard-d'Estaing key online; Meng footnotes point to AN Marine B4 143/168 ciphered originals -> REQUEST.md |
+| A4-RFHAR | harley-287-1587 | 4.31 | 12 DECODE full-size images; f.88r two-pass NON-TEST (2-reader err 0.504 vs gate 0.30) |
+| A4-RFVB | vanbeuningen-dewitt-1657 | 4.33 | open-topped 8 misread; 40 -> 40=a/48=d, 11 -> 11=n/8=m; C 446 -> 491/517 |
+| A4-RFHUN | huntington-blathwayt-madrid-1728 | 3.41 | 849 = parle (gloss one column off), 4 digit fixes; C 131 M 20 U 21 of 172 |
+| A4-RFHDK | hessen-daenemark-1672 | 1.17 | step already done 3 Oct; stale line ticked |
+| A4-RFLOPE | lope-hurtado-1522 | 3.90 | Bourdeau reads R9634 73.2%; no larger image; RAH Anubis; 0 tokens added |
+| A4-RFESP | esp318-sicilia-1503 | 1.56 | key-sheet row m = 4 signs |
+| A4-RFLVN | lodewijk-van-nassau-1573-74 | 5.74 | 5811 at 300 dpi: C 616 -> 724, M 792 -> 668; 68 numeral rows still M |
+| A4-RFCOL | colbert26-lathuillerie-1644 | 4.20 | c20-21 small hand is an interlinear decipherment; c20 gloss column one line off; key_f24 14/19 in place vs p95 6 |
+| A4-COLALN | colbert26-lathuillerie-1644 | 1.50 | interlinear_align per-unit gates FAIL unseeded; no merge |
+| A4-AVS175 / B | august-van-saksen-1561-64 | 6.08 + 4.42 | WVO 175 p1 all 13 lines, gates PASS (0.753/0.632/0.710); K = die in 175 vs der in 124 (rule-4 conflict); Qf M |
+
+What is left (next steps named in each folder): ASKS 145 (share the account-4 sorter pages "anyone with the link", incl. Dinteville);
+destaing AN Marine B4 143/168 request; harley-287 lookalike_pass + sorter for f.88r; lope-hurtado BNE siblings (~$1); lodewijk 5811's 68
+numeral rows; colbert26 c20 gloss-column fix from native crops, then re-align; august-van-saksen K witness line in HYPOTHESES.md, WVO 175
+pp.3-8; esp318 rows l/ll sign count; huntington 6 descending-glyph columns. Private targets: with the standing session.
