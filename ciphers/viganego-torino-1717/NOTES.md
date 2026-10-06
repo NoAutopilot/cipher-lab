@@ -79,3 +79,10 @@ Send the existing REQUEST.md (ASGe items 246, 249, 254; the regesti above confir
 
 - Ask ASGe (in the same message) whether Viganego's later reports (items 242, 273, 307, 312, 320) are in clear or in the 249 cipher; depends on nobody to draft, needs the reply to act.
 - The memoriedigitaliliguri.it extract read is done (above, nothing found).
+
+## Next step (R13-STALE, 6 Oct 2026)
+
+Next step: send REQUEST.md to ASGe (items 246, 249, 254, with the question on 242/273/307/312/320 from "While waiting") -- an owner-side email,
+needs the owner; no outreach draft or ASKS row for it was found on 6 Oct 2026, so the lane orchestrator drafts one in outreach/ and files the
+row. Agent cost ~USD 0 until the images come, then ~USD 3 for a first transcription batch. The online steps (inventory PDF, memoriedigitaliliguri
+extracts) are done (A2P4-VIG, 3 Oct). Status stays `blocked`. Housekeeping line, R13-STALE (account 4): no work run.

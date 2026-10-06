@@ -605,3 +605,12 @@ Next step for symA (one line, not run): F4 can only move through the paleographe
 in-folder step instead is a blind 2-pass transcription of the opening-27 inscription (3 lines, native crops above), collated against
 Herzog's "Vgl. fol. 27" apparatus. It is a sibling text in the same alphabet and may show symA-like signs in a second context. About
 USD 3-5. It is a machine transcription of a symbol inscription, so check the TRANSCRIPTION.md sorter rule before briefing it.
+
+## Next step (R13-STALE, 6 Oct 2026)
+
+Next step (runnable, depends on nobody): a blind 2-pass transcription of the opening-27 painted inscription (3 lines, native crops via
+tools/iiif_lines.py --image, one Sonnet pass per line batch), collated against Herzog's "Vgl. fol. 27" apparatus, to see whether symA-like
+signs occur in a second context; about USD 3-5 (2 passes + 1 reconciliation unit); check the TRANSCRIPTION.md sorter rule before briefing it.
+Not run before this date (R9-UNTB2 named it on 6 Oct and stopped). The F4 question itself (crossed-descender p) moves only through the
+paleographer crop packet, which needs an outside paleographer: a person-side step, not yet drafted in outreach/ and not filed as a row by this
+job. Housekeeping line, R13-STALE (account 4): no work run.

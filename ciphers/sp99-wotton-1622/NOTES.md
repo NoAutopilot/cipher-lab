@@ -184,3 +184,10 @@ above tying f.251 to a named sender. Items are `digitised: false` per the 5 Oct 
 status stays `open` and no novelty class is claimed. Counts: 0 H, 0 C, 0 S, 2 I.
 
 Suggestion (not run): when REQUEST.md's f.251 image is ordered, ask for f.239 as well (the "See f 251 below" partner).
+
+## Next step (R13-STALE, 6 Oct 2026)
+
+Next step: the TNA copy order in REQUEST.md for SP 99/24 f.251 (the target) and f.159, with f.239 added (the "See f 251 below" partner found
+by D4-SP99) -- needs the owner (REQUEST.md "waiting on you"; this item is not yet in the consolidated `outreach/tna-page-copy-batch.md`, ASKS
+row 73, and the lane orchestrator may fold it in). The two catalogue steps are done (D2B-WOTT 5 Oct, D4-SP99 6 Oct); no online step is left
+that depends on nobody: the leaves are `digitised: false` and no print names the item. Housekeeping line, R13-STALE (account 4): no work run.

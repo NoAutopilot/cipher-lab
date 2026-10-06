@@ -277,3 +277,11 @@ Next cheapest step: the owner-side TNA page copy (REQUEST.md, ASKS row 73 batch)
 (SP 78/232/41, f.94) and one "to be sent in cipher" draft (SP 78/232/46, f.107), at the fees recorded 26 Sept 2026
 (page check GBP 9.92 per record, digital copy GBP 1.52 per copy; not re-quoted) -- needs the owner. Lower priority, also owner-side: a BL reprographics quote for Add MS
 35355 ff. 370-391 only if the TNA leaves carry no decipherment.
+
+## Next step (R13-STALE, 6 Oct 2026)
+
+Next step: the TNA page-copy order (REQUEST.md, item 9 of `outreach/tna-page-copy-batch.md`, ASKS row 73, owner-side, about GBP 11.44 per
+record at the 26 Sept fees) for f.103, plus one "Cipher." sibling (SP 78/232/41, f.94) and one "to be sent in cipher" draft (SP 78/232/46,
+f.107) -- needs the owner. Every agent step written above is done (per-item note check A2-YOR, BL catalogue A2-YOR2, Bedford and Hardwicke
+print A2P4-YOR3); the only optional online step left is a by-eye read of Bedford vol. 2's contents pages for March 1749 entries, which needs a
+lending-only page view (a person in the IA reader), not an agent. Housekeeping line, R13-STALE (account 4): no work run.

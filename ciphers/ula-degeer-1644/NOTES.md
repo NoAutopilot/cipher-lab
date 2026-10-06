@@ -197,3 +197,10 @@ Clock read 00:13 UTC 6 Oct 2026 (start). This step is the one named in "While wa
 **What this settles.** The "While waiting" step is done: this digitised volume holds no De Geer cipher material. Status stays `blocked` (needs-physical-access). The cipher material is still only in the undigitised units named above: SE/ULA/13506/1/I/45, Oxenstiernska samlingen E 584, Chifferklaver SE/RA/202/1-3 with its cards 202/20, and Oxenstiernaprojektet SE/RA/721502/3/1. The REQUEST.md copy order is unchanged. No other step can be run online in the meantime.
 
 Requests: lbiiif.riksarkivet.se 28 (1 manifest, 24 thumbnails, 1 stray full-size range request of canvas 10 aborted after the first byte, 1 region crop; 1 HTTP 400 on canvas 2 at 900 px, above native width). Vision: by eye in this session, no subagent calls. Clock at end: see the ROOM done line.
+
+## Next step (R13-STALE, 6 Oct 2026)
+
+Next step: the copy order in REQUEST.md ("waiting on you", owner-side) for SE/ULA/13506/1/I/45, extended to Oxenstiernska samlingen E 584,
+the Chifferklaver card catalogue SE/RA/202/20 and SE/RA/721502/3/1 (all `onlyDigitisedMaterials: false`) -- needs the owner. The 3 Oct
+while-waiting step is done (D2B-ULA, 6 Oct: the digitised 1133.08 volume's De Geer material is all in clear), and no online step is left that
+depends on nobody. Status stays `blocked` (needs-physical-access). Housekeeping line, R13-STALE (account 4): no work run.

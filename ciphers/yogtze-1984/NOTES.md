@@ -77,3 +77,10 @@ Requests: none (all data on disk).
 ## Next step (R8-YOG3, 6 Oct 2026)
 
 Lexical family exhausted: spec tests 1 (initials), 2 (plates/abbreviations) and 3 (anagrams) are all run and none discriminates. No cheap untried step is left for the letters themselves (N = 6, below any unicity; the slip is lost per the Hagen prosecutor, 2025). next: the parent decides whether to re-label the target per the 3 Oct premise note (no surviving witness of the slip). Who acts: parent.
+
+## Next step (R13-STALE, 6 Oct 2026)
+
+Next step: none runnable. The six letters are below unicity (N = 6), with no key source and no surviving witness (the slip is lost, Hagen
+prosecutor 2025); lexical spec tests 1-3 are all run and non-discriminating (bYOG, D2B-YOG, R8-YOG3). What remains is a parent orchestrator
+decision, not an agent step: whether to re-label the target per the 3 Oct premise note (rule 2: hearsay string, no original). Housekeeping
+line, R13-STALE (account 4): no work run; status line unchanged.
