@@ -611,6 +611,41 @@ the letter before it as one upper-case letter -- the cipher's convention A appli
 Decode (not a reading): families/homophonic-1-profile=target,alphabet=ru-s3-soft-s3softtxt.txt. No judge PASS, so no
 shuffled-target check owed. Rule 10: nothing here is a reading. Spec judge block restored to de20 with no alphabet.
 
+## R15-KAL13, wordcode with codes on the most frequent types (codes=topk:N), convention B (6 Oct 2026) -- PRE-REGISTRATION
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run15-jobs.md` "R15-KAL13" (LANE-RUN15-account-2, account 2). Written and pushed
+before any scored run. CPU only, no hosts, no subagents. The R14-KAL12 named next step "codes on unmarked types (`codes=topk:N`)":
+a different code-capable set from R14-KAL11/12 (there the marked types; here the N most frequent types). Same tool
+(`family_run.py --family wordcode`, which already takes `codes=topk:N`), corpus (ru19_lat s1s), bnd=x, err=0.05, restarts 6,
+seeds 1-5, gate 0.6 and cipher file (`families/r14_kal12/cipher_marked_B.txt`, convention B as R12-KAL9 confirmed, N 1066, K 28)
+as R14-KAL12. codeletters left at its default 0 (a code-capable type decodes only to a word), matching how the control lays codes.
+**N fixed now, two values only:** the brief's example values (20, 40) do not fit K 28 (topk:40 would make every type a code and
+leave no letters), so N is chosen from the target's own frequency table: **topk:2** (`e` 156, `n` 134: both unmarked, 290 tokens,
+27.2%) and **topk:6** (`e n ap^a x i s`, 589 tokens, 55.3%; includes the free apostrophe at rank 3 -- the tool's topk cannot skip a
+marked type, said here before the run). Hypothesis: those N types are whole-word codes, the other 28-N types letters, Russian s1s.
+Spec copy: `families/r15_kal13/spec_s1s.json` (specs/kaliningrad-2015.json with `judge.corpora` = ru19_lat s1s).
+
+**Command A(N)** for N in 2, 6:
+```
+python3 tools/family_run.py ciphers/kaliningrad-2015/families/r15_kal13/spec_s1s.json --family wordcode \
+  --cipher ciphers/kaliningrad-2015/families/r14_kal12/cipher_marked_B.txt --tokens space --corpus tools/data/ru19_lat/s1s.txt.gz \
+  --param codes=topk:N --param bnd=x --param err=0.05 --seeds 5 --restarts 6 --gate 0.6 --decode-tag convB \
+  --label "R15-KAL13 wordcode ru s1s, top-N types = codes, conv. B, restarts 6"
+```
+**Command B(N)** (only if A(N)'s control meets gate 1): the same plus `--shuffle-target 1` (control identical by commit 7f76260e1).
+`--decode-tag convB` (added by this job, offline test (9) in tools/tests/test_family_run.py) gives the decodes a distinct name.
+
+**Gates (fixed now, as R14-KAL12), per N.**
+1. Control licenses the target only if mean token accuracy over seeds 1-5 >= 0.6 AND code-class accuracy mean >= 0.3.
+   Otherwise: CONTROL BELOW GATE, a non-test for this design at this N with this tool at this setting, not a negative.
+2. If licensed: target and shuffled-target decodes both through the spec's judge (ru19_lat s1s, real_p05 gate of unknown
+   reliability per RUN4-KAL). "Worth a verifier" only if the target PASSes and the shuffled decode FAILs; a shuffled PASS voids
+   the judge for this family (ARM-C1). Anything else: control-backed negative for this design at this N, conditional on Ernst's
+   transcript and convention B, at err 0.05 only.
+Statistic check (rule 3, orthogonal-control paragraph): the shuffle permutes token order; the judge and anneal score read order,
+so the shuffled decode can differ from the target's. Caveat fixed now: a high code share (27%, 55%) forces the control to lay many
+code words, so its code vocabulary is wide; the per-class numbers are reported beside the blended mean.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
