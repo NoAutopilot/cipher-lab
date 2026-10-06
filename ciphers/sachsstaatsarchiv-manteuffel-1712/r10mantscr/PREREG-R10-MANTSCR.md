@@ -29,6 +29,6 @@ under SP does not PASS, nothing enters key.tsv.
 Sensitivity (reported, not a gate): per code, licence under the registered MANT5 table vs under SP; any code that changes is listed.
 Implementation: pooled_mantp/pooled_gate.py --add0526 --sp (outputs suffix _0526sp). Output kept beside the registered run, never in its place.
 
-Clarification (10:05 UTC by date -u, before any scored run): a unit check of sp() on sample strings showed SP5 applied after SP3 turned
+Clarification (10:03 UTC by date -u, before any scored run): a unit check of sp() on sample strings showed SP5 applied after SP3 turned
 "s m" into "m" (an s before the next word's consonant). SP4 and SP5 apply within each word, before SP3 removes word division. No pool
 statistic had been computed.

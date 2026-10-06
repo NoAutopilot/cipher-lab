@@ -156,6 +156,7 @@ code	value	grade	source	note
 390	Stettin	C	Krauske 1893, Loc. 694/10 f.5	passes agree; note: Kurrent
 401	o	C	Krauske 1893, Loc. 694/10 f.5	passes agree
 700	et	C	Krauske 1893, Loc. 694/10 f.5	passes agree; note: brace joins 700 and 1000
+867	le Feldmarechal	M	period interlinear single-code glosses, Loc. 694/08 ff.424v-425 (0529, 2x 'le Feldmarechal') and f.422 (0526, 1x 'le feld mareschal'); pooled gate under spelling rule SP PASS (R10-MANTSCR, 6 Oct 2026, r10mantscr/PREREG-R10-MANTSCR.md)	3/3 agree under SP (accents, leading article, word division, y/i, preconsonantal s, doubled letters); 'disagree' under the registered MANT5 table (R10-MANT526); both leaves HELD per leaf, so M (per-unit merge rule); not in Krauske's table
 1000	et	C	Krauske 1893, Loc. 694/10 f.5	passes agree; note: brace joins 700 and 1000
 98	Ilgen	C	period interlinear gloss, Loc. 694/08 ff.422v-423 (frame 0528), GAPS195 3 Oct 2026	3 glossed occurrences, all Ilgen; table may differ from Krauske's (73, 82 conflict, HYPOTHESES.md)
 107	Schonborn	C	period interlinear gloss, Loc. 694/08 ff.422v-423 (frame 0528), GAPS195 3 Oct 2026	6 single-code glosses Schonborn (+1 inside 402.975.107 'le C Schonborn'); table may differ from Krauske's

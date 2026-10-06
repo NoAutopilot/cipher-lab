@@ -1,0 +1,11 @@
+# R10-MANTSCR (6 Oct 2026): ranking of the 14 untranscribed N9-MANT2 glossed frames for single-code 898/939 and f.410 U codes.
+# Source: R7-MANTSCR's eye screen (n9mant/screen_r7mantscr.tsv, same 14 frames, ~0.75x native, 6 Oct 2026), not repeated here; plus this
+# job's one new look: 0514's right page (f.412), which R7-MANTSCR's crop cut. Grade M throughout; nothing here is a transcription.
+rank	frame	folio	single_898_939	u_codes_seen	note
+1	0521	f.419v? (left page)	no	714 553 555 549 (~4)	one glossed 3-line run, signed; the only one of the 14 with U codes in a glossed run beyond 402-404
+2	0518	f.416	no	402 404 398 391 400 (~5)	group-read by N9-MANT2 (71 groups, 0 shared n-grams with f.410); 400 doubtful
+3	0517	f.415	no	416 399 400 (~3)	digits above the gloss line, doubtful
+4	0535	short letter	no	402 (1)	letter-range otherwise
+5	0544	ff.436v-437	no	403? (0-1)	letter-range
+6	0514	ff.411v-412 (minute)	no	none	R10-MANTSCR: right page f.412 read at 0.2x and two 1:1 crops (native boxes 2880,1050,3700,1950 and 2880,1950,3700,2850): codes written over underlined clear words, letter-range 1-100 plus 217 over "la Reine d'Angl" and "cette Princesse" (key 217 C la reine d'Angleterre agrees); "Breton" 20.60.2.28.22.14 = b r e t o n under key.tsv (22 o|a, 60 r|re|ro M); no 898/939, no U code
+7	0520 0523 0532 0533 0539 0541 0542 0548	-	no	none	letter-range and common name codes only (R7-MANTSCR)
