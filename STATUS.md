@@ -90,6 +90,27 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE LANE-PRIV1 handoff (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA, for the account-3 orchestrator), 6 Oct 2026 01:35-02:1x UTC (brief met)
+
+Run in the standing session (the only one with the private repository); 16 Sonnet subagent calls, no spawned sessions.
+- **FER-POOL (bne20211-ferdinand-1478), item 126:** 40 cipher lines (28 f.1r, 12 f.1v) transcribed in two blind passes
+  with the interlinear decipherment above each line (`item126_passes.tsv`). **Tomokiyo 2018 Fig. 4's syllable numerals
+  PASS against the leaf's own period gloss** (rule fixed first, `item126_fig4_test.py`): pass A 0.370 vs shuffled mean 0.100
+  (p99 0.156), pass B 0.371 vs 0.097 (p99 0.160). Reading gate FAILED: the passes agree 0.626 (numerals 0.758) and the
+  letter signs are unsettled as on item 123; the interlinear is too faint at 120 ppi for a full alignment. Count only: agreed
+  numerals with an unbracketed Fig. 4 value = 21% of tokens. No sibling decoded. ASKS 143 widened to items 126 and 94-128.
+  The Fig. 4 table used by the test is not committed (author's work, and the private repo is read-only here): NOTES.md says
+  how to re-type it from lit/fig4-000.jpg.
+- **destaing-gerard-1779 key hunt:** the Holker lead was A4-DHOLK's (no key online; route AN Marine B4 143/168 known-plaintext
+  pairs, REQUEST.md); this lane added the print check of the clear passages: no phrase hit (Meng, IA global, OpenAlex; Doniol iv
+  text HTTP 500; Semantic Scholar 429). No key, so no test on the 216 groups.
+- **hamilton-1650, bowes-walsingham-1583, riksarkivet-r4282-1628:** no private-image step left. Their screenshots (HMC 1932,
+  CSP vi pp.370-371/566-568, AOSB I:4) were read on 5 Oct; the open steps need the owner's IA loan (Hamilton: search-inside
+  "1650"/"cypher" variants), a key pass (Bowes: grade code 32 = Queen of England at C, editor's gloss), or outside material
+  (Riksarkivet, parked).
+- Still open from this session: FER1478-SORTER (sorter built, private-artifact publish refused by the classifier; the
+  owner allows it or publishes); Longlee/Pisany republish on the new Fix-the-cut template must come from the owning account.
+
 ## Account-4 unfinished-work report (5 Oct 2026)
 
 Written 5 Oct 2026 22:3x UTC by the account-4 standing session (session_01PpZtGZsbseHrXViC8rzExA) for the account-3
