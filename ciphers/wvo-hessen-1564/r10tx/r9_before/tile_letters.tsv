@@ -2,37 +2,37 @@ sid	row	idx	pile	gloss_letter	status
 f23_C01_01_001	C01	0	k25		null-or-unaligned
 f23_C01_01_002	C01	1	k10	i	agrees
 f23_C01_01_003	C01	2	k14	r	agrees
-f23_C01_01_004	C01	3	k13	k	agrees
+f23_C01_01_004	C01	3	k13	k	conflict:i
 f23_C01_01_005	C01	4	k22	o	conflict:d
 f23_C01_01_006	C01	5	k21	n	agrees
 f23_C01_01_007	C01	6	k21	n	agrees
 f23_C01_01_008	C01	7	k06	e	agrees
 f23_C01_01_009	C01	8	k05	n	agrees
-f23_C01_01_010	C01	9	k11	a	agrees
-f23_C01_01_011	C01	10	k03		null-or-unaligned
-f23_C01_01_012	C01	11	k11	u	conflict:a
-f23_C01_01_013	C01	12	k08	h	agrees
+f23_C01_01_010	C01	9	k11		null-or-unaligned
+f23_C01_01_011	C01	10	k03	a	conflict:t
+f23_C01_01_012	C01	11	k11	u	conflict:h
+f23_C01_01_013	C01	12	k08	c	agrees
 f23_C01_01_014	C01	13	k25		clear
-f23_C01_01_015	C01	14	k23	i	agrees
-f23_C01_01_016	C01	15	k20	n	agrees
-f23_C01_01_017	C01	16	k24	f	agrees
-f23_C01_01_018	C01	17	k02	r	conflict:w
+f23_C01_01_015	C01	14	k23	h	conflict:d
+f23_C01_01_016	C01	15	k20	u	conflict:n
+f23_C01_01_017	C01	16	k24	n	conflict:f
+f23_C01_01_018	C01	17	k02	f	conflict:z
 f23_C01_01_019	C01	18	k12	e	agrees
 f23_C01_01_020	C01	19	k16	u	agrees
 f23_C01_01_021	C01	20	k05	n	agrees
 f23_C01_01_022	C01	21	k22	d	agrees
 f23_C01_01_023	C01	22	k03	t	agrees
 f23_C01_01_024	C01	23	k01	l	agrees
-f23_C01_01_025	C01	24	k08	i	conflict:h
-f23_C01_01_026	C01	25	k11		null-or-unaligned
+f23_C01_01_025	C01	24	k08		null-or-unaligned
+f23_C01_01_026	C01	25	k11	i	conflict:h
 f23_C01_01_027	C01	26	k14	c	conflict:r
 f23_C01_01_028	C01	27	k04	h	conflict:o
 f23_C02_01_001	C02	0	k25		null-or-unaligned
 f23_C02_01_002	C02	1	k21	n	agrees
-f23_C02_01_003	C02	2	k11	v	conflict:a
+f23_C02_01_003	C02	2	k11	v	conflict:h
 f23_C02_01_004	C02	3	k26	e	agrees
 f23_C02_01_005	C02	4	k21		null-or-unaligned
-f23_C02_01_006	C02	5	k08	r	conflict:h
+f23_C02_01_006	C02	5	k08	r	conflict:c
 f23_C02_01_007	C02	6	k03	t	agrees
 f23_C02_01_008	C02	7	k22	r	conflict:d
 f23_C02_01_009	C02	8	k18	a	agrees
@@ -45,7 +45,7 @@ f23_C02_01_015	C02	14	k03	t	agrees
 f23_C02_01_016	C02	15	k16	v	agrees
 f23_C02_01_017	C02	16	k06	o	conflict:e
 f23_C02_01_018	C02	17	k07	r	agrees
-f23_C02_01_019	C02	18	k27	h	conflict:a
+f23_C02_01_019	C02	18	k27	g	conflict:a
 f23_C02_01_020	C02	19	k14	a	conflict:r
 f23_C02_01_021	C02	20	k01	l	agrees
 f23_C02_01_022	C02	21	k03	t	agrees
@@ -61,34 +61,34 @@ f23_C02_01_031	C02	30	k14	i	conflict:r
 f23_C02_01_032	C02	31	k04	r	conflict:o
 f23_C03_01_001	C03	0	k09	s	agrees
 f23_C03_01_002	C03	1	k26	e	agrees
-f23_C03_01_003	C03	2	k03	h	conflict:t
-f23_C03_01_004	C03	3	k22	d	agrees
-f23_C03_01_005	C03	4	k11	h	conflict:a
-f23_C03_01_006	C03	5	k12	e	agrees
-f23_C03_01_007	C03	6	k14	v	conflict:r
-f23_C03_01_008	C03	7	k22	o	conflict:d
-f23_C03_01_009	C03	8	k27	a	agrees
-f23_C03_01_010	C03	9	k16	n	conflict:u
-f23_C03_01_011	C03	10	k09	s	agrees
-f23_C03_01_012	C03	11	k27	s	conflict:a
-f23_C03_01_013	C03	12	k01	p	conflict:l
-f23_C03_01_014	C03	13	k06	z	conflict:e
-f23_C03_01_015	C03	14	k13	e	conflict:k
-f23_C03_01_016	C03	15	k23	i	agrees
-f23_C03_01_017	C03	16	k05		null-or-unaligned
-f23_C03_01_018	C03	17	k18	t	conflict:a
-f23_C03_01_019	C03	18	k16	t	conflict:u
-f23_C03_01_020	C03	19	k16	u	agrees
-f23_C03_01_021	C03	20	k20	n	agrees
-f23_C03_01_022	C03	21	k19	g	agrees
-f23_C03_01_024	C03	22	k06	e	agrees
-f23_C03_01_025	C03	23	k17		null-or-unaligned
-f23_C03_01_026	C03	24	k20	n	agrees
-f23_C03_01_027	C03	25	k28	b	agrees
-f23_C03_01_028	C03	26	k26	e	agrees
-f23_C03_01_029	C03	27	k13	k	agrees
-f23_C03_01_031	C03	28	k08		null-or-unaligned
-f23_C03_01_033	C03	29	k23		null-or-unaligned
+f23_C03_01_003	C03	2	k03		null-or-unaligned
+f23_C03_01_004	C03	3	k22		null-or-unaligned
+f23_C03_01_005	C03	4	k11	h	agrees
+f23_C03_01_006	C03	5	k12		null-or-unaligned
+f23_C03_01_007	C03	6	k14		null-or-unaligned
+f23_C03_01_008	C03	7	k22	d	agrees
+f23_C03_01_009	C03	8	k27	g	conflict:a
+f23_C03_01_010	C03	9	k16	e	conflict:u
+f23_C03_01_011	C03	10	k09	v	conflict:s
+f23_C03_01_012	C03	11	k27	o	conflict:a
+f23_C03_01_013	C03	12	k01	a	conflict:l
+f23_C03_01_014	C03	13	k06	n	conflict:e
+f23_C03_01_015	C03	14	k13	s	conflict:i
+f23_C03_01_016	C03	15	k23	p	conflict:d
+f23_C03_01_017	C03	16	k05	z	conflict:n
+f23_C03_01_018	C03	17	k18	e	conflict:a
+f23_C03_01_019	C03	18	k16	i	conflict:u
+f23_C03_01_020	C03	19	k16	t	conflict:u
+f23_C03_01_021	C03	20	k20	z	conflict:n
+f23_C03_01_022	C03	21	k19	t	conflict:a
+f23_C03_01_024	C03	22	k06	u	conflict:e
+f23_C03_01_025	C03	23	k17	n	conflict:b
+f23_C03_01_026	C03	24	k20	g	conflict:n
+f23_C03_01_027	C03	25	k28	e	conflict:a
+f23_C03_01_028	C03	26	k26	n	conflict:e
+f23_C03_01_029	C03	27	k13	b	conflict:i
+f23_C03_01_031	C03	28	k08	e	conflict:c
+f23_C03_01_033	C03	29	k23	k	conflict:d
 f23_C03_01_035	C03	30	k04	o	agrees
 f23_C03_01_036	C03	31	k04	m	conflict:o
 f23_C04_01_001	C04	0	k25		null-or-unaligned
@@ -98,37 +98,37 @@ f23_C04_01_004	C04	3	k08		null-or-unaligned
 f23_C04_01_005	C04	4	k26	e	agrees
 f23_C04_01_006	C04	5	k20		null-or-unaligned
 f23_C04_01_007	C04	6	k20	n	agrees
-f23_C04_01_008	C04	7	k08	h	agrees
-f23_C04_01_009	C04	8	k25	a	agrees
-f23_C04_01_010	C04	9	k28	b	agrees
-f23_C04_01_012	C04	10	k17	e	single
+f23_C04_01_008	C04	7	k08		null-or-unaligned
+f23_C04_01_009	C04	8	k25	g	conflict:a
+f23_C04_01_010	C04	9	k28	a	agrees
+f23_C04_01_012	C04	10	k17	b	single
 f23_C04_01_013	C04	11	k05	n	agrees
 f23_C04_01_014	C04	12	k27	d	conflict:a
 f23_C04_01_015	C04	13	k27	a	agrees
 f23_C04_01_016	C04	14	k09	s	agrees
 f23_C04_01_017	C04	15	k22	d	agrees
-f23_C04_01_018	C04	16	k09	i	conflict:s
-f23_C04_01_019	C04	17	k12	e	agrees
-f23_C04_01_021	C04	18	k03		null-or-unaligned
-f23_C04_01_022	C04	19	k13	k	agrees
-f23_C04_01_023	C04	20	k13	i	conflict:k
-f23_C04_01_024	C04	21	k20	n	agrees
-f23_C04_01_025	C04	22	k25	s	conflict:a
-f23_C04_01_026	C04	23	k08		null-or-unaligned
+f23_C04_01_018	C04	16	k09		null-or-unaligned
+f23_C04_01_019	C04	17	k12	i	conflict:e
+f23_C04_01_021	C04	18	k03	e	conflict:t
+f23_C04_01_022	C04	19	k13	k	conflict:i
+f23_C04_01_023	C04	20	k13	e	conflict:i
+f23_C04_01_024	C04	21	k20	i	conflict:n
+f23_C04_01_025	C04	22	k25	n	conflict:a
+f23_C04_01_026	C04	23	k08	s	conflict:c
 f23_C04_01_027	C04	24	k04	o	agrees
-f23_C05_01_001	C05	0	k13	h	conflict:k
+f23_C05_01_001	C05	0	k13	g	conflict:i
 f23_C05_01_002	C05	1	k26	e	agrees
 f23_C05_01_003	C05	2	k24	f	agrees
-f23_C05_01_004	C05	3	k03	t	agrees
-f23_C05_01_005	C05	4	k08	i	conflict:h
-f23_C05_01_006	C05	5	k19	g	agrees
-f23_C05_01_007	C05	6	k13	k	agrees
+f23_C05_01_004	C05	3	k03	r	conflict:t
+f23_C05_01_005	C05	4	k08	i	conflict:c
+f23_C05_01_006	C05	5	k19	d	conflict:a
+f23_C05_01_007	C05	6	k13	k	conflict:i
 f23_C05_01_008	C05	7	k07	r	agrees
 f23_C05_01_009	C05	8	k18	a	agrees
 f23_C05_01_010	C05	9	k05	n	agrees
 f23_C05_01_011	C05	10	k27	c	conflict:a
-f23_C05_01_012	C05	11	k13	k	agrees
-f23_C05_01_013	C05	12	k02	w	agrees
+f23_C05_01_012	C05	11	k13	k	conflict:i
+f23_C05_01_013	C05	12	k02	w	conflict:z
 f23_C05_01_014	C05	13	k22	o	conflict:d
 f23_C05_01_015	C05	14	k07	r	agrees
 f23_C05_01_016	C05	15	k22	d	agrees
@@ -136,71 +136,71 @@ f23_C05_01_017	C05	16	k06	e	agrees
 f23_C05_01_018	C05	17	k20	n	agrees
 f23_C05_01_019	C05	18	k09	s	agrees
 f23_C05_01_020	C05	19	k26	e	agrees
-f23_C05_01_021	C05	20	k13	i	conflict:k
-f23_C05_01_022	C05	21	k15	d	agrees
-f23_C05_01_023	C05	22	k25	a	agrees
+f23_C05_01_021	C05	20	k13	i	agrees
+f23_C05_01_022	C05	21	k15	d	single
+f23_C05_01_023	C05	22	k25	a	single
 f23_C05_01_024	C05	23	k09	s	agrees
 f23_C06_01_001	C06	0	k03		null-or-unaligned
 f23_C06_01_002	C06	1	k13		null-or-unaligned
-f23_C06_01_003	C06	2	k28		null-or-unaligned
+f23_C06_01_003	C06	2	k28	a	agrees
 f23_C06_01_004	C06	3	k05	n	agrees
 f23_C06_01_005	C06	4	k02		null-or-unaligned
 f23_C06_01_006	C06	5	k10	i	agrees
 f23_C06_01_007	C06	6	k14	r	agrees
 f23_C06_01_008	C06	7	k22	d	agrees
-f23_C06_01_009	C06	8	k06		null-or-unaligned
-f23_C06_01_010	C06	9	k02	i	conflict:w
+f23_C06_01_009	C06	8	k06	i	conflict:e
+f23_C06_01_010	C06	9	k02		null-or-unaligned
 f23_C06_01_011	C06	10	k12	e	agrees
-f23_C06_01_012	C06	11	k27	a	agrees
-f23_C06_01_013	C06	12	k28		null-or-unaligned
+f23_C06_01_012	C06	11	k27		null-or-unaligned
+f23_C06_01_013	C06	12	k28	a	agrees
 f23_C06_01_014	C06	13	k22	d	agrees
 f23_C06_01_015	C06	14	k26	e	agrees
 f23_C06_01_016	C06	15	k07	r	agrees
 f23_C06_01_017	C06	16	k05	n	agrees
 f23_C06_01_018	C06	17	k01		null-or-unaligned
-f23_C06_01_019	C06	18	k17	z	conflict:e
-f23_C06_01_020	C06	19	k02	w	agrees
-f23_C06_01_021	C06	20	k26	e	agrees
-f23_C06_01_022	C06	21	k23	i	agrees
-f23_C06_01_023	C06	22	k13		null-or-unaligned
-f23_C06_01_024	C06	23	k13		null-or-unaligned
+f23_C06_01_019	C06	18	k17		null-or-unaligned
+f23_C06_01_020	C06	19	k02	z	agrees
+f23_C06_01_021	C06	20	k26	w	conflict:e
+f23_C06_01_022	C06	21	k23		null-or-unaligned
+f23_C06_01_023	C06	22	k13	e	conflict:i
+f23_C06_01_024	C06	23	k13	i	agrees
 f23_C06_01_025	C06	24	k18		null-or-unaligned
-f23_C06_01_026	C06	25	k23	m	conflict:i
+f23_C06_01_026	C06	25	k23	m	conflict:d
 f23_C06_01_027	C06	26	k01	a	conflict:l
-f23_C06_01_028	C06	27	k17	h	conflict:e
+f23_C06_01_028	C06	27	k17	h	conflict:b
 f23_C06_01_029	C06	28	k04	l	conflict:o
 f23_C07_01_001	C07	0	k09	s	agrees
-f23_C07_01_002	C07	1	k11	c	conflict:a
-f23_C07_01_003	C07	2	k08	h	agrees
-f23_C07_01_004	C07	3	k01	l	agrees
-f23_C07_01_005	C07	4	k27	a	agrees
-f23_C07_01_006	C07	5	k19	g	agrees
-f23_C07_01_007	C07	6	k26	e	agrees
-f23_C07_01_008	C07	7	k03	n	conflict:t
-f23_C07_01_010	C07	8	k16	v	agrees
-f23_C07_01_011	C07	9	k20	n	agrees
-f23_C07_01_012	C07	10	k15	d	agrees
-f23_C07_01_013	C07	11	k23		null-or-unaligned
-f23_C07_01_014	C07	12	k23		null-or-unaligned
-f23_C07_01_015	C07	13	k16	t	conflict:u
-f23_C07_01_016	C07	14	k11	a	agrees
-f23_C07_01_018	C07	15	k08	u	conflict:h
-f23_C07_01_019	C07	16	k10	s	conflict:i
+f23_C07_01_002	C07	1	k11		null-or-unaligned
+f23_C07_01_003	C07	2	k08	c	agrees
+f23_C07_01_004	C07	3	k01	h	conflict:l
+f23_C07_01_005	C07	4	k27	l	conflict:a
+f23_C07_01_006	C07	5	k19	a	single
+f23_C07_01_007	C07	6	k26	g	conflict:e
+f23_C07_01_008	C07	7	k03	e	conflict:t
+f23_C07_01_010	C07	8	k16	n	conflict:u
+f23_C07_01_011	C07	9	k20	u	conflict:n
+f23_C07_01_012	C07	10	k15	n	conflict:d
+f23_C07_01_013	C07	11	k23	d	single
+f23_C07_01_014	C07	12	k23	t	conflict:d
+f23_C07_01_015	C07	13	k16	a	conflict:u
+f23_C07_01_016	C07	14	k11	u	conflict:h
+f23_C07_01_018	C07	15	k08	s	conflict:c
+f23_C07_01_019	C07	16	k10	c	conflict:i
 f23_C07_01_020	C07	17	k18	h	conflict:a
-f23_C07_01_021	C07	18	k02	w	agrees
-f23_C07_01_022	C07	19	k26	e	agrees
-f23_C07_01_023	C07	20	k18		null-or-unaligned
-f23_C07_01_024	C07	21	k13	i	conflict:k
+f23_C07_01_021	C07	18	k02	z	agrees
+f23_C07_01_022	C07	19	k26	w	conflict:e
+f23_C07_01_023	C07	20	k18	e	conflict:a
+f23_C07_01_024	C07	21	k13	i	agrees
 f23_C07_01_025	C07	22	k10	m	conflict:i
 f23_C07_01_026	C07	23	k18	a	agrees
-f23_C07_01_027	C07	24	k11	h	conflict:a
+f23_C07_01_027	C07	24	k11	h	agrees
 f23_C07_01_028	C07	25	k01	l	agrees
-f23_C08_01_001	C08	0	k18	p	conflict:a
+f23_C08_01_001	C08	0	k18		null-or-unaligned
 f23_C08_01_002	C08	1	k16	u	agrees
 f23_C08_01_003	C08	2	k14	r	agrees
-f23_C08_01_004	C08	3	k19	g	agrees
-f23_C08_01_005	C08	4	k10	i	agrees
-f23_C08_01_006	C08	5	k06	e	agrees
+f23_C08_01_004	C08	3	k19		null-or-unaligned
+f23_C08_01_005	C08	4	k10	g	conflict:i
+f23_C08_01_006	C08	5	k06	i	conflict:e
 f23_C08_01_007	C08	6	k07	r	agrees
 f23_C08_01_008	C08	7	k12	e	agrees
 f23_C08_01_009	C08	8	k20	n	agrees
@@ -224,36 +224,36 @@ f23_C09_01_002	C09	1	k27	a	agrees
 f23_C09_01_003	C09	2	k09	s	agrees
 f23_C09_01_004	C09	3	k28		null-or-unaligned
 f23_C09_01_005	C09	4	k09	s	agrees
-f23_C09_01_006	C09	5	k10	w	conflict:i
-f23_C09_01_007	C09	6	k24		null-or-unaligned
-f23_C09_01_008	C09	7	k23	i	agrees
-f23_C09_01_009	C09	8	k14	r	agrees
+f23_C09_01_006	C09	5	k10	i	agrees
+f23_C09_01_007	C09	6	k24	v	conflict:f
+f23_C09_01_008	C09	7	k23		null-or-unaligned
+f23_C09_01_009	C09	8	k14		null-or-unaligned
 f23_C09_01_010	C09	9	k26	e	agrees
 f23_C09_01_011	C09	10	k14	r	agrees
 f23_C09_01_012	C09	11	k24	f	agrees
 f23_C09_01_013	C09	12	k14	r	agrees
 f23_C09_01_014	C09	13	k16	u	agrees
-f23_C09_01_015	C09	14	k11	c	conflict:a
-f23_C09_01_016	C09	15	k08	h	agrees
+f23_C09_01_015	C09	14	k11	h	agrees
+f23_C09_01_016	C09	15	k08		null-or-unaligned
 f23_C09_01_018	C09	16	k16	t	conflict:u
 f23_C09_01_019	C09	17	k25		null-or-unaligned
 f23_C09_01_020	C09	18	k26	e	agrees
 f23_C09_01_021	C09	19	k07	r	agrees
-f23_C09_01_022	C09	20	k01	f	conflict:l
-f23_C09_01_023	C09	21	k06	e	agrees
-f23_C09_01_024	C09	22	k08		null-or-unaligned
-f23_C09_01_025	C09	23	k03		null-or-unaligned
+f23_C09_01_022	C09	20	k01		null-or-unaligned
+f23_C09_01_023	C09	21	k06		null-or-unaligned
+f23_C09_01_024	C09	22	k08	f	conflict:c
+f23_C09_01_025	C09	23	k03	e	conflict:t
 f23_C09_01_027	C09	24	k21	d	conflict:n
-f23_C09_01_028	C09	25	k23	i	agrees
-f23_C09_01_029	C09	26	k11	g	conflict:a
+f23_C09_01_028	C09	25	k23	i	conflict:d
+f23_C09_01_029	C09	26	k11	d	conflict:h
 f23_C09_01_031	C09	27	k20	e	conflict:n
-f23_C09_01_033	C09	28	k02	d	conflict:w
+f23_C09_01_033	C09	28	k02	t	conflict:z
 f23_C10_01_002	C10	0	k21	w	conflict:n
 f23_C10_01_003	C10	1	k20	o	conflict:n
 f23_C10_01_004	C10	2	k14	r	agrees
-f23_C10_01_005	C10	3	k02	d	conflict:w
+f23_C10_01_005	C10	3	k02	d	conflict:z
 f23_C10_01_006	C10	4	k26	e	agrees
 f23_C10_01_007	C10	5	k20	n	agrees
 f23_C10_01_008	C10	6	k25	s	conflict:a
 f23_C10_01_009	C10	7	k26	e	agrees
-f23_C10_01_010	C10	8	k13	i	conflict:k
+f23_C10_01_010	C10	8	k13	i	agrees

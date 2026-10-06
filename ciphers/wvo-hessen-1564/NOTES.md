@@ -571,3 +571,64 @@ Reading of the table (search result, not a verdict):
 - Scans: every record links a free PDF (`resources.huygens.knaw.nl/media/wvo/images/<band>/<nr>.pdf`), no login, not fetched here. Originals are
   KHAG (The Hague) or HSAM (Marburg, Bestand 3II); 1117 carries a note that Demandt addresses it wrongly to Lodewijk of Nassau.
 - Requests: huygens resources host 19 in total (1 form page, 4 result lists, 14 detail pages), >= 2.3 s apart, descriptive User-Agent, no 429/403.
+
+## f.23 careful gloss transcription and alignment re-run (R10-WVOTX, account 4, 6 Oct 2026, 09:43-09:5x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` job R10-WVOTX (RUN9 named step 1). Files in `r10tx/`; PREREG
+`PREREG-R10-WVOTX.md` pushed (724553df5, margins corrected add122311) before any scored run. **The reading changed after AUDIT 1**
+(gloss text and pile key; see below) -- AUDIT 1's D2 / C 102 figures are now stale; a verifier is flagged in ROOM.
+- Crops (pasted in the PREREG): `tools/iiif_lines.py --image images/01109_p3_400full.jpg --region 530,120,2790,1840 --centres ...
+  --lines-per-crop 1 --max-width 1000 --overlap 120 --top-margin 25 --bottom-margin 50 --prefix f23G`, the 10 German bands kept
+  (40 segments, `r10tx/crops/`; `r10tx/view/` stacks each row's four segments for the reconciler only). A first cut with smaller
+  margins clipped the sloping right ends; both passes were stopped before output and restarted on the re-cut.
+- Two blind Sonnet passes (`r10tx/passA.tsv`, `passB.tsv`, one call each, gloss-row crops only). Both passes were weak on this hand:
+  they read the looped h as g, the 8-shaped d/g as 8 or s, and the arrow-shaped t as k/s. Pass-to-pass character similarity per
+  row 0.79-1.00 (difflib ratio after s/d normalisation); the reconciled text against pass A 0.65-1.00, pass B 0.53-1.00.
+- Reconciliation by this worker against `r10tx/crops/` and `r9align/crops_m/` (letter forms fixed from unambiguous words: looped
+  h in "auch", "zweimahl", "schlagen"; arrow t in "nit"; 8-shaped d in "das", "worden"; 8-shaped g in "zeittungen"):
+  `r10tx/gloss_r10.tsv` (clean column for the aligner, a marked column with [uncertain] letters, notes). It now feeds
+  `r9align/gloss_reconciled.tsv`; the R9 sketch is kept as `r9align/gloss_reconciled_r9.tsv`, R9 outputs in `r10tx/r9_before/`.
+  Changes from the R9 sketch (letter count kept unless stated): C01 "unfreundtlich" -> "infreundtlich" (run on into C02 "en
+  vertrauen": "in freundtlichen vertrauen"); C02 "vorgalten" -> "vorhalten"; C03 "ztungen" -> "tungen" after "zeit" (the period
+  spelling "zeittungen"; the blot is a cancelled letter with a struck sign, not counted), C03 2nd/5th letters h; C04 "gaben" ->
+  "haben", "kein" -> "kin" (as written, 19 letters); C05 "gefrid" -> "heftig"; C07 "tausch" -> "taush" (no c seen, 24 letters);
+  C08 "purgiren" -> "purgieren" (9 letters); C09 "dass ei verfruchterfed idet" -> "dass wir erfrucht erfed iged" (letters after
+  "erfrucht" still uncertain). Uncertain letters remain in C03 ("sehd he voans sp"), C06 (e under a blot), C07 (s), C08 (minims
+  of "mussen"), C09 (end). Gloss as reconciled (M where bracketed): "wir konnen auch E.L. in freundtlichen vertrauen nit
+  vorhalten, das wir [sehd he voans sp] zeittungen bekommen haben, das die kin so heftig kranck worden sei, das man ir die
+  adern zweimahl schlagen vnd [taush] zweimahl purgieren mussen, dermassen das {blot} wir erfrucht erfed iged worden sei".
+- Alignment re-run, PREREG-R9-WVOALIGN parameters unchanged (`build_pairs.py`; `interlinear_align.py align ... --code-prefix @
+  --seg-bonus 0 --keep-fs --null-cost -1.0 --shuffle 1000 --seed 1564`):
+
+| label set | CONSISTENT R9 sketch | R10 careful gloss | shuffle mean | p95 | max | p | gate |
+|---|---|---|---|---|---|---|---|
+| piles (primary) | 10 (p95 3) | **17** | 1.39 | 3 | 5 | 0.001 | PASS |
+| pass A codes | 7 (p95 5) | **15** | 2.43 | 5 | 7 | 0.001 | PASS |
+| pass B codes | 11 (p95 3) | **13** | 1.35 | 3 | 6 | 0.001 | PASS |
+
+  Aligner token status (piles): agrees 152, conflict 68, null 36. All three real counts rose while the controls stayed flat.
+- Key rebuilt (`make_key.py`): `r9align/key.tsv` 16 C / 12 M (was 10 C / 18 M). New C: k03 t, k06 e, k15 d, k19 g (was t, M),
+  k20 n, k23 i (was h, M), k24 f. Value changes at M: k02 z -> w (agrees with the verifier's by-eye thorn-p = w), k08 c -> h,
+  k11 h -> a, k17 n -> e, k25 g -> a, k27 g -> a. **k28 changed value at grade C (a -> b)** and k14 dropped C -> M (r): piles mix
+  shapes (AUDIT 1), so a verifier should eye-check k28's tiles. Decode: `tools/decode_key.py ciphers/wvo-hessen-1564/r9align --check`
+  exit 0; rule 4 counts on 257 tiles: H 0, C 142, S 0, M 115, I 0 (was C 102, M 155), plus 1 clear token (E.L.). The decode is a
+  check on the key, as before; the period decipherment is the gloss.
+- Not touched: the owner's f.23 sorter and its answers; top-level `ciphertext.tsv`, `key.tsv`, `reading.txt`; AUDIT.md;
+  status.json (fields there cite C 102 / M 155 -- stale, for the orchestrator after the verifier).
+- No network requests. 2 Sonnet subagent passes completed (plus 2 started on the first cut and stopped before output).
+
+## Remaining gaps (finish-or-blocker pass, R10-WVOTX, 6 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed), now transcribed in two blind passes and reconciled; alignment gate PASS 17 vs shuffle p95 3 (piles); key 16 C / 12 M pile rows; decode C 142 / M 115 of 257 tiles
+- uncertain gloss letters in C03 ("sehd he voans sp"), C07, C08 and the end of C09 - blocker: not-attempted; two machine passes misread this hand's letter forms and the reconciler could not settle these by eye; next: compare each uncertain letter with the cipher sign under it once the owner's sorter settles the signs (the key then predicts the letter), ~$1
+- sign-level key without one-position slips (pile ids mix shapes; k28 changed value at grade C) - blocker: not-attempted; the sorter is built but not yet answered; next: after the owner's f23 sorter answers, apply them with tools/sign_sorter_apply.py, relabel tile_letters.tsv by sid, rebuild key.tsv with make_key.py and eye-check every C row against its tiles, cross-check against 1069 (r9wvox/concordance.tsv), ~$1.5
+- verifier on the revised gloss and key (reading changed after AUDIT 1; second audit still owed) - blocker: not-attempted; a solver may not verify its own reading; next: a verifier session with PREREG-R10-WVOTX.md, r10tx/, r9align/ and the f.23 image, updating AUDIT.md depth figures, ~$2
+
+## Escalation (R10-WVOTX, 6 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174 application; R9-WVOX concordance FAIL 0/7) and 1069 key (R9-WVOX concordance PASS 8/18)
+- [x] clear-pages: f.23's own interlinear gloss transcribed in two blind passes, reconciled and re-aligned (R10-WVOTX)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV)
+- [x] key-rebuild: pile-level key rebuilt from the careful gloss (R10-WVOTX, r9align/key.tsv, 16 C)
+- [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair and gloss-row crops and sorter tiles
+- [n/a] retry: no step has failed that a retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: a verifier on the revised gloss and key (~$2), and after the owner's sorter answers, rebuild key.tsv per settled sign and settle the uncertain gloss letters against it (~$1.5)

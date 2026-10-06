@@ -1,0 +1,14 @@
+# wvo-hessen-1564 f.23, sorter tile stream (provisional k-means pile ids, R9-WVOSORT) decoded with the pile key
+# recovered from the leaf's own interlinear gloss (R9-WVOALIGN, 6 Oct 2026, tools/interlinear_align.py; PREREG gate
+# PASS 10 vs shuffle p95 3). Piles mix shapes, so this decode is a check on the key, not a reading: the period
+# decipherment is the gloss itself (gloss_reconciled.tsv). Grades: C 102, M 155.
+C01	g i r k d n n e n h t h c EL h n f z e u n d t l c h r o
+C02	g n h e n c t d a u e n n r t u e r g r l t e n o d a s a i r o
+C03	s e t d h e r d g u s g l e k h n a u u n t e n n a e k c h o o
+C04	g z g c e n n c g a n n g g s d s e t k k n g c o
+C05	k e f t c t k r a n g k z d r d e n s e k d g s
+C06	t k a n z i r d e z e g a d e r n l n z e h k k a h l n o
+C07	s h c l g t e t u n d h h u h c i a z e a k i a h l
+C08	a u r t i e r e n i u s s e n d e r i a s s e n
+C09	d g s a s i f h r e r f r u h c u g e r l e c t n h h n z
+C10	n n r z e n g e k

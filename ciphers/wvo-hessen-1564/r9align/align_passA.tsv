@@ -2,27 +2,27 @@ cipher_line	idx	raw	kind	value	repair	plain_chunk	status
 C01	0	@P	code	P		w	agrees
 C01	1	@MARS	code	MARS		i	agrees
 C01	2	@T	code	T		r	agrees
-C01	3	@SIG	code	SIG			null-or-unaligned
-C01	4	@Z	code	Z			null-or-unaligned
-C01	5	@Z4	code	Z4		k	conflict:d
-C01	6	@RAM	code	RAM		o	conflict:n
-C01	7	@E	code	E		n	conflict:e
-C01	8	@RAM	code	RAM		n	single
-C01	9	@DT	code	DT		e	conflict:s
-C01	10	@Y	code	Y		n	agrees
-C01	11	@HB	code	HB		a	single
-C01	12	@II	code	II		u	conflict:h
-C01	13	@E	code	E		c	conflict:e
-C01	14	@GE	code	GE		h	conflict:e
-C01	15	@R	code	R		u	conflict:s
+C01	3	@SIG	code	SIG		k	single
+C01	4	@Z	code	Z		o	conflict:d
+C01	5	@Z4	code	Z4		n	conflict:d
+C01	6	@RAM	code	RAM		n	agrees
+C01	7	@E	code	E		e	agrees
+C01	8	@RAM	code	RAM		n	agrees
+C01	9	@DT	code	DT		a	agrees
+C01	10	@Y	code	Y		u	conflict:k
+C01	11	@HB	code	HB		c	agrees
+C01	12	@II	code	II		h	agrees
+C01	13	@E	code	E			null-or-unaligned
+C01	14	@GE	code	GE		i	agrees
+C01	15	@R	code	R			null-or-unaligned
 C01	16	@SQ	code	SQ		n	conflict:f
 C01	17	@T	code	T		f	conflict:r
 C01	18	@L	code	L		r	agrees
 C01	19	@8	code	8		e	agrees
-C01	20	@RAM	code	RAM		u	conflict:n
-C01	21	@Z	code	Z		n	conflict:d
-C01	22	@HH	code	HH		d	conflict:i
-C01	23	@8	code	8		t	conflict:e
+C01	20	@RAM	code	RAM		n	agrees
+C01	21	@Z	code	Z		d	agrees
+C01	22	@HH	code	HH		t	agrees
+C01	23	@8	code	8			null-or-unaligned
 C01	24	@II	code	II		l	conflict:h
 C01	25	@E	code	E		i	conflict:e
 C01	26	@T	code	T		c	conflict:r
@@ -32,20 +32,20 @@ C02	1	@8	code	8		e	agrees
 C02	2	@M	code	M		n	single
 C02	3	@E	code	E		e	agrees
 C02	4	@T	code	T		r	agrees
-C02	5	@HH	code	HH		t	conflict:i
+C02	5	@HH	code	HH		t	agrees
 C02	6	@T	code	T		r	agrees
 C02	7	@9	code	9		a	agrees
-C02	8	@8	code	8			null-or-unaligned
-C02	9	@8	code	8		u	conflict:e
-C02	10	@8	code	8		e	agrees
+C02	8	@8	code	8		u	conflict:e
+C02	9	@8	code	8		e	agrees
+C02	10	@8	code	8		n	conflict:e
 C02	11	@8	code	8		n	conflict:e
-C02	12	@GE	code	GE		n	conflict:e
-C02	13	@HH	code	HH		i	agrees
-C02	14	@8	code	8		t	conflict:e
-C02	15	@P	code	P		v	conflict:w
-C02	16	@L	code	L		o	conflict:r
-C02	17	@P	code	P		r	conflict:w
-C02	18	@T	code	T		g	conflict:r
+C02	12	@GE	code	GE		i	agrees
+C02	13	@HH	code	HH		t	agrees
+C02	14	@8	code	8		v	conflict:e
+C02	15	@P	code	P		o	conflict:w
+C02	16	@L	code	L		r	agrees
+C02	17	@P	code	P			null-or-unaligned
+C02	18	@T	code	T		h	conflict:r
 C02	19	@II	code	II		a	conflict:h
 C02	20	@Z4	code	Z4		l	conflict:d
 C02	21	@8	code	8		t	conflict:e
@@ -55,33 +55,33 @@ C02	24	@?x	code	?x		d	single
 C02	25	@Z4	code	Z4		a	conflict:d
 C02	26	@?z	code	?z		s	single
 C02	27	@?r	code	?r		w	single
-C02	28	@HB	code	HB		i	conflict:a
+C02	28	@HB	code	HB		i	conflict:c
 C02	29	@?	code	?		r	conflict:o
 C03	0	@R	code	R		s	agrees
 C03	1	@8	code	8		e	agrees
 C03	2	@II	code	II		h	agrees
-C03	3	@?8	code	?8		g	single
+C03	3	@?8	code	?8		h	single
 C03	4	@Z	code	Z		e	conflict:d
 C03	5	@II	code	II		v	conflict:h
 C03	6	@T	code	T		o	conflict:r
 C03	7	@T	code	T		a	conflict:r
 C03	8	@7	code	7		n	single
-C03	9	@DT	code	DT		s	agrees
-C03	10	@8	code	8		p	conflict:e
-C03	11	@L	code	L		z	conflict:r
-C03	12	@II	code	II		e	conflict:h
-C03	13	@O	code	O		i	conflict:n
-C03	14	@E	code	E		t	conflict:e
-C03	15	@MARS	code	MARS		z	conflict:i
-C03	16	@HH	code	HH		t	conflict:i
-C03	17	@TRI	code	TRI		u	conflict:e
-C03	18	@HH	code	HH		n	conflict:i
+C03	9	@DT	code	DT		s	conflict:a
+C03	10	@8	code	8		s	conflict:e
+C03	11	@L	code	L		p	conflict:r
+C03	12	@II	code	II			null-or-unaligned
+C03	13	@O	code	O		z	agrees
+C03	14	@E	code	E		e	agrees
+C03	15	@MARS	code	MARS		i	agrees
+C03	16	@HH	code	HH		t	agrees
+C03	17	@TRI	code	TRI		u	conflict:b
+C03	18	@HH	code	HH		n	conflict:t
 C03	19	@L	code	L		g	conflict:r
 C03	20	@8	code	8		e	agrees
-C03	21	@TRI	code	TRI		n	conflict:e
+C03	21	@TRI	code	TRI		n	conflict:b
 C03	22	@Z	code	Z		b	conflict:d
 C03	23	@X	code	X		e	conflict:m
-C03	24	@TRI	code	TRI		k	conflict:e
+C03	24	@TRI	code	TRI		k	conflict:b
 C03	25	@8	code	8		o	conflict:e
 C03	26	@X	code	X		m	agrees
 C04	0	@ALF	code	ALF			null-or-unaligned
@@ -89,36 +89,36 @@ C04	1	@SQ	code	SQ			null-or-unaligned
 C04	2	@O	code	O			null-or-unaligned
 C04	3	@T	code	T		m	conflict:r
 C04	4	@8	code	8		e	agrees
-C04	5	@Y	code	Y		n	agrees
-C04	6	@T	code	T		g	conflict:r
-C04	7	@II	code	II		a	conflict:h
-C04	8	@X	code	X		b	conflict:m
-C04	9	@TRI	code	TRI		e	single
-C04	10	@E	code	E		n	conflict:e
-C04	11	@Z4	code	Z4		d	agrees
-C04	12	@Z4	code	Z4		a	conflict:d
-C04	13	@DT	code	DT		s	agrees
-C04	14	@R	code	R		d	conflict:s
-C04	15	@Z4	code	Z4		i	conflict:d
-C04	16	@GE	code	GE		e	single
-C04	17	@E	code	E		k	conflict:e
-C04	18	@Y	code	Y		e	conflict:n
+C04	5	@Y	code	Y		n	conflict:k
+C04	6	@T	code	T			null-or-unaligned
+C04	7	@II	code	II		h	agrees
+C04	8	@X	code	X		a	conflict:m
+C04	9	@TRI	code	TRI		b	single
+C04	10	@E	code	E		e	agrees
+C04	11	@Z4	code	Z4		n	conflict:d
+C04	12	@Z4	code	Z4		d	agrees
+C04	13	@DT	code	DT		a	agrees
+C04	14	@R	code	R		s	agrees
+C04	15	@Z4	code	Z4		d	agrees
+C04	16	@GE	code	GE		i	agrees
+C04	17	@E	code	E		e	agrees
+C04	18	@Y	code	Y		k	single
 C04	19	@MARS	code	MARS		i	agrees
 C04	20	@8	code	8		n	conflict:e
 C04	21	@K	code	K		s	agrees
 C04	22	@?	code	?		o	single
-C05	0	@II	code	II		e	conflict:h
-C05	1	@8	code	8		f	conflict:e
-C05	2	@SQ	code	SQ		r	conflict:f
-C05	3	@HH	code	HH		i	agrees
-C05	4	@II	code	II		d	conflict:h
-C05	5	@ALF	code	ALF		k	conflict:e
-C05	6	@8	code	8			null-or-unaligned
+C05	0	@II	code	II		h	agrees
+C05	1	@8	code	8		e	agrees
+C05	2	@SQ	code	SQ		f	agrees
+C05	3	@HH	code	HH		t	agrees
+C05	4	@II	code	II		i	conflict:h
+C05	5	@ALF	code	ALF		g	agrees
+C05	6	@8	code	8		k	conflict:e
 C05	7	@T	code	T		r	agrees
 C05	8	@9	code	9		a	agrees
 C05	9	@8	code	8		n	conflict:e
 C05	10	@T	code	T		c	conflict:r
-C05	11	@O	code	O		k	conflict:n
+C05	11	@O	code	O		k	conflict:z
 C05	12	@P	code	P		w	agrees
 C05	13	@Z	code	Z		o	conflict:d
 C05	14	@T	code	T		r	agrees
@@ -133,18 +133,18 @@ C05	22	@?	code	?			null-or-unaligned
 C06	0	@MARS	code	MARS			null-or-unaligned
 C06	1	@T	code	T		m	conflict:r
 C06	2	@8	code	8		a	conflict:e
-C06	3	@O	code	O		n	agrees
+C06	3	@O	code	O		n	conflict:z
 C06	4	@MARS	code	MARS		i	agrees
 C06	5	@T	code	T		r	agrees
 C06	6	@Z4	code	Z4		d	agrees
-C06	7	@HH	code	HH		i	agrees
+C06	7	@HH	code	HH		i	conflict:t
 C06	8	@T	code	T		e	conflict:r
 C06	9	@T	code	T		a	conflict:r
 C06	10	@Z4	code	Z4		d	agrees
 C06	11	@8	code	8		e	agrees
 C06	12	@T	code	T		r	agrees
 C06	13	@8	code	8		n	conflict:e
-C06	14	@O	code	O		z	conflict:n
+C06	14	@O	code	O		z	agrees
 C06	15	@P	code	P		w	agrees
 C06	16	@8	code	8		e	agrees
 C06	17	@HH	code	HH			null-or-unaligned
@@ -153,23 +153,23 @@ C06	19	@X	code	X		m	agrees
 C06	20	@9	code	9		a	agrees
 C06	21	@II	code	II		h	agrees
 C06	22	@8	code	8		l	conflict:e
-C07	0	@R	code	R		c	conflict:s
-C07	1	@HB	code	HB		h	conflict:a
-C07	2	@II	code	II		l	conflict:h
-C07	3	@9	code	9		a	agrees
-C07	4	@T	code	T		g	conflict:r
-C07	5	@ALF	code	ALF		e	single
-C07	6	@8	code	8		n	conflict:e
-C07	7	@?cross-8	code	?cross-8		u	single
-C07	8	@8	code	8		n	conflict:e
-C07	9	@8	code	8		d	conflict:e
-C07	10	@Z	code	Z		t	conflict:d
-C07	11	@HH	code	HH		a	conflict:i
-C07	12	@X	code	X		u	conflict:m
-C07	13	@8	code	8		s	conflict:e
-C07	14	@T	code	T		c	conflict:r
+C07	0	@R	code	R		s	agrees
+C07	1	@HB	code	HB		c	agrees
+C07	2	@II	code	II		h	agrees
+C07	3	@9	code	9		l	conflict:a
+C07	4	@T	code	T		a	conflict:r
+C07	5	@ALF	code	ALF		g	agrees
+C07	6	@8	code	8		e	agrees
+C07	7	@?cross-8	code	?cross-8		n	single
+C07	8	@8	code	8		v	conflict:e
+C07	9	@8	code	8		n	conflict:e
+C07	10	@Z	code	Z		d	agrees
+C07	11	@HH	code	HH		t	agrees
+C07	12	@X	code	X		a	conflict:m
+C07	13	@8	code	8		u	conflict:e
+C07	14	@T	code	T		s	conflict:r
 C07	15	@II	code	II		h	agrees
-C07	16	@O	code	O		z	conflict:n
+C07	16	@O	code	O		z	agrees
 C07	17	@P	code	P		w	agrees
 C07	18	@8	code	8		e	agrees
 C07	19	@MARS	code	MARS		i	agrees
@@ -180,16 +180,16 @@ C07	23	@9	code	9		l	conflict:a
 C08	0	@GE	code	GE			null-or-unaligned
 C08	1	@8	code	8		u	conflict:e
 C08	2	@T	code	T		r	agrees
-C08	3	@ALF	code	ALF		g	conflict:e
+C08	3	@ALF	code	ALF		g	agrees
 C08	4	@MARS	code	MARS		i	agrees
-C08	5	@E	code	E			null-or-unaligned
+C08	5	@E	code	E		e	agrees
 C08	6	@T	code	T			null-or-unaligned
 C08	7	@L	code	L		r	agrees
 C08	8	@8	code	8		e	agrees
-C08	9	@O	code	O		n	agrees
+C08	9	@O	code	O		n	conflict:z
 C08	10	@T	code	T		m	conflict:r
-C08	11	@8	code	8			null-or-unaligned
-C08	12	@R	code	R		u	conflict:s
+C08	11	@8	code	8		u	conflict:e
+C08	12	@R	code	R			null-or-unaligned
 C08	13	@R	code	R		s	agrees
 C08	14	@R	code	R		s	agrees
 C08	15	@8	code	8		e	agrees
@@ -198,7 +198,7 @@ C08	17	@Z	code	Z		d	agrees
 C08	18	@8	code	8		e	agrees
 C08	19	@T	code	T		r	agrees
 C08	20	@T	code	T		m	conflict:r
-C08	21	@O	code	O		a	conflict:n
+C08	21	@O	code	O		a	conflict:z
 C08	22	@R	code	R		s	agrees
 C08	23	@R	code	R		s	agrees
 C08	24	@8	code	8		e	agrees
@@ -207,17 +207,17 @@ C09	0	@Z	code	Z		d	agrees
 C09	1	@T	code	T		a	conflict:r
 C09	2	@R	code	R		s	agrees
 C09	3	@R	code	R		s	agrees
-C09	4	@MARS	code	MARS			null-or-unaligned
-C09	5	@E	code	E		e	agrees
-C09	6	@HH	code	HH		i	agrees
-C09	7	@T	code	T		v	conflict:r
+C09	4	@MARS	code	MARS		i	agrees
+C09	5	@E	code	E			null-or-unaligned
+C09	6	@HH	code	HH			null-or-unaligned
+C09	7	@T	code	T		r	agrees
 C09	8	@8	code	8		e	agrees
 C09	9	@T	code	T		r	agrees
-C09	10	@SQ	code	SQ		f	single
-C09	11	@T	code	T		r	agrees
-C09	12	@8	code	8		u	conflict:e
-C09	13	@T	code	T			null-or-unaligned
-C09	14	@8	code	8			null-or-unaligned
+C09	10	@SQ	code	SQ		f	agrees
+C09	11	@T	code	T			null-or-unaligned
+C09	12	@8	code	8			null-or-unaligned
+C09	13	@T	code	T		r	agrees
+C09	14	@8	code	8		u	conflict:e
 C09	15	@T	code	T		c	conflict:r
 C09	16	@II	code	II		h	agrees
 C10	0	@P	code	P		w	agrees

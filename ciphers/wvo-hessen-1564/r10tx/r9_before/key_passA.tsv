@@ -1,0 +1,32 @@
+value	meaning	n	agree	others
+7	n	2	1	o:1
+8	e	39	17	n:9,t:3,u:3,a:1,d:1,f:1,l:1,o:1,p:1,s:1
+9	a	6	5	l:1
+?	o	2	1	r:1
+?8	g	1	1	
+?cross-8	u	1	1	
+?r	w	1	1	
+?x	d	1	1	
+?z	s	1	1	
+ALF	e	3	1	g:1,k:1
+DT	s	3	2	e:1
+E	e	10	4	n:2,c:1,i:1,k:1,t:1
+GE	e	3	1	h:1,n:1
+HB	a	3	1	h:1,i:1
+HH	i	9	4	t:2,a:1,d:1,n:1
+II	h	15	6	a:2,e:2,l:2,u:2,d:1
+K	s	3	3	
+L	r	5	2	g:1,o:1,z:1
+M	n	1	1	
+MARS	i	9	8	z:1
+O	n	7	2	z:2,a:1,i:1,k:1
+P	w	7	5	r:1,v:1
+R	s	11	7	u:2,c:1,d:1
+RAM	n	3	1	o:1,u:1
+SQ	f	3	1	n:1,r:1
+T	r	31	12	c:4,m:4,a:3,g:3,e:1,f:1,n:1,o:1,v:1
+TRI	e	4	1	k:1,n:1,u:1
+X	m	7	3	b:1,e:1,n:1,u:1
+Y	n	3	2	e:1
+Z	d	8	3	b:1,e:1,n:1,o:1,t:1
+Z4	d	10	5	a:2,i:1,k:1,l:1
