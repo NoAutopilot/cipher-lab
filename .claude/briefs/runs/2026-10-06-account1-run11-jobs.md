@@ -71,3 +71,6 @@ writer", so the pre-registered crib gate (>=3 C) fails. Pre-register (PREREG fil
 f.10r vs f.13r (both from disk or Gallica, tools/iiif_lines.py), scored blind by one Sonnet pass against a control set of digits from a different
 known hand in the same volume or fr.3985-family (state which); same-writer verdict only if f.13r matches f.10r clearly above the control. If it
 passes, the 6 codes may go M -> C per the existing prereg crib gate and decode --check; if not, record it. Units: 2 x 1.5. Gaps/Verdict update.
+
+Wave 1 sessions (13:47 UTC): R11A-BRO session_01W956MpDJkoqmskt4DHsvuW; R11A-AVS57 session_01KmmzQKP2X8ZTyV55UfB6Jk; R11A-BOWES
+session_0145YsNTpBkFf2otrvtFyLiS; R11A-F5160 session_01X9FL3BVx1RMPd79CqY6UMh; R11A-F4712 session_01AkncNGNWxxdttd8XzuPnYA.
