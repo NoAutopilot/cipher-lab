@@ -447,9 +447,42 @@ Pre-registered in `key4/PREREG-GAPS117.md` (pushed b687336e at 13:26 UTC, before
   certutil fix applied) + 1 login + RecordsView/3762 + 1 image get; no other host.
 - `python3 tools/gaps_check.py florence-dieci-responsive` (3 Oct 2026, after this update): "OK keep-going florence-dieci-responsive: keep going: 2 internal gap(s), 3 step(s) untried / gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped", exit 0.
 
+## R9-FLOR: glyph_atlas threshold tuning on c.127 line crops (6 Oct 2026, account 1, LANE-RUN9-account-1)
+
+Runs the Verdict's cheapest next ("glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines
+L02-L18"). Script only: 0 image reads, 0 subagents, 0 network requests. PREREG `atlas_tune/PREREG-R9-FLOR.md`
+(commit 25ed9bc83, pushed before any segment run). Reproduce: `atlas_tune/run_tune.sh <scratch dir>`; per-crop
+counts in `atlas_tune/coverage.tsv`.
+
+- **What changed from GAPS106.** GAPS106 ran `segment` on the whole leaf (page mode) and found 33 of ~44 lines, so
+  adjacent signs on the cipher lines merged (25-47 boxes per line). Here `segment` runs on each `tools/iiif_lines.py`
+  half-line crop (images/c127/ pilot, images/c127b2/ L02-L18), so line finding is no longer the failure point.
+- **Grid (tuning set c127b1 L01_s1, L01_s2, L02_s1; reference = reconciled pilot tokens, clear '=' tokens removed):**
+  --rel 0.70/0.78/0.85 x --mark-h 0.45/0.55/0.7 x --min-area 0.12/0.25. rel 0.85 explodes (ratios 5-11), rel 0.70
+  over-splits (L01_s1 1.75-1.90); best: rel 0.78 (default), --mark-h 0.7, --min-area 0.25 (summed |ratio-1| 0.44 vs
+  default 0.54). Tuned ratios on the tuning set: 1.35 (crop opens with the clear word "chomunita", split into
+  several boxes), 1.00, 0.91.
+- **Gate as registered: FAIL.** Held-out L04_s1 (pure cipher, 23 tokens): 21 boxes, ratio 0.91, in [0.85, 1.15];
+  held-out L03_s2: 22 boxes vs 8 recon tokens, ratio 2.75. The PREREG is in error on L03_s2: it is a mixed crop
+  (pass A reads four clear words before the 8 cipher signs; the recon dropped them rather than marking them '='),
+  which the PREREG's own ">2 clear tokens" exclusion was meant to catch. Logged as FAIL as registered; on the one pure
+  cipher held-out crop the count is in band (N=1 crop, weak). A count ratio cannot see a merge and a split that
+  cancel; boxes wider than 1.8x the crop median: 0-1 per pure-cipher crop.
+- **Default vs tuned barely differ;** the gain is from cutting by line, not from the thresholds. Per line (s1+s2,
+  each pair shares a ~100 px overlap, so ~1-2 signs double-counted), default -> tuned boxes: L02 37->37, L03 40->37,
+  L04 43->42, L05 38->36, L06 41->41, L07 52->45, L08 74->63, L09 52->49, L10 49->47, L11 47->42, L12 38->38,
+  L13 39->37, L14 40->39, L15 42->42, L16 38->38, L17 44->43, L18 49->47 (723 boxes tuned; GAPS106 eye estimate
+  ~40-50 signs per line). 12 of 17 lines sit at 36-43 per line (tuned), in line with the pilot's 19-23 per half-line.
+- **Outliers, cause named from the tool's own log:** L05_s1, L07_s1, L08_s1, L09_s1 have a per-crop median sign
+  height of 18, 14, 4 and 24 px against 26-72 px on every other crop: specks/dots dominate the component count, the
+  scale-free thresholds collapse, and the crop is over-split (L08_s1 also finds 3 line bands in one crop). No
+  per-crop threshold fixes that; the fix is a shared scale (a `--median-h` option on `segment` taking the leaf's own
+  median, ~50 px here), which is a tool change outside this job.
+- Not done: no sorter build, no tiles, no reading, no grade counts (brief).
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
-- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing confirmed (A2-FLO2) and date settled to 26 Dec 1430 on both leaves (A2-FLO3); a two-block pilot (120 cipher tokens, 2 blind passes split 17%, reconciled) aligned to c.111 by tools/interlinear_align.py gives 28/120 agrees, inside the clear-shuffle band (p95 28) and below a noisy known-answer control (min 38) -- no consistent letter key at this N, cause undetermined (step of 3 Oct 2026, A2-FLO3); owner sign sorter for lines 6-9 published 3 Oct 2026 (ASKS 107, open); line crops of the remaining 17 cipher lines cut 3 Oct 2026 (GAPS106, images/c127b2/ L02-L18); glyph_atlas segment at default settings under-segments this leaf (GAPS106); next: owner settles the c.127 sign set (ASKS 107), then a full-leaf transcription of c.127 (pilot crops + c127b2) against those labels and a careful clear-text pass of c.111, re-run align/c127b1_control.py and align/c127b1_known.py at full N with a homophone-count sweep, ~$8
+- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing confirmed (A2-FLO2) and date settled to 26 Dec 1430 on both leaves (A2-FLO3); a two-block pilot (120 cipher tokens, 2 blind passes split 17%, reconciled) aligned to c.111 by tools/interlinear_align.py gives 28/120 agrees, inside the clear-shuffle band (p95 28) and below a noisy known-answer control (min 38) -- no consistent letter key at this N, cause undetermined (step of 3 Oct 2026, A2-FLO3); owner sign sorter for lines 6-9 published 3 Oct 2026 (ASKS 107, open); line crops of the remaining 17 cipher lines cut 3 Oct 2026 (GAPS106, images/c127b2/ L02-L18); glyph_atlas segment at default settings under-segments this leaf in page mode (GAPS106), but on the line crops gives 36-49 boxes per line on 16 of 17 lines (L08 63) with --mark-h 0.7 --min-area 0.25, registered gate FAIL on a mis-registered mixed crop, pure-cipher held-out 0.91 (R9-FLOR, 6 Oct 2026); 4 half-line crops over-split from a collapsed median sign height; next: owner settles the c.127 sign set (ASKS 107), then a full-leaf transcription of c.127 (pilot crops + c127b2) against those labels and a careful clear-text pass of c.111, re-run align/c127b1_control.py and align/c127b1_known.py at full N with a homophone-count sweep, ~$8
 - filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; no clear copies among filze 7/9/22 at contact-sheet scale (GAPS108, 3 Oct 2026); filza 7 check-solved done 3 Oct 2026 (GAPS112): open, no printed decipherment located; c. 70 against Gabbrielli key 4 (GAPS112): key-4-specific word-codes (cul, dla, hec) present, coverage 53/70 (descriptive), gated decode FAIL (real -2.759 vs shuffled p95 -2.732, p 0.075) but a non-test at this reader error (control 5/5 at <=10% error, 2/5 at 25%, 0/5 at 40%; read M, not blind); blind two-pass c. 70 (GAPS117, 3 Oct 2026): passes agree 74/113 (34.5% disagreement), control 5/5 at 0, 4/5 at 10%, 5/5 at 25%, 2/5 at 35% -> NON-TEST at this reader error (target p 0.640); a recurring ligature (about 9x) matches no key-4 cell; next: owner sign sorter for c. 70 + key-4 cells (tools/sign_sorter.py, ~$1.5 to build, never blocking), then re-run key4/key4_check.py once disagreement is under 25%; then key 3 for the other leaves and a line-level look at filza 9
 - record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
 
@@ -461,7 +494,7 @@ Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster h
 - [ ] key-rebuild: from the c. 111 / c. 127 pair; pilot of 3 Oct 2026 (A2-FLO3) on 2 blocks, 120 tokens: real 28 agrees vs shuffle p95 28 and noisy known-answer min 38 -- no key at this N; needs the settled sign set and full-leaf N
 - [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
 - [n/a] retry: no earlier failed attempt on this cluster to retry
-Verdict: keep going: 2 internal gaps; cheapest next: glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5; then a sign-sorter build for filza 7 c. 70 (crops L07-L13, the unmatched ligature, the 162 anonymised key-4 cells) for the owner, ~$1.5, after which key4/key4_check.py re-runs once reader disagreement is under 25% (GAPS117, 3 Oct 2026: blind two-pass 34.5%, a non-test); filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
+Verdict: keep going: 2 internal gaps; cheapest next: a `--median-h` (shared scale) option on tools/glyph_atlas.py segment with an offline test, then re-run atlas_tune/run_tune.sh for L05/L07/L08/L09 s1 and a sorter-tile build for c.127 L02-L18 from the tuned boxes, ~$2 (R9-FLOR, 6 Oct 2026: threshold tuning done, line crops 36-49 boxes per line); then a sign-sorter build for filza 7 c. 70 (crops L07-L13, the unmatched ligature, the 162 anonymised key-4 cells) for the owner, ~$1.5, after which key4/key4_check.py re-runs once reader disagreement is under 25% (GAPS117, 3 Oct 2026: blind two-pass 34.5%, a non-test); filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
 
 
 ## Edition read (CS-A2-K, 3 Oct 2026)
@@ -510,4 +543,4 @@ archive.org 3 (advancedsearch 1, `_djvu.txt` 2); www.googleapis.com 2; github.co
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: the Verdict's cheapest next -- glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5, then the sign-sorter build for filza 7 c.70 (crops L07-L13, the unmatched ligature, the 162 anonymised key-4 cells), ~$1.5. Only the owner's sort itself (ASKS 107, never blocking) waits on a person.
+- Action that depends on nobody: the Verdict's cheapest next -- a `--median-h` option on glyph_atlas segment, re-run on L05/L07/L08/L09 s1, then sorter tiles for c.127 L02-L18 from the tuned boxes, ~$2 (tuning itself done, R9-FLOR 6 Oct 2026), then the sign-sorter build for filza 7 c.70 (crops L07-L13, the unmatched ligature, the 162 anonymised key-4 cells), ~$1.5. Only the owner's sort itself (ASKS 107, never blocking) waits on a person.
