@@ -1,0 +1,15 @@
+# R10-NOX2 (6 Oct 2026): c262 margin gloss lines below L13, read once by this worker on native crops images/c262gy_L01..L08.jpg
+# (tools/iiif_lines.py --region 450,3330,1150,850 --centres 100,190,285,390,480,560,666,750 --follow-slope 300 on canvas 262).
+# Print-blind read (Charriere III p.258 not consulted for these lines). Gloss words grade H-source (period decipherment), reading M;
+# words marked ? are the least certain. NOT merged into gloss.tsv: the scored cipher block (witness/c262rc_recon.tsv, 10 rows,
+# canvas y 2189-3318) ends beside gloss L13; these lines gloss cipher rows below it that are not transcribed, so the
+# cipher-side line count does not match (NOTES.md gap condition) and adding them would put unmatched plaintext into test0's scoring.
+# line	reading	uncertain words
+L14	plaisir de les en laisser jouyr	-
+L15	quelqun aimant, ilz si nestimeroient	ilz? si? nestimeroient?
+L16	par tant la reputation, silz ne	par (pas?); silz? ne?
+L17	se retirassent volontiers pour	pour (po + superscript r)
+L18	estre heure sur la perte de leur	heure? (heurte? seure?)
+L19	armee et navi. / Cela pourquoy	navi.? (navire, abbreviated?); pourquoy (po + superscript r)
+L20	Il ne leur fault presser que bien	Il (or Je?); leur (or les?)
+L21	a point et faire la paix avec les	faire (f + superscript re)

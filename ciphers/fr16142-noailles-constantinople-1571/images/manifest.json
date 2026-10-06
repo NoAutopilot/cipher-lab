@@ -1366,6 +1366,326 @@
     "local": false
    },
    "note": "R7A-NOX262 (6 Oct 2026): region 470,2130,1000,1300, centres extended; L01-L08 of this run not kept (committed DEF1-NOXG crops stand)"
+  },
+  {
+   "crop": "c262gy_L01.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    450,
+    3354,
+    1600,
+    3492
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100,
+     190,
+     285,
+     390,
+     480,
+     560,
+     666,
+     750
+    ]
+   },
+   "date": "06 Oct 2026",
+   "slope_fit": {
+    "a": 84.98,
+    "b": 0.01561,
+    "peaks_kept": 4,
+    "half_height": 60,
+    "win": 300,
+    "local": false
+   },
+   "note": "R10-NOX2 (6 Oct 2026): gloss lines below L13 (gloss L14-L21), region 450,3330,1150,850; crop Ln = gloss L(13+n)"
+  },
+  {
+   "crop": "c262gy_L02.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    450,
+    3454,
+    1600,
+    3584
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100,
+     190,
+     285,
+     390,
+     480,
+     560,
+     666,
+     750
+    ]
+   },
+   "date": "06 Oct 2026",
+   "slope_fit": {
+    "a": 193.96,
+    "b": -0.00708,
+    "peaks_kept": 4,
+    "half_height": 61,
+    "win": 300,
+    "local": false
+   },
+   "note": "R10-NOX2 (6 Oct 2026): gloss lines below L13 (gloss L14-L21), region 450,3330,1150,850; crop Ln = gloss L(13+n)"
+  },
+  {
+   "crop": "c262gy_L03.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    450,
+    3550,
+    1600,
+    3698
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100,
+     190,
+     285,
+     390,
+     480,
+     560,
+     666,
+     750
+    ]
+   },
+   "date": "06 Oct 2026",
+   "slope_fit": {
+    "a": 285.05,
+    "b": 0.01592,
+    "peaks_kept": 4,
+    "half_height": 65,
+    "win": 300,
+    "local": false
+   },
+   "note": "R10-NOX2 (6 Oct 2026): gloss lines below L13 (gloss L14-L21), region 450,3330,1150,850; crop Ln = gloss L(13+n)"
+  },
+  {
+   "crop": "c262gy_L04.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    450,
+    3641,
+    1600,
+    3804
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100,
+     190,
+     285,
+     390,
+     480,
+     560,
+     666,
+     750
+    ]
+   },
+   "date": "06 Oct 2026",
+   "slope_fit": {
+    "a": 375.38,
+    "b": 0.03052,
+    "peaks_kept": 4,
+    "half_height": 64,
+    "win": 300,
+    "local": false
+   },
+   "note": "R10-NOX2 (6 Oct 2026): gloss lines below L13 (gloss L14-L21), region 450,3330,1150,850; crop Ln = gloss L(13+n)"
+  },
+  {
+   "crop": "c262gy_L05.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    450,
+    3750,
+    1600,
+    3883
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100,
+     190,
+     285,
+     390,
+     480,
+     560,
+     666,
+     750
+    ]
+   },
+   "date": "06 Oct 2026",
+   "slope_fit": {
+    "a": 477.32,
+    "b": 0.01672,
+    "peaks_kept": 4,
+    "half_height": 57,
+    "win": 300,
+    "local": false
+   },
+   "note": "R10-NOX2 (6 Oct 2026): gloss lines below L13 (gloss L14-L21), region 450,3330,1150,850; crop Ln = gloss L(13+n)"
+  },
+  {
+   "crop": "c262gy_L06.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    450,
+    3825,
+    1600,
+    3974
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100,
+     190,
+     285,
+     390,
+     480,
+     560,
+     666,
+     750
+    ]
+   },
+   "date": "06 Oct 2026",
+   "slope_fit": {
+    "a": 583.74,
+    "b": -0.02398,
+    "peaks_kept": 4,
+    "half_height": 61,
+    "win": 300,
+    "local": false
+   },
+   "note": "R10-NOX2 (6 Oct 2026): gloss lines below L13 (gloss L14-L21), region 450,3330,1150,850; crop Ln = gloss L(13+n)"
+  },
+  {
+   "crop": "c262gy_L07.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    450,
+    3935,
+    1600,
+    4067
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100,
+     190,
+     285,
+     390,
+     480,
+     560,
+     666,
+     750
+    ]
+   },
+   "date": "06 Oct 2026",
+   "slope_fit": {
+    "a": 675.02,
+    "b": -0.00635,
+    "peaks_kept": 4,
+    "half_height": 62,
+    "win": 300,
+    "local": false
+   },
+   "note": "R10-NOX2 (6 Oct 2026): gloss lines below L13 (gloss L14-L21), region 450,3330,1150,850; crop Ln = gloss L(13+n)"
+  },
+  {
+   "crop": "c262gy_L08.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    450,
+    4022,
+    1600,
+    4152
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     100,
+     190,
+     285,
+     390,
+     480,
+     560,
+     666,
+     750
+    ]
+   },
+   "date": "06 Oct 2026",
+   "slope_fit": {
+    "a": 764.28,
+    "b": -0.01227,
+    "peaks_kept": 4,
+    "half_height": 58,
+    "win": 300,
+    "local": false
+   },
+   "note": "R10-NOX2 (6 Oct 2026): gloss lines below L13 (gloss L14-L21), region 450,3330,1150,850; crop Ln = gloss L(13+n)"
   }
  ]
 }
