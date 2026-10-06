@@ -744,3 +744,43 @@ signs unlabelled. 170 f.228-229v (4 leaf-pages, ~42 cipher lines): f.228r and f.
 - [ ] image-check: 170 f.228r-v crops passed and reconciled (D1-BAL170, D1-BAL170B); f.229r-v (c240 right, c241 left) still to crop
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B)
 Verdict: keep going: 3 internal gaps; cheapest next: a sign sorter for the 170 f.228 hand (~$2), then f.228 provisional decode and f.229r-v crops and passes
+
+## R12A-BALS (account 1 worker, for LANE LANE-RUN12-account-1), 6 Oct 2026, 18:05-18:2x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-run12-jobs.md` job R12A-BALS (the D1-BAL170B Verdict's cheapest next). Step still
+undone at start (no sorter170/ folder, no ROOM line). No decode of f.228 (waits on the owner's sort). No novelty class.
+**Result: owner sign sorter for the Baluze 170 f.228r-v hand built, `tools/sorter_preflight.py` PASS, handed to the account-3
+orchestrator to publish (ROOM flag).** `sorter170/out/baluze170_f228_sorter.html`: 258 tiles on the 13 cipher lines (f.228r 4,
+f.228v 9), 41 starting piles, 124 focus questions; README `sorter170/README.md`; rebuild `bash ciphers/baluze167-davaux-1637/sorter170/build.sh`.
+Method: no network; the five Gallica native regions on disk (D1-BAL170) -> `sorter170/build_inputs.py` (tools/sorter_recut.py, one
+block per line, clear words / period / dashes blanked to paper tone on eye-set x-ranges) -> `sorter170/regroup.py` (46 marks attached
+to the digit below via sign_sorter --marks, 26 specks dropped, letter-sign pieces grouped by a monotone DP against the reconciled
+sheets' columns, 240/240 columns placed; a group wider than 2.5 digits stays in pieces) -> `tools/sign_sorter.py --auto-clusters 3`.
+Preflight (`sorter170/preflight.txt`): template PASS; answerable PASS (124 focus, 41 named piles, 0 unanswerable); right line PASS
+(0 off-line, 0 wide, 0 strip-height, 5 ink-ratio = 1.9% < 5%); contact sheet PASS. First build FAILED right line (41 = 15.8%: 19
+letter signs grouped wider than 2.5 digits, 23 ink-ratio failures from a pure-white blank fill skewing the page's Otsu level);
+fixed by the paper-tone fill and the width cap, not by changing the gate.
+Eye-check (brief: 5+ random tiles against the line image): the 24-tile contact sheet, 22/24 in the right starting pile; all 13 lines
+also checked box by box at 0.8 scale. Known wrong starting piles (in the README): f.228v a_L01 under the pen stroke (x 1940-2240),
+f.228v b_L04 tiles 04-08 (second u4 cut in two, three tiles carry the left neighbour's label), f.228r b_L02 end "51 w"; these are
+starting piles, not readings, and the owner's sort replaces them.
+Grades (rule 4): no reading; key.tsv, ciphertext.txt, reading.txt, passes/ unchanged. Requests: none (all on disk). Subagents: none.
+
+## Remaining gaps (R12A-BALS, 6 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter
+signs unlabelled. 170 f.228-229v (4 leaf-pages, ~42 cipher lines): f.228r and f.228v reconciled (35 + 119 tokens, passes split 0.286 / 0.126), owner sign sorter built (R12A-BALS, sorter170/), f.229r-v not started.
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 f.228r-v bare passage - blocker: waiting-on the owner's answer in the R12A-BALS sign sorter (sorter170/out/baluze170_f228_sorter.html, handed to the account-3 orchestrator to publish, ROOM flag 6 Oct 2026); preflight PASS, starting piles 22/24 on the contact sheet; then tools/sign_sorter_apply.py and a provisional decode of f.228 with key.tsv, marks graded M
+- 170 f.229r-v bare passage - blocker: not-attempted; independent of the sort; next: crop f.229r (c240 right) and f.229v (c241 left) with tools/iiif_lines.py and two Sonnet passes with d1bal170/prompt.txt, then a reconciliation, ~$5
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (6 Oct 2026, R12A-BALS)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3); f.166 glosses agree with key.tsv on every numeral used to split a word (D1-BAL167); L:q used to settle the q-like sign on 170 f.228v (D1-BAL170B)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); exemplar set enlarged to 63 court-hand signs (D1-BAL167, per-shape ceiling 0.698) but f.247's b/L/K/u forms have no glossed counterpart; untried: a glossed text in the f.247 hand
+- [ ] image-check: 170 f.228r-v crops passed and reconciled (D1-BAL170, D1-BAL170B), sign sorter built (R12A-BALS); f.229r-v (c240 right, c241 left) still to crop
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B)
+Verdict: keep going: 3 internal gaps plus f.228 waiting on the owner's sort; cheapest next: crop and pass f.229r-v (~$5), independent of the sort
