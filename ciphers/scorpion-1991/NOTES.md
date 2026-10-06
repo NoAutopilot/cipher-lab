@@ -305,7 +305,7 @@ material (the unpublished Scorpion messages Schmeh mentions would pool the sign 
 letters would let repeated signs carry the constraint), or the second-coder distinct-code shape test named after
 A2P4-SCORP2 (~USD 1). Cheapest next: that blind second-coder test.
 
-## Blind second-coder distinct-code test (R13-SCORP2C, 6 Oct 2026, 17:43-17:51 UTC)
+## Blind second-coder distinct-code test (R13-SCORP2C, 6 Oct 2026, 17:41-17:49 UTC)
 
 The step named after A2P4-SCORP2 and again after R11-SCORPCYC. **Pre-registration** `PREREG-R13-SCORP2C.md` (commit
 a6095cd72), pushed before coder B's codes were seen. Coder A = A2P4-SCORP2's codes (`shape/scorpion_codes.tsv`,
