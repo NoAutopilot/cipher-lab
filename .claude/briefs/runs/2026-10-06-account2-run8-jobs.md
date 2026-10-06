@@ -92,3 +92,52 @@ Verdict cheapest next (D2B-KARL, 5 Oct 23:39): "Bakes 2018 book and articles, dk
 thesis is login-gated, HTTP 401). Find the 2018 book's handle on dk.upce.cz (DSpace REST/OAI or the handle page), check whether the
 bitstream is open, and if it is, grep its text for 1677 / Naas / fullmakt / Karl XI / chiffr / šifr. If gated, one Google Books API query
 (&country=US, key) and one OpenAlex query for the book's other open copies. Update Remaining gaps / Verdict; gaps_check PASS.
+
+## Wave 2 (spawned as wave 1 slots free). Intake gate output (03:2x UTC) pasted per job.
+
+### R8-SUR3 -- na-suriname-map-1781, Opus blind look on 2-3-sign context tiles (cap 5, box 50 min; 1 vision call + worker check)
+Intake gate: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (R7-SUR, 6 Oct): "re-ask L08:51 / L10:30 g|l and [sigma] L11:17 vs L10:66 with one Opus blind call on 2-3-sign
+context tiles (GAPS37-style masking), reusing passes/signcmp_r7sur boxes and controls, ~$4, 1 vision call". NOTE: RUN7's R7-SUR2 also ran
+2-3-sign context tiles (controls PASS, no token moved) -- read its NOTES.md section first; if R7-SUR2 already asked these exact questions
+on context tiles with an Opus-grade reader, do NOT repeat: write "[retired] instrument: context-tile blind look (R7-SUR, R7-SUR2)" per rule 3's
+third-attempt clause for these tokens and stop. Otherwise: pre-register what each answer changes, controls built from same-hand known tokens
+that can fail, one Opus subagent call on crop paths only; apply only under GAPS23's rule; --check exit 0; 2077 H/C/M/U counts before/after.
+
+### R8-OBRED -- oldenbarnevelt-brederode-1605, open DECODE record 2118 (cap 2.5, box 40 min)
+Intake gate: `oldenbarnevelt-brederode-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Action that depends on nobody (NOTES.md): "open DECODE record 2118 (NA 1.01.02 inv. 6894, States-General key, '1620 -') ourselves --
+RecordsView pages are public (N6-HEL81, 4 Oct 2026) and a full-size image has been served after one browser login (A2-HDK, 2 Oct 2026) --
+and say whether it maps names to Arabic numerals in the 30-741 range; image to scratch, never committed; ~$1". One login per session
+(`tools/decode_browser_login.js`, `--guess-fullsize` as in A2-HDK), scrub the account name from any saved page. Read the key image yourself
+(crops if large); record what it maps (names -> numerals?, range, a few example rows by grade) in NOTES.md; if it plausibly fits the
+target's numerals, pre-register a fit test before applying any value (do not apply in this job unless cap allows; name it as next step).
+
+### R8-ROUS2 -- naf14913-rousseau-venice-1743, Hatzenberger fit check + f.206r phrase search (cap 2.5, box 40 min; no vision subagent)
+Intake gate: `naf14913-rousseau-venice-1743: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next: "fit check of Hatzenberger 2015 p.326's ambassadeur = 404 at its two f.165 occurrences (and Sénat = 219 once on f.249)
+in context, plus his source note, ~$1". Disk first (transcriptions of f.165, f.249 on disk): does 404 = ambassadeur read in context, does
+219 = Sénat; grade per rule 4 (a published modern value is `published` key source, at most C if context confirms, else M). Then the
+`parallel` S step: phrase-search f.206r's own quote ('venitiens en faveur de la Reine de Hongrie...') via Google Books API (&country=US, key)
+and archive.org be-api (1.5 s apart). Update gaps / Verdict; gaps_check PASS.
+
+### R8-LOPE2 -- lope-hurtado-1522, sibling check BNE MSS/18697/29 and MSS/20212/27 (cap 2, box 35 min; lookup only)
+Intake gate: `lope-hurtado-1522: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (A4-RFLOPE, 6 Oct): "siblings, BNE MSS/18697/29 and MSS/20212/27 catalogue/digital-collections check, ~$1". Read the BNE
+catalogue record for each (datos.bne.es / catalogo.bne.es / bdh.bne.es; quote the availability flag and URL), say whether each is
+digitised and whether it is cipher, a key, or a decipherment by the same hand/office; if digitised in BDH, record the IIIF/manifest URL and
+fetch one page image to scratch to confirm. Update gaps / Verdict; gaps_check PASS.
+
+### R8-MORIL -- rah-morillo-1817, fetch RAH record 2240's leaf (cap 2, box 35 min)
+Intake gate: `rah-morillo-1817: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next: "item 1, fetch record 2240's single leaf (Enrile to Morillo, 26 Jun 1817) once to exclude it as the carrier of the
+f.33r passage's ciphertext, ~$0.5". Route per CLAUDE.md RAH paragraph: OAI-PMH GetRecord metadataPrefix=didl for the image id, then
+`node tools/browser_fetch.js "<imagen_id.do URL>" OUT.jpg --binary` (Anubis intermittent; at most the tool's own 3 retries, then stop
+the host). Read the leaf: cipher present? figures matching f.33r's? Record in NOTES.md, update gaps / Verdict, gaps_check PASS.
+
+### R8-ORM -- ormond-arran-1678, read the 1871 Russell and Prendergast Carte report (cap 2, box 35 min; lookup only)
+Intake gate: `ormond-arran-1678: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Parallel action (NOTES.md): "While L39 is pending, read the 1871 Russell and Prendergast report (The Carte Manuscripts in the Bodleian
+Library, ...)" -- read the NOTES.md sentence in full for what to look for (MS. Carte 50 fols. 439-440 key sheet; Ormond-Arran 1678 cipher).
+Find it on archive.org / HathiTrust EF / Google Books API, grep the full text for Carte 50, cipher/cypher, Arran, 1678, quote hits with page.
+Update NOTES.md; search result only.
