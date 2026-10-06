@@ -1,0 +1,70 @@
+{
+ "agree_tokens": 252,
+ "clear_lines_dropped": [],
+ "err_2reader": 0.2717,
+ "line1_last_B_index": 10,
+ "lines": 18,
+ "max_tokens": 346,
+ "primary_lines_2_18": {
+  "calibration": {
+   "code_words": 106,
+   "code_words_matched": 52,
+   "gate": 0.5,
+   "share": 0.4906,
+   "verdict": "FAIL"
+  },
+  "gloss_letters": 804,
+  "keys": "not scored: calibration gate FAIL (non-test at this alignment)",
+  "symbol_tokens": {
+   "labels": {
+    "3": 7,
+    "4": 7,
+    "7": 1,
+    "9": 7,
+    "A": 17,
+    "B": 1,
+    "D": 2,
+    "E": 3,
+    "F": 11,
+    "R": 18,
+    "T": 14,
+    "W": 8,
+    "X": 4,
+    "Z": 20
+   },
+   "scored": 120
+  }
+ },
+ "sensitivity_line1_tail": {
+  "calibration": {
+   "code_words": 109,
+   "code_words_matched": 53,
+   "gate": 0.5,
+   "share": 0.4862,
+   "verdict": "FAIL"
+  },
+  "gloss_letters": 804,
+  "keys": "not scored: calibration gate FAIL (non-test at this alignment)",
+  "symbol_tokens": {
+   "labels": {
+    "3": 7,
+    "4": 7,
+    "7": 1,
+    "9": 8,
+    "A": 17,
+    "B": 1,
+    "D": 2,
+    "E": 3,
+    "F": 11,
+    "R": 18,
+    "T": 14,
+    "W": 8,
+    "X": 5,
+    "Z": 20
+   },
+   "scored": 122
+  }
+ },
+ "symbols_agreed": 125,
+ "symbols_split": 85
+}

@@ -153,6 +153,62 @@
    "fetched": "06 Oct 2026 11:59 UTC",
    "by": "R12-RJM42",
    "committed": false
+  },
+  {
+   "file": "IMG_R9526_I44875_P1.jpg",
+   "sha1": "7d48c915a0860ba870f96bef6ef30c7b8a0706f4",
+   "size_px": [
+    3472,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9526_I44875_P1.jpg",
+   "record": "R9526",
+   "folio": "f.147 (cipher; left page blank/endorsement)",
+   "fetched": "06 Oct 2026 12:19 UTC",
+   "by": "R12-RJM147",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9526_I44875_P2.jpg",
+   "sha1": "41f26aec16150caab41575e4b5a524ed6f59304d",
+   "size_px": [
+    3472,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9526_I44875_P2.jpg",
+   "record": "R9526",
+   "folio": "f.150 (secretaria's decipherment, first page) + endorsement leaf",
+   "fetched": "06 Oct 2026 12:19 UTC",
+   "by": "R12-RJM147",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9526_I44875_P3.jpg",
+   "sha1": "ce119cf783df76322c2fddeb856bcb3efc1c9183",
+   "size_px": [
+    3472,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9526_I44875_P3.jpg",
+   "record": "R9526",
+   "folio": "f.147v (left) + f.148 (right), cipher",
+   "fetched": "06 Oct 2026 12:19 UTC",
+   "by": "R12-RJM147",
+   "committed": false
+  },
+  {
+   "file": "IMG_R9526_I44875_P4.jpg",
+   "sha1": "3aabd32c7697f17cf56e9d9f2b5bc62c2ef709aa",
+   "size_px": [
+    3472,
+    2454
+   ],
+   "source": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9526_I44875_P4.jpg",
+   "record": "R9526",
+   "folio": "slip, clear lines over cipher (not used)",
+   "fetched": "06 Oct 2026 12:19 UTC",
+   "by": "R12-RJM147",
+   "committed": false
   }
  ],
  "note": "DECODE full-size images kept in the session scratchpad only (not public domain); one browser login, 16 requests to de-crypt.org. Crop boxes: crops_jmalpha_manifest.json."

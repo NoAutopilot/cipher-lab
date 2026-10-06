@@ -34,7 +34,7 @@ Not done / unreachable: Kolosova 2017 thesis and 2024 book (Teseo/Dialnet and Go
 (a) Folder's own mentions: none (new folder). Tomokiyo's page itself, which the folder cites: **found** -- gives a period decipherment's first page inside 26 of 28 records and first-line readings of 26 letters. Not opened as images (cloud has no image of these; DECODE full-size images need a login, not done within this box).
 (b) Other solvers' working files: **not found** for R9499-R9529 (Bourdeau, Aymeloglu as above); Bourdeau's own statement that Juan Manuel's table is "still untested" only on Lope Hurtado leaves. No one has run the table on these letters.
 (c) Physical neighbours / facing pages: **unreachable** (not viewed). The records' own structure is the evidence: R9499 = 5 pages (cipher + a decipherment page, "Decrypted on f.5"), and the CSP calendar's "Contemporary deciphering" means a full period decipherment was bound beside the cipher in the Salazar volume. Whether the full-letter decipherment exists as images for most of the 28 is unconfirmed; Tomokiyo says only the first page is visible in DECODE.
-(d) Recipient's side: CSP Spain II (Bergenroth) read as above: calendared abstracts, not texts; the Spanish state series (Simancas Estado, CODOIN) not searched; Gachard, Mignet not searched. **Not found, not exhaustive.**
+(d) Recipient's side: CSP Spain II (Bergenroth) read as above: calendared abstracts, not texts; the Spanish state series (Simancas Estado, CODOIN) not searched; Gachard, Mignet not searched. **Not found, not exhaustive.** Print line (R12-RJMFRAG/R12-RJM147, 6 Oct 2026): one chapter of R9526 (6 Jun 1522, A-24 ff.147-148) is in print as the secretaría's clear text, CODOIN XXVI núm. 36 pp.49-50 (rule 1).
 Conclusion: this pool is a sibling-key calibration target rather than blind: the grade is C (period gloss) for the first page and S/M beyond. Not found-solved, because no full reading of any letter was found.
 
 ## Remaining gaps (after first test, 3 Oct 2026)
@@ -669,3 +669,73 @@ Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.
 - [x] image-check: R9528, R9529 and R9502 full-size images fetched (sha1s in images/manifest.json), crops and windows checked
 - [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
 Verdict: keep going: 2 internal gaps (R9501 passes + decode with Tomokiyo's published key, now unblocked by the f.40 PASS; T/Q values from pooled alignments); the transcription gap waits on ASKS 138; cheapest next: two blind passes on R9501 f.34 and a decode with key_tomokiyo_alpha.tsv + AlonsoSanchez_2.tsv, ~$5, after a verifier has looked at results_test42.json
+
+## Second held-out test: R9526 against the CODOIN XXVI print (R12-RJM147, 6 Oct 2026, 12:18-12:3x UTC)
+Brief: .claude/briefs/runs/2026-10-06-account2-run12-jobs.md job R12-RJM147. Opus worker, 2 Sonnet subagent passes, reconciliation by
+script (test 1's reconcile, as R12-RJM42). Intake gate (brief): `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search
+citation found within 6 lines`.
+
+Which record: DECODE R9526 (one browser login, 7 requests incl. record page, 4 thumbnails, 4 full-size by --guess-fullsize; max-files 8)
+carries "BRAH Signatura 9/24, f. 147-150": P1 right = f.147 (cipher), P3 = f.147v + f.148 (cipher), P2 right = f.150 (the secretaría's
+decipherment, first page: "De don Juan manuel de Roma a vj de Junio 1522"), P4 = a slip with clear lines over cipher. So the Índice's
+A-24 ff.147-148 is R9526 on folio, not only on date (csp_date_map.tsv had the date match only). Images in the scratchpad; sha1s in
+images/manifest.json, crops in images/crops_f147_manifest.json. **Print (rule 1):** CODOIN XXVI (1855) núm. 36 pp.49-50 prints one
+chapter of this letter, from "Los de Génova dicen rehusan ..." (the print opens with "....") to "... siendo él español", as the
+secretaría's deciphered text; page numbers confirmed on the IA page images (coleccindedocu26madruoft n54 = p.49, n55 = p.50; 4 archive.org
+requests incl. djvu.txt). The chapter starts 6 lines from the foot of f.150, so its first lines are also on the period decipherment page.
+
+Span located by eye before any pass (PREREG_f147.md): the chapter runs from the last two lines of f.147 to f.147v line 15 (clear "gastaran
+en ello", "dos", "puede venir", "no creo q hara falta y es muy suficiente ombre para / ello y el lo hara de buena voluntad ... y terna causa
+para ello" on f.147v; a B sign opens f.147v line 16). Crops (pasted):
+```
+$ python3 tools/iiif_lines.py --image IMG_R9526_I44875_P1.jpg --region 1880,1700,1592,754 --out <scratch>/crops --prefix f147 --follow-slope 300 --slope-margin 22 --debug
+  wrote 9 crops   (L07-L09 = the last three lines of f.147; overlay checked)
+$ python3 tools/iiif_lines.py --image IMG_R9526_I44875_P3.jpg --region 150,420,1600,1150 --out <scratch>/crops --prefix f147v --follow-slope 300 --distance 40 --slope-margin 22 --debug
+  wrote 17 crops  (a first run without --distance found pitch 31, half-lines; discarded; overlay checked, L16 = "B pir ...")
+```
+Passes: passes/f147_A.tsv (forward), passes/f147_B.tsv (reverse), shared passes/inventory.md, 18 crop lines (1 = f.147 L07, 2-3 =
+f.147 L08-L09, 4-18 = f.147v L01-L15). Plaintext: passes/gloss_codoin26_p49.tsv, read from the print's page images (grade C source).
+PREREG witness/PREREG_f147.md pushed in 95e73098c (12:24:37 UTC) before the first scored run; its addendum (written before scoring,
+after the passes reported only row counts and ?n notes) drops test42's clear-line removal because the print carries the clear text.
+
+Scored run: `python3 scripts/test147.py` (results_test147.json, ciphertext_f147_reconciled.tsv, passes/align_f147_codoin.tsv; `--check`
+exits 0). test42.py's score() and keys() and test 1's reconcile/to_pair are imported unchanged, aligner settings identical.
+
+| step | statistic | real | gate | verdict |
+|---|---|---|---|---|
+| reconciliation | err_2reader | 0.272 (252 of 346 tokens agree; 125 symbols agreed, 85 split) | -- | -- |
+| gate 0, calibration, primary span (lines 2-18) | nomenclator code tokens landing on their own word | 0.491 (52/106) | >= 0.50 | **FAIL: non-test at this alignment; neither key scored** |
+| same, sensitivity span (+ line 1 after its last B) | same | 0.486 (53/109) | reported only | FAIL |
+
+Post hoc diagnostic (after the gate, calibration gate set aside; not a test and licenses nothing): Tomokiyo's alphabet S 0.194 (N 108)
+vs permuted-key control mean 0.048 / p95 0.130 / max 0.148; alphabet.tsv S 0.156 (N 109) vs 0.027 / 0.064 / 0.138. Both are above
+the control max, and both are under the registered 0.24 floor, so neither would pass even if the calibration gate had been met.
+Per label (Tomokiyo / alphabet.tsv): R 10/18 both, Z 4/20 both, 9 2/7 both, A 1/17 both, T 1/14 vs 0/14, F 1/11 vs 0/11, 4 1/7 vs 0/7.
+Unlike f.40, A and Z land rarely here, which points at the alignment rather than the keys (A=a, Z=r are the two values both keys share).
+
+Reading: a narrow calibration miss (0.491 against 0.50) at reader error 0.27, so this page gives no held-out number for either key;
+R12-RJM42's f.40 PASS stands alone and is not corroborated or contradicted here. Likely causes, not tested: the print is the secretaría's
+text normalised by the 1855 editors (spelling "escrebí", "V. M.", "2,000"), not the clerk's own spelling; the span edges were set by eye;
+85 split symbols. Rule 3: a first test on this page, not a re-run; a second attempt would need the clerk's own f.150 lines (its last
+6 lines are the chapter's start) and the span's split tokens settled first, not a looser gate.
+
+Grades: unchanged; no key or reading changed. Requests: de-crypt.org 7 (one login, 4 thumbnails + 4 full-size counted by the tool, cap 8);
+archive.org 5 (djvu.txt, page_numbers.json 404/empty, page images n60, n54, n55). Subagent calls 2 (Sonnet).
+
+## Remaining gaps (R12-RJM147, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; nomenclator layer decoded on R9501 f.34 lines 1-14 (100 code words, S), R9528 f.194 (161/249 matched by the gloss), R9502 f.40 (132/210 matched by f.42) and R9526 ff.147-147v (52/106 matched by the CODOIN print); letter alphabet: Tomokiyo's published table PASSes the held-out gate on R9502 f.40 (0.276 vs control max 0.172, N 134); R9526 against CODOIN XXVI is a non-test (calibration 0.491 < 0.50); alphabet.tsv FAILs on f.40; f.199 FAIL with both keys stands as untested at that reader error
+- R9501 (no period decipherment in DECODE) passes and key test (job 2b) - blocker: not-attempted; next: two blind passes on R9501 f.34 with the same inventory, decode with Tomokiyo's alphabet + nomenclator (published key), judge, ~$5 -- the held-out gate it waited on passes on f.40 (R12-RJM42); a verifier (R12-RJMV) is checking results_test42.json
+- T and the rare signs 9, X, V, E, 3 and Q have no value supported on a page outside the key sample - blocker: not-attempted; T takes no consistent chunk on f.40 (e 4, h 2, g 2 of 17) and the rest have 2-8 tokens; next: pool the f.194, f.199, f.40 and f.147 alignments for T/Q chunk counts and score Q against K after the look-alike check, ~$2
+- R9526 held-out test against the print is a non-test (calibration 0.491) - blocker: not-attempted; outside this brief (one scored run only), the aligner missed calibration by 2 code words; next: one Sonnet read of f.150's last 6 lines (the clerk's own spelling of the chapter's start) and a look-alike pass on the 85 split tokens of ciphertext_f147_reconciled.tsv, then a fresh PREREG (same gate) on the span, ~$3
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, f.40 0.28, f.147 0.27, err_true unmeasured) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set; 39 unsettled look-alike tiles in sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, R12-RJMPUB); without it every reading stays a cryptanalytic result
+
+## Escalation (R12-RJM147, 6 Oct 2026)
+- [x] siblings: R11-RJMSIB compared Tomokiyo's Juan Manuel and Sanchez 1522 tables (alphabet and nomenclator, Bourdeau sanchez1522 cited): same design, no shared key (V 1 vs p95 2; T 0 of 75 shared words); no table fit to carry over
+- [x] clear-pages: f.197, f.201, f.42 read (single Sonnet pass each); f.199's, f.40's and f.147v's own clear lines identified; f.150 viewed (not transcribed)
+- [x] known-keys: Tomokiyo's nomenclator run on R9528, R9529, R9502 and R9526 (anchors 161/249, 44/117, 132/210, 52/106); his alphabet held out on R9502 f.40: PASS 0.276 vs control max 0.172 (R12-RJM42); R9526 vs CODOIN XXVI: non-test (R12-RJM147)
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); R12-RJMPUB found no published decipherment beyond Tomokiyo's first-line incipits; R12-RJMFRAG/R12-RJM147: one chapter of R9526 printed in clear, CODOIN XXVI pp.49-50; Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out FAIL on f.199 and on f.40 (0.156 < 0.24); its 4=de and F=i are not supported on f.40
+- [x] image-check: R9528, R9529, R9502 and R9526 full-size images fetched (sha1s in images/manifest.json), crops and windows checked
+- [x] retry: look-alike pass on the 88 + 114 split tokens (R11-RJMLA): residual 2-of-3 disagreement 0.040 / 0.137 (agreement, not error); unsettled tiles to the sorter's focus list
+Verdict: keep going: 3 internal gaps (R9501 passes + decode with Tomokiyo's published key; T/Q values from pooled alignments; R9526 retest with f.150's clerk lines and settled splits); the transcription gap waits on ASKS 138; cheapest next: two blind passes on R9501 f.34 and a decode with key_tomokiyo_alpha.tsv + AlonsoSanchez_2.tsv, ~$5, after R12-RJMV's verdict on results_test42.json
