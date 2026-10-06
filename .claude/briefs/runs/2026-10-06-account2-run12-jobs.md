@@ -1,0 +1,105 @@
+# LANE LANE-RUN12-account-2 jobs (account 2) -- 6 Oct 2026 11:1x UTC, lane orchestrator session_0134Hz4BBL6omk3Bx6T3wpcv
+
+Lane brief: .claude/briefs/default-lane.md (cap 60, box 11:12-21:12 UTC 6 Oct). WORK-QUEUE row LANE-RUN12-account-2: RUN11's named
+next steps for this split (STATUS.md "LANE LANE-RUN11-account-2 handoff", "Open for the next i-r lane"), then tools/next_steps.py
+runnable rows (S, M) and `parallel` actions (plain next_steps, not --hot-only). Folders i-r (account 1 a-h, account 4 s-z), plus
+catokwacopa-1875 as pollaky-1865-1875's own named gap 3 (no other lane's claim on it in the last 900 ROOM lines).
+VERIFY-BACKLOG.tsv i-r row: nla-heinrich-braunschweig-1519 audit2 (low) -- not run: AUDIT.md class is N0, and Outreach gate 2's
+second audit applies only above N1. Off limits: Birago (incl. nevers-birago-fr3251-1572), Armstrong, Debosnys; riksarkivet-r4282-1628.
+Dropped as already run (checked 11:1x): lambeth-bacon Baconiana page images (D2-BACON 5 Oct), rumpf NA re-probe (twice on 6 Oct),
+naf14913 f.206r phrase search (NOTES line 1592), ormond Russell-Prendergast (R8-ORM).
+Gate 0a: SESSION-SWEEP-account-2 row still `claimed`, its TSV (2026-10-05) on disk; RUN7-RUN11 proceeded past it the same way.
+Every worker: Opus 5.5 (Sonnet 5.5 only where stated), one job, then stop. Each job first checks that its named step is still undone
+(a dated NOTES.md section may already have run it); if so, stop and report rather than inventing work.
+
+## Common rules for every job
+- First commands: `git fetch origin && git checkout -B main origin/main`, `python3 tools/room.py --start`, `date -u`, then a ROOM claim
+  line with `tools/room.py` naming your job id, folder, cap and box end time, addressed "for LANE LANE-RUN12-account-2".
+  If --start fails to push from a detached HEAD: `git push origin HEAD:main; git checkout -B main HEAD`.
+- Read the folder's NOTES.md tail (Remaining gaps / Escalation / latest dated sections), HYPOTHESES.md and AUDIT.md section list first.
+- Good-citizen rule and the CLAUDE.md host table for every request (one request per host at a time, >= 1.5 s apart; stop a host on
+  429/403/challenge, one retry after a pause at most). Report request counts per host.
+- Rule 3: any gate is pre-registered (a PREREG file committed and pushed before the scored run), with a matched control that can vary on
+  the statistic tested; report both numbers. Rule 4 grades with counts. Rule 7: `tools/decode_key.py <folder> --check` (or the folder's
+  own decode script --check) exit 0 before push if the reading or key changed. A reading change after AUDIT.md: say so in NOTES.md and
+  flag in ROOM for a verifier.
+- Rebase before writing shared files (status.json, PROGRESS.tsv, ROOM.md, HYPOTHESES.md); keep both facts on conflict. Run
+  `python3 tools/file_shrink_guard.py <every file you touched>` before the final push; push with `python3 tools/room.py --push <paths>`.
+- Partial targets: update "## Remaining gaps" / "## Escalation" (Verdict line) and pass `python3 tools/gaps_check.py <target>`.
+- Words: never "solved", "cracked", "novel", "first", "new" for anything this project did; rule 10 wording only. Never name the
+  owner; never print credentials (test presence with `test -n`). Never call AskUserQuestion. Report what was found and where it was not
+  found; do not classify novelty (verifier jobs excepted, where the brief says).
+- Stop at the cap or at 80% of the box, whichever first; do not start a unit that would cross 80% of either. A stop with work half
+  done writes what was done and what remains into the folder's files. An Opus session floor is about 1.5; caps below assume it.
+- Vision work: crop step mandatory and pasted (`tools/iiif_lines.py --image FILE --out DIR` or the --ark/--canvas form); give
+  subagents only crop paths, one page/leaf per call, never a full-page image. Price: ~1.5 per Sonnet subagent pass, reconciliation = 1 unit.
+  Thumbnail/contact-sheet triage by the worker's own eye at low resolution is allowed for locating pages.
+- Sorters: any sorter meant for the owner must PASS `python3 tools/sorter_preflight.py` and have 5+ random tiles opened against the line
+  image; it is handed to the account-3 orchestrator (ROOM flag line) to publish. Never publish an artifact or edit ASKS.md yourself.
+- Done: one ROOM line `done (<start>-<end> UTC by date -u, brief met|stopped at cap): <result, commit>` "for LANE LANE-RUN12-account-2",
+  then a five-line final report.
+
+## Wave 1 (spawned 11:2x UTC 6 Oct). Intake gate output (11:1x UTC) pasted per job.
+
+### R12-RJMPUB -- rah-juan-manuel-1521, rule-1 check: is any of the 28 letters' decipherment already published? (Sonnet 5.5, cap 2.5, box 45 min)
+Intake gate: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+RUN11 (R11-RJMKEY) transcribed Tomokiyo's published Juan Manuel letter alphabet (cryptiana JuanManuel.png) and flagged that a published
+key implies someone has had working decipherments. Before any further solver work: search, and log each family searched/unreachable
+with the query and date, in a "## Published-decipherment check (R12-RJMPUB)" section: (a) Tomokiyo's own pages that carry the table
+(cryptiana.web.fc2.com: the page embedding JuanManuel.png and its siblings; the Cryptiana blog post and comments) -- what source does he
+cite for the table (a decipherment, a key sheet, a printed edition)?; (b) Bourdeau's and Aymeloglu's repositories, grep for Juan Manuel /
+RAH Salazar A.23 / R95xx DECODE ids (clone shallow, grep only); (c) DECODE listing records R9501-R9530 (tools/decode_list.py, login-free)
+for "Status: Decrypted" or attached decipherment documents; (d) RAH catalogue description of Salazar A-23 (OAI-PMH per the CLAUDE.md
+host table, no Anubis pages); (e) Google Books API (`&country=US&key=...`) and IA be-api full text for "Juan Manuel" + cifra/descifrado
++ 1522/1521, <= 20 calls; (f) Kolosova: whether any open route to her 2017 thesis annex exists other than the Teseo PDF (L17). Result:
+list every published decipherment located (which letter, where, page), or "none located by <method>". Do not decode; do not classify
+novelty. Update Remaining gaps / Escalation [print] line and gaps_check.
+
+### R12-SURSWP2 -- na-suriname-map-1781, 1-in-4 sweep of NA 1.05.03 inv. 373 scans 0270-0599 for further glossed cipher (cap 3.5, box 60 min)
+Intake gate: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+The Verdict's cheapest next, exactly as R11-SURSWP ran 0005-0269 and 0800-1024 (NOTES.md section "R11-SURSWP-..."): reuse its
+passes/inv373_sweep_r11/ scripts (plan.py, fetch.py, sheets.py) extended to 0270-0599, every 4th label skipping scans R10-SUR already
+sampled, 600 px thumbnails from service.archief.nl IIIF one at a time >= 1.9 s apart (<= 90 requests), contact sheets with scan 0693 as
+the positive control tile on every sheet, read by your own eye; zoom any candidate from the thumbnail, and at most 3 candidates at a
+higher size. Write passes/inv373_sweep_r12/look.tsv (one row per scan, cipher/gloss/key flags). If a glossed cipher passage is found,
+record scan numbers and a one-line description only; do not transcribe in this job. Update the Verdict / Remaining gaps, gaps_check.
+
+### R12-CATOK23 -- catokwacopa-1875 (pollaky-1865-1875 gap 3), spec tests 2-3 with a synthetic-line control (cap 5.5, box 80 min)
+Intake gate: run `python3 tools/intake_gate_check.py catokwacopa-1875` and `... pollaky-1865-1875` yourself and paste both; if the
+catokwacopa gate exits non-zero, stop and report.
+specs/catokwacopa-1875.json cheap tests 2 and 3, on our own pairs.tsv (NEXT-CAT, 2 Oct 2026). Test 2: independently re-derive the
+exact-fit name search that forces CONINGTON/JOWETT/SHIRLEY/HERTFORD (Bourdeau's catokwacopa, MIT, cite it; read his NOTES and ads.py
+for the omission rule, write our own script) against our own period proper-noun list (built from open sources you can cite: e.g. 1870s
+peerage/baronetage/House of Commons lists on IA, gazetteers) -- does each forced line stay unique under our list and not only his?
+Test 3: the five unread lines (9, 12, 23, 26, 29) against an enlarged period vocabulary under the same omission rule, with the matched
+control the spec names: how often the forced-fit method returns a unique answer on synthetic lines of the same length and omission budget
+built from random period English. Pre-register both tests and the uniqueness criterion (PREREG committed and pushed before scoring).
+Report target and control numbers side by side in HYPOTHESES.md and the spec's cheap_test_done; grade any line reading per rule 4 (S
+only with the control passing). Update catokwacopa's and pollaky's Remaining gaps / Escalation, gaps_check both; NEAR.md pollaky row's
+numbers if they change (tools/near_check.py exit 0).
+
+### R12-CLINVHS -- pro3055-clinton-1779, the 2380 witness conflicts against the printed VHS Collections II (1871) p.192 (Sonnet 5.5, cap 1.5, box 30 min)
+Intake gate: `pro3055-clinton-1779: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md lines ~1174, 1253, 1323 say VHS Collections II p.192 "not checked" for the 2380 conflicts (the cipher lacks "with the 650
+Recruits and Artillery from Europe" in p.121 and the P.S.; move/movements; Chesapeak/Chesipeak). Find the volume on IA (advancedsearch
++ the item's _djvu.txt; page image of p.192 if OCR is doubtful, <= 15 archive.org requests) and record, per conflict, which witness the
+print follows (quote it). Witness record only (rule 4: no majority vote; nothing in the key or reading changes). Also: the verifier
+R11-CLINV5 asked that a later session drop the bar at c4.6 in passes/.../p122_reconciled.tsv and rerun check_2380_p122.py -- do that and
+record the rerun output. Update the 2380 conflicts entry and AUDIT.md's 2380 section only by appending a dated witness note.
+
+### R12-CRUSLB -- ra-crusenstolpe-1809, Litteraturbanken.se Crusenstolpe author page and texts via a real browser or its JSON API (Sonnet 5.5, cap 1.5, box 30 min)
+Intake gate: `ra-crusenstolpe-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+NEXT-STEPS parallel action: the author page is JS-rendered (NOTES.md line 81). Try litteraturbanken.se's own JSON API first (find it from
+the page's network calls or its public docs), else tools/browser_fetch.js; list Crusenstolpe's works held there and full-text search them
+for chiffer / chiffre / 1809 / Portefeuille / the cipher's own named details in NOTES.md. <= 40 requests to the host, >= 1.5 s. Record
+each query and hit; update the While waiting / Verdict lines.
+
+### R12-LVN16 -- lodewijk-van-nassau-1573-74, letter 4616 image-check: its 27 M tokens and 19 unsegmented digit groups at 300 dpi (cap 4.5, box 70 min)
+Intake gate: `lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Remaining gaps item 3 (transcription, not-attempted for 4616): 4616 carries 27 M tokens and all 19 unsegmented digit groups (e.g.
+81/28/2), read so far only from 150-dpi images. Re-derive 300-dpi line crops for just the lines carrying them (regen_images.sh /
+images_manifest_full.tsv give the source; tools/iiif_lines.py --image or --ark/--canvas, paste the command), one page per Sonnet call,
+two blind passes on those crops + your reconciliation (~4-5 units). Settle each token from the image where you can; segment each digit
+group into key_full codes (decode_key.py --split-check helps, the image decides). Write corrections to ciphertext_4616.tsv only with a
+per-row note, regenerate with the folder's decode (decode_4616_full.json) and --check exit 0; recount C/H/M/U for 4616 and the
+57.5% figure; flag a verifier in ROOM if the reading changed. Update Remaining gaps item 3 / Escalation image-check, gaps_check.
