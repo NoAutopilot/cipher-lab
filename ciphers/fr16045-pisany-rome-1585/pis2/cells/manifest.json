@@ -1,0 +1,172 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "k_T31_L01.jpg",
+   "source_url": "",
+   "source_file": "henryiii_Vivonne5.png",
+   "box": [
+    220,
+    39,
+    252,
+    65
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 100,
+    "distance": 400,
+    "prominence": 1.0
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "k_T36_L01.jpg",
+   "source_url": "",
+   "source_file": "henryiii_Vivonne5.png",
+   "box": [
+    354,
+    39,
+    386,
+    65
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 100,
+    "distance": 400,
+    "prominence": 1.0
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "k_T45_L01.jpg",
+   "source_url": "",
+   "source_file": "henryiii_Vivonne5.png",
+   "box": [
+    259,
+    60,
+    291,
+    86
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 23,
+    "distance": 400,
+    "prominence": 1.0
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "k_T30_L01.jpg",
+   "source_url": "",
+   "source_file": "henryiii_Vivonne5.png",
+   "box": [
+    194,
+    39,
+    226,
+    65
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 100,
+    "distance": 400,
+    "prominence": 1.0
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "k_T17_L01.jpg",
+   "source_url": "",
+   "source_file": "henryiii_Vivonne5.png",
+   "box": [
+    354,
+    21,
+    386,
+    47
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 100,
+    "distance": 400,
+    "prominence": 1.0
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "k_T49_L01.jpg",
+   "source_url": "",
+   "source_file": "henryiii_Vivonne5.png",
+   "box": [
+    354,
+    76,
+    386,
+    102
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 100,
+    "distance": 400,
+    "prominence": 1.0
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "k_T47_L01.jpg",
+   "source_url": "",
+   "source_file": "henryiii_Vivonne5.png",
+   "box": [
+    219,
+    76,
+    251,
+    102
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 100,
+    "distance": 400,
+    "prominence": 1.0
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "k_T42_L01.jpg",
+   "source_url": "",
+   "source_file": "henryiii_Vivonne5.png",
+   "box": [
+    104,
+    60,
+    136,
+    86
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 400,
+    "prominence": 1.0
+   },
+   "date": "06 Oct 2026"
+  }
+ ]
+}
