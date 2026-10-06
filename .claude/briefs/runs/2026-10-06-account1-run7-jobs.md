@@ -105,3 +105,14 @@ test0 difflib swing was found (NOTES.md "R7A-NOX262" and its "Revision after AUD
 (re-run the scripts if cheap), then propagate per rule 10: a dated "## Revision after AUDIT (R7B-NOXV, 6 Oct 2026)" note in AUDIT.md (never
 rewrite earlier audits), the status.json c262 row's depth_check string, and any SECOND-OPINIONS-QUEUE.tsv row for this target. N-class
 and depth should not change (N0, D0); say so or say why not. `python3 tools/depth_check.py` after; paste its line for the row.
+
+## Wave 3 (6 Oct 2026 02:2x UTC; last wave, lane ~46.5 of 60 after wave 2)
+
+### R7C-BAL103K -- baluze103-letellier-marca-1644, the pre-registered sibling calibration of Tomokiyo's 1644 table (cap 4, box 50 min)
+R7B-BAL103R pre-registered the calibration as the next step (read its NOTES.md section and PREREG). Run it as registered: a few lines of
+one sibling with a period decipherment (f.171/f.189/f.200/f.230; DECODE R2743-R2746 or Gallica), crops + one blind pass (+ the
+reconciliation only if cap allows), decode with key.tsv, agreement with the period decipherment vs the registered control. Key changes
+only if the registered gate licenses them; then re-decode f.50 (--check) and re-run the fr17 judge. If the gate fails, log it and stop.
+
+### R7C-ECK62C -- eckert-1862, conflict-pair table test (cap 3, box 45 min)
+Verdict after R7B-ECK62: "conflict-pair table test ~$1.5". Pre-register (statistic, control, gate), push, then run; outputs and NOTES.md.
