@@ -1,0 +1,545 @@
+{
+ "primary_dense_gap5": {
+  "S": 2,
+  "n_masked": 36,
+  "g_shuffled_gloss": {
+   "n": 200,
+   "mean": 0.0,
+   "p99": 0.0,
+   "max": 0
+  },
+  "k_shuffled_key": {
+   "n": 200,
+   "mean": 0.0,
+   "p99": 0.0,
+   "max": 0
+  },
+  "verdict": "PASS"
+ },
+ "reported_dense_gap3": {
+  "S": 2,
+  "n_masked": 36,
+  "g_shuffled_gloss": {
+   "n": 200,
+   "mean": 0.0,
+   "p99": 0.0,
+   "max": 0
+  },
+  "k_shuffled_key": {
+   "n": 200,
+   "mean": 0.0,
+   "p99": 0.0,
+   "max": 0
+  },
+  "verdict": "PASS"
+ },
+ "reported_basin_gap5": {
+  "S": 2,
+  "n_masked": 36,
+  "g_shuffled_gloss": {
+   "n": 200,
+   "mean": 0.0,
+   "p99": 0.0,
+   "max": 0
+  },
+  "k_shuffled_key": {
+   "n": 200,
+   "mean": 0.005,
+   "p99": 0.0,
+   "max": 1
+  },
+  "verdict": "PASS"
+ },
+ "tomokiyo_settled_dense": 4,
+ "per_label": {
+  "u1": {
+   "n_signs": 9,
+   "basin": "e",
+   "tomokiyo": "u",
+   "recovered": 2,
+   "gloss_letters": "uu",
+   "settled": null
+  },
+  "o1/e2": {
+   "n_signs": 66,
+   "basin": "m",
+   "tomokiyo": "e",
+   "recovered": 5,
+   "gloss_letters": "bdeou",
+   "settled": null
+  },
+  "p1": {
+   "n_signs": 5,
+   "basin": "p",
+   "tomokiyo": "p",
+   "recovered": 1,
+   "gloss_letters": "p",
+   "settled": null
+  },
+  "l1": {
+   "n_signs": 4,
+   "basin": "d",
+   "tomokiyo": "l",
+   "recovered": 1,
+   "gloss_letters": "l",
+   "settled": null
+  },
+  "l2": {
+   "n_signs": 26,
+   "basin": "l",
+   "tomokiyo": "l",
+   "recovered": 6,
+   "gloss_letters": "adllll",
+   "settled": "l"
+  },
+  "n1": {
+   "n_signs": 20,
+   "basin": "e",
+   "tomokiyo": "n",
+   "recovered": 3,
+   "gloss_letters": "nnn",
+   "settled": "n"
+  },
+  "t2": {
+   "n_signs": 21,
+   "basin": "t",
+   "tomokiyo": "t",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "a1": {
+   "n_signs": 17,
+   "basin": "a",
+   "tomokiyo": "a",
+   "recovered": 3,
+   "gloss_letters": "aaa",
+   "settled": "a"
+  },
+  "e3": {
+   "n_signs": 20,
+   "basin": "e",
+   "tomokiyo": "e",
+   "recovered": 2,
+   "gloss_letters": "en",
+   "settled": null
+  },
+  "r1": {
+   "n_signs": 27,
+   "basin": "r",
+   "tomokiyo": "r",
+   "recovered": 1,
+   "gloss_letters": "r",
+   "settled": null
+  },
+  "p2": {
+   "n_signs": 4,
+   "basin": "p",
+   "tomokiyo": "p",
+   "recovered": 1,
+   "gloss_letters": "p",
+   "settled": null
+  },
+  "m2": {
+   "n_signs": 4,
+   "basin": "m",
+   "tomokiyo": "m",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "c1": {
+   "n_signs": 13,
+   "basin": "c",
+   "tomokiyo": "c",
+   "recovered": 2,
+   "gloss_letters": "tz",
+   "settled": null
+  },
+  "n2": {
+   "n_signs": 3,
+   "basin": "r",
+   "tomokiyo": "n",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "f2": {
+   "n_signs": 6,
+   "basin": "x",
+   "tomokiyo": "f",
+   "recovered": 1,
+   "gloss_letters": "f",
+   "settled": null
+  },
+  "d1": {
+   "n_signs": 5,
+   "basin": "d",
+   "tomokiyo": "d",
+   "recovered": 1,
+   "gloss_letters": "d",
+   "settled": null
+  },
+  "q1": {
+   "n_signs": 1,
+   "basin": "u",
+   "tomokiyo": "q",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "y1": {
+   "n_signs": 12,
+   "basin": "r",
+   "tomokiyo": "y",
+   "recovered": 3,
+   "gloss_letters": "iiu",
+   "settled": "i"
+  },
+  "r2": {
+   "n_signs": 5,
+   "basin": "e",
+   "tomokiyo": "r",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "e1": {
+   "n_signs": 4,
+   "basin": "r",
+   "tomokiyo": "e",
+   "recovered": 1,
+   "gloss_letters": "z",
+   "settled": null
+  },
+  "i2": {
+   "n_signs": 27,
+   "basin": "s",
+   "tomokiyo": "i",
+   "recovered": 5,
+   "gloss_letters": "iiiip",
+   "settled": "i"
+  },
+  "x1": {
+   "n_signs": 18,
+   "basin": "d",
+   "tomokiyo": "x",
+   "recovered": 1,
+   "gloss_letters": "d",
+   "settled": null
+  },
+  "z1": {
+   "n_signs": 2,
+   "basin": "e",
+   "tomokiyo": "z",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "D1": {
+   "n_signs": 3,
+   "basin": "r",
+   "tomokiyo": null,
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "g2": {
+   "n_signs": 4,
+   "basin": "e",
+   "tomokiyo": "g",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "s2": {
+   "n_signs": 7,
+   "basin": "s",
+   "tomokiyo": "s",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "s1": {
+   "n_signs": 4,
+   "basin": "o",
+   "tomokiyo": "s",
+   "recovered": 1,
+   "gloss_letters": "i",
+   "settled": null
+  },
+  "a2": {
+   "n_signs": 7,
+   "basin": "a",
+   "tomokiyo": "a",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "o2": {
+   "n_signs": 1,
+   "basin": "r",
+   "tomokiyo": "o",
+   "recovered": 1,
+   "gloss_letters": "r",
+   "settled": null
+  },
+  "i3": {
+   "n_signs": 1,
+   "basin": "a",
+   "tomokiyo": "i",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "N5": {
+   "n_signs": 3,
+   "basin": "x",
+   "tomokiyo": null,
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "h1": {
+   "n_signs": 1,
+   "basin": "d",
+   "tomokiyo": "h",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "m3": {
+   "n_signs": 1,
+   "basin": "u",
+   "tomokiyo": "m",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "a3": {
+   "n_signs": 3,
+   "basin": "i",
+   "tomokiyo": "a",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "u5": {
+   "n_signs": 1,
+   "basin": "e",
+   "tomokiyo": "u",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  },
+  "m1": {
+   "n_signs": 1,
+   "basin": "e",
+   "tomokiyo": "m",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null
+  }
+ },
+ "disagree_basin_vs_tomokiyo": {
+  "u1": {
+   "n_signs": 9,
+   "basin": "e",
+   "tomokiyo": "u",
+   "recovered": 2,
+   "gloss_letters": "uu",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "o1/e2": {
+   "n_signs": 66,
+   "basin": "m",
+   "tomokiyo": "e",
+   "recovered": 5,
+   "gloss_letters": "bdeou",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "l1": {
+   "n_signs": 4,
+   "basin": "d",
+   "tomokiyo": "l",
+   "recovered": 1,
+   "gloss_letters": "l",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "n1": {
+   "n_signs": 20,
+   "basin": "e",
+   "tomokiyo": "n",
+   "recovered": 3,
+   "gloss_letters": "nnn",
+   "settled": "n",
+   "gloss_says": "tomokiyo"
+  },
+  "n2": {
+   "n_signs": 3,
+   "basin": "r",
+   "tomokiyo": "n",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "f2": {
+   "n_signs": 6,
+   "basin": "x",
+   "tomokiyo": "f",
+   "recovered": 1,
+   "gloss_letters": "f",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "q1": {
+   "n_signs": 1,
+   "basin": "u",
+   "tomokiyo": "q",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "y1": {
+   "n_signs": 12,
+   "basin": "r",
+   "tomokiyo": "y",
+   "recovered": 3,
+   "gloss_letters": "iiu",
+   "settled": "i",
+   "gloss_says": "neither"
+  },
+  "r2": {
+   "n_signs": 5,
+   "basin": "e",
+   "tomokiyo": "r",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "e1": {
+   "n_signs": 4,
+   "basin": "r",
+   "tomokiyo": "e",
+   "recovered": 1,
+   "gloss_letters": "z",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "i2": {
+   "n_signs": 27,
+   "basin": "s",
+   "tomokiyo": "i",
+   "recovered": 5,
+   "gloss_letters": "iiiip",
+   "settled": "i",
+   "gloss_says": "tomokiyo"
+  },
+  "x1": {
+   "n_signs": 18,
+   "basin": "d",
+   "tomokiyo": "x",
+   "recovered": 1,
+   "gloss_letters": "d",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "z1": {
+   "n_signs": 2,
+   "basin": "e",
+   "tomokiyo": "z",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "g2": {
+   "n_signs": 4,
+   "basin": "e",
+   "tomokiyo": "g",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "s1": {
+   "n_signs": 4,
+   "basin": "o",
+   "tomokiyo": "s",
+   "recovered": 1,
+   "gloss_letters": "i",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "o2": {
+   "n_signs": 1,
+   "basin": "r",
+   "tomokiyo": "o",
+   "recovered": 1,
+   "gloss_letters": "r",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "i3": {
+   "n_signs": 1,
+   "basin": "a",
+   "tomokiyo": "i",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "h1": {
+   "n_signs": 1,
+   "basin": "d",
+   "tomokiyo": "h",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "m3": {
+   "n_signs": 1,
+   "basin": "u",
+   "tomokiyo": "m",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "a3": {
+   "n_signs": 3,
+   "basin": "i",
+   "tomokiyo": "a",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "u5": {
+   "n_signs": 1,
+   "basin": "e",
+   "tomokiyo": "u",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  },
+  "m1": {
+   "n_signs": 1,
+   "basin": "e",
+   "tomokiyo": "m",
+   "recovered": 0,
+   "gloss_letters": "",
+   "settled": null,
+   "gloss_says": "none"
+  }
+ },
+ "verdict": "PASS"
+}

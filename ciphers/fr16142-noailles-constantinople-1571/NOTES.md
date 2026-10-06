@@ -1456,3 +1456,57 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable)
 Verdict: keep going: 8 internal gaps; cheapest next: per-token alignment with denser anchors, ~$1
+
+## D1-F16142A: masked per-label alignment with denser anchors (6 Oct 2026, 13:06-13:2x UTC by date -u, account-1 worker)
+Brief: `.claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md` D1-F16142A (LANE DEFAULT-account-1-20261006-1240; R10-NOX2's
+Verdict cheapest next). Disk only: requests 0, subagents 0. key.tsv, gloss.tsv, grades file unchanged.
+Pre-registered `sorter/owner-sort-2026-10-04/aln/PREREG-D1F16142A.md` (pushed f0566635a before any statistic); script
+`aln/noxalign_dense.py` (pushed 0ca452d6a; imports noxalign.py's settle rule unchanged); numbers `aln/results/noxalign_dense_summary.json`;
+`python3 aln/noxalign_dense.py check` exits 0. **Redefinition, stated in the PREREG:** "Tomokiyo letters on the agreeing labels, basin
+elsewhere" is the basin decode itself (on an agreeing label the two letters are equal), so the denser anchors used are the five W: word
+signs of the published key (W:le x19, que x5, par x2, ont, qui) spelled out, every letter label kept at its basin letter; gap <= 5.
+
+| run (36 masked labels) | S | (g) shuffled gloss p99 / max | (k) shuffled basin key p99 / max | verdict |
+|---|---|---|---|---|
+| **primary: W:-word anchors, gap <= 5** | **2** | 0 / 0 | 0 / 0 | **PASS** |
+| reported: W:-word anchors, gap <= 3 | 2 | 0 / 0 | 0 / 0 | (PASS) |
+| reported: basin anchors only, gap <= 5 | 2 | 0 / 0 | 0 / 1 | (PASS) |
+| earlier: RUN6-NOXALIGN, basin, gap <= 3, corrected gloss (41 labels) | 2 | 0 / 1 | 0 / 0 | PASS |
+
+**PASS as registered, and still thin.** The two settled labels are the same pair in every run: l2 -> l (recovered a,d,l,l,l,l) and
+a1 -> a (a,a,a); neither denser anchors nor the wider gap settled a third. Only 19 of 36 labels recover any position (about 40 of 384
+signs), so at R ~0.31 the decode still has too few exact anchors for short-gap recovery; the nulls never settle a label, so the PASS is
+real but licenses 7 sign tokens, not a key. Grades (PREREG rule): **S 7** (l2 4, a1 3 -- the recovered positions whose own gloss letter
+equals the basin letter), **M 377**, H 0, C 0, I 0, of the 384 c262 reader signs; no grades file written (7 tokens, both labels already
+agree with Tomokiyo's key). Reported, not gated: basin vs Tomokiyo disagreements the gloss settles -- i2 -> i (i,i,i,i,p) and n1 -> n
+(n,n,n), both Tomokiyo's letter; y1 -> i (i,i,u), neither basin r nor Tomokiyo y (y/i are interchangeable spellings in 16th-century
+French, so this is weak support for Tomokiyo's y; not counted); u1 (u,u), l1 (l), f2 (f) recover Tomokiyo's letter below the settle rule;
+x1 (d) and o2 (r) recover the basin letter once each; o1/e2 (66 signs) recovers b,d,e,o,u, unsettled. Labels settled to their Tomokiyo
+letter under dense anchors: 4 (l2, a1, i2, n1). Conditional on one reconciler's labels, RUN2-NXATL's unchecked alignment and the owner's
+merges. Rule 3 repeat clause: two knobs changed on the same 10 rows and S did not move, so the next per-token step is new material
+(the c262 cipher rows beside gloss L14-L21, gap 2 below), not a third tuning.
+
+## Remaining gaps (D1-F16142A, 6 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner's lock-on onto Dupuy 221R-226R is a basin with one common key (N8-NOX PASS) that agrees with Tomokiyo's key on 7 of 17 bridge piles (N8-NOX2 PASS); that key mapped onto the reconciled c262 reader signs reads toward the gloss beyond four nulls (RUN6-NOXREAD PASS, 0.3506 on the leaf-corrected gloss); test0's known-answer gate passes under both difflib and exact LCS (R9-NOX, stable); per-label masked alignment PASS by the letter but thin, S 2 of 36 with denser anchors and gap 5 as with basin anchors (D1-F16142A); 0 open leaves decoded
+- Second, print-blind read of c262 gloss L01-L13: two whole-line blind Opus reads missed their own control (DEF1-NOXB 0.667, D2-NOXB2 0.714, gate 0.80); DEF1-NOXG's and R7A-NOX262's corrections rest on print-aware reads only - blocker: not-attempted; next: two independent blind passes on word-level crops of L01-L13 (tools/iiif_lines.py, 2-3 words per crop; the whole-line eye is barred from a third try by rule 3's repeat clause), ~$1.5
+- c262 cipher rows below c262rc L10 (beside gloss L14-L21, read once by R10-NOX2 into gloss_below_L13.tsv) not transcribed, so the gloss cannot join the scored block - blocker: not-attempted; next: cut those rows with tools/iiif_lines.py --follow-slope (region below y 3318, x from ~1380), two blind passes against the settled labels + reconciliation, then extend c262rc_recon.tsv and gloss.tsv together and re-run test0 --check, ~$3
+- Test 0's gate now passes (difflib and LCS): score an unglossed target block with Tomokiyo's key under the same test0 rule - blocker: not-attempted; next: two blind passes on a c510-516 line set against the settled labels + Dupuy 221R-226R as reference, scored with --stat lcs, ~$5
+- Bridge from atlas piles to key.tsv covers only 17 piles - blocker: not-attempted; next: place c262 tiles under the owner's labels so more piles carry a key.tsv value, ~$1
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (D1-F16142A, 6 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); date-only Dupuy matches text-checked (RUN6-NOXDUP, R7A-NOX262)
+- [x] basin test: the locked-on runs share one key (N8-NOX, pre-registered, PASS vs non-locking and shuffled-Dupuy nulls)
+- [x] key tie: basin count-based consensus vs key.tsv via the c262 bridge (N8-NOX2, pre-registered, PASS 7/17 vs 4/5/5)
+- [retired] decode on atlas tiles: c262 tile-stream decode vs gloss (RUN6-NOXDEC FAIL, 0.1803 on the L01-L13-corrected gloss, still under nulls), instrument atlas-tile stream + test0 ratio
+- [x] decode on a reader transcription: basin key mapped onto the reconciled c262 signs (RUN6-NOXREAD PASS; 0.3506 vs p99 0.2413/0.2525/max 0.2665/0.2546)
+- [x] per-token alignment: masked per-label alignment PASS by the letter (S 2 vs p99 0/0) with basin anchors gap 3 (RUN6-NOXALIGN, corrected gloss) and with W:-word anchors gap 5 (D1-F16142A, PREREG-D1F16142A.md); neither knob moved S, so more tuning of the same instrument on the same 10 rows is not the next step (rule 3 repeat clause); more cipher rows under the gloss (L14-L21) is
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; registered gate passes under difflib and under exact LCS (R9-NOX, PREREG-R9NOX-LCS.md, stable to the gloss change)
+- [x] print: Charrière III pp.258, 520-524 and 551-558 read; p.258 differs from the leaf gloss at L08 and L09 (spelling)
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin)
+Verdict: keep going: 7 internal gaps; cheapest next: place c262 tiles under the owner's labels to widen the 17-pile bridge, ~$1
