@@ -5,7 +5,7 @@
 # (worker G's block A, s.16 item 4); djvu 15563-15600 (block B) is dropped, not separate content (s.18/s.21).
 # Clear words as printed (lower case, OCR spelling); cipher runs in {braces}: letters graded C/H
 # in lower case, M in (x?), U as _ (value not in key) or [raw OCR] (unreadable token), code words <word>; sign @ = <thelordprotector>.
-# Per-token counts over numerals and signs: H 64, C 338, S 0, M 16, U 6
+# Per-token counts over numerals and signs: H 73, C 342, S 0, M 3, U 6
 
 t hough as you fay very well promotion comes not from the eaft nor from the weft but it is god that
 orders it in fuch way as he pleafes yet fince god does give nothing to us in vayne hee would not
@@ -20,78 +20,77 @@ further into any matters i fhould bee glad to receive from your frind fome affur
 kindneffe and favour that i may not bee abfolutely throwne off to the wide world without friends or
 fupport and that i may expeft to bee provided for by him after that i fhall have loft my felfe every
 where elfe for his fake for though i cannot {beeaculo[n-]yreach[4a]ftrustsince} it is come to my
-knowledge by {meerechance} and {(w?)ithouttheleastiniunctionof} fecrecy
-{thepersonigoti(q?)o(w?)tfrom} taking it {forgranted} upon his meeting {meeasheethoug(x?)t} ftealing
-out of whitehall {<england?>} that i was not only perticularly informed of {thematerbutalso}
-employed in it yet fince it is the abfolute breaking of {apothhathaibeeneahtching} by
-{the(w?)holepartieof_} there is noe queftion {butishal} by this one aflion render my felfe
-{irreconciiablk(w?)iththemaslongaailite} and therfore certaynly when your friend fhall ferioufly
-confider the nature of this matter hee cannot thinke it ftrange in me to expeft to bee aftured of
-his proteftion before i fhall doe a thinge that will render it impoftible for mee to receive it any
-where elfe i am very farr from having the leaft imagination in this of engaging your friend to a
-promife of doing mee good upon the pretence of a fervice which afterwards i fhould not bee able to
-doe i defire nothing from him till i have fhewne him by the {[efFe<5ls,]} that the fervice {(i?)}
-intend to doe him is not inconfiderable and then hee will bee able to judge whether the fervice i
-doe him bee worthy his thankes or noe sir i am in fuch haft to make an end for feare of loofing this
-pofte that i feare you will fcarce be able to reade the hand much lefte that which is written in
-cipher fince i doe not verry well know my felfe whether it bee true written or hoe and if this
-correfpondence continue betweene us i fhould defire you to fende me another cipher this which you
-have fent mee already being very imperfedt though it is more then tyme i fhould make an end i cannot
-hinder myfelfe from reprefenting this to your confideration firft what defigne i can have in this
-that i doe if it be not to linke myfelfe intirely to your friends intereft and fortune the part i
-have a mind to aft if hee would give mee leave being fuch that it would bee impoftible for mee to
-have dependance afterwards upon any body but himfelfe thouoh i fhould intend it never foe much next
-whether or noe i have not reafbn to beleeve that your friend muft needs think how fmall a proportion
-of parts foever god hath given mee i may bee ufefull to him in this perticular bufineffe confidering
-the {(q?)ualitie} i am of the famihar acquaintance {(i?)} have amongft all the {<thecavaliers?>} and
-the ihare i have hitherto had of theire bufinefte and laft whither or noe i ought in reafon to
-expeft hee will admitt of mee if in this foe prelting a conjundure and wherein icaa without vanity
-pretend to bee in fome kinde ufefull to him hee dos abfolutely rejedl the fervice i offer him j for
-how flight foever you may make of thes bufineffe i know it is a more {<generalrising>} troope and in
-which more {peopleareengagedtheninanioneof} the {formerones(w?)hatsoeutr} army {tha} by {the} it
-{eis} in {ca} it {seat} and at the {eco} the {siderablei} the {<england?><which>the} am
-{<have>notla} am {de<designs>tosurp} it {i} in {e} that by {he} am {hauegiuen(i?)alds} by {off} and
-{rt} am thoufand armes {<which>l} am {readitobeemaceuse} and {f(w?)hentheirebusines} in
-{eshalberipeforit} and which makes mee beleeve the time appointed for it is not farre off i have
-been affured this day that {orm} and {nd} is in {<england?>h} am {dehashas} at {ritinto_} this plott
-is foe infalible that noe difcovery can prevent it which would rather make mee beleeve it were a
-rediculous one then any thing elfe if i did not know perticularly it were indeed foe well layd that
-nothing but his and ignorance together could defiroye it i know very well too it would not bee hard
-for mee to have as considerable a fhare in it as any body if the offers i have already mae of my
-fervice to {<thelordprotector>} and the naturall averfion i have to fubmitt to thofe that have ufed
-mee unworthily did not hinder mee from it sir it depends on your friend to difpofe of mee as hee
-pleafes if he thinkes that what i have to fay may bee of ufe to him without doubt the beft way were
-to let me come and wayte upon him it being certayne that i fhould bee better able to informe him of
-this bufineife in one fingle difcourfe than i fhould be able to doe by a hundred feverall letters
-befides i know very well that my fifter and fome others i would imploy would bee very inftrumentall
-to mee in it who it would bee impoffible for mee to engage without being there myfelfe if your
-friend thinkes it fitteft for mee to be there unknowne i am fure i could order my journey thither
-foe that noe body in the world fliould fufped it being eafy for mee by the lieutenant gouvernors
-meanes to goe out of this towne without being feene and afterwards as eafy to land fomewhere in
-ingland where noe body knowes mee from thence to goe ftraight to london where your friend fhould
-apointe mee were noe hard matter neither fliould i finde any more difficulty in keeping my chamber
-there then to keepe it heere which i have done without llirring out once fince my coming to this
-towne i fuppofe you will eafily perceive by the earneftneffe i write to you with about this matter
-that my inclination leades me rather to come to you then to ftay heere i confeffe it does foe
-becaufe i know i fhould bee able to doe your friend more fervice there then i can doe being in this
-place and i am fure i fhould doe it with a greate deale of affeftion if your friend bee of the fame
-opinion i fhall immediatly upon the leaft intimation of his that hee is willing to it come away in
-what manner he fhall apoint mee but if for fom hidden caufes which i cannot guefle hee will not
-confent to it i fhall then expedt from him at leaft that he will be pleafed to lett mee have under
-hisowne hand fome aflurance of his favoure that i may hope the fervice i fhall doe him fhall not
-abfolutely bee forgot but that in cafe i can contribute fomthing to his advantage hee will be
-pleafed to owne mee as one who hee is willing he fhould hereafter depend upon his fortyne for it has
-beene my lucke to bee very ill ufed by thofe i have deferved well from and therefore i am the more
-excufable if i am a little too apprehenfive of meeting with the fame kind of ufage though in another
-place and if out of that aprehenfion i am defirous before i {[en-]} gage myfelfe any fiirther in
-this matter to have fome furety as to my owne perticular though the furety i now demaunde would bee
-as i conceive but very fmale if i did not very much rely upon your friends generofity pray fir weigh
-fearioufly what i have heere faid to you and lett mee have fpeedily your anfwer for i have nothinge
-to doe heere but in order to this bufineffe in the meane tyme i afke your pardon for all this
-trouble and defire you to bee affured that whatever fortune i runne or whether your friend fhall
-thinke fit to accept of the fervice i offer him or noe i fhall however thinke myfelfe obliged by the
-civilities you in your owne perticular have fhewed mee to bee as long as i live sir your moft
-affeftionate and mofl humble fervant
+knowledge by {meerechance} and {withouttheleastiniunctionof} fecrecy {thepersonigotiqowtfrom} taking
+it {forgranted} upon his meeting {meeasheethougxt} ftealing out of whitehall {<england>} that i was
+not only perticularly informed of {thematerbutalso} employed in it yet fince it is the abfolute
+breaking of {apothhathaibeeneahtching} by {thewholepartieof_} there is noe queftion {butishal} by
+this one aflion render my felfe {irreconciiablkwiththemaslongaailite} and therfore certaynly when
+your friend fhall ferioufly confider the nature of this matter hee cannot thinke it ftrange in me to
+expeft to bee aftured of his proteftion before i fhall doe a thinge that will render it impoftible
+for mee to receive it any where elfe i am very farr from having the leaft imagination in this of
+engaging your friend to a promife of doing mee good upon the pretence of a fervice which afterwards
+i fhould not bee able to doe i defire nothing from him till i have fhewne him by the {[efFe<5ls,]}
+that the fervice {(i?)} intend to doe him is not inconfiderable and then hee will bee able to judge
+whether the fervice i doe him bee worthy his thankes or noe sir i am in fuch haft to make an end for
+feare of loofing this pofte that i feare you will fcarce be able to reade the hand much lefte that
+which is written in cipher fince i doe not verry well know my felfe whether it bee true written or
+hoe and if this correfpondence continue betweene us i fhould defire you to fende me another cipher
+this which you have fent mee already being very imperfedt though it is more then tyme i fhould make
+an end i cannot hinder myfelfe from reprefenting this to your confideration firft what defigne i can
+have in this that i doe if it be not to linke myfelfe intirely to your friends intereft and fortune
+the part i have a mind to aft if hee would give mee leave being fuch that it would bee impoftible
+for mee to have dependance afterwards upon any body but himfelfe thouoh i fhould intend it never foe
+much next whether or noe i have not reafbn to beleeve that your friend muft needs think how fmall a
+proportion of parts foever god hath given mee i may bee ufefull to him in this perticular bufineffe
+confidering the {qualitie} i am of the famihar acquaintance {(i?)} have amongft all the
+{<thecavaliers>} and the ihare i have hitherto had of theire bufinefte and laft whither or noe i
+ought in reafon to expeft hee will admitt of mee if in this foe prelting a conjundure and wherein
+icaa without vanity pretend to bee in fome kinde ufefull to him hee dos abfolutely rejedl the
+fervice i offer him j for how flight foever you may make of thes bufineffe i know it is a more
+{<generalrising>} troope and in which more {peopleareengagedtheninanioneof} the
+{formeroneswhatsoeutr} army {tha} by {the} it {eis} in {ca} it {seat} and at the {eco} the
+{siderablei} the {<england><which>the} am {<have>notla} am {de<designs>tosurp} it {i} in {e} that by
+{he} am {hauegiuen(i?)alds} by {off} and {rt} am thoufand armes {<which>l} am {readitobeemaceuse}
+and {fwhentheirebusines} in {eshalberipeforit} and which makes mee beleeve the time appointed for it
+is not farre off i have been affured this day that {orm} and {nd} is in {<england>h} am {dehashas}
+at {ritinto_} this plott is foe infalible that noe difcovery can prevent it which would rather make
+mee beleeve it were a rediculous one then any thing elfe if i did not know perticularly it were
+indeed foe well layd that nothing but his and ignorance together could defiroye it i know very well
+too it would not bee hard for mee to have as considerable a fhare in it as any body if the offers i
+have already mae of my fervice to {<thelordprotector>} and the naturall averfion i have to fubmitt
+to thofe that have ufed mee unworthily did not hinder mee from it sir it depends on your friend to
+difpofe of mee as hee pleafes if he thinkes that what i have to fay may bee of ufe to him without
+doubt the beft way were to let me come and wayte upon him it being certayne that i fhould bee better
+able to informe him of this bufineife in one fingle difcourfe than i fhould be able to doe by a
+hundred feverall letters befides i know very well that my fifter and fome others i would imploy
+would bee very inftrumentall to mee in it who it would bee impoffible for mee to engage without
+being there myfelfe if your friend thinkes it fitteft for mee to be there unknowne i am fure i could
+order my journey thither foe that noe body in the world fliould fufped it being eafy for mee by the
+lieutenant gouvernors meanes to goe out of this towne without being feene and afterwards as eafy to
+land fomewhere in ingland where noe body knowes mee from thence to goe ftraight to london where your
+friend fhould apointe mee were noe hard matter neither fliould i finde any more difficulty in
+keeping my chamber there then to keepe it heere which i have done without llirring out once fince my
+coming to this towne i fuppofe you will eafily perceive by the earneftneffe i write to you with
+about this matter that my inclination leades me rather to come to you then to ftay heere i confeffe
+it does foe becaufe i know i fhould bee able to doe your friend more fervice there then i can doe
+being in this place and i am fure i fhould doe it with a greate deale of affeftion if your friend
+bee of the fame opinion i fhall immediatly upon the leaft intimation of his that hee is willing to
+it come away in what manner he fhall apoint mee but if for fom hidden caufes which i cannot guefle
+hee will not confent to it i fhall then expedt from him at leaft that he will be pleafed to lett mee
+have under hisowne hand fome aflurance of his favoure that i may hope the fervice i fhall doe him
+fhall not abfolutely bee forgot but that in cafe i can contribute fomthing to his advantage hee will
+be pleafed to owne mee as one who hee is willing he fhould hereafter depend upon his fortyne for it
+has beene my lucke to bee very ill ufed by thofe i have deferved well from and therefore i am the
+more excufable if i am a little too apprehenfive of meeting with the fame kind of ufage though in
+another place and if out of that aprehenfion i am defirous before i {[en-]} gage myfelfe any
+fiirther in this matter to have fome furety as to my owne perticular though the furety i now
+demaunde would bee as i conceive but very fmale if i did not very much rely upon your friends
+generofity pray fir weigh fearioufly what i have heere faid to you and lett mee have fpeedily your
+anfwer for i have nothinge to doe heere but in order to this bufineffe in the meane tyme i afke your
+pardon for all this trouble and defire you to bee affured that whatever fortune i runne or whether
+your friend fhall thinke fit to accept of the fervice i offer him or noe i fhall however thinke
+myfelfe obliged by the civilities you in your owne perticular have fhewed mee to bee as long as i
+live sir your moft affeftionate and mofl humble fervant
 
 # token list: kind	value	reading	grade
 N	18	b	C
@@ -132,7 +131,7 @@ N	30	a	C
 N	41	n	C
 N	17	c	C
 N	25	e	H
-N	33	w	M
+N	33	w	H
 N	28	i	C
 N	35	t	C
 N	23	h	C
@@ -173,9 +172,9 @@ N	10	g	C
 N	40	o	C
 N	35	t	C
 N	28	i	C
-N	38	q	M
+N	38	q	H
 N	40	o	C
-N	33	w	M
+N	33	w	H
 N	35	t	C
 N	11	f	C
 N	37	r	C
@@ -204,9 +203,9 @@ N	7	h	C
 N	40	o	C
 N	34	u/v	C
 N	10	g	C
-N	32	x	M
+N	32	x	H
 N	35	t	C
-N	67	england	M
+N	67	england	C
 N	35	t	C
 N	7	h	C
 N	12	e	H
@@ -249,7 +248,7 @@ N	10	g	C
 N	35	t	C
 N	23	h	C
 N	12	e	H
-N	33	w	M
+N	33	w	H
 N	7	h	C
 N	40	o	C
 N	3	l	C
@@ -285,7 +284,7 @@ N	19	a	C
 N	18	b	C
 N	3	l	C
 N	5	k	C
-N	33	w	M
+N	33	w	H
 N	6	i	C
 N	35	t	C
 N	7	h	C
@@ -308,7 +307,7 @@ N	35	t	C
 N	25	e	H
 ?	efFe<5ls,	[efFe<5ls,]	U
 N	1	i	M
-N	38	q	M
+N	38	q	H
 N	34	u/v	C
 N	30	a	C
 N	3	l	C
@@ -317,7 +316,7 @@ N	35	t	C
 N	6	i	C
 N	12	e	H
 N	1	i	M
-N	153	thecavaliers	M
+N	153	thecavaliers	C
 N	130	generalrising	C
 N	39	p	C
 N	25	e	H
@@ -359,7 +358,7 @@ N	40	o	C
 N	41	n	C
 N	25	e	H
 N	36	s	C
-N	33	w	M
+N	33	w	H
 N	7	h	C
 N	30	a	C
 N	35	t	C
@@ -397,7 +396,7 @@ N	18	b	C
 N	3	l	C
 N	25	e	H
 N	28	i	C
-N	67	england	M
+N	67	england	C
 N	81	which	C
 N	35	t	C
 N	7	h	C
@@ -460,7 +459,7 @@ N	34	u/v	C
 N	36	s	C
 N	12	e	H
 N	11	f	C
-N	33	w	M
+N	33	w	H
 N	7	h	C
 N	25	e	H
 N	41	n	C
@@ -498,7 +497,7 @@ N	37	r	C
 N	43	m	C
 N	41	n	C
 N	29	d	C
-N	67	england	M
+N	67	england	C
 N	7	h	C
 N	16	d	C
 N	12	e	H
