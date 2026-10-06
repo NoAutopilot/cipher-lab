@@ -1335,3 +1335,66 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262); c510-516 native line bands; owner sort of the atlas piles
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read
 Verdict: keep going: 9 internal gaps; cheapest next: exact-LCS variant of test0, pre-registered, ~$0.3
+
+## R9-NOX: exact-LCS variant of test0 (6 Oct 2026, 06:07-06:1x UTC by date -u, account-1 worker)
+Brief: `.claude/briefs/runs/2026-10-06-account1-run9-jobs.md` R9-NOX (LANE LANE-RUN9-account-1), "text-check the date-only Dupuy matches".
+**Named step already done**: RUN6-NOXDUP (5 Oct) text-checked all five date-only pairs (c330, c358-361, c409-410, c245/c464 match; c472-473
+partial) and R7A-NOX262 (6 Oct) ran its one residue (Dupuy 131-133, c472's 8 March Queen body not in Dupuy 521). Nothing left to check
+there, so per the lane rule this job took the folder's own Verdict "cheapest next": the exact-LCS variant of test0. Requests 0, subagents 0.
+
+PREREG `PREREG-R9NOX-LCS.md`, pushed fa9647f8a before any LCS score existed. `scripts/test0.py --stat lcs` (bit-parallel exact LCS, checked
+against a plain DP on 300 random pairs); the default `--stat difflib` is unchanged and all ten committed `witness/results_*.json` still pass
+`--check`. New outputs `witness/results_lcs_<pass>_<e|o>.json` (regenerate/check: `python3 scripts/test0.py --ct witness/<ct>.tsv --hash <e|o>
+--stat lcs --out witness/results_lcs_<pass>_<e|o>.json [--check]`). Same nulls (200 key shuffles, 200 gloss-word-order shuffles, seed 16142).
+
+| text | hash | R_lcs | key-shuffle max | gloss-order max | verdict (both maxes) | difflib R (verdict) | swing on pre-R7A gloss: lcs / difflib |
+|---|---|---|---|---|---|---|---|
+| pass A | e | 0.5038 | 0.4118 | 0.4476 | PASS +0.056 | 0.3632 (PASS) | +0.003 / +0.003 |
+| pass A | o | 0.4271 | 0.4169 | 0.3836 | PASS +0.010 | 0.3402 (PASS) | -0.003 / -0.005 |
+| pass B (FT-D gate) | e | 0.5575 | 0.4201 | 0.4518 | PASS +0.106 | 0.5522 (PASS) | 0.000 / **+0.227** |
+| pass B (FT-D gate) | o | 0.5575 | 0.4201 | 0.4518 | PASS +0.106 | 0.5522 (PASS) | 0.000 / **+0.227** |
+| pass C | e | 0.5364 | 0.4205 | 0.4420 | PASS +0.094 | 0.4690 (PASS) | +0.003 / +0.003 |
+| pass C | o | 0.4636 | 0.4043 | 0.3639 | PASS +0.059 | 0.4474 (PASS) | 0.000 / 0.000 |
+| **pass D (NX-RECUT gate)** | e | 0.5000 | 0.4054 | 0.4378 | **PASS +0.062** | 0.3324 (PASS) | +0.003 / 0.000 |
+| **pass D (NX-RECUT gate)** | o | 0.4432 | 0.4108 | 0.3865 | **PASS +0.032** | 0.2730 (PASS) | -0.003 / -0.008 |
+| reconciled | e | 0.5618 | 0.4220 | 0.4462 | PASS +0.116 | 0.5215 (PASS) | 0.000 / 0.000 |
+| reconciled | o | 0.5215 | 0.4274 | 0.4167 | PASS +0.094 | 0.4866 (PASS) | -0.005 / +0.005 |
+
+**Gate (registered): PASS** -- the gate pass D beats the max of both nulls at both '#' resolutions under the exact statistic, with wider
+margins than under difflib (o: +0.032 vs +0.008). **Stability (registered): STABLE** -- max |R_lcs swing| 0.005 <= 0.02 across all ten
+pass x hash runs on the pre-R7A gloss (L09 trouve, L13 quil; rebuilt in scratch, not committed), against difflib's 0.227 on pass B. So the
+test0 known-answer verdict does not rest on difflib's greedy anchoring; pass B under LCS (0.5575) and pass D (0.500 e) are now close, as
+R7A-NOX262 expected. What this licenses is unchanged from gate_passB.txt: the published key plus a glyph pass carries the gloss's sequence
+above chance on this block; it does not make the decode readable. No key, gloss or grade changed; no depth/N-class touched.
+Note on the nulls: LCS ratios sit higher for everything (key-shuffle max ~0.41, gloss-order max ~0.44 vs difflib ~0.25-0.32), as an exact
+LCS on a 26-letter alphabet always finds more common letters; the margins, not the raw R, are the comparable quantity.
+
+**Register note (brief's second item; PROGRESS.tsv not edited).** VERIFY-BACKLOG.tsv rows 6-7 key on PROGRESS.tsv rows 51-52 (file lines 58-59,
+"Noailles c262" and "Noailles c510-516") as `counted`, but neither row's result cell carries the "not counted" note that status.json (D0) and
+AUDIT.md lines 176/200 already imply; a register-note lag for the parent, not a verifier job.
+
+## Remaining gaps (R9-NOX, 6 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner's lock-on onto Dupuy 221R-226R is a basin with one common key (N8-NOX PASS) that agrees with Tomokiyo's key on 7 of 17 bridge piles (N8-NOX2 PASS); that key mapped onto the reconciled c262 reader signs reads toward the gloss beyond four nulls (RUN6-NOXREAD PASS, 0.3506 on the leaf-corrected gloss); test0's known-answer gate passes under both difflib and exact LCS (R9-NOX, stable); 0 open leaves decoded
+- Second, print-blind read of c262 gloss L01-L13: two whole-line blind Opus reads missed their own control (DEF1-NOXB 0.667, D2-NOXB2 0.714, gate 0.80); DEF1-NOXG's and R7A-NOX262's corrections rest on print-aware reads only - blocker: not-attempted; next: two independent blind passes on word-level crops of L01-L13 (tools/iiif_lines.py, 2-3 words per crop; the whole-line eye is barred from a third try by rule 3's repeat clause), ~$1.5
+- c262 gloss lines below L13 ("plaisir de les en laisser jouyr ...") not transcribed; c262 cipher lines they gloss not checked against them - blocker: not-attempted; next: cut with --centres 1302,1398 on a taller region, one read, extend gloss.tsv only if the cipher-side line count matches, ~$0.5
+- Test 0's gate now passes (difflib and LCS): score an unglossed target block with Tomokiyo's key under the same test0 rule - blocker: not-attempted; next: two blind passes on a c510-516 line set against the settled labels + Dupuy 221R-226R as reference, scored with --stat lcs, ~$5
+- Per-token alignment with denser anchors (basin decode S 2 of 41, thin) not run - blocker: not-attempted; next: same masked procedure anchored on a hybrid decode or gap <= 5, pre-registered with nulls g/k, ~$1
+- Bridge from atlas piles to key.tsv covers only 17 piles - blocker: not-attempted; next: place c262 tiles under the owner's labels so more piles carry a key.tsv value, ~$1
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (R9-NOX, 6 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); date-only Dupuy matches text-checked (RUN6-NOXDUP, R7A-NOX262)
+- [x] basin test: the locked-on runs share one key (N8-NOX, pre-registered, PASS vs non-locking and shuffled-Dupuy nulls)
+- [x] key tie: basin count-based consensus vs key.tsv via the c262 bridge (N8-NOX2, pre-registered, PASS 7/17 vs 4/5/5)
+- [retired] decode on atlas tiles: c262 tile-stream decode vs gloss (RUN6-NOXDEC FAIL, 0.1803 on the L01-L13-corrected gloss, still under nulls), instrument atlas-tile stream + test0 ratio
+- [x] decode on a reader transcription: basin key mapped onto the reconciled c262 signs (RUN6-NOXREAD PASS; 0.3506 vs p99 0.2413/0.2525/max 0.2665/0.2546)
+- [ ] per-token alignment: masked per-label alignment PASS by the letter on the corrected gloss (S 2 vs p99 0/0, g max 1), too thin to use; denser-anchor variant untried
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; registered gate passes under difflib and under exact LCS (R9-NOX, PREREG-R9NOX-LCS.md, stable to the gloss change)
+- [x] print: Charrière III pp.258, 520-524 and 551-558 read; p.258 differs from the leaf gloss at L08 and L09 (spelling)
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262); c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable)
+Verdict: keep going: 8 internal gaps; cheapest next: c262 gloss lines below L13, one cut and read, ~$0.5
