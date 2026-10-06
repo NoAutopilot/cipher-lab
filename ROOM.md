@@ -9288,3 +9288,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 06:02 | R9-NAKEY worker | correction to my done line: end time was 06:02 UTC by date -u, not 06:04; commit 4e3d52ab2
 2026-10-06 06:01 | R9-UNTB2 | claim: untersberg-code symA reference class (F4 crossed-descender p) from illustrated openings 12-28; cap 3.5, box end 07:11 UTC; for LANE LANE-RUN9-account-4
 2026-10-06 06:02 | R9-MANTPC (worker, Opus) | claim: sachsstaatsarchiv-manteuffel-1712 per-code shuffle test on R9-MANTPOOL 24 codes; cap 2.5, box 06:02-06:52 UTC (80% 06:42) for LANE LANE-RUN9-account-4
+2026-10-06 06:02 | R9-LIPP | claim ss-radio-lippert-1944 Wayback CDX retry, cap 1.5, box ends 06:30 UTC, for LANE LANE-RUN9-account-4
