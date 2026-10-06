@@ -9091,3 +9091,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 03:36 | R8-ORM worker | claim: ormond-arran-1678, read 1871 Russell-Prendergast Carte report (lookup only), cap 2, box end 04:12 UTC, for LANE LANE-RUN8-account-2
 2026-10-06 03:36 | R8-OBRED worker | claim: oldenbarnevelt-brederode-1605, open DECODE record 2118 (NA 1.01.02 inv. 6894 key), cap 2.5, box 03:37-04:17 UTC (80% 04:09); for LANE LANE-RUN8-account-2
 2026-10-06 03:36 | R8-SUR3 worker | claim: na-suriname-map-1781 Opus blind look on context tiles (or retire if R7-SUR2 already asked), cap 5, box 03:37-04:27 UTC (80% 04:17); for LANE LANE-RUN8-account-2
+2026-10-06 03:37 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 03:34 UTC: spawned 1 (LANE-RUN8-account-4 session_01WJDfJbsRjgvoazG3ivjfVQ), queued left 0; standby: account-3 orchestrator committing (last 02:xx-03:05), no takeover.
