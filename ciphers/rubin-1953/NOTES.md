@@ -186,3 +186,28 @@ Requests: ciphermysteries.com 1 (301 -> 200), cipherfoundation.org 4 (page, PDF,
 ## Next step (D2B-RUBIN, 5 Oct 2026)
 
 next: second blind transcription pass of the 2018 image (and the 2013 photo, scienceblogs.de/klausis-krypto-kolumne/files/2013/11/Rubin-Case.png) at the `vmie/vnie` glyph and Block C, then reconcile against variants-fbi-1953.tsv and update ciphertext.txt with the ¼ glyph and any settled letters, recorded in NOTES.md; ~$1.5. Who acts: agent.
+
+## Second pass and reconciliation (D2B-RUBIN2, LANE DEFAULT-account-2-20261005-2217, 6 Oct 2026)
+
+Intake gate (00:1x UTC 6 Oct): `rubin-1953: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**Crop step** (pasted): `python3 tools/iiif_lines.py --image images/rubin-cryptogram-2018.png --out images/crops2018 --prefix r18 --debug` -> 12 lines, centres 22 52 77 106 134 164 216 294 353 408 457 545; `python3 tools/iiif_lines.py --image <2013 photo as RGB> --out images/crops2013 --prefix r13 --debug` -> 5 bands (the 2013 slip is rotated about 12 degrees inside a newspaper photo, so the line finder cannot separate its lines). Targeted sub-crops were then cut with PIL into `images/crops2/`: the end of Block A line 3 at 5x, Block C lines at 3-4x (line 1 in two overlapping halves), and the 2013 slip deskewed with Block C at 4x. Subagents got only these crop paths, never a full image.
+
+**2013 photo fetched** (scienceblogs.de .../2013/11/Rubin-Case.png, 1 request, `images/rubin-case-2013.png`). It is a newspaper (Bulletin) halftone of the slip held in a hand, with "Dulles" and "Conant" circled by the paper's artist. **It cannot witness the vmie/vnie glyph**: Block A line 3 runs to the slip's edge and is cut at "ungdreaboz". Block C is legible only in fragments.
+
+**Blind passes** (two Sonnet subagents, crops only, made before variants-fbi-1953.tsv was opened in this session; the brief's order):
+- 2018 image, end of Block A line 3: reads `gdreabozvmie oie`. The letter after `v` is read as **m at medium confidence**: "about 2 clear vertical stems plus a dark blob at the left joining the v", with **n or a v+n overprint not excluded**. Together with bRUB's pass 1 (m) and D2B-RUBIN's 2x re-check ("blurred; m or n"), the 2018 reproduction leans m but cannot decide.
+- 2018 image, Block C: `100.011x100.10x.10011.1.xx0.101.x.001011.101x1011.1001..10x1` / `01.001011x10.1x.11101.x1.001x1.001001` / `0.101.x.101110.x101.1101101.0101x1.1011`. That is **identical to ciphertext.txt (bRUB pass 1) on all 136 characters** (60/37/39). The subagent placed the half-line join at medium confidence. The joined line is the same string as pass 1, made independently.
+- 2013 photo, Block C: fragments only. The subagent itself graded every character M with ">=25% per-character error". The legible pieces are consistent with ciphertext.txt (line 1 begins `100.011x10`, the right of line 1 reads `1.x.001`, line 3 ends `101x1.1011`). Nothing there contradicts the 2018 reading, but it is not a per-position witness.
+
+**Reconciliation against variants-fbi-1953.tsv and the FBI copies** (K1 p.51 and K2 p.50 Block C read character by character by eye this session; CR p.67 too faint at 120 dpi, not compared):
+- **vmie/vnie -> ciphertext.txt changed to `ungdreabozvnie`, grade M on that glyph.** Witnesses for n: FBI K1, K2 and CR (3/3, all copied from the original slip in Jan 1953; K1/K2 are typing exemplars and may derive from one reading, CR is the cryptanalyst's own copy). Witnesses for m: the 2018 reproduction (three image passes, at most medium confidence, n never excluded). There is no 2013 witness. The image cannot decide, and the copies made from the original agree, so n is taken. The variant m stays in the tsv.
+- **[SYM1] -> ciphertext.txt changed to `¼ly`**, from FBI 3/3 plus the 2018 image's overstrike shape (D2B-RUBIN). The ciphertext.txt header comment called this glyph "block C line 1". It is Block A line 7, and the comment is corrected in the same edit and named here.
+- **Block C: no change.** The 2018 image (two independent passes) is supported at every position. K1 and K2 each drop a character the other copy and the image both have (K2: the period after `100.10x`, line 1 char 16; K1: the period after `10.1x`, line 2 char 16; K1: the `1` in `0101x1.1011`, line 3 char 34). These are single-copy typing slips of the same kind D2B-RUBIN found in Block A. Rows have been added to variants-fbi-1953.tsv.
+- `scripts/stats.py` hard-codes its letter lines and does not read ciphertext.txt, so its N=305 figure is unchanged by these edits. The m->n swap does not change N (it is one letter for one letter). The IC moves trivially and has not been recomputed. The letter lines are not updated. No reading is claimed and no decode script exists, so rule 7 `--check` does not apply.
+
+Hosts: scienceblogs.de 1 (2013 photo). Subagents 2 (Sonnet, blind crop reads).
+
+## Next step (D2B-RUBIN2, 6 Oct 2026)
+
+next: CR p.67 Block C character by character, from the PDF re-rendered at 300 dpi for that page only (re-fetch the PDF from cipherfoundation.org, 1 request; render p.67, rotate, crop Block C). This settles the last witness on the three single-copy K slips and checks the vmie/vnie glyph in the cryptanalyst's own hand at full resolution, ~$1.5. Who acts: agent. Transcription is otherwise reconciled. The letter-text is unchanged in substance, so any cryptanalytic test is unblocked.

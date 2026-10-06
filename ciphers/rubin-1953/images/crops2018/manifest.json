@@ -1,0 +1,256 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "r18_L01.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    0,
+    900,
+    37
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L02.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    37,
+    900,
+    64
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L03.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    64,
+    900,
+    91
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L04.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    91,
+    900,
+    120
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L05.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    120,
+    900,
+    149
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L06.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    149,
+    900,
+    190
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L07.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    190,
+    900,
+    255
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L08.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    255,
+    900,
+    323
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L09.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    323,
+    900,
+    380
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L10.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    380,
+    900,
+    432
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L11.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    432,
+    900,
+    501
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r18_L12.jpg",
+   "source_url": "",
+   "source_file": "rubin-cryptogram-2018.png",
+   "box": [
+    0,
+    501,
+    900,
+    549
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 28,
+    "distance": 19,
+    "prominence": 75.5
+   },
+   "date": "06 Oct 2026"
+  }
+ ]
+}

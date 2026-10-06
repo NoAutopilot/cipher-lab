@@ -5,18 +5,22 @@
 # meaningful (Bauer's null-letter hypothesis turns on which letters are "real"), so this is not
 # normalised to one case. UNRECONCILED single pass (rule 2 of CLAUDE.md); a second pass and
 # reconciliation are test 2, not run here.
-# [SYM1] = one unclear glyph, block C line 1 (see NOTES.md sign table): an overstruck mark before
+# [SYM1] = one unclear glyph, block A line 7 (see NOTES.md sign table): an overstruck mark before
 # "ly", resembling a typewriter 1/4-fraction key struck over "l"; crop images/sym1_crop.png.
+# 6 Oct 2026 (D2B-RUBIN2, NOTES.md "Second pass and reconciliation"): [SYM1] -> the one-quarter
+# fraction character, written here as "¼" (FBI K1, K2, CR 3/3 plus the 2018 image); "ungdreabozvmie" ->
+# "ungdreabozvnie" (FBI K1, K2, CR 3/3; the 2018 image cannot decide, grade M; variant "m" kept in
+# variants-fbi-1953.tsv). Block C checked by a second blind pass of the 2018 image: no change.
 #
 # Block A: letter/word passages, lines 1-7 (line 7 follows a blank line in the source)
 digIs 'sawthn'g mathUlley-Dulles crancklavn' meteore iElli
 zheaopfvamn greA'Lltenmn
-kKiqtu albawmnabs dzhjellEiE matel ungdreabozvmie oie
+kKiqtu albawmnabs dzhjellEiE matel ungdreabozvnie oie
 sprekln meIktrene fodroscolmn oier
 *driEk Conant astereantol Iyvondiolon
 desceth megleagna mAlzbourgnion grele
 
-newtdo sfoatzdexklagh 2pont [SYM1]ly asgestaltverbensdi
+newtdo sfoatzdexklagh 2pont ¼ly asgestaltverbensdi
 
 # Block B: one numeral-only line (distinct from the 0/1/./x block; digits 0-9, not just 0/1)
 7469921
