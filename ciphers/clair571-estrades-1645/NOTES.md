@@ -381,3 +381,20 @@ crops. Cost about USD 3-4.
 
 Requests: see siena-concistoro-2308/NOTES.md "Image check (IMG-DECODE2)". The job made 52 de-crypt.org requests, 15 of them
 for these three records (3 RecordsView + 12 full size).
+
+## D4-EST94 (account 4, 6 Oct 2026, login-free RecordsList listing for key records 9430-9432)
+
+Method: `tools/decode_list.py --status n/a --record-type key --max-pages 10` (no login, no image, no key transcription); 10 requests
+to de-crypt.org, 1.5 s apart, no 429/challenge. The three records sit on grid page 9 of the 6,351 Key/N/A rows (500 fetched).
+Rows in `keys_decode/listing_9430-9432.tsv`:
+
+| record | holder (grid) | dates | languages | pages | status |
+|---|---|---|---|---|---|
+| 9430 | BnF Clairambault 577, p 1 | 1647 - (open end) | cleartext/plaintext blank | 5 | N/A (Key) |
+| 9431 | BnF Clairambault 574, p 4-5 | 1645 - 1649 | blank | 2 | N/A (Key) |
+| 9432 | BnF Clairambault 580, p 89-95 | 1655 - 1668 | blank | 5 | N/A (Key) |
+
+Found: the grid carries holder, shelfmark code, date range and page counts only; it has no transcription or decipherment flag beyond
+status N/A, and no language fields for these three. Page counts match the IMG-DECODE2 image counts above (5/2/5). Not found: any
+descriptive text (the "Additional Information" lines are RecordsView-only, already recorded by IMG-DECODE2), any transcription flag.
+Nothing here tests whether any key fits the Clair 575 p.1209 letter; no image or key was touched.
