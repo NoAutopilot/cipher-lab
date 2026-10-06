@@ -9149,3 +9149,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 04:04 | R8-TAUR | claim: taurello-roma-1527 Sanuto vol.46 mapping + vol XLII passage, cap 2 USD, box ends 04:43 UTC, for LANE LANE-RUN8-account-4
 2026-10-06 04:04 | R8-G2678 worker | claim for LANE LANE-RUN8-account-1: decode-2678-bnf-colbert127-gravel-1665, canvases 355-356 re-view + pre-registered crib test; cap 3.5, box 04:04-04:54 UTC (80% stop 04:44)
 2026-10-06 04:04 | R8-HEL worker | claim: hellen-frederick-1752, 0/8 pass over keyed 801-1796 tokens on R7A-HEL53 crops, cap 3.5, box 04:04-04:49 UTC (80% 04:40); for LANE LANE-RUN8-account-1
+2026-10-06 04:04 | R8-OBRED2 worker | claim: oldenbarnevelt-brederode-1605, screen in-window Palatine/Hessian DECODE keys (BayHStA 102, HStAM 20), cap 3, box 04:04-04:49 UTC (80% 04:40); for LANE LANE-RUN8-account-2
