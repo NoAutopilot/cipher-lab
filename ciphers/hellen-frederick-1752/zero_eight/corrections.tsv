@@ -1,0 +1,4 @@
+pos	image	line	decode_tx	image_value	confidence	reader	reconciler	context
+2	13447	L01	820	828	high	Sonnet masked read: 8 (closed loop)	R8-HEL: final glyph has the 8 form of 1208 and 578 (loop + rising stroke), not the small oval 0 of 1208/1049	H soin -> H suis: "ie me soin" -> "ie me suis" (information only, rule 4 of PREREG)
+133	13447	L09	990	998	high	Sonnet masked read: 8	R8-HEL: final glyph is the looped 8 form, unlike the oval 0 of the next group 406; DECODE already marked this digit doubtful	M le -> H d (information only)
+272	13447	L18	1009	1089	ambiguous	Sonnet masked read: U (second masked digit a thick smudge)	R8-HEL: second 0 is an ink blot; cannot tell 0 from 8	S er vs H ves (1089); not applied (PREREG rule 2)

@@ -1656,3 +1656,77 @@ Read so far: 456 of 846 R1953 tokens carry a key value (H 152, S 304) plus M 16;
 - [x] image-check: R4369, R4370, R4372, R4376, R4386, R4388 read from full-size images; R1953 itself checked against DECODE's transcription (R7A-HEL53: 846/846 groups seen, 12 corrections, U unchanged in substance)
 - [x] retry: the R1953 image check (R7A-HEL53)
 Verdict: keep going: 1 internal gap; cheapest next: the 0/8 pass over keyed 801-1796 tokens on the R7A-HEL53 crops, ~$2 (the 1-800 key-rebuild on the full Fagel corpus stays ~$30-35, low prior)
+
+## R8-HEL (6 Oct 2026): pre-registered 0/8 pass over keyed 801-1796 tokens of R1953 (account 1 worker for LANE LANE-RUN8-account-1)
+
+Step run: the R7A-HEL53 Verdict's cheapest next. Pre-registered in `zero_eight/PREREG.md` (pushed b30642cca at 04:07 UTC, before
+any image was fetched). The brief assumed the R7A-HEL53 crops were on disk; they had lived in that session's scratchpad and were
+gone, so the three page images were re-fetched with one DECODE browser login (`tools/decode_browser_login.js 1953 <scratch>
+--guess-fullsize --delay 1700 --max-files 7`; sha1 identical to R7A-HEL53's; scratchpad only, not committed), rotated upright,
+P3/P1 levelled 3.4/2.6 degrees, and cut with `python3 tools/iiif_lines.py --image <page> --out <scratch> --region 150,0,3400,5472
+--distance 140 --prominence 5 --max-width 1700 --overlap 120 --debug` (crop lines map to DECODE lines as P2 L(n+4), P3 L(n) by the
+overlay, P1 L(n+1); the P3 reader matched by neighbours and found its file labels one further down, no effect on the answers).
+
+Candidates (`zero_eight/candidates.py` -> `candidates.tsv`): 138 tokens in 801-1796 whose 0<->8 twin is keyed in R4369 with a
+different value (39 H, 87 S, 8 M, 4 U). 17 were already settled on the image by R7A-HEL53's reconciler and were not re-read; 121
+went to three blind Sonnet calls (one per page) that saw only the group with every 0/8 masked as '?', its two neighbours, and the
+crops. Never the key or the meanings. Reconciliation (this worker) on every non-agreeing answer.
+
+| page | read | agree with DECODE | reader differs | unclear |
+|---|---|---|---|---|
+| P2 (13447) | 54 | 51 | 2 | 1 |
+| P3 (13448) | 45 | 45 | 0 | 0 |
+| P1 (13446) | 22 | 22 | 0 | 0 |
+
+`zero_eight/corrections.tsv` (ciphertext_R1953.txt not modified):
+
+| pos | DECODE | image | conf | key effect (R4369) |
+|---|---|---|---|---|
+| 2 | 820 | 828 | high (reader + reconciler: the final glyph has the 8 form of 1208/578, not the oval 0 of 1208/1049) | H "soin" -> H "suis" |
+| 133 | 990? | 998 | high (reader + reconciler; DECODE had marked the digit doubtful) | M "le" -> H "d" |
+| 272 | 1009 | 1089? | ambiguous (reader U; second 0 is an ink blot), not applied | S "er" stays (twin 1089 = H "ves") |
+
+Key context column, for information only (PREREG rule 4): 828 gives "ie me suis" in the opening group, which reads better than
+"ie me soin"; the change was made on the image, not for that.
+
+Re-decode (`python3 zero_eight/apply_corrections.py`, then `python3 tools/decode_key.py ciphers/hellen-frederick-1752/zero_eight`,
+`--check` exit 0 "reading up to date"; key_r4369/key_decode.tsv unchanged):
+
+| version | tokens | H | S | M | U |
+|---|---|---|---|---|---|
+| R7A-HEL53 high + medium (image_check_r1953/reading_R1953_all.txt) | 847 | 153 | 306 | 16 | 372 |
+| + R8-HEL 0/8 corrections (zero_eight/reading_R1953_08.txt) | 847 | 154 | 306 | 15 | 372 |
+
+**Judge** (`python3 tools/judge_plaintext.py specs/hellen-frederick-1752.json --file ciphers/hellen-frederick-1752/zero_eight/reading_R1953_08.txt`):
+```
+ok   length: got=1332, min=200, max=1000000000
+FAIL language: score=-0.978, null_p99=-1.739, real_p05=-0.968, real_median=-0.826, mode=both, N=1332
+FAIL - hellen-frederick-1752 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Same place as before (-0.976 on the DECODE transcription): a FAIL near the gate, inside the calibration band where real fr18 prose
+at this coverage also FAILs (judge_calib.py); the judge cannot decide.
+
+**Finding.** The 0/8 look-alike is not a large error source in the keyed range: of 121 twin-keyed tokens that two readers had
+agreed on, 2 change (1.7%), 1 is ambiguous, 118 confirmed. The 1-800 gap is untouched (the pass only reads 801-1796). The main
+reading in `key_r4369/` is left as it was; adopting the image-check and 0/8 corrections there is the lane orchestrator's call.
+
+**Where it was not found:** no marginal key note or interlinear decipherment seen on the crops (as R7A-HEL53). Requests: de-crypt.org
+8 (1 login + RecordsView + 3 thumbnails + 3 full-size + 1 document), 1.7 s apart, no challenge. Subagent calls: 3 Sonnet reads + 1
+reconciliation (this worker).
+
+## Remaining gaps (R8-HEL, 6 Oct 2026)
+Read so far: 460 of 847 R1953 tokens carry a key value (H 154, S 306) plus M 15, U 372, with the R7A-HEL53 and R8-HEL corrections (zero_eight/); 456 of 846 on DECODE's transcription
+- codes 1-800 of the Hellen key (372 R1953 tokens) - blocker: no-key-material; the image check confirms the U tokens as transcribed (R7A-HEL53), period tables R4370/R4372 retired (rule 3), no other Hellen sheet in Add MS 32276 (NEAR3-HEL3, N6-HEL81); context-fit anneal untestable at this N (N5-HEL7); phrase-crib placement untestable at 8 Fagel pages (D2-HELFAGEL)
+- empty cells inside 801-1796 (14 tokens), the 15 M tokens and one 0/8-ambiguous token (pos 272) - blocker: open-codes; the 0/8 pass is done (R8-HEL: 121 read, 2 changed, 1 ambiguous); the empty cells are blank in R4369 itself
+- the 1756 letter (R1049) - blocker: no-key-material; R4369, R4372 and R4376 do not read it (N6-HEL76), no 1756 Hellen sheet in R4377-R4408 (N6-HEL81)
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; both positional candidates retired by pre-registered tests with passed controls (N7-HELBC, D2-HELR); reopens only with new material
+
+## Escalation (R8-HEL, 6 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half; all Add MS 32276 records looked at (NEAR3-HEL3, N6-HEL81, N7-HELDK)
+- [x] clear-pages: Fagel 5177's clear Hellen copies looked at (N4-HEL5) and 8 pages of Dec 1751 transcribed as a phrase corpus (D2-HELFAGEL); context only
+- [x] known-keys: R4369 reads R1953; R4370/R4372 retired for 1-800; R4376 fails on R1049; R4388 and R4386 fail on 1763
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: fr18-bigram anneal untestable (N5-HEL7); phrase-crib placement untestable at 8 pages (D2-HELFAGEL); untried: the same instrument on the full scans 5-93 corpus, ~$30-35, low prior, or a further R4369-code letter if one is found
+- [x] image-check: R4369, R4370, R4372, R4376, R4386, R4388 read from full-size images; R1953 checked against DECODE's transcription (R7A-HEL53) and its keyed 0/8 twins read masked (R8-HEL)
+- [x] retry: the R1953 image check (R7A-HEL53) and the 0/8 pass (R8-HEL)
+Verdict: keep going: 1 internal gap; cheapest next: the 1-800 key-rebuild on the full Fagel scans 5-93 corpus, ~$30-35, low prior (a campaign, lane orchestrator's call), or adopting the image-check + 0/8 corrections into key_r4369/ (orchestrator's call, changes a counted reading)

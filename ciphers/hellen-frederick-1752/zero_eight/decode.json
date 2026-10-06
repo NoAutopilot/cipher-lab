@@ -1,0 +1,17 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "R1953_pipe_08.txt",
+   "key": "../key_r4369/key_decode.tsv",
+   "format": "pipe",
+   "style": "spaced",
+   "reading": "reading_R1953_08.txt",
+   "tokens": "reading_R1953_08_tokens.tsv",
+   "header": [
+    "# hellen-frederick-1752 R1953 re-decoded after the R8-HEL 0/8 pass (6 Oct 2026) on top of R7A-HEL53 high + medium corrections (zero_eight/corrections.tsv, high rows only).",
+    "# Key: key_r4369/key_decode.tsv unchanged (READ2-HEL, R4369 = BL Add MS 32276 f.44). ciphertext_R1953.txt (DECODE's transcription) is not modified.",
+    "# tokens {total}: {HCSMIU}"
+   ]
+  }
+ ]
+}
