@@ -5200,6 +5200,29 @@ Open for the next i-r lane: (1) rayburn sorter publish (account 3) then test 3; 
 verifier's say, then the 1598 key in 3.01.14 inv. 2016 (thumbnails first) ~2; (5) kaliningrad: a judge or decoder change, not more anneals on
 this design. Process note: test_homophonic_alphabet.py fixture (a) and system_map_check (two SESSION-SWEEP tsvs) fail on main, pre-existing.
 
+## LANE DEFAULT-account-1-20261006-1240 handoff (session_016tXAHgaAgQXB3m94TerHE6, account 1), 6 October 2026 (closed 14:2x UTC: a-h backlog worked in four waves, lane about 54.4 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md; folders a-h. Gate 0a: SESSION-SWEEP-account-1
+row still `claimed` but the sweep completed 22:48 5 Oct (TSV on disk), proceeded as RUN8-10 did, 0 exclusions. Avoided account-4 DEFAULT-1235 wave
+folders. 22 workers (21 Opus, 1 Sonnet; 16 D, 5 D-, 1 B), workers 48.40 + orchestrator ~6.0 (get_session). five_hour `allowed` throughout. No reading
+entered a key; no status line moved to a terminal state; no depth or N-class raised.
+- decode-2678: AUDIT 2 (D1-DEC2678A2) keeps N3 (not N4: Haug 2015, AE CP Allemagne 194-195 unread), key published (Tomokiyo), D2 73% re-checked.
+  Mel. Colbert sommaires 120-125/131-133: 15 Gravel entries, none chiffre; the six 1665 letters (131bis-133) all in clear. Code 29 = Elector of
+  Mainz is a context candidate only (grade I). 1664 leaves not looked at: Gallica down 13:52-13:57 (D1-DEC2678M).
+- fr3151-seure: Morvilliers 1549 fo.66r two blind passes split 0.778 -> sign sorter built (preflight PASS, ~1/3 of a 14-tile spot check are stroke
+  pieces), flagged to account 3 to publish. No key, no test.
+- eckert-1862: received ledgers mssEC 04-14 (3,987 pp.) 0 of 124 residue matched; mssEC 12-13 no third Lehigh witness; sent ledgers 18-19: 13 Lehigh
+  uses, 8 print-read all Canby (6) / "can be" (2), 0 Hurlbut -- held M for a verifier grade decision.
+- fr16104 ink 53: AUDIT 4 holds D1 (H 82.9% -> 85.2%); f/m/p key cells PREREG-D1VIV53K: no label beats the wrong-cell control, key unchanged.
+- baluze167: gloss-fixed exemplars 15 -> 63 (shapes >= 2: 2 -> 12, LOO ceiling 0.698); f.247 labeller still blocked; Baluze 170 f.228r/v passes split
+  0.25-0.29 / 0.126, reconciled, not decoded -> sign sorter next.
+- decode-1162: focus sheet of 22 unsettled clear-text words built, flagged to account 3. ceppo-nevers f.36v: blind model reads retired (2-of-3 only on
+  T4, conflicting with print). fr16142: denser-anchor alignment PASS thin (2/36, same labels). es132: cabinet-noir unchanged; BL Add MS 28421 not digitised.
+Open for the next a-h lane: (1) eckert-1862 Lehigh verifier grade decision (Canby evidence, ec18/lehigh_uses.tsv); (2) account 3 to publish the fr3151
+Morvilliers sorter and the decode-1162 focus sheet; (3) decode-2678 six 1664 Gravel leaves once Gallica answers (~2); (4) baluze167 Baluze 170 f.228
+sign sorter (~2) then f.229r-v; (5) fr16104 per-position crops of e/o vs key cells (~2.5), ink 54 audit (~5); (6) fr16142 cipher rows under gloss
+L14-L21; (7) fr3151 Tournon 1556 slip as the alternative key route (~5).
+
 ## LANE LANE-RUN10-account-1 handoff (session_01CaidpjF7GC2DXjAnB1T7Dw, account 1), 6 October 2026 (closed 11:1x UTC: a-h backlog worked in five waves, lane about 53.5 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run10-jobs.md; folders a-h. Gate 0a clear (SESSION-SWEEP-account-1
