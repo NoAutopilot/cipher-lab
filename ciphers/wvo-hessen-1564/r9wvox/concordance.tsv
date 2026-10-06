@@ -1,0 +1,84 @@
+a_id	b_id	confidence	reason
+8	B12	low	figure-8 vs hook-loop figure8
+8	B19	medium	figure-8 vs open 8 with tail
+8	B40	medium	figure-8 vs eight with bar
+8	C09	high	figure-8
+8	C18	medium	figure-8 over circle-cross
+9	B18	high	numeral 9 with tail
+9	B34	high	nine with top loop
+7	B23	high	numeral 7
+E	B02	low	open loop vs backward C loop
+HH	B04	high	H with crossbar
+HH	C03	medium	h/H with crossbar
+GE	B10	low	curly looped sign vs g-C ligature
+II	B20	high	barred II vs open pi
+II	B22	high	pi-like capital
+II	B38	medium	filled pi square
+II	C06	high	capital Pi-like
+II	C07	low	II among homophones
+K	B01	low	V-like K shape, vague
+MARS	B16	high	Mars symbol
+P	B21	high	p-shape
+R	B05	high	capital R
+RAM	B28	low	horned stem vs umbrella cross
+SQ	B37	high	small closed square
+SQ	B35	low	square vs bracket
+SQ	C05	medium	square (dot differs)
+T	B03	medium	t/dagger single crossbar
+T	B30	medium	wide T crossbar
+TRI	B07	high	triangle
+TRI	C02	high	triangle
+Z	B32	medium	Z / horizontal z
+Z	C12	medium	slashed z
+Z4	B13	high	Jupiter sign
+Z4	B09	medium	four-like
+DT	B08	high	double cross
+DT	C01	low	double-dagger alternative
+HB	B11	high	h with bar
+HB	C03	medium	h with crossbar
+L	B14	high	looped L
+M	B42	low	M-ish vs nu v-shape
+O	B36	high	small circle
+O	B25	low	small o with tail
+X	B06	high	X cross
+X	C04	high	cross X
+X	C01	medium	X among homophones
+Y	C10	medium	y-like curl
+Y	B31	low	y/yogh-like
+SIG	B15	low	flat top stroke vs long s with flag
+ALF	B26	low	loop vs theta loop
+ALF	C14	low	loop vs rho-like curl
+L	C07	low	loop-d vs looped L
+B01	C15	low	V vs w-like loop
+B02	C17	medium	backward C loop vs reversed 3
+B03	C01	low	dagger
+B04	C03	medium	H/h with crossbar
+B06	C04	high	X cross
+B06	C01	medium	X among homophones
+B07	C02	high	triangle
+B08	C01	low	double-dagger vs double cross
+B08	C09	low	dagger/cross
+B09	C11	low	four vs 2-like
+B11	C03	medium	h with crossbar
+B12	C09	low	figure-8 hook
+B19	C09	medium	8 shape
+B40	C09	medium	8 shape
+B20	C06	high	pi shape
+B22	C06	high	capital Pi
+B38	C06	medium	filled pi
+B23	C11	low	7 vs 2-like
+B29	C18	low	venus with crossbar vs circle-cross
+B28	C18	low	cross-on-circle shape
+B31	C17	high	yogh / reversed 3
+B33	C19	high	numeral 3
+B32	C12	medium	z shape
+B34	C08	low	loop with tail vs 6-like loop
+B37	C05	medium	small square
+B39	C07	high	d-loop
+B36	C20	medium	small circle vs 0
+B26	C20	low	theta loop vs 0
+B18	C08	low	nine vs 6-like loop
+B25	C14	low	hooked loop
+B41	C14	low	small g vs hooked b/rho
+B33	C12	low	3 alternative
+B42	C15	low	v-shape vs w loop

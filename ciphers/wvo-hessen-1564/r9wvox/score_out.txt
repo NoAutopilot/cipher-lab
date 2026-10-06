@@ -1,0 +1,46 @@
+labelled signs: f23 15 (of pass-agreed codes), 1069 42, 174 20
+f23 vs 1069: scored pairs 18, same-letter real 8, perm mean 0.90 p95 3 max 7 p 0.0000 -> PASS
+   8=e  B19=u  
+   8=e  B40=n  
+   9=a  B18=a  SAME
+   9=a  B34=NULL  
+   HH=i  B04=t  
+   II=h  B20=NULL  
+   II=h  B22=h  SAME
+   II=h  B38=i  
+   MARS=i  B16=i  SAME
+   P=w  B21=w  SAME
+   R=s  B05=s  SAME
+   SQ=f  B37=f  SAME
+   T=r  B03=r  SAME
+   T=r  B30=NULL  
+   TRI=e  B07=b  
+   Z=d  B32=NULL  
+   Z4=d  B13=d  SAME
+   Z4=d  B09=NULL  
+f23 vs 174: scored pairs 7, same-letter real 0, perm mean 0.33 p95 1 max 4 p 1.0000 -> FAIL/tie
+   8=e  C09=i  
+   8=e  C18=t  
+   HH=i  C03=c  
+   II=h  C06=f  
+   SQ=f  C05=e  
+   TRI=e  C02=b  
+   Z=d  C12=m  
+1069 vs 174: scored pairs 17, same-letter real 4, perm mean 0.54 p95 2 max 5 p 0.0015 -> PASS
+   B02=g  C17=s  
+   B04=t  C03=c  
+   B06=a  C04=d  
+   B06=a  C01=a  SAME
+   B07=b  C02=b  SAME
+   B11=c  C03=c  SAME
+   B19=u  C09=i  
+   B40=n  C09=i  
+   B20=NULL  C06=f  
+   B22=h  C06=f  
+   B38=i  C06=f  
+   B31=p  C17=s  
+   B33=NULL  C19=x  
+   B32=NULL  C12=m  
+   B37=f  C05=e  
+   B39=m  C07=g  
+   B36=z  C20=z  SAME

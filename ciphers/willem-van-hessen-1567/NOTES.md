@@ -722,3 +722,14 @@ Verdict: parked: every gap has an outside blocker (ASKS row 31, the KHA scan req
   Kurrent; line crops with `tools/iiif_lines.py --image`, 2 blind passes + 1 reconciliation per crop set), so the crib is
   ready the day the KHA image arrives. Alternative, also independent: extend the sibling 1069 key with `--only-lines 7,8,9`
   (GAPS80's command), about 2 vision calls a round.
+
+## R9-WVOX (account 4, 6 Oct 2026): sibling keys vs wvo-hessen-1564 f.23's gloss key
+
+Shape concordance (blind text-only Sonnet call on letter-stripped descriptions) between `siblings/key_1069.tsv`, the 174 key-leaf
+alphabet (`siblings/key_174_nomenclator.tsv`) and the f.23 (WVO 1109, 18 Sept 1564) interlinear-gloss key; statistic = matched shapes
+carrying the same letter, control = letters permuted within each key (10000 draws). f.23 vs 1069: 8 of 18, perm p95 3 -> PASS;
+f.23 vs 174 leaf: 0 of 7, p95 1 -> FAIL; 1069 vs 174 leaf: 4 of 17 (a = X, b = triangle, c = barred h, z = small circle), p95 2 -> PASS
+(partial overlap). Prereg, files and table: `../wvo-hessen-1564/PREREG-R9-WVOX.md`, `../wvo-hessen-1564/r9wvox/`, that folder's NOTES.md
+R9-WVOX section. Logged in HYPOTHESES.md here. Nothing applied to the 174 letter body: no transcription of it exists on disk, and the
+f.23-vs-174 test failed. Suggestion (not run): the 1069 key and f.23's gloss key are close enough that each can check the other's
+uncertain classes (M only, after f.23's sorter answers).

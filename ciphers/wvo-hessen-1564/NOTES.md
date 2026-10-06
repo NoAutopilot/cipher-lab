@@ -463,3 +463,46 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair crops and sorter tiles
 - [n/a] retry: no step has failed that a retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: rebuild key.tsv per settled sign after the owner's sorter answers (~$1), else a careful two-pass transcription of the ten gloss rows (~$4.5); then a verifier
+
+## f.23 key vs the 1069 and 174 keys (R9-WVOX, account 4, 6 Oct 2026, 06:20-06:3x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-WVOX. Disk only, no new crops, no network. Files: `PREREG-R9-WVOX.md`
+(pushed 4a24b8175 before scoring), `r9wvox/` (letter-stripped shape inventories, `concordance.tsv` as returned by one blind text-only
+Sonnet call, `score.py`, `score_out.txt`). f.23 letters = R9-WVOALIGN's pass-A/pass-B code keys where they agree (15 codes); 1069 =
+`willem-van-hessen-1567/siblings/key_1069.tsv` (H); 174 = that folder's key-leaf alphabet rows. Shapes judged the same by the subagent at
+high/medium confidence; statistic = matched pairs carrying the same letter; control = letters permuted within each key, 10000 draws.
+
+| key pair | scored pairs | same letter | perm mean | p95 | max | p | gate |
+|---|---|---|---|---|---|---|---|
+| f.23 vs 1069 (1563, Hesse to Orange) | 18 | 8 | 0.90 | 3 | 7 | <0.0001 | PASS |
+| f.23 vs 174 key leaf (1567) | 7 | 0 | 0.33 | 1 | 4 | 1.0 | FAIL |
+| 1069 vs 174 key leaf (reported) | 17 | 4 | 0.54 | 2 | 5 | 0.0015 | PASS |
+
+- Shared f.23/1069 values (same shape, same letter): nine = a, Pi-like = h, Mars = i, p-shape = w, R = s, small square = f,
+  cross with one bar = r, Jupiter-like = d. Disagreeing matches: f.23's 8 (e) vs 1069's open-8-with-tail (u) and eight-with-bar (n),
+  triangle (f.23 e, 1069 b), H-with-crossbar (f.23 i, 1069 t), and four 1069 null marks matched to lettered f.23 codes. Some of these
+  are likely description-level conflations of distinct homophone shapes (the descriptions are coarse); not resolved here.
+- Reading: f.23 (1564) and 1069 (1563) are enciphered in what looks like the same key family or a close revision of it, sign->letter at
+  8 of 18 matched shapes, well above chance; the 174 key leaf (1567) is a different alphabet for f.23 (0 of 7), and only partly overlaps
+  1069 (4 of 17). This fits NX-WVO174's negative (the 174 key did not read f.23). Grade: M (a cryptanalytic concordance with a control,
+  shape matches judged from text descriptions, not from crops side by side).
+- Not done (brief: apply only on an f.23-vs-174 PASS): no f.23 value applied to the 174 letter body. No transcription of the 174 letter
+  body exists on disk in `willem-van-hessen-1567` (only `siblings/crop_174_line1.png`), so there was nothing to apply to either way.
+- No key.tsv, reading, AUDIT.md or status.json change. Logged in this folder's and `willem-van-hessen-1567`'s HYPOTHESES.md.
+- Requests: none (disk only). 1 Sonnet subagent call (text only).
+
+## Remaining gaps (finish-or-blocker pass, R9-WVOX, 6 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed); alignment gate PASS 10 vs shuffle p95 3; key 10 C / 18 M pile rows; 72 of 92 C-graded tiles agree with the gloss letter over them; f.23 shares values with the 1069 key (8 of 18 matched shapes, perm p95 3)
+- careful transcription of the ten German gloss rows (C03, C05, C09 have uncertain letters; R9-WVOALIGN's gloss is a reconciliation sketch) - blocker: not-attempted; outside R9-WVOALIGN's and R9-WVOX's briefs; next: two blind passes on crops_m/ German rows + reconciliation, then re-run build_pairs.py and the aligner, ~$4.5
+- sign-level key (pile ids mix shapes; the key is per pile, not per settled sign) - blocker: not-attempted; the sorter is built but not yet answered; next: after the owner's f23 sorter answers, apply them with tools/sign_sorter_apply.py, relabel tile_letters.tsv by sid and rebuild key.tsv with make_key.py, then cross-check each settled sign against its 1069 counterpart (r9wvox/concordance.tsv), ~$1.5
+- verifier on the gloss reading and the key (rule 10; no AUDIT.md yet) - blocker: not-attempted; R9-WVOV is running it this window; next: R9-WVOV's AUDIT.md, ~$3
+
+## Escalation (R9-WVOX, 6 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174 application; R9-WVOX concordance FAIL 0/7) and 1069 key (R9-WVOX concordance PASS 8/18)
+- [x] clear-pages: f.23's own interlinear gloss aligned and gated (R9-WVOALIGN); 1107 and 1111 read for cribs earlier
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111)
+- [x] key-rebuild: pile-level key rebuilt from the leaf's gloss (R9-WVOALIGN, r9align/key.tsv)
+- [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair crops and sorter tiles
+- [n/a] retry: no step has failed that a retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: rebuild key.tsv per settled sign after the owner's sorter answers and cross-check against 1069 (~$1.5), else a careful two-pass transcription of the ten gloss rows (~$4.5); verifier R9-WVOV running
