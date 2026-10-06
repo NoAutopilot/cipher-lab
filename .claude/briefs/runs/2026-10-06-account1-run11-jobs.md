@@ -124,3 +124,6 @@ login-free. Add to sp106_browse.tsv; NOTES + gaps_check.
 Disk only: run tools/lookalike_pass.py on the f.88r pass split pairs (images/f88r); then build the owner sign-sorter page for images/f88r with
 its focus.tsv (tools/sign_sorter.py), PASS tools/sorter_preflight.py, open 5+ random tiles against the line image, and flag it in ROOM to the
 account-3 orchestrator to publish (never publish yourself, never edit ASKS.md). Lookalike residue is agreement, not accuracy. NOTES + gaps_check.
+
+Wave 3 sessions (14:48 UTC): R11A-AVSK session_014ScaXKcd9HVfkeSV9mgHig; R11A-BOWES3 session_01M1SyaFd4hDLfaELEnbKEoe; R11A-HAR
+session_015vGpuBo35CergURwf6MpZj.
