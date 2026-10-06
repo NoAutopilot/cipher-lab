@@ -597,7 +597,7 @@ Waits on a BnF reproduction of Clairambault 297 p. 249 (to be folded into the AS
 - Apply the sister folder's 1714 Paget key to the 1714 letters' own unglossed spans and list which codes stay open, so the 1713 letter can be tested against a known residue the day it arrives. S, disk only.
 
 
-## D4-PAG13 (6 Oct 2026, 12:42-12:5x UTC by date -u, account 4): 1714 Paget key applied to the 1714 letters; residue table for the 1713 letter
+## D4-PAG13 (6 Oct 2026, 12:42-12:47 UTC by date -u, account 4): 1714 Paget key applied to the 1714 letters; residue table for the 1713 letter
 
 Disk only, 0 network requests. Sister folder read only (clairambault1225-paget-1714: key.tsv 111 codes, ciphertext.tsv, reading_tokens.tsv,
 votes.tsv, exceptions.tsv at the D2-PAGR7 state, whose `tools/decode_key.py --check` re-ran exit 0 this pass: "tokens 505: H 50, I 7, M 370,
