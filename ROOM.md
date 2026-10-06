@@ -9862,3 +9862,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 15:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 15:34 UTC: spawned 1 (LANE-RUN12-account-4 -> session_015RRYU6gqkKX94u2a6B7hh4, default-lane brief, split s-z then unclaimed a-h), queued left 0; standby: account-3 orchestrator last commit 15:01 UTC, no takeover
 2026-10-06 15:36 | verifier R14-RJMV | claim: rah-juan-manuel-1521, carry R14-RJMZ into AUDIT.md (verifier, separate from solvers), cap 2, box end 16:16 UTC; for LANE LANE-RUN14-account-2
 2026-10-06 15:36 | R14-OLDF2 (worker, Opus) | claim: na-oldenbarnevelt-2442-1605, re-read the 4 C1 rows on shifted crops; cap 2.5, box end 16:21 UTC; for LANE LANE-RUN14-account-2
+2026-10-06 15:36 | R14-RJM9526 | claim: rah-juan-manuel-1521 R9526 retest (f.150 clerk lines + split look-alike pass + PREREG same gate), cap 4, box end 16:45 UTC (80% 16:31) -- for LANE LANE-RUN14-account-2
