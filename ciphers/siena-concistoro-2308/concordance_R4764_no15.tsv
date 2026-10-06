@@ -1,4 +1,4 @@
-# R9-SIENA15 shape concordance, no. 15 sign (Bourdeau no15v legend) -> R4764 key sign and its value. Fixed 6 Oct 2026 ~05:50 UTC
+# R9-SIENA15 shape concordance, no. 15 sign (Bourdeau no15v legend) -> R4764 key sign and its value. Fixed 6 Oct 2026 before 05:48 UTC (date -u)
 # from one look each at R4764 P2 crops (alphabet left/right halves, doppie row, nulle row; IMG_R4764_I27857_P2.jpg, 2248x4000,
 # sha1 14be97b6...) and no. 15 P2/P6 run crops (IMG_R4803_I27950_P2/P6.jpg, sha1s match images/manifest.json), BEFORE any scoring.
 # set: P = primary (shape plainly the same sign); V = added only in variant V (looser likeness, or a second reading of the key).

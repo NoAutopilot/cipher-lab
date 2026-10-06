@@ -1,4 +1,4 @@
-# PREREG R9-SIENA15 -- no. 15 against key R4764 through a shape concordance (6 Oct 2026, written ~05:52 UTC, pushed before scoring)
+# PREREG R9-SIENA15 -- no. 15 against key R4764 through a shape concordance (6 Oct 2026, written 05:48 UTC by date -u, pushed in cc19de4a4 before scoring)
 
 Question: is DECODE R4764 ("Cifra con m. Bern(ardin)o Buonins(egni) or(atore) a S. M.tà", Bourdeau's candidate) the key of no. 15
 (R4803, Mario Bandini, Dec 1546 / Jan 1547)?

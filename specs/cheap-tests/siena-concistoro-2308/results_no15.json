@@ -1,0 +1,35 @@
+{
+ "N": 232,
+ "variants": {
+  "P": {
+   "S2_real": -1.3544,
+   "gate_pass": false,
+   "null_tokens": 27,
+   "ordshuf_mean": -1.4016,
+   "ordshuf_p95": -1.2853,
+   "p_a": 0.2674,
+   "poscontrol_mean_valued": 71.3,
+   "power": 0.63,
+   "q": 0.7626,
+   "valshuf_mean": -1.4839,
+   "valshuf_p95": -1.2516,
+   "valued_reach_at_q1": 93.0,
+   "valued_tokens": 71
+  },
+  "V": {
+   "S2_real": -1.5079,
+   "gate_pass": false,
+   "null_tokens": 34,
+   "ordshuf_mean": -1.4431,
+   "ordshuf_p95": -1.3513,
+   "p_a": 0.4783,
+   "poscontrol_mean_valued": 110.7,
+   "power": 0.96,
+   "q": 0.9635,
+   "valshuf_mean": -1.5285,
+   "valshuf_p95": -1.3314,
+   "valued_reach_at_q1": 113.8,
+   "valued_tokens": 110
+  }
+ }
+}

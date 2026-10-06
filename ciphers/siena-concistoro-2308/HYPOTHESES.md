@@ -35,3 +35,9 @@ The sign matching is by name across transcribers, so a shape-level concordance i
   Positive-control power <= 0.78 in every cell: non-test at this N (pre-registered), not a negative. Post hoc: TRI 10/118 vs 1.13
   expected for b; 0/100 H1 passages as low on S1.
 
+- R9-SIENA15, 6 Oct 2026 (prose row; PREREG-R9-SIENA15.md pushed in cc19de4a4, concordance_R4764_no15.tsv, run_test_no15.py): no. 15
+  vs key R4764 through a shape concordance. Statistic S2 = mean it16 bigram log10 prob inside valued stretches. P (14 signs valued, 71
+  tokens; 6 null signs, 27 tokens): TARGET -1.354; CONTROL value-shuffled mean -1.484 (p95 -1.252, p 0.267), order-shuffled mean
+  -1.402 (p95 -1.285). Power 0.63 < 0.8: non-test at this N (pre-registered), not a negative. V (P + 11 looser rows, 110 valued, 34
+  null): TARGET -1.508; CONTROL value-shuffled mean -1.529 (p 0.478), order-shuffled mean -1.443 (p95 -1.351). Power 0.96: a
+  control-backed negative for the V mapping (not for R4764 as a key: 88 (V) to 134 (P) of 232 tokens have no shape counterpart on the sheet).

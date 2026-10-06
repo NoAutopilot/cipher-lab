@@ -480,3 +480,66 @@ Grades: no token read. No H or C; this is a cryptanalytic result about one sign.
 (R4804) would give more than three concordant signs, at about USD 3-4 (two images, one login, crops). Until then, no. 19 stays
 too-short with no fitting key.
 
+
+## R9-SIENA15 -- no. 15 against key R4764, shape concordance (account 4 worker for LANE-RUN9-account-4, 6 Oct 2026, 05:43-05:5x UTC)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-SIENA15 (READ2-SIENA's "15:" next step). Status unchanged: `open`.
+
+**Route.** One headless DECODE login, `tools/decode_browser_login.js 4764 <scratch> --fetch <4 filesrv URLs> --max-files 4 --delay 1700`:
+R4764 P1 and P2 (2248x4000; P2 sha1 14be97b682e3..., P1 d3ce92595136...; not in images/manifest.json before this job) and R4803 P2/P6
+(**sha1s 71b6b062... and 0148d2e4... match images/manifest.json**). Saved RecordsView page deleted (account name). Images and crops stay
+in the scratchpad. Requests: de-crypt.org about 7 (login 2, RecordsView 1, images 4), 1.7 s apart, no challenge; github.com 1 sparse
+shallow clone of dbourdeau/cyphersolver `targets/siena1421` (HEAD adbf9a1, read only: NOTES.md, keys/R4764.txt, transcripts/no15*.txt).
+
+**Crop step (pasted):**
+
+    $ python3 tools/iiif_lines.py --image IMG_R4803_I27950_P2.jpg --out crops --region 60,1990,2150,600 --prefix p2 --max-width 1100 \
+        --overlap 100 --distance 45 --prominence 20 --ink 120 --smooth 3 --top-margin 20
+    ...(local): region 2150x600, 10 lines ... wrote 30 crops
+    $ python3 tools/iiif_lines.py --image IMG_R4803_I27950_P6.jpg --out crops --region 60,800,2150,560 --prefix p6 (same options)
+    ...(local): region 2150x560, 8 lines ... wrote 24 crops
+
+The line bands were viewed as two native-resolution half-width strips per page (the same regions, autocontrast). The key was viewed as
+four native crops of R4764 P2 (alphabet left half, alphabet right half, Doppie row, Nulle row; PIL crop, autocontrast). Vision looks: 9,
+by the worker itself, no subagents.
+
+**Transcript defect found (Bourdeau's files).** His `transcripts/no15.tok` omits L2.15's whole run (21 signs, "8 O2 DOT H LAM Q+ PSI TH
+DIV A OL ST 4 LAM M3 OO 4 R P U LV"; the run is plainly on the image at the end of the "prudentia loro" line and is in his own verified
+`no15v.txt`). `transcripts/no15.tok` in this folder is built from no15v.txt's ENTRIES instead: 232 sign tokens, clear text as breakers.
+
+**Concordance (`concordance_R4764_no15.tsv`, fixed before scoring).** The key sheet reads as Bourdeau's `keys/R4764.txt` gives it;
+no disagreement with his letter values was seen at native size. Primary set P: DOT=e, TH=i, D=t, LV=g, PSI=p, #=a, Y=a, P+=&, and
+no. 15's capitals read as the Doppie row's capitals (H=ff, A=bb, a=ll, Z=nn, E=qq, K=ss); nulls STAR, OO, 8, DIV, 4, 7. These cover
+71 + 27 of 232 tokens. **Most of no. 15's commonest signs have no counterpart on the sheet at all:** LAM, R, U, XT (10 each), O2 (8), 1,
+o, MM, TO, ST, RHO, OL... -- the key has no bullseye, no ⊔, no barred x, no capital R. Variant V adds 11 looser likenesses (A=a,
+Q+=u, P=&, LAM=g, U=n, TRI=b, 9=a, DF=t, O2=e; OO: and OI null; # null instead of a): 110 valued + 34 null tokens.
+
+**Test (PREREG-R9-SIENA15.md, pushed in cc19de4a4 before the scored run; `specs/cheap-tests/siena-concistoro-2308/run_test_no15.py`,
+`results_no15.json`, `--check` exit 0).** S2 = mean it16 bigram log10 probability over adjacent letters inside valued stretches
+(it16 = 16th-century Italian letters, era-matched to 1546-47). Controls: (a) 2000 value-shuffled keys, (b) 200 order-shuffled
+streams; both can move S2. Gate p_a <= 0.05 and real > p95(b). Positive control: 100 it16 passages enciphered under "R4764 is the
+key" at the target's own valued count; power < 0.8 means non-test.
+
+| variant | valued / null / 232 | S2 real | val-shuf mean (p95), p_a | ord-shuf mean (p95) | gate | power |
+|---|---|---|---|---|---|---|
+| P | 71 / 27 | -1.354 | -1.484 (-1.252), 0.267 | -1.402 (-1.285) | FAIL | 0.63 |
+| V | 110 / 34 | -1.508 | -1.529 (-1.331), 0.478 | -1.443 (-1.351) | FAIL | 0.96 |
+
+**Result.** P misses its gate at power 0.63: **a non-test at this N** (pre-registered), not a negative. V misses at power 0.96: a
+**control-backed negative for the V mapping** (V's real S2 sits below its own order-shuffled mean). Neither says R4764 is not
+no. 15's key: 134 (P) or 88 (V) of the 232 tokens are signs with no shape counterpart on the sheet, so no mapping of R4764 as drawn
+can be fitted to no. 15 by shape alone. Bourdeau's own verdict ("sign mapping inconclusive") stands, now with numbers.
+
+Implementation note (fixed before the reported run): the script's first run read the sign "#"'s two rows as comment lines (P then
+had 69 valued tokens, not the PREREG's 71); the parser was corrected to match the PREREG and only the corrected run is reported.
+
+**Post hoc, not in the PREREG (reported as such).** Under P, A=bb occurs 15 times and H=ff 8 times in 232 tokens; it16 has bb 1.3 and
+ff 0.9 per 1000 letters (expected under 0.5 each here). no. 15's capitals are therefore not R4764's Doppie signs at their written
+values. Taken with the missing ◎, ⊔, barred-x and R families, this points to no. 15 using a different (perhaps related) key from
+the one drawn on R4764 P2, or a later alphabet of the same style. One observation, no gate.
+
+Grades: no token read; no H or C. Nothing decoded as a reading and no key.tsv written.
+
+**Next step for no. 15 (suggestion, not run):** a shape pass over Bourdeau's second look R4765 ("Spagna, Imperador ..."; nulls
+5 8 7 2 # ◎ 4, shares ◎ and #) and the other 1540s orator keys of fasc. 1 for a sheet carrying ◎, ⊔, barred x and R, about USD 2-3 (one
+login, key-sheet crops only). If none has them, no. 15 stays too-short with no fitting key.
