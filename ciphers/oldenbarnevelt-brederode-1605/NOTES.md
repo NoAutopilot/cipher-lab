@@ -605,7 +605,7 @@ Next cheap step (named, not run): screen the in-window Palatine/Hessian DECODE k
 from their login-free RecordsView pages for a numeral nomenclator reaching the 700s, then open the best one or two images under
 one login; ~2-3 (estimate).
 
-## Palatine/Hessian DECODE keys screened (R8-OBRED2, 6 Oct 2026, 04:04-04:25 UTC)
+## Palatine/Hessian DECODE keys screened (R8-OBRED2, 6 Oct 2026, 04:04-04:24 UTC)
 
 Brief `.claude/briefs/runs/2026-10-06-account2-run8-jobs.md`, job R8-OBRED2 (the "While waiting" action). Table:
 `decode_keys_palatine_hessian.tsv` (122 rows, column `fit`). Candidates from the on-disk listing snapshot
