@@ -1250,7 +1250,7 @@ cipher word "would" which the length-only aligner paired with "Europe" (below).
 **Cipher/decipherment conflict (rule 4, by witness, not settled):** the p.120 cipher ends "had they arrived" and p.121 begins
 "would have amounted to rather more than your demand"; the period decipherment (p.134, Halifax copy, received 18 Jan 1780)
 reads "had they arrived would with the 650 Recruits and Artillery from Europe have amounted". Witnesses: cipher pp.120-121
-(Niagara copy, received 20 May 1780) omits the clause; decipherment p.134 has it; VHS Collections II (1871) p.192 not checked
+(Niagara copy, received 20 May 1780) omits the clause; decipherment p.134 has it; VHS Collections II (1871) p.192 checked R12-CLINVHS: print has the clause (follows the decipherment)
 for this phrase in this run. Whether the clause is in the p.122 P.S. is not known (p.122 not passed).
 
 **Grades (rule 4), the 445 cells against the decipherment:** C 406 (key-consistent compared cells under the pre-registered
@@ -1320,7 +1320,7 @@ slip (not tested); 1-1 for n in "in [the Chesapeak]" (b); 4-1 for e in "have" (l
 slip: 6-6 (a, clear) in "Chesipeak" -- the cipher spells "Chesapeak", the decipherment "Chesipeak" (below).
 
 **Cipher/decipherment conflicts (rule 4, by witness, not settled).** Witnesses: cipher p.122 (Niagara copy, received 20 May 1780);
-decipherment p.134-135 (Halifax copy, received 18 Jan 1780); VHS Collections II (1871) p.192 not checked in this run.
+decipherment p.134-135 (Halifax copy, received 18 Jan 1780); VHS Collections II (1871) p.192 checked R12-CLINVHS: "move" and "Chesapeake" follow the cipher.
 (1) "Southern movements": the cipher has `1-6 1-10 9-15 1-4|` "move", underlined, the next cell starting "while"; the decipherment
 has "movements". (2) "Chesapeak" (cipher) vs "Chesipeak" (decipherment). (3) Word division only, no text difference: the cipher
 writes "in favor" as one word (no underline under c3's last 1-11 or before c4's 5-2) and "of" as two (1-12| 1-13|).
@@ -1345,3 +1345,30 @@ one six-column contact sheet and two native-resolution montages. Status unchange
   files); a later session that touches it should drop the bar at c4.6 and rerun `check_2380_p122.py`.
 - Confirmed by eye: "move" (cipher) vs "movements" (decipherment), "Chesapeak" vs "Chesipeak", and the P.S. without the
   Recruits-from-Europe clause. Blind pass alone scores the same 242/252 (no cell changed at reconciliation).
+
+## R12-CLINVHS (6 Oct 2026, 11:2x-11:4x UTC by date -u): the 2380 witness conflicts against VHS Collections II (1871) p.192
+
+Witness record only (rule 4: no majority vote; key, readings and grades unchanged). Source: archive.org `collectionsofver02vermuoft`
+djvu text (OCR; excerpt in `passes/vhs2_2380_print.txt`; not a page image, the OCR of these lines is clean). The print: "H. -- Sir Henry
+Clinton to General Haldimand. Intelligence. 27th October, [1781.]", p.192, the letter running from "As for affairs at Cornwallis' army"
+to "I have received your dispatches by the Defiance." and then the next entry, "Oct. 27. Col. Walbridge wrote ...". The print has no
+postscript. Per conflict:
+1. **"with the 650 Recruits and Artillery from Europe" (p.121 cipher omits, p.134 decipherment has it):** the print follows the decipherment:
+   "which, had they arrived, would, with the 650 recruits and artillery from Europe, have amounted to rather more than your demand".
+2. **"with us I a[m]" / "with us, disappointed" (p.120):** the print follows the cipher: "still the clamors of their own officers
+   prisoners with us. I am disappointed in my expectations of a re-inforcement from the West Indies." (sentence break after "us",
+   then "I am"); the decipherment p.134 omits "I am".
+3. **"move" / "movements" (p.122):** the print follows the cipher: "operate in favor of the southern move, while a considerable fleet ...".
+4. **"Chesapeak" / "Chesipeak" (p.122):** the print spells "Chesapeake", agreeing with the cipher's a (the cipher stops at "-peak"; the
+   decipherment's i has no support in the print).
+5. Word division "in favor of" (no text difference): the print has "in favor of" (OCR "favor" in one word; "of" one word), i.e. the
+   one-word reading of "of" the verifier R11-CLINV5 found on p.122.
+6. Postscript on p.122: the print carries none, so it neither supports nor contradicts the cipher's P.S.
+Both witnesses are therefore split: the print follows the decipherment on 1 and the cipher on 2, 3 and 4; the print is a third copy
+(Vermont's MS transcript, misdated 27 Oct 1781) and is a witness, not a key source. Requests: archive.org 2 (one 302 + one 200 for the same
+djvu file, 1.67 MB); no page image fetched.
+
+**p.122 bar correction (asked by R11-CLINV5, ROOM 10:20 UTC):** `passes/p122_reconciled.tsv` c4.6 entry 1-12| -> 1-12 (no underline; "of" is one
+cipher word, 1-13| ends it). Rerun `check_2380_p122.py` (exit 0), `--check` OK: cipher words 59 -> 58, compared cells 252 -> 254,
+(b) gated line-1 variant 242 -> 244/254 (0.961), (c) 249, (d) 249; shuffled-plaintext control (b) mean 18.06, p95 25, max 32; gate PASS
+(same as the verifier's 244/254). 5 mismatches, 7 apart, 1 unpaired (was 9 apart, 0 unpaired).

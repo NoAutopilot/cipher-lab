@@ -1,7 +1,7 @@
 {
  "source": "H-1649 Image 760 (B.147 p.122) full/max, columns cut by cut_2380_p121_122.py (SHEAR 0.025, PAD 30)",
  "cells_read": 292,
- "cipher_words": 59,
+ "cipher_words": 58,
  "decipherment_words_from": 180,
  "first_decipherment_words": [
   "no",
@@ -10,31 +10,31 @@
   "i"
  ],
  "decipherment_words_available": 59,
- "compared_cells": 252,
+ "compared_cells": 254,
  "a_printed_page": 180,
- "b_line1_variant_GATED": 242,
- "c_plus_line9_OFICERS": 247,
- "d_plus_doubled_figures": 247,
- "share_b": 0.96,
+ "b_line1_variant_GATED": 244,
+ "c_plus_line9_OFICERS": 249,
+ "d_plus_doubled_figures": 249,
+ "share_b": 0.961,
  "share_c": 0.98,
  "share_d": 0.98,
  "control": {
   "b": {
    "seeds": 1000,
-   "mean": 18.05,
+   "mean": 18.06,
    "p95": 25,
    "max": 32
   },
   "c": {
    "seeds": 1000,
    "mean": 17.39,
-   "p95": 24,
+   "p95": 25,
    "max": 31
   },
   "d": {
    "seeds": 1000,
    "mean": 17.39,
-   "p95": 24,
+   "p95": 25,
    "max": 31
   }
  },
@@ -116,7 +116,7 @@
    "page_letters_d": "will"
   },
   {
-   "decipherment_word": "in",
+   "decipherment_word": "favor",
    "cells": [
     "1-7",
     "1-11",
@@ -127,20 +127,6 @@
     "1-5"
    ],
    "page_letters_d": "infavor"
-  },
-  {
-   "decipherment_word": "favor",
-   "cells": [
-    "1-12"
-   ],
-   "page_letters_d": "o"
-  },
-  {
-   "decipherment_word": "of",
-   "cells": [
-    "1-13"
-   ],
-   "page_letters_d": "f"
   },
   {
    "decipherment_word": "movements",
@@ -179,7 +165,11 @@
    "page_letters_d": "cooperate"
   }
  ],
- "unpaired": [],
+ "unpaired": [
+  {
+   "decipherment_word_without_cipher": "in"
+  }
+ ],
  "alignment": [
   [
    "1-11 1-10",
@@ -310,15 +300,15 @@
    "operate"
   ],
   [
-   "1-7 1-11 5-2 6-6 9-15 1-10 1-5",
+   null,
    "in"
   ],
   [
-   "1-12",
+   "1-7 1-11 5-2 6-6 9-15 1-10 1-5",
    "favor"
   ],
   [
-   "1-13",
+   "1-12 1-13",
    "of"
   ],
   [

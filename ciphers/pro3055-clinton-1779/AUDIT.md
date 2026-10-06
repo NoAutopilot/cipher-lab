@@ -629,3 +629,8 @@ text `known` (VHS Collections vol. II, 1871, p.192). Depth fields unchanged.
    conclusion unchanged. The worker's files are left as committed; written as a correction section in NOTES.md. Conflicts carried
    forward by witness: Recruits-from-Europe clause (p.121), "I a[m]" (p.120), "move", "Chesapeak" -- three text differences plus
    the "infavor" division. Requests: image-uab.canadiana.ca 1 (200). No subagent calls.
+
+**Witness note (R12-CLINVHS, 6 Oct 2026; appended, no class or sentence changed).** The four 2380 cipher/decipherment conflicts checked against VHS
+Collections II (1871) p.192 (OCR of `collectionsofver02vermuoft`): the print has the "650 recruits and artillery from Europe" clause (follows
+the p.134 decipherment); it reads "with us. I am disappointed", "the southern move" and "Chesapeake" (follows the cipher); it has no postscript.
+Detail in NOTES.md "R12-CLINVHS". Also p.122 c4.6 bar dropped as R11-CLINV5 asked: gated count 244/254, control max 32, PASS.

@@ -168,7 +168,7 @@ c4	2	6-6	6-6
 c4	3	9-15	9-15	
 c4	4	1-10	1-10	
 c4	5	1-5|	1-5|	
-c4	6	1-12|	1-12|	underlined, and 1-13 underlined: "of" written as two cipher words
+c4	6	1-12|	1-12	R12-CLINVHS 6 Oct 2026: bar dropped (verifier R11-CLINV5: no underline under 1-12); 1-13| ends the word, so "of" is one cipher word
 c4	7	1-13|	1-13|	
 c4	8	1-14	1-14	
 c4	9	1-15	1-15	
