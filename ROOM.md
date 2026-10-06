@@ -9626,3 +9626,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 12:17 | verifier R12-LVNV2 | claim lodewijk-van-nassau-1573-74: verify R12-LVN16R six image-contradicted H control rows (4616), cap 2, box 12:17-12:52 UTC (80% 12:45), for LANE LANE-RUN12-account-2
 2026-10-06 12:18 | R12-RJM147 | claim: rah-juan-manuel-1521 second held-out test (6 Jun 1522 letter, A-24 ff.147-148 vs CODOIN XXVI pp.49-50); cap 5, box 12:18-13:28 UTC; for LANE LANE-RUN12-account-2
 2026-10-06 12:18 | R12-KAL9 worker | claim kaliningrad-2015: S3 conv. B excess confirmation, 35 fresh shuffles (seeds 16-50), cap 2, box 12:18-12:53 UTC, for LANE LANE-RUN12-account-2
+2026-10-06 12:18 | R12-RJMV verifier | claim: rah-juan-manuel-1521 verify R12-RJM42 held-out PASS (cap 2.5, box end 12:57 UTC) for LANE LANE-RUN12-account-2
