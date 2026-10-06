@@ -10013,3 +10013,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 18:06 | R13-UNTOP | claim untersberg-code: opening-27 painted inscription blind 2-pass transcription, cap 4.5, box to 19:06 UTC (80% 18:54), for LANE LANE-RUN13-account-4
 2026-10-06 18:06 | R13-SIENA719 worker | claim siena-concistoro-2308: pooled no.7+no.19 homophonic+nomenclator family run, cap 3, box 18:06-18:56 UTC (80% 18:46), for LANE LANE-RUN13-account-4
 2026-10-06 18:06 | R12A-BALS worker | claim baluze167-davaux-1637: sign sorter for the 170 f.228 hand (no decode); cap 3, box 18:05-18:55 UTC; for LANE LANE-RUN12-account-1
+2026-10-06 18:07 | R13-MANT85 worker | claim sachsstaatsarchiv-manteuffel-1712: frame 694/09 0085 transcription + per-leaf gloss gate; cap 5, box 18:06-19:16 UTC (80% at 19:02); for LANE LANE-RUN13-account-4
