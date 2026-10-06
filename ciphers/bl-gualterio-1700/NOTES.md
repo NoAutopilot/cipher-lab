@@ -228,3 +228,16 @@ Re-read of the verdict and premise check above, with no new search (both were co
 ## While waiting
 
 - Fetch Add MS 20582 (the cardinal's key book) scope text and the Stuart Papers calendar entries for the Vernon group from the BL catalogue JSON already on disk (`bl_catalogue_2026-10-03.tsv`) and list which correspondents have a period key named; depends on nobody (~USD 0.5).
+
+## D4-GUALT (6 Oct 2026, worker for LANE DEFAULT-account-4-20261006-1235)
+
+Job: Add MS 20582 scope text and the Vernon-group Stuart Papers calendar entries, from disk. Search result only; status stays `open`.
+
+- **Disk row truncated.** `bl_catalogue_2026-10-03.tsv` carries only 677 characters of the 20582 scope (ends at "Gergy ... f. 33 b, 35"), so the Vernon entry (f. 74 b) was not on disk. One request to `searcharchives.bl.uk/catalog/040-002090908.json` (HTTP 200) returned the full 1,777-character text. Request count: searcharchives.bl.uk 1.
+- **Result:** `gualterio_20582_keylist_2026-10-06.tsv`, 34 key-table entries by folio (ff. 3 b to 85 b, last two "Uncertain"). Against our 14 volume groups:
+  - Named in the key book (4 firm): Acquaviva f. 3 b (20416-20420), Amelot f. 5 b (20365-20366), **Comte de Vernon f. 74 b (20554-20556)**, Villamayor f. 78 (20570-20571).
+  - Possible, unconfirmed (3): "Cardinal Bentivoglio" f. 11 b (ours is Marquis Luigi Bentivoglio, 20510-20511); "Chevalier du Bourck" f. 15 b (ours is du Bourg, 20335); "Cardinale della Trimoille" f. 69 b (our 20329 is Gualterio's drafts *to* Trémoille, so the key may be the same but the item is not a correspondent's letters). The 3 Oct section named five, so du Bourg and Trémoille are additions from this read.
+  - Not in the list: Torcy, Pomponne, Cavaillon, Tamisier, Albicini, Ottoboni, Simonetti, Balbases, Furietti (20681), and the 20244/20387/20620/20634 items.
+  - The record gives only folios and names. No key content, no dates for the tables beyond Cennini's addition of 29 Oct 1723, no images online (BL not serving manuscript images since 2023).
+- **Vernon in the BL record 20554-20556:** Count F. de Vernon, Sardinian Minister in France 1719-1723, to Gualterio, 31 Jan. 1713-15 Jan. 1727, Italian, "many in cipher", with a few letters of his wife and two of his brother (Turin, 7 Aug. 1726 and 12 Feb. 1727, end of vol. III). The record names no decipherings, consistent with his key being at 20582 f. 74 b.
+- **Stuart Papers calendar entries for the Vernon group: not found on disk, not fetched.** Nothing in this folder or `sources/` holds a HMC Stuart Papers entry for Vernon; the only HMC reading on file is vol. I pp. lxi-lxii and p. 345 (above), which names no individual shelfmark. The brief limits fetches to the BL catalogue JSON, so the calendar volumes (archive.org `calendarofstuart01grea` and later volumes, 7 in all) were not searched. Next step if wanted: grep the `_djvu.txt` of the seven volumes for "Vernon" (IA full text, ~7 requests, ~USD 0.5), a separate job.
