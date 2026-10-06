@@ -88,3 +88,25 @@ numbers; no transcription in this job. Update Remaining gaps / Escalation / Verd
 
 Wave 1 sessions (07:20 UTC): R10-ROELL9 session_01Cagb6db2peK3oexuGJkRyQ; R10-SUR session_01Nt4mHFoFvhGfhLCgCS3TL8; R10-OBREDV
 session_0193bQtSBPEJ81F2fQ8Q43R7; R10-OBRED98 session_01JQLminjbY4FrRFVuk7J2EC; R10-JANS26 session_01C9XxTVekJp3AQYSZCSp5pr.
+
+## Wave 2 (written 07:2x UTC 6 Oct, spawned at the first check-in with free slots)
+
+### R10-KAL7 -- kaliningrad-2015, a judge statistic the shuffle control can separate (cap 3, box 60 min; disk and CPU only)
+Intake gate: `kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES "Next steps" (R9-KAL6): ru19_soft cannot tell this target's two-stage decode from its shuffle at N 978 (-1.733 vs -1.765). Named
+different instrument: a word-segmentation rate of the decode against a Russian lexicon (built from tools/data/ru19*, held out from any
+corpus the decoder used), with the decode of the *shuffled* target through the same family as its control. Pre-register (PREREG committed
+before scoring): the statistic, the lexicon, the gate (target above the shuffled-decode p95 over >= 20 shuffles), and a positive control
+first -- a synthetic of this target's N, K and design in Russian through the same two-stage decoder must clear the gate (if it does not,
+CONTROL BELOW GATE: stop, log non-test). Check the CLAUDE.md rule-3 clause: the shuffle control must be able to differ on this statistic.
+Both numbers to HYPOTHESES.md (tools/family_run.py if it supports the option; otherwise the same row shape). This is the second instrument
+on the S3' design; record it as such. No reading claimed beyond what the gate licenses.
+
+### R10-CLIN3868 -- pro3055-clinton-1779, 3868 cipher columns vs its read decipherment (cap 5, box 75 min)
+Intake gate: `pro3055-clinton-1779: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict's cheapest next: the cell-by-cell check of the 3868 cipher columns 3-6 of p.382 and pp.383-384 (LAC reel H-1649 Images 1031-1032)
+against its read decipherment, on the 1778 book key. Plan: 3 page units; crops via tools/iiif_lines.py --image (paste the command), one
+blind Sonnet pass per page on crops (~1.5 each) + one reconciliation unit = ~6, so work p.382 cols 3-6 first, then 383, and stop before a
+unit that would cross 80% of cap or box. Apply the key with the folder's existing scripts; report per-cell agreement with the decipherment
+(grade H for key-consistent cells), any cell where the encipherer erred (Tomokiyo notes -1 letter-position slips on 2380), and update gap
+3 / Verdict. Keep images/h1649 under 30 MB (crops to scratchpad unless cited).
