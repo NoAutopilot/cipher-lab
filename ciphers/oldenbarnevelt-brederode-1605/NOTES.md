@@ -553,7 +553,7 @@ Next cheap test: file the drafted OLD-DKEY LOCAL-QUEUE row (above): the owner's 
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody (6 Oct 2026, R8-OBRED): screen the in-window Palatine/Hessian DECODE keys (Munich BayHStA 102, Marburg HStAM 20) from their public RecordsView pages for a numeral nomenclator reaching the 700s; ~2-3 (estimate).
+- [done 6 Oct 2026, R8-OBRED2: 122 records screened, none shown to fit, 89 numeral-tagged left unread at full size; see the section at the end] Action that depended on nobody (6 Oct 2026, R8-OBRED): screen the in-window Palatine/Hessian DECODE keys (Munich BayHStA 102, Marburg HStAM 20) from their public RecordsView pages for a numeral nomenclator reaching the 700s; ~2-3 (estimate).
 - [done 6 Oct 2026, R8-OBRED: record 2118 is a 1620 Levant key for Cornelis Haga, codes 1-116, does not fit; see the section below] Action that depended on nobody: open DECODE record 2118 (NA 1.01.02 inv. 6894, States-General key, "1620 -") ourselves -- RecordsView pages are public (N6-HEL81, 4 Oct 2026) and a full-size image has been served after one browser login (A2-HDK, 2 Oct 2026) -- and say whether it maps names to Arabic numerals in the 30-741 range; image to scratch, never committed; ~$1 (estimate). This replaces waiting on the drafted OLD-DKEY LOCAL-QUEUE row unless the image is refused.
 
 ## DECODE record 2118 opened (R8-OBRED, 6 Oct 2026, 03:37-03:39 UTC)
@@ -604,3 +604,47 @@ and the NA 1.01.02 / 3.01.14 archive hunts of "Key hunt". Status stays `open`.
 Next cheap step (named, not run): screen the in-window Palatine/Hessian DECODE key records (Munich BayHStA 102, Marburg HStAM 20)
 from their login-free RecordsView pages for a numeral nomenclator reaching the 700s, then open the best one or two images under
 one login; ~2-3 (estimate).
+
+## Palatine/Hessian DECODE keys screened (R8-OBRED2, 6 Oct 2026, 04:04-04:25 UTC)
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run8-jobs.md`, job R8-OBRED2 (the "While waiting" action). Table:
+`decode_keys_palatine_hessian.tsv` (122 rows, column `fit`). Candidates from the on-disk listing snapshot
+(`sources/decode/keys-all-2026-09-28-merged.tsv`), date range touching 1595-1615: **Munich BayHStA 102** -- all one bundle,
+Kurbayern Aeusseres Archiv 4591 (records 9277-9423), every one carrying the bundle's blanket date "1475 - 1625", not an
+item date; **Marburg HStAM 20** -- Bestand 4 d Nr. 1219 (records 4578-4593, "1600 -") and Nr. 1234 (4687-4691, "1600 - 1699").
+(The snapshot spells Muenchen in double-encoded UTF-8; a filter on the city name alone misses all 102 rows -- match on
+"Bavaria"/`BayHStA` instead.)
+
+Method: every record's public RecordsView page (login-free) for cipher type, symbol sets, pages and the author field; the
+public 200 px thumbnails of the 90 records tagged both Nomenclatures and Numerical (272 thumbnails, viewed as contact
+sheets); one browser login for one record's full-size images (4690, the Marburg bundle with visibly numeral name columns).
+Images in the session scratchpad only, never committed.
+
+Results:
+- **20 records: no numerals** in DECODE's own symbol-set metadata (M: catalogue tagging, not read) -> cannot carry this
+  letter's numeral groups.
+- **4690 (HStAM 4 d Nr. 1234_03), read at full size (H for the rows quoted):** the right design family -- a homophonic numeral
+  letter alphabet (20 a, 21 f, 22 b ... 157) plus a numeral nomenclator in the 300s (300 Kayser, 301 Chur Sachsen,
+  302 Churbrandenburg, 303 Churcoelln, 304 Bischof zu Muenster, 305 Bischof zu Paderborn, 306 Koenig in Schweden, 307 Koenig
+  in Dennemarck, 308 Herzog Georg Wilhelm zu Braunschweig; then French words 328 Capitaine, 329 Armee, 330 Alliance ...
+  339 Conjunction) -- but **out of window**: Georg Wilhelm of Brunswick-Lueneburg was born 1624, and the French military
+  vocabulary fits the later 17th century, so not a 1605 key. No fit test.
+- **89 numeral-tagged records: fit unknown.** At 200 px the code columns cannot be read. What the thumbnails do show: the
+  Munich bundle is overwhelmingly graphic-sign alphabets and name lists keyed to signs, with Italian cover titles ("Con
+  Franza", "Con Loreno", "Col Card. de Medici", "Del Ungero", "Con M. Pandolpho da la Staffa", "Duca di Terranova",
+  "Vergerio", "Aurelio Augurelio") -- 16th-century Bavarian-Italian correspondence, a weak prior for a 1605 Dutch-language
+  Palatine letter. A right-hand code column that may be numerals is present but unresolved in 9280, 9282, 9305, 9306, 9308
+  (Munich, German name lists) and 4587, 4691 (Marburg).
+- **No record shown to fit.** Rule 10: a screening of DECODE catalogue metadata and thumbnails on 6 Oct 2026, not a key
+  verdict and not evidence that no fitting key exists.
+
+Requests: de-crypt.org 122 RecordsView pages + 273 thumbnails (login-free, 1.6 s apart, descriptive UA) + 1 browser login
+session (record page + 4 files, 1.7 s apart); no 403/429/challenge.
+
+Status stays `open`.
+
+Next cheap step (named, not run): one browser login, full-size images of the Marburg HStAM 4 d Nr. 1219 numeral-tagged
+records (4578, 4579, 4581-4584, 4586, 4587, 4589-4593; about 20 images; Hessen-Kassel under Landgrave Moritz, 1592-1627, is
+the in-window Hessian chancery) plus Munich 9280/9282/9305/9306/9308, reading only the code column's range and the item
+date; ~3 (estimate). Pre-register a fit test only for a key whose names reach the 700s and whose date touches 1605.
+
