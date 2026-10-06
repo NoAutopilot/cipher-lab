@@ -273,7 +273,7 @@ Requests: services.dnb.de 1, www.wallstein-verlag.de 2, wallstein-open-library.d
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: fetch the 8 Arcinsys images of NLA BU L 1 Nr. 548/562 into images/ with a manifest and look at what the cipher is (R8-NLA, 6 Oct 2026, found both digitised and free), ~$0.5 (estimate). (Done: GAPS129 step (3), the Arcinsys re-test, R8-NLA.) The Bei der Wieden / Bohnenkamp read is a library or purchase read (about EUR 28, the owner decides).
+- Action that depends on nobody: check the 1858/1860 archival decipherment found in both files (R8-NLA2, 6 Oct 2026): transcribe the numeral groups on line crops, apply the sheets' keys, diff against the sheets' word lists, ~$4.5 (estimate). (Done: the 8-image fetch with manifest, R8-NLA2.) (Done: GAPS129 step (3), the Arcinsys re-test, R8-NLA.) The Bei der Wieden / Bohnenkamp read is a library or purchase read (about EUR 28, the owner decides).
 
 ## R8-NLA: Arcinsys Niedersachsen re-test (6 Oct 2026, account 2, LANE-RUN8)
 
@@ -309,3 +309,41 @@ Requests: www.arcinsys.niedersachsen.de 6 by curl (2 reset), 4 by the browser to
 
 **Next (one line, not run):** fetch the 8 images into `images/` with `images/manifest.json` (~$0.5), then a premise look at
 images 2-4 / 1-4 to see what the cipher is (letter cipher, nomenclator, how many signs) before any transcription brief.
+
+## R8-NLA2: the 8 Arcinsys images fetched and looked at (6 Oct 2026, account 2, LANE-RUN8)
+
+Run 04:05-04:08 UTC by `date -u`. All 8 images fetched once, 2 s apart, HTTP 200 image/jpeg each, 14 MB total, kept at
+native size (3276 px wide, film-derived scans) in `images/` with `images/manifest.json` (URL, bytes, size, sha1). Look by
+eye at a reduced copy, then native-resolution crops of the key sheets and the address panel (scratch, not committed).
+
+**Main finding: both files carry a 19th-century archival key and decipherment.** Each file opens with an archivist's
+sheet that gives a numeral-to-letter key table and lists the deciphered words. This is a premise fact for the whole target:
+the cipher was read in the archive in 1858/1860, and the reading sits in the same file. Not checked here whether any of
+this was printed (left for a check-solved / verifier pass; no novelty or status call is made in this job).
+
+| Image | Folio (stamped) | Content |
+|---|---|---|
+| 548/1 | 267 | blank left page; wrapper "Herzog Heinrich d. J. an Gräfin Anna 1519" (R8-NLA) |
+| 548/2 | 268 | archivist's sheet: "Zwei Briefe des Herzogs Heinrich des Jüngeren zu Br.-L. 1519. Der Schlüssel zu der Geheimschrift in diesen beiden Briefen ist folgender:" -- table 1 n, 2 e, 3 a, 4 i, 5 r, 6 t, 7 u (v), 8 h, 9 s, 10 b, 11 c, 12 f (or long s; letter form to be checked), 13 k, 14 g, 15 m, 16 o, 17 d, 18 l, 19 (blank), 20 z; signed and dated "Dr. Grein 28/2 1860" (name as read). Then "Die betreffenden Worte lauten also: 1) in dem Brief an die Gräfin Anna: Rete; in; fulmechtig; selbest; kommen; kommen; Herren; Naheit; bliben; Beslisse (i.e. Beschlüsse); mit; euch; allen; zu; handelen; Vortrechte; zu; machen. 2) in dem Brief an den Droste[n?]: jo; mit; heren; der; rede; fulmechtig; kome; starck; se; to; uelde; komen; kunnen; Hoische; fulmacht; stede." (19th-century German hand; words as read from the sheet, not checked against the cipher) |
+| 548/3 | 269r | the 1519 letter (to Countess Anna), recto: one page, about 27 lines, Low German cursive (contemporary hand) with the cipher groups in-line in about 10 of the lines: dotted numerals separated by slashes, e.g. "5·2·6·2" (= R-e-t-e by the sheet's key, matching its first word), so a monoalphabetic numeral substitution for single words inside clear text, not a whole-letter cipher; autograph-looking closing lines and subscription at foot |
+| 548/4 | 269v / 270 | verso of the same letter with address panel (upside down), read as "[E]delen frawe Anne grevin to Schauenborg ... unser leven gefatterin ... to handen" (Countess Anna of [Holstein-]Schaumburg; reading M, not checked further) -- would account for the Bückeburg provenance; right page 270 blank |
+| 562/1 | 54 | archivist's wrapper: "K. Schepper an ? betr. Nachricht aus Trier über die Absichten (Hz. Heinrichs d. M. zu Br.-L.) auf Wiederantritt der Regierung. 8 Aug. 1522 (Or. mit Chiffren.)" -- i.e. not a letter of Heinrich himself, per the wrapper |
+| 562/2 | 55 | archivist's sheet "8. August 1522. Der Schlüssel zu der in diesem Brief vorkommenden Geheimschrift ist folgender:" -- table 1 g, 3 h, 4 (or 7, corrected) c, 8 d, 9 a, 10 e, 11 r, 12 s, 13 p, 14 (or 17, corrected) o, 15 n, 16 l, 18 m, 19 u/v, 21 t, 5 i; signed "Dr. Grein 2/10 1858"; words: "regimente, sonen, sone, vorlatinge, regimentes, reden, landtschop, land, vorlassinge, regimentes, landen, luden." Left page: a later pencil/ink note (mirror-image bleed of a docket "... Wiederannahme des Regiments ... 1522"). A different key from the 1519 one. |
+| 562/3 | 56 | the letter, recto: about 30 lines, Low German cursive, numeral groups in-line in about 8 lines (same dotted-numeral-and-slash style), marginal note at left with numerals (a contemporary or later gloss, not read); dated "Trier ... am Freitage ... 8 tages Augusti anno 1522", signed (abbreviated, as read "Hi[eronymus?] Schepp[er]", M) |
+| 562/4 | 57 | verso / second leaf: about 8 lines clear text, a heavily bled-through lower half, and an address/docket panel; no cipher groups seen at this size |
+
+Per letter: Nr. 548 holds one cipher letter in these 4 images (to Countess Anna); the archivist's sheet speaks of two
+letters, and the second (to "den Drosten"?) is not among the 4 Nutzungsdigitalisat images -- either elsewhere in Bd. 1
+(I Ca 30) or not filmed under this signature; not established. Nr. 562 holds one cipher letter (Trier, 8 Aug 1522).
+Hands: both letters in contemporary German cursive (Low German forms: to, jo, leven); both key sheets in one 19th-century
+archivist's hand (same signature, 1858 and 1860).
+
+Requests: www.arcinsys-digitalisate.niedersachsen.de 8 (all 200). No other host.
+
+**Next step (not run):** a check of the archivist's decipherment rather than a fresh one -- transcribe the numeral groups
+only (about 18 + 12 groups, ~10 + ~8 lines; one blind Sonnet pass on line crops per letter plus a reconciliation, about
+3 units at ~1.5 each, so ~4.5; the crop step `tools/iiif_lines.py --image images/nla_bu_l1_548_aufn_0003.jpg --out
+images/crops` first), apply each sheet's key with `tools/decode_key.py`, and diff against the sheet's word lists (grade
+H for every group the sheet's key reads). Before that, a check-solved / verifier pass should decide what the 1858/1860
+archival decipherment means for this target's status (rule 5 has `found-solved`; that call is not this job's), and
+whether Grein's readings were printed (e.g. in a Schaumburg or Braunschweig historical-society journal).
