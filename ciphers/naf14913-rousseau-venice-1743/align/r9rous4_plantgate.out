@@ -1,0 +1,87 @@
+# sizes groups [84, 79, 111, 171] slip tokens [57, 52, 72, 102] draws 2000; protected codes 16
+CAND	605=republique	code (2, 1, 2, 2) word (2, 1, 2, 2)	MATCH True UNIQUE True	p_s 0.0360 p_g 0.0340	recovered	class size 45 (totals 6-8)
+plant	605	0	vec (2, 2, 2, 1)	MATCH True UNIQUE True 	p_s 0.0220 p_g 0.0180	REC
+plant	605	1	vec (2, 1, 3, 1)	MATCH True UNIQUE True 	p_s 0.0170 p_g 0.0220	REC
+plant	605	2	vec (1, 2, 1, 2)	MATCH True UNIQUE True 	p_s 0.0395 p_g 0.0400	REC
+plant	605	3	vec (2, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0300 p_g 0.0305	REC
+plant	605	4	vec (2, 2, 1, 2)	MATCH True UNIQUE True 	p_s 0.0290 p_g 0.0325	REC
+plant	605	5	vec (3, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0215 p_g 0.0205	REC
+plant	605	6	vec (3, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0145 p_g 0.0130	REC
+plant	605	7	vec (2, 1, 2, 3)	MATCH True UNIQUE True 	p_s 0.0355 p_g 0.0365	REC
+plant	605	8	vec (1, 1, 1, 3)	MATCH True UNIQUE True 	p_s 0.0555 p_g 0.0600	-
+plant	605	9	vec (2, 3, 1, 2)	MATCH True UNIQUE True 	p_s 0.0140 p_g 0.0120	REC
+plant	605	10	vec (1, 2, 1, 2)	MATCH True UNIQUE True 	p_s 0.0435 p_g 0.0360	REC
+plant	605	11	vec (1, 2, 3, 1)	MATCH True UNIQUE True 	p_s 0.0165 p_g 0.0165	REC
+plant	605	12	vec (2, 1, 2, 2)	MATCH True UNIQUE False ['605', '9999']	p_s 0.0390 p_g 0.0425	-
+plant	605	13	vec (3, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0180 p_g 0.0080	REC
+plant	605	14	vec (2, 3, 1, 2)	MATCH True UNIQUE True 	p_s 0.0135 p_g 0.0120	REC
+plant	605	15	vec (3, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0175 p_g 0.0185	REC
+plant	605	16	vec (3, 1, 1, 3)	MATCH True UNIQUE True 	p_s 0.0185 p_g 0.0175	REC
+plant	605	17	vec (1, 1, 3, 1)	MATCH True UNIQUE True 	p_s 0.0305 p_g 0.0245	REC
+plant	605	18	vec (3, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0245 p_g 0.0180	REC
+plant	605	19	vec (3, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0170 p_g 0.0105	REC
+plant	605	20	vec (2, 1, 1, 3)	MATCH True UNIQUE True 	p_s 0.0410 p_g 0.0370	REC
+plant	605	21	vec (1, 2, 3, 2)	MATCH True UNIQUE True 	p_s 0.0250 p_g 0.0240	REC
+plant	605	22	vec (1, 3, 1, 3)	MATCH True UNIQUE True 	p_s 0.0165 p_g 0.0155	REC
+plant	605	23	vec (2, 1, 1, 3)	MATCH True UNIQUE True 	p_s 0.0395 p_g 0.0425	REC
+plant	605	24	vec (2, 1, 1, 3)	MATCH True UNIQUE True 	p_s 0.0370 p_g 0.0440	REC
+plant	605	25	vec (2, 2, 2, 1)	MATCH True UNIQUE True 	p_s 0.0175 p_g 0.0175	REC
+plant	605	26	vec (1, 3, 1, 1)	MATCH True UNIQUE True 	p_s 0.0105 p_g 0.0100	REC
+plant	605	27	vec (2, 3, 2, 1)	MATCH True UNIQUE True 	p_s 0.0080 p_g 0.0105	REC
+plant	605	28	vec (2, 3, 2, 1)	MATCH True UNIQUE True 	p_s 0.0130 p_g 0.0085	REC
+plant	605	29	vec (2, 1, 3, 2)	MATCH True UNIQUE True 	p_s 0.0295 p_g 0.0215	REC
+plant	605	30	vec (1, 1, 1, 3)	MATCH True UNIQUE True 	p_s 0.0640 p_g 0.0575	-
+plant	605	31	vec (2, 3, 1, 2)	MATCH True UNIQUE True 	p_s 0.0215 p_g 0.0130	REC
+plant	605	32	vec (1, 2, 3, 1)	MATCH True UNIQUE True 	p_s 0.0195 p_g 0.0165	REC
+plant	605	33	vec (3, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0175 p_g 0.0150	REC
+plant	605	34	vec (1, 2, 3, 2)	MATCH True UNIQUE True 	p_s 0.0230 p_g 0.0235	REC
+plant	605	35	vec (1, 2, 3, 1)	MATCH True UNIQUE True 	p_s 0.0135 p_g 0.0200	REC
+plant	605	36	vec (1, 1, 3, 2)	MATCH True UNIQUE True 	p_s 0.0345 p_g 0.0350	REC
+plant	605	37	vec (2, 3, 1, 1)	MATCH True UNIQUE True 	p_s 0.0120 p_g 0.0080	REC
+plant	605	38	vec (2, 3, 1, 2)	MATCH True UNIQUE True 	p_s 0.0160 p_g 0.0135	REC
+plant	605	39	vec (1, 3, 1, 1)	MATCH True UNIQUE True 	p_s 0.0180 p_g 0.0115	REC
+LICENCE	605=republique	planted recovered 37/40 (need 32) -> MET
+VERDICT	605=republique	PASS	candidate p_s 0.0360 p_g 0.0340; class recovery 37/40
+CAND	739=venise	code (1, 1, 1, 1) word (1, 1, 1, 1)	MATCH True UNIQUE True	p_s 0.0845 p_g 0.0785	not recovered	class size 5 (totals 4-5)
+plant	739	0	vec (1, 2, 1, 1)	MATCH True UNIQUE True 	p_s 0.0430 p_g 0.0415	REC
+plant	739	1	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0840 p_g 0.0780	-
+plant	739	2	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0870 p_g 0.0705	-
+plant	739	3	vec (2, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0445 p_g 0.0395	REC
+plant	739	4	vec (1, 2, 1, 1)	MATCH True UNIQUE True 	p_s 0.0410 p_g 0.0330	REC
+plant	739	5	vec (2, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0435 p_g 0.0425	REC
+plant	739	6	vec (1, 2, 1, 1)	MATCH True UNIQUE True 	p_s 0.0300 p_g 0.0405	REC
+plant	739	7	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0560 p_g 0.0505	-
+plant	739	8	vec (1, 2, 1, 1)	MATCH True UNIQUE True 	p_s 0.0305 p_g 0.0360	REC
+plant	739	9	vec (2, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0490 p_g 0.0335	REC
+plant	739	10	vec (2, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0445 p_g 0.0420	REC
+plant	739	11	vec (1, 2, 1, 1)	MATCH True UNIQUE True 	p_s 0.0320 p_g 0.0280	REC
+plant	739	12	vec (1, 2, 1, 1)	MATCH True UNIQUE True 	p_s 0.0455 p_g 0.0350	REC
+plant	739	13	vec (2, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0410 p_g 0.0375	REC
+plant	739	14	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0570 p_g 0.0520	-
+plant	739	15	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0560 p_g 0.0485	-
+plant	739	16	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0620 p_g 0.0515	-
+plant	739	17	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0640 p_g 0.0860	-
+plant	739	18	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0580 p_g 0.0430	-
+plant	739	19	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0815 p_g 0.0835	-
+plant	739	20	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0755 p_g 0.0775	-
+plant	739	21	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0730 p_g 0.0725	-
+plant	739	22	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0535 p_g 0.0485	-
+plant	739	23	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0805 p_g 0.0915	-
+plant	739	24	vec (2, 1, 1, 1)	MATCH True UNIQUE True 	p_s 0.0400 p_g 0.0365	REC
+plant	739	25	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0845 p_g 0.0795	-
+plant	739	26	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0870 p_g 0.0755	-
+plant	739	27	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0545 p_g 0.0495	-
+plant	739	28	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0905 p_g 0.0815	-
+plant	739	29	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0700 p_g 0.0870	-
+plant	739	30	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0580 p_g 0.0550	-
+plant	739	31	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0770 p_g 0.0765	-
+plant	739	32	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0860 p_g 0.0770	-
+plant	739	33	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0800 p_g 0.0735	-
+plant	739	34	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0670 p_g 0.0815	-
+plant	739	35	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0730 p_g 0.0695	-
+plant	739	36	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0525 p_g 0.0440	-
+plant	739	37	vec (1, 1, 1, 1)	MATCH True UNIQUE False ['739', '9999']	p_s 0.0760 p_g 0.0660	-
+plant	739	38	vec (1, 1, 1, 2)	MATCH True UNIQUE True 	p_s 0.0770 p_g 0.0740	-
+plant	739	39	vec (1, 1, 2, 1)	MATCH True UNIQUE True 	p_s 0.0460 p_g 0.0455	REC
+LICENCE	739=venise	planted recovered 13/40 (need 32) -> NOT MET
+VERDICT	739=venise	NON-INFORMATIVE	candidate p_s 0.0845 p_g 0.0785; class recovery 13/40
