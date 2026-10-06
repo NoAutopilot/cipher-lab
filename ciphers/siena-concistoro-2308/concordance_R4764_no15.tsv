@@ -1,0 +1,39 @@
+# R9-SIENA15 shape concordance, no. 15 sign (Bourdeau no15v legend) -> R4764 key sign and its value. Fixed 6 Oct 2026 ~05:50 UTC
+# from one look each at R4764 P2 crops (alphabet left/right halves, doppie row, nulle row; IMG_R4764_I27857_P2.jpg, 2248x4000,
+# sha1 14be97b6...) and no. 15 P2/P6 run crops (IMG_R4803_I27950_P2/P6.jpg, sha1s match images/manifest.json), BEFORE any scoring.
+# set: P = primary (shape plainly the same sign); V = added only in variant V (looser likeness, or a second reading of the key).
+# value: letter(s) of the key cell; NULL = the key's Nulle row; for doppie the value is the doubled letter pair.
+# A no.15 sign not listed has no counterpart on the key sheet at the crop sizes looked at (see NOTES.md ## R9-SIENA15).
+no15_sign	set	value	key_cell	likeness
+DOT	P	e	e col., row 3: solid dot	same sign
+TH	P	i	i col., row 3: o with a bar through (theta-like)	same sign
+D	P	t	t col.: round bowl with ascender curving back (delta/d-loop)	same sign
+LV	P	g	g col.: Lambda without crossbar	same sign
+PSI	P	p	p col.: fork on a stem, stem crossed by a bar	fork on stem; bar not checked on every no.15 instance
+#	P	a	second a col., row 2: two uprights crossed by two bars	same sign (a barred # also stands in the Nulle row: see V)
+Y	P	a	first a col., row 3: Y	same letter form
+P+	P	&	& col.: capital P with a bar	same sign
+H	P	ff	Doppie row: ff -> capital H	same letter form (the doppie row writes its signs as capitals)
+A	P	bb	Doppie row: bb -> capital A (value written partly cut at the crop edge; Bourdeau reads A)	same letter form
+a	P	ll	Doppie row: ll -> small a	same letter form
+Z	P	nn	Doppie row: nn -> Z	same letter form
+E	P	qq	Doppie row: qq -> E	same letter form
+K	P	ss	Doppie row: ss -> K	same letter form
+STAR	P	NULL	Nulle row: asterisk	same sign
+OO	P	NULL	Nulle row: two joined circles (infinity)	same sign
+8	P	NULL	Nulle row: 8 (twice)	same sign (8 also as the gg doppia value: see note)
+DIV	P	NULL	Nulle row: bar with dots (÷-type)	same family; dot count not compared instance by instance
+4	P	NULL	Nulle row: 4	same sign
+7	P	NULL	Nulle row: 7 with a bar above	close
+A	V	a	first a col., row 2: A standing on a small box	V replaces P's A=bb: the cursive A of no.15 read as the a homophone
+#	V	NULL	Nulle row: barred #	V replaces P's #=a
+Q+	V	u	u col.: q with a long tail	q with crossed descender vs q with tail
+P	V	&	& col.: capital P with a bar	thorn-p without the bar
+LAM	V	g	g col.: Lambda	lambda (long left leg) vs Lambda
+U	V	n	n col.: two uprights with bars top and bottom	two uprights joined at foot
+TRI	V	b	b col.: triangle with a dot	triangle, but no.15's points down
+9	V	a	first a col., row 1: 9/c-cedilla with a bar	9 without the bar
+DF	V	t	t col.: d-loop	filled bowl
+O2	V	e	e col., row 1: circle with a dot	bullseye vs dotted circle
+OO:	V	NULL	Nulle row: infinity	infinity with dots
+OI	V	NULL	Nulle row: 4	period 4 form (Bourdeau: circle on stem)

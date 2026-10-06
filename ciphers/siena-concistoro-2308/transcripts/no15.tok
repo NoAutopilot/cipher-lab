@@ -1,0 +1,20 @@
+# no. 15 (DECODE R4803, ASSi Concistoro 2308 fasc. 2, Mario Bandini, Dec 1546 / Jan 1547), cipher runs on P2 and P6.
+# Source: Bourdeau, dbourdeau/cyphersolver targets/siena1421/transcripts/no15v.txt (agent L, verified sign by sign,
+# 24 Sept 2026; CC BY 4.0), ENTRIES section, read at HEAD adbf9a1 on 6 Oct 2026 by R9-SIENA15. Sign names are his legend.
+# Built from no15v.txt, not his no15.tok: that file leaves out L2.15's whole run (21 signs, "8 O2 DOT ... U LV").
+# "|" = clear text between runs (the clear word "abs" is also a breaker); '?' marks dropped; "??" illegible dropped;
+# notes and <<chg>> lines dropped. A line end is not a breaker (runs continue across lines, e.g. L2.15 -> L2.16).
+L2.15 | 8 O2 DOT H LAM Q+ PSI TH DIV A OL ST 4 LAM M3 OO 4 R P U LV
+L2.16 I s o m O2 R 8 x XT LAM Q+ D 2 a Y U 7 d DIV TH M3 MM PHI AMP A XT OO: P LAM Q+ A O2 R |
+L2.17 OL STB ST DIV D | LV 1 D PHI 8 LD U TH |
+L2.18 | P R q | DOT Q+ H LAM | A O2 DOT T LAM o V 8 MM XT R DIV A L o P Z RHO 1 9 TH
+L2.19 | R D XT 8 PSI 1 XT TO XT LAM DF | o ST |
+L2.20 DIV 9 U XT PSI D TO OO | DOT H DIV RHO U A
+L2.21 DF O2 1 E | DIV OS DIV A N A # TB TO MM A XH D h SW P+ |
+L2.22 | OI RHO H OS R A E |
+L6.1 | DIV D LV 4 8 TB H q O P+ U XT
+L6.2 | DIV OO Z TH O2 OS A U R LAM 4 TB TO a TRI ST | A O2 1 R OO:
+L6.3 OI x MM LV XT U TH 1 q H DOT PSI A | STAR # RHO | DIV OL STB H A PSI
+L6.4 LAM P+ U D |
+L6.5 GX D MM TH U H O2 PSI a LAM PSI |
+L6.6 TO K D XT OO: M3 2 R 8 A P+ L o |
