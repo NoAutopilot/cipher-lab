@@ -1,0 +1,28 @@
+# kaliningrad-2015 wordcode seed 1 restarts 6 6 Oct 2026 15:21 UTC; control mean 0.767 (0.211-0.950); score -3114.133
+# {"restart_scores": [-3114.1, -3128.1, -3148.1, -3149.6, -3151.0, -3219.5], "score_per_token": -3.1842, "context_runs": 0, "code_tokens_decoded": 0, "name_types": 0, "code_words": [], "err": 0.05, "vocab_k": 16, "common_a": 1, "code_share": 0.1, "target_code_share": 0.116, "code_types": 13, "extra_code_names": 0, "control_types": 45, "del": 19, "ins": 13, "code": 13, "per_class": {"letters": 0.967, "codes": 0.755, "n_letters": 880, "n_codes": 98, "codes_in_wordlist": 0.969, "codes_hapax": 0.0, "n_hapax": 8, "codes_repeated": 0.822, "n_repeated": 90}}
+sweotiwwiewotisaeteoetensastitsatete
+ttstleititaisiiwaoteototttettwseeto
+tsetnosotttesanititsteesetteitieeeno
+wsienisetesoitteinoeeeieimtotoemswwnso
+tattietoetaasaisiswessmiemeesseeseeswse
+semtsetittiottitsttsaottameneeeeisewieetoto
+eeieseleneimieetliaeetsitmiiietewiteseliswi
+seeiotaosiwteiwswswooeinaissstetiets
+ioewesewwoetteeeiitetetstesiyeettiwsettitne
+seseeietimisotosiewoeottowwesteieotsstsi
+tssitittsseeeseewsisitietmieeswtmeemteeine
+taioissitteitsesetwetesseoemewetseial
+owsetsetiwoeetsliikeileeestmsasaetatstwe
+tesieisantseseeeasweteeiiseeissomwo
+laieoteetetteaeessiswetwwawieowtiemeeaaeeitei
+wtsyniweetetseteeetoesseeitawsniieetsiiioe
+esilisweiteliieeewseistiealesemtsmiameeost
+emtwiiiteeteieiliimistssiisstttesltisei
+sttekeeeiewiwesstiteisteeselewmoittmis
+esetoiiisessoiosteeswanitetetwietset
+iositeitesesiestteeneteostssatiewsewsie
+eeitwsieeiraaowasaesotaiiwsstissstie
+tsosieiiesssiwmiitseletiitotseeeeissets
+eeoiwaitmottoitiisiettsitesetmiitsewse
+osoiwsewitttsemttslowtteeiteetetsest
+semet

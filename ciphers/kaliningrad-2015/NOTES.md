@@ -614,3 +614,19 @@ negative; no reading. Seed 1 is a stuck restart basin while seeds 2-3 read the d
 pre-registered again at restarts 6, seeds 1-5 (~5 min CPU, ~$1), with the shuffled-target decode beside the target. Status
 stays `open`. Rule 10: nothing here is a reading. Both numbers in HYPOTHESES.md (family_run row and "R13-KAL10 result").
 
+
+## R14-KAL11, wordcode nomenclator at restarts 6, 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run14-jobs.md` "R14-KAL11" (LANE-RUN14, account 2). The R13-KAL10 named step,
+attempt 2 of the same instrument with restarts (2 -> 6) and seeds (3 -> 5) the only knobs. CPU only, no hosts, no subagents.
+Pre-registered in HYPOTHESES.md "R14-KAL11" (commit a5d9745d0) before scoring.
+
+**Result: control-backed negative for this design at err 0.05.** Matched control mean 0.767 (seeds 0.211-0.950; code class
+0.793) meets gate 0.6, so the target ran: judge FAIL -1.525 vs real_p05 -0.892; the shuffled-target decode beside it also FAILs
+(-1.491), so the judge is not voided, and the target is no better than its own shuffle. Both decodes are degenerate letter
+streams with no code words. Conditional on Ernst's transcript and convention A, and only for the 0.05 error band (no measured
+transcription error exists). Status stays `open`; no reading. Rule 10: nothing here is a reading.
+Suggestion (not done): `family_run.py --family wordcode` controls are not seed-reproducible (seeds 1 and 3 read differently
+between two runs with identical params); a tools job could pin the restart RNG to `--seed`.
+Next step: the letter-or-word nomenclator with marked types as codes is now logged; a different design family or convention B
+for the same design (~$1.5, CPU only) remain. Verdict: keep going (no outside blocker).

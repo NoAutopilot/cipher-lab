@@ -1026,3 +1026,32 @@ python3 tools/family_run.py <spec copy> --family wordcode --cipher ciphers/kalin
    reliability per RUN4-KAL). "Worth a verifier" only if the target PASSes and the shuffled decode FAILs; a shuffled PASS voids
    the judge for this family (ARM-C1). Anything else: control-backed negative for this design, conditional on Ernst's
    transcript and convention A, at err 0.05 only (no measured transcription error exists to bracket).
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 6 Oct 2026 15:21 | wordcode | N=978 K=36 restarts=6 corpus=s1s.txt.gz codes=marked,bnd=x,err=0.05 | 1 | 0.767 (0.211-0.950) | -3114.133 | FAIL language: score=-1.525, null_p99=-2.078, real_p05=-0.892, real_median=-0.812, mode=both, N=978 | yes (gate 0.6) | R14-KAL11 wordcode ru s1s, marked = codes, conv. A, restarts 6 |
+| 6 Oct 2026 15:25 | wordcode | N=978 K=36 restarts=6 corpus=s1s.txt.gz codes=marked,bnd=x,err=0.05,shuffle_target=1 | 1 | 0.852 (0.536-0.954) | -3129.066 | FAIL language: score=-1.491, null_p99=-2.075, real_p05=-0.873, real_median=-0.813, mode=both, N=979 | yes (gate 0.6) | R14-KAL11 wordcode ru s1s, marked = codes, conv. A, restarts 6 |
+
+### R14-KAL11 result (6 Oct 2026, 15:18-15:26 UTC; pre-registration commit a5d9745d0 before any scored run)
+
+Ran commands A and B exactly as pre-registered (label wording as registered). About 4 min CPU each.
+
+| run | control seeds 1-5 (blended) | control mean | code-class mean | target judge | target anneal score |
+|---|---|---|---|---|---|
+| A (target) | 0.211 / 0.875 / 0.852 / 0.950 / 0.946 | **0.767** | **0.793** (0.835/0.825/0.735/0.815/0.755) | FAIL -1.525 (real_p05 -0.892, null_p99 -2.078) | -3114.1 |
+| B (shuffled target, seed 1) | 0.954 / 0.874 / 0.536 / 0.950 / 0.944 | 0.852 | (not re-tabulated) | FAIL -1.491 (real_p05 -0.873, null_p99 -2.075) | -3129.1 |
+
+**Gate 1 met** in A (0.767 >= 0.6, codes 0.793 >= 0.3): the control licenses the target at restarts 6. **Gate 2: target FAIL,
+shuffled FAIL** -- the judge is not voided for this family (the shuffled decode does not PASS), and the target does not PASS.
+The target scores no better than its own shuffle on the judge (-1.525 vs -1.491) and only 15 points better on the anneal score
+(-3114 vs -3129, against a control-seed spread of about 500). Both decodes are a degenerate e/t/i/s letter stream with no code
+words decoded. By the pre-registered wording: **control-backed negative for the letter-or-word nomenclator design (13 marked
+types = whole-word codes, unmarked = letters, Russian s1s), conditional on Ernst's transcript and convention A, at err 0.05 only**
+(no measured transcription error exists to bracket; rule 3 bracketing paragraph -- this licenses the 0.05 band, not the
+target's real reliability).
+
+Observation, not a gate: control seeds 1 and 3 read differently between runs A and B (0.211 -> 0.954, 0.852 -> 0.536) with the
+same seed and params, so the wordcode control is not seed-reproducible in this tool (restart randomness not fully pinned by
+`--seed`); both runs met gate 1, so the verdict does not depend on it. One-line suggestion for a tools job, not done here.
