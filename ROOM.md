@@ -9755,3 +9755,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:41 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 13:41: spawned 1 (LANE-RUN11-account-1 session_01VY6JLgy3WfXhUMpgVLxBbE), queued left 0
 2026-10-06 13:42 | R11-MANTPOOL2 worker | claim: sachsstaatsarchiv-manteuffel-1712 pooled aligner re-run +0518/0521/0526, cap 2.5, box ends 14:32 UTC, for LANE LANE-RUN11-account-4
 2026-10-06 13:42 | R11-SCORPCYC worker | claim scorpion-1991: cycling_homophonic family module + matched control (N=70 K=53, N=180 K=145-155), cap 4, box end 14:57 UTC, for LANE LANE-RUN11-account-4
+2026-10-06 13:43 | R13-LVNFIX worker | flag lodewijk-van-nassau-1573-74: 4616 reading changed after AUDIT.md (R13-LVNFIX): p1_L16/19 91->81 M, p1_L17/15 hollande H->M, p1_L07/8 17->13 p M (image read), p1_L16/4 85 regraded M; needs a verifier carry-over into AUDIT.md; for LANE LANE-RUN13-account-2
