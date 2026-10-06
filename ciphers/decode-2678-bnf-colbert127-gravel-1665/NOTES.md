@@ -1,6 +1,6 @@
 # The abbé (R.) de Gravel to Jean-Baptiste Colbert, Ratisbon, 29 Jan 1665, BnF Mélanges de Colbert 127, f.349-350 (canvases 356-357)
 
-**Status: partial** (R9-DEC2678C, 6 Oct 2026: Tomokiyo's published Colbert-Gravel 1672 key passes a pre-registered gate on P2/P3, 11 of 15 tokens H; see the section of that date. Earlier: not attacked; Bourdeau's work-in-progress, see below).
+**Status: partial** (verifier R10-DEC2678V, 6 Oct 2026: N3, key published, D2 about 73%, AUDIT.md. R9-DEC2678C, 6 Oct 2026: Tomokiyo's published Colbert-Gravel 1672 key passes a pre-registered gate on P2/P3, 11 of 15 tokens H; see the section of that date. Earlier: not attacked; Bourdeau's work-in-progress, see below).
 Sender correction (R8-G2678, 6 Oct 2026): the letter is **signed "Guibert", maître des courriers d'Allemagne** (canvas 355, signature crop `images/c355_signature.jpg`), docketed "M. Guibert"; not the abbé de Gravel as DECODE, Bourdeau and this folder's title say. See the section of that date. **Reversed by R9-DEC2678 (6 Oct 2026), see the section of that date:** the Guibert signature is on f.348r, the end of Guibert's own letter (ff.347-348); the cipher letter ff.349-350 closes on f.349v (canvas 357) "a Ratisbone ce 29 Janvier 166[5]" and is signed "[R.] de Gravel[le]", as DECODE, Bourdeau and the BnF sommaire (Fol. 349, l'abbé de Gravel) say.
 Premise check (R9-DEC2678, 6 Oct 2026): the brief asked for the title to be changed to Guibert; the image says Gravel, so the title keeps Gravel (now read from the leaf, not only the catalogue), with folios and canvases corrected. The **folder name keeps the old catalogue label** (`...-gravel-1665`), which turns out to be right. No status.json row or spec exists for this folder (checked 6 Oct 2026), so nothing else was edited.
 Clément, *Lettres, instructions et mémoires de Colbert* (IA items colbert-lettres-instructions-et-memoires-de-colbert-v-1 to v-7), full-text search (be-api) for "Gravel", "Frichmann", "rixdales" and "Ratisbonne" run by this worker (GF-A2B-1, 3 Oct 2026): Gravel hits only Colbert's own letters to the abbé de Gravel at Mainz (1669-70, t. II pt 2, t. V) and editorial notes; no Gravel letter of 29 Jan 1665 and none of the enciphered pension names.
@@ -428,14 +428,14 @@ crop, >= 2 s apart, HTTP 200). No subagent calls.
 Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - `29`, a single-group payee name (15,000 Rd) - blocker: open-codes; a 1665 nomenclature code outside the 1672 table, which no context on f.349 narrows; next: the 1665 nomenclature from AE CP Allemagne 194, an owner-side reproduction request
 - `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); next: find another 1664-66 Gravel or Colbert letter in the same design, where these marks recur, by a sommaire sweep of Mél. Colbert 126-130 for cipher letters from Ratisbon, ~$3
-- novelty and print status of the reading - blocker: not-attempted; solvers do not classify; next: verifier session (rule 10) with print_check on "son frere" / "chanoines" Gravel 1665, ~$3
+- novelty above N3 (verifier R10-DEC2678V gave N3, 6 Oct 2026, AUDIT.md) - blocker: waiting-on JSTOR-QUEUE.tsv rows 301-303 and the SO-R2678 second-opinion answer; Haug 2015, the study closest to this pension list, is not readable from the cloud
 
 ## Escalation (R9-DEC2678C, 6 Oct 2026)
 - [x] siblings: Mél. Colbert 127-127bis and 126/128 sommaires swept (R9-DEC2678); Gravel's two other 1665 letters are in clear
 - [x] clear-pages: f.349r-v clear text read (R8-G2678, R9-DEC2678); it gives the context for P1-P3
 - [x] known-keys: Tomokiyo's 1672 Colbert-Gravel key passes the pre-registered gate (this section)
-- [ ] print: verifier's print_check of the reading, not yet run
+- [x] print: verifier R10-DEC2678V ran print_check and a logged search, 6 Oct 2026 (AUDIT.md AUDIT 1: N3, key published, D2 about 73%); Haug 2015 not readable from the cloud, JSTOR rows queued
 - [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; planned sweep of Mél. Colbert 126-130 for Ratisbon cipher letters
 - [x] image-check: native crop re-read of all three passages (this section)
 - [n/a] retry: first attempt passed its gate, nothing to retry
-Verdict: keep going: 3 internal gaps; cheapest next: verifier session (rule 10) on the P2/P3 reading, ~$3
+Verdict: keep going: 2 internal gaps; cheapest next: sommaire sweep of Mél. Colbert 126-130 for Ratisbon cipher letters in the same design, ~$3 (verifier step done 6 Oct 2026, AUDIT.md)

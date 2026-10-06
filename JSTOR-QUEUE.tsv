@@ -298,3 +298,6 @@ ciphers/na-schonenberg-1678-1716	"Albanylla"	2026-10-05	queued
 ciphers/na-schonenberg-1678-1716	"de aver mudado este govierno"	2026-10-05	queued	
 ciphers/wvo-hessen-1564	("Oranien" OR "Orange") AND ("Landgraf Wilhelm" OR "Wilhelm IV" OR "Landgrave") AND 1564 AND (Chiffre OR Ziffer OR Geheimschrift OR cipher)	2026-10-06	queued	
 ciphers/wvo-hessen-1564	"die adern zweimahl"	2026-10-06	queued	
+ciphers/decode-2678-bnf-colbert127-gravel-1665	"Gravel" AND (Ratisbon OR Regensburg OR Ratisbonne) AND 1665 AND (pension OR Pension) AND (chiffre OR cipher OR Chiffre)	2026-10-06	queued	
+ciphers/decode-2678-bnf-colbert127-gravel-1665	"demye année de leur pension"	2026-10-06	queued	
+ciphers/decode-2678-bnf-colbert127-gravel-1665	"Frischmann" AND "Gravel" AND 1665 AND (Domkapitel OR chanoines OR canons)	2026-10-06	queued	

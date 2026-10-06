@@ -1,0 +1,20 @@
+# tools/print_check.py, 06 Oct 2026. A search result, not a novelty verdict (CLAUDE.md rule 10).
+phrase	source	result	detail	url
+pour son frere qui en doit avoir 500	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22pour%20son%20frere%20qui%20en%20doit%20avoir%20500%22
+les chanoines qui doivent aussy recevoir 1000	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22les%20chanoines%20qui%20doivent%20aussy%20recevoir%201000%22
+Frichmann auquel il en est deu 600	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Frichmann%20auquel%20il%20en%20est%20deu%20600%22
+pour la demye annee de leur pension	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22pour%20la%20demye%20annee%20de%20leur%20pension%22
+auquel on doit donner 15000	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22auquel%20on%20doit%20donner%2015000%22
+Gravel Ratisbonne 29 janvier 1665	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Gravel%20Ratisbonne%2029%20janvier%201665%22
+pour son frere qui en doit avoir 500	gbooks	350 volume(s)	CUGbbl77Am4C Coutumes générales et locales du Païs et 1732; xCczAQAAMAAJ Arrests notables du Parlement de Dijon 1738; tBMn92u7LjsC Dictionnaire de cas de conscience, ou Dé 1741; W3JE9lES5d0C Dictionnaire de cas de conscience, ou Dé 1734; t44fXjw3fMUC Traité des testamens, codiciles, donatio 1779	https://www.googleapis.com/books/v1/volumes?q=%22pour%20son%20frere%20qui%20en%20doit%20avoir%20500%22&country=US&maxResults=10
+les chanoines qui doivent aussy recevoir 1000	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22les%20chanoines%20qui%20doivent%20aussy%20recevoir%201000%22&country=US&maxResults=10
+Frichmann auquel il en est deu 600	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22Frichmann%20auquel%20il%20en%20est%20deu%20600%22&country=US&maxResults=10
+pour la demye annee de leur pension	gbooks	1 volume(s)	b3aLOWc8NSYC Recueil d'arrests de partition contenant 1660	https://www.googleapis.com/books/v1/volumes?q=%22pour%20la%20demye%20annee%20de%20leur%20pension%22&country=US&maxResults=10
+auquel on doit donner 15000	gbooks	346 volume(s)	ClowAAAAYAAJ Journal de l'Assemblée nationale, ou Jou 1791; Hj4wAQAAMAAJ La constitution communale de l'Angleterr 1870; DIZRAAAAcAAJ La Constitution communale de l'Angleterr 1870; mm4xAQAAMAAJ Journal officiel de la République frança 1873; 8khflSmMDsoC Exposé des motifs à l'appui du projet de 1890	https://www.googleapis.com/books/v1/volumes?q=%22auquel%20on%20doit%20donner%2015000%22&country=US&maxResults=10
+Gravel Ratisbonne 29 janvier 1665	gbooks	28 volume(s)	gnJBAAAAYAAJ Inventaire sommaire des archives du Dépa 1903; 7cW-64n2o8IC Inventaire sommaire des archives du Dépa 1903; 1XgvAAAAMAAJ Inventaire sommaire des archives du Dépa 1903; k_gYAAAAYAAJ Inventaire sommaire des archives du Dépa 1903; R9nUAAAAMAAJ L'intendance d'Alsace sous Louis XIV, 16 1956	https://www.googleapis.com/books/v1/volumes?q=%22Gravel%20Ratisbonne%2029%20janvier%201665%22&country=US&maxResults=10
+pour son frere qui en doit avoir 500	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22pour%20son%20frere%20qui%20en%20doit%20avoir%20500%22
+les chanoines qui doivent aussy recevoir 1000	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22les%20chanoines%20qui%20doivent%20aussy%20recevoir%201000%22
+Frichmann auquel il en est deu 600	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Frichmann%20auquel%20il%20en%20est%20deu%20600%22
+pour la demye annee de leur pension	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22pour%20la%20demye%20annee%20de%20leur%20pension%22
+auquel on doit donner 15000	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22auquel%20on%20doit%20donner%2015000%22
+Gravel Ratisbonne 29 janvier 1665	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Gravel%20Ratisbonne%2029%20janvier%201665%22

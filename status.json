@@ -3939,6 +3939,37 @@
       "depth_by": "R9-WVOV",
       "depth_date": "6 Oct 2026",
       "decode_status": "Partially decrypted"
+    },
+    {
+      "date": "6 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "text": "unknown",
+      "title": "R. de Gravel to Colbert, Ratisbon, 29 Jan 1665 (BnF Mélanges de Colbert 127 f.349, DECODE R2678): two cipher passages read with Tomokiyo's published 1672 Colbert-Gravel key",
+      "grade": "N3 (AUDIT.md AUDIT 1, verifier R10-DEC2678V, 6 Oct 2026); key published (Satoshi Tomokiyo, Colbert-Gravel cipher 1672, Mél. Colbert 159 f.102). 15 cipher tokens: H 11, M 2, U 2; pre-registered gate PASS (value-shuffle p 0.000, order-shuffle p 0.0035, power 0.985 at N=14)",
+      "line": "In a pension list sent from the Diet, two short cipher passages read under Tomokiyo's published key of the 1672 Colbert-Gravel cipher: one names 'les chanoine[s]' as recipients of a 1,000-Reichsthaler half-year pension. Partially deciphered (about 73%); the 15,000-Reichsthaler payee (code 29) is unread. No prior decipherment located.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/decode-2678-bnf-colbert127-gravel-1665",
+      "document_id": "BnF Mélanges de Colbert 127, f.349r-v (Gallica btv1b10035540v canvases 356-357); DECODE R2678",
+      "claim_scope": "recovered-passages",
+      "novelty": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "11/15 H",
+      "unresolved_spans": "29 (name code, M), 80 (bracketed cell, M), 22: and 0 (no 1672 cell, U)",
+      "audit_refs": [
+        "decode-2678-bnf-colbert127-gravel-1665/AUDIT.md"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "R9-DEC2678C 6 Oct 2026 (reading_gravel1672.txt)",
+      "superseded_by": null,
+      "fields_source": "AUDIT.md AUDIT 1 (R10-DEC2678V)",
+      "depth": "D2",
+      "depth_pct": 73,
+      "depth_sentence": "In Gravel's letter to Colbert of 29 Jan 1665, the enciphered recipients of the 1,000-Reichsthaler half-year pension on f.349r read \"les chanoine[s]\" under Tomokiyo's 1672 Colbert-Gravel key.",
+      "depth_check": "published key from a different leaf (not fitted) + pre-registered value/order-shuffle controls at N=14 + clear-frame agreement",
+      "depth_by": "R10-DEC2678V",
+      "depth_date": "6 Oct 2026",
+      "decode_status": "Partially decrypted"
     }
   ],
   "lanes": [
