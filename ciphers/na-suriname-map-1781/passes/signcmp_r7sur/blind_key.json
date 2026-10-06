@@ -1,0 +1,184 @@
+{
+ "Q1": {
+  "id": "c2",
+  "linepos": "L08:5",
+  "code": "g",
+  "current": "g H (GAPS37 F1)",
+  "role": "control-query",
+  "box": [
+   556,
+   828,
+   580,
+   895
+  ]
+ },
+ "Q2": {
+  "id": "c1",
+  "linepos": "L08:37",
+  "code": "g",
+  "current": "l H (GAPS37 F2)",
+  "role": "control-query",
+  "box": [
+   1500,
+   828,
+   1532,
+   895
+  ]
+ },
+ "Q3": {
+  "id": "q2",
+  "linepos": "L10:30",
+  "code": "g",
+  "current": "l H",
+  "role": "query",
+  "box": [
+   912,
+   1030,
+   950,
+   1105
+  ]
+ },
+ "Q4": {
+  "id": "q3",
+  "linepos": "L11:17",
+  "code": "[sigma]",
+  "current": "i M",
+  "role": "query",
+  "box": [
+   578,
+   1120,
+   602,
+   1190
+  ]
+ },
+ "Q5": {
+  "id": "q1",
+  "linepos": "L08:51",
+  "code": "g",
+  "current": "l H",
+  "role": "query",
+  "box": [
+   1925,
+   825,
+   1958,
+   895
+  ]
+ },
+ "Q6": {
+  "id": "q4",
+  "linepos": "L10:66",
+  "code": "[sigma]",
+  "current": "e M",
+  "role": "query",
+  "box": [
+   2019,
+   1030,
+   2047,
+   1105
+  ]
+ },
+ "R1": {
+  "id": "rg2",
+  "linepos": "L11:19",
+  "code": "g",
+  "current": "g H",
+  "role": "ref F1 g",
+  "box": [
+   625,
+   1120,
+   655,
+   1190
+  ]
+ },
+ "R2": {
+  "id": "rl1",
+  "linepos": "L10:61",
+  "code": "g",
+  "current": "l C",
+  "role": "ref F2 l",
+  "box": [
+   1881,
+   1030,
+   1908,
+   1105
+  ]
+ },
+ "R3": {
+  "id": "ri2",
+  "linepos": "L10:60",
+  "code": "m",
+  "current": "i H",
+  "role": "ref i-class",
+  "box": [
+   1845,
+   1030,
+   1880,
+   1105
+  ]
+ },
+ "R4": {
+  "id": "rg1",
+  "linepos": "L06:4",
+  "code": "g",
+  "current": "g C",
+  "role": "ref F1 g",
+  "box": [
+   225,
+   670,
+   260,
+   755
+  ]
+ },
+ "R5": {
+  "id": "ri1",
+  "linepos": "L06:8",
+  "code": "[f-loop]",
+  "current": "i M",
+  "role": "ref i-class",
+  "box": [
+   307,
+   670,
+   331,
+   755
+  ]
+ },
+ "R6": {
+  "id": "re2",
+  "linepos": "L11:15",
+  "code": "a",
+  "current": "e H",
+  "role": "ref e-class",
+  "box": [
+   530,
+   1120,
+   550,
+   1190
+  ]
+ },
+ "R7": {
+  "id": "re1",
+  "linepos": "L11:7",
+  "code": "a",
+  "current": "e H",
+  "role": "ref e-class",
+  "box": [
+   256,
+   1120,
+   276,
+   1190
+  ]
+ },
+ "R8": {
+  "id": "rl2",
+  "linepos": "L12:26",
+  "code": "g",
+  "current": "l C",
+  "role": "ref F2 l",
+  "box": [
+   1445,
+   1235,
+   1478,
+   1315
+  ]
+ }
+}
