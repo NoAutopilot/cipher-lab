@@ -87,3 +87,12 @@ Conflict 898 (logged, not resolved; rule 4): l'Empire is supported by 4 single-c
 "Ilgen" by one single-code gloss on 0527 (run 7) that D2B-MANT27 read as doubtful (98 = Ilgen in key.tsv; a misread lead stroke is possible but
 not repaired). Non-gating note: without that one gloss 898 would read 4/4; the registered rule counts it, so 898 stays M (held, not in key.tsv).
 Known-answer on this leaf: 107 Schonborn 4/4 agree with its key.tsv row; no other single code here has a key.tsv value (783, 867, 898, 714).
+
+| 6 Oct 2026 R8-MANT | pooled single-code-gloss gate re-run, PREREG-MANTP + addenda (MANT463, MANT529) + PREREG-R8-MANT addendum 1 (86bb34ad2), 0527 run 7 code corrected 898 -> 848 from an image re-read (63 runs) | gloss strings permuted across all pooled single-code runs, 1000 draws seed 7101: mean 0.040, p95 0.167 | S 9/12 = 0.750 | **PASS** (R7-MANT529, before the correction: 0.667 vs 0.167). 898 "l'Empire" 4/4 single-code glosses on 0527 (x3) and 0529 (x1), both leaves HELD per leaf -> licensed **M** (per-unit merge rule) and added to key.tsv at M; 848 "Ilgen" single-attested, not licensed. 0527 per-leaf gate re-run: S 0.000 vs p95 0.057, HELD (S_single 2/2 at N 2, under the registered N >= 3). Outputs r8mant/*_r8.tsv |
+
+Conflict 898 resolved as a misread, not a data conflict (R8-MANT, 6 Oct 2026): 0527 run 7's group is **848**, not 898. Two independent reads
+of a native zoom (the worker's, and a blind Sonnet read given crop paths only) both give 8-4-8; the middle digit is this hand's open,
+y-shaped 4 (as in 364 on the next line), while the leaf's undisputed 898 (f.422v L_L05) has a closed-loop 9 (as in 939). Both reads also put
+"Ilgen" in the left margin, not over the code; the word over the code is unsettled (worker "l'Empire", blind read "Alexapice?", low), so the
+run keeps its as-read gloss "Ilgen" (M, doubtful) on 848 under PREREG-R8-MANT. 848 occurs elsewhere only inside multi-code runs glossed
+"... de l'Empire" (0527 run 18, 0529 run 6): a possible homophone or "l'Empereur", M, not tested here.

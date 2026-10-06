@@ -1,0 +1,4 @@
+S: real 0.000 (N 53, cons 0); shuffle mean 0.023 p95 0.057
+S_multi: real 0.000 (N 53, cons 0); shuffle mean 0.023 p95 0.057
+S_single: real 1.000 (N 2, cons 2); shuffle mean 0.013 p95 0.000
+GATE HELD (tie or miss)

@@ -5,7 +5,7 @@ run	page	crop	codes	gloss	gloss_grade	note
 4	f.422v	L_L02	357.68.877.285.873	nommera dona Bartholdi et	M	gloss poorly legible (A 'nommé dona Bartholdet', B 'nomm. dona Bertholdet'); 873 B and zoom, A 973
 5	f.422v	L_L02	868	Ilgen	M	run missed by both passes; code read 868 on zoom (could be 98 with a lead stroke: key.tsv 98 = Ilgen); 'le pauvre Ilgen'
 6	f.422v	L_L03	214.286.253.717.345.237.588.384.64	confere quake tour de style	M	wraps 717 | 345; gloss doubtful in both passes and zoom; 64 B/zoom, A 69
-7	f.422v	L_L03	898	Ilgen	M	'il n'y eut que 898, dit on, qui parla'; gloss 'Ilgen' in the margin beside it, a second word over the code illegible; elsewhere 898 = l'Empire 4x on this leaf -- code or gloss placement doubtful; kept as read (conservative for the gate)
+7	f.422v	L_L03	848	Ilgen	M	'il n'y eut que 848, dit on, qui parla'; R8-MANT (6 Oct 2026) zoom + blind read: code 848 (middle digit the hand's open y-shaped 4; this leaf's 898 on L_L05 has a closed-loop 9), was 898; 'Ilgen' sits in the left margin, not over the code; the word over the code unsettled (worker l'Empire, blind read 'Alexapice?' low) -- gloss kept as read, doubtful
 8	f.422v	L_L03	521.402	parla	C	both passes
 9	f.422v	L_L03	238.304.312.200.45.612.602.193.364.312.67.109.401.610.253	difficultes les difficultes	M	wraps 200 | 45; 'difficultés' over 238.304.312 and again over 193.364.312 (312 in both); 304 B/zoom, A 309
 10	f.422v	L_L04	877	Bartholdi	M	gloss over 877 read on zoom only; key.tsv 877 Bartholdi M (GAPS195)
