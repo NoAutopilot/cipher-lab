@@ -187,3 +187,6 @@ Intake gates: `sp87-brunswick-1759: open (line 1) ...`; `salvago-caraffa-1691: b
 the LOCAL-QUEUE row as is. (b) salvago-caraffa-1691: memoriedigitaliliguri.it full-text search of Atti della Società Ligure di Storia
 Patria for "Caraffa" 1691 and "Coysis/Coisis/Coissy". (c) sp90-raby-whitworth-1705: BL searcharchives JSON record for Add MS 31128-31152
 (1705 volume) for a draft of 1 Aug 1705, and IA full-text search of HMC Portland vols 4 and 8 for "Raby" 1705. Search results only.
+Wave 3 sessions (04:18 UTC): R8-MANT session_0171LACT55Rv74BBCkKP8Yjj (Opus, cap 7); R8-THUR25 session_0146p9rCB43frsz3Mt4BWpDX (Opus, cap 5);
+R8-SIENA19 session_018zvN7KcRaJC9NptR2REy4K (Opus, cap 3); R8-SPS1 session_017kugvC8MJ3iBM7FEM4dkDt (Sonnet, cap 2.5); R8-SPS2
+session_01VByht8Dn85zZJE2kVx3KMM (Sonnet, cap 2.5). Caps 20.
