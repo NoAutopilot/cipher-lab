@@ -543,3 +543,59 @@ Grades: no token read; no H or C. Nothing decoded as a reading and no key.tsv wr
 **Next step for no. 15 (suggestion, not run):** a shape pass over Bourdeau's second look R4765 ("Spagna, Imperador ..."; nulls
 5 8 7 2 # ◎ 4, shares ◎ and #) and the other 1540s orator keys of fasc. 1 for a sheet carrying ◎, ⊔, barred x and R, about USD 2-3 (one
 login, key-sheet crops only). If none has them, no. 15 stays too-short with no fitting key.
+
+## R9-SIENA7 -- no. 7 anchored homophonic fit (account 4 worker for LANE-RUN9-account-4, 6 Oct 2026, 05:43-05:57 UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-SIENA7 (R8-SIENA7's "Next step for no. 7"). Status unchanged:
+`open`. Disk only. Requests: github.com 1 sparse shallow clone of dbourdeau/cyphersolver `targets/siena1421` (HEAD adbf9a1, read
+only); no other host. `transcripts/no07.tok` copied unchanged from that clone (agent J, CC BY 4.0, 20 runs, 363 tokens, K=45).
+
+**Pre-registration:** `PREREG-R9-SIENA7.md` + `specs/cheap-tests/siena-concistoro-2308/run_test_no07.py`, pushed in d99f591d4 before
+the scored run. Output `results_no07.json` (`run_test_no07.py --check` exit 0). Solver `tools/homophonic_anneal.py` solve(), unchanged,
+20 restarts x 60,000 iterations, order 3. Fixed: the seven C glosses (q=a, 6=n, +=o, 2=e, x=r, c=o, QP=e; 88 tokens, 24%).
+Corpus: tools/data/it16dip (16th-c. Italian diplomatic letters) minus the held-out Desjardins II file. **Not era-matched**: no
+15th-c. Italian corpus is on disk, and no. 7 is a 1450s Sienese despatch (Milan embassy, per Bourdeau's description).
+
+| run | seeds | result |
+|---|---|---|
+| matched control, anchored (N=363, K=45, 7 signs fixed, 64-72 fixed tokens, run lengths = no. 7's) | 1-5 | mean **0.916** (0.884-0.959); gate 0.60 **met** |
+| same control, blind (no fixes) | 1-5 | mean 0.875 (0.722-0.959) |
+| target, anchored | 1-3 | best score -907.1 (seed 1); seeds 1/2 near-identical decodes |
+| order-shuffled target, same fixes (ARM-C1 null) | 1-3 | scores -975.4 / -970.2 / -980.6 |
+| post hoc, not in the PREREG: control anchored with injected sign error 10 / 20 / 30% | 1-3 | 0.597 / 0.425 / 0.346 |
+
+Judge (rule 7, FAIL reported as FAIL; spec language `it` = it16):
+
+    $ python3 tools/judge_plaintext.py specs/siena-concistoro-2308.json --file <target seed-1 decode>
+    FAIL language: score=-1.242, null_p99=-1.764, real_p05=-0.932, real_median=-0.816, mode=both, N=363
+    ok   words: cover=0.873, min=0.6, real_text_median_cover=0.945
+    shuffled-target decodes, same judge: FAIL -1.411 / -1.326 / -1.345 (words cover 0.81-0.84, also "ok")
+
+Target decode, seed 1 (no grade; not Italian): `acconetaeiandenutticheodeilluedionuiaceioderacceraleediionutontinteiertiai
+ctaimenteeforaesaeadriifratifutcceettatraealeicconiaontooilediongoililmciairecconisotalidereataalertdogliti...` (full text in
+results_no07.json). The fit piles 7#, 8, 9 and q on a (49 tokens) and the word-cover check passes on the shuffled nulls too, so
+cover is no signal at this N.
+
+**Cross-check against the four M glosses (not fixed in the run):** the fit gives 7=s (gloss l), B3=p (gloss t/i), 8o=p (gloss i),
+4=t (L04 "o" over 4/2). It reproduces none of them. The L08 glossed run decodes "s a n o p e r o p o" against the gloss "l a n o t e r o i o".
+
+**Result.** The matched control reads (0.916 against a 0.60 gate), the target does not reach the judge (-1.242 against real_p05
+-0.932), and the target sits only about 0.1 above its own shuffled-order decodes. That is a negative for a plain homophonic
+substitution with the seven C anchors, under two caveats that keep it from being a design exclusion:
+1. **Headroom (rule 3).** The control already reads 0.875 blind at this N and K, so the anchors add about 4 points. This run
+   could not show what the anchors are worth. It only shows that a clean homophonic text of this size would read with or
+   without them. Bourdeau's "too-short" filing is not borne out for a clean simple-homophonic design; whatever stops no. 7 is
+   something else.
+2. **Error band (rule 3, SALV-DIAG).** The control falls to the gate at about 10% injected sign error (0.597) and below it at 20%.
+   No. 7 is a single-pass transcription (agent J) with no measured reader-error figure. A negative at an unmeasured error level
+   is conditional on the transcription being under about 10% wrong.
+   Other differences the control does not model: a nomenclator (Bourdeau notes the related R4750 key is a Latin-word nomenclator
+   with multi-sign codes), nulls, and 15th-c. Sienese spelling against a 16th-c. model.
+
+Grades: no token read. No H or C beyond the seven glosses already on file (unchanged), and no key.tsv was written. Cryptanalytic
+result only.
+
+**Next step for no. 7 (suggestion, not run):** measure the transcription error first: a second blind line-crop pass of L02-L12
+against agent J (crops from R8-SIENA7's region, `tools/iiif_lines.py --image`, one DECODE login, about USD 3 for 2 passes + 1
+reconciliation). Then, if the error is under about 10%, a homophonic + nomenclator family (multi-sign codes for frequent words,
+R4750-style) with its own matched control. If it is over 10%, this negative is a non-test and is logged as one.

@@ -55,7 +55,7 @@ def pick_fixed(seq, truth, target_counts):
     return chosen
 
 
-def run_control(seeds, m):
+def run_control(seeds, m, err=0.0):
     seq_t = [x for r in runs() for x in r]
     tc = Counter(seq_t)
     target_counts = [(FIX[s], tc[s]) for s in FIX]
@@ -65,10 +65,13 @@ def run_control(seeds, m):
         p = control_plain(sd, lens)
         seq, p, truth = H.make_control(p, len(tc), len(seq_t), m, sd)
         fixed = pick_fixed(seq, truth, target_counts)
+        if err:  # post hoc (not in the PREREG): replace a share `err` of unfixed tokens by a random other sign
+            erng, signs = random.Random(500 + sd), sorted(set(seq))
+            seq = [erng.choice([s for s in signs if s != x]) if x not in fixed and erng.random() < err else x for x in seq]
         fset = set(fixed)
         nfix = sum(1 for x in seq if x in fset)
         row = {"seed": sd, "N": len(seq), "K": len(set(seq)), "fixed_signs": len(fixed), "fixed_tokens": nfix}
-        for mode, fx in (("blind", {}), ("anchored", fixed)):
+        for mode, fx in ((("blind", {}),) if not err else ()) + (("anchored", fixed),):
             res = H.solve(seq, m, RESTARTS, ITERS, sd, 1.0, fx)
             key = res[0][1]
             dec = "".join(key[x] for x in seq)
@@ -80,8 +83,10 @@ def run_control(seeds, m):
         rows.append(row)
         print(json.dumps({k: v for k, v in row.items() if k not in ("plain",)}, ensure_ascii=False), flush=True)
     mean = sum(r["anchored"]["share"] for r in rows) / len(rows)
-    return {"rows": rows, "anchored_mean": round(mean, 3),
-            "blind_mean": round(sum(r["blind"]["share"] for r in rows) / len(rows), 3)}
+    out = {"rows": rows, "anchored_mean": round(mean, 3)}
+    if not err:
+        out["blind_mean"] = round(sum(r["blind"]["share"] for r in rows) / len(rows), 3)
+    return out
 
 
 def run_target(seeds, m, shuffle=False):
@@ -109,6 +114,7 @@ def main():
     ap.add_argument("mode", nargs="?", choices=["control", "target", "shuffled"])
     ap.add_argument("--seeds", type=int, nargs="+", default=[1, 2, 3])
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--err", type=float, default=0.0, help="control only, post hoc: injected sign-error share")
     a = ap.parse_args()
     res = json.loads(OUT.read_text()) if OUT.exists() else {}
     if a.check:
@@ -118,7 +124,7 @@ def main():
     t0 = time.time()
     m = model()
     if a.mode == "control":
-        res["control"] = run_control(a.seeds, m)
+        res["control" + (f"_err{a.err}" if a.err else "")] = run_control(a.seeds, m, a.err)
     else:
         res[a.mode] = run_target(a.seeds, m, shuffle=(a.mode == "shuffled"))
     res.update({"tok_sha1": tok_sha(), "restarts": RESTARTS, "iters": ITERS, "model": MODEL_FILES, "heldout": HELDOUT,

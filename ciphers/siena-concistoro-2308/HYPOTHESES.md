@@ -41,3 +41,6 @@ The sign matching is by name across transcribers, so a shape-level concordance i
   -1.402 (p95 -1.285). Power 0.63 < 0.8: non-test at this N (pre-registered), not a negative. V (P + 11 looser rows, 110 valued, 34
   null): TARGET -1.508; CONTROL value-shuffled mean -1.529 (p 0.478), order-shuffled mean -1.443 (p95 -1.351). Power 0.96: a
   control-backed negative for the V mapping (not for R4764 as a key: 88 (V) to 134 (P) of 232 tokens have no shape counterpart on the sheet).
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 6 Oct 2026 05:52 | homophonic, 7 C gloss values fixed (R9-SIENA7) | no. 7 N=363 K=45, restarts=20 iters=60000 order 3, model it16dip minus gri_33125010469852 (held out for control text) | control 1-5, target 1-3 | 0.916 anchored (0.884-0.959); blind 0.875 (0.722-0.959); post hoc injected error 10/20/30%: 0.597/0.425/0.346 | -907.1 | FAIL language: score=-1.242, null_p99=-1.764, real_p05=-0.932, real_median=-0.816, mode=both, N=363 (shuffled-target decodes -1.411/-1.326/-1.345, all FAIL) | yes (gate 0.6) | no. 7 anchored fit: control reads error-free, target does not; control falls below gate at ~10% sign error, no. 7's own error unmeasured -- negative conditional on the transcription, not a design exclusion (PREREG-R9-SIENA7.md) |
