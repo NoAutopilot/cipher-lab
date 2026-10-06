@@ -1,4 +1,4 @@
-# PREREG R13-SIENAWC -- nos. 7 + 19 pooled, nomenclator family with a structural word-code restriction (6 Oct 2026, 18:47 UTC by date -u, written before any scored run)
+# PREREG R13-SIENAWC -- nos. 7 + 19 pooled, nomenclator family with a structural word-code restriction (6 Oct 2026, 18:41 UTC by date -u, written before any scored run; header time corrected from a typed 18:47 after push, no content change)
 
 Worker R13-SIENAWC (account 4, LANE LANE-RUN13-account-4), brief `.claude/briefs/runs/2026-10-06-account4-run13-jobs.md` (Wave 3).
 Script `specs/cheap-tests/siena-concistoro-2308/run_test_pool719_wc.py` (committed with this file), output `results_pool719_wc.json`.
