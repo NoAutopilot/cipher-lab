@@ -1,4 +1,4 @@
-# PREREG R13-SIENA719 -- nos. 7 + 19 pooled, homophonic + nomenclator family (6 Oct 2026, 18:13 UTC by date -u, written before any scored run)
+# PREREG R13-SIENA719 -- nos. 7 + 19 pooled, homophonic + nomenclator family (6 Oct 2026, 18:08 UTC by date -u, written before any scored run; header time corrected from a typed 18:13 after push, no content change)
 
 Worker R13-SIENA719 (account 4, LANE LANE-RUN13-account-4), brief `.claude/briefs/runs/2026-10-06-account4-run13-jobs.md`.
 Script `specs/cheap-tests/siena-concistoro-2308/run_test_pool719_nomen.py` (committed with this file), a thin wrapper that imports
