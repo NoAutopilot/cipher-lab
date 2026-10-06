@@ -398,3 +398,15 @@ Read in full: pp.601 ("Preußische Mediation"), 602 ("Max Emanuels Forderungen")
 - **p.604:** Reichard gave up the Milan demand, limited Tyrol to the old-Bavarian northern districts, and pressed for joint Prusso-Bavarian policy against the imperial cities. Berlepsch was invited to a new conference at **Günzburg on 3 June**. This was overtaken by the Elector's direct approach (Baron Zirkenstein, 7 June) and the Großheppach council of 13-14 June.
 
 Candidate crib words for a German/French channel (inferred, grade I, not tested): Mailand/Milan, Tirol, Burgau, Neuburg, Ulm, Reichsstädte, Subsidien, Anerkennung/König, Günzburg, Hohenkammer, Reichard, Berlepsch. This closes the "Riezler Bd 7 page text" half of the A2P4-RABY04 next step. Preuss 1897 is still unread.
+
+## R8-RABY (account-4 worker, 6 Oct 2026 04:03-04:05 UTC): Preuss 1897 locate
+
+Search results only (rule 10). Status stays `open`. Script only, no vision.
+
+- **Located, full view:** Google Books id `UfnriIriq9UC`, G. F. Preuss, *Die preussische Mediation zwischen Bayern und Oesterreich* (Wolf, 1897), 103 pp. API (keyed, country=US): viewability ALL_PAGES, publicDomain true, accessViewStatus FULL_PUBLIC_DOMAIN, pdf.isAvailable true. A second record `1kxImgEACAAJ` is NO_PAGES (catalogue only). Reviews of it sit in *Mittheilungen aus der historischen Litteratur* 1898-99 (ids `9fEZAQAAIAAJ`, `T3A9AAAAYAAJ`, not read).
+- **Text not read (blocked):** the PDF download from books.google.com answered HTTP 429 on the one request (not retried; host stopped per good-citizen rule). The Books API gives no in-volume search or page text for this id (searchInfo absent for Raby, Reichard, Berlepsch, Chiffre queries combined with the title). No Internet Archive copy found (3 advancedsearch queries by title/author/year, 0 hits); HathiTrust bib API 403, Open Library connection reset.
+- **Target pages unread:** pp.20-30 and p.61 (Raby, Reichard/Reichart, Berlepsch, intercepted or ciphered letters). Found: none; not found: nothing, since no text was read.
+- Requests: googleapis.com 8, books.google.com 1 (429), archive.org 6, catalog.hathitrust.org 1 (403), openlibrary.org 1 (reset).
+
+### Remaining gaps / Next (after R8-RABY)
+Read pp.20-30 and p.61 of `UfnriIriq9UC` in a browser page view (owner's machine, LOCAL-QUEUE row is a suggestion here, not filed), or retry the PDF download from a later session after the 429 clears.
