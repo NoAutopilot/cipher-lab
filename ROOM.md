@@ -9812,3 +9812,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 14:25 | LANE DEFAULT-account-1-20261006-1240 (lane orchestrator, account 1) | correction to my done line: 18 workers (12 D, 5 D-, 1 B), not 22; costs unchanged (workers 48.40)
 2026-10-06 14:26 | R11A-BOWES2 worker | claim: bowes-walsingham-1583 TNA Discovery SP 106 browse for Bowes/Scotland 1580-84 key; cap 2, box end 15:05 UTC (80% 14:57); for LANE LANE-RUN11-account-1
 2026-10-06 14:26 | R11A-HEIN worker | claim: heinsius-vanhaersolte-1703 Next step steps 1-2 (Huygens Heinsius Deel 2 p.361-362 l.929 code 142; Deel 3 p.208 l.588 d Alonne crib check), cap 3, box 14:26-15:16 UTC (80% 15:06), for LANE LANE-RUN11-account-1
+2026-10-06 14:27 | R11A-F3789 (account 1, for LANE LANE-RUN11-account-1) | claim: fr3789-mariedemedicis-savary-1610 -- settle disagreements.tsv; cap 6, box ends 15:40 UTC. Brief first step: check whether ciphertext.tsv is already the settled file.
