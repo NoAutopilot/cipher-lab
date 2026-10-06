@@ -1,0 +1,3 @@
+# fair-game-2010 masc_words seed 1 restarts 16 6 Oct 2026 16:00 UTC; control mean 0.707 (0.075-0.955); score -349.767; TARGET LETTERS SHUFFLED (seed 10, false-positive floor)
+# {"restart_scores": [-349.8, -379.6, -385.4, -393.1, -397.9, -407.1, -408.4, -412.9, -421.8, -426.5, -428.2, -446.9, -447.7, -448.0, -462.2, -482.8], "key": {"a": "t", "c": "e", "d": "n", "e": "e", "f": "d", "g": "n", "h": "r", "i": "f", "j": "b", "k": "n", "m": "s", "n": "t", "o": "o", "p": "m", "q": "g", "r": "i", "s": "s", "t": "a", "u": "h", "w": "l", "y": "h"}, "segmentation": "D sort i on th to T im there been to T fright it end the S i do see st N his all slain meant"}
+dsortionthtotimtherebeentotfrightitendthesidoseestnhisallslainmeant

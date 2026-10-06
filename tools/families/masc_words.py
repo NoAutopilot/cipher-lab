@@ -16,7 +16,6 @@ import homophonic_anneal as ha
 from families import masc as _masc
 
 DESCRIPTION = "simple substitution, n-gram anneal + dictionary-segmentation polish (word-constrained)"
-make_control = _masc.make_control
 score_recovery = _masc.score_recovery
 _LEX = {}
 
@@ -25,10 +24,30 @@ def _p(params, k, d):
     return type(d)(params.get(k, d))
 
 
+def make_control(spec, seed, corpora, params):
+    """The masc control exactly (same window, key and noise for the same seed), but the training text handed back keeps
+    word boundaries (each word folded on its own, joined by spaces, window +- 2000 letters removed), so the dictionary
+    term is trained on text the control window was cut from yet never sees the window. Lesson of R12D-FAIR's first run
+    (6 Oct 2026): the masc control's `rest` is space-free folded text, which left the lexicon empty and the word term inert."""
+    msgs, plain, _ = _masc.make_control(spec, seed, corpora, params)
+    words = [ha.fold(w) for t in corpora for w in t.split()]
+    words = [w for w in words if w]
+    flat = "".join(words)
+    s = flat.find(plain)
+    if s < 0:
+        raise RuntimeError("control window not found in the folded corpus")
+    lo, hi, pos, kept = s - 2000, s + len(plain) + 2000, 0, []
+    for w in words:
+        if pos + len(w) <= lo or pos >= hi:
+            kept.append(w)
+        pos += len(w)
+    return msgs, plain, [" ".join(kept)]
+
+
 def lexicon(corpora, minc=3, maxw=14):
     key = (id(corpora[0]) if corpora else 0, len(corpora), minc, maxw)
     if key not in _LEX:
-        words = Counter(w for t in corpora for w in re.findall(r"[a-z]+", t.lower()))
+        words = Counter(f for t in corpora for f in (ha.fold(w) for w in t.split()) if f)
         keep = {w: c for w, c in words.items() if len(w) <= maxw and (c >= minc) and (len(w) > 1 or w in ("a", "i"))}
         tot = sum(keep.values()) or 1
         _LEX[key] = {w: math.log(c / tot) for w, c in keep.items()}

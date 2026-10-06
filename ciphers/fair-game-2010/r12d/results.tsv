@@ -1,0 +1,8 @@
+run	order	shuffle_seed	control_mean	target_objective	judge_score	judge	decode
+target	scroll	-	0.707	-346.837	-0.984	FAIL	dnotsideleantipolarstsandstentsaresuffertherfledtheheationefhatsees
+target	column	-	0.707	-394.154	-1.370	FAIL	rediturnanweiundahatothertiseotwastallsamenalasribseshoueldnewintst
+null	scroll	7	0.707	-372.873	-1.283	FAIL	families/masc_words-1-shuffle7-r12dfairlexfixsh.txt
+null	scroll	8	0.707	-343.192	-1.086	FAIL	families/masc_words-1-shuffle8-r12dfairlexfixsh.txt
+null	scroll	9	0.707	-359.474	-1.203	FAIL	families/masc_words-1-shuffle9-r12dfairlexfixsh.txt
+null	scroll	10	0.707	-349.767	-1.178	FAIL	families/masc_words-1-shuffle10-r12dfairlexfixsh.txt
+null	scroll	11	0.707	-335.957	-0.980	FAIL	families/masc_words-1-shuffle11-r12dfairlexfixsh.txt

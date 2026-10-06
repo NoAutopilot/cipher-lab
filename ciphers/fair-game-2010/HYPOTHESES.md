@@ -2,6 +2,11 @@
 
 Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
 
+R12D-FAIR (6 Oct 2026): the first `masc_words` row (label "R12D-FAIR word-constrained order=scroll", control 0.567) is
+void as a test of the word term -- the control's training text reached the family space-free, so the lexicon was empty
+and the run was masc plus an n-gram polish. Fixed in tools/families/masc_words.py (make_control keeps word boundaries;
+tools/tests/test_masc_words_family.py); the "lexicon-fix" rows are the pre-registered test (r12d/PREREG-R12D-FAIR.md).
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
@@ -21,3 +26,11 @@ Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: 
 | 3 Oct 2026 09:50 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=10 | 1 | 0.591 (0.179-0.791) | -147.001 | FAIL language: score=-1.118, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 shuf10 scroll |
 | 3 Oct 2026 09:51 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=10 | 1 | 0.591 (0.179-0.791) | -144.952 | FAIL language: score=-1.137, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 shuf10 column |
 | 3 Oct 2026 09:52 | masc | N=67 K=21 restarts=32 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1 | 0.591 (0.179-0.791) | -150.915 | FAIL language: score=-0.985, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.5) | GAPS71 SCROLL final |
+| 6 Oct 2026 15:50 | masc_words | N=67 K=21 restarts=16 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-5 | 0.567 (0.179-0.791) | not run (CONTROL BELOW GATE) | - | no (gate 0.7) | R12D-FAIR word-constrained order=scroll |
+| 6 Oct 2026 15:54 | masc_words | N=67 K=21 restarts=16 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1 | 0.707 (0.075-0.955) | -346.837 | FAIL language: score=-0.984, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.7) | R12D-FAIR word-constrained lexicon-fix order=scroll |
+| 6 Oct 2026 15:58 | masc_words | N=67 K=21 restarts=16 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=8 | 1 | 0.707 (0.075-0.955) | -343.192 | FAIL language: score=-1.086, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.7) | R12D-FAIR lexfix shuf8 scroll |
+| 6 Oct 2026 15:58 | masc_words | N=67 K=21 restarts=16 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1 | 0.707 (0.075-0.955) | -394.154 | FAIL language: score=-1.37, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.7) | R12D-FAIR word-constrained lexicon-fix order=column |
+| 6 Oct 2026 15:58 | masc_words | N=67 K=21 restarts=16 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=7 | 1 | 0.707 (0.075-0.955) | -372.873 | FAIL language: score=-1.283, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.7) | R12D-FAIR lexfix shuf7 scroll |
+| 6 Oct 2026 16:00 | masc_words | N=67 K=21 restarts=16 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=10 | 1 | 0.707 (0.075-0.955) | -349.767 | FAIL language: score=-1.178, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.7) | R12D-FAIR lexfix shuf10 scroll |
+| 6 Oct 2026 16:00 | masc_words | N=67 K=21 restarts=16 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=11 | 1 | 0.707 (0.075-0.955) | -335.957 | FAIL language: score=-0.98, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.7) | R12D-FAIR lexfix shuf11 scroll |
+| 6 Oct 2026 16:00 | masc_words | N=67 K=21 restarts=16 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=9 | 1 | 0.707 (0.075-0.955) | -359.474 | FAIL language: score=-1.203, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.7) | R12D-FAIR lexfix shuf9 scroll |

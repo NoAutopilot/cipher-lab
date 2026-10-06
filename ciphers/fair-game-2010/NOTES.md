@@ -130,3 +130,64 @@ aaymeloglu's SHORTLIST proposes.
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: a crib/word-constrained solve or aaymeloglu's SHORTLIST marker-scheme sweep (a different instrument, not more anneal restarts; rule 3's third-attempt clause), with a matched control at N=67, ~$3. Who acts: agent. Source: this file's last paragraph ("Next step needs a different instrument"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Word-constrained substitution solve and crib scan (R12D-FAIR, account 4, 6 Oct 2026, 15:44-16:0x UTC)
+
+Ciphertext used: the marked letters themselves, both credit-block orders as reconciled by GF4-BATCH22 against
+Rossignol's screenshots (`reconcile_2026-10-03.tsv`): scroll order (= spec/ATS, `test2/order_scroll.txt`) and column
+order (= Schmeh 2026, `test2/order_column.txt`); N=67, K=21, position 1:4 dropped. The image agrees with the spec at
+all 67 visible positions; the two orders differ only in six music-cue positions. The Halpin next-letter scheme was
+already read directly in test 1 and was not re-run. Gate pre-registered before any scored run:
+`r12d/PREREG-R12D-FAIR.md` (commit 59c4f4354).
+
+Instrument (different from test 2, rule 3 third-attempt clause): `tools/families/masc_words.py` -- the masc n-gram
+anneal, then each restart's key hill-climbed on n-gram score + dictionary-segmentation log-prob. Our own code; no code
+from aaymeloglu/unsolved-ciphers (no licence; its SHORTLIST marker-scheme idea is cited, not copied).
+First run was void: the control's training text reached the family with no spaces, so the lexicon was empty (control
+0.567, word term inert). Fixed (make_control keeps word boundaries without the window; offline test
+`tools/tests/test_masc_words_family.py`). The re-run is the pre-registered test.
+
+| run | control mean (seeds 1-5, 16 restarts) | target objective | judge |
+|---|---|---|---|
+| masc, test 2 (r32), for comparison | 0.591 | -150.9 (other scale) | FAIL -0.985 |
+| masc_words, scroll | **0.707** (0.866, 0.791, 0.851, 0.075, 0.955): G1 >= 0.60 and G2 >= 0.70 met | -346.8 | FAIL -0.984 |
+| masc_words, column | 0.707 (same control) | -394.2 | FAIL -1.370 |
+| masc_words, 5 shuffled scroll targets (seeds 7-11) | 0.707 | -336.0 to -372.9 | FAIL -0.980 to -1.283 |
+
+The judge is en (holmes+mobydick): real_p05 -0.92, null_p99 -1.837. Result: **FAIL on both orders.** The control reads
+4 of 5 synthetic English texts at 0.79-0.96, a gain of 0.12 over masc at the same N, K and seeds. Yet the scroll
+target is not above the shuffled-letter null. Shuffle 11 beats it on the judge (-0.980 vs -0.984), and shuffles 11
+and 8 beat it on the objective. Decodes are not English: scroll `dnotsideleantipolarstsands...`, column
+`rediturnanweiundahatother...`. Raw rows: `r12d/results.tsv` and HYPOTHESES.md.
+Reading of the negative: under a monoalphabetic substitution of English, this instrument would have read the text
+about 4 times in 5, and it reads nothing. That is a control-backed negative for "the marked letters are an English
+text under simple substitution", in either credit-block order. It is conditional on four things:
+(i) the en judge's unknown reliability (EN-FOLDS); (ii) one control seed in five fails (0.075), so a single miss is
+expected 1 time in 5; (iii) the anneal allows several signs per letter, so it is not strictly injective. The decode
+keys are many-to-one (e.g. three signs to e), and the same is true on the control, so the comparison is fair, but a
+strictly injective solver is a stronger instrument still untried; (iv) the redacted letter 1:4 is dropped.
+
+Crib scan (`r12d/isomorph_scan.py`, `isomorph_scan.json`; repeat-pattern consistency, null = mean over 200 shuffles).
+The credits' clear line "DEMOCRACYONLYWORKSIFYOUDOYOURPART" has **no consistent placement** in either order (null 0.0).
+Nor do its pieces: DEMOCRACY (null 0.6), ONLYWORKS (0.5), YOURPART (0.9), DOYOURPART (0.04), and TAKEPART (0.07).
+Under simple substitution, none of these can be plaintext at any offset, so no crib-fixed solve was run. Topical words
+with placements (FAIRGAME 3, VALERIE 1 in scroll only, LIBBY 1, CHENEY 2, URANIUM 2, WASHINGTON 1, PATRIOT 3) fall at
+or near their shuffle expectation. They are pattern coincidences, not evidence.
+
+Requests: none (disk only). No subagents.
+
+## Remaining gaps (R12D-FAIR, 6 Oct 2026)
+Read so far: 0 of 67 marked letters read (no hypothesis has produced English; tests 1-2 and R12D-FAIR are negatives or non-tests)
+- strictly injective substitution solve, both orders - blocker: not-attempted; masc_words lets several signs map to one letter (R12D-FAIR section); next: add an injective=1 param to tools/families/masc_words.py, same matched control, ~$2
+- marker-scheme sweep (previous letter, offsets +-2, first letter of next credit name) - blocker: not-attempted; credit words are on disk in reconcile_2026-10-03.tsv; next: script with a planted-message control as in test 1, ~$2
+- transposition or non-English hypotheses - blocker: not-attempted; no family run yet; next: only if the two steps above stay negative, ~$3
+
+## Escalation (R12D-FAIR, 6 Oct 2026)
+- [n/a] siblings: a single film-credit cryptogram with no sibling texts
+- [x] clear-pages: the credits' clear line DEMOCRACY ONLY WORKS IF YOU DO YOUR PART tested as a crib, no isomorph placement in either order
+- [n/a] known-keys: no key material exists for a film-credit puzzle
+- [x] print: web and blog sweep of 3 Oct 2026 found no published decipherment
+- [ ] key-rebuild: injective substitution solver on both orders, planned as gap 1
+- [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots
+- [x] retry: masc_words word-constrained instrument run 6 Oct 2026, control-backed FAIL on both orders
+Verdict: keep going: 3 internal gaps; cheapest next: injective substitution solve with matched control, ~$2
