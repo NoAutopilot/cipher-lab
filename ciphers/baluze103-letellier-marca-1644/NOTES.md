@@ -706,3 +706,35 @@ Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditio
 - [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; circled/plain 9 read void (premise, R9-BAL103B); planned: the 9 shape split against the f.171r control (Remaining gaps)
 - [x] retry: decode_key --check and fr17 re-judge after the 9 context rule (R9-BAL103, 6 Oct 2026): -1.537 -> -1.445
 Verdict: keep going: 1 internal gap; cheapest next: the pre-registered 9 shape split (g-tail vs short) against the f.171r 9s, ~$2
+
+## 9 shape split, pre-registered power check (R10-BAL103C, 6 Oct 2026)
+
+Worker R10-BAL103C (account 1, LANE LANE-RUN10-account-1), 09:48-09:51 UTC 6 Oct 2026 by `date -u`. Key source unchanged: published
+(Tomokiyo 1644 table + R7C's licensed c = p). Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **NON-TEST at this control size; no shape read run.** `r10/PREREG.md` set the gate (best {g-tail, short} -> {i, r|s} accuracy on
+  the f.171r control 9s above a label-permutation p95) and a power check before any crop. The control on disk has **N = 3** aligned
+  9s (calib/sign_table.tsv: s, s, i). Exact enumeration (`r10/power9.py`, `--check` exits 0; `r10/power9.tsv`): 3 label arrangements,
+  a perfect split scores 1.000 and the null p95 is also 1.000 (P(null >= obs) = 0.333). The gate cannot pass at N = 3 whatever the
+  shapes look like (CLAUDE.md rule 3: a control that cannot fail differently licenses nothing), so no crops were cut and no subagent
+  was called. key.tsv, exceptions.tsv, the reading and the judge are unchanged (fr17 -1.445, R9-BAL103).
+- **What the control needs:** at least N = 7 known-value 9s with >= 2 of value i (null p95 0.714, P = 0.048); N = 8 with k = 3 gives
+  P = 0.018. At R7C's rate (3 nines in 94 tokens on f.171r L1-4) that is about 220-280 control tokens, i.e. f.171r L5 onward
+  transcribed blind and aligned to the f.172r decipherment past its line 7 (and f.173 if the letter runs on, DECODE R2743 f.171-173),
+  if the letter has that many lines.
+Where not found: no plaintext of f.50 used or consulted; no new sibling lines read. Requests: none (all from disk; no subagent calls).
+
+## Remaining gaps (R10-BAL103C, 6 Oct 2026)
+Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditional), judge fr17 FAIL -1.445 vs real_p05 -0.852 after the 9 rule; the page decode sits near the r ~ 0.25-0.30 synthetic noise band (r8/result.tsv)
+- f.50 confusable sign pairs (m/mm/mt, tt/venus, venus/q, x/xc/xs/xbar, mm/tt, 9/venus; R/u, b/bt) - blocker: waiting-on the owner's answer on the f.50 sign sorter sorter/out/baluze103_f50_sorter.html, to be published by the account-3 orchestrator (ROOM flag R9-BAL103, 6 Oct 2026); two machine third readers settled one-directionally (R8-BAL103, R8-BAL103B), so per CLAUDE.md Usage 6 the pass is a person's
+- ambiguous 9 (i|r|s; 42 tokens on an fr17 context lean, grade M) - blocker: not-attempted; the shape split is untestable on the 3-token f.171r control (R10-BAL103C power check); next: enlarge the control -- f.171r L5 onward cut with tools/iiif_lines.py (--ark btv1b9001389d --canvas 366), one blind pass, aligned to f.172r past line 7, until >= 7 known 9s with >= 2 of value i, then run r10/PREREG.md unchanged, ~$3.5
+
+## Escalation (R10-BAL103C, 6 Oct 2026)
+- [x] siblings: f.171r L1-4 transcribed blind and scored against the f.172r period decipherment (R7C-BAL103K, 6 Oct 2026): A 0.767 vs permutation p99 0.311, gate PASS
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's table reads f.50 above a permutation null in both blind passes (R8-BAL103, 6 Oct 2026: -1.566/-1.602 vs p99 -1.99/-1.96); judge fr17 FAIL -1.445 after the 9 rule (R9-BAL103)
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: R8-BAL103's registered test puts the failure in the transcription, not the table; no April-table search or rebuild is licensed
+- [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; circled/plain 9 read void (premise, R9-BAL103B); 9 shape split untestable on the N = 3 control (R10-BAL103C); planned: enlarge the f.171r control (Remaining gaps)
+- [x] retry: decode_key --check and fr17 re-judge after the 9 context rule (R9-BAL103, 6 Oct 2026): -1.537 -> -1.445
+Verdict: keep going: 1 internal gap; cheapest next: enlarge the f.171r 9 control (L5 onward, blind pass + f.172r alignment) to >= 7 known 9s, then run r10/PREREG.md, ~$3.5
