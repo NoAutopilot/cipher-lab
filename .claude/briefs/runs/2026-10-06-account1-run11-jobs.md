@@ -143,3 +143,5 @@ Huygens retroboeken Heinsius edition, toc1 accessor (chronological letter index)
 requests): list every Van Haersolte letter in Deel 2 (and Deel 3 if the index makes it cheap) not yet among the 70 pages read; for each, note
 whether the print shows cipher numbers or spaced-type deciphered passages, and any number-to-word pair (C grade only when the edition itself
 states the pair, as letter 929's footnote did). No key change without the pair stated in print. Update NOTES next-step section + Verdict.
+
+Wave 4 sessions (15:12 UTC): R11A-AVSV session_01Fnch9NWA9fjZi8vmp6UEnb; R11A-HEIN2 session_012dQCx28Jsw3KESStRFEJ6K.
