@@ -1,0 +1,12 @@
+# R7-SUR2 blind call (1 Opus subagent, 6 Oct 2026, 2-3-sign context tiles), unblinded with blind_key.json after the call.
+tile	id	linepos	best_ref	best_ref_id	conf	runner_up	runner_up_id	reader_detail
+Q1	c1	L08:37 (control, F2 l)	R3	rl2 (F2 l)	0.7	R6	rg2 (F1 g)	closed bowl; descender closes into a narrow elongated loop returning to the stem
+Q3	c2	L08:5 (control, F1 g)	R4	rg1 (F1 g)	0.65	R1	rl1 (F2 l)	closed bowl; short descender ending in a heavy blob, small left hook, open, no loop
+Q4	q1	L08:51 (query, l H)	R1	rl1 (F2 l)	0.6	R3	rl2 (F2 l)	descender curls left into a narrow closed loop back to the stem
+Q6	q2	L10:30 (query, l H)	R4	rg1 (F1 g)	0.5	R7	ri1 (i-class)	descender ends in an open leftward sweep/hook (faint at the bottom)
+Q5	q3	L11:17 ([sigma], i M)	none	-	0.7	R6	rg2 (F1 g)	dark shaded s/ss-like sign with a closed knot; seen only as a neighbour in R6
+Q2	q4	L10:66 ([sigma], e M)	none	-	0.75	R2	re2 (a, e)	closed bowl with a hooked top stroke rising right, no descender
+# groups (reader): {Q1,Q4}=c1+q1 F2 0.6; {Q3,Q6}=c2+q2 F1 0.45; all four g-forms one letterform 0.55; distinct: Q2 (q4), Q5 (q3) from each other and all g.
+# reader caution: Q4/Q6 (q1/q2) share neighbours ("noo_e"); the closed-vs-open split for them rests on a faint ending.
+# Gate (prereg): c1 -> F2 >=0.6 YES (0.7); c2 -> F1 >=0.6 YES (0.65). GATE PASS.
+# Rule: q1 -> F2 0.6 -> no change (l H stands). q2 -> F1 0.5 < 0.6 -> no change, logged. q3/q4 descriptive only: two look-alike signs.
