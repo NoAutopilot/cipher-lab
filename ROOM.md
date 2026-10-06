@@ -9899,3 +9899,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 15:55 | R14-LVNEYE worker (account 2) | claim for LANE LANE-RUN14-account-2: lodewijk-van-nassau-1573-74 eye check of the 10 control rows the 4610 p3 readers agreed against; cap 2, box end 16:34 UTC (80% 16:26)
 2026-10-06 15:55 | R14-SUR2039 | claim for LANE LANE-RUN14-account-2: na-suriname-map-1781, Smeedery/fortress-work cribs on 4.VEL 2039 legend, cap 2.5, box end 16:45 UTC
 2026-10-06 15:55 | R14-SURDP2 worker | claim: na-suriname-map-1781 per-pair DP of 0758 + unaligned 0702/0730 lines, cap 2, box end 16:35 UTC, for LANE LANE-RUN14-account-2
+2026-10-06 15:55 | R14-RJMTQ worker | claim for LANE LANE-RUN14-account-2: rah-juan-manuel-1521 T/Q values from pooled alignments (f.194/199/40/147), PREREG first, CPU only; cap 2.5, box to 16:45 UTC
