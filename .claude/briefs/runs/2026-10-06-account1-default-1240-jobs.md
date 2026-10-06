@@ -86,3 +86,40 @@ Folder Verdict cheapest next (A1B-CEPPO-36V: two Sonnet reads gave no agreed let
 (no prior readings, no key hints) and ask for a letter per tile with a confidence; compare to the two Sonnet reads. A letter counts only where
 2 of 3 readers agree; otherwise the tile stays M. If any value enters the key, decode --check. Write "## D1-CEPPO" in NOTES.md, Remaining gaps /
 Escalation, gaps_check.py.
+
+## Wave 2 (spawned 13:0x UTC 6 Oct). Wave 1 lesson: an Opus session floor is ~2 for a build job and ~3.5 for a full verifier pass; caps below assume it.
+
+### D1-SEURES -- fr3151-seure-1558, Morvilliers 1549 fo. 66r sign sorter for the owner (Opus; cap 3, box 45 min; disk only)
+Intake gate: `fr3151-seure-1558: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+D1-SEURE stopped at the >0.1 pass split (err 0.778); TRANSCRIPTION.md: next is the owner's sign sorter. Build it from D1-SEURE's 22 re-cut line
+crops with tools/sign_sorter.py (use the folder's or a sibling's build.sh pattern; focus box = the signs the two passes split on). Must PASS
+`python3 tools/sorter_preflight.py` and have 5+ random tiles opened against the line image. Hand to the account-3 orchestrator with a ROOM flag
+line (do not publish, do not edit ASKS.md). Remaining gaps / Escalation; gaps_check.py.
+
+### D1-ECK62W -- eckert-1862, the 1865 received copies in mssEC 12-13 for the Lehigh third witness (Opus; cap 2.5, box 40 min)
+Intake gate: `eckert-1862: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next (D1-ECK62L). Reuse D1-ECK62L's harvest of mssEC 12-13 on disk if present (no refetch); method as GAPS171.
+Report witnesses found, grade per rule 4, --check exit 0 if anything changes.
+
+### D1-DEC2678S -- decode-2678-bnf-colbert127-gravel-1665, sommaire sweep of Mél. Colbert 120-125 and 131-133 for Ratisbon cipher letters (Sonnet; cap 3, box 60 min)
+Intake gate: `decode-2678-bnf-colbert127-gravel-1665: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next. Same method as the 126-130bis sweep (read that NOTES.md section first and reuse its script): Gallica OCR/sommaire
+pages via the IIIF/host-table routes, good-citizen rule. List every Gravel/Ratisbon entry and whether it is marked in cipher; no decoding.
+Write "## D1-DEC2678S" in NOTES.md with volumes covered and not covered; Remaining gaps / Escalation; gaps_check.py.
+
+### D1-F16142A -- fr16142-noailles-constantinople-1571, per-token alignment with denser anchors (Opus; cap 2.5, box 40 min; disk only)
+Intake gate: `fr16142-noailles-constantinople-1571: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next. Read the latest dated sections and HYPOTHESES.md first; any gate pre-registered (PREREG pushed before the scored
+run) with a control that can vary on the statistic; report both numbers. --check exit 0 if the reading changes; a reading change after AUDIT.md
+is flagged in ROOM for a verifier. Remaining gaps / Escalation; gaps_check.py.
+
+### D1-F16104I -- fr16104-vivonne-spain-1572, ink 53 audit (depth re-check) (Opus; cap 6, box 75 min)
+Intake gate: `fr16104-vivonne-spain-1572: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next (ink 53 only; ink 54 is a later job). Read how earlier ink audits in NOTES.md were done and repeat that method;
+crop step pasted, one subagent call per page/leaf. Report per-token grade counts before/after and the rule 4a depth check; --check exit 0.
+A reading change after AUDIT.md: flag in ROOM for a verifier. Remaining gaps / Escalation; gaps_check.py.
+
+### D1-ES132G -- es132-vargas-mexia-1578, cabinet-noir git-log re-check, then the BL Add MS 28421 catalogue lookup (Opus; cap 2.5, box 35 min)
+Intake gate: `es132-vargas-mexia-1578: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next, both steps exactly as the Verdict names them (read the NOTES.md lines that define them). The BL lookup uses
+searcharchives.bl.uk?format=json (host table); quote the record. No Cipher 3/4 work in this job. Remaining gaps / Escalation; gaps_check.py.
