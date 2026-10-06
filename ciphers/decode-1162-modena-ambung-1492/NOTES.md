@@ -3,6 +3,7 @@
 Status: partial
 (VERIFY-MOD1162, 3 Oct 2026: AUDIT.md -- plaintext of the cipher runs N0, period gloss on the leaf and DECODE doc 3593; the 1168-key finding re-derives and its control holds.)
 (MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
+(D1-DEC1162F, 6 Oct 2026: focus sheet of the 22 unsettled clear-text words for a person's read built, `clear/focus/`, not published; no reading changed.)
 (R10-DEC1162, 6 Oct 2026: clear text of both pages transcribed from native crops, `clear/clear_text.tsv`, 42 lines, 41 doubtful words; no cipher reading changed.)
 (MOD1162B, 3 Oct 2026: 8 of 19 uncertain signs settled at native resolution, G unchanged, fresh-seed control PASS; tokens C 33, S 12, M 24, I 5, U 3; g/q/sigma split still open.)
 Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
@@ -633,7 +634,7 @@ Cost: 2 Sonnet subagent calls + 1 reconciliation unit. Requests: none (all crops
 ## Remaining gaps (R10-DEC1162B, 6 Oct 2026)
 Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 5, U 3); verso has no cipher (DECODE doc 3593 and image 2); 31 g/q tiles built into a sorter page (D2-1162); clear text of both pages transcribed, 42 lines, two blind passes, 29 doubtful words left (R10-DEC1162, R10-DEC1162B)
 - the g/q/sigma shape split (8 signs still '?', M) - blocker: waiting-on ASKS row 144 (the owner's sign sort of sorter/modena-gq-sorter.html); then sign_sorter_apply.py, re-key 1168 with split labels (align/run_align.py), re-run score_g.py and decode_key.py --check here, ~$2
-- the 29 doubtful clear-text words, the signature and the month of the date line - blocker: not-attempted; two machine passes leave them split, so per Usage 6 the next reader is a person or a palaeographer; next: one owner/palaeographer read of the 20 crops guided by clear/doubts_R10B.tsv rows marked 'stays', 'read-doubtful' or 'RAISED', ~$0.5 to prepare a focus sheet
+- the 29 doubtful clear-text words, the signature and the month of the date line - blocker: waiting-on the answer TSV from a person's read of clear/focus/focus-sheet.html (22 cards; built D1-DEC1162F 6 Oct 2026, handed by ROOM flag to the account-3 orchestrator to publish); two machine passes leave them split, so per Usage 6 the next reader is a person or a palaeographer; then apply the answer TSV to clear_text.tsv/doubts_R10B.tsv, ~$0.5 (the 7 unmarked doubts of lines 1.20-1.24, 2.2, 2.4, 2.8 are not on the sheet: which words they are was never recorded)
 - code groups `T o` (L01) and `.e.` (L06) - blocker: open-codes; one occurrence each, the L01 gloss is not separable from the letter group's, the L06 sign is unglossed
 
 ## Escalation (R10-DEC1162B, 6 Oct 2026)
@@ -644,4 +645,14 @@ Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 
 - [ ] key-rebuild: split g/q into shapes from the owner's sort (sorter/ built D2-1162 5 Oct 2026), then re-key 1168 and re-score here; waits on the sort
 - [x] image-check: full-size p.1 and p.2 re-fetched and cut at native resolution, R10-DEC1162 6 Oct 2026
 - [n/a] retry: nothing failed that a retry would change
-Verdict: keep going: 2 internal gaps; cheapest next: a focus sheet of the 22 unsettled clear-text words (doubts_R10B.tsv 'stays'/'read-doubtful'/'RAISED') for a person's read, ~$0.5; the g/q split waits on ASKS 144
+Verdict: keep going: 1 internal gap; cheapest next: once the account-3 orchestrator publishes clear/focus/focus-sheet.html and a person returns its answer TSV, apply it to clear_text.tsv/doubts_R10B.tsv (~$0.5); the g/q split waits on ASKS 144
+
+## D1-DEC1162F (6 Oct 2026)
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md` "### D1-DEC1162F". No reading, key, grade or gloss changed.
+Built `clear/focus/focus-sheet.html` (22 cards = every `doubts_R10B.tsv` row marked stays 20 / read-doubtful 1 / RAISED 1):
+word crop, boxed line, text now, blind pass A and B, crop note, transcribed line, and an answer box exported as TSV. Word boxes
+(`clear/focus/boxes.tsv`) placed by eye on ruler views of the 20 committed line crops; 5 random tiles (F16 F02 F01 F10 F03,
+seed 1162) checked boxed on their line images (`check_contact.png`), all on their word; all 22 tiles viewed, 4 re-placed once.
+Not published; handed to the account-3 orchestrator by ROOM flag. The 7 unmarked doubts counted by R10-DEC1162 are not on
+the sheet (their words were never recorded). Requests: none (crops on disk).
