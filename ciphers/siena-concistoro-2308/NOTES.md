@@ -722,6 +722,66 @@ R4777's three rows (file IMG_R4777_I27882_P.jpg, 2248x4000, filesrv `?file=` nam
 if the concordance values at least about 100 of the 232 tokens; R9's P variant reached 71 and had a power of 0.63. Otherwise no. 15
 stays parked as too-short / no-key-material.
 
+
+## R10-SIENA4777 -- no. 15 against key R4777, shape concordance (account 4 worker for LANE-RUN10-account-4, 6 Oct 2026, 10:00-10:06 UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` job R10-SIENA4777 (R10-SIENA15's "Next step for no. 15"). Status unchanged: `open`.
+
+**Pre-registration.** `PREREG-R10-SIENA4777.md`, pushed in f2a3c5e6c at 10:02 UTC before the R4777 image was fetched; it is
+PREREG-R9-SIENA15.md with only the key sheet, the concordance file and the null rate (each variant's own) changed. The concordance
+`concordance_R4777_no15.tsv` was written from the crops and pushed in 35a82cadc (10:05 UTC) before the scored run.
+
+**Route.** One headless DECODE login, `tools/decode_browser_login.js 4777 <scratch> --fetch <2 filesrv URLs> --max-files 2 --delay 1700`:
+IMG_R4777_I27882_P.jpg (2248x4000, sha1 2799223dc1d3...) and IMG_R4803_I27950_P2.jpg (sha1 71b6b062..., **matches images/manifest.json**).
+Saved RecordsView page deleted (account name); images and crops stay in the scratchpad. Requests: de-crypt.org about 5 (login 2,
+RecordsView 1, images 2), 1.7 s apart, no challenge; github.com 1 sparse shallow clone of dbourdeau/cyphersolver `targets/siena1421`
+(read only: transcripts/no15v.txt sign legend).
+
+**Crop step (pasted).**
+
+    $ python3 tools/iiif_lines.py --image IMG_R4803_I27950_P2.jpg --out crops --region 60,1990,2150,600 --prefix p2 --max-width 1100 \
+        --overlap 100 --distance 45 --prominence 20 --ink 120 --smooth 3 --top-margin 20
+      centres (region y): 11 62 111 200 285 334 415 473 519 590
+      wrote 30 crops
+
+no. 15 was viewed as the two half-width strips of that region; R4777 as one overview and four native PIL crops (alphabet left and
+right, Doppie+Nulle left and right; autocontrast). Vision looks: 7, by the worker itself, no subagents.
+
+**R4777 as read (letters only).** Alphabet a (two columns A/a): filled C, triangle, cursive a-loop, 3; b 4-like; c bold T; d 8;
+e circled 8, dot-bar-dot, "my"; f double-barred slash; g barred 4; h box on a stem; i n with double bar, 2f-like, theta with the bar
+run left; l double-crossed upright; m q with a barred descender; n cross with dots; o y-loop, small o with a tail, phi-like; p ß-like;
+q two circles joined by a bar; r dotted y; s loop; t ß-like; u barred d, ɛ-loop, $; x small R; z theta; & bar with a dot. Doppie
+bb-tt: dotted C, cross on triangle, marked m, three barred strokes, alpha, barred V, tailed n, H with a stroke, q over b, flag, tailed g,
+blob, x with a dot and a foot bar. Nulle: 8 with an o, fork on a stem, barred I, reversed d, A, spiral, 22/24, capped 8, circled C,
+barred b, R with an f-tail, V, B.
+
+**Concordance.** P (plainly the same sign): XT=tt, TH=z, 8=d, DIV=e, OL=o, Q+=m, 4=b; nulls A, PSI, V, AMP: 46 valued + 24 null
+tokens of 232. V adds 17 looser likenesses (R=x, H=nn, 1=qq, TO and TB=c, OO and OO:=q, O2=e, D null, TH=i ...): 104 + 34. Still no
+counterpart on R4777 for U, LAM, LV, MM, DOT, ST, RHO, P, P+, OS, OI, DF (about 70 tokens).
+
+**Test (`specs/cheap-tests/siena-concistoro-2308/run_test_no15_r4777.py`, `results_no15_r4777.json`, `--check` exit 0; reuses
+run_test_no15.py, whose own `--check` still exits 0).**
+
+| variant | valued / null / 232 | S2 real | val-shuf mean (p95), p_a | ord-shuf mean (p95) | gate | power |
+|---|---|---|---|---|---|---|
+| P | 46 / 24 | -1.448 | -1.496 (-1.167), 0.446 | -1.356 (-1.145) | FAIL | 0.49 |
+| V | 104 / 34 | -1.907 | -1.786 (-1.568), 0.816 | -1.783 (-1.687) | FAIL | 0.99 |
+
+**Result.** P misses at power 0.49: a **non-test at this N** (pre-registered). V reaches R10-SIENA15's ~100-token condition and misses
+at power 0.99: a **control-backed negative for the V mapping** (its real S2 sits below both shuffle means). Neither shows R4777 is not
+no. 15's key in some other mapping, but R4777 as drawn lacks no. 15's commonest families (U, LAM, DOT, R as a letter) and the
+looser shape mapping that reaches the coverage condition reads worse than shuffled. With R9-SIENA15 (R4764) and R10-SIENA15 (eleven
+other sheets): **no fitting key in fasc. 1; no. 15 stays too-short / no-key-material.** The folder is `open`, so there is no
+"## Remaining gaps" section; this line is the gap record.
+
+Post hoc, not in the PREREG (no gate): R4777's DIV-like e homophone and OL-like o homophone are the closest shared signs, and DIV
+opens most of no. 15's runs, where R9 had taken it for a null. One observation.
+
+Grades: no token read; no H or C. No decode offered as a reading, no key.tsv, no transcript change.
+
+**Next step for no. 15 (suggestion, not run):** none within fasc. 1. Only new material reopens it: another Bandini letter of 1546-47
+with cipher (busta or Bandini's own register), or a key for the imperial-court orator found outside Concistoro 2308.
+
 ## R10-SIENA7C -- no. 7 J/B arbitration on the other nine lines, agent J error on the whole letter (account 4 worker for LANE-RUN10-account-4, 6 Oct 2026, 09:42-09:5x UTC by date -u)
 
 Brief `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` job R10-SIENA7C (R9-SIENA7B's "Next step"). Status unchanged: `open`.

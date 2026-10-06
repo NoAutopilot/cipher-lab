@@ -55,3 +55,10 @@ L12 checked token by token) on 3-6x zooms of the image, extending R9-SIENA7B's L
 L02-L11 (0.9-7.0%; CP95 of the high figure 4.5-10.4%; 6.6%, CP95 upper 9.7% with L12). Under PREREG-R10-SIENA7C.md: control-backed
 at the point estimate, not at the 95% bound. The R9-SIENA7 negative (plain homophonic, seven C anchors) stands as control-backed on
 the whole letter at the measured error (arb_error_no07.py).
+
+R10-SIENA4777 (6 Oct 2026, 10:06 UTC): no. 15 (R4803) against key R4777 (1540s imperial-court nomenclator; Granvelle, Cobos, Don
+Pedro de Toledo) through a shape concordance, R9-SIENA15's S2 gate unchanged (PREREG-R10-SIENA4777.md, f2a3c5e6c; concordance
+35a82cadc, both before scoring). P (46 valued / 24 null of 232): S2 -1.448 vs value-shuffle mean -1.496 (p_a 0.446), order-shuffle
+mean -1.356 (p95 -1.145): FAIL at power 0.49 = NON-TEST at this N. V (104 / 34): S2 -1.907 vs value-shuffle -1.786 (p_a 0.816),
+order-shuffle -1.783 (p95 -1.687): FAIL at power 0.99 = control-backed negative for the V mapping. R4777 as drawn is not shown to be
+no. 15's key; no fitting key in fasc. 1 (with R9-SIENA15, R10-SIENA15). run_test_no15_r4777.py --check exit 0.
