@@ -1015,3 +1015,41 @@ disk only; keep no. 9 out of the pool unless a reader-bias control (blind no. 11
 merges. Caveat for that run: the pooling rests on a common letter/digit alphabet, which says nothing about a common key.
 Gap record (status `open`): no. 7 nomenclator layer -- agent-J confound checked (no. 19 survives on letters/digits, no. 9 does not);
 next: pooled 7+19 R10-SIENA7N family run, ~$3.
+
+## R13-SIENA719 -- nos. 7 + 19 pooled, homophonic + nomenclator family, matched control (account 4 worker for LANE-RUN13-account-4, 6 Oct 2026, 18:06-18:1x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run13-jobs.md` job R13-SIENA719 (R13-SIENAJ's next step). Status unchanged: `open`.
+Disk only, no requests to any host. No key, no reading. Pre-registration `PREREG-R13-SIENA719.md`, pushed in 9c6b0ad7f (header time
+corrected to 18:08 by date -u in 709a81b3d, no content change) before the scored control; no dev runs. Script
+`specs/cheap-tests/siena-concistoro-2308/run_test_pool719_nomen.py` imports R10-SIENA7N's `run_test_no07_nomen.py` unchanged (solver
+`tools/homophonic_anneal.py solve_nomen()`, knobs, VOCAB/NOMEN, corpus it16dip minus Desjardins II, not era-matched) and replaces only
+the material: no. 7 then no. 19 (agent J), 25 runs, N=481, K=62 union, the seven C glosses fixed wherever the sign occurs. `--check`
+exit 0 (`results_pool719_nomen.json`); R10's `--check` label now prints the results file it read (no behaviour change).
+
+**Matched control** (N=481, K 59-62 realised, 10 single-sign word codes making 15-28 word tokens per seed, seeds 1-5):
+
+| injected error | mean token accuracy (seeds) | mean nomenclator recall (seeds) | R10-SIENA7N at N=363 (acc / recall) |
+|---|---|---|---|
+| 0% | 0.824 (0.730-0.906) | **0.122** (0, 0.611, 0, 0, 0) | 0.855 / 0.043 |
+| 3.5% | 0.747 (0.615-0.850) | 0.094 | 0.764 / 0.000 |
+| 7% | 0.668 (0.518-0.790) | 0.078 | 0.755 / 0.071 |
+
+G1 (token accuracy >= 0.60 at 7%) met; G2 (nomenclator recall >= 0.50 at 0%) **not met**: CONTROL BELOW GATE. Per the PREREG the target
+and the shuffled target were **not run** and nothing went to the judge. Only one seed of five recovered word codes at all (seed 2, 0.611);
+the solver puts `che` on some sign in every run and otherwise scatters `per`/`di`/`del` on wrong signs.
+
+**Result: non-test at pooled N=481 for the nomenclator layer**, the same verdict as R10-SIENA7N at N=363. The one knob changed (N, +118
+tokens) moved G2 from 0.043 to 0.122 but G1 down (0.755 -> 0.668 at 7%, the larger K diluting the letter layer), so the numbers did not
+move together toward the gate. Rule 3's second-attempt clause: this instrument (ciphertext-only `solve_nomen` on agent J's tokens) is
+logged **untested-by-this-tool at N <= 481** for a nomenclator on no. 7 (+19), not refuted; a third run of the same family on a larger
+pool of the same transcripts is not the next step. A nomenclator on nos. 7/19 is neither shown nor excluded. Grades: no token read, no
+key change. Cryptanalytic result only.
+
+**Next step (suggestion, not run):** a different instrument or new material, not a further pool: (a) word codes from outside the letters
+(a fasc. 2 key sheet or legend whose code list can be planted as a crib; R4750 already tried, R11-SIENA4750, non-test/chance), or (b) a
+structural restriction the current solver lacks -- word codes allowed only on signs J tokenised as multi-character units or on drawn
+(non-letter, non-digit) signs, which a control can test at the same N before the target (a tool option in `homophonic_anneal.py` plus one
+control run, about USD 2-3, disk only). Run (b)'s control first; if it too is below G2 at N=481, the layer is untestable without new
+material.
+Gap record (status `open`): no. 7 nomenclator layer -- pooled 7+19 control below gate (non-test, second attempt with this instrument);
+next: structural word-code restriction (b), ~$3.

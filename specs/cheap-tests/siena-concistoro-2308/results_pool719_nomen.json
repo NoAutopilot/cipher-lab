@@ -1,0 +1,361 @@
+{
+ "control": {
+  "0.0": {
+   "rows": [
+    {
+     "seed": 1,
+     "err": 0.0,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 81,
+     "nomen_tokens": 18,
+     "token_acc": 0.73,
+     "token_acc_unfixed": 0.675,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "della",
+      "per"
+     ],
+     "decoded": "petnereinueneredellaquellaimprinaallafoinedallalfimparealiattedasuirfuineruoloroidellamententrouiinionidellasperlisercre",
+     "plain": "passareinuenireperquellaimpresaellafossedallaltimperialiattesolauirtueneruoloroepermantenprouuisioniperlasualibercreragi"
+    },
+    {
+     "seed": 2,
+     "err": 0.0,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 77,
+     "nomen_tokens": 18,
+     "token_acc": 0.771,
+     "token_acc_unfixed": 0.728,
+     "nomen_recall": 0.611,
+     "word_signs_assigned": [
+      "che",
+      "di",
+      "per",
+      "re"
+     ],
+     "decoded": "licuramendellefteralenedisoggiuntechebisognandoeintilmedeticoeacofacheioposatifralaroionirauarealitaniaperquelsarpiacber",
+     "plain": "sicuramendellesserelansuasignoriasoggiunsechebisognandoainsulmedesimoeecosachepocosatisfaloroionhfauoreapisanieperquessa"
+    },
+    {
+     "seed": 3,
+     "err": 0.0,
+     "N": 481,
+     "K": 62,
+     "fixed_signs": 7,
+     "fixed_tokens": 70,
+     "nomen_tokens": 28,
+     "token_acc": 0.817,
+     "token_acc_unfixed": 0.786,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che"
+     ],
+     "decoded": "namiciainmaquelladestroratotiaimiiiiichebenecheoccheintidarmiqualealpreiinteritrouauaauandemiconfersosanciaueialmoltoinc",
+     "plain": "peramicieinmconquelladestroratotdiasmeiiiigbanegocgentidarmequalealpresentesitrouauaauendsignoriamiconfessosenonciaueegl"
+    },
+    {
+     "seed": 4,
+     "err": 0.0,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 76,
+     "nomen_tokens": 15,
+     "token_acc": 0.906,
+     "token_acc_unfixed": 0.889,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "del",
+      "di"
+     ],
+     "decoded": "aquesiamagardadoueedeplsigidafefrachequalesottoquandoiopoferfiauereoggichereamesentadibuofuitterifedicimilafmanlosomaiom",
+     "plain": "diquestamagardadoueedepluigidasessailqualesottoquandoiopofessiauereoggiilreamesenzalabuosuizzerisedicimilafmanlosomaiomi"
+    },
+    {
+     "seed": 5,
+     "err": 0.0,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 73,
+     "nomen_tokens": 16,
+     "token_acc": 0.896,
+     "token_acc_unfixed": 0.877,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "per"
+     ],
+     "decoded": "fopradicodelesfandronaperoandrodietroalriauertattomentionedellagiunteincampodelliambuersognatriannoineleramapergiudicose",
+     "plain": "sopradicodalessandronaperoandrodietroalriauerfattomenzionedellagiuntaincampodelliambuersolapatriadipoineleramanongiudico"
+    }
+   ],
+   "mean_token_acc": 0.824
+  },
+  "0.035": {
+   "rows": [
+    {
+     "seed": 1,
+     "err": 0.035,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 83,
+     "nomen_tokens": 18,
+     "token_acc": 0.723,
+     "token_acc_unfixed": 0.671,
+     "nomen_recall": 0.222,
+     "word_signs_assigned": [
+      "che",
+      "del",
+      "della",
+      "di"
+     ],
+     "decoded": "pitrireinuenoredelladiellaimpreraetsalotredallasiimperaaliattefoauiriueneruoloroedellamintenproutirionidellaallisefcrera",
+     "plain": "passareinuenireperquellaimpresaellafossedallaltimperialiattesolauirtueneruoloroepermantenprouuisioniperlasualibercreragi"
+    },
+    {
+     "seed": 2,
+     "err": 0.035,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 78,
+     "nomen_tokens": 18,
+     "token_acc": 0.615,
+     "token_acc_unfixed": 0.543,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "con",
+      "di",
+      "per"
+     ],
+     "decoded": "leturamandellacheseraleneffoggiunsedipenognandieinsilmedesiperoetticheaditoiofaticheealoriionconeauorealesanianquelfarii",
+     "plain": "sicuramendellesserelansuasignoriasoggiunsechebisognandoainsulmedesimoeecosachepocosatisfaloroionhfauoreapisanieperquessa"
+    },
+    {
+     "seed": 3,
+     "err": 0.035,
+     "N": 481,
+     "K": 62,
+     "fixed_signs": 7,
+     "fixed_tokens": 71,
+     "nomen_tokens": 28,
+     "token_acc": 0.778,
+     "token_acc_unfixed": 0.741,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che"
+     ],
+     "decoded": "lamiciainmaquelledestroretitieimeiiiichefanocheoccheentiiarmequaloalproientenitrouaueauandemiconfonsosanciaueeglmoltoinc",
+     "plain": "peramicieinmconquelladestroratotdiasmeiiiigbanegocgentidarmequalealpresentesitrouauaauendsignoriamiconfessosenonciaueegl"
+    },
+    {
+     "seed": 4,
+     "err": 0.035,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 80,
+     "nomen_tokens": 15,
+     "token_acc": 0.85,
+     "token_acc_unfixed": 0.83,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "del",
+      "di"
+     ],
+     "decoded": "chequesiaragardatobeedeplsigitacesladiqualesottoquantoiopofelsiauereoggidirearesenfainuosuifferisedicimilafranlosemaqomi",
+     "plain": "diquestamagardadoueedepluigidasessailqualesottoquandoiopofessiauereoggiilreamesenzalabuosuizzerisedicimilafmanlosomaiomi"
+    },
+    {
+     "seed": 5,
+     "err": 0.035,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 74,
+     "nomen_tokens": 16,
+     "token_acc": 0.767,
+     "token_acc_unfixed": 0.727,
+     "nomen_recall": 0.25,
+     "word_signs_assigned": [
+      "che",
+      "di",
+      "per"
+     ],
+     "decoded": "aopradicodelasaandronsperoandrodietroalriacerlattomancionedellafiunteincampodalliatouersognatriadinoinaleratoperficuicon",
+     "plain": "sopradicodalessandronaperoandrodietroalriauerfattomenzionedellagiuntaincampodelliambuersolapatriadipoineleramanongiudico"
+    }
+   ],
+   "mean_token_acc": 0.747
+  },
+  "0.07": {
+   "rows": [
+    {
+     "seed": 1,
+     "err": 0.07,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 88,
+     "nomen_tokens": 18,
+     "token_acc": 0.653,
+     "token_acc_unfixed": 0.593,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "della"
+     ],
+     "decoded": "pafrareinienoresmaellaalprcheraetsanotredallasiimperialiatteneudiriichenertolorochesmantempruitirionisualiseucreragioned",
+     "plain": "passareinuenireperquellaimpresaellafossedallaltimperialiattesolauirtueneruoloroepermantenprouuisioniperlasualibercreragi"
+    },
+    {
+     "seed": 2,
+     "err": 0.07,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 80,
+     "nomen_tokens": 18,
+     "token_acc": 0.638,
+     "token_acc_unfixed": 0.574,
+     "nomen_recall": 0.389,
+     "word_signs_assigned": [
+      "che",
+      "de",
+      "di",
+      "per"
+     ],
+     "decoded": "licuramendeqnefieracendelloegiunmeabifognandoeiniinmedaiimoeacofachelofolatiftaseroionitauerealiianitaquellarfiambareiii",
+     "plain": "sicuramendellesserelansuasignoriasoggiunsechebisognandoainsulmedesimoeecosachepocosatisfaloroionhfauoreapisanieperquessa"
+    },
+    {
+     "seed": 3,
+     "err": 0.07,
+     "N": 481,
+     "K": 62,
+     "fixed_signs": 7,
+     "fixed_tokens": 81,
+     "nomen_tokens": 28,
+     "token_acc": 0.518,
+     "token_acc_unfixed": 0.448,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "con",
+      "de",
+      "la",
+      "per"
+     ],
+     "decoded": "ramaciaicheperlaquelaauederoratataarpereiiiiglicheigongentidirperequalialtrirecheteiatrauauaauendomiconondiieadelsiauoei",
+     "plain": "peramicieinmconquelladestroratotdiasmeiiiigbanegocgentidarmequalealpresentesitrouauaauendsignoriamiconfessosenonciaueegl"
+    },
+    {
+     "seed": 4,
+     "err": 0.07,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 84,
+     "nomen_tokens": 15,
+     "token_acc": 0.742,
+     "token_acc_unfixed": 0.708,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "de",
+      "del",
+      "di",
+      "non"
+     ],
+     "decoded": "iqueseamagarnadobeenepliigidacelladiqualesottoquandoiopofelliauereoggidireamesentanonfuoluitteiilenoricheilafmanlosachei",
+     "plain": "diquestamagardadoueedepluigidasessailqualesottoquandoiopofessiauereoggiilreamesenzalabuosuizzerisedicimilafmanlosomaiomi"
+    },
+    {
+     "seed": 5,
+     "err": 0.07,
+     "N": 481,
+     "K": 59,
+     "fixed_signs": 7,
+     "fixed_tokens": 75,
+     "nomen_tokens": 16,
+     "token_acc": 0.79,
+     "token_acc_unfixed": 0.756,
+     "nomen_recall": 0.0,
+     "word_signs_assigned": [
+      "che",
+      "per"
+     ],
+     "decoded": "topradicodelestandroraperoandrodistroalriaiercheattooentionedellagiunteincatpodellinmiuersonfatrianfoinlleramarglidicope",
+     "plain": "sopradicodalessandronaperoandrodietroalriauerfattomenzionedellagiuntaincampodelliambuersolapatriadipoineleramanongiudico"
+    }
+   ],
+   "mean_token_acc": 0.668
+  }
+ },
+ "tok_sha1": "bcb151b45c951bdc066ac2bff9333c3d7be380f9",
+ "restarts": 12,
+ "iters": 60000,
+ "word_prob": 0.2,
+ "word_bonus": 1.0,
+ "model": [
+  "bub_gb_laRnTtJmsDAC.txt.gz",
+  "bub_gb_ZJMxff7r4LUC.txt.gz",
+  "letterediprincip01char.txt.gz",
+  "letterediprincip02char.txt.gz",
+  "letterediprincip03char.txt.gz"
+ ],
+ "heldout": "gri_33125010469852.txt.gz",
+ "fix": {
+  "q": "a",
+  "6": "n",
+  "+": "o",
+  "2": "e",
+  "x": "r",
+  "c": "o",
+  "QP": "e"
+ },
+ "vocab": [
+  "che",
+  "et",
+  "per",
+  "non",
+  "il",
+  "la",
+  "di",
+  "de",
+  "del",
+  "della",
+  "con",
+  "sua",
+  "suo",
+  "signoria",
+  "signore",
+  "duca",
+  "re",
+  "papa",
+  "milano",
+  "siena"
+ ],
+ "nomen": [
+  "che",
+  "per",
+  "non",
+  "di",
+  "la",
+  "il",
+  "con",
+  "del",
+  "signoria",
+  "sua"
+ ]
+}

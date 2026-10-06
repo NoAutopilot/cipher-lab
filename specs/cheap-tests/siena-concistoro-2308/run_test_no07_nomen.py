@@ -146,7 +146,7 @@ def main():
     res = json.loads(OUT.read_text()) if OUT.exists() else {}
     if a.check:
         ok = res.get("tok_sha1") == tok_sha() and "control" in res
-        print("results_no07_nomen.json", "current" if ok else "STALE or missing")
+        print(OUT.name, "current" if ok else "STALE or missing")
         sys.exit(0 if ok else 1)
     t0 = time.time()
     with Pool(a.procs) as pool:
