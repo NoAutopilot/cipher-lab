@@ -1,64 +1,100 @@
 {
-  "ark": "btv1b10035540v",
-  "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b10035540v",
-  "volume": "BnF Melanges de Colbert 127 (Correspondance de Colbert de janvier et fevrier 1665, 585 feuillets)",
-  "found_via": "archivesetmanuscrits.bnf.fr free-text search 'Melanges Colbert 127' -> notice ark:/12148/cc954302 (Colbert 127-127bis) -> the pre-expanded sommaire tree names 'Fol. 349 - l'abbe de Gravel', matching this item -> ajaxGetCompDisplay eadCompId=FRBNFEAD000095430_d0e56 (Colbert 127 sub-unit) -> dao-class link to gallica.bnf.fr/ark:/12148/btv1b10035540v, 24 Sept 2026",
-  "manifest_fetch_status": "gallica.bnf.fr/iiif/.../manifest.json unreachable this session (curl 35 Recv failure: Connection reset by peer / ws_closed_mid_exchange per /__agentproxy/status, proxy-side, not a Gallica denial); direct /iiif/.../fN/.../native.jpg image fetches worked (intermittently -- smaller sizes and one retry per URL were more reliable than large full-page fetches). Folio-to-canvas mapping done by eye, by content match against Bourdeau's own quoted ciphertext, not by a confirmed single offset (see note below).",
-  "identification": "canvas f356's right-hand page carries the letter opening 'Monseigneur ... J'ay receu la lettre ... lettre de change de dixsept mille cent Reichsdaller ... pour 29 ... 80 62 41 73 32 51 ... Mr Frichmann ... 48 93 71 37 60 92 580 ... pension', an exact content match (all four cipher groups, in order, with the same final values) to the four groups Bourdeau's colbert/NOTES.md item a quotes for R2678/f.349-350. The folio stamp on this canvas reads '349' by eye. A different canvas (f354) also appeared to read '349' on a first pass and carries unrelated content (a 'Sieur du Fresnoy' letter); on review this was likely a misread of '347' (7/9 confusable in this hand) -- flagged, not re-verified, since the content match on f356 is the stronger identifier and this pass's budget did not allow re-checking every intervening folio stamp.",
-  "leaves": [
-    {
-      "file": "dc9_letter.jpg",
-      "canvas": "f356",
-      "region": "right half (recto) of the canvas, pct:33,0,67,100",
-      "folio": "349r (by content match; stamp read '349')",
-      "content": "the abbe de Gravel to Colbert, Ratisbon, 29 Jan 1665: receipt of a bill of exchange for 17,100 Reichsdaller, four cipher passages assigning shares to named/coded recipients -- matches DC9/R2678 and Bourdeau's item a exactly",
-      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/pct:33,0,67,100/1800,/0/native.jpg"
-    },
-    {
-      "file": "dc9_address_panel.jpg",
-      "canvas": "f356",
-      "region": "left third of the canvas, pct:0,0,33,60",
-      "folio": "350v or the outer address fold of the same folded letter",
-      "content": "address panel: 'A Monseigneur ... Colbert', docketed 'M. Guibert, 6 [?] Jan[vie]r 1665' in a filing hand -- 'Guibert' not 'Gravel': flagged, not resolved this pass (may be a scribe/courier name, or this pass's sender identification needs re-checking against La Roncière's catalogue entry Bourdeau cites, t. I p. 270)",
-      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/pct:0,0,33,60/1200,/0/native.jpg"
-    },
-    {
-      "file": "c355_signature.jpg",
-      "canvas": "f355",
-      "region": "5930,3974,1640,630",
-      "content": "subscription and signature: 'V[ost]re tres humble et tres obeiss[an]t serviteur / Guibert m[aîtr]e des cour[rier]s d'Allemagne / a directeur des bureaux de Normandie [et] Bretagne' (reading of the title M)",
-      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/5930,3974,1640,630/1800,/0/native.jpg",
-      "fetched_utc": "2026-10-06T04:06Z",
-      "by": "R8-G2678"
-    },
-    {
-      "file": "c355_closing.jpg",
-      "canvas": "f355",
-      "region": "4416,1072,3280,820",
-      "content": "closing lines of the letter (f.350r?, stamp read '348'/'350'): 'd'attendre ces Rixd[alles] jusques au premier Juillet prochain, que l'on ne manquera pas de les luy payer. J'attends en particulier cette grace de v[ost]re generosite apres tant d'autres que nous avons receues en general et que vous croirez avec tout le respect que je doibs'",
-      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/4416,1072,3280,820/1800,/0/native.jpg",
-      "fetched_utc": "2026-10-06T04:06Z",
-      "by": "R8-G2678"
-    },
-    {
-      "file": "c356_docket.jpg",
-      "canvas": "f356",
-      "region": "3154,2082,694,1198",
-      "content": "docket on the address panel, rotated: 'M. Guibert / [?] Janv. 166[5?]' -- confirms the 24 Sept read 'M. Guibert'",
-      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/3154,2082,694,1198/1800,/0/native.jpg",
-      "fetched_utc": "2026-10-06T04:06Z",
-      "by": "R8-G2678"
-    },
-    {
-      "file": "c355_dateline.jpg",
-      "canvas": "f355",
-      "region": "4416,4353,820,157",
-      "content": "date line bottom left: 'ce 29 Janvier 166[4 or 5]' -- last digit reads as 4 by eye (M)",
-      "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/4416,4353,820,157/1200,/0/native.jpg",
-      "fetched_utc": "2026-10-06T04:06Z",
-      "by": "R8-G2678"
-    }
-  ],
-  "fetched_utc": "2026-09-24T09:05:00Z",
-  "requests_this_session": "gallica.bnf.fr: ~15 (several connection resets on full-page/large-crop fetches, one retry each per good-citizen rule, routed around with smaller sizes; archivesetmanuscrits.bnf.fr: ~6 search+notice+ajax fetches, shared session with DC8, >=1.5s apart, UA 'cipher-lab research script (contact via repository)'; github.com: 1 shallow clone of dbourdeau/cyphersolver, grepped only)"
+ "ark": "btv1b10035540v",
+ "gallica_url": "https://gallica.bnf.fr/ark:/12148/btv1b10035540v",
+ "volume": "BnF Melanges de Colbert 127 (Correspondance de Colbert de janvier et fevrier 1665, 585 feuillets)",
+ "found_via": "archivesetmanuscrits.bnf.fr free-text search 'Melanges Colbert 127' -> notice ark:/12148/cc954302 (Colbert 127-127bis) -> the pre-expanded sommaire tree names 'Fol. 349 - l'abbe de Gravel', matching this item -> ajaxGetCompDisplay eadCompId=FRBNFEAD000095430_d0e56 (Colbert 127 sub-unit) -> dao-class link to gallica.bnf.fr/ark:/12148/btv1b10035540v, 24 Sept 2026",
+ "manifest_fetch_status": "gallica.bnf.fr/iiif/.../manifest.json unreachable this session (curl 35 Recv failure: Connection reset by peer / ws_closed_mid_exchange per /__agentproxy/status, proxy-side, not a Gallica denial); direct /iiif/.../fN/.../native.jpg image fetches worked (intermittently -- smaller sizes and one retry per URL were more reliable than large full-page fetches). Folio-to-canvas mapping done by eye, by content match against Bourdeau's own quoted ciphertext, not by a confirmed single offset (see note below).",
+ "identification": "canvas f356's right-hand page carries the letter opening 'Monseigneur ... J'ay receu la lettre ... lettre de change de dixsept mille cent Reichsdaller ... pour 29 ... 80 62 41 73 32 51 ... Mr Frichmann ... 48 93 71 37 60 92 580 ... pension', an exact content match (all four cipher groups, in order, with the same final values) to the four groups Bourdeau's colbert/NOTES.md item a quotes for R2678/f.349-350. The folio stamp on this canvas reads '349' by eye. A different canvas (f354) also appeared to read '349' on a first pass and carries unrelated content (a 'Sieur du Fresnoy' letter); on review this was likely a misread of '347' (7/9 confusable in this hand) -- flagged, not re-verified, since the content match on f356 is the stronger identifier and this pass's budget did not allow re-checking every intervening folio stamp.",
+ "leaves": [
+  {
+   "file": "dc9_letter.jpg",
+   "canvas": "f356",
+   "region": "right half (recto) of the canvas, pct:33,0,67,100",
+   "folio": "349r (by content match; stamp read '349')",
+   "content": "the abbe de Gravel to Colbert, Ratisbon, 29 Jan 1665: receipt of a bill of exchange for 17,100 Reichsdaller, four cipher passages assigning shares to named/coded recipients -- matches DC9/R2678 and Bourdeau's item a exactly",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/pct:33,0,67,100/1800,/0/native.jpg"
+  },
+  {
+   "file": "dc9_address_panel.jpg",
+   "canvas": "f356",
+   "region": "left third of the canvas, pct:0,0,33,60",
+   "folio": "350v or the outer address fold of the same folded letter",
+   "content": "address panel: 'A Monseigneur ... Colbert', docketed 'M. Guibert, 6 [?] Jan[vie]r 1665' in a filing hand -- 'Guibert' not 'Gravel': flagged, not resolved this pass (may be a scribe/courier name, or this pass's sender identification needs re-checking against La Roncière's catalogue entry Bourdeau cites, t. I p. 270)",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/pct:0,0,33,60/1200,/0/native.jpg"
+  },
+  {
+   "file": "c355_signature.jpg",
+   "canvas": "f355",
+   "region": "5930,3974,1640,630",
+   "content": "subscription and signature: 'V[ost]re tres humble et tres obeiss[an]t serviteur / Guibert m[aîtr]e des cour[rier]s d'Allemagne / a directeur des bureaux de Normandie [et] Bretagne' (reading of the title M)",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/5930,3974,1640,630/1800,/0/native.jpg",
+   "fetched_utc": "2026-10-06T04:06Z",
+   "by": "R8-G2678"
+  },
+  {
+   "file": "c355_closing.jpg",
+   "canvas": "f355",
+   "region": "4416,1072,3280,820",
+   "content": "closing lines of the letter (f.350r?, stamp read '348'/'350'): 'd'attendre ces Rixd[alles] jusques au premier Juillet prochain, que l'on ne manquera pas de les luy payer. J'attends en particulier cette grace de v[ost]re generosite apres tant d'autres que nous avons receues en general et que vous croirez avec tout le respect que je doibs'",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/4416,1072,3280,820/1800,/0/native.jpg",
+   "fetched_utc": "2026-10-06T04:06Z",
+   "by": "R8-G2678"
+  },
+  {
+   "file": "c356_docket.jpg",
+   "canvas": "f356",
+   "region": "3154,2082,694,1198",
+   "content": "docket on the address panel, rotated: 'M. Guibert / [?] Janv. 166[5?]' -- confirms the 24 Sept read 'M. Guibert'",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/3154,2082,694,1198/1800,/0/native.jpg",
+   "fetched_utc": "2026-10-06T04:06Z",
+   "by": "R8-G2678"
+  },
+  {
+   "file": "c355_dateline.jpg",
+   "canvas": "f355",
+   "region": "4416,4353,820,157",
+   "content": "date line bottom left: 'ce 29 Janvier 166[4 or 5]' -- last digit reads as 4 by eye (M)",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f355/4416,4353,820,157/1200,/0/native.jpg",
+   "fetched_utc": "2026-10-06T04:06Z",
+   "by": "R8-G2678"
+  },
+  {
+   "file": "c354_overview.jpg",
+   "canvas": "f354",
+   "region": "full",
+   "content": "whole canvas: right = f.347r, first page of Guibert's letter (\"Monseigneur / Pardonnez la hardiesse que je prens d'interrompre vos grandes occupations pour me plaindre a vous de la continuation ...\"), clear text, no cipher; left = an unrelated folded letter",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f354/full/1400,/0/native.jpg",
+   "fetched_utc": "2026-10-06T05:5xZ",
+   "by": "R9-DEC2678"
+  },
+  {
+   "file": "c357_overview.jpg",
+   "canvas": "f357",
+   "region": "full",
+   "content": "whole canvas: left = f.349v, closing of the cipher letter begun on f.349r, clear, dated \"a Ratisbone ce 29 Janvier 166[5]\" and signed \"[R.] de Gravel[le]\"; right = f.350 (stamp \"350\"), blank at this size",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f357/full/1400,/0/native.jpg",
+   "fetched_utc": "2026-10-06T05:5xZ",
+   "by": "R9-DEC2678"
+  },
+  {
+   "file": "c357_dateline_subscription.jpg",
+   "canvas": "f357",
+   "region": "1500,5550,2600,500",
+   "content": "date line \"a Ratisbone ce 29 Janvier 166[5]\" and \"Vostre tres humble et tres obeissant serviteur\"",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f357/1500,5550,2600,500/1300,/0/native.jpg",
+   "fetched_utc": "2026-10-06T05:5xZ",
+   "by": "R9-DEC2678"
+  },
+  {
+   "file": "c357_signature.jpg",
+   "canvas": "f357",
+   "region": "3400,5500,1600,600",
+   "content": "signature \"[R.] de Gravel[le]\" (name H, initial M)",
+   "fetch_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f357/3400,5500,1600,600/1200,/0/native.jpg",
+   "fetched_utc": "2026-10-06T05:5xZ",
+   "by": "R9-DEC2678"
+  }
+ ],
+ "fetched_utc": "2026-09-24T09:05:00Z",
+ "requests_this_session": "gallica.bnf.fr: ~15 (several connection resets on full-page/large-crop fetches, one retry each per good-citizen rule, routed around with smaller sizes; archivesetmanuscrits.bnf.fr: ~6 search+notice+ajax fetches, shared session with DC8, >=1.5s apart, UA 'cipher-lab research script (contact via repository)'; github.com: 1 shallow clone of dbourdeau/cyphersolver, grepped only)"
 }

@@ -1,7 +1,8 @@
-# [The abbé de Gravel] to Jean-Baptiste Colbert, Ratisbon, 29 Jan 1665, BnF Mélanges de Colbert 127, f.349-350
+# The abbé (R.) de Gravel to Jean-Baptiste Colbert, Ratisbon, 29 Jan 1665, BnF Mélanges de Colbert 127, f.349-350 (canvases 356-357)
 
 **Status: open** (not attacked; already someone else's active work-in-progress — see below).
-Sender correction (R8-G2678, 6 Oct 2026): the letter is **signed "Guibert", maître des courriers d'Allemagne** (canvas 355, signature crop `images/c355_signature.jpg`), docketed "M. Guibert"; not the abbé de Gravel as DECODE, Bourdeau and this folder's title say. See the section of that date.
+Sender correction (R8-G2678, 6 Oct 2026): the letter is **signed "Guibert", maître des courriers d'Allemagne** (canvas 355, signature crop `images/c355_signature.jpg`), docketed "M. Guibert"; not the abbé de Gravel as DECODE, Bourdeau and this folder's title say. See the section of that date. **Reversed by R9-DEC2678 (6 Oct 2026), see the section of that date:** the Guibert signature is on f.348r, the end of Guibert's own letter (ff.347-348); the cipher letter ff.349-350 closes on f.349v (canvas 357) "a Ratisbone ce 29 Janvier 166[5]" and is signed "[R.] de Gravel[le]", as DECODE, Bourdeau and the BnF sommaire (Fol. 349, l'abbé de Gravel) say.
+Premise check (R9-DEC2678, 6 Oct 2026): the brief asked for the title to be changed to Guibert; the image says Gravel, so the title keeps Gravel (now read from the leaf, not only the catalogue), with folios and canvases corrected. The **folder name keeps the old catalogue label** (`...-gravel-1665`), which turns out to be right. No status.json row or spec exists for this folder (checked 6 Oct 2026), so nothing else was edited.
 Clément, *Lettres, instructions et mémoires de Colbert* (IA items colbert-lettres-instructions-et-memoires-de-colbert-v-1 to v-7), full-text search (be-api) for "Gravel", "Frichmann", "rixdales" and "Ratisbonne" run by this worker (GF-A2B-1, 3 Oct 2026): Gravel hits only Colbert's own letters to the abbé de Gravel at Mainz (1669-70, t. II pt 2, t. V) and editorial notes; no Gravel letter of 29 Jan 1665 and none of the enciphered pension names.
 
 ## Item
@@ -274,3 +275,63 @@ Roncière t. I p. 270's entry for f.349 to see why it names Gravel.
 
 Requests this job: gallica.bnf.fr 9 (1 manifest, 2 canvas overviews, 6 region crops; >= 2 s apart, all HTTP 200);
 github.com 1 (shallow clone of dbourdeau/cyphersolver, grepped for item a).
+
+## Writer re-check and sibling-letter search (R9-DEC2678, 6 Oct 2026)
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-run9-jobs.md` "R9-DEC2678": (1) change the premise to Guibert, (2) search
+for other Guibert letters to Colbert. Step (1) was checked against the leaves before being applied, and the
+leaves contradict it.
+
+**Leaf order (Gallica btv1b10035540v, labels all "NP"; folio stamps read on the images).**
+- Canvas 354 right = **f.347r** (stamp "347"): "Monseigneur / Pardonnez la hardiesse que je prens d'interrompre vos
+  grandes occupations pour me plaindre a vous de la continuation ... M. du Fresnoy ... M. Boulliau(?) m[aîtr]e des
+  courriers de Champagne et moy ..." (words M, read at 1400 px). Guibert's letter, in clear (`images/c354_overview.jpg`).
+- Canvas 355 right = **f.348r**: the end of that letter, "ce 29 Janvier 166[4/5]", signed Guibert (R8's crops).
+- Canvas 356 left = **f.348v**: Guibert's address leaf with his docket "M. Guibert / Janv. 166[5]"; right = **f.349r**,
+  the cipher page (R2678).
+- Canvas 357 left = **f.349v**: the end of the cipher letter, in clear: "... qui me sont deubs, si ce n'est, Monseigneur,
+  que vous ayez eu la pensée de me les faire payer par quelque autre voye, sur quoy je me remets au bon plaisir de Sa
+  Ma[jes]té. Il me suffit que les autres soient satisfaits ..." (words M), dated **"a Ratisbone ce 29 Janvier 166[5]"**,
+  signed **"Vostre tres humble et tres obeissant serviteur / [R.] de Gravel[le]"** (name H at native resolution, initial M;
+  `images/c357_dateline_subscription.jpg`, `images/c357_signature.jpg`). Right = f.350 (stamp "350"), blank at 1400 px.
+
+So R8-G2678 joined f.348r (the end of Guibert's letter) to f.349r (the start of Gravel's): the two pages face each
+other across canvases 355-356, but f.348r comes before f.349r, so it cannot be the second page of a letter that begins
+on f.349r. Gravel is the writer: the signature on f.349v, the place "Ratisbone" (which R8 could not find because it is on
+f.349v), the BnF sommaire (`archivesetmanuscrits.bnf.fr/ark:/12148/cc954302`: "Fol. 347 · « Guibert », maître des
+courriers d'Auvergne [sic, BnF's reading] et directeur des bureaux de la poste de Normandie et Bretagne" and "Fol. 349 ·
+l'abbé « de Gravel »", two separate entries), and DECODE's f.349-350 all agree. R8's inference "`29` = Gravel, the
+distributor" (grade I) loses its basis, since Gravel is the writer, and is withdrawn. What R8 read on f.348r ("d'attendre
+ces Rixd[alles] jusques au premier Juillet ...") belongs to Guibert's letter, not R2678. R8's amount arithmetic
+(15000 + 500 + 600 + 1000 = 17100) is on f.349r itself and stands. Grades: no cipher token read (0 H, 0 C, 0 S, 0 M, 0 I).
+
+**Sibling search: Guibert (as briefed) and Gravel (the real writer).** Thumbnail-level looks only, no decoding.
+
+| Where | Searched | Result |
+|---|---|---|
+| BnF sommaire, Mél. Colbert 127-127bis (cc954302, 330 "Fol." entries) | grep Guibert, Gravel, courrier, chiffr, poste, Frichman | Guibert only at **Fol. 347** (this neighbour, clear). Gravel at **Fol. 349** (R2678) and **127bis Fol. 968, 1078** ("R. de Gravel") |
+| BnF sommaire, Mél. Colbert 126 (Dec 1664; cc954291, 177 entries) | Guibert, Gravel, courriers | none |
+| BnF sommaire, Mél. Colbert 128-128bis (Mar-Apr 1665; cc954319, 343 entries) | same | none (only "Graveline", the town) |
+| 127bis f.968r-v, Gallica btv1b100355703 canvases 390-391 (anchors: canvas 389 = f.964, 393 = f.971, 394 = f.972) | look at 1000 px | Gravel to Colbert, **in clear**: reimbursement of the "ports des lettres" he advanced (via Louvois; a signed statement sent to "le S[ieu]r Pachau(?), commis de M. de Lionne") and his appointments, last remittance made at Frankfurt; dated "[?]bourg le [?] feb. 1665", signed "R. de Gravel", docket "M. de Gravel ... feb. 1665". No cipher groups seen |
+| 127bis f.1078r-v, canvases 501-502 (anchor: canvas 499 = f.1076) | look at 1000 px | Gravel to Colbert, **in clear**: "J'ay receu advis du sieur H[e]nsel(?) que vous aviez eu la bonté de luy faire remettre l'argent des ports de lettres ..." about the Diet ("cette assemblée"); dated "a Ratisbonne ce [1?]6 [févr]ier 1665", signed Gravel. No cipher groups seen |
+| DECODE RecordsView (login-free metadata): R2673, 2674, 2677, 2679, 2680, 2681, 2682, 2683 (every Colbert-volume record from 1662 to 1665 in the 24 Sept listing) | Author/Receiver/City | Nuchèze ×2, Fremont (Lisbon), Millet ×2 (Warsaw, Danzig), Schomberg, La Haye ×2. **No Guibert or Gravel** besides R2678 and R2733 (Gravel to Maulevrier, 1674, Aymeloglu harvest) |
+| Google Books API (key, country=US): "Guibert" "maître des courriers"; "Guibert" "courriers d'Allemagne"; "Guibert" courriers Colbert 1665 | snippets | 8 / 334 (noise) / 2 hits: Vaillé, *Histoire générale des postes françaises* (Pierre Guibert, maître des courriers, 1644; a Guibert collecting a postal levy); *La Poste à Nantes* (Guibert, "l'homme de confiance" ...); La Roncière's *Catalogue des manuscrits ... Mélanges de Colbert* (1920) matches with no snippet. No cipher letter of Guibert cited |
+| IA full text (be-api fts) "Guibert" "courriers" Colbert | top 10 | 7,928 hits with the terms ORed; top 10 unrelated (the comte de Guibert, the antipope Guibert, Colbert manuscript lists). Noise, not a search result on this question |
+
+Finding for the "Next (1)" step: no other Guibert letter exists in Mél. Colbert 126-128bis, and Guibert's one
+letter (ff.347-348) is in clear. The writer's two other letters in the same series (127bis ff.968, 1078, Feb 1665) are
+in clear at thumbnail level, so neither gives a second text in the same two-digit groups that a crib test could be
+checked against. One link worth recording: both Gravel letters and Guibert's neighbouring letter deal with postal
+money ("ports des lettres") and debts owed to the writer. That may be why the two letters were filed together. It is
+not evidence about the cipher.
+
+Next (one line each, not done here): (1) Gravel's other cipher letters, not this series: R2733 (Mél. Colbert 168bis
+f.553, 1674, Bourdeau's item c) and the Affaires étrangères Correspondance politique Allemagne volumes for Jan 1665,
+where a Diet envoy's dispatches to Lionne would use the same office cipher; ~$3, needs an AE/Gallica volume locator first;
+(2) La Roncière t. I p. 270 (via Bourdeau) now agrees with the leaf, so that step is closed.
+
+Requests this job: gallica.bnf.fr 20 (canvases 354, 357 at 1400 px + 2 native crops of 357 = 4; SRU 5; btv1b100355703
+manifest 1 + canvases 389-394, 499-502 at 1000 px = 10, of which 500 not used), >= 2 s apart, all HTTP 200;
+archivesetmanuscrits.bnf.fr 3 (cc954302, cc954291, cc954319); de-crypt.org 8 (RecordsView, no login, >= 1.8 s apart);
+googleapis.com 3; be-api.us.archive.org 1; github.com 1 (shallow clone of aaymeloglu/unsolved-ciphers, catalogue grepped,
+nothing copied).
