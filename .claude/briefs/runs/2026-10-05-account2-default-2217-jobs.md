@@ -123,3 +123,10 @@ D2B-ROELL's priced next step (NOTES.md ~line 343): locate a 9 Feb 1809 minute to
 Navigate by date: bisect the scan sequence at thumbnail size (service.archief.nl IIIF, >= 1.5 s apart, <= 40 requests), one native crop only
 for a candidate; never a full-page image to a subagent. If a clear minute of the R1469/R1470 cipher letter is found, record scan, date and
 the clear text's opening lines in NOTES.md (grade nothing as a reading; the alignment is a later job). Stop at the 80% line with what was seen.
+
+### D2B-RUBIN2 -- rubin-1953, second blind pass at the vmie/vnie glyph and Block C, reconcile with variants-fbi-1953.tsv (cap 3, box 40 min)
+Intake gate (00:1x UTC 6 Oct): `rubin-1953: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+D2B-RUBIN's next step (NOTES.md line ~188): one blind pass of the 2018 image and the 2013 photo (scienceblogs.de .../2013/11/Rubin-Case.png,
+fetch once) at the vmie/vnie glyph and Block C, crops only (crop step mandatory), done BEFORE opening variants-fbi-1953.tsv; then reconcile
+against it. Edit ciphertext.txt only with a dated NOTES.md entry naming each change and its witnesses (rule: never silently repaired); keep a
+variants column for anything unsettled. No reading claimed.
