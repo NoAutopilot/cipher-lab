@@ -554,7 +554,7 @@ Worker R11A-BOWES (LANE-RUN11-account-1), 6 Oct 2026 13:48-13:53 UTC by `date -u
 
 ## SP 106 browse on TNA Discovery (R11A-BOWES2, 6 Oct 2026)
 
-Worker R11A-BOWES2 (LANE-RUN11-account-1), 6 Oct 2026 14:26-14:30 UTC by `date -u`. Lookup only; no key change. Table: `sp106_browse.tsv`.
+Worker R11A-BOWES2 (LANE-RUN11-account-1), 6 Oct 2026 14:26-14:29 UTC by `date -u`. Lookup only; no key change. Table: `sp106_browse.tsv`.
 - **Series search.** Discovery API `search/records`, `sps.recordSeries=SP 106`: 'cipher' 68 records (the whole series, SP 106/1-67, piece level); 'Scotland', 'Bowes', 'Cary', 'Carey', 'Walsingham' 0 each.
 - **Elizabethan pieces.** SP 106/1 (C3677731, "Ciphers used at the time of Elizabeth I, names A to L. Indexed."), SP 106/2 (C3677732, names M to W, indexed in SP 106/1), SP 106/3 (C3677733, Elizabeth I and before, names unknown). `records/v1/details`: `digitised: false` for all three; `records/v1/children`: 0 child records for all three. So Discovery describes SP 106 only at piece level: no item list exists there to browse, and whether a Bowes, Cary or Hunsdon key sits in SP 106/1 (A-L) or 106/3 cannot be read from the catalogue. Not found: any Discovery record naming Bowes, Cary or Scotland in SP 106.
 - **Item level from disk instead.** DECODE's key list (`sources/decode/keys-all-2026-09-28-merged.tsv`, no new request) holds 34 SP 106/1-3 leaves. Dated within 1580-84: none. Dated ones: 1509-34, 1554, 1559 x2, 1562, 1566, 1569, 1577 x2, 1587, 1588 (R337, Croft's key, already compared for harley-287-1587), 1590, 1594, 1596; 20 carry only the reign span 1558-1603. The list carries no sender/receiver field, so those 20 undated leaves cannot be ruled in or out from disk.
