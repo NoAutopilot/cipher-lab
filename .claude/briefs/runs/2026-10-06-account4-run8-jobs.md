@@ -213,3 +213,4 @@ images/r8thur25/ (read them yourself). (2) Carry the revision into AUDIT.md ("##
 propagation)"), class per item unchanged unless your check finds otherwise (say why); recount per-token grades and depth (rule 4a;
 tools/depth_check.py) for P25-P28 and update status.json depth fields and index.tsv C/M columns only where numbers moved; update any
 SECOND-OPINIONS-QUEUE.tsv row for P25-P28. Do not decode anything new.
+Wave 4 sessions (04:37 UTC): R8-MANT530 session_01XcFuTffT4j4bGRw2A1wyF5 (Opus, cap 8); R8-THURV2 session_01GUohJP4pBJkPgzaw2oJVmE (Opus, cap 3).
