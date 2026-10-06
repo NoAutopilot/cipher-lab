@@ -593,3 +593,32 @@ the key. Next: a full-text search of Deutsche Reichstagsakten J.R. I for "chiffr
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the step pass (d) names -- a full-text search (archive.org be-api, Google Books API with country=US) of Deutsche Reichstagsakten, Juengere Reihe vol. 1 (the 1519 election volume) for 'chiffre'/'Ziffer' with Moltzan/Cordier, ~$1.
+
+## R9-ELEC: Deutsche Reichstagsakten J.R. I full-text search (worker R9-ELEC, 6 Oct 2026, 06:25-06:35 UTC)
+
+Search results only (rule 10); OCR text, not page images (rule 2: any negative is conditional on Google's OCR).
+Volume: Deutsche Reichstagsakten unter Kaiser Karl V., J.R. Bd. I (Kluckhohn, Gotha 1893), archive.org
+`bub_gb_0gFoAAAAMAAJ` (`_djvu.txt`, 3.16 MB; copies `bub_gb_6gcQAAAAYAAJ` and `deutschereichst10kommgoog` give
+the same counts). Requests: archive.org 14 (advancedsearch 2, metadata 3, djvu downloads 6 incl. other-year volumes),
+be-api 3, googleapis books 3; no 403/429.
+Counts in vol. I OCR: "Moltz*" 241, "Cordier" 28, "chiffr*" 26, "Ziffer" 2, "Geheimschrift" 0, "Schluessel" 1 (unrelated:
+Minute's key, Charles V's Lille letter), "5761" 50 (Kluckhohn prints many BnF F. fr. 5761 copies: "Aus Paris Bibl. nat. F. fr. 5761
+(frueher de la Mure) Cop.").
+Hits that matter (OCR offsets in the djvu text):
+- 183024: Moltzan to Joachim, March 1518, "Orig. zum Teil chiffriert" (Berlin) -- Moltzan used a cipher.
+- 1082557: Joachim's envoy with a "chiffrierten Briefe" for the king that the French cannot resolve.
+- 2429009: Joachim to Francis I (June 1519), copy with "die Stichworte in Chiffren mit ueber-geschriebener Aufloesung"
+  (Dresden) -- cipher words with interlinear solution, a possible plain-copy for a Joachim/Moltzan block.
+- 2685183 and 2827217: BnF F. fr. copies (shelfmark OCR-garbled "Vom."/"VGL", probably 5761 or 5756; check on image)
+  "die Namen in (den bekannten) Chiffren" -- the editor says names are cipher groups in the BnF copy, i.e. the
+  fr.5761 key list is the key to them; Bonnivet/Guillart/Orval to Francis I, June 1519 (Wahl Karls).
+- 1145143: Robertet to Bonnivet 4 Mar 1519, letters sent to the chancellor "pour translater et deschiffrer".
+Not found: any printed edition or transcription of the key list itself ("Chiffres desquelz", "voiage d'Allemagne": 0 hits);
+no "Ziffer" tied to Moltzan/Cordier (be-api "Ziffer Moltzan": 0 hits in this volume). Cordier appears only as a name.
+be-api: "chiffre Cordier" 1 volume hit (this one); "Ziffer Moltzan" 0. Google Books (country=US, key): "Reichstagsakten Moltzan
+Chiffre" 8 items, snippets all this volume (several reprints, 1962); "Ziffer Cordier Moltzan 1519" 0; "Chiffres desquelz"
+3 items, none relevant (arithmetic 1670; BnF Catalogue general des mss francais 1902, no snippet).
+Next steps (not run): (1) read the printed letters at offsets 2685183 and 2827217 on the page image and see whether the
+BnF copy carries code groups that match key.tsv names (a plain-copy known-plaintext check, C grade); (2) the printed
+fr.5761 letters of vol. I as cipher-group witnesses; (3) volume II/III (1520-21) not searched. Vol. I is a Kluckhohn
+"Cop." for each BnF item, so the groups may be only partly retained.
