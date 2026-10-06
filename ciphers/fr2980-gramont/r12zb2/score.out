@@ -1,0 +1,16 @@
+('P', 'f30') {'C6': 9, 'C5': 1}
+('P', 'fr3040') {'C6': 2}
+('T1', 'f30') {'C3': 22, 'OFF': 2}
+('T2a', 'fr3040') {'C1': 12, 'C3': 1, 'C2': 2, 'OFF': 2}
+('T2b', 'fr3040') {'C1': 10, 'OFF': 1}
+('fh', 'f30') {'C5': 5, 'OFF': 1}
+('fh', 'fr3040') {'C5': 5, 'OFF': 1}
+('n6', 'f30') {'OFF': 3, 'C6': 1, 'C4': 2}
+('n6', 'fr3040') {'C4': 6}
+G0 OFF 10/88 = 0.11 -> ok
+P plurality ('C6', 0.9166666666666666, 12)
+G1 fh: plurality C5 1.00 of 10; per-source {'f30': 1.0, 'fr3040': 1.0}; z-family share 0.02 -> pass
+G1 n6: plurality C4 0.89 of 9; per-source {'f30': 0.6666666666666666, 'fr3040': 1.0}; z-family share 0.00 -> pass
+G1 PASS
+T1 ('C3', 1.0, 22) T2 ('C1', 0.88, 25) T2a ('C1', 0.8, 15) T2b ('C1', 1.0, 10)
+OUTCOME DIFFERENT

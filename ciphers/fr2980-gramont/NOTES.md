@@ -1445,6 +1445,38 @@ rerun this prereg unchanged, ~$1.5; only on SAME, the registered zb = R rank tes
 
 Requests: none to any host (crops on disk). Subagent calls: 1 (Sonnet, blind). Novelty not classified (rule 10).
 
+## f.30 zb vs fr.3040 barred z: blind sort with per-sign boxes, decoy control PASS, outcome DIFFERENT; key.tsv unchanged (R12D-GRAZB2, account 4, 6 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run12-jobs.md`, job R12D-GRAZB2 (second attempt at PREREG-R12D-GRAZB.md, crop fixed).
+PREREG-R12D-GRAZB2.md pushed (14941507, 16:25 UTC) before any box was cut: same 88 tokens, same instrument and gate word for word,
+only the crop changed. `r12zb2/seg.py` segments each half-line image into ink-column runs and assigns the half's n tokens to runs
+by a dynamic programme on mean sign width; `r12zb2/cut.py` cuts one tight box per token (+-3 px, full line height) into
+`r12zb2/tiles/`, and an eye-check overlay per token (box on +-3 signs, codes shown, pixel ruler) into `r12zb2/check/`. This worker
+opened all 88 overlays (11 sheets) and corrected 46 boxes in `r12zb2/fixes.tsv` (box on a neighbour, a slice, or spanning several
+signs), judging only position against the neighbour codes. Boxes opened against the full line image: #22 (f18r_L11_s2, whose image
+repeats the s1 tail at its left, so its run alignment was off: n6 placed after "p x"), #16 (f18r_L05), #76 (f18r_L06), #67 and #86
+(f19r_L02), #9 (f30v_L20). One Sonnet blind sort of the four unlabelled tile sheets (`r12zb2/sort_sheet_*.jpg`; answer
+`r12zb2/sort_sonnet.tsv`), scored by `r12zb2/score.py` (r12zb/score.py with only the answer path changed; `r12zb2/score.out`):
+
+| set | on-target | plurality class | share |
+|---|---|---|---|
+| decoy fh (f.30 / fr.3040) | 10 | C5 (f-shape) | 1.00 (1.00 / 1.00) |
+| decoy n6 (f.30 / fr.3040) | 9 | C4 (delta loop) | 0.89 (0.67 on 3 / 1.00 on 6) |
+| plain z (f.30 / fr.3040) | 12 | C6 (thin plain z) | 0.92 |
+| T1 f.30 zb | 22 | C3 (faint looped "2"-z, long base) | 1.00 |
+| T2 fr.3040 barred z (T2a / T2b) | 25 | C1 (heavy z with upper-left diagonal hair stroke) | 0.88 (0.80 / 1.00) |
+
+G0 OFF 10/88 = 0.11, ok. **G1 decoy control PASS** (each decoy merged across both letters despite ink and scan differences; z-family
+share of the decoy classes 0.02 and 0.00). **Outcome DIFFERENT** (T1 and T2 in different classes, each >= 60%; both also differ from
+plain z). Reading under the prereg's consequences: the f.30 `zb` is a different sign from the fr.3040 barred z, so the fr.3040 zb = R
+alignment (25/27) says nothing about the f.30 zb; its NULL (M) stands, and the fr.3040 barred z is its own sign (its reader label
+`zb` in n8gra2/n8gra3 is a label collision, not a shared code). The z/zb part of the z A-vs-R conflict (HYPOTHESES.md) is closed for
+zb; the plain-z A (f.30, H) vs R (fr.3040, C) conflict is unchanged. Caveat: f.30 n6 had only 3 on-target tiles (3 OFF, faint), so
+its 0.67 is thin, though it passes the registered 0.60.
+**key.tsv unchanged**; reading unchanged (no decode run needed). Requests: none to any host (images on disk). Subagent calls: 1
+(Sonnet, blind, sheets only). Novelty not classified (rule 10). Next (one line): none for zb on this instrument; the fr.3040 barred z
+could be relabelled (e.g. `zh`) in n8gra2/n8gra3 recon files by a transcription worker, ~$0.5, cosmetic.
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA and N8-GRA3, 4 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18, S 181, M 239; U 63 -- ST moved S -> C by N8-GRA3, 4 Oct 2026; after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
@@ -1459,7 +1491,7 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); R12D-GRAZB, 6 Oct 2026: the blind sort of f.30 zb beside fr.3040 barred z was a NON-TEST (decoy control failed: proportional-position ticks land on neighbours); cheapest next: re-cut the same 88 tokens with per-sign boxes and rerun PREREG-R12D-GRAZB unchanged, ~$1.5, then, only on SAME, a registered zb = R test on f.30 with its control, ~$1-2
+Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); R12D-GRAZB, 6 Oct 2026: the blind sort of f.30 zb beside fr.3040 barred z was a NON-TEST (decoy control failed: proportional-position ticks land on neighbours); R12D-GRAZB2, 6 Oct 2026: rerun with per-sign boxes, decoy control PASS, outcome DIFFERENT: the f.30 zb is not the fr.3040 barred z, so fr.3040's zb = R does not transfer, zb NULL stands, key.tsv unchanged; the open gaps above are unchanged; cheapest next: relabel the fr.3040 barred z (reader label zb) as its own code in n8gra2/n8gra3 and close the z/zb half of the HYPOTHESES.md z A-vs-R entry, ~$0.5
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 
