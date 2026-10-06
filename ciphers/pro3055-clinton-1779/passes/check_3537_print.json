@@ -1,0 +1,281 @@
+{
+ "parsed_cells": 255,
+ "unparsed_digit_lines": 55,
+ "clear_lines": 85,
+ "cells_off_title": 0,
+ "translation_letters": 712,
+ "decoded": "pscanadageneralredeselofficersmenintheinclosedreturnwitopportuitytgotohalifaxappliedmosturgenttermsconvoytescorttetheamiralnospareashipwartemallthewyuebecstationedtherethitherfromhalifaxvictuallershomegovernmentyourprovincethefrenchaeatrhodeislandoursthem",
+ "S_target": 0.9922,
+ "control_mean": 0.6155,
+ "control_p95": 0.6314,
+ "control_max": 0.6627,
+ "runs5_target": 22,
+ "runs5_control_mean": 0.26,
+ "gate": "PASS",
+ "lcs_unmatched": [
+  {
+   "idx": 38,
+   "cell": "4-2",
+   "key1778": "i",
+   "context": "menintheinclosedr"
+  },
+  {
+   "idx": 66,
+   "cell": "6-1",
+   "key1778": "g",
+   "context": "ortuitytgotohalif"
+  }
+ ],
+ "distinct_cells": 62,
+ "distinct_cells_in_key_2894": 29,
+ "agree_key_2894": 29,
+ "cells_not_in_key_2894": [
+  "1-4=e",
+  "1-6=m",
+  "1-12=n",
+  "2-4=s",
+  "2-9=t",
+  "2-12=y",
+  "3-1=a",
+  "4-1=l",
+  "4-2=i",
+  "4-3=s",
+  "4-4=t",
+  "5-1=o",
+  "5-2=f",
+  "6-1=g",
+  "6-2=e",
+  "6-5=r",
+  "9-2=f",
+  "9-4=i",
+  "9-9=i",
+  "9-11=t",
+  "9-12=h",
+  "11-1=h",
+  "11-5=e",
+  "12-1=o",
+  "13-11=i",
+  "14-1=t",
+  "14-3=w",
+  "15-19=x",
+  "18-2=n",
+  "18-3=d",
+  "21-1=c",
+  "21-2=o",
+  "21-7=n"
+ ],
+ "nw_mismatches": 22,
+ "mismatches": [
+  {
+   "idx": 38,
+   "cell": "4-2",
+   "key1778": "i",
+   "print": "e",
+   "key_2894": ""
+  },
+  {
+   "idx": 66,
+   "cell": "6-1",
+   "key1778": "g",
+   "print": "r",
+   "key_2894": ""
+  },
+  {
+   "idx": 198,
+   "cell": "5-1",
+   "key1778": "o",
+   "print": "a",
+   "key_2894": ""
+  },
+  {
+   "idx": 199,
+   "cell": "1-6",
+   "key1778": "m",
+   "print": "t",
+   "key_2894": ""
+  },
+  {
+   "idx": 200,
+   "cell": "1-4",
+   "key1778": "e",
+   "print": "w",
+   "key_2894": ""
+  },
+  {
+   "idx": 201,
+   "cell": "6-1",
+   "key1778": "g",
+   "print": "i",
+   "key_2894": ""
+  },
+  {
+   "idx": 202,
+   "cell": "5-1",
+   "key1778": "o",
+   "print": "n",
+   "key_2894": ""
+  },
+  {
+   "idx": 203,
+   "cell": "9-16",
+   "key1778": "v",
+   "print": "t",
+   "key_2894": "v"
+  },
+  {
+   "idx": 209,
+   "cell": "1-12",
+   "key1778": "n",
+   "print": "a",
+   "key_2894": ""
+  },
+  {
+   "idx": 211,
+   "cell": "2-12",
+   "key1778": "y",
+   "print": "t",
+   "key_2894": ""
+  },
+  {
+   "idx": 212,
+   "cell": "5-1",
+   "key1778": "o",
+   "print": "h",
+   "key_2894": ""
+  },
+  {
+   "idx": 213,
+   "cell": "18-17",
+   "key1778": "u",
+   "print": "a",
+   "key_2894": "u"
+  },
+  {
+   "idx": 214,
+   "cell": "1-5",
+   "key1778": "r",
+   "print": "t",
+   "key_2894": "r"
+  },
+  {
+   "idx": 219,
+   "cell": "4-2",
+   "key1778": "i",
+   "print": "l",
+   "key_2894": ""
+  },
+  {
+   "idx": 220,
+   "cell": "9-10",
+   "key1778": "n",
+   "print": "a",
+   "key_2894": "n"
+  },
+  {
+   "idx": 223,
+   "cell": "2-1",
+   "key1778": "t",
+   "print": "i",
+   "key_2894": "t"
+  },
+  {
+   "idx": 226,
+   "cell": "5-2",
+   "key1778": "f",
+   "print": "t",
+   "key_2894": ""
+  },
+  {
+   "idx": 231,
+   "cell": "2-2",
+   "key1778": "h",
+   "print": "i",
+   "key_2894": "h"
+  },
+  {
+   "idx": 232,
+   "cell": "6-6",
+   "key1778": "a",
+   "print": "v",
+   "key_2894": "a"
+  },
+  {
+   "idx": 234,
+   "cell": "6-6",
+   "key1778": "a",
+   "print": "d",
+   "key_2894": "a"
+  },
+  {
+   "idx": 252,
+   "cell": "2-2",
+   "key1778": "h",
+   "print": "t",
+   "key_2894": "h"
+  },
+  {
+   "idx": 253,
+   "cell": "2-3",
+   "key1778": "e",
+   "print": "i",
+   "key_2894": "e"
+  }
+ ],
+ "unparsed": [
+  ";  :  on  the  8th,",
+  "27",
+  "1",
+  "2",
+  "3",
+  "4",
+  "6     i",
+  "1     1",
+  "6  —",
+  "1",
+  "2",
+  "5",
+  "1  —",
+  "6",
+  "6",
+  "3",
+  "2  —",
+  "1",
+  "5  —",
+  "1",
+  "—  1",
+  "()  —    3",
+  "2",
+  "2",
+  "2",
+  "1          6",
+  "18  -    S",
+  "2",
+  "14",
+  "5",
+  "18",
+  "3",
+  "5",
+  "10",
+  "11",
+  "13",
+  "7",
+  "5",
+  "3",
+  "9  —",
+  "4  —",
+  "6  —",
+  "4  —",
+  "16",
+  "1  —",
+  "14  —",
+  "1",
+  "2",
+  "2  —",
+  "1",
+  "2",
+  "3",
+  "6  —",
+  "18",
+  "1          5"
+ ]
+}
