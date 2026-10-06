@@ -456,22 +456,30 @@ function tileEl(sid, pid, cls){
 }
 // drag a sign straight from one pile onto another with a mouse or pen (touch keeps tap-out + tray, so a swipe still scrolls)
 function pileDrag(b, sid, pid){
+  // move/up are listened for on the window while a drag runs, so a lost pointer capture (seen in the hosted page,
+  // owner 6 Oct 2026: the ghost stuck on screen) can never strand the ghost; Esc or leaving the window cancels.
   let d = null;
   const pileAt = (x, y) => { const e = document.elementFromPoint(x, y); const p = e && e.closest ? e.closest('.pile') : null; return p && p.dataset.pile ? p : null; };
   const mark = () => { const p = pileAt(d.x, d.y); if (p !== d.over){ if (d.over) d.over.classList.remove('dropover'); if (p && p.dataset.pile !== pid) p.classList.add('dropover'); d.over = p; } };
   const loop = () => { if (!d) return; const top = barBottom() + 40, bot = window.innerHeight - 40;
     if (d.y < top) window.scrollBy(0, -Math.min(28, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(28, (d.y - bot) / 2 + 4));
     mark(); d.raf = requestAnimationFrame(loop); };
-  b.addEventListener('pointerdown', e => { if (e.button > 0 || e.pointerType === 'touch') return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0}; });
-  b.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
-    if (!d.on && Math.hypot(d.x - d.sx, d.y - d.sy) > 10){ d.on = true; try { b.setPointerCapture(e.pointerId); } catch (er) {}
+  const move = e => { if (!d) return; if (e.buttons === 0) return end(e, true); d.x = e.clientX; d.y = e.clientY;
+    if (!d.on && Math.hypot(d.x - d.sx, d.y - d.sy) > 10){ d.on = true;
       const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g; d.raf = requestAnimationFrame(loop); }
-    if (d.ghost){ e.preventDefault(); d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; } });
-  const end = (e, drop) => { if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
+    if (d.ghost){ e.preventDefault(); d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; } };
+  const up = e => end(e, true), cancel = e => end(e, false), key = e => { if (e.key === 'Escape') end(e, false); };
+  const off = () => { window.removeEventListener('pointermove', move, true); window.removeEventListener('pointerup', up, true);
+    window.removeEventListener('pointercancel', cancel, true); window.removeEventListener('blur', cancel); window.removeEventListener('keydown', key, true); };
+  function end(e, drop){ if (!d) return; const dd = d; d = null; off(); if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
     if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover');
-    const p = drop && pileAt(e.clientX, e.clientY); if (!p || p.dataset.pile === pid) return; const to = p.dataset.pile;
-    remember([sid]); setDest(sid, to); note_('Moved ' + sid + ' from ' + pid + ' to pile ' + to + '.'); renderSome([pid, to]); offerCluster([sid], to); };
-  b.addEventListener('pointerup', e => end(e, true)); b.addEventListener('pointercancel', e => end(e, false));
+    const p = drop && e && e.clientX != null && pileAt(e.clientX, e.clientY); if (!p || p.dataset.pile === pid) return; const to = p.dataset.pile;
+    remember([sid]); setDest(sid, to); note_('Moved ' + sid + ' from ' + pid + ' to pile ' + to + '.'); renderSome([pid, to]); offerCluster([sid], to); }
+  b.addEventListener('pointerdown', e => { if (e.button > 0 || e.pointerType === 'touch') return;
+    document.querySelectorAll('img.ghost').forEach(g => g.remove());
+    d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0};
+    window.addEventListener('pointermove', move, true); window.addEventListener('pointerup', up, true);
+    window.addEventListener('pointercancel', cancel, true); window.addEventListener('blur', cancel); window.addEventListener('keydown', key, true); });
 }
 
 function pileEl(p, piles){
