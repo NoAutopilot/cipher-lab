@@ -381,17 +381,17 @@ Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found
 Read so far: 130 of 172 target tokens at C (75.6%; R8-HUNT 6 Oct 2026: census finished, BLA191 p5 L11 pos3 385 C -> M, C 131 -> 130, M 20 -> 21; R7B-HUNT 6 Oct 2026: counts unchanged, one C value changed (BLA191 p5 L11 pos3 et -> es); earlier: R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), M 20, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
 - 14 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) below the R10 margin (805, 6, 1210, 460, 1019, 711, 1118, 1052, 836, 222, 73, 470, 778, 190) - blocker: open-codes; R10-HUNT2 (6 Oct 2026, attempt 2, PREREG-R10.md) PASSed its gate and filled the 4 groups above margin 2.786 (689 m, 285 do, 1152 v at S; 214 commen at M, its sign conf M); the 14 below the margin have no instrument that clears a control (below-margin control precision is under 0.25); they reopen only with new glossed siblings using these codes
 - BLA184 range 1150/1240/1243/1250/1259 (probable names section) - blocker: open-codes; R17: glosses of this range elsewhere do not fit, the glossed items never use it
-- a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: not-attempted; Verifier audit and Premise check (d); next: TNA Discovery API search of SP 94/98-100 and SP 36/13-14 descriptions for "Paretti"/"Pareti" (While waiting), ~$0.5
+- a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: needs-physical-access; R10-HUNTTNA (6 Oct 2026, TNA Discovery API, 20 requests): Marchmont's two covering letters SP 36/13/129 (19 July 1729) and SP 36/14/184 (30 Aug 1729) are catalogued 'The enclosures not forthcoming'; SP 94/99-100 are piece-level only; no item-level decipherment or copy found; none of these pieces is digitised; reopens only with a reading-room or copy check of SP 94/100 and SP 36/14 (owner-side)
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
-- [x] siblings: six glossed items (BLA179, 185, 188, 189, 190, 194) are the key source (R17 key.tsv, leave-one-out 0.68-0.91)
+- [ ] siblings: six glossed items (BLA179, 185, 188, 189, 190, 194) are the key source (R17 key.tsv, leave-one-out 0.68-0.91); open: SP 54/19/98B (20 Oct 1729, from Seville, 'partially in cipher ... with de-cipher', enclosed by Marchmont 11 Nov 1729, SP 54/19/98A) -- a deciphered letter of the same channel, a possible key check for the 14 open codes; not digitised; next: copy/image order of SP 54/19/98A-B (owner-side, TNA copy service), ~$0 agent cost
 - [x] clear-pages: BLA186's clear text located in print (Rose 1831 ii 414-415), cipher omitted there as "(Cypher.)"
 - [x] known-keys: the run's own period glosses give the key (395 groups, grade C)
-- [ ] print: TNA SP 94/98-100 and SP 36 descriptions; HMC Polwarth V (1961) for a decipherment of BLA191(a)
+- [x] print: TNA SP 94/98-100, SP 98, SP 100, SP 36/13-14 and SP 54 descriptions (RUN6-BLATH 5 Oct; R10-HUNTTNA 6 Oct 2026): no decipherment of BLA191(a) catalogued; HMC Polwarth V search-inside done (H1, 5 Oct 2026)
 - [x] key-rebuild: key.tsv rebuilt from the glosses by build_key.py (R17)
 - [x] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap)
 - [x] retry: context-fill of the 18 unkeyed groups with a BLA185 blanking control (R9-HUNT attempt 1 FAIL; R10-HUNT2 attempt 2 PASS on fresh seeds 4-6, 4 groups filled, 14 stay U)
-Verdict: keep going: 3 internal gaps; cheapest next: TNA Discovery API search of SP 94/98-100 and SP 36/13-14 descriptions for a contemporary decipherment of BLA191(a), ~$0.5 (R10-HUNT2, 6 Oct 2026: context-fill attempt 2 PASS, 4 of 18 unkeyed groups filled, C 130 M 22 S 3 U 17)
+Verdict: keep going: 2 internal gaps; cheapest next: a copy of SP 54/19/98B (Seville, 20 Oct 1729, cipher with contemporary decipherment, same Marchmont channel) to test against key.tsv and the 14 open codes (R10-HUNTTNA, 6 Oct 2026); the State Papers decipherment gap is now needs-physical-access
 
 ## IA-DESK-ALT (account-3 worker, 5 Oct 2026): HMC Polwarth IV and V via Internet Archive
 
@@ -558,4 +558,16 @@ Expect about one in three S fills to be wrong (control precision 0.66). Target c
 lists them as U). Note: the bracket fix lowered the seeds 1-3 all-column control from R9's 0.346 to 0.340, so the fix did not by
 itself help; the gate change is what passed. The R9 files (context_fill.py, control.tsv, summary.json, target_fill.tsv) are kept
 unchanged under R9's registration. No network requests this job.
+
+## R10-HUNTTNA: TNA Discovery API, SP 36/54/94/98/100 for a decipherment of BLA191(a) (account-1 worker, 6 Oct 2026 10:24-10:29 UTC by date -u)
+Route: `discovery.nationalarchives.gov.uk/API/search/records` and `/API/records/v1/details/{id}` (JSON), 20+6 requests, >=1.7 s apart, no non-200.
+Queries and hit counts (series, date window):
+- `Marchmont` SP 36 1729: 4 -- SP 36/13/129 (19 July 1729, Cessnock to [Newcastle]) and SP 36/14/184 (30 Aug 1729), both "Covering letters. The enclosures not forthcoming ... to be laid before the Queen"; SP 36/15/64 (9 Sept, letter to Marchmont, minor); SP 36/13/62 (unrelated).
+- `Cessnock` SP 36: 0. `cipher`, `cypher` SP 36 1729: 0. `deciphered` SP 36 1729-30: 0.
+- `Port St Mary` SP 36 1728-30: 3 (SP 36/13/171 Delafaye 31 July 1729, on a Spanish courier; two unrelated). All series 1729: 53, the only SP hit SP 94/100 (piece).
+- `Spain` SP 36 Aug 1729: 17; `Keene` SP 36 15 July-15 Sept 1729: 7 -- ministers' letters (SP 36/14/61 of 8 Aug 1729, Newcastle to Townshend, on Keene's Spanish treaty dispatches), none an agent's report or decipherment.
+- `Marchmont` SP 94, SP 98, SP 100: 0 each. `Paretti` SP 98, SP 100: 0. `Paretti` all series 1725-35: 1 (SP 78/176/39, 1725, Marchmont and Whitworth at Cambrai, "Abbé-Paretti"). `Pareti`: 0. `Marchmont intelligence Spain` 1728-30: 0.
+- `Marchmont` SP 54 1729-30: 2; `Seville` SP 54 1729-30: 2 -- **SP 54/19/98A** (11 Nov 1729, Marchmont "on his ill health; and enclosing a letter from Seville", C6817756) and **SP 54/19/98B** (20 Oct 1729, "[?] from Seville, partially in cipher, concerning Stanhope's negotiations with Spain and also mentioning an advantageous marriage for the two countries; with de-cipher", C6817757). Both `digitised: false`.
+Result: no decipherment or copy of BLA191(a) is catalogued at item level in SP 36, SP 54, SP 94, SP 98 or SP 100; the two Marchmont covering letters of July/Aug 1729 say the enclosures are not with them; SP 94/99-100 stay piece-level (RUN6-BLATH), so a name search cannot see inside them -- a non-test there, not a negative. Not searched: BL Newcastle papers (Add MSS), SP 94 page images. No images fetched (no hit is a copy of BLA191(a)).
+Lead (suggestion, not done): SP 54/19/98B is a later letter from the same Seville/Port Ste Marie channel, partly in cipher with a contemporary decipherment; if it uses the same code, it is a period-decipherment witness for key.tsv and possibly for some of the 14 open codes. Needs a TNA copy order (owner-side); the prior verifier named the piece as a lead on 24 Sept 2026, this pass confirms the catalogue text and that it is not digitised.
 
