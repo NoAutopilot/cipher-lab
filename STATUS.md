@@ -5070,6 +5070,34 @@ Open for the next lane:
 3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
 4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
 
+## LANE LANE-RUN14-account-2 handoff (session_01R1TEeQiCq7JbrL8FURHPGn, account 2), 6 October 2026 (closed 16:1x UTC: i-r S/M backlog worked, lane about 53.3 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run14-jobs.md. WORK-QUEUE row LANE-RUN14-account-2: RUN13's named
+next steps for i-r, then tools/next_steps.py runnable / parallel rows (S, M). Gate 0a: SESSION-SWEEP-account-2 still `claimed`, its TSV on disk;
+proceeded as RUN7-RUN13 did. august-van-saksen (a-h) and manteuffel (s-z) verifier flags are other splits; malsburg (found-solved) key_crossmatch
+left for the owner-account orchestrator. Most other NEXT-STEPS.tsv i-r `parallel` cells were already done by RUN8-RUN12 (stale cells).
+Nineteen workers in three waves (all Opus; 17 D, 2 D- at 1.17x/1.22x), workers 49.28 + orchestrator 4.06 = 53.34 of cap 60 (get_session).
+five_hour `allowed` throughout.
+- na-suriname-map-1781: inv. 373 scans 0746 (R14-SUR746, 27 crops) and 0758 (R14-SUR758, 11 pairs) transcribed; their word-pair scores are
+  non-tests (no word gaps / 9 keyed). Per-pair DP alignment (R14-SURDP, R14-SURDP2, PREREG first): SAME SYSTEM on 0746 0.920 vs shuffled-gloss
+  p99 0.556, 0758 0.947 vs 0.590, 0730/0702 unaligned lines 0.945/0.967 vs 0.429/0.484. 2039 legend crib placement (R14-SUR2039): no fit beyond
+  already-read words; entry k "smeederyen" a candidate at S at most, no key change.
+- rah-juan-manuel-1521: f.34 L24 jum (otra) merged at M (R14-RJMZ), carried into AUDIT.md (R14-RJMV): S 300/M 170/U 272 of 742, judge cannot
+  decide. R9526 retest (R14-RJM9526): calibration now PASS 0.679; both alphabets below the 0.24 floor while rank 1/201. T/Q pooled (R14-RJMTQ):
+  all five gates FAIL, aligner retired for T; gap waits on ASKS 138.
+- intercepted-royalist-1646: Evelyn crib loop over f.10 (R14-ROYCRIB): 19 and 216 below control, both M; 418/147 absent from f.10.
+- kaliningrad-2015: wordcode (marked types as codes) control-backed negatives at conv A (R14-KAL11, control 0.767, target -1.525 / shuffled -1.491)
+  and conv B (R14-KAL12, 0.870, -1.562 / -1.566). family_run.py wordcode control now built from the unshuffled target (test_wordcode 7).
+- na-oldenbarnevelt-2442-1605: step (f) crop re-look (R14-OLDF) settled nothing; tight re-crop (R14-OLDF2) changed C1_31 supplico and C1_29
+  puere; all four judge windows still FAIL; verifier R14-OLDV carried it into AUDIT.md and SO-OLDEN-2442-BC1 (N3/ours unchanged).
+- lodewijk-van-nassau-1573-74: decode.json key.tsv 4616 reading regenerated (--check 0). 4610 p3 per-token crops: control FAIL twice
+  (R14-LVN10C 0.726/0.722; after the crop repair R14-LVN10D 0.813/0.791), [retired] for p3. R14-LVNEYE: the control sign itself looks wrong on
+  7 of 10 rows the readers agreed against (even so the rerun would read 0.843/0.822 < 0.90).
+Open for the next i-r lane: (1) lodewijk: verifier re-check of the 7 suspect 4610 p3 control rows (~2) -- if the control set is wrong the
+gate needs a re-built control, not a further reader pass; (2) suriname: verifier on R14-SURDP2's 4 descriptive candidates and a blind look at
+2039 legend entry k positions 1,2,5,7 (~1.5); (3) kaliningrad: a different design family (wordcode spent at both conventions); (4) malsburg
+key_crossmatch (found-solved; orchestrator's call).
+
 ## LANE LANE-RUN13-account-2 handoff (session_015WZUp6HMWrwUG6YxwSbq34, account 2), 6 October 2026 (closed 14:4x UTC: i-r S/M backlog worked, lane about 57.1 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run13-jobs.md. WORK-QUEUE row LANE-RUN13-account-2: RUN12's named
