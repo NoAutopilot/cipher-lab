@@ -347,3 +347,63 @@ images/crops` first), apply each sheet's key with `tools/decode_key.py`, and dif
 H for every group the sheet's key reads). Before that, a check-solved / verifier pass should decide what the 1858/1860
 archival decipherment means for this target's status (rule 5 has `found-solved`; that call is not this job's), and
 whether Grein's readings were printed (e.g. in a Schaumburg or Braunschweig historical-society journal).
+
+## Web and blog check (R9-NLACS, 6 Oct 2026)
+
+Run 05:18-05:20 UTC by `date -u`, Sonnet, no vision, no decode. Question: does the archivist's decipherment on the Grein key
+sheets (Nr. 548 aufn 0002, signed "Dr. Grein 28/2 1860"; Nr. 562 aufn 0002, "Dr. Grein 2/10 1858"), or any printing of it, make
+this target `found-solved`?
+
+Searches (WebSearch standard unless noted; each returned biographies, coin sales, ADB/NDB pages or journal tables of contents,
+none naming either shelfmark, either letter, a cipher or a key):
+1. `Herzog Heinrich der Jüngere Braunschweig 1519 Brief Gräfin Anna Schaumburg Geheimschrift Schlüssel Grein` -- ADB/Deutsche Biographie, Künker coin lots, an Archivportal-D item; no hit.
+2. `"Grein" Archivar Bückeburg Schlüssel Geheimschrift 1858 Schepper Trier 1522 Herzog Heinrich Wiederantritt Regierung` -- one useful hit, Deutsche Biographie on the archivist (below); no hit on the letters.
+3. `Hildesheimer Stiftsfehde Schepper Trier 1522 Heinrich der Mittlere Chiffre Brief Schaumburg Archiv Bückeburg L 1 Nr. 562` -- ADB Heinrich der Mittlere, ADB Johann IV; no hit.
+4. `Zeitschrift des Historischen Vereins für Niedersachsen Hildesheimer Stiftsfehde Schaumburg Archiv Bückeburg Chiffren Brief 1519 Gräfin Anna Heinrich Herzog` -- Historische Kommission Niedersachsen Jahrbuch PDFs (JB 21 1949, 29 1957, 31 1959) surfaced as tables of content only; not opened, not read: unread, not negative.
+5. `Cipher Mysteries OR Cryptiana OR Klausis Krypto Kolumne Brief Herzog Heinrich Braunschweig 1519 Gräfin Anna Schaumburg verschlüsselt` -- Cipherbrain posts on unrelated ciphers; no hit, so no comment thread to read. The three blogs were not site-searched one by one this pass (GF-A2-7 did, 2 Oct 2026, negative).
+6. Google Books API (`country=US`, key): `"Geheimschrift" Grein Bückeburg Archiv` -> HTTP 200, totalItems 0 (1 call kept; three earlier calls in this session piped to a JSON parser returned a non-JSON body and are logged as non-tests). No positive control was run, so this is a weak negative.
+7. Internet Archive be-api full-text: `"Geheimschrift" AND "Schaumburg" AND "Stiftsfehde"` -> 5 items across all hits (Spazier, Meyer, Pastor, "various"), none a Schaumburg or Braunschweig journal; second query with `Grein` returned HTTP 400 (non-test). The IA full-text index does not cover the Zeitschrift des Historischen Vereins für Niedersachsen or the Schaumburg-Lippische Mitteilungen volumes by this route.
+8. OpenAlex (`Geheimschrift Heinrich Braunschweig 1519 Schaumburg`, key via header): no result naming either letter.
+
+Who Grein was (Deutsche Biographie sfz23615, read this pass): Christian Wilhelm Michael Grein (1825-1877), Anglist and archivist; "from
+1856-1859 charged with organizing the entire archive in Bückeburg". That fits both signatures (1858, Feb 1860 -- the 1860 date is a
+year past that biography's stated tenure, so either the sheet date was added on a later visit or the sheet's name/date is misread;
+M, not resolved) and shows the sheets are an archive-internal finding aid made while the Bückeburg archive was being ordered. His
+printed work is Old English philology (Bibliothek der angelsächsischen Poesie, Sprachschatz, Beowulf); none of it is a list of
+Bückeburg deciphered letters.
+
+Not reached: the Schaumburg-Lippische Mitteilungen / Schaumburger Heimatblätter (Siebert 1968/71 is print-only), Braunschweigisches
+Jahrbuch and Zeitschrift des Historischen Vereins für Niedersachsen volume contents beyond tables, Merkel, Koldewey, Grein's own
+archival reports. A printing in one of those is not excluded.
+
+## Verdict (R9-NLACS, 6 Oct 2026)
+
+**Stays `open`; no change to the status line.** What the check found and where it did not:
+- The archival decipherment exists on disk in the target's own files: two key tables and two short word lists in the Bückeburg
+  archivist's hand (1858, 1860). That is a **period key** (rule 4 grade H when applied), not a cryptanalytic result: a
+  decode of the numeral groups with these sheets is a `period`-key check (AUDIT.md key source `period`), no D or N claim
+  beyond what the verifier sets. It is a data conflict-in-waiting to record that the 548 sheet speaks of two letters but the
+  4 filmed images hold one (R8-NLA2).
+- Printing: no printing of the sheets, the word lists or the plaintext was located in the sources searched above (not found in the
+  named sources, searched by the queries above on 6 Oct 2026; GAPS125 Havemann vol. 2 (1855) and GAPS129 Stanelle 1982 index also
+  negative). Rule 5's `found-solved` needs a published decipherment or plaintext; a manuscript note inside the same file that
+  holds the cipher is a documented attempt on record but not a publication. Whether the holding archive counts as "known" is the
+  verifier's call (F-grade/N-class), not this check's. Not `found-solved` on this evidence.
+- The decipherment covers only the in-line cipher words (about 17 + 16 words for 548, 12 for 562); the letters' remaining text is
+  clear Low German. So even a full check yields a bounded H count, and the depth ceiling (rule 4a) depends on reading the clear
+  text, which has not been done.
+- Standing caveats: Nr. 562 wrapper says the letter is Schepper's (Trier, 8 Aug 1522), not Heinrich's; the title's "Heinrich d. M."
+  and the folder's "der Jüngere" disagree (GF-A2-7 premise note); the 548 recipient reads Gräfin Anna (M).
+
+Next job (named, not run): the ~4.5 transcription + key-apply check already costed: crops with `tools/iiif_lines.py --image
+images/nla_bu_l1_548_aufn_0003.jpg --out images/crops` (and 562 aufn_0003), one blind Sonnet pass per letter plus a
+reconciliation, `tools/decode_key.py` with each sheet's key as key.tsv, diff against the sheets' word lists; then a verifier
+(separate session) for N-class and for Grein-sheet publication in the Schaumburg/Braunschweig journals.
+
+## While waiting (R9-NLACS, 6 Oct 2026)
+
+Action that depends on nobody: the transcription + sheet-key apply check above (~4.5, images on disk). Library-side reads (Bei der
+Wieden p. 112, Siebert 1968/71, Jahrbuch tables) stay with the owner's desk.
+
+Requests: www.googleapis.com 4 (3 non-JSON bodies, 1 answered 200), be-api.us.archive.org 2 (1 HTTP 400), api.openalex.org 1,
+www.deutsche-biographie.de 1 (WebFetch), WebSearch 6.
