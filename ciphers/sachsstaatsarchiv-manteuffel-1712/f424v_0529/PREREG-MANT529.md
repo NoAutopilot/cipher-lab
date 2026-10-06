@@ -30,3 +30,10 @@ rules unchanged. Reported beside R7-MANTP (4 leaves) and R7-MANT463 (5 leaves). 
 
 Known-answer (reported first, not a gate): every single-code gloss on this leaf whose code has a Krauske C value in key.tsv is scored
 agree / compatible / disagree. If the two passes split on more than 10% of code tokens, stop after reconciliation (brief).
+
+## Addendum (6 Oct 2026, 02:20 UTC by date -u), after reconciliation, before any alignment or score
+Reconciled: 31 runs, 147 code tokens, 29 glossed, 9 of them single-code (reconciled.tsv, pairs.tsv). Pass agreement by token alignment
+A vs B: f.424v 93/99 (0.939), f.425 45/48 (0.938), under the 10% stop line; each pass vs the reconciled text 0.86 (f.424v), 0.915/0.894
+(f.425). The hand writes 4 like y (as on 0574): 32y, 53y, 18y, 8y, 6y, 51y, 65y, 46y settled as 324, 534, 184, 84, 64, 514, 654, 464.
+No abbreviation is written out in full over the same code on this leaf, so no gloss_norm_0529.tsv: MANT5 normalisation only, both gates.
+Dropped from pairs: run 11 (no gloss), run 29 (gloss illegible), the struck group after run 7, and the unplaced "225." (f.425 top right).

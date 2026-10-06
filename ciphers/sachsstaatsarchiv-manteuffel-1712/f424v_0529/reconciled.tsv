@@ -1,0 +1,32 @@
+run	page	crop	codes	gloss	gloss_grade	note
+1	f.424v	L_L02	898	l'Empire	C	B + zoom; A read the gloss "l'Empire above clear 898" but did not list the run
+2	f.424v	L_L02	724.733.353.82.151.270.184.564.378	vingt mille hommes l'assembleront	M	A/B agree on codes; gloss A "l'assemblerent", B "l'assembleront"
+3	f.424v	L_L02	736.447.115.522.151.282.237.636.115.537.94.253	la Cour Imperiale n'a pas assez de troupes a portee	C	A/B agree (A "522 or 322"; zoom 522)
+4	f.424v	L_L02	403.613.281.82	le riens	M	gloss read on zoom ("le" over 403, "riens"? over 613); A "en rien", B "(ce/ces) rien"
+5	f.424v	L_L03	663.172.82.614.504.562.647	vingt autres s'operee	M	passes split (A 669.172.51.611.509.3?6.897, B 969.172.37.611.509.506.897); codes settled on 1.6x zoom, 50y = 504, 6y7 = 647; gloss words uncertain
+6	f.424v	L_L03	295.527.447.106.613.562.84.239.848	et sortirez de l'Empire	M	"et sortirez de" in the left margin, "l'Empire" over 106; 8y = 84 (A 54, B 89); 527 not 577
+7	f.424v	L_L03	403.107.588.261.496.587.560.617	les Suedois sortent	M	A "Quedes sortent", B "quedeil sortent"; zoom "les Suedois" over 107.588; struck group after 617 (approx 231.848) dropped
+8	f.424v	L_L03	403.82	et	M	after the struck group; B joined it to run 7
+9	f.424v	L_L03	515.270.354.81.583	premiers	C	35y = 354 (B 354 or 359)
+10	f.424v	L_L03	322.463.155.564.447.107.402.341	forte nous aurons la guerre	C	A/B agree
+11	f.424v	L_L04	403.82.588.261.496		-	no gloss; the trailing "y" is the clear word "y" (A "9?")
+12	f.424v	L_L04	81.156.477.560.184.417	ravir Breme	C	small 5 before 60 = 560 (B 60); 18y = 184 (A/B 189/180)
+13	f.424v	L_L05	464.370.281.844.115.403.569	obliger le Roy de Danemarc	M	46y = 464 (A 469 or 464, B 469 "written 46y")
+14	f.424v	L_L05	107	Schonborn	C	A/B agree
+15	f.424v	L_L08	107	Schonborn	C	A/B agree
+16	f.424v	L_L08	402.341	la guerre	C	A/B agree
+17	f.424v	L_L09	428.64.124.270.375.281.402.514	mais d'acheminer la paix	M	6y = 64, 51y = 514 (A/B 68, 519)
+18	f.424v	L_L09	513.654.521.403.81	pour parler	M	wraps; 81 at the start of the next line
+19	f.425	R_L01	783	le Czar	C	A/B agree
+20	f.425	R_L01	562.462.197.106.115.585.643.592.282.217.284.282	renoncer a ses vastes conquestes	M	"vondra 5 br." = voudra 562 (passes read clear); 282 at next line start before "?"; "225." in the main hand at the right end of the gloss line, unplaced, left out of the pair
+21	f.425	R_L03	867	le Feldmarechal	C	A/B agree
+22	f.425	R_L04	107	Schonborn	C	A/B agree
+23	f.425	R_L04	867	le Feldmarechal	C	A/B agree
+24	f.425	R_L06	107	Schonborn	M	A gloss, B none; zoom Schonborn
+25	f.425	R_L06	272.939	en Mecklenbourg	C	A/B agree
+26	f.425	R_L06	562.654.400	en revenir icy	M	65y = 654 (A/B 659)
+27	f.425	R_L07	295.324.560.450.587.447.115.444.202.375	envoyer garnisons a Malchin	C	32y = 324 (A/B 329)
+28	f.425	R_L07	714	un	M	B separate run; A joined to run 29
+29	f.425	R_L08	534.565.447.328		-	53y = 534 (A 538); gloss "gen ..." illegible, not a pair
+30	f.425	R_L08	562.179	Rebe	M	gloss uncertain
+31	f.425	R_L08	240.402.92.237.420.563.285.237	du Lac de Muritz	C	A "Moritz", B "Muritz"
