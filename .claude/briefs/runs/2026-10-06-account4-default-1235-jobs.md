@@ -143,7 +143,7 @@ say why in one line. Write "## D4-VIVV (verifier)" in NOTES.md (and AUDIT.md onl
 the folder's files, flag ROOM. Do not decode further, do not touch other targets.
 
 ### D4-SP105 -- sp105-paget-1693, SOAS archives catalogue reachability + item lists of PP MS 4.02.27.01/.28.01 (Sonnet; cap 1, box 30 min)
-Intake gate: pasted at spawn below.
+Intake gate: `sp105-paget-1693: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
 Folder "## While waiting (RUN4-WAITBF)" action. One reachability test of the SOAS archives catalogue host(s) (curl -w http_code, descriptive
 UA; then tools/browser_fetch.js once if curl is challenged); if it resolves, fetch the item lists of PP MS 4.02.27.01 and .28.01 (Stepney
 1693-94 letters), <= 20 requests >= 2 s apart, and list items that mention cipher/cypher/key/Paget, in a TSV + "## D4-SP105" NOTES.md
