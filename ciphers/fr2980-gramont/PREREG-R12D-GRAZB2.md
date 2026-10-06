@@ -1,4 +1,4 @@
-# PREREG R12D-GRAZB2 (6 Oct 2026, written 16:37 UTC by date -u, before any per-sign box is cut or looked at)
+# PREREG R12D-GRAZB2 (6 Oct 2026, written 16:25 UTC by date -u (header first typed 16:37 in error, corrected in the next commit; nothing else changed), before any per-sign box is cut or looked at)
 
 Job: LANE-RUN12-account-4 R12D-GRAZB2. Second attempt at PREREG-R12D-GRAZB.md's question with one change: the crop.
 

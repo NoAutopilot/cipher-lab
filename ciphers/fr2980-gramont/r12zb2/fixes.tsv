@@ -1,0 +1,47 @@
+id	fix	reason
+1	1	box on g, z is next run
+2	-1	box on x, z is previous run
+5	1	box on y, fh is next run
+7	1	box on ST, z is next run
+9	830:900	box on lambda; zb (barred z) by pixel range
+11	1160:1212	box a thin slice right of the zb
+13	625:665	box narrow on zb, widened
+15	1552:1595	box took the page edge
+16	2085:2130	box on three signs left of the target; n6 (delta shape) by pixel range
+19	143:195	box a slice right of the zb
+20	1050:1100	box on R; fh by pixel range
+22	1628:1668	f18r_L11_s2 image repeats the s1 tail at its left, so the run alignment is off; n6 (delta after p x) by pixel range
+25	122:168	box left of the zb
+27	518:562	box on m; z previous sign
+28	727:768	box a slice left of the zb
+30	682:728	box on m; zb next sign
+31	257:302	box on h; z previous sign
+33	62:110	box on h; z previous sign
+34	1958:2018	box on ST; z next sign
+35	340:372	box on the end of m; z next sign
+42	322:368	box on the end of ss2; z next sign
+43	1332:1368	box on br; n6 two signs on
+46	714:760	box on mx; zb previous sign
+47	737:772	box on b; z previous sign
+50	617:662	box on x; zb next sign
+51	5:62	box wide, trimmed to the z
+53	2177:2218	box on x and n6; trimmed to n6
+54	1122:1158	box took c and the stroke; trimmed to z
+56	1052:1102	box took ss2 and zb; trimmed to zb
+62	177:238	box on x; fh previous sign
+64	215:250	box on oi; n6 next sign
+65	975:1025	box wide, trimmed to zb
+66	720:760	box took z and aq; trimmed to z
+67	757:795	box on the long s; z two signs back
+68	1162:1198	box on a stroke; n6 two signs on
+70	767:803	box on 9; z next sign
+72	1117:1158	box on 2; z two signs on
+73	404:445	box on m; zb next sign
+76	2242:2292	box on c x 5; z after them
+77	785:850	box on mx; zb previous sign
+79	549:600	box on z; fh next sign
+82	452:502	box on zb; z two signs on
+84	257:302	box on the long s; zb next sign
+85	647:693	box on n6; fh next sign
+86	1078:1152	box on m; zb previous sign
+88	767:798	box on lt; z next sign

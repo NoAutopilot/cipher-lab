@@ -1,0 +1,89 @@
+id	set	src	line_pos	image	j	n	code_here	x0	x1	fix
+41	T1	f30	f30v_L02 0	images/crops_f30/f30v_L02a.jpg	0	15	zb	152	199	
+21	T1	f30	f30r_L02 35	images/crops_f30/f30r_L02b.jpg	19	24	zb	1387	1440	
+39	T1	f30	f30r_L15 9	images/crops_f30/f30r_L15a.jpg	9	14	zb	918	990	
+63	T1	f30	f30v_L11 0	images/crops_f30/f30v_L11a.jpg	0	14	zb	156	224	
+49	T1	f30	f30v_L04 1	images/crops_f30/f30v_L04a.jpg	1	14	zb	253	286	
+28	T1	f30	f30r_L09 9	images/crops_f30/f30r_L09a.jpg	9	18	zb	727	768	727:768
+65	T1	f30	f30r_L11 28	images/crops_f30/f30r_L11b.jpg	13	20	zb	975	1025	975:1025
+37	T1	f30	f30r_L01 9	images/crops_f30/f30r_L01a.jpg	9	16	zb	844	897	
+61	T1	f30	f30r_L02 14	images/crops_f30/f30r_L02a.jpg	14	16	zb	1194	1250	
+84	T1	f30	f30r_L01 19	images/crops_f30/f30r_L01b.jpg	3	22	zb	257	302	257:302
+58	T1	f30	f30r_L03 7	images/crops_f30/f30r_L03a.jpg	7	16	zb	671	718	
+13	T1	f30	f30r_L35 23	images/crops_f30/f30r_L35b.jpg	8	21	zb	625	665	625:665
+9	T1	f30	f30v_L20 22	images/crops_f30/f30v_L20b.jpg	9	14	zb	830	900	830:900
+56	T1	f30	f30r_L24 11	images/crops_f30/f30r_L24a.jpg	11	14	zb	1052	1102	1052:1102
+19	T1	f30	f30r_L04 19	images/crops_f30/f30r_L04b.jpg	2	23	zb	143	195	143:195
+71	T1	f30	f30v_L06 9	images/crops_f30/f30v_L06a.jpg	9	16	zb	820	863	
+25	T1	f30	f30v_L09 16	images/crops_f30/f30v_L09b.jpg	1	20	zb	122	168	122:168
+18	T1	f30	f30r_L10 18	images/crops_f30/f30r_L10b.jpg	3	23	zb	237	287	
+46	T1	f30	f30r_L07 9	images/crops_f30/f30r_L07a.jpg	9	16	zb	714	760	714:760
+36	T1	f30	f30r_L02 9	images/crops_f30/f30r_L02a.jpg	9	16	zb	815	867	
+11	T1	f30	f30r_L34 13	images/crops_f30/f30r_L34a.jpg	13	15	zb	1160	1212	1160:1212
+81	T1	f30	f30r_L29 31	images/crops_f30/f30r_L29b.jpg	15	19	zb	1217	1248	
+77	T1	f30	f30v_L19 8	images/crops_f30/f30v_L19a.jpg	8	12	zb	785	850	785:850
+23	T1	f30	f30r_L13 37	images/crops_f30/f30r_L13b.jpg	20	24	zb	1331	1369	
+3	T2a	fr3040	f18vA_L01 12	images/fr3040_f18/f18vA_L01_a.jpg	12	15	z	1072	1108	
+57	T2a	fr3040	f18vB_L01 2	images/fr3040_f18/f18vB_L01_a.jpg	2	15	z	283	331	
+88	T2a	fr3040	f18vC_L02 9	images/fr3040_f18/f18vC_L02_a.jpg	9	16	z	767	798	767:798
+80	T2a	fr3040	f18vC_L02 19	images/fr3040_f18/f18vC_L02_b.jpg	3	18	z	277	320	
+54	T2a	fr3040	f18vC_L03 13	images/fr3040_f18/f18vC_L03_a.jpg	13	15	z	1122	1158	1122:1158
+4	T2a	fr3040	f18vC_L03 25	images/fr3040_f18/f18vC_L03_b.jpg	10	18	z	880	914	
+59	T2a	fr3040	f18vC_L04 2	images/fr3040_f18/f18vC_L04_a.jpg	2	17	z	226	290	
+1	T2a	fr3040	f18vC_L04 36	images/fr3040_f18/f18vC_L04_b.jpg	19	26	z	1181	1222	1
+26	T2a	fr3040	f18vC_L06 4	images/fr3040_f18/f18vC_L06_a.jpg	4	15	z	394	434	
+2	T2a	fr3040	f18vC_L06 24	images/fr3040_f18/f18vC_L06_b.jpg	9	20	z	691	740	-1
+44	T2a	fr3040	f18vC_L07 8	images/fr3040_f18/f18vC_L07_a.jpg	8	16	z	727	773	
+27	T2a	fr3040	f18vC_L08 5	images/fr3040_f18/f18vC_L08_a.jpg	5	14	z	518	562	518:562
+51	T2a	fr3040	f18vC_L09 0	images/fr3040_f18/f18vC_L09_a.jpg	0	15	z	5	62	5:62
+47	T2a	fr3040	f18vC_L13 26	images/fr3040_f18/f18vC_L13_b.jpg	10	21	z	737	772	737:772
+33	T2a	fr3040	f18vC_L15 1	images/fr3040_f18/f18vC_L15_a.jpg	1	18	z	62	110	62:110
+72	T2a	fr3040	f18vC_L15 34	images/fr3040_f18/f18vC_L15_b.jpg	16	24	z	1117	1158	1117:1158
+67	T2a	fr3040	f19r_L02 24	images/fr3040_f18/f19r_L02_b.jpg	9	14	z	757	795	757:795
+74	T2b	fr3040	f18vA_L01 4	images/fr3040_f18/f18vA_L01_a.jpg	4	15	zb	456	496	
+14	T2b	fr3040	f18vA_L03 3	images/fr3040_f18/f18vA_L03_a.jpg	3	14	zb	422	459	
+12	T2b	fr3040	f18vB_L01 21	images/fr3040_f18/f18vB_L01_b.jpg	6	23	zb	472	516	
+30	T2b	fr3040	f18vB_L01 24	images/fr3040_f18/f18vB_L01_b.jpg	9	23	zb	682	728	682:728
+8	T2b	fr3040	f18vB_L02 5	images/fr3040_f18/f18vB_L02_a.jpg	5	15	zb	450	494	
+50	T2b	fr3040	f18vB_L03 24	images/fr3040_f18/f18vB_L03_b.jpg	9	24	zb	617	662	617:662
+73	T2b	fr3040	f19r_L01 4	images/fr3040_f18/f19r_L01_a.jpg	4	14	zb	404	445	404:445
+29	T2b	fr3040	f19r_L01 23	images/fr3040_f18/f19r_L01_b.jpg	9	18	zb	701	747	
+48	T2b	fr3040	f19r_L02 3	images/fr3040_f18/f19r_L02_a.jpg	3	15	zb	355	396	
+52	T2b	fr3040	f19r_L02 12	images/fr3040_f18/f19r_L02_a.jpg	12	15	zb	1000	1045	
+86	T2b	fr3040	f19r_L02 27	images/fr3040_f18/f19r_L02_b.jpg	12	14	zb	1078	1152	1078:1152
+70	P	f30	f30r_L09 27	images/crops_f30/f30r_L09b.jpg	9	21	z	767	803	767:803
+35	P	f30	f30r_L13 22	images/crops_f30/f30r_L13b.jpg	5	24	z	340	372	340:372
+82	P	f30	f30r_L06 23	images/crops_f30/f30r_L06b.jpg	7	23	z	452	502	452:502
+10	P	f30	f30r_L07 33	images/crops_f30/f30r_L07b.jpg	17	23	z	1262	1313	
+69	P	f30	f30v_L06 21	images/crops_f30/f30v_L06b.jpg	5	20	z	458	517	
+31	P	f30	f30v_L01 19	images/crops_f30/f30v_L01b.jpg	5	24	z	257	302	257:302
+66	P	f30	f30r_L14 8	images/crops_f30/f30r_L14a.jpg	8	17	z	720	760	720:760
+42	P	f30	f30r_L04 21	images/crops_f30/f30r_L04b.jpg	4	23	z	322	368	322:368
+32	P	f30	f30r_L03 16	images/crops_f30/f30r_L03b.jpg	0	22	z	20	80	
+7	P	f30	f30v_L02 20	images/crops_f30/f30v_L02b.jpg	5	21	z	463	518	1
+34	P	fr3040	f18r_L01 21	images/fr3040_f18/f18r_L01_s1.jpg	21	26	z	1958	2018	1958:2018
+76	P	fr3040	f18r_L06 37	images/fr3040_f18/f18r_L06_s2.jpg	11	13	z	2242	2292	2242:2292
+60	fh	f30	f30r_L08 12	images/crops_f30/f30r_L08a.jpg	12	19	fh	947	987	
+79	fh	f30	f30v_L02 21	images/crops_f30/f30v_L02b.jpg	6	21	fh	549	600	549:600
+17	fh	f30	f30r_L05 8	images/crops_f30/f30r_L05a.jpg	8	18	fh	684	721	
+83	fh	f30	f30r_L16 4	images/crops_f30/f30r_L16a.jpg	4	16	fh	450	493	
+20	fh	f30	f30r_L29 12	images/crops_f30/f30r_L29a.jpg	12	16	fh	1050	1100	1050:1100
+85	fh	f30	f30r_L09 25	images/crops_f30/f30r_L09b.jpg	7	21	fh	647	693	647:693
+24	fh	fr3040	f18vC_L06 13	images/fr3040_f18/f18vC_L06_a.jpg	13	15	fh	1116	1174	
+62	fh	fr3040	f18vC_L08 19	images/fr3040_f18/f18vC_L08_b.jpg	5	19	fh	177	238	177:238
+38	fh	fr3040	f18vB_L04 6	images/fr3040_f18/f18vB_L04_a.jpg	6	14	fh	594	668	
+40	fh	fr3040	f18vB_L02 7	images/fr3040_f18/f18vB_L02_a.jpg	7	15	fh	603	673	
+5	fh	fr3040	f18vC_L05 9	images/fr3040_f18/f18vC_L05_a.jpg	9	16	fh	656	773	1
+75	fh	fr3040	f18vC_L11 7	images/fr3040_f18/f18vC_L11_a.jpg	7	16	fh	592	667	
+43	n6	f30	f30r_L04 35	images/crops_f30/f30r_L04b.jpg	18	23	n6	1332	1368	1332:1368
+68	n6	f30	f30r_L32 31	images/crops_f30/f30r_L32b.jpg	15	23	n6	1162	1198	1162:1198
+15	n6	f30	f30v_L18 33	images/crops_f30/f30v_L18b.jpg	19	20	n6	1552	1595	1552:1595
+45	n6	f30	f30r_L30 37	images/crops_f30/f30r_L30b.jpg	21	27	n6	1294	1320	
+78	n6	f30	f30r_L02 7	images/crops_f30/f30r_L02a.jpg	7	16	n6	661	727	
+55	n6	f30	f30v_L02 11	images/crops_f30/f30v_L02a.jpg	11	15	n6	1016	1078	
+87	n6	fr3040	f18vC_L09 31	images/fr3040_f18/f18vC_L09_b.jpg	16	17	n6	1323	1358	
+22	n6	fr3040	f18r_L11 31	images/fr3040_f18/f18r_L11_s2.jpg	3	13	n6	1628	1668	1628:1668
+64	n6	fr3040	f18vC_L07 18	images/fr3040_f18/f18vC_L07_b.jpg	2	20	n6	215	250	215:250
+53	n6	fr3040	f18r_L10 22	images/fr3040_f18/f18r_L10_s1.jpg	22	25	n6	2177	2218	2177:2218
+6	n6	fr3040	f18vC_L13 8	images/fr3040_f18/f18vC_L13_a.jpg	8	16	n6	642	699	
+16	n6	fr3040	f18r_L05 35	images/fr3040_f18/f18r_L05_s2.jpg	8	12	n6	2085	2130	2085:2130
