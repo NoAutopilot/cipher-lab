@@ -50,6 +50,14 @@ your browser:
    downsampled). Write the pixel width and height of what you got in the answer. Do not commit image files; give
    the URL you used and leave the files for the owner to place (5 Oct 2026: on one Spanish national library letter
    the PDF was 1114 px wide, the JPEG download 1392 px, and a 220% screenshot about twice the PDF's detail).
+   A `viewer-capture` row asks for page images from a library viewer the cloud cannot reach (BNE, RAH, HathiTrust and
+   the like). In the viewer: open the item at the page the row names, zoom to the level it names (about 250%), and
+   screenshot the block it names 3-4 lines at a time, top to bottom, overlapping by one line. If the row asks for
+   variants, use the viewer's own image controls (colour/greyscale, contrast, brightness, negative) and take the same
+   shots again for each variant, naming files <n>-colour.png, <n>-contrast.png and so on. Never put these images in
+   this public repository: save them in a local clone of github.com/NoAutopilot/cipher-lab-private (clone it once
+   next to the cipher-lab folder if it is missing), in the folder the row names, commit and push there. Your answer
+   file in this repository lists only the file names, sizes in pixels and the viewer settings used -- no images.
    Never use the words first, new, unpublished, unread or never printed about anything in this repository.
 4. Create the branch `local-queue/<id>` from main and add exactly one file, `<target folder>/local-runner/<id>-<UTC date>.md`
    (the target folder is the row's target column; if it names two folders, use the first), whose first lines are:
