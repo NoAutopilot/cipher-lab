@@ -1,6 +1,6 @@
 # PREREG -- R9-BAL103: a context rule for the ambiguous sign 9 (i|r|s), written and pushed before any rule output is computed
 
-Worker R9-BAL103 (account 1, LANE LANE-RUN9-account-1), 6 Oct 2026, written 05:5x UTC by `date -u`.
+Worker R9-BAL103 (account 1, LANE LANE-RUN9-account-1), 6 Oct 2026, written 05:49 UTC by `date -u`.
 
 Disclosure: calib/sign_table.tsv (R7C-BAL103K) already shows the 3 aligned letters of 9 on f.171r (s, s, i). So calib/ alone
 cannot be a blind test at N=3; it is reported, and a held-out known-answer control at matched noise carries the gate.

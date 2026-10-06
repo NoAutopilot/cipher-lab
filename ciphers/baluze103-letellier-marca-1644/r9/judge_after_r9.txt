@@ -1,0 +1,2 @@
+FAIL language: score=-1.445, null_p99=-1.872, real_p05=-0.852, real_median=-0.783, mode=both, N=655
+FAIL - baluze103-letellier-marca-1644 (a PASS is a gate for a verifier, not a reading; rule 10)

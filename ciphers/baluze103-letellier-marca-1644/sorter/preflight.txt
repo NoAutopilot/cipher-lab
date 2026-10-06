@@ -1,0 +1,7 @@
+161 small tiles
+62 piles, 1111 tiles, 0 skipped, 134 clusters (provisional), 0 ranked, 3842 KB -> ciphers/baluze103-letellier-marca-1644/sorter/out/baluze103_f50_sorter.html
+PASS template: ok, Fix the cut present, marker 2026-10-06.1
+PASS answerable: 28 focus tiles, 62 named piles of 62, 0 unanswerable
+PASS right line: 1111 tiles; 0 tile(s) off the cipher lines, 32 of 32 listed lines have tiles; shape: 0 wide (>2.5x median 67 px), 1 strip-height boxes, 44 ink outside 3-60% of 1111 measured; 44 = 4.0% (limit 5%) [list: ciphers/baluze103-letellier-marca-1644/sorter/cipher_lines.tsv]
+PASS contact sheet: 24 tiles beside their line strips -> ciphers/baluze103-letellier-marca-1644/sorter/out/baluze103_f50_sorter.preflight.png (seed 20261006; eye it before publishing)
+preflight: PASS

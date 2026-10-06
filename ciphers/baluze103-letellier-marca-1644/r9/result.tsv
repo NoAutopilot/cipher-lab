@@ -1,0 +1,16 @@
+control_A_N	2000
+const_letter	s
+const_acc	0.369
+random_acc	0.333
+noise0_rule_acc	0.908
+noise0_shuffled_model_acc	0.365
+noise15_rule_acc	0.718
+noise15_shuffled_model_acc	0.361
+noise27_rule_acc	0.606
+noise27_shuffled_model_acc	0.359
+noise35_rule_acc	0.545
+noise35_shuffled_model_acc	0.337
+control_B_rule	sri
+control_B_truth	ssi
+control_B_hits	2/3
+gate	PASS
