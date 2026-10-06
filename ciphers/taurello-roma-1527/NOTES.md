@@ -140,3 +140,24 @@ Requests: archive.org advancedsearch 2, metadata 6, download 1; be-api fts about
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the last pass's named next -- map Sanuto vol. 46's archive.org identifier (scan 22 or 01 heads) and read vol. XLII's Taurello passage (id 05, line 41313 of its djvu) to see whether it ties him to Pietro Antonio, ~$0.5 (estimate); keep be-api requests to a few dozen this time (the last pass used about 400).
+
+## R8-TAUR (6 Oct 2026, 04:03-04:1x UTC; for LANE LANE-RUN8-account-4)
+
+Job: the "While waiting" action (map Sanuto vol. 46; read vol. XLII's Taurello passage). Search results only; no novelty class.
+
+**Vol. 46 mapped:** `idiariidimarino52sanugoog` = TOMO XLVI, "I Settembre MDXXVII - XXVIII Febbraio MDXXVIII" (djvu title page, h52). Scans 22 and 01 named in the earlier note are NOT vol. 46
+(22 = XLVIII, 01 = XLIII). Heads (first 40 KB) of 44 scans were read to find it; the other volume numbers seen: 39 = XLVIII, 41 = XLIII, 33 = XLIV, 29 = XLI, 42 = XLVII (OCR "XLVn"), 26 = L, 32 = LII.
+Vol. 46's range starts 1 Sept 1527, after the 24 June 1527 letter, so it can only carry later echoes.
+
+**Vol. 46 grep (full djvu, 1.48 MB, one download):** Taurello 0; Vetralla 1 index entry ("Vetralla (Vetraglia) (campagna di Roma), 516") plus one running-text spelling "a Vetraglia" (l.28786, a list of
+places in the campagna); "torelli" 1 (= bulls, a simile, l.33739); "Pietro Antonio": Meliavaca (Milanese), Besozzi (Milanese), Lazise (constable), Conti (Milan ducal household), Fantino's son -- none Taurello.
+Positive control: Vetralla/Vetraglia and Borbon read in the same text (Borbon 1 line match by grep -c), so the OCR covers the right vocabulary. Limit: Google OCR; a grep miss is a result for this scan only.
+
+**Vol. XLII (id 05) passage (l.41313, read in context):** Sanuto, July 1526: letters of Lodovico, orator of the Duke of Ferrara, intercepted and sent "di zifra" by the Pope to his legate, dated Granada 5 July 1526:
+"el zonzer di Herera li el di Taurello vien in Italia" (the arrival there of Herrera / of Taurello coming to Italy), with Hugo de Moncada sent to Italy with full powers. The index (l.63130) lists
+"Taurello (Torelli) messo dell'Imperatore al papa, 571". So in 1526 Taurello is an imperial envoy to the Pope, reported through Ferrarese cipher traffic. The passage gives no forename, no Pietro Antonio, no Vetralla and no link to
+the 1527 letter: it does not tie him to Pietro Antonio either way. Whether the 1526 envoy is the 1527 correspondent is not established by this text (same surname, same imperial-to-Rome role, one year apart: a lead, grade M at most).
+
+Not found: any Taurello in vol. XLV (previous note) or XLVI; Pastor, Gayangos CSP Spain vol. 3, Boletin RAH serial printing still unread. Verdict unchanged: blocked.
+Requests: archive.org advancedsearch 2, download 3 full djvu (05, 22, 01) + 1 (52) + 43 range-limited heads (2 s apart), be-api 0. Total about 49 archive.org requests. No vision, no subagents.
+Next (one step, ~$0.3): search vol. XLII's other Taurello/Torello mentions (index p. 571 and neighbouring pages) and the Sanuto indexes of vols 43-44 for the same envoy, to see whether a forename ever appears.
