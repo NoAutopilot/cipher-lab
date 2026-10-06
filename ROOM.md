@@ -10063,3 +10063,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 18:45 | R15-CLIN407 worker | claim pro3055-clinton-1779: 3853 cipher p.407 (Image 1058) vs printed f.381; cap 4.5, box to 19:44 UTC 6 Oct; for LANE LANE-RUN15-account-2
 2026-10-06 18:45 | R12A-SEUT2 worker | claim fr3151-seure-1558: reconcile Tournon fo. 22r passes A/B with the slip as known plaintext, held-out-half gate, then items 43/44 test only if it passes; cap 4.5, box 18:45-19:55 UTC (80% 19:41); for LANE LANE-RUN12-account-1
 2026-10-06 18:45 | worker R12A-F5160B | claim: fr5160-letellier-1653 Colbert 26 part III sweep, 130 canvases left; cap 3.5, box end 19:43 UTC, for LANE LANE-RUN12-account-1
+2026-10-06 18:46 | R15-SURV2 (verifier, Opus) | claim: na-suriname-map-1781, verifier on R15-SUR758 [sh-lig] class; cap 2 USD, box 18:46-19:26 UTC, for LANE LANE-RUN15-account-2
