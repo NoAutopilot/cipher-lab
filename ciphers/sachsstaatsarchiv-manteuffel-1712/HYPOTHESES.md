@@ -145,3 +145,4 @@ so in this run either 160 is a syllable code ('tre'/'eve') or the gloss is place
 Not resolved here (prereg: key changes only for codes that clear): 451 and 588 stay in key.tsv at M with the weaker verdict noted; whether a
 code that loses BH significance when material is added should leave the key is an orchestrator decision. 714: 5 'u' vs 2 'une' chunks
 (0521, 0526), the un/une conflict above, unchanged.
+| 6 Oct 2026 R13-MANT85 | per-leaf aligner gate, PREREG-MANT85 (694/09 frame 0085, March 1713, 11 glossed pairs, letter range; runs 9+10 one pair) | 200 gloss permutations, seed 85: mean 0.310, p95 0.542 (secondary per-line pairing: mean 0.216, p95 0.438) | S 0.125 (3/24, S_single N 0); secondary 0.000 (0/16) | FAIL; nothing merges. Known-answer (not a gate): Krauske's letter table reads the glossed runs (la reyne, nous avons plus gagnes, k-r, g-r) -- table still in use in 694/09; 483/501/349 unglossed |
