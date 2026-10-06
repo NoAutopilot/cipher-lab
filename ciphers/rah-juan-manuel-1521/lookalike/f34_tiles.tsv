@@ -1,0 +1,243 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+rjm34la_f34	f34_L01	1	~		F	split	split	F,K		V ~ A		
+rjm34la_f34	f34_L01	3	~	F		split	split	F,K	~ V	A P T		
+rjm34la_f34	f34_L01	7	~	R	T	split	split	R,T,9	A P T	~ ~ ~		
+rjm34la_f34	f34_L01	8	~	~	o	split	split	~,o	P T ~	~ ~ yol		
+rjm34la_f34	f34_L01	9	~		p	split	split	p	T ~ ~	~ yol Z		
+rjm34la_f34	f34_L01	10	~		b	split	split	b	~ ~ ~	yol Z ~		
+rjm34la_f34	f34_L01	13	~	num	um	split	split	num,um	~ yol Z	ka ~ ~		
+rjm34la_f34	f34_L01	15	~		ott	split	split	ott	Z ~ ka	~ A ~		
+rjm34la_f34	f34_L01	16	~		Z	split	split	Z,7,3	~ ka ~	A ~ ~		
+rjm34la_f34	f34_L01	18	~	T		split	split	T,9	~ ~ A	~ ~ E		
+rjm34la_f34	f34_L01	19	~	Z		split	split	Z,7,3	~ A ~	~ E ~		
+rjm34la_f34	f34_L01	20	~	~		split	split	~	A ~ ~	E ~ sof		
+rjm34la_f34	f34_L01	22	~		R	split	split	R	~ ~ E	sof ~ gap		
+rjm34la_f34	f34_L01	24	~	K		split	split	K,Q,F	E ~ sof	gap ~ g		
+rjm34la_f34	f34_L01	26	~	K		split	split	K,Q,F	sof ~ gap	g A top		
+rjm34la_f34	f34_L01	27	g	g	g	oot	oot	g,K,Q,Z	~ gap ~	A top qid		
+rjm34la_f34	f34_L01	33	~	9	ag	split	split	9,D,Q,ag	qid gap T	Z ~ Z		
+rjm34la_f34	f34_L01	35	~	T	ott	split	split	T,9,ott	T ~ Z	Z ~ E		
+rjm34la_f34	f34_L01	37	~		oo	split	split	oo	Z ~ Z	E		
+rjm34la_f34	f34_L02	2	~	X	A	split	split	X,A,E	T	y gap bas		
+rjm34la_f34	f34_L02	3	y	y	y	oot	oot	y,ya,K,Q,Z	T ~	gap bas get		
+rjm34la_f34	f34_L02	12	ez	ez	ez	oot	oot	ez,jez,lez	as sad Z	mef ~ Z		
+rjm34la_f34	f34_L02	14	~	K	Q	split	split	K,Q,F,9	Z ez mef	Z ez pib		
+rjm34la_f34	f34_L02	16	ez	ez	ez	oot	oot	ez,jez,lez	mef ~ Z	pib F ~		
+rjm34la_f34	f34_L02	19	~	K	Q	split	split	K,Q,F,9	ez pib F	rob qes ~		
+rjm34la_f34	f34_L02	20	rob	rob	rob	oot	oot	rob,cob,pob,qob,reb,rol,ror	pib F ~	qes ~ ler		
+rjm34la_f34	f34_L02	22	~	bue	buel	split	split	bue,buel	~ rob qes	ler dix		
+rjm34la_f34	f34_L03	2	~		D	split	split	D,9,7	T	3 9 A		
+rjm34la_f34	f34_L03	11	~	9	D	split	split	9,D,Q,7	ya dim T	y T 6		
+rjm34la_f34	f34_L03	12	y	y	y	oot	oot	y,ya,K,Q,Z	dim T ~	T 6 ~		
+rjm34la_f34	f34_L03	15	~	9	g	split	split	9,D,Q,g	y T 6	kef sof min		
+rjm34la_f34	f34_L04	1	~	~	Z	split	split	Z,7,3,~		ul gap bas		
+rjm34la_f34	f34_L04	9	g	g	g	oot	oot	g,K,Q,Z	dim Z as	dim F F		
+rjm34la_f34	f34_L04	15	~		D	split	split	D,9,7	F A T	9 ~ sof		
+rjm34la_f34	f34_L04	17	~	9	7	split	split	9,7,D,Q,Z	T ~ 9	sof dim gam		
+rjm34la_f34	f34_L05	1	rob	rob	rob	oot	oot	rob,cob,pob,qob,reb,rol,ror		T ~ boz		
+rjm34la_f34	f34_L05	3	~	9	D	split	split	9,D,Q,7	rob T	boz qid pib		
+rjm34la_f34	f34_L05	8	~	cil	cly	split	split	cil,cly	qid pib sof	~ qob A		
+rjm34la_f34	f34_L05	9	~	K	Q	split	split	K,Q,F,9	pib sof ~	qob A ~		
+rjm34la_f34	f34_L05	12	~	F	g	split	split	F,K,g	~ qob A	~ Z A		
+rjm34la_f34	f34_L05	13	~	9	D	split	split	9,D,Q,7	qob A ~	Z A Z		
+rjm34la_f34	f34_L05	20	ez	ez	ez	oot	oot	ez,jez,lez	as sad Z	pis F ~		
+rjm34la_f34	f34_L05	23	~	gef	grf	split	split	gef,grf	ez pis F	rob yam ~		
+rjm34la_f34	f34_L05	24	rob	rob	rob	oot	oot	rob,cob,pob,qob,reb,rol,ror	pis F ~	yam ~		
+rjm34la_f34	f34_L05	26	~		Z	split	split	Z,7,3	~ rob yam			
+rjm34la_f34	f34_L06	1	~	zar	Z	split	split	Z,7,3,zar		qes T boz		
+rjm34la_f34	f34_L06	8	~	gi	g	split	split	gi,g	qid yul ceo	~ ceo ~		
+rjm34la_f34	f34_L06	9	~	K	Q	split	split	K,Q,F,9	yul ceo ~	ceo ~ ~		
+rjm34la_f34	f34_L06	11	~	ket	het	split	split	ket,het	~ ~ ceo	~ A ~		
+rjm34la_f34	f34_L06	12	~	nje	nec	split	split	nje,nec	~ ceo ~	A ~ T		
+rjm34la_f34	f34_L06	14	~		o	split	split	o	~ ~ A	T ~ 3		
+rjm34la_f34	f34_L06	16	~		7	split	split	7,Z,9	A ~ T	3 ~ 4		
+rjm34la_f34	f34_L06	18	~	b	Z	split	split	Z,7,3,b	T ~ 3	4 lep ~		
+rjm34la_f34	f34_L06	21	~	z	Z	split	split	Z,7,3,z	~ 4 lep	F ler qes		
+rjm34la_f34	f34_L07	5	~	z	2	split	split	2,z	kan Z suf	gap ~ ac		
+rjm34la_f34	f34_L07	7	~	z	Z	split	split	Z,7,3,z	suf ~ gap	ac qes T		
+rjm34la_f34	f34_L07	13	~	b	Z	split	split	Z,7,3,b	T 3 9	X qid get		
+rjm34la_f34	f34_L07	19	~	ump	um	split	split	ump,um	get R Z	R tas R		
+rjm34la_f34	f34_L07	25	~	zy	Z	split	split	Z,7,3,zy	R gap R	~		
+rjm34la_f34	f34_L07	26	~		y	split	split	y	gap R ~			
+rjm34la_f34	f34_L08	2	~	T	ett	split	split	T,9,ett	rut	sof bol g		
+rjm34la_f34	f34_L08	5	g	g	g	oot	oot	g,K,Q,Z	~ sof bol	~ ~ 3		
+rjm34la_f34	f34_L08	7	~	7	Z	split	split	7,Z,9,3	bol g ~	3 4 ~		
+rjm34la_f34	f34_L08	10	~	K	Q	split	split	K,Q,F,9	~ 3 4	ler nin ~		
+rjm34la_f34	f34_L08	13	~		y	split	split	y	~ ler nin	sof gap ~		
+rjm34la_f34	f34_L08	16	~	6	Z	split	split	6,Z,7,3	~ sof gap	9 ~ qes		
+rjm34la_f34	f34_L08	18	~	d	D	split	split	D,9,7,d	gap ~ 9	qes ~ 9		
+rjm34la_f34	f34_L08	20	~	nq	nec	split	split	nq,nec	9 ~ qes	9 Z A		
+rjm34la_f34	f34_L08	24	~	7	Z	split	split	7,Z,9,3	9 Z A	A bas		
+rjm34la_f34	f34_L09	6	y	y	y	oot	oot	y,ya,K,Q,Z	nin Z A	qid pib gap		
+rjm34la_f34	f34_L09	17	~	nq	nec	split	split	nq,nec	qus gat qes	9 Z A		
+rjm34la_f34	f34_L09	21	~	d	D	split	split	D,9,7,d	9 Z A	B 4		
+rjm34la_f34	f34_L10	1	~	3	30	split	split	3,Z,30		6 ~ ~		
+rjm34la_f34	f34_L10	3	~	6	g	split	split	6,Z,g	~ 6	~ T ~		
+rjm34la_f34	f34_L10	4	~	9		split	split	9,D,Q	~ 6 ~	T ~ taf		
+rjm34la_f34	f34_L10	6	~	~	÷	split	split	~,÷	~ ~ T	taf B boz		
+rjm34la_f34	f34_L10	14	~	az	iz	split	split	az,iz	gap bas T	ler ~ ~		
+rjm34la_f34	f34_L10	16	~	T	tag	split	split	T,9,tag	T ~ ler	~ gap kef		
+rjm34la_f34	f34_L10	17	~	9		split	split	9,D,Q	~ ler ~	gap kef R		
+rjm34la_f34	f34_L10	24	~	z	Z	split	split	Z,7,3,z	bier R gap	il ~ ~		
+rjm34la_f34	f34_L10	26	~	X	x	split	split	X,A,x	gap ~ il	~ ~		
+rjm34la_f34	f34_L10	27	~	ord	or	split	split	ord,or	~ il ~	~		
+rjm34la_f34	f34_L10	28	~		D	split	split	D,9,7	il ~ ~			
+rjm34la_f34	f34_L11	4	~	pn	puz	split	split	pn,puz	bup hin A	~ qes ~		
+rjm34la_f34	f34_L11	5	~	z	ges	split	split	z,ges	hin A ~	qes ~ R		
+rjm34la_f34	f34_L11	7	~	kap		split	split	kap	~ ~ qes	R xor Z		
+rjm34la_f34	f34_L11	12	~		D	split	split	D,9,7	xor Z A	tac rut ~		
+rjm34la_f34	f34_L11	15	~	cil	cly	split	split	cil,cly	~ tac rut	nab Z T		
+rjm34la_f34	f34_L12	1	~	kap	kar	split	split	kap,kar		R ~ ~		
+rjm34la_f34	f34_L12	3	~	kabad	kab	split	split	kabad,kab	~ R	~ ~ ~		
+rjm34la_f34	f34_L12	4	~	ot	ad	split	split	ot,ad	~ R ~	~ ~ A		
+rjm34la_f34	f34_L12	5	~		D	split	split	D,9,7	R ~ ~	~ A ~		
+rjm34la_f34	f34_L12	6	~		ott	split	split	ott	~ ~ ~	A ~ mus		
+rjm34la_f34	f34_L12	8	~	d	D	split	split	D,9,7,d	~ ~ A	mus T A		
+rjm34la_f34	f34_L12	14	g	g	g	oot	oot	g,K,Q,Z	A pp o	T A yip		
+rjm34la_f34	f34_L12	19	~	kap	kar	split	split	kap,kar	A yip hag	R ras ~		
+rjm34la_f34	f34_L12	22	~	ob	D	split	split	D,9,7,ob	~ R ras	~ ~ T		
+rjm34la_f34	f34_L12	23	~	d	doo	split	split	d,doo	R ras ~	~ T boz		
+rjm34la_f34	f34_L12	24	~	oo3	Z	split	split	Z,7,3,oo3	ras ~ ~	T boz y		
+rjm34la_f34	f34_L12	27	y	y	y	oot	oot	y,ya,K,Q,Z	~ T boz			
+rjm34la_f34	f34_L13	4	~	zil	Z	split	split	Z,7,3,zil	qat R gap	~ ~ 4		
+rjm34la_f34	f34_L13	5	~		il	split	split	il	R gap ~	~ 4 bol		
+rjm34la_f34	f34_L13	6	~		T	split	split	T,9	gap ~ ~	4 bol ~		
+rjm34la_f34	f34_L13	9	~	g	Z	split	split	Z,7,3,g	~ 4 bol	9 ~ ~		
+rjm34la_f34	f34_L13	11	~	doxy	Z	split	split	Z,7,3,doxy	bol ~ 9	~ ~ ~		
+rjm34la_f34	f34_L13	12	~		D	split	split	D,9,7	~ 9 ~	~ ~ yer		
+rjm34la_f34	f34_L13	13	~		ox	split	split	ox	9 ~ ~	~ yer qid		
+rjm34la_f34	f34_L13	14	~		y	split	split	y	~ ~ ~	yer qid bee		
+rjm34la_f34	f34_L13	22	~	X	x	split	split	X,A,x	hef qib li	ram gap		
+rjm34la_f34	f34_L14	2	~	ob	D	split	split	D,9,7,ob	ras	sof bur ~		
+rjm34la_f34	f34_L14	5	~	nj	n	split	split	nj,n	~ sof bur	Z ~ T		
+rjm34la_f34	f34_L14	7	~		4	split	split	4	bur ~ Z	T ~ 9		
+rjm34la_f34	f34_L14	9	~	nj	n	split	split	nj,n	Z ~ T	9 Z ~		
+rjm34la_f34	f34_L14	12	~	bi3	biz	split	split	bi3,biz	~ 9 Z	y F ~		
+rjm34la_f34	f34_L14	13	y	y	y	oot	oot	y,ya,K,Q,Z	9 Z ~	F ~ Z		
+rjm34la_f34	f34_L14	15	~	K	Q	split	split	K,Q,F,9	~ y F	Z ut le		
+rjm34la_f34	f34_L14	23	~	X	x	split	split	X,A,x	dim Z bay	ag dug		
+rjm34la_f34	f34_L15	7	~	obiet	obi	split	split	obiet,obi	gap gat R	~ dim nin		
+rjm34la_f34	f34_L15	8	~		ett	split	split	ett	gat R ~	dim nin ~		
+rjm34la_f34	f34_L15	11	~		y	split	split	y	~ dim nin	sof R boc		
+rjm34la_f34	f34_L15	16	~	z	Z	split	split	Z,7,3,z	R boc T	y T A		
+rjm34la_f34	f34_L15	17	y	y	y	oot	oot	y,ya,K,Q,Z	boc T ~	T A ~		
+rjm34la_f34	f34_L15	20	~		x	split	split	x	y T A	ram A		
+rjm34la_f34	f34_L16	2	~	y	g	split	split	y,g	pel	T X Z		
+rjm34la_f34	f34_L16	7	~	pn	puz	split	split	pn,puz	X Z A	~ qes var		
+rjm34la_f34	f34_L16	8	~	z	ges	split	split	z,ges	Z A ~	qes var sa		
+rjm34la_f34	f34_L16	15	~	njn	nin	split	split	njn,nin	gap bay kef	~ ma T		
+rjm34la_f34	f34_L16	16	~	ob	D	split	split	D,9,7,ob	bay kef ~	ma T E		
+rjm34la_f34	f34_L17	1	~	9	D	split	split	9,D,Q,7		7 3 A		
+rjm34la_f34	f34_L17	10	~		X	split	split	X,A	Z kuf nin	9 ~ bes		
+rjm34la_f34	f34_L17	12	~	7	Z	split	split	7,Z,9,3	nin ~ 9	bes 4 bos		
+rjm34la_f34	f34_L17	17	~	yaqes	yages	split	split	yaqes,yages	4 bos lo	Z ~ ~		
+rjm34la_f34	f34_L17	19	~	1	13	split	split	1,13	lo ~ Z	~ qul dim		
+rjm34la_f34	f34_L17	20	~	3		split	split	3,Z	~ Z ~	qul dim ~		
+rjm34la_f34	f34_L17	23	~	ob	D	split	split	D,9,7,ob	~ qul dim	qid		
+rjm34la_f34	f34_L18	2	~	e		split	split	e	ros	R sof bee		
+rjm34la_f34	f34_L18	14	~		D	split	split	D,9,7	bay ram R	9 ~ y		
+rjm34la_f34	f34_L18	16	~	g		split	split	g	R ~ 9	y T ~		
+rjm34la_f34	f34_L18	17	y	y	y	oot	oot	y,ya,K,Q,Z	~ 9 ~	T ~ Z		
+rjm34la_f34	f34_L18	19	~	7	D	split	split	7,D,Z,9	~ y T	Z qes F		
+rjm34la_f34	f34_L19	2	~	z	Z	split	split	Z,7,3,z	pel	an puf sof		
+rjm34la_f34	f34_L19	7	~		~	split	split	~	puf sof bas	F mus Z		
+rjm34la_f34	f34_L19	13	~		X	split	split	X,A	Z um nin	9 ~ kar		
+rjm34la_f34	f34_L19	15	~	7	Z	split	split	7,Z,9,3	nin ~ 9	kar R bay		
+rjm34la_f34	f34_L19	22	~	d	D	split	split	D,9,7,d	R A T	~ ~ nuf		
+rjm34la_f34	f34_L19	23	~	7	Z	split	split	7,Z,9,3	A T ~	~ nuf		
+rjm34la_f34	f34_L19	24	~	cil	cly	split	split	cil,cly	T ~ ~	nuf		
+rjm34la_f34	f34_L20	5	~		D	split	split	D,9,7	mus kig Z	Z ur ~		
+rjm34la_f34	f34_L20	8	~	e		split	split	e	~ Z ur	seg suf A		
+rjm34la_f34	f34_L20	13	~	nq	nec	split	split	nq,nec	suf A tac	A R 3		
+rjm34la_f34	f34_L20	22	~	K	Q	split	split	K,Q,F,9	puz qes F	kin Z zan		
+rjm34la_f34	f34_L21	6	~	ob	D	split	split	D,9,7,ob	oo Z A	T A ~		
+rjm34la_f34	f34_L21	9	~	nq	nec	split	split	nq,nec	~ T A	A ~ gap		
+rjm34la_f34	f34_L21	11	~	ob	D	split	split	D,9,7,ob	A ~ A	gap kar R		
+rjm34la_f34	f34_L21	22	~	ob	D	split	split	D,9,7,ob	gup X kef	rob		
+rjm34la_f34	f34_L21	23	rob	rob	rob	oot	oot	rob,cob,pob,qob,reb,rol,ror	X kef ~			
+rjm34la_f34	f34_L22	1	~	g	D	split	split	D,9,7,g		~ ~ 9		
+rjm34la_f34	f34_L22	2	~	g	F	split	split	F,K,g	~	~ 9 F		
+rjm34la_f34	f34_L22	3	~	6		split	split	6,Z	~ ~	9 F ~		
+rjm34la_f34	f34_L22	6	~	K	Q	split	split	K,Q,F,9	~ 9 F	gap lus dim		
+rjm34la_f34	f34_L22	17	~	A	X	split	split	A,X,E	dim kar R	4 y 4		
+rjm34la_f34	f34_L22	19	y	y	y	oot	oot	y,ya,K,Q,Z	R ~ 4	4 9 mus		
+rjm34la_f34	f34_L23	1	rob	rob	rob	oot	oot	rob,cob,pob,qob,reb,rol,ror		ler rex Z		
+rjm34la_f34	f34_L23	6	~	ump	um	split	split	ump,um	rex Z Z	R A T		
+rjm34la_f34	f34_L23	16	ez	ez	ez	oot	oot	ez,jez,lez	R gap Z	fop Z cao		
+rjm34la_f34	f34_L24	1	~	cil	cly	split	split	cil,cly		~ g ka		
+rjm34la_f34	f34_L24	2	~	y		split	split	y	~	g ka ~		
+rjm34la_f34	f34_L24	3	g	g	g	oot	oot	g,K,Q,Z	~ ~	ka ~ T		
+rjm34la_f34	f34_L24	5	~	ob	D	split	split	D,9,7,ob	~ g ka	T ~ R		
+rjm34la_f34	f34_L24	7	~	9	D	split	split	9,D,Q,7	ka ~ T	R tac A		
+rjm34la_f34	f34_L24	14	~	P	~	split	split	P,~	Z F V	T ~ ~		
+rjm34la_f34	f34_L24	16	~	o	R	split	split	R,o	V ~ T	~ ~ ~		
+rjm34la_f34	f34_L24	18	~	o	D	split	split	D,9,7,o	T ~ ~	~ kef R		
+rjm34la_f34	f34_L24	19	~	ob		split	split	ob	~ ~ ~	kef R Z		
+rjm34la_f34	f34_L24	23	~	ump	um	split	split	ump,um	kef R Z	R ~ heb		
+rjm34la_f34	f34_L24	25	~	~	T	split	split	T,9,~	Z ~ R	heb R gap		
+rjm34la_f34	f34_L25	1	~	Z	3	split	split	Z,3,7		um qid lal		
+rjm34la_f34	f34_L25	5	~	K	Q	split	split	K,Q,F,9	um qid lal	cib ~ qid		
+rjm34la_f34	f34_L25	7	~	K	Q	split	split	K,Q,F,9	lal ~ cib	qid mus nom		
+rjm34la_f34	f34_L25	18	~	z	2	split	split	2,z	ben reb Q	R hef		
+rjm34la_f34	f34_L26	2	~	d	D	split	split	D,9,7,d	A	~ ~ ~		
+rjm34la_f34	f34_L26	3	~		g	split	split	g	A ~	~ ~ ~		
+rjm34la_f34	f34_L26	4	~		e	split	split	e	A ~ ~	~ ~ puc		
+rjm34la_f34	f34_L26	5	~		Z	split	split	Z,7,3	~ ~ ~	~ puc ~		
+rjm34la_f34	f34_L26	6	~		T	split	split	T,9	~ ~ ~	puc ~ ~		
+rjm34la_f34	f34_L26	8	~		grer	split	split	grer	~ ~ puc	~ ~ ~		
+rjm34la_f34	f34_L26	9	~		roo	split	split	roo	~ puc ~	~ ~ g		
+rjm34la_f34	f34_L26	10	~		R	split	split	R	puc ~ ~	~ g Q		
+rjm34la_f34	f34_L26	11	~		D	split	split	D,9,7	~ ~ ~	g Q ~		
+rjm34la_f34	f34_L26	12	g	g	g	oot	oot	g,K,Q,Z	~ ~ ~	Q ~ ~		
+rjm34la_f34	f34_L26	14	~	z		split	split	z	~ g Q	~ ~ ~		
+rjm34la_f34	f34_L26	15	~	T		split	split	T,9	g Q ~	~ ~ ~		
+rjm34la_f34	f34_L26	16	~	pnc		split	split	pnc	Q ~ ~	~ ~ ~		
+rjm34la_f34	f34_L26	17	~	gen		split	split	gen	~ ~ ~	~ ~ ~		
+rjm34la_f34	f34_L26	18	~	roo		split	split	roo	~ ~ ~	~ ~ ~		
+rjm34la_f34	f34_L26	19	~	R		split	split	R	~ ~ ~	~ ~ ges		
+rjm34la_f34	f34_L26	20	~	dg		split	split	dg	~ ~ ~	~ ges ~		
+rjm34la_f34	f34_L26	21	~	d		split	split	d	~ ~ ~	ges ~ dim		
+rjm34la_f34	f34_L26	23	~	K	Q	split	split	K,Q,F,9	~ ~ ges	dim Z log		
+rjm34la_f34	f34_L26	28	~	o	ott	split	split	o,ott	Z log ler	~ ~ Z		
+rjm34la_f34	f34_L26	29	~	T	2	split	split	T,2,9	log ler ~	~ Z ~		
+rjm34la_f34	f34_L26	30	~	z		split	split	z	ler ~ ~	Z ~ ~		
+rjm34la_f34	f34_L26	32	~	bo3	bo	split	split	bo3,bo	~ ~ Z	~ F F		
+rjm34la_f34	f34_L26	33	~		3	split	split	3,Z	~ Z ~	F F		
+rjm34la_f34	f34_L27	1	~	gif	grf	split	split	gif,grf		bas ler fa		
+rjm34la_f34	f34_L27	6	~		X	split	split	X,A	ler fa nin	9 7 ~		
+rjm34la_f34	f34_L27	9	~	cil	cly	split	split	cil,cly	~ 9 7	xar hef min		
+rjm34la_f34	f34_L27	13	~	K	Q	split	split	K,Q,F,9	xar hef min	hef lal Z		
+rjm34la_f34	f34_L27	17	ez	ez	ez	oot	oot	ez,jez,lez	hef lal Z	bla A pib		
+rjm34la_f34	f34_L28	2	~	hog	Q	split	split	Q,K,9,hog	kef	~ rot A		
+rjm34la_f34	f34_L28	3	~		og	split	split	og	kef ~	rot A dim		
+rjm34la_f34	f34_L28	8	~	9	D	split	split	9,D,Q,7	A dim T	Z A ~		
+rjm34la_f34	f34_L28	11	~	d	D	split	split	D,9,7,d	~ Z A	~ A hon		
+rjm34la_f34	f34_L28	12	~	K	Q	split	split	K,Q,F,9	Z A ~	A hon tes		
+rjm34la_f34	f34_L28	18	~	nq	nec	split	split	nq,nec	tes nin tac	~ Z A		
+rjm34la_f34	f34_L28	19	~	A		split	split	A,X,E	nin tac ~	Z A T		
+rjm34la_f34	f34_L28	25	~	y	Z	split	split	Z,7,3,y	T 3 2	suf		
+rjm34la_f34	f34_L29	2	~	F	Z	split	split	F,Z,K,7,3	kiz	~ ~ T		
+rjm34la_f34	f34_L29	3	~	oo3	o	split	split	oo3,o	kiz ~	~ T ~		
+rjm34la_f34	f34_L29	4	~		3	split	split	3,Z	kiz ~ ~	T ~ Z		
+rjm34la_f34	f34_L29	6	~	9	Z	split	split	9,Z,D,Q,7,3	~ ~ T	Z A dim		
+rjm34la_f34	f34_L29	13	~	d	D	split	split	D,9,7,d	le gap sof	Z bay sar		
+rjm34la_f34	f34_L30	1	~		F	split	split	F,K		~ gap sof		
+rjm34la_f34	f34_L30	2	~		V	split	split	V	~	gap sof kuf		
+rjm34la_f34	f34_L30	6	~	K	~	split	split	K,Q,F,~	gap sof kuf	~ ~ ~		
+rjm34la_f34	f34_L30	7	~	A		split	split	A,X,E	sof kuf ~	~ ~ ~		
+rjm34la_f34	f34_L30	8	~	d		split	split	d	kuf ~ ~	~ ~ qes		
+rjm34la_f34	f34_L30	9	~	y		split	split	y	~ ~ ~	~ qes sof		
+rjm34la_f34	f34_L30	10	~	ot		split	split	ot	~ ~ ~	qes sof ~		
+rjm34la_f34	f34_L30	13	~	cil		split	split	cil	~ qes sof	~ ~ sad		
+rjm34la_f34	f34_L30	14	~	Z		split	split	Z,7,3	qes sof ~	~ sad ~		
+rjm34la_f34	f34_L30	15	~	as		split	split	as	sof ~ ~	sad ~ ~		
+rjm34la_f34	f34_L30	17	~	Z		split	split	Z,7,3	~ ~ sad	~ ~ ~		
+rjm34la_f34	f34_L30	18	~	ez		split	split	ez	~ sad ~	~ ~ ~		
+rjm34la_f34	f34_L30	19	~	pib		split	split	pib	sad ~ ~	~ ~ ~		
+rjm34la_f34	f34_L30	20	~	X		split	split	X,A	~ ~ ~	~ ~ ~		
+rjm34la_f34	f34_L30	21	~	z		split	split	z	~ ~ ~	~ ~ ~		
+rjm34la_f34	f34_L30	22	~	y		split	split	y	~ ~ ~	~ ~ ~		
+rjm34la_f34	f34_L30	23	~	nq		split	split	nq	~ ~ ~	~ ~ dim		
+rjm34la_f34	f34_L30	24	~	3		split	split	3,Z	~ ~ ~	~ dim mus		
+rjm34la_f34	f34_L30	25	~	9		split	split	9,D,Q	~ ~ ~	dim mus ~		
+rjm34la_f34	f34_L30	28	~	nom		split	split	nom	~ dim mus			
