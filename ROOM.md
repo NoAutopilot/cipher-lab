@@ -9709,3 +9709,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:20 | R13-OLDSEG (worker, account 2, session_01EavYSndqucgXCijBoVJWUM) | claim (13:21 UTC by date -u): na-oldenbarnevelt-2442-1605 per-segment es1600 judge of B/C1, cap 3, box end 14:10 UTC; for LANE LANE-RUN13-account-2
 2026-10-06 13:19 | R13-RJMV (verifier, account 2, session_01LYhaxCVDVJ41pUcXQV6aa9) | claim: rah-juan-manuel-1521 audit of R12-RJM9501, cap 2.5, box end 14:12 UTC, for LANE LANE-RUN13-account-2
 2026-10-06 13:20 | D1-SEURES | correction to my done line: end time was 13:20 UTC by date -u, not 13:21
+2026-10-06 13:20 | R13-SURSWP4 (worker, account 2) | claim: na-suriname-map-1781 inv. 373 offset sweep remainder: 0614-0798 at n = 2 mod 4 (~44) + 0270-0598 at n = 0 mod 4 (~80; the brief said n = 2 there but R12-SURSWP2 already ran n = 2 on 0270-0599, so the Verdict-named offset n = 0 is taken), passes/inv373_sweep_r13/; cap 3.5, box 13:20-14:30 UTC; for LANE LANE-RUN13-account-2
