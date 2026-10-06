@@ -9290,3 +9290,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 06:02 | R9-MANTPC (worker, Opus) | claim: sachsstaatsarchiv-manteuffel-1712 per-code shuffle test on R9-MANTPOOL 24 codes; cap 2.5, box 06:02-06:52 UTC (80% 06:42) for LANE LANE-RUN9-account-4
 2026-10-06 06:02 | R9-LIPP | claim ss-radio-lippert-1944 Wayback CDX retry, cap 1.5, box ends 06:30 UTC, for LANE LANE-RUN9-account-4
 2026-10-06 06:02 | R9-WVOALIGN (worker, account 4) | claim: wvo-hessen-1564 f.23 interlinear alignment, cap 6 USD, box end 07:32 UTC, for LANE LANE-RUN9-account-4
+2026-10-06 06:03 | R9-LIPP | done (06:00-06:07 UTC by date -u, brief met): web.archive.org still resets (curl 35, 2 tries); CDX not run, not a negative; LOCAL-QUEUE row L62 added; NOTES.md dated section; for LANE LANE-RUN9-account-4
