@@ -2349,9 +2349,9 @@
       "superseded_by": "",
       "fields_source": "thurloe-printed/AUDIT.md that section",
       "depth": "D3",
-      "depth_pct": 100.0,
+      "depth_pct": 99.8,
       "depth_sentence": "Mountagu reports from the bay of Wyers on 16 Sept 1656 that the question whether to send home the great ships was resolved in the negative.",
-      "depth_check": "period decipherment printed by Birch 1742; external non-statistical check: Powell, Letters of Robert Blake (NRS 76, 1937) prints the same deciphered text of P9, P10 (incl. L10's 14 groups) and P15; no fresh rule-7 re-derivation (AUDIT 2, DEF1-THUR)",
+      "depth_check": "period decipherment printed by Birch 1742; external non-statistical check: Powell, Letters of Robert Blake (NRS 76, 1937) prints the same deciphered text of P9, P10 (incl. L10's 14 groups) and P15; L10 positions 13-14 (codes 67, 95) held M, code-67 conflict s/o (R7-THURP10, propagated R8-THURV 6 Oct 2026; 995 of 997 tokens C); no fresh rule-7 re-derivation (AUDIT 2, DEF1-THUR)",
       "decode_status": "Partially decrypted"
     },
     {

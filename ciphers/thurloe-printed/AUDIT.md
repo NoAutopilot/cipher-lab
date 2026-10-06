@@ -1113,3 +1113,30 @@ Fauconberg letters would only add later print to an N0.
 `python3 tools/depth_check.py` (5 Oct 2026, after this audit): exit 0, "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not
 counted D0/D1: 13; legacy ungraded: 0"; no line for results[43]/[50] (N0 key-to-known-text rows are not counted, by design).
 `python3 tools/verify_backlog.py`: "41 rows: audit2 14, both 4, counted 23".
+
+## Revision after AUDIT (R8-THURV, 6 Oct 2026; rule 10 propagation)
+
+Verifier R8-THURV (account 4, for LANE LANE-RUN8-account-4; a session separate from the solver R7-THURP10, account 2).
+Carries R7-THURP10 (NOTES.md section of that name; PREREG-R7-THURP10.md, commit 06f758dc) into this file. Nothing decoded.
+
+- Re-run here: `tx/align_p10_l10_powell.py --check` exit 0 ("check OK"); count gate PASS (Powell span "th a force of ships
+  to s" = 14 units, 121 = "fhips" as one); agreement gate PASS, real 8/8 of the gap positions with an H/C key_blake value
+  vs shuffled-Powell control mean 1.01, p95 3 (1000 seeds). `decode.py --check` exit 0; `tx/decode_p10_line10.py --check`
+  exit 0. Counts confirmed: the 14 groups Birch left unglossed on p.620 L10 grade **C 12, M 2** (positions 13, code 67,
+  and 14, code 95; prereg rule alone gave C 14, the hold is stricter and post-hoc, kept).
+- Code 67 witnesses checked on disk: "s" in P8_pairs.tsv line 11 ("of Cape Maries", 12 groups, last 67) and line 22
+  ("...use", 39 67 54), and P9_pairs.tsv line 6 (p.612 L5 "gives", 26 28 39 24 67); "o" only by Powell's English at
+  P10 pos 13. Logged as a rule-4 conflict in HYPOTHESES.md (this folder had none; created by this session).
+- Powell citation: what is on disk is the IA be-api in-item hit on `lettersofrobertb0000blak` and the Google Books
+  snippet (`BQcSAAAAIAAJ`), section "P10 L10 groups" s.4 above; **no printed page number for Powell is on disk**, and the
+  be-api `page_num` (540) is correctly not cited. R7-THURP10 cites no page either, so nothing to correct; a page cite
+  stays open (the item is lending-only and its page images are obfuscated for scripts).
+- Class: **N0 unchanged**, key source for the 14 groups `published` (Powell 1937). Why: the class rests on Powell's
+  connected English for the whole passage, which R7-THURP10 did not change; the M hold concerns how the cipher spells
+  "to s[ecure]" letter by letter, not whether the plaintext is in print.
+- Depth, row [50] (P9, P10, P14, P15): recounted from the pairs files, 997 cipher tokens (P9 87, P10 106, P14 446,
+  P15 358; "about 980" above). M 2 (P10 L10 pos 13-14), all others C from Birch's print or Powell: 995/997 = **99.8%**
+  (was 100%). Depth **D3 unchanged** (>= 80% H/C/S, external non-statistical check Powell 1937); not D4 for the reasons
+  already given (no fresh rule-7 re-derivation for the row; P14 not in Powell; the 2 M are letters, not name codes).
+  status.json results[50] depth_pct 100.0 -> 99.8 and depth_check updated.
+- SECOND-OPINIONS-QUEUE.tsv: no row is filed for P10 (the only thurloe-printed row is SO-THURLOE-P4); nothing to update.

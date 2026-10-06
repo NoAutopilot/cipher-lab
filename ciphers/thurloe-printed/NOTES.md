@@ -2844,6 +2844,12 @@ fleet"); it covers all 14 groups, so no be-api query was made. Requests: 0.
   line 10 is now t h a f o r c e o f [ships] t [67] [95] + Birch's "ecure the" -- AUDIT.md's class N0 (Powell 1937,
   key `published`) is unchanged by this; the grade change is flagged in ROOM for a verifier.
 
+## R8-THURV -- verifier propagation of R7-THURP10 (6 Oct 2026, account 4, for LANE LANE-RUN8-account-4)
+Re-ran `tx/align_p10_l10_powell.py --check`, `decode.py --check`, `tx/decode_p10_line10.py --check` (all exit 0); C12 M2
+confirmed. Carried into AUDIT.md "Revision after AUDIT (R8-THURV ...)": class N0 unchanged; row [50] depth D3 unchanged,
+depth_pct 100 -> 99.8 (995 of 997 tokens); code-67 conflict logged in a created HYPOTHESES.md; no SO-queue row for P10.
+No Powell page number is on disk (be-api page_num not a locator); a page cite stays open.
+
 ## Remaining gaps (R7-THURP10, 6 Oct 2026; supersedes the D2B-THURP3 list above)
 Read so far: P4 415 of 424 sign tokens at H or C (97.9%), 3 M, 6 U (reading_P4.txt, N8-THUR2); P3 postscript H9 C15 M33 U2 of 59 (reading_P3.txt); P10 p.620 L10 14 unglossed groups C12 M2 against Powell 1937 (tx/reading_P10_L10_powell.tsv); P2-P28's other items are printed decipherments (N0, AUDIT.md)
 - P4 codes 143 and 70 (one occurrence each, not in key_stamford.tsv) - blocker: no-key-material; Tomokiyo's stamford.jpg (GAPS148) has neither; no other sibling letter or key on disk carries 143 or 70
