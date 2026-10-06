@@ -3472,10 +3472,10 @@
       "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, VERIFY-MANT (N3) and \"Second adversarial audit\" (AUDIT2-MANT, N4)",
       "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 f.410 lower block (frame 0511), P.S. of Manteuffel to Flemming, Berlin, November 1712",
       "title": "SHStA Dresden Loc. 694/08 f.410, Manteuffel to Flemming, Berlin, Nov 1712: unglossed cipher P.S. read with Dr. Krauske's 1893 manuscript key table (Loc. 694/10, unprinted)",
-      "grade": "N4 (AUDIT2-MANT; N3 at VERIFY-MANT), key published (Krauske's 1893 manuscript table, someone else's non-period key, credited; agrees 17/17 with the period glosses on f.468, which it was probably compiled from). 216 tokens: H 0, C 144, M 48, U 24. fr18 judge FAIL (-1.038 vs real_p05 -0.99); 0/100 shuffled keys at or above the candidate under two shuffle designs (VERIFY-MANT). f.468 and f.467 glosses N0.",
-      "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Fragmentary reading: the Swedes, the peace, 'ne donne contentement', the Queen of England touching the prince, Stettin; Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 48, U 24 of 216 tokens); no prior decipherment located: the passage is not among the extracts of these reports printed in Acta Borussica, Behördenorganisation I (1894) or quoted in Droysen's Geschichte der preußischen Politik IV.1, searched in full text on 3 Oct 2026 (log in AUDIT.md).",
+      "grade": "N4 (AUDIT2-MANT; N3 at VERIFY-MANT), key published (Krauske's 1893 manuscript table, someone else's non-period key, credited; agrees 17/17 with the period glosses on f.468, which it was probably compiled from). 216 tokens: H 0, C 144, M 49, U 23 (R9-MANTV 6 Oct 2026; was M 48, U 24). fr18 judge FAIL (-1.038 vs real_p05 -0.99); 0/100 shuffled keys at or above the candidate under two shuffle designs (VERIFY-MANT). f.468 and f.467 glosses N0.",
+      "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Fragmentary reading: the Swedes, the peace, 'ne donne contentement', the Queen of England touching the prince, Stettin; Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 49, U 23 of 216 tokens); no prior decipherment located: the passage is not among the extracts of these reports printed in Acta Borussica, Behördenorganisation I (1894) or quoted in Droysen's Geschichte der preußischen Politik IV.1, searched in full text on 3 Oct 2026 (log in AUDIT.md).",
       "completeness": "144/216 at C",
-      "unresolved_spans": "48 M, 24 U (codes outside Krauske's table)",
+      "unresolved_spans": "49 M, 23 U (codes outside Krauske's table; one U -> M 6 Oct 2026, R9-MANTV)",
       "audit_refs": [
         "AUDIT.md VERIFY-MANT",
         "AUDIT.md Second adversarial audit (AUDIT2-MANT)"
@@ -3483,8 +3483,8 @@
       "depth": "D1",
       "depth_pct": 66.7,
       "depth_unread": {
-        "names_codes": "24 U (codes outside Krauske's table)",
-        "other": "48 M"
+        "names_codes": "23 U (codes outside Krauske's table; R9-MANTV 6 Oct 2026, was 24)",
+        "other": "49 M (R9-MANTV 6 Oct 2026: code 402 la at M from the pooled gloss aligner, was 48)"
       },
       "depth_check": "Krauske 1893 table (17/17 with period glosses on f.468); f.410 decode gives fragments ('les Schvedois la paix', 'ne donne contentement'); fr18 judge FAIL",
       "depth_note": "C 144 of 216",

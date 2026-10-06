@@ -18,10 +18,12 @@ THE ITEM
 
 WHAT WE ALREADY SEARCHED (two audits, 3 Oct 2026; class N4 in AUDIT.md)
 - Our current statement: "Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher
-  passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 48, U 24 of 216
+  passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 49, U 23 of 216
   tokens); no prior decipherment located: the passage is not among the extracts of these reports printed in Acta Borussica,
   Behördenorganisation I (1894) or quoted in Droysen's Geschichte der preußischen Politik IV.1, searched in full text on 3 Oct 2026
   (log in AUDIT.md)."
+  (Counts updated 6 Oct 2026, R9-MANTV verifier: one further f.410 code, 402, read at M "la" from a pooled alignment of the
+  leaves' interlinear glosses; was M 48, U 24.)
 - Not yet read in full: Haake's Flemming monographs, the 2016 Wackerbarth "Société des antisobres" paper, JSTOR.
 
 QUESTIONS

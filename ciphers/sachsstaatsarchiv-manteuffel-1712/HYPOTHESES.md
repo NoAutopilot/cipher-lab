@@ -112,3 +112,11 @@ run keeps its as-read gloss "Ilgen" (M, doubtful) on 848 under PREREG-R8-MANT. 8
 | family | control | control result | target result | verdict |
 |---|---|---|---|---|
 | per-code agreement A vs the same code's A under 1000 within-bin gloss shuffles (PREREG-R9-MANTPC, seed 9501, BH q 0.10) | power: 5 known-answer C codes unfixed, same test | 5/5 PASS (p 0.001-0.015, n 10-15) | 7/24 PASS (letter 4/18, word 3/6) | 237 341 402 451 588 592 714 kept M "per-code PASS"; 285 515 636 kept M (raw p < 0.10); 197 253 272 281 295 403 447 513 560 562 583 585 613 737 removed (raw p 0.10-0.91); low-n FAILs are closer to untestable than refuted |
+
+## Per-code conflicts on the R9 codes (R9-MANTV verifier, 6 Oct 2026; rule 4)
+| code | value in key.tsv (M) | competing witness | source | status |
+|---|---|---|---|---|
+| 714 | u (aligner, 3 of 5 runs; per-code PASS p 0.018) | 'une' in the other 2 aligned runs; 'un' as 0529 run 28's single-code gloss (M, single-attested) | r9mant/codes_r9.tsv; f424v_0529/leaf_values_0529.tsv | conflict: the value may be 'un'/'une' with the aligner splitting the tail to a neighbour; graded M, not settled by the majority chunk |
+| 515 | e (aligner, 3 of 6 runs; raw p 0.037, BH FAIL) | 'p' in 2 runs; 'Pr' / 'propose' in f0501 word_values (inconsistent) | r9mant/codes_r9.tsv; f0501/word_values.tsv; RUN5-MANT5 flag | conflict: unresolved; weakest footing in the key |
+| 402 | la (5 of 12; PASS p 0.003) | agrees: 0574 runs 10/16 '402.341 la guerre'; f0501 word_values 402 'la' | f463_0574/leaf_values_0574.tsv; f0501/word_values.tsv | corroborated, but the 0574 pair is one of the aligned runs (not independent) |
+| 341 | guerre (5 of 6; PASS p 0.001) | agrees: 0574 '402.341 la guerre' | f463_0574/leaf_values_0574.tsv | same non-independence note as 402 |

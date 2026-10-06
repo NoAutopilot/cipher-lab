@@ -184,3 +184,61 @@ api.core.ac.uk 3, brill.com 1 (202), boris.unibe.ch 1 (Anubis), library.oapen.or
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 f.410 lower block (frame 0511), P.S. o**: **D1** (Non-decrypted; outward "fragments read"), 66.7% (C 144 of 216). Check: Krauske 1893 table (17/17 with period glosses on f.468); f.410 decode gives fragments ('les Schvedois la paix', 'ne donne contentement'); fr18 judge FAIL. Class without a reading: not counted as a unique solve.
+
+## Revision after AUDIT (R9-MANTV, 6 Oct 2026)
+
+Verifier R9-MANTV (account 4, LANE LANE-RUN9-account-4, session_012DnG74vFmLJ3eycAh3zYRA), separate from the solvers R9-MANTPOOL
+(session_01VrWrGx5EfmDVNbJiRwSHGM) and R9-MANTPC (session_018HJAXS5gcf5p5wVsdG2wjc). Rule 10 propagation / verifier step 4 of two
+key changes made after this AUDIT.md was written. Nothing decoded; no key value added or changed.
+
+**1. Re-derivation (06:46-07:05 UTC by date -u).**
+- `r9mant/pooled_multi.py` re-run in a scratch copy with key.tsv as it stood when R9-MANTPOOL scored (commit 4452e2bfc): 101 runs,
+  S 24 of 87 recurring free codes, shuffle mean 14.93, p95 19, max 23, known-answer 5/5, gate PASS. runs_r9.tsv, codes_r9.tsv,
+  shuffle_r9.tsv and known_answer_r9.tsv byte-identical to the committed files (current `tools/interlinear_align.py`, which changed
+  at 06:10 for R9-MANTPC, gives the same result).
+- `r9mant/per_code.py` re-run in a scratch copy with key.tsv at commit 712239bc7 (R9-MANTPOOL's 24 rows, which the script strips):
+  per_code_r9pc.tsv and per_code_ka_r9pc.tsv byte-identical. 7/24 BH PASS, power control 5/5.
+- `tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --check`: exit 0, 423 tokens, C 202, M 98, U 123 -- matches the
+  solvers' counts.
+
+**2. Pre-registration order (git log, shallow clone deepened to 05:00 UTC).** PREREG-R9-MANTPOOL.md and pooled_multi.py added in
+5d92dfc32 (05:47:11), header fixed in 4452e2bfc (05:47:27); scored outputs and key rows first committed in 712239bc7 (05:54:17).
+PREREG-R9-MANTPC.md added in 633b7436e (06:03:36), header fixed 922f423e4 (06:03:43); per_code.py and its outputs first committed
+in 45d3e9965 (06:18:44). Both PREREG files are unchanged since. Both predate their scored runs. (The commit hashes the solvers cite
+are real; a shallow checkout shows only the 06:23 graft commit, which is why `git log` on the folder looked flat.)
+
+**3. Controls (rule 3).**
+- The matched control can vary on both statistics: the blended shuffle S ranges up to 23 (1000 draws), and every one of the 24
+  per-code nulls has 2-7 distinct values (null_distinct column), so neither control is identical to the target by construction.
+- BH applied as registered (q 0.10 over 24): sorted p 0.001, 0.003, 0.007, 0.008, 0.013, 0.014, 0.018 clear r q/24 (largest
+  0.018 <= 0.0292 at r 7); the 8th, 0.037 (515), misses 0.0333; no later rank clears. 7 PASS, confirmed.
+- One correction to NOTES.md's gloss: "roughly 2.4 expected false discoveries" is q x m (0.10 x 24). BH bounds the expected share
+  of false discoveries among the 7 passes at 10%, i.e. under about 0.7 codes. The solvers' figure was the cautious one; it is not
+  changed in NOTES.md, only noted here.
+- Power control (5 known-answer C codes at n 10-15) does not subsample to the 24 codes' n 2-21 (rule 3, ARM3-ADJ). The removals at
+  n 2-4 (295 e 2/2 p 0.135, 513, 613, 737) are therefore "untestable at this n", not shown wrong; R9-MANTPC's own text says so.
+
+**4. The three codes kept at raw p < 0.10 (285, 515, 636).** Within the PREREG: PREREG-R9-MANTPC's "Actions (fixed in advance)"
+says in so many words "per-code FAIL with raw p_v < 0.10: kept at M, note 'per-code FAIL ...'", and only raw p >= 0.10 is removed.
+key.tsv follows that rule exactly (513 at p 0.1009 removed). No correction to key.tsv. The verifier's reading: these three are M on
+the weakest footing in the key (not BH-significant, and two of them carry rule-4 conflicts, item 6), and none should be cited as a
+reading of its own.
+
+**5. Effect on the audited item (f.410 lower block, 216 tokens).** Only one f.410 token changed: L16 pos 2, code 402, U -> M 'la'
+(per-code PASS). Item counts C 144, M 48 -> **49**, U 24 -> **23**. f.409v (154 tokens, not an audited item) moved M 24 -> 36, U 92 -> 80.
+- **N-class: N4, unchanged** (the plaintext added is one M-graded article; nothing in the search log is affected).
+- **Depth: D1, unchanged** (rule 4a; H/C/S = C 144 of 216 = 66.7%, unchanged, since every added value is M). `tools/depth_check.py`
+  run 06:58 UTC: exit 0, f.410 listed as "class without a reading, not counted (D1)". status.json: depth and depth_pct unchanged;
+  depth_unread updated to 23 U / 49 M, and the row's count fields brought into line.
+- Safe sentence: the AUDIT2-MANT sentence stands with the counts updated to "C 144, M 49, U 23 of 216 tokens (one further code read
+  at M from a pooled alignment of the leaves' interlinear glosses, 6 Oct 2026)". Unsafe: "the gloss alignment deciphered the
+  nomenclator codes", "24 codes recovered" (14 of the 24 did not survive their own per-code test).
+- SECOND-OPINIONS-QUEUE.tsv row SO-MANT-F410 (queued, not yet answered): its prompt quotes "C 144, M 48, U 24"; prompt updated to the
+  new counts with a dated note.
+
+**6. Per-code conflicts (rule 4), logged in HYPOTHESES.md.** 714: aligner chunk 'u' (3 runs) vs 'une' (2 runs) vs 0529's single-code
+gloss 'un' (leaf_values_0529.tsv, M); 515: 'e' (3) vs 'p' (2) vs f0501 word_values 'Pr | propose' (the RUN5-MANT5 flag); 402 and 341
+are corroborated by 0574's recurring pair 402.341 'la guerre' and by f0501's 402 'la', but that pair is one of the runs feeding the
+aligner, so it is not an independent witness.
+
+Requests: none (disk only). Vision: 0. Subagents: 0.
