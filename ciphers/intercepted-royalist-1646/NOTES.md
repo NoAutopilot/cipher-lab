@@ -379,7 +379,7 @@ Beside it (`gaps2/judge_controls.tsv`): 20 shuffled-null texts (the candidate's 
 Read so far: 192 of 735 cipher tokens on f.10 carry a key value (C 164, H 6, I 12, M 10 after the 2 Oct GAPS2 image regrade; reading_f10_tokens.tsv), rank 1 of 21 shuffled keys (LIKELY-9); 12 of 151 on f.9 (letters only, no signal); the clear fragments (73 + 16) are read as transcribed
 - the 545 unkeyed tokens of f.10 (word codes 100-430 and names 431-580 beyond the 45 H rows; the unexplained 581-697) - blocker: no-key-material; only one page of key 129 survives (f.77, names 559-580; Aymeloglu checked every other DECODE record of the volume) and the candidate rest-of-key leaves ff.100-109 are in REQUEST.md item 2, BL viewer offline since 2023
 - the 45 H values and 13 letter homophones, image-unchecked (rule 2) - 2 Oct 2026 (GAPS, OCR; GAPS2, page images of pp.178-179, 2 blind vision passes): 37 key rows read C from the page (every Evelyn word and letter Aymeloglu listed, plus 162 for, 200 having, 111 were), 141 de / 269 nor / 356 Southampton M, 520 I, 69 e unreached; 38 rows match the page vs shuffled-key mean 0.5. What is left of this gap is the 22 f.77 names (H) - blocker: waiting-on ASKS row 1; their witness is the key page f.77 (DECODE 8725's images), content-blocked for this account (NOTES.md 24-25 Sept 2026)
-- the letter homophones 0-99 beyond the 13 fixed (218 letter tokens on f.10) - blocker: open-codes; Aymeloglu's anneal control read 0.07-0.12 at this shape (his README), so no annealer run; the suffix runs after word codes are the hand-crib route (suggestion c)
+- the letter homophones 0-99 beyond the 13 fixed (218 letter tokens on f.10) - blocker: open-codes; Aymeloglu's anneal control read 0.07-0.12 at this shape (his README), so no annealer run; the suffix runs after word codes are the hand-crib route (suggestion c) [R14-ROYCRIB, 6 Oct 2026: the Evelyn unglossed figures as a scored crib loop -- 19 (print allows r or n) and 216 failed their pre-registered gates against same-range and position-shuffle controls; 418, 147 absent from f.10; nothing entered in key.tsv; NOTES.md section R14-ROYCRIB]
 - f.9's own key (max 343, 226 = London per the f.4 key) [R13-ROYPREM, 6 Oct 2026: BL catalogue gives ff.4r-v, 5r-6v, 7r-v as Weckherlin copies of 1645 intercepts to 'My (Noble) Lord' with the deciphering written above the cipher words -- the period witness for this key, image-blocked like f.9] - blocker: waiting-on ASKS row 1; DECODE document content access: the f.4 record's key document is content-blocked for this account (NOTES.md 24-25 Sept 2026)
 - the contemporary decipher of f.10 (f.11; Tanner 59-60; SP 16/514) - blocker: needs-physical-access; REQUEST.md item 1 and the print check of 20 Sept 2026 above (not found in Cary, the Journals, Rushworth, TNA Discovery) [A3V-VROY2, 4 Oct 2026: the BL catalogue (040-001967027) describes ff.11r-v as a copy of Charles I to Ormond, n.d. [1645], not a decipherment of f.10; f.11 drops out of this gap, Tanner 59-60 and SP 16/514 remain; AUDIT.md audit 2 finding 2]
 - f.10 and f.9 transcriptions, image-unchecked (20 bare ? on f.10) - blocker: waiting-on ASKS row 1; DECODE full-size images are account-wide blocked (24-25 Sept 2026) and BL vdc_100162920089 is offline
@@ -392,7 +392,7 @@ Read so far: 192 of 735 cipher tokens on f.10 carry a key value (C 164, H 6, I 1
 - [n/a] key-rebuild: the key is a period key read from f.77 and Evelyn; the rebuild that matters is the rest of it, which does not survive (gap 1)
 - [x] image-check: the key's Evelyn witness read from the page images of pp.178-179 (GAPS2, 2 Oct 2026: evelyn/leaf_n185.jpg, leaf_n186.jpg, pass_img_p178/p179.tsv); the f.10/f.9 images themselves are gap 6 (DECODE content block, BL offline), not a step this session can take
 - [n/a] retry: no fetch, challenge or reset this session; disk only after the one clone
-Verdict: keep going: 1 internal gap; cheapest next: the unglossed figures beside glossed ones on Evelyn pp.178-179 (216, 418, 19, 147) as a crib loop over f.10, ~$2
+Verdict: keep going: 1 internal gap; cheapest next: hand crib of the letter runs after keyed word codes on f.10 (gap 3's suffix route; the R14-ROYCRIB automatic loop on 19/216 did not separate from its controls), ~$2
 
 ## Web and blog check (R13-WEB, 6 Oct 2026)
 
@@ -481,3 +481,25 @@ intercepted-royalist-1646: partial (line 4) -- edition/page or full-text-search 
 ```
 `python3 tools/gaps_check.py intercepted-royalist-1646`: `OK keep-going ... 1 internal gap(s), 0 step(s) untried`. Next step
 unchanged: the crib loop on the unglossed Evelyn figures (Escalation Verdict line), not run here.
+
+## R14-ROYCRIB (6 Oct 2026, account 2)
+
+Worker R14-ROYCRIB (Opus), brief `.claude/briefs/runs/2026-10-06-account2-run14-jobs.md`, the Escalation Verdict's named step: the unglossed figures beside glossed ones on Evelyn iv pp.178-179 as a crib loop over f.10. Intake: `intercepted-royalist-1646: partial (line 4)` (lane brief). Disk only, 0 network requests, 0 vision calls, 0 subagents. Files: `crib14/PREREG.md` (committed and pushed, ef47dcc8e, before the scored run), `crib14/candidates_216.txt` (generated by rule before scoring), `crib14/run.py`, `crib14/results.json`.
+
+**What the print allows (pass_img_p178/p179.tsv, GAPS2).** 216 sits unglossed after "hauing" (200) on p.179 and again in the erased line 4; 418 and 56 (= s) under "Jewells" after the printed letter groups `in`, `no`; 19 and 147 under "burned" (`at : ad : 19 : if : 147`, 6 letters over 5 groups). Every keyed row in 0-99 is one letter and 141 = de shows the 100-range carries syllables, so the partition with 147 = ed gives 19 = r (a third r beside 17 and 18); 19 = n only if 147 is a single letter. 418 and 147 do not occur on f.10 (Aymeloglu's transcription): no crib loop over f.10 can score them. They stay print-structure notes (147 = ed? 418 = part of "Jewells"?), grade M at best, not entered in key.tsv.
+
+**Scored (`python3 ciphers/intercepted-royalist-1646/crib14/run.py`, wide corpus en16_repo + en18 + sco16).**
+```
+19: top5 [('t', -0.7892), ('d', -0.8136), ('y', -0.8196), ('s', -0.8345), ('e', -0.8488)] rank r 12 rank n 8
+   m -0.1026  C1 p95 -0.0207 (n=5)  C2 p95 0.0473
+   d(r-n) -0.0600  C1 |d| p95 0.1329  C2 |d| p95 0.3951
+216: top5 in-band [('it', -3.2362), ('know', -3.2479), ('james', -3.2531), ('is', -3.2672), ('in', -3.3615)]
+     top5 all [('have', -3.0003), ('am', -3.0395), ('it', -3.2362), ('know', -3.2479), ('james', -3.2531)]
+     g 0.0117  C1 p95 0.5161 (n=27, tops [('it', 9), ('in', 7), (None, 2)])  C2 p95 0.3764 (tops [('it', 24), ('in', 12), ('is', 4)])
+```
+- **19** (24 tokens on f.10): the letter 4-gram over its readable runs puts the print's two letters at rank 12 (r) and 8 (n) of 26; m (best of {r,n} minus best other) = -0.103 against C1 p95 -0.021 (5 other unkeyed 0-99 codes with >= 8 tokens; a small control) and C2 p95 0.047 (50 position shuffles). Gate not met: f.10's letter context neither confirms r nor n. 19 = r stays a print-structure inference, **M**, not entered.
+- **216** (5 tokens): the in-band top word "it" leads "know" by g = 0.012 against C1 p95 0.516 (27 same-range codes) and C2 p95 0.376 (50 shuffles); "it" is also the control's most frequent top (9/27 and 24/50), i.e. a frequency prior, not a signal. The off-band context candidates "have" and "am" score above every in-band word (the "I [216] FINISHD" context) but break the key's alphabetical run 213 if / 234 left. Gate not met: **M**, not entered.
+
+**Grades (rule 4).** No value changed in key.tsv, no reading change (decode_key --check not needed; AUDIT.md unaffected). Print-structure values logged, all M: 19 r (or n), 147 ed (or d), 216 unknown (in-band "it"/"is"/"in" vs off-band "have"), 418 unknown. 0 C, 0 S.
+
+**What this means.** At 192 of 735 tokens keyed, f.10's neighbours of 19 and 216 are mostly unkeyed, so the readable runs the loop scores are short and the controls' own spread swamps the target. A non-test at this coverage, not a negative on the print's values: the instrument (automatic n-gram crib over f.10) adds nothing until more of f.10 is keyed. Found in print, where: Evelyn iv 178-179 (1857); nothing here is new (rule 10).
