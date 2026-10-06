@@ -1,4 +1,4 @@
-open
+partial
 
 Groen van Prinsterer, *Archives ou correspondance inedite de la Maison d'Orange-Nassau*, 1e serie tome I
 (1552-1565; archive.org `archivesoucorre00housgoog`, confirmed by its own title page "TOME I.") read by
@@ -78,6 +78,7 @@ letter carrying the cipher.
   refuting a rumour that August of Saxony died of a hunting injury) far better than a name/place nomenclator
   would -- read as a description of medical treatment (bloodletting/purging), plausibly the specific detail
   Orange did not want left in clear.
+  **Correction (R9-WVOALIGN, 6 Oct 2026):** the statement "no interlinear gloss" above is wrong. f.23 is twenty alternating rows, and each German row is a letter-over-sign decipherment of the cipher row under it (pre-registered alignment test PASS, section "f.23 interlinear alignment" below). The German words this section lists as clear words among the signs are that gloss. Text kept as written.
 - p4: outer address/docket leaf. "Praesentatum ... 28 Sept Anno [15]64 ..." (received/presented 28 Sept 1564,
   ten days after the 18 Sept dateline -- ordinary transit time Brussels-Kassel), addressed "Dem hochgebornen
   Fürsten unserm ... freundlichen lieben Herrn Vetter und Schwager Wilhelm Landgraven zu Hessen" -- confirms
@@ -104,6 +105,8 @@ key_174_nomenclator.tsv`, from the same OX-WVH pass) sitting unused, from the sa
 direction to the same recipient. No key was applied to 1109 this pass (brief scope: comparison only).
 
 ## Verdict
+
+**Correction (R9-WVOALIGN, 6 Oct 2026):** the statement "no interlinear gloss" (here: "carries no gloss, marginal reading or key table on the leaf itself") is wrong. f.23 is twenty alternating rows, and each German row is a letter-over-sign decipherment of the cipher row under it (pre-registered alignment test PASS, section "f.23 interlinear alignment" below). The German words this section lists as clear words among the signs are that gloss. Text kept as written.
 
 **Status: open.** No standard edition, community list, DECODE record or solver repository names this cipher
 enclosure or a decipherment (see line 2 and the searches below); WVO's own Brongegevens lists no printed
@@ -318,6 +321,7 @@ found discussing briefnr 1109 or its enclosure.
 on the enclosure (f.23, all five 1109 pages and four 1107 pages viewed by eye, section "Images opened this pass").
 The one key the folder mentions (willem-van-hessen-1567's 174 nomenclator) was already run on this text by
 NX-WVO174 (26 Sept 2026) and does not read it.
+**Correction (R9-WVOALIGN, 6 Oct 2026):** the statement "no interlinear gloss" in (a) is wrong. f.23 is twenty alternating rows, and each German row is a letter-over-sign decipherment of the cipher row under it (pre-registered alignment test PASS, section "f.23 interlinear alignment" below). The German words this section lists as clear words among the signs are that gloss. Text kept as written.
 (b) Other solvers' working files -- **not found.** dbourdeau/cyphersolver (fresh clone, head 2341682) and
 aaymeloglu/unsolved-ciphers (head d2800bb): the check-solved sweep's grep ("1109", "1107", "hessen", "kassel") found
 only coincidental hits; this worker re-grepped the newer heads for "wvo 1109"/"briefnr 1109", Landgraf/Landgrave
@@ -398,3 +402,64 @@ question from the crib-placement test, which it would replace. NX-WVO174's two p
 Named next step (not run): pair each clear row with the cipher row below it and run `tools/interlinear_align.py`
 (grade C) with a rule-3 control (the same alignment against row-shuffled gloss/cipher pairs), after or alongside the
 owner's sort; ~$2-3 Opus. Reading, key.tsv and status fields untouched by this job.
+
+## f.23 interlinear alignment (R9-WVOALIGN, account 4, 6 Oct 2026, 06:02-06:2x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-WVOALIGN (R9-WVOSORT's named next step). Files in `r9align/`.
+- Crops (pasted command in `PREREG-R9-WVOALIGN.md`): `tools/iiif_lines.py --image images/01109_p3_400full.jpg`, 10 row-pair crops
+  (German row + the cipher row under it) x 2 segments, `--centres` from the sorter geometry; `marked/` adds a red mid-overlap line;
+  `crops_m/` the same with wider margins for reconciliation (the first cut clipped the lower edge of some cipher rows).
+- Two blind Sonnet passes (4 calls, 5 row-pairs each; `passA_*.tsv`, `passB_*.tsv`): German row and cipher row transcribed
+  independently, cipher in a fixed 28-code shape vocabulary, no alignment asked for. Gloss reconciled by this worker against
+  `crops_m/` (1 unit): `gloss_reconciled.tsv`. Cipher labels used for the test were gloss-blind: PRIMARY the sorter's k-means pile
+  ids for every tile in x order (`build_pairs.py`, `tile_order.tsv`), SECONDARY each pass's own codes.
+- `PREREG-R9-WVOALIGN.md` pushed (7869179cf) before any scored run. Tool: `tools/interlinear_align.py align --code-prefix @
+  --seg-bonus 0 --keep-fs --null-cost -1.0`, with a new `--shuffle N` option (rule-3 row-shuffle control built into the shared
+  tool, offline test `tools/tests/test_interlinear_shuffle.py`).
+
+| label set | CONSISTENT real | shuffle mean | p95 | max | p (1000 draws, seed 1564) | gate |
+|---|---|---|---|---|---|---|
+| piles (primary) | 10 | 1.46 | 3 | 6 | 0.001 | PASS |
+| pass A codes | 7 | 2.51 | 5 | 7 | 0.003 | PASS |
+| pass B codes | 11 | 1.41 | 3 | 6 | 0.001 | PASS |
+
+CONSISTENT = labels whose top aligned letter occurs >= 2 times on >= 2 rows and is >= 0.6 of the label's aligned occurrences.
+- Named checks (descriptive, `word_checks.py`): "zweimahl" (C06/C07) 7/8 letters over the same sign in both passes' codes (3/8 in
+  piles); "worden sei" (C05/C10) 7/9 (pass A), 4/9 (pass B), 3/9 (piles). The differences are homophones, not misalignment: o is
+  Z in C05 and 7 in C10, e is the e-shape in C05 and 8 in C10 (both passes agree on those shapes).
+- By eye on the crops (this worker, grade M, for the verifier): the system is a homophonic letter cipher, one sign per gloss
+  letter, two or three signs for common letters (n: Y-horned and Mercury-like signs; e: e-shape, 8, looped L); w = thorn-p,
+  i = Mars sign, r = cross with one bar, s = R, d = Z with crossbar, o = Z, h = barred II, c = barred h, f = square, l = 9-like
+  hook. "E.L." (Euer Liebden) is written in clear in cipher row 1. Barred h = c agrees with the sibling 174 key's c
+  (`willem-van-hessen-1567/siblings/key_174_nomenclator.tsv`); the rest of that key was not compared this job.
+- Gloss as read (M, rough; C03, C05 and C09 have uncertain letters): "wir konnen auch E.L. unfreundtlich en vertrauen nit
+  vorgalten das wir ... zeitungen bekommen ... das die kein so ... kranck worden sei das man ir die adern zweimahl schlagen und
+  tausch zweimahl purgiren mussen dermassen das ... worden sei". The enciphered passage reports someone's illness, two
+  bloodlettings and purging.
+- Key: `r9align/key.tsv` (pile id -> letter): 10 piles at C (k05 n, k07 r, k09 s, k12 e, k14 r, k18 a, k21 n, k22 d, k26 e,
+  k28 a), 18 at M. Piles are provisional k-means shape groups and several mix two shapes (k22 holds Z = o and Z with crossbar =
+  d), so on the tiles the 92 C-graded tokens agree with the gloss letter over them 72 times. `r9align/tile_letters.tsv` gives the
+  gloss letter aligned over every sorter tile, so the owner's sort relabels it mechanically.
+- Decode: `r9align/decode.json`; `tools/decode_key.py ciphers/wvo-hessen-1564/r9align --check` exit 0 (reading up to date).
+  Rule 4 counts on the 257 tiles: H 0, C 102, S 0, M 155, I 0 (plus 1 clear token). The decode reads e.g. C08 "a u r t i e r e n i
+  u s s e n d e r i a s s e n" under "purgiren mussen dermassen". It is a check on the key; the period decipherment is the gloss.
+- Left as they were: the folder's top-level `ciphertext.tsv`, `key.tsv`, `reading.txt` (NX-WVO174's 174-key test, kept as the record
+  of that negative). No AUDIT.md exists for this target, so no audited reading changed. Not found: any statement elsewhere in
+  this folder of the gloss's reading.
+- No network requests. 4 Sonnet subagent calls.
+
+## Remaining gaps (finish-or-blocker pass, R9-WVOALIGN, 6 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed); alignment gate PASS 10 vs shuffle p95 3; key 10 C / 18 M pile rows; 72 of 92 C-graded tiles agree with the gloss letter over them
+- careful transcription of the ten German gloss rows (C03, C05, C09 have uncertain letters; this job's gloss is a reconciliation sketch) - blocker: not-attempted; outside this job's brief, which asked for a reconciliation sketch only; next: two blind passes on crops_m/ German rows + reconciliation, then re-run build_pairs.py and the aligner, ~$4.5
+- sign-level key (pile ids mix shapes; the key is per pile, not per settled sign) - blocker: not-attempted; the sorter is built but not yet answered; next: after the owner's f23 sorter answers, apply them with tools/sign_sorter_apply.py, relabel tile_letters.tsv by sid and rebuild key.tsv with make_key.py, ~$1
+- verifier on the gloss reading and the key (rule 10; no AUDIT.md yet) - blocker: not-attempted; a solver may not verify its own reading; next: a separate verifier session with PREREG-R9-WVOALIGN.md, r9align/ and the f.23 image, ~$3
+
+## Escalation (R9-WVOALIGN, 6 Oct 2026)
+- [x] siblings: the 174 nomenclator key (same sender, same direction) applied by NX-WVO174, 26 Sept 2026, did not read the band transcription
+- [x] clear-pages: f.23's own interlinear gloss aligned and gated (R9-WVOALIGN); 1107 and 1111 read for cribs earlier
+- [x] known-keys: key_174_nomenclator.tsv tried (NX-WVO174); one value (c = barred h) agrees by eye with the f.23 gloss
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111)
+- [x] key-rebuild: pile-level key rebuilt from the leaf's gloss (R9-WVOALIGN, r9align/key.tsv)
+- [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair crops and sorter tiles
+- [n/a] retry: no step has failed that a retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: rebuild key.tsv per settled sign after the owner's sorter answers (~$1), else a careful two-pass transcription of the ten gloss rows (~$4.5); then a verifier

@@ -1,0 +1,16 @@
+{
+  "ciphertext": "ciphertext.tsv",
+  "key": "key.tsv",
+  "format": "tsv",
+  "style": "spaced",
+  "include_clear": true,
+  "reading": "reading.txt",
+  "tokens": "reading_tokens.tsv",
+  "header": [
+    "# wvo-hessen-1564 f.23, sorter tile stream (provisional k-means pile ids, R9-WVOSORT) decoded with the pile key",
+    "# recovered from the leaf's own interlinear gloss (R9-WVOALIGN, 6 Oct 2026, tools/interlinear_align.py; PREREG gate",
+    "# PASS 10 vs shuffle p95 3). Piles mix shapes, so this decode is a check on the key, not a reading: the period",
+    "# decipherment is the gloss itself (gloss_reconciled.tsv). Grades: {grades_sorted}."
+  ],
+  "token_columns": [["line", "line"], ["pos", "pos"], ["sign", "raw"], ["value", "value"], ["grade", "grade"]]
+}
