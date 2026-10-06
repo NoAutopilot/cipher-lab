@@ -8996,3 +8996,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:38 | R7-CHEST | claim sp87-chesterfield-1747 Coxe Pelham grep, cap 1.2, box ends 02:07 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:39 | R7-DONC worker | done (01:37-01:50 UTC by date -u, brief met) for LANE LANE-RUN7-account-2: CSP Venice vol.17 Aug-Oct 1621 grepped on BHO; Doncaster context only (ill 14-24 Sept, Rochelle), no audience report, no cipher mention; NOTES.md section added
 2026-10-06 01:39 | R7-DONC worker | correction for LANE LANE-RUN7-account-2: R7-DONC done window was 01:37-01:40 UTC (date -u), not 01:50 as typed
+2026-10-06 01:39 | R7-CHEST | done (01:39 UTC by date -u, brief met): Coxe vols 1-2 grepped; no Waldeck/Cronstrom despatch to Cumberland, narration only; NOTES.md section added, for LANE LANE-RUN7-account-2
