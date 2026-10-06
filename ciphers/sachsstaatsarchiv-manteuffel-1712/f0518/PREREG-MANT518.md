@@ -1,4 +1,4 @@
-# PREREG-MANT518 (R10-MANT518, 6 Oct 2026, written 10:50 UTC by date -u, LANE LANE-RUN10-account-4, account 4), before any pass was read or any statistic computed
+# PREREG-MANT518 (R10-MANT518, 6 Oct 2026, written 10:42 UTC by date -u, LANE LANE-RUN10-account-4, account 4), before any pass was read or any statistic computed
 
 Leaf unit "0518": SHStA Dresden 10026 Loc. 694/08, URL file 0518 (film label 0519, sha256 61261688...c002c71a9a178, www.archiv.sachsen.de,
 1 request, HTTP 200). Two written pages: left (f.416 per N9-MANT2, paras 3-4, ~30 lines, the lower half dense with code groups and glosses),
