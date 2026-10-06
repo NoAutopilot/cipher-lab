@@ -1134,3 +1134,58 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gap; cheapest next: Tournon 1556 key from fr. 3138 fo. 22r with an image-exemplar reference sheet before the two blind passes, ~$5
+
+## R12A-SEUT: Tournon 1556 cipher block, exemplar sheet + two blind passes (err 0.318); stream-alignment gate a NON-TEST at control (6 Oct 2026, 18:06-18:1x UTC by date -u, account 1, LANE-RUN12-account-1)
+Named next step of D1-SEURES (known-keys). Brief `.claude/briefs/runs/2026-10-06-account1-run12-jobs.md` ### R12A-SEUT. Step checked undone first (no dated section or ROOM done line had run it).
+**Crops.** Gallica probe 200; canvas-26 region re-fetched (`known_keys/regen_images.sh`, 1 request), re-cut from the local source into 13 lines x 2
+non-overlapping 1500 px halves (`--centres 94,...,1577 --follow-slope 300 --mask-neighbours --overlap 0 --prefix tv`); L13's slope fit drifted
+-138 px onto L12 (caught by eye on a contact sheet), so L13 was re-cut without slope following (left half only; the right half is blank). L01 is the
+clear line "pour cest effect ..." whose right end carries the first cipher signs; L02-L13 are cipher. Images not committed (folder rule); the regen script rebuilds them.
+**Exemplar sheet.** `known_keys/tournon/exemplar_sheet.png` (31 tiles cut from this leaf's own crops at the boxes in `exemplars.tsv`, built by
+`build_sheet.py`), the image-exemplar fix D1-SEURE's lesson asked for. Inventory seen while cutting: psi, epsilon-with-stroke, lying-8 with tail,
+tall lambda, double-barred cross, three dots, long s, triple-barred grid, plus, m, double slash, s with superscript, ff, curl, o with tail, #, pi,
+X, 3-shaped z, phi, round d, w/n with tilde, small lambda, v, q/9, barred F, a, rho, g, p; not on the sheet: beta, omega, 7, triangle and a few rarer shapes.
+**Passes.** Two blind Sonnet reads, one call each, crops + sheet only (`tournon/pass_inputs.txt`): `passA.tsv` 407 signs (self-confidence 0.35),
+`passB.tsv` 385 (0.25). Agreement (`morv/pass_err.py`, `tournon/pass_err.json`): **err 0.318** (132 edits / 415), per half-line 0.06-0.71. That is
+well below Morvilliers' 0.778 under a prose label sheet (D1-SEURE), so the exemplar sheet helps, but it is still above the TRANSCRIPTION.md one-tenth line.
+**Slip.** Read by this worker by eye at native resolution, M throughout (`tournon/slip_read.txt`, 8 lines, 524 letters; R10-SEURE4's partial read
+extended): "... de luy faire prendre tel chemyn qu'on vouldra sans que le duc s'en puisse appercevoir d'aultant qu'il aura occasion de croyre ...
+par la Romagne ... droict a la Marque et a la Bruzzo comme le commun bruict est, et faire le mesme chemyn que feist monsr de Lautrec. Et toutesfoys
+il y a ung endroict ... faire tourner tout court son armee ... au cueur des pays du duc par Castracaro qui est le chemyn que fist monsr de Bourbon
+quand il alla a Rome." About 400 signs against 524 letters means some signs stand for more than one letter (word or syllable codes); a design
+observation only, not scored.
+**Gate.** `tournon/PREREG-SEUT.md` (pushed a3767c510 before any score), `tournon/seut_gate.py` (`--check` OK), `tournon/result_seut.json`.
+Statistic: `tools/stream_align.py` learn + nw_score of each pass against the slip, vs a 40-text wrong-text null (20 fr16 passages + 20 word shuffles
+of the slip). Power control first: the slip text enciphered homophonically (40 symbols + 11 word codes, N 485) at err 0.32, 3 seeds.
+| run | S | null mean | null p95 | pass |
+|---|---|---|---|---|
+| control seed 21 | 0.353 | 0.460 | 0.530 | no |
+| control seed 22 | 0.431 | 0.466 | 0.529 | no |
+| control seed 23 | 0.353 | 0.466 | 0.549 | no |
+| passA / passB | not scored | | | |
+**NON-TEST** (0/3 at control; the PREREG stops here). The self-scored statistic overfits at N ~500: a key learned on the text it is then scored on fits
+wrong texts at least as well as the true one, so the instrument cannot tell the slip from a random French passage at this length, even for a cipher
+known to be the slip's. Not a negative for the Tournon key and not a measure of the passes; the R1/R2 key test was not reached (nothing to test).
+Requests: gallica.bnf.fr 3 (1 info.json probe, canvas-26 region, canvas-25 slip region); 2 Sonnet subagent calls (passes A, B). 0 tokens read.
+Not found: a machine transcription of fo. 22r that two blind readers agree on within a tenth; an alignment statistic with power at N ~500.
+Lesson (one line): a self-fitted alignment score (learn the key on the text, score on the same text) needs a held-out half before it can gate at N ~500.
+
+## Remaining gaps (R12A-SEUT, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE); Danzay 1557 key non-test (R9-SEURE); La Guiche 1551 key FAIL with control power under one map (R9-SEURE2); Babou 1558 key not rebuildable from the microfilm capture (R10-SEURE3); Morvilliers 1549 block err 0.778, sorter built and handed on (D1-SEURE, D1-SEURES); Tournon 1556 block two blind passes against an exemplar sheet err 0.318, slip read at M, stream-alignment gate non-test at control (R12A-SEUT); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; Danzay non-test, La Guiche FAIL under one map, Babou not rebuildable, Morvilliers waits on the owner's sorter, Tournon key not yet rebuilt; next: rebuild the Tournon key (gap below), then test it on R1/R2 through a pre-registered gate with a matched control, ~$3
+- Tournon 1556 key (fr. 3138 fo. 22r + canvas-25 slip) - blocker: not-attempted; passes A/B split at 0.318, stream-alignment self-scored gate non-test at control; next: a strong-model reconciliation of passes A/B against the crops with the slip as known plaintext, line by line (sign -> letter or word-code pairs, grade C where both passes agree), scored with a held-out-half alignment statistic (learn the key on lines 1-6, score lines 7-13 against the slip and against wrong texts) whose power control is pre-registered first, ~$4
+- Morvilliers 1549 key (fr. 3138 fo. 66r) - blocker: waiting-on the owner's answer in the Morvilliers sign sorter (published by the account-3 orchestrator from the ROOM flag of 6 Oct 2026); then tools/sign_sorter_apply.py, machine passes against the settled labels, and alignment to the margin decipher
+- Babou 1558 interlinear decipher (fr. 3138 fo. 35v) - blocker: illegible at the Gallica microfilm scan; reopens with a colour capture (BnF reproduction request) or a person's read in the reading room
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (R12A-SEUT, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: Danzay non-test (R9-SEURE); La Guiche FAIL under one map (R9-SEURE2); Babou illegible (R10-SEURE3); Morvilliers sorter waits on the owner (D1-SEURES); Tournon passes err 0.318, self-scored alignment gate non-test at control (R12A-SEUT), reconciliation + held-out gate untried
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 2 internal gaps; cheapest next: reconcile Tournon passes A/B against the fo. 22r crops with the slip as known plaintext, then a pre-registered held-out-half alignment gate (power control first), ~$4

@@ -1,0 +1,11 @@
+# R12A-SEUT (6 Oct 2026): clear read of the Tournon 1556 decipher slip, BnF fr. 3138, Gallica btv1b90601662 canvas 25
+# (region 0,0,3313,1964 at native res, autocontrast). Read by this worker by eye; grade M throughout; [?] = uncertain word.
+# Heading: "Dechiffrement de ce qui est escrit dessous ce present billet"
+1 On faict ses journees ou faire si petites journees a [bre?] [avoir?] Quoy s'il a tousjours a temps
+2 de luy faire prendre tel chemyn qu'on vouldra sans que le duc s'en puisse appercevoir
+3 d'aultant qu'il aura occasion de croyre avant bien que ses gens d'armes avanse[nt?] Bolougne
+4 c'est [venir?] par la Romagne qu'elle doibvent aller droict a la Marque et a la Bruzzo
+5 comme le commun bruict est, et faire le mesme chemyn que feist monsr de Lautrec
+6 Et toutesfoys il y a ung endroict par ou luy pourra (cela est aussi advise) faire tourner
+7 tout court son armee d'entrer au cueur des pays du duc par Castracaro qui
+8 est le chemyn que fist monsr de Bourbon quand il alla a Rome.

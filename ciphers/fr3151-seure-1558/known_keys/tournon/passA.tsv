@@ -1,0 +1,27 @@
+crop	signs
+L01_s1	NONE
+L01_s2	hash3 plus
+L02_s1	m inf psi plus ?small_o rho p LAM dag2 ?ladder plus ?cross hash psi1 s2 w hash a m
+L02_s2	a dots a d g s2 dots plus a LAM p ?tau phi plus w ??
+L03_s1	s2 eps psi plus ?cross m inf slash2 plus longs s2 ff curl hash3 ?cross X o_ hash
+L03_s2	z3 d dots a psi dag2 dots ff longs a LAM longs ff curl X psi X p q9
+L04_s1	psi eps inf LAM dag2 dots longs hash3 g psi plus pi LAM a lam z3 hash F
+L04_s2	phi d inf w ?cross lam v dots q9 d v dots F a d rho w hash dag2 g p
+L05_s1	s2 longs psi1 m LAM longs dots g slash2 m ?seven d plus ?cross eps psi X plus longs
+L05_s2	X w dots ff d plus d phi inf ff v pi ?sigma ?beta lam
+L06_s1	v dots plus ?omega d d longs m a phi m LAM p rho phi phi y hash3 plus a
+L06_s2	phi plus rho psi dots m LAM longs ?omega m plus g w d psi d pi a
+L07_s1	dag2 eps w phi p a g inf dots dag2 longs eps w longs s2 d LAM
+L07_s2	inf d dots pi hash3 d LAM g longs phi slash2 psi inf inf ?blob eps F m
+L08_s1	g F q9 v p phi phi slash2 p w F s2 v plus s2 hash3 X LAM a
+L08_s2	plus d plus ?tau a plus ff plus w phi pi a dag2 plus s2
+L09_s1	hash3 LAM g psi s2 dots a F dag2 longs eps psi s2 a plus ?seven m w plus lam
+L09_s2	plus g a o_ phi d v psi dag2 dots m w F s2 w m a
+L10_s1	LAM p phi d psi LAM s2 plus w LAM inf g lam phi hash w g dag2
+L10_s2	w plus v z3 dag2 eps psi dots phi ff dots s2 m o_ longs F m a
+L11_s1	s2 longs slash2 plus ?q dag2 ff psi s2 slash2 v dots longs F p a g
+L11_s2	pi eps plus d g hash plus dag2 inf lam z3 hash3 F g plus
+L12_s1	s2 dots longs ff g slash2 eps m inf m LAM longs ff g plus hash phi
+L12_s2	X q9 v ?seven v w plus s2 o_ phi m dots phi phi m d
+L13_s1	X inf g d dag2 w LAM longs ?beta ?omega slash2 phi plus ??
+# confidence 0.35 Low-resolution cluttered crops; sign boundaries and several labels are guesses.

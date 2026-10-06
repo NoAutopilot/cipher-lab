@@ -1,0 +1,3 @@
+R12A-SEUT pass inputs (both passes identical, blind to each other and to any decipherment):
+sheet: ciphers/fr3151-seure-1558/known_keys/tournon/exemplar_sheet.png (+ exemplars.tsv labels/notes)
+crops: ciphers/fr3151-seure-1558/known_keys/images/tv/tv_L01_s1.jpg .. tv_L13_s1.jpg (25 crops; L13 has s1 only), rebuilt by ../regen_images.sh

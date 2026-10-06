@@ -1,0 +1,27 @@
+crop	signs
+L01_s1	NONE
+L01_s2	eps ?cap_strike hash3 plus
+L02_s1	m o_ phi ?dot rho plus ?small ?beta psi s2 w hash m
+L02_s2	a ?delta g longs dots plus a LAM p ?tau phi plus psi
+L03_s1	s2 eps psi plus ?tick m inf slash2 plus longs s2 ff curl d hash3 ?H LAM o_ hash
+L03_s2	z3 d dots a psi dag2 dots ff longs a LAM longs ?omega psi X rho phi
+L04_s1	psi eps inf LAM dag2 dots longs hash3 g psi plus pi LAM a lam z3 hash ?A
+L04_s2	longs phi d o_ w ?k rho ?y ?lam g dag2 slash2 hash dag2 g p
+L05_s1	s2 longs psi1 m LAM longs dots g m ?seven ?beta plus eps psi ?H longs
+L05_s2	X plus w dots ff ?beta plus ?phi psi longs ?omega ff v pi s2 ?beta lam
+L06_s1	v dots plus ?beta ?delta longs a ?phi m LAM ?rho p phi ?phi y ?bars plus a
+L06_s2	phi ?p a ?y psi longs ?m LAM longs ?m plus g w ?delta psi ?y pi ?omega
+L07_s1	dag2 eps w phi p a g ?omega dots dag2 longs eps w longs ?delta LAM
+L07_s2	?beta ?omega dots pi ?bars ?delta LAM g longs phi slash2 psi inf inf ?blot eps ff m
+L08_s1	g ff q9 v p phi slash2 p w ff s2 ?y plus s2 ?bars ?tilde LAM
+L08_s2	plus v plus ?tau a plus ff ff plus w phi pi a dag2 plus s2
+L09_s1	?bars LAM g psi s2 dots a ff dag2 longs eps psi s2 a plus ?seven m w plus longs
+L09_s2	hash3 q9 a inf phi d v psi dag2 dots m w ff s2 ?w m
+L10_s1	LAM q9 phi d v psi ?delta LAM s2 plus w LAM inf g ?lam phi hash3 w g dag2
+L10_s2	w plus v z3 dag2 eps psi dots phi ff dots s2 m inf longs ff m
+L11_s1	d?? longs slash2 plus ?q dag2 ff psi s2 slash2 v dots longs ff p a
+L11_s2	pi ?H plus ?delta g hash plus dag2 inf LAM ?beta hash3 ff g plus
+L12_s1	s2 dots ff longs g slash2 eps m inf LAM ff inf g plus hash ?phi
+L12_s2	X q9 v ?seven v w plus s2 inf phi m dots phi phi m d
+L13_s1	?X inf g ?delta dag2 w LAM longs ?omega ?delta slash2 phi
+# confidence 0.25 Crops are blurry and many signs are guessed; counts and low-contrast labels are approximate.

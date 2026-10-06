@@ -1,0 +1,32 @@
+label	crop	x0	x1	note
+psi	L04_s1	58	108	psi / trident with descender
+eps	L03_s1	135	192	epsilon with cross-stroke (euro-like)
+inf	L04_s1	208	308	lying figure-eight with tail
+LAM	L04_s1	318	392	tall lambda / A without crossbar
+dag2	L04_s1	412	472	double-barred cross
+dots	L04_s1	483	532	three dots (therefore sign)
+longs	L04_s1	558	602	long s, no bar
+hash3	L04_s1	608	708	triple-barred grid
+plus	L03_s1	638	702	plus cross
+m	L03_s1	380	440	m
+slash2	L03_s1	553	627	double slash
+s2	L03_s1	822	888	s with small superscript curl
+ff	L03_s1	884	962	double f
+curl	L03_s1	968	1032	tilde-curl with hook
+o_	L03_s1	1362	1432	small o with long tail stroke
+hash	L04_s1	1350	1428	hash # (two bars)
+psi1	L04_s1	792	836	psi with apostrophe
+pi	L04_s1	938	1022	pi
+X	L04_s1	1178	1242	chi / X
+z3	L04_s1	1268	1318	3-shaped z (yogh)
+phi	L04_s2	48	97	phi
+d	L04_s2	138	177	round d (delta-like)
+w	L04_s2	298	388	w/n with tilde above
+lam	L04_s2	388	442	small lambda with hook
+v	L04_s2	440	495	v / nu
+q9	L04_s2	573	617	q / 9 with bowl
+F	L04_s2	806	858	f with crossbar (bold)
+a	L04_s2	878	918	a
+rho	L04_s2	1058	1092	rho / q with long descender
+g	L04_s2	1352	1388	g
+p	L04_s2	1388	1432	p
