@@ -1,42 +1,89 @@
 line	position	sign	why
+05811_p1_L04	18	51	300dpi blind read 51 (M, strip L03), A4-RFLVN
+05811_p1_L08	10	20	300dpi blind read 20 (M, strip L05), A4-RFLVN
+05811_p1_L09	13	84	300dpi blind read 84 (M, strip L05), A4-RFLVN
+05811_p1_L09	3	37	300dpi blind read 37 (M, strip L05), A4-RFLVN
+05811_p1_L12	8	63	300dpi blind read 63 (M, strip L07), A4-RFLVN
+05811_p1_L14	20	2	300dpi blind read 2 (M, strip L08), A4-RFLVN
 05811_p1_L14	23	85	structural: 185 is not a valid key.tsv code
 05811_p1_L14	3	9	structural: 0 is not a valid key.tsv code
+05811_p1_L14	5	82	300dpi blind read 82 (M, strip L08), A4-RFLVN
 05811_p1_L15	18	12	matches p5 parallel-copy alignment
+05811_p1_L15	3	104	300dpi blind read 104 (H, strip L08), A4-RFLVN
 05811_p1_L16	19	127	matches p5 parallel-copy alignment
+05811_p1_L17	12	32	300dpi blind read 32 (H, strip L09), A4-RFLVN
 05811_p1_L17	16	37	matches p5 parallel-copy alignment
 05811_p1_L17	19	82	matches p5 parallel-copy alignment
+05811_p1_L18	11	123	300dpi blind read 123 (H, strip L10), A4-RFLVN
+05811_p1_L20	3	75	300dpi blind read 75 (M, strip L11), A4-RFLVN
 05811_p1_L21	12	31	structural: 311 is not a valid key.tsv code
+05811_p1_L21	4	104	300dpi blind read 104 (M, strip L11), A4-RFLVN
 05811_p1_L23	14	89	structural: 384 is not a valid key.tsv code
+05811_p1_L26	6	72	300dpi blind read 72 (M, strip L14), A4-RFLVN
+05811_p1_L28	12	119	300dpi blind read 119 (M, strip L15), A4-RFLVN
+05811_p1_L30	3	28	300dpi blind read 28 (M, strip L16), A4-RFLVN
+05811_p1_L30	7	23	300dpi blind read 23 (M, strip L16), A4-RFLVN
+05811_p2_L03	11	83	300dpi blind read 83 (M, strip L02), A4-RFLVN
 05811_p2_L05	12	28	matches p5 parallel-copy alignment
 05811_p2_L05	5	98	matches p5 parallel-copy alignment
 05811_p2_L05	8	38	matches p5 parallel-copy alignment
+05811_p2_L07	1	28	300dpi blind read 28 (M, strip L04), A4-RFLVN
+05811_p2_L07	3	2	300dpi blind read 2 (H, strip L04), A4-RFLVN
 05811_p2_L07	9	109	matches p5 parallel-copy alignment
+05811_p2_L08	7	62	300dpi blind read 62 (M, strip L04), A4-RFLVN
+05811_p2_L10	8	1	300dpi blind read 1 (M, strip L05), A4-RFLVN
+05811_p2_L11	10	22	300dpi blind read 22 (H, strip L06), A4-RFLVN
 05811_p2_L11	19	31	matches p5 parallel-copy alignment
+05811_p2_L12	6	33	300dpi blind read 33 (M, strip L06), A4-RFLVN
+05811_p2_L13	10	119	300dpi blind read 119 (M, strip L07), A4-RFLVN
 05811_p2_L14	3	37	matches p5 parallel-copy alignment
 05811_p5_L05	1	76	matches p1+p2 parallel-copy alignment
 05811_p5_L05	17	63	matches p1+p2 parallel-copy alignment
 05811_p5_L05	20	71	matches p1+p2 parallel-copy alignment
 05811_p5_L06	15	64	matches p1+p2 parallel-copy alignment
 05811_p5_L06	21	82	matches p1+p2 parallel-copy alignment
+05811_p5_L07	10	90	300dpi blind read 90 (M, strip L04), A4-RFLVN
+05811_p5_L07	2	87	300dpi blind read 87 (M, strip L04), A4-RFLVN
 05811_p5_L11	11	9	matches p1+p2 parallel-copy alignment
+05811_p5_L11	4	91	300dpi blind read 91 (M, strip L06), A4-RFLVN
 05811_p5_L12	12	62	matches p1+p2 parallel-copy alignment
 05811_p5_L12	20	81	matches p1+p2 parallel-copy alignment
+05811_p5_L12	6	90	300dpi blind read 90 (M, strip L06), A4-RFLVN
 05811_p5_L14	10	9	structural: 0 is not a valid key.tsv code
 05811_p5_L14	12	37	matches p1+p2 parallel-copy alignment
+05811_p5_L15	18	18	300dpi blind read 18 (M, strip L07), A4-RFLVN
+05811_p5_L16	17	109	300dpi blind read 109 (M, strip L07), A4-RFLVN
 05811_p5_L16	8	39	structural: 839 is not a valid key.tsv code
+05811_p5_L16	9	27	300dpi blind read 27 (M, strip L07), A4-RFLVN
+05811_p5_L17	3	85	300dpi blind read 85 (M, strip L08), A4-RFLVN
+05811_p5_L18	12	23	300dpi blind read 23 (H, strip L08), A4-RFLVN
+05811_p5_L18	19	38	300dpi blind read 38 (M, strip L08), A4-RFLVN
 05811_p5_L19	9	89	matches p1+p2 parallel-copy alignment
+05811_p5_L20	15	93	300dpi blind read 93 (M, strip L09), A4-RFLVN
+05811_p5_L20	24	8	300dpi blind read 8 (M, strip L09), A4-RFLVN
+05811_p5_L20	8	85	300dpi blind read 85 (M, strip L09), A4-RFLVN
 05811_p5_L22	15	92	structural: 02 is not a valid key.tsv code
+05811_p5_L22	18	26	300dpi blind read 26 (M, strip L10), A4-RFLVN
 05811_p5_L24	9	27	matches p1+p2 parallel-copy alignment
 05811_p5_L25	13	37	matches p1+p2 parallel-copy alignment
+05811_p5_L25	4	93	300dpi blind read 93 (M, strip L11), A4-RFLVN
 05811_p5_L26	18	38	matches p1+p2 parallel-copy alignment
 05811_p5_L26	4	37	matches p1+p2 parallel-copy alignment
 05811_p5_L28	21	113	matches p1+p2 parallel-copy alignment
 05811_p5_L29	14	37	matches p1+p2 parallel-copy alignment
 05811_p5_L29	6	98	matches p1+p2 parallel-copy alignment
+05811_p5_L30	23	82	300dpi blind read 82 (M, strip L14), A4-RFLVN
+05811_p5_L31	16	81	300dpi blind read 81 (M, strip L14), A4-RFLVN
 05811_p5_L31	5	109	matches p1+p2 parallel-copy alignment
 05811_p5_L32	14	117	matches p1+p2 parallel-copy alignment
+05811_p5_L32	16	81	300dpi blind read 81 (M, strip L14), A4-RFLVN
 05811_p5_L33	10	37	matches p1+p2 parallel-copy alignment
+05811_p5_L33	20	82	300dpi blind read 82 (M, strip L15), A4-RFLVN
+05811_p5_L33	22	82	300dpi blind read 82 (M, strip L15), A4-RFLVN
 05811_p5_L33	23	12	matches p1+p2 parallel-copy alignment
+05811_p5_L34	14	82	300dpi blind read 82 (M, strip L15), A4-RFLVN
 05811_p5_L34	15	37	matches p1+p2 parallel-copy alignment
+05811_p5_L35	14	81	300dpi blind read 81 (M, strip L15), A4-RFLVN
+05811_p5_L35	4	82	300dpi blind read 82 (M, strip L15), A4-RFLVN
 05811_p5_L36	12	37	matches p1+p2 parallel-copy alignment
 05811_p5_L36	3	37	matches p1+p2 parallel-copy alignment

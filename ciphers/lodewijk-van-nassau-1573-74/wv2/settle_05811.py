@@ -23,6 +23,13 @@ Neither method is "read on the image" in the literal glyph sense the brief asked
 trustworthy at single-digit resolution). Every settled row is logged as resolved (with its instance); everything
 else is left as recon's own M/gap fallback, honestly unresolved, and enumerated in the run log.
 
+3. Image at 300 dpi (A4-RFLVN, 6 Oct 2026): the WVO PDF re-rendered at 300 dpi, 2-line strips cut with
+   tools/iiif_lines.py --image, and one blind Sonnet read per page of each row still M after 1-2: the reader saw only
+   the neighbouring signs (other uncertain neighbours masked as *), never the A/B candidates. Rule, written before
+   the reads were opened: settle when the blind read equals exactly one of A/B at conf H or M; a read that equals
+   neither, is L, '?' or NOTFOUND leaves the row M (its read is logged). Inputs: wv2/blind300/qkey.tsv and
+   wv2/blind300/blind_05811_p{1,2,5}.tsv.
+
     python3 wv2/settle_05811.py            write wv2/settle_05811.tsv + wv2/settle_log_05811.tsv
     python3 wv2/settle_05811.py --check    exit 1 if either is stale
 """
@@ -84,6 +91,18 @@ def main():
     combo_to_5 = cross_page_matches(seq_combo, seq_5)
     p5_to_combo = cross_page_matches(seq_5, seq_combo)
 
+    blind = {}
+    bd = H / "blind300"
+    if (bd / "qkey.tsv").exists():
+        qk = {r["qid"]: r for r in csv.DictReader(open(bd / "qkey.tsv"), delimiter="\t")}
+        for pg in PAGES:
+            f = bd / f"blind_{pg}.tsv"
+            if f.exists():
+                for r in csv.DictReader(open(f), delimiter="\t"):
+                    k = qk.get(r["qid"])
+                    if k:
+                        blind[(k["line"], k["col"])] = {"read": (r["read"] or "").strip(), "conf": (r["conf"] or "").strip(),
+                                                        "strip": (r.get("strip") or "").strip()}
     settled = {}   # (line, position) -> (sign, why)
     log_rows = []
     n_structural = n_cross = n_unsettled = n_gap = 0
@@ -129,8 +148,16 @@ def main():
                 n_cross += 1
                 continue
 
+            br = blind.get((line, col))
+            if br and br["conf"] in ("H", "M") and (br["read"] == a) != (br["read"] == b):
+                settled[(line, col)] = (br["read"], f"300dpi blind read {br['read']} ({br['conf']}, strip {br['strip']}), A4-RFLVN")
+                log_rows.append([pg, line, col, a, b, "IMAGE300", f"chosen {br['read']} (blind {br['conf']})"])
+                continue
             n_unsettled += 1
-            log_rows.append([pg, line, col, a, b, "M", "no structural or cross-page signal; needs image (blocker)"])
+            why = "no structural or cross-page signal; needs image (blocker)"
+            if br:
+                why = f"300dpi blind read {br['read']} ({br['conf']}): matches neither or low confidence; stays M"
+            log_rows.append([pg, line, col, a, b, "M", why])
 
     settle_io = io.StringIO()
     w = csv.writer(settle_io, delimiter="\t", lineterminator="\n")

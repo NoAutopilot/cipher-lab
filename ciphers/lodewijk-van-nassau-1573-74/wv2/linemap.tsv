@@ -27,3 +27,11 @@ page	pass	from_line	to_line	why
 05811_p5	B	05811_p5_L35	05811_p5_L34	same offset
 05811_p5	B	05811_p5_L36	05811_p5_L35	same offset
 05811_p5	B	05811_p5_L37	05811_p5_L36	same offset
+05811_p2	B	05811_p2_L27	05811_p2_L26	B numbers the bottom cipher block one line later than A (B L27 = A L26 sign for sign; A4-RFLVN, 6 Oct 2026)
+05811_p2	B	05811_p2_L28	05811_p2_L27	same offset
+05811_p2	B	05811_p2_L29	05811_p2_L28	same offset
+05811_p2	B	05811_p2_L30	05811_p2_L29	same offset
+05811_p2	B	05811_p2_L31	05811_p2_L30	same offset
+05811_p2	B	05811_p2_L32	05811_p2_L31	same offset
+05811_p2	B	05811_p2_L33	05811_p2_L32	same offset
+05811_p2	B	05811_p2_L34	05811_p2_L33	same offset

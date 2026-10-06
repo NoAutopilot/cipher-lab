@@ -271,7 +271,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L18	14	82	H		agree
 05811_p1_L18	15	114	H		agree
 05811_p1_L18	16	127	M		agree-flagged
-05811_p1_L18	17	116	M		agree-flagged
+05811_p1_L18	17	116	L		agree-flagged
 05811_p1_L18	18	37	M	B:	differ
 05811_p1_L18	19	23	M		agree-flagged
 05811_p1_L19	1	83	H		agree
@@ -326,11 +326,11 @@ line	position	sign	confidence	alt	why
 05811_p1_L21	10	113	H		agree
 05811_p1_L21	11	84	H		agree
 05811_p1_L21	12	31	M	B:311	differ
-05811_p1_L21	13	131	M		agree-flagged
+05811_p1_L21	13	131	L		agree-flagged
 05811_p1_L21	14	52	H		agree
 05811_p1_L21	15	83	H		agree
 05811_p1_L21	16	27	H		agree
-05811_p1_L21	17	310	M		agree-flagged
+05811_p1_L21	17	310	L		agree-flagged
 05811_p1_L21	18	140	M		agree-flagged
 05811_p1_L22	1	64	H		agree
 05811_p1_L22	2	29	H		agree
@@ -352,7 +352,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L22	18	114	H		agree
 05811_p1_L22	19	64	H		agree
 05811_p1_L22	20	136	H		agree
-05811_p1_L23	1	338	M		agree-flagged
+05811_p1_L23	1	338	L		agree-flagged
 05811_p1_L23	2	83	H		agree
 05811_p1_L23	3	33	H		agree
 05811_p1_L23	4	34	H		agree
@@ -401,7 +401,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L25	10	21	H		agree
 05811_p1_L25	11	79	H		agree
 05811_p1_L25	12	82	H		agree
-05811_p1_L25	13	351	M		agree-flagged
+05811_p1_L25	13	351	L		agree-flagged
 05811_p1_L25	14	81	H		agree
 05811_p1_L25	15	31	H		agree
 05811_p1_L25	16	61	H		agree

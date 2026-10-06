@@ -29,7 +29,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L04	15	81	H		agree
 05811_p1_L04	16	102	M		agree-flagged
 05811_p1_L04	17	63	H		agree
-05811_p1_L04	18	51	M	B:81	differ
+05811_p1_L04	18	51	H	B:81	settled: 300dpi blind read 51 (M, strip L03), A4-RFLVN
 05811_p1_L04	19	37	H		agree
 05811_p1_L04	20	85	H		agree
 05811_p1_L04	21	40	H		agree
@@ -105,7 +105,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L08	7	85	H		agree
 05811_p1_L08	8	39	H		agree
 05811_p1_L08	9	9	M		agree-flagged
-05811_p1_L08	10	26	M	B:20	differ
+05811_p1_L08	10	20	H	B:20	settled: 300dpi blind read 20 (M, strip L05), A4-RFLVN
 05811_p1_L08	11	33	H		agree
 05811_p1_L08	12	21	H		agree
 05811_p1_L08	13	81	H		agree
@@ -119,7 +119,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L08	21	139	H		agree
 05811_p1_L09	1	82	H		agree
 05811_p1_L09	2	3	M		agree-flagged
-05811_p1_L09	3	37	M	B:33	differ
+05811_p1_L09	3	37	H	B:33	settled: 300dpi blind read 37 (M, strip L05), A4-RFLVN
 05811_p1_L09	4	21	H		agree
 05811_p1_L09	5	85	H		agree
 05811_p1_L09	6	129	H		agree
@@ -129,7 +129,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L09	10	37	H		agree
 05811_p1_L09	11	82	H		agree
 05811_p1_L09	12	130	M		agree-flagged
-05811_p1_L09	13	81	M	B:84	differ
+05811_p1_L09	13	84	H	B:84	settled: 300dpi blind read 84 (M, strip L05), A4-RFLVN
 05811_p1_L09	14	35	H		agree
 05811_p1_L09	15	27	M		agree-flagged
 05811_p1_L09	16	2	M		agree-flagged
@@ -143,7 +143,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L12	5	35	H		agree
 05811_p1_L12	6	61	H		agree
 05811_p1_L12	7	54	H		agree
-05811_p1_L12	8	63	M	B:65	differ
+05811_p1_L12	8	63	H	B:65	settled: 300dpi blind read 63 (M, strip L07), A4-RFLVN
 05811_p1_L12	9	2	H		agree
 05811_p1_L12	10	33	H		agree
 05811_p1_L12	11	22	H		agree
@@ -178,7 +178,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L14	2	85	M		agree-flagged
 05811_p1_L14	3	9	H	B:0	settled: structural: 0 is not a valid key.tsv code
 05811_p1_L14	4	31	H		agree
-05811_p1_L14	5	81	M	B:82	differ
+05811_p1_L14	5	82	H	B:82	settled: 300dpi blind read 82 (M, strip L08), A4-RFLVN
 05811_p1_L14	6	27	H		agree
 05811_p1_L14	7	73	H		agree
 05811_p1_L14	8	22	H		agree
@@ -193,13 +193,13 @@ line	position	sign	confidence	alt	why
 05811_p1_L14	17	78	H		agree
 05811_p1_L14	18	81	M	B:-	gap
 05811_p1_L14	19	66	M	B:85	differ
-05811_p1_L14	20	2	M	B:62	differ
+05811_p1_L14	20	2	H	B:62	settled: 300dpi blind read 2 (M, strip L08), A4-RFLVN
 05811_p1_L14	21	38	H		agree
 05811_p1_L14	22	1	M	B:-	gap
 05811_p1_L14	23	85	H	B:185	settled: structural: 185 is not a valid key.tsv code
 05811_p1_L15	1	70	H		agree
 05811_p1_L15	2	7	H		agree
-05811_p1_L15	3	14	M	B:104	differ
+05811_p1_L15	3	104	H	B:104	settled: 300dpi blind read 104 (H, strip L08), A4-RFLVN
 05811_p1_L15	4	82	H		agree
 05811_p1_L15	5	11	H		agree
 05811_p1_L15	6	62	H		agree
@@ -246,7 +246,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L17	9	64	H		agree
 05811_p1_L17	10	28	H		agree
 05811_p1_L17	11	81	H		agree
-05811_p1_L17	12	31	M	B:32	differ
+05811_p1_L17	12	32	H	B:32	settled: 300dpi blind read 32 (H, strip L09), A4-RFLVN
 05811_p1_L17	13	26	H		agree
 05811_p1_L17	14	9	H		agree
 05811_p1_L17	15	38	H		agree
@@ -265,13 +265,13 @@ line	position	sign	confidence	alt	why
 05811_p1_L18	8	29	H		agree
 05811_p1_L18	9	78	H		agree
 05811_p1_L18	10	84	H		agree
-05811_p1_L18	11	113	M	B:123	differ
+05811_p1_L18	11	123	H	B:123	settled: 300dpi blind read 123 (H, strip L10), A4-RFLVN
 05811_p1_L18	12	32	H		agree
 05811_p1_L18	13	104	M		agree-flagged
 05811_p1_L18	14	82	H		agree
 05811_p1_L18	15	114	H		agree
 05811_p1_L18	16	127	M		agree-flagged
-05811_p1_L18	17	116	M		agree-flagged
+05811_p1_L18	17	116	L		agree-flagged
 05811_p1_L18	18	37	M	B:	differ
 05811_p1_L18	19	23	M		agree-flagged
 05811_p1_L19	1	83	H		agree
@@ -296,7 +296,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L19	20	27	H		agree
 05811_p1_L20	1	24	H		agree
 05811_p1_L20	2	84	H		agree
-05811_p1_L20	3	79	M	B:75	differ
+05811_p1_L20	3	75	H	B:75	settled: 300dpi blind read 75 (M, strip L11), A4-RFLVN
 05811_p1_L20	4	82	H		agree
 05811_p1_L20	5	11	H		agree
 05811_p1_L20	6	37	H		agree
@@ -317,7 +317,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L21	1	71	H		agree
 05811_p1_L21	2	23	H		agree
 05811_p1_L21	3	61	H		agree
-05811_p1_L21	4	4	M	B:104	differ
+05811_p1_L21	4	104	H	B:104	settled: 300dpi blind read 104 (M, strip L11), A4-RFLVN
 05811_p1_L21	5	2	H		agree
 05811_p1_L21	6	27	H		agree
 05811_p1_L21	7	16	H		agree
@@ -326,11 +326,11 @@ line	position	sign	confidence	alt	why
 05811_p1_L21	10	113	H		agree
 05811_p1_L21	11	84	H		agree
 05811_p1_L21	12	31	H	B:311	settled: structural: 311 is not a valid key.tsv code
-05811_p1_L21	13	131	M		agree-flagged
+05811_p1_L21	13	131	L		agree-flagged
 05811_p1_L21	14	52	H		agree
 05811_p1_L21	15	83	H		agree
 05811_p1_L21	16	27	H		agree
-05811_p1_L21	17	310	M		agree-flagged
+05811_p1_L21	17	310	L		agree-flagged
 05811_p1_L21	18	140	M		agree-flagged
 05811_p1_L22	1	64	H		agree
 05811_p1_L22	2	29	H		agree
@@ -352,7 +352,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L22	18	114	H		agree
 05811_p1_L22	19	64	H		agree
 05811_p1_L22	20	136	H		agree
-05811_p1_L23	1	338	M		agree-flagged
+05811_p1_L23	1	338	L		agree-flagged
 05811_p1_L23	2	83	H		agree
 05811_p1_L23	3	33	H		agree
 05811_p1_L23	4	34	H		agree
@@ -401,7 +401,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L25	10	21	H		agree
 05811_p1_L25	11	79	H		agree
 05811_p1_L25	12	82	H		agree
-05811_p1_L25	13	351	M		agree-flagged
+05811_p1_L25	13	351	L		agree-flagged
 05811_p1_L25	14	81	H		agree
 05811_p1_L25	15	31	H		agree
 05811_p1_L25	16	61	H		agree
@@ -412,7 +412,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L26	3	27	H		agree
 05811_p1_L26	4	2	H		agree
 05811_p1_L26	5	83	H		agree
-05811_p1_L26	6	72	M	B:71	differ
+05811_p1_L26	6	72	H	B:71	settled: 300dpi blind read 72 (M, strip L14), A4-RFLVN
 05811_p1_L26	7	84	H		agree
 05811_p1_L26	8	27	H		agree
 05811_p1_L26	9	28	H		agree
@@ -453,7 +453,7 @@ line	position	sign	confidence	alt	why
 05811_p1_L28	9	120	H		agree
 05811_p1_L28	10	82	H		agree
 05811_p1_L28	11	27	H		agree
-05811_p1_L28	12	109	M	B:119	differ
+05811_p1_L28	12	119	H	B:119	settled: 300dpi blind read 119 (M, strip L15), A4-RFLVN
 05811_p1_L28	13	83	H		agree
 05811_p1_L28	14	104	H		agree
 05811_p1_L28	15	83	H		agree
@@ -483,11 +483,11 @@ line	position	sign	confidence	alt	why
 05811_p1_L29	20	27	H		agree
 05811_p1_L30	1	2	H		agree
 05811_p1_L30	2	83	H		agree
-05811_p1_L30	3	24	M	B:28	differ
+05811_p1_L30	3	28	H	B:28	settled: 300dpi blind read 28 (M, strip L16), A4-RFLVN
 05811_p1_L30	4	9	H		agree
 05811_p1_L30	5	2	H		agree
 05811_p1_L30	6	32	H		agree
-05811_p1_L30	7	23	M	B:83	differ
+05811_p1_L30	7	23	H	B:83	settled: 300dpi blind read 23 (M, strip L16), A4-RFLVN
 05811_p1_L30	8	3	M		agree-flagged
 05811_p1_L30	9	77	H		agree
 05811_p1_L30	10	5	M	B:6	differ
@@ -547,7 +547,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L03	8	8	H		agree
 05811_p2_L03	9	30	M	B:70	differ
 05811_p2_L03	10	29	H		agree
-05811_p2_L03	11	83	M	B:85	differ
+05811_p2_L03	11	83	H	B:85	settled: 300dpi blind read 83 (M, strip L02), A4-RFLVN
 05811_p2_L03	12	26	H		agree
 05811_p2_L03	13	31	H		agree
 05811_p2_L03	14	82	H		agree
@@ -611,9 +611,9 @@ line	position	sign	confidence	alt	why
 05811_p2_L06	17	81	H		agree
 05811_p2_L06	18	22	H		agree
 05811_p2_L06	19	124	H		agree
-05811_p2_L07	1	26	M	B:28	differ
+05811_p2_L07	1	28	H	B:28	settled: 300dpi blind read 28 (M, strip L04), A4-RFLVN
 05811_p2_L07	2	62	H		agree
-05811_p2_L07	3	1	M	B:2	differ
+05811_p2_L07	3	2	H	B:2	settled: 300dpi blind read 2 (H, strip L04), A4-RFLVN
 05811_p2_L07	4	27	H		agree
 05811_p2_L07	5	74	H		agree
 05811_p2_L07	6	6	H		agree
@@ -634,7 +634,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L08	4	2	H		agree
 05811_p2_L08	5	76	H		agree
 05811_p2_L08	6	79	M	B:78	differ
-05811_p2_L08	7	61	M	B:62	differ
+05811_p2_L08	7	62	H	B:62	settled: 300dpi blind read 62 (M, strip L04), A4-RFLVN
 05811_p2_L08	8	1	M		agree-flagged
 05811_p2_L08	9	94	H		agree
 05811_p2_L08	10	105	H		agree
@@ -646,7 +646,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L08	16	27	H		agree
 05811_p2_L08	17	81	H		agree
 05811_p2_L08	18	22	H		agree
-05811_p2_L08	19	6	M		agree-flagged
+05811_p2_L08	19	6	L		agree-flagged
 05811_p2_L09	1	78	H		agree
 05811_p2_L09	2	8	H		agree
 05811_p2_L09	3	117	M		agree-flagged
@@ -662,7 +662,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L09	13	85	H		agree
 05811_p2_L09	14	37	H		agree
 05811_p2_L09	15	112	H		agree
-05811_p2_L09	16	18	M		agree-flagged
+05811_p2_L09	16	18	L		agree-flagged
 05811_p2_L09	17	82	H		agree
 05811_p2_L09	18	31	H		agree
 05811_p2_L10	1	3	M		agree-flagged
@@ -672,7 +672,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L10	5	37	H		agree
 05811_p2_L10	6	101	H		agree
 05811_p2_L10	7	81	H		agree
-05811_p2_L10	8	11	M	B:1	differ
+05811_p2_L10	8	1	H	B:1	settled: 300dpi blind read 1 (M, strip L05), A4-RFLVN
 05811_p2_L10	9	77	H		agree
 05811_p2_L10	10	21	H		agree
 05811_p2_L10	11	6	H		agree
@@ -692,7 +692,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L11	7	12	M		agree-flagged
 05811_p2_L11	8	1	M		agree-flagged
 05811_p2_L11	9	8	H		agree
-05811_p2_L11	10	12	M	B:22	differ
+05811_p2_L11	10	22	H	B:22	settled: 300dpi blind read 22 (H, strip L06), A4-RFLVN
 05811_p2_L11	11	105	H		agree
 05811_p2_L11	12	113	H		agree
 05811_p2_L11	13	114	H		agree
@@ -707,7 +707,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L12	3	120	H		agree
 05811_p2_L12	4	82	H		agree
 05811_p2_L12	5	72	H		agree
-05811_p2_L12	6	37	M	B:33	differ
+05811_p2_L12	6	33	H	B:33	settled: 300dpi blind read 33 (M, strip L06), A4-RFLVN
 05811_p2_L12	7	22	H		agree
 05811_p2_L12	8	81	H		agree
 05811_p2_L12	9	62	H		agree
@@ -727,8 +727,8 @@ line	position	sign	confidence	alt	why
 05811_p2_L13	6	22	H		agree
 05811_p2_L13	7	78	H		agree
 05811_p2_L13	8	37	H		agree
-05811_p2_L13	9	1	M		agree-flagged
-05811_p2_L13	10	114	M	B:119	differ
+05811_p2_L13	9	1	L		agree-flagged
+05811_p2_L13	10	119	H	B:119	settled: 300dpi blind read 119 (M, strip L07), A4-RFLVN
 05811_p2_L13	11	101	H		agree
 05811_p2_L13	12	81	H		agree
 05811_p2_L13	13	37	H		agree
@@ -757,123 +757,102 @@ line	position	sign	confidence	alt	why
 05811_p2_L24	5	viij	H		agree
 05811_p2_L24	6	=Apuril	M	B:=d'Apvril	differ
 05811_p2_L24	7	1574	H		agree
-05811_p2_L26	1	16	M	B:-	gap
-05811_p2_L26	2	37	M	B:-	gap
-05811_p2_L26	3	61	M	B:-	gap
-05811_p2_L26	4	2	M	B:-	gap
-05811_p2_L26	5	32	M	B:-	gap
-05811_p2_L26	6	63	M	B:-	gap
-05811_p2_L26	7	81	M	B:-	gap
-05811_p2_L26	8	51	M	B:-	gap
-05811_p2_L26	9	3	M	B:-	gap
-05811_p2_L26	10	76	M	B:-	gap
-05811_p2_L26	11	100	M	B:-	gap
-05811_p2_L26	12	6	M	B:-	gap
-05811_p2_L26	13	38	M	B:-	gap
-05811_p2_L26	14	84	M	B:-	gap
-05811_p2_L26	15	4	M	B:-	gap
-05811_p2_L27	1		M	B:16	differ
-05811_p2_L27	2	2	M	B:37	differ
-05811_p2_L27	3	83	M	B:61	differ
+05811_p2_L26	1	16	H		agree
+05811_p2_L26	2	37	H		agree
+05811_p2_L26	3	61	H		agree
+05811_p2_L26	4	2	H		agree
+05811_p2_L26	5	32	H		agree
+05811_p2_L26	6	63	H		agree
+05811_p2_L26	7	81	H		agree
+05811_p2_L26	8	51	M		agree-flagged
+05811_p2_L26	9	3	H		agree
+05811_p2_L26	10	76	H		agree
+05811_p2_L26	11	100	H		agree
+05811_p2_L26	12	6	H		agree
+05811_p2_L26	13	38	H		agree
+05811_p2_L26	14	84	H		agree
+05811_p2_L26	15	4	M		agree-flagged
+05811_p2_L27	1		L		agree-flagged
+05811_p2_L27	2	2	M		agree-flagged
+05811_p2_L27	3	83	H		agree
 05811_p2_L27	4	2	H		agree
-05811_p2_L27	5	84	M	B:32	differ
-05811_p2_L27	6	87	M	B:63	differ
-05811_p2_L27	7	64	M	B:81	differ
-05811_p2_L27	8	34	M	B:51	differ
-05811_p2_L27	9	113	M	B:3	differ
-05811_p2_L27	10	77	M	B:76	differ
-05811_p2_L27	11	21	M	B:100	differ
+05811_p2_L27	5	84	H		agree
+05811_p2_L27	6	87	H		agree
+05811_p2_L27	7	64	H		agree
+05811_p2_L27	8	34	M	B:39	differ
+05811_p2_L27	9	113	H		agree
+05811_p2_L27	10	77	H		agree
+05811_p2_L27	11	21	H		agree
 05811_p2_L27	12	6	H		agree
-05811_p2_L27	13	38	M	A:-	gap
-05811_p2_L27	14	84	H		agree
-05811_p2_L27	15	76	M	B:-	gap
-05811_p2_L27	16	85	M	B:4	differ
-05811_p2_L28	1		M		agree-flagged
-05811_p2_L28	2	65	M	B:2	differ
-05811_p2_L28	3	115	M	B:83	differ
-05811_p2_L28	4	114	M	B:2	differ
+05811_p2_L27	13	84	H		agree
+05811_p2_L27	14	76	H		agree
+05811_p2_L27	15	85	H		agree
+05811_p2_L28	1		L		agree-flagged
+05811_p2_L28	2	65	M		agree-flagged
+05811_p2_L28	3	115	H		agree
+05811_p2_L28	4	114	H		agree
 05811_p2_L28	5	84	H		agree
-05811_p2_L28	6	87	M	A:-	gap
-05811_p2_L28	7	64	M	A:-	gap
-05811_p2_L28	8	39	M	A:-	gap
-05811_p2_L28	9	113	M	A:-	gap
-05811_p2_L28	10	77	M	A:-	gap
-05811_p2_L28	11	21	H		agree
-05811_p2_L28	12	72	M	B:-	gap
-05811_p2_L28	13	8	M	B:6	differ
-05811_p2_L28	14	116	M	B:84	differ
-05811_p2_L28	15	118	M	B:76	differ
-05811_p2_L28	16	82	M	B:85	differ
-05811_p2_L29	1		M		agree-flagged
-05811_p2_L29	2	37	M	B:-	gap
-05811_p2_L29	3	27	M	B:-	gap
-05811_p2_L29	4	28	M	B:65	differ
-05811_p2_L29	5	51	M	B:115	differ
-05811_p2_L29	6	104	M	B:114	differ
-05811_p2_L29	7	81	M	B:84	differ
-05811_p2_L29	8	85	M	B:21	differ
-05811_p2_L29	9	82	M	B:72	differ
-05811_p2_L29	10	22	M	B:8	differ
-05811_p2_L29	11	6	M	B:116	differ
-05811_p2_L29	12	105	M	B:118	differ
-05811_p2_L29	13	27	M	B:82	differ
-05811_p2_L30	1		M		agree-flagged
-05811_p2_L30	2	6	M	B:37	differ
+05811_p2_L28	6	21	H		agree
+05811_p2_L28	7	72	H		agree
+05811_p2_L28	8	8	H		agree
+05811_p2_L28	9	116	M		agree-flagged
+05811_p2_L28	10	118	H		agree
+05811_p2_L28	11	82	H		agree
+05811_p2_L29	1		L		agree-flagged
+05811_p2_L29	2	37	H		agree
+05811_p2_L29	3	27	H		agree
+05811_p2_L29	4	28	H		agree
+05811_p2_L29	5	51	M		agree-flagged
+05811_p2_L29	6	104	H		agree
+05811_p2_L29	7	81	H		agree
+05811_p2_L29	8	85	H		agree
+05811_p2_L29	9	82	H		agree
+05811_p2_L29	10	22	H		agree
+05811_p2_L29	11	6	H		agree
+05811_p2_L29	12	105	H		agree
+05811_p2_L29	13	27	H		agree
+05811_p2_L30	1		L		agree-flagged
+05811_p2_L30	2	6	M		agree-flagged
 05811_p2_L30	3	27	H		agree
-05811_p2_L30	4	82	M	B:-	gap
-05811_p2_L30	5	12	M	B:28	differ
-05811_p2_L30	6	113	M	B:51	differ
-05811_p2_L30	7	37	M	B:104	differ
-05811_p2_L30	8	26	M	B:81	differ
-05811_p2_L30	9	92	M	B:85	differ
-05811_p2_L30	10	23	M	B:82	differ
-05811_p2_L30	11	61	M	B:22	differ
-05811_p2_L30	12	2	M	B:6	differ
-05811_p2_L30	13	77	M	B:105	differ
-05811_p2_L30	14	81	M	B:27	differ
-05811_p2_L31	1		M		agree-flagged
-05811_p2_L31	2	101	M	B:6	differ
+05811_p2_L30	4	82	H		agree
+05811_p2_L30	5	12	H		agree
+05811_p2_L30	6	113	H		agree
+05811_p2_L30	7	37	H		agree
+05811_p2_L30	8	26	H		agree
+05811_p2_L30	9	92	H		agree
+05811_p2_L30	10	23	H		agree
+05811_p2_L30	11	61	H		agree
+05811_p2_L30	12	2	H		agree
+05811_p2_L30	13	77	H		agree
+05811_p2_L30	14	81	H		agree
+05811_p2_L31	1		L		agree-flagged
+05811_p2_L31	2	101	M		agree-flagged
 05811_p2_L31	3	27	H		agree
-05811_p2_L31	4	2	M	B:-	gap
-05811_p2_L31	5	8	M	B:82	differ
-05811_p2_L31	6	58	M	B:12	differ
-05811_p2_L31	7	87	M	B:113	differ
-05811_p2_L31	8	7	M	B:37	differ
-05811_p2_L31	9	28	M	B:26	differ
-05811_p2_L31	10	71	M	B:92	differ
-05811_p2_L31	11	82	M	B:23	differ
-05811_p2_L31	12	27	M	B:61	differ
+05811_p2_L31	4	2	H		agree
+05811_p2_L31	5	8	H		agree
+05811_p2_L31	6	58	H		agree
+05811_p2_L31	7	87	H		agree
+05811_p2_L31	8	7	H		agree
+05811_p2_L31	9	28	H		agree
+05811_p2_L31	10	71	H		agree
+05811_p2_L31	11	82	H		agree
+05811_p2_L31	12	27	H		agree
 05811_p2_L31	13	2	H		agree
-05811_p2_L31	14	77	M	A:-	gap
-05811_p2_L31	15	82	M	B:81	differ
-05811_p2_L32	1		M		agree-flagged
-05811_p2_L32	2	101	M	A:-	gap
-05811_p2_L32	3	27	M	A:-	gap
-05811_p2_L32	4	31	M	B:2	differ
-05811_p2_L32	5	62	M	B:8	differ
-05811_p2_L32	6	28	M	B:58	differ
-05811_p2_L32	7	27	M	B:87	differ
-05811_p2_L32	8	81	M	B:7	differ
-05811_p2_L32	9	59	M	B:28	differ
-05811_p2_L32	10	66	M	B:71	differ
-05811_p2_L32	11	61	M	B:82	differ
-05811_p2_L32	12	27	H		agree
-05811_p2_L32	13	2	M	A:-	gap
-05811_p2_L32	14	82	M	A:-	gap
-05811_p2_L33	1		M		agree-flagged
-05811_p2_L33	2	31	M	A:-	gap
-05811_p2_L33	3	62	M	A:-	gap
-05811_p2_L33	4	28	M	A:-	gap
-05811_p2_L33	5	73	M	B:27	differ
-05811_p2_L33	6	81	H		agree
-05811_p2_L33	7	59	M	A:-	gap
-05811_p2_L33	8	66	M	A:-	gap
-05811_p2_L33	9	61	M	A:-	gap
-05811_p2_L33	10	27	H		agree
-05811_p2_L34	1		M	A:-	gap
-05811_p2_L34	2	73	M	A:-	gap
-05811_p2_L34	3	81	M	A:-	gap
-05811_p2_L34	4	27	M	A:-	gap
+05811_p2_L31	14	82	H		agree
+05811_p2_L32	1		L		agree-flagged
+05811_p2_L32	2	31	M		agree-flagged
+05811_p2_L32	3	62	H		agree
+05811_p2_L32	4	28	H		agree
+05811_p2_L32	5	27	H		agree
+05811_p2_L32	6	81	H		agree
+05811_p2_L32	7	59	M		agree-flagged
+05811_p2_L32	8	66	H		agree
+05811_p2_L32	9	61	H		agree
+05811_p2_L32	10	27	H		agree
+05811_p2_L33	1		L		agree-flagged
+05811_p2_L33	2	73	M		agree-flagged
+05811_p2_L33	3	81	H		agree
+05811_p2_L33	4	27	H		agree
 05811_p5_L03	1	=ce	M	B:-	gap
 05811_p5_L03	2	=ce	M	B:-	gap
 05811_p5_L03	3	=jourdhuy	M	B:-	gap
@@ -952,7 +931,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L06	21	82	H	B:80	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L06	22	2	M		agree-flagged
 05811_p5_L07	1	88	M		agree-flagged
-05811_p5_L07	2	85	M	B:87	differ
+05811_p5_L07	2	87	H	B:87	settled: 300dpi blind read 87 (M, strip L04), A4-RFLVN
 05811_p5_L07	3	84	M		agree-flagged
 05811_p5_L07	4	91	M		agree-flagged
 05811_p5_L07	5	32	M		agree-flagged
@@ -960,7 +939,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L07	7	23	M		agree-flagged
 05811_p5_L07	8	83	M		agree-flagged
 05811_p5_L07	9	2	M		agree-flagged
-05811_p5_L07	10	90	M	B:50	differ
+05811_p5_L07	10	90	H	B:50	settled: 300dpi blind read 90 (M, strip L04), A4-RFLVN
 05811_p5_L07	11	24	M		agree-flagged
 05811_p5_L07	12	85	M		agree-flagged
 05811_p5_L07	13	30	M		agree-flagged
@@ -1034,7 +1013,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L11	1	81	M		agree-flagged
 05811_p5_L11	2	102	M		agree-flagged
 05811_p5_L11	3	3	M		agree-flagged
-05811_p5_L11	4	91	M	B:81	differ
+05811_p5_L11	4	91	H	B:81	settled: 300dpi blind read 91 (M, strip L06), A4-RFLVN
 05811_p5_L11	5	8	M	B:6	differ
 05811_p5_L11	6	2	M		agree-flagged
 05811_p5_L11	7	31	M		agree-flagged
@@ -1059,7 +1038,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L12	3	38	M		agree-flagged
 05811_p5_L12	4	1	M		agree-flagged
 05811_p5_L12	5	89	M	B:80	differ
-05811_p5_L12	6	90	M	B:50	differ
+05811_p5_L12	6	90	H	B:50	settled: 300dpi blind read 90 (M, strip L06), A4-RFLVN
 05811_p5_L12	7	9	M		agree-flagged
 05811_p5_L12	8	1	M		agree-flagged
 05811_p5_L12	9	4	M		agree-flagged
@@ -1140,7 +1119,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L15	15	72	M		agree-flagged
 05811_p5_L15	16	81	M		agree-flagged
 05811_p5_L15	17	29	M		agree-flagged
-05811_p5_L15	18	18	M	B:15	differ
+05811_p5_L15	18	18	H	B:15	settled: 300dpi blind read 18 (M, strip L07), A4-RFLVN
 05811_p5_L15	19	37	M		agree-flagged
 05811_p5_L15	20	82	M	B:85	differ
 05811_p5_L15	21	21	M		agree-flagged
@@ -1153,7 +1132,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L16	6	38	M		agree-flagged
 05811_p5_L16	7	8	M	A:-	gap
 05811_p5_L16	8	39	H	B:39	settled: structural: 839 is not a valid key.tsv code
-05811_p5_L16	9	29	M	B:27	differ
+05811_p5_L16	9	27	H	B:27	settled: 300dpi blind read 27 (M, strip L07), A4-RFLVN
 05811_p5_L16	10	24	M		agree-flagged
 05811_p5_L16	11	84	M		agree-flagged
 05811_p5_L16	12	90	M		agree-flagged
@@ -1161,7 +1140,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L16	14	11	M		agree-flagged
 05811_p5_L16	15	37	M		agree-flagged
 05811_p5_L16	16	9	M	B:5	differ
-05811_p5_L16	17	109	M	B:108	differ
+05811_p5_L16	17	109	H	B:108	settled: 300dpi blind read 109 (M, strip L07), A4-RFLVN
 05811_p5_L16	18	24	M		agree-flagged
 05811_p5_L16	19	9	M		agree-flagged
 05811_p5_L16	20	104	M		agree-flagged
@@ -1169,7 +1148,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L16	22	81	M		agree-flagged
 05811_p5_L17	1	18	M		agree-flagged
 05811_p5_L17	2	37	M		agree-flagged
-05811_p5_L17	3	89	M	B:85	differ
+05811_p5_L17	3	85	H	B:85	settled: 300dpi blind read 85 (M, strip L08), A4-RFLVN
 05811_p5_L17	4	100	M		agree-flagged
 05811_p5_L17	5	82	M		agree-flagged
 05811_p5_L17	6	122	M		agree-flagged
@@ -1184,7 +1163,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L17	15	81	M		agree-flagged
 05811_p5_L17	16	113	M		agree-flagged
 05811_p5_L17	17	84	M		agree-flagged
-05811_p5_L17	18	311	M		agree-flagged
+05811_p5_L17	18	311	L		agree-flagged
 05811_p5_L17	19	131	M		agree-flagged
 05811_p5_L17	20	92	M		agree-flagged
 05811_p5_L17	21	83	M		agree-flagged
@@ -1200,14 +1179,14 @@ line	position	sign	confidence	alt	why
 05811_p5_L18	9	81	M		agree-flagged
 05811_p5_L18	10	29	M		agree-flagged
 05811_p5_L18	11	31	M		agree-flagged
-05811_p5_L18	12	22	M	B:23	differ
+05811_p5_L18	12	23	H	B:23	settled: 300dpi blind read 23 (H, strip L08), A4-RFLVN
 05811_p5_L18	13	8	M		agree-flagged
 05811_p5_L18	14	104	M		agree-flagged
 05811_p5_L18	15	92	M		agree-flagged
 05811_p5_L18	16	32	M		agree-flagged
 05811_p5_L18	17	11	M		agree-flagged
 05811_p5_L18	18	8	M		agree-flagged
-05811_p5_L18	19	28	M	B:38	differ
+05811_p5_L18	19	38	H	B:38	settled: 300dpi blind read 38 (M, strip L08), A4-RFLVN
 05811_p5_L18	20	21	M		agree-flagged
 05811_p5_L18	21	114	M		agree-flagged
 05811_p5_L18	22	94	M		agree-flagged
@@ -1243,14 +1222,14 @@ line	position	sign	confidence	alt	why
 05811_p5_L20	5	22	M		agree-flagged
 05811_p5_L20	6	82	M		agree-flagged
 05811_p5_L20	7	90	M		agree-flagged
-05811_p5_L20	8	89	M	B:85	differ
+05811_p5_L20	8	85	H	B:85	settled: 300dpi blind read 85 (M, strip L09), A4-RFLVN
 05811_p5_L20	9	37	M		agree-flagged
 05811_p5_L20	10	8	M		agree-flagged
 05811_p5_L20	11	38	M		agree-flagged
 05811_p5_L20	12	27	M		agree-flagged
 05811_p5_L20	13	62	M		agree-flagged
 05811_p5_L20	14	92	M		agree-flagged
-05811_p5_L20	15	93	M	B:53	differ
+05811_p5_L20	15	93	H	B:53	settled: 300dpi blind read 93 (M, strip L09), A4-RFLVN
 05811_p5_L20	16	8	M		agree-flagged
 05811_p5_L20	17	118	M		agree-flagged
 05811_p5_L20	18	115	M		agree-flagged
@@ -1259,8 +1238,8 @@ line	position	sign	confidence	alt	why
 05811_p5_L20	21	82	M		agree-flagged
 05811_p5_L20	22	21	M		agree-flagged
 05811_p5_L20	23	90	M		agree-flagged
-05811_p5_L20	24	8	M	B:85	differ
-05811_p5_L21	1	351	M		agree-flagged
+05811_p5_L20	24	8	H	B:85	settled: 300dpi blind read 8 (M, strip L09), A4-RFLVN
+05811_p5_L21	1	351	L		agree-flagged
 05811_p5_L21	2	81	M		agree-flagged
 05811_p5_L21	3	31	M		agree-flagged
 05811_p5_L21	4	92	M	B:82	differ
@@ -1298,7 +1277,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L22	15	92	H	B:02	settled: structural: 02 is not a valid key.tsv code
 05811_p5_L22	16	39	M		agree-flagged
 05811_p5_L22	17	28	M		agree-flagged
-05811_p5_L22	18	28	M	B:26	differ
+05811_p5_L22	18	26	H	B:26	settled: 300dpi blind read 26 (M, strip L10), A4-RFLVN
 05811_p5_L22	19	92	M		agree-flagged
 05811_p5_L22	20	90	M	B:76	differ
 05811_p5_L23	1	93	M	B:83	differ
@@ -1345,7 +1324,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L25	1	32	M		agree-flagged
 05811_p5_L25	2	83	M		agree-flagged
 05811_p5_L25	3	3	M		agree-flagged
-05811_p5_L25	4	93	M	B:92	differ
+05811_p5_L25	4	93	H	B:92	settled: 300dpi blind read 93 (M, strip L11), A4-RFLVN
 05811_p5_L25	5	8	M		agree-flagged
 05811_p5_L25	6	102	M		agree-flagged
 05811_p5_L25	7	23	M		agree-flagged
@@ -1443,10 +1422,10 @@ line	position	sign	confidence	alt	why
 05811_p5_L29	13	28	M		agree-flagged
 05811_p5_L29	14	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L29	15	102	M		agree-flagged
-05811_p5_L29	16	38	M		agree-flagged
-05811_p5_L29	17	32	M		agree-flagged
-05811_p5_L29	18	81	M		agree-flagged
-05811_p5_L29	19	22	M		agree-flagged
+05811_p5_L29	16	38	L		agree-flagged
+05811_p5_L29	17	32	L		agree-flagged
+05811_p5_L29	18	81	L		agree-flagged
+05811_p5_L29	19	22	L		agree-flagged
 05811_p5_L29	20	38	M		agree-flagged
 05811_p5_L29	21	21	M		agree-flagged
 05811_p5_L30	1	109	M	B:100	differ
@@ -1471,7 +1450,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L30	20	22	M		agree-flagged
 05811_p5_L30	21	124	M		agree-flagged
 05811_p5_L30	22	28	M		agree-flagged
-05811_p5_L30	23	92	M	B:82	differ
+05811_p5_L30	23	82	H	B:82	settled: 300dpi blind read 82 (M, strip L14), A4-RFLVN
 05811_p5_L30	24	2	M		agree-flagged
 05811_p5_L31	1	94	M		agree-flagged
 05811_p5_L31	2	8	M		agree-flagged
@@ -1488,7 +1467,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L31	13	81	M		agree-flagged
 05811_p5_L31	14	93	M		agree-flagged
 05811_p5_L31	15	21	M		agree-flagged
-05811_p5_L31	16	91	M	B:81	differ
+05811_p5_L31	16	81	H	B:81	settled: 300dpi blind read 81 (M, strip L14), A4-RFLVN
 05811_p5_L31	17	2	M		agree-flagged
 05811_p5_L31	18	90	M		agree-flagged
 05811_p5_L31	19	99	M		agree-flagged
@@ -1511,7 +1490,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L32	13	8	M		agree-flagged
 05811_p5_L32	14	117	H	B:119	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L32	15	118	M		agree-flagged
-05811_p5_L32	16	91	M	B:81	differ
+05811_p5_L32	16	81	H	B:81	settled: 300dpi blind read 81 (M, strip L14), A4-RFLVN
 05811_p5_L32	17	104	M		agree-flagged
 05811_p5_L32	18	94	M		agree-flagged
 05811_p5_L32	19	81	M		agree-flagged
@@ -1539,9 +1518,9 @@ line	position	sign	confidence	alt	why
 05811_p5_L33	17	102	M		agree-flagged
 05811_p5_L33	18	31	M		agree-flagged
 05811_p5_L33	19	118	M		agree-flagged
-05811_p5_L33	20	92	M	B:82	differ
+05811_p5_L33	20	82	H	B:82	settled: 300dpi blind read 82 (M, strip L15), A4-RFLVN
 05811_p5_L33	21	112	M		agree-flagged
-05811_p5_L33	22	92	M	B:82	differ
+05811_p5_L33	22	82	H	B:82	settled: 300dpi blind read 82 (M, strip L15), A4-RFLVN
 05811_p5_L33	23	12	H	B:19	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L34	1	21	M		agree-flagged
 05811_p5_L34	2	8	M		agree-flagged
@@ -1556,7 +1535,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L34	11	114	M		agree-flagged
 05811_p5_L34	12	81	M		agree-flagged
 05811_p5_L34	13	89	M		agree-flagged
-05811_p5_L34	14	92	M	B:82	differ
+05811_p5_L34	14	82	H	B:82	settled: 300dpi blind read 82 (M, strip L15), A4-RFLVN
 05811_p5_L34	15	37	H	B:39	settled: matches p1+p2 parallel-copy alignment
 05811_p5_L34	16	113	M		agree-flagged
 05811_p5_L34	17	31	M		agree-flagged
@@ -1567,7 +1546,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L35	1	33	M		agree-flagged
 05811_p5_L35	2	22	M		agree-flagged
 05811_p5_L35	3	81	M		agree-flagged
-05811_p5_L35	4	92	M	B:82	differ
+05811_p5_L35	4	82	H	B:82	settled: 300dpi blind read 82 (M, strip L15), A4-RFLVN
 05811_p5_L35	5	90	M		agree-flagged
 05811_p5_L35	6	109	M		agree-flagged
 05811_p5_L35	7	81	M		agree-flagged
@@ -1577,7 +1556,7 @@ line	position	sign	confidence	alt	why
 05811_p5_L35	11	28	M		agree-flagged
 05811_p5_L35	12	6	M		agree-flagged
 05811_p5_L35	13	91	M		agree-flagged
-05811_p5_L35	14	91	M	B:81	differ
+05811_p5_L35	14	81	H	B:81	settled: 300dpi blind read 81 (M, strip L15), A4-RFLVN
 05811_p5_L35	15	109	M		agree-flagged
 05811_p5_L35	16	98	M		agree-flagged
 05811_p5_L35	17	81	M		agree-flagged

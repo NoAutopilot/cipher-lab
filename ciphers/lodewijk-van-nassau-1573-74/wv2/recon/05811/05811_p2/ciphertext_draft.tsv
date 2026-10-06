@@ -145,7 +145,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L08	16	27	H		agree
 05811_p2_L08	17	81	H		agree
 05811_p2_L08	18	22	H		agree
-05811_p2_L08	19	6	M		agree-flagged
+05811_p2_L08	19	6	L		agree-flagged
 05811_p2_L09	1	78	H		agree
 05811_p2_L09	2	8	H		agree
 05811_p2_L09	3	117	M		agree-flagged
@@ -161,7 +161,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L09	13	85	H		agree
 05811_p2_L09	14	37	H		agree
 05811_p2_L09	15	112	H		agree
-05811_p2_L09	16	18	M		agree-flagged
+05811_p2_L09	16	18	L		agree-flagged
 05811_p2_L09	17	82	H		agree
 05811_p2_L09	18	31	H		agree
 05811_p2_L10	1	3	M		agree-flagged
@@ -226,7 +226,7 @@ line	position	sign	confidence	alt	why
 05811_p2_L13	6	22	H		agree
 05811_p2_L13	7	78	H		agree
 05811_p2_L13	8	37	H		agree
-05811_p2_L13	9	1	M		agree-flagged
+05811_p2_L13	9	1	L		agree-flagged
 05811_p2_L13	10	114	M	B:119	differ
 05811_p2_L13	11	101	H		agree
 05811_p2_L13	12	81	H		agree
@@ -256,120 +256,99 @@ line	position	sign	confidence	alt	why
 05811_p2_L24	5	viij	H		agree
 05811_p2_L24	6	=Apuril	M	B:=d'Apvril	differ
 05811_p2_L24	7	1574	H		agree
-05811_p2_L26	1	16	M	B:-	gap
-05811_p2_L26	2	37	M	B:-	gap
-05811_p2_L26	3	61	M	B:-	gap
-05811_p2_L26	4	2	M	B:-	gap
-05811_p2_L26	5	32	M	B:-	gap
-05811_p2_L26	6	63	M	B:-	gap
-05811_p2_L26	7	81	M	B:-	gap
-05811_p2_L26	8	51	M	B:-	gap
-05811_p2_L26	9	3	M	B:-	gap
-05811_p2_L26	10	76	M	B:-	gap
-05811_p2_L26	11	100	M	B:-	gap
-05811_p2_L26	12	6	M	B:-	gap
-05811_p2_L26	13	38	M	B:-	gap
-05811_p2_L26	14	84	M	B:-	gap
-05811_p2_L26	15	4	M	B:-	gap
-05811_p2_L27	1		M	B:16	differ
-05811_p2_L27	2	2	M	B:37	differ
-05811_p2_L27	3	83	M	B:61	differ
+05811_p2_L26	1	16	H		agree
+05811_p2_L26	2	37	H		agree
+05811_p2_L26	3	61	H		agree
+05811_p2_L26	4	2	H		agree
+05811_p2_L26	5	32	H		agree
+05811_p2_L26	6	63	H		agree
+05811_p2_L26	7	81	H		agree
+05811_p2_L26	8	51	M		agree-flagged
+05811_p2_L26	9	3	H		agree
+05811_p2_L26	10	76	H		agree
+05811_p2_L26	11	100	H		agree
+05811_p2_L26	12	6	H		agree
+05811_p2_L26	13	38	H		agree
+05811_p2_L26	14	84	H		agree
+05811_p2_L26	15	4	M		agree-flagged
+05811_p2_L27	1		L		agree-flagged
+05811_p2_L27	2	2	M		agree-flagged
+05811_p2_L27	3	83	H		agree
 05811_p2_L27	4	2	H		agree
-05811_p2_L27	5	84	M	B:32	differ
-05811_p2_L27	6	87	M	B:63	differ
-05811_p2_L27	7	64	M	B:81	differ
-05811_p2_L27	8	34	M	B:51	differ
-05811_p2_L27	9	113	M	B:3	differ
-05811_p2_L27	10	77	M	B:76	differ
-05811_p2_L27	11	21	M	B:100	differ
+05811_p2_L27	5	84	H		agree
+05811_p2_L27	6	87	H		agree
+05811_p2_L27	7	64	H		agree
+05811_p2_L27	8	34	M	B:39	differ
+05811_p2_L27	9	113	H		agree
+05811_p2_L27	10	77	H		agree
+05811_p2_L27	11	21	H		agree
 05811_p2_L27	12	6	H		agree
-05811_p2_L27	13	38	M	A:-	gap
-05811_p2_L27	14	84	H		agree
-05811_p2_L27	15	76	M	B:-	gap
-05811_p2_L27	16	85	M	B:4	differ
-05811_p2_L28	1		M		agree-flagged
-05811_p2_L28	2	65	M	B:2	differ
-05811_p2_L28	3	115	M	B:83	differ
-05811_p2_L28	4	114	M	B:2	differ
+05811_p2_L27	13	84	H		agree
+05811_p2_L27	14	76	H		agree
+05811_p2_L27	15	85	H		agree
+05811_p2_L28	1		L		agree-flagged
+05811_p2_L28	2	65	M		agree-flagged
+05811_p2_L28	3	115	H		agree
+05811_p2_L28	4	114	H		agree
 05811_p2_L28	5	84	H		agree
-05811_p2_L28	6	87	M	A:-	gap
-05811_p2_L28	7	64	M	A:-	gap
-05811_p2_L28	8	39	M	A:-	gap
-05811_p2_L28	9	113	M	A:-	gap
-05811_p2_L28	10	77	M	A:-	gap
-05811_p2_L28	11	21	H		agree
-05811_p2_L28	12	72	M	B:-	gap
-05811_p2_L28	13	8	M	B:6	differ
-05811_p2_L28	14	116	M	B:84	differ
-05811_p2_L28	15	118	M	B:76	differ
-05811_p2_L28	16	82	M	B:85	differ
-05811_p2_L29	1		M		agree-flagged
-05811_p2_L29	2	37	M	B:-	gap
-05811_p2_L29	3	27	M	B:-	gap
-05811_p2_L29	4	28	M	B:65	differ
-05811_p2_L29	5	51	M	B:115	differ
-05811_p2_L29	6	104	M	B:114	differ
-05811_p2_L29	7	81	M	B:84	differ
-05811_p2_L29	8	85	M	B:21	differ
-05811_p2_L29	9	82	M	B:72	differ
-05811_p2_L29	10	22	M	B:8	differ
-05811_p2_L29	11	6	M	B:116	differ
-05811_p2_L29	12	105	M	B:118	differ
-05811_p2_L29	13	27	M	B:82	differ
-05811_p2_L30	1		M		agree-flagged
-05811_p2_L30	2	6	M	B:37	differ
+05811_p2_L28	6	21	H		agree
+05811_p2_L28	7	72	H		agree
+05811_p2_L28	8	8	H		agree
+05811_p2_L28	9	116	M		agree-flagged
+05811_p2_L28	10	118	H		agree
+05811_p2_L28	11	82	H		agree
+05811_p2_L29	1		L		agree-flagged
+05811_p2_L29	2	37	H		agree
+05811_p2_L29	3	27	H		agree
+05811_p2_L29	4	28	H		agree
+05811_p2_L29	5	51	M		agree-flagged
+05811_p2_L29	6	104	H		agree
+05811_p2_L29	7	81	H		agree
+05811_p2_L29	8	85	H		agree
+05811_p2_L29	9	82	H		agree
+05811_p2_L29	10	22	H		agree
+05811_p2_L29	11	6	H		agree
+05811_p2_L29	12	105	H		agree
+05811_p2_L29	13	27	H		agree
+05811_p2_L30	1		L		agree-flagged
+05811_p2_L30	2	6	M		agree-flagged
 05811_p2_L30	3	27	H		agree
-05811_p2_L30	4	82	M	B:-	gap
-05811_p2_L30	5	12	M	B:28	differ
-05811_p2_L30	6	113	M	B:51	differ
-05811_p2_L30	7	37	M	B:104	differ
-05811_p2_L30	8	26	M	B:81	differ
-05811_p2_L30	9	92	M	B:85	differ
-05811_p2_L30	10	23	M	B:82	differ
-05811_p2_L30	11	61	M	B:22	differ
-05811_p2_L30	12	2	M	B:6	differ
-05811_p2_L30	13	77	M	B:105	differ
-05811_p2_L30	14	81	M	B:27	differ
-05811_p2_L31	1		M		agree-flagged
-05811_p2_L31	2	101	M	B:6	differ
+05811_p2_L30	4	82	H		agree
+05811_p2_L30	5	12	H		agree
+05811_p2_L30	6	113	H		agree
+05811_p2_L30	7	37	H		agree
+05811_p2_L30	8	26	H		agree
+05811_p2_L30	9	92	H		agree
+05811_p2_L30	10	23	H		agree
+05811_p2_L30	11	61	H		agree
+05811_p2_L30	12	2	H		agree
+05811_p2_L30	13	77	H		agree
+05811_p2_L30	14	81	H		agree
+05811_p2_L31	1		L		agree-flagged
+05811_p2_L31	2	101	M		agree-flagged
 05811_p2_L31	3	27	H		agree
-05811_p2_L31	4	2	M	B:-	gap
-05811_p2_L31	5	8	M	B:82	differ
-05811_p2_L31	6	58	M	B:12	differ
-05811_p2_L31	7	87	M	B:113	differ
-05811_p2_L31	8	7	M	B:37	differ
-05811_p2_L31	9	28	M	B:26	differ
-05811_p2_L31	10	71	M	B:92	differ
-05811_p2_L31	11	82	M	B:23	differ
-05811_p2_L31	12	27	M	B:61	differ
+05811_p2_L31	4	2	H		agree
+05811_p2_L31	5	8	H		agree
+05811_p2_L31	6	58	H		agree
+05811_p2_L31	7	87	H		agree
+05811_p2_L31	8	7	H		agree
+05811_p2_L31	9	28	H		agree
+05811_p2_L31	10	71	H		agree
+05811_p2_L31	11	82	H		agree
+05811_p2_L31	12	27	H		agree
 05811_p2_L31	13	2	H		agree
-05811_p2_L31	14	77	M	A:-	gap
-05811_p2_L31	15	82	M	B:81	differ
-05811_p2_L32	1		M		agree-flagged
-05811_p2_L32	2	101	M	A:-	gap
-05811_p2_L32	3	27	M	A:-	gap
-05811_p2_L32	4	31	M	B:2	differ
-05811_p2_L32	5	62	M	B:8	differ
-05811_p2_L32	6	28	M	B:58	differ
-05811_p2_L32	7	27	M	B:87	differ
-05811_p2_L32	8	81	M	B:7	differ
-05811_p2_L32	9	59	M	B:28	differ
-05811_p2_L32	10	66	M	B:71	differ
-05811_p2_L32	11	61	M	B:82	differ
-05811_p2_L32	12	27	H		agree
-05811_p2_L32	13	2	M	A:-	gap
-05811_p2_L32	14	82	M	A:-	gap
-05811_p2_L33	1		M		agree-flagged
-05811_p2_L33	2	31	M	A:-	gap
-05811_p2_L33	3	62	M	A:-	gap
-05811_p2_L33	4	28	M	A:-	gap
-05811_p2_L33	5	73	M	B:27	differ
-05811_p2_L33	6	81	H		agree
-05811_p2_L33	7	59	M	A:-	gap
-05811_p2_L33	8	66	M	A:-	gap
-05811_p2_L33	9	61	M	A:-	gap
-05811_p2_L33	10	27	H		agree
-05811_p2_L34	1		M	A:-	gap
-05811_p2_L34	2	73	M	A:-	gap
-05811_p2_L34	3	81	M	A:-	gap
-05811_p2_L34	4	27	M	A:-	gap
+05811_p2_L31	14	82	H		agree
+05811_p2_L32	1		L		agree-flagged
+05811_p2_L32	2	31	M		agree-flagged
+05811_p2_L32	3	62	H		agree
+05811_p2_L32	4	28	H		agree
+05811_p2_L32	5	27	H		agree
+05811_p2_L32	6	81	H		agree
+05811_p2_L32	7	59	M		agree-flagged
+05811_p2_L32	8	66	H		agree
+05811_p2_L32	9	61	H		agree
+05811_p2_L32	10	27	H		agree
+05811_p2_L33	1		L		agree-flagged
+05811_p2_L33	2	73	M		agree-flagged
+05811_p2_L33	3	81	H		agree
+05811_p2_L33	4	27	H		agree

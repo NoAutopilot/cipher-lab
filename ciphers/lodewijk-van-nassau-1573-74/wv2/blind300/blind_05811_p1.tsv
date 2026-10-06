@@ -1,0 +1,20 @@
+qid	read	conf	strip	note
+Q001	113	L	L03	small faint, 113 vs 112
+Q002	51	M	L03	
+Q003	20	M	L05	20 vs 28
+Q004	37	M	L05	
+Q005	84	M	L05	context 61 is 62 in image
+Q006	63	M	L07	
+Q007	82	M	L08	dot before 27 faint
+Q008	61	M	L08	glyph 61 then 2
+Q009	2	M	L08	
+Q010	104	H	L08	
+Q011	32	H	L09	context 26 is 25 in image
+Q012	123	H	L10	
+Q013	75	M	L11	75 vs 73
+Q014	104	M	L11	
+Q015	72	M	L14	
+Q016	119	M	L15	
+Q017	28	M	L16	
+Q018	23	M	L16	
+Q019	6	L	L16	small glyph, maybe 6 or 1
