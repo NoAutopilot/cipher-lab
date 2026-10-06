@@ -1,4 +1,4 @@
-# Pre-registration: R8-ZESCH crib test on R5008 (written 6 Oct 2026 04:1x UTC by date -u, before any statistic on R5008)
+# Pre-registration: R8-ZESCH crib test on R5008 (written 6 Oct 2026 04:05 UTC by date -u, before any statistic on R5008)
 
 Same question and statistics as `PREREG-GAPS185.md` / `PREREG-GAPS196.md` (T1 pair-profile cosine to R5005, T2 pin
 coverage, T3 pin-count Spearman), with R5008 (26 Oct 1843, German) as the target. What changes is the order: the
