@@ -286,5 +286,28 @@
    },
    "date": "06 Oct 2026"
   }
+ ],
+ "d1_dec2678l_leaves": [
+  {
+   "file": "mc133_c66_gravel_f443r_1000px.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10032042t/f66/full/1000,/0/native.jpg",
+   "volume": "Mel. Colbert 133 (part 2 of 2 on Gallica)",
+   "leaf": "f.443r (stamp read at 1000 px), Gravel, Ratisbonne 19 Nov 1665, clear",
+   "date": "06 Oct 2026"
+  },
+  {
+   "file": "mc132bis_c394_gravel_f829r_1000px.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10031772c/f394/full/1000,/0/native.jpg",
+   "volume": "Mel. Colbert 132bis",
+   "leaf": "f.829r, Gravel, clear",
+   "date": "06 Oct 2026"
+  },
+  {
+   "file": "mc132bis_c395_gravel_f829v-830r_1000px.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10031772c/f395/full/1000,/0/native.jpg",
+   "volume": "Mel. Colbert 132bis",
+   "leaf": "f.829v-830r, Gravel, Ratisbonne 29 Oct 1665, clear",
+   "date": "06 Oct 2026"
+  }
  ]
 }

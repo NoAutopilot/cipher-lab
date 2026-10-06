@@ -491,10 +491,43 @@ the 1664 volumes only matter if the 1665 cell set matches a 1664 key.
 Requests this job: archivesetmanuscrits.bnf.fr 9 (3 re-fetched known arks, 6 computed arks), 3 s apart, all HTTP 200;
 gallica.bnf.fr 3 (2 manifests via tools/gallica_folio.py, 1 canvas at 1000 px), 2 s apart, all 200. No subagent calls.
 
-## Remaining gaps (R9-DEC2678C, 6 Oct 2026; updated R10-DEC2678S)
+## D1-DEC2678L (6 Oct 2026): the 1665 Gravel leaves of Mél. Colbert 131-133 looked at
+
+Look-only job, no decoding; no cipher token of R2678 read (0 H, 0 C, 0 S, 0 M, 0 I). Gallica arks found by SRU (`dc.title all
+"Correspondance de Colbert" and dc.title all "1665"`): 131 = btv1b10031083k (ff.1-599), 131bis = btv1b10031110q (ff.600-1209),
+132 = btv1b100313845 (ff.1-443), 132bis = btv1b10031772c (ff.442-903), 133 = btv1b100319205 + btv1b10032042t (754 ff. in two
+parts). All manifests label every canvas 'NP'; one canvas per opening; each leaf was placed by reading the folio stamp at 1000 px
+(or a stamp crop). Each opening viewed whole at 1000 px for figure groups.
+
+| Sommaire entry | Ark, canvas(es) | What the leaf is | Figure groups |
+|---|---|---|---|
+| 131 f.263 | btv1b10031083k c268-270 (c268 right = f.262, c269 right = f.263 by stamp crop, c270 right = f.264) | **not Gravel**: f.262-263 is Paul Barrillon's letter, signed "Barrillon", "ce 8 aoust 1665 a Paris", docketed "M. de Barillon 8 aoust 1665"; f.264 is H. de Chamilly. The sommaire's "Fol. 263 R. de Gravel" does not match this leaf; Gravel's early-August letter not located | none |
+| 131bis f.808 | btv1b10031110q c211-213 (f.808r, 809r) | letter in clear about "Madame de Grave[l]"'s audience and a charge, signed (R. Gravel?, M), "le dernier jour d'aoust 1665", no place; docket "M. de Grave[l] dernier aoust 1665" | none |
+| 131bis f.890 | c295-296 (f.890r-v, 891r blank) | Gravel, "Ratisbonne le 3e Septembre 1665", signed R. Gravel: the Marteleurs/Blanchisseurs, "Bourquerode", his own appointments for 1665 | none |
+| 132bis f.630 | btv1b10031772c c193-194 (f.630r-631r) | Gravel, "Ratisbonne le 22 octobre 1665": Marteleurs/Blanchisseurs, the Baron de Borquerode, the Bailli's German letter (copy enclosed) | none |
+| 132bis f.829 | c394-395 (f.829r-v, 830r blank) | Gravel, "Ratisbonne le 29 octobre 1665": a bill of exchange paid on to the Frankfurt bankers for "Mons[ieu]r l'Electeur" (of Mainz, "Mayance" on f.829r), "la gratification qu'il a plu a Sa Majesté luy accorder de la foire de Pasques dernier" | none |
+| 133 f.443 | btv1b10032042t c66-67 (f.443r-444r) | Gravel, "A Ratisbonne le 19e novembre 1665": receipt of "la lettre de change de quinze mil risdalles"; his brother will hand "M. l'Electeur de Mayance" the assignment to draw "la susd. somme de quinze mil risdalles" from the Frankfurt bankers (words M, read at 1000 px) | none |
+| 133 f.624 | c247-248 (f.624r-v, 625r blank) | Gravel, "Ratisbonne le 2[?] novembre 1665": four Marteleurs, the Director | none |
+
+Found: the six Gravel letters located (Aug-Nov 1665) are all in clear, in running hand, with no figure group at 1000 px on any
+page viewed. Not found: any second 1665 text in R2678's cipher, so the `22:`/`0` cells stay without a second witness from these
+volumes; Gravel's letter at 131 "f.263" (that leaf is Barrillon's). The 1664 leaves (120 f.348, 445; 121 f.221, 746; 123 f.589;
+124 f.55) were not looked at: stopped on the cost cap, and the brief ranks them below the 1665 leaves.
+
+Context found, not a reading: R2678's clear text says "pour 29 auquel on doit donner 15000" of the 17,100 Rd. Gravel's own clear
+letters of 29 Oct and 19 Nov 1665 name the Elector of Mainz as the recipient of a royal "gratification" paid at Frankfurt, and the
+19 Nov letter puts the sum at fifteen thousand rixdollars. This makes "the Elector of Mainz" (Johann Philipp von Schönborn) a
+candidate for nomenclature code `29` by context only, grade I; it is not checked against any key and the 1665 nomenclature (AE CP
+Allemagne 194) is still the test. Images: `images/mc133_c66_gravel_f443r_1000px.jpg`, `images/mc132bis_c394_gravel_f829r_1000px.jpg`,
+`images/mc132bis_c395_gravel_f829v-830r_1000px.jpg` (manifest key `d1_dec2678l_leaves`).
+
+Requests this job: gallica.bnf.fr 33 (2 SRU, 4 IIIF manifests via tools/gallica_folio.py, 27 image requests of which one HTTP 500
+with the browser UA, retried once with the descriptive UA, 200; the rest 200), at least 2 s apart. No subagent calls.
+
+## Remaining gaps (R9-DEC2678C, 6 Oct 2026; updated R10-DEC2678S, D1-DEC2678L)
 Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
-- `29`, a single-group payee name (15,000 Rd) - blocker: open-codes; a 1665 nomenclature code outside the 1672 table, which no context on f.349 narrows; next: the 1665 nomenclature from AE CP Allemagne 194, an owner-side reproduction request
-- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); Mél. Colbert 126-130bis swept 6 Oct 2026 (R10-DEC2678S), Gravel's four other 1665 letters there all in clear; Mél. Colbert 120-125 and 131-133 swept 6 Oct 2026 (D1-DEC2678S), 15 Gravel entries, none marked chiffre; next: look at the 14 unlooked Gravel leaves, 1665 first (131 f.263, 808, 890; 132 f.630, 829; 133 f.443, 624), ~$3-4
+- `29`, a single-group payee name (15,000 Rd) - blocker: open-codes; a 1665 nomenclature code outside the 1672 table; Gravel's clear letters of 29 Oct and 19 Nov 1665 (D1-DEC2678L) name the Elector of Mainz as payee of a 15,000-rixdollar gratification, a context candidate (grade I), unchecked against any key; next: the 1665 nomenclature from AE CP Allemagne 194, an owner-side reproduction request
+- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); Mél. Colbert 126-130bis swept 6 Oct 2026 (R10-DEC2678S), Gravel's four other 1665 letters there all in clear; Mél. Colbert 120-125 and 131-133 swept 6 Oct 2026 (D1-DEC2678S), 15 Gravel entries, none marked chiffre; the six 1665 Gravel letters of 131bis-133 looked at 6 Oct 2026 (D1-DEC2678L), all clear, no figure groups (131 f.263 is Barrillon's leaf); next: look at the 6 unlooked 1664 Gravel leaves (120 f.348, 445; 121 f.221, 746; 123 f.589; 124 f.55), ~$2-3
 - novelty above N3 (verifier R10-DEC2678V gave N3; second audit D1-DEC2678A2 confirmed N3, 6 Oct 2026, AUDIT.md AUDIT 2: Depping and Clément negative, DECODE/Tomokiyo/Bourdeau all list the passages undeciphered) - blocker: waiting-on JSTOR-QUEUE.tsv rows 301-303 and the SO-R2678 second-opinion answer; Haug 2015, the study closest to this pension list, is not readable from the cloud
 
 ## Escalation (R9-DEC2678C, 6 Oct 2026)
@@ -502,7 +535,7 @@ Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - [x] clear-pages: f.349r-v clear text read (R8-G2678, R9-DEC2678); it gives the context for P1-P3
 - [x] known-keys: Tomokiyo's 1672 Colbert-Gravel key passes the pre-registered gate (this section)
 - [x] print: verifier R10-DEC2678V ran print_check and a logged search, 6 Oct 2026 (AUDIT.md AUDIT 1: N3, key published, D2 about 73%); Haug 2015 not readable from the cloud, JSTOR rows queued; second adversarial audit D1-DEC2678A2, 6 Oct 2026 (AUDIT 2): N3 confirmed, Depping t. III prints other 1665 Gravel letters but not this one
-- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; Mél. Colbert 126-130bis swept (R10-DEC2678S, 6 Oct 2026), no Ratisbon cipher letter; Mél. Colbert 120-125 and 131-133 swept (D1-DEC2678S, 6 Oct 2026), no sommaire marks a Ratisbon letter chiffre; next: look at the 1665 Gravel leaves 131 f.263, 808, 890; 132 f.630, 829; 133 f.443, 624
+- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; Mél. Colbert 126-130bis swept (R10-DEC2678S, 6 Oct 2026), no Ratisbon cipher letter; Mél. Colbert 120-125 and 131-133 swept (D1-DEC2678S, 6 Oct 2026), no sommaire marks a Ratisbon letter chiffre; the 1665 Gravel leaves of 131bis-133 looked at (D1-DEC2678L, 6 Oct 2026), all six in clear; next: the 1664 Gravel leaves 120 f.348, 445; 121 f.221, 746; 123 f.589; 124 f.55
 - [x] image-check: native crop re-read of all three passages (this section)
 - [n/a] retry: first attempt passed its gate, nothing to retry
-Verdict: keep going: 2 internal gaps; cheapest next: look at the 14 unlooked Gravel leaves of Mél. Colbert 120-125/131-133 (1665 first) for figure groups, ~$3-4 (sommaires 120-133 swept 6 Oct 2026, none marked chiffre; verifier step done 6 Oct 2026, AUDIT.md)
+Verdict: keep going: 2 internal gaps; cheapest next: look at the 6 unlooked 1664 Gravel leaves of Mél. Colbert 120-124 for figure groups, ~$2-3 (the 1665 leaves of 131bis-133 looked at 6 Oct 2026, all clear; a context candidate for `29`, the Elector of Mainz, grade I, awaits the 1665 nomenclature)
