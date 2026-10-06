@@ -1,4 +1,4 @@
-# PREREG-D4-1411P3: word-coverage test of frozen T21r (+ two h alternatives) on unread p.3 numerals (written 6 Oct 2026 ~12:55 UTC by date -u)
+# PREREG-D4-1411P3: word-coverage test of frozen T21r (+ two h alternatives) on unread p.3 numerals (written 6 Oct 2026 12:46 UTC by date -u)
 
 Written and pushed before any numeral of p.3 (IMG_R1411_I6597_P3.png, 4608x3456 double spread, sha1 509fe691... matching
 images/manifest.json) was read by this worker or a subagent. The worker has looked only at a 1/4-size overview to place line
