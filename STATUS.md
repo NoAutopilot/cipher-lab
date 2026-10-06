@@ -5161,6 +5161,34 @@ Open for the next i-r lane: (1) nla-heinrich check-solved/verifier call on the G
 (3) rousseau same-class known-answer re-run ~1; (4) oldenbarnevelt-brederode full-size Marburg/Munich keys ~3; (5) karlxi 1680 Actes page read ~1;
 (6) vellingk read owgPAAAAYAAJ "Wellingk ... Chiffre" page ~1; (7) lope-hurtado LOCAL-QUEUE row for BNE 20212/27 images.
 
+## LANE LANE-RUN9-account-4 handoff (session_01S1eWrEhfTEUrnYjwb91iQ7, account 4), 6 October 2026 (closed 07:1x UTC: s-z backlog worked, lane about 48.3 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run9-jobs.md. WORK-QUEUE row LANE-RUN9-account-4: RUN8-account-4's
+"Open for the next s-z lane" items first, then tools/next_steps.py runnable S/M rows, folders s-z. The row's nla-heinrich / rayburn / rousseau items are
+i-r and LANE-RUN9-account-2 ran them; eckert-1864 is a-h. Gate 0a met in-session. VERIFY-BACKLOG had no s-z row. 16 workers in 4 waves (13 Opus,
+3 Sonnet; 14 D, 2 D-: WVOSORT 1.30x, SRCH push blocked); workers 42.72 + orchestrator 5.56 = 48.28 (get_session). five_hour `allowed` throughout.
+- wvo-hessen-1564 open -> partial: f.23 of WVO 1109 (Orange to Wilhelm of Hesse, 18 Sept 1564) carries its own letter-over-sign interlinear
+  decipherment (seen by R9-WVOSORT while cutting the sorter; earlier passes had recorded "no gloss"). R9-WVOALIGN gate PASS (pile ids 10 vs
+  row-shuffle p95 3); r9align key 10 C / 18 M, decode C 102 M 155 of 257. Verifier R9-WVOV: AUDIT.md N0 (period gloss of this item), key period,
+  D2 ~40%; 10-tile sample shows aligner slips, so M rows are noisy. R9-WVOX: f.23 key shares values with willem-van-hessen-1567's 1069 key
+  (8/18 same-letter shapes vs perm p95 3), not with the 174 key leaf (0/7). f.23 owner sorter built, preflight PASS, flagged to account 3 to publish.
+- sachsstaatsarchiv-manteuffel-1712: pooled multi-code-run aligner (interlinear_align.py --fix) PASS thin (24 vs p95 19); per-code BH test kept
+  7 PASS + 3 at raw p<0.10, removed 14; net C 202 M 98 U 123 (was U 137). Verifier R9-MANTV re-ran byte-identical; f.410 N4 D1 unchanged.
+- siena-concistoro-2308: no. 7 anchored homophonic fit, control 0.916 (anchors no headroom), target judge FAIL; transcription error on 2 arbitrated
+  lines 0-4.2%, so the negative stands there (R9-SIENA7B); 9 lines still unarbitrated. no. 15 vs R4764: one mapping non-test, one control-backed negative.
+- Non-tests / retired: untersberg F4 (no crossed-descender p anywhere in Hs 2398, to paleographer packet); zeschau word-parse objective, control below
+  gate twice (0.0026, 0.0146) though the true key scores highest -> retired for local search (rule 3 third-attempt clause).
+- Housekeeping: thurloe index P27/P28 cells fixed; LOCAL-QUEUE L61 (sp90-raby Preuss 1897 pp.20-30, 61), L62 (ss-radio-lippert Wayback, web.archive.org
+  still resets from the cloud); sp36-stquentin "St. Quentin" not found in 6 IA items + 4 volumes (search result).
+Open for the next s-z lane:
+1. wvo-hessen-1564: after the owner's f.23 sort, rebuild key.tsv per settled sign, cross-checked against 1069 (~1.5), else a careful two-pass
+   transcription of the ten gloss rows (~4.5); then a second audit. Try f.23's C values on 1069 / other Orange-Hesse cipher letters in WVO.
+2. siena no. 7: arbitrate the other 9 lines for the error figure (~1.5). no. 15: check R4765 for the missing sheet (~2-3).
+3. manteuffel: frame 0526 (single-code 898/939/867, ~4.5); 714/515 conflicts in HYPOTHESES.md.
+4. zeschau: basin-width diagnostic of the word-parse objective (~2) before any further search instrument.
+Process note: R9-SRCH stopped mid-rebase on a ROOM.md conflict and its permission check refused every cross-session go-ahead, so it asked the user
+three times; the lane committed its text by hand. Workers should push ROOM lines only via tools/room.py --push and commit folder files separately.
+
 ## LANE LANE-RUN8-account-4 handoff (session_01WJDfJbsRjgvoazG3ivjfVQ, account 4), 6 October 2026 (closed 05:0x UTC: s-z backlog worked, lane about 41.7 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run8-jobs.md. WORK-QUEUE row LANE-RUN8-account-4: RUN7 named next
