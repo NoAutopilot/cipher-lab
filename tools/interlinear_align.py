@@ -87,6 +87,15 @@ Default 1 reproduces the --code-prefix behaviour exactly. --word-code-prefix P (
 marked P (e.g. "%kig", a code group missing from the published table) is a word code taking 0..--max-chunk letters,
 learned from the plain text like an above-floor numeral; its value keeps the prefix in the key.
 
+--shuffle N [--seed S] [--min-share X] [--shuffle-out FILE.json] (6 Oct 2026, R9-WVOALIGN, wvo-hessen-1564 f.23):
+after the real run, re-run the same alignment N times with the plain lines dealt to the wrong cipher lines (a random
+derangement of plain_raw across the pairs, seed S, default 1564) and report the rule-3 statistic for the real run and the
+draws: CONSISTENT = number of code values whose top chunk is non-empty, occurs >= 2 times, on >= 2 different cipher lines,
+and is >= X (default 0.6) of that value's aligned (non-empty) occurrences. Shuffling which gloss sits over which cipher
+line can move this number (a gloss over the wrong line gives letters that disagree across lines), so the control is able
+to fail differently from the target. Prints real, control mean, p95, max and the empirical p; FILE.json keeps every draw.
+Without --shuffle nothing changes.
+
 --fix KEY.tsv (6 Oct 2026, R9-MANTPOOL, sachsstaatsarchiv-manteuffel-1712): hold every code in KEY.tsv (columns code|value,
 any length, '|' separating alternative values, accents folded, non-letters dropped; a row with an empty value is a null and
 is held to no letters) at its key value through EVERY iteration, 10 counts per alternative, instead of seeding it once
@@ -163,6 +172,10 @@ WORD_PRIOR = False  # --word-prior
 FOLD_FS = True      # --keep-fs turns this off
 CODE_CHUNK = 1      # --code-chunk N: a --code-prefix code may take up to N plain letters (default 1)
 FIXED = {}          # --fix KEY.tsv: code -> Counter held constant every iteration
+SHUFFLE = 0         # --shuffle N: row-shuffled control draws (R9-WVOALIGN)
+SEED = 1564         # --seed
+MIN_SHARE = 0.6     # --min-share
+SHUFFLE_OUT = None  # --shuffle-out FILE.json
 WORD_PFX = None     # --word-code-prefix P: with --code-prefix, a token marked P is a word code (0..--max-chunk letters)
 
 
@@ -438,13 +451,59 @@ def token_rows(prepared, results, counts, shown):
     return rows
 
 
+def consistent_count(prepared, results, min_share=0.6):
+    """--shuffle statistic: code values whose top non-empty chunk occurs >= 2 times on >= 2 cipher lines and is
+    >= min_share of the value's non-empty chunks."""
+    per = defaultdict(Counter)
+    lines = defaultdict(lambda: defaultdict(set))
+    for (p, raw, toks, letters, starts, ends, _cws), chunks in zip(prepared, results):
+        for (kind, val), c in zip(toks, chunks):
+            if kind in ('num', 'code') and c and c[1] > c[0]:
+                ch = fold(letters[c[0]:c[1]])
+                per[val][ch] += 1
+                lines[val][ch].add(p['cipher_line'])
+    n = 0
+    for val, cnt in per.items():
+        top, topn = top_of(cnt)
+        if topn >= 2 and len(lines[val][top]) >= 2 and topn >= min_share * sum(cnt.values()):
+            n += 1
+    return n
+
+
+def shuffle_control(pairs, run_kwargs, real):
+    import json
+    import random
+    rng = random.Random(SEED)
+    draws = []
+    idx = list(range(len(pairs)))
+    for _ in range(SHUFFLE):
+        while True:
+            perm = idx[:]
+            rng.shuffle(perm)
+            if all(a != b for a, b in zip(idx, perm)):
+                break
+        sp = [dict(p, plain_raw=pairs[k]['plain_raw']) for p, k in zip(pairs, perm)]
+        prep, res, _c, _s = run_align(sp, **run_kwargs)
+        draws.append(consistent_count(prep, res, MIN_SHARE))
+    srt = sorted(draws)
+    p95 = srt[min(len(srt) - 1, int(0.95 * len(srt)))]
+    mean = sum(draws) / len(draws)
+    pval = (1 + sum(d >= real for d in draws)) / (1 + len(draws))
+    print('shuffle control: real %d; control mean %.2f, p95 %d, max %d, n %d; p = %.4f; real > p95: %s'
+          % (real, mean, p95, srt[-1], len(draws), pval, real > p95))
+    if SHUFFLE_OUT:
+        with open(SHUFFLE_OUT, 'w') as f:
+            json.dump({'real': real, 'mean': mean, 'p95': p95, 'max': srt[-1], 'p': pval, 'seed': SEED,
+                       'min_share': MIN_SHARE, 'draws': draws}, f)
+
+
 def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, prior_path=None, code_prefix=None,
               null_cost=-3.0, wildcard=None, max_chunk=MAXCHUNK, seg_bonus=1.0, len_prior=0.0):
     prior = load_prior(prior_path, floor, code_mode=code_prefix is not None) if prior_path else None
-    prepared, results, counts, shown = run_align(load_pairs(pairs_path), floor, clear_consumes=clear_consumes,
-                                                 prior=prior, code_prefix=code_prefix, null_cost=null_cost,
-                                                 wildcard=wildcard, max_chunk=max_chunk, seg_bonus=seg_bonus,
-                                                 len_prior=len_prior)
+    pairs = load_pairs(pairs_path)
+    kw = dict(floor=floor, clear_consumes=clear_consumes, prior=prior, code_prefix=code_prefix, null_cost=null_cost,
+              wildcard=wildcard, max_chunk=max_chunk, seg_bonus=seg_bonus, len_prior=len_prior)
+    prepared, results, counts, shown = run_align(pairs, **kw)
     rows = token_rows(prepared, results, counts, shown)
     with open(out_align, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
@@ -461,6 +520,9 @@ def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, p
             w.writerow([v, display(shown, v, top), sum(cnt.values()), topn, others])
     st = Counter(r[7].split(':')[0] for r in rows)
     print('tokens %d; values %d; %s' % (len(rows), len(counts), dict(st)))
+    if SHUFFLE:
+        real = consistent_count(prepared, results, MIN_SHARE)
+        shuffle_control(pairs, kw, real)
 
 
 if __name__ == '__main__':
@@ -516,6 +578,19 @@ if __name__ == '__main__':
         if '--keep-fs' in a:
             FOLD_FS = False
             a = [x for x in a if x != '--keep-fs']
+        for flag in ('--shuffle', '--seed', '--min-share', '--shuffle-out'):
+            if flag in a:
+                k = a.index(flag)
+                v = a[k + 1]
+                del a[k:k + 2]
+                if flag == '--shuffle':
+                    SHUFFLE = int(v)
+                elif flag == '--seed':
+                    SEED = int(v)
+                elif flag == '--min-share':
+                    MIN_SHARE = float(v)
+                else:
+                    SHUFFLE_OUT = v
         if '--fix' in a:
             k = a.index('--fix')
             FIXED.update(load_fixed(a[k + 1]))
