@@ -107,3 +107,20 @@ with citation found; belmesseri, salvago, della-torre "blocked, already terminal
 6. heinsius-dopff-1702: Marlborough-side editions not yet grepped (Snyder, Marlborough-Godolphin Correspondence; Murray's Letters and
    Dispatches) for the 1702 letters, IA full text.
 Stop at the cap; items not reached are listed as not reached in your done line.
+
+## Wave 3 (spawned 22:35 UTC 6 Oct) -- follow-ups named by wave 1-2
+
+### D22-FTS2 -- four page-level follow-ups to D22-FTS / D22-F3151D leads, one Sonnet worker (Sonnet; cap 4, box 60 min; ~0.7 per item + write-up)
+Same rules as D22-FTS (search and page reading only, no decoding, rule 10, host table, request counts). Append "## D22-FTS2 (6 Oct 2026)"
+to each folder's NOTES.md and update its While waiting / next-step line.
+1. della-torre-olanda-1690: read Correspondentie van Willem III en Bentinck (Huygens retroboeken) KS 24 alphabetical letter list p.800 and
+   the 1690 letters it indexes for Della Torre: is any despatch printed in clear? (pages.json for the page image only if OCR is unclear.)
+2. fr3151-noailles-1558: the next step D22-F3151D named -- Gallica SRU (dc.title/dc.source "Noailles" + "Venise", 1558) and BnF
+   archivesetmanuscrits ("Noailles" "1558" copies) for another digitised register of Noailles's own Venice dispatches; for any hit, the
+   manifest canvas labels and one heading check near Nov 1558 (crop, not full page). Report hits; do not align.
+3. bl-sacchetti-nunzio-1623: Quazza, La guerra per la successione di Mantova (IA identifier in the folder's D22-FTS section) -- read the
+   "dal nunzio Sacchetti" passages and footnotes: which archive/series of Sacchetti's dispatches does Quazza cite, and does he quote any
+   deciphered passage of 1623? 
+4. belmesseri-napoli-1627: Negri, Archivio Soc. rom. 34 (archivio34sociuoft, djvu on disk or one download): the footnotes citing Modena
+   (ASMo Cancelleria ducale, Ambasciatori Roma/Napoli) -- list the cited series/buste and whether Negri prints any deciphered passage that
+   could be the b.20 letter's text.
