@@ -141,3 +141,49 @@ Wave 1 closed 04:0x UTC: THURV 1.43, WVO1111 3.81, WHIT 1.21, SPLOOK 1.23, NICH2
 Wave 2 sessions (04:02 UTC): R8-ZESCH session_01YMesMZvJYF4uVjuKGH9Z2P (Opus, cap 5); R8-YOG3 session_017To169azKsJGb28EHb6azE (Opus, cap 2.5);
 R8-TAUR session_018VGEHgXyA7wrha6pfRK4xz (Sonnet, cap 2); R8-RABY session_018zvrxKT6onjgbBbtFRPUaA (Sonnet, cap 2); R8-SIENA7
 session_01Y1WNnXGknvYihADmNofDuG (Opus, cap 3). Caps 14.5.
+
+Wave 2 closed 04:1x UTC: ZESCH 1.37, YOG3 1.38, TAUR 0.79, RABY 0.63, SIENA7 2.56 = 6.73 (all D). Workers so far 18.09.
+
+## Wave 3 (written 04:17 UTC 6 Oct). Intake gate output (04:16 UTC) pasted per job.
+Manteuffel: no answer from LANE-RUN8-account-2 in 35 min and no manteuffel worker in its waves 1-3 (ROOM to 04:16); taken here, ROOM line 04:1x.
+
+### R8-MANT -- sachsstaatsarchiv-manteuffel-1712, 0527 run-7 zoom, then frame 0530 (Opus; cap 7, box 90 min; 1 zoom + 2 Sonnet passes + 1 reconciliation)
+Intake gate: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (NOTES.md line ~1106): (1) re-read 0527 run 7 on the image -- is the code over "Ilgen" 898 or 98? One native-resolution
+zoom crop (paste command), read by you plus one blind Sonnet read; record both. If 98, re-run the folder's registered pooled gate
+(pooled_mantp / pooled_gate, rule as already pre-registered) and apply the per-unit rule for 898 (M or C). (2) Then, only if under 50% of cap,
+transcribe frame 0530 (ff.425v-426, same letter as 0529): folio check first, line crops (paste), 2 blind passes one page per call +
+reconciliation, per-leaf gate and pooled gate re-run (rule 3: per-unit gate before anything enters key.tsv). decode --check exit 0 before push;
+a reading change after AUDIT.md (N4 AUDIT2-MANT) -> flag a verifier in ROOM. Update Remaining gaps / Escalation; gaps_check.py passes.
+
+### R8-THUR25 -- thurloe-printed P25-P28, page images to replace OCR-line pairs (Opus; cap 5, box 75 min; per-page units)
+Intake gate: `thurloe-printed: partial (line 2) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md escalation S item (section 23, not run): fetch page images for P25-P28 (Manning/Lockhart/Burton/Johnson letters in Birch's Thurloe,
+IA) and re-pair cipher groups with printed decipherments from the image rather than OCR lines. Unit = one printed page: IA page image once
+(manifest), crops with tools/iiif_lines.py --image (paste), one vision pass per page on crops. List pages first with counts; stop before a
+page that would cross 80% of cap/box. Report C-rate before/after per letter; any grade change after AUDIT.md -> say so in NOTES.md and flag
+a verifier in ROOM (do not edit AUDIT.md yourself). If budget allows, the third Johnson letter search (P27/P28 sub-key mismatch) in the
+already-fetched Birch OCR text.
+
+### R8-SIENA19 -- siena-concistoro-2308 no. 19 vs the no. 13/16 alignment (Opus; cap 3, box 50 min)
+Intake gate: `siena-concistoro-2308: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder's named step for piece 19: compare its run signs with the no. 13/16 alignment (Bourdeau's) as a known-key fit. Pre-register the fit
+statistic and its controls BEFORE scoring; check (rule 3) that each control can vary on that statistic -- a value-shuffled key can; an
+order-shuffled text cannot change a per-token coverage figure, so use it only if the statistic depends on order (e.g. word/bigram fit).
+Disk plus at most one crop. Both numbers into HYPOTHESES.md. No key rebuild.
+
+### R8-SPS1 -- three s-z `parallel` lookups (Sonnet; cap 2.5, box 45 min)
+Intake gates: sp36-ball-1745, sp8-ehrenstein-1689, vanspaen-vandergoes-1808 all `open (line 1) -- ... found within 6 lines`.
+(a) sp36-ball-1745: TNA Discovery API search of SP 106 (Deciphering Branch) for Nov 1745 items (Marischal, Dunkirk, 6000), record hits.
+(b) sp8-ehrenstein-1689: read the remaining 29 rows of the Arcinsys `Bernstorff` 1688-1690 list (pages 2-3) and log any Ehrenstein/cipher
+item. (c) vanspaen-vandergoes-1808: grep the public EAD of the NA Kabinet des Konings (1806-1810) for code/sleutel/cijfer/chiffre and Van
+Spaen/Van der Goes; record inventory numbers. Dated NOTES.md section per folder, tick the While-waiting line. Search results only.
+
+### R8-SPS2 -- three more s-z `parallel` lookups (Sonnet; cap 2.5, box 45 min)
+Intake gates: `sp87-brunswick-1759: open (line 1) ...`; `salvago-caraffa-1691: blocked (line 3) -- already terminal`;
+`sp90-raby-whitworth-1705: open (line 1) ...`.
+(a) sp87-brunswick-1759: Westphalen 1871 (Google Books CUoSqn-TycQC, full view) at the "composition secrète" hit -- Books API only
+(keyed, country=US); books.google.com page view is blocked from the cloud (host table), so if the API gives no page text, say so and leave
+the LOCAL-QUEUE row as is. (b) salvago-caraffa-1691: memoriedigitaliliguri.it full-text search of Atti della Società Ligure di Storia
+Patria for "Caraffa" 1691 and "Coysis/Coisis/Coissy". (c) sp90-raby-whitworth-1705: BL searcharchives JSON record for Add MS 31128-31152
+(1705 volume) for a draft of 1 Aug 1705, and IA full-text search of HMC Portland vols 4 and 8 for "Raby" 1705. Search results only.
