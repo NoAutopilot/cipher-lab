@@ -1,0 +1,14 @@
+inv	scan	date_as_written	from_to_as_read	kind	cipher	content (read by eye at 900 px, R10-ROELL11, 6 Oct 2026; gist, not graded)
+804	150	"Constant[inopel] 25 January 1793" (left, end of letter); next letter begins on right	Van Dedem to the States General, "Hoog Mogende Heeren!"	copy (copy-book)	no	end of 25 Jan 1793 despatch; right page opens the next despatch (Russia and the Porte)
+804	151	-	same	copy	no	body of the despatch begun on scan 150 right
+804	152	"Pera van Constant[inopel] den 9 February 1793", signed "get. F.G. Van Dedem van de Gelder" (right page)	Van Dedem to the States General	copy	no	end of the 9 Feb 1793 despatch (scans 150R-152R); the next despatch opens "Van dat ik op den 9 dezer ..."
+804	153	-	same	copy	no	body of the despatch after 9 Feb 1793
+804	160	-	same	copy	no	1793 despatch, mentions the French envoy and a Reis Effendi letter of 31 March
+804	170	"Pera van Constantinopel den 24 Aug 1793"	Van Dedem to the States General	copy	no	last signed copy: Van Dedem about to leave (departure 2 or 3 Sept)
+804	174	-	-	end board/blank	no	end of file
+806	190	"Belgrade den 3 Junij 1791", "14 Junij 1791", "22 Junij 1791"	Van Dedem to griffier Fagel, "Hoog Edele Gestrenge Heer"	copy	no	clear Dutch
+806	205	"Belgrade den 11 Julij 1792", "10 Julij 1792"	same	copy	no	clear Dutch
+806	211	"Belgrade den 10 Nov. 1792"	same	copy	no	clear Dutch
+806	212	"Pera ... den 26 Nov. 1792", "10 December 1792"	same	copy	no	clear Dutch
+806	213	"Pera ... den 27 December 1792"	same	copy	no	last letter in the copy-book
+806	214	-	same	copy	no	end of the 27 Dec 1792 letter; rest blank: no 1793 copies in inv. 806

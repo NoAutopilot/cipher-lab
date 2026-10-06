@@ -730,3 +730,69 @@ other same-date candidates in 1.02.20 are inv. 987 (to A.B.G. van Dedem, copies 
 
 **Requests:** www.nationaalarchief.nl 1 (item page 1.02.20/990, HTTP 200); service.archief.nl 18 (IIIF: 12 openings at 1000 px,
 4 at 800 px, 1 info.json, 1 header crop; all HTTP 200, >= 1.9 s apart, one at a time). Subagent calls: 0.
+
+## R10-ROELL11 (6 Oct 2026): where DECODE's R1469/R1470 images come from
+
+Worker R10-ROELL11 (account 2, for LANE LANE-RUN10-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run10-jobs.md`,
+07:59-08:08 UTC by `date -u`. No login (see below why), no subagent, no decoding. Status unchanged: `open`. Grade counts: H 0, C 0,
+S 0, M 0, I 0 (no reading). Scan log: `na10220/inv804_806_scans.tsv`; IIIF info URLs: `na10220/inv804_iiif_info_urls.json`
+(174), `na10220/inv806_iiif_info_urls.json` (217).
+
+**What DECODE itself records (RecordsView/1469 and /1470, public without login).** Holder "Nationaal Archief, legatie Turkije,
+inv.nr. 804"; no folio, no other provenance field. Dates: "1809 -" with start 1809-2-9 on R1469, taken from the record name
+(`..._1809_02-09-1`; R1470 is `..._1809_02-09-2`, so both carry the same day and month). Author/receiver Röell -> Van Dedem are
+the contributor's guess ("probably written by the Minister of Foreign Affairs ... not addressed nor signed ... Van Dedem was already
+on his way home, when the letter was sent"). Record created 18 Feb 2020 by DECODE user 34; access mode "Authentication required".
+The record links to 1947-1952, 2053, 2120-2122, 2131, 2134, 2141: Kroll, Van Dedem, Van Haeften and Van Schenck letters of
+1776-1793 in NA 1.01.02 (States General) and 3.01.26 (Van de Spiegel) -- grouped by their 4-digit code, not by provenance (R2131's
+own note: "the same codebook ... as in many other letters by Van Dedem, and also by Kroll, Wasmuht, Schenk and Van Haeften").
+DECODE's transcription (SofPe, 2 Feb 2020, copy in Bourdeau's `targets/roell1809/decode/`) names the images 6681-6687 and
+6688-6693 and marks the opening word **"Monsieur?"**, with a question mark: the "Monsieur" address is DECODE's tentative reading,
+not established. The two public 200 px thumbnails of the first pages (6681, 6688) are **camera photographs** with a "2019 08 22"
+date stamp, the leaves on a pink backing, not NA scans: someone photographed the originals in the reading room on 22 Aug 2019.
+No archive stamp or folio number is legible at thumbnail size.
+
+**Not reachable here:** image metadata (ImagesList) redirects to login, and that page is gated account-wide even when logged in
+(sources/decode/NOTES.md, 24 Sept 2026); the transcription file and full images return DECODE's forbidden placeholder
+(sha1 035489a0...). So no login was spent: it could not reach any field the public record view does not already show.
+
+**What "inv. 804" is.** The 1.02.20 inventory (Bourdeau's `turk_inv.txt`, version 1 May 2021) numbers 804 in the **first Van
+Dedem mission (1785-1793)**: "Uitgaande brieven aan de Staten-Generaal. Afschriften. 1785-1793. 8 katernen". Its concordance of
+old numbers (Hardenberg 1932, 1-443; Fasel 1952, 495-939) has no older 804 that could point to the 1808-10 Testa series: Fasel 804
+is today's inv. 1294 (a 1793 lawsuit, "Gerry en P. Apik Oglou"). So DECODE's number is a current 1.02.20 number, and it sits in the
+1785-1793 series, not among the 1808-10 files that R8-R10 workers read (inv. 92, 348, 978, 980, 990, 996).
+
+**inv. 804 holds a despatch of 9 February 1793.** Item page `www.nationaalarchief.nl/onderzoeken/archief/1.02.20/invnr/804`,
+availability DIGITALIZED, 174 scans. Scan 152, right page: "Pera van Constant[inopel] den 9 February 1793 ... get. F.G. Van Dedem
+van de Gelder", a clear Dutch copy of a despatch to the States General ("Hoog Mogende Heeren!") that runs from scan 150 right to
+152 right; the next despatch opens "Van dat ik op den 9 dezer ...". The last signed copy is 24 Aug 1793 (scan 170), when Van Dedem
+was about to leave Constantinople. The companion copy-book to the griffier, inv. 806 (DIGITALIZED, 217 scans, clear Dutch,
+"Hoog Edele Gestrenge Heer"), ends with 27 Dec 1792 (scans 213-214): no 1793 letter there. Separately, DECODE R2131 is Van Dedem to
+Van de Spiegel, **9 Feb 1793** (NA 3.01.26 inv. 212), with one paragraph in the 4-digit code, listed as unsolved.
+
+**Inference, not established.** The inventory number DECODE gives, the day and month in both record names, and the code family
+DECODE links them to all point to Van Dedem's first mission and to 9 Feb 1793, not to Röell in 1809; the "1809" may be the
+contributor's year, written into the name from the guess that the letters were Röell's. Against it: (a) the 804 copy is Dutch to
+the States General, while DECODE calls R1469 French on one uncertain word ("Monsieur?"); (b) Bourdeau found R1469/R1470's groups
+overlap the decrypted Van Dedem 1788-89 letters (R1947, R2053, R2121) only at chance level (30-33% of distinct groups against a 28%
+baseline), so if they are Van Dedem's of 1793 they use a different code or table than those letters -- which R2131, also unsolved
+and also 9 Feb 1793, would fit; (c) NA's 174 scans of 804 show no cipher leaves (Bourdeau, page by page, 21 Sept 2026; this pass saw
+scans 150-153, 160, 170, 174 only), so the photographed sheets are not in the scanned file as it is now, or are filed elsewhere.
+
+**Is the original reachable?** Not online. DECODE's photographs are account-gated; NA's scans of inv. 804 show only the clear
+copies. The physical sheets are cited by DECODE as in 1.02.20 inv. 804 (unverified; a reading-room or scan request would settle it).
+
+**Not found.** No cipher leaves, key or decipherment in the 804/806 scans read; no 9 Feb 1793 item in inv. 806.
+
+**Verdict line:** `open` -- DECODE's only provenance is "legatie Turkije inv. 804" (camera photos of 22 Aug 2019); inv. 804 is
+Van Dedem's 1785-1793 series and holds a clear Dutch copy of his despatch of 9 Feb 1793 (scans 150R-152R). Cheapest next, in order:
+(1) ~USD 1, disk only: compare R1469/R1470's groups with R2131's (9 Feb 1793, Van Dedem to Van de Spiegel), if DECODE's R2131
+transcription is reachable (Bourdeau's `targets/dedem1788/` may hold it) -- a shared code would back the 1793 dating, with a shuffle
+control; (2) ~USD 2-3: the States General's received copy of the 9 Feb 1793 despatch (NA 1.01.02, Levantse/Turkse lias 1793,
+where Kroll's cipher letters of 1784-85 sit decrypted in inv. 7009) for a cipher original with an interlinear decipherment;
+(3) ~USD 3: transcribe the 804 copy (scans 150R-152R) and compare its length with R1469's 1,297 groups, a weak check on its own.
+
+**Requests:** de-crypt.org 7 (RecordsView 1469, 1470, 2131; ImagesList 1469 -> 302 to login; 1 transcription file -> forbidden
+placeholder; 2 thumbnails; no login); www.nationaalarchief.nl 2 (item pages 804, 806); service.archief.nl 13 (IIIF at 900 px:
+804 scans 150-153, 160, 170, 174; 806 scans 190, 205, 211-214; all HTTP 200, >= 2 s apart, one at a time); raw.githubusercontent.com
+2, github.com 1 sparse clone, api.github.com 1 (Bourdeau's targets/roell1809). Subagent calls: 0.
