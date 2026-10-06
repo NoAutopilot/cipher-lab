@@ -1,0 +1,15 @@
+target streams [95, 12, 7], xs count 14; corpus words 621428
+
+== design L: mean word len 4.83 units; P_ref top [(1, 0.08699962022953585), (2, 0.18900821977767335), (3, 0.13396081283752906), (4, 0.07953133750008046), (5, 0.13500035402331403), (6, 0.10753780003475866), (7, 0.08314237530333361), (8, 0.06681224534459342)]
+target S=-2.693 p=0.0039 (10,000 perms); unsegmented S=-4.938; xs rank 1/9 among split tokens
+  S by split token: xs -2.693, fi -2.843, ro -2.930, mi -3.087, un -3.348, cu -3.742, me -4.081, ne -4.499, pi -4.704
+  target xs word lengths: [[2, 7, 6, 10, 1, 12, 11, 11, 8, 9, 4, 3], [1, 6, 3], [2, 4]]
+control power 190/200 = 95.0% (gate 80%); control S median -2.448; control separator count median 19 (5-95%: 16-23) vs target 14
+VERDICT design L: PASS
+
+== design Y: mean word len 2.08 units; P_ref top [(1, 0.41371808157984513), (2, 0.2611581711799275), (3, 0.19741949187999253), (4, 0.0945934203157888), (5, 0.028648532090604223), (6, 0.004026210598814344), (7, 0.00037172447974664804), (8, 4.9885103342623766e-05)]
+target S=-5.466 p=0.4811 (10,000 perms); unsegmented S=-9.124; xs rank 4/9 among split tokens
+  S by split token: fi -3.587, ro -4.771, cu -4.816, xs -5.466, mi -5.626, un -5.845, me -6.078, ne -6.528, pi -8.150
+  target xs word lengths: [[2, 7, 6, 10, 1, 12, 11, 11, 8, 9, 4, 3], [1, 6, 3], [2, 4]]
+control power 200/200 = 100.0% (gate 80%); control S median -1.546; control separator count median 36 (5-95%: 33-40) vs target 14
+VERDICT design Y: FAIL (control-backed negative)

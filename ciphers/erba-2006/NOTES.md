@@ -132,4 +132,39 @@ exit 0
 
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
-next: spec test 2: re-segment the confirmed digraph sequence on `xs` and compare its word-length profile with an unsegmented and a randomly segmented control (specs/erba-2006.json cheap_tests_in_order[1]), ~$1. Who acts: agent. Source: specs/erba-2006.json (test 1 done 25 Sept 2026, test 2 not run); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+[done 6 Oct 2026 by R12D-ERBA, see Cheap test 2] spec test 2: re-segment the confirmed digraph sequence on `xs` and compare its word-length profile with an unsegmented and a randomly segmented control (specs/erba-2006.json cheap_tests_in_order[1]), ~$1. Who acts: agent. Source: specs/erba-2006.json (test 1 done 25 Sept 2026, test 2 not run); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Cheap test 2 (6 Oct 2026, R12D-ERBA, LANE LANE-RUN12-account-4): is `xs` a word space?
+
+Pre-registered (`specs/cheap-tests/erba-2006/PREREG-test2.md`, pushed b9e4d2183 before the scored run). Disk only, zero
+network requests. Input: the image-checked reading (`transcription_bERB.txt`, 114 tokens; the 8 open me/ne calls cannot move
+this statistic, which depends only on where `xs` falls). Split on `xs` within three streams (main 95, block right 12, block
+left 7); S = mean log P(word length) under `tools/data/it19` (Italian prose 1800-1830 -- era mismatch to a 2013 private
+message, no modern Italian corpus on disk; it19's own README rates its gate reliability unknown). Null: 10,000 random
+placements of the xs tokens. Matched control: 200 windows of real it19 prose in the design's units, real spaces as the
+separator, same stream lengths, same statistic and null. Output: `specs/cheap-tests/erba-2006/test2_output.txt`.
+
+| design | target S | target p | xs rank among 9 split tokens | control power (gate 80%) | separators: target vs control 5-95% | verdict |
+|---|---|---|---|---|---|---|
+| L: one token = one letter | -2.693 | 0.0039 | 1/9 | 190/200 = 95.0% | 14 vs 16-23 | PASS |
+| Y: one token = one syllable | -5.466 | 0.481 | 4/9 | 200/200 = 100% | 14 vs 33-40 | FAIL (control-backed) |
+
+Unsegmented streams: S -4.938 (L), -9.124 (Y). Word lengths between xs (main stream): 2, 7, 6, 10, 1, 12, 11, 11, 8, 9, 4,
+3; side blocks 1, 6, 3 and 2, 4.
+
+Post-hoc, not pre-registered (`posthoc_token_p.txt`, 5,000 permutations, same statistic, design L): fi p=0.025, ro p=0.039,
+mi 0.091, un 0.137, cu 0.415 (xs 0.003). So the design-L PASS mostly measures that xs is evenly spread through the text
+(never doubled), which a word separator would be but other tokens partly are too: xs is the strongest of six, not unique.
+
+What this does and does not show: under a one-token-per-syllable design, xs cannot be the word space at this N (control-backed
+negative: far too few separators). Under a letter-like design, xs-as-space is not excluded and xs fits best of the nine
+tokens, but it is not established either: it gives fewer and longer words than Italian (four of 10-12 tokens), and the
+press-printed sibling groups of 18 June 2013 (see Web and blog check above) write xs inside groups ("Romixsmecu",
+"meficumixs") as well as alone ("fine xs Romi"). Segmentation remains open; nothing was read.
+
+## Next step (R12D-ERBA, 6 Oct 2026)
+
+next: spec test 3 (specs/erba-2006.json cheap_tests_in_order[2]): small-alphabet homophonic anneal against Italian with a
+matched synthetic control at N=114, K=9 base tokens (14-16 with case); per test 2, model the design as letter-like units
+(xs as an optional separator, run both with and without it), not one-syllable-per-token with xs as space, ~$2-3. Who acts:
+agent. A modern (post-1950) Italian corpus in tools/data would remove the it19 era caveat from both tests (~12 min build).
