@@ -194,3 +194,17 @@ initialisation; say how it differs), PREREG-R9-ZESCH2.md pushed before scoring, 
 gate 0.60 unchanged). Control below gate: stop, log "non-test at this N" -- and since this is the second attempt at this objective, say
 explicitly whether a third would be rule 3's third-attempt case. Control at gate: run the target, judge the decode with a French corpus
 (say era) and the shuffled-target decode through the same judge (ARM-C1). Status partial; gaps_check pass.
+
+## Wave 4 (spawned 06:4x UTC 6 Oct)
+
+### R9-MANTV -- sachsstaatsarchiv-manteuffel-1712, VERIFIER propagation of R9-MANTPOOL + R9-MANTPC (Opus; cap 3, box 50 min)
+Intake gate: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+You are a VERIFIER, separate from the solvers (R9-MANTPOOL session_01VrWrGx5EfmDVNbJiRwSHGM, R9-MANTPC session_018HJAXS5gcf5p5wVsdG2wjc).
+The reading changed twice after AUDIT.md (MANTPOOL: 24 codes at M, U 137->103; MANTPC: per-code BH test, 7 PASS + 3 kept at raw p<0.10,
+14 removed; now C 202 M 98 U 123). Rule 10 propagation / verifier step 4: (1) re-run r9mant/ pooled_multi.py and the MANTPC per-code script
+and `tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --check` yourself; confirm counts; check both PREREG commits predate the
+scored runs (git log); check the shuffle control can vary on the statistic and the BH correction was applied as registered; (2) judge
+whether keeping 3 codes at raw p<0.10 is within the PREREG (if not, say so and correct key.tsv to the registered rule; decode --check
+exit 0); (3) write "## Revision after AUDIT (R9-MANTV, 6 Oct 2026)" in AUDIT.md: N-class (unchanged unless your check says otherwise),
+depth per rule 4a with tools/depth_check.py, status.json depth fields only if the numbers moved, any SECOND-OPINIONS-QUEUE.tsv row for this
+target updated; (4) log per-code conflicts (rule 4) in HYPOTHESES.md if the solvers did not. Do not decode anything new.
