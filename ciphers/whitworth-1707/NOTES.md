@@ -1,6 +1,6 @@
 # Charles Whitworth (Moscow) to Harley and Boyle, 1707-08: the "undeciphered" items of TNA SP 91/5
 
-- **Status:** open. Narrowed on 19 Sept 2026 to one short passage. Of the five Discovery items catalogued
+- **Status:** blocked (6 Oct 2026, R8-WHIT: Hartley 2002 and Rothstein 1986 not read; HTRC EF API down, books in copyright, no page text reachable). Narrowed on 19 Sept 2026 to one short passage. Of the five Discovery items catalogued
   "undeciphered", four have their plaintext in print or in the same volume; only the gap in SP 91/5/108
   (Moscow, 30 July/10 Aug 1707) is unread. Nothing can be done from published sources; the next step is the
   copy order in `REQUEST.md`.
@@ -219,3 +219,26 @@ Waits on: a TNA page-copy order for SP 91/5/108 and one or two 1707 neighbours (
 - S: run tools/htrc_ef_headwords.py for 'Whitworth'/'Harley' against Hartley 2002 and Rothstein 1986 -- the HTRC Extracted Features API works from the cloud even though hathitrust.org itself is Cloudflare-blocked; unchecked per this file's own failure log.
 - S: re-run DECODE's sender/holder search for 'Whitworth'/'SP 91' via the now-working browser login (tools/decode_browser_login.js) -- the 19 Sept check used the pre-fix anonymous-JWT route, which 401s on view/list.
 - S: re-grep HMC Portland vols 3-6 (already fetched) for 'Boyle' and 'Moscow' in addition to 'Whitworth', broadening the one term already tried.
+
+## R8-WHIT lookups (6 Oct 2026, 03:44-03:5x UTC, Sonnet worker for LANE-RUN8-account-4)
+
+1. **Hartley 2002 / Rothstein 1986 via HTRC EF.** HathiTrust bibliographic API (via `tools/htrc_series_harvest.py`,
+   Open Library -> OCLC) gives htids: Hartley, *Charles Whitworth* (OCLC 48871215) `mdp.39015055900651`; Rothstein,
+   *Peter the Great and Marlborough* (OCLC 12615088) `mdp.39015028544073`. `tools/htrc_ef_headwords.py` on both
+   returned the server error `PrimaryUnavailableException ... No primary node is available (ef)` three times (two
+   cache states, one 30 s pause): **unreachable on 6 Oct 2026, not a negative**. Neither book was read. Both are in
+   copyright and EF carries counts only, so even a working EF gives term presence by page, not text. Next: retry EF
+   on a later date; reading the books needs the owner's desk (LOCAL-QUEUE) or a library copy.
+2. **HMC Portland, IA djvu OCR (grep, 6 Oct 2026).** Fetched `dukeportlandman03greauoft` (vols 3-4 combined
+   record), `dukeportlandmanu04greauoft` (vol. IV), `manuscriptsofhis56greauoft` (vols V-VI) and `manuscriptsofhis06grea`
+   (vol. VI). Counts "Whitworth / Boyle / Moscow": vol.3 file 0/7/0; vol.IV 1/20/5; V-VI file 4/13/3; VI file 0/11/2.
+   Whitworth hits: Hedges to Whitworth 1705 June 1 (tobacco in Muscovy, the Moscow hits there are the same 1705
+   letters), and three 1714 newsletter items (Commissioner on commerce, Baden, Frankfort/Augsburg). Boyle hits are
+   Henry Boyle as Secretary of State in Harley-circle letters, none to or from Whitworth. No hit touches the
+   1707-08 Moscow despatches or SP 91/5/108. Search was a term grep of OCR, not a page read; OCR errors are possible.
+3. **DECODE.** No login made. The 24 Sept 2026 login-free RecordsList crawl in `sources/decode/` (1,361 decrypted,
+   1,187 non-decrypted rows) has 0 rows matching Whitworth / SP 91 (Kew rows are SP 53 and SP 106 only). That is a
+   listing search of a 12-day-old snapshot, not a record-level search.
+
+Requests: openlibrary.org 3, catalog.hathitrust.org 5, data.htrc.illinois.edu 6 (all errors), archive.org 5.
+Reading unchanged. Remaining gap is unchanged: the SP 91/5/108 passage (copy order, REQUEST.md).
