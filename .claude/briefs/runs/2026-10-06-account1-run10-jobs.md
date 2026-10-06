@@ -1,0 +1,71 @@
+# LANE LANE-RUN10-account-1 jobs (account 1) -- 6 Oct 2026 09:5x UTC, lane orchestrator session_01CaidpjF7GC2DXjAnB1T7Dw
+
+Lane brief: .claude/briefs/default-lane.md (cap 60, box 09:41-19:41 UTC 6 Oct). WORK-QUEUE row LANE-RUN10-account-1: the previous a-h round's
+named next steps first (STATUS.md "LANE LANE-RUN9-account-1 handoff", "Open for the next a-h lane"), then tools/next_steps.py --hot-only runnable
+rows (S, M), BnF tie-breaker. VERIFY-BACKLOG.tsv (regenerated 09:44): only fr16142 "counted" register-lag rows and Birago (off limits).
+Off limits: Birago (incl. ceppo-nevers, nevers-birago, birago-*), Armstrong, Debosnys, account-4 private-repo targets (bne20211-ferdinand,
+destaing-gerard, bowes-walsingham, hamilton-1650). No worker edits any outreach/ file.
+Every worker: Opus 5.5, one job, then stop. Each solver job first checks that its named step is still undone (NEXT-STEPS.tsv lags the
+folders): if a dated NOTES.md section already ran it, take the folder's own Verdict "cheapest next" instead if it fits this job's cap and
+box and is not a campaign; otherwise stop and report. Caps per CLAUDE.md Usage 6: (subagent passes + 1 reconciliation) x ~1.5 per pass,
+plus ~1.5-3 Opus session floor.
+Intake gate (tools/intake_gate_check.py, 6 Oct 09:4x UTC): decode-2678-bnf-colbert127-gravel-1665, fr3151-seure-1558,
+huntington-blathwayt-madrid-1728, fr3416-nevers-fils-1589, fr16142-noailles-constantinople-1571, eckert-1862, baluze103-letellier-marca-1644,
+florence-dieci-responsive all exit 0 ("edition/page or full-text-search citation found within 6 lines"); eckert-1864 exit 0 in RUN9.
+
+## Common rules for every job
+- First commands: `git fetch origin && git checkout -B main origin/main`, `python3 tools/room.py --start`, `date -u`, then a ROOM claim
+  line with `tools/room.py` naming your job id, folder, cap and box end time, addressed "for LANE LANE-RUN10-account-1".
+  If --start fails to push from a detached HEAD: `git push origin HEAD:main; git checkout -B main HEAD`.
+- Read the folder's NOTES.md tail (Remaining gaps / Escalation / latest dated sections) and AUDIT.md section list before acting.
+- Good-citizen rule and the CLAUDE.md host table for every request (one request per host at a time, >= 1.5 s apart; stop a host on
+  429/403/challenge). Report request counts per host.
+- Rebase before writing shared files (status.json, PROGRESS.tsv, SECOND-OPINIONS-QUEUE.tsv, JSTOR-QUEUE.tsv, ROOM.md); keep both facts
+  on conflict. Run `python3 tools/file_shrink_guard.py <every file you touched>` before the final push; push with
+  `python3 tools/room.py --push <paths>`.
+- Words: never "solved", "cracked", "novel", "first", "new" for anything this project did; rule 10 wording only. Never name the
+  owner; never print credentials (test presence with `test -n`). Never call AskUserQuestion. No depth/N-class edits (verifier's job).
+- Stop at the cap or at 80% of the box, whichever first; do not start a unit that would cross 80% of either. A stop with work half
+  done writes what was done and what remains into the folder's files.
+- Done: one ROOM line `done (<start>-<end> UTC by date -u, brief met|stopped at cap): <result, commit>` "for LANE
+  LANE-RUN10-account-1", then a five-line final report.
+
+
+## Wave 1 (written 09:5x UTC from the RUN9-account-1 handoff)
+
+### R10-DEC2678V -- VERIFIER, decode-2678-bnf-colbert127-gravel-1665: P2/P3 reading under the Tomokiyo Colbert-Gravel 1672 key (cap 3.5, box 45 min)
+Template: CLAUDE.md "Verifier brief (template)" and .claude/briefs/verifier.md. Claim under audit: R9-DEC2678C's "Tomokiyo's published
+Colbert-Gravel 1672 key PASSes PREREG ca9a62902 on R2678 P2/P3; H 11 M 2 U 2 of 15; decode_key --check 0". You are not the solver and do not
+protect its conclusions. (1) Confirm the PREREG commit predates the scored run (git log order), re-run the scoring and decode_key --check,
+check the shuffled-key/shuffled-order controls CAN differ for the statistic (CLAUDE.md rule 3 orthogonality paragraph) and that the matched
+power at N=14 is honestly computed. (2) Check the key's provenance (sources/cryptiana snapshot, credit Tomokiyo, key: published) and that
+the letter is Gravel, Ratisbon 29 Jan 1665 (f.349). (3) Novelty search per the template families incl. tools/print_check.py on the reading's
+phrases; Gravel's Ratisbon despatches in print (Recueil des instructions, Allemagne; Auerbach) -- a short reading may be summarised in print.
+(4) AUDIT.md: N-class, key source, depth per rule 4a (tools/depth_check.py), safe/unsafe sentence; SECOND-OPINIONS-QUEUE row if N3+. Do not
+decode beyond re-running the committed script.
+
+### R10-SEURE3 -- fr3151-seure-1558: rebuild the Babou 1558 key (fr. 3138 no. 13 f.32) and test it on R1/R2 (cap 4, box 50 min)
+Verdict cheapest next (R9-SEURE2): "rebuild the Babou 1558 key (fr. 3138 no. 13 f. 32, cipher + decipherment) and test it on R1/R2 with the
+unigram statistic and own-text power control first, ~$3". Locate the leaf with tools/gallica_folio.py; crops via tools/iiif_lines.py
+pasted; the cipher/decipherment pairs go through tools/interlinear_align.py (grade C/period). PREREG (statistic, own-text power control at
+the target's N and coverage, gate) pushed before scoring R1/R2; power control below gate = NON-TEST, stop. A FAIL with power is a result.
+If the leaf is not digitised or carries no decipherment, log that and stop.
+
+### R10-HUNT2 -- huntington-blathwayt-madrid-1728: re-registered context-fill, attempt 2 of at most 3 (cap 3, box 40 min)
+As R9-HUNT2 in .claude/briefs/runs/2026-10-06-account1-run9-jobs.md (not run there): bracket fix + margin-filtered gate against the
+shuffled-context control at matched margin; PREREG fixes margin threshold and gate BEFORE running, on FRESH seeds only (4-6+), pushed first.
+If the control fails again, log "attempt 2 FAIL" and name a different instrument as next (rule 3 third-attempt clause); do not tune again.
+
+### R10-NEVF2 -- fr3416-nevers-fils-1589: L05 sign-sorter build for a person's read (cap 3, box 35 min)
+As R9-NEVF2 (not run there): build with tools/sign_sorter.py for positions 4/5/7/13/15/16/17/20 of L05, run tools/sorter_preflight.py and
+paste its output; on PASS a ROOM flag for the account-3 orchestrator to publish (db capability). Do not publish.
+
+### R10-ECK64C -- eckert-1864: image-check the eleven O9-W..AG entries (mssEC 19 pp.26-61) (cap 4.5, box 55 min)
+Verdict cheapest next (R9-ECK64B): the eleven entries were read from the volunteer text only. Fetch only the needed mssEC 19 page images
+(Huntington CONTENTdm, per the host table), crops via tools/iiif_lines.py --image pasted, one blind pass per entry group + reconciliation;
+corrections into the folder's corrections/reading files, decode_no9.py --check exit 0. Grade changes only where the image differs.
+
+### R10-BAL103C -- baluze103-letellier-marca-1644: pre-registered 9 shape split (g-tail vs short) against the f.171r 9s (cap 3, box 40 min)
+Verdict cheapest next (R9-BAL103B): PREREG first (shape classes defined on f.171r control 9s, whose values are known; gate: the split must
+separate f.171r's known values above a label-permutation p95 before it is applied to f.50 tokens). Crops via tools/iiif_lines.py pasted, one
+blind shape read + reconciliation. If the control does not separate, NON-TEST, stop; key.tsv untouched either way unless the gate passes.
