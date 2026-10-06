@@ -3,8 +3,8 @@
  "lines": 44,
  "pass_agreement": "34/44 lines and 230/246 words identical between the two blind passes; most differences are words at the left edge the crops cut (settled on the 1600 px overlay)",
  "grades_words": {
-  "H": 248,
-  "M": 4
+  "H": 250,
+  "M": 2
  },
  "key_check": {
   "cells_read": 53,

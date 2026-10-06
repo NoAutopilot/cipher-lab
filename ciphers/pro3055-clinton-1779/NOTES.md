@@ -1115,3 +1115,11 @@ period decipherment), M 36 (the 9 disagreeing cells and the 27 cells of the five
 comparable cells, GAPS8 + R10-CLIN3868), the 3868 cipher is checked in full: 667/679 comparable cells key-consistent.
 Requests: image-uab.canadiana.ca 2 (Images 1031, 1032 at full/max, both 200). Vision calls: 2 blind Sonnet passes (one
 per page), the worker's own looks at 2 overlays and 16 zoomed crops. Status unchanged: partial.
+
+## R10-CLINV2 (6 Oct 2026, account 2, LANE RUN10): verifier of R10-CLIN3868B's three words
+
+Verdict in AUDIT.md section "R10-CLINV2". PREREG predates the score (10e0744a4 08:00:46 < 854780ec0 08:08:22 UTC); re-score
+reproduces (all three check scripts --check exit 0). Decipherment image (taller crops of Images 1033/1034) read with the cipher
+cells as corroboration: "{to the Kings}" and "Floquet" lose their [?] (H); "Pyan[?]" stays M (struck "Pya", which is the cipher's
+p-y-a written out literally); "Cord" confirmed. `p385_reading.txt` regenerated from `p385_reconciled.tsv`: H 248 M 4 -> H 250 M 2.
+Status unchanged: partial.

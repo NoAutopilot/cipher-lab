@@ -124,7 +124,7 @@ GAPS9's "p.134 is the decipherment of 2380, not an abstract of the 9 Sept 1779 l
 | date, place | New York, 12 Nov 1781 (received 14 May 1782) | New York, 22 Oct 1779 (received Quebec via Halifax 18 Jan[?] 1780) |
 | sender -> recipient | Sir Henry Clinton -> Gen. Frederick Haldimand | same |
 | system | figure pairs (line-letter) on the title page of the 1778 Army List (Leighton & Matyas 1985; Tomokiyo, Cryptiana haldimand.htm) | same key; encipherer counted line 1 as PERMISION/HONORABLE (Tomokiyo's "-1/-2 errors") |
-| reading | passes/p385_reading.txt: 252 words H 248 M 4 | passes/p134_reading.txt: body 241 words H 241 |
+| reading | passes/p385_reading.txt: 252 words H 248 M 4 [R10-CLINV2, 6 Oct 2026: now H 250 M 2, see that section] | passes/p134_reading.txt: body 241 words H 241 |
 | distinctive phrases | "jealousies of the Inhabitants of Vermont"; "Separate that district from the Revolt"; "extend only to granting pardons" | "Army of the Convention by exchange"; "still the Clamours of their own Officers"; "Regiment of Knyphausen and the remainder of the British"; "by the Matross of the Artillery"; "650 Recruits and Artillery" |
 | what the solver searched | GAPS8: one be-api fts phrase query (13 items), VHS vol. II djvu read; Walton, Wilbur, VHS Proceedings 1941 hits not opened; GAPS5 premise check (1920 vol. III, Brymner, Davies vol. 20 snippet) | GAPS9: two be-api fts queries on the decipherment's opening "honored/honoured with your letter of the 19th July" (0 items each); the 1920 vol. III djvu |
 
@@ -459,3 +459,46 @@ protect its conclusions. No novelty class asked; 3868 stays N0 (section above), 
 6. **Postmortem.** No over-claim found in R10-CLIN3868's NOTES section, except one sentence settling the conflict ("the p.385
    'Darby' is the decipherer's or copyist's error"): corrected by a bracket in this verifier's NOTES section, not by editing the
    worker's text. Requests: image-uab.canadiana.ca 1 (Image 1030 full/max, 200). Vision: 2 crops by this session's own eye.
+
+## R10-CLINV2: verifier of R10-CLIN3868B's three words (6 Oct 2026, account 2, LANE RUN10; clock 08:17-08:2x UTC, `date -u`)
+
+A separate session from R10-CLIN3868B (pp.383-384 cell check, NOTES.md section "R10-CLIN3868B"). No novelty class asked; 3868
+stays N0, key `period`, text `known`.
+
+1. **Pre-registration order.** `PREREG_R10-CLIN3868B.md` landed in 10e0744a4 (08:00:46 UTC); the scorer, its JSON, both blind
+   pass files and both reconciled files landed in 854780ec0 (08:08:22 UTC). The gate predates the committed score. (The brief also
+   named 12d7b9f85; no such object exists in this clone -- 854780ec0 is the only scoring commit.)
+2. **Re-score.** `passes/check_3868_p383_384.py --check` exit 0 (re-derives the committed JSON, controls included);
+   `check_3868.py` and `check_3868_c36.py --check` exit 0. Blind pass alone: p.383 295/313, p.384 197/201 key-consistent, control
+   max 38 and 25 -- the gate passes without the reconciliation, so the reconciliation (key-directed: only cells that failed the key
+   were re-read, as on p.382) cannot have made the PASS; quote the reconciled 526/535 with the blind 492/514 beside it. The control
+   moves decipherment letters against fixed key letters, so it can differ on this statistic.
+3. **Cells eye-checked** (Images 1031, 1032 full/max to the scratchpad; `tools/iiif_lines.py --image ... --region` found 0 lines in
+   the figure columns, as the worker reported; PIL box crops, inverted). Against `passes/title1778_reading.txt`:
+   - p.383 c7, after the gloss "to the": **7-10 18-10 -11 6-1 4-3** (ruled) = k-i-n-g-s, all clear; then **1-3**, a lone **2**
+     set right of and above **15-** with **1** below it, **12**, **9** = p, y (1-2), a (15-1), c, e. The 2 is ambiguous in layout:
+     read as 15-2 (n) it gives p-n-a-c-e. Either way five cells spelling PEACE with one slip at position 2.
+   - p.384 c6 (P.S.): **18-16 -18 -14**, one letter in clear, **-17 -6 -4** (ruled) = f-l-o-?-u-e-t. The clear letter is a bowl
+     with a short rightward tail and no visible descender: its form alone reads a or q. The key page has no q (0 in all 30 lines)
+     and has a (18-1, 15-1, ...), so a clear letter is motivated only for q. Graded M on form, the word FLOQUET on the cells.
+   - p.384 c6: **21-1 -2 -3 -8** (ruled) = c-o-r-d, clear.
+4. **The decipherment, eye-checked** (Images 1033, 1034 full/max; taller crops than the committed line crops, which cut the
+   interlinear and the initial). p.385 l.31: the interlinear reads "to the Kings" plainly, above a caret; then "Pya" with a raised
+   mark and a struck-through stroke, then "Peace". The decipherer's abandoned "Pya" is the cipher's own p-y-a (1-3, 1-2, 15-1)
+   written out literally before the word was recognised: the cipher explains the deleted word. p.386 l.7: "Floquet", the vowel an
+   o (the pass B "Flaquet" is not supported). p.386 l.8: "Cord," with a clear capital C (Ford/Cox were crop-edge misreads).
+5. **Decision.** Two of the three M words change; the change is to the transcription of the decipherment, settled from the
+   decipherment's own image, with the cipher as corroboration (not a repair from the cipher):
+   - "{to the Kings[?]}" -> "{to the Kings}" (H).
+   - "Floquet[?]" -> "Floquet" (H).
+   - "Pyan[?]" stays M: it is a struck, abandoned word; "Pya" + mark + struck stroke is what the page shows, and the cipher
+     explains it; not rewritten.
+   - "Cord" already carried no [?] in the reading; confirmed, unchanged.
+   Edited at the source (`passes/p385_reconciled.tsv` rows p385_L31 and p386_L07, note column), regenerated with
+   `passes/check_3868.py`: `p385_reading.txt` and `check_3868.json` change, word grades **H 248 M 4 -> H 250 M 2**; `--check`
+   exit 0 for check_3868, check_3868_c36, check_3868_p383_384. Propagated: this file's table row ("reading", 3868) bracketed.
+   SECOND-OPINIONS-QUEUE.tsv: 0 rows for this target (grep), nothing to propagate. No safe sentence changes.
+6. **Postmortem.** R10-CLIN3868B's NOTES section over-claims nothing; it correctly left the reading file to a verifier. One
+   point it did not state: its "peace" mismatch cell admits a second layout reading (15-2) which does not change its counts'
+   direction. Requests: image-uab.canadiana.ca 4 (Images 1031, 1032, 1033, 1034 full/max, all 200, browser UA + Referer, 2 s
+   apart). Vision: 7 crops by this session's own eye, no subagent.
