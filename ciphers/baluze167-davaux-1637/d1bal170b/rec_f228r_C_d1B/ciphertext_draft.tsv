@@ -1,0 +1,37 @@
+line	position	sign	confidence	alt	why
+b170f228r_a_L02	1	73'	M	B:72	differ
+b170f228r_a_L02	2	s:h	H		agree
+b170f228r_a_L02	3	s:u4	M	A:-	gap
+b170f228r_a_L02	4	s:u4	H		agree
+b170f228r_a_L02	5	45'	M	B:5'	differ
+b170f228r_a_L02	6	s:ll|u4	M	B:s:u4	differ
+b170f228r_a_L02	7	70'	H		agree
+b170f228r_a_L02	8	77'	H		agree
+b170f228r_a_L02	9	s:v	H		agree
+b170f228r_a_L02	10	98'	H		agree
+b170f228r_a_L02	11	s:?(double_long_s_ff)	H		agree
+b170f228r_a_L02	12	16	M	B:16'	differ
+b170f228r_a_L02	13	73	M	B:73=	differ
+b170f228r_c_L01	1	86	M	B:16'	differ
+b170f228r_c_L01	2	9:	M	B:2:	differ
+b170f228r_b_L01	1	16	H		agree
+b170f228r_b_L01	2	41'	H		agree
+b170f228r_b_L01	3	29:	M	B:29	differ
+b170f228r_b_L01	4	s:y+	H		agree
+b170f228r_b_L01	5	16'	M		agree-flagged
+b170f228r_b_L02	1	40'	H		agree
+b170f228r_b_L02	2	46	H		agree
+b170f228r_b_L02	3	s:wave	H		agree
+b170f228r_b_L02	4	46	H		agree
+b170f228r_b_L02	5	73	H		agree
+b170f228r_b_L02	6	s:y+	H		agree
+b170f228r_b_L02	7	76	H		agree
+b170f228r_b_L02	8	33:	H		agree
+b170f228r_b_L02	9	s:?(7_with_bar)|y+	M	B:7=	differ
+b170f228r_b_L02	10	81	M	B:8.1	differ
+b170f228r_b_L02	11	s:?(double_long_s_ff)	H		agree
+b170f228r_b_L02	12	98	H		agree
+b170f228r_b_L02	13	40	H		agree
+b170f228r_b_L02	14	s:h	M	B:s:h|hook	differ
+b170f228r_b_L02	15	51	M		agree-flagged
+b170f228r_b_L02	16	s:w	M		agree-flagged

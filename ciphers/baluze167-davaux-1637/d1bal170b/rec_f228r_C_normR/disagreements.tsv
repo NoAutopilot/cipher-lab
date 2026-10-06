@@ -1,0 +1,11 @@
+line	col	A	B	flagged	crop
+b170f228r_a_L02	5	s:ll|u4	s:u4|4u	AB	
+b170f228r_a_L02	10	s:?(double_long_s_ff)	s:?(ff_crossed_double_long_s)		
+b170f228r_a_L02	11	16	16'		
+b170f228r_a_L02	12	73	73=		
+b170f228r_c_L01	1	86	86'		
+b170f228r_b_L01	3	29:	29		
+b170f228r_b_L02	4	46	46'		
+b170f228r_b_L02	5	73	73'		
+b170f228r_b_L02	9	s:?(7_with_bar)|y+	s:y+		
+b170f228r_b_L02	11	s:?(double_long_s_ff)	s:?(ff_crossed_double_long_s)		
