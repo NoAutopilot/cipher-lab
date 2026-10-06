@@ -1115,3 +1115,11 @@ Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / 
 - **BnF fr.3251 f.11r (Gallica btv1b9060248g canvas 12), no.6, Birago to Nevers, Saluzzo, 14 S**: **D1** (Non-decrypted; outward "fragments read"), 39.3% (S 53 of 135). Check: published key rank 1 of 201 (statistical only); word fragments, no clause. Class without a reading: not counted as a unique solve.
 - **BnF fr.3251 f.21v (no.11), Birago to Nevers, 12 Oct 1570**: **D1** (Non-decrypted; outward "fragments read"), 58.1% (S 155 of 267). Check: published key rank 1 of 201; endorsed passages are phrases ('ceder uiuendo et seruend[o]'), no clause above AD on file. Class without a reading: not counted as a unique solve.
 - **BnF fr.3251 f.87 (no.45), Birago to Nevers, 9 May 1571**: **D1** (Non-decrypted; outward "fragments read"), 58.5% (S 120 of 205). Check: published key rank 1 of 201; two short endorsed passages with M letters. Class without a reading: not counted as a unique solve.
+
+## f.21v grade note (D22-CEPPO21, 6 Oct 2026; solver-side propagation per rule 10, no class or depth change)
+All 27 f.21v 8-tokens read on 4x tiles by the R-8 witness shape (fr.3252 f.36v gloss): 26 decided, every one agreeing with its
+passD label (24 barred = a, 2 plain = et), L03.39 undecided. No label or letter changes; 5 tokens M -> S where shape and score agree
+(L04.17, L06.2.1, L06.2.6, L07.9, L09.5); L01.10 and L11.9 stay M (score prefers the other value). Solver count f.21v S 189 -> 194,
+M 66 -> 61. Key control unchanged (rank 1/201, z 6.43, power 20/20); judge unchanged (-1.135 FAIL). SO-CEPPO-F21V unaffected
+(letters identical). The depth line above uses the verifier's endorsed count (155) and is not changed here; a verifier decides
+whether to endorse the five. Details: NOTES.md "D22-CEPPO21".

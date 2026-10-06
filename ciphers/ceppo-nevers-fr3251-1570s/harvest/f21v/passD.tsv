@@ -106,7 +106,7 @@ L04	13	S75	H	passC
 L04	14	S56	H	passC	
 L04	15	S10	H	passC	
 L04	16	S47	H	passC	
-L04	17	S80	M	passC	
+L04	17	S80	H	passC; R-8 barred + score agree (D22-CEPPO21)	
 L04	18	S89	H	passC	
 L05	1	S37	H	passC	
 L05	2	S17	H	passC	
@@ -144,12 +144,12 @@ L05	33	S23	M	passC
 L05	34	S89	H	passC	
 L06.1	1	S17	H	passC	
 L06.1	2	S62	H	passC	
-L06.2	1	S80	M	passC	
+L06.2	1	S80	H	passC; R-8 barred + score agree (D22-CEPPO21)	
 L06.2	2	S47	H	passC	
 L06.2	3	S97	H	passC	
 L06.2	4	S23	M	passC	
 L06.2	5	S95	M	passC	
-L06.2	6	S80	M	passC	
+L06.2	6	S80	H	passC; R-8 barred + score agree (D22-CEPPO21)	
 L06.2	7	S56	H	passC	
 L06.2	8	S31	M	passC	
 L06.2	9	S17	H	passC	
@@ -167,7 +167,7 @@ L07	5	X_THETA2	H	passC
 L07	6	S75	H	passC	
 L07	7	S97	H	passC	
 L07	8	S47	H	passC	
-L07	9	S80	M	passC	
+L07	9	S80	H	passC; R-8 barred + score agree (D22-CEPPO21)	
 L07	10	S23	H	lookalike 2-of-3	
 L07	11	S53	H	passC	
 L07	12	S17	H	passC	
@@ -202,7 +202,7 @@ L09	1	S23	H	lookalike 2-of-3
 L09	2	S95	M	passC	
 L09	3	X_NEW	M	passC	
 L09	4	S53	H	passC	
-L09	5	S80	M	passC	
+L09	5	S80	H	passC; R-8 barred + score agree (D22-CEPPO21)	
 L09	6	S23	H	lookalike 2-of-3	
 L09	7	S53	H	passC	
 L09	8	S62	H	passC	
