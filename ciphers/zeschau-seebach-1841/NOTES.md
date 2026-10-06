@@ -536,9 +536,47 @@ stronger search, matched control first. Script only (`wordseg_pt.py`), no vision
 
 Requests: none (disk only). Vision 0, subagents 0.
 
-## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026; R9-ZESCH, R9-ZESCH2, 6 Oct 2026)
+## R10-ZESBASIN-zeschau-seebach-1841 (6 Oct 2026, account-4, LANE-RUN10-account-4)
+
+Step run: R9-ZESCH2's suggested diagnostic (RUN9 named step 4): the basin width of the word-parse objective on its
+matched control. Not a search and not a target run. Script only (`basin_width.py`), disk only, no vision, no subagents.
+
+- Pre-registered in `PREREG-R10-ZESBASIN.md` (pushed f9f104ab3, 09:44 UTC; time line corrected in f1c28618c before the
+  run). The only earlier output was one timing call (accepted-swap count and seconds). Objective and control imported
+  unchanged (`wordseg_syllabary.WordLM.llr`, `build_control()`: 2,666 tokens, K 98, 91 free codes, 7 pins, 1 pct error).
+- Procedure: true control key + k random code-code swaps among free codes, 50 draws per k (300 in all, seed 10100), then
+  ONE greedy pass (all 4,095 free-code pairs in a shuffled order, first-improvement). Run 09:45-10:03 UTC, 4 processes.
+  Output `basin_width.json`.
+
+| k swaps | wrong codes at start | mean J at start (true 1181.7) | share J below true | returned to true key | wrong codes after pass | pass ends above true J |
+|---|---|---|---|---|---|---|
+| 1 | 2.0 | 949.5 | 1.00 | **0.32** | 2.18 | 0.00 |
+| 2 | 4.0 | 748.4 | 1.00 | 0.14 | 3.28 | 0.00 |
+| 4 | 7.7 | 367.4 | 1.00 | 0.02 | 6.18 | 0.00 |
+| 8 | 15.0 | -318.4 | 1.00 | 0.00 | 10.54 | 0.00 |
+| 16 | 27.5 | -1080.1 | 1.00 | 0.00 | 20.58 | 0.00 |
+| 32 | 45.8 | -1830.3 | 1.00 | 0.00 | 48.84 | 0.00 |
+
+- Pre-registered verdict: basin width w = 0 (no k with return >= 0.50; even one swap returns only 32 pct) -> **NO BASIN:
+  the word-parse objective is retired as a key-rebuild objective at this N**, whatever search sits on it. The control
+  could have varied (return fraction 0-1 at each k) and it did, steeply with k.
+- What the numbers also say: the true key is the best point of every neighbourhood tested (J below true at all 300
+  starts, and no pass ever ended above true J), and J falls steeply and smoothly with distance (one swap costs about 230
+  on average) -- so the objective ranks the key correctly, but it is not climbable: from a start two codes wrong, a single
+  pass accepts other J-raising swaps first and lands in a nearby lower optimum two-thirds of the time. That matches
+  R9-ZESCH/ZESCH2 (optima about 1,000, far from the key).
+- Caveat stated plainly: this measures a single first-improvement pass, as the brief named; a steepest-ascent or exact
+  near-key enumeration was not measured (no addendum in this job). Since the pre-registered rule reads w = 0, the next
+  instrument needs a seed that is almost exact (a crib inside the cipher, or the R5006 pencil decipherment recovered by
+  imaging), i.e. new material, not another objective-plus-search on the same 2,666 tokens.
+- `basin_width.py --check` re-runs the 18-minute job and compares the json (result in the done line). 0 tokens graded;
+  pins stay Bourdeau's grade-I values (dbourdeau/cyphersolver, CC BY 4.0). Rule 10: no novelty claim.
+
+Requests: none (disk only). Vision 0, subagents 0.
+
+## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026; R9-ZESCH, R9-ZESCH2, R10-ZESBASIN, 6 Oct 2026)
 Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R5007 951 = 603 left + 348 right, GAPS190/196; R5008 260 = 113 on p.1 + 147 on p.2 left, GAPS208); R5007 p.1 and R5008 p.2 right hold no cipher; 0 tokens read
-- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); the word-parse objective failed its matched control twice, under simulated annealing (R9-ZESCH, 0.0026) and under frequency-rank init + parallel tempering (R9-ZESCH2, 0.0146), both vs gate 0.60, with the true key's J 1181.7 above every optimum found (<= 1008.6) -- retired for local search at this N (rule 3 third-attempt clause); next: a basin-width diagnostic of the objective on the control (true key + k random swaps, k = 5/10/20), ~$2, which says whether any search can use this objective at N=2,666
+- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); the word-parse objective failed its matched control twice, under simulated annealing (R9-ZESCH, 0.0026) and under frequency-rank init + parallel tempering (R9-ZESCH2, 0.0146), both vs gate 0.60, with the true key's J 1181.7 above every optimum found (<= 1008.6) -- retired for local search at this N (rule 3 third-attempt clause); the basin-width diagnostic (R10-ZESBASIN) found no basin (one swap from the true key returns under one greedy pass only 32 pct of the time; width 0), so the objective is retired at this N for any search; so the next instrument needs a near-exact seed; next: a probable-word (crib-drag) test of common French diplomatic formulae against the pooled R5005-R5006 pairs, with a matched control, to see if any in-cipher crib can seed a near-key start, ~$3; else new material (R5006 pencil decipherment via multispectral imaging, SEND-QUEUE S5 / ASKS 64, or more ciphertext)
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
@@ -546,10 +584,10 @@ Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); [retired] word-parse objective under local search (R9-ZESCH annealer 0.0026, R9-ZESCH2 parallel tempering 0.0146, gate 0.60; rule 3 third-attempt clause); next: basin-width diagnostic of that objective on the control (true key + k swaps), ~$2, then a different instrument or new material
+- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); [retired] word-parse objective under local search (R9-ZESCH annealer 0.0026, R9-ZESCH2 parallel tempering 0.0146, gate 0.60; rule 3 third-attempt clause); [retired] word-parse objective itself at this N (R10-ZESBASIN: basin width 0, k=1 return 0.32); next: a crib-drag test of French diplomatic formulae for a near-exact seed (~$3), or new material (R5006 pencil decipherment under imaging, SEND-QUEUE S5)
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 1 internal gap (key rebuild: GAPS202's 4-gram annealer retired; R8-ZESCH found R5008's crib test untestable at N=260; the word-parse objective failed its matched control under two search families, R9-ZESCH 0.0026 and R9-ZESCH2 0.0146 vs gate 0.60, true key J 1181.7 above every optimum found, retired for local search at this N); all R5006-R5008 cipher transcribed (1,903 digits); duplicate-effort risk with Bourdeau's stated next step (his HEAD adbf9a1, 5 Oct 2026, has not run a word-parse objective); cheapest next: a basin-width diagnostic of the word-parse objective on the control (true key + k random swaps), ~$2
+Verdict: keep going: 1 internal gap (key rebuild: GAPS202 4-gram annealer retired; R8-ZESCH: R5008 crib test untestable at N=260; word-parse objective failed its matched control under two searches, R9-ZESCH 0.0026, R9-ZESCH2 0.0146 vs 0.60, and R10-ZESBASIN found it has no basin at this N, width 0, k=1 return 0.32, so it is retired for any search); all R5006-R5008 cipher transcribed (1,903 digits); cheapest next: a crib-drag test of French diplomatic formulae on the pooled pairs with a matched control, ~$3, to find a near-exact seed; the R5006 pencil decipherment waits on archive imaging (SEND-QUEUE S5 / ASKS 64)
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 

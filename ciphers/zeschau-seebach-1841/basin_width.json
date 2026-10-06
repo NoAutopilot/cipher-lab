@@ -1,0 +1,3086 @@
+{
+ "objective": "wordseg_syllabary word-parse LLR (unchanged)",
+ "control": "wordseg_syllabary.build_control()",
+ "free_codes": 91,
+ "true_key_J": 1181.72,
+ "draws_per_k": 50,
+ "seed": 10100,
+ "summary": [
+  {
+   "k": 1,
+   "n": 50,
+   "mean_codes_wrong_start": 2.0,
+   "mean_J_start": 949.5,
+   "min_J_start": 669.31,
+   "max_J_start": 1116.85,
+   "share_J_start_below_true": 1.0,
+   "return_fraction": 0.32,
+   "mean_codes_wrong_after": 2.18,
+   "share_after_above_true_J": 0.0
+  },
+  {
+   "k": 2,
+   "n": 50,
+   "mean_codes_wrong_start": 3.98,
+   "mean_J_start": 748.4,
+   "min_J_start": 508.72,
+   "max_J_start": 983.78,
+   "share_J_start_below_true": 1.0,
+   "return_fraction": 0.14,
+   "mean_codes_wrong_after": 3.28,
+   "share_after_above_true_J": 0.0
+  },
+  {
+   "k": 4,
+   "n": 50,
+   "mean_codes_wrong_start": 7.7,
+   "mean_J_start": 367.4,
+   "min_J_start": -73.55,
+   "max_J_start": 707.74,
+   "share_J_start_below_true": 1.0,
+   "return_fraction": 0.02,
+   "mean_codes_wrong_after": 6.18,
+   "share_after_above_true_J": 0.0
+  },
+  {
+   "k": 8,
+   "n": 50,
+   "mean_codes_wrong_start": 14.98,
+   "mean_J_start": -318.4,
+   "min_J_start": -904.4,
+   "max_J_start": 145.05,
+   "share_J_start_below_true": 1.0,
+   "return_fraction": 0.0,
+   "mean_codes_wrong_after": 10.54,
+   "share_after_above_true_J": 0.0
+  },
+  {
+   "k": 16,
+   "n": 50,
+   "mean_codes_wrong_start": 27.48,
+   "mean_J_start": -1080.1,
+   "min_J_start": -1555.58,
+   "max_J_start": -469.38,
+   "share_J_start_below_true": 1.0,
+   "return_fraction": 0.0,
+   "mean_codes_wrong_after": 20.58,
+   "share_after_above_true_J": 0.0
+  },
+  {
+   "k": 32,
+   "n": 50,
+   "mean_codes_wrong_start": 45.76,
+   "mean_J_start": -1830.3,
+   "min_J_start": -2186.05,
+   "max_J_start": -1442.86,
+   "share_J_start_below_true": 1.0,
+   "return_fraction": 0.0,
+   "mean_codes_wrong_after": 48.84,
+   "share_after_above_true_J": 0.0
+  }
+ ],
+ "basin_width_k": 0,
+ "verdict": "NO BASIN: objective retired at this N",
+ "rows": [
+  {
+   "k": 1,
+   "draw": 0,
+   "codes_wrong_start": 2,
+   "J_start": 795.91,
+   "codes_wrong_after": 3,
+   "J_after": 1113.35,
+   "swaps_accepted": 6,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 1,
+   "codes_wrong_start": 2,
+   "J_start": 933.74,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 2,
+   "codes_wrong_start": 2,
+   "J_start": 1089.18,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 3,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 3,
+   "codes_wrong_start": 2,
+   "J_start": 913.98,
+   "codes_wrong_after": 3,
+   "J_after": 1140.81,
+   "swaps_accepted": 5,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 4,
+   "codes_wrong_start": 2,
+   "J_start": 908.76,
+   "codes_wrong_after": 3,
+   "J_after": 1140.63,
+   "swaps_accepted": 5,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 5,
+   "codes_wrong_start": 2,
+   "J_start": 1052.97,
+   "codes_wrong_after": 2,
+   "J_after": 1115.23,
+   "swaps_accepted": 2,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 6,
+   "codes_wrong_start": 2,
+   "J_start": 926.29,
+   "codes_wrong_after": 2,
+   "J_after": 1080.18,
+   "swaps_accepted": 4,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 7,
+   "codes_wrong_start": 2,
+   "J_start": 1014.83,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 3,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 8,
+   "codes_wrong_start": 2,
+   "J_start": 901.39,
+   "codes_wrong_after": 3,
+   "J_after": 1128.34,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 9,
+   "codes_wrong_start": 2,
+   "J_start": 907.22,
+   "codes_wrong_after": 3,
+   "J_after": 1095.62,
+   "swaps_accepted": 3,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 10,
+   "codes_wrong_start": 2,
+   "J_start": 696.43,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 9,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 11,
+   "codes_wrong_start": 2,
+   "J_start": 832.86,
+   "codes_wrong_after": 2,
+   "J_after": 1124.46,
+   "swaps_accepted": 4,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 12,
+   "codes_wrong_start": 2,
+   "J_start": 915.11,
+   "codes_wrong_after": 2,
+   "J_after": 1056.31,
+   "swaps_accepted": 4,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 13,
+   "codes_wrong_start": 2,
+   "J_start": 1042.73,
+   "codes_wrong_after": 3,
+   "J_after": 1117.95,
+   "swaps_accepted": 3,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 14,
+   "codes_wrong_start": 2,
+   "J_start": 1002.02,
+   "codes_wrong_after": 2,
+   "J_after": 1181.19,
+   "swaps_accepted": 4,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 15,
+   "codes_wrong_start": 2,
+   "J_start": 1065.55,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 16,
+   "codes_wrong_start": 2,
+   "J_start": 823.36,
+   "codes_wrong_after": 4,
+   "J_after": 1013.05,
+   "swaps_accepted": 5,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 17,
+   "codes_wrong_start": 2,
+   "J_start": 1070.63,
+   "codes_wrong_after": 3,
+   "J_after": 1119.41,
+   "swaps_accepted": 3,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 18,
+   "codes_wrong_start": 2,
+   "J_start": 842.4,
+   "codes_wrong_after": 3,
+   "J_after": 1138.72,
+   "swaps_accepted": 3,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 19,
+   "codes_wrong_start": 2,
+   "J_start": 944.23,
+   "codes_wrong_after": 2,
+   "J_after": 1030.73,
+   "swaps_accepted": 2,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 20,
+   "codes_wrong_start": 2,
+   "J_start": 1112.66,
+   "codes_wrong_after": 3,
+   "J_after": 1172.0,
+   "swaps_accepted": 3,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 21,
+   "codes_wrong_start": 2,
+   "J_start": 955.59,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 22,
+   "codes_wrong_start": 2,
+   "J_start": 980.83,
+   "codes_wrong_after": 3,
+   "J_after": 1172.0,
+   "swaps_accepted": 3,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 23,
+   "codes_wrong_start": 2,
+   "J_start": 1041.2,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 9,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 24,
+   "codes_wrong_start": 2,
+   "J_start": 1018.18,
+   "codes_wrong_after": 2,
+   "J_after": 1127.94,
+   "swaps_accepted": 2,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 25,
+   "codes_wrong_start": 2,
+   "J_start": 1040.91,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 26,
+   "codes_wrong_start": 2,
+   "J_start": 973.86,
+   "codes_wrong_after": 5,
+   "J_after": 1057.76,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 27,
+   "codes_wrong_start": 2,
+   "J_start": 1116.85,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 28,
+   "codes_wrong_start": 2,
+   "J_start": 926.03,
+   "codes_wrong_after": 6,
+   "J_after": 1030.81,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 29,
+   "codes_wrong_start": 2,
+   "J_start": 880.3,
+   "codes_wrong_after": 4,
+   "J_after": 1112.44,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 30,
+   "codes_wrong_start": 2,
+   "J_start": 1017.09,
+   "codes_wrong_after": 3,
+   "J_after": 1096.23,
+   "swaps_accepted": 3,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 31,
+   "codes_wrong_start": 2,
+   "J_start": 930.37,
+   "codes_wrong_after": 2,
+   "J_after": 1181.19,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 32,
+   "codes_wrong_start": 2,
+   "J_start": 1021.17,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 3,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 33,
+   "codes_wrong_start": 2,
+   "J_start": 907.03,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 34,
+   "codes_wrong_start": 2,
+   "J_start": 1114.79,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 35,
+   "codes_wrong_start": 2,
+   "J_start": 888.08,
+   "codes_wrong_after": 3,
+   "J_after": 1117.08,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 36,
+   "codes_wrong_start": 2,
+   "J_start": 669.31,
+   "codes_wrong_after": 6,
+   "J_after": 885.3,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 37,
+   "codes_wrong_start": 2,
+   "J_start": 884.26,
+   "codes_wrong_after": 3,
+   "J_after": 1148.71,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 38,
+   "codes_wrong_start": 2,
+   "J_start": 1104.05,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 39,
+   "codes_wrong_start": 2,
+   "J_start": 1015.2,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 40,
+   "codes_wrong_start": 2,
+   "J_start": 947.95,
+   "codes_wrong_after": 6,
+   "J_after": 1058.41,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 41,
+   "codes_wrong_start": 2,
+   "J_start": 979.61,
+   "codes_wrong_after": 3,
+   "J_after": 1114.14,
+   "swaps_accepted": 3,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 42,
+   "codes_wrong_start": 2,
+   "J_start": 899.91,
+   "codes_wrong_after": 3,
+   "J_after": 1014.35,
+   "swaps_accepted": 5,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 43,
+   "codes_wrong_start": 2,
+   "J_start": 1111.26,
+   "codes_wrong_after": 2,
+   "J_after": 1159.49,
+   "swaps_accepted": 2,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 44,
+   "codes_wrong_start": 2,
+   "J_start": 1033.17,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 45,
+   "codes_wrong_start": 2,
+   "J_start": 836.15,
+   "codes_wrong_after": 5,
+   "J_after": 1048.58,
+   "swaps_accepted": 6,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 46,
+   "codes_wrong_start": 2,
+   "J_start": 948.49,
+   "codes_wrong_after": 3,
+   "J_after": 1117.08,
+   "swaps_accepted": 5,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 47,
+   "codes_wrong_start": 2,
+   "J_start": 921.65,
+   "codes_wrong_after": 2,
+   "J_after": 1181.19,
+   "swaps_accepted": 4,
+   "returned": false
+  },
+  {
+   "k": 1,
+   "draw": 48,
+   "codes_wrong_start": 2,
+   "J_start": 804.67,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 1,
+   "returned": true
+  },
+  {
+   "k": 1,
+   "draw": 49,
+   "codes_wrong_start": 2,
+   "J_start": 713.38,
+   "codes_wrong_after": 5,
+   "J_after": 885.48,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 0,
+   "codes_wrong_start": 4,
+   "J_start": 739.18,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 2,
+   "returned": true
+  },
+  {
+   "k": 2,
+   "draw": 1,
+   "codes_wrong_start": 4,
+   "J_start": 778.96,
+   "codes_wrong_after": 5,
+   "J_after": 879.57,
+   "swaps_accepted": 6,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 2,
+   "codes_wrong_start": 4,
+   "J_start": 547.9,
+   "codes_wrong_after": 3,
+   "J_after": 889.22,
+   "swaps_accepted": 14,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 3,
+   "codes_wrong_start": 4,
+   "J_start": 905.71,
+   "codes_wrong_after": 2,
+   "J_after": 1181.19,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 4,
+   "codes_wrong_start": 4,
+   "J_start": 818.17,
+   "codes_wrong_after": 3,
+   "J_after": 1141.0,
+   "swaps_accepted": 4,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 5,
+   "codes_wrong_start": 4,
+   "J_start": 638.49,
+   "codes_wrong_after": 5,
+   "J_after": 1064.44,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 6,
+   "codes_wrong_start": 3,
+   "J_start": 944.12,
+   "codes_wrong_after": 4,
+   "J_after": 1103.81,
+   "swaps_accepted": 4,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 7,
+   "codes_wrong_start": 4,
+   "J_start": 830.12,
+   "codes_wrong_after": 4,
+   "J_after": 1065.33,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 8,
+   "codes_wrong_start": 4,
+   "J_start": 513.67,
+   "codes_wrong_after": 6,
+   "J_after": 928.33,
+   "swaps_accepted": 9,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 9,
+   "codes_wrong_start": 4,
+   "J_start": 847.02,
+   "codes_wrong_after": 4,
+   "J_after": 952.95,
+   "swaps_accepted": 6,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 10,
+   "codes_wrong_start": 4,
+   "J_start": 717.72,
+   "codes_wrong_after": 4,
+   "J_after": 1109.23,
+   "swaps_accepted": 11,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 11,
+   "codes_wrong_start": 4,
+   "J_start": 785.89,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 8,
+   "returned": true
+  },
+  {
+   "k": 2,
+   "draw": 12,
+   "codes_wrong_start": 4,
+   "J_start": 862.64,
+   "codes_wrong_after": 2,
+   "J_after": 1151.01,
+   "swaps_accepted": 5,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 13,
+   "codes_wrong_start": 4,
+   "J_start": 691.88,
+   "codes_wrong_after": 2,
+   "J_after": 1171.15,
+   "swaps_accepted": 5,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 14,
+   "codes_wrong_start": 4,
+   "J_start": 973.08,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 8,
+   "returned": true
+  },
+  {
+   "k": 2,
+   "draw": 15,
+   "codes_wrong_start": 4,
+   "J_start": 649.77,
+   "codes_wrong_after": 6,
+   "J_after": 839.68,
+   "swaps_accepted": 11,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 16,
+   "codes_wrong_start": 4,
+   "J_start": 602.59,
+   "codes_wrong_after": 4,
+   "J_after": 1032.11,
+   "swaps_accepted": 15,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 17,
+   "codes_wrong_start": 4,
+   "J_start": 761.82,
+   "codes_wrong_after": 4,
+   "J_after": 999.84,
+   "swaps_accepted": 9,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 18,
+   "codes_wrong_start": 4,
+   "J_start": 686.3,
+   "codes_wrong_after": 7,
+   "J_after": 926.94,
+   "swaps_accepted": 12,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 19,
+   "codes_wrong_start": 4,
+   "J_start": 701.92,
+   "codes_wrong_after": 4,
+   "J_after": 1106.4,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 20,
+   "codes_wrong_start": 4,
+   "J_start": 983.78,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 2,
+   "returned": true
+  },
+  {
+   "k": 2,
+   "draw": 21,
+   "codes_wrong_start": 4,
+   "J_start": 967.2,
+   "codes_wrong_after": 6,
+   "J_after": 1073.51,
+   "swaps_accepted": 6,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 22,
+   "codes_wrong_start": 4,
+   "J_start": 970.11,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 2,
+   "returned": true
+  },
+  {
+   "k": 2,
+   "draw": 23,
+   "codes_wrong_start": 4,
+   "J_start": 790.01,
+   "codes_wrong_after": 2,
+   "J_after": 1140.01,
+   "swaps_accepted": 9,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 24,
+   "codes_wrong_start": 4,
+   "J_start": 666.91,
+   "codes_wrong_after": 4,
+   "J_after": 1094.75,
+   "swaps_accepted": 12,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 25,
+   "codes_wrong_start": 4,
+   "J_start": 708.52,
+   "codes_wrong_after": 4,
+   "J_after": 1076.74,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 26,
+   "codes_wrong_start": 4,
+   "J_start": 939.96,
+   "codes_wrong_after": 4,
+   "J_after": 1061.95,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 27,
+   "codes_wrong_start": 4,
+   "J_start": 804.93,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 2,
+   "returned": true
+  },
+  {
+   "k": 2,
+   "draw": 28,
+   "codes_wrong_start": 4,
+   "J_start": 852.2,
+   "codes_wrong_after": 3,
+   "J_after": 1057.39,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 29,
+   "codes_wrong_start": 4,
+   "J_start": 546.71,
+   "codes_wrong_after": 6,
+   "J_after": 895.52,
+   "swaps_accepted": 14,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 30,
+   "codes_wrong_start": 4,
+   "J_start": 641.08,
+   "codes_wrong_after": 4,
+   "J_after": 1019.84,
+   "swaps_accepted": 6,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 31,
+   "codes_wrong_start": 4,
+   "J_start": 839.16,
+   "codes_wrong_after": 3,
+   "J_after": 1153.59,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 32,
+   "codes_wrong_start": 4,
+   "J_start": 829.95,
+   "codes_wrong_after": 5,
+   "J_after": 1102.12,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 33,
+   "codes_wrong_start": 4,
+   "J_start": 739.65,
+   "codes_wrong_after": 2,
+   "J_after": 1109.95,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 34,
+   "codes_wrong_start": 4,
+   "J_start": 678.69,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 8,
+   "returned": true
+  },
+  {
+   "k": 2,
+   "draw": 35,
+   "codes_wrong_start": 4,
+   "J_start": 585.85,
+   "codes_wrong_after": 2,
+   "J_after": 1181.19,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 36,
+   "codes_wrong_start": 4,
+   "J_start": 712.65,
+   "codes_wrong_after": 3,
+   "J_after": 1161.31,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 37,
+   "codes_wrong_start": 4,
+   "J_start": 508.72,
+   "codes_wrong_after": 5,
+   "J_after": 1091.43,
+   "swaps_accepted": 15,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 38,
+   "codes_wrong_start": 4,
+   "J_start": 586.77,
+   "codes_wrong_after": 4,
+   "J_after": 901.03,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 39,
+   "codes_wrong_start": 4,
+   "J_start": 682.37,
+   "codes_wrong_after": 3,
+   "J_after": 1084.53,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 40,
+   "codes_wrong_start": 4,
+   "J_start": 588.73,
+   "codes_wrong_after": 2,
+   "J_after": 1080.18,
+   "swaps_accepted": 13,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 41,
+   "codes_wrong_start": 4,
+   "J_start": 750.37,
+   "codes_wrong_after": 5,
+   "J_after": 1009.32,
+   "swaps_accepted": 9,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 42,
+   "codes_wrong_start": 4,
+   "J_start": 871.05,
+   "codes_wrong_after": 2,
+   "J_after": 1122.9,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 43,
+   "codes_wrong_start": 4,
+   "J_start": 881.54,
+   "codes_wrong_after": 2,
+   "J_after": 1163.41,
+   "swaps_accepted": 7,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 44,
+   "codes_wrong_start": 4,
+   "J_start": 970.08,
+   "codes_wrong_after": 4,
+   "J_after": 1147.41,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 45,
+   "codes_wrong_start": 4,
+   "J_start": 573.57,
+   "codes_wrong_after": 7,
+   "J_after": 945.27,
+   "swaps_accepted": 11,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 46,
+   "codes_wrong_start": 4,
+   "J_start": 790.28,
+   "codes_wrong_after": 3,
+   "J_after": 1146.75,
+   "swaps_accepted": 4,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 47,
+   "codes_wrong_start": 4,
+   "J_start": 780.81,
+   "codes_wrong_after": 2,
+   "J_after": 1140.49,
+   "swaps_accepted": 5,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 48,
+   "codes_wrong_start": 4,
+   "J_start": 552.8,
+   "codes_wrong_after": 6,
+   "J_after": 818.47,
+   "swaps_accepted": 8,
+   "returned": false
+  },
+  {
+   "k": 2,
+   "draw": 49,
+   "codes_wrong_start": 4,
+   "J_start": 626.28,
+   "codes_wrong_after": 2,
+   "J_after": 1168.43,
+   "swaps_accepted": 13,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 0,
+   "codes_wrong_start": 8,
+   "J_start": -73.55,
+   "codes_wrong_after": 6,
+   "J_after": 824.27,
+   "swaps_accepted": 26,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 1,
+   "codes_wrong_start": 8,
+   "J_start": 304.05,
+   "codes_wrong_after": 5,
+   "J_after": 883.16,
+   "swaps_accepted": 17,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 2,
+   "codes_wrong_start": 8,
+   "J_start": 656.2,
+   "codes_wrong_after": 7,
+   "J_after": 1052.83,
+   "swaps_accepted": 18,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 3,
+   "codes_wrong_start": 8,
+   "J_start": 408.24,
+   "codes_wrong_after": 7,
+   "J_after": 888.51,
+   "swaps_accepted": 21,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 4,
+   "codes_wrong_start": 7,
+   "J_start": 196.22,
+   "codes_wrong_after": 10,
+   "J_after": 731.25,
+   "swaps_accepted": 20,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 5,
+   "codes_wrong_start": 8,
+   "J_start": 433.46,
+   "codes_wrong_after": 7,
+   "J_after": 709.03,
+   "swaps_accepted": 19,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 6,
+   "codes_wrong_start": 8,
+   "J_start": 95.9,
+   "codes_wrong_after": 6,
+   "J_after": 948.59,
+   "swaps_accepted": 19,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 7,
+   "codes_wrong_start": 8,
+   "J_start": 136.31,
+   "codes_wrong_after": 3,
+   "J_after": 1141.61,
+   "swaps_accepted": 20,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 8,
+   "codes_wrong_start": 8,
+   "J_start": 306.75,
+   "codes_wrong_after": 9,
+   "J_after": 752.41,
+   "swaps_accepted": 24,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 9,
+   "codes_wrong_start": 7,
+   "J_start": 299.71,
+   "codes_wrong_after": 8,
+   "J_after": 701.23,
+   "swaps_accepted": 16,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 10,
+   "codes_wrong_start": 8,
+   "J_start": 13.76,
+   "codes_wrong_after": 6,
+   "J_after": 826.46,
+   "swaps_accepted": 21,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 11,
+   "codes_wrong_start": 8,
+   "J_start": 306.9,
+   "codes_wrong_after": 8,
+   "J_after": 971.91,
+   "swaps_accepted": 23,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 12,
+   "codes_wrong_start": 8,
+   "J_start": 132.82,
+   "codes_wrong_after": 10,
+   "J_after": 781.78,
+   "swaps_accepted": 18,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 13,
+   "codes_wrong_start": 8,
+   "J_start": 490.26,
+   "codes_wrong_after": 6,
+   "J_after": 819.16,
+   "swaps_accepted": 16,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 14,
+   "codes_wrong_start": 8,
+   "J_start": 623.04,
+   "codes_wrong_after": 5,
+   "J_after": 976.71,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 15,
+   "codes_wrong_start": 8,
+   "J_start": 693.91,
+   "codes_wrong_after": 4,
+   "J_after": 1007.48,
+   "swaps_accepted": 14,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 16,
+   "codes_wrong_start": 7,
+   "J_start": 369.94,
+   "codes_wrong_after": 7,
+   "J_after": 936.21,
+   "swaps_accepted": 18,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 17,
+   "codes_wrong_start": 6,
+   "J_start": 491.17,
+   "codes_wrong_after": 2,
+   "J_after": 1154.11,
+   "swaps_accepted": 21,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 18,
+   "codes_wrong_start": 8,
+   "J_start": 277.19,
+   "codes_wrong_after": 11,
+   "J_after": 673.66,
+   "swaps_accepted": 18,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 19,
+   "codes_wrong_start": 7,
+   "J_start": 514.58,
+   "codes_wrong_after": 3,
+   "J_after": 1163.63,
+   "swaps_accepted": 11,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 20,
+   "codes_wrong_start": 8,
+   "J_start": 196.71,
+   "codes_wrong_after": 6,
+   "J_after": 905.77,
+   "swaps_accepted": 29,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 21,
+   "codes_wrong_start": 8,
+   "J_start": 302.61,
+   "codes_wrong_after": 7,
+   "J_after": 1058.47,
+   "swaps_accepted": 20,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 22,
+   "codes_wrong_start": 8,
+   "J_start": 92.06,
+   "codes_wrong_after": 11,
+   "J_after": 692.23,
+   "swaps_accepted": 22,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 23,
+   "codes_wrong_start": 8,
+   "J_start": 375.66,
+   "codes_wrong_after": 6,
+   "J_after": 975.75,
+   "swaps_accepted": 19,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 24,
+   "codes_wrong_start": 8,
+   "J_start": 182.92,
+   "codes_wrong_after": 8,
+   "J_after": 923.71,
+   "swaps_accepted": 28,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 25,
+   "codes_wrong_start": 8,
+   "J_start": 294.32,
+   "codes_wrong_after": 9,
+   "J_after": 682.02,
+   "swaps_accepted": 17,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 26,
+   "codes_wrong_start": 8,
+   "J_start": 69.27,
+   "codes_wrong_after": 7,
+   "J_after": 986.09,
+   "swaps_accepted": 19,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 27,
+   "codes_wrong_start": 8,
+   "J_start": 230.9,
+   "codes_wrong_after": 7,
+   "J_after": 925.17,
+   "swaps_accepted": 15,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 28,
+   "codes_wrong_start": 7,
+   "J_start": 407.99,
+   "codes_wrong_after": 4,
+   "J_after": 1115.43,
+   "swaps_accepted": 19,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 29,
+   "codes_wrong_start": 7,
+   "J_start": 639.04,
+   "codes_wrong_after": 3,
+   "J_after": 1101.31,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 30,
+   "codes_wrong_start": 8,
+   "J_start": 707.74,
+   "codes_wrong_after": 4,
+   "J_after": 1112.61,
+   "swaps_accepted": 9,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 31,
+   "codes_wrong_start": 7,
+   "J_start": 565.81,
+   "codes_wrong_after": 5,
+   "J_after": 1091.45,
+   "swaps_accepted": 15,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 32,
+   "codes_wrong_start": 8,
+   "J_start": 207.56,
+   "codes_wrong_after": 5,
+   "J_after": 931.89,
+   "swaps_accepted": 19,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 33,
+   "codes_wrong_start": 8,
+   "J_start": 429.7,
+   "codes_wrong_after": 7,
+   "J_after": 956.97,
+   "swaps_accepted": 15,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 34,
+   "codes_wrong_start": 8,
+   "J_start": 512.6,
+   "codes_wrong_after": 0,
+   "J_after": 1181.72,
+   "swaps_accepted": 14,
+   "returned": true
+  },
+  {
+   "k": 4,
+   "draw": 35,
+   "codes_wrong_start": 8,
+   "J_start": 318.92,
+   "codes_wrong_after": 5,
+   "J_after": 1058.8,
+   "swaps_accepted": 12,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 36,
+   "codes_wrong_start": 8,
+   "J_start": 536.4,
+   "codes_wrong_after": 7,
+   "J_after": 802.75,
+   "swaps_accepted": 19,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 37,
+   "codes_wrong_start": 8,
+   "J_start": 533.29,
+   "codes_wrong_after": 7,
+   "J_after": 993.18,
+   "swaps_accepted": 16,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 38,
+   "codes_wrong_start": 7,
+   "J_start": 592.99,
+   "codes_wrong_after": 4,
+   "J_after": 1107.72,
+   "swaps_accepted": 14,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 39,
+   "codes_wrong_start": 8,
+   "J_start": 118.26,
+   "codes_wrong_after": 6,
+   "J_after": 943.96,
+   "swaps_accepted": 23,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 40,
+   "codes_wrong_start": 8,
+   "J_start": 579.12,
+   "codes_wrong_after": 6,
+   "J_after": 1035.89,
+   "swaps_accepted": 20,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 41,
+   "codes_wrong_start": 7,
+   "J_start": 374.61,
+   "codes_wrong_after": 7,
+   "J_after": 876.41,
+   "swaps_accepted": 15,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 42,
+   "codes_wrong_start": 6,
+   "J_start": 424.15,
+   "codes_wrong_after": 6,
+   "J_after": 919.93,
+   "swaps_accepted": 16,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 43,
+   "codes_wrong_start": 7,
+   "J_start": 327.92,
+   "codes_wrong_after": 6,
+   "J_after": 1066.94,
+   "swaps_accepted": 26,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 44,
+   "codes_wrong_start": 8,
+   "J_start": 687.4,
+   "codes_wrong_after": 6,
+   "J_after": 1071.01,
+   "swaps_accepted": 15,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 45,
+   "codes_wrong_start": 8,
+   "J_start": 628.76,
+   "codes_wrong_after": 7,
+   "J_after": 968.17,
+   "swaps_accepted": 15,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 46,
+   "codes_wrong_start": 7,
+   "J_start": 359.52,
+   "codes_wrong_after": 9,
+   "J_after": 734.47,
+   "swaps_accepted": 10,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 47,
+   "codes_wrong_start": 8,
+   "J_start": 493.5,
+   "codes_wrong_after": 6,
+   "J_after": 1051.63,
+   "swaps_accepted": 19,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 48,
+   "codes_wrong_start": 8,
+   "J_start": 238.21,
+   "codes_wrong_after": 6,
+   "J_after": 1086.85,
+   "swaps_accepted": 13,
+   "returned": false
+  },
+  {
+   "k": 4,
+   "draw": 49,
+   "codes_wrong_start": 8,
+   "J_start": 263.14,
+   "codes_wrong_after": 2,
+   "J_after": 1112.56,
+   "swaps_accepted": 23,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 0,
+   "codes_wrong_start": 13,
+   "J_start": 39.53,
+   "codes_wrong_after": 15,
+   "J_after": 615.49,
+   "swaps_accepted": 29,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 1,
+   "codes_wrong_start": 15,
+   "J_start": -438.6,
+   "codes_wrong_after": 9,
+   "J_after": 641.98,
+   "swaps_accepted": 47,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 2,
+   "codes_wrong_start": 16,
+   "J_start": -183.45,
+   "codes_wrong_after": 9,
+   "J_after": 744.54,
+   "swaps_accepted": 39,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 3,
+   "codes_wrong_start": 16,
+   "J_start": -574.61,
+   "codes_wrong_after": 11,
+   "J_after": 744.17,
+   "swaps_accepted": 39,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 4,
+   "codes_wrong_start": 16,
+   "J_start": -502.11,
+   "codes_wrong_after": 4,
+   "J_after": 923.1,
+   "swaps_accepted": 34,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 5,
+   "codes_wrong_start": 14,
+   "J_start": -298.24,
+   "codes_wrong_after": 5,
+   "J_after": 1055.79,
+   "swaps_accepted": 36,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 6,
+   "codes_wrong_start": 14,
+   "J_start": -42.99,
+   "codes_wrong_after": 13,
+   "J_after": 699.18,
+   "swaps_accepted": 28,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 7,
+   "codes_wrong_start": 15,
+   "J_start": -454.33,
+   "codes_wrong_after": 9,
+   "J_after": 818.09,
+   "swaps_accepted": 23,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 8,
+   "codes_wrong_start": 14,
+   "J_start": -413.02,
+   "codes_wrong_after": 8,
+   "J_after": 921.71,
+   "swaps_accepted": 32,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 9,
+   "codes_wrong_start": 16,
+   "J_start": -864.81,
+   "codes_wrong_after": 19,
+   "J_after": 313.97,
+   "swaps_accepted": 59,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 10,
+   "codes_wrong_start": 15,
+   "J_start": -217.08,
+   "codes_wrong_after": 12,
+   "J_after": 679.3,
+   "swaps_accepted": 42,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 11,
+   "codes_wrong_start": 15,
+   "J_start": -387.27,
+   "codes_wrong_after": 11,
+   "J_after": 688.47,
+   "swaps_accepted": 36,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 12,
+   "codes_wrong_start": 16,
+   "J_start": -871.45,
+   "codes_wrong_after": 12,
+   "J_after": 477.15,
+   "swaps_accepted": 48,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 13,
+   "codes_wrong_start": 16,
+   "J_start": -562.96,
+   "codes_wrong_after": 9,
+   "J_after": 878.3,
+   "swaps_accepted": 57,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 14,
+   "codes_wrong_start": 15,
+   "J_start": -592.81,
+   "codes_wrong_after": 19,
+   "J_after": 350.17,
+   "swaps_accepted": 52,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 15,
+   "codes_wrong_start": 14,
+   "J_start": -266.72,
+   "codes_wrong_after": 13,
+   "J_after": 771.02,
+   "swaps_accepted": 28,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 16,
+   "codes_wrong_start": 15,
+   "J_start": -904.4,
+   "codes_wrong_after": 22,
+   "J_after": 407.63,
+   "swaps_accepted": 62,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 17,
+   "codes_wrong_start": 15,
+   "J_start": -362.03,
+   "codes_wrong_after": 8,
+   "J_after": 892.02,
+   "swaps_accepted": 33,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 18,
+   "codes_wrong_start": 16,
+   "J_start": -116.68,
+   "codes_wrong_after": 9,
+   "J_after": 766.04,
+   "swaps_accepted": 37,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 19,
+   "codes_wrong_start": 15,
+   "J_start": -241.45,
+   "codes_wrong_after": 15,
+   "J_after": 619.5,
+   "swaps_accepted": 50,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 20,
+   "codes_wrong_start": 14,
+   "J_start": -382.2,
+   "codes_wrong_after": 10,
+   "J_after": 763.29,
+   "swaps_accepted": 29,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 21,
+   "codes_wrong_start": 15,
+   "J_start": -20.11,
+   "codes_wrong_after": 9,
+   "J_after": 902.54,
+   "swaps_accepted": 33,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 22,
+   "codes_wrong_start": 14,
+   "J_start": 145.05,
+   "codes_wrong_after": 7,
+   "J_after": 950.0,
+   "swaps_accepted": 25,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 23,
+   "codes_wrong_start": 15,
+   "J_start": -80.44,
+   "codes_wrong_after": 9,
+   "J_after": 742.8,
+   "swaps_accepted": 23,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 24,
+   "codes_wrong_start": 15,
+   "J_start": 67.72,
+   "codes_wrong_after": 5,
+   "J_after": 1074.62,
+   "swaps_accepted": 27,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 25,
+   "codes_wrong_start": 15,
+   "J_start": -68.2,
+   "codes_wrong_after": 15,
+   "J_after": 567.08,
+   "swaps_accepted": 37,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 26,
+   "codes_wrong_start": 14,
+   "J_start": -642.62,
+   "codes_wrong_after": 8,
+   "J_after": 898.75,
+   "swaps_accepted": 47,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 27,
+   "codes_wrong_start": 14,
+   "J_start": -139.96,
+   "codes_wrong_after": 6,
+   "J_after": 956.31,
+   "swaps_accepted": 25,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 28,
+   "codes_wrong_start": 16,
+   "J_start": -33.6,
+   "codes_wrong_after": 9,
+   "J_after": 860.03,
+   "swaps_accepted": 31,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 29,
+   "codes_wrong_start": 12,
+   "J_start": -149.46,
+   "codes_wrong_after": 9,
+   "J_after": 900.79,
+   "swaps_accepted": 34,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 30,
+   "codes_wrong_start": 16,
+   "J_start": -426.28,
+   "codes_wrong_after": 14,
+   "J_after": 641.13,
+   "swaps_accepted": 42,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 31,
+   "codes_wrong_start": 14,
+   "J_start": -434.89,
+   "codes_wrong_after": 14,
+   "J_after": 458.84,
+   "swaps_accepted": 35,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 32,
+   "codes_wrong_start": 15,
+   "J_start": -44.96,
+   "codes_wrong_after": 10,
+   "J_after": 845.27,
+   "swaps_accepted": 43,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 33,
+   "codes_wrong_start": 15,
+   "J_start": -38.94,
+   "codes_wrong_after": 11,
+   "J_after": 709.91,
+   "swaps_accepted": 40,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 34,
+   "codes_wrong_start": 15,
+   "J_start": -149.63,
+   "codes_wrong_after": 11,
+   "J_after": 528.18,
+   "swaps_accepted": 33,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 35,
+   "codes_wrong_start": 16,
+   "J_start": -363.29,
+   "codes_wrong_after": 10,
+   "J_after": 715.22,
+   "swaps_accepted": 38,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 36,
+   "codes_wrong_start": 15,
+   "J_start": -404.03,
+   "codes_wrong_after": 8,
+   "J_after": 986.18,
+   "swaps_accepted": 38,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 37,
+   "codes_wrong_start": 16,
+   "J_start": -410.15,
+   "codes_wrong_after": 19,
+   "J_after": 254.1,
+   "swaps_accepted": 40,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 38,
+   "codes_wrong_start": 15,
+   "J_start": -321.33,
+   "codes_wrong_after": 9,
+   "J_after": 932.64,
+   "swaps_accepted": 33,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 39,
+   "codes_wrong_start": 14,
+   "J_start": -89.26,
+   "codes_wrong_after": 9,
+   "J_after": 878.51,
+   "swaps_accepted": 38,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 40,
+   "codes_wrong_start": 15,
+   "J_start": -504.58,
+   "codes_wrong_after": 13,
+   "J_after": 693.75,
+   "swaps_accepted": 42,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 41,
+   "codes_wrong_start": 16,
+   "J_start": -468.5,
+   "codes_wrong_after": 9,
+   "J_after": 780.82,
+   "swaps_accepted": 34,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 42,
+   "codes_wrong_start": 16,
+   "J_start": -462.08,
+   "codes_wrong_after": 6,
+   "J_after": 901.87,
+   "swaps_accepted": 38,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 43,
+   "codes_wrong_start": 16,
+   "J_start": -525.43,
+   "codes_wrong_after": 9,
+   "J_after": 876.61,
+   "swaps_accepted": 53,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 44,
+   "codes_wrong_start": 16,
+   "J_start": -233.99,
+   "codes_wrong_after": 12,
+   "J_after": 680.87,
+   "swaps_accepted": 36,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 45,
+   "codes_wrong_start": 15,
+   "J_start": -147.25,
+   "codes_wrong_after": 9,
+   "J_after": 972.79,
+   "swaps_accepted": 36,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 46,
+   "codes_wrong_start": 15,
+   "J_start": -475.11,
+   "codes_wrong_after": 10,
+   "J_after": 945.27,
+   "swaps_accepted": 34,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 47,
+   "codes_wrong_start": 14,
+   "J_start": -69.16,
+   "codes_wrong_after": 8,
+   "J_after": 768.64,
+   "swaps_accepted": 32,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 48,
+   "codes_wrong_start": 15,
+   "J_start": -580.07,
+   "codes_wrong_after": 10,
+   "J_after": 625.96,
+   "swaps_accepted": 28,
+   "returned": false
+  },
+  {
+   "k": 8,
+   "draw": 49,
+   "codes_wrong_start": 15,
+   "J_start": -214.17,
+   "codes_wrong_after": 7,
+   "J_after": 900.37,
+   "swaps_accepted": 22,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 0,
+   "codes_wrong_start": 27,
+   "J_start": -1141.29,
+   "codes_wrong_after": 14,
+   "J_after": 510.9,
+   "swaps_accepted": 80,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 1,
+   "codes_wrong_start": 29,
+   "J_start": -1298.82,
+   "codes_wrong_after": 22,
+   "J_after": 451.3,
+   "swaps_accepted": 88,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 2,
+   "codes_wrong_start": 27,
+   "J_start": -921.62,
+   "codes_wrong_after": 10,
+   "J_after": 866.12,
+   "swaps_accepted": 73,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 3,
+   "codes_wrong_start": 30,
+   "J_start": -1056.96,
+   "codes_wrong_after": 21,
+   "J_after": 321.76,
+   "swaps_accepted": 78,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 4,
+   "codes_wrong_start": 27,
+   "J_start": -1094.35,
+   "codes_wrong_after": 18,
+   "J_after": 489.51,
+   "swaps_accepted": 62,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 5,
+   "codes_wrong_start": 29,
+   "J_start": -1481.55,
+   "codes_wrong_after": 21,
+   "J_after": 283.77,
+   "swaps_accepted": 91,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 6,
+   "codes_wrong_start": 27,
+   "J_start": -1306.04,
+   "codes_wrong_after": 32,
+   "J_after": -159.45,
+   "swaps_accepted": 67,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 7,
+   "codes_wrong_start": 26,
+   "J_start": -666.79,
+   "codes_wrong_after": 14,
+   "J_after": 683.42,
+   "swaps_accepted": 67,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 8,
+   "codes_wrong_start": 28,
+   "J_start": -1179.8,
+   "codes_wrong_after": 24,
+   "J_after": 169.84,
+   "swaps_accepted": 102,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 9,
+   "codes_wrong_start": 27,
+   "J_start": -770.77,
+   "codes_wrong_after": 17,
+   "J_after": 412.46,
+   "swaps_accepted": 67,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 10,
+   "codes_wrong_start": 27,
+   "J_start": -920.57,
+   "codes_wrong_after": 13,
+   "J_after": 733.22,
+   "swaps_accepted": 71,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 11,
+   "codes_wrong_start": 29,
+   "J_start": -1238.88,
+   "codes_wrong_after": 26,
+   "J_after": 75.92,
+   "swaps_accepted": 91,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 12,
+   "codes_wrong_start": 28,
+   "J_start": -755.69,
+   "codes_wrong_after": 20,
+   "J_after": 464.05,
+   "swaps_accepted": 79,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 13,
+   "codes_wrong_start": 25,
+   "J_start": -691.23,
+   "codes_wrong_after": 17,
+   "J_after": 504.62,
+   "swaps_accepted": 41,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 14,
+   "codes_wrong_start": 28,
+   "J_start": -1108.78,
+   "codes_wrong_after": 21,
+   "J_after": 347.97,
+   "swaps_accepted": 80,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 15,
+   "codes_wrong_start": 28,
+   "J_start": -1067.88,
+   "codes_wrong_after": 22,
+   "J_after": 313.29,
+   "swaps_accepted": 88,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 16,
+   "codes_wrong_start": 25,
+   "J_start": -943.96,
+   "codes_wrong_after": 12,
+   "J_after": 735.88,
+   "swaps_accepted": 59,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 17,
+   "codes_wrong_start": 27,
+   "J_start": -1114.52,
+   "codes_wrong_after": 17,
+   "J_after": 448.88,
+   "swaps_accepted": 92,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 18,
+   "codes_wrong_start": 28,
+   "J_start": -1425.76,
+   "codes_wrong_after": 23,
+   "J_after": 369.73,
+   "swaps_accepted": 102,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 19,
+   "codes_wrong_start": 26,
+   "J_start": -900.22,
+   "codes_wrong_after": 20,
+   "J_after": 459.92,
+   "swaps_accepted": 73,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 20,
+   "codes_wrong_start": 27,
+   "J_start": -1124.16,
+   "codes_wrong_after": 19,
+   "J_after": 289.86,
+   "swaps_accepted": 79,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 21,
+   "codes_wrong_start": 26,
+   "J_start": -1013.73,
+   "codes_wrong_after": 25,
+   "J_after": 82.2,
+   "swaps_accepted": 86,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 22,
+   "codes_wrong_start": 30,
+   "J_start": -996.16,
+   "codes_wrong_after": 14,
+   "J_after": 653.68,
+   "swaps_accepted": 68,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 23,
+   "codes_wrong_start": 28,
+   "J_start": -1060.05,
+   "codes_wrong_after": 19,
+   "J_after": 533.61,
+   "swaps_accepted": 53,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 24,
+   "codes_wrong_start": 29,
+   "J_start": -1480.09,
+   "codes_wrong_after": 25,
+   "J_after": 15.04,
+   "swaps_accepted": 83,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 25,
+   "codes_wrong_start": 26,
+   "J_start": -1162.23,
+   "codes_wrong_after": 20,
+   "J_after": 180.93,
+   "swaps_accepted": 81,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 26,
+   "codes_wrong_start": 29,
+   "J_start": -1272.37,
+   "codes_wrong_after": 28,
+   "J_after": -177.8,
+   "swaps_accepted": 92,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 27,
+   "codes_wrong_start": 29,
+   "J_start": -1243.85,
+   "codes_wrong_after": 20,
+   "J_after": 485.62,
+   "swaps_accepted": 70,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 28,
+   "codes_wrong_start": 28,
+   "J_start": -1163.9,
+   "codes_wrong_after": 27,
+   "J_after": 54.4,
+   "swaps_accepted": 81,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 29,
+   "codes_wrong_start": 29,
+   "J_start": -1245.85,
+   "codes_wrong_after": 22,
+   "J_after": 194.62,
+   "swaps_accepted": 90,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 30,
+   "codes_wrong_start": 27,
+   "J_start": -1121.62,
+   "codes_wrong_after": 17,
+   "J_after": 573.25,
+   "swaps_accepted": 73,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 31,
+   "codes_wrong_start": 28,
+   "J_start": -1086.09,
+   "codes_wrong_after": 16,
+   "J_after": 629.85,
+   "swaps_accepted": 84,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 32,
+   "codes_wrong_start": 28,
+   "J_start": -1234.36,
+   "codes_wrong_after": 22,
+   "J_after": 291.83,
+   "swaps_accepted": 79,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 33,
+   "codes_wrong_start": 28,
+   "J_start": -1270.78,
+   "codes_wrong_after": 35,
+   "J_after": -170.73,
+   "swaps_accepted": 74,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 34,
+   "codes_wrong_start": 26,
+   "J_start": -1015.5,
+   "codes_wrong_after": 20,
+   "J_after": 219.94,
+   "swaps_accepted": 78,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 35,
+   "codes_wrong_start": 28,
+   "J_start": -1248.06,
+   "codes_wrong_after": 24,
+   "J_after": 308.83,
+   "swaps_accepted": 88,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 36,
+   "codes_wrong_start": 27,
+   "J_start": -887.68,
+   "codes_wrong_after": 18,
+   "J_after": 394.76,
+   "swaps_accepted": 70,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 37,
+   "codes_wrong_start": 29,
+   "J_start": -834.65,
+   "codes_wrong_after": 13,
+   "J_after": 721.2,
+   "swaps_accepted": 47,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 38,
+   "codes_wrong_start": 26,
+   "J_start": -963.15,
+   "codes_wrong_after": 19,
+   "J_after": 452.2,
+   "swaps_accepted": 76,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 39,
+   "codes_wrong_start": 28,
+   "J_start": -1005.27,
+   "codes_wrong_after": 23,
+   "J_after": 118.66,
+   "swaps_accepted": 85,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 40,
+   "codes_wrong_start": 25,
+   "J_start": -469.38,
+   "codes_wrong_after": 17,
+   "J_after": 165.38,
+   "swaps_accepted": 47,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 41,
+   "codes_wrong_start": 26,
+   "J_start": -713.43,
+   "codes_wrong_after": 14,
+   "J_after": 422.69,
+   "swaps_accepted": 61,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 42,
+   "codes_wrong_start": 28,
+   "J_start": -1012.23,
+   "codes_wrong_after": 21,
+   "J_after": 259.37,
+   "swaps_accepted": 63,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 43,
+   "codes_wrong_start": 28,
+   "J_start": -1290.07,
+   "codes_wrong_after": 36,
+   "J_after": -133.69,
+   "swaps_accepted": 87,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 44,
+   "codes_wrong_start": 28,
+   "J_start": -1195.33,
+   "codes_wrong_after": 24,
+   "J_after": 326.17,
+   "swaps_accepted": 72,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 45,
+   "codes_wrong_start": 27,
+   "J_start": -1178.69,
+   "codes_wrong_after": 16,
+   "J_after": 534.15,
+   "swaps_accepted": 75,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 46,
+   "codes_wrong_start": 31,
+   "J_start": -1555.58,
+   "codes_wrong_after": 36,
+   "J_after": -291.0,
+   "swaps_accepted": 90,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 47,
+   "codes_wrong_start": 23,
+   "J_start": -753.42,
+   "codes_wrong_after": 12,
+   "J_after": 405.88,
+   "swaps_accepted": 58,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 48,
+   "codes_wrong_start": 27,
+   "J_start": -1154.14,
+   "codes_wrong_after": 27,
+   "J_after": 151.84,
+   "swaps_accepted": 82,
+   "returned": false
+  },
+  {
+   "k": 16,
+   "draw": 49,
+   "codes_wrong_start": 27,
+   "J_start": -1165.79,
+   "codes_wrong_after": 16,
+   "J_after": 663.86,
+   "swaps_accepted": 79,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 0,
+   "codes_wrong_start": 48,
+   "J_start": -1891.86,
+   "codes_wrong_after": 50,
+   "J_after": -526.23,
+   "swaps_accepted": 114,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 1,
+   "codes_wrong_start": 45,
+   "J_start": -1955.49,
+   "codes_wrong_after": 48,
+   "J_after": -499.9,
+   "swaps_accepted": 132,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 2,
+   "codes_wrong_start": 52,
+   "J_start": -1983.58,
+   "codes_wrong_after": 67,
+   "J_after": -736.28,
+   "swaps_accepted": 145,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 3,
+   "codes_wrong_start": 43,
+   "J_start": -1685.16,
+   "codes_wrong_after": 48,
+   "J_after": -383.03,
+   "swaps_accepted": 106,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 4,
+   "codes_wrong_start": 45,
+   "J_start": -1551.35,
+   "codes_wrong_after": 44,
+   "J_after": -361.67,
+   "swaps_accepted": 103,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 5,
+   "codes_wrong_start": 49,
+   "J_start": -1930.04,
+   "codes_wrong_after": 65,
+   "J_after": -716.63,
+   "swaps_accepted": 133,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 6,
+   "codes_wrong_start": 46,
+   "J_start": -1605.06,
+   "codes_wrong_after": 22,
+   "J_after": 167.11,
+   "swaps_accepted": 97,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 7,
+   "codes_wrong_start": 51,
+   "J_start": -2186.05,
+   "codes_wrong_after": 66,
+   "J_after": -607.02,
+   "swaps_accepted": 144,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 8,
+   "codes_wrong_start": 44,
+   "J_start": -1720.6,
+   "codes_wrong_after": 44,
+   "J_after": -437.85,
+   "swaps_accepted": 109,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 9,
+   "codes_wrong_start": 42,
+   "J_start": -1649.93,
+   "codes_wrong_after": 35,
+   "J_after": -113.95,
+   "swaps_accepted": 126,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 10,
+   "codes_wrong_start": 48,
+   "J_start": -1910.32,
+   "codes_wrong_after": 51,
+   "J_after": -429.34,
+   "swaps_accepted": 114,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 11,
+   "codes_wrong_start": 46,
+   "J_start": -1915.98,
+   "codes_wrong_after": 64,
+   "J_after": -557.37,
+   "swaps_accepted": 142,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 12,
+   "codes_wrong_start": 45,
+   "J_start": -1791.58,
+   "codes_wrong_after": 41,
+   "J_after": -539.2,
+   "swaps_accepted": 115,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 13,
+   "codes_wrong_start": 47,
+   "J_start": -1442.86,
+   "codes_wrong_after": 35,
+   "J_after": -65.04,
+   "swaps_accepted": 123,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 14,
+   "codes_wrong_start": 38,
+   "J_start": -1930.2,
+   "codes_wrong_after": 40,
+   "J_after": -369.53,
+   "swaps_accepted": 123,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 15,
+   "codes_wrong_start": 48,
+   "J_start": -1968.29,
+   "codes_wrong_after": 54,
+   "J_after": -508.63,
+   "swaps_accepted": 138,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 16,
+   "codes_wrong_start": 44,
+   "J_start": -1978.53,
+   "codes_wrong_after": 47,
+   "J_after": -488.35,
+   "swaps_accepted": 138,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 17,
+   "codes_wrong_start": 46,
+   "J_start": -1881.36,
+   "codes_wrong_after": 49,
+   "J_after": -359.0,
+   "swaps_accepted": 111,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 18,
+   "codes_wrong_start": 44,
+   "J_start": -1954.74,
+   "codes_wrong_after": 46,
+   "J_after": -299.65,
+   "swaps_accepted": 117,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 19,
+   "codes_wrong_start": 46,
+   "J_start": -2020.61,
+   "codes_wrong_after": 68,
+   "J_after": -695.82,
+   "swaps_accepted": 145,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 20,
+   "codes_wrong_start": 47,
+   "J_start": -1791.35,
+   "codes_wrong_after": 54,
+   "J_after": -515.37,
+   "swaps_accepted": 131,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 21,
+   "codes_wrong_start": 51,
+   "J_start": -1624.92,
+   "codes_wrong_after": 46,
+   "J_after": -397.37,
+   "swaps_accepted": 112,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 22,
+   "codes_wrong_start": 47,
+   "J_start": -1574.46,
+   "codes_wrong_after": 42,
+   "J_after": -301.71,
+   "swaps_accepted": 124,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 23,
+   "codes_wrong_start": 40,
+   "J_start": -1672.44,
+   "codes_wrong_after": 34,
+   "J_after": -35.29,
+   "swaps_accepted": 138,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 24,
+   "codes_wrong_start": 45,
+   "J_start": -2044.31,
+   "codes_wrong_after": 65,
+   "J_after": -644.79,
+   "swaps_accepted": 148,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 25,
+   "codes_wrong_start": 44,
+   "J_start": -1860.38,
+   "codes_wrong_after": 43,
+   "J_after": -430.7,
+   "swaps_accepted": 127,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 26,
+   "codes_wrong_start": 49,
+   "J_start": -1971.1,
+   "codes_wrong_after": 53,
+   "J_after": -555.2,
+   "swaps_accepted": 138,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 27,
+   "codes_wrong_start": 42,
+   "J_start": -1885.72,
+   "codes_wrong_after": 53,
+   "J_after": -581.84,
+   "swaps_accepted": 114,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 28,
+   "codes_wrong_start": 50,
+   "J_start": -2089.84,
+   "codes_wrong_after": 66,
+   "J_after": -700.99,
+   "swaps_accepted": 149,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 29,
+   "codes_wrong_start": 41,
+   "J_start": -1714.59,
+   "codes_wrong_after": 38,
+   "J_after": -276.14,
+   "swaps_accepted": 136,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 30,
+   "codes_wrong_start": 45,
+   "J_start": -1801.97,
+   "codes_wrong_after": 45,
+   "J_after": -413.01,
+   "swaps_accepted": 116,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 31,
+   "codes_wrong_start": 46,
+   "J_start": -2086.48,
+   "codes_wrong_after": 71,
+   "J_after": -735.0,
+   "swaps_accepted": 133,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 32,
+   "codes_wrong_start": 48,
+   "J_start": -1976.75,
+   "codes_wrong_after": 58,
+   "J_after": -586.38,
+   "swaps_accepted": 137,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 33,
+   "codes_wrong_start": 42,
+   "J_start": -1798.16,
+   "codes_wrong_after": 41,
+   "J_after": -217.8,
+   "swaps_accepted": 129,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 34,
+   "codes_wrong_start": 45,
+   "J_start": -1656.58,
+   "codes_wrong_after": 54,
+   "J_after": -608.48,
+   "swaps_accepted": 110,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 35,
+   "codes_wrong_start": 47,
+   "J_start": -1802.34,
+   "codes_wrong_after": 52,
+   "J_after": -458.54,
+   "swaps_accepted": 110,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 36,
+   "codes_wrong_start": 44,
+   "J_start": -1646.58,
+   "codes_wrong_after": 37,
+   "J_after": -267.23,
+   "swaps_accepted": 109,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 37,
+   "codes_wrong_start": 50,
+   "J_start": -1893.38,
+   "codes_wrong_after": 53,
+   "J_after": -618.95,
+   "swaps_accepted": 107,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 38,
+   "codes_wrong_start": 45,
+   "J_start": -1690.77,
+   "codes_wrong_after": 50,
+   "J_after": -458.54,
+   "swaps_accepted": 119,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 39,
+   "codes_wrong_start": 49,
+   "J_start": -1830.12,
+   "codes_wrong_after": 33,
+   "J_after": -189.33,
+   "swaps_accepted": 135,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 40,
+   "codes_wrong_start": 42,
+   "J_start": -1897.61,
+   "codes_wrong_after": 61,
+   "J_after": -591.48,
+   "swaps_accepted": 120,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 41,
+   "codes_wrong_start": 48,
+   "J_start": -1806.48,
+   "codes_wrong_after": 48,
+   "J_after": -389.63,
+   "swaps_accepted": 116,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 42,
+   "codes_wrong_start": 47,
+   "J_start": -1743.78,
+   "codes_wrong_after": 39,
+   "J_after": -264.53,
+   "swaps_accepted": 139,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 43,
+   "codes_wrong_start": 41,
+   "J_start": -1509.86,
+   "codes_wrong_after": 35,
+   "J_after": -201.72,
+   "swaps_accepted": 145,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 44,
+   "codes_wrong_start": 47,
+   "J_start": -1890.96,
+   "codes_wrong_after": 40,
+   "J_after": -299.8,
+   "swaps_accepted": 143,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 45,
+   "codes_wrong_start": 43,
+   "J_start": -1837.42,
+   "codes_wrong_after": 54,
+   "J_after": -546.81,
+   "swaps_accepted": 124,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 46,
+   "codes_wrong_start": 50,
+   "J_start": -1797.88,
+   "codes_wrong_after": 56,
+   "J_after": -608.19,
+   "swaps_accepted": 118,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 47,
+   "codes_wrong_start": 46,
+   "J_start": -2008.68,
+   "codes_wrong_after": 53,
+   "J_after": -525.65,
+   "swaps_accepted": 123,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 48,
+   "codes_wrong_start": 45,
+   "J_start": -1755.93,
+   "codes_wrong_after": 40,
+   "J_after": -275.9,
+   "swaps_accepted": 135,
+   "returned": false
+  },
+  {
+   "k": 32,
+   "draw": 49,
+   "codes_wrong_start": 45,
+   "J_start": -1900.39,
+   "codes_wrong_after": 44,
+   "J_after": -383.91,
+   "swaps_accepted": 149,
+   "returned": false
+  }
+ ]
+}
