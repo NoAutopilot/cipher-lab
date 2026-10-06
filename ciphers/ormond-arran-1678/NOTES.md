@@ -492,6 +492,57 @@ neither 57 nor 58 recurs in the passage).
 Requests: archive.org 5 (page_numbers.json x2, one a 500 retried once after a pause; files metadata 1; page image 1;
 `_djvu.txt` 1), all one at a time, >=2 s apart. No logins.
 
+## R8-ORM (6 Oct 2026, account 2, LANE-RUN8): the 1871 Russell-Prendergast report's entry for MS. Carte 50
+
+Run 6 Oct 2026 03:37-03:41 UTC (`date -u`). Lookup only: no reading, no test, no vision calls.
+
+**Where the text was found.** Not on archive.org: `advancedsearch` for the title, the authors and the DKPR report
+(4 queries) found no scan of the 1871 report (the one "thirty-second report" hit is the *Irish* Deputy Keeper's,
+`op1254077-1001`, a different series). Google Books API (key, `country=US`, 1 query `"Carte Manuscripts in the
+Bodleian"`) gives **`Qv8UAAAAQAAJ`**, *The Carte manuscripts in the Bodleian library, Oxford. A report, by C.W. Russell
+and J.P. Prendergast* (1871), full view (ALL_PAGES, 252 pp.); also full view `DN-bhb-8AcYC` (1888 issue, not used).
+The page-text view is captcha-blocked from the cloud (host table), so the volume was read through Google's
+search-within-volume JSON (`tools/gbooks_search_within.py` endpoint, `jscmd=SearchWithinVolume2`), and the vol. 50
+entry rebuilt from overlapping snippets, each joined on a shared run of at least five words.
+
+**The entry, p.43 (Part II, "Notices of Carte's MSS."), as rebuilt:**
+"Vol. 50, formerly marked "WW 2," folio. Copies and original drafts of the Duke of Ormonde's letters, from 1669 to
+1687, to the following persons: -Captain G. Mathews, Lord Clanricarde, the Lord Chancellor of Ireland, the Constable
+of Castile (Governor of the Low Countries), Sir J. Temple (Solicitor General), Lord Ossory, Lord Kingston, Lord Arran,
+Lord Aungier, Lord Derby, Lord Strafford, the Prince of Orange, Sir G. Lane, Sir W. Temple, the King, Lord Arlington,
+Lord and Lady Burlington, Colonel Fitzpatrick, Sir Robert Southwell, Sir W. Coventry, the Archbishop of Canterbury,
+the Lord Primate of Ireland, Lord Sunderland, Lord Coventry, the Earl of Rochester, the Earl of Longford, and others.
+There are also some miscellaneous papers, among which are the following: -Instrument of the University of Oxford,
+making Lord Clarendon High Steward. The Duke of Ormonde's Speech in the Cause between Hyde and Emerton. Letter to the
+King after Major Warren was sent over in 1642, with a memorandum about transporting the Forces to England (Feb.
+1643). A prayer of Ormonde's. Patent of Precedence of Lord Ossory's children. Settlement proposed on the Marriage of
+James Earl of Ossory and Lady Hyde. Account of Ormonde's Debts, &c. **At the end of the volume is a collection of
+ciphers of the following persons: -Sir H. de Vic, the Lord Chancellor of Ireland, the Lord Chancellor of England,
+Lord Arlington, Sir E. Nicholas, the Earl of Orrery, Sir W. Coventry, Lords Anglesea, Ossory, Carlingford, Kingston,
+Conway, Longford, and Arran, Sir T. Clarges, Sir G. Carteret, Captain Barrington, Colonel W. Legg, Sir Robert
+Southwell, Sir G. Lane, J. Walsh, Dr. Gorges, Sir Robert Booth, and P. Alden. They are dated from 1662 to 1682.**"
+(Snippet OCR artefacts "Governor vernor" and "Sir J. Tem Temple" normalised; nothing else changed.)
+
+And p.72 (the report's summary of the Ormonde papers): "The four volumes 48-51 contain drafts or copies, very many
+autograph, of Ormonde's own letters, and in volume 50 is a collection of the various ciphers (with their respective
+keys) employed by Ormonde and his several correspondents."
+
+**What it adds and what it does not.**
+- It confirms, from an 1871 description independent of the Bodleian online record (L39), that the cipher collection
+  in vol. 50 includes a cipher **of Lord Arran**, and one of **Lord Longford** (the 1680 sibling correspondent tested in
+  YX-ORM/ZX2-ORM), inside an overall date range 1662-1682 that covers Jan 1678, and that the report counts the keys as
+  present ("with their respective keys").
+- It gives **no folio numbers** and no dates per cipher: within-volume searches for "439", "440" and "472" hit only
+  other volumes' references and the index (pp.39, 92-93, 213, 234, 236). So it neither confirms nor contradicts that
+  fols. 439-440 are the Ormond-Arran key, says nothing of the f.472 key Kenyon cited, and does not say whether vol. 50
+  holds one Arran cipher or several (e.g. one for 1678 and one for his 1682-84 Deputyship).
+- It prints **no key table** (searches for "key"/"keys" return only p.27 De Boderie, p.46 vol. 74's "keys to ciphers
+  before and during the Rebellion", p.72 above and unrelated pp.74-143). A search result for this volume, not a
+  novelty verdict (rule 10).
+
+Requests: archive.org 4 (advancedsearch); www.googleapis.com 1; books.google.com 37 (SearchWithinVolume2 JSON,
+one at a time, 2 s apart, all HTTP 200, no challenge). No logins.
+
 ## Remaining gaps (FT4c-ormond-arran-1678, 3 Oct 2026)
 Read so far: 0 of 20 groups read (no key has fitted: YX-ORM, ZX2-ORM; status open, not partial)
 - key sheet MS. Carte 50 fols. 439-440 (Ormond-Arran cypher, Jan 1678) - blocker: waiting-on LOCAL-QUEUE L39; the catalogue flag is unreachable from the cloud (archives.bodleian.ox.ac.uk Anubis challenge, FT4), Digital Bodleian has no Carte 50 images (FT4b, positive control returned Carte 3/55/91), and no printed transcription was found (FT4b section above), so the leaves need a reproduction order or a person's reading
@@ -501,7 +552,7 @@ Read so far: 0 of 20 groups read (no key has fitted: YX-ORM, ZX2-ORM; status ope
 - [x] siblings: 1680 Ormond-Longford sibling passages and keys tested (YX-ORM, ZX2-ORM), no fit
 - [x] clear-pages: Arran's reply of 5 Feb and Ormond's clear letter of 29 Jan read (Premise check c)
 - [ ] known-keys: MS. Carte 50 fols. 439-440 key sheet located 3 Oct 2026; read it once L39 or a reproduction order returns images
-- [x] print: no printed Carte 50 fols. 439-440 table found in HMC Ormonde N.S. IV-V, IA full text, Google Books or OpenAlex (FT4b, 3 Oct 2026)
+- [x] print: no printed Carte 50 fols. 439-440 table found in HMC Ormonde N.S. IV-V, IA full text, Google Books or OpenAlex (FT4b, 3 Oct 2026); the 1871 Russell-Prendergast report (p.43) lists a cipher "of ... Arran" among vol. 50's keys, 1662-1682, but prints no table and no folios (R8-ORM, 6 Oct 2026)
 - [n/a] key-rebuild: twenty groups are far too short for cryptanalytic key rebuilding
 - [x] image-check: ninth group read as 58 on the IA page image of the 1906 print, vol. IV p.93 (FT4c, 3 Oct 2026)
 - [n/a] retry: no earlier route failed that a retry would change
@@ -511,5 +562,5 @@ Verdict: keep going: 0 internal gaps; cheapest next: read the MS. Carte 50 fols.
 
 - While L39 is pending, read the 1871 Russell and Prendergast report (*The Carte Manuscripts in the Bodleian Library*,
 also DKPR 32nd Report) entry for MS. Carte 50 in a public-domain scan, for any description of fols. 439-440 or the
-f.472 key Kenyon used. This depends on nobody. The 57/58 image check was done on 3 Oct 2026 (FT4c): the print reads 58.
+f.472 key Kenyon used. This depends on nobody. Done 6 Oct 2026 (R8-ORM, section above): vol. 50 entry read, Arran cipher listed, no folios, no table. The 57/58 image check was done on 3 Oct 2026 (FT4c): the print reads 58.
 - 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L39 answer landed, local-runner/L39-2026-10-05.md -- MS. Carte 50 (ark:29072/x08c97kq77qq) "NOT AVAILABLE ONLINE", "a large collection of ciphers in use from 1662-82" from fol. 405; no item-level record for fols. 439-440.
