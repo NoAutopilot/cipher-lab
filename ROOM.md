@@ -8977,3 +8977,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:18 | R7-SUR | claim: na-suriname-map-1781 single-sign blind look (L08:51, L10:30, L11:17 vs L10:66), cap 4.5, box to 02:03 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:18 | R7-ROUS worker | claim naf14913-rousseau-venice-1743: Souchon 1915 No 2044/2031 check, cap 1.5, box ends 01:48 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:18 | R7-OLDA worker | claim for LANE LANE-RUN7-account-2: R7-OLDA, na-oldenbarnevelt-2442-1605, crop-and-read blocks A and C2; cap 6 USD, box 01:18-02:28 UTC
+2026-10-06 01:18 | R7-MANTP worker | claim: sachsstaatsarchiv-manteuffel-1712 pooled single-code-gloss gate, cap 2.5, box end 02:02 UTC, for LANE LANE-RUN7-account-2
