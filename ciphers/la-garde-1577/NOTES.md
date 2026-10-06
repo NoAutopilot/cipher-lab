@@ -1282,9 +1282,53 @@ signal), the base codes now look most like a low-K homophonic or similar contact
 is disfavoured but not excluded. Status unchanged (`open`). This is a statistic, not a solver; it is logged in
 HYPOTHESES.md.
 
-**Next cheapest step:** `homophonic` through `tools/family_run.py` on `families/basecode_cipher.txt`, matched control
-first at noise 0.23 (about USD 1.5, CPU only). Expect CONTROL BELOW GATE: masc's own control was 0.367 at 0.23
+**Next cheapest step:** ~~`homophonic` through `tools/family_run.py` on `families/basecode_cipher.txt`, matched control
+first at noise 0.23~~ (run by R15-LAGHOM, 6 Oct 2026, section below: CONTROL BELOW GATE at 0.23) (about USD 1.5, CPU only). Expect CONTROL BELOW GATE: masc's own control was 0.367 at 0.23
 (A2-LAG3), and homophonic is harder. If that happens, the row is a non-test at this error, and the target waits for
 GAPS149's new material: a sharper image of KHA A 11/XIV C/M-12 to lower the error, or pooled same-system ciphertext.
 
 Requests: none. Vision: 0 calls. New files: `families/mi_prereg.md`, `families/mi_check.py`, `families/mi_check.tsv`.
+
+## R15-LAGHOM: `homophonic` through `tools/family_run.py`, matched control first at the measured error (6 Oct 2026, account 2, LANE-RUN15-account-2)
+
+**Job:** R15-LAGMI's named next step. CPU only: no network, no vision, no subagents. Intake gate (lane orchestrator, 17:1x
+UTC): `la-garde-1577: open (line 1) -- edition/page or full-text-search citation found within 6 lines`. Checked first that
+no `homophonic` family_run row existed in HYPOTHESES.md (none did; only `solve_l2.py`'s score-based runs, L2/L4).
+
+**Pre-registration:** `families/homophonic_prereg.md`, commit f45e26922, pushed 18:19 UTC before any run. Gate 0.60 on the
+control mean, seeds 1-3, restarts 8, `profile=target`, spec fr16 corpora (as A2-LAG3), `--measured-error 0.23`. Run A
+(gating) at noise 0.23; run B (curve only, `--control-only`) at noise 0.10. Shuffled-target run and judge only if A gated.
+
+**Runs** (`python3 tools/family_run.py specs/la-garde-1577.json --family homophonic --cipher
+ciphers/la-garde-1577/families/basecode_cipher.txt --tokens space --seeds 3 --gate 0.6 --restarts 8 --measured-error 0.23
+--param profile=target --param noise=p [--control-only]`; about 42 s each; rows copied verbatim into HYPOTHESES.md):
+
+| Control noise | Control recovery, seeds 1-3 | Mean | Gate 0.6 | Target |
+|---|---|---|---|---|
+| 0.10 (below measured; tool warns non-test; curve only) | 0.699 / 0.493 / 0.672 | 0.622 | met (not gating) | not run (control-only) |
+| **0.23** (= measured error) | 0.345 / 0.349 / 0.358 | **0.351** | **not met** | not run (CONTROL BELOW GATE, exit 3) |
+
+**Result: `homophonic` is untestable by this family at N=229 and the measured ~23% transcription error -- not a
+negative.** The control reads its own design at 0.62 with 10% injected error, but falls to 0.35 at the target's measured
+error, the same collapse masc showed (A2-LAG3: 0.565 at 0.20, 0.367 at 0.23). The control can differ from the target on
+the statistic (recovery depends on the key and on the tokens the noise redraws), so this is a real control below gate,
+not a non-test by construction. The target was not run, no shuffled run was needed, and no judge was run. Grades: 0 cipher
+tokens read (H 0, C 0, S 0, M 0, I 0). The 0.10 row's "gate met yes" is the tool's control-only flag; per the SALV-DIAG
+clause it licenses nothing about the target at 0.23. Status unchanged (`open`).
+
+**Where the ladder stands.** The statistics favour a contact-preserving low-K substitution (GAPS145 IC excludes masc;
+GAPS149 no periodicity; R15-LAGMI Z_MI favours homophonic over running key). But every solver family that would read
+such a design (masc, homophonic, syllabary, wordcode) now has a control below gate at the measured error. By rule 3's
+third-attempt clause, the next attempt needs new material, not another family run at the same N and error: (a) a sharper
+image of KHA A 11/XIV C/M-12, then a transcription pass to bring the error below about 0.10, where this control reads
+0.62; or (b) same-system ciphertext to pool (Gachard, Correspondance de Guillaume le Taciturne; the WVO siblings already
+swept in ZX2-LAG2). A further homophonic run at 0.23 with more restarts is not the next step.
+
+**Next cheapest step:** a transcription-error check, not a solver run. Re-measure the base-code disagreement between
+`ciphertext_6179_v2.tsv`/`ciphertext_6467_v2.tsv` and the passes, and list which sign pairs cause most of it (for
+`tools/lookalike_pass.py` or the owner's sign sorter). If the base codes alone (marks stripped) disagree well below 0.23,
+re-run this prereg at that measured figure. Otherwise the target waits for the image or for pooled siblings. About USD 1.5.
+
+Requests: none. Vision: 0 calls. Files: `families/homophonic_prereg.md`; two HYPOTHESES.md rows. No decode files were
+written (target not run).
+
