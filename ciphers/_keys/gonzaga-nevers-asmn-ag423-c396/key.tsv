@@ -1,0 +1,148 @@
+# Gonzaga-Nevers cipher key, Archivio di Stato di Mantova, Archivio Gonzaga, busta 423, c.396 (undated; Duke Carlo I Gonzaga-Nevers, 1600s-1630s)
+# office: Gonzaga-Nevers ducal chancery (Mantua)
+# years: 1600s-1630s, undated
+# language: it
+# key_source: period (archival key, seen in a published reproduction: Mantova e i Gonzaga di Nevers, ed. U. Bazzotti and D. Ferrari, p.28 no.18)
+code	value	kind	grade	note	read_agreement
+15	a	letter	M	A read 11 (taken by i); zoomed crop shows 15	reconciled
+28	a	letter	H		both
+39	a	letter	H		both
+10	b	letter	H		both
+67	b	letter	H		both
+13	c	letter	H		both
+30	c	letter	H		both
+25	d	letter	H		both
+42	d	letter	H		both
+38	e	letter	H		both
+48	e	letter	M	A unclear 48|43	both
+52	e	letter	H		both
+12	f	letter	H		both
+19	f	letter	H		both
+33	g	letter	H		both
+44	g	letter	M	digits possibly struck through	both
+29	h	letter	H		both
+49	h	letter	M	digits possibly struck through	both
+11	i	letter	H		both
+24	i	letter	H		both
+63	i	letter	H		both
+35	l	letter	H		both
+82	l	letter	H		both
+14	m	letter	H		both
+37	m	letter	H		both
+27	n	letter	H		both
+55	n	letter	H		both
+20	o	letter	H		both
+53	o	letter	H		both
+71	o	letter	H		both
+17	p	letter	H		both
+32	p	letter	H		both
+46	qu	letter	M	digits possibly struck through	both
+65	qu	letter	H		both
+40	r	letter	H		both
+90	r	letter	H		both
+16	s	letter	H		both
+18	s	letter	H		both
+36	t	letter	H		both
+64	t	letter	M	A unclear 64|69	both
+26	u	letter	H		both
+34	u	letter	H		both
+61	u	letter	M	third row, under u (zoomed crop)	both
+21	z	letter	H		both
+57	z	letter	H		both
+23	Papa	word	H		both
+31	Imperatore	word	H		both
+95	Re di	word	H	A unclear 95|91 (91 is Gouer.re di)	both
+102	Reina di	word	H		both
+96	Cardinale	word	H		both
+103	Mons.r di	word	H	Monsignor di	both
+41	Duca di	word	H		both
+105	Prencipe di	word	H		both
+62	Vescovo di	word	H		both
+43	Mar.se di	word	H	Marchese di	both
+47	Conte di	word	H		both
+112	Cavalier	word	H		both
+91	Gover.re di	word	H	Governatore di	both
+101	Amb.re di	word	H	Ambasciatore di	both
+93	Senatore	word	M	struck; replaced by unclear word at left (Sar...?)	both
+93	[replacement, illegible] (Sar...)	word	M	replacement left of Senatore; illegible	both
+128	Senato	word	M	struck; replaced by unclear word at left (Samuello?)	both
+128	[replacement, illegible] (Samuello?)	word	M	replacement; unclear	both
+94	Cancelliere	word	M	struck; replaced by S. Giorgio	both
+94	S. Giorgio	word	M	replacement; unclear spelling	both
+113	Pres.te	word	M	struck; Presidente; replaced by unclear word at left (Giovanni?)	both
+113	[replacement, illegible] (Giovanni?)	word	M	replacement; unclear	both
+122	Consiglio	word	M	struck; replaced by unclear short word at left	both
+122	[replacement, illegible]	word	M	replacement; illegible	both
+100	Capitanio	word	M	struck; replaced by unclear word at left (F. ...)	both
+100	[replacement, illegible]	word	M	replacement; illegible	both
+98	Anselmo	word	M	struck; replaced by unclear word at left (Gio. ...?)	both
+98	[replacement, illegible]	word	M	replacement; illegible	both
+121	Spinola	word	M	unclear whether struck; unclear word written at left (Tom...?)	both
+121	[replacement, illegible]	word	M	word left of Spinola; illegible	both
+69	Italia	word	H		both
+72	Spagna	word	H		both
+73	Francia	word	H		both
+70	Alemagna	word	H		both
+115	Roma	word	H		both
+92	Milano	word	H		both
+50	Mantoua	word	H	squeezed in above Fiorenza	both
+75	Fiorenza	word	H		both
+74	Ferrara	word	H		both
+76	Parma	word	H		both
+77	Vrbino	word	H		both
+22	Sabioneta	word	H		both
+54	Casale	word	H		both
+56	Alba	word	H		both
+117	Acqui	word	H	squeezed in above Turino	both
+116	Turino	word	H		both
+68	Piemonte	word	H		both
+66	Sauoia	word	H		both
+97	Saluzzo	word	H		both
+51	Monferr.o	word	H	Monferrato	both
+58	Trino	word	M	struck; value unclear 58|68; replaced by word at left (Pont...?) unclear	both
+58	[replacement, illegible] (Pont...?)	word	M	replacement; unclear	both
+59	[replacement, illegible] (Moncalvo?)	word	M	struck; replaced by word above (consiglio?) unclear; another word below also unclear	both
+59	[replacement, illegible] (consiglio?)	word	M	replacement above; unclear	both
+114	S. Damiano	word	M	struck; unclear reading; replaced by word above, illegible	both
+60	Diano	word	H		both
+99	Neuers	word	H		both
+104	Alanzone	word	H		both
+118	S.S.ta	word	H	Santita	both
+119	S.M.ta	word	H	Maesta	both
+120	S.Cu.a	word	M	unclear abbreviation	both
+78	V.Alt.a	word	H	Vostra Altezza	both
+79	S.Alt.a	word	H	Sua Altezza	both
+80	V.S.ria	word	H	Vostra Signoria	both
+81	S.S.ria	word	M	Sua Signoria; A read the label V.S.ria (80 is V.S.ria), zoomed crop: S.S.ria	both
+123	[added beside 81, struck/overwritten entry]	word	M	A read 121; zoomed crop: 123	reconciled
+106	Sig.	word	M	unclear; "124" written beside	both
+124	[replacement, illegible]	word	M	added value beside 106; unclear	both
+84	il	word	H		both
+85	la	word	H		both
+86	le	word	H		both
+87	li	word	H		both
+107	lo	word	H		both
+83	che	word	H		both
+88	non	word	H		both
+89	per	word	H		both
+108	perche	word	H		both
+109	stato	word	H		both
+110	del	word	H		both
+122	dal	word	M	squeezed in above quando; unclear 122|127	both
+111	quando	word	H		both
+45	nondimeno	word	H		both
+N1	(null) triangle	null	H	symbol description, not a value	both
+N2	(null) square with dot	null	H	symbol description, not a value	both
+N3	(null) phi (circle with vertical stroke)	null	H	symbol description, not a value	both
+N4	(null) omega	null	H	symbol description, not a value	both
+N5	(null) R with ligature (Rx-like)	null	H	symbol description, not a value	both
+N6	(null) lambda	null	H	symbol description, not a value	both
+N7	(null) XX-like ligature	null	H	symbol description, not a value	both
+N8	(null) theta-like barred o (-o-)	null	H	symbol description, not a value	both
+N9	(null) I with bars (barred double stroke)	null	H	symbol description, not a value	both
+N10	(null) double-barred hash (#)	null	H	symbol description, not a value	both
+N11	(null) upward arrow / caret on stem	null	H	symbol description, not a value	both
+N12	(null) o with cross above (Venus-like)	null	H	symbol description, not a value	both
+N13	(null) S with vertical stroke ($)	null	H	symbol description, not a value	both
+N14	(null) diamond with dot on stem	null	H	symbol description, not a value	both
+N15	(null) asterisk/star with dots (x with dots)	null	H	symbol description, not a value	both
