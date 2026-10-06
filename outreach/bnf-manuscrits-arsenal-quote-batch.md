@@ -55,3 +55,6 @@ Could you tell me the fee and ordering procedure for each? I am not committing t
 With thanks,
 
 [SIGN-OFF]
+
+## Reply, 6 Oct 2026 (logged by the account-3 orchestrator)
+6 Oct 2026 10:45 UTC, BnF Image and digital services, Customer Service (reproduction@bnf.fr), to both addresses: the request was forwarded from Manuscrits; two quotes will follow, DEV-2610-010031 (Arsenal items 6-8) and DEV-2610-010032 (Manuscrits items 1-5). They note the customer account is invoiced in the person's name (account details not recorded here, rule 9). No prices yet; nothing to pay until the quotes arrive and the owner decides (image budget parked until funding).
