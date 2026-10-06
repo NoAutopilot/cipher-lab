@@ -334,3 +334,13 @@ enciphered news, was not looked for in WVO this pass; next: a WVO search for Hes
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: a WVO search for Hessen -> Oranje letters of Oct-Dec 1564 (Wilhelm's reply to 1109, which might paraphrase the enciphered news), ~3 requests, ~$0.3.
+
+## Hessen -> Oranje reply search (R7-WVOH, account 2, 6 Oct 2026, 01:3x-01:5x UTC)
+
+Search: WVO advanced search, correspondent "Hessen", letters of Sept-Dec 1564 (`brieven?geavanceerd=1&jaar=1564&maand=9&eindjaar=1564&eindmaand=12&af_naam_vol=Hessen`): 7 records: 1109 (18-9, Oranje -> Wilhelm), 1110 (4-10, Wilhelm -> Oranje), 4104 (7-10, Philipp the younger), 1111 (14-10, Wilhelm -> Oranje), 3650 (17-10, to Philipp), 4105 (Nov, to Philipp), 1112 (6-11, Oranje -> Wilhelm).
+- **1111** (Kassel, 14 Oct 1564, Wilhelm to Oranje): WVO's own Opmerkingen "Antwoord op nr. 1109 d.d. 18 sept. 1564"; Inhoud "Dankzegging voor de 'Zeittungen' en bericht over de pest in Hessen"; incipit "Wir haben E. L.ten schreiben de dato Brussell den 16ten Septembris vonn ..." (note: the reply cites 16 Sept, WVO dates 1109 18 Sept -- a dating discrepancy to settle from the 1109 image, not here). Sources: HSAM Bestand 3II f.34r-35v (minuut), KHAG A 11/XIV B/15-19 (original), Demandt, Nassau-oranische Korrespondenzen II, 109-110 nr. 292 (excerpt, printed edition: a crib lead, unread).
+- 1110 (4 Oct) is a different subject (safe-conduct for the apothecary Levinus Pontanus): no bearing.
+- Read: WVO's summary and the first leaf of `raw/01111.pdf` by eye (3 pages, 1.2 MB, free): the German hand opens with thanks for the Brussels letter and "Zeitungen"; this worker could not read the body at 80 dpi, so whether the reply restates any of the enciphered news is **not established**. Grade: no token read (0 H/C/S/M/I); nothing enters key.tsv, reading.txt or any status field.
+- Not found: any statement in WVO's record that 1111 repeats the enclosure's content; no Hessen letter of Oct-Dec 1564 mentions a cipher or key.
+- Next (one step, ~$1): a native-resolution transcription of 1111 pp.1-2 (crops via tools/iiif_lines.py --image) and a read for names/places that could serve as cribs against the 1109 enclosure; and Demandt II nr. 292 (pp.109-110) if a scan is findable.
+- Requests: resources.huygens.knaw.nl 7 (form probe 2, search 1, detail 2, pdf 1, plus the first listing probe), >= 2 s apart, descriptive UA. 1 image read.
