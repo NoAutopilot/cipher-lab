@@ -91,6 +91,6 @@ tools/sorter_preflight.py pasted; on PASS a ROOM flag for the account-3 orchestr
 Verdict cheapest next (R9-COL26): re-run anchor_split on the 14 cleared units with 23 = n now a C anchor (new pre-registered copy pushed
 first, control B and gate unchanged), then a per-code control for any new lead with held-out units named before the run. Scripts only.
 
-### R10-LIN -- antt-linhares-chave: front-trim and join enumeration with its worked-example known-answer control (cap 3.5, box 45 min)
+### R10-LIN -- WITHDRAWN 09:48 UTC (intake gate: check-solved verdict reads `blocked (pending L10: Textos Politicos 1993)`; not spawned) -- antt-linhares-chave: front-trim and join enumeration with its worked-example known-answer control (cap 3.5, box 45 min)
 Verdict cheapest next (R8-LIN): the front-trim and join enumeration, known-answer control first (PREREG pushed before the target run);
 control below gate = NON-TEST, stop. Use tools/judge_plaintext.py with the era-matched pt18 corpus. No depth/N-class edits.
