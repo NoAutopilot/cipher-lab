@@ -574,9 +574,52 @@ matched control. Not a search and not a target run. Script only (`basin_width.py
 
 Requests: none (disk only). Vision 0, subagents 0.
 
-## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026; R9-ZESCH, R9-ZESCH2, R10-ZESBASIN, 6 Oct 2026)
+## R10-ZESCRIB-zeschau-seebach-1841 (6 Oct 2026, account-4, LANE-RUN10-account-4)
+
+Step run: R10-ZESBASIN's named next, a crib-drag of fixed French diplomatic formulae to find a near-exact seed, matched
+control first. A different instrument from the retired objective-plus-search family: the objective is used only to rank
+placements that pattern-consistency already admits. Script only (`crib_drag.py`), disk only, no vision, no subagents.
+
+- Pre-registered in `PREREG-R10-ZESCRIB.md` (pushed 5f7fdcd09, 10:45 UTC, before any placement was scored; one later
+  edit corrects only its own time line). 25 cribs fixed there (j'ai l'honneur de, monsieur le baron, votre excellence,
+  sa majeste l'empereur, Saint-Petersbourg, le comte de Nesselrode, je vous prie, veuillez agreer, l'assurance de ma
+  consideration, ...). Control `wordseg_syllabary.build_control()` unchanged (2,666 tokens, K 98, 7 pins, 1 pct error).
+  Cribs tokenised by greedy longest match over the generator's units, first and last token dropped, dragged over the
+  two French segments; a placement kept only if injective both ways and consistent with the 7 pins; kept placements
+  ranked by J (pins + crib codes + frequency-rank fill, `fill()` = `wordseg_pt.freq_init` with the frequency table
+  cached; equality checked on two pin sets). Seeding: margin >= 50 top-1 placements merged, then first-improvement swap
+  passes (<= 4) with the seed fixed. Output `crib_drag_control.json` (6.4 min, one process).
+
+| gate | control result | gate | verdict |
+|---|---|---|---|
+| G0 true crib instances in the control French text | 14, **all from one crib** ("que je", whose core after dropping the boundary tokens is the single unit `j`); no multi-unit crib core occurs anywhere | >= 3 | met nominally, degenerate |
+| G1 share of true instances ranked top 3 | **0.000** (ranks 45-58 of 1,957 consistent placements) | >= 0.50 | FAIL |
+| G2 seeded token accuracy | **0.041** (seed: 3 cribs, 11 codes, 2 correct; start 0.043) vs no-crib baseline 0.041 (start 0.152) | >= 0.60 | FAIL |
+| target (pooled R5005+R5006 French) | not run | -- | CONTROL BELOW GATE, non-test at this N |
+
+- What the numbers say: (1) a crib whose core has no repeated unit and no pin unit admits almost every position (825-1,174
+  consistent placements of 1,957 for 14 of the 25 cribs) -- pattern consistency only filters when the crib carries a
+  repeat or a pin unit (8-36 placements for Saint-Petersbourg, je vous prie, les affaires, de la part de, conformement,
+  relativement); (2) J of a mostly frequency-filled key does not single out the right placement (the true `j` mapping
+  ranked 45th), so the objective cannot rank a small partial key even where it ranks the full key first (R10-ZESBASIN);
+  (3) the seed's wrong codes made the start worse than frequency rank alone. (4) The matched control is register-
+  mismatched for this test: its plaintext is Napoleon's held-out letters (fr1810), where none of the 1840s dispatch
+  formulae occur, so G0's real question -- does a correct multi-unit crib rank -- was not testable on it at all.
+- Logged in HYPOTHESES.md as CONTROL BELOW GATE, non-test at this N for this list and this ranking (first attempt with
+  this instrument, so not retired). No key, no reading: 0 tokens graded; pins stay Bourdeau's grade-I values
+  (dbourdeau/cyphersolver, CC BY 4.0). Rule 10: no novelty claim.
+- `crib_drag.py --check` re-ran the 6.4-minute control and compared the json: exit 0 (11:03 UTC).
+- Suggestion only (not run): a version that could pass would need (a) a control plaintext that carries the formulae at
+  the target's expected rate (1840s French diplomatic dispatches; no such corpus is in tools/data), and (b) a placement
+  score that does not depend on the fill, e.g. pattern rarity (cribs with repeated units or pins only) checked by
+  cross-crib agreement on shared codes. Short of that, new material (the R5006 pencil decipherment under imaging,
+  SEND-QUEUE S5 / ASKS 64) remains the seed source.
+
+Requests: none (disk only). Vision 0, subagents 0.
+
+## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026; R9-ZESCH, R9-ZESCH2, R10-ZESBASIN, R10-ZESCRIB, 6 Oct 2026)
 Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R5007 951 = 603 left + 348 right, GAPS190/196; R5008 260 = 113 on p.1 + 147 on p.2 left, GAPS208); R5007 p.1 and R5008 p.2 right hold no cipher; 0 tokens read
-- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); the word-parse objective failed its matched control twice, under simulated annealing (R9-ZESCH, 0.0026) and under frequency-rank init + parallel tempering (R9-ZESCH2, 0.0146), both vs gate 0.60, with the true key's J 1181.7 above every optimum found (<= 1008.6) -- retired for local search at this N (rule 3 third-attempt clause); the basin-width diagnostic (R10-ZESBASIN) found no basin (one swap from the true key returns under one greedy pass only 32 pct of the time; width 0), so the objective is retired at this N for any search; so the next instrument needs a near-exact seed; next: a probable-word (crib-drag) test of common French diplomatic formulae against the pooled R5005-R5006 pairs, with a matched control, to see if any in-cipher crib can seed a near-key start, ~$3; else new material (R5006 pencil decipherment via multispectral imaging, SEND-QUEUE S5 / ASKS 64, or more ciphertext)
+- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); the word-parse objective failed its matched control twice, under simulated annealing (R9-ZESCH, 0.0026) and under frequency-rank init + parallel tempering (R9-ZESCH2, 0.0146), both vs gate 0.60, with the true key's J 1181.7 above every optimum found (<= 1008.6) -- retired for local search at this N (rule 3 third-attempt clause); the basin-width diagnostic (R10-ZESBASIN) found no basin (one swap from the true key returns under one greedy pass only 32 pct of the time; width 0), so the objective is retired at this N for any search; so the next instrument needs a near-exact seed; the crib-drag of 25 French diplomatic formulae (R10-ZESCRIB) failed its matched control (G1 top-3 share 0.000 vs 0.50, seeded accuracy 0.041 vs 0.60; no multi-unit crib occurs in the Napoleonic control text), non-test, not retired; next: a register-matched control corpus of 1840s French diplomatic dispatches plus a fill-free pattern-rarity placement score, ~$4; else new material (R5006 pencil decipherment via multispectral imaging, SEND-QUEUE S5 / ASKS 64, or more ciphertext)
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
@@ -584,10 +627,10 @@ Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); [retired] word-parse objective under local search (R9-ZESCH annealer 0.0026, R9-ZESCH2 parallel tempering 0.0146, gate 0.60; rule 3 third-attempt clause); [retired] word-parse objective itself at this N (R10-ZESBASIN: basin width 0, k=1 return 0.32); next: a crib-drag test of French diplomatic formulae for a near-exact seed (~$3), or new material (R5006 pencil decipherment under imaging, SEND-QUEUE S5)
+- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); [retired] word-parse objective under local search (R9-ZESCH annealer 0.0026, R9-ZESCH2 parallel tempering 0.0146, gate 0.60; rule 3 third-attempt clause); [retired] word-parse objective itself at this N (R10-ZESBASIN: basin width 0, k=1 return 0.32); crib-drag of 25 formulae ranked by J failed its control (R10-ZESCRIB: G1 0.000, G2 0.041; control text register-mismatched), non-test; next: a register-matched 1840s diplomatic-French control corpus plus a fill-free pattern-rarity crib score (~$4), or new material (R5006 pencil decipherment under imaging, SEND-QUEUE S5)
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 1 internal gap (key rebuild: GAPS202 4-gram annealer retired; R8-ZESCH: R5008 crib test untestable at N=260; word-parse objective failed its matched control under two searches, R9-ZESCH 0.0026, R9-ZESCH2 0.0146 vs 0.60, and R10-ZESBASIN found it has no basin at this N, width 0, k=1 return 0.32, so it is retired for any search); all R5006-R5008 cipher transcribed (1,903 digits); cheapest next: a crib-drag test of French diplomatic formulae on the pooled pairs with a matched control, ~$3, to find a near-exact seed; the R5006 pencil decipherment waits on archive imaging (SEND-QUEUE S5 / ASKS 64)
+Verdict: keep going: 1 internal gap (key rebuild: GAPS202 4-gram annealer retired; R8-ZESCH: R5008 crib test untestable at N=260; word-parse objective failed its matched control under two searches, R9-ZESCH 0.0026, R9-ZESCH2 0.0146 vs 0.60, and R10-ZESBASIN found it has no basin at this N, width 0, k=1 return 0.32, so it is retired for any search); all R5006-R5008 cipher transcribed (1,903 digits); R10-ZESCRIB's crib-drag failed its matched control, G1 0.000 vs 0.50, G2 0.041 vs 0.60, non-test; cheapest next: a register-matched 1840s diplomatic-French control corpus plus a fill-free pattern-rarity crib score, ~$4; the R5006 pencil decipherment waits on archive imaging (SEND-QUEUE S5 / ASKS 64)
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 

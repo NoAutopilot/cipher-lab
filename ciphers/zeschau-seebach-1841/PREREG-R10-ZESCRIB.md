@@ -1,6 +1,6 @@
 # PREREG R10-ZESCRIB -- crib-drag of French diplomatic formulae for a near-exact seed (zeschau-seebach-1841)
 
-Written 6 Oct 2026 before any crib placement was scored on control or target (clock read with date -u, 10:5x UTC).
+Written 6 Oct 2026 before any crib placement was scored on control or target (clock read with date -u, 10:45 UTC).
 Worker R10-ZESCRIB, LANE LANE-RUN10-account-4. Script: `crib_drag.py` (disk only).
 
 Why: R10-ZESBASIN found the word-parse objective ranks the true key first but has no basin (k=1 return 0.32), so any

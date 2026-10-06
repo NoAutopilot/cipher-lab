@@ -1,0 +1,2060 @@
+{
+ "control": "wordseg_syllabary.build_control()",
+ "cribs": 25,
+ "true_instances": 14,
+ "true_instances_inconsistent": 0,
+ "true_ranks": [
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58
+ ],
+ "G1_top3_share": 0.0,
+ "seed_cribs": [
+  "lesaffaires",
+  "delapartde",
+  "jevousprie"
+ ],
+ "seed_codes_added": 11,
+ "seed_codes_correct": 2,
+ "seeded_start_acc": 0.0429,
+ "seeded_acc": 0.0408,
+ "seeded_J": -788.5,
+ "seeded_passes": 4,
+ "baseline_start_acc": 0.1524,
+ "baseline_acc": 0.0412,
+ "baseline_J": -707.3,
+ "baseline_passes": 4,
+ "true_key_J": 1181.7,
+ "gates": {
+  "G0": true,
+  "G1": false,
+  "G2": false
+ },
+ "verdict": "CONTROL BELOW GATE",
+ "rows": [
+  {
+   "crib": "jailhonneurde",
+   "core": [
+    "ai",
+    "l",
+    "h",
+    "on",
+    "ne",
+    "ur"
+   ],
+   "n_consistent": 994,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 2.08,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 1581,
+     "J": -2129.28,
+     "true": false,
+     "map": {
+      "32": "ai",
+      "39": "l",
+      "67": "h",
+      "44": "on",
+      "25": "ne",
+      "49": "ur"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1324,
+     "J": -2131.36,
+     "true": false,
+     "map": {
+      "8": "ai",
+      "37": "l",
+      "59": "h",
+      "51": "on",
+      "45": "ne",
+      "76": "ur"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 804,
+     "J": -2145.29,
+     "true": false,
+     "map": {
+      "37": "ai",
+      "16": "l",
+      "62": "h",
+      "66": "on",
+      "52": "ne",
+      "89": "ur"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1820,
+     "J": -2147.05,
+     "true": false,
+     "map": {
+      "37": "ai",
+      "94": "l",
+      "32": "h",
+      "99": "on",
+      "81": "ne",
+      "21": "ur"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1182,
+     "J": -2148.68,
+     "true": false,
+     "map": {
+      "43": "ai",
+      "49": "l",
+      "61": "h",
+      "16": "on",
+      "10": "ne",
+      "68": "ur"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "monsieurlebaron",
+   "core": [
+    "on",
+    "si",
+    "eu",
+    "r",
+    "le",
+    "b",
+    "ar"
+   ],
+   "n_consistent": 825,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 17.04,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 373,
+     "J": -2013.01,
+     "true": false,
+     "map": {
+      "55": "on",
+      "51": "si",
+      "45": "eu",
+      "76": "r",
+      "52": "le",
+      "89": "b",
+      "0": "ar"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1466,
+     "J": -2030.05,
+     "true": false,
+     "map": {
+      "13": "on",
+      "16": "si",
+      "63": "eu",
+      "20": "r",
+      "25": "le",
+      "40": "b",
+      "94": "ar"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 1645,
+     "J": -2045.62,
+     "true": false,
+     "map": {
+      "21": "on",
+      "5": "si",
+      "8": "eu",
+      "39": "r",
+      "12": "le",
+      "68": "b",
+      "24": "ar"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 1,
+     "pos": 67,
+     "J": -2045.62,
+     "true": false,
+     "map": {
+      "21": "on",
+      "5": "si",
+      "8": "eu",
+      "39": "r",
+      "12": "le",
+      "68": "b",
+      "24": "ar"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1735,
+     "J": -2049.5,
+     "true": false,
+     "map": {
+      "66": "on",
+      "8": "si",
+      "44": "eu",
+      "25": "r",
+      "16": "le",
+      "63": "b",
+      "20": "ar"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "votreexcellence",
+   "core": [
+    "tr",
+    "ee",
+    "x",
+    "ce",
+    "l",
+    "le",
+    "n"
+   ],
+   "n_consistent": 825,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 17.26,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 1287,
+     "J": -2129.28,
+     "true": false,
+     "map": {
+      "32": "tr",
+      "80": "ee",
+      "10": "x",
+      "40": "ce",
+      "58": "l",
+      "25": "le",
+      "37": "n"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 256,
+     "J": -2146.54,
+     "true": false,
+     "map": {
+      "78": "tr",
+      "21": "ee",
+      "68": "x",
+      "83": "ce",
+      "66": "l",
+      "16": "le",
+      "1": "n"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 699,
+     "J": -2153.62,
+     "true": false,
+     "map": {
+      "62": "tr",
+      "80": "ee",
+      "88": "x",
+      "66": "ce",
+      "17": "l",
+      "5": "le",
+      "51": "n"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 1,
+     "pos": 99,
+     "J": -2154.62,
+     "true": false,
+     "map": {
+      "14": "tr",
+      "74": "ee",
+      "55": "x",
+      "51": "ce",
+      "48": "l",
+      "76": "le",
+      "52": "n"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1113,
+     "J": -2155.29,
+     "true": false,
+     "map": {
+      "55": "tr",
+      "78": "ee",
+      "21": "x",
+      "66": "ce",
+      "30": "l",
+      "52": "le",
+      "51": "n"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "samajestelempereur",
+   "core": [
+    "ma",
+    "j",
+    "es",
+    "te",
+    "le",
+    "m",
+    "p",
+    "er",
+    "eu"
+   ],
+   "n_consistent": 0,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": null,
+   "top": []
+  },
+  {
+   "crib": "samajesteleroi",
+   "core": [
+    "ma",
+    "j",
+    "es",
+    "te",
+    "le",
+    "r"
+   ],
+   "n_consistent": 994,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 0.0,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 222,
+     "J": -2047.67,
+     "true": false,
+     "map": {
+      "25": "ma",
+      "37": "j",
+      "95": "es",
+      "48": "te",
+      "16": "le",
+      "46": "r"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 347,
+     "J": -2047.67,
+     "true": false,
+     "map": {
+      "25": "ma",
+      "37": "j",
+      "95": "es",
+      "48": "te",
+      "16": "le",
+      "46": "r"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 512,
+     "J": -2047.67,
+     "true": false,
+     "map": {
+      "25": "ma",
+      "37": "j",
+      "95": "es",
+      "48": "te",
+      "16": "le",
+      "46": "r"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 806,
+     "J": -2062.11,
+     "true": false,
+     "map": {
+      "62": "ma",
+      "66": "j",
+      "52": "es",
+      "89": "te",
+      "94": "le",
+      "65": "r"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 594,
+     "J": -2067.86,
+     "true": false,
+     "map": {
+      "25": "ma",
+      "16": "j",
+      "10": "es",
+      "61": "te",
+      "5": "le",
+      "84": "r"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "legouvernement",
+   "core": [
+    "g",
+    "ou",
+    "ve",
+    "r",
+    "ne",
+    "me"
+   ],
+   "n_consistent": 994,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 31.71,
+   "top": [
+    {
+     "seg": 1,
+     "pos": 97,
+     "J": -2077.26,
+     "true": false,
+     "map": {
+      "53": "g",
+      "37": "ou",
+      "14": "ve",
+      "74": "r",
+      "55": "ne",
+      "51": "me"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 1,
+     "pos": 98,
+     "J": -2108.97,
+     "true": false,
+     "map": {
+      "37": "g",
+      "14": "ou",
+      "74": "ve",
+      "55": "r",
+      "51": "ne",
+      "48": "me"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 1735,
+     "J": -2110.87,
+     "true": false,
+     "map": {
+      "66": "g",
+      "8": "ou",
+      "44": "ve",
+      "25": "r",
+      "16": "ne",
+      "63": "me"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1452,
+     "J": -2115.74,
+     "true": false,
+     "map": {
+      "2": "g",
+      "68": "ou",
+      "0": "ve",
+      "15": "r",
+      "37": "ne",
+      "34": "me"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 1,
+     "pos": 133,
+     "J": -2119.53,
+     "true": false,
+     "map": {
+      "78": "g",
+      "21": "ou",
+      "65": "ve",
+      "38": "r",
+      "68": "ne",
+      "85": "me"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "lecabinetde",
+   "core": [
+    "c",
+    "a",
+    "b",
+    "in",
+    "et"
+   ],
+   "n_consistent": 1174,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 7.24,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 931,
+     "J": -2122.41,
+     "true": false,
+     "map": {
+      "55": "c",
+      "52": "a",
+      "46": "b",
+      "37": "in",
+      "49": "et"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1312,
+     "J": -2129.65,
+     "true": false,
+     "map": {
+      "59": "c",
+      "2": "a",
+      "91": "b",
+      "13": "in",
+      "8": "et"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 423,
+     "J": -2136.78,
+     "true": false,
+     "map": {
+      "16": "c",
+      "54": "a",
+      "21": "b",
+      "37": "in",
+      "95": "et"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 899,
+     "J": -2137.18,
+     "true": false,
+     "map": {
+      "91": "c",
+      "13": "a",
+      "42": "b",
+      "16": "in",
+      "39": "et"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 275,
+     "J": -2137.29,
+     "true": false,
+     "map": {
+      "76": "c",
+      "87": "a",
+      "85": "b",
+      "81": "in",
+      "20": "et"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "saintpetersbourg",
+   "core": [
+    "in",
+    "t",
+    "p",
+    "et",
+    "er",
+    "s",
+    "b",
+    "ou",
+    "r"
+   ],
+   "n_consistent": 8,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 30.28,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 377,
+     "J": -2178.05,
+     "true": false,
+     "map": {
+      "52": "in",
+      "89": "t",
+      "0": "p",
+      "6": "et",
+      "83": "s",
+      "33": "b",
+      "66": "ou",
+      "35": "r"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1479,
+     "J": -2208.33,
+     "true": false,
+     "map": {
+      "71": "in",
+      "21": "t",
+      "66": "p",
+      "14": "et",
+      "16": "s",
+      "10": "b",
+      "68": "ou",
+      "93": "r"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 766,
+     "J": -2264.62,
+     "true": false,
+     "map": {
+      "94": "in",
+      "20": "t",
+      "74": "p",
+      "49": "et",
+      "79": "s",
+      "89": "b",
+      "39": "ou",
+      "71": "r"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 887,
+     "J": -2308.02,
+     "true": false,
+     "map": {
+      "8": "in",
+      "16": "t",
+      "66": "p",
+      "35": "et",
+      "81": "s",
+      "53": "b",
+      "84": "ou",
+      "79": "r"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1740,
+     "J": -2308.74,
+     "true": false,
+     "map": {
+      "63": "in",
+      "20": "t",
+      "74": "p",
+      "43": "et",
+      "85": "s",
+      "55": "b",
+      "36": "ou",
+      "99": "r"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "lecomtedenesselrode",
+   "core": [
+    "co",
+    "m",
+    "te",
+    "de",
+    "ne",
+    "ss",
+    "el",
+    "r",
+    "o"
+   ],
+   "n_consistent": 21,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 0.0,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 652,
+     "J": -2297.11,
+     "true": false,
+     "map": {
+      "20": "co",
+      "10": "te",
+      "88": "de",
+      "60": "ne",
+      "54": "ss",
+      "25": "el",
+      "5": "r",
+      "34": "o"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1163,
+     "J": -2297.11,
+     "true": false,
+     "map": {
+      "20": "co",
+      "10": "te",
+      "88": "de",
+      "60": "ne",
+      "54": "ss",
+      "25": "el",
+      "5": "r",
+      "34": "o"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 410,
+     "J": -2305.07,
+     "true": false,
+     "map": {
+      "53": "co",
+      "10": "te",
+      "88": "de",
+      "92": "ne",
+      "12": "ss",
+      "34": "el",
+      "44": "r",
+      "15": "o"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 1,
+     "pos": 0,
+     "J": -2308.39,
+     "true": false,
+     "map": {
+      "94": "co",
+      "65": "te",
+      "20": "de",
+      "28": "ne",
+      "75": "ss",
+      "84": "el",
+      "66": "r",
+      "54": "o"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1724,
+     "J": -2317.92,
+     "true": false,
+     "map": {
+      "94": "co",
+      "65": "te",
+      "20": "de",
+      "28": "ne",
+      "75": "ss",
+      "87": "el",
+      "66": "r",
+      "54": "o"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "jevousprie",
+   "core": [
+    "e",
+    "vo",
+    "us",
+    "p",
+    "ri"
+   ],
+   "n_consistent": 15,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 64.27,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 89,
+     "J": -2202.04,
+     "true": false,
+     "map": {
+      "0": "vo",
+      "97": "us",
+      "59": "p",
+      "76": "ri"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 1,
+     "pos": 215,
+     "J": -2266.31,
+     "true": false,
+     "map": {
+      "17": "vo",
+      "94": "us",
+      "74": "p",
+      "5": "ri"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 1458,
+     "J": -2285.17,
+     "true": false,
+     "map": {
+      "36": "vo",
+      "30": "us",
+      "12": "p",
+      "2": "ri"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1087,
+     "J": -2290.12,
+     "true": false,
+     "map": {
+      "36": "vo",
+      "25": "us",
+      "53": "p",
+      "8": "ri"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 94,
+     "J": -2290.19,
+     "true": false,
+     "map": {
+      "11": "vo",
+      "69": "us",
+      "27": "p",
+      "33": "ri"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "veuillezagreer",
+   "core": [
+    "ui",
+    "l",
+    "le",
+    "z",
+    "a",
+    "g",
+    "re"
+   ],
+   "n_consistent": 825,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 30.52,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 815,
+     "J": -2112.18,
+     "true": false,
+     "map": {
+      "20": "ui",
+      "37": "l",
+      "16": "le",
+      "28": "z",
+      "53": "a",
+      "51": "g",
+      "48": "re"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 883,
+     "J": -2142.7,
+     "true": false,
+     "map": {
+      "6": "ui",
+      "85": "l",
+      "13": "le",
+      "12": "z",
+      "8": "a",
+      "16": "g",
+      "66": "re"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 500,
+     "J": -2146.11,
+     "true": false,
+     "map": {
+      "48": "ui",
+      "81": "l",
+      "20": "le",
+      "66": "z",
+      "94": "a",
+      "65": "g",
+      "8": "re"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 967,
+     "J": -2155.48,
+     "true": false,
+     "map": {
+      "49": "ui",
+      "94": "l",
+      "54": "le",
+      "28": "z",
+      "2": "a",
+      "9": "g",
+      "44": "re"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 954,
+     "J": -2160.56,
+     "true": false,
+     "map": {
+      "30": "ui",
+      "81": "l",
+      "71": "le",
+      "58": "z",
+      "5": "a",
+      "13": "g",
+      "84": "re"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "lassurancedemaconsideration",
+   "core": [
+    "ss",
+    "ur",
+    "an",
+    "ce",
+    "de",
+    "ma",
+    "co",
+    "ns",
+    "i",
+    "de",
+    "ra",
+    "ti"
+   ],
+   "n_consistent": 0,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": null,
+   "top": []
+  },
+  {
+   "crib": "tresdistinguee",
+   "core": [
+    "es",
+    "d",
+    "is",
+    "ti",
+    "n",
+    "g",
+    "ue"
+   ],
+   "n_consistent": 825,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 0.0,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 222,
+     "J": -2119.85,
+     "true": false,
+     "map": {
+      "25": "es",
+      "37": "d",
+      "95": "is",
+      "48": "ti",
+      "16": "n",
+      "46": "g",
+      "78": "ue"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 347,
+     "J": -2119.85,
+     "true": false,
+     "map": {
+      "25": "es",
+      "37": "d",
+      "95": "is",
+      "48": "ti",
+      "16": "n",
+      "46": "g",
+      "78": "ue"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 512,
+     "J": -2119.85,
+     "true": false,
+     "map": {
+      "25": "es",
+      "37": "d",
+      "95": "is",
+      "48": "ti",
+      "16": "n",
+      "46": "g",
+      "78": "ue"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 1,
+     "pos": 35,
+     "J": -2122.09,
+     "true": false,
+     "map": {
+      "16": "es",
+      "85": "d",
+      "8": "is",
+      "52": "ti",
+      "71": "n",
+      "91": "g",
+      "13": "ue"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 796,
+     "J": -2132.69,
+     "true": false,
+     "map": {
+      "28": "es",
+      "63": "d",
+      "94": "is",
+      "65": "ti",
+      "8": "n",
+      "21": "g",
+      "52": "ue"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "votredepeche",
+   "core": [
+    "tr",
+    "ede",
+    "p",
+    "ec",
+    "h"
+   ],
+   "n_consistent": 1174,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 1.49,
+   "top": [
+    {
+     "seg": 1,
+     "pos": 337,
+     "J": -2071.1,
+     "true": false,
+     "map": {
+      "60": "tr",
+      "8": "ede",
+      "5": "p",
+      "40": "ec",
+      "46": "h"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 218,
+     "J": -2072.59,
+     "true": false,
+     "map": {
+      "19": "tr",
+      "5": "ede",
+      "16": "p",
+      "54": "ec",
+      "25": "h"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 508,
+     "J": -2072.59,
+     "true": false,
+     "map": {
+      "19": "tr",
+      "5": "ede",
+      "16": "p",
+      "54": "ec",
+      "25": "h"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 915,
+     "J": -2103.68,
+     "true": false,
+     "map": {
+      "13": "tr",
+      "55": "ede",
+      "2": "p",
+      "57": "ec",
+      "20": "h"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1199,
+     "J": -2119.88,
+     "true": false,
+     "map": {
+      "17": "tr",
+      "36": "ede",
+      "25": "p",
+      "53": "ec",
+      "8": "h"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "vosrapports",
+   "core": [
+    "s",
+    "ra",
+    "p",
+    "po",
+    "r",
+    "t"
+   ],
+   "n_consistent": 994,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 0.0,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 290,
+     "J": -2081.7,
+     "true": false,
+     "map": {
+      "30": "s",
+      "52": "ra",
+      "51": "p",
+      "45": "po",
+      "76": "r",
+      "46": "t"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1117,
+     "J": -2081.7,
+     "true": false,
+     "map": {
+      "30": "s",
+      "52": "ra",
+      "51": "p",
+      "45": "po",
+      "76": "r",
+      "46": "t"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 198,
+     "J": -2087.58,
+     "true": false,
+     "map": {
+      "57": "s",
+      "21": "ra",
+      "52": "p",
+      "51": "po",
+      "45": "r",
+      "76": "t"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1596,
+     "J": -2111.47,
+     "true": false,
+     "map": {
+      "66": "s",
+      "21": "ra",
+      "52": "p",
+      "23": "po",
+      "67": "r",
+      "53": "t"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1325,
+     "J": -2116.56,
+     "true": false,
+     "map": {
+      "37": "s",
+      "59": "ra",
+      "51": "p",
+      "45": "po",
+      "76": "r",
+      "46": "t"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "lempereur",
+   "core": [
+    "m",
+    "p",
+    "er",
+    "eu"
+   ],
+   "n_consistent": 0,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": null,
+   "top": []
+  },
+  {
+   "crib": "lesaffaires",
+   "core": [
+    "a",
+    "f",
+    "f",
+    "ai",
+    "re"
+   ],
+   "n_consistent": 8,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 159.46,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 542,
+     "J": -2118.26,
+     "true": false,
+     "map": {
+      "37": "a",
+      "36": "f",
+      "42": "ai",
+      "16": "re"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 1,
+     "pos": 156,
+     "J": -2277.72,
+     "true": false,
+     "map": {
+      "55": "a",
+      "16": "f",
+      "54": "ai",
+      "25": "re"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 1274,
+     "J": -2282.86,
+     "true": false,
+     "map": {
+      "83": "a",
+      "16": "f",
+      "2": "ai",
+      "71": "re"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1615,
+     "J": -2337.58,
+     "true": false,
+     "map": {
+      "17": "a",
+      "92": "f",
+      "27": "ai",
+      "68": "re"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 1,
+     "pos": 111,
+     "J": -2338.67,
+     "true": false,
+     "map": {
+      "53": "a",
+      "36": "f",
+      "26": "ai",
+      "80": "re"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "lapolitique",
+   "core": [
+    "po",
+    "l",
+    "it",
+    "i"
+   ],
+   "n_consistent": 36,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 0.0,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 12,
+     "J": -2158.72,
+     "true": false,
+     "map": {
+      "79": "po",
+      "15": "l",
+      "62": "it"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1031,
+     "J": -2158.72,
+     "true": false,
+     "map": {
+      "79": "po",
+      "15": "l",
+      "62": "it"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 1356,
+     "J": -2158.72,
+     "true": false,
+     "map": {
+      "79": "po",
+      "15": "l",
+      "62": "it"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 1,
+     "pos": 302,
+     "J": -2158.72,
+     "true": false,
+     "map": {
+      "79": "po",
+      "15": "l",
+      "62": "it"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 155,
+     "J": -2171.43,
+     "true": false,
+     "map": {
+      "68": "po",
+      "37": "l",
+      "48": "it"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "lesinstructions",
+   "core": [
+    "in",
+    "st",
+    "r",
+    "u",
+    "c",
+    "ti",
+    "on"
+   ],
+   "n_consistent": 825,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 0.0,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 254,
+     "J": -2082.99,
+     "true": false,
+     "map": {
+      "39": "in",
+      "71": "st",
+      "78": "r",
+      "21": "u",
+      "68": "c",
+      "83": "ti",
+      "66": "on"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 773,
+     "J": -2082.99,
+     "true": false,
+     "map": {
+      "39": "in",
+      "71": "st",
+      "78": "r",
+      "21": "u",
+      "68": "c",
+      "83": "ti",
+      "66": "on"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 1590,
+     "J": -2082.99,
+     "true": false,
+     "map": {
+      "39": "in",
+      "71": "st",
+      "78": "r",
+      "21": "u",
+      "68": "c",
+      "83": "ti",
+      "66": "on"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1068,
+     "J": -2085.5,
+     "true": false,
+     "map": {
+      "28": "in",
+      "52": "st",
+      "79": "r",
+      "16": "u",
+      "39": "c",
+      "4": "ti",
+      "66": "on"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 1,
+     "pos": 161,
+     "J": -2092.16,
+     "true": false,
+     "map": {
+      "37": "in",
+      "95": "st",
+      "48": "r",
+      "42": "u",
+      "55": "c",
+      "71": "ti",
+      "21": "on"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "queje",
+   "core": [
+    "j"
+   ],
+   "n_consistent": 1957,
+   "n_true_instances": 14,
+   "true_ranks": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+   ],
+   "margin": 0.0,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 409,
+     "J": -2238.75,
+     "true": false,
+     "map": {
+      "26": "j"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 440,
+     "J": -2238.75,
+     "true": false,
+     "map": {
+      "26": "j"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 829,
+     "J": -2238.75,
+     "true": false,
+     "map": {
+      "26": "j"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1130,
+     "J": -2238.75,
+     "true": false,
+     "map": {
+      "26": "j"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1404,
+     "J": -2238.75,
+     "true": false,
+     "map": {
+      "26": "j"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "ilestimportant",
+   "core": [
+    "es",
+    "ti",
+    "m",
+    "po",
+    "r",
+    "ta"
+   ],
+   "n_consistent": 33,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 31.31,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 212,
+     "J": -2118.9,
+     "true": false,
+     "map": {
+      "19": "es",
+      "90": "ti",
+      "95": "po",
+      "48": "r",
+      "50": "ta"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 651,
+     "J": -2150.21,
+     "true": false,
+     "map": {
+      "76": "es",
+      "20": "ti",
+      "10": "po",
+      "88": "r",
+      "60": "ta"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 151,
+     "J": -2173.75,
+     "true": false,
+     "map": {
+      "40": "es",
+      "12": "ti",
+      "13": "po",
+      "68": "r",
+      "37": "ta"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1831,
+     "J": -2181.53,
+     "true": false,
+     "map": {
+      "5": "es",
+      "20": "ti",
+      "95": "po",
+      "55": "r",
+      "63": "ta"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1050,
+     "J": -2193.69,
+     "true": false,
+     "map": {
+      "19": "es",
+      "5": "ti",
+      "53": "po",
+      "95": "r",
+      "48": "ta"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "danslinteret",
+   "core": [
+    "ns",
+    "l",
+    "in",
+    "te",
+    "re"
+   ],
+   "n_consistent": 1174,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 24.48,
+   "top": [
+    {
+     "seg": 1,
+     "pos": 332,
+     "J": -2102.93,
+     "true": false,
+     "map": {
+      "12": "ns",
+      "16": "l",
+      "28": "in",
+      "26": "te",
+      "92": "re"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1019,
+     "J": -2127.41,
+     "true": false,
+     "map": {
+      "44": "ns",
+      "12": "l",
+      "8": "in",
+      "54": "te",
+      "49": "re"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 341,
+     "J": -2131.45,
+     "true": false,
+     "map": {
+      "27": "ns",
+      "33": "l",
+      "21": "in",
+      "52": "te",
+      "16": "re"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1314,
+     "J": -2147.5,
+     "true": false,
+     "map": {
+      "91": "ns",
+      "13": "l",
+      "8": "in",
+      "53": "te",
+      "90": "re"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 897,
+     "J": -2153.49,
+     "true": false,
+     "map": {
+      "62": "ns",
+      "71": "l",
+      "91": "in",
+      "13": "te",
+      "42": "re"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "conformement",
+   "core": [
+    "n",
+    "f",
+    "or",
+    "me",
+    "me"
+   ],
+   "n_consistent": 10,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 17.71,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 426,
+     "J": -2168.15,
+     "true": false,
+     "map": {
+      "37": "n",
+      "95": "f",
+      "48": "or",
+      "71": "me"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1565,
+     "J": -2185.86,
+     "true": false,
+     "map": {
+      "79": "n",
+      "15": "f",
+      "62": "or",
+      "46": "me"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 1,
+     "pos": 154,
+     "J": -2243.08,
+     "true": false,
+     "map": {
+      "48": "n",
+      "76": "f",
+      "55": "or",
+      "16": "me"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 540,
+     "J": -2254.02,
+     "true": false,
+     "map": {
+      "51": "n",
+      "63": "f",
+      "37": "or",
+      "36": "me"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 1,
+     "pos": 278,
+     "J": -2262.33,
+     "true": false,
+     "map": {
+      "37": "n",
+      "28": "f",
+      "34": "or",
+      "9": "me"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "delapartde",
+   "core": [
+    "la",
+    "pa",
+    "r",
+    "t"
+   ],
+   "n_consistent": 21,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 98.69,
+   "top": [
+    {
+     "seg": 0,
+     "pos": 1148,
+     "J": -2129.66,
+     "true": false,
+     "map": {
+      "54": "pa",
+      "49": "r",
+      "94": "t"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 0,
+     "pos": 1545,
+     "J": -2228.35,
+     "true": false,
+     "map": {
+      "25": "pa",
+      "95": "r",
+      "81": "t"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 1181,
+     "J": -2252.88,
+     "true": false,
+     "map": {
+      "43": "pa",
+      "49": "r",
+      "61": "t"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1814,
+     "J": -2274.7,
+     "true": false,
+     "map": {
+      "25": "pa",
+      "51": "r",
+      "49": "t"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 389,
+     "J": -2278.47,
+     "true": false,
+     "map": {
+      "38": "pa",
+      "25": "r",
+      "8": "t"
+     },
+     "rank": 5
+    }
+   ]
+  },
+  {
+   "crib": "relativement",
+   "core": [
+    "la",
+    "ti",
+    "ve",
+    "me"
+   ],
+   "n_consistent": 21,
+   "n_true_instances": 0,
+   "true_ranks": [],
+   "margin": 40.31,
+   "top": [
+    {
+     "seg": 1,
+     "pos": 116,
+     "J": -2208.39,
+     "true": false,
+     "map": {
+      "14": "ti",
+      "52": "ve",
+      "40": "me"
+     },
+     "rank": 1
+    },
+    {
+     "seg": 1,
+     "pos": 257,
+     "J": -2248.7,
+     "true": false,
+     "map": {
+      "34": "ti",
+      "40": "ve",
+      "15": "me"
+     },
+     "rank": 2
+    },
+    {
+     "seg": 0,
+     "pos": 1789,
+     "J": -2250.72,
+     "true": false,
+     "map": {
+      "11": "ti",
+      "76": "ve",
+      "88": "me"
+     },
+     "rank": 3
+    },
+    {
+     "seg": 0,
+     "pos": 1494,
+     "J": -2273.96,
+     "true": false,
+     "map": {
+      "84": "ti",
+      "55": "ve",
+      "74": "me"
+     },
+     "rank": 4
+    },
+    {
+     "seg": 0,
+     "pos": 1308,
+     "J": -2274.27,
+     "true": false,
+     "map": {
+      "16": "ti",
+      "35": "ve",
+      "25": "me"
+     },
+     "rank": 5
+    }
+   ]
+  }
+ ]
+}
