@@ -1,0 +1,88 @@
+code	n_runs	chunks(runs)	agree_chunk	licence
+94	3	a(1) | contre(1) | o(1)		disagree
+106	5	l(1) | c(1) | o(1) | oncer(1) | eroy(1)		disagree
+123	2	a(1) | t(1)		disagree
+143	4	plus(1) | eteindre(1) | roy(1) | t(1)		disagree
+151	3	a(1) | t(1) | as(1)		disagree
+184	3	s(1) | hommes(1) | r(1)		disagree
+197	5	a(2) | n(2) | es(1)	n	M
+214	2	c(1) | g(1)		disagree
+235	4	l(1) | le(1) | d(1) | ord(1)		disagree
+237	21	de(7) | e(3) | a(2) | quelque(1) | rite(1) | qui(1) | quake(1) | o(1) | l(1) | u(1) | le(1) | muritz(1) | riuiere(1) | rontiere(1)	de	M
+242	2	u(1) | d(1)		disagree
+247	2	dit(1) | conserencei(1)		disagree
+253	12	e(2) | t(1) | u(1) | commissaire(1) | n(1) | ultes(1) | pour(1) | augmente(1) | portee(1) | suedoise(1) | rtee(1) | o(1)	e	M
+261	2	m(1) | s(1)		disagree
+270	3	mille(1) | r(1) | e(1)		disagree
+272	7	dans(2) | t(1) | er(1) | d(1) | en(1) | u(1)	dans	M
+281	7	r(2) | pose(1) | de(1) | ne(1) | roy(1) | iner(1) | w(1)	r	M
+282	5	aupres(1) | o(1) | s(1) | assez(1) | u(1) | conquestes(1)		disagree
+285	7	e(3) | t(1) | u(1) | etson(1) | roydeprusseet(1)	e	M
+295	2	e(2)	e	M
+319	2	saim(1) | q(1)		disagree
+322	2	e(1) | s(1)		disagree
+330	2	auantage(1) | rge(1)		disagree
+341	6	guerre(5) | o(1)	guerre	M
+353	2	h(1) | n(1)		disagree
+375	4	ein(1) | m(1) | malchin(1) | erin(1)		disagree
+384	5	de(1) | suitte(1) | o(1) | les(1) | roy(1)		disagree
+386	2	n(1) | o(1)		disagree
+389	3	pologneseroit(1) | e(1) | p(1)		disagree
+402	12	la(5) | luy(1) | seldmarechal(1) | arla(1) | pour(1) | le(1) | u(1) | de(1)	la	M
+403	11	e(2) | l(2) | le(1) | u(1) | prusse(1) | quel(1) | que(1) | n(1) | r(1)	l	M
+406	3	x(1) | roisieme(1) | xclus(1)		disagree
+410	2	r(1) | s(1)		disagree
+416	2	prusseluy(1) | m(1)		disagree
+417	2	u(1) | breme(1)		disagree
+428	3	i(1) | -(1) | maisda(1)		disagree
+434	3	accommodement(1) | s(1) | rment(1)		disagree
+444	2	un(1) | rnisons(1)		disagree
+447	12	du(2) | a(2) | x(1) | e(1) | c(1) | honborn(1) | le(1) | courimperialen(1) | s(1) | nous(1) | g(1)	du	M
+449	2	sur(1) | o(1)		disagree
+451	2	u(2)	u	M
+464	2	de(1) | obliger(1)		disagree
+467	2	aussi(1) | st(1)		disagree
+477	2	mais(1) | u(1)		disagree
+482	2	p(1) | s(1)		disagree
+485	4	r(1) | s(1) | propositions(1) | d(1)		disagree
+492	3	o(1) | e(1) | p(1)		disagree
+493	2	-(1) | d(1)		disagree
+496	3	o(1) | ee(1) | u(1)		disagree
+513	3	p(2) | i(1)	p	M
+515	6	e(3) | p(2) | les(1)	e	M
+521	2	p(1) | u(1)		disagree
+522	2	desauoueroit(1) | p(1)		disagree
+537	2	plus(1) | p(1)		disagree
+539	3	s(1) | estant(1) | et(1)		disagree
+542	4	l(1) | i(1) | s(1) | de(1)		disagree
+548	3	que(1) | il(1) | q(1)		disagree
+549	2	qu(1) | au(1)		disagree
+551	3	auant(1) | en(1) | m(1)		disagree
+560	13	r(2) | n(2) | nder(1) | embler(1) | c(1) | ouuer(1) | o(1) | nord(1) | dois(1) | i(1) | u(1) | bu(1)	r	M
+562	8	r(2) | t(1) | qu(1) | s(1) | tirez(1) | en(1) | le(1)	r	M
+563	2	l(1) | d(1)		disagree
+564	4	de(1) | t(1) | l(1) | te(1)		disagree
+579	3	roy(1) | prince(1) | plus(1)		disagree
+583	7	g(2) | ositions(1) | tes(1) | elles(1) | e(1) | les(1) | iers(1)	g	M
+584	5	e(1) | u(1) | qu(1) | i(1) | empereur(1)		disagree
+585	5	s(2) | roy(1) | g(1) | er(1)	s	M
+587	2	e(1) | yer(1)		disagree
+588	6	s(3) | tour(1) | en(1) | r(1)	s	M
+592	3	s(3)	s	M
+602	2	u(1) | qu(1)		disagree
+610	5	c(1) | de(1) | cert(1) | q(1) | ueut(1) | nor(1)		disagree
+611	2	grand(1) | m(1)		disagree
+612	5	a(1) | i(1) | e(1) | cote(1) | l(1) | debite(1) | c(1)		disagree
+613	4	r(2) | o(1) | e(1)	r	M
+636	3	troupes(2) | l(1)	troupes	M
+643	2	u(1) | e(1)		disagree
+644	2	r(1) | n(1)		disagree
+654	4	r(1) | u(1) | o(1) | reuenir(1)		disagree
+714	5	u(3) | une(2)	u	M
+716	2	u(1) | t(1)		disagree
+724	2	uint(1) | u(1)		disagree
+733	2	mille(1) | i(1)		disagree
+737	3	l(2) | etoit(1)	l	M
+825	2	roydesuede(1) | suedois(1)		disagree
+844	2	roydedanemarc(1) | ded(1)		disagree
+848	2	lempire(1) | empire(1)		disagree

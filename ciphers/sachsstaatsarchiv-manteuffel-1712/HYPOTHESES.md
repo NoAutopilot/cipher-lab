@@ -102,3 +102,8 @@ run keeps its as-read gloss "Ilgen" (M, doubtful) on 848 under PREREG-R8-MANT. 8
 |---|---|---|---|---|
 | per-leaf gloss alignment (PREREG-MANT530, seed 530) | 200 gloss permutations across the leaf's 11 glossed runs | mean 0.017, p95 0.000 | S 1/3 = 0.333 (N_rec 3, floor) | PASS as registered, conditional: rests on run 5's M gloss (864 "le Roy de Prusse", worker zoom); passes' "le Roy de Suede" gives S 0.000 = p95, HELD |
 | pooled single-code-gloss gate, 7 leaves (PREREG-MANTP + PREREG-MANT530 addendum) | 1000 permutations, seed 7101 | mean 0.036, p95 0.167 | S 9/12 = 0.750 | PASS, unchanged from R8-MANT; 357 Ilgen 3rd attestation; no code licensed that key.tsv lacks |
+
+## Pooled multi-code-run aligner across the 7 glossed leaves (R9-MANTPOOL, 6 Oct 2026, LANE LANE-RUN9-account-4, account 4)
+| family | control | control result | target result | verdict |
+|---|---|---|---|---|
+| pooled hard-EM multi-run aligner, key.tsv fixed (`interlinear_align.py --fix`, PREREG-R9-MANTPOOL) | 1000 gloss shuffles within code-count bins, seed 9501 | mean 14.93, p95 19 | S 24 free codes agreeing in >= 2 runs (of 87 recurring) | PASS, thin: ~15 expected by chance; known-answer 5/5 (letter codes only); 24 codes into key.tsv at M; first attempt with this instrument |
