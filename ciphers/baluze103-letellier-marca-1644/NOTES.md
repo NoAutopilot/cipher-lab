@@ -468,12 +468,12 @@ Report what was found and where it was not found; novelty not classified (rule 1
 Where not found: no plaintext of f.50 used or consulted; only f.171r L1-4 and f.172r L1-7 of the siblings were read.
 Requests: gallica.bnf.fr 11 (8 small canvas views to find the sibling, 2 IIIF regions for crops -- the first cut too short and redone -- and 1 region of f.172r), >= 2 s apart.
 
-## Remaining gaps (R7C-BAL103K, 6 Oct 2026)
+### Gaps as of R7C-BAL103K, 6 Oct 2026 (superseded by R8-BAL103 below)
 Read so far: unmeasured as a reading on f.50 -- the draft's 451/630 H tokens still FAIL fr17 (-1.537 vs real_p05 -0.852); the table itself reads the sibling f.171r at 76.7% (calib/result.tsv)
 - f.50 transcription vs table mismatch - blocker: not-attempted; the sibling calibration PASSed, so the draft's failure sits in the f.50 transcription or in a different April table; next: decode each f.50 blind pass separately and run a per-line known-word test (=11 que, =32 Barcelone contexts) plus a letter-frequency comparison against the sibling's decoded frequencies, to decide transcription vs table, ~$2
 - 103 settled-M columns (weak by-eye leans, no zoom) - blocker: not-attempted; the table is now calibrated, so this is unblocked; next: a zoomed re-look at the columns whose candidate signs decode to different letters, using calib/sign_table.tsv's confusion pairs (6/l, q2/i, mm/i, 12/i), ~$2
 
-## Escalation (R7C-BAL103K, 6 Oct 2026)
+### Escalation as of R7C-BAL103K, 6 Oct 2026 (superseded by R8-BAL103 below)
 - [x] siblings: f.171r L1-4 transcribed blind and scored against the f.172r period decipherment (R7C-BAL103K, 6 Oct 2026): A 0.767 vs permutation p99 0.311, gate PASS
 - [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
 - [x] known-keys: Tomokiyo's table applied to f.50 (R7A/R7B) and calibrated on f.171r with one licensed change, c = p (R7C-BAL103K, 6 Oct 2026); f.50 judge fr17 FAIL -1.537
@@ -482,3 +482,61 @@ Read so far: unmeasured as a reading on f.50 -- the draft's 451/630 H tokens sti
 - [ ] image-check: 103 settled-M columns remain weak; planned: zoomed re-look guided by the sibling's confusion pairs
 - [x] retry: decode_key --check and fr17 re-judge after the calibrated key change (R7C-BAL103K, 6 Oct 2026)
 Verdict: keep going: 2 internal gaps; cheapest next: decode each f.50 blind pass separately and test transcription vs table (known-word contexts, letter frequency against the sibling), ~$2
+
+## Transcription vs table on f.50, per pass (R8-BAL103, 6 Oct 2026)
+
+Worker R8-BAL103 (account 1, LANE LANE-RUN8-account-1), 03:46-03:5x UTC 6 Oct 2026 by `date -u`. Key source unchanged: published
+(Tomokiyo 1644 table + R7C's licensed c = p). Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **Pre-registered** in `r8/PREREG.md`, pushed (3f73102cc) before any score was computed; an addendum naming the re-read batch
+  (declared deviation: only 1 line met the registered break-line definition, so the batch is the 5 lowest-scoring lines, as the
+  brief's "worst 4-6") pushed (f3f7b7d51) before the re-read ran.
+- **T1, page level, each blind pass decoded separately** (`r8/pertest.py`, `--check` up to date; `r8/result.tsv`): fr17 4-gram score
+  pass A -1.566 (654 letters), pass B -1.602 (639) against a sign->letter permutation null mean -2.16, **p99 -1.99 / -1.96**: the
+  table reads f.50 well above chance in both passes. Matched synthetic (fr17 enciphered with this table, random-sign noise): r = 0.15
+  mean -1.334 (p05 -1.461), r = 0.30 mean -1.663 (p95 -1.586). Both passes sit **at the r ~ 0.25-0.30 noise band**: the decode looks
+  like a right table read through a transcription with roughly a quarter of its signs wrong.
+- **T2, per line (32 lines)** (`r8/lines.tsv`, both pass decodes per line in `r8/decodes.txt`): Spearman rho(pass agreement, mean
+  line score) = **0.425, one-sided permutation p = 0.0072** -- lines where the two blind passes disagree are the lines that do not read.
+  Break lines (both passes below the r = 0.15 synthetic p05 at that length): 1 of 32 (f50r_L13); 0 of 9 lines with agreement >= 0.90,
+  1 of 15 with agreement < 0.80. **Registered verdict: transcription suspect.** Not the table: no step toward an April 1644 table search
+  is licensed by this result.
+- **Descriptive per-sign gain** (`r8/sign_gain.tsv`, never applied): four signs gain more than the synthetic's p95 max (0.033) if
+  revalued: the ambiguous **9 (now i; best s, 41 agreed tokens)**, y (g; n), xc (f; i), xs (d; i). 9 -> s agrees with the sibling
+  calibration (9 aligned s, s, i on f.171r); xc/xs are the curly-x family every reader names as least sure, so their gains point at
+  sign naming, not cell values.
+- **Re-read of the 5 worst lines** (f50r_L13, f50v_L09, f50v_L03, f50r_L14, f50r_L16; R7A's tools/iiif_lines.py crops, 7 crops, one
+  blind Sonnet pass, crops + key sheet only: `r8/reread.tsv`). Registered 2-of-3 rule applied by `r8/settle3.py --apply`
+  (`r8/corrections.tsv`, alignment `r8/reread_align.tsv`): of 31 disagreement columns met, **10 applied** (old sign kept in
+  ciphertext.tsv `alt` as `r8 old=...`, why `r8-2of3`, grade M), 11 confirmed the current sign, 10 matched neither pass (logged). The
+  re-reader's own notes: low confidence on x/xc/xs/xbar, venus/P/q2, m/mt/mm, 6/sigma, hz/hbar; L16 and v L03 partly guessed. f50v_L09
+  s2 had no `|>` marker; its first 3 tokens, repeated from s1 in the overlap, are dropped (stated in settle3.py).
+- **Re-decode** (`tools/decode_key.py . --check`: reading up to date): tokens 630, H 451, M 166, U 13. **Judge** (input
+  `r8/judge_after_r8.txt` by `tx/r7b/judge_input.py`, corpus fr17):
+
+      FAIL language: score=-1.569, null_p99=-1.878, real_p05=-0.871, real_median=-0.778, mode=both, N=656
+      FAIL - baluze103-letellier-marca-1644 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+  **Before -1.537 / after -1.569: the registered corrections made it worse**, and all five re-read lines dropped (e.g. f50v_L09 -1.856
+  -> -2.287). Six of the ten applied changes are m -> mm (u -> p): the third reader breaks the A/B tie on m/mm the same way every time,
+  which is a reader bias, not evidence. A single extra machine reader does not settle the confusable pairs on this hand. The changes
+  stay applied as registered and are reversible from `alt`; the next step should decide whether to keep them.
+- What this settles: the f.50 draft fails the judge because of the transcription (sign naming on confusable pairs, measured ~25-30%
+  sign error by the synthetic band), not because of the table. What it does not settle: which reading of each confusable pair is
+  right on this hand. Not a negative on the key.
+Where not found: no plaintext of f.50 used or consulted; no sibling read this job. Requests: none (all from disk).
+
+## Remaining gaps (R8-BAL103, 6 Oct 2026)
+Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditional), judge fr17 FAIL -1.569 vs real_p05 -0.871; the page decode sits at the r ~ 0.25-0.30 synthetic noise band (r8/result.tsv)
+- f.50 confusable sign pairs (m/mm/mt, venus/P/q2, x/xc/xs/xbar, 6/sigma, hz/hbar, tt) - blocker: not-attempted; the registered test (r8/PREREG.md, rho 0.425, p 0.007) places the failure in the transcription, and one more machine reader (R8-BAL103 re-read) lowered the judge; machine passes split on these named pairs, so per CLAUDE.md Usage 6 the next pass is the owner's sign sorter, not a fourth machine pass; next: tools/lookalike_pass.py on f.50 for the named pairs, then a sign_sorter focus.tsv of the remaining splits, ~$2
+- ambiguous 9 (i|r|s) and the R8 m->mm corrections - blocker: not-attempted; 9 -> s is the largest per-sign gain (r8/sign_gain.tsv) and matches the f.171r calibration, and the 10 R8 corrections lowered the score; next: a context rule for 9 tested against the f.171r/f.172r alignment (calib/), and a decision to keep or revert the R8 corrections after the look-alike pass, ~$1.5
+
+## Escalation (R8-BAL103, 6 Oct 2026)
+- [x] siblings: f.171r L1-4 transcribed blind and scored against the f.172r period decipherment (R7C-BAL103K, 6 Oct 2026): A 0.767 vs permutation p99 0.311, gate PASS
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's table reads f.50 above a permutation null in both blind passes (R8-BAL103, 6 Oct 2026: -1.566/-1.602 vs p99 -1.99/-1.96); judge fr17 FAIL -1.569
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: R8-BAL103's registered test puts the failure in the transcription, not the table; no April-table search or rebuild is licensed
+- [ ] image-check: crop settlement (R7B) and one blind re-read of the 5 worst lines (R8-BAL103) done; planned: tools/lookalike_pass.py on the named pairs, then the owner's sign sorter
+- [x] retry: decode_key --check and fr17 re-judge after the R8 corrections (R8-BAL103, 6 Oct 2026): -1.537 -> -1.569
+Verdict: keep going: 2 internal gaps; cheapest next: tools/lookalike_pass.py on the f.50 confusable pairs, then a sign-sorter focus list, ~$2

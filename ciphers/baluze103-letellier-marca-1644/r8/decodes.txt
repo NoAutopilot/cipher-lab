@@ -1,0 +1,96 @@
+f50r_L01	agr=0.944
+  A: leiconieilteisdeta
+  B: eiconieilteisdeta
+f50r_L02	agr=0.800
+  A: bcraelongeaeantsphd
+  B: brfeelongeaeantspd
+f50r_L03	agr=0.778
+  A: songdespieacrerunt
+  B: songdepieplredunt
+f50r_L04	agr=0.647
+  A: aacemcraaonleiteo
+  B: aocmebreaonleiteo
+f50r_L05	agr=0.850
+  A: cechoistraamcsiondio
+  B: cechoistrampsiondio
+f50r_L06	agr=0.611
+  A: cmiicehquiaeilsmep
+  B: beiitcequiadillmep
+f50r_L07	agr=0.833
+  A: uaoaeaosenieslieis
+  B: uaoeeoosenimslieis
+f50r_L08	agr=0.636
+  A: ponalieltemeotdelditne
+  B: aonelueltemeotdmlputcm
+f50r_L09	agr=0.684
+  A: queleditibeicmcirdaie
+  B: queleditieudebirdafe
+f50r_L10	agr=0.947
+  A: oudiiadeaequecontsegd
+  B: oudiiadeeequecontsegd
+f50r_L11	agr=0.750
+  A: teideipeinheiqueslceae
+  B: teideiueinhmiquesldeem
+f50r_L12	agr=0.900
+  A: delcdoiiouquestyenioi
+  B: delpdouiouquestyenioi
+f50r_L13	agr=0.792
+  A: donlceitimedeidbrsgdorx
+  B: donlbeitimedeufrtsgdorx
+f50r_L14	agr=0.684
+  A: tedbtiaciacacfinqueil
+  B: tedtiobiepaffinqueil
+f50r_L15	agr=0.842
+  A: pienoegaodeengeietc
+  B: uienoegaodeengmietp
+f50r_L16	agr=0.600
+  A: paspeoiucceipaioo
+  B: paspedeilbpteiuaioo
+f50r_L17	agr=0.778
+  A: celuquifaitbaeacfcs
+  B: celuquifaiteaffbs
+f50r_L18	agr=0.789
+  A: debarceloneseitptcindpliibe
+  B: debarceloneseitptbinduluie
+f50r_L19	agr=0.778
+  A: coisdeaequeonouiiec
+  B: coisdmeequeonouuieb
+f50r_L20	agr=0.895
+  A: ainsequilpretendldiil
+  B: ainsequilpretendlfuil
+f50v_L01	agr=0.900
+  A: paluuetsqueteifalslani
+  B: ualuuetsqueteiflslani
+f50v_L02	agr=0.947
+  A: oueadreisegtaulreipour
+  B: nueadreisegtaulreipour
+f50v_L03	agr=0.864
+  A: deinopurbrflupeonmsgde
+  B: deinouurirfluueonmsgde
+f50v_L04	agr=0.885
+  A: bceetacfindoilerlatigeate
+  B: iceetacfindoiilerltigeate
+f50v_L05	agr=0.923
+  A: teichdiesquise
+  B: teichoiesquise
+f50v_L06	agr=0.947
+  A: pssentenhideiire
+  B: pssentenhindeiire
+f50v_L07	agr=0.600
+  A: paiibdgnemenlquemafca
+  B: uiiiofnemenlqueamac
+f50v_L08	agr=0.955
+  A: selloeitetquilmagdefecl
+  B: selloeitetquilmagdefecl
+f50v_L09	agr=0.609
+  A: enaprfsdeicdeuertblfapl
+  B: enausoeicoeuertilfut
+f50v_L10	agr=0.909
+  A: suitopnctempeifhequecels
+  B: suitounctempeifhequecelf
+f50v_L11	agr=0.857
+  A: nebecodlinpesetanneit
+  B: neiecodlinuesytanneit
+f50v_L12	agr=0.714
+  A: ctsesoitcabtfldepanl
+  B: ctsesoitcaitfeunl

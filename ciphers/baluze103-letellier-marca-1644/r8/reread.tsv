@@ -1,0 +1,8 @@
+f50r_L13	xs|xc eps a hz venus theta 9 6 mt|mm b 14 t u m xc|xs q2|venus 3 x|xc o|theta y|xc eps|x delta f l
+f50r_L14	sigma|6 u t venus|q2 6 9 xbar|xc P|venus 9 u|cap dt|f 10 x 15 mm|m a =11 18 19
+f50r_L16	23 10 7 c u delta|a t u|n 3|y hz|hbar y|xc bt|t xs|x 9 f|dt 6 theta xs|x 9 mm 10 9 delta|H 22 c
+f50v_L03_s1	13 u 9 a delta mm 4 f q2|venus f x|u 24|2 4 mm 14
+f50v_L03_s2	4 mm 14 |>22 a 20 P|venus y 13 u
+f50v_L09_s1	14 a ct mm 3|z xc|xbar P|venus xs|x 14 9 12 xs|xc u
+f50v_L09_s2	9 12 xs|xc m hbar|hz u f 6 venus|q2 19 xc|xs dt|f mm|m hz|3
+# notes: all rows low confidence on curly x family (x/xc/xs/xbar), venus vs P vs q2, mt vs mm vs m, 6 vs sigma, hz vs hbar; L16 and L03_s1/s2 cursive runs guessed

@@ -1,0 +1,32 @@
+line	position	old	new	A	B	reread	action
+f50r_L13	5	tt	venus	tt	venus	venus	applied
+f50r_L13	14	m	m	mt	m	m	confirms current
+f50r_L13	15	xc	xc	xs	xc	xc	confirms current
+f50r_L13	16	q	q	venus	q	q2	logged: re-read matches neither pass
+f50r_L13	18	6	6	-	6	x	logged: re-read matches neither pass
+f50v_L09	4	m	mm	mm	-	mm	applied
+f50v_L09	5	z	z	z	m	3	logged: re-read matches neither pass
+f50v_L09	6	xc	xc	xc		xc	confirms current
+f50v_L09	8	xs	xs	xs	H	xs	confirms current
+f50v_L09	12	H	xs	xs	H	xs	applied
+f50v_L09	18	venus	venus	venus	9	venus	confirms current
+f50v_L09	21	lb	lb	lb		dt	logged: re-read matches neither pass
+f50v_L09	22	m	mm	mm	m	mm	applied
+f50v_L09	23	hz	hz	hz	gz	hz	confirms current
+f50v_L03	6	m	mm	mm	m	mm	applied
+f50v_L03	9	venus	venus	venus	9	q2	logged: re-read matches neither pass
+f50v_L03	14	m	mm	mm	m	mm	applied
+f50r_L14	4	q	venus	venus	q	venus	applied
+f50r_L14	7	lb	lb	lb	H	xbar	logged: re-read matches neither pass
+f50r_L14	8	tt	tt	tt	venus	P	logged: re-read matches neither pass
+f50r_L14	10	R	u	R	u	u	applied
+f50r_L14	11	tt	tt	tt	mm	dt	logged: re-read matches neither pass
+f50r_L14	13	x	x	x	xc	x	confirms current
+f50r_L16	6	delta	delta	-	d	delta	logged: re-read matches neither pass
+f50r_L16	7	t	t	-	t	t	confirms current
+f50r_L16	8	u	u	delta	u	u	confirms current
+f50r_L16	10	hz	hz	-	hz	hz	confirms current
+f50r_L16	11	hbar	hbar	hbar	venus	y	logged: re-read matches neither pass
+f50r_L16	12	tt	tt	tt	mm	bt	logged: re-read matches neither pass
+f50r_L16	13	tt	6	tt	6	6	applied
+f50r_L16	16	m	mm	mm	m	mm	applied

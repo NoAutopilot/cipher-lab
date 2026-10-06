@@ -1,0 +1,118 @@
+line	pos	sign	conf	alt
+f50r_L13	1	xs	M	xc
+f50r_L13	2	eps	H	
+f50r_L13	3	a	H	
+f50r_L13	4	hz	H	
+f50r_L13	5	venus	H	
+f50r_L13	6	theta	H	
+f50r_L13	7	9	H	
+f50r_L13	8	6	H	
+f50r_L13	9	mt	M	mm
+f50r_L13	10	b	H	
+f50r_L13	11	14	H	
+f50r_L13	12	t	H	
+f50r_L13	13	u	H	
+f50r_L13	14	m	H	
+f50r_L13	15	xc	M	xs
+f50r_L13	16	q2	M	venus
+f50r_L13	17	3	H	
+f50r_L13	18	x	M	xc
+f50r_L13	19	o	M	theta
+f50r_L13	20	y	M	xc
+f50r_L13	21	eps	M	x
+f50r_L13	22	delta	H	
+f50r_L13	23	f	H	
+f50r_L13	24	l	H	
+f50r_L14	1	sigma	M	6
+f50r_L14	2	u	H	
+f50r_L14	3	t	H	
+f50r_L14	4	venus	M	q2
+f50r_L14	5	6	H	
+f50r_L14	6	9	H	
+f50r_L14	7	xbar	M	xc
+f50r_L14	8	P	M	venus
+f50r_L14	9	9	H	
+f50r_L14	10	u	M	cap
+f50r_L14	11	dt	M	f
+f50r_L14	12	10	H	
+f50r_L14	13	x	H	
+f50r_L14	14	15	H	
+f50r_L14	15	mm	M	m
+f50r_L14	16	a	H	
+f50r_L14	17	=11	H	
+f50r_L14	18	18	H	
+f50r_L14	19	19	H	
+f50r_L16	1	23	H	
+f50r_L16	2	10	H	
+f50r_L16	3	7	H	
+f50r_L16	4	c	H	
+f50r_L16	5	u	H	
+f50r_L16	6	delta	M	a
+f50r_L16	7	t	H	
+f50r_L16	8	u	M	n
+f50r_L16	9	3	M	y
+f50r_L16	10	hz	M	hbar
+f50r_L16	11	y	M	xc
+f50r_L16	12	bt	M	t
+f50r_L16	13	xs	M	x
+f50r_L16	14	9	H	
+f50r_L16	15	f	M	dt
+f50r_L16	16	6	H	
+f50r_L16	17	theta	H	
+f50r_L16	18	xs	M	x
+f50r_L16	19	9	H	
+f50r_L16	20	mm	H	
+f50r_L16	21	10	H	
+f50r_L16	22	9	H	
+f50r_L16	23	delta	M	H
+f50r_L16	24	22	H	
+f50r_L16	25	c	H	
+f50v_L03	1	13	H	
+f50v_L03	2	u	H	
+f50v_L03	3	9	H	
+f50v_L03	4	a	H	
+f50v_L03	5	delta	H	
+f50v_L03	6	mm	H	
+f50v_L03	7	4	H	
+f50v_L03	8	f	H	
+f50v_L03	9	q2	M	venus
+f50v_L03	10	f	H	
+f50v_L03	11	x	M	u
+f50v_L03	12	24	M	2
+f50v_L03	13	4	H	
+f50v_L03	14	mm	H	
+f50v_L03	15	14	H	
+f50v_L03	16	22	H	
+f50v_L03	17	a	H	
+f50v_L03	18	20	H	
+f50v_L03	19	P	M	venus
+f50v_L03	20	y	H	
+f50v_L03	21	13	H	
+f50v_L03	22	u	H	
+f50v_L09	1	14	H	
+f50v_L09	2	a	H	
+f50v_L09	3	ct	H	
+f50v_L09	4	mm	H	
+f50v_L09	5	3	M	z
+f50v_L09	6	xc	M	xbar
+f50v_L09	7	P	M	venus
+f50v_L09	8	xs	M	x
+f50v_L09	9	14	H	
+f50v_L09	10	9	H	
+f50v_L09	11	12	H	
+f50v_L09	12	xs	M	xc
+f50v_L09	13	u	H	
+f50v_L09	14	9	H	
+f50v_L09	15	12	H	
+f50v_L09	16	xs	M	xc
+f50v_L09	17	m	H	
+f50v_L09	18	hbar	M	hz
+f50v_L09	19	u	H	
+f50v_L09	20	f	H	
+f50v_L09	21	6	H	
+f50v_L09	22	venus	M	q2
+f50v_L09	23	19	H	
+f50v_L09	24	xc	M	xs
+f50v_L09	25	dt	M	f
+f50v_L09	26	mm	M	m
+f50v_L09	27	hz	M	3
