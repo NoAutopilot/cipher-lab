@@ -1,0 +1,141 @@
+{
+ "T1": {
+  "M_real": 0,
+  "digit_pairs": {
+   "26": 1,
+   "34": 1,
+   "35": 3,
+   "37": 2,
+   "39": 1,
+   "42": 1,
+   "43": 1,
+   "48": 1,
+   "49": 1,
+   "64": 1,
+   "65": 1,
+   "69": 1,
+   "74": 1,
+   "78": 1,
+   "82": 1,
+   "83": 2,
+   "84": 1,
+   "94": 2
+  },
+  "hits_run_pos_code": [],
+  "p_codeset": 1.0,
+  "p_order": 1.0,
+  "pass": false,
+  "power_k4": 0.435
+ },
+ "T2": {
+  "W_real": 1,
+  "hits": [
+   [
+    "forse",
+    "forte"
+   ]
+  ],
+  "n_clear": 53,
+  "n_code_strings": 42,
+  "p": 0.5102,
+  "pass": false
+ },
+ "T3": {
+  "low_count_signs": {
+   "#": {
+    "fit_letter": "n",
+    "high_cost": false,
+    "mean_cost": 0.856,
+    "n": 1
+   },
+   "8o": {
+    "fit_letter": "p",
+    "high_cost": true,
+    "mean_cost": 1.31,
+    "n": 1
+   },
+   "B3": {
+    "fit_letter": "p",
+    "high_cost": true,
+    "mean_cost": 1.31,
+    "n": 1
+   },
+   "G": {
+    "fit_letter": "l",
+    "high_cost": true,
+    "mean_cost": 1.191,
+    "n": 1
+   },
+   "H": {
+    "fit_letter": "m",
+    "high_cost": true,
+    "mean_cost": 1.468,
+    "n": 2
+   },
+   "HEART": {
+    "fit_letter": "f",
+    "high_cost": true,
+    "mean_cost": 1.73,
+    "n": 1
+   },
+   "LAM4": {
+    "fit_letter": "f",
+    "high_cost": true,
+    "mean_cost": 1.409,
+    "n": 2
+   },
+   "PCT": {
+    "fit_letter": "n",
+    "high_cost": true,
+    "mean_cost": 1.176,
+    "n": 3
+   },
+   "QP": {
+    "fit_letter": "e",
+    "high_cost": true,
+    "mean_cost": 1.267,
+    "n": 2
+   },
+   "THETA": {
+    "fit_letter": "t",
+    "high_cost": true,
+    "mean_cost": 1.053,
+    "n": 1
+   },
+   "TU": {
+    "fit_letter": "t",
+    "high_cost": true,
+    "mean_cost": 1.267,
+    "n": 2
+   },
+   "VO": {
+    "fit_letter": "m",
+    "high_cost": true,
+    "mean_cost": 1.202,
+    "n": 1
+   },
+   "i": {
+    "fit_letter": "h",
+    "high_cost": false,
+    "mean_cost": 0.57,
+    "n": 1
+   },
+   "r": {
+    "fit_letter": "c",
+    "high_cost": null,
+    "mean_cost": null,
+    "n": 1
+   }
+  },
+  "median_cost": 0.993
+ },
+ "codes": [
+  "97",
+  "19",
+  "88",
+  "23",
+  "72",
+  "15"
+ ],
+ "n_tokens": 363
+}

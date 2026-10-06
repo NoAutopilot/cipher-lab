@@ -919,3 +919,46 @@ blind sign-concordance pass of no. 7 vs nos. 9/19 by a second reader on crops (o
 step (b), the R4750 key sheet's word codes against no. 7's low-count signs (one DECODE login, one vision unit, about USD 2-3).
 Gap record (status `open`, no Remaining-gaps section required by gaps_check): no. 7 nomenclator layer -- not-attempted with outside
 material beyond this pooling; next: step (b) above, ~$3.
+
+## R11-SIENA4750 -- no. 7 against key R4750's nomenclator (account 4 worker for LANE-RUN11-account-4, 6 Oct 2026, 14:01-14:07 UTC by date -u; PREREG header time corrected 14:1x -> 14:03 after its push, no content change)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run11-jobs.md` job R11-SIENA4750 (R10-SIENA7N / R11-SIENAPOOL step (b)). Status unchanged:
+`open`. **No DECODE login and no vision pass**: R4750 is already transcribed on disk in Bourdeau's repository (`targets/siena1421/keys/
+R4750.txt`, agent G, from full-resolution crops, alphabet re-checked on the image when G tested it against no. 7), and the brief says to skip
+the passes in that case. Requests: github.com 1 sparse shallow clone of dbourdeau/cyphersolver `targets/siena1421` (read only; CC BY 4.0
+text, credit Bourdeau and his agents G and J); no other host. Pre-registration `PREREG-R11-SIENA4750.md`, pushed in e34b0fc45 (14:03 UTC)
+before the scored run. Script `specs/cheap-tests/siena-concistoro-2308/run_test_r4750.py` (`--check` exit 0), `results_r4750.json`.
+
+R4750's nomenclator: 45 names; 6 numeral codes (97, 19, 88, 23, 72, 15), 3 drawn signs (papa_sign, tent_oo, C_oo), 36 written words
+(gallus, pesce, Volpe, fede, Villa, Aqua, luna, Leo ...).
+
+| test | statistic | real | control | gate | power | verdict |
+|---|---|---|---|---|---|---|
+| T1 numeral codes as adjacent digit pairs inside a run | M | **0** of 22 digit pairs | order shuffle p 1.0; random six-code sets p 1.0 | p <= 0.05 both | 0.435 at k=4 planted codes | **non-test at this N** (PREREG: power < 0.8) |
+| T2 written code words among J's 53 clear words (L02-L12, >= 4 letters), Levenshtein <= 1 | W | 1 (forse ~ forte) | 2000 length-matched it16dip word lists, p 0.51 | p <= 0.05 and W >= 1 | not measured (not in the PREREG) | miss, chance level |
+
+Deviation from the PREREG wording (made before the scored run, disclosed): T2's control draws one length-matched word per code *string* (42:
+36 words plus the uncertain alternative readings), not 36, so the control list has the same number of strings as the real one.
+
+**T3 (descriptive, no gate).** Every no. 7 sign with count <= 3 except `#` and `i` (and `r`, unscored at a run start) is high-cost under
+R9-SIENA7's seed-1 fit (mean bigram cost above the 0.993 median): PCT, H, QP, LAM4, TU, THETA, G, B3, 8o, HEART, VO. The concordance fixed in
+the PREREG gives none of them an R4750 *nomenclator* counterpart: the closest R4750 signs are alphabet or null signs (PCT~per = u, # ~ hash =
+null, 8o ~ dumbbell = o, but the gloss over 8o is i(?)), and QP, LAM4, B3 have no counterpart at all. No drawn code (papa_sign, tent_oo, C_oo)
+lies closer to a rare no. 7 sign than those.
+
+**Result.** No R4750 word code is found in no. 7 by any of the three routes. T1 is a non-test (a 363-token letter with 22 digit pairs cannot
+show four planted codes reliably), T2 sits at chance, T3 finds no rare sign that looks like an R4750 code. Combined with agent G's own on-image
+finding (R4750's alphabet contradicts the L08 gloss: 7, 6, +, 2, c all disagree; about 20% of no. 7's tokens are sign types R4750 lacks), the
+nomenclator layer gives no second route to R4750 as no. 7's key. Post hoc, not gated: J reads "?apoli" (L11) and, outside the cipher block,
+"duca di Melano" (L16) in clear, both names that R4750 codes (Napoli 72, Duca di Milano fecõ); a writer using R4750 could still write names
+in clear, so this is an observation only. The R10-SIENA7N caveat stays open: a nomenclator on no. 7 is neither shown nor excluded, and no
+outside source yet offers its word codes. Grades: no token read; no key.tsv; key unchanged (no decode --check needed). Cryptanalytic result
+only.
+
+**Next step (suggestion, not run):** the one remaining outside-material route is the agent-J confound check R11-SIENAPOOL named (a second
+blind reader's sign concordance of no. 7 vs nos. 9/19 on crops, one DECODE login, about USD 3); if the overlap survives it, pool nos. 7+19+9
+(527 tokens) for the R10-SIENA7N nomenclator family. Other fasc. 1 key sheets with numeral word codes (R4753, R4756, R4762 are transcribed in
+Bourdeau's `keys/`) can be run through `run_test_r4750.py`'s T1/T2 by swapping the code lists, disk only, about USD 1 each, but T1 is
+underpowered at this N for any sheet.
+Gap record (status `open`): no. 7 nomenclator layer -- R4750 tested (T1 non-test, T2 chance, T3 no match); next: second-reader concordance
+of no. 7 vs nos. 9/19, ~$3.

@@ -1,4 +1,4 @@
-# PREREG R11-SIENA4750 -- no. 7 against key R4750's nomenclator (6 Oct 2026, written 14:1x UTC by date -u, pushed before scoring)
+# PREREG R11-SIENA4750 -- no. 7 against key R4750's nomenclator (6 Oct 2026, written 14:03 UTC by date -u, pushed before scoring)
 
 Question (R10-SIENA7N / R11-SIENAPOOL step (b)): do the word codes of key R4750 (ASSi Concistoro fasc. 1, "a messer Lionardo e messer
 Antonio ambasciatori a Milano 1454") occur in no. 7 (R4796, the Milan-embassy despatch naming Lionardo Benvoglienti), in the places
