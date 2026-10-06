@@ -1,0 +1,14 @@
+seed	start	share	count<=3 signs (truth->read)	count-2 signs (truth->read)
+1	149487	0.989	s19:k->m s20:m->k	s19:k->m s20:m->k
+2	167207	0.992	s17:f->f s18:q->u s19:p->p s20:k->z	s18:q->u
+3	41807	0.986	s19:p->f s20:k->n	s20:k->n
+4	87959	0.956	s20:p->p s19:k->d	s20:p->p
+5	14442	0.995	s20:k->s	s20:k->s
+6	179361	0.887	s20:x->t s18:p->i s19:z->m	s20:x->t
+7	152132	0.992	s18:k->k s20:x->n s19:p->i	s19:p->i
+8	152329	0.989	s20:z->z s19:k->k	s20:z->z
+9	142708	0.989	s19:p->n s20:k->t	s19:p->n s20:k->t
+10	80784	0.984	s20:k->s	s20:k->s
+# C mean share 0.976 (gate >= 0.90): PASS
+# L count<=3 6/22 = 0.273 (gate >= 0.80): FAIL
+# L2 count==2 2/12 = 0.167 (gate >= 0.80, n >= 10): FAIL
