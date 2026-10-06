@@ -1,12 +1,12 @@
 statistic	value
-entries	14
-keyed_word_tokens_scored	132
-target_agree	16/132 = 0.121
-target_conflict	59
-target_unfixed	51
+entries	16
+keyed_word_tokens_scored	151
+target_agree	17/151 = 0.113
+target_conflict	62
+target_unfixed	66
 target_partial	6
 target_collision	0
-control_agree	6/132 = 0.045
-entries_target_rate_above_control	8/14
+control_agree	7/151 = 0.046
+entries_target_rate_above_control	8/16
 numerals_agree	0/2
-grades_after_all_tokens	H 0, C 16, S 120, I 0, M 0
+grades_after_all_tokens	H 0, C 17, S 139, I 0, M 0

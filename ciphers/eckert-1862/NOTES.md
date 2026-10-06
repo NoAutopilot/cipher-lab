@@ -1689,3 +1689,66 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 5 internal gaps; cheapest next: a received-ledger pass on mssEC 04-14 (~$2) or a split2 wrongtel/confpair prereg and the adopt-s2 decision (~$2); the No. 4 book for the 14 words waits on a desk-browser read of the Friedman copy
+
+## R10-ECK62T (6 Oct 2026, account 1 worker for LANE LANE-RUN10-account-1): split2 wrongtel/confpair PREREG and run, adopt-s2 decision
+
+Step check: not run before (R10-ECK62S named it). Pre-registered and pushed before any split2 flip, wrongtel or confpair
+number: `ec18/PREREG-ECK62-S2.md` (commit 65eaa5ef0). The brief's "16-target pool" is the split2 positive control; the
+mechanical target selection (FLIP rule 1 on `s2/align_free_entries.tsv`) gives 17 (legacy 18 minus 9985.564, which split2 cuts
+into three undated '?' parts). Data re-fetched to scratch, not committed: vol18.json (sha256 cb162574..., matches
+pilot1864/manifest.tsv), OR 32.1-49.2 48 `_djvu.txt` (all 48 sha256 match or_volumes.tsv).
+- Code: `ec18/ec18_fliprows.py --split2 --write|--check` writes `s2/align_flip_rows.tsv` (17) and `s2/align_flipctl_rows.tsv`
+  (16) by FLIP rules 1-2; `ec18_wrongtel.py --split2` asserts 17/16 (legacy assertion 18/14 unchanged); `ec18_confpair.py
+  --split2` takes its primary pool from the split2 wrongtel `right-telegram` class. Fixed: `ec18_confpair.py` read its mode
+  from argv[1], so `--split2 --write` ran as a check; it now looks for `--write` anywhere (legacy calls behave as before).
+  `s2/align_flip_*` from R10-ECK62S (a split2 run on the legacy rows file, AGREE 14/227) are replaced by the prereg's split2
+  rows run.
+
+| instrument | legacy | split2 |
+|---|---|---|
+| flip selection / flip control | 19 / 14 | 17 / 16 |
+| flipped target AGREE | 20/261 = 0.077 | 8/219 = 0.037 |
+| flip-control AGREE (gate <= 0.15) | 16/132 = 0.121 PASS | 17/151 = 0.113 PASS |
+| accepted flips (rule 4) | 1 (9991.571) | 0 (9991.571 is book 1 by marker under split2) |
+| wrongtel pos median / p10; neg median / p90 | 0.871 / 0.676; 0.206 / 0.296 | 0.889 / 0.688; 0.203 / 0.316 |
+| wrongtel gate | PASS | PASS |
+| targets: wrong / right / undecided | 0 / 7 / 11 (of 18) | 0 / 5 / 12 (of 17) |
+| confpair primary (right-telegram pool) | 7 entries, 93 pairs, S 0, p 1.0, power 0.610 FAIL | 5 entries, 60 pairs, S 0, p 1.0, power 0.345 FAIL |
+| confpair all targets (descriptive) | 18, 376 pairs, S 18, p 0.0005, power 1.0 | 17, 368 pairs, S 15, p 0.0005, power 1.0 |
+| confpair strict (descriptive) | S 14, p 0.0005 | S 13, p 0.0005 |
+
+- Right -> undecided under split2: 9969.543 (0.632; its received-time line split off as 9969.543b) and 9985.563 (0.686, just
+  under the new p10 0.688). Targets sharing an OR page: 2 -> 0 (the 9985.563/9985.564 pair was merged text).
+- Pre-registered verdict, primary pool: **untested-by-this-tool at N = 60** (power 0.345 < 0.80), as in legacy (N = 93). Not
+  a negative.
+- Descriptive cross-entry code words, split2 strict (13): artists = boats, thrash = Ohio [rail]road, hogarth = river, harm =
+  New Berne, levels = cars, line = Morehead City, loath = command, scold = number, shower = order, forge = move, lunch = work,
+  joint = telegraph, fence = left. Lost against legacy: **hoax = Richmond** (its second context was 9985.564's merged text;
+  under split2 it rests on one entry) and credit = Weitzel (same page pair). Candidates only, ungraded; no key file touched.
+- **Adopt-s2 decision (PREREG-ECK62-S2): ADOPT.** A1 every new split2 run and every legacy run `--check` current (fliprows,
+  align flip/flipctl s2 and legacy, align free legacy, wrongtel s2 and legacy, confpair s2 and legacy, `--split-report`,
+  decode.py); the other R10-ECK62S split2 outputs were `--check` current at 10:39 and their inputs (ec18.py, ec18_align.py,
+  s2 inputs) are unedited since. A2 split known answer PASS. A3 floor holds (assign 0.963 -> 0.971, assign_free 0.896 ->
+  0.897, print_q 0.934 -> 0.948, align_free margin 0.323 -> 0.339; on file before the prereg, not blind). A4 (blind) FLIP
+  gate and wrongtel gate both PASS on split2. So later steps read `ec18/s2/`; the legacy files stay committed and `--check`
+  current; nothing deleted. No key, book, grade or reading claim changed.
+- Requests: hdl.huntington.org 1, archive.org 48, >= 1.6 s apart. 0 subagents, 0 vision. Report what was found and where it
+  was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, R10-ECK62T, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); mssEC 18 cascade now split2 (ec18/s2/, adopted R10-ECK62T): 729 entries, print_q known 0.948, align_free AGREE 326/764 = 0.427 vs control 0.088; 17 neither-book entries: 0 wrong telegram, 5 right, 12 undecided (gate PASS); conflict-pair primary untested (power 0.345 at N 60), all-17 pool 13 strict cross-entry code words p 0.0005 (descriptive); the 14 legacy words looked up in Cipher No. 5: none carried (R8-ECK62)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), residue regenerated (GAPS197); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); next: the received copies of the 27 Jan and 24 May 1865 telegrams (Eckert received ledgers) for a third witness, ~$2
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; the 13 code words date 30 Dec 1864 - 13 Jul 1865, Cipher No. 3/No. 4 period; the Huntington holds only No. 5 (R8-ECK62); the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; 100 under the legacy split, 137 '?' entries under split2 print_q; next: the image (marker words the volunteer text may have dropped) for the dated `?p` entries under split2, ~$4
+
+## Escalation (R10-ECK62T, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram and conflict-pair tests done on legacy (R7B-ECK62, R7C-ECK62C) and split2 (R10-ECK62T: 0 wrong, 5 right, 12 undecided; primary untested at N 60); splitter fixed and adopted (R9-ECK62, R10-ECK62S, R10-ECK62T)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: a received-ledger pass on mssEC 04-14 by the GAPS171 method, ~$2; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy

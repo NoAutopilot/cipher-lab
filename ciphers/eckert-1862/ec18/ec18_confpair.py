@@ -84,7 +84,7 @@ def power(ctl, n_pairs, rng, subs=200, shuf=500):
 
 
 def main(argv):
-    mode = argv[1] if len(argv) > 1 else "--check"
+    mode = "--write" if "--write" in argv else "--check"
     wt = {r["id"]: r for r in rows("wrongtel_entries.tsv") if r["role"] == "target"}
     toks = rows("align_free_tokens.tsv")
     targ = [r for r in toks if r["id"] in wt and r["side"] == "target" and r["status"] == "CONFLICT"
@@ -93,9 +93,12 @@ def main(argv):
     for r in toks:
         if r["id"] not in wt and r["side"] == "target" and r["status"] == "AGREE" and r["kind"] == "word":
             ctl[r["id"]].append((r["id"], r["code_word"].lower(), content(r["printed"])))
+    prim, pools = PRIMARY, ("primary7", "all18", "all18_strict")
+    if ec18.SPLIT2:  # PREREG-ECK62-S2 item 4: primary = the split2 wrongtel right-telegram class
+        prim, pools = sorted(e for e in wt if wt[e]["class"] == "right-telegram"), ("primary", "all", "all_strict")
     out = ["pool\tn_entries\tn_pairs\tS\tp_shuffle\tctl_power\tctl_median_S\tgate\tverdict\thits"]
     plines = ["id\tclass\tdate\tkind\tcode_word\tprinted\tcontent\trecurs_in_pool18\tagrees_across_entries_18"]
-    for name, ids in (("primary7", PRIMARY), ("all18", sorted(wt)), ("all18_strict", sorted(wt))):
+    for name, ids in zip(pools, (prim, sorted(wt), sorted(wt))):
         rng = random.Random(0)
         strict = name.endswith("strict")
         SAMEPAGE.clear()
@@ -110,14 +113,14 @@ def main(argv):
             ctl = {e: [(a, b, content(" ".join(x), True)) for a, b, x in v] for e, v in ctl.items()}
         pw, med = power(ctl, len(pairs), rng)
         gate = "PASS" if pw >= 0.80 else "FAIL"
-        if name == "primary7":
+        if name == pools[0]:
             verdict = ("untested-by-this-tool" if gate == "FAIL" else
                        "consistency-above-chance" if p <= 0.05 else "no-consistency-at-this-N")
         else:
             verdict = "descriptive"
         out.append(f"{name}\t{len({e for e, _ in pairs})}\t{len(pairs)}\t{s}\t{p:.4f}\t{pw:.3f}\t{med}\t{gate}\t{verdict}\t"
                    f"{','.join(hits) or '-'}")
-        if name == "all18":
+        if name == pools[1]:
             ents = collections.defaultdict(set)
             for e, c in pairs:
                 ents[c].add(e)

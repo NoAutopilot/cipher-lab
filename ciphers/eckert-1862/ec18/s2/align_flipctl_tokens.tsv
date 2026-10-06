@@ -17,6 +17,28 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9852.288	2	43.2	210	target	19	behead	Maj Gen H W Halleck	H	word	AGREE	
 9852.288	2	43.2	210	target	22	confess	Graysville Station	H	word	UNFIXED	cumberland as soon as trains can be furnished but it will use
 9852.288	2	43.2	210	target	29	biped	Maj Gen G G Meade	H	word	UNFIXED	harper s ferry if you require more officers for this purpose telegraph
+9994.572d	2	46.3	795	target	0	Sarah	11.30 PM (time word)	H	time	UNFIXED	va april 16 1865 lieut gen tj s grant w ashington after
+9994.572d	2	46.3	795	target	2	Nabob	Schenck R C	H	word	UNFIXED	va april 16 1865 lieut gen tj s grant w ashington after
+9994.572d	2	46.3	795	target	7	pacific	Battery	H	word	CONFLICT	cavalry
+9994.572d	2	46.3	795	target	10	gideon	Meridian	H	word	CONFLICT	petersburg
+9994.572d	2	46.3	795	target	22	is			plain-replaced	CONFLICT	in conjunction
+9994.572d	2	46.3	795	target	24	stenben			plain-replaced	CONFLICT	in conjunction
+9994.572d	2	46.3	795	target	26	Kitchen	Walker	H	word	UNFIXED	sherman u s grant lieutenant general city point va april 16 1865
+9994.572d	2	46.3	795	target	27	Jupiter	Lomax	H	word	UNFIXED	sherman u s grant lieutenant general city point va april 16 1865
+9710.71	2	33	928	target	2	Fanny	11 AM (time word)	H	time	AGREE	
+9710.71	2	33	928	target	6	wrangle	Valley	H	word	UNFIXED	telegraph as soon as general gillmore reports
+9710.71	2	33	928	target	7	Persia	Army	H	word	UNFIXED	telegraph as soon as general gillmore reports
+9710.71	2	33	928	target	8	Maxim	Reynolds J J	H	word	UNFIXED	telegraph as soon as general gillmore reports
+9710.71	2	33	928	target	9	wicks	South	H	word	UNFIXED	telegraph as soon as general gillmore reports
+9710.71	2	33	928	target	12	Tulip	Period	H	punct	NOTSCORED	
+9710.71	2	33	928	target	14	Pacific	Battery	H	word	CONFLICT	cavalry
+9710.71	2	33	928	target	25	torch	Pursue (-ed, -ing)	H	word	UNFIXED	of the army of the potomac general grant
+9710.71	2	33	928	target	26	Opal	Wallace Lew	H	word	UNFIXED	of the army of the potomac general grant
+9710.71	2	33	928	target	27	torch	Pursue (-ed, -ing)	H	word	UNFIXED	of the army of the potomac general grant
+9710.71	2	33	928	target	28	Attica	Delaware	H	word	UNFIXED	of the army of the potomac general grant
+9710.71	2	33	928	target	29	Jupiter	Lomax	H	word	UNFIXED	of the army of the potomac general grant
+9710.71	2	33	928	target	37	Youth	Saturday	H	word	UNFIXED	h w halleck major general chief of staff fort monroe ya april
+9710.71	2	33	928	target	38	Ivory	Echols	H	word	UNFIXED	h w halleck major general chief of staff fort monroe ya april
 9801.190	2	37.2	458	target	0	Grapes	Maj Gen B. F. Butler	H	word	UNFIXED	hdqrs dept of washington 22 d army corps july 27 1864 col
 9801.190	2	37.2	458	target	1	Dorothy	8.30 AM (time word)	H	time	AGREE	
 9801.190	2	37.2	458	target	6	Camel	Florence	H	word	UNFIXED	a m major general hunter harper s ferry w va

@@ -49,7 +49,10 @@ def main(argv):
     acc = set(ec18.flips())
     tgt = [r[0] for r in rd("align_flip_entries.tsv") if r[0] not in acc]
     pos = [r[0] for r in rd("align_free_entries.tsv") if int(r[5]) >= 5 and float(r[11]) >= 0.75]
-    assert len(tgt) == 18 and len(pos) == 14, (len(tgt), len(pos))
+    if ec18.SPLIT2:  # PREREG-ECK62-S2 (R10-ECK62T): 17 flip-selected entries minus accepted flips; 16 positives
+        assert len(rd("align_flip_entries.tsv")) == 17 and len(pos) == 16, (len(tgt), len(pos))
+    else:
+        assert len(tgt) == 18 and len(pos) == 14, (len(tgt), len(pos))
 
     def measure(i):
         bk, v, pg, j = rows[i]

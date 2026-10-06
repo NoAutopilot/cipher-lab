@@ -225,12 +225,25 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9958.527	1	46.2	545	target	74	stew			plain-replaced	CONFLICT	is to collect
 9958.527	1	46.2	545	target	75	bellow			plain-replaced	CONFLICT	is to collect
 9958.527	1	46.2	545	target	79	Warsaw	Repulsed	H	word	UNFIXED	pearisburg p h sheridan majo r genera co m m a ltd
-9969.543	1	46.2	782	target	8	Knight	Maj Genl Wilson	H	word	UNFIXED	
-9969.543	1	46.2	782	target	21	kiss	Maj Genl J. M. Schofield	H	word	UNFIXED	
-9969.543	1	46.2	782	target	37	Pewter	Capture (-ed, -ing)	H	word	UNFIXED	
-9969.543	1	46.2	782	target	40	Fork	Pensacola	H	word	UNFIXED	
+9969.543	1	46.2	782	target	7	cushion			plain-replaced	CONFLICT	force toward
+9969.543	1	46.2	782	target	8	Knight	Maj Genl Wilson	H	word	CONFLICT	force toward
+9969.543	1	46.2	782	target	10	teapot			plain-replaced	CONFLICT	bappahannock
+9969.543	1	46.2	782	target	11	copper			plain-replaced	CONFLICT	bappahannock
+9969.543	1	46.2	782	target	13	senate			plain-replaced	CONFLICT	lee
+9969.543	1	46.2	782	target	17	burnishment			plain-replaced	CONFLICT	detachment
+9969.543	1	46.2	782	target	21	kiss	Maj Genl J. M. Schofield	H	word	UNFIXED	direction
+9969.543	1	46.2	782	target	31	arches			plain-replaced	CONFLICT	batteries on the potomac
+9969.543	1	46.2	782	target	32	gambol			plain-replaced	CONFLICT	batteries on the potomac
+9969.543	1	46.2	782	target	33	thunder			plain-replaced	CONFLICT	batteries on the potomac
+9969.543	1	46.2	782	target	35	engrave			plain-replaced	CONFLICT	intercept transports
+9969.543	1	46.2	782	target	36	labors			plain-replaced	CONFLICT	intercept transports
+9969.543	1	46.2	782	target	37	Pewter	Capture (-ed, -ing)	H	word	CONFLICT	intercept transports
+9969.543	1	46.2	782	target	40	Fork	Pensacola	H	word	CONFLICT	move
+9969.543	1	46.2	782	target	42	tragedy			plain-replaced	CONFLICT	alexandria
+9969.543	1	46.2	782	target	44	bulwark			plain-replaced	CONFLICT	destroy
+9969.543	1	46.2	782	target	46	buggies			plain-replaced	CONFLICT	depots
 9969.543	1	46.2	782	target	48	Black	City Point	H	word	UNFIXED	
-9969.543	1	46.2	782	target	50	Byrons	Secretary of State	H	word	UNFIXED	
+9969.543	1	46.2	782	target	50	Byrons	Secretary of State	H	word	CONFLICT	disasters
 9969.543	1	46.2	782	target	55	Brimstone	Chattanooga	H	word	CONFLICT	department
 9969.543	1	46.2	782	target	57	Lady	Maj Gen Geo. H. Thomas	H	word	UNFIXED	troops repeatedly
 9969.543	1	46.2	782	target	77	jilt			plain-replaced	CONFLICT	surprise
@@ -436,7 +449,6 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9985.563	1	46.3	572	target	97	ell			plain-replaced	CONFLICT	elsewhere
 9985.563	1	46.3	572	target	98	swear			plain-replaced	CONFLICT	elsewhere
 9985.563	1	46.3	572	target	103	Africa	New Jersey	H	word	UNFIXED	richmond edwin m stanton secretary of war see sheridan to grant 3
-9985.564	1	46.3	572	target	0	Nancy	8 PM (time word)	H	time	UNFIXED	destroyed except an unfinished another copy says petersburg chap lviii 575 correspondence
 9987.565	1	47.3	130	target	0	Harriet	1 PM (time word)	H	time	UNFIXED	whole army davis and cabinet are at danville tell major leet who
 9987.565	1	47.3	130	target	7	jay			plain-replaced	CONFLICT	j
 9987.565	1	47.3	130	target	12	Talbot	Movement	H	word	UNFIXED	u s military railroad city point va
@@ -468,18 +480,6 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9987.565	1	47.3	130	target	103	levels			plain-replaced	CONFLICT	100 cars
 9987.565	1	47.3	130	target	109	harp	Ewell	H	word	CONFLICT	norfolk roads
 9987.565	1	47.3	130	target	110	twinkles	Organize (-ed, -ing)	H	word	CONFLICT	norfolk roads
-9991.571	1	46.3	3	target	1	Mentor	Maj Gen E. O. C. Ord	H	word	AGREE	
-9991.571	1	46.3	3	target	2	unity	Period	H	punct	NOTSCORED	
-9991.571	1	46.3	3	target	3	Oakum	Arrest (-ed, -ing)	H	word	AGREE	
-9991.571	1	46.3	3	target	17	Garden	Richmond	H	word	AGREE	bichmond
-9991.571	1	46.3	3	target	31	libby	6 PM (time word)	H	time	COLLISION	libby
-9991.571	1	46.3	3	target	33	unity	Period	H	punct	NOTSCORED	
-9991.571	1	46.3	3	target	36	saddled	Guard (-ed, -ing)	H	word	AGREE	guarded
-9991.571	1	46.3	3	target	45	Zebra	Period	H	punct	NOTSCORED	
-9991.571	1	46.3	3	target	47	odor	Arrest (-ed, -ing)	H	word	AGREE	
-9991.571	1	46.3	3	target	49	numbered			plain-replaced	CONFLICT	paroled
-9991.571	1	46.3	3	target	60	Zodiac	Period	H	punct	NOTSCORED	
-9991.571	1	46.3	3	target	87	Irvings	President of the U.S.	H	word	AGREE	
 9996.574	1	46.3	822	target	0	Hannah	1.30 PM (time word)	H	time	UNFIXED	out your loyalty shall protection and pardon be meted out to you
 9996.574	1	46.3	822	target	2	Borgia	Chief of Staff	H	word	UNFIXED	h gordon t h harris assistant adjutant general war department washington city
 9996.574	1	46.3	822	target	6	elder			plain-replaced	CONFLICT	mosby

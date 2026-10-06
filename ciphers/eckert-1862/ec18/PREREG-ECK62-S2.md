@@ -1,4 +1,4 @@
-# PREREG-ECK62-S2 (R10-ECK62T, 6 Oct 2026 10:5x UTC, written and pushed before any split2 flip, wrongtel or confpair number)
+# PREREG-ECK62-S2 (R10-ECK62T, 6 Oct 2026 10:46 UTC by date -u, written and pushed before any split2 flip, wrongtel or confpair number)
 
 Question: R10-ECK62S regenerated the ec18 cascade under the split2 entry splitter (`--split2`, outputs in `s2/`) but
 stopped at the wrong-telegram and conflict-pair tests, whose prereg pool sizes (18 targets, 14 positives) no longer hold.
