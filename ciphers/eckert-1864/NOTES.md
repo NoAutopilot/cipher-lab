@@ -213,6 +213,7 @@ cipher, key, plaintext and provenance was ever completed internally or since; if
 systematically would be useful. The repository was offered. A reply from the archive is the only route to
 N5 for anything in this folder and is the decision point for the corpus pass (section 5, AUDIT.md section 12).
 Log the reply here by date; no personal data (rule 9).
+Follow-up sent by the person 6 Oct 2026 (outreach/huntington-eckert-followup-2026-10.md), a reply in the 24 Sept thread to Huntington reference: progress counts, the dataset question again, and whether an 1865 cipher book survives. Reply pending.
 
 ## Second reader E4/E5, 24 Sept 2026
 

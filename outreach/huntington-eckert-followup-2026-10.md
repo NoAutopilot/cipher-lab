@@ -1,4 +1,4 @@
-status: checked 6 Oct 2026 (gate 7, OUT-CHECK-ECK-BUMP); the person sends
+status: sent 6 Oct 2026 about 04:3x UTC by the person, as a reply in the 24 Sept thread (reply pending)
 subject: Re: Two Civil War telegrams in mssEC 19 and two Blathwayt cipher passages (mssBLA 186, 191) read from your collections
 to: reference@huntington.org (the address the 24 Sept 2026 message went to; send as a reply in that thread from the person's Sent folder. The person may also cc the curator they wrote to on 20 Sept 2026, from their own Sent folder; that address is not kept in this repository, rule 9)
 thread: follow-up to outreach/huntington-eckert-blathwayt.md (sent 24 Sept 2026, no reply) and the person's 20 Sept 2026 enquiry to the Decoding the Civil War curator (ciphers/eckert-1864/NOTES.md section 9, no reply)
