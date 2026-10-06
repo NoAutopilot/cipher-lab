@@ -1,0 +1,30 @@
+lines 213  interior spans 180  eligible 67  units with eligible spans 12  spans in a length class of one 3
+per unit eligible: {'f23': 1, 'c32': 3, 'c33': 4, 'c3536': 2, 'c3940': 7, 'c47': 8, 'c48': 4, 'c49': 4, 'c50': 18, 'c54': 3, 'c55': 7, 'c56': 6}
+
+stat	real	ctrl	mean	p95	max	P(ctrl>=real)	gate
+S	47	control-B	39.00	43	47	0.0010	PASS
+S_exact	7	control-B	0.46	2	4	0.0000	-
+
+code	best	units	key_f23	units_list
+11	re	3	n(M)	c47,c50,c55
+20	i	4	i(M)	c3940,c47,c54,c55
+21	t	6	e(M)	c3536,c3940,c47,c48,c50,c55
+23	n	7	n(M)	c33,c3940,c47,c48,c49,c50,c55
+26	e|r	2	aines(M)	c33,f23
+29	r	4	a(M)	c32,c3536,c3940,c50
+30	o|r|s	5	s(M)	c32,c49,c50,c55,c56
+31	t	4	mdebrienne(M)	c3536,c48,c50,c55
+32	u	5	o(M)	c32,c50,c54,c55,c56
+39	e	3	et(M)	c49,c50,c54
+46	nce	2	c(M)	c33,c47
+54	est	2	du(M)	c32,c3536
+57	aire|fair	3	e(M)	c49,c50,c56
+70	ment	2	o(M)	c50,c56
+75	la	3	-	c32,c3940,c47
+76	le	2	c(M)	c3940,c49
+77	l	2	faire(M)	c47,c50
+81	e	2	il(M)	c32,c56
+83	s	3	-	c32,c50,c56
+85	na	2	luy(M)	c50,c56
+96	o	2	r(M)	c50,c55
+wrote key_f23_anchor_5456.tsv
