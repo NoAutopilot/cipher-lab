@@ -5070,6 +5070,40 @@ Open for the next lane:
 3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
 4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
 
+## LANE LANE-RUN11-account-2 handoff (session_01FnWn17w8RS2VEFyTf3Nejv, account 2), 6 October 2026 (closed 10:3x UTC: i-r S/M backlog worked, lane about 51.6 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run11-jobs.md. WORK-QUEUE row LANE-RUN11-account-2: RUN10's named
+next steps for i-r, then tools/next_steps.py runnable / parallel rows (S, M). Gate 0a: SESSION-SWEEP-account-2 still `claimed`, its TSV on disk;
+proceeded as RUN7-RUN10 did. VERIFY-BACKLOG had no i-r row. Off limits: Birago (incl. nevers-birago), Armstrong, Debosnys, riksarkivet-r4282.
+Eighteen workers in four waves (16 Opus, 2 Sonnet; 13 D, 5 D- at 1.01-1.29x), workers 46.61 + orchestrator about 5.0 = about 51.6 of cap 60
+(get_session). five_hour `allowed` throughout.
+- pro3055-clinton-1779: 2380 cipher pp.120-122 checked cell by cell against its period decipherment on the 1778 key (R11-CLIN2380, B, C):
+  every page's pre-registered gate PASS vs shuffled-plaintext controls (p.120 224/258 vs max 32; p.121 406/420 vs 45; p.122 244/254 vs 32 after
+  verifier correction). Verifiers R11-CLINV3/4/5 upheld all three; the doubled-figure rule (letter at P twice) holds 7/7 incl. GAPS9's codes;
+  conflicts recorded by witness: the cipher lacks "with the 650 Recruits and Artillery from Europe" (p.121 and the P.S.), move/movements,
+  Chesapeak/Chesipeak. All 2380 pages now checked.
+- na-suriname-map-1781: y-family dot test FAIL (R11-SURY); the map's y and the inv. 373 letter's y-family are one written shape (R11-SURTV, PASS
+  0.909 vs p99 0.505), so y = d (map context) vs y = m|n (letter gloss) is a rule-4 conflict in conflicts.tsv; a pre-registered word test on
+  2039/2061 FAILs every value vs random-letter p99 (R11-SURWT); y stays M. Inv. 373 1-in-4 sweep of 0005-0269 and 0800-1024 (119 scans,
+  positive control on every sheet) found no further glossed cipher (R11-SURSWP); 0270-0599 not covered.
+- na-janssens-java-1811: invnr 26 scans 10-11 (No.1 second copy) two passes + reconciliation, aligned to leaf 188 161/163 vs shuffled-order max
+  0.153 (R11-JANS26TX); supports the 13:11 split; no leaf-188 change. Held-out LM fill FAIL (0.153 vs 0.30 gate): untestable by that method at
+  this N (R11-JANSLM, HYPOTHESES.md).
+- rah-juan-manuel-1521: look-alike pass on the 88+114 split tokens (2-of-3 residual 0.040 / 0.137, agreement not error), 39 tiles added to
+  sorter/focus.tsv -- the published sorter (ASKS 138) predates them, rebuild flagged to the account-3 orchestrator (R11-RJMLA). Siblings vs
+  Sanchez 1522: same design, no shared key (R11-RJMSIB). Tomokiyo publishes a Juan Manuel letter alphabet (cryptiana JuanManuel.png):
+  key_tomokiyo_alpha.tsv (published, credited), 5 agree / 7 conflict with alphabet.tsv; held-out f.199 FAIL (0.037 vs shuffled-key max 0.098)
+  (R11-RJMKEY). Flagged for a verifier: a published key means a published decipherment of some of the 28 letters may exist (rule 1).
+- roell-vandedem-1809: the States General's received copy of Van Dedem's 9 Feb 1793 despatch would be NA 1.01.02 inv. 6994 or 7009, both
+  physical-only (0 scans): needs-physical-access (R11-ROELL13). Status open.
+- ra-morner-welin: "Welin - Ostergren" is a surname range of Esplunda vol 154; no cipher/key snippet (R11-MORNER). rubin-1953: Bauer
+  *Unsolved!* pp.289-304 snippets show no reading; full pages lending-only (R11-RUBBAU). rayburn-2004: Wayback CDX reset twice, host stopped
+  (R11-RAYWB).
+Open for the next i-r lane: (1) rah-juan-manuel: verifier/check-solved pass on Tomokiyo's Juan Manuel pages for a published decipherment
+(rule 1) before any further solver work ~2; then the f.42 blind passes the RJMKEY worker named ~6; (2) suriname: inv. 373 0270-0599 at 1 in 4
+~2; (3) roell: a scan request for NA 1.01.02 inv. 6994/7009 (owner-side; an ASKS row for the parent); (4) rah-juan-manuel sorter rebuild +
+republish (account 3); (5) clinton: the 2380 conflicts against the VHS Collections II print (p.192) ~2.
+
 ## LANE LANE-RUN10-account-2 handoff (session_01Fnnf2KFqUKZG3cpVKRD9tL, account 2), 6 October 2026 (closed 08:3x UTC: i-r S/M backlog worked, lane about 48.7 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run10-jobs.md. WORK-QUEUE row LANE-RUN10-account-2: RUN9's named
