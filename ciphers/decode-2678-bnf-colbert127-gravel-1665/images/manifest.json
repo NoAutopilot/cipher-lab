@@ -309,5 +309,59 @@
    "leaf": "f.829v-830r, Gravel, Ratisbonne 29 Oct 1665, clear",
    "date": "06 Oct 2026"
   }
- ]
+ ],
+ "r12a_g2678_leaves": {
+  "job": "R12A-G2678",
+  "date": "6 Oct 2026",
+  "files": [
+   {
+    "file": "mc120_c359_f347v-348r_1000px.jpg",
+    "ark": "btv1b10035558v",
+    "canvas": 359,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035558v/f359/full/1000,/0/native.jpg"
+   },
+   {
+    "file": "mc120_c457_f444v-445r_1000px.jpg",
+    "ark": "btv1b10035558v",
+    "canvas": 457,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035558v/f457/full/1000,/0/native.jpg"
+   },
+   {
+    "file": "mc121_c229_f221r_1000px.jpg",
+    "ark": "btv1b10035560p",
+    "canvas": 229,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035560p/f229/full/1000,/0/native.jpg"
+   },
+   {
+    "file": "mc121bis_c188_gravel_f74x_1000px.jpg",
+    "ark": "btv1b100355614",
+    "canvas": 188,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100355614/f188/full/1000,/0/native.jpg"
+   },
+   {
+    "file": "mc121bis_c190_gravel_docket_20jun1664_1000px.jpg",
+    "ark": "btv1b100355614",
+    "canvas": 190,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100355614/f190/full/1000,/0/native.jpg"
+   },
+   {
+    "file": "mc123bis_c65_gravel_f589r_1000px.jpg",
+    "ark": "btv1b10035537k",
+    "canvas": 65,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035537k/f65/full/1000,/0/native.jpg"
+   },
+   {
+    "file": "mc124_c58_gravel_f55r_1000px.jpg",
+    "ark": "btv1b10035535p",
+    "canvas": 58,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035535p/f58/full/1000,/0/native.jpg"
+   },
+   {
+    "file": "mc124_c59_gravel_f55v-56r_1000px.jpg",
+    "ark": "btv1b10035535p",
+    "canvas": 59,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035535p/f59/full/1000,/0/native.jpg"
+   }
+  ]
+ }
 }
