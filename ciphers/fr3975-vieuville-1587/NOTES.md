@@ -112,3 +112,11 @@ next: run tools/print_check.py with the letter's readable clear phrases ("eschev
 - "Saint Aignan 30 septembre 1587 Nevers La Vieuville": IA, OpenAlex, S2 no hits; Google Books 2 volumes, both *Catalogue général des manuscrits français* (1881; HQo4AQAAMAAJ, JUgMAQAAMAAJ) -- the BnF catalogue, the likely home of the fr.3975 entry, not opened or read for page here; CrossRef returned an unrelated Saint-Aignan duc entry.
 - Not found by this method: any printed text or decipherment of the 30 Sept 1587 letter. Not searched: page-level reading of the two catalogue volumes, Nevers/Vieuville printed correspondence editions, Gomberville 1665 (Bourdeau's negative stands, not re-run). Output: print-check.tsv, print-check-hosts.tsv.
 Status unchanged (`blocked`, colour scan).
+
+## Print check, variant phrases (R9-VIEU, 6 Oct 2026)
+
+The D2-VIEU run (5 Oct) already covered the three named clear phrases ("eschevins et maire de ville", "St Aignen", the 30 Sept 1587 date) with the identical command; not repeated. This run used four spelling/word-order variants (phrases-r9.txt; ia-global, Google Books with country=US, OpenAlex; 4 requests per host, no 429; output print-check-r9.tsv). Search results only, rule 10.
+- "maire et eschevins de la ville": IA 578 items, Google Books 119 volumes, OpenAlex 6 works -- generic municipal formula, all unexamined, unusable as a phrase.
+- "Monsieur de Saint Aignan 1587 Nevers": IA none, OpenAlex none; Google Books 18 volumes (e.g. Villeroy, secretaire d'etat, 1908; Mem. Soc. archeol. Orleanais 1885), not opened.
+- "La Vieuville Nevers lettre 30 septembre 1587" and "lettre chiffree Nevers La Vieuville 1587": IA none, OpenAlex none; Google Books 5 and 10 volumes, mostly BnF *Catalogue general des manuscrits francais* (1874/1881 editions, again incl. HQo4AQAAMAAJ, JUgMAQAAMAAJ, GP9eAAAAcAAJ) plus *Les ducs de Nevers et ...* (dsInahmnar8C), not opened.
+- Not found by this method: a printed text or decipherment of the 30 Sept 1587 letter. Not done: page-level reading of the catalogue volumes or dsInahmnar8C (next, if wanted: one snippet read per volume). Status unchanged (`blocked`, colour scan).
