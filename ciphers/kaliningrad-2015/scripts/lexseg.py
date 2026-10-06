@@ -77,12 +77,12 @@ def decode(kind, seed, out):
         f.write("# " + json.dumps(info) + "\n" + "\n".join(lines) + "\n")
 
 
-def coverage(text, lex, maxlen):
+def coverage(text, lex, maxlen, minlen=4):
     n = len(text)
     best = [0] * (n + 1)
     for i in range(1, n + 1):
         b = best[i - 1]
-        for L in range(4, min(maxlen, i) + 1):
+        for L in range(minlen, min(maxlen, i) + 1):
             if text[i - L:i] in lex and best[i - L] + L > b:
                 b = best[i - L] + L
         best[i] = b
@@ -90,18 +90,20 @@ def coverage(text, lex, maxlen):
 
 
 def score(lexfile, files):
-    lex = set(w for w in open(lexfile, encoding="utf-8").read().split())
+    minlen = int(os.environ.get("LEXSEG_MINLEN", "4"))  # 5 = the registered secondary figure
+    lex = set(w for w in open(lexfile, encoding="utf-8").read().split() if len(w) >= minlen)
     ml = max(map(len, lex))
     for fn in files:
         cov = tot = 0
         hdr = ""
         for line in open(fn, encoding="utf-8"):
             if line.startswith("#"):
-                hdr = line[2:].strip()
+                hdr = json.loads(line[2:])
+                hdr.pop("truth", None)
                 continue
-            c, n = coverage(line.strip(), lex, ml)
+            c, n = coverage(line.strip(), lex, ml, minlen)
             cov, tot = cov + c, tot + n
-        print(f"{os.path.basename(fn)}\t{cov}\t{tot}\t{cov / tot:.4f}\t{hdr}")
+        print(f"{os.path.basename(fn)}\t{cov}\t{tot}\t{cov / tot:.4f}\t{json.dumps(hdr)}")
 
 
 if __name__ == "__main__":
