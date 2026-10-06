@@ -1,0 +1,21 @@
+unit	cipher_tokens	gloss_text	pass_vs_committed	notes
+c20U01	6 25 zz 11 83 v 44 w' 85 d h	Je parle des Suedois	pass: rr for zz, 85 dotted; committed: last sign z	pass judged NOTE (aside); reconciler: gloss sits over 6-v and the run spells it (25 par, 11 le, 83 de as elsewhere on the leaf), so GLOSS of an enciphered aside; 44 w' 85 d h unglossed tail = Suedois?
+c20U02	42 e gt m d 36 th 83 56 43 21 9o y 49 21 32 c' th	si enyvrez de leur bonne fortune quilz	pass: no small-hand text (took it for the main hand); committed: gloss column empty	reconciler on crop c20_U02_L01_s1: small hand squeezed between lines, dots over 56 43 9o echoed by dots in "bonne" "fortune" -> GLOSS
+c20U03	63 68 32	pour les Dannois qui	pass: "pour les" over 63 68, "Dannois qui" over 32 (next line); committed: both on line 19, 32 given "fy"	run crosses the line break
+c20U04	25 v m° 14 h' ll 35 d 45 g 11 v	pas plus traitables	pass: "Instrautables"[?]; gloss over 25-h' only; ll 35 d 45 g 11 v unglossed	committed gloss "fy" on this line belongs to c20U05's 42
+c20U05a	42	si	pass: "si" in left margin over 42; committed "fy"	"si ilz estoient en leur place"
+c20U05b	56 99 d c' th 43 gt ll 42 5 72 49 v	leur place ilz sont si abatuz	pass agrees on words; 5 72 49 v unglossed	committed: el for ll, i" for c', z for 5
+c20U06	31 6 h	que son [?]	pass: "que fin"[?]; committed gloss for this line was c20U07's	second word unsettled
+c20U07	83 46 25 y cn 10 31 11 70 41 38 m+ J 35	de cette part la que le traitte se rompra	pass agrees; committed attached this gloss to line 22 (31 6 h)	J 35 unglossed
+c20U08	31 13 h 11 v y q 81 11	que lon les [?] accule	pass agrees; committed attached this gloss to line 23	loop sign in gloss after "les" unread
+c20U09	42 y 87 & n ll 26 37 6	sil fault perir	pass agrees; committed attached this gloss to line 24 (twice)	n ll 26 37 6 unglossed
+c20U10	25 zz 11 h g zz 16 v 31 25 y d gt 78	par les armes que par un accommodement	pass agrees; committed attached this gloss to line 25	committed tokens ee for zz
+c20U11	41 35 25 v 100 h 46 & q	sera pas honteux	pass agrees; committed attached this gloss to line 26 and left line 27 empty	46 & q unglossed
+c21U01	y d 18 d h' v 78 26 47 cn 43 d 10 93 58 32 7 w' h' 8	au moins ce petit soulagement quilz en coustera a leur	pass "constira"[?]; committed "peu de ... couvriront"	reconciler on the 1440 px view: "ce petit", "coustera" [?]
+c21U02a	d h'	ennemy	pass agrees	completes "a leur ennemy"
+c21U02b	21 gt 52 w L y 35	nen viendra pas	pass agrees; committed "non viendra pas"	
+c21U03	5 75 d ll	a bout si tost	pass "aboui"[?] si tost; committed attached "about si tost" nowhere (missing)	42 48 f uj unglossed
+c21U04	6 47 zz y d cn 36 58 83 41 36 41 zz 36 y 82 h h' 56 v d f	sortir aultrement de se reserrer dans leurs isles	pass agrees ("de se"[?]); committed "du fr." and attached to line 4	
+c21U05	w' ll 11 h' 83 m 88 h y 36 83 75 & q 98 zz	et les deffendre de boucher	pass "dessendre"[?]; committed attached to line 5	
+c21U06	11 25 h' 40 93 86 th K L cn E ll 10 h' f 41 zz 40	le passage du Sund et laisser sans	pass "Zune"[?]; committed "[?]tune", attached to line 6	
+c21U07	80 m+ 72 ll 36 80 h' 43 m+ 16 y 56 v 47 th 23 h'	combatre consommer leurs d. ennemis	pass agrees; committed attached to line 7	

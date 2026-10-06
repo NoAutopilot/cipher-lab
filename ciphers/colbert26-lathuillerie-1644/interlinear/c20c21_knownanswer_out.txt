@@ -1,0 +1,6 @@
+C codes from key_f24: 16=m, 25=m, 31=que, 51=l, 83=de, 92=comte
+real: 14/19 occurrences read their predicted chunk in place; control mean 3.02, p95 6, max 10, P(control>=real) 0.0000
+  16=m: 2/2
+  25=m: 2/7
+  31=que: 4/4
+  83=de: 6/6

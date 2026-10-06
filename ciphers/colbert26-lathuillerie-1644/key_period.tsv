@@ -1,6 +1,6 @@
 code	value	grade	count	canvases	note
 &		M	2	20	no gloss observed near this occurrence
-6	Je parle des Suedois | par les armes que par un accommodement (spans line25-26)	M	3	20	conflicting/multiple nearby glosses, listed
+6	je? (c20U01)	M	3	20,21	A4-RFCOL 6 Oct 2026: c20U01 gloss 'Je parle des Suedois' opens over 6; the 'par les armes' gloss formerly listed here belongs to 25 zz 11 (c20U10); other occurrences unglossed or unsettled
 I		M	1	20	no gloss observed near this occurrence
 d		M	5	20	no gloss observed near this occurrence
 e		M	1	20	no gloss observed near this occurrence
@@ -12,21 +12,21 @@ v		M	7	20	no gloss observed near this occurrence
 y		M	6	20	no gloss observed near this occurrence
 z		M	3	20	no gloss observed near this occurrence
 10		M	1	20	no gloss observed near this occurrence
-11	s'il fault perir (cross-marked)	M	7	20	single observation, gloss is a nearby phrase-level annotation, not a confirmed word-for-word equivalence
+11	le/les	M	7	20,21	A4-RFCOL 6 Oct 2026: under 'le'/'les' at most canvas 20-21 occurrences (31 11 = que le; 25 zz 11 = par les); not a C code of key_f24, observed after the read, so M
 13		M	1	20	no gloss observed near this occurrence
 14		M	1	20	no gloss observed near this occurrence
 16		M	1	20	no gloss observed near this occurrence
 21		M	2	20	no gloss observed near this occurrence
-25	sera pas honteux	M	6	20	single observation, gloss is a nearby phrase-level annotation, not a confirmed word-for-word equivalence
+25	par/pa (canvas 20-21) | m (f.24)	M	6	20,21	A4-RFCOL 6 Oct 2026: DATA CONFLICT (rule 4): canvas 20-21 glosses put 25 under par/part/pas/pa(ssage) about 7 times; key_f24 gives m (C 2/3, f.24 only); known-answer 2/7 for m. Graded M on both leaves until resolved; logged, not settled by majority
 26		M	1	20	no gloss observed near this occurrence
-31	de ceste part la que le traite se rompra	M	4	20	single observation, gloss is a nearby phrase-level annotation, not a confirmed word-for-word equivalence
+31	que	C	4	20,21	A4-RFCOL 6 Oct 2026: under 'que' in place 4/4 on canvas 20 (31 11 = 'que le' in c20U07, as on f.24 U01), predicted by key_f24 (C 4/4); same known-answer test. Prior M value was a gloss attached one line off
 32	fy	M	2	20	single observation, gloss is a nearby phrase-level annotation, not a confirmed word-for-word equivalence
 35		M	3	20	no gloss observed near this occurrence
 36		M	1	20	no gloss observed near this occurrence
 37		M	1	20	no gloss observed near this occurrence
 38		M	1	20	no gloss observed near this occurrence
 41		M	2	20	no gloss observed near this occurrence
-42	leur place; ilz sont; abatuz	M	4	20	single observation, gloss is a nearby phrase-level annotation, not a confirmed word-for-word equivalence
+42	si	M	4	20	A4-RFCOL 6 Oct 2026: under 'si'/'sil' at 4 occurrences on canvas 20 (c20U02, U05a, U05b, U09); observed after the read, not predicted, so M pending a held-out leaf
 43		M	2	20	no gloss observed near this occurrence
 44		M	1	20	no gloss observed near this occurrence
 45		M	1	20	no gloss observed near this occurrence
@@ -39,7 +39,7 @@ z		M	3	20	no gloss observed near this occurrence
 72		M	1	20	no gloss observed near this occurrence
 78		M	1	20	no gloss observed near this occurrence
 81	s'il fault perir (cross-marked)	M	1	20	single observation, gloss is a nearby phrase-level annotation, not a confirmed word-for-word equivalence
-83	que l'on les [symbol] accule	M	3	20	single observation, gloss is a nearby phrase-level annotation, not a confirmed word-for-word equivalence
+83	de	C	3	20,21	A4-RFCOL 6 Oct 2026: under 'de'/'des' in place 6/6 on canvas 20-21 (interlinear/c20c21_reconciled.tsv), predicted by key_f24 (C 9/10) before this read; known-answer test vs deranged glosses P<0.0005 (interlinear/c20c21_knownanswer_out.txt). Prior M value was a gloss attached one line off
 85		M	1	20	no gloss observed near this occurrence
 87		M	1	20	no gloss observed near this occurrence
 99		M	1	20	no gloss observed near this occurrence
@@ -50,7 +50,7 @@ ee		M	2	20	no gloss observed near this occurrence
 el		M	2	20	no gloss observed near this occurrence
 gt		M	3	20	no gloss observed near this occurrence
 h'		M	1	20	no gloss observed near this occurrence
-i"		M	1	20	no gloss observed near this occurrence
+i'		M	1	20	no gloss observed near this occurrence
 ll		M	1	20	no gloss observed near this occurrence
 m+		M	1	20	no gloss observed near this occurrence
 m°		M	1	20	no gloss observed near this occurrence
