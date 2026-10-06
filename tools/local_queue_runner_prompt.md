@@ -60,7 +60,8 @@ your browser:
    and reuse it every run. Check for at least 1 GB free first and stop with a note if there is less.
    A `viewer-capture` row asks for page images from a library viewer the cloud cannot reach (BNE, RAH, HathiTrust and
    the like). In the viewer: open the item at the page the row names, zoom to the level it names (about 250%), and
-   screenshot the block it names 3-4 lines at a time, top to bottom, overlapping by one line. If the row asks for
+   screenshot the block it names 3-4 lines at a time, top to bottom, overlapping by one line. Move the mouse pointer off the
+   page before every shot (L57, 6 Oct 2026: the pointer covered signs in two strips). If the row asks for
    variants, use the viewer's own image controls (colour/greyscale, contrast, brightness, negative) and take the same
    shots again for each variant, naming files <n>-colour.png, <n>-contrast.png and so on. Never put these images in
    this public repository. Capture is a judgement loop, not a fixed recipe (owner, 6 Oct 2026: "it isn't a linear thing").
