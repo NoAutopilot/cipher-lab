@@ -304,3 +304,41 @@ is untestable by this family; neither homophonic design justifies costing an S5 
 material (the unpublished Scorpion messages Schmeh mentions would pool the sign count; a cycling key reused across
 letters would let repeated signs carry the constraint), or the second-coder distinct-code shape test named after
 A2P4-SCORP2 (~USD 1). Cheapest next: that blind second-coder test.
+
+## Blind second-coder distinct-code test (R13-SCORP2C, 6 Oct 2026, 17:43-17:51 UTC)
+
+The step named after A2P4-SCORP2 and again after R11-SCORPCYC. **Pre-registration** `PREREG-R13-SCORP2C.md` (commit
+a6095cd72), pushed before coder B's codes were seen. Coder A = A2P4-SCORP2's codes (`shape/scorpion_codes.tsv`,
+`shape/zodiac_codes.tsv`); coder B = one Sonnet subagent given only the 7 S1 row crops
+(`python3 tools/iiif_lines.py --image ciphers/scorpion-1991/images/Scorpion-Letter-2.jpg --out <scratchpad>/scrop --prefix s1 --debug --centres 54,89,126,167,210,253,293`
+-> 7 crops, 454 px wide, plus a 2x labelled composite of the same crops), a labelled sheet of the 70 Zodiac webtoy glyphs
+(refetched from zodiackillerciphers.com/webtoy/alphabet2/, 70 requests + 1 probe, 1.6 s apart, all 200; credit
+D. Oranchak; images kept in the scratchpad, not committed) and the feature-code vocabulary from `shape_prereg.md`. No
+earlier codes, notes or sign names. B coded all 70 S1 positions and all 70 Zodiac glyphs (`shape/coder_b_s1.tsv`,
+`shape/coder_b_zodiac.tsv`; every code inside the vocabulary). Scored by `python3 shape/score_b.py` (`--check` OK;
+`shape/result_b.tsv`).
+
+| distinct non-letter S1 codes with an identical counterpart | Zodiac | control (Unicode geometric, no coder) | difference |
+|---|---|---|---|
+| **primary, cross-coder: B's S1 codes vs A's Zodiac codes** (B: 29 distinct codes) | **11** | **8** | **3** |
+| secondary (a), B on both sides | 15 | 8 | 7 |
+| reference, A on both sides (A2P4-SCORP2, descriptive) | 13 | 6 | 7 |
+
+Per-type (secondary b, 41 non-letter types by B's modal code): Zodiac(A) 16, Zodiac(B) 24, control 13.
+Zodiac-only codes in the primary: RL:E, ST:caret, ST:dash, ST:pi, ST:slash, circle/cross, square/dot.
+
+**Agreement A vs B.** S1, 70 positions: exact 55.7%, Cohen's kappa 0.549; at family level (base shape / stroke name /
+letter class) 78.6%, kappa 0.756. Zodiac, 70 glyphs: exact 71.4%, kappa 0.710; family 84.3%, kappa 0.794. Typical splits
+on S1: notched squares (A notch, B inner-square), hollow vs filled rects, which half of a half-disc, circle-with-wedge vs
+circle/cross, mirrored F vs mirrored E (HOOK), BRACKET1 (A mirrored L, B rotated L).
+
+**Decision (preregistered: cross-coder difference >= 5 and >= 1 Zodiac-only code): NO SUPPORT** (difference 3; 7
+Zodiac-only codes, so the second clause holds, the first does not). The pattern says why the earlier descriptive 13-vs-6
+looked stronger: when the same coder codes both the Scorpion signs and the Zodiac glyphs the gap is 7 for both A and B;
+when the sides are coded by different people it falls to 3. Part of the apparent Zodiac excess is one coder's own
+vocabulary habits matching themselves. B saw the Zodiac sheet (as the brief required), which can only prime towards
+SUPPORT, so the NO SUPPORT is conservative. Grades: every code M (eye judgement); no reading, no tokens graded.
+
+**Verdict:** status stays `open`. The shape question "does S1 draw on the published Zodiac alphabets" now has three
+preregistered tests and none supports it; with exact-code kappa 0.55 on S1 a fourth coder would add little. What would
+move it: new material (the further Scorpion messages Schmeh mentions), or an S5 transcription if a later family needs it.

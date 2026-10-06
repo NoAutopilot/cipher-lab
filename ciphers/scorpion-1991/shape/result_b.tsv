@@ -1,0 +1,124 @@
+item	coder_a	coder_b	in_zodiac_A	in_zodiac_B	in_control
+S1:PI	ST:pi	ST:pi	True	True	False
+S1:K	L:K	L:K	True	True	False
+S1:A	L:A	L:A	True	True	False
+S1:BOWL	dome/solid	dome/solid	False	False	True
+S1:SQNOTCH	square/notch	square/inner-square	False	True	True
+S1:GAMMA	ST:gamma	ST:gamma	False	False	False
+S1:O	circle/outline	L:O	False	True	False
+S1:HOOK	RL:F	RL:E	True	True	False
+S1:DROP	teardrop/solid	circle/halfL	True	True	True
+S1:HCIRCL	circle/halfL	circle/halfR	True	False	True
+S1:HEADPHONE	ST:headphone	ST:headphone	False	False	False
+S1:VENUS	ST:venus	ST:venus	False	False	False
+S1:CFLAG	circle/wedge	circle/wedge	False	True	True
+S1:DASH2	ST:dash	ST:dash	True	True	False
+S1:Y	L:Y	L:Y	True	True	False
+S1:Q	L:Q	L:Q	True	True	False
+S1:BRACKET1	RL:L	ROT:L	False	True	False
+S1:BRACKET2	dome/solid	circle/solid	True	True	True
+S1:TFILL	ST:T	rect/solid	False	False	True
+S1:TARGET	circle/cross	circle/cross	True	True	False
+S1:S	L:S	L:S	True	True	False
+S1:LAMBDA	ST:caret	ST:caret	True	True	False
+S1:OWEDGE	circle/wedge	circle/wedge	False	True	True
+S1:TABLE	ST:T	rect/solid	False	False	True
+S1:SQDOT	square/dot	square/dot	True	False	False
+S1:SQDIAG	square/diag	square/diag	False	True	False
+S1:N	L:N	L:N	True	True	False
+S1:FLAG2	square/notch	square/notch	False	True	False
+S1:ARCH	dome/solid	dome/solid	False	False	True
+S1:B	L:B	L:B	True	True	False
+S1:SQSTRIPE	square/hline	rect/inner-square	False	False	False
+S1:M	L:M	L:M	True	True	False
+S1:CIRCBLACK	circle/wedge	circle/halfL	True	True	True
+S1:CROSS	ST:tack	ROT:T	False	False	False
+S1:R	L:R	L:R	True	True	False
+S1:TARGET2	circle/cross	circle/cross	True	True	False
+S1:RECTNOTCH	rect/notch	rect/vline	False	False	False
+S1:U	L:U	L:U	True	True	False
+S1:SQTRI	square/inner-triangle	square/diag	False	True	False
+S1:RECTCORNER	square/halfB	rect/halfT	False	False	False
+S1:CIRCPIE	circle/wedge	circle/cross	True	True	False
+S1:SLASH	ST:slash	ST:slash	True	True	False
+S1:HALFCIRCB	circle/halfB	circle/halfB	True	True	True
+S1:CIRCPIE2	circle/wedge	circle/cross	True	True	False
+S1:SQFLAG	square/diag	square/diag	False	True	False
+S1:RECTBLACK	rect/solid	rect/solid	False	False	True
+S1:I	L:I	ROT:L	False	True	False
+S1:DBLBAR	ST:dblbar	ST:dblbar	False	False	False
+S1:CUPDOT	ST:cupdot	ST:cupdot	False	False	False
+S1:TRIDOT	triangle/dot	triangle/inner-triangle	False	True	False
+S1:Z	L:Z	L:Z	True	True	False
+S1:SQHALF	square/halfB	square/halfT	False	False	False
+S1:REVE	RL:E	RL:E	True	True	False
+Z:a	L:A	L:A			False
+Z:b	L:B	L:B			False
+Z:bar	L:I	ST:dash			False
+Z:bb	RL:B	L:B			False
+Z:bc	RL:C	RL:C			False
+Z:bd	RL:D	L:O			False
+Z:be	RL:E	RL:E			False
+Z:bf	RL:F	RL:F			False
+Z:bj	RL:J	L:J			False
+Z:bk	RL:K	ROT:K			False
+Z:bl	RL:L	ROT:L			False
+Z:bp	RL:P	circle/wedge			True
+Z:bq	RL:Q	circle/notch			False
+Z:br	RL:R	square/notch			False
+Z:by	ROT:Y	L:Y			False
+Z:c	L:C	L:C			False
+Z:caret	ST:caret	ST:caret			False
+Z:d	L:D	L:D			False
+Z:dash	ST:dash	ST:dash			False
+Z:dot	ST:dot	ST:dot			False
+Z:e	L:E	L:E			False
+Z:f	L:F	L:F			False
+Z:funnyi	L:I	L:I			False
+Z:g	L:G	L:G			False
+Z:gt	ST:gt	ST:gt			False
+Z:h	L:H	L:H			False
+Z:i	L:I	L:I			False
+Z:idl	L:I	L:I			False
+Z:idr	L:I	L:I			False
+Z:j	L:J	L:J			False
+Z:k	L:K	L:K			False
+Z:l	L:L	L:L			False
+Z:lt	ST:lt	ST:lt			False
+Z:m	L:M	L:M			False
+Z:n	L:N	L:N			False
+Z:n1	circle/halfT	circle/halfB			True
+Z:n2	circle/halfB	circle/halfB			True
+Z:n3	circle/halfL	circle/halfL			True
+Z:n4	circle/halfR	circle/halfL			True
+Z:n5	circle/solid	circle/solid			True
+Z:n6	circle/dot	circle/notch			False
+Z:n7	triangle/dot	triangle/inner-triangle			False
+Z:n8	triangle/solid	triangle/solid			True
+Z:n9	triangle/outline	triangle/inner-triangle			False
+Z:o	circle/outline	circle/outline			True
+Z:p	L:P	L:P			False
+Z:perp	ST:perp	ST:perp			False
+Z:pf	RL:Pfilled	L:P			False
+Z:phi	circle/hline	circle/hline			False
+Z:plus	ST:plus	ST:plus			False
+Z:q	L:Q	L:Q			False
+Z:r	L:R	L:R			False
+Z:s	L:S	L:S			False
+Z:sidek	ST:pi	ST:pi			False
+Z:slash	ST:slash	ST:slash			False
+Z:sq	square/solid	square/solid			True
+Z:sqd	square/dot	square/inner-square			True
+Z:sqe	square/outline	square/inner-square			True
+Z:sql	square/halfL	square/diag			False
+Z:sqr	square/halfR	square/notch			False
+Z:t	L:T	L:T			False
+Z:theta	circle/vline	circle/vline			False
+Z:u	L:U	L:U			False
+Z:v	L:V	L:V			False
+Z:w	L:W	L:W			False
+Z:x	L:X	L:X			False
+Z:y	L:Y	L:Y			False
+Z:z	L:Z	L:Z			False
+Z:zodiac	circle/cross	circle/cross			False
+Z:backslash	ST:backslash	ST:backslash			False
