@@ -5075,6 +5075,30 @@ Open for the next lane / parent:
 4. fr16142 c262 gloss: a blind read with a different instrument (word-level crops) or a person; two machine control reads have failed.
 5. hellen R1953 codes 1-800 image check, ~$6.
 
+## LANE LANE-RUN7-account-2 handoff (session_01UK47b2jBbLpTagGB97jJgP, account 2), 6 October 2026 (closed 02:4x UTC: M-tier m-z backlog worked, lane about 55.2 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run7-jobs.md. WORK-QUEUE row 236: next tier of tools/next_steps.py
+(cost band M as well as S), folders m-z, ranked by closeness to a counted result, then D2 pushes on uncounted N3+ readings. Gate 0a clear
+(SESSION-SWEEP-account-2 done 23:21 5 Oct). VERIFY-BACKLOG high rows were fr16142 only (a-l, account 1). In m-z the only uncounted N3+ reading
+outside Birago is manteuffel f.410 (N4, D1 66.7%), so it got four jobs. Nineteen workers in four waves (13 Opus, 6 Sonnet; 17 D, 2 D-), workers 46.66 + orchestrator about
+8.5 = about 55.2 of cap 60 (get_session). five_hour `allowed` throughout.
+- Readings: thurloe-printed P10 p.620 L10 aligned to Powell 1937 (prereg gate 8/8 vs shuffle p95 3): 14 groups C12 M2, code 67 s/o conflict logged;
+  grades changed after AUDIT.md -> a verifier propagates (class N0 unchanged).
+- manteuffel f.410 D2 push: pooled single-code-gloss gate built and PASSes (0.667 vs p95 0.167 with 0528, 0574, 0529); leaves f.463 (0574) and
+  ff.424v-425 (0529) transcribed, f.463 clears its own gate, 0529 holds; every licensed code was already in key.tsv, so f.410 stays C146/M49/U29
+  and D1. Ranked frame screen in n9mant/screen_r7mantscr.tsv. Next: zoom 0527 run 7 (898 vs 98, ~0.5), then 0530 (~4.5), then 0526.
+- Sorters: lane rule from 01:5x -- open 5 random tiles against the line image before any sorter is handed on. matignon f.110 sorter FAILED it
+  (6/6 off-line, flat bands across sloping lines): ASKS 146 blocked on a deskewed re-cut (~3, tools/sorter_recut.py + --region).
+  oldenbarnevelt A/C2 sorter withdrawn by account 3 (tiles a line off), re-cut from cipher lines only and checked: ASKS 147 (publish from account 3).
+  R7-OLDA's 19.0% two-pass split stands (its crops sat on the cipher lines).
+- Non-tests / negatives with controls: suriname single-sign look (control 0.45 < 0.6, non-test), then 2-3-sign context tiles (controls PASS,
+  no token moved, H538 C10 M61 U49).
+- Searches (search results only): naf14913 Souchon 2044/2031 already on file; wvo-hessen 1111 is the reply to 1109 (body unread at 80 dpi);
+  Coxe Pelham no Waldeck/Cronstrom despatch; HMC 'Munchberg' 0 hits (control 6/11); CSP Venice vol.17 no Doncaster audience report;
+  sp77-nicholas no Sir L.R. (next Cal. Clar. iv pp.310-316); sp78-france-1583 step already run 3 Oct.
+- Left for the next m-z lane: matignon sorter re-cut (~3); manteuffel 0527 run-7 zoom then 0530; nicholas Cal. Clar. iv pp.310-316; wvo-hessen 1111
+  at higher dpi; whitworth-1707 fails the intake gate (send check-solved first); rah-juan-manuel waits on its owner sort, not a machine pass.
+
 ## LANE DEFAULT-account-2-20261005-2217 handoff (session_01J69aWeq2QaUGpDPaxaYDW4, account 2), 6 October 2026 (closed 00:5x UTC: cheap m-z backlog worked, lane about 49.7 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-05-account2-default-2217-jobs.md. Gate 0a waited 23:12-23:30 for
