@@ -462,13 +462,13 @@ tools/gallica_folio.py, canvas images at 1000 px 9), >= 2 s apart, all HTTP 200.
 Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - `29`, a single-group payee name (15,000 Rd) - blocker: open-codes; a 1665 nomenclature code outside the 1672 table, which no context on f.349 narrows; next: the 1665 nomenclature from AE CP Allemagne 194, an owner-side reproduction request
 - `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); Mél. Colbert 126-130bis swept 6 Oct 2026 (R10-DEC2678S), Gravel's four other 1665 letters there all in clear; next: the same sommaire sweep of Mél. Colbert 120-125 and 131-133, ~$3
-- novelty above N3 (verifier R10-DEC2678V gave N3, 6 Oct 2026, AUDIT.md) - blocker: waiting-on JSTOR-QUEUE.tsv rows 301-303 and the SO-R2678 second-opinion answer; Haug 2015, the study closest to this pension list, is not readable from the cloud
+- novelty above N3 (verifier R10-DEC2678V gave N3; second audit D1-DEC2678A2 confirmed N3, 6 Oct 2026, AUDIT.md AUDIT 2: Depping and Clément negative, DECODE/Tomokiyo/Bourdeau all list the passages undeciphered) - blocker: waiting-on JSTOR-QUEUE.tsv rows 301-303 and the SO-R2678 second-opinion answer; Haug 2015, the study closest to this pension list, is not readable from the cloud
 
 ## Escalation (R9-DEC2678C, 6 Oct 2026)
 - [x] siblings: Mél. Colbert 127-127bis and 126/128 sommaires swept (R9-DEC2678); Gravel's two other 1665 letters are in clear
 - [x] clear-pages: f.349r-v clear text read (R8-G2678, R9-DEC2678); it gives the context for P1-P3
 - [x] known-keys: Tomokiyo's 1672 Colbert-Gravel key passes the pre-registered gate (this section)
-- [x] print: verifier R10-DEC2678V ran print_check and a logged search, 6 Oct 2026 (AUDIT.md AUDIT 1: N3, key published, D2 about 73%); Haug 2015 not readable from the cloud, JSTOR rows queued
+- [x] print: verifier R10-DEC2678V ran print_check and a logged search, 6 Oct 2026 (AUDIT.md AUDIT 1: N3, key published, D2 about 73%); Haug 2015 not readable from the cloud, JSTOR rows queued; second adversarial audit D1-DEC2678A2, 6 Oct 2026 (AUDIT 2): N3 confirmed, Depping t. III prints other 1665 Gravel letters but not this one
 - [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; Mél. Colbert 126-130bis swept (R10-DEC2678S, 6 Oct 2026), no Ratisbon cipher letter; next: sweep Mél. Colbert 120-125 and 131-133
 - [x] image-check: native crop re-read of all three passages (this section)
 - [n/a] retry: first attempt passed its gate, nothing to retry

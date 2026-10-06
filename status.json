@@ -3958,12 +3958,13 @@
       "completeness": "11/15 H",
       "unresolved_spans": "29 (name code, M), 80 (bracketed cell, M), 22: and 0 (no 1672 cell, U)",
       "audit_refs": [
-        "decode-2678-bnf-colbert127-gravel-1665/AUDIT.md"
+        "decode-2678-bnf-colbert127-gravel-1665/AUDIT.md '## AUDIT 2 -- verifier D1-DEC2678A2, ...'",
+        "decode-2678-bnf-colbert127-gravel-1665/AUDIT.md '## AUDIT 1 -- verifier R10-DEC2678V, ...'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "R9-DEC2678C 6 Oct 2026 (reading_gravel1672.txt)",
       "superseded_by": null,
-      "fields_source": "AUDIT.md AUDIT 1 (R10-DEC2678V)",
+      "fields_source": "AUDIT.md AUDIT 1 (R10-DEC2678V); AUDIT 2 (D1-DEC2678A2, 6 Oct 2026) confirms N3, key published, D2 73%",
       "depth": "D2",
       "depth_pct": 73,
       "depth_sentence": "In Gravel's letter to Colbert of 29 Jan 1665, the enciphered recipients of the 1,000-Reichsthaler half-year pension on f.349r read \"les chanoine[s]\" under Tomokiyo's 1672 Colbert-Gravel key.",
