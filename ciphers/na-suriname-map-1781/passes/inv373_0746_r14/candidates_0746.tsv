@@ -1,0 +1,5 @@
+# from the 0746 gloss pair (blind tokens), for a verifier; NOT applied to any key
+code	suggested	count	nieuw_value	note
+2	z	1	a	conflict; all: z:1
+d	b	1	b	mixed; all: b:1 e:1
+o	o	1	r	conflict; all: o:1

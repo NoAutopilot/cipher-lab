@@ -1,0 +1,4 @@
+pairs with gloss: 27; aligned words: 2; positions: 9
+S1 key_period_codes_nieuw: keyed 9, agree 0.667; shuffled-gloss control mean 0.133 p99 0.444 -> SAME SYSTEM
+S1 without [y-fam]: keyed 8, agree 0.625; shuffled-gloss control mean 0.120 p99 0.375 -> descriptive
+S2 pooled 0693+0702+0730 sign table: keyed 8, agree 0.875; shuffled-gloss control mean 0.259 p99 0.625 -> descriptive

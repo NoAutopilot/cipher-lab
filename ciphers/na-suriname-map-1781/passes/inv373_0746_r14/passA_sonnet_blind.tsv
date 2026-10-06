@@ -1,0 +1,58 @@
+# R14-SUR746: ONE blind Sonnet pass per page on crops p0746L_L01-L21 and p0746R_L01-L06 (crop paths only, reader-code vocabulary,
+# no values, no key), 6 Oct 2026 ~15:25 UTC, after PREREG f7f1cc66d was pushed. Verbatim as returned (left pass, then right pass).
+crop	kind	text	conf	remarks
+L01	gloss	Zo het al gebeurde, dat dezelve elders onverhoopt	0.6	
+L01	cipher	2o; [lambda]-like n k [hash] | [lambda]' [delta] c 9 3 [d-loop] 7 5 o r 7 7 , r [delta] [lambda] [w-tilde] 3 n 7 c 5 d | 3 c r 7 0 [psi] [hash] 4 5 3 0 &	0.3	line start "2o;" may be a numeral 2 with superscript o; many signs uncertain
+L02	gloss	mogte aan Stuk gezeylt dan wel aan Stukken	0.55	
+L02	cipher	k [hash] S r y [hash] 9 [lambda] [psi] [lambda] 5 b b 3 y r 9 3 n t c r , w r y 4 3 c [psi] [lambda] 5 b b 3 y r	0.3	
+L03	gloss	getkapt worden, blyft eqeer de verstopping behalven	0.4	"eqeer" uncertain
+L03	cipher	9 3 b . x S r [delta] 4 [hash] o r 3 c/ , d c t & [lambda] 3 9 [lambda] 7 0 [w-tilde] 7 5 3 0 [psi] [lambda] [hash] S 9 f y 9 , 0 3 3 [delta] ,	0.3	
+L04	gloss	[other: small mark] de kleine opening van een halve toorn in zyn	0.5	
+L04	cipher	, [delta] c e 3 y 0 7 b c t y 7 k [hash] S 3 y [other: x-like sign with flourish] 7 9 5 % . 9 / 3 7 y | 3 [delta] c & [lambda] k 5 4 8 y	0.3	
+L05	gloss	Waarde. — Eindelyk dient men verdag-	0.5	
+L05	cipher	n t y 4 . 1 p o r 3 . — 3 8 [y-fam] w 3 c t b [w-tilde] r f 3 y r y r y r y 3 l 5 3 0 r [delta] 9 ,	0.3	
+L06	gloss	te zyn dat deze Linie van tyd tot tyd	0.6	
+L06	cipher	[lambda] [lambda] 3 n t y , r [delta] [lambda] o r 3 7 n d | c f o j 8 3 5 % . y [lambda] t r [lambda] [hash] [lambda] [lambda] t [lambda]	0.3	
+L07	gloss	moet verandert worden, alzo hier Water de	0.5	
+L07	cipher	7 [hash] 3 [lambda] 5 3 0 [delta] y / & 3 0 [lambda] - 4 [hash] e & 3 y / , [delta] c n k [hash] [lambda] 4 % . [delta] [lambda] 3 0 [w-tilde] 7 [lambda] [hash]	0.3	
+L08	gloss	Touwen sterk doen verrotten.	0.5	
+L08	cipher	5 4 3 y [psi] [lambda] 3 0 b [w-tilde] [hash] 3 [lambda] 5 3 0 0 [hash] [lambda] r 3 y —	0.35	
+L09	gloss	Wanneer zodanige Linie leyt en by de Fortificatie	0.5	
+L09	cipher	4 [delta] y l 3 7 0 n k r [delta] . x y 8 9 3 c 8 y 8 3 c 3 9 [lambda] , 7 l d t w 7 & [hash] 0 [lambda] f [w-tilde] 8 7	0.25	
+L10	gloss	— tot Werken 's Lands Fregatten tusschen 4 a 5 ge-	0.45	
+L10	cipher	[delta] [lambda] 8 3 4 3 0 b 7 y / , [psi] c [delta] y r [psi] [w-tilde] 0 3 9 [delta] [lambda] r 3 y , [lambda] 3 8 [w-tilde] 3 y [psi] , 4 . 5	0.3	
+L11	gloss	armeerde Koopvaarders, de twee Brikken en de	0.55	
+L11	cipher	9 3 [delta] 0 y 3 7 0 r d | & k [hash] S 5 4 % . 0 r 3 0 [psi] , r 3 [lambda] 4 3 7 d 0 8 b b 3 y , 3 y	0.3	
+L12	gloss	twee Pontschuyten, die kort onder de Wal op vlak	0.4	
+L12	cipher	r 7 [lambda] 4 3 7 S [hash] y [lambda] 7 l r 8 3 b [hash] 0 [lambda] [hash] y r 3 0 r 7 4 % c [hash] S 5 c [delta] b .	0.3	
+L13	gloss	water voor kleine vaartuigen geschiet alle	0.5	
+L13	cipher	4 [delta] . . [lambda] 3 0 5 k [hash] o b c t y 3 5 - [delta] . x 0 [lambda] 5 t 9 3 [y-fam] j 7 [pi] 3 f b [lambda]	0.25	
+L14	gloss	en behoorlyke order geplaatst zyn, denken	0.5	
+L14	cipher	[delta] 9 c 3 8 y d 3 9 k [hash] 0 | c t b 3 [hash] 0 r 3 0 9 7 S c [delta] . x [lambda] [psi] [lambda] n t y , r 3 y	0.3	
+L15	gloss	wyt dat de Vyand den Aanval wel kan uitstel-	0.45	
+L15	cipher	b 7 l [delta] 4 t [w-tilde] r [delta] [lambda] r 3 5 t [delta] y r | r 3 l [delta] 4 . [y-fam] 5 % c [delta] 3 c b p y 5 t [lambda] [psi] [lambda] 3 9 c 7 /	0.25	
+L16	gloss	len, want nog met branders, nog met Schepen	0.5	
+L16	cipher	4 . x y [lambda] [y-fam] [hash] 9 y 3 [lambda] d 0 [delta] [y-fam] r 3 0 [psi] , [y-fam] [hash] 9 y 3 [lambda] [psi] r & 3 7 S [psi] 7 % . 0 [lambda] 3	0.25	
+L17	gloss	magte iets kan ondernemen, alles moet voor	0.5	
+L17	cipher	f 3 [lambda] [psi] b y % . 7 [hash] 7 r 3 0 y 3 7 7 3 l , [delta] c 3 3 [psi] [y-fam] [hash] 3 [lambda] 5 k [hash] 0 9 3	0.3	
+L18	gloss	de boom opstornen, en zo lang tegen blyven	0.5	
+L18	cipher	d k [hash] y k S [lambda] [hash] o [y-fam] 3 l , 3 l n k [hash] c [delta] y 9 [lambda] 3 7 9 d y [psi] d c t 5 3 l	0.3	
+L19	gloss	als de Gloed loopt, zonder te kunnen reti-	0.4	
+L19	cipher	% . c [psi] [w-tilde] 7 5 c [hash] 3 r c k [hash] S [lambda] , n [hash] y r 3 0 [lambda] 7 b 5 y l 3 l 0 3 [lambda] 8 0 3 d o w	0.3	
+L20	gloss	reren en zo zy zo verre mogten komen	0.4	
+L20	cipher	3 y d a o [psi] t n k [hash] 5 3 0 0 7 n [hash] 5 2 7 l y k 9 [lambda] 3 y b k [hash] y 3 l /	0.3	
+L21	gloss	[no plain word legible]	0.1	small plain word below group, illegible due to fold
+L21	cipher	[hash] & r 7 d [hash]	0.35	short group at lower right on paper fold
+R01	gloss	off de boom aft e Schilten ende Touwen ke	0.4	first word and "aft e" unclear; "Schilten" read as Schilder-like; line ends in a flourish
+R01	cipher	[hash] & | w [lambda] d k | [hash] [y-fam] [delta] & | [lambda] 3 [psi] x 3 [other: f-like sign with long ascender] c 9 3 y [lambda] l w [lambda] [lambda] [hash] 5 4 3 l [other: cut off at right edge]	0.35	right end of line is cut off; a few signs touching, the sign after [psi] uncertain
+R02	gloss	kappen hebben wy gelegentheid hem af te	0.5	line continues past the crop edge
+R02	cipher	3 y / & 3 d 6 7 l 4 t 9 3 c 3 7 9 d y [other: S-like] 3 [other: f-like] r [other: S-like] 3 [other: f-like] r [other: S-like] 3 y | [hash] [w-tilde] [lambda] 3 5 3 0 y	0.3	dense, many ligatured signs; the S-like/f-like signs before 3 repeat three times; the "/" after 3 y may be a stroke
+R03	gloss	Vermelden of in een Staat van weerloosheid te	0.5	"Vermelden" uncertain
+R03	cipher	7 c d l | [hash] & [other: f-like] [y-fam] 3 7 [y-fam] [psi] [lambda] [x-dot] [delta] [lambda] 5 / [y-fam] 4 3 7 0 c k [hash] [psi] & 3 [other: f-like] [y-fam] [lambda]	0.35	the [hash] near the start is struck through; dots on x-dot are two; right end cut
+R04	gloss	brengen.	0.7	trailing dot
+R04	cipher	d 0 7 y 9 d l .	0.5	cipher group followed by a plain-looking "dl."; flourish and ink traces at the lower right are not signs
+R05	gloss	Actum aan boord van 's Lands fregat van	0.55	"fregat" read from shape
+R05	cipher	[delta] [other: x-like with loop] [lambda] 5 y [x-dot] p y d k [hash] o r e / l [psi] c [delta] y r 6 & 0 3 9 [delta] [lambda] e / [other: l-like cut off]	0.3	right end cut off; a "/" like % mark after e
+R06	gloss	oorlog de Valk.	0.6	trailing dot
+R06	cipher	[hash] o c [hash] 9 [other: x-like with loop] d 5 / . c b	0.35	"5 /." could be 5 followed by a % like mark
+R06	remarks	date	den 24 october 1781	0.8	plain date follows the cipher group, not cipher text

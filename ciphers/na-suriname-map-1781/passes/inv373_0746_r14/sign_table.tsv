@@ -1,0 +1,9 @@
+code	nieuw_value	letters_seen	agree	conflict	verdict
+0	r	r:1	1	0	agree
+2	a	z:1	0	1	conflict
+7	e	e:1	1	0	agree
+9	g	g:1	1	0	agree
+[y-fam]	m|n	n:1	1	0	agree
+d	b	b:1 e:1	1	1	mixed
+l	n	n:1	1	0	agree
+o	r	o:1	0	1	conflict
