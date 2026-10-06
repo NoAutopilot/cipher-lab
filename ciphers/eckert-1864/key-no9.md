@@ -161,3 +161,22 @@ is now read: Pagan/Pagoda = Washington, p.[18] l.20, and moves to H.
 Read on these pages but blank in this copy (printed words with no handwritten meaning, so a ledger use cannot be read from
 mssEC 67): Paulding/Pauline (p.[19] l.5), the whole Pacific-Pine block of p.[19], Hayti/Helix, Honey/Humble, Hug/Hulk
 (p.[15]), Kitten/Kiss, Koran/Kennet (p.[16]), Agnew-Adverb (p.[9] ll.11-15), Empress/Embrace (p.[13]).
+
+## 4. Further lines read 6 Oct 2026 (R9-ECK64, LANE LANE-RUN9-account-1)
+
+For the five "(9)" entries of ledger pages 21-51 (O9-R..O9-V). p.[9], [10] and [22] from the committed
+ciphers/eckert-1862/images/mssEC67_p1729/p1730/p1742.jpg; p.[13], [14], [21] fetched at 1400 px (pointers 1733, 1734, 1741;
+scratch, regenerable as in section 3). Read by the worker, one eye, no subagent.
+
+| code word | meaning | grade | source |
+|---|---|---|---|
+| Adam/Asia | President (United States) | H | p.[9] (1729) l.1 |
+| Aaron/Arabia | Sec. of War | H | p.[9] (1729) l.3 (ditto marks under "Secy of") |
+| Abbot/Aragon | Quartermaster General | H | p.[9] (1729) l.10 (ditto mark under "General") |
+| Adorn/Agate | Jno. A. Dix | H | p.[10] (1730) l.5, Maj. Generals |
+| Burton/Buxton | A. E. Burnside | H | p.[10] (1730) l.22, Maj. Generals |
+| Farmer/Famish | Louisiana | H | p.[13] (1733) l.26, States |
+| Globe/Glover | Red River | H | p.[14] (1734) l.18, Rivers |
+| Spafford/Spartan | River | H | p.[21] (1741) l.10 |
+| Stomach/Stagger | Transportation | H | p.[21] (1741) l.24 |
+| Vincent/Vinton | Quartermaster | H | p.[22] (1742) l.24 |

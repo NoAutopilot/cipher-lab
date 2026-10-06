@@ -290,3 +290,74 @@ account of guerrillas whimpering his walker
 will apply equally to an wafer
 at any time in to the
 Windhams Country (sig) Abortion looks stormy
+
+# Five "(9)"-marked entries of mssEC 19 pages 21-51, added 6 Oct 2026 (R9-ECK64, LANE LANE-RUN9-account-1). Every entry
+# of pages 21-60 whose operator line carries "(9)" (item-API volunteer text, pointers 8913-8952; no other "(9)" mark on
+# those pages). Only two fall in March (pp.21, 27); the other three are April 1864 entries to New York (Horner) still
+# written in the old vocabulary. Transcribed from the volunteer text and checked on the page images (IIIF 2400 px,
+# tools/iiif_lines.py line crops, one blind Sonnet read, every code-word disagreement settled on the image by the worker;
+# image-check-no9.tsv rows R9-*). Marginal notes ("Halleck", "Sent from book ... Tinker", charge figures) are left out.
+
+### O9-R | Page 21 | 8913 | 13 Mar 1864, Halleck to F. Steele (operator R. F. Clowry (9))
+R F. Clowry (9)  Washn Mar 13th 1864
+Pagoda Thirteenth March Viola For Fred'k
+Steele Vermin I desire that you
+proceed to cooper = ate in the
+zodiac of Amen & Black on
+Shreveport unless Bengal orders differently I
+sent to him the substance of
+your superb of the twelfth Applause
+
+### O9-S | Page 27 | 8919 | 31 Mar 1864 (dated April first), Halleck to Steele at Little Rock (operator Capt R. C. Clowry (9))
+Capt R. C. Clowry (9) Little Rock Ark  Wash'n Mar 31st 1864 11. AM
+Pagan April first Francis For Vermin Steele
+Vulture Vermin Bangor directs me to supper
+to you that when your forces reach
+Globe you will in con junction with
+the na = val forces occupy and hold
+the line of that Spartan so as
+to cover the Indian Territory
+Arkansas & north = ern Famish
+sig Applause Chief of Staff
+
+### O9-T | Page 31 | 8923 | 7 Apr 1864, Halleck to Burnside at New York (operator John Horner N. Y. (9))
+John Horner N. Y. (9)  Wash'n Apr 7th 1864 2 P. M
+Pagoda Hannah Apr seventh For Burton Midas
+Vomit Vernon Bangor wishes you to be
+in read = iness to move your youth
+from Anna = pol = is at short = est
+No = tice after the twentieth instant period
+Keep it secret that you are to
+move from there at
+all sig Abe = or
+shun mark this con
+fid = ent = ial mum
+
+### O9-U | Page 34 | 8926 | 8 Apr 1864, Meigs (Quartermaster General) to Van Vliet at New York (operator John Horner N. Y. (9))
+John Horner N. Y. (9)  Wash'n April 8th 1864 4. P. M.
+Pagoda April Eighth Henrietta For Vienna
+Van Vliet Vinton Midas the ar
+a go should be returned to
+Hilt on head immediately period I
+Estimate the Ar = a go &
+Tul ton among the Stagger of
+the Dept of the South and
+available there period You are to
+send from Merlin stomach for Six
+thous = and men what goes from
+Ann = pol = is & from this
+place will be additional (sig) Aragon
+
+### O9-V | Page 51 | 8943 | 22 Apr 1864, Stanton to Dix at New York (operator John Horner N. Y. (9))
+John Horner N. Y. (9)  Washn Apr 22nd 1864 5 P. M
+Pagan Twenty second April Imogene For Adorn
+Midas period The Adam directs me to
+say that you are authorized by him
+to call up on his Excel = lancy
+Gov Sey = mour for one or more
+shylocks of state militia to replace the
+us youth sent forward period grosvenor Say
+sey mour in forms the Dept
+that he will furnish them sign
+Arabia
+plain: Seymour

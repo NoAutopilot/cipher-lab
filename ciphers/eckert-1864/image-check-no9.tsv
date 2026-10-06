@@ -18,3 +18,21 @@ O9-P	19	8911	22	superb	Support	superb	yes	no	Supper/Superb = Telegraphs
 O9-P	19	8911	last	their way to Boston sig Annal	(not in crops)	their way to Boston sig Annal	yes	no	bottom line outside the crop region; read on the page image
 O9-N	13	8905	16	twenty ninth	ninety ninth	twenty ninth	no	no	date word; header 29 Feb 1864
 O9-E	1	8893	2	Bakers	Parkins	Parkins or Parkers	no	no	plain word, not changed (O9-G has "Parkers")
+# R9-ECK64, 6 Oct 2026 (LANE LANE-RUN9-account-1): O9-R..O9-V, pages 21, 27, 31, 34, 51 (pointers 8913, 8919, 8923, 8926, 8943), 2400 px,
+# tools/iiif_lines.py crops (--region x,y,w,h 60,250,2280,2550 / p8919 60,1550,2280,1280 / p8926 0,1450,1950,1330; --prominence 40/30
+# --distance 65 --lines-per-crop 2) plus two fixed bottom bands cut by PIL where the ink profile found no lines (p8919 2300-2835,
+# p8926 2580-2780; the blind read found them blank); one blind Sonnet read of 31 crops; calls by the worker on 2400 px regions.
+O9-R	21	8913	2	Vermin	Vernon	Vermin	yes	no	the n-m-i-n of Vermin as in O9-S; Maj. Gen. Steele as printed
+O9-R	21	8913	0	R F. Clarry	R. F. Clancy	R F. Clowry	no	yes	operator name (as on p.27 "Capt R C Clowry"); header only
+O9-S	27	8919	1-2	(volunteer only)	(crop missed the first three lines)	Pagan April first Francis For Vermin Steele / Vulture Vermin Bangor directs me to supper	yes	no	read by the worker on the image; marginal "Halleck" left out
+O9-S	27	8919	8	Famish	Tamish	Famish	yes	no	looped capital F as in "Francis"; Farmer/Famish = Louisiana
+O9-S	27	8919	9	Applause	Applaum	Applause	yes	no	final "se" compressed; the hand's usual Applause
+O9-S	27	8919	6	so as action	so as	so as	no	yes	"action" is a pencil note in the left margin beside "to", not in the line
+O9-T	31	8923	8	all sig Abe = or shun	all sig Abe = ory Chum	all sig Abe = or / shun	yes	no	Abortion (Halleck) written by sound over two lines; left ungraded like O9-N "wafind"
+O9-U	34	8926	2	Van Fleet Vinton	Vann Vleet Venton	Van Vliet Vinton	yes	yes	"Vliet" on the image (volunteer "Fleet"); Vinton = Quartermaster, i undotted
+O9-U	34	8926	6	Stagger	Slagger	Stagger	yes	no	the hand's St (cf. "Steele"); Stomach/Stagger = Transportation
+O9-U	34	8926	9	Six	Sip	Six	no	no	plain number word
+O9-V	51	8943	1	Twenty second	Trinity Oscar	Twenty second	no	no	date words; header 22 Apr
+O9-V	51	8943	1	Adorn	Adam	Adorn	yes	no	"Adorn" with r-n joined, distinct from the "Adam" of line 2; Adorn/Agate = Dix (New York)
+O9-V	51	8943	2	directs	binds	directs	no	no	plain word
+O9-V	51	8943	5	Sey = mour	Bray = mour	Sey = mour	no	no	looped capital S; marked "plain:" so the decoder does not read Seymour (= Infantry)

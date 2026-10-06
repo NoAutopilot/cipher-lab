@@ -327,7 +327,7 @@ exit 0
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
 Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H 298, C 8, M 0, I 0 code-word tokens, `decode.py --check` exit 0) plus 11 Beckwith/Kimber/Caldwell entries in Cipher No. 2 (section 8 and DEF1-ECK64, 5 Oct 2026: H 273, C 6, I 10, M 1, `decode_no2.py --check` exit 0); the rest of the ledger untranscribed.
 - corpus pass over the remaining ~550 mssEC 19 entries and mssEC 18 - blocker: waiting-on the Huntington curator's reply to the 20 Sept 2026 enquiry; section 9 names that reply as the decision point for the corpus pass
-- Jan-Mar 1864 old-vocabulary entries beyond pages 1-20 - blocker: not-attempted; 17 entries of pages 1-20 read 6 Oct 2026 (R7A-ECK64 four, R7B-ECK64B thirteen) and all 17 image-checked (O9-A..D by R7A, O9-E..Q by R8-ECK64: one code-word change, Wardham -> Windhams; H 148, M 0, decode_no9.py --check exit 0); next: continue the "(9)"-marked entries past page 20 (Horner, Sheldon, Davenport/Stevens) from the page images, tabling any further mssEC 67 lines, ~$4
+- old-vocabulary entries beyond page 60 of mssEC 19 - blocker: not-attempted; 22 entries read and image-checked so far (17 of pages 1-20 by R7A/R7B/R8; the five "(9)" entries of pages 21-60, O9-R..V, by R9-ECK64 6 Oct 2026: H 45, M 0, all twenty-two H 193, decode_no9.py --check exit 0); next: scan the item-API text of pages 61 onward for further "(9)" marks and for unmarked entries of pages 21-60 written in the old vocabulary (Pagan/Pagoda openings), read them with key-no9.md, and search O9-U/O9-V in OR I/35 pt 2 and ser. III vol. 4, ~$3
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
 - [ ] siblings: mssEC 25 second copy read for E4/E5 (Second reader, 24 Sept 2026; four corrections applied); mssEC 18 opened 5 Oct 2026, pp.50-60 text, no E4/E5 copy
@@ -335,9 +335,9 @@ Read so far: 20 of about 570 Cipher No. 1 entries of mssEC 19 read (section 4: H
 - [x] known-keys: Cipher No. 1 (mssEC 41) and Cipher No. 2 (mssEC 47) are the period key books in use
 - [x] print: OR series I sweep, ORN, Butler and Fox correspondence, Lincoln Collected Works (section 4, AUDIT.md)
 - [n/a] key-rebuild: period cipher books exist and read every code word in the twenty entries; for the Jan-Feb 1864 old vocabulary the period book is mssEC 67 (filled-in, Tomokiyo's No. 9), read on 9 pages for the sample (R7A-ECK64, 6 Oct 2026) and on pp.[9]-[24] for the further entries (R7B-ECK64B, 6 Oct 2026)
-- [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026); N2-E Spit re-read in mssEC 47, mssEC 48 and the ledger (D2-ECK64S, 5 Oct 2026: Spit = Near in both books, ledger Spit; conflict logged, not resolved); O9-E..Q checked against the mssEC 19 page images (R8-ECK64, 6 Oct 2026, image-check-no9.tsv)
+- [x] image-check: E4/E5 re-read word by word at full size against both ledgers (Second reader, 24 Sept 2026); N2-E Spit re-read in mssEC 47, mssEC 48 and the ledger (D2-ECK64S, 5 Oct 2026: Spit = Near in both books, ledger Spit; conflict logged, not resolved); O9-E..Q checked against the mssEC 19 page images (R8-ECK64, 6 Oct 2026, image-check-no9.tsv); O9-R..V likewise (R9-ECK64, 6 Oct 2026)
 - [n/a] retry: M 0 in the twenty read entries, no doubtful token left to retry
-Verdict: keep going: 1 internal gap; cheapest next: the "(9)"-marked Jan-Mar 1864 entries past page 20 of mssEC 19 read from the page images with key-no9.md, ~$4 (updated R8-ECK64, 6 Oct 2026: O9-E..Q image-checked, one code-word change, H 148, M 0, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: image-check the thirteen O9-E..Q entries (volunteer text only so far) and continue the "(9)"-marked entries past page 20 of mssEC 19, ~$4 (updated R7B-ECK64B, 6 Oct 2026: 17 old-vocabulary entries read with mssEC 67, H 147, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: the rest of the Jan-Feb 1864 old-vocabulary entries (pages 1-20 of mssEC 19, with key-no9.md extended from mssEC 67 pp.[11]-[15], [18]), ~$4 (updated R7A-ECK64, 6 Oct 2026: four-entry sample read with mssEC 67, decode_no9.py --check exit 0). Earlier note: (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
+Verdict: keep going: 1 internal gap; cheapest next: scan mssEC 19 pages 61 onward (and the unmarked entries of pages 21-60) for further old-vocabulary entries, read them with key-no9.md, and search O9-U/O9-V in OR I/35 pt 2 and ser. III vol. 4, ~$3 (updated R9-ECK64, 6 Oct 2026: the five "(9)" entries of pages 21-60 read and image-checked, H 45, M 0, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: the "(9)"-marked Jan-Mar 1864 entries past page 20 of mssEC 19 read from the page images with key-no9.md, ~$4 (updated R8-ECK64, 6 Oct 2026: O9-E..Q image-checked, one code-word change, H 148, M 0, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: image-check the thirteen O9-E..Q entries (volunteer text only so far) and continue the "(9)"-marked entries past page 20 of mssEC 19, ~$4 (updated R7B-ECK64B, 6 Oct 2026: 17 old-vocabulary entries read with mssEC 67, H 147, decode_no9.py --check exit 0). Earlier: keep going: 1 internal gap; cheapest next: the rest of the Jan-Feb 1864 old-vocabulary entries (pages 1-20 of mssEC 19, with key-no9.md extended from mssEC 67 pp.[11]-[15], [18]), ~$4 (updated R7A-ECK64, 6 Oct 2026: four-entry sample read with mssEC 67, decode_no9.py --check exit 0). Earlier note: (updated D2-ECK64S, 5 Oct 2026: the Spit/men conflict was re-read at full size in both key books and the ledger and is logged as a data conflict in its own section below)
 
 ## mssEC 18 check for E4/E5 copies, 5 Oct 2026 (RUN6-ECK, LANE-RUN6 wave 2)
 
@@ -490,3 +490,33 @@ Potomac is what the sentence (fords between the Monocacy and Point of Rocks) nee
 Not done: the "(9)" entries past page 20 (no page past 20 was fetched in this pass, so the brief's optional continuation
 from images already fetched had nothing to read). Requests: hdl.huntington.org 23 (12 pages; 5 pct: region requests,
 which the server answered with the whole page; 1 info.json; 5 pixel regions), all 200.
+
+## The "(9)" entries of pages 21-60, 6 Oct 2026 (R9-ECK64, LANE LANE-RUN9-account-1)
+
+Step checked undone first: R8-ECK64 (section above) fetched no page past 20; no dated section had read one.
+Kept as found: the Spit/men (N2-E) and Village/Garrard (O9-A) conflicts and the O9-H/O9-P rule-4 notes, unchanged.
+
+Route: Huntington CONTENTdm item API (field "text") for mssEC 19 pages 21-60 (pointers 8913-8952; scratch); "(9)" occurs on
+pages 21, 27, 31, 34 and 51 only. Page images at 2400 px (IIIF, pointers 8913, 8919, 8923, 8926, 8943; scratch). Crop step,
+run before the subagent call: `python3 tools/iiif_lines.py --image pages/p<pointer>.jpg --out crops --prefix p<pointer>
+--region 60,250,2280,2550 --prominence 40 --distance 65 --lines-per-crop 2` (p8919 and p8926 re-cut over their lower halves,
+--prominence 30), 31 two-line crops covering the five entries; one blind Sonnet read given only the crop paths; every
+code-word disagreement settled by the worker on 2400 px regions (image-check-no9.tsv, R9 rows). mssEC 67 pp.[13], [14], [21]
+at 1400 px (pointers 1733, 1734, 1741) and the committed p.[9], [10], [22] images for ten new key rows (key-no9.md section 4).
+
+Found: five entries, Halleck to Steele 13 Mar and 1 Apr (Red River campaign), Halleck to Burnside at New York 7 Apr (move the
+troops from Annapolis), Meigs as Quartermaster General (Abbot/Aragon) to Van Vliet 8 Apr (the steamers Arago and Fulton,
+transportation for six thousand men), Stanton (Aaron/Arabia, Sec. of War) to Dix (Adorn/Agate) 22 Apr (Governor Seymour's
+militia). H 45, C 0, I 0, M 0 (all twenty-two old-vocabulary entries H 193); `python3 decode_no9.py --check` exit 0. Image
+check: no code-word change (Vermin, Famish, Vinton, Stagger, Adorn confirmed on the page against the blind read); plain
+corrections O9-U "Van Vliet" (volunteer "Van Fleet") and O9-S "so as to" ("action" is a marginal pencil note). Check: O9-R,
+O9-S, O9-T are printed in OR series I (I/34 pt 2 p.587, I/34 pt 3 p.27, I/33 p.815) and agree in every coded word and in the
+time words (Viola 12.30 PM, Francis 11 AM, Hannah 2 PM exact); O9-R's plain "I desire ... I sent" against the print's "I
+advise ... I send". Rule 4 notes: Lieut. Gen. Grant is written Vulture/Vomit + Vermin/Vernon (the book has no Lieut. Gen.
+row); "Abe = or shun" (O9-T) and "grosvenor" (O9-V) stay ungraded (reading-no9.md). Key source per rule 10: period (mssEC 67).
+
+Not found / not done: O9-U and O9-V not located in I/33 or I/34 pts 2-3 by the phrases tried; I/35 pt 2 and ser. III vol. 4
+not searched (search results only, no novelty question asked). Unmarked entries of pages 21-60 in the old vocabulary (Pagan/
+Pagoda openings without "(9)") and pages past 60 not examined. Requests: hdl.huntington.org 51 (40 item-API pages, two
+'Empty reply' retried once each; 5 ledger IIIF pages; 3 mssEC 67 IIIF pages, one retried), archive.org 3 (djvu full texts);
+all final responses 200.
