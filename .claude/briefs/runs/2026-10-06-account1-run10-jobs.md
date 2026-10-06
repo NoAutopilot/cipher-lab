@@ -69,3 +69,28 @@ corrections into the folder's corrections/reading files, decode_no9.py --check e
 Verdict cheapest next (R9-BAL103B): PREREG first (shape classes defined on f.171r control 9s, whose values are known; gate: the split must
 separate f.171r's known values above a label-permutation p95 before it is applied to f.50 tokens). Crops via tools/iiif_lines.py pasted, one
 blind shape read + reconciliation. If the control does not separate, NON-TEST, stop; key.tsv untouched either way unless the gate passes.
+
+## Wave 2 (written 09:5x UTC; refills as wave-1 workers finish; intake gate exit 0 for every folder below, 6 Oct 09:4x-09:5x UTC)
+
+### R10-NOX2 -- fr16142-noailles-constantinople-1571: c262 gloss lines below L13, one cut and read (cap 2.5, box 30 min)
+As R9-NOX2 in the run9 jobs file (not run there): crops pasted, one blind read, gloss.tsv rows added with grades; if the reading feeds an
+existing pre-registered test, re-run it with --check. No depth/N-class edits; flag the verifier if any number in status.json depth_check
+moves (rule 10 propagation).
+
+### R10-ECK62S -- eckert-1862: split2 cascade regeneration (cap 3.5, box 45 min)
+Verdict cheapest next (R9-ECK62): regenerate the ec18 cascade (main, --assign-free, --read ...) under split2=True (671 -> 729 entries),
+scripts and disk only; report which committed numbers move (the 2 wrongtel/confpair targets 9969.543, 9985.564, 1 print_q, 6 assign_free);
+every regenerated output keeps its --check; the legacy split stays available. No reading claims beyond what the regenerated scripts show.
+
+### R10-FLOR2 -- florence-dieci-responsive: --median-h option on tools/glyph_atlas.py segment, re-run tuning, c.127 sorter tiles (cap 3, box 45 min)
+Verdict cheapest next (R9-FLOR): add a `--median-h` (shared scale) option to tools/glyph_atlas.py segment WITH an offline test in
+tools/tests/, re-run atlas_tune/run_tune.sh for L05/L07/L08/L09 s1, then a sorter-tile build for c.127 L02-L18 from the tuned boxes;
+tools/sorter_preflight.py pasted; on PASS a ROOM flag for the account-3 orchestrator to publish. Do not publish. No vision subagent needed.
+
+### R10-COL26B -- colbert26-lathuillerie-1644: anchor_split re-run with 23 = n as a C anchor (cap 2, box 30 min)
+Verdict cheapest next (R9-COL26): re-run anchor_split on the 14 cleared units with 23 = n now a C anchor (new pre-registered copy pushed
+first, control B and gate unchanged), then a per-code control for any new lead with held-out units named before the run. Scripts only.
+
+### R10-LIN -- antt-linhares-chave: front-trim and join enumeration with its worked-example known-answer control (cap 3.5, box 45 min)
+Verdict cheapest next (R8-LIN): the front-trim and join enumeration, known-answer control first (PREREG pushed before the target run);
+control below gate = NON-TEST, stop. Use tools/judge_plaintext.py with the era-matched pt18 corpus. No depth/N-class edits.
