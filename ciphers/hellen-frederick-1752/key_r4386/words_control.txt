@@ -1,0 +1,2 @@
+control: share S > null p99 = 1.000 over 200 subsamples (gate >= 0.80); median S - null median = 0.904
+control (WRONG KEY): share S > null p99 = 0.005 over 200 subsamples (gate <= 0.05); median S - null median = 0.079

@@ -31,3 +31,7 @@ the R4369 values themselves permuted (a wrong key of the same design): its rate 
   (instrument: words-level frequency fit).
 - otherwise inconclusive, numbers logged, no third pass.
 No threshold, corpus or floor is changed after words are read.
+
+Correction (6 Oct 2026, 00:01 UTC by `date -u`): the header time is wrong -- `date -u` read 23:58 UTC on 5 Oct 2026 just before this
+file was written and pushed (02115fd90), before the images were fetched (23:59) and before any word was read. Nothing else changed.
+Control run before any word was read (`words_test.py --control`, `words_control.txt`): power 1.000, wrong key 0.005 -- gate met.

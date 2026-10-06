@@ -20,9 +20,9 @@ def box(code):
     x = xa + (xb - xa) * (r - 1) / 99; y = ya + (yb - ya) * (r - 1) / 99
     return p, (int(x + 60 - W), int(y - H / 2), int(x + 60), int(y + H / 2)), n
 
-def tile(cells, pages, path, label=True):
+def tile(cells, pages, path, label=True, sc=0.62):
     font = ImageFont.load_default(); per = len(cells)
-    sc = 0.62; cw, ch = int(W * sc), int(H * sc) + 16
+    cw, ch = int(W * sc), int(H * sc) + 16
     rows = (per + 1) // 2
     t = Image.new('RGB', (2 * cw + 10, rows * ch), 'white'); d = ImageDraw.Draw(t)
     for j, (o, code) in enumerate(cells):
@@ -38,6 +38,7 @@ def tile(cells, pages, path, label=True):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--img', required=True); ap.add_argument('--out', required=True); ap.add_argument('--debug')
+    ap.add_argument('--scale', type=float, default=0.62, help='tile scale (D2-HELR word read: 1.0)')
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
     pages = {p: Image.open(os.path.join(a.img, f'IMG_R4386_I26206_P{p}.jpg')).convert('L') for p in (2, 3)}
     if a.debug:
@@ -45,7 +46,7 @@ def main():
     cells = list(csv.DictReader(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cells.tsv')), delimiter='\t'))
     per = 16
     for t in range(0, len(cells), per):
-        tile([(int(c['order']), int(c['code'])) for c in cells[t:t + per]], pages, os.path.join(a.out, f'tile_{t // per:02d}.png'))
+        tile([(int(c['order']), int(c['code'])) for c in cells[t:t + per]], pages, os.path.join(a.out, f'tile_{t // per:02d}.png'), sc=a.scale)
     print('tiles', (len(cells) + per - 1) // per)
 
 if __name__ == '__main__': main()
