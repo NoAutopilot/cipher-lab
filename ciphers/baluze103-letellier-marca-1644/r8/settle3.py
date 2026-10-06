@@ -20,6 +20,11 @@ for p in ('tx/r7b/rec_r/disagreements.tsv', 'tx/r7b/rec_v/disagreements.tsv'):
     for i, ln in enumerate(open(os.path.join(T, p))):
         if i: f = ln.rstrip('\n').split('\t'); DIS[(f[0], int(f[1]))] = (f[2], f[3])
 hdr, *rows = [l.rstrip('\n').split('\t') for l in open(os.path.join(T, 'ciphertext.tsv'))]
+APPLIED = {(r[0], r[1]) for r in rows if r[5] == 'r8-2of3'}
+PRE = [list(r) for r in rows]  # the ciphertext as it stood before --apply: undo this script's own rows from alt
+for r in PRE:
+    if r[5] == 'r8-2of3':
+        r[2] = r[4].split('r8 old=')[1].split()[0]; r[4] = r[4].split(' r8 old=')[0] if ' r8 old=' in r[4] else ''; r[5] = 'pre-r8'
 
 def col(r):
     a = r[4]
@@ -45,15 +50,15 @@ def align(rs, cs):
 
 corr, al = [], []
 for L in LINES:
-    idx = [k for k, r in enumerate(rows) if r[0] == L]
+    idx = [k for k, r in enumerate(PRE) if r[0] == L]
     rs = []
     for k in idx:
-        r = rows[k]; c = col(r)
+        r = PRE[k]; c = col(r)
         ab = DIS.get((L, c)) if r[5] != 'agree' else None
         rs.append((k, set(ab) - {'-'} if ab else {r[2]}, ab))
     m = align(rs, C[L])
     for t, (k, cand, ab) in enumerate(rs):
-        c = m.get(t); r = rows[k]
+        c = m.get(t); r = PRE[k]
         al.append((L, r[1], r[2], ab[0] if ab else r[2], ab[1] if ab else r[2], c or '-'))
         if ab and c and c in (ab[0], ab[1]) and c != r[2]:
             corr.append((L, r[1], r[2], c, ab[0], ab[1], c, 'applied'))
@@ -71,7 +76,7 @@ if '--apply' in sys.argv:
     pos = {(x[0], x[1]): x for x in corr if x[7] == 'applied'}
     for r in rows:
         x = pos.get((r[0], r[1]))
-        if x and r[2] == x[2]:
+        if x and r[2] == x[2] and (r[0], r[1]) not in APPLIED:
             r[4] = (r[4] + ' ' if r[4] else '') + f'r8 old={x[2]} C:{x[6]}'; r[2] = x[3]; r[3] = 'M'; r[5] = 'r8-2of3'
     open(os.path.join(T, 'ciphertext.tsv'), 'w').write('\t'.join(hdr) + '\n' + ''.join('\t'.join(r) + '\n' for r in rows))
 print(ctxt)
