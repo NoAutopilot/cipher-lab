@@ -9388,3 +9388,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 07:40 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 07:34 UTC (handled 07:40): spawned 0; FER126-ALIGN3 (private repo) claimed and running in this session; queued left 0; standby: account-3 orchestrator last commit 07:03 UTC, no takeover
 2026-10-06 07:40 | R10-SUR693 worker | claim na-suriname-map-1781 gap 6: inv. 373 scan 0693 cipher + interlinear pair, cap 4, box ends 08:40 UTC (80% 08:28), for LANE LANE-RUN10-account-2
 2026-10-06 07:41 | R10-JANS26B | claim: na-janssens-java-1811 invnr 26 page-through scans 59-191, cap 4, box end 08:41 UTC, for LANE LANE-RUN10-account-2
+2026-10-06 07:41 | R10-CLIN3868 (worker) | claim pro3055-clinton-1779: 3868 cipher columns p.382 cols 3-6 + pp.383-384 vs read decipherment on 1778 book key; cap 5, box end 08:56 UTC (80% 08:41) -- for LANE LANE-RUN10-account-2
