@@ -9385,3 +9385,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 07:39 | FER126-ALIGN3 (account 4, session_01PpZtGZsbseHrXViC8rzExA) | claim: FER126-ALIGN3 bne20211-ferdinand-1478, Opus reader on PREREG-ALIGN3 (pushed), 8 calls at ~$0.8/call, cap $8 box 60 min
 2026-10-06 07:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 07:39: spawned 0, queued left 0 (autofill: default lane < 12 h)
 2026-10-06 07:40 | R10-ROELL10 worker | claim: roell-vandedem-1809, NA inv. 990 (Van Dedem to Testa) early Feb 1809, cap 2.5, box end 08:20 UTC, for LANE LANE-RUN10-account-2
+2026-10-06 07:40 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 07:34 UTC (handled 07:40): spawned 0; FER126-ALIGN3 (private repo) claimed and running in this session; queued left 0; standby: account-3 orchestrator last commit 07:03 UTC, no takeover
