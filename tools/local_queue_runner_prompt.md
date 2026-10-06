@@ -31,7 +31,10 @@ your browser:
    log in to archive.org, academia.edu, JSTOR or a library site with the owner's own accounts in the browser (owner's
    decision, 26 Sept 2026); never write a credential into any file, pull request or reply; return an archive.org loan
    when done; never bypass a captcha or block page; if a page blocks you, record `blocked: <what you saw>` as the
-   answer and move on. Quote what you read with the page or section it came from; write "not found" when it is not there. A "no items"
+   answer and move on. A "Verify you are human" box is for the owner to tick, never you: stop and ask him to tick it in
+   your browser pane. If it comes back after he ticks it (a loop -- BNE's Cloudflare does this to the Claude Code browser,
+   6 Oct 2026), stop trying there: ask him to take the shots in his own Chrome with the Claude extension, saving them to
+   his Downloads folder, then you copy them from Downloads into the private repo and push. Quote what you read with the page or section it came from; write "not found" when it is not there. A "no items"
    answer from an image portal (Digital Bodleian, Gallica, a library's viewer) is not the answer on its own: open the
    holding catalogue's own record for the shelfmark (for the Bodleian, the Archives and Manuscripts catalogue at
    archives.bodleian.ox.ac.uk / marco.ox.ac.uk) and quote its availability flag ("Not available online" or the
