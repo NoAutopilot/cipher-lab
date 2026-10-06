@@ -141,3 +141,38 @@ Parallel action (NOTES.md): "While L39 is pending, read the 1871 Russell and Pre
 Library, ...)" -- read the NOTES.md sentence in full for what to look for (MS. Carte 50 fols. 439-440 key sheet; Ormond-Arran 1678 cipher).
 Find it on archive.org / HathiTrust EF / Google Books API, grep the full text for Carte 50, cipher/cypher, Arran, 1678, quote hits with page.
 Update NOTES.md; search result only.
+
+## Wave 3 (spawned as wave 2 slots free). Intake gate output (03:1x-03:3x UTC) pasted per job. Lookup jobs: no vision subagent.
+
+### R8-ROELL5 -- roell-vandedem-1809, NA inv. 92 scans 176-230 for a minute to Van Dedem at Vienna (cap 3.5, box 50 min)
+Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Named next (R8-ROELL4, 6 Oct 03:23, commit 7d42805af): Van Dedem left Bucharest 31 Jan 1809 for Vienna, so the target letter fits a letter to
+him on the road; read NA inv. 92 scans 176-230 for a minute/outgoing letter to Van Dedem (Jan-Mar 1809) and any cipher or key item. Same
+method and TSV columns as R8-ROELL4 (na20108/), service.archief.nl >= 1.5 s apart, <= 70 requests. Search result only.
+
+### R8-KARL3 -- ra-karlxi-fullmakt-1677, be-api full-text search of Actes/Dumont volumes (cap 2, box 30 min)
+Intake gate: `ra-karlxi-fullmakt-1677: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Named next (R8-KARL2, 6 Oct 03:20, commit f37041348): "Internet Archive full-text search of Actes/Dumont volumes (~$0.5)". Identify the IA
+items for Dumont's Corps universel diplomatique (vol. VII) and the Actes et memoires de Nimegue volumes; be-api fts per item for Naas /
+1677 / plein-pouvoir / Charles XI terms (1.5 s apart, positive control: a term known to be in the volume). Quote hits; update gaps / Verdict.
+
+### R8-NLA -- nla-heinrich-braunschweig-1519, Arcinsys Niedersachsen re-test (cap 2, box 30 min)
+Intake gate: `nla-heinrich-braunschweig-1519: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Action that depends on nobody (NOTES.md): "GAPS129 step (3), the Arcinsys Niedersachsen re-test for NLA BU L 1 Nr. 548/562 (online
+availability flag, quoted, before any copy order), ~$0.5". Read each record on arcinsys.niedersachsen.de (browser tool if JS-rendered),
+quote the availability/digitisation flag and URL; if digitised, record the viewer/IIIF URL and fetch one image to scratch to confirm.
+Update NOTES.md and REQUEST.md only as facts; do not file ASKS rows.
+
+### R8-CELS -- ra-celsing-sillen-1755, archive.org meddelandenfrns05riksgoog check (cap 2, box 30 min)
+Intake gate: `ra-celsing-sillen-1755: blocked (line 3) -- already terminal, nothing to gate`.
+Action that depends on nobody (NOTES.md): "check archive.org availability of meddelandenfrns05riksgoog and, if its full text is open, grep its
+_djvu.txt for Celsing/Sillen to read the accession entry naming the Riksarkivet volume; only if lending-only does the read become a
+person's". Do that (metadata API, then _djvu.txt or be-api fts); quote the entry with its page context; update NOTES.md / REQUEST.md
+volume number as a fact.
+
+### R8-VELL -- ra-vellingk-1713, htrc_ef_headwords for 'Vellingk' (cap 2.5, box 40 min)
+Intake gate: `ra-vellingk-1713: blocked (line 3) -- already terminal, nothing to gate`.
+NOTES.md named step: "run tools/htrc_ef_headwords.py for 'Vellingk' against Sveriges traktater / Carlson's Karl XII letters (HTRC EF API
+works from the cloud)". Read the tool's --help; find the volumes' htids via the HathiTrust bibliographic API; run it (>= 1.5 s apart);
+report the pages carrying Vellingk / chiffre terms per volume, and whether any is full view (IA or Google Books copy) so a page can be read.
+Update NOTES.md; search result only.
