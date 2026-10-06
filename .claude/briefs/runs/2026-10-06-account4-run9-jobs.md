@@ -96,3 +96,31 @@ already run, then run it and write a dated "## R9-SRCH" section in that folder's
 July-Aug 1747 Waldeck/Cronstrom despatches to Cumberland; (2) sp78-doncaster-1621: CSP Venice vol. 17 for Doncaster's Sept 1621
 audiences; (3) sp87-newcastle-1743: be-api "Munchberg" across HMC reports and Yorke's Life of Hardwicke; (4) sp36-stquentin-pretender-1743:
 be-api "St. Quentin" + "Chevalier" across published Stuart Papers selections (HMC Stuart Papers). Search results only; no decode.
+
+## Wave 2 (spawned as wave-1 slots free, from 06:0x UTC 6 Oct). Intake gate output (05:40 UTC) pasted per job.
+
+### R9-UNTB2 -- untersberg-code symA reference class from the illustrated openings (Opus; cap 3.5, box 70 min)
+Intake gate: `untersberg-code: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Folder's named next step (R8-UNTB, NOTES.md end): find a crossed-descender p (the F4 reference class) in Latin-script words and painted
+captions on openings 12-28 (opening 27's tablets first, 1225 px on disk, then native). Screen with 400 px thumbnails first; crop only leaves
+with Latin script (crop step pasted; Salzburg Museum IIIF, >= 2 s apart, descriptive UA). Reuse R8-UNTB's PREREG resolution control (3
+R instances required); if it now passes, run the symA tally exactly as pre-registered and keep L6 tok3 apart (R8-UNTB observation 1). If
+no crossed-descender p exists in the manuscript, log F4 untestable within this manuscript and add it to the paleographer crop packet
+(SO-UNTERSBERG-LEADS item 2) as a NOTES.md line; nothing else. Rule 4 counts.
+
+### R9-ZESCH -- zeschau-seebach-1841 word-segmentation objective on pooled R5005-R5007 (Opus; cap 4, box 70 min; disk only)
+Intake gate: `zeschau-seebach-1841: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder's Verdict cheapest next (RUN4-WAITBF): first check Bourdeau's stated next step for this item (dbourdeau/cyphersolver, sparse clone,
+grep only; GAPS185 duplicate-effort risk) -- if he has run or published it, stop and report. Otherwise: a word-segmentation objective
+(French, era-matched corpus from tools/data if one exists -- say which) on the pooled R5005-R5007 syllabary ciphertext, with the matched
+control FIRST (synthetic French, same N, same symbol inventory size and syllabary design, >= 3 seeds; gate pre-registered in
+PREREG-R9-ZESCH.md, pushed before scoring; check the control is not already at ceiling and CAN fail). Control below gate: stop, "non-test
+at this N", target not run. GAPS202's 4-gram annealer is retired (rule 3 third-attempt clause): this must be a genuinely different
+objective, say how. Update Remaining gaps / Escalation; gaps_check.py pass.
+
+### R9-LIPP -- ss-radio-lippert-1944 Wayback CDX retry (Sonnet; cap 1.5, box 30 min)
+Folder's named next step: test `curl -sS -o /dev/null -w "%{http_code}" https://web.archive.org/` first; if it answers, run the CDX search
+for `ebay.de/itm/*284276746819*` and the seller's other items (one request at a time, >= 2 s apart, stop on reset/429; one retry after a
+pause), fetch any capture with the `if_` form, and record what the listing shows (images, text, date) in a dated NOTES.md section. If
+web.archive.org still resets, append one LOCAL-QUEUE.tsv row for it in the file's format (grep for an existing row first). Search results
+only.
