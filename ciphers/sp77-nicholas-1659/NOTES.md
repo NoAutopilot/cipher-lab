@@ -151,3 +151,16 @@ Waits on: the TNA page copy of SP 77/32/289 (REQUEST.md; consolidated TNA batch,
 
 Requests this pass (shared with the sibling targets where noted): archive.org 5 (advancedsearch 2, djvu.txt 3),
 github.com 2 shallow clones (shared), WebSearch 2 for this target.
+
+## Index grep for St Sebastian agents and aliases (R7-NICH, 6 Oct 2026)
+
+Step run: the 3 Oct "While waiting" item. Texts fetched once from IA (`_djvu.txt`) and grepped by script: Cal. Clar. iv (`calendarofclaren04bodluoft`) and CSPD 1659-60 (`sim_great-britain-public-record-papers-domestic-commonwealth_1659-1660`). Search terms: Sebastian, Fuentarabia/Fontarabia, Holder, Wilson, Talbot, Marces, "L. R."/"Sir L.", Nicholas (Aug 1659 window).
+
+Found (none is a plaintext of f.289, so no crib):
+- CSPD 1659-60 SP 18/204 (Aug 1659): Col. Bamfield writes to "M. D'Arquibol, alias Father Talbot, at Peter Wilson's, St. Sebastian's" and to "Peter Wilson, alias Father Talbot" (Wilson is a cover name for Peter Talbot; the house is a royalist forwarding address at St Sebastian). The index lists "St. Sebastian's, Spain" at pp. 57, 65, 126, 446, 457, 558; "News of letters from" pp. 82, 126.
+- Cal. Clar. iv: Thomas Holder is the agent at St Sebastian forwarding Bennet's letters (Sept-Oct 1659 entries); Bennet to Hyde from Fuentarabia nos. 3-8 (2/12-27 Aug/6 Sept), Bennet's no. 4 of 5/15 Aug says Talbot arrived at Fuentarabia two days before. Nicholas to Marces 13/23 Aug is cited in Cal. Clar. iv's introduction (p. xxxvi region, line 461 of the djvu text).
+- Candidate recipients for "Sir L.R." at St Sebastian: none located. No "Sir L.R.", "L. R." or a knight with those initials appears in either index or the Aug 1659 entries; the St Sebastian residents named are Holder, Talbot (alias Wilson/D'Arquibol), Bennet (at Fuentarabia). "L.R." may be a cipher alias or the catalogue's own initialism; unresolved.
+
+Not found: any Nicholas letter to St Sebastian dated 6/16 Aug in either calendar; any named "Sir L.R."; any key naming him. Status unchanged: open. Next step stays the TNA page copy of SP 77/32/289 (ASKS row 73); a cheap further step is reading Bennet's own Aug 1659 letters (Cal. Clar. iv pp. 310-316) for "Sir L." as a cover name, not run here.
+
+Requests this pass: archive.org 2 (djvu.txt), no other host.
