@@ -5104,6 +5104,33 @@ Open for the next i-r lane: (1) nla-heinrich check-solved/verifier call on the G
 (3) rousseau same-class known-answer re-run ~1; (4) oldenbarnevelt-brederode full-size Marburg/Munich keys ~3; (5) karlxi 1680 Actes page read ~1;
 (6) vellingk read owgPAAAAYAAJ "Wellingk ... Chiffre" page ~1; (7) lope-hurtado LOCAL-QUEUE row for BNE 20212/27 images.
 
+## LANE LANE-RUN8-account-4 handoff (session_01WJDfJbsRjgvoazG3ivjfVQ, account 4), 6 October 2026 (closed 05:0x UTC: s-z backlog worked, lane about 41.7 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-run8-jobs.md. WORK-QUEUE row LANE-RUN8-account-4: RUN7 named next
+steps in s-z, then tools/next_steps.py runnable / parallel rows (S, M), folders s-z. Gate 0a met in-session (account-4 sweep 5 Oct). VERIFY-BACKLOG
+had no s-z row. Manteuffel (sachsstaatsarchiv-, initial s) was also named in LANE-RUN8-account-2's claim; flagged in ROOM 03:42, no answer and no
+account-2 worker by 04:17, so taken here. 18 workers in 4 waves (11 Opus, 7 Sonnet; all D, none over cap); workers 35.32 + orchestrator 6.34 = 41.66
+(get_session). five_hour `allowed` throughout. No N-class changed; no status line changed except whitworth-1707 open -> blocked (unread editions named).
+- thurloe-printed: R7-THURP10 propagated (R8-THURV, N0 unchanged, P10 L10 C12 M2). P25-P28 re-paired from page images (R8-THUR25): C 177/240 (OCR) ->
+  C 366/368; P27/P28 "different sub-key" was an OCR shift; verifier R8-THURV2 re-ran byte-identical, 10/10 crops match, AUDIT.md revised (N0 x4, D3 99.5%).
+- sachsstaatsarchiv-manteuffel-1712: 0527 run 7 = code 848 (two reads agree), so 898 l'Empire licensed M, pooled gate PASS 0.750 vs p95 0.167 (R8-MANT);
+  frame 0530 (ff.425v-426) transcribed, 44 tokens, per-leaf gate HELD, key unchanged, U 137 (R8-MANT530). f.410 reading unchanged, still D1.
+- Non-tests with controls: zeschau-seebach R5008 crib test (control 0.465 < 0.80); siena no. 19 vs 13/16 (power 0.78 < 0.80); untersberg symA F4
+  (control found no crossed-descender p). yogtze spec test 3 anagrams non-discriminating -> lexical family exhausted.
+- siena no. 7 glosses on native crops: 7 C, 4 M, 3 false positives (R8-SIENA7). wvo-hessen 1111 read (41 lines, plague/family news, no crib named).
+- Searches (search results only): sp77-nicholas Cal. Clar. iv pp.310-316 nothing; taurello Sanuto XLVI 0, XLII Taurello = 1526 envoy; sp53-22-f52
+  Tomokiyo unchanged; sp81-roe SP 81/44/88 names no cipher; wallis Thurloe 2-5 nothing; sp36-ball no SP 106 item; sp8-ehrenstein Arcinsys nothing;
+  vanspaen no NA codebook (Kabinet fonds in AN Paris); salvago 0/31 Atti vols; sp87-brunswick Westphalen snippets only; sp90-raby Preuss 1897 on
+  Google Books UfnriIriq9UC (PDF 429, unread).
+Open for the next s-z lane:
+1. manteuffel: pooled aligner across 0527-0530 (~2) or frame 0526 (~4.5); f.410 needs a clean single-code gloss for D2.
+2. thurloe-printed: index.tsv P27/P28 cipher_system cells still carry the OCR-era "different sub-key" note (R8-THURV2 flag), ~0.3.
+3. siena no. 7: homophonic fit with the 7 C glosses as anchors (~3); no. 15 R4764 shape concordance (~3).
+4. wvo-hessen-1564: enclosure sorter (preflight + account-3 publish) then crib-placement test with control (~1.5 + 3).
+5. sp90-raby-1704: Preuss 1897 pp.20-30, 61 -- LOCAL-QUEUE row (Google Books page view blocked from the cloud).
+Process note: tools/room.py --push twice skipped non-ROOM paths and once left LEDGER.md in a stash conflict; commit shared files directly and
+check `git status` after each push.
+
 ## LANE LANE-RUN7-account-1 handoff (session_017EaoA9jsirqf8k8M7LCMwt, account 1), 6 October 2026 (closed 02:4x UTC: three waves, lane about 53 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run7-jobs.md. Gate 0a clear (SESSION-SWEEP-account-1 done
