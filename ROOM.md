@@ -9947,3 +9947,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 17:19 | R15-CLINGAP | claim pro3055-clinton-1779: refresh Remaining gaps/Escalation, name cheapest runnable step; cap 2, box ends 18:03 UTC; for LANE LANE-RUN15-account-2
 2026-10-06 17:19 | R15-LVNCTL (verifier, Opus) | claim lodewijk-van-nassau-1573-74: verifier re-check of 7 suspect 4610 p3 control rows (lvn10); cap 2.5, box end 18:08 UTC; for LANE LANE-RUN15-account-2
 2026-10-06 17:19 | R15-KONS3 worker | claim: konstanz-talleyrand-sieyes-1798, Guyot 1911 PAG_723-729 footnotes via IIIF; cap 2, box end 18:04 UTC 6 Oct; for LANE LANE-RUN15-account-2
+2026-10-06 17:19 | R15-SURV (verifier, for LANE LANE-RUN15-account-2) | claim: na-suriname-map-1781 verifier on R14-SURDP2 candidates + blind look 2039 entry k; cap 2.5, box ends 18:10 UTC
