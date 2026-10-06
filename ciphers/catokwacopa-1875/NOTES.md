@@ -310,10 +310,66 @@ Pre-registered in PREREG-GAPS211.md (commit 060e474f, pushed before any statisti
   any reading; nothing graded (rule 4 n/a).
 - Reproduce: `python3 gaps211_content.py --check` (content_test_gaps211.json, about 13 s).
 
+## R12-CATOK23 (6 Oct 2026, account 2): spec tests 2 and 3 with matched synthetic controls
+
+Worker R12-CATOK23, Opus 5.5, 11:20-12:0x UTC. Pre-registered in PREREG-CATOK23.md (commit 35a4a0f27, pushed before any
+statistic). Our own script `catok23.py` (fit model and the five frames from Bourdeau's cyphersolver catokwacopa, MIT,
+read not copied); output `catok23.json`. Credit: frames and the published readings are Bourdeau's, Estes/"Dave"'s and
+Krajcovic's; line division Ernst's.
+
+Our lists (built 6 Oct 2026 from open sources; derived files on disk: catok23_names.tsv.gz, catok23_vocab.tsv.gz,
+catok23_stream.txt.gz):
+- Names, 17,973: headword surnames of Foster, *Alumni Oxonienses 1715-1886* vols 1-4 (IA alumnioxonienses01univuoft,
+  02univuoft, 03univ, 04univuoft; 17,221 surnames) plus proper nouns from those, *The Historical Register of the University
+  of Oxford* (1888, IA historicalregist00univuoft) and the ten novels below. OCR noise kept (it can only add fits).
+- Vocabulary, 19,743 words (count >= 3) from ten Project Gutenberg novels of 1853-1875: Tom Brown at Oxford (26851), Verdant
+  Green (4644, 40338), Middlemarch (145), Bleak House (1023), Barchester Towers (3409), Our Mutual Friend (883), The Way We
+  Live Now (5231), Great Expectations (1400), A Tale of Two Cities (98).
+
+**Test 2 (frames; names fitting exactly with omissions <= the published reading's; controls 50 null + 50 positive lines per frame):**
+
+| line | frame | fits under our list | null false-unique / any-fit | power | verdict |
+|---|---|---|---|---|---|
+| 8 | I ATTENDED ___ LECSURS | CONINGTON only | 0.04 / 0.04 | 0.86 | forced, control-backed |
+| 25 | I ATTENDED ___ LECSURS | JOWETT, JOWITT | 0.10 / 0.40 | 0.54 | not forced (JOWITT, an Alumni surname, fits equally) |
+| 24 | TOLD ___ | SHIRLEY only | 0.02 / 0.02 | 0.84 | forced, control-backed |
+| 15 | ___ TOLD US TO ADD A SECOND MOTTO | CONINGTON only | 0.08 / 0.24 | 0.68 | forced, control-backed |
+| 10 | ___ SCHOLARSHIP EXAMINATION | HERTFORD, THETFORD | 0.02 / 0.78 | 0.18 | not forced; control fails power (12 omissions let 78% of null lines admit a name) |
+
+So three of Bourdeau's five uniqueness results survive an independent 17,973-name period list with a passing control;
+two (JOWETT, HERTFORD) do not stay unique under our list. This tests the slot given the frame: the frame words are the
+readers' choice and are not tested here.
+
+**Test 3 (lines 9, 12, 23, 26, 29; uniqueness = top reading leads the next by >= 3.0 nats; 20 synthetic lines per line):**
+
+| line | letters | target top reading (margin to 2nd) | control unique / correct-unique / planted in top 20 | verdict |
+|---|---|---|---|---|
+| 9 | 12 | omit stern paul (0.13) | 0.00 / 0.00 / 0.10 | untestable by this method at this length |
+| 12 | 29 | and cast self clutching dozen same some to (0.43) | 0.00 / 0.00 / 0.00 | untestable |
+| 23 | 48 | with doubt portion for of got first me second in harsh of seven mr nor (0.01) | 0.00 / 0.00 / 0.05 | untestable |
+| 26 | 12 | moat visit purl (0.65) | 0.00 / 0.00 / 0.05 | untestable |
+| 29 | 18 | retire followed both marie (0.83) | 0.00 / 0.00 / 0.10 | untestable |
+
+None of the five is unique, and the method never returned a unique reading on any of 100 synthetic period-English lines
+of the same length and 3-12-letter budget (the planted phrase reached the top 20 in 0-10%). By the registered gate this is
+"untestable by this method (unigram exact-fit, 19,743-word vocabulary) at these lengths", not a negative and not a
+confirmation of Bourdeau's "not decided by the letters": the control shows that a unigram exact-fit search cannot single out
+the plaintext of a random period-English line under this omission rule at all. Per rule 3's third-attempt clause this
+instrument (unigram exact-fit) should not be re-tuned; the next instrument is a phrase-level LM search (QUEUE.md row 18) or
+new material.
+
+Grades (rule 4), line slot names only: CONINGTON (line 8), SHIRLEY (24), CONINGTON (15): S conditional on the
+published frame (3 tokens); JOWETT (25), HERTFORD (10): M (2 tokens); every frame word and lines 9/12/23/26/29: not read
+here. No H or C: cryptanalytic result. Judge not run (no continuous reading).
+
+Rule 7: `python3 catok23.py --check` (about 30 min) re-runs both tests; `catok23.py build --src DIR` re-derives the lists
+from the seven fetched files. Requests: archive.org 7 (2 advancedsearch, 5 djvu text), gutenberg.org 12 (2 search, 10 texts),
+>= 1.5 s apart, all 200. Vision 0, subagents 0.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured, because this repo holds no reading of its own (no key or plaintext, only the segmented ciphertext and the pairing test of step NEXT-CAT, 2 Oct 2026). The line structure is now measured. pairs.tsv has 29 pairs, 24 of them letter lines, and Bourdeau line k = Ernst [k] (k <= 10), [10a] (k = 11), [k-1] (k >= 12). Bourdeau's catokwacopa/NOTES.md (snapshot sources/cyphersolver/2026-10-02/catokwacopa/, sections 4-5) gives 7 lines decided by ordinary vocabulary, 5 name-frame lines that admit a unique name, and 5 lines not decided by the letters (his 9, 12, 23, 26, 29 = Ernst [9], [11], [22], [25], [28]).
-- Bourdeau's lines 9, 12, 23, 26, 29 (Ernst [9], [11], [22], [25], [28], measured in pairs.tsv, step NEXT-CAT), both ad halves of each - blocker: not-attempted; no published reading is forced on these lines. Bourdeau's line-29 Latin search had only a positive control (line 17 -> QUI FIT) and no matched uniqueness control. Spec cheap test 3 never ran (specs/catokwacopa-1875.json). So "the omission rule fits almost anything" is untested here and cannot yet be graded too-short; next: run spec test 3 on our own copy (pairs.tsv, now on disk). Do an exact-fit search of the five lines against an enlarged period vocabulary under the 3-12-letter omission budget, with a matched control of synthetic English lines of the same length and budget, reporting both rates. As a second instrument, run QUEUE.md row 18's phrase-level LM search on line 23 with Bourdeau's positional prior (cyphersolver catokwacopa/search.py, MIT, cited), ~$5
-- Lines with published but unforced readings (Bosbach's DYING DECLARATION; Estes/Dave's SUM TERM, 1853, BALLIOL; Ernst's 2018 [12]-[27] glosses, e.g. "[13] MOPT A PURLY ... IN COLLEGE", "[25] MOISTANT PURL", comment #26) - blocker: not-attempted; this repo has re-derived none of them, and spec cheap test 2 (re-derive the exact-fit name search over 1,645 period proper nouns) is unrun; next: run spec test 2, widened to names plus vocabulary from our own list, using gap 1's synthetic control. Grade each line forced (S) or guessed (M) per rule 4, and record where both reads agree, ~$3
+- Bourdeau's lines 9, 12, 23, 26, 29 (Ernst [9], [11], [22], [25], [28], measured in pairs.tsv, step NEXT-CAT), both ad halves of each - blocker: not-attempted; 6 Oct 2026 (R12-CATOK23): spec test 3 ran -- no line unique, and the unigram exact-fit method's own control is 0/100 unique on synthetic period lines, so the instrument is retired for these lines (untestable at these lengths, not a negative); the remaining step is the phrase-level LM search below. Earlier: no published reading is forced on these lines. Bourdeau's line-29 Latin search had only a positive control (line 17 -> QUI FIT) and no matched uniqueness control. Spec cheap test 3 never ran (specs/catokwacopa-1875.json). So "the omission rule fits almost anything" is untested here and cannot yet be graded too-short; next: run spec test 3 on our own copy (pairs.tsv, now on disk). Do an exact-fit search of the five lines against an enlarged period vocabulary under the 3-12-letter omission budget, with a matched control of synthetic English lines of the same length and budget, reporting both rates. As a second instrument, run QUEUE.md row 18's phrase-level LM search on line 23 with Bourdeau's positional prior (cyphersolver catokwacopa/search.py, MIT, cited), ~$5
+- Lines with published but unforced readings (Bosbach's DYING DECLARATION; Estes/Dave's SUM TERM, 1853, BALLIOL; Ernst's 2018 [12]-[27] glosses, e.g. "[13] MOPT A PURLY ... IN COLLEGE", "[25] MOISTANT PURL", comment #26) - blocker: not-attempted; 6 Oct 2026 (R12-CATOK23): spec test 2 ran on a 17,973-name list of our own -- CONINGTON (8, 15) and SHIRLEY (24) stay forced with passing controls (S, conditional on the frame); JOWETT (JOWITT also fits) and HERTFORD (THETFORD also fits; control power 0.18) do not; the frame words and the non-name lines are still unre-derived here, next: re-score the exact frames themselves with a frame-word control, ~$3. Earlier: this repo has re-derived none of them, and spec cheap test 2 (re-derive the exact-fit name search over 1,645 period proper nouns) is unrun; next: run spec test 2, widened to names plus vocabulary from our own list, using gap 1's synthetic control. Grade each line forced (S) or guessed (M) per rule 4, and record where both reads agree, ~$3
 - Further ads by W.: any 1875 ads after April, and any 1879 "FACT or FICTION" ads beyond the four on file. Ernst (24 Jul 2018 #1, #7) expects more, and no full 1879 issue search is on record. Filed so far: 27 Mar 1875 (sibling-1875-03-27.txt, step A2-CAT) and the four 1879 ads with two witnesses each (siblings-1879-fact-or-fiction.txt, step A2-CAT2, 2 Oct 2026). The 1879 attribution to W. is Ernst's, from placement, and is not established here. - blocker: not-attempted; the issue search and a page-image check of every filed sibling need BNA, which is login-gated from the cloud (the L13 route); next: file a LOCAL-QUEUE.tsv bna-search row beside L13 (The Standard p. 1 col. 2, May-Dec 1875 and Jan-Dec 1879, "W." and "FACT or FICTION", plus images of the five filed sibling ads), ~$0.5
 - Ciphertext of both ads checked against the original Evening Standard issues of 8 and 20 May 1875 (BNA/newspapers.com) - blocker: waiting-on LOCAL-QUEUE.tsv row L13 (bna-verify, owner's desk runner, status queued); BNA and newspapers.com are login-gated from the cloud (LANE CX2 above). This does not block the gaps above, because the scienceblogs/Gaffney-Gluecklich scan and Ernst's BNA-checked text already agree 72/72 (ciphers/pollaky-1865-1875/NOTES.md, Test 2)
 
@@ -322,10 +378,10 @@ Read so far: unmeasured, because this repo holds no reading of its own (no key o
 - [x] clear-pages: the only clear text is the tail of ad 4 ("This will be intelligible if read in connection with my communication published in this column on the 8th inst.", ciphers/pollaky-1865-1875/ciphertext.txt AD 4). It is the pairing instruction, which every reading already uses. No clear copy or period decipherment of the plaintext is known.
 - [n/a] known-keys: the design has no key. Each phrase is split into order-preserving halves across the two ads, with 3-12 letters dropped per line, so there is no key or nomenclator to try. KEY-OFFICES.tsv and KEY-DESIGN.tsv have no row for this target, and design_prior.py's code and nomenclator families do not fit this design.
 - [x] print: read Cipherbrain's Top-50 post 8 with its 48 comments (on disk, sources/schmeh/posts/08-catokwakopa.txt), Bourdeau's catokwacopa/NOTES.md (commit 24 Sept 2026), Aymeloglu's SHORTLIST.md lines 81 and 148, and a web search for model-solve announcements (23 and 25 Sept 2026). None gives a unique plaintext. Not read: the newspaper issues (L13) and the 2015/2018 thread comments (folded into siblings).
-- [ ] key-rebuild: the segmented line pairs are now on disk (pairs.tsv, step NEXT-CAT, 2 Oct 2026; pairing test 0/100,000 vs a control with power 0.80-1.00). We have run no forced-fit, vocabulary or LM search, and none appears in NOTES.md, ROOM.md or LEDGER.md. Bourdeau's exact-fit name search and his line-29 Latin search are his work, not re-derived, and neither has a matched uniqueness control. Planned: spec tests 2-3 with a synthetic-line control, plus the line-23 LM search from QUEUE.md row 18 (gaps 1-2). 3 Oct 2026 (GAPS205): content-axis pairing test T' run: target p 0.254 vs control power 0.95-1.00 and FPR 0.05, so pairs are not detected by letter content at 0-3 control omissions; the controls do not yet bracket the 3-12 budget. 4 Oct 2026 (GAPS211): bracketed: at 3-12 control omissions T' is still valid (power 0.65/0.45, FPR 0.05) and the target p 0.254 is still not detected.
+- [ ] key-rebuild: 6 Oct 2026 (R12-CATOK23): spec tests 2-3 ran (3/5 name frames forced and control-backed under our own list; the five unread lines untestable by unigram exact-fit, control 0/100 unique). Earlier: the segmented line pairs are now on disk (pairs.tsv, step NEXT-CAT, 2 Oct 2026; pairing test 0/100,000 vs a control with power 0.80-1.00). We have run no forced-fit, vocabulary or LM search, and none appears in NOTES.md, ROOM.md or LEDGER.md. Bourdeau's exact-fit name search and his line-29 Latin search are his work, not re-derived, and neither has a matched uniqueness control. Planned: spec tests 2-3 with a synthetic-line control, plus the line-23 LM search from QUEUE.md row 18 (gaps 1-2). 3 Oct 2026 (GAPS205): content-axis pairing test T' run: target p 0.254 vs control power 0.95-1.00 and FPR 0.05, so pairs are not detected by letter content at 0-3 control omissions; the controls do not yet bracket the 3-12 budget. 4 Oct 2026 (GAPS211): bracketed: at 3-12 control omissions T' is still valid (power 0.65/0.45, FPR 0.05) and the target p 0.254 is still not detected.
 - [x] image-check: ciphers/pollaky-1865-1875/NOTES.md Test 2. Two blind passes over the scienceblogs/Gaffney-Gluecklich scans agree 78/80, and both disagreements were settled from the image (caselcluchozamot S; Ngtndusdcndo M, low-resolution scan). The result matches Ernst's BNA-checked ads.py 72/72 letter-words with digits and dashes stripped; Hrsclam and 138 match Ernst, against Schmeh's printed Hfsclam and 139.
 - [ ] retry: nothing to rerun yet, because key-rebuild has not run. Planned: after spec tests 2-3, re-score every line pair (the five unread lines and the unforced lines) with the extended vocabulary and regrade S/M per rule 4.
-Verdict: keep going: 3 internal gaps; cheapest next: file a LOCAL-QUEUE.tsv bna-search row beside L13 for The Standard p. 1 col. 2 (May-Dec 1875, 1879) and page images of the five filed sibling ads (gap 3), ~$0.5; then spec tests 2-3 with a synthetic-line control (gaps 1-2), ~$5. GAPS211 (4 Oct 2026): T' re-run with controls at the published 3-12-letter omission budget: target p 0.254 vs power 0.65/0.45 at p < 0.001 (0.90/0.95 at p < 0.05), FPR 0.05: valid, not detected at the design's budget (GAPS205's 0-3 negative now bracketed)
+Verdict: keep going: 3 internal gaps; cheapest next (6 Oct 2026, after R12-CATOK23): file the LOCAL-QUEUE bna-search row (gap 3), ~$0.5; then the line-23/unread-lines phrase-level LM search with a matched synthetic control (QUEUE.md row 18; the unigram instrument is retired), ~$5. Earlier cheapest next: file a LOCAL-QUEUE.tsv bna-search row beside L13 for The Standard p. 1 col. 2 (May-Dec 1875, 1879) and page images of the five filed sibling ads (gap 3), ~$0.5; then spec tests 2-3 with a synthetic-line control (gaps 1-2), ~$5. GAPS211 (4 Oct 2026): T' re-run with controls at the published 3-12-letter omission budget: target p 0.254 vs power 0.65/0.45 at p < 0.001 (0.90/0.95 at p < 0.05), FPR 0.05: valid, not detected at the design's budget (GAPS205's 0-3 negative now bracketed)
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 

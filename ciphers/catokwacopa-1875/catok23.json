@@ -1,0 +1,479 @@
+{
+ "prereg": "PREREG-CATOK23.md",
+ "n_names": 17973,
+ "n_vocab": 19743,
+ "test2": [
+  {
+   "line": 8,
+   "frame": "I ATTENDED {} LECSURS",
+   "published": "CONINGTON",
+   "published_omissions": 3,
+   "fits_le_base": [
+    "CONINGTON(3)"
+   ],
+   "fits_le_base_plus2": 1,
+   "fits_le_base_plus2_sample": [
+    "CONINGTON(3)"
+   ],
+   "forced_under_our_list": true,
+   "control": {
+    "null": {
+     "n": 50,
+     "any_fit": 0.04,
+     "unique": 0.04,
+     "planted_unique": 0.0
+    },
+    "pos": {
+     "n": 50,
+     "any_fit": 1.0,
+     "unique": 0.86,
+     "planted_unique": 0.86
+    }
+   },
+   "control_backed": true
+  },
+  {
+   "line": 25,
+   "frame": "I ATTENDED {} LECSURS",
+   "published": "JOWETT",
+   "published_omissions": 4,
+   "fits_le_base": [
+    "JOWETT(4)",
+    "JOWITT(4)"
+   ],
+   "fits_le_base_plus2": 2,
+   "fits_le_base_plus2_sample": [
+    "JOWETT(4)",
+    "JOWITT(4)"
+   ],
+   "forced_under_our_list": false,
+   "control": {
+    "null": {
+     "n": 50,
+     "any_fit": 0.4,
+     "unique": 0.1,
+     "planted_unique": 0.0
+    },
+    "pos": {
+     "n": 50,
+     "any_fit": 1.0,
+     "unique": 0.54,
+     "planted_unique": 0.54
+    }
+   },
+   "control_backed": false
+  },
+  {
+   "line": 24,
+   "frame": "TOLD {}",
+   "published": "SHIRLEY",
+   "published_omissions": 1,
+   "fits_le_base": [
+    "SHIRLEY(1)"
+   ],
+   "fits_le_base_plus2": 2,
+   "fits_le_base_plus2_sample": [
+    "SHIRLEY(1)",
+    "SHRIGLEY(2)"
+   ],
+   "forced_under_our_list": true,
+   "control": {
+    "null": {
+     "n": 50,
+     "any_fit": 0.02,
+     "unique": 0.02,
+     "planted_unique": 0.0
+    },
+    "pos": {
+     "n": 50,
+     "any_fit": 1.0,
+     "unique": 0.84,
+     "planted_unique": 0.84
+    }
+   },
+   "control_backed": true
+  },
+  {
+   "line": 15,
+   "frame": "{} TOLD US TO ADD A SECOND MOTTO",
+   "published": "CONINGTON",
+   "published_omissions": 7,
+   "fits_le_base": [
+    "CONINGTON(7)"
+   ],
+   "fits_le_base_plus2": 1,
+   "fits_le_base_plus2_sample": [
+    "CONINGTON(7)"
+   ],
+   "forced_under_our_list": true,
+   "control": {
+    "null": {
+     "n": 50,
+     "any_fit": 0.24,
+     "unique": 0.08,
+     "planted_unique": 0.0
+    },
+    "pos": {
+     "n": 50,
+     "any_fit": 1.0,
+     "unique": 0.68,
+     "planted_unique": 0.68
+    }
+   },
+   "control_backed": true
+  },
+  {
+   "line": 10,
+   "frame": "{} SCHOLARSHIP EXAMINATION",
+   "published": "HERTFORD",
+   "published_omissions": 12,
+   "fits_le_base": [
+    "HERTFORD(12)",
+    "THETFORD(12)"
+   ],
+   "fits_le_base_plus2": 2,
+   "fits_le_base_plus2_sample": [
+    "HERTFORD(12)",
+    "THETFORD(12)"
+   ],
+   "forced_under_our_list": false,
+   "control": {
+    "null": {
+     "n": 50,
+     "any_fit": 0.78,
+     "unique": 0.02,
+     "planted_unique": 0.0
+    },
+    "pos": {
+     "n": 50,
+     "any_fit": 1.0,
+     "unique": 0.18,
+     "planted_unique": 0.18
+    }
+   },
+   "control_backed": false
+  }
+ ],
+ "test3": [
+  {
+   "line": 9,
+   "A": "mistrl",
+   "B": "otenpu",
+   "letters": 12,
+   "unique": false,
+   "margin": 0.1290000000000049,
+   "top5": [
+    [
+     -33.361,
+     1,
+     "omit stern paul"
+    ],
+    [
+     -33.49,
+     2,
+     "motives not purl"
+    ],
+    [
+     -33.634,
+     1,
+     "moist then purl"
+    ],
+    [
+     -33.906,
+     0,
+     "moist ten purl"
+    ],
+    [
+     -33.991,
+     1,
+     "often mist purl"
+    ]
+   ],
+   "n_readings_kept": 20,
+   "control": {
+    "unique": 0.0,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.0,
+    "planted_in_top20": 0.1,
+    "n": 20,
+    "examples": [
+     {
+      "planted": "the whirl of the dance",
+      "A": "hehoen",
+      "B": "twlfta",
+      "top": "the who left and"
+     },
+     {
+      "planted": "the ground so close to",
+      "A": "ooclso",
+      "B": "tgudoe",
+      "top": "to ground close to"
+     },
+     {
+      "planted": "not exactly so i mean to tell",
+      "A": "tyeatl",
+      "B": "notall",
+      "top": "not yet gallantly"
+     }
+    ]
+   },
+   "verdict": "not unique; untestable by this method at this length (R_c < 0.50)"
+  },
+  {
+   "line": 12,
+   "A": "caselcluchozamot",
+   "B": "ndtsfindseseo",
+   "letters": 29,
+   "unique": false,
+   "margin": 0.43200000000000216,
+   "top5": [
+    [
+     -74.21,
+     6,
+     "and cast self clutching dozen same some to"
+    ],
+    [
+     -74.642,
+     5,
+     "and cast self clutching doze same some to"
+    ],
+    [
+     -74.796,
+     3,
+     "case land clutch so find size as more to"
+    ],
+    [
+     -74.924,
+     3,
+     "case land clutch so find size same to to"
+    ],
+    [
+     -75.069,
+     3,
+     "case land clutch so find size same of to"
+    ]
+   ],
+   "n_readings_kept": 20,
+   "control": {
+    "unique": 0.0,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.0,
+    "planted_in_top20": 0.0,
+    "n": 20,
+    "examples": [
+     {
+      "planted": "time as bagnet has himself she equally",
+      "A": "iasaetahmeheeuly",
+      "B": "tmeghsislfqal",
+      "top": "time as a get has himself he equally"
+     },
+     {
+      "planted": "the face and it was my mother cold and dead chapter",
+      "A": "cniwamyhrcoaeapr",
+      "B": "thfetotelndha",
+      "top": "can with few at my other could and he apart"
+     },
+     {
+      "planted": "young man sat looking at the fire with a face",
+      "A": "nanalkngtheieace",
+      "B": "ougstoiatrwta",
+      "top": "young santa looking at their we at came"
+     }
+    ]
+   },
+   "verdict": "not unique; untestable by this method at this length (R_c < 0.50)"
+  },
+  {
+   "line": 23,
+   "A": "iopotonrogfimsecharsenr",
+   "B": "wtubtrfftrstendinhofsvmnr",
+   "letters": 48,
+   "unique": false,
+   "margin": 0.012000000000000455,
+   "top5": [
+    [
+     -119.675,
+     8,
+     "with doubt portion for of got first me second in harsh of seven mr nor"
+    ],
+    [
+     -119.687,
+     8,
+     "with doubt portion for of get first me second in harsh of seven mr nor"
+    ],
+    [
+     -120.308,
+     9,
+     "with doubt portion for of got first mending she of chairs seven mr nor"
+    ],
+    [
+     -120.308,
+     9,
+     "with doubt portion for of got first mending she chairs of seven mr nor"
+    ],
+    [
+     -120.32,
+     9,
+     "with doubt portion for of get first mending she of chairs seven mr nor"
+    ]
+   ],
+   "n_readings_kept": 20,
+   "control": {
+    "unique": 0.0,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.0,
+    "planted_in_top20": 0.05,
+    "n": 20,
+    "examples": [
+     {
+      "planted": "evening plenty of rats always on hand use of the pit gratis mr fosbrooke",
+      "A": "ngpltyortlshadftgasmsbo",
+      "B": "evinfsayonnusehptrtirorok",
+      "top": "evening of say on plenty course the plaster had fitting as mr fosbrooke"
+     },
+     {
+      "planted": "the chambers and his own lodging as temporary residences and advised",
+      "A": "tebdswnodingseorrsdavid",
+      "B": "chaesaholgatmraeiecsdadse",
+      "top": "chapter be said shown lodgings a temporary residence said advised"
+     },
+     {
+      "planted": "each other to lady carbury the prospect of a union between her son and",
+      "A": "ectolaaburhrscoaneteeon",
+      "B": "hohrtdrytepopeuibwenrsand",
+      "top": "each other told a carbury the prospect you a in between person and"
+     }
+    ]
+   },
+   "verdict": "not unique; untestable by this method at this length (R_c < 0.50)"
+  },
+  {
+   "line": 26,
+   "A": "mistrl",
+   "B": "oatvpu",
+   "letters": 12,
+   "unique": false,
+   "margin": 0.6450000000000031,
+   "top5": [
+    [
+     -36.857,
+     1,
+     "moat visit purl"
+    ],
+    [
+     -37.502,
+     3,
+     "moat visitor paul"
+    ],
+    [
+     -38.169,
+     3,
+     "moist at very paul"
+    ],
+    [
+     -38.552,
+     3,
+     "moat visitor pull"
+    ],
+    [
+     -38.69,
+     4,
+     "miss to at very paul"
+    ]
+   ],
+   "n_readings_kept": 20,
+   "control": {
+    "unique": 0.0,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.0,
+    "planted_in_top20": 0.05,
+    "n": 20,
+    "examples": [
+     {
+      "planted": "for he goes in again now",
+      "A": "hegsin",
+      "B": "oongnw",
+      "top": "he go song now in"
+     },
+     {
+      "planted": "see the apartment that i told",
+      "A": "rntitl",
+      "B": "ehpaed",
+      "top": "rent with placed"
+     },
+     {
+      "planted": "i ever viewed myself with",
+      "A": "ieerdl",
+      "B": "vvwyft",
+      "top": "give view yard left"
+     }
+    ]
+   },
+   "verdict": "not unique; untestable by this method at this length (R_c < 0.50)"
+  },
+  {
+   "line": 29,
+   "A": "ereflodbr",
+   "B": "rileohmae",
+   "letters": 18,
+   "unique": false,
+   "margin": 0.8299999999999983,
+   "top5": [
+    [
+     -47.401,
+     5,
+     "retire followed both marie"
+    ],
+    [
+     -48.231,
+     4,
+     "retire followed both mare"
+    ],
+    [
+     -48.676,
+     6,
+     "retire followed both manner"
+    ],
+    [
+     -48.788,
+     6,
+     "retire followed both matter"
+    ],
+    [
+     -48.9,
+     4,
+     "her refilled good him bare"
+    ]
+   ],
+   "n_readings_kept": 20,
+   "control": {
+    "unique": 0.0,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.0,
+    "planted_in_top20": 0.1,
+    "n": 20,
+    "examples": [
+     {
+      "planted": "the winner of a prize wherry who",
+      "A": "weoapzheo",
+      "B": "hnrfrierr",
+      "top": "when mr of a prize her or"
+     },
+     {
+      "planted": "hand with a shake of his own head",
+      "A": "nwsafonha",
+      "B": "diahohisd",
+      "top": "and i was had of on his had"
+     },
+     {
+      "planted": "i got a letter two days ago",
+      "A": "tletetsgo",
+      "B": "igtrwoday",
+      "top": "might letter two days go"
+     }
+    ]
+   },
+   "verdict": "not unique; untestable by this method at this length (R_c < 0.50)"
+  }
+ ]
+}

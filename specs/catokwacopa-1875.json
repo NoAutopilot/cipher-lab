@@ -34,24 +34,34 @@
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block's letters_min/max and min_word_cover are placeholders scaled to 'two long ads' since no ciphertext is on disk to measure directly; narrow once Ernst's/Bourdeau's transcription (or the BNA original) is fetched.",
  "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5, spec'd from ciphers/catokwacopa-1875/NOTES.md per this brief's instruction (the target already has a folder; this spec does not duplicate or replace it)",
  "cheap_test_done": {
-  "date": "2 Oct 2026",
-  "by": "NEXT-CAT (account 2, Opus 5.5)",
-  "test": "1. line-pairing permutation test on our own copy (ciphers/catokwacopa-1875/ciphertext.txt from pollaky ads 3-4; pairs.py, pairs.tsv, pairtest.json)",
-  "target": "S = sum |len halves| over 24 letter lines = 33; 0 of 100,000 random re-pairings <= 33 (p < 1e-5); segmentation 29/29 identical to Bourdeau's ads.py PAIRS",
-  "control": "matched synthetic English, same 24 per-line letter totals, 0-3 letters dropped, 40 texts per dealer at 10,000 perms: coin split S 59-105, power 0.80 at p<0.001; balanced split S 9, power 1.00",
-  "judge": "not run (no reading)",
-  "verdict": "pairing confirmed on our own copy, control-backed; next test: 2 (exact-fit name search) / 3 (unread lines with synthetic uniqueness control)",
-  "source": "ciphers/catokwacopa-1875/NOTES.md step NEXT-CAT (2 Oct 2026)",
+  "date": "6 Oct 2026",
+  "by": "R12-CATOK23 (account 2, Opus 5.5)",
+  "test": "2 and 3 (catok23.py, PREREG-CATOK23.md, catok23.json)",
+  "target": "T2: CONINGTON (8), SHIRLEY (24), CONINGTON (15) the only fit among 17,973 period names; JOWETT ties JOWITT (25), HERTFORD ties THETFORD (10). T3: lines 9/12/23/26/29 none unique (margins 0.01-0.83 nats vs gate 3.0)",
+  "control": "T2 per frame null false-unique 0.04/0.10/0.02/0.08/0.02, power 0.86/0.54/0.84/0.68/0.18 (gate <=0.10 and >=0.50). T3 synthetic period lines: unique 0/100, correct-unique 0/100",
+  "judge": "not run (no continuous reading)",
+  "verdict": "3 name slots forced and control-backed (S conditional on frame); 2 not unique under our list; unread lines untestable by unigram exact-fit (instrument retired); next: phrase-level LM search with synthetic control",
+  "source": "ciphers/catokwacopa-1875/NOTES.md section R12-CATOK23",
   "previous": {
-   "date": "26 Sept 2026",
-   "by": "bSPECFILL (backfill; no test actually run -- see verdict)",
-   "test": "blocked before test 1 (no ciphertext on disk to run any of the three named tests against)",
-   "target": "none on file -- no ciphertext.txt or key exists in ciphers/catokwacopa-1875/ as of 26 Sept 2026",
-   "control": "none on file -- no test has been run",
-   "judge": "not run",
-   "verdict": "blocked: LOCAL-QUEUE.tsv row L13 (bna-verify, ciphers/catokwacopa-1875) status is queued -- \"Verify the working ciphertext transcription (Thomas Ernst's BNA-checked text, used in Bourdeau's catokwacopa/ads.py) against the original British Newspaper Archive scans... (BNA/newspapers.com login required, not reachable from the cloud)\". Nothing in this spec's cheap_tests_in_order can run until L13 is answered (or an attributed clone of Bourdeau's ads.py text is fetched). Target status_25_Sept_2026 remains partial per NOTES.md, LANE CX2",
-   "source": "LOCAL-QUEUE.tsv row L13; specs/catokwacopa-1875.json ciphertext_pending field; ciphers/catokwacopa-1875/NOTES.md (LANE CX2, 25 Sept 2026)",
-   "backfilled": "bSPECFILL 26 Sept 2026 18:02 UTC"
+   "date": "2 Oct 2026",
+   "by": "NEXT-CAT (account 2, Opus 5.5)",
+   "test": "1. line-pairing permutation test on our own copy (ciphers/catokwacopa-1875/ciphertext.txt from pollaky ads 3-4; pairs.py, pairs.tsv, pairtest.json)",
+   "target": "S = sum |len halves| over 24 letter lines = 33; 0 of 100,000 random re-pairings <= 33 (p < 1e-5); segmentation 29/29 identical to Bourdeau's ads.py PAIRS",
+   "control": "matched synthetic English, same 24 per-line letter totals, 0-3 letters dropped, 40 texts per dealer at 10,000 perms: coin split S 59-105, power 0.80 at p<0.001; balanced split S 9, power 1.00",
+   "judge": "not run (no reading)",
+   "verdict": "pairing confirmed on our own copy, control-backed; next test: 2 (exact-fit name search) / 3 (unread lines with synthetic uniqueness control)",
+   "source": "ciphers/catokwacopa-1875/NOTES.md step NEXT-CAT (2 Oct 2026)",
+   "previous": {
+    "date": "26 Sept 2026",
+    "by": "bSPECFILL (backfill; no test actually run -- see verdict)",
+    "test": "blocked before test 1 (no ciphertext on disk to run any of the three named tests against)",
+    "target": "none on file -- no ciphertext.txt or key exists in ciphers/catokwacopa-1875/ as of 26 Sept 2026",
+    "control": "none on file -- no test has been run",
+    "judge": "not run",
+    "verdict": "blocked: LOCAL-QUEUE.tsv row L13 (bna-verify, ciphers/catokwacopa-1875) status is queued -- \"Verify the working ciphertext transcription (Thomas Ernst's BNA-checked text, used in Bourdeau's catokwacopa/ads.py) against the original British Newspaper Archive scans... (BNA/newspapers.com login required, not reachable from the cloud)\". Nothing in this spec's cheap_tests_in_order can run until L13 is answered (or an attributed clone of Bourdeau's ads.py text is fetched). Target status_25_Sept_2026 remains partial per NOTES.md, LANE CX2",
+    "source": "LOCAL-QUEUE.tsv row L13; specs/catokwacopa-1875.json ciphertext_pending field; ciphers/catokwacopa-1875/NOTES.md (LANE CX2, 25 Sept 2026)",
+    "backfilled": "bSPECFILL 26 Sept 2026 18:02 UTC"
+   }
   }
  }
 }
