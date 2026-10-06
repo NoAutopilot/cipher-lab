@@ -146,3 +146,40 @@ NOTES.md R15-LAGDIG "Next cheapest step": a fresh PREREG with Z_MI as the primar
 same designs and error bracket (0, 10, 23, 30%), power gate fixed in advance (AUC >= 0.80 vs both running-key variants at e=0.23 on the new
 seeds). This is a second statistic, not a re-tune of the first: if power fails on the new seeds, log "untestable by this statistic" and stop;
 only if it passes, score the target and report where it falls against both control distributions. Reuse families/ scripts. CPU only.
+
+## Wave 3 (spawned 17:5x UTC from wave-2 results and flags). Intake gate output (17:5x UTC) pasted per job.
+
+### R15-LVNV -- lodewijk-van-nassau-1573-74: verifier carry-over of R15-LVNAPP into AUDIT.md (Opus, verifier hat; cap 2, box 40 min)
+Intake: `lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+ROOM flag R15-LVNAPP 17:39: 10 4610 p3 control corrections applied (2e47b56ca; lvn10/corrections_lvnctl.tsv), 4610 C/H 1204->1202, M 131->133,
+I 55->54, U 155->156. You are not R15-LVNAPP or R15-LVNCTL. Run decode_key --check (exit 0), confirm each applied row matches control_corrected.tsv
+and its grade, spot-check 3 rows on the 300-dpi crops (lvn10/eyecrops.py), recompute the four-letter H/C/S share and depth figure, then write
+an AUDIT.md "Carry-over (R15-LVNV)" section with the applied state, and carry it into status.json depth fields and any SECOND-OPINIONS-QUEUE.tsv
+row for this target (CLAUDE.md rule 10 propagation). Class unchanged unless the evidence moves it (say why either way).
+
+### R15-OLDV2 -- na-oldenbarnevelt-2442-1605: verifier carry-over of R15-OLDUV into AUDIT.md and SO-OLDEN-2442-BC1 (Opus, verifier hat; cap 2, box 40 min)
+Intake: `na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+ROOM flag R15-OLDUV 17:42: B37 bvenas->buenas, B49/B76 atreven->atreuen, B55 veras->ueras via overrides.tsv (NOTES s.20, ec902d21b); judge
+re-run with u/v fold on target and controls (PREREG abaf33532), windows -0.933/-0.880/-0.893/-0.968, still FAIL. You are not R15-OLDUV or R14-OLDV.
+Check --check OK, the four renamings against crops, that the PREREG predates the run (git log order) and that the fold was applied to every
+control as well as the target (rule 3 normalisation), re-run one judge window to confirm reproducibility. Carry into AUDIT.md (carry-over
+section) and the queued SO-OLDEN-2442-BC1 prompt in SECOND-OPINIONS-QUEUE.tsv. Note w1 is 0.004 short of real_p05: say plainly whether that is
+"judge cannot decide" or a FAIL under the repo's rule-3 language, without moving the gate.
+
+### R15-SURALIAS -- na-suriname-map-1781: pre-registered reader-code alias pass, re-scored with R14-SURDP's DP (Opus; cap 2.5, box 50 min)
+Intake: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md Remaining gaps Verdict [R15-SURV]: PREREG first: 0702 'K' = the period sheet's k, 0758 's' = [sh-lig], 0758 'i j' = one [ij] sign (each
+image-checked by R15-SURV), 0730 [other: ss-like]/[other: f-like] image-checked first (one service.archief.nl fetch, crop, paste the command);
+then re-score with R14-SURDP's DP script and its shuffled-gloss control, report both numbers per scan before/after. Aliases go into the pass
+transcription files through the existing scripts, not into key.tsv; key.tsv changes only if the PREREG says so and the gate passes, with --check
+exit 0 and a ROOM flag for a verifier. Do not start the 2039 legend k re-read (separate job).
+
+### R15-KAL14 -- kaliningrad-2015: columnar transposition of a Russian-transliteration substitution, matched control first (Opus; cap 2.5, box 50 min)
+Intake: `kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md R15-KAL13 next step: a different instrument from wordcode -- columnar transposition (widths per PREREG, e.g. 2-12) applied to a
+Russian-transliteration simple substitution (tools/data/ru19_lat; check its era/register note in tools/data README), scored by bigram/judge.
+PREREG first: widths, key search budget, scoring, gate. Matched control: synthetic ru19_lat text, same N and K as convention B (N 1066, K 28,
+or the convention the PREREG names), enciphered with the same design, solved by the same search at the same budget; target only if the
+control meets the gate (family_run.py pattern; add a family module with an offline test if family_run cannot express it, no private copy).
+Shuffled-target run beside the target. HYPOTHESES.md rows; CPU only. If the control cannot read at this budget, log "untestable by this
+instrument at this N" and stop.
