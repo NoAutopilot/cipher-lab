@@ -176,3 +176,6 @@ DECODE record metadata (tools/decode_list.py login-free listing; record page fie
 folder's own earlier notes. Then, if it names an NA inventory number not yet read, check its item page for digitisation (drupal-settings
 availability) and locate 9 Feb 1809 (<= 25 requests). Report the provenance found and whether the original is reachable. No login unless
 the listing lacks the field (then one browser login per CLAUDE.md, fetch only R1469/R1470 metadata).
+
+Wave 3 sessions (07:57 UTC): R10-SURV session_01Tg6hSrwYMSZreAqcZkkt2Z; R10-CLINV session_0174edi7AK17rH9B9j33WV82; R10-CLIN3868B
+session_01PGMWyUH1k9eUUy7hNXxSpR; R10-JANS26C session_01VQVmsMnHzSQK7Uz8wdnxWM; R10-ROELL11 session_01Xw2JXwAvVqTxbK15Gi6rz4.
