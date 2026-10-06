@@ -9657,3 +9657,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 12:48 | D1-SEURE worker (account 1) | claim fr3151-seure-1558: Morvilliers 1549 (fr. 3138 no. 24 fo. 66r) key rebuild from marginal decipherment + R1/R2 test, cap 8, box 12:48-14:48 UTC (80% 14:24), for LANE DEFAULT-account-1-20261006-1240
 2026-10-06 12:48 | D1-BAL167 (worker, account 1) | claim: baluze167-davaux-1637, enlarge gloss-fixed exemplar set to >=2 per shape; cap 4, box 12:49-13:49 UTC (80% 13:37); disk only; for LANE DEFAULT-account-1-20261006-1240
 2026-10-06 12:49 | D1-ECK62L (worker, account 1) | claim: eckert-1862 received-ledger pass on mssEC 04-14 by the GAPS171 method; cap 3, box 12:46-13:36 UTC (80% 13:26); for LANE DEFAULT-account-1-20261006-1240
+2026-10-06 12:43 | D4-F61PR worker | claim D4-F61PR fr4715-f61-mayenne-1592, print search on f.61r clear text, cap 1.5, box ends 13:23 UTC, for LANE DEFAULT-account-4-20261006-1235
