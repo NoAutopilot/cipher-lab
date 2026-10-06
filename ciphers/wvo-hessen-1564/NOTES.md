@@ -333,7 +333,8 @@ enciphered news, was not looked for in WVO this pass; next: a WVO search for Hes
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: a WVO search for Hessen -> Oranje letters of Oct-Dec 1564 (Wilhelm's reply to 1109, which might paraphrase the enciphered news), ~3 requests, ~$0.3.
+- Action that depends on nobody: a WVO search for Hessen -> Oranje letters of Oct-Dec 1564 (Wilhelm's reply to 1109, which might paraphrase the enciphered news), ~3 requests, ~$0.3. [done R7-WVOH; 1111 read R8-WVO1111, 6 Oct 2026: no crib parallel]
+- Action that depends on nobody (R8-WVO1111, 6 Oct 2026): build a sign sorter for the f.23 enclosure (per-glyph crops from images/01109_p3_400full.jpg, tools/sign_sorter.py, preflight PASS) and hand it to the account-3 orchestrator to publish, ~$1.5; it gates the crib test named in wvo1111_transcription.md.
 
 ## Hessen -> Oranje reply search (R7-WVOH, account 2, 6 Oct 2026, 01:3x-01:5x UTC)
 
@@ -344,3 +345,32 @@ Search: WVO advanced search, correspondent "Hessen", letters of Sept-Dec 1564 (`
 - Not found: any statement in WVO's record that 1111 repeats the enclosure's content; no Hessen letter of Oct-Dec 1564 mentions a cipher or key.
 - Next (one step, ~$1): a native-resolution transcription of 1111 pp.1-2 (crops via tools/iiif_lines.py --image) and a read for names/places that could serve as cribs against the 1109 enclosure; and Demandt II nr. 292 (pp.109-110) if a scan is findable.
 - Requests: resources.huygens.knaw.nl 7 (form probe 2, search 1, detail 2, pdf 1, plus the first listing probe), >= 2 s apart, descriptive UA. 1 image read.
+
+## WVO 1111 native read for cribs (R8-WVO1111, account 4, 6 Oct 2026, 03:44-03:5x UTC)
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run8-jobs.md` job R8-WVO1111 (R7-WVOH's named next step, still undone).
+- Images: `raw/01111.pdf` was on disk (not refetched); its embedded JPEGs are already ~312 ppi, extracted with `pdfimages -j`
+  (no re-render). Line crops: `tools/iiif_lines.py --image` (commands pasted in `wvo1111_transcription.md`), 23 + 18 lines.
+- Passes: 2 blind Sonnet passes per page (4 calls, one page per call, crop paths only), raw output in `align/w1111/`;
+  reconciliation by this worker on stacked crops (1 unit). Body agreement poor (every p0 row marked uncertain by both passes);
+  dating clause and subscription agree.
+- Result: `wvo1111_transcription.md`, 41 lines, 13 clear / 28 uncertain. Content: thanks for 1109 and its "mitgeschickten
+  zeitungen"; nothing to write back this time; the plague is spreading in Hesse and has reached Kassel; congratulation that
+  Orange's wife is again "mit [leib/weib]licher frucht des leibs gesegnet" (pregnant); Cassel 14 Oct [15]64; autograph
+  "Wilhelm L. zu Hessen".
+- Rejected misreading worth recording: one pass read p0 L13 as "des Hertzogen zu Sachsen vergiftem"; the crop reads "das das
+  Sterben an der vergifften [Plage]" (plague, not Saxony). No Saxony crib exists in 1111.
+- Dating: 1111 cites 1109 as "den 16ten Septembris" (incipit, confirmed on the crop), agreeing with 1109's own f.22r docket
+  "1564. Sept. 16." against WVO's 18-9-1564 and the enclosure heading "ad 1564. Sept. 18." -- recorded, not settled.
+- Crib verdict: **1111 does not restate or answer any item of the f.23 enclosure** (no name, place or number from 1109's news
+  recurs). Five weak candidates are listed in `wvo1111_transcription.md` (the best: pregnancy/health vocabulary against the
+  enclosure's clear medical words "adern zweimahl", "purgiren"); none tested. Grade: no cipher token read (0 H/C/S/M/I);
+  key.tsv, reading.txt and status fields untouched.
+- Demandt, *Nassau-oranische Korrespondenzen* II nr. 292 (pp.109-110): **not found** as a scan -- archive.org advancedsearch
+  (title "Nassau-oranische Korrespondenzen"/creator Demandt; "Demandt AND Korrespondenzen"; "nassau-oranische": 0 hits each)
+  and Google Books API (keyed, country=US: intitle and phrase queries, 0 items each). Not checked: HathiTrust (Cloudflare from
+  the cloud) -- a LOCAL-QUEUE candidate if the excerpt is wanted.
+- Next (named, not run): crib-placement test on f.23 with a synthetic same-run-length homophonic control plus a shuffled-crib
+  control, ~$3 Opus, after f.23's sign inventory is settled in the owner's sign sorter (~$1.5 build; NX-WVO174's passes split
+  290 vs 335 tokens). Details in `wvo1111_transcription.md`.
+- Requests: archive.org 3, www.googleapis.com 3 (>= 2 s apart); resources.huygens.knaw.nl 0. 4 Sonnet subagent calls.

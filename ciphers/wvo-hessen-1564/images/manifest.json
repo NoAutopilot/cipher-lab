@@ -37,6 +37,20 @@
         "images/01107_p3.jpg": "outer address leaf, wax seal, docket -- plain, no cipher"
       },
       "regen": "curl -A 'cipher-lab research script (contact via repository)' https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01107.pdf -o raw/01107.pdf; same render as above"
+    },
+    {
+      "briefnr": 1111,
+      "record_url": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=1111",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01111.pdf",
+      "pdf_local": "raw/01111.pdf",
+      "pages": 3,
+      "added_by": "R8-WVO1111, 6 Oct 2026 (PDF fetched by R7-WVOH)",
+      "images": {
+        "images/01111_p0_native.jpg": "p0, first page, native embedded JPEG (2222x3428, ~312 ppi), pdfimages -j",
+        "images/01111_p1_native.jpg": "p1, closing/date/subscription, native embedded JPEG (2256x3467)",
+        "images/crops1111/": "line crops via tools/iiif_lines.py --image (w1111p0_L01-23, w1111p1_L01-18, debug overlays)"
+      },
+      "regen": "pdfimages -j raw/01111.pdf OUT/n1111 (pages 0,1); then the two iiif_lines.py commands in wvo1111_transcription.md"
     }
   ],
   "other_sources": {
