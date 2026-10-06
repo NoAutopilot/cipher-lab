@@ -59,7 +59,14 @@ your browser:
    screenshot the block it names 3-4 lines at a time, top to bottom, overlapping by one line. If the row asks for
    variants, use the viewer's own image controls (colour/greyscale, contrast, brightness, negative) and take the same
    shots again for each variant, naming files <n>-colour.png, <n>-contrast.png and so on. Never put these images in
-   this public repository: save them in a local clone of github.com/NoAutopilot/cipher-lab-private (clone it once
+   this public repository. Capture is a judgement loop, not a fixed recipe (owner, 6 Oct 2026: "it isn't a linear thing").
+   Good means: every cipher sign's strokes are separate and its small marks (dots, bars, colons, hooks) are visible, and
+   any faint writing between the lines can be read letter by letter. For each shot, look at the result before moving on:
+   if a region is soft or faint, try one change at a time -- zoom one step in (stop when it gets blurrier: past the
+   scan's own resolution zoom only enlarges blur, so step back to the sharpest level), then greyscale + contrast up,
+   brightness down for faint ink, negative for pale grey glosses -- and keep the version where you can read more. Write
+   in the answer file, per shot, the settings that won and any region still unreadable (line, position, why).
+   Save the images in a local clone of github.com/NoAutopilot/cipher-lab-private (clone it once
    next to the cipher-lab folder if it is missing), in the folder the row names, commit and push there. Your answer
    file in this repository lists only the file names, sizes in pixels and the viewer settings used -- no images.
    Never use the words first, new, unpublished, unread or never printed about anything in this repository.
