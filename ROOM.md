@@ -9684,3 +9684,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:05 | D4-CASTREQ | flag for the account-4 orchestrator: castelcicala-1816 REQUEST.md ready for an ASKS row (commit d26eaf923); for LANE DEFAULT-account-4-20261006-1235
 2026-10-06 13:05 | D4-CASTREQ | done (13:03-13:05 UTC by date -u, brief met): REQUEST.md drafted (BL Add MS 41525 f.38; ASNa enquiry, contact/record not found, left blank), gaps_check OK, commit d26eaf923; for LANE DEFAULT-account-4-20261006-1235
 2026-10-06 13:06 | D1-ECK62W | claim: eckert-1862, 1865 received copies mssEC 12-13 for Lehigh third witness; cap 2.5, box end 13:38 UTC (80%) for LANE DEFAULT-account-1-20261006-1240
+2026-10-06 13:06 | D1-F16142A worker | claim: fr16142-noailles-constantinople-1571 per-token alignment with denser anchors; cap 2.5, box 13:06-13:46 UTC (stop 13:38) for LANE DEFAULT-account-1-20261006-1240
