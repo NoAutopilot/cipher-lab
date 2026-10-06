@@ -174,3 +174,31 @@ overturns through lvn16/corrections file + apply.py (as R12-LVN16C did), look at
 them M if the image does not settle them (no value change without an image read), decode --check exit 0, flag for a verifier.
 
 ### R13-CATOKLM -- see wave 2 above (spawned in wave 2b).
+
+## Wave 3 (spawned 13:5x UTC 6 Oct; lane about 43 of 60 at spawn). Intake gate output (13:55 UTC) pasted per job.
+
+### R13-LVNV2 -- VERIFIER, lodewijk-van-nassau-1573-74: carry R13-LVNFIX into AUDIT.md (Opus; cap 2, box 40 min)
+Intake: `lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+Verifier, separate from every solver. Claim under audit: NOTES.md "R13-LVNFIX" (ff43531ce): p1_L16/19 91->81 M, p1_L17/15 hollande H->M (via
+exceptions_4616.tsv), p1_L07/8 17->13 M on image, p1_L16/4 85 regraded M; 4616 C 246 M 17; four letters 2355/4047 (58.2%); also the worker's
+note that decode.json's key.tsv reading "was already stale before". Re-run both --check commands, open the two image reads on the 300-dpi
+crops, confirm counts, carry them into AUDIT.md and any SECOND-OPINIONS-QUEUE.tsv row; say whether the stale-reading note needs a fix and
+which file. Correct only over-claims; no decoding beyond --check. Do not repeat R13-LVNV's eye check.
+
+### R13-RJMV2 -- VERIFIER, rah-juan-manuel-1521: audit R13-RJM34LA (Opus; cap 2, box 40 min)
+Intake: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+Verifier, separate from every solver. Claim under audit: NOTES.md "R13-RJM34LA" (69f3548a6): f.34 look-alike pass (PREREG 21427aac9) settled
+169/218 split tiles 2-of-3; decode rerun S 309 / M 161 / U 283; judge FAIL above all 20 shuffled seeds; and its pointer that 8 S-graded Z tokens
+sit in "Z as"/"Z ez" pairs the image writes as J-initial groups jas/jez (so S may be up to 8 high). Check PREREG order, --check, grades vs
+R12-RJMV's licence, the 2-of-3 residual being reported as agreement not error, and eye-check the 8 J-initial tokens on the crops; regrade them
+if the image supports the pointer (say so; the regrade itself is a one-line exceptions entry with --check, allowed here). Carry the result
+into AUDIT.md and any SECOND-OPINIONS-QUEUE.tsv row.
+
+### R13-SUR730 -- na-suriname-map-1781: inv. 373 scan 0730 glossed cipher, transcribe and align (Opus; cap 3.5, box 70 min)
+Intake: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+Same method as R13-SUR702 (its section, PREREG and scripts; reuse them, do not rewrite): scan 0730 is one page of cipher lines with lighter
+plain lines between, signed "Fortres Nieuw Amsterdam d. 20 Octr 1781" -- the fortress of map sheet 4.VEL 2039. PREREG committed first, one
+blind Sonnet pass on the crops + your reconciliation + scoring against the pooled 0693+0702 sign table vs a shuffled-gloss control.
+Report both numbers; conflicts.tsv for rule-4 conflicts; say whether any gloss word names a map sheet, legend letter or work on the
+fortress (that would be a crib for 2039's cartouche/legend -- list it, do not run the 2039 test). Units: 1 pass + 1 reconciliation +
+1 scoring at ~1.2.
