@@ -350,7 +350,7 @@ line	pos	sign	value	grade
 2077_L10	63	3	e	H
 2077_L10	64	o	r	H
 2077_L10	65	m	i	H
-2077_L10	66	[sigma]	e	M
+2077_L10	66	[sigma-hook]	e	M
 2077_L11	0	[v-tall]	c	H
 2077_L11	1	x	a	H
 2077_L11	2	6	s	H
@@ -368,7 +368,7 @@ line	pos	sign	value	grade
 2077_L11	14	3	e	H
 2077_L11	15	a	e	H
 2077_L11	16	o	r	H
-2077_L11	17	[sigma]	i	M
+2077_L11	17	[sigma-knot]	i	M
 2077_L11	18	[h-loop]	n	H
 2077_L11	19	g	g	H
 2077_L11	20	[psi]	s	H

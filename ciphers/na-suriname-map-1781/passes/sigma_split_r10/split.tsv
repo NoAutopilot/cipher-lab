@@ -1,0 +1,11 @@
+# R10-SUR (6 Oct 2026, account 2): reader-code split of [sigma] in ciphertext_2077_legend.tsv, applied by passes/leg2077_build.py.
+# Evidence: two independent blind reads kept these two tokens apart and matched neither to any keyed reference --
+# R7-SUR (Sonnet, single-sign tiles; gate FAIL, descriptive only: 0.1/0.15, left as separate singletons) and R7-SUR2
+# (Opus, 2-3-sign context tiles, controls PASS 0.7/0.65: "none" at 0.7/0.75, described as distinct shapes; result.tsv in
+# passes/signcmp_r7sur2/). The split is a transcription label only, not a value claim: both new codes are unkeyed in
+# key_period_codes_nieuw.tsv exactly as [sigma] was, so each token's value and grade come from its exceptions_nieuw_image.tsv
+# row (GAPS23 / GAPS64), unchanged. The other 13 [sigma] tokens have had no sign-level comparison and stay [sigma]
+# (not assigned to either form). The original reader code is kept in the sign_r9 column of every row.
+line	pos	old	new	shape (R7-SUR2 blind description)
+2077_L11	17	[sigma]	[sigma-knot]	dark shaded s/ss-like sign with a closed knot (aligned i, GAPS23)
+2077_L10	66	[sigma]	[sigma-hook]	closed bowl with a hooked top stroke, no descender; runner-up the e-class sign a (aligned e, GAPS64)

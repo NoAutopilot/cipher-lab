@@ -4,760 +4,762 @@
 # passes (passes/leg2077_passA.tsv, passB.tsv; brief passes/leg2077_pass_brief.md) aligned by passes/leg2077_merge.py, one blind
 # Opus reconciliation (passes/leg2077_reconcile.tsv); built by passes/leg2077_build.py. conf H = both passes agree or the
 # reconciliation rated H; M otherwise. L01-L03 title, L04 heading, L05-L19 legend rows, L20 below. GAPS19 (account-4), 3 Oct 2026.
-line	pos	sign	conf	note
-2077_L01	0	S	H	
-2077_L01	1	c	H	
-2077_L01	2	[delta]	H	
-2077_L01	3	[h-loop]	H	
-2077_L01	4	[ezh-dot]	M	A:[ezh-dot] B:[ezh]; reconciled M: ezh-like glyph with a small dot to its left after h-loop
-2077_L01	5	l	H	
-2077_L01	6	[psi]	H	
-2077_L01	7	[dot]	H	A:- B:[dot]; reconciled H: clear dot between psi and lambda
-2077_L01	8	[lambda]	H	
-2077_L01	9	[x-dots]	H	
-2077_L01	10	p	H	
-2077_L01	11	r	H	
-2077_L01	12	5	H	
-2077_L01	13	[delta]	H	
-2077_L01	14	[h-loop]	H	
-2077_L01	15	w	H	
-2077_L01	16	3	H	
-2077_L01	17	[q-bar]	M	A:[4-bowl] B:[q-bar]; reconciled M: q-like bowl with stroke through descender after w 3
-2077_L01	18	a	H	
-2077_L01	19	l	H	
-2077_L01	20	6	H	
-2077_L01	21	m	H	
-2077_L01	22	[d-hook]	H	
-2077_L01	23	w	H	
-2077_L01	24	p	H	
-2077_L01	25	[h-loop]	H	
-2077_L01	26	[lambda]	H	
-2077_L01	27	[dot]	M	A:- B:[dot]; reconciled M: small dot visible between lambda and pi
-2077_L01	28	[pi]	H	
-2077_L02	0	6	H	
-2077_L02	1	[hash]	H	
-2077_L02	2	[kappa]	H	
-2077_L02	3	x	H	
-2077_L02	4	g	H	
-2077_L02	5	[sigma]	M	A:[sigma] B:6; reconciled M: 6-like bowl leaning right, same shape as line-initial sigma
-2077_L02	6	[dot]	H	
-2077_L02	7	[lambda]	H	
-2077_L02	8	[psi]	H	
-2077_L02	9	3	H	
-2077_L02	10	g	H	
-2077_L02	11	5	H	
-2077_L02	12	7	H	NAME [r-rot]->7
-2077_L02	13	[psi]	H	
-2077_L02	14	3	H	
-2077_L02	15	a	H	
-2077_L02	16	v	H	
-2077_L02	17	[d-hook]	M	A:[d-hook] B:[d-loop]; reconciled M: bowl with tall ascender hooking right (delta-like), not curling back left as the d-loop at pos 23
-2077_L02	18	7	H	NAME [r-rot]->7
-2077_L02	19	o	H	
-2077_L02	20	[lambda]	H	
-2077_L02	21	[dot]	H	
-2077_L02	22	r	H	
-2077_L02	23	[d-loop]	H	
-2077_L02	24	r	M	A:r B:[r-rot]; reconciled M: plain small r after d-loop, not the 7-like r-rot
-2077_L02	25	g	H	
-2077_L02	26	[f-loop]	H	
-2077_L02	27	l	H	
-2077_L02	28	5	H	
-2077_L02	29	a	M	A:a B:[delta]; reconciled M: small round a, not a hollow triangle
-2077_L02	30	l	H	
-2077_L02	31	v	H	
-2077_L02	32	3	H	
-2077_L02	33	l	H	
-2077_L02	34	[hash]	H	
-2077_L02	35	[kappa]	H	
-2077_L02	36	c	H	
-2077_L02	37	[h-loop]	H	
-2077_L02	38	[pi]	H	
-2077_L02	39	g	H	
-2077_L03	0	[d-loop]	M	A:[d-hook] B:[d-loop]; reconciled M: line-initial bowl whose ascender curls back to the left
-2077_L03	1	[f-loop]	M	A:[f-loop] B:[s-loop]; reconciled M: use [f-loop]; looped long f/s, no distinct second shape seen across lines
-2077_L03	2	3	H	
-2077_L03	3	c	M	A:c B:[sigma]; reconciled M: small open c after 3
-2077_L03	4	[psi]	H	
-2077_L03	5	[lambda]	H	
-2077_L03	6	a	H	
-2077_L03	7	g	H	
-2077_L03	8	[lambda]	H	
-2077_L03	9	7	H	NAME [r-rot]->7
-2077_L03	10	[h-loop]	H	
-2077_L03	11	6	H	
-2077_L03	12	m	H	
-2077_L03	13	g	H	
-2077_L03	14	[lambda]	H	
-2077_L03	15	[sigma-dot]	M	A:[delta-dot] B:[sigma-dot]; reconciled M: 6-like bowl with dot above, followed by a separate delta
-2077_L03	16	[delta]	H	A:- B:[delta]; reconciled H: separate hollow triangle visible before l
-2077_L03	17	l	H	
-2077_L03	18	6	H	
-2077_L03	19	[d-loop]	H	
-2077_L03	20	3	H	
-2077_L03	21	[w-tilde]	H	
-2077_L03	22	s	H	
-2077_L03	23	l	H	
-2077_L03	24	v	H	
-2077_L03	25	3	H	
-2077_L03	26	[h-loop]	H	
-2077_L03	27	v	H	
-2077_L03	28	7	H	NAME [r-rot]->7
-2077_L03	29	m	H	
-2077_L03	30	6	H	
-2077_L04	0	w:Explicatie	H	
-2077_L04	1	w:der	H	
-2077_L04	2	w:Signatuuren	H	
-2077_L05	0	w:a	H	
-2077_L05	1	[lambda]	H	
-2077_L05	2	g	H	
-2077_L05	3	[hash]	H	
-2077_L05	4	s	M	A:s B:[r-rot]; reconciled M: small round s after hash
-2077_L05	5	e	H	
-2077_L05	6	3	H	
-2077_L05	7	o	H	
-2077_L05	8	l	H	
-2077_L05	9	7	M	A:r B:[r-rot]; reconciled M: 7-like rotated r before u-dots; NAME [r-rot]->7
-2077_L05	10	[u-dots]	H	
-2077_L05	11	a	H	
-2077_L05	12	[h-loop]	H	
-2077_L05	13	[lambda]	H	
-2077_L05	14	w:b	H	
-2077_L05	15	[u-dots]	H	
-2077_L05	16	[delta]	H	
-2077_L05	17	g	H	
-2077_L05	18	[x-dots]	M	A:x B:[x-dots]; reconciled M: x in repeated u-dots delta g x sequence; dot(s) seen on same word in L08/L14; take x-dots for consistency
-2077_L05	19	g	H	
-2077_L05	20	[delta]	M	A:[delta] B:[a-bar]; reconciled M: hollow triangle with a stroke beneath (possibly underline/ruling)
-2077_L05	21	[v-tall]	M	A:[?] B:[c-curl]; reconciled M: curly looped shape similar to entry c c-curl; NAME [c-curl]->[v-tall]
-2077_L05	22	t	H	
-2077_L05	23	l	H	
-2077_L05	24	5	M	A:s B:5; reconciled M: same shape as the 5 in L01 '5 delta h'
-2077_L05	25	[delta]	H	
-2077_L05	26	[h-loop]	H	
-2077_L05	27	[dot]	H	
-2077_L05	28	[lambda]	H	
-2077_L05	29	[psi]	H	
-2077_L05	30	3	H	
-2077_L05	31	g	H	
-2077_L05	32	5	H	
-2077_L05	33	7	H	NAME [r-rot]->7
-2077_L05	34	w:c	H	
-2077_L05	35	[psi]	H	
-2077_L05	36	3	H	
-2077_L05	37	[v-tall]	H	NAME [c-curl]->[v-tall]
-2077_L05	38	o	H	
-2077_L05	39	a	H	
-2077_L05	40	[lambda]	H	
-2077_L05	41	[delta]	H	
-2077_L05	42	o	H	
-2077_L05	43	t	H	
-2077_L05	44	3	H	
-2077_L05	45	w:d	H	
-2077_L05	46	s	H	
-2077_L05	47	[delta]	H	
-2077_L05	48	x	H	
-2077_L05	49	o	H	
-2077_L05	50	y	H	
-2077_L05	51	7	H	NAME [r-rot]->7
-2077_L05	52	[psi]	H	
-2077_L05	53	[lambda]	H	
-2077_L05	54	[delta]	H	
-2077_L05	55	g	H	
-2077_L05	56	[ezh-dot]	M	A:[ezh-dot] B:[r-rot]; reconciled M: ezh-like glyph with dot, as in L01 pos4 before l
-2077_L05	57	l	H	
-2077_L05	58	b	H	
-2077_L05	59	[pi]	H	
-2077_L05	60	3	H	
-2077_L05	61	[lambda]	H	
-2077_L05	62	[psi]	H	
-2077_L05	63	s	M	A:s B:[sigma]; reconciled M: small round s after psi
-2077_L05	64	[f-loop]	M	A:[f-loop] B:[s-loop]; reconciled M: use [f-loop]
-2077_L05	65	5	M	A:5 B:3; reconciled M: 5-like with flag top
-2077_L05	66	t	H	
-2077_L05	67	6	H	
-2077_L06	0	w:e	H	
-2077_L06	1	[h-loop]	H	
-2077_L06	2	3	H	
-2077_L06	3	a	H	
-2077_L06	4	g	H	
-2077_L06	5	r	M	A:r B:[r-rot]; reconciled M: plain r in 'a g r o'
-2077_L06	6	o	H	
-2077_L06	7	s	M	A:s B:[sigma]; reconciled M: small round s
-2077_L06	8	[f-loop]	M	A:[f-loop] B:[s-loop]; reconciled M: use [f-loop]
-2077_L06	9	e	H	
-2077_L06	10	t	H	
-2077_L06	11	6	H	
-2077_L06	12	7	H	NAME [r-rot]->7
-2077_L06	13	l	H	
-2077_L06	14	w:e	H	
-2077_L06	15	w:e	H	
-2077_L06	16	w:e	H	
-2077_L06	17	w:e	H	
-2077_L06	18	[hash]	H	
-2077_L06	19	5	H	
-2077_L06	20	v	H	
-2077_L06	21	3	H	
-2077_L06	22	3	H	
-2077_L06	23	[h-loop]	H	
-2077_L06	24	5	H	
-2077_L06	25	a	H	
-2077_L06	26	[sigma]	H	
-2077_L06	27	e	H	
-2077_L06	28	[delta]	H	
-2077_L06	29	g	H	
-2077_L06	30	e	H	
-2077_L06	31	3	H	
-2077_L06	32	l	H	
-2077_L06	33	[h-loop]	H	
-2077_L06	34	r	M	A:r B:[r-rot]; reconciled M: plain r after h-loop
-2077_L06	35	[d-hook]	M	A:[d-hook] B:[d-dots]; reconciled M: bowl with tall ascender hooked right; possible mark above not clear
-2077_L06	36	g	H	
-2077_L06	37	3	H	
-2077_L06	38	o	H	
-2077_L06	39	[sigma]	M	A:[?] B:[sigma]; reconciled M: 6-like bowl leaning right between o and s
-2077_L06	40	s	M	A:s B:[s-loop]; reconciled M: short round s, not long looped s
-2077_L06	41	t	H	
-2077_L06	42	6	H	
-2077_L06	43	3	H	
-2077_L06	44	l	H	
-2077_L06	45	w:f	H	
-2077_L06	46	w:Menagerie	H	
-2077_L06	47	w:ε	H	
-2077_L06	48	w:Neegerhuijsen	H	
-2077_L06	49	w:voor	H	
-2077_L06	50	w:d'	H	
-2077_L07	0	w:Edl.	H	
-2077_L07	1	w:Directie	H	
-2077_L07	2	w:Slaaven	H	
-2077_L07	3	w:g	H	
-2077_L07	4	w:huÿs	H	
-2077_L07	5	w:voor	H	
-2077_L07	6	w:den	H	
-2077_L07	7	w:Opsigter	H	
-2077_L07	8	w:h	H	
-2077_L07	9	w:d:to	H	
-2077_L07	10	w:voor	H	
-2077_L07	11	w:de	H	
-2077_L07	12	w:Ambagts	H	
-2077_L07	13	w:Slaaven	H	
-2077_L07	14	w:van	H	
-2077_L07	15	w:de	H	
-2077_L07	16	w:Mon.	M	A:<Mon.> B:<Mon>; reconciled M: period-like mark after Mon
-2077_L08	0	w:,,teerings	M	A:<,,teerings> B:<teerings>; reconciled M: ditto/comma mark precedes teerings
-2077_L08	1	w:Kamer	H	
-2077_L08	2	w:i	H	
-2077_L08	3	[u-dots]	H	
-2077_L08	4	[delta]	H	
-2077_L08	5	g	H	
-2077_L08	6	[x-dots]	M	A:x B:[x-dots]; reconciled M: x with dot visible
-2077_L08	7	[psi]	H	
-2077_L08	8	t	H	
-2077_L08	9	[h-loop]	H	
-2077_L08	10	3	H	
-2077_L08	11	l	H	
-2077_L08	12	5	H	
-2077_L08	13	[delta]	H	
-2077_L08	14	l	H	
-2077_L08	15	e	H	
-2077_L08	16	m	H	
-2077_L08	17	e	H	
-2077_L08	18	[sigma]	H	
-2077_L08	19	a	H	
-2077_L08	20	[psi]	H	
-2077_L08	21	w:k	H	
-2077_L08	22	v	H	
-2077_L08	23	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right after v
-2077_L08	24	[lambda]	H	
-2077_L08	25	[hash]	H	
-2077_L08	26	3	H	
-2077_L08	27	[delta]	H	
-2077_L08	28	l	H	
-2077_L08	29	[u-dots]	H	
-2077_L08	30	[delta]	H	
-2077_L08	31	[lambda]	H	
-2077_L08	32	3	H	
-2077_L08	33	7	H	NAME [r-rot]->7
-2077_L08	34	o	H	
-2077_L08	35	m	H	
-2077_L08	36	[delta]	H	
-2077_L08	37	g	H	
-2077_L08	38	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right after g
-2077_L08	39	3	H	
-2077_L08	40	[h-loop]	H	
-2077_L08	41	w:l	H	
-2077_L08	42	4	H	
-2077_L08	43	[delta]	H	
-2077_L08	44	x	H	
-2077_L08	45	[lambda]	H	
-2077_L08	46	3	H	
-2077_L08	47	o	H	
-2077_L08	48	[u-dots]	H	
-2077_L08	49	[hash]	H	
-2077_L08	50	[pi]	M	A:[delta] B:[pi]; reconciled M: inverted V with bar after hash
-2077_L08	51	g	H	
-2077_L08	52	7	H	NAME [r-rot]->7
-2077_L08	53	w:m	H	
-2077_L08	54	4	H	
-2077_L08	55	[hash]	H	
-2077_L08	56	[kappa]	H	
-2077_L09	0	l	H	
-2077_L09	1	s	M	A:s B:[sigma]; reconciled M: small round s between l and h-loop
-2077_L09	2	[h-loop]	H	
-2077_L09	3	g	H	
-2077_L09	4	5	H	
-2077_L09	5	[delta]	H	
-2077_L09	6	[h-loop]	H	
-2077_L09	7	v	H	
-2077_L09	8	3	H	
-2077_L09	9	[v-tall]	H	NAME [c-curl]->[v-tall]
-2077_L09	10	[hash]	H	
-2077_L09	11	[u-dots]	H	
-2077_L09	12	[f-loop]	H	
-2077_L09	13	3	H	
-2077_L09	14	6	H	
-2077_L09	15	3	H	
-2077_L09	16	[delta]	H	
-2077_L09	17	l	H	
-2077_L09	18	e	H	
-2077_L09	19	m	H	
-2077_L09	20	e	H	
-2077_L09	21	[sigma]	H	
-2077_L09	22	a	H	
-2077_L09	23	[psi]	H	
-2077_L09	24	w:n	H	
-2077_L09	25	w:bootehuÿs	H	
-2077_L09	26	w:voor	H	
-2077_L09	27	w:d'	H	
-2077_L09	28	w:Ed,	H	
-2077_L09	29	w:Directie's	H	
-2077_L09	30	w:Vaartuÿgen	H	
-2077_L09	31	w:o	H	
-2077_L09	32	[psi]	H	
-2077_L09	33	g	H	
-2077_L09	34	5	H	
-2077_L09	35	t	H	
-2077_L09	36	6	H	
-2077_L09	37	[lambda]	M	A:[delta] B:[lambda]; reconciled M: lambda-like stroke, no base; map line crosses it
-2077_L09	38	[hash]	H	
-2077_L09	39	r	H	
-2077_L10	0	[dot]	H	
-2077_L10	1	[lambda]	H	
-2077_L10	2	m	H	
-2077_L10	3	[h-loop]	H	
-2077_L10	4	l	H	
-2077_L10	5	[s-dot]	M	A:[?] B:[s-dot]; reconciled M: s with dot below
-2077_L10	6	a	H	
-2077_L10	7	[u-dots]	H	
-2077_L10	8	7	H	NAME [r-rot]->7
-2077_L10	9	l	H	
-2077_L10	10	5	H	
-2077_L10	11	[delta]	H	
-2077_L10	12	[h-loop]	H	
-2077_L10	13	4	H	
-2077_L10	14	[delta]	H	
-2077_L10	15	x	H	
-2077_L10	16	[lambda]	H	
-2077_L10	17	3	H	
-2077_L10	18	o	H	
-2077_L10	19	[d-loop]	M	A:3 B:[d-loop]; reconciled M: d with ascender curling left; map line crosses it
-2077_L10	20	[hash]	H	
-2077_L10	21	[kappa]	H	
-2077_L10	22	o	H	
-2077_L10	23	4	H	
-2077_L10	24	x	H	
-2077_L10	25	p	H	
-2077_L10	26	r	H	
-2077_L10	27	[u-dots]	H	
-2077_L10	28	[hash]	H	
-2077_L10	29	[pi]	M	A:[delta] B:[pi]; reconciled M: inverted V with bar after hash, as L08 pos50
-2077_L10	30	g	H	
-2077_L10	31	7	H	NAME [r-rot]->7
-2077_L10	32	w:p	H	
-2077_L10	33	[v-tall]	H	NAME [c-curl]->[v-tall]
-2077_L10	34	[delta]	H	
-2077_L10	35	6	H	
-2077_L10	36	[psi]	H	
-2077_L10	37	3	H	
-2077_L10	38	o	H	
-2077_L10	39	l	H	
-2077_L10	40	3	H	
-2077_L10	41	6	H	
-2077_L10	42	v	H	
-2077_L10	43	7	H	NAME [r-rot]->7
-2077_L10	44	[w-tilde]	H	
-2077_L10	45	3	M	A:3 B:[sigma]; reconciled M: 3-like glyph after w-tilde
-2077_L10	46	[v-tall]	M	A:[psi] B:[c-curl]; reconciled M: curly tall looped shape, same as p-entry first glyph, not a trident; NAME [c-curl]->[v-tall]
-2077_L10	47	[lambda]	H	
-2077_L10	48	a	H	
-2077_L10	49	g	H	
-2077_L10	50	[d-dot]	M	A:[d-hook] B:[d-dot]; reconciled M: d-hook-like bowl with dot/loop above
-2077_L10	51	[hash]	H	
-2077_L10	52	5	M	A:s B:5; reconciled M: 5-like shape after hash
-2077_L10	53	4	H	
-2077_L10	54	3	H	
-2077_L10	55	l	H	
-2077_L10	56	w:q	H	
-2077_L10	57	[delta]	H	
-2077_L10	58	o	H	
-2077_L10	59	[lambda]	H	
-2077_L10	60	m	H	
-2077_L10	61	g	H	
-2077_L10	62	c	H	
-2077_L10	63	3	H	
-2077_L10	64	o	H	
-2077_L10	65	m	H	
-2077_L10	66	[sigma]	M	A:[?] B:[sigma]; reconciled M: 6-like bowl before closing ditto mark
-2077_L10	67	w:,,	H	
-2077_L11	0	[v-tall]	H	NAME [c-curl]->[v-tall]
-2077_L11	1	x	H	
-2077_L11	2	6	H	
-2077_L11	3	[psi]	H	
-2077_L11	4	7	H	NAME [r-rot]->7
-2077_L11	5	o	H	
-2077_L11	6	l	H	
-2077_L11	7	a	H	
-2077_L11	8	[h-loop]	H	
-2077_L11	9	[amp]	H	
-2077_L11	10	[u-dots]	H	
-2077_L11	11	[hash]	H	
-2077_L11	12	[h-loop]	H	
-2077_L11	13	[lambda]	H	
-2077_L11	14	3	H	
-2077_L11	15	a	H	
-2077_L11	16	o	H	
-2077_L11	17	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right
-2077_L11	18	[h-loop]	H	
-2077_L11	19	g	H	
-2077_L11	20	[psi]	H	
-2077_L11	21	b	H	
-2077_L11	22	[delta]	H	
-2077_L11	23	[u-dots]	H	
-2077_L11	24	3	H	
-2077_L11	25	o	H	
-2077_L11	26	w:r	H	
-2077_L11	27	g	H	
-2077_L11	28	[pi]	H	
-2077_L11	29	g	H	
-2077_L11	30	[f-loop]	H	
-2077_L11	31	6	H	
-2077_L11	32	5	H	
-2077_L11	33	[hash]	H	
-2077_L11	34	[pi]	H	
-2077_L11	35	o	H	
-2077_L11	36	v	H	
-2077_L11	37	[dot]	H	
-2077_L11	38	[delta]	H	
-2077_L11	39	w	H	
-2077_L11	40	[f-loop]	H	
-2077_L11	41	[sigma]	M	A:6 B:[sigma]; reconciled M: 6/sigma ambiguous bowl after f-loop; leans right
-2077_L11	42	v	H	
-2077_L11	43	x	H	
-2077_L11	44	[h-loop]	H	
-2077_L11	45	[lambda]	H	
-2077_L11	46	[amp]	H	
-2077_L11	47	v	H	
-2077_L11	48	3	H	
-2077_L11	49	g	H	
-2077_L11	50	[delta]	H	
-2077_L11	51	o	H	
-2077_L11	52	l	H	
-2077_L11	53	m	H	
-2077_L11	54	[psi]	H	
-2077_L11	55	[pi]	H	
-2077_L11	56	l	H	
-2077_L11	57	6	H	
-2077_L11	58	[psi]	H	
-2077_L11	59	[v-tall]	H	NAME [c-curl]->[v-tall]
-2077_L11	60	s	M	A:s B:[s-loop]; reconciled M: small round s after c-curl
-2077_L11	61	[f-loop]	M	A:[f-loop] B:-; reconciled M: long looped f/s present, crossed by map diagonal
-2077_L11	62	o	H	
-2077_L11	63	t	H	
-2077_L11	64	s	H	
-2077_L11	65	3	H	
-2077_L11	66	o	H	
-2077_L11	67	t	H	
-2077_L11	68	3	H	
-2077_L11	69	7	H	NAME [r-rot]->7
-2077_L11	70	[h-loop]	H	
-2077_L12	0	w:seer	H	
-2077_L12	1	w:defect	H	
-2077_L12	2	w:gebouw	H	
-2077_L12	3	w:s	H	
-2077_L12	4	w:Cöps	M	A:<Cörps> B:<Cöps>; reconciled M: reads Cöps; no separate r seen
-2077_L12	5	w:de	H	
-2077_L12	6	w:garde	H	
-2077_L12	7	w:t	H	
-2077_L12	8	[d-loop]	H	
-2077_L12	9	[delta]	H	
-2077_L12	10	b	H	
-2077_L12	11	b	H	
-2077_L12	12	3	H	
-2077_L12	13	o	H	
-2077_L12	14	t	H	
-2077_L12	15	[hash]	H	
-2077_L12	16	[kappa]	H	
-2077_L12	17	b	H	
-2077_L12	18	[dot]	H	
-2077_L12	19	v	H	
-2077_L12	20	3	H	
-2077_L12	21	[Q-bar]	M	A:[Q-bar] B:[phi]; reconciled M: Q-like bowl with stroke through descender
-2077_L12	22	r	H	
-2077_L12	23	[v-tall]	H	NAME [c-curl]->[v-tall]
-2077_L12	24	[lambda]	H	
-2077_L12	25	w:u	H	
-2077_L12	26	g	H	
-2077_L12	27	[delta]	H	
-2077_L12	28	[d-loop]	H	
-2077_L12	29	[hash]	H	
-2077_L12	30	o	H	
-2077_L12	31	x	H	
-2077_L12	32	[lambda]	H	
-2077_L12	33	[pi]	H	
-2077_L12	34	o	H	
-2077_L12	35	[f-loop]	H	
-2077_L12	36	5	H	
-2077_L12	37	[u-dots]	H	
-2077_L12	38	5	H	
-2077_L12	39	[hash]	H	
-2077_L12	40	[kappa]	H	
-2077_L12	41	o	H	
-2077_L12	42	v	H	
-2077_L12	43	[dot]	H	
-2077_L12	44	[delta]	H	
-2077_L12	45	o	H	
-2077_L12	46	[lambda]	H	
-2077_L12	47	s	H	
-2077_L12	48	g	H	
-2077_L12	49	c	H	
-2077_L12	50	3	H	
-2077_L12	51	w:,,	H	
-2077_L13	0	w:,,	H	
-2077_L13	1	o	H	
-2077_L13	2	m	H	
-2077_L13	3	[d-hook]	H	
-2077_L13	4	w:v	H	
-2077_L13	5	w:gebouw	H	
-2077_L13	6	w:tot	H	
-2077_L13	7	w:berging	H	
-2077_L13	8	w:van	H	
-2077_L13	9	w:hout	H	
-2077_L13	10	w:materialien	H	
-2077_L13	11	w:&:	M	A:<&:> B:<N:o>; reconciled M: ampersand-like shape with superscript o over a bar
-2077_L13	12	w:w	H	
-2077_L13	13	w:gevangenhuÿsen	H	
-2077_L13	14	w:x	H	
-2077_L13	15	w:nog	H	
-2077_L13	16	w:een	H	
-2077_L13	17	w:oud	H	
-2077_L14	0	w:gebouw,	M	A:<gebouw,> B:<gebouw>; reconciled M: comma after gebouw
-2077_L14	1	w:dienende	H	
-2077_L14	2	w:tot	H	
-2077_L14	3	[hash]	H	
-2077_L14	4	g	H	
-2077_L14	5	t	H	
-2077_L14	6	[u-dots]	H	
-2077_L14	7	[delta]	H	
-2077_L14	8	g	H	
-2077_L14	9	[x-dots]	M	A:x B:[x-dots]; reconciled M: x in repeated u-dots delta g x word; take x-dots as L08
-2077_L14	10	[psi]	H	
-2077_L14	11	t	H	
-2077_L14	12	l	H	
-2077_L14	13	[amp]	H	
-2077_L14	14	[lambda]	H	
-2077_L14	15	[kappa]	H	
-2077_L14	16	r	H	
-2077_L14	17	[dot]	H	
-2077_L14	18	[d-loop]	H	
-2077_L14	19	3	H	
-2077_L14	20	o	H	
-2077_L14	21	g	H	
-2077_L14	22	[f-loop]	H	
-2077_L14	23	l	H	
-2077_L14	24	g	H	
-2077_L14	25	5	H	
-2077_L14	26	[delta]	H	
-2077_L14	27	l	H	
-2077_L14	28	v	H	
-2077_L14	29	o	H	
-2077_L14	30	[hash]	H	
-2077_L14	31	[pi]	H	
-2077_L14	32	g	H	
-2077_L14	33	3	H	
-2077_L14	34	g	H	
-2077_L14	35	[hash]	H	
-2077_L14	36	7	H	NAME [r-rot]->7
-2077_L14	37	v	H	
-2077_L14	38	a	H	
-2077_L14	39	o	H	
-2077_L14	40	[d-hook]	M	A:6 B:[d-hook]; reconciled M: bowl with tall ascender hooked right
-2077_L14	41	[h-loop]	H	
-2077_L14	42	3	M	A:3 B:[sigma]; reconciled M: 3-like after h-loop
-2077_L14	43	[delta]	H	
-2077_L14	44	[h-loop]	H	
-2077_L14	45	[lambda]	H	
-2077_L15	0	[u-dots]	H	
-2077_L15	1	x	H	
-2077_L15	2	g	H	
-2077_L15	3	[delta]	H	
-2077_L15	4	[psi]	H	
-2077_L15	5	t	H	
-2077_L15	6	[h-loop]	H	
-2077_L15	7	[sigma]	M	A:5 B:[sigma]; reconciled M: 6-like bowl leaning right before p
-2077_L15	8	p	H	
-2077_L15	9	l	H	
-2077_L15	10	[hash]	H	
-2077_L15	11	[pi]	H	
-2077_L15	12	o	H	
-2077_L15	13	g	H	
-2077_L15	14	[kappa]	H	
-2077_L15	15	g	H	
-2077_L15	16	w:ÿ	H	
-2077_L15	17	[delta]	H	
-2077_L15	18	o	H	
-2077_L15	19	[psi]	H	
-2077_L15	20	3	H	
-2077_L15	21	l	H	
-2077_L15	22	x	H	
-2077_L15	23	7	H	NAME [r-rot]->7
-2077_L15	24	g	H	
-2077_L15	25	5	H	
-2077_L15	26	[hash]	H	
-2077_L15	27	[pi]	H	
-2077_L15	28	o	H	
-2077_L15	29	b	H	
-2077_L15	30	g	H	
-2077_L15	31	3	H	
-2077_L15	32	[f-loop]	H	
-2077_L15	33	[h-loop]	H	
-2077_L15	34	g	H	
-2077_L15	35	7	H	NAME [r-rot]->7
-2077_L15	36	4	H	
-2077_L15	37	3	H	
-2077_L15	38	7	H	NAME [r-rot]->7
-2077_L15	39	o	H	
-2077_L15	40	[amp]	H	
-2077_L15	41	g	H	
-2077_L15	42	7	H	NAME [r-rot]->7
-2077_L15	43	4	H	
-2077_L15	44	3	H	
-2077_L15	45	7	H	NAME [r-rot]->7
-2077_L15	46	o	H	
-2077_L15	47	[u-dots]	H	
-2077_L15	48	[delta]	H	
-2077_L15	49	x	H	
-2077_L15	50	b	H	
-2077_L15	51	7	H	NAME [r-rot]->7
-2077_L15	52	o	H	
-2077_L15	53	6	H	
-2077_L15	54	w:,,	H	
-2077_L16	0	w:,,	M	A:<,,> B:-; reconciled M: ditto/comma mark at line start
-2077_L16	1	4	H	
-2077_L16	2	8	H	
-2077_L16	3	[h-loop]	H	
-2077_L16	4	b	H	
-2077_L16	5	3	H	
-2077_L16	6	g	H	
-2077_L17	0	w:z.	H	
-2077_L17	1	w:Cipiers=wooning	H	A:<Cipiers=wooning> B:<Cipiers>; reconciled H: one hyphenated word Cipiers=wooning
-2077_L17	2	w:α.	H	
-2077_L17	3	w:Smeederÿ	H	
-2077_L17	4	w:heel	H	
-2077_L17	5	w:defect	H	
-2077_L17	6	w:@	M	A:<@> B:<[c-at]>; reconciled M: use <@>; c enclosing a small c/a, @-like
-2077_L17	7	w:eene	H	
-2077_L17	8	w:oude	H	
-2077_L18	0	w:kalkloots	H	
-2077_L18	1	w:γ.	M	A:<γ.> B:<y.>; reconciled M: use <γ.>; y-like shape; label sequence alpha @ gamma delta
-2077_L18	2	[MM]	M	A:[hand-box] B:[MM]; reconciled M: underlined M-like/MM shape
-2077_L18	3	[u-dots]	H	
-2077_L18	4	[delta]	H	
-2077_L18	5	g	H	
-2077_L18	6	x	H	
-2077_L18	7	[psi]	H	
-2077_L18	8	t	H	
-2077_L18	9	[h-loop]	H	
-2077_L18	10	[lambda]	H	
-2077_L18	11	[f-loop]	H	
-2077_L18	12	3	H	
-2077_L18	13	w:δ.	H	
-2077_L18	14	[u-dots]	H	
-2077_L18	15	[delta]	H	
-2077_L18	16	g	H	
-2077_L18	17	x	H	
-2077_L18	18	[psi]	H	
-2077_L18	19	t	H	
-2077_L18	20	[h-loop]	H	
-2077_L18	21	e	H	
-2077_L18	22	[lambda]	H	
-2077_L18	23	[hash]	H	
-2077_L18	24	[lambda]	H	
-2077_L18	25	[d-loop]	H	
-2077_L18	26	a	H	
-2077_L18	27	o	H	
-2077_L18	28	g	H	
-2077_L18	29	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right
-2077_L18	30	[h-loop]	H	
-2077_L18	31	g	H	
-2077_L18	32	5	H	
-2077_L18	33	[delta]	H	
-2077_L18	34	l	H	
-2077_L19	0	[d-loop]	H	
-2077_L19	1	o	H	
-2077_L19	2	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right
-2077_L19	3	l	H	
-2077_L19	4	[lambda]	H	
-2077_L19	5	[psi]	H	
-2077_L19	6	s	M	A:s B:[sigma]; reconciled M: small round s after psi
-2077_L19	7	5	H	
-2077_L19	8	t	H	
-2077_L19	9	[lambda]	H	
-2077_L19	10	3	H	
-2077_L19	11	l	H	
-2077_L19	12	[amp]	H	
-2077_L19	13	5	H	
-2077_L19	14	3	H	
-2077_L19	15	o	H	
-2077_L19	16	v	H	
-2077_L19	17	7	H	NAME [r-rot]->7
-2077_L19	18	o	H	
-2077_L19	19	a	H	
-2077_L19	20	[d-loop]	H	
-2077_L19	21	o	H	
-2077_L19	22	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right
-2077_L19	23	[delta]	H	A:[delta] B:-; reconciled H: separate hollow triangle before h-loop
-2077_L19	24	[h-loop]	H	
-2077_L19	25	[lambda]	H	
-2077_L19	26	[u-dots]	H	
-2077_L19	27	[delta]	H	
-2077_L19	28	[psi]	M	A:- B:[psi]; reconciled M: trident before c-curl
-2077_L19	29	[v-tall]	H	NAME [c-curl]->[v-tall]
-2077_L19	30	m	H	
-2077_L19	31	l	H	
-2077_L19	32	7	H	NAME [r-rot]->7
-2077_L19	33	[psi]	H	
-2077_L19	34	w:η.	M	A:<η.> B:<ŋ.>; reconciled M: use <η.>; n with long right descender, tick above
-2077_L19	35	w:Citerne.	H	A:<Citerne.> B:<Citerne>; reconciled H: period after Citerne
-2077_L20	0	v	H	
-2077_L20	1	m	H	
-2077_L20	2	[psi]	H	
-2077_L20	3	q	H	
-2077_L20	4	[kappa]	H	
-2077_L20	5	6	H	
-2077_L20	6	[f-loop]	H	
-2077_L20	7	[lambda]	H	
-2077_L20	8	s	M	A:s B:3; reconciled M: small round s after lambda
-2077_L20	9	3	H	
-2077_L20	10	v	H	
-2077_L20	11	3	H	
-2077_L20	12	o	H	
-2077_L20	13	[d-loop]	H	
-2077_L20	14	[delta]	H	
-2077_L20	15	[lambda]	H	
-2077_L20	16	r	H	
-2077_L20	17	7	H	NAME [r-rot]->7
-2077_L20	18	o	H	
-2077_L20	19	a	H	
-2077_L20	20	t	H	
-2077_L20	21	[d-loop]	H	
-2077_L20	22	l	H	
+# R10-SUR (6 Oct 2026): [sigma] split into [sigma-knot] (L11:17) and [sigma-hook] (L10:66), passes/sigma_split_r10/split.tsv;
+# column sign_r9 = reader code before the split.
+line	pos	sign	conf	note	sign_r9
+2077_L01	0	S	H		S
+2077_L01	1	c	H		c
+2077_L01	2	[delta]	H		[delta]
+2077_L01	3	[h-loop]	H		[h-loop]
+2077_L01	4	[ezh-dot]	M	A:[ezh-dot] B:[ezh]; reconciled M: ezh-like glyph with a small dot to its left after h-loop	[ezh-dot]
+2077_L01	5	l	H		l
+2077_L01	6	[psi]	H		[psi]
+2077_L01	7	[dot]	H	A:- B:[dot]; reconciled H: clear dot between psi and lambda	[dot]
+2077_L01	8	[lambda]	H		[lambda]
+2077_L01	9	[x-dots]	H		[x-dots]
+2077_L01	10	p	H		p
+2077_L01	11	r	H		r
+2077_L01	12	5	H		5
+2077_L01	13	[delta]	H		[delta]
+2077_L01	14	[h-loop]	H		[h-loop]
+2077_L01	15	w	H		w
+2077_L01	16	3	H		3
+2077_L01	17	[q-bar]	M	A:[4-bowl] B:[q-bar]; reconciled M: q-like bowl with stroke through descender after w 3	[q-bar]
+2077_L01	18	a	H		a
+2077_L01	19	l	H		l
+2077_L01	20	6	H		6
+2077_L01	21	m	H		m
+2077_L01	22	[d-hook]	H		[d-hook]
+2077_L01	23	w	H		w
+2077_L01	24	p	H		p
+2077_L01	25	[h-loop]	H		[h-loop]
+2077_L01	26	[lambda]	H		[lambda]
+2077_L01	27	[dot]	M	A:- B:[dot]; reconciled M: small dot visible between lambda and pi	[dot]
+2077_L01	28	[pi]	H		[pi]
+2077_L02	0	6	H		6
+2077_L02	1	[hash]	H		[hash]
+2077_L02	2	[kappa]	H		[kappa]
+2077_L02	3	x	H		x
+2077_L02	4	g	H		g
+2077_L02	5	[sigma]	M	A:[sigma] B:6; reconciled M: 6-like bowl leaning right, same shape as line-initial sigma	[sigma]
+2077_L02	6	[dot]	H		[dot]
+2077_L02	7	[lambda]	H		[lambda]
+2077_L02	8	[psi]	H		[psi]
+2077_L02	9	3	H		3
+2077_L02	10	g	H		g
+2077_L02	11	5	H		5
+2077_L02	12	7	H	NAME [r-rot]->7	7
+2077_L02	13	[psi]	H		[psi]
+2077_L02	14	3	H		3
+2077_L02	15	a	H		a
+2077_L02	16	v	H		v
+2077_L02	17	[d-hook]	M	A:[d-hook] B:[d-loop]; reconciled M: bowl with tall ascender hooking right (delta-like), not curling back left as the d-loop at pos 23	[d-hook]
+2077_L02	18	7	H	NAME [r-rot]->7	7
+2077_L02	19	o	H		o
+2077_L02	20	[lambda]	H		[lambda]
+2077_L02	21	[dot]	H		[dot]
+2077_L02	22	r	H		r
+2077_L02	23	[d-loop]	H		[d-loop]
+2077_L02	24	r	M	A:r B:[r-rot]; reconciled M: plain small r after d-loop, not the 7-like r-rot	r
+2077_L02	25	g	H		g
+2077_L02	26	[f-loop]	H		[f-loop]
+2077_L02	27	l	H		l
+2077_L02	28	5	H		5
+2077_L02	29	a	M	A:a B:[delta]; reconciled M: small round a, not a hollow triangle	a
+2077_L02	30	l	H		l
+2077_L02	31	v	H		v
+2077_L02	32	3	H		3
+2077_L02	33	l	H		l
+2077_L02	34	[hash]	H		[hash]
+2077_L02	35	[kappa]	H		[kappa]
+2077_L02	36	c	H		c
+2077_L02	37	[h-loop]	H		[h-loop]
+2077_L02	38	[pi]	H		[pi]
+2077_L02	39	g	H		g
+2077_L03	0	[d-loop]	M	A:[d-hook] B:[d-loop]; reconciled M: line-initial bowl whose ascender curls back to the left	[d-loop]
+2077_L03	1	[f-loop]	M	A:[f-loop] B:[s-loop]; reconciled M: use [f-loop]; looped long f/s, no distinct second shape seen across lines	[f-loop]
+2077_L03	2	3	H		3
+2077_L03	3	c	M	A:c B:[sigma]; reconciled M: small open c after 3	c
+2077_L03	4	[psi]	H		[psi]
+2077_L03	5	[lambda]	H		[lambda]
+2077_L03	6	a	H		a
+2077_L03	7	g	H		g
+2077_L03	8	[lambda]	H		[lambda]
+2077_L03	9	7	H	NAME [r-rot]->7	7
+2077_L03	10	[h-loop]	H		[h-loop]
+2077_L03	11	6	H		6
+2077_L03	12	m	H		m
+2077_L03	13	g	H		g
+2077_L03	14	[lambda]	H		[lambda]
+2077_L03	15	[sigma-dot]	M	A:[delta-dot] B:[sigma-dot]; reconciled M: 6-like bowl with dot above, followed by a separate delta	[sigma-dot]
+2077_L03	16	[delta]	H	A:- B:[delta]; reconciled H: separate hollow triangle visible before l	[delta]
+2077_L03	17	l	H		l
+2077_L03	18	6	H		6
+2077_L03	19	[d-loop]	H		[d-loop]
+2077_L03	20	3	H		3
+2077_L03	21	[w-tilde]	H		[w-tilde]
+2077_L03	22	s	H		s
+2077_L03	23	l	H		l
+2077_L03	24	v	H		v
+2077_L03	25	3	H		3
+2077_L03	26	[h-loop]	H		[h-loop]
+2077_L03	27	v	H		v
+2077_L03	28	7	H	NAME [r-rot]->7	7
+2077_L03	29	m	H		m
+2077_L03	30	6	H		6
+2077_L04	0	w:Explicatie	H		w:Explicatie
+2077_L04	1	w:der	H		w:der
+2077_L04	2	w:Signatuuren	H		w:Signatuuren
+2077_L05	0	w:a	H		w:a
+2077_L05	1	[lambda]	H		[lambda]
+2077_L05	2	g	H		g
+2077_L05	3	[hash]	H		[hash]
+2077_L05	4	s	M	A:s B:[r-rot]; reconciled M: small round s after hash	s
+2077_L05	5	e	H		e
+2077_L05	6	3	H		3
+2077_L05	7	o	H		o
+2077_L05	8	l	H		l
+2077_L05	9	7	M	A:r B:[r-rot]; reconciled M: 7-like rotated r before u-dots; NAME [r-rot]->7	7
+2077_L05	10	[u-dots]	H		[u-dots]
+2077_L05	11	a	H		a
+2077_L05	12	[h-loop]	H		[h-loop]
+2077_L05	13	[lambda]	H		[lambda]
+2077_L05	14	w:b	H		w:b
+2077_L05	15	[u-dots]	H		[u-dots]
+2077_L05	16	[delta]	H		[delta]
+2077_L05	17	g	H		g
+2077_L05	18	[x-dots]	M	A:x B:[x-dots]; reconciled M: x in repeated u-dots delta g x sequence; dot(s) seen on same word in L08/L14; take x-dots for consistency	[x-dots]
+2077_L05	19	g	H		g
+2077_L05	20	[delta]	M	A:[delta] B:[a-bar]; reconciled M: hollow triangle with a stroke beneath (possibly underline/ruling)	[delta]
+2077_L05	21	[v-tall]	M	A:[?] B:[c-curl]; reconciled M: curly looped shape similar to entry c c-curl; NAME [c-curl]->[v-tall]	[v-tall]
+2077_L05	22	t	H		t
+2077_L05	23	l	H		l
+2077_L05	24	5	M	A:s B:5; reconciled M: same shape as the 5 in L01 '5 delta h'	5
+2077_L05	25	[delta]	H		[delta]
+2077_L05	26	[h-loop]	H		[h-loop]
+2077_L05	27	[dot]	H		[dot]
+2077_L05	28	[lambda]	H		[lambda]
+2077_L05	29	[psi]	H		[psi]
+2077_L05	30	3	H		3
+2077_L05	31	g	H		g
+2077_L05	32	5	H		5
+2077_L05	33	7	H	NAME [r-rot]->7	7
+2077_L05	34	w:c	H		w:c
+2077_L05	35	[psi]	H		[psi]
+2077_L05	36	3	H		3
+2077_L05	37	[v-tall]	H	NAME [c-curl]->[v-tall]	[v-tall]
+2077_L05	38	o	H		o
+2077_L05	39	a	H		a
+2077_L05	40	[lambda]	H		[lambda]
+2077_L05	41	[delta]	H		[delta]
+2077_L05	42	o	H		o
+2077_L05	43	t	H		t
+2077_L05	44	3	H		3
+2077_L05	45	w:d	H		w:d
+2077_L05	46	s	H		s
+2077_L05	47	[delta]	H		[delta]
+2077_L05	48	x	H		x
+2077_L05	49	o	H		o
+2077_L05	50	y	H		y
+2077_L05	51	7	H	NAME [r-rot]->7	7
+2077_L05	52	[psi]	H		[psi]
+2077_L05	53	[lambda]	H		[lambda]
+2077_L05	54	[delta]	H		[delta]
+2077_L05	55	g	H		g
+2077_L05	56	[ezh-dot]	M	A:[ezh-dot] B:[r-rot]; reconciled M: ezh-like glyph with dot, as in L01 pos4 before l	[ezh-dot]
+2077_L05	57	l	H		l
+2077_L05	58	b	H		b
+2077_L05	59	[pi]	H		[pi]
+2077_L05	60	3	H		3
+2077_L05	61	[lambda]	H		[lambda]
+2077_L05	62	[psi]	H		[psi]
+2077_L05	63	s	M	A:s B:[sigma]; reconciled M: small round s after psi	s
+2077_L05	64	[f-loop]	M	A:[f-loop] B:[s-loop]; reconciled M: use [f-loop]	[f-loop]
+2077_L05	65	5	M	A:5 B:3; reconciled M: 5-like with flag top	5
+2077_L05	66	t	H		t
+2077_L05	67	6	H		6
+2077_L06	0	w:e	H		w:e
+2077_L06	1	[h-loop]	H		[h-loop]
+2077_L06	2	3	H		3
+2077_L06	3	a	H		a
+2077_L06	4	g	H		g
+2077_L06	5	r	M	A:r B:[r-rot]; reconciled M: plain r in 'a g r o'	r
+2077_L06	6	o	H		o
+2077_L06	7	s	M	A:s B:[sigma]; reconciled M: small round s	s
+2077_L06	8	[f-loop]	M	A:[f-loop] B:[s-loop]; reconciled M: use [f-loop]	[f-loop]
+2077_L06	9	e	H		e
+2077_L06	10	t	H		t
+2077_L06	11	6	H		6
+2077_L06	12	7	H	NAME [r-rot]->7	7
+2077_L06	13	l	H		l
+2077_L06	14	w:e	H		w:e
+2077_L06	15	w:e	H		w:e
+2077_L06	16	w:e	H		w:e
+2077_L06	17	w:e	H		w:e
+2077_L06	18	[hash]	H		[hash]
+2077_L06	19	5	H		5
+2077_L06	20	v	H		v
+2077_L06	21	3	H		3
+2077_L06	22	3	H		3
+2077_L06	23	[h-loop]	H		[h-loop]
+2077_L06	24	5	H		5
+2077_L06	25	a	H		a
+2077_L06	26	[sigma]	H		[sigma]
+2077_L06	27	e	H		e
+2077_L06	28	[delta]	H		[delta]
+2077_L06	29	g	H		g
+2077_L06	30	e	H		e
+2077_L06	31	3	H		3
+2077_L06	32	l	H		l
+2077_L06	33	[h-loop]	H		[h-loop]
+2077_L06	34	r	M	A:r B:[r-rot]; reconciled M: plain r after h-loop	r
+2077_L06	35	[d-hook]	M	A:[d-hook] B:[d-dots]; reconciled M: bowl with tall ascender hooked right; possible mark above not clear	[d-hook]
+2077_L06	36	g	H		g
+2077_L06	37	3	H		3
+2077_L06	38	o	H		o
+2077_L06	39	[sigma]	M	A:[?] B:[sigma]; reconciled M: 6-like bowl leaning right between o and s	[sigma]
+2077_L06	40	s	M	A:s B:[s-loop]; reconciled M: short round s, not long looped s	s
+2077_L06	41	t	H		t
+2077_L06	42	6	H		6
+2077_L06	43	3	H		3
+2077_L06	44	l	H		l
+2077_L06	45	w:f	H		w:f
+2077_L06	46	w:Menagerie	H		w:Menagerie
+2077_L06	47	w:ε	H		w:ε
+2077_L06	48	w:Neegerhuijsen	H		w:Neegerhuijsen
+2077_L06	49	w:voor	H		w:voor
+2077_L06	50	w:d'	H		w:d'
+2077_L07	0	w:Edl.	H		w:Edl.
+2077_L07	1	w:Directie	H		w:Directie
+2077_L07	2	w:Slaaven	H		w:Slaaven
+2077_L07	3	w:g	H		w:g
+2077_L07	4	w:huÿs	H		w:huÿs
+2077_L07	5	w:voor	H		w:voor
+2077_L07	6	w:den	H		w:den
+2077_L07	7	w:Opsigter	H		w:Opsigter
+2077_L07	8	w:h	H		w:h
+2077_L07	9	w:d:to	H		w:d:to
+2077_L07	10	w:voor	H		w:voor
+2077_L07	11	w:de	H		w:de
+2077_L07	12	w:Ambagts	H		w:Ambagts
+2077_L07	13	w:Slaaven	H		w:Slaaven
+2077_L07	14	w:van	H		w:van
+2077_L07	15	w:de	H		w:de
+2077_L07	16	w:Mon.	M	A:<Mon.> B:<Mon>; reconciled M: period-like mark after Mon	w:Mon.
+2077_L08	0	w:,,teerings	M	A:<,,teerings> B:<teerings>; reconciled M: ditto/comma mark precedes teerings	w:,,teerings
+2077_L08	1	w:Kamer	H		w:Kamer
+2077_L08	2	w:i	H		w:i
+2077_L08	3	[u-dots]	H		[u-dots]
+2077_L08	4	[delta]	H		[delta]
+2077_L08	5	g	H		g
+2077_L08	6	[x-dots]	M	A:x B:[x-dots]; reconciled M: x with dot visible	[x-dots]
+2077_L08	7	[psi]	H		[psi]
+2077_L08	8	t	H		t
+2077_L08	9	[h-loop]	H		[h-loop]
+2077_L08	10	3	H		3
+2077_L08	11	l	H		l
+2077_L08	12	5	H		5
+2077_L08	13	[delta]	H		[delta]
+2077_L08	14	l	H		l
+2077_L08	15	e	H		e
+2077_L08	16	m	H		m
+2077_L08	17	e	H		e
+2077_L08	18	[sigma]	H		[sigma]
+2077_L08	19	a	H		a
+2077_L08	20	[psi]	H		[psi]
+2077_L08	21	w:k	H		w:k
+2077_L08	22	v	H		v
+2077_L08	23	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right after v	[sigma]
+2077_L08	24	[lambda]	H		[lambda]
+2077_L08	25	[hash]	H		[hash]
+2077_L08	26	3	H		3
+2077_L08	27	[delta]	H		[delta]
+2077_L08	28	l	H		l
+2077_L08	29	[u-dots]	H		[u-dots]
+2077_L08	30	[delta]	H		[delta]
+2077_L08	31	[lambda]	H		[lambda]
+2077_L08	32	3	H		3
+2077_L08	33	7	H	NAME [r-rot]->7	7
+2077_L08	34	o	H		o
+2077_L08	35	m	H		m
+2077_L08	36	[delta]	H		[delta]
+2077_L08	37	g	H		g
+2077_L08	38	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right after g	[sigma]
+2077_L08	39	3	H		3
+2077_L08	40	[h-loop]	H		[h-loop]
+2077_L08	41	w:l	H		w:l
+2077_L08	42	4	H		4
+2077_L08	43	[delta]	H		[delta]
+2077_L08	44	x	H		x
+2077_L08	45	[lambda]	H		[lambda]
+2077_L08	46	3	H		3
+2077_L08	47	o	H		o
+2077_L08	48	[u-dots]	H		[u-dots]
+2077_L08	49	[hash]	H		[hash]
+2077_L08	50	[pi]	M	A:[delta] B:[pi]; reconciled M: inverted V with bar after hash	[pi]
+2077_L08	51	g	H		g
+2077_L08	52	7	H	NAME [r-rot]->7	7
+2077_L08	53	w:m	H		w:m
+2077_L08	54	4	H		4
+2077_L08	55	[hash]	H		[hash]
+2077_L08	56	[kappa]	H		[kappa]
+2077_L09	0	l	H		l
+2077_L09	1	s	M	A:s B:[sigma]; reconciled M: small round s between l and h-loop	s
+2077_L09	2	[h-loop]	H		[h-loop]
+2077_L09	3	g	H		g
+2077_L09	4	5	H		5
+2077_L09	5	[delta]	H		[delta]
+2077_L09	6	[h-loop]	H		[h-loop]
+2077_L09	7	v	H		v
+2077_L09	8	3	H		3
+2077_L09	9	[v-tall]	H	NAME [c-curl]->[v-tall]	[v-tall]
+2077_L09	10	[hash]	H		[hash]
+2077_L09	11	[u-dots]	H		[u-dots]
+2077_L09	12	[f-loop]	H		[f-loop]
+2077_L09	13	3	H		3
+2077_L09	14	6	H		6
+2077_L09	15	3	H		3
+2077_L09	16	[delta]	H		[delta]
+2077_L09	17	l	H		l
+2077_L09	18	e	H		e
+2077_L09	19	m	H		m
+2077_L09	20	e	H		e
+2077_L09	21	[sigma]	H		[sigma]
+2077_L09	22	a	H		a
+2077_L09	23	[psi]	H		[psi]
+2077_L09	24	w:n	H		w:n
+2077_L09	25	w:bootehuÿs	H		w:bootehuÿs
+2077_L09	26	w:voor	H		w:voor
+2077_L09	27	w:d'	H		w:d'
+2077_L09	28	w:Ed,	H		w:Ed,
+2077_L09	29	w:Directie's	H		w:Directie's
+2077_L09	30	w:Vaartuÿgen	H		w:Vaartuÿgen
+2077_L09	31	w:o	H		w:o
+2077_L09	32	[psi]	H		[psi]
+2077_L09	33	g	H		g
+2077_L09	34	5	H		5
+2077_L09	35	t	H		t
+2077_L09	36	6	H		6
+2077_L09	37	[lambda]	M	A:[delta] B:[lambda]; reconciled M: lambda-like stroke, no base; map line crosses it	[lambda]
+2077_L09	38	[hash]	H		[hash]
+2077_L09	39	r	H		r
+2077_L10	0	[dot]	H		[dot]
+2077_L10	1	[lambda]	H		[lambda]
+2077_L10	2	m	H		m
+2077_L10	3	[h-loop]	H		[h-loop]
+2077_L10	4	l	H		l
+2077_L10	5	[s-dot]	M	A:[?] B:[s-dot]; reconciled M: s with dot below	[s-dot]
+2077_L10	6	a	H		a
+2077_L10	7	[u-dots]	H		[u-dots]
+2077_L10	8	7	H	NAME [r-rot]->7	7
+2077_L10	9	l	H		l
+2077_L10	10	5	H		5
+2077_L10	11	[delta]	H		[delta]
+2077_L10	12	[h-loop]	H		[h-loop]
+2077_L10	13	4	H		4
+2077_L10	14	[delta]	H		[delta]
+2077_L10	15	x	H		x
+2077_L10	16	[lambda]	H		[lambda]
+2077_L10	17	3	H		3
+2077_L10	18	o	H		o
+2077_L10	19	[d-loop]	M	A:3 B:[d-loop]; reconciled M: d with ascender curling left; map line crosses it	[d-loop]
+2077_L10	20	[hash]	H		[hash]
+2077_L10	21	[kappa]	H		[kappa]
+2077_L10	22	o	H		o
+2077_L10	23	4	H		4
+2077_L10	24	x	H		x
+2077_L10	25	p	H		p
+2077_L10	26	r	H		r
+2077_L10	27	[u-dots]	H		[u-dots]
+2077_L10	28	[hash]	H		[hash]
+2077_L10	29	[pi]	M	A:[delta] B:[pi]; reconciled M: inverted V with bar after hash, as L08 pos50	[pi]
+2077_L10	30	g	H		g
+2077_L10	31	7	H	NAME [r-rot]->7	7
+2077_L10	32	w:p	H		w:p
+2077_L10	33	[v-tall]	H	NAME [c-curl]->[v-tall]	[v-tall]
+2077_L10	34	[delta]	H		[delta]
+2077_L10	35	6	H		6
+2077_L10	36	[psi]	H		[psi]
+2077_L10	37	3	H		3
+2077_L10	38	o	H		o
+2077_L10	39	l	H		l
+2077_L10	40	3	H		3
+2077_L10	41	6	H		6
+2077_L10	42	v	H		v
+2077_L10	43	7	H	NAME [r-rot]->7	7
+2077_L10	44	[w-tilde]	H		[w-tilde]
+2077_L10	45	3	M	A:3 B:[sigma]; reconciled M: 3-like glyph after w-tilde	3
+2077_L10	46	[v-tall]	M	A:[psi] B:[c-curl]; reconciled M: curly tall looped shape, same as p-entry first glyph, not a trident; NAME [c-curl]->[v-tall]	[v-tall]
+2077_L10	47	[lambda]	H		[lambda]
+2077_L10	48	a	H		a
+2077_L10	49	g	H		g
+2077_L10	50	[d-dot]	M	A:[d-hook] B:[d-dot]; reconciled M: d-hook-like bowl with dot/loop above	[d-dot]
+2077_L10	51	[hash]	H		[hash]
+2077_L10	52	5	M	A:s B:5; reconciled M: 5-like shape after hash	5
+2077_L10	53	4	H		4
+2077_L10	54	3	H		3
+2077_L10	55	l	H		l
+2077_L10	56	w:q	H		w:q
+2077_L10	57	[delta]	H		[delta]
+2077_L10	58	o	H		o
+2077_L10	59	[lambda]	H		[lambda]
+2077_L10	60	m	H		m
+2077_L10	61	g	H		g
+2077_L10	62	c	H		c
+2077_L10	63	3	H		3
+2077_L10	64	o	H		o
+2077_L10	65	m	H		m
+2077_L10	66	[sigma-hook]	M	A:[?] B:[sigma]; reconciled M: 6-like bowl before closing ditto mark; R10-SUR split [sigma]->[sigma-hook]	[sigma]
+2077_L10	67	w:,,	H		w:,,
+2077_L11	0	[v-tall]	H	NAME [c-curl]->[v-tall]	[v-tall]
+2077_L11	1	x	H		x
+2077_L11	2	6	H		6
+2077_L11	3	[psi]	H		[psi]
+2077_L11	4	7	H	NAME [r-rot]->7	7
+2077_L11	5	o	H		o
+2077_L11	6	l	H		l
+2077_L11	7	a	H		a
+2077_L11	8	[h-loop]	H		[h-loop]
+2077_L11	9	[amp]	H		[amp]
+2077_L11	10	[u-dots]	H		[u-dots]
+2077_L11	11	[hash]	H		[hash]
+2077_L11	12	[h-loop]	H		[h-loop]
+2077_L11	13	[lambda]	H		[lambda]
+2077_L11	14	3	H		3
+2077_L11	15	a	H		a
+2077_L11	16	o	H		o
+2077_L11	17	[sigma-knot]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right; R10-SUR split [sigma]->[sigma-knot]	[sigma]
+2077_L11	18	[h-loop]	H		[h-loop]
+2077_L11	19	g	H		g
+2077_L11	20	[psi]	H		[psi]
+2077_L11	21	b	H		b
+2077_L11	22	[delta]	H		[delta]
+2077_L11	23	[u-dots]	H		[u-dots]
+2077_L11	24	3	H		3
+2077_L11	25	o	H		o
+2077_L11	26	w:r	H		w:r
+2077_L11	27	g	H		g
+2077_L11	28	[pi]	H		[pi]
+2077_L11	29	g	H		g
+2077_L11	30	[f-loop]	H		[f-loop]
+2077_L11	31	6	H		6
+2077_L11	32	5	H		5
+2077_L11	33	[hash]	H		[hash]
+2077_L11	34	[pi]	H		[pi]
+2077_L11	35	o	H		o
+2077_L11	36	v	H		v
+2077_L11	37	[dot]	H		[dot]
+2077_L11	38	[delta]	H		[delta]
+2077_L11	39	w	H		w
+2077_L11	40	[f-loop]	H		[f-loop]
+2077_L11	41	[sigma]	M	A:6 B:[sigma]; reconciled M: 6/sigma ambiguous bowl after f-loop; leans right	[sigma]
+2077_L11	42	v	H		v
+2077_L11	43	x	H		x
+2077_L11	44	[h-loop]	H		[h-loop]
+2077_L11	45	[lambda]	H		[lambda]
+2077_L11	46	[amp]	H		[amp]
+2077_L11	47	v	H		v
+2077_L11	48	3	H		3
+2077_L11	49	g	H		g
+2077_L11	50	[delta]	H		[delta]
+2077_L11	51	o	H		o
+2077_L11	52	l	H		l
+2077_L11	53	m	H		m
+2077_L11	54	[psi]	H		[psi]
+2077_L11	55	[pi]	H		[pi]
+2077_L11	56	l	H		l
+2077_L11	57	6	H		6
+2077_L11	58	[psi]	H		[psi]
+2077_L11	59	[v-tall]	H	NAME [c-curl]->[v-tall]	[v-tall]
+2077_L11	60	s	M	A:s B:[s-loop]; reconciled M: small round s after c-curl	s
+2077_L11	61	[f-loop]	M	A:[f-loop] B:-; reconciled M: long looped f/s present, crossed by map diagonal	[f-loop]
+2077_L11	62	o	H		o
+2077_L11	63	t	H		t
+2077_L11	64	s	H		s
+2077_L11	65	3	H		3
+2077_L11	66	o	H		o
+2077_L11	67	t	H		t
+2077_L11	68	3	H		3
+2077_L11	69	7	H	NAME [r-rot]->7	7
+2077_L11	70	[h-loop]	H		[h-loop]
+2077_L12	0	w:seer	H		w:seer
+2077_L12	1	w:defect	H		w:defect
+2077_L12	2	w:gebouw	H		w:gebouw
+2077_L12	3	w:s	H		w:s
+2077_L12	4	w:Cöps	M	A:<Cörps> B:<Cöps>; reconciled M: reads Cöps; no separate r seen	w:Cöps
+2077_L12	5	w:de	H		w:de
+2077_L12	6	w:garde	H		w:garde
+2077_L12	7	w:t	H		w:t
+2077_L12	8	[d-loop]	H		[d-loop]
+2077_L12	9	[delta]	H		[delta]
+2077_L12	10	b	H		b
+2077_L12	11	b	H		b
+2077_L12	12	3	H		3
+2077_L12	13	o	H		o
+2077_L12	14	t	H		t
+2077_L12	15	[hash]	H		[hash]
+2077_L12	16	[kappa]	H		[kappa]
+2077_L12	17	b	H		b
+2077_L12	18	[dot]	H		[dot]
+2077_L12	19	v	H		v
+2077_L12	20	3	H		3
+2077_L12	21	[Q-bar]	M	A:[Q-bar] B:[phi]; reconciled M: Q-like bowl with stroke through descender	[Q-bar]
+2077_L12	22	r	H		r
+2077_L12	23	[v-tall]	H	NAME [c-curl]->[v-tall]	[v-tall]
+2077_L12	24	[lambda]	H		[lambda]
+2077_L12	25	w:u	H		w:u
+2077_L12	26	g	H		g
+2077_L12	27	[delta]	H		[delta]
+2077_L12	28	[d-loop]	H		[d-loop]
+2077_L12	29	[hash]	H		[hash]
+2077_L12	30	o	H		o
+2077_L12	31	x	H		x
+2077_L12	32	[lambda]	H		[lambda]
+2077_L12	33	[pi]	H		[pi]
+2077_L12	34	o	H		o
+2077_L12	35	[f-loop]	H		[f-loop]
+2077_L12	36	5	H		5
+2077_L12	37	[u-dots]	H		[u-dots]
+2077_L12	38	5	H		5
+2077_L12	39	[hash]	H		[hash]
+2077_L12	40	[kappa]	H		[kappa]
+2077_L12	41	o	H		o
+2077_L12	42	v	H		v
+2077_L12	43	[dot]	H		[dot]
+2077_L12	44	[delta]	H		[delta]
+2077_L12	45	o	H		o
+2077_L12	46	[lambda]	H		[lambda]
+2077_L12	47	s	H		s
+2077_L12	48	g	H		g
+2077_L12	49	c	H		c
+2077_L12	50	3	H		3
+2077_L12	51	w:,,	H		w:,,
+2077_L13	0	w:,,	H		w:,,
+2077_L13	1	o	H		o
+2077_L13	2	m	H		m
+2077_L13	3	[d-hook]	H		[d-hook]
+2077_L13	4	w:v	H		w:v
+2077_L13	5	w:gebouw	H		w:gebouw
+2077_L13	6	w:tot	H		w:tot
+2077_L13	7	w:berging	H		w:berging
+2077_L13	8	w:van	H		w:van
+2077_L13	9	w:hout	H		w:hout
+2077_L13	10	w:materialien	H		w:materialien
+2077_L13	11	w:&:	M	A:<&:> B:<N:o>; reconciled M: ampersand-like shape with superscript o over a bar	w:&:
+2077_L13	12	w:w	H		w:w
+2077_L13	13	w:gevangenhuÿsen	H		w:gevangenhuÿsen
+2077_L13	14	w:x	H		w:x
+2077_L13	15	w:nog	H		w:nog
+2077_L13	16	w:een	H		w:een
+2077_L13	17	w:oud	H		w:oud
+2077_L14	0	w:gebouw,	M	A:<gebouw,> B:<gebouw>; reconciled M: comma after gebouw	w:gebouw,
+2077_L14	1	w:dienende	H		w:dienende
+2077_L14	2	w:tot	H		w:tot
+2077_L14	3	[hash]	H		[hash]
+2077_L14	4	g	H		g
+2077_L14	5	t	H		t
+2077_L14	6	[u-dots]	H		[u-dots]
+2077_L14	7	[delta]	H		[delta]
+2077_L14	8	g	H		g
+2077_L14	9	[x-dots]	M	A:x B:[x-dots]; reconciled M: x in repeated u-dots delta g x word; take x-dots as L08	[x-dots]
+2077_L14	10	[psi]	H		[psi]
+2077_L14	11	t	H		t
+2077_L14	12	l	H		l
+2077_L14	13	[amp]	H		[amp]
+2077_L14	14	[lambda]	H		[lambda]
+2077_L14	15	[kappa]	H		[kappa]
+2077_L14	16	r	H		r
+2077_L14	17	[dot]	H		[dot]
+2077_L14	18	[d-loop]	H		[d-loop]
+2077_L14	19	3	H		3
+2077_L14	20	o	H		o
+2077_L14	21	g	H		g
+2077_L14	22	[f-loop]	H		[f-loop]
+2077_L14	23	l	H		l
+2077_L14	24	g	H		g
+2077_L14	25	5	H		5
+2077_L14	26	[delta]	H		[delta]
+2077_L14	27	l	H		l
+2077_L14	28	v	H		v
+2077_L14	29	o	H		o
+2077_L14	30	[hash]	H		[hash]
+2077_L14	31	[pi]	H		[pi]
+2077_L14	32	g	H		g
+2077_L14	33	3	H		3
+2077_L14	34	g	H		g
+2077_L14	35	[hash]	H		[hash]
+2077_L14	36	7	H	NAME [r-rot]->7	7
+2077_L14	37	v	H		v
+2077_L14	38	a	H		a
+2077_L14	39	o	H		o
+2077_L14	40	[d-hook]	M	A:6 B:[d-hook]; reconciled M: bowl with tall ascender hooked right	[d-hook]
+2077_L14	41	[h-loop]	H		[h-loop]
+2077_L14	42	3	M	A:3 B:[sigma]; reconciled M: 3-like after h-loop	3
+2077_L14	43	[delta]	H		[delta]
+2077_L14	44	[h-loop]	H		[h-loop]
+2077_L14	45	[lambda]	H		[lambda]
+2077_L15	0	[u-dots]	H		[u-dots]
+2077_L15	1	x	H		x
+2077_L15	2	g	H		g
+2077_L15	3	[delta]	H		[delta]
+2077_L15	4	[psi]	H		[psi]
+2077_L15	5	t	H		t
+2077_L15	6	[h-loop]	H		[h-loop]
+2077_L15	7	[sigma]	M	A:5 B:[sigma]; reconciled M: 6-like bowl leaning right before p	[sigma]
+2077_L15	8	p	H		p
+2077_L15	9	l	H		l
+2077_L15	10	[hash]	H		[hash]
+2077_L15	11	[pi]	H		[pi]
+2077_L15	12	o	H		o
+2077_L15	13	g	H		g
+2077_L15	14	[kappa]	H		[kappa]
+2077_L15	15	g	H		g
+2077_L15	16	w:ÿ	H		w:ÿ
+2077_L15	17	[delta]	H		[delta]
+2077_L15	18	o	H		o
+2077_L15	19	[psi]	H		[psi]
+2077_L15	20	3	H		3
+2077_L15	21	l	H		l
+2077_L15	22	x	H		x
+2077_L15	23	7	H	NAME [r-rot]->7	7
+2077_L15	24	g	H		g
+2077_L15	25	5	H		5
+2077_L15	26	[hash]	H		[hash]
+2077_L15	27	[pi]	H		[pi]
+2077_L15	28	o	H		o
+2077_L15	29	b	H		b
+2077_L15	30	g	H		g
+2077_L15	31	3	H		3
+2077_L15	32	[f-loop]	H		[f-loop]
+2077_L15	33	[h-loop]	H		[h-loop]
+2077_L15	34	g	H		g
+2077_L15	35	7	H	NAME [r-rot]->7	7
+2077_L15	36	4	H		4
+2077_L15	37	3	H		3
+2077_L15	38	7	H	NAME [r-rot]->7	7
+2077_L15	39	o	H		o
+2077_L15	40	[amp]	H		[amp]
+2077_L15	41	g	H		g
+2077_L15	42	7	H	NAME [r-rot]->7	7
+2077_L15	43	4	H		4
+2077_L15	44	3	H		3
+2077_L15	45	7	H	NAME [r-rot]->7	7
+2077_L15	46	o	H		o
+2077_L15	47	[u-dots]	H		[u-dots]
+2077_L15	48	[delta]	H		[delta]
+2077_L15	49	x	H		x
+2077_L15	50	b	H		b
+2077_L15	51	7	H	NAME [r-rot]->7	7
+2077_L15	52	o	H		o
+2077_L15	53	6	H		6
+2077_L15	54	w:,,	H		w:,,
+2077_L16	0	w:,,	M	A:<,,> B:-; reconciled M: ditto/comma mark at line start	w:,,
+2077_L16	1	4	H		4
+2077_L16	2	8	H		8
+2077_L16	3	[h-loop]	H		[h-loop]
+2077_L16	4	b	H		b
+2077_L16	5	3	H		3
+2077_L16	6	g	H		g
+2077_L17	0	w:z.	H		w:z.
+2077_L17	1	w:Cipiers=wooning	H	A:<Cipiers=wooning> B:<Cipiers>; reconciled H: one hyphenated word Cipiers=wooning	w:Cipiers=wooning
+2077_L17	2	w:α.	H		w:α.
+2077_L17	3	w:Smeederÿ	H		w:Smeederÿ
+2077_L17	4	w:heel	H		w:heel
+2077_L17	5	w:defect	H		w:defect
+2077_L17	6	w:@	M	A:<@> B:<[c-at]>; reconciled M: use <@>; c enclosing a small c/a, @-like	w:@
+2077_L17	7	w:eene	H		w:eene
+2077_L17	8	w:oude	H		w:oude
+2077_L18	0	w:kalkloots	H		w:kalkloots
+2077_L18	1	w:γ.	M	A:<γ.> B:<y.>; reconciled M: use <γ.>; y-like shape; label sequence alpha @ gamma delta	w:γ.
+2077_L18	2	[MM]	M	A:[hand-box] B:[MM]; reconciled M: underlined M-like/MM shape	[MM]
+2077_L18	3	[u-dots]	H		[u-dots]
+2077_L18	4	[delta]	H		[delta]
+2077_L18	5	g	H		g
+2077_L18	6	x	H		x
+2077_L18	7	[psi]	H		[psi]
+2077_L18	8	t	H		t
+2077_L18	9	[h-loop]	H		[h-loop]
+2077_L18	10	[lambda]	H		[lambda]
+2077_L18	11	[f-loop]	H		[f-loop]
+2077_L18	12	3	H		3
+2077_L18	13	w:δ.	H		w:δ.
+2077_L18	14	[u-dots]	H		[u-dots]
+2077_L18	15	[delta]	H		[delta]
+2077_L18	16	g	H		g
+2077_L18	17	x	H		x
+2077_L18	18	[psi]	H		[psi]
+2077_L18	19	t	H		t
+2077_L18	20	[h-loop]	H		[h-loop]
+2077_L18	21	e	H		e
+2077_L18	22	[lambda]	H		[lambda]
+2077_L18	23	[hash]	H		[hash]
+2077_L18	24	[lambda]	H		[lambda]
+2077_L18	25	[d-loop]	H		[d-loop]
+2077_L18	26	a	H		a
+2077_L18	27	o	H		o
+2077_L18	28	g	H		g
+2077_L18	29	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right	[sigma]
+2077_L18	30	[h-loop]	H		[h-loop]
+2077_L18	31	g	H		g
+2077_L18	32	5	H		5
+2077_L18	33	[delta]	H		[delta]
+2077_L18	34	l	H		l
+2077_L19	0	[d-loop]	H		[d-loop]
+2077_L19	1	o	H		o
+2077_L19	2	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right	[sigma]
+2077_L19	3	l	H		l
+2077_L19	4	[lambda]	H		[lambda]
+2077_L19	5	[psi]	H		[psi]
+2077_L19	6	s	M	A:s B:[sigma]; reconciled M: small round s after psi	s
+2077_L19	7	5	H		5
+2077_L19	8	t	H		t
+2077_L19	9	[lambda]	H		[lambda]
+2077_L19	10	3	H		3
+2077_L19	11	l	H		l
+2077_L19	12	[amp]	H		[amp]
+2077_L19	13	5	H		5
+2077_L19	14	3	H		3
+2077_L19	15	o	H		o
+2077_L19	16	v	H		v
+2077_L19	17	7	H	NAME [r-rot]->7	7
+2077_L19	18	o	H		o
+2077_L19	19	a	H		a
+2077_L19	20	[d-loop]	H		[d-loop]
+2077_L19	21	o	H		o
+2077_L19	22	[sigma]	M	A:3 B:[sigma]; reconciled M: 6-like bowl leaning right	[sigma]
+2077_L19	23	[delta]	H	A:[delta] B:-; reconciled H: separate hollow triangle before h-loop	[delta]
+2077_L19	24	[h-loop]	H		[h-loop]
+2077_L19	25	[lambda]	H		[lambda]
+2077_L19	26	[u-dots]	H		[u-dots]
+2077_L19	27	[delta]	H		[delta]
+2077_L19	28	[psi]	M	A:- B:[psi]; reconciled M: trident before c-curl	[psi]
+2077_L19	29	[v-tall]	H	NAME [c-curl]->[v-tall]	[v-tall]
+2077_L19	30	m	H		m
+2077_L19	31	l	H		l
+2077_L19	32	7	H	NAME [r-rot]->7	7
+2077_L19	33	[psi]	H		[psi]
+2077_L19	34	w:η.	M	A:<η.> B:<ŋ.>; reconciled M: use <η.>; n with long right descender, tick above	w:η.
+2077_L19	35	w:Citerne.	H	A:<Citerne.> B:<Citerne>; reconciled H: period after Citerne	w:Citerne.
+2077_L20	0	v	H		v
+2077_L20	1	m	H		m
+2077_L20	2	[psi]	H		[psi]
+2077_L20	3	q	H		q
+2077_L20	4	[kappa]	H		[kappa]
+2077_L20	5	6	H		6
+2077_L20	6	[f-loop]	H		[f-loop]
+2077_L20	7	[lambda]	H		[lambda]
+2077_L20	8	s	M	A:s B:3; reconciled M: small round s after lambda	s
+2077_L20	9	3	H		3
+2077_L20	10	v	H		v
+2077_L20	11	3	H		3
+2077_L20	12	o	H		o
+2077_L20	13	[d-loop]	H		[d-loop]
+2077_L20	14	[delta]	H		[delta]
+2077_L20	15	[lambda]	H		[lambda]
+2077_L20	16	r	H		r
+2077_L20	17	7	H	NAME [r-rot]->7	7
+2077_L20	18	o	H		o
+2077_L20	19	a	H		a
+2077_L20	20	t	H		t
+2077_L20	21	[d-loop]	H		[d-loop]
+2077_L20	22	l	H		l
