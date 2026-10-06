@@ -743,3 +743,41 @@ a PREREG); (3) locate the 10 Aug 1598 key inside inv. 2016 (81 scans, thumbnails
 Requests: `www.nationaalarchief.nl` 3 (two EAD XML, item page 1490); `service.archief.nl` 5 (METS 1490, 2016, 2028; two
 first-scan images); all >= 2 s apart, descriptive User-Agent, no 403/429/challenge. (Plus 2 for the Rumpf re-probe, logged
 in that folder.) No subagents.
+
+## Image check of ciphertext.txt against NA 3.01.14 inv. 1490 (R9-OBRED4, 6 Oct 2026, 06:25-06:32 UTC, account 2)
+
+All 7 scans of inv. 1490 fetched once (`images/na_301_14_1490_p0001..7.jpg`, METS a39ba4d8-...). The letter is scans 1 (one page) and
+2 (one opening, two pages); scan 3 is the endorsement (dated 1605, read on the thumbnail only), scans 4-6 are the annex (money accounts,
+no numeral code groups seen), scan 7 an endorsement. Line crops: `tools/iiif_lines.py --image ... --out ... --debug` (commands in
+`imagecheck_1490/README.txt`; debug overlays checked, 29 + 29 + 26 bands, every text line in one band), 84 crops in
+`images/crops_1490/`. One blind Sonnet pass per page on line crops only (3 calls), then a script diff against the print
+(`imagecheck_1490/printed_numerals.py`), then each disagreement settled by this worker on the line crop or a zoom of the scan.
+
+- **121 printed code groups (355 digits), all 121 located on the manuscript, in the same order; the edition omits no line or
+  paragraph** (the closing "Men heeft alhier advijs dat 588 aen 628 ..." paragraph is in both).
+- Blind pass agreed with the print on 107/121 groups (88.4%); 12 of the 14 disagreements were settled for the print on the image,
+  8 of them the hand's s-shaped 8 (read by the pass as 5, 0 or a letter: 628 x3, 80, 108, 218, 438, 387).
+- **One group differs: printed "170" reads "179" on the manuscript** (scan 2 left, line 21, "... 49 314 30 467 387 179 sullen oock
+  XII off XIII M. doen"), H on the image: round head with a descender like the line's other 9s; a fold crosses the tail.
+- One group not confirmable: "704" (scan 2 left, line 24, end of line) is under an ink blot, M; print kept.
+- Editorial, not cipher: the manuscript has "XXX M." and "XII off XIII M." where the print has "30.000" and "12 off 13.000".
+- Per-sign: 355 digits, 1 differing (0.3%), 1 not legible (0.3%). Recorded in `imagecheck_1490/corrections.tsv`; `ciphertext.txt` is
+  left as printed (never silently repaired).
+- Which tests on disk would change: none materially. The key screens (decode_keys_1600s.tsv, decode_keys_palatine_hessian.tsv,
+  OLD-DKEY, R8-OBRED2, R9-OBRED3) tested numeral range (max 741), office and design, not single values; 179 sits inside the
+  same range. No reading, key.tsv or spec exists for this folder, so nothing needs re-running. Rule 2 is now met for the cipher
+  groups: a future test can cite the manuscript, with the one correction applied.
+- Attribution: the right-hand page ends with a monogram above "onderdanigen ende getrouwen dienaer"; not read here (the
+  Brederode vs Johann Wilhelm attribution conflict stays M).
+
+**Step 0, inv. 2028 (Buzanval key), scans 2-3 fetched (`images/na_301_14_2028_p0002/3.jpg`).** Scan 2 is the decipher table
+("Patroon om eenich brief ... te dechiffreren"): numbers 10-99 plain, 10-99 with a bar ("Cyfers met schrapkens boven"), and with
+a cross ("Cyfers met cruyskens boven"), each to a syllable or letter; "Latynsche grote letters" and "Gemeyne letters" to
+syllables; a short "Sillabes" column; "Characters" (+ mi, ++ so). **No three-digit numbers and no names list.** Scan 3 is the
+cover ("Cyfre met den heer van Buzanval"). As seen it cannot carry this letter's groups (97-741, mostly 100-741, no bars or crosses
+recorded in the print or seen on the manuscript). No fit test (brief).
+
+Next steps (named, not run): (1) locate the 10 Aug 1598 key inside NA 3.01.14 inv. 2016 (81 scans, thumbnails first); (2) the
+Brederode-side correspondence in NA 1.01.02 inv. 6016 from image order 261 on (named by TX-KEYS) for a sibling cipher letter with
+a gloss. Requests: `service.archief.nl` 10 (2 METS, 8 images), >= 2 s apart, descriptive UA, no 403/429/challenge. Subagents: 3
+Sonnet blind passes (one per page).

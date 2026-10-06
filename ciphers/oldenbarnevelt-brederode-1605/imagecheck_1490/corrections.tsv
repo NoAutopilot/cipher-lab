@@ -1,0 +1,9 @@
+# R9-OBRED4, 6 Oct 2026: ciphertext.txt (RGP 108 no. 92 as printed) checked against the manuscript NL-HaNA 3.01.14 inv. 1490 scans 1-2
+# (crops in ../images/crops_1490/, cut with tools/iiif_lines.py). ciphertext.txt is NOT edited; these rows are the image's reading
+# where it differs from the print, or where the print cannot be confirmed. grade: H = read on the image by this worker after a blind
+# Sonnet pass and a script diff; M = image not decisive.
+crop	position	printed	manuscript	grade	note
+s2L_L21	"30 467 387 [170] sullen oock"; 6th group of the "636 ende 49 314 30 467 387 170" run	170	179	H	final glyph has a round head and a descender like the 9s in "49", "129"; a fold crosses the tail; the 0 in "30" on the same line is closed with no tail
+s2L_L24	"bij 623, 703 ende [704]", last group on the line	704	70?	M	third digit under an ink blot at the line end; consistent with 4, not legible; print kept
+s2L_L15	"belofte op [30.000] reduceert"	30.000	XXX M.	H	not a cipher group: the editor turned roman numerals into arabic
+s2L_L21	"sullen oock [12 off 13.000] doen"	12 off 13.000	XII off XIII M.	H	not a cipher group: editorial normalisation, as above
