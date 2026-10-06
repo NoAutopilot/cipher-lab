@@ -73,3 +73,36 @@ kp86j FAILed and retired kp86d for these lines (D2-PIS275). Job: crop the later-
 gloss (word level), reconcile, then align gloss to cipher sign by sign (tools/interlinear_align.py if the shape fits); grade C only where
 gloss and cipher align without repair; report C/M counts and any sign values the gloss implies that conflict with the current key (rule
 4: log a conflict, do not settle by majority).
+
+## Wave 2 (04:0x UTC). Wave 1 lesson: every Opus crop job cost ~3-6 regardless of brief size (3 of 6 over cap); caps below carry a ~3
+## Opus session floor. Intake gate 04:03 UTC: hellen-frederick-1752, decode-2678-bnf-colbert127-gravel-1665, fr3151-seure-1558,
+## costabili-modena-1491, antt-linhares-chave, baluze103-letellier-marca-1644 all exit 0. august-van-saksen skipped (waits on Dresden).
+
+### R8-HEL -- hellen-frederick-1752, the 0/8 pass over keyed 801-1796 tokens (cap 3.5, box 45 min)
+Verdict cheapest next: the 0/8 pass over keyed 801-1796 tokens on the R7A-HEL53 crops (already on disk; no DECODE login needed). Pre-register
+the 0/8 decision rule (which reading the key context licenses), push it, then run; corrections TSV (never silently repair), re-decode,
+--check, report H/S/M/U before/after. No depth edits.
+
+### R8-G2678 -- decode-2678-bnf-colbert127-gravel-1665, canvases 355-356 + crib test (cap 3.5, box 50 min)
+NOTES.md next: re-view canvases 355-356 of btv1b10035540v at native resolution (facing page, docket, slip) with tools/gallica_folio.py and
+tools/iiif_lines.py, then a crib test of the three enciphered names against the 1664-65 Regensburg pensioners named in Gravel's printed
+dispatches. Pre-register the crib test (candidate list fixed from the print before testing; control = shuffled/unrelated name list).
+Gallica one request at a time >= 2 s.
+
+### R8-SEURE -- fr3151-seure-1558, null-tolerant nom_test with its own 10%-null control (cap 3.5, box 45 min)
+Verdict cheapest next: null-tolerant nom_test setting with its own 10%-null matched control first; run R1/R2 on the target only if the
+control passes its gate (tools/family_run.py discipline: control first, CONTROL BELOW GATE stops). Both numbers into HYPOTHESES.md.
+
+### R8-COST -- costabili-modena-1491, group crops of R1166 P4 with W as its own label (cap 4, box 50 min)
+Verdict cheapest next: group crops of R1166 P4 with W as its own label (~2.5), then (only if under 80% of cap and box) short-span boxes
+of the R1163/R1165 slips. Crops via tools/iiif_lines.py from images on disk; blind reads per crop batch; corrections TSV; --check.
+
+### R8-LIN -- antt-linhares-chave, Part II test of 829011 as written (cap 3.5, box 45 min)
+Verdict cheapest next: the Part II test of 829011 as written (~2). Read the folder's spec of Part II before acting; pre-register, push,
+run; token stays M unless the registered gate licenses a reading. Do not re-run the retired column-count instruments.
+
+### R8-BAL103B -- baluze103-letellier-marca-1644, look-alike pass on f.50 (cap 4, box 50 min)
+R8-BAL103 (r8/PREREG.md): transcription suspect, not table; its 2-of-3 re-read made the judge worse (m->mm reader bias). Job:
+tools/lookalike_pass.py on the f.50 passes for the named confusable pairs (m/mm and any others in r8/), re-decode, fr17 judge before/after.
+What machines still split goes to a sign-sorter focus.tsv (do not publish a sorter; if one is built it must PASS tools/sorter_preflight.py
+and is handed to the account-3 orchestrator). The 2-of-3 residual is agreement, not accuracy (LESSONS.md "Look-alike pass").
