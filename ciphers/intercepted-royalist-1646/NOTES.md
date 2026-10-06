@@ -393,3 +393,22 @@ Read so far: 192 of 735 cipher tokens on f.10 carry a key value (C 164, H 6, I 1
 - [x] image-check: the key's Evelyn witness read from the page images of pp.178-179 (GAPS2, 2 Oct 2026: evelyn/leaf_n185.jpg, leaf_n186.jpg, pass_img_p178/p179.tsv); the f.10/f.9 images themselves are gap 6 (DECODE content block, BL offline), not a step this session can take
 - [n/a] retry: no fetch, challenge or reset this session; disk only after the one clone
 Verdict: keep going: 1 internal gap; cheapest next: the unglossed figures beside glossed ones on Evelyn pp.178-179 (216, 418, 19, 147) as a crib loop over f.10, ~$2
+
+## Web and blog check (R13-WEB, 6 Oct 2026)
+
+Only the check-solved "Open web and blog comment threads" step was run; no status change. Tools: WebSearch (standard) and WebFetch; about 8 search calls and 2 page fetches in all, split across the two targets (scienceblogs.de 2 fetches, others via the search engine only).
+
+(a) Plain web searches (all 6 Oct 2026):
+1. `intercepted royalist letter 21 May 1646 cipher BL Add MS 72438 Weckherlin deciphered` -- BL catalogue records only (searcharchives.bl.uk 040-001967027 etc.), a Commons Journal entry of 25 May 1646 (a Glemham-to-Ashburnham intercept read in Parliament, ordered to Sir Walter Erle for deciphering), mylearning "civil war spies". No decipherment or plaintext of f.9 or f.10 found.
+2. `"Add MS 72438" cipher royalist Digby key 129 decipherment` -- BL records, Huntington lib 141012, Nat. Archives Digby letters entry, Cipherbrain 2015 post (below). Nothing on key 129 or f.9/f.10.
+3. `"intercepted royalist" letter Charles I 13 May 1646 cipher Weckherlin f.10 decoded` -- BL record, Wikipedia (King's Cabinet Opened; Weckherlin), Cipherbrain "Unsolved: A coded letter from Charles I to an accomplice" (below). No f.10 reading found.
+4. `Weckherlin cipher-keys intercepted royalist correspondence 1646 unsolved cipher Tomokiyo` -- BL record, Sams, NPR/OPB on the Mary Queen of Scots letters (unrelated). Nothing on the item.
+
+(b) Blog searches (site-restricted queries and the Cipherbrain hits): Cipherbrain (scienceblogs.de/klausis-krypto-kolumne): "royalist 1646 intercepted letter cipher Weckherlin" returned the 2015-03-20 and 2021-04-11 posts and the Rabenhaupt post; Cryptiana blog and Cipher Mysteries returned no result for the same query (the engine's site filter, not the sites' own search boxes; those were not queried directly).
+
+(c) Hits opened:
+- scienceblogs.de/klausis-krypto-kolumne/2015/03/20/eine-ungeloeste-verschluesselung-aus-dem-jahr-1645/ -- a 1645 letter (Prince Maurice to Lord Digby, Worcester, 31 Aug), solved in the comments by Kent Ramliden (24 Mar 2015) and Hans Jahr; plaintext in CSPD 1645-47. Different letter; no mention of Add MS 72438, Weckherlin, f.9 or f.10. Six comments read.
+- scienceblogs.de/klausis-krypto-kolumne/unsolved-a-coded-letter-from-charles-i-to-an-accomplice/ -- Charles I to Edward Worsley, 22 May 1648; unsolved (Biermann, Ernst, Brown partial nomenclator). Different letter. No comments visible on the English page (the post says comments go on the German version; not opened).
+- Also seen, not opened: Cipherbrain 2021-04-11 "Ungelöst: Die verschlüsselten Briefe von Karl I. an seinen Sohn" (title names a different correspondence).
+
+Result: no published decipherment or plaintext of f.9 (21 May 1646) or f.10 (13 May 1646) found in these searches. Not found by this method; not a novelty verdict (rule 10).

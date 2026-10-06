@@ -1770,3 +1770,19 @@ Read so far: 0 cipher signs read as plaintext (0%: no key and no family PASS, HY
 - [x] image-check: f.3/12, 26 of 26 disagreements opened and 23 settled to H (bMAL3). Glyph conventions i=1 H and z=2 M (bMALG; f.28 agreement 66.0 to 73.2%). f.23: 49 rows settled, admitted at M 0.144 (bMAL23). f.16: the 84/87 pattern and z-merge (bMAL16). f.28: 86 rows settled by the f.30 witness and direct reads (bMAL28B). 509 spans settled: 78, D.39, the sigil, "G.G. A.A. oder K.K." (bMALS). f.23 L46 GG read as two signs (MAL-GG). Residual: z=2 still M, and the held leaves' unsettled rows (gaps above)
 - [n/a] retry: no key or partial key has read any group yet, so there is nothing to rerun; this step becomes live once known-keys or key-rebuild yields one
 Verdict: keep going: 12 internal gaps and 1 waiting on LOCAL-QUEUE L29 (Arcinsys record of HStAM 4 h Nr. 1411, filed 2 Oct 2026); cheapest next: the three clear-page direct reads (f.12 "cifrat cela", f.14 foot, f.16 panel), ~$4.5, then key_crossmatch on the pool plus the marburg1635/Rabenhaupt/Heusner keys, ~$4
+
+## Web and blog check (R13-WEB, 6 Oct 2026)
+
+Only the check-solved "Open web and blog comment threads" step was run. Status stays found-solved (line 1, Bourdeau 28 Sept 2026, VERIFY 3 Oct 2026); this check adds no reading. Tools: WebSearch (standard); 4 queries for this target, no page fetches.
+
+(a) Plain web searches (all 6 Oct 2026):
+1. `Malsburg Chiffre 1636 1637 Hessen-Kassel HStAM 4 h 1411 cipher deciphered` -- Heusner von Wandersleben-to-Oxenstierna 1637 decipherment (dspace.ut.ee, Waldispuehl/Kopal), Rabenhaupt post, HistoCrypt papers, uni-kassel archival page. No hit on this item.
+2. `Otto von der Malsburg Generalkommissar Hesse-Kassel cipher letters 1637 Bourdeau Beck ChatGPT` -- a 1634 Malsburgk memorial (Paderborn digital PDF), Wikipedia Otto of Hesse-Kassel, the same 1637 decipherment. No hit on Bourdeau's or Beck's reading through the open web.
+3. `"Malsburg" Hessian cipher Thirty Years War HCPortal solved decryption Marburg` -- HCPortal portal page (uim.fei.stuba.sk), HistoCrypt 387/152, Rabenhaupt. No Malsburg hit.
+4. `Korrespondenz in Chiffren Generalkommissar Malsburg Münster Westfalen Kriegführung` -- irrelevant (WWII GC&CS files, prlib.ru).
+
+(b) Blog searches: Cipherbrain, query "Malsburg Chiffre Hessen-Kassel 1637 Bourdeau" restricted to scienceblogs.de -- no Malsburg post; Cryptiana blog and Cipher Mysteries, query `Malsburg Hessen-Kassel cipher 1637 Marburg` restricted to those domains -- unrelated (Marburg virus) results. Site filters of the search engine, not the blogs' own search boxes.
+
+(c) Hits opened: none plausible (no result named Malsburg and a cipher). The Rabenhaupt and Heusner pieces are different sender/recipient pairs (already noted in the 26 Sept intake line).
+
+Result: the open web does not show Bourdeau's 28 Sept or Beck's 2 Oct reading either, so the line-1 status rests on the GitHub sources already logged, not on a blog thread. No published decipherment found elsewhere. Not a novelty verdict (rule 10).
