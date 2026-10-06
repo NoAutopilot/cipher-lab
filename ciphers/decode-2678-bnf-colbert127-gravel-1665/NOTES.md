@@ -335,3 +335,30 @@ manifest 1 + canvases 389-394, 499-502 at 1000 px = 10, of which 500 not used), 
 archivesetmanuscrits.bnf.fr 3 (cc954302, cc954291, cc954319); de-crypt.org 8 (RecordsView, no login, >= 1.8 s apart);
 googleapis.com 3; be-api.us.archive.org 1; github.com 1 (shallow clone of aaymeloglu/unsolved-ciphers, catalogue grepped,
 nothing copied).
+
+## Gravel's other cipher letters: locator (R9-DEC2678B, 6 Oct 2026)
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-run9-jobs.md` "R9-DEC2678B" (the "Next (1)" step above). Locator job only:
+shelfmark, ark, canvas, and a thumbnail-level look at whether the same two-digit groups occur. Nothing transcribed or decoded;
+no cipher token of R2678 read (0 H, 0 C, 0 S, 0 M, 0 I).
+
+| Item | Where | Locator result | Thumbnail-level look |
+|---|---|---|---|
+| R2733, Gravel to Maulevrier, 16 Aug 1674 (copy) | Mél. Colbert 168bis (ff.292-596), Gallica **btv1b100349564**, manifest labels all "NP" | anchors read from folio stamps at 1000 px: canvas 393 right = f.554 (stamp crop), 404 = f.561, 422 = f.574, 432 = f.581, 453 = f.595. Letter on **canvases 392-393** (f.553r-554r); the passage Tomokiyo quotes ("je l'ay pris au mot et luy ay propose de 433 168 75 232 284 415 ...") is on canvas 393 right, upper half. Saved `images/mc168bis_c393_f553v-554r.jpg` | **Plain three-digit figure groups** (75-484), no over/underlines seen: a different design from R2678's two-digit groups with diacritics. Not a same-key sibling at this level (agrees with QUEUE-github-held.tsv row "colbert": figure groups 52-489 shared with Charost, Mél. Colbert 172) |
+| Gravel to Colbert, 23 Apr 1672 (Tomokiyo, louisxiv0.htm "Colbert-Gravel Cipher (1672) (DE=23_)", key reconstructed on his page; `sources/cryptiana/keys/IMAGE-QUEUE.tsv` row 1113, image `louisxiv_0gravel1672.png` not on disk) | Mél. Colbert 159, Gallica **btv1b10035602g** (labels all "NP") | **canvas 107 right = f.102r** (stamp "102"), **canvas 108 left = f.102v**, dated "[...]bourg le 23e avril 1672", signed "l'abbé de Gravel". Saved `images/mc159_c107_f102r.jpg`, `images/mc159_c108_f102v.jpg` | **Two-digit groups (about 0-110) with overlines and underlines**, a contemporary **interlinear decipherment** over nearly every cipher line, and Tomokiyo's prime-accented nomenclature: the same design class as R2678 (two-digit groups with diacritics; R2678 passA shows 29 80 62 41 73 51 with overlined digits). Values 51, 62, 73, 80 occur in both at a glance. Same key not established -- seven years apart, and R2678 is signed "[R.] de Gravel" while f.102v is signed "l'abbé de Gravel" (two brothers, Robert at Ratisbon and the abbé Jacques at Mainz, is an inference, grade I, not checked here) |
+| Gravel's Diet dispatches, Jan 1665 | Archives diplomatiques (La Courneuve), **Correspondance politique, Allemagne 194** ("1665. Correspondance entre la Cour et GRAVEL, à Ratisbonne. 194: 1er janvier - 30 mai; 266 folios"; 195: 4 June - 30 Oct), with **196-197** (1665 supplement: pièces jointes; correspondance entre Gravel et Lionne (fragm.), Colbert, Louvois), **193** (1664-65 Diet pieces) and **211** (Court to Gravel, 10 Jan 1665 - 31 Dec 1666, 423 ff.) | from *Inventaire sommaire des archives du Département des affaires étrangères. Correspondance politique* t. I (1903), Google Books full view (ids 7cW-64n2o8IC, 1XgvAAAAMAAJ, gnJBAAAAYAAJ; snippet text, page not cited -- the Books API gives no page) | **Not online** as far as found: Gallica SRU `"Gravel" and "Ratisbonne"` top 10 are all Mél. Colbert volumes and Auerbach, no AE CP volume. Images would come from the AD reading room or a reproduction request (owner-side step, not filed here) |
+
+Finding: the nearest same-design text with a period decipherment is **Mél. Colbert 159 f.102 (1672)**, not R2733 (different,
+three-digit design) and not the AE volumes (not online). The 1672 interlinear gloss is grade-H material for a key in the same
+two-digit-with-diacritics family; whether it is R2678's key is the open question.
+
+Next (one line each, not done here): (1) cheapest: read f.102r-v's interlinear decipherment into a (group, gloss) key with
+`tools/interlinear_align.py` and test it on R2678 with a matched control (a shuffled-key decode of R2678 and a held-out line of
+f.102), PREREG first; ~$3-4, a solver job with line crops via `tools/iiif_lines.py`; Tomokiyo's own reconstructed table
+(louisxiv_0gravel1672.png) can be fetched as a cross-check, cited not copied; (2) Tomokiyo lists other letters in the same
+"Colbert-Gravel" family only by this one folio -- a sweep of Mél. Colbert 158-160 sommaires for further Gravel letters (1672)
+would enlarge the key pool; (3) AE CP Allemagne 194 Jan 1665: owner-side reproduction request, only if (1) fails.
+
+Requests this job: gallica.bnf.fr 18 (manifests 2; canvas images 107, 108, 270, 340, 393, 404, 420, 422, 424, 432, 440, 448,
+453 and stamp crops of 393, 424 = 15; SRU 1), mostly >= 2 s apart, all HTTP 200; googleapis.com 6 (key, country=US);
+archive.org 1 (advancedsearch). No other host.

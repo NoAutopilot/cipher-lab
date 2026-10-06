@@ -96,5 +96,25 @@
   }
  ],
  "fetched_utc": "2026-09-24T09:05:00Z",
- "requests_this_session": "gallica.bnf.fr: ~15 (several connection resets on full-page/large-crop fetches, one retry each per good-citizen rule, routed around with smaller sizes; archivesetmanuscrits.bnf.fr: ~6 search+notice+ajax fetches, shared session with DC8, >=1.5s apart, UA 'cipher-lab research script (contact via repository)'; github.com: 1 shallow clone of dbourdeau/cyphersolver, grepped only)"
+ "requests_this_session": "gallica.bnf.fr: ~15 (several connection resets on full-page/large-crop fetches, one retry each per good-citizen rule, routed around with smaller sizes; archivesetmanuscrits.bnf.fr: ~6 search+notice+ajax fetches, shared session with DC8, >=1.5s apart, UA 'cipher-lab research script (contact via repository)'; github.com: 1 shallow clone of dbourdeau/cyphersolver, grepped only)",
+ "r9_dec2678b_siblings": [
+  {
+   "file": "mc159_c107_f102r.jpg",
+   "source": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035602g/f107/full/1400,/0/native.jpg",
+   "what": "Mel. Colbert 159, canvas 107 right = f.102r (stamp 102): Gravel to Colbert, 23 Apr 1672, two-digit groups with over/underlines and interlinear decipherment",
+   "fetched": "2026-10-06, R9-DEC2678B"
+  },
+  {
+   "file": "mc159_c108_f102v.jpg",
+   "source": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035602g/f108/full/1400,/0/native.jpg",
+   "what": "Mel. Colbert 159, canvas 108 left = f.102v: end of the same letter, dated '[Stras?]bourg le 23e avril 1672', signed l'abbe de Gravel",
+   "fetched": "2026-10-06, R9-DEC2678B"
+  },
+  {
+   "file": "mc168bis_c393_f553v-554r.jpg",
+   "source": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b100349564/f393/full/1000,/0/native.jpg",
+   "what": "Mel. Colbert 168bis, canvas 393 (right stamp 554): copy of Gravel to Maulevrier, 16 Aug 1674 (DECODE R2733), plain three-digit figure groups, no diacritics seen",
+   "fetched": "2026-10-06, R9-DEC2678B"
+  }
+ ]
 }
