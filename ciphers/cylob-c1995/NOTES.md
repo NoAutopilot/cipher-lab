@@ -131,3 +131,37 @@ ciphermysteries.com 2 (site search, post); boingboing.net 1 (403); cloud.roterin
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: fetch Rotering's 2015 partial transcription PDF again (the cloud.rotering-net.de share named above), turn it into ciphertext.tsv and check one grid page against the scan before any solve (rule 2), ~$2. Who acts: agent. Source: this file's "Next-step note (not run): Rotering's 2015 transcription"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Rotering 2015 transcription -> ciphertext.tsv; one page checked against a scan (R12D-CYLOB, 6 Oct 2026)
+
+Run for LANE-RUN12-account-4, 6 Oct 2026, 15:45-15:50 UTC. No solve attempted.
+
+- **Fetch.** `Cylob-Manuskript.pdf` from the cloud.rotering-net.de share above (the old `public.php?...&download` URL now
+  307-redirects to `index.php/s/4d7d9aaa54244fba485ad528a82fb050/download`): HTTP 200, 602,402 bytes, sha256
+  0f9deae8...2082 -- identical to the file GF-A2-11 recorded on 3 Oct. Not committed (third-party, licence unknown).
+- **ciphertext.tsv** (190 rows: page, row, col, kind, sign) built by `rotering_to_tsv.py` from `pdftotext -bbox` word
+  boxes (`--check` regenerates and exits 1 if stale). Transcription by Thorsten Rotering (2 May 2015), credited in the
+  file header; conventions recorded there: labels A-X, 16-sign standard alphabet, C D E G H I K L only on p.20 (his
+  "simplified variants": C~N D~Q E~O G~P H~S I~V K~T L~M); only dark-printed tiles transcribed, faded ghost tiles and
+  picture panels not (picture rows kept as `-`); each page has one header sign above a 3-wide grid (6-wide on p.20,
+  plus one sign under it, kind=trailer, column approximate); pp.2 and 4 blank; pp.1 and 3 carry only two signs each
+  (A, P, the same on both); p.17 and p.19 have no transcribed sign, p.18 one picture only. 167 signs on pp.1-20.
+  The PDF covers booklet pp.1-20 (Schmeh's texts say 20 or 22 pages).
+- **Internal check against Rotering's own frequency table: exact match** (all 24 labels, total 157) when one of the
+  duplicate pp.1/3 is counted once and p.20's standard-alphabet signs (A x3, B x2, F x2, J x1) are left out -- his
+  note says the counts ignore the doublings on pp.1 and 3; the p.20 exclusion is inferred from the arithmetic, not
+  stated by him.
+- **Image check (rule 2), one page.** Scan: Schmeh's 2015 post image `scienceblogs.de/klausis-krypto-kolumne/files/
+  2015/05/Cylob-07-614.png` (614x446, one spread; not committed, re-fetchable). `tools/iiif_lines.py --image` cut 14
+  row bands that split the tall tiles in half, so the vision unit used the right half-page crop instead (one page, one
+  call). Its layout (header + 5 rows of 3) matches only Rotering's p.13 among the five candidate pages (7, 10, 12, 13,
+  15): T / Q J S / V Q F / J M N / R A A / U P X. Sign identity agrees on all 16 tiles: the repeated labels fall on
+  identical shapes (Q at r1c1 and r2c2, the mirrored double-block; J at r1c2 and r3c1, the ringed dot; A at r4c2 and
+  r4c3, the comb-top), and the other 10 labels fall on 10 mutually distinct shapes; all 15 grid tiles on that page are
+  dark-printed, so nothing was skipped. This checks the transcription's partition into signs on one page, not the label
+  names (arbitrary). Mapping noted: Cylob-07 right half = booklet p.13 (left half presumably p.12, not checked).
+- **Not done / next.** The other 10 pages of the 2015 post (Cylob-01..11) have not been checked against the TSV; pp.21-22
+  (if they exist) and the faded ghost tiles are untranscribed. Next cheap test on this TSV: spec cheap test 3
+  (grid-vs-cipher structural check) with a matched control, ~$2.
+
+Requests: cloud.rotering-net.de 2 (first without -L, 307; one follow-up); scienceblogs.de 1. All HTTP 200/307, no blocks.
