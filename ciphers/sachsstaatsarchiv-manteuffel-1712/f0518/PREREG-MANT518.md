@@ -29,3 +29,16 @@ _0518sp), the licensing run. Compared beside R10-MANT521's 10-leaf result (SP: 0
 
 Known-answer (reported first, not a gate): every single-code gloss on this leaf whose code has a C value in key.tsv is scored
 agree / compatible / disagree.
+
+## Addendum (6 Oct 2026, 10:50 UTC by date -u), after reconciliation, before any alignment or score
+Crops (pasted): `tools/iiif_lines.py --image 0518.jpg --out crops --region 870,1100,1260,1650 --prefix L --distance 40 --lines-per-crop 3 --debug`
+found 21 of ~30 left-page lines in 7 bands; as on 0521/0526 the bands cut through glosses, so PIL overlapping full-width strips were used:
+left (870,1100+220k,2130,min(+300,2760)) k=0..7 (S01-S08), right (2130,1100+220k,3350,+300) k=0..1 (S09-S10). Passes got strip paths only
+(A in order, B reversed). Reconciled: 12 runs, 210 code tokens; A vs B 200/210 (0.952), under the 10% stop line. Worker zooms 2x on 11 areas.
+Disclosure: the worker looked up key.tsv values for the reconciled runs (to prepare the known-answer report) BEFORE zooming run 10's
+gloss; that zoom reading ('Manteuffel le charg...') is therefore not independent and is not used: run 10's gloss is the passes' reading.
+Every other gloss reading was settled from passes and zooms taken before the lookup.
+Pairing: one pair per glossed run (10 runs; the multi-line runs here are glossed in fragments over parts of lines, not word for word per
+line, so the run, not the line, is the unit). Codes written above codes ('402' over 110, '259' between lines of run 1) are not paired.
+Runs 11-12 unglossed. Normalisation: MANT5 only, no gloss_norm_0518.tsv. No single-code glossed run on this leaf, so the pooled
+single-code gate cannot change by construction; it is run as registered anyway and reported.
