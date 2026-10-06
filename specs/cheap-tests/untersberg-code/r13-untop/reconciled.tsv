@@ -1,0 +1,51 @@
+line	position	sign	confidence	alt	why
+L1	1	I	H		agree
+L1	2	SH	M	B:SH	settled image: long-s-like tall stroke, hooked top, descender below baseline, joined to an h/n-like arch (pass2)
+L1	3	YD	M		agree-flagged
+L1	4	r	H		agree
+L1	5	LAM	M		agree-flagged
+L1	6	e	H		agree
+L1	7	DLT	M		agree-flagged
+L1	8	EPS	M		agree-flagged
+L1	9	ZH	M		agree-flagged
+L1	10	r	H		agree
+L1	11	e	H		agree
+L1	12	u	M		agree-flagged
+L1	13	ZH	M		agree-flagged
+L1	14	C	M		agree-flagged
+L1	15	EPS	M		agree-flagged
+L1	16	I	H		agree
+L1	17	H	H		agree
+L1	18	S	M		agree-flagged
+L2	1	S	M		agree-flagged
+L2	2	V	H		agree
+L2	3	r	M	B:RBAR	"settled image: plain r with flat serifed top; the ""bar"" is the head serif (pass1)"
+L2	4	EPS	M		agree-flagged
+L2	5	K	M		agree-flagged
+L2	6	S	M		agree-flagged
+L2	7	ZH	M		agree-flagged
+L2	8	e	M		agree-flagged
+L2	9	r	M		agree-flagged
+L2	10	V	H		agree
+L2	11	ZH	M		agree-flagged
+L2	12	REVC	M		agree-flagged
+L2	13	N	H		agree
+L2	14	P	H		agree
+L2	15	REVC	M		agree-flagged
+L2	16	X	H		agree
+L2	17	V	M		agree-flagged
+L2	18	Z7T	M		agree-flagged
+L3	1	EPS	M		agree-flagged
+L3	2	e	H		agree
+L3	3	ZH	M		agree-flagged
+L3	4	ATAIL	L		agree-flagged
+L3	5	LAM	M		agree-flagged
+L3	6	LAM	M		agree-flagged
+L3	7	X	H		agree
+L3	8	CDH	M		agree-flagged
+L3	9	YD	M		agree-flagged
+L3	10	PHI	M		agree-flagged
+L3	11	H	H		agree
+L3	12	EPS	M		agree-flagged
+L3	13	TH	M		agree-flagged
+L3	end	.	M		worker eye: final period after the last sign, omitted by both passes

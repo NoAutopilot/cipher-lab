@@ -1,0 +1,52 @@
+line	pos	sign	conf	note
+L2	1	S	med	S
+L2	2	V	high	V
+L2	3	r	low	r
+L2	4	EPS	high	SIGN:epsilon-like reversed 3
+L2	5	K	med	K
+L2	6	.	high	.
+L2	7	S	med	S
+L2	8	ZH	med	SIGN:Z-like with curled hook top-left, 7/2 shape
+L2	9	e	med	e
+L2	10	r	med	r
+L2	11	V	high	V
+L2	12	ZH	med	SIGN:7/Z-like with curled top hook and tilde
+L2	13	REVC	med	SIGN:large reversed C (open left), heavy
+L2	14	N	high	N
+L2	15	P	high	P
+L2	16	.	high	.
+L2	17	REVC	med	SIGN:small reversed c/open-left C
+L2	18	X	high	X
+L2	19	V	med	V
+L2	20	Z7T	med	SIGN:7-like with curled hook tail
+L1	1	I	high	I
+L1	2	s	med	s
+L1	3	YD	med	SIGN:y/V-like with two dots above (diaeresis) and descending
+L1	4	r	high	r
+L1	5	LAM	med	SIGN:lambda-like inverted V with foot serif
+L1	6	e	high	e
+L1	7	DLT	med	SIGN:d/delta-like, round bowl with curled top hook
+L1	8	EPS	high	SIGN:epsilon-like reversed 3
+L1	9	ZH	med	SIGN:7/Z-like with curled hook
+L1	10	r	high	r
+L1	11	e	high	e
+L1	12	u	med	u
+L1	13	ZH	med	SIGN:7/Z-like with curled hook
+L1	14	C	med	C
+L1	15	EPS	high	SIGN:epsilon-like reversed 3
+L1	16	I	high	I
+L1	17	H	high	H
+L1	18	S	med	S
+L3	1	EPS	high	SIGN:epsilon-like reversed 3
+L3	2	e	high	e
+L3	3	ZH	med	SIGN:7/Z-like with curled hook
+L3	4	ATAIL	low	SIGN:a-like with tail, 7/Z hook then loop (maybe a+7 ligatur
+L3	5	LAM	med	SIGN:lambda-like inverted V
+L3	6	LAM	med	SIGN:lambda-like inverted V
+L3	7	X	high	X
+L3	8	CDH	med	SIGN:c/d-like: open round bowl with tall curved ascender ste
+L3	9	YD	med	SIGN:y/V-like with two dots above (diaeresis) and stem
+L3	10	PHI	med	SIGN:phi-like: loop-bowl with vertical stem, looped top and 
+L3	11	H	high	H
+L3	12	EPS	high	SIGN:epsilon-like reversed 3
+L3	13	TH	med	SIGN:theta/8-like double-loop, looped top and tail

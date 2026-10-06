@@ -1,0 +1,87 @@
+line	pos	sign	conf	note
+A	1	S	high	
+A	2	V	high	
+A	3	SIGN:r-like with horizontal bar/tilde across top	med	
+A	4	SIGN:epsilon-like reversed 3	med	
+A	5	K	high	
+A	6	.	high	
+A	7	S	high	
+A	8	SIGN:hooked z/2-like with curled top	med	
+A	9	e	high	
+A	10	r	high	
+A	11	V	high	
+A	12	SIGN:hooked z/2-like with curled top	med	
+A	13	SIGN:reversed C (open right) with top serif	med	
+A	14	N	high	
+A	15	P	high	
+A	16	.	high	
+A	17	SIGN:reversed C (open right)	med	
+A	18	.	high	
+A	19	X	high	
+A	20	V	high	
+A	21	SIGN:7-like with hooked curled descender	med	
+B	1	m	high	
+B	2	.	high	
+B	3	SIGN:5/long-s-like	med	
+B	4	i	high	
+B	5	SIGN:9-like g	med	
+B	6	.	high	
+B	7	v	high	
+B	8	.	high	
+B	9	SIGN:l/t-like with curl	med	
+B	10	.	high	
+B	11	SIGN:D-like with decorated hooked top	med	
+B	12	.	high	
+B	13	e	high	
+B	14	.	high	
+B	15	SIGN:P with crossed stem (per-like)	med	
+B	16	.	high	
+B	17	s	high	
+B	18	s	high	
+B	19	.	high	
+B	20	a	high	
+B	21	.	high	
+B	22	SIGN:u with top tilde/hook	med	
+B	23	.	high	
+B	24	n	high	
+B	25	.	high	
+B	26	i	high	
+B	27	.	high	
+B	28	X	high	
+B	29	m	high	
+B	30	i	high	
+B	31	s	high	
+B	32	.	high	
+B	33	u	high	
+C	1	I	high	
+C	2	SIGN:long-s/h ligature, I with hooked top left	med	
+C	3	SIGN:y/V with diaeresis dots	med	
+C	4	r	high	
+C	5	SIGN:lambda-like inverted V with serif	med	
+C	6	e	high	
+C	7	SIGN:delta-like with curled top loop	med	
+C	8	SIGN:epsilon reversed 3	med	
+C	9	SIGN:hooked z	med	
+C	10	r	high	
+C	11	e	high	
+C	12	u	high	
+C	13	SIGN:hooked z/2-like	med	
+C	14	SIGN:C with inner dot	med	
+C	15	SIGN:epsilon reversed 3	med	
+C	16	I	high	
+C	17	H	high	
+C	18	S	high	
+D	1	SIGN:epsilon reversed 3	med	
+D	2	e	high	
+D	3	SIGN:hooked z/2-like	med	
+D	4	SIGN:a-like with swash tail	med	
+D	5	SIGN:lambda-like	med	
+D	6	SIGN:lambda-like	med	
+D	7	X	high	
+D	8	SIGN:c/d with ascending hook	med	
+D	9	SIGN:V with diaeresis dots	med	
+D	10	SIGN:phi-like p with loop	med	
+D	11	H	high	
+D	12	SIGN:E/epsilon-like	med	
+D	13	SIGN:theta-like looped O with hooks	med	
+D	14	SIGN:reversed 3	med	

@@ -1,0 +1,54 @@
+line	pos	sign	conf	note
+L2	1	S	high	S
+L2	2	V	high	V
+L2	3	RBAR	med	SIGN:r-like with horizontal bar/tilde across top
+L2	4	EPS	med	SIGN:epsilon-like reversed 3
+L2	5	K	high	K
+L2	6	.	high	.
+L2	7	S	high	S
+L2	8	ZH	med	SIGN:hooked z/2-like with curled top
+L2	9	e	high	e
+L2	10	r	high	r
+L2	11	V	high	V
+L2	12	ZH	med	SIGN:hooked z/2-like with curled top
+L2	13	REVC	med	SIGN:reversed C (open right) with top serif
+L2	14	N	high	N
+L2	15	P	high	P
+L2	16	.	high	.
+L2	17	REVC	med	SIGN:reversed C (open right)
+L2	18	.	high	.
+L2	19	X	high	X
+L2	20	V	high	V
+L2	21	Z7T	med	SIGN:7-like with hooked curled descender
+L1	1	I	high	I
+L1	2	SH	med	SIGN:long-s/h ligature, I with hooked top left
+L1	3	YD	med	SIGN:y/V with diaeresis dots
+L1	4	r	high	r
+L1	5	LAM	med	SIGN:lambda-like inverted V with serif
+L1	6	e	high	e
+L1	7	DLT	med	SIGN:delta-like with curled top loop
+L1	8	EPS	med	SIGN:epsilon reversed 3
+L1	9	ZH	med	SIGN:hooked z
+L1	10	r	high	r
+L1	11	e	high	e
+L1	12	u	high	u
+L1	13	ZH	med	SIGN:hooked z/2-like
+L1	14	C	med	SIGN:C with inner dot
+L1	15	EPS	med	SIGN:epsilon reversed 3
+L1	16	I	high	I
+L1	17	H	high	H
+L1	18	S	high	S
+L3	1	EPS	med	SIGN:epsilon reversed 3
+L3	2	e	high	e
+L3	3	ZH	med	SIGN:hooked z/2-like
+L3	4	ATAIL	med	SIGN:a-like with swash tail
+L3	5	LAM	med	SIGN:lambda-like
+L3	6	LAM	med	SIGN:lambda-like
+L3	7	X	high	X
+L3	8	CDH	med	SIGN:c/d with ascending hook
+L3	9	YD	med	SIGN:V with diaeresis dots
+L3	10	PHI	med	SIGN:phi-like p with loop
+L3	11	H	high	H
+L3	12	EPS	med	SIGN:E/epsilon-like
+L3	13	TH	med	SIGN:theta-like looped O with hooks
+L3	14	EPS	med	SIGN:reversed 3

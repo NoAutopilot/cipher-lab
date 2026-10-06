@@ -1,0 +1,84 @@
+line	pos	sign	conf	note
+A	1	S	med	ornate S, swash feet
+A	2	V	high	
+A	3	r	low	SIGN-like: r/Y stem with horizontal tilde/macron across top
+A	4	SIGN:epsilon-like reversed 3	high	
+A	5	K	med	K with extra flourish/serif on right arm
+A	6	.	high	
+A	7	S	med	
+A	8	SIGN:Z-like with curled hook top-left, 7/2 shape	med	
+A	9	e	med	
+A	10	r	med	
+A	11	V	high	
+A	12	SIGN:7/Z-like with curled top hook and tilde	med	
+A	13	SIGN:large reversed C (open left), heavy	med	
+A	14	N	high	
+A	15	P	high	bowl open
+A	16	.	high	
+A	17	SIGN:small reversed c/open-left C	med	
+A	18	X	high	slight flourish on top left
+A	19	V	med	dot-flourish top
+A	20	SIGN:7-like with curled hook tail	med	
+B	1	m	high	
+B	2	.	high	
+B	3	5	med	looks like long-s/5
+B	4	i	med	
+B	5	g	med	open-tail g, like 9
+B	6	.	high	
+B	7	v	med	
+B	8	.	high	
+B	9	l	med	slashed/curled l
+B	10	.	high	
+B	11	D	med	with top bar/stroke; Fraktur-like D
+B	12	.	high	
+B	13	e	med	
+B	14	.	high	
+B	15	SIGN:P-like with crossbar through stem	low	barred p/P
+B	16	.	high	
+B	17	5	med	
+B	18	5	med	
+B	19	.	high	
+B	20	a	high	
+B	21	.	high	
+B	22	u	med	u with top serif/curl, maybe ll
+B	23	.	high	
+B	24	n	med	n-like with tilde, maybe r+n
+B	25	.	high	
+B	26	i	med	
+B	27	.	high	
+B	28	X	high	
+B	29	m	med	
+B	30	i	med	
+B	31	5	low	
+B	32	u	low	cut off at edge
+C	1	I	high	
+C	2	s	med	long s / f-like, possibly ligatured with next
+C	3	SIGN:y/V-like with two dots above (diaeresis) and descending stem	med	
+C	4	r	high	
+C	5	SIGN:lambda-like inverted V with foot serif	med	
+C	6	e	high	
+C	7	SIGN:d/delta-like, round bowl with curled top hook	med	
+C	8	SIGN:epsilon-like reversed 3	high	
+C	9	SIGN:7/Z-like with curled hook	med	
+C	10	r	high	large, flourish
+C	11	e	high	
+C	12	u	med	U with top serif
+C	13	SIGN:7/Z-like with curled hook	med	
+C	14	C	med	C with inner dot/curl, closed-top flourish
+C	15	SIGN:epsilon-like reversed 3	high	
+C	16	I	high	
+C	17	H	high	
+C	18	S	med	
+D	1	SIGN:epsilon-like reversed 3	high	
+D	2	e	high	
+D	3	SIGN:7/Z-like with curled hook	med	
+D	4	SIGN:a-like with tail, 7/Z hook then loop (maybe a+7 ligature)	low	
+D	5	SIGN:lambda-like inverted V	med	
+D	6	SIGN:lambda-like inverted V	med	
+D	7	X	high	wide, curl at left top
+D	8	SIGN:c/d-like: open round bowl with tall curved ascender stem and hook	med	
+D	9	SIGN:y/V-like with two dots above (diaeresis) and stem	med	
+D	10	SIGN:phi-like: loop-bowl with vertical stem, looped top and descender	med	
+D	11	H	high	
+D	12	SIGN:epsilon-like reversed 3	high	
+D	13	SIGN:theta/8-like double-loop, looped top and tail	med	
