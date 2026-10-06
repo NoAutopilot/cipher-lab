@@ -1,0 +1,79 @@
+lines 234  interior spans 344  eligible 138  units with eligible spans 14  spans in a length class of one 0
+per unit eligible: {'f23': 1, 'c32': 3, 'c33': 7, 'c3536': 5, 'c3940': 16, 'c47': 20, 'c48': 6, 'c49': 12, 'c50': 27, 'c54': 3, 'c55': 15, 'c56': 12, 'c62': 5, 'c63': 6}
+
+stat	real	ctrl	mean	p95	max	P(ctrl>=real)	gate
+S	99	control-B	82.39	88	92	0.0000	PASS
+S_exact	14	control-B	1.30	3	5	0.0000	-
+
+code	best	units	key_f23	units_list
+11	e	7	n(M)	c3536,c3940,c47,c49,c50,c55,c62
+13	o|r	4	d(M)	c3940,c50,c56,c63
+15	e	6	e(M)	c32,c33,c3536,c47,c49,c55
+16	se	3	-	c48,c50,c63
+17	e|g|s	2	o(M)	c49,c55
+20	i	7	i(M)	c3940,c47,c48,c49,c50,c54,c55
+21	t	6	e(M)	c3536,c3940,c47,c48,c50,c55
+27	u	3	-	c3940,c47,c48
+29	r	6	a(M)	c32,c33,c3536,c3940,c47,c50
+30	s	9	s(M)	c32,c3536,c47,c48,c49,c50,c55,c56,c63
+31	t	7	mdebrienne(M)	c3536,c3940,c47,c48,c49,c50,c55
+32	u	8	o(M)	c32,c33,c3940,c48,c50,c54,c55,c56
+39	e	4	et(M)	c3940,c49,c50,c63
+46	ce	6	c(M)	c33,c3940,c47,c55,c56,c63
+47	e	3	-	c3536,c47,c49
+54	e	3	du(M)	c3536,c50,c56
+57	f|i	4	e(M)	c49,c50,c55,c56
+61	e	7	rge(M)	c33,c47,c48,c50,c55,c56,c62
+67	leur	2	uasi(M)	c49,c55
+70	e	4	o(M)	c33,c50,c56,c63
+71	e	2	dans(M)	c3536,c47
+75	la	3	-	c3940,c47,c62
+76	e	4	c(M)	c33,c3940,c49,c63
+77	l	2	faire(M)	c47,c50
+81	me	3	il(M)	c3940,c50,c56
+83	mo	3	-	c3940,c50,c56
+85	na	3	luy(M)	c49,c50,c56
+86	e	2	-	c47,c49
+87	i|n|o|s	2	amais(M)	c49,c50
+90	e|t	2	-	c56,f23
+96	que	3	r(M)	c3940,c47,c55
+wrote key_f23_anchor_r10.tsv
+
+phase 2: per-code diag on 12 units (c62, c63 held out), 2000 draws seed 7
+code	units	best	diag_P	lead
+11	6	e	0.462	
+13	3	o	0.726	
+15	6	e	0.035	LEAD
+16	2	se	0.428	
+17	2	e|g|s	0.998	
+20	7	i	0.049	
+21	6	t	0.064	
+27	3	u	0.260	
+29	6	r	0.356	
+30	8	s	0.691	
+31	7	t	0.236	
+32	8	u	0.035	LEAD
+39	3	e	0.886	
+46	5	ce	0.152	
+47	3	e	0.578	
+54	3	e	0.827	
+57	4	f|i	0.550	
+61	6	e	0.234	
+67	2	leur	0.993	
+70	3	e	0.162	
+71	2	e	0.906	
+75	3	e	0.955	
+76	3	e	0.191	
+77	2	l	0.250	
+81	3	me	0.488	
+83	3	mo	0.561	
+85	3	na	0.433	
+86	2	e	0.829	
+87	2	i|n|o|s	1.000	
+90	2	e|t	0.870	
+96	3	que	0.760	
+
+phase 3: per-code control, 5000 draws, Bonferroni 0.05/2
+code	value	spans	H_real	units	ctrl_mean	p95	max	P	held_out_H/spans	gate
+15	e	10	10	6	6.66	9	10	0.0040	0/0	HELD-OUT-UNTESTABLE
+32	u	12	12	8	4.61	7	10	0.0000	0/0	HELD-OUT-UNTESTABLE
