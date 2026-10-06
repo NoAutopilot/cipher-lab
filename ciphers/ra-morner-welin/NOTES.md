@@ -110,3 +110,29 @@ settle whether "Welin - Östergren" is a surname range and whether any other vol
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: read the printed Esplunda inventory (Google Books Kok4AAAAIAAJ) around volume 153 through Books API snippet queries, to settle whether "Welin - Ostergren" is a surname range and whether any other volume notes cipher letters or a key, ~$0.5; the copy order stays in REQUEST.md. Who acts: agent. Source: this file's "## While waiting"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Esplunda inventory snippet queries (R11-MORNER, 6 Oct 2026)
+
+Source: Google Books Kok4AAAAIAAJ ("Meddelande", viewability NO_PAGES, snippet-only; 294 pp). Books API `volumes?q=...&country=US`
+with the key (not printed); the volume-id lookup takes no `q`, so each query was a phrase search whose result list was filtered to id
+Kok4AAAAIAAJ. 26 queries + 1 volume lookup to www.googleapis.com (4 queries returned HTTP 503; 2 of them were re-run in another
+form); log: `books_queries.tsv` (query, result counts, snippet).
+
+- Alphabetical range, read from snippets: the inventory lists the private-person letters as numbered volumes by surname range:
+  "( Adelsvärd - Braun ) 136", "( Brinkman - Cygnæus ) 137", "( Mörner, Carl Gabriel ) 1794-1820 145", "1821 ...", then
+  "( Welin - Östergren ) 154 Brev i folioformat samt vissa bilagor till brev i kvartoformat", "155 Inbjudningskort, notifikationer,
+  cirkulär 1805-37", "Brev till andra adressater", "Handlingar rörande enskilda förhållanden", "Studieanteckningar". So
+  "Welin - Östergren" is a surname range (W-Ö) of correspondents in a volume of folio letters, not "Welin" writing to "Östergren".
+  The number printed with the range is 154 (the brief's 153 is the entry before it). Snippets only, the inventory page itself
+  not read. Grade: inferred from print snippet, not a reading of the cipher.
+- Cipher words: queries pairing the volume's own phrases ("Brev i folioformat", "Esplunda", "Mörner") with chiffer, chiffrerade,
+  chiffrerat, nyckel, kryptering, kod returned no snippet from Kok4AAAAIAAJ (target absent from every one of those result lists;
+  "nyckel" alone returned 9 other volumes). That is a search result: the snippet index of a snippet-only volume covers an unknown
+  share of its text, so absence does not show that no volume notes a cipher or key. Control: the same query form with words known to
+  be on the page ("Brev i folioformat" + Welin / Östergren / 154) hit the target every time (3 of 3 tried), so the form can reach
+  the page where the words are.
+- Effect on the target: read the item as "within the W-Ö range of volume 154", not sender Welin to recipient Östergren; the copy
+  order (REQUEST.md) should say the volume is a range volume.
+
+Verdict: stays open; the description of "Welin - Östergren" is corrected from the inventory snippet; no cipher/key mention found in
+the snippet index. Next: copy order only (no cheaper step); who acts: owner via REQUEST.md.
