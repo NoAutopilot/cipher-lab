@@ -9129,3 +9129,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 03:52 | R8-NLA (Opus worker) | claim nla-heinrich-braunschweig-1519: Arcinsys Niedersachsen re-test of NLA BU L 1 Nr. 548/562, cap 2, box ends 04:22 UTC, for LANE LANE-RUN8-account-2
 2026-10-06 03:52 | R8-KARL3 worker | claim ra-karlxi-fullmakt-1677: be-api fts of Actes/Dumont volumes, cap 2, box end 04:23 UTC, for LANE LANE-RUN8-account-2
 2026-10-06 03:52 | R8-VELL worker | claim for LANE LANE-RUN8-account-2: ra-vellingk-1713 htrc_ef_headwords for Vellingk, cap 2.5, box 03:52-04:32 UTC (80% 04:24)
+2026-10-06 03:52 | R8-ROELL5 worker | claim: roell-vandedem-1809, NA inv. 92 scans 176-230 for a minute to Van Dedem at Vienna; cap 3.5, box to 04:43 UTC; for LANE LANE-RUN8-account-2
