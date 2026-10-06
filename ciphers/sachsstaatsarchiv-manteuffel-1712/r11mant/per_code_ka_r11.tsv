@@ -1,0 +1,6 @@
+code	n_runs	chunk	A_real	share	null_mean	null_p95	null_max	null_distinct	p	klass	BH_q010
+35	23	e	19	0.826	9.37	14	20	15	0.0020	letter	PASS
+33	18	o	15	0.833	4.79	8	11	10	0.0010	letter	PASS
+10	20	e	15	0.750	6.42	10	14	13	0.0010	letter	PASS
+66	18	a	16	0.889	5.17	8	12	11	0.0010	letter	PASS
+14	15	n	10	0.667	3.30	5	7	7	0.0010	letter	PASS

@@ -134,3 +134,14 @@ the aligner's 'u' (rule 4: graded M, not settled by the majority chunk).
 Witnesses logged, not resolved (R10-MANT521): 714 opens "un bon treve nous conviendra" (0521 run 4, gloss 'un' directly over 714, M) -- a
 further 'un/une' witness against the aligner's 'u'; 160, Krauske's Manteuffel (C), also sits inside that run under the gloss 'treve' (M),
 so in this run either 160 is a syllable code ('tre'/'eve') or the gloss is placed loosely; not settled here.
+
+## Pooled multi-code aligner re-run with 0526/0521/0518 added (R11-MANTPOOL2, 6 Oct 2026, LANE LANE-RUN11-account-4, account 4)
+
+| date / job | test | control | real | result |
+|---|---|---|---|---|
+| 6 Oct 2026 R11-MANTPOOL2 | pooled hard-EM multi-run aligner, 10 leaves, 122 runs, key.tsv minus R9 rows fixed (PREREG-R11-MANTPOOL2) | 1000 within-bin gloss shuffles, seed 9501: mean 17.47, p95 22; known-answer 5/5 | S 27 of 94 recurring | PASS, thin (second run of this instrument, both passed) |
+| 6 Oct 2026 R11-MANTPOOL2 | per-code test (R9-MANTPC design), BH q 0.10 over 27 | same 1000 shuffles; power control 5/5 PASS | 5/27 PASS: 237 de, 341 guerre, 402 la, 592 s, 714 u | 451 u and 588 s PASS -> KEEP (p .025, .034); 285/515/636 KEEP; 214, 463, 548 new, FAIL |
+
+Not resolved here (prereg: key changes only for codes that clear): 451 and 588 stay in key.tsv at M with the weaker verdict noted; whether a
+code that loses BH significance when material is added should leave the key is an orchestrator decision. 714: 5 'u' vs 2 'une' chunks
+(0521, 0526), the un/une conflict above, unchanged.
