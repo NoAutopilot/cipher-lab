@@ -1,0 +1,52 @@
+{
+ "f23_C01": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C01.png",
+  "box": null,
+  "median_h": 82.0
+ },
+ "f23_C02": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C02.png",
+  "box": null,
+  "median_h": 84.0
+ },
+ "f23_C03": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C03.png",
+  "box": null,
+  "median_h": 63.0
+ },
+ "f23_C04": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C04.png",
+  "box": null,
+  "median_h": 67.0
+ },
+ "f23_C05": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C05.png",
+  "box": null,
+  "median_h": 70.5
+ },
+ "f23_C06": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C06.png",
+  "box": null,
+  "median_h": 65.0
+ },
+ "f23_C07": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C07.png",
+  "box": null,
+  "median_h": 77.5
+ },
+ "f23_C08": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C08.png",
+  "box": null,
+  "median_h": 75.5
+ },
+ "f23_C09": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C09.png",
+  "box": null,
+  "median_h": 60.5
+ },
+ "f23_C10": {
+  "image": "ciphers/wvo-hessen-1564/sorter/seg_in/f23_C10.png",
+  "box": null,
+  "median_h": 37.0
+ }
+}

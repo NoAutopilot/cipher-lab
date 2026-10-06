@@ -374,3 +374,27 @@ Brief: `.claude/briefs/runs/2026-10-06-account4-run8-jobs.md` job R8-WVO1111 (R7
   control, ~$3 Opus, after f.23's sign inventory is settled in the owner's sign sorter (~$1.5 build; NX-WVO174's passes split
   290 vs 335 tokens). Details in `wvo1111_transcription.md`.
 - Requests: archive.org 3, www.googleapis.com 3 (>= 2 s apart); resources.huygens.knaw.nl 0. 4 Sonnet subagent calls.
+
+## f.23 owner sign sorter (R9-WVOSORT, account 4, 6 Oct 2026, 05:43-05:5x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run9-jobs.md` job R9-WVOSORT (RUN8 named step 4). Built, not published:
+`sorter/f23_sorter.html`, 258 tiles in 28 provisional shape piles, 24 focus tiles; `tools/sorter_preflight.py` **PASS**;
+contact sheet `sorter/f23_sorter.preflight.png`, 24 random tiles eyed against their rows (20 whole signs, 4 cut faults the
+page's own buttons handle). Method, commands and known faults: `sorter/README.md`. No network, no subagent.
+Handed to the account-3 orchestrator to publish (ROOM flag). Crib-placement test not run (brief).
+
+**Observation while cutting (by eye, grade M, not a reading; for the lane and a verifier):** f.23 is written in twenty
+alternating rows -- a row of ordinary German above each of the ten cipher rows -- and the German rows look like a
+letter-over-sign interlinear decipherment, not clear words interspersed in the cipher as this folder has said so far
+(the "Images opened" section above, its Verdict, and the 2 Oct Premise check (a) all record "no interlinear gloss").
+Three checks on the page image: (1) the last pair, "worden sei" over `P 7 ‡ 4 8 Y | K 8 ♂`: six signs under the
+six letters of "worden", three under "sei"; (2) the same sign (an 8-shape) stands under "e" in both words;
+(3) "zweimahl" is written in two clear rows (rows 11 and 13: "...adern zweimahl", "...tranck zweimahl") and the
+cipher rows under them both end in nearly the same run (`o p 9 ... x 9 II 9` / `o p 8 ♂ ... x 9 II 9`). The clear
+rows are also spaced out letter by letter where the cipher row is long ("m i r  k o n n e n", "w o r d e n  s e i").
+If this holds, f.23 carries its own decipherment and the key is recoverable at grade C by alignment -- a different
+question from the crib-placement test, which it would replace. NX-WVO174's two passes cut f.23 into 18 bands over these
+20 rows, mixing gloss and cipher in most bands; that is a likely cause of their 290 vs 335 split.
+Named next step (not run): pair each clear row with the cipher row below it and run `tools/interlinear_align.py`
+(grade C) with a rule-3 control (the same alignment against row-shuffled gloss/cipher pairs), after or alongside the
+owner's sort; ~$2-3 Opus. Reading, key.tsv and status fields untouched by this job.
