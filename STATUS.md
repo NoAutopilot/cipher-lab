@@ -5204,7 +5204,7 @@ this design. Process note: test_homophonic_alphabet.py fixture (a) and system_ma
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md; folders a-h. Gate 0a: SESSION-SWEEP-account-1
 row still `claimed` but the sweep completed 22:48 5 Oct (TSV on disk), proceeded as RUN8-10 did, 0 exclusions. Avoided account-4 DEFAULT-1235 wave
-folders. 22 workers (21 Opus, 1 Sonnet; 16 D, 5 D-, 1 B), workers 48.40 + orchestrator ~6.0 (get_session). five_hour `allowed` throughout. No reading
+folders. 18 workers (17 Opus, 1 Sonnet; 12 D, 5 D-, 1 B), workers 48.40 + orchestrator ~6.0 (get_session). five_hour `allowed` throughout. No reading
 entered a key; no status line moved to a terminal state; no depth or N-class raised.
 - decode-2678: AUDIT 2 (D1-DEC2678A2) keeps N3 (not N4: Haug 2015, AE CP Allemagne 194-195 unread), key published (Tomokiyo), D2 73% re-checked.
   Mel. Colbert sommaires 120-125/131-133: 15 Gravel entries, none chiffre; the six 1665 letters (131bis-133) all in clear. Code 29 = Elector of
