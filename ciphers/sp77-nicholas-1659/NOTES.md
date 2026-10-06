@@ -164,3 +164,21 @@ Found (none is a plaintext of f.289, so no crib):
 Not found: any Nicholas letter to St Sebastian dated 6/16 Aug in either calendar; any named "Sir L.R."; any key naming him. Status unchanged: open. Next step stays the TNA page copy of SP 77/32/289 (ASKS row 73); a cheap further step is reading Bennet's own Aug 1659 letters (Cal. Clar. iv pp. 310-316) for "Sir L." as a cover name, not run here.
 
 Requests this pass: archive.org 2 (djvu.txt), no other host.
+
+## Cal. Clar. iv pp. 310-316 read (R8-NICH2, 6 Oct 2026)
+
+Step run: R7-NICH's named step. Text: IA `calendarofclaren04bodluoft` `_djvu.txt`, fetched once (archive.org, 2 requests incl. one empty first response, no other host), pages located by running headers (p.310 line 17803 to p.316 end, "AUGUST 1659"), read in full, then grepped for cipher/cypher, Nicholas, Sebast, "L. R.", "Sir L", Rumbold, Holder.
+
+Entries (page, date, writer, one line):
+- 310-311, 5/15 Aug, Fuentarabia, Bennet to Hyde no. 4: Talbot arrived two days ago; Mazarin refused to see Bennet; "Chiefly deciphered cipher" (the calendar's own note on this letter).
+- 311, 5/15 Aug, Hyde to "Wright" [Rumbold]: arms, the King left Wednesday; enclosure Hyde to Ormonde, Brussels, same date (Duke of York, Howard, Taafe).
+- 311-312, 5 Aug, English Council of State correspondence: Awdeley, Child, Kelsey (Canterbury), "Brasy" [Dr. Moore] to Hyde (risings, Booth at Chester).
+- 312-313, 5 Aug, Worcestershire and Shaston examinations (Rogers; Scudamore, Andrews, Brett, Gale).
+- 313, 6/16 Aug, Calais, [Titus] to Hyde at Brussels: Kelsey's troops in Kent, Bristol.
+- 313-314, 6 Aug, London, anonymous to "My lord" [Hyde]: Lambert, Chester, Massey; Warrin and Shaw confessions (Lord Craven).
+- 314-315, 6 Aug, Bristol, Gloucester, Shaston examinations (Cambridge, Whitehand, Wade/Croft, Stark/Sandford); 7 Aug Davies, Longe (Lansdowne).
+- 316, 8/18 Aug, items from Thomson to Lockhart, Lockhart (St Jean de Luz) to the Council of State, Vane to Lockhart, Stanesby examination; read at headline level only.
+
+Whether any entry names or quotes the cipher letter: **no**. No entry is a Nicholas letter to St Sebastian, none mentions "Sir L.R." or any L.R., and no St Sebastian report other than Bennet's no. 4 (from Fuentarabia) appears in these pages. Nicholas appears only in a footnote (p. 312, n.1): Nicholas to Marces 13/23 Aug (CSPD 1659-60 p.108), the letter already logged on 6 Oct as a different one. The window carries no key, alias list or plaintext, so no crib for SP 77/32/289 results. Not found in this window is a search result for the log, not a verdict on the item.
+
+Status unchanged: open. Remaining step stays the TNA page copy (REQUEST.md, ASKS row 73); the 316 tail and p.317 onward (Lockhart letters at St Jean de Luz, 8/18 Aug) were not read in detail and are the only unread part of the week.
