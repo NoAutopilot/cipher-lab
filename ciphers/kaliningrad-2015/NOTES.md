@@ -581,3 +581,19 @@ closes negative, the light homophonic family on this target is spent for every s
 (S3', S1, S1s, S3-soft, German) and the next test needs a different design family (nomenclator/code groups or
 transposition), not another substitution scheme. Verdict: keep going (no outside blocker).
 
+## R12-KAL9, S3 convention B confirmation with a 50-shuffle null, 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run12-jobs.md` "R12-KAL9" (LANE-RUN12, account 2): R12-KAL8's next step (1).
+Disk and CPU only, no hosts, no subagents. Pre-registered in HYPOTHESES.md "R12-KAL9" (commit 2a3713168) before scoring:
+the same S3 unit, shuffle seeds 16-50 added to R12-KAL8's 1-15, gate = target above P95 of the 50. The target decode
+reproduced byte for byte (42 of 1,066 letters covered). Result: **FAIL** -- P95 0.0459 (48.9 letters) against the
+target's 0.0394; the target ranks 5 of 51 (empirical p 0.118), four fresh shuffles cover 44-69 letters; the length >= 5
+secondary is at rank 14 (p 0.43). S3 convention B is a control-backed negative for the light homophonic design on this
+statistic (conditional on Ernst's transcript, convention B and the lexicon's register); R12-KAL8's apparent excess was
+small-null luck. Files: `lexseg/r12/kal9/`, `lexseg/r12/coverage_minlen{4,5}_s3_kal9.tsv`. Status stays `open`.
+
+**Next steps (R12-KAL9).** R12-KAL8's step (2) now applies: with a lexicon instrument the light homophonic family is
+spent on every scheme tried (S3', S1, S3, S1s, S3-soft, German), so the next test needs a different design family
+(nomenclator/code groups or transposition) with its own matched control, not another substitution scheme. Verdict: keep
+going (no outside blocker).
+

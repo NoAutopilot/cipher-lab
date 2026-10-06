@@ -914,3 +914,19 @@ step (1). Disk and CPU only.
   described. A fail (target <= P95): S3 convention B closes as a control-backed negative for the light homophonic design on
   this statistic (conditional on Ernst's transcript, convention B and the NT lexicon's register), and R12-KAL8's next step (2)
   applies: the next test needs a different design family.
+
+### R12-KAL9 result (6 Oct 2026, 12:19-12:27 UTC; pre-registration commit 2a3713168 before any scored run)
+
+| statistic | target | 50-shuffle null (seeds 1-50) | P95 (gate) | target rank of 51 | empirical p | result |
+|---|---|---|---|---|---|---|
+| coverage, len >= 4 | **0.0394** (42/1066) | 8-69 letters, mean 30.5 | **0.0459** (48.9 letters) | 5 (1 tie) | 0.118 | **FAIL** (target <= P95) |
+| len >= 5 (secondary) | 0.0094 (10) | 0-20, mean 6.9 | 0.0159 | 14 | 0.431 | inside the null |
+
+- Reproducibility check passed: the target decode came out byte-identical to R12-KAL8's `lexseg/r12/target_decode_s3.txt`
+  (42 covered letters), so the old 15 and the new 35 shuffles are one pipeline.
+- Three of the 35 fresh shuffles (seeds 16-50) cover more letters than the target (44, 53, 57 and 69 letters); one ties (42).
+  R12-KAL8's top-of-16 reading was the expected small-null luck that its own ~28% estimate named.
+- Registered reading: **S3 convention B is a control-backed negative** for the light homophonic design on the lexicon
+  coverage statistic (control from R12-KAL8: synthetic 0.524-0.800 vs G_s 0.033), conditional on Ernst's transcript,
+  convention B and the NT lexicon's register. No verifier look is licensed. Files: `lexseg/r12/kal9/` (36 decodes),
+  `lexseg/r12/coverage_minlen{4,5}_s3_kal9.tsv`. Rule 10: nothing here is a reading.
