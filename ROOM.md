@@ -9445,3 +9445,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:35 | R11-CLIN2380B | claim for LANE LANE-RUN11-account-2: pro3055-clinton-1779, 2380 cipher pp.121-122 (Images 759-760) vs period decipherment; cap 5, box 09:35-10:45 UTC (80% 10:31); AUDIT.md untouched
 2026-10-06 09:35 | R11-RAYWB worker | claim for LANE LANE-RUN11-account-2: rayburn-2004 Wayback retry (1 CDX query, <=2 capture fetches), cap 1, box ends 09:55 UTC
 2026-10-06 09:35 | R11-CLINV3 verifier | claim pro3055-clinton-1779 (R11-CLIN2380 p.120 audit), cap 2.5, box end 10:17 UTC, for LANE LANE-RUN11-account-2
+2026-10-06 09:36 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 09:34 UTC: spawned 1 (LANE-RUN10-account-4 -> session_019b5FtNbHb8pGgZbPaFv7QV, default-lane brief, split s-z), queued left 0; standby: account-3 orchestrator last commit 09:04 UTC, no takeover
