@@ -1,0 +1,44 @@
+crop	gloss_word	signs	status
+L01	de	[other=_struck/ladder_block_at_line_start] w 7 λ & [w-tilde] 5 t λ 3 l	skip-len (2 vs 11)
+L01	affuyten	n [hash] [y-fam] r 3 0	skip-len (8 vs 6)
+L01	zonder	d 3 [psi] c [delta] 9	aligned
+L01	beslag	n [hash] 5 w 3 l	aligned
+L01	zouden	4 3 c	skip-len (6 vs 3)
+L01	wel	[other=_ss/ff-like_ligature] 3 0	aligned
+L01	hier	b 5 [y-fam] l 3 h	skip-len (4 vs 6)
+L01	kunnen	5 3 0 5 [delta] x o	skip-len (6 vs 7)
+L01	vervaardig	w [other=_w_with_flourish] 9 λ	skip-len (10 vs 4)
+L02	worden	4 [hash] o w 3 [y-fam]	aligned
+L02	in	[other=_f-like] [y-fam]	aligned
+L02	die	w [other=_ligature] 3 λ t r	skip-len (3 vs 6)
+L02	tyd	w [delta] λ	aligned
+L02	dat	[other=_ss-like] 3 λ	aligned
+L02	het	9 7	skip-len (3 vs 2)
+L02	geschut	[psi] 7 [psi] 5 λ	skip-len (7 vs 5)
+L02	hier	[other=_ss/ff_ligature] 3 0	skip-len (4 vs 3)
+L02	gezonden	9 7 n [hash] [y-fam] w 7 [y-fam]	aligned
+L02	wierd	4 [other=_ff-like] 3 0 r	aligned
+L02	maar	[y-fam] [delta] x o	aligned
+L02	om	[hash] [y-fam]	aligned
+L03	te beslaan is onmoogelyk wyl en de smeedery aan paramaribo m	λ 7 d 3 [psi] c [delta] x [y-fam] | [other=_ff-like] [psi] | [hash] [y-fam] [y-fam] k [hash] 9 3 c t b | 4 t c 3 [y-fam] | w 7 [psi] [y-fam] 3 7 w [ezh-dot] o t | [delta] x [y-fam] | [other=_S-like_flourish] x o p [y-fam] [delta] o [other=_f-like] d [hash] [y-fam] / 3	skip-line (11 gloss words, 7 cipher groups)
+L04	daarvoor	4 W [delta] x o 5 k [hash] o	skip-len (8 vs 9)
+L04	is	[other=_f-like] 6	aligned
+L04	ingerigt	8 [y-fam] 9 3 0 o f 9 λ	skip-len (8 vs 9)
+L04	om	[hash] [y-fam]	aligned
+L04	zwaare	[psi] 4 [delta] x o 3	aligned
+L04	affuyten	p & [w-tilde] 5 t λ 3 [y-fam]	aligned
+L04	te	r 3	aligned
+L04	kunnen	b 5 [y-fam] l 3 l	aligned
+L04	beslaan	d 3 [psi] l [delta] x [y-fam]	aligned
+L05	en het dagelyks noodzaakelyk andere werk ook zulks beter	3 [y-fam] | [other=_ss-like] 3 λ | w [delta] x 9 3 | 3 c t b [psi] | l k [hash] r n [delta] x | b 3 c t b | 4 [y-fam] w 3 0 | 4 7 0 6 | k [hash] 6 | n 5 c b [psi] | d 3 g 7 λ	skip-line (9 gloss words, 11 cipher groups)
+L06	en op het fortres n a de smeedery alleenig zoude wel meer als drie	3 l [hash] l | [other=_ss-like] 3 λ | [other=_large_printed-like_capital_F_with_period] | w 3 [psi] [y-fam] 3 7 w [ezh-dot] o t | [delta] g c 3 7 [y-fam] [other=_f-like] 9 | n [hash] 5 w 7 4 | 3 c [y-fam] 3 7 0 [delta] c [psi] | w 0 [other=_f-like] 3	skip-line (14 gloss words, 8 cipher groups)
+L07	jaaren van nooden hebben om de zelve te beslaan en aan para	8 p [delta] x 0 3 [y-fam] | 5 x [y-fam] | l k [hash] w 3 [y-fam] | [other=_ss-like] 3 | 6 d 3 [y-fam] | [hash] [y-fam] r 3 n 7 c 5 d | λ 7 d 3 [psi] c [delta] x [y-fam] | 3 [y-fam] x p [y-fam] [other=_S-flourish] [delta] o x	skip-line (12 gloss words, 8 cipher groups)
+L08	maribo door burgers smits laasen te laaten beslaan zonde	[y-fam] x o f [ezh-dot] [hash] | w k [hash] 0 d [hash] 0 9 3 0 | [psi] [y-fam] f λ [psi] d [delta] x [psi] 7 l | λ 3 c [delta] x λ 3 [y-fam] d 7 [psi] c [delta] x [y-fam] | n [hash] 5 w 7	skip-line (9 gloss words, 5 cipher groups)
+L09	het beslag voor een affuyt alleenig meer kosten als het	[other=_ss-like] 3 λ | d 7 [psi] c [delta] 9 | 5 k [hash] o 3 7 l | [delta] & [w-tilde] 5 t λ | x 9 c 3 7 [y-fam] f 9 | [y-fam] 3 7 0 | b [hash] [psi] λ 3 [y-fam] | x c [psi] | [other=_ss-like] 3 λ	skip-line (10 gloss words, 9 cipher groups)
+L10	compleete affuyt in holland kost en boven dien zouden	p [hash] [y-fam] f c 3 7 λ 3 | [delta] [psi] [w-tilde] 5 t λ | 3 l | [other=_ss-like] [hash] 9 c [delta] [y-fam] w | b [hash] [psi] λ | 3 [y-fam] | d [hash] 5 3 [y-fam] w [other=_f-like] 3 [y-fam] n [hash] 5 r 3 [y-fam]	skip-line (9 gloss words, 7 cipher groups)
+L11	dezelve	w 3 n 7 c 5 d	aligned
+L11	ook	k [hash] 6	aligned
+L11	niet	[y-fam] [other=_f-like] 3 λ	aligned
+L11	goed	9 [hash] 3 r	aligned
+L11	beslagen	d 3 [psi] c [delta] g 3 [y-fam]	aligned
+L11	worden	4 [hash] o w 7 l	aligned

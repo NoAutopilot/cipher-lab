@@ -1,0 +1,25 @@
+# R13-SUR730: ONE blind Sonnet pass on crops p0730_L01-L11 (crop paths only, reader-code vocabulary, no values, no key), 6 Oct 2026
+# ~14:02 UTC, after PREREG 17aed480e was pushed. Verbatim as returned (the reader's '\&' kept as written).
+crop	kind	text	conf	remarks
+L01	gloss	de Affuyten zonder beslag zouden wel hier kunnen vervaardigt	0.6	first word "de" faint; "Affuyten" capital A uncertain
+L01	cipher	[other: struck/ladder block at line start]w7[lambda]\&[w-tilde]5t[lambda]3l | n[hash][y-fam]r30 | d3[psi]c[delta]9 | n[hash]5w3l | 43c | [other: ss/ff-like ligature]30 | b5[y-fam]l3h | 5305[delta]xo | w[other: w with flourish]9[lambda]	0.4	signs 'x' near [delta] may be a dotted stroke; word spacing approximate
+L02	gloss	worden, in die tyd dat het geschut hier gezonden wierd, maar om	0.55	upper line partly overwritten by descenders from line above
+L02	cipher	4[hash]ow3[y-fam], [other: f-like]y w[other: ligature]3[lambda]tr w[delta][lambda] [other: ss-like]3[lambda] 97 [psi]7[psi]5[lambda] [other: ss/ff ligature]30 97n[hash][y-fam]w7[y-fam] 4[other: ff-like]30r, [y-fam][delta]xo [hash][y-fam]	0.35	many ligature-like signs (ss/ff) uncertain
+L03	gloss	te beslaan is onmogelyk, wyl en de Smedery aan Paramaribo m	0.6	end of line "Paramaribo" then possibly "m"
+L03	cipher	[lambda]7d3[psi]c[delta]x[y-fam] [other: ff-like][psi] [hash][y-fam][y-fam]k[hash]93ctb, 4tc3y w7[psi][y-fam]37w[d-loop]ot [delta]x[y-fam] [other: S-like flourish]xopy[delta]o[other: f-like]d[hash][y-fam]/3	0.35	end of line sign group uncertain
+L04	gloss	daar voor is ingerigt om zware Affuyten te kunnen beslaan	0.55	"Affuyten" capital A uncertain
+L04	cipher	4W[delta]xo5k[hash]o [other: f-like]6 8y930of9[lambda] [hash][y-fam] [psi]4[delta]xo3 p\&[w-tilde]5t[lambda]3y r3 b5[y-fam]l3l d3[psi]l[delta]x[y-fam],	0.4	opening 4W maybe a blotted sign
+L05	gloss	en het dagelyks noodzaakelyk andere werk ook zulks beter	0.55	
+L05	cipher	3[y-fam] [other: ss-like]3[lambda] w[delta]x93 3ctb[psi] lk[hash]rn[delta]x b3ctb 4[y-fam]w30 4706 k[hash]6 n5cb[psi] d3g7[lambda],	0.35	spacing approximate; 93/33 ambiguous
+L06	gloss	en op het Tortres N.A. de Smeedery alleenig zoude wel meer als drie	0.5	"Tortres N.A." uncertain, probably an abbreviation or place name
+L06	cipher	3l[hash]l [other: ss-like]3[lambda] [other: large printed-like capital F with period] w3[psi][y-fam]37w[d-loop]ot [delta]gc37[y-fam][other: f-like]9 n[hash]5w74 3c[y-fam]370[delta]c[psi] w0[other: f-like]3	0.4	large F is a heavy distinct mark, likely a null or capital
+L07	gloss	jaaren van nooden hebben om de zelve te beslaan; en aan Sara	0.5	last word possibly Sara/Fara
+L07	cipher	8p[delta]x03[y-fam] 5x[y-fam] lk[hash]w3[y-fam] [other: ss-like]3 6d3[y-fam] [hash][y-fam]r3n7c5d [lambda]7d3[psi]c[delta]x[y-fam]; 3[y-fam]xp[y-fam][other: S-flourish][delta]ox	0.35	
+L08	gloss	maribo door Burgers Smits laaten te laaten beslaan, zonde	0.4	"maribo" and "Burgers Smits" uncertain; "te laaten" doubling unsure
+L08	cipher	,[y-fam]xof[d-loop][hash] wk[hash]0d[hash]0930 [psi][y-fam]f[lambda][psi]d[delta]x[psi]7l [lambda]3c[delta]x[lambda]3yd7[psi]c[delta]x[y-fam], n[hash]5w7	0.35	line starts with a comma-like mark
+L09	gloss	het beslag voor een Affuyt alleenig maar kosten als het	0.55	
+L09	cipher	[other: ss-like]3[lambda] d7[psi]c[delta]9 5k[hash]o37l [delta]\&[w-tilde]5t[lambda] x9c37[y-fam]f9 [y-fam]370 b[hash][psi][lambda]3y xc[psi] [other: ss-like]3[lambda]	0.4	
+L10	gloss	complete affuyt in Holland kost, en boven dien zouden	0.5	"Holland" capital H slightly unsure
+L10	cipher	p[hash][y-fam]fc37[lambda]3 [delta][psi][w-tilde]5t[lambda] 3l [other: ss-like][hash]9c[delta][y-fam]w b[hash][psi][lambda], 3[y-fam] d[hash]53[y-fam]w[other: f-like]3[y-fam]n[hash]5r3[y-fam]	0.35	
+L11	gloss	dezelve ook niet goed beslagen worden.	0.6	final flourish line after "worden."
+L11	cipher	w3n7c5d k[hash]6 [y-fam][other: f-like]3[lambda] 9[hash]3r d3[psi]c[delta]g3y 4[hash]ow7l.	0.4	trailing long dash stroke after final sign ignored
