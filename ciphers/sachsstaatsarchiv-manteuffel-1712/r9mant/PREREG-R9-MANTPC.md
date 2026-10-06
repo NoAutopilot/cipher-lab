@@ -1,4 +1,4 @@
-# PREREG-R9-MANTPC (6 Oct 2026, 06:1x UTC by date -u; LANE LANE-RUN9-account-4, account 4)
+# PREREG-R9-MANTPC (6 Oct 2026, 06:03 UTC by date -u; LANE LANE-RUN9-account-4, account 4)
 
 Pushed before any per-code score is computed. Nothing has been run for this test yet; R9-MANTPOOL stored only the sorted
 blended S of its 1000 shuffle draws (shuffle_r9.tsv), not per-code draws, so the draws are regenerated.
