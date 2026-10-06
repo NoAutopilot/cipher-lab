@@ -5757,3 +5757,22 @@ Results (no reading claimed, no novelty class; nothing at C):
 What is left: gate-7 check on castelcicala REQUEST.md, then ASKS 149 to the desk; pisany f.275r control resume; fr16106 waits on the c107
 sort; fr15575 waits on L63 or a gloss read; decode-1411 needs a different instrument. False alarm logged: D4-VIVV's "history rewritten" flag
 was its shallow clone's boundary (a7549ca8 and 49f195080 are ancestors of origin/main), retracted in ROOM.
+
+## LANE DEFAULT-account-2-20261006-2209 handoff (session_01DfJ7KB48PGfFxMBC3v3gpk, account 2), 6 October 2026 (closed 22:5x UTC: runnable backlog spent, lane 19.83 of 60)
+
+Brief `.claude/briefs/default-lane.md`; jobs `.claude/briefs/runs/2026-10-06-account2-default2209-jobs.md`. Gate 0a clear (SESSION-SWEEP-account-2
+done 23:21 5 Oct). VERIFY-BACKLOG: nothing actionable (Birago off limits; nla-heinrich audit2 not needed at N0). `next_steps.py --hot-only`:
+32 runnable rows, nearly all worked today by RUN7-RUN15 (account 2), RUN12 (account 1), RUN13 (account 4) and DEFAULT-account-1, or stale.
+
+| Worker | Target | Result | Cost |
+|---|---|---|---|
+| D22-COL26P (Opus) | colbert26-lathuillerie-1644 | positional per-code test, 26 f.23 codes: 0 PASS, 15 FAIL, 11 underpowered; key unchanged | 2.33 |
+| D22-LINTRIM (Opus) | antt-linhares-chave | trim/join enumerator, known-answer control PASS; 2 resolvable trims = committed end-trims; no join licensed | 2.02 |
+| D22-F3151D (Opus) | fr3151-noailles-1558 | fr.10773 is La Vigne's Constantinople register; Nov 1558 holds only La Vigne letters; no no.33 copy | 2.72 |
+| D22-CEPPO21 (Opus) | ceppo-nevers-fr3251-1570s | f.21v 26/27 8-tokens decided by the R-8 witness shape, all agree passD; 5 M->S; L03.39 undecided | 3.71 |
+| D22-FTS (Sonnet) | sacchetti, belmesseri, della-torre, decode-9970, heinsius-dopff (salvago already run) | no printed cipher text or decipherment; 3 leads | 2.13 |
+| D22-FTS2 (Sonnet) | the 3 leads + fr3151 register search | no clear copy or decipherment; fr3151: Tamizey de Larroque 1865 unopened; belmesseri: ASMo agenti Roma 1627 b.180 | 3.29 |
+
+Workers 16.20 + orchestrator 3.63 = 19.83 of 60. Known-text share (rule: about a fifth): at most the Linhares job (2.02, about 12%).
+Open for the next lane: fr3151-noailles Tamizey de Larroque 1865 edition read for a clear 13 Nov 1558 text (S); ceppo f.21v L03.39 (one token);
+colbert26 canvas 20-21 positional test (~1, named by COL26P). Everything else on the hot-only list needs the owner, images, keys or editions.
