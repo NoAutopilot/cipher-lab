@@ -30,3 +30,19 @@ licensing rules unchanged. Reported beside R8-MANT530's 8-leaf result (0.750 vs 
 
 Known-answer (reported first, not a gate): every single-code gloss on this leaf whose code has a C value in key.tsv is scored
 agree / compatible / disagree.
+
+## Addendum (6 Oct 2026, 09:47 UTC by date -u), after reconciliation, before any alignment or score
+Crops (pasted): `tools/iiif_lines.py --image 0526.jpg --out crops --region 2130,930,1260,1650 --prefix R --distance 40 --lines-per-crop 3 --debug`
+found 17 of ~28 lines (debug overlay: the dense lower block and the middle paragraph skipped), so the same region was cut by PIL into 8
+overlapping full-width strips, native boxes (2130,930+200k,3390,+270) k=0..7 (S01-S08, 1260x270 px); passes got the strip paths only.
+Reconciled: 14 runs, 55 code tokens, 11 glossed, 3 of them single-code (877 Bartholdi x2, 867 "le feld mareschal"); 371 single unglossed
+(reconciled.tsv, pairs.tsv). Pass agreement A vs B by token alignment: 49/53 (0.925; 281/381 x2, 237/337, 354/357, B adds 231 as its own
+run), under the 10% stop line. Worker zooms (1.5-4x, scratch): 402.635 gloss "la treve" (passes neuve/revue) -> M; 583.337 (A 237); gloss
+"une conference" placed over 714.214.281.272.197 (A had it over run 12) -> M; run 14 gloss "conferer avec Ilgen", last code 357 read
+with the gloss descender crossing it (B 357, A 354) -> M, flagged as not independent of key.tsv 357 Ilgen. Run 11's small-hand line
+attached as gloss (B; A read it as clear) -> M.
+Normalisation: MANT5 only, no gloss_norm_0526.tsv. The leaf writes "F.M." over run 3 (ending 867) and "le feld mareschal" over single 867;
+"F.M." does not occur in any single-code gloss, so a rule for it changes no gated statistic, and "feld mareschal" vs 0529's
+"Feldmarechal" is a spelling variant, not an abbreviation the registered clause covers. As registered, the pooled table will therefore
+show 867 as "disagree" ("le feldmarechal" x2 vs "le feld mareschal"); a non-gating sensitivity run merging the two spellings is declared
+here and will be reported beside the registered result, never in its place.

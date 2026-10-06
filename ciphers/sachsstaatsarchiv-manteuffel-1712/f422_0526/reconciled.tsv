@@ -1,0 +1,15 @@
+run	page	crop	codes	gloss	gloss_grade	note
+1	f.422	S03	402.635	la treve	M	passes 'la neuve'/'la revue'; worker zoom (3x, 2950,1430,3390,1560) 'la treve'; 'tout' under 635 is an insertion into the clear text, not a gloss
+2	f.422	S04	595.351.447.181.560.102	Schonborn	C	A/B/zoom agree; gloss over 595.351 only (covers part of the run); 595 (B: 5 vs 6)
+3	f.422	S04	401.504.237.867	l'ordonnance du F.M.	C	A/B agree; 504 open-y 4; gloss over 237.867
+4	f.422	S05	177.106.618.478.238	Bartholdi	C	A/B agree; gloss over 177.106 (covers part of the run); '+' mark after 238
+5	f.422	S05	371		-	single, unglossed (371 = il M in key.tsv, RUN4-MANT2)
+6	f.422	S06	877	Bartholdi	C	A/B/zoom agree
+7	f.422	S06	867	le feld mareschal	C	A/B/zoom agree; spelled 'le feld mareschal' (0529: 'le Feldmarechal'); the same leaf writes 'F.M.' over run 3 ending 867
+8	f.422	S07	403.875	le Comte	C	A/B agree; 875 (A 575/673, B 675 alternatives)
+9	f.422	S07	877	Bartholdi	C	A/B/zoom agree ('par 877 a ce que je croy')
+10	f.422	S08	285.143.108		-	unglossed ('etant arrive' after it is clear text); 143 (B 148), 108 (A 168)
+11	f.422	S08	149.563.644	situation des intrigues de cette cour	M	B attaches the small-hand line to the run, A read it as clear text; zoom (2x): small hand, run's baseline, beside and below 149.563 -- gloss hand, kept M; 149 (open-y 144 possible)
+12	f.422	S08	615.153.384.285.237.82.379.370.644.583.337.197.83.612.231		-	unglossed; 583.337 (A 237; zoom 3x reads 337); 231 at the start of the next line taken as the run's wrap (B: separate)
+13	f.422	S08	714.214.281.272.197	une conference	M	A put the gloss over 583.237.197 of run 12, B over this run; zoom: written between the two lines, above 214.281.272 -> this run (glosses on this leaf sit above their codes); 281 (A; B 381), 714 (A alt 744)
+14	f.422	S08	214.281.271.173.357	conferer avec Ilgen	M	A 'conferer avec le Comte', B 'conferer avec ??'; zoom 4x: 'conferer avec' then a word ending '-igen/-lgen' whose descender crosses the last code; last code 357 (B; A 354), digit obscured by that descender -- this choice is consistent with key.tsv 357 Ilgen and not independent of it; 281 (B 381), 271 (B alt 291)
