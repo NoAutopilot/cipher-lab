@@ -1375,3 +1375,35 @@ reading.txt changes, so no `--check`, judge, AUDIT.md or SECOND-OPINIONS-QUEUE.t
 Grades: the four Part II headwords are read off the page images (H as dictionary facts); no plaintext token is graded by this test.
 Requests: archive.org 3 (page_numbers.json -- empty pageNumber fields; djvu.txt; hocr_pageindex.json.gz), ia800806.us.archive.org 6
 (page images), sequential, >= 2 s apart. No subagent; own reads of the four column-top crops.
+
+## Front-trim and adjacent-join enumeration (D22-LINTRIM, 6 Oct 2026) -- PRE-REGISTRATION (pushed before any scored run)
+
+Question: the key allows a trim "do principio, ou do fim da palavra", and its worked example joins fragments ("Franc"+"a",
+"Rus"+"si"+"a"); the committed reading uses end-trims and no joins. Does a mechanical enumeration of both trim directions and
+adjacent joins, scored by an era-matched Portuguese word model, pick a different reading for any trimmed token, or a join?
+
+Input fixed now (book headwords as on file in key.tsv / BOOK.md, accent-folded, lower case; trim n from the key's subscript):
+worked example (12 groups) Aba/2 (p1 c3 r1, read this job off leaf 11 = printed p.1, `images/book/newpocketdiction00viey_leaf0011_p001.jpg`),
+guerra, de, franco/1, anao/3, com, abicar/5, rustico/4, sillaba/5, acaso/4, parecer/1, inevitavel; target m0002 (26 groups, reading
+order) para, supprir, ovo/2, seu, lugar, junto, com, mando/2, ouros/4, d, justa, hernia/4, segredo, ate, paralisia/5, odio/3,
+ministerio, pela, memoria, dormitar/6, cagar, lhe, pauperrimo/3, venablo/4, habil/3, logo. (justa, cagar, para stay M as on file;
+their lookups are not varied here.)
+
+Instrument: `scripts/trim_join_enum.py`. Variants: a token with trim n has {W[:-n] (end), W[n:] (front)} (identical strings merged);
+an untrimmed token is fixed. A word is the concatenation of 1-4 consecutive tokens (joins allowed across manuscript line breaks).
+Scorer S1, fixed now: word unigram from `tools/data/pt18` (all four files; lower case, accents folded, [a-z]+ tokens): an in-vocabulary
+word scores ln(c/N); an out-of-vocabulary word scores ln(0.1/N) - len(word). The reading is the exact maximum over all configurations
+(dynamic programme over token positions).
+
+Gate 1, known-answer control (run first; can fail): on the 12 worked-example groups the argmax must be exactly
+`a guerra de franca com a russia parece inevitavel`. If not: log "non-test: enumerator fails its known-answer control", score nothing
+on the target, stop.
+Resolution (fixed now): per trimmed token, margin = best total with the chosen direction minus best total with the other direction forced;
+per adjacent boundary, margin = best with the chosen join/split minus best with the opposite forced. A decision is **resolved** iff
+margin >= ln(10) = 2.303. Also reported, not gating: the same margins on the worked example, and a scrambled-order null (20 seeded
+permutations of the 26 target tokens) giving how many trim and join decisions resolve when token order is destroyed -- trim-direction
+calls that resolve equally in the null are lexical (the fragment is or is not a word), not evidence from context.
+Outcomes (fixed now): nothing in ciphertext.tsv, key.tsv or reading.txt changes in this job. A resolved token whose chosen direction
+equals the committed end-trim is reported as consistent; one whose chosen direction differs is reported as a candidate graded S at most,
+listed beside the committed token; an unresolved one keeps its reading and its decision is M. A resolved join is reported as a
+connected-gloss candidate (I), never merged into reading.txt. No network beyond one page image (leaf 11, fetched for Aba).
