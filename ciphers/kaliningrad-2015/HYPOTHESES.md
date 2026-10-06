@@ -819,3 +819,41 @@ target decode `lexseg/target_decode_noNT.txt` (not a reading). 76 decodes, about
   agrees (0.0153 vs p95 0.0215). Conditional on Ernst's transcript, convention A, and a Bible-register NT lexicon.
 - This is the **second instrument on the S3' design** (first: R9-KAL6's ru19_soft n-gram judge, which could not decide).
   No reading claimed; nothing here is a reading (rule 10).
+
+## R12-KAL8, lexicon word-segmentation on the remaining schemes S1, S3, S1s, S3-soft, German (6 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run12-jobs.md` "R12-KAL8" (LANE-RUN12, account 2): R10-KAL7's driver
+(`scripts/lexseg.py`, now taking env LEXSEG_CIPHER and LEXSEG_PARAMS; R10-KAL7's default path unchanged), no tool change,
+on each remaining scheme. Disk and CPU only.
+
+**Pre-registration (committed and pushed before any scored run; one registration for all five units).**
+- Units, in run order (a unit is started only if it can finish before 80% of the box, 12:26 UTC; units not reached are
+  logged "not run", never negatives). Decoder `tools/families/homophonic.solve`, restarts 20, solve seed 1, the plain
+  anneal of each scheme's earlier control-backed row:
+  1. **S1**: convention B (`ciphertext_signs_B.tsv`, N 1066, K 28), params {profile: target}.
+  2. **S3**: convention B (N 1066, K 28), {profile: target}.
+  3. **S1s**: convention A (`ciphertext_signs.tsv`, N 978, K 36), {profile: target}.
+  4. **S3-soft**: convention A, {profile: target, alphabet: ru-s3-soft}.
+  5. **German**: convention A, {profile: target}, corpus de20 (the corpus every earlier German row used; the brief's
+     "de19 or de1600 as earlier rows chose" resolves to de20, since GOLD-KAL1 and A2-KAL3 used de20).
+- Train corpora and lexicons: `scripts/lexseg_build.py` (deterministic). Russian: train = Synodal Bible outside books
+  40-66 in the scheme's transliteration; lexicon = NT (books 40-66) word types in the same scheme, length >= 4, count
+  >= 2 (s1 7,625; s3 7,679; s1s 7,553; s3_soft 7,585 types). German: train = de20 minus Effi Briest and Frau Jenny
+  Treibel (5 files); lexicon = folded word types of those two held-out novels, length >= 4, count >= 2 (6,504 types).
+  Each lexicon is held out from every corpus its decoder used.
+- Statistic: R10-KAL7's coverage (largest number of decode letters covered by non-overlapping lexicon words, DP per
+  message line, case-sensitive / all decode letters), minimum word length 4; length >= 5 secondary, not gating.
+- Null (sized to the box, smaller than R10-KAL7's 50): the target shuffled with family_run.py's own procedure, RNG
+  seeds 1-15, same pipeline; **gate G = the maximum of the 15** (a target above G ranks first of 16).
+- Positive control FIRST within each unit: synthetic windows (homophonic.make_control, profile=target, seeds 1-4,
+  plaintext from the unit's train corpus) through the same decoder; their own null: synthetic seed 1's signs shuffled
+  with seeds 1-4, **G_s = the maximum**. Control passes only if at least 3 of 4 synthetic coverages exceed both G and
+  G_s and their mean exceeds both; otherwise CONTROL BELOW GATE, the target's number is logged as a non-test.
+- Rule-3 orthogonality: coverage depends on decoded letter order, which the shuffle changes; the G_s-vs-synthetic gap
+  shows per unit whether the shuffle can differ from a true decode on this statistic.
+- Reading rules (R10-KAL7's): target > G with the control passed = "decode separates from its own shuffle on a held-out
+  lexicon", worth a verifier, not a reading, no text described. Target <= G with the control passed = control-backed
+  negative for that scheme's homophonic design on this statistic (conditional on Ernst's transcript, the convention and
+  the lexicon's register).
+- Unscored build check before this registration: one synthetic window (S3, seed 99, not one of the control seeds)
+  decoded once to time the driver (59 s at N 1066). Disclosed, not scored, not used to set any gate.

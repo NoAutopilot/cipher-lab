@@ -13,6 +13,9 @@ seed 1 -- R9-KAL6's unit -- but trained on the S3'-soft Synodal Bible with the N
 so the lexicon (NT word types) is held out from every corpus the decoder used. Train corpus, offline, a few seconds:
   mkdir tr; ln -s tools/data/ru19/{0[1-9],[1-3]?,6[7-9],[7-8]?}_*.txt.gz tr/  (every book number outside 40-66)
   python3 tools/translit_ru.py --scheme s3p --soft-letters tr TRAIN.txt.gz      (env LEXSEG_TRAIN=TRAIN.txt.gz)
+R12-KAL8 (6 Oct 2026): the same driver for the remaining schemes -- env LEXSEG_CIPHER (a ciphertext TSV, default the
+convention-A file) and LEXSEG_PARAMS (JSON replacing PARAMS, e.g. {"profile": "target"}); unset, behaviour is R10-KAL7's.
+Train corpora and lexicons for those units: scripts/lexseg_build.py.
 Coverage: the largest number of decode letters covered by non-overlapping lexicon words (dynamic programming, each
 message line separately, case-sensitive), divided by all decode letters.
 """
@@ -22,8 +25,9 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 import family_run as fr  # noqa: E402
 from families import homophonic as H  # noqa: E402
 
-CIPHER = os.path.join(ROOT, "ciphers/kaliningrad-2015/ciphertext_signs.tsv")
-PARAMS = {"profile": "target", "alphabet": "ru-s3p-soft", "soft": "two-stage"}
+CIPHER = os.environ.get("LEXSEG_CIPHER") or os.path.join(ROOT, "ciphers/kaliningrad-2015/ciphertext_signs.tsv")
+PARAMS = json.loads(os.environ["LEXSEG_PARAMS"]) if os.environ.get("LEXSEG_PARAMS") else \
+    {"profile": "target", "alphabet": "ru-s3p-soft", "soft": "two-stage"}
 RESTARTS, SOLVE_SEED = 20, 1
 
 
