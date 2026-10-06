@@ -965,3 +965,45 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gap; cheapest next: rebuild the Babou 1558 key (fr. 3138 no. 13 f. 32, cipher + decipherment) and test it on R1/R2 with the unigram statistic and own-text power control first, ~$3
+
+## R10-SEURE3: Babou 1558 leaf located and captured; decipherment too faint to rebuild a key (6 Oct 2026, 09:47-09:5x UTC by date -u, account 1, LANE-RUN10-account-1)
+Named next step of R9-SEURE2 (known-keys). Brief `.claude/briefs/runs/2026-10-06-account1-run10-jobs.md` ### R10-SEURE3.
+**Leaf.** BnF fr. 3138 (Gallica btv1b90601662, 102 canvases, black-and-white microfilm scan, the only Gallica copy: SRU on
+"Français 3138" returns 0 other records; manifest has no folio labels, `tools/gallica_folio.py` cannot map it). Thumbnails of canvases
+36-45 at 1000 px: item 13 (Babou to Henri II, Rome, 11 June 1558) runs canvas 36 right (fo. 32r) to canvas 41 right (fo. 37r, signed
+"Babou"), address on canvas 42. The letter is clear text except **two cipher blocks on fo. 35v (canvas 40, left page)**: block A, 4 lines,
+mid-page; block B, 4-5 lines, lower page; together about 250 signs. Both blocks are struck through with a horizontal line.
+Crops: `babou/images/` (`tools/iiif_lines.py --ark btv1b90601662 --canvas 40 --region 550,1250,3650,800 --prefix c40A --debug` and
+`--region 550,3700,3650,750 --prefix c40B`; 2 regions, 20 line crops, debug overlays, manifest.json).
+**The decipherment.** Two forms, both period: (1) an interlinear letter decipher between the cipher lines, in a light hand and itself
+struck through; (2) a marginal paraphrase in the left margin beside each block (A, read at M: "Mays ... declare ... pour respect de
+l'armee turquesque"; B, M: "Le pape se declaroit ... entre ... Sire / Et tost qu'il seroit ..."). The marginal text is a summary, not
+letter-aligned, so it cannot carry a key. The interlinear decipher was viewed at native resolution with contrast stretching
+(percentile 1-45) and 2x zoom on block A line 2 and block B line 2: fewer than about one gloss letter in five is legible, none can be
+placed under a specific cipher sign with confidence, and 0 cipher/clear pairs were recorded. A pair table for
+`tools/interlinear_align.py` therefore cannot be built from this capture; no key rebuilt, so no PREREG, no power control and no score
+on R1/R2 (nothing to gate). Not a negative for the Babou key.
+**Design observation (M, shapes only, not scored):** Babou's signs are letter-like and symbol forms with two-digit numerals among them
+(A, M, E, N, R, h, z, x, q, g, a lying 8, crosses, a barred circle, "23", "11", "16", "10"), the same mixed letter/symbol/numeral
+look as Seure's f81R inventory (R, oo, A, M, N, h, z, x, + and numeral codes). The shared look is what makes the key worth having,
+not evidence that it is Seure's.
+Requests: gallica.bnf.fr 14 (1 manifest, 10 thumbnails, 2 IIIF regions, 1 SRU); 0 subagent calls.
+Not found: a legible letter-by-letter decipher of the Babou cipher at the Gallica microfilm capture; any other digitisation of fr. 3138.
+
+## Remaining gaps (R10-SEURE3, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE); Danzay 1557 key non-test (R9-SEURE); La Guiche 1551 key FAIL with control power under one map (R9-SEURE2); Babou 1558 key not rebuildable from the microfilm capture (R10-SEURE3, babou/images); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; Danzay non-test, La Guiche FAIL under one map, Babou key not rebuildable from the capture (interlinear decipher struck through and faint); next: test Tournon 1556 (fr. 3138 no. 9, fo. 21, "chiffre et dechiffrement", canvases ~25-30) and Morvilliers 1549 (no. 24, fo. 66, canvases ~72-74) in the same volume for a legible decipher before any further key rebuild, ~$1.5
+- Babou 1558 interlinear decipher (fr. 3138 fo. 35v) - blocker: illegible at the Gallica microfilm scan; reopens with a colour capture (BnF reproduction request) or a person's read in the reading room
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (R10-SEURE3, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: Danzay 1557 non-test (R9-SEURE); La Guiche 1551 FAIL under one map (R9-SEURE2); Babou 1558 decipher illegible at capture (R10-SEURE3); Tournon 1556 and Morvilliers 1549 (fr. 3138 nos. 9, 24, "avec chiffre et dechiffrement") untried
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gap; cheapest next: look at fr. 3138 nos. 9 (Tournon 1556) and 24 (Morvilliers 1549) for a legible decipher, then rebuild and test whichever reads, ~$1.5
