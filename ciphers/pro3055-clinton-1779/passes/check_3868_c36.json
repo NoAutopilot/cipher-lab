@@ -1,0 +1,229 @@
+{
+ "pass_A": {
+  "cells_read": 116,
+  "compared_cells": 100,
+  "match_strict": 92,
+  "match_i_eq_j": 93,
+  "share_i_eq_j": 0.93,
+  "control_shuffled_plaintext": {
+   "seeds": 1000,
+   "mean": 6.962,
+   "p95": 11,
+   "max": 19
+  },
+  "gate_pass": true
+ },
+ "reconciled": {
+  "cells_read": 116,
+  "compared_cells": 100,
+  "match_strict": 96,
+  "match_i_eq_j": 97,
+  "share_i_eq_j": 0.97,
+  "control_shuffled_plaintext": {
+   "seeds": 1000,
+   "mean": 6.949,
+   "p95": 11,
+   "max": 17
+  },
+  "gate_pass": true
+ },
+ "words": [
+  {
+   "word": "of",
+   "cells": "5-1 5-2",
+   "page_letters": "of",
+   "match": 2
+  },
+  {
+   "word": "the",
+   "cells": "5-3 5-4 5-5",
+   "page_letters": "the",
+   "match": 3
+  },
+  {
+   "word": "whole",
+   "cells": "19-1 19-4 18-14 18-18 18-6",
+   "page_letters": "whole",
+   "match": 5
+  },
+  {
+   "word": "but",
+   "cells": "1-1 18-17 18-4",
+   "page_letters": "but",
+   "match": 3
+  },
+  {
+   "gloss": "they shall"
+  },
+  {
+   "word": "be",
+   "cells": "1-1 1-4",
+   "page_letters": "be",
+   "match": 2
+  },
+  {
+   "word": "sent",
+   "cells": "18-13 18-12 18-11 18-4",
+   "page_letters": "sent",
+   "match": 4
+  },
+  {
+   "word": "by",
+   "cells": "1-1 16-6",
+   "page_letters": "by",
+   "match": 2
+  },
+  {
+   "word": "the",
+   "cells": "2-1 2-2 2-3",
+   "page_letters": "the",
+   "match": 3
+  },
+  {
+   "word": "next",
+   "cells": "15-2 15-18 15-19 2-1",
+   "page_letters": "next",
+   "match": 4
+  },
+  {
+   "word": "opportunity",
+   "cells": "18-14 18-27 18-27 18-14 18-9 18-4 18-17 18-2 18-10 18-4 18-29",
+   "page_letters": "opportunity",
+   "match": 11
+  },
+  {
+   "gloss": "and also"
+  },
+  {
+   "word": "laid",
+   "cells": "18-18 18-1 18-10 18-3",
+   "page_letters": "laid",
+   "match": 4
+  },
+  {
+   "word": "before",
+   "cells": "1-1 1-4 18-18 18-14 18-9 18-6",
+   "page_letters": "belore",
+   "match": 5
+  },
+  {
+   "word": "admiral",
+   "cells": "18-1 18-3 18-10 18-9 18-18",
+   "page_letters": "adirl",
+   "apart": "5 cells for 7 letters"
+  },
+  {
+   "word": "darby",
+   "cells": "11-6 4-2 11-9 1-1 16-6",
+   "page_letters": "digby",
+   "match": 3
+  },
+  {
+   "word": "who",
+   "cells": "14-3 14-4 14-2",
+   "page_letters": "who",
+   "match": 3
+  },
+  {
+   "word": "is",
+   "cells": "4-2 4-3",
+   "page_letters": "is",
+   "match": 2
+  },
+  {
+   "word": "a",
+   "cells": "3-1",
+   "page_letters": "a",
+   "match": 1
+  },
+  {
+   "word": "joint",
+   "cells": "17-4 18-14 18-10 18-11 18-4",
+   "page_letters": "ioint",
+   "match": 4
+  },
+  {
+   "word": "commissioner",
+   "cells": "21-1 21-2 21-16 21-16 21-9 21-5 21-9 21-2 21-7 21-13 21-15",
+   "page_letters": "commisioner",
+   "apart": "11 cells for 12 letters"
+  },
+  {
+   "gloss": "with"
+  },
+  {
+   "word": "me",
+   "cells": "18-7 18-6",
+   "page_letters": "me",
+   "match": 2
+  },
+  {
+   "word": "as",
+   "cells": "7-1 7-2",
+   "page_letters": "as",
+   "match": 2
+  },
+  {
+   "word": "soon",
+   "cells": "18-13 18-14 18-14 18-15",
+   "page_letters": "soon",
+   "match": 4
+  },
+  {
+   "word": "as",
+   "cells": "18-1 18-13",
+   "page_letters": "as",
+   "match": 2
+  },
+  {
+   "word": "he",
+   "cells": "18-5 18-6",
+   "page_letters": "he",
+   "match": 2
+  },
+  {
+   "word": "arrives",
+   "cells": "18-1 18-9 18-9 18-10 22-6 22-7 22-12",
+   "page_letters": "arrives",
+   "match": 7
+  },
+  {
+   "word": "in",
+   "cells": "18-10 18-11",
+   "page_letters": "in",
+   "match": 2
+  },
+  {
+   "word": "town",
+   "cells": "16-1 16-5 14-3 14-10",
+   "page_letters": "town",
+   "match": 4
+  },
+  {
+   "gloss": "you will not expect more from me by this conveyance"
+  },
+  {
+   "word": "respecting",
+   "cells": "2-7 2-5 2-4 1-3 1-4 2-6 2-9 9-9 9-10 11-9",
+   "page_letters": "respecting",
+   "match": 10
+  }
+ ],
+ "same_key_as_2894": {
+  "distinct_cells": 67,
+  "also_in_key_2894": 33,
+  "agree": 33
+ },
+ "mismatches_reconciled": [
+  "before: 1-1 1-4 18-18 18-14 18-9 18-6 -> belore",
+  "darby: 11-6 4-2 11-9 1-1 16-6 -> digby",
+  "joint: 17-4 18-14 18-10 18-11 18-4 -> ioint"
+ ],
+ "reconciled_changes": [
+  "c4.3 -27 (pass -24[?]; image: a loosely written 27 (same form as entry 2))",
+  "c4.7 -17 (pass -14; image ambiguous 14/17, the 7 stroke crosses the 4)",
+  "c6.20 -5 (pass -15; image: 5 under the 7 of 2-7, no 1)",
+  "c6.21 -4 (pass 1-4; image: a lone 4 set above the next pair)",
+  "c6.22 1-3 | (pass -3; image: the 1- of the pair below the lone 4)"
+ ]
+}
