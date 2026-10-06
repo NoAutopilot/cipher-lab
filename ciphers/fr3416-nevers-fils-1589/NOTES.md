@@ -704,7 +704,7 @@ the M/U words is a person's read (gap list above). AUDIT.md and SECOND-OPINIONS-
 nothing to propagate. Vision: 3 Opus subagent calls (12 strips), 0 own looks. Requests: 0 network (local source re-cut).
 Not found in print: nothing searched (transcription check only).
 
-## R9-NEVF results (account 1 for LANE LANE-RUN9-account-1, 6 Oct 2026, 06:07-06:2x UTC)
+## R9-NEVF results (account 1 for LANE LANE-RUN9-account-1, 6 Oct 2026, 06:07-06:18 UTC)
 
 Rules pre-registered in `PREREG-R9NEVF.md` (commit c7c943c1e, pushed 06:09 UTC before segmentation): the A1B-FILS-L05 test with the
 class-0 questions dropped (pos 4, 7 and the fused 15-16 stay M whatever happens); questions pos 5 (1 vs 9), 13 (7 vs nearest digit),
@@ -717,7 +717,7 @@ L05 box map reproduces A1B-FILS-L05 (pos 5 -> box 18, 13 -> 26, 17 -> 29, 20 -> 
 - **Gate (rule 2): leave-one-out 56/87 = 0.644 vs >= 0.90 -- FAIL, non-test, no grade moves (H 75, M 27 unchanged).** Per class:
   1 0/5, 2 5/10, 3 8/13, 4 14/16, 5 6/11, 6 3/5, 7 7/10, 8 12/12, 9 1/5. All 31 misses vote '_' (the unlabelled boxes: script, M-token
   digits, fused boxes), none votes a wrong digit. Shuffled-label control (labels permuted over the same 87 boxes, 200 runs, seed 20261006):
-  result added below when the run ends (it does not change the gate verdict, which is fixed by the 0.90 threshold).
+  mean 0.044, p95 0.080, max 0.126 -- the real atlas (0.644) sits far above chance but far below the gate.
 - For the record only, not used (the gate failed): pos 5 k1 1 s1 0.61; pos 13 k1 7 s1 0.79; pos 17 k1 5 s1 0.58 (under 0.60 anyway);
   pos 20 k1 '_' s1 0.61, k2 6. No digit alternative (9, 6, 8) appears in any of the four top-3 lists.
 - Rule 3 reading: the HOG kNN atlas on this one leaf cannot separate the hand's digits from its own script and unlabelled digit boxes at
