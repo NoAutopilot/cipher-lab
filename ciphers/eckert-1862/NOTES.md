@@ -1545,3 +1545,54 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 6 internal gaps; cheapest next: the 1865 cipher book (Huntington mssEC key books) for the 14 cross-entry code words of R7C-ECK62C, ~$2
+
+## R8-ECK62 (6 Oct 2026, account 1 worker for LANE LANE-RUN8-account-1): the 1865 cipher book for the 14 R7C-ECK62C code words
+
+Step check: not run before (R7C-ECK62C, 6 Oct 2026, was the latest section). Job: find the 1865 cipher book among the Huntington
+mssEC key books and look up the 14 cross-entry code words (grade H if found).
+
+- Which book: the 14 words' entries date 30 Dec 1864 - 8 Apr 1865, plus 10040.638 (13 Jul 1865). Plum (via Tomokiyo,
+  sources/cryptiana/web/civilwar1.htm): Cipher No. 3 from 25 Dec 1864, No. 4 from 23 Mar 1865, No. 5 from 20 Jun 1865; the three
+  share one printed template (alphabetical printed code words, two runs per page, meanings handwritten) and "differ chiefly in the
+  specific routes and meaning of arbitraries". So the book wanted is No. 3 / No. 4, with No. 5 only for the July entry.
+- Huntington catalogue (CONTENTdm dmQuery, `title^cipher^all^and`, 36 records, 6 Oct 2026): cipher books mssEC 36-67 are
+  No. 1 (39-46), No. 2 (47-48), No. 5 (49-66, 18 copies, "Cipher Book #5", cataloguer's date 1864-65 from p.4), No. 9 (67),
+  Dept of the Gulf (38), handwritten (37, 40), Stager's key memoranda (36). **No copy of No. 3 or No. 4 is catalogued there.**
+  Tomokiyo places a No. 4 copy (and a No. 5) in the Friedman Collection, Marshall Foundation digital archive
+  (marshallfoundation.org/library/digital-archive/federal-army-cipher-books/): HTTP 403 Cloudflare block from this container,
+  6 Oct 2026, not retried; the Wayback CDX for that path reset the connection twice, not retried further.
+- No. 5 read anyway (mssEC 50, compound 758, pages 18, 24, 26, 29 at 1300 px, plus 450 px probes of pp.13, 17, 28, 33):
+  11 of the 14 words are printed words of the template (Artist, Fence, Forge, Harm, Hoax, Hogarth, Joint, Level, Line, Loath,
+  Lunch; scold, shower, thrash on pages not fetched). The No. 5 values read: Artist = Grant U.S., Hogarth = Lieutenant,
+  Hoax = Leave, Loath = Report, Lunch = Retire; Harm, Line, Forge blank. **None matches** the R7C-ECK62C candidates (boats, river,
+  Richmond, command, work, New Berne, Morehead City, move). Per word: not found (the period book is not digitised at the
+  Huntington); table ec18/book5_lookup.tsv.
+- 10040.638 (13 Jul 1865, OR I/48 pt 2 p.1072, "relieve Granger from command in Texas"): under No. 5 loath = Report, not command,
+  and its word "giraffe" is not a printed No. 5 word (pp.24-25 run Gipsy-Girard, Gift-Girdle). So even this post-20-June entry was
+  not enciphered in No. 5; No. 4 (or a book outside the series) stayed in use on that line.
+- What it does establish: the neither-book entries use the No. 3/4/5 printed vocabulary (11 of 14 words checked present), which
+  supports R7C-ECK62C's "later table, not transcription" reading. Nothing graded; nothing written into any key file; --check
+  scripts re-run (ec18_confpair.py --check current, decode.py --check current).
+- Requests: hdl.huntington.org 12 (3 API/dmwebservices, 9 IIIF images); marshallfoundation.org 1 (403); web.archive.org 2
+  (connection reset). No subagents. Images kept in scratch, not committed (re-fetch:
+  hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/1300,/0/default.jpg, pointers in the TSV).
+  Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, R8-ECK62, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); mssEC 18: 28 fully keyed Cipher No. 1 and 17 Cipher No. 2 entries (RUN3-ECK62), 26 print-aligned (A3V3-ECKC); 79 print-free-assigned entries read, 9991.571 now with book 1r (R7B-ECK62); 13 of the 113 '?' entries given a book by print (D2-ECK62M); 57 dated matches aligned (AGREE 325/816 = 0.398 vs control 0.075 after the carry); 18 neither-book entries: 0 wrong telegram, 7 right, 11 undecided (R7B-ECK62, gate PASS); conflict-pair test: 7-entry pool untested (power 0.61), 18-entry pool 14 cross-entry code words p 0.0005 (R7C-ECK62C, descriptive); the 14 words looked up in Cipher No. 5 (mssEC 50): 11 printed in its template, 0 of 8 read values match, none carried (R8-ECK62)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), residue regenerated (GAPS197); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); next: the received copies of the 27 Jan and 24 May 1865 telegrams (Eckert received ledgers) for a third witness, ~$2
+- 18 neither-book entries (R7C-ECK62C confpair_pairs.tsv) - blocker: no-key-material; the 14 code words date 30 Dec 1864 - 13 Jul 1865, i.e. Cipher No. 3 (from 25 Dec 1864) and No. 4 (from 23 Mar 1865) per Plum via Tomokiyo; the Huntington holds only No. 5 (mssEC 49-66, from 20 Jun 1865); 11 of the 14 are printed words of the shared No. 3/4/5 template but No. 5's meanings match none of 8 read (R8-ECK62, ec18/book5_lookup.tsv); the one known No. 4 copy (Friedman Collection, Marshall Foundation digital archive) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- 100 mssEC 18 entries still '?' - blocker: not-attempted; 20 have a dated OR match with margin under 2 and 80 none (D2-ECK62M); next: the image (marker words the volunteer text may have dropped) for the 20 `?p` entries, ~$4
+- merged telegrams in the volunteer text (9985.564, 9991.571 run into a second heading) - blocker: not-attempted; the splitter's DATE pattern has no 'Apl' form; next: add the "Apl"/"Washn" heading forms to the entry splitter and re-split, then re-run --check across ec18 outputs, ~$1
+
+## Escalation (R8-ECK62, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Lehigh row checked on the mssEC 41 key page image (DEF1-ECK62P); '?' entries assigned print-free (RUN6-ECK62) and by print (D2-ECK62M); zero-agree entries re-aligned under the other book (D2-ECK62R, 1 of 19), the flip carried (R7B-ECK62); Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram test done (R7B-ECK62: 0 wrong, 7 right, 11 undecided); conflict-pair test done (R7C-ECK62C: 7-entry pool untested at N 93, 18-entry pool 14 cross-entry code words outside the keys)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 5 internal gaps; cheapest next: add the "Apl"/"Washn" heading forms to the entry splitter and re-split (~$1); the No. 4 book for the 14 words waits on a desk-browser read of the Friedman copy
