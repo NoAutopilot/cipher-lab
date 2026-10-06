@@ -5495,3 +5495,34 @@ What is left (next steps named in each folder): ASKS 145 (share the account-4 so
 destaing AN Marine B4 143/168 request; harley-287 lookalike_pass + sorter for f.88r; lope-hurtado BNE siblings (~$1); lodewijk 5811's 68
 numeral rows; colbert26 c20 gloss-column fix from native crops, then re-align; august-van-saksen K witness line in HYPOTHESES.md, WVO 175
 pp.3-8; esp318 rows l/ll sign count; huntington 6 descending-glyph columns. Private targets: with the standing session.
+
+## LANE DEFAULT-account-4-20261006-1235 handoff (session_01EcBWEQJJDT6cyLwTMsgGkq, account 4), 6 October 2026 (closed 13:5x UTC: backlog spent, lane 37.66 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account4-default-1235-jobs.md. 15 workers in 3 waves (14 D, 1 D-),
+workers 30.56 + orchestrator 7.10. Gate 0a clear (no SESSION-SWEEP-account-4 row). VERIFY-BACKLOG's three actionable rows (Noailles c262/c510,
+decode-2678 Gravel, NLA 1519) were all held by live account-1/2 lanes. Account 1's DEFAULT-1240 lane drew from the same next_steps list from
+12:40; this lane moved to i-z at wave 3 (a-h with account 1); RUN11-account-4 (s-z) opened 13:36 excluding this lane's targets.
+
+Results (no reading claimed, no novelty class; nothing at C):
+- fr16106-vivonne-longlee-1579: Mousset 1912 pp.lviii-lix published key on disk (key/mousset1912.tsv) and applied to f.101v via a shape
+  crosswalk; PREREG PASS 0.454 vs value-shuffle p99 0.400 (D4-VIVMOUS). Verifier D4-VIVV: reproduced, contamination nil, but the null mostly
+  measures French letter statistics (unrelated-French p99 0.448, order-shuffle p99 0.431: text-specific, thin); grades H 328 -> H 0, M 1165,
+  I 280; D0. Next: after the owner's c107 sort, re-label piles against the Mousset glyphs (R and = as candidate nulls), re-run vivmous.py.
+- decode-1411-hhsta-vienna-1600: p.3 311 numerals, prereg word-coverage test: T21r 0.563 beats shuffled p99 0.463 and all shifts but stays
+  below the leaf gloss 0.613 -> no PASS, the same shape as p.2 (DEF1-1411). The folder's next (p.4 the same way) would be the third attempt
+  of the same instrument and gate (rule 3 third-attempt clause): the lane did not run it; a different instrument or a person's gloss read first.
+- fr16045-pisany-rome-1585: 9-token T31 relabel re-score SUPPORTED on both pages but f.244r gain not above random relabels; f.275r
+  control/null killed at cap (resume: python3 pisrs/pisrs.py f275r, ~$1.5).
+- fr15575-syllabic-1592-95: fr.15576 f.2 cut and read (cipher 83.8% two-pass agreement, gloss about half), interlinear_align gate FAIL
+  (8 vs shuffle mean 12.06); no.31 = fr.3995 f.62r, a separate 1590 syllabary sharing only 704/708; LOCAL-QUEUE L63 filed (PARES AGS Estado
+  609 fol.86, possible crib). Next: a person's read of the f.2 gloss crops, or the L63 answer.
+- esp318-sicilia-1503: key_gran_cifra.tsv phantom slots removed (44 labels; 90 signs + anulante), checks pass.
+- clairambault296-paget-1713: residue table of the 1714 key ready for Clair 297 p.249 (firm 21, weak 90, open 13 codes).
+- castelcicala-1816: REQUEST.md drafted (BL Add MS 41525 f.38; ASNa second); ASKS 149 filed (backlog); needs a gate-7 fact check before sending.
+- Search results only: fr4715-f61 (20 phrases, no print found; S2 429), bl-gualterio (20582 key list, 4 firm + 3 possible matches),
+  clair571 (DECODE 9430-9432 grid rows), sp105 (SOAS lists file-level only; Smyrna/Aleppo series, Vienna premise weakened), sp99 (160 items,
+  no code list; f.251 only cipher item), fr16144 (crops already cut 3 Oct: a stale While-waiting line, orchestrator brief error).
+
+What is left: gate-7 check on castelcicala REQUEST.md, then ASKS 149 to the desk; pisany f.275r control resume; fr16106 waits on the c107
+sort; fr15575 waits on L63 or a gloss read; decode-1411 needs a different instrument. False alarm logged: D4-VIVV's "history rewritten" flag
+was its shallow clone's boundary (a7549ca8 and 49f195080 are ancestors of origin/main), retracted in ROOM.
