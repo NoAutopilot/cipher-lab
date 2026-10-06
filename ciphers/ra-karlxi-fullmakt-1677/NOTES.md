@@ -402,19 +402,45 @@ Brief step (D2B-KARL Verdict "cheapest next"): list the bitstreams of dk.upce.cz
 Requests: dk.upce.cz 14 (3 pid lookups, 3 items, 3 bundle lists, 2 text 200, 2 text 401, 1 PDF 200; one at a
 time, 2 s apart), api.openalex.org 2, googleapis.com 1. Vision 0, subagents 0. Status stays `open`; nothing found, nothing read.
 
-## Remaining gaps (R8-KARL2, 6 Oct 2026)
+## be-api fts, unsearched Nijmegen editions (R8-KARL3, account-2 worker, 6 Oct 2026, 03:55-04:08 UTC by date -u)
+Brief step (R8-KARL2 Verdict cheapest next): be-api per scan of the Actes/Dumont scans not yet searched, each with a control. Method as RUN1/RUN3-KARL:
+archive.org advancedsearch (3 queries) to list every IA scan of *Actes et memoires ... Nimegue*, *Recueil de tous les actes ... 1678*, St Disdier's
+*Histoire des negotiations de Nimegue* and Dumont's *Corps universel diplomatique*; be-api fts with `identifier=`, snippets only, page_num not a locator.
+Controls per scan: Oxenstierna, Suede, Nimegue. Targets per scan: Naes, Naas, Nesae, Nääs, Nesiae, Neas.
+- 14 scans newly searched: Recueil 1678 `bub_gb_NMcZHIES_IoC`, `fLVvqOsKtJAC`, `-ZUrTvejAC8C`, `_s_xZOFu1S4C`, `olfgJlz5kzEC`, `SIowE-0CyEMC`,
+  `9JGttIQASl8C`, `XAqocs9GQ1sC`, `QyQiS7WviiAC`; Actes 1680 `bub_gb_mUtFAAAAcAAJ` (German-language text); *Actes & negotiations ... Das ist gründliche
+  ... verfassung* 1680 `11211619bsb` (German); St Disdier 1680 `bub_gb__ZMUxzzqMLwC` and 1697 `histoiredesnego00didigoog`; Dumont v.7 Getty scan
+  `gri_33125017207792`.
+- Targets: **0 hits in all 14** (84 target queries).
+- Controls: Oxenstierna hits in 3 (mUtF "den Durchlauͤchtigen Hn. Benedictum Oxenſtierna, Grafen zu Corshoim und Waſa"; 11211619bsb "Benedict.
+  Oxenſtierna. Joh. Paulinus Olivenkrantz"; gri Dumont v.7 "Septembris 1688 ... Nicolaus OXENSTIERNA"). Suede and/or Nimegue hit in 9 more (the
+  1678 Recueil scans and both St Disdier, which answer the scan but predate or lack the Swedish plenipotentiaries' names). **No control hit in
+  `fLVvqOsKtJAC` and `olfgJlz5kzEC`**: their zeros are not a test (scan unreadable to fts or another tome).
+- Lead, not a hit: both German 1680 editions print the plenipotentiaries' full powers in German (`Vollmacht` 5 snippets each, e.g. "4. Febr. 1677
+  ... Instrument oder Neu ertheilte Volmacht / so denen Herrn Kaͤyſerlichen Geſandten ertheilet"; a contents run "Englischen ... Dänischen ...
+  Mecklenburgischer ... Münsterischen Vollmacht"; "seine ertheilte Königliche Volmacht / welche denen Plenipotentiariis zu dem Friedens-Wercke").
+  "Schwedischen Vollmacht" (both spellings, phrase) 0 in both; "Naͤs"/"Näs"/"Corshoim" 0 in mUtF (Corshoim appears only in the Oxenstierna snippet,
+  so fts tokenisation is unreliable here); 11211619bsb "Näs" 3 snippets are OCR noise ("nas"). So whether a Swedish Vollmacht dated Nääs 6 May
+  1677 is printed in these German volumes is not settled by snippets; a page read of the Vollmacht section (contents list "Vollmacht ... 94,
+  131") is the next step, and it needs a reader, not fts.
+- Reading: no hit for the 6 May 1677 Nääs full power in 12 controlled scans (27 searched across RUN1/RUN3/R8-KARL3), conditional on OCR (long-s,
+  Fraktur) and on the full power possibly printed under a German or French heading without the place name.
+- Requests: archive.org advancedsearch 3, be-api.us.archive.org 126 + 12 + 6 = 144 (no failures; one at a time, >= 1.6 s apart). Vision 0,
+  subagents 0. Status stays `open`; nothing found, nothing read.
+
+## Remaining gaps (R8-KARL3, 6 Oct 2026)
 Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not been located in any print or image (0 of 1 target document found)
 - Bakeš 2014 thesis full text - blocker: needs-physical-access; theses.cz "Soubory jsou nedostupné" and dk.upce.cz 10195/58052 PDF and text answer 401 without a Pardubice login (D2B-KARL section above); a person can use the repository's own request route or a Pardubice reader
 - Bakeš 2015/2016 ČČH articles (dk.upce.cz 10195/66550, 67724) - blocker: needs-physical-access; "Pouze v rámci univerzity", text bitstreams HTTP 401, no open copy via OpenAlex or Google Books (R8-KARL2 section above); the 2018 dissertation (10195/72172, open, 465 pp.) was grepped in full with 0 hits for the 1677 Nääs full power
-- Other tomes of Actes 1680/1697 and Dumont other volumes - blocker: not-attempted; seven scans failed the Oxenstierna control; next: be-api per scan with a passing control, ~$0.5
+- German 1680 Actes Vollmacht section (IA `bub_gb_mUtFAAAAcAAJ`, `11211619bsb`) - blocker: not-attempted; fts cannot see a Swedish Vollmacht heading; next: page read of the Vollmacht pages from the public IA page images (both are open bub_gb/bsb scans, no loan), ~$1
 - Riksarkivet owner/copy route - blocker: waiting-on the Riksarkivet reply to REQUEST.md; the owner-side copy request is unanswered
 
-## Escalation (R8-KARL2, 6 Oct 2026)
+## Escalation (R8-KARL3, 6 Oct 2026)
 - [x] siblings: Emperor-Sweden sibling instruments checked (A2P4-KARL page read)
 - [n/a] clear-pages: a single full power with no clear sibling page located
 - [n/a] known-keys: plain Latin instrument, no key
-- [ ] print: Bakeš 2018 dissertation grepped in full, 0 hits (R8-KARL2); Bakeš 2014 thesis and 2015/16 articles login-gated; CTS 15, Actes 1680/1697 other tomes and Dumont other volumes still untested by a scan with a passing control; Sverges traktater v.8 negative by snippet
+- [ ] print: 27 Actes/Recueil/St Disdier/Dumont scans fts-searched, 0 target hits (12 of R8-KARL3's 14 with a passing control); German 1680 Actes print plenipotentiaries' Vollmachten, Swedish one not seen by fts; page read pending
 - [n/a] key-rebuild: no cipher key involved
 - [x] image-check: title page and page read via A2P4-KARL, Hathi H4
 - [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL); dk.upce.cz 401 not retried (auth gate, not a transient)
-Verdict: keep going: 1 internal gap; cheapest next: be-api per scan of the other Actes 1680/1697 tomes and Dumont volumes, each with a passing Oxenstierna control, ~$0.5
+Verdict: keep going: 1 internal gap; cheapest next: page read of the Vollmacht section in the German 1680 Actes (IA bub_gb_mUtFAAAAcAAJ / 11211619bsb, open scans), ~$1
