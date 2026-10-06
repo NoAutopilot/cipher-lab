@@ -1,0 +1,8 @@
+line	passA_signs	passB_signs	agreed_C_decode ([sign]=agreed non-C, {A/B}=split)
+L1	TT q y g a + a d c + d o d o b g g y z + T o TT o T o a	TT q1 y g a + a q1 c + d o d o d o q1 b g g q y z + T o o TT o TT z a	[TT]{q/q1}nliai{d/q1}parere{/doq1}oll{/q}noade{/o}[TT]e{To/TTz}i
+L2	+ d b y a T o o c TT a g z x z q1 y v z y b 8 g g z b b c d o b z	+ d b y a T + o c TT a g z x z q1 y v z y b 8 g g z b b c d o b z	aronid{o/+}ep[TT]ilo[x]o[q1]n[v]ono[8]llooopreoo
+L3	g d o T a q1 L o a g c z y o o c TT a g o TT q z z q y b	g d o T a q1 L o f a g c z y o o c TT a g o TT q z z q T y b	lredi[q1][L]e{/f}ilponeep[TT]ile[TT][q]oo[q]{/T}no
+L4	q1 z u o y a T + y b q1 z o c + d z o q1 b q b g a y b q	q1 z u o y a T + y b q1 z o c + d z o q1 b 7 b g a y b q1	[q1]o[u]enidano[q1]oeparoe[q1]o{q/7}olino{q/q1}
+L5	q1 c TT z y b y c d o TT g 8 q1 T a d g a	q1 c TT z y b y c d o TT g 8 q1 T a d g a a|	[q1]p[TT]ononpre[TT]l[8][q1]dirli{/a|}
+L6	g + q b g g y y a + g o o o g z d z d c c c b q1 z q1 L a T o	g + q b g g y a + g o r o g z d z g d c c b q q q1 L a T o	la[q]olln{y/}iale{o/r}eloro{/g}rpp{c/}o{q1z/qq}[q1][L]ide
+L7	o c TT a y a TT z y b + 8 a q1 a	o c TT a y a TT z + z y b + 8 a q1 a	ep[TT]ini[TT]o{/+z}noa[8]i[q1]i

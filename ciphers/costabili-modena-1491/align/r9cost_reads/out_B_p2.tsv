@@ -1,0 +1,10 @@
+crop	n	F1	F2	note
+p2_u16	1	closed	straight	
+p2_u15	1	closed	straight	
+p2_u13	1	closed	straight	cut off
+p2_u08	1	closed	turned	
+p2_u07	1	closed	straight	line start
+p2_u05	1	closed	straight	line start
+p2_u03	1	closed	straight	line start
+p2_u02	2	closed,closed	straight,turned	second uncertain
+p2_u01	1	closed	straight	line start
