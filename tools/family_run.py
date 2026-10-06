@@ -65,6 +65,9 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
   cycling_homophonic homophonic with each letter's homophones used in a fixed cyclic order (Pelling 2020; R11-SCORPCYC
                      6 Oct 2026, scorpion-1991): anneal with -lam x cycle violations (no sign twice between two
                      consecutive occurrences of another sign of the same letter); --param lam=2.0 (lam=50 near-hard)
+  masc_words         simple substitution, n-gram anneal + dictionary-segmentation polish (R12D-FAIR 6 Oct 2026)
+  masc_inj           strictly injective simple substitution by a left-to-right word-pattern beam (R12D-FAIR2 6 Oct 2026,
+                     fair-game-2010: control 0.576 at N=67 beam 1000, bimodal -- a wrong opening is never recovered)
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds

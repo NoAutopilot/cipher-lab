@@ -191,3 +191,46 @@ Read so far: 0 of 67 marked letters read (no hypothesis has produced English; te
 - [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots
 - [x] retry: masc_words word-constrained instrument run 6 Oct 2026, control-backed FAIL on both orders
 Verdict: keep going: 3 internal gaps; cheapest next: injective substitution solve with matched control, ~$2
+
+## Strictly injective word-pattern search (R12D-FAIR2, account 4, 6 Oct 2026, 16:24-16:4x UTC)
+
+Ciphertext: as R12D-FAIR -- the marked letters, both credit-block orders from `reconcile_2026-10-03.tsv`, scroll order
+(= spec/ATS, `test2/order_scroll.txt`) primary, column order (Schmeh 2026) second; N=67, K=21, position 1:4 dropped.
+Gate pre-registered and pushed before any scored run: `r12d/PREREG-R12D-FAIR2.md` (commit 848d30d7d).
+
+Instrument (different from masc's anneal and masc_words' anneal + polish): `tools/families/masc_inj.py`, new, our own
+code (offline test `tools/tests/test_masc_inj_family.py`). A deterministic beam search over dictionary words by letter
+pattern (isomorph), left to right over the unspaced text, strictly one-to-one (no two cipher letters to one plain
+letter, which R12D-FAIR's caveat (iii) asked for), single-letter OOV skips at -11, cut-word edges at -3, beam 1000 per
+position, n-gram re-rank of the end states. Beam set on dev control seeds 101-103 only (beam 400: 0.851/0.358/1.000;
+beam 1000: 0.851/1.000/1.000), never on seeds 1-5 or the target.
+
+| run | control seeds 1-5 (N=67, K=21, en, masc_words control) | mean | gate 0.60 | target |
+|---|---|---|---|---|
+| masc_inj beam 1000, scroll | 1.000, 0.119, 0.761, 0.060, 0.940 | **0.576** | **not met** | not run (CONTROL BELOW GATE) |
+| same, column; shuffles 7, 8 | identical control (deterministic) | 0.576 | not met | not run |
+
+For comparison at the same N, K, seeds: masc 0.591, masc_words 0.707 (rows above). Result: **CONTROL BELOW GATE; the
+target was not run, in either order.** No reading, no negative: a non-test of "English under strictly injective simple
+substitution" by this instrument at N=67. The control is bimodal: three texts read at 0.76-1.00, two at 0.06-0.12.
+A left-to-right word beam that commits to a wrong reading of the opening words cannot recover from it (the dev seed
+102 failure at beam 400 cleared at beam 1000, but seeds 2 and 4 fail at 1000). Rule 3's third-attempt clause: the step
+"injective substitution solve" is [retired] for this instrument family (left-to-right word-pattern beam / branch-and-
+bound). Not re-tuned after the scored run (beam or edge penalty), per the brief.
+HYPOTHESES.md: four rows, 16:38 UTC (scroll, column, shuffle 7, shuffle 8; all CONTROL BELOW GATE, one control).
+Requests: none (disk only). No subagents.
+
+## Remaining gaps (R12D-FAIR2, 6 Oct 2026)
+Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR and R12D-FAIR2 are negatives or non-tests)
+- marker-scheme sweep (previous letter, offsets +-2, first letter of next credit name) - blocker: not-attempted; credit words are on disk in reconcile_2026-10-03.tsv; next: script with a planted-message control as in test 1, ~$2
+- transposition or non-English hypotheses - blocker: not-attempted; no family run yet; next: only if the marker sweep stays negative, ~$3
+
+## Escalation (R12D-FAIR2, 6 Oct 2026)
+- [n/a] siblings: a single film-credit cryptogram with no sibling texts
+- [x] clear-pages: the credits' clear line DEMOCRACY ONLY WORKS IF YOU DO YOUR PART tested as a crib, no isomorph placement in either order
+- [n/a] known-keys: no key material exists for a film-credit puzzle
+- [x] print: web and blog sweep of 3 Oct 2026 found no published decipherment
+- [retired] key-rebuild: injective substitution by tools/families/masc_inj.py word-pattern beam, CONTROL BELOW GATE 0.576 at N=67 (R12D-FAIR2); masc anneal and masc_words already run, a third substitution instrument needs new material
+- [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots
+- [x] retry: masc_words word-constrained instrument run 6 Oct 2026, control-backed FAIL on both orders
+Verdict: keep going: 2 internal gaps; cheapest next: marker-scheme sweep with planted-message control, ~$2
