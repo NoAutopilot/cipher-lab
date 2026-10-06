@@ -139,5 +139,163 @@
    "note": "Fetched 2 Oct 2026 by NEXT-AVS (curl, 1 request). PDF pages 1-5 = f.270r, f.270v, f.271 (cipher, 15 lines), f.272 (decipherment), address leaf; embedded JPEGs 2520x4060, 2431x4200, 2185x4115, 2073x2219, 3812x2618. Only p3 and p4 kept, at 100 dpi JPEG (pdftoppm -r 100, greyscale, q82); native pages read from the scratchpad, not committed. Sample transcription ciphertext_58_sample.tsv; trial decode trial58/."
   }
  ],
- "confirmed": "Six cipher designs observed across this correspondence circle, none identical: 53/57 use letters+arbitrary symbols (Λ, Δ); 74/126 use different arbitrary-symbol repertoires; 98/153 use pure numerals (153's design, overlined, differs from 98's numeral+symbol mix); 175 is interlinear rather than block cipher. A solver pass should not assume one key covers all six letters even though all are Willem<->August in the same 1561-67 window. See inventory.tsv for full per-page detail. Not transcribed."
+ "confirmed": "Six cipher designs observed across this correspondence circle, none identical: 53/57 use letters+arbitrary symbols (Λ, Δ); 74/126 use different arbitrary-symbol repertoires; 98/153 use pure numerals (153's design, overlined, differs from 98's numeral+symbol mix); 175 is interlinear rather than block cipher. A solver pass should not assume one key covers all six letters even though all are Willem<->August in the same 1561-67 window. See inventory.tsv for full per-page detail. Not transcribed.",
+ "r11a57_native_57p3": {
+  "date": "6 Oct 2026",
+  "worker": "R11A-AVS57",
+  "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00057.pdf",
+  "pdf_bytes": 2094569,
+  "page3_native": "1932x3247 gray JPEG, about 295 dpi (pdfimages -list)",
+  "region": "380,1740,1420,520",
+  "tool": "tools/iiif_lines.py --image p3-000.jpg --out images/crops_r11a57 --region 380,1740,1420,520 --prefix 57n",
+  "crops": [
+   {
+    "crop": "crops_r11a57/57n_L01.jpg",
+    "source_url": "",
+    "source_file": "00057.pdf page 3 embedded JPEG (not committed; re-fetch pdf_url, pdfimages -j -f 3 -l 3)",
+    "box": [
+     380,
+     1748,
+     1800,
+     1820
+    ],
+    "lines_in_crop": 1,
+    "band": 1,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 70,
+     "distance": 49,
+     "prominence": 126.0
+    },
+    "date": "06 Oct 2026"
+   },
+   {
+    "crop": "crops_r11a57/57n_L02.jpg",
+    "source_url": "",
+    "source_file": "00057.pdf page 3 embedded JPEG (not committed; re-fetch pdf_url, pdfimages -j -f 3 -l 3)",
+    "box": [
+     380,
+     1820,
+     1800,
+     1892
+    ],
+    "lines_in_crop": 1,
+    "band": 2,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 70,
+     "distance": 49,
+     "prominence": 126.0
+    },
+    "date": "06 Oct 2026"
+   },
+   {
+    "crop": "crops_r11a57/57n_L03.jpg",
+    "source_url": "",
+    "source_file": "00057.pdf page 3 embedded JPEG (not committed; re-fetch pdf_url, pdfimages -j -f 3 -l 3)",
+    "box": [
+     380,
+     1892,
+     1800,
+     1961
+    ],
+    "lines_in_crop": 1,
+    "band": 3,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 70,
+     "distance": 49,
+     "prominence": 126.0
+    },
+    "date": "06 Oct 2026"
+   },
+   {
+    "crop": "crops_r11a57/57n_L04.jpg",
+    "source_url": "",
+    "source_file": "00057.pdf page 3 embedded JPEG (not committed; re-fetch pdf_url, pdfimages -j -f 3 -l 3)",
+    "box": [
+     380,
+     1961,
+     1800,
+     2032
+    ],
+    "lines_in_crop": 1,
+    "band": 4,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 70,
+     "distance": 49,
+     "prominence": 126.0
+    },
+    "date": "06 Oct 2026"
+   },
+   {
+    "crop": "crops_r11a57/57n_L05.jpg",
+    "source_url": "",
+    "source_file": "00057.pdf page 3 embedded JPEG (not committed; re-fetch pdf_url, pdfimages -j -f 3 -l 3)",
+    "box": [
+     380,
+     2032,
+     1800,
+     2101
+    ],
+    "lines_in_crop": 1,
+    "band": 5,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 70,
+     "distance": 49,
+     "prominence": 126.0
+    },
+    "date": "06 Oct 2026"
+   },
+   {
+    "crop": "crops_r11a57/57n_L06.jpg",
+    "source_url": "",
+    "source_file": "00057.pdf page 3 embedded JPEG (not committed; re-fetch pdf_url, pdfimages -j -f 3 -l 3)",
+    "box": [
+     380,
+     2101,
+     1800,
+     2167
+    ],
+    "lines_in_crop": 1,
+    "band": 6,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 70,
+     "distance": 49,
+     "prominence": 126.0
+    },
+    "date": "06 Oct 2026"
+   },
+   {
+    "crop": "crops_r11a57/57n_L07.jpg",
+    "source_url": "",
+    "source_file": "00057.pdf page 3 embedded JPEG (not committed; re-fetch pdf_url, pdfimages -j -f 3 -l 3)",
+    "box": [
+     380,
+     2167,
+     1800,
+     2234
+    ],
+    "lines_in_crop": 1,
+    "band": 7,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 70,
+     "distance": 49,
+     "prominence": 126.0
+    },
+    "date": "06 Oct 2026"
+   }
+  ]
+ }
 }
