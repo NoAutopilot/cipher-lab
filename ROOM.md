@@ -10124,3 +10124,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 23:19 | NB-CRAV worker | claim NB-CRAV craven-rupert-1648 cap 7 box ends 00:25 UTC 7 Oct, for LANE NEWT-B-account-2
 2026-10-06 23:19 | NB-CHHM | claim: check-solved charles-hm-cabinet-1645, cap 7, box ends 00:30 UTC 7 Oct, for LANE NEWT-B-account-2
 2026-10-06 23:19 | NB-HYDE worker | claim: NB-HYDE hyde-add4166-1659 check-solved + premise check, cap 7, box ends 00:29 UTC 7 Oct, for LANE NEWT-B-account-2
+2026-10-06 23:19 | NB-BAGNO check-solved | job NB-BAGNO slug bagno-francia104-1652, cap 7, box end 00:30 UTC 7 Oct, for LANE NEWT-B-account-2
