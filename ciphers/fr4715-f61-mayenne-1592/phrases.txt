@@ -1,15 +1,24 @@
-# NEXT-F61, 2 Oct 2026: f.61r clear-prose fragments on disk (single blind passes, grade M, not a full transcription):
-# H16 scripts/read_call_U.tsv (L02/L04/L06/L09/L10), H264 (L10), H286 (L04), H297 (L05). Spelling as read.
-je ne seroys pas paresseux si
-pas paresseux si
-Je croys aussi que les choses sont
-que les choses sont
-sur les lieux vous verres
-s'il s'y presentoit les occasions
-Et s'il s'y pouvoit
-en connoyssant le fruit
-On ne desiroit point du reste
-particulierement sur les
-beaucoup desiree Mais on avoit
-# Tomokiyo's published span phrase (mayenne.htm, quoted in his own prose), for locating a printed text of the letter:
+# D4-F61PR, 6 Oct 2026: phrases from the reconciled, normalised f.61r clear reading (scripts/f61r_clear_reading.tsv, verified H 87 / M 17 / I 8;
+# y-for-n forms normalised per scripts/f61r_clear_corrections.tsv; macron abbreviations expanded: -mē -> -ment). Phrases built from H/M words only
+# where possible; spelling as read. Replaces the 2 Oct 2026 single-pass fragments.
+nous avons parle familierement et amplement de toutes choses
+parle familierement et amplement de toutes choses
+particulierement sur les plus importances
+il seroit trop long vous en dire les propos
+il seroit trop long vous en dire
+Et plein de generosite pour beaucoup desiree
+Mais on avoit come je le croys aussy que les choses sont
+et que si nous mesmes en en conoyssant le fruit
+conoyssant le fruit fesions la premiere pointe
+on ne desfieroit point du reste
+Cependant on n'ose envoyer de part de della
+on n'ose envoyer de part de della
+maintenant qu'on en a affere vous estes sur les lieux
+vous estes sur les lieux vous verres
+sur les lieux vous verres s'il s'en presentoit les occasions
+s'il s'en presentoit les occasions et s'il s'en pouvoit prendre quelqu'une
+et s'il s'en pouvoit prendre quelqu'une
+je ne seroys pas paresseux si tant soit peu
+tant soit peu
+# Tomokiyo's published span phrase (mayenne.htm), kept from NEXT-F61:
 jalousie au beau pere

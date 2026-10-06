@@ -1,7 +1,7 @@
 host	requests	status
 api.crossref.org	2	ok
-api.openalex.org	13	ok
-api.semanticscholar.org	3	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Je%20croys%20aussi%20que%20les%20choses%20sont%22
-archive.org	1	ok (some errors)
-be-api.us.archive.org	24	ok
-www.googleapis.com	12	ok
+api.openalex.org	21	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22nous%20avons%20parle%20familierement%20et%20amplement%20de%20toutes%20choses%22
+archive.org	1	ok
+be-api.us.archive.org	20	ok
+www.googleapis.com	20	ok (some errors)
