@@ -325,3 +325,46 @@ regeneration. Counts for the two entries after the decision: 9947.505 H 13 C 1 (
 Checks: `ec18/lehigh_grades.py --check` current (exit 0), `decode.py --check` current (exit 0; mssEC 15 readings untouched).
 SECOND-OPINIONS-QUEUE.tsv: the target's only row (SO-ECK-4992, mssEC 15 entry 4992.3) does not contain Lehigh; nothing to carry.
 Requests: archive.org 3, 2 s apart; 0 subagents.
+
+## Carry-over R12A-ECKV2 (6 Oct 2026, verifier, account 1, for LANE LANE-RUN12-account-1): grade of Leghorn, Legend, Leopard
+
+Claim under audit: R12A-ECKLEG (NOTES.md, 6 Oct 2026) aligned every Leghorn, Legend and Leopard in the sent ledgers mssEC 18-19
+to OR ser. I: 48 print-read, 0 Hurlbut (the book value, mssEC 41 p.17 l.5-6, H), Legend reading Butler 13 / Canby 10 in
+overlapping months; no grade changed, flagged for a verifier. Grade decision only; no N-class or depth changes.
+
+Checked independently: OR ser. I vols. 33, 42.3, 45.2 `_djvu.txt` re-fetched (archive.org 3 requests, sha256 matching
+`ec18/or_volumes.tsv`) and 16 slots read by phrase, all as R12A-ECKLEG states: vol. 33 Legend = Butler at 9674 ("spoiled by your
+co-operation with General Butler"), 8906 ("forwarded to General Butler"), 8930 ("General Butler has asked for two more
+batteries"), 8942 ("After sending 1,000 horses to Butler"), 9718 ("have General Butler telegraph direct to you"), 8945 ("I had
+telegraphed to General But-ler to use his own judgment"), 8946 ("Generals Butler and Peck"); vol. 42.3 Legend = Butler at 9120 x2
+("all of Butler's troops, except 500 regulars", "Before ordering Butler back"), Leghorn = circumstances at 9144 ("Under these
+circumstances the Cavalry Bu-reau") and 9145 ("Under all these circumstances, I invite you"); vol. 45.2 Leghorn = circumstances
+at 9934 ("Parkersburg or Bellaire, according to circumstances"), = can be at 9937 ("if you can be ready in time"), = Canby at
+9908 ("ordered by General Canby on the 25th and 26th ultimo") and 9914 ("General Canby is obliged to keep"); Legend = Canby at
+9937 ("General Canby has been ordered to collect"); Leopard = Canby at 9937 x2 ("expeditionary force of General Canby", "Canby can
+easily reach Montgomery"). The other 32 aligned slots were not re-read here (vols. 34.4, 36.2, 36.3, 37.2, 38.4, 39.2, 39.3,
+41.2, 41.4, 48.1, 48.2, 49.1, 49.2).
+
+Decision (rule 4), mechanised in `ec18/hurlbut_row_grades.py` -> `ec18/hurlbut_row_grades.tsv` (`--check` exit 0):
+- **C 47.** Each aligned code use takes the word its own telegram's print has in the slot (Leghorn: Canby 10, "can be" 2,
+  "circumstances" 3; Legend: Butler 13, Canby 10; Leopard: Canby 9). The print is the plaintext of this very use, not a key
+  value carried from elsewhere.
+- **gloss 1.** Leopard 9057 (26 Aug 1864): the ledger writes "Gen Canby" in clear with "leopard" inserted above; the print
+  reads Canby. An operator's pairing beside clear text, not a code-only token; kept out of the C count.
+- **M 12.** Leghorn 9877, 9945 and Legend 9786, 9945, 9671, 9672, 9026, 9111, 9186, 9242, 8944 (no print found), Leopard 9174
+  first occurrence (OCR lacuna). Not H: for Leghorn and Leopard every print-read use contradicts the book's Hurlbut. Legend:
+  two print-read values in overlapping months (27 May - 10 Nov 1864); no witness matches an unread use, so M whatever its date
+  or addressee -- including 9671/9672 (Feb 1864, to Caldwell), which sit only in the Butler months and on a Butler addressee:
+  that is inference (I), not a witness for this use.
+- Legend conflict recorded with every witness (pointer, date, addressee, OR place; all sent from Washington) in HYPOTHESES.md
+  "Legend: two print-read values". Not resolved, not settled by count (13 v 10). Observation only (I): Butler uses go to the
+  eastern operators (Caldwell, Beckwith), Canby uses to western ones.
+- Key rows stay H as the record of what the book says (ciphers/eckert-1864/key.md p.17). A Leghorn/Legend/Leopard token in any
+  1864-65 reading that no print reads is M, not H.
+
+Applied: none of the three words (nor Lehigh's forms beyond the two R12A-ECKV tokens) is a token of the committed
+`ec18/readings.md`, `ec18/s2/readings.md` or either `align_tokens.tsv` (the script fails if one appears), so no reading or count
+changes. `ec18/hurlbut_row_grades.tsv` is the per-token grade of record for the three words. Checks: `hurlbut_row_grades.py
+--check` current, `lehigh_grades.py --check` current, `decode.py --check` exit 0. status.json: no per-token grade field; nothing
+to carry. SECOND-OPINIONS-QUEUE.tsv: the target's only row (SO-ECK-4992, mssEC 15 entry 4992.3) contains none of the words.
+Requests: archive.org 3, 2 s apart; 0 subagents.
