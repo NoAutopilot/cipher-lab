@@ -29,6 +29,10 @@ Armstrong and Debosnys are off limits (owner sorters / private).
       `tools/hot_cold.py`). Take the top runnable rows (blocker `runnable`, then the `parallel` action of blocked rows), cheapest
       cost band first. If `--hot-only` is refused or HOT-COLD.tsv is absent, fall back to plain `python3 tools/next_steps.py` and take
       runnable rows; say which in the ROOM claim.
+   Light guardrail (owner, 6 Oct 2026: "not burning a considerable amount of our usage chasing things that have already been
+   caught"): work on an item whose text is already known (AUDIT N0/N1, or a period decipherment on the leaf) is fine when it
+   tests or builds a key for an unread sibling, or corrects a record; keep the rest of it to roughly a fifth of the lane's
+   worker spend, and say the share in the close line.
    Each worker brief is a copy of the matching `.claude/briefs/` template with a $ cap and box sized per CLAUDE.md Usage 6 (units x
    per-unit rate), the intake gate (`tools/intake_gate_check.py <target>`) pasted before any deep-work brief, and "report what was
    found and where it was not found; do not classify novelty" for solver jobs.
