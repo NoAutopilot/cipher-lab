@@ -971,3 +971,33 @@ err 0.05: the target's transcription error is not measured (a spot check only, N
    params) both go through the spec's judge (ru19_lat s1s; RUN4-KAL: real_p05 gate of unknown reliability on this corpus). The
    target is "worth a verifier" only if it PASSes and the shuffled decode FAILs; a shuffled PASS voids the judge for this family
    (rule 3, ARM-C1). Anything else: control-backed negative for this design, conditional on Ernst's transcript and convention A.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 6 Oct 2026 13:28 | wordcode | N=978 K=36 restarts=2 corpus=s1s.txt.gz codes=marked,bnd=x,err=0.05 | 1-3 | 0.491 (0.001-0.875) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | R13-KAL10 wordcode ru s1s, marked types = codes, conv. A, control before target |
+
+### R13-KAL10 result (6 Oct 2026, 13:27-13:29 UTC; pre-registration commit ceca4fbad before any scored run)
+
+Ran the pre-registered command; one wording deviation: family_run.py refused the label's word "first" (rule 10 guard), so the
+label reads "control before target". Nothing else changed. Run time about 75 s for the three control seeds.
+
+| control seed | blended token accuracy | letters (n) | codes (n) |
+|---|---|---|---|
+| 1 | 0.001 | 0.000 (863) | 0.009 (115) |
+| 2 | 0.875 | 0.882 (858) | 0.825 (120) |
+| 3 | 0.597 | 0.582 (880) | 0.735 (98) |
+| mean | **0.491** | 0.488 | 0.523 |
+
+Code share in the control 0.10-0.12 vs the target's 0.116; 12-13 code types vs the target's 13. **Gate 1 not met** (0.491 < 0.6;
+the code-class condition, 0.523 >= 0.3, was met). CONTROL BELOW GATE, exit 3, target not run. By the pre-registered wording:
+**non-test for the letter-or-word nomenclator design (marked types = codes, ru s1s) at N 978 with this tool at restarts 2**.
+No target number exists, so there is nothing to read and no negative.
+
+What the spread shows (an observation, not a re-scored gate): two of three seeds read the design (0.875, 0.597) and seed 1 is a
+stuck restart pair (0.001: letters and codes both at zero, a whole-key basin, not a partial read). The tool reads this design at
+this N when a restart lands; the miss is restart count, not N. Next step, a fresh pre-registration, not a re-tune under this
+one: the same command at `--restarts 6` with seeds 1-5 (about 5 minutes of CPU at this job's rate), the same two gates, and the
+shuffled-target decode required beside the target as in gate 2. Bracketing note (rule 3): err 0.05 is not the target's
+measured error, which does not exist; a control PASS at 0.05 would license only that error band.

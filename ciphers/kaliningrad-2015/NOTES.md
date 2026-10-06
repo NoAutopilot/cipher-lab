@@ -597,3 +597,20 @@ spent on every scheme tried (S3', S1, S3, S1s, S3-soft, German), so the next tes
 (nomenclator/code groups or transposition) with its own matched control, not another substitution scheme. Verdict: keep
 going (no outside blocker).
 
+## R13-KAL10, letter-or-word nomenclator with its own matched control, 6 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run13-jobs.md` "R13-KAL10" (LANE-RUN13, account 2): the different design family
+R12-KAL9 named. Disk and CPU only, no hosts, no subagents. `tools/design_prior.py --no-write` on the sign TSVs (on
+`ciphertext.txt` it tokenises by whitespace into 92 words, not usable) ranked nomenclator top (convention A 0.20, B 0.33,
+advisory tier); nomenclator was not logged in HYPOTHESES.md, so it is the family run. `family_run.py --family nomenclator` takes
+integer tokens only, so the letter-sign form `--family wordcode` (each sign type = one letter or one whole word) was used, after
+adding `--param bnd=` (its word-boundary letter was hard-coded `w`, a letter in ru19_lat; default unchanged, offline test (6)
+added in `tools/tests/test_wordcode.py`). Hypothesis: the 13 apostrophe/diacritic types (113 tokens, 11.6%) are whole-word codes,
+the unmarked types letters, Russian s1s. Pre-registered in HYPOTHESES.md "R13-KAL10" (commit ceca4fbad) before scoring.
+
+**Result: CONTROL BELOW GATE** -- matched control mean token accuracy 0.491 (seeds 0.001 / 0.875 / 0.597) against gate 0.6 at
+N 978, K 36, restarts 2, err 0.05; the target was not run. A non-test for this design with this tool at this setting, not a
+negative; no reading. Seed 1 is a stuck restart basin while seeds 2-3 read the design, so the named next step is the same unit
+pre-registered again at restarts 6, seeds 1-5 (~5 min CPU, ~$1), with the shuffled-target decode beside the target. Status
+stays `open`. Rule 10: nothing here is a reading. Both numbers in HYPOTHESES.md (family_run row and "R13-KAL10 result").
+
