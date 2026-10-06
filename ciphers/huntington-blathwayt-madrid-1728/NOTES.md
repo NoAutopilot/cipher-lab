@@ -447,7 +447,7 @@ reproducible from images/manifest.json pointers). Requests: hdl.huntington.org 2
 
 ## R7B-HUNT: descending-glyph census (account-1 worker, 6 Oct 2026 02:06-02:1x UTC by date -u)
 
-Pre-registered in census/PREREG.md (pushed f9d20057d before any crop was viewed). Candidates from census/swapstats.py: on BLA188 p4-p6
+Pre-registered in census/PREREG.md (written 02:09 UTC before any crop was fetched, file mtime; NOT pushed then -- the ROOM line f9d20057d announced it but room.py pushed only ROOM.md; committed after the census, so the pre-registration is attested by mtime and ROOM line only, not by git order). Candidates from census/swapstats.py: on BLA188 p4-p6
 and BLA194 p1, against a key built with these four pages left out, the commonest single-digit fix that turns a glossed column's group
 into its gloss's key value is 5->7 (17 columns) and 3->7 (6); every other swap occurs at most twice. Native IIIF bands
 (hdl.huntington.org, 16 requests incl. one empty reply retried once, >= 1.7 s apart; crops kept out of the repo, regions in

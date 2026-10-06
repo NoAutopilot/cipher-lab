@@ -1,0 +1,431 @@
+line	pos	group	conf	gloss	key_as_read	swaps
+BLA188_p4_L01	1	661	H	le	le:11	
+BLA188_p4_L01	2	208	H	comme	comme:2	
+BLA188_p4_L01	3	588	H	il	il:8,a:1	388=en:1
+BLA188_p4_L01	4	386	H	est	est:4,oit:1,c'est:1	
+BLA188_p4_L01	5	918	M	manifeste		518=garantie:1
+BLA188_p4_L01	6	823	H	par	par:7	825=ne:1 829=je:1
+BLA188_p4_L01	7	163	H	ce	ce:5	169=com:1
+BLA188_p4_L01	8	926	H	que	que:13,je:2,qui:1,br:1	
+BLA188_p4_L01	9	661	H	le	le:11	
+BLA188_p4_L02	1	1006	H	roy	roi:1,roy:1	
+BLA188_p4_L02	2	508	H	ge	ge:3	
+BLA188_p4_L02	3	599	M	or	jamais:1	399=ecrire:3,einre:1 593=ir:2 595=it:3,il:1,j':1 597=jalouse:1
+BLA188_p4_L02	4	508	H	ge	ge:3	
+BLA188_p4_L02	5	892	H	menier	premier:1	
+BLA188_p4_L02	6	65	M	avit		67=avoir:3
+BLA188_p4_L02	7	904	H	promis		704=mon:2
+BLA188_p4_L02	8	1033	H	sur	sur:12	1039=sceu:1
+BLA188_p4_L02	9	500	H	gi		900=pris:3,que:1
+BLA188_p4_L03	1	123	H	br	be:1,ter:1	
+BLA188_p4_L03	2	379	H	el	el:1	339=detourne:1 399=ecrire:3,einre:1
+BLA188_p4_L03	3	1105	H	ter		1107=ser:1 1109=ti:7,li:1,tar:1
+BLA188_p4_L03	4	1243	H		il:1	
+BLA188_p4_L03	5	588	H	il	il:8,a:1	388=en:1
+BLA188_p4_L03	6	695	H	me	me:13	697=mi:2
+BLA188_p4_L03	7	348	M	disoit		948=ro:1,re:1
+BLA188_p4_L03	8	922	H	qu	qu:3,qu'ecrire:1,qu':1,que:1	322=dernier:1
+BLA188_p4_L04	1	381	H	en	en:11,ier:1	581=ie:1,te:1 981=en:1
+BLA188_p4_L04	2	59	M	angleterre	action:1	53=affaire:2
+BLA188_p4_L04	3	1148	H	un	un:3	
+BLA188_p4_L04	4	734	H	min		754=n:4,n':1
+BLA188_p4_L04	5	594	H	is	is:1,oit:1	
+BLA188_p4_L04	6	1102	H	te	te:1	
+BLA188_p4_L04	7	943	H	re	re:1,pris:1,ve:1	743=moyennant:1 945=ri:2 947=ri:2
+BLA188_p4_L04	8	461	H	fait	fait:2	
+BLA188_p4_L04	9	1149	H	une	une:3,vi:1	1143=v:2,u:1 1145=ve:2 1147=vi:1
+BLA188_p4_L05	1	53	H	affaire	affaire:2	59=action:1
+BLA188_p4_L05	2	922	H	qu	qu:3,qu'ecrire:1,qu':1,que:1	322=dernier:1
+BLA188_p4_L05	3	1148	H	un	un:3	
+BLA188_p4_L05	4	111	H	autre	autre:3	
+BLA188_p4_L05	5	993	H	retranche		593=ir:2
+BLA188_p4_L05	6	924	H	quand	quand:1	
+BLA188_p4_L05	7	588	H	il	il:8,a:1	388=en:1
+BLA188_p4_L05	8	1097	H	succede		1099=t:5,sceu:1,a:1
+BLA188_p4_L05	9	1252	H			
+BLA188_p4_L06	1	929	H	quil	qu'il:2,quil:2	
+BLA188_p4_L06	2	386	H	est	est:4,oit:1,c'est:1	
+BLA188_p4_L06	3	764	H	necessaire		
+BLA188_p4_L06	4	258	H	de	de:2,afait:1	238=consideration:1 278=de:25
+BLA188_p4_L06	5	1013	H	s'entendre	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p4_L06	6	416	M	bien		
+BLA188_p4_L06	7	132	H	si		152=cr:1 192=certain:2
+BLA188_p4_L06	8	1020	H	on	si:5	
+BLA188_p4_L06	9	596	H	on		796=on:8 576=i:2
+BLA188_p4_L07	1	1155	M	veut	ut:1	1135=travaille:2 1153=vou:1,vous:1
+BLA188_p4_L07	2	1099	H	faire	t:5,sceu:1,a:1	1039=sceu:1
+BLA188_p4_L07	3	453	H	une		433=espere:1 473=faire:4
+BLA188_p4_L07	4	1149	H	paix	une:3,vi:1	1143=v:2,u:1 1145=ve:2 1147=vi:1
+BLA188_p4_L07	5	843	H	ferme	paix:2,pain:1	849=parle:1
+BLA188_p4_L07	6	484	M	quil		
+BLA188_p4_L07	7	929	H	faut	qu'il:2,quil:2	
+BLA188_p4_L07	8	456	H	mettre		
+BLA188_p4_L07	9	551	H	mettre	mettre:1	591=in:3
+BLA188_p4_L08	1	823	H	par	par:7	825=ne:1 829=je:1
+BLA188_p4_L08	2	900	H	ecrit	pris:3,que:1	
+BLA188_p4_L08	3	932	H	quelque	quelque:2	532=gouvernement:1 732=mieux:1 972=rendu:1
+BLA188_p4_L08	4	851	H	part	part:2	
+BLA188_p4_L08	5	581	H	ie	ie:1,te:1	381=en:11,ier:1 981=en:1
+BLA188_p4_L08	6	258	H	de	de:2,afait:1	238=consideration:1 278=de:25
+BLA188_p4_L08	7	660	H	la	la:7	
+BLA188_p4_L08	8	140	H	bonne	bonne:5,de:1	
+BLA188_p4_L08	9	1150	H	vo	vo:2	
+BLA188_p4_L09	1	658	H	l	l:2	638=italie:1 698=mis:1
+BLA188_p4_L09	2	596	H	on		796=on:8 576=i:2
+BLA188_p4_L09	3	1102	H	te	te:1	
+BLA188_p4_L09	4	289	H	du	du:4,porte:1,non:1	
+BLA188_p4_L09	5	1006	H	roy	roi:1,roy:1	
+BLA188_p4_L09	6	251	H	d		271=d':3 291=d':1
+BLA188_p4_L09	7	59	M	angleterre	action:1	53=affaire:2
+BLA188_p4_L09	8	38	H	au	au:2,so:1,av:1	58=agit:1 78=ambassadeur:1
+BLA188_p4_L09	9	535	H	moins		735=monsieur:3 575=j':2,il:1 595=it:3,il:1,j':1 533=grand:1
+BLA188_p4_L09	10	381	H	en	en:11,ier:1	581=ie:1,te:1 981=en:1
+BLA188_p4_L10	1	134	H	ar		174=au:1
+BLA188_p4_L10	2	1109	H	ti	ti:7,li:1,tar:1	1107=ser:1
+BLA188_p4_L10	3	169	H	cl	com:1	163=ce:5
+BLA188_p4_L10	4	369	H	e	e:8	
+BLA188_p4_L10	5	1092	M	savoit		1032=su:1
+BLA188_p4_L10	6	835	H	pour	pour:10,pourr:2,par:1	833=point:4 839=pri:1
+BLA188_p4_L10	7	1125	H	temoigne	temoigne:1	1123=garde:1 1129=temps:2
+BLA188_p4_L10	8	941	H	v	r:16,v:1	
+BLA188_p4_L10	9	18	H	a	a:24,aussitot:1,quoy:1	
+BLA188_p4_L11	1	1014	H	sa	la:2,sa:2	
+BLA188_p4_L11	2	709	H	majeste	majeste:1	909=public:1 703=mois:1
+BLA188_p4_L11	3	184	H	catholique	catholique:1	
+BLA188_p4_L11	4	922	H	qu	qu:3,qu'ecrire:1,qu':1,que:1	322=dernier:1
+BLA188_p4_L11	5	596	H	on		796=on:8 576=i:2
+BLA188_p4_L11	6	59	H	agit	action:1	53=affaire:2
+BLA188_p4_L11	7	278	H	de	de:25	238=consideration:1 258=de:2,afait:1
+BLA188_p4_L11	8	140	H	bonne	bonne:5,de:1	
+BLA188_p4_L11	9	488	H	foy		
+BLA188_p4_L12	1	1290	H	il		1250=hier:1
+BLA188_p4_L12	2	588	H	il	il:8,a:1	388=en:1
+BLA188_p4_L12	3	695	H	me	me:13	697=mi:2
+BLA188_p4_L12	4	345	H	dit	dit:1,doit:1	945=ri:2
+BLA188_p4_L12	5	922	H	qu	qu:3,qu'ecrire:1,qu':1,que:1	322=dernier:1
+BLA188_p4_L12	6	381	H	en	en:11,ier:1	581=ie:1,te:1 981=en:1
+BLA188_p4_L12	7	1024	H	son	son:2	
+BLA188_p4_L12	8	854	H	particulier	particulier:1	834=personne:1
+BLA188_p4_L13	1	588	H	il	il:8,a:1	388=en:1
+BLA188_p4_L13	2	1065	H	souhaitoit	souhaite:1	1063=soupcon:1 1069=soutenir:1
+BLA188_p4_L13	3	792	H	oit	oit:4	592=jor:1,so:1,oit:1 732=mieux:1
+BLA188_p4_L13	4	1148	H	un	un:3	
+BLA188_p4_L13	5	46	H	acomodement	accommodeme:1	
+BLA188_p4_L13	6	692	H	mais	mais:3	672=lettre:2
+BLA188_p4_L13	7	929	H	quil	qu'il:2,quil:2	
+BLA188_p4_L13	8	455	H	falloit		435=etat:1 495=it:2
+BLA188_p4_L14	1	278	H	de	de:25	238=consideration:1 258=de:2,afait:1
+BLA188_p4_L14	2	1119	H	tout	tout:1	1113=tous:1
+BLA188_p4_L14	3	369	H	e	e:8	
+BLA188_p4_L14	4	851	H	part	part:2	
+BLA188_p4_L14	5	493	H	fournir		433=espere:1 473=faire:4 495=it:2
+BLA188_p4_L14	6	662	H	les	les:4	
+BLA188_p4_L14	7	542	H	moyen		342=difficulte:1 742=moyen:1 942=ra:5,ri:1
+BLA188_p4_L14	8	1013	H	s	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p4_L15	1	378	M	ch		338=determine:1 358=dont:1
+BLA188_p4_L15	2	661	H	le	le:11	
+BLA188_p4_L15	3	951	H	rendre		551=mettre:1 971=rendre:1
+BLA188_p4_L15	4	290	H	dur		250=d:1 270=d:3
+BLA188_p4_L15	5	19	H	ab		17=mille:1
+BLA188_p4_L15	6	661	H	le	le:11	
+BLA188_p4_L15	7	926	H	que	que:13,je:2,qui:1,br:1	
+BLA188_p4_L15	8	662	H	les	les:4	
+BLA188_p4_L15	9	907	M	propositiv		307=decouvrir:1 909=public:1
+BLA188_p4_L16	1	1013	H	s	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p4_L16	2	525	H	general		
+BLA188_p4_L16	3	385	H	es	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p4_L16	4	756	H	ne	ne:14,no:1,ra:1	356=donne:1 796=on:8
+BLA188_p4_L16	5	459	H	fais		439=oftre:1
+BLA188_p4_L16	6	792	H	oit	oit:4	592=jor:1,so:1,oit:1 732=mieux:1
+BLA188_p4_L16	7	830	H	plus	plus:1	850=perte:1,parole:1
+BLA188_p4_L16	8	100	H	aucun	aucun:2	
+BLA188_p4_L17	1	369	H	e	e:8	
+BLA188_p4_L17	2	609	H	impression		605=me:1 607=mi:1
+BLA188_p4_L17	3	1033	H	sur	sur:12	1039=sceu:1
+BLA188_p4_L17	4	659	H	l	l':12	
+BLA188_p4_L17	5	134	H	esprit		174=au:1
+BLA188_p4_L17	6	289	H	du	du:4,porte:1,non:1	
+BLA188_p4_L17	7	1006	H	roy	roi:1,roy:1	
+BLA188_p4_L17	8	184	H	catholique	catholique:1	
+BLA188_p4_L17	9	910	H	puisque	quisque:1	510=al:1
+BLA188_p4_L18	1	415	H	ensuite		
+BLA188_p4_L18	2	596	H	on		796=on:8 576=i:2
+BLA188_p4_L18	3	668	M	eustruck	l:1	
+BLA188_p4_L18	4	576	H	il	i:2	
+BLA188_p4_L18	5	461	H	fait	fait:2	
+BLA188_p4_L18	6	1113	H	tous	tous:1	1119=tout:1
+BLA188_p4_L18	7	592	H	jo	jor:1,so:1,oit:1	792=oit:4 532=gouvernement:1
+BLA188_p4_L18	8	1142	H	u	u:1	
+BLA188_p4_L18	9	941	H	r	r:16,v:1	
+BLA188_p5_L01	1	1013	H	s	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p5_L01	2	18	H	a	a:24,aussitot:1,quoy:1	
+BLA188_p5_L01	3	164	H	ch	ch:1	
+BLA188_p5_L01	4	385	H	et	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p5_L01	5	384	H	en	er:2	984=resolu:1
+BLA188_p5_L01	6	660	H	la	la:7	
+BLA188_p5_L01	7	890	H	pro		830=plus:1 850=perte:1,parole:1
+BLA188_p5_L01	8	695	H	me	me:13	697=mi:2
+BLA188_p5_L02	1	1013	H	s	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p5_L02	2	1015	M	fe		1013=s:10,f:1,s':1 1017=se:2,ra:1
+BLA188_p5_L02	3	101	H	avoit	avec:8	
+BLA188_p5_L02	4	1149	H	une	une:3,vi:1	1143=v:2,u:1 1145=ve:2 1147=vi:1
+BLA188_p5_L02	5	555	M	nouvelle		755=ni:1 575=j':2,il:1 595=it:3,il:1,j':1
+BLA188_p5_L02	6	870	H	perte		830=plus:1 850=perte:1,parole:1
+BLA188_p5_L02	7	1250	H	c'est	hier:1	
+BLA188_p5_L02	8	191	H		c'est:2	
+BLA188_p5_L03	1	1024	H	son	son:2	
+BLA188_p5_L03	2	347	M	discours		947=ri:2 345=dit:1,doit:1
+BLA188_p5_L03	3	926	H	que	que:13,je:2,qui:1,br:1	
+BLA188_p5_L03	4	580	H	le	je:7,ge:1,dit:1,se:1	
+BLA188_p5_L03	5	1154	H	vous	vous:11	
+BLA188_p5_L03	6	919	H	marqua		719=marque:1
+BLA188_p5_L03	7	56	M	afrique		96=attire:1
+BLA188_p5_L03	8	1154	H	vous	vous:11	
+BLA188_p5_L04	1	1201	H	y	y:4	
+BLA188_p5_L04	2	454	M	fais		474=fais:1
+BLA188_p5_L04	3	581	H	ie	ie:1,te:1	381=en:11,ier:1 981=en:1
+BLA188_p5_L04	4	1013	H	s	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p5_L04	5	659	H	l	l':12	
+BLA188_p5_L04	6	36	H	at		96=attire:1
+BLA188_p5_L04	7	30	H	au	an:1,au:1	
+BLA188_p5_L04	8	1109	H	li	ti:7,li:1,tar:1	1107=ser:1
+BLA188_p5_L04	9	596	H	on		796=on:8 576=i:2
+BLA188_p5_L05	1	929	M	que	qu'il:2,quil:2	
+BLA188_p5_L05	2	695	H	me	me:13	697=mi:2
+BLA188_p5_L05	3	945	H	ri	ri:2	345=dit:1,doit:1 943=re:1,pris:1,ve:1 947=ri:2
+BLA188_p5_L05	4	1102	H	se	te:1	
+BLA188_p5_L05	5	1290	H			1250=hier:1
+BLA188_p5_L05	6	746	M			346=quant:1
+BLA188_p5_L05	7	162	H	car	car:3	
+BLA188_p5_L05	8	1024	H	son	son:2	
+BLA188_p5_L06	1	1099	H	sentiment	t:5,sceu:1,a:1	1039=sceu:1
+BLA188_p5_L06	2	386	H	est	est:4,oit:1,c'est:1	
+BLA188_p5_L06	3	103	H	aujourd'huy		109=aussitot:1,re:1
+BLA188_p5_L06	4	441	H	execute		
+BLA188_p5_L06	5	381	H	on	en:11,ier:1	581=ie:1,te:1 981=en:1
+BLA188_p5_L06	6	1114	H	tout	tout:2	
+BLA188_p5_L06	7	385	H	et	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p5_L06	8	1020	H	si	si:5	
+BLA188_p5_L06	9	596	H	on		796=on:8 576=i:2
+BLA188_p5_L07	1	356	H	donne	donne:1	756=ne:14,no:1,ra:1
+BLA188_p5_L07	2	660	H	la	la:7	
+BLA188_p5_L07	3	693	H	main		695=me:13 697=mi:2
+BLA188_p5_L07	4	18	H	a	a:24,aussitot:1,quoy:1	
+BLA188_p5_L07	5	1149	H	une	une:3,vi:1	1143=v:2,u:1 1145=ve:2 1147=vi:1
+BLA188_p5_L07	6	843	H	paix	paix:2,pain:1	849=parle:1
+BLA188_p5_L07	7	101	H	avec	avec:8	
+BLA188_p5_L07	8	325	H	desavantage		323=par:1
+BLA188_p5_L07	9	192	H	certain	certain:2	152=cr:1
+BLA188_p5_L08	1	588	H	il	il:8,a:1	388=en:1
+BLA188_p5_L08	2	386	H	est	est:4,oit:1,c'est:1	
+BLA188_p5_L08	3	605	H	immancable	me:1	607=mi:1
+BLA188_p5_L08	4	922	H	qu'	qu:3,qu'ecrire:1,qu':1,que:1	322=dernier:1
+BLA188_p5_L08	5	796	H	on	on:8	756=ne:14,no:1,ra:1
+BLA188_p5_L08	6	756	H	ne	ne:14,no:1,ra:1	356=donne:1 796=on:8
+BLA188_p5_L08	7	659	H	p'econte	l':12	
+BLA188_p5_L08	8	441	M			
+BLA188_p5_L09	1	942	H	va	ra:5,ri:1	342=difficulte:1 742=moyen:1
+BLA188_p5_L09	2	600	H	icy	ici:1,icy:1	
+BLA188_p5_L09	3	833	H	point	point:4	853=parti:1 835=pour:10,pourr:2,par:1 839=pri:1
+BLA188_p5_L09	4	289	H	du	du:4,porte:1,non:1	
+BLA188_p5_L09	5	1114	M	tout	tout:2	
+BLA188_p5_L09	6	208	H	comme	comme:2	
+BLA188_p5_L09	7	796	H	on	on:8	756=ne:14,no:1,ra:1
+BLA188_p5_L09	8	18	H	a	a:24,aussitot:1,quoy:1	
+BLA188_p5_L10	1	461	H	fait	fait:2	
+BLA188_p5_L10	2	282	H	des	des:3	
+BLA188_p5_L10	3	891	H	preliminaire		851=part:2
+BLA188_p5_L10	4	1013	H	s	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p5_L10	5	1243	H		il:1	
+BLA188_p5_L10	6	580	H	le	je:7,ge:1,dit:1,se:1	
+BLA188_p5_L10	7	1032	H	fu	su:1	
+BLA188_p5_L10	8	594	H	is	is:1,oit:1	
+BLA188_p5_L11	1	192	H	certain	certain:2	152=cr:1
+BLA188_p5_L11	2	295	M	de		255=dans:1 275=dans:1
+BLA188_p5_L11	3	163	H	ce	ce:5	169=com:1
+BLA188_p5_L11	4	155	M	cy		135=remarque:1 157=c':1
+BLA188_p5_L11	5	1293	M	l'		
+BLA188_p5_L11	6	659	H	l'	l':12	
+BLA188_p5_L11	7	54	H	affection	affection:6	34=ar:2
+BLA188_p5_L11	8	926	H	que	que:13,je:2,qui:1,br:1	
+BLA188_p5_L11	9	935	M	monsieur		735=monsieur:3 937=quoyque:1
+BLA188_p5_L12	1	822	H	ra	pa:4,ra:1	
+BLA188_p5_L12	2	1109	H	li	ti:7,li:1,tar:1	1107=ser:1
+BLA188_p5_L12	3	506	H	g	g:5,gn:1	
+BLA188_p5_L12	4	758	H	no	no:6	358=dont:1 558=au:1 958=recommence:2
+BLA188_p5_L12	5	18	H	a	a:24,aussitot:1,quoy:1	
+BLA188_p5_L12	6	835	H	pour	pour:10,pourr:2,par:1	833=point:4 839=pri:1
+BLA188_p5_L12	7	502	H	moi	france:1	702=moi:5
+BLA188_p5_L12	8	1013	M	fer	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p5_L13	1	792	H	oit	oit:4	592=jor:1,so:1,oit:1 732=mieux:1
+BLA188_p5_L13	2	1185	H	utile	utile:1	
+BLA188_p5_L13	3	1020	H	si	si:5	
+BLA188_p5_L13	4	396	M	on		796=on:8 356=donne:1
+BLA188_p5_L13	5	1013	H	s'explique	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p5_L13	6	445	M	oit		
+BLA188_p5_L13	7	792	H	davantage	oit:4	592=jor:1,so:1,oit:1 732=mieux:1
+BLA188_p5_L13	8	295	M	avantage		255=dans:1 275=dans:1
+BLA188_p5_L14	1	1350	H	le		
+BLA188_p5_L14	2	580	H	fu	je:7,ge:1,dit:1,se:1	
+BLA188_p5_L14	3	1032	H	is	su:1	
+BLA188_p5_L14	4	594	H	surpris	is:1,oit:1	
+BLA188_p5_L14	5	1085	H	que		
+BLA188_p5_L14	6	926	H	qua	que:13,je:2,qui:1,br:1	
+BLA188_p5_L14	7	925	M	si		929=qu'il:2,quil:2
+BLA188_p5_L14	8	1020	H		si:5	
+BLA188_p5_L15	1	1114	H	tout	tout:2	
+BLA188_p5_L15	2	385	H	ce	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p5_L15	3	695	H	me	me:13	697=mi:2
+BLA188_p5_L15	4	1013	H	s	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p5_L15	5	692	M	lettres	mais:3	672=lettre:2
+BLA188_p5_L15	6	1013	H		s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p5_L15	7	795	H	vient		595=it:3,il:1,j':1 735=monsieur:3 755=ni:1 797=ont:1
+BLA188_p5_L15	8	404	H	egar		
+BLA188_p5_L16	1	369	H	e	e:8	
+BLA188_p5_L16	2	385	H	es	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p5_L16	3	588	H	il	il:8,a:1	388=en:1
+BLA188_p5_L16	4	476	H	faut		
+BLA188_p5_L16	5	926	H	que	que:13,je:2,qui:1,br:1	
+BLA188_p5_L16	6	828	H	par	pe:1	
+BLA188_p5_L16	7	661	H	le	le:11	
+BLA188_p5_L16	8	892	H	premier	premier:1	
+BLA188_p5_L17	1	259	H	cour	cour:2	279=dem:1 255=dans:1
+BLA188_p5_L17	2	576	H	i	i:2	
+BLA188_p5_L17	3	384	H	er	er:2	984=resolu:1
+BLA188_p5_L17	4	446	H	extraordinaire		
+BLA188_p5_L17	5	1154	H	vous	vous:11	
+BLA188_p5_L17	6	690	M	vous	m':3,m:1	
+BLA188_p5_L17	7	426	H	m		
+BLA188_p5_L17	8	385	H	envoyes	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p5_L18	1	1198	H	un		1158=valoir:1
+BLA188_p5_L18	2	554	M	nouveau		754=n:4,n':1 594=is:1,oit:1
+BLA188_p5_L18	3	164	H	ch	ch:1	
+BLA188_p5_L18	4	584	H	if		384=er:2 984=resolu:1
+BLA188_p5_L18	5	943	H	re	re:1,pris:1,ve:1	743=moyennant:1 945=ri:2 947=ri:2
+BLA188_p5_L18	6	732	H	mieux	mieux:1	532=gouvernement:1 932=quelque:2 792=oit:4
+BLA188_p5_L18	7	169	H	com	com:1	163=ce:5
+BLA188_p5_L18	8	831	H	po		851=part:2
+BLA188_p6_L01	1	1013	M	se	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p6_L01	2	385	H	et	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p6_L01	3	1149	H	une	une:3,vi:1	1143=v:2,u:1 1145=ve:2 1147=vi:1
+BLA188_p6_L01	4	555	M	nouvelle		755=ni:1 575=j':2,il:1 595=it:3,il:1,j':1
+BLA188_p6_L01	5	21	H	ad		
+BLA188_p6_L01	6	945	H	ra	ri:2	345=dit:1,doit:1 943=re:1,pris:1,ve:1 947=ri:2
+BLA188_p6_L01	7	1013	M	se	s:10,f:1,s':1	1017=se:2,ra:1
+BLA188_p6_L01	8	385	M	et	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p6_L02	1	932	H	quelque	quelque:2	532=gouvernement:1 732=mieux:1 972=rendu:1
+BLA188_p6_L02	2	1041	H	secours	secours:1	
+BLA188_p6_L02	3	385	H	et	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA188_p6_L02	4	924	M	repon	quand:1	
+BLA188_p6_L02	5	1013	M	se	s:10,f:1,s':1	1017=se:2,ra:1
+BLA194_p1_L01	1	837	M	monsieur		857=passe:1 833=point:4 835=pour:10,pourr:2,par:1 839=pri:1
+BLA194_p1_L01	2	822	H	raligno	pa:4,ra:1	
+BLA194_p1_L01	3	1109	H		ti:7,li:1,tar:1	1107=ser:1
+BLA194_p1_L01	4	506	H		g:5,gn:1	
+BLA194_p1_L01	5	758	H		no:6	358=dont:1 558=au:1 958=recommence:2
+BLA194_p1_L01	6	101	H	avec	avec:8	
+BLA194_p1_L01	7	928	H	qui	qui:6,que:1	
+BLA194_p1_L02	1	580	H	le	je:7,ge:1,dit:1,se:1	
+BLA194_p1_L02	2	1032	H	fu	su:1	
+BLA194_p1_L02	3	594	H	is	is:1,oit:1	
+BLA194_p1_L02	4	495	H	favorable	it:2	435=etat:1
+BLA194_p1_L02	5	696	H	ment	ment:2	
+BLA194_p1_L02	6	695	H	me	me:13	697=mi:2
+BLA194_p1_L03	1	1049	H	semble		1045=semblable:1
+BLA194_p1_L03	2	351	H	dispose'		551=mettre:1 331=dessein:1
+BLA194_p1_L03	3	18	H	a	a:24,aussitot:1,quoy:1	
+BLA194_p1_L03	4	34	M		ar:2	54=affection:6
+BLA194_p1_L03	5	692	M		mais:3	672=lettre:2
+BLA194_p1_L03	6	1013	H	s'entendre	s:10,f:1,s':1	1017=se:2,ra:1
+BLA194_p1_L03	7	416	M	s'entendre		
+BLA194_p1_L04	1	101	H	avec	avec:8	
+BLA194_p1_L04	2	1154	H	vous	vous:11	
+BLA194_p1_L04	3	381	H	en	en:11,ier:1	581=ie:1,te:1 981=en:1
+BLA194_p1_L04	4	290	M	d		250=d:1 270=d:3
+BLA194_p1_L04	5	918	H	ro		518=garantie:1
+BLA194_p1_L04	6	536	M			576=i:2
+BLA194_p1_L04	7	1120	H	su		
+BLA194_p1_L04	8	943	H	ve	re:1,pris:1,ve:1	743=moyennant:1 945=ri:2 947=ri:2
+BLA194_p1_L05	1	588	H	il	il:8,a:1	388=en:1
+BLA194_p1_L05	2	695	H	ne	me:13	697=mi:2
+BLA194_p1_L05	3	659	H	l'	l':12	
+BLA194_p1_L05	4	18	H	a	a:24,aussitot:1,quoy:1	
+BLA194_p1_L05	5	395	H	dit		595=it:3,il:1,j':1 399=ecrire:3,einre:1
+BLA194_p1_L05	6	692	H	mais	mais:3	672=lettre:2
+BLA194_p1_L05	7	588	H	il	il:8,a:1	388=en:1
+BLA194_p1_L05	8	754	H	n	n:4,n':1	
+BLA194_p1_L05	9	65	H	ame		67=avoir:3
+BLA194_p1_L06	1	824	H	pas	pas:2,ma:1	
+BLA194_p1_L06	2	278	H	de	de:25	238=consideration:1 258=de:2,afait:1
+BLA194_p1_L06	3	425	M	faire	envie:1	427=envoye:1 429=espous:1
+BLA194_p1_L06	4	660	H	la	la:7	
+BLA194_p1_L06	5	892	H	premier	premier:1	
+BLA194_p1_L06	6	907	H	proposition		307=decouvrir:1 909=public:1
+BLA194_p1_L06	7	1250	H		hier:1	
+BLA194_p1_L07	1	1020	H	si	si:5	
+BLA194_p1_L07	2	396	M	on		796=on:8 356=donne:1
+BLA194_p1_L07	3	1199	M	veu		
+BLA194_p1_L07	4	1099	H	h	t:5,sceu:1,a:1	1039=sceu:1
+BLA194_p1_L07	5	60	H	agreable		
+BLA194_p1_L07	6	475	H	faire		435=etat:1 495=it:2 473=faire:4 477=faute:1
+BLA194_p1_L07	7	278	H	de	de:25	238=consideration:1 258=de:2,afait:1
+BLA194_p1_L07	8	1176	H	votre	votre:3	
+BLA194_p1_L08	1	258	H	cotes	de:2,afait:1	238=consideration:1 278=de:25
+BLA194_p1_L08	2	385	H	et	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA194_p1_L08	3	1069	H	soutenir	soutenir:1	1063=soupcon:1 1065=souhaite:1
+BLA194_p1_L08	4	387	H	et	et:7	385=es:3,et:1,est:1 389=eu:1
+BLA194_p1_L08	5	891	H	perfection		851=part:2
+BLA194_p1_L08	6	381	H	perfectioner	en:11,ier:1	581=ie:1,te:1 981=en:1
+BLA194_p1_L08	7	639	M	l'		659=l':12
+BLA194_p1_L08	8	53	H	affaire	affaire:2	59=action:1
+BLA194_p1_L09	1	282	H	des	des:3	
+BLA194_p1_L09	2	521	H	garnison	garnison:2	321=depourvu:1
+BLA194_p1_L09	3	1018	H	s	sec:1,ser:1	
+BLA194_p1_L09	4	271	M	d'	d':3	291=d':1
+BLA194_p1_L09	5	638	H	italie	italie:1	658=l:2 698=mis:1
+BLA194_p1_L09	6	575	M	j'	j':2,il:1	595=it:3,il:1,j':1
+BLA194_p1_L09	7	433	H	espera	espere:1	473=faire:4 435=etat:1 439=oftre:1
+BLA194_p1_L10	1	926	H	que	que:13,je:2,qui:1,br:1	
+BLA194_p1_L10	2	655	M	l'arrondissement		695=me:13 659=l':12
+BLA194_p1_L10	3	96	H		attire:1	
+BLA194_p1_L10	4	1013	M	se	s:10,f:1,s':1	1017=se:2,ra:1
+BLA194_p1_L10	5	942	H	ve	ra:5,ri:1	342=difficulte:1 742=moyen:1
+BLA194_p1_L10	6	109	H	aussitot	aussitot:1,re:1	
+BLA194_p1_L10	7	991	H	faite		591=in:3 971=rendre:1
+BLA194_p1_L11	1	385	H	et	es:3,et:1,est:1	387=et:7 389=eu:1
+BLA194_p1_L11	2	555	H	heureux		755=ni:1 575=j':2,il:1 595=it:3,il:1,j':1
+BLA194_p1_L11	3	1290	H			1250=hier:1
+BLA194_p1_L11	4	704	H	mon	mon:2	
+BLA194_p1_L11	5	890	M	pro		830=plus:1 850=perte:1,parole:1
+BLA194_p1_L11	6	482	H	jet		
+BLA194_p1_L11	7	289	H	du	du:4,porte:1,non:1	
+BLA194_p1_L11	8	691	H	ma	ma:9,faute:1	
+BLA194_p1_L12	1	943	H	vi	re:1,pris:1,ve:1	743=moyennant:1 945=ri:2 947=ri:2
+BLA194_p1_L12	2	18	H	a	a:24,aussitot:1,quoy:1	
+BLA194_p1_L12	3	508	H	ge	ge:3	
+BLA194_p1_L12	4	829	H	peu	je:1	823=par:7 825=ne:1
+BLA194_p1_L12	5	1013	H	pou	s:10,f:1,s':1	1017=se:2,ra:1
+BLA194_p1_L12	6	991	H	s'execute		591=in:3 971=rendre:1
+BLA194_p1_L12	7	921	M	r		321=depourvu:1 521=garnison:2
+BLA194_p1_L12	8	16	H	a	cent:2	
+BLA194_p1_L12	9	660	H	la	la:7	
+BLA194_p1_L12	10	1081	H	fuite	suite:1	
+BLA194_p1_L13	1	101	H	avec	avec:8	
+BLA194_p1_L13	2	98	H	avantage		38=au:2,so:1,av:1 58=agit:1 78=ambassadeur:1
+BLA194_p1_L13	3	295	H	dans		255=dans:1 275=dans:1
+BLA194_p1_L13	4	659	H	l'alliance	l':12	
+BLA194_p1_L13	5	91	H			
+BLA194_p1_L13	6	1240	H		s:1,que:1	
+BLA194_p1_L13	7	692	H	mais	mais:3	672=lettre:2
+BLA194_p1_L13	8	205	H	comme		
+BLA194_p1_L13	9	1154	H	vous	vous:11	
+BLA194_p1_L13	10	756	H	ne	ne:14,no:1,ra:1	356=donne:1 796=on:8
+BLA194_p1_L14	1	695	H	me	me:13	697=mi:2
+BLA194_p1_L14	2	461	H	fait	fait:2	
+BLA194_p1_L14	3	381	H	as	en:11,ier:1	581=ie:1,te:1 981=en:1
+BLA194_p1_L14	4	100	H	aucun	aucun:2	
+BLA194_p1_L14	5	369	H	e	e:8	
+BLA194_p1_L14	7	991	H	reponse		591=in:3 971=rendre:1
+BLA194_p1_L14	8	163	H	cen	ce:5	169=com:1
+BLA194_p1_L14	9	1118	H			
+BLA194_p1_L14	10	704	H	mon	mon:2	
