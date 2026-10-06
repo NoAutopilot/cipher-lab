@@ -500,3 +500,51 @@ January run of inv. 92 (scans ~100-174, letters sent ahead to Vienna before 31 J
 
 **Requests:** service.archief.nl 35 (35 IIIF openings at 1000 px; all HTTP 200, >= 1.8 s apart, one at a time); no other
 host. Subagent calls: 0.
+
+## R9-ROELL6 (6 Oct 2026): NA 2.01.08 inv. 92, the January 1809 run (scans 100-173)
+
+Worker R9-ROELL6 (account 2, for LANE LANE-RUN9-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run9-jobs.md`,
+05:37-05:45 UTC by `date -u`. Page images read by eye (IIIF 1000 px openings, two stacked per view; one local 3x crop of
+scan 128's header from the image already on disk), no subagent, no decoding. Status unchanged: `open`. Grade counts: H 0,
+C 0, S 0, M 0, I 0 (no reading). Per-scan log: `na20108/inv92_scans_100-173.tsv` (45 scans).
+
+**Coverage.** Scans 100-140 read in full (16 Jan fol. 73 to 23 Jan fol. 107, every minute); 150, 158, 166, 173 sampled
+(25, 26, 28, 31 Jan, fol. 116-136). The 45-request limit was reached; scans 141-149, 151-157, 159-165, 167-172 and 174
+(23-31 Jan, about 30 scans) were not viewed, nor January before the 16th (scans ~4-99).
+
+**Found.**
+- **No minute to Van Dedem, Testa or Constantinople, and no cipher, 16-23 Jan 1809.** Addressees: the King, Larochefoucauld
+  (French ambassador, several), Prince Dolgorouki (Russian envoy), Marshal Verhuell at Paris (No 9, No 10), the Dutch
+  ministers at the Danish court (No 5-7) and at Munich (No 2, name uncertain), the order-commanders at Berlin and St
+  Petersburg, the Ministers of Finance and of the Interior, the Public Debt, Zeeland, Rotterdam, the Bayreuth Kammer, the
+  legation controller at Paris. Every minute is clear Dutch or French; no cipher groups, no "in cijfers"/"en chiffre" note.
+- **The Constantinople decision (read in gist, not graded).** Scan 100 (fol. 73, 16 Jan 1809, to the King): the embassy at
+  Constantinople (and the mission in Spain) is not to be re-filled; affairs there go to a chargé d'affaires, and the
+  minister proposes Testa, secretary of legation, as chargé d'affaires on a daily allowance. This is the ministry's side of
+  the handover inv. 348 shows, and dates it before 9 Feb.
+- **A Vienna series opens on 20 Jan 1809.** Scan 128 (fol. 98, 20 Jan): "No 1", to Lieutenant-General Van Hogendorp,
+  envoy extraordinary and minister plenipotentiary at the court of Vienna ("Weenen" read at low resolution; the 1.02.20 EAD's
+  inv. 996, "Brieven van en aan D. van Hogendorp, gezant te Wenen. 1809", agrees). A long Dutch instruction; its first
+  page, read at 1000 px, does not mention Van Dedem or Constantinople, and no cipher note was seen. With Van Dedem heading
+  for Vienna (left Bucharest 31 Jan, R8-ROELL4), the ministry's Vienna envoy is the route a 9 Feb letter to him would
+  plausibly take; NOTES.md line ~122 already records a Van Hogendorp cipher (1803) in use at the Russian legation in
+  1808-09 (1.02.13 inv. 226). Inference, not established.
+
+**1.02.20 (the legation archive), availability looked up (EAD fetched once, one item page).** The Testa-period series
+holds: inv. 978 "Brieven aan W.F. Roël ... Afschriften. 1809-1810" (the legation's copies of its outgoing letters to the
+ministry) -- item page `www.nationaalarchief.nl/onderzoeken/archief/1.02.20/invnr/978`, drupal-settings `availability:
+DIGITALIZED`, 362 scans; inv. 980 (to Van Dedem, copies 1808-11), 987 (to A.B.G. van Dedem, copies 1808-10), 988 (Röell,
+1809-10), 990 (Van Dedem at Bucharest, Vienna ..., 1809-11) and **996 (to and from D. van Hogendorp at Vienna, 1809)**, 997
+(Silliman, legation secretary at Vienna, 1809-10) all carry a METS dao in the EAD (digitised; item pages not opened).
+Bourdeau has viewed 980, 988 and 990 (Premise check above); 978 and 996 are not recorded as viewed by anyone in this folder.
+
+**Not found / not searched.** No 16-23 Jan 1809 minute to Van Dedem or Constantinople in inv. 92 (scans 100-140 complete);
+23-31 Jan only sampled; 1-15 Jan not read. Not searched: 1.02.20 inv. 978 and inv. 996 page by page.
+
+**Verdict line:** `open` -- inv. 92 has no minute to Van Dedem or Constantinople 16-23 Jan 1809 and no cipher, but opens a
+Vienna series (No 1 to Van Hogendorp, 20 Jan). Cheapest next: 1.02.20 inv. 996 (Hogendorp at Vienna, 1809, digitised) for
+any piece passed to or from Van Dedem around 9 Feb 1809 or any cipher (~USD 2-3, <= 45 requests); then 1.02.20 inv. 978
+around Jan-Feb 1809 (Testa's copies; 362 scans, bisect by date); then inv. 92 scans 141-174.
+
+**Requests:** service.archief.nl 45 (IIIF /full/1000,/0/ openings; all HTTP 200, >= 1.9 s apart, one at a time);
+www.nationaalarchief.nl 2 (EAD xml 1.02.20, item page 1.02.20/978; both HTTP 200). Subagent calls: 0.
