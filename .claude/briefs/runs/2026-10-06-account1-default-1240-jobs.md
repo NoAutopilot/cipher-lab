@@ -123,3 +123,30 @@ A reading change after AUDIT.md: flag in ROOM for a verifier. Remaining gaps / E
 Intake gate: `es132-vargas-mexia-1578: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
 Folder Verdict cheapest next, both steps exactly as the Verdict names them (read the NOTES.md lines that define them). The BL lookup uses
 searcharchives.bl.uk?format=json (host table); quote the record. No Cipher 3/4 work in this job. Remaining gaps / Escalation; gaps_check.py.
+
+## Wave 3 (spawned 13:2x UTC 6 Oct). Last wave of this lane (lane ~36 of 60 spent at spawn).
+
+### D1-F16104K -- fr16104-vivonne-spain-1572, ink 53 f/m/p key cells against the U labels, pre-registered key change (Opus; cap 3, box 45 min; disk only)
+Intake gate: `fr16104-vivonne-spain-1572: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next (D2 path named in AUDIT 4 by D1-F16104I). PREREG committed and pushed BEFORE the scored run: which key cells
+may change, the statistic, a control that can vary on it (shuffled-key or wrong-cell assignment), the pass rule. Report both numbers. Apply the
+change only on PASS; decode --check exit 0. The reading changes after AUDIT 4: say so in NOTES.md and flag in ROOM for a verifier (do not edit
+the AUDIT depth yourself). Remaining gaps / Escalation; gaps_check.py.
+
+### D1-ECK62S -- eckert-1862, other Lehigh uses in the sent ledgers mssEC 18-19 (Opus; cap 2, box 35 min)
+Intake gate: `eckert-1862: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next (D1-ECK62W). Disk first (mssEC 18 is on disk per GAPS206); fetch 19 once with a manifest only if absent. Report
+every Lehigh occurrence with its plaintext context and whether it settles the M-graded conflict; grade per rule 4; --check exit 0.
+
+### D1-DEC2678L -- decode-2678-bnf-colbert127-gravel-1665, look at the 14 unlooked Gravel leaves of Mél. Colbert 120-125/131-133 for figure groups (Opus; cap 4, box 55 min)
+Intake gate: `decode-2678-bnf-colbert127-gravel-1665: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next (D1-DEC2678S list in NOTES.md). 1665 leaves first. Gallica IIIF at a viewing size (not native) is enough to see
+figure groups; one request per leaf, good-citizen rule. For each leaf: clear / cipher / partly cipher, with or without decipherment. No
+decoding. A cipher leaf found: record its ark/canvas in NOTES.md as a named next step. Stop before a leaf that would cross 80%.
+
+### D1-BAL170 -- baluze167-davaux-1637, Baluze 170 ff.228-230 crops and two blind passes with the court-hand exemplar sheet (Opus; cap 7, box 90 min)
+Intake gate: `baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next (D1-BAL167's 63-exemplar sheet). Units at ~1.5: crop step pasted (tools/iiif_lines.py --ark/--canvas) + 2 blind
+Sonnet passes per leaf-page over line crops (one call per page per pass, crops + the exemplar sheet only) + 1 reconciliation. If ff.228-230 is
+more than 2 pages, do ff.228 first and stop before a page that would cross 80% of cap. If the passes split > 0.1, stop after reconciliation
+(sorter next). Write "## D1-BAL170" in NOTES.md, Remaining gaps / Escalation, gaps_check.py.
