@@ -682,3 +682,51 @@ inv. 980 10 Feb), and neither is R1469. Cheapest next: test R1469 as an *incomin
 
 **Requests:** www.nationaalarchief.nl 1 (item page 1.02.20/980, HTTP 200); service.archief.nl 16 (IIIF, 12 openings at
 1000 px + 4 region crops, all HTTP 200, >= 1.9 s apart, one at a time). Subagent calls: 0.
+
+## R10-ROELL10 (6 Oct 2026): NA 1.02.20 inv. 990, Van Dedem's letters to Testa, January-March 1809
+
+Worker R10-ROELL10 (account 2, for LANE LANE-RUN10-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run10-jobs.md`,
+07:40-07:44 UTC by `date -u`. Page images read by eye (IIIF openings at 800-1000 px; the scan 2 header at a 1400 px crop), no
+subagent, no decoding. Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0 (no reading). Per-scan log:
+`na10220/inv990_scans.tsv`; IIIF info URLs for all 83 scans: `na10220/inv990_iiif_info_urls.json`.
+
+**What inv. 990 is.** Item page `www.nationaalarchief.nl/onderzoeken/archief/1.02.20/invnr/990`, `availability: DIGITALIZED`,
+83 scans, "Brieven van F.G. van Dedem van de Gelder, te Boekarest, Wenen, Den Haag en Amsterdam." Wrapper (scan 1): "Lettres de
+S.E. Mr le Baron van Dedem van de Gelder ... Ambassadeur de S.M. le Roi de Hollande près la Sublime Porte Ottomane, à Amsterdam,
+à Mr Gaspard Testa Chargé d'Affaires ...". The originals as Testa received them, each docketed by Testa "Reçu le ..., rép. le ...".
+
+**The January-March 1809 run (scans 1-15, all read).**
+- Bucharest 17 Jan 1809 (scans 2-4; day read as 17, possibly 13), "Reçu le 2 févr. 1809, rép. le 10 dito".
+- Bucharest 21 Jan 1809 (scan 5), "Reçu le 2 févr. 1809 par Giustiniani, rép. le 10 dito".
+- "Duplicata" of 17 Jan 1809 (scans 6-8), same docket: Van Dedem sent duplicates by a second route, in clear.
+- Bucharest 29 Jan 1809 with a P.S. "Bucharest den 31 January 1809" (scans 9-11), "Reçu le 16 févr. 1809, rép. le 25 dito"; a long
+  passage and the P.S. are in Dutch (the same switch into Dutch for private matter that R10-ROELL9 saw in inv. 980).
+- Scans 11 right to 14 left: enclosures, letters from Neuchâtel of Nov-Dec 1808 to Van Dedem ("Votre Excellence") passed on to Testa.
+- **Next Van Dedem letter: Vienne 3 Mars 1809** (scans 14 right-15), "Reçu le 29 Mars, rép. le 8 Avril".
+So **Van Dedem wrote Testa nothing between 31 Jan and 3 Mar 1809 in this file; there is no 9 Feb item.** The dockets close the loop
+with Testa's side (inv. 980, R10-ROELL9): the 17 and 21 Jan letters came on 2 Feb and were answered 10 Feb (R10-ROELL9 read Van Dedem's
+letters of 17 and 21 Jan in that answer), the 29 Jan letter came on 16 Feb and was answered 25 Feb. Inference: Van Dedem was most likely on the road from
+Bucharest to Vienna in February (at Vienna about 1 Mar, inv. 996), which would explain the silence.
+
+**Address form.** Every Van Dedem letter read here opens "Mon cher Testa!" (17, 21, 29 Jan, 3 Mar), not "Monsieur" as this folder's
+Premise check recorded from Bourdeau's description; the "Monsieur" note is not confirmed by the pages. No cipher groups, no blank left
+for cipher, no "en chiffre" note, no key in scans 1-15.
+
+**Compared with R1469 (7 pages, "Monsieur", 9 Feb 1809).** Not in inv. 990: no letter of that date, and the Van Dedem -> Testa letters
+use "Mon cher Testa!", not "Monsieur". With R10-ROELL9 (Testa -> Van Dedem: "Excellence!", no 9 Feb) and R9-ROELL8 (Testa -> Röell:
+no 9 Feb), **neither direction of the Testa / Van Dedem correspondence, nor Testa's despatches to Röell, holds R1469 or a letter of its
+date.** Inference, not established: the address form argues against the Testa-Van Dedem pair altogether, and R1469's date points to
+some other correspondent of the legation or of the ministry; a cipher letter is also unlikely to appear in a file of originals that
+holds only clear letters and clear duplicates.
+
+**Not found.** No cipher, key or clear copy of R1469/R1470 in scans 1-15; no 9 Feb 1809 item in inv. 990. Not read: scans 16-83
+(March 1809 onward, outside the brief's window).
+
+**Verdict line:** `open` -- inv. 990 holds no 9 Feb 1809 letter (Van Dedem to Testa runs 17, 21, 29/31 Jan -> 3 Mar 1809, all clear,
+"Mon cher Testa!"), so R1469 is neither an outgoing nor an incoming letter of the Testa / Van Dedem pair as preserved in 1.02.20
+inv. 980 and 990. Cheapest next: R1469's real NA location (DECODE's "1.02.04 inv. 804" is wrong) is the open question; find which file
+DECODE's images came from (the DECODE record's own image file names or source note, ~USD 1) before searching further files by date;
+other same-date candidates in 1.02.20 are inv. 987 (to A.B.G. van Dedem, copies 1808-10) and 997 (Silliman at Vienna).
+
+**Requests:** www.nationaalarchief.nl 1 (item page 1.02.20/990, HTTP 200); service.archief.nl 18 (IIIF: 12 openings at 1000 px,
+4 at 800 px, 1 info.json, 1 header crop; all HTTP 200, >= 1.9 s apart, one at a time). Subagent calls: 0.
