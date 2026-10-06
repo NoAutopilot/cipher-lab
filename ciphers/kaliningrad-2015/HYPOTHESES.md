@@ -698,3 +698,36 @@ none is "judge cannot decide" in the sense the brief asked about. Each sits near
 above it) than the held-out minimum. Net: the calibration changes the gate's label, not the size of the miss; the four
 GOLD-KAL2/4 Russian units remain negatives in substance (held-out gate), with the real_p05 wording corrected. Rows
 619, 620, 628, 629 above carry the logged real_p05 FAILs and are read with this correction.
+
+## R9-KAL6, paired soft/hard move set and two-stage solve for the S3' unit (6 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run9-jobs.md` "R9-KAL6" (LANE-RUN9, account 2). The different instrument
+A2P4-KAL4 named after 5-ru-soft-s3p-A's control stalled at 0.723 (restarts alone retired, rule 3 third-attempt clause).
+Tool step (this commit, before any scored run): `--param soft=pair|two-stage` in `tools/families/homophonic.py`
+(`homophonic_anneal.soft_pairs`, `anneal(pairs=, pair_prob=)`); offline test `tools/tests/test_homophonic_soft.py`.
+pair = the ordinary anneal plus, with probability 0.3, a move that flips one sign between a hard letter and its soft
+partner (n<->N); two-stage = stage 1 over the 22 base letters (soft folded to hard), then from the top 3 stage-1 keys a
+stage 2 that only decides the softness split under the full 35-letter model. The default path (no soft param) is
+byte-identical to HEAD's (homophonic_alphabet_default_gen.py output compared byte for byte against HEAD's tools;
+that script's committed fixture already differs from HEAD's own output, a pre-existing mismatch not caused here).
+Unscored synthetic check while building (a Gospels window, K 36, one restart per seed 1-6): no soft param 0/6 restarts
+>= 0.9, pair 2/6, two-stage 1/6. Not a gate; it sets the unit order below.
+
+**Pre-registration (committed and pushed before any scored run).**
+- Every unit: `python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic --param profile=target
+  --param alphabet=ru-s3p-soft --param soft=<mode> --cipher ciphers/kaliningrad-2015/ciphertext_signs.tsv --corpus
+  tools/data/ru19_soft/s3p_soft.txt.gz --seeds 5 --restarts 20 --gate 0.9`, control FIRST (family_run order) -- the
+  same N 978, K 36, profile, window corpus and so the corpus's own soft-letter rate (2.97 pct) as 5-ru-soft-s3p-A; only
+  the solver differs. Gate: control mean >= 0.9 over seeds 1-5; a 6th seed only on A2-KAL's pattern (four seeds >= 0.9
+  and one < 0.5), never a 7th; never lowered. Below gate = CONTROL BELOW GATE, untested, not a negative, no target run.
+- Units in order: **6-ru-soft-s3p-A-pair** (soft=pair), then **6-ru-soft-s3p-A-2stage** (soft=two-stage) only if the
+  first leaves the job under 80 pct of cap and box (each unit sized from the measured time of the first control).
+- Judge, for a unit whose control passes: spec judge block `"alphabet": "ru-s3p-soft"`, `"corpora":
+  ["tools/data/ru19_soft/s3p_soft.txt.gz"]` (restored to de20, no alphabet, as this job's last spec edit). Then
+  `--shuffle-target 1` through the identical command (rule 3 ARM-C1), scored by the same judge.
+- Held-out gate: before the target is scored, `python3 tools/judge_plaintext.py --holdout <the 8 A2P4-KAL5 folds of
+  s3p_soft> --N 978 --alphabet ru-s3p-soft` (samples 200, seed 1), log tools/data/ru19_soft/holdout_s3p_N978.log.
+- Reading rules, fixed now: real_p05 gate = "judge cannot decide" on any FAIL (A2P4-KAL5: ru19_soft real_p05 of unknown
+  reliability); on the held-out gate, below the held-out min = FAIL, min to p01 = judge cannot decide, above p01 = PASS
+  on that gate (worth a verifier, nothing more; no reading described, rule 7 re-derivation owed). If the shuffled
+  target scores within 0.1 of the target or higher, the target's number licenses nothing either way.

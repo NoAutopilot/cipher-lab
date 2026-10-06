@@ -219,13 +219,17 @@ def score(model, plain, uni_w, norm="none"):
     return s + uni_w * u
 
 
-def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init=None, norm="none"):
+def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init=None, norm="none", pairs=None, pair_prob=0.0):
     """Incremental annealing: a move re-scores only the n-grams touching the changed sign's positions.
     allowed: optional {sign: "letters"} restricting what a sign may decode to (e.g. vowel-indicator marks to "aeiou").
     init: optional {sign: letter} starting map (e.g. a known key for a different letter, LANE AX2 26 Sept 2026) --
     a non-fixed, non-allowed-restricted sign starts here instead of a corpus-frequency-weighted random letter; the
     anneal is free to move away from it exactly as from any other starting point (this only seeds, never fixes).
-    norm: "none" (default, unchanged) or "nc2" (ngram_term: divide by sum N_c^2, SCORE-NC2 4 Oct 2026)."""
+    norm: "none" (default, unchanged) or "nc2" (ngram_term: divide by sum N_c^2, SCORE-NC2 4 Oct 2026).
+    pairs/pair_prob (R9-KAL6, 6 Oct 2026, kaliningrad-2015): pairs = {letter: partner} (soft_pairs() builds n<->N for a
+    soft-letter alphabet); with probability pair_prob a move flips one sign's letter to its partner as a single move
+    (a sign at a letter with no partner skips the move), otherwise the ordinary random-letter move. Absent (None or
+    pair_prob 0) the RNG stream and every result are byte-for-byte the old ones."""
     o = model.order
     signs = sorted(set(seq))
     letters = list(getattr(model, "alpha", ALPHA))  # a unit model (families/homophonic.py units=syl) carries its own
@@ -258,7 +262,12 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init
         T = t0 * (1 - it / iters) + 0.02
         s = rng.choice(signs)
         old = key[s]
-        new = rng.choice(allowed.get(s, letters))
+        if pairs and pair_prob and rng.random() < pair_prob:
+            new = pairs.get(old, old)
+            if s in allowed and new not in allowed[s]:
+                continue
+        else:
+            new = rng.choice(allowed.get(s, letters))
         if new == old:
             continue
         js = starts[s]
@@ -368,7 +377,12 @@ def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allow
             continue
         s = rng.choice(signs)
         old = key[s]
-        new = rng.choice(allowed.get(s, letters))
+        if pairs and pair_prob and rng.random() < pair_prob:
+            new = pairs.get(old, old)
+            if s in allowed and new not in allowed[s]:
+                continue
+        else:
+            new = rng.choice(allowed.get(s, letters))
         if new == old:
             continue
         js = starts[s]
@@ -394,7 +408,18 @@ def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allow
     return total, bestkey, bestfree
 
 
-def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, noise=0.0, init=None, norm="none"):
+def soft_pairs(alpha):
+    """{letter: partner} for a soft-letter alphabet (ru-s3p-soft, ru-s3-soft): each upper-case letter whose lower case
+    is also in the alphabet is paired with it, both ways (n<->N). R9-KAL6, 6 Oct 2026."""
+    out = {}
+    for c in alpha:
+        if c.isupper() and c.lower() in alpha:
+            out[c], out[c.lower()] = c.lower(), c
+    return out
+
+
+def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, noise=0.0, init=None, norm="none",
+          pairs=None, pair_prob=0.0):
     """noise > 0 (error-tolerant, anneal_noisy): results are (score, key, free) triples instead of (score, key).
     init: optional {sign: letter} starting map, same on every restart (each restart still explores independently
     via its own random moves; only the starting point is shared, not the search).
@@ -407,7 +432,8 @@ def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, no
         if noise:
             results.append(anneal_noisy(seq, model, iters, rng, uni_w, noise, fixed=fixed, allowed=allowed, init=init))
         else:
-            results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed, allowed=allowed, init=init, norm=norm))
+            results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed, allowed=allowed, init=init, norm=norm,
+                                  pairs=pairs, pair_prob=pair_prob))
     results.sort(key=lambda x: -x[0])
     return results
 

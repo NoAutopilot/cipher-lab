@@ -72,7 +72,19 @@ so the control carries the target's crib count and kind. crib_oracle=1 (control-
 target) appends the planted strings to the candidate lists, separating "truth not in the list" from "scoring cannot
 pick it". info carries the chosen cribs, and for a control
 `crib_right`. Must catch: a crib-drag whose wrong pin pulls the anneal off (control recovery falls). Must NOT change:
-crib absent is byte-for-byte the old behaviour. Test: tools/tests/test_homophonic_cribdrag.py."""
+crib absent is byte-for-byte the old behaviour. Test: tools/tests/test_homophonic_cribdrag.py.
+
+soft=pair | two-stage (R9-KAL6, 6 Oct 2026, kaliningrad-2015), with a soft-letter alphabet (alphabet=ru-s3p-soft or
+ru-s3-soft): the different instrument A2P4-KAL4 named after the S3' control stalled at 0.723. pair: the ordinary
+single-stage anneal plus a paired move -- with probability pair_prob (0.3) one sign flips between a hard letter and
+its soft partner (n<->N) as one move (homophonic_anneal.soft_pairs / anneal(pairs=)). two-stage: stage 1 anneals over
+the base alphabet alone (soft letters folded to their hard partners, corpus lower-cased; restarts and iters as usual),
+then from each of the top `top` (3) stage-1 keys stage 2 anneals the softness split only (a sign on a letter with a
+soft partner may take that partner, every other sign fixed; stage2_restarts 4, iters/4) under the full soft-letter
+model; the best stage-2 score wins. The control is unchanged (same window, allotment and soft-letter rate as the
+corpus); only the solver differs. Must catch: a solver that reads the base letters but leaves the rare soft letters
+at their hard partners (or the reverse). Must NOT change: soft absent is byte-for-byte the old behaviour. Test:
+tools/tests/test_homophonic_soft.py."""
 import json
 import math
 import random
@@ -85,7 +97,7 @@ DESCRIPTION = ("homophonic substitution (homophonic_anneal.py, control = make_co
                "--param profile=target matches the target's own sign-count profile; --param noise=p redraws a "
                "share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses "
                "k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... "
-               "anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026; --param alphabet=NAME|CHARS sets the "
+               "anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026; --param soft=pair|two-stage with a soft-letter alphabet, R9-KAL6 6 Oct 2026; --param alphabet=NAME|CHARS sets the "
                "plaintext alphabet, A2P4-KAL4 3 Oct 2026)")
 
 
@@ -527,9 +539,47 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         print("crib=drag:", json.dumps({k: v for k, v in info.items()}, ensure_ascii=False, default=str)[:900])
         info["key"] = key
         return "".join(key[x] for x in seq), sc, info
+    soft = str(params.get("soft", "") or "")
+    if soft:
+        return _solve_soft(seq, model, corpora, seed, restarts, params, soft)
     res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"))
     sc, key = res[0]
     return "".join(key[x] for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res], "key": key}
+
+
+def _solve_soft(seq, model, corpora, seed, restarts, params, soft):
+    """soft=pair | two-stage (R9-KAL6, 6 Oct 2026; see the module docstring)."""
+    alpha = ha.ALPHA
+    pairs = ha.soft_pairs(alpha)
+    if not pairs:
+        raise SystemExit("--param soft= needs a soft-letter alphabet (--param alphabet=ru-s3p-soft or ru-s3-soft)")
+    iters, uw = _p(params, "iters", 40000), _p(params, "uni_weight", 1.0)
+    if soft == "pair":
+        res = ha.solve(seq, model, restarts, iters, seed, uw, pairs=pairs, pair_prob=_p(params, "pair_prob", 0.3))
+        sc, key = res[0]
+        return "".join(key[x] for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res], "key": key}
+    if soft != "two-stage":
+        raise SystemExit(f"--param soft={soft!r}: pair or two-stage")
+    # stage 1: the base (hard) alphabet only, every soft letter read as its hard partner, corpus lower-cased
+    base = "".join(c for c in alpha if not (c.isupper() and c.lower() in alpha))
+    ha.set_alphabet(base)
+    try:
+        m1 = ha.Model([c.lower() for c in corpora], _p(params, "order", 3))
+        r1 = ha.solve(seq, m1, restarts, iters, seed, uw)
+    finally:
+        ha.set_alphabet(alpha)
+    # stage 2: from each of the top `top` stage-1 keys, a sign whose letter has a soft partner may move only to that
+    # partner; every other sign is fixed; scored under the full soft-letter model
+    top, r2n = int(_p(params, "top", 3)), int(_p(params, "stage2_restarts", 4))
+    best = None
+    for k1 in [k for _, k in r1[:top]]:
+        fixed = {s: v for s, v in k1.items() if v not in pairs}
+        allowed = {s: v + pairs[v] for s, v in k1.items() if v in pairs}
+        r2 = ha.solve(seq, model, r2n, iters // 4, seed, uw, fixed=fixed, allowed=allowed)
+        if best is None or r2[0][0] > best[0]:
+            best = r2[0]
+    sc, key = best
+    return "".join(key[x] for x in seq), sc, {"stage1_scores": [round(r[0], 1) for r in r1], "key": key}
 
 
 def score_recovery(plain, truth):
