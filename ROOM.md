@@ -10092,3 +10092,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 21:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 21:10 UTC: spawned 0 (), queued left 0
 2026-10-06 21:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 21:34 UTC: spawned 0, queued left 0 (autofill: default lane < 12 h); standby: account-3 orchestrator last commit 21:31 UTC, no takeover
 2026-10-06 21:42 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 21:42: spawned 0, queued left 0 (autofill: default lane < 12 h)
+2026-10-06 22:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 22:10 UTC: spawned 1 (DEFAULT-account-2-20261006-2209 session_01DfJ7KB48PGfFxMBC3v3gpk, Opus 5.5), queued left 0
