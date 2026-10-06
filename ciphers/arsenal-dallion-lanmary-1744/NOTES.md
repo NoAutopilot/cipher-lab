@@ -85,3 +85,30 @@ Waits on a BnF Arsenal reading-room visit or reproduction enquiry for Ms-4764 an
 - Full-text search a Recueil des instructions volume for Sweden 1744-46 on archive.org/Google Books -- the printed-edition leg the check-solved sweep flagged as unrun. S, tools/print_check.py.
 - Re-read Ms-11639's finding-aid text to settle whether it and Ms-4764 describe the same correspondence from two registers (the open caveat in NOTES's own verdict) -- a closer catalogue read, no image needed. S.
 - Run OpenAlex/Semantic Scholar (keys already set) for "d'Allion"/"Lanmary" Sweden 1744-46 diplomatic scholarship, not yet tried beyond plain web search. S, tools/print_check.py.
+
+## Edition search: Recueil des instructions, Sweden/Russia legs (D2-ARSDAL, 6 Oct 2026, 00:00-00:08 UTC by date -u)
+
+Search results only (rule 10); no novelty class. Hosts: archive.org advancedsearch/metadata/download 14 requests, Google Books API
+(`country=US`, key) 9 requests, be-api fts 1; no blocks.
+
+- **IA, Recueil des instructions (Commission des archives diplomatiques, 1884-90).** The Sweden volume (t. II, Geffroy, 1885) was not found by
+  title/creator queries on IA (0 hits). `_djvu.txt` of `recueildesinstr02diplgoog`, `recueildesinstr00diplgoog`, `recueildesinstr02frangoog` and
+  `recueildesinstr03diplgoog` (volumes labelled 7, 14, 3/30, 3; none of them Sweden) grepped for Lanmary/Allion/Dallion: 0 real hits (OCR noise only).
+- **IA, `sc_0000914511_00000001011417` (Recueil t. VIII, Russie 1, to 1748, 1890), full text read by grep:** the printed series carries
+  *Instruction* to d'Usson Dallion (Versailles, 21 June 1742) and *Instructions à M. d'Alion, 1744* (Châlons-sur-Marne, 1 Aug 1744; "deuxième mission
+  1744-1747", Russia), with the editor's notes naming Lanmary as French ambassador at Stockholm, and a passage on the tables de chiffre sent to the
+  minister ("articles de ses lettres qu'il pourroit être dangereux de confier en clair"). Edition p. 467-468 range; also notes on La Chétardie's cipher
+  being read by the Russians. So the Russian leg of the same circle is in print as *instructions*; no printed text of a Lanmary-d'Alion cipher
+  dispatch (incl. Stockholm 9/20 Aug 1745) found in it.
+- **Google Books API:** Sweden volume exists in full view (ids `BuoJAAAAIAAJ`, `hGWs91_CP1AC`, `rWTEx4RWum4C`, `kWJGVsgSpgIC`, `qgbSAAAAMAAJ`, `TxQjZ8_2ow0C`
+  is a 1888 volume with a Lanmary/Alion footnote). The API only returns a snippet per query and cannot search inside one volume;
+  books.google.com page/text view is blocked from the cloud (host table). Therefore the Sweden volume's text was NOT read for Alion/chiffre/1745:
+  untested, not a negative.
+- Other print leads from snippets (not opened): Zevort, *Le marquis d'Argenson et le Ministère des affaires étrangères* (1880; `XisxAQAAIAAJ`, d'Alion,
+  Lanmary); Karge, *Die russisch-österreichische Allianz von 1746* (1887; `hLSB-hSQwqEC`, "Alion, Lanmary" Woronzow-Archiv);
+  Mézin, *Correspondance des consuls de France à Saint-Pétersbourg 1713-1792* (2009; `emtFAQAAIAAJ`, NO_PAGES): a calendar entry "Lanmary dès le départ
+  de d'Alion ... Lettre chiffrée" (Jan 1748, F° 356), i.e. a modern calendar that summarises ciphered Lanmary/Alion letters. Not read beyond the snippet.
+- Not found: any hit naming Ms-4764/Ms-11639 or the 9/20 Aug 1745 dépêche chiffrée in the series text read.
+
+Next (S, ~USD 1): read Recueil t. II Suède intro/notes on a loan-free full view (Google Books ids above via a person, or IA if a copy is uploaded) for
+Alion; locate Mézin 2009 entries 1744-47 for the Arsenal shelfmarks (LOCAL-QUEUE row if only a person can open it).
