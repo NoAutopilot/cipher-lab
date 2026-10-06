@@ -635,11 +635,11 @@ BLA188_p4_L08	7	660	H		agree	la
 BLA188_p4_L08	8	140	H		agree	bonne
 BLA188_p4_L08	9	1150	H		agree	vo
 BLA188_p4_L09	1	658	H		agree	l
-BLA188_p4_L09	2	596	H		agree	on
+BLA188_p4_L09	2	796	H		image:R8-HUNT native crop 6 Oct 2026: 596 -> 796 (on); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed)	on
 BLA188_p4_L09	3	1102	H		agree	te
 BLA188_p4_L09	4	289	H		agree	du
 BLA188_p4_L09	5	1006	H		agree	roy
-BLA188_p4_L09	6	251	H		agree	d
+BLA188_p4_L09	6	271	H		image:R8-HUNT native crop 6 Oct 2026: 251 -> 271 (d'); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); middle glyph; reported, not counted in the gate	d
 BLA188_p4_L09	7	59	M	B:39	undecided	angleterre
 BLA188_p4_L09	8	38	H		agree	au
 BLA188_p4_L09	9	535	H		agree	moins
@@ -657,7 +657,7 @@ BLA188_p4_L11	1	1014	H		agree	sa
 BLA188_p4_L11	2	709	H		agree	majeste
 BLA188_p4_L11	3	184	H		agree	catholique
 BLA188_p4_L11	4	922	H		agree	qu
-BLA188_p4_L11	5	596	H		agree	on
+BLA188_p4_L11	5	796	H		image:R8-HUNT native crop 6 Oct 2026: 596 -> 796 (on); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); middle 9 overwritten, still 9	on
 BLA188_p4_L11	6	59	H		agree	agit
 BLA188_p4_L11	7	278	H		agree	de
 BLA188_p4_L11	8	140	H		agree	bonne
@@ -684,11 +684,11 @@ BLA188_p4_L14	3	369	H		agree	e
 BLA188_p4_L14	4	851	H		agree	part
 BLA188_p4_L14	5	493	H		agree	fournir
 BLA188_p4_L14	6	662	H		agree	les
-BLA188_p4_L14	7	542	H		agree	moyen
+BLA188_p4_L14	7	742	H		image:R8-HUNT native crop 6 Oct 2026: 542 -> 742 (moyen); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); descends below the 4 and 2	moyen
 BLA188_p4_L14	8	1013	H		agree	s
 BLA188_p4_L15	1	378	M	B:-	gap	ch
 BLA188_p4_L15	2	661	H		agree	le
-BLA188_p4_L15	3	951	H		agree	rendre
+BLA188_p4_L15	3	971	H		image:R8-HUNT native crop 6 Oct 2026: 951 -> 971 (rendre); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); descends below the 9 and 1	rendre
 BLA188_p4_L15	4	290	H		agree	dur
 BLA188_p4_L15	5	19	H		agree	ab
 BLA188_p4_L15	6	661	H		agree	le
@@ -713,7 +713,7 @@ BLA188_p4_L17	7	1006	H		agree	roy
 BLA188_p4_L17	8	184	H		agree	catholique
 BLA188_p4_L17	9	910	H		agree	puisque
 BLA188_p4_L18	1	415	H		agree	ensuite
-BLA188_p4_L18	2	596	H		agree	on
+BLA188_p4_L18	2	796	H		image:R8-HUNT native crop 6 Oct 2026: 596 -> 796 (on); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); contrast flagged 5 of 576 two groups on	on
 BLA188_p4_L18	3	668	M	B:665	undecided	eustruck
 BLA188_p4_L18	4	576	H		agree	il
 BLA188_p4_L18	5	461	H		agree	fait
@@ -724,7 +724,7 @@ BLA188_p4_L18	9	941	H		agree	r
 BLA188_p5_L01	1	1013	H		agree	s
 BLA188_p5_L01	2	18	H		agree	a
 BLA188_p5_L01	3	164	H		agree	ch
-BLA188_p5_L01	4	385	H	589	key-consistent	et
+BLA188_p5_L01	4	387	H	589	image:R8-HUNT native crop 6 Oct 2026: 385 -> 387 (et); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed)	et
 BLA188_p5_L01	5	384	H		agree	en
 BLA188_p5_L01	6	660	H		agree	la
 BLA188_p5_L01	7	890	H		agree	pro
@@ -812,19 +812,19 @@ BLA188_p5_L11	5	1293	M		agree-flagged	l'
 BLA188_p5_L11	6	659	H		agree	l'
 BLA188_p5_L11	7	54	H	51	key-consistent	affection
 BLA188_p5_L11	8	926	H		agree	que
-BLA188_p5_L11	9	935	M	B:939	undecided	monsieur
+BLA188_p5_L11	9	935	M	B:939	image:R8-HUNT native crop 6 Oct 2026: the swap candidate (first digit 9 -> 7 = 735 monsieur) fails: the first digit is a plain looped 9; the third digit is the 7-form, so the group reads 937 (key: quoyque n=1), which does not fit the gloss 'monsieur'; not settled, stays M (gloss/key conflict logged)	monsieur
 BLA188_p5_L12	1	822	H		agree	ra
 BLA188_p5_L12	2	1109	H	409	key-consistent	li
 BLA188_p5_L12	3	506	H		agree	g
 BLA188_p5_L12	4	758	H		agree	no
 BLA188_p5_L12	5	18	H		agree	a
 BLA188_p5_L12	6	835	H		agree	pour
-BLA188_p5_L12	7	502	H		agree	moi
+BLA188_p5_L12	7	702	H		image:R8-HUNT native crop 6 Oct 2026: 502 -> 702 (moi); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); contrast flagged 5 of 835 on the same line	moi
 BLA188_p5_L12	8	1013	M	B:1018	undecided	fer
 BLA188_p5_L13	1	792	H		agree	oit
 BLA188_p5_L13	2	1185	H		agree	utile
 BLA188_p5_L13	3	1020	H		agree	si
-BLA188_p5_L13	4	396	M	B:796	image:A4-RFHUN native crop 5 Oct 2026: gloss on; first glyph unlike the plain 3 of 1013 on the same line; 796 (on, n=10) likely, not certain	on
+BLA188_p5_L13	4	796	H	B:796	image:R8-HUNT native crop 6 Oct 2026: 396 -> 796 (on); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); replaces A4-RFHUN M	on
 BLA188_p5_L13	5	1013	H		agree	s'explique
 BLA188_p5_L13	6	445	M	B:945	undecided	oit
 BLA188_p5_L13	7	792	H		agree	davantage
@@ -1369,7 +1369,7 @@ BLA191_p5_L10	10	18	H		image:line eye-checked clear
 BLA191_p5_L10	11	659	H		image:line eye-checked clear	
 BLA191_p5_L11	1	46	H		image:line eye-checked clear	
 BLA191_p5_L11	2	836	H		image:line eye-checked clear	
-BLA191_p5_L11	3	385	H		image:line eye-checked clear	
+BLA191_p5_L11	3	385	M		image:R8-HUNT native crop 6 Oct 2026: third digit is this (BLA191) hand's s-shaped 5, same as the 5s of 575/585 on the line and unlike its ')' 7 in 387 at pos 11; stays 385, but 385's glosses split es 6 / et 4, so M (rule 4: not settled by majority)	
 BLA191_p5_L11	4	575	H		image:line eye-checked clear	
 BLA191_p5_L11	5	585	H		image:line eye-checked clear	
 BLA191_p5_L11	6	758	H		image:line eye-checked clear	
@@ -1452,7 +1452,7 @@ BLA194_p1_L07	6	475	H		agree	faire
 BLA194_p1_L07	7	278	H	298	key-consistent	de
 BLA194_p1_L07	8	1176	H		agree	votre
 BLA194_p1_L08	1	258	H		agree	cotes
-BLA194_p1_L08	2	385	H	389	key-consistent	et
+BLA194_p1_L08	2	387	H	389	image:R8-HUNT native crop 6 Oct 2026: 385 -> 387 (et); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); same glyph as the 7 of 871 on the same line	et
 BLA194_p1_L08	3	1069	H		agree	soutenir
 BLA194_p1_L08	4	387	H		agree	et
 BLA194_p1_L08	5	891	H		agree	perfection
@@ -1469,11 +1469,11 @@ BLA194_p1_L09	7	433	H		agree	espera
 BLA194_p1_L10	1	926	H		agree	que
 BLA194_p1_L10	2	655	M		agree-flagged	l'arrondissement
 BLA194_p1_L10	3	96	H		agree	
-BLA194_p1_L10	4	1013	M		image:A4-RFHUN native crop 5 Oct 2026: gloss se; final/first glyph is the descending z-shaped form this hand also uses where the key needs 7 (796 on, 1017 se, 387 et); 3/5/7 not settled by eye	se
+BLA194_p1_L10	4	1017	H		image:R8-HUNT native crop 6 Oct 2026: 1013 -> 1017 (se); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); replaces A4-RFHUN M	se
 BLA194_p1_L10	5	942	H		agree	ve
 BLA194_p1_L10	6	109	H		agree	aussitot
 BLA194_p1_L10	7	991	H		agree	faite
-BLA194_p1_L11	1	385	H	389	key-consistent	et
+BLA194_p1_L11	1	387	H	389	image:R8-HUNT native crop 6 Oct 2026: 385 -> 387 (et); swapped glyph is this hand's descending 7-form (hooked/flagged top, long descender curving left below the line, no lower bowl), census/PREREG-R8.md rule (R7B-HUNT gate passed); contrast the flagged 5s of 555 beside it	et
 BLA194_p1_L11	2	555	H		agree	heureux
 BLA194_p1_L11	3	1290	H		agree	
 BLA194_p1_L11	4	704	H		agree	mon

@@ -1,4 +1,4 @@
-# PREREG -- R8-HUNT, census completion (6 Oct 2026, written 03:5x UTC by date -u, before any R8 crop is fetched)
+# PREREG -- R8-HUNT, census completion (6 Oct 2026, written 03:48 UTC by date -u, before any R8 crop is fetched)
 
 Rule applied unchanged from census/PREREG.md (R7B-HUNT gate passed: T 11/11 Z, K 1/25 Z): on BLA188 p4-p6 and BLA194 p1 a
 digit of the descending z-form (short top bar, long descender curving left, no lower bowl) is this hand's 7.

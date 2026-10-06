@@ -43,3 +43,17 @@ S	BLA194_p1_L06	2	278	de	7-form	-
 S	BLA194_p1_L07	7	278	de	7-form	-
 S	BLA194_p1_L07	8	1176	votre	7-form	-
 S	BLA194_p1_L06	6	907	proposition	7-form	-
+T	BLA188_p4_L09	2	596	on	Z	796 (R8)
+T	BLA188_p4_L11	5	596	on	Z	796 (R8)
+T	BLA188_p4_L14	7	542	moyen	Z	742 (R8)
+T	BLA188_p4_L15	3	951	rendre	Z	971 (R8)
+T	BLA188_p4_L18	2	596	on	Z	796 (R8)
+T	BLA188_p5_L01	4	385	et	Z	387 (R8)
+T	BLA188_p5_L11	9	935	monsieur	9 plain (swap fails); 3rd digit Z	937 M (R8)
+T	BLA188_p5_L12	7	502	moi	Z	702 (R8)
+T	BLA188_p5_L13	4	396	on	Z	796 (R8)
+T	BLA194_p1_L08	2	385	et	Z	387 (R8)
+T	BLA194_p1_L10	4	1013	se	Z	1017 (R8)
+T	BLA194_p1_L11	1	385	et	Z	387 (R8)
+A	BLA188_p4_L09	6	251	d	Z	271 (R8; reported, not counted)
+O	BLA191_p5_L11	3	385	es/et	BLA191 hand s-form 5 (= 5s of 575/585; its 7 is ')')	385 M (R8)
