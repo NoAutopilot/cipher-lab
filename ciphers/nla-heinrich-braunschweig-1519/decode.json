@@ -1,0 +1,53 @@
+{
+ "note": "R9-NLATX 6 Oct 2026: Grein's 19th-c. archival key sheets applied to the reconciled numeral groups of NLA BU L 1 Nr. 548 (1519) and Nr. 562 (1522). Clear text of the letters not transcribed.",
+ "jobs": [
+  {
+   "ciphertext": "ciphertext_548.tsv",
+   "key": "key_548.tsv",
+   "reading": "reading_548.txt",
+   "tokens": "reading_tokens_548.tsv"
+  },
+  {
+   "ciphertext": "ciphertext_562.tsv",
+   "key": "key_562.tsv",
+   "reading": "reading_562.txt",
+   "tokens": "reading_tokens_562.tsv"
+  }
+ ],
+ "defaults": {
+  "format": "tsv",
+  "style": "concat",
+  "nonsign": [
+   "/"
+  ],
+  "word_sep": "/",
+  "uncertain_conf": [
+   "M"
+  ],
+  "header": [
+   "# Numeral groups of {name} read with the archive's own key sheet (Grein); one cipher word per '/'-group; {total} signs, grades {grades_sorted}."
+  ],
+  "token_columns": [
+   [
+    "line",
+    "line"
+   ],
+   [
+    "pos",
+    "pos"
+   ],
+   [
+    "sign",
+    "raw"
+   ],
+   [
+    "value",
+    "value"
+   ],
+   [
+    "grade",
+    "grade"
+   ]
+  ]
+ }
+}

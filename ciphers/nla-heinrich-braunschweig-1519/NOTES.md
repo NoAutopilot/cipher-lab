@@ -407,3 +407,57 @@ Wieden p. 112, Siebert 1968/71, Jahrbuch tables) stay with the owner's desk.
 
 Requests: www.googleapis.com 4 (3 non-JSON bodies, 1 answered 200), be-api.us.archive.org 2 (1 HTTP 400), api.openalex.org 1,
 www.deutsche-biographie.de 1 (WebFetch), WebSearch 6.
+
+## R9-NLATX: numeral groups transcribed, Grein's sheet keys applied and diffed (6 Oct 2026, account 2, LANE-RUN9)
+
+Run 05:37-05:43 UTC by `date -u`. The step named by R8-NLA2 / R9-NLACS. Images on disk only; no network requests.
+
+**Crop step (pasted):**
+`python3 tools/iiif_lines.py --image images/nla_bu_l1_548_aufn_0003.jpg --out images/crops --region 1860,1010,1010,900 --prefix n548 --centres 115,178,245,312,378,440,505,570,640,715,785,855 --debug`
+(auto-detection split the "Ersthes wollen ... 5.2.6.2" line across two bands, so centres were set by eye from the overlay) and
+`python3 tools/iiif_lines.py --image images/nla_bu_l1_562_aufn_0003.jpg --out images/crops --region 1580,1200,1300,590 --prefix n562 --debug`
+(11 lines, auto). Crops: `images/crops/n548_L01-L12.jpg`, `n562_L01-L11.jpg`, debug overlays beside them.
+
+**Passes:** one blind Sonnet pass per letter on the line crops only (no key, no word list, no NOTES), then one reconciliation by
+this worker from the crops (enlarged). The reconciler had seen the key sheets, so the reconciliation is **not** blind: every number
+where it overrode the blind pass is graded M, not H.
+
+**Files:** `ciphertext_548.tsv`, `ciphertext_562.tsv` (numeral groups only, `group` column = one '/'-terminated cipher word; clear
+text of the letters not transcribed), `key_548.tsv`, `key_562.tsv` (the two Grein tables as written; 562's sheet corrects 4->7 for
+c and 14->17 for o, and the corrected values are the ones the letter's glyphs bear out), `decode.json` ->
+`reading_548.txt`, `reading_562.txt`, `reading_tokens_*.tsv` via `tools/decode_key.py ciphers/nla-heinrich-braunschweig-1519
+[--check]`; `grein_words.tsv` (the sheets' word lists, transcribed) and `compare_grein.py [--check]` -> `grein_diff.tsv`.
+Both `--check`s exit 0.
+
+**Glyph classes (the main transcription finding):** the scribes' 4 is a looped "x"-like form, 7 is an inverted V "Λ", 3 is a
+"ʒ"-like form, 5 a long-s form. The blind pass read loop-4 as 8, ʒ-3 as 5 or 8, and "1Λ" (17) as 14 or "1.7"; it also missed one
+short group ("4.1" after "5.2.6.2/"). These are systematic class confusions, not scattered errors.
+
+**Counts (rule 4):**
+
+| Letter | Groups | Number tokens | H | M | Words = Grein's list | Words differ | Words read with no M token |
+|---|---|---|---|---|---|---|---|
+| Nr. 548 (1519, to Countess Anna) | 18 | 101 | 84 | 17 | 18 | 0 | 7 |
+| Nr. 562 (1522, Trier, Schepper) | 12 | 89 | 83 | 6 | 11 | 1 | 7 |
+
+H = read from the archive's own period key sheet with the number agreed by the blind pass and the reconciliation; M = number
+settled only by the (key-aware) reconciliation. No C, S or I tokens. The one difference: 562 group 8 is written `16.9.15.21` =
+**lant** (21 = t, clear on the crop); Grein's list gives "land" (a normalized spelling, or a slip). Every other word matches his
+list, in his order, with u/v folded (548's "uortrechte" = his "Vortrechte"; 562's "lvden" = his "luden"). Nr. 548's 18 groups are
+his list 1 ("in dem Brief an die Gräfin Anna") in order -- so aufn_0003 is that letter, and his list 2 (to "den Drosten") has no
+letter among the four filmed images, as R8-NLA2 noted.
+
+Raw blind pass alone, keyed with the sheets (no reconciliation): 548 gives 7 of 18 words exactly (rete, selbest, herren, euch, zu,
+vortrechte, zu); 562 gives 7 of 12 (regimente, regimentes x2, reden, lant, landen, luden), the rest off only by the 4/8, 3/5 and
+17/14 glyph classes above. Not a gate (none was pre-registered: this is a key-apply check, not a solver run), reported as context.
+
+Not done: judge_plaintext (no spec for this target and no Low German corpus in tools/data -- none run); the clear text of either
+letter (the depth question, rule 4a, is the verifier's); a struck sign before group 3 of 548 ("Λ"-like, deleted) is excluded and noted
+here. Pre-1860 note on dating left as R9-NLACS had it.
+
+Status line unchanged (`open`): the in-line cipher words of both filmed letters now read from the period key with counts on disk;
+whether that makes the target `partial` or `found-solved` (Grein's 1858/1860 sheets in the same file) is for the orchestrator and a
+verifier (N-class, depth, key source `period`). Flagged in ROOM for a verifier.
+
+Next (named, not run): transcribe the clear Low German text of 548 f.269r and 562 f.56 so the cipher words can be read in context
+(~2 Sonnet passes per letter on the same crops' full lines + 1 reconciliation, ~6); then the verifier.

@@ -1,0 +1,11 @@
+# Numeral groups of ciphertext_548.tsv read with the archive's own key sheet (Grein); one cipher word per '/'-group; 101 signs, grades H 84, M 17.
+L01 | rete in 
+L02 | fulmechtig 
+L03 | sel
+L04 | best kommen 
+L07 | kommen 
+L08 | herren naheit 
+L09 | bliben 
+L10 | beslisse mit euch 
+L11 | allen zu handelen 
+L12 | uortrechte zu machen 

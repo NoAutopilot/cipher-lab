@@ -1,0 +1,10 @@
+# Numeral groups of ciphertext_562.tsv read with the archive's own key sheet (Grein); one cipher word per '/'-group; 89 signs, grades H 83, M 6.
+M | regimente 
+L02 | so
+L03 | nen 
+L04 | sone vorlatinge regi
+L05 | mentes reden 
+L06 | landtschop 
+L08 | lant 
+L10 | vorlassinge regimentes 
+L11 | landen lvden 
