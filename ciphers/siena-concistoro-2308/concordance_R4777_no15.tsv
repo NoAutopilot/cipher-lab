@@ -1,0 +1,33 @@
+# R10-SIENA4777 shape concordance, no. 15 sign (Bourdeau no15v legend) -> R4777 key cell and its value. Fixed 6 Oct 2026 10:05 UTC (date -u) BEFORE any scoring,
+# from native crops of R4777 (IMG_R4777_I27882_P.jpg, 2248x4000, sha1 2799223dc1d3...; alphabet left/right, Doppie+Nulle left/right) and no. 15 P2 (sha1 71b6b062..., matches images/manifest.json).
+# set: P = shape plainly the same sign; V = P plus looser likenesses (V rows replace P rows for the same sign). NULL = Nulle row. Nomenclator not used.
+# A no.15 sign not listed has no counterpart on R4777 (U, LAM, LV, MM, DOT, ST, STB, RHO, P, P+, OS, OI, DF, K, LD, SW, Z, 7, STAR, plain small letters).
+no15_sign	set	value	key_cell	likeness
+XT	P	tt	Doppie tt: x with a dot above and a foot bar	x barred at top/foot vs x with foot bar and dot above
+TH	P	z	z col.: theta (oval with a bar)	same sign
+8	P	d	d col.: 8	same sign
+DIV	P	e	e col., row 2: dot-bar-dot (division sign, drawn as two small o over a bar)	same family
+OL	P	o	o col., row 2: small o with a horizontal tail	same sign
+Q+	P	m	m col.: q with a bar across the descender	same sign
+4	P	b	b col.: 4-like sign	same sign
+A	P	NULL	Nulle row, 5th: A with an extended crossbar	same letter form
+PSI	P	NULL	Nulle row, 2nd: fork on a stem	same sign
+V	P	NULL	Nulle row, 12th: V	same letter form
+AMP	P	NULL	Nulle row, 1st: 8-loop with a small o attached	same composite
+TH	V	i	i col., row 3: theta with the bar run out to the left	V replaces P's TH=z
+R	V	x	x col.: small R with a long right leg	R vs small R (the Nulle row's R-with-f-tail is the other candidate)
+H	V	nn	Doppie nn: H with an added stroke	H with or without the extra stroke
+1	V	qq	Doppie qq: flag on a stem (filled)	hooked flag vs filled flag
+TO	V	c	c col.: bold T	T without the circle and foot loop
+TB	V	c	c col.: bold T	T without the blob on the stem
+OO	V	q	q col.: two circles joined by a bar	dumbbell vs infinity
+OO:	V	q	q col.: two circles joined by a bar	dumbbell vs infinity with dots
+a	V	a	a col., row 1: cursive a-like loop with tail	cursive a
+M3	V	dd	Doppie dd: m with a mark above	bar over three legs vs marked m
+PHI	V	o	o col., row 3: circle under a flat-topped stem	phi-like
+TRI	V	a	A col., row 2: triangle (point up)	no.15's points down, with a bar
+Y	V	r	r col.: y with a dot above	Y vs dotted y
+GX	V	rr	Doppie rr: g-like loop with curled tail	g/9 loop with crossbar vs without
+O2	V	e	e col., row 1: circle round an 8	bullseye vs circled 8 (not concentric)
+XH	V	tt	Doppie tt	x barred through the middle
+D	V	NULL	Nulle row, 4th: reversed-d/9-like loop	delta-loop vs reversed d

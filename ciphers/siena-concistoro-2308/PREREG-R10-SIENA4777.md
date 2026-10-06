@@ -1,4 +1,4 @@
-# PREREG R10-SIENA4777 -- no. 15 against key R4777 through a shape concordance (6 Oct 2026, written 10:0x UTC by date -u, pushed before the R4777 image was fetched or viewed this session)
+# PREREG R10-SIENA4777 -- no. 15 against key R4777 through a shape concordance (6 Oct 2026, written 10:02 UTC by date -u, pushed before the R4777 image was fetched or viewed this session)
 
 Question: is DECODE R4777 (letter alphabet + Doppie + Nulle; nomenclator Granvelle, Cobos, Don Pedro de Toledo, Card. Farnese,
 Marchese del Vasto, Duca d'Amalfi, Principe d'Oria; R10-SIENA15 "partial overlap" 2 of 4) the key of no. 15 (R4803, Mario Bandini,
