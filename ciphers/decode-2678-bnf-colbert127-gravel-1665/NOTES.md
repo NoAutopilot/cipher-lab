@@ -1,6 +1,6 @@
 # The abbé (R.) de Gravel to Jean-Baptiste Colbert, Ratisbon, 29 Jan 1665, BnF Mélanges de Colbert 127, f.349-350 (canvases 356-357)
 
-**Status: open** (not attacked; already someone else's active work-in-progress — see below).
+**Status: partial** (R9-DEC2678C, 6 Oct 2026: Tomokiyo's published Colbert-Gravel 1672 key passes a pre-registered gate on P2/P3, 11 of 15 tokens H; see the section of that date. Earlier: not attacked; Bourdeau's work-in-progress, see below).
 Sender correction (R8-G2678, 6 Oct 2026): the letter is **signed "Guibert", maître des courriers d'Allemagne** (canvas 355, signature crop `images/c355_signature.jpg`), docketed "M. Guibert"; not the abbé de Gravel as DECODE, Bourdeau and this folder's title say. See the section of that date. **Reversed by R9-DEC2678 (6 Oct 2026), see the section of that date:** the Guibert signature is on f.348r, the end of Guibert's own letter (ff.347-348); the cipher letter ff.349-350 closes on f.349v (canvas 357) "a Ratisbone ce 29 Janvier 166[5]" and is signed "[R.] de Gravel[le]", as DECODE, Bourdeau and the BnF sommaire (Fol. 349, l'abbé de Gravel) say.
 Premise check (R9-DEC2678, 6 Oct 2026): the brief asked for the title to be changed to Guibert; the image says Gravel, so the title keeps Gravel (now read from the leaf, not only the catalogue), with folios and canvases corrected. The **folder name keeps the old catalogue label** (`...-gravel-1665`), which turns out to be right. No status.json row or spec exists for this folder (checked 6 Oct 2026), so nothing else was edited.
 Clément, *Lettres, instructions et mémoires de Colbert* (IA items colbert-lettres-instructions-et-memoires-de-colbert-v-1 to v-7), full-text search (be-api) for "Gravel", "Frichmann", "rixdales" and "Ratisbonne" run by this worker (GF-A2B-1, 3 Oct 2026): Gravel hits only Colbert's own letters to the abbé de Gravel at Mainz (1669-70, t. II pt 2, t. V) and editorial notes; no Gravel letter of 29 Jan 1665 and none of the enciphered pension names.
@@ -362,3 +362,80 @@ would enlarge the key pool; (3) AE CP Allemagne 194 Jan 1665: owner-side reprodu
 Requests this job: gallica.bnf.fr 18 (manifests 2; canvas images 107, 108, 270, 340, 393, 404, 420, 422, 424, 432, 440, 448,
 453 and stamp crops of 393, 424 = 15; SRU 1), mostly >= 2 s apart, all HTTP 200; googleapis.com 6 (key, country=US);
 archive.org 1 (advancedsearch). No other host.
+
+## The 1672 Gravel key tested on R2678 (R9-DEC2678C, 6 Oct 2026)
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-run9-jobs.md` "R9-DEC2678C" (R9-DEC2678B's cheapest next). Worker started 06:42 UTC.
+
+**Key (step 1).** Tomokiyo's own reconstruction of the Colbert-Gravel cipher of 1672 (cryptiana.web.fc2.com/code/louisxiv0.htm,
+"Colbert-Gravel Cipher (1672) (DE=23_)", built by him from the period interlinear decipherment of Mél. Colbert 159 f.102; credit
+Tomokiyo, rule 8) was on his page as an image. It was fetched once and snapshotted unmodified at
+`sources/cryptiana/keys/img/louisxiv_0gravel1672.png`. It was then transcribed cell by cell into `key_gravel1672.tsv` (code + mark:
+`^` overline, `_` underline, `'` prime): 23 alphabet cells, 78 syllable cells (Tomokiyo's bracketed, inferred ones graded M) and 18
+nomenclature cells. Because the published table already existed, f.102's interlinear pairs were not re-read and
+`tools/interlinear_align.py` was not run. The brief's "held-out f.102 line" control was not possible either: that control needs a
+key rebuilt without the held-out line, and Tomokiyo's table was built from the whole leaf. It was replaced by a matched synthetic
+power control (same key, design, N and language; below). Key source class: published.
+
+**Ciphertext re-read.** A native crop of canvas 356 (`images/src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg`, cut with
+`tools/iiif_lines.py`, and line crops `images/r9c_f349r_cipher_*`) settles the diacritics. They are written into `ciphertext.tsv`;
+passA.tsv is left unchanged:
+- P1: `29`
+- P2: `80 62 41 73_ 22: 51`. The underline sits under "73". The next group is "22" with two points. passA's "73 3^(2)" reads one 3
+  too many.
+- P3: `48^ 93 71 37 60^ 92 58^ 0`. There are three overlines, over 48, 60 and 58. The stroke above the final 0 is the descender of
+  "auquel" from the line above. That leaves 11 digits in P3, so one group (`0`) stands alone.
+
+**PREREG (step 2).** `PREREG-gravel1672-2026-10-06.md` was pushed in ca9a62902 before the test script was written or run. It
+discloses that the key and the groups had been on screen together before it was written.
+
+**Result (step 3).** `gravel1672_test.py` writes `gravel1672_test.out` (`--check` exits 0):
+
+| | value |
+|---|---|
+| decoded letters P2+P3 (exact (code, mark) cells only) | `so n f re [22:] e` / `le s c ha no i ne [0]` |
+| T, mean trigram log10 per letter, fr17 | -0.9367 |
+| control 1, value-shuffled key (2000) | p1 = 0.0000 |
+| control 2, token order shuffled within each passage (2000) | p2 = 0.0035 |
+| control 3, power at N = 14 (200 fr17 spans enciphered with the same key, 500 shuffles each) | 0.985 |
+| marked tokens whose exact same-mark cell exists in the 1672 key | 4/5 (73_ re, 48^ le, 60^ no, 58^ ne) |
+| gate (p1 < 0.05 and p2 < 0.05) | **PASS** |
+
+Reading (`decode.json` -> `tools/decode_key.py`, `--check` exit 0; `reading_gravel1672.txt`, `reading_gravel1672_tokens.tsv`):
+P1 `fi`; P2 `so n f re [22:] e`; P3 `le s c ha no i ne [0]`.
+Grades, 15 tokens: **H 11, C 0, S 0, M 2, I 0, U 2.**
+- M: `80` = so, because Tomokiyo's cell is bracketed. `29` = fi, because a single group naming a payee ("pour 29 auquel on doit
+  donner 15000") is a nomenclature code. The 1672 syllable cell is kept only as the key's value (`exceptions_gravel1672.tsv`).
+- U: `22:` and `0`, which have no cell in the 1672 key.
+- No spec exists for this folder, so `tools/judge_plaintext.py` was not run. With about 20 letters, the fr17 judge would not have
+  power anyway. The pre-registered trigram statistic with its controls stands in for it.
+
+Context, not graded as a reading: with the clear words around them, the two passages fit "pour **les chanoine[s]** qui doivent
+aussy recevoir 1000 Reichsdalles pour la demye année de leur pension" and "pour **son fr[èr]e** qui en doit avoir 500". The plural
+"qui doivent" agrees with "les chanoines". "Son frère" needs `22:` = r. In the 1672 key r is `19_`, so that value is grade I
+(context only) and is not entered in the key. Who "son frère" and the chanoines are was not searched in this job.
+
+What this does and does not show: the 1672 cells read 12 of R2678's 14 P2/P3 groups as French syllables, the marks agree, and both
+controls fail where the target passes. So the 1665 letter uses the same cipher design and largely the same cells, or a close
+relative of that cipher. It does not show the two keys are identical: `22:`, `0` and the nomenclature code `29` fall outside the
+1672 table. Found: the key and the reading above. Not found: any print of this letter's plaintext. No print search was run; that
+is a verifier's job.
+
+Requests this job: cryptiana.web.fc2.com 1 (key image, HTTP 200); gallica.bnf.fr 2 (info.json of f356 and one native region
+crop, >= 2 s apart, HTTP 200). No subagent calls.
+
+## Remaining gaps (R9-DEC2678C, 6 Oct 2026)
+Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
+- `29`, a single-group payee name (15,000 Rd) - blocker: open-codes; a 1665 nomenclature code outside the 1672 table, which no context on f.349 narrows; next: the 1665 nomenclature from AE CP Allemagne 194, an owner-side reproduction request
+- `22:` and `0`, 2 groups with no 1672 cell - blocker: not-attempted; context suggests r and a plural s (grade I); next: find another 1664-66 Gravel or Colbert letter in the same design, where these marks recur, by a sommaire sweep of Mél. Colbert 126-130 for cipher letters from Ratisbon, ~$3
+- novelty and print status of the reading - blocker: not-attempted; solvers do not classify; next: verifier session (rule 10) with print_check on "son frere" / "chanoines" Gravel 1665, ~$3
+
+## Escalation (R9-DEC2678C, 6 Oct 2026)
+- [x] siblings: Mél. Colbert 127-127bis and 126/128 sommaires swept (R9-DEC2678); Gravel's two other 1665 letters are in clear
+- [x] clear-pages: f.349r-v clear text read (R8-G2678, R9-DEC2678); it gives the context for P1-P3
+- [x] known-keys: Tomokiyo's 1672 Colbert-Gravel key passes the pre-registered gate (this section)
+- [ ] print: verifier's print_check of the reading, not yet run
+- [ ] key-rebuild: the 1665 cells `22:` and `0` need a second text in the same key; planned sweep of Mél. Colbert 126-130 for Ratisbon cipher letters
+- [x] image-check: native crop re-read of all three passages (this section)
+- [n/a] retry: first attempt passed its gate, nothing to retry
+Verdict: keep going: 3 internal gaps; cheapest next: verifier session (rule 10) on the P2/P3 reading, ~$3

@@ -1,0 +1,2 @@
+{"jobs": [{"ciphertext": "ciphertext.tsv", "key": "key_gravel1672.tsv", "exceptions": "exceptions_gravel1672.tsv",
+  "reading": "reading_gravel1672.txt", "tokens": "reading_gravel1672_tokens.tsv", "style": "spaced"}]}

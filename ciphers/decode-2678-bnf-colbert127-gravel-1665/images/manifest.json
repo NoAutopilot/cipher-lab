@@ -116,5 +116,175 @@
    "what": "Mel. Colbert 168bis, canvas 393 (right stamp 554): copy of Gravel to Maulevrier, 16 Aug 1674 (DECODE R2733), plain three-digit figure groups, no diacritics seen",
    "fetched": "2026-10-06, R9-DEC2678B"
   }
+ ],
+ "iiif_lines": [
+  {
+   "crop": "r9c_f349r_cipher_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/4800,4950,3500,800/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg",
+   "box": [
+    4800,
+    5022,
+    7200,
+    5237
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 142,
+    "distance": 99,
+    "prominence": 125.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r9c_f349r_cipher_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/4800,4950,3500,800/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg",
+   "box": [
+    5900,
+    5022,
+    8300,
+    5237
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 142,
+    "distance": 99,
+    "prominence": 125.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r9c_f349r_cipher_L02_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/4800,4950,3500,800/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg",
+   "box": [
+    4800,
+    5237,
+    7200,
+    5453
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 142,
+    "distance": 99,
+    "prominence": 125.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r9c_f349r_cipher_L02_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/4800,4950,3500,800/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg",
+   "box": [
+    5900,
+    5237,
+    8300,
+    5453
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 142,
+    "distance": 99,
+    "prominence": 125.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r9c_f349r_cipher_L03_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/4800,4950,3500,800/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg",
+   "box": [
+    4800,
+    5453,
+    7200,
+    5599
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 142,
+    "distance": 99,
+    "prominence": 125.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r9c_f349r_cipher_L03_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/4800,4950,3500,800/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg",
+   "box": [
+    5900,
+    5453,
+    8300,
+    5599
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 142,
+    "distance": 99,
+    "prominence": 125.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r9c_f349r_cipher_L04_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/4800,4950,3500,800/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg",
+   "box": [
+    4800,
+    5599,
+    7200,
+    5745
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 142,
+    "distance": 99,
+    "prominence": 125.7
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "r9c_f349r_cipher_L04_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035540v/f356/4800,4950,3500,800/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b10035540v_f356_4800_4950_3500_800.jpg",
+   "box": [
+    5900,
+    5599,
+    8300,
+    5745
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 142,
+    "distance": 99,
+    "prominence": 125.7
+   },
+   "date": "06 Oct 2026"
+  }
  ]
 }

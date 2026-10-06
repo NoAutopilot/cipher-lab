@@ -1,0 +1,7 @@
+decoded letters (P2+P3): sonfreeleschanoine
+N tokens 14; T real -0.9367
+control 1 shuffled key: p1 = 0.0000 (2000)
+control 2 shuffled target order: p2 = 0.0035 (2000)
+control 3 power at N=14: 0.985 (200 fr17 spans x 500 key shuffles)
+marked tokens with an exact same-mark cell: 4/5 (73_ 48^ 60^ 58^)
+gate: PASS
