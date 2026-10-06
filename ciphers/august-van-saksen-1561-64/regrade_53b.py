@@ -68,7 +68,7 @@ if __name__ == '__main__':
     if '--check' in sys.argv and open(p).read() != txt: sys.exit(1)
     if '--check' not in sys.argv: open(p, 'w').write(txt)
 # apply: exceptions_53.tsv keeps its own rows and carries one AVS53 row per token moved by test A or test B
-ex = open(os.path.join(D, 'exceptions_53.tsv')).read().splitlines()
+ex = open(os.path.join(D, 'exceptions_53_s1.tsv')).read().splitlines()
 keep = [l for l in ex if 'AVS53' not in l]
 add = []
 for name, text in (('A', A.txt), ('B', txt)):
@@ -78,7 +78,7 @@ for name, text in (('A', A.txt), ('B', txt)):
             add.append('\t'.join([f[0], f[1], f[3], 'S', f'AVS53 test {name} (prereg_avs53.md): key_53 reads a period-German '
                                   f'dictionary word here, control rate {f[6]}; transcription flag kept in ciphertext_53.tsv']))
 ex_txt = '\n'.join(keep + add) + '\n'
-pe = os.path.join(D, 'exceptions_53.tsv')
+pe = os.path.join(D, 'exceptions_53_s1.tsv')
 if __name__ == '__main__':
     if '--check' in sys.argv:
         sys.exit(0 if open(pe).read() == ex_txt else 1)

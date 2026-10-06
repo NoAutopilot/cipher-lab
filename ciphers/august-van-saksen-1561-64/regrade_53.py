@@ -24,8 +24,8 @@ for f in ('plaintext_74.txt', 'plaintext_98.txt'):
 DICT.discard('')
 def indict(u): return u in DICT or any(u[:i] in DICT and u[i:] in DICT for i in range(3, len(u) - 2))
 key = {r[0]: r[1] for r in tsv('key_53.tsv')[1:]}; n = {r[0]: int(r[4].split(';')[0][2:]) for r in tsv('key_53.tsv')[1:]}
-exc = {(r[0], int(r[1])): r[2] for r in tsv('exceptions_53.tsv')[1:] if 'AVS53' not in r[4]}
-ct = tsv('ciphertext_53.tsv')[1:]
+exc = {(r[0], int(r[1])): r[2] for r in tsv('exceptions_53_s1.tsv')[1:] if 'AVS53' not in r[4]}
+ct = tsv('ciphertext_53_s1.tsv')[1:]
 alt = {(r[0], int(r[1])): r[4].split(':')[-1] for r in tsv('recon53/ciphertext_draft.tsv')[1:]}
 # units: DOT-delimited, across line ends (a line end is not a separator, as in reading_53.txt)
 units, cur = [], []

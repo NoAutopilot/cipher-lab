@@ -36,5 +36,5 @@ def build():
 
 t = build()
 if '--check' in sys.argv:
-    sys.exit(0 if open('ciphertext_53.tsv').read() == t else 1)
-open('ciphertext_53.tsv', 'w').write(t)
+    sys.exit(0 if open('ciphertext_53_s1.tsv').read() == t else 1)
+open('ciphertext_53_s1.tsv', 'w').write(t)
