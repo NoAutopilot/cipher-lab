@@ -1,0 +1,13 @@
+# descriptive, no gate: blind signs (plain tokens dropped) vs gloss letters per pair
+crop	blind_signs	gloss_letters	ratio
+L01	15	15	1.00
+L02	39	38	1.03
+L03	37	35	1.06
+L04	40	39	1.03
+L05	37	35	1.06
+L06	6	6	1.00
+L11	36	35	1.03
+L12	35	34	1.03
+L13	36	35	1.03
+L14	34	35	0.97
+L15	3	3	1.00

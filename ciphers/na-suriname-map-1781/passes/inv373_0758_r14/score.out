@@ -1,0 +1,4 @@
+pairs with gloss: 11; aligned words: 2; positions: 9
+S1 key_period_codes_nieuw: keyed 9, agree 1.000; shuffled-gloss control mean 0.286 p99 0.667 -> non-test: underpowered (9 < 30 keyed positions; PREREG floor)
+S1 without [y-fam]: keyed 6, agree 1.000; shuffled-gloss control mean 0.206 p99 0.667 -> descriptive
+S2 pooled 0693+0702+0730 sign table: keyed 9, agree 1.000; shuffled-gloss control mean 0.333 p99 0.667 -> descriptive

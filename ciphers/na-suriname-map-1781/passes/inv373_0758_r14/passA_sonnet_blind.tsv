@@ -1,0 +1,25 @@
+# R14-SUR758: ONE blind Sonnet pass on crops p0758R_L01-L06, L11-L15 (crop paths only, reader-code vocabulary, told to mark every
+# visible gap with |; no values, no key), 6 Oct 2026 ~15:42 UTC, after PREREG 020aa430c was pushed. Verbatim as returned.
+crop	kind	text	conf	remarks
+L01	gloss	noopens den Staat	0.6	upper-right, short; the gloss's left part is not visible in this crop
+L01	cipher	[plain: nige eclaircissementen doen vraagen] [y-fam] k [pi] s 3 l 6 | r 3 [y-fam] 6 r [delta] . x [lambda]	0.45	plain Dutch words precede the cipher, "nige eclaircissementen doen vraagen"; cipher groups are uncertain
+L02	gloss	van deeze en van de nabuurige door den vijand ge	0.7	"vijand" is underlined
+L02	cipher	5 [delta] l | w 7 7 n 3 a l | 5 7 . h | w 3 [y-fam] [delta] d e c o f 9 7 | v [pi] [pi] 0 | r a [y-fam] | 5 l a [delta] l v | 9 3 .	0.4	spacing between groups is approximate
+L03	gloss	conquesteerde Colonien met Offerte zo de	0.7	
+L03	cipher	[other: flourish] [hash] l x [other: small a above] e 6 [lambda] 7 d o r 3 | p k g k [hash] h 8 e i j | [y-fam] a r [pi] [other: loop-flourish] [w-tilde] a o [lambda] 3 n [pi] v e	0.35	signs after the hash are very uncertain
+L04	gloss	en Standigheeden het wilden Permitteren een	0.6	first word may be "on"
+L04	cipher	[hash] [y-fam] 6 r [delta] l v m g . s 3 v r l | s s 3 r 4 m g r e l | g a o [y-fam] n r a e o 3 l | 8 d y [other: small tail] m	0.35	
+L05	gloss	ge middelen by de hand te neemen om ze te her	0.7	
+L05	cipher	, 9 7 | [y-fam] m r w 7 c 3 [y-fam] | o t | v e | s [delta] i j r [lambda] 3 | l a e i j d h | K [y-fam] n 3 r 7 [other: delta-like d] a o	0.35	
+L06	gloss	winnen .	0.6	
+L06	cipher	, 4 m [y-fam] y a l	0.45	short; left sign 4 with a leading comma
+L11	gloss	het waste wenschen dat zulx koude geschec,	0.5	"waste" and "geschec" uncertain
+L11	cipher	d a r 4 [delta] [psi] r 3 4 a l 6 x | s s e h | r [delta] r n 5 9 1 | b k y r 3 9 3 7 [other: loop-flourish] [w-tilde] 3 x	0.35	
+L12	gloss	tuceerd worden unts wy van onzen kant daar	0.5	first word is "tuceerd" or similar, mid-word unclear
+L12	cipher	r s e 3 o r | 4 [hash] o r a l | [y-fam] m r 6 | 4 t | e p y [pi] i j n 3 l | b [delta] [y-fam] r | r [delta] . x o	0.35	
+L13	gloss	toe wanneer Ik dan aan der hier zynde Lands	0.6	
+L13	cipher	, r [pi] a | 4 [delta] [other: black blot] l 3 3 0 s b | r . x y | a d h | v 3 o s m 7 0 | z l l r 3 c [delta] i y r 6	0.3	black ink blot near the third sign
+L14	gloss	fregatten daar by Soude roegen, om na behoo,	0.5	
+L14	cipher	[other: tall stroke] o 3 g p r [lambda] d l | r . [delta] o d t | 6 [pi] 5 v a e k 3 g a l , | [hash] [y-fam] [y-fam] [delta] 6 3 s k [other: loop-flourish]	0.3	comma after "gal" is visible
+L15	gloss	aen..	0.3	small superscript, upper right
+L15	cipher	, 0 7 [y-fam]	0.4	short, far right
