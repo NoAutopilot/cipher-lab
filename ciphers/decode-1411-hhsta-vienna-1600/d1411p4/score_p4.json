@@ -1,0 +1,425 @@
+{
+ "N": 248,
+ "n_M": 96,
+ "residue_counts": {
+  "12": 11,
+  "21": 18,
+  "22": 16
+ },
+ "calibration": {
+  "lexicon_words": 10487,
+  "gloss_cover": 0.6129,
+  "real_cover_p05": 0.871,
+  "real_cover_median": 0.9355,
+  "real_p05_4gram": -0.8745,
+  "null_p99_4gram": -1.8948
+ },
+ "T21r": {
+  "cover": 0.5806,
+  "shuffled_p99": 0.4516,
+  "shuffled_mean": 0.3911,
+  "shuffled_ge": 0,
+  "shifted_max": 0.3669,
+  "shifted_ge": 0,
+  "minus_gloss": -0.0323,
+  "fourgram": -1.6098,
+  "beats_controls": true,
+  "PASS": false,
+  "verdict": "controls beaten, coverage below the leaf's own gloss"
+ },
+ "T21r_h12": {
+  "cover": 0.5847,
+  "shuffled_p99": 0.4476,
+  "shuffled_mean": 0.3751,
+  "shuffled_ge": 0,
+  "shifted_max": 0.3589,
+  "shifted_ge": 0,
+  "minus_gloss": -0.0282,
+  "fourgram": -1.6216,
+  "beats_controls": true,
+  "PASS": false,
+  "verdict": "controls beaten, coverage below the leaf's own gloss"
+ },
+ "T21r_h22": {
+  "cover": 0.5403,
+  "shuffled_p99": 0.4597,
+  "shuffled_mean": 0.3683,
+  "shuffled_ge": 0,
+  "shifted_max": 0.3831,
+  "shifted_ge": 0,
+  "minus_gloss": -0.0726,
+  "fourgram": -1.7148,
+  "beats_controls": true,
+  "PASS": false,
+  "verdict": "controls beaten, coverage below the leaf's own gloss"
+ },
+ "letter_tests": {
+  "12": {
+   "n": 11,
+   "cover_top5": [
+    "i",
+    "d",
+    "e",
+    "a",
+    "h"
+   ],
+   "fourgram_top5": [
+    "s",
+    "q",
+    "t",
+    "h",
+    "u"
+   ],
+   "rank_cover": {
+    "h": 5,
+    "s": 6
+   },
+   "rank_fourgram": {
+    "h": 4,
+    "s": 1
+   },
+   "verdict": "undecided"
+  },
+  "21": {
+   "n": 18,
+   "cover_top5": [
+    "r",
+    "i",
+    "a",
+    "d",
+    "s"
+   ],
+   "fourgram_top5": [
+    "r",
+    "n",
+    "b",
+    "d",
+    "t"
+   ],
+   "rank_cover": {
+    "r": 1,
+    "z": 20
+   },
+   "rank_fourgram": {
+    "r": 1,
+    "z": 16
+   },
+   "verdict": "r favoured"
+  },
+  "22": {
+   "n": 16,
+   "cover_top5": [
+    "a",
+    "e",
+    "s",
+    "i",
+    "t"
+   ],
+   "fourgram_top5": [
+    "e",
+    "s",
+    "n",
+    "t",
+    "r"
+   ],
+   "rank_cover": {
+    "h": 8,
+    "s": 3
+   },
+   "rank_fourgram": {
+    "h": 17,
+    "s": 2
+   },
+   "verdict": "undecided"
+  }
+ },
+ "pooled_p3_p4_descriptive": {
+  "N": 559,
+  "12": {
+   "n": 29,
+   "cover_top5": [
+    "i",
+    "a",
+    "t",
+    "d",
+    "e"
+   ],
+   "fourgram_top5": [
+    "h",
+    "t",
+    "s",
+    "r",
+    "i"
+   ],
+   "rank_cover": {
+    "h": 8,
+    "s": 6
+   },
+   "rank_fourgram": {
+    "h": 1,
+    "s": 3
+   }
+  },
+  "22": {
+   "n": 29,
+   "cover_top5": [
+    "i",
+    "t",
+    "a",
+    "e",
+    "s"
+   ],
+   "fourgram_top5": [
+    "n",
+    "s",
+    "e",
+    "t",
+    "r"
+   ],
+   "rank_cover": {
+    "h": 13,
+    "s": 5
+   },
+   "rank_fourgram": {
+    "h": 20,
+    "s": 2
+   }
+  }
+ },
+ "gloss_agreement": {
+  "n_glossed": 42,
+  "T21r": {
+   "matches": 25,
+   "rate": 0.5952,
+   "control_p99": 8,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "T21r_h12": {
+   "matches": 23,
+   "rate": 0.5476,
+   "control_p99": 8,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "T21r_h22": {
+   "matches": 22,
+   "rate": 0.5238,
+   "control_p99": 8,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "pairs": [
+   [
+    46,
+    "s",
+    "s"
+   ],
+   [
+    23,
+    "t",
+    "t"
+   ],
+   [
+    96,
+    "n",
+    "u"
+   ],
+   [
+    2,
+    "c",
+    "s"
+   ],
+   [
+    38,
+    "h",
+    "k"
+   ],
+   [
+    86,
+    "h",
+    "k"
+   ],
+   [
+    27,
+    "a",
+    "y"
+   ],
+   [
+    24,
+    "n",
+    "u"
+   ],
+   [
+    72,
+    "t",
+    "u"
+   ],
+   [
+    40,
+    "m",
+    "m"
+   ],
+   [
+    73,
+    "n",
+    "w"
+   ],
+   [
+    65,
+    "n",
+    "n"
+   ],
+   [
+    23,
+    "t",
+    "t"
+   ],
+   [
+    85,
+    "i",
+    "i"
+   ],
+   [
+    90,
+    "o",
+    "o"
+   ],
+   [
+    14,
+    "n",
+    "k"
+   ],
+   [
+    11,
+    "y",
+    "g"
+   ],
+   [
+    26,
+    "u",
+    "s"
+   ],
+   [
+    81,
+    "e",
+    "e"
+   ],
+   [
+    13,
+    "i",
+    "i"
+   ],
+   [
+    9,
+    "c",
+    "e"
+   ],
+   [
+    70,
+    "s",
+    "s"
+   ],
+   [
+    61,
+    "i",
+    "i"
+   ],
+   [
+    22,
+    "s",
+    "s"
+   ],
+   [
+    29,
+    "c",
+    "a"
+   ],
+   [
+    12,
+    "s",
+    "s"
+   ],
+   [
+    31,
+    "c",
+    "c"
+   ],
+   [
+    17,
+    "n",
+    "n"
+   ],
+   [
+    40,
+    "m",
+    "m"
+   ],
+   [
+    24,
+    "u",
+    "u"
+   ],
+   [
+    65,
+    "n",
+    "n"
+   ],
+   [
+    71,
+    "f",
+    "t"
+   ],
+   [
+    81,
+    "e",
+    "e"
+   ],
+   [
+    29,
+    "a",
+    "a"
+   ],
+   [
+    17,
+    "n",
+    "n"
+   ],
+   [
+    96,
+    "n",
+    "u"
+   ],
+   [
+    69,
+    "z",
+    "r"
+   ],
+   [
+    12,
+    "s",
+    "s"
+   ],
+   [
+    66,
+    "o",
+    "o"
+   ],
+   [
+    96,
+    "u",
+    "u"
+   ],
+   [
+    7,
+    "c",
+    "c"
+   ],
+   [
+    86,
+    "d",
+    "k"
+   ]
+  ]
+ }
+}

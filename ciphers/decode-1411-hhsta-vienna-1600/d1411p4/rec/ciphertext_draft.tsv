@@ -1,0 +1,255 @@
+line	position	sign	gloss	confidence	alt	why
+p4La_L01	1	46	s	H		agree
+p4La_L01	2	23	t	H		agree
+p4La_L01	3	96	n	M		agree-flagged
+p4La_L01	4	2	c	M		agree-flagged
+p4La_L01	5	38	h	H		agree
+p4La_L02	1	86	h	H		agree
+p4La_L02	2	93	r	H		agree
+p4La_L02	3	27	a	H		agree
+p4La_L02	4	24	n	M		agree-flagged
+p4La_L02	5	72	t	M		agree-flagged
+p4La_L02	6	40	m	M		agree-flagged
+p4La_L02	7	73	n	M		agree-flagged
+p4La_L03	1	65	n	M		agree-flagged
+p4La_L03	2	534	1	M	B:59	differ
+p4La_L03	3	23	t	H		agree
+p4La_L03	4	85	1	M		agree-flagged
+p4La_L03	5	90	o	M		agree-flagged
+p4La_L03	6	14	n	H		agree
+p4La_L04	1	11	y	M		agree-flagged
+p4La_L04	2	44	e	M	B:54	differ
+p4La_L04	3	26	u	H		agree
+p4La_L04	4	81	e	H		agree
+p4La_L04	5	13	1	H		agree
+p4La_L04	6	9	c	H		agree
+p4La_L04	7	21	r	H		agree
+p4La_L04	8	96	n	H		agree
+p4La_L05	1	70	s	H		agree
+p4La_L05	2	XX		M	B:-	gap
+p4La_L05	3	29	u	M	B:	differ
+p4La_L05	4	97	u	M		agree-flagged
+p4La_L05	5	9	c	H		agree
+p4La_L05	6	80	d	M		agree-flagged
+p4La_L05	7	61	i	H		agree
+p4La_L05	8	22	s	H		agree
+p4La_L06	1	29	c	M		agree-flagged
+p4La_L06	2	12	s	H		agree
+p4La_L06	3	f		M	B:-	gap
+p4La_L06	4	31	c	H		agree
+p4La_L06	5	17	n	H		agree
+p4La_L06	6	40	m	M		agree-flagged
+p4La_L06	7	24	u	H		agree
+p4La_L06	8	65	n	M		agree-flagged
+p4La_L06	9	71	f	H		agree
+p4La_L06	10	160	q	M	B:100	differ
+p4La_L06	11	81	e	H		agree
+p4Lb_L01	1	56		M		agree-flagged
+p4Lb_L01	2	29	a	H		agree
+p4Lb_L01	3	17	n	H		agree
+p4Lb_L01	4	96	n	H		agree
+p4Lb_L01	5	70	s?	H		agree
+p4Lb_L02	1	11	g?	H		agree
+p4Lb_L02	2	69	z?	H		agree
+p4Lb_L02	3	90		H		agree
+p4Lb_L02	4	6	b?	H		agree
+p4Lb_L02	5	81	t?	M		agree-flagged
+p4Lb_L02	6	46		H		agree
+p4Lb_L02	7	21	t	H		agree
+p4Lb_L02	8	f		M	B:-	gap
+p4Lb_L02	9	96	u	H		agree
+p4Lb_L02	10	7	c	H		agree
+p4Lb_L02	11	62	h	H		agree
+p4Lb_L02	12	9		H		agree
+p4Lb_L03	1	12	s?	H		agree
+p4Lb_L03	2	66	o	H		agree
+p4Lb_L03	3	96	u	H		agree
+p4Lb_L03	4	15	l	H		agree
+p4Lb_L03	5	7	c	H		agree
+p4Lb_L03	6	86	d	H		agree
+p4Lb_L03	7	9		M		agree-flagged
+p4Lb_L04	1	59	e	M		agree-flagged
+p4Lb_L04	2	100		H		agree
+p4Lb_L04	3	73	u	M	B:23	differ
+p4Lb_L04	4	1	g?	M		agree-flagged
+p4Lb_L04	5	86	h	H		agree
+p4Ra_L01	1	35		H		agree
+p4Ra_L01	2	81		H		agree
+p4Ra_L02	1	43		H		agree
+p4Ra_L02	2	13		H		agree
+p4Ra_L02	3	70		H		agree
+p4Ra_L02	4	23		H		agree
+p4Ra_L02	5	9		H		agree
+p4Ra_L02	6	66		H		agree
+p4Ra_L02	7	21		M		agree-flagged
+p4Ra_L02	8	32		H		agree
+p4Ra_L02	9	81		H		agree
+p4Ra_L02	10	93		H		agree
+p4Ra_L02	11	9		M		agree-flagged
+p4Ra_L02	12	70		H		agree
+p4Ra_L02	13	33		H		agree
+p4Ra_L02	14	22		H		agree
+p4Ra_L02	15	80		M	B:81	differ
+p4Ra_L03	1	8		H		agree
+p4Ra_L03	2	61		H		agree
+p4Ra_L03	3	48		M		agree-flagged
+p4Ra_L03	4	64		M		agree-flagged
+p4Ra_L03	5	94		M		agree-flagged
+p4Ra_L03	6	43		H		agree
+p4Ra_L03	7	34		M	B:35	differ
+p4Ra_L03	8	87		M		agree-flagged
+p4Ra_L03	9	61		H		agree
+p4Ra_L03	10	59		M		agree-flagged
+p4Ra_L03	11	46		M	B:56	differ
+p4Ra_L03	12	29		H		agree
+p4Ra_L03	13	41		M		agree-flagged
+p4Ra_L03	14	61		M		agree-flagged
+p4Ra_L04	1	70		H		agree
+p4Ra_L04	2	7		H		agree
+p4Ra_L04	3	36		H		agree
+p4Ra_L04	4	47		M		agree-flagged
+p4Ra_L04	5	17		H		agree
+p4Ra_L04	6	94		H		agree
+p4Ra_L04	7	66		H		agree
+p4Ra_L04	8	92		H		agree
+p4Ra_L04	9	46		M	B:56	differ
+p4Ra_L04	10	43		M		agree-flagged
+p4Ra_L04	11	23		H		agree
+p4Ra_L04	12	81		H		agree
+p4Ra_L04	13	65		M		agree-flagged
+p4Ra_L05	1	5		M		agree-flagged
+p4Ra_L05	2	17		H		agree
+p4Ra_L05	3	63		H		agree
+p4Ra_L05	4	77		M		agree-flagged
+p4Ra_L05	5	65		M		agree-flagged
+p4Ra_L05	6	11		M		agree-flagged
+p4Ra_L05	7	47		M	B:57	differ
+p4Ra_L05	8	93		M	B:98	differ
+p4Ra_L06	1	80		H		agree
+p4Ra_L06	2	39		M		agree-flagged
+p4Ra_L06	3	64		M		agree-flagged
+p4Ra_L06	4	12		H		agree
+p4Ra_L06	5	42		H		agree
+p4Ra_L06	6	68		H		agree
+p4Ra_L06	7	88		H		agree
+p4Ra_L06	8	16		M	B:-	gap
+p4Ra_L06	9	27		M	B:1627	differ
+p4Ra_L07	1	95		M	B:91	differ
+p4Ra_L07	2	22		H		agree
+p4Ra_L07	3	93		H		agree
+p4Ra_L07	4	9		H		agree
+p4Rb_L01	1	14		H		agree
+p4Rb_L01	2	69		H		agree
+p4Rb_L01	3	85		M		agree-flagged
+p4Rb_L01	4	47		M	B:57	differ
+p4Rb_L01	5	83		H		agree
+p4Rb_L01	6	9		H		agree
+p4Rb_L01	7	22		H		agree
+p4Rb_L01	8	69		H		agree
+p4Rb_L01	9	43		H		agree
+p4Rb_L01	10	23		H		agree
+p4Rb_L01	11	36		H		agree
+p4Rc_L01	1	80		M		agree-flagged
+p4Rc_L01	2	99		M	B:57	differ
+p4Rc_L01	3	41		M		agree-flagged
+p4Rc_L01	4	89		H		agree
+p4Rc_L01	5	9		H		agree
+p4Rc_L01	6	64		M		agree-flagged
+p4Rc_L01	7	77		M		agree-flagged
+p4Rc_L01	8	69		H		agree
+p4Rc_L01	9	7		H		agree
+p4Rc_L01	10	62		H		agree
+p4Rc_L02	1	95		M		agree-flagged
+p4Rc_L02	2	57		M		agree-flagged
+p4Rc_L02	3	93		H		agree
+p4Rc_L02	4	33		H		agree
+p4Rc_L02	5	24		M	B:29	differ
+p4Rc_L02	6	81		H		agree
+p4Rc_L02	7	21		H		agree
+p4Rc_L02	8	7		H		agree
+p4Rc_L02	9	66		H		agree
+p4Rc_L03	1	43		H		agree
+p4Rc_L03	2	81		H		agree
+p4Rc_L03	3	17		H		agree
+p4Rc_L03	4	36		H		agree
+p4Rc_L03	5	1		M	B:9	differ
+p4Rc_L03	6	83		H		agree
+p4Rc_L03	7	9		H		agree
+p4Rc_L03	8	65		M		agree-flagged
+p4Rc_L04	1	29		H		agree
+p4Rc_L04	2	65		M	B:61	differ
+p4Rc_L04	3	17		H		agree
+p4Rc_L04	4	53		M		agree-flagged
+p4Rc_L04	5	65		M	B:63	differ
+p4Rc_L05	1	74		M		agree-flagged
+p4Rc_L05	2	79		H		agree
+p4Rc_L05	3	12		H		agree
+p4Rc_L05	4	93		H		agree
+p4Rc_L05	5	60		H		agree
+p4Rc_L05	6	10		H		agree
+p4Rc_L05	7	48		M		agree-flagged
+p4Rc_L05	8	39		H		agree
+p4Rc_L05	9	84		M		agree-flagged
+p4Rc_L05	10	29		H		agree
+p4Rc_L05	11	49		M		agree-flagged
+p4Rc_L06	1	63		H		agree
+p4Rc_L06	2	53		H		agree
+p4Rc_L06	3	11		H		agree
+p4Rc_L06	4	47		M		agree-flagged
+p4Rc_L06	5	22		H		agree
+p4Rc_L07	1	83		H		agree
+p4Rc_L07	2	33		H		agree
+p4Rc_L07	3	94		H		agree
+p4Rc_L07	4	77		H		agree
+p4Rc_L07	5	41		M		agree-flagged
+p4Rc_L07	6	8		H		agree
+p4Rc_L07	7	95		M		agree-flagged
+p4Rc_L07	8	27		M	B:77	differ
+p4Rc_L07	9	65		M	B:64	differ
+p4Rc_L08	1	43		H		agree
+p4Rc_L08	2	93		H		agree
+p4Rc_L08	3	18		H		agree
+p4Rc_L08	4	91		H		agree
+p4Rc_L08	5	66		M	B:86	differ
+p4Rc_L08	6	74		M		agree-flagged
+p4Rc_L08	7	81		H		agree
+p4Rc_L08	8	23		H		agree
+p4Rc_L09	1	29		M		agree-flagged
+p4Rc_L09	2	47		H		agree
+p4Rc_L09	3	23		H		agree
+p4Rc_L09	4	93		H		agree
+p4Rc_L09	5	13		H		agree
+p4Rc_L09	6	6		H		agree
+p4Rc_L09	7	96		H		agree
+p4Rc_L09	8	38		M		agree-flagged
+p4Rc_L09	9	24		M	B:21	differ
+p4Rc_L09	10	9		H		agree
+p4Rc_L09	11	71		M		agree-flagged
+p4Rc_L09	12	42		M		agree-flagged
+p4Rc_L10	1	30		M	B:-	gap
+p4Rc_L10	2	94		H		agree
+p4Rc_L10	3	61		H		agree
+p4Rc_L10	4	8		H		agree
+p4Rc_L10	5	84		M		agree-flagged
+p4Rc_L10	6	90		H		agree
+p4Rc_L10	7	17		H		agree
+p4Rc_L10	8	35		M	B:30	differ
+p4Rc_L10	9	47		M		agree-flagged
+p4Rc_L10	10	74		M	B:77	differ
+p4Rc_L11	1	53		M		agree-flagged
+p4Rc_L11	2	89		H		agree
+p4Rc_L11	3	8		H		agree
+p4Rc_L11	4	47		M		agree-flagged
+p4Rc_L11	5	81		H		agree
+p4Rc_L11	6	41		H		agree
+p4Rc_L12	1	42	2	M	B:48	differ
+p4Rc_L12	2	81	o	M		agree-flagged
+p4Rc_L12	3	84	s	M		agree-flagged
+p4Rc_L12	4	69	b?	M		agree-flagged
+p4Rc_L12	5	52	e	M		agree-flagged
+p4Rc_L12	6	6	c?	M	B:61	differ
+p4Rc_L12	7	91	o	M	B:46	differ
+p4Rc_L12	8	81		H		agree
+p4Rc_L12	9	20		M		agree-flagged
+p4Rc_L12	10	52		M		agree-flagged
+p4Rc_L12	11	40		H		agree

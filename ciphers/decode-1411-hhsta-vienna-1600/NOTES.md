@@ -531,18 +531,84 @@ and p.1 gloss pairs C 54 / M 8 unchanged. No reading-ready flag. Vision: 2 Sonne
 reconciliation unit (3 stacked crop views) + 4 worker placement views (overview, 3 debug overlays). Requests: de-crypt.org
 about 3 (1 login, record page, 1 image). Status unchanged: open.
 
-## Remaining gaps (D4-1411P3, 6 Oct 2026)
-Read so far: 0 of about 682 cipher numbers at S or better (p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; 682 unglossed numbers M)
-- unglossed numerals p.1-p.3 (682) - blocker: not-attempted; controls beaten on two instruments (4-gram GAPS146/150/DEF1-1411; word coverage D4-1411P3) but every table stays below the leaf's own gloss; next: a person's read of the p.1 and f.184 glosses (ASKS row 120) to fix the gloss calibration and letter identities, then a pooled residue-12/22 h-vs-s letter test on p.4 numerals, ~$6
-- gloss letter identities h/s at residues 12/22 - blocker: waiting-on ASKS row 120 (a person's read of the gloss); f.184 adds one h over 36 (residue 12) for that read
-- pages 4-12 numerals - blocker: not-attempted; full-size images fetched in GAPS137 but no page after p.3 transcribed; next: cut and read p.4 numerals in two blind passes with the frozen T21r and the same coverage controls, ~$6
+## R12A-D1411P4 step: frozen T21r (+ h variants) on unread p.4 numerals, coverage test and p.4 interlinear gloss (6 Oct 2026, account 1)
 
-## Escalation (D4-1411P3, 6 Oct 2026)
+Step run: D4-1411P3's Verdict "cheapest next" (Remaining gaps 3), brief R12A-D1411P4 (LANE LANE-RUN12-account-1). Pre-registration
+`d1411p4/PREREG-D1411P4.md` (a copy of d4p3's prereg and its Addendum A, plus a descriptive pooled p.3+p.4 h-vs-s ranking) and the
+scoring script `d1411p4/score_p4.py` (a copy of d4p3/score_p3.py) pushed in commit afc9de42d before the p.4 image was opened.
+Script check before the prereg: score_p4.py on the p.3 numbers reproduced D4-1411P3's T21r 0.5627 / p99 0.463 exactly.
+
+One DECODE browser login (tools/decode_browser_login.js 1411 --fetch IMG_R1411_I6598_P4.png --max-files 1); sha1 7bbfba3c...
+matches images/manifest.json; not committed (30 MB rule). Crops (pasted commands; centres placed by eye on a 1/4 overview and two
+1/2 views, checked on the --debug overlays; a first cut with one band per page side made 870-px crops across blank space and a
+second over-tall right-page cut were both discarded before any pass), image = the fetched P4 png:
+`python3 tools/iiif_lines.py --image IMG_R1411_I6598_P4.png --out images/d1411p4_crops --region 700,200,1580,1060 --prefix p4La
+--centres 110,345,435,660,880,990 --top-margin 55 --bottom-margin 15 --max-width 2400 --debug`;
+`... --region 700,2470,1580,740 --prefix p4Lb --centres 100,200,556,664 --top-margin 55 --bottom-margin 15`;
+`... --region 2480,880,1840,580 --prefix p4Ra --centres 50,120,182,245,358,460,542 --top-margin 15 --bottom-margin 15`;
+`... --region 2480,1840,1840,110 --prefix p4Rb --centres 55 --top-margin 10 --bottom-margin 10`;
+`... --region 2480,2040,1840,980 --prefix p4Rc --centres 50,114,184,280,356,430,510,596,666,746,820,935 --top-margin 10
+--bottom-margin 25` (all with --max-width 2400 --debug). 30 crops (left page = f.184v, 10 numeral lines; right page = f.185r,
+"Stralsund 14 octob.", 20 numeral lines), all 1580-1840 px wide.
+
+Two blind Sonnet passes, one call each, crops only, opposite reading orders (`d1411p4/passA.tsv` 254 rows, 84 "?" -- pass A first
+skipped crop p4Ra_L03 and read it on a one-crop follow-up; `d1411p4/passB.tsv` 249 rows, 66 "?"). tools/reconcile_passes.py
+(`d1411p4/rec/`): 221/254 aligned columns agree (87.0%), 33 splits; gloss agreement on columns both glossed 34/53 raw. The worker
+settled the 33 splits from the crops (one reconciliation unit, `d1411p4/reconcile_notes.tsv`). Finding about this hand: the 5 is an
+"r"-like form and the 4 a cross "+"; most splits were 4/5 (47/57, 46/56, 93/95/98, 63/65). Four groups dropped (a struck group and a
+token inside it on p4La_L05, two graphic signs), the year "zu 1627" on p4Ra_L06 treated as in-text. Every settled token is M.
+`d1411p4/make_numbers.py --check` regenerates `d1411p4/numbers.tsv`: **248 cipher numbers, 96 M**. Gloss letters kept only where
+both passes wrote one and agree after a fixed shape rule (bare stroke "1" = i, "5"-like = s, the forms GAPS150/D4-1411P3 already
+read as i/s), never at a number whose value the worker settled: **42 gloss pairs** (left page, lines p4La_L01-L06, p4Lb_L01-L03).
+
+**Score (`d1411p4/score_p4.py`, `--check` exits 0; de1600 coverage; seed 1411):**
+
+| table | cover | shuffled-target p99 / mean (>= real) | shifted max (>= real) | minus gloss (0.613) | 4-gram | PASS |
+|---|---|---|---|---|---|---|
+| T21r | 0.581 | 0.452 / 0.391 (0/200) | 0.367 (0/23) | -0.032 | -1.610 | no |
+| T21r_h12 | 0.585 | 0.448 / 0.375 (0/200) | 0.359 (0/23) | -0.028 | -1.622 | no |
+| T21r_h22 | 0.540 | 0.460 / 0.368 (0/200) | 0.383 (0/23) | -0.073 | -1.715 | no |
+
+de1600 real windows at N=248: coverage p05 0.871, median 0.936. **Pre-registered verdict: CONTROLS BEATEN, COVERAGE BELOW THE
+LEAF'S OWN GLOSS, for all three tables** -- the third fresh page with this shape (p.2 4-gram, p.3 and p.4 coverage). No PASS: no grade
+moves. No variant is preferred (h12 is 0.004 above T21r but does not PASS).
+
+**Letter tests (pre-registered):** residue 21 (18 occurrences): **r favoured** (r 1st on coverage and on 4-gram; z 20th / 16th), the
+third fresh page. Residue 12 (11): undecided (s 1st on 4-gram, 6th on coverage; h 4th / 5th). Residue 22 (16): undecided (s 2nd on
+4-gram, 3rd on coverage; h 17th / 8th). Descriptive pooled p.3+p.4 (N=559, decides nothing): residue 12 (29) h 1st on 4-gram but 8th
+on coverage, s 3rd / 6th; residue 22 (29) s 2nd on 4-gram and 5th on coverage, h 20th / 13th -- s leans ahead of h at 22, 12 stays open.
+
+**Gloss agreement (Addendum A carried over): 42 pass-agreed gloss pairs; T21r matches 25/42 (0.595) against value-shuffled tables
+p99 8 (0 of 10,000 draws >= 25)** -- "gloss agrees with T21r" on the pre-registered rule, on a second gloss leaf the table was not built
+from, and with four times the pairs of f.184 (h12 23/42, h22 22/42, both also above p99 8). Mismatches, logged as data, not settled: gloss
+n where T21r has u at 96 (twice), 24, 72 (n/u is a minim look-alike in this gloss hand and in our readers); gloss h where T21r has k at
+38, 86 (residue 14, alphabet-filled, never glossed before; gloss d at 86 once more); 27 a vs y (residue 3); 73 n vs w (residue 1); 14 n
+vs k; 11 y vs g; 26 u vs s (residue 2); 9 c vs e and 29 c vs a; 2 c vs s; 71 f vs t; 69 z vs r (residue 21: the gloss-hand "z" again
+where the decode statistic favours r, as on p.1 and f.184). The 42 pairs are recorded as known-plaintext pairs at grade M (a person's
+read of the gloss, ASKS row 120, would settle them); they did not retune any table.
+
+**Post-hoc observation (seen after the score; not tested, licenses nothing):** under T21r p4Rc_L01 decodes "DENneMArck" (Dänemarck),
+p4Rb_L01 "krIEges...", p4Rc_L08 "propOSet", p4Rc_L09 "AttribuK...", p4Rc_L07 "gesaNdT...", p4Lb_L01 "Danus", p4Lb_L02 "grobEsrucke",
+p4Ra_L05 "AnlANGET" (anlanget), p4Rc_L11 "AndTen". The clear text around them is a Stralsund letter of 14 Oct (1628 in the left page's
+dating line "15 octob. 1628"). Hypotheses for a verifier or a person's read, not readings.
+
+Token grades (rule 4): new 248 numbers all M (H 0, C 0 new, S 0, M 248, I 0); 42 new p.4 gloss pairs M; earlier 682 numbers M, p.1 gloss
+pairs C 54 / M 8 and f.184 pairs M 10 unchanged. No reading-ready flag. Vision: 2 Sonnet subagent calls (30 crops each, plus a one-crop
+follow-up) + 1 reconciliation unit (3 stacked crop views + 1 zoom) + 6 worker placement views (overview, 4 half views/sheets, 1 debug).
+Requests: de-crypt.org about 3 (1 login, record page, 1 image). Status unchanged: open.
+
+## Remaining gaps (R12A-D1411P4, 6 Oct 2026)
+Read so far: 0 of about 930 cipher numbers at S or better (p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; 930 unglossed numbers M)
+- unglossed numerals p.1-p.4 (930) - blocker: not-attempted; controls beaten on three fresh pages and two instruments, but every table stays 0.03-0.07 below the leaf's own gloss in coverage; next: settle the 4/5 look-alike (r-form 5 vs cross 4) on p.2-p.4 with a lookalike pass (tools/lookalike_pass.py) and rescore T21r on the corrected numbers against the same frozen controls, ~$4
+- gloss letter identities h/s at residues 12/22 and n/u, k at residue 14 - blocker: waiting-on ASKS row 120 (a person's read of the gloss); p.4 adds 42 pairs (left page f.184v, lines 1-9) for that read
+- pages 5-12 numerals - blocker: not-attempted; full-size images fetched in GAPS137, none after p.4 transcribed; next: cut and read p.5 numerals in two blind passes with the frozen T21r, same coverage and gloss controls, ~$6
+
+## Escalation (R12A-D1411P4, 6 Oct 2026)
 - [x] siblings: GAPS136/GAPS137 checked the Ferdinand III posts and the Kopal Cyffra nova key (inconsistent sign class)
 - [x] clear-pages: clear words around the cipher read in GAPS137; context words used only as post-hoc observation
 - [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
 - [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a gate passes
-- [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r on two fresh pages (DEF1-1411, D4-1411P3), f.184 gloss agrees with T21r 4/10 vs control p99 2 (D4-1411P3)
-- [x] image-check: full-size DECODE images p.1-p.3 read on native crops (GAPS141, GAPS146, DEF1-1411, D4-1411P3)
+- [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r on three fresh pages (DEF1-1411, D4-1411P3, R12A-D1411P4), p.4 gloss agrees with T21r 25/42 vs control p99 8 (R12A-D1411P4)
+- [x] image-check: full-size DECODE images p.1-p.4 read on native crops (GAPS141, GAPS146, DEF1-1411, D4-1411P3, R12A-D1411P4)
 - [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause
-Verdict: keep going: 2 internal gaps; cheapest next: cut and read p.4 numerals in two blind passes, frozen T21r, same coverage controls, ~$6
+Verdict: keep going: 2 internal gaps; cheapest next: lookalike pass on the 4/5 forms across p.2-p.4 and a rescore of T21r against the same frozen controls, ~$4

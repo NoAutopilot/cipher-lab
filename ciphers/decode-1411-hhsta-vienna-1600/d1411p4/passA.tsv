@@ -1,0 +1,255 @@
+line	pos	token	gloss	note
+p4La_L01	1	46	s	
+p4La_L01	2	23	t	
+p4La_L01	3	96	n	
+p4La_L01	4	2	c	
+p4La_L01	5	38	h	
+p4La_L02	1	86	h	
+p4La_L02	2	93	r	
+p4La_L02	3	27	a	
+p4La_L02	4	24?	n	
+p4La_L02	5	72?	t	
+p4La_L02	6	40?	m	
+p4La_L02	7	73?	n	
+p4La_L03	1	65?	n	
+p4La_L03	2	534?	1	
+p4La_L03	3	23	t	
+p4La_L03	4	85?	1	
+p4La_L03	5	90?	o	
+p4La_L03	6	14	n	
+p4La_L04	1	11?	y	
+p4La_L04	2	44?	e	
+p4La_L04	3	26	u	
+p4La_L04	4	81	e	
+p4La_L04	5	13	1	
+p4La_L04	6	9	c	
+p4La_L04	7	21	r	
+p4La_L04	8	96	n	
+p4La_L05	1	70	s	
+p4La_L05	2	XX?		struck
+p4La_L05	3	29?		
+p4La_L05	4	97?	u	
+p4La_L05	5	9	c	
+p4La_L05	6	80?	d	
+p4La_L05	7	61	i	
+p4La_L05	8	22	s	
+p4La_L06	1	29?	c	
+p4La_L06	2	12	s	
+p4La_L06	3	f?		
+p4La_L06	4	31	c	
+p4La_L06	5	17	n	
+p4La_L06	6	40?	m	
+p4La_L06	7	24	u	
+p4La_L06	8	65?	n	
+p4La_L06	9	71	f	
+p4La_L06	10	160?	q	
+p4La_L06	11	81	e	
+p4Lb_L01	1	56?		
+p4Lb_L01	2	29	a	
+p4Lb_L01	3	17	n	
+p4Lb_L01	4	96	n	
+p4Lb_L01	5	70	s?	
+p4Lb_L02	1	11	g?	
+p4Lb_L02	2	69	z?	
+p4Lb_L02	3	90		
+p4Lb_L02	4	6	b?	
+p4Lb_L02	5	81?	t?	
+p4Lb_L02	6	46		
+p4Lb_L02	7	21	t	
+p4Lb_L02	8	f?		
+p4Lb_L02	9	96	u	
+p4Lb_L02	10	7	c	
+p4Lb_L02	11	62	h	
+p4Lb_L02	12	9		
+p4Lb_L03	1	12	s?	
+p4Lb_L03	2	66	o	
+p4Lb_L03	3	96	u	
+p4Lb_L03	4	15	l	
+p4Lb_L03	5	7	c	
+p4Lb_L03	6	86	d	
+p4Lb_L03	7	9?		
+p4Lb_L04	1	59?	e	
+p4Lb_L04	2	100		
+p4Lb_L04	3	73?	u	
+p4Lb_L04	4	1?	g?	
+p4Lb_L04	5	86	h	
+p4Ra_L01	1	35		
+p4Ra_L01	2	81		
+p4Ra_L02	1	43		
+p4Ra_L02	2	13		
+p4Ra_L02	3	70		
+p4Ra_L02	4	23		
+p4Ra_L02	5	9		
+p4Ra_L02	6	66		
+p4Ra_L02	7	21?		
+p4Ra_L02	8	32		
+p4Ra_L02	9	81		
+p4Ra_L02	10	93		
+p4Ra_L02	11	9?		
+p4Ra_L02	12	70		
+p4Ra_L02	13	33		
+p4Ra_L02	14	22		
+p4Ra_L02	15	80?		
+p4Ra_L03	1	8		
+p4Ra_L03	2	61		
+p4Ra_L03	3	48?		
+p4Ra_L03	4	64?		
+p4Ra_L03	5	94?		
+p4Ra_L03	6	43		
+p4Ra_L03	7	34?		
+p4Ra_L03	8	87?		
+p4Ra_L03	9	61		
+p4Ra_L03	10	59?		
+p4Ra_L03	11	46?		
+p4Ra_L03	12	29		
+p4Ra_L03	13	41?		
+p4Ra_L03	14	61?		
+p4Ra_L04	1	70		
+p4Ra_L04	2	7		
+p4Ra_L04	3	36		
+p4Ra_L04	4	47?		
+p4Ra_L04	5	17		
+p4Ra_L04	6	94		
+p4Ra_L04	7	66		
+p4Ra_L04	8	92		
+p4Ra_L04	9	46?		
+p4Ra_L04	10	43?		
+p4Ra_L04	11	23		
+p4Ra_L04	12	81		
+p4Ra_L04	13	65?		
+p4Ra_L05	1	5?		
+p4Ra_L05	2	17		
+p4Ra_L05	3	63		
+p4Ra_L05	4	77?		
+p4Ra_L05	5	65?		
+p4Ra_L05	6	11		
+p4Ra_L05	7	47?		
+p4Ra_L05	8	93?		
+p4Ra_L06	1	80		
+p4Ra_L06	2	39?		
+p4Ra_L06	3	64?		
+p4Ra_L06	4	12		
+p4Ra_L06	5	42		
+p4Ra_L06	6	68		
+p4Ra_L06	7	88		
+p4Ra_L06	8	16		intext
+p4Ra_L06	9	27		intext
+p4Ra_L07	1	95?		
+p4Ra_L07	2	22		
+p4Ra_L07	3	93		
+p4Ra_L07	4	9		
+p4Rb_L01	1	14		
+p4Rb_L01	2	69		
+p4Rb_L01	3	85?		
+p4Rb_L01	4	47?		
+p4Rb_L01	5	83		
+p4Rb_L01	6	9		
+p4Rb_L01	7	22		
+p4Rb_L01	8	69		
+p4Rb_L01	9	43		
+p4Rb_L01	10	23		
+p4Rb_L01	11	36		
+p4Rc_L01	1	80		
+p4Rc_L01	2	99?		
+p4Rc_L01	3	41?		
+p4Rc_L01	4	89		
+p4Rc_L01	5	9		
+p4Rc_L01	6	64?		
+p4Rc_L01	7	77?		
+p4Rc_L01	8	69		
+p4Rc_L01	9	7		
+p4Rc_L01	10	62		
+p4Rc_L02	1	95?		
+p4Rc_L02	2	57?		
+p4Rc_L02	3	93		
+p4Rc_L02	4	33		
+p4Rc_L02	5	24?		
+p4Rc_L02	6	81		
+p4Rc_L02	7	21		
+p4Rc_L02	8	7		
+p4Rc_L02	9	66		
+p4Rc_L03	1	43		
+p4Rc_L03	2	81		
+p4Rc_L03	3	17		
+p4Rc_L03	4	36		
+p4Rc_L03	5	1?		
+p4Rc_L03	6	83		
+p4Rc_L03	7	9		
+p4Rc_L03	8	65?		
+p4Rc_L04	1	29		
+p4Rc_L04	2	65?		
+p4Rc_L04	3	17		
+p4Rc_L04	4	53?		
+p4Rc_L04	5	65?		
+p4Rc_L05	1	74?		
+p4Rc_L05	2	79		
+p4Rc_L05	3	12		
+p4Rc_L05	4	93		
+p4Rc_L05	5	60		
+p4Rc_L05	6	10		
+p4Rc_L05	7	48?		
+p4Rc_L05	8	39		
+p4Rc_L05	9	84?		
+p4Rc_L05	10	29		
+p4Rc_L05	11	49?		
+p4Rc_L06	1	63		
+p4Rc_L06	2	53		
+p4Rc_L06	3	11		
+p4Rc_L06	4	47?		
+p4Rc_L06	5	22		
+p4Rc_L07	1	83		
+p4Rc_L07	2	33		
+p4Rc_L07	3	94		
+p4Rc_L07	4	77		
+p4Rc_L07	5	41?		
+p4Rc_L07	6	8		
+p4Rc_L07	7	95?		
+p4Rc_L07	8	27		
+p4Rc_L07	9	65?		
+p4Rc_L08	1	43		
+p4Rc_L08	2	93		
+p4Rc_L08	3	18		
+p4Rc_L08	4	91		
+p4Rc_L08	5	66		
+p4Rc_L08	6	74?		
+p4Rc_L08	7	81		
+p4Rc_L08	8	23		
+p4Rc_L09	1	29?		
+p4Rc_L09	2	47		
+p4Rc_L09	3	23		
+p4Rc_L09	4	93		
+p4Rc_L09	5	13		
+p4Rc_L09	6	6		
+p4Rc_L09	7	96		
+p4Rc_L09	8	38?		
+p4Rc_L09	9	24?		
+p4Rc_L09	10	9		
+p4Rc_L09	11	71?		
+p4Rc_L09	12	42?		
+p4Rc_L10	1	30?		
+p4Rc_L10	2	94		
+p4Rc_L10	3	61		
+p4Rc_L10	4	8		
+p4Rc_L10	5	84?		
+p4Rc_L10	6	90		
+p4Rc_L10	7	17		
+p4Rc_L10	8	35?		
+p4Rc_L10	9	47?		
+p4Rc_L10	10	74?		
+p4Rc_L11	1	53?		
+p4Rc_L11	2	89		
+p4Rc_L11	3	8		
+p4Rc_L11	4	47?		
+p4Rc_L11	5	81		
+p4Rc_L11	6	41		
+p4Rc_L12	1	42?	2	
+p4Rc_L12	2	81?	o	
+p4Rc_L12	3	84?	s	
+p4Rc_L12	4	69?	b?	
+p4Rc_L12	5	52?	e	
+p4Rc_L12	6	6?	c?	
+p4Rc_L12	7	91?	o	
+p4Rc_L12	8	81		
+p4Rc_L12	9	20		
+p4Rc_L12	10	52?		
+p4Rc_L12	11	40		
