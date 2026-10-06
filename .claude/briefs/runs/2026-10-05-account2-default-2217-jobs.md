@@ -130,3 +130,16 @@ D2B-RUBIN's next step (NOTES.md line ~188): one blind pass of the 2018 image and
 fetch once) at the vmie/vnie glyph and Block C, crops only (crop step mandatory), done BEFORE opening variants-fbi-1953.tsv; then reconcile
 against it. Edit ciphertext.txt only with a dated NOTES.md entry naming each change and its witnesses (rule: never silently repaired); keep a
 variants column for anything unsettled. No reading claimed.
+
+# Wave 4 (lane orchestrator, 00:3x UTC 6 Oct; last wave)
+
+### D2B-ROELL3 -- roell-vandedem-1809, NA 2.01.08 inv. 348 last Van Dedem / first Testa scans (cap 3, box 35 min)
+Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+D2B-ROELL / ROELL2's "cheaper second look (~USD 2)": inv. 348 (508 scans) -- bracket the 7-24 Feb 1809 handover by thumbnails, then read the
+scans around it for a clear copy or minute of the R1469/R1470 letter. Same IIIF rules as ROELL2 (>= 1.5 s, <= 40 requests, crops only to
+subagents). Record what was seen in NOTES.md and the scans TSV.
+
+### D2B-RUMPF -- rumpf-vandebie-heinsius-1716-19, re-probe NA 3.01.19 inv. 2030 / 2044 availability (cap 2, box 20 min)
+Intake gate (00:3x UTC): see the pasted line in the ROOM claim. NOTES.md "While waiting": 2 requests to the two item pages'
+drupal-settings-json (viewer.response availability/scans); if either is now digitised, record the scan count and IIIF info.json and stop
+(no transcription in this job). Record the result with the date either way.
