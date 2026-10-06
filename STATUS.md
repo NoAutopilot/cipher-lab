@@ -5025,3 +5025,31 @@ Open for the next lane:
 2. decode-1411: post-hoc words (konig, ostsee, capitulation, captain) logged untested; next per its NOTES (word-coverage test on p.3).
 3. eckert-1862/1864: the new N2-E conflict (key "Spit = Near" vs OR "men"), white/Lehigh conflicts held M; eckert-1864 D/F/I print not located
    beyond one OR volume each.
+
+## LANE DEFAULT-account-1-20261005-2217 handoff (session_019Kz7yPGospqiXe5Jxz6ffm, account 1), 6 October 2026 (closed 00:2x UTC: four waves run, lane about 49 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-05-account1-default-2217-jobs.md. Gate 0a met at 22:59 (SESSION-SWEEP-account-1
+done 22:49, nothing to exclude). Backlog: VERIFY-BACKLOG.tsv (fr16142-noailles Audit 2), then plain `tools/next_steps.py` runnable rows, folders a-l
+(account 2 takes m-z). 21 workers (16 Opus, 5 Sonnet search-only) in four waves: 20 D/Q/N, 1 D- (D2-PIS275 1.32x cap); workers 41.49 + orchestrator
+about 7.6. No reading changed grade class; no new N-class except Audit 2 confirmations.
+- Verifier/re-derivation: fr16142-noailles c262 and c510-516 Audit 2, both N0 D0 upheld (D2-NOXA2; note Charriere credits Freville 1853 with
+  deciphering other fr.16142 letters); clairambault1225-paget rule-7 re-derivation byte-identical, 0/505 differ (D2-PAGR7).
+- Solver results: eckert-1862 13/113 '?' entries booked by dated OR match, 57 aligned (AGREE 0.387 vs control 0.073), 1 of 19 zero-agree entries moved
+  to the other book; eckert-1864 Spit/men logged as a rule-4 data conflict (both key books read Near, OR prints men); lambeth-bacon-649 Baconiana 1897
+  values read from page images (74 81, not 71 81; 5 dotted = a-grave).
+- Access/check-solved: baluze103 DECODE R2742 = f.50 images + Tomokiyo key table, no plaintext, transcriptions empty; check-solved verdict OPEN --
+  the next step is transcribing f.50 against the key (recovery candidate). fr3198-labbe: fr.4695 no.51 (ff.116-117) and no.55 (f.125) are clear
+  letters; no key sheet; next: piece lists of fr.3198-3200 / fr.4696-4715.
+- Non-tests / negatives with controls: fr3151-seure R2 FAIL (power only at 0% nulls); fr16142 c262 blind gloss read control 0.714 < 0.80;
+  baluze167 exemplar labeller non-test (oracle ceiling 0.667 < gate); antt-linhares 329011 still 3/3/8; fr16045 f.275v L17-L20 kp86j FAIL third
+  attempt (kp86d retired for these lines); hellen R4386 words-level FAIL with control power 1.000 -> 1763 gap no-key-material (NEAR.md row
+  updated by the orchestrator).
+- Edition searches (Sonnet, rule 10 search results only): fr3975-vieuville, clairambault528-bouillon, clerville-francia found nothing;
+  arsenal-dallion found Recueil t.VIII instructions to d'Alion with cipher tables (no Lanmary dispatch).
+Open for the next lane / parent:
+1. **Unpublished sorter:** ciphers/decode-1162-modena-ambung-1492/sorter/modena-gq-sorter.html (31 g/q tiles, ASKS 144) needs an Artifact publish
+   with capabilities {"db": {}} and its link added to ASKS 144; this session's permission policy refused the publish -- a parent or the owner does it.
+2. baluze103: transcribe f.50 (images on DECODE R2742) and apply Tomokiyo's key, ~$4 (check-solved OPEN, 23:44 UTC).
+3. fr16045 f.275v L17-L20: read the later-hand interlinear gloss over those lines as a C witness, ~$2.
+4. fr16142 c262 gloss: a blind read with a different instrument (word-level crops) or a person; two machine control reads have failed.
+5. hellen R1953 codes 1-800 image check, ~$6.
