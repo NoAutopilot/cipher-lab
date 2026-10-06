@@ -1,10 +1,10 @@
-# LANE DEFAULT-account-2-20261006-2209 jobs (account 2) -- 6 Oct 2026 22:3x UTC, lane orchestrator session_01DfJ7KB48PGfFxMBC3v3gpk
+# LANE DEFAULT-account-2-20261006-2209 jobs (account 2) -- 6 Oct 2026 22:1x UTC, lane orchestrator session_01DfJ7KB48PGfFxMBC3v3gpk
 
 Lane brief: .claude/briefs/default-lane.md (cap 60, box 22:11 UTC 6 Oct - 08:11 UTC 7 Oct). Gate 0a clear (SESSION-SWEEP-account-2 done
 23:21 5 Oct). VERIFY-BACKLOG: only actionable rows are Birago (off limits) and nla-heinrich audit2 (class N0, gate 2 needs it only above N1:
 not briefed). NEXT-STEPS --hot-only: 32 runnable rows, most worked today by RUN7-RUN15 (account 2), RUN12 (account 1), RUN13 (account 4) and
 DEFAULT-account-1; rows touched in ROOM in the last 6 h or whose named step already ran are not briefed. Off limits: Birago (incl.
-nevers-birago-fr3251-1572), Armstrong, Debosnys. Gallica probe 22:3x UTC: IIIF manifest HTTP 200.
+nevers-birago-fr3251-1572), Armstrong, Debosnys. Gallica probe 22:1x UTC: IIIF manifest HTTP 200.
 Every worker: Opus 5.5, one job, then stop. Each job first checks that its named step is still undone (a dated NOTES.md section may already
 have run it); if so, correct the NOTES.md next-step line, stop and report rather than inventing work.
 
@@ -36,7 +36,7 @@ have run it); if so, correct the NOTES.md next-step line, stop and report rather
 - Done: one ROOM line `done (<start>-<end> UTC by date -u, brief met|stopped at cap): <result, commit>` "for LANE DEFAULT-account-2-20261006-2209",
   then a five-line final report.
 
-## Wave 1 (spawned 22:4x UTC 6 Oct). Intake gate output (22:3x UTC) pasted per job.
+## Wave 1 (spawned 22:15 UTC 6 Oct). Intake gate output (22:1x UTC) pasted per job.
 
 ### D22-COL26P -- colbert26-lathuillerie-1644: per-code positional test of the open f.23 codes (Opus; cap 3, box 45 min; scripts only)
 Intake: `colbert26-lathuillerie-1644: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
@@ -84,3 +84,26 @@ the tiles yourself (or 2 blind Sonnet calls on the tile batch, 1 reconciliation)
 rank vs the 201-key control. Grade per token (S only if shape and score agree; else M). decode --check exit 0 if anything changes; Remaining
 gaps / Escalation; gaps_check passes. If the instrument proves unable to separate S65/S80 on f.21v, mark the step [retired] with the
 instrument named.
+
+## Wave 2 (spawned 22:3x UTC 6 Oct)
+
+### D22-FTS -- six "depends on nobody" printed-source searches, one Sonnet worker (Sonnet; cap 5, box 75 min; ~0.6 per item + 1 write-up)
+Catalogue/full-text search only: no transcription, no decoding, no vision beyond reading a hit page's OCR text. Each item: check the
+named step is still undone (read the folder's NOTES.md "While waiting"/Premise check and the last dated section); run it; append a dated
+section "## D22-FTS (6 Oct 2026)" to that folder's NOTES.md with every query, host, hit count and the snippet of any hit, and update the
+"While waiting" line (mark [done], name what is left). Hits are search results for the log, never a novelty or found-solved verdict
+(rule 10); if a hit looks like a printed clear text or decipherment of the very item, say so in ROOM with a flag line for the lane and stop
+that item there. Hosts: archive.org advancedsearch / be-api fts, Google Books API (key + country=US), Huygens retroboeken (>=2 s), Gallica
+SRU; per CLAUDE.md host table, one request at a time >=1.5 s apart, report counts per host. Intake (22:3x UTC): sacchetti and 9970 open
+with citation found; belmesseri, salvago, della-torre "blocked, already terminal"; heinsius-dopff open with citation found.
+1. bl-sacchetti-nunzio-1623: Barberini-side nunciature editions (Nuntiaturberichte / Barb. lat. series) by full text for "Sacchetti" with
+   "cifra"/"ziffera".
+2. belmesseri-napoli-1627: the folder's pass (d) -- Spanish-side literature full-text search (IA be-api/advancedsearch, Google Books).
+3. salvago-caraffa-1691: Atti della Società Ligure di Storia Patria (memoriedigitaliliguri.it, reachability test first; IA copies if any)
+   for "Caraffa" 1691 and "Coysis".
+4. della-torre-olanda-1690: Huygens retroboeken Staten-Generaal / Resolutien 1690 for Della Torre's mission (clear copy of a despatch).
+5. decode-9970-simancas-1527: read Galende 1994 p.163 (shallow clone of github.com/dbourdeau/cyphersolver into your scratchpad, grep
+   esp318/lit/galende1994.txt only; MIT/CC BY, cite) for the 1527 letter's Simancas Estado leg. 1563 citation.
+6. heinsius-dopff-1702: Marlborough-side editions not yet grepped (Snyder, Marlborough-Godolphin Correspondence; Murray's Letters and
+   Dispatches) for the 1702 letters, IA full text.
+Stop at the cap; items not reached are listed as not reached in your done line.
