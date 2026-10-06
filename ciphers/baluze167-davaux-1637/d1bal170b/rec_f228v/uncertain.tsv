@@ -1,0 +1,8 @@
+line	col	A	B	flagged	crop	both_conf
+b170f228v_a_L01	10	s:ll	s:ll	B		A:H/B:M
+b170f228v_a_L01	15	s:m4	s:m4	B		A:H/B:M
+b170f228v_b_L01	9	s:ll	s:ll	B		A:H/B:M
+b170f228v_b_L04	13	77'	77'	A		A:M/B:H
+b170f228v_b_L05	7	s:ll	s:ll	B		A:H/B:M
+b170f228v_b_L06	2	29:	29:	A		A:M/B:H
+b170f228v_b_L06	4	s:ll	s:ll	B		A:H/B:M

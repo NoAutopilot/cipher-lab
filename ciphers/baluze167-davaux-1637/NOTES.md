@@ -700,3 +700,47 @@ signs unlabelled. 170 f.228-229v (4 leaf-pages, ~42 cipher lines): f.228r reconc
 - [ ] image-check: 170 c239-240 native crops cut for f.228r-v (D1-BAL170); f.229r-v (c240 right, c241 left) still to crop
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut after a clipped first cut (D1-BAL170)
 Verdict: keep going: 3 internal gaps; cheapest next: re-pass f.228r on the re-cut crops and pass f.228v (crops ready), ~$3, then f.229r-v or a sign sorter
+
+## D1-BAL170B (account 1 worker, for LANE DEFAULT-account-1-20261006-1240), 6 Oct 2026, 13:50-13:5x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md` job D1-BAL170B. No novelty class. Intake gate (pasted in the brief):
+`baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`. PREREG addendum
+`d1bal170b/PREREG-D1BAL170B.md` pushed (de303bbc2) before any pass. Prompts: `d1bal170b/prompt_*.txt` (= d1bal170/prompt.txt with files filled in).
+
+**Result: both pages split above the 0.10 gate -> reconciled by eye, stopped (sign sorter next). Not decoded.**
+| page | comparison | signs | agree | split |
+|---|---|---|---|---|
+| f.228r (re-cut crops) | pass C vs reconciled sheet (primary) | 35 | 25 | 0.286 (0.229 with the two ff-label-only differences counted as agreement) |
+| f.228r | pass C vs D1-BAL170 pass A / pass B (secondary, clipped-crop passes) | 35 / 36 | 26 / 24 | 0.257 / 0.333 |
+| f.228v | pass A vs pass B | 119 | 104 | 0.126 |
+(`tools/reconcile_passes.py` without --keep-plain on norm.py output; d1bal170b/rec_f228r_C_*, d1bal170b/rec_f228v. Agreement between two Sonnet
+passes, not accuracy.)
+What the split is made of: the numerals' digits agree almost everywhere; the disagreements are (1) whether a stroke above a number is a mark
+(f.228r 6 of 8 real disagreements; f.228v 4 of 15) -- the curled top of this hand's 6 and descenders from the line above both mimic an acute;
+(2) the u4/4u pair (f.228v 4) and ll|u4 (f.228r 1), the ambiguous classes D1-BAL167 already named; (3) a q-shaped sign (f.228v 7, pass A
+"q-like", pass B "9"), settled as the letter sign s:q: straight descender unlike the curved-tail 9 in 19' on the same line, and key.tsv has L:q
+and no unmarked 9. So the re-cut fixed the clipping but not the mark-detection problem; a third machine pass would not settle marks.
+Reconciled: `passes/reconciled_b170f228v.tsv` (119 cipher tokens, 16 marked ?), `passes/reconciled_b170f228r.tsv` updated in place (header log:
+a_L02 16 73 carry no mark/bar, c_L01 86 no tick, the sign after 33: is s:u4 not y+; 7 tokens marked ?). f.228r+v now 154 cipher tokens.
+Grades (rule 4): no reading claimed; key.tsv, ciphertext.txt, reading.txt unchanged. Requests: none (crops on disk). Subagents: 3 Sonnet calls
+(f.228r C, f.228v A, B); reconciliation by this worker from 8 crop views.
+Suggestion (not done): the sorter for this hand should have piles for s:q, the crossed minim+4 (u4) vs 4u, ff, and a mark/no-mark check on
+numbers ending in 6.
+
+## Remaining gaps (D1-BAL170B, 6 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter
+signs unlabelled. 170 f.228-229v (4 leaf-pages, ~42 cipher lines): f.228r and f.228v reconciled (35 + 119 tokens, passes split 0.286 / 0.126), f.229r-v not started.
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 ff.228-229v bare passage - blocker: not-attempted; f.228r-v passes split > 0.10 even on re-cut crops, mostly marks over numbers and the u4/4u pair (D1-BAL170B); next: a sign sorter for the owner (letter signs h, y+, u4/4u, wave/v, ff, q; plus mark/no-mark tiles for numbers ending in 6), via the account-3 orchestrator, ~$2; then a provisional decode of f.228 with key.tsv, marks graded M, and crop and pass f.229r-v, ~$5
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (6 Oct 2026, D1-BAL170B)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3); f.166 glosses agree with key.tsv on every numeral used to split a word (D1-BAL167); L:q used to settle the q-like sign on 170 f.228v (D1-BAL170B)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); exemplar set enlarged to 63 court-hand signs (D1-BAL167, per-shape ceiling 0.698) but f.247's b/L/K/u forms have no glossed counterpart; untried: a glossed text in the f.247 hand
+- [ ] image-check: 170 f.228r-v crops passed and reconciled (D1-BAL170, D1-BAL170B); f.229r-v (c240 right, c241 left) still to crop
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B)
+Verdict: keep going: 3 internal gaps; cheapest next: a sign sorter for the 170 f.228 hand (~$2), then f.228 provisional decode and f.229r-v crops and passes

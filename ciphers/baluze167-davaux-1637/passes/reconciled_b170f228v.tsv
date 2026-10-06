@@ -1,0 +1,15 @@
+# D1-BAL170B, 6 Oct 2026: f.228v reconciled by eye from the crops (b170f228v_*) between Sonnet passes A and B (passes/passA_, passB_b170f228v.tsv).
+# Split A vs B 15/119 = 0.126 (> 0.10 gate; agreement, not accuracy). Settled: 7x q-like sign (A s:?(q-like), B 9) -> s:q: straight descender,
+# unlike the curved-tail 9 in 19' on the same line, and key.tsv has L:q but no unmarked 9; 4x A u4 / B 4u -> s:u4 (crossed minim+4 form; M,
+# the u4/4u pair is the ambiguous class, D1-BAL167); 44' (a_L01), 76' (b_L01, b_L05), 86' (b_L03, b_L06): a detached stroke over the 6/4
+# is visible in the crop -> marked, graded M (a 6's curled top can mimic a tick). Clear words in braces as both passes read them.
+line	tokens
+b170f228v_a_L01	55 s:hook 71' s:w s:4u s:u4 22 s:h 62 s:ll? 71' 66 s:h 16 s:m4? 44'? s:hook
+b170f228v_a_L02	26' 12 41' s:u4? {tous ajustemens raisonnables pour le bien}
+b170f228v_b_L01	{tesmoigne quil a quelque} s:q 65' s:p s:h 76' 61' 14' 40' s:ll? s:u4? s:g+
+b170f228v_b_L02	s:r 65' 81' 96 10' 19' s:q s:hook 16 44' 51' 6' s:gam s:y+ s:r 40' s:q 13 s:m4 48'
+b170f228v_b_L03	16 s:g+ s:u4 86'? 10: 95' 51' 47' s:hook {et quainsy} 9: 96 73= 73' s:p 95'
+b170f228v_b_L04	s:u4 90' s:u4 65' s:p s:h s:q s:u4 s:hook 16 71' 66 77'? 66 s:y+ s:q 30' 14 s:h 16
+b170f228v_b_L05	8: 13' s:hook 76'? {Pour} 14' 40' s:ll? s:u4? s:g+ s:r 65' 81' {j ay peine a le}
+b170f228v_b_L06	{croire veu} 41' 29:? 61' s:ll? 41' s:u4? 98' {depuis peu} 86'? 1= {mais pour}
+b170f228v_b_L07	10: 19' s:q s:hook 16 44' 51' 6' s:gam s:y+ s:r {cest chose qui nest pas}

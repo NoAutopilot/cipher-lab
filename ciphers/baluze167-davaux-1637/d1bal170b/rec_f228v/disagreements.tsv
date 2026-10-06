@@ -1,0 +1,16 @@
+line	col	A	B	flagged	crop
+b170f228v_a_L01	16	44'	44		
+b170f228v_a_L02	4	s:u4	s:4u		
+b170f228v_b_L01	1	s:?(q-like)	9	B	
+b170f228v_b_L01	5	76'	76		
+b170f228v_b_L01	10	s:u4	s:4u		
+b170f228v_b_L02	7	s:?(q-like)	9	B	
+b170f228v_b_L02	17	s:?(q-like)	9	B	
+b170f228v_b_L03	4	86'	86		
+b170f228v_b_L04	7	s:?(q-like)	9	B	
+b170f228v_b_L04	16	s:?(q-like)	9	B	
+b170f228v_b_L05	4	76'	76		
+b170f228v_b_L05	8	s:u4	s:4u		
+b170f228v_b_L06	6	s:u4	s:4u		
+b170f228v_b_L06	8	86'	86		
+b170f228v_b_L07	3	s:?(q-like)	9	B	

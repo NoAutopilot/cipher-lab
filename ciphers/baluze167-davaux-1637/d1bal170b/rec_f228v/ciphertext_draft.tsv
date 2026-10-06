@@ -1,0 +1,120 @@
+line	position	sign	confidence	alt	why
+b170f228v_a_L01	1	55	H		agree
+b170f228v_a_L01	2	s:hook	H		agree
+b170f228v_a_L01	3	71'	H		agree
+b170f228v_a_L01	4	s:w	H		agree
+b170f228v_a_L01	5	s:4u	H		agree
+b170f228v_a_L01	6	s:u4	H		agree
+b170f228v_a_L01	7	22	H		agree
+b170f228v_a_L01	8	s:h	H		agree
+b170f228v_a_L01	9	62	H		agree
+b170f228v_a_L01	10	s:ll	M		agree-flagged
+b170f228v_a_L01	11	71'	H		agree
+b170f228v_a_L01	12	66	H		agree
+b170f228v_a_L01	13	s:h	H		agree
+b170f228v_a_L01	14	16	H		agree
+b170f228v_a_L01	15	s:m4	M		agree-flagged
+b170f228v_a_L01	16	44'	M	B:44	differ
+b170f228v_a_L01	17	s:hook	H		agree
+b170f228v_a_L02	1	26'	H		agree
+b170f228v_a_L02	2	12	H		agree
+b170f228v_a_L02	3	41'	H		agree
+b170f228v_a_L02	4	s:u4	M	B:s:4u	differ
+b170f228v_b_L01	1	s:?(q-like)	M	B:9	differ
+b170f228v_b_L01	2	65'	H		agree
+b170f228v_b_L01	3	s:p	H		agree
+b170f228v_b_L01	4	s:h	H		agree
+b170f228v_b_L01	5	76'	M	B:76	differ
+b170f228v_b_L01	6	61'	H		agree
+b170f228v_b_L01	7	14'	H		agree
+b170f228v_b_L01	8	40'	H		agree
+b170f228v_b_L01	9	s:ll	M		agree-flagged
+b170f228v_b_L01	10	s:u4	M	B:s:4u	differ
+b170f228v_b_L01	11	s:g+	H		agree
+b170f228v_b_L02	1	s:r	H		agree
+b170f228v_b_L02	2	65'	H		agree
+b170f228v_b_L02	3	81'	H		agree
+b170f228v_b_L02	4	96	H		agree
+b170f228v_b_L02	5	10'	H		agree
+b170f228v_b_L02	6	19'	H		agree
+b170f228v_b_L02	7	s:?(q-like)	M	B:9	differ
+b170f228v_b_L02	8	s:hook	H		agree
+b170f228v_b_L02	9	16	H		agree
+b170f228v_b_L02	10	44'	H		agree
+b170f228v_b_L02	11	51'	H		agree
+b170f228v_b_L02	12	6'	H		agree
+b170f228v_b_L02	13	s:gam	H		agree
+b170f228v_b_L02	14	s:y+	H		agree
+b170f228v_b_L02	15	s:r	H		agree
+b170f228v_b_L02	16	40'	H		agree
+b170f228v_b_L02	17	s:?(q-like)	M	B:9	differ
+b170f228v_b_L02	18	13	H		agree
+b170f228v_b_L02	19	s:m4	H		agree
+b170f228v_b_L02	20	48'	H		agree
+b170f228v_b_L03	1	16	H		agree
+b170f228v_b_L03	2	s:g+	H		agree
+b170f228v_b_L03	3	s:u4	H		agree
+b170f228v_b_L03	4	86'	M	B:86	differ
+b170f228v_b_L03	5	10:	H		agree
+b170f228v_b_L03	6	95'	H		agree
+b170f228v_b_L03	7	51'	H		agree
+b170f228v_b_L03	8	47'	H		agree
+b170f228v_b_L03	9	s:hook	H		agree
+b170f228v_b_L03	10	9:	H		agree
+b170f228v_b_L03	11	96	H		agree
+b170f228v_b_L03	12	73=	H		agree
+b170f228v_b_L03	13	73'	H		agree
+b170f228v_b_L03	14	s:p	H		agree
+b170f228v_b_L03	15	95'	H		agree
+b170f228v_b_L04	1	s:u4	H		agree
+b170f228v_b_L04	2	90'	H		agree
+b170f228v_b_L04	3	s:u4	H		agree
+b170f228v_b_L04	4	65'	H		agree
+b170f228v_b_L04	5	s:p	H		agree
+b170f228v_b_L04	6	s:h	H		agree
+b170f228v_b_L04	7	s:?(q-like)	M	B:9	differ
+b170f228v_b_L04	8	s:u4	H		agree
+b170f228v_b_L04	9	s:hook	H		agree
+b170f228v_b_L04	10	16	H		agree
+b170f228v_b_L04	11	71'	H		agree
+b170f228v_b_L04	12	66	H		agree
+b170f228v_b_L04	13	77'	M		agree-flagged
+b170f228v_b_L04	14	66	H		agree
+b170f228v_b_L04	15	s:y+	H		agree
+b170f228v_b_L04	16	s:?(q-like)	M	B:9	differ
+b170f228v_b_L04	17	30'	H		agree
+b170f228v_b_L04	18	14	H		agree
+b170f228v_b_L04	19	s:h	H		agree
+b170f228v_b_L04	20	16	H		agree
+b170f228v_b_L05	1	8:	H		agree
+b170f228v_b_L05	2	13'	H		agree
+b170f228v_b_L05	3	s:hook	H		agree
+b170f228v_b_L05	4	76'	M	B:76	differ
+b170f228v_b_L05	5	14'	H		agree
+b170f228v_b_L05	6	40'	H		agree
+b170f228v_b_L05	7	s:ll	M		agree-flagged
+b170f228v_b_L05	8	s:u4	M	B:s:4u	differ
+b170f228v_b_L05	9	s:g+	H		agree
+b170f228v_b_L05	10	s:r	H		agree
+b170f228v_b_L05	11	65'	H		agree
+b170f228v_b_L05	12	81'	H		agree
+b170f228v_b_L06	1	41'	H		agree
+b170f228v_b_L06	2	29:	M		agree-flagged
+b170f228v_b_L06	3	61'	H		agree
+b170f228v_b_L06	4	s:ll	M		agree-flagged
+b170f228v_b_L06	5	41'	H		agree
+b170f228v_b_L06	6	s:u4	M	B:s:4u	differ
+b170f228v_b_L06	7	98'	H		agree
+b170f228v_b_L06	8	86'	M	B:86	differ
+b170f228v_b_L06	9	1=	H		agree
+b170f228v_b_L07	1	10:	H		agree
+b170f228v_b_L07	2	19'	H		agree
+b170f228v_b_L07	3	s:?(q-like)	M	B:9	differ
+b170f228v_b_L07	4	s:hook	H		agree
+b170f228v_b_L07	5	16	H		agree
+b170f228v_b_L07	6	44'	H		agree
+b170f228v_b_L07	7	51'	H		agree
+b170f228v_b_L07	8	6'	H		agree
+b170f228v_b_L07	9	s:gam	H		agree
+b170f228v_b_L07	10	s:y+	H		agree
+b170f228v_b_L07	11	s:r	H		agree
