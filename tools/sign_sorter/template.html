@@ -434,7 +434,7 @@ function tileEl(sid, pid, cls){
   const b = document.createElement('button'); b.type = 'button'; b.dataset.sid = sid;
   b.className = 't' + cls + (fq ? ' fq' : '');
   b.title = sid + (fq ? ' (check this one: ' + focusQ[sid] + ')' : '') + (cls.includes('in') ? ' (moved here from ' + homeOf[sid] + ')' : '') + (cls.includes('out') ? ' (set aside)' : '') +
-    '. Tap: take out of this pile. Hold: see it larger.';
+    '. Tap: take out of this pile. Drag (mouse): move to another pile. Hold: see it larger.';
   b.setAttribute('aria-label', sid + ': tap to take out, hold to see larger');
   const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false;
   b.append(im);
@@ -451,7 +451,27 @@ function tileEl(sid, pid, cls){
       g.title = fq ? 'Looks right: approve it in ' + pid : 'Approved. Tap to undo the approval';
       g.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); approveTile(sid, pid, !fq); }); } }
   attachPress(b, () => tapMode === 'look' ? showCtx(sid, pid) : takeOut(sid, b), () => showCtx(sid, pid));
+  pileDrag(b, sid, pid);
   return b;
+}
+// drag a sign straight from one pile onto another with a mouse or pen (touch keeps tap-out + tray, so a swipe still scrolls)
+function pileDrag(b, sid, pid){
+  let d = null;
+  const pileAt = (x, y) => { const e = document.elementFromPoint(x, y); const p = e && e.closest ? e.closest('.pile') : null; return p && p.dataset.pile ? p : null; };
+  const mark = () => { const p = pileAt(d.x, d.y); if (p !== d.over){ if (d.over) d.over.classList.remove('dropover'); if (p && p.dataset.pile !== pid) p.classList.add('dropover'); d.over = p; } };
+  const loop = () => { if (!d) return; const top = barBottom() + 40, bot = window.innerHeight - 40;
+    if (d.y < top) window.scrollBy(0, -Math.min(28, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(28, (d.y - bot) / 2 + 4));
+    mark(); d.raf = requestAnimationFrame(loop); };
+  b.addEventListener('pointerdown', e => { if (e.button > 0 || e.pointerType === 'touch') return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0}; });
+  b.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
+    if (!d.on && Math.hypot(d.x - d.sx, d.y - d.sy) > 10){ d.on = true; try { b.setPointerCapture(e.pointerId); } catch (er) {}
+      const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g; d.raf = requestAnimationFrame(loop); }
+    if (d.ghost){ e.preventDefault(); d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; } });
+  const end = (e, drop) => { if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
+    if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover');
+    const p = drop && pileAt(e.clientX, e.clientY); if (!p || p.dataset.pile === pid) return; const to = p.dataset.pile;
+    remember([sid]); setDest(sid, to); note_('Moved ' + sid + ' from ' + pid + ' to pile ' + to + '.'); renderSome([pid, to]); offerCluster([sid], to); };
+  b.addEventListener('pointerup', e => end(e, true)); b.addEventListener('pointercancel', e => end(e, false));
 }
 
 function pileEl(p, piles){
