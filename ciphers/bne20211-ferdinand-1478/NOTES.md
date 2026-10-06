@@ -438,12 +438,32 @@ is the limit, not the image (ASKS 143, the sorter). Pass B was therefore stopped
 No tokens graded (H 0 / C 0 / S 0 / M 0); no PROGRESS.tsv row. Report: what was read and where not found; no novelty words.
 Cost: see the lane ledger (8 Sonnet calls + 1 Opus call).
 
+## FER126-ALIGN2, 6 Oct 2026 05:37-05:4x UTC (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA; brief .claude/briefs/runs/2026-10-06-acct3-fer126-align2.md)
+
+New instrument (PREREG-ALIGN2.md, pushed c687ec9f before any reader call): candidate-constrained gloss verification with decoys.
+Candidates (`align2_candidates.py`): per line, the numerals LANE-PRIV1's two blind passes agree on, decoded with Tomokiyo Fig. 4
+(unbracketed values) -> 299 syllables over all 39 cipher lines (f.1r R01-R28, f.1v V01-V11; the owner's f.1v shots confirm 11
+cipher lines + the clear closing). Decoys: another line's list (not adjacent, closest length), 295 syllables. Gloss-centred crops
+from the colour shots (1-3.webp; f1v-3.webp for f.1v), `tools/iiif_lines.py --centres <cipher centre - 34 (f.1r) / - 30 (f.1v)>
+--max-width 2400`, upscaled to <= 2400 px; 3 spot-checked (R05's gloss readable by eye: "a res su dique ... men te con").
+78 items shuffled (seed 20261006), 8 packs, 4 Sonnet calls.
+
+**Result: GATE FAIL, untested-by-this-tool.** Real yes 0/299 = 0.000, decoy yes 0/295 = 0.000, difference 0.000, real > decoy on
+0/39 lines (gate: difference >= 0.30, decoy <= 0.15, 2/3 of lines). Every answer from all four readers was "?": "the grey ink was
+too faint and small to read at the displayed resolution". This is not the agreeing-reader failure the decoy guards against (decoy
+yes stayed 0); the Sonnet reader cannot see the grey ink at this resolution at all, so the instrument is untested on this material,
+not a negative about Fig. 4 or the gloss. No tokens graded (H 0 / C 0 / S 0 / M 0); no PROGRESS.tsv row. Steps 3-4 not run.
+Not tried within this job: the same items with an Opus reader (the Opus blind trial in FER126-ALIGN read about 30-35% of gloss
+letters, so it may answer y/n where Sonnet abstains); it is a reader change after a failed gate, so it is named as the next step
+with its own pre-registration rather than run here (8 Opus calls, about the whole cap of this job).
+Report: what was read and where not found; no novelty words (rule 10). Cost: see the lane ledger (4 Sonnet calls).
+
 ## Remaining gaps (finish-or-blocker pass, 5 Oct 2026)
 Read so far: 0% of cipher tokens graded H/C/S; the period decipherment is in two unreconciled passes (15 lines, about 50% agreed spans)
 - cipher block sign transcription (22 lines, about 1,400 glyphs) - blocker: waiting-on ASKS row 143 (the owner's sign sorter); the screenshots are legible, but two blind passes split on 17% of glyphs and the shape labels lump the t-based signs (30% of glyphs); next: settle the alphabet in tools/sign_sorter.py on the set1-4/5/6 crops (focus: t/tt/tb/crossed-t, e/e:/c, d/d.), then 2 passes against the settled labels, ~$6
 - period decipherment reconciliation (15 lines) - blocker: not-attempted; the two passes disagree on most words below D08; next: reconcile the two passes from the D1-D3 crops with the cipher's own "charles"/"por que" anchors, ~$2 (better after the high-resolution image)
 - key alignment against the period decipherment (step 4) and decode_key.py reading (step 5) - blocker: not-attempted; it needs the cipher transcription above; next: interlinear_align.py on cipher vs the reconciled decipherment, ~$3
-- item 126 and siblings 94-128 per-token reading - blocker: waiting-on ASKS row 143 (the owner's sign sorter, now for items 123 and 126) and ASKS row 148 (a sharper image of 126's grey interlinear: the colour shots at 250% still give Opus about 30-35% of its letters, FER126-ALIGN); 126's numerals are supported by Fig. 4 (two passes PASS), but its passes agree 0.626 and the letter-sign alphabet is unsettled; the Fig. 4 table used by item126_fig4_test.py is not committed (author's work): re-create KEY.tsv (code, value, grade) by typing the 73 syllable cells from the private repo's lit/fig4-000.jpg (bracketed values grade M), ~15 min
+- item 126 and siblings 94-128 per-token reading - blocker: waiting-on ASKS row 143 (the owner's sign sorter, now for items 123 and 126) and ASKS row 148 (a sharper image of 126's grey interlinear: the colour shots at 250% still give Opus about 30-35% of its letters, FER126-ALIGN); next while waiting: the PREREG-ALIGN2 decoy check with an Opus reader on the same 78 items (Sonnet abstained on all, FER126-ALIGN2), ~$8; 126's numerals are supported by Fig. 4 (two passes PASS), but its passes agree 0.626 and the letter-sign alphabet is unsettled; the Fig. 4 table used by item126_fig4_test.py is not committed (author's work): re-create KEY.tsv (code, value, grade) by typing the 73 syllable cells from the private repo's lit/fig4-000.jpg (bracketed values grade M), ~15 min
 
 ## Escalation (5 Oct 2026)
 - [x] siblings: item 126 transcribed in two passes with its interlinear (LANE-PRIV1, 6 Oct 2026): Fig. 4 numerals PASS against the period gloss (0.370/0.371 vs shuffled p99 0.156/0.160); its interlinear is too faint at 120 ppi for a full alignment, and the letter signs wait on the sorter (ASKS 143)
