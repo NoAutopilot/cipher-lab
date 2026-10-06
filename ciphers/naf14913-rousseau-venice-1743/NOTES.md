@@ -1671,3 +1671,34 @@ real same-class known answer exists on disk; a planted one was registered instea
   the value; the evidence is the candidate's own unique vector and its two shuffle p-values.
 Checks (R9-ROUS4, 6 Oct 2026): decode_key --check exit 0; gaps_check exit 0 (OK keep-going, 6 internal gaps, 0 untried).
 Requests: none (disk only).
+
+## R9-ROUSV2-naf14913-rousseau-venice-1743 (6 Oct 2026, account 2 verifier for LANE-RUN9-account-2)
+
+Brief: verify R9-ROUS4's key.tsv entry 605 = republique (grade C, count-vector gate). Disk only, no new cryptanalysis; verifier, not the solver.
+1. **Order.** PREREG-R9-ROUS4.md is c962e56e5 (05:20:42 UTC), an ancestor of 66ffa091a (05:22:33 UTC), which first adds the script, the
+   .out and the key row; the PREREG commit holds only the PREREG. The script follows it (class 1..3 per pair, total +/- 1, 40 plants,
+   seed 9, protected codes, licence 32/40, candidate draws seed 8). One reading point: the per-plant draw seed is 9 + a running index
+   across both candidates (40-79 for 739), where the PREREG says "9 + plant index"; immaterial to 605. Met.
+2. **Control (rule 3).** The planted known-answer writes the same vector into slip and passage, so MATCH holds by construction; it can still
+   fail on UNIQUE and on either p (it does: 3/40 misses for 605's class, 27/40 for 739's), so it can differ from the target. Licence
+   37/40 >= 32/40 met as registered. Caveat (verifier): the gate is per candidate, but 605 was picked in R8-ROUS2 as the one code out of
+   195 matching republique's vector. Family-wise, under the (g) redeal, P(some code of 195 has vector (2,1,2,2)) = 0.108 (1000 draws,
+   seed 1, mean 0.111 matches), so the count gate alone, corrected for that search, does not reach 0.05.
+3. **Grade.** The count gate alone licenses no more than S. C needs the slip's plaintext at each occurrence, so each slip-backed 605 was read
+   against its slip:
+   | Pair | Groups | Slip | |
+   |---|---|---|---|
+   | f.213 L03r / f.214r | 835 52 **605** 22 739 | "si la Republique de Venise" | fits |
+   | f.213 L03v / f.214r | 121 317 52 645 **605** | "par la meme Republique" | fits |
+   | f.216v L02 / f.217r | 52 **605** 22 739 | "la Republique de Venise" | fits |
+   | f.249 Lr3-4 / f.250 | 66 52 **605** 22 / 739 ... 31 22 628 | "engager la republique de venise a secourir la reine de hongrie" | fits |
+   | f.249 Lv2 / f.250 | 63 52 **605** 347 | "que la republique continuera" | fits |
+   | f.266r L02 / f.265r | 52 **605** 22 739 | "La Republique de Venise" | fits |
+   | f.266r L11 / f.265r | 14 52 645 **605** 369 ... 22 753 | "la mesme Republique est dans la disposition de faire" | fits |
+   7 of 7 slip-backed occurrences stand where the slip writes Republique; 22 = de (C) follows in 5/7, 31 = la reine and 628 = hongrie (C)
+   fall in place on f.249, and the uncoded 645 stands before 605 exactly where the slip has meme/mesme (2/2). **Grade C upheld**, on the
+   per-occurrence alignment (period slip as known plaintext), not on the count gate; key.tsv's source note rewritten to say so and "pending
+   VERIFY" removed. Value unchanged. 645 = meme, 52 = la and 739 = venise are consistent in these lines but are not entered (not this job).
+4. decode_key --check exit 0 (tokens 62: C 24, I 1, M 37; reading.txt unchanged -- 605 does not occur in the decoded f.205v/207r passage).
+5. Propagation: no AUDIT.md in this folder; SECOND-OPINIONS-QUEUE.tsv has 0 rows for this target (grep, 6 Oct 2026). Nothing to carry.
+Checks (R9-ROUSV2, 6 Oct 2026): see the done line. Requests: none (disk only).
