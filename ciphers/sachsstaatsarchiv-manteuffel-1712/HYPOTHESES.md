@@ -75,3 +75,15 @@ chunks over codes that have a key.tsv value agree with that value at 210 positio
 unchanged: 73 does not occur on this leaf. Registered-vs-rule note: the addendum registered 0574 as not prior-cleared in the pooled run; its own
 per-leaf gate then PASSed, which by PREREG-MANTP's general rule clears it. Counting it cleared changes no licence (150 would read C, but 150 is a
 Krauske row and is not overwritten).
+
+## Leaf 0529 (ff.424v-425) per-leaf gate and pooled gate with the leaf added (R7-MANT529, 6 Oct 2026, LANE LANE-RUN7-account-2, account 2)
+
+| date | instrument | control | target | verdict |
+|---|---|---|---|---|
+| 6 Oct 2026 R7-MANT529 | per-leaf aligner gate on 29 glossed runs of ff.424v-425 (PREREG-MANT529 213a49cc + addendum 1da59b45, MANT27 shape, MANT5 normalisation only) | gloss strings permuted across the glossed runs, 200 draws seed 529: S mean 0.015 p95 0.083; S_multi mean 0.015 p95 0.087; S_single mean 0.000 p95 0.000 | S 1/24 = 0.042; S_multi 0/23; S_single 2/2 = 1.000 (N 2) | **HELD (miss)**: leaf not cleared; S_single under the N >= 3 floor. Nothing into key.tsv; values held at M in f424v_0529/leaf_values_0529.tsv |
+| 6 Oct 2026 R7-MANT529 | pooled single-code-gloss gate, PREREG-MANTP + PREREG-MANT463 + PREREG-MANT529 addenda, leaves 0574 and 0529 appended (63 runs) | gloss strings permuted across all pooled single-code runs, 1000 draws seed 7101: mean 0.040, p95 0.167 (within-leaf, not gating: mean 0.062, p95 0.167) | S 8/12 = 0.667 | **PASS** (5 leaves: 0.636 vs 0.182; 4 leaves: 0.667 vs 0.222). Per leaf 0529: N_rec 2, HELD (N floor). 898 now recurs in the pool (5 single-code runs on 0527 + 0529): 4 "l'Empire" (0527 x3, 0529 x1) vs 1 "Ilgen" (0527 run 7, read doubtful by D2B-MANT27) -> licence "disagree" under the registered rule, not licensed. 867 "le Feldmarechal" 2/2 on 0529 only (uncleared leaf) -> M. 939 occurs on 0529 only inside 272.939 "en Mecklenbourg" (multi-code): still single-attested as a single-code gloss. 107 Schonborn now 11/11 across 3 leaves (Krauske/key row, C already) |
+
+Conflict 898 (logged, not resolved; rule 4): l'Empire is supported by 4 single-code glosses on two leaves (0527 f.422v-423 x3, 0529 f.424v x1),
+"Ilgen" by one single-code gloss on 0527 (run 7) that D2B-MANT27 read as doubtful (98 = Ilgen in key.tsv; a misread lead stroke is possible but
+not repaired). Non-gating note: without that one gloss 898 would read 4/4; the registered rule counts it, so 898 stays M (held, not in key.tsv).
+Known-answer on this leaf: 107 Schonborn 4/4 agree with its key.tsv row; no other single code here has a key.tsv value (783, 867, 898, 714).

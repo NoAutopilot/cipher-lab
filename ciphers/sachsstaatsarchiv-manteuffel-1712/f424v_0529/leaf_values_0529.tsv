@@ -1,0 +1,8 @@
+run	code	gloss_on_0529	grade_here	key_tsv_value	key_tsv_grade	status
+1	898	l'Empire	C	(none)	-	held M: second leaf for 898 = l'Empire (0527 x3 single + 0529 x1 = 4); pooled gate reads 898 "disagree" because 0527 run 7 glosses 898 "Ilgen" (doubtful as read, D2B-MANT27); leaf 0529 HELD its own gate; not in key.tsv
+14,15,22,24	107	Schonborn	C	Schonborn	C	known-answer agree 4/4 (key row kept)
+19	783	le Czar	C	(none)	-	held M: single-attested in the pool, leaf HELD
+21,23	867	le Feldmarechal	C	(none)	-	held M: 2/2 consistent on this leaf only; leaf HELD its gate (per-unit merge rule)
+25	272.939	en Mecklenbourg	C	(none)	-	held M: 939 inside a 2-code run (0527: 939 single "le Mecklenbourg"); chunking not licensed by a multi-code gate (S_multi 0)
+28	714	un	M	(none)	-	held M: single-attested, gloss uncertain
+10,16	402.341	la guerre	C	(none)	-	held M: the pair recurs twice on this leaf with the same gloss (runs 10, 16); 402 is a f.409v/f.410 U code; multi-code, not licensed

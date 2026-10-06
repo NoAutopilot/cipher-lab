@@ -1,0 +1,64 @@
+leaf	line	code	gloss	gloss_grade
+0502	C5	864	roy de prusse	C
+0502	C7	864	roy de prusse	C
+0502	C8	357	ilgen	C
+0502	C12	936	la butte	M
+0501	C1	770	manteuffel	C
+0501	C2	73	ilgen	C
+0501	C5	770	manteuffel	C
+0501	C6	865	prince royal	C
+0527	C5	868	ilgen	M
+0527	C7	898	ilgen	M
+0527	C10	877	bartholdi	M
+0527	C12	898	l empire	C
+0527	C14	939	le mecklenbourg	C
+0527	C16	544	provinces	M
+0527	C26	754	s m	M
+0527	C29	898	l empire	C
+0527	C30	864	le roy de prusse	C
+0527	C31	357	ilgen	C
+0527	C32	99	k	M
+0527	C37	898	l empire	C
+0527	C38	539	plus	C
+0527	C42	107	schonborn	C
+0527	C43	107	schonborn	C
+0527	C44	98	ilgen	C
+0528	C1	877	bartholdi	M
+0528	C2	107	schonborn	C
+0528	C3	864	le roy de prusse	C
+0528	C4	754	le roy de pologne	C
+0528	C5	73	ilgen	C
+0528	C6	98	ilgen	C
+0528	C7	82	schonborn	C
+0528	C9	98	ilgen	C
+0528	C10	864	le roy de prusse	C
+0528	C11	107	schonborn	C
+0528	C16	107	schonborn	C
+0528	C19	98	ilgen	C
+0528	C20	107	schonborn	C
+0528	C21	879	hannovre	C
+0528	C23	864	le roy de prusse	C
+0528	C24	107	schonborn	C
+0528	C25	864	le roy de prusse	C
+0528	C26	877	bartholdi	M
+0574	C2	160	manteuffel	C
+0574	C8	160	mant	C
+0574	C12	150	s m	C
+0574	C17	313	hambourg	C
+0574	C18	160	mant	C
+0574	C23	160	manteuffel	C
+0574	C25	150	s m	C
+0574	C27	38	h	M
+0574	C28	187	le roy de suede	C
+0574	C30	160	manteuffel	C
+0574	C31	266	l electeur de hannovre	M
+0574	C32	160	mant	C
+0529	C1	898	l empire	C
+0529	C14	107	schonborn	C
+0529	C15	107	schonborn	C
+0529	C19	783	le czar	C
+0529	C21	867	le feldmarechal	C
+0529	C22	107	schonborn	C
+0529	C23	867	le feldmarechal	C
+0529	C24	107	schonborn	C
+0529	C28	714	un	M
