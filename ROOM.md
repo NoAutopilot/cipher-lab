@@ -9151,3 +9151,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 04:04 | R8-HEL worker | claim: hellen-frederick-1752, 0/8 pass over keyed 801-1796 tokens on R7A-HEL53 crops, cap 3.5, box 04:04-04:49 UTC (80% 04:40); for LANE LANE-RUN8-account-1
 2026-10-06 04:04 | R8-OBRED2 worker | claim: oldenbarnevelt-brederode-1605, screen in-window Palatine/Hessian DECODE keys (BayHStA 102, HStAM 20), cap 3, box 04:04-04:49 UTC (80% 04:40); for LANE LANE-RUN8-account-2
 2026-10-06 04:04 | R8-LIN worker | claim: antt-linhares-chave Part II test of 829011 as written, cap 3.5, box 04:04-04:49 UTC (80% 04:40), for LANE LANE-RUN8-account-1
+2026-10-06 04:05 | R8-KONS worker | claim: konstanz-talleyrand-sieyes-1798, Pallain other volumes + Bailleu vol. 2 IA full-text search for the 17 Jul 1798 Sieyes letter, cap 2, box 04:05-04:35 UTC (80% 04:29), for LANE LANE-RUN8-account-2
