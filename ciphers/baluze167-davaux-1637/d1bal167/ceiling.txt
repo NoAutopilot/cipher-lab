@@ -1,0 +1,10 @@
+== f157 only (D2-DAVEX set): 15 exemplars, 11 shapes, 2 shapes with >= 2 exemplars: h, loop
+   per shape: 4u {'a': 1}; c {'x': 1}; g+ {'n': 1}; gam {'u': 1}; h {'n': 3}; k {'o': 1}; loop {'u': 1, 'i': 2}; v {'s': 1}; w {'e': 1}; wave {'s': 1}; y {'b': 1}
+   letter-level oracle LOO ceiling 10/15 = 0.667 (D2-DAVEX measure)
+   per-shape oracle LOO ceiling 3/15 = 0.200 (D2-DAVEX target >= 0.9)
+   f.247 labels with a resembling shape at >= 2 exemplars: 1/12 labels, 8/63 tokens; s:b(18)->-:0 s:t(9)->u4:0 s:d(8)->loop:3 s:u(6)->-:0 s:L(6)->-:0 s:p(5)->p:0 s:y(4)->y+:0 s:f(2)->S:0 s:K(2)->-:0 s:n(1)->-:0 s:a(1)->-:0 s:q(1)->-:0
+== f157 + f166: 63 exemplars, 21 shapes, 12 shapes with >= 2 exemplars: 4u, S, c, gam, h, hook, ll, loop, p, u4, w, y+
+   per shape: 4u {'a': 2, 'd': 1}; LL {'t': 1}; S {'s': 4}; c {'x': 4}; g+ {'n': 1}; gam {'u': 6}; h {'n': 6}; hook {'s': 3}; k {'o': 1}; ll {'l': 4}; loop {'u': 1, 'i': 2, 'd': 1}; m4 {'m': 1}; p {'s': 4}; r {'g': 1}; t {'e': 1}; u4 {'t': 5, 'n': 3}; v {'s': 1}; w {'e': 5}; wave {'s': 1}; y {'b': 1}; y+ {'r': 3}
+   letter-level oracle LOO ceiling 59/63 = 0.937 (D2-DAVEX measure)
+   per-shape oracle LOO ceiling 44/63 = 0.698 (D2-DAVEX target >= 0.9)
+   f.247 labels with a resembling shape at >= 2 exemplars: 5/12 labels, 28/63 tokens; s:b(18)->-:0 s:t(9)->u4:8 s:d(8)->loop:4 s:u(6)->-:0 s:L(6)->-:0 s:p(5)->p:4 s:y(4)->y+:3 s:f(2)->S:4 s:K(2)->-:0 s:n(1)->-:0 s:a(1)->-:0 s:q(1)->-:0

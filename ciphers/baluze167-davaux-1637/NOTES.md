@@ -583,3 +583,63 @@ labelling failed its own control 0/15, D2-DAVEX exemplar labelling a non-test (o
 - [ ] image-check: 170 c239-241 native crops still to do
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3)
 Verdict: keep going: 3 internal gaps; cheapest next: enlarge the gloss-fixed exemplar set to >= 2 per shape, ~$3, or 170 ff.228-230 crops and passes, ~$6
+
+## D1-BAL167 (account 1 worker, for LANE DEFAULT-account-1-20261006-1240), 6 Oct 2026, 12:48-12:58 UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-06-account1-default-1240-jobs.md` job D1-BAL167 (enlarge the gloss-fixed exemplar set to >= 2 per shape;
+do not run the labeller). No novelty class. Intake gate (pasted in the brief): `baluze167-davaux-1637: partial (line 1) -- edition/page or
+full-text-search citation found within 6 lines`. No gate is scored here, so no PREREG; the labeller control stays as PREREG-D2DAVEX states it.
+
+**Leaf added: Baluze 168 f.166r (c346, Chavigny to d'Avaux, survey.tsv "very dense cipher, glosses above most runs").** Crop step (pasted):
+`python3 tools/iiif_lines.py --ark btv1b9001503k --canvas 346 --region 1000,2930,2700,2420 --prefix b168f166 --out
+ciphers/baluze167-davaux-1637/images/crops --top-margin 60 --debug` -> 9 bands x 2 segments (the tool's bands split gloss from cipher on
+some lines, so `d1bal167/bands.py` re-cuts gloss+cipher bands from the same native region file; no second fetch). The nine glossed
+cipher lines were read by this worker by eye (no subagent call). A letter sign was taken only where the gloss word is legible and its
+letter follows from the word minus the key.tsv values of the numerals around it (e.g. "le Sieur Smits" over 41' 72' w gam y+ S 47' u4 p:
+le si-e-u-r S-mi-t-s). 48 positions; each box was checked in context (box drawn on a wider crop) and 10 boxes were moved before cutting.
+Two positions are conf 2 (the "a" of "nous a asseure", 4u; the "e" of "envoie" after an unfixed m-like sign). Several positions were left
+out as not gloss-fixed: "un" (11?), the 9 of "chevaux", "seize", the m-like sign of "envoie", the p of "icy".
+Files: `d1bal167/exemplars.tsv` (63 rows: D2-DAVEX's 15 from 167 f.157 with a by-eye shape name, + 48 from f.166, with box, gloss word,
+conf), `d1bal167/cut_and_ceiling.py` -> `d1bal167/exemplars/*.png`, `d1bal167/exemplar_sheet.png` (grouped by shape), `d1bal167/ceiling.txt`.
+
+**Result (d1bal167/ceiling.txt):**
+| set | exemplars | shapes | shapes with >= 2 | letter-level oracle LOO | per-shape oracle LOO | f.247 labels whose resembling shape has >= 2 |
+|---|---|---|---|---|---|---|
+| before (167 f.157 only) | 15 | 11 | 2 (h, loop) | 10/15 = 0.667 | 3/15 = 0.200 | 1/12 labels, 8/63 tokens (s:d) |
+| after (+ 168 f.166) | 63 | 21 | 12 (4u, S, c, gam, h, hook, ll, loop, p, u4, w, y+) | 59/63 = 0.937 | 44/63 = 0.698 | 5/12 labels, 28/63 tokens |
+Per shape (after): gam u 6; h n 6; w e 5; S s 4; c x 4; p s 4; ll l 4; hook s 3; y+ r 3; u4 t 5 + n 3; 4u a 2 + d 1; loop u 1 + i 2 + d 1;
+singletons LL t, g+ n, k o, m4 m, r g, t e, v s, wave s, y b. The two hands agree where they overlap (w = e, gam = u, h = n, c = x, 4u = a).
+Shapes that read as one letter every time: gam, h, w, S, c, p, ll, hook, y+. Shapes that carry two or three letters in the gloss: u4 (t/n:
+one to three minims plus a 4, not separable at this resolution), loop (u/i/d), 4u (a/d). These three are what hold the per-shape ceiling
+at 0.698, not the exemplar count.
+
+**Does it unblock the exemplar-sheet labeller for f.247? No.** The f.247 label set (passes/reconciled_b168f247v.tsv; label -> resembling
+exemplar shape, by eye from the c510-511 crops, F247_SHAPE in the script): s:t -> u4, s:d -> loop, s:p -> p, s:y -> y+, s:f -> S have >= 2
+exemplars, but s:t and s:d are the ambiguous shapes. s:b (18 of 63 tokens, the commonest sign), s:L (6), s:u (6), s:K (2), s:q, s:n, s:a
+have no resembling form in either glossed hand. f.247's hand draws Latin-letter forms (b, L, K, u) that the Paris hands (f.157, f.166) do not
+use. More court-hand leaves would raise the per-shape ceiling for the court hand. They would not give s:b, s:L or s:K exemplars, which only a
+glossed text in the f.246-248 hand (or a d'Avaux-side cipher with its decipherment) could. The D2-DAVEX stop condition ("every shape in the
+f.247 label set has >= 2 glossed exemplars and the per-shape oracle ceiling is >= 0.9") is not met on either count.
+Useful as a by-product: for the *court* hand the set now supports a labeller control (letter-level ceiling 0.937). That would serve
+170 ff.228-230 if that bare passage is in a court hand. Not checked here.
+Grades (rule 4): no reading claimed; key.tsv, ciphertext.txt, reading.txt unchanged (no decode_key --check needed). Requests: gallica.bnf.fr
+2 (1 at 1200 px, reset once and retried once after a pause, then HTTP 200; 1 native region, HTTP 200). Subagents: none.
+
+## Remaining gaps (D1-BAL167, 6 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: cipher located and transcribed by two blind passes on c510-511
+(err_2reader 0.280). Five known-answer instruments tried there (N8-BAL, N9-BAL2 non-tests; N9-BAL3 retired; DEF1-DAV 0/15; D2-DAVEX non-test).
+The exemplar set is now 63 signs from two court-hand leaves. f.247's commonest signs (s:b, s:L, s:K, s:u) still have no glossed counterpart (D1-BAL167).
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches, e.g. AE CP Allemagne / Suede, which a court clerk deciphered), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 ff.228-230 bare passage - blocker: not-attempted; ~32 lines (~380 groups); next: tools/iiif_lines.py crops of c239-241, one Sonnet pass per canvas for numerals plus a letter-sign pass labelled against d1bal167/exemplar_sheet.png if the hand is the court hand, reconcile, decode_key, ~$6
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (6 Oct 2026, D1-BAL167)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3); f.166 glosses agree with key.tsv on every numeral used to split a word (D1-BAL167)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); exemplar set enlarged to 63 court-hand signs (D1-BAL167, per-shape ceiling 0.698) but f.247's b/L/K/u forms have no glossed counterpart; untried: a glossed text in the f.247 hand
+- [ ] image-check: 170 c239-241 native crops still to do
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167)
+Verdict: keep going: 3 internal gaps; cheapest next: 170 ff.228-230 crops and passes with the court-hand exemplar sheet, ~$6, or a search for a glossed text in the f.247 hand, ~$3
