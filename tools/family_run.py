@@ -62,6 +62,9 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
                      (run=6 bracket=8), control at the target's pinned token share (pinshare=0 = blind baseline);
                      recovery = token accuracy on unpinned positions; --param lm=entry scores entries with an
                      entry-bigram model instead of the letter 4-gram (A2-CAS9 3 Oct 2026)
+  cycling_homophonic homophonic with each letter's homophones used in a fixed cyclic order (Pelling 2020; R11-SCORPCYC
+                     6 Oct 2026, scorpion-1991): anneal with -lam x cycle violations (no sign twice between two
+                     consecutive occurrences of another sign of the same letter); --param lam=2.0 (lam=50 near-hard)
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds

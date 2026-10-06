@@ -27,7 +27,7 @@ with A2P4-SCORP's N=70 result, untestable by this family on both published crypt
 target). If only the K=145 sensitivity run meets the gate, the result is "depends on K": a settled K is the next step
 before any transcription spend.
 
-## PREREG R11-SCORPCYC (6 Oct 2026, 13:5x UTC, committed before any scored run)
+## PREREG R11-SCORPCYC (6 Oct 2026, 13:4x UTC, committed before any scored run)
 
 Family: `cycling_homophonic` (new module tools/families/cycling_homophonic.py, this job): Pelling 2020's design hypothesis
 for the Scorpion, each plain letter's homophones used in one fixed cyclic order (the i-th occurrence of a letter with m
@@ -47,7 +47,7 @@ Can the control vary on the statistic? Yes: recovery is per-position letter agre
 seed; the cycle term changes the solver's search, not the scoring. The module's offline test must show the cycle term
 reading an easy cycling control (N=400) at least as well as lam=0, so a low N=70 figure is the N, not a broken solver.
 
-**Amendment to PREREG R11-SCORPCYC (6 Oct 2026, 14:0x UTC, before any scored run; only the module's offline test had run).**
+**Amendment to PREREG R11-SCORPCYC (6 Oct 2026, 13:4x UTC, before any scored run; only the module's offline test had run).**
 The violation count is changed from the period-m check to a gap check: between two consecutive occurrences of one sign
 in a letter's sign sequence no other sign may appear twice (in a strict cycle every other sign appears exactly once);
 each extra appearance is one violation. Reason: on the easy offline control (N=400, K=40, seed 1, 4 restarts) the
@@ -64,3 +64,7 @@ corpora, lam values and the 0.6 gate are unchanged.
 | 3 Oct 2026 18:15 | homophonic | N=180 K=155 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt profile=target | 1-3 | 0.037 (0.011-0.067) | not run (control-only) | - | no | A2P4-SCORP3 S5 shape placeholder, primary |
 | 3 Oct 2026 18:16 | homophonic | N=180 K=145 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt profile=target | 1-3 | 0.131 (0.061-0.228) | not run (control-only) | - | no | sens_K145_profile |
 | 3 Oct 2026 18:16 | homophonic | N=180 K=155 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-3 | 0.081 (0.050-0.100) | not run (control-only) | - | no | sens_K155_default_profile |
+| 6 Oct 2026 13:46 | cycling_homophonic | N=70 K=53 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-3 | 0.067 (0.057-0.071) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | R11-SCORPCYC S1 ours, primary |
+| 6 Oct 2026 13:47 | cycling_homophonic | N=180 K=155 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-3 | 0.078 (0.044-0.111) | not run (control-only) | - | no | R11-SCORPCYC S5 shape placeholder N180 K155, primary |
+| 6 Oct 2026 13:47 | cycling_homophonic | N=180 K=145 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1-3 | 0.059 (0.050-0.072) | not run (control-only) | - | no | R11-SCORPCYC sens K145 |
+| 6 Oct 2026 13:47 | cycling_homophonic | N=70 K=53 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt lam=50 | 1-3 | 0.114 (0.086-0.157) | not run (control-only) | - | no | R11-SCORPCYC S1 sens lam=50 (control-only) |

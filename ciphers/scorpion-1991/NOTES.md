@@ -268,3 +268,39 @@ new material (the three unpublished Scorpion messages Schmeh mentions, held by p
 constrained design hypothesis (a cycling/sequential homophonic, per Pelling 2020, as a family with its own control at
 N=180) -- no such family is on the shelf (tools/families/, checked 3 Oct 2026); next: a cycling-homophonic family module plus
 its control at N=180, a tool job, ~$3-4, worth briefing only if the lane wants a design hypothesis on a hoax-risk target.
+
+## Cycling-homophonic family, matched controls (R11-SCORPCYC, 6 Oct 2026, 13:42-13:51 UTC)
+
+Intake gate (lane, 13:40 UTC): `scorpion-1991: open (line 1) -- edition/page or full-text-search citation found within 6
+lines`. Script only; no vision call, no host contacted.
+
+Question: A2P4-SCORP3's named next step -- does Pelling's (2020) cycling/sequential homophonic design (each letter's
+homophones used in one fixed cyclic order) give a solver enough extra constraint to read a text of S1's or S5's shape?
+New shared module `tools/families/cycling_homophonic.py` (test `tools/tests/test_cycling_homophonic.py`, SYSTEM.md row):
+control = a held-out corpus window enciphered cyclically; solver = n-gram anneal with a -lam x cycle-violation term (no
+sign twice between two consecutive occurrences of another sign of the same letter; zero on the true key). Offline test,
+easy control N=400 K=40: lam=2 reads 0.995 (0 violations) vs 0.953 with the term off, so the cycle term works where there
+is something to bite on. Prereg and its one pre-run amendment (violation definition; dev only) in `HYPOTHESES.md`,
+commits 8808f6b6e and 7c60398e1, both before the scored runs.
+
+| run (spec judge corpora pg1661_holmes + pg2701_mobydick, seeds 1-3, restarts 8, gate 0.6) | control mean (range) | realized K, hapax | target |
+|---|---|---|---|
+| primary S1: N=70, K=53, lam=2 | 0.067 (0.057-0.071) | 53, 36 (S1 itself: 53, 39) | not run (CONTROL BELOW GATE) |
+| S5 shape placeholder: N=180, K=155, lam=2 | 0.078 (0.044-0.111) | 155, 130 | not run (no transcription) |
+| sensitivity N=180, K=145, lam=2 | 0.059 (0.050-0.072) | 145, 110 | not run |
+| sensitivity S1 N=70, K=53, lam=50 (near-hard cycle) | 0.114 (0.086-0.157) | 53, 36 | not run |
+| for reference, `homophonic` family (A2P4-SCORP/3) | 0.038-0.133 | 35-113 | not run |
+
+Unlike the `homophonic` controls (realized K 35-39 at N=70, 94-113 at N=180), a cycling encipherment uses every
+homophone, so these controls carry the full nominal K and a hapax share close to S1's own -- a closer match to the
+target's shape, and they still read 6-11 percent. Per the prereg: the `cycling_homophonic` family is **untestable at N=70,
+K=53 and at N=180, K=145-155** (rule 3: not a negative on either cryptogram, and not evidence for or against the cycling
+design). Why: with 36 of 53 signs hapax the cycle constraint is nearly empty (a letter whose signs are all hapax has zero
+violations under any key), so the solver is back to an n-gram anneal below the unicity distance. Grades: no reading, no
+tokens graded.
+
+**Verdict:** status stays `open`. The cycling-homophonic design hypothesis is now tested at both published shapes and
+is untestable by this family; neither homophonic design justifies costing an S5 transcription. What would move it: new
+material (the unpublished Scorpion messages Schmeh mentions would pool the sign count; a cycling key reused across
+letters would let repeated signs carry the constraint), or the second-coder distinct-code shape test named after
+A2P4-SCORP2 (~USD 1). Cheapest next: that blind second-coder test.
