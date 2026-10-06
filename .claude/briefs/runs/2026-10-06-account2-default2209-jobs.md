@@ -85,7 +85,7 @@ rank vs the 201-key control. Grade per token (S only if shape and score agree; e
 gaps / Escalation; gaps_check passes. If the instrument proves unable to separate S65/S80 on f.21v, mark the step [retired] with the
 instrument named.
 
-## Wave 2 (spawned 22:3x UTC 6 Oct)
+## Wave 2 (spawned 22:17 UTC 6 Oct)
 
 ### D22-FTS -- six "depends on nobody" printed-source searches, one Sonnet worker (Sonnet; cap 5, box 75 min; ~0.6 per item + 1 write-up)
 Catalogue/full-text search only: no transcription, no decoding, no vision beyond reading a hit page's OCR text. Each item: check the
@@ -94,7 +94,7 @@ section "## D22-FTS (6 Oct 2026)" to that folder's NOTES.md with every query, ho
 "While waiting" line (mark [done], name what is left). Hits are search results for the log, never a novelty or found-solved verdict
 (rule 10); if a hit looks like a printed clear text or decipherment of the very item, say so in ROOM with a flag line for the lane and stop
 that item there. Hosts: archive.org advancedsearch / be-api fts, Google Books API (key + country=US), Huygens retroboeken (>=2 s), Gallica
-SRU; per CLAUDE.md host table, one request at a time >=1.5 s apart, report counts per host. Intake (22:3x UTC): sacchetti and 9970 open
+SRU; per CLAUDE.md host table, one request at a time >=1.5 s apart, report counts per host. Intake (22:1x UTC): sacchetti and 9970 open
 with citation found; belmesseri, salvago, della-torre "blocked, already terminal"; heinsius-dopff open with citation found.
 1. bl-sacchetti-nunzio-1623: Barberini-side nunciature editions (Nuntiaturberichte / Barb. lat. series) by full text for "Sacchetti" with
    "cifra"/"ziffera".
