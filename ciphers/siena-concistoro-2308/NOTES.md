@@ -833,3 +833,39 @@ Grades: no token read; no key.tsv. Cryptanalytic result only.
 R4750-style), with its own matched control run at an injected sign error of about 7% (the high figure here) as well as 0%. If a
 transcription correction is wanted first, the three B rows above are the only agent J errors this pass established; it does not
 change no07.tok (Bourdeau's file, copied unchanged).
+
+## R10-SIENA7N -- no. 7 homophonic + nomenclator family, matched control (account 4 worker for LANE-RUN10-account-4, 6 Oct 2026, 10:19-10:3x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` job R10-SIENA7N (R10-SIENA7C's "Next step"). Status unchanged: `open`.
+Disk only, no requests to any host. No key, no reading.
+
+**Instrument.** `tools/family_run.py` has no nomenclator family and no anchor option, so the job added `solve_nomen()` /
+`anneal_nomen()` to the shared `tools/homophonic_anneal.py` (offline test `tools/tests/test_homophonic_nomen.py`; `anneal()`/
+`solve()` untouched): each sign decodes to one letter or one whole word from a registered 20-word VOCAB, a word on at most one sign,
+with a per-character word bonus offsetting the n-gram length penalty. Script `specs/cheap-tests/siena-concistoro-2308/
+run_test_no07_nomen.py` (`--check` exit 0, `results_no07_nomen.json`). Pre-registration `PREREG-R10-SIENA7N.md`, pushed in 3527cb853
+(10:26 UTC) before the scored control; it discloses the dev runs on seeds 98/99 that set the knobs. Corpus it16dip (not era-matched).
+
+**Matched control** (N=363, K 39-44, seven anchors at the target's counts, 10 single-sign word codes making 12-22 word tokens per
+seed, injected sign error at J's measured bracket; seeds 1-5):
+
+| injected error | mean token accuracy | mean nomenclator recall | word codes the solver put on signs (all seeds) |
+|---|---|---|---|
+| 0% | 0.855 (0.799-0.904) | **0.043** | che, per, del, di, della, non (on the wrong signs except two seeds' single hits) |
+| 3.5% | 0.764 (0.562-0.893) | 0.000 | |
+| 7% | 0.755 (0.686-0.829) | 0.071 | |
+
+Gate G1 (token accuracy >= 0.60 at 7%) met; gate G2 (nomenclator recall >= 0.50 at 0%) **not met**. Per the PREREG the target and the
+shuffled target were **not run** and nothing went to the judge.
+
+**Result: non-test at this N for the nomenclator layer.** At 363 tokens each word code occurs only one to three times, and the
+solver cannot tell a word sign from a rare letter sign; it reads the letter layer (as R9-SIENA7's plain family did, about 0.86 here
+against R9's 0.92 without word codes) and gets the word codes almost entirely wrong. So the R9-SIENA7 negative (plain homophonic,
+seven anchors, control-backed at J's measured error) stays exactly as logged, and its "nomenclator" caveat stays open: a
+nomenclator on no. 7 is neither shown nor excluded. Grades: no token read; no key.tsv. Cryptanalytic result only.
+
+**Next step (suggestion, not run):** a nomenclator cannot be reached by ciphertext-only statistics at this length; it needs material
+from outside the letter: (a) word codes attested in another piece of fasc. 2 that shares no. 7's sign set (pool by sign-set overlap
+first, a disk-only check on Bourdeau's transcripts, about USD 1.5), or (b) the R4750 key sheet's own word codes compared with the
+no. 7 signs that R9-SIENA7's fit leaves as low-count, high-cost tokens (one DECODE login, one vision unit, about USD 2-3).
+Rule 3's third-attempt clause does not yet apply (one attempt with this instrument).
