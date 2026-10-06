@@ -614,3 +614,64 @@ signs occur in a second context; about USD 3-5 (2 passes + 1 reconciliation unit
 Not run before this date (R9-UNTB2 named it on 6 Oct and stopped). The F4 question itself (crossed-descender p) moves only through the
 paleographer crop packet, which needs an outside paleographer: a person-side step, not yet drafted in outreach/ and not filed as a row by this
 job. Housekeeping line, R13-STALE (account 4): no work run.
+Run by R13-UNTOP (6 Oct 2026), section below.
+
+## Opening-27 inscription, blind 2-pass transcription and symA (R13-UNTOP (account 4), 6 Oct 2026, 18:06-18:12 UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run13-jobs.md` job R13-UNTOP. Intake gate (pasted): `untersberg-code: open (line 3) --
+edition/page or full-text-search citation found within 6 lines`, exit 0. Step still undone (R13-STALE's line above). PREREG:
+`specs/cheap-tests/untersberg-code/PREREG-R13-UNTOP.md` (195e011f7), pushed before either pass ran.
+
+**Crop step (pasted).** Opening 27 fetched at native 4900x3064 (1 request, scratchpad, not committed), then
+`python3 tools/iiif_lines.py --image o27.jpg --out c27 --region 2500,60,2300,600 --lines-per-crop 1 --max-width 2400 --debug` (3 lines,
+pitch 176, debug overlay checked: one band per painted line) and, for the control, `python3 tools/iiif_lines.py --image
+images/hs2398_opening11_inscription_leaf.jpg --out c11 --region 250,1020,1950,220 --lines-per-crop 1 --max-width 2400 --debug`
+(opening 11 inscription line 4, holding bUNT8's symA at L4 tok5 and tok7). Two blind Sonnet passes, one call each on the four crops
+named neutrally A-D (A = o27 L2, B = control, C = o27 L1, D = o27 L3), no other file.
+
+**Control (PREREG gate 2): passed by both passes.** Both flagged both symA positions of the control line as non-ordinary signs (pass 1:
+"D with top bar", "barred P"; pass 2: "D-like with hooked decorated top", "P with crossbar through the stem"). So each pass could see
+symA as a special sign, and a miss on opening 27 is a real miss for that pass.
+
+**Gate 1 (sorter rule): passed.** The free-text SIGN descriptions were mapped to class labels by one fixed rule list (`r13-untop/normalize.py`,
+written after both passes returned, the same for both). Then `tools/reconcile_passes.py`: 47/50 aligned columns agree (94.0%), 3
+disagreements, under the 10% line, so no sorter stop. This figure is agreement on class labels the worker assigned, not accuracy (TRANSCRIPTION.md).
+The 3 disagreements were settled on native crops: L1 col 2 is a long-s-like hooked stroke joined to an h/n arch (pass 2, M). L2 col 3 is
+a plain r with a serifed head (pass 1, M). L3's extra final EPS in pass 2 is not there: the line ends with the theta-like sign and a period
+that both passes omitted (worker eye, M). Reconciled (`specs/cheap-tests/untersberg-code/r13-untop/reconciled.tsv`, committed ca261256f
+before Herzog was opened; reconcile_passes drops the interpunct dots, which fall after K and after P in L2):
+- L1: I SH YD r LAM e DLT EPS ZH r e u ZH C EPS I H S
+- L2: S V r EPS K S ZH e r V ZH REVC N P REVC X V Z7T
+- L3: EPS e ZH ATAIL LAM LAM X CDH YD PHI H EPS TH .
+(EPS reversed-3/epsilon, ZH hooked z/2/7, Z7T z/7 with a left-curling foot, REVC reversed C, LAM inverted V, YD y with diaeresis, DLT
+delta-like, CDH c/d with a hooked ascender, ATAIL a with swash tail, PHI looped 8/sigma-like, TH theta-like with an ascender loop, SH as above.)
+R9-UNTB2's by-eye reading ("ISYRLEDETREUTEEIHS / SYREKSTERYTONP·DXYZ / ELTUAAXdÿGHES") is consistent with this in line count and
+sign count.
+
+**symA in a second context: not found.** Joint count under the PREREG rule (both passes describe a hooked or looped top joined to a stem
+with a descender at the same position) is **0** on the 49 opening-27 signs. Per pass: pass 1 gives 1 (L3 PHI, "looped top and descender"),
+pass 2 gives 0 (it reads the same sign as "phi-like p with loop", with no descender). Control hits were 2/2 in both passes. The worker's
+own eye, which does not count toward the gate, agrees. The L3 PHI is a closed 8/sigma-like loop sitting on the baseline, with no stem and
+no descender. L2's last sign (Z7T) is a z/7 with a foot curling left. It resembles only the lower half of opening 11's L6 tok3 (the
+"z/ꝗ-like tail" that R8-UNTB said to keep apart from symA) and lacks the stem and hooked top. The opening-27 inscription draws on a different
+repertoire (EPS x6, ZH x6, LAM x3, REVC x2, YD x2) from the opening-11 six-liner, and has only two interpuncts.
+
+**Herzog's "Vgl. fol. 27" apparatus, read after the commit.** Herzog prints no text for this inscription. His note (1929, p. 50, fol. 27
+a), `sources/herzog-1929/herzog1929_full_djvu.txt` l. 2374-2377, OCR) says a three-line inscription, whose last line is partly visible in
+his plate of Bild 19, "lässt sich ebensowenig auflösen wie der Text der von den beiden Gestalten gehaltenen Schriftblätter" (can no
+more be resolved than the text on the sheets the two figures hold). His p. 29 cross-reference ("Inschriften Vgl. fol. 27 (a. - fol. 11. a)",
+l. 1440) only links the two inscriptions. So there is no letter-level apparatus to collate against. The step's "collated against Herzog"
+half has nothing to work on, and is closed as "no text printed", not as a disagreement.
+
+Rule 4: nothing read or graded (H 0, C 0, S 0). The transcription's own settlements are M. Counts for the opening-11 text are unchanged
+(C 0, M 4, H 0, I 1).
+
+Requests: sammlung-online.salzburgmuseum.at 1 (IIIF full/4900 for opening 27, HTTP 200, descriptive User-Agent). No other host. Subagents:
+2 Sonnet (one pass each, four crops per call). Files: `specs/cheap-tests/untersberg-code/PREREG-R13-UNTOP.md`,
+`specs/cheap-tests/untersberg-code/r13-untop/` (pass1/2_raw.tsv, pass1/2.tsv, normalize.py, reconcile outputs, reconciled.tsv).
+
+Next step for symA (one line, not run): no second context exists in Hs 2398. The opening-27 inscription has no symA, and every
+text-bearing opening has been screened (R8-UNTB, R9-UNTB2). symA now moves only through the paleographer crop packet (F4, person-side) or
+an outside witness (Lang 2010 via LOCAL-QUEUE L26; Weber-Fleischer 1992). Optional cheap side-step, about USD 2: the two figures' tablets
+and scroll on opening 27, which Herzog also calls unresolvable, have not been transcribed blind. Same crop + 2-pass recipe; they are a third
+sign context.
