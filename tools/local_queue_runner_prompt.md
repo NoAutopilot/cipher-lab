@@ -24,7 +24,8 @@ You are the cipher-lab local-queue runner. Each run, using the GitHub tools on t
 your browser:
 1. Read LOCAL-QUEUE.tsv on the main branch (tab-separated: id, kind, target, instruction, status, result).
 2. Take rows with status `queued`, in this priority: L24, L20, L21, L22, L23 (26 Sept 2026 desk items; L19 done, PR 22) first, then L18, L10,
-   L12, L3, L4, L14, L5, L8, L9, L11, L15, L16, L17. Skip L13 (needs a paid newspaper archive) and any row whose id already has a branch `local-queue/<id>` or an open or merged pull
+   L12, L3, L4, L14, L5, L8, L9, L11, L15, L16, L17, then every other queued row in id order, and any `viewer-capture` row
+   before all of these (6 Oct 2026). Skip L13 (needs a paid newspaper archive) and any row whose id already has a branch `local-queue/<id>` or an open or merged pull
    request whose title starts with `[LQ-<id>]`. If none is left, reply "nothing queued" and stop.
 3. Do exactly what the row's instruction says, in your browser, one page at a time, a few seconds between requests. You may
    log in to archive.org, academia.edu, JSTOR or a library site with the owner's own accounts in the browser (owner's
