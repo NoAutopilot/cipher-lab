@@ -1,0 +1,5 @@
+(1) P3 sign: a cursive "m"/"M"-like glyph, with 2-3 humps and a long descending right stroke, a small "z"-like mark above it, and dots at lower left.
+(2) Best match: K05 (small "m" in a circle, hump-shaped).
+(3) Second-best: K16 (m-like sign with a flourish, on a pink bar).
+(4) Confidence: low to medium. The K crops are tiny and P3 has a long tail that K05 lacks.
+(5) Yes, P3 could be a sign not among the 16. The long right descender is not clearly in any K crop.

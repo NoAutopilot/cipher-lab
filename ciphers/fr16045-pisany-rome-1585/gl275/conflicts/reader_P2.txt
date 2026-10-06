@@ -1,0 +1,5 @@
+(1) P2 is a large sign with a small closed loop at the top right. A stroke runs left from the loop, then curves down and sweeps back left, like a cursive "rho" or a "9" with an open tail.
+(2) Best match: K11, a looped "rho"/"P" form (drawn in a circle).
+(3) Second best: K04, a "9"-like loop with a tail.
+(4) Confidence: low to medium. The crops are tiny and the reference copies are rough.
+(5) Yes, P2 could be a sign not among the 16. The match rests only on the loop-plus-tail outline, and K15 and K12 are also loosely similar.

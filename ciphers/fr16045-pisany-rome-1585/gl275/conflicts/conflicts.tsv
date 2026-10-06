@@ -1,0 +1,5 @@
+conflict	line_idx	tx86h_label	key86_value	gloss	page_sign_eye	reader_best	reader_second	reader_conf	verdict	grade
+C1	L17:6	T56	faire	m	y-shape with long left swash (not the xi-shaped faire cell)	K12=T47 m (description "y/v with descender" fits K11=T46 u)	K01=T05 e	low	transcription slip on the label (page sign is not the T56 cell); true cell unsettled (T47 m agrees with gloss, T46 u does not)	M
+C2	L17:7	T31	m	o	looped phi/rho (matches the circled T45 o cell)	K11=T46 u (description "looped rho drawn in a circle" fits K10=T45 o)	K04=T13 o	low-medium	transcription label slip, T31 is the known T45 merge; with T45 key o = gloss o; not applied (reader label vs description disagree)	M
+C3	L17:9	T63	qui	r	m-shape with long right descender	K05=T16 r	K16=T63 qui	low-medium	look-alike pair r (T16) / qui (T63), both circled m-forms in the table; blind read and gloss both favour T16 r; not settled	M
+C4	L17:-4	T05 (tx86i T57)	e	n	omega/varpi with right flourish	K15=T57 la	K16=T63 qui	medium	tx86h T05 is a slip (page sign is not the nu-shaped e cell); T57 la (blind read) vs T32 n (gloss) is a genuine data conflict, both kept	M

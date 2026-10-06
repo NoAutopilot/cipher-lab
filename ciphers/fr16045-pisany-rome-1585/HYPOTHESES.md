@@ -85,3 +85,20 @@ gl275 witness (R8-PIS, 6 Oct 2026; f.275v L17-L20 later-hand interlinear gloss, 
 aligned 1:1 to signs with no repair, 9 agree with key86. Conflicts, both witnesses kept, none settled: L17 idx 6 T56 key 'faire' / gloss 'm';
 L17 idx 7 T31 key 'm' / gloss 'o' (agrees with kp86f's T31 -> o and the T31 -> T45 relabel); L17 idx 9 T63 key 'qui' / gloss 'r'; L17 idx -4
 T05 key 'e' (tx86i reads T57) / gloss 'n' (agrees with PIS1-302's T57 -> n). Key cell or transcription label: not separable from these lines.
+
+gl275 conflict crop compares (R9-PIS, 6 Oct 2026; gl275/conflicts/conflicts.tsv, reader_P1-P4.txt): each gloss token crop was read blind against 16 key-table
+cell crops (Tomokiyo's table, henryiii_Vivonne5.png). None is settled to the point of a key or transcription edit. key86.tsv, tx86h and the gl275
+overlay are unchanged, and all four tokens stay M.
+- C1 L17 idx 6 (tx86h T56 faire / gloss m): the page sign is a y-shape with a long left swash, not the xi-shaped faire cell. Neither the reader nor
+  the eye matched T56, so the T56 label is a transcription slip. The true cell is unsettled: the reader labelled it K12 = T47 (m, which agrees with
+  the gloss), but its description fits K11 = T46 (u). Low confidence.
+- C2 L17 idx 7 (T31 m / gloss o): the page sign is the looped phi of the circled T45 (o) cell, by eye. The reader's description ("looped rho drawn
+  in a circle") fits K10 = T45, but it labelled K11. This adds a fourth witness to the T31 -> T45 relabel (kp86f, PIS1-KEY, the gloss). Under T45,
+  key and gloss agree (o). Not applied while the reader's label and description disagree.
+- C3 L17 idx 9 (T63 qui / gloss r): the page sign is a circled-table m-form. The blind read gave best K05 = T16 (r), second K16 = T63 (qui). The
+  table has two look-alike m-forms (r row 1 and qui), and the gloss and the blind read both favour T16 r. A look-alike label question, not a key-cell
+  error. Not settled (low-medium).
+- C4 L17 idx -4 (tx86h T05 e, tx86i T57 / gloss n): the page sign is an omega/varpi form, not the nu-shaped e cell, so tx86h's T05 is a slip.
+  The blind read gave best K15 = T57 (la) at medium confidence, which matches tx86i. The gloss gives n, which fits the circled m2/n2 varpi cell
+  (T32). This is a genuine data conflict (rule 4): T57 la (blind read, tx86i) against n (later-hand gloss, PIS1-302's T57 -> n 4 of 6). Both are
+  kept, graded M.
