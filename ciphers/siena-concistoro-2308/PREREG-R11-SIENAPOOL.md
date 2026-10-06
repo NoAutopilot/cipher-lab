@@ -1,4 +1,4 @@
-# PREREG-R11-SIENAPOOL (6 Oct 2026, written 13:5x UTC by date -u, before any scored run)
+# PREREG-R11-SIENAPOOL (6 Oct 2026, written 13:46 UTC by date -u, pushed in f0335a8a6 before any scored run)
 
 Job R11-SIENAPOOL (LANE LANE-RUN11-account-4). Script `specs/cheap-tests/siena-concistoro-2308/sign_overlap_pool.py`.
 Only `--inventory-only` (parse sizes, no statistic) has run before this file was pushed.

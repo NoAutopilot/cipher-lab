@@ -869,3 +869,53 @@ from outside the letter: (a) word codes attested in another piece of fasc. 2 tha
 first, a disk-only check on Bourdeau's transcripts, about USD 1.5), or (b) the R4750 key sheet's own word codes compared with the
 no. 7 signs that R9-SIENA7's fit leaves as low-count, high-cost tokens (one DECODE login, one vision unit, about USD 2-3).
 Rule 3's third-attempt clause does not yet apply (one attempt with this instrument).
+
+## R11-SIENAPOOL -- no. 7 sign-set overlap pooling across fasc. 2 (account 4 worker for LANE-RUN11-account-4, 6 Oct 2026, 13:42-13:56 UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run11-jobs.md` job R11-SIENAPOOL (R10-SIENA7N's next step (a)). Status unchanged: `open`.
+Disk only plus one github.com sparse shallow clone of dbourdeau/cyphersolver `targets/siena1421` (HEAD adbf9a1; transcripts read, none
+copied here; CC BY 4.0 text, credit Bourdeau and his agents G/J/K/L). No DECODE login, no family run, no reading.
+Script `specs/cheap-tests/siena-concistoro-2308/sign_overlap_pool.py --bourdeau <clone>/targets/siena1421/transcripts` (`--check`
+regenerates `results_pool.json`). Pre-registration `PREREG-R11-SIENAPOOL.md`, pushed in f0335a8a6 before the scored run (only the
+parse-size listing ran before it; a first scored run was not reproducible under --check because set iteration followed the string hash seed, so the swap now sorts and the table is the deterministic re-run, same verdicts on every row; parsed counts match Bourdeau's own COUNTS for nos. 9 and 21).
+
+**Statistic and control.** J = Jaccard of sign-type inventories, sibling vs no. 7 (363 tokens, 45 types). Null: 2000 curveball swaps of
+the piece x sign matrix (each piece's inventory size and each sign's piece count kept, so ubiquitous letters and digits are discounted; J
+varies pair by pair under it). B = shared sign-bigram types, against within-piece token shuffles. Gate pJ <= 0.05/15 = 0.0033.
+
+| piece | transcriber | tokens | types | shared | J | J null mean (p99) | pJ | B | B null mean (p99) | pB | clears |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 19 | J | 118 | 37 | 20 | 0.323 | 0.177 (0.281) | 0.001 | 7 | 6.7 (12) | 0.51 | **yes** |
+| 9 | J | 46 | 28 | 17 | 0.304 | 0.162 (0.259) | 0.003 | 4 | 6.2 (11) | 0.91 | **yes** |
+| 20 | ? | 1230 | 51 | 22 | 0.297 | 0.188 (0.280) | 0.0065 | 37 | 41.1 (51) | 0.86 | no |
+| 21 | J | 107 | 35 | 16 | 0.250 | 0.175 (0.270) | 0.05947 | 4 | 7.4 (13) | 0.97 | no |
+| 17 | ? | 282 | 42 | 17 | 0.243 | 0.183 (0.279) | 0.09945 | 11 | 17.0 (25) | 0.98 | no |
+| 6 | ? | 1056 | 65 | 21 | 0.236 | 0.189 (0.279) | 0.12994 | 18 | 32.8 (43) | 1.00 | no |
+| 4 | G | 152 | 50 | 18 | 0.234 | 0.188 (0.267) | 0.14893 | 4 | 6.9 (12) | 0.94 | no |
+| 23 | ? | 3702 | 67 | 21 | 0.231 | 0.191 (0.273) | 0.16142 | 47 | 55.5 (66) | 0.97 | no |
+| 24 (P2) | ? | 2638 | 62 | 20 | 0.230 | 0.191 (0.274) | 0.17991 | 29 | 47.6 (58) | 1.00 | no |
+| 18 | ? | 1456 | 30 | 13 | 0.210 | 0.167 (0.271) | 0.1909 | 20 | 22.9 (31) | 0.84 | no |
+| 22 (code numerals) | K | 27 | 12 | 6 | 0.118 | 0.100 (0.188) | 0.4003 | 0 | 0.1 (1) | 1.00 | no |
+| 25 | ? | 496 | 22 | 6 | 0.098 | 0.146 (0.241) | 0.93553 | 0 | 2.8 (6) | 1.00 | no |
+| 15 | L | 246 | 76 | 15 | 0.141 | 0.187 (0.260) | 0.95702 | 2 | 1.9 (6) | 0.60 | no |
+| 11 | ? | 409 | 44 | 9 | 0.113 | 0.185 (0.271) | 0.9905 | 1 | 1.9 (5) | 0.87 | no |
+| 14 | ? | 1297 | 41 | 7 | 0.089 | 0.182 (0.284) | 0.9985 | 1 | 3.3 (7) | 0.98 | no |
+
+"?" = transcriber not named in the file header read here. No. 29 (key scrap) excluded; no. 24 P1 (agent E, other sign names) not used.
+
+**Result.** Two siblings clear the inventory null: nos. 19 and 9. **Caveat that limits it:** both were transcribed by Bourdeau's agent J,
+the same reader and sign-naming convention as no. 7, so shared drawn-sign names (no. 9: `6~`, `P_`, `DEL`; no. 19: `S`, `V`, `k`) can
+reflect one reader's labels as much as one cipher system; the third agent-J piece, no. 21, does not clear (p 0.059), which argues the
+signal is not naming alone but does not remove the confound. No sibling's shared bigrams exceed the order-shuffle null (all pB >= 0.51):
+the overlap is in sign stock, not in sequences. No. 20 (p 0.0065) is next below the gate; no. 9 clears only just (p 0.003 against 0.0033). Nos. 11, 14, 15, 25 sit below their null mean
+(different systems, as their legends suggest).
+**Word-code candidates** (signs shared with a clearing sibling, <= 3 occurrences in no. 7): only plain `r` and `i` (once each in no. 7,
+shared with nos. 19 and 21, and present in 3-4 other pieces) -- letters, not nomenclator evidence. No. 9 shares no low-count sign with
+no. 7. So this check yields **no word-code candidate** for the R10-SIENA7N nomenclator layer. Grades: no token read; cryptanalytic result
+about sign stock only.
+
+**Next step (suggestion, not run):** the pool is no. 7 + no. 19 + no. 9 (527 tokens) only if the agent-J confound is removed: a
+blind sign-concordance pass of no. 7 vs nos. 9/19 by a second reader on crops (one vision unit per pair, about USD 3), or R10-SIENA7N's
+step (b), the R4750 key sheet's word codes against no. 7's low-count signs (one DECODE login, one vision unit, about USD 2-3).
+Gap record (status `open`, no Remaining-gaps section required by gaps_check): no. 7 nomenclator layer -- not-attempted with outside
+material beyond this pooling; next: step (b) above, ~$3.

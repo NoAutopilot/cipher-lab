@@ -94,7 +94,7 @@ def curveball(rows, rng, steps):
     for _ in range(steps):
         i, j = rng.sample(range(n), 2)
         a, b = rows[i], rows[j]
-        oa, ob = list(a - b), list(b - a)
+        oa, ob = sorted(a - b), sorted(b - a)   # sorted: set order follows PYTHONHASHSEED
         if not oa or not ob:
             continue
         pool = oa + ob
