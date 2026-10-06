@@ -147,3 +147,11 @@ Comparison: not run (no second ciphertext). Nothing graded; no reading claimed.
 Next step (agent, ~$0.5): the Wayback CDX search for `ebay.de/itm/*284276746819*` and for the seller's other items, from a session where web.archive.org answers (test `curl -sS -o /dev/null -w "%{http_code}" https://web.archive.org/` first), or as a LOCAL-QUEUE row if it stays unreachable from the cloud. Beyond that, the specimen itself is held by the 2021 commenter (thread comment #28); a request for a photo of its cipher groups would go through the blog thread or an outreach draft, the person's decision.
 
 Requests: archive.org 7 (wayback availability API, >= 2 s apart), web.archive.org 4 (all connection resets; stopped), ebay.de 1 (403), scienceblogs.de 2 (2014 and 2021 posts, > 2 s apart), WebSearch 3.
+
+## Wayback CDX retry (R9-LIPP, account 4, 6 Oct 2026, 06:00-06:06 UTC, for LANE LANE-RUN9-account-4)
+
+Job: retry the Wayback CDX search for `ebay.de/itm/*284276746819*`. **Result: not run -- web.archive.org still resets every connection from this container.** `curl -sS https://web.archive.org/` returned curl 35 ("Connection reset by peer", HTTP 000) at 06:02 UTC and again on one retry after a pause; stopped per the good-citizen rule. No capture of the 2021 specimen's listing was seen, so no group comparison was made; this is not a negative. Nothing graded; no reading claimed; status stays open (rule 5).
+
+Next step (a person's browser, ~$0): LOCAL-QUEUE.tsv row L62 asks the owner's desk runner for the CDX rows and any capture. Agent-side the step is retired until web.archive.org answers from the cloud.
+
+Requests: web.archive.org 2 (both connection resets), no other host.
