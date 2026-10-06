@@ -187,3 +187,32 @@ Requests: archive.org 3 downloads (djvu) + 5 advancedsearch, >=2 s apart; no log
 
 Next step (costed): TNA page copy of /18, /29, /76, /85 (REQUEST.md, ASKS row 57); S: none free left for the attribution; the BL Add MS 32700 series catalogue search for '101'
 (~$0.5) would test the lady-vs-Bussy conflict from the papers themselves. Verdict: open.
+
+## HMC reports: be-api full-text search for "Munchberg" (R7-NEWC (account-2 worker), 6 Oct 2026)
+
+Status unchanged: open. Ran the folder's own free step (While waiting, "S:"). Route: `be-api.us.archive.org/fts/v1/search?q=<term>&identifier=<id>`, no login.
+Terms: Munchberg, Münchberg, Munchburg, Minchberg; positive control "Carteret" per item. Items searched (11 HMC reports chosen by title as likely
+to hold mid-18th-century Whig/Hanover-era papers; not a complete HMC sweep):
+
+| identifier | Carteret (control) | Munchberg variants |
+|---|---|---|
+| reportonmanuscr00chamgoog (Egmont) | 0 | 0 |
+| cu31924091754667 (Egmont) | 0 | 0 |
+| reportpolwarth12greauoft (Polwarth) | 1 | 0 |
+| reportonmanuscri0003grea_d2n9 (Polwarth) | 1 | 0 |
+| bwb_KR-635-925 (Polwarth) | 1 | 0 |
+| reportonmanuscri0004grea (Hastings) | 0 | 0 |
+| ...DownshireV1Pt1 | 1 | 0 |
+| ...DownshireV1Pt2 | 1 | 0 |
+| ...DownshireV3 | 0 | 0 |
+| bwb_S0-AAH-578 (Fortescue) | 0 | 0 |
+| reportonmanuscri0003grea (Finch) | 1 | 0 |
+
+Result: 0 hits for every Munchberg variant in all 11. The control read in 6 of 11, so the 5 items where "Carteret" also returned 0
+(both Egmont, Hastings, Downshire V3, Fortescue) are non-tests for this name, not negatives; the 6 where it hit are a negative for these
+spellings only on the be-api index (OCR variants, hyphenation and an indexing gap are not excluded). Yorke's *Hardwicke* was already
+grepped whole (Second pass, 3 Oct 2026). No page numbers on this route. Grades: no reading made; nothing to grade. Not found in these
+sources, searched by be-api full-text on 6 Oct 2026; a search result, not a verdict. Remaining free HMC volumes (Stopford-Sackville,
+Townshend, Denbigh, Marlborough-era Portland vols) not searched.
+Requests: be-api.us.archive.org 55 (>=1.7 s apart), archive.org advancedsearch 3, one 429/403: none. Cost under USD 1.
+Verdict: open; next step unchanged: TNA page copy of /18, /29, /76, /85 (REQUEST.md, ASKS row 57).
