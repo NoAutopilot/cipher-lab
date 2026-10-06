@@ -8994,3 +8994,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:38 | R7-NEWC worker | claim R7-NEWC sp87-newcastle-1743, cap 1.2, box ends 02:07 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:38 | R7-MANT463 | claim: sachsstaatsarchiv-manteuffel-1712 transcribe 0574/0575 (f.463) + per-leaf and pooled single-code-gloss gate; cap 5.5 USD, box to 02:53 UTC (80% 02:38) for LANE LANE-RUN7-account-2
 2026-10-06 01:38 | R7-CHEST | claim sp87-chesterfield-1747 Coxe Pelham grep, cap 1.2, box ends 02:07 UTC, for LANE LANE-RUN7-account-2
+2026-10-06 01:39 | R7-DONC worker | done (01:37-01:50 UTC by date -u, brief met) for LANE LANE-RUN7-account-2: CSP Venice vol.17 Aug-Oct 1621 grepped on BHO; Doncaster context only (ill 14-24 Sept, Rochelle), no audience report, no cipher mention; NOTES.md section added
