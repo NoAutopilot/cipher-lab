@@ -115,3 +115,51 @@ next step, do not align. Do not touch keys or readings.
 - R7-DONC -- sp78-doncaster-1621. Intake gate: `sp78-doncaster-1621: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
   Step: grep CSP Venice vol. 17 (1621-1623; BHO or archive.org full text) for the Venetian ambassador's reports of Doncaster's Sept 1621
   audiences, a crib source for the item's subject.
+
+## Wave 3 (spawned 01:5x UTC 6 Oct). Wave 2 result: 6/6 D (11.68). Intake gate output (01:5x UTC) pasted per job.
+Sorter rule for this lane from now on (account-3 orchestrator flag 01:50, owner finding): before any sorter is handed on, open at least 5
+random tiles (crop images) and check each against its line image -- the tile must sit on the cipher line its label names, not on a clear
+line above or below -- and build with the current tools/sign_sorter.py template so "Fix the cut" works. Paste the 5 tile ids and what each
+shows into the sorter README.
+
+### R7-OLDFIX -- na-oldenbarnevelt-2442-1605, re-cut the A/C2 line map and sorter (cap 4, box 60 min)
+Intake gate: `na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+The account-3 orchestrator withdrew the sorter published from R7-OLDSORT (artifact 8F5HZFaYGFFF5Fnr3u9Wb7): tile A_L01_001 is cut from the
+clear Spanish line ("la breuedad que desseo y es...") ABOVE the cipher line ("C3SC7 G7n cal 8..."); tiles laid out by sign count sit on the
+wrong line; "Fix the cut" did not respond on that build. (1) Using the leaf images on disk (001 = f.54 block A, 006 = f.56 block C2), map
+which image lines are cipher and which are clear, with a gridded debug overlay; compare with R7-OLDA's --centres in NOTES.md section 13.
+(2) Decide and state whether R7-OLDA's crops/passes read the right lines: if its centres were off by a line or mixed clear lines in, mark
+the R7-OLDA 19.0% figure and reconciled draft as void (a non-test, not a transcription result) in NOTES.md and HYPOTHESES.md if listed.
+(3) Re-cut tiles from the cipher lines only (tools/iiif_lines.py with the corrected centres; tools/sorter_recut.py if it fits), rebuild with
+the current sign_sorter.py template, verify 5 random tiles as above, render headless. (4) No publishing, no ASKS edit: one ROOM flag line
+with the path for the lane orchestrator. No new transcription pass.
+
+### R7-MATQA -- matignon-mayenne-1586, check the f.110 sorter before it reaches the owner (cap 1.5, box 30 min)
+Intake gate: `matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+The f.110 sorter (R7-MATSORT, ciphers/matignon-mayenne-1586/sorter/, ASKS 146) was built the same way as the withdrawn oldenbarnevelt one.
+Its README already says image line L03 "straddles two rows and matches no transcribed line". Apply the sorter rule above: 5+ random tiles
+(include 2 from L03-unplaced and 1 from each of L01 and L06) against the line images, confirm the template is current ("Fix the cut"),
+fix by re-cut/rebuild if a tile is off-line, and record the check in the README. Report "fit to hand on" or what was fixed. No publishing.
+
+### R7-MANTSCR -- sachsstaatsarchiv-manteuffel-1712, eye screen of the 17 untranscribed glossed frames (cap 2, box 40 min)
+Intake gate: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (R7-MANT463, 6 Oct): "an eye screen of the 17 untranscribed glossed frames of N9-MANT2 for the leaf that carries the
+single-attested codes 898/939/539/544 or f.410 U codes (~$1)". Script first: list the 17 frames from N9-MANT2's table; low-res views (frames
+on disk where possible; www.archiv.sachsen.de >= 1.5 s apart if any must be fetched). Rank frames by visible occurrences of the target codes;
+write the ranking TSV and the one leaf to transcribe next. Do not transcribe in this job.
+
+### R7-SUR2 -- na-suriname-map-1781, Opus blind call on 2-3-sign context tiles (cap 4.5, box 45 min; 1 vision call)
+Intake gate: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Next instrument named by R7-SUR (whose single-sign control failed, 0.45 < 0.6): re-ask L08:51 / L10:30 g|l and [sigma] L11:17 vs L10:66 with
+one blind call on 2-3-sign context tiles, with the same F1 control, in an Opus subagent (Agent tool, model opus). Pre-register the control
+threshold and what each answer changes before the call (addendum to R7-SUR's prereg). If the control fails again, log the instrument as
+retired for this question under rule 3's third-attempt clause after this second attempt only if every number moved the wrong way; otherwise
+log "non-test" and stop. Apply only under GAPS23's rule; --check exit 0.
+
+### Sonnet print greps (model Sonnet 5; each cap 1.2, box 30 min; same rules as the wave-2 Sonnet greps)
+- R7-NICH -- sp77-nicholas-1659. Intake gate: `sp77-nicholas-1659: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+  Step: grep CSPD 1659-60's index and Cal. Clar. iv's index (IA _djvu.txt) for royalist aliases and agents at St Sebastian in Aug 1659 (Holder,
+  Bennet, Peter Wilson's house) to identify the writer/recipient.
+- R7-FRA83 -- sp78-france-1583. Intake gate: `sp78-france-1583: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+  Step: fetch the TNA Discovery record details of SP 78/113/56 and /58 and of SP 78/111/92 and /94 (tools/discovery_items.py or the Discovery API)
+  for a covering letter naming the writer or the cipher.
