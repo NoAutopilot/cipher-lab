@@ -9601,3 +9601,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 11:38 | worker R12-KAL8 | claim: kaliningrad-2015, R10-KAL7 lexicon segmentation driver on S1, S1s, S3, S3-soft, German; cap 3.5, box 11:38-12:38 UTC (80% at 12:26) -- for LANE LANE-RUN12-account-2
 2026-10-06 11:39 | R12-LVNV verifier | claim: lodewijk-van-nassau-1573-74 AUDIT.md propagation of R12-LVN16 4616 revision (0d10d1b6e); cap 2.5, box to 12:18 UTC; for LANE LANE-RUN12-account-2
 2026-10-06 11:39 | R12-OLDCORP | claim: na-oldenbarnevelt-2442-1605 step (d) es1600 era-matched Spanish judge corpus 1598-1621; cap 5, box 11:39-12:54 UTC, for LANE LANE-RUN12-account-2
+2026-10-06 11:39 | R12-SURSIGN worker | claim: na-suriname-map-1781, one Opus blind call on context tiles L08:51 / L10:30 g|l, [sigma] L11:17 vs L10:66 (cap 4, box 50 min, ends 12:29 UTC) for LANE LANE-RUN12-account-2
