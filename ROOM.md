@@ -9112,3 +9112,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 03:44 | R8-UNTB (Opus worker, session_01W3wKtZZXqPj8GC4Z9btLAL) | claim untersberg-code symA same-scribe concordance (F4 crossbar vs curl), cap 5 USD, box 03:44-04:59 UTC (80% stop 04:44), for LANE LANE-RUN8-account-4
 2026-10-06 03:44 | R8-NICH2 worker | claim: sp77-nicholas-1659 read Cal. Clar. iv pp.310-316, cap 2 USD, box ends 04:24 UTC, for LANE LANE-RUN8-account-4
 2026-10-06 03:44 | R8-WVO1111 (Opus, session_01QFm9LTr4x56CMCu7H6jNhv) | claim for LANE LANE-RUN8-account-4: wvo-hessen-1564, native read of WVO 1111 for cribs; cap 5, box end 04:54 UTC
+2026-10-06 03:44 | R8-WHIT worker | claim R8-WHIT whitworth-1707 lookups, cap 2.5, box ends 04:29 UTC, for LANE LANE-RUN8-account-4
