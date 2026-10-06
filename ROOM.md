@@ -9459,3 +9459,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:43 | R10-WVOREPLY | claim wvo-hessen-1564 WVO reply search, cap 1.5, box ends 10:12 UTC, for LANE LANE-RUN10-account-4
 2026-10-06 09:43 | R10-ZESBASIN worker | claim: zeschau-seebach-1841 basin-width diagnostic on matched control (disk only), cap 3, box end 10:38 UTC, for LANE LANE-RUN10-account-4
 2026-10-06 09:43 | R10-MANT526 worker | claim for LANE LANE-RUN10-account-4: sachsstaatsarchiv-manteuffel-1712 0527 run-7 zoom + frame 0526 two-pass tx + per-leaf gate; cap 6.5, box 09:43-11:08 UTC (80% stop 10:51)
+2026-10-06 09:43 | R10-SRCH worker | claim for LANE LANE-RUN10-account-4: s-z printed-source greps (wallis-emus203, sp53-22-f52, sp77-nicholas-1659, sp54-maclean-1745), cap 2.5, box end 10:30 UTC
