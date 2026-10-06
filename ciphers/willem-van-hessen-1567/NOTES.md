@@ -708,7 +708,7 @@ Read so far: 0 of the target's cipher signs (the target's ciphertext is not on d
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: 174 and 1069 fetched and eye-checked (OX-WVH); 1069 period-gloss key rebuilt to 42 classes (GAPS78, GAPS80); extending it to p2 lines 7-24 is preparation, not a read of the target (see While waiting)
-- [x] clear-pages: the Marburg minuut (WVO 01127.pdf, 4 pp.) viewed in full, plain text only with no cipher spans (A2-WVH); it is the crib once the original arrives
+- [x] clear-pages: the Marburg minuut (WVO 01127.pdf, 4 pp.) viewed in full, plain text only with no cipher spans (A2-WVH); it is the crib once the original arrives; transcribed and reconciled as a line-numbered crib, `minuut/` (R10-WVHMIN, 6 Oct 2026)
 - [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv on file; neither can be applied without the target ciphertext
 - [x] print: Groen III full-text (head line, GAPS86), Rommel Neuere Geschichte Bd 1 full-text (GAPS86), Google Books phrase queries (GAPS86), WVO record (GAPS86) -- no printed ciphertext or decipherment found
 - [n/a] key-rebuild: no target ciphertext exists on disk to rebuild a key against
@@ -718,10 +718,9 @@ Verdict: parked: every gap has an outside blocker (ASKS row 31, the KHA scan req
 
 ## While waiting
 
-- The one action that depends on nobody: transcribe the Marburg minuut's clear text (01127.pdf pp.2-4, about 75 lines of
-  Kurrent; line crops with `tools/iiif_lines.py --image`, 2 blind passes + 1 reconciliation per crop set), so the crib is
-  ready the day the KHA image arrives. Alternative, also independent: extend the sibling 1069 key with `--only-lines 7,8,9`
-  (GAPS80's command), about 2 vision calls a round.
+- Done 6 Oct 2026 (R10-WVHMIN, below): the Marburg minuut's clear text is transcribed and reconciled in `minuut/`, with a
+  normalised crib (`minuut/build_crib.py`). The remaining independent action: extend the sibling 1069 key with
+  `--only-lines 7,8,9` (GAPS80's command), about 2 vision calls a round.
 
 ## R9-WVOX (account 4, 6 Oct 2026): sibling keys vs wvo-hessen-1564 f.23's gloss key
 
@@ -733,3 +732,37 @@ f.23 vs 174 leaf: 0 of 7, p95 1 -> FAIL; 1069 vs 174 leaf: 4 of 17 (a = X, b = t
 R9-WVOX section. Logged in HYPOTHESES.md here. Nothing applied to the 174 letter body: no transcription of it exists on disk, and the
 f.23-vs-174 test failed. Suggestion (not run): the 1069 key and f.23's gloss key are close enough that each can check the other's
 uncertain classes (M only, after f.23's sorter answers).
+
+## R10-WVHMIN (account 4, 6 Oct 2026): Marburg minuut clear text transcribed as the crib for the KHA original
+
+Brief: `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` "R10-WVHMIN". No cipher work; status unchanged (`open`).
+- Source: `images/01127.pdf` pp.2-4 (f.151r-152r), already on disk; no network request this job. Page images extracted with
+  `pdfimages -j -f 2 -l 4` (native 261-283 ppi). Crop step, as run (pasted):
+  `python3 tools/iiif_lines.py --image pg-00{0,1,2}.jpg --out crops2 --prefix p{2,3,4} --lines-per-crop 2` ->
+  17 + 17 + 16 = 50 two-line crops (1-line run first, 34/34/32 lines, overlays checked by eye: bands sit on the lines);
+  each crop then trimmed to its ink columns. Two-line crops were used so that one call per pass covered all three pages
+  (the brief's "under ~80 crops" condition; 1-line crops would have been about 100). Crops: `minuut/crops/`.
+- Two blind Sonnet passes, one call each over all 50 crops (`minuut/passA.tsv` 102 rows, `minuut/passB.tsv` 105 rows),
+  then this worker's reconciliation against the crops and, where both passes failed, against fresh region cuts of the page.
+- Result: `minuut/reconciled.tsv`, 101 lines (p.2 35, p.3 34, p.4 37 including date, signature, address and the "Zettell:"
+  heading). Status per line: 78 `agree` (passes agree up to spelling variants), 23 `arb` (settled by this worker from
+  the image), 5 `M` (unsettled: p2 l.8 "Zuchmen", p2 l.18 "erfrewtem", p3 l.16 "nuhr/mehr", p3 l.22 the interlinear word,
+  and p.4 l.3 "beuelhen sein,", which the line detector missed and this worker read alone from the page).
+  Pass A dropped p.4 line 33; both passes misread p.2 l.33 ("vff beuelch der Kay: Mt:", by imperial command), p.4 l.2
+  ("Gott dem Herrn") and p.4 ll.10/12 ("auff Beuelch der Kö: Wür:", "In heimlicher verbündtnüss").
+- Crib: `python3 minuut/build_crib.py [--check]` writes `crib_norm.tsv` (per line, normalised: lower case, u/v->u, i/j/y->i,
+  umlauts folded, deletions dropped, insertions inlined, hyphenated line ends joined), `crib_words.txt` (word stream) and
+  `crib_stream.txt` (letters only, 3,416 letters; address/signature/date lines excluded). `--check` exits 0.
+- Marks for enciphering: **none seen** by either pass or by this worker -- no underlining of words, no marginal cipher signs,
+  no brackets except "(Gott Lob.)". Marks present: one deletion (p3 l.3 "zugetragen"), three interlinear insertions (p2 l.12,
+  p3 l.2, p3 l.22), a flourish under the L of "Landtschafft" (p3 l.13; pass B took it for a deletion, judged a flourish),
+  paragraph initials. So the minuut does not show which span the original enciphers; that is found only by aligning
+  against the KHA image.
+- Observation for whoever aligns (not a finding): the "Zettell" (p.4 ll.23-37) says Wilhelm sent "ein vertrawte Person" to
+  Count Johann because "es sachen seindt, Die der feddern vberlandt nicht seindt zuuertrawen", then reports the Fulda
+  meeting; it is the minuut of the loose note WVO says lies inside the original, and the likeliest place for cipher by
+  content -- but the letter body's Gotha/Grumbach and Erich of Brunswick paragraphs (p3 l.1 - p4 l.15) are candidates too.
+- Cross-reference (R9-WVOX, above): `../wvo-hessen-1564/` f.23 (WVO 1109, 18 Sept 1564) shares a key family with this
+  folder's sibling 1069 key (8 of 18 shapes, perm p95 3). Recorded only; nothing applied.
+- Subagents: 2 Sonnet calls (one per pass). Vision by this worker: about 12 crop/region reads. Hosts: none.
+
