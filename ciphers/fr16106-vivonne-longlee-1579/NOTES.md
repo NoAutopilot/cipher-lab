@@ -78,13 +78,13 @@ Read so far: 57 canvases sampled (VIV-M); one pair located (2 Mar 1580, c107-c10
 - Clerk's copy f.105r-106v only half read - blocker: not-attempted; beyond this brief (one pair, one first test); next: a second independent read of f.105r plus f.105v-106v at native resolution with a paleography-focused pass, ~$3
 - Test 1 at power: re-run test1.py on settled labels over the whole letter (c107-c109 left, five pages, against the four-page copy) - blocker: not-attempted; beyond this brief (one pair, one first test); next: after the two gaps above, ~$4
 - Which Vivonne cipher letters 1580-82 lack a clerk's decipherment - blocker: not-attempted; beyond this brief (one pair, one first test); next: walk the dense-cipher runs and the "Dechifre" pages (about 150-200 canvases at 600 px, ~USD 4)
-- Mousset table applied but label-to-glyph crosswalk is by eye on an unsettled inventory (D4-VIVMOUS: PASS 0.454 vs null p99 0.400; 261 tokens multi, 234 no glyph incl. the frequent 'R' and '=') - blocker: not-attempted; beyond this brief (published-key check only); next: after the owner sorter, re-label the piles against key/mousset1912.tsv glyphs and re-run vivmous.py, ~$1.5
+- Mousset table applied but label-to-glyph crosswalk is by eye on an unsettled inventory (D4-VIVMOUS: PASS 0.454 vs null p99 0.400; D4-VIVV: most of that margin is French letter statistics, text-specific margin thin, 0.454 vs wrong-text p99 0.448; crosswalk misses the table's x = 'ı o' and cc = '8'; 261 tokens multi, 234 no glyph incl. the frequent 'R' and '=') - blocker: not-attempted; beyond this brief (published-key check only); next: after the owner sorter, re-label the piles against key/mousset1912.tsv glyphs and re-run vivmous.py, ~$1.5
 - Mousset printed page column and the 46 undated rows of the TSV - blocker: not-attempted; beyond this brief (one pair, one first test); next: second script pass on letter headings, ~USD 0.5
 - github.com/larrycbeck/cyphersolver and Cipherbrain/Cryptiana comment threads not opened - blocker: not-attempted; beyond this brief (one pair, one first test); next: one README fetch, ~USD 0.1
 ## Escalation (VIV-T, 4 Oct 2026)
 - [ ] siblings: fr16104 folder (1572-74 cipher, Tomokiyo's Vivonne1 table) is a sibling with a different key; not merged and not written
 - [x] clear-pages: one pair located (2 Mar 1580: cipher c107-c109 left, copy c110 right-c112 left); test 1 ran on f.101v vs f.105r: NON-TEST at err_2reader 0.576
-- [x] known-keys: Mousset pp.lviii-lix table on disk (key/mousset1912.tsv, published) and applied to f.101v through a shape crosswalk (D4-VIVMOUS, 6 Oct 2026): PASS (0.454 vs null p99 0.400) with a 5/5 matched control; a key check, not a reading; see the D4-VIVMOUS section
+- [x] known-keys: Mousset pp.lviii-lix table on disk (key/mousset1912.tsv, published) and applied to f.101v through a shape crosswalk (D4-VIVMOUS, 6 Oct 2026): PASS (0.454 vs null p99 0.400) with a 5/5 matched control; verifier D4-VIVV: text-specific PASS only by a thin margin (0.454 vs unrelated-French p99 0.448), D0; a key check, not a reading; see the D4-VIVMOUS section
 - [x] print: Mousset 1912, Gachard II, d'Ars 1884 read; no print of the 2 Mar 1580 letter's text found (d'Ars paraphrase only)
 - [ ] key-rebuild: test 1 fitted a grade-C key, unusable at this transcription error; rebuild after the sorter
 - [x] image-check: 57 canvases sampled; c107-c112 viewed; c107 cut to native line crops
@@ -107,7 +107,7 @@ Crosswalk: key/crosswalk.tsv maps VIV-T's 29 provisional shape labels to the tab
 9 labels fit glyphs of two values (decoded {a|b}), 4 have no glyph (R 'ı8', '=', single 'o', F). Values were chosen from shape only; the
 worker had seen the copy's first line ("Quant a l'affaire qui touche le marquisat de Salluces") before writing the crosswalk, not the rest.
 Not decode_key.py: the ambiguous labels and the 'o o' -> d pair rule needed a small script, vivmous.py (`--check` exit 0, rule 7).
-Test: PREREG_vivmous.md, pushed 49f195080 before scoring. Statistic: nw_score of the decoded letter stream against the copy f.105r
+Test: PREREG_vivmous.md, pushed 49f195080 before scoring [D4-VIVV: that hash is not on origin/main; the PREREG landed in 10e9a0435 (13:06:38 UTC, folded under a ROOM-claim title), before the scoring commit e7c8f097b (13:13:07 UTC), so the order holds]. Statistic: nw_score of the decoded letter stream against the copy f.105r
 (tx/plain_c110_f105r.txt, test1.py folding) from its start; null: 1000 permutations of the letter values over the crosswalk labels.
 | run | tokens (one/multi/none) | decoded letters | real | null p99 (mean) | verdict |
 |---|---|---|---|---|---|
@@ -119,7 +119,7 @@ Verdict (pre-registered): **PASS**. Exploratory, not pre-registered: with the tw
 through this crosswalk, aligns about 514 of 1133 decoded letters to an identical copy letter against about 365 for a shuffled table; the
 target sits well below the control (0.45 vs 0.64), consistent with the crosswalk and the transcription both being rough. Short French
 runs appear in the raw decode ("d e c e" in L07, L10, L11; "e n c e d e t e r" L12) but no clause reads.
-Grades (rule 4, per ciphertext_draft.tsv column, 1,445 columns): H 328 (both readers agree on the label and the label maps to one table
+Grades (rule 4, per ciphertext_draft.tsv column, 1,445 columns) [D4-VIVV corrected to H 0, M 1165, I 280: sign identity rests on two machine readers at err 0.576 and a by-eye crosswalk, so no token is read from the key source; was:] H 328 (both readers agree on the label and the label maps to one table
 glyph -- H for the key, the sign identity still rests on two machine readers with err_2reader 0.576 and no owner sorting), M 837, I 280.
 No token is graded C or S. This is a published-key check with a passed matched control, not a reading: depth D0-D1 at most.
 Agreement with the copy where test 1 aligned it: test 1's fitted key read 0.370 on the held-out half against nulls of 0.385-0.396
@@ -129,3 +129,41 @@ Where not found: no null-sign list in Mousset (p.lii names nulls, the table does
 Requests: archive.org 6 (djvu text 1, page_numbers.json 1, page images 4; all 200; ~2 s apart). No other host.
 Next (one line, not done): after the owner's sorter, re-label the piles directly against the Mousset glyphs (adding the 'R' and '=' piles
 as candidate nulls) and re-run vivmous.py; then decode f.102r-103v the same way.
+
+## D4-VIVV (verifier, 6 Oct 2026, 13:24-13:50 UTC by date -u)
+Separate session from D4-VIVMOUS; audited its claim, did not decode further. Script vivv_contam.py, result vivv_contam_result.json,
+PREREG_vivv.md pushed e638be972 (13:30:46 UTC) before the scored run.
+1. Reproduction: `vivmous.py --check` exit 0 ("check OK", 8 min); every number in the D4-VIVMOUS table is byte-identical
+   (pass A 0.4537 vs p99 0.3998, pass B 0.4196 vs 0.4045, control 0.6345-0.6524, 5/5, grades 328/837/280).
+2. Rule 3. Order: the cited PREREG hash 49f195080 does not exist on origin/main; PREREG_vivmous.md and key/crosswalk.tsv landed in
+   10e9a0435 (13:06:38 UTC) and vivmous.py with its results in e7c8f097b (13:13:07 UTC), so prereg-before-score holds, under a
+   wrong hash (corrected above). [Side note for the lane, not this target: 10e9a0435 is a parentless root commit; origin/main
+   carries 64 commits, the older history only on other refs.] Can the value-shuffle null vary on the statistic? Yes, but it
+   varies two things at once: which letter each label gets changes the decoded stream's letter frequencies as well as its
+   order, so beating it shows "French-looking frequencies" as much as "this text". Measured: the real decode scores 0.417 mean
+   (p99 0.448, max 0.448, 100 windows) against unrelated period French (Catherine de Medicis letters, tools/data/fr16), and
+   0.404 mean (p99 0.431) with its own token order shuffled. So of the 0.13 margin over the value-shuffle mean (0.322), about
+   0.095 is reproduced by any French text; the text-specific part is 0.454 - 0.417 = 0.037 (about 40 of 1133 letters). Pre-
+   registered PREREG_vivv verdict: text-specific PASS (0.454 > 0.448 and > 0.431; control seed 0 reads 0.637 vs copy and 0.410
+   mean / 0.444 max vs wrong text, so the instrument can tell text identity at e=0.576) -- but by 0.006 over p99, a thin
+   margin. The alignment's free start puts decoded letter 0 against copy letter 231 (about line 5 of the copy), not the start.
+   Control design: e=0.576 is VIV-T's two-reader disagreement (err_2reader), an agreement figure, not a measured per-sign error
+   (TRANSCRIPTION.md); the control is the target's design (one-for-one substitution through the same crosswalk labels with the
+   target's label frequencies), but its noise is uniform-random while the target's errors also include the crosswalk's own
+   misidentifications, so the control (0.64) overstates what a correct crosswalk would give; the 0.45-vs-0.64 gap is not sized.
+3. Contamination (copy line 1 seen before the crosswalk). The real alignment never uses copy line 1 (path starts at copy letter
+   231), so the traceback cut drops nothing: 0.4537 vs p99 0.3981 (W reduced to 1240). Row L01 and copy line 1 both dropped:
+   0.4555 vs p99 0.4033, PASS. Nine two-value labels, each set to its second value in turn: all 9 PASS (0.429-0.459 vs p99
+   0.388-0.406; H=g 0.444, T=y 0.457, E=y 0.434, c=a 0.429, q=q 0.447, b=d 0.455, 2=ff 0.451, S=m 0.459, 8=par 0.454). All nine
+   at their second value together: 0.382 vs p99 0.384, FAIL -- the first-listed values carry the result.
+4. Eye check, 10 random crosswalk rows (seed 66) against key/mousset1912_plviii_table.jpg / plix_w500.jpg and crops L01, L02:
+   right glyph for a (σz), D (Δ), 6, 7, 2 (Ze = ff / fait), d (∂ hook), P (Π with bars = quant), : (∴) -- 8/10. z (3): table
+   match right, but on L01 the readers' 'z' at position 9 is the Ze ligature, so the label mixes two table signs. o (single o):
+   marked "no glyph", but on L01 the readers' adjacent '1 o' / 'ı o' is the table's x = "10" (p.lviii), which the crosswalk misses;
+   likewise cc = '8' is missing from the '8' row, and 'H' omits b.g2 (boxed H). These are fixes for the next pass, not applied.
+5. Rule 4: H 328 not defensible -- the key values are published, but the token's sign identity is a machine label at err_2reader
+   0.576 run through this worker's by-eye crosswalk, and no clause reads. Corrected: H 0, M 1165, I 280 (C 0, S 0).
+6. Depth (rule 4a): D0 -- a key ranks (beats its nulls), nothing reads; no stretch above the authentication distance, no code
+   value read in two contexts. Outward words: none beyond "a published-key check; no fragments read". No novelty class: no
+   reading is claimed. status unchanged: partial.
+Requests: none (disk only). Cost: within cap.

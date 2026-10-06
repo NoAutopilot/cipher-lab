@@ -1,0 +1,134 @@
+{
+ "nshuf": 1000,
+ "copy_line1_letters": 44,
+ "baseline": {
+  "n_dec": 1133,
+  "W": 1284,
+  "real": 0.4537,
+  "null_p99": 0.3998,
+  "null_mean": 0.3218,
+  "verdict": "PASS"
+ },
+ "a_traceback_cut": {
+  "dec_letters_dropped": 0,
+  "tokens_dropped": 0,
+  "n_dec": 1133,
+  "W": 1240,
+  "real": 0.4537,
+  "null_p99": 0.3981,
+  "null_mean": 0.3202,
+  "verdict": "PASS"
+ },
+ "b_row_L01_dropped": {
+  "tokens_dropped": 45,
+  "n_dec": 1091,
+  "W": 1240,
+  "real": 0.4555,
+  "null_p99": 0.4033,
+  "null_mean": 0.322,
+  "verdict": "PASS"
+ },
+ "c_multi_second": {
+  "H=g": {
+   "n_dec": 1133,
+   "W": 1284,
+   "real": 0.444,
+   "null_p99": 0.391,
+   "null_mean": 0.3114,
+   "verdict": "PASS"
+  },
+  "T=y": {
+   "n_dec": 1111,
+   "W": 1284,
+   "real": 0.4572,
+   "null_p99": 0.3907,
+   "null_mean": 0.3144,
+   "verdict": "PASS"
+  },
+  "E=y": {
+   "n_dec": 1133,
+   "W": 1284,
+   "real": 0.4342,
+   "null_p99": 0.3928,
+   "null_mean": 0.3162,
+   "verdict": "PASS"
+  },
+  "c=a": {
+   "n_dec": 1133,
+   "W": 1284,
+   "real": 0.4289,
+   "null_p99": 0.4034,
+   "null_mean": 0.3218,
+   "verdict": "PASS"
+  },
+  "q=q": {
+   "n_dec": 1133,
+   "W": 1284,
+   "real": 0.4466,
+   "null_p99": 0.4034,
+   "null_mean": 0.3235,
+   "verdict": "PASS"
+  },
+  "b=d": {
+   "n_dec": 1133,
+   "W": 1284,
+   "real": 0.4545,
+   "null_p99": 0.4042,
+   "null_mean": 0.3257,
+   "verdict": "PASS"
+  },
+  "2=ff": {
+   "n_dec": 1131,
+   "W": 1284,
+   "real": 0.4509,
+   "null_p99": 0.3997,
+   "null_mean": 0.3214,
+   "verdict": "PASS"
+  },
+  "S=m": {
+   "n_dec": 1112,
+   "W": 1284,
+   "real": 0.4586,
+   "null_p99": 0.3876,
+   "null_mean": 0.3108,
+   "verdict": "PASS"
+  },
+  "8=par": {
+   "n_dec": 1137,
+   "W": 1284,
+   "real": 0.4538,
+   "null_p99": 0.4055,
+   "null_mean": 0.3285,
+   "verdict": "PASS"
+  }
+ },
+ "d_all_second": {
+  "n_dec": 1092,
+  "W": 1284,
+  "real": 0.3819,
+  "null_p99": 0.3837,
+  "null_mean": 0.2971,
+  "verdict": "FAIL"
+ },
+ "e_wrong_text": {
+  "real_vs_copy": 0.4537,
+  "n": 100,
+  "mean": 0.4173,
+  "max": 0.4484,
+  "p95": 0.4414,
+  "p99": 0.4475
+ },
+ "f_order_shuffle": {
+  "n": 100,
+  "mean": 0.4042,
+  "max": 0.4351,
+  "p95": 0.4201,
+  "p99": 0.4308
+ },
+ "g_control_seed0": {
+  "vs_copy": 0.6369,
+  "vs_wrong_text_mean": 0.4097,
+  "vs_wrong_text_max": 0.4436
+ },
+ "path_start_copy_letter": 231
+}
