@@ -1,0 +1,53 @@
+set	kind	idx	item	chosen	chosen_str	alt	alt_str	margin	resolved
+control	trim	3	franco	end	franc	front	ranco	10.410	True
+control	trim	4	anao	end	a	front	o	2.953	True
+control	trim	6	abicar	end	a	front	r	3.479	True
+control	trim	7	rustico	end	rus	front	ico	8.847	True
+control	trim	8	sillaba	end	si	front	ba	8.969	True
+control	trim	9	acaso	end	a	front	o	7.969	True
+control	trim	10	parecer	end	parece	front	arecer	10.644	True
+control	join	0	aba|guerra	split				11.229	True
+control	join	1	guerra|de	split				11.229	True
+control	join	2	de|franco	split				11.523	True
+control	join	3	franco|anao	join				8.940	True
+control	join	4	anao|com	split				10.410	True
+control	join	5	com|abicar	split				2.187	False
+control	join	6	abicar|rustico	split				8.847	True
+control	join	7	rustico|sillaba	join				8.847	True
+control	join	8	sillaba|acaso	join				7.630	True
+control	join	9	acaso|parecer	split				10.644	True
+control	join	10	parecer|inevitavel	split				12.811	True
+target	trim	7	mando	end	man	front	ndo	1.286	False
+target	trim	8	ouros	end	o	front	s	0.498	False
+target	trim	11	hernia	end	he	front	ia	0.000	False
+target	trim	14	paralisia	end	para	front	isia	5.172	True
+target	trim	19	dormitar	end	do	front	ar	0.000	False
+target	trim	22	pauperrimo	end	pauperr	front	perrimo	0.000	False
+target	trim	23	venablo	end	ven	front	blo	1.460	False
+target	trim	24	habil	end	ha	front	il	3.719	True
+target	join	0	para|supprir	join				2.038	False
+target	join	1	supprir|ovo	split				5.623	True
+target	join	2	ovo|seu	split				2.071	False
+target	join	3	seu|lugar	split				2.071	False
+target	join	4	lugar|junto	split				2.071	False
+target	join	5	junto|com	split				3.355	True
+target	join	6	com|mando	join				1.286	False
+target	join	7	mando|ouros	split				1.286	False
+target	join	8	ouros|d	split				0.498	False
+target	join	9	d|justa	join				0.372	False
+target	join	10	justa|hernia	join				0.372	False
+target	join	11	hernia|segredo	join				0.372	False
+target	join	12	segredo|ate	split				1.366	False
+target	join	13	ate|paralisia	split				5.172	True
+target	join	14	paralisia|odio	split				4.290	True
+target	join	15	odio|ministerio	split				9.283	True
+target	join	16	ministerio|pela	split				9.283	True
+target	join	17	pela|memoria	split				5.621	True
+target	join	18	memoria|dormitar	split				4.711	True
+target	join	19	dormitar|cagar	join				1.460	False
+target	join	20	cagar|lhe	join				5.621	True
+target	join	21	lhe|pauperrimo	join				4.711	True
+target	join	22	pauperrimo|venablo	split				1.460	False
+target	join	23	venablo|habil	join				1.460	False
+target	join	24	habil|logo	split				4.711	True
+null	summary		20 perms	trim_resolved_mean=2.40	join_resolved_mean=5.05				
