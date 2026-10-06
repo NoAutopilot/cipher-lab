@@ -1,4 +1,4 @@
-# PREREG-MANT85 (R13-MANT85, 6 Oct 2026, written 18:12 UTC by date -u, LANE LANE-RUN13-account-4, account 4), before any pass was read or any statistic computed
+# PREREG-MANT85 (R13-MANT85, 6 Oct 2026, written 18:08 UTC by date -u, LANE LANE-RUN13-account-4, account 4), before any pass was read or any statistic computed
 
 Leaf unit "0085_09": SHStA Dresden 10026 Loc. 694/09, URL file 0085 (film label 0086; sha256 d99e49ad...c499dae7c; www.archiv.sachsen.de,
 1 request, HTTP 200). Two written pages; the left page (end of a letter, signed) carries a block of dotted code runs with interlinear
@@ -23,3 +23,17 @@ glosses only, graded M (C only where the leaf itself glosses a single code unamb
 row; conflicts with Krauske logged in HYPOTHESES.md with witnesses, never resolved by majority (rule 4). HELD/FAIL: nothing merges.
 Known-answer (reported first, not a gate): every single-code gloss on this leaf whose code has a C value in key.tsv is scored
 agree / compatible / disagree. The pooled gate (pooled_gate.py) is not run in this job (not in the brief).
+
+## Addendum (6 Oct 2026, 18:12 UTC by date -u), after reconciliation, before any alignment or score
+Time in the heading corrected 18:12 -> 18:08 (the commit time of a40fb3c98; the typed time was wrong).
+Crops (pasted): `tools/iiif_lines.py --image 0085.jpg --out crops --region 900,1340,1240,560 --prefix L --lines-per-crop 3 --debug` found
+10 lines in 4 bands (pitch 49), but the debug overlay showed band cuts through the interlinear glosses, so the same box was cut by PIL into
+4 overlapping full-width strips, native boxes (900,1340+120k,2140,+200) k=0..3 (S01-S04, 1240x200 px); passes got strip paths only (A in
+order, B reversed). Worker zooms (2x, 8 tiles of the box) for reconciliation, scratch only.
+Reconciled: 12 runs, 89 code tokens (reconciled.tsv). A vs B code splits 4/89 (0.955 agree: 66/6?5, 2/21, 63/66, 501/50.1), under the 10%
+stop line. Most runs are letter range (<=120); the nomenclator-range values 483 (run 4), 501 and 349 (run 10) carry NO gloss over them.
+Pairing (scored): one pair per glossed run, 11 pairs (pairs.tsv); run 10 continues run 9 across the line break with no gloss of its own,
+while run 9's gloss ("... que perdu a ce changement") runs past the codes of its own line, so runs 9+10 form one pair. Declared secondary
+(reported, not the gate): pairs_line.tsv, the strict one-pair-per-line form with run 10 left out. Run 5's gloss "geh de urck l m h m"
+is paired with run 5 (its placement, M). Normalisation: MANT5 only, no gloss_norm_0085.tsv (the leaf writes no abbreviation out in full
+over the same code). Seed 85, 200 draws, as registered.

@@ -1,0 +1,13 @@
+run	page	crop	codes	gloss	gloss_grade	note
+1	left	S01	7.60	Grumbkow	M	A/B agree on codes; gloss over 7.60 (B clear, A 'Grumbtlow'?, worker zoom 'Grumbkow'); Krauske 7=g 60=r|re|ro: letters g r, compatible (initial abbreviation)
+2	left	S01	257	Roy	M	B reads 257 with gloss 'Roy'; A saw 'Roy' over the line start but wrote 257 only in context; worker zoom: 'Roy' over 257
+3	left	S01	8.36.44.66.51.13.89.30.8.21.48.35.85.53.26	h f lasset mich ungeschoren	M	15 codes; A 66 / B 6?5 -> 66 (zoom); B 8? -> 8; German gloss over the run (A 'h.t. tuset much ongeschreven', B 'h.t. lust much angeschrieben'; worker zoom 'h.f. lasset mich ungeschoren', M); word positions over codes not settled
+4	left	S01/S02	2.14.483.45.50.28.34	Kath	M	A/B agree; 'Kath' written between the lines to the right of 'celuy'/over the right end of the run, position uncertain (A: over 2.14; B: near 50.28); 483 unglossed
+5	left	S02	37.10.47.74.67.27.15.11.42.31.39.50	geh de urck l m h m	M	A/B agree (B 11?); A placed 'geh de Urck: l.m. h.m.' after run 4, B between runs 4 and 5; worker zoom: written under line 3's end, immediately over run 5's right half -> paired with run 5 (M)
+6	left	S02/S03	110.60.2.71.32.35	la Reine	M	A/B agree codes and gloss; gloss over 110.60
+7	left	S03	36	Fr	M	A/B agree ('Fr.' unsure in both); single code
+8	left	S03	41.26	Kr	M	A/B agree ('Kr.' unsure in both)
+9	left	S03/S04	14.16.16.6.57.66.54.24.33.21.2.17.12.6.51.7.66.48.21.35.29	nous avons plus gagne que perdu a ce changement	M	21 codes; A 21.2 / B 21.21 -> 21.24? on zoom, kept 2 as A (M; the digit after 21 is a 2 with a tail); A 63 / B 66 -> 66 (zoom); gloss written over this line: 'nous'(14.16) 'avons' ... 'plus'(A plutot?) 'gagne que perdu a a changement' over the right half
+10	left	S04	67.10.34.60.120.54.25.30.10.72.50.21.37.10.13.2.32.54.501.349	-	-	continues run 9 on the next line, no gloss of its own; A 501.349 / B 50?.1.349 -> 501 (zoom: one group); 349 last digit 9 or 4 (M); 501 and 349 nomenclator range, unglossed
+11	left	S04	66	Anth	M	A 'Anth.', B 'Ant.?'; zoom 'Anth.'; single code '66. me vient de dire'
+12	left	S04	27	Fr	M	A/B agree 'Fr.' over 27 in 'le fr. 27 a eu nouvelles'
