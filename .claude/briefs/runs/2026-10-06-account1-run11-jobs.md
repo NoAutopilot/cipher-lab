@@ -162,3 +162,13 @@ numbers / spaced deciphered passages / a printed number-to-word pair (C only whe
 letter 341 codes. Update NOTES next step + Verdict.
 
 Wave 5 sessions (15:34 UTC): R11A-AVS9C session_01EtYtm4B6qr1ABmeuFWWvTp; R11A-HEIN3 session_01KpNSXbezLGqrNP8YzdmvtA.
+
+## Wave 6 (spawned 15:5x UTC). Gallica still timing out at 15:57.
+
+### R11A-AVSV2 -- VERIFIER (separate session from every R11A-AVS* worker and from R11A-AVSV): august-van-saksen key_53 low-count S grades. Cap 2.5, box 45 min.
+R11A-AVS9C (prereg_avs9c.md, 0032aacc0) showed the 53 anneal's matched control reads count-2 signs only 2/12 (and count<=3 6/22) at N 364.
+key_53 G4 = p (count 2) and possibly other signs with count <= 3 are graded S. Question for you: per rule 3/4, is S supported for each such
+sign (anneal + a context argument that itself had a control?) or should it be M? List every key_53 sign with count <= 3 with its grade and the
+evidence behind it; regrade only where the evidence is the anneal alone (S needs a control that can read that count). Apply via the folder's
+own grade files, run every folder --check (exit 0), update the AUDIT.md carry-over section (R11A-AVSV's), status.json depth fields if
+depth_pct changes (rebase first), SO-SAXONY-53-57 prompt counts if they change. N-class unchanged unless the template is run. Postmortem line.
