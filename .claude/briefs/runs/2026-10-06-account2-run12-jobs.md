@@ -131,3 +131,23 @@ four named tokens plus known-answer tiles of g, l and [sigma] from glossed conte
 (control must score >= the gate you register before the target tiles are read) committed before the call; one blind Opus subagent call
 on the tile sheet. Report control and target answers side by side; settle a token only if the control passes. Any change: decode --check
 exit 0, verifier flag. Wait for R12-SURSWP2's done line in ROOM.md before pushing NOTES.md edits (rebase; keep both facts).
+
+## Wave 2b (spawned 11:4x UTC 6 Oct, with wave 2). Wave 1: five done (5 D), workers so far 8.50 (get_session).
+
+### R12-LVNV -- verifier, lodewijk-van-nassau-1573-74: carry R12-LVN16's 4616 reading revision into AUDIT.md (cap 2.5, box 40 min)
+You are a verifier, not the solver (R12-LVN16, commit 0d10d1b6e). CLAUDE.md rule 10 propagation paragraph and "Verifier brief" item 4:
+re-run the folder's 4616 decode --check yourself; open at least 8 of the settled rows and 4 of the 14 split slash groups against the
+300-dpi crops the worker cut (images/... per its NOTES section) and say for each whether the image supports it; check the PREREG
+predates the scored control (git log times); check the "121 -> 221 hollande H" change against key_full and its witness. Then update
+AUDIT.md (dated section: counts before/after, 57.5% -> 58.3%, any row you overturn, which you mark in a corrections note rather than
+editing the worker's files) and any SECOND-OPINIONS-QUEUE.tsv row for this target, and depth fields in status.json only via
+tools/depth_check.py if the depth figure moves. N-class unchanged unless the text changes what was printed. Do not decode anything new.
+
+### R12-LVN10 -- lodewijk-van-nassau-1573-74, letter 4610 image-check: its 131 M tokens at 300 dpi (cap 6, box 80 min)
+Intake gate: `lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+The same protocol R12-LVN16 used on 4616 (read its NOTES.md section and scripts first; reuse settle.py with --letters 4610): 300-dpi
+line crops for only the lines carrying 4610's M tokens (paste the crop command), one page per Sonnet call, two blind passes per page +
+your reconciliation (units: pages x 2 + 1 at ~1.5; state the page count in your claim and stop before a page that would cross 80% of
+cap or box), the same pre-registered known-answer control on H rows (PREREG pushed before scoring). Corrections to ciphertext_4610.tsv
+with per-row notes, decode --check exit 0, recount, ROOM flag for a verifier (the reading changed after AUDIT.md). Coordinate with
+R12-LVNV (verifier on 4616, running now): rebase before touching NOTES.md; never edit AUDIT.md. Update gaps item 3, gaps_check.
