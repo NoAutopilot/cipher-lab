@@ -32,3 +32,7 @@ answered HTTP 503 (1 request, not retried). N is instead cut by `tools/iiif_line
 --region 0,0,450,820 --out images/hand --prefix ctrl_k4 --lines-per-crop 40` (the same f.9v leaf, DUCH-KEY4's on-disk sheet,
 first column A 11-39) and upscaled by 1/0.55 to native-equivalent scale -> images/hand/ctrl_k4_native.jpg. Same hand and
 leaf as planned; only resampling differs (slightly softer strokes). Gate unchanged.
+
+## Result (14:0x UTC 6 Oct 2026, one call, not re-run)
+Shuffle X=N, Y=P, Z=T. Scores: N 4, P 4, T 5 (digits seen R ~30, N ~30, P 3, T 5).
+Gate (a) calibration: P 4 < 6 and P - N = 0 < 3 -> **NON-TEST**. (b), (c) not evaluated. The six carries are not moved by this test.

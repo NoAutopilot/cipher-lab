@@ -1,5 +1,5 @@
 open
-Verdict: open -- key no.1 a non-test at 37 tokens (DUCH-KEY1B, power 0/20); key no.4 cannot cover f.10r (DUCH-KEY4); ff.9, 11, 12 carry no cipher (DUCH-LEAVES); f.13r's glossed codes (DUCH-F13, 3 Oct 2026: 34 codes, both passes agree on every number, 6 codes glossed at H) cover 6 of f.10r's 37 tokens (82 82, 21 21, 12 12; p 0.029 vs random code sets), all M because the f.13r and f.10r hands were not shown to be the same writer, so the pre-registered crib gate (>=3 C) fails; f.13r's list is not key no.1 (0/6 agree). next: settle the hand question (a person's palaeographic look at images/f10b vs images/f13r, ASKS) and a third read of the 40 gloss (Vill./Lill.) ~USD 2; if the hands match, the 6 carries become C and the gate is met.
+Verdict: open -- key no.1 a non-test at 37 tokens (DUCH-KEY1B, power 0/20); key no.4 cannot cover f.10r (DUCH-KEY4); ff.9, 11, 12 carry no cipher (DUCH-LEAVES); f.13r's glossed codes (DUCH-F13, 3 Oct 2026: 34 codes, both passes agree on every number, 6 codes glossed at H) cover 6 of f.10r's 37 tokens (82 82, 21 21, 12 12; p 0.029 vs random code sets), all M because the f.13r and f.10r hands were not shown to be the same writer, so the pre-registered crib gate (>=3 C) fails; f.13r's list is not key no.1 (0/6 agree). next: settle the hand question (a person's palaeographic look at images/f10b vs images/f13r, ASKS) and a third read of the 40 gloss (Vill./Lill.) ~USD 2; if the hands match, the 6 carries become C and the gate is met. Hand test (R11A-F4712, 6 Oct 2026): blind digit comparison with positive and negative controls was a NON-TEST (positive control 4/10 = negative control 4/10, f.13r 5/10; too few digits, no 8 on f.13r panels); the owner's ASKS 113 "I think the same" (5 Oct) stands as the only same-writer judgement; next: apply it as C per ASKS 113's rule with decode --check, ~USD 1.5.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -329,3 +329,27 @@ f.13r). Per ASKS 113's pre-registered rule, a "same" answer carries f.13r's six 
 ...) to the matching tokens of f.10r at grade C. Not yet applied: the next worker on this target applies them through
 key.tsv/exceptions with decode_key.py --check, notes the conflicting 8-shape evidence beside each carried value, and leaves the
 "Vill."/"Lill." gloss over code 40 open (not asked this time).
+
+## R11A-F4712 (account 1 for LANE LANE-RUN11-account-1, 6 Oct 2026, 13:48-14:0x UTC by date -u): blind digit-hand test -- NON-TEST
+
+Pre-registered `PREREG_duchhand.md` (commit e8cea837, before any scored call; deviation commit 63e7eef3). One blind Sonnet call
+compared digit shapes in R = f.10r lines 1-2 against three shuffled candidates: P = f.10r lines 3-4 (same writer by construction),
+T = f.13r lines 1, 4, 7 (codes 6 82 58 / 25 35 / 21 40), N = key no.4 table, fr.3995 f.9v column A (a presumed different hand).
+N came from the on-disk DUCH-KEY4 sheet, upscaled 1/0.55, because Gallica answered 503 to the native crop (1 request, not retried).
+
+| candidate | digits seen | score (0-10, same writer as R) |
+|---|---|---|
+| P f.10r L3-4 (positive) | 3 | 4 |
+| T f.13r | 5 | 5 |
+| N key no.4 table (negative) | ~30 | 4 |
+
+The calibration gate (a) fails (P 4 < 6, P - N = 0): the scorer cannot separate f.10r from a different hand at this sample size, so
+this is a **non-test**, not evidence for or against the same writer. Cause (our panel design, not the scorer): the f.10r L3-L4 crops
+carry only about 3 digits, and f.13r gives 5 digits with no 8 at all, so the decisive open-vs-looped 8 never entered the comparison.
+The subagent's notes call T's 2 "only partially" like R's. Nothing about the hand is settled here. The open evidence stays as it was:
+the owner's eye says "I think the same" (ASKS 113, 5 Oct), and DUCH-F13's look says "leaning different" (the 8-form).
+Next (not run, outside this brief): the owner's ASKS 113 answer already licenses the C carry under ASKS 113's own pre-registered
+rule; applying it through key.tsv + decode_key.py --check, with the 8-form conflict noted per value, is the step the 5 Oct section
+names (~USD 1.5). A machine digit test would need digit-rich panels: f.10r has about 30 digits in L1-2, but f.13r has only about 34
+codes in all, so the power stays low.
+Requests: gallica.bnf.fr 1 (503). Vision: 1 Sonnet subagent call.
