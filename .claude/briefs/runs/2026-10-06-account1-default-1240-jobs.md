@@ -150,3 +150,16 @@ Folder Verdict cheapest next (D1-BAL167's 63-exemplar sheet). Units at ~1.5: cro
 Sonnet passes per leaf-page over line crops (one call per page per pass, crops + the exemplar sheet only) + 1 reconciliation. If ff.228-230 is
 more than 2 pages, do ff.228 first and stop before a page that would cross 80% of cap. If the passes split > 0.1, stop after reconciliation
 (sorter next). Write "## D1-BAL170" in NOTES.md, Remaining gaps / Escalation, gaps_check.py.
+
+## Wave 4 (spawned 13:5x UTC 6 Oct; lane ~49 of 60 at spawn, these two close it).
+
+### D1-BAL170B -- baluze167-davaux-1637, re-pass f.228r on the re-cut crops + two blind passes of f.228v (Opus; cap 4, box 60 min)
+Intake gate: `baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+D1-BAL170's named next step (NOTES ## D1-BAL170). Units at ~1.5: f.228r one fresh blind pass on the re-cut crops + f.228v 2 blind passes + 1
+reconciliation. Crops only, one call per page per pass. If either page's passes split > 0.10 after the re-cut, stop after reconciliation (sorter
+next). Do not decode. Remaining gaps / Escalation; gaps_check.py.
+
+### D1-DEC2678M -- decode-2678-bnf-colbert127-gravel-1665, the 6 unlooked 1664 Gravel leaves for figure groups (Opus; cap 3.5, box 45 min)
+Intake gate: `decode-2678-bnf-colbert127-gravel-1665: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+D1-DEC2678L's named next step; same method (cached manifests on disk, one Gallica image request per leaf at viewing size). No decoding;
+record clear / cipher / partly cipher per leaf, a cipher leaf as a named next step. Remaining gaps / Escalation; gaps_check.py.
