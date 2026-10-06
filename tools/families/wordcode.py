@@ -26,7 +26,7 @@ target's other type names by homophone allotment (syllabary.alloc); then the CM3
 deleted token counts wrong, an inserted one in neither numerator nor denominator), reported blended and per class
 (letter tokens vs code tokens, CLAUDE.md rule 3 unbalanced-class paragraph) on stdout and in the decode info.
 
-params: codes (marked), vocab (1000), err (0.064), iters (40000), order (3), uni_weight (0.5), wprior (0.5),
+params: codes (marked), bnd (w; the boundary letter, R13-KAL10), vocab (1000), err (0.064), iters (40000), order (3), uni_weight (0.5), wprior (0.5),
 names (8), namepen (-6.0), codeletters (0: a code-capable type decodes only to a word or <NAME>; 1 lets it be a letter).
 Calibration on the 0%-error control, seed 1, one restart, 20k iters (bSALW, 26 Sept 2026): the KL letter term taken
 over code-word letters as well read 0.00-0.20; over letter types only at uni_weight 0.5 it read 0.72, at 1.0 0.20;
@@ -56,6 +56,16 @@ DESCRIPTION = ("letter-or-word nomenclator: each sign type = one letter or one w
                "codes=marked vocab=1000 err=0.064); runs bounded by words; control on the target's run lengths; token accuracy per class")
 NAME = "<NAME>"
 _STASH = {}
+BND = "w"  # boundary letter: must survive ha.fold() and be unused by the plaintext alphabet (--param bnd=x for
+#           ru19_lat, whose 'w' is a letter; R13-KAL10 6 Oct 2026); default 'w' leaves every earlier row unchanged
+
+
+def _set_bnd(params):
+    global BND
+    b = str(params.get("bnd", "w"))
+    if len(b) != 1 or b not in ha.ALPHA:
+        raise SystemExit(f"wordcode: bnd={b!r} must be one letter of homophonic_anneal.ALPHA")
+    BND = b
 
 
 def _p(params, k, d):
@@ -63,8 +73,8 @@ def _p(params, k, d):
 
 
 def words_of(text):
-    """Folded word list (j->i, v->u, accents dropped; w, unused in Italian, cannot occur)."""
-    return [w for w in (ha.fold(x) for x in text.split()) if w and "w" not in w]
+    """Folded word list (j->i, v->u, accents dropped; the boundary letter BND, default w, unused in Italian, cannot occur)."""
+    return [w for w in (ha.fold(x) for x in text.split()) if w and BND not in w]
 
 
 def code_capable(types_freq, spec_str):
@@ -98,6 +108,7 @@ def _gaps(spec):
 
 
 def make_control(spec, seed, corpora, params):
+    _set_bnd(params)
     N = params["N"]
     err = _p(params, "err", 0.064)
     rng = random.Random(seed + 7000)
@@ -185,7 +196,7 @@ def make_control(spec, seed, corpora, params):
             extra += 1
             cmap[w] = f"X{extra}^c"
     lf = Counter(t for t, c in zip(toks, is_code) if not c)
-    lhom = alloc(lnames, {a: lf.get(a, 0) for a in ha.ALPHA if a != "w"}) if lnames else {}
+    lhom = alloc(lnames, {a: lf.get(a, 0) for a in ha.ALPHA if a != BND}) if lnames else {}
     seq = []
     for t, c in zip(toks, is_code):
         if c:
@@ -246,7 +257,7 @@ def make_control(spec, seed, corpora, params):
 class Scorer:
     def __init__(self, corpora, order, vocab_n):
         self.mu = ha.Model(corpora, order)
-        self.ms = ha.Model([re.sub(r"\s+", "w", " ".join(words_of(t))) for t in corpora], order)
+        self.ms = ha.Model([re.sub(r"\s+", BND, " ".join(words_of(t))) for t in corpora], order)
         self.o = order
         wc = Counter(w for t in corpora for w in words_of(t))
         tot = sum(wc.values())
@@ -269,26 +280,27 @@ class Scorer:
         """Sum over the trigrams of s that overlap s[lo:hi] (the run itself; lo/hi exclude fixed context padding)."""
         o, lu, ls = self.o, self.mu.logp, self.ms.logp
         hi = len(s) if hi is None else hi
-        return sum((ls if "w" in s[i:i + o] else lu)(s[i:i + o]) for i in range(max(0, lo - o + 1), min(len(s), hi + o - 1) - o + 1))
+        return sum((ls if BND in s[i:i + o] else lu)(s[i:i + o]) for i in range(max(0, lo - o + 1), min(len(s), hi + o - 1) - o + 1))
 
 
 def _run_string(run, key):
-    out = ["w"]
+    out = [BND]
     for t in run:
         v = key[t]
         if len(v) == 1:
             out.append(v)
         else:
-            if out[-1] != "w":
-                out.append("w")
+            if out[-1] != BND:
+                out.append(BND)
             if v != NAME:
-                out.append(v); out.append("w")
-    if out[-1] != "w":
-        out.append("w")
+                out.append(v); out.append(BND)
+    if out[-1] != BND:
+        out.append(BND)
     return "".join(out)
 
 
 def solve(cipher_msgs, spec, seed, restarts, corpora, params):
+    _set_bnd(params)
     order, iters = _p(params, "order", 3), _p(params, "iters", 40000)
     uni_w, wprior = _p(params, "uni_weight", 0.5), _p(params, "wprior", 0.5)
     names, namepen = _p(params, "names", 8), _p(params, "namepen", -6.0)
@@ -315,7 +327,7 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     cap = code_capable(Counter(ttoks).most_common(), params.get("codes")) if ttoks else set()
     if params.get("codes", "marked") == "marked":
         cap |= {t for t in types if split_tok(t)[1]}  # inserted/confused types in a control carry their own mark
-    letters = [a for a in ha.ALPHA if a != "w"]
+    letters = [a for a in ha.ALPHA if a != BND]
     lw = [sc.mu.freq[a] for a in letters]
     lf = {a: math.log(sc.mu.freq[a]) for a in letters}
     inruns = {t: sorted({i for i, r in enumerate(runs) if t in r}) for t in types}

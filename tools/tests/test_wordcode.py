@@ -105,6 +105,18 @@ def main():
     assert half and max(half) < round(0.5 * len(cc5)), (max(half), len(cc5))
     print(f"(5) context: parse, padding, control context {on}/{len(cm)} runs, ctxshare 0.5 -> {len(half)}; "
           f"toy recovery with context {rec_c:.3f} >= without {rec_0:.3f}: ok")
+    # (6) bnd (R13-KAL10, 6 Oct 2026): a boundary letter other than w, for corpora that use w as a letter
+    wc._set_bnd({"bnd": "x"})
+    assert wc._run_string(["a", "b"], {"a": "da", "b": "w"}) == "xdaxwx", wc._run_string(["a", "b"], {"a": "da", "b": "w"})
+    assert wc.words_of("swet axe") == ["swet"]
+    try:
+        wc._set_bnd({"bnd": "j"})  # folded away by ha.fold(): must be refused
+        raise AssertionError("bnd=j accepted")
+    except SystemExit:
+        pass
+    wc._set_bnd({})
+    assert wc.BND == "w" and wc.words_of("swet axe") == ["axe"]
+    print("(6) bnd=x boundary, words_of, j refused, default w restored: ok")
     print(f"all ok in {time.time() - t0:.0f}s")
 
 

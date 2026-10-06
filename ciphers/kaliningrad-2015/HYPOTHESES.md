@@ -930,3 +930,44 @@ step (1). Disk and CPU only.
   coverage statistic (control from R12-KAL8: synthetic 0.524-0.800 vs G_s 0.033), conditional on Ernst's transcript,
   convention B and the NT lexicon's register. No verifier look is licensed. Files: `lexseg/r12/kal9/` (36 decodes),
   `lexseg/r12/coverage_minlen{4,5}_s3_kal9.tsv`. Rule 10: nothing here is a reading.
+
+## R13-KAL10, letter-or-word nomenclator (wordcode) with marked types as codes (6 Oct 2026) -- PRE-REGISTRATION
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run13-jobs.md` "R13-KAL10" (LANE-RUN13, account 2). Written and pushed before any
+scored run. Disk and CPU only, no hosts, no subagents.
+
+**design_prior.py** (`--no-write`, on the folder's sign TSVs; on `ciphertext.txt` itself it tokenises by whitespace, 92 word
+tokens, not usable): convention A (`ciphertext_signs.tsv`, 979 tokens, 37 distinct) fine ranking (advisory) nomenclator 0.20,
+homophonic 0.38, alphabet substitution 0.39, mixed 0.65, syllabary 0.76, code numbers 1.41; class tier: multi-sign not above
+null, letter-for-letter / mixed / code plausible; shuffled-input FP 0.050. Convention B (`ciphertext_signs_B.tsv`, 1067, 29):
+nomenclator 0.33, alphabet substitution 0.42, homophonic 0.47, mixed 0.53, syllabary 0.73, code numbers 1.48. Highest-ranked
+family not yet logged here: **nomenclator** (homophonic is logged throughout; transposition A2-KAL2).
+
+**Instrument.** `tools/family_run.py --family nomenclator` is a numeric two-level word code (integer tokens 1-99 / >= 100) and
+cannot take a letter text. The letter-sign form of a nomenclator in the tool set is `--family wordcode` (each sign type = one
+letter or one whole word). It hard-coded `w` as its word-boundary letter (Italian); ru19_lat uses `w` for в, so this job added
+`--param bnd=` (default `w`, every earlier row unchanged; offline test (6) in `tools/tests/test_wordcode.py`). ru19_lat s1s
+never uses `x`, so `bnd=x`.
+
+**Hypothesis.** The 23-24 unmarked types are letters (s1s Russian has 22) and the 13 apostrophe/diacritic types (n' e-circ t'
+x' d' o-uml l' f' s' m' z' u-uml -', 113 tokens, 11.6%) are whole-word codes. Cipher file
+`families/r13_kal10/cipher_marked.txt` (convention A signs, one run per transcript line, a mark written `base^a` for the
+apostrophe, `e^c`, `o^u`, `u^u`), N 978, K 36. `codes=marked` (codeletters 0, the tool's calibrated default).
+
+**Command** (spec = `specs/kaliningrad-2015.json` with `judge.corpora` set to `tools/data/ru19_lat/s1s.txt.gz`, a scratch copy,
+the shared spec untouched):
+```
+python3 tools/family_run.py <spec copy> --family wordcode --cipher ciphers/kaliningrad-2015/families/r13_kal10/cipher_marked.txt \
+  --tokens space --corpus tools/data/ru19_lat/s1s.txt.gz --param codes=marked --param bnd=x --param err=0.05 \
+  --seeds 3 --restarts 2 --gate 0.6 --label "R13-KAL10 wordcode ru s1s, marked types = codes, conv. A, control first"
+```
+err 0.05: the target's transcription error is not measured (a spot check only, NOTES.md); 0.05 is TRANSCRIPTION.md's ceiling.
+
+**Gates (fixed now).**
+1. Control licenses the target only if its mean token accuracy over seeds 1-3 is >= 0.6 (the tool's gate) AND its code-class
+   accuracy mean is >= 0.3 (rule 3 unbalanced-class paragraph: codes are about an eighth of tokens, so a blended 0.6 could be
+   letters alone). Otherwise: "non-test for this design at N 978 with this tool", no target reading of any kind.
+2. If licensed: the target decode and the decode of the shuffled target (`--shuffle-target 1 --target-only-if-gated`, same
+   params) both go through the spec's judge (ru19_lat s1s; RUN4-KAL: real_p05 gate of unknown reliability on this corpus). The
+   target is "worth a verifier" only if it PASSes and the shuffled decode FAILs; a shuffled PASS voids the judge for this family
+   (rule 3, ARM-C1). Anything else: control-backed negative for this design, conditional on Ernst's transcript and convention A.
