@@ -200,3 +200,10 @@ Intake gate: `konstanz-talleyrand-sieyes-1798: open (line 3) -- edition/page or 
 NOTES.md next: "search Pallain's other Talleyrand volumes and Bailleu vol. 2 for the 17 Jul 1798 Sieyes letter (the gap left by the 2 Oct
 premise check), IA full text, ~$0.5". Identify the IA items, be-api fts per item with a positive control term, quote any hit with context.
 Update NOTES.md; search result only.
+
+### R8-NLA2 -- nla-heinrich-braunschweig-1519, fetch the 8 Arcinsys images with a manifest (cap 2, box 30 min; added 04:0x)
+Intake gate: `nla-heinrich-braunschweig-1519: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Named next (R8-NLA, 6 Oct 03:57): "fetch 8 images with manifest ~0.5" -- NLA BU L 1 Nr. 548 and Nr. 562, 4 images each, free Arcinsys
+viewer. Fetch each once (>= 1.5 s apart), write images/manifest.json (URL, size, sha1), keep the folder under 30 MB (JPEG at native size;
+if over, keep manifest + sample per CLAUDE.md). Then look at each image yourself and record per image: recto/verso, cipher present
+(signs/numerals, how many lines), clear text, hand. No transcription pass in this job; name it as the next step with a per-pass cost.
