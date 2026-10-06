@@ -1,0 +1,23 @@
+# Period decipherment, f.172r (Gallica btv1b9001389d canvas 368), lines 1-7 as read by R7C-BAL103K (calib/f172r_decipherment.txt),
+# lines 8-19 read by R10-BAL103D (6 Oct 2026) from 1600 px views of regions 600,1750,3500,1300 and 600,1950,2600,850, after
+# r10/PREREG.md was pushed and before the f.171r L5-L11 pass was aligned. Struck words omitted, interlinear insertions taken in.
+# Uncertain: line 14 "Cavallee" (proper name, reading uncertain); line 10 "on a cabale" (written "Onm cabale", "Onm" partly struck); line 12 "auxquels" (written "aquels", corrected).
+On a advis icy, que ceux qui apres la
+prise de Lerida ont publie quil en
+falloit imputer la perte au
+peu de soing que on a pris de deca
+de faire passer les recreues de
+bonne heure en Catalogne, et a ce que lon a
+retarde le passage du renfort qui
+estoit soubz charge du Marquis
+Villeroy. et de ce quil estoit arrive
+trop foible. on a cabale
+dans Barcelone pour faire nommer des Ambassadeurs a leur
+poste auxquels disant icy rien
+de laffaires du pays que ce quil
+leur plairra. que le sr Cavallee
+sest fort entremis pour faire reussir ce
+dessein. et quil se propose de les
+accompagner en chemin pour
+les bien informer de ses intentions
+Et parce quil importe extremement

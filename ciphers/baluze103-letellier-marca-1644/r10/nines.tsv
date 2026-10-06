@@ -1,0 +1,18 @@
+line	token_index	sign	aligned_letter	context_D	context_P	neighbours_match	known
+1	20	9	s	capre[i]lqrls	iapre[s]lapri	no	no
+4	73	9	s	peude[i]oiogq	peude[s]oingq	yes	yes
+4	84	9	i	eonqr[i]sdede	onapr[i]sdede	no	no
+5	94	9	i	ecade[i]ipass	adefa[i]repas	no	no
+5	105	9	r	erler[i]ecrep	erles[r]ecreu	no	no
+5	112	9	e	crepe[i]cmnoe	euesd[e]bonne	no	no
+6	129	9	e	cemnh[i]etsce	alogn[e]etace	no	no
+7	140	9	r	etons[i]elorc	elona[r]etard	no	no
+7	151	9	s	mteps[i]raged	elepa[s]saged	no	no
+8	167	9	s	lquim[i]topli	tquie[s]toits	no	no
+8	172	9	s	itopl[i]oulsc	stoit[s]oubzc	no	no
+9	197	9	l	irptl[i]erope	isuil[l]eroye	no	no
+9	208	9	s	cecle[i]toila	quile[s]toita	yes	yes
+10	223	9	-	elrop[i]coile	-	no	no
+11	249	9	s	tedan[i]barce	ledan[s]barce	yes	yes
+11	262	9	-	ooxme[i]dedes	-	no	no
+# letters D 287, decipherment span P 393, matched 193 (0.672)

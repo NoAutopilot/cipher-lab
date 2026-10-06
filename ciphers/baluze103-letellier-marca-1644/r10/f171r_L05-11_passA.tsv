@@ -1,0 +1,15 @@
+f366x_L01_s1	t u 9 [i] mm 10 7 8 u dt 19 u z 9 14 x|xc f 14
+f366x_L01_s2	7 8 u dt 19 u z 9 14 x|xc f 14 |>mm theta 9 xbar b
+f366x_L02_s1	q d a delta u 17 u mm z xbar|x theta b a 3 9 u 6 P x|xc u =11 6 delta
+f366x_L02_s2	mm z xbar|x theta b a 3 9 u 6 P x|xc u =11 6 delta |>a P
+f366x_L03_s1	9 u hz H f xbar|x b 6 u mm P 9 z ct y u t mm f u a
+f366x_L03_s2	6 u mm P 9 z ct y u t mm f u a |>x delta f hz =12
+f366x_L04_s1	b 9 6 delta mm hz 9 H 4 q r 19 P x|xc 3 H f inf u t u
+f366x_L04_s2	9 H 4 q r 19 P x|xc 3 H f inf u t mm |>b P xbar ?{dotted loop} rho z
+f366x_L05_s1	mm q 6 19 9 u f H mm u [ei] [de ce] 12 hz 14 9 6 H rho hz ct
+f366x_L05_s2	u [ei] [de ce] 12 hz 14 9 6 H rho hz ct |>f z|xbar ?{like 9 with hook} mm u
+f366x_L06_s1	hz f 22 mm 9 x delta rho q q2 u eps a 6 10 f z xbar q mm u
+f366x_L06_s2	delta rho q q2 u eps a 6 10 f z xbar q mm u |>x P q 10 6 u
+f366x_L07_s1	t 10 a 9 =32 mm H mm z|xbar 8 [i] delta 22 l 20 u 9 [de]
+f366x_L07_s2	mm H mm z|xbar 8 [i] delta 22 l 20 u 9 |>[des] =34 P 6 u mm
+# notes: many signs uncertain, esp. the 'i' after 9/8 (written as [i], may be a sign), H/sigma-like double-loop sign, the "n'ei" group before [de ce] on L05 (read as u [ei]), blotted signs at end of L04, 'mm' vs 'm' counts, q vs q2, P vs f vs mt, 6 vs b, l vs L on L07. Bar over 12 (L03) and 32/34 (L07) read as =.
