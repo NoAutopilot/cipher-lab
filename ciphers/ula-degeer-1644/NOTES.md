@@ -178,3 +178,22 @@ Requests: data.riksarkivet.se 15 (including 3 SSL resets and their retries), oai
 
 - **Next (needs a person, REQUEST.md):** add to the existing copy order three Stockholm units beside the ULA folder: Oxenstiernska samlingen E 584 (De Geer's 1644-45 letters to Oxenstierna, to see whether any is in code beyond the printed "171"), Chifferklaver card catalogue SE/RA/202/20 (look up "Geer" / "Haag 171"), and Oxenstiernaprojektet SE/RA/721502/3/1.
 - **While waiting (depends on nobody, ~USD 1-3):** one Opus vision pass over the first ~20 canvases of the digitised SE/RA/1133/1133.08/~/2 (lbiiif R0001367) to find De Geer's 21 Jan 1645 letter to the Crown and say whether it carries any code group; thumbnail-size first, one native crop only if a numeral group is seen.
+
+## D2B-ULA (6 Oct 2026, account 2): the "21 Jan 1645" item in SE/RA/1133/1133.08/~/2
+
+Clock read 00:13 UTC 6 Oct 2026 (start). This step is the one named in "While waiting (3 Oct 2026)" above, and it had not been run before. Route: Riksarkivet IIIF (`lbiiif.riksarkivet.se`): the manifest `arkis!R0001367/manifest` (292 canvases), then thumbnails 1000 px wide (canvas 2 at its native 792 px) of canvases 1-24 through the v2 image service, and one native-resolution region of canvas 10 (`400,1250,2400,450`) to read the date line. Descriptive UA, requests >= 1.6 s apart, no 403 or 429. No subagents were used. The pages were read by eye at thumbnail size, plus the one region crop.
+
+**Where the De Geer material sits.** Riksarkivet's archivist slips arrange the volume alphabetically by sender: canvas 3 De Besche (1639), canvases 5-7 De Castro (Hamburg, 18 June 1646, Latin), **canvases 8-14 "Louis de Geer", slip marked "8 blad"**, and canvas 15 Jacob de la Gardie. The De Geer group contains:
+
+| Canvas | Item | Language | Code groups seen |
+|---|---|---|---|
+| 8 r, 9 l | Account headed "Louis de Geers ... haben in aller Unterthänigkeit bey Ihrer Kön. May^t. und der Cron zu fodern" (his claims on the Crown: the 1643-45 fleet, interest, and a total "bis ult. Decemb. 1654"), with a running memorandum | German | none; every numeral is a sum in Rdr or a year |
+| 9 r - 10 l | **The 21 Jan 1645 item.** It opens "Wij Christina ..." and ends (native crop, canvas 10): "hafwe Wij detta medh egen hand underskrifwit och wårt Secret bekräfftat, Datum Stockholm den 21 Januarij 1645". It is a copy or engrossment of the Crown's undertaking to De Geer about paying for the fleet he equipped in Holland (sums of 300000 and 100000 Rdr, "equippagen", "Lieutenant", "Cronones Wägnar"). **It is not a letter from De Geer.** | Swedish | none; numerals are sums |
+| 11 r - 12 l | Undated letter to the Queen ("Großmächtigste Hochgeborene Fürstin, Allergnädigste Königin"), signed "Louys de Geer". It concerns a sale of 36 tonnes, "Pierre ... und Karel ...", "Comissarien zu deputiren". This is probably the "odat." half of the catalogue note | German | none |
+| 13 r - 14 l | "Copia Ränttor uppå ... Quarnar i Norrköpinge ... An. 1628" (mill rents at Norrköping), followed by a German text continuing on 14 l | Swedish / German | none; numerals are rents and sums |
+
+**Result.** The catalogue note "De Geer Louis, odat. 1645 21 januari" covers an undated German letter from De Geer to the Queen and a Swedish document of the Crown dated Stockholm, 21 Jan 1645. All of the De Geer material (canvases 8-14) is in clear text. No numeral group appears outside a running sum, date or rent, at thumbnail resolution. One region was checked at native resolution. This is a reading of the images, not of a transcription (rule 2). The caveat is that a short code group written inside a line of small German current hand could be missed at about 1/5 native scale. Nothing here bears on the key in SE/ULA/13506/1/I/45.
+
+**What this settles.** The "While waiting" step is done: this digitised volume holds no De Geer cipher material. Status stays `blocked` (needs-physical-access). The cipher material is still only in the undigitised units named above: SE/ULA/13506/1/I/45, Oxenstiernska samlingen E 584, Chifferklaver SE/RA/202/1-3 with its cards 202/20, and Oxenstiernaprojektet SE/RA/721502/3/1. The REQUEST.md copy order is unchanged. No other step can be run online in the meantime.
+
+Requests: lbiiif.riksarkivet.se 28 (1 manifest, 24 thumbnails, 1 stray full-size range request of canvas 10 aborted after the first byte, 1 region crop; 1 HTTP 400 on canvas 2 at 900 px, above native width). Vision: by eye in this session, no subagent calls. Clock at end: see the ROOM done line.
