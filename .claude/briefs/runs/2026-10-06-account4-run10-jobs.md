@@ -139,3 +139,22 @@ take the next): (1) taurello-roma-1527: map Sanuto vol. 46's archive.org identif
 vandergoes-1808: grep the public EAD of the NA Kabinet des Konings 1806-1810 for code books / sleutel / cijfer; (4) sp8-ehrenstein-1689: read
 the remaining 29 rows of the Arcinsys Bernstorff 1688-1690 list; (5) sp78-france-1583: Discovery details of SP 78/113/56, /58 and SP 78/111/92,
 /94. Search results only.
+
+## Wave 3 (spawned 10:2x UTC 6 Oct)
+
+### R10-MANT521 -- sachsstaatsarchiv-manteuffel-1712, glossed frame 0521 transcription + gates (Opus; cap 6, box 80 min)
+R10-MANTSCR's named next frame (0521, then 0518). Same shape as R10-MANT526: 2 blind Sonnet passes (one call per pass, line crops via
+tools/iiif_lines.py --image, pasted; never the full frame) + 1 reconciliation = 3 units x ~1.5; PREREG pushed first; per-leaf single-code gate
+as GAPS195 / R10-MANT526, then the pooled gate with the leaf added (R10-MANTSCR's spelling rule as registered). Codes licensed go into key.tsv
+at M only; decode_key.py --check exit 0; a reading change after AUDIT.md -> NOTES.md + ROOM verifier flag. Do not start 0518 unless 0521 is
+done under 60% of cap and box. Remaining gaps / Escalation; gaps_check.py pass.
+
+### R10-SIENA7N -- siena-concistoro-2308 no. 7, homophonic + nomenclator family with matched control (Opus; cap 5, box 75 min; disk only)
+R9-SIENA7's named next, now licensed: R10-SIENA7C put agent J's error at 0.8-6.6% on the whole letter (under the ~10% crossover). Family: the
+anchored homophonic fit (R9-SIENA7's solver, 7 C anchors fixed) extended with a nomenclator layer (a small set of multi-sign or single-sign
+codes standing for frequent Italian words/names, Bourdeau's R4750 Latin-word nomenclator as the design reference). Rule 3 in order, via
+tools/family_run.py if it can express this (else extend it with an option, Usage 8): matched control first -- synthetic 1420s Italian plaintext,
+N=363, K=45, same anchor count, a nomenclator of the size you register, injected sign error at J's measured rate (bracket it: 0%, 3.5%, 7%) --
+gate pre-registered (PREREG pushed before scoring). Control below gate -> "non-test at this N", stop. Else run the target, judge the candidate
+(tools/judge_plaintext.py, say whether the Italian corpus is era-matched) and the shuffled-target decode through the same judge (ARM-C1).
+No key.tsv beyond M without a verifier. HYPOTHESES.md row with both numbers. Status stays `open` unless rule 5 says otherwise.
