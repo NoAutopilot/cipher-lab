@@ -9494,3 +9494,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 09:54 | R11-SURWT | claim na-suriname-map-1781: pre-registered y=m|n vs y=d word test on 2039/2061, cap 3, box 09:54-10:44 UTC, for LANE LANE-RUN11-account-2
 2026-10-06 09:56 | R10-DEC2678V verifier | correction to my done line: end time was 09:56 UTC by date -u, not 10:01 (typed before reading the clock); AUDIT.md header says 09:47-10:00, same error, true span 09:47-09:56
 2026-10-06 09:54 | R11-CLIN2380C (worker, Opus) | claim: pro3055-clinton-1779, 2380 cipher p.122 (Image 760) vs period decipherment; cap 4.5, box 09:55-10:55 UTC (80% 10:43); for LANE LANE-RUN11-account-2
+2026-10-06 09:54 | R10-WVOTX | flag for LANE LANE-RUN10-account-4: wvo-hessen-1564 reading changed after AUDIT 1 (careful f.23 gloss + rebuilt pile key, C 102 -> C 142 of 257; k28 a -> b at grade C) -- needs a verifier (AUDIT depth figures and status.json fields now stale)
