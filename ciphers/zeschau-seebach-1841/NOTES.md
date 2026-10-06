@@ -617,9 +617,50 @@ placements that pattern-consistency already admits. Script only (`crib_drag.py`)
 
 Requests: none (disk only). Vision 0, subagents 0.
 
-## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026; R9-ZESCH, R9-ZESCH2, R10-ZESBASIN, R10-ZESCRIB, 6 Oct 2026)
+## R11-ZESCORP-zeschau-seebach-1841 (6 Oct 2026, account-4, LANE-RUN11-account-4)
+
+Step run: R10-ZESCRIB's named next (the Verdict's cheapest next): an era/register-matched control corpus plus a fill-free
+pattern-rarity crib score, matched control first. Script `crib_rarity.py`, disk only after the corpus fetch; no vision,
+no subagents.
+
+- Step 1, corpus: new shared corpus `tools/data/fr1840` (1835-1850 diplomatic French, 3,171,872 folded letters): Nesselrode,
+  Lettres et papiers VIII-IX (1840-50); Metternich, Memoires VI (1835-48, French edition); Guizot, Memoires VI-VII
+  (1840-47). Sources, cuts and register caveats in its README.md and MANIFEST.tsv; `build.py` reproduces it. Wired into
+  `tools/judge_plaintext.py` LANG_CORPORA as `fr1840` with an offline test (`tools/tests/test_judge_plaintext_lang_fr1840.py`,
+  4/4 pass: held-out Guizot VIII 1847 letter passes, shuffled and random fail). Leave-one-file-out false-negative rate at
+  N=325: 22.7% blended, per-fold 10.0-49.5% (Guizot VII the outlier) -- a judge FAIL/PASS on it is of unknown reliability.
+- Step 2, pre-registered in `PREREG-R11-ZESCORP.md` (pushed a3419f783, 13:49 UTC, before any scored run). 63 cribs: R10's 25
+  plus the top 40 word n-grams (>= 12 letters) of the four fr1840 training files. Control = build_control()'s design
+  unchanged (N 2,666, K 98, 7 pins, 1 pct error, de19 German) with French plaintext from held-out Nesselrode VIII and the
+  unit inventory from fr1840; keys 209/210/211. Score: a crib qualifies only if its tokenised core's repeat/pin pattern is
+  admitted at most once in 40 order-shuffles of the French code streams (no objective, no fill); qualifying placements
+  enter the seed unless they contradict another on a shared code or unit. Gated arm B tokenises with a unit list from a
+  different corpus (fr1810), as on the target; arm A (generator's own list) is diagnostic only.
+
+| gate (arm B, mean of 3 keys) | control | gate | verdict |
+|---|---|---|---|
+| G0 letter occurrences of qualifying cribs in the control French plaintext | **0.0** (3 of 63 cribs qualify: limperatrice, louisphilippe, empireottoman; all 63 cribs together occur 11 times) | >= 3 | FAIL: NON-TEST |
+| G1 seed precision | none (0 admitted placements, 0 seed codes) | >= 0.90 | FAIL |
+| G2 correct seed codes | **0** | >= 10 | FAIL |
+| arm A (diagnostic) | 2 qualify (louisphilippe, empireottoman), 0 admitted, 0 seed | -- | -- |
+| target (pooled R5005+R5006 French) | not run | -- | CONTROL BELOW GATE |
+
+- What the numbers say: under this design (98 two-digit codes over ~2,330 French tokens) a crib's pattern is rare enough
+  to stand alone only with >= 2 repeated units or >= 3 pin units; the median crib is admitted about 23-28 times per
+  shuffled stream. The formulae that do occur in a target-length window of matched 1840s text (lempereur 4x,
+  saintpetersbourg 2x, denesselrode 2x) carry no repeat, so a shuffled stream admits them as often (E_null 0.5, 7.6, 1127)
+  as the true position. The three rare-pattern cribs occur 0.14-1.29 times per 4,500 letters across the five fr1840
+  files (holding file 0.67), against G0's 3 -- so at this N the instrument would need roughly 3-20x more French
+  ciphertext, or more pins, before a matched control could contain enough rare-pattern cribs to test it.
+- `crib_rarity.py --check` re-ran the control and matched the json: exit 0. 0 tokens graded; no key, no reading; pins stay
+  Bourdeau's grade-I values (dbourdeau/cyphersolver, CC BY 4.0). First attempt with this instrument: logged non-test, not
+  retired. Rule 10: no novelty claim.
+
+Requests: archive.org 3 advancedsearch + 7 `_djvu.txt` downloads, >= 2 s apart, no errors. Vision 0, subagents 0.
+
+## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026; R9-ZESCH, R9-ZESCH2, R10-ZESBASIN, R10-ZESCRIB, R11-ZESCORP, 6 Oct 2026)
 Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R5007 951 = 603 left + 348 right, GAPS190/196; R5008 260 = 113 on p.1 + 147 on p.2 left, GAPS208); R5007 p.1 and R5008 p.2 right hold no cipher; 0 tokens read
-- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); the word-parse objective failed its matched control twice, under simulated annealing (R9-ZESCH, 0.0026) and under frequency-rank init + parallel tempering (R9-ZESCH2, 0.0146), both vs gate 0.60, with the true key's J 1181.7 above every optimum found (<= 1008.6) -- retired for local search at this N (rule 3 third-attempt clause); the basin-width diagnostic (R10-ZESBASIN) found no basin (one swap from the true key returns under one greedy pass only 32 pct of the time; width 0), so the objective is retired at this N for any search; so the next instrument needs a near-exact seed; the crib-drag of 25 French diplomatic formulae (R10-ZESCRIB) failed its matched control (G1 top-3 share 0.000 vs 0.50, seeded accuracy 0.041 vs 0.60; no multi-unit crib occurs in the Napoleonic control text), non-test, not retired; next: a register-matched control corpus of 1840s French diplomatic dispatches plus a fill-free pattern-rarity placement score, ~$4; else new material (R5006 pencil decipherment via multispectral imaging, SEND-QUEUE S5 / ASKS 64, or more ciphertext)
+- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); the word-parse objective failed its matched control twice, under simulated annealing (R9-ZESCH, 0.0026) and under frequency-rank init + parallel tempering (R9-ZESCH2, 0.0146), both vs gate 0.60, with the true key's J 1181.7 above every optimum found (<= 1008.6) -- retired for local search at this N (rule 3 third-attempt clause); the basin-width diagnostic (R10-ZESBASIN) found no basin (one swap from the true key returns under one greedy pass only 32 pct of the time; width 0), so the objective is retired at this N for any search; so the next instrument needs a near-exact seed; the crib-drag of 25 French diplomatic formulae (R10-ZESCRIB) failed its matched control (G1 top-3 share 0.000 vs 0.50, seeded accuracy 0.041 vs 0.60; no multi-unit crib occurs in the Napoleonic control text), non-test, not retired; R11-ZESCORP built that corpus (tools/data/fr1840) and ran a fill-free pattern-rarity score: control G0 0.0 qualifying-crib occurrences vs 3 (3 of 63 cribs rare enough, none in a target-length matched window; seed 0 codes), non-test at this N, not retired; next: a repeated-placement agreement score (a common formula admitted at >= 2 positions with an identical code tuple) on the same fr1840 control, matched control first, ~$3 (R5006 pencil decipherment via multispectral imaging, SEND-QUEUE S5 / ASKS 64, or more ciphertext)
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
@@ -627,10 +668,10 @@ Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); [retired] word-parse objective under local search (R9-ZESCH annealer 0.0026, R9-ZESCH2 parallel tempering 0.0146, gate 0.60; rule 3 third-attempt clause); [retired] word-parse objective itself at this N (R10-ZESBASIN: basin width 0, k=1 return 0.32); crib-drag of 25 formulae ranked by J failed its control (R10-ZESCRIB: G1 0.000, G2 0.041; control text register-mismatched), non-test; next: a register-matched 1840s diplomatic-French control corpus plus a fill-free pattern-rarity crib score (~$4), or new material (R5006 pencil decipherment under imaging, SEND-QUEUE S5)
+- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); [retired] word-parse objective under local search (R9-ZESCH annealer 0.0026, R9-ZESCH2 parallel tempering 0.0146, gate 0.60; rule 3 third-attempt clause); [retired] word-parse objective itself at this N (R10-ZESBASIN: basin width 0, k=1 return 0.32); crib-drag of 25 formulae ranked by J failed its control (R10-ZESCRIB: G1 0.000, G2 0.041; control text register-mismatched), non-test; fill-free pattern-rarity crib score on the register-matched fr1840 control failed G0 (R11-ZESCORP: 0.0 qualifying-crib occurrences vs 3, seed 0 codes), non-test at this N; next: a repeated-placement agreement score on the fr1840 control (~$3), or new material (R5006 pencil decipherment under imaging, SEND-QUEUE S5)
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 1 internal gap (key rebuild: GAPS202 4-gram annealer retired; R8-ZESCH: R5008 crib test untestable at N=260; word-parse objective failed its matched control under two searches, R9-ZESCH 0.0026, R9-ZESCH2 0.0146 vs 0.60, and R10-ZESBASIN found it has no basin at this N, width 0, k=1 return 0.32, so it is retired for any search); all R5006-R5008 cipher transcribed (1,903 digits); R10-ZESCRIB's crib-drag failed its matched control, G1 0.000 vs 0.50, G2 0.041 vs 0.60, non-test; cheapest next: a register-matched 1840s diplomatic-French control corpus plus a fill-free pattern-rarity crib score, ~$4; the R5006 pencil decipherment waits on archive imaging (SEND-QUEUE S5 / ASKS 64)
+Verdict: keep going: 1 internal gap (key rebuild: GAPS202 4-gram annealer retired; R8-ZESCH: R5008 crib test untestable at N=260; word-parse objective retired at this N for any search, R9-ZESCH 0.0026, R9-ZESCH2 0.0146 vs 0.60, R10-ZESBASIN width 0); all R5006-R5008 cipher transcribed (1,903 digits); R10-ZESCRIB crib-drag non-test (G1 0.000, G2 0.041); R11-ZESCORP built tools/data/fr1840 and ran a fill-free pattern-rarity crib score: control G0 0.0 qualifying-crib occurrences vs 3, seed 0 codes, non-test at this N (a single crib occurrence is only rare enough with >= 2 repeats or >= 3 pins); cheapest next: a repeated-placement agreement score on the same fr1840 control (a common formula such as lempereur admitted at >= 2 positions with the identical code tuple, which chance placements rarely share), matched control first, ~$3; else new material (more French ciphertext, or the R5006 pencil decipherment under archive imaging, SEND-QUEUE S5 / ASKS 64)
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 

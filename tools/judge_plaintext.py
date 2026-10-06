@@ -123,6 +123,13 @@ LANG_CORPORA = {
     "fr1810": [DATA / "fr1810" / f for f in ("correspondancede11napouoft.txt.gz", "correspondancede16napouoft.txt.gz",
                "correspondancede20napouoft.txt.gz", "correspondanced01davogoog.txt.gz",
                "correspondanced00davogoog.txt.gz", "lettresindites01napo.txt.gz")],
+    # fr1840 (6 Oct 2026, account-4 worker R11-ZESCORP): 1835-1850 diplomatic French -- Nesselrode's Lettres et papiers
+    # tomes VIII-IX (1840-50), Metternich's Memoires tome VI (1835-48, French edition), Guizot's Memoires tomes VI-VII
+    # (1840-47, with the dispatches they quote) -- for 1840s French targets (first: zeschau-seebach-1841), which fr1810
+    # (1800-11) and fr19 (novels) do not era- or register-match. Read tools/data/fr1840/README.md for the leave-one-file-out
+    # false-negative rate and per-fold spread before trusting a FAIL/PASS. A spec opts in with "language": "fr1840".
+    "fr1840": [DATA / "fr1840" / f"{i}.txt.gz" for i in ("lettresetpapiers08ness", "lettresetpapiers09ness",
+               "memoiresdocume06mett", "mmoirespourse06guiz", "mmoirespourse07guiz")],
     # fr17 (3 Oct 2026, account-4 worker TOOL-FR17): French diplomatic/administrative/epistolary prose of about 1617-1644
     # in its own period spelling -- Richelieu's Lettres (Avenel) tomes III (1628-30) and VI (1638-42), Peiresc's letters
     # to the Dupuy brothers tomes I-II (1617-33), Chapelain's Lettres tome I (1632-40), Mazarin's Lettres tome I (1642-44)

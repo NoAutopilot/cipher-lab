@@ -1,0 +1,7 @@
+corpus=fr1840 held_out=lettresetpapiers08ness.txt.gz N=325 samples=200 real_p05=-0.860 false_negatives=27/200 (13.5%)
+corpus=fr1840 held_out=lettresetpapiers09ness.txt.gz N=325 samples=200 real_p05=-0.859 false_negatives=31/200 (15.5%)
+corpus=fr1840 held_out=memoiresdocume06mett.txt.gz N=325 samples=200 real_p05=-0.853 false_negatives=50/200 (25.0%)
+corpus=fr1840 held_out=mmoirespourse06guiz.txt.gz N=325 samples=200 real_p05=-0.857 false_negatives=20/200 (10.0%)
+corpus=fr1840 held_out=mmoirespourse07guiz.txt.gz N=325 samples=200 real_p05=-0.844 false_negatives=99/200 (49.5%)
+corpus=fr1840 TOTAL false-negative rate: 227/1000 (22.7%)
+corpus=fr1840 per-fold spread: 10.0-49.5% (5.0x)

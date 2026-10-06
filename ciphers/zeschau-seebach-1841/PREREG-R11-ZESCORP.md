@@ -1,6 +1,6 @@
 # PREREG R11-ZESCORP -- era/register-matched control + fill-free pattern-rarity crib score (zeschau-seebach-1841)
 
-Written 6 Oct 2026 before any control or target placement was scored (clock read with date -u, 13:50 UTC). Worker
+Written 6 Oct 2026 before any control or target placement was scored (clock read with date -u, 13:49 UTC). Worker
 R11-ZESCORP, LANE LANE-RUN11-account-4. Script: `crib_rarity.py` (disk only). Only earlier outputs: the corpus build
 (letter counts) and `crib_rarity.py cribs` (the crib list below, computed from the fr1840 TRAINING files only; the
 held-out control text was not read for it).

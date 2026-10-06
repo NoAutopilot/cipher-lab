@@ -1,0 +1,7750 @@
+{
+ "cribs": [
+  "jailhonneurde",
+  "monsieurlebaron",
+  "votreexcellence",
+  "samajestelempereur",
+  "samajesteleroi",
+  "legouvernement",
+  "lecabinetde",
+  "saintpetersbourg",
+  "lecomtedenesselrode",
+  "jevousprie",
+  "veuillezagreer",
+  "lassurancedemaconsideration",
+  "tresdistinguee",
+  "votredepeche",
+  "vosrapports",
+  "lempereur",
+  "lesaffaires",
+  "lapolitique",
+  "lesinstructions",
+  "queje",
+  "ilestimportant",
+  "danslinteret",
+  "conformement",
+  "delapartde",
+  "relativement",
+  "lordaberdeen",
+  "dugouvernement",
+  "limperatrice",
+  "lordpalmerston",
+  "louisphilippe",
+  "denesselrode",
+  "sainteaulaire",
+  "gouvernementdu",
+  "demetternich",
+  "lambassadeur",
+  "lachambredes",
+  "droitdevisite",
+  "quenousavons",
+  "quelempereur",
+  "gouvernementde",
+  "nousnoussommes",
+  "lespuissances",
+  "larevolution",
+  "notedelediteur",
+  "empereurnicolas",
+  "augouvernement",
+  "larchiduchesse",
+  "nonseulement",
+  "entrelesdeux",
+  "monchercomte",
+  "gouvernementfrancais",
+  "delangleterre",
+  "lememeaumeme",
+  "danslaquelle",
+  "debourqueney",
+  "laconfederation",
+  "cettequestion",
+  "cetteaffaire",
+  "songouvernement",
+  "empireottoman",
+  "aconstantinople",
+  "lanegociation",
+  "delapolitique"
+ ],
+ "keys": [
+  209,
+  210,
+  211
+ ],
+ "B_mean_qualifying_occurrences": 0.0,
+ "B_mean_seed_precision": 0.0,
+ "B_mean_seed_correct": 0.0,
+ "A_mean_seed_precision": 0.0,
+ "A_mean_seed_correct": 0.0,
+ "gates": {
+  "G0": false,
+  "G1": false,
+  "G2": false
+ },
+ "verdict": "CONTROL BELOW GATE",
+ "per_key": [
+  {
+   "key_seed": 209,
+   "unit_overlap_B": 93,
+   "A": {
+    "cribs": 63,
+    "qualifying": 2,
+    "admitted": 0,
+    "dropped_conflict": 0,
+    "seed_codes": 0,
+    "seed_codes_corroborated": 0,
+    "seed": {},
+    "rows": [
+     {
+      "crib": "jailhonneurde",
+      "core": [
+       "ai",
+       "l",
+       "h",
+       "on",
+       "ne",
+       "ur"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monsieurlebaron",
+      "core": [
+       "on",
+       "si",
+       "eu",
+       "r",
+       "le",
+       "b",
+       "ar"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votreexcellence",
+      "core": [
+       "o",
+       "tr",
+       "ee",
+       "x",
+       "ce",
+       "l",
+       "le",
+       "n"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 24338,
+      "E_null": 608.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajestelempereur",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 8,
+      "E_null": 0.2,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajesteleroi",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "legouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecabinetde",
+      "core": [
+       "c",
+       "a",
+       "b",
+       "in",
+       "et"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "saintpetersbourg",
+      "core": [
+       "in",
+       "t",
+       "p",
+       "et",
+       "er",
+       "s",
+       "b",
+       "ou",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 305,
+      "E_null": 7.625,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecomtedenesselrode",
+      "core": [
+       "co",
+       "m",
+       "te",
+       "de",
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 458,
+      "E_null": 11.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "jevousprie",
+      "core": [
+       "e",
+       "v",
+       "ou",
+       "s",
+       "p",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 297,
+      "E_null": 7.425,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "veuillezagreer",
+      "core": [
+       "ui",
+       "l",
+       "le",
+       "z",
+       "a",
+       "g",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lassurancedemaconsideration",
+      "core": [
+       "ss",
+       "ur",
+       "an",
+       "ce",
+       "de",
+       "ma",
+       "co",
+       "ns",
+       "i",
+       "de",
+       "ra",
+       "ti"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 4,
+      "E_null": 0.1,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "tresdistinguee",
+      "core": [
+       "es",
+       "di",
+       "st",
+       "in",
+       "g",
+       "ue"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votredepeche",
+      "core": [
+       "o",
+       "tr",
+       "ede",
+       "p",
+       "ec"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "vosrapports",
+      "core": [
+       "o",
+       "s",
+       "ra",
+       "p",
+       "p",
+       "o",
+       "r",
+       "t"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 14,
+      "E_null": 0.35,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lempereur",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 19,
+      "E_null": 0.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 4,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesaffaires",
+      "core": [
+       "a",
+       "f",
+       "f",
+       "ai",
+       "re"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 859,
+      "E_null": 21.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lapolitique",
+      "core": [
+       "p",
+       "o",
+       "li",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53476,
+      "E_null": 1336.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesinstructions",
+      "core": [
+       "in",
+       "st",
+       "r",
+       "u",
+       "c",
+       "ti",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "queje",
+      "core": [
+       "j"
+      ],
+      "qualifies": false,
+      "why": "core < 2 units"
+     },
+     {
+      "crib": "ilestimportant",
+      "core": [
+       "es",
+       "ti",
+       "m",
+       "p",
+       "o",
+       "r",
+       "ta"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 722,
+      "E_null": 18.05,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslinteret",
+      "core": [
+       "ns",
+       "li",
+       "nt",
+       "er"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 825,
+      "E_null": 20.625,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "conformement",
+      "core": [
+       "n",
+       "f",
+       "o",
+       "r",
+       "me",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 713,
+      "E_null": 17.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapartde",
+      "core": [
+       "la",
+       "pa",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1121,
+      "E_null": 28.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "relativement",
+      "core": [
+       "la",
+       "ti",
+       "ve",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1121,
+      "E_null": 28.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordaberdeen",
+      "core": [
+       "o",
+       "r",
+       "da",
+       "b",
+       "er",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 590,
+      "E_null": 14.75,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "dugouvernement",
+      "core": [
+       "u",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "limperatrice",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "at",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordpalmerston",
+      "core": [
+       "o",
+       "r",
+       "d",
+       "pa",
+       "l",
+       "me",
+       "r",
+       "st"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 459,
+      "E_null": 11.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "louisphilippe",
+      "core": [
+       "ou",
+       "is",
+       "p",
+       "h",
+       "il",
+       "i",
+       "p",
+       "p"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "denesselrode",
+      "core": [
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "sainteaulaire",
+      "core": [
+       "in",
+       "te",
+       "au",
+       "la",
+       "ir"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 939,
+      "E_null": 23.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementdu",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "d"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "demetternich",
+      "core": [
+       "me",
+       "t",
+       "te",
+       "r",
+       "n",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lambassadeur",
+      "core": [
+       "m",
+       "b",
+       "as",
+       "sa",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1014,
+      "E_null": 25.35,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lachambredes",
+      "core": [
+       "ch",
+       "a",
+       "m",
+       "b",
+       "re",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 882,
+      "E_null": 22.05,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "droitdevisite",
+      "core": [
+       "r",
+       "o",
+       "it",
+       "de",
+       "v",
+       "is",
+       "it"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 588,
+      "E_null": 14.7,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quenousavons",
+      "core": [
+       "n",
+       "ou",
+       "sa",
+       "v",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quelempereur",
+      "core": [
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 18,
+      "E_null": 0.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementde",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nousnoussommes",
+      "core": [
+       "ou",
+       "s",
+       "n",
+       "ou",
+       "ss",
+       "o",
+       "m",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 12,
+      "E_null": 0.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lespuissances",
+      "core": [
+       "p",
+       "ui",
+       "ss",
+       "an",
+       "ce"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larevolution",
+      "core": [
+       "re",
+       "v",
+       "o",
+       "l",
+       "u",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "notedelediteur",
+      "core": [
+       "o",
+       "te",
+       "de",
+       "le",
+       "di",
+       "te"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 719,
+      "E_null": 17.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empereurnicolas",
+      "core": [
+       "p",
+       "er",
+       "eu",
+       "r",
+       "n",
+       "ic",
+       "o",
+       "la"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 3,
+      "E_null": 0.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "augouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larchiduchesse",
+      "core": [
+       "r",
+       "ch",
+       "i",
+       "d",
+       "u",
+       "ch",
+       "es"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nonseulement",
+      "core": [
+       "on",
+       "se",
+       "u",
+       "le",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "entrelesdeux",
+      "core": [
+       "re",
+       "les",
+       "de",
+       "u"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53476,
+      "E_null": 1336.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monchercomte",
+      "core": [
+       "on",
+       "ch",
+       "er",
+       "co",
+       "m"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementfrancais",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "f",
+       "ra",
+       "n",
+       "c",
+       "ai"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 11030,
+      "E_null": 275.75,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delangleterre",
+      "core": [
+       "la",
+       "n",
+       "g",
+       "le",
+       "te",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 803,
+      "E_null": 20.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lememeaumeme",
+      "core": [
+       "me",
+       "me",
+       "au",
+       "me"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 25,
+      "E_null": 0.625,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslaquelle",
+      "core": [
+       "ns",
+       "la",
+       "que",
+       "l"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "debourqueney",
+      "core": [
+       "b",
+       "ou",
+       "r",
+       "que",
+       "ne"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 637,
+      "E_null": 15.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "laconfederation",
+      "core": [
+       "co",
+       "n",
+       "f",
+       "ede",
+       "ra",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cettequestion",
+      "core": [
+       "t",
+       "te",
+       "que",
+       "st",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 11,
+      "E_null": 0.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cetteaffaire",
+      "core": [
+       "t",
+       "te",
+       "a",
+       "f",
+       "f",
+       "ai"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 716,
+      "E_null": 17.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "songouvernement",
+      "core": [
+       "on",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empireottoman",
+      "core": [
+       "p",
+       "ir",
+       "e",
+       "o",
+       "t",
+       "t",
+       "o",
+       "ma"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "aconstantinople",
+      "core": [
+       "co",
+       "ns",
+       "ta",
+       "nt",
+       "in",
+       "o",
+       "p"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lanegociation",
+      "core": [
+       "ne",
+       "g",
+       "o",
+       "c",
+       "i",
+       "at",
+       "i"
+      ],
+      "repeats": 1,
+      "pin_units": 2,
+      "null_admits": 13,
+      "E_null": 0.325,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapolitique",
+      "core": [
+       "la",
+       "p",
+       "o",
+       "li",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 957,
+      "E_null": 23.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     }
+    ],
+    "seed_correct": 0,
+    "seed_precision": null,
+    "letter_occurrences_qualifying": 0,
+    "letter_occurrences_all": 11
+   },
+   "B": {
+    "cribs": 63,
+    "qualifying": 3,
+    "admitted": 0,
+    "dropped_conflict": 0,
+    "seed_codes": 0,
+    "seed_codes_corroborated": 0,
+    "seed": {},
+    "rows": [
+     {
+      "crib": "jailhonneurde",
+      "core": [
+       "ai",
+       "l",
+       "h",
+       "on",
+       "ne",
+       "ur"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monsieurlebaron",
+      "core": [
+       "on",
+       "si",
+       "eu",
+       "r",
+       "le",
+       "b",
+       "ar"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votreexcellence",
+      "core": [
+       "tr",
+       "ee",
+       "x",
+       "ce",
+       "l",
+       "le",
+       "n"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajestelempereur",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 8,
+      "E_null": 0.2,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajesteleroi",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "legouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecabinetde",
+      "core": [
+       "c",
+       "a",
+       "b",
+       "in",
+       "et"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "saintpetersbourg",
+      "core": [
+       "in",
+       "t",
+       "p",
+       "et",
+       "er",
+       "s",
+       "b",
+       "ou",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 305,
+      "E_null": 7.625,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecomtedenesselrode",
+      "core": [
+       "co",
+       "m",
+       "te",
+       "de",
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 458,
+      "E_null": 11.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "jevousprie",
+      "core": [
+       "e",
+       "vo",
+       "us",
+       "p",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 353,
+      "E_null": 8.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "veuillezagreer",
+      "core": [
+       "ui",
+       "l",
+       "le",
+       "z",
+       "a",
+       "g",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lassurancedemaconsideration",
+      "core": [
+       "ss",
+       "ur",
+       "an",
+       "ce",
+       "de",
+       "ma",
+       "co",
+       "ns",
+       "i",
+       "de",
+       "ra",
+       "ti"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 4,
+      "E_null": 0.1,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "tresdistinguee",
+      "core": [
+       "es",
+       "d",
+       "is",
+       "ti",
+       "n",
+       "g",
+       "ue"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votredepeche",
+      "core": [
+       "tr",
+       "ede",
+       "p",
+       "ec",
+       "h"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "vosrapports",
+      "core": [
+       "s",
+       "ra",
+       "p",
+       "po",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lempereur",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 19,
+      "E_null": 0.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 4,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesaffaires",
+      "core": [
+       "a",
+       "f",
+       "f",
+       "ai",
+       "re"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 859,
+      "E_null": 21.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lapolitique",
+      "core": [
+       "po",
+       "l",
+       "it",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1040,
+      "E_null": 26.0,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesinstructions",
+      "core": [
+       "in",
+       "st",
+       "r",
+       "u",
+       "c",
+       "ti",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "queje",
+      "core": [
+       "j"
+      ],
+      "qualifies": false,
+      "why": "core < 2 units"
+     },
+     {
+      "crib": "ilestimportant",
+      "core": [
+       "es",
+       "ti",
+       "m",
+       "po",
+       "r",
+       "ta"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 882,
+      "E_null": 22.05,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslinteret",
+      "core": [
+       "ns",
+       "l",
+       "in",
+       "te",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "conformement",
+      "core": [
+       "n",
+       "f",
+       "or",
+       "me",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 863,
+      "E_null": 21.575,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapartde",
+      "core": [
+       "la",
+       "pa",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1121,
+      "E_null": 28.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "relativement",
+      "core": [
+       "la",
+       "ti",
+       "ve",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1121,
+      "E_null": 28.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordaberdeen",
+      "core": [
+       "or",
+       "da",
+       "b",
+       "er",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 723,
+      "E_null": 18.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "dugouvernement",
+      "core": [
+       "u",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "limperatrice",
+      "core": [
+       "i",
+       "m",
+       "p",
+       "er",
+       "a",
+       "tr",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 3,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordpalmerston",
+      "core": [
+       "or",
+       "d",
+       "pa",
+       "l",
+       "me",
+       "r",
+       "st"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "louisphilippe",
+      "core": [
+       "ou",
+       "is",
+       "p",
+       "h",
+       "il",
+       "i",
+       "p",
+       "p"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "denesselrode",
+      "core": [
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "sainteaulaire",
+      "core": [
+       "in",
+       "te",
+       "au",
+       "la",
+       "ir"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 939,
+      "E_null": 23.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementdu",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "d"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "demetternich",
+      "core": [
+       "me",
+       "t",
+       "te",
+       "r",
+       "n",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lambassadeur",
+      "core": [
+       "m",
+       "b",
+       "a",
+       "ss",
+       "a",
+       "de"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 20,
+      "E_null": 0.5,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lachambredes",
+      "core": [
+       "ch",
+       "a",
+       "m",
+       "b",
+       "re",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 882,
+      "E_null": 22.05,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "droitdevisite",
+      "core": [
+       "r",
+       "oi",
+       "t",
+       "de",
+       "v",
+       "is",
+       "it"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quenousavons",
+      "core": [
+       "n",
+       "ou",
+       "sa",
+       "vo"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53476,
+      "E_null": 1336.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quelempereur",
+      "core": [
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 18,
+      "E_null": 0.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementde",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nousnoussommes",
+      "core": [
+       "ou",
+       "s",
+       "n",
+       "ou",
+       "ss",
+       "o",
+       "m",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 12,
+      "E_null": 0.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lespuissances",
+      "core": [
+       "p",
+       "ui",
+       "ss",
+       "an",
+       "ce"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larevolution",
+      "core": [
+       "re",
+       "vo",
+       "l",
+       "u",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "notedelediteur",
+      "core": [
+       "o",
+       "te",
+       "de",
+       "le",
+       "d",
+       "it",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empereurnicolas",
+      "core": [
+       "p",
+       "er",
+       "eu",
+       "r",
+       "n",
+       "ic",
+       "o",
+       "la"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 3,
+      "E_null": 0.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "augouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larchiduchesse",
+      "core": [
+       "r",
+       "ch",
+       "i",
+       "d",
+       "u",
+       "ch",
+       "es"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nonseulement",
+      "core": [
+       "on",
+       "se",
+       "u",
+       "le",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 45081,
+      "E_null": 1127.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "entrelesdeux",
+      "core": [
+       "re",
+       "les",
+       "de",
+       "u"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53476,
+      "E_null": 1336.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monchercomte",
+      "core": [
+       "on",
+       "ch",
+       "er",
+       "co",
+       "m"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementfrancais",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "f",
+       "ra",
+       "n",
+       "c",
+       "ai"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 11030,
+      "E_null": 275.75,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delangleterre",
+      "core": [
+       "la",
+       "n",
+       "g",
+       "le",
+       "te",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 803,
+      "E_null": 20.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lememeaumeme",
+      "core": [
+       "me",
+       "me",
+       "au",
+       "me"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 25,
+      "E_null": 0.625,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslaquelle",
+      "core": [
+       "ns",
+       "la",
+       "que",
+       "l"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "debourqueney",
+      "core": [
+       "b",
+       "ou",
+       "r",
+       "que",
+       "ne"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 637,
+      "E_null": 15.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "laconfederation",
+      "core": [
+       "co",
+       "n",
+       "f",
+       "ede",
+       "ra",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37351,
+      "E_null": 933.775,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cettequestion",
+      "core": [
+       "t",
+       "te",
+       "que",
+       "st",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 11,
+      "E_null": 0.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cetteaffaire",
+      "core": [
+       "t",
+       "te",
+       "a",
+       "f",
+       "f",
+       "ai"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 716,
+      "E_null": 17.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "songouvernement",
+      "core": [
+       "on",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empireottoman",
+      "core": [
+       "p",
+       "ir",
+       "e",
+       "o",
+       "t",
+       "t",
+       "o",
+       "ma"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "aconstantinople",
+      "core": [
+       "co",
+       "ns",
+       "ta",
+       "nt",
+       "in",
+       "o",
+       "p"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30439,
+      "E_null": 760.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lanegociation",
+      "core": [
+       "ne",
+       "g",
+       "o",
+       "c",
+       "i",
+       "a",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 632,
+      "E_null": 15.8,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapolitique",
+      "core": [
+       "la",
+       "po",
+       "l",
+       "it",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 22,
+      "E_null": 0.55,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     }
+    ],
+    "seed_correct": 0,
+    "seed_precision": null,
+    "letter_occurrences_qualifying": 0,
+    "letter_occurrences_all": 11
+   }
+  },
+  {
+   "key_seed": 210,
+   "unit_overlap_B": 93,
+   "A": {
+    "cribs": 63,
+    "qualifying": 2,
+    "admitted": 0,
+    "dropped_conflict": 0,
+    "seed_codes": 0,
+    "seed_codes_corroborated": 0,
+    "seed": {},
+    "rows": [
+     {
+      "crib": "jailhonneurde",
+      "core": [
+       "ai",
+       "l",
+       "h",
+       "on",
+       "ne",
+       "ur"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monsieurlebaron",
+      "core": [
+       "on",
+       "si",
+       "eu",
+       "r",
+       "le",
+       "b",
+       "ar"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votreexcellence",
+      "core": [
+       "o",
+       "tr",
+       "ee",
+       "x",
+       "ce",
+       "l",
+       "le",
+       "n"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 24006,
+      "E_null": 600.15,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajestelempereur",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 9,
+      "E_null": 0.225,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajesteleroi",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "legouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecabinetde",
+      "core": [
+       "c",
+       "a",
+       "b",
+       "in",
+       "et"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "saintpetersbourg",
+      "core": [
+       "in",
+       "t",
+       "p",
+       "et",
+       "er",
+       "s",
+       "b",
+       "ou",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 326,
+      "E_null": 8.15,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecomtedenesselrode",
+      "core": [
+       "co",
+       "m",
+       "te",
+       "de",
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 441,
+      "E_null": 11.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "jevousprie",
+      "core": [
+       "e",
+       "v",
+       "ou",
+       "s",
+       "p",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 287,
+      "E_null": 7.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "veuillezagreer",
+      "core": [
+       "ui",
+       "l",
+       "le",
+       "z",
+       "a",
+       "g",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lassurancedemaconsideration",
+      "core": [
+       "ss",
+       "ur",
+       "an",
+       "ce",
+       "de",
+       "ma",
+       "co",
+       "ns",
+       "i",
+       "de",
+       "ra",
+       "ti"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 4,
+      "E_null": 0.1,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "tresdistinguee",
+      "core": [
+       "es",
+       "di",
+       "st",
+       "in",
+       "g",
+       "ue"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votredepeche",
+      "core": [
+       "o",
+       "tr",
+       "ede",
+       "p",
+       "ec"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "vosrapports",
+      "core": [
+       "o",
+       "s",
+       "ra",
+       "p",
+       "p",
+       "o",
+       "r",
+       "t"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lempereur",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 17,
+      "E_null": 0.425,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 4,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesaffaires",
+      "core": [
+       "a",
+       "f",
+       "f",
+       "ai",
+       "re"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 837,
+      "E_null": 20.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lapolitique",
+      "core": [
+       "p",
+       "o",
+       "li",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53135,
+      "E_null": 1328.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesinstructions",
+      "core": [
+       "in",
+       "st",
+       "r",
+       "u",
+       "c",
+       "ti",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "queje",
+      "core": [
+       "j"
+      ],
+      "qualifies": false,
+      "why": "core < 2 units"
+     },
+     {
+      "crib": "ilestimportant",
+      "core": [
+       "es",
+       "ti",
+       "m",
+       "p",
+       "o",
+       "r",
+       "ta"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 700,
+      "E_null": 17.5,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslinteret",
+      "core": [
+       "ns",
+       "li",
+       "nt",
+       "er"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 874,
+      "E_null": 21.85,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "conformement",
+      "core": [
+       "n",
+       "f",
+       "o",
+       "r",
+       "me",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 692,
+      "E_null": 17.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapartde",
+      "core": [
+       "la",
+       "pa",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1171,
+      "E_null": 29.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "relativement",
+      "core": [
+       "la",
+       "ti",
+       "ve",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1171,
+      "E_null": 29.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordaberdeen",
+      "core": [
+       "o",
+       "r",
+       "da",
+       "b",
+       "er",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 619,
+      "E_null": 15.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "dugouvernement",
+      "core": [
+       "u",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "limperatrice",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "at",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 14,
+      "E_null": 0.35,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordpalmerston",
+      "core": [
+       "o",
+       "r",
+       "d",
+       "pa",
+       "l",
+       "me",
+       "r",
+       "st"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 453,
+      "E_null": 11.325,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "louisphilippe",
+      "core": [
+       "ou",
+       "is",
+       "p",
+       "h",
+       "il",
+       "i",
+       "p",
+       "p"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "denesselrode",
+      "core": [
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "sainteaulaire",
+      "core": [
+       "in",
+       "te",
+       "au",
+       "la",
+       "ir"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 981,
+      "E_null": 24.525,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementdu",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "d"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "demetternich",
+      "core": [
+       "me",
+       "t",
+       "te",
+       "r",
+       "n",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lambassadeur",
+      "core": [
+       "m",
+       "b",
+       "as",
+       "sa",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 989,
+      "E_null": 24.725,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lachambredes",
+      "core": [
+       "ch",
+       "a",
+       "m",
+       "b",
+       "re",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 857,
+      "E_null": 21.425,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "droitdevisite",
+      "core": [
+       "r",
+       "o",
+       "it",
+       "de",
+       "v",
+       "is",
+       "it"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 596,
+      "E_null": 14.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quenousavons",
+      "core": [
+       "n",
+       "ou",
+       "sa",
+       "v",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quelempereur",
+      "core": [
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementde",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nousnoussommes",
+      "core": [
+       "ou",
+       "s",
+       "n",
+       "ou",
+       "ss",
+       "o",
+       "m",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 13,
+      "E_null": 0.325,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lespuissances",
+      "core": [
+       "p",
+       "ui",
+       "ss",
+       "an",
+       "ce"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larevolution",
+      "core": [
+       "re",
+       "v",
+       "o",
+       "l",
+       "u",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "notedelediteur",
+      "core": [
+       "o",
+       "te",
+       "de",
+       "le",
+       "di",
+       "te"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 732,
+      "E_null": 18.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empereurnicolas",
+      "core": [
+       "p",
+       "er",
+       "eu",
+       "r",
+       "n",
+       "ic",
+       "o",
+       "la"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 5,
+      "E_null": 0.125,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "augouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larchiduchesse",
+      "core": [
+       "r",
+       "ch",
+       "i",
+       "d",
+       "u",
+       "ch",
+       "es"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nonseulement",
+      "core": [
+       "on",
+       "se",
+       "u",
+       "le",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "entrelesdeux",
+      "core": [
+       "re",
+       "les",
+       "de",
+       "u"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53135,
+      "E_null": 1328.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monchercomte",
+      "core": [
+       "on",
+       "ch",
+       "er",
+       "co",
+       "m"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementfrancais",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "f",
+       "ra",
+       "n",
+       "c",
+       "ai"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 10826,
+      "E_null": 270.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delangleterre",
+      "core": [
+       "la",
+       "n",
+       "g",
+       "le",
+       "te",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 840,
+      "E_null": 21.0,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lememeaumeme",
+      "core": [
+       "me",
+       "me",
+       "au",
+       "me"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 23,
+      "E_null": 0.575,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslaquelle",
+      "core": [
+       "ns",
+       "la",
+       "que",
+       "l"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "debourqueney",
+      "core": [
+       "b",
+       "ou",
+       "r",
+       "que",
+       "ne"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 608,
+      "E_null": 15.2,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "laconfederation",
+      "core": [
+       "co",
+       "n",
+       "f",
+       "ede",
+       "ra",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cettequestion",
+      "core": [
+       "t",
+       "te",
+       "que",
+       "st",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 11,
+      "E_null": 0.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cetteaffaire",
+      "core": [
+       "t",
+       "te",
+       "a",
+       "f",
+       "f",
+       "ai"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 698,
+      "E_null": 17.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "songouvernement",
+      "core": [
+       "on",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empireottoman",
+      "core": [
+       "p",
+       "ir",
+       "e",
+       "o",
+       "t",
+       "t",
+       "o",
+       "ma"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "aconstantinople",
+      "core": [
+       "co",
+       "ns",
+       "ta",
+       "nt",
+       "in",
+       "o",
+       "p"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lanegociation",
+      "core": [
+       "ne",
+       "g",
+       "o",
+       "c",
+       "i",
+       "at",
+       "i"
+      ],
+      "repeats": 1,
+      "pin_units": 2,
+      "null_admits": 13,
+      "E_null": 0.325,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapolitique",
+      "core": [
+       "la",
+       "p",
+       "o",
+       "li",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1003,
+      "E_null": 25.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     }
+    ],
+    "seed_correct": 0,
+    "seed_precision": null,
+    "letter_occurrences_qualifying": 0,
+    "letter_occurrences_all": 11
+   },
+   "B": {
+    "cribs": 63,
+    "qualifying": 3,
+    "admitted": 0,
+    "dropped_conflict": 0,
+    "seed_codes": 0,
+    "seed_codes_corroborated": 0,
+    "seed": {},
+    "rows": [
+     {
+      "crib": "jailhonneurde",
+      "core": [
+       "ai",
+       "l",
+       "h",
+       "on",
+       "ne",
+       "ur"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monsieurlebaron",
+      "core": [
+       "on",
+       "si",
+       "eu",
+       "r",
+       "le",
+       "b",
+       "ar"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votreexcellence",
+      "core": [
+       "tr",
+       "ee",
+       "x",
+       "ce",
+       "l",
+       "le",
+       "n"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajestelempereur",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 9,
+      "E_null": 0.225,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajesteleroi",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "legouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecabinetde",
+      "core": [
+       "c",
+       "a",
+       "b",
+       "in",
+       "et"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "saintpetersbourg",
+      "core": [
+       "in",
+       "t",
+       "p",
+       "et",
+       "er",
+       "s",
+       "b",
+       "ou",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 326,
+      "E_null": 8.15,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecomtedenesselrode",
+      "core": [
+       "co",
+       "m",
+       "te",
+       "de",
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 441,
+      "E_null": 11.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "jevousprie",
+      "core": [
+       "e",
+       "vo",
+       "us",
+       "p",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 348,
+      "E_null": 8.7,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "veuillezagreer",
+      "core": [
+       "ui",
+       "l",
+       "le",
+       "z",
+       "a",
+       "g",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lassurancedemaconsideration",
+      "core": [
+       "ss",
+       "ur",
+       "an",
+       "ce",
+       "de",
+       "ma",
+       "co",
+       "ns",
+       "i",
+       "de",
+       "ra",
+       "ti"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 4,
+      "E_null": 0.1,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "tresdistinguee",
+      "core": [
+       "es",
+       "d",
+       "is",
+       "ti",
+       "n",
+       "g",
+       "ue"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votredepeche",
+      "core": [
+       "tr",
+       "ede",
+       "p",
+       "ec",
+       "h"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "vosrapports",
+      "core": [
+       "s",
+       "ra",
+       "p",
+       "po",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lempereur",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 17,
+      "E_null": 0.425,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 4,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesaffaires",
+      "core": [
+       "a",
+       "f",
+       "f",
+       "ai",
+       "re"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 837,
+      "E_null": 20.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lapolitique",
+      "core": [
+       "po",
+       "l",
+       "it",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1075,
+      "E_null": 26.875,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesinstructions",
+      "core": [
+       "in",
+       "st",
+       "r",
+       "u",
+       "c",
+       "ti",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "queje",
+      "core": [
+       "j"
+      ],
+      "qualifies": false,
+      "why": "core < 2 units"
+     },
+     {
+      "crib": "ilestimportant",
+      "core": [
+       "es",
+       "ti",
+       "m",
+       "po",
+       "r",
+       "ta"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 857,
+      "E_null": 21.425,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslinteret",
+      "core": [
+       "ns",
+       "l",
+       "in",
+       "te",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "conformement",
+      "core": [
+       "n",
+       "f",
+       "or",
+       "me",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 841,
+      "E_null": 21.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapartde",
+      "core": [
+       "la",
+       "pa",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1171,
+      "E_null": 29.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "relativement",
+      "core": [
+       "la",
+       "ti",
+       "ve",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1171,
+      "E_null": 29.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordaberdeen",
+      "core": [
+       "or",
+       "da",
+       "b",
+       "er",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 761,
+      "E_null": 19.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "dugouvernement",
+      "core": [
+       "u",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "limperatrice",
+      "core": [
+       "i",
+       "m",
+       "p",
+       "er",
+       "a",
+       "tr",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 3,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordpalmerston",
+      "core": [
+       "or",
+       "d",
+       "pa",
+       "l",
+       "me",
+       "r",
+       "st"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "louisphilippe",
+      "core": [
+       "ou",
+       "is",
+       "p",
+       "h",
+       "il",
+       "i",
+       "p",
+       "p"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "denesselrode",
+      "core": [
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "sainteaulaire",
+      "core": [
+       "in",
+       "te",
+       "au",
+       "la",
+       "ir"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 981,
+      "E_null": 24.525,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementdu",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "d"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "demetternich",
+      "core": [
+       "me",
+       "t",
+       "te",
+       "r",
+       "n",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lambassadeur",
+      "core": [
+       "m",
+       "b",
+       "a",
+       "ss",
+       "a",
+       "de"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 18,
+      "E_null": 0.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lachambredes",
+      "core": [
+       "ch",
+       "a",
+       "m",
+       "b",
+       "re",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 857,
+      "E_null": 21.425,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "droitdevisite",
+      "core": [
+       "r",
+       "oi",
+       "t",
+       "de",
+       "v",
+       "is",
+       "it"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quenousavons",
+      "core": [
+       "n",
+       "ou",
+       "sa",
+       "vo"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53135,
+      "E_null": 1328.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quelempereur",
+      "core": [
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementde",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nousnoussommes",
+      "core": [
+       "ou",
+       "s",
+       "n",
+       "ou",
+       "ss",
+       "o",
+       "m",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 13,
+      "E_null": 0.325,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lespuissances",
+      "core": [
+       "p",
+       "ui",
+       "ss",
+       "an",
+       "ce"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larevolution",
+      "core": [
+       "re",
+       "vo",
+       "l",
+       "u",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "notedelediteur",
+      "core": [
+       "o",
+       "te",
+       "de",
+       "le",
+       "d",
+       "it",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empereurnicolas",
+      "core": [
+       "p",
+       "er",
+       "eu",
+       "r",
+       "n",
+       "ic",
+       "o",
+       "la"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 5,
+      "E_null": 0.125,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "augouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larchiduchesse",
+      "core": [
+       "r",
+       "ch",
+       "i",
+       "d",
+       "u",
+       "ch",
+       "es"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nonseulement",
+      "core": [
+       "on",
+       "se",
+       "u",
+       "le",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44704,
+      "E_null": 1117.6,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "entrelesdeux",
+      "core": [
+       "re",
+       "les",
+       "de",
+       "u"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53135,
+      "E_null": 1328.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monchercomte",
+      "core": [
+       "on",
+       "ch",
+       "er",
+       "co",
+       "m"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementfrancais",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "f",
+       "ra",
+       "n",
+       "c",
+       "ai"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 10826,
+      "E_null": 270.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delangleterre",
+      "core": [
+       "la",
+       "n",
+       "g",
+       "le",
+       "te",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 840,
+      "E_null": 21.0,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lememeaumeme",
+      "core": [
+       "me",
+       "me",
+       "au",
+       "me"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 23,
+      "E_null": 0.575,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslaquelle",
+      "core": [
+       "ns",
+       "la",
+       "que",
+       "l"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "debourqueney",
+      "core": [
+       "b",
+       "ou",
+       "r",
+       "que",
+       "ne"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 608,
+      "E_null": 15.2,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "laconfederation",
+      "core": [
+       "co",
+       "n",
+       "f",
+       "ede",
+       "ra",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 36967,
+      "E_null": 924.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cettequestion",
+      "core": [
+       "t",
+       "te",
+       "que",
+       "st",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 11,
+      "E_null": 0.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cetteaffaire",
+      "core": [
+       "t",
+       "te",
+       "a",
+       "f",
+       "f",
+       "ai"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 698,
+      "E_null": 17.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "songouvernement",
+      "core": [
+       "on",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empireottoman",
+      "core": [
+       "p",
+       "ir",
+       "e",
+       "o",
+       "t",
+       "t",
+       "o",
+       "ma"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "aconstantinople",
+      "core": [
+       "co",
+       "ns",
+       "ta",
+       "nt",
+       "in",
+       "o",
+       "p"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30077,
+      "E_null": 751.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lanegociation",
+      "core": [
+       "ne",
+       "g",
+       "o",
+       "c",
+       "i",
+       "a",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 653,
+      "E_null": 16.325,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapolitique",
+      "core": [
+       "la",
+       "po",
+       "l",
+       "it",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 22,
+      "E_null": 0.55,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     }
+    ],
+    "seed_correct": 0,
+    "seed_precision": null,
+    "letter_occurrences_qualifying": 0,
+    "letter_occurrences_all": 11
+   }
+  },
+  {
+   "key_seed": 211,
+   "unit_overlap_B": 93,
+   "A": {
+    "cribs": 63,
+    "qualifying": 2,
+    "admitted": 0,
+    "dropped_conflict": 0,
+    "seed_codes": 0,
+    "seed_codes_corroborated": 0,
+    "seed": {},
+    "rows": [
+     {
+      "crib": "jailhonneurde",
+      "core": [
+       "ai",
+       "l",
+       "h",
+       "on",
+       "ne",
+       "ur"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monsieurlebaron",
+      "core": [
+       "on",
+       "si",
+       "eu",
+       "r",
+       "le",
+       "b",
+       "ar"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votreexcellence",
+      "core": [
+       "o",
+       "tr",
+       "ee",
+       "x",
+       "ce",
+       "l",
+       "le",
+       "n"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 24178,
+      "E_null": 604.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajestelempereur",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 7,
+      "E_null": 0.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajesteleroi",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "legouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecabinetde",
+      "core": [
+       "c",
+       "a",
+       "b",
+       "in",
+       "et"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "saintpetersbourg",
+      "core": [
+       "in",
+       "t",
+       "p",
+       "et",
+       "er",
+       "s",
+       "b",
+       "ou",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 313,
+      "E_null": 7.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecomtedenesselrode",
+      "core": [
+       "co",
+       "m",
+       "te",
+       "de",
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 441,
+      "E_null": 11.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "jevousprie",
+      "core": [
+       "e",
+       "v",
+       "ou",
+       "s",
+       "p",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 313,
+      "E_null": 7.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "veuillezagreer",
+      "core": [
+       "ui",
+       "l",
+       "le",
+       "z",
+       "a",
+       "g",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lassurancedemaconsideration",
+      "core": [
+       "ss",
+       "ur",
+       "an",
+       "ce",
+       "de",
+       "ma",
+       "co",
+       "ns",
+       "i",
+       "de",
+       "ra",
+       "ti"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 3,
+      "E_null": 0.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "tresdistinguee",
+      "core": [
+       "es",
+       "di",
+       "st",
+       "in",
+       "g",
+       "ue"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votredepeche",
+      "core": [
+       "o",
+       "tr",
+       "ede",
+       "p",
+       "ec"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "vosrapports",
+      "core": [
+       "o",
+       "s",
+       "ra",
+       "p",
+       "p",
+       "o",
+       "r",
+       "t"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lempereur",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 18,
+      "E_null": 0.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 4,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesaffaires",
+      "core": [
+       "a",
+       "f",
+       "f",
+       "ai",
+       "re"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 849,
+      "E_null": 21.225,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lapolitique",
+      "core": [
+       "p",
+       "o",
+       "li",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53353,
+      "E_null": 1333.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesinstructions",
+      "core": [
+       "in",
+       "st",
+       "r",
+       "u",
+       "c",
+       "ti",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "queje",
+      "core": [
+       "j"
+      ],
+      "qualifies": false,
+      "why": "core < 2 units"
+     },
+     {
+      "crib": "ilestimportant",
+      "core": [
+       "es",
+       "ti",
+       "m",
+       "p",
+       "o",
+       "r",
+       "ta"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 719,
+      "E_null": 17.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslinteret",
+      "core": [
+       "ns",
+       "li",
+       "nt",
+       "er"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 854,
+      "E_null": 21.35,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "conformement",
+      "core": [
+       "n",
+       "f",
+       "o",
+       "r",
+       "me",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 706,
+      "E_null": 17.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapartde",
+      "core": [
+       "la",
+       "pa",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1146,
+      "E_null": 28.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "relativement",
+      "core": [
+       "la",
+       "ti",
+       "ve",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1146,
+      "E_null": 28.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordaberdeen",
+      "core": [
+       "o",
+       "r",
+       "da",
+       "b",
+       "er",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 604,
+      "E_null": 15.1,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "dugouvernement",
+      "core": [
+       "u",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "limperatrice",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "at",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 15,
+      "E_null": 0.375,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordpalmerston",
+      "core": [
+       "o",
+       "r",
+       "d",
+       "pa",
+       "l",
+       "me",
+       "r",
+       "st"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 459,
+      "E_null": 11.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "louisphilippe",
+      "core": [
+       "ou",
+       "is",
+       "p",
+       "h",
+       "il",
+       "i",
+       "p",
+       "p"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "denesselrode",
+      "core": [
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "sainteaulaire",
+      "core": [
+       "in",
+       "te",
+       "au",
+       "la",
+       "ir"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 956,
+      "E_null": 23.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementdu",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "d"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "demetternich",
+      "core": [
+       "me",
+       "t",
+       "te",
+       "r",
+       "n",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lambassadeur",
+      "core": [
+       "m",
+       "b",
+       "as",
+       "sa",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1010,
+      "E_null": 25.25,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lachambredes",
+      "core": [
+       "ch",
+       "a",
+       "m",
+       "b",
+       "re",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 878,
+      "E_null": 21.95,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "droitdevisite",
+      "core": [
+       "r",
+       "o",
+       "it",
+       "de",
+       "v",
+       "is",
+       "it"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 595,
+      "E_null": 14.875,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quenousavons",
+      "core": [
+       "n",
+       "ou",
+       "sa",
+       "v",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quelempereur",
+      "core": [
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 17,
+      "E_null": 0.425,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementde",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nousnoussommes",
+      "core": [
+       "ou",
+       "s",
+       "n",
+       "ou",
+       "ss",
+       "o",
+       "m",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 12,
+      "E_null": 0.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lespuissances",
+      "core": [
+       "p",
+       "ui",
+       "ss",
+       "an",
+       "ce"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larevolution",
+      "core": [
+       "re",
+       "v",
+       "o",
+       "l",
+       "u",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "notedelediteur",
+      "core": [
+       "o",
+       "te",
+       "de",
+       "le",
+       "di",
+       "te"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 727,
+      "E_null": 18.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empereurnicolas",
+      "core": [
+       "p",
+       "er",
+       "eu",
+       "r",
+       "n",
+       "ic",
+       "o",
+       "la"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 4,
+      "E_null": 0.1,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "augouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larchiduchesse",
+      "core": [
+       "r",
+       "ch",
+       "i",
+       "d",
+       "u",
+       "ch",
+       "es"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 14,
+      "E_null": 0.35,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nonseulement",
+      "core": [
+       "on",
+       "se",
+       "u",
+       "le",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "entrelesdeux",
+      "core": [
+       "re",
+       "les",
+       "de",
+       "u"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53353,
+      "E_null": 1333.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monchercomte",
+      "core": [
+       "on",
+       "ch",
+       "er",
+       "co",
+       "m"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementfrancais",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "f",
+       "ra",
+       "n",
+       "c",
+       "ai"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 10877,
+      "E_null": 271.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delangleterre",
+      "core": [
+       "la",
+       "n",
+       "g",
+       "le",
+       "te",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 830,
+      "E_null": 20.75,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lememeaumeme",
+      "core": [
+       "me",
+       "me",
+       "au",
+       "me"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 27,
+      "E_null": 0.675,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslaquelle",
+      "core": [
+       "ns",
+       "la",
+       "que",
+       "l"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 18,
+      "E_null": 0.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "debourqueney",
+      "core": [
+       "b",
+       "ou",
+       "r",
+       "que",
+       "ne"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 639,
+      "E_null": 15.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "laconfederation",
+      "core": [
+       "co",
+       "n",
+       "f",
+       "ede",
+       "ra",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cettequestion",
+      "core": [
+       "t",
+       "te",
+       "que",
+       "st",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 11,
+      "E_null": 0.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cetteaffaire",
+      "core": [
+       "t",
+       "te",
+       "a",
+       "f",
+       "f",
+       "ai"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 709,
+      "E_null": 17.725,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "songouvernement",
+      "core": [
+       "on",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empireottoman",
+      "core": [
+       "p",
+       "ir",
+       "e",
+       "o",
+       "t",
+       "t",
+       "o",
+       "ma"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "aconstantinople",
+      "core": [
+       "co",
+       "ns",
+       "ta",
+       "nt",
+       "in",
+       "o",
+       "p"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lanegociation",
+      "core": [
+       "ne",
+       "g",
+       "o",
+       "c",
+       "i",
+       "at",
+       "i"
+      ],
+      "repeats": 1,
+      "pin_units": 2,
+      "null_admits": 12,
+      "E_null": 0.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapolitique",
+      "core": [
+       "la",
+       "p",
+       "o",
+       "li",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 983,
+      "E_null": 24.575,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     }
+    ],
+    "seed_correct": 0,
+    "seed_precision": null,
+    "letter_occurrences_qualifying": 0,
+    "letter_occurrences_all": 11
+   },
+   "B": {
+    "cribs": 63,
+    "qualifying": 3,
+    "admitted": 0,
+    "dropped_conflict": 0,
+    "seed_codes": 0,
+    "seed_codes_corroborated": 0,
+    "seed": {},
+    "rows": [
+     {
+      "crib": "jailhonneurde",
+      "core": [
+       "ai",
+       "l",
+       "h",
+       "on",
+       "ne",
+       "ur"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monsieurlebaron",
+      "core": [
+       "on",
+       "si",
+       "eu",
+       "r",
+       "le",
+       "b",
+       "ar"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votreexcellence",
+      "core": [
+       "tr",
+       "ee",
+       "x",
+       "ce",
+       "l",
+       "le",
+       "n"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajestelempereur",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 7,
+      "E_null": 0.175,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "samajesteleroi",
+      "core": [
+       "ma",
+       "j",
+       "es",
+       "te",
+       "le",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "legouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecabinetde",
+      "core": [
+       "c",
+       "a",
+       "b",
+       "in",
+       "et"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "saintpetersbourg",
+      "core": [
+       "in",
+       "t",
+       "p",
+       "et",
+       "er",
+       "s",
+       "b",
+       "ou",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 313,
+      "E_null": 7.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lecomtedenesselrode",
+      "core": [
+       "co",
+       "m",
+       "te",
+       "de",
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 441,
+      "E_null": 11.025,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "jevousprie",
+      "core": [
+       "e",
+       "vo",
+       "us",
+       "p",
+       "ri"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 380,
+      "E_null": 9.5,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "veuillezagreer",
+      "core": [
+       "ui",
+       "l",
+       "le",
+       "z",
+       "a",
+       "g",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lassurancedemaconsideration",
+      "core": [
+       "ss",
+       "ur",
+       "an",
+       "ce",
+       "de",
+       "ma",
+       "co",
+       "ns",
+       "i",
+       "de",
+       "ra",
+       "ti"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 3,
+      "E_null": 0.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "tresdistinguee",
+      "core": [
+       "es",
+       "d",
+       "is",
+       "ti",
+       "n",
+       "g",
+       "ue"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "votredepeche",
+      "core": [
+       "tr",
+       "ede",
+       "p",
+       "ec",
+       "h"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "vosrapports",
+      "core": [
+       "s",
+       "ra",
+       "p",
+       "po",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lempereur",
+      "core": [
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 18,
+      "E_null": 0.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 4,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesaffaires",
+      "core": [
+       "a",
+       "f",
+       "f",
+       "ai",
+       "re"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 849,
+      "E_null": 21.225,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lapolitique",
+      "core": [
+       "po",
+       "l",
+       "it",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1003,
+      "E_null": 25.075,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lesinstructions",
+      "core": [
+       "in",
+       "st",
+       "r",
+       "u",
+       "c",
+       "ti",
+       "on"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "queje",
+      "core": [
+       "j"
+      ],
+      "qualifies": false,
+      "why": "core < 2 units"
+     },
+     {
+      "crib": "ilestimportant",
+      "core": [
+       "es",
+       "ti",
+       "m",
+       "po",
+       "r",
+       "ta"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 878,
+      "E_null": 21.95,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslinteret",
+      "core": [
+       "ns",
+       "l",
+       "in",
+       "te",
+       "re"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "conformement",
+      "core": [
+       "n",
+       "f",
+       "or",
+       "me",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 860,
+      "E_null": 21.5,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapartde",
+      "core": [
+       "la",
+       "pa",
+       "r",
+       "t"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1146,
+      "E_null": 28.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "relativement",
+      "core": [
+       "la",
+       "ti",
+       "ve",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 1146,
+      "E_null": 28.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordaberdeen",
+      "core": [
+       "or",
+       "da",
+       "b",
+       "er",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 743,
+      "E_null": 18.575,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "dugouvernement",
+      "core": [
+       "u",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "limperatrice",
+      "core": [
+       "i",
+       "m",
+       "p",
+       "er",
+       "a",
+       "tr",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 3,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lordpalmerston",
+      "core": [
+       "or",
+       "d",
+       "pa",
+       "l",
+       "me",
+       "r",
+       "st"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "louisphilippe",
+      "core": [
+       "ou",
+       "is",
+       "p",
+       "h",
+       "il",
+       "i",
+       "p",
+       "p"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "denesselrode",
+      "core": [
+       "ne",
+       "ss",
+       "el",
+       "r",
+       "o"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 2,
+      "letter_occurrences": 2,
+      "admitted_true": 0
+     },
+     {
+      "crib": "sainteaulaire",
+      "core": [
+       "in",
+       "te",
+       "au",
+       "la",
+       "ir"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 956,
+      "E_null": 23.9,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementdu",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "d"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "demetternich",
+      "core": [
+       "me",
+       "t",
+       "te",
+       "r",
+       "n",
+       "ic"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lambassadeur",
+      "core": [
+       "m",
+       "b",
+       "a",
+       "ss",
+       "a",
+       "de"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 20,
+      "E_null": 0.5,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lachambredes",
+      "core": [
+       "ch",
+       "a",
+       "m",
+       "b",
+       "re",
+       "de"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 878,
+      "E_null": 21.95,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "droitdevisite",
+      "core": [
+       "r",
+       "oi",
+       "t",
+       "de",
+       "v",
+       "is",
+       "it"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quenousavons",
+      "core": [
+       "n",
+       "ou",
+       "sa",
+       "vo"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53353,
+      "E_null": 1333.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "quelempereur",
+      "core": [
+       "le",
+       "m",
+       "p",
+       "er",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 17,
+      "E_null": 0.425,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 4,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementde",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nousnoussommes",
+      "core": [
+       "ou",
+       "s",
+       "n",
+       "ou",
+       "ss",
+       "o",
+       "m",
+       "me"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 12,
+      "E_null": 0.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lespuissances",
+      "core": [
+       "p",
+       "ui",
+       "ss",
+       "an",
+       "ce"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larevolution",
+      "core": [
+       "re",
+       "vo",
+       "l",
+       "u",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "notedelediteur",
+      "core": [
+       "o",
+       "te",
+       "de",
+       "le",
+       "d",
+       "it",
+       "eu"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empereurnicolas",
+      "core": [
+       "p",
+       "er",
+       "eu",
+       "r",
+       "n",
+       "ic",
+       "o",
+       "la"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 4,
+      "E_null": 0.1,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "augouvernement",
+      "core": [
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "larchiduchesse",
+      "core": [
+       "r",
+       "ch",
+       "i",
+       "d",
+       "u",
+       "ch",
+       "es"
+      ],
+      "repeats": 1,
+      "pin_units": 1,
+      "null_admits": 14,
+      "E_null": 0.35,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "nonseulement",
+      "core": [
+       "on",
+       "se",
+       "u",
+       "le",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 44932,
+      "E_null": 1123.3,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "entrelesdeux",
+      "core": [
+       "re",
+       "les",
+       "de",
+       "u"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 53353,
+      "E_null": 1333.825,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "monchercomte",
+      "core": [
+       "on",
+       "ch",
+       "er",
+       "co",
+       "m"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 16,
+      "E_null": 0.4,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "gouvernementfrancais",
+      "core": [
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me",
+       "nt",
+       "f",
+       "ra",
+       "n",
+       "c",
+       "ai"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 10877,
+      "E_null": 271.925,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delangleterre",
+      "core": [
+       "la",
+       "n",
+       "g",
+       "le",
+       "te",
+       "r"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 830,
+      "E_null": 20.75,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lememeaumeme",
+      "core": [
+       "me",
+       "me",
+       "au",
+       "me"
+      ],
+      "repeats": 2,
+      "pin_units": 0,
+      "null_admits": 27,
+      "E_null": 0.675,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "danslaquelle",
+      "core": [
+       "ns",
+       "la",
+       "que",
+       "l"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 18,
+      "E_null": 0.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "debourqueney",
+      "core": [
+       "b",
+       "ou",
+       "r",
+       "que",
+       "ne"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 639,
+      "E_null": 15.975,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "laconfederation",
+      "core": [
+       "co",
+       "n",
+       "f",
+       "ede",
+       "ra",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 37186,
+      "E_null": 929.65,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cettequestion",
+      "core": [
+       "t",
+       "te",
+       "que",
+       "st",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 11,
+      "E_null": 0.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "cetteaffaire",
+      "core": [
+       "t",
+       "te",
+       "a",
+       "f",
+       "f",
+       "ai"
+      ],
+      "repeats": 1,
+      "pin_units": 0,
+      "null_admits": 709,
+      "E_null": 17.725,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 1,
+      "letter_occurrences": 1,
+      "admitted_true": 0
+     },
+     {
+      "crib": "songouvernement",
+      "core": [
+       "on",
+       "g",
+       "ou",
+       "ve",
+       "r",
+       "ne",
+       "me"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "empireottoman",
+      "core": [
+       "p",
+       "ir",
+       "e",
+       "o",
+       "t",
+       "t",
+       "o",
+       "ma"
+      ],
+      "repeats": 2,
+      "pin_units": 1,
+      "null_admits": 0,
+      "E_null": 0.0,
+      "qualifies": true,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "aconstantinople",
+      "core": [
+       "co",
+       "ns",
+       "ta",
+       "nt",
+       "in",
+       "o",
+       "p"
+      ],
+      "repeats": 0,
+      "pin_units": 0,
+      "null_admits": 30258,
+      "E_null": 756.45,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "lanegociation",
+      "core": [
+       "ne",
+       "g",
+       "o",
+       "c",
+       "i",
+       "a",
+       "ti"
+      ],
+      "repeats": 0,
+      "pin_units": 1,
+      "null_admits": 611,
+      "E_null": 15.275,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     },
+     {
+      "crib": "delapolitique",
+      "core": [
+       "la",
+       "po",
+       "l",
+       "it",
+       "i"
+      ],
+      "repeats": 0,
+      "pin_units": 2,
+      "null_admits": 19,
+      "E_null": 0.475,
+      "qualifies": false,
+      "admitted": 0,
+      "true_instances": 0,
+      "letter_occurrences": 0,
+      "admitted_true": 0
+     }
+    ],
+    "seed_correct": 0,
+    "seed_precision": null,
+    "letter_occurrences_qualifying": 0,
+    "letter_occurrences_all": 11
+   }
+  }
+ ]
+}
