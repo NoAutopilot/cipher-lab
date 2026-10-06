@@ -20,3 +20,9 @@ GATE: control mean letter accuracy >= 0.60. Below it: CONTROL BELOW GATE, target
 at this N"). At or above it: run the target, plus 10 nulls = target tokens shuffled within the cipher (same word lengths).
 Target "moves" only if its score exceeds all 10 null scores AND >= 60% of its words are matched; otherwise a negative under
 this design at the control's measured power. Any decode is grade S at most, M per word unless the gate and null both pass.
+
+Correction before the scored run (16:3x UTC, after a --quick smoke test on one control seed only, target not touched): the
+segmentation rule above gives **17** words (lengths 2,7,6,10,1,12,11,11,8,9,4,3 | 1,6,3 | 2,4 = test 2's own list), not 15;
+the "15" was a miscount. No parameter, gate or control changed. The smoke test (2 restarts x 800 moves) read 0.060 on one
+seed with the solver's score far BELOW the true key's, i.e. a search shortfall at that budget; the scored run uses the
+registered 8 x 4000.
