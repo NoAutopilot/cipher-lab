@@ -1,0 +1,86 @@
+group	row	pos	symbol	mark	confidence	note
+main	1	1	W	U	M	underline/dot marks; could be W with small marks
+main	1	2	j	U	M	
+main	1	3	u/v	S	L	small, struck/with tick
+main	1	4	P	U	H	
+main	1	5	D	U	H	
+main	1	6	X/Y(star-like)	?	L	at far right beyond fold line; maybe cipher-like mark
+main	2	1	a	?	L	partial at left edge, assigned to row 2
+main	2	2	X	U	M	
+main	2	3	o	U	M	
+main	2	4	R	U	H	
+main	2	5	w	S	M	
+main	2	6	I/i	U	L	
+main	2	7	S	S	H	
+main	3	1	M	U	H	
+main	3	2	m	S	M	
+main	3	3	g	S	M	
+main	4	1	H	U	M	
+main	4	2	k	S	M	
+main	4	3	e	S	M	
+main	4	4	E	U	M	
+main	4	5	B	U	H	
+main	4	6	f	U	M	
+main	4	7	e	S	M	
+main	4	8	#	?	L	far right, hash-like
+main	5	1	X	U	M	
+main	5	2	n	S	M	
+main	5	3	L	U	M	
+main	5	4	o	S	M	
+main	5	5	Y	S	M	
+main	5	6	u/v	S	L	
+main	5	7	I	U	M	
+main	5	8	h/H	?	L	partial right edge
+main	6	1	W/m	U	L	fragment at left, may belong to row 5/6
+main	6	2	A	U	M	
+main	6	3	z	S	M	
+main	6	4	Q	U	M	
+main	6	5	Y/V	U	M	
+main	6	6	k	?	L	right edge fragment
+main	7	1	t/+	?	L	left fragment
+main	7	2	U	U	H	
+main	7	3	k	S	M	
+main	7	4	t	S	M	
+main	7	5	P	U	H	
+main	7	6	s	S	M	
+main	7	7	q	S	M	
+main	8	1	A	U	M	
+main	8	2	c/r	S	L	
+main	8	3	Z	U	M	
+main	8	4	f	S	M	
+main	8	5	i	S	M	
+main	8	6	Y	S	M	
+main	8	7	z	S	M	
+main	8	8	D	S	M	fragment at top-right edge
+main	9	1	C	U	M	
+main	9	2	R	U	M	
+main	9	3	V	U	M	
+main	9	4	h	S	M	small letter above/through
+main	9	5	X	U	M	
+main	9	6	a	S	M	
+main	9	7	Z	S	M	
+main	10	1	E	U	M	
+main	10	2	f+r(below)	S	L	small letter beneath, maybe f
+main	10	3	b	S	M	small H at top is from row 9 neighbour
+main	10	4	d	S	M	
+main	10	5	a+v(below)	S	L	
+main	10	6	a	S	M	
+main	10	7	O	U	M	
+left	1	1	p/P	U	L	vertical column, rotated view
+left	2	1	%	U	M	
+left	3	1	K	U	M	
+left	4	1	4/H	U	L	
+left	5	1	P/q-like	U	L	
+left	6	1	@	U	M	
+left	7	1	h/n	U	L	
+left	8	1	asterisk/star	?	M	
+right	1	1	X	S	M	
+right	2	1	8	U	M	small word "Append" vertically under it, looks like a note not a cipher symbol
+right	3	1	#/H	U	L	
+right	4	1	Z	U	M	
+right	5	1	V	U	M	
+right	6	1	#/H	U	L	
+right	7	1	3	U	M	
+right	8	1	2/?	U	L	
+right	9	1	O/Q	U	L	
+bottom	1	1	d/8 (circled)	?	L	circled mark
