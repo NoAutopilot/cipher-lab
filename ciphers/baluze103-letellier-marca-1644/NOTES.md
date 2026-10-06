@@ -666,3 +666,43 @@ Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditio
 - [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; planned: the circled/plain 9 crop read (Remaining gaps)
 - [x] retry: decode_key --check and fr17 re-judge after the 9 context rule (R9-BAL103, 6 Oct 2026): -1.537 -> -1.445
 Verdict: keep going: 1 internal gap; cheapest next: the circled/plain 9 crop read on the 42 tokens, ~$1.5
+
+## Circled/plain 9 premise check (R9-BAL103B, 6 Oct 2026)
+
+Worker R9-BAL103B (account 1, LANE LANE-RUN9-account-1), 06:24-06:27 UTC 6 Oct 2026 by `date -u`. Key source unchanged: published
+(Tomokiyo 1644 table + R7C's licensed c = p). Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **Premise does not hold; no read run.** R9-BAL103 named "plain 9 = i, circled 9 = r|s" as a sign difference to read from the crops.
+  The circle is not on the manuscript. `key.tsv`'s own header says `flag=circ` marks a sign *Tomokiyo* circled and joined by his loop
+  line, and the table image (`tx/key_sheet_3x.png`, eyed this job) shows it: one hand-drawn loop joins the 9 under r, the 9 under s,
+  the 3 under x and the 3 under h, and a second loop joins hz/gz/hbar. These are his marks for a shape that stands in more than one
+  column. They are not a stroke the 1644 writer drew.
+- Image check, f.50r L01 (`images/f50r_L01.jpg`, R7A's tools/iiif_lines.py crop, on disk, no network): both 9 tokens (pos 7, read r|s|i
+  -> lean s; pos 13 -> lean r) are written without any enclosing stroke. Pos 7 is a `g`-like 9 with a looped descender. Pos 13 is a
+  short 9 set between two dots.
+- So a circled/plain blind read of the 42 tokens would be a non-test. The manuscript gives it nothing to vary on, and every token
+  would come back "plain" whatever its value (CLAUDE.md rule 3, "a control that cannot vary on the same axis"). No crops were cut, no
+  subagent was called, and no corrections TSV was written. `exceptions.tsv`, the reading and the judge are unchanged (fr17 -1.445,
+  R9-BAL103).
+- What the crop did show, untested: L01's two 9s differ in *shape*, a long looped `g`-like tail at pos 7 against a short 9 at pos 13.
+  Tomokiyo's row-4 i-cell 9 and his row-1 r/s 9s may also be drawn differently. Whether f.50's 9s fall into two shape classes that line
+  up with i vs r|s is an open image question, and it could replace the fr17 lean. It needs x-positions for the 42 tokens. The sorter's
+  aligned tiles (`sorter/`, 445 of 1,111 aligned to a ciphertext.tsv column) may supply them; otherwise cut by line.
+- R9-BAL103's sentence "in key.tsv a plain 9 is i and a circled 9 is r or s" is true of the table drawing only. It is not a sign
+  distinction on f.50 (corrected here; the earlier section is left as written).
+Where not found: no plaintext of f.50 used or consulted; no sibling read. Requests: none (all from disk; no subagent calls).
+
+## Remaining gaps (R9-BAL103B, 6 Oct 2026)
+Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditional), judge fr17 FAIL -1.445 vs real_p05 -0.852 after the 9 rule; the page decode sits near the r ~ 0.25-0.30 synthetic noise band (r8/result.tsv)
+- f.50 confusable sign pairs (m/mm/mt, tt/venus, venus/q, x/xc/xs/xbar, mm/tt, 9/venus; R/u, b/bt) - blocker: waiting-on the owner's answer on the f.50 sign sorter sorter/out/baluze103_f50_sorter.html, to be published by the account-3 orchestrator (ROOM flag R9-BAL103, 6 Oct 2026); two machine third readers settled one-directionally (R8-BAL103, R8-BAL103B), so per CLAUDE.md Usage 6 the pass is a person's
+- ambiguous 9 (i|r|s; 42 tokens on an fr17 context lean, grade M) - blocker: not-attempted; the circled/plain read is void because the circle is Tomokiyo's table mark, not a manuscript stroke (R9-BAL103B); next: a pre-registered shape split of the 42 tokens (long looped g-like tail vs short 9, seen on f50r L01) with positions from the sorter's aligned tiles, checked against the f.171r 9s with known values (calib/) as the control, ~$2
+
+## Escalation (R9-BAL103B, 6 Oct 2026)
+- [x] siblings: f.171r L1-4 transcribed blind and scored against the f.172r period decipherment (R7C-BAL103K, 6 Oct 2026): A 0.767 vs permutation p99 0.311, gate PASS
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's table reads f.50 above a permutation null in both blind passes (R8-BAL103, 6 Oct 2026: -1.566/-1.602 vs p99 -1.99/-1.96); judge fr17 FAIL -1.445 after the 9 rule (R9-BAL103)
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: R8-BAL103's registered test puts the failure in the transcription, not the table; no April-table search or rebuild is licensed
+- [ ] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter is built and preflight-PASSed (R9-BAL103), waiting on publication; circled/plain 9 read void (premise, R9-BAL103B); planned: the 9 shape split against the f.171r control (Remaining gaps)
+- [x] retry: decode_key --check and fr17 re-judge after the 9 context rule (R9-BAL103, 6 Oct 2026): -1.537 -> -1.445
+Verdict: keep going: 1 internal gap; cheapest next: the pre-registered 9 shape split (g-tail vs short) against the f.171r 9s, ~$2
