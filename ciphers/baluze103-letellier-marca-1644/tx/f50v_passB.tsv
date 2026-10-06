@@ -1,0 +1,25 @@
+f50v_L01_s1	m 10 q2 4 4 theta 6 P =11 6 u 9 xc
+f50v_L01_s2	6 u 9 xc |>?{ff loop} hz P 19 10 a 9
+f50v_L02_s1	a 5 u ct 13 f u 9 7 theta y|xc 6 [et tou]
+f50v_L02_s2	6 [et tous] |>10 4 hz f u 9 =9
+f50v_L03_s1	13 u 9 a delta m 4 f 9|venus f xc q2 4 m 14
+f50v_L03_s2	4 m 14 |>22 a 20 P|dt y 13 u
+f50v_L04_s1	9|venus 12 u 14 6 10 x g+ 18 a xs|xbar delta 9
+f50v_L04_s2	a xs|xbar delta |>9 hz u f 19 ?{ff loop} 6 18 y u ct 6 theta
+f50v_L05_s1	[de faire] =18 6 u 9 12 17 H|xs mt
+f50v_L05_s2	17 H|xs mt |>14 8 =12 7 theta
+f50v_L06_s1	23 7 8 14 a 6 14 21 3 9 a [quo]
+f50v_L06_s2	9 a [quoy] |>=n =o 13 u 9 18 f bt
+f50v_L07_s1	m ?{ff loop} 9 mt 9|venus H|xs xc|y a bt 20 14 a
+f50v_L07_s2	20 14 a |>hz =11 lb 20 10 ?{z over x} 12 ?{ff loop}
+f50v_L08_s1	P|dt u hz 19 22 u mt 6 14 6 =12 19
+f50v_L08_s2	6 =12 19 |>b 10 y t u xc u ?{m with bar} 12 19
+f50v_L09_s1	14 a ct m ?{z over x} P|dt H|xs 14 9 12 H u
+f50v_L09_s2	9 12 H m |>hbar u f 6 9|venus 19 xc ?{ff loop} m gz|hz
+f50v_L10_s1	8 5 9 6 22 m 8s 12 6 u o7 23 14
+f50v_L10_s2	o7 23 14 |>9 xc 3 theta =11 12 14 19 g+|dt
+f50v_L11_s1	21 14 9 14 12 delta xs hz mt 21 m u
+f50v_L11_s2	21 m u |>8 n 6 10 a 8s u 9 6
+f50v_L12_s1	12 6 7 theta 8 delta mt 6 x ct 9|venus 6 xc
+f50v_L12_s2	t|ct 9|venus 6 xc |>2 theta m ?{i-like} ?{o} a hz
+# notes: unsure of ff-loop signs (8s?), q/9/venus, xc vs y, H vs xs, mt vs m, L12 "mio" run, L11 hz/mt, bars on =n =o =m, 2 4 vs q2 4; L06 clear [a quoy] straddles the overlap; ~30 uncertain signs

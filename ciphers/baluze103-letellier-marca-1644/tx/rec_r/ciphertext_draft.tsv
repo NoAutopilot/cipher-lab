@@ -1,0 +1,393 @@
+line	position	sign	confidence	alt	why
+f50r_L01	1	19	M	B:=19	differ
+f50r_L01	2	u	H		agree
+f50r_L01	3	mt	H		agree
+f50r_L01	4	12	H		agree
+f50r_L01	5	delta	H		agree
+f50r_L01	6	a	H		agree
+f50r_L01	7	9	H		agree
+f50r_L01	8	theta	H		agree
+f50r_L01	9	mt	H		agree
+f50r_L01	10	hz	H		agree
+f50r_L01	11	6	H		agree
+f50r_L01	12	14	H		agree
+f50r_L01	13	9	H		agree
+f50r_L01	14	7	H		agree
+f50r_L01	15	13	H		agree
+f50r_L01	16	u	H		agree
+f50r_L01	17	6	H		agree
+f50r_L01	18	10	H		agree
+f50r_L02	1	venus	M		agree-flagged
+f50r_L02	2	tt	M	B:-	gap
+f50r_L02	3	f	H		agree
+f50r_L02	4	xc	M	A:-	gap
+f50r_L02	5	R	M	B:u	differ
+f50r_L02	6	14	H		agree
+f50r_L02	7	19	H		agree
+f50r_L02	8	delta	H		agree
+f50r_L02	9	a	H		agree
+f50r_L02	10	y	H		agree
+f50r_L02	11	u	H		agree
+f50r_L02	12	10	H		agree
+f50r_L02	13	u	H		agree
+f50r_L02	14	ct	H		agree
+f50r_L02	15	21	H		agree
+f50r_L02	16	6	H		agree
+f50r_L02	17	P	H		agree
+f50r_L02	18	23	H		agree
+f50r_L02	19	3	M	B:-	gap
+f50r_L02	20	xs	M		agree-flagged
+f50r_L03	1	7	H		agree
+f50r_L03	2	eps	M		agree-flagged
+f50r_L03	3	a	H		agree
+f50r_L03	4	y	H		agree
+f50r_L03	5	t	H		agree
+f50r_L03	6	u	H		agree
+f50r_L03	7	8	M	B:81	differ
+f50r_L03	8	mm	H		agree
+f50r_L03	9	9	H		agree
+f50r_L03	10	14	H		agree
+f50r_L03	11	ct	M	B:c	differ
+f50r_L03	12	xbar	M	B:hz	differ
+f50r_L03	13	f	H		agree
+f50r_L03	14	u	H		agree
+f50r_L03	15	dt	M	B:t	differ
+f50r_L03	16	m	H		agree
+f50r_L03	17	a	H		agree
+f50r_L03	18	6	H		agree
+f50r_L04	1	10	H		agree
+f50r_L04	2	lb	M	B:H	differ
+f50r_L04	3	x	M	B:xbar	differ
+f50r_L04	4	bt	M	B:b	differ
+f50r_L04	5	o7	M	B:theta	differ
+f50r_L04	6	tt	M	B:venus	differ
+f50r_L04	7	f	H		agree
+f50r_L04	8	R	M	B:u	differ
+f50r_L04	9	10	H		agree
+f50r_L04	10	delta	H		agree
+f50r_L04	11	a	H		agree
+f50r_L04	12	hz	H		agree
+f50r_L04	13	u	H		agree
+f50r_L04	14	9	H		agree
+f50r_L04	15	6	H		agree
+f50r_L04	16	14	H		agree
+f50r_L04	17	22	H		agree
+f50r_L05	1	x	M	B:xbar	differ
+f50r_L05	2	theta	H		agree
+f50r_L05	3	12	H		agree
+f50r_L05	4	3	H		agree
+f50r_L05	5	eps	H		agree
+f50r_L05	6	mt	H		agree
+f50r_L05	7	7	H		agree
+f50r_L05	8	6	H		agree
+f50r_L05	9	f	H		agree
+f50r_L05	10	R	M	B:	differ
+f50r_L05	11	ct	H		agree
+f50r_L05	12	b	H		agree
+f50r_L05	13	tt	M	B:mm	differ
+f50r_L05	14	P	H		agree
+f50r_L05	15	9	H		agree
+f50r_L05	16	delta	H		agree
+f50r_L05	17	a	H		agree
+f50r_L05	18	t	H		agree
+f50r_L05	19	mt	M		agree-flagged
+f50r_L05	20	delta	H		agree
+f50r_L06	1	tt	M	B:venus	differ
+f50r_L06	2	o7	M	B:theta	differ
+f50r_L06	3	mt	H		agree
+f50r_L06	4	9	H		agree
+f50r_L06	5	6	M	A:-	gap
+f50r_L06	6	x	M	B:xbar	differ
+f50r_L06	7	theta	H		agree
+f50r_L06	8	=y	H		agree
+f50r_L06	9	3	M	B:=3	differ
+f50r_L06	10	=12	H		agree
+f50r_L06	11	10	H		agree
+f50r_L06	12	bt	M	B:t	differ
+f50r_L06	13	9	H		agree
+f50r_L06	14	hz	H		agree
+f50r_L06	15	P	M	B:hz	differ
+f50r_L06	16	20	H		agree
+f50r_L06	17	u	H		agree
+f50r_L06	18	23	H		agree
+f50r_L07	1	m	H		agree
+f50r_L07	2	10	H		agree
+f50r_L07	3	delta	H		agree
+f50r_L07	4	R	M	B:u	differ
+f50r_L07	5	theta	H		agree
+f50r_L07	6	lb	M	B:H	differ
+f50r_L07	7	22	H		agree
+f50r_L07	8	P	H		agree
+f50r_L07	9	14	H		agree
+f50r_L07	10	a	H		agree
+f50r_L07	11	mt	H		agree
+f50r_L07	12	bt	M	B:b	differ
+f50r_L07	13	8	H		agree
+f50r_L07	14	hz	H		agree
+f50r_L07	15	9	H		agree
+f50r_L07	16	14	H		agree
+f50r_L07	17	18	H		agree
+f50r_L07	18	7	H		agree
+f50r_L08	1	c	M	B:ct	differ
+f50r_L08	2	delta	H		agree
+f50r_L08	3	21	H		agree
+f50r_L08	4	R	M	B:u	differ
+f50r_L08	5	hz	H		agree
+f50r_L08	6	mt	M	B:m	differ
+f50r_L08	7	theta	H		agree
+f50r_L08	8	hz	H		agree
+f50r_L08	9	6	H		agree
+f50r_L08	10	u	H		agree
+f50r_L08	11	b	H		agree
+f50r_L08	12	u	H		agree
+f50r_L08	13	delta	H		agree
+f50r_L08	14	6	H		agree
+f50r_L08	15	t	H		agree
+f50r_L08	16	bt	M	B:b	differ
+f50r_L08	17	hz	H		agree
+f50r_L08	18	xs	M	B:mm	differ
+f50r_L08	19	mt	M	B:m	differ
+f50r_L08	20	6	H		agree
+f50r_L08	21	a	M	B:xbar	differ
+f50r_L08	22	bt	M	B:b	differ
+f50r_L09	1	=11	H		agree
+f50r_L09	2	19	H		agree
+f50r_L09	3	theta	H		agree
+f50r_L09	4	t	H		agree
+f50r_L09	5	mt	H		agree
+f50r_L09	6	6	H		agree
+f50r_L09	7	9	H		agree
+f50r_L09	8	venus	M	B:q	differ
+f50r_L09	9	u	H		agree
+f50r_L09	10	mt	M	B:m	differ
+f50r_L09	11	xbar	M	B:xs	differ
+f50r_L09	12	o7	M	B:theta	differ
+f50r_L09	13	tt	M	B:venus	differ
+f50r_L09	14	9	H		agree
+f50r_L09	15	f	H		agree
+f50r_L09	16	xs	H		agree
+f50r_L09	17	10	H		agree
+f50r_L09	18	18	M	B:15	differ
+f50r_L09	19	14	H		agree
+f50r_L10	1	eps	H		agree
+f50r_L10	2	hbar	H		agree
+f50r_L10	3	xs	H		agree
+f50r_L10	4	18	H		agree
+f50r_L10	5	9	H		agree
+f50r_L10	6	ct	H		agree
+f50r_L10	7	13	H		agree
+f50r_L10	8	u	H		agree
+f50r_L10	9	R	M	B:u	differ
+f50r_L10	10	theta	H		agree
+f50r_L10	11	=11	H		agree
+f50r_L10	12	12	H		agree
+f50r_L10	13	22	H		agree
+f50r_L10	14	a	H		agree
+f50r_L10	15	6	H		agree
+f50r_L10	16	P	H		agree
+f50r_L10	17	theta	H		agree
+f50r_L10	18	y	H		agree
+f50r_L10	19	13	H		agree
+f50r_L11	1	6	M	B:-	gap
+f50r_L11	2	u	M	B:-	gap
+f50r_L11	3	9	M	B:-	gap
+f50r_L11	4	t	M	B:13	differ
+f50r_L11	5	u	H		agree
+f50r_L11	6	mt	M	B:hz	differ
+f50r_L11	7	mm	H		agree
+f50r_L11	8	theta	M	B:xs	differ
+f50r_L11	9	9	M	B:delta	differ
+f50r_L11	10	a	M	B:m	differ
+f50r_L11	11	17	M	B:9	differ
+f50r_L11	12	bt	M	B:delta	differ
+f50r_L11	13	9	M	B:4	differ
+f50r_L11	14	=11	H		agree
+f50r_L11	15	P	H		agree
+f50r_L11	16	6	M	A:-	gap
+f50r_L11	17	n	M	A:-	gap
+f50r_L11	18	14	M	A:-	gap
+f50r_L11	19	19	M	B:a	differ
+f50r_L11	20	xbar	M	B:mt	differ
+f50r_L11	21	theta	M	B:delta	differ
+f50r_L11	22	R	M	B:2	differ
+f50r_L11	23	bt	M	B:9	differ
+f50r_L12	1	13	M	B:6	differ
+f50r_L12	2	u	H		agree
+f50r_L12	3	hz	M	B:-	gap
+f50r_L12	4	tt	M	B:9	differ
+f50r_L12	5	xs	M	B:t	differ
+f50r_L12	6	delta	M	B:u	differ
+f50r_L12	7	mt	H		agree
+f50r_L12	8	m	M	A:-	gap
+f50r_L12	9	theta	M	A:-	gap
+f50r_L12	10	9	H		agree
+f50r_L12	11	a	M	A:-	gap
+f50r_L12	12	17	M	A:-	gap
+f50r_L12	13	delta	M	B:b	differ
+f50r_L12	14	4	M	B:9	differ
+f50r_L12	15	=11	H		agree
+f50r_L12	16	P	H		agree
+f50r_L12	17	6	M	B:-	gap
+f50r_L12	18	n	M	B:-	gap
+f50r_L12	19	14	M	B:-	gap
+f50r_L12	20	a	M	B:19	differ
+f50r_L12	21	mt	M	B:xs	differ
+f50r_L12	22	delta	M	B:theta	differ
+f50r_L12	23	2	M	B:u	differ
+f50r_L12	24	9	M	B:b	differ
+f50r_L13	1	xs	H		agree
+f50r_L13	2	eps	H		agree
+f50r_L13	3	a	H		agree
+f50r_L13	4	hz	H		agree
+f50r_L13	5	tt	M	B:venus	differ
+f50r_L13	6	theta	H		agree
+f50r_L13	7	9	H		agree
+f50r_L13	8	6	H		agree
+f50r_L13	9	mt	H		agree
+f50r_L13	10	b	H		agree
+f50r_L13	11	14	H		agree
+f50r_L13	12	t	H		agree
+f50r_L13	13	u	H		agree
+f50r_L13	14	mt	M	B:m	differ
+f50r_L13	15	xs	M	B:xc	differ
+f50r_L13	16	venus	M	B:q	differ
+f50r_L13	17	z	M		agree-flagged
+f50r_L13	18	6	M	A:-	gap
+f50r_L13	19	P	H		agree
+f50r_L13	20	y	H		agree
+f50r_L13	21	xs	H		agree
+f50r_L13	22	delta	H		agree
+f50r_L13	23	f	H		agree
+f50r_L13	24	l	H		agree
+f50r_L14	1	6	H		agree
+f50r_L14	2	u	H		agree
+f50r_L14	3	t	H		agree
+f50r_L14	4	venus	M	B:q	differ
+f50r_L14	5	6	H		agree
+f50r_L14	6	9	H		agree
+f50r_L14	7	lb	M	B:H	differ
+f50r_L14	8	tt	M	B:venus	differ
+f50r_L14	9	9	H		agree
+f50r_L14	10	R	M	B:u	differ
+f50r_L14	11	tt	M	B:mm	differ
+f50r_L14	12	10	H		agree
+f50r_L14	13	x	M	B:xc	differ
+f50r_L14	14	15	H		agree
+f50r_L14	15	mt	H		agree
+f50r_L14	16	a	H		agree
+f50r_L14	17	=11	H		agree
+f50r_L14	18	18	H		agree
+f50r_L14	19	19	H		agree
+f50r_L15	1	mm	M	B:m	differ
+f50r_L15	2	9	H		agree
+f50r_L15	3	u	H		agree
+f50r_L15	4	a	H		agree
+f50r_L15	5	delta	H		agree
+f50r_L15	6	theta	H		agree
+f50r_L15	7	y	H		agree
+f50r_L15	8	ct	H		agree
+f50r_L15	9	delta	H		agree
+f50r_L15	10	t	H		agree
+f50r_L15	11	u	H		agree
+f50r_L15	12	14	H		agree
+f50r_L15	13	8s	H		agree
+f50r_L15	14	y	H		agree
+f50r_L15	15	bt	M	B:b	differ
+f50r_L15	16	9	H		agree
+f50r_L15	17	14	H		agree
+f50r_L15	18	6	H		agree
+f50r_L15	19	tt	M	B:mm	differ
+f50r_L16	1	23	H		agree
+f50r_L16	2	10	H		agree
+f50r_L16	3	7	H		agree
+f50r_L16	4	c	H		agree
+f50r_L16	5	u	H		agree
+f50r_L16	6	d	M	A:-	gap
+f50r_L16	7	t	M	A:-	gap
+f50r_L16	8	delta	M	B:u	differ
+f50r_L16	9	mt	H		agree
+f50r_L16	10	hz	M	A:-	gap
+f50r_L16	11	hbar	M	B:venus	differ
+f50r_L16	12	tt	M	B:mm	differ
+f50r_L16	13	tt	M	B:6	differ
+f50r_L16	14	theta	H		agree
+f50r_L16	15	9	H		agree
+f50r_L16	16	mm	M	B:m	differ
+f50r_L16	17	10	H		agree
+f50r_L16	18	9	H		agree
+f50r_L16	19	delta	H		agree
+f50r_L16	20	22	H		agree
+f50r_L17	1	12	H		agree
+f50r_L17	2	14	H		agree
+f50r_L17	3	hz	H		agree
+f50r_L17	4	m	H		agree
+f50r_L17	5	2	H		agree
+f50r_L17	6	=12	H		agree
+f50r_L17	7	g+	H		agree
+f50r_L17	8	10	H		agree
+f50r_L17	9	mt	H		agree
+f50r_L17	10	6	H		agree
+f50r_L17	11	venus	M	B:-	gap
+f50r_L17	12	R	M	B:q	differ
+f50r_L17	13	u	H		agree
+f50r_L17	14	ct	H		agree
+f50r_L17	15	x	M	B:xc	differ
+f50r_L17	16	15	H		agree
+f50r_L17	17	tt	M	B:venus	differ
+f50r_L17	18	P	H		agree
+f50r_L18	1	t	H		agree
+f50r_L18	2	u	H		agree
+f50r_L18	3	=32	H		agree
+f50r_L18	4	7	H		agree
+f50r_L18	5	theta	H		agree
+f50r_L18	6	9	H		agree
+f50r_L18	7	6	H		agree
+f50r_L18	8	23	H		agree
+f50r_L18	9	6	H		agree
+f50r_L18	10	tt	M	B:venus	differ
+f50r_L18	11	mt	H		agree
+f50r_L18	12	a	H		agree
+f50r_L18	13	t	H		agree
+f50r_L18	14	mm	M	B:m	differ
+f50r_L18	15	19	H		agree
+f50r_L18	16	mt	M	B:m	differ
+f50r_L18	17	9	H		agree
+f50r_L18	18	venus	M	B:q	differ
+f50r_L18	19	u	H		agree
+f50r_L19	1	x	H		agree
+f50r_L19	2	delta	H		agree
+f50r_L19	3	18	H		agree
+f50r_L19	4	7	H		agree
+f50r_L19	5	xs	H		agree
+f50r_L19	6	bt	M	B:b	differ
+f50r_L19	7	R	M	B:u	differ
+f50r_L19	8	u	H		agree
+f50r_L19	9	=11	H		agree
+f50r_L19	10	delta	H		agree
+f50r_L19	11	a	H		agree
+f50r_L19	12	22	H		agree
+f50r_L19	13	4	H		agree
+f50r_L19	14	mt	M	B:m	differ
+f50r_L19	15	9	H		agree
+f50r_L19	16	theta	H		agree
+f50r_L19	17	tt	M	B:venus	differ
+f50r_L19	18	=3	H		agree
+f50r_L20	1	10	H		agree
+f50r_L20	2	18	H		agree
+f50r_L20	3	a	H		agree
+f50r_L20	4	8	H		agree
+f50r_L20	5	u	H		agree
+f50r_L20	6	=12	H		agree
+f50r_L20	7	19	H		agree
+f50r_L20	8	23	H		agree
+f50r_L20	9	f	H		agree
+f50r_L20	10	14	H		agree
+f50r_L20	11	6	H		agree
+f50r_L20	12	u	H		agree
+f50r_L20	13	a	H		agree
+f50r_L20	14	13	H		agree
+f50r_L20	15	hz	H		agree
+f50r_L20	16	xs	M	B:xc	differ
+f50r_L20	17	mt	M	B:m	differ
+f50r_L20	18	9	H		agree
+f50r_L20	19	19	H		agree

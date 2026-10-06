@@ -1,0 +1,25 @@
+f50v_L01_s1	mm|m 10 q2|2 4 4 theta 6 P =11 6 u 9 xc
+f50v_L01_s2	6 u 9 xc |>lb|8t hz P 19 10 a 9
+f50v_L02_s1	eps|a 5 u ct 13 f u 9 7 theta y 6 [et tou]
+f50v_L02_s2	6 [et tous] |>10 4 hz f u 9 =9
+f50v_L03_s1	13 u 9 a delta mm 4 f venus f xc q2|2 4 mm 14
+f50v_L03_s2	4 mm 14 |>22 a 20 P y 13 u
+f50v_L04_s1	venus 12 u 14 6 10 x g+ 18 a xs delta
+f50v_L04_s2	a xs delta |>9 hz u f 19 lb|8t 6 18 y u ct 6 theta
+f50v_L05_s1	[de faire] =18 6 u 9 12 17 xs mt
+f50v_L05_s2	17 xs mt |>14 8 =12 7 theta
+f50v_L06_s1	23 7 8 14 a 6 14 21 3 9 [a quoy]
+f50v_L06_s2	9 [a quoy] |>=n =o 13 u 9 18 f bt
+f50v_L07_s1	mm lb|8t 9 mt venus xs|y y a bt 20 14 a
+f50v_L07_s2	20 14 a |>hz =11 ?{large looped L-like with stroke} 20 10 xc 12 lb|8t
+f50v_L08_s1	P u hz 19 22 u mt 6 14 6 =12 19
+f50v_L08_s2	6 =12 19 |>b 10 y t u xc u =mm|=mt 12 19
+f50v_L09_s1	14 a ct mm z xc P xs 14 9 12 xs u|mm
+f50v_L09_s2	9 12 xs mm |>hbar u f 6 venus 19 xc lb|8t mm hz
+f50v_L10_s1	8 5 9 6 22 mm 8s|4s 12 6 u o7 23 14
+f50v_L10_s2	o7 23 14 |>9 xc 3 theta =11 12 14 19 P
+f50v_L11_s1	21 14 venus 14 12 delta xs|y hz mt 21 mm u
+f50v_L11_s2	21 mm u |>8 u 6 10 a 8s|4s u 9 6
+f50v_L12_s1	12 6 7 theta 8 delta mt 6 x ct venus 6 xc
+f50v_L12_s2	t venus 6 xc |>q2|2 t theta mm 10 a hz
+# notes: unsure: L01 first sign mm vs m and the lone 2 (q2|2); lb vs 8t for the double-loop sign (L01,L04,L07,L09); xs vs y; 8s vs 4s (L09-L11); z xc pair L09; large looped sign L07; =mm vs =mt L08; =n =o L06 bar signs; hz vs hbar; u vs n throughout (all written u); venus vs j for stem-q sign; overlaps approximate

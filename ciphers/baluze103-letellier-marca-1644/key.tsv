@@ -1,0 +1,88 @@
+# Le Tellier-Marca cipher, April-October 1644. Source: S. Tomokiyo, cryptiana.web.fc2.com/code/louisxiv0.htm, table image
+# louisxiv_0marca1644.png (fetched 6 Oct 2026, 72,190 bytes, sha1 bca557c67c045785c87fe0e8f1038c3f2df1ed4b -- byte-identical to
+# DECODE R2742 document 3821). Key source: published (credit Tomokiyo, built from the deciphered siblings f.171/189/200/230).
+# Cell ids: <plaintext letter><row>, row 1 = the numeral row of the table, rows 2-5 the graphic signs below it, top to bottom.
+# Sign names are this folder's ASCII names for Tomokiyo's drawn shapes (R7A-BAL103, 6 Oct 2026); flag=circ marks a sign
+# Tomokiyo circled and joined by his loop line (read here as: value uncertain or shared between columns).
+# code	meaning	cell	shape	flag
+10	a	a1	numeral 10	
+R	a	a2	R-like with crossbar	
+ct	a	a3	ct ligature	
+lb	a	a4	looped lb with stroke	
+11	b	b1	numeral 11	
+j	b	b2	hooked j / reversed-7	
+venus	b	b3	q/venus with cross	
+12	c	c1	numeral 12	
+xbar	c	c2	x crossed by a horizontal bar	
+tt	c	c3	struck double t	
+x	c	c4	plain x	
+13	d	d1	numeral 13	
+t	d	d2	t	
+xs	d	d3	x with extra stroke	
+14	e	e1	numeral 14	
+u	e	e2	u	
+theta	e	e3	theta (oval with bar)	
+bt	e	e4	b/t with hook	
+15	f	f1	numeral 15	
+xc	f	f2	curly x	
+g+	f	f3	g with cross	
+16	g	g1	numeral 16 (bracketed in table)	
+y	g	g2	y	
+inf	g	g3	infinity	
+17	h	h1	numeral 17	
+3	h	h2	3 (circled)	circ
+cap	h	h3	n-arch / cap	
+18	i	i1	numeral 18	
+mt	i	i2	m with tail	
+rho	i	i3	rho	
+9	i	i4	9	
+19	l	l1	numeral 19	
+sigma	l	l2	sigma / rotated 6	
+q2	l	l3	2-like with loop	
+hz	l	l4	h with z-tail (circled)	circ
+20	m	m1	numeral 20	
+o7	m	m2	crossed o joined to 7	
+b	m	m3	b	
+4s	m	m4	struck 4	
+21	n	n1	numeral 21	
+a	n	n2	a	
+8s	n	n3	struck 8	
+7s	n	n4	struck 7	
+22	o	o1	numeral 22	
+eps	o	o2	epsilon	
+delta	o	o3	delta / round d	
+H	o	o4	H with loop	
+23	p	p1	numeral 23	
+mm	p	p2	mm	
+tau	p	p3	tau / small c with bar	
+c	q	q2	c	
+9	r	r1	9 (circled)	circ
+z	r	r2	z with tail	
+f	r	r3	f	
+dt	r	r4	d with stroke	
+9	s	s1	9 (circled)	circ
+8	s	s2	8	
+7	s	s3	7	
+P	s	s4	P	
+m7	s	s5	m joined to 7	
+6	t	t1	6	
+8t	t	t2	8 with tail	
+gz	t	t3	g/z hook (circled)	circ
+5	u	u1	5	
+4	u	u2	4	
+m	u	u3	m	
+hbar	u	u4	h with bar (circled)	circ
+3	x	x1	3 (circled)	circ
+l	x	x2	looped l	
+n	y	y1	n	
+psi	z	z1	psi-like	
+=9	pour		overlined 9	
+=11	que		overlined 11	
+=12	qui		overlined 12	
+=26	vous		overlined 26	
+=32	Barcelone		overlined 32	
+=34	ambassadeur		overlined 34	
+=39	catalogne		overlined 39	
+=81	faire		overlined 81	
+=l+m	roy		overlined l + m	
+=n+o	Roine?		overlined n + o (Tomokiyo's query)	

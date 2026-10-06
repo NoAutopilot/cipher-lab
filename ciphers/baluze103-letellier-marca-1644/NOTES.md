@@ -1,6 +1,6 @@
 # BnF Baluze 103, f.50 — Michel Le Tellier (Secretary of War) to Pierre de Marca, governor of Catalonia, April 1644
 
-Status: open
+Status: partial
 Chéruel, Lettres du cardinal Mazarin t.1 (Dec 1642-June 1644, IA lettresducardin01maza) full text searched by this worker for "Marca" (5 Oct 2026): Marca appears only at p.628 note (his 1 Feb 1644 instruction as visiteur général), no Le Tellier letter and no decipherment of f.50; DECODE R2742 (key only, four empty TranscriptionsLists) and Tomokiyo's louisxiv0.htm ("f.50 (undeciphered)") read this session.
 Check-solved re-verdict D2-BAL103T, 5 Oct 2026 (section "Check-solved re-verdict (D2-BAL103T, 5 Oct 2026)" at the end). Earlier blocker
 (DECODE R2742's "Decrypted" status) resolved by D2-BAL103 and D2-BAL103T: R2742 holds the images and Tomokiyo's key table only.
@@ -317,3 +317,62 @@ Read so far: 0 of the f.50r-v cipher tokens (no transcription on disk, no readin
 - [ ] image-check: DECODE full-size images and Gallica native images both available; planned: line crops for the transcription passes
 - [ ] retry: nothing read yet, so nothing to re-derive; planned after the first decode (rule 7 --check)
 Verdict: keep going: 1 internal gap; cheapest next: transcribe f.50r-v (two blind passes on line crops + reconciliation) and apply Tomokiyo's 1644 table, calibrated on a sibling, ~$4
+
+## Transcription and key application (R7A-BAL103, 6 Oct 2026)
+
+Worker R7A-BAL103 (account 1, LANE LANE-RUN7-account-1), 01:47-02:0x UTC 6 Oct 2026 by `date -u`. Key source: **published**
+(S. Tomokiyo, cryptiana.web.fc2.com/code/louisxiv0.htm, table `louisxiv_0marca1644.png`, fetched this session: 72,190 bytes,
+sha1 bca557c6..., byte-identical to DECODE R2742 document 3821). Report what was found and where it was not found; novelty not
+classified (rule 10).
+
+What was done:
+- Images: Gallica btv1b9001389d f111 (f.50r) and f112 (f.50v) native 4864x6996, one request each (2 Gallica requests, >2 s apart),
+  kept in `images/` with `manifest.json`. Line crops by `tools/iiif_lines.py --image ... --debug` (overlays checked): f.50r 20 lines
+  (one 2450 px crop each), f.50v 12 lines (two 1700 px halves each, 200 px overlap; a first cut at 2450 px lost the right margin).
+  The recto heading reads "Du xx[?]e avril 1644" (date not settled; DECODE gives 15 Apr).
+- Key on disk: `key.tsv` (Tomokiyo's table as cell rows, this folder's ASCII names for his drawn shapes, his circled signs flagged
+  `circ`), `key_decode.tsv` (generated: one row per sign name; 9 = i|r|s and 3 = h|x as drawn in more than one column, graded M).
+  The sign naming is this worker's reading of Tomokiyo's drawing (`tx/key_sheet_3x.png`); several drawn shapes are close (x / xc /
+  xs / xbar; m / mt / mm; b / bt; venus / P) and are the main source of pass disagreement.
+- **Calibration on a deciphered sibling (f.171/189/200/230): not run** (cap). So the table's cell values are applied as published,
+  untested here against a period decipherment.
+- Two blind Sonnet passes per page (`tx/PASS_INSTRUCTIONS.md`; raw `tx/f50[rv]_pass[AB].tsv`, normalised by `tx/prep_passes.py`),
+  aligned by `tools/reconcile_passes.py`: f.50r 275/392 columns = **70.2%** (after relabelling pass B's swapped rows L11/L12, checked
+  on the overlay), f.50v 208/248 = **83.9%**. **The 157 disagreement columns were NOT settled from the image** (cap): the draft keeps
+  pass A's (or the majority) sign at M. Clear French among the cipher on f.50v ("et tous", "de faire", "a quoy") is dropped by the
+  reconciler and not in the reading.
+- Decode: `decode.json` + `tools/decode_key.py . --check` -> `reading.txt`, `reading_tokens.tsv`. Tokens 640: **H 402, C 0, S 0,
+  M 228, I 0, U 10**. Grade H here means "agreed by both blind passes and read from the published key"; with the table uncalibrated and
+  the transcription unreconciled, treat every H as conditional (rule 4). No H token is from a period decipherment of this leaf.
+- Readable-looking runs in the draft (worker's sense check of the letter-level output, not graded separately): f.50r L09 "que le dit",
+  L18 "de Barcelone" (overlined code 32), L20 "ainsi qu'il pretend" (as "ainse qui l pretend"), f.50v L06 "a quoy" + overlined n o
+  (Tomokiyo's queried "Roine"). Most lines do not yet read; the ambiguous 9 (i/r/s) is resolved to its first value (i) in the
+  judge input, which alone costs many words.
+
+Judge (`tools/judge_plaintext.py specs/baluze103-letellier-marca-1644.json --file <letters of reading.txt, first value of each a|b>`),
+corpus **fr17** (French letters 1617-1642, era- and register-matched):
+
+    FAIL language: score=-1.595, null_p99=-1.873, real_p05=-0.901, real_median=-0.785, mode=both, N=669
+    FAIL - baluze103-letellier-marca-1644 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+The draft scores above the shuffled null's p99 but far below real-prose p05: the key is plausibly right in part and the draft is not
+a reading. Not a negative on the key: no matched control was run (a control here would be a fr17 text enciphered with this table,
+transcribed with the same 70-84% agreement), and the transcription is unreconciled.
+
+Where not found: no plaintext of f.50 used or consulted; Tomokiyo's sibling decipherments not opened.
+Requests: gallica.bnf.fr 2 (IIIF native images); cryptiana.web.fc2.com 1 (key PNG).
+
+## Remaining gaps (R7A-BAL103, 6 Oct 2026)
+Read so far: unmeasured as a reading -- 402 of 640 draft tokens agree across two blind passes and key to one letter, but the judge FAILs (fr17 -1.595 vs real_p05 -0.901) and no stretch has been verified
+- f.50r-v transcription disagreements (157 columns) - blocker: not-attempted; the two blind passes are aligned (tx/rec_r, tx/rec_v disagreements.tsv + uncertain.tsv) but not settled from the crops; next: one reconciliation pass over the listed columns per page with the crops, choosing among the passes' signs with the key and French sense as tie-breaker, then decode_key --check and re-judge, ~$3
+- Tomokiyo table calibration - blocker: not-attempted; the table's sign names and the ambiguous 9 (i/r/s) and 3 (h/x) were not tested on a deciphered sibling; next: transcribe 3-4 lines of f.171 (or f.189) with its period decipherment from Gallica btv1b9001389d and check the table cell by cell, ~$2
+
+## Escalation (R7A-BAL103, 6 Oct 2026)
+- [ ] siblings: f.171, f.189, f.200, f.230 carry period decipherments (Tomokiyo; DECODE R2743-R2746); planned: calibrate the table on a few lines of one of them
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's 1644 table applied to the two-pass draft of f.50r-v (R7A-BAL103, 6 Oct 2026); judge fr17 FAIL -1.595, above null
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: a published key exists, so no statistical rebuild is needed before applying it
+- [ ] image-check: crops cut and two blind passes done; planned: settle the 157 disagreement columns from the crops
+- [ ] retry: planned after the reconciliation (decode_key --check, re-judge with fr17)
+Verdict: keep going: 2 internal gaps; cheapest next: reconcile the 157 disagreement columns from the crops and re-decode, ~$3

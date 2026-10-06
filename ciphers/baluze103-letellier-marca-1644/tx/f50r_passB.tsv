@@ -1,0 +1,23 @@
+f50r_L01	=19 u mt 12 delta a 9 theta mt hz 6 14 9 7 13 u 6 10
+f50r_L02	venus|P f xc|f u 14 19 delta a y u 10 u ct 21 6 P 23 xs|x
+f50r_L03	7 eps|delta a y t u 81 mm 9 14 c hz|mm f u t m a 6
+f50r_L04	10 H xbar b|bt theta|o7 venus f u 10 delta a hz u 9 6 14 22
+f50r_L05	xbar theta 12 3 eps mt 7 6 f ?{curl like q} ct b mm P 9 delta a t mt delta
+f50r_L06	venus theta mt 9 6 xbar theta =y =3 =12 10 t 9 hz hz 20 u 23
+f50r_L07	m 10 delta u theta H 22 P 14 a mt b|bt 8 hz 9 14 18 7
+f50r_L08	ct delta 21 u hz m theta hz 6 u b u delta 6 t b|bt hz mm m 6 xbar|a b|bt
+f50r_L09	=11 19 theta t mt 6 9 q u m xs theta|o7 venus 9 f xs 10 15 14
+f50r_L10	eps hbar xs 18 9 ct 13 u u theta =11 12 22 a 6 P theta y 13
+f50r_L12	13 u hz mm xs delta m 9 delta 4 =11 P 6 n 14 a mt delta 2 9
+f50r_L11	6 u 9 t u mt m theta 9 a 17 b|bt 9 =11 P 19 xs theta u b|bt
+f50r_L13	xs eps a hz venus theta 9 6 mt b 14 t u m xc q z|xs 6 P y xs delta f l
+f50r_L14	6 u t q 6 9 H venus 9 u mm 10 xc 15 mt a =11 18 19
+f50r_L15	m 9 u a delta theta y ct delta t u 14 8s y b|bt 9 14 6 mm
+f50r_L16	23 10 7 c u d t u mt hz venus mm 6 theta 9 m 10 9 delta 22
+f50r_L17	12 14 hz m 2 =12 g+ 10 mt 6 q u ct xc 15 venus P
+f50r_L18	t u =32 7 theta 9 6 23 6 venus mt a t m 19 m 9 q u
+f50r_L19	x delta 18 7 xs b|bt u u =11 delta a 22 4 m 9 theta venus =3
+f50r_L20	10 18 a 8 u =12 19 23 f 14 6 u a 13 hz xc m 9 19
+# notes: L01 first sign over 19 barred? low confidence; many hz vs hbar, xs vs xbar vs x, b vs bt, venus vs P, curly-q-like signs (L05, L13) and "22" vs eps; "m" vs "nn" runs; 2 without key entry (L11, L13, L17 "2"=q2?); g+ L17; z|xs L13. Roughly 45 uncertain signs.
+
+# R7A-BAL103 reconciler, 6 Oct 2026: rows L11 and L12 relabelled (pass wrote them swapped; checked against images/f50r_lines_debug.jpg)

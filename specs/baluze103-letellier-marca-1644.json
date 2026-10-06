@@ -1,0 +1,16 @@
+{
+ "slug": "baluze103-letellier-marca-1644",
+ "name": "Michel Le Tellier to Pierre de Marca, [2x] April 1644, BnF Baluze 103 f.50r-v (Gallica btv1b9001389d f111-f112; DECODE R2742)",
+ "date": "April 1644",
+ "language_candidates": ["fr"],
+ "ciphertext_source": "ciphers/baluze103-letellier-marca-1644/ciphertext.tsv (R7A-BAL103, 6 Oct 2026: two blind Sonnet passes per page on tools/iiif_lines.py crops, aligned by tools/reconcile_passes.py, disagreements unsettled at M); 640 sign tokens",
+ "alphabet": "homophonic: numerals 3-23 and about 60 graphic signs, plus overlined nomenclator codes (Tomokiyo's 1644 table)",
+ "design": "homophonic substitution + small nomenclator; key published (Tomokiyo, louisxiv0.htm; DECODE R2742 doc 3821)",
+ "constraints": ["key published; this is key application, not cryptanalysis", "Tomokiyo's table not calibrated here on a deciphered sibling (f.171/189/200/230)"],
+ "cheap_tests_in_order": ["1. apply Tomokiyo's table to a two-pass transcription and judge with fr17 (R7A-BAL103, 6 Oct 2026)"],
+ "judge": {
+  "language": "fr17",
+  "era_note": "fr17 = Richelieu (Avenel III, VI), Peiresc I-II, Chapelain I: French letters 1617-1642, era- and register-matched for a 1644 ministerial letter"
+ },
+ "written": "6 Oct 2026, R7A-BAL103 (account 1)"
+}
