@@ -1,4 +1,4 @@
-open
+solved
 Havemann's standard 3-vol. Göttingen edition, vol. 2 (1855, IA bub_gb_V2MAAAAAcAAJ, opens with the Stiftsfehde 1519-23) grepped in full by GAPS125 (3 Oct 2026): no cipher term, neither letter named, positive controls present; the earlier greps (csDA2, GF-A2-7) read the 1837-38 Lüneburg 2-vol. work (IA 10019400bsb), where the feud sits in vol. 1 -- also negative. GAPS129 (3 Oct 2026): Stanelle 1982 (Books index, phrase-controlled) has no cipher term; Wallstein 2025 has no secret-correspondence chapter, but its index places Bückeburg at p. 112 in Bei der Wieden's Schaumburg chapter -- next read. GAPS133 (3 Oct 2026): the Wallstein volume is not open access (DNB print record, no licence; publisher sells print and PDF), so p. 112 is a library or purchase read.
 
 # Two enciphered letters of Heinrich der Jüngere, Herzog von Braunschweig-Lüneburg — NLA Bückeburg
@@ -461,3 +461,26 @@ verifier (N-class, depth, key source `period`). Flagged in ROOM for a verifier.
 
 Next (named, not run): transcribe the clear Low German text of 548 f.269r and 562 f.56 so the cipher words can be read in context
 (~2 Sonnet passes per letter on the same crops' full lines + 1 reconciliation, ~6); then the verifier.
+
+## R9-NLAV: verifier (6 Oct 2026, account 2, LANE-RUN9)
+
+Run 05:56-06:04 UTC by `date -u`; a separate session from R9-NLATX and R9-NLACS. Full record in AUDIT.md.
+
+- **Class N0** for both items (Grein's 1858/1860 key sheets and word lists in the same files; no print located). Key source:
+  `archival` -- a 19th-century archivist's decipherment, credited, not of the time and not printed (status.json `key`); the
+  "period key" wording above (R9-NLACS, R9-NLATX) is corrected to that. H grades stand (read from a key source).
+- **Circularity correction:** "18/18, 11/12 words" includes 23 M numbers settled by a key-aware reconciliation. On H tokens alone:
+  166/167 letters and 13/14 zero-M words agree with Grein's list (shuffled-key control on the same numbers: p95 0.24). Quote the
+  headline only with this split. The agreement checks our transcription against Grein's reading; it does not test his key.
+- **Depth D2** (87.9% H: 167/190; 548 83.2%, 562 93.3%); not D3 until the clear text is transcribed and the cipher words are read
+  in their sentences. `python3 tools/depth_check.py` (exit 0): "unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted
+  D0/D1: 13; legacy ungraded: 0" (this N0 row is not a unique solve, by class).
+- **Status `solved`** (line 1): not `found-solved`, which needs a print (README F0-F2); N0 with the decipherment in the file is
+  `solved` by the clair1067 / clair1108 / antt-fcc-costacabral-1865 precedent. The decipherment is Grein's; no sentence says this
+  project deciphered the letters.
+- Corrections: Nr. 562 is Schepper's letter (wrapper and signature), not Heinrich's -- the title line over-states "Two enciphered
+  letters of Heinrich"; IA full text does index at least one ZHVN volume (`zhv1919`), contrary to R9-NLACS's note.
+- Pointers (not gaps of this target): Grein's list 2 ("an den Drosten") is a letter outside f.267-270 of Nr. 548, elsewhere in
+  I Ca 30 Bd. 1; the clear text of both letters (~6, named by R9-NLATX) would lift depth toward D3; a JSTOR phrase row and the
+  Schaumburg journals would settle N1 vs N0 only if a print exists.
+- `decode_key.py --check` and `compare_grein.py --check` exit 0 (reading unchanged). No SECOND-OPINIONS row (N0).

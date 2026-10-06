@@ -3879,6 +3879,35 @@
       "audit_refs": [
         "fr3993-gonzague-nevers-1595/AUDIT.md '## AUDIT 2 (VER1-REG, 5 Oct 2026)'"
       ]
+    },
+    {
+      "date": "6 Oct 2026",
+      "kind": "recovery",
+      "key": "archival",
+      "title": "NLA Bückeburg L 1 Nr. 548 (Heinrich d. J. to Countess Anna, 1519) and Nr. 562 (K. Schepper, Trier, 8 Aug 1522): in-line numeral cipher words read with the archive's own 1858/1860 key sheets (Dr. Grein)",
+      "grade": "N0 (AUDIT.md, verifier R9-NLAV, 6 Oct 2026); key archival (Grein's 19th-c. key sheets and word lists in the same files, credited, not of the time, not printed); H 167, M 23 of 190 numbers; H-only agreement with Grein's list 166/167 letters, 13/14 words (shuffled-key control p95 0.24); decode_key.py --check and compare_grein.py --check exit 0",
+      "line": "Both files carry an archivist's key sheet and word list signed Dr. Grein (1858, 1860); applying those keys to our transcription of the numeral groups reproduces 29 of his 30 listed words (lant/land). The decipherment is the archive's, not ours; no printing of it was located (search log in AUDIT.md). The clear Low German text of the letters is not yet transcribed.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/nla-heinrich-braunschweig-1519",
+      "document_id": "NLA BU L 1 Nr. 548 f.269r; NLA BU L 1 Nr. 562 f.56",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "167/190",
+      "unresolved_spans": "23 numbers M (settled by a key-aware reconciliation); clear text untranscribed; Grein's list 2 (letter to 'den Drosten') belongs to a letter outside f.267-270",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict' (R9-NLAV)"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "nla-heinrich-braunschweig-1519/AUDIT.md sections 1, 2, 5; H 167, M 23 of 190",
+      "depth": "D2",
+      "depth_pct": 87.9,
+      "depth_sentence": "In the 1522 Trier letter the enciphered words concern the 'regimente' (government), its 'vorlatinge'/'vorlassinge' (relinquishing), 'sonen' (sons) and the 'landtschop' (estates of the land), the matter the archive's wrapper summarises as the duke's intentions about resuming the government.",
+      "depth_check": "archivist's word list (Grein 1858/1860) agrees 166/167 H letters, 13/14 zero-M words, shuffled-key control p95 0.24; shares Grein's key, so checks our transcription, not the key; not D3: cipher words not yet read in their clear-text sentences (R9-NLAV 6 Oct 2026)",
+      "depth_by": "R9-NLAV",
+      "depth_date": "6 Oct 2026",
+      "decode_status": "Partially decrypted"
     }
   ],
   "lanes": [
