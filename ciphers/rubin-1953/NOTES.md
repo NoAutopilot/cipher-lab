@@ -291,3 +291,15 @@ Hosts: none (offline). Subagents: 0.
 ## Next step (R9-RUBIN4, 6 Oct 2026)
 
 next: the cheap tests in `specs/rubin-1953.json` are all run (1-3; test 2's print check of Bauer's *Unsolved!* for a published transcription or reading is listed in the spec but its cheap_test_done "2" holds the masc run instead -- check whether the Bauer print check itself was ever run before any further cryptanalysis; ~$1, agent). Block C under a keyed second layer is too short to test with a control that reads.
+
+## Bauer print check (R11-RUBBAU, 6 Oct 2026)
+
+Question (R9-RUBIN4's next): was the Bauer, *Unsolved!* (2017), Rubin chapter ever checked for a published transcription or reading? Answer from the folder and ROOM.md: only as one Google Books snippet call (GF4-BATCH17, 3 Oct 2026, section "Web and blog check"); spec `cheap_test_done` "2" is the masc run, so test 2's print check had no entry (label corrected in the spec as `2_note`).
+
+Run now (snippet searches only; no page was read, no loan taken):
+- Google Books API (`country=US`, keyed, 6 calls): volume l8iXDwAAQBAJ (*Unsolved!*, 2019 pbk, PARTIAL view) answers the Rubin/Conant/Dulles query with a snippet from the chapter (p.300: the FBI cryptanalyst's account, DULLES / FEBRUARY 1953 / CONANT lines of the reproduced slip). Queries for `fodroscolmn`, `frodoscolmn`, `inauthor:Bauer intitle:Unsolved Rubin cipher` and "null letters ... pronounceable" returned 0 hits; `"Ulley-Dulles"` returned only unrelated volumes (Dept of State Bulletin 1956 etc.).
+- Internet Archive: advancedsearch finds `unsolvedhistorym0000baue` (Bauer, *Unsolved!*, 2017; 1 request). be-api full-text search inside that item (7 requests): index entry "Rubin, Paul Emanuel, 289-304, 546n97"; "Rubin, Bessie, 294-297"; snippets on the Dulles/Conant names, the FBI contact, "died under circumstances presently unknown", and Bauer's "...the Rubin cipher as the greatest challenge he faced. At least I presume it was the Rubin cipher." The queries "Rubin message recovered", "Rubin solution unsolved", "Rubin Philadelphia Morse", "fodroscolmn" and "Ulley-Dulles" returned no hit in the book.
+- What is shown: the chapter runs pp.289-304 (notes 546n97) and reproduces the slip; the snippets show no plaintext reading and no decipherment claim. What is not shown: the full chapter text (pages are not readable from the cloud: the IA copy is lending-only and the borrowed page images are obfuscated, CLAUDE.md access playbook), so the chapter's closing paragraphs and any partial reading in prose are unread. A snippet search with no hit is a search result, not a statement about the chapter.
+- Requests: googleapis.com/books 6; archive.org advancedsearch 1; be-api.us.archive.org 7 (all >= 2 s apart, no 429/403).
+
+Remaining unread piece: pp.289-304 of Bauer in full, owner-side only (reader view of the IA loan, a person's eyes); not queued here (no ASKS/LOCAL-QUEUE row written; probe not needed, the block is the documented obfuscation).
