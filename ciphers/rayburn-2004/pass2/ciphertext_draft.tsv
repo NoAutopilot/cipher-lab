@@ -1,0 +1,86 @@
+line	position	sign	confidence	alt	why
+main01	1	W	M		agree-flagged
+main01	2	j	M		agree-flagged
+main01	3	u	M	B:u/v	differ
+main01	4	P	H		agree
+main01	5	D	H		agree
+main01	6	X/Y(star-like)	M	A:-	gap
+main02	1	a	L		agree-flagged
+main02	2	X	M		agree-flagged
+main02	3	o	M		agree-flagged
+main02	4	R	H		agree
+main02	5	w	M		agree-flagged
+main02	6	i	M	B:I/i	differ
+main02	7	s	M	B:S	differ
+main03	1	M	H		agree
+main03	2	rn	M	B:m	differ
+main03	3	g	M		agree-flagged
+main04	1	H	M		agree-flagged
+main04	2	k	M		agree-flagged
+main04	3	e	M		agree-flagged
+main04	4	I-bold	M	B:E	differ
+main04	5	B	H		agree
+main04	6	f	M		agree-flagged
+main04	7	e	M		agree-flagged
+main04	8	#	M	A:-	gap
+main05	1	X	M		agree-flagged
+main05	2	n	M	A:-	gap
+main05	3	L	M		agree-flagged
+main05	4	o	M		agree-flagged
+main05	5	Y	M	A:-	gap
+main05	6	y/x	M	B:u/v	differ
+main05	7	u	M	B:I	differ
+main05	8	I-bold2	M	B:h/H	differ
+main06	1	w	M	B:W/m	differ
+main06	2	A	M		agree-flagged
+main06	3	z	M		agree-flagged
+main06	4	Q	M		agree-flagged
+main06	5	Y/V	M	A:-	gap
+main06	6	Y	M	B:k	differ
+main07	1	b	M	B:t/+	differ
+main07	2	U	H		agree
+main07	3	kr	M	B:k	differ
+main07	4	cross/t	M	B:t	differ
+main07	5	P	H		agree
+main07	6	s	M		agree-flagged
+main07	7	q	M		agree-flagged
+main08	1	Am	M	B:A	differ
+main08	2	c	M	B:c/r	differ
+main08	3	Z	M		agree-flagged
+main08	4	f	M	A:-	gap
+main08	5	i	M		agree-flagged
+main08	6	Y	M		agree-flagged
+main08	7	Z	M	B:z	differ
+main08	8	D	M		agree-flagged
+main09	1	C	M	A:-	gap
+main09	2	RH	M	B:R	differ
+main09	3	V	M		agree-flagged
+main09	4	h	M		agree-flagged
+main09	5	X	M	A:-	gap
+main09	6	a	M	A:-	gap
+main09	7	Z	M	A:-	gap
+main10	1	E	M		agree-flagged
+main10	2	f	M	B:f+r(below)	differ
+main10	3	b	M		agree-flagged
+main10	4	d	M		agree-flagged
+main10	5	av	M	B:a+v(below)	differ
+main10	6	a	M		agree-flagged
+main10	7	r	M	B:-	gap
+main10	8	O	M		agree-flagged
+left	1	p	M	B:p/P	differ
+left	2	pct(%)	M	B:%	differ
+left	3	K	M		agree-flagged
+left	4	4/h7	M	B:4/H	differ
+left	5	p-loop	M	B:P/q-like	differ
+left	6	d-loop	M	B:@	differ
+left	7	Y-tail	M	B:h/n	differ
+left	8	K*	M	B:asterisk/star	differ
+right	1	X-cross	M	B:X	differ
+right	2	amp(&)	M	B:8	differ
+right	3	hash(#)	M	B:#/H	differ
+right	4	N	M	B:Z	differ
+right	5	K	M	B:V	differ
+right	6	H-hash	M	B:#/H	differ
+right	7	3	M		agree-flagged
+right	8	2/	M	A:-	gap
+right	9	dot-	M	B:O/Q	differ

@@ -120,18 +120,62 @@ handwritten word beside right-margin row 2 (`amp(&)`), looks like "Approved"/"Ap
 friend's; a second blind pass should decide whether it is a cipher token.
 Requests: web.archive.org 2 (both reset), archive.org 1 (429), www.schneier.com 2 (page, 850px image), all >= 2 s apart.
 
-## Remaining gaps (D2B-RAY, 5 Oct 2026)
-Read so far: nothing read; 74 tokens transcribed in one blind pass (bRAY); copy condition mapped (7 margin tokens border white-out, 0 main-grid tokens).
-- 2006 Wayback capture of the post and image - blocker: not-attempted; web.archive.org reset / archive.org 429 on 5 Oct 2026, low value now that the 2006 upload matches our file byte for byte; next: one retry from a later session, ~$0.2
-- Second blind transcription pass (K=59 unsettled; vertical word beside right-margin row 2 not classed) - blocker: not-attempted; K and the margin word need an independent eye; next: one crop-scoped blind pass + reconciliation, ~$1.5
-- Tests 2 and 3 of specs/rayburn-2004.json (diagram layout; matched homophonic/keyboard judge with control) - blocker: not-attempted; waits on the second pass settling K; next: test 2, ~$1
+## Second blind pass, reconciliation and test 2 (R8-RAY2, account 2, 6 Oct 2026)
 
-## Escalation (D2B-RAY, 5 Oct 2026)
+Crops (mandatory step, pasted): `python3 tools/iiif_lines.py --image ciphers/rayburn-2004/images/Rayburn-Cryptogram.jpg
+--out <scratch>/crops --prefix main --region 125,30,632,740 --centres 38,98,170,228,300,382,452,522,585,655 --debug`
+(autodetection split sloped rows, so centres were given by eye and checked on the debug overlay), plus three PIL crops
+(left margin x 40-130, right margin x 680-850, bottom circle). One blind Sonnet pass on those 13 crops only
+(`pass2/passB_raw.tsv`); `tools/reconcile_passes.py pass2/passA.tsv pass2/passB.tsv` (pass A = ciphertext.tsv as is):
+agreement 40/85 aligned columns = 47.1% (7 agreed-H, 33 agreed-uncertain, 45 disagreements; per line 0.29-0.75 in the
+grid, 0.11-0.13 in the margins). `pass2/disagreements.tsv`, `agreement.tsv`, `ciphertext_draft.tsv` hold the detail.
+All 7 white-out-adjacent margin tokens (copy_condition.tsv) are among the flagged columns: pct/% and hash/#H agree in
+substance, the other five (`4/h7`, `d-loop`/@, `K*`/asterisk, `amp(&)`/8,
+`H-hash`/#H) differ in identity.
+Reconciliation by the worker from the image (`pass2/reconciled.tsv`, every token grade M, source column says which
+passes back it):
+- Pass A misses six main-grid tokens: row 5 `n` (2nd), row 8 `f` (4th), row 9 `C`, `X`, `a`, `Z` (row 9 has 7 tokens,
+  not 3). Pass B misses row 10 `r`. ciphertext.txt is left as transcribed (rule 2); the reconciled grid is
+  W j u P D / a X o R w i s / M m g / H k e E B f e / X n L o Y u I / w A z Q Y / b U k+r t P s q / A+m c Z f i Y z D /
+  C R+H V h X a Z / E f b d a+v a r O. Composites (a small sign under a letter): k+r, A+m, R+H, a+v.
+- Reconciled N = 80 (64 grid + 8 left + 8 right), matching Schmeh's "about 80 characters"; K = 58 case-sensitive.
+- Margins: every margin symbol has a short vertical stroke on its left, where grid symbols have a horizontal line --
+  consistent with the margin columns having been written with the sheet turned 90 degrees, the vertical stroke playing
+  the underline. Read that way, the two `K`-looking signs (left 3, right 5) are a `<` beside its line, i.e. a turned `V`
+  (pass B read right 5 as V). Not settled: identities of the margin signs under rotation.
+- The vertical word beside right-margin 2: pass B read "Append", pass A's note "Approved/Appeared"; both treat it as a
+  note, not a cipher token. Excluded from N.
+- The circled mark below the grid: `d` or `8` (pass B), `d`/`cl` (pass A); excluded from N as before.
+
+Test 2 (spec: diagram hypothesis), pre-registered in `pass2/PREREG-test2.md` (pushed 7139aa956 before the run), script
+`pass2/test2_case_mark.py`, output `pass2/test2_result.txt`. Schmeh's mechanism (each object underlined or crossed out
+after an action) predicts the mark is independent of the label's form. On the blind pass-B marks and case as written:
+| set | N letters | A (capital-U or lower-S) | permutation control mean | control p95 | p |
+|---|---|---|---|---|---|
+| primary, all grid letters | 60 (31 upper, 29 lower) | 0.867 | 0.499 | 0.600 | <0.0001 |
+| secondary, case not size-only | 35 | 0.914 | 0.499 | 0.629 | <0.0001 |
+Gate (A >= 0.85 and p < 0.01): case-mark coupling supported. The 8 exceptions are mostly letters whose case is judged by
+size (j U, o U, S S, Y S twice, Z S) plus f U and an edge-fragment D. Reading: the underline/strike is largely a case
+marker (capitals underlined, lower case struck), so it adds little per-object information; this takes away the main
+support for the "crossed out after an action" form of the diagram hypothesis. It does not exclude a list or diagram of
+another kind (Bourdeau's password-list reading), and it does not show running text. Layout, descriptive only: ten
+left-aligned rows of 3-8 signs with ragged right ends, plus two margin columns -- the shape of written lines or a list,
+not of a grid tableau. Spec test 3 (homophonic/keyboard judge with matched control) is the next test; the case marking
+means the effective alphabet may be case-folded (K about 40 when folded), which test 3's control should match.
+Requests: none (all local). Grades: 0 H, 0 C, 0 S read tokens; nothing read.
+
+## Remaining gaps (R8-RAY2, 6 Oct 2026)
+Read so far: nothing read; 80 tokens reconciled from two blind passes (grade M); test 2 run (mark = case marker, p<0.0001 vs permutation control).
+- 2006 Wayback capture of the post and image - blocker: not-attempted; low value since the 2006 upload is byte-identical to our file; next: one retry from a later session, ~$0.2
+- Margin sign identities under the rotated-writing reading (8+8 signs) - blocker: not-attempted; needs an eye pass on the margin crops turned 90 degrees; next: one Sonnet pass on rotated margin crops + reconciliation, ~$1.5
+- Test 3 of specs/rayburn-2004.json (homophonic/keyboard judge, matched control at N=80, case-folded and case-sensitive K) - blocker: not-attempted; test 2 only ran this session; next: test 3 with family_run.py homophonic, ~$2.5
+
+## Escalation (R8-RAY2, 6 Oct 2026)
 - [x] siblings: none; a single sheet, original with the family/police (Premise check)
 - [x] clear-pages: none; the suicide note's text is quoted in the Schneier thread and gives no crib
 - [x] known-keys: none exists; no decipherment located (Verdict, 3 Oct 2026)
 - [x] print: Schneier thread, Bauer snippet, Cipherbrain, blogs, solver repos (GF4-BATCH18)
-- [ ] key-rebuild: not applicable until tests 2-3 say whether there is a substitution to rebuild
-- [ ] image-check: done 5 Oct 2026 (copy condition, this file); not done: second blind pass
+- [ ] key-rebuild: not applicable until test 3 says whether there is a substitution to rebuild
+- [x] image-check: copy condition mapped 5 Oct 2026; second blind pass and reconciliation done 6 Oct 2026
 - [ ] retry: Wayback capture, once, later session
-Verdict: keep going: 3 internal gaps; cheapest next: Wayback retry ~$0.2, then second blind transcription pass ~$1.5, then test 2 ~$1
+Verdict: keep going: 3 internal gaps; cheapest next: test 3 (homophonic judge at N=80 with matched control) ~$2.5, then rotated margin pass ~$1.5

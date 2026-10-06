@@ -34,6 +34,14 @@
    "method": "fetched Rayburn-Cryptogram.jpg (scienceblogs.de, 1 request, HTTP 200), blind one-pass transcription recording symbol identity, position and mark state (underline/strikethrough/overline) separately; wrote ciphers/rayburn-2004/{ciphertext.txt,ciphertext.tsv}; computed IC against a matched English control (same N) and a matched uniform-random control (same N and K)",
    "result": "N=74 tokens (58 main grid + 8 left-margin + 8 right-margin), K=59 distinct type ids; target IC 0.0056 vs English control mean 0.0618 [0.0311,0.0911] vs uniform-random control mean 0.0171 [0.0115,0.0255] (expected ~1/K=0.0169) -- target below both control ranges, consistent with Schmeh's near-hapax observation and either a high-homophone cipher or non-linguistic content; rules out plain monoalphabetic substitution on frequency grounds, does not decide between the diagram hypothesis and a homophonic cipher",
    "cost": "see LANE B3 ledger (orchestrator reads get_session, not self-reported)"
+  },
+  {
+   "test": 2,
+   "date": "6 Oct 2026",
+   "worker": "R8-RAY2 (LANE LANE-RUN8-account-2)",
+   "method": "second blind transcription pass (one Sonnet pass on 13 crops cut with tools/iiif_lines.py --centres, never the full sheet) reconciled with pass A by tools/reconcile_passes.py; then the diagram hypothesis's mark mechanism tested: does letter case predict underline vs strike? Pre-registered (ciphers/rayburn-2004/pass2/PREREG-test2.md, pushed 7139aa956 before the run), blind pass-B marks and case as written, control = 10,000 permutations of the marks over the same tokens",
+   "result": "case-mark coupling supported by the pre-registered gate: primary N=60 letters, A=0.867 (capital-underlined or lower-case-struck) vs permutation control mean 0.499, p95 0.600, p<0.0001; secondary (case not size-only, N=35) A=0.914 vs 0.499/0.629. The mark is largely a case marker, not an independent per-object state; this removes the main support for Schmeh's 'crossed out after an action' mechanism but does not exclude a diagram or list of another kind. Transcription: passes agree 40/85 aligned columns (47.1%); pass A (ciphertext.txt) misses 6 main-grid tokens (row 5 'n', row 8 'f', row 9 'C X a Z'); reconciled N=80 (64 grid + 16 margin), K=58 case-sensitive, all grade M",
+   "cost": "see LANE RUN8 account-2 ledger (orchestrator reads get_session)"
   }
  ],
  "judge": {

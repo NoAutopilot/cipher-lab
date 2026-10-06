@@ -1,0 +1,34 @@
+line	col	A	B	flagged	crop	both_conf
+main01	1	W	W	B		A:H/B:M
+main01	2	j	j	B		A:H/B:M
+main02	1	a	a	B		A:H/B:L
+main02	2	X	X	B		A:H/B:M
+main02	3	o	o	B		A:H/B:M
+main02	5	w	w	B		A:H/B:M
+main03	3	g	g	B		A:H/B:M
+main04	1	H	H	B		A:H/B:M
+main04	2	k	k	B		A:H/B:M
+main04	3	e	e	B		A:H/B:M
+main04	6	f	f	B		A:H/B:M
+main04	7	e	e	B		A:H/B:M
+main05	1	X	X	B		A:H/B:M
+main05	3	L	L	AB		A:M/B:M
+main05	4	o	o	B		A:H/B:M
+main06	2	A	A	B		A:H/B:M
+main06	3	z	z	B		A:H/B:M
+main06	4	Q	Q	B		A:H/B:M
+main07	6	s	s	B		A:H/B:M
+main07	7	q	q	B		A:H/B:M
+main08	3	Z	Z	B		A:H/B:M
+main08	5	i	i	B		A:H/B:M
+main08	6	Y	Y	B		A:H/B:M
+main08	8	D	D	B		A:H/B:M
+main09	3	V	V	B		A:H/B:M
+main09	4	h	h	B		A:H/B:M
+main10	1	E	E	B		A:H/B:M
+main10	3	b	b	B		A:H/B:M
+main10	4	d	d	B		A:H/B:M
+main10	6	a	a	B		A:H/B:M
+main10	8	O	O	B		A:H/B:M
+left	3	K	K	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/leftmargin.jpg	A:H/B:M
+right	7	3	3	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg	A:H/B:M

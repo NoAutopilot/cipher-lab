@@ -1,0 +1,2 @@
+primary (all letters): N=60 upper=31 lower=29 A=0.867 control mean=0.499 p95=0.600 p=0.0000
+secondary (case not size-only): N=35 upper=17 lower=18 A=0.914 control mean=0.499 p95=0.629 p=0.0000

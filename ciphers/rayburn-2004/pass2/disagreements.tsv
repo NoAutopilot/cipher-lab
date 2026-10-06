@@ -1,0 +1,46 @@
+line	col	A	B	flagged	crop
+main01	3	u	u/v	B	
+main01	6	-	X/Y(star-like)	B	
+main02	6	i	I/i	B	
+main02	7	s	S		
+main03	2	rn	m	AB	
+main04	4	I-bold	E	B	
+main04	8	-	#	B	
+main05	2	-	n	B	
+main05	5	-	Y	B	
+main05	6	y/x	u/v	AB	
+main05	7	u	I	B	
+main05	8	I-bold2	h/H	B	
+main06	1	w	W/m	B	
+main06	5	-	Y/V	B	
+main06	6	Y	k	B	
+main07	1	b	t/+	B	
+main07	3	kr	k	AB	
+main07	4	cross/t	t	AB	
+main08	1	Am	A	AB	
+main08	2	c	c/r	B	
+main08	4	-	f	B	
+main08	7	Z	z	B	
+main09	1	-	C	B	
+main09	2	RH	R	AB	
+main09	5	-	X	B	
+main09	6	-	a	B	
+main09	7	-	Z	B	
+main10	2	f	f+r(below)	B	
+main10	5	av	a+v(below)	AB	
+main10	7	r	-		
+left	1	p	p/P	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/leftmargin.jpg
+left	2	pct(%)	%	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/leftmargin.jpg
+left	4	4/h7	4/H	AB	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/leftmargin.jpg
+left	5	p-loop	P/q-like	AB	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/leftmargin.jpg
+left	6	d-loop	@	AB	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/leftmargin.jpg
+left	7	Y-tail	h/n	AB	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/leftmargin.jpg
+left	8	K*	asterisk/star	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/leftmargin.jpg
+right	1	X-cross	X	AB	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg
+right	2	amp(&)	8	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg
+right	3	hash(#)	#/H	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg
+right	4	N	Z	AB	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg
+right	5	K	V	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg
+right	6	H-hash	#/H	AB	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg
+right	8	-	2/	B	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg
+right	9	dot-	O/Q	AB	/tmp/claude-0/-home-user-cipher-lab/8dea5bb9-cedd-5fa7-bb27-96dc23d83268/scratchpad/crops/rightmargin.jpg
