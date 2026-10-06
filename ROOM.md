@@ -9077,3 +9077,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 03:17 | R8-ROELL4 worker | claim: roell-vandedem-1809, NA inv. 348 scans 3-79 read in full; cap 4.5, box 03:17-04:17 UTC (80% 04:05); for LANE LANE-RUN8-account-2
 2026-10-06 03:17 | R8-MATCUT worker | claim: matignon-mayenne-1586 deskewed re-cut of the f.110 sorter, cap 3.5, box 03:16-04:06 UTC (80% 03:56); for LANE LANE-RUN8-account-2
 2026-10-06 03:17 | R8-RUBIN3 | claim: rubin-1953 CR p.67 Block C at 300 dpi, 2 blind passes + reconciliation, cap 3, box end 04:02 UTC, for LANE LANE-RUN8-account-2
+2026-10-06 03:17 | R8-POLL worker | claim for LANE LANE-RUN8-account-2: pollaky-1865-1875 image-check of ads 1-2, cap 5.5, box to 04:32 UTC (80% at 04:17)
