@@ -1,0 +1,95 @@
+code	n_runs	leaves	chunks(runs)	agree_chunk	licence
+94	3	0527,0528,0529	a(1) | contre(1) | o(1)		disagree
+106	6	0502,0526,0528,0529,0530	l(1) | c(1) | o(1) | oncer(1) | eroy(1) | a(1)		disagree
+123	2	0502	a(1) | t(1)		disagree
+143	4	0502,0527	plus(1) | eteindre(1) | roy(1) | t(1)		disagree
+151	3	0527,0529	a(1) | t(1) | as(1)		disagree
+184	3	0527,0529	s(1) | hommes(1) | r(1)		disagree
+197	6	0526,0527,0528,0529	a(2) | n(2) | es(1) | onserence(1)	n	pooled-PASS
+214	5	0518,0526,0527	c(2) | g(1) | n(1) | en(1)	c	pooled-PASS
+235	4	0527,0528	l(1) | le(1) | d(1) | ord(1)		disagree
+237	22	0501,0502,0526,0527,0528,0529,0530	de(7) | e(3) | a(2) | quelque(1) | rite(1) | qui(1) | quake(1) | o(1) | l(1) | u(1) | le(1) | muritz(1) | riuiere(1) | rontiere(1) | du(1)	de	pooled-PASS
+238	2	0526,0527	d(1) | holdi(1)		disagree
+242	3	0521,0527	u(1) | d(1) | nous(1)		disagree
+247	2	0502,0527	dit(1) | conserencei(1)		disagree
+253	13	0502,0521,0527,0529,0530	e(2) | u(2) | n(2) | t(1) | commissaire(1) | ultes(1) | pour(1) | augmente(1) | portee(1) | suedoise(1) | rtee(1) | o(1)	u	pooled-PASS
+261	2	0527,0529	m(1) | s(1)		disagree
+270	3	0529	mille(1) | r(1) | e(1)		disagree
+272	8	0502,0526,0527,0528,0529,0530	dans(2) | t(1) | er(1) | d(1) | en(1) | u(1) | c(1)	dans	pooled-PASS
+281	9	0501,0526,0527,0529,0530	r(2) | pose(1) | de(1) | ne(1) | roy(1) | iner(1) | w(1) | e(1) | o(1)	r	pooled-PASS
+282	5	0502,0527,0529	aupres(1) | o(1) | s(1) | assez(1) | u(1) | conquestes(1)		disagree
+285	7	0502,0527,0528,0529	e(3) | t(1) | u(1) | etson(1) | roydeprusseet(1)	e	pooled-PASS
+295	2	0529	e(2)	e	pooled-PASS
+319	2	0527,0574	saim(1) | q(1)		disagree
+322	2	0502,0529	e(1) | s(1)		disagree
+330	2	0502,0527	auantage(1) | rge(1)		disagree
+341	6	0527,0528,0529	guerre(5) | o(1)	guerre	pooled-PASS
+351	2	0526,0527	e(1) | c(1)		disagree
+353	2	0528,0529	h(1) | n(1)		disagree
+375	4	0502,0529,0530	ein(1) | m(1) | malchin(1) | erin(1)		disagree
+384	5	0527,0574	de(1) | suitte(1) | o(1) | les(1) | roy(1)		disagree
+386	2	0527	n(1) | o(1)		disagree
+389	3	0502,0527	pologneseroit(1) | e(1) | p(1)		disagree
+400	2	0518,0529	icy(1) | -(1)		disagree
+402	14	0501,0502,0518,0526,0527,0528,0529,0530	la(6) | luy(1) | seldmarechal(1) | arla(1) | pour(1) | le(1) | u(1) | de(1) | p(1)	la	pooled-PASS
+403	12	0501,0502,0526,0527,0529	e(2) | le(2) | l(2) | u(1) | prusse(1) | quel(1) | que(1) | n(1) | r(1)	le	pooled-PASS
+406	3	0501,0502,0530	x(1) | roisieme(1) | xclus(1)		disagree
+410	3	0502,0518,0574	r(1) | s(1) | -(1)		disagree
+416	2	0527	prusseluy(1) | m(1)		disagree
+417	2	0501,0529	u(1) | breme(1)		disagree
+428	4	0518,0527,0529,0574	-(2) | i(1) | maisda(1)		disagree
+434	3	0502,0527,0528	accommodement(1) | s(1) | rment(1)		disagree
+444	2	0502,0529	un(1) | rnisons(1)		disagree
+447	13	0502,0526,0527,0528,0529	du(2) | a(2) | x(1) | e(1) | c(1) | honborn(1) | le(1) | courimperialen(1) | s(1) | nous(1) | g(1) | h(1)	du	pooled-PASS
+449	2	0527,0528	sur(1) | o(1)		disagree
+451	2	0528	u(2)	u	pooled-PASS
+463	3	0521,0529	n(2) | o(1)	n	pooled-PASS
+464	2	0527,0529	de(1) | obliger(1)		disagree
+467	2	0527,0530	aussi(1) | st(1)		disagree
+477	2	0527,0529	mais(1) | u(1)		disagree
+482	2	0527	p(1) | s(1)		disagree
+485	4	0501,0527	r(1) | s(1) | propositions(1) | d(1)		disagree
+492	3	0501,0527	o(1) | e(1) | p(1)		disagree
+493	2	0574	-(1) | d(1)		disagree
+496	3	0527,0529	o(1) | ee(1) | u(1)		disagree
+504	2	0526,0529	autres(1) | rdonnance(1)		disagree
+513	3	0527,0529	p(2) | i(1)	p	pooled-PASS
+515	6	0501,0502,0527,0529	e(3) | p(2) | les(1)	e	pooled-PASS
+521	2	0527,0529	p(1) | u(1)		disagree
+522	2	0527,0529	desauoueroit(1) | p(1)		disagree
+537	2	0527,0529	plus(1) | p(1)		disagree
+539	3	0502,0527	s(1) | estant(1) | et(1)		disagree
+542	4	0527,0528,0530	l(1) | i(1) | s(1) | de(1)		disagree
+548	4	0502,0521,0527	que(2) | il(1) | q(1)	que	pooled-PASS
+549	2	0501,0502	qu(1) | au(1)		disagree
+551	3	0527,0528	auant(1) | en(1) | m(1)		disagree
+553	2	0501,0521	q(1) | e(1)		disagree
+555	2	0502,0521	i(1) | e(1)		disagree
+560	14	0502,0526,0527,0528,0529,0530	n(3) | r(2) | nder(1) | embler(1) | c(1) | ouuer(1) | o(1) | nord(1) | dois(1) | i(1) | u(1) | bu(1)	n	pooled-PASS
+562	8	0527,0528,0529,0530	r(2) | t(1) | qu(1) | s(1) | tirez(1) | en(1) | le(1)	r	pooled-PASS
+563	4	0521,0526,0527,0529	l(1) | d(1) | desintrigues(1) | quelque(1)		disagree
+564	4	0502,0527,0529	de(1) | t(1) | l(1) | te(1)		disagree
+579	3	0501,0502,0528	roy(1) | prince(1) | plus(1)		disagree
+583	7	0501,0527,0528,0529	g(2) | ositions(1) | tes(1) | elles(1) | e(1) | les(1) | iers(1)	g	pooled-PASS
+584	5	0502,0527	e(1) | u(1) | qu(1) | i(1) | empereur(1)		disagree
+585	5	0502,0527,0528,0529	s(2) | roy(1) | g(1) | er(1)	s	pooled-PASS
+587	2	0529	e(1) | yer(1)		disagree
+588	7	0501,0521,0527,0529,0530	s(3) | tour(1) | en(1) | r(1) | b(1)	s	pooled-PASS
+592	3	0502,0529	s(3)	s	pooled-PASS
+602	2	0527	u(1) | qu(1)		disagree
+610	5	0527,0528	c(1) | de(1) | cert(1) | q(1) | ueut(1) | nor(1)		disagree
+611	2	0502	grand(1) | m(1)		disagree
+612	5	0501,0502,0527	a(1) | i(1) | e(1) | cote(1) | l(1) | debite(1) | c(1)		disagree
+613	4	0527,0529	r(2) | o(1) | e(1)	r	pooled-PASS
+636	3	0527,0528,0529	troupes(2) | l(1)	troupes	pooled-PASS
+643	2	0528,0529	u(1) | e(1)		disagree
+644	3	0526,0527,0528	r(1) | n(1) | decettecour(1)		disagree
+654	4	0527,0528,0529	r(1) | u(1) | o(1) | reuenir(1)		disagree
+714	7	0502,0521,0526,0527,0528	u(5) | une(2)	u	pooled-PASS
+716	2	0501,0527	u(1) | t(1)		disagree
+724	2	0528,0529	uint(1) | u(1)		disagree
+733	2	0528,0529	mille(1) | i(1)		disagree
+737	3	0527,0528	l(2) | etoit(1)	l	pooled-PASS
+825	2	0501,0502	roydesuede(1) | suedois(1)		disagree
+844	2	0527,0529	roydedanemarc(1) | ded(1)		disagree
+848	2	0527,0529	lempire(1) | empire(1)		disagree

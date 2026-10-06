@@ -1,0 +1,5 @@
+runs 122 by leaf {'0502': 14, '0501': 6, '0527': 28, '0528': 9, '0574': 18, '0529': 20, '0530': 6, '0526': 8, '0521': 3, '0518': 10} bins [8, 10, 11, 12, 10, 16, 9, 13, 7, 9, 17]
+REAL: free codes recurring in >=2 runs 94, agreeing S = 27
+SHUFFLE (1000 draws, bins): mean 17.47, p95 22, max 28
+KNOWN-ANSWER: 5/5: 35='e' -> 'e' x19 (yes); 10='e' -> 'e' x15 (yes); 33='o' -> 'o' x15 (yes); 66='a' -> 'a' x16 (yes); 21='n' -> 'n' x16 (yes)
+GATE (S > p95 AND known-answer >= 3/5): PASS
