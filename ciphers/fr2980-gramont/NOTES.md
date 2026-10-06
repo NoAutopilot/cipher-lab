@@ -1386,6 +1386,38 @@ Requests this pass: gallica.bnf.fr 3 (1 canvas thumbnail at 1000 px, 1 info.json
 apart, no challenge. Subagent calls: 2 (Sonnet blind passes); reconciliation, eye check and scoring by this worker. Novelty not classified
 (rule 10). Follow-up (one line, not run): re-read the 16 z/zb and 11 d/n6 split slots by eye on the crops and re-score with them settled.
 
+## fr.3040 f.18r L11-L21: z/zb and d/n6 split slots settled by eye, re-score PASS 0.802; no key change (R12D-GRA, account 4, 6 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run12-jobs.md`, job R12D-GRA. PREREG-R12D-GRA.md pushed (f2256696, 15:45 UTC) before any
+slot crop was cut or read. **Same instrument, gate and control as N9-GRA4**: `n12gra/score5.py` is `n9gra4/score4.py` with only the input
+path changed. Crops: N9-GRA4's half-line crops already on disk (`images/fr3040_f18/f18rB_L*_{a,b}.jpg`); no Gallica request. Per-slot
+window crops (`n12gra/slots.py`, `images/fr3040_f18/slots/`) were cut first but the token-index x estimate missed the sign (S02 checked by
+eye), so the one blind Sonnet call got the 14 half-line crops that hold a slot plus `atlas/atlas_f29.png`, with pass A's sign sequence and
+each slot marked `[[Snn: z or zb]]` / `[[Snn: d or n6]]` (`n12gra/SUBAGENT-BRIEF.md`: no print, no key values, no alignment).
+
+**Answers** (`n12gra/answers.tsv`): all 16 z/zb slots `zb` (barred z; S06 "low confidence"), all 11 d/n6 slots `n6`; none `cannot`. Eye check
+by this worker on f18rB_L09_a (S17 barred z, S18 delta shape) agrees. `n12gra/recon_settled.tsv` = `n9gra4/recon.tsv` with those 27 '?'
+replaced; every other slot unchanged.
+
+| | agree | N1 p99 | N2 p99 | gate |
+|---|---|---|---|---|
+| planted control, 13% error, N=298, 20 seeds (`n12gra/control.json`) | 0.871 mean (min 0.836) | 0.352 | 0.295 | >= 0.502: pass |
+| **target f.18r L11-L21, 298 keyed** (`n12gra/target.json`) | **0.802** | 0.339 | 0.322 | **PASS** |
+| N9-GRA4 (same lines, 27 slots '?'), for comparison | 0.812 on 287 | 0.335 | 0.321 | PASS |
+
+The 11 n6 slots enter as keyed N; the 16 zb slots are keyed NULL under key.tsv, so they drop out of the decode (403 -> 387 tokens) and the
+print's R at each of them is an unmatched print letter. As stated in the prereg, settling could not raise `agree` at the z/zb slots under
+the committed key; the score moved 0.812 -> 0.802 on 11 more keyed tokens, still at about the planted-control level.
+
+**zb listing (registered listing, not gating; zb decoded as a wildcard for the listing only):** pooled over fr.3040 no.6 (this job +
+N8-GRA3), **27 zb occurrences -> R x25, gap x2** (this job's 16: R x15, gap x1). zb is keyed (NULL, grade M) so it is not eligible for a C row
+under the open-code rule; **key.tsv unchanged**. The barred z reads R on this letter in 25 of 27 places, which matches Tomokiyo's table placing
+a similar shape under r (key.tsv's own note). Whether zb is R on f.30 too (where key.tsv's NULL rests on L14's closing null run and L01
+'baille') is the next step, not tested here. Other open codes unchanged from N9-GRA4 (ST 5/5 L, HASH 4/7 L, A2 I/E split, v M 9/10).
+
+Rule 7: key and reading unchanged; `decode.py --check` exit 0. Requests: none to any host (crops on disk). Subagent calls: 1 (Sonnet, blind).
+Novelty not classified (rule 10).
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA and N8-GRA3, 4 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18, S 181, M 239; U 63 -- ST moved S -> C by N8-GRA3, 4 Oct 2026; after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
@@ -1400,7 +1432,7 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); cheapest next: settle the 16 z/zb and 11 d/n6 split slots of f.18r L11-L21 by eye and re-score, ~$1; then a blind sort of f.30 zb beside fr.3040 barred z (is zb R in some letters?), ~$1
+Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); cheapest next: a blind sort of f.30 zb beside fr.3040 barred z (is the f.30 zb the same sign, and does R read there?), then, only if they match, a registered zb = R test on f.30 with its control, ~$1-2
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 

@@ -1,0 +1,380 @@
+{
+ "tokens": 387,
+ "keyed": 298,
+ "target": {
+  "keyed": 298,
+  "agree": 0.802013422818792,
+  "N1_p99": 0.3389261744966443,
+  "N2_p99": 0.32221476510067104,
+  "pass_": true
+ },
+ "secondary_z_wildcard": {
+  "keyed": 293,
+  "agree": 0.8020477815699659
+ },
+ "keyed_conflicts": {
+  "2": [
+   "S->R",
+   "S->S",
+   "S->S",
+   "S->S",
+   "S->S",
+   "S->-",
+   "S->S",
+   "S->S",
+   "S->R",
+   "S->S",
+   "S->S",
+   "S->-",
+   "S->S",
+   "S->-",
+   "S->S",
+   "S->-",
+   "S->S",
+   "S->S",
+   "S->S",
+   "S->S",
+   "S->S",
+   "S->S"
+  ],
+  "4t": [
+   "ET->ES",
+   "ET->-T",
+   "ET->VR",
+   "ET->PO",
+   "ET->--"
+  ],
+  "9": [
+   "E->E",
+   "E->E",
+   "E->E",
+   "E->E",
+   "E->E",
+   "E->R",
+   "E->E",
+   "E->E",
+   "E->E",
+   "E->E",
+   "E->E",
+   "E->S",
+   "E->E"
+  ],
+  "H": [
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->S",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->S",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->-",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->P",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I",
+   "I->I"
+  ],
+  "bb": [
+   "COM->COM",
+   "COM->--R",
+   "COM->--R",
+   "COM->COM",
+   "COM->--R",
+   "COM->---",
+   "COM->COM",
+   "COM->-TR",
+   "COM->--R",
+   "COM->---",
+   "COM->--R",
+   "COM->--R",
+   "COM->COM"
+  ],
+  "c": [
+   "L->N",
+   "L->L",
+   "L->L",
+   "L->L",
+   "L->L",
+   "L->L",
+   "L->L",
+   "L->L",
+   "L->L",
+   "L->-",
+   "L->L",
+   "L->L",
+   "L->T",
+   "L->L",
+   "L->-",
+   "L->-"
+  ],
+  "eh": [
+   "D->D",
+   "D->-",
+   "D->M",
+   "D->D",
+   "D->X",
+   "D->D"
+  ],
+  "g": [
+   "V->E",
+   "V->V",
+   "V->V",
+   "V->V",
+   "V->V",
+   "V->V",
+   "V->-",
+   "V->V",
+   "V->V",
+   "V->V",
+   "V->V"
+  ],
+  "g2": [
+   "G->E",
+   "G->E",
+   "G->S"
+  ],
+  "m": [
+   "T->T",
+   "T->T",
+   "T->T",
+   "T->T",
+   "T->T",
+   "T->T",
+   "T->R",
+   "T->R",
+   "T->T",
+   "T->T",
+   "T->T",
+   "T->T"
+  ],
+  "p": [
+   "M->M",
+   "M->M",
+   "M->M",
+   "M->F",
+   "M->-",
+   "M->M",
+   "M->M",
+   "M->M"
+  ],
+  "q": [
+   "E->B",
+   "E->B"
+  ],
+  "x": [
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->A",
+   "A->-",
+   "A->A",
+   "A->A",
+   "A->R",
+   "A->A",
+   "A->A",
+   "A->R",
+   "A->A"
+  ]
+ },
+ "open_codes": {
+  "A2": {
+   "n": 11,
+   "aligned": [
+    "I",
+    "E",
+    "D",
+    "E",
+    "I",
+    "I",
+    "I",
+    "E",
+    "I",
+    "L",
+    "I"
+   ],
+   "this_job": 1,
+   "all_same": false,
+   "null_all_same_rate": 0.0
+  },
+  "BOX": {
+   "n": 3,
+   "aligned": [
+    "R",
+    "R",
+    "-"
+   ],
+   "this_job": 0,
+   "all_same": false,
+   "null_all_same_rate": 0.005
+  },
+  "HASH": {
+   "n": 7,
+   "aligned": [
+    "-",
+    "L",
+    "L",
+    "E",
+    "-",
+    "L",
+    "L"
+   ],
+   "this_job": 1,
+   "all_same": false,
+   "null_all_same_rate": 0.0
+  },
+  "III": {
+   "n": 1,
+   "aligned": [
+    "F"
+   ],
+   "this_job": 1,
+   "all_same": false,
+   "null_all_same_rate": 0.0
+  },
+  "Mx": {
+   "n": 2,
+   "aligned": [
+    "N",
+    "N"
+   ],
+   "this_job": 0,
+   "all_same": true,
+   "null_all_same_rate": 0.065
+  },
+  "QQ": {
+   "n": 1,
+   "aligned": [
+    "-"
+   ],
+   "this_job": 0,
+   "all_same": false,
+   "null_all_same_rate": 0.0
+  },
+  "ST": {
+   "n": 5,
+   "aligned": [
+    "L",
+    "L",
+    "L",
+    "L",
+    "L"
+   ],
+   "this_job": 1,
+   "all_same": true,
+   "null_all_same_rate": 0.0
+  },
+  "TRI": {
+   "n": 1,
+   "aligned": [
+    "E"
+   ],
+   "this_job": 1,
+   "all_same": false,
+   "null_all_same_rate": 0.0
+  },
+  "v": {
+   "n": 10,
+   "aligned": [
+    "M",
+    "M",
+    "P",
+    "M",
+    "M",
+    "M",
+    "M",
+    "M",
+    "M",
+    "M"
+   ],
+   "this_job": 9,
+   "all_same": false,
+   "null_all_same_rate": 0.0
+  }
+ },
+ "listing": {
+  "HASH": [
+   "N9 f18rB_L10 -> -",
+   "G2 f18r_L01 -> L",
+   "G2 f18r_L03 -> L",
+   "G2 f18r_L03 -> E",
+   "G2 f18r_L05 -> -",
+   "G3S3 f19r_L02 -> L",
+   "G3S3 f19r_L02 -> L"
+  ],
+  "A2": [
+   "N9 f18rB_L09 -> I",
+   "G2 f18r_L03 -> E",
+   "G2 f18r_L03 -> D",
+   "G2 f18r_L08 -> E",
+   "G3S1 f18vA_L03 -> I",
+   "G3S2 f18vB_L01 -> I",
+   "G3S2 f18vB_L04 -> I",
+   "G3S3 f18vC_L06 -> E",
+   "G3S3 f18vC_L15 -> I",
+   "G3S3 f18vC_L15 -> L",
+   "G3S3 f18vC_L16 -> I"
+  ],
+  "Mx": [
+   "G3S1 f18vA_L01 -> N",
+   "G3S3 f18vC_L11 -> N"
+  ],
+  "zb": [
+   "N9 f18rB_L01 -> R",
+   "N9 f18rB_L01 -> R",
+   "N9 f18rB_L02 -> R",
+   "N9 f18rB_L02 -> R",
+   "N9 f18rB_L03 -> R",
+   "N9 f18rB_L03 -> R",
+   "N9 f18rB_L05 -> R",
+   "N9 f18rB_L06 -> R",
+   "N9 f18rB_L07 -> -",
+   "N9 f18rB_L08 -> R",
+   "N9 f18rB_L09 -> R",
+   "N9 f18rB_L09 -> R",
+   "N9 f18rB_L10 -> R",
+   "N9 f18rB_L10 -> R",
+   "N9 f18rB_L11 -> R",
+   "N9 f18rB_L11 -> R",
+   "G3S1 f18vA_L01 -> R",
+   "G3S1 f18vA_L03 -> R",
+   "G3S2 f18vB_L01 -> R",
+   "G3S2 f18vB_L01 -> R",
+   "G3S2 f18vB_L02 -> R",
+   "G3S2 f18vB_L03 -> R",
+   "G3S3 f19r_L01 -> R",
+   "G3S3 f19r_L01 -> R",
+   "G3S3 f19r_L02 -> R",
+   "G3S3 f19r_L02 -> R",
+   "G3S3 f19r_L02 -> -"
+  ]
+ }
+}

@@ -1,4 +1,4 @@
-# PREREG R12D-GRA, addendum to PREREG-N9-GRA4 (6 Oct 2026, written ~15:53 UTC by date -u, before any slot crop is cut or read and before any score)
+# PREREG R12D-GRA, addendum to PREREG-N9-GRA4 (6 Oct 2026, written 15:45 UTC by date -u, before any slot crop is cut or read and before any score)
 
 Brief: `.claude/briefs/runs/2026-10-06-account4-run12-jobs.md`, job R12D-GRA (account 4, LANE-RUN12-account-4).
 **Same instrument, gate and control as N9-GRA4, no knob changed**: `n12gra/score5.py` is `n9gra4/score4.py` with only the
