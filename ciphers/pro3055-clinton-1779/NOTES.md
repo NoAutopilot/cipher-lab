@@ -1457,10 +1457,69 @@ Requests: image-uab.canadiana.ca 6 (Images 1054, 1056 at 1400 px; 1056 full/max;
 pause; 1058 at 1400 px), browser UA + Referer, >= 1.6 s apart; archive.org 1 (1920 vol. III djvu). Vision calls: 1 blind Sonnet pass;
 worker looks at three frames at 1400 px, one six-column contact sheet and two native montages. Status unchanged: partial.
 
+## R15-CLIN407 (6 Oct 2026, 18:44-18:5x UTC by date -u, account 2, LANE RUN15): 3853 cipher p.407 checked against the rest of the printed f.381 text on the 1778 key
+
+Brief R15-CLIN407. Pre-registered in `PREREG_R15-CLIN407.md` (addendum to PREREG_R15-CLIN3853.md, pushed 6f7ae4ab6 before the scored
+run). Script `passes/check_3853.py` (p.407 block added, scored apart from p.406; `--check` exit 0). Printed text: the same
+`passes/p381_print1920.txt`. AUDIT.md not touched.
+
+**Frame.** H-1649 Image 1058 full/max (`.../69429%2Fc0fn10p9j08z/full/max/0/default.jpg`, 5376x4056): page label "407" read on the
+frame; marginal "p.326"; six columns; foot of col. 6 "Oct. 31st 1781. J.R."; "Cypher L. Initialled"; endorsement as R15-CLIN3853 read.
+
+**Crops.** `python3 tools/iiif_lines.py --image img1058.jpg --region 1500,520,1500,2580 --out il1058` wrote 0 crops ("0 lines, 0 bands",
+as on pp.120-122, 382-384, 406); columns cut with `passes/cut_2380_p121_122.py IMG_DIR OUT_DIR 1058` (box for Image 1058 added;
+SHEAR 0.025, PAD 30), twelve half-column crops (scratchpad, not committed; the box re-derives them).
+
+**Pass and reconciliation.** One blind Sonnet pass (`passes/p407_passA.tsv`, 289 rows, 14 marked ?). Scored as delivered it already
+passes (162/170, control max 26). The worker re-read on native crops every ? cell, every key-failing cell and every count-differing
+word (`passes/p407_reconciled.tsv`): pass A had merged or dropped five cells (c2 -5 in "these", c3 -9 in "event", c3 -6 in "general",
+c4 -14 = -1 -4 in "inveterate", c6 -7 in "ever") and misread one (c6 -4 for -7 in "James"); c4 row 4 is a letter written in clear,
+q-shaped (pass A "a" [?]), standing for the q of "Floquet" (the 1778 title page has no Q). c5:28 18-17 (u where "friendly" needs f,
+18-16) is clear on the image and kept as written.
+
+| statistic (gate: (b) share >= 0.80 and (b) count > control max) | p.407 pass A | p.407 reconciled |
+|---|---|---|
+| cells / gloss words | 226 / 32 | 231 / 32 |
+| compared cells (equal-count word pairs) | 170 | 197 |
+| (b) line 1 PERMISION/HONORABLE (gated) | 162 (0.953) | 189 (0.959) |
+| (a) printed 1778 page (not gated) | 165 | 192 |
+| (c) (b) + OFICERS (secondary) | 150 | 177 |
+| shuffled-plaintext control under (b), 1000 seeds: mean / p95 / max | 12.52 / 18 / 26 | 15.46 / 22 / 28 |
+| gate | PASS | PASS |
+
+The cipher read under (b), unedited, glosses in capitals: "I WILL WILLINGLY GIVE UP A VERY GOOD estate in that country AND EVERY
+prnvincial interest TO fix these penple IN THE INTEREST of the crown BUT I doubt this recent event WILL defeat ALL YOUR troule? AND
+pains general arnold SAYS pere flo Q uet IS AN inveterate enemy iacnb rove no BETTER AND INDEED THE gros of the boston leaders LITTLE
+better HE HAD NO uriendly aids from any of the noblesse ever yours iames robertson" (gloss "but 9" is "but I").
+
+**Mismatches (8 under (b)).** Six line-1 cells: 1-11 three times (n under (b), o in the print) and 1-29/1-30/1-31 in "trouble"
+(l, e, nothing under (b)); all six read under a line 1 "BY PERMISSION of the RIGHT HONORABLE" (double s, no u), which the p.406 o/n
+cells also fit -- an observation after the fact, not gated. One v/u: "rove" (22-6 = V) where the print has "roue" (the period u/v
+spelling; notation, recorded by witness). One copyist slip: 18-17 (u) for f in "friendly".
+
+**Text beyond the print: two places on p.407, recorded by witness (rule 4), not settled.**
+- **"and pains"**: after "all your trouble" the page carries the clear gloss "and" and five cipher cells 18-27 18-1 18-10 18-11 18-13
+  = "pains" under (b) (and under (a)); the 1920 print of the f.381 decipherment reads "defeat all your Trouble -- general Arnold".
+  The cipher reads "defeat all your trouble and pains general arnold". Grade S (gate PASS; English under the key). Whether the f.381
+  decipherment itself omits the words or the 1920 editors did is not settled here (f.381 = B.147 p.381, not re-read in this job).
+- **"give up"**: the copyist's clear gloss reads "I will willingly give up a very good" (image native crop: "give up" with a g like
+  "good"'s); the print "give a very good Estate". Gloss vs print, not cipher.
+The subscription "ever yours iames robertson" (23 cells) is in cipher on p.407 and matches the print's clear subscription "Ever
+Yours James Robertson"; not extra text. "flo" + clear q + "uet" = "Floquet" as printed.
+
+**Grades (rule 4), p.407's 231 cells:** S 223 (189 gated matches; 5 "pains"; 23 subscription; 6 flo/uet, all key-consistent under
+the gated variant), M 8 (the mismatches above). No H (no period decipherment of these cells transcribed here). Together with p.406
+(S 191, M 6): 3853's cipher, 428 cells over two pages, is key-consistent with the printed f.381 text except two places on p.407
+where the cipher carries more ("and pains") or the gloss differs ("give up"), plus the p.406 "25"/"28 sail" gloss/print conflict.
+The witness conflicts are logged, not resolved. Flagged in ROOM for a verifier (text beyond the print).
+
+Requests: image-uab.canadiana.ca 1 (Image 1058 full/max, browser UA + Referer, HTTP 200). Vision calls: 1 blind Sonnet pass;
+worker reconciliation on native crops (one contact sheet, three three-column montages, one gloss crop). Status unchanged: partial.
+
 ## Remaining gaps (R15-CLINGAP refresh, 6 Oct 2026)
 Refresh only, 17:2x UTC 6 Oct 2026 (worker R15-CLINGAP, LANE RUN15, account 2): each gap restated from the dated sections GAPS-GAPS12, A2P4-CLINT, R10-CLIN3868/3868B, R10-CLINV/CLINV2, R11-CLIN2380/B/C, R11-CLINV3-5 and R12-CLINVHS; no new reading, no request made. The 1 Oct 2026 section above is superseded.
 Read so far: 20 of 20 items text-known or read at grade H/C -- the 12 named items (3689, 3753, 3784, 3803, 3813 at C from Stevens 1888; 6009, 6012 clear and printed; 2894, 3868, 2380 period decipherments read at H, N0 in AUDIT.md; 3853's f.381 decipherment printed 1920 vol. III doc 260; 4833 and its 22 June 1782 enclosure printed VHS Collections II pp.280-282) and the 8 Discovery siblings (2962, 3004, 4152 printed 1920 vol. III; 3502, 3537, 4216 printed VHS II; 3050, 3077 read at H from B.147 pp.245-246, N0) plus the 26 Oct 1782 note (Carleton 25 Sept 1782, p.102 read at H, GAPS7). Cipher side checked cell by cell on the 1778 Army List key: 2894 all 315 pairs (GAPS2), 3868 all four pages (GAPS8 cols 1-2 + R10: p.382 cols 3-6 97/100, pp.383-384 526/535), 2380 all three pages pp.120-122 (GAPS9 + R11: 224/258, 406/420, 244/254 after the R11-CLINV5/R12 bar fix); partly: 3050/3077 (118/118 opening cells, GAPS12) and the 25 Sept 1782 p.123 copy (32 opening pairs, GAPS7). Witness conflicts (Digby/Darby; the 650 Recruits clause, "I am", move/movements, Chesapeak) are recorded per witness (R10-CLINV, R12-CLINVHS), not gaps. What is left is cipher-side checking, one of which can still add text (3853).
-- 3853 cipher, p.407 (Robertson to Haldimand, 31 Oct 1781, PRO 30/55/33/47) - blocker: not-attempted; p.406 checked (R15-CLIN3853, 6 Oct 2026: 191/197 cells key-consistent under the gated variant, control max 28; no p.406 text beyond the print); the cipher continues on p.407 (H-1649 Image 1058, seen at 1400 px), whose glosses place the rest of the printed text there ("I will willingly give ... Noblesse"), so p.407 is the one page left that could show text the print omits or alters; next: Image 1058 full/max, columns cut with passes/cut_2380_p121_122.py (add a box), one blind Sonnet pass + reconciliation, extend check_3853.py, ~$4
+- 3853 f.381 decipherment (B.147 p.381) against the cipher's "and pains" - blocker: not-attempted; R15-CLIN407 (6 Oct 2026) checked p.407: PASS 189/197 vs control max 28; the cipher reads "all your trouble and pains" where the 1920 print of f.381 has "all your Trouble", and the gloss "give up" where the print has "give"; whether the period decipherment or the 1920 edition drops the words is open; next: fetch the f.381 frame (H-1649, B.147 p.381) once and read the one line, ~$1.5
 - Reel ciphers of the other text-known siblings not checked: 2962, 3004, 3502 (Image 945), 3537 (Image 958), 4152, 4216 (Image 1090), and the rest of 3050/3077 (p.242 cols 4-6, pp.243-244, p.247 cols 3-8) - blocker: not-attempted; key-consistency checks on items whose text is printed or read at H, low value (GAPS11, GAPS12); next: per page, frame fetch + one blind pass + reconciliation, ~$3-4.5 a page, only after the 3853 step
 - Rest of the 25 Sept 1782 p.123 cipher (Image 1205, on disk as images/h1649/img1205_w1600.jpg; only 32 opening pairs checked, GAPS6/GAPS7) - blocker: not-attempted; text read at H from p.102 (218 words), a key check only; it may show the 1782 word-code elements Tomokiyo left blank; next: column crops from the native frame, PREREG, one blind pass + reconciliation, ~$3.5
 - Cipher of the 22 June 1782 letter enclosed in 4833 (Haldimand to Carleton No. 1) - blocker: needs-physical-access; the reel copy B.148 pp.39-40 (Images 1115-1116) is clear, headed "In Cypher" (GAPS10), so the enciphered copy exists only at Kew (PRO 30/55, Discovery digitised=false) or C.O. 5/106 p.361; text known (VHS II pp.280-282), a key check only
@@ -1473,5 +1532,5 @@ Read so far: 20 of 20 items text-known or read at grade H/C -- the 12 named item
 - [x] print: HMC vols 2-3, Stevens 1888, Brymner 1884-89, 1920 vol. III (A2P4-CLINT), VHS Collections II and Walton II (GAPS10-11, R12-CLINVHS), Google Books, JSTOR rows; verifiers VERIFY-CLINTON-* logged N0 for 2894, 3868, 2380, 3050, 3077
 - [n/a] key-rebuild: no key is being extended; the 1778 key reads every checked cell, and the 1782 word-code blanks matter only for the p.123 rest and the Kew 4833 cipher
 - [x] image-check: frames confirmed on the images (Image 759 = p.121, 889/890 = B.147 pp.245/246, 1205 = B.148 p.123, 1115-1116 = B.148 pp.39-40); every key-failing cell in R10/R11 re-read on zoomed crops; Brymner's foliation matches the reel (AX-HMC2, R11-CLIN2380B)
-- [ ] retry: the remaining cipher pages above are not yet passed; the 3853 p.406 pass ran (R15-CLIN3853, PASS 191/197 vs control max 28, no text beyond the print on p.406); planned: 3853 p.407 next (the one step that can still add text); the 3537 print check ran (R15-CLIN3537, PASS)
-Verdict: keep going: 3 internal gaps (R15-CLIN3853, 6 Oct 2026: the 3853 p.406 cipher matches the printed f.381 text cell by cell, 191/197 under the gated variant, control max 28, and stops at "about Vermont"; the cipher continues on p.407, Image 1058); cheapest next: the 3853 p.407 cipher against the rest of the printed text ("I will willingly give ... Noblesse"), one blind pass + reconciliation, ~$4; 2 gaps blocked outside (needs-physical-access, Kew/C.O. 5)
+- [ ] retry: the remaining cipher pages above are not yet passed; the 3853 cipher is fully passed (R15-CLIN3853 p.406 PASS 191/197; R15-CLIN407 p.407 PASS 189/197, control max 28 each; p.407 carries "and pains" beyond the 1920 print); planned: the f.381 decipherment line next; the 3537 print check ran (R15-CLIN3537, PASS)
+Verdict: keep going: 3 internal gaps (R15-CLIN407, 6 Oct 2026: the 3853 cipher pp.406-407 is key-consistent with the printed f.381 text, 191/197 and 189/197 under the gated variant, control max 28; p.407 reads "all your trouble and pains" where the 1920 print has "all your Trouble"); cheapest next: read the f.381 period decipherment line (B.147 p.381) for "and pains", ~$1.5; 2 gaps blocked outside (needs-physical-access, Kew/C.O. 5)

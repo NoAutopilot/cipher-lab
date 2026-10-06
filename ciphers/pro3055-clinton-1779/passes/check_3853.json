@@ -344,5 +344,477 @@
    }
   ],
   "reading_b": "sir eeory clintno with about six thousand meo WENT ON board a fleet OF 25 sail OF THE line to try to relieve lord cornwallis HE WAS forced to surrender on the 19TH THE VERY day our fleet sailed WE HAVE NOT heard from sir heory NOR of our fleet SR HENRY AND MR DIGBY WHO IS A JOINT COMMISSIONERS on their arrival will consider AND answer YOUR letters ABOUT vermont"
+ },
+ "p407_pass_A": {
+  "source": "p407_passA.tsv",
+  "units": 78,
+  "cells": 226,
+  "print_span": "i will willingly give a very good estate in that country and every provincial interest to fix these people in the interest of the crown but 1 doubt this recent event will defeat all your trouble general arnold says pere floquet is an inveterate enemy jacob roue no better and indeed the gros of the boston leaders little better he had no friendly aids from any of the noblesse",
+  "print_words_after_span": "",
+  "compared_cells": 170,
+  "a_printed_page": 165,
+  "b_gated": 162,
+  "b_share": 0.953,
+  "c_secondary": 150,
+  "control_b": {
+   "seeds": 1000,
+   "mean": 12.52,
+   "p95": 18,
+   "max": 26
+  },
+  "gate_pass": true,
+  "mismatches_b": [
+   "c1:28 1-11 key n / print o",
+   "c2:10 1-11 key n / print o",
+   "c3:17 1-29 key l / print b",
+   "c3:18 1-30 key e / print l",
+   "c3:19 1-31 key ? / print e",
+   "c4:26 1-11 key n / print o",
+   "c4:30 22-6 key v / print u",
+   "c5:28 18-17 key u / print f"
+  ],
+  "apart": [
+   {
+    "print": "these",
+    "letters_b": "thse",
+    "cells": "7-3 7-4 7-2 7-5"
+   },
+   {
+    "print": "event",
+    "letters_b": "evnt",
+    "cells": "22-3 22-6 22-9 22-1"
+   },
+   {
+    "print": "general",
+    "letters_b": "geneal",
+    "cells": "6-1 6-2 6-3 6-4 6-6 6-7"
+   },
+   {
+    "print": "floquet",
+    "letters_b": "uet",
+    "cells": "18-17 18-6 18-4"
+   },
+   {
+    "print": "inveterate",
+    "letters_b": "inveteroe",
+    "cells": "18-10 18-11 22-6 18-6 18-4 18-6 18-9 18-14 18-6"
+   }
+  ],
+  "cipher_words_on_gap": [
+   {
+    "cells": "c3:21=18-27 c3:22=18-1 c3:23=18-10 c3:24=18-11 c3:25=18-13",
+    "letters_b": "pains"
+   },
+   {
+    "cells": "c4:1=18-16 c4:2=18-18 c4:3=18-14",
+    "letters_b": "flo"
+   },
+   {
+    "cells": "c6:17=22-3 c6:18=22-6 c6:19=22-8",
+    "letters_b": "evr"
+   },
+   {
+    "cells": "c6:20=16-6 c6:21=16-5 c6:22=18-17 c6:23=18-9 c6:24=18-13",
+    "letters_b": "yours"
+   },
+   {
+    "cells": "c6:25=17-4 c6:26=18-1 c6:27=18-4 c6:28=18-6 c6:29=18-13",
+    "letters_b": "iates"
+   },
+   {
+    "cells": "c6:30=18-9 c6:31=18-14 c6:32=1-1 c6:33=18-6 c6:34=18-9 c6:35=18-4 c6:36=18-13 c6:37=18-14 c6:38=18-15",
+    "letters_b": "robertson"
+   }
+  ],
+  "print_words_on_gap_inside_span": [],
+  "glosses": [
+   {
+    "gloss": "i",
+    "print": "i",
+    "equal": true
+   },
+   {
+    "gloss": "will",
+    "print": "will",
+    "equal": true
+   },
+   {
+    "gloss": "willingly",
+    "print": "willingly",
+    "equal": true
+   },
+   {
+    "gloss": "give",
+    "print": "give",
+    "equal": true
+   },
+   {
+    "gloss": "up",
+    "print": null,
+    "equal": false
+   },
+   {
+    "gloss": "a",
+    "print": "a",
+    "equal": true
+   },
+   {
+    "gloss": "very",
+    "print": "very",
+    "equal": true
+   },
+   {
+    "gloss": "good",
+    "print": "good",
+    "equal": true
+   },
+   {
+    "gloss": "and",
+    "print": "and",
+    "equal": true
+   },
+   {
+    "gloss": "every",
+    "print": "every",
+    "equal": true
+   },
+   {
+    "gloss": "to",
+    "print": "to",
+    "equal": true
+   },
+   {
+    "gloss": "in",
+    "print": "in",
+    "equal": true
+   },
+   {
+    "gloss": "the",
+    "print": "the",
+    "equal": true
+   },
+   {
+    "gloss": "interest",
+    "print": "interest",
+    "equal": true
+   },
+   {
+    "gloss": "but",
+    "print": "but",
+    "equal": true
+   },
+   {
+    "gloss": "9",
+    "print": "1",
+    "equal": false
+   },
+   {
+    "gloss": "will",
+    "print": "will",
+    "equal": true
+   },
+   {
+    "gloss": "all",
+    "print": "all",
+    "equal": true
+   },
+   {
+    "gloss": "your",
+    "print": "your",
+    "equal": true
+   },
+   {
+    "gloss": "and",
+    "print": null,
+    "equal": false
+   },
+   {
+    "gloss": "says",
+    "print": "says",
+    "equal": true
+   },
+   {
+    "gloss": "a",
+    "print": null,
+    "equal": false
+   },
+   {
+    "gloss": "is",
+    "print": "is",
+    "equal": true
+   },
+   {
+    "gloss": "an",
+    "print": "an",
+    "equal": true
+   },
+   {
+    "gloss": "better",
+    "print": "better",
+    "equal": true
+   },
+   {
+    "gloss": "and",
+    "print": "and",
+    "equal": true
+   },
+   {
+    "gloss": "indeed",
+    "print": "indeed",
+    "equal": true
+   },
+   {
+    "gloss": "the",
+    "print": "the",
+    "equal": true
+   },
+   {
+    "gloss": "little",
+    "print": "little",
+    "equal": true
+   },
+   {
+    "gloss": "he",
+    "print": "he",
+    "equal": true
+   },
+   {
+    "gloss": "had",
+    "print": "had",
+    "equal": true
+   },
+   {
+    "gloss": "no",
+    "print": "no",
+    "equal": true
+   }
+  ],
+  "reading_b": "I WILL WILLINGLY GIVE UP A VERY GOOD estate in that country AND EVERY prnvincial interest TO fix thse penple IN THE INTEREST of the crown BUT 9 doubt this recent evnt WILL defeat ALL YOUR troule? AND pains geneal arnold SAYS pere flo A uet IS AN inveteroe enemy iacnb rove no BETTER AND INDEED THE gros of the boston leaders LITTLE better HE HAD NO uriendly aids from any of the noblesse evr yours iates robertson"
+ },
+ "p407_reconciled": {
+  "source": "p407_reconciled.tsv",
+  "units": 78,
+  "cells": 231,
+  "print_span": "i will willingly give a very good estate in that country and every provincial interest to fix these people in the interest of the crown but 1 doubt this recent event will defeat all your trouble general arnold says pere floquet is an inveterate enemy jacob roue no better and indeed the gros of the boston leaders little better he had no friendly aids from any of the noblesse",
+  "print_words_after_span": "",
+  "compared_cells": 197,
+  "a_printed_page": 192,
+  "b_gated": 189,
+  "b_share": 0.959,
+  "c_secondary": 177,
+  "control_b": {
+   "seeds": 1000,
+   "mean": 15.46,
+   "p95": 22,
+   "max": 28
+  },
+  "gate_pass": true,
+  "mismatches_b": [
+   "c1:28 1-11 key n / print o",
+   "c2:11 1-11 key n / print o",
+   "c3:18 1-29 key l / print b",
+   "c3:19 1-30 key e / print l",
+   "c3:20 1-31 key ? / print e",
+   "c4:27 1-11 key n / print o",
+   "c4:31 22-6 key v / print u",
+   "c5:28 18-17 key u / print f"
+  ],
+  "apart": [
+   {
+    "print": "floquet",
+    "letters_b": "uet",
+    "cells": "18-17 18-6 18-4"
+   }
+  ],
+  "cipher_words_on_gap": [
+   {
+    "cells": "c3:22=18-27 c3:23=18-1 c3:24=18-10 c3:25=18-11 c3:26=18-13",
+    "letters_b": "pains"
+   },
+   {
+    "cells": "c4:1=18-16 c4:2=18-18 c4:3=18-14",
+    "letters_b": "flo"
+   },
+   {
+    "cells": "c6:17=22-3 c6:18=22-6 c6:19=22-7 c6:20=22-8",
+    "letters_b": "ever"
+   },
+   {
+    "cells": "c6:21=16-6 c6:22=16-5 c6:23=18-17 c6:24=18-9 c6:25=18-13",
+    "letters_b": "yours"
+   },
+   {
+    "cells": "c6:26=17-4 c6:27=18-1 c6:28=18-7 c6:29=18-6 c6:30=18-13",
+    "letters_b": "iames"
+   },
+   {
+    "cells": "c6:31=18-9 c6:32=18-14 c6:33=1-1 c6:34=18-6 c6:35=18-9 c6:36=18-4 c6:37=18-13 c6:38=18-14 c6:39=18-15",
+    "letters_b": "robertson"
+   }
+  ],
+  "print_words_on_gap_inside_span": [],
+  "glosses": [
+   {
+    "gloss": "i",
+    "print": "i",
+    "equal": true
+   },
+   {
+    "gloss": "will",
+    "print": "will",
+    "equal": true
+   },
+   {
+    "gloss": "willingly",
+    "print": "willingly",
+    "equal": true
+   },
+   {
+    "gloss": "give",
+    "print": "give",
+    "equal": true
+   },
+   {
+    "gloss": "up",
+    "print": null,
+    "equal": false
+   },
+   {
+    "gloss": "a",
+    "print": "a",
+    "equal": true
+   },
+   {
+    "gloss": "very",
+    "print": "very",
+    "equal": true
+   },
+   {
+    "gloss": "good",
+    "print": "good",
+    "equal": true
+   },
+   {
+    "gloss": "and",
+    "print": "and",
+    "equal": true
+   },
+   {
+    "gloss": "every",
+    "print": "every",
+    "equal": true
+   },
+   {
+    "gloss": "to",
+    "print": "to",
+    "equal": true
+   },
+   {
+    "gloss": "in",
+    "print": "in",
+    "equal": true
+   },
+   {
+    "gloss": "the",
+    "print": "the",
+    "equal": true
+   },
+   {
+    "gloss": "interest",
+    "print": "interest",
+    "equal": true
+   },
+   {
+    "gloss": "but",
+    "print": "but",
+    "equal": true
+   },
+   {
+    "gloss": "9",
+    "print": "1",
+    "equal": false
+   },
+   {
+    "gloss": "will",
+    "print": "will",
+    "equal": true
+   },
+   {
+    "gloss": "all",
+    "print": "all",
+    "equal": true
+   },
+   {
+    "gloss": "your",
+    "print": "your",
+    "equal": true
+   },
+   {
+    "gloss": "and",
+    "print": null,
+    "equal": false
+   },
+   {
+    "gloss": "says",
+    "print": "says",
+    "equal": true
+   },
+   {
+    "gloss": "q",
+    "print": null,
+    "equal": false
+   },
+   {
+    "gloss": "is",
+    "print": "is",
+    "equal": true
+   },
+   {
+    "gloss": "an",
+    "print": "an",
+    "equal": true
+   },
+   {
+    "gloss": "better",
+    "print": "better",
+    "equal": true
+   },
+   {
+    "gloss": "and",
+    "print": "and",
+    "equal": true
+   },
+   {
+    "gloss": "indeed",
+    "print": "indeed",
+    "equal": true
+   },
+   {
+    "gloss": "the",
+    "print": "the",
+    "equal": true
+   },
+   {
+    "gloss": "little",
+    "print": "little",
+    "equal": true
+   },
+   {
+    "gloss": "he",
+    "print": "he",
+    "equal": true
+   },
+   {
+    "gloss": "had",
+    "print": "had",
+    "equal": true
+   },
+   {
+    "gloss": "no",
+    "print": "no",
+    "equal": true
+   }
+  ],
+  "reading_b": "I WILL WILLINGLY GIVE UP A VERY GOOD estate in that country AND EVERY prnvincial interest TO fix these penple IN THE INTEREST of the crown BUT 9 doubt this recent event WILL defeat ALL YOUR troule? AND pains general arnold SAYS pere flo Q uet IS AN inveterate enemy iacnb rove no BETTER AND INDEED THE gros of the boston leaders LITTLE better HE HAD NO uriendly aids from any of the noblesse ever yours iames robertson"
  }
 }

@@ -13,8 +13,10 @@ BOXES = {
     760: {'y': (640, 3480), 'cols': [(1990, 2190), (2255, 2455), (2520, 2730), (2790, 2995), (3060, 3260), (3320, 3540)]},
     # 3853 cipher, B.147 p.406 (R15-CLIN3853, 6 Oct 2026; img1056.jpg from .../69429%2Fc0q52f84tj1f/full/max/0/default.jpg)
     1056: {'y': (900, 3250), 'cols': [(1525, 1825), (1825, 2105), (2100, 2315), (2310, 2530), (2525, 2775), (2750, 3010)]},
+    # 3853 cipher continued, B.147 p.407 (R15-CLIN407, 6 Oct 2026; img1058.jpg from .../69429%2Fc0fn10p9j08z/full/max/0/default.jpg)
+    1058: {'y': (520, 3100), 'cols': [(1510, 1770), (1760, 1990), (1990, 2215), (2220, 2450), (2450, 2730), (2720, 3000)]},
 }
-LABEL = {1056: 406}  # page label where it is not image - 638
+LABEL = {1056: 406, 1058: 407}  # page label where it is not image - 638
 SHEAR = float(os.environ.get('SHEAR', '0.025'))  # 0 = the first cut (R11-CLIN2380B blind pass A read SHEAR=0 crops)
 PAD = int(os.environ.get('PAD', '30'))  # widen each box by PAD px both sides (0 for pass A's crops)
 

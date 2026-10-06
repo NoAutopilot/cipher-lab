@@ -9,6 +9,7 @@ on a printed word of equal letter count, gaps -1, free leading/trailing printed 
 cell; cipher words on a gap are reported with their letters (text beyond the extract), printed words on a gap likewise.
 Variants: (a) printed page, (b) line 1 BY PERMISION ... HONORABLE (GATED), (c) (b) + line 9 OFICERS. Control: printed
 letters of the aligned span shuffled, 1000 seeds, seed 3853, scored under (b). Gate: (b) share >= 0.80 and > control max.
+p.407 (Image 1058) is scored the same way from p407_*.tsv (R15-CLIN407, ../PREREG_R15-CLIN407.md).
 Usage: check_3853.py [--check]   (writes check_3853.json; --check exits 1 when it is stale, rule 7)."""
 import json, os, random, re, sys
 
@@ -129,6 +130,10 @@ def main():
     out = {'pass_A': build('p406_passA.tsv')}
     if os.path.exists(P('p406_reconciled.tsv')):
         out['reconciled'] = build()
+    # p.407 (H-1649 Image 1058), the cipher continued (R15-CLIN407, 6 Oct 2026; PREREG_R15-CLIN407.md), scored apart
+    for k, f in (('p407_pass_A', 'p407_passA.tsv'), ('p407_reconciled', 'p407_reconciled.tsv')):
+        if os.path.exists(P(f)):
+            out[k] = build(f)
     js = json.dumps(out, indent=1) + '\n'
     p = P('check_3853.json')
     if '--check' in sys.argv:
