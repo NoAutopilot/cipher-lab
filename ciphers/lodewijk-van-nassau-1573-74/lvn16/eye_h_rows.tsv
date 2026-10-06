@@ -1,0 +1,13 @@
+line	position	h_value	A3_B3	image_read	strength	supports_h	evidence
+p1_L05	4	71	31	71	clear	yes	flat-topped 7 with straight descender, unlike the hand's round-bowled 3 (93 at pos 11)
+p1_L05	14	76	36	76	moderate	yes	flat top bar, no lower bowl
+p1_L07	5	37	31	37	clear	yes	tailed 3 then a flat-topped 7 (cf. 72 at pos 3); second digit is not a 1
+p1_L07	11	84	64	84	moderate	yes	low closed loop, unlike the open tall-stemmed 6 of 63 at pos 8
+p1_L10	1	21	28	21	moderate	yes	narrow second digit, no double loop (cf. the 8 of 28 in p1_L12/2)
+p1_L12	1	90	40	40	moderate	no	first digit has the crossbar-and-descender 4 of p1_L10/3, no closed 9 loop
+p1_L13	1	79	39	39	moderate	no	first digit closes in a lower bowl like the hand's 3, not the straight-stemmed 7 of pos 2
+p1_L14	2	91	81	81	clear	no	closed two-loop 8 on the baseline, no descender
+p1_L15	16	36	31	31	moderate	no	second digit a narrow 1-stroke like the 1s of 21/81 beside it, no 6 loop
+p1_L16	2	26	20	20	clear	no	second digit an oval 0 matching the 0 of 30 at pos 3
+p1_L16	4	85	35	85	weak	yes	faint ink; first digit shows two stacked loops
+p1_L17	2	91	81	81	clear	no	at 5x: closed two-loop 8 sitting on the baseline, no tail below it (R12-LVNV read 'clearly 91' at 2-3x)

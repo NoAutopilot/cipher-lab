@@ -3,7 +3,9 @@
 pre-registered H-row control (lvn16/PREREG.md), list target-row reads. Writes lvn16/aligned.tsv. Offline."""
 import csv, difflib, os
 H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
-ct = list(csv.DictReader(open(os.path.join(T, 'ciphertext_4616.tsv')), delimiter='\t'))
+# Read the pre-apply snapshot: apply.py renumbers ciphertext_4616.tsv by its splits, so aligning against the
+# current file mis-aligns (R12-LVNV, AUDIT.md). ciphertext_4616_pre.tsv is the input this score was registered on.
+ct = list(csv.DictReader(open(os.path.join(H, 'ciphertext_4616_pre.tsv')), delimiter='\t'))
 def load(n):
     d = {}
     for r in csv.DictReader(open(os.path.join(H, n)), delimiter='\t'):
