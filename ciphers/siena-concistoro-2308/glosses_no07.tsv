@@ -1,0 +1,16 @@
+# no. 7 (R4796 P1) interlinear glosses, R8-SIENA7 (account 4, 6 Oct 2026). Read from native-resolution line crops (tools/iiif_lines.py --image, region 60,2540,2190,560 of IMG_R4796_I27935_P1.jpg, sha1 2b12f15a...; image and crops kept in the worker scratchpad, not committed), contrast-stretched and zoomed 3-5x. Sign names = Bourdeau agent J (no07.txt). grade: C = period gloss letter legible over an identifiable sign; M = letter or its alignment uncertain; X = not a gloss (withdrawn). bourdeau = value in his no07_reading.txt (adbf9a1).
+line	sign	gloss	grade	bourdeau	tokens_of_sign_in_no07	note
+L08	q	a	C	a	10	"a" sits over the left of q
+L08	6	n	C	n	6	
+L08	+	o	C	o	10	glossed o twice in the run (4th and 8th sign)
+L08	2	e	C	e	11	conflicts with L04 below if the L04 "o" belongs to 2
+L08	x	r	C	r	25	
+L08	c	o	C	o	24	last sign of the run
+L08	7	l	M	l	6	the "l" stands between 7 and q, not over 7; alignment by order only
+L08	B3	t	M	t	1	a short upright with a hooked/dotted head over the top bar of B3: t or i
+L08	8o	i	M	i	1	a dark dot-stroke at gloss height directly over 8o's own top dot; may be part of the sign, not a letter
+L04	QP	e	C	e	2	clear small "e" over qp at the line end
+L04	2|4	o	M	o over 4/2	11|23	small "o" over the junction of 4 and 2; over 2 it conflicts with 2=e (L08), over 4 it gives 4=o (23 tokens)
+L06	3	er	X	er?	16	the letters above are the end of the clear word on the line above (L05), not a gloss
+L12	x	+	X	+?	25	the mark is the descender cross-stroke of P_ in L11 above, not a gloss
+L03	o sl =	. ı . ı .	X	? . t . ?	-	dots and short strokes below the signs, not letters; similar point marks under "a t" in L09

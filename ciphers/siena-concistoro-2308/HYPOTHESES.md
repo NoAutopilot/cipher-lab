@@ -25,3 +25,7 @@ The sign matching is by name across transcribers, so a shape-level concordance i
 |---|---|---|---|---|---|---|---|---|
 | 26 Sept 2026 07:00 | homophonic | N=3689 K=73 restarts=8 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt profile=target | 1 | 0.992 (0.988-0.996) | -10287.999 | FAIL language: score=-1.372, null_p99=-1.847, real_p05=-0.925, real_median=-0.822, mode=both, N=3689 | yes (gate 0.6) | bSIE2 nos 6/24 pool, ciphertext-only homophonic, it16 control (era mismatch flagged) |
 | 26 Sept 2026 07:02 | homophonic | N=4932 K=86 restarts=8 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt profile=target | 1 | 0.842 (0.555-0.997) | -14090.341 | FAIL language: score=-1.384, null_p99=-1.852, real_p05=-0.954, real_median=-0.814, mode=both, N=4932 | yes (gate 0.6) | bSIE2 nos 20/23 pool, ciphertext-only homophonic, it16 control (era mismatch flagged) |
+
+- no. 7 gloss conflict (R8-SIENA7, 6 Oct 2026): the L08 gloss gives 2=e (C); the L04 small "o" sits over the 4/2 junction, so it gives
+  either 2=o (conflicting with L08) or 4=o. Both witnesses are on the same leaf in the same glossing hand. Graded M and left unsettled
+  until a closer crop or a second reader places it (glosses_no07.tsv).

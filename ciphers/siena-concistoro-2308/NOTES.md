@@ -395,7 +395,7 @@ unchanged: `open`.
   reader-error figure (about USD 3-4 per pair, `tools/iiif_lines.py --image`), so bSIE2's negative is bracketed (rule 3, error band).
 - 20+23: line-crop reread of no20/no23 for the reader-error figure (about USD 3-4); then the fo/fö groups as syllabic units (Bourdeau's
   own note), as a family with its own matched control.
-- 7: crop the cipher block at native size to read the faint glosses Bourdeau used (nine values) and look for more (about USD 1-2).
+- 7: crop the cipher block at native size to read the faint glosses Bourdeau used (nine values) and look for more (about USD 1-2). [done R8-SIENA7, 6 Oct 2026: 7 C, 4 M, 3 withdrawn; see below]
 - 17: settle sender/recipient from a native crop of the foot of P1 and the P2 address (about USD 0.5). This names whose "cifra di Balìa"
   to look for among R4773-style 16th-century Balìa keys.
 - 19: compare its run signs with the no. 13/16 alignment (Bourdeau's) as a known-key fit with value-shuffled and order-shuffled controls
@@ -403,3 +403,42 @@ unchanged: `open`.
 - 15: Bourdeau's candidate key R4764 (Buoninsegni, oratore a S. M.tà) has not been tested in this folder. A shape concordance from the
   R4764 key image plus pp. 2 and 6 crops is needed first (one more DECODE record, about USD 3).
 - 9, 11, 21: no step on disk beyond these. 11 needs a Florentine key (Acciaiuoli 1478, none located); 9 and 21 are too short alone.
+
+## R8-SIENA7 -- no. 7 gloss crop (account 4 worker for LANE-RUN8-account-4, 6 Oct 2026, 04:03-04:1x UTC)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run8-jobs.md` job R8-SIENA7 (the "7:" next step of READ2-SIENA). Status unchanged: `open`.
+
+**Route.** The image is not committed (manifest note), so one headless DECODE login: `tools/decode_browser_login.js 4796 <scratch>
+--fetch <IMG_R4796_I27935_P1.jpg filesrv URL> --max-files 1`. Full size served, 2248x4000, **sha1 2b12f15a... matches
+images/manifest.json**. Saved RecordsView page deleted (account name). Image and crops stay in the scratchpad. Requests: de-crypt.org
+about 4 (login 2, RecordsView 1, image 1), 1.5 s apart, no challenge; github.com 1 sparse shallow clone of dbourdeau/cyphersolver
+`targets/siena1421` (HEAD adbf9a1, read only: `transcripts/no07.txt`, `no07_reading.txt`).
+
+**Crop step (pasted):**
+
+    $ python3 tools/iiif_lines.py --image IMG_R4796_I27935_P1.jpg --out crops --region 60,2540,2190,560 --prefix no7 \
+        --max-width 1150 --overlap 120 --distance 42 --prominence 20 --ink 120 --smooth 3 --lines-per-crop 2 --top-margin 20
+    ...(local): region 2190x560, 12 lines ... centres (region y): 7 57 102 155 199 250 300 348 400 444 506 548
+    wrote 18 crops
+
+Two-line crops, so a gloss between lines stays whole; then autocontrast and 1.5x/2x views, and 3-5x zooms of the five spots Bourdeau
+names. One vision pass by the worker itself over all 18 crops (no subagent). No gloss value differed from Bourdeau's and no further
+gloss was found, so the brief's conditional second blind pass and reconciliation were not run.
+
+**Result (`glosses_no07.tsv`, one row per gloss, grade C/M/X):**
+- **C 7**: L08 q=a, 6=n, +=o (twice), 2=e, x=r, c=o; L04 QP=e. These seven agree with Bourdeau's values.
+- **M 4**: L08 7=l (the "l" stands between 7 and q, aligned only by order), B3=t (t or i), 8o=i (the mark may be the sign's own head,
+  not a letter); L04 "o" over the 4/2 junction. Over 2 it **conflicts with L08's 2=e**; over 4 it would give 4=o (4 is 23 of 363
+  tokens). Logged as a conflict, not settled (rule 4).
+- **X 3, withdrawn as glosses**: L06 "er" over 3 is the end of the clear word on the line above; L12 "+" over x is the descender of
+  L11's P_; L03's marks below "o sl =" are dots and short strokes, not letters. The same kind of point marks also sit under "a t" in L09.
+- **Of Bourdeau's nine L08 values, six read C on the image (q, 6, +, 2, x, c) and three M (7, B3, 8o); the two L04 glosses in his
+  transcription notes add one C (QP=e) and one M.** No gloss outside lines L04 and L08 was found on any of the
+  ten cipher lines (L02-L12, Bourdeau's numbering). The seven C signs cover 88 of the 363 tokens (24%) if each sign keeps one value. This
+  is a key-material count, not a reading. Nothing was decoded and no key was rebuilt (brief).
+- Note for a later step: the L08 gloss reads "l a n o t e r o (i) o" over a run where the clear text then says "volendo mandare". A word
+  division of the gloss was not tried.
+
+**Next step for no. 7 (suggestion, not run):** an L04 crop at higher zoom, or a second reader, to place the "o" (2 or 4). Then a
+homophonic fit of the 363 tokens with the seven C values fixed, against a matched control of the same N, K=45 and fixed-value count
+(rule 3). Bourdeau files no. 7 as too-short. Fixed values change that only if the control reads at this N. About USD 3.
