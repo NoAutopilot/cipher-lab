@@ -1809,3 +1809,50 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; cheapest next: the 1865 received copies in mssEC 12-13 for the Lehigh third witness, ~$1.5; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
+
+## D1-ECK62W (6 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261006-1240): the 1865 received copies in mssEC 12-13 for the Lehigh third witness
+
+- Material: mssEC 12 and 13 received ledgers, one CONTENTdm `dmQuery` each (the D1-ECK62L URL form in
+  print/residue/received_manifest.tsv), re-fetched to scratch 6 Oct 2026 (not on disk from D1-ECK62L); both sha256 match
+  the manifest (8631ce26..., 388e5a70...). 828 pages; volunteer text, not image. Year counts in the text: Jan-Aug 1865
+  with a 1866 tail, so both dates (27 Jan, 24 May 1865) fall inside the span.
+- Targets: 9947.505 (27 Jan 1865, Halleck to Dodge, OR ser. I vol. 48.1 p. 646, "Lehigh" where the print has "general
+  Canby") and 10020.609 (24 May 1865, Grant to Dodge, OR 48.2 p. 573, "lehigh" where the print has "can [be provided]").
+- Method (GAPS171 shape, one-off, scratch script): each entry's text with the print's values in place of the code words,
+  word 5-grams, 5-grams on >= 3 pages dropped, best-page score; null = the same words shuffled (20 draws, seed 171);
+  positive control = the entry text planted into a random page (20 draws). Plus keyword greps: Lehigh, Hurlbut, Canby,
+  Dodge, and the bodies' distinctive phrases (mounted at, cavalry depot, depot at St, you can spare, best advantage,
+  mounted men, transportation can, can be provided).
+- Result: best-page score 0 for both entries (null max 0); planted control 20/20 at rank 1 -- a weak control (verbatim
+  plants; it shows only that a copy in clear would be found, not a paraphrase). No received copy of either telegram in
+  mssEC 12-13. "Lehigh" occurs once, as the monitor Lehigh (mssEC 12 p.165, Fort Monroe 14 Mar 1865, clear). Hurlbut
+  occurs twice (mssEC 12 pp. 51, 87: Grant on Canby's subordinates, Jan-Feb 1865), neither a copy of the target.
+  Nearest related page: mssEC 12 p.78 (object 7736), Dodge at St Louis to Halleck, 29 Jan 1865: "I sent one regt of
+  Infantry yesterday, will send another tomorrow or next day" -- infantry, not cavalry, names neither Canby nor Hurlbut,
+  and answers an order of 26 Jan; not a witness for Lehigh either way.
+- Why few hits were expected: both telegrams were sent from Washington to St Louis; Washington's received book carries
+  the reply side, not the sent message. The reply side gave nothing that names the cavalry's destination.
+- Lehigh conflict unchanged (rule 4): witness A (key, mssEC 41 p.17 l.6, Hurlbut, image-checked) vs witness B (two
+  1865 sent telegrams, print Canby / "can be"); no third witness found in mssEC 12-13. Held M. No key, reading or
+  transcription change, so no --check needed for the readings (decode.py --check run anyway, see the done line).
+- Not found / not searched: the St Louis (Dept of the Missouri) received copies are not in the Huntington Eckert ledgers;
+  no other sent use of Lehigh was grepped in mssEC 18-19 here (needs vol18/vol19 text, not on disk).
+- Requests: hdl.huntington.org 2 (two dmQuery, 2 s apart). No vision, no subagents.
+
+## Remaining gaps (finish-or-blocker pass, D1-ECK62W, 6 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); received ledgers mssEC 01-14 all searched for residue twins (GAPS171, D1-ECK62L): 0 code-bearing twins; mssEC 18 cascade split2 (ec18/s2/): 729 entries, align_free AGREE 0.427 vs control 0.088; 17 neither-book entries: 0 wrong telegram, 5 right, 12 undecided
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L, 0 twins); next: the image of the residue pages against the volunteer text for the M-graded tokens (transcription slips the decode reads as code), ~$4
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; Nutmeg = James River gains a 5 Jul 1863 witness (C, D1-ECK62L) but no second 1862 telegram; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); received ledgers mssEC 12-13 searched for the 27 Jan and 24 May 1865 copies 6 Oct 2026 (D1-ECK62W: 0 copies, no third witness); next: grep the sent ledgers mssEC 18-19 for every other use of Lehigh and align each against OR by date (a second sent context that reads Hurlbut or Canby), ~$1
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; the 13 code words date 30 Dec 1864 - 13 Jul 1865, Cipher No. 3/No. 4 period; the Huntington holds only No. 5 (R8-ECK62); the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; 100 under the legacy split, 137 '?' entries under split2 print_q; next: the image (marker words the volunteer text may have dropped) for the dated `?p` entries under split2, ~$4
+
+## Escalation (D1-ECK62W, 6 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171) and mssEC 04-14 6 Oct 2026 (D1-ECK62L, 0 twins, Nutmeg 1863 witness); mssEC 12-13 for the Lehigh 1865 copies (D1-ECK62W, 0); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram and conflict-pair tests done on legacy (R7B-ECK62, R7C-ECK62C) and split2 (R10-ECK62T: 0 wrong, 5 right, 12 undecided; primary untested at N 60); splitter fixed and adopted (R9-ECK62, R10-ECK62S, R10-ECK62T)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: every other Lehigh in the sent ledgers mssEC 18-19 aligned to OR (Lehigh second sent context; the mssEC 12-13 received copies gave none, D1-ECK62W), ~$1; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
