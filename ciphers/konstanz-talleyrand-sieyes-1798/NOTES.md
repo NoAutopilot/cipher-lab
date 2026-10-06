@@ -81,7 +81,7 @@ Google Books API (key, country=US), 1 query, `"Sieyes" "17 juillet 1798" chiffre
 
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
-next: search Pallain's other Talleyrand volumes and Bailleu vol. 2 for the 17 Jul 1798 Sieyes letter (the gap left by the 2 Oct premise check), IA full text, ~$0.5; the known-plaintext check of P 1839/21 against Pallain p.398 waits on a copy (~$3 once it exists). Who acts: agent. Source: this file's "Next, cheapest" and "Re-check (CS-BATCH3)" gap; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+next: obtain the image of P 1839/5 from Stadtarchiv Konstanz (REQUEST.md); the printed-source route is exhausted (Pallain, Bailleu 1-2, Guyot 1911 footnotes PAG_723-729 read in full by R15-KONS3, 6 Oct 2026: no 17 Jul 1798 Sieyes item). Alternative: AE Correspondance politique Prusse 223, the pieces between 104 (14 Jul) and 120 (28 Jul), as an owner-side copy order. Who acts: owner. (Earlier line, R8/R9 done: search Pallain's other Talleyrand volumes and Bailleu vol. 2 for the 17 Jul 1798 Sieyes letter (the gap left by th...)
 
 ## Pallain's other volumes and Bailleu vol. 2 (R8-KONS, 6 Oct 2026, 04:05-04:10 UTC)
 
@@ -140,3 +140,36 @@ Requests: gallica.bnf.fr 13 (SRU 1, ContentSearch 11, ALTO 1 -> HTTP 429; that e
 50 s pause, answered 200), archive.org 3, googleapis.com 2; >= 2 s apart. Status unchanged: `open`.
 Next, cheapest: Gallica ALTO/texteBrut of PAG_723-729 (pp. ~716-722) to read the footnotes in full for any 26-29 messidor Sieyès item
 (local browser or a later cloud session, after the 429 clears), ~$0.5; else the image of P 1839/5 from Stadtarchiv Konstanz (REQUEST.md).
+
+## Guyot 1911 footnotes read from the page images (R15-KONS3, 6 Oct 2026, 17:19-17:24 UTC)
+
+Search result only, for P 1839/5 (17 Jul 1798 = 29 messidor an VI). Gallica ark bpt6k115863g, canvases f723-f729 (manifest labels 716-722,
+so canvas = printed page + 7, checked with `tools/gallica_folio.py bpt6k115863g`). Crop step: `python3 tools/iiif_lines.py --ark bpt6k115863g
+--canvas N --region 0,0,1749,2481 --out <scratch> --prefix fN --lines-per-crop 12` fetched each page once at native size but found no line
+centres on this grey-background print (0 crops), so the fetched page was cut with PIL into four overlapping full-width bands of about 710 px
+and the footnote bands read by this worker's own eye (no subagent). Every footnote on the seven pages, as printed:
+
+| p. (canvas) | n. | footnote |
+|---|---|---|
+| 716 (f723) | 1 | Conversation du 15 juillet (27 messidor), memorandum of Mme de Rochechouart, *Dropmore papers* IV, 272 (Talleyrand speaking; not a Sieyès letter) |
+| 716 | 2 | Le Roi à Sandoz, 22 mai; G.S.A., Frankreich, R. XI, 89, 1798 II, fol. 87 |
+| 716 | 3 | Sandoz au Roi, 14 et 23 mai; ibid., fol. 95 et 119-121 |
+| 716 | 4 | **Sieyès à Talleyrand, 19 et 26 messidor (7 et 14 juillet); A.E., Prusse, 223, pièces 94 et 104** |
+| 717 (f724) | 1 | **A Talleyrand, 19 messidor (7 juillet); A.E., Prusse, 223, pièce 49** (sic; p. 716 n. 4 gives 94 for the same date -- one of the two is a misprint) |
+| 717 | 2 | **A Talleyrand, 28 juillet (10 thermidor); Bailleu I, 483; A.E., Prusse, 223, pièce 120** |
+| 717 | 3 | Parandier à Talleyrand, "20 messidor (7 août)" (sic, 20 thermidor); A.E., Prusse, 223, p. 139 |
+| 717 | 4 | Talleyrand à Treilhard et Bonnier, 23 germinal; A.E., Allemagne, 675, fol. 88 |
+| 718 (f725) | 1-5 | Jean de Bry biography (A.N. AF III 523); du 15 prairial, Allemagne 680 fol. 200; Talleyrand à Bonnier et Roberjot, 5 juin, Allemagne 675 fol. 213; Roberjot biography; Jean de Bry à Talleyrand, 24 messidor (12 juillet), Allemagne 675 fol. 272 |
+| 719 (f726) | 1-4 | Le Directoire à Roberjot, 6 thermidor, Allemagne 675 fol. 296; the Reubell/Sieyès epigram (*Bien Informé*, A.N. AF III 544; Barras III 344); Sandoz, 1er août, G.S.A.; Talleyrand aux plénipotentiaires, 25 thermidor, Allemagne 680 fol. 302 |
+| 720 (f727) | 1 | Prince Henri's mémoire, agent of the comte de Provence to Minto, 1 Oct 1798, *Dropmore* IV, 363 |
+| 720 | 2 | **Sieyès à Talleyrand, 13 thermidor (31 juillet); A.E., Prusse, 223, pièce 125** |
+| 721 (f728) | 1-5 | 26 thermidor, Pallain 355; Haugwitz à Sieyès, 3 août, Bailleu I 221; Zastrow report 12 août, Bailleu I 230; Sieyès à Haugwitz, 10 fructidor, Bailleu I 234, reply 13 fructidor, ibid. 235; note du 16 août, G.S.A. fol. 305, Bailleu I 236 |
+| 722 (f729) | 1 | **Sieyès à Talleyrand (particulière); A.E., Prusse, 223, pièce 187** (undated in the note) |
+
+Result: no footnote on pp. 716-722 cites a Sieyès item of 27, 28 or 29 messidor / 15-17 July 1798, in any date form. Guyot's Sieyès-to-Talleyrand
+run in A.E. Prusse 223 is pièce 94 (or 49) = 7 Jul, 104 = 14 Jul, 120 = 28 Jul, 125 = 31 Jul, 187 undated "particulière". If P 1839/5 is a Sieyès
+dispatch of 17 Jul 1798, its outgoing original (or the Paris-received copy) would sit between pièces 104 and 120 of Prusse 223, which Guyot does
+not cite -- a search result, not evidence that no such letter exists. Main text on these pages was skimmed only where it ran into the footnote
+bands (p. 716: arrival in Berlin 20 Jun; p. 720: the Zastrow approaches); not read in full. Where it was not found: Guyot 1911 pp. 716-722
+footnotes (this pass), plus R9-KONS2's ContentSearch over the whole volume. Requests: gallica.bnf.fr 7 (IIIF image API, one native page each,
+>= 3 s apart, all HTTP 200, no 429). Status unchanged: `open`. Next: the Konstanz image (REQUEST.md); else Prusse 223 pièces 105-119 by copy order.
