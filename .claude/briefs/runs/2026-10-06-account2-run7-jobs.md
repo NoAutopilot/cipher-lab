@@ -82,3 +82,36 @@ Verdict cheapest next: "Souchon 1915 N° 2044 (f.197r letter, 21 Dec 1743) and r
 Read the Souchon text already located by A3V2-ROUS2 (ALTO/Gallica or IA, whichever the folder used; fetch once) at N° 2044 and N° 2031;
 report whether either prints a plain side for the f.197r / f.165r cipher passages, with page numbers. A printed plain side = a crib: note it
 and the next step; do not start the crib alignment in this job.
+
+## Wave 2 (spawned 01:4x UTC 6 Oct). Wave 1 result: 6/6 D (16.24). Intake gate output (01:4x UTC) pasted per job.
+
+### R7-MANT463 -- sachsstaatsarchiv-manteuffel-1712, transcribe 0574/0575 (f.463) and gate (cap 5.5, box 75 min; 2 blind passes + 1 reconciliation at ~1.5 each + scripts)
+Intake gate: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (R7-MANTP, 6 Oct): "transcribe 0574/0575 (f.463, dense glossed; 2 blind passes + 1 reconciliation, ~$3-4) and add it to the
+pooled single-code-gloss gate (pooled_mantp/pooled_gate.py)". Confirm folio labels from the frames first (D2B-MANT27's check). The D2B-MANT27 shape
+exactly: crop step pasted, two blind passes (one page per call, crop paths only), reconcile_passes.py, one reconciliation unit, decode_key.py,
+the per-leaf gate AND the pooled gate re-run with the leaf added (same PREREG; an addendum for the added leaf pushed before scoring). Codes enter
+key.tsv only per the per-unit merge rule. Report how many f.410 / f.409v U tokens move and whether f.410 now has a clause above the
+authentication distance (the depth itself is the verifier's). If the two passes split > 10% of tokens, stop after reconciliation.
+
+### R7-OLDSORT -- na-oldenbarnevelt-2442-1605, seed the owner's sign sorter for blocks A/C2 (cap 2, box 40 min; no vision)
+Intake gate: `na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R7-OLDA (6 Oct) split 19.0% and handed blocks A/C2 to the owner's sorter. Build it from the R7-OLDA crops on disk as R7-MATSORT did for matignon
+(ciphers/matignon-mayenne-1586/sorter/: build.sh, build_inputs.py, focus.tsv of the pass-split pairs from transcription/disagreements_R7OLDA.tsv;
+the 9/q, f/p, v/r, l/t, G/t pairs first). Do NOT publish and do NOT write ASKS.md; one ROOM flag line with the path for the lane orchestrator.
+
+### Sonnet print/crib greps (model Sonnet 5; each cap 1.2, box 30 min; script-first, Usage 2; fetch once, grep, give the model the hits)
+For each: first check the folder's NOTES.md for a dated section that already ran the step (NEXT-STEPS.tsv lags); if done, report and stop.
+Record what was searched, hits with page/leaf, and what was not found; a hit that prints the letter's plaintext is a crib -- note it and the
+next step, do not align. Do not touch keys or readings.
+- R7-WVOH -- wvo-hessen-1564. Intake gate: `wvo-hessen-1564: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+  Step: a Huygens WVO search for Hessen -> Oranje letters of Oct-Dec 1564 (Wilhelm's reply to 1109, which might paraphrase the enciphered
+  news), ~3 requests (host table row: >= 2 s apart, descriptive UA).
+- R7-CHEST -- sp87-chesterfield-1747. Intake gate: exit 0 with `WARNING: citation reads as a reused/re-cited search, not one this worker
+  independently opened`. Step: grep Coxe, *Pelham Administration* (1829, archive.org _djvu.txt) for July-Aug 1747 Waldeck/Cronstrom despatches
+  to Cumberland, a crib source for the cipher passage.
+- R7-NEWC -- sp87-newcastle-1743. Intake gate: `sp87-newcastle-1743: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+  Step: be-api full-text search for "Munchberg" across the HMC reports and Yorke's *Life of Hardwicke* (archive.org, no login).
+- R7-DONC -- sp78-doncaster-1621. Intake gate: `sp78-doncaster-1621: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+  Step: grep CSP Venice vol. 17 (1621-1623; BHO or archive.org full text) for the Venetian ambassador's reports of Doncaster's Sept 1621
+  audiences, a crib source for the item's subject.
