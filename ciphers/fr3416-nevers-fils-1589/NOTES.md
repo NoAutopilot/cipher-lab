@@ -344,8 +344,8 @@ addressee line other than "Mon fil" and no date line were found in the cropped r
 Not found in print: nothing searched (transcription job).
 
 ## Remaining gaps
-Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
-- L05 run (7 tokens M): second blind read agrees on all 20 digits but gives alternatives on 7 pairs - blocker: open-codes; the glyphs (looped 8, 5/6, 6/8) are ambiguous in the only image at 2x; glyph-atlas route tried twice: A1B-FILS-L05 non-test at its class gate (no H exemplar of 0), R9-NEVF (6 Oct 2026, class 0 dropped, pos 5/13/17/20) non-test at the leave-one-out gate (0.644 vs >= 0.90; every miss votes the unlabelled '_' class), 0 tokens moved; a FAIL logged, not re-tuned; next: a person's read of the L05 glyphs in the sign sorter (tools/sign_sorter.py with a focus.tsv of pos 4/5/7/13/15/16/17/20 against the H digit tiles of verify/l05_atlas/box_labels.tsv), ~$1 to build; BUILT 6 Oct 2026 (R10-NEVF2, sorter/l05/, preflight PASS), waiting-on: a person's read in the published sorter (ROOM flag 6 Oct 2026 to the account-3 orchestrator)
+Read so far: 81 of 102 figure tokens at H (79%); 21 M (NEVF-APPLY, 6 Oct 2026; was 75/27); nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
+- L05 run (1 token M, token 79): a person confirmed all 8 split digits in the sign sorter (NEVF-APPLY, 6 Oct 2026: 6 tokens M -> H); 79's 7 is confirmed too, but the token stays M on the pairing question (45 79, 79 null by key, vs 4 57 9, 57 = m) - blocker: open-codes; a digit read cannot settle a pairing; next: a verifier's judgement of the pairing against the confirmed 20 digits (a re-pairing at pos 12-13 shifts every later pair), inside the owed AUDIT.md pass, ~$0 extra
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON); 251 words H, 43 M, 23 U - blocker: illegible; to every machine reader tried, measured by its own hidden H-word control: 1100-px word windows to Sonnet (A1B-FILS-UPPER, reads H neighbours wrong) and to Opus (A1B-FILS-UPPER2, 0/6 vs gate 5/6), then whole 2400-px line strips to Opus (DEF1-F3416, 5 Oct 2026, 1/6 vs gate 5/6, verify/upper_strips/): both instruments retired under rule 3's third-attempt clause; the M/U words need a person reading the hand (a palaeographer, or the owner on the strips images/f43u_*), not a fourth machine pass
@@ -358,9 +358,9 @@ Read so far: 75 of 102 figure tokens at H (74%); 27 M; nomenclator transcribed (
 - [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
-- [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR)
+- [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR); L05 split digits read by a person in the sign sorter (R10-NEVF2 built, NEVF-APPLY applied 6 Oct 2026): 6 tokens M -> H
 - [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved; the same re-registered without class 0 (R9-NEVF, 6 Oct 2026): non-test at the leave-one-out gate (0.644 vs 0.90), 0 tokens moved; whole line strips of the upper letter to a blind Opus pass C (DEF1-F3416, 5 Oct 2026): 1/6 H controls (gate 5/6), non-test, 0 tokens moved, line-strip instrument retired
-Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: publish the built L05 sorter (R10-NEVF2, sorter/l05/; account-3 orchestrator) for a person's read; then sign_sorter_apply.py and a rule-4 re-grade of the 7 L05 tokens
+Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the AUDIT.md verifier pass owed for the moved counts (rule 10 propagation), judging token 79's pairing at the same time
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -748,3 +748,27 @@ The first preflight FAILed answerable (pos 4 and 7 offered "0", which has no pil
 real question in prose (one looped 8, or two signs -> Fix the cut), not by adding an empty 0 pile; a second FAIL was a header row read as a
 focus sid (removed). Contact sheet eyed once: 24 of 24 tiles are single digits on cipher lines. No grade moves (H 75, M 27);
 `decode_f35.py --check` OK. Requests: 0 network. Vision: 2 own looks, 0 subagent calls. Not found in print: nothing searched (build job).
+
+## NEVF-APPLY results (account 1 for the account-3 orchestrator, 6 Oct 2026, 23:42-23:5x UTC)
+
+Brief `.claude/briefs/runs/2026-10-06-acct3-nevf-apply.md`. The person sorted the published L05 sorter (artifact Joua9gdmovgTwZdfsCYzUq,
+saved 22:58-22:59 UTC). Its db was **not readable from account 1** (ArtifactData: "no such artifact ... or no access"; the artifact is
+account 3's), so the decisions were taken from the account-3 orchestrator's 23:0x UTC db read as quoted in the brief and written as
+`sorter/l05/owner_db_2026-10-06/` (README there says so): `checked` 9 (all 8 L05 question tiles confirmed in their starting pile, plus
+example f43_03_019 = 8), `moves` and `newpiles` empty, `recuts` 1 (f43_05_028b [2781,560,42,64] -> [2752,560,71,72], label 5 stands).
+Commands (pasted, from `sorter/l05/`):
+`python3 tools/sign_sorter_apply.py --labels labels.tsv --db owner_db_2026-10-06 --out owner_sort_2026-10-06.tsv --summary owner_sort_2026-10-06.summary.json --recuts-out recuts_2026-10-06.tsv`
+-> `{"tiles": 95, "by_status": {"kept": 95, ...}, "signs_before": 9, "signs_after": 9, "recuts": 1}`, 9 confirmed_tiles;
+`python3 tools/sorter_apply_recuts.py --recuts recuts_2026-10-06.tsv --signs signs.tsv --pages <dir with f43.jpg = images/src_..._f43_...jpg> --tiles tiles`
+-> `applied 1` (signs.tsv row updated; `tiles/f43_05_028b.jpg`, old crop kept as `.orig.jpg`).
+
+Re-grade (rule 4; a person's read settles the transcription, the value comes from key no.25 only): the six L05 tokens whose only
+uncertainty was a digit reading move **M -> H**: 18 (pos4 = 8, one looped 8, not 0+1), 19 (pos5 = 1), 87 (pos7 = 8), 65 (pos15-16 = 6, 5),
+54 (pos17 = 5), 16 (pos20 = 6). Key values: 18 19 16 nulls, 87 t, 65 o, 54 i (all key rows H). Token **79 stays M**: its 7 is confirmed
+(pos13), but its open question is the pairing (45 79, null, vs 4 57 9, m), which a digit read does not settle.
+**Grades before: H 75, M 27 of 102. After: H 81, M 21.** Run 4 now decodes `e..t.e.oi.` (was `e..T.e.OI.`); no letter changed, only case.
+`decode_f35.py` (regenerates f35r_reading.txt, reading_f35r.txt) then `--check`: OK. Statistics (seed 1, fr16): all tokens -1.150 rank 1/201
+z 5.04 (unchanged); H tokens only 62 letters -1.029 rank 1/201 z 5.38 (was 59 letters -1.020 z 5.23); positive control NV-03 f.38v -0.769
+z 5.66; shuffled-target control beats real 0/200. No spec in specs/ for this target, so no judge_plaintext.py run.
+AUDIT.md not touched: the graded counts moved (75 -> 81 H; depth_pct there is 73.5%), so a verifier pass is owed (rule 10 propagation),
+flagged in ROOM.md. Requests: 0 network. Vision: 0 looks. Not found in print: nothing searched (apply job).

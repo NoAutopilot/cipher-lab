@@ -29,7 +29,7 @@ L01  <<{pensse}. {Craignez} que il [...] cy [...] {en le(s)} [...]>>[M]
 L02  {run 1: .aisi.nlesauroit[xiiij].e}
 L03  {run 2: [1]r..etsYestes.sipr.e}
 L04  {run 3: s.es.auoir[0]} <<vous deuez bien {facillem[ent]}>>[M]
-L05  <<vous faire entendre ma volonte.>>[H] {run 4: e..T.e.OI.}
+L05  <<vous faire entendre ma volonte.>>[H] {run 4: e..t.e.oi.}
 L06  {run 5: ens} <<A quoy je vous prie dy bien veiller {a fin / et pen-}>>[M]
 L07  <<{qu[e]}>>[M] {run 6: b.onnefaSUN.as.[41]E[9]}
 L08  {run 7: er.} <<Cequy ne {apporteroit comodite}. {affaire} [...] {luy}>>[M]

@@ -1,0 +1,29 @@
+{
+ "tiles": 95,
+ "by_status": {
+  "kept": 95,
+  "moved": 0,
+  "merged": 0,
+  "not-letter": 0,
+  "aside": 0,
+  "bad-cut": 0
+ },
+ "signs_before": 9,
+ "signs_after": 9,
+ "confirmed_piles": [],
+ "not_letter_piles": [],
+ "merges": {},
+ "new_piles": [],
+ "confirmed_tiles": [
+  "f43_03_019",
+  "f43_05_017",
+  "f43_05_018",
+  "f43_05_020",
+  "f43_05_026",
+  "f43_05_028a",
+  "f43_05_028b",
+  "f43_05_029",
+  "f43_05_032"
+ ],
+ "recuts": 1
+}

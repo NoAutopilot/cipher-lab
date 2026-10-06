@@ -53,15 +53,15 @@ L04	3	53	H
 L04	3	75	H	
 L04	3	0	M	single trailing glyph before 'bons deniers' (0 or a stroke)
 L05	4	43	H	line has three looped glyphs with an extra upright; 8-with-stroke reading; FILS-NOMEN blind 2x read (cl=one glyph): 20/20 digits match, no alternative given for this pair (pre-reg rule 1)
-L05	4	18	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos4 8 or 01)
-L05	4	19	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos5 1 may be a stroke of 9)
-L05	4	87	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos7 8 or 01/61)
+L05	4	18	H	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos4 8 or 01); NEVF-APPLY 6 Oct 2026: a person confirmed the committed digit(s) in the L05 sign sorter (pos4 f43_05_017=8; sorter/l05/owner_sort_2026-10-06.tsv) -> H (transcription settled, value from key no.25)
+L05	4	19	H	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos5 1 may be a stroke of 9); NEVF-APPLY 6 Oct 2026: a person confirmed the committed digit(s) in the L05 sign sorter (pos5 f43_05_018=1; sorter/l05/owner_sort_2026-10-06.tsv) -> H (transcription settled, value from key no.25)
+L05	4	87	H	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos7 8 or 01/61); NEVF-APPLY 6 Oct 2026: a person confirmed the committed digit(s) in the L05 sign sorter (pos7 f43_05_020=8; sorter/l05/owner_sort_2026-10-06.tsv) -> H (transcription settled, value from key no.25)
 L05	4	39	H	FILS-NOMEN blind 2x read (cl=one glyph): 20/20 digits match, no alternative given for this pair (pre-reg rule 1)
 L05	4	45	H	FILS-NOMEN blind 2x read (cl=one glyph): 20/20 digits match, no alternative given for this pair (pre-reg rule 1)
-L05	4	79	M	null by key; 57 (m) would give 'moiens'; FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos13 mark above 7)
-L05	4	65	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos15 6 or 8; pos16 5 or 6)
-L05	4	54	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos17 5 or 6)
-L05	4	16	M	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos20 6 or 8)
+L05	4	79	M	null by key; 57 (m) would give 'moiens'; FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos13 mark above 7); NEVF-APPLY 6 Oct 2026: a person confirmed the 7 (f43_05_026, pos13); stays M on the pairing question (45 79 vs 4 57 9), which a digit read does not settle
+L05	4	65	H	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos15 6 or 8; pos16 5 or 6); NEVF-APPLY 6 Oct 2026: a person confirmed the committed digit(s) in the L05 sign sorter (pos15-16 f43_05_028a=6, f43_05_028b=5 (box re-cut by the person); sorter/l05/owner_sort_2026-10-06.tsv) -> H (transcription settled, value from key no.25)
+L05	4	54	H	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos17 5 or 6); NEVF-APPLY 6 Oct 2026: a person confirmed the committed digit(s) in the L05 sign sorter (pos17 f43_05_029=5; sorter/l05/owner_sort_2026-10-06.tsv) -> H (transcription settled, value from key no.25)
+L05	4	16	H	FILS-NOMEN blind 2x read agrees but gives an alternative for a digit of this pair: kept M (pos20 6 or 8); NEVF-APPLY 6 Oct 2026: a person confirmed the committed digit(s) in the L05 sign sorter (pos20 f43_05_032=6; sorter/l05/owner_sort_2026-10-06.tsv) -> H (transcription settled, value from key no.25)
 L06	5	45	H	
 L06	5	64	H	
 L06	5	83	H	
