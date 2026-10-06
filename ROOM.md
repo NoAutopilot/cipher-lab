@@ -9255,3 +9255,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 05:47 | R9-ECK62 worker | claim: eckert-1862 Apl/Washn heading forms in entry splitter + re-split, cap 2, box end 06:21 UTC, for LANE LANE-RUN9-account-1
 2026-10-06 05:47 | R9-BAL103 worker | claim: baluze103-letellier-marca-1644, 9 context rule vs calib/ + f.50 sign sorter; cap 4, box end 06:47 UTC; for LANE LANE-RUN9-account-1
 2026-10-06 05:47 | R9-COST worker | claim: costabili-modena-1491, q-shape split across R1166 P1/P2/P4, cap $3.5, box ends 06:36 UTC, for LANE LANE-RUN9-account-1
+2026-10-06 05:47 | R9-ECK64 worker | claim for LANE LANE-RUN9-account-1: eckert-1864, (9)-marked Jan-Mar 1864 entries past p.20 of mssEC 19; cap $5.5, box to 07:02 UTC (80% at 06:47)
