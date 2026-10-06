@@ -1121,8 +1121,48 @@ nearest candidates), and it is not a verdict on the key's design. Not found: no 
 the FAIL is concentrated in the low-confidence lines, ~$2; no further corpus building for this letter (the corpus knob is done:
 rule 3's third-attempt clause would apply to a fourth corpus).
 
-## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, 6 Oct 2026)
+## 17. R13-OLDSEG, 6 Oct 2026: per-segment es1600 judge of B/C1 (step (e)) -- all four ~158-letter windows FAIL; not concentrated in the low-confidence lines by the pre-registered rule; status stays open
 
-- Action that depends on nobody: (e) of section 16's Verdict -- a per-segment es1600 judge of B/C1 with a matched
-  real-window control, ~$2. Step (d') ran on 6 Oct 2026 (R12-OLDCORP, section 16: es1600, FAIL by 0.140). Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
+Brief: `.claude/briefs/runs/2026-10-06-account2-run13-jobs.md` (LANE LANE-RUN13-account-2), job R13-OLDSEG. Step (e) of section 16
+only; no reading, key, grade or corpus changed (rule 7 not triggered). Pre-registration `transcription/PREREG_R13-OLDSEG.md` pushed
+before any window was scored (e91cff59d). Script `scripts/segment_judge.py` (offline, no network); full output
+`transcription/segment_R13-OLDSEG.log`. Window cut: four token-boundary windows by folded-letter offset (PREREG item 2).
+
+| window | span (block+line) | N | score | real_p05 (in-sample, 400) | held-out p05 (1400) | held-out share <= score | null_p99 | shuffled-decode windows (committed key, seeds 1-3) | M/I letter share | OLD-PASS2 rate | judge |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | B1-B5 | 159 | -1.050 | -0.860 | -0.906 | 0.8% | -1.899 | -2.239, -2.104, -2.086 | 0.126 | 0.124 | FAIL |
+| 1 | B5-B9 | 158 | -0.911 | -0.867 | -0.908 | 4.4% | -1.890 | -1.931, -2.105, -2.073 | 0.057 | 0.128 | FAIL |
+| 2 | B9-C1 3 | 165 | -0.933 | -0.866 | -0.906 | 3.0% | -1.902 | -2.132, -2.063, -2.111 | 0.097 | 0.121 | FAIL |
+| 3 | C1 3-C1 7 | 152 | -1.080 | -0.875 | -0.910 | 0.4% | -1.858 | -2.101, -2.118, -2.021 | 0.151 | 0.104 | FAIL |
+
+Held-out real windows at these N (leave-one-file-out, 200 per fold, seven es1600 files): blended false-negative rate against the
+in-sample real_p05 9.7-12.1%, per-fold 4.5-18.0% (log). Can-vary check (PREREG item 4): held-out scores spread sd 0.086-0.088,
+p05-p95 about -0.91 to -0.65, so a window score can land anywhere in or outside the real band; real_p05 - null_p99 is 0.98-1.04 at
+~158 letters, so the judge keeps its power at this N. No shuffled-decode window comes near real_p05 (all -1.93 to -2.24).
+
+**Pre-registered call (item 6): "not concentrated"** -- all four windows FAIL, including the one with the lowest M/I share (window 1,
+0.057) and the one with the lowest OLD-PASS2 rate (window 3, 0.104).
+
+Descriptive, not pre-registered, not tests: (1) the windows split into two pairs. Windows 1 and 2 sit just under the gate (0.003 and
+0.027 below held-out p05; 3-4% of held-out real windows score as low), i.e. within the band real 1598-1621 letters reach; windows 0 and
+3 sit 0.14-0.17 below it (under 1% of held-out real windows), and these two carry the most M/I-graded letters (0.126, 0.151 vs 0.057,
+0.097) -- the M/I share ranks the four scores exactly, the OLD-PASS2 line rate does not. (2) In full-text context the 68 letters of
+M/I tokens average log10 P -1.160 against -0.972 for the 563 S-token letters; lines above vs at/below the median OLD-PASS2 line rate
+average the same (-0.991 vs -0.993). (3) Notation: window 3 holds four `V.Sa`; spelling them out "vuestra senoria" moves its score
+-1.080 -> -0.979 (window 0: -1.050 -> -1.041; window 2: -0.933 -> -0.921), still under the gate (the CLAUDE.md rule 3 PX-BRODEC
+abbreviation lesson, applied here only as a description). Read together: the FAIL is spread over the whole B/C1 text at a level close
+to real prose in windows 1-2, and is deepest where the M/I tokens are ("delo desigu enca", "bvenas", "pere", "quen", "qnla"), plus an
+abbreviation effect in window 3; it does not locate in the lines where the two readers disagreed. Not found: no window PASSes; no
+window falls to the shuffled-decode level.
+
+**Verdict: open.** Next steps: (a'') the owner's sign sorter for A/C2 (waiting, R7-OLDSORT/R7-OLDFIX), then a key-constrained re-read;
+(f) a crop re-look at the 14 M/I-graded B/C1 tokens, windows 0 and 3 first (token indices B28-B37 and C1 21-44), with one blind subagent pass on those
+crops only and the result re-judged per window under this PREREG's cut, ~$2.5. No further corpus building (section 16); a further judge run on the
+unchanged reading adds nothing -- re-judge only after (f) or (a'') changes a sign.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA and R13-OLDSEG, 6 Oct 2026)
+
+- Action that depends on nobody: (f) of section 17's Verdict -- a crop re-look at the 14 M/I-graded B/C1 tokens (windows 0
+  and 3 first), one blind pass, re-judged per window, ~$2.5. Step (e) ran on 6 Oct 2026 (R13-OLDSEG, section 17: all four windows
+  FAIL, not concentrated in the OLD-PASS2 lines; deepest where the M/I tokens are). Step (d') ran on 6 Oct 2026 (R12-OLDCORP, section 16: es1600, FAIL by 0.140). Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
   the owner's sorter, seeded 6 Oct 2026 (R7-OLDSORT, `sorter/`, section 14) and re-cut on the cipher lines only (R7-OLDFIX, section 15).
