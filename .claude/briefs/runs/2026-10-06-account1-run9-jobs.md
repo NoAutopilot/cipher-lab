@@ -111,3 +111,32 @@ against IA, Google Books (country=US) and OpenAlex. Report hits (search results 
 ### R9-NEVF -- fr3416-nevers-fils-1589: L05 glyph-atlas test re-registered without class 0 (cap 4.5, box 55 min)
 Verdict cheapest next: "the L05 glyph-atlas test re-registered without class 0 (pos 5/13/17/20), ~$3". PREREG first (new registration,
 class 0 excluded, same gate otherwise), then run; report real vs control; a FAIL is logged, not re-tuned.
+
+## Wave 3 (written 06:1x UTC from wave 1's own Verdict lines; intake gate exit 0 for every folder below, 6 Oct 06:1x UTC)
+
+### R9-BAL103B -- baluze103-letellier-marca-1644: circled/plain 9 crop read on the 42 tokens (cap 3, box 35 min)
+Verdict cheapest next (R9-BAL103): "the circled/plain 9 crop read on the 42 tokens, ~$1.5". Crops via tools/iiif_lines.py (pasted), one
+blind read batch; corrections TSV only where the read is unambiguous; re-decode --check, fr17 judge before/after. Do not touch the sorter
+files already flagged for account 3.
+
+### R9-ECK64B -- eckert-1864: mssEC 19 pages 61+ and unmarked pp.21-60 old-vocabulary entries (cap 5, box 60 min)
+Verdict cheapest next (R9-ECK64): scan pages 61 onward and the unmarked entries of pp.21-60 for old-vocabulary entries, read them with
+key-no9.md, search O9-U/O9-V in OR I/35 pt 2 and ser. III vol. 4. Per-page units as R9-ECK64; stop before a unit crossing 80%.
+
+### R9-PIS2 -- fr16045-pisany-rome-1585: T31 per-token crop compare vs T45/T36 table cells (cap 3.5, box 45 min)
+Verdict cheapest next (R9-PIS): "the T31 per-token crop compare against the T45/T36 table cells (11 tokens f.244r + 13 f.275r, ~$2)".
+Crops pasted; one blind batch per leaf + 1 reconciliation; rule 4 for any data conflict.
+
+### R9-DEC2678B -- decode-2678-bnf-colbert127-gravel-1665: locate Gravel's other cipher letters (cap 3, box 40 min)
+NOTES "Next (1)" (R9-DEC2678): R2733 (Mel. Colbert 168bis f.553, 1674) and the AE Correspondance politique Allemagne volume(s) for Jan 1665
+(Gravel's Diet dispatches to Lionne). Locator job only: find the volume shelfmark/ark and canvas range (Gallica SRU / manifest labels,
+archivesetmanuscrits, DECODE R2733 login-free metadata); thumbnail-level look whether the same two-digit groups occur. Do not transcribe
+or decode.
+
+### R9-FLOR -- florence-dieci-responsive: glyph_atlas threshold tuning on c.127 (no vision) (cap 3, box 40 min)
+Verdict cheapest next: "glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5". Script-only;
+report coverage before/after per line; do not build or publish a sorter in this job.
+
+### R9-ELEC -- fr5761-election-1519: full-text search of Deutsche Reichstagsakten J.R. I (Sonnet, cap 1.5, box 30 min)
+NOTES next: archive.org be-api fts and Google Books API (country=US) on Deutsche Reichstagsakten Jungere Reihe I for "chiffre"/"Ziffer" +
+Moltzan/Cordier; log every query and hit count (search results only, rule 10).
