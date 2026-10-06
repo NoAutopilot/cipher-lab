@@ -222,3 +222,22 @@ cijfer, cyfer, chiffre, sleutel, geheimschrift in those two archives; record inv
 nomenclator whose range could fit (no fit test). (2) rumpf "While waiting": re-probe NA 3.01.19 inv. 2030 and 2044 item pages
 (drupal-settings availability, 2 requests) and record the flag. <= 40 requests to nationaalarchief hosts, >= 1.5 s apart. Update both
 NOTES.md files.
+
+## Wave 5 (written 06:2x UTC 6 Oct).
+
+### R9-OBRED4 -- oldenbarnevelt-brederode-1605, image check of ciphertext.txt against NA 3.01.14 inv. 1490 (cap 7, box 80 min)
+Intake gate: `oldenbarnevelt-brederode-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R9-NAKEY (commit 4e3d52ab2): inv. 1490 (digitised, 7 scans) is the manuscript Duplicata of RGP 108 no. 92; ciphertext.txt is print-only
+(rule 2: image over transcription). Step 0 (2 requests): fetch scans 2-3 of inv. 2028 (Buzanval key) and say whether it has a three-digit
+names list; no fit test. Step 1: fetch inv. 1490 scans once (manifest), crop lines with `tools/iiif_lines.py --image ... --out ...` (paste
+the command, check the debug overlay), then ONE blind Sonnet pass per scan on line crops only (unit ~1.5 per scan), and one comparison
+unit of the pass against ciphertext.txt per scan (script diff first; the image settles each disagreement). Plan: 7 scans x 1.5 + compare
+~1 = ~11.5, which exceeds this cap, so work scans in order of cipher density and stop before a unit that would cross 80% of cap or box;
+record which scans are checked and which remain. Write disagreements as a corrections file (ciphertext.txt is never silently repaired) with
+per-sign counts, and say which tests on disk would change. Update NOTES Remaining gaps / next step with the scans left.
+
+### R9-ROELL8 -- roell-vandedem-1809, NA 1.02.20 inv. 978 early-February 1809 (cap 3, box 50 min)
+Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R9-ROELL7's next: inv. 978 (digitised, 362 scans) for early Feb 1809 -- the Testa 10 Feb cover enclosed one pli for Roell and one for Van
+Dedem. Locate the Feb 1809 run (thumbnails/sampling first, bisect by date), read only those scans (<= 40 requests, >= 1.8 s apart, one
+scan = one unit ~0.05); report any cipher letter or key and whether the 9 Feb letter or its pli is there.
