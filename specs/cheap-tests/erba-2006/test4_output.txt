@@ -1,0 +1,44 @@
+target: 17 words, 100 letters, lengths [2, 7, 6, 10, 1, 12, 11, 11, 8, 9, 4, 3, 1, 6, 3, 2, 4]; dictionary top 40000 of 33502 types
+held-out tokens 96816; length-matched pools: 1:7832, 2:17046, 3:11684, 4:7289, 6:9972, 7:8476, 8:7733, 9:5184, 10:4161, 11:2423, 12:1291
+PRIMARY CONTROL (gate): length-profile-matched held-out tokens
+  seed 0: solver acc 0.870  oracle 0.870  solver score 87.0 vs true 87.3  solver<true
+    plain : di partita accusa fiorentina a divulgazione atterraggio observation produrre australia pali non l perche dal di loro
+    decode: di partita accusa fiorentina a divulgazione atterraggio ? produrre australia navi non l perche dal di loro
+  seed 1: solver acc 0.580  oracle 0.770  solver score 71.2 vs true 76.8  solver<true
+    plain : di partite quanto denominata e contribuisca brazzaville interessare eseguiva provincia bacu era a totale uno la fora
+    decode: di sistema quanto denominata e contribuisce ? interessava esercizi ? becc gli e totale uno la pole
+  seed 2: solver acc 0.020  oracle 0.940  solver score 36.5 vs true 79.1  solver<true
+    plain : di esempio supero campionato l trasmissioni conquistato abbinamento inflitto cellulari dell dai l caduta poi ad vita
+    decode: il ? giorni ? a ? ? ? ? ? iraq con a vomito del di auto
+  seed 3: solver acc 0.720  oracle 0.830  solver score 57.2 vs true 64.9  solver<true
+    plain : di biennio feltri comandante d paragonabile conquistato brevettuale compreso ripartire rocc dei a perche tra la area
+    decode: di biennio ? comandante d paragonabile ? ? compreso ripartire rocc dei a perche tra la area
+  seed 4: solver acc 0.880  oracle 0.890  solver score 93.5 vs true 92.6  solver>=true
+    plain : lo movente contro affrontate e estremamente prevenzione intervenuti baiconur operativo cane dai e tenuta del il poco
+    decode: lo moletta contro affrontare e estremamente prevenzione intervenuti baiconur operativo gara dei e mentre del il poco
+  mean solver acc 0.614 (gate 0.6); mean oracle 0.860; solver>=true 1/5
+SECONDARY CONTROL (not gated): contiguous held-out windows, ~100 letters, real word boundaries
+  window 0: solver acc 0.047  oracle 0.821  solver score 26.8 vs true 58.2  solver<true
+    plain : assolutamente mutuate da esperienze nell ambito delle facolta umanistiche su come meglio coinvolgere le comunita partendo
+    decode: ? ? ha ? post banche tutti gavetta ? il pero riesce ? di ? critiche
+  window 1: solver acc 0.858  oracle 0.887  solver score 124.3 vs true 123.5  solver>=true
+    plain : si e scoperto che in cambio della promessa di un attenzione mediatica alcuni giornalistici passano alla cassa della politica
+    decode: ha e scoperta che in cambio della protesta di un intenzione mediatico alcuni giornalistico possono alla fatto della politica
+  window 2: solver acc 0.627  oracle 0.853  solver score 121.7 vs true 124.2  solver<true
+    plain : doloso non e ancora esclusa a causa del fumo acre e del calore elevato la polfer non puo fare accertamenti sull origine dell
+    decode: dolori non e ancora escluso a causa del fumo apre e del valore fabiola il valter non cui fare ? sull ? dell
+  window 3: solver acc 0.901  oracle 0.901  solver score 106.1 vs true 106.0  solver>=true
+    plain : dell hotel per chiedere aiuto in pochi minuti arrivano i soccorsi da parte dei camerieri ed il ragazzo viene trasportato
+    decode: dell hotel per chiedere avuto in pochi minuti arrivano i soccorsi da parte dei ? ed il ragazzo viene trasportato
+  window 4: solver acc 0.860  oracle 0.960  solver score 139.9 vs true 136.0  solver>=true
+    plain : parigi in cui al civico ha sede il partito socialista proprio hollande riporta i socialisti al potere dopo anni e dopo le
+    decode: parigi in cui il cazaco si sede il partito socialista proprio speranze riporta a socialista il potere dopo anni e dopo le
+  mean solver acc 0.659; mean oracle 0.884
+TARGET score 33.0, matched words 0.59; nulls max 33.4 mean 28.7
+  key: cu=am mi=dfu fi=bgnp un=ehq ro=irs ne=cz pi=v me=lot
+  decode: ad nerbate ? ? l ? ? ? ? ? cina piu a numero una ha sono
+VERDICT: target does not move -- negative under this design at the control's power
+
+real	13m18.163s
+user	13m9.834s
+sys	0m0.044s

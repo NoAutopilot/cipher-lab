@@ -198,7 +198,39 @@ folded (a case-sensitive variant was not run). Nothing was read.
 
 ## Next step (R12D-ERBA3, 6 Oct 2026)
 
-next: a different instrument for the letter-class design, not more restarts of this one: a word-level constraint (decode only
+[done 6 Oct 2026 by R12D-ERBA4, see Cheap test 4] next: a different instrument for the letter-class design, not more restarts of this one: a word-level constraint (decode only
 into Italian dictionary words between xs, using the 14-group segmentation test 2 supports, with the same held-out control),
 ~$2. More ciphertext would help more: the two sibling phrases printed by Tgcom24/il Giornale (18 June 2013) are in the same
 system and could be added to N if their token reading is checked against a press image. Who acts: agent.
+
+## Cheap test 4 (6 Oct 2026, R12D-ERBA4, LANE LANE-RUN12-account-4): word-level constrained decoder, letter-class design
+
+Pre-registered (`specs/cheap-tests/erba-2006/PREREG-test4.md`, pushed 3b3e4d2e3 before the scored run; a word-count miscount,
+15 for 17, was corrected in the same file before the scored run, nothing else changed). Disk only, zero network requests.
+Design: xs = word space (test 2); the 8 other case-folded token types = 8 letter classes; a cipher word may decode only into an
+Italian word from `tools/data/it21news` (2005-2010 folds, 33,502 types) whose class pattern equals it. Score = sum over words of
+log(frequency mass of matching words), unmatched = log(0.01); anneal over the letter->class key, 8 restarts x 4000 moves.
+Script `test4_wordconstrained.py`, output `test4_output.txt` (13 min CPU).
+
+| run | words / letters | solver letter accuracy | true-key oracle | other |
+|---|---|---|---|---|
+| primary control (gated), held-out 2011-26 tokens at the target's exact word-length profile, 5 seeds | 17 / 100 | **0.614** (0.870, 0.580, 0.020, 0.720, 0.880) | 0.860 | solver score >= true key's 1/5 (search shortfall) |
+| secondary control, contiguous held-out windows, 5 | ~17 / ~100 | 0.659 (0.047-0.901) | 0.884 | |
+| target | 17 / 100 | -- | -- | score 33.0, 10/17 words matched; 10 shuffled nulls max 33.4, mean 28.7 |
+
+Gate 0.60: control PASS, narrowly (two of five seeds below it). Target: does not exceed all nulls and matches 59% < 60% of
+words, so by the registered rule it **does not move**. Every target word of 10-12 tokens finds no dictionary match under the best
+key; the best key's output ("ad nerbate ? ? l ? ? ? ? ? cina piu a numero una ha sono") is not a reading and is not graded.
+
+How strong a negative this is: weak. The control clears the gate by 0.014 with a 0.02-0.88 spread, and the control's misses are
+search failures (the true key scores higher than the solver's key in 4 of 5), not identifiability as in test 3. The target's
+score (33.0) sits in the band of those failed searches (26.8-36.5), not near any true-key score (58-136): this instrument at this
+budget cannot tell "not Italian under this design" from "search did not find the key". Also conditional on the image-checked
+transcription (8 me/ne calls open, rule 2) and on xs being a space; the seven 10-12-token words remain the strongest sign
+against xs-as-space with one-letter tokens (test 2 already noted they are long for Italian). Nothing was read.
+
+## Next step (R12D-ERBA4, 6 Oct 2026)
+
+next: more ciphertext before more instruments -- check the two sibling phrases printed by Tgcom24 / il Giornale (18 June 2013,
+"Fimine Romixsmecu meficumixs", "fine xs Romi cufiRome Ro") against a press image and add them to N; with them, rerun test 4
+with 4x the anneal budget (control seeds must then all clear 0.60 before the target), ~$2. Who acts: agent.
