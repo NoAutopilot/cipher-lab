@@ -1,0 +1,3 @@
+# regenerable by ../regen_images.sh (R10-SEURE4, D1-SEURE); only samples and manifests are committed
+*.jpg
+!sample_*.jpg
