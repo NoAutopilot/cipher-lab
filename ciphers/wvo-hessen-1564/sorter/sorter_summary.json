@@ -1,0 +1,42 @@
+{
+ "tiles": 258,
+ "by_status": {
+  "kept": 165,
+  "moved": 83,
+  "merged": 0,
+  "not-letter": 0,
+  "aside": 6,
+  "bad-cut": 4
+ },
+ "signs_before": 28,
+ "signs_after": 48,
+ "confirmed_piles": [],
+ "not_letter_piles": [],
+ "merges": {},
+ "new_piles": [
+  "BAD-CUT",
+  "k02-b",
+  "k03-b",
+  "k03-c",
+  "k05-b",
+  "k08-b",
+  "k13-b",
+  "k13-c",
+  "k13-d",
+  "k13-e",
+  "k18-b",
+  "k18-c",
+  "k20-b",
+  "k20-c",
+  "k21-b",
+  "k22-b",
+  "k22-c",
+  "k23-b",
+  "k25-b",
+  "k25-c",
+  "k27-b",
+  "k28-b",
+  "k28-c"
+ ],
+ "recuts": 44
+}
