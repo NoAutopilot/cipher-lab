@@ -154,3 +154,19 @@ Intake gate: `sp99-wotton-1622: open (line 1) -- edition/page or full-text-searc
 Folder "Recommended next steps" item (2): with TNA Discovery's API (host table; tools/discovery_items.py if it fits), read the description of
 every item in SP 99/24 and SP 99/25 (not by keyword), and list any that look like a numbered code-name list, a cipher key, or a letter
 using numeric agent names (159 etc.), with Discovery ids, in a TSV + "## D4-SP99" NOTES.md section. Search result only; no status change.
+
+### D4-15576 -- fr15575-syllabic-1592-95, fr.15576 f.2: period interlined decipherment aligned to its cipher (Opus; cap 11, box 130 min)
+Intake gate: `fr15575-syllabic-1592-95: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+(fr15575 is an f-folder, but this lane already holds it: D4-SYL54 13:03 and the L63 desk row. Claim it in ROOM before starting.)
+Remaining gap "target decode fr.15576 f.2" (BnF fr.15576 f.2, Gallica ark:/12148/btv1b9063777v, canvas 8): a 3-digit system outside no.54
+with a period interlined decipherment. Read the folder's fr.15576 f.2 premise-test section and NV05C's lesson (one faint line per crop,
+gloss-only crops) first. Units (state them in your claim): crop step pasted (`tools/iiif_lines.py --ark ark:/12148/btv1b9063777v --canvas 8
+--out ciphers/fr15575-syllabic-1592-95/f15576/ --debug`; separate gloss bands from cipher bands, check every overlay) = 1; gloss 2 blind
+Sonnet passes + 1 reconciliation = 3; cipher digit groups 2 blind Sonnet passes + 1 reconciliation (tools/reconcile_passes.py) = 3; alignment
+with `tools/interlinear_align.py` (never a private DP/EM script) = 1. ~1.5 per unit. If the two cipher passes split on more than a tenth of
+the groups, do not run a third: reconcile what agrees, hand the rest to a sorter focus list, and align only the agreed lines. Output:
+f15576/key_f15576.tsv (value -> meaning with counts, grade C where the print gloss gives it), a decode with --check exit 0 (decode.json +
+tools/decode_key.py), per-token grades with counts (rule 4). Before calling any value C, a shuffle control on the (group, gloss-span) pairing
+that can vary on the agreement statistic (rule 3; PREREG pushed before the scored run). Compare the 3-digit codes with key_no54.tsv and
+no.31 (shared values or not). Write "## D4-15576" in NOTES.md; Remaining gaps / Escalation; gaps_check.py pass; a ROOM flag for a verifier if
+any value reaches C. Report what was found and where it was not found; do not classify novelty.
