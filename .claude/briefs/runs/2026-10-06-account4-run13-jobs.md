@@ -88,3 +88,29 @@ tools/next_steps.py will parse it (read its docstring for the parsed forms), nam
 or, if you find a genuinely untried step that depends on nobody, name it with a cost and say so in your report (do not run it). No status-line
 change unless rule 5 requires it. Re-run `python3 tools/next_steps.py` and confirm each folder no longer shows a stale `runnable`
 (commit NEXT-STEPS.tsv only if that is the tool's normal practice).
+
+## Wave 2 (spawned 18:0x UTC 6 Oct), from wave 1's named next steps. Wave 1 cost (get_session): MANTSCR 2.85, SIENAJ 3.58, SCORP2C 2.13,
+RABYPDF 0.99, STALE 2.10 = 11.65. Intake gates as wave 1 (untersberg-code run below).
+
+### R13-MANT85 -- sachsstaatsarchiv-manteuffel-1712: frame 694/09 0085 transcription and per-leaf gloss gate (Opus; cap 5, box 70 min)
+R13-MANTSCR found 694/09 0085 is a glossed nomenclator-range frame (values to 483/501, M) -- the only one outside 694/08 so far, i.e. possible
+glosses for f.410's 24 U codes and f.409v's open codes. Follow the RUN3-MANT / GAPS195 pattern exactly (read those NOTES sections first): crop
+step pasted (tools/iiif_lines.py --image), 2 blind Sonnet passes of the code groups + gloss lines (one call per crop batch) + 1 reconciliation
+unit (~1.5 each = 4.5), PREREG of the per-leaf gate (single-code and multi-code gloss consistency vs shuffle p95) pushed before scoring.
+Only if the leaf's own gate PASSes (CLAUDE.md rule 3, per-unit gate before merge) may codes enter key.tsv, graded C/M, with conflicts with
+Krauske logged, never resolved by majority (rule 4); then decode_key --check exit 0 and report the U-count change on f.410/f.409v. A TIE or FAIL:
+nothing merges, log it. Any change to f.410's reading after AUDIT.md -> ROOM flag for a verifier. gaps_check passes.
+
+### R13-SIENA719 -- siena-concistoro-2308: pooled no. 7 + no. 19 homophonic+nomenclator family run (Opus; cap 3, box 50 min)
+R13-SIENAJ: no. 19 still clears no. 7's sign stock on blind labels (pJ 0.0015 vs gate 0.0033); no. 9 does not; reader-bias control not run. Pool
+no. 7 + no. 19 (481 tokens on J's transcripts) for the R10-SIENA7N family with a matched control AT THE POOLED N and K (rule 3; read
+R10-SIENA7N's control design and its blind baseline first -- if the control at pooled N is below its gate, stop: CONTROL BELOW GATE, non-test).
+Use tools/family_run.py or the R10-SIENA7N script; HYPOTHESES.md row with both numbers. Disk only, no DECODE. Nothing is read unless the
+target clears; any reading is graded and goes to a verifier. Status stays open unless rule 5 says otherwise.
+
+### R13-UNTOP -- untersberg-code: opening-27 painted inscription, blind 2-pass transcription (Opus; cap 4.5, box 60 min)
+R13-STALE's "## Next step (R13-STALE, 6 Oct 2026)": blind 2-pass transcription of the 3-line opening-27 inscription (native crops via
+tools/iiif_lines.py --image, crop step pasted; one Sonnet pass per line batch per pass) + 1 reconciliation, collated against Herzog's "Vgl. fol. 27"
+apparatus, to see whether symA-like signs occur in a second context. Read TRANSCRIPTION.md's sorter rule first: if the sign inventory is
+unsettled and the two passes split > 10%, stop after the passes and name the sorter step (do not run a third machine pass). Paste
+`python3 tools/intake_gate_check.py untersberg-code` output first; a nonzero exit stops the job. Report symA occurrences found / not found.
