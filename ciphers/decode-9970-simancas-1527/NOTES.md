@@ -168,7 +168,7 @@ apart, no challenge. Shared job total: about 39 de-crypt.org requests. Vision ca
 ## While waiting (updated 3 Oct 2026, IMG-DECODE1)
 
 [done 3 Oct 2026, IMG-DECODE1] The image blocker is cleared: R9970's four images were fetched and checked by eye, and they carry
-no cipher (section above). Next action that depends on nobody: report the catalogue mismatch to the orchestrator. The target as
+no cipher (section above). [done 6 Oct 2026, D22-FTS: Galende 1994 p.163 gives only the same AGS leg. 1563 fol. 572 citation, see the D22-FTS section] Next action that depends on nobody: report the catalogue mismatch to the orchestrator. The target as
 imaged is a catalogue correction, and the 1527 letter is a separate search. Two things remain: a search for the letter's own
 location (Galende 1994 p. 163, Simancas Estado leg. 1563 neighbouring folios via PARES when reachable), and a read of
 "Antonio Fucar" at full size if a later worker needs the date.
@@ -176,3 +176,9 @@ location (Galende 1994 p. 163, Simancas Estado leg. 1563 neighbouring folios via
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: locate the 1527 letter itself -- read Galende 1994 p.163 (on disk in a dbourdeau/cyphersolver clone, esp318/lit/galende1994.txt) for its Simancas Estado leg. 1563 citation, then grep Aymeloglu's cached PARES sweep (catalogue/pares-*.jsonl; PARES itself is dead from the cloud) for the neighbouring folios; ~$1 (estimate). The image blocker is already cleared (IMG-DECODE1).
+
+## D22-FTS (6 Oct 2026)
+
+Item 5 of D22-FTS (Sonnet worker, 6 Oct 2026). Shallow clone of dbourdeau/cyphersolver (MIT / CC BY 4.0; credited) in the scratchpad (1 request, github.com); the file is `targets/esp318/lit/galende1994.txt` (the brief's `esp318/lit/` path sits under `targets/`); only that file was read (latin-1 text, page marker 163 at line 254).
+Galende Díaz, J. Carlos (1994), documentation list, entry: "Carta del 26 de octubre de 1527 de Andrea del Burgo al canciller Gattinara desde Ferrara (A. G. S., sec. Estado, leg. 1563, fol. 572)." It stands in a dated list of letters from AGS Estado and B.R.A.H. holdings, among entries for Lope de Soria and Gattinara; the page's footnote 6 says a study of "esta documentación y sus claves" is published in *Hispania* LII/181, pp. 493-520 (it names BRAH sign. 9/1951-9/1954 there). So Galende p.163 supplies the Simancas citation DECODE R9970 already carries (leg. 1563, fol. 572, 26 Oct 1527, del Burgo to Gattinara, Ferrara) and no more: it does not say the letter is ciphered and does not print its text. Neighbouring-folio check not done (PARES dead from the cloud; Aymeloglu's catalogue/pares-*.jsonl not grepped this pass). Lead: *Hispania* LII (181), pp. 493-520, for the keys of that correspondence.
+Result: the letter's location is the same shelfmark as the DECODE record; no neighbouring folios identified. Not a novelty verdict. Requests: github.com 1.

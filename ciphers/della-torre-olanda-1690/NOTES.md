@@ -82,4 +82,10 @@ Verdict: stays `blocked` (no edition of the letters exists to open; whether the 
 
 ## While waiting
 
-One action that depends on nobody: search Dutch printed sources for Della Torre's 1690 mission (Resolutien der Staten-Generaal, Huygens retroboeken Staten-Generaal 1690) for a clear copy of his despatches; ~USD 1.
+[done 6 Oct 2026, D22-FTS: Staten-Generaal retroboek stops at 1625 and cannot cover 1690; one lead in Willem III-Bentinck KS 24 p.800, unread] One action that depends on nobody: search Dutch printed sources for Della Torre's 1690 mission (Resolutien der Staten-Generaal, Huygens retroboeken Staten-Generaal 1690) for a clear copy of his despatches; ~USD 1.
+
+## D22-FTS (6 Oct 2026)
+
+Item 4 of D22-FTS (Sonnet worker, 6 Oct 2026), search only. Grade I.
+Huygens retroboeken full-text search (accessor `searchText`, whole-edition, >=2.2 s apart): the *Staten-Generaal* retroboek covers only the 1576-1625 Besluiten (volume labels "Deel 13 (1604-1606, GS 101)"), so it cannot hold 1690 resolutions: `Della Torre` 0, `Torre` 2 (both a 1604-06 Antwerp merchant, Paulo de la Torre), `Savoye` 205 (not read). *Correspondentie van Willem III en Bentinck* (retroboek willemiii, KS 23-28): `Della Torre` 0, `Torre` 0, `Torre Savoye` 0, `Savoyse gesant` 0, `President de la Tour` 3 (noise), `Savoye` 69, `gezant van Savoye` 19. The 19 include the letter-writer list of Eerste gedeelte deel 2, KS 24, p.800: "De la Tour(?), buitengewoon gezant van den hertog van Savoye (geschreven met Blancard ...)" followed by dates "... September, ... October" -- i.e. a Savoy extraordinary envoy appears as a correspondent in the Willem III-Bentinck edition (the OCR spelling is garbled, not confirmed as Della Torre, no year read). Heinsius (`search_in_text`) `Della Torre` 0. Not reached: the page itself (`pages.json?source=` for KS 24, p.800 and the letter pages).
+Result: no clear copy of a Della Torre despatch found; one lead for a page read (KS 24 alphabetical letter list p.800 and the letters it indexes), ~USD 0.5. Not a novelty verdict. Requests: resources.huygens.knaw.nl 17 (search pages), no pages.json fetched.
