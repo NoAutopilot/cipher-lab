@@ -649,3 +649,75 @@ substitution with the seven anchors only; the nomenclator and spelling caveats o
 **Next step (suggestion, not run):** arbitrate the J/B splits on the other nine lines the same way (about 66 split spots, worker
 only, no subagent, about USD 1.5), which would put the error figure on all 327 tokens; then the homophonic + nomenclator family
 R9-SIENA7 names. A Sonnet second reader is not the instrument for that: it disagrees with J on a third of the signs.
+
+## R10-SIENA15 -- no. 15 against the other 16th-century key sheets of fasc. 1, shape presence (account 4 worker for LANE-RUN10-account-4, 6 Oct 2026, 09:43-09:54 UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` job R10-SIENA15 (R9-SIENA15's "Next step for no. 15"). Status unchanged: `open`.
+
+**Pre-registration.** `PREREG-R10-SIENA15.md`, pushed in f36e1ba3d at 09:46 UTC, before any key image was opened. The criterion: a
+sheet is a CANDIDATE if at least 3 of no. 15's four families missing from R4764 are drawn as cipher signs in its alphabet, null or
+doubles rows. The families are F1 ◎ (double circle/bullseye), F2 ⊔, F3 barred x (XT/XH) and F4 an R-shaped sign. A sheet with 2 of 4
+is "partial overlap". Reader calibration comes first. The negative control is R4764 P2, which must read <= 1. The positive control is
+no. 15 itself (R4803 P2, the L2.15-L2.16 band), which must read >= 3. (The PREREG header first said "09:5x"; it was corrected to the
+date -u reading of 09:46 in the closing commit. No other change was made.)
+
+**Route.** One headless DECODE login: `tools/decode_browser_login.js 4765 <scratch> --max-files 0 --delay 1700 --listen CMDFILE`.
+After it, 12 `page` lines (RecordsView 4760, 4764, 4766-4769, 4774, 4776, 4777, 4784, 4789, 4803) and 18 `get` lines for full-size
+images. All 18 came back as real JPEGs (none was forbidden.png). Saved RecordsView pages were deleted (account name). Images and crops
+stay in the scratchpad, per the LANE-IMAGES rule. Requests to de-crypt.org: about 32 (login 2, RecordsView 12, images 18), 1.7 s
+apart, no challenge. github.com: 1 sparse clone of dbourdeau/cyphersolver `targets/siena1421` (HEAD adbf9a1, read-only: NOTES.md piece
+and key table, no15v.txt legend).
+
+**Crop step (pasted).** The positive control used the R9 crop command verbatim:
+
+    $ python3 tools/iiif_lines.py --image IMG_R4803_I27950_P2.jpg --out crops --region 60,1990,2150,600 --prefix p2 --max-width 1100 \
+        --overlap 100 --distance 45 --prominence 20 --ink 120 --smooth 3 --top-margin 20
+    ...(local): region 2150x600, 10 lines, 10 bands x 3 segments ... wrote 30 crops
+
+Key sheets are tables, not lines, so they were read from region crops (PIL, autocontrast, at most 1400 px). Each sheet was first
+located on a <=1500 px overview, then its alphabet, doubles and null rows were viewed at native or near-native resolution. Doubtful
+signs were viewed at 3x native. All viewing was done by the worker itself; there were no subagents and about 24 vision looks.
+
+**Calibration.** Both controls passed. No. 15 (positive): ◎, R and an x with a bar read plainly on L2.16 (>= 3 of 4). R4764
+(negative): 0 of 4, matching R9-SIENA15.
+
+| sheet | what it is (from the sheet; Bourdeau's label where he has one) | F1 ◎ | F2 ⊔ | F3 barred x | F4 R | count | class |
+|---|---|---|---|---|---|---|---|
+| R4765 | letter alphabet + nulls "5 8 7 2 ‡ ◎ 4"; nomenclator Spagna, Imperador ... Marchese del Guasto | yes (null) | no (rounded u for g) | no (x with a dot) | no | 1 | no |
+| R4760 | "1536", "Cifra con m. Giov..."; Latin-letter shifted alphabet with dotted-null rule | no | (only as a nomenclator code, Genova) | no | no | 0 | no |
+| R4766 | "Cifra ... Bart.o Tolomei" (not in Bourdeau's table); letter alphabet | yes (e and q) | no | no | yes (= x) | 2 | partial overlap |
+| R4767 | "Cifra con m. Aglo Venturi"; nulls are the numbers 1-40 | no | no | no | doubtful (R-like loop under N) | 0-1 | no |
+| R4768 | "Cifra con m. Mercanto..."; Latin-letter alphabet | no | no | no | no | 0 | no |
+| R4769 | small alphabet (not in Bourdeau's table) | no | no (ll with top bar) | no | no | 0 | no |
+| R4774 | "Cifra con S. Aloisio..."; Latin-letter shifted alphabet (P1 and P2) | no | no | no | no | 0 | no |
+| R4776 | syllabic table, alphabet strip top left | no | yes (alphabet) | no | no | 1 | no (alphabet rows) |
+| R4777 | letter alphabet + Doppie + Nulle; nomenclator Granvelle, Cobos, Don Pedro de Toledo, Card. Farnese, Marchese del Vasto, Duca d'Amalfi, Principe d'Oria | no (e = a circle round an 8, not concentric) | no | yes (ff = x with a dot above and a foot bar) | yes (x = small R; null "R" with an f-tail) | 2 | partial overlap |
+| R4784 | letter grid A-M + Duple; Latin code words (Ant. de Leyva, Alarcon, Andrea Doria) | no (rr = a spiral on a stem) | yes (d, rr) | no (E has an x through a circle) | no | 1 | no |
+| R4789 | letter alphabet + nulls + duple; 15th-c nomenclator (Rex Aragonum, Dux Mediolani, Senenses) | no | no | no | yes (in row 2) | 1 | no |
+
+**Result: no sheet is a CANDIDATE** (pre-registered criterion, with both calibrations passed). Two sheets show partial overlap:
+R4766 (Tolomei) and R4777. No. 15 therefore has no fitting key on file in fasc. 1. This combines R9-SIENA15's numbers for R4764 with
+this pass's shape lookup over the other eleven 16th-century and undated alphabet sheets. **Gap for no. 15:
+too-short / no-key-material.** It has 232 tokens, and no sheet in the busta carries its sign families. The folder is `open`, so there
+is no "## Remaining gaps" section (`tools/gaps_check.py`: SKIP, status open). This line is the gap record until the folder becomes
+`partial`. The lookup excluded these sheets: R4764 (done in R9), R4773 (numeric), R4785/R4786 (code books), R4787 (titles book),
+R4788 (genealogy) and the 15th-century keys.
+
+**Post hoc, not in the PREREG (reported as such; no gate):**
+- R4777's nomenclator names belong to Charles V's court in the 1540s: Granvelle, Cobos, Don Pedro de Toledo, Card. Farnese and the
+  Marchese del Vasto (d. 1546). That is no. 15's milieu (Bandini, orator at the Emperor's court, Dec 1546 / Jan 1547). Its style is
+  also close to no. 15's: a barred-x double, R-shaped signs, a circled sign, and a ÷-like stroke in the e column. A sheet of the same
+  office and period that misses the families matches R9's reading that no. 15 uses a related but different alphabet. It does not
+  show that R4777 is no. 15's key, and the criterion was not met.
+- R4776's syllable cells, as opposed to its alphabet rows, carry circle signs (di/do/du), an R (fu) and x-shapes. Its names (Mons. di
+  Lansac, Card. di Ferrara, Marignano, Corsica, Bellai) place it about 1552-55, later than no. 15 and in the French-protected period.
+- R4769's "o—●" and barred "ll" look like no. 15's OL and U at a glance. They were not counted because they do not meet the
+  families' definitions.
+
+Grades: no token read; no H or C. No reading, no key.tsv, and no change to any transcript.
+
+**Next step for no. 15 (suggestion, not run; this PREREG does not license it):** an R4777 concordance with no. 15. It would use the
+R9-SIENA15 S2 gate, its value-shuffle and order-shuffle controls, and its power check at the valued count, from one native crop set of
+R4777's three rows (file IMG_R4777_I27882_P.jpg, 2248x4000, filesrv `?file=` name as given; one DECODE login to re-fetch). Other files fetched this pass: IMG_R4765_I27858_P, IMG_R4760_I27832_P1-P3, IMG_R4766_I27863_P1-P2, IMG_R4767_I27864_P, IMG_R4768_I27865_P, IMG_R4769_I27868_P, IMG_R4774_I27875_P1-P2, IMG_R4776_I27879_P1-P2, IMG_R4784_I27891_P, IMG_R4789_I27907_P, IMG_R4764_I27857_P2, IMG_R4803_I27950_P2 (all .jpg). It costs about USD 2. It only makes sense
+if the concordance values at least about 100 of the 232 tokens; R9's P variant reached 71 and had a power of 0.63. Otherwise no. 15
+stays parked as too-short / no-key-material.

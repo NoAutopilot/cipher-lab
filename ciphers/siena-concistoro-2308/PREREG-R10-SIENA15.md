@@ -1,4 +1,4 @@
-# PREREG R10-SIENA15 -- no. 15 against the other 16th-century key sheets of fasc. 1, shape presence (6 Oct 2026, written 09:5x UTC by date -u, pushed before any key image was viewed)
+# PREREG R10-SIENA15 -- no. 15 against the other 16th-century key sheets of fasc. 1, shape presence (6 Oct 2026, written 09:46 UTC by date -u, pushed before any key image was viewed)
 
 Question: does any 16th-century or undated alphabet key in Concistoro 2308 fasc. 1 (DECODE R4746-R4789) carry the sign families that
 no. 15 (R4803, Mario Bandini, Dec 1546 / Jan 1547) uses and R4764 lacks (R9-SIENA15)?
