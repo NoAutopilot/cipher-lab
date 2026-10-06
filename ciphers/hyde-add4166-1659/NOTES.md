@@ -49,3 +49,16 @@ hyde-add4166-1659: open (line 1) -- edition/page or full-text-search citation fo
 exit 0
 ```
 `tools/next_steps.py --wait-only | grep hyde-add4166` printed no line.
+
+## Test 1 (NA-HYDE, 6 Oct 2026, LANE NEWT-A-account-1)
+Method: spec test 1 on the print transcription only (`ciphertext_print.txt`: Birch 1742, Thurloe vol. 7 pp.775-776, BHO, fetched 6 Oct 2026, 1 request; this is the print, not the leaf, rule 2; every result below is conditional on it). Script `test1_census.py`, output `test1_output.txt`. No key, no decipherment.
+Control: shuffled pairing of the 39 groups-per-line counts to the 39 names, 1000 draws (seed 20261006). It can differ from the target for this statistic (re-pairing changes which count meets which name length), so it is a real control (rule 3).
+| statistic | target | control mean (p95) | P(control >= target) |
+|---|---|---|---|
+| exact count == letters | 0/39 = 0.000 | 0.036 (0.077) | 1.00 |
+| within 1 | 5/39 = 0.128 | 0.135 (0.205) | 0.71 |
+| Pearson r (groups, letters) | -0.017 | 0.003 (p95 0.255) | 0.57 |
+Reading: the name lines hold 98 groups for 206 letters; 28 of 39 lines have exactly two groups whatever the name's length (3-7 letters), so groups are not one-per-letter; the target does not exceed the control on any statistic. The spec's own example (Holt = 6 groups, 4 letters) is one of two lines with more groups than letters. Negative for the letter-per-group hypothesis, conditional on the print.
+Repeats (name lines only, plus the long line before them): 670 appears 6 times (5 name lines, all five line-initial, plus the final token of the long line); 101 six times (name lines: 2 first, 1 middle-start... positions 2nd, 3rd, 1st, 2nd, 1st in their lines; plus once in the long line); 25 four times (name lines: 3rd of 6, 4th of 4, 6th of 6; plus once in the long line). So 670 is a line-opening group (5/5), 101 and 25 are not tied to a boundary. The two "Frith" lines carry different groups (867 863 598 vs 101 953 740).
+Not found: any key or reading for these groups; test 2 (Hyde-Barwick key, groups <693) not run. Next step is the spec's test 3 (image access) or a human-side step; this worker does not extend.
+Requests: BHO 1.

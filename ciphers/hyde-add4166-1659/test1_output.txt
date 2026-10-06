@@ -1,0 +1,9 @@
+name lines N=39; groups total 98; letters total 206
+per line (groups,letters,name): [(6, 7, 'Perkins'), (3, 4, 'Tush'), (4, 5, 'Craft'), (2, 5, 'Knots'), (4, 5, 'Botts'), (2, 7, 'Dantrey'), (3, 5, 'Harle'), (2, 7, 'Flamton'), (2, 6, 'Bruton'), (2, 6, 'Barton'), (3, 5, 'Carle'), (2, 6, 'Fuller'), (2, 6, 'Sharpe'), (2, 6, 'Popple'), (2, 6, 'Hespin'), (2, 6, 'Bobley'), (2, 5, 'Suson'), (2, 5, 'Bring'), (2, 3, 'Day'), (2, 6, 'Cauton'), (2, 6, 'Bright'), (2, 4, 'Yole'), (2, 5, 'Rower'), (2, 5, 'Brave'), (2, 4, 'Prag'), (2, 6, 'Manton'), (2, 6, 'Switon'), (2, 4, 'Clun'), (2, 6, 'Cotton'), (2, 4, 'Lark'), (4, 6, 'Chance'), (3, 5, 'Dorme'), (2, 5, 'Shent'), (2, 6, 'Bosrey'), (2, 5, 'Payne'), (2, 4, 'Bray'), (3, 5, 'Frith'), (3, 5, 'Frith'), (6, 4, 'Holt')]
+count distribution groups: [(2, 28), (3, 6), (4, 3), (6, 2)]; letters: [(3, 1), (4, 7), (5, 14), (6, 14), (7, 3)]
+exact agreement: target 0.000; control mean 0.036 sd 0.025 p95 0.077 max 0.128; P(control>=target)=1.000
+within-1 agreement: target 0.128; control mean 0.135 sd 0.037 p95 0.205 max 0.231; P(control>=target)=0.708
+Pearson r: target -0.017; control mean 0.003 sd 0.165 p95 0.255 max 0.473; P(control>=target)=0.570
+repeat 670: 5 in name lines (line,pos,len)=[(1, 0, 3), (5, 0, 2), (6, 0, 3), (11, 0, 2), (14, 0, 2)]; first-in-line 5, last-in-line 0
+repeat 101: 5 in name lines (line,pos,len)=[(0, 1, 6), (6, 2, 3), (10, 0, 3), (31, 1, 3), (37, 0, 3)]; first-in-line 2, last-in-line 1
+repeat 25: 3 in name lines (line,pos,len)=[(0, 2, 6), (2, 3, 4), (38, 5, 6)]; first-in-line 0, last-in-line 2

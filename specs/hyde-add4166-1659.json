@@ -2,7 +2,9 @@
  "slug": "hyde-add4166-1659",
  "name": "Hyde to Mr Milles, intercepted letter, 1 Nov 1659 (BL Add MS 4166 ff.92-93, DECODE R4886)",
  "date": "1 Nov 1659 (copy in the Thurloe papers)",
- "language_candidates": ["en"],
+ "language_candidates": [
+  "en"
+ ],
  "ciphertext_pending": "No transcription of the leaf exists. Printed numerals only: Birch 1742, Thurloe State Papers vol. 7 pp.775-776 (BHO thurloe-papers/vol7/pp771-781), 133 numerals, 103 distinct, max 966, read 6 Oct 2026 and not yet checked against the image (BL images 'currently unavailable'; DECODE image needs login). Any test on the print text is conditional on that transcription.",
  "alphabet": "decimal numbers 5-966 in space-separated groups; f.93 is laid out as number groups followed by cover names (Mr. Perkins, Mr. Tush, ...), with a few clear English words interleaved",
  "constraints": {
@@ -16,8 +18,25 @@
   "3. Only with image access (a person's DECODE login or BL reader): check the print numerals against the leaf and read f.94-f.95r for the key."
  ],
  "matched_control": "shuffled pairing of number lines to names (same line lengths) for test 1; shuffled groups for test 2; not yet run",
- "cheap_test_done": [],
- "judge": {"language": "en", "letters_min": 20, "letters_max": 200, "control_samples": 200, "note": "N is about 133 numerals and the plaintext is partly names; a language judge is meaningful only for a reading that covers the interleaved clear-word lines."},
+ "cheap_test_done": [
+  {
+   "date": "6 Oct 2026 (date -u 23:48-00:0x UTC)",
+   "by": "NA-HYDE worker (LANE NEWT-A-account-1)",
+   "test": "1: groups per name line vs letters in cover name, on the print transcription (Birch 1742 via BHO, not the leaf)",
+   "target": "N=39 name lines, 98 groups, 206 letters: exact agreement 0/39 = 0.000; within-1 5/39 = 0.128; Pearson r -0.017",
+   "control": "shuffled pairing of the same group-count lines to the same names, 1000 draws, seed 20261006: exact mean 0.036 (p95 0.077); within-1 mean 0.135 (p95 0.205); r mean 0.003 (sd 0.165, p95 0.255)",
+   "verdict": "target does not beat control on any of the three statistics (P(control>=target) 1.00, 0.71, 0.57): groups-per-name is not letter-per-group; 28 of 39 lines have exactly 2 groups regardless of name length. Conditional on the print transcription. Not a test of any nomenclator reading; test 2 not run.",
+   "cost": "read from get_session by the orchestrator",
+   "script": "ciphers/hyde-add4166-1659/test1_census.py"
+  }
+ ],
+ "judge": {
+  "language": "en",
+  "letters_min": 20,
+  "letters_max": 200,
+  "control_samples": 200,
+  "note": "N is about 133 numerals and the plaintext is partly names; a language judge is meaningful only for a reading that covers the interleaved clear-word lines."
+ },
  "value": "low-medium: a short table-like intercept with cover names in clear, a printed key family nearby, and no reading found in any source checked.",
  "model": "Sonnet",
  "written": "6 Oct 2026 by worker NB-HYDE (LANE NEWT-B-account-2)"
