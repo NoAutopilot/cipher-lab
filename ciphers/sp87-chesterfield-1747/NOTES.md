@@ -163,3 +163,14 @@ Waits on: the TNA page copy of SP 87/23/41, 51, 70 (ASKS row 57) and a person re
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: grep Coxe, Pelham Administration (1829, archive.org) for July-Aug 1747 Waldeck/Cronstrom despatches to Cumberland, a free crib source for the cipher passages, ~$0.5; the page copy of SP 87/23/41, 51, 70 is ASKS 57 (not yet in outreach/tna-page-copy-batch.md as of 5 Oct 2026). Who acts: agent. Source: this file's "## While waiting (3 Oct 2026, GF4-BATCH8)"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## Coxe, Pelham Administration grep (R7-CHEST, 6 Oct 2026)
+
+Job: grep Coxe, *Memoirs of the Administration of ... Henry Pelham* (1829) for July-Aug 1747 Waldeck/Cronstrom despatches to Cumberland as a crib source.
+Method: archive.org `_djvu.txt` of `memoirsofadminis01coxe` (1,543,073 bytes) and `memoirsofadminis02coxe` (1,806,167 bytes), grep for cronstrom|waldeck|ginkel|ginckel|cronstr, then context reads. 4 requests to archive.org (2 advancedsearch/download pairs), >=2 s apart; no login.
+
+Found (OCR text, not page image): vol. 1 names Cronstrom twice, both narration: the siege of Bergen-op-Zoom, trenches opened 15 July, town taken 15 Sept 1747, governor "in the eighty-first year of his age" (index: i 361), and a Pelham letter of August 1747 to Horace Walpole ("Cronstrom himself says, it is impossible to save the town"). Waldeck appears only in 1745-46 contexts (Fontenoy, command of the Dutch army, his 100,000-man plan; index i 231). Ginkel appears once, 1745 (Newcastle/Carteret-era letter). One Cumberland-to-Chesterfield despatch is quoted, dated 3 July 1747 (Lauffeldt, vol. 1 ch. XII footnote), a different despatch from SP 87/23/41, /51, /70; the quote concerns Bathiany and the right wing and names neither Waldeck nor Cronstrom. Vol. 2: index entries only (Cronstrom i 361; Waldeck i 231).
+Not found: any July-Aug 1747 Waldeck/Cronstrom despatch to Cumberland, any passage reading as a clear copy or paraphrase of the cipher items' content, any decipherment. As a crib source this is a negative; at most a dating anchor (Bergen-op-Zoom fell 15 Sept 1747, after SP 87/23/70's date). Read from OCR, so a scanno could hide a hit; the "Ginkel"/"Waldeck" spellings were tried, "Waldek"/"Waldec" were not. No grades: no reading was produced (H/C/S/M/I counts 0).
+Search result for the log, not a novelty verdict.
+
+Remaining gap closed: the Coxe grep step. Still waiting on the TNA page copy (ASKS 57) and the Dobrée vol. 2 read.
