@@ -94,3 +94,41 @@ DECODE row; --guess-fullsize per A2-HDK), fetch full size for those records, and
 nomenclator whose correspondents, date and code range could fit the Oldenbarnevelt-Brederode 1605 cipher (compare with the target's own
 code range and the frequency facts in NOTES.md). Crop before any vision call (one record per call). Fit test only if a key is shown to
 fit by those criteria, with a control. Scrub the account name from any saved page. Update the TSV and NOTES.md. Report requests per host.
+
+## Wave 2 (written 05:2x UTC 6 Oct; spawned as wave-1 slots free). Intake gate output (05:15 UTC) pasted per job.
+
+### R9-KARL4 -- ra-karlxi-fullmakt-1677, page read of the German 1680 Actes Vollmacht section (cap 2.5, box 45 min)
+Intake gate: `ra-karlxi-fullmakt-1677: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next (R8-KARL3): page read of the plenipotentiaries' Vollmachten section in the German 1680 Actes (IA bub_gb_mUtFAAAAcAAJ /
+11211619bsb, open scans, no loan) for the Swedish full power of 1677, ~$1. Locate the section from the item's _djvu.txt / page numbers
+first (script), then fetch only those page images (one per vision call, crop or downscale under 2500 px). Report whether a Swedish
+Vollmacht text is printed (page, leaf, quoted opening), and compare it with the target's transcription per NOTES.md. Update Remaining
+gaps / Escalation; status changes only per rule 5 and the check-solved brief.
+
+### R9-KONS2 -- konstanz-talleyrand-sieyes-1798, Guyot 1911 full-text search (cap 2, box 30 min)
+Intake gate: `konstanz-talleyrand-sieyes-1798: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Next (R8-KONS): Guyot, *Le Directoire et la paix de l'Europe* (1911), full text on IA / Gallica / Google Books (country=US) for a Sieyes
+letter or report of 17 Jul 1798 (29 messidor an VI), "Constance"/"Konstanz", with a positive control phrase from the same volume. Script
+the grep; quote hits with page. Write a dated NOTES.md section (found / not found where); status unchanged unless a printed text of the
+letter is found (then say so and flag for check-solved; do not classify).
+
+### R9-ROELL6 -- roell-vandedem-1809, January run of NA 2.01.xx inv. 92 (cap 3.5, box 60 min)
+Intake gate: `roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Verdict cheapest next: the January run of inv. 92 (scans ~100-174, letters sent ahead to Vienna before 31 Jan 1809; <= 45 requests) or the
+legation archive 1.02.20's 1809 letter-book. Take inv. 92 January first (same route, service.archief.nl IIIF at 1000 px, >= 1.8 s apart);
+stop at 45 requests. Unit = one scan opened and read (~0.05); report minutes to Van Dedem and any cipher. If time remains under 80% of
+box and cap, look up whether 1.02.20's 1809 letter-book is digitised (one item page, drupal-settings availability flag) and record it.
+
+### R9-LQROWS -- three LOCAL-QUEUE.tsv rows for host-blocked reads (Sonnet, cap 1.5, box 30 min)
+No deep work; intake gate not required. Run `python3 tools/key_livecheck.py` first (paste its summary line). File three LOCAL-QUEUE.tsv
+rows in the existing format (read the header, L56/L57 and tools/local_queue_runner_prompt.md for the row shapes; next free L-number;
+fetch+rebase immediately before writing):
+(a) ciphers/lope-hurtado-1522: viewer-capture of BNE MSS/20212/27 (14 leaves, five Lope Hurtado letters 1522-26 partly cipher; BNE
+    Digital is Cloudflare-blocked from the cloud) -- the L57 shape; give the BNE Digital card URL from NOTES.md.
+(b) ciphers/ra-vellingk-1713: page read of HRSH (Historiska handlingar) vol. 6 pp. 223 ff., Vellingk letters, full view on HathiTrust and
+    Google Books owgPAAAAYAAJ (snippet "Wellingk ... Sparre ... Chiffre"); ask for page images or a transcription of any passage naming a
+    cipher/Chiffre and the letter dates. Both hosts' page views are blocked from the cloud (CLAUDE.md host table).
+(c) ciphers/ra-celsing-sillen-1755 + ciphers/ra-celsing-dohsson-1779: catalogue-lookup on the Riksarkivet Sok-API / sok.riksarkivet.se
+    (data.riksarkivet.se answers HTTP 000 from the cloud, re-tested 05:2x UTC 6 Oct): digitisation flag for the Celsing dispatches in
+    Diplomatica Turcica 1746-1770 and Sillen's dag- och brefbocker, and every record under SE/RA/721512 (Biby), quoted flag + URL each.
+Then add one line under each folder's NOTES.md "While waiting"/Escalation naming the L-row. Push with tools/room.py --push.
