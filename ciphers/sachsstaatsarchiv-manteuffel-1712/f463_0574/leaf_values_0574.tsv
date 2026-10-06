@@ -1,0 +1,12 @@
+run	code	gloss_on_0574	grade_here	key_tsv_value	key_tsv_grade	status
+2,8,18,23,30,32	160	Manteuffel (x3) / Mant. (x3)	C	Manteuffel	C	known-answer agree 6/6 (Krauske row; not overwritten)
+12,25	150	S.M.	C	le Roi de Pologne	C	known-answer compatible 2/2 (S.M. = the recipient's sovereign; Krauske row kept)
+17	313	Hambourg	C	Hambourg	C	known-answer agree
+27	38	H:	M	h	C	known-answer agree (letter code glossed with its letter)
+28	187	le Roy de Suede	C	Roi de Suède	C	known-answer agree
+31	266	l'Electeur de Hannovre	M	Hannover|Electeur de Hanovre	M	agrees with Krauske's second value; key value unchanged, witness noted in key.tsv
+21	348	(chunk 'elect', run glossed l'Electeur de Hann.)	M			multi-code chunk, leaf gate PASS but multi-code values are not licensed (PREREG-MANT27); held M here
+14	319	(chunk 'q', run glossed quelle ville le Roy)	M			multi-code chunk, held M
+7	394	(chunk 'p', run glossed particulier)	M			multi-code chunk, held M
+19	501	(chunk 's', run glossed se parler franchement ...)	M			multi-code chunk, held M
+4,14	384	(chunks 's' / 'oy', disagree)	M			multi-code, inconsistent; 384 is a U code on f.409v/f.410

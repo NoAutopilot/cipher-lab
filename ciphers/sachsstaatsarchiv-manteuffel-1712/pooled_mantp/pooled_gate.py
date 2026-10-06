@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """R7-MANTP (6 Oct 2026): pooled single-code-gloss gate per PREREG-MANTP.md.
 Reads the four leaves' pairs.tsv + reconciled.tsv and ../key.tsv; writes pooled_runs.tsv, pooled_codes.tsv, shuffle_pooled.tsv,
-per_leaf.tsv beside this script and prints the gate. Disk only. Usage: pooled_gate.py"""
-import csv, os, re, random
+per_leaf.tsv beside this script and prints the gate. Disk only. Usage: pooled_gate.py [--add0574 [--norm0574]]
+R7-MANT463 (6 Oct 2026, PREREG-MANT463 addendum): --add0574 appends leaf 0574 (ff.463-463v) and writes the outputs with suffix
+_0574; --norm0574 also applies ../f463_0574/gloss_norm_0574.tsv (non-gating sensitivity, suffix _0574n)."""
+import csv, os, re, random, sys
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.join(HERE, '..')
 LEAVES = [('0502', 'f0500_0502/pairs_0502.tsv', 'f0500_0502/reconciled_mant4.tsv'),
@@ -10,8 +12,13 @@ LEAVES = [('0502', 'f0500_0502/pairs_0502.tsv', 'f0500_0502/reconciled_mant4.tsv
           ('0527', 'f422v_0527/pairs.tsv', 'f422v_0527/reconciled.tsv'),
           ('0528', 'f423_0528/pairs.tsv', 'f423_0528/reconciled.tsv')]
 PRIOR_CLEARED = {'0502', '0528'}
+SUF = ''
+if '--add0574' in sys.argv:
+    LEAVES.append(('0574', 'f463_0574/pairs.tsv', 'f463_0574/reconciled.tsv')); SUF = '_0574'
 DRAWS, SEED = 1000, 7101
 NORM = {r['token']: r['expansion'] for r in csv.DictReader(open(os.path.join(T, 'f0500_0502/gloss_norm.tsv')), delimiter='\t')}
+if '--norm0574' in sys.argv:
+    NORM.update({r['token']: r['expansion'] for r in csv.DictReader(open(os.path.join(T, 'f463_0574/gloss_norm_0574.tsv')), delimiter='\t')}); SUF += 'n'
 norm = lambda g: ' '.join(NORM.get(t, t) for t in re.sub(r"[.,;:'\"]", ' ', g.lower()).split())
 rd = lambda p: [r for r in csv.DictReader((l for l in open(os.path.join(T, p)) if not l.startswith('#')), delimiter='\t')]
 
@@ -54,12 +61,12 @@ def gate(runs, seed, within_leaf=False):
 
 def main():
     runs = load(); key = {r['code']: r for r in rd('key.tsv')}
-    with open(os.path.join(HERE, 'pooled_runs.tsv'), 'w') as f:
+    with open(os.path.join(HERE, 'pooled_runs'+SUF+'.tsv'), 'w') as f:
         w = csv.DictWriter(f, ['leaf', 'line', 'code', 'gloss', 'gloss_grade'], delimiter='\t', lineterminator='\n'); w.writeheader(); w.writerows(runs)
     n, k, s, mean, p95, sh = gate(runs, SEED)
     _, _, _, wmean, wp95, _ = gate(runs, SEED, within_leaf=True)
     passed = n >= 3 and s > p95
-    with open(os.path.join(HERE, 'shuffle_pooled.tsv'), 'w') as f:
+    with open(os.path.join(HERE, 'shuffle_pooled'+SUF+'.tsv'), 'w') as f:
         f.write('draw\tS\n' + ''.join(f'{i}\t{x:.4f}\n' for i, x in enumerate(sh)))
     print(f'POOLED: runs {len(runs)}, N_rec {n}, consistent {k}, S {s:.3f} vs shuffle mean {mean:.3f} p95 {p95:.3f} -> {"PASS" if passed else "HELD"}')
     print(f'  (not gating) within-leaf shuffle mean {wmean:.3f} p95 {wp95:.3f}')
@@ -72,7 +79,7 @@ def main():
         rows.append([leaf, len(lr), ln, lk, f'{ls:.3f}', f'{lm:.3f}', f'{lp:.3f}', 'PASS' if ok else ('HELD (N floor)' if ln < 3 else 'HELD'),
                      'yes' if leaf in cleared else 'no'])
         print(f'  leaf {leaf}: runs {len(lr)}, N_rec {ln}, S {ls:.3f} vs p95 {lp:.3f} -> {rows[-1][7]}; cleared {rows[-1][8]}')
-    with open(os.path.join(HERE, 'per_leaf.tsv'), 'w') as f:
+    with open(os.path.join(HERE, 'per_leaf'+SUF+'.tsv'), 'w') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
         w.writerow(['leaf', 'single_runs', 'n_rec', 'n_cons', 'S', 'shuffle_mean', 'shuffle_p95', 'own_gate', 'cleared']); w.writerows(rows)
     _, _, d = stat([r['code'] for r in runs], [r['gloss'] for r in runs])
@@ -89,7 +96,7 @@ def main():
         circ = 'circular' if kv and 'gloss' in src else ('known-answer' if kv and kv['grade'] == 'C' else '')
         out.append([c, len(rr), ','.join(leaves), ' | '.join(gls), ''.join(r['gloss_grade'] for r in rr), lic,
                     kv['value'] if kv else '', kv['grade'] if kv else '', circ])
-    with open(os.path.join(HERE, 'pooled_codes.tsv'), 'w') as f:
+    with open(os.path.join(HERE, 'pooled_codes'+SUF+'.tsv'), 'w') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
         w.writerow(['code', 'n_single', 'leaves', 'glosses_norm', 'gloss_grades', 'licence', 'key_value', 'key_grade', 'key_check']); w.writerows(out)
     for o in out: print('  ' + '\t'.join(map(str, o)))

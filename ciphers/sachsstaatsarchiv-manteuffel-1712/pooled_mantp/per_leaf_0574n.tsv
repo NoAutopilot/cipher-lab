@@ -1,0 +1,6 @@
+leaf	single_runs	n_rec	n_cons	S	shuffle_mean	shuffle_p95	own_gate	cleared
+0502	4	1	1	1.000	0.158	1.000	HELD (N floor)	yes
+0501	4	1	1	1.000	0.160	1.000	HELD (N floor)	no
+0527	16	2	1	0.500	0.041	0.500	HELD (N floor)	no
+0528	18	4	4	1.000	0.054	0.250	PASS	yes
+0574	12	2	2	1.000	0.137	0.500	HELD (N floor)	no

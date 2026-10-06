@@ -61,3 +61,17 @@ Gate: f422v_0527/shuffle_control.tsv (S 0/52 vs p95 0.058; S_single 1/2 at N 2).
 | date | instrument | control | target | verdict |
 |---|---|---|---|---|
 | 6 Oct 2026 R7-MANTP | single-code glosses pooled across leaves 0502, 0501, 0527, 0528 (42 runs), S = share of recurring codes with identical MANT5-normalised glosses; PREREG-MANTP (fa516827) | gloss strings permuted across the pooled single-code runs, 1000 draws seed 7101: mean 0.053, p95 0.222 (within-leaf permutation, not gating: mean 0.046, p95 0.222) | S = 6/9 = 0.667 (N_rec 9) | **PASS**. Per leaf, same instrument: 0528 PASS (4/4 vs p95 0.250), 0502/0501/0527 HELD at the N floor (N_rec 1, 1, 2). Licensed: 98, 107, 357 (C, already C), 73 Ilgen (C by the rule but a Krauske row, s\|z M: not overwritten, conflict above stays open, now 2 leaves incl. cleared 0528), 770 (M, 0501 only, already M), 877 (M, every gloss read M, already M). Disagree: 864 ("le roy de prusse" vs "roy de prusse", article only), 754 ("s m" vs "le roy de pologne", compatible), 898 ("ilgen" x1 vs "l empire" x3). key.tsv unchanged; U tokens moved 0. The values the gate was meant to reach (898, 939, 539, 544) are single-attested in the pool, so no gloss gate can license them until another leaf glosses them. |
+
+## Leaf 0574 (ff.463-463v) per-leaf gate and pooled gate with the leaf added (R7-MANT463, 6 Oct 2026, LANE LANE-RUN7-account-2, account 2)
+
+| date | instrument | control | target | verdict |
+|---|---|---|---|---|
+| 6 Oct 2026 R7-MANT463 | per-leaf aligner gate on 30 glossed runs of ff.463-463v (PREREG-MANT463 c532b20e2, MANT27 shape, gloss_norm_0574 mant->manteuffel) | gloss strings permuted across the glossed runs, 200 draws seed 463: S mean 0.059 p95 0.109; S_multi mean 0.061 p95 0.113; S_single mean 0.022 p95 0.000 | S 11/55 = 0.200; S_multi 9/53 = 0.170; S_single 2/2 = 1.000 | **PASS** (leaf cleared). Only single-code glosses licensable; all six single codes (160, 150, 313, 38, 187, 266) are Krauske rows and agree or are compatible -- nothing new into key.tsv |
+| 6 Oct 2026 R7-MANT463 | pooled single-code-gloss gate, PREREG-MANTP + PREREG-MANT463 addendum, leaf 0574 appended (54 runs) | gloss strings permuted across all pooled single-code runs, 1000 draws seed 7101: mean 0.035, p95 0.182 | S 7/11 = 0.636 | **PASS** (R7-MANTP without the leaf: 0.667 vs p95 0.222). Non-gating sensitivity with gloss_norm_0574 (mant->manteuffel): S 8/11 = 0.727 vs p95 0.182. 898, 939, 539, 544 do not occur on this leaf: still single-attested in the pool, nothing licensed |
+
+Known-answer on this leaf (independent of the gloss-derived key rows): single-code glosses vs Krauske 1893 rows: 9 agree (160 x6, 313, 38, 187),
+3 compatible (150 "S.M." x2, 266 "l'Electeur de Hannovre" vs "Hannover|Electeur de Hanovre"), 0 disagree. Descriptive, no control: the aligner's
+chunks over codes that have a key.tsv value agree with that value at 210 positions and differ at 74 (0.74). Conflict 73 (Krauske s|z vs gloss Ilgen)
+unchanged: 73 does not occur on this leaf. Registered-vs-rule note: the addendum registered 0574 as not prior-cleared in the pooled run; its own
+per-leaf gate then PASSed, which by PREREG-MANTP's general rule clears it. Counting it cleared changes no licence (150 would read C, but 150 is a
+Krauske row and is not overwritten).
