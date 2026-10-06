@@ -1,0 +1,25 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p362fn_L01.jpg",
+   "source_url": "",
+   "source_file": "heinsius_02_GS163_362.jpg",
+   "box": [
+    0,
+    1110,
+    872,
+    1224
+   ],
+   "lines_in_crop": 5,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 37,
+    "distance": 10,
+    "prominence": 44.9
+   },
+   "date": "06 Oct 2026"
+  }
+ ]
+}

@@ -183,12 +183,54 @@ least 2.2 s apart, descriptive UA, no 429/403. WebSearch 0, vision 0, subagents 
 leads for more material: letter 929 (24 July 1703, Deel 2 p.362, code 142 in the OCR text, same H.A. 841) and letter 588 (1 July 1704, Deel 3
 p.208, passages in cipher printed deciphered by d'Alonne, different year).
 
+## Page images of letters 929 and 588 (R11A-HEIN, 6 Oct 2026, 14:26-14:30 UTC)
+
+Route: `retroboeken/heinsius/pages.json?source=2` and `?source=3` (one each) for the `image_url`/`html_url`, then the page JPEGs
+(native size as served, about 864x1376) `images/heinsius_02_GS163_361.jpg`, `_362.jpg`, `images/heinsius_03_GS169_208.jpg` and the three
+OCR pages. Crops: `python3 tools/iiif_lines.py --image images/heinsius_02_GS163_362.jpg --out images/crops362 --prefix p362 --region
+0,380,872,330 --lines-per-crop 4 --distance 15` (4 crops), the same with `--out images/crops362fn --region 0,1100,872,279 --lines-per-crop 8
+--distance 10` for the footnotes (1 crop), and `--image images/heinsius_03_GS169_208.jpg --out images/crops208 --prefix p208 --region
+0,60,864,640 --lines-per-crop 6` (5 crops). One read of the crops by this worker (no subagent).
+
+**Step 1, letter 929 (Van Haersolte, Warsaw, 24 July 1703, H.A. 841, Deel 2 pp.361-362).** Crop `crops362/p362_L02.jpg` prints, in roman
+(not spaced) type: "dat de republicq soude konnen vervallen in die gedagten om hunne wapenen te voegen tegens 142², als de coning van Sweden
+op dat point soude blijven staen" (the OCR's "ris" is "tegens"). Footnote 929.2 (crop `crops362fn/p362fn_L01.jpg`, and the OCR page):
+"Er stond eerst ,,de Russen", maar dat woord is uitgekrabd en vervangen door het cijfer; het oorspronkelijke woord is echter leesbaar
+gebleven." So in the original Haersolte wrote "de Russen", scratched it out and wrote the code over it, and the editors could still read
+the word: **142 = "de Russen"** (the Russians), on the editors' reading of the original. It is the only code in the letter; nothing else on
+pp.361-362 is spaced or numeric. Grade for that one token: C (the writer's own clear word under his code, reported by the edition; image of
+the print only, rule 2 -- conditional on the editors' reading of H.A. 841). Counts: C 1, H/S/M/I 0.
+What it does and does not give this folder: 142 does not occur in the target letter 341 (codes 178, 198) or in letter 1017 (143, 144,
+178, 180, and the small numbers), so **no token of the target is read by it**. It is one more data point that the 140-180 range is a
+name/nation list in the same correspondent's 1703 system (same H.A. 841 bundle), and 142 = de Russen beside 143/144 is a weak hint that
+neighbouring codes are other powers or nations -- an inference (I), not a reading. No key file exists in this folder and none was made
+(brief: no key change without a pre-registered test).
+
+**Step 2, letter 588 (Van Haersolte to d'Alonne, 1 July 1704, H.A. 918, Deel 3 p.208).** The crops show the spaced (letter-spaced)
+passages footnote 588.1 says Haersolte wrote in cipher and d'Alonne deciphered. Read once at this resolution (grade M for the boundaries):
+"coning van Sweden" (l.6), "electie" (l.9), "den koning van Sweden" (l.10), "coning van Polen" and "Fransche parthije" (last two lines);
+other names on the page (cardinael, palatin van Posen, prins Alexander, Bugh, Weisel) look roman, not spaced, but the scan is too coarse to
+be sure. The middle of the letter is an editorial summary in italics (Haersolte's refusal to state a preference, his letter to Jessen), not
+the letter's text. **Not usable as a crib for this folder now:** the edition prints only the clear text of the ciphered passages, never the
+cipher numbers, so there is no cipher/clear pair on the page; the letter is to d'Alonne, not Heinsius, and a year later (1704), so even the
+same system is not established. What it does give: a list of clear words the 1704 cipher carried (koning van Sweden, koning van Polen,
+electie, Fransche parthije), which become a crib list if H.A. 918 (with d'Alonne's interlinear decipherment, if he wrote one) is ever seen
+beside H.A. 841.
+
+Requests: resources.huygens.knaw.nl 8 (2 pages.json, 3 JPEG, 3 OCR html), all >= 2.2 s apart, descriptive UA, all HTTP 200. Gallica 0,
+WebSearch 0, subagents 0.
+
+## Verdict (R11A-HEIN, 6 Oct 2026)
+
+**Status: open (unchanged).** Code 142 in sibling letter 929 is glossed by the edition (the scratched-out original word "de Russen" is
+legible under it), grade C, one token; it reads nothing in the target letter. Letter 588's spaced passages are period decipherments without
+their cipher numbers, so not a crib on the print alone. The 1703 system's key is still not located.
+
 ## Next step (cheap, depends on no one)
-1. Page image of Deel 2 p.361-362 (letter 929) as one crop via `tools/iiif_lines.py`, to see whether 142 sits in a spaced-type ciphered
-   passage and what the edition prints around it (~USD 0.5, one vision call).
-2. Page image of Deel 3 p.208 (letter 588): the spaced-type passages are the decipherment of a Haersolte cipher by d'Alonne; with the
-   Dutch/French clear text beside any cipher in a sibling letter that is a crib (~USD 0.5).
-3. Read Deel 2 letters by number for the Haersolte letters the snippets did not reach (the 70 pages read were only those the search listed).
+1. Read Deel 2 letters by number for the Haersolte letters the snippets did not reach (the 70 pages read were only those the search listed);
+   look for more "uitgekrabd ... vervangen door het cijfer" footnotes, which gloss a code from the writer's own erased word (grep the Deel 2-3
+   OCR for "uitgekrabd", "cijfer" in footnotes, ~USD 0.5, script only).
+2. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
 
 ## While waiting
-The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: steps 1-3 above.
+The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: next step 1 above.

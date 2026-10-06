@@ -1,0 +1,88 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p362_L01.jpg",
+   "source_url": "",
+   "source_file": "heinsius_02_GS163_362.jpg",
+   "box": [
+    0,
+    384,
+    872,
+    464
+   ],
+   "lines_in_crop": 4,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 40,
+    "distance": 15,
+    "prominence": 43.8
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "p362_L02.jpg",
+   "source_url": "",
+   "source_file": "heinsius_02_GS163_362.jpg",
+   "box": [
+    0,
+    464,
+    872,
+    542
+   ],
+   "lines_in_crop": 4,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 40,
+    "distance": 15,
+    "prominence": 43.8
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "p362_L03.jpg",
+   "source_url": "",
+   "source_file": "heinsius_02_GS163_362.jpg",
+   "box": [
+    0,
+    542,
+    872,
+    666
+   ],
+   "lines_in_crop": 4,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 40,
+    "distance": 15,
+    "prominence": 43.8
+   },
+   "date": "06 Oct 2026"
+  },
+  {
+   "crop": "p362_L04.jpg",
+   "source_url": "",
+   "source_file": "heinsius_02_GS163_362.jpg",
+   "box": [
+    0,
+    666,
+    872,
+    706
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 40,
+    "distance": 15,
+    "prominence": 43.8
+   },
+   "date": "06 Oct 2026"
+  }
+ ]
+}
