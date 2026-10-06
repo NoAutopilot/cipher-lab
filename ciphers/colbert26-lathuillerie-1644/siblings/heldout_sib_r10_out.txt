@@ -1,0 +1,12 @@
+code	value	set	spans	H_real	occ	ctrl_mean	p95	max	P	P_min	gate
+32	u	pooled	c51:51L02:lafaultequilontontstruckout;c51:51L03:uro;c30:3:neurieneuouldroitpas;c30:3:neurieneuouldroitpas;c30:7:lessrs;c30:9:;c30:11:tsurlesespaulesetquesaresista	5	7	4.48	6	6	0.4916	0.0000	FAIL
+32	u	c51	c51:51L02:lafaultequilontontstruckout;c51:51L03:uro	2	2	1.25	2	2	0.2758	0.2758	-
+32	u	c30	c30:3:neurieneuouldroitpas;c30:3:neurieneuouldroitpas;c30:7:lessrs;c30:9:;c30:11:tsurlesespaulesetquesaresista	3	5	3.22	4	4	0.8698	0.0000	-
+32	u	decision	no key change
+15	e	pooled	c51:51L03:tfaute;c30:2:syfieque;c30:8:equelepasseplus;c30:11:tsurlesespaulesetquesaresista;c30:11:tsurlesespaulesetquesaresista	5	5	4.53	5	5	0.5954	0.5954	UNDERPOWERED/NON-TEST
+15	e	c51	c51:51L03:tfaute	1	1	0.75	1	1	0.7514	0.7514	-
+15	e	c30	c30:2:syfieque;c30:8:equelepasseplus;c30:11:tsurlesespaulesetquesaresista;c30:11:tsurlesespaulesetquesaresista	4	4	3.79	4	4	0.8012	0.8012	-
+15	e	decision	no key change
+32	o	pooled	c51:51L02:lafaultequilontontstruckout;c51:51L03:uro;c30:3:neurieneuouldroitpas;c30:3:neurieneuouldroitpas;c30:7:lessrs;c30:9:;c30:11:tsurlesespaulesetquesaresista	4	7	3.54	5	6	0.5278	0.0000	not gated
+32	o	c51	c51:51L02:lafaultequilontontstruckout;c51:51L03:uro	2	2	0.98	2	2	0.1588	0.1588	not gated
+32	o	c30	c30:3:neurieneuouldroitpas;c30:3:neurieneuouldroitpas;c30:7:lessrs;c30:9:;c30:11:tsurlesespaulesetquesaresista	2	5	2.56	4	4	0.8774	0.0000	not gated
