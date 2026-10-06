@@ -1,0 +1,12 @@
+file=y2005_06.txt.gz	letters=499972	real_p05=-0.918	fn=32	n=200	fn_pct=16.0	held_p05=-1.021	held_min=-1.188
+file=y2007.txt.gz	letters=499995	real_p05=-0.925	fn=16	n=200	fn_pct=8.0	held_p05=-0.985	held_min=-1.215
+file=y2008.txt.gz	letters=499979	real_p05=-0.924	fn=25	n=200	fn_pct=12.5	held_p05=-0.979	held_min=-1.283
+file=y2009_10.txt.gz	letters=500000	real_p05=-0.928	fn=26	n=200	fn_pct=13.0	held_p05=-0.981	held_min=-1.155
+file=y2011_26.txt.gz	letters=499989	real_p05=-0.9	fn=42	n=200	fn_pct=21.0	held_p05=-1.029	held_min=-1.22
+N=114 samples=200 folds=5 blended_fn=14.1% spread=8.0-21.0% held_out_p05=-0.992 p01=-1.117 min=-1.283
+file=y2005_06.txt.gz	letters=499972	real_p05=-0.872	fn=60	n=200	fn_pct=30.0	held_p05=-0.962	held_min=-1.021
+file=y2007.txt.gz	letters=499995	real_p05=-0.886	fn=31	n=200	fn_pct=15.5	held_p05=-0.916	held_min=-1.068
+file=y2008.txt.gz	letters=499979	real_p05=-0.894	fn=22	n=200	fn_pct=11.0	held_p05=-0.933	held_min=-1.021
+file=y2009_10.txt.gz	letters=500000	real_p05=-0.889	fn=32	n=200	fn_pct=16.0	held_p05=-0.935	held_min=-1.038
+file=y2011_26.txt.gz	letters=499989	real_p05=-0.887	fn=42	n=200	fn_pct=21.0	held_p05=-1.003	held_min=-1.216
+N=300 samples=200 folds=5 blended_fn=18.7% spread=11.0-30.0% held_out_p05=-0.937 p01=-1.035 min=-1.216

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """erba-2006 spec test 2 (R12D-ERBA, 6 Oct 2026): is the xs-segmented word-length profile more Italian-shaped
-than random segmentation? Pre-registered in PREREG-test2.md. Disk only. Usage: python3 test2_xs_segmentation.py"""
+than random segmentation? Pre-registered in PREREG-test2.md. Disk only. Usage: python3 test2_xs_segmentation.py
+[--corpus tools/data/it21news --designs L] (R12D-ERBA3, 6 Oct 2026: era rerun on the modern corpus; default it19, both designs)"""
 import glob, gzip, math, os, random, re, sys
 from collections import Counter
 
@@ -48,9 +49,12 @@ def syl(w):
         else: i += 1
     return max(c, 1)
 
+CORPUS = sys.argv[sys.argv.index('--corpus') + 1] if '--corpus' in sys.argv else 'tools/data/it19'
+DESIGNS = sys.argv[sys.argv.index('--designs') + 1] if '--designs' in sys.argv else 'LY'
+
 def corpus_words():
     words = []
-    for f in sorted(glob.glob(os.path.join(ROOT, 'tools/data/it19/*.txt.gz'))):
+    for f in sorted(glob.glob(os.path.join(ROOT, CORPUS, '*.txt.gz'))):
         txt = gzip.open(f, 'rt', encoding='utf-8', errors='ignore').read().lower()
         words += re.findall(r"[a-zàèéìíòóùú]+", txt)
     return words
@@ -62,7 +66,9 @@ def main():
     T = target_streams(); lens = [len(s) for s in T]
     print(f'target streams {lens}, xs count {sum(s.count(SEP) for s in T)}; corpus words {len(words)}')
     out = {}
+    print(f'corpus {CORPUS}')
     for d, ul in units.items():
+        if d not in DESIGNS: continue
         c = Counter(ul); tot = sum(c.values()); P = {k: v / tot for k, v in c.items()}
         print(f'\n== design {d}: mean word len {sum(ul)/tot:.2f} units; P_ref top {sorted(P.items())[:8]}')
         obs, p = perm_p(T, SEP, P, NPERM, rng)

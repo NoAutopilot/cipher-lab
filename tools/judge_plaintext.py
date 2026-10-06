@@ -76,6 +76,10 @@ LANG_CORPORA = {
     # era-match. See tools/data/it19/README.md for the leave-one-file-out false-negative spread before trusting a FAIL/PASS.
     "it19": [DATA / "it19" / f"{i}.txt.gz" for i in ("storiaditaliadal01bottuoft", "storiadelreamedi00coll",
              "saggiostoricosul00cuoc", "bub_gb_ODloWJYQNSYC", "bub_gb_jVdaVPIiH8sC")],
+    # it21news (6 Oct 2026, R12D-ERBA3, LANE-RUN12-account-4): modern Italian news prose 2005-2026 from the Italian
+    # Wikinews dump (CC BY 2.5), five year-folds capped at 500k folded letters -- for erba-2006 (a 2013 note), which it19
+    # (1800-1830) does not era-match. Register is news, not letters. Per-fold spread in tools/data/it21news/README.md.
+    "it21news": [DATA / "it21news" / f"{i}.txt.gz" for i in ("y2005_06", "y2007", "y2008", "y2009_10", "y2011_26")],
     # sco16 (2 Oct 2026, GAPS6-moray-wood-1568, account-4): 1550-1600 Middle Scots prose -- Knox's History (Laing, Works
     # I-II), the Diurnal of Remarkable Occurrents (1513-1575, long-s repaired), the Historie of King James the Sext, and
     # the Register of the Privy Council of Scotland vol. 2 (1569-1578), each capped at 700k folded letters, editors' modern

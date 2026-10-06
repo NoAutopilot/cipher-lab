@@ -164,7 +164,41 @@ press-printed sibling groups of 18 June 2013 (see Web and blog check above) writ
 
 ## Next step (R12D-ERBA, 6 Oct 2026)
 
-next: spec test 3 (specs/erba-2006.json cheap_tests_in_order[2]): small-alphabet homophonic anneal against Italian with a
+[done 6 Oct 2026 by R12D-ERBA3, see Cheap test 3] spec test 3 (specs/erba-2006.json cheap_tests_in_order[2]): small-alphabet homophonic anneal against Italian with a
 matched synthetic control at N=114, K=9 base tokens (14-16 with case); per test 2, model the design as letter-like units
 (xs as an optional separator, run both with and without it), not one-syllable-per-token with xs as space, ~$2-3. Who acts:
 agent. A modern (post-1950) Italian corpus in tools/data would remove the it19 era caveat from both tests (~12 min build).
+[done 6 Oct 2026 by R12D-ERBA3, see Cheap test 3: corpus tools/data/it21news built; test 3 run in the letter-like design]
+
+## Cheap test 3 (6 Oct 2026, R12D-ERBA3, LANE LANE-RUN12-account-4): letter-like design, modern corpus
+
+**Corpus.** Built `tools/data/it21news` (Italian Wikinews dump of 1 Oct 2026, CC BY 2.5; five year-folds 2005-2026, 2.5M folded
+letters; README and build.py there). Era-matched to a 2006-2013 note; register is news, not letters. LOFO real-prose
+false-negative rate (judge_plaintext.py --holdout): N=114 14.1% (folds 8.0-21.0%), N=300 18.7% (11.0-30.0%).
+
+**Test 2 era rerun** (PREREG-test2.md statistic and gate unchanged, corpus swapped; `test2_output_it21news.txt`): design L
+S=-2.668, p=0.0032, xs rank 1/9, control power 179/200 = 89.5%, PASS; it19 gave -2.693, p=0.0039, 95.0%. The era caveat does
+not move it. Modern-Italian control separators 14-21 (5-95%) now bracket the target's 14 (it19: 16-23).
+
+**Test 3** (PREREG-test3.md, pushed c6e924c4b before the scored run; `test3_letterclass.py`, `test3_output.txt`). With 9
+case-folded token types and ~21 Italian letters, a letter-per-token design must be polyphonic: each token stands for a class of
+letters. Bigram LM from it21news 2005-2010; control windows from the held-out 2011-26 fold, same letter count, random K-class
+partition; anneal over the letter->class key (8 restarts x 5000 moves), forward log-likelihood, Viterbi decode.
+
+| variant | K | letters | control solver accuracy (5 windows) | true-key oracle | solver loglik >= true key | verdict |
+|---|---|---|---|---|---|---|
+| V1 xs = space | 8 | 100 | 0.232 (0.10-0.35) | 0.736 | 5/5 | CONTROL BELOW GATE (0.60) |
+| V2 xs = class | 9 | 114 | 0.139 (0.06-0.24) | 0.742 | 5/5 | CONTROL BELOW GATE (0.60) |
+
+Target not decoded (control-first order). The solver found keys *more* likely than the true one in all ten controls, so the
+miss is identifiability, not search: at 100-114 letters a bigram model cannot pick the true letter-class partition out of the
+many that fit, and even the true key reads only about 74% of letters. This is a non-test of the letter-class design at this N
+by this instrument ("untestable by bigram-likelihood anneal at N=100-114"), not a negative on the design. Case variants were
+folded (a case-sensitive variant was not run). Nothing was read.
+
+## Next step (R12D-ERBA3, 6 Oct 2026)
+
+next: a different instrument for the letter-class design, not more restarts of this one: a word-level constraint (decode only
+into Italian dictionary words between xs, using the 14-group segmentation test 2 supports, with the same held-out control),
+~$2. More ciphertext would help more: the two sibling phrases printed by Tgcom24/il Giornale (18 June 2013) are in the same
+system and could be added to N if their token reading is checked against a press image. Who acts: agent.

@@ -1,0 +1,41 @@
+target tokens 114; types ['cu', 'fi', 'me', 'mi', 'ne', 'pi', 'ro', 'un', 'xs']
+
+== V1 xs=space: K=8, target letters 100, obs len 116
+  control 1: solver letter acc 0.100; true-key (oracle) acc 0.670; loglik solver -205.0 vs true -214.2
+    plain: un po smagrito ma goda di buone condizioni di salute tutti per uno e uno per tut
+    dec  : an de ilertome la rese co quati lancordeno co helesi pesco din ata i ata din pes
+  control 2: solver letter acc 0.260; true-key (oracle) acc 0.810; loglik solver -207.3 vs true -212.4
+    plain: andrea pirlo un cucchiaio che spiazza hart ha suscitato polemiche la decisione d
+    dec  : antora dermi un staschati sco ittalla cari ca lelatiali dimomesco ma pratitino p
+  control 3: solver letter acc 0.100; true-key (oracle) acc 0.740; loglik solver -206.3 vs true -216.6
+    plain: stata un indicibile tragedia che non puo trovare posto in una libera societa men
+    dec  : icazi pa dintetutro charonta eno ala che cherino glame di pia stuona alltoma pri
+  control 4: solver letter acc 0.350; true-key (oracle) acc 0.720; loglik solver -198.3 vs true -210.0
+    plain: spagna le autorita sanitarie tedesche oggi rinnegano l ipotesi del cetriolo cont
+    dec  : llanta ce derizima catorapre sevelave inno prttenato l scoreli vel desprico ditr
+  control 5: solver letter acc 0.350; true-key (oracle) acc 0.740; loglik solver -212.0 vs true -231.9
+    plain: il tedesco andre greipel omega pharma lotto l olandese coen de cort scil shimano
+    dec  : al peresco rante quechel prezi fintri sttto l usiarele cova re atto scal diarico
+control mean solver acc 0.232 (gate 0.6); oracle mean 0.736; solver loglik >= true-key loglik in 5/5
+VERDICT V1 xs=space: CONTROL BELOW GATE -- untestable by this method at N=100; target not run
+
+== V2 xs=class: K=9, target letters 114, obs len 114
+  control 1: solver letter acc 0.184; true-key (oracle) acc 0.693; loglik solver -200.9 vs true -212.5
+    plain: anchechelamissionepoliticadiputinetuteladellasicurezzapubblicaegliinteressinazio
+    dec  : iorderdelisossostaquntrorinoveropererelinellistredeccicaggntriquntopredesstticos
+  control 2: solver letter acc 0.149; true-key (oracle) acc 0.781; loglik solver -205.2 vs true -212.2
+    plain: delbungabungaecheperamorediberlusconisivantavadiaverrinunciatonientemenocheaifav
+    dec  : panzinorzinorachalatrionapevantilconelerensereprerantedimpresonestasistochareber
+  control 3: solver letter acc 0.237; true-key (oracle) acc 0.772; loglik solver -219.6 vs true -232.4
+    plain: dieguagliarerogerdevlaeminccconilquartosuccessoallaroubaisfuoridaarenbergaltrise
+    dec  : isestostindedasediescheriobbbalitecopraqubbegganttodatelimatadisondeleedintrdime
+  control 4: solver letter acc 0.061; true-key (oracle) acc 0.763; loglik solver -212.6 vs true -227.1
+    plain: eabbattutounotsunamiconondefinoamdialtezzasiregistranonumerosiferitieriferiscela
+    dec  : nellellalindilenderorididiavodieriteglallestrantepredimararisovacoponcovacheraqu
+  control 5: solver letter acc 0.061; true-key (oracle) acc 0.702; loglik solver -220.9 vs true -223.2
+    plain: clausolachiamatacontingentvaluerightcvrilprezzopagatodasanofiaventissecondoilgio
+    dec  : imelialetatenedetarstechespellonicadinniqunollacecedaarierantenorstitotaraziquta
+control mean solver acc 0.139 (gate 0.6); oracle mean 0.742; solver loglik >= true-key loglik in 5/5
+VERDICT V2 xs=class: CONTROL BELOW GATE -- untestable by this method at N=114; target not run
+
+SUMMARY: V1 xs=space: CONTROL BELOW GATE (0.232, oracle 0.736); V2 xs=class: CONTROL BELOW GATE (0.139, oracle 0.742)
