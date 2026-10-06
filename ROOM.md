@@ -9916,3 +9916,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 16:05 | verifier R12D-HDKV | claim: hessen-daenemark-1672 rule-7 re-derivation + clear-pages hand question; cap 3, box end 16:54 UTC; for LANE LANE-RUN12-account-4
 2026-10-06 16:05 | R12D-GOLD worker | claim goldbar-1933: premise-check read of Bin Tao v. Citibank docket (9th Cir. 09-56992), cap 1.8, box end 16:35 UTC, for LANE LANE-RUN12-account-4
 2026-10-06 16:06 | R12D-GRAZB worker | claim fr2980-gramont: blind f.30 zb vs fr.3040 barred-z sort, cap 3, box end 16:56 UTC, for LANE LANE-RUN12-account-4
+2026-10-06 16:07 | R12D-CYL3 | claim: cylob-c1995 spec cheap test 3 (fixed-alphabet structural check + matched control), cap 2.5, box ends 16:50 UTC, for LANE LANE-RUN12-account-4
