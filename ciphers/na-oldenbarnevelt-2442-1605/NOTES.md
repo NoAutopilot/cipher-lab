@@ -1200,10 +1200,58 @@ shift), ~$1.5, then settle C1_31 `s2ppl3c7` and C1_05 `b8ss424` under PREREG_R14
 shared u/v shape across B/C1, applied to both the reading and the judge input) before any further judge run. Re-judge only if (f'),
 (n) or (a'') changes the text.
 
-## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG and R14-OLDF, 6 Oct 2026)
+## 19. R14-OLDF2, 6 Oct 2026: re-read of the four shifted C1 rows (step (f')) -- two signs changed, re-judged, all four windows still FAIL; status stays open
 
-- Action that depends on nobody: (f') of section 18's Verdict -- one blind call per file on the four C1 crops the R14-OLDF
-  reader shifted, ~$1.5; or (n) the u/v notation pass. Step (f) ran on 6 Oct 2026 (R14-OLDF, section 18: no sign settled by the
+Brief: `.claude/briefs/runs/2026-10-06-account2-run14-jobs.md` (LANE LANE-RUN14-account-2), job R14-OLDF2, step (f') of section 18.
+Pre-registration `transcription/PREREG_R14-OLDF2.md` (PREREG_R14-OLDF items 2-4 unchanged; an inserted sign counts as a change under
+the same two conditions) pushed with the crops (de6cf50ee) before the blind call.
+
+**Crops:** `python3 scripts/token_crops_R14OLDF2.py` -> `images/crops_R14OLDF2/T1-T5.png` (3x) and `_1x`; tight native boxes on scan
+006, eye-checked against a wider view of lines 1 and 4-6 and re-cut once (T1 and T3 had clipped end signs, T4 had cut off `r8`). The
+R14-OLDF boxes were near the right words, but C1_44's box spanned two lines and C1_36's overlapped it. Neutral labels, shuffled order
+(map `transcription/R14OLDF2_labels.tsv`): T1 C1_31, T2 C1_44, T3 C1_05, T4 C1_29, T5 C1_36. C1_05 (flagged `b8ss424`) was added as
+a fifth crop in the same call.
+
+**Blind call** (one Sonnet call, five crops, one row per file label; no key, rows or values): `transcription/passI_blind_R14OLDF2.tsv`.
+No row shifted this time; every row describes its own crop.
+
+**Reconciliation (PREREG_R14-OLDF item 3):**
+- C1_31 `s2pl3c7` -> **`s2ppl3c7`**: the reader names the doubled p and the image shows two long descenders before l (clear at 3x).
+  Decodes `supplico` (period spelling); grade left M.
+- C1_29 `p8r8` -> **`p28r8`**: the reader gives five signs (`pr8nd`, sign 2 "alt 2/v"), as R14-OLDF's shifted reader also did
+  (`83883`). The image shows a separate open u/v cup between the p descender and the looped 8. On the same leaf, `p7r` (C1 L2) and
+  `p4r8c8rm8` (C1 L3) show the p running straight into the next sign, so the cup is not the p's own head. Named `2` (the shape of
+  `q28n`; `apply_key.py` folds v to u either way). Decodes `puere`, not a word, so it stays I. Final sign 8 vs d not settled; kept 8.
+- C1_05 `b8s424`: the reader gives six signs and names no doubled s; `b8ss424` not settled. Kept.
+- C1_36 `q28n` (blind `q8on`), C1_44 `qnl4` (blind `gnlq`): look-alike naming only, nothing settled. Kept.
+
+Both changes go through `overrides.tsv` (ciphertext.tsv stays as transcribed). Rule 7: `python3 scripts/apply_key.py digit_key.json
+ciphertext.tsv --overrides overrides.tsv --out reading.txt --tokens reading_tokens.tsv --meta reading_meta.txt --check` ->
+`OK: reading.txt matches a fresh decode`. Grade counts unchanged: S=245, M=18, I=23. **Reading change after AUDIT.md** ("sino pere
+ansi suplico" -> "sino puere ansi supplico"): flagged in ROOM.md for a verifier to carry into AUDIT.md and any queued
+SECOND-OPINIONS row (rule 10 propagation). Not done here.
+
+**Re-judge** (PREREG_R13-OLDSEG, `scripts/segment_judge.py` unchanged, es1600; full output `transcription/segment_R14-OLDF2.log`).
+The windows moved by one or two letters at their token boundaries.
+
+| window | N | score | real_p05 | held-out p05 | held-out share <= score | null_p99 | shuffled-decode (seeds 1-3) | M/I letter share | judge | R13-OLDSEG score |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | 159 | -1.050 | -0.860 | -0.906 | 0.8% | -1.899 | -2.077, -2.146, -2.196 | 0.126 | FAIL | -1.050 |
+| 1 | 160 | -0.922 | -0.869 | -0.906 | 3.1% | -1.873 | -2.186, -2.085, -2.075 | 0.056 | FAIL | -0.911 |
+| 2 | 163 | -0.922 | -0.864 | -0.907 | 3.4% | -1.877 | -2.063, -1.976, -2.113 | 0.098 | FAIL | -0.933 |
+| 3 | 154 | -1.079 | -0.871 | -0.909 | 0.4% | -1.922 | -2.139, -2.083, -2.056 | 0.162 | FAIL | -1.080 |
+
+PREREG_R13-OLDSEG call: "not concentrated" (unchanged). The two changes barely move window 3 (-1.080 -> -1.079); windows 1 and 2
+shift only because their boundaries moved. Not found: no window PASSes, and no window falls to the shuffled-decode level.
+
+**Verdict: open.** Next steps: (a'') the owner's sign sorter for A/C2 (waiting, R7-OLDSORT/R7-OLDFIX), then a key-constrained re-read;
+(n) a u/v notation pass: one naming for the shared u/v shape across B/C1, applied to the reading and the judge input, before any
+further judge run (~$1.5); (v) a verifier carries this reading change into AUDIT.md. Step (f') is done.
+
+## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF and R14-OLDF2, 6 Oct 2026)
+
+- Action that depends on nobody: (n) the u/v notation pass (section 19 Verdict), ~$1.5. Step (f') ran on 6 Oct 2026
+  (R14-OLDF2, section 19: C1_29 and C1_31 changed, re-judged, all four windows still FAIL). Step (f) ran on 6 Oct 2026 (R14-OLDF, section 18: no sign settled by the
   image, no re-judge). Step (e) ran on 6 Oct 2026 (R13-OLDSEG, section 17: all four windows
   FAIL, not concentrated in the OLD-PASS2 lines; deepest where the M/I tokens are). Step (d') ran on 6 Oct 2026 (R12-OLDCORP, section 16: es1600, FAIL by 0.140). Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
   the owner's sorter, seeded 6 Oct 2026 (R7-OLDSORT, `sorter/`, section 14) and re-cut on the cipher lines only (R7-OLDFIX, section 15).

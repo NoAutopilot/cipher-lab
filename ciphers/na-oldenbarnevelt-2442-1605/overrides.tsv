@@ -18,3 +18,5 @@ token_index	block	corrected_raw_token	grade	note
 35	C2	q28	S	VX-RD04B, image confirmed, same crop as token 31 -- 'gr8' before 'p7r 8ct4' reads 'q28' (que) in the image.
 48	C2	q28	S	VX-RD04B, image confirmed (crop blockC2_gr8b.jpg) -- 'gr8' before 'p4rdc38r8' reads 'q28' (que) in the image.
 59	C2		M	VX-RD04B: part of the compound token '675gr8n7.' -- the standalone 'gr8'=que finding (tokens 31/35/48, confirmed against the image) likely applies here too, but this token was not separately re-cropped at high zoom this pass; left at the pass's own confidence, flagged for a successor to confirm directly.
+29	C1	p28r8	I	glyph re-read (R14-OLDF2, 6 Oct 2026, crop images/crops_R14OLDF2/T4.png): five signs, a separate open u/v-shaped sign (named 2, the q28n shape) between the long-descender p and the looped 8; blind read pr8nd (alt 2/v at sign 2), R14-OLDF reader 83883 also five signs; decodes puere, not a word, stays I; final sign 8 vs d not settled
+31	C1	s2ppl3c7	M	glyph re-read (R14-OLDF2, 6 Oct 2026, crop images/crops_R14OLDF2/T1.png): two long descenders before l, blind read s2ppl3c7; decodes supplico (period spelling); grade left M

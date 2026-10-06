@@ -190,9 +190,9 @@ C1	25	t8ndr34	t8ndr34	tendria	S	medium
 C1	26	p7r	p7r	por	S	high	
 C1	27	b38n,	b38n,	bien,	S	medium	
 C1	28	s3n7	s3n7	sino	S	high	
-C1	29	p8r8	p8r8	pere	I	low	
+C1	29	p8r8	p28r8	puere	I	low	glyph re-read (R14-OLDF2, 6 Oct 2026, crop images/crops_R14OLDF2/T4.png): five signs, a separate open u/v-shaped sign (named 2, the q28n shape) between the long-descender p and the looped 8; blind read pr8nd (alt 2/v at sign 2), R14-OLDF reader 83883 also five signs; decodes puere, not a word, stays I; final sign 8 vs d not settled
 C1	30	4ns3	4ns3	ansi	M	uncertain	
-C1	31	s2pl3c7	s2pl3c7	suplico	M	uncertain	
+C1	31	s2pl3c7	s2ppl3c7	supplico	M	uncertain	glyph re-read (R14-OLDF2, 6 Oct 2026, crop images/crops_R14OLDF2/T1.png): two long descenders before l, blind read s2ppl3c7; decodes supplico (period spelling); grade left M
 C1	32	4	4	a	S	high	
 C1	33	V.Sa	V.Sa	V.Sa	S	medium	
 C1	34	m8	m8	me	S	high	

@@ -1,0 +1,6 @@
+label	token	committed	blind_reading	blind_conf	reconciliation
+T1	C1_31	s2pl3c7	s2ppl3c7	low	CHANGE -> s2ppl3c7: two long descenders before l, clear at 3x; reader names the doubled p
+T2	C1_44	qnl4	gnlq	medium	keep: g/q and q/4 naming (look-alike pairs)
+T3	C1_05	b8s424	6784 24	medium	keep: reader gives six signs, no doubled s named; b8ss424 not settled
+T4	C1_29	p8r8	pr8nd	low	CHANGE -> p28r8: a separate open u/v cup between the p descender and the looped 8 (compared with p7r and p4r8c8rm8 on the same leaf, where the p runs straight into the next sign); final 8 vs d not settled, kept 8
+T5	C1_36	q28n	q8on	low	keep: 2/8 and 8/o-blot not settled
