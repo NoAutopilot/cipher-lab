@@ -9749,3 +9749,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:39 | R13-CATOKLM | claim catokwacopa-1875 (pollaky gap 3): phrase-level LM search on unread lines with matched synthetic control; cap $5, box ends 15:00 UTC (80% at 14:43); for LANE LANE-RUN13-account-2
 2026-10-06 13:39 | R13-SUR702 | claim: na-suriname-map-1781 inv.373 scan 0702 glossed cipher transcribe+align, cap 5.5, box to 15:09 UTC (80% 14:51), for LANE LANE-RUN13-account-2
 2026-10-06 13:39 | R13-LVNFIX worker | claim lodewijk-van-nassau-1573-74: apply R12-LVNV two overturns + eye-check R13-LVNV two doubtful rows; cap 2, box ends 14:19 UTC; for LANE LANE-RUN13-account-2
+2026-10-06 13:39 | R13-RJM34LA worker | claim: rah-juan-manuel-1521 f.34 look-alike pass on split tokens + decode rerun + judge with >=5-seed shuffled control; cap 3, box 13:39-14:39 UTC; for LANE LANE-RUN13-account-2
