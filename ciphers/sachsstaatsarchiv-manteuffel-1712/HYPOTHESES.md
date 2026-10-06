@@ -129,3 +129,8 @@ run keeps its as-read gloss "Ilgen" (M, doubtful) on 848 under PREREG-R8-MANT. 8
 Witnesses logged, not resolved: 867 "le feld mareschal" (0526 single, C) vs "le Feldmarechal" (0529 x2, C) -- same title, two spellings;
 0526 also writes "F.M." over 401.504.237.867. 714 opens "une conference" (0526 run 13, M placement) -- a further 'un/une' witness against
 the aligner's 'u' (rule 4: graded M, not settled by the majority chunk).
+| 6 Oct 2026 R10-MANT521 | per-leaf aligner gate, PREREG-MANT521 (frame 0521, 4 glossed pairs: 1 single, 3 lines of one run) | 200 gloss permutations, seed 521: mean 0.081, p95 0.250 | S 0.250 (N_rec 4, S_single N 0) | HELD (tie) |
+| 6 Oct 2026 R10-MANT521 | pooled single-code-gloss gate, PREREG-MANTP + MANT521 addendum, 10 leaves (71 runs), MANT5 / rule SP | 1000 draws seed 7101: mean 0.026 / 0.029, p95 0.083 / 0.083 | S 0.667 (8/12) / 0.833 (10/12) | PASS / PASS; no licence changes; 160 stays disagree (mant / manteuffel) |
+Witnesses logged, not resolved (R10-MANT521): 714 opens "un bon treve nous conviendra" (0521 run 4, gloss 'un' directly over 714, M) -- a
+further 'un/une' witness against the aligner's 'u'; 160, Krauske's Manteuffel (C), also sits inside that run under the gloss 'treve' (M),
+so in this run either 160 is a syllable code ('tre'/'eve') or the gloss is placed loosely; not settled here.
