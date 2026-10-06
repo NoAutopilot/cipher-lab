@@ -115,3 +115,23 @@ or copy of BLA191(a); record each query and hit count; no image fetches beyond o
 Verdict cheapest next (R10-SEURE3): locate both on btv1b90601662 with tools/gallica_folio.py; look for a legible interlinear decipherment;
 if one reads, rebuild that key through tools/interlinear_align.py and test it on R1/R2 with the own-text power control first (PREREG
 pushed before scoring; power below gate = NON-TEST). If neither reads, log and stop.
+
+## Wave 4 (written 10:2x UTC from waves 2-3's own Verdict lines; intake gate exit 0 for every folder below, 6 Oct 09:4x-10:2x UTC)
+Wave 2-3 sizing note: two jobs ran 1.17-1.19x cap (a tool option + test + build in one job; two blind passes + alignment). Caps below
+add one unit of margin; stop before a unit that crosses 80% of the cap.
+
+### R10-BAL103E -- baluze103-letellier-marca-1644: fr17 judge test of 9 = s on f.50 (cap 2, box 30 min)
+Verdict cheapest next (R10-BAL103D): PREREG first (statistic: tools/judge_plaintext.py fr17 score of the f.50 decode with every 9 read s vs
+the committed decode; control that CAN differ: the same substitution at an equal number of random non-9 positions / a shuffled-value
+control; gate fixed before scoring). Scripts and disk only; key/exceptions change only if the registered gate passes; decode_key --check.
+
+### R10-COL26C -- colbert26-lathuillerie-1644: held-out check of 15 = e and 32 = u on the f.23 margin postscript (cap 1.5, box 25 min)
+Verdict cheapest next (R10-COL26B): PREREG names the held-out span and the gate before the run; scripts and disk only; key_f23 changes
+only on a gate pass, graded per rule 4.
+
+### R10-DEC1162 -- decode-1162-modena-ambung-1492: the clear-text transcription pass (cap 3.5, box 45 min)
+Verdict cheapest next: the clear-text transcription pass (does not wait on the g/q sort, ASKS 144). Crops via tools/iiif_lines.py pasted
+(one subagent call per page, never a full page image), one blind pass + reconciliation; clear text into the folder's files with per-line
+image refs. No cipher reading changes in this job.
+
+(R10-HUNTTNA and R10-SEURE4 from wave 3 are spawned in this refill.)
