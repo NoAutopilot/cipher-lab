@@ -830,3 +830,42 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled by two Sonnet rec
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gap; cheapest next: null-tolerant nom_test setting with its own 10%-null matched control first, then R1/R2 if the control passes, ~$2
+
+## R8-SEURE: null-tolerant nom_test, 10%-null control first (6 Oct 2026, 04:04-04:17 UTC by date -u, account 1, LANE-RUN8-account-1)
+Named next step of D2-SEURE. `kp/nom_test.py` gained `--null-cost` (passed to `tools/interlinear_align.run_align`; default -3.0, so
+every earlier run is unchanged) and `--control-gate ERR:SHARE` (exit 3 before any target alignment). Pre-registered in `kp/PREREG-R8.md`
+(commit 8c158b3cd, before the run): one setting, null cost -1.0, not swept; control gate >= 2/3 keys at err 0.095 in both the 10%-null
+and 0%-null arms. Command as in the prereg; log `kp/nom_run_r8.log`, JSON `kp/result_r8.json`; ran 04:07-04:16 UTC, 0 network
+requests, 0 subagent calls.
+
+| control arm (null cost -1.0) | err 0 | err 0.095 | err 0.242 |
+|---|---|---|---|
+| 10% nulls: pass / S per key | 0/3: 0.243, 0.270, 0.246 | 1/3: 0.263, 0.265, 0.231 | 0/3: 0.238, 0.260, 0.243 |
+| 0% nulls: pass / S per key | 3/3: 0.987, 0.992, 0.987 | 3/3: 0.894, 0.924, 0.894 | 1/3: 0.780, 0.261, 0.263 |
+
+Shuffled-null p95 per key 0.25-0.28 in every cell. **CONTROL BELOW GATE**: the 10%-null arm sits inside its own null band even at zero
+error (the same 0.23-0.27 it read at null cost -3.0), so R1/R2 were not run and nothing about the target is concluded. Cheaper nulls
+also cost the no-null design power at the 0.242 bracket (1/3 here vs 2/3 at -3.0). With N8-SEU and RUN6-SEURE2/D2-SEURE this is the
+third run of `nom_test` against a null-bearing design and the first to change the null knob; every 10%-null number stayed at the null
+band, none moved toward the gate, so under rule 3's third-attempt clause the null-bearing nomenclator hypothesis is
+**untested-by-this-tool** (`kp/nom_test.py` / `run_align` alignment at P = 407 letters), not refuted; it reopens only with a different
+instrument (an aligner that models nulls explicitly, e.g. per-sign null classes learnt jointly) or more clear/cipher pairs.
+Rows in `HYPOTHESES.md` (created here, with the D2-SEURE rows carried in). No grades changed; 0 tokens read; key.tsv and decode not run.
+Not found: a null-cost setting of `nom_test` under which a 10%-null nomenclator control at this N separates from its shuffled nulls.
+
+## Remaining gaps (R8-SEURE, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE, kp/result_r8.json); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; 44-clear vs 43-cipher alignment FAILs without nulls (D2-SEURE) and the null-bearing design is untested-by-this-tool (R8-SEURE, control 0/3 at err 0); next: test Henri II-era French keys (Tomokiyo's Henri II pages, Lasry GL) against the reconciled f81R reads, ~$3
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (R8-SEURE, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: no Henri II-era French key (Tomokiyo's Henri II pages, Lasry GL) tried on Seure yet
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 1 internal gap; cheapest next: test Henri II-era French keys (Tomokiyo, Lasry GL) against the reconciled f81R reads, ~$3

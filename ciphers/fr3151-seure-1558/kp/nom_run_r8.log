@@ -1,0 +1,8 @@
+control nulls0.10_err0.000 0.0 [0.243, 0.27, 0.246]
+control nulls0.10_err0.095 0.3333333333333333 [0.263, 0.265, 0.231]
+control nulls0.10_err0.242 0.0 [0.238, 0.26, 0.243]
+control nulls0.00_err0.000 1.0 [0.987, 0.992, 0.987]
+control nulls0.00_err0.095 1.0 [0.894, 0.924, 0.894]
+control nulls0.00_err0.242 0.3333333333333333 [0.78, 0.261, 0.263]
+CONTROL BELOW GATE ['nulls0.10_err0.095', 'nulls0.00_err0.095']
+exit 3
