@@ -151,3 +151,39 @@ your reconciliation (units: pages x 2 + 1 at ~1.5; state the page count in your 
 cap or box), the same pre-registered known-answer control on H rows (PREREG pushed before scoring). Corrections to ciphertext_4610.tsv
 with per-row notes, decode --check exit 0, recount, ROOM flag for a verifier (the reading changed after AUDIT.md). Coordinate with
 R12-LVNV (verifier on 4616, running now): rebase before touching NOTES.md; never edit AUDIT.md. Update gaps item 3, gaps_check.
+
+## Wave 3 (spawned 11:5x UTC 6 Oct). Wave 2: SURSIGN stopped (step already run, R7-SUR2/R8-SUR3 -- the brief's stale source, not the
+worker's error), LVNV done (2 rows overturned), LVN10 control FAIL (nothing applied; pass B truncated past crop 11); KAL8, OLDCORP,
+CATOK23 live. Workers so far 15.91 ledgered. Intake gates 11:5x UTC as wave 1.
+
+### R12-RJM42 -- rah-juan-manuel-1521, held-out test of both letter alphabets on R9502's first page (f.42) (cap 6.5, box 85 min)
+Intake gate: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+The Verdict's cheapest next (R11-RJMKEY, R12-RJMPUB): two blind passes (shared inventory, sorter labels as they stand) on R9502's first
+page, crops only (paste the crop command; DECODE full-size image per NOTES.md routes, one browser login at most), plus a read of the
+period decipherment's clear text for the same letter (Salazar A.23 f.42 "Texto descifrado" -- locate it on the record's images; if it is
+not on any image you can reach, stop after the passes and say so). PREREG before scoring (pushed): the alignment method fixed in
+advance, the statistic (letter-hit rate of each key on aligned letter-cipher tokens), shuffled-key controls, and the gate. Note that
+Tomokiyo prints this letter's first line (R12-RJMPUB): exclude that line from the scored span or score it separately, so the held-out
+claim is clean. Units: 2 passes + 1 reconciliation + 1 gloss read at ~1.5 + floor; stop before a unit that would cross 80%. Report both
+keys' numbers and controls; no key/grade change unless a key passes. Update Remaining gaps / Escalation, gaps_check.
+
+### R12-RJMFRAG -- rah-juan-manuel-1521, where is the 6 Jun 1522 letter (Salazar A-24 ff.147-148) "Publicado un fragmento en ..."? (Sonnet 5.5, cap 1.5, box 30 min)
+Intake gate: as R12-RJM42.
+Rule-1 lead from R12-RJMPUB. Find the venue the Índice de la colección Salazar y Castro cuts off (Google Books snippet queries inside the
+Índice volume for the entry, `&country=US&key=...`, <= 15 calls; sources/salazar-castro-index/ on disk first), then check the venue
+itself (IA / Google Books full text) for the fragment: which letter, which lines, clear or deciphered, page. Record in NOTES.md's
+published-decipherment section; update the [print] Escalation line. Do not decode; do not classify novelty.
+
+### R12-SURSWP3 -- na-suriname-map-1781, inv. 373 offset sweep (labels n = 2 mod 4) for further glossed cipher (cap 3, box 50 min)
+Intake gate: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+The Verdict's next (R12-SURSWP2/R12-SURSIGN): the same scripts and protocol as passes/inv373_sweep_r12/ (control 0693 tile on every
+sheet), labels = 2 mod 4 across 0005-1024 skipping everything already sampled, <= 120 IIIF requests >= 1.9 s apart, stop at the ceiling
+and record the covered range. look.tsv in passes/inv373_sweep_r12b/. Candidates: scan numbers and one line only. Update Verdict, gaps_check.
+
+### R12-LVN16R -- lodewijk-van-nassau-1573-74, R12-LVNV's two follow-ups on 4616 (cap 2, box 35 min)
+Intake gate: as R12-LVN16 (wave 1).
+(1) Fix lvn16/score.py to read lvn16/ciphertext_4616_pre.tsv (AUDIT.md "R12-LVNV": the logged reproduce line rewrites aligned.tsv against
+the post-apply file); rerun and confirm 193/210 and 194/210 and a byte-identical aligned.tsv. (2) The eye pass R12-LVNV named on the 12 H
+control rows both readers contested (3 vs 7, 8 vs 9): open each at 300 dpi from the existing crops yourself, record what the image shows
+beside the H value; this tests the control, not the target -- if the H value looks wrong on the image, list it as a possible key-sheet or
+transcription conflict for a verifier (do not edit key or H rows). Push; ROOM done line.
