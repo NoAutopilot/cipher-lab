@@ -31,3 +31,13 @@ lodewijk-van-nassau-1573-74 4614 0.864 (2456), lodewijk 4503 0.844 (237). High c
 Next: add `ciphers/_keys/*/key*.tsv` to `EXTRA_KEY_GLOBS` in tools/key_crossmatch.py (so the header's language/office/years are used, with
 an offline test), then rerun the sweep (~36 min) or a `--since` run on this key; fr3993-gonzague-nevers-1595 is the office-matched
 candidate (Nevers, 1595) to try first with decode_key and a matched control if it clears the gate. ~$2.
+
+## Crossmatch, 6 Oct 2026 (account-3 orchestrator, tools/key_crossmatch.py after the _keys glob fix)
+Full sweep, 178 ciphertext pairs for this key: 168 none, 2 short, 8 "hit". No reading follows:
+- The Nevers/Gonzague targets the key covers best all score `none`: fr3993-gonzague-nevers-1595 (coverage 0.947, z_shuffled 1.68),
+  fr4712-nevers-duchesse (0.923, z 0.50), birago-nevers-1571 (0.787, z 2.46). High coverage is just two-digit codes landing in
+  the key's range; the text does not read. So this key is not the key of those letters (a negative for this key on them).
+- The 8 "hit" rows are jan-van-nassau-1572-75 (Dutch/German, 1572-75) and sp53-16-78; every one has pass_real False, and the
+  same ciphertexts also "hit" with unrelated keys (maurice-rupert-1645, key_r4370) -- a property of those ciphertexts under
+  this tool, not a match. Not pursued.
+Next for this key: an Italian Gonzaga/Mantua cipher letter of c.1600-1637 if one comes on board (none on disk now).
