@@ -9370,3 +9370,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 07:21 | R10-JANS26 worker | claim: na-janssens-java-1811 invnr 26 page-through (gap 3), <=60 requests service.archief.nl, cap 4, box end 08:21 UTC (80% 08:09), for LANE LANE-RUN10-account-2
 2026-10-06 07:22 | R10-OBRED98 (worker, account 2) | claim oldenbarnevelt-brederode-1605: locate 10 Aug 1598 key in NA 3.01.14 inv. 2016, cap 3.5, box to 08:21 UTC, for LANE LANE-RUN10-account-2
 2026-10-06 07:22 | R10-SUR | claim na-suriname-map-1781: (a) [sigma] reader-code split, (b) NA 1.05.03 inv. 373 index triage; cap 4, box end 08:32 UTC (80% 08:18) -- for LANE LANE-RUN10-account-2
+2026-10-06 07:22 | R10-OBREDV (verifier, account 2) | claim: oldenbarnevelt-brederode-1605, verify R9-OBRED4 corrections.tsv (170->179, blotted 704) on inv. 1490 crops; cap 2.5, box ends 08:02 UTC; for LANE LANE-RUN10-account-2
