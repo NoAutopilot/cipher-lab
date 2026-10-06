@@ -387,14 +387,44 @@ pitch (top/bottom margin <= 4 px, or --follow-slope) before another pass.
 Cost: see the lane ledger (about 20 Sonnet calls: 4 discarded full-width, 10 cipher half-line, 6 decipherment).
 Report: what was read and where it was not found. No reading claimed, no novelty classified (rule 10).
 
+## LANE-PRIV1 FER-POOL step 1, item 126, 6 Oct 2026 01:4x-02:0x UTC (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA)
+
+Material: BNE MSS/20211/126 (Trujillo, 4 Dec 1478) images-126/p-000.jpg (f.1r, 1123x1549) and p-001.jpg (f.1v spread,
+2144x1526), both 120 ppi (pdfimages: the BNE PDF holds the same), private repository; nothing image-like committed here.
+Cipher line centres from a dark-ink row profile: **f.1r 28 cipher lines, f.1v 12** (then the clear closing "qual Recebire
+merçed ..."). Crops: `tools/iiif_lines.py --image p-000.jpg --region 130,180,950,1140 --centres <cipher centre - 5> --top-margin 8
+--bottom-margin 8 --max-width 500 --overlap 50` (56 half-line crops) and p-001.jpg `--region 150,180,850,480` (24), each holding the
+cipher line and the faint interlinear decipherment written above it; 3x upscale. Two blind Sonnet passes, 8 calls each:
+`item126_passes.tsv` (G = interlinear as read, C = cipher tokens; V12 is the clear closing).
+
+**Result 1 (control-backed): Tomokiyo 2018 Fig. 4's syllable numerals agree with this leaf's own period decipherment.**
+Rule fixed before the first run (`item126_fig4_test.py`): share of numeral tokens whose Fig. 4 syllable occurs in the same
+line's gloss letters (lines with >= 8 gloss letters read), against Fig. 4's syllables shuffled over its codes (2000 draws), gate
+real > shuffled p99. Pass A: 0.370 (149/403) vs shuffled mean 0.100, p99 0.156, **PASS**. Pass B, read independently: 0.371
+(116/313) vs 0.097, p99 0.160, **PASS**. The published key (`published`, credited to Tomokiyo) is supported for the
+numeral layer by an independent period witness on a second letter of the pool (it was built mainly from item 114).
+The test is lenient in the same way on both sides (a syllable anywhere in the line's gloss counts), so it measures
+key-vs-gloss consistency, not per-token correctness; it does not test Tomokiyo's letter signs or his nomenclator.
+
+**Result 2 (gate failed): the item 126 transcription is not settled, so no per-token reading or sibling decode.**
+Pass A 1,303 tokens, pass B 1,376; agreement 0.626 on all tokens, 0.758 on numerals alone. That is far over the 10% line.
+The letter-like signs show item 123's problem (shape labels lump the t-based signs), and the interlinear is mostly
+unreadable to the readers at 120 ppi (pass A read about 400 gloss letters over 40 lines; most G rows are "?"), so it
+cannot carry a full key alignment (`tools/interlinear_align.py` was not run: the gloss is too sparse to align). Count only, not
+a reading: agreed numeral tokens with an unbracketed Fig. 4 value are 298 of about 1,420 tokens (21%); with Tomokiyo's
+bracketed (inferred) values 59 more. Siblings (items 94-128) were not decoded: the same unsettled letter-sign alphabet applies
+to them, and their images are the same 120 ppi.
+Report: what was read and where not found; no novelty classified (rule 10). Cost: see the lane ledger (16 Sonnet calls).
+
 ## Remaining gaps (finish-or-blocker pass, 5 Oct 2026)
 Read so far: 0% of cipher tokens graded H/C/S; the period decipherment is in two unreconciled passes (15 lines, about 50% agreed spans)
 - cipher block sign transcription (22 lines, about 1,400 glyphs) - blocker: waiting-on ASKS row 143 (the owner's sign sorter); the screenshots are legible, but two blind passes split on 17% of glyphs and the shape labels lump the t-based signs (30% of glyphs); next: settle the alphabet in tools/sign_sorter.py on the set1-4/5/6 crops (focus: t/tt/tb/crossed-t, e/e:/c, d/d.), then 2 passes against the settled labels, ~$6
 - period decipherment reconciliation (15 lines) - blocker: not-attempted; the two passes disagree on most words below D08; next: reconcile the two passes from the D1-D3 crops with the cipher's own "charles"/"por que" anchors, ~$2 (better after the high-resolution image)
 - key alignment against the period decipherment (step 4) and decode_key.py reading (step 5) - blocker: not-attempted; it needs the cipher transcription above; next: interlinear_align.py on cipher vs the reconciled decipherment, ~$3
+- item 126 and siblings 94-128 per-token reading - blocker: waiting-on ASKS row 143 (the owner's sign sorter, now for items 123 and 126); 126's numerals are supported by Fig. 4 (two passes PASS), but its passes agree 0.626 and the letter-sign alphabet is unsettled; the Fig. 4 table used by item126_fig4_test.py is not committed (author's work): re-create KEY.tsv (code, value, grade) by typing the 73 syllable cells from the private repo's lit/fig4-000.jpg (bracketed values grade M), ~15 min
 
 ## Escalation (5 Oct 2026)
-- [ ] siblings: item 126 (Trujillo, 4 Dec 1478) is now on hand (private repo, images-126/; orchestrator note above): every cipher line carries an interlinear period decipherment, so its resolution is the next thing to check; plan the 126 alignment job named in that note
+- [x] siblings: item 126 transcribed in two passes with its interlinear (LANE-PRIV1, 6 Oct 2026): Fig. 4 numerals PASS against the period gloss (0.370/0.371 vs shuffled p99 0.156/0.160); its interlinear is too faint at 120 ppi for a full alignment, and the letter signs wait on the sorter (ASKS 143)
 - [x] clear-pages: the clear opening and the period decipherment on f.1r located and used (step 1 verdict)
 - [x] known-keys: Tomokiyo 2018 Fig. 4 (published) is in hand and was used to test the step-1 verdict
 - [ ] print: no printed text of the letter located so far (Galende Díaz, Tomokiyo checked); a print search on the decipherment's phrases (tools/print_check.py) once it is reconciled
