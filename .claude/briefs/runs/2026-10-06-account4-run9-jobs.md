@@ -124,3 +124,28 @@ for `ebay.de/itm/*284276746819*` and the seller's other items (one request at a 
 pause), fetch any capture with the `if_` form, and record what the listing shows (images, text, date) in a dated NOTES.md section. If
 web.archive.org still resets, append one LOCAL-QUEUE.tsv row for it in the file's format (grep for an existing row first). Search results
 only.
+
+### R9-WVOALIGN -- wvo-hessen-1564 f.23 interlinear alignment (Opus; cap 6, box 90 min; 2 Sonnet passes + 1 reconciliation, row-pair crops)
+Intake gate: `wvo-hessen-1564: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+R9-WVOSORT's observation (NOTES.md "f.23 owner sign sorter", grade M by eye): f.23 is 20 alternating rows, German clear rows over 10 cipher
+rows, apparently a letter-over-sign interlinear decipherment. Test it: (1) cut 10 row-pair crops (clear row + the cipher row under it;
+crop step pasted, from the image on disk, reuse sorter/ geometry where it helps); (2) transcribe clear rows (German, letter-spaced) and
+cipher rows: 2 blind Sonnet passes, one row-pair crop group per call (price 1.5 per call; at most 2 calls per pass), sign labels = the
+sorter's provisional pile ids where possible so the owner's later sort can relabel mechanically; reconcile (1 unit); (3) PREREG-R9-WVOALIGN.md
+pushed before scoring: statistic = number of cipher signs whose letter value is consistent across >= 2 rows (and the "worden sei"/"zweimahl"
+checks named in NOTES.md); control = the same alignment against row-shuffled gloss/cipher pairs (can vary on the statistic -- check),
+>= 200 draws; gate real > control p95; (4) run `tools/interlinear_align.py` (extend it with an option, never a private copy). If PASS, write
+key.tsv (grade C only where the gloss letter sits over a single sign and recurs consistently; M otherwise), a decode with the folder's
+decode config and `--check` exit 0, rule 4 counts, and correct the folder's "no interlinear gloss" statements (Verdict, Premise check,
+"Images opened") with a dated note -- do not delete them. A reading change after AUDIT.md (if any): flag for a verifier. If FAIL/tie,
+log it; status stays `open`. Report what was found and where it was not found; do not classify novelty.
+
+### R9-MANTPC -- sachsstaatsarchiv-manteuffel-1712 per-code shuffle test on R9-MANTPOOL's 24 codes (Opus; cap 2.5, box 50 min; disk only)
+Intake gate: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next (R9-MANTPOOL): the blended PASS (24 vs p95 19, mean 14.9) cannot say which codes carry the 5-10 codes of signal.
+Pre-register (PREREG-R9-MANTPC.md, pushed before scoring) a per-code test on r9mant/codes_r9.tsv: for each of the 24 codes, its agreement
+share against the same code's share under the 1000 within-bin gloss shuffles (r9mant/shuffle draws; regenerate if not stored), with a
+multiple-comparison correction stated in advance (e.g. Benjamini-Hochberg q 0.10), plus a per-class breakdown (letter / syllable / word
+codes; rule 3 AX-NAMES lesson). Codes that clear: note "per-code PASS" in key.tsv's note at M (no S without a verifier); codes that fail:
+key.tsv note "per-code FAIL", and if a code's value is no better than chance remove it from key.tsv (decode --check exit 0, recount U).
+Update NOTES.md, HYPOTHESES.md, Remaining gaps / Escalation; gaps_check.py pass; ROOM flag for a verifier (reading changed after AUDIT.md).
