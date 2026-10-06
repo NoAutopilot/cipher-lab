@@ -5070,6 +5070,40 @@ Open for the next lane:
 3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
 4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
 
+## LANE LANE-RUN8-account-2 handoff (session_01Aeemo71BBJ5bPUjGtFFtM5, account 2), 6 October 2026 (closed 04:4x UTC: i-r S/M backlog worked, lane about 55.6 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run8-jobs.md. WORK-QUEUE row 241: RUN8, same tier as RUN7
+(tools/next_steps.py runnable rows, cost band S and M, plus the `parallel` action of blocked rows), folders i-r. Gate 0a clear (SESSION-SWEEP-account-2
+done 23:21 5 Oct, 0 recovered). VERIFY-BACKLOG had no i-r row needing a verifier. Off limits: Birago (incl. nevers-birago), Armstrong, Debosnys,
+riksarkivet-r4282 (account-4 private). Twenty-two Opus 5.5 workers in four waves (21 D, 1 D-), workers 47.84 + orchestrator about 7.8 = about 55.6
+of cap 60 (get_session). five_hour `allowed` throughout. No reading entered a key; no status line moved to a terminal state.
+- matignon-mayenne-1586 (RUN7's named step): f.110 sorter re-cut with tools/sorter_recut.py on 5 traced written lines, build.sh --region;
+  tools/sorter_preflight.py PASS, tile check 22/24 one whole sign; flagged for the account-3 orchestrator to publish (ASKS 146). R8-MATCUT 4.13 (D-, 1.18x).
+- nla-heinrich-braunschweig-1519: NLA BU L 1 Nr. 548 and 562 are digitised on Arcinsys (free viewer); the copy order is not needed. The 8 images are
+  on disk with a manifest. BOTH files carry a 19th-c. archivist key table and deciphered word list (Grein, 1858/1860; numeral substitution for single
+  words in clear Low German). Nr. 562 is K. Schepper 1522, not Heinrich. FLAG: check-solved / verifier call on status (found-solved?) before any decode.
+- pollaky-1865-1875 (NEAR row): ad 2 36/36 matches ciphertext.txt; ad 1 10/11, SIGN-04 = 4 dots candidate correction (r8poll/corrections.tsv); no
+  test or NEAR number changes.
+- rayburn-2004: second blind pass reconciled at 47.1% agreement (over the 10% sorter line); test 2 PASS (mark-as-case-marker A 0.867 vs p95 0.600).
+  Per TRANSCRIPTION.md the next step is the owner's sign sorter, not test 3; the brief should have stopped at reconciliation.
+- rubin-1953: CR p.67 Block C at 300 dpi, ciphertext.txt unchanged; 3 K1/K2 slips read; vnie plain N in CR (glyph stays M); variant C2b logged.
+- naf14913-rousseau-venice-1743: Hatzenberger 2015 p.326 values contradicted for this cipher (605 = republique at 7/7 slip-backed, grade I);
+  registered count-vector gate (PREREG 0ec1ce048) NON-INFORMATIVE (known-answer licence 0/3), 52=la FAIL, no key change. Verifier flag: 501 (C et)
+  count vector matches un. Next: re-registered run with a same-class planted known-answer, ~1.
+- na-suriname-map-1781: context-tile blind look [retired] (R7-SUR, R7-SUR2 already ran it); next the [sigma] reader-code split, ~1, script.
+- oldenbarnevelt-brederode-1605: DECODE 2118 = 1620 Levant key (codes 1-116), no fit; 122 Munich/Marburg in-window DECODE keys screened, none shown
+  to fit (89 numeral-tagged unread at 200 px); next full-size Marburg 4 d 1219 + 5 Munich records, ~3.
+- Searches (search results only): roell inv. 348 scans 3-79 and inv. 92 scans 176-230, no cipher/minute (Van Dedem left Bucharest 31 Jan 1809 for
+  Vienna; next 1.02.20 letter-book); karlxi Bakes 2018 dissertation and 14 more Nijmegen/Dumont scans 0 hits (lead: German 1680 Actes Vollmachten,
+  page read ~1); rah-morillo RAH 2240 clear, item 1 now needs-physical-access; lope-hurtado BNE MSS/20212/27 = five letters 1522-26 partly cipher,
+  digitised but bnedigital Cloudflare-blocked (LOCAL-QUEUE viewer capture ~2); ormond-arran 1871 Carte report p.43/72 lists vol. 50 cipher
+  collection incl. Arran "with their keys", no folios; ra-celsing-sillen Westrin Turcica p.413 Sillen letters among Celsing despatches, target
+  volume not named; ra-vellingk HTRC EF API HTTP 500 (untested-by-this-tool), HRSH vol. 6 full view on HathiTrust + Google Books owgPAAAAYAAJ
+  snippet "Wellingk ... Sparre ... Chiffre"; konstanz Pallain other volumes + Bailleu 2 no 17 Jul 1798 Sieyes letter (next Guyot 1911).
+Open for the next i-r lane: (1) nla-heinrich check-solved/verifier call on the Grein key sheets; (2) rayburn owner sign sorter (no machine pass);
+(3) rousseau same-class known-answer re-run ~1; (4) oldenbarnevelt-brederode full-size Marburg/Munich keys ~3; (5) karlxi 1680 Actes page read ~1;
+(6) vellingk read owgPAAAAYAAJ "Wellingk ... Chiffre" page ~1; (7) lope-hurtado LOCAL-QUEUE row for BNE 20212/27 images.
+
 ## LANE LANE-RUN7-account-1 handoff (session_017EaoA9jsirqf8k8M7LCMwt, account 1), 6 October 2026 (closed 02:4x UTC: three waves, lane about 53 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account1-run7-jobs.md. Gate 0a clear (SESSION-SWEEP-account-1 done
