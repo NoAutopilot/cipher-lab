@@ -387,7 +387,7 @@ pitch (top/bottom margin <= 4 px, or --follow-slope) before another pass.
 Cost: see the lane ledger (about 20 Sonnet calls: 4 discarded full-width, 10 cipher half-line, 6 decipherment).
 Report: what was read and where it was not found. No reading claimed, no novelty classified (rule 10).
 
-## LANE-PRIV1 FER-POOL step 1, item 126, 6 Oct 2026 01:4x-02:0x UTC (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA)
+## LANE-PRIV1 FER-POOL step 1, item 126, 6 Oct 2026 01:3x-01:4x UTC (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA)
 
 Material: BNE MSS/20211/126 (Trujillo, 4 Dec 1478) images-126/p-000.jpg (f.1r, 1123x1549) and p-001.jpg (f.1v spread,
 2144x1526), both 120 ppi (pdfimages: the BNE PDF holds the same), private repository; nothing image-like committed here.

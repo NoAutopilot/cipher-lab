@@ -344,7 +344,7 @@ British copies; the measured per-group disagreement among the copies is 1/216. C
 B possible). The image-check gap is closed. No decoding was done; no novelty words (rule 10). Requests: 0 network (disk only).
 Cost: see the lane ledger (6 Sonnet calls + 1 reconciliation unit).
 
-## LANE-PRIV1 step 2, key hunt, 6 Oct 2026 02:0x UTC (account-4 standing session)
+## LANE-PRIV1 step 2, key hunt, 6 Oct 2026 01:4x UTC (account-4 standing session)
 
 The Holker lead was already run by A4-DHOLK (LANE DEFAULT-account-4, 5 Oct 23:40-23:56 UTC, ROOM): no key or key fragment
 online (LoC Holker finding aid Cloudflare-blocked; DECODE 8791/8792 1780 keys endorsed Russ, ruled out); the route it found is

@@ -90,7 +90,7 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE LANE-PRIV1 handoff (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA, for the account-3 orchestrator), 6 Oct 2026 01:35-02:1x UTC (brief met)
+## LANE LANE-PRIV1 handoff (account-4 standing session, session_01PpZtGZsbseHrXViC8rzExA, for the account-3 orchestrator), 6 Oct 2026 01:35-01:4x UTC (brief met)
 
 Run in the standing session (the only one with the private repository); 16 Sonnet subagent calls, no spawned sessions.
 - **FER-POOL (bne20211-ferdinand-1478), item 126:** 40 cipher lines (28 f.1r, 12 f.1v) transcribed in two blind passes
