@@ -132,3 +132,34 @@ public-domain/openly licensed late-20th-century Italian prose (record sources + 
 rule 3 if a judge is used). Step 2: specs/erba-2006.json test 3 (letter-like design) with its control drawn from the new corpus at the same
 N and design, pre-registered; rerun test 2's design-L statistic on the new corpus control too and report whether the era caveat moves it.
 Both numbers into cheap_test_done. Shared asset: name the corpus in SYSTEM.md (tools/system_map_check.py). Cap 3.
+
+## Wave 3 (spawned 16:2x UTC 6 Oct). Gallica manifest probe 16:2x UTC: HTTP 500 (not answering) -- no job depends on it.
+
+### R12D-FAIR2 -- fair-game-2010, injective substitution solve with matched control (Opus; cap 2.5, box 45 min)
+Intake gate: `fair-game-2010: open (line 3) -- edition/page or full-text-search citation found within 6 lines` (16:0x).
+R12D-FAIR Verdict cheapest next. A different instrument from masc anneal and masc_words: an injective (one-to-one, no two cipher letters to one
+plain letter) constrained search -- exhaustive/branch-and-bound over word patterns or a constraint solver -- on the reconciled ciphertext
+R12D-FAIR used (say which order). Matched control: English N=67 under the same scheme, seeds >=5, gate pre-registered; target only if the
+control clears; family_run.py discipline, both numbers in HYPOTHESES.md. If the control cannot clear, log CONTROL BELOW GATE and stop
+(rule 3 third-attempt clause: then the step is [retired] for this instrument family, named). Disk only. Cap 2.5.
+
+### R12D-ERBA4 -- erba-2006, word-level constrained decoder for the letter-class design, it21news control (Opus; cap 2.5, box 45 min)
+Intake gate: `erba-2006: open (line 3) -- edition/page or full-text-search citation found within 6 lines` (16:0x).
+R12D-ERBA3's named next (NOTES l.~201): decode only into Italian words (dictionary/word-list constraint from tools/data/it21news), letter-
+class (polyphonic) design; matched control from it21news enciphered under the same design at the target's N, seeds >=3; gate pre-registered;
+target only if the control clears. Both numbers into the spec's cheap_test_done, NOTES.md, HYPOTHESES.md. Disk only. Cap 2.5.
+
+### R12D-GRAZB2 -- fr2980-gramont, per-sign boxes re-cut + the same blind sort PREREG (Opus; cap 2.5, box 45 min)
+Intake gate: `fr2980-gramont: partial (line 3) -- edition/page or full-text-search citation found within 6 lines` (16:0x).
+R12D-GRAZB's named next: its decoy control failed because proportional ticks landed on neighbour signs. Re-cut each token as a tight per-sign
+box (eye-checked overlay pasted into NOTES, 5+ boxes opened against the line image), then run the same PREREG sort unchanged (one Sonnet call,
+crop paths only). If the decoy control still misses its gate, log the sort [retired] for this pair (rule 3 third-attempt clause applies to a
+third attempt; this is the second, with a real crop fix) and name the owner's sign sorter as the next instrument. Key change only if gated.
+Images on disk only. Cap 2.5.
+
+### R12D-MANT06 -- sachsstaatsarchiv-manteuffel-1712, Loc. 694/06 stride-5 screen of frames 0480-0538 (Opus; cap 2.5, box 45 min)
+Intake gate: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (15:4x).
+R12D-MANTSIB's named next: 694/06 0510 and 0530 are glossed cipher leaves of Krauske's key family; screen 0480-0538 at stride 5 (thumbnails by
+script from the frames.tsv URLs, fetch once; vision only on candidates, crop step mandatory) for further glossed leaves and, above all, any
+glossed leaf carrying codes above 400 (the range of f.410's 23 U / 49 M). Inventory TSV + NOTES section + Escalation update; no
+transcription. Do not open Loc. 695/03 (flagged separately). Cap 2.5.
