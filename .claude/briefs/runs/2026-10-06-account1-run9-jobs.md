@@ -140,3 +140,26 @@ report coverage before/after per line; do not build or publish a sorter in this 
 ### R9-ELEC -- fr5761-election-1519: full-text search of Deutsche Reichstagsakten J.R. I (Sonnet, cap 1.5, box 30 min)
 NOTES next: archive.org be-api fts and Google Books API (country=US) on Deutsche Reichstagsakten Jungere Reihe I for "chiffre"/"Ziffer" +
 Moltzan/Cordier; log every query and hit count (search results only, rule 10).
+
+## Wave 4 (written 06:2x UTC from wave 2's own Verdict lines; spawned only as budget allows; intake gate already exit 0 above)
+
+### R9-SEURE2 -- fr3151-seure-1558: Bourdeau's guiche1551 key vs R1/R2 (cap 3.5, box 45 min)
+Verdict cheapest next (R9-SEURE): "fetch Bourdeau's guiche1551 key and test it against R1/R2 with a coverage-checked statistic and own-text
+power control first, ~$2.5". Bourdeau's code is MIT/text CC BY (credit him, CLAUDE.md rule 8); the power control runs first and must clear
+its PREREG gate, else NON-TEST and stop.
+
+### R9-NEVF2 -- fr3416-nevers-fils-1589: L05 sign-sorter build for a person's read (cap 3, box 35 min)
+Verdict cheapest next (R9-NEVF): "the L05 sign-sorter build for a person's read (pos 4/5/7/13/15/16/17/20), ~$1". Build with
+tools/sign_sorter.py, run tools/sorter_preflight.py and paste; on PASS a ROOM flag for the account-3 orchestrator to publish (db capability).
+Do not publish.
+
+### R9-NOX2 -- fr16142-noailles-constantinople-1571: c262 gloss lines below L13, one cut and read (cap 2.5, box 30 min)
+Verdict cheapest next (R9-NOX): "c262 gloss lines below L13, one cut and read, ~$0.5". Crops pasted, one blind read, gloss.tsv rows added
+with grades; if the reading feeds an existing pre-registered test, re-run it with --check. No depth/N-class edits; flag the verifier if
+any number in status.json depth_check moves (rule 10 propagation).
+
+### R9-HUNT2 -- huntington-blathwayt-madrid-1728: re-registered context-fill, attempt 2 of at most 3 (cap 3, box 40 min)
+Verdict cheapest next (R9-HUNT): bracket fix + margin-filtered gate against the shuffled-context control at matched margin. The margin
+gate was seen post hoc on seeds 1-3, so the new PREREG fixes margin threshold and gate BEFORE running, on FRESH seeds only (4-6+),
+pushed first. If the control fails again, log "attempt 2 FAIL" and name a different instrument as next (rule 3 third-attempt clause);
+do not tune again.
