@@ -4,49 +4,49 @@
  "n_piles_keyed": 64,
  "decoded_letters": 403,
  "gloss_letters": 329,
- "R": 0.1913,
+ "R": 0.1803,
  "a_shuffled_key": {
   "n": 1000,
   "mean": 0.1543,
   "p99": 0.2514,
-  "max": 0.2814
+  "max": 0.2842
  },
  "b_letter_order": {
   "n": 1000,
-  "mean": 0.1647,
+  "mean": 0.1656,
   "p99": 0.2623,
-  "max": 0.2923
+  "max": 0.306
  },
  "c_shuffled_dupuy": {
   "values": [
    0.1475,
-   0.1339,
+   0.1202,
    0.1721,
    0.1339,
-   0.1585,
+   0.1557,
    0.1393,
    0.194,
-   0.1093,
-   0.123,
-   0.1721
+   0.1148,
+   0.1202,
+   0.1749
   ],
   "max": 0.194
  },
  "d_nonlocking": {
   "n": 924,
-  "mean": 0.1611,
-  "p99": 0.265,
+  "mean": 0.1599,
+  "p99": 0.2644,
   "max": 0.2842
  },
  "single_L": {
-  "alt04": 0.2287,
-  "alt05": 0.2397,
+  "alt04": 0.2231,
+  "alt05": 0.2424,
   "alt06": 0.1607,
-  "alt08": 0.1575,
-  "alt12": 0.1838,
+  "alt08": 0.1657,
+  "alt12": 0.1866,
   "alt14": 0.2082
  },
- "provisional_ceiling": 0.2389,
+ "provisional_ceiling": 0.2363,
  "decode": "rpemeilsmieeallerpeooemlmneexlaodreepteuespemrauseuemvaxrelztmrscdmrzlaersmermlieertldosrsseessmesumsredseareedmselmemeoeelaxarumesmimesraeursetmdmdeaoosrerxrdropeeilsmedorsmbdsdocarnsttaexomeedasaeprmayesrytrlveeeccesussmcrmmdemeemmiuudedmmarseadsrmderscdmsrmeodroluptmretmeteudosprmsilsmmmlmnroelermxurrsemlasssrddlesdlzelassoesasioslcsseeeesossaesrimmroometdpastartlaretrtatsseillzeeseretorasseetesrd",
  "verdict": "FAIL"
 }

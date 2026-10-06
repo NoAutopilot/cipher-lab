@@ -3,6 +3,9 @@
 # DEF1-NOXG (5 Oct 2026): L01-L06 and L08 corrected from this worker's own read of native crops images/c262gx_L01..L08.jpg
 # (tools/iiif_lines.py --region 470,2130,1000,800 on the native canvas 262); L07, L09-L13 unchanged. 'vre' expanded to
 # 'vostre' (L05), 'vo9' to 'vous' (L02). [res] in L01 sits under an ink blot: print-supported only (Charriere III p.258), grade C at most.
+# R7A-NOX262 (6 Oct 2026): L09-L13 read on native crops images/c262gx_L09..L13.jpg (same command, region 470,2130,1000,1300,
+# --centres extended by 822,918,1014,1110,1206). L09 'trouve' -> 'treuve' (leaf spelling; Charriere prints 'trouve'), L13 'quil' -> 'quon'
+# (Charriere 'qu'on'); L10-L12 unchanged on the leaf. Lines below L13 ("plaisir de les en laisser ...") exist on the leaf, not transcribed here.
 L01	veullent s'aller promener en fland[res]
 L02	par mer et par terre, vous ne
 L03	vouldrez empescher lantienne
@@ -11,8 +14,8 @@ L05	vostre nation / pendant le temps
 L06	que la farce se jouera du coste
 L07	de dela il ne faudra pas
 L08	sendormir de deca. Car la partie
-L09	est forte / Il est vray que jay trouve
+L09	est forte / Il est vray que jay treuve
 L10	ces gens icy si comblez de biens
 L11	et de mal / Cest adire de richesses
 L12	et de volupte en toutes sortes
-L13	Il semble quil leur feroit
+L13	Il semble quon leur feroit
