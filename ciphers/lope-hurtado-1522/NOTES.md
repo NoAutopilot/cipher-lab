@@ -542,14 +542,14 @@ Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolv
 - Kolosova's Ko.7/Ko.10 tables (pp. 312, 333, 388, 405) and Bertomeu Masiá 2024 - blocker: waiting-on LOCAL-QUEUE.tsv row L17 and ASKS row 74; L17 is the owner's read of Kolosova 2017/2024, row 74 the RODERIC request-a-copy form, which takes the requester's own details (rule 9)
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
-- [ ] siblings: BNE MSS/18697/29 and MSS/20212/27 (aaymeloglu bne-ranked.md) unread by either project; next: BNE catalogue/digital-collections check
+- [ ] siblings: catalogue check done (R8-LOPE2, 6 Oct 2026): MSS/20212/27 (five letters 1522-1526, "Algunas parcialmente cifradas y con cifra", 14 h.) IS digitised in BNE Digital (card c3c70ca0-ac7a-42d5-8d01-f3216ed199d6), image host Cloudflare-blocked from the cloud; MSS/18697/29 (Tortosa 25 June 1522, "Parcialmente cifrada") has no digital link. next: capture the 14 leaves of MSS/20212/27 through the owner's browser (LOCAL-QUEUE viewer-capture row, as L57 for bne20211-ferdinand-1478), then a sign-inventory check against Bourdeau's 1522 and 1524 keys, ~$2
 - [x] clear-pages: R9644's and R9649's contemporary clear copies used by Bourdeau for the key (Job bLOP step 1)
 - [ ] known-keys: Kolosova Ko.7/Ko.10 reconstructions (LOCAL-QUEUE L17), not opened
 - [x] print: CSP Spain II grepped whole-volume (bCSLOP); no. 497 flagged, not yet compared
 - [x] key-rebuild: Bourdeau's key_codes.tsv (49 confirmed) + 1524 key carried back, credited
 - [x] image-check: R9634 full-size via DECODE `--guess-fullsize` re-tested 6 Oct 2026 (A4-RFLOPE): served, but byte-identical in size to Bourdeau's file (P1 1,427,572 B, 3256x2365 per two-page opening, his NOTES 3 Oct); no larger image on DECODE. RAH Biblioteca Digital search: Anubis challenge on the search POST twice, host stopped; A-26 = 9/26 digitisation not established
 - [n/a] retry: no attempt of ours on any of the three records to retry
-Verdict: keep going: 0 internal gaps on R9634 (A4-RFLOPE, 6 Oct 2026: residual is no-key-material or illegible at DECODE's only resolution); cheapest next: siblings, BNE MSS/18697/29 and MSS/20212/27 catalogue/digital-collections check, ~$1
+Verdict: keep going: 0 internal gaps on R9634 (A4-RFLOPE, 6 Oct 2026: residual is no-key-material or illegible at DECODE's only resolution); cheapest next: siblings, a LOCAL-QUEUE viewer-capture row for BNE MSS/20212/27 (digitised, BNE Digital card c3c70ca0-ac7a-42d5-8d01-f3216ed199d6; cloud blocked by Cloudflare, R8-LOPE2 6 Oct 2026), then a sign-inventory/key check, ~$2
 
 ## RUN6-LOPE (5 Oct 2026): CSP Spain II no. 497 vs Bourdeau's read_r9649.md (disk + one shallow clone; 0 network hosts besides github.com, 1 request)
 Source: dbourdeau/cyphersolver HEAD a43993754e2e (read 5 Oct 2026), `targets/lopehurtado/` read_r9649.md, read_r9644.md, NOTES.md; MIT code / CC BY 4.0 text, credited. No new reading, no decode; comparison of already-logged claims (bLOP2 section (1) above had the 497 identification; this job re-checks it against his files at the current HEAD).
@@ -580,3 +580,37 @@ Brief: LANE DEFAULT-account-4-20261005-2253, wave 2. Grades unchanged: this repo
 | 15v13 | ɭbʇʇ8∂98&∂ | ɭbʇʇ8∂ϑ& "presto" (6 signs) | the image shows ɭb ʇʇ 8 ∂ then two signs (9/ϑ, 8) before &; "presto" holds only if those two are one t; grade M at best ("que seria [xor8] ~presto"), not added |
 
 **Found:** nothing that raises R9634 above Bourdeau's 73.2%. "~presto" (15v13) is an M-grade candidate for a second reader with a better image to check. **Not found:** any larger DECODE image (re-test, 6 Oct 2026); an RAH digital record for 9/26 (search blocked by Anubis, not run). The residual is outside-blocked: illegible at the only online resolution, and no-key-material for the codes. Requests: github.com 1 (clone), de-crypt.org 1 login + 7 fetches (record page, 3 thumbnails, 3 full size), bibliotecadigital.rah.es 7 (curl 2, both Anubis 307; headless Chromium 5: 2 search-page loads, one failed mid-redirect, and 3 search POSTs, all challenged or failed). 1 subagent call.
+
+## R8-LOPE2 (6 Oct 2026, 03:37-03:42 UTC by date -u): BNE siblings MSS/18697/29 and MSS/20212/27, catalogue and digital-collections check
+Brief: LANE LANE-RUN8-account-2, lookup only. Route that worked: the BNE's Alma SRU endpoint, plain curl, no challenge
+(`https://bne.alma.exlibrisgroup.com/view/sru/34BNE_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&query=alma.mms_id=<MMS>`;
+`alma.creator=` and `alma.all_for_ui=` queries also answer). MMS ids from aaymeloglu/unsolved-ciphers `catalogue/bne-ranked.md` (cited,
+read via raw.githubusercontent.com, not copied). The Primo VE record pages (catalogo.bne.es/discovery/fulldisplay) are JS-rendered and were not fetched.
+
+| shelfmark | MMS id | catalogue record (MARC, quoted) | availability flag (AVA $e) | digitised? |
+|---|---|---|---|---|
+| MSS/18697/29 | 991037012969708606 | 245 "Carta de Lope Hurtado al Emperador con noticias de las negociaciones con el Papa, su viaje y la rebelión de Játiva y Alcira. Tortosa, 25 junio 1522"; 300 "2 h., 32 x 22 cm"; 546 "Parcialmente cifrada"; 500 "Firma autógrafa", "Sello de placa desprendido"; 510 Índice Salazar y Castro (1949) t. II p. 503 n. 137; 999 note ".PUBLIC. Ejemplar reproducido con Mss/18697/1" | "available", Sala Cervantes | **no 856 link**: no BNE Digital record. The reproduction is catalogued under MSS/18697/1 (Abad de Nájera, Milán 4 Jan 1523, MMS 991036979049708606), which has no 856 either: a physical reproduction (likely microfilm), not online |
+| MSS/20212/27 | 991044353069708606 | 245 "Cartas de Lope Hurtado al emperador Carlos V"; 260 "1522-1526"; 300 "14 h., 32 x 23 cm. y menos"; 520 "Son cinco cartas"; 546 "Algunas parcialmente cifradas y con cifra"; 596 "Fechadas en Tarragona, 5 de agosto de 1522, en Tortosa 25 de junio del mismo año y en Milán, 20 y 22 diciembre de 1525 y 27 de febrero de 1526"; 561 Pascual de Gayangos; 500 "Firmas y notas autógrafas" | "available", Sala Cervantes | **yes**: 856 `https://bnedigital.bne.es/bd/card?id=c3c70ca0-ac7a-42d5-8d01-f3216ed199d6` ("BNE Digital"); 927 thumbnail `https://bnedigital.bne.es/bd/es/low?id=c3c70ca0-ac7a-42d5-8d01-f3216ed199d6`. No IIIF manifest URL recorded: the card page answered curl with a Cloudflare challenge (HTTP 403) and headless Chromium with "Just a moment..." (one attempt); host stopped. No page image fetched |
+
+What the records say, and what they do not:
+- **Cipher, key or decipherment?** Both are letters from Lope Hurtado de Mendoza to Charles V with cipher passages ("Parcialmente cifrada";
+  "Algunas parcialmente cifradas y con cifra"). Neither record mentions a key, a cipher table or a decipherment/clear copy; "con cifra" could
+  mean a cipher passage or an enclosed cipher sheet -- not established without the images.
+- **Same office, different dates from the DECODE three.** R9634 is Genoa 13 Sept 1522 and R9649 Rome 9 Nov 1522; the BNE letters are Tortosa 25 June
+  1522, Tarragona 5 Aug 1522 (in Spain with Adrian VI before his embarkation) and Milan 20 and 22 Dec 1525 and 27 Feb 1526. The 1522 pair is the
+  same sender months before the DECODE letters (Bourdeau's 1522 key is the first key to test); the 1525-26 Milan letters fall in the period of his
+  1524 key (`key_1522_from1524_B.tsv`) and of Kolosova's Ko.7/Ko.10 tables (1521-1527). This is a lead, not a key match: no sign has been compared.
+- **A possible duplicate.** "Tortosa, 25 junio 1522" appears both as MSS/18697/29 (Salazar y Castro collection) and among the five letters of
+  MSS/20212/27 (Gayangos). Duplicate despatches were usual; whether these are the same letter in two copies (a duplicate in cipher, or one
+  ciphered and one clear, would give a crib) is not established from the catalogue; only the images can say.
+- **Further Lope Hurtado items** found by the same `alma.creator` query (16 records): MSS/18690/127 (Playa de Riba de Talla, 14 Aug 1522, health and
+  the Pope and the French), MSS/18690/116 (extract, c.1522), MSS/18697/30 (Archbishop of Bari to Lope Hurtado, Lyon 24 June 1522), MSS/20213/23
+  (Morono to Lope Hurtado, Milan 10 Sept 1525, digitised, Italian); none carries a cipher note (546) in the record. Not checked further.
+
+Found: MSS/20212/27 is digitised (BNE Digital card above) and holds five Lope Hurtado letters with cipher, two of them from 1522; MSS/18697/29 is not
+digitised. Not found: an image of either (BNE Digital Cloudflare-blocked from the cloud, as QUEUE.md logged for bdh.bne.es / bdh-rd / datos.bne.es on
+24 Sept 2026); a IIIF manifest URL; any key or decipherment named in either record. Next: the owner's browser captures MSS/20212/27's 14 leaves
+(LOCAL-QUEUE viewer-capture row, the L57 shape); MSS/18697/29 needs a reproduction request (BNE) or a check whether it duplicates the Tortosa letter
+in 20212/27. Requests: bne.alma.exlibrisgroup.com 4 (SRU, all 200), raw.githubusercontent.com 1, bnedigital.bne.es 2 (curl 403 challenge, headless
+Chromium challenge), bdh-rd.bne.es 1 (403 challenge), web.archive.org 2 (CDX, connection reset by the proxy both times; stopped). 0 subagent calls.
+
