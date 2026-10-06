@@ -1,0 +1,74 @@
+{
+ "settings": {
+  "band": 80,
+  "step": 100,
+  "iters": 3
+ },
+ "n_letters": 524,
+ "build_frac": 0.4534,
+ "control": [
+  {
+   "n_sym": 485,
+   "n_build": 220,
+   "H": 0.6151,
+   "null_mean": 0.3875,
+   "null_p95": 0.4492,
+   "null_max": 0.4566,
+   "pass": true,
+   "seed": 21
+  },
+  {
+   "n_sym": 485,
+   "n_build": 220,
+   "H": 0.6415,
+   "null_mean": 0.381,
+   "null_p95": 0.4264,
+   "null_max": 0.4302,
+   "pass": true,
+   "seed": 22
+  },
+  {
+   "n_sym": 485,
+   "n_build": 220,
+   "H": 0.6906,
+   "null_mean": 0.3742,
+   "null_p95": 0.4192,
+   "null_max": 0.4377,
+   "pass": true,
+   "seed": 23
+  }
+ ],
+ "targets": {
+  "passR.tsv": {
+   "n_sym": 408,
+   "n_build": 185,
+   "H": 0.3767,
+   "null_mean": 0.3813,
+   "null_p95": 0.4081,
+   "null_max": 0.4529,
+   "pass": false,
+   "n_ids": 48
+  },
+  "passA.tsv": {
+   "n_sym": 406,
+   "n_build": 185,
+   "H": 0.4027,
+   "null_mean": 0.3957,
+   "null_p95": 0.4439,
+   "null_max": 0.457,
+   "pass": false,
+   "n_ids": 44
+  },
+  "passB.tsv": {
+   "n_sym": 384,
+   "n_build": 169,
+   "H": 0.4186,
+   "null_mean": 0.3692,
+   "null_p95": 0.4233,
+   "null_max": 0.4233,
+   "pass": false,
+   "n_ids": 56
+  }
+ },
+ "power": true
+}

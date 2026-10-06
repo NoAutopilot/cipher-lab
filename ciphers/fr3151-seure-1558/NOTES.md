@@ -1189,3 +1189,51 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 2 internal gaps; cheapest next: reconcile Tournon passes A/B against the fo. 22r crops with the slip as known plaintext, then a pre-registered held-out-half alignment gate (power control first), ~$4
+
+## R12A-SEUT2: Tournon 1556 fo. 22r passes reconciled; held-out-half gate has power (3/3) and the transcription FAILs it (6 Oct 2026, 18:45-18:5x UTC by date -u, account 1, LANE-RUN12-account-1)
+Named next step of R12A-SEUT (known-keys). Brief `.claude/briefs/runs/2026-10-06-account1-run12-jobs.md` ### R12A-SEUT2. Step checked undone first.
+**Crops.** Gallica probe 200; canvas-26 region re-fetched and re-cut with the R12A-SEUT commands in `known_keys/regen_images.sh` (1 region request).
+**Reconciliation.** One Sonnet call, crops + `exemplar_sheet.png` + passes A/B only, **not given the slip** (`tournon/passR.tsv`, 408 signs, 48 ids,
+self-confidence 0.30, about 45 splits settled from the image; hardest: F/ff/longs, inf/o_/omega loops, d/beta/delta, hash/hash3, LAM/lam, X/H).
+Deviation from the brief, disclosed: the brief named "the slip as known plaintext" for the reconciliation; giving it to the reconciler would make
+the held-out half circular, so the slip entered only through the build-half alignment (PREREG-SEUT2 states this).
+**Gate.** `tournon/PREREG-SEUT2.md` (pushed d9a37fded before any target score; an exploratory control-only run before writing is disclosed in it),
+`tournon/seut2_gate.py` (`--check` OK), `tournon/result_seut2.json`. H = learn the key on L01-L06 against the slip, decode L07-L13 with it,
+nw_score against the slip; null = the same with 20 fr16 passages + 20 word shuffles of the slip (H depends on letter order, so it can differ).
+| run | H | null mean | null p95 | pass |
+|---|---|---|---|---|
+| control seed 21 (err 0.32) | 0.615 | 0.388 | 0.449 | yes |
+| control seed 22 | 0.642 | 0.381 | 0.426 | yes |
+| control seed 23 | 0.691 | 0.374 | 0.419 | yes |
+| **passR** (gating) | **0.377** | 0.381 | 0.408 | **no** |
+| passA (secondary) | 0.403 | 0.396 | 0.444 | no |
+| passB (secondary) | 0.419 | 0.369 | 0.423 | no |
+**FAIL with control power**: the held-out half of the machine transcription decodes no closer to the slip than to wrong texts, where a synthetic
+cipher of the same text at 0.32 sign error reads 0.62-0.69. Conditional on (a) the control's design: 485 symbols for 524 letters (0.93/letter) against
+the leaf's ~408 (0.78/letter), so the real cipher carries more word or syllable codes than the 11 modelled, and (b) the passes' own error being
+<= 0.32 (only their mutual disagreement, 0.318, is measured). Not a negative for the Tournon key; a negative for keying it from this transcription.
+No key file written; the items 43/44 (R1/R2) test was not reached. Second instrument on the same passes (after R12A-SEUT's non-test): per rule 3's
+third-attempt clause the next attempt is a different instrument, a person's sign sort of fo. 22r, not a further machine pass or re-tuned alignment.
+Requests: gallica.bnf.fr 2 (probe, canvas-26 region); 1 Sonnet subagent call (reconciliation). 0 tokens read.
+Not found: a transcription of fo. 22r whose held-out half aligns to the slip above wrong texts.
+Lesson (one line): a reconciliation whose output is scored against a known plaintext must not see that plaintext on the scored half.
+
+## Remaining gaps (R12A-SEUT2, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE); Danzay 1557 key non-test (R9-SEURE); La Guiche 1551 key FAIL with control power under one map (R9-SEURE2); Babou 1558 key not rebuildable from the microfilm capture (R10-SEURE3); Morvilliers 1549 block err 0.778, sorter built and handed on (D1-SEURE, D1-SEURES); Tournon 1556 block passes A/B err 0.318, reconciled passR, held-out-half gate FAIL with control power 3/3 (R12A-SEUT, R12A-SEUT2); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; Danzay non-test, La Guiche FAIL under one map, Babou not rebuildable, Morvilliers waits on the owner's sorter, Tournon machine transcription FAILs the held-out gate (R12A-SEUT2); next: test whichever of the Tournon/Morvilliers keys is rebuilt from a sign sort on R1/R2 through a pre-registered gate with a matched control, ~$3
+- Tournon 1556 key (fr. 3138 fo. 22r + canvas-25 slip) - blocker: not-attempted; machine passes retired for keying (R12A-SEUT non-test, R12A-SEUT2 FAIL with power); next: build an owner sign sorter for fo. 22r (tools/sign_sorter.py on the tv crops, as D1-SEURES did for Morvilliers) and hand it to the account-3 orchestrator, then re-run seut2_gate.py on the settled labels, ~$3
+- Morvilliers 1549 key (fr. 3138 fo. 66r) - blocker: waiting-on the owner's answer in the Morvilliers sign sorter (published by the account-3 orchestrator from the ROOM flag of 6 Oct 2026); then tools/sign_sorter_apply.py, machine passes against the settled labels, and alignment to the margin decipher
+- Babou 1558 interlinear decipher (fr. 3138 fo. 35v) - blocker: illegible at the Gallica microfilm scan; reopens with a colour capture (BnF reproduction request) or a person's read in the reading room
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (R12A-SEUT2, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: Danzay non-test (R9-SEURE); La Guiche FAIL under one map (R9-SEURE2); Babou illegible (R10-SEURE3); Morvilliers sorter waits on the owner (D1-SEURES); Tournon machine transcription FAILs the held-out gate with power (R12A-SEUT2), Tournon sign sorter untried
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates; machine passes of Tournon fo. 22r for keying (R12A-SEUT, R12A-SEUT2)
+Verdict: keep going: 2 internal gaps; cheapest next: build an owner sign sorter for Tournon fo. 22r from the tv crops and hand it on, then re-run seut2_gate.py on the settled labels, ~$3
