@@ -115,3 +115,16 @@ f.349 key for code 29 and cells 22:/0), the institution's public contact address
 diplomatiques, La Courneuve), subject line, blank recipient-name and sign-off placeholders, links per Outreach gate (6). Status `drafted`; do
 not send, do not run the gate-7 fact check yourself (a separate session does). Write a ROOM flag naming the draft so the account-3
 orchestrator queues the gate-7 check. Update the folder's Remaining gaps line to "waiting-on ASKS 150". Rule 9: no personal data.
+
+### R12A-ECKV2 (VERIFIER) -- eckert-1862, grade decision on Leghorn/Legend/Leopard (R12A-ECKLEG flag, 18:19). Cap 2.5, box 45 min.
+Same method as R12A-ECKV (its AUDIT.md carry-over): read ec18/leghorn_uses.tsv, legend_uses.tsv, leopard_uses.tsv and the R12A-ECKLEG
+section; grade per token per rule 4 (C only where the telegram's own OR print is the plaintext for this very use). Legend reads Butler 13
+(Feb-Nov 1864) and Canby 10 (May 1864-May 1865) with overlapping dates: that is a rule-4 two-value conflict -- record the witnesses (sender,
+recipient, direction, date) for each value in HYPOTHESES.md, grade Legend M in any use whose witness does not match, never settle by majority.
+AUDIT.md "## Carry-over R12A-ECKV2", apply via the folder's scripts, --check exit 0, status.json / SO queue rows carried.
+
+### R12A-PISV (VERIFIER) -- fr16045-pisany-rome-1585, carry-over of R12A-PISRS's f.275r change (flag 18:11). Cap 2, box 40 min.
+R12A-PISRS committed 4 shape-settled T36 labels into tx86e (f.275r L04/L09/L12/L14, m -> s; kp86e C 360->364 M 191->187; PREREG e78873a18).
+Check the change against the PREREG and the crops (do the 4 labels follow from the prereg'd shape rule?), confirm decode --check, and carry
+the revised counts into AUDIT.md (a "## Carry-over R12A-PISV" section even though f.275r itself is not yet an audited item: say so), status.json
+and any SECOND-OPINIONS-QUEUE.tsv row for this target. Do not raise any N-class or depth.
