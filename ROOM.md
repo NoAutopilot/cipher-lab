@@ -8975,3 +8975,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 01:18 | R7-THURP10 | claim: thurloe-printed P10 p.620 L10 vs Powell 1937, cap 2 USD, box 01:18-01:53 UTC, for LANE LANE-RUN7-account-2
 2026-10-06 01:18 | R7-MATSORT worker | claim: matignon-mayenne-1586 f.110 sign-sorter seed (no vision), cap 2 USD, box 01:18-01:58 UTC (80% 01:50), for LANE LANE-RUN7-account-2
 2026-10-06 01:18 | R7-SUR | claim: na-suriname-map-1781 single-sign blind look (L08:51, L10:30, L11:17 vs L10:66), cap 4.5, box to 02:03 UTC, for LANE LANE-RUN7-account-2
+2026-10-06 01:18 | R7-ROUS worker | claim naf14913-rousseau-venice-1743: Souchon 1915 No 2044/2031 check, cap 1.5, box ends 01:48 UTC, for LANE LANE-RUN7-account-2
