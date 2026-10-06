@@ -10,6 +10,8 @@ the word-code token share matches the target's, letters homophonic over the targ
 optional null share, injected sign error at the levels given.
 
     python3 nom_test.py P.txt C.tsv [C2.tsv] OUT.json --err 0,E/2,E [--draws 200] [--ctl-seeds 5] [--ctl-draws 30]
+        [--null-cost X (run_align's charge for a sign taking 0 letters; default -3.0 as before, R8-SEURE)]
+        [--control-gate ERR:SHARE (stop before the targets unless the control passes >= SHARE at ERR for every null level)]
 """
 import json, os, random, sys
 from collections import Counter
@@ -23,6 +25,7 @@ from kp_test import norm_plain, reshape, dist  # noqa: E402
 R = (0.85, 1.00, 1.13)
 FLOOR, MAXCH = 12, 8
 ia.WORD_PFX = '%'
+NULL_COST = -3.0
 
 
 def is_word(s):
@@ -40,7 +43,7 @@ def stat(words, signs, detail=False):
     for r in R:
         c = signs[:max(1, round(r * nl))]
         pairs = [{'plain_line': 'P', 'plain_raw': plain, 'cipher_line': 'C', 'cipher_raw': ' '.join(tok(s) for s in c)}]
-        prep, res, counts, shown = ia.run_align(pairs, code_prefix='@', max_chunk=MAXCH)
+        prep, res, counts, shown = ia.run_align(pairs, code_prefix='@', max_chunk=MAXCH, null_cost=NULL_COST)
         rows = ia.token_rows(prep, res, counts, shown)
         codes = [x for x in rows if x[3] in ('code', 'num')]
         out.append(sum(x[7] == 'agrees' for x in codes) / len(codes))
@@ -123,13 +126,16 @@ def main():
     draws, cseeds, cdraws, seed = opt('--draws', 200), opt('--ctl-seeds', 5), opt('--ctl-draws', 30), opt('--seed', 1)
     errs = [float(x) for x in opt('--err', '0').split(',')]
     nulls = [float(x) for x in opt('--nulls', '0,0.10').split(',')]
+    global NULL_COST
+    NULL_COST = opt('--null-cost', -3.0)
+    gate = opt('--control-gate', '')
     lines = [l.split('\t', 1)[1] for l in open(ptxt, encoding='utf-8').read().splitlines() if '\t' in l]
     words = norm_plain(' '.join(lines))
     nl = sum(len(w) for w in words)
     sA = read_signs(readers[0])
     word_share = sum(is_word(s) for s in sA) / len(sA)
     k_letter = len(set(s for s in sA[:nl] if not is_word(s)))
-    res = {'P_letters': nl, 'R': R, 'floor': FLOOR, 'max_chunk': MAXCH, 'word_share_A': word_share, 'K_letter_A': k_letter,
+    res = {'null_cost': NULL_COST, 'P_letters': nl, 'R': R, 'floor': FLOOR, 'max_chunk': MAXCH, 'word_share_A': word_share, 'K_letter_A': k_letter,
            'draws': draws, 'ctl_seeds': cseeds, 'ctl_draws': cdraws}
     rng = random.Random(seed)
     with Pool(4) as pool:
@@ -147,6 +153,15 @@ def main():
                 key = 'nulls%.2f_err%.3f' % (ns, err)
                 res['control'][key] = {'runs': rows, 'pass_share': sum(r['pass'] for r in rows) / len(rows)}
                 print('control', key, res['control'][key]['pass_share'], [round(r['S'], 3) for r in rows], flush=True)
+        if gate:
+            gerr, gshare = (float(x) for x in gate.split(':'))
+            gk = ['nulls%.2f_err%.3f' % (ns, gerr) for ns in nulls]
+            ok = all(res['control'][k]['pass_share'] >= gshare for k in gk)
+            res['control_gate'] = {'cells': gk, 'share': gshare, 'pass': ok}
+            if not ok:
+                print('CONTROL BELOW GATE', gk, flush=True)
+                json.dump(res, open(out, 'w'), indent=1, ensure_ascii=False)
+                sys.exit(3)
         res['targets'] = {}
         for rp in readers:
             signs = read_signs(rp)
