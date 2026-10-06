@@ -1,0 +1,35 @@
+You are a blind transcriber of a 1640 French diplomatic letter (BnF Baluze 170) partly written in a numeric cipher. Do NOT decode, do NOT guess meanings, do NOT read any other file than the images listed here.
+
+Reference sheet (look at it once): /home/user/cipher-lab/ciphers/baluze167-davaux-1637/d1bal167/exemplar_sheet.png -- cut examples of this cipher's handwritten letter-substitute signs from the same office's hand. Each tile is headed "<shape>=<letter> <leaf>"; use ONLY the part before "=" (the shape name): 4u, LL, S, c, g+, gam, h, hook, k, ll, loop, m4, p, r, t, u4, v, w, wave, y, y+.
+
+Crops (one manuscript line per Lxx, each split into overlapping left/right segments s1/s2 that share ~150 px: do not double-count tokens in the overlap). Read the lines in this order:
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_a_L01_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_a_L01_s2.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_a_L02_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_a_L02_s2.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L01_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L01_s2.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L02_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L02_s2.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L03_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L03_s2.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L04_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L04_s2.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L05_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L05_s2.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L06_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L06_s2.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L07_s1.jpg
+/home/user/cipher-lab/ciphers/baluze167-davaux-1637/images/crops/b170f228v_b_L07_s2.jpg
+
+Transcribe every cipher token in reading order. Token forms:
+- a number with an acute/apostrophe stroke above it (the stroke may sit over either digit): 72'
+- a number with two dots (diaeresis) above: 22:
+- a number with a bar over it: 16=
+- a number with no mark: 16
+- a handwritten letter-substitute sign (not a digit, not ordinary French): s:<shape> using the closest shape name from the sheet (e.g. s:h, s:y+, s:u4); if two shapes fit write s:h|gam; if none fits write s:?(short description, e.g. s:?(double long s ff)).
+- ordinary French words written in clear between cipher runs: one item in braces, e.g. {a ce que l on nous}
+Mark any token you are unsure of with a trailing ? (e.g. 76'?). A long horizontal line-filler stroke at a line end is not a token.
+
+Write ONLY a TSV to /home/user/cipher-lab/ciphers/baluze167-davaux-1637/passes/passB_b170f228v.tsv with header `line	tokens` and one row per line id (b170f228..._Lxx without _s1/_s2; tokens separated by single spaces). Then reply with that TSV and one sentence on the hardest tokens. No other commentary.
+
