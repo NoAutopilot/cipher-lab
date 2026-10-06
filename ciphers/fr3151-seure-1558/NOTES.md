@@ -1007,3 +1007,51 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 - [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
 - [retired] retry: two-reader box-keyed pass on f75L failed three gates
 Verdict: keep going: 1 internal gap; cheapest next: look at fr. 3138 nos. 9 (Tournon 1556) and 24 (Morvilliers 1549) for a legible decipher, then rebuild and test whichever reads, ~$1.5
+
+## R10-SEURE4: Tournon 1556 and Morvilliers 1549 located; both carry a legible full decipherment, not interlinear (6 Oct 2026, 10:25-10:3x UTC by date -u, account 1, LANE-RUN10-account-1)
+Named next step of R10-SEURE3 (known-keys). Brief `.claude/briefs/runs/2026-10-06-account1-run10-jobs.md` ### R10-SEURE4.
+Same volume, BnF fr. 3138, Gallica btv1b90601662 (black-and-white microfilm, no folio labels; canvases located by 700 px thumbnails of
+canvases 23-31 and 70-75 and the folio numbers written on the leaves).
+**No. 9, Tournon 1556.** Letter begins fo. 21r (canvas 24 right), clear text. The cipher is one block of **13 lines (about 450-500 signs)**
+on fo. 22r (canvas 26 left), struck through with two diagonal lines; no interlinear decipher. Its decipherment is a **separate paper slip**
+(canvas 25, imaged on its own) headed "Dechiffrement de ce qui est escrit dessous ce present billet" -- the slip was pasted over the block
+(its blank back shows at the left edge of canvas 26). The slip's 8 lines of clear French are legible at M at 1600 px ("On faict ... de luy
+faire prendre tel chemyn qu'on vouldra ... par la Romagne ... droict de la Marque et a la Bruzzo ... Castracaro ..."). Signs: phi, psi,
+A, lying-8 (oo), w, pi, lambda, double bar, #, ff, +, colon-dots, a few Latin letters.
+**No. 24, Morvilliers 1549.** fo. 66r (canvas 70 right; folio "66" top right), signed "Julien de Morvillier", dated in the margin "...
+novembre 1549". Clear text opens and closes the letter; between them **about 22 cipher lines (about 650-750 signs)**, crossed by one
+vertical stroke, with a **full running decipherment in the left margin** (about 40 short lines, legible at M at 1400 px: "dont il sut
+troublez ... promission ... Neantmoings ... le dangier prochain ..."). Not interlinear: margin and cipher are not line-aligned, but both
+the slip and the margin read as a complete clear text of their block, not a summary (lengths roughly match the sign counts). Signs: lying-8,
+#, phi, M-like, f, z, x, +, 7, Latin letters, so the same mixed letter/symbol look as Seure's f81R inventory (shape observation, M, not
+scored, not evidence of a shared key).
+**Key rebuild not done here.** `tools/interlinear_align.py` needs (cipher group, clear span) pairs; with a continuous clear text beside a
+continuous sign stream the pairs come from a transcription of the cipher block (2 blind passes + reconciliation) and a sequence
+alignment of signs to letters. That is 3 subagent passes per letter (~$4.5 each at the Usage 6 rate) and does not fit this job's $2.5 cap;
+so no key, no PREREG, no power control and no score on R1/R2 (nothing to gate). Not a negative for either key.
+Captures: `known_keys/regen_images.sh` (tools/iiif_lines.py, 4 regions: canvas 26 cipher, canvas 25 slip, canvas 70 cipher, canvas 70
+margin); the folder is over 30 MB, so only `known_keys/images/manifest.json` and two downsized samples are committed.
+Requests: gallica.bnf.fr 22 (1 manifest, 15 thumbnails, 2 info.json, 2 half-page views, 4 IIIF regions -- one region fetch each, pre-fetch
+info.json in the tool not counted separately); 0 subagent calls.
+Not found: an interlinear (letter-over-sign) decipher on either leaf.
+Suggestion (not done): Morvilliers is the larger and better-separated pair (cipher and margin on one page, clear text both sides);
+Tournon's slip is shorter and cleaner. Either one, transcribed and aligned, gives a period key to test on R1/R2.
+
+## Remaining gaps (R10-SEURE4, 6 Oct 2026)
+Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agreement); nom_test R1/R2 FAIL without nulls (D2-SEURE); null-tolerant setting retired at control (R8-SEURE); Danzay 1557 key non-test (R9-SEURE); La Guiche 1551 key FAIL with control power under one map (R9-SEURE2); Babou 1558 key not rebuildable from the microfilm capture (R10-SEURE3); Tournon 1556 and Morvilliers 1549 decipherments located, legible, keys not yet rebuilt (R10-SEURE4); fo. 85r lines 1-5 clear read at M (SEURE-DEC).
+- f75L line reads (lines 1-44) - blocker: illegible; three two-reader box-keyed gates failed (K 51.7%, O 38.5%, C 42.9%), instrument retired under rule 3; reopens only with the owner's sign-sorter alphabet or a better capture
+- items 43/44 cipher body (f81R-f83L, fo. 84r-v and 87r of item 44) - blocker: not-attempted; Danzay non-test, La Guiche FAIL under one map, Babou not rebuildable; next: transcribe the Morvilliers 1549 cipher block (fr. 3138 fo. 66r, canvas 70, 2 blind passes + reconciliation) and align it to its marginal decipherment into a key via tools/interlinear_align.py, then PREREG and own-text power control before scoring R1/R2, ~$6
+- Tournon 1556 key (fr. 3138 fo. 22r + slip, canvases 25-26) - blocker: not-attempted; decipherment located and legible at M, cipher block not transcribed (cap); next: same transcription and alignment against the slip if the Morvilliers key FAILs or is a non-test, ~$5
+- Babou 1558 interlinear decipher (fr. 3138 fo. 35v) - blocker: illegible at the Gallica microfilm scan; reopens with a colour capture (BnF reproduction request) or a person's read in the reading room
+- printed decipherment, if any - blocker: waiting-on LOCAL-QUEUE L53; Serrão 1969 pp. 455-458 and Falgairolle 1896 not opened
+- key of the cipher - blocker: no-key-material; no key of Seure's 1558 Lisbon embassy located and no decipher on the leaves to rebuild one from
+
+## Escalation (R10-SEURE4, 6 Oct 2026)
+- [x] siblings: items 40/41 and 43/44 surveyed (K), 43/44 compared at closing and postscript (GAPS102); 44 = fos 84-87 pinned (SEURE-DEC)
+- [retired] clear-pages: kp/nom_test.py alignment instrument; no-null FAIL with control power (D2-SEURE), null-bearing design control 0/3 at null cost -3.0 and -1.0 (N8-SEU, D2-SEURE, R8-SEURE)
+- [ ] known-keys: Danzay 1557 non-test (R9-SEURE); La Guiche 1551 FAIL under one map (R9-SEURE2); Babou 1558 decipher illegible at capture (R10-SEURE3); Tournon 1556 (slip) and Morvilliers 1549 (margin) full decipherments located and legible (R10-SEURE4), keys not yet rebuilt
+- [ ] print: Ribier and Francisque-Michel read (no); Serrão 1969 and Falgairolle 1896 not opened (LOCAL-QUEUE L53)
+- [n/a] key-rebuild: no decipherment on fos 84-87 or canvases 84/88 (SEURE-DEC)
+- [x] image-check: f83R contrast 101 vs f75L 91 vs f87R 85; fos 84-87 viewed at 1800-2200 px for a decipher (SEURE-DEC), none; Babou fo. 35v contrast-stretched at native res (R10-SEURE3), decipher illegible
+- [retired] retry: two-reader box-keyed pass on f75L failed three gates
+Verdict: keep going: 2 internal gaps; cheapest next: transcribe the Morvilliers 1549 cipher block (fr. 3138 fo. 66r) and rebuild its key from the marginal decipherment, then test on R1/R2 with the own-text power control first, ~$6
