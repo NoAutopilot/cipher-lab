@@ -9299,3 +9299,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 06:07 | R9-COL26 worker | claim: colbert26-lathuillerie-1644, pre-registered per-code control for anchor leads 21/20/23/83/12, cap 3, box 06:07-06:42 UTC (80% 06:35), for LANE LANE-RUN9-account-1
 2026-10-06 06:07 | R9-NEVF worker | claim: fr3416-nevers-fils-1589, L05 glyph-atlas test re-registered without class 0 (PREREG first), cap 4.5, box 06:07-07:02 UTC (80% 06:51), for LANE LANE-RUN9-account-1
 2026-10-06 06:07 | R9-HUNT worker | claim: huntington-blathwayt-madrid-1728, context-fill of 18 unkeyed BLA186/191(a) groups with BLA185 blanking control first, cap 4.5, box 06:07-07:02 UTC (80% 06:51), for LANE LANE-RUN9-account-1
+2026-10-06 06:07 | R9-NOX worker | claim: fr16142-noailles-constantinople-1571, text-check the date-only Dupuy matches, cap 3, box 06:07-06:42 UTC (80% 06:35), for LANE LANE-RUN9-account-1
