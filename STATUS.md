@@ -5070,6 +5070,39 @@ Open for the next lane:
 3. fr16045: settle the 4 gloss/key conflicts against the key cells, ~2. costabili: q-shape split ~2. fr3151-seure: Henri II-era keys vs f81R ~3.
 4. eckert-1862: Cipher No. 4 copy held elsewhere (needs a browser route). hellen 1-800 stays no-key-material.
 
+## LANE LANE-RUN12-account-2 handoff (session_0134Hz4BBL6omk3Bx6T3wpcv, account 2), 6 October 2026 (closed 13:0x UTC: i-r S/M backlog worked, lane about 56.7 of 60)
+
+Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run12-jobs.md. WORK-QUEUE row LANE-RUN12-account-2: RUN11's named
+next steps for i-r, then tools/next_steps.py runnable / parallel rows (S, M). Gate 0a: SESSION-SWEEP-account-2 still `claimed`, its TSV on disk;
+proceeded as RUN7-RUN11 did. VERIFY-BACKLOG i-r row nla-heinrich audit2 not run (N0; gate 2 applies only above N1). Off limits as before.
+Twenty-three workers in five waves (19 Opus, 4 Sonnet; all D), workers 49.67 + orchestrator about 7.0 = about 56.7 of cap 60 (get_session).
+five_hour `allowed` throughout.
+- rah-juan-manuel-1521: no published decipherment of the 28 letters beyond Tomokiyo's incipits (R12-RJMPUB); the Salazar index's "Publicado un
+  fragmento" for 6 Jun 1522 (A-24 ff.147-148 = DECODE R9526) is CODOIN XXVI no.36 pp.49-50, a chapter as deciphered by the secretaria (R12-RJMFRAG).
+  Tomokiyo's published alphabet held out on R9502 against its period decipherment: PASS 0.276 vs shuffled-key max 0.172, N 134, PREREG first
+  (R12-RJM42); verifier R12-RJMV upheld it and licensed an R9501 trial decode (S only for A Z R 4 F). Second held-out test on R9526 vs the CODOIN
+  chapter: calibration 0.491 < 0.50 = non-test (R12-RJM147). R9501 trial decode (R12-RJM9501): S 309 M 113 U 331 of 753; judge FAIL on es1600 and
+  es17c with the shuffled-order decode close behind = judge cannot decide; reading changed after AUDIT.md, verifier flagged (note: the worker's
+  session summary says "f.40" while its brief and ROOM line say f.34 -- the verifier should confirm which leaf was read).
+- lodewijk-van-nassau-1573-74: 4616 re-read at 300 dpi (R12-LVN16, control PASS), verifier R12-LVNV overturned 2 rows, R12-LVN16R fixed the
+  score script and eye-checked 12 contested H control rows, R12-LVNV2 found 6 were 150-dpi transcription errors (control 0.948/0.952 PASS),
+  R12-LVN16C applied them: four letters 2359/4047 (58.3%). 4610 p3 re-read FAILed its control (0.809/0.743 vs 0.90; pass B truncated past crop
+  11), nothing applied (R12-LVN10). Verifier needed: carry R12-LVN16C into AUDIT.md.
+- catokwacopa-1875 (pollaky gap 3): spec tests 2-3 (R12-CATOK23): on a 17,973-name Alumni Oxonienses list CONINGTON and SHIRLEY stay forced
+  (null false-unique 0.02-0.08), JOWETT ties JOWITT, HERTFORD ties THETFORD; the 5 unread lines are untestable by unigram exact-fit (control 0/100 unique).
+- kaliningrad-2015: the R10-KAL7 driver on S1, S1s, S3, S3-soft, German (R12-KAL8, all controls PASS) and the S3 conv. B 50-shuffle confirmation
+  (R12-KAL9, p 0.118): all five control-backed negatives; KAL8's next is a different design family.
+- na-oldenbarnevelt-2442-1605: tools/data/es1600 built (7 CODOIN tomes, 1598-1621; fold check 11.1%, spread 5-19% over 7 folds); B/C1 FAIL
+  -0.992 vs real_p05 -0.852 (R12-OLDCORP).
+- pro3055-clinton-1779: VHS Collections II p.192 follows the decipherment on the 650-recruits clause, the cipher on "move"/"Chesapeake" (R12-CLINVHS).
+- na-suriname-map-1781: inv. 373 sweeps 0270-0599 (n=0 mod 4) and n=2 mod 4 over 0006-0266/0802-1022/0602-0610: 0 of 199 scans glossed cipher
+  (R12-SURSWP2/3). R12-SURSIGN not run (step already retired, R7-SUR2/R8-SUR3; stale brief source).
+- ra-crusenstolpe-1809: Litteraturbanken JSON API, 21 works, no 1809 cipher document (R12-CRUSLB).
+Open for the next i-r lane: (1) verifier on rah-juan-manuel R12-RJM9501 (leaf, grades, judge) and on lodewijk R12-LVN16C ~2 each; (2) rah-juan-manuel
+R9526: the calibration missed by 1 token -- the worker named a f.150 clerk-spelling + split-token pass, then rerun (~2.5; a second attempt, rule-3 clause
+counts it); (3) lodewijk 4610 p3: pass B on crops 12-22 only + rescore, ~2 (defect repair, not a third method attempt); (4) suriname: remaining 0614-0798
+n=2 (~44) and 0270-0598 n=2 (~80) scans, low yield so far; (5) kaliningrad: a different design family (KAL8 step 2).
+
 ## LANE LANE-RUN11-account-2 handoff (session_01FnWn17w8RS2VEFyTf3Nejv, account 2), 6 October 2026 (closed 10:3x UTC: i-r S/M backlog worked, lane about 51.6 of 60)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-06-account2-run11-jobs.md. WORK-QUEUE row LANE-RUN11-account-2: RUN10's named
