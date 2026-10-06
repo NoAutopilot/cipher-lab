@@ -439,7 +439,7 @@ def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, no
 
 
 def anneal_nomen(seq, model, iters, rng, uni_w, vocab, word_prob=0.1, t0=4.0, fixed=None, word_bonus=0.0,
-                 unique_words=True):
+                 unique_words=True, word_signs=None):
     """Homophonic + nomenclator anneal (R10-SIENA7N, 6 Oct 2026, siena-concistoro-2308 no. 7). Each sign decodes to one
     plaintext letter OR to one whole word from `vocab` (a list of folded strings: the nomenclator layer, a sign standing
     for a frequent word or name, R4750-style). The decode is the concatenation of the values, so its length varies;
@@ -450,6 +450,9 @@ def anneal_nomen(seq, model, iters, rng, uni_w, vocab, word_prob=0.1, t0=4.0, fi
     length penalty (a 3-letter value pays about three characters' log-probability where a letter pays one); 0 = off.
     unique_words: a vocab word may sit on at most one sign at a time (a move onto a word another sign holds is skipped);
     without it a positive word_bonus lets the anneal pile one long word onto many signs.
+    word_signs: optional set of signs that may take a vocab word (R13-SIENAWC, 6 Oct 2026: a structural restriction, e.g.
+    only signs the transcriber wrote as multi-character units or drawn non-alphanumeric marks); every other sign is
+    proposed letters only. None = no restriction, and the random stream is then exactly as before.
     Returns (score, key) with key {sign: value}; the score includes the bonus. Does not touch anneal()/solve(); their results are unchanged."""
     o = model.order
     signs = sorted(set(seq))
@@ -503,7 +506,8 @@ def anneal_nomen(seq, model, iters, rng, uni_w, vocab, word_prob=0.1, t0=4.0, fi
         T = t0 * (1 - it / iters) + 0.02
         s = rng.choice(free)
         old = key[s]
-        new = rng.choice(vocab) if vocab and rng.random() < word_prob else rng.choice(letters)
+        wok = word_signs is None or s in word_signs
+        new = rng.choice(vocab) if vocab and wok and rng.random() < word_prob else rng.choice(letters)
         if new == old or (unique_words and len(new) > 1 and new in held):
             continue
         before = sum(local(a, b) for a, b in clusters[s])
@@ -533,11 +537,11 @@ def anneal_nomen(seq, model, iters, rng, uni_w, vocab, word_prob=0.1, t0=4.0, fi
 
 
 def solve_nomen(seq, model, restarts, iters, seed, uni_w, vocab, word_prob=0.1, fixed=None, word_bonus=0.0,
-                unique_words=True):
+                unique_words=True, word_signs=None):
     """Restarts of anneal_nomen(), best first; same seeding pattern as solve()."""
     rng = random.Random(seed)
     res = [anneal_nomen(seq, model, iters, rng, uni_w, vocab, word_prob, fixed=fixed, word_bonus=word_bonus,
-                         unique_words=unique_words)
+                         unique_words=unique_words, word_signs=word_signs)
            for _ in range(restarts)]
     res.sort(key=lambda x: -x[0])
     return res

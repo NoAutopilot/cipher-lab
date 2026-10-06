@@ -1,6 +1,7 @@
 """Offline test for homophonic_anneal.anneal_nomen/solve_nomen (R10-SIENA7N, 6 Oct 2026): (1) the incremental score
 equals a full re-score of the returned key; (2) on a clean synthetic text with two word-signs the solver recovers the
-words and most letters; (3) with an empty vocab no sign ever decodes to more than one letter."""
+words and most letters; (3) with an empty vocab no sign ever decodes to more than one letter; (4) word_signs restricts
+words to the listed signs and word_signs=None is bit-identical to the unrestricted call."""
 import random, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -31,6 +32,13 @@ def main():
     assert acc > 0.8, acc
     sc2, key2 = H.solve_nomen(seq, m, 1, 3000, 2, 1.0, [], 0.15)[0]
     assert all(len(v) == 1 for v in key2.values())
+    # (4) word_signs (R13-SIENAWC): words only on the listed signs; None reproduces the unrestricted run exactly
+    ws = {"Wche", "Wet"} | {s for s in set(seq) if s.endswith("0")}
+    sc3, key3 = H.solve_nomen(seq, m, 2, 8000, 3, 1.0, ["che", "et", "per", "non"], 0.15, word_signs=ws)[0]
+    assert all(len(v) == 1 for s, v in key3.items() if s not in ws), key3
+    a = H.solve_nomen(seq, m, 1, 3000, 5, 1.0, ["che", "et"], 0.15)[0]
+    b = H.solve_nomen(seq, m, 1, 3000, 5, 1.0, ["che", "et"], 0.15, word_signs=None)[0]
+    assert a == b
     print(f"ok: token accuracy {acc:.3f}")
 
 
