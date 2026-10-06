@@ -10,8 +10,15 @@
       "digitised_content_note_on_catalogue_page": "(digital images currently unavailable)",
       "iiif_manifest_tried": "https://bl.digirati.io/iiif/ark:/81055/vdc_100151269613.0x000001",
       "iiif_result": "HTTP 403, body: S3 AccessDenied (RequestId GBCAJG3Z64KTFFP1)",
-      "folios_wanted": ["f.196r-197v (7 Apr 1583, partly in cipher)", "f.299r-v, f.303r (31 Jul 1583, some use of cipher)"],
-      "folios_wanted_context_checked_not_cipher": ["f.193r-194v (6 Apr 1583, no cipher noted)", "f.297r-v (31 Jul 1583 copy, no cipher noted)", "f.300r-302r (31 Jul 1583 original, no cipher noted)"]
+      "folios_wanted": [
+        "f.196r-197v (7 Apr 1583, partly in cipher)",
+        "f.299r-v, f.303r (31 Jul 1583, some use of cipher)"
+      ],
+      "folios_wanted_context_checked_not_cipher": [
+        "f.193r-194v (6 Apr 1583, no cipher noted)",
+        "f.297r-v (31 Jul 1583 copy, no cipher noted)",
+        "f.300r-302r (31 Jul 1583 original, no cipher noted)"
+      ]
     },
     {
       "shelfmark": "Cotton MS Caligula B VIII",
@@ -21,8 +28,30 @@
       "digitised_content_note_on_catalogue_page": "(digital images currently unavailable)",
       "iiif_manifest_tried": "https://bl.digirati.io/iiif/ark:/81055/vdc_100151956388.0x000001",
       "iiif_result": "HTTP 403, body: S3 AccessDenied",
-      "folios_wanted": ["f.251r-252v (Bowes?-Cecil?, [1583?], a few words in cipher per Tomokiyo)", "f.290v-292v (Bowes's report to supplant Lennox, [1580?], partly in cypher; has Tomokiyo's reconstructed-key image elizabeth_bowes.png)", "f.306r (a note, undated, with some cipher)"]
+      "folios_wanted": [
+        "f.251r-252v (Bowes?-Cecil?, [1583?], a few words in cipher per Tomokiyo)",
+        "f.290v-292v (Bowes's report to supplant Lennox, [1580?], partly in cypher; has Tomokiyo's reconstructed-key image elizabeth_bowes.png)",
+        "f.306r (a note, undated, with some cipher)"
+      ]
     }
   ],
-  "note": "Route 1 of the access playbook (curl -A Mozilla/5.0) was used for the BL catalogue pages (200 OK) and for the bl.digirati.io IIIF endpoint (403, not a Cloudflare challenge -- an S3 AccessDenied consistent with the catalogue's own 'digital images currently unavailable' note). This is not the same failure mode as the Cloudflare-gated HathiTrust/DECODE hosts logged elsewhere in CLAUDE.md; no browser-tool retry attempted since the catalogue itself already states the images are unavailable, not merely hard to reach. Route 4 (the person / an archive request) is the remaining option if page images are wanted; not written up as REQUEST.md this pass since no price or order process is quoted anywhere for these two volumes (catalogue offers only an 'online collection item request form' for undigitised items in general, no per-item quote)."
+  "note": "Route 1 of the access playbook (curl -A Mozilla/5.0) was used for the BL catalogue pages (200 OK) and for the bl.digirati.io IIIF endpoint (403, not a Cloudflare challenge -- an S3 AccessDenied consistent with the catalogue's own 'digital images currently unavailable' note). This is not the same failure mode as the Cloudflare-gated HathiTrust/DECODE hosts logged elsewhere in CLAUDE.md; no browser-tool retry attempted since the catalogue itself already states the images are unavailable, not merely hard to reach. Route 4 (the person / an archive request) is the remaining option if page images are wanted; not written up as REQUEST.md this pass since no price or order process is quoted anywhere for these two volumes (catalogue offers only an 'online collection item request form' for undigitised items in general, no per-item quote).",
+  "wotton1585": [
+    {
+      "file": "images/wotton1585/walsingham_wotton.jpg",
+      "url": "https://cryptiana.web.fc2.com/code/walsingham_wotton.jpg",
+      "fetched": "6 Oct 2026",
+      "by": "R11A-BOWES",
+      "credit": "S. Tomokiyo, Cryptiana elizabeth.htm (Walsingham-Wotton cipher 1585 reconstruction)",
+      "bytes": 32438
+    },
+    {
+      "file": "images/wotton1585/elizabeth_walsingham_wotton2.png",
+      "url": "https://cryptiana.web.fc2.com/code/elizabeth_walsingham_wotton2.png",
+      "fetched": "6 Oct 2026",
+      "by": "R11A-BOWES",
+      "credit": "S. Tomokiyo, Cryptiana elizabeth.htm (Walsingham-Wotton cipher 1585 reconstruction)",
+      "bytes": 81253
+    }
+  ]
 }
