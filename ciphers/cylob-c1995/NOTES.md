@@ -168,7 +168,7 @@ Requests: cloud.rotering-net.de 2 (first without -L, 307; one follow-up); scienc
 
 ## Spec cheap test 3: fixed discrete alphabet structural check, with matched control (R12D-CYL3, 6 Oct 2026)
 
-Run for LANE-RUN12-account-4, 6 Oct 2026, 16:05-16:12 UTC (date -u). Disk only, no requests. Pre-registered in
+Run for LANE-RUN12-account-4, 6 Oct 2026, 16:05-16:10 UTC (date -u). Disk only, no requests. Pre-registered in
 `PREREG-test3.md` (pushed 0b48ed25e before the scored run); script `structural_test3.py` (seed 20261006, `--check` exits 1 if
 `test3_results.json` is stale). Conditional on Rotering's 2015 partition into signs (rule 2; one page eye-checked by R12D-CYLOB).
 
