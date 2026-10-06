@@ -1263,3 +1263,15 @@ price list (session floor 1.5 + one Sonnet pass 1.5 + the full re-read as the re
 4.5 of the 5 cap, past 80%, so another page would cross it. Requests: image-uab.canadiana.ca 2 (Images 759, 760 full/max,
 200 each, 2 s apart). Vision calls: 1 blind Sonnet pass; worker looks at two 1/5 frames, two grid previews, five montages,
 one zoom. Status unchanged: partial.
+
+## R11-CLINV4 corrections (6 Oct 2026, account 2, LANE RUN11; verifier of R11-CLIN2380B, AUDIT.md section "R11-CLINV4")
+
+- The PREREG hash 4aa284973 cited in "R11-CLIN2380B" and in `passes/check_2380_p121.py` is not on origin/main (folded by a push
+  rebase); `PREREG_R11-CLIN2380B.md` reached origin in a9a1f8d62 (09:40:25 UTC), an ancestor of the scoring commit eb2319c59
+  (09:45:32 UTC). Order holds.
+- The gate (406/420, control max 45) re-scores exactly. Beside it: pass A alone scores 256/420 (0.610, FAIL on share) because 139
+  compared cells were unread on the clipped first cut; on the 281 it read, about 256 fit under (b) and 274 under (d). The PASS
+  rests on the worker's key-aware re-read; quote both figures.
+- The "Recruits and Artillery from Europe" conflict is confirmed by eye on both images (cipher p.121 c1 goes "would" -> "have" with
+  nothing between; decipherment p.134 has the clause). Held by witness, unsettled: Niagara cipher copy without, Halifax-route
+  decipherment with. `check_2380_p121.json`'s `unpaired` list omits the six skipped decipherment words (leading gap).

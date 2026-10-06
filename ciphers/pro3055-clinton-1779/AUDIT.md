@@ -547,3 +547,44 @@ text `known` (VHS Collections vol. II, 1871, p.192). Depth fields unchanged.
    is 16. The c5.51 cell is 15-55, not 15-5. Written as a correction section in NOTES.md (the worker's section and pass files left
    as committed; `p120_c37_reconciled.tsv` c5.51 is for the next session touching the scorer to change, with its `--check`).
    Requests: image-uab.canadiana.ca 1 (200). No subagent calls.
+
+## R11-CLINV4: verifier of R11-CLIN2380B (2380, p.121) (6 Oct 2026, account 2, LANE RUN11; clock 09:55-10:0x UTC, `date -u`)
+
+A separate session from R11-CLIN2380B (NOTES.md section "R11-CLIN2380B"). No novelty class asked; 2380 stays N0, key `period`,
+text `known` (VHS Collections vol. II, 1871, p.192). Depth fields unchanged.
+
+1. **Pre-registration order.** The hash the worker cites, 4aa284973, is not an object on origin/main: `tools/room.py --push`'s
+   rebase folded it (CLAUDE.md rule 6's known gap). `PREREG_R11-CLIN2380B.md` first reaches origin/main in a9a1f8d62 (09:40:25 UTC,
+   titled "dispatcher (account 1): claimed LANE-RUN10-account-1", a folded commit), an ancestor of eb2319c59 (09:45:32 UTC, "update"),
+   the only commit carrying `passes/check_2380_p121.py`, its JSON, `p121_passA.tsv` and `p121_reconciled.tsv`; the PREREG file has
+   not changed since a9a1f8d62. The gate predates the score by push order; cite a9a1f8d62, not 4aa284973.
+2. **Re-score.** `passes/check_2380_p121.py --check` exits 0 and reproduces every reported number: 445 cells, 90 cipher words,
+   420 compared, (a) 324, **(b) 406 (0.967, gated)**, (c) 411, (d) 415; control (1000 seeds) mean/p95/max 29.7/38/45 under (b),
+   max 45 under (c), 46 under (d); gate PASS; five mismatches under (d) as listed. The control shuffles decipherment letters against
+   fixed key positions, so it can differ on this statistic. **Blind pass alone** (scratchpad re-score: pass A's figure substituted
+   wherever it differs from the entry, its `?`/blank cells scored as failures, word boundaries kept): (b) 256/420 (0.610), gate
+   FAIL on share, because pass A read the clipped first-cut crops and left 139 compared cells unread. On the 281 compared cells
+   pass A did read, about 256 fit under (b) (0.91) and 274 under (d) (0.975). So the PASS rests on the worker's own re-read of the
+   clipped cells, which knew the key and the decipherment; the blind cells it could read agree with it at the same rate, which
+   supports the re-read, but quote 406/420 with the blind 256/420 (281 read) beside it, as R11-CLINV3 did for p.120.
+3. **Cells eye-checked** (Image 759 full/max, 6016x4056, one request to image-uab.canadiana.ca, scratchpad only; crops by
+   `python3 passes/cut_2380_p121_122.py IMG_DIR OUT_DIR`, the worker's boxes, read at native resolution):
+   - **The conflict "cipher lacks 'with the 650 Recruits and Artillery from Europe'".** p.121 c1 opens `19-1 8-1 18-17 15-14 13-10 |`
+     = "would" on the variant key (all five clear), then `1-15 ·-27 9-15 1-4 |` = "ha?e" (v under the line-9 secondary), then
+     `3-1 1-6 1-10 18-17 1-11 1-21 1-4 6-15` = "amounted". No cell group between "would" and "have" and none at the column head (a
+     small "5v" mark only, no figures). p.120 c7 ends on "arrived" (R11-CLINV3 item 3b, cell c7.55 2-77). The decipherment crops
+     (images/h1649/p134_lines, the three lines from "British which had they arrived") read by eye "would with the 650 Recruits and /
+     Artillery from Europe have / amounted to rather more than". **Conflict confirmed, kept by witness (rule 4), not settled:**
+     cipher B.147 pp.120-121 (the Niagara copy, endorsed received 20 May 1780) "had they arrived would have amounted"; decipherment
+     B.147 p.134 (endorsed of the cipher letter "par Halifax", received 18 Jan 1780) with the clause. Not checked: the p.122 P.S.
+     (unread), the Halifax-route cipher copy itself (not looked for by this session), VHS II p.192. The clause's tokens carry no
+     cipher grade on this copy; in a merged reading they are C from the decipherment only, with the Niagara cipher as a dissenting
+     witness.
+   - **Slip 20-34** (c6.14, k in "Knyphausen") is clear on the crop, as are the ditto run `·-11 ... ·-16 |` and `10-1 ·-2 |`
+     before it; the slip stands.
+4. **Corrections (over-claims).** NOTES.md R11-CLIN2380B and the script header cite PREREG 4aa284973, which does not resolve on
+   origin; the reachable commit is a9a1f8d62. The section reports the PASS without the blind-only figure (item 2). The JSON's
+   `unpaired` list shows only "a": the six decipherment words "with the recruits and artillery from" skipped before the aligner
+   paired "would" with "Europe" are dropped as a leading gap and not listed there (the NOTES prose does name the clause). None
+   changes the gate or the C 406 / M 39 grades. Written as a correction section in NOTES.md; the worker's files are left as
+   committed. Requests: image-uab.canadiana.ca 1 (200). No subagent calls.
