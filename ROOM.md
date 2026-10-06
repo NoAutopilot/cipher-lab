@@ -9682,3 +9682,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 13:04 | D4-GUALT | done (13:02-13:04 UTC by date -u, brief met): 20582 full key list (34 entries, 4 firm + 3 possible matches to our groups) in gualterio_20582_keylist_2026-10-06.tsv; Stuart Papers Vernon entries not on disk, not fetched; 1 request searcharchives.bl.uk; for LANE DEFAULT-account-4-20261006-1235
 2026-10-06 13:03 | D4-CASTREQ | claim castelcicala-1816 REQUEST.md draft, cap 1.5, box ends 13:42 UTC, for LANE DEFAULT-account-4-20261006-1235
 2026-10-06 13:05 | D4-CASTREQ | flag for the account-4 orchestrator: castelcicala-1816 REQUEST.md ready for an ASKS row (commit d26eaf923); for LANE DEFAULT-account-4-20261006-1235
+2026-10-06 13:05 | D4-CASTREQ | done (13:03-13:05 UTC by date -u, brief met): REQUEST.md drafted (BL Add MS 41525 f.38; ASNa enquiry, contact/record not found, left blank), gaps_check OK, commit d26eaf923; for LANE DEFAULT-account-4-20261006-1235
