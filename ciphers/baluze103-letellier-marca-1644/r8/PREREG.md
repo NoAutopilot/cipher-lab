@@ -49,3 +49,11 @@ Le Tellier-Marca letters in Baluze 103) as next, not run.
   other letter; compared with the same statistic on the r = 0.15 synthetic (max gain over signs, 20 seeds). A sign whose gain exceeds
   the synthetic's p95 max is listed as a cell to check on a sibling; never applied to key.tsv here.
 - =11 que and other word-code contexts, quoted.
+
+## Addendum (written after T1/T2 ran, before any re-read; pushed before the re-read pass)
+T1/T2 ran (r8/result.tsv): verdict **transcription suspect**. Only 1 line (f50r_L13) meets the registered break-line definition
+(both passes below the r = 0.15 synthetic p05 at that length; the short-line reference p05 is low, about -1.85 to -2.03). The brief asks
+for the worst 4-6 lines, so -- a declared deviation -- the re-read batch is the 5 lowest mean(sA,sB) lines, the one break line first:
+f50r_L13, f50v_L09, f50v_L03, f50r_L14, f50r_L16 (7 crops: the f.50v lines are s1/s2 halves). Settlement rule unchanged (2 of 3,
+corrections TSV, grade M unless all three agree). The re-reader gets the R7A crops (cut by tools/iiif_lines.py, images/manifest.json
+`iiif_lines` entries) and the key sheet only.
