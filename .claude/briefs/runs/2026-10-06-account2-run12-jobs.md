@@ -103,3 +103,31 @@ two blind passes on those crops + your reconciliation (~4-5 units). Settle each 
 group into key_full codes (decode_key.py --split-check helps, the image decides). Write corrections to ciphertext_4616.tsv only with a
 per-row note, regenerate with the folder's decode (decode_4616_full.json) and --check exit 0; recount C/H/M/U for 4616 and the
 57.5% figure; flag a verifier in ROOM if the reading changed. Update Remaining gaps item 3 / Escalation image-check, gaps_check.
+
+## Wave 2 (spawned as wave-1 slots free, from 11:3x UTC 6 Oct). Intake gates 11:2x UTC.
+
+### R12-KAL8 -- kaliningrad-2015, the R10-KAL7 lexicon word-segmentation driver on the remaining schemes S1, S1s, S3, S3-soft and German (cap 3.5, box 60 min)
+Intake gate: `kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md "R10-KAL7" Next steps: the same driver, no tool change, on each remaining scheme (lexicon from a held-out book group of the
+matching corpus in tools/data: ru19 / ru19_lat / ru19_soft; de19 or de1600 for German as NOTES.md's earlier rows chose). One PREREG for all
+five schemes before scoring (gate, positive control per scheme = a synthetic text of the same N through the same scheme, shuffle
+control); one HYPOTHESES.md row per scheme with both numbers. A scheme whose positive control misses its gate is a non-test, not a
+negative. Stop before starting a scheme that would cross 80% of cap or box. Update Next steps / Verdict.
+
+### R12-OLDCORP -- na-oldenbarnevelt-2442-1605 step (d'): an era-matched Spanish judge corpus, state letters 1598-1621 (cap 5, box 75 min)
+Intake gate: `na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Build `tools/data/es1600/` from public-domain printed state correspondence of 1598-1621 (CODOIN volumes on IA, _djvu.txt, letters of the
+period only, editorial apparatus stripped by script; >= 5 source files so the fold check means something), with a README naming every
+source (IA identifier, volume, pages kept) and the stripping rule. Register it in tools/judge_plaintext.py's LANG_CORPORA the way es17c /
+pt18 were added (read their commits), add an offline test, and run the held-out leave-one-file-out false-negative check: report the
+blended rate AND the per-fold spread (CLAUDE.md rule 3, es17c/en paragraphs). Then, only if na-oldenbarnevelt-2442's committed reading
+exists, score it under es1600 beside es17a and the shuffled-null controls and paste both outputs. No reading or key change. Update the
+folder's Next steps; name the corpus in SYSTEM.md if system_map_check requires it (run tools/system_map_check.py).
+
+### R12-SURSIGN -- na-suriname-map-1781, one Opus blind call on context tiles: L08:51 / L10:30 g|l and [sigma] L11:17 vs L10:66 (cap 4, box 50 min)
+Intake gate: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+NOTES.md "While waiting" (line ~2556): R7-SUR's single-sign Sonnet look failed its control gate. Cut 2-3-sign context tiles for the
+four named tokens plus known-answer tiles of g, l and [sigma] from glossed context (the control), shuffled together, unlabeled; PREREG
+(control must score >= the gate you register before the target tiles are read) committed before the call; one blind Opus subagent call
+on the tile sheet. Report control and target answers side by side; settle a token only if the control passes. Any change: decode --check
+exit 0, verifier flag. Wait for R12-SURSWP2's done line in ROOM.md before pushing NOTES.md edits (rebase; keep both facts).
