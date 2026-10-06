@@ -1,0 +1,184 @@
+{
+ "Q1": {
+  "id": "c1",
+  "linepos": "L08:37",
+  "code": "g",
+  "current": "l H (GAPS37 F2)",
+  "role": "control-query",
+  "ctx_box": [
+   1455,
+   828,
+   1577,
+   895
+  ]
+ },
+ "Q2": {
+  "id": "q4",
+  "linepos": "L10:66",
+  "code": "[sigma]",
+  "current": "e M",
+  "role": "query",
+  "ctx_box": [
+   1974,
+   1030,
+   2092,
+   1105
+  ]
+ },
+ "Q3": {
+  "id": "c2",
+  "linepos": "L08:5",
+  "code": "g",
+  "current": "g H (GAPS37 F1)",
+  "role": "control-query",
+  "ctx_box": [
+   511,
+   828,
+   625,
+   895
+  ]
+ },
+ "Q4": {
+  "id": "q1",
+  "linepos": "L08:51",
+  "code": "g",
+  "current": "l H",
+  "role": "query",
+  "ctx_box": [
+   1880,
+   825,
+   2003,
+   895
+  ]
+ },
+ "Q5": {
+  "id": "q3",
+  "linepos": "L11:17",
+  "code": "[sigma]",
+  "current": "i M",
+  "role": "query",
+  "ctx_box": [
+   533,
+   1120,
+   647,
+   1190
+  ]
+ },
+ "Q6": {
+  "id": "q2",
+  "linepos": "L10:30",
+  "code": "g",
+  "current": "l H",
+  "role": "query",
+  "ctx_box": [
+   867,
+   1030,
+   995,
+   1105
+  ]
+ },
+ "R1": {
+  "id": "rl1",
+  "linepos": "L10:61",
+  "code": "g",
+  "current": "l C",
+  "role": "ref F2 l",
+  "ctx_box": [
+   1836,
+   1030,
+   1953,
+   1105
+  ]
+ },
+ "R2": {
+  "id": "re2",
+  "linepos": "L11:15",
+  "code": "a",
+  "current": "e H",
+  "role": "ref e-class",
+  "ctx_box": [
+   485,
+   1120,
+   595,
+   1190
+  ]
+ },
+ "R3": {
+  "id": "rl2",
+  "linepos": "L12:26",
+  "code": "g",
+  "current": "l C",
+  "role": "ref F2 l",
+  "ctx_box": [
+   1400,
+   1235,
+   1523,
+   1315
+  ]
+ },
+ "R4": {
+  "id": "rg1",
+  "linepos": "L06:4",
+  "code": "g",
+  "current": "g C",
+  "role": "ref F1 g",
+  "ctx_box": [
+   180,
+   670,
+   305,
+   755
+  ]
+ },
+ "R5": {
+  "id": "ri2",
+  "linepos": "L10:60",
+  "code": "m",
+  "current": "i H",
+  "role": "ref i-class",
+  "ctx_box": [
+   1800,
+   1030,
+   1925,
+   1105
+  ]
+ },
+ "R6": {
+  "id": "rg2",
+  "linepos": "L11:19",
+  "code": "g",
+  "current": "g H",
+  "role": "ref F1 g",
+  "ctx_box": [
+   580,
+   1120,
+   700,
+   1190
+  ]
+ },
+ "R7": {
+  "id": "ri1",
+  "linepos": "L06:8",
+  "code": "[f-loop]",
+  "current": "i M",
+  "role": "ref i-class",
+  "ctx_box": [
+   262,
+   670,
+   376,
+   755
+  ]
+ },
+ "R8": {
+  "id": "re1",
+  "linepos": "L11:7",
+  "code": "a",
+  "current": "e H",
+  "role": "ref e-class",
+  "ctx_box": [
+   211,
+   1120,
+   321,
+   1190
+  ]
+ }
+}
