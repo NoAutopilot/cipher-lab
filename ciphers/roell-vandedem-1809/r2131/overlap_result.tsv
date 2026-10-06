@@ -1,0 +1,6 @@
+pool	tokens	distinct	Q	S	S_pct	N1_mean	N1_p95	N1_p99	N1_frac_ge	N2_mean	N2_p99	N2_frac_ge
+FAM_positive_control	1600	833	45	23	51.1	11.46	16	18	0.0001	9.66	16	0.0000
+ROELL_target	2585	931	45	15	33.3	14.50	19	21	0.4974	10.88	18	0.1019
+# frames R1469 (n=1297): 401@[205], 501@[0, 187, 416]
+# frames R1470 (n=1288): 601@[34, 1178]
+# frames R2131 (n=50): 301@[49], 701@[0], 2504@[2]

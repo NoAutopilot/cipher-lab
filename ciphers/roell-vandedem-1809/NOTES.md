@@ -796,3 +796,45 @@ where Kroll's cipher letters of 1784-85 sit decrypted in inv. 7009) for a cipher
 placeholder; 2 thumbnails; no login); www.nationaalarchief.nl 2 (item pages 804, 806); service.archief.nl 13 (IIIF at 900 px:
 804 scans 150-153, 160, 170, 174; 806 scans 190, 205, 211-214; all HTTP 200, >= 2 s apart, one at a time); raw.githubusercontent.com
 2, github.com 1 sparse clone, api.github.com 1 (Bourdeau's targets/roell1809). Subagent calls: 0.
+
+## R10-ROELL12 (6 Oct 2026): R1469/R1470 groups vs R2131 (Van Dedem, 9 Feb 1793)
+
+Worker R10-ROELL12 (account 2, for LANE LANE-RUN10-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run10-jobs.md`,
+08:19-08:25 UTC by `date -u`. Disk only, no subagent, no decoding. Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0
+(no reading). Pre-registration `r2131/PREREG.md` (pushed 7ed61121f before the run); script `r2131/overlap_test.py` (`--check` exit 0);
+output `r2131/overlap_result.tsv`. Inputs are transcriptions only (rule 2): Bourdeau's parse of DECODE's R1469/R1470, and his
+transcriptions of R2131 and of the 1788-89 Van Dedem family R1947, R2053, R2121, R2122 (dbourdeau/cyphersolver targets/dedem1788/tx,
+MIT / CC BY 4.0, copied unchanged into `r2131/`).
+
+**Test.** Q = R2131's 45 distinct groups after dropping the frame/indicator groups (701 ... 301, 2504). S = how many of Q occur in a
+pool. Null N1 (the gate): each q jittered by a non-zero offset in +-50 (keeps R2131's magnitude profile, so S can vary), 10,000 draws.
+
+| pool | tokens / distinct | S of 45 | N1 mean | N1 p95 / p99 | P(N1 >= S) | uniform-null mean / p99 |
+|---|---|---|---|---|---|---|
+| FAM (R1947+R2053+R2121+R2122), positive control | 1,600 / 833 | **23** (51%) | 11.5 | 16 / 18 | 0.0001 | 9.7 / 16 |
+| R1469+R1470, target | 2,585 / 931 | **15** (33%) | 14.5 | 19 / 21 | 0.50 | 10.9 / 18 |
+
+**Result (pre-registered branch).** The control passes: R2131 shares its code with the 1788-89 Van Dedem letters detectably at N=45
+(23 vs a null p99 of 18), so the test has power at this length. R1469/R1470 sit at their jittered null's mean (15 vs 14.5, p95 19):
+**R2131's code is not detectably shared by R1469/R1470 at this N, control-backed.** This agrees with Bourdeau's 1788-89 crib overlap
+(30-33% vs a 28% baseline) and extends it to the 1793 text itself. Side result, for the dedem1788 family: DECODE's grouping of R2131 with
+the 1788-89 letters as one codebook is supported by overlap (S, not a reading).
+
+**What this does and does not say about the date.** It removes the one cheap positive the 1793 inference could have had (a shared code
+with Van Dedem's own 9 Feb 1793 cipher); it does not establish 1809 either. If R1469 is a 1793 Van Dedem despatch, it is in a different
+code from his 1788-93 code with Van de Spiegel -- possible (a States General despatch could use another table), but now unsupported by
+any code evidence. Descriptive, not gated: R1469 opens with 501 (also at groups 187, 416) and has 401 at 205; R1470 has 601 at 34 and
+1178; in the family these are frame/indicator groups, but 501/401/601 are also ordinary-looking values, so this is no evidence either way.
+The date stays as DECODE gives it; no rename proposed.
+
+**Not run.** A crib decode of R1469 against the inv. 804 clear copy (scans 150R-152R): no key for the 1788-93 family exists in this
+folder, a sibling, or Bourdeau's targets/dedem1788 (his aligners found no consistent values), as stated in the PREREG.
+
+**Verdict line:** `open` -- R1469/R1470 do not share R2131's (Van Dedem 1793) code at a detectable level (S 15/45 vs null mean 14.5,
+p95 19; positive control 23/45 vs p99 18), so the 9 Feb 1793 dating has no code support. Cheapest next: (1) ~USD 2-3, the States General's
+received copy of the 9 Feb 1793 despatch (NA 1.01.02, Levantse lias 1793) for a cipher original -- the only remaining test of the 1793
+dating; (2) the DECODE photographs' own archive stamp/folio at full size (account-gated; an ASKS-side image request), which would settle
+the provenance directly.
+
+**Requests:** github.com 1 sparse clone (dbourdeau/cyphersolver, targets/dedem1788 + roell1809); api.github.com 1 (refused, scope).
+No archive or DECODE request. Subagent calls: 0.
