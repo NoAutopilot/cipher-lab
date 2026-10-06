@@ -1,8 +1,8 @@
 {
  "grades_after": {
-  "M": 169,
-  "S": 301,
-  "U": 273
+  "M": 170,
+  "S": 300,
+  "U": 272
  },
  "grades_before": {
   "M": 113,
@@ -12,7 +12,7 @@
  "key_source": "published (Tomokiyo, Cryptiana: JuanManuel.png alphabet; AlonsoSanchez.htm nomenclator)",
  "lookalike_by_kind_grade": {
   "code/M": 2,
-  "miss/U": 98,
+  "miss/U": 97,
   "sym-novalue/U": 20,
   "sym/M": 44
  },
@@ -72,7 +72,7 @@
   "puz": 2,
   "roo": 1,
   "tag": 1,
-  "um": 2,
+  "um": 1,
   "ump": 1,
   "y": 8,
   "yaqes": 1,
@@ -82,7 +82,7 @@
   "zy": 1,
   "\u00f7": 1
  },
- "lookalike_settled": 164,
+ "lookalike_settled": 163,
  "split_left": 52,
- "tokens": 743
+ "tokens": 742
 }

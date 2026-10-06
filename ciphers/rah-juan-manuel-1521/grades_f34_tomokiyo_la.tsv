@@ -584,8 +584,7 @@ line	pos	token	readers	kind	value	grade
 24	19	ob	lookalike	miss	_	U
 24	20	kef	agree	code	lo	S
 24	21	R	agree	sym	s	S
-24	22	Z	agree	sym	r	S
-24	23	um	lookalike	miss	_	U
+24	22	jum	verifier-merge	code	otra	M
 24	24	R	agree	sym	s	S
 24	25	~	split	split	_	U
 24	26	heb	agree	miss	_	U

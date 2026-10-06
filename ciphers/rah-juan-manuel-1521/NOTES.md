@@ -968,3 +968,62 @@ Read so far: 0 of 28 letters read in full; R9501 f.34 (30 lines) trial-decoded w
 - [x] image-check: R9528, R9529, R9502, R9526 and R9501 full-size images fetched (sha1s in images/manifest.json), crops and windows checked; f.34 out-of-table groups eye-checked (R13-RJM34LA: 23 of 24 confirmed as written); J-initial groups confirmed and merged (R13-RJMV2, 10 places)
 - [x] retry: look-alike passes on f.194/f.199 (R11-RJMLA, residual 0.040 / 0.137) and f.34 (R13-RJM34LA, 169 of 218 split tiles settled, residual 0.065); agreement, not error; unsettled tiles to the sorter's focus list
 Verdict: keep going: 3 internal gaps (f.34 remaining Z + group pairs, eye check; T/Q values from pooled alignments; R9526 retest with f.150's clerk lines and settled splits); the transcription and unread-token gaps wait on ASKS 138; cheapest next: eye check of the 9 remaining Z + group places on f.34, ~$1.5
+
+## Eye check of the 9 remaining Z + group places on f.34 (R14-RJMZ, 6 Oct 2026, 15:17-15:2x UTC)
+Brief: .claude/briefs/runs/2026-10-06-account2-run14-jobs.md job R14-RJMZ (the first gap of R13-RJMV2). Opus worker, no subagent.
+Material: the f.34 crops are not on disk (images/crops_f34_manifest.json only), so one DECODE browser login, 1 request to de-crypt.org
+(full-size R9501 P1, sha1 b510ebe5... = images/manifest.json); image and crops in the scratchpad only. Crops (pasted; RUN1-SEG's command):
+```
+$ python3 tools/iiif_lines.py --image IMG_R9501_I44762_P1.jpg --region 1820,205,1570,1870 --out <scratch>/crops --prefix f34 --follow-slope 300 --slope-margin 22 --debug
+  wrote 30 crops
+```
+Each place viewed by eye at 2-3x on its line crop, against the J of the confirmed "Jas sad Jez" (L02) and "dim Jas g" (L04):
+
+| place | read as | image | table code? | change |
+|---|---|---|---|---|
+| L24.22 "Z um" | Z + um | one group "Jum": tall J, flat top bar, hook below the line, joined to um | jum = otra | **merged -> jum, M** |
+| L04.1 "Z ul" ("Jul") | Z + ul | one J-group at the line start | no (jul not in the table) | none |
+| L23 "Z ump" ("Jump") | Z Z + ump | a small yogh, then one J-group "Jump" | no | none |
+| L03 "Z bay" | Z + bay | small separate yogh (descender), then bay | bay = va already | none |
+| L29 "Z bay" | Z + bay | small separate yogh | as above | none |
+| L07 "Z suf" | Z + suf | small separate yogh | suf = del already | none |
+| L26 "Z log" | Z + log | small separate yogh | no | none |
+| L26 "Z bo" | Z + bo | small separate yogh ("z Z bo3") | no | none |
+| L29 "Z geb" | Z + geb | small separate yogh | no | none |
+
+So one more J-group is a table code. Added to lookalike/f34_exceptions.tsv as one row (R13-RJMV2's rule, R12-RJMV's licence: one eye, M).
+`python3 scripts/decode9501_la.py --judge`, then `--check` exit 0 (15:23 UTC); decode9501.py `--check` exit 0 (unchanged).
+Grades, f.34 after this merge: **S 300 / M 170 / U 272 of 742 tokens** (was S 301 / M 169 / U 273 of 743). H 0, C 0. S+M 63%. Line 24 now
+reads "... lo s otra s _ _ s que".
+Judge (rule 7), same method (20 shuffled-order seeds, same key, same token list):
+```
+es1600: FAIL language: score=-1.098, real_p05=-0.822   shuffled 20 seeds -1.251..-1.162 (mean -1.207, sd 0.022)
+es17c:  FAIL language: score=-1.063, real_p05=-0.858   shuffled 20 seeds -1.191..-1.072 (mean -1.144, sd 0.028)
+```
+Before (R13-RJMV2): es1600 -1.103, es17c -1.065. Movement is well inside one shuffled sd. Same summary: FAIL below real_p05, above all 20
+shuffled seeds on both corpora, "judge cannot decide".
+Pointer, not applied (outside the 9 named places): L01 has a "Z um" too ("yol 3um ka"); on the crop the first sign is a 3/z-shaped sign
+joined to um, not the tall J, so it looks like the sign as read; a second eye could confirm. The J-groups "Jul" and "Jump" are written
+groups that Tomokiyo's table does not list (like "rob", R13-RJM34LA).
+**Reading change after AUDIT.md (R13-RJMV2): one token on L24 (Z S -> jum M). Flagged in ROOM.md for a verifier to carry into AUDIT.md.**
+Requests: de-crypt.org 2 (one browser login: RecordsView 9501 + full-size P1). Subagent calls 0. No other host.
+Files: lookalike/f34_exceptions.tsv, ciphertext_f34_reconciled_la.tsv, grades_f34_tomokiyo_la.tsv, reading_f34_tomokiyo_la.txt,
+results_decode9501_la.json, results_shuffle_spread9501_la.json.
+
+## Remaining gaps (R14-RJMZ, 6 Oct 2026)
+Read so far: 0 of 28 letters read in full; R9501 f.34 (30 lines) trial-decoded with Tomokiyo's published key, after the look-alike pass and the J-merges (R13-RJMV2, R14-RJMZ): 300 S + 170 M of 742 tokens (63%), 272 unread, judge FAIL on es1600 and es17c, target above all 20 shuffled-order seeds on both (judge cannot decide); nomenclator layer also decoded on R9528 f.194, R9502 f.40, R9526 ff.147-147v; Tomokiyo's alphabet PASSes held out on R9502 f.40 (0.276 vs control max 0.172); R9526 vs CODOIN XXVI a non-test (calibration 0.491)
+- R9501 f.34 unread tokens (49 unsettled splits, 98 settled Latin fragments, 101 out-of-table groups) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set and the Latin-vs-symbol notation; 34 f.34 tiles appended to sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- T and the rare signs 9, X, V, E, 3 and Q have no value supported on a page outside the key sample - blocker: not-attempted; T takes no consistent chunk on f.40 (e 4, h 2, g 2 of 17); next: pool the f.194, f.199, f.40 and f.147 alignments for T/Q chunk counts and score Q against K after the look-alike check, ~$2
+- R9526 held-out test against the print is a non-test (calibration 0.491) - blocker: not-attempted; outside this brief (R9501 only); next: one Sonnet read of f.150's last 6 lines and a look-alike pass on the 85 split tokens of ciphertext_f147_reconciled.tsv, then a fresh PREREG (same gate) on the span, ~$3
+- Cipher transcription below the 5% standard (f.194 0.23, f.199 0.42, f.40 0.28, f.147 0.27, f.34 0.34, err_true unmeasured) - blocker: waiting-on: ASKS.md row 138 (the owner's sort settles the label set; 39 + 34 unsettled look-alike tiles in sorter/focus.tsv pending the account-3 rebuild flagged in ROOM.md)
+- Kolosova 2017 annex: does it edit any of the 28? - blocker: waiting-on: LOCAL-QUEUE.tsv row L17 (Kolosova, filed for lope-hurtado-1522; the same thesis and book) -- the cloud route to the Teseo PDF fails TLS (JM-K, R12-RJMPUB); without it every reading stays a cryptanalytic result
+
+## Escalation (R14-RJMZ, 6 Oct 2026)
+- [x] siblings: R11-RJMSIB compared Tomokiyo's Juan Manuel and Sanchez 1522 tables (alphabet and nomenclator, Bourdeau sanchez1522 cited): same design, no shared key (V 1 vs p95 2; T 0 of 75 shared words); no table fit to carry over
+- [x] clear-pages: f.197, f.201, f.42 read (single Sonnet pass each); f.199's, f.40's and f.147v's own clear lines identified; f.150 viewed (not transcribed); f.34 has no clear lines
+- [x] known-keys: Tomokiyo's nomenclator run on R9528, R9529, R9502, R9526 and R9501; his alphabet held out on R9502 f.40: PASS (R12-RJM42); R9501 f.34 trial decode with both (R12-RJM9501, rerun R13-RJM34LA, J-merges R13-RJMV2, R14-RJMZ): 63% S/M, judge cannot decide
+- [x] print: CSP Spain II read whole (abstracts only) and mapped to records (16 of 28, csp_date_map.tsv); R12-RJMPUB found no published decipherment beyond Tomokiyo's first-line incipits; one chapter of R9526 printed in clear, CODOIN XXVI pp.49-50; Kolosova annex waiting on a local fetch (gap above)
+- [x] key-rebuild: alphabet from R9528 f.194/f.197 (alphabet.tsv, 13 signs, 6 at C); held-out FAIL on f.199 and on f.40 (0.156 < 0.24)
+- [x] image-check: R9528, R9529, R9502, R9526 and R9501 full-size images fetched (sha1s in images/manifest.json), crops and windows checked; f.34 out-of-table groups eye-checked (R13-RJM34LA: 23 of 24 confirmed as written); J-initial groups confirmed and merged (R13-RJMV2, 10 places; R14-RJMZ, 9 more places checked, 1 merged: L24 jum)
+- [x] retry: look-alike passes on f.194/f.199 (R11-RJMLA, residual 0.040 / 0.137) and f.34 (R13-RJM34LA, 169 of 218 split tiles settled, residual 0.065); agreement, not error; unsettled tiles to the sorter's focus list
+Verdict: keep going: 2 internal gaps (T/Q values from pooled alignments; R9526 retest with f.150's clerk lines and settled splits); the transcription and unread-token gaps wait on ASKS 138; cheapest next: pool the f.194/f.199/f.40/f.147 alignments for T/Q chunk counts, ~$2
