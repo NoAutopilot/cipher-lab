@@ -1,0 +1,43 @@
+{
+ "mode": "control",
+ "objective": "R9-ZESCH word-parse LLR (wordseg_syllabary.py, unchanged)",
+ "search": "freq-rank init + parallel tempering",
+ "temps": [
+  0.05,
+  0.15,
+  0.4,
+  1.0,
+  2.0
+ ],
+ "moves_per_replica": 50000,
+ "exch": 400,
+ "K": 98,
+ "N_tokens": 2666,
+ "true_key_J": 1181.7,
+ "seeds": [
+  {
+   "seed": 2191,
+   "J": 986.4,
+   "init_J": -2250.3,
+   "init_token_acc": 0.1524,
+   "token_acc": 0.0121
+  },
+  {
+   "seed": 2192,
+   "J": 1008.6,
+   "init_J": -2293.5,
+   "init_token_acc": 0.1524,
+   "token_acc": 0.0
+  },
+  {
+   "seed": 2193,
+   "J": 958.9,
+   "init_J": -2410.3,
+   "init_token_acc": 0.1524,
+   "token_acc": 0.0316
+  }
+ ],
+ "mean_token_acc": 0.0146,
+ "gate": 0.6,
+ "verdict": "CONTROL BELOW GATE"
+}

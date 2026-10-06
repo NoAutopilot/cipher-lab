@@ -498,9 +498,47 @@ matched control first. Script only (`wordseg_syllabary.py`), no vision, no subag
 
 Requests: github.com 1 sparse clone. No other host. Vision 0, subagents 0.
 
-## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026; R9-ZESCH, 6 Oct 2026)
+## R9-ZESCH2-zeschau-seebach-1841 (6 Oct 2026, account-4, LANE-RUN9-account-4)
+
+Step run: R9-ZESCH's named next, the same word-parse objective (`wordseg_syllabary.py`, imported unchanged) with a
+stronger search, matched control first. Script only (`wordseg_pt.py`), no vision, no subagents, no network.
+
+- How the search differs from R9-ZESCH's (random start, one chain cooling 2.0 -> 0.05, 2 x 50,000 moves): a crib-free
+  frequency-rank initialisation (codes by ciphertext count matched to units by expected training frequency under the
+  control generator's own unit rule), parallel tempering (5 replicas at T 0.05/0.15/0.4/1.0/2.0, exchanges every 400
+  moves), half the moves code-code swaps; 50,000 moves per replica = 250,000 per seed (2.5x R9-ZESCH).
+- Pre-registered in `PREREG-R9-ZESCH2.md` (pushed in 82795c987, about 06:26 UTC, before any accuracy; only timing runs
+  before it). Control = `build_control()` unchanged; seeds 2191-2193; gate 0.60 unchanged. Output
+  `wordseg_pt_control.json` (about 15 min, 3 processes, finished 06:41 UTC).
+
+| run | token accuracy (2191/2192/2193) | mean | best J | true key J | start (freq-rank) acc / J | verdict |
+|---|---|---|---|---|---|---|
+| matched control | 0.012 / 0.000 / 0.032 | **0.0146** | 986.4 / 1008.6 / 958.9 | **1181.7** | 0.152 / about -2,300 | CONTROL BELOW GATE (0.60) |
+| target (pooled R5005-R5007) | not run | -- | -- | -- | -- | non-test at this N |
+
+- Target not run, no shuffled-target run, no judge run, 0 tokens graded; pins stay Bourdeau's grade-I values.
+- What the numbers say: the stronger search raised the best J (900-957 -> 959-1009) but accuracy did not move with it
+  (0.0026 -> 0.0146), and the search walked away from a frequency-rank start that already read 15% of tokens. The true
+  key still scores above everything found, so the objective's global maximum may sit at the key, but its landscape has
+  wide wrong basins that local search climbs into at J about 1,000, well away from the key: the numbers did not move
+  together toward the gate.
+- Third-attempt question (asked by the brief): this is the second attempt at this objective. A third that changed only
+  search settings (more moves, more replicas, other temperatures) would be rule 3's third-attempt case (shape a/c: an
+  unchanged objective, the knob the re-brief bet on changed, the gate missed with accuracy not following J). So the
+  word-parse objective under local stochastic search is logged untested-by-this-tool at this N and is [retired] as a
+  key-rebuild instrument; it is not refuted, and it is not a negative about the cipher.
+- `--check` (re-runs the 15-minute control) not run in this job: no reading or key changed; seeds fixed, `Pool.map` keeps
+  order. Rule 10: no novelty claim. The 7 pin values are Bourdeau's (dbourdeau/cyphersolver, CC BY 4.0).
+- Suggestion only (not run): a cheap diagnostic of the objective itself, not a third search, would start the control's
+  search at the true key with k = 5/10/20 random swaps and measure whether it returns (basin width); if it does not
+  return even from k = 5, the objective is the limit at this N. A genuinely different instrument for the target would
+  need new material (more ciphertext, or the R5006 pencil decipherment under multispectral imaging, SEND-QUEUE S5).
+
+Requests: none (disk only). Vision 0, subagents 0.
+
+## Remaining gaps (GAPS179, refreshed GAPS185, GAPS190, GAPS196, GAPS202, 3 Oct 2026; GAPS208, 4 Oct 2026; R9-ZESCH, R9-ZESCH2, 6 Oct 2026)
 Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R5007 951 = 603 left + 348 right, GAPS190/196; R5008 260 = 113 on p.1 + 147 on p.2 left, GAPS208); R5007 p.1 and R5008 p.2 right hold no cipher; 0 tokens read
-- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); R9-ZESCH's word-parse objective failed its matched control (0.0026 vs 0.60) though it ranks the control's true key above every annealer optimum (1181.7 vs <= 957.4); next: the same objective with a stronger search (parallel tempering, or 10x moves and more restarts), control first, optionally read R5008's P2-left pencil ticks against the pair phase as segmentation evidence, ~$3
+- Key rebuild on the pooled pairs - blocker: not-attempted; crib test done on R5006 (GAPS185, p 0.0005) and R5007 (GAPS196, p 0.0005); R5008's crib test is untestable at N=260 (R8-ZESCH: matched German power control 0.465 vs gate 0.80, target not computed); the letter-4-gram syllabary annealer is retired at this N (GAPS202); the crib-anchored search on R5008's frame has no in-cipher crib (R8-ZESCH, not attempted); the word-parse objective failed its matched control twice, under simulated annealing (R9-ZESCH, 0.0026) and under frequency-rank init + parallel tempering (R9-ZESCH2, 0.0146), both vs gate 0.60, with the true key's J 1181.7 above every optimum found (<= 1008.6) -- retired for local search at this N (rule 3 third-attempt clause); next: a basin-width diagnostic of the objective on the control (true key + k random swaps, k = 5/10/20), ~$2, which says whether any search can use this objective at N=2,666
 - Erased pencil decipherment on R5006 - blocker: illegible; p.1 and p.2 passes saw only ticks, no letters, at native resolution; multispectral/UV imaging is an archive step (SEND-QUEUE S5 / ASKS 64)
 
 ## Escalation (3 Oct 2026, refreshed GAPS179)
@@ -508,10 +546,10 @@ Read so far: 1,903 digits transcribed, all of R5006-R5008's cipher (R5006 692; R
 - [n/a] clear-pages: only the letters' own clear passages are in clear text; no clear copy of the cipher body is known
 - [x] known-keys: Bourdeau's 7 gloss values from R5005 are the only key material found (bZES, 26 Sept 2026)
 - [x] print: no printed edition of this correspondence found (bZES OpenAlex/S2, 0 hits)
-- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); the word-parse objective (R9-ZESCH) failed its matched control (0.0026 vs 0.60) but ranks the control's true key above every annealer optimum (1181.7 vs <= 957.4), so the search, not this objective, is the limit; next: the same objective with a stronger search (parallel tempering, or the annealer at 10x moves with more restarts), control first, ~$3
+- [ ] key-rebuild: R5006 and R5007 both share R5005's pair profile (GAPS185, GAPS196, p 0.0005 each), so the pools merge; R5008 untestable at N=260 (R8-ZESCH, control 0.465 vs 0.80); the letter-4-gram annealer failed its matched control twice (GAPS202, retired for that instrument); crib-anchored search on R5008's frame not attempted, no in-cipher crib (R8-ZESCH); [retired] word-parse objective under local search (R9-ZESCH annealer 0.0026, R9-ZESCH2 parallel tempering 0.0146, gate 0.60; rule 3 third-attempt clause); next: basin-width diagnostic of that objective on the control (true key + k swaps), ~$2, then a different instrument or new material
 - [x] image-check: R5006 p.1 and p.2 pencil traces checked at native resolution by two passes plus the reconciler, ticks only (GAPS175, GAPS179)
 - [ ] retry: none yet
-Verdict: keep going: 1 internal gap (key rebuild: GAPS202's 4-gram annealer retired after failing its matched control twice; R8-ZESCH found R5008's crib test untestable at N=260; R9-ZESCH's word-parse objective failed its matched control, 0.0026 vs gate 0.60, but scored the control's true key above every annealer optimum, 1181.7 vs <= 957.4, so the search is the limit); all R5006-R5008 cipher transcribed (1,903 digits); duplicate-effort risk with Bourdeau's stated next step (his HEAD adbf9a1, 5 Oct 2026, has not run a word-parse objective); cheapest next: the same word-parse objective with a stronger search (parallel tempering or 10x moves), control first, ~$3
+Verdict: keep going: 1 internal gap (key rebuild: GAPS202's 4-gram annealer retired; R8-ZESCH found R5008's crib test untestable at N=260; the word-parse objective failed its matched control under two search families, R9-ZESCH 0.0026 and R9-ZESCH2 0.0146 vs gate 0.60, true key J 1181.7 above every optimum found, retired for local search at this N); all R5006-R5008 cipher transcribed (1,903 digits); duplicate-effort risk with Bourdeau's stated next step (his HEAD adbf9a1, 5 Oct 2026, has not run a word-parse objective); cheapest next: a basin-width diagnostic of the word-parse objective on the control (true key + k random swaps), ~$2
 
 ## Check-solved verdict (CHECK-ZESCHAU, account-4, 3 Oct 2026)
 
