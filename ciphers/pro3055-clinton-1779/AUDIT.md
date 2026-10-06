@@ -408,3 +408,54 @@ as known. PROGRESS.tsv audit-2 column set to x from this verdict. N0 queues no S
 ## JSTOR run (local runner, 4 Oct 2026)
 
 "The Treason of Benedict Arnold, as Presented in Letters of Sir Henry Clinton to Lord George Germain", The Pennsylvania Magazine of History and Biography 22 (1898) 410-422, https://www.jstor.org/stable/20085812 (from "Clinton" AND "Haldimand" AND ("October 1780") AND (cipher OR cypher OR Arnold), 26 results). Read in the page viewer: Clinton to Germain, New York 11 Oct 1780; p.411 refers to "the inclosed Copy of a Letter from General Haldimand to me". The Haldimand letter is not printed and no cipher is mentioned. Context only. The four Clinton phrase queries ("still the clamours of their own officers", "jealousies of the inhabitants of Vermont", "great defection in the Spanish colonies", "Cork fleet which is much wanted") returned 0; the 1779 and 1781 Haldimand queries surfaced only Wilbur, Early history of Vermont v.2 (1900) and indexes.
+
+## R10-CLINV: verifier of R10-CLIN3868 (6 Oct 2026, account 2, LANE RUN10; clock 07:59-08:0x UTC, `date -u`)
+
+A separate session from R10-CLIN3868 (the p.382 columns 3-6 cell check, NOTES.md section "R10-CLIN3868"); this audit does not
+protect its conclusions. No novelty class asked; 3868 stays N0 (section above), key `period`, text `known`.
+
+1. **Pre-registration order.** `PREREG_R10-CLIN3868.md` was pushed in d6e02ac03 (07:45:21 UTC); the scorer
+   `passes/check_3868_c36.py`, its output and both transcriptions landed in 9994ec39a (07:48:21 UTC). The gate predates the
+   committed score. The blind pass file was committed with the score, not before the PREREG, so its timing is not provable from
+   git; it does not matter for the verdict, because the blind pass alone clears the gate (below).
+2. **Re-score.** `passes/check_3868_c36.py --check` exit 0 (re-derives the committed JSON byte for byte); `check_3868.py --check`
+   exit 0. Blind pass 93/100 key-consistent (i=j), reconciled 97/100; shuffled-plaintext control mean 6.96 / p95 11 / max 19
+   (blind), 6.95 / 11 / 17 (reconciled). Gate (share >= 0.80 and count > control max) PASS on both. The control can differ on
+   this statistic (it moves the decipherment letters against fixed key letters), so it is not a by-construction tie. Caveat: the
+   five reconciliation changes were made only on cells that failed the key, a key-directed re-read; the gate result does not
+   depend on them (the blind pass passes), but the 97 should be quoted with the blind 93 beside it.
+3. **The name cells, eye-checked.** Image 1030 (H-1649, image-uab.canadiana.ca full/max, fetched once to the scratchpad), column
+   4 box 2600,1290,2935,3220 (`tools/iiif_lines.py --image ... --region 2600,1290,335,1930` found 0 lines in a figure column, as
+   the worker reported; box crop 2560,2900,2960,3230 used). The five entries read unambiguously **11-6, 4-2, 11-9, 1-1, 16-6**,
+   ruled off below. On the 1778 title page (`passes/title1778_reading.txt`, two independent reads agree on all 30 lines): line 11
+   "HORSE, DRAGOONS, and FOOT" pos 6 = d, pos 9 = g; line 4 "LIST" pos 2 = i; line 1 pos 1 = b; line 16 pos 6 = y. The cells spell
+   **DIGBY**. The same cells carry the same letters elsewhere: 4-2 = i in "is" on this page and twice on p.242 (3050/3077); 11-9 = g
+   in "respecting" on this page, on p.382 col. 2 and three times on p.242. "DARBY" on the same key line would be 11-6 **11-8 11-7**
+   1-1 16-6 (a and r sit at line 11 pos 8 and 7); the page instead has two different cells, from two different key lines, each a
+   correct encipherment of i and g. That is not a one-position slip of the kind Tomokiyo notes on 2380; it is a deliberate D-I-G.
+   The p.385 decipherment line (committed crop `images/h1649/p385_lines/p385_L12.jpg`) reads "also laid before Admiral Darby,";
+   the eye agrees with both transcription passes (second letter an undotted a, no g descender).
+4. **Decision (rule 4: a data conflict, recorded by witness, not settled by majority).**
+   - Witness A, sender side: the cipher letter itself, Clinton's office, New York, 12 Nov 1781 (B.147 p.382, the copy-book's
+     cipher columns): DIGBY, every cell key-consistent.
+   - Witness B, recipient side: the period decipherment, Haldimand's office, B.147 p.385 (copy-book): DARBY.
+   - Witness C, print: *Collections of the Vermont Historical Society* vol. II (1871) pp.198-199 (`passes/vhs2_3868_print.txt`
+     line 24): "Admiral Digby (who is joint commissioner with ...)". Its source manuscript is not stated in our files, so it is not
+     counted as independent of A or B.
+   Context, not a settlement: Rear-Admiral Robert Digby was at New York in November 1781 and joint commissioner with Clinton;
+   Admiral George Darby was a real officer of the same date (Channel fleet), so "Darby" is a real name a decipherer could
+   substitute, not a garble. The conflict is between the encipherment and the decipherment; it is recorded, not resolved.
+   **Reading file: unchanged.** `passes/p385_reading.txt` is a transcription of the decipherment and correctly reads "Darby"
+   (rule: never silently repair a transcription). The cipher-cell reading in `passes/check_3868_c36.json` correctly records
+   "digby" at those cells. Grades as the worker set them stand (the i and g cells M against the decipherment; they are H against
+   the key). No SECOND-OPINIONS-QUEUE.tsv row exists for this target (grep, 0 rows), so nothing to propagate there.
+5. **Safe sentence, updated count (3868 only; the N0 class and its wording above are unchanged):** "We transcribed the period
+   decipherment of Clinton's cipher letter to Haldimand of 12 November 1781 (TNA PRO 30/55/33/65; Haldimand Papers B.147
+   pp.382-386, LAC reel H-1649) and checked the cipher of p.382 against it on the 1778 Army List title-page key (141 of 144
+   comparable cells consistent); the cipher names the joint commissioner 'Digby', as the 1871 print does, where the period
+   decipherment writes 'Darby'; the letter's text was already printed in 1871 (Collections of the Vermont Historical Society,
+   vol. II, pp.198-199)." Unsafe: "the cipher corrects the decipherment" (settles a witness conflict by preference) or any
+   wording implying the name reading is ours alone (the print already has Digby).
+6. **Postmortem.** No over-claim found in R10-CLIN3868's NOTES section, except one sentence settling the conflict ("the p.385
+   'Darby' is the decipherer's or copyist's error"): corrected by a bracket in this verifier's NOTES section, not by editing the
+   worker's text. Requests: image-uab.canadiana.ca 1 (Image 1030 full/max, 200). Vision: 2 crops by this session's own eye.

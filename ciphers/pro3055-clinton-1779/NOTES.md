@@ -1048,3 +1048,12 @@ Requests: image-uab.canadiana.ca 4 (Images 1030, 1031, 1032 at full/max; 1032 an
 20 s gave 200). Vision calls: 1 blind Sonnet pass, plus worker looks at 4 quarter-size frames/contact sheets and 3 zoomed crops.
 Status unchanged: partial.
 
+
+## R10-CLINV (6 Oct 2026, account 2, LANE RUN10): verifier of R10-CLIN3868
+
+Verifier verdict in AUDIT.md section "R10-CLINV". PREREG predates the scored output; re-score reproduces (blind 93/100, reconciled
+97/100 vs shuffled max 19/17, PASS). Cells 11-6 4-2 11-9 1-1 16-6 eye-checked on Image 1030: they spell DIGBY on the 1778 key (two
+cells from different key lines, not a slip from "Darby" = 11-6 11-8 11-7 1-1 16-6). [R10-CLINV correction to R10-CLIN3868's
+sentence "the p.385 'Darby' is the decipherer's or copyist's error": this is a rule-4 data conflict -- cipher (sender side) DIGBY,
+period decipherment p.385 (recipient side) DARBY, 1871 print Digby -- recorded by witness, not settled.] `passes/p385_reading.txt`
+keeps "Darby" (it transcribes the decipherment). No reading change; no SECOND-OPINIONS row to propagate.
