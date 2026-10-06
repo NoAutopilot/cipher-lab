@@ -1,0 +1,22 @@
+# R7-MANTSCR (6 Oct 2026, LANE LANE-RUN7-account-2, account 2): eye screen of the 17 untranscribed glossed frames of N9-MANT2 for the
+# single-attested codes 898/939/539/544 and the f.410/f.409v U codes (reading_tokens.tsv grade U). Worker eye read of page crops at ~0.75x
+# native (scratch, not committed; regen: frames.tsv URLs + the crop boxes in the NOTES section). Grade M throughout: digits read at screen
+# scale, counts approximate, nothing here is a transcription. folio = from the page's own folio number where visible, else N9-MANT2's label.
+rank	frame	folio	target_codes_seen	u_codes_seen	approx_u_occ	note
+1	0529	ff.424v-425	898 ("l'Empire", single-code gloss, f.424v); 939 (272.939 "en Mecklenbourg", f.425)	403 447 402 237 106 583 587 560 585 592 272 285 714 375 322 564 613 519	~25	densest glossed runs in the block; 898 and 939 each agree with the M value held on 0527 (a second attestation, not yet transcribed or gated)
+2	0530	ff.425v-426	none seen	592 253 106 375 237 402 272 560 285 289 406	~13	continues 0529's letter (f.425v); f.426 is the 24 Nov P.S., letter-range only
+3	0526	f.422	none seen	402 447 560 237 106 403 285 143 108 384 583 714 272	~15	recto of the 0527 leaf (ff.422v-423, D2B-MANT27); same letter, 24 Nov 1712
+4	0521	f.419v? (left page)	none seen	714 553 555 549	~4	one glossed 3-line run, signed
+5	0518	f.416	none seen	402 404 398 391 400	~5	already group-read by N9-MANT2 (71 groups); 400 doubtful
+6	0517	f.415	none seen	416 399 400	~3	digits above the gloss line, doubtful
+7	0535	(short letter)	none seen	402	1	letter-range otherwise
+8	0544	f.436v-437	none seen	(403?)	0-1	letter-range; one doubtful 403
+9	0514	(draft, large scale)	none seen	none	0	minute with codes written over underlined clear words, letter-range (110 15 16 ... 150 217 500); right page cut at the crop edge, not fully seen
+9	0520	f.418	none seen	none	0	364/365/374 only
+9	0523	ff.419v-420	none seen	none	0	letter-range plus 390 126
+9	0532	f.428	none seen	none	0	letter-range plus 257 355 376 198 191 170
+9	0533	ff.428v-429	none seen	none	0	letter-range plus 357 356 282 288 284
+9	0539	f.433	none seen	none	0	letter-range plus 257 816?
+9	0541	(left page)	none seen	none	0	401 217 257 170 177 (401 not a U code)
+9	0542	= 0541's page	none seen	none	0	same page as 0541 (N9-MANT2); right page clear letter
+9	0548	ff.440v-441	none seen	none	0	isolated name codes 150 160 170 187 191 198 257
