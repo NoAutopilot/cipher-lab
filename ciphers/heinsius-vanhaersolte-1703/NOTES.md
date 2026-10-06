@@ -309,12 +309,36 @@ pages), all >= 2.2 s apart, descriptive UA, no 429/403. WebSearch 0, vision 0, s
 **Status: open (unchanged).** Deel 3's H.A. 918 pages show cipher in one letter only (588, d'Alonne's deciphered passages, no numbers); none of
 the target's codes (178, 198) or the 1703 name codes appears as a code in 1704 print. The 1703 system's key is still not located in print.
 
-## Next step (cheap, depends on no one)
+## Deel 3 (1704, H.A. 918), the 16 pages R11A-HEIN3 left (R12A-HEIN, 6 Oct 2026, 17:49-17:51 UTC)
+
+Brief: read pp.12, 13, 16, 20, 23, 25, 31, 43, 48, 52, 59, 63, 74, 77, 81, 86 (same route as R11A-HEIN3, zero-padded OCR html
+`retroapp/service_heinsius/03_169/html/heinsius_03_GS169_<ppp>.html`) and say per page whether the print shows cipher numbers, spaced
+passages, a key or a number-to-word pair. All 16 fetched (HTTP 200) and read in full by eye, not only by script.
+
+Result: each page carries one Van Haersolte letter (nos. 26, 30, 43, 53, 62, 69, 81, 109, 130, 142, 164, 175, 205, 211, 221, 236; 9 Jan -
+22 Mar 1704, all "Ondert. orig. H.A. 918", all from Warsaw), and **every one is printed only as the editor's Dutch summary** (2-6 lines), a form
+that does not reproduce cipher. No footnote to any Haersolte letter on these pages mentions cipher; no code number, spaced passage, key or
+number-to-word pair appears. The only cipher wording on the 16 pages is footnote 166.1 on p.59 ("Gedeeltelijk in onopgelost cijferschrift"),
+which belongs to Sauniere de l'Hermitage's letter 166 (H.A. 946), already recorded in `ciphers/heinsius-hermitage-1704/NOTES.md`; it is not a
+Haersolte letter. Per page: `deel3_pages_r11a.tsv` (the 16 rows now `fetched = yes`).
+
+With R11A-HEIN3's 87, all 103 H.A. 918 hit pages of Deel 3 are now read: Van Haersolte's 1704 letters show cipher in one letter only (588,
+d'Alonne's deciphered spaced passages, no numbers). Not covered (unchanged): spaced passages the editors may have printed without a footnote
+inside full-text letters (the OCR cannot show them; these 16 are all summaries, so the gap does not apply to them); Haersolte letters whose
+heading OCR misses both the name and "918". Graded tokens read by us: 0. No key change.
+
+Requests: resources.huygens.knaw.nl 16 (all HTTP 200, >= 2.2 s apart, descriptive UA). WebSearch 0, vision 0, subagents 0.
+
+## Verdict (R12A-HEIN, 6 Oct 2026)
+
+**Status: open (unchanged).** Deel 3 page read complete (103 of 103 H.A. 918 pages); the 16 left were editor summaries with no cipher. The 1703
+system's key is still not located in print.
+
+## Next step (cheap, depends on no one; updated R12A-HEIN, 6 Oct 2026)
 1. Re-grep the 70 Deel 2 pages A2P4 read for the small-number runs of letter 1017's kind (1-70 inside text), which A2P4's 140-199 grep could not
    catch: about 70 requests to resources.huygens.knaw.nl (one session, >= 2 s apart), ~USD 1, script only.
-2. Deel 3 (1704): R11A-HEIN3 read 87 of the 103 H.A. 918 pages (no cipher beyond letter 588). Left: the 16 unread pages listed in its section
-   (zero-padded names `_012.html` etc., 16 requests, ~USD 0.3, script only).
+2. [done, R12A-HEIN 6 Oct 2026] Deel 3 (1704): all 103 H.A. 918 pages read (R11A-HEIN3 87, R12A-HEIN 16); no cipher beyond letter 588.
 3. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
 
 ## While waiting
-The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: next steps 1-2 above.
+The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: next step 1 above.

@@ -1,26 +1,26 @@
 printed_page	fetched	haersolte_letters_on_page	cipher_keyword	code_numbers_in_text	note
-12	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-13	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-16	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-20	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-23	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-25	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-31	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
+12	yes	26 (9 januari 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+13	yes	30 (11 januari 1704, Ondcrt)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+16	yes	43 (15 januari 1704, Ondcrt)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+20	yes	53 (18 januari 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+23	yes	62 (22 januari 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+25	yes	69 (25 januari 1704, Ondcrt)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+31	yes	81 (29 januari 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
 33	yes	87 (1 februari 1704., Ondert)		none	
 40	yes	99 (5 februari 1704 ., Eigenh)		none	
-43	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
+43	yes	109 (8 februari 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
 46	yes	122 (12 februari 1704 ., Eigenh)		none	
-48	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
+48	yes	130 (15 februari 1704, Ondcrt)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
 51	yes	137 (16 februari 1704., Ondcrt)		none	
-52	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-59	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-63	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
+52	yes	142 (18 februari 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+59	yes	164 (26 februari 1704, Ondert)	cijfer (not Haersolte: 166.1)	none	R12A-HEIN: Haersolte 164 editor summary only; same page footnote 166.1 "Gedeeltelijk in onopgelost cijferschrift" is Sauniere de l'Hermitage (H.A. 946), already in ciphers/heinsius-hermitage-1704
+63	yes	175 (29 februari 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
 67	yes	185 (3 maart 1704 ., Eigenh)		none	
 71	yes	194 (8 maart 1704 ., Ondert); 195 (8 maart 1704., Eigenh)		none	
-74	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-77	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-81	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
-86	no				not fetched (request cap); snippet is an Ondert. letter opening with an editor summary
+74	yes	205 (11 maart 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+77	yes	211 (14 maart 1704, Ondert)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+81	yes	221 (18 maart 1704, Ondcrt)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
+86	yes	236 (22 maart 1704, Ondcrt)		none	R12A-HEIN 6 Oct 2026: editor Dutch summary only; no cipher number, spaced passage, key or number-to-word pair
 103	yes	280 (1 april 1704 ., Eigenh)		none	
 107	yes	289 (4 april 1704., Ondert)		none	
 113	yes	301 (8 april 1704 ., Ondcrt)		none	
