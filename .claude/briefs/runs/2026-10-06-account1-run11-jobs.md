@@ -74,3 +74,32 @@ passes, the 6 codes may go M -> C per the existing prereg crib gate and decode -
 
 Wave 1 sessions (13:47 UTC): R11A-BRO session_01W956MpDJkoqmskt4DHsvuW; R11A-AVS57 session_01KmmzQKP2X8ZTyV55UfB6Jk; R11A-BOWES
 session_0145YsNTpBkFf2otrvtFyLiS; R11A-F5160 session_01X9FL3BVx1RMPd79CqY6UMh; R11A-F4712 session_01AkncNGNWxxdttd8XzuPnYA.
+
+## Wave 2 (spawned 14:3x UTC). Gallica IIIF answered 503 to R11A-F5160 at 13:5x-14:0x: no wave-2 job depends on Gallica; if a job finds
+it needs Gallica, one probe only, then stop that step and say so.
+
+### R11A-AVS53 -- august-van-saksen-1561-64, WVO 53 p1+p2 native re-read (the AVS57 pattern). Cap 6.5, box 80 min.
+Remaining gap "53 p1+p2 (f.266r-v, 13 cipher lines)": passes were cut from 100 dpi images/00053_p1.png. Fetch the native scan of 53 by the route
+R11A-AVS57 used for 57 today (read its NOTES section R11A-AVS57 and images/manifest.json; R21 may already hold a native 53 -- check disk first),
+crop p1+p2 lines with tools/iiif_lines.py --image, two blind Sonnet passes + reconcile (tools/reconcile_passes.py), re-run the 53 decode
+(key_53 + exceptions_53), report M before/after. Units: fetch 1 + 2 passes x 2 pages + 1 recon = 6 x 1.5 -- if the page pair needs more than
+4 pass calls, stop before the unit crossing 80% of cap. decode --check exit 0; a reading change after AUDIT.md -> NOTES note + ROOM verifier
+flag (the lane runs one verifier carry-over for 53 and 57 together after you). Gaps_check.
+
+### R11A-HEIN -- heinsius-vanhaersolte-1703, "Next step (cheap, depends on no one)" steps 1-2. Cap 3, box 50 min.
+Huygens retroboeken Heinsius edition (CLAUDE.md host table: pages.json for the real image URL, >= 2 s apart, descriptive UA). Step 1: Deel 2
+p.361-362 (letter 929) as crops via tools/iiif_lines.py --image, one read: does code 142 sit in a spaced-type (deciphered) passage, and what
+does the edition print around it. Step 2: Deel 3 p.208 (letter 588): the spaced-type d'Alonne decipherment of a Haersolte cipher -- record
+whether any cipher/clear pair there is usable as a crib for this folder. No key change without a pre-registered test. Units 2 x 1.5. Update
+the folder's next-step section and Verdict (status line per rule 5 only).
+
+### R11A-BOWES2 -- bowes-walsingham-1583, the SP 106 browse R11A-BOWES named (~$1). Cap 2, box 40 min.
+TNA Discovery API only (no record-page scraping): browse SP 106 (ciphers) item list for any Bowes / Scotland 1580-84 key or alphabet; record
+hits with references and digitisation flag. No key change. Update Remaining gaps / Escalation; gaps_check.
+
+### R11A-F3789 -- fr3789-mariedemedicis-savary-1610, settle disagreements.tsv against the crops on disk. Cap 6, box 75 min.
+NOTES follow-up: "a settling pass on disagreements.tsv against the image would sharpen ciphertext_draft.tsv into a citable ciphertext.tsv".
+First check whether ciphertext.tsv already is that settled file (git log, NOTES); if so stop and report. Otherwise: crops are in images/
+(no fetch); group the ~72 disagreement rows by crop, one Sonnet subagent call per ~20 rows given only the crop paths and the two readings,
+plus your own reconciliation (units: 4 calls + 1 recon = 5 x 1.5 incl. floor). Write ciphertext.tsv with a per-row `settled_by` column;
+rows still split stay marked, never silently repaired (rule 2). No decoding in this job. NOTES section + next step line.
