@@ -1,0 +1,10 @@
+# R13-SIENAJ cross-letter concordance of DRAWN signs, decided by eye from the crops (letters and digits are matched by name).
+# PREREG rule: doubt -> different ids. No drawn-sign pair below was judged certainly the same, so the scored (conservative) set keeps
+# every drawn id distinct; the 'liberal' column is the descriptive variant that merges each doubtful pair.
+liberal_id	members	judgement
+DLOOP	J19 I07 C09	probable: backward-looped d in all three; no. 9's is blotted
+YOGH	D19 H07	possible: 3 with tail; no. 19's tail longer
+BETA	H19 J07	doubtful: no. 19's has a z-like lower bowl, no. 7's a plain stem
+LAMBDA	L19 E07 D09	doubtful: lambda / inverted y / inverted v
+PBAR	D07 E09 B19	doubtful: p with crossed descender (no. 19's B19 is i-like, psi-shaped)
+OBAR	B09	(no counterpart judged)
