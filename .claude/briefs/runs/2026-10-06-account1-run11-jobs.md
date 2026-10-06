@@ -172,3 +172,5 @@ sign (anneal + a context argument that itself had a control?) or should it be M?
 evidence behind it; regrade only where the evidence is the anneal alone (S needs a control that can read that count). Apply via the folder's
 own grade files, run every folder --check (exit 0), update the AUDIT.md carry-over section (R11A-AVSV's), status.json depth fields if
 depth_pct changes (rebase first), SO-SAXONY-53-57 prompt counts if they change. N-class unchanged unless the template is run. Postmortem line.
+
+Wave 6 session (15:58 UTC): R11A-AVSV2 session_016ehBnRMygPFhJyQTY6HBYX.
