@@ -1324,3 +1324,32 @@ instrument that leans 8, not a reading of 8. Three instruments now on the glyph:
 leans 8; the 1182 px DigitArq image (glyph about 12 px tall) is the limit, so a further pass on this image would only
 change the knob (rule 3). Requests: none (image on disk). Model vision: own looks at the debug overlay (segmentation) and
 the contact sheet, after scoring; no subagent.
+
+## Part II test of 829011 as written (R8-LIN, 6 Oct 2026) -- PRE-REGISTRATION (pushed before any Part II page is fetched or read)
+
+Question: if p2l2pos6 is `829011` (subscript 5) as LX-TR first read it, does any Part II (English-Portuguese) parse of it, or a
+switch to Part II for the groups after it, read in the line `d justa he segredo ate [p2l2pos6] [cancelled] o ministerio`?
+Competitor already on file: `329011` = Part I p290 c1 r1 "Paralisía", trim 5 from the end -> "para" (M). Book: archive.org
+`newpocketdiction00viey`, Part II, separately paginated in the same scan. Every Part II page cited is identified by the printed
+page number and running header read off the fetched image, never by a leaf offset; rank 1 = the first fresh bold headword of the
+column (a definition carried over from the previous column is not counted, BOOK.md convention).
+
+Hypotheses ("as written" variants, all fixed now):
+- **P2a**: 8 is a null marker prefixed to a live Part II group `29011` -> Part II p90 c1 r1, trim 5.
+- **P2b**: 8 stands in place of the page-length digit (a null-flagged `329011`) -> Part II p290 c1 r1, trim 5.
+- **P2c** (switch): `829011` is void, and the following live groups are read in Part II: `328131`/3 -> Part II p281 c3 r1, trim 3;
+  `326624` -> Part II p266 c2 r4 (rank 4 counted on the image; the two earlier column counts on this scan were retired as
+  instruments only for ranks 15-23 under dispute, rank <= 4 is read directly).
+- **P0** (null, nothing looked up): line reads `ate o ministerio`; the subscript 5 under a null is unexplained by the key.
+
+Gate (per hypothesis, decided before looking): a variant **fits** iff (i) the located headword exists at that page/column/rank,
+(ii) a trim of the stated count from the end, or from the front (the key allows both, "do principio, ou do fim"), leaves >= 1
+letter, and (iii) the result is an English or Portuguese word or a fragment that the worked example's own joining practice could
+use, and the line with it substituted (P2a/P2b: `ate X o ministerio`; P2c: `ate X Y`) reads as a phrase. P2c additionally fails if
+either of its two tokens fails (i)-(iii). A fit is graded I and reported as a candidate only.
+
+Outcomes (fixed now): **token p2l2pos6 stays M in every outcome** (the lane brief: M unless a registered gate licenses a reading;
+this gate licenses none, it only narrows which alternatives stay live). If no Part II variant fits: "829011 as written: no Part II
+parse fits", the live alternatives are P0 (null) and 329011 "para"; the step is closed as run. If one or more fit: the fitting
+variant(s) are recorded beside "para" as competing I candidates; nothing in ciphertext.tsv, key.tsv or reading.txt changes either
+way. Pages fetched: at most 4 Part II page images plus the leaves needed to locate them (<= 12 archive.org requests, >= 1.5 s apart).
