@@ -99,3 +99,25 @@ cheapest runnable step (candidates in the file: 3853 f.381 decoded extract, 4833
 Kew copies 2962/3050/3502/3537/4152/4216). Then, if the box allows and that step is a single cheap read on images already on disk or one LAC
 reel image route already recorded in the file (<= 1 unit), run it with the folder's existing scripts; otherwise stop at the refreshed Verdict.
 gaps_check passes; rule 7 --check exit 0 if any reading file changed.
+
+## Wave 2 (spawned as wave-1 slots free, 17:3x UTC onward). Intake gate output (17:2x UTC) pasted per job.
+
+### R15-OLDUV -- na-oldenbarnevelt-2442-1605: the (n) u/v notation pass (Opus; cap 2.5, box 50 min)
+Intake: `na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md section 19 Verdict and "## While waiting": "(n) a u/v notation pass: one naming for the shared u/v shape across B/C1, applied to the
+reading and the judge input, before any further judge run (~$1.5)". (a'') waits on the owner's sorter: do not touch A/C2 sorter files.
+PREREG first: the single naming rule (which letter the shared shape is written as in the reading, how the judge input normalises u/v, both
+fixed before any score), and the control the re-judge uses (the same normalisation applied to the real-prose and shuffled-decode controls --
+CLAUDE.md rule 3 "normalize both to one convention"). Apply via the folder's existing decode/reading scripts (exceptions or a normalisation
+option, not hand edits); rule-7 --check exit 0; re-judge the four windows with the same corpus and controls as R14-OLDF2; report each window
+beside its previous score. Flag the reading change in ROOM for a verifier (do not edit AUDIT.md's classification yourself; a carry-over note
+naming the change is fine). Update the section Verdict / While waiting so (n) reads as done.
+
+### R15-MREVL -- maurice-rupert-1645: Evelyn's Memoirs pp.102-113 King-to-Nicholas letters, printed cipher numbers beside decipherments (Opus; cap 2.5, box 50 min)
+Intake: `maurice-rupert-1645: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md "## While waiting" (GAPS52, 3 Oct 2026): the 9119 key form cites "Evelyn's Memoirs", pp.102-113 (Charles I to Nicholas, Oct 1645).
+Identify the edition the form means (Bray's Memoirs of John Evelyn, the correspondence appendix, which edition/volume has those pages),
+locate it on Internet Archive (advancedsearch + `_djvu.txt`, no login), grep pp.102-113 for cipher numbers printed beside their meanings,
+and write each printed pair to keys/evelyn_pairs.tsv (number, meaning, page, edition, grade C from the print). Compare with key9119.tsv
+(agree / conflict / extends). Re-run keys/key_test.py only if coverage rises well above 35/93 as the line says; otherwise report the
+coverage and stop. Request counts per host. Report what was found and where it was not found.
