@@ -589,3 +589,41 @@ then inv. 980's 10 Feb copy to Van Dedem compared against R1469's length and for
 
 **Requests:** www.nationaalarchief.nl 1 (item page 1.02.20/996, HTTP 200); service.archief.nl 22 (IIIF /full/1000,/0/,
 all HTTP 200, >= 1.9 s apart, one at a time). Subagent calls: 0.
+
+## R9-ROELL8 (6 Oct 2026): NA 1.02.20 inv. 978, Testa's copies to Röell, early February 1809
+
+Worker R9-ROELL8 (account 2, for LANE LANE-RUN9-account-2), brief `.claude/briefs/runs/2026-10-06-account2-run9-jobs.md`,
+06:24-06:30 UTC by `date -u`. Page images read by eye (IIIF 1000 px openings, one 1400 px header crop), no subagent, no
+decoding. Status unchanged: `open`. Grade counts: H 0, C 0, S 0, M 0, I 0 (no reading). Per-scan log:
+`na10220/inv978_scans.tsv`; IIIF info URLs for all 362 scans: `na10220/inv978_iiif_info_urls.json`.
+
+**What inv. 978 is.** Item page `www.nationaalarchief.nl/onderzoeken/archief/1.02.20/invnr/978`, `availability: DIGITALIZED`,
+362 scans, "Brieven aan W.F. Roël, minister van Buitenlandse Zaken. Afschriften." Wrapper (scan 1): "1809-1810. A Son
+Excellence Monseigr. W.F. Roëll ... à Amsterdam, par Monsieur Gaspard Testa ... et par intervalle à S.E. Msgr Mollerus, Van
+Wickevoort Crommelin et Van der Heim". It is Testa's copy book of numbered despatches, in date order, every page in clear
+French and signed "(signé) Gaspd. Testa".
+
+**The early-February 1809 run (located by bisection: scans 1, 2, 6, 9-16, 30).**
+- No 5, 19 Jan 1809 (scans 9-10); No 6, 29 Jan 1809 (scans 11-12); **No 7, Constantinople 10 Février 1809 (scans 13-14,
+  header read at 1400 px)**; No 8, 25 Février 1809 (scans 15-16). The numbering runs straight on from No 6 to No 8 with no
+  gap and nothing between them, so the copy book holds **no despatch to Röell dated 9 Feb 1809**.
+- No 7 opens from Testa's No 5 of 19 Jan (the Dardanelles peace) and reports Adair's arrival at Pera, the Smyrna consulate,
+  Latour-Maubourg's courier to Napoleon of 16 Jan, American ships at Smyrna on 29 Jan and a sultana's birth on the 5th. Clear
+  French throughout; no cipher groups, no blank left for a cipher passage, no "en chiffre" note on scans 13-14.
+- So the "pli ci-joint pour S.E. le Ministre Röell" in Testa's 10 Feb cover to Van Hogendorp (inv. 996, R9-ROELL7) is most
+  likely No 7 of 10 Feb, dated the same day as the cover. Inference, not established: a copy book records text, not the
+  form in which the original went out, so it cannot show whether No 7 left in cipher. Its length (about three pages of copy)
+  and its "Monseigneur" address do not match R1469 (a 7-page "Monsieur" letter dated 9 Feb).
+
+**Not found.** No cipher, key or clear copy of R1469/R1470 in the scans read; no 9 Feb 1809 item. Not read: scans 3-5, 7-8
+(Nos 1-4, early-mid January) and 17-29, 31-362 (March 1809 onwards, outside the brief's window).
+
+**Verdict line:** `open` -- inv. 978 holds no 9 Feb 1809 despatch to Röell (No 6 of 29 Jan runs straight on to No 7 of
+10 Feb and No 8 of 25 Feb, all in clear copy), so the Röell enclosure of 10 Feb is most likely No 7, not R1469. Both plis of
+the 10 Feb cover are now matched to clear 10 Feb copies (inv. 978 No 7; inv. 980, per Bourdeau's read). That points R1469
+away from Testa as the writer to either addressee. Cheapest next: inv. 980's 10 Feb copy to Van Dedem compared against
+R1469's length and form (one or two scans, ~USD 0.5), then whether R1469 is an incoming letter *to* the legation (from Van
+Dedem or the ministry) rather than an outgoing one.
+
+**Requests:** www.nationaalarchief.nl 1 (item page 1.02.20/978, HTTP 200); service.archief.nl 13 (IIIF, 12 openings at
+1000 px + 1 header crop, all HTTP 200, >= 1.9 s apart, one at a time). Subagent calls: 0.
