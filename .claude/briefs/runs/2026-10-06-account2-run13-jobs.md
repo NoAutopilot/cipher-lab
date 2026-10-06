@@ -130,3 +130,47 @@ Intake: `rayburn-2004: open (line 1) -- edition/page or full-text-search citatio
 NOTES.md's retry row (R11-RAYWB, CDX reset twice): one CDX query for schneier.com/blog/archives/2006/01/handwritten_rea.html, one retry
 after a pause at most; if a capture exists, fetch the earliest with the `if_` suffix and compare its image to the one on disk as the
 NOTES step describes. Log the result; if the host blocks again, mark the step [retired-for-host] with the date and stop.
+
+## Wave 2b (spawned 13:4x UTC 6 Oct). Intake gate output (13:4x UTC) pasted per job.
+
+### R13-SUR702 -- na-suriname-map-1781: inv. 373 scan 0702 glossed cipher, transcribe and align (Opus; cap 5.5, box 90 min)
+Intake: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+R13-SURSWP4 found glossed cipher (heavy cipher lines, lighter interlinear plain Dutch above) at scans 0702 (two pages), 0730, 0746, 0758.
+Do 0702 only, by the R10-SUR693 method (its section and passes/inv373_0693_r10/ files): fetch 0702 at ~2000 px once, crop one
+gloss+cipher pair per crop with tools/iiif_lines.py (paste the command), PREREG committed first (the R10-SURV lesson: PREREG must
+predate scoring in its own commit), one blind Sonnet pass on the crops (no values given) + your reconciliation with the gloss in view,
+then align sign-for-letter and test against the map key / the 0693 alignment: per-sign agreement with the existing sign table vs a
+shuffled-gloss control that can vary. Report both numbers; add a conflicts.tsv row for any rule-4 conflict (e.g. y = d vs m|n). If time
+remains under 80% of both, note what 0730/0746/0758 hold (page count, line count) for the next job; do not transcribe them.
+Units: 1 Sonnet pass per page (2) + 1 reconciliation + 1 scoring = 4 x ~1.2.
+
+### R13-MALS -- malsburg-hessen-1636: three clear-page direct reads (Opus; cap 5, box 80 min)
+Intake: `malsburg-hessen-1636: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NOTES.md Verdict cheapest next: the three clear-page direct reads -- f.12 "cifrat cela" passage (second hand, letters + digits) and f.12
+L39-L43, the f.14 second-hand foot passage, the f.16 right-hand name/docket list -- ~$4.5. Images are on disk (images/hstam_4_h_1411_00NN.jpg,
+crops/00NN/manifest.json). Crop step pasted; one blind Sonnet pass per passage (3 units) + one reconciliation unit. Record any code paired
+with a meaning (that is what the clear-pages rung looks for) in cribs.tsv with grade, and say for each passage whether it pairs a code
+with its meaning. Do not run key_crossmatch (the next step after this one).
+
+### R13-ROYPREM -- intercepted-royalist-1646: Premise check (Opus; cap 2, box 45 min)
+Intake: `intercepted-royalist-1646: partial (line 4) passes the citation and web/blog checks but has no '## Premise check' section ...`
+Run the adversarial Premise check of .claude/briefs/check-solved.md (decipherments the folder already mentions opened, other solvers'
+working files, neighbouring leaves, recipient-side editions -- Evelyn's printed correspondence pp.178-179 is in the folder) and write
+"## Premise check (R13-ROYPREM, 6 Oct 2026)". Re-run the intake gate and paste it. Do not run the crib loop (the step after this).
+
+### R13-RJM34LA -- rah-juan-manuel-1521: look-alike pass on f.34's split tokens and a decode rerun (Opus; cap 3, box 60 min)
+Intake: `rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+Remaining gaps (R12-RJM9501), first gap: `tools/lookalike_pass.py` on the 220 split tokens of ciphertext_f34_reconciled.tsv, an eye check of
+the 101 out-of-table groups (y/g/rob/ez) against the crops, then the decode rerun (decode9501 --check) and the two judge calls with the
+shuffled-order control over >= 5 seeds (R13-RJMV's AUDIT note has the 20-seed method). The 2-of-3 residual is agreement, not error
+(CLAUDE.md Usage 6). Grades stay within R12-RJMV's licence (S only for A Z R 4 F). Unsettled tiles go to sorter/focus.tsv (no rebuild).
+Flag the reading change for a verifier. Do not touch R9526 files.
+
+### R13-LVNFIX -- lodewijk-van-nassau-1573-74: apply R12-LVNV's two overturns and look at R13-LVNV's two doubtful rows (Opus; cap 2, box 40 min)
+Intake: `lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+AUDIT.md "R13-LVNV": R12-LVNV's two overturns (p1_L16/19 91->81 M, p1_L17/15 'hollande' H->M) are still unapplied (audited figure
+2357/4047, 58.2%), and the eye check found 2 doubtful uncontested H rows (p1_L07/8 17|13, p1_L16/4 85 leaning 35). Apply the two
+overturns through lvn16/corrections file + apply.py (as R12-LVN16C did), look at the two doubtful rows on the 300-dpi crops and regrade
+them M if the image does not settle them (no value change without an image read), decode --check exit 0, flag for a verifier.
+
+### R13-CATOKLM -- see wave 2 above (spawned in wave 2b).
