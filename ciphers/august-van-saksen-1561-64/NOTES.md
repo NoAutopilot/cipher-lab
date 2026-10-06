@@ -915,7 +915,7 @@ key, which the tool's --out does not). Outputs in `avsk/`.
 
 ## R11A-AVS9C: settle_53.py rule-7 fix; count-2 control for sign 9 FAILs, 9 stays M (6 Oct 2026, worker R11A-AVS9C, account 1, LANE-RUN11-account-1)
 
-15:37-15:50 UTC by `date -u`. Brief: `.claude/briefs/runs/2026-10-06-account1-run11-jobs.md`, job R11A-AVS9C.
+15:37-15:46 UTC by `date -u`. Brief: `.claude/briefs/runs/2026-10-06-account1-run11-jobs.md`, job R11A-AVS9C.
 - (1) Rule 7: `settle_53.py --check` exited 1 (R11A-AVSV) because it built S1's 10 p1 lines from recon53 while
   `ciphertext_53_s1.tsv` also holds F1's 82 f.266v rows (24 Sept 2026, one hand reading, no pass files). F1's rows moved
   verbatim into `f1_p2_53.tsv`, which settle_53.py now appends as a recorded input (header says so); `--check` exit 0. Every
