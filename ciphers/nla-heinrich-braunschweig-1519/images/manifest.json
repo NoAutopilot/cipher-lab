@@ -1,0 +1,113 @@
+{
+ "source": "Arcinsys Niedersachsen Nutzungsdigitalisat, free viewer, no login",
+ "viewers": {
+  "548": "https://www.arcinsys.niedersachsen.de/arcinsys/digitalMediaViewer.action?archivalDescriptionId=4764730",
+  "562": "https://www.arcinsys.niedersachsen.de/arcinsys/digitalMediaViewer.action?archivalDescriptionId=4765000"
+ },
+ "images": [
+  {
+   "file": "nla_bu_l1_548_aufn_0001.jpg",
+   "url": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._548/m_bu_l_1_nr._548_aufn_0001.jpg",
+   "shelfmark": "NLA BU, L 1, Nr. 548",
+   "image": 1,
+   "bytes": 1715020,
+   "width": 3276,
+   "height": 2975,
+   "mode": "L",
+   "sha1": "a7701ba26f35b35787196a8440704f0d101e4fbe",
+   "fetched": "2026-10-06 04:06 UTC",
+   "by": "R8-NLA2"
+  },
+  {
+   "file": "nla_bu_l1_548_aufn_0002.jpg",
+   "url": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._548/m_bu_l_1_nr._548_aufn_0002.jpg",
+   "shelfmark": "NLA BU, L 1, Nr. 548",
+   "image": 2,
+   "bytes": 1762286,
+   "width": 3276,
+   "height": 3007,
+   "mode": "RGB",
+   "sha1": "5e86f7fbebaccb23ed032446bc8b23334374bec1",
+   "fetched": "2026-10-06 04:06 UTC",
+   "by": "R8-NLA2"
+  },
+  {
+   "file": "nla_bu_l1_548_aufn_0003.jpg",
+   "url": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._548/m_bu_l_1_nr._548_aufn_0003.jpg",
+   "shelfmark": "NLA BU, L 1, Nr. 548",
+   "image": 3,
+   "bytes": 1854543,
+   "width": 3276,
+   "height": 2991,
+   "mode": "RGB",
+   "sha1": "4d0a1c6dcb9aba3cdafe8a2b114480fb6bc63a7d",
+   "fetched": "2026-10-06 04:06 UTC",
+   "by": "R8-NLA2"
+  },
+  {
+   "file": "nla_bu_l1_548_aufn_0004.jpg",
+   "url": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._548/m_bu_l_1_nr._548_aufn_0004.jpg",
+   "shelfmark": "NLA BU, L 1, Nr. 548",
+   "image": 4,
+   "bytes": 1781037,
+   "width": 3276,
+   "height": 2991,
+   "mode": "RGB",
+   "sha1": "62bf73f7e97772d301c1abb7af8abe87e6344e7d",
+   "fetched": "2026-10-06 04:06 UTC",
+   "by": "R8-NLA2"
+  },
+  {
+   "file": "nla_bu_l1_562_aufn_0001.jpg",
+   "url": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._562/m_bu_l_1_nr._562_aufn_0001.jpg",
+   "shelfmark": "NLA BU, L 1, Nr. 562",
+   "image": 1,
+   "bytes": 1998821,
+   "width": 3276,
+   "height": 3007,
+   "mode": "RGB",
+   "sha1": "5c5041da1fd4c3bdaa2f3f3e530a1ede81a309b7",
+   "fetched": "2026-10-06 04:06 UTC",
+   "by": "R8-NLA2"
+  },
+  {
+   "file": "nla_bu_l1_562_aufn_0002.jpg",
+   "url": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._562/m_bu_l_1_nr._562_aufn_0002.jpg",
+   "shelfmark": "NLA BU, L 1, Nr. 562",
+   "image": 2,
+   "bytes": 1882622,
+   "width": 3276,
+   "height": 3007,
+   "mode": "RGB",
+   "sha1": "a9e2ccc8f208bc509905d418f12c8d35f490fba2",
+   "fetched": "2026-10-06 04:06 UTC",
+   "by": "R8-NLA2"
+  },
+  {
+   "file": "nla_bu_l1_562_aufn_0003.jpg",
+   "url": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._562/m_bu_l_1_nr._562_aufn_0003.jpg",
+   "shelfmark": "NLA BU, L 1, Nr. 562",
+   "image": 3,
+   "bytes": 1719527,
+   "width": 3276,
+   "height": 3007,
+   "mode": "RGB",
+   "sha1": "aacf5173c8014f78facaeae36fee11167080c726",
+   "fetched": "2026-10-06 04:06 UTC",
+   "by": "R8-NLA2"
+  },
+  {
+   "file": "nla_bu_l1_562_aufn_0004.jpg",
+   "url": "https://www.arcinsys-digitalisate.niedersachsen.de/nla_bu/l_1/nr._562/m_bu_l_1_nr._562_aufn_0004.jpg",
+   "shelfmark": "NLA BU, L 1, Nr. 562",
+   "image": 4,
+   "bytes": 1559288,
+   "width": 3276,
+   "height": 3007,
+   "mode": "RGB",
+   "sha1": "41d77fca2f83b4df7ad1136af746cc15537db364",
+   "fetched": "2026-10-06 04:06 UTC",
+   "by": "R8-NLA2"
+  }
+ ]
+}
