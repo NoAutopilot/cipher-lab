@@ -412,12 +412,12 @@ Worker R7B-BAL103R (account 1, LANE LANE-RUN7-account-1), 02:06-02:1x UTC 6 Oct 
 - **Sibling calibration: not run** (brief: only if >= 40% of cap remained; $3.65 of $5 spent after the settlement).
 Where not found: no plaintext of f.50 used; sibling decipherments not opened. Requests: none (all from disk).
 
-## Remaining gaps (R7B-BAL103R, 6 Oct 2026)
+### Gaps as of R7B-BAL103R, 6 Oct 2026 (superseded by R7C-BAL103K below)
 Read so far: unmeasured as a reading -- 451 of 630 draft tokens graded H (conditional), judge fr17 FAIL -1.554 vs real_p05 -0.852; no stretch verified
 - Tomokiyo table calibration - blocker: not-attempted; the table's sign names, cell values and the ambiguous 9 (i/r/s) and 3 (h/x) were never tested on a deciphered sibling, and the crop settlement (R7B-BAL103R) moved the judge only 0.04, so the table is now the main suspect; next: transcribe 3-4 lines of f.171 (or f.189) with its period decipherment from Gallica btv1b9001389d, pre-register the cell-by-cell test, check the table, ~$3
 - 103 settled-M columns (weak by-eye leans, no zoom) - blocker: not-attempted; worth doing only once the table is calibrated; next: only after calibration, a zoomed re-look at the columns whose two candidate signs decode to different letters, ~$2
 
-## Escalation (R7B-BAL103R, 6 Oct 2026)
+### Escalation as of R7B-BAL103R, 6 Oct 2026 (superseded by R7C-BAL103K below)
 - [ ] siblings: f.171, f.189, f.200, f.230 carry period decipherments (Tomokiyo; DECODE R2743-R2746); planned: calibrate the table on a few lines of one of them (next job)
 - [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
 - [x] known-keys: Tomokiyo's 1644 table applied to the two-pass draft (R7A-BAL103) and to the crop-settled text (R7B-BAL103R, 6 Oct 2026); judge fr17 FAIL -1.595 then -1.554
@@ -426,3 +426,59 @@ Read so far: unmeasured as a reading -- 451 of 630 draft tokens graded H (condit
 - [x] image-check: 142 columns settled from the crops (R7B-BAL103R, 6 Oct 2026): 36 H, 103 M, 3 dropped
 - [x] retry: decode_key --check and fr17 re-judge after settlement (R7B-BAL103R, 6 Oct 2026)
 Verdict: keep going: 2 internal gaps; cheapest next: calibrate Tomokiyo's table on 3-4 lines of a deciphered sibling (f.171 or f.189), pre-registered, ~$3
+
+## Sibling calibration of Tomokiyo's table on f.171r (R7C-BAL103K, 6 Oct 2026)
+
+Worker R7C-BAL103K (account 1, LANE LANE-RUN7-account-1), 02:24-02:3x UTC 6 Oct 2026 by `date -u`. Key source: published (Tomokiyo).
+Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **Sibling located.** Gallica btv1b9001389d canvas 366 = f.171r, cipher headed "Du premier septembre 1644 a Paris" (foliation
+  171 by eye); canvas 368 = f.172r, the period decipherment headed "Du 1er de Sepbre 1644 a Paris" (foliated 172). DECODE R2743
+  lists the letter as f.171-173. (Canvas offset here: f.N recto = canvas 2N+24; it differs near f.50, where f.50r = canvas 111.)
+- **Pre-registered** in `calib/PREREG.md`, pushed (727d9ac78) before the decipherment was read closely (its first two lines had
+  been seen once at 600 px while identifying the canvases; disclosed there).
+- **Blind pass:** f.171r lines 1-4, line crops by `tools/iiif_lines.py --ark btv1b9001389d --canvas 366 --region
+  900,1700,3250,1020` (overlay checked), one Sonnet pass with the f.50 pass instructions, crops and key sheet only, never the
+  decipherment: `calib/f171r_passA.tsv` (94 tokens after removing overlaps). No reconciliation pass (not needed for the gate).
+- **Decipherment as read** (`calib/f172r_decipherment.txt`, struck words omitted): "On a advis icy, que ceux qui apres la prise de
+  Lerida ont publie quil en falloit imputer la perte au peu de soing que on a pris de deca de faire passer les recreues de bonne
+  heure en Catalogne ...".
+- **Result** (`calib/calib.py`, `--check` exits 0; `calib/result.tsv`, `calib/sign_table.tsv`): decoded letters 90; **A = 0.767**
+  against 200 sign->letter permutations mean 0.264, p95 0.300, **p99 0.311**; wrong-span null 0.333. **Gate PASS** (A >= 0.60 and
+  > p99). Decoded string: "naddpsicequedelxcapreilqrlsedelontpugliectencltollimputerlaqerteupeudeioiogqueonqrisdedeca" against
+  "onaaduisicyqueceuxquiapreslaprisedeleridaontpubliequilenfalloitimputerlaperteaupeudesoingqueonaprisdedeca...". The
+  word codes =11 que read right on all 2 aligned occurrences. So Tomokiyo's table, with this folder's sign names, reads a
+  deciphered sibling of the same correspondence from a single blind pass.
+- **Licensed key change (registered rule: n >= 2, every aligned letter the same and different from key.tsv): one.** Sign `c`
+  (cell q2) aligned p on 3/3 (in "apres", "perte", "pris"): `key.tsv` and `key_decode.tsv` now give c = p, with the source note.
+  Caveat for the next reader: `tau` (drawn "small c with bar") is p in the table, so this may be the pass naming an unbarred tau
+  `c` rather than a wrong cell; either way the transcribed name `c` reads p on this hand. No other sign met the rule. Descriptive
+  (no change licensed): the ambiguous 9 aligned s, s, i (3 occurrences); 6 aligned t, l, l, t; q2 i, i, l; mm i, p, p; 12 c, i, i,
+  c; y b, g -- these are the shapes the single pass is least sure of, and the same names recur on f.50.
+- **f.50 re-decode** (`tools/decode_key.py . --check`: reading up to date): tokens 630, H 451, M 165, U 14 (unchanged counts; 3
+  `c` tokens now read p). **Judge** (`tx/r7b/judge_input.py reading_tokens.tsv > calib/judge_after_calib.txt`, corpus fr17):
+
+      FAIL language: score=-1.537, null_p99=-1.872, real_p05=-0.852, real_median=-0.783, mode=both, N=655
+      FAIL - baluze103-letellier-marca-1644 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+  -1.554 -> -1.537. What this settles: the table is not what holds the f.50 draft back -- one blind pass of the sibling reads
+  76.7% through it, while the f.50 draft (two passes + settlement) does not read. The remaining suspects are the f.50
+  transcription itself (sign naming on that hand and page; 103 settled-M columns) or a different table on f.50 (April, the
+  others September; Tomokiyo groups them April-October but names f.50 undeciphered). Neither is tested here.
+Where not found: no plaintext of f.50 used or consulted; only f.171r L1-4 and f.172r L1-7 of the siblings were read.
+Requests: gallica.bnf.fr 11 (8 small canvas views to find the sibling, 2 IIIF regions for crops -- the first cut too short and redone -- and 1 region of f.172r), >= 2 s apart.
+
+## Remaining gaps (R7C-BAL103K, 6 Oct 2026)
+Read so far: unmeasured as a reading on f.50 -- the draft's 451/630 H tokens still FAIL fr17 (-1.537 vs real_p05 -0.852); the table itself reads the sibling f.171r at 76.7% (calib/result.tsv)
+- f.50 transcription vs table mismatch - blocker: not-attempted; the sibling calibration PASSed, so the draft's failure sits in the f.50 transcription or in a different April table; next: decode each f.50 blind pass separately and run a per-line known-word test (=11 que, =32 Barcelone contexts) plus a letter-frequency comparison against the sibling's decoded frequencies, to decide transcription vs table, ~$2
+- 103 settled-M columns (weak by-eye leans, no zoom) - blocker: not-attempted; the table is now calibrated, so this is unblocked; next: a zoomed re-look at the columns whose candidate signs decode to different letters, using calib/sign_table.tsv's confusion pairs (6/l, q2/i, mm/i, 12/i), ~$2
+
+## Escalation (R7C-BAL103K, 6 Oct 2026)
+- [x] siblings: f.171r L1-4 transcribed blind and scored against the f.172r period decipherment (R7C-BAL103K, 6 Oct 2026): A 0.767 vs permutation p99 0.311, gate PASS
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's table applied to f.50 (R7A/R7B) and calibrated on f.171r with one licensed change, c = p (R7C-BAL103K, 6 Oct 2026); f.50 judge fr17 FAIL -1.537
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [ ] key-rebuild: the table reads the sibling, so a rebuild applies only if f.50 proves to use a different April table; planned after the transcription-vs-table test
+- [ ] image-check: 103 settled-M columns remain weak; planned: zoomed re-look guided by the sibling's confusion pairs
+- [x] retry: decode_key --check and fr17 re-judge after the calibrated key change (R7C-BAL103K, 6 Oct 2026)
+Verdict: keep going: 2 internal gaps; cheapest next: decode each f.50 blind pass separately and test transcription vs table (known-word contexts, letter frequency against the sibling), ~$2

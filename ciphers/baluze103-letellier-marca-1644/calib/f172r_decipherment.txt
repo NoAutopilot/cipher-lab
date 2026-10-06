@@ -1,0 +1,9 @@
+# Period decipherment, f.172r (Gallica btv1b9001389d canvas 368), opening lines as read by R7C-BAL103K (6 Oct 2026) from
+# calib/images/f368_top.jpg; struck words omitted ("que se fait" struck in line 2). Read after calib/PREREG.md was pushed (727d9ac78).
+On a advis icy, que ceux qui apres la
+prise de Lerida ont publie quil en
+falloit imputer la perte au
+peu de soing que on a pris de deca
+de faire passer les recreues de
+bonne heure en Catalogne, et a ce que lon a
+retarde le passage du renfort qui

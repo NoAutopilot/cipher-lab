@@ -55,7 +55,7 @@ H	o	o4	H with loop
 23	p	p1	numeral 23	
 mm	p	p2	mm	
 tau	p	p3	tau / small c with bar	
-c	q	q2	c	
+c	p	q2	c	calib: value changed q->p by R7C-BAL103K f.171r calibration (6 Oct 2026; 3/3 aligned p, calib/sign_table.tsv)
 9	r	r1	9 (circled)	circ
 z	r	r2	z with tail	
 f	r	r3	f	

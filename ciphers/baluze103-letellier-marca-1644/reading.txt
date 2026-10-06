@@ -2,12 +2,12 @@
 # Draft: two blind passes + crop settlement (R7B-BAL103R); weak settlements and the ambiguous 9 (i|r|s), 3 (h|x) stay M. tokens 630: H 451, C 0, S 0, M 165, I 0, U 14 (U = sign not in the table)
 f50r L01	[=19] e i c o n i e i l t e i s d e t a
 f50r L02	b c r a e l o n g e a e a n t s p h d
-f50r L03	s o n g d e [81] p i e q c r e r u n t
+f50r L03	s o n g d e [81] p i e p c r e r u n t
 f50r L04	a a c e m c r a a o n l e i t e o
 f50r L05	c e c h o i s t r a a m c s i o n d i o
 f50r L06	c m i i t c e [=y] [=3] qui a e i l s m e p
 f50r L07	u a o a e a o s e n i e s l i e i s
-f50r L08	q o n a l u e l t e m e o t d e l d u t c e
+f50r L08	p o n a l u e l t e m e o t d e l d u t c e
 f50r L09	que l e d i t i b e u d m c i r d a f e
 f50r L10	o u d i i a d e a e que c o n t s e g d
 f50r L11	t e i d e i u e i n h e i que s l d e e e
@@ -15,7 +15,7 @@ f50r L12	d e l c d o u i o u que s t y e n i o [2] i
 f50r L13	d o n l c e i t i m e d e u f [q] r t s g d o r x
 f50r L14	t e d [q] t i a c i a c a c f i n que i l
 f50r L15	u i e n o e g a o d e e n g e i e t c
-f50r L16	p a s q e o d e i l u c c e i u a i o o
+f50r L16	p a s p e o d e i l u c c e i u a i o o
 f50r L17	c e l u [2] qui f a i t b a e a f f c s
 f50r L18	d e Barcelone s e i t p t c i n d u l u i [q] e
 f50r L19	c o i s d e a e que o n o u u i e c [=3]

@@ -1,0 +1,8 @@
+N_signs	94
+N_decoded_letters	90
+A	0.767
+perm_mean	0.264
+perm_p95	0.300
+perm_p99	0.311
+wrong_span_A	0.333
+gate	PASS
