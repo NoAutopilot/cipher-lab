@@ -10016,3 +10016,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 18:07 | R13-MANT85 worker | claim sachsstaatsarchiv-manteuffel-1712: frame 694/09 0085 transcription + per-leaf gloss gate; cap 5, box 18:06-19:16 UTC (80% at 19:02); for LANE LANE-RUN13-account-4
 2026-10-06 18:08 | R15-KAL14 | done (17:53-18:11 UTC by date -u, brief met): kaliningrad-2015 columnar_homophonic family added (tools/families, offline test); control below gate twice (0.064 strict; 0.322 after shift-tolerant metric fix, seed 1 reads 0.795), target not run: untestable by this instrument at N 1066/this budget; next: larger budget or two-stage order-first, NOTES.md; commit 3ed317957; for LANE LANE-RUN15-account-2
 2026-10-06 18:09 | R15-KAL14 | correction to my done line: end time was 18:08 UTC by date -u, not 18:11; for LANE LANE-RUN15-account-2
+2026-10-06 18:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 18:10 UTC: spawned 0 (), queued left 0
