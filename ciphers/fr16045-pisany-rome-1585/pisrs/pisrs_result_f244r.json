@@ -1,0 +1,109 @@
+{
+ "err": 0.284,
+ "picks": {
+  "L03 i25": "T45",
+  "L03 i35": "T36",
+  "L06 i15": "T36",
+  "L07 i28": "T36",
+  "L09 i30": "T36"
+ },
+ "old": {
+  "tx86/ciphertext_f244r.tsv": {
+   "tokens": 410,
+   "dropped": 17,
+   "decoded_letters": 449,
+   "score": 0.6771,
+   "keyshuffle_p99": 0.3517,
+   "order_p99": 0.4254,
+   "above_both": true
+  },
+  "tx86/passA.tsv": {
+   "tokens": 366,
+   "dropped": 52,
+   "decoded_letters": 412,
+   "score": 0.6869,
+   "keyshuffle_p99": 0.3664,
+   "order_p99": 0.4539,
+   "above_both": true
+  },
+  "tx86/passB.tsv": {
+   "tokens": 394,
+   "dropped": 0,
+   "decoded_letters": 433,
+   "score": 0.7021,
+   "keyshuffle_p99": 0.35,
+   "order_p99": 0.4342,
+   "above_both": true
+  }
+ },
+ "new": {
+  "pisrs/tx_relabel/tx86_ciphertext_f244r.tsv": {
+   "tokens": 410,
+   "dropped": 17,
+   "decoded_letters": 449,
+   "score": 0.6793,
+   "keyshuffle_p99": 0.3508,
+   "order_p99": 0.4276,
+   "above_both": true
+  }
+ },
+ "positive_control": {
+  "seeds": [
+   {
+    "seed": 0,
+    "N": 454,
+    "score": 0.6027,
+    "keyshuffle_p99": 0.3105,
+    "order_p99": 0.3689,
+    "pass": true
+   },
+   {
+    "seed": 1,
+    "N": 454,
+    "score": 0.6219,
+    "keyshuffle_p99": 0.3101,
+    "order_p99": 0.3763,
+    "pass": true
+   },
+   {
+    "seed": 2,
+    "N": 454,
+    "score": 0.6369,
+    "keyshuffle_p99": 0.3101,
+    "order_p99": 0.3869,
+    "pass": true
+   },
+   {
+    "seed": 3,
+    "N": 454,
+    "score": 0.5912,
+    "keyshuffle_p99": 0.3086,
+    "order_p99": 0.3767,
+    "pass": true
+   },
+   {
+    "seed": 4,
+    "N": 454,
+    "score": 0.5572,
+    "keyshuffle_p99": 0.303,
+    "order_p99": 0.3656,
+    "pass": true
+   }
+  ],
+  "passed": 5,
+  "pass": true
+ },
+ "supported": true,
+ "random_relabel_null": {
+  "n": 200,
+  "mean": 0.6796,
+  "p95": 0.6815,
+  "max": 0.6815,
+  "share_ge_settled": 0.29
+ },
+ "identical": {
+  "tokens_with_new_label": 6,
+  "identical": 0,
+  "note": "counts all tokens now carrying the new label, incl. ones that already had it"
+ }
+}

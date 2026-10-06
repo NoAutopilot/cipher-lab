@@ -884,6 +884,29 @@ PREREG pis2/PREREG_pis2.md pushed (947d23ea5) before the blind replies were open
 Report: found -- 9 of 23 T31-labelled tokens settle to another table cell by shape (8 T36, 1 T45), none to the T31 cell; on f.244r the T36 shape conflicts with the copy's o. Not found -- any token settled as the table's bare x (T31/T47); the f.244r L09 i26 token on the strip.
 Requests: none (disk only). Subagent calls: 2 Sonnet.
 
+## D4-PISRS (6 Oct 2026)
+Brief: .claude/briefs/runs/2026-10-06-account4-default-1235-jobs.md "D4-PISRS" (LANE DEFAULT-account-4-20261006-1235, account 4), 12:42-13:2x UTC by date -u, stopped at cap. Step still undone (R9-PIS2 named it). Disk only.
+- PREREG addendum pisrs/PREREG_pisrs.md pushed (fd9a25ab8) before any score: PIS1-KEY (a) unchanged (scripts imported unchanged via pis1key.py, seeds, nulls
+  1000/1000, err 0.284 / 0.215, copies, controls, gate) except that only the 9 SETTLED tokens of pis2/t31_tokens.tsv are relabelled, reconciled files only:
+  f.244r L03 i25 -> T45; L03 i35, L06 i15, L07 i28, L09 i30 -> T36; f.275r L04 i39, L09 i3, L12 i5, L14 i28 -> T36. Run: `python3 pisrs/pisrs.py f244r` and
+  `python3 pisrs/pisrs.py f275r` (pages in parallel; the first full run crashed on the script's own context sanity check before any f.275r score; fixed, re-run).
+- Old numbers reproduce PIS1-KEY2 / RUN6-PIS exactly (f.244r 0.6771 / blind A 0.6869 / blind B 0.7021; f.275r 0.6471 / 0.6308 / 0.659).
+
+| page (arm A, key86 unchanged) | old reconciled | 9-token relabel | key-shuffle p99 | order p99 | all-T31 relabel (PIS1-KEY) | random 9-token relabel null (200): mean / p95 / share >= ours |
+|---|---|---|---|---|---|---|
+| f.244r (err 0.284) | 0.6771 | **0.6793** | 0.351 | 0.428 | 0.695 | 0.6796 / 0.6815 / 0.29 |
+| f.275r (err 0.215) | 0.6471 | **0.6527** | 0.466 | 0.495 | 0.657 | not run (killed at cap) |
+
+- **Gate (unchanged from PIS1-KEY (a)): SUPPORTED on both pages**: the reconciled score rises and stays above both p99s. Positive controls: f.244r 5/5
+  (kp86.py's); f.275r not finished: the run was killed at the cap after the gating scores (the control uses the unchanged key and does not depend on the relabel; kp86e and RUN6-PIS ran it 5/5 at e=0.215) (kp86d.control, which does not depend on the relabel).
+- Descriptive, read with the gate: on f.244r the settled tokens move the score no more than 9 arbitrary T31 tokens given the same labels (ours 0.6793 sits at
+  the random-relabel mean; 29% of draws reach it), and less than relabelling all eleven (0.695), so the rise there is not specific to the shape-settled tokens.
+  identical() (tokens now carrying T36 whose decoded letter lands on the same copy letter): f.244r 0 of 6, consistent with R9-PIS2's rule-4 conflict
+  (T36 shape = table s, copy o at these places); f.275r: not run. To resume the f.275r control, null and identical(), run `python3 pisrs/pisrs.py f275r` (~25 min; it rewrites pisrs/pisrs_result_f275r.json and, with f.244r present, pisrs_result.json).
+- As pre-registered: key86.tsv unchanged; committed tx86/tx86e unchanged; readings and grades unchanged; every T31 token stays M. No decode --check needed.
+Report: found -- the 9-token relabel clears the unchanged gate on both pages (f.244r +0.002, f.275r +0.006). Not found -- a gain on f.244r larger than
+arbitrary T31 relabels give. Requests: none (disk only). Subagent calls: 0.
+
 ## Remaining gaps (RUN6-PIS, 5 Oct 2026; merges PIS1-KEY2's list; RUN6-PISFIN updates the f.275v B 12-15 row)
 Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.245r and (second letter) f.247r (kp86g, err 0.268, C 236 / M 122); 4 Nov 1586 f.275r and f.275v lines 1-16; 24 Mar 1587 f.301v and f.302v: 8 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST.
 - key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
@@ -893,7 +916,7 @@ Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.
 - 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; outside this brief; next: same per-line pipeline page by page, ~$12 per dense page
 - f.275v period decipherment (head of page and left margin, second hand, beside both cipher blocks) as a second witness - blocker: not-attempted; outside this brief; next: read the gloss at native resolution, normalise to one convention with the copy (rule 3 PX-BRODEC), score agreement, ~$2
 - 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
-- key86 T31 cell: relabel SUPPORTED on f.244r and f.275r (reconciled), but key86 m stands and every T31 token stays M - blocker: not-attempted; the per-token crop compare ran (R9-PIS2, 6 Oct 2026): 9 of 23 settle by shape (8 T36, 1 T45; pis2/t31_tokens.tsv), none to the T31 cell, and the f.244r T36 shape conflicts with the copy's o (rule 4); next: relabel only the 9 settled tokens in copies of tx86/tx86e (pre-registered as PIS1-KEY (a)) and re-run kp86/kp86e arm A, disk only, ~$1
+- key86 T31 cell: relabel SUPPORTED on f.244r and f.275r (reconciled), all-T31 (PIS1-KEY) and 9-settled-token (D4-PISRS, 6 Oct 2026: f.244r 0.677 -> 0.679, f.275r 0.647 -> 0.653, gate unchanged), but key86 m stands and every T31 token stays M - blocker: not-attempted; on f.244r the 9-token gain is no larger than random T31 relabels give, and the T36 shape conflicts with the copy's o (rule 4); next: commit the 4 f.275r T36 labels (shape and copy both s) into tx86e with the downstream regeneration (kp86e/t31_grades.py, reading, decode_key --check) as its own pre-registered job, f.244r left M pending the conflict, disk only, ~$1.5
 - key86 T45/T47/T49/T57 cells - blocker: not-attempted; held-out remap joint gate FAILed (G3 on f.301v: the all-e degenerate remap also beats arm A), so nw_score coordinate-ascent remapping (pis1key.py remap) is retired for this hypothesis (rule 3); a different instrument is open; next: per-token crop compare of the T45/T47/T57 tokens on f.275r/f.301v/f.302v against the table cells, disk only, ~$2
 - Versos not viewed (July-Aug 1585 St-Goard letters, Feb/July 1586, 22 Sept, 6-7 Oct 1586, letters to Villeroy) - blocker: not-attempted; outside this brief; next: about 40 more 360 px fills with the fill loop in images/manifest_pis1inv.tsv's URL pattern, ~$1
 - 1585 letters (9) - blocker: not-attempted; f.75 NON-TEST at err 0.43; next: grow key86 on the job-2 letters, then decode with the grown key and the 1585 table side by side, ~$5 per page
@@ -906,7 +929,7 @@ Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.
 - [x] clear-pages: f.247r mapped (9 cipher lines, then clear "Nous sommes prests ...", closing, date 17 Sept 1586)
 - [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.247r, f.275r, f.275v, f.301v, f.302v; 1585 table NON-TEST on f.75
 - [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
-- [ ] key-rebuild: T31 relabel SUPPORTED in aggregate; per-token compare 9 of 23 settled (R9-PIS2), re-score of the 9 open; T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 image compare open
+- [ ] key-rebuild: T31 relabel SUPPORTED in aggregate; per-token compare 9 of 23 settled (R9-PIS2); 9-token re-score SUPPORTED on both pages (D4-PISRS), commit of the 4 f.275r labels open; T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 image compare open
 - [x] image-check: f.247r cut one line per band, three bands re-cut fixed-y, montage checked
 - [ ] retry: f.246r/f.246v (crop commands above); f.275v B 12-15 (kp86d retired; gloss read R8-PIS, 13 C; gl275 conflict compares R9-PIS, none settled); f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
-Verdict: keep going: 14 internal gaps; cheapest next: re-score kp86/kp86e arm A with only R9-PIS2's 9 settled T31 tokens relabelled (pis2/t31_tokens.tsv), disk only, ~$1; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
+Verdict: keep going: 14 internal gaps; cheapest next: commit the 4 f.275r shape-settled T36 labels into tx86e with the downstream regeneration (D4-PISRS next), disk only, ~$1.5; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36

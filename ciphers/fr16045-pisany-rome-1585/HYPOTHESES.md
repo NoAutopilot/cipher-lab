@@ -114,3 +114,10 @@ pis2/t31_tokens.tsv (blind Sonnet read per leaf + pre-registered eye admissible 
 Data conflict (rule 4), not settled: on f.244r the shape match (T36 = s) and the copy (o) disagree. Either the hand's 17 Sept loop-x is a
 look-alike of T36 that stands for o (a sign the 688 px table copy does not separate), or the reader's T36/T31 split is too weak at this
 resolution (it put T36 or T31 as top two for 18 of 23 tokens). No token settled to the T31 (bare x) cell. Grades: every T31 token stays M.
+
+## D4-PISRS 9-token T31 relabel re-score (6 Oct 2026; pisrs/PREREG_pisrs.md, pisrs/pisrs_result_*.json)
+| page | relabel | old arm A | new | key-shuffle p99 | order p99 | control | random 9-token null mean / p95 | verdict |
+|---|---|---|---|---|---|---|---|---|
+| f.244r | 4 x T31->T36, 1 x T31->T45 | 0.6771 | 0.6793 | 0.351 | 0.428 | 5/5 | 0.6796 / 0.6815 | SUPPORTED (gain not above random relabels) |
+| f.275r | 4 x T31->T36 | 0.6471 | 0.6527 | 0.466 | 0.495 | not finished (killed at cap; relabel-independent, 5/5 in kp86e/RUN6-PIS) | not run (killed at cap) | SUPPORTED |
+Gate unchanged from PIS1-KEY (a); key86.tsv, tx86/tx86e, readings and grades unchanged; T31 tokens stay M. f.244r T36 shape vs copy o conflict (rule 4) stands.
