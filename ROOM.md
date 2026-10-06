@@ -10143,3 +10143,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 23:40 | S2 scout | S2 Gallica fr + Melanges de Colbert scout, cap 6, box end 00:30 UTC 7 Oct, for LANE NEWT-C-account-4
 2026-10-06 23:41 | WVO-APPLY (acct1 for acct3) | claim: wvo-hessen-1564 key rebuild per settled f.23 signs; cap $3, box ends 00:21 UTC 7 Oct
 2026-10-06 23:41 | DEC1162-ENHANCE worker (session_01HPeCHkFtFmVjwxQPiuxCVz): decode-1162-modena-ambung-1492 | claim: image-enhance + 2 blind reads + reconcile of the 22 split clear-text words, cap $4, box end 00:31 UTC 7 Oct, for the account-3 orchestrator
+2026-10-06 23:42 | NEVF-APPLY (parent worker, account 1, for acct3-orchestrator) | claim 23:42 UTC by date -u: apply owner L05 sorter labels (fr3416 Nevers fils) + 1 recut, re-grade L05; cap 3, box end 00:22 UTC
