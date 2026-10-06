@@ -90,5 +90,48 @@
     }
   ],
   "na_101_02_6016_note": "TX-KEYS, 25 Sept 2026: NL-HaNA 1.01.02 inv. 6016 (public domain, METS at https://service.archief.nl/gaf/api/mets/v1/4153f78f-3369-4801-93bc-c3eb9b39012c, 624 pages) is UNINDEXED beyond year-folder dividers; only 6 of 624 pages sampled this pass (image order 1, 100, 180, 260, 261, 262). The 1605-1606 folder starts at image order 260/261 and has not been read further. A future capture worker should read image order ~261 through the next year divider (not yet located) for (a) any copy of the 21 Feb 1605 letter itself, (b) any nearby cipher passage with a gloss or key. Order-to-URL mapping method: fetch the METS XML, extract each structMap <div ORDER=\"N\" LABEL=\"...\"><fptr FILEID=\"IDxxxxxxxxDEF\"/> -- the file is at https://service.archief.nl/api/file/v1/default/<uuid> (strip the 'ID' prefix and 'DEF' suffix from FILEID to get <uuid>).",
-  "na_301_14_note_R9_NAKEY": "R9-NAKEY, 6 Oct 2026 05:59 UTC: first scans only, fetched from service.archief.nl (public domain, NA 3.01.14). na_301_14_1490_p0001.jpg = NL-HaNA_3.01.14_1490_0001.jpg, METS https://service.archief.nl/gaf/api/mets/v1/a39ba4d8-4706-43fc-8e9b-3b56d1fe5f57 (7 scans), file https://service.archief.nl/api/file/v1/default/b3b77d14-1bc1-4ec4-8be6-e252554660ea, 2510x3740; na_301_14_2028_p0001.jpg = NL-HaNA_3.01.14_2028_0001.jpg, METS https://service.archief.nl/gaf/api/mets/v1/676010c8-0563-4b90-ba2a-801de20fea7b (3 scans), file https://service.archief.nl/api/file/v1/default/ee0188f6-c3ba-450f-b9b0-80f1169b98d4, 2600x3880. Order-to-URL: structMap div ORDER=N, fptr FILEID 'ID<uuid>DEF' -> /api/file/v1/default/<uuid>."
+  "na_301_14_note_R9_NAKEY": "R9-NAKEY, 6 Oct 2026 05:59 UTC: first scans only, fetched from service.archief.nl (public domain, NA 3.01.14). na_301_14_1490_p0001.jpg = NL-HaNA_3.01.14_1490_0001.jpg, METS https://service.archief.nl/gaf/api/mets/v1/a39ba4d8-4706-43fc-8e9b-3b56d1fe5f57 (7 scans), file https://service.archief.nl/api/file/v1/default/b3b77d14-1bc1-4ec4-8be6-e252554660ea, 2510x3740; na_301_14_2028_p0001.jpg = NL-HaNA_3.01.14_2028_0001.jpg, METS https://service.archief.nl/gaf/api/mets/v1/676010c8-0563-4b90-ba2a-801de20fea7b (3 scans), file https://service.archief.nl/api/file/v1/default/ee0188f6-c3ba-450f-b9b0-80f1169b98d4, 2600x3880. Order-to-URL: structMap div ORDER=N, fptr FILEID 'ID<uuid>DEF' -> /api/file/v1/default/<uuid>.",
+  "na_301_14_2016_R10_OBRED98": {
+    "fetched_utc": "2026-10-06",
+    "mets": "https://service.archief.nl/gaf/api/mets/v1/70426ba3-d59c-474d-bd4b-f9906cbe37de",
+    "handle_note": "NA 3.01.14 inv. 2016, 81 scans; full scan list in ../na_301_14_2016_scans.tsv",
+    "files": [
+      {
+        "file": "na_301_14_2016_p0007.jpg",
+        "scan": "7",
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/11011f8e-c850-48ad-be3b-17806394def2.jp2/full/1400,/0/default.jpg",
+        "content": "phrase-code gloss sheet 'bij no 2', 7-6-1598: letters a-x each = a French phrase or name"
+      },
+      {
+        "file": "na_301_14_2016_p0016.jpg",
+        "scan": "16",
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/3cc54f79-9b7e-40c1-b8b1-aca57517d892.jp2/full/1400,/0/default.jpg",
+        "content": "opening: gloss sheets (end of one, then 'No 4'), letters a-x = phrases/names"
+      },
+      {
+        "file": "na_301_14_2016_p0030.jpg",
+        "scan": "30",
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/110a1d07-1dca-4e39-aa53-ea076be4f54e.jp2/full/1400,/0/default.jpg",
+        "content": "Van Aerssen to Oldenbarnevelt, 10 Aug 1598, p.1 (French, in clear); pencil '10-8-1598'"
+      },
+      {
+        "file": "na_301_14_2016_p0031.jpg",
+        "scan": "31",
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/f82be706-d7bd-4d64-b46a-2814e5716d74.jp2/full/1400,/0/default.jpg",
+        "content": "same letter, inner opening, loose slip 'bij no 6' 10-8-1598 laid over the right page; left page has cipher with interlinear decipherment"
+      },
+      {
+        "file": "na_301_14_2016_p0032.jpg",
+        "scan": "32",
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/5f920142-afc0-44b3-aa09-5cac47a13cfe.jp2/full/1400,/0/default.jpg",
+        "content": "same opening re-shot with the slip laid over the left page; right page cipher with interlinear decipherment"
+      },
+      {
+        "file": "na_301_14_2016_p0031_slip.jpg",
+        "scan": "31",
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/f82be706-d7bd-4d64-b46a-2814e5716d74.jp2/pct:51,20,47,68/1400,/0/default.jpg",
+        "content": "crop of the 'bij no 6' slip (the catalogue's 'sleutel')"
+      }
+    ]
+  }
 }

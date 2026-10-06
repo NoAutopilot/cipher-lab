@@ -786,3 +786,47 @@ Sonnet blind passes (one per page).
 
 AUDIT.md "Verifier: R9-OBRED4 corrections": 170 -> 179 upheld (bowl and right stroke match the scan's 9, not its 0; the crease is
 only a thin line above the bowl), 704 upheld as undecidable (blot; print kept, M). ciphertext.txt unchanged; no test on disk changes.
+
+## The 10 Aug 1598 "sleutel" in NA 3.01.14 inv. 2016 located (R10-OBRED98, 6 Oct 2026, 07:22-07:28 UTC, account 2)
+
+Step (1) of the R9-OBRED4 next steps. METS fetched once (81 scans; full list with IIIF info URLs in `na_301_14_2016_scans.tsv`).
+Contact sheets of every third scan (1, 4, ..., 79) at 400 px by this worker's own eye, then candidates at 1400 px. Dates on the
+thumbnails run in order: scan 4 "May 1598", scan 7 "7-6-1598", scans 34/37 Sept 1598, scans 67-79 Oct 1598.
+
+**Where the key is (H, read on the image):** scans 30-32. Scan 30 (`images/na_301_14_2016_p0030.jpg`) is Van Aerssen to
+Oldenbarnevelt, pencil-dated "10-8-1598", p.1 in French, in clear ("Le brief du 29e de Juillet me fut delivree le 4e d'Aoust ...").
+Scans 31 and 32 are the same inner opening photographed twice, with a loose slip laid first over the right page, then over the
+left. The slip (`images/na_301_14_2016_p0031_slip.jpg`) is headed "bij no 6" and pencil-dated "10-8-1598": this is the catalogue's
+"sleutel". It is a **worked decipherment, not a key table**: each cipher group copied with its plaintext syllable written over it
+(e.g. "de fonz" over "2d 3S 12 21", "aessert" over "37 . S 3S 20 iS"), and marginal letters a-d each given as a whole French phrase
+("c trouue quatre vingtz mil escus en papier sur lres [one word not read] corroborees par celles de Mr d'Incarville ...", "d de se roidir a
+ne rien innouer de la premiere posture").
+
+**Design (H for what is visible, no transcription made):**
+- Two layers. (a) A **phrase code**: single letters a-x (and a few signs) each standing for a phrase or a name ("Mr de Villeroy",
+  "Calais", "Le Roy", "Mr le Mareschal de Bouillon", "Mr de Buzanval", "Mr d'Incarville", "Le Cardinal d'Austriche"); the key
+  changes per letter, with a gloss sheet per letter ("bij no 2" scan 7, 7-6-1598; "No 4" scan 16; "bij no 6" the slip).
+  (b) A **syllabary**: mostly one- and two-digit numbers (about 2-97 seen) with over-bars, dots and superscript strokes, plus a few
+  letter-like signs, each to a French syllable or letter; isolated three-digit groups (109, 526) occur but are rare.
+- Language French. The letters' own pages carry interlinear decipherments above the cipher (scan 31 left, scan 32 right: "de Mr de
+  Villeroy", "pour la Royne d'Angleterre", "rendition des gages", "Le Roy", "Breda" ...).
+
+**Fit to this folder's ciphertext: not a plausible design match, so no fit test was run (no PREREG).** No. 92 is Dutch, 121 unmarked
+groups of mostly three digits (97-741, 100-741 for all but a handful), with no bars, dots or letter signs on the print or on the
+manuscript (R9-OBRED4). A two-layer French syllabary of marked one- and two-digit numbers cannot produce that stream. Recorded as a
+design exclusion of this key for no. 92 (H on the design, not a statistical negative).
+
+**Siblings with a period decipherment (the higher-value find, for a different correspondence):** inv. 2016 itself carries several
+partly deciphered originals of 1598 -- scans 31/32 (10 Aug), and numeral passages visible on the thumbnails of scans 43 (Sept 1598)
+and 64 -- plus per-letter gloss sheets (scans 7, 16, 31 slip). With inv. 2017-2025 (1599-1609, "Gedeeltelijk gedecodeerd") this is a
+period-decipherment pool for Van Aerssen's own syllabary, which by its marked one- and two-digit numbers resembles the Buzanval
+syllabary of inv. 2028 (numbers 10-99 plain, barred, crossed; R9-OBRED4 step 0). That resemblance is an observation (M), not tested.
+None of it bears on no. 92's three-digit Dutch code.
+
+Next steps (named, not run): (1) NA 1.01.02 inv. 6016 from image order 261 on, for a Brederode-side sibling cipher letter with a
+gloss (unchanged from R9-OBRED4). (2) Out of this folder's scope, a possible target of its own: Van Aerssen 1598-1609 (NA 3.01.14 inv.
+2016-2025) as a period-glossed syllabary pool; a scout or check-solved worker decides whether it belongs on the queue. Status stays
+`open`.
+
+Requests: `service.archief.nl` 34 (1 METS, 27 thumbnails at 400 px, 5 scans at 1400 px, 1 region crop), >= 1.9 s apart, descriptive
+User-Agent, no 403/429/challenge. No subagents.
