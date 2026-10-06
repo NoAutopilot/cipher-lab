@@ -29,3 +29,6 @@ I am not committing to any payment at this stage; I would just like the quotes a
 With thanks,
 
 [SIGN-OFF]
+
+## Reply logged 6 Oct 2026
+See outreach/QUOTES.md "Replies logged 6 Oct 2026 13:1x UTC".

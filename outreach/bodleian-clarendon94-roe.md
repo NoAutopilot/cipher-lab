@@ -24,3 +24,6 @@ Low-resolution reference copies would be enough if that is simpler or cheaper.
 Everything we have on both, including the search logs, is at https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed and https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sp81-roe-1638
 
 [SIGN-OFF]
+
+## Reply logged 6 Oct 2026
+See outreach/QUOTES.md "Replies logged 6 Oct 2026 13:1x UTC".
