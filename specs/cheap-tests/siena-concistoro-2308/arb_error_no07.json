@@ -1,0 +1,57 @@
+{
+ "inputs_sha1": {
+  "no07_arbitration_R9-SIENA7B.tsv": "51e07aac56aa220f47ebf1f243da68439cd42284",
+  "no07_arbitration_R10-SIENA7C.tsv": "b0f06f7c3f1ebaaf06ba69f85a5ae12374280b18",
+  "no07.tok": "5af7398dc9951a4f1ebdba7cb0b9ee942559828c"
+ },
+ "primary_L02_L11": {
+  "n_J": 327,
+  "rows": 94,
+  "B": 3,
+  "amb": 20,
+  "low": 0.0092,
+  "low_cp95": [
+   0.0019,
+   0.0266
+  ],
+  "high": 0.0703,
+  "high_cp95": [
+   0.0451,
+   0.1037
+  ]
+ },
+ "all_L02_L12": {
+  "n_J": 363,
+  "rows": 98,
+  "B": 3,
+  "amb": 21,
+  "low": 0.0083,
+  "low_cp95": [
+   0.0017,
+   0.024
+  ],
+  "high": 0.0661,
+  "high_cp95": [
+   0.0428,
+   0.0968
+  ]
+ },
+ "primary_sign_identity_only": {
+  "n_J": 320,
+  "rows": 91,
+  "B": 3,
+  "amb": 17,
+  "low": 0.0094,
+  "low_cp95": [
+   0.0019,
+   0.0272
+  ],
+  "high": 0.0625,
+  "high_cp95": [
+   0.0386,
+   0.0949
+  ]
+ },
+ "verdict_primary": "control-backed at the point estimate, not at the 95% bound",
+ "verdict_all": "control-backed on the whole letter (high estimate and its 95% upper bound under 10%)"
+}

@@ -721,3 +721,55 @@ R9-SIENA15 S2 gate, its value-shuffle and order-shuffle controls, and its power 
 R4777's three rows (file IMG_R4777_I27882_P.jpg, 2248x4000, filesrv `?file=` name as given; one DECODE login to re-fetch). Other files fetched this pass: IMG_R4765_I27858_P, IMG_R4760_I27832_P1-P3, IMG_R4766_I27863_P1-P2, IMG_R4767_I27864_P, IMG_R4768_I27865_P, IMG_R4769_I27868_P, IMG_R4774_I27875_P1-P2, IMG_R4776_I27879_P1-P2, IMG_R4784_I27891_P, IMG_R4789_I27907_P, IMG_R4764_I27857_P2, IMG_R4803_I27950_P2 (all .jpg). It costs about USD 2. It only makes sense
 if the concordance values at least about 100 of the 232 tokens; R9's P variant reached 71 and had a power of 0.63. Otherwise no. 15
 stays parked as too-short / no-key-material.
+
+## R10-SIENA7C -- no. 7 J/B arbitration on the other nine lines, agent J error on the whole letter (account 4 worker for LANE-RUN10-account-4, 6 Oct 2026, 09:42-09:5x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` job R10-SIENA7C (R9-SIENA7B's "Next step"). Status unchanged: `open`.
+No key, no fit, no reading. Pre-registration `PREREG-R10-SIENA7C.md` (pushed 8fc9a053a before the figures were computed).
+
+**Route.** The no. 7 image was not on this container's disk (R9-SIENA7B kept it in its own scratchpad), so it was re-fetched by the
+manifest's refetch route: one headless DECODE login, `tools/decode_browser_login.js 4796 <scratch> --fetch <IMG_R4796_I27935_P1.jpg>
+--max-files 1`; sha1 2b12f15a494de37be251cbc13476d8db12032471 matches images/manifest.json; the saved RecordsView page was deleted
+(account name); image and zooms in the scratchpad only. Line positions from the R8/R9 crop command with the region extended to take
+in L12 (pasted):
+
+    $ python3 tools/iiif_lines.py --image IMG_R4796_I27935_P1.jpg --out crops --region 60,2540,2190,620 --prefix no7 \
+        --max-width 1150 --overlap 120 --distance 42 --prominence 20 --ink 120 --smooth 3 --lines-per-crop 1 --top-margin 20 --debug
+    ...(local): region 2190x620, 12 lines, 12 bands x 3 segments; pitch 48 distance 42 prominence 20.0
+
+Arbitration zooms: autocontrast (1% cutoff) crops at 3-6x of each split spot, read by the worker; no subagent. Requests: de-crypt.org
+about 4 (login 2, RecordsView 1, image 1), 1.5 s apart, no challenge; github.com 1 (sparse shallow clone of dbourdeau/cyphersolver
+`targets/siena1421/transcripts`, HEAD adbf9a1, read only, for the per-line split of agent J's transcript in `no07.txt`).
+
+**L12.** It is fully on the image (y about 3060-3100); R8/R9's region simply stopped at y 3100 on a sloping line. Because pass B saw
+only its top half, L12 was checked token by token against the image (all 36 agent J tokens) instead of through B's splits.
+
+**Arbitration** (`transcripts/no07_arbitration_R10-SIENA7C.tsv`, 98 rows with R9's 24 for L03/L08; one row = one agent J error
+event). On the eight new lines: 71 rows, 51 go to J, 3 to B (agent J wrong), 17 undecidable (with R9's L03/L08: 3 B, 20 amb). The three J errors: L04 `f o 4` is
+`f q 4` (the circle has its own stem); L06 `a sl p o o` has one descender sign, not two (J one token too many); L11 `p t + f` has one
+cross, not two (J one token too many). Of the 17 new undecidable rows, 3 are clear/cipher boundary calls (L04 `r`, L05 `5 6~ o`, L06
+`a f a`, 7 tokens), 3 are the `o o` / `oo` convention for dash-joined rings, and the rest are V/x, a/q, DEL/8, t/+, 6/6~, P_/p shapes, an
+ink blot and two J '?' marks the zoom cannot settle. L12: 34 tokens agree; `7 4?` near the end may be one connected sign (amb).
+
+Figures (`specs/cheap-tests/siena-concistoro-2308/arb_error_no07.py`, `--check` exit 0, `arb_error_no07.json`):
+
+| scope | J tokens | B | amb | agent J error low (B only), CP95 | high (B + amb), CP95 |
+|---|---|---|---|---|---|
+| L02-L11 (primary, pre-registered) | 327 | 3 | 20 | 0.9% (0.2-2.7%) | **7.0% (4.5-10.4%)** |
+| L02-L12 (all) | 363 | 3 | 21 | 0.8% (0.2-2.4%) | 6.6% (4.3-9.7%) |
+| L02-L11, boundary calls dropped | 320 | 3 | 17 | 0.9% (0.2-2.7%) | 6.3% (3.9-9.5%) |
+
+**Verdict under the PREREG rule (primary scope): control-backed at the point estimate, not at the 95% bound.** Agent J's error on
+the whole cipher of L02-L11 lies between 0.9% and 7.0%, under R9-SIENA7's ~10% crossover at both ends; only the 95% upper bound of
+the worst case (every undecidable spot counted as J's error) reaches 10.4%. With L12 included, or with the clear/cipher boundary
+calls set aside, the upper bound falls under 10% (9.7%, 9.5%). So the R9-SIENA7 negative (plain homophonic substitution with the
+seven C anchors) now stands as control-backed on the whole letter at the measured error, no longer on 2 of 11 lines. Limits, stated
+in the PREREG: spots where agent J and pass B agree were not arbitrated (shared errors are invisible to this method), and the
+arbitration is not blind (J's labels in view). The nomenclator and 15th-c. spelling caveats of R9-SIENA7 are unchanged.
+
+Grades: no token read; no key.tsv. Cryptanalytic result only.
+
+**Next step (suggestion, not run):** the homophonic + nomenclator family R9-SIENA7 named (multi-sign codes for frequent words,
+R4750-style), with its own matched control run at an injected sign error of about 7% (the high figure here) as well as 0%. If a
+transcription correction is wanted first, the three B rows above are the only agent J errors this pass established; it does not
+change no07.tok (Bourdeau's file, copied unchanged).

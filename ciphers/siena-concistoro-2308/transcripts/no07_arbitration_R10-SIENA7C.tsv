@@ -1,0 +1,77 @@
+# R10-SIENA7C 6 Oct 2026: worker's own arbitration of agent J vs pass B splits on L02, L04-L07, L09-L11 (extends no07_arbitration_R9-SIENA7B.tsv, which covers L03/L08), read on autocontrast 3-6x zooms of the R4796 P1 full-size image (sha1 2b12f15a..., scratchpad only, re-fetched with one DECODE login). NOT blind: J's labels in view. L12: pass B saw only the top half, so every agent J token on L12 was checked against the image directly (op=check). verdict J = image agrees with agent J; B = agent J wrong; amb = undecidable (counted against J for the upper figure). n_J = agent J tokens the row covers; one row = one J error event.
+line	op	J	B	verdict	n_J	note
+L02	merge	o o	oo	amb	2	two circles joined by a thin dash: legend 'oo' (joined) or two 'o'; convention, J uses 'o o' for dash-joined pairs throughout
+L02	ins	-	6	J	0	B's 6 falls in the clear word after '2'
+L02	sub	#	7#	J	1	double upright crossed, no separate 7-hook (legend: # L02 only)
+L02	sub	V	x	amb	1	strokes visibly cross; gamma/x not decidable
+L02	sub	THETA	8	J	1	single oval with a bar inside, no waist
+L02	del	i	-	J	1	upright stroke after 'f o'
+L02	del	m	-	amb	1	small m-like marks at line end; J itself '?'
+L04	del	r	-	amb	1	'r' after 'co' may belong to the clear word (clear/cipher boundary); J itself '?'
+L04	sub	sl	p	J	1	descender slants down-left (legend sl)
+L04	del	V	-	amb	1	a crossed sign is present after m (B missed a sign); V vs x not decidable; J itself '?'
+L04	sub	k	x	J	1	k-shaped sign after the crossed sign
+L04	sub	6~	6	J	1	wave over the 6
+L04	sub	o	q	B	1	circle after f has its own descending stem: q
+L04	split	7#	7 +	J	1	7-hook joined to double upright, one unit by the legend
+L04	split	PCT	8 6	J	1	x with rings, tilde above (legend PCT), one sign
+L04	sub	QP	qp	J	1	case only
+L05	sub	h	3	J	1	single bowl with hooked top (legend h), not a two-bowl 3
+L05	sub	V	x	J	1	checkmark shape
+L05	sub	h	3	J	1	hooked-top h
+L05	sub	6~	6	J	1	wave over the 6
+L05	sub	LAM4	4	J	1	lambda joined to the 4-cross
+L05	del	5 6~ o	-	amb	3	after 'la m(ia)': cipher or clear 'sso' (clear/cipher boundary); J itself '?' on all three
+L06	sub	sl	p	J	1	descender slants down-left
+L06	sub	6~	6	J	1	wave over the 6
+L06	sub	q	p	J	1	circle with straight stem
+L06	split	sl p	p	B	1	only one descender sign between 'a' and the circles: J has one token too many
+L06	merge	o o	oo	amb	2	touching circles; convention
+L06	sub	q	4	J	1	circle with stem
+L06	sub	6~	6	amb	1	rising stroke over the 6 may be its stem or the tilde
+L06	sub	DEL	8	J	1	bowl with curl rising left
+L06	sub	V	7	J	1	checkmark with dot at right
+L06	del	a f a	-	amb	3	clear-hand letters before 'H o' (clear/cipher boundary, R9 caveat)
+L06	merge	o o	oo	amb	2	dash-joined pair before 'c oo'; convention
+L07	sub	P_	p	amb	1	foot bar at the crop edge not decidable
+L07	split	7 +	7#	J	2	7 and a single-upright cross, not the double-upright 7#
+L07	sub	DEL	8	J	1	bowl with curl rising left
+L07	sub	V	x	J	1	checkmark shape
+L07	ins	-	c	J	0	B ran into clear 'ed'
+L07	sub	7#	#	J	1	7-hook visible
+L07	sub	a	q	amb	1	circle with a curved tail to lower right: a or q
+L07	sub	V	x	J	1	checkmark shape
+L07	ins	-	q	J	0	B's q is the clear 'a' of 'a con...'
+L07	sub	DEL	2	J	1	bowl with curl rising left
+L07	sub	6~	6	J	1	tilde plain over the 6
+L09	sub	HEART	V	J	1	solid filled triangle
+L09	split	QP	q p	J	1	q and p joined, one sign
+L09	sub	9	q	J	1	tail curving down-left
+L09	sub	DEL	8	J	1	curl rising left
+L09	split	7#	4 #	J	1	7-hook joined to the double upright
+L09	sub	a	q	amb	1	large circle with tail: a or q
+L09	sub	7#	#	J	1	7-hook visible
+L09	del	a	-	J	1	a before 'b sim' (B took it as clear)
+L09	del	sl	-	amb	1	short connector between a and b; J itself '?'
+L09	del	b	-	J	1	b present
+L10	sub	p	4	J	1	p shape, straight descender
+L10	sub	h	b	J	1	open bowl descending left (h), not a closed b
+L10	sub	7#	#	J	1	7-hook visible
+L10	sub	o	q	J	1	circle has no stem of its own (the stem is the following p's)
+L11	sub	DEL	8	amb	1	looped top; DEL vs 8 not decidable
+L11	sub	t	+	amb	1	cross with tall stem; t vs + not decidable
+L11	sub	a	8	amb	1	ink blot on the sign
+L11	sub	9	q	J	1	tail curving down-left
+L11	sub	7#	#	J	1	7-hook visible
+L11	sub	LAM4	#	J	1	lambda + cross
+L11	ins	-	c	J	0	three rings, not four
+L11	ins	-	p	J	0	B's p is the clear 'potremo'
+L11	sub	P_	p	J	1	bar across the foot
+L11	del	+	-	B	1	only one cross between 'p' and 'f' (the 't'); J has one token too many
+L11	sub	V	2	J	1	checkmark shape
+L11	del	P_	-	J	1	p with foot bar present
+L11	sub	VO	p	J	1	v with ring on top
+L12	check	8 V x a DEL 7# 9 4 = c oo V 7# 4 q x 3 5 m	-	J	19	run 1 read sign by sign, all agree
+L12	check	1 c oo c V 7# DEL 4 x 3	-	J	10	run 2 to '3', all agree
+L12	check	7 4	-	amb	2	one connected sign (7-hook running into a cross): J's two tokens may be one 4; J itself '?' on the 4
+L12	check	q x 3 5 m	-	J	5	all agree

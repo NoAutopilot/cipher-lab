@@ -49,3 +49,9 @@ R9-SIENA7B (6 Oct 2026, 06:2x UTC): transcription-error check for the R9-SIENA7 
 33.3% token disagreement on L02-L11 (sub 23.2%, ins 4.0%, del 6.1%; tx_error_no07.py), almost all pass-B collapses of legend
 distinctions; worker arbitration of every split on L03+L08 gives agent J 0-3 errors in 72 tokens (0-4.2%, CP95 upper 5.0-11.7%),
 below the control's ~10% crossover. The R9-SIENA7 negative stands as control-backed at that estimate (2 of 11 lines arbitrated).
+
+R10-SIENA7C (6 Oct 2026, 09:5x UTC): arbitration of every agent J / pass B split on the other nine lines (L02, L04-L07, L09-L11;
+L12 checked token by token) on 3-6x zooms of the image, extending R9-SIENA7B's L03/L08: agent J error 3/327 to 23/327 events on
+L02-L11 (0.9-7.0%; CP95 of the high figure 4.5-10.4%; 6.6%, CP95 upper 9.7% with L12). Under PREREG-R10-SIENA7C.md: control-backed
+at the point estimate, not at the 95% bound. The R9-SIENA7 negative (plain homophonic, seven C anchors) stands as control-backed on
+the whole letter at the measured error (arb_error_no07.py).
