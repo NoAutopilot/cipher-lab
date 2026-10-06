@@ -1,0 +1,36 @@
+f50v_L01
+  1:<<A=mm | B=m>>  2:10  3:<<both=q2 (a pass was unsure)>>  4:4  5:4  6:theta  7:6  8:P  9:=11  10:6  11:u  12:9  13:xc  14:<<A=lb | B=>>  15:hz  16:P  17:19  18:10  19:a  20:9
+
+f50v_L02
+  1:<<A=eps | B=a>>  2:5  3:u  4:ct  5:13  6:f  7:u  8:9  9:7  10:theta  11:<<both=y (a pass was unsure)>>  12:6  13:10  14:4  15:hz  16:f  17:u  18:9  19:=9
+
+f50v_L03
+  1:13  2:u  3:9  4:a  5:delta  6:<<A=mm | B=m>>  7:4  8:f  9:<<A=venus | B=9>>  10:f  11:xc  12:<<both=q2 (a pass was unsure)>>  13:4  14:<<A=mm | B=m>>  15:14  16:22  17:a  18:20  19:<<both=P (a pass was unsure)>>  20:y  21:13  22:u
+
+f50v_L04
+  1:<<A=venus | B=9>>  2:12  3:u  4:14  5:6  6:10  7:x  8:g+  9:18  10:a  11:<<both=xs (a pass was unsure)>>  12:delta  13:<<A=- | B=9  ("-" = that pass saw no sign here)>>  14:9  15:hz  16:u  17:f  18:19  19:<<A=lb | B=>>  20:6  21:18  22:y  23:u  24:ct  25:6  26:theta
+
+f50v_L05
+  1:=18  2:6  3:u  4:9  5:12  6:17  7:<<A=xs | B=H>>  8:mt  9:14  10:8  11:=12  12:7  13:theta
+
+f50v_L06
+  1:23  2:7  3:8  4:14  5:a  6:6  7:14  8:21  9:3  10:9  11:<<A=- | B=a  ("-" = that pass saw no sign here)>>  12:=n  13:=o  14:13  15:u  16:9  17:18  18:f  19:bt
+
+f50v_L07
+  1:<<A=mm | B=m>>  2:<<A=lb | B=>>  3:9  4:mt  5:<<A=venus | B=9>>  6:<<A=xs | B=H>>  7:<<A=y | B=xc>>  8:a  9:bt  10:20  11:14  12:a  13:hz  14:=11  15:<<A= | B=lb>>  16:20  17:10  18:<<A=xc | B=>>  19:12  20:<<A=lb | B=>>
+
+f50v_L08
+  1:<<both=P (a pass was unsure)>>  2:u  3:hz  4:19  5:22  6:u  7:mt  8:6  9:14  10:6  11:=12  12:19  13:b  14:10  15:y  16:t  17:u  18:xc  19:u  20:<<A==mm | B=>>  21:12  22:19
+
+f50v_L09
+  1:14  2:a  3:ct  4:<<A=mm | B=-  ("-" = that pass saw no sign here)>>  5:<<A=z | B=m>>  6:<<A=xc | B=>>  7:<<both=P (a pass was unsure)>>  8:<<A=xs | B=H>>  9:14  10:9  11:12  12:<<A=xs | B=H>>  13:<<both=u (a pass was unsure)>>  14:hbar  15:u  16:f  17:6  18:<<A=venus | B=9>>  19:19  20:xc  21:<<A=lb | B=>>  22:<<A=mm | B=m>>  23:<<A=hz | B=gz>>
+
+f50v_L10
+  1:8  2:5  3:9  4:6  5:22  6:<<A=mm | B=m>>  7:<<both=8s (a pass was unsure)>>  8:12  9:6  10:u  11:o7  12:23  13:14  14:9  15:xc  16:3  17:theta  18:=11  19:12  20:14  21:19  22:<<A=P | B=g+>>
+
+f50v_L11
+  1:21  2:14  3:<<A=venus | B=9>>  4:14  5:12  6:delta  7:<<both=xs (a pass was unsure)>>  8:hz  9:mt  10:21  11:<<A=mm | B=m>>  12:u  13:8  14:<<A=u | B=n>>  15:6  16:10  17:a  18:<<both=8s (a pass was unsure)>>  19:u  20:9  21:6
+
+f50v_L12
+  1:12  2:6  3:7  4:theta  5:8  6:delta  7:mt  8:6  9:x  10:ct  11:<<A=venus | B=9>>  12:6  13:xc  14:<<A=q2 | B=-  ("-" = that pass saw no sign here)>>  15:<<A=t | B=2>>  16:theta  17:<<A=- | B=m  ("-" = that pass saw no sign here)>>  18:<<A=mm | B=>>  19:<<A=10 | B=>>  20:a  21:hz
+

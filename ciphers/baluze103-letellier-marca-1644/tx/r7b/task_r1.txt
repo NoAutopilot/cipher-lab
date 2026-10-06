@@ -1,0 +1,30 @@
+f50r_L01
+  1:<<A=19 | B==19>>  2:u  3:mt  4:12  5:delta  6:a  7:9  8:theta  9:mt  10:hz  11:6  12:14  13:9  14:7  15:13  16:u  17:6  18:10
+
+f50r_L02
+  1:<<both=venus (a pass was unsure)>>  2:<<A=tt | B=-  ("-" = that pass saw no sign here)>>  3:f  4:<<A=- | B=xc  ("-" = that pass saw no sign here)>>  5:<<A=R | B=u>>  6:14  7:19  8:delta  9:a  10:y  11:u  12:10  13:u  14:ct  15:21  16:6  17:P  18:23  19:<<A=3 | B=-  ("-" = that pass saw no sign here)>>  20:<<both=xs (a pass was unsure)>>
+
+f50r_L03
+  1:7  2:<<both=eps (a pass was unsure)>>  3:a  4:y  5:t  6:u  7:<<A=8 | B=81>>  8:mm  9:9  10:14  11:<<A=ct | B=c>>  12:<<A=xbar | B=hz>>  13:f  14:u  15:<<A=dt | B=t>>  16:m  17:a  18:6
+
+f50r_L04
+  1:10  2:<<A=lb | B=H>>  3:<<A=x | B=xbar>>  4:<<A=bt | B=b>>  5:<<A=o7 | B=theta>>  6:<<A=tt | B=venus>>  7:f  8:<<A=R | B=u>>  9:10  10:delta  11:a  12:hz  13:u  14:9  15:6  16:14  17:22
+
+f50r_L05
+  1:<<A=x | B=xbar>>  2:theta  3:12  4:3  5:eps  6:mt  7:7  8:6  9:f  10:<<A=R | B=>>  11:ct  12:b  13:<<A=tt | B=mm>>  14:P  15:9  16:delta  17:a  18:t  19:<<both=mt (a pass was unsure)>>  20:delta
+
+f50r_L06
+  1:<<A=tt | B=venus>>  2:<<A=o7 | B=theta>>  3:mt  4:9  5:<<A=- | B=6  ("-" = that pass saw no sign here)>>  6:<<A=x | B=xbar>>  7:theta  8:=y  9:<<A=3 | B==3>>  10:=12  11:10  12:<<A=bt | B=t>>  13:9  14:hz  15:<<A=P | B=hz>>  16:20  17:u  18:23
+
+f50r_L07
+  1:m  2:10  3:delta  4:<<A=R | B=u>>  5:theta  6:<<A=lb | B=H>>  7:22  8:P  9:14  10:a  11:mt  12:<<A=bt | B=b>>  13:8  14:hz  15:9  16:14  17:18  18:7
+
+f50r_L08
+  1:<<A=c | B=ct>>  2:delta  3:21  4:<<A=R | B=u>>  5:hz  6:<<A=mt | B=m>>  7:theta  8:hz  9:6  10:u  11:b  12:u  13:delta  14:6  15:t  16:<<A=bt | B=b>>  17:hz  18:<<A=xs | B=mm>>  19:<<A=mt | B=m>>  20:6  21:<<A=a | B=xbar>>  22:<<A=bt | B=b>>
+
+f50r_L09
+  1:=11  2:19  3:theta  4:t  5:mt  6:6  7:9  8:<<A=venus | B=q>>  9:u  10:<<A=mt | B=m>>  11:<<A=xbar | B=xs>>  12:<<A=o7 | B=theta>>  13:<<A=tt | B=venus>>  14:9  15:f  16:xs  17:10  18:<<A=18 | B=15>>  19:14
+
+f50r_L10
+  1:eps  2:hbar  3:xs  4:18  5:9  6:ct  7:13  8:u  9:<<A=R | B=u>>  10:theta  11:=11  12:12  13:22  14:a  15:6  16:P  17:theta  18:y  19:13
+

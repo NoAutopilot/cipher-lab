@@ -1,0 +1,6 @@
+line	col	A	B	flagged	crop	both_conf
+f50r_L02	1	venus	venus	B	images/f50r_L02.jpg	A:H/B:M
+f50r_L02	20	xs	xs	AB	images/f50r_L02.jpg	A:M/B:M
+f50r_L03	2	eps	eps	B	images/f50r_L03.jpg	A:H/B:M
+f50r_L05	19	mt	mt	A	images/f50r_L05.jpg	A:M/B:H
+f50r_L13	17	z	z	B	images/f50r_L13.jpg	A:H/B:M

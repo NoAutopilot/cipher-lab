@@ -1,0 +1,12 @@
+line	col	A	B	flagged	crop	both_conf
+f50v_L01	3	q2	q2	A	images/f50v_L01_s1.jpg,images/f50v_L01_s2.jpg	A:M/B:H
+f50v_L02	11	y	y	B	images/f50v_L02_s1.jpg,images/f50v_L02_s2.jpg	A:H/B:M
+f50v_L03	12	q2	q2	A	images/f50v_L03_s1.jpg,images/f50v_L03_s2.jpg	A:M/B:H
+f50v_L03	19	P	P	B	images/f50v_L03_s1.jpg,images/f50v_L03_s2.jpg	A:H/B:M
+f50v_L04	11	xs	xs	B	images/f50v_L04_s1.jpg,images/f50v_L04_s2.jpg	A:H/B:M
+f50v_L08	1	P	P	B	images/f50v_L08_s1.jpg,images/f50v_L08_s2.jpg	A:H/B:M
+f50v_L09	7	P	P	B	images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg	A:H/B:M
+f50v_L09	13	u	u	A	images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg	A:M/B:H
+f50v_L10	7	8s	8s	A	images/f50v_L10_s1.jpg,images/f50v_L10_s2.jpg	A:M/B:H
+f50v_L11	7	xs	xs	A	images/f50v_L11_s1.jpg,images/f50v_L11_s2.jpg	A:M/B:H
+f50v_L11	18	8s	8s	A	images/f50v_L11_s1.jpg,images/f50v_L11_s2.jpg	A:M/B:H

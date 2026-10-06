@@ -1,0 +1,30 @@
+f50r_L11
+  1:6  2:u  3:9  4:t  5:u  6:mt  7:<<A=mm | B=m>>  8:theta  9:9  10:a  11:17  12:<<A=bt | B=b>>  13:9  14:=11  15:P  16:19  17:<<A=xbar | B=xs>>  18:theta  19:<<A=R | B=u>>  20:<<A=bt | B=b>>
+
+f50r_L12
+  1:13  2:u  3:hz  4:<<A=tt | B=mm>>  5:xs  6:delta  7:<<A=mt | B=m>>  8:9  9:delta  10:4  11:=11  12:P  13:6  14:n  15:14  16:a  17:mt  18:delta  19:2  20:9
+
+f50r_L13
+  1:xs  2:eps  3:a  4:hz  5:<<A=tt | B=venus>>  6:theta  7:9  8:6  9:mt  10:b  11:14  12:t  13:u  14:<<A=mt | B=m>>  15:<<A=xs | B=xc>>  16:<<A=venus | B=q>>  17:<<both=z (a pass was unsure)>>  18:<<A=- | B=6  ("-" = that pass saw no sign here)>>  19:P  20:y  21:xs  22:delta  23:f  24:l
+
+f50r_L14
+  1:6  2:u  3:t  4:<<A=venus | B=q>>  5:6  6:9  7:<<A=lb | B=H>>  8:<<A=tt | B=venus>>  9:9  10:<<A=R | B=u>>  11:<<A=tt | B=mm>>  12:10  13:<<A=x | B=xc>>  14:15  15:mt  16:a  17:=11  18:18  19:19
+
+f50r_L15
+  1:<<A=mm | B=m>>  2:9  3:u  4:a  5:delta  6:theta  7:y  8:ct  9:delta  10:t  11:u  12:14  13:8s  14:y  15:<<A=bt | B=b>>  16:9  17:14  18:6  19:<<A=tt | B=mm>>
+
+f50r_L16
+  1:23  2:10  3:7  4:c  5:u  6:<<A=- | B=d  ("-" = that pass saw no sign here)>>  7:<<A=- | B=t  ("-" = that pass saw no sign here)>>  8:<<A=delta | B=u>>  9:mt  10:<<A=- | B=hz  ("-" = that pass saw no sign here)>>  11:<<A=hbar | B=venus>>  12:<<A=tt | B=mm>>  13:<<A=tt | B=6>>  14:theta  15:9  16:<<A=mm | B=m>>  17:10  18:9  19:delta  20:22
+
+f50r_L17
+  1:12  2:14  3:hz  4:m  5:2  6:=12  7:g+  8:10  9:mt  10:6  11:<<A=venus | B=-  ("-" = that pass saw no sign here)>>  12:<<A=R | B=q>>  13:u  14:ct  15:<<A=x | B=xc>>  16:15  17:<<A=tt | B=venus>>  18:P
+
+f50r_L18
+  1:t  2:u  3:=32  4:7  5:theta  6:9  7:6  8:23  9:6  10:<<A=tt | B=venus>>  11:mt  12:a  13:t  14:<<A=mm | B=m>>  15:19  16:<<A=mt | B=m>>  17:9  18:<<A=venus | B=q>>  19:u
+
+f50r_L19
+  1:x  2:delta  3:18  4:7  5:xs  6:<<A=bt | B=b>>  7:<<A=R | B=u>>  8:u  9:=11  10:delta  11:a  12:22  13:4  14:<<A=mt | B=m>>  15:9  16:theta  17:<<A=tt | B=venus>>  18:=3
+
+f50r_L20
+  1:10  2:18  3:a  4:8  5:u  6:=12  7:19  8:23  9:f  10:14  11:6  12:u  13:a  14:13  15:hz  16:<<A=xs | B=xc>>  17:<<A=mt | B=m>>  18:9  19:19
+

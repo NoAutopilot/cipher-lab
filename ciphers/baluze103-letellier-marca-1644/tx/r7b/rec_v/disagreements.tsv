@@ -1,0 +1,41 @@
+line	col	A	B	flagged	crop
+f50v_L01	1	mm	m	A	images/f50v_L01_s1.jpg,images/f50v_L01_s2.jpg
+f50v_L01	14	lb		AB	images/f50v_L01_s1.jpg,images/f50v_L01_s2.jpg
+f50v_L02	1	eps	a	A	images/f50v_L02_s1.jpg,images/f50v_L02_s2.jpg
+f50v_L03	6	mm	m		images/f50v_L03_s1.jpg,images/f50v_L03_s2.jpg
+f50v_L03	9	venus	9	B	images/f50v_L03_s1.jpg,images/f50v_L03_s2.jpg
+f50v_L03	14	mm	m		images/f50v_L03_s1.jpg,images/f50v_L03_s2.jpg
+f50v_L04	1	venus	9	B	images/f50v_L04_s1.jpg,images/f50v_L04_s2.jpg
+f50v_L04	13	-	9		images/f50v_L04_s1.jpg,images/f50v_L04_s2.jpg
+f50v_L04	19	lb		AB	images/f50v_L04_s1.jpg,images/f50v_L04_s2.jpg
+f50v_L05	7	xs	H	B	images/f50v_L05_s1.jpg,images/f50v_L05_s2.jpg
+f50v_L06	11	-	a		images/f50v_L06_s1.jpg,images/f50v_L06_s2.jpg
+f50v_L07	1	mm	m		images/f50v_L07_s1.jpg,images/f50v_L07_s2.jpg
+f50v_L07	2	lb		AB	images/f50v_L07_s1.jpg,images/f50v_L07_s2.jpg
+f50v_L07	5	venus	9	B	images/f50v_L07_s1.jpg,images/f50v_L07_s2.jpg
+f50v_L07	6	xs	H	AB	images/f50v_L07_s1.jpg,images/f50v_L07_s2.jpg
+f50v_L07	7	y	xc	B	images/f50v_L07_s1.jpg,images/f50v_L07_s2.jpg
+f50v_L07	15		lb	A	images/f50v_L07_s1.jpg,images/f50v_L07_s2.jpg
+f50v_L07	18	xc		B	images/f50v_L07_s1.jpg,images/f50v_L07_s2.jpg
+f50v_L07	20	lb		AB	images/f50v_L07_s1.jpg,images/f50v_L07_s2.jpg
+f50v_L08	20	=mm		AB	images/f50v_L08_s1.jpg,images/f50v_L08_s2.jpg
+f50v_L09	4	mm	-		images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L09	5	z	m		images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L09	6	xc		B	images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L09	8	xs	H	B	images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L09	12	xs	H		images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L09	18	venus	9	B	images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L09	21	lb		AB	images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L09	22	mm	m		images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L09	23	hz	gz	B	images/f50v_L09_s1.jpg,images/f50v_L09_s2.jpg
+f50v_L10	6	mm	m		images/f50v_L10_s1.jpg,images/f50v_L10_s2.jpg
+f50v_L10	22	P	g+	B	images/f50v_L10_s1.jpg,images/f50v_L10_s2.jpg
+f50v_L11	3	venus	9		images/f50v_L11_s1.jpg,images/f50v_L11_s2.jpg
+f50v_L11	11	mm	m		images/f50v_L11_s1.jpg,images/f50v_L11_s2.jpg
+f50v_L11	14	u	n		images/f50v_L11_s1.jpg,images/f50v_L11_s2.jpg
+f50v_L12	11	venus	9	B	images/f50v_L12_s1.jpg,images/f50v_L12_s2.jpg
+f50v_L12	14	q2	-	A	images/f50v_L12_s1.jpg,images/f50v_L12_s2.jpg
+f50v_L12	15	t	2		images/f50v_L12_s1.jpg,images/f50v_L12_s2.jpg
+f50v_L12	17	-	m		images/f50v_L12_s1.jpg,images/f50v_L12_s2.jpg
+f50v_L12	18	mm		B	images/f50v_L12_s1.jpg,images/f50v_L12_s2.jpg
+f50v_L12	19	10		B	images/f50v_L12_s1.jpg,images/f50v_L12_s2.jpg
