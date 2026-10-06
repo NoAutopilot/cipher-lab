@@ -408,9 +408,9 @@ Read so far: 0% of cipher tokens read; clear Spanish on f.120r (about 85 words) 
 - [ ] known-keys: Gran cifra tested (code overlap at chance, sign test a non-test); Cifra del visorrey BRAH 9/15 searched 3 Oct 2026, no online record or image, waiting-on ASKS 105; next untried key: none named
 - [ ] print: A. de la Torre, Documentos sobre relaciones internacionales vol. VI index under Sicilia/Lanuza (LOCAL-QUEUE/HathiTrust page read), named in Premise check (d)
 - [ ] key-rebuild: Bourdeau's named tool (groups as unknown words, sign alphabet annealed against Spanish) not built; needs a settled transcription first
-- [x] image-check: key sheet re-cut with overlap, row m read zoomed: 4 signs (key/key_gran_cifra.tsv m1-m4; A4-RFESP 6 Oct 2026)
+- [x] image-check: key sheet re-cut with overlap, row m read zoomed: 4 signs (key/key_gran_cifra.tsv m1-m4; A4-RFESP 6 Oct 2026); every row re-counted, 44 phantom slots removed, 90 signs + anulante (D4-ESPLL 6 Oct 2026)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps; cheapest next: once ASKS 104 settles the alphabet, label the sorter piles against the full key sheet (key/ crops now cover row m; visorrey key on ASKS 105); meanwhile check the l/ll slot counts (A4-RFESP note), disk only, ~$0.3
+Verdict: keep going: 2 internal gaps; cheapest next: once ASKS 104 settles the alphabet, label the sorter piles against the full key sheet (key/ crops now cover every row and the TSV's slot counts match the sheet, D4-ESPLL; visorrey key on ASKS 105); no disk-only step left before ASKS 104
 
 ## Sign sorter (FT4b-esp318-sicilia-1503, account-4, 3 Oct 2026)
 
@@ -425,7 +425,8 @@ Rebuild and apply-after-sort: sorter/README.md.
 
 ## While waiting
 
-- Depends on nobody, disk only: re-count every row of key/key_gran_cifra.tsv against the sheet (rows l and ll show 3 signs each, the TSV carries 5), ~$0.3.
+- (Done 6 Oct 2026: every row of key/key_gran_cifra.tsv re-counted against the sheet -- D4-ESPLL.)
+- Depends on nobody: nothing disk-only named; the A. de la Torre vol. VI index read (Escalation, print) is the one step that waits on no ASKS row.
 - (Done 6 Oct 2026: key sheet re-cut with overlap, row m read -- A4-RFESP.)
 - (Done 3 Oct 2026: the Cifra del visorrey search -- no online record or image; ASKS 105.)
 
@@ -447,3 +448,20 @@ epsilons, a circled-dot with "="), where the TSV carries l1-l5 and ll1-ll5 -- a 
 disk-only step (While waiting). Bearing on no. 94: m2 (open epsilon) and the ll epsilons are a look-alike pair for the
 sorter; nothing read in the cipher. Requests: elprofedefisica.naukas.com 3 (two HTML pages, one image), >= 2 s apart.
 
+
+## D4-ESPLL (account 4, 6 Oct 2026, 12:43-12:47 UTC by date -u)
+
+Step: the While-waiting re-count. Every row of `key/key_gran_cifra.tsv` checked by eye against `key/gran_cifra_alpha_rows_a-ll.jpg`,
+`key/gran_cifra_alpha_rows_m-z.jpg`, `key/gran_cifra_alpha_rows_k-o_overlap.jpg` and `key/gran_cifra_row_l-ll-m_zoom2x.jpg`
+(rows a, o, r, t also zoomed 2x in scratch). No subagent call, no network request.
+
+**Not only l and ll: every row except m (already fixed by A4-RFESP) carried exactly 2 phantom slots** -- FT4's TSV seems to have
+padded each row by two. Sheet counts (old -> new): a 9->7, b 3->1, c 7->5, d 7->5, e 7->5, f 3->1, g 5->3, h 5->3, i 7->5,
+j 4->2, l 5->3, ll 5->3, n 7->5, o 8->6, p 5->3, q 3->1, r 9->7, s 6->4, t 9->7, u 5->3, y 6->4, z 5->3 (m 4, k empty, tt1
+the anulante, unchanged). 44 labels removed (the highest two of each row); the sheet now gives 90 signs + anulante.
+Notes added: a6 is struck through with an X on the sheet (kept, value a); r5 is followed by a parenthesised struck-out
+u-like alternative, not counted as a slot; l3 = 6 with a dot; ll3 = dotted reversed-c with a trailing "=".
+Effect: none on any committed result. Every sheet label used in `ciphertext.tsv` (a3 a4 c2-c4 e1 f1 g1 h1 l1 l3 ll1 n3 r1
+r6 s2 s3 t2 tt1 u3) is within the corrected counts; a value depends only on the row, and `gran_cifra_test.py`'s control
+permutes row->letter, not slots. `gran_cifra_test.py --check` OK and `code_overlap.py --check` OK after the change.
+For the sorter (ASKS 104): the alphabet to label against is 90 shapes, not 134. Requests: none.

@@ -2,74 +2,51 @@
 # from the photocopy published by A. Quirantes (elprofedefisica.naukas.com, 2 Feb 2018, Clave-Gran-Capitan-1.jpg).
 # Read from that image by FT4-esp318-sicilia-1503, 3 Oct 2026. Sign labels = sheet row + position (see key/*.jpg).
 # Sign value depends only on the row, so a mis-indexed homophone cannot change a value. tt1 = anulante (null).
+# D4-ESPLL, 6 Oct 2026: every row re-counted against key/*.jpg; rows a-z (bar m) each carried 2 phantom slots, removed (see NOTES.md "## D4-ESPLL").
 code	value	grade	note
 a1	a	H	sheet row a
 a2	a	H	sheet row a
 a3	a	H	sheet row a
 a4	a	H	sheet row a
 a5	a	H	sheet row a
-a6	a	H	sheet row a
+a6	a	H	sheet row a; struck through with an X on the sheet (D4-ESPLL 6 Oct 2026)
 a7	a	H	sheet row a
-a8	a	H	sheet row a
-a9	a	H	sheet row a
 b1	b	H	sheet row b
-b2	b	H	sheet row b
-b3	b	H	sheet row b
 c1	c	H	sheet row c
 c2	c	H	sheet row c
 c3	c	H	sheet row c
 c4	c	H	sheet row c
 c5	c	H	sheet row c
-c6	c	H	sheet row c
-c7	c	H	sheet row c
 d1	d	H	sheet row d
 d2	d	H	sheet row d
 d3	d	H	sheet row d
 d4	d	H	sheet row d
 d5	d	H	sheet row d
-d6	d	H	sheet row d
-d7	d	H	sheet row d
 e1	e	H	sheet row e
 e2	e	H	sheet row e
 e3	e	H	sheet row e
 e4	e	H	sheet row e
 e5	e	H	sheet row e
-e6	e	H	sheet row e
-e7	e	H	sheet row e
 f1	f	H	sheet row f
-f2	f	H	sheet row f
-f3	f	H	sheet row f
 g1	g	H	sheet row g
 g2	g	H	sheet row g
 g3	g	H	sheet row g
-g4	g	H	sheet row g
-g5	g	H	sheet row g
 h1	h	H	sheet row h
 h2	h	H	sheet row h
 h3	h	H	sheet row h
-h4	h	H	sheet row h
-h5	h	H	sheet row h
 i1	i	H	sheet row i
 i2	i	H	sheet row i
 i3	i	H	sheet row i
 i4	i	H	sheet row i
 i5	i	H	sheet row i
-i6	i	H	sheet row i
-i7	i	H	sheet row i
 j1	j	H	sheet row j
 j2	j	H	sheet row j
-j3	j	H	sheet row j
-j4	j	H	sheet row j
 l1	l	H	sheet row l
 l2	l	H	sheet row l
-l3	l	H	sheet row l
-l4	l	H	sheet row l
-l5	l	H	sheet row l
+l3	l	H	sheet row l; 6 with a dot above (D4-ESPLL 6 Oct 2026)
 ll1	ll	H	sheet row ll
 ll2	ll	H	sheet row ll
-ll3	ll	H	sheet row ll
-ll4	ll	H	sheet row ll
-ll5	ll	H	sheet row ll
+ll3	ll	H	sheet row ll; dotted reversed-c with a trailing = (D4-ESPLL 6 Oct 2026)
 m1	m	H	sheet row m; Z with top bar over a crossed 4 (re-cut 6 Oct 2026)
 m2	m	H	sheet row m; open epsilon, no middle bar (cf. ll's barred epsilon) (re-cut 6 Oct 2026)
 m3	m	H	sheet row m; p-loop on a long descender crossed at the foot (re-cut 6 Oct 2026)
@@ -79,39 +56,27 @@ n2	n	H	sheet row n
 n3	n	H	sheet row n
 n4	n	H	sheet row n
 n5	n	H	sheet row n
-n6	n	H	sheet row n
-n7	n	H	sheet row n
 o1	o	H	sheet row o
 o2	o	H	sheet row o
 o3	o	H	sheet row o
 o4	o	H	sheet row o
 o5	o	H	sheet row o
 o6	o	H	sheet row o
-o7	o	H	sheet row o
-o8	o	H	sheet row o
 p1	p	H	sheet row p
 p2	p	H	sheet row p
 p3	p	H	sheet row p
-p4	p	H	sheet row p
-p5	p	H	sheet row p
 q1	q	H	sheet row q
-q2	q	H	sheet row q
-q3	q	H	sheet row q
 r1	r	H	sheet row r
 r2	r	H	sheet row r
 r3	r	H	sheet row r
 r4	r	H	sheet row r
-r5	r	H	sheet row r
+r5	r	H	sheet row r; followed by a parenthesised struck-out alternative (u-like), not counted as a slot (D4-ESPLL 6 Oct 2026)
 r6	r	H	sheet row r
 r7	r	H	sheet row r
-r8	r	H	sheet row r
-r9	r	H	sheet row r
 s1	s	H	sheet row s
 s2	s	H	sheet row s
 s3	s	H	sheet row s
 s4	s	H	sheet row s
-s5	s	H	sheet row s
-s6	s	H	sheet row s
 t1	t	H	sheet row t
 t2	t	H	sheet row t
 t3	t	H	sheet row t
@@ -119,24 +84,16 @@ t4	t	H	sheet row t
 t5	t	H	sheet row t
 t6	t	H	sheet row t
 t7	t	H	sheet row t
-t8	t	H	sheet row t
-t9	t	H	sheet row t
 u1	u	H	sheet row u
 u2	u	H	sheet row u
 u3	u	H	sheet row u
-u4	u	H	sheet row u
-u5	u	H	sheet row u
 y1	y	H	sheet row y
 y2	y	H	sheet row y
 y3	y	H	sheet row y
 y4	y	H	sheet row y
-y5	y	H	sheet row y
-y6	y	H	sheet row y
 z1	z	H	sheet row z
 z2	z	H	sheet row z
 z3	z	H	sheet row z
-z4	z	H	sheet row z
-z5	z	H	sheet row z
 tt1		H	anulante (null)
 g:vaz	que	H	sheet code list
 g:uul	es	H	sheet code list
