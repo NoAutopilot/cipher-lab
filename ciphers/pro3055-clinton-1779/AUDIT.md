@@ -634,3 +634,43 @@ text `known` (VHS Collections vol. II, 1871, p.192). Depth fields unchanged.
 Collections II (1871) p.192 (OCR of `collectionsofver02vermuoft`): the print has the "650 recruits and artillery from Europe" clause (follows
 the p.134 decipherment); it reads "with us. I am disappointed", "the southern move" and "Chesapeake" (follows the cipher); it has no postscript.
 Detail in NOTES.md "R12-CLINVHS". Also p.122 c4.6 bar dropped as R11-CLINV5 asked: gated count 244/254, control max 32, PASS.
+
+## R15-CLINV: verifier of R15-CLIN3853 (p.406) and R15-CLIN407 (p.407), item 3853 (6 Oct 2026, account 2, LANE RUN15; clock 19:06-19:2x UTC, `date -u`)
+
+A separate session from both workers. No novelty class asked or assigned: 3853's text is known from the 1920 print of the f.381
+decipherment (Military and Naval Forces of Canada vol. III doc. (260) p.214); this AUDIT.md had no 3853 class before and none is
+added. Key `period` (the 1778 Army List title page), as for 2894/3868/2380.
+
+1. **Pre-registration order** (origin/main, deepened fetch). `PREREG_R15-CLIN3853.md` lands alone with `passes/p381_print1920.txt`
+   in 9cca7e5a (18:21:36 UTC, "R15-CLIN3853: PREREG ..."); the scored files (`check_3853.py`, its JSON, `p406_passA.tsv`) first land
+   in e66b18fd (18:26:16). `PREREG_R15-CLIN407.md` lands alone in 6f7ae4ab (18:45:39); `p407_passA.tsv`, `p407_reconciled.tsv` and
+   the p.407 JSON block land in f2a8ff92 (18:50:57). Neither PREREG changed afterwards. Both gates predate their scores by push order.
+2. **Re-score.** `passes/check_3853.py --check` exits 0. Reproduced: p.406 reconciled (b) 191/197 (0.970), (a) 196, (c) 183, control
+   mean/p95/max 14.48/21/28, PASS (pass A identical: the re-read changed no cell); p.407 pass A 162/170 (0.953), control max 26,
+   PASS; p.407 reconciled 189/197 (0.959), (a) 192, (c) 177, control 15.46/22/28, PASS. The control shuffles printed letters
+   against fixed key positions, so it can vary on this statistic (rule 3).
+3. **Cells eye-checked** (Images 1056 and 1058 full/max, one request each to image-uab.canadiana.ca, scratchpad only; column boxes of
+   `passes/cut_2380_p121_122.py`, read at native resolution):
+   - **"and pains" -- confirmed.** p.407 c3: `1-29 -30 -31` (underlined), the clear gloss "and" between two rules, then `18-27 -1 -10
+     -11 -13` closed by a double rule, then `6-1 ...`. Every figure is unambiguous. Under the key, line 18 "And the MARINES on FULL
+     and HALF PAY" gives p-a-i-n-s. Four of the five values (18-1 a, 18-10 i, 18-11 n, 18-13 s) also match the print elsewhere in
+     this same letter (pp.406-407 compared cells); 18-27 (p) rests on the key page alone. "and" is the copyist's clear gloss, not
+     a cipher token, so it carries no grade.
+   - **"give up" -- confirmed.** p.407 c1 head: the clear gloss "I will / willingly / give up". Gloss vs print, not cipher.
+   - **"of 25" -- confirmed.** p.406 c2 row 13: the clear gloss "of 25" between rules; the 5 is clear and distinct from an 8. The
+     print's "28" was checked here only in the archive.org OCR (`passes/p381_print1920.txt` line 6), not on the printed page image,
+     so the conflict is conditional on that OCR.
+4. **Grades decided (rule 4).** The 5 "pains" cells stay **S** (gate PASS on p.407; English under the gated key; image clear).
+   p.406 S 191 / M 6 and p.407 S 223 / M 8 stand as the workers gave them. The three differences are **witness conflicts, logged,
+   not resolved**: the cipher (gloss "and" + cipher "pains") and the gloss "give up" and "of 25" on B.147 pp.406-407 on one side;
+   the 1920 print of the f.381 decipherment ("all your Trouble", "give a very good", "28 sail") on the other. Whether the period
+   decipherment on B.147 p.381 or the 1920 editors account for them is not settled; f.381 was not read by either worker or by
+   this verifier.
+5. **Propagation and over-claims.** `SECOND-OPINIONS-QUEUE.tsv` has no row for this target, so nothing to carry. NOTES.md
+   "R15-CLIN407": the sentence "The cipher reads 'defeat all your trouble and pains general arnold'" made the clear gloss "and"
+   part of the cipher; corrected there (one line appended under the section). No sentence calls "and pains" new or unread.
+
+Safe sentence: "The cipher of Robertson's 31 Oct 1781 letter (B.147 pp.406-407) is consistent with the 1778 Army List key against
+the 1920 print of its f.381 decipherment (191/197 and 189/197 compared cells, shuffled-control max 28), and carries 'and pains'
+after 'all your trouble', which the 1920 print lacks."
+Unsafe sentence: "We recovered two words of Robertson's letter that the decipherment missed."

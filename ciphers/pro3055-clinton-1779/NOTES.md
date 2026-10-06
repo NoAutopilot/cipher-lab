@@ -1513,6 +1513,11 @@ the gated variant), M 8 (the mismatches above). No H (no period decipherment of 
 where the cipher carries more ("and pains") or the gloss differs ("give up"), plus the p.406 "25"/"28 sail" gloss/print conflict.
 The witness conflicts are logged, not resolved. Flagged in ROOM for a verifier (text beyond the print).
 
+**R15-CLINV correction (verifier, 6 Oct 2026; AUDIT.md "R15-CLINV").** In "and pains" only "pains" is cipher (5 cells, S, confirmed
+on the image); "and" is the copyist's clear gloss. Read "the page carries gloss 'and' + cipher 'pains'", not "the cipher reads ...
+trouble and pains". The "25"/"28" conflict rests on the 1920 OCR, not the printed page image. Both PREREGs predate their runs
+(9cca7e5a < e66b18fd; 6f7ae4ab < f2a8ff92); scores reproduce (`check_3853.py --check` exit 0).
+
 Requests: image-uab.canadiana.ca 1 (Image 1058 full/max, browser UA + Referer, HTTP 200). Vision calls: 1 blind Sonnet pass;
 worker reconciliation on native crops (one contact sheet, three three-column montages, one gloss crop). Status unchanged: partial.
 
