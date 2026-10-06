@@ -1686,7 +1686,7 @@
       "date": "24 Sept 2026",
       "kind": "solve",
       "title": "August of Saxony, cipher enclosure of 1561-64 (WVO 53, Nassau papers): read cryptanalytically, no key or sibling decipherment",
-      "grade": "N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', two audits); S 358, M 6 of 364 tokens after a re-read from the native scan (6 Oct 2026, R11A-AVS53; audited at S 238, M 126); presented as a PROPOSED reading (a cryptanalytic result; the WVO editor's request, 26 Sept 2026); the KHA Collectie Japikse 20th-century copy is an unseen witness that the editor names as the likeliest place for an earlier decipherment -- N-class referred to the verifier lane (ROOM 26 Sept)",
+      "grade": "N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', two audits); S 356, M 8 of 364 tokens after a re-read from the native scan (6 Oct 2026, R11A-AVS53; G4 = p regraded S -> M by verifier R11A-AVSV2, 6 Oct 2026; audited at S 238, M 126); presented as a PROPOSED reading (a cryptanalytic result; the WVO editor's request, 26 Sept 2026); the KHA Collectie Japikse 20th-century copy is an unseen witness that the editor names as the likeliest place for an earlier decipherment -- N-class referred to the verifier lane (ROOM 26 Sept)",
       "line": "The first solver reading to pass a novelty audit: tools/homophonic_anneal.py read the enclosure with a synthetic control of the same design at 99.3 percent; a verifier, an adversarial second audit and an N4 decision (10:56 UTC) found no prior decipherment or printed plaintext. Its sibling 57 and letter 126 were read by alignment and are N4 as well.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64",
       "phrases": [
@@ -1700,7 +1700,7 @@
       "claim_scope": "recovered-passages",
       "plaintext_novelty": "N4",
       "mapping_novelty": "N4",
-      "completeness": "358/364",
+      "completeness": "356/364",
       "unresolved_spans": "6 signs at M (2 sign-9 = f by context, 4 stroke-level illegible; a proposed cryptanalytic reading); KHA Collectie Japikse copies unseen",
       "audit_refs": [
         "AUDIT.md '# A2: second audit of 126, first verification of 53 and 57'",
@@ -1709,17 +1709,17 @@
       "audit_status": "two audits",
       "reading_version": "abf3671d7 (reading_53.txt, R11A-AVS53 native re-read)",
       "superseded_by": "",
-      "fields_source": "august-van-saksen-1561-64/AUDIT.md A2.4 and A3.1 (N3), raised by '# N4 decision (D2)' D2.4; held by the Huysman-reply ruling; S 238, M 126 of 364 from A3.1; counts and depth from AUDIT.md 'Carry-over R11A-AVSV' (6 Oct 2026)",
+      "fields_source": "august-van-saksen-1561-64/AUDIT.md A2.4 and A3.1 (N3), raised by '# N4 decision (D2)' D2.4; held by the Huysman-reply ruling; S 238, M 126 of 364 from A3.1; counts and depth from AUDIT.md 'Carry-over R11A-AVSV' and 'Carry-over R11A-AVSV2' (6 Oct 2026)",
       "depth": "D3",
-      "depth_pct": 98.4,
+      "depth_pct": 97.8,
       "depth_unread": {
         "names_codes": "0",
-        "other": "6 signs at M inside words that read"
+        "other": "8 signs at M inside words that read (sign 9 = f x2 and G4 = p x2, count-2 signs set by context; 4 stroke-level)"
       },
       "depth_sentence": "Orange's cipher postscript reports news that the Prince of Spain is to marry his father's sister and come to govern these lands, and that the Duke of Vendome wants to recover his kingdom of Navarre by fair means or war.",
-      "depth_check": "AD + matched control: homophonic_anneal synthetic control of the same design 99.3% (S1), re-run on the native transcription 0.992 (R11A-AVSK, 4/6 target restarts converge on key_53, shuffle null 0/6); no external check (key ours)",
-      "depth_note": "S 358 of 364 (R11A-AVS53, 6 Oct 2026; was D2 at the audited S 238); >=80%, gaps 6 letter tokens inside words that read; D4 withheld: no external check. AUDIT.md 'Carry-over R11A-AVSV'",
-      "depth_by": "session_01Fnch9NWA9fjZi8vmp6UEnb (R11A-AVSV)",
+      "depth_check": "AD + matched control: homophonic_anneal synthetic control of the same design 99.3% (S1), re-run on the native transcription 0.992 (R11A-AVSK, 4/6 target restarts converge on key_53, shuffle null 0/6); no external check (key ours); count-2 signs not control-backed (R11A-AVS9C control reads them 2/12), so G4 and 9 are M",
+      "depth_note": "S 356 of 364 (R11A-AVS53, 6 Oct 2026; G4 = p to M by R11A-AVSV2, 6 Oct 2026; was D2 at the audited S 238); >=80%, gaps 8 letter tokens inside words that read; D4 withheld: no external check. AUDIT.md 'Carry-over R11A-AVSV' and 'Carry-over R11A-AVSV2'",
+      "depth_by": "session_016ehBnRMygPFhJyQTY6HBYX (R11A-AVSV2; D3 set by R11A-AVSV, session_01Fnch9NWA9fjZi8vmp6UEnb)",
       "depth_date": "6 Oct 2026",
       "decode_status": "Partially decrypted"
     },

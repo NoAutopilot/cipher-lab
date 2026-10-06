@@ -927,3 +927,29 @@ token is H/C/S (126's Qf and 1 = i are letters). Depth sentences unchanged (stil
 
 Postmortem: no over-claim found; the one stale sentence understated certainty, and the workers flagged both revisions in ROOM
 for this carry-over as rule 10 requires.
+
+## Carry-over R11A-AVSV2 (6 Oct 2026, verifier, account 1, LANE-RUN11-account-1)
+
+Verifier R11A-AVSV2 (session_016ehBnRMygPFhJyQTY6HBYX), 16:00-16:10 UTC by `date -u`; separate from every R11A-AVS* worker and from
+R11A-AVSV. Question: are key_53's low-count (count <= 3) S grades backed by a control that can read that count? Nothing decoded,
+no new material, no network.
+
+**Finding.** On the native ciphertext_53.tsv only two signs have count <= 3: sign 9 (count 2, already M by context) and G4 = p
+(count 2, S since S1). G4's S rested on the anneal plus context ('printzen', 'hispanien'); R11A-AVS9C's control reads count-2 signs
+2/12, and AVS53 test B is a transcription-doubt test whose band-permuted control does not test G4's value against all letters. So
+G4 had the same evidence as sign 9 and is regraded **S -> M** (key_53.tsv). `tools/decode_key.py --check` exit 0; every folder
+`--check` exits 0. Details and the per-count control table: NOTES.md 'R11A-AVSV2'.
+
+**Counts and depth now.** WVO 53: **S 356, M 8 of 364 (97.8%)**, reading text unchanged; depth stays **D3** ("largely deciphered
+(about 98%)", still a proposed cryptanalytic reading); the D3 check (AD + matched control) is unchanged; the 8 M are 2 x sign 9,
+2 x G4 (count-2 signs by context) and 4 stroke-level calls. 57 and 126 unchanged. **N-class unchanged (53 N4, 57 N4, 126 N4)**: a
+grade change on two tokens, no new prior-print evidence; key source still `ours` for 53.
+
+**Corrections.** The R11A-AVSV safe sentence for 53 now reads "8 of 364 signs remain uncertain" in place of "6 of 364". status.json
+results (completeness, depth_pct 97.8, depth_unread, depth_note) and `second-opinions/PROMPT-chatgpt-53-57.md` (S 356 M 8, with a
+dated note) carried. The SECOND-OPINIONS-QUEUE.tsv row SO-SAXONY-53-57 quotes no counts, so it is left as is. Stale but harmless:
+key_53.tsv's `n=` notes are S1's 100 dpi counts (G6 now 7, 8 now 5); regrade_53.py parses them, so they are left as written.
+
+Postmortem: one over-grade (G4 = p at S on anneal evidence that the lane's own count-2 control shows unreliable), carried from S1
+(24 Sept 2026) through every later audit because the count-2 control did not exist until R11A-AVS9C; the low-count sign 9 was
+held to that standard and G4 was not. Fixed here.

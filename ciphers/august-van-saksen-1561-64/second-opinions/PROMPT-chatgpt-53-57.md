@@ -2,7 +2,9 @@
 
 <!-- Revised 6 Oct 2026 (verifier R11A-AVSV, AUDIT.md 'Carry-over R11A-AVSV'): counts and three words carried in from the native-scan
 re-reads R11A-AVS53 and R11A-AVS57 (53: itc -> itz, mrch -> mich, S 238 M 126 -> S 358 M 6; 57: seine -> seinee, C 247 M 53 of 300 -> C 294 M 7 of 301).
-The answer on file (chatgpt-2026-09-24-SO-SAXONY-53-57.md, pull request 9) was given to the 24 Sept 2026 text. -->
+The answer on file (chatgpt-2026-09-24-SO-SAXONY-53-57.md, pull request 9) was given to the 24 Sept 2026 text.
+Revised 6 Oct 2026 (verifier R11A-AVSV2, AUDIT.md 'Carry-over R11A-AVSV2'): sign G4 = p regraded S -> M (count 2, no control that reads
+a count-2 sign), so 53 is S 356 M 8 of 364; no letter of the reading changed. -->
 
 I am checking whether two sixteenth-century cipher passages have already been deciphered or printed. Please answer
 only with sources you can cite exactly: author, title, volume, year, and page or letter number. If you are unsure a
@@ -15,7 +17,7 @@ Willem van Oranje, letter 53 (https://resources.huygens.knaw.nl/wvo/app/brief?nr
 "Wiewoll ich E. Churf. G. diesmals nichtz sonders zu schrieben gehebt" and mentions dogs and ferrets sent as gifts. Part
 of it is in a symbol cipher.
 Our partial reading of the cipher, **normalised** (word division, u/uu to v/w, and the emendation "zu bergen"
-are ours; checked 24 Sept 2026, SO-SAXONY-53-57). Sign-level output verbatim (`reading_53.txt`, S 358 M 6 of 364 after a re-read
+are ours; checked 24 Sept 2026, SO-SAXONY-53-57). Sign-level output verbatim (`reading_53.txt`, S 356 M 8 of 364 after a re-read
 from the native scan on 6 Oct 2026, no key source): "neiuuer zeittung hab ichCOLitz malsn icht zuberzusc hreiben danCOLdas demprintzenzuhispanien ... und danein
 gemeinge schretCOListes uuolle der hertzoguon uandosmen seinkonigreich nauarramitder guteoderkriguuiederholenmich |
 dunck aber dieuueilderkonnigzufranck reich nochsoiungistesuuerdekeinen furganggeuuinnen".

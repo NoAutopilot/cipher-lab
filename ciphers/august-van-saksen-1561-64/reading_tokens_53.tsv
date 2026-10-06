@@ -57,7 +57,7 @@ line	pos	sign	value	grade
 53_L03	9	2	d	S
 53_L03	10	1	e	S
 53_L03	11	F	m	S
-53_L03	12	G4	p	S
+53_L03	12	G4	p	M
 53_L03	13	V	r	S
 53_L03	14	X	i	S
 53_L03	15	5	n	S
@@ -70,7 +70,7 @@ line	pos	sign	value	grade
 53_L03	22	G3	h	S
 53_L03	23	X	i	S
 53_L03	24	G7	s	S
-53_L03	25	G4	p	S
+53_L03	25	G4	p	M
 53_L03	26	3	a	S
 53_L03	27	5	n	S
 53_L03	28	X	i	S
