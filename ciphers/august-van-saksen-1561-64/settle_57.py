@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""S1, 24 Sept 2026: build ciphertext_57.tsv from recon57/ciphertext_draft.tsv (passA_57 + passB_57 reconciled by
+"""S1, 24 Sept 2026: build ciphertext_57_s1.tsv (renamed from ciphertext_57.tsv 6 Oct 2026, superseded by the native re-read settle_57n.py) from recon57/ciphertext_draft.tsv (passA_57 + passB_57 reconciled by
 tools/reconcile_passes.py) plus the settlements below, each decided on the image crop (images/crops_s1/57_L0n.png,
 and 7x re-crops of 57 p3 L1/L4) with the reading under key_74 as a check. Run with --check to verify the committed file."""
 import sys
@@ -72,5 +72,5 @@ def build():
 
 txt = build()
 if '--check' in sys.argv:
-    sys.exit(0 if open('ciphertext_57.tsv').read() == txt else 1)
-open('ciphertext_57.tsv', 'w').write(txt)
+    sys.exit(0 if open('ciphertext_57_s1.tsv').read() == txt else 1)
+open('ciphertext_57_s1.tsv', 'w').write(txt)

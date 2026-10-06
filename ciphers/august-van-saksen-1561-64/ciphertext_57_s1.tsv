@@ -1,0 +1,311 @@
+line	pos	sign	conf	why
+57_L01	1	3	H	agree
+57_L01	2	X	H	agree
+57_L01	3	9	H	settled: image: g-like 9, as pos 1-6 "auff . f"
+57_L01	4	9	H	settled: same
+57_L01	5	DOT	H	agree
+57_L01	6	9	H	settled: same
+57_L01	7	V	H	agree
+57_L01	8	1	H	agree
+57_L01	9	X	H	agree
+57_L01	10	7	H	agree
+57_L01	11	Z	H	agree
+57_L01	12	G1	M	agree-flagged
+57_L01	13	6	M	agree-flagged
+57_L01	14	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L01	15	4	H	agree
+57_L01	16	5	H	agree
+57_L01	17	5	H	agree
+57_L01	18	G2	M	agree-flagged
+57_L01	19	4	H	agree
+57_L01	20	5	H	agree
+57_L01	21	X	H	agree
+57_L01	22	1	H	agree
+57_L01	23	V	H	agree
+57_L01	24	G1	M	agree-flagged
+57_L01	25	V	H	agree
+57_L01	26	3	H	agree
+57_L01	27	XX	H	X X written as a pair = XX (w, key_74)
+57_L01	28	1	H	agree
+57_L01	29	7	H	agree
+57_L01	30	XX	H	X X written as a pair = XX (w, key_74)
+57_L01	31	G2	H	settled: image: closed triangle after XX (wollen); both passes read G1
+57_L01	32	6	M	agree-flagged
+57_L01	33	6	M	agree-flagged
+57_L01	34	1	H	agree
+57_L01	35	7	H	agree
+57_L01	36	OQ	M	agree-flagged
+57_L01	37	EL	H	settled: image: large barred sign (as 57 L7 pos 1), not E
+57_L01	38	COL	H	settled: image: colon
+57_L01	39	7	H	agree
+57_L01	40	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L01	41	G1	M	agree-flagged
+57_L01	42	G1	M	agree-flagged
+57_L02	1	8	H	agree
+57_L02	2	1	H	agree
+57_L02	3	V	H	agree
+57_L02	4	0	H	agree
+57_L02	5	1	H	agree
+57_L02	6	7	H	agree
+57_L02	7	Z	H	agree
+57_L02	8	3	H	agree
+57_L02	9	T	H	agree
+57_L02	10	Z	H	agree
+57_L02	11	1	H	agree
+57_L02	12	V	H	agree
+57_L02	13	THE	M	agree-flagged
+57_L02	14	9	H	settled: image: 9
+57_L02	15	X	H	agree
+57_L02	16	V	H	agree
+57_L02	17	XX	H	X X written as a pair = XX (w, key_74)
+57_L02	18	1	H	agree
+57_L02	19	7	H	agree
+57_L02	20	G6	H	settled: image: epsilon (A missed)
+57_L02	21	0	H	settled: image: slashed 0; value g from context (wenig), M
+57_L02	22	G1	H	settled: image: open tent
+57_L02	23	3	H	agree
+57_L02	24	0	H	agree
+57_L02	25	1	H	agree
+57_L02	26	7	H	agree
+57_L02	27	Z	H	agree
+57_L02	28	X	H	agree
+57_L02	29	V	H	agree
+57_L02	30	4	H	agree
+57_L02	31	S	H	agree
+57_L02	32	T	H	agree
+57_L02	33	1	H	agree
+57_L02	34	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L02	35	7	H	agree
+57_L02	36	1	H	agree
+57_L02	37	T	H	agree
+57_L02	38	G1	M	agree-flagged
+57_L02	39	3	H	agree
+57_L02	40	Z	H	agree
+57_L02	41	G1	M	agree-flagged
+57_L02	42	6	M	agree-flagged
+57_L02	43	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L02	44	4	H	agree
+57_L02	45	S	H	agree
+57_L02	46	1	H	agree
+57_L03	1	0	H	agree
+57_L03	2	1	H	agree
+57_L03	3	T	H	agree
+57_L03	4	3	H	agree
+57_L03	5	7	H	agree
+57_L03	6	7	H	settled: image: second 7 of "3 7 7 Z"
+57_L03	7	Z	H	agree
+57_L03	8	G1	M	agree-flagged
+57_L03	9	5	H	agree
+57_L03	10	1	H	agree
+57_L03	11	7	H	agree
+57_L03	12	7	H	agree
+57_L03	13	8	H	agree
+57_L03	14	1	H	agree
+57_L03	15	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L03	16	X	H	agree
+57_L03	17	7	H	agree
+57_L03	18	T	H	agree
+57_L03	19	T	H	agree
+57_L03	20	X	H	agree
+57_L03	21	4	H	agree
+57_L03	22	5	H	agree
+57_L03	23	1	H	agree
+57_L03	24	7	H	agree
+57_L03	25	6	H	settled: image: 6 (lassen)
+57_L03	26	3	H	agree
+57_L03	27	G4	M	agree-flagged
+57_L03	28	1	H	agree
+57_L03	29	7	H	agree
+57_L03	30	T	H	agree
+57_L03	31	1	H	agree
+57_L03	32	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L03	33	7	H	agree
+57_L03	34	1	H	agree
+57_L03	35	7	H	agree
+57_L03	36	T	H	agree
+57_L03	37	G2	M	agree-flagged
+57_L03	38	5	H	agree
+57_L03	39	7	H	agree
+57_L03	40	VmV	H	settled: image 7x: V + w-loop + V joined (VmV, Konig, key_74)
+57_L03	41	COL	H	settled: image: colon
+57_L03	42	G3	H	settled: image: w-loop
+57_L03	43	3	H	settled: image: 3
+57_L03	44	G1h	H	settled: image 7x: tent with a hook at the right foot, not plain G1; value x from context (Maximilianum), M
+57_L03	45	DOT	M	agree-flagged
+57_L04	1	G6	H	settled: image
+57_L04	2	G3	H	settled: image: w-loop (imilianum)
+57_L04	3	G6	H	settled: image
+57_L04	4	6	M	agree-flagged
+57_L04	5	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L04	6	3	H	agree
+57_L04	7	7	H	agree
+57_L04	8	X	H	agree
+57_L04	9	G3	H	settled: image: w-loop
+57_L04	10	7	H	agree
+57_L04	11	G2	M	agree-flagged
+57_L04	12	4	H	agree
+57_L04	13	5	H	agree
+57_L04	14	8	H	settled: image: 8 (bei)
+57_L04	15	1	H	agree
+57_L04	16	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L04	17	T	H	agree
+57_L04	18	1	H	agree
+57_L04	19	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L04	20	7	H	agree
+57_L04	21	1	H	agree
+57_L04	22	G3	H	settled: image: w-loop (seinem)
+57_L04	23	Z	H	settled: Z drawn 2-like in this hand
+57_L04	24	1	H	agree
+57_L04	25	T	H	agree
+57_L04	26	THE	M	agree-flagged
+57_L04	27	T	H	agree
+57_L04	28	DOT	H	agree
+57_L04	29	6	M	agree-flagged
+57_L04	30	1	H	agree
+57_L04	31	8	H	agree
+57_L04	32	1	H	agree
+57_L04	33	7	H	agree
+57_L04	34	ZZ	H	settled: image 7x: double-barred Z = zu (key_74)
+57_L04	35	1	H	agree
+57_L04	36	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L04	37	COL	M	agree-flagged
+57_L04	38	1	H	agree
+57_L04	39	G3	H	settled: image 7x: w-loop
+57_L04	40	V	H	agree
+57_L04	41	G2	M	agree-flagged
+57_L04	42	G3	H	settled: image 7x: w-loop
+57_L04	43	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L04	44	T	H	agree
+57_L04	45	4	H	agree
+57_L04	46	5	H	settled: image: 5
+57_L04	47	1	H	agree
+57_L04	48	7	M	settled: image 7x: final 7 at the right edge, outside the pass crop (romischen)
+57_L05	1	VmV	H	settled: image 7x: V + w-loop + V joined (VmV, Konig, key_74); passes split it
+57_L05	2	1	H	agree
+57_L05	3	DOT	H	agree
+57_L05	4	ZZ	H	settled: image, double-barred Z (zu erwelen); passes wrote Z Z
+57_L05	5	1	H	agree
+57_L05	6	V	H	agree
+57_L05	7	XX	H	X X written as a pair = XX (w, key_74)
+57_L05	8	1	H	agree
+57_L05	9	6	M	agree-flagged
+57_L05	10	1	H	agree
+57_L05	11	7	H	agree
+57_L05	12	Xk	H	settled: image: barred X-like sign (konnen)
+57_L05	13	G2	M	agree-flagged
+57_L05	14	7	H	agree
+57_L05	15	7	H	agree
+57_L05	16	1	H	agree
+57_L05	17	7	H	agree
+57_L05	18	1	H	agree
+57_L05	19	V	H	agree
+57_L05	20	3	H	agree
+57_L05	21	4	H	agree
+57_L05	22	5	H	agree
+57_L05	23	G1	M	agree-flagged
+57_L05	24	1	H	agree
+57_L05	25	7	H	agree
+57_L05	26	T	H	agree
+57_L05	27	G2	M	agree-flagged
+57_L05	28	6	M	agree-flagged
+57_L05	29	4	H	agree
+57_L05	30	5	H	agree
+57_L05	31	T	H	agree
+57_L05	32	XX	H	X X written as a pair = XX (w, key_74)
+57_L05	33	1	H	agree
+57_L05	34	V	H	agree
+57_L05	35	Z	H	agree
+57_L05	36	1	H	agree
+57_L05	37	8	H	agree
+57_L05	38	1	H	agree
+57_L05	39	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L05	40	Z	H	agree
+57_L05	41	1	H	agree
+57_L05	42	7	H	agree
+57_L05	43	3	H	agree
+57_L05	44	7	H	agree
+57_L05	45	DOT	M	gap
+57_L06	1	Z	H	settled: Z drawn 2-like in this hand
+57_L06	2	1	H	agree
+57_L06	3	V	H	agree
+57_L06	4	7	H	agree
+57_L06	5	BOX	H	agree
+57_L06	6	G1	M	agree-flagged
+57_L06	7	1	H	agree
+57_L06	8	7	H	agree
+57_L06	9	DOT	H	agree
+57_L06	10	0	H	agree
+57_L06	11	6	M	agree-flagged
+57_L06	12	1	H	agree
+57_L06	13	G6	H	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L06	14	4	H	agree
+57_L06	15	5	H	settled: image: 5
+57_L06	16	1	H	agree
+57_L06	17	V	H	agree
+57_L06	18	0	H	agree
+57_L06	19	1	H	agree
+57_L06	20	T	H	agree
+57_L06	21	G1	M	agree-flagged
+57_L06	22	3	H	agree
+57_L06	23	6	H	settled: image: 6 (gestalt)
+57_L06	24	G1	M	agree-flagged
+57_L06	25	3	H	settled: image 7x: 3 with a descender (auch); both passes read 7
+57_L06	26	X	H	agree
+57_L06	27	4	H	agree
+57_L06	28	5	H	agree
+57_L06	29	0	H	agree
+57_L06	30	1	H	agree
+57_L06	31	T	H	agree
+57_L06	32	X	H	agree
+57_L06	33	4	H	agree
+57_L06	34	5	H	agree
+57_L06	35	G1	M	agree-flagged
+57_L06	36	XX	H	X X written as a pair = XX (w, key_74)
+57_L06	37	1	H	agree
+57_L06	38	V	H	agree
+57_L06	39	Z	H	agree
+57_L06	40	1	H	agree
+57_L06	41	7	H	agree
+57_L06	42	DOT	H	agree
+57_L06	43	XX	H	X X written as a pair = XX (w, key_74)
+57_L06	44	1	H	agree
+57_L06	45	6	M	agree-flagged
+57_L06	46	4	H	agree
+57_L06	47	5	H	agree
+57_L06	48	T	M	agree-flagged
+57_L07	1	EL	H	settled: image: large barred sign, as L1 pos 39
+57_L07	2	8	M	agree-flagged
+57_L07	3	1	H	agree
+57_L07	4	G6	H	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L07	5	T	H	agree
+57_L07	6	G6	H	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L07	7	4	H	agree
+57_L07	8	S	H	agree
+57_L07	9	G6	H	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L07	10	7	H	agree
+57_L07	11	7	H	agree
+57_L07	12	0	M	agree-flagged
+57_L07	13	1	H	agree
+57_L07	14	5	H	agree
+57_L07	15	1	H	agree
+57_L07	16	G6	M	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L07	17	G3	H	settled: image: w-loop (geheim)
+57_L07	18	XX	H	X X written as a pair = XX (w, key_74)
+57_L07	19	1	H	agree
+57_L07	20	V	H	agree
+57_L07	21	Z	H	agree
+57_L07	22	1	H	agree
+57_L07	23	7	H	agree
+57_L07	24	ZZ	H	settled: image: double-barred Z (zu halten)
+57_L07	25	5	H	agree
+57_L07	26	3	H	agree
+57_L07	27	6	H	settled: image: 6 (halten)
+57_L07	28	G1	M	agree-flagged
+57_L07	29	1	H	agree
+57_L07	30	7	H	agree
+57_L07	31	XX	H	X X written as a pair = XX (w, key_74)
+57_L07	32	G6	H	E-coded epsilon = G6 (no capital E in this block, checked on crops L1-L7)
+57_L07	33	G4	M	agree-flagged
+57_L07	34	1	H	agree
+57_L07	35	7	H	agree
+57_L07	36	7	H	agree
