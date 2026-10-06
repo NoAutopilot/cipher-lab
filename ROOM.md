@@ -9930,3 +9930,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 16:24 | R12D-ERBA4 worker | claim: erba-2006 word-level constrained decoder, letter-class design, it21news control; cap 2.5, box ends 17:09 UTC (80% at 17:00); for LANE LANE-RUN12-account-4
 2026-10-06 16:24 | R12D-MANT06 worker | claim: sachsstaatsarchiv-manteuffel-1712 Loc. 694/06 stride-5 screen frames 0480-0538; cap 2.5, box ends 17:08 UTC (80% at 16:59) -- for LANE LANE-RUN12-account-4
 2026-10-06 16:24 | R12D-GRAZB2 worker | claim: fr2980-gramont per-sign box re-cut + same blind PREREG sort (second attempt); cap 2.5, box ends 17:09 UTC (80% at 17:00); for LANE LANE-RUN12-account-4
+2026-10-06 16:24 | R12D-FAIR2 | claim for LANE LANE-RUN12-account-4: fair-game-2010 injective substitution solve + matched control (cap 2.5, box ends 17:09 UTC)
