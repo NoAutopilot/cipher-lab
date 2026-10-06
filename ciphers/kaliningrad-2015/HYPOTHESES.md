@@ -888,3 +888,29 @@ Per-file coverages and the five target decodes (not readings): `ciphers/kalining
   structure keeps more n-gram fit than its shuffle, so this is not evidence of a language; R10-KAL7's S3' unit sat in the
   middle (rank 26 of 51).
 - Rule 10: nothing here is a reading.
+
+## R12-KAL9, confirmation of the R12-KAL8 S3 convention-B excess with a 50-shuffle null (6 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-06-account2-run12-jobs.md` "R12-KAL9" (LANE-RUN12, account 2), R12-KAL8's named next
+step (1). Disk and CPU only.
+
+**Pre-registration (committed and pushed before any scored run).**
+- Unit: R12-KAL8's S3 unit unchanged -- `scripts/lexseg.py`, LEXSEG_CIPHER = `ciphertext_signs_B.tsv` (convention B, N 1066,
+  K 28), LEXSEG_PARAMS {"profile": "target"}, train `train_s3.txt.gz` and lexicon `lex_s3.txt` rebuilt by
+  `scripts/lexseg_build.py` (deterministic), restarts 20, solve seed 1, minimum word length 4.
+- Null: the 15 shuffled-target decodes already on file (`lexseg/r12/coverage_minlen4_s3.tsv`, seeds 1-15) plus 35 fresh ones,
+  shuffle seeds 16-50, same pipeline: 50 in all.
+- Reproducibility check (run first, in the same batch): the target (seed 0) decoded again; it must give 42 covered letters of
+  1,066 as R12-KAL8 recorded. If it does not, the old and new nulls are not the same pipeline and the run is logged as a
+  non-test (no pass/fail).
+- **Gate**: target coverage (0.0394, 42/1066, or the reproduced value) strictly above P95 = numpy.percentile(null50, 95)
+  (linear interpolation). Reported beside it: the target's rank among the 51 values and the empirical p = (1 + #null >=
+  target) / 51.
+- Positive control: R12-KAL8's S3 control (4 synthetic windows 0.524-0.800 vs G_s 0.033) is not re-run; it is far above any
+  value the null can take here, and the null only grows. Rule-3 orthogonality: coverage depends on decoded letter order, which
+  the shuffle changes (R12-KAL8's synthetic-vs-shuffled-synthetic gap shows it can differ).
+- Secondary, not gating: the length >= 5 coverage for the 35 new shuffles and the target's rank on it.
+- **What a pass licenses**: a verifier look at the S3 convention-B decode with a rule-7 re-derivation -- not a reading, no text
+  described. A fail (target <= P95): S3 convention B closes as a control-backed negative for the light homophonic design on
+  this statistic (conditional on Ernst's transcript, convention B and the NT lexicon's register), and R12-KAL8's next step (2)
+  applies: the next test needs a different design family.
