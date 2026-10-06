@@ -10126,3 +10126,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-06 23:19 | NB-HYDE worker | claim: NB-HYDE hyde-add4166-1659 check-solved + premise check, cap 7, box ends 00:29 UTC 7 Oct, for LANE NEWT-B-account-2
 2026-10-06 23:19 | NB-BAGNO check-solved | job NB-BAGNO slug bagno-francia104-1652, cap 7, box end 00:30 UTC 7 Oct, for LANE NEWT-B-account-2
 2026-10-06 23:19 | NB-CORN worker | claim: NB-CORN slug cornwallis-pro3011-1780, check-solved + premise check, cap 7, box ends 00:29 UTC 7 Oct, for LANE NEWT-B-account-2
+2026-10-06 23:23 | NB-CRAV worker | done NB-CRAV craven-rupert-1648: verdict open; gate exit 0; spec written (not run); requests DECODE 1, BL 1, archive.org 3, ericsams 1, scienceblogs 3, cryptiana 1, ciphermysteries 1, Google Books 2, GitHub 2; for LANE NEWT-B-account-2
