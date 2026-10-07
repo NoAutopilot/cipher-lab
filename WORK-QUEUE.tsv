@@ -290,3 +290,4 @@ ECK64-NO2	account-1	.claude/briefs/runs/2026-10-07-acct3-batch-1117.md	Opus 5.5	
 XCAL	account-2	.claude/briefs/runs/2026-10-07-acct3-batch-1117.md	Opus 5.5	8	75	claimed session_01M7giycnsfLjfAFTapDnGjE 2026-10-07 12:10	2026-10-07 11:2x	crossmatch recalibrate on fixed keys + adjudicate leads
 JVN-LVN	account-4	.claude/briefs/runs/2026-10-07-acct3-batch-1117.md	Opus 5.5	8	60	done 2026-10-07 11:40	2026-10-07 11:2x	jvn key_5549 on lvn 4610/4616 with control; key_5549 = lvn key.tsv; beats shuffled control, confirms existing reading, adds nothing (a482bf54)
 DEFAULT-account-2-20261007-1210	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_011LUSjgh3ctGxLUSQvqB2Nj 2026-10-07 12:11	2026-10-07 12:10	auto-fill: empty queue
+B1320-A1	account-1	.claude/briefs/runs/2026-10-07-acct3-batch-1320.md	Opus 5.5	10	75	queued	2026-10-07 13:2x	eckert-1862 verifier + stale checks; Bertomeu chapter; La Courneuve microfilm + form fields
