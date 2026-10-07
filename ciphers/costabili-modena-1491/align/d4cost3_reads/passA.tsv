@@ -1,0 +1,10 @@
+line	signs	note
+c2_L01	{CLEAR} {CLEAR} {CLEAR} | TT T y T b | T a q Z q | c b g q | g a | Z q y b | T b y + o q	leading clear words uncertain; many q/g/o confusions
+c2_L02	q Z | T a b q | TT q q g y T b | q L o | L + | d a g q | d a Z b | q L o | TT q g y a | g + y T o	q vs g and Z vs W uncertain
+c2_L03	g b a | + c | g q q d W b | u q | c a + q q | d a + y b | q Z | q q b a | u q | y a g + y T b | q Z	dash-loop signs uncertain
+c2_L04	q g b a | c + b q y z | g q | q b b q | + q | g q TT + g o | c q d | q L q | TT + TT q | c d b	dense, ambiguous
+c2_L05	q o T q | a y | b u y a | q b b + T a q q d b + g Z o y Z q | T + | g a g b T a | T q	uncertain
+c2_L06	g + | c b Z q | d a + | q b q d Z o q L q | TT q q q | T q b q d b | + T q b W q 8 | q L o | + T a b	uncertain
+c2_L07	c a + TT + | {CLEAR} {CLEAR} {CLEAR} {CLEAR} {CLEAR} | {CLEAR} + d q q y b | q b y z | TT a v y + q o | y b a g a +	mixed clear text in middle uncertain
+c2_L08	c + d o | q Z | TT + y T b | T a b | q b q q b q | q L o | d o | TT a q T q b q d b + T	uncertain
+c2_L09	{CLEAR} {CLEAR}	only fragments of adjacent lines visible; essentially empty

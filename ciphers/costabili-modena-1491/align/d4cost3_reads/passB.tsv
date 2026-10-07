@@ -1,0 +1,10 @@
+line	signs	note
+c2_L01	{CLEAR} {CLEAR} {CLEAR} | TT + y T b | T a q q q c b g q | g a 7 q y b | T b y T + o q	clear words at start; low confidence
+c2_L02	q o 2 | T a b q | TT q q q y T b | q L o | L + | d a g q d a Z b | q L o | TT q g y a 8 + y T o	medium
+c2_L03	q Z | q b b + | T a q q d b + 8 Z o y Z q | T + | g a 8 b T a T q	q glyph variants uncertain
+c2_L04	b a + Z c 8 q q Z b | u q c a + q q d a + y b | q Z 2 | q q b a u q y a 8 + y T b | q Z 2	medium
+c2_L05	q q b a | c + b o y z | g q | q b b q | + q | g q TT + g o | c q d q L q TT + TT q c d b	medium
+c2_L06	g + | c b W q d a + | q b q d Z o q L q | TT q q q | T q b q d b + T q b W q 8 | q L o + T a b	medium
+c2_L07	c a + TT + | {CLEAR} {CLEAR} {CLEAR} {CLEAR} | + d q q y b d b y z | TT a v y + q Z o | y b o d a +	clear words mid-line
+c2_L08	c + d Z o q T 2 | TT + y T b | T a b | q b d q b q | q L o d Z o TT a q T o b q d b + T	medium
+c2_L09	T o | g | 7	faint line, mostly cut off
