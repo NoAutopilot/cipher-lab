@@ -10498,3 +10498,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 17:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 17:40: spawned 1 (KH-1 session_01WBRcb87BD51vY1e2xbePSf), queued left 0
 2026-10-07 17:42 | KH4-B worker | claim: KEYHUNT unread siblings for KEY-OFFICES rows 53,54 (fr7129 Villeroy-Bongars), 64 (colbert-croissy 1668), 67 (espagnol142-mercy); cap 6.5, box 17:42-20:12 UTC (80% 19:42); for LANE KH-4
 2026-10-07 17:42 | KH4-A worker | claim: KEYHUNT unread siblings for KEY-OFFICES rows 61 62 63 65 (Nevers/League keys, Gallica), cap 6.5, box 17:42-20:12 UTC (80% 19:42); session_01KJ5GQRnzH33hiVr1AZxiax; for LANE KH-4
+2026-10-07 17:42 | KH4-E worker | claim: KEYHUNT unread siblings for KEY-OFFICES rows 55-60 (AlonsoSanchez_1/_2, spanish_1..4 Puebla), 66 (spinelli c1515), 71 (gonzaga-nevers ASMN); cap 6.5, box 17:43-20:13 UTC (80% 19:43); for LANE KH-4
