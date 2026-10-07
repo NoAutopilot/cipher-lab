@@ -1,0 +1,5 @@
+pass A onnehorscestes: LCS 6/14 gate 10 shuffle p95 7 mean 5.79 -> BELOW
+pass A aumoins: LCS 6/7 gate 5 shuffle p95 6 mean 5.00 -> BELOW
+pass B onnehorscestes: LCS 6/14 gate 10 shuffle p95 7 mean 6.00 -> BELOW
+pass B aumoins: LCS 6/7 gate 5 shuffle p95 6 mean 4.99 -> BELOW
+controls FAIL -> NON-TEST

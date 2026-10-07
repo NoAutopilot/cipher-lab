@@ -1,0 +1,11 @@
+# AM-NEVF27, 7 Oct 2026: two blind Sonnet passes (crop paths only, no key, no figures, not told the question) on f27g_L01_s1/s2.jpg
+# (fr.4715 f.27r, Gallica btv1b52509819x canvas f67, region 560,1680,3150,175 of the page = D07-NEVF25 band L09 with the gloss lines above and below).
+# field: pass, line, text (as returned; '_' gap). groups: word | digits above first letter | digits above last letter (pass's own, approximate)
+A	gloss2 (below L09)	bora_irsh bMr_aumoina_for_protieuphy
+A	groups2	bora|77|68; irsh bMr|58|31; aumoina|45|84; for|83|37; protieuphy|44|95
+A	unglossed	left end to ~4877; ~84374 between bora and irsh; ~18 132 9 between bMr and aumoina; ~564; 5874384 at right
+A	gloss1 (above L09, L08's)	in pauroifich hoc_causr_jugant_que_ficsr
+B	gloss2 (below L09)	sora_irsh_bMr_aumoina_far_protuephy
+B	groups2	sora|67|76; irsh|74|84; bMr|87|43; aumoina|45|64; far|64|83; protuephy|74|64
+B	unglossed	4656364 45 48 at left; between sora and irsh; 1 3 2 9 4 5 7 6 7 5 between bMr and aumoina; 6 4 8 4 5 before far; 5 9 5 8 7 4 3 8 4 at right
+B	gloss1 (above L09, L08's)	in pauroifi shuc ... caus sr ... Jugant ... que ... fiesh

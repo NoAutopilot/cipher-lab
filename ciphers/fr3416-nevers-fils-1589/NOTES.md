@@ -345,7 +345,7 @@ Not found in print: nothing searched (transcription job).
 
 ## Remaining gaps
 Read so far: 80 of 102 figure tokens at H (78%); 22 M (D07-NEVFV AUDIT 3, 7 Oct 2026: token 45 H -> M; NEVF-APPLY had 81/21, was 75/27); nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
-- L05 run (2 tokens M, 45 and 79): digits all confirmed by a person (NEVF-APPLY); the pairing (45 79, e + null, vs 4 57 9, m with two orphan digits, giving 'et moiens' with L06) left open from the image (D07-NEVFV AUDIT 3, 7 Oct 2026) - blocker: open-codes; sibling check D07-NEVF25 (7 Oct 2026, fr.4715 f.27r L09-L12) NON-TEST at its pre-registered insertion control (2/20 vs gate 14/20), 0 grades moved; by PREREG-D07NEVF25 no other-writer sibling can move 45/79 (f.35r itself already has four single-figure M tokens); next: a C-grade check of the period interlinear gloss over fr.4715 f.27r L09 at the lone '1' (does the decipherer read "au moins" there, i.e. an orphan figure in key-no.25 practice), one crop + 2 blind passes + reconciliation, ~$4.5; the step that would move grades is same-writer material read at H (fr.3416 f.38's ". 9 . 0 ." or f.35r's own L03/L07 stray figures, by a person in the sorter)
+- L05 run (2 tokens M, 45 and 79): digits all confirmed by a person (NEVF-APPLY); the pairing (45 79, e + null, vs 4 57 9, m with two orphan digits, giving 'et moiens' with L06) left open from the image (D07-NEVFV AUDIT 3, 7 Oct 2026) - blocker: open-codes; sibling check D07-NEVF25 (7 Oct 2026, fr.4715 f.27r L09-L12) NON-TEST at its pre-registered insertion control (2/20 vs gate 14/20), 0 grades moved; by PREREG-D07NEVF25 no other-writer sibling can move 45/79 (f.35r itself already has four single-figure M tokens); the period gloss over fr.4715 f.27r L09 (written below the line) read by 2 blind Sonnet passes (AM-NEVF27, 7 Oct 2026): NON-TEST, known-answer control K1 3/14 vs gate 10 (the passes cannot read the gloss over the frame-1 span; 'aumoina' read by both, 6/7), 0 grades moved; next: the same crops (sibling_f27/gloss/f27g_L01_s*.jpg) under the same PREREG-AMNEVF27 to one blind Opus pass + reconciliation, ~$3, or a person reading the gloss under `43 18 1 32`; the step that would move grades is same-writer material read at H (fr.3416 f.38's ". 9 . 0 ." or f.35r's own L03/L07 stray figures, by a person in the sorter)
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON); 251 words H, 43 M, 23 U - blocker: illegible; to every machine reader tried, measured by its own hidden H-word control: 1100-px word windows to Sonnet (A1B-FILS-UPPER, reads H neighbours wrong) and to Opus (A1B-FILS-UPPER2, 0/6 vs gate 5/6), then whole 2400-px line strips to Opus (DEF1-F3416, 5 Oct 2026, 1/6 vs gate 5/6, verify/upper_strips/): both instruments retired under rule 3's third-attempt clause; the M/U words need a person reading the hand (a palaeographer, or the owner on the strips images/f43u_*), not a fourth machine pass
@@ -353,14 +353,14 @@ Read so far: 80 of 102 figure tokens at H (78%); 22 M (D07-NEVFV AUDIT 3, 7 Oct 
 (Novelty N3 -> N4 settled: N4 set by A1B-VERIFY-FILS-N4b, 3 Oct 2026, AUDIT.md "Third audit".)
 
 ## Escalation
-- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned twice (FILS-F38 single passes; A1B-FILS-F38B second passes + reconciliation): FAIL both times by the same gate; L05 pairing, fr.4715 f.27r L09-L12 read by 2 blind Sonnet passes + reconciliation, frame-switch detector (D07-NEVF25, 7 Oct 2026): NON-TEST at its control (2/20), 0 grades moved
+- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned twice (FILS-F38 single passes; A1B-FILS-F38B second passes + reconciliation): FAIL both times by the same gate; L05 pairing, fr.4715 f.27r L09-L12 read by 2 blind Sonnet passes + reconciliation, frame-switch detector (D07-NEVF25, 7 Oct 2026): NON-TEST at its control (2/20), 0 grades moved; the period gloss below f.27r L09 read by 2 blind Sonnet passes (AM-NEVF27, 7 Oct 2026): NON-TEST at its known-answer control (K1 3/14 vs 10), 0 grades moved
 - [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter, line 11 and margin note cropped and read by two blind passes (FILS-UPPER) and reconciled once against the crops (FILS-RECON: 84 splits settled, 23 words left U)
 - [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR); L05 split digits read by a person in the sign sorter (R10-NEVF2 built, NEVF-APPLY applied 6 Oct 2026): 6 tokens M -> H
 - [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved; the same re-registered without class 0 (R9-NEVF, 6 Oct 2026): non-test at the leave-one-out gate (0.644 vs 0.90), 0 tokens moved; whole line strips of the upper letter to a blind Opus pass C (DEF1-F3416, 5 Oct 2026): 1/6 H controls (gate 5/6), non-test, 0 tokens moved, line-strip instrument retired
-Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the period gloss over fr.4715 f.27r L09 at the lone '1' read as a C-grade check of orphan figures in key-no.25 practice (~$4.5), knowing it cannot move 45/79 by itself (PREREG-D07NEVF25 grade rule)
+Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the f.27r L09 gloss crops (sibling_f27/gloss/) to one blind Opus pass under PREREG-AMNEVF27 (~$3; Sonnet passes were a non-test at K1 3/14, AM-NEVF27), knowing it cannot move 45/79 by itself (PREREG grade rule)
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -808,3 +808,26 @@ transcription priced per line pass (~40 lines x 2 passes, ~$1.5 per 4-line call 
 Requests: gallica.bnf.fr 2 (1 overview at 1000 px, 1 region fetch at native size; manifest cached). Vision: 2 Sonnet subagent
 calls on 8 line crops; 2 own looks (overview, debug overlay) + 1 crop. Not found in print: nothing searched (sibling read job).
 
+## AM-NEVF27 results (account 2 for LANE LANE-AM-0914, 7 Oct 2026, 10:19-10:3x UTC by date -u)
+
+PREREG-AMNEVF27.md (commit 663f06185, deviation appended bfa96507d, both pushed before any pass read). Question: does the period
+gloss over fr.4715 f.27r L09 give no letter to the three figures `1 8 1` between frame-1 "...cestes" (`43`) and frame-0 "aumoins"
+(`32`), i.e. a decipherer of the time reading across a one-figure orphan? Deviation recorded before reading: the gloss for L09 is
+written BELOW the figure line (between L09 and L10); the words above L09 are L08's. Crop (pasted in the PREREG):
+`tools/iiif_lines.py --image <src_..._f67_560_1000_3150_1100.jpg> --region 0,680,3150,175 --prefix f27g --centres 87 ...` -> 2
+segments 1700x175 (`sibling_f27/gloss/f27g_L01_s1.jpg`, `_s2.jpg`). Two blind Sonnet passes (crop paths only, no key, no figures,
+not told the question): `sibling_f27/gloss/passes.tsv`. Scorer `sibling_f27/gloss/score_gloss.py` (output `score_out.txt`):
+- Gloss below L09 as read: A `bora_irsh bMr_aumoina_for_protieuphy`, B `sora_irsh_bMr_aumoina_far_protuephy`.
+- **K1 (gloss over the frame-1 span vs "onnehorscestes"): A 3/14, B 3/14, gate 10; shuffle p95 4 / 5 -> BELOW. K2 (vs "aumoins"):
+  6/7 both, shuffle p95 5 -> ok. Controls FAIL -> NON-TEST; S is not scored.** Whole-line LCS: 6/14 and 6/7 both, under shuffle
+  p95 7 / 6. The Sonnet readers cannot read this secretary-hand gloss over the frame-1 span (they return "sora/bora irsh bMr" where
+  the key gives "onne hors ces tes"), so nothing about the junction is concluded.
+- Observation, not counted (controls failed): both passes independently place no gloss letter under the stretch between "bMr" and
+  "aumoina" (A "~18 132 9", B "1 3 2 9 ..."), and both read "aumoina" where the key gives "aumoins". Digit placement in both passes
+  is self-described as approximate.
+- Re-judge of f.35r token 79 under the PREREG grade rule: no change (non-test, and no outcome could move 45/79). **H 80 / M 22
+  unchanged; `decode_f35.py --check` OK.** AUDIT.md not touched (no count moved).
+- Next (not attempted): the same two crops to one blind Opus pass under the same PREREG (a different reader, not a re-tune), ~$3;
+  or a person reading the gloss under `43 18 1 32`. The rest of f.27r stays the separate ~$30 transcription job named in D07-NEVF25.
+Requests: gallica.bnf.fr 1 (region fetch at native size). Vision: 2 Sonnet subagent calls (2 crops each); 2 own looks (0.5x
+locating strip, debug crop). Not found in print: nothing searched (sibling read job).
