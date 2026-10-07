@@ -1,0 +1,63 @@
+ctl 1 0.35
+ctlnull 1 0.35
+ctl 2 0.35
+ctlnull 2 0.35
+ctl 3 0.35
+ctlnull 3 0.35
+ctl 4 0.35
+ctlnull 4 0.35
+ctl 5 0.35
+ctlnull 5 0.35
+ctl 6 0.35
+ctlnull 6 0.35
+ctl 7 0.35
+ctlnull 7 0.35
+ctl 8 0.35
+ctlnull 8 0.35
+ctl 9 0.35
+ctlnull 9 0.35
+ctl 10 0.35
+ctlnull 10 0.35
+ctl 1 0.5
+ctlnull 1 0.5
+ctl 2 0.5
+ctlnull 2 0.5
+ctl 3 0.5
+ctlnull 3 0.5
+ctl 4 0.5
+ctlnull 4 0.5
+ctl 5 0.5
+ctlnull 5 0.5
+ctl 6 0.5
+ctlnull 6 0.5
+ctl 7 0.5
+ctlnull 7 0.5
+ctl 8 0.5
+ctlnull 8 0.5
+ctl 9 0.5
+ctlnull 9 0.5
+ctl 10 0.5
+ctlnull 10 0.5
+real 1
+real 2
+real 3
+realnull 1
+realnull 2
+realnull 3
+realnull 4
+realnull 5
+realnull 6
+realnull 7
+realnull 8
+realnull 9
+realnull 10
+realnull 11
+realnull 12
+realnull 13
+realnull 14
+realnull 15
+realnull 16
+realnull 17
+realnull 18
+realnull 19
+realnull 20
