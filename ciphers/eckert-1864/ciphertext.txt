@@ -203,3 +203,140 @@ brought to account webster Jacob & so[?] it goes
 Mason Cairo Washn Decr 10th 1864
 Imogene feeble for Pandora Winslow Bladder zodiac All whist
 from Aragon must grotto Lantern till further orders Jew
+
+# E21-E29: LS-R1 (7 Oct 2026, account 1, for LANE ST-LEDGER). Read from the 2400 px IIIF images (strip crops by
+# tools/iiif_lines.py, NOTES.md "## LS-R1") with the volunteer text (sources/mssEC19/p<pointer>.json) as second
+# witness; where the two differ the image is taken and the word is listed in NOTES.md. Entries chosen by LS-PRE's
+# filter (entries-mssEC19.tsv: priority 1, no OR hit, or_cov <= 3).
+
+### E21 | Page 42-43 | 8934-8935 | 19 Apr 1864 1 PM, to Lt. Col. Biggs, Fort Monroe (operator Geo. D. Sheldon)
+Geo D. Sheldon Ft Monroe Washington Apl 19th 1864
+Harriet For Lieut Pandora Begs Vincent Zebra Pebble Sampson
+boats and perfume tugs leave Growl immedy for Appian
+Zodiac Princess Wise wicks from fool and Baptism has
+chart erred feeble side wheel Weaselers penny propel lears
+Plunder tugs Plank Wayworn bar geese Lampoon can all
+bar geese all to leave with dispatch Unity Tappan
+Van Vliet France has chart heard weaselers and a
+large number of schooners to send peru ballasted zebra Will
+chart her Warrior some double decked weasel barges capacity postpone
+publish Cattle and more weasel hers Among weaselers already Chart
+heard are George Leary Helen Getty Metamora Champion Matilda Highland
+Light Richland and other names not yet reported Unity I
+have called for a list of names with capacity which
+will be forwarded when received Zodiac All not already under
+way will be ordered to Appian direct those first Chart
+heard were ordered to assemble here Yoke Me Eggs Belcher
+plain: chart Helen Richland
+
+### E22 | Page 57 | 8949 | 26 Apr 1864 12.30, to Capt. Pennock, Cairo, for Porter (operator W. T. Mason)
+WT Mason Manager Cairo Washn Apl 26th
+Gertrude harsh pledge for Princess Pennock Bladder unity
+Send following to Niagara by dispatch boat zebra
+For Niagara zodiac your despatch of female April
+recd your views & course are approved unity
+Juno informs the Dept that neither Shelter Smith
+nor his saint will be withdrawn that the
+opal will continue operations on the Berlin &
+co operate with the navy zodiac The Dept
+has entire confidence in your judgement in the
+conduct & management of affairs committed to you
+& especially of those on Berlin youth Buxton
+
+### E23 | Page 63 | 8955 | 2 May 1864 9 PM, to Col. H. S. Olcott, New York (Horner)
+Horner (No 1) NY Wash. May 2. 1864. 9 PM
+Rosalie for paradise H. S. Ol - cott Frog
+---- Letter recd Do not proceed against anyone
+in Frog Yard ---- You are Commissioned to
+investigate only not to prosecute ---- That will
+be done by the Burton upon all the
+facts which you are able to collect ----
+It was only today that Solicitor Whiting gave
+his opinion upon certain points ---- When you
+have finished your evidence in any case wick
+it ready for examination Sig G. Fox Asst buxton
+plain: Whiting Fox
+
+### E24 | Page 72 | 8964 | 18 May 1864, to C. F. Adams, London, and W. L. Dayton, Paris, via Horner, New York
+Jno Horner N. Y. Washington May 18th 1864
+Grapes May Gradual Viola For Charles Francis Adams
+Esquire U S Minister Plenipotentiary London Zodiac Orders
+have been given for the Oakum and punish
+ment torch fabricators and publishers torch spurious proclamation
+youth Bunyan Send copy also addressed to Hon
+Wm L Day ton US Minister Plenipotentiary Paris
+59 w chg Secy State
+plain: Francis Adams publishers
+
+### E25 | Page 131 | 9023 | 29 July 1864 12.30 PM, to 'Submit' (Wallace) at Baltimore (operator Sampson)
+Sampson Breno (no 1) Wash. D. C. July 29. 1864. 12.30 P. M.
+Submit ---- It is wicked that Mose by
+& White have pocketed the Attica at Ed -
+wards & Con - rads Samson with penny publish
+pacific & pebble vermin of negro ---- Send
+out immedy your Panama pike a pagan &
+some Squase to protect the Welch & also
+any of Might's trains on Rock - ville &
+Fred e r i c k p i
+k e s i g Ben - jam - in
+plain: White
+
+### E26 | Page 159 | 9053 | 21 Aug 1864 1.30 PM, to Dix, New York (Horner)
+Horner NY (No 1) Wash D. C. Aug 21. 1864 1 30 PM
+Grapes augustus harrow plug hannah for Kunkle frog
+Unity This Quadroon has just recd reliable sutton
+that a large stock of revolvers & offal
+imported recently for copper heads in Alden is
+stored at No lampoon plank Walker St frog
+awaiting to be forwarded wicoff ---- a portion was
+seized last night in climax marked stationary ----
+You will take immediate measures to have the premises
+leg peach Walker St searched & seize any
+nuisance and olive thay may there ---- It
+may be disguised as violet Hardware Virgin <ins>Stationary</ins> violet
+or some other device ---- You will have all boxes
+opened & examined ---- much may depend upon
+the promptness & vigilance with which this order
+is executed Pls give it diligent attention Indigo
+plain: Walker
+
+### E27 | Page 199 | 9091 | 10 Oct 1864, Judge Advocate L. C. Turner to 'beverage', New York (Horner)
+Horner N. Y. (No. 1) Washn. Octo 10. 1864.
+Grunt Viola for beverage ---- Plank spit pekin
+Jewett & Siebert pedlar came from Galway last
+week pekin the first going to harem the
+last to frog ---- They are supposed toby
+walnut agents ---- James Gemmell pocketed the Attica
+with them & is now in Old Capitol
+---- A Miss Gardner was with them ----
+She was going to Norwich Arabia & had
+been teaching Waxy Webster L. C. Turner
+L C Turner Judge Advo.
+plain: harem
+
+### E28 | Page 199 | 9091 | 11 Oct 1864 11.30 AM, to Thurlow Weed, New York (Horner)
+Horner N Y. No 1 Washn Oct 11th 1864
+Florence for Thurlow Weed Frog zebra Pilgrim[?] Pennock U
+S Navy of Bladder in temporary polka torch Argyle
+squadron will putty boat optic disposal torch Amos election
+agents to proceed when required to receive the vote
+or proxy torch sailors Orbit ensuing election stop All
+the facilities wilby furnished by the naval officer walrus
+FW Seward Asst Byron
+plain: squadron
+
+### E29 | Page 223 | 9115 | 5 Nov 1864 4 PM, to Dix, New York (John Horner)
+John Horner (1) Wash'n Nov. 5th 1864
+Growl Julia Plaster for Kunkle unity The Infant directs the
+oakum at Emily on Monday morning next torch rambling named
+Walnut agents and the size your of their papers zebra
+Tappan Dudley Harris Port land Adam Pekin Lamp Person or
+Leg years old has a bull dog look Pedlar snuffs
+up his nose squints with his left eye Pekin dark
+hair slightly tinged with gray bright dark eyes with a
+slight scar under the right eye Pekin He has aliasses
+as Spencer Pedlar Barbour & C zebra Paradise J D
+Martin Boston zodiac Pandora Geo and Tauntar A Haw thorne
+Frog unity J Taylor tavern keeper Brook = lyn zebra W
+O Massie water street France youth Insanity assistant India end
+plain: hair Spencer Taylor

@@ -232,5 +232,59 @@ Code-word tokens: H 28.
 
 Code-word tokens: H 9.
 
-Totals over the 20 entries: H 298, C 8, I 0, M 0.
+**E21 | Page 42-43 | 8934-8935 | 19 Apr 1864 1 PM, to Lt. Col. Biggs, Fort Monroe (operator Geo. D. Sheldon)**
+
+{time: 1 PM} For Lieut [Colonel] Begs [Quartermaster] [.] [3] [Ferry] boats and [3] tugs leave [Washington] immedy for [Monroe] [.] [Captain] Wise [Report]'s from [Philadelphia] and [Baltimore] has chart erred [10] side wheel [Steam]ers [4] propel lears [7] tugs [2] [Steam] bar geese [40] can all bar geese all to leave with dispatch [.] [Major] Van Vliet [New York] has chart heard [Steam]ers and a large number of schooners to send [As soon as] ballasted [.] Will chart her Warrior some double decked [Steam] barges capacity [700] Cattle and more [Steam] hers Among [Steam]ers already Chart heard are George Leary Helen Getty Metamora Champion Matilda Highland Light Richland and other names not yet reported [.] I have called for a list of names with capacity which will be forwarded when received [.] All not already under way will be ordered to [Monroe] direct those first Chart heard were ordered to assemble here  {tail: [signed] Me Eggs [Qr Master Genl U.S.]}
+
+Code-word tokens: H 37.
+
+**E22 | Page 57 | 8949 | 26 Apr 1864 12.30, to Capt. Pennock, Cairo, for Porter (operator W. T. Mason)**
+
+{time: 12.30} [26] for [Captain] Pennock [Cairo] [.] Send following to [D. D. Porter] by dispatch boat [.] For [D. D. Porter] [.] your despatch of [14] April recd your views & course are approved [.] [Maj Genl U.S. Grant] informs the Dept that neither [General] Smith nor his [Force] will be withdrawn that the [Army] will continue operations on the [Red River] & co operate with the navy [.] The Dept has entire confidence in your judgement in the conduct & management of affairs committed to you & especially of those on [Red River]  {tail: [signed] [Secretary of Navy]}
+
+Code-word tokens: H 21.
+
+**E23 | Page 63 | 8955 | 2 May 1864 9 PM, to Col. H. S. Olcott, New York (Horner)**
+
+{time: 9 PM} for [Colonel] H. S. Olcott [New York] ---- Letter recd Do not proceed against anyone in [New York] Yard ---- You are Commissioned to investigate only not to prosecute ---- That will be done by the [Secretary of Navy] upon all the facts which you are able to collect ---- It was only today that Solicitor Whiting gave his opinion upon certain points ---- When you have finished your evidence in any case [Report] it ready for examination Sig G. Fox Asst [Secretary of Navy]
+
+Code-word tokens: H 7.
+
+**E24 | Page 72 | 8964 | 18 May 1864, to C. F. Adams, London, and W. L. Dayton, Paris, via Horner, New York**
+
+[Washington] {date: May 18} {time: 12.30} For Charles Francis Adams Esquire U S Minister Plenipotentiary London [.] Orders have been given for the [Arrest (-ed, -ing)] and punish ment [Of the] fabricators and publishers [Of the] spurious proclamation  {tail: [signed] [Secretary of State] Send copy also addressed to Hon Wm L Day ton US Minister Plenipotentiary Paris 59 w chg Secy State}
+
+Code-word tokens: H 9.
+
+**E25 | Page 131 | 9023 | 29 July 1864 12.30 PM, to 'Submit' (Wallace) at Baltimore (operator Sampson)**
+
+[Maj. Gen. Lew Wallace (Baltimore)] ---- It is [Report]ed that Mose by & White have [Cross (-ed, -ing)]ed the [Potomac] at Edwards & Conrads Samson with [400] [Cavalry] & [3] [Pieces] of [Artillery] ---- Send out immedy your [Cavalry] [Cut off] a [Battery] & some Squase to protect the [Rail Road] & also any of Might's trains on Rockville & Fred e r i c k p i k e s i g [General in Chief]
+
+Code-word tokens: H 14, C 1.
+
+**E26 | Page 159 | 9053 | 21 Aug 1864 1.30 PM, to Dix, New York (Horner)**
+
+[Washington] augustus [21] {time: 1.30 PM} for [Maj Gen Jno A. Dix] [New York] [.] This [Department] has just recd reliable [Information] that a large stock of revolvers & [Ammunition] imported recently for copper heads in [Indiana] is stored at No [42] Walker St [New York] awaiting to be forwarded [West] ---- a portion was seized last night in [Indianapolis] marked stationary ---- You will take immediate measures to have the premises [42] Walker St searched & seize any [Arms] and [Ammunition] thay may there ---- It may be disguised as ["] Hardware ["] Stationary ["] or some other device ---- You will have all boxes opened & examined ---- much may depend upon the promptness & vigilance with which this order is executed Pls give it diligent attention [Secretary of War]
+
+Code-word tokens: H 24.
+
+**E27 | Page 199 | 9091 | 10 Oct 1864, Judge Advocate L. C. Turner to 'beverage', New York (Horner)**
+
+[Warrenton] {time: 12.30} for beverage ---- [2] [Men] [,] Jewett & Siebert [,] came from [Richmond] last week [,] the first going to harem the last to [New York] ---- They are supposed toby [Rebel] agents ---- James Gemmell [Cross (-ed, -ing)]ed the [Potomac] with them & is now in Old Capitol ---- A Miss Gardner was with them ---- She was going to Norwich [Connecticut] & had been teaching [South]  {tail: [signed] L. C. Turner L C Turner Judge Advo.}
+
+Code-word tokens: H 15.
+
+**E28 | Page 199 | 9091 | 11 Oct 1864 11.30 AM, to Thurlow Weed, New York (Horner)**
+
+{time: 11.30 AM} for Thurlow Weed [New York] [.] [Captain][?] Pennock U S Navy of [Cairo] in temporary [Command = Er (-ed, -ing)] [Of the] [Mississippi] squadron will putty boat [At the] disposal [Of the] [New York] election agents to proceed when required to receive the vote or proxy [Of the] sailors [At the] ensuing election stop All the facilities wilby furnished by the naval officer  {tail: [signed] FW Seward Asst [Secretary of State]}
+
+Code-word tokens: H 15.
+
+**E29 | Page 223 | 9115 | 5 Nov 1864 4 PM, to Dix, New York (John Horner)**
+
+[Washington] {time: 4 PM} [5] for [Maj Gen Jno A. Dix] [.] The [Secretary of War] directs the [Arrest (-ed, -ing)] at {time: 10 AM} on Monday morning next [Of the] [Follow (-ed, -ing)]ing named [Rebel] agents and the size your of their papers [.] [Major] Dudley Harris Port land [Maine] [,] [35] or [40] years old has a bull dog look [,] snuffs up his nose squints with his left eye [,] dark hair slightly tinged with gray bright dark eyes with a slight scar under the right eye [,] He has aliasses as Spencer [,] Barbour & C [.] [Colonel] J D Martin Boston [.] [Colonel] Geo and Tauntar A Haw thorne [New York] [.] J Taylor tavern keeper Brooklyn [.] W O Massie water street [New York]  {tail: [signed] [C. A. Dana] assistant [Secretary of War] end}
+
+Code-word tokens: H 33.
+
+Totals over the 29 entries: H 473, C 9, I 0, M 0.
 <!-- decode.py: derived block ends -->
