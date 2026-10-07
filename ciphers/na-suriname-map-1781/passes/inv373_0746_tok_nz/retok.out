@@ -1,0 +1,10 @@
+# run 1 (gated): IJ -> [ij], SH -> [sh-lig]
+0746 before: pairs 27, signs 852, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 758, A 0.920; C1 mean 0.516 p99 0.556 max 0.575 -> SAME SYSTEM (DP)
+0746 after : pairs 27, signs 851, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 760, A 0.920; C1 mean 0.515 p99 0.554 max 0.575 -> SAME SYSTEM (DP); aliased tokens 9
+  0746 A3 -> [ij] (image IJ): n_al 6, agree 6, share 1.000; C1 share mean 0.431 p99 1.000; scan A 0.920 -> 0.920 -> FAIL
+  0746 A4 -> [sh-lig] (image SH): n_al 2, agree 2, share 1.000; C1 share mean 0.038 p99 0.500; scan A 0.920 -> 0.920 -> non-test (n_al < 5)
+# run 2 (descriptive, no gate): Y-labelled y-forms tagged instead of IJ; SH as run 1
+0746 before: pairs 27, signs 852, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 758, A 0.920; C1 mean 0.516 p99 0.556 max 0.575 -> SAME SYSTEM (DP)
+0746 after : pairs 27, signs 852, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 760, A 0.920; C1 mean 0.515 p99 0.554 max 0.575 -> SAME SYSTEM (DP); aliased tokens 54
+  0746 A3 -> [y-fam] (image Y, descriptive only, no gate): n_al 47, agree 45, share 0.957; C1 share mean 0.443 p99 0.615; scan A 0.920 -> 0.920 -> PASS
+  0746 A4 -> [sh-lig] (image SH): n_al 2, agree 2, share 1.000; C1 share mean 0.038 p99 0.500; scan A 0.920 -> 0.920 -> non-test (n_al < 5)
