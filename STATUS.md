@@ -5855,3 +5855,21 @@ Results:
 Open for the next lane (all folders' Verdict lines updated by their workers): fr16142 c510 tools/lookalike_pass.py on the reconciled passes then score (~$2);
 colbert26 word-level gloss-to-span pairing on native crops (~$6); fr16045 BnF 1586-87 table lookup (~$1) or the f.246r-v campaign (~$36);
 decode-1411 p.5 read by a person; fr16104 owner sign sorter; antt-linhares skipped (intake gate: blocked).
+
+## LANE LANE-NZ-0914 handoff (session_01AXbLoAzfBuAUxdjhfX6mTL, account 4), 7 October 2026 (closed 10:3x UTC: fresh n-z steps spent, lane about 19.9 of 40)
+
+Brief: .claude/briefs/runs/2026-10-07-acct3-lanes-0914.md (default lane over folders n-z, freshness check per row); jobs file
+.claude/briefs/runs/2026-10-07-account4-lanenz-0914-jobs.md. FRESH-0914 item 2 had not landed at start, so the freshness check was applied
+per row by script greps (NOTES.md dated sections, ROOM.md since 6 Oct 18:00, briefs of the last 24 h).
+- Freshness: of 6 runnable n-z rows and ~35 blocked-row `parallel` actions, nearly all had run on 6 Oct (RUN7-RUN15). Corrected at 0 cost:
+  scorpion-1991 and siena-concistoro-2308 next-step lines (no key material; next_steps.py now reads both needs-key), na-oldenbarnevelt-2442
+  parallel (v2) marked done (R15-OLDV2). nla-heinrich audit2 not needed (N0). Excluded: Birago, pro3055-clinton (text known), rah-juan-manuel
+  (FRESH-0914 item 1).
+- Workers (6, all archived and ledgered): NZ-WVOV wvo-hessen verifier 2.03 (realign reproduced, k28 = b upheld at C); NZ-SURIJ suriname 4.20
+  (premise corrected, IJ FAIL underpowered, s-shape look non-test); NZ-MANT manteuffel 2.03 (stale Verdict fixed, 0581-0592 nothing in range);
+  NZ-UNT27 untersberg 3.09 (op.27 tablet/scroll: no symA; no in-manuscript step left); NZ-TAUR taurello 0.72 (Sonnet; no forename in
+  Sanuto XLII-XLIV); NZ-MANT2 manteuffel 3.00 (0517 numerals are marginal; 0005-0495 nothing in 381-625). Workers 15.07, orchestrator ~4.8.
+- No key value, reading, grade or N-class changed. Known-text share 13%.
+- Left (keep going, not run): wvo-hessen per-row eye alignment of 33 C tiles (~1.5) then crib-placement test (~2) -- known-text work on a
+  glossed leaf, deferred by the one-fifth guardrail; manteuffel 4-digit inventory of 694/03-06 (~2), low yield for f.410's U codes. Every other
+  n-z row is blocked from outside (copy orders, LOCAL-QUEUE, owner sorter, new material).
