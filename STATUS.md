@@ -5873,3 +5873,22 @@ per row by script greps (NOTES.md dated sections, ROOM.md since 6 Oct 18:00, bri
 - Left (keep going, not run): wvo-hessen per-row eye alignment of 33 C tiles (~1.5) then crib-placement test (~2) -- known-text work on a
   glossed leaf, deferred by the one-fifth guardrail; manteuffel 4-digit inventory of 694/03-06 (~2), low yield for f.410's U codes. Every other
   n-z row is blocked from outside (copy orders, LOCAL-QUEUE, owner sorter, new material).
+
+## LANE LANE-AM-0914 handoff (session_01Ng5f2sUU7u1X9HukiLR7mf, account 2), 7 October 2026 (closed 11:1x UTC: fresh a-m steps spent, lane about 31.7 of 40)
+
+Brief: .claude/briefs/runs/2026-10-07-acct3-lanes-0914.md (default lane over folders a-m, freshness check per row); jobs file
+.claude/briefs/runs/2026-10-07-account2-laneam-0914-jobs.md. FRESH-0914 was still queued, so freshness was checked per row against NOTES.md
+dated sections and ROOM.md 6-7 Oct lines. Gate 0a: SESSION-SWEEP-account-2 claimed since 5 Oct, never closed; proceeded and said so.
+- Freshness: VERIFY-BACKLOG a-m rows were Birago (off limits) or "no verifier action"; most a-m next steps had run 6-7 Oct. Corrected at 0 cost:
+  fr16045-pisany T40 gap row (its page-internal compare ran as D07-PISSD), fr3621-dinteville While-waiting sorter item (built DIN-SORTER).
+- Workers (9, ledgered): AM-D1411P5 decode-1411 p.5 8.16 (266 numbers read, 2 passes 87.7%); AM-D1411V verifier 1.75 (130 of them copy the
+  in-sample p.2; independent 136 do not pass, 114 S -> M); AM-NEVF27 fr3416 2.70 (gloss control 3/14, non-test); AM-ECK64N2 eckert-1864 1.81
+  (N2-L, H 13); AM-ECK64K eckert-1864 1.73 (N2-M Kimber 11 June 1864, H 13); AM-ECKV verifier 2.47 (N2-L N1 D4, N2-M N3 D4, key period,
+  SO-ECKERT-N2M queued); AM-ECK62Q eckert-1862 3.85 (0/25 entries moved, control PASS); AM-REV68 fr3986 3.21 (sibling items 68 f.146v and 75
+  ff.157r-v, same family and copyist, 15 line crops); AM-LOOK Sonnet 1.63 (5 lookups). Workers 27.31, orchestrator ~4.4.
+- Known-text share 17%. One verifier caught an over-claim (decode-1411 p.5 S grades) before it left the folder.
+- For the account-3 orchestrator: AM-REV68's 15 fr3986 sibling crops (images/siblings/) are ready to add to the ASKS 102 sorter (ROOM flag 10:42).
+- Left (keep going, not run): fr16045-pisany 17 Sept 1586 f.246r+v (~36, unread text; did not fit the cap); decode-1411 p.6+ with copy-check
+  against p.1-p.4 before scoring (D1411V's lesson); fr3416 f.27r gloss to one blind Opus pass or a person (~3); fr3986 f.146r clear letter (same
+  day, to the King) as a crib candidate for item 68; eckert-1864 further No. 2 siblings named in its Verdict. Every other a-m row is blocked from
+  outside (owner sorters, copy orders, LOCAL-QUEUE).
