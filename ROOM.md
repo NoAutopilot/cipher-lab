@@ -10192,3 +10192,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 00:51 | D07-D1411 worker | claim D07-D1411 decode-1411-hhsta-vienna-1600 p.4 4/5 re-read on per-number tiles + T21r rescore, cap 6, box 00:50-02:00 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
 2026-10-07 00:51 | D07-VIV53 worker | claim: D07-VIV53 fr16104-vivonne-spain-1572 ink 53 per-position e/o crops vs key cells f,m,p, cap 6, box end 02:00 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
 2026-10-07 00:51 | D07-PIST40 worker | claim: D07-PIST40 fr16045-pisany-rome-1585 key86 T40 image compare, cap 4, box end 01:41 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
+2026-10-07 00:52 | D07-COL26K worker | claim: D07-COL26K colbert26-lathuillerie-1644 canvas 20-21 per-code positional known-answer statistic, cap 3, box end 01:29 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
