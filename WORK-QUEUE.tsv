@@ -300,3 +300,6 @@ KH-4	account-4	.claude/briefs/runs/2026-10-07-acct3-keyhunt.md	Opus 5.5	40	300	d
 KHF-1	account-1	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	10	90	claimed session_01LdaWpkFdQ4Q6GVN9huMpM7 2026-10-07 20:40	2026-10-07 19:3x	erving-monroe-1806 check-solved + verifier
 KHF-2	account-2	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	10	90	claimed session_01Y8ZhnFiRmJqcV5pQK87fP4 2026-10-07 20:10	2026-10-07 19:3x	wvo-11008 Orange to Lodewijk 1572 check-solved + verifier
 KHF-4	account-4	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	8	75	done 2026-10-07 19:44	2026-10-07 19:3x	fr3988 f.143 Henri IV to Nevers 1593 held-out hand check; NON-TEST: neg control 70% in-family
+ST-LEDGER	account-1	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	queued	2026-10-07 20:0x	STEAM: ledger scout + work (one key, many entries)
+ST-REBUILD	account-2	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	queued	2026-10-07 20:0x	STEAM: key rebuilds from glossed siblings, then unglossed neighbours
+ST-ACCESS	account-4	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	queued	2026-10-07 20:0x	STEAM: screen 27, copy-order shortlist of 33 (free tiers first), Monroe/Pinkney
