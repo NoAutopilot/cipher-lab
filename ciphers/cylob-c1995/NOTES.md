@@ -130,7 +130,7 @@ ciphermysteries.com 2 (site search, post); boingboing.net 1 (403); cloud.roterin
 
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
-next: fetch Rotering's 2015 partial transcription PDF again (the cloud.rotering-net.de share named above), turn it into ciphertext.tsv and check one grid page against the scan before any solve (rule 2), ~$2. Who acts: agent. Source: this file's "Next-step note (not run): Rotering's 2015 transcription"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+~~next: fetch Rotering's 2015 partial transcription PDF again (the cloud.rotering-net.de share named above), turn it into ciphertext.tsv and check one grid page against the scan before any solve (rule 2), ~$2. Who acts: agent. Source: this file's "Next-step note (not run): Rotering's 2015 transcription"; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.~~ Done by R12D-CYLOB (6 Oct 2026), section below; struck by FRESH-0914, 7 Oct 2026.
 
 ## Rotering 2015 transcription -> ciphertext.tsv; one page checked against a scan (R12D-CYLOB, 6 Oct 2026)
 
@@ -204,3 +204,10 @@ not licensed at this N". Test 4 (English IC/frequency against this alphabet) is 
 S1 already places the target below the English-through-16-signs control. One-line suggestion (not run): a design test on the
 repeat structure itself -- positional placement of repeated rows/headers across pages and the p.20 table against a matched
 synthetic grid -- before any language test, ~$2.
+
+## Next step (FRESH-0914 staleness sweep, 7 Oct 2026)
+
+The 5 Oct next step (Rotering 2015 transcription -> ciphertext.tsv, one page checked) was done by R12D-CYLOB and spec cheap
+test 3 by R12D-CYL3 (both 6 Oct 2026, sections above). next: R12D-CYL3's own one-line suggestion -- a design test on the
+repeat structure (positional placement of repeated rows/headers across pages and the p.20 table against a matched synthetic
+grid) before any language test, ~$2. Who acts: agent.

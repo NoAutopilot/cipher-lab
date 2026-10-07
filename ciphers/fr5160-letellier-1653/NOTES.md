@@ -2126,7 +2126,7 @@ good-citizen rule. Part III now stands at **245 of 375 canvases checked (65%), n
 has been read except the six failures; past 622 only KX-COLB26's every-5th sample has been read. This is still a sample
 negative, not a sweep. It is a search result for the Brienne 1661 despatch register, not a statement about fr.5160.
 
-**Next step:** fetch the remaining 130 (`awk -F'\t' '$3=="unchecked"' colb26/sweep_405_779.tsv`) the same way in a later session,
+~~**Next step:**~~ (done by R12A-F5160B, 6 Oct 2026) fetch the remaining 130 (`awk -F'\t' '$3=="unchecked"' colb26/sweep_405_779.tsv`) the same way in a later session,
 about $1.5. At today's server pace that is roughly 45-60 minutes of wall clock, so give it its own box. A hit opens intake for
 that leaf; a miss completes the part III negative. The fr.20661-20662 lead (R11A-F5160 (3)) is unaffected.
 
@@ -2158,7 +2158,7 @@ This is a search result for the Brienne 1661 despatch register in Mélanges de C
 on any canvas read, with one canvas outstanding. It says nothing about fr.5160 itself, and the fr.20661-20662 lead (R11A-F5160 (3))
 is unaffected. Per-canvas record: `colb26/sweep_405_779.tsv` (270 clear, 1 fetch-failed).
 
-**Next step:** one fetch of canvas 679 at `full/600,/0/native.jpg` in a later session (~$0.2) completes part III.
+~~**Next step:**~~ (done by AM-LOOK, 7 Oct 2026) one fetch of canvas 679 at `full/600,/0/native.jpg` in a later session (~$0.2) completes part III.
 
 Requests: gallica.bnf.fr 133 (130 images at 200, 2 image 404s on canvas 679, 1 info.json for 679), sequential, 2 s apart. No
 other host, no subagents, no images committed (thumbnails stayed in the session scratchpad). Status unchanged (open).
@@ -2167,3 +2167,9 @@ other host, no subagents, no images committed (thumbnails stayed in the session 
 
 Item: Colbert 26 (ark btv1b10035069t) canvas 679, 10:5x UTC, for LANE LANE-AM-0914. info.json answered 200 (7853 x 6176), then `full/600,/0/native.jpg` answered 200 (image/jpeg, 51,266 bytes) at the first try; the earlier 404s did not recur. Read by eye: a two-page opening of plain chancery-hand despatch text (left page ends "... ce 1er octobre 1661"; right page, printed folio number 270, opens "Louis, etc. A tous ceux qui ces presentes lettres verront. Salut"), no numeral groups, no interlinear decipherment, no "en chiffre" note. The positive control of the earlier sweep (canvas 20, numeral block visible at the same scale) stands from R12A-F5160/B; it was not re-fetched. **Part III is now 375 of 375 canvases read, none with cipher.** This is a search result for the Brienne 1661 despatch register in Melanges de Colbert 26 part III, not a statement about fr.5160 itself; the fr.20661-20662 lead is unaffected. The 4-in-5 sample caveat of KX-COLB26 no longer applies. Requests: gallica.bnf.fr 2 (info.json 1, image 1). Image stayed in the scratchpad, not committed.
 
+## Next step (FRESH-0914 staleness sweep, 7 Oct 2026)
+
+Colbert 26 part III is read whole, 375 of 375 canvases, none with cipher (R12A-F5160, R12A-F5160B, AM-LOOK), so the canvas-679
+step is done. Next step: the Français 20661-20662 lead (Brienne's 1653 despatch minutes, R11A-F5160 (3)) has no Gallica link and
+needs an on-site read or a reproduction quote -- person-side, via REQUEST.md; nothing in this folder is runnable by an agent
+until that answers.

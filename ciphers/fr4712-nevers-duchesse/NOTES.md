@@ -235,10 +235,10 @@ Caveat (M):
 
 Where not found: no table of no.4 in Tomokiyo (description only) or in the solver repositories (NV-INTAKE grep).
 
-Next (Verdict line):
+Next (Verdict line, 3 Oct 2026; superseded -- see "Next step (FRESH-0914 staleness sweep, 7 Oct 2026)" at the end):
 - More ciphertext is the only route to power. DUCH-KEY1B measured 0/20 at N=37 with no.1, the only one of the three
   duchess keys whose code set includes 0-numbers (10, 60).
-- Next step: view fr.4712 ff.9, 11 and 12 (Gallica btv1b9058289m, canvases near 17-21) for further cipher passages.
+- ~~Next step: view fr.4712 ff.9, 11 and 12 (Gallica btv1b9058289m, canvases near 17-21) for further cipher passages.~~ Done by DUCH-LEAVES (3 Oct 2026, section below: no figure runs on ff.9, 11 or 12); struck by FRESH-0914, 7 Oct 2026.
 - Key no.2 (f.3, mostly symbols) only if figures appear there.
 
 ## Leaf census ff.9-12 (DUCH-LEAVES, account-1 worker for LANE-A1, 3 Oct 2026)
@@ -353,3 +353,10 @@ rule; applying it through key.tsv + decode_key.py --check, with the 8-form confl
 names (~USD 1.5). A machine digit test would need digit-rich panels: f.10r has about 30 digits in L1-2, but f.13r has only about 34
 codes in all, so the power stays low.
 Requests: gallica.bnf.fr 1 (503). Vision: 1 Sonnet subagent call.
+
+## Next step (FRESH-0914 staleness sweep, 7 Oct 2026)
+
+The 3 Oct leaf-census step (ff.9, 11, 12) was done by DUCH-LEAVES (no figure runs) and the blind hand test by R11A-F4712 (a
+NON-TEST, 6 Oct 2026); the live step is the one the top-of-file Verdict names. next: apply the owner's same-writer judgement
+(ASKS 113, 5 Oct 2026, "I think the same") to the 6 f.13r-glossed carries as C per that row's rule, re-run the decode with
+--check, ~$1.5. Who acts: agent.
