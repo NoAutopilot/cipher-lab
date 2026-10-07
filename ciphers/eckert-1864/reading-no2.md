@@ -259,6 +259,45 @@ Notes on particular readings:
   South; signed Secretary of War, 10 code-word tokens all reading with key.md) and not in No. 2 (key-no2.md gives nonsense:
   Kershaw, Wallace Lew, Evacuation); it is left out of this file and listed for the Cipher No. 1 file.
 
+## Eight entries of pages 4-18, February-March 1864 (D12-E1, 7 Oct 2026)
+
+The unread entries of no2-candidates.tsv on pages 4-18 of mssEC 19, read from strip crops of the 2400 px page images, the
+volunteer text as second witness (NOTES.md "D12-E1"). Of the ten listed, two read in Cipher No. 1, not No. 2, and are not
+transcribed here: page 8 entry 0 (Beckwith, header "1", Halleck to Grant 8 Feb 1864 on cavalry for Banks: key.md gives
+Washington, Grant, Banks, Cavalry, Regiment, Minnesota, Mississippi River, Qr Master Genl, New Orleans, General-in-Chief, 27
+tokens; key-no2.md gives nonsense) and page 15 entry 2 (Caldwell, header "1", to Humphreys 4 Mar 1864: key.md gives
+Fredericksburg, Enemy, Rappahannock, Meade). The other eight are No. 2 entries, N2-AD..AK (N2-AK, page 8 entry 1, was added
+last and stands out of date order); N2-AE runs onto the top twelve lines of page 10. Code-word tokens over the eight:
+**H 269, C 6, I 5, M 1** (37-entry total H 802, C 23, I 25, M 2). Unread: "Word" in N2-AD ("advancing on Word Virginia" = OR "West Virginia"; the book's West word is World, p.25 l.15 L; not added to the key because a section 8 row would also read the plain "words" of N2-AB) and Greers (N2-AE, plain: OR "Greer's [?] men", I/33 "Green's men").
+
+| entry | ledger | print found | agreement |
+|---|---|---|---|
+| N2-AD | Halleck to Sedgwick, 1 Feb 1864: Kelley's opinion that Early is advancing on West Virginia and the B&O | OR I/33 p.486 (12.30 p.m.) | word for word; the ledger has no time in the header, the time word Tobsy (after the signature) = 12.30 PM agrees with the OR |
+| N2-AE | Washington to Grant, 15 Feb 1864: two Baltimore telegrams of 14 Feb (to Eckert, signed Baldwin, cipher operator; McPhail to Sharpe) forwarded by order of the Secretary of War | the McPhail telegram: OR I/32 pt 2 about p.392 ("Forwarded to Generals Grant and Schofield, February 15") and I/33 p.558; the covering note and the telegram to Eckert not located in either | McPhail part word for word with I/32 pt 2, except: ledger 700 Infantry (Cushing Snyder Star) at Hanover Junction, OR "Seven hundred and eighty Maryland Line"; ledger "Fitz Hugh Lee's division", OR "Lee's division"; I/33 has "no troops left Beauregard" where the ledger and I/32 pt 2 have Johnston |
+| N2-AF | Halleck to Grant at Nashville, 17 Feb 1864 12.30 PM: no orders to Sherman; concert of action; a junction of Banks and Steele on Red River | OR I/32 pt 2 p.410; quoted in The Papers of Ulysses S. Grant vol. 10 (be-api snippet, no page) | word for word |
+| N2-AG | Halleck to Meade, 29 Feb 1864 3 PM: telegram forwarded to Butler; Longstreet's retreat | OR I/33 p.614 | word for word |
+| N2-AH | Ingalls to Meade, 7 Mar 1864: Kilpatrick's command, boats to Alexandria | OR I/33 p.650 | word for word; OR time 10.50 a.m., ledger header and time word Elizabeth 10.30 AM |
+| N2-AI | Capt. Wm. T. Howell, A.Q.M., to Ingalls, 8 Mar 1864 3.30 PM: water transportation at Yorktown, a steamer from New York, 1,400 cavalry horses being bought | not located in OR I/33 (phrases Rucker, Feilner, Howell, the date line) | -- |
+| N2-AJ | Augur to Ingalls, 9 Mar 1864 noon: "Lieut Gen Grant will be down to the Army of the Potomac tomorrow" | not located in OR I/33 by phrase | -- |
+| N2-AK | the President (College) to Sedgwick, 11 Feb 1864 8 PM (Nancy): "Unless there be strong reasons to the contrary please send Kilpatrick to us here for 2 or 3 days" | not in OR I/33, which prints Sedgwick's reply of 9.25 p.m. (p.551, "General Kilpatrick has been ordered to proceed at once to Washington"); printed in Basler, Collected Works of Lincoln vol. 7 (be-api snippet "Gen. Kilpatrick to us here, for two or three days. A. Lincoln", no page) | agrees as far as the snippet runs; the ledger has no "Gen." |
+
+Notes on particular tokens (logged, not resolved):
+
+- Clerk's forms at I (key-no2.md section 8): Tobsy = 12.30 PM (Topsy; N2-AD, N2-AE), Kerby = 14 (Kirby;
+  N2-AE twice, the date of the Baltimore telegrams), Abbott = James (Abbot; N2-AE). Quicken = Detach is restated in section 8 at H
+  only because decode.py does not strip the note in its section 5 cell.
+- Values from the print at C, none of them in the transcribed tables (key-no2.md section 8): Monkey = Schofield, Lusty = Forage,
+  Palmutta = Brigade (N2-AE; the same entry writes Palmyra = Brigade for Lomax's brigade). One witness each.
+- Pine: the book gives Communicate, which N2-AF uses ("requested him to Pine freely" = OR "communicate freely"); in N2-AE
+  "Snake Pine Talbot Argus" stands where the OR prints "Hdqrs. Army of the Potomac". A data conflict, graded H as the book
+  reads; Peru/Persia = Army in the book.
+- Chumb (N2-AF, M as in N2-B) stands where the OR prints "Generals Banks"; this is the second entry with that clerk's word for
+  Banks (the volunteer text reads "cherub", the image "Chumb").
+- N2-AJ: the time word Viola = 12 midnight PM against the header "12. noon". N2-AH: OR 10.50 a.m. against Elizabeth = 10.30 AM.
+- N2-AF: the image reads "given no Repeats" (= OR "given no orders"); the volunteer text has "my".
+- Words after the signature are the operators' own talk ("nasty day this", "fill up", "honey pleads guilty to charge &
+  apologises", "Sharks"); keyed words among them are marked plain.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -436,5 +475,53 @@ Code-word tokens: H 12.
 
 Code-word tokens: H 22, C 6, I 1.
 
-Totals over the 29 entries: H 533, C 17, I 20, M 1.
+**N2-AD | Page 4 | 8896 | 1 Feb 1864, Halleck to Sedgwick (operator Caldwell, Hd Qrs A. P.)**
+
+For [Sedgwick Jno] It is the opinion of [Kelly B F] that Early is [Advance (-ed, -ing) [#]]ing on Word [Virginia] and the [Baltimore] & [Ohio] [Rail-road] with a large [Force] [Detach (-ed, -ing) [#]]ed from [Lee]'s [Army]  {tail: [signed] [H W Halleck] {time: 12.30 PM} nasty day this}
+
+Code-word tokens: H 13, I 1.
+
+**N2-AE | Page 9-10 | 8901, 8902 | 15 Feb 1864, Washington to Grant: two Baltimore telegrams of 14 Feb forwarded by order of the Secretary of War (Beckwith, "2")**
+
+[Washington] {time: 12.30 PM} [15] [February] [.] The [Follow (-ed, -ing) [#]]ing [telegram]s are forwarded for the [Information] of [Grant U S] and [Schofield] by order of the [Secretary of War] [.] ["] [Baltimore] [Maryland] [February] [14] To [Major] Eckert [Washington] [.] this [Information] is obtained on request of [Colonel] Sharp by Marshal Mack Phail who sent a reliable man as blockade runner [.]  {tail: [signed] Baldwin [Cipher] Operator ["] [Baltimore] [Maryland] [February] [14] To [Colonel] Sharpe Prove Marshal [Head Quarters] [Communicate (-ed, -ing)] [Of the] [Potomac] [.] [15000] between [Weldon] & [Wilmington] said to [Attack (-ed, -ing) [#]] [Newberne] but thought to overawe the [Union] SentIment [.] [General] Picketts [Force]'s all in [North Carolina] [.] [Beauregard] [19000] all told in and about [Charleston] [.] No [Troops]'s [Left] [Johnston] except those on furlough [,] he has [35000] [Men] [.] [Longstreet] has [20000] [,] has [Move (-ed, -ing)]d his [Head Quarters] to Morris town [,] [7000] of his [Men] are Shoe less [.] [5] Companies of [Heavy] [Artillery] in defences of [Richmond]'s [,] [4] [Light] [Battery]'s [,] [2] com panies [Cavalry] [,] [100] twenty Greers [Men] [,] City battalion [640] [Men] [,] [4000] [Citizen] Soldiers could be turned out [.] [400] [Cavalry] on the Chickahominy between [James] & [York] [River]'s [,] [700] [Infantry] at [Hanover] [Junction] [.] [Lee] had [1] month a go had [46000] besides [Cavalry] [Brigade] [1700] [Left] for [North Carolina] [,] [6000] furlonghed [.] Has now [35000] [.] Hamptons [Cavalry] [6000] and Lomax [Brigade] of Fitz Hugh [Lee]'s [Division] [1600] are all the [Cavalry] [Lee] has [.] Fitz [Lee] disbanded [4000] for want of [Forage] [signed] Jo L Mc Phail ["] Please forward Copy to Schofield}
+
+Code-word tokens: H 139, C 4, I 4.
+
+**N2-AF | Page 11 | 8903 | 17 Feb 1864 12.30 PM, Halleck to Grant at Nashville (Beckwith, "2")**
+
+[Washington] {time: 12.30 PM} [17] [February] To [Maj Genl U S Grant] [Nashville] [.] I have given no [Order]'s to [Maj Gen W T Sherman] in regard to his [Movement]'s but requested him to [Communicate (-ed, -ing)] freely with [Maj Gen N P Banks] and [Steele Fdk] in regard to concert of [Acton [sic, ? Action]] [.] I presume from [Banks N P]'s dispatches that [Maj Gen W T Sherman] proposes to go in person to assist in [Effect (-ed, -ing) [#]]ing a [Junction] between [Maj Gen N P Banks] and [Steele Fdk] on [Red R] [.] By last dispatch he was waiting an answer from [Steele Fdk] [.] In regard to [River] [Transportation] you will exercise your own discretion giving them all you can spare  {tail: [signed] [H W Halleck] honey pleads guilty to charge & apologises}
+
+Code-word tokens: H 27, C 1, M 1.
+
+**N2-AG | Page 14 | 8906 | 29 Feb 1864 3 PM, Halleck to Meade (operator A. H. Caldwell, "(2)")**
+
+{time: 3 PM} For [Meade G G] Your [telegram] has been forwarded to [Butler B F] [.] No further [Information] from [East] [Tennessee] of [Longstreet]'s [Retreat (-ed, -ing)] but it is thought there that he will rejoin [Lee]  {tail: [signed] [H W Halleck] fill up}
+
+Code-word tokens: H 12, C 1.
+
+**N2-AH | Page 17 | 8909 | 7 Mar 1864 10.30 AM, Ingalls to Meade (A. H. Caldwell, "(2)")**
+
+{time: 10.30 AM} For [Meade G G] [.] [General] Halleck wishes to delay orders about [Kilpatrick J] until later in the day [.] Meigs has not returned [.] It will be [Necessary] to hear from [Monroe] before [Move (-ed, -ing)]ing [Kilpatrick J] [In the mean time [?]] [Transportation] will be assembled to bring him to [Alexandria] if finally decided that he shall come by water [.] We can have boats enough in [60] hours to bring up [1000] at a trip [.] Dumfrees is a bad place to land at It would be better to land at [Alexandria]  {tail: [signed] Ingalls}
+
+Code-word tokens: H 21.
+
+**N2-AI | Page 18 | 8910 | 8 Mar 1864 3.30 PM, Capt. Wm. T. Howell, A.Q.M., to Brig. Gen. Ingalls (A. H. Caldwell)**
+
+{time: 3.30 PM} For [Brig. General] Ingalls [.] [General] Rucker in forms me that he has sent all his [Available] water [Transportation] to [Yorktown] and that [Colonel] Biggs at [Monroe] has been ordered to send all that may be at that [Point] [.] I [Left] [Kilpatrick J]'s order with [General] Rucker who told me he would forward it to day [.] In addition to the [Transportation] sent from here and ordered from [Monroe] a large [Steam]er has been ordered from [New York] [.] not considering the [Steam]er from [New York] there will be sufficient [Transportation] at [Yorktown] for [1000] [Men] and [Horse]'s and I should think it would be [Available] by [Tomorrow] evening [.] The [1400] [Cavalry] [Horse]'s are being purchased the first lot will arrive here [Tomorrow] I have notified Cap Feilner [.] I could get no definite [Information] as to how long it would take to furnish the whole number asked for  {tail: [signed] Wm T. HowEll Capt & A [Quarter Master]}
+
+Code-word tokens: H 40.
+
+**N2-AJ | Page 18 | 8910 | 9 Mar 1864 noon, Augur to Brig. Gen. Ingalls (A. H. Caldwell)**
+
+{time: 12 midnight PM} For [Brig. General] Ingalls [.] [Lieut Gen U.S. Grant] will be down to the [Army] [Of the] [Potomac] to more row  {tail: [signed] [Augur C C] Sharks}
+
+Code-word tokens: H 9.
+
+**N2-AK | Page 8 | 8900 | 11 Feb 1864 8 PM, the President to Sedgwick (operator Caldwell, Hd Qrs A. P.)**
+
+For [Sedgwick Jno] [.] Unless there be strong reasons to the contrary please send [Kilpatrick J] to us here for [2] or [3] days  {tail: [signed] [President U.S.] {time: 8 PM}}
+
+Code-word tokens: H 8.
+
+Totals over the 37 entries: H 802, C 23, I 25, M 2.
 <!-- decode.py: derived block ends -->
