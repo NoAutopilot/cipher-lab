@@ -82,8 +82,7 @@ f174r_L03	26	T60	H
 f174r_L03	27	T19	H	
 f174r_L03	28	T63	H	
 f174r_L03	29	T25	H	
-f174r_L04	1	T46	M	adj: 8-like mark (A X_NEW / B T46); hand-aligned L04, reconcile tool misaligned the two-mark line
-f174r_L04	2	X_S	L	adj: small s/5-like mark then comma and prose "et credo"
+f174r_L04	1	T11	M	FRESH-0914 7 Oct 2026: digit pair '8 5,' = printed code 85 carmagnola (T11), one token replacing T46+X_S; AUDIT.md 'Correction found', crop re-checked
 f174v_L01	1	T86	L	split+adj
 f174v_L01	2	T63	H	
 f174v_L01	3	T45	M	split+adj

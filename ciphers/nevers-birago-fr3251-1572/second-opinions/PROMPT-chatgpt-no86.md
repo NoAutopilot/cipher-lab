@@ -12,7 +12,7 @@ THE ITEM
   Carmagnola's garrison ("buona parte uganotti").
 - Key: the "Nevers-Birago cipher (1572)", reconstructed by Satoshi Tomokiyo from the decipherment attached to
   no.87 of the same volume (https://cryptiana.web.fc2.com/code/nevers.htm, section BnF fr.3251).
-- Under the printed key, a value-blind transcription of all 759 cipher signs gives a fragmentary reading. The key
+- Under the printed key, a value-blind transcription of all 758 cipher signs (759 before a 7 Oct 2026 correction that read f.174r L04 '8 5' as the one code 85, carmagnola) gives a fragmentary reading. The key
   beats 200 of 200 shuffled keys, z about 3.6-3.8. Fragments include "huomini e [carmagnola] ne restano", "ambidoi
   sono [ugonotti]", "domestico loro", "non posino", "baron de Sadr..", "bene a caro le cose", "la mala gratia
   d'altri", "pratica stretta" and "del governo con il baron". Nothing more is claimed; the text fails a language

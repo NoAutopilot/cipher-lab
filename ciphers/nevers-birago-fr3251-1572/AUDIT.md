@@ -1259,3 +1259,12 @@ Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / 
 - **BnF fr.3251 f.139v (no.71), Birago to Nevers, 7 Feb 1572**: **D1** (Non-decrypted; outward "fragments read"), 72.0% (S 116 of 161). Check: published key rank 1 of 201 (z 3.6, power 10/20); gloss gives phrases only ('d'andarsi a consultare et cercar'); judge FAIL. Class without a reading: not counted as a unique solve.
 - **BnF fr.3251 ff.174r-175v (no.86), Birago to Nevers, 27 Aug 1572**: **D2** (Partially decrypted; outward "partially deciphered (about 83%)"), 82.9% (S 629 of 759; D3 withheld: most lines do not read through). Check: published 1572 key (Tomokiyo), calibrated against the period decipherment of no.87 (84% letter agreement); rank 1 of 201 at five seeds; judge FAIL. Sentence: "Birago names the Huguenots, Carmagnola and the Baron des Adrets, and fears that by doing service he may earn the ill favour of others."
 - **BnF fr.3251 ff.184r-185v (no.90), Birago to Nevers, 2 Oct 1572**: **D2** (Partially decrypted; outward "partially deciphered (about 76%)"), 75.6% (S 730 of 966). Check: published 1572 key (Tomokiyo), calibrated against the period decipherment of no.87 (84%); rank 1 of 201 at five seeds; judge FAIL. Sentence: "Birago writes of a negotiation with a count, of articles sent, of a stronghold held in favour of the Huguenots, and that confusions and difficulties will always follow, to the prejudice of the service."
+
+## Revision after audit: f.174r L04 correction applied (FRESH-0914, 7 Oct 2026)
+
+The "Correction found" above is now applied by the solver side (NOTES.md "FRESH-0914" section): f.174r L04 "8 5," is one token,
+code 85 = [carmagnola] (T11, M), replacing T46 [turino] + X_S. no.86 now counts **758 signs: S 629, M 76, U 53** (H 0 C 0 I 0),
+`decode_key.py --check` exit 0. Depth unchanged at D2: S 629 of 758 = 83.0% (was 82.9% of 759). The N-class and the safe
+sentence do not depend on it; where this file says 759 signs for no.86, read 758 after this date. The queued second-opinion
+prompt (SO-NEVBIR-86) is updated to match.
+
