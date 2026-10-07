@@ -330,6 +330,52 @@ N2-AQ "Harding & Nuptial both arbitraries careful another same" after the signat
 as arbitraries; the print bears it out for Harding = A. J. Smith). "Lady mighty fine day this sam" (N2-AO) and "Lady warm day this
 Sam" (N2-AR, volunteer "I am") are operator's chat after the signature.
 
+## Seven entries of pages 56-74, April-May 1864 (D12-E4, 7 Oct 2026)
+
+Read by the worker from strip crops of the 2400 px IIIF page images (commands in NOTES.md "## D12-E4"), the volunteer
+text as second witness. Code-word tokens over the seven: H 237, C 9, I 4, M 0 (decoder counts). Every entry was located in
+print; each print agrees with the reading apart from the ledger's own spelling and the conflicts listed below:
+
+| block | ledger | reading in short | print located |
+|---|---|---|---|
+| N2-AS | p.56, 25 Apr, sent 10.40 PM | Burnside to Grant at Culpeper: the troops from Annapolis have arrived at Alexandria; organize them there (24 hours) or move them on at once? | Grant Papers vol. 10 by IA full-text snippet ("once? I think time will be saved by completing the organization tomorrow Please answer tonight--The Regiments"), page not established; not located in OR I/33 by phrase or by date (Washington/Alexandria, 25 Apr) |
+| N2-AT | p.59-60, 28 Apr 3.30 PM | Halleck to Grant at Culpeper: Augur stripped to give to Burnside; guards under Briggs to the block-houses; Massachusetts detached artillery; navy iron-clads from New York and Philadelphia | OR I/33 p.1002-1003 |
+| N2-AU | p.64, 3 May 1.30 PM | Meigs to Grant: Burnside has over 600 wagons, 7 or 8 medical wagons, over 180 ambulances; 500 thought enough at Annapolis for 35,000 men; he asks 75 more by railroad by tomorrow noon; shall they be sent? | OR I/36 pt 2 p.352 (Quartermaster-General's Office, May 3; OCR damaged, the legible words agree) |
+| N2-AV | p.69, 15 May 1.30 PM | Halleck to Grant via Belle Plain: Sherman fighting near Resaca, drove the enemy, will attack today; 6,000 infantry embark for Belle Plain with five days' rations and 150 rounds | OR I/36 pt 2 p.781 |
+| N2-AW | p.72, 19 May 11 AM | Halleck to Grant: if Crook falls back to Gauley; newspaper telegram from Gauley Bridge on Crook's three victories, New River bridge destroyed; Hunter and West Virginia; Harper's Ferry bridge destroyed by the flood | OR I/37 pt 1 p.493 |
+| N2-AX | p.73, 19 May 9.30 PM | Halleck to Grant: Hunter placed in command of the Department of West Virginia; navy up the Rappahannock to Fredericksburg; 21st Pennsylvania Cavalry arrived, forward as cavalry or arm as infantry? | OR I/36 pt 2 p.907 (10 p.m.), also I/37 pt 1 p.493 |
+| N2-AY | p.74, 20 May 1.45 PM | Halleck to Grant: wounded men in Fredericksburg to be removed by water; Meigs sends transports; hold the south bank above Port Royal; repair of the Aquia Creek Railroad to cease | OR I/36 pt 3 p.4 (2 p.m.) |
+
+OR page numbers are read from the running heads in the Internet Archive djvu text (warofrebellion33unit, 362unit, 363unit,
+371unit) and may be one off. Grant Papers vol. 10 (papersofulyssess0010gran) was searched with the IA full-text API, which
+gives the sentence but no page.
+
+Notes on particular readings:
+- Clerk's forms added to key-no2.md section 8 at C (each from the print, one witness each): tablation (organization, N2-AS),
+  Suggestions (fortifications, N2-AT), wigs (trains, N2-AT, no Wig row in the transcribed tables), Clark (6, numeral,
+  N2-AV), Walkem[?] (Western, N2-AW; the hand reads Walkem or Walkim).
+- yawl (N2-AT, "to give to Lawn yawl When the wigs cease"): the image reads yawl plainly, the book's Yawl = Signed, and the OR
+  prints a sentence break there ("to give to General Burnside. When the trains"). Logged as a conflict, not resolved: the
+  token is marked plain so that the decoder does not end the message there; the entry continues to Lamb (H W Halleck) at the
+  foot of p.60.
+- Abbotts (N2-AT) is the plain name ("Abbot's artillery"), not D12-E1's Abbott = James; marked plain.
+- N2-AU "Ann apple is" is the plain word Annapolis (as in N2-Q), marked plain.
+- religion (N2-AW) "instructions for religion in that quotient" = OR "for operations in that department": a further witness
+  for Religion = Operations (inferred on [25B]), with N2-X; left at I as the row stands.
+- Time and number conflicts, logged, not resolved: N2-AS reliance = 10.30 PM, the ledger's pencil note "Sent at 1040pm";
+  N2-AX Rosalie = 9.30 PM (also the ledger header), the OR 10 p.m.; N2-AY Helen = 2 PM, agreeing with the OR's 2 p.m.
+  against the ledger header 1.45; N2-AY "austin yoke wilcox summer" = 300 wounded men, the OR prints 3,000; N2-AY's second
+  Castor ("navigation of the Castor above Gliddon") reads Fredericksburg, the OR prints Rappahannock (the first Castor,
+  "wounded men in Castor", is Fredericksburg in both).
+- Plain words left unread (they are not book words and stand where the OR has a stop or a plain word): paws (N2-AX), pause
+  and ditto (N2-AY); toby oiled (N2-AY) = "to be abandoned", ass end = ascend; N2-AW "Gauly" (written Gauly, volunteer
+  Ganley), substance, presume, flood are plain (the book's Substance, Presume and Flood rows would misread them).
+- Chart/Chant: N2-AX and N2-AY write Chart (the book's word); N2-AW writes Chant, as in N2-Z/AA/AC.
+- Not transcribed (service lines and pencil): N2-AS "No 2", "Culpeper" written under the header, the routing words "end ass
+  no chain"/"wish now flowers", "H", "forward lawful news"; N2-AV "news all good"; N2-AW "plenty coming"; N2-AX "has
+  wings"; N2-AY "Waterloo"; N2-AT p.60 "144 w Sent from book 4. Tinker". These are kept in the ciphertext lines where they
+  stand after the signature (the decoder sets them in the tail) or omitted where they sit outside the message lines.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -597,5 +643,47 @@ Code-word tokens: H 61, C 6, I 5.
 
 Code-word tokens: H 38, C 2, I 3.
 
-Totals over the 44 entries: H 1017, C 37, I 36, M 2.
+**N2-AS | Page 56 | 8948 | 25 Apr 1864 10.40 PM sent, Burnside to Grant at Culpeper (Beckwith, "No 2")**
+
+[Lieut Gen U.S. Grant] The [Troops] from Annapolis na have arrived at [Alexandria] Shall I [Organize (-ed, -ing)] these with the [Regiment]'s that have gone to [Alexandria] by rail & arrange all the [Transportation] before leaving [Alexandria] [Information] It will take [24] home to complete the [organization] or shall I [Move (-ed, -ing)] them on at once [Information] I think time will be saved by completing the [organization] [Tomorrow] Please answer tonight The [Regiment]'s from [Washington] are now on the way to [Alexandria] also others from [New York] [Burnside A E] {time: 10.30 PM}
+
+Code-word tokens: H 20, C 2.
+
+**N2-AT | Page 59 | 8951 | 28 Apr 1864 3.30 PM, Halleck to Grant at Culpeper (Beckwith, "(2)"; ends on p.60, pointer 8952)**
+
+[Washington] {date: Apr 28} {time: 3.30 PM} For [Grant U S] [Culpepper] [.] [Augur C C] has been stript of almost every thing [Available] to give to [Burnside A E] yawl When the [trains] cease to run the [Guard (-ed, -ing)]'s under [General] Briggs can be placed in the block how says between Bull Run and the [Rappahannock] [.] I will also give him the [Massachusetts] [Detach (-ed, -ing) [#]]ed [Artillery] [As soon as] it arrives [.] No [Troops] are yet [Available] to replace Abbotts [Artillery] [In the] [fortifications] [.] Perhaps some Militia or Invalids from the [West] may arrive in time [,] If not we must weaken the other garrisons [,] There is very little left out side of [Maj Gen A E Burnside]'s [Command (-ed, -ing)] to use against any [Movement] of [Longstreet] [.] The Navy [Department] says that [1] Iron c lad left [New York] and [1] left [Philadelphia] on the [26] and should reach [Monroe] [To day] [.] The [1] from Boston touched at [New York] and will leave there [Tomorrow] [H W Halleck]
+
+Code-word tokens: H 45, C 2, I 1.
+
+**N2-AU | Page 64 | 8956 | 3 May 1864 1.30 PM, the Quartermaster General to Grant (Beckwith, "(2)")**
+
+{time: 1.30 PM} [Maj Genl U S Grant] [Burnside A E] has received over [600] wagons [7] or [8] Medical wagons & over [180] Ambulances It was decided at Ann apple is that [500] waggons would be enough for his [Force] then es time ated at [35000] [Men] He now asks that [75] more wagons teams and drivers completely [Organize (-ed, -ing)]d be sent to him by [Rail-road] by [Tomorrow] noon [.] This [Depot] can furnish them but they cannot be spared without injury to the service here shall they be sent  {tail: [signed] [Quarter[?] Master General]}
+
+Code-word tokens: H 26.
+
+**N2-AV | Page 69 | 8961 | 15 May 1864 1.30 PM, Halleck to Grant via Belle Plain (Beckwith, no mark)**
+
+[Washington] {time: 1.30 PM} [15] for [Lieut Gen U.S. Grant] via Belle Plain [.] [Telegraph (-ed, -ing)] from [Maj Gen W T Sherman] dated {time: 8 PM} yesterday had hard [Fight (-ing, Fought) [#]]ing all day near Resacca but drove the [Enemy] [.] His [Force]'s are all [Re-enforce (-ed, -ing)]d and he will [Attack (-ed, -ing) [#]] at all [Point]'s [To day] [.] [6000] splendid [Infantry] [Embark (-ed, -ing)] [To day] for Belle Plain with orders to push forward to your [Head Quarters] Each man carries on his person [5] days [Rations] and [100] and [50] rounds of Cartridges  {tail: [signed] [Maj Genl H W Halleck] news all good}
+
+Code-word tokens: H 29, C 1.
+
+**N2-AW | Page 72 | 8964 | 19 May 1864 11 AM, Halleck to Grant (Beckwith, no mark)**
+
+[Washington] [May] [19] {time: 11 AM} For [Lieut Gen U.S. Grant] [.] If [Crook S [?]] [Fall back (-ing back, fell back)]'s to Gauly I will dispose of his [Troops] as directed [.] A [telegram] in the news papers of this morning dated Gauly [Bridge (-ed, -ing)] the [17] says that [Crook S [?]] was at [Newberne] on the [13] having gained [3] Victories [Over the] [Rebel]'s [,] [Destroy (-ed, -ing) [#]]ed [Bridge (-ed, -ing) [#]] over New [River] and several [Mile]'s of [Rail-road] [Track] [.] nothing further from [Sigel F] or [Maj Gen W T Sherman] [.] If [Hunter D] should be given the [Command (-ed, -ing)] in [West] [Virginia] please send me substance of your instructions for [Operations] in that [Department] [.] I do not know what your [Order]'s to [Sigel F] and [Crook S [?]] have been [,] but I presume they have looked mainly to to the distruction [Of the] [Rebel] [Rail-road]'s and the protection [Of the] [Baltimore] & [Ohio] [Road] [.] The destruction [Of the] [Bridge (-ed, -ing)] at [Harpers Ferry] by the flood has delayed the arrival of [Western][?] [Troops]  {tail: [signed] [Maj Genl H W Halleck] plenty coming}
+
+Code-word tokens: H 49, C 4, I 3.
+
+**N2-AX | Page 73 | 8965 | 19 May 1864 9.30 PM, Halleck to Grant (Beckwith, no mark)**
+
+{time: 9.30 PM} [19] to [Lieut Gen U.S. Grant] [.] [Hunter D] placed in [Command (-ed, -ing)] of [Department] of [West] [Virginia] [.] The Navy will work up the [Rappahannock] even to [Fredericksburg] if you protect the [South] bank from guerillas The land is so high they can fire down upon the decks without danger to themselves [.] More [Troops] [Will be sent] to [Fredericksburg] [Tomorrow] I shall continue to send there all I can raise till otherwise ordered paws The [21] [Pennsylvania] [Cavalry] arrived tonight fully mounted [.] Shall I send them forward as [Cavalry] or [Arms] them as [Infantry] & give their [Horse]'s to veterans of [Army] [Of the] [Potomac] [?] They are raw [Recruit]'s & of little use as [Cavalry]  {tail: [signed] [Maj Genl H W Halleck] has wings}
+
+Code-word tokens: H 35.
+
+**N2-AY | Page 74 | 8966 | 20 May 1864 1.45 PM, Halleck to Grant (Beckwith, "(2)")**
+
+{time: 2 PM} [20] [Lieut Gen U.S. Grant] pause There are [300] [Wounded] [Men] in [Fredericksburg] who cannot be removed except by water [Transportation] [Point] [Quarter[?] Master General] will send [Transport (-ed, -ing)]'s [To day] to ass end the [Rappahannock] [Tomorrow] for that purpose [.] The [South] bank of the [River] above [Port Royal] should be held by our [Cavalry] in order to enable the [Transport (-ed, -ing)]'s to pass up pause Supplies of [Forage (-ed, -ing)] will accompany the fleet Large amounts of property have been sent to [Fredericksburg] If that place is toby [Abandon (-ed, -ing) [#]]ed this property should first be removed [.] Moreover the repair [Of the] [Aquia Creek] [Rail-road] should cease ditto The navigation of the [Fredericksburg] above [Port Royal] is difficult & will cease when the [River] falls  {tail: [signed] [Maj Gen H W Halleck] Waterloo}
+
+Code-word tokens: H 33.
+
+Totals over the 51 entries: H 1254, C 46, I 40, M 2.
 <!-- decode.py: derived block ends -->
