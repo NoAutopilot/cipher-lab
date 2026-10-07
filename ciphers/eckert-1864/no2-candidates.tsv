@@ -11,16 +11,16 @@ pointer	page	entry_on_page	header	words	markers	k2_tokens	k1_tokens	k9_tokens	st
 8909	17	1	A. H. Caldwell (2)  Washn Mar 7th 1864 1030 am 	89	5	21	18	5	
 8910	18	0	A. H. Caldwell  Washn Mar 8th 1864. 330 PM 	157	7	39	36	6	
 8910	18	1	A H Caldwell  Washn Mch 9" 1864 12. noon	20	1	10	10	4	
-8913	21	1	S. H. Beckwith (2)  Washn Mar 14th 1864 	64	3	23	17	4	
-8913	21	2	Beckwith "2"  Wash. D. C Mar. 15. 1864 	47	0	14	12	4	
-8914	22	2	S. H. Beckwith (2)  Mar 18th	51	1	12	8	3	
+8913	21	1	S. H. Beckwith (2)  Washn Mar 14th 1864 	64	3	23	17	4	READ D12-E2
+8913	21	2	Beckwith "2"  Wash. D. C Mar. 15. 1864 	47	0	14	12	4	READ D12-E2
+8914	22	2	S. H. Beckwith (2)  Mar 18th	51	1	12	8	3	READ D12-E2
 8915	23	1	S. H. Beckwith (2)  Wash'n Mar 18th 1864 330 P. M. 	20	1	10	9	3	READ ECK64-NO2
-8915	23	2	S. H. Beckwith Louisville (2)  Wash'n D. C. Mar 19th 10.30 A	29	1	7	6	2	
-8916	24	0	S. H. Beckwith (2)  Wash'n Mar 19th 1864 11 am	32	0	11	10	3	
-8916	24	1	Caldwell  Washn Mar. 23rd 1864	70	5	24	22	4	
-8916	24	2	Caldwell  Washn Mch 23rd 1864	35	0	10	10	2	
-8917	25	1	S. H. Beckwith (2)  Washn Mar 26th 1864 230 P. M	72	0	14	12	5	
-8926	34	0	S. H. Beckwith (2) Porter treason request  Washn Apr. 8th 33	86	1	26	13	4	
+8915	23	2	S. H. Beckwith Louisville (2)  Wash'n D. C. Mar 19th 10.30 A	29	1	7	6	2	READ D12-E2
+8916	24	0	S. H. Beckwith (2)  Wash'n Mar 19th 1864 11 am	32	0	11	10	3	READ D12-E2
+8916	24	1	Caldwell  Washn Mar. 23rd 1864	70	5	24	22	4	READ D12-E2
+8916	24	2	Caldwell  Washn Mch 23rd 1864	35	0	10	10	2	NOT-NO2 D12-E2 (reads in Cipher No. 1)
+8917	25	1	S. H. Beckwith (2)  Washn Mar 26th 1864 230 P. M	72	0	14	12	5	READ D12-E2
+8926	34	0	S. H. Beckwith (2) Porter treason request  Washn Apr. 8th 33	86	1	26	13	4	READ D12-E2
 8930	38	1	Beckwith "ch" (2) Dunn Transmit  Washn Apr 16th 1864 330 P. 	98	5	33	24	6	READ
 8932	40	0	S. H. Beckwith "ch" Enlist transfer Wash'n Apr. 18th 1864 	123	6	39	27	4	
 8935	43	1	SH Beckwith Culpeper  Washington Apl 19th 1864 	81	2	22	19	9	

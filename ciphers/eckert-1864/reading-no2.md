@@ -210,6 +210,55 @@ Nothing here is a novelty statement (rule 10). Verifier's classes (AUDIT.md "ECK
 N1 (printed: OR, or for P and Q The Papers of Ulysses S. Grant vol. 10); R and T N3 (no prior print or decipherment located;
 Dana's printed 7 June reply answers T).
 
+## Eight entries of pages 21-34, March-April 1864 (D12-E2, 7 Oct 2026)
+
+Read by the worker from strip crops of the 2400 px IIIF page images (commands in NOTES.md "## D12-E2"), the volunteer
+text as second witness. Code-word tokens over the eight: H 115, C 11, I 2, M 0 (decoder counts; two tokens are written
+with [?] in the transcription and graded by their key row, see below). Every entry was located in print, and each print
+agrees with the reading word for word apart from the ledger's own spelling:
+
+| block | ledger | reading in short | print located |
+|---|---|---|---|
+| N2-V | p.21, 14 Mar 3.30 PM | Halleck to Grant: Curtis applies to retain the 7th Kansas; every furloughed regiment ordered back to its former command | OR I/34 pt 2 p.606 |
+| N2-W | p.21, 15 Mar 6 PM | the President to Grant: McPherson assigned a department; could not Blair be assigned to command the corps he commanded last autumn? | OR I/32 pt 3 p.72-73 (Executive Mansion, 6 p.m.) |
+| N2-X | p.22, 18 Mar 10 AM | the Secretary of War to Grant: the operations of Captain Jenkins at Louisville require investigation; the QMG can assign as large a force as the service requires | Grant Papers vol. 10, in a note (Stanton to Grant); not located in OR I/32 pt 3, I/33, I/34 pt 2 |
+| N2-Y | p.23, 19 Mar 10.30 AM | Washburne to Grant at Louisville: telegraph when you will reach here; arrangements for your family at Willard's | Grant Papers vol. 10, near p.213-214 (full-text snippet; page from the running head only) |
+| N2-Z | p.24, 19 Mar 11 AM | Halleck to Grant, Louisville or Nashville: Longstreet thought now with Lee; some movement soon | OR I/33 p.699 |
+| N2-AA | p.24, 23 Mar | Rawlins to Meade: Grant at Culpeper by tomorrow morning's train; wishes to see the troops drawn up in line, not in review | OR I/33 p.718 (12.30 p.m.) |
+| N2-AB | p.25, 26 Mar 2.30 PM | to Grant: men of 9th Corps regiments on furlough in the West; order them to rendezvous at Annapolis? | Grant Papers vol. 10, in a note (full-text snippet "would it not be well to order all such persons to rendezvous at Annapolis") |
+| N2-AC | p.34, 8 Apr 3.30 PM | Meigs to Grant: 40,000 bushels of grain and 700 tons of hay to Pensacola under sealed orders, first by 1 May, all by the 10th; Holabird to send forage from New Orleans | OR I/32 pt 3 p.300-301 |
+
+OR page numbers are read from the running heads in the Internet Archive djvu text (warofrebellion342unit, 323unit, 33unit)
+and may be one off. Grant Papers vol. 10 (papersofulyssess0010gran) was searched with the IA full-text API, which gives
+the sentence but no page; the vol. 10 pages are a person's read.
+
+Notes on particular readings:
+- Chant (N2-Z, N2-AA, N2-AC): the ledger writes Chant three times where the book has Chart; the OR prints "Lieutenant-General
+  Grant" (N2-Z, N2-AA, N2-AC), so key-no2.md section 8 carries Chant at C. (In E-B the ledger has Chart; only the volunteer
+  text has Chant there.)
+- Religion (N2-X): "The Religion of Interest Jenkins ... require investigation" = "The operations of Captain Jenkins" in Grant
+  Papers vol. 10. This is a second witness for the inferred [25B] alignment Religion = Operations, against ECK64-NO2's
+  one witness Slumber(ations) = operations in N2-T. Logged, not resolved; Religion stays I.
+- Whimy (N2-AC) = "to-day" in the OR. The book's To day is Wherry (p.25 l.5 L), on the line above Whimper = Telegraph; C from
+  the print, the form itself unexplained.
+- nisty (N2-AC) = "forage" in the OR: the clerk's form of Rusty (Forage, p.21 l.17 L). C.
+- Brown[?] (N2-AC): the hand reads Brom or Brown; Brown = 1, and the OR prints "by the 1st of May". Graded by its key row (H).
+- Lamb[?] (N2-AB): the signature word reads Lamb on the page image, the volunteer text has Sanib; Lamb = H W Halleck, not
+  confirmed by the print snippet (the signer is not in the snippet). Graded by its key row (H); treat as doubtful.
+- N2-AA: the time word Gertrude is 12 noon in the TIME table; the OR prints 12.30 p.m. Logged, not resolved. "desire",
+  "review" and "John" are plain here (the OR has "desire to see your troops", "not in review", "Jno. A. Rawlins").
+- N2-AB: "An = nap = o = lis" and "Ann = apol = is" are the plain word Annapolis (the book's Annapolis = Carr is a code word);
+  marked plain. The line after the signature, "Caldwell will send you extra words for No one Pigeon please say when
+  received", is an office line: Pigeon = Cipher, "extra words for No. 1 cipher".
+- N2-X: "Spurigation" = Spur (Invest) + -igation, C from the print.
+- Not transcribed (service lines and pencil): N2-V "& [struck word] Lady to Halleck Also cupid & comet"; N2-W "mark it
+  private"; N2-Z "Finis"; N2-AA "Chief of Staff bad day for the eyes"; N2-AC pencil figures over the first line and "sent
+  from book".
+- 8916/24/2 (Caldwell, Washn Mch 23rd 1864, "Helen For Journal Libra ...") reads in Cipher No. 1 (key.md: For Meade ... the
+  order for organizing ... of your army ... is issued today; Grant will go to the front tomorrow; General Hancock has gone
+  South; signed Secretary of War, 10 code-word tokens all reading with key.md) and not in No. 2 (key-no2.md gives nonsense:
+  Kershaw, Wallace Lew, Evacuation); it is left out of this file and listed for the Cipher No. 1 file.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -339,5 +388,53 @@ Code-word tokens: H 19, C 1, I 3.
 
 Code-word tokens: H 11, I 1.
 
-Totals over the 21 entries: H 418, C 7, I 18, M 1.
+**N2-V | Page 21 | 8913 | 14 Mar 1864 3.30 PM, Halleck to Grant at Nashville (operator S. H. Beckwith, "(2)")**
+
+[Washington] {time: 3.30 PM} [March] [14] To [Grant U S] [.] [General] Curtis applies to retain the [7] [Kansas] [Regiment] now on fur lough in his [Department] [.] Numerous other application of same kind have been made I shall [Order] every fur loughed [Regiment] back to its former [Command (-ed, -ing)] till you direct other wise  {tail: [signed] Halleck [Major] [General] [1] [H W Halleck]}
+
+Code-word tokens: H 19, C 1.
+
+**N2-W | Page 21 | 8913 | 15 Mar 1864 6 PM, the President to Grant at Nashville (Beckwith, "2")**
+
+{time: 6 PM} [15] [Lieut Gen U.S. Grant] [McPherson J B] having been assigned to the [Command (-ed, -ing)] of a [Department] could not [Blair F P] with out difficulty or detriment to the service be assigned to [Command (-ed, -ing)] the [Corps] he [Command (-ed, -ing)]ed a while last autumn [?]  {tail: [signed] [President U.S.]}
+
+Code-word tokens: H 13.
+
+**N2-X | Page 22 | 8914 | 18 Mar 1864 10 AM, the Secretary of War to Grant (Beckwith, "(2)")**
+
+[Washington] [March] [18] {time: 10 AM} For [Maj Genl U S Grant] The [Operations] of [Captain] Jenkins at [Louisville] require [investigation] and he should not be put on duty until they are satisfactorily over hauled [.] The [Quarter[?] Master General] can now as sign as large a [Force] as the Service requires from new appoint ments [Secretary of War]
+
+Code-word tokens: H 11, C 1, I 1.
+
+**N2-Y | Page 23 | 8915 | 19 Mar 1864 10.30 AM, Washburne to Grant at Louisville (Beckwith, "Louisville (2)")**
+
+[Washington] {time: 10.30 AM} [19] For [Grant U S] [Louisville] Please [Telegraph (-ed, -ing)] me precisely when you will reach here Have made very favor able arrangements for your family at Willards  {tail: [signed] EB Washburne}
+
+Code-word tokens: H 7.
+
+**N2-Z | Page 24 | 8916 | 19 Mar 1864 11 AM, Halleck to Grant at Louisville or Nashville (Beckwith, "(2)")**
+
+[Washington] {time: 11 AM} [19] To [Lieut Gen U.S. Grant] [Louisville] or [Nashville] From all [Information] received it is thought that [Longstreet] is now with [Lee] and that some [Movement] will soon be made  {tail: [signed] [Maj Genl H W Halleck]}
+
+Code-word tokens: H 11, C 1.
+
+**N2-AA | Page 24 | 8916 | 23 Mar 1864, Rawlins to Meade (operator Caldwell, no mark)**
+
+{time: 12 noon AM} for [Meade G G] [Command (-ed, -ing)]ing [Army] of [Potomac] [.] [General] [,] [Lieut Gen U.S. Grant] will be at [Culpepper] by [Tomorrow] mornings train and will at your earliest convenience there after desire to see your [Troops] [,] not in review but simply drawn up in line in [Front] of or [Near] their respective [Corps] encampmints [.] By [Command (-ed, -ing)] of [Grant U S]  {tail: [signed] John A Rawlins [Brig. General] &}
+
+Code-word tokens: H 20, C 1.
+
+**N2-AB | Page 25 | 8917 | 26 Mar 1864 2.30 PM, to Grant (Beckwith, "(2)")**
+
+{time: 2.30 PM} [Lieut Gen U.S. Grant] There are many individuals of [Regiment]'s belonging to [9] [Army] [Corps] still in the [West] now on fur lough in the different states If those [Regiment]'s are to be brought to Annapolis would it not be well to order all such persons to rendezvous at Annapolis [?]  {tail: [signed] [H W Halleck][?] Caldwell will send you extra words for No one [Cipher] please say when received}
+
+Code-word tokens: H 12.
+
+**N2-AC | Page 34 | 8926 | 8 Apr 1864 3.30 PM, the Quartermaster General to Grant (Beckwith, "(2)")**
+
+[8] [April] {time: 3.30 PM} [Lieut Gen U.S. Grant] [.] I have [to-day] [Order]ed [40000] bush els of grain and [700] tons of hay from [East] Ern ports to Pen sacola under sealed [Order]'s [.] First Ship ment to be made by [Steam] to arrive by [1] [May] all by [10] Also sent by [Mississippi] and Atlantic [Order]'s to [Colonel] Hola bird Chief [Quarter Master] [New Orleans] to send a care go of [forage] from [New Orleans] to Pensacoo a to be there by [1][?] [May] to meet any contingency  {tail: [signed] [Quarter[?] Master General]}
+
+Code-word tokens: H 22, C 6, I 1.
+
+Totals over the 29 entries: H 533, C 17, I 20, M 1.
 <!-- decode.py: derived block ends -->
