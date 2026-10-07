@@ -10305,3 +10305,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 09:46 | NZ-WVOV (acct4 worker) | claim: verifier on ciphers/wvo-hessen-1564 realign/ + k28 eye check, cap 3.5, box 09:46-10:46 UTC (80% 10:34), for LANE LANE-NZ-0914
 2026-10-07 09:46 | NZ-SURIJ (account 4, Opus) | claim for LANE LANE-NZ-0914: na-suriname-map-1781, [ij] check on inv.373 0746 + 4.VEL s-loop/s-hook vs sh-lig image comparison; cap $4, box 09:45-10:45 UTC (80% stop 10:33)
 2026-10-07 09:46 | NZ-MANT (acct4 worker) | claim for LANE LANE-NZ-0914: sachsstaatsarchiv-manteuffel-1712 Verdict fix + 694/08 0581-0592 screen; cap $2.5, box ends 10:31 UTC
+2026-10-07 09:48 | NZ-TAUR (acct4 Sonnet) | claim for LANE LANE-NZ-0914: taurello-roma-1527 Sanuto XLII-XLIV Taurello forename search; cap 1.5, box 09:48-10:18 UTC
