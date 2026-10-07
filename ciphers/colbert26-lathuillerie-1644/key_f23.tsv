@@ -32,7 +32,7 @@ code	value	grade	source	note
 41	n	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
 43	p	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=
 44	p	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
-46	ce	C	DA1-COL word-level pairing c50/c3940/c47 (siblings/word_da1.py, pre-registered, PASS vs pairing-shuffle control, 7 Oct 2026)	was c M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=4 agree=2 others=a:1,gence:1)
+46	ce	M	DA1-COL2 second blind pairing (siblings/word_col2.py): FAIL-LOWPOWER, P 0.0020 vs alpha 0.00192 -- one pass of two, lowered C->M 7 Oct 2026	was c M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=4 agree=2 others=a:1,gence:1); DA1-COL had PASS (P 0.0009) and merged ce C
 48	c	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=6 agree=4 others=q:1,quea:1
 49	que	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=4 others=
 50	q	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=

@@ -1,0 +1,17 @@
+unit	groups	group_agree	pct	spans_A	spans_B	exact_shared	exact_pct
+c50	442	391	88.5	155	155	98	46.2
+c3940	267	234	87.6	97	97	58	42.6
+c47	205	184	89.8	75	75	41	37.6
+six DA1-COL C codes, span-occurrences per pass
+16	DA1-COL: relaschent(50a03); seroit(50a11); se(50b05); ensemble(50b12); flatter(39L04); p(39L04); seuls(39L06); possibles(39L11); a(39L12); sera(40L04); nostre(47L09); pas(47L13)
+	DA1-COL2: relaschent(50a03); seroit(50a11); se(50b05); ensemble(50b12); flatter(39L04); p(39L04); seuls(39L06); possibles(39L11); la(39L12); sera(40L04); nostre(47L09); pas(47L13)
+20	DA1-COL: lorraine(50a06); trois(50a09); ueritablement(50a10); rendue(50a11); uouldroient(50a13); restablissement(50a13); ils(50b05); reioindroent(50b05); patria(50b06); infidelles(50b09); partane(50b09); par(50b15); raison(50b15); nous(50b15); ils(50b16); retard(39L02); trop(39L03); knut(39L05); plainte(39L08); traitte(39L13); plenipotentiaires(40L02); maintenant(40L04); poinct(40R01); que(47L03); indubitable(47L04); de(47L04); auec(47L04); point(47L06); qui(47L06); indecis(47L07); laisser(47L09); arriere(47L09); sort(47L10); laisse(47L13)
+	DA1-COL2: lorraine(50a06); trois(50a09); ueritablement(50a10); rendue(50a11); uouldroient(50a13); restablissement(50a13); ils(50b05); reioindroent(50b05); patria(50b06); infidelles(50b09); par(50b15); raison(50b15); nous(50b15); ils(50b16); retard(39L02); trop(39L03); knut(39L05); plainte(39L08); traitte(39L13); plenipotentiaires(40L02); maintenant(40L04); poinct(40R01); que(47L03); indubitable(47L04); de(47L04); auec(47L04); point(47L06); qui(47L06); indecis(47L07); laisser(47L09); arriere(47L09); sort(47L10); laisse(47L13)
+46	DA1-COL: recommencer(50a14); nous(50b13); zelande(39L05); ces(39L12); faut(40L01); uille(40L02); nanime(47L03); cet(47L08); gens(47L11); cy(47L11)
+	DA1-COL2: recommencer(50a14); nous(50b13); zelande(39L05); ces(39L12); cette(40L01); uille(40L02); nanime(47L03); auec(47L08); gens(47L11); cy(47L11)
+67	DA1-COL: bien(50a01); restablissement(50a13); leur(50b13); le(39L08); leur(39L13); luy(39L14); traict(47L04)
+	DA1-COL2: bien(50a01); restablissement(50a13); leur(50b13); le(39L08); leur(39L13); luy(39L14); traict(47L04)
+81	DA1-COL: nous(50a08); recommencer(50a14); remede(50b08); que(40L01); espagnolz(47L03); conuenir(47L05); demeure(47L07)
+	DA1-COL2: nous(50a08); recommencer(50a14); remede(50b08); que(40L01); espagnolz(47L03); conuenir(47L05); demeure(47L07)
+96	DA1-COL: le(50a08); bien(50a12); fortent(50b05); et(50b09); nous(50b12); par(50b15); que(39L01); que(39L04); phles(39L08); que(39L12); cela(47L03); que(47L10); quencore(47L12)
+	DA1-COL2: le(50a08); bien(50a12); que(50b05); et(50b09); nous(50b12); par(50b15); que(39L01); que(39L04); phles(39L08); que(39L12); utile(40L04); cela(47L03); que(47L10); quencore(47L12)

@@ -1,0 +1,8 @@
+code	value	grade	source	note
+16	se	C	DA1-COL word-level pairing c50/c3940/c47, siblings/word_da1.py	PASS vs pairing-shuffle control
+20	i	C	DA1-COL word-level pairing c50/c3940/c47, siblings/word_da1.py	PASS vs pairing-shuffle control
+30	s	C	DA1-COL word-level pairing c50/c3940/c47, siblings/word_da1.py	PASS vs pairing-shuffle control
+67	leur	C	DA1-COL word-level pairing c50/c3940/c47, siblings/word_da1.py	PASS vs pairing-shuffle control
+75	la	C	DA1-COL word-level pairing c50/c3940/c47, siblings/word_da1.py	PASS vs pairing-shuffle control
+81	me	C	DA1-COL word-level pairing c50/c3940/c47, siblings/word_da1.py	PASS vs pairing-shuffle control
+96	que	C	DA1-COL word-level pairing c50/c3940/c47, siblings/word_da1.py	PASS vs pairing-shuffle control

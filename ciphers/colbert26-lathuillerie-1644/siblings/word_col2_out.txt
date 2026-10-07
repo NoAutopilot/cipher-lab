@@ -1,0 +1,64 @@
+DA1-COL word-level positional test; units {'c3940': 97, 'c47': 75, 'c50': 155} word spans
+k distribution: [(2, 120), (1, 97), (3, 66), (4, 24), (5, 14), (6, 5), (8, 1)]
+instrument c3940: C-code occ 66 H 17 ctrl mean 7.60 p95 12 max 17 P 0.0002 -> CLEARS
+instrument c47: C-code occ 53 H 17 ctrl mean 8.05 p95 12 max 19 P 0.0010 -> CLEARS
+instrument c50: C-code occ 107 H 31 ctrl mean 12.45 p95 18 max 26 P 0.0000 -> CLEARS
+code	value	N	H	ctrl_mean	p95	max	P	P_min	units_hit	power_at_N	verdict
+11	e	37	21	15.42	20	27	0.0461	0.0000	c3940,c47,c50	0.407	FAIL-LOWPOWER
+15	e	18	9	7.55	11	15	0.3211	0.0000	c3940,c47,c50	0.154	FAIL-LOWPOWER
+16	se	12	5	0.26	1	3	0.0000	0.0000	c3940,c50	0.081	PASS
+20	i	33	18	4.67	8	15	0.0000	0.0000	c3940,c47,c50	0.331	PASS
+21	t	34	9	4.47	8	12	0.0220	0.0000	c3940,c47,c50	0.359	FAIL-LOWPOWER
+27	u	4	2	0.89	2	4	0.2183	0.0016	c3940,c47	0.013	FAIL-LOWPOWER
+29	r	20	6	2.22	5	9	0.0159	0.0000	c3940,c47,c50	0.157	FAIL-LOWPOWER
+30	s	48	17	7.32	11	18	0.0003	0.0000	c3940,c47,c50	0.573	PASS
+31	t	38	11	5.41	9	15	0.0090	0.0000	c3940,c47,c50	0.407	FAIL-LOWPOWER
+32	u	18	8	4.60	8	13	0.0545	0.0000	c3940,c47,c50	0.127	FAIL-LOWPOWER
+39	e	8	5	3.12	5	8	0.1635	0.0006	c3940,c47,c50	0.034	FAIL-LOWPOWER
+46	ce	10	3	0.30	1	3	0.0020	0.0000	c3940,c50	0.060	FAIL-LOWPOWER
+47	e	4	2	1.39	3	4	0.4317	0.0131	c47	0.007	UNDERPOWERED
+54	e	11	5	4.16	7	10	0.4072	0.0000	c3940,c47,c50	0.063	FAIL-LOWPOWER
+61	e	3	2	1.21	3	3	0.3531	0.0673	c47,c50	0.013	UNDERPOWERED
+67	leur	7	2	0.04	0	2	0.0010	0.0000	c3940,c50	0.033	PASS
+70	e	4	1	1.57	3	4	0.8681	0.0218	c50	0.012	UNDERPOWERED
+71	e	5	3	2.02	4	5	0.3248	0.0096	c3940,c50	0.023	UNDERPOWERED
+75	la	22	6	0.80	2	6	0.0001	0.0000	c3940,c47,c50	0.187	PASS
+76	e	19	8	7.39	11	16	0.4772	0.0000	c3940,c47,c50	0.150	FAIL-LOWPOWER
+77	l	5	1	0.62	2	4	0.4866	0.0000	c50	0.025	FAIL-LOWPOWER
+81	me	7	3	0.08	1	2	0.0000	0.0000	c47,c50	0.020	PASS
+83	mo	3	0	0.01	0	1	1.0000	0.0000	-	0.008	FAIL-LOWPOWER
+85	na	3	0	0.01	0	1	1.0000	0.0000	-	0.012	FAIL-LOWPOWER
+86	e	12	8	4.57	7	11	0.0382	0.0000	c3940,c47,c50	0.077	FAIL-LOWPOWER
+96	que	14	5	0.61	2	4	0.0000	0.0000	c3940,c47,c50	0.106	PASS
+summary: {'FAIL-LOWPOWER': 15, 'PASS': 7, 'UNDERPOWERED': 4}
+PASS codes written to siblings/key_f23_word_col2.tsv: ['16', '20', '30', '67', '75', '81', '96']
+leads (not gated): k = 1 word spans of open codes (not key_f23 C)
+  13	en(c3940); en(c3940)
+  15	en(c50)
+  16	p(c3940); la(c3940); pas(c47)
+  17	la(c3940); au(c3940)
+  20	que(c47); de(c47)
+  21	de(c3940); et(c50); telles(c50); y(c50)
+  26	de(c50)
+  27	de(c3940)
+  29	de(c47); a(c50); a(c50); la(c50)
+  30	desp(c3940); a(c3940); les(c50); un(c50); nous(c50)
+  31	qui(c3940); la(c3940); de(c47); cet(c47); ce(c50); les(c50)
+  32	des(c50); autre(c50)
+  35	a(c3940); ayt(c50)
+  39	et(c47)
+  47	cy(c3940); et(c47)
+  52	dy(c3940)
+  54	duc(c50); dur(c50)
+  56	a(c47)
+  58	faut(c3940)
+  66	luy(c3940)
+  67	le(c3940)
+  70	a(c50)
+  76	a(c3940); de(c47); auec(c50); que(c50); sy(c50); quils(c50)
+  79	leur(c47)
+  83	rien(c47)
+  86	ne(c3940); dune(c47); plus(c47); ne(c47); ne(c47); ne(c50)
+  87	les(c47)
+  93	ny(c50)
+  96	que(c3940); que(c3940); que(c47); le(c50); et(c50)
