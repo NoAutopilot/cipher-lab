@@ -345,3 +345,26 @@ Suggestion only, not started: a reproduction of ff.68 and 70 ordered from the Bn
 digitisation-on-demand for italien 1583) is the one route to the image. It would go into REQUEST.md and ASKS.md if the
 orchestrator promotes it. Mazzatinti t. II pp. 285-291 has not been checked against the 1883 ASL inventory already cited.
 
+
+## Keyhunt sibling sweep (7 Oct 2026, KH2-E for LANE KH-2)
+
+The held `key.tsv` is the best-scoring key of a failed anneal (its own header: "NOT A READING"), so no sibling was
+decoded with it; a decode plus shuffled-key control would be a non-test by construction (rule 3). Siblings were
+listed instead from Mazzatinti's 1883 inventory (*Archivio storico lombardo* X, OCR in Bourdeau's
+`targets/it1583/asl1883.txt`, read by script): 76 "In cifre" entries for 1446-1449: italien 1583 (1446) 13
+including ff.68/70, italien 1584 (1447) 56, italien 1585 (1448-49) 7. Italien 1584 is on Gallica
+(ark:/12148/btv1b100373864, from microfilm, 409 canvases, two pages per canvas, no folio labels; canvas 357 =
+f.363 and canvas 368 = f.377, so the offset drifts). Full list in `keyhunt/2026-10-07-KH2E.tsv`.
+
+**Lead for this target: the 1447 Amidani cipher slips have clear copies beside them.** Eye-checked at 1000-1400 px,
+7 Oct 2026: f.366 (Amidani, Nov 1447, cipher slip, canvas f360) has a later-hand clear copy on f.365 headed "Dal
+Sig.r Amidani 9bre 1447" (canvas f359) whose opening matches the slip's clear opening words "[S]e p[er] q[ua]nto io
+posso comprendere fundamentalm[en]te" (cipher follows); f.367 has a clear copy on f.368 ("del Sig.r Vincenzo
+Amidani 9bre 1447"); f.371 has one on f.370; f.369 is clear in the hand itself with cipher passages inline.
+Vincenzo Amidani also wrote f.70 (4 May 1446) of this target. The cipher signs on ff.366/367/371 look the same
+family as Bourdeau's f.68/f.70 inventory (crosses, barred and doubled strokes, phi, 8, 4), which has not yet been
+checked sign by sign. Those pairs are known plaintext (grade C) for Amidani's 1447 cipher. Next step, not started
+(Usage 7): crop ff.365-371 (`tools/iiif_lines.py --ark btv1b100373864 --canvas 359..362`), transcribe the three
+slips, align with `tools/interlinear_align.py`, then test the resulting key on f.70 (Bourdeau's transcription) with
+a shuffled-key control. About USD 5. If the key differs from f.70's, it is still a key for the 1447 Amidani
+letters. The other 42 italien 1584/1585 cipher entries were not screened for clear copies.
