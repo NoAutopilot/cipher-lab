@@ -796,3 +796,7 @@ Status stays `blocked` (the Tomokiyo-paper gap, line 3).
 
 Requests: gallica.bnf.fr 2 (manifest via gallica_folio, one native region), no 403/429. Subagents: 8 Sonnet (2 unused
 proportional readers, 3 readers, 3 checkers).
+**Over cap.** 14.54 by the lane orchestrator's get_session against a cap of 8 (8 Sonnet calls; the 3 checker calls ran
+70-102 tool calls each, zooming crowded stretches, unpriced by the per-call estimate). The orchestrator's stop message
+arrived after the hold-out had already been scored under the pushed PREREG; nothing was scored after it. All 13 lines
+were read and checked; no transcription step is left half done.
