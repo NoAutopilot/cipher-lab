@@ -10258,3 +10258,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 04:23 | standby (owner account) | alive; holder account 3, last line 03:05 (signed acct3-orchestrator check-in 03:0x); no takeover
 2026-10-07 04:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 04:34 UTC: spawned 0, queued left 0 (autofill: default lane < 12 h); standby: account-3 orchestrator last check-in 03:05 UTC (90 min), no takeover
 2026-10-07 04:42 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 04:42: spawned 1 (MONLUC-KEY session_01H1d53gHv23tnZ8fqpg1qkL), queued left 0
+2026-10-07 04:43 | MONLUC-KEY (account 1, session_01H1d53gHv23tnZ8fqpg1qkL): fr4735-monluc-lansac-poland-1573 | claim: brief 2026-10-07-acct3-monluc-xmatch.md Part A; cap $8, box 04:44-05:44 UTC; step 1 per-cell C-grade key check on f.86, then test 2 one leaf if step 1 holds
