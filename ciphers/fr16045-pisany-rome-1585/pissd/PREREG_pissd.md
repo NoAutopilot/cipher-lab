@@ -1,4 +1,4 @@
-# PREREG D07-PISSD: f.302v T40 tokens vs the page's own C-graded T17 tokens, blind same/different (7 Oct 2026, written ~01:3x UTC by date -u)
+# PREREG D07-PISSD: f.302v T40 tokens vs the page's own C-graded T17 tokens, blind same/different (7 Oct 2026, written ~01:1x UTC by date -u)
 Pushed before the blind reader is called. Disk only. Follows D07-PIST40 (table-cell compare a NON-TEST, control 1/5).
 
 Question (HYPOTHESES.md "kp87b witness"): are the 10 located f.302v T40 tokens (table a, plain n) the same page sign as the

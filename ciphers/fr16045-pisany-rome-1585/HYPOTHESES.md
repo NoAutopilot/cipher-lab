@@ -58,6 +58,9 @@ aligned copy letters by the same band_dp as kp87b/cgrades87b.py). Witness only; 
   D07-PIST40 (7 Oct 2026, pist40/): table-cell crop compare, 10 of 12 tokens, matched control (3 C-graded T17 + 2 T46
   tokens of f.302v) FAILed 1/5 -> non-test, no token counts; test tokens read T46 7 / T40 3 (none T40 at medium+). By eye every
   located token is the T17 n-with-descender shape (merge hypothesis, untested). Next: page-internal same/different compare.
+  D07-PISSD (7 Oct 2026, pissd/): page-internal blind same/different, 27 pairs; control known-same 7/7, known-different 5/7 (T17-T46 called SAME twice),
+  hard T17-T16 4/4 -> gate FAIL, non-test. Descriptive: T40 vs T17 SAME 7, DIFFERENT 1 (L06 i36), low 2. Blind crop-compare retired for T40 (rule 3,
+  third attempt); untested-by-this-tool, not refuted. Reopens with a higher-resolution key witness or a person's sort.
 - T31 (table m): 9 tokens, aligned m 3, o 3, t 1, r 1: still split. Rule 4: every T31 token stays M (3 that
   cgrades87b scores C are counted M in NOTES).
 Arm B (key86 + REMAP_B) scored 0.621 vs arm A 0.590 on the reconciled page (blind A 0.571 vs 0.553, blind B 0.630

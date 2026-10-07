@@ -1,0 +1,27 @@
+Q01	SAME	medium	Both are an n-shaped sign whose right leg curves down and back to the left in a hook; same hooked-tail type.
+Q02	DIFFERENT	high	Left is a three-leg m whose right stem descends straight; right is an n whose base curls into a hook.
+Q03	DIFFERENT	high	Left is a y with a curved hooked tail; right is an m with a straight descending stem.
+Q04	SAME	medium	Left is an n-like sign whose tail curves down; right is an n with a curved base hook. The left crop is ambiguous.
+Q05	SAME	high	Both are an n/y body with a long curved hook descending from the right leg to the left.
+Q06	DIFFERENT	medium	Left is a straight-stem m; right is a hooked-tail y.
+Q07	DIFFERENT	medium	Left is a straight-stem m; right is a hooked-tail y.
+Q08	DIFFERENT	medium	Left is an n with a hooked tail curling under to the left; right is a straight-descender m.
+Q09	SAME	high	Both are an m-type with a straight stem descending from the right leg.
+Q10	SAME	high	Both are an m-type with a straight stem descending from the right leg.
+Q11	SAME	medium	Left is an n with a curled base hook; right is a y with a long hook; same hooked-tail type.
+Q12	SAME	medium	Both are an n body with a base hook curling left; the left has a nearby diagonal stroke that is probably a neighbour.
+Q13	DIFFERENT	medium	Left is a straight-stem m; right is a hooked n/y with a base loop.
+Q14	SAME	low	Left is an ambiguous small n with a tail curving below; right is a hooked y. The left crop is unclear.
+Q15	SAME	high	Both are an m-type with a straight descending stem.
+Q16	SAME	high	Both are an n/y body with a curved hook descending from the right leg and curling left.
+Q17	SAME	high	Both are a y with a curved hooked tail.
+Q18	SAME	high	Both are a y with a curved hooked tail.
+Q19	SAME	medium	Both are an n body with a curved hook descending from the right leg to the left.
+Q20	DIFFERENT	medium	Left is an n with a long straight descending stem; right is a hooked n.
+Q21	DIFFERENT	high	Left is a straight-stem m; right is a hooked y.
+Q22	SAME	high	Both are an n/y body with a curved hook tail.
+Q23	DIFFERENT	high	Left is a straight-stem m; right is an n with a curved hook.
+Q24	SAME	medium	Both are an n body with a curved hook descending left.
+Q25	SAME	medium	Both are an n body with a curved hook tail from the right leg.
+Q26	SAME	high	Both are an n with a hooked curved tail.
+Q27	SAME	low	Left is an n/y body with a base loop and hook amid neighbouring strokes; right is a hooked y. The left crop is cluttered.

@@ -579,7 +579,7 @@ Verdict: keep going: 10 internal gaps; cheapest next: verso fills ~$1; most valu
 
 ## Remaining gaps (PIS1-302, 4 Oct 2026; merges PIS1-INV's list)
 Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r; 24 Mar 1587 f.301v and f.302v (kp87b, err 0.335, C 227 / M 146): 6 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST. The 24 Mar 1587 letter's cipher (f.301v, f.302v) is fully tested; the inventory (PIS1-INV) locates the rest.
-- key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
+- key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; the blind crop-compare instrument is retired for T40 (rule 3, third attempt): D07-PIST40 table-cell compare control 1/5, D07-PISSD (7 Oct 2026) page-internal same/different control 5/7 on known-different (T46 lumped with T17); no T40 token counts; next: new material -- find a higher-resolution key witness (the BnF original of the 1586-87 table: shelfmark from Tomokiyo's henryiii page or the BnF catalogue), ~$1 lookup, then the same compare against it
 - 17 Sept 1586 second letter f.246r-f.247r (about 60 lines) vs Colbert pp.52-55 and the f.248r-v period decipherment - blocker: not-attempted; outside this brief; next: transcribe f.248r-v (faint, native region) and Colbert c445-c446, crops of c504-c506, per-line two-reader pipeline as kp87a, pre-registered, ~$45 for 60 lines
 - 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; f.275v is in PIS1-275V; next: same per-line pipeline page by page, ~$12 per dense page
 - 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
@@ -647,7 +647,7 @@ Verdict: keep going: 10 internal gaps; cheapest next: T40 image compare ~$1; mos
 
 ## Remaining gaps (PIS1-275V, 4 Oct 2026; merges PIS1-302's list)
 Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r and f.275v lines 1-16 (kp86f, err 0.181, C 355 / M 219); 24 Mar 1587 f.301v and f.302v (kp87b, err 0.335, C 227 / M 146): 7 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST. The 24 Mar 1587 letter's cipher (f.301v, f.302v) is fully tested; the inventory (PIS1-INV) locates the rest.
-- key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; outside this brief; next: image compare of the f.302v T40 tokens with the table's a and s cells, disk only, ~$1
+- key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; the blind crop-compare instrument is retired for T40 (rule 3, third attempt): D07-PIST40 table-cell compare control 1/5, D07-PISSD (7 Oct 2026) page-internal same/different control 5/7 on known-different (T46 lumped with T17); no T40 token counts; next: new material -- find a higher-resolution key witness (the BnF original of the 1586-87 table: shelfmark from Tomokiyo's henryiii page or the BnF catalogue), ~$1 lookup, then the same compare against it
 - 17 Sept 1586 second letter f.246r-f.247r (about 60 lines) vs Colbert pp.52-55 and the f.248r-v period decipherment - blocker: not-attempted; outside this brief; next: transcribe f.248r-v (faint, native region) and Colbert c445-c446, crops of c504-c506, per-line two-reader pipeline as kp87a, pre-registered, ~$45 for 60 lines
 - 4 Nov 1586 f.275v block B lines 12-15 (L17-L20, transcribed RUN6-PIS, tx86h; third reader tx86i, D2-PIS275): kp86h, kp86i and kp86j all FAIL (arm A 0.497/0.497/0.500 vs order p99 0.519/0.524/0.531, err 0.19/0.22/0.26), lines M - blocker: not-attempted; [retired] kp86d nw_score known-answer test for these lines (rule 3 third attempt, D2-PIS275); next: read the interlinear later-hand gloss above L17-L20 at native resolution, align it sign by sign to tx86i/local_ciphertext.tsv (C where gloss, key86 and copy agree), ~$2
 - 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; outside this brief; next: same per-line pipeline page by page, ~$12 per dense page
@@ -940,6 +940,30 @@ PREREG pist40/PREREG_pist40.md pushed (0b172d344) before the blind reader was ca
 Report: found -- every located T40 token has the T17 n-with-descender shape by eye; the blind compare's control failed 1/5. Not found -- any token settled to a table cell; L03 i8 and L07 i8 on the strip as separate signs.
 Requests: none (disk only). Subagent calls: 1 Sonnet.
 
+## D07-PISSD (7 Oct 2026)
+Brief: .claude/briefs/runs/2026-10-07-account1-default-0042-jobs.md "D07-PISSD" (LANE DEFAULT-account-1-20261007-0042, account 1), 01:11-01:1x UTC by date -u. Step still undone (D07-PIST40 named it). Disk only, 0 network requests.
+PREREG pissd/PREREG_pissd.md pushed (7b5954f05) before the blind reader was called.
+- Material: line strips by pissd/strip.py (D07-PIST40's stitch, checked against 3 pist40/tok crops, mean abs pixel difference < 1); 20 tokens in pissd/tokens.tsv,
+  120 px crops: the 10 located T40 test tokens, 3 C-graded T17 (s), 5 C-graded T16 (r; an m whose last leg descends straight -- the page's hardest look-alike,
+  located by eye on ruler views by context, montage checked), 2 C-graded T46 (u, y-shape). No table crops.
+- 27 pairs (pissd/pairs.tsv): 10 test (T40 vs a T17), 7 known-same, 7 known-different (4 hard T17-T16), 3 decoys (T40 vs T16); `python3 pissd/pissd.py build`
+  shuffles order and sides (seed 20261007) into pissd/blind/Q01-Q27.jpg. 1 blind Sonnet call on the 27 pair paths only; reply verbatim pissd/blind/reader.txt;
+  `python3 pissd/pissd.py score` -> pissd/result.tsv (`--check` up to date).
+- **Result: control gate FAIL -- known-same 7/7, known-different 5/7 (need 6), hard T17-T16 4/4: a non-test; no T40 token counts.** Both misses are T17 vs T46
+  pairs called SAME at high confidence ("both n/y body with a curved hook tail"): the reader groups signs by the hooked tail, so a SAME between a T40 token and
+  a T17 cannot be told from that lumping.
+- Descriptive only (gate failed): test SAME-T17 7 (medium 6, high 1), DIFF-T17 1 (A4 = L06 i36, "long straight descending stem" -- the token my pre-reply eye
+  note had already marked unsure), UNSETTLED 2 (low); decoys T40 vs T16 DIFFERENT 3/3. Consistent with the merge hypothesis, not evidence for it.
+- Rule 3 third-attempt clause: this is the third image-compare instrument on key86 T40 (R9-PIS/R9-PIS2 table-crop compares on this target's cells, D07-PIST40 table-cell
+  compare control 1/5, now the page-internal same/different compare control 5/7 on the different class). The blind-Sonnet crop-compare instrument is retired for the T40
+  question; it reopens only with new material (a higher-resolution key witness -- the BnF original of the 1586-87 table, if Tomokiyo names its shelfmark) or a genuinely
+  different instrument (e.g. a person's sort of these tokens in the sign sorter).
+- Standing: key86.tsv, tx87b, the f.302v reading and grades unchanged (as pre-registered); HYPOTHESES.md "kp87b witness" T40 line stands, this non-test logged under it.
+  No decode --check needed (nothing changed).
+Report: found -- the reader separates T16 from T17 (4/4) and every known-same pair (7/7) but lumps T46 with T17. Not found -- any T40 token settled; a remaining
+cheap machine instrument for T40 on disk.
+Requests: none (disk only). Subagent calls: 1 Sonnet.
+
 ## Remaining gaps (RUN6-PIS, 5 Oct 2026; merges PIS1-KEY2's list; RUN6-PISFIN updates the f.275v B 12-15 row)
 Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.245r and (second letter) f.247r (kp86g, err 0.268, C 236 / M 122); 4 Nov 1586 f.275r and f.275v lines 1-16; 24 Mar 1587 f.301v and f.302v: 8 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST.
 - key86 T40 cell (table a; f.302v tokens align to s 5 of 7) - blocker: not-attempted; the table-cell crop compare (D07-PIST40, 7 Oct 2026) was a non-test: its matched control FAILed 1/5 (the reader never matched the circled T17 cell at the 688 px table copy), so no T40 token counts; next: a page-internal blind same/different compare (the 10 located f.302v T40 tokens vs the 3 C-graded T17 tokens and C-graded tokens of other cells on the same page, no table crops; control: pairs of C-graded tokens of known same/different cells), disk only, ~$2
@@ -962,7 +986,7 @@ Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.
 - [x] clear-pages: f.247r mapped (9 cipher lines, then clear "Nous sommes prests ...", closing, date 17 Sept 1586)
 - [x] known-keys: key86 PASS on f.244r, f.244v, f.245r, f.247r, f.275r, f.275v, f.301v, f.302v; 1585 table NON-TEST on f.75
 - [x] print: d'Ars, Catherine de Medicis 8-10 (earlier pass)
-- [ ] key-rebuild: T31 relabel SUPPORTED in aggregate; per-token compare 9 of 23 settled (R9-PIS2); 9-token re-score SUPPORTED on both pages (D4-PISRS; f.275r control 5/5 and null R12A-PISRS), 4 f.275r labels committed (R12A-PISRS); T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 table-cell compare a non-test (D07-PIST40, control 1/5), page-internal compare open
+- [ ] key-rebuild: T31 relabel SUPPORTED in aggregate; per-token compare 9 of 23 settled (R9-PIS2); 9-token re-score SUPPORTED on both pages (D4-PISRS; f.275r control 5/5 and null R12A-PISRS), 4 f.275r labels committed (R12A-PISRS); T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 table-cell compare a non-test (D07-PIST40, control 1/5) and page-internal same/different a non-test (D07-PISSD, control 5/7): blind crop-compare retired for T40, reopens with a higher-resolution key witness
 - [x] image-check: f.247r cut one line per band, three bands re-cut fixed-y, montage checked
 - [ ] retry: f.246r/f.246v (crop commands above); f.275v B 12-15 (kp86d retired; gloss read R8-PIS, 13 C; gl275 conflict compares R9-PIS, none settled); f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
-Verdict: keep going: 14 internal gaps; cheapest next: key86 T40 page-internal same/different compare (f.302v T40 tokens vs the page's own C-graded T17 tokens), disk only, ~$2; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
+Verdict: keep going: 14 internal gaps; cheapest next: key86 T40 higher-resolution key witness lookup (BnF original of the 1586-87 table), ~$1; most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
