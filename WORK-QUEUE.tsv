@@ -283,3 +283,6 @@ BKLOG-0507	account-4	.claude/briefs/runs/2026-10-07-acct3-batch-0507.md	Opus 5.5
 B0709-A1	account-1	.claude/briefs/runs/2026-10-07-acct3-batch-0709.md	Opus 5.5	12	75	claimed session_01Xkk2sEqxyiZVenJm46CDRQ 2026-10-07 07:40	2026-10-07 07:1x	birago no.86 verifier pass; eckert-1864 image-check
 B0709-A2	account-2	.claude/briefs/runs/2026-10-07-acct3-batch-0709.md	Opus 5.5	12	75	claimed session_01Nmz2LAypmAmmFxdbCk4Hgb 2026-10-07 08:10	2026-10-07 07:1x	clairambault spatial alignment (gate first); pisany T36 labels
 B0709-A4	account-4	.claude/briefs/runs/2026-10-07-acct3-batch-0709.md	Opus 5.5	12	75	done 2026-10-07 07:41	2026-10-07 07:1x	eckert-1862 sweep; manteuffel; clinton; item1 stale (done R12A-ECKLEG/ECKV2 6 Oct); item2 manteuffel 0195+0060 read, no new value; item3 skipped: no step opens unread text
+FRESH-0914	account-1	.claude/briefs/runs/2026-10-07-acct3-lanes-0914.md	Opus 5.5	12	90	queued	2026-10-07 09:1x	key_crossmatch identity-key bug fix; NEXT-STEPS staleness sweep; 2 small steps
+LANE-AM-0914	account-2	.claude/briefs/runs/2026-10-07-acct3-lanes-0914.md	Opus 5.5	40	360	queued	2026-10-07 09:1x	default-lane over folders a-m, freshness check per row
+LANE-NZ-0914	account-4	.claude/briefs/runs/2026-10-07-acct3-lanes-0914.md	Opus 5.5	40	360	queued	2026-10-07 09:1x	default-lane over folders n-z, freshness check per row
