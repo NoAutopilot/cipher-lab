@@ -1440,3 +1440,138 @@ www.zooniverse.org 1; no 429/403/challenge.
 No over-claim found: the first audit's wording was search-result only and its class stands. The first audit's search for N2-R
 lacked the +/-3-day correspondent window, the I/51 supplement, Meade's printed letters, the Huntington full-text search and the
 Talk page; all now done, none prints it. SO-ECKERT-N2R row (N3) needs no correction.
+
+## AUDIT (propagation, D12-VP)
+
+Verifier D12-VP (account 2, LANE DEFAULT-account-2-20261007-1210), 7 Oct 2026, 12:54-13:1x UTC by `date -u`; a separate
+session from D12-E1..E4 and every earlier eckert-1864 solver, not protecting their conclusions. Scope: the 30 Cipher No. 2
+blocks reading-no2.md gained after the last AUDIT.md propagation: N2-V..AC (D12-E2), N2-AD..AK (D12-E1), N2-AL..AR (D12-E3),
+N2-AS..AY (D12-E4). Nothing decoded; reading-no2.md, ciphertext-no2.txt and key-no2.md are left as the solvers committed them.
+
+### 1. Re-derivation (rule 7) and image spot-check
+- `python3 decode_no2.py --check`: "reading-no2.md is current", exit 0 (12:5x UTC).
+- Per-block counts summed by script from the derived block: D12-E2 H 115, **C 10**, I 2, M 0 (the solver's section says C 11;
+  the derived block gives C 10 -- V 1, X 1, Z 1, AA 1, AC 6 -- a one-token slip in the prose, no reading changes);
+  D12-E1 H 269, C 6, I 5, M 1; D12-E3 H 215, C 14, I 11, M 0; D12-E4 H 237, C 9, I 4, M 0, each as stated. The 30: H 836,
+  C 39, I 22, M 1.
+- One strip crop per solver from the 2400 px IIIF image (`hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/
+  default.jpg`, scratch), crop step `python3 tools/iiif_lines.py --image $S/img/p<pointer>.jpg --out $S/crops --prefix p<page>
+  --region <x,y,w,h> --lines-per-crop 2 --max-width 1600` with the solvers' own regions: 8915 (N2-Y, E2) 120,2110,2120,400;
+  8910 (N2-AJ, E1) 120,2020,2160,440; 8944 (N2-AP, E3) 120,200,2120,640; 8956 (N2-AU, E4) 160,320,2160,1030. Lines read on
+  the crops: "Happy Elizabeth Morgan For Magic Egypt Pleas[e] / me precisely when you will reach here"; "Viola For Palermo
+  Ingalls Yardstick / Crowd will be down to / the Persia Talbot Annal to"; "Caldwell Hdqrs AP Washn Apl 23 / Elizabeth Berth
+  Tulip Please Whiff"; "Harriet Belly Lawn has received over Cla[rke] / wagons Downing or Edwards Medical wagons & over".
+  Every word agrees with ciphertext-no2.txt.
+
+### 2. Print confirmation by script (28 entries located in print)
+OR pages from the IA djvu full texts fetched once here (warofrebellion322unit, 323unit, 33unit, 342unit, 343unit, 362unit,
+363unit, 371unit, 511unit): the phrase is found, and its page is bounded by the nearest standalone page-number lines before
+and after it ("a-b" below where a page-number line is missing in the OCR). PUSG vol. 10 (papersofulyssess0010gran) and Basler
+vol. 7 (collectedworksof0007royp) by IA full-text search (be-api), which gives the sentence; a page is given only where the
+snippet itself runs into a running head.
+
+| entry | print | phrase found (script) | page check | class |
+|---|---|---|---|---|
+| N2-V | OR I/34 pt 2 p.606 | "Curtis applies to retain", "every furloughed regiment" | 606 | N1 |
+| N2-W | OR I/32 pt 3 p.72-73 | "last autumn", "detriment to the service" | 72 | N1 |
+| N2-X | PUSG 10 (note) | "The operations of Captain Jenkins at Louisville require investigation" (Stanton to USG) | page not established | N1 |
+| N2-Y | PUSG 10 | "favorable arrangements for your family at Willards." ALS, then the p.214 running head | p.213 (the snippet runs into the p.214 head) | N1 |
+| N2-Z | OR I/33 p.699 | "Longstreet is now with Lee" | 699 | N1 |
+| N2-AA | OR I/33 p.718 | "not in review" | 718 | N1 |
+| N2-AB | PUSG 10 (note) | "order all such persons to rendezvous at Annapolis?" ALS (telegram sent), DNA, RG 107 | page not established | N1 |
+| N2-AC | OR I/32 pt 3 p.300-301 | "to meet any contingency" | 300-301 | N1 |
+| N2-AD | OR I/33 p.486 | "Early is advancing" | 486 | N1 |
+| N2-AE | OR I/32 pt 2 (McPhail telegram) | "(Forwarded to Generals Grant and Schofield, February 15.)" | 392-393 (the forwarding line on 393) | N1, see below |
+| N2-AF | OR I/32 pt 2 p.410 | "concert of action" | 410 | N1 |
+| N2-AG | OR I/33 | "rejoin Lee", "forwarded to General Butler" | **615** (solver: 614) | N1 |
+| N2-AH | OR I/33 p.650 | "Dumfries is a bad place" | 650 | N1 |
+| N2-AK | Basler, Collected Works of Lincoln vol. 7 | "Unless there be strong reason to the contrary, please send Gen. Kilpatrick to us here, for two or three days. A. Lincoln" | page not established | N1 |
+| N2-AL | OR I/33 p.897 | "Camp Dennison", "Sixth Minnesota" | 897 | N1 |
+| N2-AM | OR I/33 p.907 | "almost indispensable" | 906-908 | N1 |
+| N2-AN | OR I/34 pt 3 p.234-235 | "Iowa delegation" | 234 | N1 |
+| N2-AO | OR I/33 p.940 | "fragments of the Tenth Corps" | 940 | N1 |
+| N2-AP | OR I/33 p.949 | "armed with carbines" | 949-950 | N1 |
+| N2-AQ | OR I/32 pt 3 p.489; I/34 pt 3 p.278 | "garrison at Plymouth"; "Grand Ecore, April 14" | 489-490; 278 | N1 |
+| N2-AR | OR I/33 p.966-967 | "notice to the French" | 966 | N1 |
+| N2-AS | PUSG 10 | "shall I move them on at once? I think time will be saved by completing the organization tomorrow Please answer" | page not established | N1 |
+| N2-AT | OR I/33 p.1002-1003 | "stripped of almost everything" | 1002 | N1 |
+| N2-AU | OR I/36 pt 2 p.352 | body OCR too damaged for a phrase; the volume's own index: "Quartermaster-General's Office, U. S. A. Correspondence with ... Grant, U. S 352" | 352 (by index) | N1 |
+| N2-AV | OR I/36 pt 2 p.781 | "Resaca" (hit on 781) | 781 | N1 |
+| N2-AW | OR I/37 pt 1 p.493 | "three victories" | 493-496 | N1 |
+| N2-AX | OR I/36 pt 2 p.907 | "work up the Rappahannock" | 907 | N1 |
+| N2-AY | OR I/36 pt 3 p.4 | "Aquia Creek Railroad", "wounded men in Fredericksburg" | 4 | N1 |
+
+All 28: **N1**, key `period` (Cipher No. 2, mssEC 47), text `known`. Safe sentence for each: "The Cipher No. 2 ledger copy reads,
+with the period book, to the text printed in <print, page>." Unsafe: anything implying the content was unknown. Notes:
+- N2-AG: page correction 614 -> 615 (the hit sits between the 615 and 616 page lines of warofrebellion33unit).
+- N2-AE: the McPhail telegram and its forwarding line are printed (I/32 pt 2 pp.392-393; also I/33 p.558 per D12-E1). The
+  covering lines and Baldwin's short telegram to Eckert ("this information is obtained on request of Colonel Sharpe by Marshal
+  McPhail who sent a reliable man as blockade runner") are not located (I/32 pt 2 and I/33 by "reliable man as blockade",
+  "blockade runner", "Eckert": 0 hits). A two-line office note inside an N1 entry; not classed separately, logged here.
+- N2-AK: Basler prints "strong reason" (singular), the ledger "strong reasons"; one plain word, not graded.
+- Page numbers marked "page not established" need a person's read of PUSG vol. 10 (IA lending copy); the text is certain.
+
+Depth (rule 4a), per entry, % = (H+C)/code-word tokens (script over the derived block), external check the print and the
+re-derivation above. **D4** (every code-word token H or C): N2-V, W, Y, Z, AA, AB, AG, AH, AK, AM, AN, AP, AS, AU, AV, AX, AY
+(100% each). **D3** (I or M tokens remain): N2-X 92%, AC 97%, AD 93%, AE 97%, AF 97% (1 M, Chumb), AL 95%, AO 97%, AQ 93%,
+AR 93%, AT 98%, AW 95%. Outward words: D4 "deciphered", D3 "largely deciphered (about N%)"; text `known` for all 28.
+
+### 3. The two entries not located in print: full search (7 Oct 2026)
+- **N2-AI** (p.18, pointer 8910, Capt. Wm. T. Howell, A.Q.M., to Brig. Gen. Ingalls, 8 Mar 1864 3.30 PM, operator A. H. Caldwell):
+  Rucker has sent all available water transportation to Yorktown and Biggs at Fort Monroe is ordered to send all there;
+  Kilpatrick's order left with Rucker; a large steamer ordered from New York; enough transportation at Yorktown for 1,000 men
+  and horses by tomorrow evening; the 1,400 cavalry horses being purchased, the first lot tomorrow; Captain Feilner notified.
+- **N2-AJ** (p.18, pointer 8910, Augur to Ingalls, 9 Mar 1864, header 12 noon, time word Viola = 12 midnight, conflict logged by
+  the solver): "Lieut Gen Grant will be down to the Army of the Potomac tomorrow."
+
+| family | searched | result |
+|---|---|---|
+| OR I/33 full text (djvu), date window 5-12 Mar 1864 by correspondent | phrases "Rucker informs me", "1,400 cavalry", "sufficient transportation at Yorktown", "will be down to the Army of the Potomac", "down to the Army of the Potomac to-morrow"; every "March 8/9/10, 1864" item naming Ingalls, Howell, Yorktown or Augur; the index: Ingalls's correspondents (Devereux, Meade, QMG Office, Rucker) and Augur's (no Ingalls); "Howell" (only John H. Howell, p.483) | no AI, no AJ; positive control N2-AH ("Dumfries is a bad place") found at p.650 in the same file |
+| OR I/51 pt 1 (Union supplementary correspondence, warofrebellion511unit) | "Rucker informs", "Howell" (25 hits: William T. Howell only as a later disbursing officer), "1,400 cavalry", "will be down to the Army", March 8 and 9, 1864 items | no AI, no AJ |
+| PUSG vol. 10 (IA fts) | "down to the Army of the Potomac" (0); "Howell" (M. D. Howell, May 1864, unrelated); "Ingalls" (USG to Ingalls 16 Feb only); "Rucker" (index only) | no AI, no AJ; controls N2-X, Y, AB, AS all found in the same volume |
+| Huntington CONTENTdm, whole collection p16003coll11, CISOSEARCHALL with full-text flag | "Howell" (18), "Yorktown Ingalls" (4), "Augur Ingalls" (2); item info read for all 24 and grepped for 1864/Ingalls/Howell/Rucker/Augur | only 8910 itself carries either telegram; the other hits are 1862-1865 pages (Howell as a 1865 cipher word on mssEC 25, City Point 1865 traffic); no decoded field |
+| Google Books API (key, country=US), 7 queries | "Rucker informs me that he has sent"; "available water transportation to Yorktown"; "sufficient transportation at Yorktown"; "steamer has been ordered from New York" Kilpatrick; "will be down to the Army of the Potomac to-morrow"; Augur Ingalls "March 9, 1864" Grant; Howell Ingalls Kilpatrick Yorktown March 1864; control "Dumfries is a bad place" Kilpatrick | no AI/AJ text (loose matches only); control found the OR |
+| OpenAlex (key) | "Kilpatrick Yorktown transportation Ingalls 1864" | 0 works |
+| JSTOR | four rows queued in JSTOR-QUEUE.tsv, both families per entry | pending (never blocks) |
+| Unreachable / unread | Supplement to the OR (Hewett; not full-text searchable from the cloud, as D12-V2R found); NARA RG 92 (Quartermaster General, consolidated correspondence; Howell's and Ingalls's letters), RG 393 (Dept. of Washington telegrams sent), RG 107 M473/M504; Ingalls papers; HathiTrust full text | unread |
+Requests (this whole job): archive.org 9 (djvu texts), be-api.us.archive.org 13 (fts), hdl.huntington.org 31 (7 searches, 24 item
+info) + 4 IIIF images, googleapis.com 8, api.openalex.org 1; all 200 except one be-api reply that was not JSON (retried once, 200).
+
+### 4. Classification of N2-AI and N2-AJ (key `period`)
+- **N2-AI**: **N3**. No prior plaintext or decipherment located after the search above. Not N4: the Quartermaster records
+  (RG 92) and RG 107 telegram copies, where a QM's telegram to Ingalls would be kept, and the Supplement to the OR are unread.
+  Depth **D3**, 100% (40/40 H), check: the period key for every value and agreement with the printed sequel of the same days
+  (Kilpatrick's command shipped from Yorktown to Alexandria, OR I/33 pp.650, 662: Ingalls to Meade 7 Mar on boats, Kilpatrick
+  9 Mar "orders to embark my command for Alexandria"); not D4, no print of this text. Safe: "Read at grade H with the period
+  Cipher No. 2 book; no prior decipherment or printed text located in OR I/33 or I/51 pt 1, PUSG vol. 10, the Huntington
+  collection's full text, Google Books or OpenAlex (searched 7 Oct 2026)." Unsafe: "first", "unpublished", "never printed".
+  Sentence: "Captain Howell tells Ingalls that Rucker has sent all available water transportation to Yorktown, enough for
+  1,000 men and horses by the next evening, and that the first of the 1,400 cavalry horses being bought arrives tomorrow."
+- **N2-AJ**: **N3**. Same search; not N4 for the same unread series (RG 393 Dept. of Washington telegrams sent). Depth **D3**,
+  100% (9/9 H), check: the period key, and the content agrees with the printed sequel: OR I/33 (p.663-664, between the
+  page lines in warofrebellion33unit), Humphreys's circular of 10 March 1864 "Lieutenant-General Grant has arrived at his
+  headquarters", and Stanton to Burnside the same day "General Grant has gone to the front"; not D4, no print of this text, and the time word (Viola = midnight) conflicts with the header's noon.
+  Safe: as N2-AI. Unsafe: "first", "unknown". Sentence: "Augur tells Ingalls that Lieutenant-General Grant will come down to the
+  Army of the Potomac tomorrow." Note: a one-sentence telegram whose content (Grant's 10 March visit) is well known; N3 is
+  about this text, not the event.
+- SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-N2AI and SO-ECKERT-N2AJ added in this session, with prompts in second-opinions/.
+  status.json: one result row each.
+
+### 5. key-no2.md section 8 conflicts recorded by the solvers (logged, not resolved here)
+- Religion = Operations ([25B], I): further witnesses N2-X (Grant Papers "The operations of Captain Jenkins") and N2-AW (OR
+  "operations in that department"), with ECK64-NO2's Slumber(ations) = operations in N2-T; the [25B] row alignment stays I
+  as the key row stands. Two words cannot both own Operations in a one-part book unless one is the clerk's; open.
+- Nuptial = Smith (H, book p.19 l.8) in N2-AL and four times in N2-AQ, each = Smith in the print; but N2-AQ "Nuptial Princeton
+  and the Sheffields" = OR I/34 pt 3 p.278 "Steele's command and the gun-boats". The derived block reads Smith; the print says
+  Steele. Logged (the operator's own note "Harding & Nuptial both arbitraries" bears on it).
+- N2-AT "yawl": the book's Yawl = Signed; the OR has a sentence break there and the message runs on to Lamb (H W Halleck) at the
+  foot of p.60; marked plain by the solver so the decoder does not end the message. Logged.
+- Also logged by the solvers and seen here, not resolved: Pine = Communicate vs N2-AE "Snake Pine Talbot Argus" = "Hdqrs. Army
+  of the Potomac"; time/number words against print (N2-AA Gertrude 12 noon vs OR 12.30; N2-AH Elizabeth 10.30 vs OR 10.50;
+  N2-AJ Viola midnight vs header noon; N2-AQ date words 26 vs 25; N2-AR 11.30 AM vs OR p.m.; N2-AX 9.30 vs OR 10 p.m.; N2-AY
+  300 vs OR 3,000 wounded and the second Castor = Rappahannock).
+
+### 5a. Postmortem
+- No novelty over-claim in the four solvers' sections: each says "located"/"not located" only. Corrections: D12-E2's C 11 is
+  C 10 (section 1); N2-AG page 615, not 614; N2-AE "about p.392" is pp.392-393. Not edited in reading-no2.md (a solver file);
+  this section is the record.

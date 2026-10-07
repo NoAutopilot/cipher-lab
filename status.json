@@ -4271,6 +4271,88 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D12-VP)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D12-VP verifier (account 2)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Howell to Ingalls, 8 Mar 1864, water transportation at Yorktown and cavalry horses (N2-AI)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (I/33, I/51 pt 1), the Grant Papers vol. 10, the Huntington collection's full text, Google Books or OpenAlex (searched 7 Oct 2026, one audit).",
+      "gap": "NARA RG 92/RG 393/RG 107 copies and the Supplement to the OR unread, JSTOR rows pending, so not N4; SO-ECKERT-N2AI queued",
+      "phrases": [
+        "Huntington mssEC 19 p.18, pointer 8910"
+      ],
+      "document_id": "Huntington mssEC 19 p.18, N2-AI (Howell to Ingalls, 8 Mar 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.18, N2-AI (Howell to Ingalls, 8 Mar 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "40/40 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "D12-E1 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D12-VP)' section 4",
+      "depth_sentence": "Captain Howell tells Ingalls that Rucker has sent all available water transportation to Yorktown, enough for 1,000 men and horses by the next evening, and that the first of the 1,400 cavalry horses being bought arrives tomorrow.",
+      "depth_check": "period key book (mssEC 47) for every value; agrees with the printed sequel of Kilpatrick shipping from Yorktown to Alexandria (OR I/33 pp.650, 662); no print of this text",
+      "depth_note": "code words H 40"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D12-VP)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D12-VP verifier (account 2)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Augur to Ingalls, 9 Mar 1864, Grant coming down to the Army of the Potomac tomorrow (N2-AJ)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (I/33, I/51 pt 1), the Grant Papers vol. 10, the Huntington collection's full text, Google Books or OpenAlex (searched 7 Oct 2026, one audit).",
+      "gap": "NARA RG 92/RG 393/RG 107 copies and the Supplement to the OR unread, JSTOR rows pending, so not N4; SO-ECKERT-N2AJ queued",
+      "phrases": [
+        "Huntington mssEC 19 p.18, pointer 8910"
+      ],
+      "document_id": "Huntington mssEC 19 p.18, N2-AJ (Augur to Ingalls, 9 Mar 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.18, N2-AJ (Augur to Ingalls, 9 Mar 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "9/9 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "D12-E1 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D12-VP)' section 4",
+      "depth_sentence": "Augur tells Ingalls that Lieutenant-General Grant will come down to the Army of the Potomac tomorrow.",
+      "depth_check": "period key book (mssEC 47) for every value; agrees with OR I/33 (Humphreys circular 10 Mar 1864, Grant arrived at headquarters); time word Viola = midnight conflicts with the header's noon; no print of this text",
+      "depth_note": "code words H 9"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
         "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
       ],
       "audit_status": "one audit (propagation)",
