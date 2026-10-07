@@ -74,3 +74,14 @@ n-gram (tools/data pt18 corpus); pre-register the decision rule. Do not touch th
 Verdict tail (NOTES.md l.1494): "relabel the fr.3040 barred z (reader label zb) as its own code in n8gra2/n8gra3 and close the z/zb half
 of the HYPOTHESES.md z A-vs-R entry, ~$0.5" (R12D-GRAZB2 found f.30 zb and fr.3040 barred z are different classes). Do the relabel,
 re-run the affected scripts with --check, confirm key.tsv unchanged or say exactly what changed, close the HYPOTHESES.md entry half.
+
+## Wave 1b (spawned 14:5x UTC 7 Oct)
+Intake gate: see the line pasted in DA1-BOW below.
+
+### DA1-BOW -- bowes-walsingham-1583 known-keys rung: Walsingham-Wotton 1585 (solver, Opus; cap 3, box 50 min)
+NOTES.md l.623 (the folder's "depends on nobody" action) and Escalation "[ ] known-keys" (l.587): try Tomokiyo's Walsingham-Wotton 1585
+reconstruction (the elizabeth.htm images; use sources/cryptiana snapshots on disk first, fetch from Cryptiana only what is missing,
+Wayback CDX if 404) against this letter's code layer (85, 0100 and the M codes), plus one TNA Discovery API search for the Wotton key /
+Bowes cipher. A code reading from that key is H only if the key is a period key for this channel; a different-correspondent key is a
+hypothesis to test with a control (wrong-key or shuffled-code null that can differ on the fit statistic), not a grade. Tick or retire the
+known-keys rung with the result; credit Tomokiyo.
