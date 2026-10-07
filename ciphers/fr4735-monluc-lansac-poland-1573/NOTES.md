@@ -120,3 +120,29 @@ Spec test 1, known-answer. No c258-c270 read (test 2). Lansac untouched.
 - **Where the table and the leaf disagree (from the decode, not settled):** "tesmoignage" decodes "gepmuigaer" -> the first sign (K07, '2' = g in the table) stands for t here, K14 (b-shape = p) for s, K39 (y = u) for o in several places. Either the passes chose look-alike cells or Tomokiyo's table misplaces these; a cell-by-cell check against the gloss is the next step (it would make the key period-checked, grade C, on this leaf).
 Grade counts on the reading: none claimed (no reading is asserted; this is a score of a published key). Requests: gallica.bnf.fr 4 (manifest probe, info.json, 1 overview, 2 native regions), 1.5 s+ apart.
 Suggested next: (1) per-cell C-grade correction of key.tsv from the f.86 gloss+line 1 alignment (~$2); (2) then spec test 2 (c268 vs c270).
+
+## MONLUC-KEY step 1: per-cell key check on f.86 (7 Oct 2026, Opus, for the account-3 orchestrator)
+Brief `.claude/briefs/runs/2026-10-07-acct3-monluc-xmatch.md` part A. Script `check_cells.py` (`--check` for rule 7) aligns
+token by token (score_c172.py's scoring, with traceback) against `gloss_c172_withline1.txt`: the margin gloss plus the clear
+line 1. NA-MONL marked that insertion as exploratory, and the same is said here. Each cell is then judged on the gloss letters its tokens face.
+- **Cells (68):** confirm 15 (K03 c, K04 d, K05 e, K08 h, K09 i, K10 l, K11 m, K13 o, K15 q, K16 r, K26 e, K39 u, K41 a, K42 e,
+  K49 r); contradict 2 (K01 a->n 8/12; K18 t->l 2/2); mixed 2 (K07 g: faces t 7, g 5, n 1, s 1; K14 p: faces s 7, p 3, e 1, t 1);
+  once 2 (K06 f agrees; K62 l faces m); unexercised 47. **Shuffle control** (200 token shuffles, same procedure):
+  confirm mean 1.5, p95 3; contradict mean 0.42, p95 1. The 15 confirmations stand well clear of chance.
+- **Gain gate (held-out line):** corrections learned on two lines, scored on the third, against the same corrections on shuffled
+  held-out tokens: L02 +6 (shuffle p95 4), L03 0 (p95 0), L04 +3 (p95 3). The gain clears its control on 1 line of 3, so the
+  gate is **not passed**. key.tsv is unchanged, still Tomokiyo's table as published.
+- **Attribution (ciphertext_c172.tsv, per position with passes A/B):** K18->l are the two L02 tokens where the passes split
+  K15/K18 (pass A q, pass B t), and the gloss says l. Neither pass found that cell, so the sign is unidentified, not a table error.
+  K01->n: 3 of 8 n-facing tokens are where pass B read K12 (n) and the pair rule chose K01; the other 5 are tokens both
+  passes called K01. K07 and K14 split only on tokens both passes agree on. Image look at c172cipher_L02_s1.jpg (2000 px): the t-facing
+  K07 at L02:1 and the g-facing K07 at L02:7 look like the same 'z/2' form to this reader. Either the leaf uses one sign for
+  two letters (a homophone or a merge not in the table), or the difference sits below crop resolution. **Not settled:** it needs native
+  crops of the individual signs (K01/K12, K07, K14 instances), one look each, about $1.
+- **Graded reading (rule 4):** `decode.json` -> `python3 tools/decode_key.py ciphers/fr4735-monluc-lansac-poland-1573 [--check]`
+  writes reading_c172.txt / reading_tokens_c172.tsv: **C 76, M 71, U 3** of 150 (C = table letter equals the gloss letter it
+  faces; M = differs, faces no gloss letter, or the passes split; U = '?vertical_bar'). No H claimed. tools/decode_key.py
+  learned 'plain' as a key value-column name (one alias; its offline test shows the same 3 pre-existing failures,
+  antt-linhares-chave and rah-canada-1869, with and without the change).
+- **Depth candidate:** D1 at most on this leaf (scattered words, e.g. "a la roche[lle] que pour empesche" on cells already
+  confirmed). The leaf's own gloss is the plaintext, so nothing here is a reading of unglossed text.

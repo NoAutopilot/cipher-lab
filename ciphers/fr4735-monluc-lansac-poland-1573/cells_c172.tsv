@@ -1,0 +1,69 @@
+cell	table	n	aligned	faced	majority	share	verdict
+K01	a	15	12	ademnnnnnnnn	n	0.667	contradict
+K02	b	0	0			0.0	unexercised
+K03	c	7	6	ccccnt	c	0.667	confirm
+K04	d	4	4	dddd	d	1.0	confirm
+K05	e	10	10	ceeeeeeeei	e	0.8	confirm
+K06	f	1	1	f	f	1.0	once-agree
+K07	g	17	14	gggggnsttttttt	t	0.5	mixed
+K08	h	3	3	hhh	h	1.0	confirm
+K09	i	9	9	iiiiiiiis	i	0.889	confirm
+K10	l	4	4	illl	l	0.75	confirm
+K11	m	3	3	mmm	m	1.0	confirm
+K12	n	0	0			0.0	unexercised
+K13	o	7	7	ooooooo	o	1.0	confirm
+K14	p	12	12	epppssssssst	s	0.583	mixed
+K15	q	6	6	eqqqqq	q	0.833	confirm
+K16	r	6	6	arrrrr	r	0.833	confirm
+K17	s	0	0			0.0	unexercised
+K18	t	2	2	ll	l	1.0	contradict
+K19	u	0	0			0.0	unexercised
+K20	x	0	0			0.0	unexercised
+K21	i	0	0			0.0	unexercised
+K22	a	0	0			0.0	unexercised
+K23	b	0	0			0.0	unexercised
+K24	c	0	0			0.0	unexercised
+K25	d	0	0			0.0	unexercised
+K26	e	9	8	eeeeeeet	e	0.875	confirm
+K27	g	0	0			0.0	unexercised
+K28	h	0	0			0.0	unexercised
+K29	i	0	0			0.0	unexercised
+K30	l	0	0			0.0	unexercised
+K31	m	0	0			0.0	unexercised
+K32	n	0	0			0.0	unexercised
+K33	o	0	0			0.0	unexercised
+K34	p	0	0			0.0	unexercised
+K35	q	0	0			0.0	unexercised
+K36	r	0	0			0.0	unexercised
+K37	s	0	0			0.0	unexercised
+K38	t	1	0			0.0	unexercised
+K39	u	15	15	eooouuuuuuuuuuu	u	0.733	confirm
+K40	i	0	0			0.0	unexercised
+K41	a	6	6	aaaaai	a	0.833	confirm
+K42	e	6	6	aeeeee	e	0.833	confirm
+K43	i	0	0			0.0	unexercised
+K44	l	0	0			0.0	unexercised
+K45	m	0	0			0.0	unexercised
+K46	o	0	0			0.0	unexercised
+K47	p	0	0			0.0	unexercised
+K48	q	0	0			0.0	unexercised
+K49	r	3	3	grr	r	0.667	confirm
+K50	u	0	0			0.0	unexercised
+K51	a	0	0			0.0	unexercised
+K52	e	0	0			0.0	unexercised
+K53	i	0	0			0.0	unexercised
+K54	l	0	0			0.0	unexercised
+K55	o	0	0			0.0	unexercised
+K56	r	0	0			0.0	unexercised
+K57	u	0	0			0.0	unexercised
+K58	a	0	0			0.0	unexercised
+K59	i	0	0			0.0	unexercised
+K60	o	0	0			0.0	unexercised
+K61	u	0	0			0.0	unexercised
+K62	l	1	1	m	m	1.0	once-disagree
+K63	u	0	0			0.0	unexercised
+K64	l	0	0			0.0	unexercised
+K65	m	0	0			0.0	unexercised
+K66	n	0	0			0.0	unexercised
+K67	s	0	0			0.0	unexercised
+K68	u	0	0			0.0	unexercised

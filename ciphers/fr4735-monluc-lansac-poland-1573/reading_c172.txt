@@ -1,0 +1,5 @@
+# f.86 (Gallica btv1b9060724s c172), 3 cipher lines, decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py.
+# Grades: C = table letter equals the margin-gloss letter it faces; M otherwise. C 76, M 71, U 3
+L02	g e p m u i g a e r q u e l o a a i c g p e g a e u r a e p g a t e a l a r o c h e t e q u e p u u r e m p e p c h e
+L03	a i e u p g q u e l q u e c r u a t g e e g f a u d r o i g q u i l a e u p g p o i a c g c h a r g [?vertical_bar] d e a [?vertical_bar] g u c i e
+L04	q u l p o i g p i a o a d e r e a a d r e g e p m o g a a g [?vertical_bar]

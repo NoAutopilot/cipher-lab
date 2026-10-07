@@ -241,7 +241,7 @@ LOADERS = {'pipe': load_pipe, 'tsv': load_tsv, 'rows': load_rows}
 
 # ---------------------------------------------------------------- key, exceptions, votes
 
-KEY_COLUMN_NAMES = ('code', 'sign', 'token', 'value', 'letter', 'word_or_phrase', 'word', 'kind', 'grade',
+KEY_COLUMN_NAMES = ('code', 'sign', 'token', 'value', 'letter', 'word_or_phrase', 'word', 'plain', 'kind', 'grade',
                     'source', 'note', 'crop', 'section')
 
 
@@ -278,7 +278,7 @@ def load_key(path):
     if header is None:
         header = ['code', 'value', 'source']
     si = col(header, 'code', 'sign', 'token') or 0
-    vi = col(header, 'value', 'letter', 'word_or_phrase', 'word')
+    vi = col(header, 'value', 'letter', 'word_or_phrase', 'word', 'plain')
     gi = col(header, 'grade'); ri = col(header, 'source'); ni = col(header, 'note')
     key = {}
     for r in rows:

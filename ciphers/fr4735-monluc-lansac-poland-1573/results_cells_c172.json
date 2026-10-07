@@ -1,0 +1,64 @@
+{
+ "gloss": "gloss_c172_withline1.txt",
+ "tokens": 150,
+ "letters": 147,
+ "table_matched": 90,
+ "table_rate": 0.6122,
+ "verdicts": {
+  "confirm": 15,
+  "contradict": 2,
+  "mixed": 2,
+  "once-agree": 1,
+  "once-disagree": 1,
+  "unexercised": 47
+ },
+ "shuffle_confirm_mean": 1.5,
+ "shuffle_confirm_p95": 3,
+ "shuffle_contradict_mean": 0.42,
+ "shuffle_contradict_p95": 1,
+ "corrections_all_lines": {
+  "K01": "n",
+  "K18": "l"
+ },
+ "corrected_matched_in_sample": 102,
+ "corrected_rate_in_sample": 0.6939,
+ "held_out": {
+  "L02": {
+   "corrections": {
+    "K01": "n",
+    "K14": "s"
+   },
+   "letters": 59,
+   "table_matched": 34,
+   "corrected_matched": 40,
+   "gain": 6,
+   "shuffle_gain_mean": 0.64,
+   "shuffle_gain_p95": 4
+  },
+  "L03": {
+   "corrections": {
+    "K18": "l"
+   },
+   "letters": 58,
+   "table_matched": 40,
+   "corrected_matched": 40,
+   "gain": 0,
+   "shuffle_gain_mean": 0.0,
+   "shuffle_gain_p95": 0
+  },
+  "L04": {
+   "corrections": {
+    "K01": "n",
+    "K18": "l"
+   },
+   "letters": 30,
+   "table_matched": 16,
+   "corrected_matched": 19,
+   "gain": 3,
+   "shuffle_gain_mean": 0.85,
+   "shuffle_gain_p95": 3
+  }
+ },
+ "draws": 200,
+ "seed": 1
+}

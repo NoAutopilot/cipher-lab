@@ -1,0 +1,11 @@
+{"note": "MONLUC-KEY 7 Oct 2026: f.86 (c172) cipher lines decoded with key.tsv (Tomokiyo's published Monluc Cipher 1 table, unchanged). Votes = the gloss letter each token faces in check_cells.py's alignment against gloss_c172_withline1.txt (the margin gloss plus the clear line 1, the line-1 insertion exploratory per NA-MONL). Grade C where the table letter equals the gloss letter, M where it differs, where the token faces no gloss letter, or where the two blind passes split.",
+ "jobs": [
+  {"ciphertext": "ciphertext_c172.tsv", "format": "tsv", "key": "key.tsv", "reading": "reading_c172.txt", "tokens": "reading_tokens_c172.tsv",
+   "style": "spaced", "uncertain_conf": ["M"], "unknown_values": [], "unkeyed_value": "?",
+   "m_words": ["uncertain"],
+   "votes": {"file": "votes_c172.tsv", "value_column": "value"},
+   "voted_grade": "C", "disagree_grade": "M", "unvoted_grade": "M",
+   "header": ["# f.86 (Gallica btv1b9060724s c172), 3 cipher lines, decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py.",
+              "# Grades: C = table letter equals the margin-gloss letter it faces; M otherwise. {grades_sorted}"],
+   "token_columns": [["line","line"],["pos","pos"],["sign","raw"],["value","value"],["grade","grade"]]}
+ ]}
