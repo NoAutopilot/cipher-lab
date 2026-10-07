@@ -8,6 +8,7 @@ links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/erving
 ask: a yes/no on whether the Society holds the letterbook, and, if it does, up to 25 free reference images of three named copies; nothing is paid or authorised by this draft.
 tariff: up to 25 reference images free; beyond that USD 25 per folder or bound volume (same page, read 7 Oct 2026)
 caution for gate 7: the collection named below ("Winthrop Family Papers") comes from one line of the repository's own notes (KEYHUNT line 58, worker KH4-D, 7 Oct 2026) and was not confirmed against the Society's catalogue; the draft asks rather than asserts. Check the Society's catalogue (ABIGAIL / collection guides) before sending, and correct the collection name or remove it.
+caution (SA-CO2, 7 Oct 2026): holding still unconfirmed; no MHS collection guide, ArchiveGrid or SNAC record of an Erving letterbook found; 'Winthrop Family Papers' has no support found. Only Curry's 1890 MHS memoir links Erving to the Society. See COPY-ORDERS-2026-10.md CO-01.
 ---
 
 Dear [RECIPIENT NAME],

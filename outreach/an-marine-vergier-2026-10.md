@@ -6,6 +6,7 @@ prior_contact: none in CONTRIBUTIONS.md, SEND-QUEUE.tsv or outreach/ for archive
 targets: COPY-ORDERS-2026-10.md row CO-02 (KEYHUNT-2026-10-07.tsv line 172); key ciphers/clair1108-duvergier/key_1696.tsv
 links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1108-duvergier; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/clair1108-duvergier/AUDIT.md; manuscript=BnF Clairambault 1108 (Gallica; the leaves read are named in the folder's NOTES.md); edition=G.-B. Depping, Correspondance administrative sous le règne de Louis XIV, t. IV, pp.772-773 n.
 tariff: AN "Décision tarifaire reproduction 2026" (signed 16 Jul 2026): digitisation A4/A3, 1-19 views free; 20 views EUR 10; +EUR 0.30 a view beyond; email/download delivery free (read 7 Oct 2026). Ask for at most 19 views.
+caution (SA-CO2, 7 Oct 2026): cote still not confirmed. Unverified lead: Marine B3 93-96 for 1696 (summary of AN Etat general des fonds t.III); Vergier letters may be in B4 instead. See COPY-ORDERS-2026-10.md.
 ---
 
 ## Form fields
