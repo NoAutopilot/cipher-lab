@@ -10209,3 +10209,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 01:10 | D07-ECK62 worker | claim: D07-ECK62 eckert-1862 per-token override table in ec18.py at full regeneration, cap 4, box end 02:00 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
 2026-10-07 01:10 | D07-CEP21 worker | claim: ceppo-nevers-fr3251-1570s f.21v S10/S26 + S13/S69 witness-shape rule then 4x read; cap 5, box to 02:10 UTC; for LANE DEFAULT-account-1-20261007-0042
 2026-10-07 01:10 | D07-NEVF25 worker | claim: D07-NEVF25 fr3416-nevers-fils-1589 sibling key-no.25 letter (fr.4715 f.27/f.38) for L05 pairing, cap 5, box end 02:10 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
+2026-10-07 01:11 | D07-PISSD worker | claim: D07-PISSD fr16045-pisany-rome-1585 key86 T40 page-internal same/different compare, cap 4, box end 02:00 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
