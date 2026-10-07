@@ -1130,3 +1130,39 @@ sides (the fr.3252 f.36v double-barred oval, glossed r), so it is relabelled S69
 `acioremti·e` (was `aciofemti·e`); no word is claimed for the passage. f.21v grades S 194 -> 195, M 61 -> 60. The passage is not
 quoted in this file's safe sentences or in any SECOND-OPINIONS-QUEUE.tsv row (grep, 7 Oct 2026). **VERIFIER WANTED** for the one S.
 Details: NOTES.md "D07-CEP21".
+
+## Verifier: f.21v L10.6 S69 -> X_THETA2 (D07-CEPV, 7 Oct 2026; rule 10 propagation, account 1)
+
+Verifier D07-CEPV (separate session from D07-CEP21 and every solver), brief `.claude/briefs/runs/2026-10-07-account1-default-0042-jobs.md`,
+for LANE DEFAULT-account-1-20261007-0042. Clock 01:27 UTC at start. Change under audit: commit 2ff219baa, f.21v L10.6 S69 (f, M) ->
+X_THETA2 (r, S); L10 `aciofemti·e` -> `acioremti·e`.
+
+1. **Rule 7.** `tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s --check`: "reading up to date", exit 0. f.21v 267 tokens:
+   S 195, M 60, I 7, U 5 (recounted from `harvest/reading_f21v_tokens.tsv`; matches the solver's figures). f.11r, f.35, f.87 unchanged.
+2. **Pre-registration.** PREREG-S13S69.md was NOT in git before the read (it reached git in 2ff219baa with the results; the solver says
+   so in an appended correction). The order rests on file mtimes on the solver's disk, which a reviewer cannot check. Taken as a process
+   breach, not as voiding the change, for three reasons checked here: (a) the rule uses only files committed earlier
+   (`harvest/sign_id_map.json`, `harvest/witness_f36/alignment_pairs.tsv`); (b) the glossed witness is strong -- fr.3252 f.36v
+   v36top_L01_s1 pos 3, a double-barred oval inside the glossed word "parlandone", where the word itself forces r; (c) the shape is not
+   a judgement call (below). The prereg's own gate (key control rank 1/201 with power >= 18/20; judge not worse) is met as reported.
+3. **Eye check (this verifier, tile and context).** `s13s69_tiles/L10.6.jpg`: a closed oval with two clearly separate parallel bars,
+   both running out past both sides -- the same form as L06.2.12 (X_THETA2) and unlike L11.4 (one bar, S69). Tile placement checked
+   independently: template match of the tile against `harvest/f21v/c23_cipher_w.jpg` (normalized correlation 0.956 at x 2732, y 818),
+   then the line in context reads f·8·b·z·β·θθ·3·6·∅·z·1.·+, twelve signs matching passD L10's twelve (S67 S80 S37 S17 S62 X S52 S74
+   S53 S17 X_NEW S75, z at both S17 positions). Endorsed.
+4. **Independent corroboration on file.** VERIFY-CEPPO-D2-2 (29 Sept 2026) had already read this position as the double-barred oval:
+   its blind reconciler D's L10 is `acioremtise` (`harvest/verify_d2/f21v/reading_D_theta_r.txt`, this file's line "L10 acioremtise:
+   no word"). The change restores agreement with that earlier verifier read; it is not a new value.
+5. **Grade.** S licensed: decided on the glossed side of the R-bar rule, key control unchanged (rank 1/201 x3, power 20/20), judge
+   -1.135 -> -1.128 (still FAIL). Caveat kept: the placement control (one random token -> r, 500 draws) gives p 0.060, so the language
+   score does not independently confirm the r; the S rests on shape + gloss + key control, consistent with the grading of the other
+   H-sign X_THETA2 tokens on this leaf (L07.1/5/22/32, L09.13 at S).
+6. **Counts.** Verifier-endorsed f.21v S: 156 (VERIFY-BIRAGO-SMALL) -> **157 of 267 (58.8%)**. D22-CEPPO21's five M -> S tokens are
+   NOT reviewed here and stay outside the endorsed count. Depth: **D1 unchanged** (no clause; "acioremti" reads as no word).
+   `tools/depth_check.py` output pasted in NOTES.md D07-CEPV.
+7. **Novelty.** N3 unchanged: no text the class rests on changed (the passage was never quoted in a safe sentence or SO prompt). Phrase
+   delta on the changed line, 7 Oct 2026: Google Books API "acioremti" 0 hits; Internet Archive advancedsearch "acioremti" 0 hits
+   (2 queries; there is no word to search further). SECOND-OPINIONS-QUEUE rows SO-CEPPO-F11/F21V/F87 and their PROMPT files: grep for
+   the L10 letters (old and new) finds nothing; unaffected.
+Postmortem: one breach -- a prereg file written but not pushed before the read, because `tools/room.py --push` committed only the ROOM
+line. A prereg push should name the file as a path argument and the worker should paste the commit hash before opening any tile.
