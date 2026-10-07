@@ -1,0 +1,25 @@
+# BnF italien 1584 f.10 (Gallica canvas 12, right page): later-hand clear copy of the Duke's letter, Abiate 11 Jan 1447
+# (decipherment of the cipher slip f.8; f.9 on canvas 11 is the contemporary clear translation). Read by SFZ-D, 7 Oct 2026,
+# one pass from images/src_*_f12_*. Accents dropped. The copyist's "gi" (6 times) is written "vui" here: f.9, the
+# contemporary translation, reads "vuy"/"vui" at those places on canvas 11 (overview read); the later copyist misread it.
+# Dateline included (run 2): both slips end in the same ~30-sign run, which matches the shared dateline; signature omitted.
+Come altre volte ve habiamo avisato ne pare, et cosi ve confortiamo et
+pregamo voglati tenire modo de mandare qui da nui uno
+de li vostri, de chi vi fidati pienamente come de vui steso,
+mandandolo per forma chel appara el sia partito da vui;
+perche nui lo aceptaremo con nui in forma chel non
+apparira l habia a fare alcuna cosa con vui, et questo
+rechedemo aciochi per la via d eso vostro vui posiati sape
+re et intendere tuto quelo se fara qui, come e nostra in
+tentione che sapiati et intendati, et chel non se faza cosa
+alcuna noma cum consentimento vostro, et non habiati
+respecto alcuno in mandarne piu uno come un altro per
+dire chel non sia nostro amico ne nostro inimico pur
+chel sia persona ad vui fidatisima, perche s el fuse bene
+el mazore inimico che habiamo in questo mondo, ne sa
+remo contentisimi pur chel sia ben fidato a vui, perche sia
+chi se vogla nui faremo tale vita, chel non sara stato
+uno mese de za, chel ne sara cosi caldo et perfecto servito
+re et amico come habiamo, pur chel sia bon servitore et
+ben fidato a vui.
+Data Abiate die undecimo Januarii mille quatrocento quaranta septe

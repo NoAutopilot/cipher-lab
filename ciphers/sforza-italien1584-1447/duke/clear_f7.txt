@@ -1,0 +1,27 @@
+# BnF italien 1584 f.7 (Gallica canvas 10, right page): later-hand clear copy of the Duke's letter, Abiate 10 Jan 1447
+# (decipherment of the cipher slip f.5; f.6 on canvas 9 is the contemporary clear translation). Read by SFZ-D, 7 Oct 2026,
+# one pass from images/src_*_f10_*. Accents dropped. The copyist's "gi" (twice) written "vui" (f.6 "vuy", canvas 9 overview).
+# "Marchese de Mantoa" is the later copyist's insertion (written above the line, with a mark in the margin); f.6 reads
+# "Marchexe de Mantoa" in line: kept. Dateline included (run 2, see clear_f10.txt); signature omitted.
+Per vostre litere et de Pedro da Pusterla date al primo del presente havemo
+inteso quelo ne scriviti, et quanto tra vui et lo dito Pedro
+e stato agitato et concluso, ad che non faciamo altra re
+sposta, perche havemo resposto al dito Pedro quanto bi
+sogna. Ben ve ringratiamo dolcemente de quanto ne scri
+viti cosi humanamente et de li avisi ne haviti dato
+confortandove et pregandove voglati perseverare et fa
+re el simile per l advenire. Et perche vui diciti debia
+mo fare tuto perche el Marchese de Mantoa non pigla la
+via de li Venetiani etcetera, ve avisamo che nel vero
+nui gli habiamo facto per lo pasato tuto quelo havemo
+saputo et posuto, et cosi gli faremo ancora adeso, ne
+gli mancaremo in cosa alcuna, et de questo ve ne fa
+ciamo ben certo et securo. A la parte de Rolando Palavi
+cino etcetera, dicemo che sel se accordara con li Vene
+tiani el fara quelo el dovera, perche lui e stato quelo
+che ne ha inducto a fare contra Cremona quelo habi
+amo facto, siche se adeso el fara questo el fara el de
+bito suo, et ne tractara come meritano, ma seguando
+el parere et conseglo vostro vederemo de provedere
+al tuto meglo che poteremo.
+Data Abiate die decimo Januarii mille quatrocento quaranta septe

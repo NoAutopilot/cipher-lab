@@ -66,3 +66,18 @@ description into these labels (Bourdeau's f.70 code in brackets, from the token 
 None of these has a value in key.tsv: the 1447 reader used no label with these descriptions. Their nearest 1447 labels by
 description are in f70_test.py NEAREST. SFZ-70 compared two crops by eye (f.148 L3, f.366 L2) and saw no comb or one-bar-stem signs
 there. That is a spot check, not a sign-by-sign audit of the 1447 slips.
+
+## Additions (SFZ-D, 7 Oct 2026: the Duke's slips f.5 and f.8)
+
+New labels only; no existing label renamed. The Duke's hand shares the letter-like family but several common shapes have
+no counterpart above, so these are N-labels. Read by one reader (SFZ-D); the mapping of the Duke's shapes onto the existing
+labels (g, #, D, K, O, 3, q, Y, x, b, d, f, t, cX) is by eye and unverified against Amidani's slips.
+- `N1`: h-like sign with a bar through the ascender (ħ), bowl open below right; the commonest sign (11-16%). Variants with
+  two bars or a dot above were not split.
+- `N2`: one vertical with two crossbars (‡, "≠" standing up). `N3`: 2-shaped sign (before p: "2p").
+- `N4`: L-shaped corner (⌊). `N5`: plain long s without crossbar (ʃ). `N6`: 6-shaped / sigma-like open loop.
+- `N7`: double horizontal bar "=" standing alone after a sign (g=, ħ=). `N8`: "<o"-shaped sign (less-than joined to a loop, ⊰).
+- `N9`: reversed c (ɔ). `N11`: scribbled "xh"/"yh" ligature. `N12`: three dots (∵) without a bar. `N13`: pi-like π.
+- Letter-shaped runs "par", "per", "pre", "co", "mo", "bı" are written letter by letter as cX (cp ca cr, cp ce cr, c co, cm co,
+  b ci); `·ll·` (two strokes between dots) as `l l`; "g#" as `g #`. Whether these runs are single signs is untested.
+- By description, SFZ-D `N5` (ʃ) = SFZ-70 `Ns`; the two label sets were made in parallel and are not otherwise reconciled.

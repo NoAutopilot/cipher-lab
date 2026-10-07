@@ -1,0 +1,5 @@
+held_out	n_signs	n_null	train_signs	unseen	real	shuffle_mean	shuffle_p95	above_p95
+f8	865	194	37	0	0.398	0.363	0.388	True
+f5	896	151	35	7	0.471	0.363	0.401	True
+# mean held-out accuracy 0.435; gate >= 0.60 and every unit > shuffle p95: FAIL
+# shared sign-pairs (sign, unit pair) with >=2 counts in both unit keys: 32; same value 8; conflicts 3[f8/f5]:i/n, 8[f8/f5]:v/a, D[f8/f5]:h/a, N1[f8/f5]:a/e, N11[f8/f5]:r/e, N4[f8/f5]:t/c, N5[f8/f5]:e/t, N6[f8/f5]:n/t, N7[f8/f5]:n/v, N9[f8/f5]:m/e, Y[f8/f5]:o/e, ca[f8/f5]:s/o, ce[f8/f5]:r/e, ci[f8/f5]:n/o, cm[f8/f5]:u/t, co[f8/f5]:d/e, cp[f8/f5]:o/c, cr[f8/f5]:i/r, d[f8/f5]:i/r, f[f8/f5]:s/t, g[f8/f5]:c/e, q[f8/f5]:a/l, t[f8/f5]:e/n, x[f8/f5]:o/m

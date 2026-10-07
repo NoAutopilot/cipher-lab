@@ -1,0 +1,20 @@
+# BnF italien 1584 f.5 (Gallica ark:/12148/btv1b100373864 canvas 9, right page, middle slip), the Duke to Francesco Sforza,
+# Abiate 10 Jan 1447 (Mazzatinti). Single-reader transcription by SFZ-D (7 Oct 2026) from images/f5_L*_s*.jpg (lines 1-7) and
+# deskewed re-cuts of the same source (lines 9-15; the slip slopes, so the fixed bands mixed lines); line 8 from a manual strip of
+# the same source file (the band detector skipped it). Labels as ciphertext_f8.tsv. Read after f.8 had been read, before any
+# Duke alignment had been run (the f.8 S1 test used only the Amidani key).
+f5_L01	g co 8 cp ca cr g N4 D N1 N1 N1 l l N5 N8 t N12 b co d K t co O q ci cm co g # N1 N1 q N8 N1 D 8 g N4 d t Y N8 N1 N12 d N1 b ci g # l l N2 N1 N7 N1 x d D g # N1 K g ci N1 Y cu t t
+f5_L02	N1 d b N1 f ca N1 N5 g # D Y d O l l 3 N5 N1 x N8 d g K q b co d Y l l cm g # N1 N1 x g D f ca N1 K N5 N6 co # N1 ci cm co Y g g D g N7 g c co co t g x 8 g d O
+f5_L03	N4 N1 q cp ca cr g # O g N2 N1 N7 N1 K d N1 q cp ca cr g # Y 8 N8 d g # x q b co N4 K g D co t N3 cp cp O q q t d b ci 8 t N4 d D # d N1 t g K t co cp t
+f5_L04	N1 b ci g # t co t g D cu N7 cm N1 d b N1 f ca N1 N1 cp ca cr e N2 cp co 3 g b ci g # l l N5 N8 N1 N1 N1 N7 N3 cp e q t # N1 N7 f ca b t co N1 Y t cu
+f5_L05	cp ce cr g # 3 t co x N1 N7 N5 q d b t 3 N8 K N1 l l 8 cp N1 N1 b g co f N1 b N1 t N5 g N1 D N1 f d t d e l l g co N1 g N1 b ci cr co t t N13 N5 g
+f5_L06	t co d f ca b N8 N1 N1 g K N5 N1 D g N11 g N1 d # g N7 q d ci N1 O N1 q 8 t O t co N1 b d co ci N1 N1 N5 b O N1 l l N1 N7 N3 cp g K g D q b N1 N1
+f5_L07	K q 8 3 # N1 b N2 c co N1 g Y N5 c co co g # x g co N1 K q N1 N1 Y g # D x g ci N1 K N2 N1 N7 N1 Y f f t D x N5 q cp ca cr D K N5 N1 cp ca cr Y
+f5_L08	l l N1 t 8 N1 N1 Y 3 co # cp ce cr O g N1 Y q l l # N1 b N9 3 N1 N1 N1 x d D co # cp ca cr e q 8 N1 cm O N5 t co N7 g ci f g # K 8 b ci l l g
+f5_L09	c co co t g K co t b ci co # N1 g Y N5 cm b 3 N11 x co t co 8 f t N1 g l l N8 t N4 cp t 3 t co K q 8 N1 N7 d d D Y N5 N1 N1 N1 O N13 t co d N1 x
+f5_L10	g D cm N1 f D c co co N1 cp ce cr N8 N1 q N6 d ci N1 g N1 O g ci N1 K N1 t co Y 8 N1 O g N1 N1 3 l l f g N1 x g ci N1 K g D q t N2 O d D
+f5_L11	x g # x O g N1 D N6 g # d O N1 N4 N1 cp ci q g ci N1 K N2 c co t g Y 8 c co co g # x f b g D cm t g N1 K N1 g N1 O g ci f g # Y
+f5_L12	N1 g N1 q N1 t co N1 f ca K cm 8 Y N5 q D g # N4 c co co g N1 q g co c N1 f ca O g x c q f N1 t 8 3 N8 K N1 q N1 N1 l l N5 N6 f b t N1 Y 8
+f5_L13	cp ca cr e g # d x N1 b co N1 N1 K N8 t q d x N1 b co N1 D 8 g D K N9 b t N1 Y g D q cp N1 N1 x N13 t co N1 O c co t N1 l l N8 b t
+f5_L14	b 3 d t Y N1 3 8 N1 t b N9 d e N1 D g ci cp g d cp 3 b ci g # K g f N4 3 g N1 N1 g # l l N13 8 d e N7 ci cm co N9 N1 N1 O 3 l l N1 ci cm co d ca
+f5_L15	N5 N1 N1 N1 O q f t t t 3 l l N1 b t D g ci N1 cp D N1 c co co N1 3 8 l l t co cp D d D ci cm co t N11 D O b N1 l l t K x 8 N1 N13

@@ -139,3 +139,4 @@ download 2, one 500 and one retry), be-api.us.archive.org 7; googleapis.com/book
 via WebFetch.
 
 - SFZ-1 (7 Oct 2026, 21:4x UTC): Amidani 1447 known-plaintext key in `amidani/` (ff.366/365, 367/368, 148/147; key.tsv 65 labels, 35 at C); held-out gate G1 PASS (0.776/0.775/0.739 vs shuffle p95 0.38-0.42); f.70 (italien 1583, 1446) test FAIL under a description-only mapping of Bourdeau's codes (not a test of the 1446 key: needs f.70 re-read from an image). See amidani/NOTES.md.
+- SFZ-D (7 Oct 2026, 22:0x UTC): the Duke's 1447 key from f.5/f.7 and f.8/f.10 in `duke/`; S1 (Amidani key on f.8) FAIL 0.267 vs p95 0.334; G1 FAIL 0.441 mean (gate 0.60); f.15 not decoded. Pairing correction: f.6 and f.9 are the contemporary translations (Mazzatinti). See duke/NOTES.md and ../sforza-duke-1447-f15/NOTES.md.
