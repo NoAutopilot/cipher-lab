@@ -86,3 +86,15 @@ first; N2-AY was last at 13:0x UTC), mark the candidate row READ D4-E5 (N2-xx). 
 correspondent, PUSG, IA full text) and record where it was and was not found. `python3 ciphers/eckert-1864/decode_no2.py --check` exit 0
 before every push. ~1.2 per entry; stop before an entry that would cross 80% of cap or box. Flag the reading change for a verifier in ROOM.
 Report what was found and where it was not found; do not classify novelty.
+
+### D4-HDK -- hessen-daenemark-1672 Escalation key-rebuild step (solver, Opus; cap 4, box 50 min) -- wave 1b, spawned 13:5x UTC
+Intake gate 13:5x UTC: output pasted in the ROOM claim of this lane. NOTES.md Verdict (line ~591): "cheapest next: the untried key-rebuild
+step in Escalation (~$4), then retry". The Escalation `[ ] key-rebuild` line is stale (it says no transcription exists; ciphertext.tsv,
+key_gloss.tsv and the GAPS193 bracketing now exist): first restate what is actually left untried. Then, script-first, disk only: for each
+still-unread token (625 x2, margin 7480, 602, 68, 634 per GAPS163/GAPS199), a context fill from the letter's own German clear text and
+glosses using a German 17th-c. corpus (`tools/data/de17`), pre-registered (PREREG file pushed before scoring) with a matched control
+(the same fill on gloss-pinned codes held out, which must recover them above a stated gate before any target value counts; rule 3's
+"control can fail differently" paragraph applies). A value enters key.tsv only at S with the control passed; otherwise log the step
+[retired] with the instrument named. Then the retry step: `python3 tools/decode_key.py ciphers/hessen-daenemark-1672 --check`, regrade.
+Update Remaining gaps / Escalation; `tools/gaps_check.py hessen-daenemark-1672` passes. Report what was found and where it was not found;
+do not classify novelty.
