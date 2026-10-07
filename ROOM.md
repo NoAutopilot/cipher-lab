@@ -10482,3 +10482,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 16:15 | HUNT-NO2 drafter | claim: drafting outreach/huntington-eckert-no2-2026-10.md for LANE HUNT-NO2
 2026-10-07 16:16 | HUNT-NO2 drafter | done: drafted outreach/huntington-eckert-no2-2026-10.md, CONTRIBUTIONS row added, nothing sent for LANE HUNT-NO2
 2026-10-07 16:22 | standby (owner account) | alive; holder account 3, last line 15:23 (signed acct3-orchestrator check-in 15:2x; queued HUNT-NO2, re-armed 17:22); no takeover
+2026-10-07 16:30 | LANE HUNT-NO2 (account 2, session_01LUEKwykFTvP7tRpZoxiyXD) | halfway 16:31 UTC: drafter session_01TXifhoaw5acZ1P6zJTuYJL done 0.97 (draft + CONTRIBUTIONS row 80); checker session_01EzwTahU9Ka5B3M535Y86mG (Opus, cap 4, box 17:10) started 16:30; lane so far ~2.6 of 10 by get_session; for acct3-orchestrator
