@@ -4808,6 +4808,211 @@
         "BnF Mel. Colbert 26 f.23",
         "BnF Mel. Colbert 26 f.24"
       ]
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V1)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D4",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V1 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Meigs to Biggs, 19 Apr 1864, steamers chartered for Fort Monroe (E21)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
+      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E21 queued",
+      "phrases": [
+        "Huntington mssEC 19 pp.42-43, pointer 8934-8935"
+      ],
+      "document_id": "Huntington mssEC 19 pp.42-43, pointer 8934-8935, E21 (Meigs to Biggs, 19 Apr 1864)",
+      "documents": [
+        "Huntington mssEC 19 pp.42-43, pointer 8934-8935, E21 (Meigs to Biggs, 19 Apr 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "37/37 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "LS-R1 7 Oct 2026 (reading.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V1)' section 4",
+      "depth_sentence": "The Quartermaster-General tells Lt. Col. Biggs at Fort Monroe that three ferry boats and three tugs leave Washington at once, and that Captain Wise and Major Van Vliet have chartered side-wheel steamers, propellers, tugs and barges, all ordered to Fort Monroe.",
+      "depth_check": "period key book (mssEC 41) for every value; image crops (LS-R1); fresh rule-7 re-derivation by a second session (LS-V1); OR I/33 p.915 (Wise from Philadelphia, 19 Apr 1864) names Matilda, Highland Light and Champion, vessels the decode lists",
+      "depth_note": "code words H 37"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V1)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V1 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: G. V. Fox to Olcott, 2 May 1864, investigate the New York Navy Yard only, not prosecute (E23)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
+      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E23 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.63, pointer 8955"
+      ],
+      "document_id": "Huntington mssEC 19 p.63, pointer 8955, E23 (Fox to Olcott, 2 May 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.63, pointer 8955, E23 (Fox to Olcott, 2 May 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "7/7 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "LS-R1 7 Oct 2026 (reading.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V1)' section 4",
+      "depth_sentence": "Assistant Secretary Fox tells Olcott he is commissioned to investigate the New York Navy Yard only, not to prosecute, which the Secretary of the Navy will do.",
+      "depth_check": "period key book (mssEC 41) for every value; image crops (LS-R1); fresh rule-7 re-derivation (LS-V1); no external print check of a decoded value",
+      "depth_note": "code words H 7"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V1)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D4",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V1 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Stanton to Dix, 21 Aug 1864, arms for Indiana Copperheads at 42 Walker Street (E26)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
+      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E26 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.159, pointer 9053"
+      ],
+      "document_id": "Huntington mssEC 19 p.159, pointer 9053, E26 (Stanton to Dix, 21 Aug 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.159, pointer 9053, E26 (Stanton to Dix, 21 Aug 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "24/24 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "LS-R1 7 Oct 2026 (reading.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V1)' section 4",
+      "depth_sentence": "Stanton orders Dix to search No. 42 Walker Street, New York, for revolvers and ammunition imported for Copperheads in Indiana, some of which was seized at Indianapolis the night before.",
+      "depth_check": "period key book (mssEC 41) for every value; image crop checked word for word by LS-V1; fresh rule-7 re-derivation; OR I/39 pt 2 p.295 (Carrington, Indianapolis, 24 Aug 1864: revolvers seized, arms en route 'variously disguised') agrees with decoded content",
+      "depth_note": "code words H 24"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V1)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 93.3,
+      "depth_unread": {
+        "names_codes": "1",
+        "other": "0"
+      },
+      "depth_by": "LS-V1 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Judge Advocate Turner, 10 Oct 1864, Jewett and Siebert from Richmond; Gemmell in the Old Capitol (E27)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
+      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E27 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.197, pointer 9091"
+      ],
+      "document_id": "Huntington mssEC 19 p.197, pointer 9091, E27 (Turner to 'beverage', 10 Oct 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.197, pointer 9091, E27 (Turner to 'beverage', 10 Oct 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "14/15 code words H, 1 M (place word Grunt); addressee word 'beverage' outside the book",
+      "unresolved_spans": "addressee word 'beverage' (not in the book)",
+      "reading_version": "LS-R1 7 Oct 2026 (reading.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V1)' section 4",
+      "depth_sentence": "Judge Advocate Turner reports that two men, Jewett and Siebert, came from Richmond the week before and are supposed to be rebel agents, and that James Gemmell, who crossed the Potomac with them, is in the Old Capitol.",
+      "depth_check": "period key book (mssEC 41); image crops (LS-R1); fresh rule-7 re-derivation (LS-V1)",
+      "depth_note": "code words H 14, M 1"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V1)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V1 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: F. W. Seward to Thurlow Weed, 11 Oct 1864, a navy boat for the sailors' vote (E28)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
+      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E28 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.197, pointer 9091"
+      ],
+      "document_id": "Huntington mssEC 19 p.197, pointer 9091, E28 (F. W. Seward to Weed, 11 Oct 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.197, pointer 9091, E28 (F. W. Seward to Weed, 11 Oct 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "15/15 code words H (one flagged Pilgrim[?] = Captain)",
+      "unresolved_spans": "none",
+      "reading_version": "LS-R1 7 Oct 2026 (reading.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V1)' section 4",
+      "depth_sentence": "Frederick Seward tells Thurlow Weed that Captain Pennock, in temporary command of the Mississippi Squadron, will put a boat at the disposal of the New York election agents to take the sailors' votes or proxies.",
+      "depth_check": "period key book (mssEC 41); image crops (LS-R1); fresh rule-7 re-derivation (LS-V1); ORN I/26 Sept 1864 (Pennock commanding the station, Porter absent) fits 'temporary command'",
+      "depth_note": "code words H 15"
     }
   ],
   "lanes": [

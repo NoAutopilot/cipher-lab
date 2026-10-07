@@ -1786,3 +1786,101 @@ after a pause, 200); all others 200.
   page numbers in section 2; D4-E5's NOTES.md "65-entry total from the decoder" is the 58-entry total (the derived block says
   "Totals over the 58 entries"; 58 `### N2-` blocks in ciphertext-no2.txt). Not edited in the solver's files.
 - PROGRESS.tsv carries no eckert-1864 row; none added (one-row-per-leaf register, not this job's to open).
+
+## AUDIT (LS-V1)
+
+Verifier LS-V1 (account 1, LANE ST-LEDGER), 7-8 Oct 2026, 23:38-00:1x UTC by `date -u`; a separate session from the solver
+(LS-R1), not protecting its conclusions. Scope: LS-R1's entries **E21-E29** (mssEC 19, Cipher No. 1, key.md = mssEC 41). Nothing
+decoded beyond re-running the committed script. Key source for every item: `period` (the War Department's own Cipher No. 1 book).
+
+### 1. Re-derivation (rule 7) and image spot-check
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0. E21-E29 derived block: H 175, C 3 by the decoder;
+  LS-R1's hand regrading (E25 "pike" H -> M, E27 "Grunt" H -> M) checked against key.md and accepted: net H 173, C 3, M 2.
+- Strip crops from the 2400 px IIIF images (`hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`, scratch,
+  not committed): `python3 tools/iiif_lines.py --image $S/img/p9053.jpg --out $S/crops/9053 --prefix p9053 --region 0,100,2400,1400
+  --centres 50,150,...,1350 --lines-per-crop 4 --max-width 2400` and the same for 9115 with `--region 0,930,2400,1200 --centres
+  50,...,1150`. E26 (9053) lines "that a large stock of revolvers & offal / imported recently for copper heads in Alden is / stored at
+  No lampoon plank Walker St frog / awaiting to be forwarded wicoff" and E29 (9115) lines "Tappan Dudley Harris Port land Adam Pekin
+  Lamp Person or / Leg years old has a bull dog look Pedlar snuffs / up his nose squints with his left eye Pekin dark / hair slightly
+  tinged with gray bright dark eyes with a" agree word for word with ciphertext.txt.
+
+### 2. Entries LS-R1 located in print: page confirmed by script (a check, not a search)
+| ID | printed at | how confirmed |
+|---|---|---|
+| E22 | ORN ser. I vol. 26 p.92 | IA `officialrecordso0026unse` djvu: "neither general smith nor his force will be withdrawn ... red river" (exact) |
+| E24 | OR ser. III vol. 4 **p.392** (Seward to Adams, 18 May 1864 12.30 p.m., "Same to William L. Dayton"), also Papers relating to Foreign Affairs 1864 and Bates, Lincoln in the Telegraph Office | IA `warofrebellionco0004genf` djvu, exact, between the p.391 and p.393 running heads; LS-R1 had "page not fixed" -- now fixed. IA full-text (all items) also hits Bates and two press-freedom histories |
+| E25 | OR ser. I vol. 37 pt 2 p.501 (Halleck to Wallace, 29 July 1864 12.20 p.m.) | IA `warofrebellion013702rootrich` djvu: text before the p.502 running head; Wallace's own relay to Tyler of the same day prints "Edwards and Conrad's Ferries, with 400 cavalry and three pieces of artillery ... Wright's trains on the Rockville and Frederick pike" |
+
+### 3. Entries LS-R1 did not locate: search families (7-8 Oct 2026)
+Phrases (decoded wording): E21 "Van Vliet has chartered steamers", "double decked steam barges", "Helen Getty Metamora Champion";
+E23 "commissioned to investigate only not to prosecute", "Solicitor Whiting gave his opinion"; E26 "42 Walker street", "disguised as
+hardware stationery", "revolvers and ammunition imported recently"; E27 "Jewett and Siebert", "James Gemmell crossed the Potomac",
+"supposed to be rebel agents", "Miss Gardner"; E28 "proxy of the sailors at the ensuing election", "disposal of the New York election
+agents", "election agents"; E29 "Dudley Harris", "has a bull dog look", "snuffs up his nose", "tavern keeper Brooklyn". Run with
+`tools/print_check.py` (scratch target; exact + proximity match on each djvu text) plus hand queries.
+
+| family | searched | result |
+|---|---|---|
+| OR by date and correspondent, +/- 3 days (IA djvu, whole volume) | ser. I vols 33 (E21), 36 pt 2 (E21, E23), 37 pt 2, 39 pt 2 (E26), 42 pts 2-3, 43 pts 1-2 (E26-E29), 51 pt 1 | no hit for any E21/E23/E26-E29 phrase. Context only: I/33 p.915 prints Wise's report from Philadelphia, 19 Apr 1864, to Meigs (Matilda, Highland Light, Champion among the side-wheel boats); I/39 pt 2 p.295 prints Carrington, Indianapolis, 24 Aug 1864: 400 revolvers and 135,000 rounds seized at Dodd's office, "large invoices of arms are en route, variously disguised" |
+| OR ser. II (political prisoners, Aug 1864 onward) | vols 7 and 8 (IA `warofrebellion0207rootrich`, `0208rootrich`): phrases and Gemmell, Dudley Harris, Jewett, Siebert, Massie, Hawthorne, Olcott, Biggs, Van Vliet, Walker St; Dix correspondence pp.69, 441, 501 read | no hit (Olcott hits are Lt. Col. E. Olcott, a different man) |
+| OR ser. III vol. 4 | IA `warofrebellionco0004genf`, all phrases | only E24 (above) |
+| ORN | ser. I vol. 26 (Western Waters, 1864) | only E22. Context for E28: Pennock as Fleet Captain commanding at Mound City, Porter absent at Perth Amboy, N.J., Sept 1864 |
+| Sender/recipient papers | Confidential Correspondence of G. V. Fox vols 1-2 (E23); Diary of Gideon Welles vol. 2 (E22/E23/E28); Life of Thurlow Weed vol. 2, Barnes memoir (E28); Memoirs of John Adams Dix vol. 2 (E26, E29); Butler, Private and Official Correspondence vol. 4 (E21, Biggs was Butler's chief QM) -- all IA djvu, every phrase | no hit |
+| PUSG / Lincoln Collected Works | not searched by text: no E21/E23/E26-E29 sender or addressee is Grant or Lincoln, and no phrase hit in the IA-wide search (which covers the IA copies of both) | not applicable by correspondent |
+| Huntington full text (CONTENTdm p16003coll11, `CISOSEARCHALL`) | Gemmell, "Dudley Harris", "Thurlow Weed", Siebert, "Walker St", Olcott, "Van Vliet" | Gemmell, Dudley Harris, Thurlow Weed, Siebert: only the ledger's own pages (9091, 9115). "Walker St" also on 1862 pages (8176-8202, 9392-9393): E. J. Allen (Pinkerton), 43 Walker St -- unrelated. No plain copy of any of the six |
+| Zooniverse Talk snapshot (sources/talk) and the solver repositories' local snapshots (sources/cyphersolver) | the same names | no hit |
+| IA full text, all items (be-api fts) | every phrase above | no hit bearing on these telegrams (hits are unrelated: law reports, yearbooks, directories) |
+| Google Books API (key, country=US) | every phrase; plus Gemmell "Old Capitol" 1864; "Dudley Harris" Portland rebel; Olcott "navy yard" Fox Whiting 1864; Weed Pennock sailors vote 1864; Dix "Walker street" arms Indiana 1864; Biggs Meigs "Van Vliet" steamers April 1864; Turner "Judge Advocate" Jewett Siebert; Massie Hawthorne Dix arrest November 1864 | **E29: hit.** Mason Philip Smith, *Confederates Downeast* (1985), snippet: "Dudley Harris, who used the aliases Spencer and Barbour. Harris, a relative of Colonel Martin in Boston, operated in Portland, Maine. He was about 35 to 40 years old. Jones said he had '... a bulldog look; snuffs up his nose ...'"; James D. Horan, *Confederate Agent* (1954; 2015 reprint), snippet: "He [Jones] reports their names and stations as follows: 'Portland, Me. ... Major Dudley Harris'". E21: only OR context (Van Vliet, QM New York, 5 Apr 1864). Nothing for E23, E26, E27, E28 |
+| OpenAlex (key), CrossRef | every phrase | no relevant hit |
+| Semantic Scholar | blocked: HTTP 429 on the first call, not retried in a loop | unreachable this session |
+| CORE (key) | "Dudley Harris" Portland 1864; "Walker street" revolvers 1864 Dix; Olcott "navy yard" 1864; "Thurlow Weed" sailors vote 1864 Pennock | no relevant hit |
+| JSTOR | 10 rows appended to JSTOR-QUEUE.tsv (families i and ii, E21, E23, E26, E27, E28) | pending (never blocks) |
+| Unreachable / unread | NARA RG 107 (M473 telegrams sent by the Secretary of War, M504), RG 92 (Meigs's letter books), RG 45 (Navy), RG 59 (State); Stanton Papers (LoC); Weed Papers (Rochester); Dix Papers (Columbia); Fox Papers (NYHS); Olcott's 1864 Navy Yard reports (congressional documents not searched page by page); New York newspapers Aug-Nov 1864; the Supplement to the OR; HathiTrust full text | unread |
+Requests: archive.org 52 (19 djvu downloads by print_check, 11 advancedsearch, 22 metadata), be-api.us.archive.org 40,
+www.googleapis.com 35, api.openalex.org 20, api.crossref.org 20, api.semanticscholar.org 1 (429), api.core.ac.uk 4,
+hdl.huntington.org 13 (2 IIIF images, 7 CONTENTdm searches, 4 item infos); reachability probes: Cornell MOA 2 (search now
+redirects to HathiTrust), quod.lib.umich.edu 1 (403), babel.hathitrust.org 1 (403).
+
+### 4. Classification (key `period` for all nine)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E21 Meigs to Biggs, 19 Apr 1864 | **N3** | unknown | D4 | 100 (37/37 H) | image (LS-R1), fresh re-derivation (here), OR I/33 p.915 Wise's 19 Apr report from Philadelphia names Matilda, Highland Light and Champion, the vessels the decode lists |
+| E22 Welles to Porter, 26 Apr 1864 | N1 | known (ORN I/26 p.92) | D4 | 100 (21/21 H) | word for word with the print |
+| E23 Fox to Olcott, 2 May 1864 | **N3** | unknown | D3 | 100 (7/7 H) | image (LS-R1), re-derivation; no external print check of a decoded value made here |
+| E24 Seward to Adams, 18 May 1864 | N1 | known (OR III/4 p.392) | D4 | 100 (9/9 H) | word for word with the print |
+| E25 Halleck to Wallace, 29 Jul 1864 | N1 | known (OR I/37 pt 2 p.501) | D3 | 94.1 (13 H + 3 C of 17; 1 M) | print agrees but for "pike" (M) |
+| E26 Stanton to Dix, 21 Aug 1864 | **N3** | unknown | D4 | 100 (24/24 H) | image crop checked here word for word; OR I/39 pt 2 p.295 (Indianapolis seizure, arms "variously disguised") independently agrees with "a portion was seized last night in Indianapolis" and "it may be disguised" |
+| E27 Turner to 'beverage', 10 Oct 1864 | **N3** | unknown | D3 | 93.3 (14/15 H, 1 M; the addressee word "beverage" is outside the book, a name code) | image (LS-R1), re-derivation |
+| E28 F. W. Seward to Weed, 11 Oct 1864 | **N3** | unknown | D3 | 100 (15/15 H, one flagged "Pilgrim[?]" = Captain) | image (LS-R1), re-derivation; ORN I/26 Sept 1864 (Pennock commanding the station, Porter absent) fits the decoded "in temporary command"; held at D3 because the flagged token was not re-checked on the image here |
+| E29 Dana to Dix, 5 Nov 1864 | **N2** | content and distinctive wording in print | D4 | 100 (33/33 H) | image crop checked here; Confederates Downeast (1985) quotes the same description ("a bulldog look; snuffs up his nose"), aliases and Colonel Martin from the informant Jones's report |
+
+- **N3 (E21, E23, E26, E27, E28)**: no prior plaintext or decipherment located after the logged search. Not N4: the series where each
+  telegram's text would most likely be kept or printed (NARA RG 107/92/45/59, the senders' and recipients' papers, the 1864 New York
+  press, HathiTrust full text) are unread, and JSTOR rows are pending. Safe sentence (each): "Read at grade H with the period Cipher
+  No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and
+  correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google
+  Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026)." Unsafe: "first", "unpublished", "never printed", "unknown telegram".
+- **E29: N2**, not N3. The decoded description is in print (Smith 1985, quoting Jones; Horan 1954 prints Jones's list with "Major
+  Dudley Harris" at Portland); whether either quotes Dana's telegram itself or only Jones's report behind it is not established. No prior
+  mapping of this ciphertext to that text was found. Safe: "Read at grade H with the period book; its content, including the wording of
+  the description, is printed in Smith, Confederates Downeast (1985), from the informant's report." Not counted.
+- **E22, E24, E25: N1** (independent re-decipherments of printed texts). Not counted.
+- Depth sentences (D2+ each, checked against the derived block):
+  E21 "The Quartermaster-General tells Lt. Col. Biggs at Fort Monroe that three ferry boats and three tugs leave Washington at once,
+  and that Captain Wise and Major Van Vliet have chartered side-wheel steamers, propellers, tugs and barges, all ordered to Fort
+  Monroe." E23 "Assistant Secretary Fox tells Olcott he is commissioned to investigate the New York Navy Yard only, not to prosecute,
+  which the Secretary of the Navy will do." E26 "Stanton orders Dix to search No. 42 Walker Street, New York, for revolvers and
+  ammunition imported for Copperheads in Indiana, some of which was seized at Indianapolis the night before." E27 "Judge Advocate
+  Turner reports that two men, Jewett and Siebert, came from Richmond the week before and are supposed to be rebel agents, and that
+  James Gemmell, who crossed the Potomac with them, is in the Old Capitol." E28 "Frederick Seward tells Thurlow Weed that Captain
+  Pennock, in temporary command of the Mississippi Squadron, will put a boat at the disposal of the New York election agents to take
+  the sailors' votes or proxies."
+
+### 5. Postmortem
+- No over-claim found in LS-R1's section or reading.md: every not-located entry is worded as "not located in" a named source, and
+  E29 already says its content is in print. One gap filled: E24's page (OR III/4 p.392), carried into reading.md's summary row.
+- One understatement noted, not a correction: LS-R1 did not search OR ser. II or the sender/recipient papers; both are done here
+  and changed nothing for the N3 five.
+- E29 should not be read as an unlocated text in any outward line: its description is in print (section 4).
+- status.json: one result row per N3 entry (E21, E23, E26, E27, E28); SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E21, -E23, -E26, -E27,
+  -E28 with prompts in second-opinions/.
