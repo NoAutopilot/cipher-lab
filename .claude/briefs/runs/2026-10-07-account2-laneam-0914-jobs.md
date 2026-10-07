@@ -1,4 +1,4 @@
-# LANE-AM-0914 jobs (account 2) -- 7 Oct 2026 10:3x UTC, lane orchestrator session_01Ng5f2sUU7u1X9HukiLR7mf
+# LANE-AM-0914 jobs (account 2) -- 7 Oct 2026 10:1x UTC, lane orchestrator session_01Ng5f2sUU7u1X9HukiLR7mf
 
 Lane brief: .claude/briefs/runs/2026-10-07-acct3-lanes-0914.md (LANE-AM-0914 section) + .claude/briefs/default-lane.md. Folders a-m only;
 cap 40, box 10:12-16:12 UTC 7 Oct. Gate 0a: SESSION-SWEEP-account-2 row `claimed` since 5 Oct, never closed (>90 min) -- proceeding.
@@ -34,7 +34,7 @@ ROOM done line already ran it, correct the Verdict line, report, and stop.
 - Done: one ROOM line `done (<start>-<end> UTC by date -u, brief met|stopped at cap): <result, commit>` "for LANE LANE-AM-0914", then a
   five-line final report.
 
-## Wave 1 (spawned 10:3x UTC 7 Oct). Intake gate output (10:2x UTC) pasted per job.
+## Wave 1 (spawned 10:1x UTC 7 Oct). Intake gate output (10:1x UTC) pasted per job.
 
 ### AM-D1411P5 -- decode-1411-hhsta-vienna-1600, p.5 numerals, two blind passes + frozen T21r (Opus; cap 7.5, box 80 min)
 Intake gate: `decode-1411-hhsta-vienna-1600: open (line 3) -- edition/page or full-text-search citation found within 6 lines`.
