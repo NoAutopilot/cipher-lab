@@ -250,3 +250,6 @@ not run): decode-level discrimination -- one blind transcription of f.143r lines
 transcription under value-shuffled keys and under the Mayenne key, judged by `tools/judge_plaintext.py` with a French
 1590s corpus. That is a decode before the atlas licence, so it needs the orchestrator's say-so; about USD 4.
 No reading, no grades changed. Requests: gallica.bnf.fr 3 (IIIF).
+
+## Unread sibling found (SA-G, 7 Oct 2026)
+BnF fr.3988 (btv1b9060634t) canvas 308 is the closing cipher page of the f.143-144 letter (about 12 lines of symbol cipher, then the "Henry" signature); canvases 304-308 are cipher, none glossed, 309 the address leaf. Key: no.60 (tools/keys/key60.tsv). Next step: transcribe 308 with the other pages, ~USD 1. Screen only; keyhunt/2026-10-07-SAG.tsv.

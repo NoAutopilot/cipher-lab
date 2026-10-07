@@ -873,3 +873,6 @@ f.79 (canvas 163). Cipher seen only on f.79 (key source), f.105-107 (canvas 227,
 "Remote end closed connection" from Gallica (one retry spent). Open: Baluze 155 canvases 270-440 (Servien 1632, f.141-164 not in
 DECODE) and Sabran's 1629-31 register fr.4133 (btv1b9060195s), which neither Tomokiyo nor DECODE names; next: thumbnail scans
 of both, about $3 together. Every candidate: `keyhunt/2026-10-07-KH1C.tsv`.
+
+## Unread sibling found (SA-G, 7 Oct 2026)
+BnF Baluze 155, Gallica btv1b9001401d canvases 273-274 (pp.129-130): a symbol-cipher block ending canvas 273 and continuing at the top of 274, outside the DECODE R2751 (canvases 277-280) and R2752 (293-294) leaves. Key: key_sabran_1631.tsv candidate. Next step: transcribe and test against that key, ~USD 3. Screen only (700 px view); keyhunt/2026-10-07-SAG.tsv.
