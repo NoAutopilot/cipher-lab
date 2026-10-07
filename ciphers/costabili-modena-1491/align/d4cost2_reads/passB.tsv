@@ -1,0 +1,11 @@
+line	signs	note
+c1b_L01	{CLEAR} | {CODE} | {CLEAR} | T ? | {CODE} | g a TT + g a | TT o | d a z d b g b y b | c d o TT o y z q	clear start; T-like with dots uncertain
+c1b_L02	+ g b | o c b y o d o | T q | g + | o 8 4 + b c z | + g + | o 9 4 + b z | z c TT q c | y b e	very uncertain, some signs reversed-looking
+c1b_L03	Z + | q b y Z q y q Z b | + g Z d b | TT q | y b e | g a TT a Z + | Z a b y o | o Z | q g	uncertain
+c1b_L04	q q TT + | Z a b y o | TT o x | y b e | g a TT a Z + | {CODE} | c o d TT b y + g 8 o y Z q | c o d	standalone x between dots
+c1b_L05	q b o + t y q z b d + | a g TT Z + | + g TT + y Z b | T q 4 a g o | c o d d a TT c o q Z b | T q | g 8 +	uncertain
+c1b_L06	o y 7 a d g 8 a Z + Z q | c + b o Z + | o Z | g b y 7 b d Z + d o | {CODE} | + y b y TT Z + d o	uncertain
+c1b_L07	8 + g o | q b y Z q y Z + 8 + + TT Z + d o | q ? 4 g b + y a 8 b | g o Z b | q Z	? struck sign
+c1b_L08	q b 8 | c + Z a o y Z a + + TT c o q Z + d o ? L o | a g TT o 7 + q a | TT q TT Z +	? struck
+c1b_L09	T a o W + | q b o | TT q | T q g ? q | 7 + d o | c o d q b o + TT q g + | L b d + | g T ?	? struck
+c1b_L10	Z d + q Z + d + | T q | g o | q b b o | TT q | q 9 8 | {CODE} | T q | {CODE} | {CLEAR}	

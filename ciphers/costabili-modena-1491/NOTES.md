@@ -198,8 +198,8 @@ One line, per Usage 7: (DEF1-GRACOS AUDIT 2, 5 Oct 2026): Berzeviczy CXXXIV (Bea
 ## Remaining gaps (refreshed N8-COS, 4 Oct 2026; N9-COSV, N9-COS2, 5 Oct 2026)
 Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 11 sign values at C (N8-COS 10 + N9-COS2 W = t), the rest M; W = t verified at C by N9-COSVW (5 Oct 2026, AUDIT.md; to do at the next DECODE login: eye-check p2_u15 W under "padre", and relabel p1_u21 pos 5 as W)
 - Key rebuild from the period decipherments: R1166 P1-P2 at C for 11 signs (N8-COS group crops 10; W = t added by N9-COS2's re-score with the dash+open-loop shape as its own label); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; the R1163/R1165 slips were tried with line crops against their clear slips (N9-COS2: pass A non-test at 2 pairs, pass B 0.250 = shuffle p95 at 4 pairs, FAIL) because anchor spans between clear words are too long for the 0.8-1.25 ratio filter; next: hand-cut span boxes at sub-line anchors (each clear word left in the cipher slip, plus line ends) so pairs stay short, 2 blind passes, ~$3; the q-shape split by blind feature reads (bowl closed/open) was run by R9-COST (6 Oct 2026) and did not separate shapes (all 108 answers 'closed'); next: the owner's sign sorter on the 39 q crops (align/r9cost_qcrops.tsv), a person's pass, ~$0.5 to set up
-- R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; P1 lines 2-8 vs copy lines 1-5 aligned by D4-COST (7 Oct 2026, 2 blind passes, shuffle gate PASS only under a stated sigla-expansion deviation, so M); TT = s and Z = t meet every new-value condition except the registered abbreviation rule; next: a span of the copy with no sigla (or a verifier ruling that the standard sigla ch-/t'-/p-/d- count as written out), then the same two passes and align/d4cost_score.py on P1 lines 9-16 and P2, ~$4; P2-P3 vs P6 completeness not checked, ~$1
-- R1166 P4 (7 cipher lines, ~188 signs; 5 lines carry interlinear gloss, L4-L5 do not) - blocker: not-attempted; transcribed by R8-COST (6 Oct 2026, 2 blind passes, err_2reader 0.029) but the PREREG decode gate FAILs at C coverage 0.718 (< 0.80): the shortfall is q (15 agreed tokens, two shapes under one label), TT (9) and 8/L/x/u/v (8), plus 21 split positions; R9-COST (6 Oct 2026) q split non-discriminating, P4 coverage 0.723 (FAIL, unchanged in substance); q alone cannot pass this gate (ceiling 150/188 = 0.798, PREREG-R9-COST); next: settle q and TT shapes in the owner's sign sorter, then a blind re-read of P4's 21 split positions and re-score with align/r8cost_score.py, ~$2
+- R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; P1 lines 2-8 vs copy lines 1-5 aligned by D4-COST (M, sigla deviation); P1 lines 7-16 vs copy lines 5-11 run under PREREG-D4-COST2 (sigla table registered first, 7 Oct 2026): pass B PASS 0.855 vs p95 0.502, pass A FAIL 0.648 vs p95 0.452 because the reader wrote the dot beside x as its own {CODE}, which the registered marker rule counted, so u2/u3 were cut wrong; condition (a) fails and TT, Z stay M; with that one marker merged (stated deviation, M only) pass A reads 0.878 vs p95 0.500 and TT = s (A 15/22, B 15/22), Z = t (A 30/34, B 25/29), 8 = m, 7 = f, L = h all meet (b)-(d); next: register the marker rule "a {CODE} written immediately after x is part of x" before any read, then the same two blind passes and align/d4cost2_score.py (spans re-cut) on P2 against the matching part of P6, ~$3; P2-P3 vs P6 completeness not checked, ~$1
+- R1166 P4 (7 cipher lines, ~188 signs; 5 lines carry interlinear gloss, L4-L5 do not) - blocker: not-attempted; transcribed by R8-COST (6 Oct 2026, 2 blind passes, err_2reader 0.029) but the PREREG decode gate FAILs at C coverage 0.718 (< 0.80): the shortfall is q (15 agreed tokens, two shapes under one label), TT (9) and 8/L/x/u/v (8), plus 21 split positions; R9-COST (6 Oct 2026) q split non-discriminating, P4 coverage 0.723 (FAIL, unchanged in substance); q alone cannot pass this gate (ceiling 150/188 = 0.798, PREREG-R9-COST); next: settle q and TT shapes in the owner's sign sorter, then a blind re-read of P4's 21 split positions and re-score with align/r8cost_score.py, ~$2; D4-COST2 arithmetic (licenses nothing): with TT and Z at C as well, P4 would read 144/188 = 0.766, still FAIL, so TT/Z alone do not open P4 either
 - Vestigia image map: done for 2977 = R1166 (same photograph, 21 Jun 1491); 2955 = R1165 by card/date/page count only - blocker: not-attempted; R1165's own image not re-fetched this job, so no image-to-image comparison; next: fetch R1165 P1 in the next DECODE login and compare, ~$0.3
 
 ## Escalation (4 Oct 2026, refreshed N8-COS)
@@ -207,10 +207,10 @@ Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running 
 - [x] clear-pages: R1095-R1097 found to be all clear text (COS-M); Berzeviczy nos. CLIV, CLV, CLVII, CLXXXVIII, CXCV located by CS-4
 - [x] known-keys: decode-1168 key.tsv compared sign by sign with the R1166 rebuild (N8-COS C values: 9 agree, z differs as a label collision)
 - [x] print: Berzeviczy 1914 whole volume (CS-4), no 1491 Costabili letter printed; R1095-R1097 are not no. CLXXXVIII (dates differ)
-- [ ] key-rebuild: R1166 P1-P2 at C for 11 signs (N8-COS group crops + N9-COS2 W relabel); R1163/R1165 slips tried by anchor spans (N9-COS2, non-test/FAIL: spans too long), short-span boxes untried; q split by blind F1 feature reads tried (R9-COST, non-discriminating); R1167 copy: P1 spans s1/s2 aligned (D4-COST, M only: sigla deviation), sigla-free spans untried
+- [ ] key-rebuild: R1166 P1-P2 at C for 11 signs (N8-COS group crops + N9-COS2 W relabel); R1163/R1165 slips tried by anchor spans (N9-COS2, non-test/FAIL: spans too long), short-span boxes untried; q split by blind F1 feature reads tried (R9-COST, non-discriminating); R1167 copy: P1 spans s1/s2 aligned (D4-COST, M only: sigla deviation), sigla-free spans untried; R1167 P1 L7-16 registered sigla-expanded run (D4-COST2): one pass PASS, one FAIL on a marker artefact, values M; marker-rule-fixed run on P2 untried
 - [x] image-check: one DECODE login, all 31 images full size, per-page table above; Vestigia 2977 = R1166 (N8-COS)
 - [x] retry: Ulaszlo-series and Vestigia search for the four 1491 dates (RUN3-COST, 4 Oct 2026): no printed text of any of the four letters found; Vestigia holds catalogue records (incipit/explicit only), cipher-flagged, for 15 Jun and 21 Jun 1491
-Verdict: keep going: 4 internal gaps; cheapest next: short-span boxes of the R1163/R1165 slips (~$3); the q-shape split by blind feature reads was run (R9-COST, 6 Oct 2026: non-discriminating, all bowls read closed), so q/TT now go to the owner's sign sorter (a person's pass) before P4 is re-scored
+Verdict: keep going: 4 internal gaps; cheapest next: R1167 P2 vs P6 with the x-marker rule registered first (~$3; D4-COST2 7 Oct 2026 showed TT = s, Z = t, 8 = m, 7 = f, L = h agreeing in both passes once the marker is merged); then the R1163/R1165 short-span boxes (~$3); q/TT shapes to the owner's sign sorter before P4 is re-scored
 
 Gate output (COS-M, 4 Oct 2026):
     gaps_check (RUN3-COSK2, 4 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
@@ -401,3 +401,36 @@ departs from the cipher text there; not settled.
 Units: 2 Sonnet reader calls + this worker's scoring/reconciliation. Requests: de-crypt.org 1 login + 6 files (1.8 s apart), no challenge.
 R1165 P1 was fetched (sha1 matches) but not compared with Vestigia 2955 (not reached; gap kept).
     gaps_check (D4-COST, 7 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
+
+## R1167 P1 lines 7-16 vs copy P5 lines 5-11, sigla-expanded and registered (D4-COST2, 7 Oct 2026, 14:20-14:3x UTC by date -u)
+
+Account 4 worker for LANE DEFAULT-account-4-20261007-1335; separate session from D4-COST. Orchestrator ruling: the sigla-expanded convention
+is the right one (CLAUDE.md rule 3, PX-BRODEC), but it must be registered before scoring. PREREG first: `align/PREREG-D4-COST2.md` (1e9045188,
+pushed 14:26 UTC before any reader call or score), holding the expansion table (d-l, d-la, nō, p-, pch, ch, q-sta/q-lla, m.ta), the copy's text
+for the stretch, three spans cut at markers, D4-COST's statistic/shuffle/gate and its new-value conditions unchanged, and the q rule.
+One DECODE browser login (14:23 UTC, `tools/decode_browser_login.js 1167 <scratch> --fetch <R1167 P1,P2,P5,P6 filesrv URLs> --max-files 4
+--delay 1800`), 4 images, sha1 = images_manifest.tsv, scratch only. Crop step (run before any reader call):
+`python3 tools/iiif_lines.py --image IMG_R1167_I5857_P1.png --region 480,1380,1880,960 --out c1b --prefix c1b --ink 90 --prominence 30 --debug`
+(10 lines = page lines 7-16, held out: D4-COST scored only up to the x on line 6) and `--image IMG_R1167_I5861_P5.png --region 380,1130,1950,800
+--out k5b --prefix k5b --ink 90 --prominence 30 --debug` (copy lines 5-11, read by this worker; text in the PREREG).
+Readers: 2 blind Sonnet calls (A top-down, B bottom-up), labels.tsv + dash convention, clear words `{CLEAR}`, dotted codes `{CODE}`; reads as
+returned in `align/d4cost2_reads/`. Score: `python3 align/d4cost2_score.py align/d4cost2_reads/passA.tsv align/d4cost2_reads/passB.tsv --out align/d4cost2_score.tsv`.
+
+| run | pass | u1 C-real | u2 | u3 | pooled real | null p95 | gate |
+|---|---|---|---|---|---|---|---|
+| registered | A | 65/79 | 6/6 (9 signs: cut wrong) | 78/145 | 0.648 | 0.452 | **FAIL** |
+| registered | B | 63/79 | 61/70 | 77/86 | 0.855 | 0.502 | PASS |
+| deviation (M only): A's `x {CODE}` on c1b_L04 merged to `x` | A | 65/79 | 61/67 | 76/84 | 0.878 | 0.500 | PASS |
+
+Why A failed: pass A wrote the dot after x as its own `{CODE}` ("TT o x {CODE}"), so under the registered rule ("u2 ends at the second {CODE}
+after x") u2 ended at the .f. on the same line and u3 swallowed u2's text. The rule was written before the reads and is kept: **condition (a)
+(both passes clear the gate) fails, so no value enters C and no key file changed.** TT and Z stay M.
+Non-C signs (registered B / deviation A; conditions b-d otherwise met by both): **TT = s** 15/22 and 15/22; **Z = t** 25/29 and 30/34; 8 = m 7/8
+and 6/6; 7 = f 4/4 and 4/4; L = h 2/2 and 5/5 (B has L in one span only, so L fails (d) in B). **q** modal e 13/36 (B), 12/37 (A), with c 12/11 and
+u 4/3: share < 0.6, stays M (the q rule; the multi-shape problem of R9-COST and D4-COST again).
+P4 arithmetic (licenses nothing; `r8cost_score.py --key` on a scratch key with TT and Z at C): 144/188 = 0.766, still under the 0.80 gate.
+`r8cost_score.py` gained `--key` (default unchanged, reproduces 0.718). No key.tsv written (no value passed).
+Rule 3 (third-attempt clause): the deviation was again found after scoring, as in D4-COST; this is the second run on this instrument, and the
+numbers do move together toward the gate. The next run is a different stretch (P2 vs P6) with the marker rule registered first, not a re-score of P1.
+Units: 2 Sonnet reader calls + this worker's copy read and scoring. Requests: de-crypt.org 1 login + 1 record page + 4 images (1.8 s apart), no challenge.
+    gaps_check (D4-COST2, 7 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
