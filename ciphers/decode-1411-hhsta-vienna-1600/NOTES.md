@@ -615,18 +615,54 @@ Residual 83/83 is reader abstention, not error. Lesson: a whole-line crop given 
 the re-read needs per-number tiles (each number cut and enlarged on its own, a few hundred px per tile), or the owner's sign sorter.
 Vision: 1 Sonnet subagent call. Requests: none (crops on disk). Status unchanged: open.
 
-## Remaining gaps (R12A-D1411P4, 6 Oct 2026)
+## D07-D1411 step: per-number tile re-read of the p.4 4/5 forms, T21r rescore (7 Oct 2026, account 1)
+
+Step run: R12A-D1411LA's Verdict "cheapest next" (brief D07-D1411, LANE DEFAULT-account-1-20261007-0042). Instrument pinned before any
+read in `d1411p4/la/PREREG-LA2.md` (pushed 67e45081f, 00:52 UTC; time and one framing edit, 12 -> 25 px margin, made before any tile was
+read, cf28f1f7d); scoring re-uses PREREG-D1411P4.md (afc9de42d) unchanged, no control or gate moved. `d1411p4/la2/score_la2.py` (score_p4.py
+with only the input/output paths changed) reproduced the committed score_p4.json exactly on the unchanged numbers before the re-read.
+Tiles: the same 83 numbers as la/tiles.tsv, each cut on its own from its native line crop (images/d1411p4_crops, themselves cut from
+IMG_R1411_I6598_P4.png at native resolution in R12A-D1411P4; no re-fetch, no login), x-range in `la2/boxes.tsv`, 25 px margin, full line
+height, 4x LANCZOS: `python3 d1411p4/la2/cut_tiles.py` (83 tiles, about 400-600 px wide; regenerable, not committed). Box placement:
+first by eye on 50-px ruler overlays, then -- after a contact-sheet check showed about 30 right-page boxes off by one number -- re-placed on
+automatic ink-column segments and 1.5-2x ruler zooms, and every tile checked on a contact sheet for a centred target before the full read
+(the worker placed boxes; it did not call shapes). Prompt `la2/make_prompt.py`: value-blind, only the mask pattern ('#6', '##') shown.
+
+**Pilot (5 tiles, 1 Sonnet call): 1 of 5 '?'** -- under the pre-registered stop rule (3+ of 5), so the full read ran. **Full read (78 tiles,
+2 Sonnet calls of 39): 79 of 83 tiles firm, 4 '?'** (`la2/reread_pilot.tsv`, `la2/reread_full.tsv`) -- the instrument is not void at this
+resolution, unlike the line-crop re-read (83/83 '?'). One reader caveat, logged as data: the batch-1 reader said that on its tiles 11-20
+(p4Ra_L01_1 to p4Ra_L03_11) the glyphs did not always match the digit patterns and that two were guesses; its answers are used as given.
+
+**Rule applied (`la2/apply_la2.py --check` exits 0; `la2/applied.tsv`, `la2/numbers_la2.tsv`):** settled 58 (57 confirm the committed value,
+1 changes it: p4Rc_L07_9 65 -> 64, pass B's value, graded M); unsettled 25 (21 firm re-reads matching neither pass, 4 '?'); residual 25/83 =
+30% (2-of-3 agreement, not error). Re-read agreement with pass A 49/79, pass B 54/79, committed 60/79 (76%); on its H-confidence answers 20/22.
+Of the 21 firm disagreements, 16 contradict a value both passes and the reconciliation agreed on, 12 of those calling R (5) where all three had
+4 and 4 calling X (4) where all three had 5 -- a lean toward "R", so this reader is a third reader of lower agreement, not an arbiter.
+
+**Rescore (`la2/score_la2.py --check` exits 0; seed 1411; same frozen controls): unchanged.** T21r cover 0.5806 (committed 0.581), shuffled
+p99 0.452 / mean 0.390 (0/200 >= real), shifted max 0.359 (0/23), minus gloss -0.032, 4-gram -1.620; h12 0.585, h22 0.540; **pre-registered
+verdict for all three tables: CONTROLS BEATEN, COVERAGE BELOW THE LEAF'S OWN GLOSS** (same as R12A-D1411P4). Letter tests unchanged (residue
+21 r favoured, 18 occurrences; 12 and 22 undecided); gloss agreement unchanged (T21r 25/42 vs control p99 8). The one changed number moves
+p4Rc_L07_9 from residue 17 to 16 and no statistic at the reported precision. So the 4/5 look-alike is not what keeps T21r below the gloss:
+re-reading it leaves the score where it was. `numbers.tsv` itself is not changed (rule 7: d1411p4/score_p4.py --check still exits 0).
+
+Token grades (rule 4): unchanged -- 248 p.4 numbers M (H 0, C 0, S 0, I 0); one value revised in the la2 copy, still M. No reading-ready flag.
+Vision: 3 Sonnet subagent calls (5 + 39 + 39 tiles), no reconciliation unit (the rule is mechanical); worker views: ruler overlays, segment
+overlays, zooms and three contact sheets for box placement. Requests: none (all images on disk). Status unchanged: open.
+
+## Remaining gaps (D07-D1411, 7 Oct 2026)
 Read so far: 0 of about 930 cipher numbers at S or better (p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; 930 unglossed numbers M)
-- unglossed numerals p.1-p.4 (930) - blocker: not-attempted; controls beaten on three fresh pages and two instruments, but every table stays 0.03-0.07 below the leaf's own gloss in coverage; next: re-run the p.4 4/5 re-read (R12A-D1411LA's la/ tiles, prompt and pinned rule) on per-number tiles cut from the line crops and enlarged (the line-crop re-read came back 83/83 '?'), then rescore T21r against the same frozen controls, ~$3
+- unglossed numerals p.1-p.4 (930) - blocker: not-attempted; controls beaten on three fresh pages and two instruments, every table 0.03-0.07 below the leaf's own gloss in coverage; the p.4 4/5 look-alike re-read on per-number tiles (D07-D1411) settled 58/83 and left the score unchanged, so the gap is not the 4/5 split; next: cut and read p.5 numerals in two blind passes with the frozen T21r, same coverage and gloss controls, ~$6
+- p.4 4/5 residual (25 of 83 tiles unsettled, la2/applied.tsv) - blocker: waiting-on ASKS row 120 (a person's read; the 25 tiles can be added to that read or to a sign-sorter focus list); machine re-reads retired for this question (line-crop void, tile re-read disagrees with two agreeing passes on 16 numbers)
 - gloss letter identities h/s at residues 12/22 and n/u, k at residue 14 - blocker: waiting-on ASKS row 120 (a person's read of the gloss); p.4 adds 42 pairs (left page f.184v, lines 1-9) for that read
 - pages 5-12 numerals - blocker: not-attempted; full-size images fetched in GAPS137, none after p.4 transcribed; next: cut and read p.5 numerals in two blind passes with the frozen T21r, same coverage and gloss controls, ~$6
 
-## Escalation (R12A-D1411P4, 6 Oct 2026)
+## Escalation (D07-D1411, 7 Oct 2026)
 - [x] siblings: GAPS136/GAPS137 checked the Ferdinand III posts and the Kopal Cyffra nova key (inconsistent sign class)
 - [x] clear-pages: clear words around the cipher read in GAPS137; context words used only as post-hoc observation
 - [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
 - [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a gate passes
 - [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r on three fresh pages (DEF1-1411, D4-1411P3, R12A-D1411P4), p.4 gloss agrees with T21r 25/42 vs control p99 8 (R12A-D1411P4)
-- [x] image-check: full-size DECODE images p.1-p.4 read on native crops (GAPS141, GAPS146, DEF1-1411, D4-1411P3, R12A-D1411P4)
-- [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause
-Verdict: keep going: 2 internal gaps; cheapest next: the 4/5 re-read on per-number enlarged tiles (R12A-D1411LA's line-crop re-read was void, 83/83 '?') and a rescore of T21r against the same frozen controls, ~$3
+- [x] image-check: full-size DECODE images p.1-p.4 read on native crops (GAPS141, GAPS146, DEF1-1411, D4-1411P3, R12A-D1411P4); p.4 4/5 forms re-read on per-number 4x tiles (D07-D1411): 58/83 settled, score unchanged
+- [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause; also retired for the p.4 4/5 look-alike: machine re-read by a Sonnet shape reader (line crops R12A-D1411LA, then per-number tiles D07-D1411), a person's read is the remaining route
+Verdict: keep going: 2 internal gaps; cheapest next: cut and read p.5 numerals in two blind passes with the frozen T21r, same coverage and gloss controls, ~$6
