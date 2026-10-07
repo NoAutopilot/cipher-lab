@@ -105,7 +105,7 @@ sources/cryptiana/ (unmodified snapshot, credit Tomokiyo), compare its sign alph
 as the known-keys rung describes, with a control that can differ (shuffled sign assignment), and tick or retire the rung. If not
 captured: log the CDX result (URL, date, rows) in NOTES.md and mark the action done.
 
-## Wave 3 (spawned 15:41 UTC 7 Oct)
+## Wave 3 (spawned 15:40 UTC 7 Oct)
 Wave 2 done by 15:25 (COL2 3.87, BOWW 1.24). Intake gate: colbert26 as wave 1 (partial, citation found, exit 0).
 
 ### DA1-COL3 -- colbert26-lathuillerie-1644 held-out word pairing on c54-56 and c62-63 (solver, Opus; cap 7, box 80 min)
