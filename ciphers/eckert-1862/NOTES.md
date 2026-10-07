@@ -2023,3 +2023,9 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; Hurlbut-row grades carried into ec18.py's outputs (D07-ECK62, overrides.tsv); cheapest next: the dated `?p` mssEC 18 entries under split2 against the image for marker words, ~$4; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
+
+## D07-ECKV (7 Oct 2026, verifier, account 1, for LANE DEFAULT-account-1-20261007-0042): D07-ECK62 regrade verified
+The D07-ECK62 override table and regeneration verified and endorsed in AUDIT.md "Carry-over D07-ECKV": 34 tokens (27 H->C, 7 H->M)
+match the R12A-ECKV/ECKV2 tables exactly, every C cites its own telegram's print (6 of 6 spot-checked in OR), counts agree
+(counted readings H 369 C 2 -> H 367 C 4), all regeneration --check runs exit 0 on re-fetched data. No N-class or depth change;
+status.json, PROGRESS.tsv and SO-ECK-4992 carry no affected token. Remaining gaps / Escalation / Verdict above stand unchanged.

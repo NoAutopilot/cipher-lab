@@ -368,3 +368,49 @@ changes. `ec18/hurlbut_row_grades.tsv` is the per-token grade of record for the 
 --check` current, `lehigh_grades.py --check` current, `decode.py --check` exit 0. status.json: no per-token grade field; nothing
 to carry. SECOND-OPINIONS-QUEUE.tsv: the target's only row (SO-ECK-4992, mssEC 15 entry 4992.3) contains none of the words.
 Requests: archive.org 3, 2 s apart; 0 subagents.
+
+## Carry-over D07-ECKV (7 Oct 2026, verifier, account 1, for LANE DEFAULT-account-1-20261007-0042): the D07-ECK62 regrade carried into ec18.py's outputs
+
+Claim under audit: D07-ECK62 (NOTES.md, 7 Oct 2026; commit 35c387168) folded the verifier grade tables `ec18/lehigh_grades.tsv`
+(R12A-ECKV) and `ec18/hurlbut_row_grades.tsv` (R12A-ECKV2) into `ec18/ec18.py` as a per-token override table, regenerated legacy
+and split2, and reports 34 mssEC 18 tokens regraded (27 H->C, 7 H->M), 2 of them in counted readings (9947.505 Lehigh H->C
+[Canby], 10020.609 lehigh H->C [can be]). Separate session from every solver. Grade propagation only: no decoding, no novelty
+search, no N-class change.
+
+Checked independently:
+- Override table against its sources (script, both cascades): every mssEC 18 row of the two verifier tables (7 Lehigh + 27
+  Leghorn/Legend/Leopard = 34 uses) maps to a row of `ec18/overrides.tsv` (= `ec18/s2/overrides.tsv`, identical) with the same
+  word, meaning and grade; 33 rows carry 34 tokens because 9937.479 holds Leopard twice (R12A-ECKV2: "Leopard = Canby at 9937
+  x2"). Two rows are placed on the entry opening one pointer earlier (legend 9786 -> 9785.169 M, legend 9789 -> 9788.172 Butler
+  C): both table rows have no date ("none above on page"), so the code places them on the nearest entry opening at most two
+  pointers before -- consistent with the rule written in NOTES.md. 10019 lehigh (table date 23 May) sits on 10019.607 (ledger
+  heading 24 May) by the same-page fallback; the hurlbut table's own leghorn row for 10019 reads 24 May and OR 49.2 p.881-882,
+  so the placement is the same telegram. 0 rows unplaced, 0 in conflict. mssEC 19 rows (9102, 9171, 9174, 9272, 9273, 9280 and
+  the hurlbut table's mssEC 19 rows) are outside ec18.py (mssEC 18 only) and change nothing here.
+- Each C needs known plaintext: all 27 C rows' `reason` cell cites the print of that very telegram (OR volume and page for the
+  hurlbut rows); none is carried from another use. All 7 M rows are the tables' M decisions (no print of the slot, or Legend's
+  two print-read values). Print spot-check (6 of 34, both counted tokens included; the entry's clear neighbours located in the cited OR volume's `_djvu.txt`): 9947.505 "can spare for General Canby will be mounted at cavalry depot" (48.1), 10020.609 "as soon as transportation can be provided" (48.2), 9788.172 "The order respecting General Butler and the Eighteenth Corps" (37.2), 9754.126 "has been suggested to General Canby. A. J. Smith" (38.4), 9893.384 "assigned to General Canby's command. As Price" (41.4), 10010.594 "breaking up Canby's division and assigning" (48.2): 6 of 6 read as the tables say.
+- Recount (entries.tsv before/after 35c387168, both cascades): legacy 671 entries H 12699 C 37 M 0 -> H 12665 C 64 M 7; split2
+  729 entries H 12676 C 37 M 0 -> H 12642 C 64 M 7. Per entry: 24 entries changed in each cascade, exactly the 24 entry ids of
+  overrides.tsv, and in each the H loss equals the C+M gain equals the number of override tokens; no other column (keyed, oov,
+  fully_keyed, book, or_match) moved in any entry. Counted readings (28 fully keyed entries, `ec18/readings.md` and
+  `ec18/s2/readings.md`): H 369 C 2 -> H 367 C 4; 9947.505 H 13 C 1 (was H 14 C 0), 10020.609 H 14 C 1 (was H 15 C 0) -- the
+  counts this file's "Carry-over R12A-ECKV" already gave on paper. Agreed.
+- Rule 7 re-run (data re-fetched to scratch, not committed): vol18.json (sha256 cb162574, matches pilot1864/manifest.tsv), DIR62 8 `_djvu.txt`, OR 32.1-49.2 48 `_djvu.txt` (all 48 sha256 match `ec18/or_volumes.tsv`). `ec18.py DATA OR --possessive --guard DIR62 --check` exit 0, the same with `--split2` exit 0, `--book 2` exit 0, `--book 2 --split2` exit 0; `lehigh_grades.py --check` 0, `hurlbut_row_grades.py --check` 0, `../decode.py --check` 0 (fully_keyed_grades printed by the run: H 367, C 4, I 0, M 0, both cascades). The committed outputs are what the code produces.
+- Depth (rule 4a): an H->C move keeps every regraded counted token inside H/C/S, so the share of H/C/S cipher tokens in the
+  counted readings is unchanged (371 of 371 keyed tokens before and after); the 7 M tokens are all in entries with no committed
+  reading. No depth field exists for eckert-1862 in status.json (the items are N1, below the N3 line `tools/depth_check.py`
+  counts; `tools/depth_check.py` run 7 Oct 2026, exit 0, eckert-1862 not listed); nothing to lower or raise.
+
+Propagation (rule 10): status.json (targets[4] note, results[21]) names no Lehigh/Hurlbut-row token or ec18 count -- nothing to
+carry; PROGRESS.tsv has no eckert-1862 row; SECOND-OPINIONS-QUEUE.tsv's only row for the target (SO-ECK-4992, PROMPT-chatgpt-
+ECK4992.md, mssEC 15 entry 4992.3) contains none of Lehigh, Leghorn, Legend, Leopard, Hurlbut, Canby, 9947 or 10020 (grep, 0
+hits) -- nothing to carry. Section "Carry-over R12A-ECKV"'s sentence "Read those two brackets as superseded by lehigh_grades.tsv"
+is now history: the committed readings print [Canby] C and [can be] C themselves. `align_tokens.tsv` keeps the book value and
+CONFLICT for the two tokens by design (the evidence the grade rests on, not a reading).
+
+Verdict: ENDORSED. The regrade carries the two verifier decisions exactly, adds no grade of its own, and every C rests on the
+print of its own telegram. No N-class, depth or safe sentence changes (sections 1 and E stand).
+Note (not a finding): 9785.169 and 9788.172 are marker-assigned Cipher No. 2 entries (entries.tsv book 2) read here through the
+No. 1 key; key-no2.md also gives Legend = Butler (H, p.18 l.5), so 9788's C (Butler) agrees with that book too.
+Requests: hdl.huntington.org 1, archive.org 56, >= 1.6 s apart; 0 subagents.
