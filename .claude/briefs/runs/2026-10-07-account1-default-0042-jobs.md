@@ -131,3 +131,24 @@ Folder Verdict cheapest next: derive the S10/S26 and S13/S69 witness-shape rule 
 fr.3252 f.36v), PREREG it before reading, then read the f.21v tokens on 4x tiles (~$3). Do not re-run the [retired] instrument (blind model
 reads of the a1b36v tiles). Crop step pasted; crop paths only. Grade changes: decode --check, counts before/after, ROOM flag for a verifier if
 a counted reading changes.
+
+## Wave 3 (spawned 01:2x UTC 7 Oct; follow-ups named by wave 2). Intake gate output as wave 2 (same folders, 01:0x UTC).
+
+### D07-NOXREAD -- fr16142-noailles-constantinople-1571, c510-516 reader-transcription decode (Opus; cap 6, box 70 min)
+Intake gate: `fr16142-noailles-constantinople-1571: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict (D07-NOX510, 7 Oct: the atlas-bridge decode failed its null-swap control, instrument retired): the reader-transcription decode,
+RUN6-NOXREAD's method (which passed on c262), applied to c510 L05-L14: two blind passes on the line crops against the reader sign set, then
+reconciliation, then decode with Tomokiyo's key. PREREG committed and pushed before reading (statistic, the same control family RUN6-NOXREAD
+used, plus a shuffled-key control that can vary on the statistic, gate). Crop step pasted; crop paths only; one call per pass. Units: 2 passes
++ 1 reconciliation (~1.5 each) + decode/score ~1 = ~5.5. If the passes disagree on more than a tenth of signs, stop after reconciliation and
+log it (TRANSCRIPTION.md). Grade per token (S only where the control is beaten). Any reading is a candidate for a verifier; flag ROOM.
+Do not touch the retired atlas-bridge instrument.
+
+### D07-CEPV -- ceppo-nevers-fr3251-1570s, verifier for the f.21v L10.6 reading change (verifier, Opus; cap 3, box 40 min)
+Intake gate: `ceppo-nevers-fr3251-1570s: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+D07-CEP21 (commit 2ff219baa, ROOM flag 01:18 UTC) relabelled f.21v L10.6 S69 (f, M) -> X_THETA2 (r, S) by the two-bar witness shape from the
+fr.3252 f.36v glosses: L10 "aciofemti" -> "acioremti", after AUDIT.md was written. You are a separate session from every solver and from
+D07-CEP21. Rule 10 propagation + rule 4a: re-run the folder's decode --check; recount grades; check the S grade against PREREG-S13S69.md
+(was the rule fixed before any tile was read? does the control licence S?); append an AUDIT.md section with the new counts, depth re-check
+(tools/depth_check.py), N-class unchanged unless text the class rests on changed; carry the revision into status.json, PROGRESS.tsv and any
+SECOND-OPINIONS-QUEUE.tsv row/PROMPT file for this target. No new novelty search beyond a 3-query phrase delta on the changed line.
