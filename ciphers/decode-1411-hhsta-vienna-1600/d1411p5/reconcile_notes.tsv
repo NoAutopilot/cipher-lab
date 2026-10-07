@@ -1,0 +1,42 @@
+line	col	settled	note
+p5L_L02_a	1	29	settled from crop: z-form 2 then 9; M
+p5L_L03_a	1	70	settled from crop: hooked-top 7 then 0; M
+p5L_L03_a	5	77	settled from crop: two hooked 7s; M
+p5L_L04_a	4	55	settled from crop: two r-form 5s; M
+p5L_L06_a	5	65	settled from crop: looped 6 then r-form 5; M
+p5L_L07_b	1	59	settled from crop: r-form 5 then 9 (neither pass); M
+p5L_L09_a	1	94	settled from crop: bold/overwritten 94; M
+p5L_L10_b	3	95	settled from crop: 9 then r-form 5; M
+p5L_L11_b	5	drop	struck-through group (both passes flagged), not decoded
+p5L_L12_a	1	93	settled from crop: looped 9 (not the cross 4) then 3; M
+p5L_L12_a	4	65	settled from crop: looped 6 then r-form 5; M
+p5L_L14_a	3	89	settled from crop: blotted/overwritten, second digit a tailed 9; M
+p5L_L19_b	3	20	settled from crop: 2 then o; M
+p5L_L20_a	5	17	settled from crop: hooked 7; M
+p5L_L23_b	3	65	settled from crop: looped 6 then r-form 5; M
+p5L_L24_a	2	90	settled from crop: 9 then o; M
+p5L_L25_a	3	55	settled from crop: two r-form 5s; M
+p5L_L26_a	3	45	settled from crop: cross-4 then r-form 5 (neither pass); M
+p5L_L26_b	4	drop	the word "so" (so dieselbe), not a number
+p5L_L31_a	4	55	settled from crop: two r-form 5s; M
+p5R_L01_b	3	7	settled from crop: hooked 7; M
+p5R_L02_a	1	17	settled from crop: 1 then hooked 7; M
+p5R_L03_b	1	29	settled from crop: z-form 2 then 9; M
+p5R_L05_b	2	15	settled from crop: 1 then r-form 5; M
+p5R_L08_b	2	47	settled from crop: cross-4 then 7; M
+p5R_L10_b	6	drop	B-only token: a raised 6 after the agreed 13 (the group may be 36); not added, neighbours stay M
+p5R_L15_b	2	95	settled from crop: 9 then r-form 5; M
+p5R_L16_b	4	drop	inside the struck interlinear insertion, not decoded
+p5R_L17_b	3	9	B-only token kept: a 9 is visible between 69 and 22; M
+p5R_L18_b	1	drop	struck-through group, not decoded
+p5R_L19_b	1	9	settled from crop: comma then 9; M
+p5R_L20_a	1	62	settled from crop: looped 6 then 2; M
+p5R_L21_b	1	72	settled from crop: hooked 7 then 2; M
+p5R_L21_b	2	55	settled from crop: two r-form 5s; M
+p5L_L18_a	1	intext	date "Den 2. dat", not decoded
+p5L_L31_b	1	intext	date "Den 13. huj", not decoded
+p5R_L20_b	1	intext	date "Das 2", not decoded
+p5L_L01_a	6	16	crop-step artefact: the half-line cut fell inside "16"; merged with p5L_L01_b col 1 (see the left-page overview "89,9,16,"); M
+p5L_L01_b	1	drop	right half of "16", merged into p5L_L01_a col 6
+p5R_L16_a	4	36	crop-step artefact: the half-line cut fell inside "36"; merged with p5R_L16_b col 1 (overview "7,36,65"); M
+p5R_L16_b	1	drop	right half of "36", merged into p5R_L16_a col 4

@@ -1,0 +1,35 @@
+line	col	A	B	flagged	crop
+p5L_L02_a	1	24	29	A	
+p5L_L03_a	1	20	70	A	
+p5L_L03_a	5	27	77	A	
+p5L_L04_a	4	55	51	AB	
+p5L_L06_a	5	65	61	A	
+p5L_L07_b	1	29	49	AB	
+p5L_L09_a	1	94	24	AB	
+p5L_L10_b	3	95	91	B	
+p5L_L11_b	5	44	77	AB	
+p5L_L12_a	1	43	93	A	
+p5L_L12_a	4	65	61	B	
+p5L_L14_a	3	88	89	AB	
+p5L_L19_b	3	20	21	AB	
+p5L_L20_a	5	17	14	AB	
+p5L_L23_b	3	65	61	B	
+p5L_L24_a	2	40	90	AB	
+p5L_L25_a	3	55	51	AB	
+p5L_L26_a	3	95	90	AB	
+p5L_L26_b	4	10	50	B	
+p5L_L31_a	4	55	51	AB	
+p5R_L01_b	3	7	2	AB	
+p5R_L02_a	1	67	17	A	
+p5R_L03_b	1	24	29	AB	
+p5R_L05_b	2	15	45	AB	
+p5R_L08_b	2	57	47	AB	
+p5R_L10_b	6	-	96	B	
+p5R_L15_b	2	95	9	AB	
+p5R_L16_b	4	99	21	AB	
+p5R_L17_b	3	-	9	B	
+p5R_L18_b	1		41	AB	
+p5R_L19_b	1	9	19	B	
+p5R_L20_a	1	62	82	AB	
+p5R_L21_b	1	22	72	AB	
+p5R_L21_b	2	55	45	AB	

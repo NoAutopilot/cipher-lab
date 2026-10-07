@@ -1,0 +1,345 @@
+{
+ "N": 266,
+ "n_M": 125,
+ "residue_counts": {
+  "12": 16,
+  "21": 20,
+  "22": 19
+ },
+ "calibration": {
+  "lexicon_words": 10487,
+  "gloss_cover": 0.6129,
+  "real_cover_p05": 0.8835,
+  "real_cover_median": 0.9398,
+  "real_p05_4gram": -0.8501,
+  "null_p99_4gram": -1.9343
+ },
+ "T21r": {
+  "cover": 0.6165,
+  "shuffled_p99": 0.5113,
+  "shuffled_mean": 0.4303,
+  "shuffled_ge": 0,
+  "shifted_max": 0.4436,
+  "shifted_ge": 0,
+  "minus_gloss": 0.0036,
+  "fourgram": -1.7378,
+  "beats_controls": true,
+  "PASS": true,
+  "verdict": "PASS"
+ },
+ "T21r_h12": {
+  "cover": 0.6278,
+  "shuffled_p99": 0.485,
+  "shuffled_mean": 0.4092,
+  "shuffled_ge": 0,
+  "shifted_max": 0.4398,
+  "shifted_ge": 0,
+  "minus_gloss": 0.0149,
+  "fourgram": -1.6263,
+  "beats_controls": true,
+  "PASS": true,
+  "verdict": "PASS"
+ },
+ "T21r_h22": {
+  "cover": 0.5451,
+  "shuffled_p99": 0.4812,
+  "shuffled_mean": 0.4042,
+  "shuffled_ge": 0,
+  "shifted_max": 0.4173,
+  "shifted_ge": 0,
+  "minus_gloss": -0.0678,
+  "fourgram": -1.7735,
+  "beats_controls": true,
+  "PASS": false,
+  "verdict": "controls beaten, coverage below the leaf's own gloss"
+ },
+ "letter_tests": {
+  "12": {
+   "n": 16,
+   "cover_top5": [
+    "h",
+    "n",
+    "t",
+    "s",
+    "b"
+   ],
+   "fourgram_top5": [
+    "h",
+    "n",
+    "t",
+    "u",
+    "r"
+   ],
+   "rank_cover": {
+    "h": 1,
+    "s": 4
+   },
+   "rank_fourgram": {
+    "h": 1,
+    "s": 15
+   },
+   "verdict": "h favoured"
+  },
+  "21": {
+   "n": 20,
+   "cover_top5": [
+    "i",
+    "a",
+    "r",
+    "s",
+    "d"
+   ],
+   "fourgram_top5": [
+    "r",
+    "n",
+    "i",
+    "t",
+    "l"
+   ],
+   "rank_cover": {
+    "r": 3,
+    "z": 21
+   },
+   "rank_fourgram": {
+    "r": 1,
+    "z": 21
+   },
+   "verdict": "undecided"
+  },
+  "22": {
+   "n": 19,
+   "cover_top5": [
+    "t",
+    "s",
+    "n",
+    "a",
+    "d"
+   ],
+   "fourgram_top5": [
+    "s",
+    "n",
+    "m",
+    "t",
+    "i"
+   ],
+   "rank_cover": {
+    "h": 16,
+    "s": 2
+   },
+   "rank_fourgram": {
+    "h": 7,
+    "s": 1
+   },
+   "verdict": "undecided"
+  }
+ },
+ "pooled_p3_p4_p5_descriptive": {
+  "N": 825,
+  "12": {
+   "n": 45,
+   "cover_top5": [
+    "i",
+    "t",
+    "a",
+    "d",
+    "n"
+   ],
+   "fourgram_top5": [
+    "h",
+    "t",
+    "r",
+    "n",
+    "i"
+   ],
+   "rank_cover": {
+    "h": 7,
+    "s": 6
+   },
+   "rank_fourgram": {
+    "h": 1,
+    "s": 7
+   }
+  },
+  "22": {
+   "n": 48,
+   "cover_top5": [
+    "t",
+    "i",
+    "s",
+    "a",
+    "n"
+   ],
+   "fourgram_top5": [
+    "n",
+    "s",
+    "t",
+    "e",
+    "m"
+   ],
+   "rank_cover": {
+    "h": 14,
+    "s": 3
+   },
+   "rank_fourgram": {
+    "h": 17,
+    "s": 2
+   }
+  }
+ },
+ "gloss_agreement": {
+  "n_glossed": 26,
+  "T21r": {
+   "matches": 15,
+   "rate": 0.5769,
+   "control_p99": 7,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "T21r_h12": {
+   "matches": 15,
+   "rate": 0.5769,
+   "control_p99": 7,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "T21r_h22": {
+   "matches": 15,
+   "rate": 0.5769,
+   "control_p99": 7,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "pairs": [
+   [
+    71,
+    "t",
+    "t"
+   ],
+   [
+    81,
+    "c",
+    "e"
+   ],
+   [
+    36,
+    "b",
+    "s"
+   ],
+   [
+    9,
+    "e",
+    "e"
+   ],
+   [
+    89,
+    "n",
+    "n"
+   ],
+   [
+    63,
+    "t",
+    "l"
+   ],
+   [
+    81,
+    "x",
+    "e"
+   ],
+   [
+    22,
+    "a",
+    "s"
+   ],
+   [
+    24,
+    "u",
+    "u"
+   ],
+   [
+    24,
+    "u",
+    "u"
+   ],
+   [
+    9,
+    "e",
+    "e"
+   ],
+   [
+    21,
+    "u",
+    "r"
+   ],
+   [
+    89,
+    "u",
+    "n"
+   ],
+   [
+    69,
+    "z",
+    "r"
+   ],
+   [
+    57,
+    "e",
+    "e"
+   ],
+   [
+    17,
+    "n",
+    "n"
+   ],
+   [
+    83,
+    "g",
+    "g"
+   ],
+   [
+    9,
+    "e",
+    "e"
+   ],
+   [
+    9,
+    "e",
+    "e"
+   ],
+   [
+    69,
+    "z",
+    "r"
+   ],
+   [
+    83,
+    "e",
+    "g"
+   ],
+   [
+    58,
+    "f",
+    "f"
+   ],
+   [
+    81,
+    "e",
+    "e"
+   ],
+   [
+    65,
+    "n",
+    "n"
+   ],
+   [
+    51,
+    "a",
+    "y"
+   ],
+   [
+    41,
+    "n",
+    "n"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,270 @@
+line	pos	token	grade	note	gloss
+p5L_L01_a	1	80	ok		
+p5L_L01_a	2	33	ok		
+p5L_L01_a	3	17	M		
+p5L_L01_a	4	89	ok		
+p5L_L01_a	5	9	ok		
+p5L_L01_a	6	16	M	crop-step artefact: the half-line cut fell inside "16"; merged with p5L_L01_b col 1 (see the left-page overview "89,9,16,"); M	
+p5L_L02_a	1	29	M	settled from crop: z-form 2 then 9; M	
+p5L_L02_a	2	32	ok		
+p5L_L02_a	3	22	ok		
+p5L_L02_a	4	61	M		
+p5L_L02_b	1	76	M		
+p5L_L02_b	2	95	M		
+p5L_L02_b	3	57	M		
+p5L_L02_b	4	89	ok		
+p5L_L02_b	5	26	ok		
+p5L_L03_a	1	70	M	settled from crop: hooked-top 7 then 0; M	
+p5L_L03_a	2	24	ok		
+p5L_L03_a	3	88	ok		
+p5L_L03_a	4	16	ok		
+p5L_L03_a	5	77	M	settled from crop: two hooked 7s; M	
+p5L_L04_a	1	20	M		
+p5L_L04_a	2	57	M		
+p5L_L04_a	3	84	ok		
+p5L_L04_a	4	55	M	settled from crop: two r-form 5s; M	
+p5L_L04_a	5	60	ok		
+p5L_L04_b	1	94	M		
+p5L_L04_b	2	42	M		
+p5L_L04_b	3	29	ok		
+p5L_L06_a	1	28	ok		
+p5L_L06_a	2	53	M		
+p5L_L06_a	3	21	M		
+p5L_L06_a	4	47	ok		
+p5L_L06_a	5	65	M	settled from crop: looped 6 then r-form 5; M	
+p5L_L06_a	6	86	ok		
+p5L_L06_a	7	42	ok		
+p5L_L06_b	1	17	ok		
+p5L_L06_b	2	95	ok		
+p5L_L06_b	3	9	ok		
+p5L_L07_a	1	18	ok		
+p5L_L07_a	2	6	ok		
+p5L_L07_a	3	89	ok		
+p5L_L07_a	4	13	ok		
+p5L_L07_b	1	59	M	settled from crop: r-form 5 then 9 (neither pass); M	
+p5L_L07_b	2	22	ok		
+p5L_L07_b	3	95	M		
+p5L_L09_a	1	94	M	settled from crop: bold/overwritten 94; M	
+p5L_L09_a	2	18	ok		
+p5L_L09_a	3	39	ok		
+p5L_L09_b	1	35	ok		
+p5L_L09_b	2	51	M		
+p5L_L09_b	3	95	ok		
+p5L_L09_b	4	81	ok		
+p5L_L09_b	5	22	ok		
+p5L_L09_b	6	31	ok		
+p5L_L09_b	7	77	ok		
+p5L_L10_a	1	53	ok		
+p5L_L10_a	2	6	ok		
+p5L_L10_a	3	83	ok		
+p5L_L10_a	4	57	M		
+p5L_L10_a	5	10	ok		
+p5L_L10_a	6	24	M		
+p5L_L10_b	1	69	ok		
+p5L_L10_b	2	9	ok		
+p5L_L10_b	3	95	M	settled from crop: 9 then r-form 5; M	
+p5L_L11_a	1	48	ok		
+p5L_L11_b	1	17	M		
+p5L_L11_b	2	94	ok		
+p5L_L11_b	3	9	M		
+p5L_L11_b	4	21	ok		
+p5L_L11_b	5	70	ok		
+p5L_L11_b	6	66	ok		
+p5L_L11_b	7	92	ok		
+p5L_L11_b	8	56	ok		
+p5L_L12_a	1	93	M	settled from crop: looped 9 (not the cross 4) then 3; M	
+p5L_L12_a	2	23	ok		
+p5L_L12_a	3	81	M		
+p5L_L12_a	4	65	M	settled from crop: looped 6 then r-form 5; M	
+p5L_L14_a	1	56	ok		
+p5L_L14_a	2	29	M		
+p5L_L14_a	3	89	M	settled from crop: blotted/overwritten, second digit a tailed 9; M	
+p5L_L14_a	4	13	ok		
+p5L_L14_a	5	22	ok		
+p5L_L14_b	1	4	M		
+p5L_L14_b	2	36	ok		
+p5L_L14_b	3	81	ok		
+p5L_L14_b	4	21	ok		
+p5L_L14_b	5	23	ok		
+p5L_L14_b	6	93	M		
+p5L_L15_a	1	18	M	pass note: in-text?	
+p5L_L15_a	2	60	M	pass note: in-text?	
+p5L_L15_b	1	18	M	pass note: in-text?	
+p5L_L15_b	2	60	M	pass note: in-text?	
+p5L_L16_a	1	22	ok		
+p5L_L16_a	2	42	ok		
+p5L_L16_a	3	24	ok		
+p5L_L16_a	4	92	ok		
+p5L_L16_a	5	31	ok		
+p5L_L16_a	6	86	ok		
+p5L_L16_b	1	54	M		
+p5L_L16_b	2	17	ok		
+p5L_L18_a	1	2	M	intext: date "Den 2. dat", not decoded	
+p5L_L18_b	1	35	M		
+p5L_L18_b	2	61	M		
+p5L_L18_b	3	22	ok		
+p5L_L18_b	4	21	M		
+p5L_L18_b	5	29	ok		
+p5L_L18_b	6	95	M		
+p5L_L18_b	7	33	ok		
+p5L_L19_a	1	17	ok		
+p5L_L19_b	1	52	M		
+p5L_L19_b	2	66	ok		
+p5L_L19_b	3	20	M	settled from crop: 2 then o; M	
+p5L_L20_a	1	45	M		
+p5L_L20_a	2	24	ok		
+p5L_L20_a	3	32	ok		
+p5L_L20_a	4	81	ok		
+p5L_L20_a	5	17	M	settled from crop: hooked 7; M	
+p5L_L23_a	1	72	M		
+p5L_L23_a	2	77	ok		
+p5L_L23_a	3	96	M		
+p5L_L23_b	1	33	ok		
+p5L_L23_b	2	21	ok		
+p5L_L23_b	3	65	M	settled from crop: looped 6 then r-form 5; M	
+p5L_L23_b	4	59	ok		
+p5L_L23_b	5	51	M		
+p5L_L23_b	6	57	ok		
+p5L_L23_b	7	32	ok		
+p5L_L24_a	1	38	ok		
+p5L_L24_a	2	90	M	settled from crop: 9 then o; M	
+p5L_L24_a	3	65	ok		
+p5L_L24_a	4	13	M		
+p5L_L24_a	5	83	ok		
+p5L_L24_b	1	69	M		
+p5L_L25_a	1	33	ok		
+p5L_L25_a	2	13	M		
+p5L_L25_a	3	55	M	settled from crop: two r-form 5s; M	
+p5L_L25_a	4	84	ok		
+p5L_L25_a	5	9	ok		
+p5L_L25_a	6	89	ok		
+p5L_L26_a	1	18	M		
+p5L_L26_a	2	70	ok		
+p5L_L26_a	3	45	M	settled from crop: cross-4 then r-form 5 (neither pass); M	
+p5L_L26_b	1	46	M		
+p5L_L26_b	2	57	M		
+p5L_L26_b	3	33	ok		
+p5L_L29_a	1	56	ok		
+p5L_L29_a	2	29	M		
+p5L_L29_a	3	17	ok		
+p5L_L29_a	4	85	ok		
+p5L_L30_b	1	16	ok		
+p5L_L30_b	2	53	M		
+p5L_L30_b	3	69	M		
+p5L_L30_b	4	85	ok		
+p5L_L30_b	5	70	ok		
+p5L_L30_b	6	78	M		
+p5L_L30_b	7	51	M		
+p5L_L31_a	1	63	ok		
+p5L_L31_a	2	23	ok		
+p5L_L31_a	3	37	M		
+p5L_L31_a	4	55	M	settled from crop: two r-form 5s; M	
+p5L_L31_a	5	60	ok		
+p5L_L31_b	1	13	M	intext: date "Den 13. huj", not decoded	
+p5R_L01_b	1	60	ok		
+p5R_L01_b	2	18	ok		
+p5R_L01_b	3	7	M	settled from crop: hooked 7; M	
+p5R_L01_b	4	84	M		
+p5R_L02_a	1	17	M	settled from crop: 1 then hooked 7; M	
+p5R_L02_a	2	90	ok		
+p5R_L02_a	3	71	M		t
+p5R_L02_a	4	85	M		
+p5R_L02_a	5	11	M		
+p5R_L03_b	1	29	M	settled from crop: z-form 2 then 9; M	
+p5R_L03_b	2	84	ok		
+p5R_L03_b	3	60	M		
+p5R_L03_b	4	9	ok		
+p5R_L03_b	5	93	ok		
+p5R_L03_b	6	42	M		
+p5R_L05_b	1	34	ok		
+p5R_L05_b	2	15	M	settled from crop: 1 then r-form 5; M	
+p5R_L05_b	3	81	M		c
+p5R_L05_b	4	36	ok		b
+p5R_L05_b	5	9	ok		e
+p5R_L05_b	6	89	ok		n
+p5R_L05_b	7	63	ok		t
+p5R_L06_a	1	37	ok		
+p5R_L06_a	2	11	M		
+p5R_L08_a	1	70	ok		
+p5R_L08_a	2	13	ok		
+p5R_L08_a	3	81	M		x
+p5R_L08_b	1	6	ok		
+p5R_L08_b	2	47	M	settled from crop: cross-4 then 7; M	
+p5R_L08_b	3	17	M		
+p5R_L08_b	4	2	M		
+p5R_L08_b	5	53	M		
+p5R_L08_b	6	41	M		
+p5R_L08_b	7	90	M		
+p5R_L09_a	1	85	M		
+p5R_L09_a	2	9	ok		
+p5R_L09_a	3	61	M		
+p5R_L09_a	4	33	M		
+p5R_L10_b	1	30	ok		
+p5R_L10_b	2	22	M		a
+p5R_L10_b	3	24	M		u
+p5R_L10_b	4	45	M		
+p5R_L10_b	5	13	M		
+p5R_L10_b	6	17	M		
+p5R_L11_a	1	22	ok		
+p5R_L11_a	2	31	M		
+p5R_L11_a	3	12	ok		
+p5R_L11_b	1	10	M		
+p5R_L11_b	2	33	ok		
+p5R_L11_b	3	17	ok		
+p5R_L12_b	1	21	ok		
+p5R_L12_b	2	77	M		
+p5R_L12_b	3	40	M		
+p5R_L13_b	1	24	ok		u
+p5R_L13_b	2	43	M		
+p5R_L13_b	3	54	M		
+p5R_L13_b	4	9	M		e
+p5R_L13_b	5	21	ok		v
+p5R_L13_b	6	89	ok		u
+p5R_L14_a	1	6	M		
+p5R_L14_b	1	81	M		
+p5R_L14_b	2	32	ok		
+p5R_L14_b	3	69	ok		z
+p5R_L14_b	4	57	ok		e
+p5R_L14_b	5	17	ok		n
+p5R_L14_b	6	83	ok		g
+p5R_L14_b	7	9	ok		e
+p5R_L14_b	8	2	M		
+p5R_L15_a	1	30	ok		
+p5R_L15_b	1	9	M		e
+p5R_L15_b	2	95	M	settled from crop: 9 then r-form 5; M	
+p5R_L15_b	3	69	ok		z
+p5R_L15_b	4	83	ok		e
+p5R_L15_b	5	58	M		f
+p5R_L15_b	6	81	ok		e
+p5R_L15_b	7	65	ok		n
+p5R_L16_a	1	12	ok		
+p5R_L16_a	2	42	ok		
+p5R_L16_a	3	71	M		
+p5R_L16_a	4	36	M	crop-step artefact: the half-line cut fell inside "36"; merged with p5R_L16_b col 1 (overview "7,36,65"); M	
+p5R_L16_b	1	65	M		
+p5R_L16_b	2	13	M		
+p5R_L17_b	1	9	M		
+p5R_L17_b	2	69	ok		
+p5R_L17_b	3	9	M	B-only token kept: a 9 is visible between 69 and 22; M	
+p5R_L17_b	4	22	ok		
+p5R_L17_b	5	3	M		
+p5R_L18_a	1	8	M		
+p5R_L18_a	2	85	M		
+p5R_L18_a	3	24	ok		
+p5R_L18_a	4	16	ok		
+p5R_L19_a	1	56	M		
+p5R_L19_a	2	51	M		a
+p5R_L19_a	3	41	M		n
+p5R_L19_a	4	24	ok		
+p5R_L19_a	5	94	ok		
+p5R_L19_b	1	9	M	settled from crop: comma then 9; M	
+p5R_L20_a	1	62	M	settled from crop: looped 6 then 2; M	
+p5R_L20_a	2	33	ok		
+p5R_L20_a	3	69	ok		
+p5R_L20_b	1	2	M	intext: date "Das 2", not decoded	
+p5R_L21_a	1	36	M		
+p5R_L21_a	2	18	M		
+p5R_L21_b	1	72	M	settled from crop: hooked 7 then 2; M	
+p5R_L21_b	2	55	M	settled from crop: two r-form 5s; M	
+p5R_L21_b	3	86	ok		
+p5R_L21_b	4	9	M		
