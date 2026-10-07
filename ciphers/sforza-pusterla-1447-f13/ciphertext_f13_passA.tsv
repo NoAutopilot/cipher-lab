@@ -1,0 +1,17 @@
+# BnF italien 1584 f.13 (canvas 15), Pusterla, Guastalla 21 Jan 1447. Pass A: SFZ-P (Opus) reading, 7 Oct 2026, from
+# slope-following single-line crops of images/src_*_f15_* (tools/iiif_lines.py --image ... --deskew, scratch); line 7 read
+# from the debug overview only (no single-line crop), lower confidence. Labels: ../sforza-italien1584-1447/pusterla/pusterla_labels.md.
+# Read after the Pusterla key existed (labels chosen by the key-builder's eye; possible bias toward key labels).
+f13_L01	go fo ht ze S h- ÷ q g÷
+f13_L02	3 :|: h p÷ zo H =y So fto a t d fa q e b z So q= S to y B go +2 x :||: ze pq # h- pq
+f13_L03	d h- ae bo p÷ z- :|: 3 ÷ a b- b h- B 8 b fo x e pq gto ÷ d So h pq x bo b ht h7 q
+f13_L04	h- B S dio q= b h B d' :|: e ht dt q b- b ÷ V o# # b h- fa x to q =y V b g÷ +2 a o#
+f13_L05	b gto h- ÷ bo B g :|: # x a b- h7 zo ÷ q= +2 q 8 h7 V B 3 b h pez ÷ pi e ht dio q
+f13_L06	So d t x to b ae h- q 3 :|: a g b h- B b- b e pq d ÷ :||: g dio T= go x bo So b q= 3 ÷
+f13_L07	.. h- gto zo B e h- d t :|: q= y b a q= g ze ht B q a =y to b g÷ a t h- q gto h- ÷ h-
+f13_L08	q ae h- :|: o# h7 .. t ÷ # x h # V to coo b a e z- V h- 3 ÷ m q # g dio a g÷ 3
+f13_L09	:|: coo b q a # b- dio h- ÷ So e B V x fo 8 B fto t :|: y x q= 8 ze B =y g÷ z- d pq
+f13_L10	b B to a d t ÷ go x :|: b- 3 b dio b- .. dio r b q fo h- g÷ V b coo to So b pez
+f13_L11	a q= 8 ze h- y H fo ÷ h a b- pt :|: g÷ :|: g÷ 8 ÷ # r b q= B dio fo bo a x to b q= ze h-
+f13_L12	h- y b g h- bo x d m b h pez V dt ÷ fo b a V ht B go =y
+f13_SIG	to :|: .. g fo d ÷ t h- a

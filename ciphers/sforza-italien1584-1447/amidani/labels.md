@@ -81,3 +81,8 @@ labels (g, #, D, K, O, 3, q, Y, x, b, d, f, t, cX) is by eye and unverified agai
 - Letter-shaped runs "par", "per", "pre", "co", "mo", "bı" are written letter by letter as cX (cp ca cr, cp ce cr, c co, cm co,
   b ci); `·ll·` (two strokes between dots) as `l l`; "g#" as `g #`. Whether these runs are single signs is untested.
 - By description, SFZ-D `N5` (ʃ) = SFZ-70 `Ns`; the two label sets were made in parallel and are not otherwise reconciled.
+## Pusterla additions (SFZ-P, 7 Oct 2026)
+
+Pietro de Pusterla's slips (italien 1584 f.13, f.42, f.81) use a largely different inventory. Their labels are kept in
+`../pusterla/pusterla_labels.md` as a separate namespace (cite as `p:<label>`), with a concordance column to the labels
+above where a shape matches; no label above was renamed.
