@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Decode ciphertext.txt with WE028 (tools/data/uscodes-1800/WE028.tsv) and grade each token; rule 7.
 usage: python3 ciphers/erving-monroe-1806/decode.py [--check]   (--check exits 1 if reading.txt is stale)
-Grades: S = both blind passes agree and the WE028 value fits (WE028 is a modern transcription of a period table, so a
-token is S, not H, until a period key copy or gloss for this letter is found); M = a group one pass marked doubtful or
+Grades: H = both blind passes agree and the value is read straight from WE028, a key source (Tomokiyo's transcription of
+the period table, graded H in tools/data/uscodes-1800/README.md; the same key is attested on this Erving-Monroe channel by
+the period interlinear of Erving to Monroe, 5 Feb 1806, 12 values agreeing) -- regraded from S by KHF-1, 7 Oct 2026; M = a group one pass marked doubtful or
 read at a crop edge; I = a group neither pass read (braced in ciphertext.txt)."""
 import sys, csv
 from pathlib import Path
@@ -21,7 +22,7 @@ for ln in open(here / 'ciphertext.txt'):
     for i, g in enumerate(groups.split()):
         inferred = g.startswith('{')
         v = g.strip('{}')
-        grade = 'I' if inferred else ('M' if (lid, i) in DOUBT else 'S')
+        grade = 'I' if inferred else ('M' if (lid, i) in DOUBT else 'H')
         toks.append(f"{v}={key.get(v, '?')}/{grade}")
     out.append(f"{lid}\t" + ' '.join(toks))
 words = ' | '.join(''.join(t.split('=')[1].split('/')[0] for t in l.split('\t')[1].split()) for l in out)
