@@ -499,3 +499,70 @@ no line gains a letter and no fragment is joined to another.
 note: class without a reading, not counted: Saint-Gouard to the duc d'Anjou, 5 Sept 1572 (BnF fr.16104 ff.170r-171 (D1)
 unique solves (N3+ and D2+): 17 -- D4 1, D3 2, D2 14; not counted D0/D1: 13; legacy ungraded: 0
 ```
+
+## AUDIT (ink 54 depth re-check, DA1-VIV)
+
+Verifier DA1-VIV (account 1, worker for LANE DEFAULT-account-1-20261007-1440, lane orchestrator session_01FEtepdKvZ6iYUGCHy52qyE), 7 Oct 2026
+14:49-15:0x UTC by date -u. Brief: .claude/briefs/runs/2026-10-07-account1-default-1440-jobs.md "DA1-VIV". Not the solver of any ink 54 reading
+(N5-VIV54, N7-VIV54L, N7-VIV54Q/R, DEF1-VIV54) and none of the earlier verifiers. No decoding; no reading, key or transcription file changed.
+Depth only (rule 4a); the N-class is confirmed, not re-searched (AUDIT 1 VIV54-A1 and AUDIT 2 VER1-VIV hold N3; no reading has moved since VER1-VIV,
+so nothing in their search logs is stale).
+
+### 1. Rule-7 re-derivation and gates
+- `tx/viv54L_decode.py --check` -> "reading_piece54_L.tsv up to date" (exit 0); `tx/viv54_decode.py --check` (superseded N5 reading) up to date.
+  The reading under audit is the same file VER1-VIV graded: DEF1-VIV54 (5 Oct, after VER1-VIV) relabelled nothing.
+- `tx/viv54L_test.py` re-run in full (200 draws, 200 wrong keys, 4 min 58 s). The **target and control scores reproduce exactly** (C1 f.103r
+  -1.7145, C2 ink 53 -1.6666, ink 54 re-decode -1.6361); the **nulls do not reproduce byte-identically**: b2 p99 -1.8159 (registered -1.8121),
+  wrong-key margin p99 0.0365 (registered 0.0431), real margin 0.1798 (registered 0.176), 17/200 wrong keys pass b2 alone (registered 23/200).
+  Cause, consistent with the code: viv63_test.run shuffles over `sorted(key)`, and N7-VIV54R added the row Zu -> u to key.tsv after N7-VIV54L
+  registered its result; the row is used by no transcription (so the real decode is unchanged) but it changes every shuffle draw. Verdicts
+  unchanged: **b2 PASS, wrong-key specificity PASS, positive controls PASS with headroom.** Re-run kept beside the registered file as
+  tx/viv54L_result_DA1VIV.json; tx/viv54L_result.json left as registered. Note for the next solver: a key.tsv change, even an unused row,
+  invalidates byte-identical re-runs of every result built on viv63_test.run.
+- What these gates license: b2 says the letter order under this key is more French-like than the same letters shuffled; the wrong-key margin
+  says this key does that better than 200 permuted keys. Neither says any clause reads. The gloss gate (AUDIT 1: 0.609 vs position-null p95 0.454)
+  is still the only content-anchored check, and it ran on the N5 reading.
+
+### 2. Image spot check (crops on disk, no request)
+Seeded sample (random.Random(20261007), drawn before looking): f.173r L11, L15; f.173v L03, L10; crops images/c187_f173r_L11_s1-s3,
+c187_f173r_L15_s2, c188_f173v_L03_s1-s2, c188_f173v_L10_s1 read by this verifier's eye against the `codes` column (about 150 signs).
+f.173r L11 and f.173v L03 (which carries the by-eye clause "tousiour[s] ... doubte ... c'este") match the transcription sign for sign at the
+level SIGNS.md distinguishes (3-vs-z and P-vs-r ambiguities aside). f.173r L15: one stretch ("y p d p") is ambiguous on the crop. f.173v L10:
+the two "+" tokens (graded U) look like a crossed p (ꝑ) on the crop, and "{asterisk} {star}" is one large star sign written as two tokens
+(both U) -- neither affects an H token. **No H-graded sign in the sample contradicts the image**, but this is one reader's agreement on four
+lines, not a true-error measurement (N7-VIV54L's planted audit remained a NON-TEST).
+
+### 3. Per-token grades (recounted from reading_piece54_L.tsv)
+| reading | tokens | H | M | U | H % |
+|---|---|---|---|---|---|
+| N5-VIV54 (AUDIT 1) | 1,990 | 1,475 | 318 | 197 | 74.1 |
+| N7-VIV54L (AUDIT 2 VER1-VIV; current) | 1,954 | 1,488 | 271 | 195 | 76.2 |
+H = key-source grade on a settled sign (Tomokiyo's published key, held out on ink 40 vs clerk decipherment 41, N5-VIVK); no C, no S.
+Recounted here: identical to VER1-VIV's figures.
+
+### 4. Depth (rule 4a)
+- Longest all-H run: **26 letters** per line and across line ends (f.173v L07 "entuieluaaaaendeestentreen", salad); next 19 (f.173v L05
+  "aonstretetdictauoir": "...et dict avoir"), 17, 17, 17, 16 (f.173r L21 "touteailigencede" = "toute [d]iligence de", 1 repair). Same as VER1-VIV.
+- **Missing letters (measured here, the ink 53 observation of AUDIT 4 holds for ink 54 too):** of the 1,759 non-U decoded letters there is no
+  f, m, p, v, x or y at all, and s is 2.2% (French ~7-8%); a is 244 (13.9%), inflated by the "qae" for "que" label (13x). About one letter in
+  ten of French prose therefore cannot be read under the current labels, so no clause above ~42 letters can come out without liberties.
+- **Verdict: hold D1 ("fragments read"). Not raised, not lowered.** No clause above the authentication distance without liberties; no code
+  value reads in two contexts (letter key, no nomenclator); this verifier cannot write one true, specific sentence about what the cipher part says.
+  depth_pct 76.2. depth_check: as AUDIT 1 and AUDIT 2, plus the rule-7 and gate re-run above, the seeded image spot check and the missing-letter count.
+- D2 path for ink 54 (the same as ink 53's): give the key's f, m, p cells transcription labels (the e/o/2/r/c/V U-label question, D1-F16104K and
+  D07-VIV53 for ink 53; both instruments NON-TEST or negative, so a different instrument -- sign sorter or clerk alignment), and the u-after-q
+  sign (Zu), then re-decode with the wrong-key control.
+
+### 5. Postmortem and propagation
+- **Stale field corrected:** status.json's ink-54 `grade` still quoted the N5 counts ("1,990 tokens: H 1475, M 318, U 197") after VER1-VIV moved
+  `depth_pct`/`depth_note` to the N7 reading; updated to the N7-VIV54L counts and the b2/specificity results. No over-claim found elsewhere:
+  NOTES.md N7-VIV54L says "no stretch longer than about 25 letters without a letter repair"; status.json `line` says "fragments read".
+- No reading change, so AUDIT 1's safe sentence, the SECOND-OPINIONS-QUEUE row and second-opinions/PROMPT-chatgpt-viv54.md need no revision.
+- Requests: none (crops on disk). Subagent calls: none.
+
+### 6. depth_check output
+`python3 tools/depth_check.py` (exit 0, 7 Oct 2026 15:0x UTC, after the status.json update; the ink-54 line and the total):
+```
+note: class without a reading, not counted: Saint-Gouard to Charles IX, 7 Sept 1572 (BnF fr.16104 f.173r-v): Frenc (D1)
+unique solves (N3+ and D2+): 22 -- D4 4, D3 5, D2 13; not counted D0/D1: 13; legacy ungraded: 0
+```

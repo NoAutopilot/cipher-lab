@@ -3564,10 +3564,10 @@
       "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr16104-vivonne-spain-1572",
-      "fields_source": "fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 1 (VIV54-A1, account 3); fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 2 (VER1-VIV, account 2, 5 Oct 2026) -- second audit of inks 53, 54, 63",
+      "fields_source": "fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 1 (VIV54-A1, account 3); fr16104-vivonne-spain-1572/AUDIT.md: AUDIT 2 (VER1-VIV, account 2, 5 Oct 2026) -- second audit of inks 53, 54, 63; fr16104-vivonne-spain-1572/AUDIT.md: AUDIT (ink 54 depth re-check, DA1-VIV, account 1, 7 Oct 2026)",
       "document_id": "BnF fr.16104 f.173r-v (ink 54): Jean de Vivonne, sr de Saint-Gouard, to Charles IX, Madrid, 7 Sept 1572",
       "title": "Saint-Gouard to Charles IX, 7 Sept 1572 (BnF fr.16104 f.173r-v): French fragments read under Tomokiyo's published 1572-74 key",
-      "grade": "N3 (two audits), key published (S. Tomokiyo, credited). 1,990 tokens: H 1475, M 318, U 197; gloss gate 0.609 vs shuffled-key p95 0.354 and position-null p95 0.454; judge not a gate; rule-7 --check up to date.",
+      "grade": "N3 (two audits), key published (S. Tomokiyo, credited). Current reading N7-VIV54L: 1,954 tokens: H 1488, M 271, U 195; b2 order gate PASS (-1.636 vs p99 -1.812) and wrong-key specificity PASS (0.176 vs p99 0.043), re-run by DA1-VIV 7 Oct 2026 with the same verdicts; gloss gate (N5 reading) 0.609 vs shuffled-key p95 0.354 and position-null p95 0.454; judge not a gate; rule-7 --check up to date.",
       "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Using Satoshi Tomokiyo's published 1572-74 key, we read fragments of Saint-Gouard's cipher letter to Charles IX of 7 September 1572 (BnF fr.16104 f.173r-v); the letter's own interlinear words agree with the decode where they stand. No printed plaintext or separate decipherment of this letter was located in the editions searched.",
       "text": "unknown",
       "depth": "D1",
@@ -3576,10 +3576,10 @@
         "names_codes": "not identified (195 U labels outside key.tsv; no nomenclator in key.tsv)",
         "other": "271 M"
       },
-      "depth_check": "key held out on ink 40 vs clerk decipherment 41 (N5-VIVK) + interlinear-gloss gate with shuffled-key and position nulls (VIV54-A1); no content check; longest-H-run re-measured on the current file (VER1-VIV, 5 Oct 2026)",
-      "depth_note": "Post-N7-VIV54L reading: H 1488 of 1954; longest all-H run 26 letters (salad); best by-eye clauses 21-25 letters with repairs; below the ~42-letter authentication distance (VER1-VIV re-check: hold D1)",
-      "depth_by": "session_0148TCAZw5nwPA6aFDTnaAyP; session_017QymPyiMyH1SA7cJyvVoDD",
-      "depth_date": "5 Oct 2026",
+      "depth_check": "key held out on ink 40 vs clerk decipherment 41 (N5-VIVK) + interlinear-gloss gate with shuffled-key and position nulls (VIV54-A1); no content check; longest-H-run re-measured on the current file (VER1-VIV, 5 Oct 2026); rule-7 --check, b2 + wrong-key gates re-run (verdicts reproduce), seeded 4-line image spot check and missing-letter count (no f, m, p) (DA1-VIV, 7 Oct 2026)",
+      "depth_note": "Post-N7-VIV54L reading: H 1488 of 1954; longest all-H run 26 letters (salad); best by-eye clauses 21-25 letters with repairs; below the ~42-letter authentication distance (VER1-VIV re-check: hold D1); the decode has no f, m or p (no key label carries them), the D2 path is a key-change step for those and for the u after q (DA1-VIV re-check, 7 Oct 2026: hold D1)",
+      "depth_by": "session_0148TCAZw5nwPA6aFDTnaAyP; session_017QymPyiMyH1SA7cJyvVoDD; DA1-VIV (account 1, LANE DEFAULT-account-1-20261007-1440)",
+      "depth_date": "7 Oct 2026",
       "decode_status": "Non-decrypted"
     },
     {
