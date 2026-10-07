@@ -860,3 +860,16 @@ Verdict: both decodes FAIL under fr16 and fr17 alike, each below its corpus's le
 not "judge cannot decide"; the era mismatch was not what failed them (as the earlier sections said). Nothing else
 changed: status, HYPOTHESES.md and AUDIT untouched. The spec's judge block still names fr16; switching a future
 reading to both fr17 and fr (tools/data/fr17/README.md "Use") is the next judge run's job.
+
+## Keyhunt 7 Oct 2026
+
+KH1-C (LANE KH-1), 17:47-18:35 UTC by date -u. Keys key_sabran_1631.tsv and key_sabran_1631_letters.tsv, window 1628-1634.
+Searched 7 Oct 2026: Baluze 155-156 finding aid (cc340913, item date lists for Bouthillier, Servien, Louis XIII, Toiras-Servien,
+Savoy, Mantua, Mayenne, Farnese, Tuscany letters); fr.4133-4138 finding aid (cc505343); DECODE census on disk (R2748-R2754);
+Tomokiyo GL.htm; Gallica thumbnail scan of Baluze 155 canvases 1-269 (folios 1 to about 130) at 400 px with
+`tools/cipher_page_detector.py` (its scores flag most pages and were not used) and a Sonnet contact-sheet triage calibrated on
+f.79 (canvas 163). Cipher seen only on f.79 (key source), f.105-107 (canvas 227, DECODE R2749 Decrypted) and f.123-130 (canvases
+265-266, DECODE R2750 Decrypted). **Unread siblings found: 0 confirmed.** The scan stopped at canvas 269 after a second
+"Remote end closed connection" from Gallica (one retry spent). Open: Baluze 155 canvases 270-440 (Servien 1632, f.141-164 not in
+DECODE) and Sabran's 1629-31 register fr.4133 (btv1b9060195s), which neither Tomokiyo nor DECODE names; next: thumbnail scans
+of both, about $3 together. Every candidate: `KEYHUNT-2026-10-07-KH1-C.tsv`.

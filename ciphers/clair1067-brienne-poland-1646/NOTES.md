@@ -386,3 +386,18 @@ the leaf's own contemporary decipherment, known-genuine French of this very pass
 (cipher passages are fragments cut at clear words, with names and titles), so the reading's FAIL is not evidence against
 it; it is "judge cannot decide" by rule 3's gloss paragraph (ZX-DEC349 precedent), not a negative. The reading is N0 (AUDIT.md),
 grade C from that same gloss. Status, AUDIT.md and the reading unchanged.
+
+## Keyhunt 7 Oct 2026
+
+KH1-C (LANE KH-1), 17:47-18:35 UTC by date -u. Keys key_1646.tsv, key_brienne_1647.tsv, key_brienne_1651.tsv. Searched 7 Oct 2026:
+BnF archivesetmanuscrits finding aids for Clairambault 1058-1110 (cc137820, all volumes: only two "chiffres" items, Clair 1067
+fol.226 and Clair 1108 fol.245, both folders here), Clairambault 571-582 d'Estrades (cc13896b, volume records for 576-579),
+Clairambault 380-430 "Regne de Louis XIV" (cc13826w, volume records 396-432 grepped for Pologne/Lumbres/chiffre), Melanges de
+Colbert 8 (cc955808), free-text searches "Brienne chiffre(s)", "Brienne dechiffrement", "reine de Pologne chiffre", "Pologne
+chiffre(s)", "Brasset chiffre"; Gallica SRU for Clairambault 573-579 (0 records); Tomokiyo louisxiv0.htm read for Clair
+421/577/579. **Unread digitised siblings found: 0 for each of the three keys.** Brienne's letters to d'Estrades (Clair 573-579,
+about 80 letters 1643-1654; Clair 578's eight 1648-50 letters are outside Tomokiyo's coverage) are not digitised (no Gallica link
+in the record; folders clair577-* already wait on ASKS row 94). Not yet checked for cipher, and on Gallica if the series is
+digitised there: letters of Marie-Louise of Poland in Clairambault 407 f.14 (1646), 420 f.144 (Mar 1649), 424 f.46 (Dec 1649) and
+de Lumbres in 406 f.300/323, 407 f.36, 419 f.237, 421 f.27; next: SRU for those volumes and one native fetch per folio, about $1.
+Every candidate: `KEYHUNT-2026-10-07-KH1-C.tsv`.

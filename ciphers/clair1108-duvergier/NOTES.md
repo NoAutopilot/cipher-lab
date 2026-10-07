@@ -445,3 +445,12 @@ skipped, per the brief; its native fetch is LANE G2's to schedule. Suggestion (o
 at native scale for mirrored ghosts from 248r before cutting crops.
 
 Not found / not done: no cipher on 249r to add to the key; no network; no novelty classification.
+
+## Keyhunt 7 Oct 2026
+
+KH1-C (LANE KH-1), 17:47-18:35 UTC by date -u. Key key_1696.tsv. Searched 7 Oct 2026: BnF archivesetmanuscrits Clairambault
+1058-1110 finding aid (cc137820, all volumes: "Du Vergier ... dont plusieurs avec chiffres" at Clair 1108 fol.245 is the only
+Vergier item), free-text "Vergier chiffres", "Vergier Dunkerque" (adds only fr.15009, Vergier's verse), "Pontchartrain chiffre
+1696" (0). **Unread digitised siblings outside this folder: 0.** Inside it, fol.247v (canvas f251, about 60-70 groups) is still
+uncut; next: native fetch and `tools/decode_key.py` with key_1696.tsv, about $2. Vergier's other dispatches (AN Marine B3) are
+not reachable from the cloud. Every candidate: `KEYHUNT-2026-10-07-KH1-C.tsv`.
