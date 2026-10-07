@@ -1,0 +1,32 @@
+L09 run len 62: frame0 flb#it#oer#hr##aumoinslhc##d..# | switches at digit [16] | diff 0.82 1.01 -0.88 -0.85 -0.93 0.42
+L09 run len 4: frame0 es | switches at digit [] | diff 0.00
+L10 run len 6: frame0 des | switches at digit [] | diff 0.00
+L10 run len 54: frame0 sird#a#hont####srien#e#dqus. | switches at digit [] | diff 1.24 -0.12 0.91 -0.42 0.94
+L11 run len 26: frame0 .i#rrdl#g#i## | switches at digit [] | diff 1.12 1.23
+L11 run len 23: frame0 #a#tho##.a. | switches at digit [] | diff 1.13
+L11 run len 5: frame0 .. | switches at digit [] | diff 0.00
+L11 run len 3: frame0 # | switches at digit [] | diff 0.00
+L11 run len 3: frame0 # | switches at digit [] | diff 0.00
+L12 run len 22: frame0 estoitutide | switches at digit [] | diff -0.48
+L12 run len 34: frame0 #allerp#.rrai.#i. | switches at digit [8] | diff -0.36 1.00 0.32
+control  1 L10 ins@38 -> switches [] miss
+control  2 L11 ins@5 -> switches [] miss
+control  3 L11 ins@17 -> switches [] miss
+control  4 L10 ins@8 -> switches [16] HIT
+control  5 L09 ins@59 -> switches [16] miss
+control  6 L11 ins@2 -> switches [] miss
+control  7 L11 ins@9 -> switches [] miss
+control  8 L09 ins@59 -> switches [16] miss
+control  9 L09 ins@3 -> switches [] miss
+control 10 L12 ins@19 -> switches [] miss
+control 11 L11 ins@8 -> switches [] miss
+control 12 L12 ins@2 -> switches [8] HIT
+control 13 L10 ins@50 -> switches [] miss
+control 14 L11 ins@19 -> switches [] miss
+control 15 L11 ins@9 -> switches [] miss
+control 16 L11 ins@11 -> switches [] miss
+control 17 L11 ins@19 -> switches [] miss
+control 18 L10 ins@42 -> switches [] miss
+control 19 L09 ins@49 -> switches [16] miss
+control 20 L12 ins@24 -> switches [] miss
+digits 242, switches as read 2, control 2/20 -> NON-TEST

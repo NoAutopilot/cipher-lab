@@ -345,7 +345,7 @@ Not found in print: nothing searched (transcription job).
 
 ## Remaining gaps
 Read so far: 80 of 102 figure tokens at H (78%); 22 M (D07-NEVFV AUDIT 3, 7 Oct 2026: token 45 H -> M; NEVF-APPLY had 81/21, was 75/27); nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
-- L05 run (2 tokens M, 45 and 79): digits all confirmed by a person (NEVF-APPLY); the pairing (45 79, e + null, vs 4 57 9, m with two orphan digits, giving 'et moiens' with L06) was judged by the verifier from the image (D07-NEVFV AUDIT 3, 7 Oct 2026): even spacing, no grouping mark, left open and 45 lowered to M - blocker: open-codes; not-attempted: whether this scribe writes stray single digits elsewhere under key no.25; next: read the figure runs of one sibling letter under the same key (fr.4715 f.27 or f.38, Tomokiyo) for single-digit orphans, ~$3
+- L05 run (2 tokens M, 45 and 79): digits all confirmed by a person (NEVF-APPLY); the pairing (45 79, e + null, vs 4 57 9, m with two orphan digits, giving 'et moiens' with L06) left open from the image (D07-NEVFV AUDIT 3, 7 Oct 2026) - blocker: open-codes; sibling check D07-NEVF25 (7 Oct 2026, fr.4715 f.27r L09-L12) NON-TEST at its pre-registered insertion control (2/20 vs gate 14/20), 0 grades moved; by PREREG-D07NEVF25 no other-writer sibling can move 45/79 (f.35r itself already has four single-figure M tokens); next: a C-grade check of the period interlinear gloss over fr.4715 f.27r L09 at the lone '1' (does the decipherer read "au moins" there, i.e. an orphan figure in key-no.25 practice), one crop + 2 blind passes + reconciliation, ~$4.5; the step that would move grades is same-writer material read at H (fr.3416 f.38's ". 9 . 0 ." or f.35r's own L03/L07 stray figures, by a person in the sorter)
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON); 251 words H, 43 M, 23 U - blocker: illegible; to every machine reader tried, measured by its own hidden H-word control: 1100-px word windows to Sonnet (A1B-FILS-UPPER, reads H neighbours wrong) and to Opus (A1B-FILS-UPPER2, 0/6 vs gate 5/6), then whole 2400-px line strips to Opus (DEF1-F3416, 5 Oct 2026, 1/6 vs gate 5/6, verify/upper_strips/): both instruments retired under rule 3's third-attempt clause; the M/U words need a person reading the hand (a palaeographer, or the owner on the strips images/f43u_*), not a fourth machine pass
@@ -353,14 +353,14 @@ Read so far: 80 of 102 figure tokens at H (78%); 22 M (D07-NEVFV AUDIT 3, 7 Oct 
 (Novelty N3 -> N4 settled: N4 set by A1B-VERIFY-FILS-N4b, 3 Oct 2026, AUDIT.md "Third audit".)
 
 ## Escalation
-- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned twice (FILS-F38 single passes; A1B-FILS-F38B second passes + reconciliation): FAIL both times by the same gate
+- [x] siblings: NV-03 f.38v used as the positive control; fr.3416 f.38 aligned twice (FILS-F38 single passes; A1B-FILS-F38B second passes + reconciliation): FAIL both times by the same gate; L05 pairing, fr.4715 f.27r L09-L12 read by 2 blind Sonnet passes + reconciliation, frame-switch detector (D07-NEVF25, 7 Oct 2026): NON-TEST at its control (2/20), 0 grades moved
 - [x] clear-pages: f.35r clear text L01-L10 transcribed by two blind passes + reconciliation (FILS-CLEAR); upper letter, line 11 and margin note cropped and read by two blind passes (FILS-UPPER) and reconciled once against the crops (FILS-RECON: 84 splits settled, 23 words left U)
 - [x] known-keys: period key no.25 found at fr.3995 canvas f104 and applied
 - [x] print: Gomberville 1665 searched (NV-INTAKE), letter absent
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR); L05 split digits read by a person in the sign sorter (R10-NEVF2 built, NEVF-APPLY applied 6 Oct 2026): 6 tokens M -> H
 - [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved; the same re-registered without class 0 (R9-NEVF, 6 Oct 2026): non-test at the leave-one-out gate (0.644 vs 0.90), 0 tokens moved; whole line strips of the upper letter to a blind Opus pass C (DEF1-F3416, 5 Oct 2026): 1/6 H controls (gate 5/6), non-test, 0 tokens moved, line-strip instrument retired
-Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: a sibling key-no.25 letter (fr.4715 f.27 or f.38) checked for orphan single digits, to settle the L05 45 79 / 4 57 9 pairing (AUDIT 3 done 7 Oct 2026)
+Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the period gloss over fr.4715 f.27r L09 at the lone '1' read as a C-grade check of orphan figures in key-no.25 practice (~$4.5), knowing it cannot move 45/79 by itself (PREREG-D07NEVF25 grade rule)
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -780,3 +780,31 @@ line image: even spacing, no grouping mark; `45 79` keeps the frame (pre-registe
 two one-digit orphans key no.25 has no code for -> 79 left M, and **45 lowered H -> M** (same question). **Reading change after AUDIT.md:
 grades only (H 80 / M 22), no letter changed.** Depth D1, 78.4%; N4 unchanged. status.json and PROGRESS.tsv updated; SO-NV02-F35 prompt
 quotes no counts, unchanged. Requests 0 network.
+
+## D07-NEVF25 results (account 1 for LANE DEFAULT-account-1-20261007-0042, 7 Oct 2026, 01:10-01:2x UTC by date -u)
+
+PREREG-D07NEVF25.md (commit d8c6fd7f1) pushed before any sibling digit was read. Sibling: BnF fr.4715 f.27r (no.9, "Evesque"
+to Nevers, 2 Dec 1589), located with `python3 tools/gallica_folio.py btv1b52509819x --folio 27` -> canvas f67 label '27r'
+(4079x5720). It is a **wholly enciphered letter of ~40 figure lines under key no.25 with a period interlinear decipherment**
+(Tomokiyo identifies the key and quotes three code words; no reading of it is on disk here). Crop (pasted):
+`python3 tools/iiif_lines.py --ark btv1b52509819x --canvas 67 --region 560,1000,3150,1100 --out <scratch>/crops --prefix f27 --debug`
+-> 12 bands x 2 segments. Deviation from the PREREG, recorded: the region gave only 12 bands, so the 4 lines read were crops
+L09-L12 (chosen by position, before any read) instead of 10-13. Two blind Sonnet passes (crop paths only, no key) agree on
+239 of 242 digits; the 3 splits stay '?'; files `sibling_f27/passA.tsv`, `passB.tsv`, `f27r_L09-L12_reconciled.tsv`, crops
+`sibling_f27/f27_L09_s*.jpg`. Detector `sibling_f27/frame_switch.py` (output `frame_switch_out.txt`): 242 digits, 2 switches as
+read, **insertion control 2/20 against the gate 14/20 -> NON-TEST**. The runs are cut short by word codes and '?', and the
+8-pair windows are too coarse for runs of this length; nothing is concluded from the statistic, and the detector is not
+re-tuned on the same lines (that would be fitting to the target). **No grade moved: H 80 / M 22; `decode_f35.py --check` OK.**
+
+Observation, not counted (outside the failed gate, reported so the next step can be pre-registered): both blind passes
+independently noted a '1' standing apart in L09 (`... 4 3 1 8 | 1 3 2 9 ...`). Decoded under key no.25, the line before it
+reads at frame 1 (`65 63 64 45 48 67 76 84 37 45 84 87 43 18` = "onnehorscestes" + null) and after it at frame 0 (`32 94 57 67
+54 64 84` = "aumoins"), i.e. `43 18 [1] 32 94 ...` -- a lone figure between two frames, the shape the 4 57 9 parse needs. This
+is another writer's hand ("Evesque", not the f.35r writer) and an uncontrolled look at one line, so by the PREREG grade rule it
+moves nothing on f.35r. The period gloss above that line is the cheap independent check (next step in Remaining gaps).
+Next step for the sibling itself (not attempted, outside this brief): fr.4715 f.27r is an unread-by-us key-no.25 letter of ~40
+lines with its own period decipherment -- a check-solved/premise pass first (Tomokiyo has looked at it), then a full
+transcription priced per line pass (~40 lines x 2 passes, ~$1.5 per 4-line call = ~$30 + reconciliation).
+Requests: gallica.bnf.fr 2 (1 overview at 1000 px, 1 region fetch at native size; manifest cached). Vision: 2 Sonnet subagent
+calls on 8 line crops; 2 own looks (overview, debug overlay) + 1 crop. Not found in print: nothing searched (sibling read job).
+

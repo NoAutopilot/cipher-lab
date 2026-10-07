@@ -1,0 +1,7 @@
+# fr.4715 f.27r (Gallica btv1b52509819x canvas f67) figure lines L09-L12 of crop region 560,1000,3150,1100 (tools/iiif_lines.py), D07-NEVF25, 7 Oct 2026.
+# Reconciled from blind Sonnet passes A and B (passA.tsv, passB.tsv): 239/242 digits agree; the 3 single-digit splits are '?' (not settled from the crop);
+# A's (6/0) at L09 pos 12 taken as B's 6. Bracketed groups are word codes (Roman numerals / barred figure / letter group) and break a run.
+L09	4656364454867768437458487431 8 1 3294576754648456 4 . 8 3 7 2 7 4 4 3 8 0 4 5 9 5 8 ? 4 5 8 4
+L10	384284 [xlvi?] 8353743828342748676385506150668474534564294520387384 3 9 =
+L11	3953557676385655 . 4744545858 [bar 8]7 8353385486825289935042 [x] 13894?205?287
+L12	4283866554879286533842 [word: f/lbu] 9032 . 56564375725005767534530244 5204
