@@ -1,0 +1,64 @@
+DA1-COL3 held-out word-level positional test; units {'c54': 38, 'c55': 93, 'c56': 50, 'c62': 58, 'c63': 31} word spans
+k distribution: [(1, 94), (2, 87), (3, 45), (4, 30), (5, 7), (6, 6), (7, 1)]
+instrument c54: C-code occ 28 H 8 ctrl mean 3.81 p95 7 max 10 P 0.0145 -> CLEARS
+instrument c55: C-code occ 67 H 19 ctrl mean 9.95 p95 15 max 22 P 0.0018 -> CLEARS
+instrument c56: C-code occ 30 H 10 ctrl mean 3.61 p95 7 max 11 P 0.0012 -> CLEARS
+instrument c62: C-code occ 37 H 8 ctrl mean 4.29 p95 8 max 11 P 0.0524 -> FAILS
+instrument c63: C-code occ 22 H 7 ctrl mean 2.84 p95 6 max 10 P 0.0146 -> CLEARS
+code	value	N	H	ctrl_mean	p95	max	P	P_min	units_hit	power_at_N	verdict
+15	e	17	10	7.06	10	15	0.1186	0.0000	c54,c55,c56,c63	0.118	FAIL-LOWPOWER
+16	se	12	3	0.57	2	5	0.0135	0.0000	c55,c56	0.077	REPORT:FAIL-LOWPOWER
+20	i	17	8	2.11	4	8	0.0004	0.0000	c54,c55,c56,c63	0.140	REPORT:PASS
+21	t	19	5	1.65	4	7	0.0156	0.0000	c54,c55,c56,c63	0.170	FAIL-LOWPOWER
+29	r	16	5	1.56	4	8	0.0116	0.0000	c54,c55	0.122	FAIL-LOWPOWER
+30	s	43	16	7.55	12	17	0.0008	0.0000	c54,c55,c56,c63	0.512	PASS
+31	t	14	3	0.91	3	6	0.0585	0.0000	c55	0.097	FAIL-LOWPOWER
+32	u	23	8	5.43	9	14	0.1438	0.0000	c54,c55,c56	0.193	FAIL-LOWPOWER
+39	e	4	1	1.89	3	4	0.9290	0.0457	c63	0.017	UNDERPOWERED
+46	ce	9	1	0.32	1	3	0.2788	0.0000	c56	0.048	FAIL-LOWPOWER
+54	e	7	2	2.93	5	7	0.8699	0.0030	c55,c56	0.050	FAIL-LOWPOWER
+67	leur	1	0	0.01	0	1	1.0000	0.0123	-	0.000	REPORT:UNDERPOWERED
+75	la	12	2	0.49	2	4	0.0788	0.0000	c54,c55	0.073	FAIL-LOWPOWER
+76	e	12	7	5.13	8	12	0.2066	0.0001	c55,c56,c63	0.073	FAIL-LOWPOWER
+77	l	2	0	0.19	1	2	1.0000	0.0096	-	0.000	UNDERPOWERED
+81	me	8	3	0.29	1	4	0.0019	0.0000	c55,c56	0.042	REPORT:PASS
+83	mo	2	0	0.00	0	0	1.0000	0.0000	-	0.000	FAIL-LOWPOWER
+85	na	4	3	0.11	1	2	0.0000	0.0000	c56,c63	0.013	PASS
+86	e	3	0	1.24	3	3	1.0000	0.0719	-	0.006	UNDERPOWERED
+96	que	8	1	0.29	1	3	0.2592	0.0000	c55	0.048	REPORT:FAIL-LOWPOWER
+summary: {'FAIL-LOWPOWER': 10, 'REPORT:FAIL-LOWPOWER': 2, 'REPORT:PASS': 2, 'PASS': 2, 'UNDERPOWERED': 3, 'REPORT:UNDERPOWERED': 1}
+PASS codes written to siblings/key_f23_word_col3.tsv: ['30', '85']
+leads (not gated): k = 1 word spans of open codes (not key_f23 C)
+  11	sy(c62); p(c63)
+  15	la(c54)
+  16	des(c55); a(c62); se(c62)
+  17	sy(c54); sa(c54)
+  20	de(c54); et(c54)
+  21	et(c55); que(c56); cy(c56)
+  26	un(c55)
+  29	sy(c55); a(c55); par(c55); a(c56)
+  30	ces(c54); cy(c55); la(c55); ces(c55); cy(c55); le(c56); dessus(c56); a(c56); pas(c62); point(c62)
+  31	cette(c62)
+  32	a(c54); ie(c55); eux(c56)
+  39	a(c55)
+  41	et(c55); des(c55)
+  44	auec(c62)
+  46	que(c54); et(c54); celte(c56)
+  47	de(c55)
+  54	donc(c56); du(c56); est(c62)
+  66	les(c55)
+  68	que(c62)
+  70	de(c63)
+  71	m(c62)
+  72	sa(c63); mere(c63)
+  75	la(c55); qui(c62); la(c62)
+  76	que(c63); le(c63)
+  77	nous(c62)
+  81	sur(c56)
+  83	qui(c54)
+  84	mad(c55); sans(c62)
+  85	sont(c62)
+  87	ny(c62)
+  90	le(c55); pas(c56)
+  93	la(c62)
+  96	nous(c55)

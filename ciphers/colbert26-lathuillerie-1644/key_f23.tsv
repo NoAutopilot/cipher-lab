@@ -18,7 +18,7 @@ code	value	grade	source	note
 26	aines	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=lareyne:1
 28	la	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=8 agree=8 others=
 29	a	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=26 agree=4 others=se:4,le:3,u:3,deur:2,p:2,r:2,l:1,ler:1,li:1,ner:1,our:1,upp:1
-30	s	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=15 agree=4 others=a:3,e:2,es:1,l:1,o:1,ques:1,r:1,sseco:1
+30	s	C	DA1-COL3 held-out word-level pairing c54/c55/c56/c63 (siblings/word_col3.py, PREREG-DA1-COL3.md, PASS vs pairing-shuffle control, 7 Oct 2026)	was s M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=15 agree=4 others=a:3,e:2,es:1,l:1,o:1,ques:1,r:1,sseco:1); DA1-COL2 pass PASS, DA1-COL pass FAIL; held-out 16/43 P 0.0008
 31	mdebrienne	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=13 agree=3 others=l:2,rt:2,t:2,astimens:1,rit:1,roit:1,u:1
 32	o	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=14 agree=3 others=a:2,e:2,t:2,u:2,eu:1,n:1,uste:1
 33	ux	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=
@@ -61,7 +61,7 @@ code	value	grade	source	note
 80	fault	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
 81	me	C	DA1-COL word-level pairing c50/c3940/c47 (siblings/word_da1.py, pre-registered, PASS vs pairing-shuffle control, 7 Oct 2026)	was il M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)
 82	monnepueu	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=5 agree=3 others=epueu:1,nepueu:1
-85	luy	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
+85	na	C	DA1-COL3 held-out word-level pairing c54/c55/c56/c63 (siblings/word_col3.py, PREREG-DA1-COL3.md, PASS vs pairing-shuffle control, 7 Oct 2026)	was luy M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=); held-out 3/4 P 0.0000 (Naples x2, maintenant)
 87	amais	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
 89	m	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=3 others=
 91	d	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=

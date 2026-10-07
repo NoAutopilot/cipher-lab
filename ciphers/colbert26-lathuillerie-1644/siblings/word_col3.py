@@ -96,7 +96,7 @@ passed = [c for c, v in res.items() if v == 'PASS']
 with open(f'{H}/key_f23_word_col3.tsv', 'w') as f:
     f.write('code\tvalue\tgrade\tsource\tnote\n')
     for c in sorted(passed, key=int):
-        f.write(f'{c}\t{HYP[c]}\tC\tDA1-COL word-level pairing c50/c3940/c47, siblings/word_da1.py\tPASS vs pairing-shuffle control\n')
+        f.write(f'{c}\t{HYP[c]}\tC\tDA1-COL3 held-out word-level pairing c54/c55/c56/c62/c63, siblings/word_col3.py\tPASS vs pairing-shuffle control\n')
 print('PASS codes written to siblings/key_f23_word_col3.tsv:', passed or 'none')
 print('leads (not gated): k = 1 word spans of open codes (not key_f23 C)')
 lead = collections.defaultdict(list)

@@ -1,0 +1,271 @@
+line	word	first	last	conf	note	groups
+54a01	au	0	0	M	au sits over leftmost group	10
+54a01	desespoir	1	5	M		32 51 16 30 93
+54a02	Traicté	3	6	M	left edge near group 3	10 20 12 21
+54a02	sy	7	7	M		17
+54a02	esloigné	8	10	M		15 30 78
+54a02	de	11	11	M		20
+54a02	sa	12	12	M		17
+54a02	conclusion	13	16	M		86 51 15 48
+54a04	auons	3	4	M		30 41
+54a04	besoin	5	6	M		18 20
+54a04	de la	7	8	M		23 51
+54a04	Paix	9	10	M		75 90
+54a04	et	11	11	M		20
+54a05	a	0	0	M		10
+54a05	la faure	1	2	H		75 57
+54a06	aux	0	1	M		10 32
+54a06	esmotions	2	4	M		33 15 30
+54a06	qui	5	5	M		83
+54a06	arriuent	6	7	M		81 30
+54a07	a	0	0	M		97
+54a07	Paris	1	2	M		10 29
+54a07	pour	3	4	M		12 26
+54a07	appaiser	7	10	M		10 78 20 30
+54a08	que	1	1	M		46
+54a08	ces	2	2	M		30
+54a08	desordres	3	5	M		51 18 29
+54a09	cessent	0	2	M		13 11 30
+54a09	et	3	3	M		46
+54a09	que	4	5	M		30 16
+54a09	Lauthorité	9	11	M		96 75 32
+54a09	demeure	12	15	M		23 12 21 51
+54a10	entiere	0	2	M		15 23 22
+54a10	la	3	3	M		15
+54a10	ou	4	5	M		11 75
+54a10	et	6	6	M		24
+54a10	a	7	7	M		32
+54a10	que	8	9	M		39 10
+54a10	elle	10	10	M		97
+55a01	conserver	3	5	M		29 26 29
+55a01	Lunion	6	8	M	edge group 8	79 87 24
+55a01	qui a toujours	9	14	M	words not split	23 97 10 23 32 30
+55a02	esté entre cet	0	5	M		54 15 15 23 31 11
+55a02	Estat et la france	7	13	M		31 54 10 31 39 75 59
+55a03	a	0	0	M		10
+55a03	des	2	3	M		30 61
+55a03	gens	4	5	M		23 30
+55a03	Infidelles	6	9	M		20 23 57 51
+55a03	et	10	10	M		21
+55a04	nettement	1	4	M		31 21 70 24
+55a04	observé	5	7	M		11 16 29
+55a04	vn	8	8	M		26
+55a04	seul	9	10	M		32 23
+55a04	des	11	11	M		16
+55a05	Traictez	0	2	M		31 10 20
+55a05	que	3	4	M		12 21
+55a05	nous	5	6	M		36 96
+55a05	auons	7	9	M		75 10 28
+55a05	faict	10	11	M		23 30
+55a05	auec	12	13	M		58 36
+55a05	eux	14	15	M		44 15
+55a05	leur	16	17	M		32 33
+55a05	alliance	18	21	M		67 10 21 77
+55a07	Les	0	1	M		76 30
+55a07	Espagnolz	2	4	M		56 51 23
+55a07	dentreprendre	5	9	M		31 11 25 11 23
+55a07	Jl	12	13	M	after clear text	20 21
+55a08	entreprendroient	0	5	M		31 11 25 11 23 13
+55a08	sy	6	6	L		29
+55a08	nous	7	8	M		76 17
+55a08	nous	9	10	M		75 37
+55a08	estions	11	13	M		15 30 87
+55a08	separer	14	16	M		30 16 78
+55a09	la	0	0	M		75
+55a09	mercy	1	2	M		81 29
+55a09	de	3	3	M		47
+55a09	ces	4	5	M		51 46
+55a09	Gens	7	8	M		61 23
+55a09	cy	9	9	M		30
+55a10	peussions	0	2	M		94 20 30
+55a10	viure	3	5	M		17 24 23
+55a11	au	0	0	M		10
+55a11	Greffier	1	3	M		32 17 11
+55a11	Musck,	4	6	M		16 57 15
+55a11	a	7	7	M		29
+55a11	Mad.	8	8	M		84
+55a11	La	9	9	M		30
+55a11	L.	10	10	M		12
+55a11	Bo.	11	12	L		18 10
+55a11	et	13	13	L		41
+55a11	a	14	14	L		39
+55a11	quelques	15	17	L		10 96 21
+55a11	autres	18	19	L		96 30
+55a12	quand	0	1	M		45 30
+55a12	quils	3	4	M		97 21
+55a12	signassent	5	8	M		36 17 17 85
+55a13	Separement	0	3	H		16 78 15 70
+55a13	pourtant	4	7	M		79 20 23 31
+55a13	des	8	8	L		41
+55a13	vner	9	10	M		30 32
+55b01	de	0	0	M		51
+55b01	veoir	1	1	M		89
+55b01	confirmer	4	6	M		57 29 81
+55b01	par	7	7	M		29
+55b01	ma	8	8	M		78
+55b01	bouche	9	12	M		80 43 32 12
+55b01	les	13	13	L		66
+55b01	discours	14	17	M		76 30 52 30
+55b02	que	0	0	M		48
+55b02	je	1	1	M		32
+55b02	tiennent	2	4	M		29 30 97
+55b02	dedans	7	10	M		15 23 86 23
+55b02	lassemblee	11	14	M		31 51 51 10
+55b02	de	15	16	L	between two groups	34 75
+55b02	hollande	17	19	M		30 16 22
+55b03	que	0	0	M		51
+55b03	nous	1	3	L		68 75 23
+55b03	ne	4	4	L		51
+55b03	nous	5	5	L		96
+55b03	seaunons	8	10	M		75 30 45
+55b03	passer	11	13	M		32 12 24
+55b04	d'eulx	0	2	M		51 32 33
+55b05	quand	0	1	M		81 46
+55b05	ces	2	2	M		30
+55b05	gens	3	4	M		61 23
+55b05	cy	5	5	M		30
+55b05	auroient	6	8	M		17 10 32
+55b05	passe	9	10	M		29 76
+55b06	le	0	0	L		90
+55b06	pas	1	2	L		30 16
+55b07	au	0	0	M		10
+55b07	ressentiment	1	6	M		32 11 30 16 23 22
+56a01	donc	0	0	M		54
+56a01	infidelité	1	5	M		86 20 23 57 51
+56a01	telle	7	8	M		77 21
+56a01	que	9	9	M		21
+56a01	nous	10	11	M		21 76
+56a01	sommes	12	15	L		96 75 18 22
+56a01	sur	16	16	L		81
+56a01	le	17	17	M		30
+56a01	point	18	19	M		19 29
+56a02	de	0	0	M		23
+56a02	recevoir	1	2	M		12 31
+56a03	augmenteroit	0	5	M		10 32 17 81 23 21
+56a03	lorgueil	6	8	M		13 20 31
+56a03	de	9	9	M		78
+56a03	ces	10	11	M		29 64
+56a03	gens	12	13	M		15 20
+56a03	cy	14	14	M		21
+56a04	les	0	1	M		76 30
+56a04	pousser	3	5	M		32 30 16
+56a04	a	6	6	M		29
+56a04	bout	7	8	M		10 43
+56a05	pour	0	1	M		79 15
+56a05	eulx	2	3	M		32 33
+56a05	du	4	4	M		54
+56a05	Royaume	5	9	M		13 35 10 32 81
+56a05	de	10	10	L		51
+56a05	Naples	11	13	M		85 25 76
+56a06	grand	0	1	H		60 58
+56a06	fondement	3	6	M		51 70 10 57
+56a06	a	7	7	M		51
+56a06	faire	8	9	M		30 19
+56a06	dessus	10	10	L		30
+56a07	des	0	1	M		51 30
+56a07	Royaumes	2	5	M		13 35 10 32
+56a07	nest	8	9	M		23 54
+56a07	pas	10	10	M		90
+56a07	a	11	11	M		30
+56a07	mon	12	13	M		10 83
+56a07	aduis	14	16	M		23 10 13
+56a08	Naples	0	2	M		85 25 76
+56a08	ou	3	4	L		30 24
+56a09	le	0	1	M		76 91
+56a09	peuple	2	4	M		32 25 76
+56a10	lobeissance	1	3	M		41 20 30
+56a10	des	4	5	L		15 23
+56a10	Espagnols	6	8	M		46 51 30
+56a11	eux	1	1	L		32
+56a11	que	2	3	L		33 96
+56a11	celte	4	4	L		46
+56a11	reuoltr	5	7	M		31 21 11
+62a01	en	0	1	M		15 29
+62a01	sont	2	2	M		85
+62a01	bons	3	4	M		41 30
+62a02	marchands	0	3	M		12 65 23 13
+62a02	Le	5	6	M		76 21
+62a02	temps	7	7	M		22
+62a02	nous	8	9	M		25 30
+62a02	l'apprendra	10	13	M		75 75 25 11
+62a03	est	0	0	M		54
+62a03	que	1	2	M		96 46
+62a03	cette	3	3	M		31
+62a03	Paix	4	5	M		21 90
+62a03	particuliere	6	10	M		20 33 78 22 49
+62a03	nous	11	11	M		77
+62a03	portera	12	14	M		15 11 75
+62a03	prejudice	17	20	M	right edge uncertain	21 10 25 11
+62a05	Semble	1	2	M		22 11
+62a05	que	3	4	M		76 96
+62a05	genereusement	5	10	M		61 86 11 32 16 70
+62a05	lon	11	11	M		78
+62a05	sy	12	12	L		23
+62a05	prepare	13	15	M		17 25 11
+62a06	ala	0	1	H		10 75
+62a06	cour	2	2	M		48
+62a07	la	0	1	L		75 90
+62a07	pas	2	2	L		30
+62a07	pousser	3	5	M		93 32 30
+62a07	a	6	6	L		16
+62a07	bout	7	8	M		29 10
+62a08	sans	0	0	M		84
+62a08	se	1	1	L		16
+62a08	reculer	2	5	M		11 49 76 29
+62a09	ny	0	0	M		87
+62a09	auancer	1	3	M		10 13 25
+62a09	pour	4	5	M		23 46
+62a09	demander	7	10	M		79 51 80 23
+62a09	les	11	12	M		51 29
+62a09	choses	13	14	M		76 12
+62a09	que	15	15	L		68
+62a09	nous	16	17	M		16 30
+62a09	desirerons	18	21	M		96 75 51 17
+62a10	auec	4	4	M		44
+62a10	vsure	5	6	M		32 19
+62a10	sy	7	7	L		11
+62a10	nous	8	9	M		17 75
+62a11	nauons	0	3	M		85 27 24 23
+62a11	point	4	4	M		30
+62a11	la	5	5	M		93
+62a11	holande	7	9	M		31 75 68
+62a11	qui	10	10	M		75
+62a11	soppose	11	13	M		23 51 97
+62a11	directement	14	18	M		18 93 16 52 11
+62a12	atout	0	1	M		70 10
+62a12	la	5	5	M		75
+62a12	Gueldre	6	9	L	boundary at group 6 uncertain	64 15 21 13
+62a13	M.	0	0	M		71
+62a13	de	1	2	L		51 61
+62a13	Guene	3	4	M		23 31
+63a01	gratiffee	0	3	M	57 at far right edge of word	17 10 22 57
+63a01	plus	5	6	M		90 57
+63a01	fidelle	7	8	M		51 21
+63a01	que	9	9	M		76
+63a01	celuy	10	12	M		96 46 66
+63a02	M.	0	0	H		40
+63a02	Le	1	1	H		25
+63a02	P.	2	2	M		11
+63a03	prendra	0	2	M	group 2 at word end	23 13 10
+63a03	le	3	3	H		76
+63a03	procede	4	5	M		25 13
+63a03	de	6	7	M		46 51
+63a03	Kruye	8	9	M		51 20
+63a04	des	0	0	M		51
+63a04	Sentimens	1	4	M		30 16 23 22
+63a04	de	5	5	M		70
+63a04	Madame	6	7	M		36(4) 51
+63a04	sa	8	8	M		72
+63a04	mere	9	10	M		15 81
+63a05	maintenant	0	4	M		80 20 21 85 23
+63a05	dissimuler	5	8	M		31 52 30 17
+63a07	ala	0	1	M		54 20
+63a07	conduitte	2	3	M		21 54
+63a07	dud[it]	4	5	M		52 31
+63a07	Prince	6	8	M		17 15 32
+63a07	et	10	10	M		25
+63a07	al'Interieur	11	14	M		12 23 46 39
+63a07	de	15	15	M		10
+63a07	Madame	16	19	M		71 23 21 12
+63a08	sa	0	1	L	boundary uncertain	29 51
+63a08	mere	2	2	L	boundary uncertain	72

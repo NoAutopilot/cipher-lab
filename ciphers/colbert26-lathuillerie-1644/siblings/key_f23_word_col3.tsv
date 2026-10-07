@@ -1,0 +1,3 @@
+code	value	grade	source	note
+30	s	C	DA1-COL3 held-out word-level pairing c54/c55/c56/c62/c63, siblings/word_col3.py	PASS vs pairing-shuffle control
+85	na	C	DA1-COL3 held-out word-level pairing c54/c55/c56/c62/c63, siblings/word_col3.py	PASS vs pairing-shuffle control
