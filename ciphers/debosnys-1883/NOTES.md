@@ -1398,3 +1398,15 @@ sizes a bitmap classifier trained on a few dozen boxes does no better than two r
 H61/H63 this makes "the public pixels are the limit" the settled position for these six groups: the fix is better
 images (DEB-HIRES-REQ, the museum's 600 dpi request), not another reading or classifying pass on the same pixels.
 Nothing read; status `open`.
+
+## Museum reply, 7 Oct 2026 19:51 UTC (logged by the account-3 orchestrator)
+To our 6 Oct letter. Facts given: no finding aid yet (they will work on one). The museum holds the 26 original foolscap
+sheets (all already sent to us on 28 Sept -- our 6 Oct letter asked for material we already had; owner's lesson, now
+outreach/README.md rule 1d), an execution ticket, skull, noose, an autograph book (not scanned), a couple of original
+newspapers, and a PHOTOCOPY of a journal/booklet in Debosnys's hand (includes "French War 1870"), not owned by the museum,
+not scanned, "does not contain ciphers". Numbered pages end at 10; 6 and 8 missing (perhaps blank backs); no No. 11. The
+1933 Ticonderoga Sentinel note: not held, nothing known. Donor: given in the 1950s, records lax, donor info not shareable.
+No trunks in the collection, no information on them. Possible value: the journal photocopy and the autograph book are clear
+writing in his hand (handwriting reference, vocabulary/crib source); neither is the museum's to scan freely (journal not
+owned). No further ask until DEB-RUN has documented its attempts (owner: next message later in the week, from a written
+record of everything tried, so the museum sees the work, not more requests).

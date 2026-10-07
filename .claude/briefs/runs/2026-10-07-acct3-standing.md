@@ -36,6 +36,11 @@ evidence; (3) the BnF cipher items still unread that the tie-breaker rule favour
 as a standing queue, highest value first. Outward contact is the orchestrator's only (gates 1-8); the lane drafts nothing.
 
 ## DEB-RUN (account 4), standing: ciphers/debosnys-1883
+Owner, 7 Oct: by 10 Oct 18:00 UTC write ciphers/debosnys-1883/ATTEMPTS.md -- a plain-English record of every approach
+tried on the four cryptograms (from CAMPAIGN.md, HYPOTHESES.md, h10-h17, ITERATE.md): what each assumed, the control,
+the result, what it ruled out. Shareable wording only (no restricted-scan content, RESTRICTED.md). It is the basis of the
+owner's next note to the museum, which reports work done and asks nothing it already answered (see NOTES.md, museum reply
+of 7 Oct). The orchestrator drafts that note; the lane does not.
 Keep going while the museum's 600 dpi image request (DEB-HIRES-REQ) is pending: start from CAMPAIGN.md, HYPOTHESES.md and
 the h10-h17 results; respect RESTRICTED.md (museum scans never leave the private repo). Next attempts favour instruments
 not yet run on the settled sign inventory; the sorter route (owner) and the hi-res images are new material when they come.

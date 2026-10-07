@@ -11,6 +11,13 @@
 1c. **One message per recipient at a time (owner, 5 Oct 2026).** Before drafting to an address, list every draft and
    every message sent to it in the last 7 days. Fold new asks into a pending draft, or hold them until the recipient has
    answered (or about a week has passed); never queue two separate sends to one institution within a day.
+1d. **Never ask for what we already hold (owner, 7 Oct 2026, after the 6 Oct Debosnys museum letter asked for the
+   foolscap sheets and "other writings" the museum had already sent us on 28 Sept).** Before drafting any request to an
+   institution, the drafter writes a `holdings:` header line listing everything that institution has already sent or that
+   we hold from it (private repo inventory, mailbox attachments, earlier replies), and the gate-7 checker confirms every
+   ask in the draft against that list. A restricted holding is still checked -- it is listed by filename in the private
+   repo and never quoted in the draft; "we may not describe it" never means "we need not check it". A draft with no
+   `holdings:` line, or with an ask that the list already covers, fails gate 7.
 1d. **Daily send batch (owner, 5 Oct 2026).** Checked drafts accumulate in the project mailbox's Drafts during the day; none
    is announced one by one. The orchestrator keeps ONE board card, "Send batch" (doc id send-batch), listing every draft that
    is checked and OK to send, grouped by recipient (rule 1c applied: one message per recipient), each with one line on what it
