@@ -1443,3 +1443,24 @@ Target argmax: `parasupprir o seu lugar junto comman o djustahesegredo ate para 
 - Limits: a unigram word model cannot judge joins that make no dictionary word, nor OOV fragments; a selector that scores characters
   (a pt18 letter n-gram) would be a different instrument for the six unresolved directions and the joins. Requests: archive.org image
   host 1 (leaf 11). No subagent.
+
+## Front-trim and adjacent-join enumeration, letter n-gram scorer (DA1-LIN, 7 Oct 2026) -- PRE-REGISTRATION (pushed before any scored run)
+
+Same question, inputs, enumeration, decision rule and outcomes as D22-LINTRIM above (the 12 worked-example groups, the 26 m0002
+groups, {end, front} per trimmed token, words of 1-4 consecutive tokens, exact DP maximum, margin = best with choice minus best with
+the opposite forced, **resolved iff margin >= ln(10)**, nothing in ciphertext.tsv / key.tsv / reading.txt changes, a resolved front-trim
+is an S candidate at most beside the committed token, a resolved join an I connected-gloss candidate, never merged). Only the scorer
+changes. The two column counts (cagar 83/2, justa 241/3) are not touched.
+
+Scorer S2, fixed now (`scripts/trim_join_char.py`, which imports the enumerator from `scripts/trim_join_enum.py` unchanged): a
+character 5-gram, interpolated Witten-Bell, alphabet a-z plus a word-boundary mark `#`, trained on `tools/data/pt18` (all four files,
+lower case, accents folded, [a-z]+ words) **minus the last 10% of words of each file**, which are held out. A word w scores
+log P(`#w#`) with the first character conditioned on `#` alone (words scored independently, so the DP is unchanged).
+
+Gate 1, known-answer control (run first; can fail): worked-example argmax exactly `a guerra de franca com a russia parece inevitavel`.
+Gate 2, gluing check (run second; can fail; asked by the brief): 100 windows of 26 consecutive held-out words (seeded, seed 20261007),
+every token fixed (no trim), run through the same DP: **false-join rate = joined boundaries / all boundaries must be <= 5%**. If either
+gate fails: log "non-test: letter-n-gram scorer fails gate N", score nothing on the target, stop.
+Also reported, not gating: per-decision margins on the worked example; the scrambled-order null (20 seeded permutations of the 26 target
+tokens, seed 20261006 as D22) for trim and join resolutions; and the same table of the target's 8 trim directions and 25 boundaries as
+D22, side by side with D22's unigram call.
