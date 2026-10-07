@@ -4156,3 +4156,44 @@ cursive runs (e.g. the circled page-1 line of linked waves and 3-loops), while a
 readings of that, both open: (a) a real system written fast and joined looks very different from its engraved chart -- compare
 against each system's engraved *specimen passages* (connected writing), not only the alphabet table; (b) a personal or invented
 cipher alphabet written cursively, not a published shorthand. SHORTHAND-PAGE should add one connected-writing specimen per system.
+
+## TOMO-ARM wave 1: Monroe Catalogue Online (7 Oct 2026, 21:50-21:58 UTC, standing lane TOMO-ARM, owner account)
+
+Answers ASKS 97 / ASKS 142 / LOCAL-QUEUE L54 from the cloud. The UMW Papers of James Monroe catalogue (FileMaker
+WebDirect, fms14.longtermsolutions.com, linked from https://academics.umw.edu/jamesmonroepapers/search-the-letters/catalogue/)
+was opened in headless Chromium with the public guest sign-in printed on that page (one sign-in, no retry). Three finds,
+records exported to `keyhunt/monroe-catalogue-2026-10-07/` (docid, date, sender, recipient/place, repository as
+catalogued, image flag, summary): sender "Armstrong, John" (33), recipient "Armstrong, John" (33), repository field
+containing "code" (274 found; 209 unique captured -- paging in date order, the 65 missed clicks show as duplicates, all
+from 1811 on, so 1800-1810 is complete). Positive check: Armstrong to Monroe 24 Dec 1804, LOC Monroe Papers ALS (frame
+0638 on reel 3, NOTES.md ARM-KEYHUNT-2) is listed.
+
+What the catalogue says (its wording, grade H for location; nothing here is a reading):
+- Armstrong to Monroe, Paris, **22 Jan 1805** (docid 83485): "New York Public Library: Monroe Papers (ALS, partially in
+  code and deciphered)" (plus letterbook and RG 59 copies).
+- Armstrong to Monroe, Paris, **5 Apr 1805** (83535): "New York Public Library: Monroe Papers (LS, partially in code and
+  deciphered); ... Letterbook (copy); National Archives: RG 59: Dispatches from Spain (copy)". Image flag: Digital image.
+- Armstrong to Monroe, Paris, **4 May 1805** (83558): "New York Public Library: Monroe Papers (LS, partially in code and
+  deciphered); National Archives: RG 59: Dispatches from Spain (copy)". Image flag: Digital image. Not on file before.
+- Armstrong to Monroe 12 and 18 Mar, 1 Apr 1805 (83509, 83518, 83529): NYPL Monroe Papers LS/ALS, no code noted.
+- Monroe to Armstrong, London, **14 Nov 1805** (119151): "New York Public Library: Monroe Papers (copy - partially in
+  code)"; LOC Monroe letterbook copy. (Writings of Monroe 4:368 prints it in clear.)
+- Bowdoin to Monroe, Paris, 25 Nov 1805, 17 Dec 1805, 6 and 26 Jan 1806, 30 May 1806, 10 Aug 1806: NYPL Monroe Papers,
+  each "partially in code and deciphered"; Monroe to Bowdoin 13 Nov 1805 (NYPL copy, partially in code), Oct 1806 (AN,
+  code interlined), 29 Nov 1806 (LOC Series 4 ALS, partially in code, deciphered interlined). Relevant because Armstrong
+  wrote to Bowdoin on 22 July 1806: "Having no cypher in which I can write to Messrs Monroe & Pinckney, and recollecting
+  that you have ..." (NOTES.md ARM-KEYHUNT).
+- Armstrong to Monroe, Paris, **7 July 1807** (84357, LOC Monroe Papers ALS; ASP FR 3:242): summary "unable to read JM's
+  recent letter because the cipher is incorrect" -- so the two men still exchanged cipher in mid-1807 (inference, I).
+- Erving to Monroe 2 Mar, 12 Mar, 20 Sept, 10 Oct 1805 (NYPL, partially in code and deciphered) and 5 Feb, 23 May 1806
+  (LOC) -- the Erving channel (the 5 Feb 1806 letter's glosses match WE028, H25/H29).
+
+Why it matters: Madison could not read the 1805 passages because they were in "the cypher established between him
+[Monroe] and me", and in 1808 he called the 20 Feb letter's cipher "one concerted with another correspondent". The
+catalogue now places three Armstrong-to-Monroe originals partly in code, each with the recipient's decipherment, at the
+NYPL. That the 1808 letter shares their code is not shown (I); it is the one test the retired nomenclator instrument
+names as new material. Next (ITERATE.md W2): images of the three RCs, then the `keyhunt/screen_*` battery against the
+target. Routes: the NYPL email of 5 Oct (awaiting reply; add these items and catalogue IDs to any reply) and the UMW
+editors (their catalogue flags 5 Apr and 4 May 1805 "Digital image"). Both are the orchestrator's outward contacts.
+Requests: fms14.longtermsolutions.com one session (~300 UI round-trips over 8 minutes, one record at a time, 1.8-2.2 s
+apart), academics.umw.edu 1 page. No vision calls, no subagents.
