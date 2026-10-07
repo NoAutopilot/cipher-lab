@@ -1378,3 +1378,65 @@ then 200 with the descriptive UA), talk.zooniverse.org 4, www.zooniverse.org 2.
 No over-claim found in reading-no2.md, NOTES.md or status.json. The first audit's N4 blocker ("Meigs letter books unread") rested
 on a series that has no June 1864 volume in its digitised form; the real remaining unread copies are NARA's, which rule 10's N4
 does not require.
+## AUDIT 2 (second adversarial, D12-V2R)
+
+Verifier D12-V2R (account 2, for LANE DEFAULT-account-2-20261007-1210), 7 Oct 2026, 12:18-12:30 UTC by `date -u`. A separate
+session from the ECK64-NO2 solver and from the ECK64-NO2 verifier (first audit, "AUDIT (propagation, ECK64-NO2 verifier)" above).
+Scope: **N2-R only** (mssEC 19 p.56, pointer 8948, Augur to Meade, 26 Apr 1864, 11.30 AM; CLAUDE.md Outreach gate 2). Nothing decoded.
+
+### 1. Re-derivation and image (rule 7)
+- `python3 decode_no2.py --check`: "reading-no2.md is current", exit 0.
+- Code words looked up in key-no2.md by hand: Florence = 11.30 AM (TIME page), Oliver = 20 and Clarke = 6 (fly leaf; = 26th),
+  Mohawk = Meade G G, Harlot = Warrenton, tulip = Period, Trinity = Point, Salem = Force, Lantern = Augur C C: 9 H, as committed.
+- Image: IIIF `hdl.huntington.org/digital/iiif/p16003coll11/8948/full/2400,/0/default.jpg` (scratch, regenerable), crop step
+  `python3 tools/iiif_lines.py --image $S/img/p8948.jpg --out $S/crops --prefix p8948 --region 120,1590,2120,700 --lines-per-crop 2
+  --max-width 2400` (6 lines found, 3 crops). Every word of ciphertext-no2.txt N2-R agrees with the strip crops; the header day is
+  overwritten ("2[6?]" as transcribed) and the date words fix 26. The pencilled interlinear guesses (doing, did, get, man, change,
+  may, partake, 90) are a later hand, as reading-no2.md says. No correction.
+
+### 2. Gaps in the first audit's log for N2-R, and what was searched here
+First audit covered: OR I/33 phrases and Augur/Meade items 25-27 Apr; I/37 pt 1 and the others of its table; Google Books (4 R
+queries); PUSG vol. 10 fts "Point of Rocks"; the Huntington item record. Not covered for N2-R: date window +/-3 days by
+correspondent; OR I/51 pt 1 (Union supplementary correspondence); Meade's own printed papers; the Huntington full text across the
+whole collection; all-of-IA full text; Zooniverse Talk for this page; the open indexes; JSTOR rows.
+
+| family | searched (7 Oct 2026) | result |
+|---|---|---|
+| OR I/33 (warofrebellion33unit djvu, hyphen/space-normalised) | every item dated 23-29 Apr 1864 naming Augur with Meade/Humphreys; phrases "co-operation from Warrenton", "send the party", "without some co", "postpone", "Point of Rocks" | N2-R not printed. Context only: Sheridan (HQ Army of the Potomac) to Augur, 26 Apr, rec. 9.10 p.m., on the Eighth Illinois Cavalry; Tyler (Fairfax C.H.) to Taylor and to Augur, 26 Apr: "The party from Washington should start from here. I learn that the cavalry which were at Warrenton have gone to Culpeper", Lowell to command the cavalry; Tyler to Augur 27 Apr, "The cavalry will start at daylight". These show the "party" was a Department of Washington expedition of 27-28 Apr, which supports the reading's sense; they do not print N2-R |
+| OR I/51 pt 1 (warofrebellion511unit) | same phrases; items 23-29 Apr 1864 naming Augur or Meade | none |
+| IA full text, all items (be-api fts, no identifier) | "co-operation from Warrenton", "cooperation from Warrenton", "some co-operation from Warrenton", "cannot send the party as I wish", "some also from Point of Rocks", "give the force now"; positive control "very anxious to get the Eighth Illinois Cavalry" | 0, 0, 0, 0, 0, and 1 unrelated (The Telegrapher 1864, "will give the force now in each" office); control 5 hits (OR I/33 copies), so the route works |
+| Meade, Life and Letters vol. 2 (1913, IA lifelettersofgeo02mead djvu) | "Augur", "Point of Rocks", "Warrenton", letters of 24-26 Apr 1864 | not printed; letters to his wife of 24 and 26 Apr are about visitors; 1 May: "Augur happened to be in my tent" (context) |
+| PUSG vols. 10-11 | first audit's fts (vol. 10 "Point of Rocks" 0); Augur-to-Meade is outside PUSG's scope except in notes | not re-run |
+| Huntington CONTENTdm, whole mssEC collection (p16003coll11), CISOSEARCHALL with full-text flag | "Point of Rocks" (53), "co operation from Warrenton" (0), "cannot send the party" (10 incl. 8948), "post pone" (4 incl. 8948), "Augur Meade" (4); item info read for 64 hits and grepped for Warrenton/Harlot + Rocks/Trinity/Mohawk/Lantern/the phrases | only 8948 itself carries the telegram; no second ledger copy, no decoded field (2772 = June 1863, 8104 = Sept 1862, unrelated) |
+| Zooniverse Talk (project 2125), subject 2880214 = mssEC_19_056 (tel094-096) | comments and discussions on the subject; project search "Point of Rocks", "Harlot", "Lantern", "Augur", "mssEC_19_056", "postpone" | subject: 0 comments, 0 discussions; search hits all on other subjects |
+| Google Books API (key, country=US), 9 queries | "co-operation from Warrenton"; "cooperation from Warrenton" Augur; "Point of Rocks" Augur Meade "April 26"; "I will postpone" Augur Meade 1864; Augur Meade "Point of Rocks" Warrenton expedition Lowell Mosby; Meade "Life and Letters" Augur; positive control "Eighth Illinois Cavalry" Giesborough Augur; two intitle:"Supplement to the Official Records" queries | no N2-R; control found OR I/33 (Sheridan to Augur 26 Apr); Supplement to the OR (Hewett) returns 0 even for intitle + Augur, so it is not indexed there: unreachable |
+| Open indexes: OpenAlex, Semantic Scholar, CORE, CrossRef (keys) | "Eckert cipher telegrams Huntington"; "Augur Mosby expedition April 1864 Point of Rocks"; "Union military telegraph cipher ledger decipherment" | nothing on this telegram; OpenAlex's "Gray ghostbusters" (OSU dissertation 1988, OhioLINK ETD PDF read by pdftotext, "Point of Rocks" contexts) does not print it |
+| JSTOR | two rows queued in JSTOR-QUEUE.tsv: (i) Augur AND Meade AND "Point of Rocks" AND 1864 AND telegram/cipher/dispatch; (ii) "co-operation from Warrenton" bare | pending (never blocks) |
+| Unreachable / unread | Supplement to the OR (not on IA or Google Books full text); NARA RG 393 Dept. of Washington telegrams sent, RG 107 M473/M504; Augur papers | unread |
+
+Requests: archive.org 5 (2 advancedsearch, 3 djvu texts: I/33, I/51 pt 1, Meade vol. 2), be-api.us.archive.org 7,
+hdl.huntington.org 72 (1 image, 6 searches, 65 item-info, one empty reply not retried), googleapis.com 11, api.openalex.org 4,
+api.semanticscholar.org 3, api.core.ac.uk 3, api.crossref.org 3, rave/etd.ohiolink.edu 2, talk.zooniverse.org 8,
+www.zooniverse.org 1; no 429/403/challenge.
+
+### 3. Classification
+- **N2-R: N3 kept.** No prior plaintext or decipherment located after the search above (both audits). Not raised to N4: the
+  Supplement to the Official Records, a principal edition for the war, could not be searched (not in any full-text index
+  reachable from the cloud), and the JSTOR rows are pending; everything else in the principal families (OR incl. the I/51
+  supplement, PUSG, Meade's printed letters, the Huntington catalogue in full text, the Zooniverse project pages, IA, Google
+  Books, the open indexes) is covered. Next step for N4: a Supplement-to-the-OR check (owner's machine or a library index) for
+  26 Apr 1864 Augur/Meade, ~$1.
+- Key: `period` (key-no2.md, Cipher No. 2 book, mssEC 47).
+- Depth: **D3**, 100% (9/9 H), check: period key book for every value, date words confirm the 26th, and the OR I/33 Tyler
+  telegrams of 26-27 Apr independently show the Department of Washington "party" and its cavalry movement in those days; not D4
+  (no print or sequel of the text itself). Sentence unchanged: "Augur tells Meade he cannot send the party without co-operation
+  from Warrenton and from Point of Rocks, and will postpone it if Meade cannot give the force now."
+- Safe: "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official
+  Records (I/33, I/51 pt 1), the Grant Papers, Meade's Life and Letters, the Huntington collection's full text, the Zooniverse
+  project pages, Internet Archive or Google Books full text, or the open scholarship indexes (searched 7 Oct 2026, two audits)."
+- Unsafe: "first", "unpublished", "never printed", "previously unknown".
+
+### 4. Postmortem
+No over-claim found: the first audit's wording was search-result only and its class stands. The first audit's search for N2-R
+lacked the +/-3-day correspondent window, the I/51 supplement, Meade's printed letters, the Huntington full-text search and the
+Talk page; all now done, none prints it. SO-ECKERT-N2R row (N3) needs no correction.

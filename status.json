@@ -4229,9 +4229,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, D12-V2R)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -4246,8 +4247,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Augur to Meade, 26 Apr 1864, a party needing co-operation from Warrenton and Point of Rocks (N2-R)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in OR I/33 or I/37 pt 1, Google Books, PUSG vol. 10 or the Huntington record (searched 7 Oct 2026).",
-      "gap": "letters-sent books and NARA telegram series unread, so not N4; SO-ECKERT-N2R queued",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (I/33, I/51 pt 1), the Grant Papers, Meade's Life and Letters, the Huntington collection's full text, the Zooniverse project pages, Internet Archive or Google Books full text, or the open scholarship indexes (searched 7 Oct 2026, two audits).",
+      "gap": "Supplement to the OR unsearchable from the cloud and JSTOR rows pending, so not N4; SO-ECKERT-N2R queued",
       "phrases": [
         "Huntington mssEC 19 p.56, pointer 8948"
       ],
