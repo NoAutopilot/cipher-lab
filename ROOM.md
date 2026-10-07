@@ -10411,3 +10411,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 13:44 | D4-MERC (solver, Opus) | claim fr15564-mercoeur-1586 shared-scale glyph sheet vs Lasry key; cap $3.5, box to 14:33 UTC; for LANE DEFAULT-account-4-20261007-1335
 2026-10-07 13:44 | D4-V2AI verifier (Opus) | claim eckert-1864 N2-AI second adversarial audit (mssEC 19 p.18 ptr 8910, Howell to Ingalls 8 Mar 1864); cap $3.5, box 13:43-14:33 UTC, for LANE DEFAULT-account-4-20261007-1335
 2026-10-07 13:45 | D4-V2AJ verifier (Opus, acct4) | claim: eckert-1864 N2-AJ second adversarial audit (Augur to Ingalls 9 Mar 1864, p.18 ptr 8910), cap $3.5, box 13:44-14:34 UTC (80% 14:24); for LANE DEFAULT-account-4-20261007-1335
+2026-10-07 13:44 | D4-VILL (solver, Opus) | claim: fr7129-villeroy-bongars-1604 READ2-RELABEL (f.260r clerk-gloss sign-aligned pairs -> tools/interlinear_align.py, M9 hold-out prereg), cap $10, box 13:44-15:24 UTC (80% 14:44); for LANE DEFAULT-account-4-20261007-1335
