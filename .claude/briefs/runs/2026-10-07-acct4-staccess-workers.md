@@ -127,3 +127,14 @@ blocks, a single line cannot move its top-5 mean). Steps:
     line, never full pages to a subagent). Record any frame with coded groups in keyhunt/2026-10-07-SAMP2.tsv, KEYHUNT
     line 57, and (if unglossed and WE028 or another held key) the WE028 key's target-folder NOTES line per common step 4.
  Disk: one reel at a time; delete each PDF after extraction.
+
+## Wave 3 (written 7 Oct 2026 ~22:50 UTC)
+
+## SA-G2 (Gallica screen, unit e remainder; Sonnet 5.5; cap USD 5; box 90 min)
+vision calls: 6 x USD 0.4 = 2.4 (+ fixed ~2.5 = 4.9).
+SA-G's unit (e) reached only Dupuy 452 (keyhunt/2026-10-07-SAG.tsv). Screen the rest, same rules and control
+(Dupuy 452 canvas 23 = f.20, flagged by SA-G at 600 px): KEYHUNT lines 101 (fr.2984 f.109), 113 (fr.3091 f.23), 114
+(fr.2963 no.101, fr.3092 no.14 and the others named in the row), 115 (Dupuy 265 ff.306-340), 123 (fr.2963 no.48), 124
+(Dupuy 468 ff.30-), 125 (fr.3897 ff.72-127), 140 (Gramont fr.3003 no.5, fr.3053 no.12, fr.2974), 240 (Melanges de Colbert
+113, Servien at Turin 1662-; sample the volume at sheet scale). Order: 113, 101, 115, 114, 123, 124, 125, 140, 240.
+Write keyhunt/2026-10-07-SAG2.tsv; update KEYHUNT lines; "Unread sibling found" NOTES line only for unglossed cipher.
