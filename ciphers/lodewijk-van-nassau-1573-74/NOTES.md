@@ -4069,3 +4069,31 @@ good as those rows: 6 of 12 contested H rows look wrong on the image, so H in ci
 150 dpi", not "checked against the 300-dpi image". Next: a verifier re-checks these 6 rows (and decides whether the
 H grade on 4616's other uncontested rows needs a sample check), ~$1.5.
 Requests: resources.huygens.knaw.nl 1.
+
+## JVN-LVN: jan-van-nassau key_5549 on 4610/4616 (7 Oct 2026, 11:38-11:4x UTC, account 4)
+
+Brief `.claude/briefs/runs/2026-10-07-acct3-batch-1117.md` (FRESH-0914's "jvn key_5549 on lvn 4610/4616 siblings for a
+look"). Premise finding first: `ciphers/jan-van-nassau-1572-75/key_5549.tsv` **is this folder's key.tsv** (Lodewijk's
+1574 table, as jvn NOTES already says at line 670): 139 of 139 rows cite "Lodewijk 1574 table,
+ciphers/lodewijk-van-nassau-1573-74/key.tsv", 138 match key_full.tsv value-for-value, 1 differs (128: '?' vs key_full
+NULL, M both), 0 codes are new, and key_full has 29 name/null codes key_5549 lacks. So the job could only reproduce
+the key.tsv readings already on file (reading_4610.txt, reading_4616.txt); it cannot add a value. Run anyway with the
+control, `python3 jvnlvn/run.py` (disk only, 3 s), fr16 4-gram + word cover, 20 value-shuffled copies of each key:
+
+| letter / key | letter / word / NULL / U tokens | lm real | lm shuffle mean / max | cover real | cover shuffle mean / max |
+|---|---|---|---|---|---|
+| 4610 / key_5549 | 1226 / 6 / 24 / 289 | -1.146 | -1.837 / -1.644 | 0.854 | 0.477 / 0.628 |
+| 4610 / key.tsv | identical to key_5549 row | | | | |
+| 4610 / key_full | 1226 / 18 / 145 / 156 | -1.166 | -1.762 / -1.639 | 0.845 | 0.592 / 0.654 |
+| 4616 / key_5549 | 255 / 0 / 7 / 14 | -1.119 | -1.862 / -1.557 | 0.878 | 0.462 / 0.676 |
+| 4616 / key.tsv | identical to key_5549 row | | | | |
+| 4616 / key_full | 255 / 1 / 8 / 12 | -1.140 | -1.768 / -1.492 | 0.875 | 0.589 / 0.705 |
+
+The key beats its own shuffles on both statistics in both letters (the value shuffle can move lm and cover, so the
+control could have failed; token-class counts cannot move under it and are not a test). That is a confirmation of
+the long-established key.tsv reading, not new evidence: grades per token are those of the committed key.tsv readings,
+4610 `H 0, C 1097, S 0, M 102, I 57, U 289` (1545), 4616 `H 0, C 245, S 0, M 16, I 1, U 14` (276), and key_full
+(`reading_*_full.txt`) stays the better key (U 289 -> 156, 14 -> 12). `decode_key.py . --check` exit 0; no reading,
+key or AUDIT.md changed. Nothing reads in 4610/4616 under key_5549 that does not already read under key_full.
+Suggestion (one line, not run): FRESH-0914's next_steps dry-run should treat a key whose `source` column cites the
+target's own key file as already applied, so this row does not regenerate. Requests 0, subagents 0, vision calls 0.
