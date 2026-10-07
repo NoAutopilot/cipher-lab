@@ -1,0 +1,5 @@
+held_out	n_signs	n_null	train_signs	unseen	real	shuffle_mean	shuffle_p95	above_p95
+f366	353	41	56	7	0.814	0.342	0.372	True
+f367	590	57	55	8	0.771	0.339	0.372	True
+# mean held-out accuracy 0.793; gate >= 0.60 and every unit > shuffle p95: PASS
+# shared signs with >=2 counts in both unit keys: 32; same value 30; conflicts S:q/e, m:u/q
