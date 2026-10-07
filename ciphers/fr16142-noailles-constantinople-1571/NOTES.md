@@ -1665,3 +1665,68 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
   - (done) decode on a reader transcription: basin key mapped onto the reconciled c262 signs (RUN6-NOXREAD PASS; 0.3506 vs p99 0.2413/0.2525/max 0.2665/0.2546)
   - (done) per-token alignment: masked per-label alignment PASS by the letter (S 2 vs p99 0/0) with basin anchors gap 3 (RUN6-NOXALIGN, corrected gloss) and with W:-word anchors gap 5 (D1-F16142A, PREREG-D1F16142A.md); neither knob moved S, so more tuning of the same instrument on the same 10 rows is not the next step (rule 3 repeat clause); more cipher rows under the gloss (L14-L21) is
 Verdict: keep going: 7 internal gaps; cheapest next: two blind word-level passes on c262 gloss L01-L13, ~$1.5; for c510 the next step is tools/lookalike_pass.py on the named split glyphs, then the pre-registered score of witness/c510_recon.tsv, ~$2
+
+## DA1-NOX: word-level blind gloss passes + c510 look-alike pass (7 Oct 2026, 14:48-15:0x UTC by date -u, account-1 worker)
+Brief: `.claude/briefs/runs/2026-10-07-account1-default-1440-jobs.md` DA1-NOX (LANE DEFAULT-account-1-20261007-1440; D07-NOXREAD's Verdict).
+Steps were still undone at start. Pre-registered `PREREG-DA1NOX.md` (pushed 87f3bb41 with the crops and scorer, before any pass ran).
+Requests: gallica.bnf.fr 1 (f510 native, sha1 3a81f5c8 matches run2/nxatl/source_manifest.json), cryptiana.web.fc2.com 1 (table image,
+kept out of the repository). Subagents: 3 Opus (two gloss passes, one look-alike re-read). key.tsv, gloss.tsv, c510_recon.tsv unchanged.
+
+**Part 1, c262 gloss L01-L13 by word-level crops: control FAIL, licenses nothing.** Crop step (pasted):
+```
+python3 tools/iiif_lines.py --image <copy of images/src_ark_12148_btv1b9060927q_f262_full.jpg> --region 470,2130,1000,1300 --centres 56,150,246,340,436,530,630,726,822,918,1014,1110,1206 --follow-slope 300 --slope-margin 15 --max-width 2400 --prefix c262gw --out <dir> --groups 18 --debug
+  -> 75 ink pieces (1-4 words each), images/c262gw/ (1.5 MB, manifest.json)
+```
+Two blind Opus passes (crops only), verbatim in `witness/da1nox_gloss_passA.tsv` / `_passB.tsv` (pushed 32208f92 before scoring);
+`scripts/da1nox_gloss_score.py` (d2noxb2 normaliser, apostrophe joined, registered). Control = L07, L10, L11, L12 (lines neither
+print-aware round changed):
+
+| | L07 | L10 | L11 | L12 | control pooled (gate 0.80) |
+|---|---|---|---|---|---|
+| pass A | 4/6 | 1/7 | 4/7 | 3/6 | **12/26 = 0.462 FAIL** |
+| pass B | 4/6 | 1/7 | 4/7 | 2/6 | **11/26 = 0.423 FAIL** |
+
+Reconciliation not run (deviation from the PREREG, decided before any reconciled text existed): the oracle union of the two passes'
+matched control words is 13/26 = 0.50, so no choice between them can reach 0.80; a reconciler re-reading the crops would be a third
+blind eye, not a reconciliation. Both passes read the same opaque words the whole-line eyes missed (L10 "ces gens icy ... biens" as
+"est(re) grand/gnra ... butz"), and word crops did worse than whole lines (0.667, 0.714 earlier): cutting the line removed context the
+reader needed. Target lines (not licensed): both passes give L02 "par mer et par terre", L04 "de guerre de", L08 "s'endormir de deca car
+la partie" (A 6/6), L09 "forte / Il est vray que" + "turc(z/q)" where gloss.tsv has "jay treuve"; L06 both "faire" (gloss "farce") and
+A "Joindra" / B "Jouda" (gloss "jouera"). Rule 3 third-attempt clause: a blind Opus eye on the c262 gloss crops has now missed its
+control three times (whole line twice, word level once) -- that instrument is retired for this gloss. gloss.tsv not edited;
+DEF1-NOXG's and R7A-NOX262's corrections remain print-aware single reads (grade of the gloss words unchanged, M).
+
+**Part 2, c510 L05-L14 look-alike pass; no decode statistic (PREREG-D07NOXREAD's stop rule still holds).** Crops re-cut with
+D07-NOXREAD's registered command (slope fits identical to its paste: L05 y = 738.3 + 0.00113x, L14 y = 1911.3 - 0.00486x). Tiles = the 62
+split columns of `witness/c510_recon_log.tsv` (gaps and both-unread excluded), mapped to recon positions (0 mismatches); one-named tiles
+got two distractors from the named split set. `tools/lookalike_pass.py windows` (--scale 1 --half 4, 11 montages under 2500 px), one
+Opus re-read against Tomokiyo's table, shape only; `reconcile` (2-of-3): **47 settled, 10 relabelled vs c510_recon.tsv, 15 unsettled,
+residual 15/278 = 0.054** -- agreement, not accuracy (LESSONS.md), and it does not change the two-reader rate (0.229 > 0.10) that
+PREREG-D07NOXREAD gates on, so no decode is computed or reported. Files: `witness/lookalike_da1nox/` (tiles, passC, re-read, passD,
+passD_alt, focus.tsv, README with regen commands). Settled: one-bar H = i3 on all 16 (re-reader "H, two verticals and crossbars",
+matching pass A and the D07 table ruling); W:dict over m2 at L05.10, L06.19, L08.18 ("straight crossed 4", not the curly m2); W:ent over
+N2 at L06.6, L09.14, L11.30, L13.22 ("2+o with hooked lead-in"); q2 (7), h1 (5), f2 (3), N3 (3). Unsettled (focus.tsv, 15 + 1 inventory
+row): the plain-T sign (t1 vs W:sieur; the re-reader says the table's only plain T is i1, never offered) and the "Fu" sign.
+**Inventory flag:** the re-reader reports that Tomokiyo draws W:le as "Fu" (F joined to u) and W:sieur as a barred T, while the c510
+readers gave the Fu sign W:sieur; if so, W:le/W:sieur are swapped in c510_recon.tsv (and possibly in the c262 reconciliation). One
+reader at grade L -- a question for the owner's sign sorter, not a correction. Grades: no token decoded; H 0, C 0, S 0, M 0, I 0.
+
+## Remaining gaps (DA1-NOX, 7 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); basin key N8-NOX PASS, tie to Tomokiyo 7/17 then 10/19 (thin); basin key on the reconciled c262 reader signs RUN6-NOXREAD PASS (0.3506); test0 gate passes (difflib and LCS, R9-NOX); c510-516 atlas-tile decode FAIL (D07-NOX510); c510 L05-L14 two blind reader passes, 278 signs, two-reader split 22.9% (D07-NOXREAD), look-alike pass settles 47 of 62 splits (residual 0.054, DA1-NOX); c262 gloss blind eyes 0 of 3 past control; 0 open leaves decoded
+- c262 gloss L01-L13 second read: three blind Opus eyes missed their control (0.667, 0.714 whole line; 0.462/0.423 word level, DA1-NOX), the machine eye is retired; DEF1-NOXG's and R7A-NOX262's corrections rest on print-aware reads only - blocker: not-attempted; a person's read is the remaining instrument; next: an ASKS row asking the owner (or a palaeographer) to read the 75 word crops images/c262gw/ for L07, L10-L12 first as the control, ~$0.3
+- c510 L05-L14 decode with Tomokiyo's key - blocker: not-attempted; two-reader split 0.229 > 0.10 stops scoring under PREREG-D07NOXREAD, look-alike pass done, 16 questions in witness/lookalike_da1nox/focus.tsv incl. the W:le/W:sieur Fu inventory flag; next: send focus.tsv to the owner's sign sorter (tools/sign_sorter.py --focus), then a fresh PREREG that scores c510_passD.tsv with the two-reader rate stated beside it (a PASS against four nulls under reader noise is conservative), ~$2
+- c262 cipher rows below c262rc L10 (beside gloss L14-L21) not transcribed - blocker: not-attempted; no worker has cut those rows yet (R10-NOX2 read the gloss only); next: cut those rows with tools/iiif_lines.py --follow-slope (region below y 3318, x from ~1380), two blind passes against the settled labels + reconciliation, extend c262rc_recon.tsv and gloss.tsv, re-run test0 --check, ~$3
+- 14 c262 tiles in owner-split clusters (13 k072, 1 k006) bounded, not placed - blocker: not-attempted; no placement changes the D07-NOX510 verdict; next: one eye pass on the 13 k072 crops only if a later test uses the k072 value, ~$1
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; instrument 1 FAILed (D07-NOX510); next: same pipeline with its control first, after the c510 decode above, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; reader passes cover c510 only; next: two passes against settled labels after the c510 sign names and the Fu question are settled, ~$5
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; Charriere III and the Lepanto relations not yet grepped for it; next: grep Charriere III and the Lepanto relations, ~$1
+
+## Escalation (DA1-NOX, 7 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); date-only Dupuy matches text-checked (RUN6-NOXDUP, R7A-NOX262)
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; registered gate passes under difflib and under exact LCS (R9-NOX, PREREG-R9NOX-LCS.md, stable to the gloss change)
+- [x] print: Charrière III pp.258, 520-524 and 551-558 read; p.258 differs from the leaf gloss at L08 and L09 (spelling)
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin), D07-NOXT bridge under owner piles (PASS 17 -> 19), D07-NOX510 split-pile bound + c510-516 tile-stream decode (FAIL, PREREG-D07NOX510.md), D07-NOXREAD c510 L05-L14 reader passes (split 22.9%, stopped before decode, PREREG-D07NOXREAD.md), DA1-NOX word-level blind gloss passes (control 0.462/0.423, gate 0.80; blind Opus eye on c262 gloss crops retired after its third control miss), DA1-NOX c510 look-alike window re-read (47/62 settled 2-of-3, 15 to focus.tsv; decode still stopped by PREREG-D07NOXREAD's two-reader rule)
+Verdict: keep going: 7 internal gaps; cheapest next: an ASKS row for a person's read of the c262 gloss word crops, ~$0.3; for c510, the owner's sign-sorter pass on witness/lookalike_da1nox/focus.tsv, then a fresh PREREG scoring c510_passD.tsv, ~$2

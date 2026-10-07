@@ -1,0 +1,279 @@
+passage	pos	sign_id	conf	note	question
+L05	1	W:sieur		lookalike UNSETTLED	L05.1: readers -/W:sieur, look-alike X_NEW (L); which of W:sieur, X_NEW?
+L05	2	W:le		passC	
+L05	3	N2		lookalike UNSETTLED	L05.3: readers N2/W:faire, look-alike X_NEW (L); which of N2, W:faire, X_NEW?
+L05	4	?		passC	
+L05	5	N1		passC	
+L05	6	o1/e2		passC	
+L05	7	c1		passC	
+L05	8	o1/e2		passC	
+L05	9	u1		passC	
+L05	10	W:dict	M	lookalike 2-of-3	
+L06	1	f2	M	lookalike 2-of-3	
+L06	2	o1/e2	H	lookalike 2-of-3	
+L06	3	i3	M	lookalike 2-of-3	
+L06	4	W:le		passC	
+L06	5	s2		passC	
+L06	6	W:ent	M	lookalike 2-of-3	
+L06	7	d1		passC	
+L06	8	i3	M	lookalike 2-of-3	
+L06	9	?		passC	
+L06	10	W:de		passC	
+L06	11	N1		passC	
+L06	12	?		passC	
+L06	13	e3		passC	
+L06	14	u1		passC	
+L06	15	W:le		passC	
+L06	16	W:de		passC	
+L06	17	W:sieur		lookalike UNSETTLED	L06.17: readers -/W:sieur, look-alike W:sieur (L); which of W:sieur, t1?
+L06	18	s1		passC	
+L06	19	W:dict	M	lookalike 2-of-3	
+L06	20	e3		passC	
+L06	21	r1		passC	
+L06	22	a1		passC	
+L06	23	n2		passC	
+L06	24	c1		passC	
+L06	25	o1/e2		passC	
+L06	26	h1	H	lookalike 2-of-3	
+L06	27	W:sieur		lookalike UNSETTLED	L06.27: readers -/W:sieur, look-alike W:sieur (L); which of W:sieur, t1?
+L06	28	W:le		passC	
+L06	29	a3	M	lookalike 2-of-3	
+L07	1	o1/e2		passC	
+L07	2	n1		passC	
+L07	3	t2		passC	
+L07	4	r1		passC	
+L07	5	e3		passC	
+L07	6	a3		passC	
+L07	7	o1/e2		passC	
+L07	8	n2	H	lookalike 2-of-3	
+L07	9	r2		passC	
+L07	10	W:le		passC	
+L07	11	W:de		passC	
+L07	12	p2		passC	
+L07	13	i3	M	lookalike 2-of-3	
+L07	14	i2		passC	
+L07	15	W:le		passC	
+L07	16	l1		passC	
+L07	17	a2		passC	
+L07	18	l1		passC	
+L07	19	i2		passC	
+L07	20	d1		passC	
+L07	21	o1/e2		passC	
+L07	22	q2	M	lookalike 2-of-3	
+L07	23	a2		passC	
+L07	24	t2		passC	
+L07	25	i2		passC	
+L07	26	o1/e2		passC	
+L07	27	n1		passC	
+L07	28	d1		passC	
+L07	29	u1		passC	
+L08	1	f2	H	lookalike 2-of-3	
+L08	2	t1		lookalike UNSETTLED	L08.2: readers -/t1, look-alike t1 (L); which of W:sieur, t1?
+L08	3	l1		passC	
+L08	4	N3	M	lookalike 2-of-3	
+L08	5	W:de		passC	
+L08	6	?		passC	
+L08	7	l1		passC	
+L08	8	q1		passC	
+L08	9	p2		passC	
+L08	10	a1		passC	
+L08	11	s2		passC	
+L08	12	W:le		passC	
+L08	13	a2		passC	
+L08	14	?		passC	
+L08	15	d1		passC	
+L08	16	o1/e2		passC	
+L08	17	m2		passC	
+L08	18	W:dict	H	lookalike 2-of-3	
+L08	19	i2		passC	
+L08	20	o1/e2		passC	
+L08	21	a2		passC	
+L08	22	n2		passC	
+L08	23	?		passC	
+L08	24	r1		passC	
+L08	25	e3		passC	
+L08	26	n1		passC	
+L08	27	u1		passC	
+L08	28	o1/e2		passC	
+L08	29	q1		passC	
+L08	30	e1		passC	
+L09	1	?		passC	
+L09	2	W:de		passC	
+L09	3	c1		passC	
+L09	4	a2		passC	
+L09	5	?		passC	
+L09	6	r1		passC	
+L09	7	a1		passC	
+L09	8	t2		passC	
+L09	9	i3	M	lookalike 2-of-3	
+L09	10	i2		passC	
+L09	11	a3		passC	
+L09	12	o1/e2		passC	
+L09	13	e3	M	lookalike 2-of-3	
+L09	14	W:ent	M	lookalike 2-of-3	
+L09	15	?		passC	
+L09	16	?		passC	
+L09	17	W:sieur		lookalike UNSETTLED	L09.17: readers W:sieur/-, look-alike W:sieur (L); which of W:sieur, t1?
+L09	18	r1		passC	
+L09	19	e3		passC	
+L09	20	t2		passC	
+L09	21	o1/e2		passC	
+L09	22	i3	M	lookalike 2-of-3	
+L09	23	q2	M	lookalike 2-of-3	
+L09	24	e3		passC	
+L09	25	n2		passC	
+L09	26	N1		passC	
+L09	27	?		passC	
+L09	28	r1		passC	
+L09	29	e3		passC	
+L09	30	s2		passC	
+L10	1	a3		passC	
+L10	2	t1		lookalike UNSETTLED	L10.2: readers -/t1, look-alike t1 (L); which of W:sieur, t1?
+L10	3	o1/e2		passC	
+L10	4	n2		passC	
+L10	5	a3		passC	
+L10	6	e1		passC	
+L10	7	W:de		passC	
+L10	8	N1		passC	
+L10	9	o1/e2		passC	
+L10	10	i3	M	lookalike 2-of-3	
+L10	11	l2		passC	
+L10	12	?		passC	
+L10	13	h1	H	lookalike 2-of-3	
+L10	14	l1		passC	
+L10	15	n1		passC	
+L10	16	N1		passC	
+L10	17	o1/e2		passC	
+L10	18	n1		passC	
+L10	19	d1		passC	
+L10	20	i3	M	lookalike 2-of-3	
+L10	21	i2		passC	
+L10	22	a3		passC	
+L10	23	W:sieur		lookalike UNSETTLED	L10.23: readers -/W:sieur, look-alike W:sieur (L); which of W:sieur, q2?
+L10	24	W:le		passC	
+L10	25	d1		passC	
+L10	26	o1/e2		passC	
+L10	27	i3	M	lookalike 2-of-3	
+L10	28	s2		passC	
+L10	29	t2		passC	
+L11	1	r1		passC	
+L11	2	e3		passC	
+L11	3	s2		passC	
+L11	4	o1/e2		passC	
+L11	5	i3	M	lookalike 2-of-3	
+L11	6	x1		passC	
+L11	7	q2	M	lookalike 2-of-3	
+L11	8	e1		passC	
+L11	9	d1		passC	
+L11	10	i3	M	lookalike 2-of-3	
+L11	11	p2		passC	
+L11	12	e3		passC	
+L11	13	u1		passC	
+L11	14	W:de		passC	
+L11	15	p2		passC	
+L11	16	r1		passC	
+L11	17	?		passC	
+L11	18	f2	M	lookalike 2-of-3	
+L11	19	?		passC	
+L11	20	i2		passC	
+L11	21	t2		passC	
+L11	22	h1	H	lookalike 2-of-3	
+L11	23	W:sieur		lookalike UNSETTLED	L11.23: readers -/W:sieur, look-alike W:sieur (L); which of W:sieur, q2?
+L11	24	i3	M	lookalike 2-of-3	
+L11	25	q2	M	lookalike 2-of-3	
+L11	26	r1		passC	
+L11	27	e3	M	lookalike 2-of-3	
+L11	28	u1		passC	
+L11	29	t1		lookalike UNSETTLED	L11.29: readers -/t1, look-alike t1 (L); which of W:sieur, t1?
+L11	30	W:ent	M	lookalike 2-of-3	
+L12	1	W:de		passC	
+L12	2	N1		passC	
+L12	3	o1/e2		passC	
+L12	4	t2		passC	
+L12	5	e3		passC	
+L12	6	l1		passC	
+L12	7	i2		passC	
+L12	8	o1/e2		passC	
+L12	9	e3		passC	
+L12	10	r1		passC	
+L12	11	a1		passC	
+L12	12	l1		passC	
+L12	13	i2		passC	
+L12	14	t2		passC	
+L12	15	e1		passC	
+L12	16	m2		passC	
+L12	17	a1		passC	
+L12	18	t1		lookalike UNSETTLED	L12.18: readers t1/-, look-alike t1 (L); which of W:sieur, t1?
+L12	19	?		passC	
+L12	20	W:le		lookalike UNSETTLED	L12.20: readers W:le/-, look-alike X_NEW (L); which of W:le, W:sieur, X_NEW?
+L12	21	?		passC	
+L12	22	W:de		passC	
+L12	23	N1		passC	
+L12	24	o1/e2		passC	
+L12	25	i3	M	lookalike 2-of-3	
+L12	26	u1		passC	
+L12	27	e3		passC	
+L12	28	q2	M	lookalike 2-of-3	
+L12	29	t2		passC	
+L12	30	h1	H	lookalike 2-of-3	
+L12	31	l1		passC	
+L12	32	N3	M	lookalike 2-of-3	
+L13	1	n1		passC	
+L13	2	e1		passC	
+L13	3	s2		passC	
+L13	4	o1/e2		passC	
+L13	5	r1		passC	
+L13	6	n1	H	lookalike 2-of-3	
+L13	7	?		passC	
+L13	8	i3	M	lookalike 2-of-3	
+L13	9	o1/e2		passC	
+L13	10	q1		passC	
+L13	11	h1	H	lookalike 2-of-3	
+L13	12	l1		passC	
+L13	13	N3	M	lookalike 2-of-3	
+L13	14	p2		passC	
+L13	15	o1/e2		passC	
+L13	16	i3	M	lookalike 2-of-3	
+L13	17	r1		passC	
+L13	18	s2		passC	
+L13	19	u1		passC	
+L13	20	t1		lookalike UNSETTLED	L13.20: readers -/t1, look-alike t1 (L); which of W:sieur, t1?
+L13	21	i3	M	lookalike 2-of-3	
+L13	22	W:ent	M	lookalike 2-of-3	
+L13	23	l1		passC	
+L13	24	i2		passC	
+L13	25	N1		passC	
+L13	26	o1/e2		passC	
+L13	27	n2		passC	
+L13	28	t2		passC	
+L13	29	t1		lookalike UNSETTLED	L13.29: readers -/t1, look-alike t1 (L); which of W:sieur, t1?
+L14	1	e3		passC	
+L14	2	W:le		passC	
+L14	3	o1/e2		passC	
+L14	4	n2		passC	
+L14	5	c1		passC	
+L14	6	o1/e2		passC	
+L14	7	q2	M	lookalike 2-of-3	
+L14	8	o1/e2		passC	
+L14	9	W:le		passC	
+L14	10	n1		passC	
+L14	11	o1/e2		passC	
+L14	12	n2		passC	
+L14	13	t2		passC	
+L14	14	a2		passC	
+L14	15	n1		passC	
+L14	16	a3		passC	
+L14	17	?		passC	
+L14	18	?		passC	
+L14	19	t2		passC	
+L14	20	a3		passC	
+L14	21	a2		passC	
+L14	22	n2		passC	
+L14	23	x1		passC	
+L14	24	q2	M	lookalike 2-of-3	
+L14	25	e1		passC	
+L14	26	W:sieur		lookalike UNSETTLED	L14.26: readers -/W:sieur, look-alike W:sieur (L); which of W:sieur, q2?
+L14	27	s2		passC	
+L14	28	i3	M	lookalike 2-of-3	
+L14	29	c1		passC	
+L14	30	N1		passC	

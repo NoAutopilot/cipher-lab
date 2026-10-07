@@ -1,0 +1,63 @@
+passage	pos	label	conf	second	note
+L05	1	X_NEW	L		window shows plain script; sign not found
+L05	3	X_NEW	L		window shows plain script; sign not found
+L05	10	W:dict	M	m2	straight open 4 with long crossbar, not the curly m2
+L06	1	f2	M	W:sieur	open-cornered U/L with a tick (square-U)
+L06	2	o1/e2	H		double-bar hash
+L06	3	i3	M	r2	H, two verticals and crossbars
+L06	6	W:ent	M	N2	2+o with hooked lead-in
+L06	8	i3	M	r2	H, two verticals and crossbars
+L06	17	W:sieur	L	t1	F joined to u (Fu) = table's W:le drawing; sieur nearest candidate
+L06	19	W:dict	M	m2	straight 4 with crossbar
+L06	26	h1	H		step hook
+L06	27	W:sieur	L	t1	Fu = table's W:le drawing
+L06	29	a3	M	W:sieur	alpha loop crossed by a stroke
+L07	8	n2	H	l2	A with crossbar, not open triangle
+L07	13	i3	M	r2	H, two verticals and crossbars
+L07	22	q2	M	t1	looped e with long hooked tail
+L08	1	f2	H		square open U
+L08	2	t1	L	W:sieur	plain T; table's plain T is i1 (not offered)
+L08	4	N3	M		10 (stroke + o)
+L08	18	W:dict	H	i1	straight crossed 4
+L09	9	i3	M	r2	H, two verticals and crossbars
+L09	13	e3	M	N2	s-curve (e3 shape)
+L09	14	W:ent	M	u1	2+o with hooked lead-in
+L09	17	W:sieur	L	t1	Fu = table's W:le drawing
+L09	22	i3	M	r2	H, two verticals and crossbars
+L09	23	q2	M	t1	looped e with long hooked tail
+L10	2	t1	L	W:sieur	plain T (table's plain T is i1)
+L10	10	i3	M	r2	H, two verticals and crossbars
+L10	13	h1	H		step hook
+L10	20	i3	M	r2	H, two verticals and crossbars
+L10	23	W:sieur	L	q2	Fu = table's W:le drawing
+L10	27	i3	M	r2	H, two verticals and crossbars
+L11	5	i3	M	r2	H, two verticals and crossbars
+L11	7	q2	M	t1	looped e with long hooked tail
+L11	10	i3	M	r2	H, two verticals and crossbars
+L11	18	f2	M	W:sieur	square open U; tick drifts onto the 7
+L11	22	h1	H		step hook
+L11	23	W:sieur	L	q2	Fu = table's W:le drawing
+L11	24	i3	M	r2	H, two verticals and crossbars
+L11	25	q2	M	t1	looped e with long hooked tail
+L11	27	e3	M	c1	9-like head with hooked tail
+L11	29	t1	L	W:sieur	plain T (table's plain T is i1)
+L11	30	W:ent	M	N2	2+o with hooked lead-in
+L12	18	t1	L	W:sieur	plain T (table's plain T is i1)
+L12	20	X_NEW	L	W:sieur	big loop over a diamond; no candidate fits; context count off by 1
+L12	25	i3	M	r2	H, two verticals and crossbars
+L12	28	q2	M	t1	looped e with long hooked tail
+L12	30	h1	H		step hook
+L12	32	N3	M		10 (stroke + o)
+L13	6	n1	H	q2	|2-loop with tail
+L13	8	i3	M	r2	H, two verticals and crossbars
+L13	11	h1	H		step hook
+L13	13	N3	M		10 (stroke + o)
+L13	16	i3	M	r2	H, two verticals and crossbars
+L13	20	t1	L	W:sieur	plain T (table's plain T is i1)
+L13	21	i3	M	r2	H, two verticals and crossbars
+L13	22	W:ent	M	N2	2+o with hooked lead-in
+L13	29	t1	L	W:sieur	plain T at line end (table's plain T is i1)
+L14	7	q2	M	t1	looped e with long hooked tail
+L14	24	q2	M	t1	looped e with long hooked tail
+L14	26	W:sieur	L	q2	Fu = table's W:le drawing
+L14	28	i3	M	r2	H, two verticals and crossbars
