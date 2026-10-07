@@ -44,19 +44,19 @@ pointer	page	entry_on_page	header	words	markers	k2_tokens	k1_tokens	k9_tokens	st
 8965	73	0	Beckwith 930 pm  Washn May 19th 1864 	117	4	35	31	12	READ D12-E4
 8966	74	0	SH Beckwith 	125	2	34	30	14	READ D12-E4
 8971	79	1	1030 am Beckwith  Washn May 26th 1864 	56	2	25	18	4	READ ECK64-NO2
-8978	86	1	SH Beckwith  Washn June 4th	180	5	66	40	7	
+8978	86	1	SH Beckwith  Washn June 4th	180	5	66	40	7	READ D4-E5 (N2-BF)
 8979	87	1	S. H. Beckwith  Wash'n June 6th 1864 10 AM	72	6	24	13	2	READ ECK64-NO2
 8980	88	0	S. P. Kimber  Washn June 6th 1864 1230 P. M	162	12	49	43	14	READ
 8981	89	0	6 pm SH Beckwith  Washn June 7th 1864	36	1	17	12	4	READ
 8981	89	1	S. P. Kimber  Washington D. C. June 8th 1864 4 P. M	89	5	20	19	4	READ
 8982	90	1	Kimber Vicksburg  Washn June 11th 1864	30	1	13	12	6	READ
-8983	91	0	Beckwith (2) Sumter quarter	124	4	18	13	1	
+8983	91	0	Beckwith (2) Sumter quarter	124	4	18	13	1	READ D4-E5 (N2-AZ)
 8985	93	0	7 am SH Beckwith  Washington June 15" 1864	33	4	12	9	3	READ ECK64-NO2
-8986	94	0	S. P. Kimber Wash'n June 17th 1864	126	6	34	25	8	
-8986	94	1	S. H. Beckwith  Wash'n June 17th 1864	81	4	45	29	4	
-8988	96	0	Beckwith  Wash June 19. 1864 	145	3	31	27	10	
-8989	97	1	L. P. Kimber  Wash'n D. C. June 24th 1864	120	5	34	30	9	
-8996	104	2	S. H. Beckwith  Washington D. C. July 8th 1864	56	2	25	11	5	
+8986	94	0	S. P. Kimber Wash'n June 17th 1864	126	6	34	25	8	READ D4-E5 (N2-BA)
+8986	94	1	S. H. Beckwith  Wash'n June 17th 1864	81	4	45	29	4	READ D4-E5 (N2-BB)
+8988	96	0	Beckwith  Wash June 19. 1864 	145	3	31	27	10	READ D4-E5 (N2-BC)
+8989	97	1	L. P. Kimber  Wash'n D. C. June 24th 1864	120	5	34	30	9	READ D4-E5 (N2-BD)
+8996	104	2	S. H. Beckwith  Washington D. C. July 8th 1864	56	2	25	11	5	READ D4-E5 (N2-BE)
 8999	107	1	12 M Beckwith  Washn July 11th 1864	162	9	48	39	7	
 9000	108	0	S. H. Beckwith  Wash'n July 13th 1864 3 PM	230	7	78	48	13	
 9001	109	0	S. H. Beckwith  Wash'n July 13th 1864 4. P. M	133	8	51	30	11	

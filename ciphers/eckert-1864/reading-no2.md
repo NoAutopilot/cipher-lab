@@ -376,6 +376,49 @@ Notes on particular readings:
   wings"; N2-AY "Waterloo"; N2-AT p.60 "144 w Sent from book 4. Tinker". These are kept in the ciphertext lines where they
   stand after the signature (the decoder sets them in the tail) or omitted where they sit outside the message lines.
 
+## Seven entries of pages 86-105, June-July 1864 (D4-E5, 7 Oct 2026)
+
+Read by the worker from strip crops of the 2400 px IIIF page images (commands in NOTES.md "## D4-E5"), the volunteer
+text as second witness. Code-word tokens over the seven: H 292, C 15, I 14, M 0 (decoder counts; every I token is the
+short period form yard or stick). All seven were located in print; each print agrees with the reading apart from the
+ledger's own spelling and the conflicts listed below:
+
+| block | ledger | reading in short | print located |
+|---|---|---|---|
+| N2-AZ | p.91, 11 June | to Dana (signed Comb = Secretary of War): Grant should not put too much confidence in Barnard, sent down by Halleck as an engineer; all he undertakes will be in danger of failure | Grant Papers vol. 11 by Google Books snippet (the printed text keeps a draft's struck words, "is no small degree in large degree"), page not established; not located in OR I/36 pt 3, I/37 pt 1-2, I/40 pt 2 by phrase |
+| N2-BA | p.94, 17 June 1.30 PM | Meigs to Canby: gauge of the Vicksburg and Shreveport Railroad 5 ft 6 in; alter to 5 ft; no cars or locomotives of 5 ft 6 in to be had ready built | OR I/34 pt 4 p.424-425 |
+| N2-BB | p.94-95, 17 June | Halleck to Grant: a German engineer officer who left Lee's army June 7: Pickett's and Breckinridge's divisions through Gordonsville to Hunter; Lee and Beauregard 60,000-75,000; Lee's army supplied, ammunition poor | OR I/40 pt 2 p.117 (3 p.m.), also I/37 pt 1 p.645 |
+| N2-BC | p.96, 19 June | Halleck to Grant: the cavalry sent to Hunter find the enemy in Staunton and Lexington; Stahel; Hunter's escape into West Virginia or across the James | OR I/37 pt 1 p.650-651 (12.40 p.m.) |
+| N2-BD | p.97-98, 24 June | Halleck to Canby: operations limited to the defensive; available white troops of the Gulf to Fort Monroe; the Nineteenth Corps can be spared | OR I/34 pt 4 p.528 |
+| N2-BE | p.104-105, 8 July | Halleck to Grant: Canby's embarkation (20,000); Ricketts' division to the Monocacy; Sheridan's 2,496 sick; enemy around Maryland Heights threatening Frederick; alarm in Washington, Baltimore, Pennsylvania | OR I/37 pt 2 p.119 (2.30 p.m.) |
+| N2-BF | p.86, 4 June | Halleck to Grant: 6,683 cavalry horses sent in May; Ohio militia; Gillmore, Hatch, Crook at Lewisburg; Canby to Memphis; Sherman holds Allatoona Pass | OR I/36 pt 3 p.569-570 (2.20 p.m.; between the running heads 568 and 571) |
+
+OR page numbers are read from the running heads in the Internet Archive djvu text (warofrebellion344unit, 363unit,
+371unit, 372unit, 402unit) and may be one off. Grant Papers vol. 11 was searched through the Google Books API (snippets).
+
+Notes on particular readings:
+- Clerk's forms added to key-no2.md section 8 at C (each from the print): Dorming (7; the book's Downing, and N2-I's
+  Domming), Pene (Army; the book's Peru), plantation (communication), Meridians and Mindins (Hunter's; the book's Meriden),
+  Sprage (1000; the book's Sprague).
+- Plain words marked (book words that would misread): Barnard (N2-AZ; the book's Barnard = President of U.S., here the
+  engineer J. G. Barnard, as Grant Papers prints), learn and question (N2-BA), passed and Pickets (N2-BB), Lexington
+  (N2-BC), opinion and white (N2-BD: "all available white troops"; elsewhere White = South, as in N2-BC "the White side" =
+  south side and N2-BF "Quotient torch white" = Department of the South), Frederick (N2-BE), Lewis and pass (N2-BF).
+- Clerk's splits joined with " = ": "Barn = yard" (N2-AZ, the name Barnard a second time, yard not the period here) and
+  "White = onste" (N2-BF, White House); the decoder prints them as Barnyard and Whiteonste.
+- Logged, not resolved: N2-BF "Quotient torch white" = OR "Department of the South", where the book's Torch = Pursue and
+  Talbot is the usual "of the"; N2-BF "at present pekin moreover" where the OR has a full stop (Pekin = Cavalry); N2-BF
+  "Brutus" = Delaware where the OR prints "Fort Delaware"; N2-BD "For Mastiff Holly" = For Canby, Vicksburg, the OR
+  addressing him "Division of West Mississippi, via Cairo"; N2-BC "Meriden's virtue" (Hunter's rear) is read by the eye,
+  the decoder leaves Meriden's with its apostrophe unread; N2-BC "windy" before Lamb (H W Halleck) is not a book word and
+  is left plain (Windham = Signed).
+- Time words against the print: N2-BF Helen = 2 PM, OR 2.20 p.m.; N2-BB Henrietta = 2.30 PM, OR 3 p.m.; N2-BC Hannah = 1 PM,
+  OR 12.40 p.m.; N2-BA Harriet = 1.30 PM and N2-BE Henrietta = 2.30 PM agree; N2-BD Julia = 4 PM, the OR gives no hour.
+- Not transcribed (service lines and pencil): N2-AZ "prompt" under the header and the pencilled glosses over the first
+  line ("flor", "weida", "time", "help", "impatient"); "set him up again" after the signature is kept as a tail; N2-BA "We
+  have Gondola hurrah for Madrid three cheers" (Petersburg, Grant) and N2-BD "Awful warm weather here" are operators' chat
+  kept in the tail.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -435,9 +478,9 @@ Code-word tokens: H 15, I 1.
 
 **N2-J | Page 89 | 8981 | 8 June 1864 4 PM, to Canby (Kimber)**
 
-[Washington] {date: June 8} {time: 4 PM} for [Canby Ed R S] [Vicksburg] [.] The [Secretary of War] directs that where the [Troops] protecting leased plantations are required for [Offensive] operations they be used for that purpose [,] care being taken to give protection to the negroes on such plantations by bringing them in to our lines [.] Military Operations must not be interfered with by any claims of lessees for the protection of their plantations [.] All [Cavalry] [Horse]'s at [St Louis] have been ordered to [Department] of [Arkansas]  {tail: [signed] [Maj Gen H W Halleck] Time everything}
+[Washington] {date: June 8} {time: 4 PM} for [Canby Ed R S] [Vicksburg] [.] The [Secretary of War] directs that where the [Troops] protecting leased [communication]s are required for [Offensive] operations they be used for that purpose [,] care being taken to give protection to the negroes on such [communication]s by bringing them in to our lines [.] Military Operations must not be interfered with by any claims of lessees for the protection of their [communication]s [.] All [Cavalry] [Horse]'s at [St Louis] have been ordered to [Department] of [Arkansas]  {tail: [signed] [Maj Gen H W Halleck] Time everything}
 
-Code-word tokens: H 19.
+Code-word tokens: H 19, C 3.
 
 **N2-K | Page 176 | 9070 | 10 Sept 1864 11.30 AM, to Canby (Kimber, New Orleans via NY & Cairo)**
 
@@ -459,9 +502,9 @@ Code-word tokens: H 13.
 
 **N2-N | Page 10 | 8902 | 16 Feb 1864 3.30 PM, Halleck to Grant at Nashville (operator S. H. Beckwith, "2")**
 
-[Washington] {time: 3.30 PM} [16] [February] For [Lieut Gen U.S. Grant] [.] It is deemed [Important] that leased plantations on the [Mississippi] [River] receive due protection and the [Secretary of War] desires that [General] Elliotts [Marine] [Brigade] be as signed to that service [.] It is under stood that it has been so as signed temporarily by [Maj Gen W T Sherman]  {tail: [signed] [H W Halleck] How you make it go}
+[Washington] {time: 3.30 PM} [16] [February] For [Lieut Gen U.S. Grant] [.] It is deemed [Important] that leased [communication]s on the [Mississippi] [River] receive due protection and the [Secretary of War] desires that [General] Elliotts [Marine] [Brigade] be as signed to that service [.] It is under stood that it has been so as signed temporarily by [Maj Gen W T Sherman]  {tail: [signed] [H W Halleck] How you make it go}
 
-Code-word tokens: H 17.
+Code-word tokens: H 17, C 1.
 
 **N2-O | Page 14 | 8906 | 29 Feb 1864 3.30 PM, Halleck to Grant (Beckwith, "(2)")**
 
@@ -685,5 +728,47 @@ Code-word tokens: H 35.
 
 Code-word tokens: H 33.
 
-Totals over the 51 entries: H 1254, C 46, I 40, M 2.
+**N2-AZ | Page 91 | 8983 | 11 June 1864, to Grant (Beckwith, "(2)")**
+
+{time: 3.30 PM} [11] for [Dana C A] [.] I hope [Lieut Gen U.S. Grant] will not put too much confidence in Barnard [.] I have no confidence in his judgement on practical military affairs and believe that he is in large degree responsible for McClellans blunders [.] He was sent down by [Maj Gen H W Halleck] for [Lieut Gen U.S. Grant] to use as an [Engineer] if he needed him but if trusted too far it may lead to deplorable results [.] He will never be ready never has enough and all that he undertakes [Will be] in [Danger] of [Failure] for want of proper comprehension of practical purposes stop If [Lieut Gen U.S. Grant] trusts to his own judgement we are safe but trust in Barnyard is dangerous  {tail: [signed] [Secretary of War] set him up again}
+
+Code-word tokens: H 15, I 2.
+
+**N2-BA | Page 94 | 8986 | 17 June 1864, to Canby (operator S. P. Kimber)**
+
+[Washington] {date: June 17} {time: 1.30 PM} For [Canby Ed R S] [.] I learn that the gauge [Of the] [Vicksburg] and Shreveport [Rail-road] is [5] feet [6] inches [.] The question of repair and stocking it has been referred to the [Secretary of War] for instructions [.] I have [Telegraph (-ed, -ing)]ed you twice to inform me [Of the] gauge [.] If I am rightly informed now by locomotive builders that it is [5] feet [6] inches [,] it will be best if we repair the [Rail-road] to alter the gauge [Of the] rails to [5] feet to enable us to use the Locomotives and [Cars] provided for other Southern [Rail-road]'s [.] No [Cars] or Locomotives of [5] feet [6] inches gauge can be had ready built  {tail: [signed] Meigs [Quarter[?] Master General] We have [Petersburg] hurrah for [Grant U S] three cheers}
+
+Code-word tokens: H 32.
+
+**N2-BB | Page 94-95 | 8986, 8987 | 17 June 1864, to Grant (Beckwith, no mark)**
+
+[Washington] [June] [17] {time: 2.30 PM} For [Grant U S] [.] A german [Engineer] [Officer] who [Left] [Lee]'s [Army] [June] [7] says that Pickets [Division] about [6000] [Infantry] and [Breckenridge]'s [Division] about [7000] [Infantry] passed through [Gordonsville] in [Cars] on the [6] and [7] against [Hunter D] [.] He did not see their [Cavalry] or [Artillery] [.] He estimates entire [Force] [Left] under [Lee] and [Beauregard] from [60] to [75000] exclusive of Home [Guard (-ed, -ing)]'s [( )] Militia [( )] in [Richmond] [.] He says that all damage to [Rail-road]'s has been repaired and [Cars] run from [Richmond] to [Charlottsville [sic]] and Stanton [.] [Lee]'s [Army] well [Supply]ed with Provisions but [Ammunition] of inferior quality and much complained of [.] Many of this mans statements are verified by others  {tail: [signed] [H W Halleck]}
+
+Code-word tokens: H 49, C 4, I 3.
+
+**N2-BC | Page 96 | 8988 | 19 June 1864, to Grant (Beckwith, no mark)**
+
+[Washington] [19] {time: 1 PM} for [Lieut Gen U.S. Grant] [City Point] [.] [telegram]s from [West] [Virginia] state that the [Cavalry] sent out with dispatches to [Hunter D] find the [Enemy] in possession of Staunton & Lexington in Meriden's [Rear] & have returned without being able to reach him or ascertain his where abouts [.] I hardly think it possible that [Stahel Jul] who was sent back for [Ammunition] can return to him Even if he knew where [Hunter D] is [.] He however will make the attempt hope less as it appears pause If the [Enemy]'s [Force] as [Report]ed is superior to [Hunter D] his only escape will be into [West] [Virginia] or by [Cross (-ed, -ing) [#]]ing the [James] and reaching you on the [South] side stop The latter is very possible for [Cavalry] but extremely perilous for [Infantry] [.] It is hardly possible to get any [communication] to him from this side windy [H W Halleck] ----
+
+Code-word tokens: H 27, C 3, I 2.
+
+**N2-BD | Page 97-98 | 8989, 8990 | 24 June 1864, to Canby (operator S. P. Kimber)**
+
+[Washington] {date: June 24} {time: 4 PM} For [Canby Ed R S] [Vicksburg] [.] [General] [,] [Grant U S] directs that the operations of your [Command (-ed, -ing)] be limited to the [Defend (-ed, -ing)]'s or such operations as may be required to hold the [Position]'s and lines of [Communications] you now occupy and that all [Available] white [Troops] [In the] [Department] [Of the] Gulf be immediately sent to [Monroe] [Virginia] where they will receive further orders [.] [Lieut Gen U.S. Grant] is of opinion that the [19] [Corps] or its equivalent can be spared [.] [North] urn and [East] urn [Regiment] who have the shortest time to serve will be sent first as they will here be nearest to their place of enlistment [.] The [Quarter[?] Master General] will send you Ocean [Transport (-ed, -ing)]'s as rapidly as possible [.] Please [Telegraph (-ed, -ing)] about how many [Troops] you can spare [.] The [Troops] will of course bring their [Arms] and sufficient [Ammunition] for immediate purposes [.] Their general supplies will be ready for them at [Monroe] [.] Unless here after otherwise ordered send only [Infantry] or dismounted [Cavalry] and [Artillery] who are to serve as [Infantry] [.] sufficient [Troops] must be retained to render secure [New Orleans] and the lines [Of the] [Mississippi] and [Arkansas] [River]'s  {tail: [signed] [Maj Genl H W Halleck] Awful warm weather here}
+
+Code-word tokens: H 54, C 1.
+
+**N2-BE | Page 104-105 | 8996, 8997 | 8 July 1864, to Grant (Beckwith, no mark)**
+
+[Washington] [July] [8] {time: 2.30 PM} For [Lieut Gen U.S. Grant] [.] [Maj Gen E R S Canby] [Telegraph (-ed, -ing)]'s from [New Orleans] [July] [2] that over [6000] [Men] would [Embark (-ed, -ing)] that day and would reach [Monroe] from the [8] to the [10] [.] [6000] more would be ready [As soon as] [Transport (-ed, -ing)]'s arrived and that the whole number to be sent will be [20000] [.] Ricketts [Division] arrived at [Baltimore] and sent forward to the Monocacy [.] Dis mounted [Cavalry] [Order]ed here for rear mounts but none yet arrived [.] [Sheridan P H] says [2400] and [96] of those sent are sick [,] If so we shall have but [500] for the field [.] [Hunter D] [Army] [Move (-ed, -ing)]'s so slow and the [Rail-road] is so broken up that I fear he will be too late to give us much aid [.] [Enemy] around [Maryland] Heights [,] at Hag hers town [,] Boonsboro and Middle town [,] and [Threaten (-ed, -ing)]ing Frederick stop also guerillas at Brooke ville [Threaten (-ed, -ing)]ing [Washington] and [Baltimore] [Rail-road] [.] there has been considerable alarm in [Washington] [Baltimore] and [Pennsylvania] [Maj Gen H W Halleck]
+
+Code-word tokens: H 56, C 3, I 4.
+
+**N2-BF | Page 86 | 8978 | 4 June 1864, to Grant (Beckwith, no mark)**
+
+{time: 2 PM} [June] [4] for [Grant U S] In the month of [May] we sent to the [Army] [Of the] [Potomac] [6600] & [83] [Cavalry] [Horse]'s in addition to the pedlarmen remounted here [.] About a [1000] more [Cavalry] [Horse]'s are being shipped to Whiteonste [.] Not hearing from you in regard to the [Ohio] militia I am preparing [10] [Regiment]'s for the field & will send them fast as [Transportation] canby procured [.] The [5] [Maryland] [Regiment] [Volunteer]'s has been [Order]ed from [Delaware] [.] [Gillmore Q A] thinks that [5000] more [Men] can safely be [Withdraw] from [Department] [Pursue (-ed, -ing)] [South] [.] [Hatch J P] on the contrary is asking for [Re-enforcements] [.] [Crook S [?]] at Lewis bug [May] [31] expected to join [Hunter D] at Stand on in about [6] [Day]'s pause [Canby Ed R S] has sent [Force]'s to [Memphis] to protect [Maj Gen W T Sherman]'s [Communications] I doubt if he will be able to do much on [Mobile] at present [Cavalry] moreover the [Movement] would be too late to help [Maj Gen W T Sherman] [.] The latter is in [Possess] of Allatona pass & is [Move (-ed, -ing)]ing against [Marietta] [Maj Genl H W Halleck]
+
+Code-word tokens: H 59, C 4, I 3.
+
+Totals over the 58 entries: H 1546, C 65, I 54, M 2.
 <!-- decode.py: derived block ends -->

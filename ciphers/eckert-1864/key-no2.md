@@ -1835,3 +1835,9 @@ route-page reading of "Yard".
 | wigs | trains | C | D12-E4, 7 Oct 2026: N2-AT "When the wigs cease to run" = OR I/33 p.1002 "When the trains cease to run"; no Wig row found in the transcribed tables. One witness |
 | Clark | 6 (numeral) | C | D12-E4, 7 Oct 2026: N2-AV "Clark Seward splendid Star" = OR I/36 pt 2 p.781 "Six thousand splendid infantry"; the book's numeral word is Clarke, the clerk wrote it without the e (image checked) |
 | Walkem | Western | C | D12-E4, 7 Oct 2026: N2-AW "the arrival of Walkem[?] Wharf" = OR I/37 pt 1 p.493 "the arrival of Western troops"; Walker = West (p.25 l.15 R), the clerk's form; image reads Walkem or Walkim |
+| Dorming | 7 (numeral) | C | D4-E5, 7 Oct 2026: N2-BB twice, "left Persia Luke Dorming" and "on the Dawson and Dorming" = OR I/40 pt 2 p.117 "left Lee's army June 7", "on the 6th and 7th"; the book's word is Downing (fly leaf row 7 R), cf. Domming (I) in N2-I; image reads Dorming |
+| Pene | Army | C | D4-E5, 7 Oct 2026: N2-BB "Jaunts Pene well seasoned with Provisions" = OR I/40 pt 2 p.117 "Lee's army is well supplied with provisions"; the book's Army word is Peru (p.19 l.18 L), the clerk wrote Pene; one witness |
+| plantation | communication | C | D4-E5, 7 Oct 2026: N2-BC "to get any plantation to him from this side" = OR I/37 pt 1 p.651 "to get any communication to him from this side"; not a book word as written; one witness |
+| Meridians | Hunter D | C | D4-E5, 7 Oct 2026: N2-BC "superior to Meridians" = OR I/37 pt 1 p.651 "superior to Hunter's"; the book's word is Meriden (p.18 l.16 R) |
+| Mindins | Hunter D | C | D4-E5, 7 Oct 2026: N2-BE "Mindins Persia Swindles so slow" = OR I/37 pt 2 p.119 "Hunter's army move's so slow"; a clerk's form of Meriden; one witness |
+| Sprage | 1000 (numeral) | C | D4-E5, 7 Oct 2026: N2-BF "Caldwell Sprage more summer" = OR I/36 pt 3 p.569-570 "5,000 more men"; the book's word is Sprague (fly leaf row 31 L) |
