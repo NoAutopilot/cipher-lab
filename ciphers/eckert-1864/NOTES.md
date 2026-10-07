@@ -676,6 +676,6 @@ Verifier correction (ECK64-NO2 verifier, 7 Oct 2026; AUDIT.md "AUDIT (propagatio
 "not located" entries are printed in the sender-/recipient-specific edition the solver did not search, The Papers of Ulysses S.
 Grant vol. 10 (N2-P, from the RG 107 telegram sent; N2-Q at p.343, 4:00 P.M.), so four printed in the OR and two in PUSG, two
 (N2-R, N2-T) not located. PUSG shows N2-Q's "Ann Apple is" is the clear word Annapolis: Apple is not the code word Tennessee
-there, and "Ann" is not an unread token; corrected counts H 119, C 1, I 8, M 0 (21 entries H 418), the derived block to be
-regenerated after `plain: Ann Apple` is set on N2-Q. N2-T's subject is answered by Dana to Stanton, 7 June 1864, OR I/36 pt 1
+there, and "Ann" is not an unread token; corrected counts H 119, C 1, I 8, M 0 (21 entries H 418), the derived block
+regenerated with `plain: Ann Apple` on N2-Q (ECK64-NO2, same day). N2-T's subject is answered by Dana to Stanton, 7 June 1864, OR I/36 pt 1
 p.91, which also supports the header date June 6 against Mark = July.

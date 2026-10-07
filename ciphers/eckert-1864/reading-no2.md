@@ -170,8 +170,8 @@ Not searched: other OR volumes, the Meigs letter books, other editions; a search
 Found by a CONTENTdm full-text search of the volunteer text of mssEC 19 (object 9302) for Beckwith, Kimber, Caldwell and
 Buckley: 202 pages carry one of the names; the 93 of them up to about page 160 were fetched and every entry headed by one of the
 four operators scored against key-no2.md, key.md and key-no9.md (NOTES.md "ECK64-NO2"). Eight short unread entries were read
-from strip crops of the 2400 px page images, the volunteer text as second witness. Code-word tokens over the eight: **H 120,
-C 1, I 8, M 0** (21-entry total H 419, C 7, I 18, M 1) as committed; H 119 and H 418 after the verifier's N2-Q correction below.
+from strip crops of the 2400 px page images, the volunteer text as second witness. Code-word tokens over the eight: **H 119,
+C 1, I 8, M 0** (21-entry total H 418, C 7, I 18, M 1), after the verifier's N2-Q correction below (first committed as H 120).
 
 | entry | ledger | OR print found | agreement |
 |---|---|---|---|
@@ -192,10 +192,8 @@ Notes on particular tokens:
   copy and Religion is taken = Operations there by inference (key-no2.md section 6); this one witness says Slumber = Operations,
   so the copyist's misalignment on [25B] may run differently from the one-row-up rule for rows 5-8. Not resolved here.
 - "Ann Apple is" (N2-Q) is the clear word Annapolis in three pieces (verifier correction, 7 Oct 2026: The Papers of Ulysses S.
-  Grant vol. 10 p.343 prints "Troops all started from Annapolis"). The derived block below still reads Apple as the code word
-  Tennessee (H) and "Ann" as an unread plain word; both are wrong at this place. Corrected counts: N2-Q H 18, I 1; the eight
-  H 119, C 1, I 8, M 0; the 21 entries H 418, C 7, I 18, M 1. Pending: `plain: Ann Apple` on N2-Q in ciphertext-no2.txt and a
-  re-run of decode_no2.py (solver's step).
+  Grant vol. 10 p.343 prints "Troops all started from Annapolis"). Ann and Apple are now marked plain on N2-Q and the
+  derived block regenerated: N2-Q H 18, I 1; the eight H 119, C 1, I 8, M 0; the 21 entries H 418, C 7, I 18, M 1.
 - N2-Q's date words "Genesis Nelson Brooks" read April 22 (20 + 2) where the ledger header says 23rd and Julia = 4 PM against
   the header's 4.15: the message was enciphered the day before it was sent, or the encoder slipped; logged, not resolved.
 - N2-T's date words "Hunter Mark Dawson Emily" read Washington, July 6, 10 AM (Mark = July, H) where the ledger header says June
@@ -313,9 +311,9 @@ Code-word tokens: H 10.
 
 **N2-Q | Page 52 | 8944 | 23 Apr 1864 4.15 PM, Burnside to Grant (Beckwith, "(2)", "advance signal")**
 
-[Washington] [April] [22] {time: 4 PM} For [Grant U S] [.] [Troops] all started from Ann [Tennessee] is [.] Second [Ohio] [Cavalry] not yet mounted [.] Is it intended that all the [Horse]'s now here shall go to [Butler B F] before the Second is mounted [?] It has been waiting a long time and I have no [Cavalry] except the third [New Jersey]  {tail: [signed] [Burnside A E] hurry up answer}
+[Washington] [April] [22] {time: 4 PM} For [Grant U S] [.] [Troops] all started from Ann Apple is [.] Second [Ohio] [Cavalry] not yet mounted [.] Is it intended that all the [Horse]'s now here shall go to [Butler B F] before the Second is mounted [?] It has been waiting a long time and I have no [Cavalry] except the third [New Jersey]  {tail: [signed] [Burnside A E] hurry up answer}
 
-Code-word tokens: H 19, I 1.
+Code-word tokens: H 18, I 1.
 
 **N2-R | Page 56 | 8948 | 26 Apr 1864 11.30 AM, Augur to Meade (operator M. C. Caldwell, "No 2")**
 
@@ -341,5 +339,5 @@ Code-word tokens: H 19, C 1, I 3.
 
 Code-word tokens: H 11, I 1.
 
-Totals over the 21 entries: H 419, C 7, I 18, M 1.
+Totals over the 21 entries: H 418, C 7, I 18, M 1.
 <!-- decode.py: derived block ends -->

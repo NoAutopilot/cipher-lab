@@ -181,7 +181,8 @@ use Farmer Famish Mastiff for Can
 # NOTES.md), read by the worker from tools/iiif_lines.py strip crops of the 2400 px IIIF page images (scratch, regenerable;
 # commands in NOTES.md), volunteer text as second witness. Pencilled figures, interlinear guesses ("doing", "did", "may",
 # "partake", "paragraph", "mules", "trains") and service notes are a later hand's or the office's and are not transcribed.
-# "Ann" in N2-Q is marked plain: the TIME table reads it 1 AM, which cannot stand in "from Ann Apple" (reading-no2.md).
+# "Ann Apple is" in N2-Q is the plain word Annapolis written in three pieces (verifier, 7 Oct 2026: Grant Papers vol. 10 p.343
+# "Troops all started from Annapolis"); marked plain.
 
 ### N2-N | Page 10 | 8902 | 16 Feb 1864 3.30 PM, Halleck to Grant at Nashville (operator S. H. Beckwith, "2")
 S. H. Beckwith "2"  Washn Feby 16th 1864 3 30 PM
@@ -219,7 +220,7 @@ all the Silvers now here shall go to Legend
 before the Second is mounted Stanhope It has been
 waiting a long time and I have no Pedlar
 except the third Bagdad yawl Lawn hurry up answer
-plain: Ann
+plain: Ann Apple
 
 ### N2-R | Page 56 | 8948 | 26 Apr 1864 11.30 AM, Augur to Meade (operator M. C. Caldwell, "No 2")
 No 2 Caldwell MC  Wash Apl 2[6?] 1864
