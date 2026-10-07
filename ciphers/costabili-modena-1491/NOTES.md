@@ -198,7 +198,7 @@ One line, per Usage 7: (DEF1-GRACOS AUDIT 2, 5 Oct 2026): Berzeviczy CXXXIV (Bea
 ## Remaining gaps (refreshed N8-COS, 4 Oct 2026; N9-COSV, N9-COS2, 5 Oct 2026)
 Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running decode; ~4,960 of them have a period decipherment on the same DECODE record (images in hand, COS-M table); R1166 P1-P2 key: 11 sign values at C (N8-COS 10 + N9-COS2 W = t), the rest M; W = t verified at C by N9-COSVW (5 Oct 2026, AUDIT.md; to do at the next DECODE login: eye-check p2_u15 W under "padre", and relabel p1_u21 pos 5 as W)
 - Key rebuild from the period decipherments: R1166 P1-P2 at C for 11 signs (N8-COS group crops 10; W = t added by N9-COS2's re-score with the dash+open-loop shape as its own label); q (u/c shapes), TT, 8, L, 4, Z and word codes still M - blocker: not-attempted; the R1163/R1165 slips were tried with line crops against their clear slips (N9-COS2: pass A non-test at 2 pairs, pass B 0.250 = shuffle p95 at 4 pairs, FAIL) because anchor spans between clear words are too long for the 0.8-1.25 ratio filter; next: hand-cut span boxes at sub-line anchors (each clear word left in the cipher slip, plus line ends) so pairs stay short, 2 blind passes, ~$3; the q-shape split by blind feature reads (bowl closed/open) was run by R9-COST (6 Oct 2026) and did not separate shapes (all 108 answers 'closed'); next: the owner's sign sorter on the 39 q crops (align/r9cost_qcrops.tsv), a person's pass, ~$0.5 to set up
-- R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; matched by opening, date and three clear-word anchors only; next: align with the N8-COS C key as prior, ~$5
+- R1167 cipher letter vs its clear copy P5-P6: completeness and token alignment - blocker: not-attempted; P1 lines 2-8 vs copy lines 1-5 aligned by D4-COST (7 Oct 2026, 2 blind passes, shuffle gate PASS only under a stated sigla-expansion deviation, so M); TT = s and Z = t meet every new-value condition except the registered abbreviation rule; next: a span of the copy with no sigla (or a verifier ruling that the standard sigla ch-/t'-/p-/d- count as written out), then the same two passes and align/d4cost_score.py on P1 lines 9-16 and P2, ~$4; P2-P3 vs P6 completeness not checked, ~$1
 - R1166 P4 (7 cipher lines, ~188 signs; 5 lines carry interlinear gloss, L4-L5 do not) - blocker: not-attempted; transcribed by R8-COST (6 Oct 2026, 2 blind passes, err_2reader 0.029) but the PREREG decode gate FAILs at C coverage 0.718 (< 0.80): the shortfall is q (15 agreed tokens, two shapes under one label), TT (9) and 8/L/x/u/v (8), plus 21 split positions; R9-COST (6 Oct 2026) q split non-discriminating, P4 coverage 0.723 (FAIL, unchanged in substance); q alone cannot pass this gate (ceiling 150/188 = 0.798, PREREG-R9-COST); next: settle q and TT shapes in the owner's sign sorter, then a blind re-read of P4's 21 split positions and re-score with align/r8cost_score.py, ~$2
 - Vestigia image map: done for 2977 = R1166 (same photograph, 21 Jun 1491); 2955 = R1165 by card/date/page count only - blocker: not-attempted; R1165's own image not re-fetched this job, so no image-to-image comparison; next: fetch R1165 P1 in the next DECODE login and compare, ~$0.3
 
@@ -207,7 +207,7 @@ Read so far: 0 of ~5,060 measured-estimate cipher signs read by us as a running 
 - [x] clear-pages: R1095-R1097 found to be all clear text (COS-M); Berzeviczy nos. CLIV, CLV, CLVII, CLXXXVIII, CXCV located by CS-4
 - [x] known-keys: decode-1168 key.tsv compared sign by sign with the R1166 rebuild (N8-COS C values: 9 agree, z differs as a label collision)
 - [x] print: Berzeviczy 1914 whole volume (CS-4), no 1491 Costabili letter printed; R1095-R1097 are not no. CLXXXVIII (dates differ)
-- [ ] key-rebuild: R1166 P1-P2 at C for 11 signs (N8-COS group crops + N9-COS2 W relabel); R1163/R1165 slips tried by anchor spans (N9-COS2, non-test/FAIL: spans too long), short-span boxes untried; q split by blind F1 feature reads tried (R9-COST, non-discriminating); R1167 copy untried
+- [ ] key-rebuild: R1166 P1-P2 at C for 11 signs (N8-COS group crops + N9-COS2 W relabel); R1163/R1165 slips tried by anchor spans (N9-COS2, non-test/FAIL: spans too long), short-span boxes untried; q split by blind F1 feature reads tried (R9-COST, non-discriminating); R1167 copy: P1 spans s1/s2 aligned (D4-COST, M only: sigla deviation), sigla-free spans untried
 - [x] image-check: one DECODE login, all 31 images full size, per-page table above; Vestigia 2977 = R1166 (N8-COS)
 - [x] retry: Ulaszlo-series and Vestigia search for the four 1491 dates (RUN3-COST, 4 Oct 2026): no printed text of any of the four letters found; Vestigia holds catalogue records (incipit/explicit only), cipher-flagged, for 15 Jun and 21 Jun 1491
 Verdict: keep going: 4 internal gaps; cheapest next: short-span boxes of the R1163/R1165 slips (~$3); the q-shape split by blind feature reads was run (R9-COST, 6 Oct 2026: non-discriminating, all bowls read closed), so q/TT now go to the owner's sign sorter (a person's pass) before P4 is re-scored
@@ -353,3 +353,51 @@ Rule 3: this is the first run of this instrument (blind feature reads of q); it 
 not see the u/c difference the alignments show, so the next instrument for q (and TT) is a person's: the owner's sign sorter on the 39 crops.
 Units: 6 Sonnet reader calls (small crop sets) + this worker's scoring; no reconciliation call. Requests: de-crypt.org 1 login + 1 page + 3 images.
 
+
+## R1167 P1 vs its clear copy P5 (D4-COST, 7 Oct 2026, 14:02-14:1x UTC by date -u)
+
+Account 4 worker for LANE DEFAULT-account-4-20261007-1335. PREREG first: `align/PREREG-D4-COST.md` (cb81379a, pushed 14:04 UTC before any crop was cut
+or read and before any score). One DECODE browser login (14:03 UTC, `tools/decode_browser_login.js 1167 <scratch> --fetch <R1167 P1,P2,P3,P5,P6 and
+R1165 P1 filesrv URLs> --max-files 6 --delay 1800`): 6 images, all sha1 = images_manifest.tsv, scratch only, nothing committed.
+Crop step (run before any reader call): `python3 tools/iiif_lines.py --image IMG_R1167_I5857_P1.png --region 480,820,1880,800 --out c1 --prefix c1
+--ink 90 --prominence 30 --debug` (9 lines; c1_L01 is the "ma" superscript, readers got c1_L02-L09 = page lines 1-8); clear copy
+`--image IMG_R1167_I5861_P5.png --region 400,770,1900,600 --out k5 --prefix k5 --ink 90 --prominence 30` (k5_L02-L05 = copy lines 1-4).
+Readers: 2 blind Sonnet calls (A top-down, B bottom-up), labels.tsv, clear words written `{CLEAR}`; reads as returned in `align/d4cost_reads/`.
+
+**Step 1, completeness (this worker, line crops and contact scale; licenses nothing).**
+- Opening: cipher P1 "Ill.ma Madama mia: dopo mie humile recomandatione [cipher] / altra mia in zifara de xv. del p.nte adivisai V.ra Ex.tia [cipher]";
+  copy P5 "Ill.ma madama mia: per un altra mia in Zifra de xv del presente avisaj V.ra Ex.tia a che termini se Ritrovavano le cose de la Regina, e come
+  qua se expectava il vescovo de Varadino: hora li significo per questa come il p.to vescovo vene insieme cum uno altro Barone ala M.ta de la Regina
+  per parte del S.re Re, e per questo me ha dicto Mons. lo Arcivescovo suo figliolo ...". The copy **drops the courtesy formula** "dopo mie humile
+  recomandatione", so it is not a verbatim copy at the formula level. The first word of the copy's place name was read V/Z uncertain ("Varadino" taken).
+- **Date correction:** both texts say "in zifra de xv del presente" (the cipher's own clear words and the copy); COS-M's "per un'altra mia in risposta
+  de xxi" was a contact-scale misreading. The P1 and P5 archive date cards both read "1491 12 22", and Vestigia 3005 (22 Dec 1491, no.44a, incipit "Per
+  una altra mia in zifara de XV", RUN3-COST) fits on date and incipit: R1167 = Vestigia 3005 by card, date and incipit (catalogue match, not an image
+  comparison), and the "xv" letter it cites is the 15 Dec cipher pair Vestigia 3002/3003.
+- Anchors: the clear words left in the cipher, "hora li significo per questa come" (P1 L4-L5) and "usando formalmente / questo termine" (P1 ~L18-19),
+  stand at the matching places in the copy (P5 L3-L4 and P5 L13-L14, same order). P2-P3 against P6 were not checked in this job: whole-letter
+  completeness is not established.
+
+**Step 2, two anchored spans** (`align/d4cost_spans.tsv`): s1 = cipher after "V.ra Ex.tia" to "hora" vs "a che termini ... de Varadino"; s2 = cipher after
+"per questa Como" to the code sign x vs "il p.to vescovo ... per parte del" (x = "S.re Re", key_n9cos2 M "il S. Re", consistent).
+**Registered run: non-test.** The copy writes che, ter-, per, p.to and M.ta only as sigla on all of P5 (checked on the whole page at half-page scale), so
+by the PREREG rule both spans are dropped before scoring.
+**Stated deviation (licenses M only):** the standard sigla expanded (che, termini, de la, predicto, maesta, per, del). Then
+`python3 align/d4cost_score.py align/d4cost_reads/passA.tsv align/d4cost_reads/passB.tsv --spans align/d4cost_spans.tsv --out align/d4cost_score.tsv`:
+
+| pass | spans | C tokens on own letter | real | shuffle mean | shuffle p95 | gate (p95 + 0.20) |
+|---|---|---|---|---|---|---|
+| A | 2 | 66/87 | 0.759 | 0.428 | 0.460 | PASS (deviation run) |
+| B | 2 | 64/86 | 0.744 | 0.424 | 0.453 | PASS (deviation run) |
+
+New-value check (PREREG conditions b-d, deviation run): **TT = s** (A 5/6, B 4/6, both spans) and **Z = t** (A 4/6, B 5/7, both spans) meet them;
+under the registered rule they stay **M** (no key file changed). 8 = m 2/3 in one span only (M). L = h once (M). **q** aligns to c 7, e 7, v 6 (A) and
+c 6, e 8, v 6 (B): the label q covers at least three values here (c, e, v/u), the same multi-shape problem as R1166 (R9-COST), now with v as a third value.
+Reconciliation (this worker, copy in view, M at most): `+ q L o` = "a che"; `TT q` = "se"; `d a Z d b q + q y b` = "ritrovavano" (q = v twice);
+`g o` = "le"; the group `q c a TT q b c b` stands where the copy has "vescovo" in both spans (s1 end, s2 start), so the same word is enciphered
+the same way twice; `c d o y + Z b` = "predicto" (y, + not at their key values here: a reading or label problem not settled). The middle of s1
+("de la Regina e come qua se expectava") does not fit group by group under the C key, so either the readers split signs there or the copy
+departs from the cipher text there; not settled.
+Units: 2 Sonnet reader calls + this worker's scoring/reconciliation. Requests: de-crypt.org 1 login + 6 files (1.8 s apart), no challenge.
+R1165 P1 was fetched (sha1 matches) but not compared with Vestigia 2955 (not reached; gap kept).
+    gaps_check (D4-COST, 7 Oct 2026): OK keep-going costabili-modena-1491: keep going: 4 internal gap(s), 1 step(s) untried
