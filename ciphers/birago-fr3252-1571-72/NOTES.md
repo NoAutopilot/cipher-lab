@@ -1782,3 +1782,71 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.
 - [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
 - [ ] retry: reconciliation of the kept f.36-37 rows' 193 splits in 4 per-page calls (one 193-row call was non-discriminating, RUN6-BIR3637); f.117r [x] power at the measured post-look-alike error done (D2-B117KAPC: 18/20 at 0.126, 16/20 at 0.183, rank 1/201 on 5/5 seeds), 27 M -> S; f.117r 16 plain-M window read (D2-B117M): 7 M -> S
 Verdict: keep going: 10 internal gaps (f.117r now S 224/M 29); cheapest next: the kept f.36-37 rows' 193 splits in 4 per-page reconciliation calls (~$2, disk only); the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)
+
+## BKLOG-0507 (7 Oct 2026, 05:39-05:43 UTC by date -u, account-4 worker for the account-3 orchestrator): the 193 f.36-37 splits by page
+Brief `.claude/briefs/runs/2026-10-07-acct3-batch-0507.md` PART B item 1 (assigned by name by the account-3 orchestrator). Disk only,
+0 network requests. Pre-registration: `harvest/f3637/PREREG.md` "BKLOG-0507 addendum", written 05:39 UTC before any call (same
+method and measures 1-4 as RUN6-BIR3637; item 4 applied per page and pooled).
+- **Crops (command, pasted):** `python3 -I -c "import cut_lines; cut_lines.cut('<scratchpad>/crops', 850, 0, 120, 65, 2)"` in
+  `../ceppo-nevers-fr3251-1570s/harvest/witness_f36/` -> 108 crops; segment counts per row equal the TSV's hints (2 or 4). Not committed.
+- **Calls:** 4 Sonnet subagent calls, one per page (`harvest/f3637/bypage/prompt_{r36,v36top,v36mid,r37}.md` from `prompt_R_page.md`;
+  inputs `in_*.tsv` 58/72/52/11; outputs `out_*.tsv`). Crops opened: 24, 22, 20, 8. All four readers reported that the 850-px 2x
+  segments do not line up with the "pos k of n" hints and show neighbouring rows (v36mid_L01_s2 is dark margin), so most positions
+  could not be found. The r36 reader wrote its file with a shell command, outside the Read/Write instruction; the content is its own.
+- **Result** (`merge_bypage.py`, `--check` "OK, not stale"; `bypage/summary.tsv`):
+
+| page | rows | H | M | L | ? | item 4 | applied |
+|---|---|---|---|---|---|---|---|
+| r36_L01-L08 | 58 | 0 | 0 | 58 | 58 | non-discriminating | 0 |
+| v36top | 72 | 2 | 18 | 52 | 0 | non-discriminating | 0 |
+| v36mid | 52 | 0 | 3 | 49 | 0 | non-discriminating | 0 |
+| r37 | 11 | 1 | 7 | 3 | 0 | passes | 8 |
+| pooled | 193 | 3 | 28 | 162 | 58 | non-discriminating (162/193 weak) | 8 |
+
+  **E before 0.333 ((40 + 193) / 700); E after 0.321 ((40 + 185) / 700).** A residual-disagreement figure after one eye on r37 only,
+  not a measured per-sign error (TRANSCRIPTION.md).
+- **Control (rule 3)**, `decode_control.py harvest/f3637/passD_v3.tsv --shuffles 200 --windows 20 --err 0.286 --extra X_THETA2=r --seed N`
+  (v2 + the 8 r37 choices; `bypage/control_s{1,2,3}.txt`):
+
+| seed | input | signs / letters | real key | shuffled mean (sd) | max | z | rank | power at 0.286 |
+|---|---|---|---|---|---|---|---|---|
+| 1 | v2 (F36R-REREAD) | 947 / 710 | -1.3696 | -2.0554 (0.110) | -1.7448 | 6.25 | 1/201 | 20/20 |
+| 1 | v3 (+8 r37) | 947 / 716 | -1.3799 | -2.0572 (0.105) | -1.7454 | 6.44 | 1/201 | 20/20 |
+| 2 | v3 | 947 / 716 | -1.3799 | -2.0707 (0.106) | -1.7683 | 6.54 | 1/201 | 20/20 |
+| 3 | v3 | 947 / 716 | -1.3799 | -2.0798 (0.089) | -1.8137 | 7.90 | 1/201 | 20/20 |
+
+  Gate (rank 1/201 every seed) met. The real-key score per letter is *lower* by 0.010 (6 more letters decoded, 2 more nulls) while z
+  rises 0.03-0.19 against v2's 6.25 / 6.51 / 7.82: a neutral change, not "reads better". passD_v3.tsv is kept as a candidate only;
+  ciphertext_f36_v2.tsv, the decode inputs and the grades are not changed (no C, no S; decode_key not re-run, nothing it reads changed).
+- **Reading of the outcome (rule 3 third-attempt clause):** the same eye reconciliation on the same 850-px line segments has now run
+  twice (one 193-row call; four per-page calls), and the smaller unit did not move it -- 3 of 4 pages still non-discriminating, and the
+  readers name the same cause: the segments cannot be matched to the positions. Logged as [retired] for this instrument (line-segment
+  reconciliation calls), untested-by-this-tool, not refuted. A different instrument: per-sign 4x tiles located by neighbour context
+  from the native band (the D22-CEPPO21 shape on fr.3251 f.21v, which separated S65/S80 on 26 of 27), each tile showing one split
+  sign, read against the two candidate cells, known look-alike pairs first (S24/S73, S80/S65 via R-8, S73/S49).
+
+Grades: no change. Vision: 4 Sonnet subagent calls. Hosts: none. Report: what was found and where it was not found; no novelty class.
+
+## Remaining gaps (BKLOG-0507, 7 Oct 2026)
+Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.117r: 279 tokens S 224, M 29, U 26 (D2-B117M); f.100r + f.119: 0 graded of 1,048 digits.
+- f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles, two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
+- f.36-37 kept rows at E 0.321 (700 positions, 185 splits) - blocker: not-attempted; line-segment reconciliation [retired] after two attempts (RUN6-BIR3637 one 193-row call; BKLOG-0507 four per-page calls: r36/v36top/v36mid non-discriminating, r37 8 H/M applied to passD_v3 candidate, control rank 1/201 x3, z 6.44/6.54/7.90, real key -1.3799 vs v2 -1.3696, neutral); readers could not match 850-px segments to positions; next: per-sign 4x tiles located by neighbour context (D22-CEPPO21 shape), look-alike pairs first, ~$3
+- f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
+- f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
+- f.117r 29 M tokens - blocker: not-attempted; 8 A1-vs-BIR-OPEN conflicts, 12 BIR-OPEN-only rows, and 9 plain-M left by the D2-B117M window read: 3 where two blind instruments (look-alike 2-of-3 and the m16 read) agree on a sign other than top-1 (L02.27 T18 for T98, L06.18 and L06.26 T90 for T45: value changes, owner's call), 5 L-grade answers (L05.19, L06.31, L07.23, L07.27, L07.29: window position at line ends/smudge), L10.9 read X_NEW; next: owner sign sorter on the existing focus list plus these 3 value-change tiles, or native sub-crops of the 5 L tiles (iiif_lines --follow-slope at the line ends), disk only, ~$1; longest S-only stretch 23 letters ('nintentiondeconuenibaun', L02.4-26), below the ~42-letter AD figure, judge FAIL unchanged (-1.224); TXD-HOLDOUT lam-4 note unchanged: next verifier pass on the 32 lam-4 changed positions, ~$2
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter inputs built (SORTER-BIRAGO2), unpublished; next: the account-3 orchestrator publishes it with {"db": {}}, the owner sorts
+- f.117r T88=q - blocker: not-attempted; pre-registered on no.86 FAIL (D2-B117M: 4/7 = 0.571 u-follow vs 0.6 floor, though above 200/200 control draws); the caveat stays; untested-by-this-tool at n=7 (q vs g+u not separable); next: new material -- a 1572 leaf with >= 15 T88 tokens, or the no.87 clerk's clear sheet value at its 4 T88 positions (L03.1, L11.14, L22.23, V02.6), disk only, ~$0.5
+- f.100r + f.119 (565 + 483 digits) - blocker: not-attempted; joint anneal retired (BIRAGO-NUM3); spelled-crib tests without power (BIRAGO-NUM2, -NUM4); no key on disk (crossmatch control-backed, BIRAGO-NUM-TOOLS); 158 prefix letter design control-backed negative (BIRAGO-NUM-TOOLS); dotted groups and 1x/5x/8x units as nomenclator codes untested-by-this-tool (flank statistic, matched control power 2-4/20, N8-BIRNUM), no meaning licensed by the f.100r clear context; f.138 (no.71) is not a third letter in this system (RUN6-BIR138: symbol cipher, digit fraction 0.03 vs controls 0.95/0.0; 1572 key rank 1/201, NEVBIR-138); fr.3251/fr.3252 have no other numerical letter in Sept 1571-Mar 1572 (BIRAGO-NUM-SCOUT); next: new material -- a numerical-key letter in another Nevers/Birago volume (fr.3256, fr.4688 Guazzo, fr.4712-4715) by a catalogue/eye sweep, ~$2
+- Nov 1571 key table - blocker: no-key-material; fr.3995 undated tables all viewed and the sweep is closed (BIRAGO-NUM-KEYEYE, -KEYEYE2, -KEYEYE3, BIRAGO-76): no.73 and no.74 control-backed negatives, no.32, no.33 and no.71 under the coverage floor (no.71 also 1580s), no.75 three-figure codes with League-era names, no.48-51 symbol keys, no.76 a single-sign letter alphabet (digits 1-9 for a-i, symbols and letters for l-z, no 0) with two-figure word codes in a plain and an overlined series (BIRAGO-76); no key table in fr.3995 fits the digit-only 00-59/74-99 token set; the next instrument is new material: a Nov 1571 key in another volume of the Nevers/Birago papers (fr.3252 neighbours, fr.3251, fr.3256, fr.4712-4715 key sheets) located by a catalogue/eye sweep for "chiffre" leaves dated 1571-72
+- fr.3995 no.74 digraph signs 23-27 and no.32 superscript marks - blocker: not-attempted; read at ~0.5x, values not legible; only matters if a letter in either key turns up; next: none unless a matching letter is found
+
+## Escalation (BKLOG-0507, 7 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ); f.100r pooled with f.119 (BIRAGO-NUM); third numerical letter scouted in both volumes, none (BIRAGO-NUM-SCOUT)
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
+- [x] known-keys: Ceppo-Nevers on f.36-37 and f.47r; 1572 key on f.117r; Nov 1571 system against all 66 digit keys on disk, none at gate, control 6/6 (BIRAGO-NUM-TOOLS); fr.3995 no.73 stat 1.10/-0.39, no.74 0.26/-0.16, no.32 0.79/1.23 (coverage 0.24-0.32) vs gate 3.292, controls 12/12 each (BIRAGO-NUM-KEYEYE, -KEYEYE2); no.71 letters coverage 0.26-0.31, stat -1.09 to 1.65, controls it 12/12, fr 9/12 (BIRAGO-NUM-KEYEYE3); no.76 single-sign letters, not two-figure, crossmatch not applicable (BIRAGO-76)
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: f.36 gloss by per-sign tiles; f.47r pair check against it; T88=q [x] pre-registered on no.86, FAIL (D2-B117M), next the no.87 clear-sheet check; f.100r + f.119 codes: clear-context code reading run (N8-BIRNUM, untested-by-this-tool at this N), f.138 ruled out as a third letter (RUN6-BIR138); next a numerical letter in another volume
+- [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
+- [ ] retry: kept f.36-37 rows' splits: line-segment reconciliation [retired] (RUN6-BIR3637 one call, BKLOG-0507 four per-page calls; 8 of 193 settled, r37 only); next per-sign 4x tiles by neighbour context; f.117r [x] power at the measured post-look-alike error done (D2-B117KAPC: 18/20 at 0.126, 16/20 at 0.183, rank 1/201 on 5/5 seeds), 27 M -> S; f.117r 16 plain-M window read (D2-B117M): 7 M -> S
+Verdict: keep going: 10 internal gaps (f.117r S 224/M 29); cheapest next: per-sign 4x tiles of the kept f.36-37 splits (look-alike pairs first, ~$3, disk only); the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)

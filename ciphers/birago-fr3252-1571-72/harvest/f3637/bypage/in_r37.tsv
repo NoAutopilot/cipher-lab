@@ -1,0 +1,12 @@
+line	pos	cand_1	cand_2	left_context	right_context	segment_hint
+r37_L01	5	S59	S74	S75 S37 S70	S73 S47 S93	about _s1 of 4 (pos 5 of 36)
+r37_L01	9	S69	X_THETA2	S73 S47 S93	S16 S26 S95	about _s1 of 4 (pos 9 of 36)
+r37_L01	13	S17	S66	S16 S26 S95	? S52 S65	about _s2 of 4 (pos 13 of 36)
+r37_L01	14	S76	S58?	S26 S95 ?	S52 S65 S89	about _s2 of 4 (pos 14 of 36)
+r37_L01	21	S42	S84	S93 S74 S47	S34 S53 S70	about _s3 of 4 (pos 21 of 36)
+r37_L01	26	S80	X_NEW	S53 S70 S74	S56 S35 X_NEW	about _s3 of 4 (pos 26 of 36)
+r37_L01	31	S30	S73	S35 X_NEW S52	S47 S84 S62	about _s4 of 4 (pos 31 of 36)
+r37_L02	3	S30	S73	S54 S70	S74 S66 S74	about _s1 of 4 (pos 3 of 19)
+r37_L02	11	S42	S84	S70 S94 S66	S75 S74 ?	about _s3 of 4 (pos 11 of 19)
+r37_L02	14	S80	X_NEW	? S75 S74	? S45 S56	about _s3 of 4 (pos 14 of 19)
+r37_L02	15	S62	S76?	S75 S74 ?	S45 S56 S89	about _s3 of 4 (pos 15 of 19)

@@ -13,3 +13,12 @@ Measures, fixed now:
    Report z beside v2's 6.25 / 6.51 / 7.82 (reconciled v2). A higher real-key score with the same shuffle distribution reads as
    "the reconciled rows read better under the printed key"; a lower one is reported as such. No C grades from this job.
 4. If more than half the 193 come back '?' or L, the call is reported as non-discriminating and nothing is spliced.
+
+## BKLOG-0507 addendum (7 Oct 2026, 05:39 UTC by date -u, before any call): the same prompt split by page
+
+RUN6-BIR3637's single 193-row call was non-discriminating by item 4 (the reader opened few crops). Same method, same measures 1-4,
+same crops (regenerated with `ceppo-nevers-fr3251-1570s/harvest/witness_f36/cut_lines.cut(<dir>, 850, 0, 120, 65, 2)`, segment
+counts checked against the TSV's hints), now 4 Sonnet calls, one per page: `bypage/in_{r36,v36top,v36mid,r37}.tsv` (58/72/52/11)
+-> `bypage/out_*.tsv`, prompt `bypage/prompt_R_page.md`. Item 4 is applied per page AND pooled: a page with more than half '?'/L
+is non-discriminating and contributes nothing to the splice. Units: 4 calls + this worker's own merge (no extra vision call).
+Control (item 3) is run only if at least one page passes item 4.

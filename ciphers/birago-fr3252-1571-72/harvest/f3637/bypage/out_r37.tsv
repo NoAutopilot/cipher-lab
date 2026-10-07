@@ -1,0 +1,12 @@
+line	pos	choice	conf	note
+r37_L01	5	S74	M	dotted 6, single stroke
+r37_L01	9	S69	M	theta with long bar
+r37_L01	13	S66	M	z with dot above
+r37_L01	14	S58	L	loop plus y tail
+r37_L01	21	S84	M	script x with curl
+r37_L01	26	S80	H	figure 8 with crossbar
+r37_L01	31	S73	M	slash with dots
+r37_L02	3	S73	M	slash with dots
+r37_L02	11	S84	L	plain x, curled stroke
+r37_L02	14	S80	M	barred figure 8
+r37_L02	15	S62	L	cup with descending tail

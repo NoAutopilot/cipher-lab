@@ -43,3 +43,9 @@ statistic as READ2-PAG C1 (held-out agreement, each letter sampled alone), tool 
 18 codes, 18 distinct values (no homophone set shown among them). Against key.tsv: 5 equal an H row (87 de, 90 du, 147 li,
 233 te, 244 ve), 6 equal an M row and move to S (32 c, 47 t, 145 la, 175 ne, 212 re, 221 se), 7 differ from key.tsv and are
 logged, not changed (31 b/ab, 45 r/ar, 48 u/une, 97 en/e, 148 lo/le, 176 ni/en, 204 que/ue). Tokens: M 420 -> 397, S 8 -> 31.
+
+## BKLOG-0507 (7 Oct 2026): instrument inventory for the single-attestation codes
+No run, no numbers. The four instruments above (hard-EM aligner, Gibbs segmentation, firm-neighbour pin, multi-seed settle7) all
+segment the gloss text; for codes seen once they stay [retired] (rule 3 third-attempt clause). Named untried instrument, different
+in kind: spatial alignment of gloss words to groups from the leaf images (x-extents), gated first on the 122 firm tokens hidden
+(>= 0.80 of >= 40 recoverable, shuffled-row control). Not refuted, not tested; ~15 vision units. NOTES.md "BKLOG-0507".

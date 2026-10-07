@@ -1389,3 +1389,35 @@ Read so far: token level H 50, S 72, M 370, I 7, U 6 of 505 (firm 122), tools/de
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
 - [x] retry: tools/decode_key.py --check exit 0; fresh-session re-derivation SAME twice (RUN6-PAGETR7, D2-PAGR7), 0 tokens differ
 Verdict: keep going: 1 internal gaps; cheapest next: a fifth instrument or new material for the single-attestation codes, ~$2
+
+## BKLOG-0507 (7 Oct 2026, 05:41 UTC by date -u, account-4 worker for the account-3 orchestrator): fifth instrument or retire
+Brief `.claude/briefs/runs/2026-10-07-acct3-batch-0507.md` PART B item 2. Disk only, 0 requests, no vision call on this target's
+text, no key or grade change. Read HYPOTHESES.md and the four instruments retired for the single-attestation codes: (1)
+tools/interlinear_align.py hard-EM (four tests), (2) tools/gibbs_align.py collapsed Gibbs (PREREG_seg2.md PASS), (3) the
+firm-neighbour pin (PREREG_pagr.md known-answer FAIL, 11 pinned), (4) multi-seed settle7 (PREREG_settle7ms.md). All four take
+their chunk boundaries from the *text* of the 56 (cipher run, gloss run) pairs; none uses where on the leaf each gloss word sits.
+A genuinely different instrument therefore exists and is untried: **spatial alignment** -- the decipherer wrote the gloss
+interlinearly over the groups (checked by eye on a re-cut crop of images/f65R.jpg, line 2-3: gloss words sit loosely over runs of
+2-4 groups), so the x-extent of each gloss word against the x-extent of the groups below gives chunk boundaries independent of
+any segmentation statistic. A single-attestation code then gets the gloss letters physically over it, which no text-only
+instrument can give it. Not retired. Not run here: the gloss is faint cursive at the line crops' resolution, so it needs
+native-resolution crops of the 56 runs, two blind positional passes (group x-boxes + gloss-word x-boxes) and a known-answer gate
+first (hide the 122 firm H/S tokens; the spatial chunk must give the firm value on >= 0.80 of >= 40 recoverable, with a
+shuffled-row control), priced at 2 passes x 7 page-halves + 1 reconciliation = 15 units at about USD 0.5 = ~USD 7, above this
+item's USD 2. The Escalation's key-rebuild line goes back to [ ] for it.
+
+## Remaining gaps (BKLOG-0507, 7 Oct 2026)
+Read so far: token level H 50, S 72, M 370, I 7, U 6 of 505 (firm 122), unchanged from D2-PAGR7 (tools/decode_key.py --check 5 Oct 2026, re-derived twice in fresh sessions, RD7-2026-10-05-def2.md); 99.2% of tokens lie under a period interlinear gloss read off the images on disk
+- Code-level values for the 370 M tokens (mostly single-attestation codes) - blocker: open-codes; four text-segmentation instruments run and [retired] for these codes (tools/interlinear_align.py, tools/gibbs_align.py, the firm-neighbour pin, multi-seed settle7); a fifth, spatial gloss-over-group alignment from the leaf images, is untried; next: spatial alignment with a known-answer gate on the 122 firm tokens first, 15 vision units, ~$7; or new material (the Marine B7 original, LOCAL-QUEUE L11)
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (BKLOG-0507, 7 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [ ] key-rebuild: text-segmentation instruments [retired] for the single-attestation codes (interlinear_align, gibbs_align, pin, multi-seed settle7); spatial gloss-over-group alignment untried (BKLOG-0507); next: known-answer gate on the 122 firm tokens, then the M tokens, ~$7
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
+- [x] retry: tools/decode_key.py --check exit 0; fresh-session re-derivation SAME twice (RUN6-PAGETR7, D2-PAGR7), 0 tokens differ
+Verdict: keep going: 1 internal gaps; cheapest next: spatial gloss-over-group alignment, known-answer gate first, ~$7 (or the Marine B7 original, LOCAL-QUEUE L11)

@@ -1,0 +1,73 @@
+line	pos	choice	conf	note
+v36top_L01	1	S16	M	curl-topped triangle X
+v36top_L01	5	S80	H	figure-eight with crossbar
+v36top_L01	6	S73	L	slanted stroke with dot
+v36top_L01	9	S73	L	slanted stroke with dot
+v36top_L01	14	S17	M	Z with hook tail
+v36top_L01	16	S73	L	slanted stroke with dot
+v36top_L01	18	X_THETA2	M	theta with long double strike
+v36top_L01	19	S55	L	loop stem low crossbar
+v36top_L01	21	S25	M	plain n shape
+v36top_L01	24	S87	L	loop with stem, side arm
+v36top_L01	33	S54	M	b with swash stroke
+v36top_L01	38	X_NEW	L	open loop, tail below
+v36top_L02	1	S80	H	figure-eight with crossbar
+v36top_L02	7	S76	M	looped e-y ligature
+v36top_L02	16	S24	M	double bar vertical stroke
+v36top_L02	20	S73	L	slanted stroke with dot
+v36top_L02	21	S17	L	Z shape
+v36top_L02	22	S55	L	loop stem crossbar
+v36top_L02	25	S25	L	n shape
+v36top_L02	26	S61	L	q shape
+v36top_L02	27	S80	M	figure-eight with crossbar
+v36top_L02	28	S73	L	slanted stroke with dot
+v36top_L02	31	S80	M	figure-eight with crossbar
+v36top_L02	32	S76	L	e-y ligature
+v36top_L02	37	S88	M	double bar diagonal slash
+v36top_L03	2	S24	M	double bar vertical stroke
+v36top_L03	6	S80	M	figure-eight with crossbar
+v36top_L03	8	X_THETA2	L	theta double strike
+v36top_L03	9	S84	L	curly x form
+v36top_L03	11	S80	M	figure-eight with crossbar
+v36top_L03	13	S55	L	loop stem crossbar
+v36top_L03	17	S25	L	n shape
+v36top_L03	25	S17	L	Z shape
+v36top_L03	26	S94	L	cross-stem loop
+v36top_L03	28	S80	M	figure-eight with crossbar
+v36top_L03	29	S73	L	slanted stroke with dot
+v36top_L03	31	S65	L	small figure eight
+v36top_L03	32	S17	L	Z shape
+v36top_L03	39	S17	L	Z shape
+v36top_L04	2	S62	L	beta-like descender
+v36top_L04	6	S62	L	beta-like descender
+v36top_L04	7	S74	L	b with dot
+v36top_L04	10	S13	L	small theta
+v36top_L04	19	S88	L	double bar slash
+v36top_L04	27	S80	M	figure-eight with crossbar
+v36top_L04	30	S37	L	loop with stem
+v36top_L04	32	S80	M	figure-eight with crossbar
+v36top_L04	33	X_THETA2	L	theta double strike
+v36top_L04	37	S74	L	b with dot
+v36top_L04	39	S37	L	loop with stem
+v36top_L04	40	S16	L	triangle X
+v36top_L04	41	S17	L	Z shape
+v36top_L04	43	S84	L	curly x form
+v36top_L05	4	X_THETA2	L	theta double strike
+v36top_L05	7	S73	L	slanted stroke with dot
+v36top_L05	8	S17	L	Z shape
+v36top_L05	12	S80	M	figure-eight with crossbar
+v36top_L05	16	S24	L	double bar vertical stroke
+v36top_L05	17	X_THETA2	L	theta double strike
+v36top_L05	23	S42	L	triangle X
+v36top_L05	26	S54	L	b with slash
+v36top_L05	29	S73	L	slanted stroke with dot
+v36top_L05	33	S17	L	Z shape
+v36top_L05	35	S16	L	triangle X
+v36top_L05	36	S80	M	figure-eight with crossbar
+v36top_L05	37	X_THETA2	L	theta double strike
+v36top_L06	9	S23	L	small lambda-like
+v36top_L06	10	S17	L	Z shape
+v36top_L06	11	S67	L	f with hook
+v36top_L06	17	S73	L	slanted stroke with dot
+v36top_L06	18	S88	L	double bar slash
+v36top_L06	20	S13	L	small theta

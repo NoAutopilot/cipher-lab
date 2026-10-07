@@ -1,0 +1,53 @@
+line	pos	choice	conf	note
+v36mid_L01	2	S58	L	short ey with tilde curl
+v36mid_L01	7	S73	L	slanted bar with dot
+v36mid_L01	10	S45	L	small c with dot
+v36mid_L01	11	S17	L	plain Z, no dot
+v36mid_L02	4	S74	M	b with top flourish
+v36mid_L02	6	S53	L	looped P-like stroke
+v36mid_L02	11	S58	L	short ey with tilde curl
+v36mid_L02	16	S42	L	triangle with curl
+v36mid_L02	19	S23	M	small lambda with dot
+v36mid_L02	21	S80	M	8 with horizontal bar
+v36mid_L02	25	S17	L	plain Z shape
+v36mid_L02	28	S23	L	lambda shape
+v36mid_L02	30	S80	L	8 crossed by bar
+v36mid_L02	31	X_THETA2	L	theta with double bar
+v36mid_L02	33	S17	L	plain Z shape
+v36mid_L02	36	S80	L	8 crossed by bar
+v36mid_L02	38	S62	L	beta-like stem
+v36mid_L02	39	S88	L	barred slash shape
+v36mid_L02	40	S30	L	dash with dots
+v36mid_L03	1	S25	L	small n shape
+v36mid_L03	3	S74	L	b with dot
+v36mid_L03	4	S87	L	rho with flag
+v36mid_L03	11	S67	L	f with tail
+v36mid_L03	12	S69	L	theta with bar
+v36mid_L03	13	S80	L	8 crossed by bar
+v36mid_L03	24	X_THETA2	L	theta with double bar
+v36mid_L03	25	S80	L	8 crossed by bar
+v36mid_L03	26	S73	L	slanted bar with dot
+v36mid_L03	30	S80	L	8 crossed by bar
+v36mid_L03	31	S87	L	rho with flag
+v36mid_L03	34	S73	L	slanted bar with dot
+v36mid_L03	39	S73	L	slanted bar with dot
+v36mid_L04	2	S52	L	3 shape
+v36mid_L04	7	S80	L	8 crossed by bar
+v36mid_L04	8	S88	L	barred slash shape
+v36mid_L04	10	S87	L	rho with flag
+v36mid_L05	1	S25	L	small n shape
+v36mid_L05	13	S80	L	8 crossed by bar
+v36mid_L05	16	S25	L	small n shape
+v36mid_L06	3	S23	L	lambda shape
+v36mid_L06	4	S73	L	slanted bar with dot
+v36mid_L06	8	S80	L	8 crossed by bar
+v36mid_L06	9	S58	L	short ey with tilde curl
+v36mid_L06	10	S80	L	8 crossed by bar
+v36mid_L06	11	X_THETA2	L	theta with double bar
+v36mid_L06	15	S58	L	short ey with tilde curl
+v36mid_L06	19	S87	L	rho with flag
+v36mid_L06	24	S40	L	x with tail
+v36mid_L06	25	S80	L	8 crossed by bar
+v36mid_L06	28	S58	L	short ey with tilde curl
+v36mid_L06	30	S25	L	small n shape
+v36mid_L06	32	S87	L	rho with flag
