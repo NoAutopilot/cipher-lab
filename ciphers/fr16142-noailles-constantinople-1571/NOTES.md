@@ -1614,3 +1614,53 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin), D07-NOXT bridge under owner piles (PASS 17 -> 19), D07-NOX510 split-pile bound + c510-516 tile-stream decode (FAIL, PREREG-D07NOX510.md)
 Verdict: keep going: 7 internal gaps; cheapest next: two blind word-level passes on c262 gloss L01-L13, ~$1.5; for c510-516 the next step is the reader-transcription decode (two blind passes on c510 L05-L14, pre-registered), ~$5
+
+## D07-NOXREAD: c510 L05-L14 reader passes, stopped at reconciliation (7 Oct 2026, 01:28-01:4x UTC by date -u, account-1 worker)
+Brief: `.claude/briefs/runs/2026-10-07-account1-default-0042-jobs.md` D07-NOXREAD (D07-NOX510's Verdict next step). Pre-registered
+`PREREG-D07NOXREAD.md` (pushed 3679d640a before either pass ran); scorer `scripts/noxread510.py` (pushed 88561ac1a, before any pass was
+scored; it has not been run on c510 text). Requests: gallica.bnf.fr 1 (f510 native, sha1 matches run2/nxatl/source_manifest.json),
+cryptiana.web.fc2.com 1 (CharlesIX_Acqs2.png, kept out of the repository). Subagents: 2 Sonnet passes; reconciliation by this worker.
+Crop step (run before any subagent call; crops in the worker scratchpad, regenerable by the same command):
+```
+python3 tools/iiif_lines.py --image c510.jpg --region 1050,250,3780,5450 --centres <run2/nxatl/line_centres.json "510"> --follow-slope 300 --slope-margin 15 --max-width 1400 --overlap 100 --prefix c510r --out crops --debug
+  band L05: slope fit y = 738.3 + 0.00113*x ... band L14: slope fit y = 1911.3 + -0.00486*x; wrote 123 crops (30 used: L05-L14 x s1-s3)
+```
+One text row per crop, checked by eye on a stack of the s1 strips and on L07 whole. Reader references: Tomokiyo's table and an exemplar
+sheet of c262 tiles per `witness/c262rc_recon.tsv` label (the label's majority atlas cluster only), plus NX-RECUT's glyph rulings.
+
+**Passes** (`witness/c510_passA_raw.tsv`, `c510_passB_raw.tsv`; scored copies collapse `?{...}` to `?`): A 278 signs, B 277, about 29 per
+cipher line (an eye count of L07 gives 28-29; the atlas's 38-41 tiles per line over-segment this hand). `tools/reconcile_passes.py`:
+agree 216/280 = 77.1%, **err_2reader 0.229 > 0.10** (64 disagreement columns; `witness/c510_disagreements.tsv`, `c510_agreement.tsv`).
+The splits are naming splits, not segmentation: one glyph, a one-bar H, A i3 / B r2 (16); signs A left `?` that B named W:sieur
+(F-hook, 6), q2 (loop, 7), t1 (T, 5), h1 (hook-L, 5), f2 (angle, 3); N2 vs W:ent (3), m2 vs W:dict (2); 12 one-off splits.
+**Reconciled** (`witness/c510_recon.tsv`, log `c510_recon_log.tsv`, by rule, Dupuy not consulted, no decode printed): agreed kept (197);
+one-bar H = i3 by the table (Tomokiyo's "H?" sits under i) and the c262 exemplar (16); a sign named by one reader takes the name (34);
+both unread `?` (19); other one-off splits take pass A (12, M); 2 gap columns dropped. 278 signs.
+**Stop rule applied as registered: no decode statistic computed or reported** (PREREG-D07NOXREAD.md; TRANSCRIPTION.md). Grades: no token
+decoded; H 0, C 0, S 0, M 0, I 0. No reading. What it shows: c510's hand reads at about 29 signs per line and the readers agree on
+structure (equal token counts on 9 of 10 lines, gaps 2) but not on the names of about six glyphs the c262 sheet lacks or shows thinly.
+
+## Remaining gaps (D07-NOXREAD, 7 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner's lock-on onto Dupuy 221R-226R is a basin with one common key (N8-NOX PASS) that agrees with Tomokiyo's key on 7 of 17 bridge piles (N8-NOX2 PASS); that key mapped onto the reconciled c262 reader signs reads toward the gloss beyond four nulls (RUN6-NOXREAD PASS, 0.3506 on the leaf-corrected gloss); test0's known-answer gate passes under both difflib and exact LCS (R9-NOX, stable); per-label masked alignment PASS by the letter but thin, S 2 of 36 (D1-F16142A); bridge widened 17 -> 19 owner piles, key tie 10 of 19, thin (D07-NOXT); c510-516 atlas-tile stream through the 19-pile bridge FAILs vs Dupuy (D07-NOX510); c510 L05-L14 read by two blind reader passes, 278 signs reconciled, readers split 22.9% (D07-NOXREAD, stopped before decode); 0 open leaves decoded
+- Second, print-blind read of c262 gloss L01-L13: two whole-line blind Opus reads missed their own control (DEF1-NOXB 0.667, D2-NOXB2 0.714, gate 0.80); DEF1-NOXG's and R7A-NOX262's corrections rest on print-aware reads only - blocker: not-attempted; next: two independent blind passes on word-level crops of L01-L13 (tools/iiif_lines.py, 2-3 words per crop; the whole-line eye is barred from a third try by rule 3's repeat clause), ~$1.5
+- c262 cipher rows below c262rc L10 (beside gloss L14-L21, read once by R10-NOX2 into gloss_below_L13.tsv) not transcribed, so the gloss cannot join the scored block - blocker: not-attempted; next: cut those rows with tools/iiif_lines.py --follow-slope (region below y 3318, x from ~1380), two blind passes against the settled labels + reconciliation, then extend c262rc_recon.tsv and gloss.tsv together and re-run test0 --check, ~$3
+- c510 L05-L14 decode with Tomokiyo's key on the reader transcription: passes split 22.9% > 0.10, stopped at reconciliation (D07-NOXREAD) - blocker: not-attempted; next: tools/lookalike_pass.py on the named split glyphs (one-bar H i3/r2, F-hook W:sieur, loop q2, T t1, hook-L h1, angle f2, N2/W:ent) with crops cut from witness/c510_recon.tsv positions, what machines still split to the sign sorter focus.tsv; then score witness/c510_recon.tsv (as settled) with scripts/noxread510.py under PREREG-D07NOXREAD.md unchanged, ~$2
+- 14 c262 tiles in owner-split clusters (13 k072, 1 k006) bounded, not placed: only k072's "i" moves between k072 and k072-b, and no placement changes the D07-NOX510 verdict - blocker: not-attempted; next: one eye pass on the 13 k072 crops against the k072/k072-b exemplars only if a later test uses the k072 value, ~$1
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels after the c510 glyph names are settled, ~$5
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (D07-NOXREAD, 7 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); date-only Dupuy matches text-checked (RUN6-NOXDUP, R7A-NOX262)
+- [x] basin test: the locked-on runs share one key (N8-NOX, pre-registered, PASS vs non-locking and shuffled-Dupuy nulls)
+- [x] key tie: basin count-based consensus vs key.tsv via the c262 bridge (N8-NOX2, pre-registered, PASS 7/17 vs 4/5/5); widened under the owner piles to 10/19 (D07-NOXT, PREREG-D07NOXT.md, PASS vs 5/9/4, thin)
+- [retired] decode on atlas tiles: c262 tile-stream decode vs gloss (RUN6-NOXDEC FAIL, 0.1803 on the L01-L13-corrected gloss, still under nulls) and c510-516 tile stream through the 19-pile bridge vs Dupuy (D07-NOX510 FAIL, 0.3428 vs key-perm max 0.3631; beats order-shuffle max 0.3334), instrument atlas-tile stream + LCS/test0 ratio
+- [x] decode on a reader transcription: basin key mapped onto the reconciled c262 signs (RUN6-NOXREAD PASS; 0.3506 vs p99 0.2413/0.2525/max 0.2665/0.2546)
+- [x] per-token alignment: masked per-label alignment PASS by the letter (S 2 vs p99 0/0) with basin anchors gap 3 (RUN6-NOXALIGN, corrected gloss) and with W:-word anchors gap 5 (D1-F16142A, PREREG-D1F16142A.md); neither knob moved S, so more tuning of the same instrument on the same 10 rows is not the next step (rule 3 repeat clause); more cipher rows under the gloss (L14-L21) is
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; registered gate passes under difflib and under exact LCS (R9-NOX, PREREG-R9NOX-LCS.md, stable to the gloss change)
+- [x] print: Charrière III pp.258, 520-524 and 551-558 read; p.258 differs from the leaf gloss at L08 and L09 (spelling)
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin), D07-NOXT bridge under owner piles (PASS 17 -> 19), D07-NOX510 split-pile bound + c510-516 tile-stream decode (FAIL, PREREG-D07NOX510.md), D07-NOXREAD c510 L05-L14 reader passes (split 22.9%, stopped before decode, PREREG-D07NOXREAD.md)
+Verdict: keep going: 7 internal gaps; cheapest next: two blind word-level passes on c262 gloss L01-L13, ~$1.5; for c510 the next step is tools/lookalike_pass.py on the named split glyphs, then the pre-registered score of witness/c510_recon.tsv, ~$2

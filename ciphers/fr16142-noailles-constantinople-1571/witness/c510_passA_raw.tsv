@@ -1,0 +1,10 @@
+L05	?{F-hook} W:le ?{curly-L} N2 ?{s-curl} N1 o1/e2 c1 o1/e2 u1 m2
+L06	?{angle} N1 i3 W:le s2 N2 d1 i3 ?{theta-bracket} W:de N1 ?{2-dot} e3 u1 W:le W:de ?{F-hook} s1 m2 e3 r1 a1 n2 c1 o1/e2 ?{hook-L} ?{F-hook} W:le ?{alpha-d}
+L07	o1/e2 n1 t2 r1 e3 a3 o1/e2 l2 r2 W:le W:de p2 i3 i2 W:le l1 a2 l1 i2 d1 o1/e2 ?{loop} a2 t2 i2 o1/e2 n1 d1 u1
+L08	?{angle} ?{T} l1 N3 W:de ?{phi} l1 q1 p2 a1 s2 W:le a2 ?{flat-box} d1 o1/e2 m2 i1 i2 o1/e2 a2 n2 ?{phi} r1 e3 n1 u1 o1/e2 q1 e1
+L09	?{box-cross} W:de c1 a2 ?{flat-box} r1 a1 t2 i3 i2 a3 o1/e2 ?{S} N2 u1 ?{flat-box} ?{F-hook} r1 e3 t2 o1/e2 i3 ?{loop} e3 n2 N1 ?{h-like} r1 e3 s2
+L10	a3 ?{T} o1/e2 n2 a3 e1 W:de N1 o1/e2 i3 l2 ?{Y-curl} ?{hook-L} l1 n1 N1 o1/e2 n1 d1 i3 i2 a3 ?{F-hook} W:le d1 o1/e2 i3 s2 t2
+L11	r1 e3 s2 o1/e2 i3 x1 ?{loop} e1 d1 i3 p2 e3 u1 W:de p2 r1 ?{phi} ?{angle} ?{7} i2 t2 ?{hook-L} ?{F-hook} i3 ?{loop} r1 e3 u1 ?{T} N2
+L12	W:de N1 o1/e2 t2 e3 l1 i2 o1/e2 e3 r1 a1 l1 i2 t2 e1 m2 a1 ?{T} W:le ?{kite} W:de N1 o1/e2 i3 u1 e3 ?{loop} t2 ?{hook-L} l1 N3
+L13	n1 e1 s2 o1/e2 r1 n1 ?{a-curl} i3 o1/e2 q1 ?{hook-L} l1 N3 p2 o1/e2 i3 r1 s2 u1 ?{T} i3 N2 l1 i2 N1 o1/e2 n2 t2 ?{T}
+L14	e3 W:le o1/e2 n2 c1 o1/e2 ?{loop} o1/e2 W:le n1 o1/e2 n2 t2 a2 n1 a3 ?{N-s} ?{d-fancy} t2 a3 a2 n2 x1 ?{loop} e1 ?{F-hook} s2 i3 c1 N1

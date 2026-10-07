@@ -1,0 +1,84 @@
+line	pos	A	B	ruling	rule
+L05	1		W:sieur	W:sieur	one reader named (B)
+L05	3		-		gap, dropped
+L05	4	N2	W:faire	N2	one-off split, pass A (M)
+L05	5			?	both unread
+L05	11	m2	W:dict	m2	one-off split, pass A (M)
+L06	1		f2	f2	one reader named (B)
+L06	2	N1	o1/e2	N1	one-off split, pass A (M)
+L06	3	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L06	6	N2	W:ent	N2	one-off split, pass A (M)
+L06	8	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L06	9			?	both unread
+L06	12			?	both unread
+L06	17		W:sieur	W:sieur	one reader named (B)
+L06	19	m2	W:dict	m2	one-off split, pass A (M)
+L06	26		h1	h1	one reader named (B)
+L06	27		W:sieur	W:sieur	one reader named (B)
+L06	29		a3	a3	one reader named (B)
+L07	8	l2	n2	l2	one-off split, pass A (M)
+L07	13	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L07	22		q2	q2	one reader named (B)
+L08	1		f2	f2	one reader named (B)
+L08	2		t1	t1	one reader named (B)
+L08	4	N3		N3	one reader named (A)
+L08	6			?	both unread
+L08	14			?	both unread
+L08	18	i1	W:dict	i1	one-off split, pass A (M)
+L08	23			?	both unread
+L09	1			?	both unread
+L09	5			?	both unread
+L09	9	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L09	13		-		gap, dropped
+L09	14	N2	e3	N2	one-off split, pass A (M)
+L09	15	u1	W:ent	u1	one-off split, pass A (M)
+L09	16			?	both unread
+L09	17			?	both unread
+L09	18	W:sieur		W:sieur	one reader named (A)
+L09	23	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L09	24		q2	q2	one reader named (B)
+L09	28			?	both unread
+L10	2		t1	t1	one reader named (B)
+L10	10	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L10	12			?	both unread
+L10	13		h1	h1	one reader named (B)
+L10	20	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L10	23		W:sieur	W:sieur	one reader named (B)
+L10	27	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L11	5	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L11	7		q2	q2	one reader named (B)
+L11	10	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L11	17			?	both unread
+L11	18		f2	f2	one reader named (B)
+L11	19			?	both unread
+L11	22		h1	h1	one reader named (B)
+L11	23		W:sieur	W:sieur	one reader named (B)
+L11	24	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L11	25		q2	q2	one reader named (B)
+L11	27	e3	c1	e3	one-off split, pass A (M)
+L11	29		t1	t1	one reader named (B)
+L11	30	N2	W:ent	N2	one-off split, pass A (M)
+L12	18	t1		t1	one reader named (A)
+L12	19			?	both unread
+L12	20	W:le	-	W:le	one reader named (A)
+L12	21			?	both unread
+L12	25	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L12	28		q2	q2	one reader named (B)
+L12	30		h1	h1	one reader named (B)
+L12	32	N3		N3	one reader named (A)
+L13	6	n1		n1	one reader named (A)
+L13	7			?	both unread
+L13	8	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L13	11		h1	h1	one reader named (B)
+L13	13	N3		N3	one reader named (A)
+L13	16	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L13	20		t1	t1	one reader named (B)
+L13	21	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)
+L13	22	N2	W:ent	N2	one-off split, pass A (M)
+L13	29		t1	t1	one reader named (B)
+L14	7		q2	q2	one reader named (B)
+L14	17			?	both unread
+L14	18			?	both unread
+L14	24		q2	q2	one reader named (B)
+L14	26		W:sieur	W:sieur	one reader named (B)
+L14	28	i3	r2	i3	glyph ruling: one-bar H = i3 (Tomokiyo H? under i; c262 exemplar i3)

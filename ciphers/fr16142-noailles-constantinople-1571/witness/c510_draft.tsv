@@ -1,0 +1,281 @@
+line	position	sign	confidence	alt	why
+L05	1		M	B:W:sieur	differ
+L05	2	W:le	H		agree
+L05	3		M	B:-	gap
+L05	4	N2	M	B:W:faire	differ
+L05	5		M		agree-flagged
+L05	6	N1	H		agree
+L05	7	o1/e2	H		agree
+L05	8	c1	H		agree
+L05	9	o1/e2	H		agree
+L05	10	u1	H		agree
+L05	11	m2	M	B:W:dict	differ
+L06	1		M	B:f2	differ
+L06	2	N1	M	B:o1/e2	differ
+L06	3	i3	M	B:r2	differ
+L06	4	W:le	H		agree
+L06	5	s2	H		agree
+L06	6	N2	M	B:W:ent	differ
+L06	7	d1	H		agree
+L06	8	i3	M	B:r2	differ
+L06	9		M		agree-flagged
+L06	10	W:de	H		agree
+L06	11	N1	H		agree
+L06	12		M		agree-flagged
+L06	13	e3	H		agree
+L06	14	u1	H		agree
+L06	15	W:le	H		agree
+L06	16	W:de	H		agree
+L06	17		M	B:W:sieur	differ
+L06	18	s1	H		agree
+L06	19	m2	M	B:W:dict	differ
+L06	20	e3	H		agree
+L06	21	r1	H		agree
+L06	22	a1	H		agree
+L06	23	n2	H		agree
+L06	24	c1	H		agree
+L06	25	o1/e2	H		agree
+L06	26		M	B:h1	differ
+L06	27		M	B:W:sieur	differ
+L06	28	W:le	H		agree
+L06	29		M	B:a3	differ
+L07	1	o1/e2	H		agree
+L07	2	n1	H		agree
+L07	3	t2	H		agree
+L07	4	r1	H		agree
+L07	5	e3	H		agree
+L07	6	a3	H		agree
+L07	7	o1/e2	H		agree
+L07	8	l2	M	B:n2	differ
+L07	9	r2	H		agree
+L07	10	W:le	H		agree
+L07	11	W:de	H		agree
+L07	12	p2	H		agree
+L07	13	i3	M	B:r2	differ
+L07	14	i2	H		agree
+L07	15	W:le	H		agree
+L07	16	l1	H		agree
+L07	17	a2	H		agree
+L07	18	l1	H		agree
+L07	19	i2	H		agree
+L07	20	d1	H		agree
+L07	21	o1/e2	H		agree
+L07	22		M	B:q2	differ
+L07	23	a2	H		agree
+L07	24	t2	H		agree
+L07	25	i2	H		agree
+L07	26	o1/e2	H		agree
+L07	27	n1	H		agree
+L07	28	d1	H		agree
+L07	29	u1	H		agree
+L08	1		M	B:f2	differ
+L08	2		M	B:t1	differ
+L08	3	l1	H		agree
+L08	4	N3	M	B:	differ
+L08	5	W:de	H		agree
+L08	6		M		agree-flagged
+L08	7	l1	H		agree
+L08	8	q1	H		agree
+L08	9	p2	H		agree
+L08	10	a1	H		agree
+L08	11	s2	H		agree
+L08	12	W:le	H		agree
+L08	13	a2	H		agree
+L08	14		M		agree-flagged
+L08	15	d1	H		agree
+L08	16	o1/e2	H		agree
+L08	17	m2	H		agree
+L08	18	i1	M	B:W:dict	differ
+L08	19	i2	H		agree
+L08	20	o1/e2	H		agree
+L08	21	a2	H		agree
+L08	22	n2	H		agree
+L08	23		M		agree-flagged
+L08	24	r1	H		agree
+L08	25	e3	H		agree
+L08	26	n1	H		agree
+L08	27	u1	H		agree
+L08	28	o1/e2	H		agree
+L08	29	q1	H		agree
+L08	30	e1	H		agree
+L09	1		M		agree-flagged
+L09	2	W:de	H		agree
+L09	3	c1	H		agree
+L09	4	a2	H		agree
+L09	5		M		agree-flagged
+L09	6	r1	H		agree
+L09	7	a1	H		agree
+L09	8	t2	H		agree
+L09	9	i3	M	B:r2	differ
+L09	10	i2	H		agree
+L09	11	a3	H		agree
+L09	12	o1/e2	H		agree
+L09	13		M	B:-	gap
+L09	14	N2	M	B:e3	differ
+L09	15	u1	M	B:W:ent	differ
+L09	16		M		agree-flagged
+L09	17		M		agree-flagged
+L09	18	W:sieur	M	A:-	gap
+L09	19	r1	H		agree
+L09	20	e3	H		agree
+L09	21	t2	H		agree
+L09	22	o1/e2	H		agree
+L09	23	i3	M	B:r2	differ
+L09	24		M	B:q2	differ
+L09	25	e3	H		agree
+L09	26	n2	H		agree
+L09	27	N1	H		agree
+L09	28		M		agree-flagged
+L09	29	r1	H		agree
+L09	30	e3	H		agree
+L09	31	s2	H		agree
+L10	1	a3	H		agree
+L10	2		M	B:t1	differ
+L10	3	o1/e2	H		agree
+L10	4	n2	H		agree
+L10	5	a3	H		agree
+L10	6	e1	H		agree
+L10	7	W:de	H		agree
+L10	8	N1	H		agree
+L10	9	o1/e2	H		agree
+L10	10	i3	M	B:r2	differ
+L10	11	l2	H		agree
+L10	12		M		agree-flagged
+L10	13		M	B:h1	differ
+L10	14	l1	H		agree
+L10	15	n1	H		agree
+L10	16	N1	H		agree
+L10	17	o1/e2	H		agree
+L10	18	n1	H		agree
+L10	19	d1	H		agree
+L10	20	i3	M	B:r2	differ
+L10	21	i2	H		agree
+L10	22	a3	H		agree
+L10	23		M	B:W:sieur	differ
+L10	24	W:le	H		agree
+L10	25	d1	H		agree
+L10	26	o1/e2	H		agree
+L10	27	i3	M	B:r2	differ
+L10	28	s2	H		agree
+L10	29	t2	H		agree
+L11	1	r1	H		agree
+L11	2	e3	H		agree
+L11	3	s2	H		agree
+L11	4	o1/e2	H		agree
+L11	5	i3	M	B:r2	differ
+L11	6	x1	H		agree
+L11	7		M	B:q2	differ
+L11	8	e1	H		agree
+L11	9	d1	H		agree
+L11	10	i3	M	B:r2	differ
+L11	11	p2	H		agree
+L11	12	e3	H		agree
+L11	13	u1	H		agree
+L11	14	W:de	H		agree
+L11	15	p2	H		agree
+L11	16	r1	H		agree
+L11	17		M		agree-flagged
+L11	18		M	B:f2	differ
+L11	19		M		agree-flagged
+L11	20	i2	H		agree
+L11	21	t2	H		agree
+L11	22		M	B:h1	differ
+L11	23		M	B:W:sieur	differ
+L11	24	i3	M	B:r2	differ
+L11	25		M	B:q2	differ
+L11	26	r1	H		agree
+L11	27	e3	M	B:c1	differ
+L11	28	u1	H		agree
+L11	29		M	B:t1	differ
+L11	30	N2	M	B:W:ent	differ
+L12	1	W:de	H		agree
+L12	2	N1	H		agree
+L12	3	o1/e2	H		agree
+L12	4	t2	H		agree
+L12	5	e3	H		agree
+L12	6	l1	H		agree
+L12	7	i2	H		agree
+L12	8	o1/e2	H		agree
+L12	9	e3	H		agree
+L12	10	r1	H		agree
+L12	11	a1	H		agree
+L12	12	l1	H		agree
+L12	13	i2	H		agree
+L12	14	t2	H		agree
+L12	15	e1	H		agree
+L12	16	m2	H		agree
+L12	17	a1	H		agree
+L12	18	t1	M	A:-	gap
+L12	19		M		agree-flagged
+L12	20	W:le	M	B:-	gap
+L12	21		M		agree-flagged
+L12	22	W:de	H		agree
+L12	23	N1	H		agree
+L12	24	o1/e2	H		agree
+L12	25	i3	M	B:r2	differ
+L12	26	u1	H		agree
+L12	27	e3	H		agree
+L12	28		M	B:q2	differ
+L12	29	t2	H		agree
+L12	30		M	B:h1	differ
+L12	31	l1	H		agree
+L12	32	N3	M	B:	differ
+L13	1	n1	H		agree
+L13	2	e1	H		agree
+L13	3	s2	H		agree
+L13	4	o1/e2	H		agree
+L13	5	r1	H		agree
+L13	6	n1	M	B:	differ
+L13	7		M		agree-flagged
+L13	8	i3	M	B:r2	differ
+L13	9	o1/e2	H		agree
+L13	10	q1	H		agree
+L13	11		M	B:h1	differ
+L13	12	l1	H		agree
+L13	13	N3	M	B:	differ
+L13	14	p2	H		agree
+L13	15	o1/e2	H		agree
+L13	16	i3	M	B:r2	differ
+L13	17	r1	H		agree
+L13	18	s2	H		agree
+L13	19	u1	H		agree
+L13	20		M	B:t1	differ
+L13	21	i3	M	B:r2	differ
+L13	22	N2	M	B:W:ent	differ
+L13	23	l1	H		agree
+L13	24	i2	H		agree
+L13	25	N1	H		agree
+L13	26	o1/e2	H		agree
+L13	27	n2	H		agree
+L13	28	t2	H		agree
+L13	29		M	B:t1	differ
+L14	1	e3	H		agree
+L14	2	W:le	H		agree
+L14	3	o1/e2	H		agree
+L14	4	n2	H		agree
+L14	5	c1	H		agree
+L14	6	o1/e2	H		agree
+L14	7		M	B:q2	differ
+L14	8	o1/e2	H		agree
+L14	9	W:le	H		agree
+L14	10	n1	H		agree
+L14	11	o1/e2	H		agree
+L14	12	n2	H		agree
+L14	13	t2	H		agree
+L14	14	a2	H		agree
+L14	15	n1	H		agree
+L14	16	a3	H		agree
+L14	17		M		agree-flagged
+L14	18		M		agree-flagged
+L14	19	t2	H		agree
+L14	20	a3	H		agree
+L14	21	a2	H		agree
+L14	22	n2	H		agree
+L14	23	x1	H		agree
+L14	24		M	B:q2	differ
+L14	25	e1	H		agree
+L14	26		M	B:W:sieur	differ
+L14	27	s2	H		agree
+L14	28	i3	M	B:r2	differ
+L14	29	c1	H		agree
+L14	30	N1	H		agree
