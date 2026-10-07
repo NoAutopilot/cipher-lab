@@ -1,0 +1,14 @@
+# BnF italien 1583 f.70 (Vincenzo Amidani to Francesco Sforza, Milan 4 May 1446), cipher slip, read from DECODE R7899 image
+# IMG_R7899_I35638_P1 (images/), line crops images/f70_L01-08.jpg. Pass A: blind Sonnet pass (SFZ-70, 7 Oct 2026) in labels.md labels
+# (ciphers/sforza-italien1584-1447/amidani/labels.md, SFZ-70 additions Nc Nr Na Nb Np Ns Ny Nm Nh Nw), pass-local N-labels
+# harmonised by their written descriptions. Reader's own confidence about 40% per sign. Plain-script words (w:) dropped.
+# Pass B (ciphertext_f70_passB.tsv) read only 228 signs; A vs B agree 37.9% (tools/reconcile_passes.py, nw);
+# A vs Bourdeau's independent draft (ciphertext_f70.txt): 75.3% of 369 aligned pairs on each Bourdeau code's majority label.
+f70_L01	? D Nc e Q g Ns Nb Nc Np Nb Nr 8 Np Nc Na Q e z Nr Ns Ny Q Nb + e Q 8 Nh Nb z Na e J 4 z Ns n Nr Nc 8 Nb Nc z Nm Nc Np Na e Nc Nr z
+f70_L02	Nm Nc Np Ns Ny Ns e Q 8 Nr Nb Q + Ny e Nc Np Q Nr Ns Np Ns 8 Np Ny 8 Nb Q z Np Np Ns Np z Q Nr Nb Nm e h Nc Q Nc Nb 8 Nb Nc Nr 8 Nb Q
+f70_L03	Nr Ns z Q Nb Nc Nc Np Q Np Ns Np Ny Ns Np Nc Q Np Ny Nc Nc z Nm Np Np Q 8 n z a Y + Ns Nm Nc Np Na e Ny z + 8 Q Ns e Np Ny Q Nc Np Ny Q Nc Np
+f70_L04	Nb Q Np Q Np z 8 Nc Nb Nc z Na Np Ns Nb Nc Ny Ns Ns Na Ns Nh Q Np Np Np Nc Np ? Np Q Np h Np Nc Nc Nc Np Ns Q Np Ns Q Nc e h Nb ? Ns Nr Nr Ns Nr Nb Np 8 ? z
+f70_L05	Nb Ns Np 8 Nb Ns Np Ns Nw Np Np Np Ns Nm Np Nb Nr Nc z Np Ny Nh Np Nb Nb Nc Nr Nc z Nc Nb Np Ns Nb a Y Np Np Nr Nc z Np 4 Q Ny Nm Nr Na Np Ny Np Np Np
+f70_L06	Y Q Nb Q Nr Nm Np Nc Nb Q Ny Q b Nb Nr 8 Nc Nr Ns Np Ns Q z Nc Nb Np e Np Np Nb Nc Nb Np z Nb Nc z Nr Ns Np Nb Np z Nb
+f70_L07	Nb Nr Na Nm Ny Nb + n Nr Nc Nm Na Nr Q Np Ns Np Ns Q Nb Nc Ny Np Nr Ns Ns Ny Nc Nb x Nb 8 Nr 3 z 8 8 Np Na Np Nc Np Na + 8 Ns Nr e Ns Ns Nr Nb z
+f70_L08	Na Np Ns Q Ny 8 Ny Q Ns Q Np 8 Nc Nb Nc Na + g 6 Y Nb Nc Nc Ny Nm Np Np Na 8 8 Nb Nc Nr Nb Nb 6 Na Nc

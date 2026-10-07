@@ -11,6 +11,10 @@ compared with 200 shuffled keys (the key's sign -> value map permuted among mapp
 PASS (pre-registered in the brief) = both statistics above the shuffle p95. No reading file is written unless it passes.
 
     python3 ciphers/sforza-italien1584-1447/amidani/f70_test.py
+    python3 ciphers/sforza-italien1584-1447/amidani/f70_test.py --labels ciphers/sforza-maino-1446/ciphertext_f70_ours.tsv
+--labels (SFZ-70, 7 Oct 2026): read f.70 already transcribed in labels.md labels (TSV: line id, space-separated labels) and
+decode with the identity map instead of MAP (add --nearest to send the SFZ-70 f.70-only labels to their nearest 1447 label
+by description, NEAREST below, a best case for the 1447 key); '?' and 'a/b?' tokens are dropped, labels absent from key.tsv are not decoded.
 """
 import os, sys
 import numpy as np
@@ -53,6 +57,8 @@ MAP = {
     'P': None,    # barred p: no counterpart
     's': 'S',     # s: our S (curl + long s) -- weak
 }
+# SFZ-70: f.70-only labels (labels.md, SFZ-70 additions) -> nearest 1447 label by description (a best case, not a finding)
+NEAREST = {'Nc': 'F', 'Ns': 'f', 'Nr': 'l', 'Nb': 'P', 'Np': 'q', 'Ny': 'Y', 'Na': '>', 'Nm': 'R', 'Nh': 'K', 'Nw': 'W'}
 SEED = 70
 NSHUF = 200
 
@@ -64,14 +70,22 @@ def main():
             a = l.split('\t')
             key[a[0]] = a[1]
     codes = []
-    for l in open(os.path.join(ROOT, 'ciphers', 'sforza-maino-1446', 'ciphertext_f70.txt')):
-        if l.startswith('#'):
-            continue
-        for t in l.split():
-            if t.startswith('{') or t == '.':
+    labels_file = sys.argv[sys.argv.index('--labels') + 1] if '--labels' in sys.argv else None
+    if labels_file:
+        for l in open(labels_file):
+            if l.startswith('#') or '\t' not in l:
                 continue
-            codes.append(t)
-    labs = [MAP.get(c) for c in codes]
+            codes += [t for t in l.split('\t', 1)[1].split() if '?' not in t and not t.startswith('w:')]
+        labs = [NEAREST.get(c, c) for c in codes] if '--nearest' in sys.argv else list(codes)
+    else:
+        for l in open(os.path.join(ROOT, 'ciphers', 'sforza-maino-1446', 'ciphertext_f70.txt')):
+            if l.startswith('#'):
+                continue
+            for t in l.split():
+                if t.startswith('{') or t == '.':
+                    continue
+                codes.append(t)
+        labs = [MAP.get(c) for c in codes]
     nomap = sorted({c for c, l in zip(codes, labs) if l is None or l not in key})
     covered = [l for l in labs if l is not None and l in key]
     signs = sorted(set(covered))
@@ -93,7 +107,7 @@ def main():
         sl.append(a); sq.append(b)
     p95l, p95q = np.quantile(sl, 0.95), np.quantile(sq, 0.95)
     ok = real_lm > p95l and real_q > p95q
-    print(f'f.70 codes {len(codes)}; decoded {len(covered)}; codes with no counterpart or untrained: {" ".join(nomap)}')
+    print(f'f.70 codes {len(codes)}; decoded {len(covered)} ({len(covered) / max(len(codes), 1):.1%}); codes with no counterpart or untrained: {" ".join(nomap)}')
     print(f'lm(it16dip)\treal {real_lm:.3f}\tshuffle mean {np.mean(sl):.3f}\tp95 {p95l:.3f}')
     print(f'q4(copies)\treal {real_q:.3f}\tshuffle mean {np.mean(sq):.3f}\tp95 {p95q:.3f}')
     print(f'verdict: {"PASS" if ok else "FAIL"} (both above shuffle p95 required)')

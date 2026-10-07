@@ -399,3 +399,82 @@ canvases) anchors: c31=f.12, c60=f.31, c151=f.78.
 
 Requests: gallica.bnf.fr about 245 (2 manifests, 22 anchor crops, 177 italien 1584 strips, 6+34 italien 1585 crops,
 8 cipher bands; 1 HTTP 500 retried once).
+
+## Premise check (SFZ-70, 7 Oct 2026, for LANE ST-REBUILD)
+
+This adversarial pre-reading pass covers f.70 only. It was run before the f.70 re-read below. The status line was not moved.
+(a) **Decipherments the folder already mentions.** None of f.70 exists. SFZ-1's f.70 test (amidani/NOTES.md, step 6) FAILed
+    and wrote no reading. This folder's key.tsv is the best key of a failed anneal (its header says "NOT A READING").
+(b) **Other solvers' working files.** dbourdeau/cyphersolver was cloned at HEAD 1fb3c46 (7 Oct 2026). Its
+    targets/it1583/NOTES.md still reads "Status: attempted, closed unread" (21 Sept 2026), and its CATALOGUE.md row says
+    "no matching key among DECODE's Sforza keys". transcription_f70.txt is unchanged from the copy here. A grep of the
+    repository for "Amidani" hits only it1583 files, CATALOGUE.md, docs and catalogue.json. "Cerioni" is named only as a place
+    to look for printed Sforza keys (it1583 NOTES.md l.56, research/oldest/CANDIDATES.md, CATALOGUE.md). No Cerioni
+    decipherment of f.70 is cited there.
+(c) **DECODE.** R7899, read logged in on 7 Oct 2026: name BnF_1583_075, holder "BnF, 1583, f 75", date 1446-5-4, Status
+    "Non-decrypted", Cipher Type Unknown, 0 documents, 2 images. R7898 was not re-opened (one login, one record). Bourdeau
+    recorded it on 21 Sept 2026 as Non-decrypted.
+(d) **Neighbouring leaves and the recipient-side edition.** Mazzatinti's 1883 inventory (ASL X p.230) has "f. 70. Lettera di
+    Vincenzo Amidani a Fr. Sforza (Milano 4 maggio). In cifre." with no decipherment noted. No clear copy of f.70 is known: the
+    DECODE image shows the slip with no copy beside it, and the left page is an unrelated clear letter. Not checked:
+    Mazzatinti *Manoscritti italiani* t. II pp. 285-291, Cerioni 1970 vol. 2 (not reachable from the cloud), and the
+    Sforza-side registers in ASMi.
+Verdict: no prior decipherment of f.70 was found in (a)-(d). The intake gate stays terminal (closed-negative). This job is
+the brief's named key test, not a campaign.
+
+## f.70 re-read from the DECODE image and the 1447 Amidani key test (SFZ-70, 7 Oct 2026, for LANE ST-REBUILD)
+
+**Image.** One DECODE login. Command:
+`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 7899 <scratch> --guess-fullsize`.
+- It served the full-size IMG_R7899_I35638_P1 at 3702x2590, a binarized microfilm image of an opening. The f.70 slip is
+  upper right; its corner number reads "71" or "70" (unclear) and it is headed "1446 4 Mai". Kept as images/IMG_R7899_I35638_P1.png.
+- P2 is another leaf's address side and was not kept.
+- Crops: `python3 tools/iiif_lines.py --image ciphers/sforza-maino-1446/images/IMG_R7899_I35638_P1.png --region 2140,180,1440,420 --centres 58,92,124,156,190,227,264,298 --top-margin 14 --bottom-margin 14 --out ciphers/sforza-maino-1446/images --prefix f70 --overlap 0 --debug`.
+  The automatic centres split lines, so the centres were set by eye from the overlay.
+- The readers got 2x enlargements of each line, split into two halves (scratchpad).
+
+**Reading.** Two blind Sonnet passes used amidani/labels.md (the 1447 sheet).
+- Each pass said, independently and unprompted, that the hand's dominant signs do not fit the 1447 sheet. Each coined its own
+  N-labels: a two-bar comb, a one-bar stem, a double arrow, a flagged b, a flagged p, a long-s and a looped psi.
+- These were harmonised by description into labels.md's SFZ-70 additions (Nc Nr Na Nb Np Ns Ny Nm Nh Nw).
+- Pass A: 403 signs over 8 lines (`ciphertext_f70_ours.tsv`). Pass B: 228 signs (`ciphertext_f70_passB.tsv`); it largely missed
+  the right halves of L02-L08. Each reader put its own accuracy at about 40% per sign.
+- err_2reader: A vs B agree on 158/417 columns (37.9%, `tools/reconcile_passes.py`, nw). The figure is mostly B's omissions.
+- err_true is not measurable: there is no benchmark item for this hand.
+
+**Comparison with Bourdeau's draft, token by token.** Pass A was aligned to `ciphertext_f70.txt` line by line (NW alignment
+with an iterated code -> label map; script in this job's report, not committed). Both have 8 lines of similar length: Bourdeau
+390 codes, pass A 403 signs.
+- 75.3% of the 369 aligned pairs fall on each Bourdeau code's majority label.
+- 14 of his 31 codes map one-to-one (at least 4 aligned, at least 0.6 on one label): Q=Q, +=Nr, p=Np, F=Nc, S=Ns, z=z, 8=8,
+  Y=Ny, >=Na, d=8, r=Nm, B=Nb, X=Ny, V=Q.
+- His E (11.8%) splits Nb 22 / Nc 7. His J, c and H fall mostly on Np, which is our weakest distinction.
+- So the two independent reads agree on the sign stream far better than A agrees with B.
+- Bourdeau's "+" and "F" are not the 1447 cross and "ff". They are the one-bar stem and the two-bar comb. This is why SFZ-1's
+  description-only map could not test the key.
+
+**Key test** (pre-registered: `amidani/f70_test.py`, statistics unchanged, 200 shuffles of the key's sign -> value map; the
+shuffle changes the decoded letters, so it can change both statistics). PASS needs both statistics above the shuffle p95.
+Output: `amidani/f70_test_sfz70.out`.
+
+| f.70 input | decodable | lm it16dip (real / shuffle mean / p95) | q4 copies (real / mean / p95) | verdict |
+|---|---|---|---|---|
+| pass A, identity map | 121/399 (30.3%) | -2.316 / -2.069 / -1.700 | 0.008 / 0.010 / 0.034 | FAIL |
+| pass A, nearest 1447 label (`--nearest`, best case) | 397/399 | -1.790 / -2.013 / -1.743 | 0.028 / 0.015 / 0.033 | FAIL |
+| pass B, nearest 1447 label | 214/220 | -1.962 / -2.044 / -1.798 | 0.009 / 0.014 / 0.028 | FAIL |
+| (SFZ-1, Bourdeau codes, description map) | 377/390 | -1.779 / -2.016 / -1.812 | 0.029 / 0.016 / 0.032 | FAIL |
+
+**1446 key differs from 1447 at this transcription.** Two observations support this, each conditional on a binarized microfilm
+image and readers at about 40% confidence:
+- About 65% of f.70's tokens are shapes for which the 1447 key has no label.
+- Mapping them to their nearest 1447 labels gives a decode that is not Italian and does not pass the control.
+The nearest-label decode begins "irmseloraoacaresmtalmsoamsclotemnet...".
+
+**Status and grading.** The status line is not moved; the lane decides that after a verifier. No reading was written. No f.70
+token is graded above M. decode.py and judge_plaintext were not run, because they are required only on a PASS.
+
+**Requests.** de-crypt.org: one login and the record plus 2 images and 2 thumbnails, all fetched by the tool in one session.
+github.com: one shallow clone. No other host.
+**Suggestion, not started (Usage 7).** Treat f.70 as an unglossed 1446 letter in its own key. The pool route is Amidani's other
+1446 letters, or 1446 Sforza letters with clear copies in italien 1583 (not on Gallica: microfilm MF 16151, matrix R 151450).
+They would need the SFZ-1 known-plaintext method in a 1446 label set.

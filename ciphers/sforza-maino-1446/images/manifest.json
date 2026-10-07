@@ -1,0 +1,265 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f70_L01.jpg",
+   "source_url": "",
+   "source_file": "IMG_R7899_I35638_P1.png",
+   "box": [
+    2140,
+    207,
+    3580,
+    269
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     58,
+     92,
+     124,
+     156,
+     190,
+     227,
+     264,
+     298
+    ]
+   },
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "f70_L02.jpg",
+   "source_url": "",
+   "source_file": "IMG_R7899_I35638_P1.png",
+   "box": [
+    2140,
+    241,
+    3580,
+    302
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     58,
+     92,
+     124,
+     156,
+     190,
+     227,
+     264,
+     298
+    ]
+   },
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "f70_L03.jpg",
+   "source_url": "",
+   "source_file": "IMG_R7899_I35638_P1.png",
+   "box": [
+    2140,
+    274,
+    3580,
+    334
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     58,
+     92,
+     124,
+     156,
+     190,
+     227,
+     264,
+     298
+    ]
+   },
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "f70_L04.jpg",
+   "source_url": "",
+   "source_file": "IMG_R7899_I35638_P1.png",
+   "box": [
+    2140,
+    306,
+    3580,
+    367
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     58,
+     92,
+     124,
+     156,
+     190,
+     227,
+     264,
+     298
+    ]
+   },
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "f70_L05.jpg",
+   "source_url": "",
+   "source_file": "IMG_R7899_I35638_P1.png",
+   "box": [
+    2140,
+    339,
+    3580,
+    402
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     58,
+     92,
+     124,
+     156,
+     190,
+     227,
+     264,
+     298
+    ]
+   },
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "f70_L06.jpg",
+   "source_url": "",
+   "source_file": "IMG_R7899_I35638_P1.png",
+   "box": [
+    2140,
+    374,
+    3580,
+    439
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     58,
+     92,
+     124,
+     156,
+     190,
+     227,
+     264,
+     298
+    ]
+   },
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "f70_L07.jpg",
+   "source_url": "",
+   "source_file": "IMG_R7899_I35638_P1.png",
+   "box": [
+    2140,
+    411,
+    3580,
+    475
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     58,
+     92,
+     124,
+     156,
+     190,
+     227,
+     264,
+     298
+    ]
+   },
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "f70_L08.jpg",
+   "source_url": "",
+   "source_file": "IMG_R7899_I35638_P1.png",
+   "box": [
+    2140,
+    447,
+    3580,
+    509
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     58,
+     92,
+     124,
+     156,
+     190,
+     227,
+     264,
+     298
+    ]
+   },
+   "date": "07 Oct 2026"
+  }
+ ],
+ "decode": [
+  {
+   "file": "IMG_R7899_I35638_P1.png",
+   "source": "de-crypt.org DECODE record 7899 (BnF_1583_075; status Non-decrypted, 0 documents, 2 images), image IMG_R7899_I35638_P1, full size via tools/decode_browser_login.js 7899 --guess-fullsize (one login)",
+   "size": [
+    3702,
+    2590
+   ],
+   "note": "converted to 8-bit greyscale PNG; source is a binarized microfilm image. f.70 slip is the upper right block (region 2140,180,1440,420). P2 (1638x1275) is the verso/address of another leaf, not kept.",
+   "date": "07 Oct 2026",
+   "by": "SFZ-70"
+  }
+ ]
+}

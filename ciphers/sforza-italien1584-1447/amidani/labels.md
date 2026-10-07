@@ -55,3 +55,14 @@ Clear (uncoded) words written in ordinary script among the signs: write them as 
 - `A`: a-like sign with a bar or tilde above (ā). `P`: b with a bar through the ascender (ƀ). `n`: ∩-shaped sign. `K`: ß-like
   (fi-ligature-like) sign. `X`: a large cross with a loop (f.148 L7 only). `V`: circle with a horizontal bar (θ). `4`: 4-like.
 - Deviation from the brief: these were read by SFZ-1 itself (one reader), not by two blind Sonnet passes; see NOTES.md.
+
+## Additions made for f.70 (italien 1583, 1446; SFZ-70, 7 Oct 2026)
+
+Both blind passes on f.70 found its commonest signs outside the 1447 sheet. Their pass-local N-labels were harmonised by
+description into these labels (Bourdeau's f.70 code in brackets, from the token alignment in sforza-maino-1446/NOTES.md):
+- `Nc` vertical stem with two short bars to the right, comb-like "⊧" [F]. `Nr` stem with one mid bar to the right, "⊢" [+].
+- `Na` double arrow "⇒" [>]. `Nb` b/6 with a bar or flag across the top, "ƀ" [E, B]. `Np` p/rho with a rising flag [p, also J/H/c].
+- `Ns` tall long-s "ʃ" [S]. `Ny` looped psi-like sign on a stem [Y, X]. `Nm` small r/gamma with a tail [r]. `Nh` hatched sign. `Nw` wave/"oo" flourish.
+None of these has a value in key.tsv: the 1447 reader used no label with these descriptions. Their nearest 1447 labels by
+description are in f70_test.py NEAREST. SFZ-70 compared two crops by eye (f.148 L3, f.366 L2) and saw no comb or one-bar-stem signs
+there. That is a spot check, not a sign-by-sign audit of the 1447 slips.

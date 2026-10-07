@@ -1,0 +1,20 @@
+$ python3 ciphers/sforza-italien1584-1447/amidani/f70_test.py --labels ciphers/sforza-maino-1446/ciphertext_f70_ours.tsv
+f.70 codes 399; decoded 121 (30.3%); codes with no counterpart or untrained: 6 Na Nb Nc Nh Nm Np Nr Ns Nw Ny
+lm(it16dip)	real -2.316	shuffle mean -2.069	p95 -1.700
+q4(copies)	real 0.008	shuffle mean 0.010	p95 0.034
+verdict: FAIL (both above shuffle p95 required)
+decode (TEST ONLY, not a reading, every token M at best): imsecsmtsamsctmnetuctmtmscsamsccsttsmdsccstssstscutdmamtacsmsssstctssdssmdctcttdmtesmssssbcstmtttaussocgtccacmtscsscaemcc
+
+$ ... --labels ciphers/sforza-maino-1446/ciphertext_f70_ours.tsv --nearest
+f.70 codes 399; decoded 397 (99.5%); codes with no counterpart or untrained: 6
+lm(it16dip)	real -1.790	shuffle mean -2.013	p95 -1.743
+q4(copies)	real 0.028	shuffle mean 0.015	p95 0.033
+verdict: FAIL (both above shuffle p95 required)
+decode (TEST ONLY, not a reading, every token M at best): irmseloraoacaresmtalmsoamsclotemnetluarcortsraemratsralmlmscaosammrasalalcamcostaalatsaosmdrsrocoracosaltsorrasalamlarsamrrtsaascutdmalsraemmtacslmamsramsraosasatcrortealormllellsaaaraasadarrralsalsrm
+
+$ ... --labels ciphers/sforza-maino-1446/ciphertext_f70_passB.tsv --nearest
+f.70 codes 220; decoded 220 (100.0%); codes with no counterpart or untrained: 
+lm(it16dip)	real -1.962	shuffle mean -2.044	p95 -1.798
+q4(copies)	real 0.009	shuffle mean 0.014	p95 0.028
+verdict: FAIL (both above shuffle p95 required)
+decode (TEST ONLY, not a reading, every token M at best): airmselorraocaclresmtalsoalpcotemaetluarcortoaaempatoralmlmscaosamrrsallamnostaaltsgorlslaulmlarsascrtaasscutmossgastcortearnlllpessdaaarolpaolpsooaoartaopaolroarlmsoartaesmoaedmaaapsosaaaroosboacrral

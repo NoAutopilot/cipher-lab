@@ -154,3 +154,8 @@ Verdict: keep going: 4 internal gaps; cheapest next: second blind reader on f.36
 
 gallica.bnf.fr: 14 (7 overview canvases at 1400 px, 1 info.json, 6 native regions), one at a
 time, at least 2 s apart, no errors. No other host.
+
+## f.70 re-read (SFZ-70, 7 Oct 2026)
+f.70 was re-read from the DECODE R7899 image in our labels. The key test FAILs under the identity map and under a best-case
+nearest-label map: 1446 key differs from 1447 at this transcription. See ciphers/sforza-maino-1446/NOTES.md, last section, and
+f70_test_sfz70.out. This closes the "image-check" and "retry" escalation steps above for f.70.
