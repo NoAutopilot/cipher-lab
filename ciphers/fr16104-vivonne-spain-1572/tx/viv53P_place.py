@@ -5,8 +5,8 @@
 
 Items: every label e (16) and o (33) token of reading_piece53_G.tsv (targets), plus the pre-registered known-answer control: 3 positions
 each of the settled labels d, m, p, g graded H, drawn with seed "20261053P" (tx/lookalike53P/viv53P_items.tsv). For each item cuts a native
-window of the line strip (tx/viv53L_windows.py strip, images/p53 crops) around the pos/len estimate +-6 signs, draws a pixel ruler (strip x
-every 50 px, labelled every 100) and the label sequence around it, 4 per sheet. The worker records each sign's strip x by eye in
+window of the line strip (tx/viv53L_windows.py strip, images/p53 crops) around the pos/len estimate +-6 signs, numbers each ink run (red, its centre and span
+in strip x go to OUTDIR/blobs.tsv) and the label sequence around it, 4 per sheet. The worker records each sign's strip x by eye in
 tx/lookalike53P/viv53P_xmarks.tsv. Sheets are scratch (regenerable), not committed.
 """
 import csv, os, random, sys
@@ -48,7 +48,7 @@ def strip_of(cache, page, ln):
 
 def main():
     od = sys.argv[1]; os.makedirs(od, exist_ok=True); os.makedirs(LA, exist_ok=True)
-    its = items(); cache = {}; panels = []; seqs = {(p, l): t for p, l, t, _ in lines()}
+    its = items(); cache = {}; panels = []; blobs = []; seqs = {(p, l): t for p, l, t, _ in lines()}
     with open(os.path.join(LA, 'viv53P_items.tsv'), 'w') as o:
         w = csv.DictWriter(o, fieldnames=list(its[0]), delimiter='\t', lineterminator='\n'); w.writeheader(); w.writerows(its)
     for k, it in enumerate(its):
@@ -56,10 +56,21 @@ def main():
         lo, hi = int(max(0, x - 7 * sw)), int(min(S.width, x + 7 * sw))
         c = S.crop((lo, 0, hi, S.height)).convert('RGB')
         P = Image.new('RGB', (max(900, c.width), c.height + 44), 'white'); P.paste(c, (0, 40)); d = ImageDraw.Draw(P)
-        for xx in range((lo // 50 + 1) * 50, hi, 50):
-            t = xx - lo; d.line((t, 28, t, 40 if xx % 100 else 34), fill='blue')
-            if xx % 100 == 0:
-                d.text((t - 10, 16), str(xx), fill='blue')
+        cpx = c.convert('L').load(); prof = [sum(1 for y in range(c.height) if cpx[x, y] < 110) for x in range(c.width)]
+        runs, st = [], None
+        for x in range(c.width + 1):
+            on = x < c.width and prof[x] >= 2
+            if on and st is None:
+                st = x
+            if not on and st is not None:
+                if x - st >= 4:
+                    runs.append((st, x - 1))
+                st = None
+        for j, (r0, r1) in enumerate(runs):   # numbered ink runs: centre and span in strip x
+            t = (r0 + r1) // 2; d.line((r0, 36, r1, 36), fill='red'); d.line((t, 30, t, 40), fill='red')
+            d.text((t - 4, 17), str(j), fill='red'); blobs.append((k, j, lo + r0, lo + r1, lo + t))
+        for xx in range((lo // 100 + 1) * 100, hi, 100):
+            d.line((xx - lo, 40, xx - lo, 44), fill='blue')
         s, p = seqs[(it['page'], it['line'])], it['pos']
         d.text((2, 2), f"#{k} {it['page']}.{it['line']}.{p}/{it['n']}: {' '.join(s[max(0, p - 6):p - 1])} [{s[p-1]}] {' '.join(s[p:p + 5])}", fill='black')
         panels.append(P)
@@ -69,6 +80,8 @@ def main():
         for q in g:
             M.paste(q, (0, y)); y += q.height
         M.save(os.path.join(od, f'place_{i // 4:02d}.png'))
+    with open(os.path.join(od, 'blobs.tsv'), 'w') as o:
+        o.write('item\tblob\tx0\tx1\txc\n'); o.writelines('\t'.join(map(str, b)) + '\n' for b in blobs)
     print(len(its), 'items', (len(panels) + 3) // 4, 'sheets')
 
 
