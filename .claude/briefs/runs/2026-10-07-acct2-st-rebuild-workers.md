@@ -114,3 +114,61 @@ extension a scripted job (Usage 2: scripts read, you judge). Disk only: IA djvu 
 5. NOTES.md section "Key extension (THU-1, 7 Oct 2026)" with the G2 numbers; status line unchanged unless a reading
    moves. All siblings are N0 by construction (printed decipherment) -- say so; nothing here is a counted result
    unless step 3/4 reads an unglossed text.
+
+---
+
+## Wave 2 (written 7 Oct 2026 ~21:55 UTC, after SFZ-1/SFZ-0/THU-1 reported)
+
+Read first: ciphers/sforza-italien1584-1447/NOTES.md (SFZ-0: survivors, sender pools, canvases) and
+ciphers/sforza-italien1584-1447/amidani/{NOTES.md,labels.md,g1.py,key.tsv} (SFZ-1: Amidani key, G1 PASS 0.763 vs shuffle
+p95 ~0.39, its per-unit procedure). Use labels.md as the shared label sheet (extend it with N-labels, never rename), so
+every key of this family is comparable. Reuse g1.py's scoring (add an option or import it; do not fork a private copy).
+
+Common to SFZ-D and SFZ-P:
+ S0 Target folder + gate: create ciphers/<slug>/ (below) with NOTES.md: status `open`, a check-solved per
+   .claude/briefs/check-solved.md for this one letter (reuse SFZ-0's Osio III / Mazzatinti / DECODE / solver-repo
+   results by citation, add what is missing for this sender, e.g. a phrase or name search in IA/Google Books full text),
+   the "## Premise check" section (a)-(d), then `python3 tools/intake_gate_check.py <slug>` pasted. If it exits nonzero,
+   do S1-S2 only (known-plaintext, grade C, carve-out) and stop before S3.
+ S1 Shared-key test (cheap, first): read ONE glossed pair of this sender (slip in labels.md labels, one Sonnet pass on
+   line crops + your own check of every sign the alignment rejects; clear copy as plain text). Decode the slip with the
+   Amidani key.tsv: letter accuracy vs its copy against 200 shuffled Amidani keys (g1.py statistic). PASS (>= 0.60 and
+   > p95) = same key family: pool with Amidani's three units. FAIL = this sender's own key: rebuild it from its pairs.
+ S2 Key + gate G1 (pre-registered, unchanged from SFZ-1): with the pooled or sender-only units (>= 2 units of this
+   sender if S1 FAILed, else S1's unit plus Amidani's three), leave-one-letter-out; PASS = mean held-out >= 0.60 and >
+   p95 of 200 shuffles, per unit reported. Stop at a FAIL.
+ S3 Target (only if G1 PASS and the intake gate exit 0): crop the target slip (`tools/iiif_lines.py ... --debug`), two
+   blind Sonnet passes in labels.md labels (one call per pass), reconcile with tools/reconcile_passes.py, report
+   err_2reader; decode with the key; control = the same decode under 200 shuffled keys on a language score
+   (tools/judge_plaintext.py inline spec, language it16dip, flagged as era-mismatched 1540s vs 1447) AND on the fraction
+   of decoded 4-grams found in the pool's clear copies -- report real, shuffle mean, p95 for both. Grade per token
+   (S where the key value has >= 2 attestations and the control passed, M otherwise, I for repairs); write
+   decode.py with --check (rule 7), reading.txt, and the judge output in NOTES.md. Degenerate optimum: a key that
+   maps every sign to e/a scores well on 4-gram coverage; report the decode's letter distribution beside the control.
+   No novelty words; the verifier is a separate session the lane opens.
+ Deliverables in the target folder; key units go to ciphers/sforza-italien1584-1447/<sender>/ (same layout as amidani/).
+
+## SFZ-D (Opus, cap $12, box 120 min): the Duke's key -> f.15 (23 Jan 1447, unsigned, ~600-650 signs)
+Slug ciphers/sforza-duke-1447-f15. Pool (SFZ-0): f.5/f.7, f.23/f.26, f.30-31/f.29, f.36-37/f.35 (canvases there; check
+folio numbers on the image). f.17 (the Duke's clear same-day letter) is context, not a copy: use it for names only.
+Units: S1 one pair (~$2.5), S2 one or two more pairs only if S1 FAILs (~$2.5 each), S3 target ~$4 (2 passes + reconcile
++ decode/control). vision calls: 6 x USD 1.5 + 1 reconciliation = 10.50.
+
+## SFZ-P (Opus, cap $11, box 120 min): Pietro de Pusterla's key -> f.13 (Guastalla 21 Jan 1447, ~350-400 signs)
+Slug ciphers/sforza-pusterla-1447-f13. Pool (SFZ-0): f.42/f.41, f.81/f.80, and the f.67-77 run (pairing not
+eye-checked; pin it on the image first). f.14 is a clear same-day Pusterla letter, context only.
+Units as SFZ-D; target smaller. vision calls: 5 x USD 1.5 + 1 reconciliation = 9.00.
+
+## SFZ-70 (Opus, cap $7, box 90 min): f.70 (italien 1583, Amidani 4 May 1446) re-read from the DECODE image
+Target ciphers/sforza-maino-1446 (closed-negative; `tools/intake_gate_check.py` says terminal, but add a "## Premise
+check" section to its NOTES.md before decoding: Bourdeau's it1583 files, DECODE R7898/R7899 status, Mazzatinti, any
+Cerioni mention). 1. One DECODE login: `NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 7899 <scratch>
+--guess-fullsize` (see the host table: full-size is sometimes served; Bourdeau's f.70 is the second slip of R7899's
+image). If no image at a readable size is obtained in two attempts, stop: log it in NOTES.md "## Remaining gaps" with
+the exact command, done line, nothing else. 2. Crop f.70 (local PIL crop or tools/iiif_lines.py --image), two blind
+Sonnet passes in labels.md labels, reconcile, err_2reader, and compare with Bourdeau's transcription token by token
+(how many of his codes map one-to-one to our labels). 3. Decode with amidani/key.tsv (identity map), rerun
+amidani/f70_test.py's two statistics with 200 shuffles; PASS = both above p95. On PASS: decode.py --check, grading as
+SFZ-D S3, judge output; on FAIL: the numbers side by side and the line "1446 key differs from 1447 at this
+transcription" -- do not move the status line either way (the lane does, after a verifier). Do NOT log in to DECODE
+more than once. vision calls: 2 x USD 1.5 + 1 reconciliation = 4.50.
