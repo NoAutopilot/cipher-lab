@@ -288,4 +288,4 @@ LANE-AM-0914	account-2	.claude/briefs/runs/2026-10-07-acct3-lanes-0914.md	Opus 5
 LANE-NZ-0914	account-4	.claude/briefs/runs/2026-10-07-acct3-lanes-0914.md	Opus 5.5	40	360	done 2026-10-07 10:37	2026-10-07 09:1x	default-lane over folders n-z, freshness check per row; 6 workers, ~19.9 of 40; n-z fresh steps spent
 ECK64-NO2	account-1	.claude/briefs/runs/2026-10-07-acct3-batch-1117.md	Opus 5.5	15	120	queued	2026-10-07 11:2x	eckert-1864 remaining No 2 entries + verifier
 XCAL	account-2	.claude/briefs/runs/2026-10-07-acct3-batch-1117.md	Opus 5.5	8	75	queued	2026-10-07 11:2x	crossmatch recalibrate on fixed keys + adjudicate leads
-JVN-LVN	account-4	.claude/briefs/runs/2026-10-07-acct3-batch-1117.md	Opus 5.5	8	60	queued	2026-10-07 11:2x	jvn key_5549 on lvn 4610/4616 with control
+JVN-LVN	account-4	.claude/briefs/runs/2026-10-07-acct3-batch-1117.md	Opus 5.5	8	60	claimed session_01VCk4qTSEQHdbS6tUwZzUc7 2026-10-07 11:36	2026-10-07 11:2x	jvn key_5549 on lvn 4610/4616 with control
