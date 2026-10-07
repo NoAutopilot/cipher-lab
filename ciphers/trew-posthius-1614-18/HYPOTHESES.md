@@ -1,0 +1,7 @@
+# trew-posthius-1614-18 -- hypothesis families
+
+Append-only. CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row.
+
+| date | worker | hypothesis | target (N) | target number | control | control number | gate met | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 7 Oct 2026 | XMATCH-0307 | key_crossmatch nightly lead (03:00 UTC): `rah-juan-manuel-1521/key_tomokiyo_alpha.tsv` reads `ciphertext.tsv` | 324 tokens (combined file: 1614 and 1618 cipher lines plus clear note/crib/key-row lines), cov 0.815 | stat 5.68 (z4gram 5.68, z_vf 3.46, es model); judge FAIL la17 -1.666 (real_p05 -1.012, null_p99 -1.636), de17 -1.823 (real_p05 -0.845), N=264 | (a) 20 random alphabets on the same codes; (b) best simple-sub key by 4-gram hill-climb (6 restarts x 3000 steps, weak search); (c) 20 order-shuffled copies | (a) max 3.06, mean 0.64, 0/20 >= real; (b) 2.25; (c) z4gram max 2.63 | beats decoys, judge FAIL | false positive, cause found: `decode_key.load_key` reads the letter->shape table as an identity alphabet (a=a ... z=z, 20 codes used), so the "decode" is the file's own clear lines ("eandem descriptionem ... fridericus henricus ... recens natus princeps") plus undeciphered cipher letters. Not a reading. Added to `ADJUDICATED` in tools/key_crossmatch.py. Script `xmatch/xmatch_0307_decoy.py`, numbers `xmatch/xmatch_0307_decoy.json`. Suggestion: key_crossmatch should drop a key whose value equals its code on >=80% of rows (identity table), and pair-own ciphertext.tsv combined files carrying clear lines are poor xmatch targets. |

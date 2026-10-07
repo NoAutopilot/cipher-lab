@@ -1,0 +1,82 @@
+{
+ "lang": "es",
+ "lang_src": "notes-keyword",
+ "n_tokens": 324,
+ "coverage": 0.815,
+ "real": {
+  "stat": 5.676606513538468,
+  "z_ng": 5.676606513538468,
+  "z_vf": 3.459604608191314,
+  "score": -1.8037344663384065
+ },
+ "random_alphabets": {
+  "stats": [
+   -0.85,
+   0.68,
+   0.31,
+   0.72,
+   -0.28,
+   3.06,
+   0.74,
+   0.83,
+   -0.42,
+   1.98,
+   -0.26,
+   1.05,
+   0.09,
+   2.32,
+   0.51,
+   -0.4,
+   1.43,
+   0.06,
+   -0.9,
+   2.2
+  ],
+  "max": 3.06,
+  "mean": 0.64,
+  "n_ge_real": 0
+ },
+ "best_simple_sub": {
+  "stat": 2.250238438997002,
+  "z_ng": 2.250238438997002,
+  "score": -1.3934180746740437,
+  "decode": "bmmbmbffkqhkqzmbmzfqmfzmzmqfbqkbkbmffmmmzbmbkbkqzzkqfgffqkzbzqhfbgzqgbffhbzqfzkqffkzfhfhzkhbhfbfbzmbhbqmfqfgmfbfzkbmffmfggqmzhkzqkqmbkqfzfbmkqfzfzfbkqkbfbmfmbkzfkqmfbhfzmkbmffmhzmkbmfbfggqfmhfkzzqbbqmqfkbqmfzhzzqmqmfzqmfqmfkmbmzqmzhmmbkbfkbfzmfzhkhzmbqmfgbfqzqmzzf"
+ },
+ "order_shuffled_zng": {
+  "max": 2.63,
+  "mean": 0.31
+ },
+ "code_to_value_used": {
+  "a": "a",
+  "b": "b",
+  "c": "c",
+  "d": "d",
+  "e": "e",
+  "f": "f",
+  "g": "g",
+  "h": "h",
+  "i": "i",
+  "l": "l",
+  "m": "m",
+  "n": "n",
+  "o": "o",
+  "p": "p",
+  "r": "r",
+  "s": "s",
+  "t": "t",
+  "u": "u",
+  "y": "y",
+  "z": "z"
+ },
+ "decode": "andedescriptionemolimcomunicaitarensbmdnoamerariooribgssiruaozpcahoihasbpauisoribctocpbpurpapbasaunapaznlibgnsalutembcdfghinopryzridericusenricusocatzrecensnatusrincepsonradblmponradbefghilmpstuyzeeidisteinsupyuzdzdbuzmlincrnanuzmupnmerabrasumsuptpyneimlgelzuzmuob",
+ "line_groups": {
+  "1614": 173,
+  "1614_key_top": 12,
+  "1614_key_bot": 12,
+  "1618_left_top": 13,
+  "1618_left_bot": 9,
+  "1618_right_top": 12,
+  "1618_right_bot": 12,
+  "1618": 81
+ }
+}

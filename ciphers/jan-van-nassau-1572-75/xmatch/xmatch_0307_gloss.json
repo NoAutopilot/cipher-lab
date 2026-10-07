@@ -1,0 +1,179 @@
+{
+ "n_glossed": 27,
+ "lang": "it",
+ "real": {
+  "exact": 0,
+  "prefix": 1,
+  "letter": 0.819,
+  "covered": 18
+ },
+ "control": {
+  "exact": {
+   "mean": 0.0,
+   "p95": 0,
+   "p99": 0,
+   "n_ge_real": 1000
+  },
+  "prefix": {
+   "mean": 0.161,
+   "p95": 1,
+   "p99": 1,
+   "n_ge_real": 151
+  },
+  "letter": {
+   "mean": 0.711,
+   "p95": 1.513,
+   "p99": 1.893,
+   "n_ge_real": 353
+  }
+ },
+ "lead_null": {
+  "S": 4.221,
+  "z_ng": 4.221,
+  "p99_inclass": 3.399,
+  "p99_order_zng": 4.134,
+  "pass_inclass": true,
+  "pass_order": true,
+  "survives": true,
+  "why": "beats both",
+  "n_draws": 200
+ },
+ "decoded": [
+  [
+   "119",
+   "mit",
+   "S.M.ta"
+  ],
+  [
+   "131",
+   "synem",
+   null
+  ],
+  [
+   "103",
+   "kriegss",
+   "Mons.r di"
+  ],
+  [
+   "92",
+   "volck",
+   "Milano"
+  ],
+  [
+   "104",
+   "igstn",
+   "Alanzone"
+  ],
+  [
+   "93",
+   "hauffen",
+   "Senatore|[replacement, illegible] (Sar...)"
+  ],
+  [
+   "141",
+   "diy",
+   null
+  ],
+  [
+   "119",
+   "mgb",
+   "S.M.ta"
+  ],
+  [
+   "56",
+   "zyrg",
+   "Alba"
+  ],
+  [
+   "101",
+   "ins",
+   "Amb.re di"
+  ],
+  [
+   "123",
+   "volgender",
+   "[added beside 81, struck/overwritten entry]"
+  ],
+  [
+   "71",
+   "hauff",
+   "o"
+  ],
+  [
+   "163",
+   "viel",
+   null
+  ],
+  [
+   "130",
+   "volcker",
+   null
+  ],
+  [
+   "37",
+   "zu",
+   "m"
+  ],
+  [
+   "10",
+   "bringen",
+   "b"
+  ],
+  [
+   "23",
+   "sein",
+   "Papa"
+  ],
+  [
+   "90",
+   "kriegstandt",
+   "r"
+  ],
+  [
+   "336",
+   "boetbock",
+   null
+  ],
+  [
+   "346",
+   "dubboe",
+   null
+  ],
+  [
+   "339",
+   "reytzeug",
+   null
+  ],
+  [
+   "XV",
+   "hundert",
+   null
+  ],
+  [
+   "6",
+   "befestigen",
+   null
+  ],
+  [
+   "91",
+   "befatzung",
+   "Gover.re di"
+  ],
+  [
+   "68",
+   "befestigung",
+   "Piemonte"
+  ],
+  [
+   "24",
+   "kriegssvolck",
+   "i"
+  ],
+  [
+   "115",
+   "zimlich",
+   "Roma"
+  ]
+ ],
+ "full_decode": "S.M.ta Amb.re di Imperatore S.S.ria Reina di l S.Cu.a Capitanio z Mons.r di Milano u r lo Consiglio Alanzone Senatore il Cardinale u t non per la m Sauoia S.S.ria z Parma Amb.re di l S.M.ta Vescovo di n Alba Reina di Saluzzo che S.S.ria Amb.re di [added beside 81, struck/overwritten entry] u Cavalier o Neuers l Sabioneta Consiglio Capitanio t e per a b S.S.ria m b Papa u Diano e Alemagna i Prencipe di Senatore la r d Alanzone c S. Damiano qu Vrbino n che Spagna Cardinale c Imperatore i a c che g Anselmo t Parma l i l Capitanio t Italia la z Imperatore Spinola [added beside 81, struck/overwritten entry] Sauoia S.S.ria per l a Imperatore Amb.re di Gover.re di S.S.ria Piemonte che n i p z r Milano b la r il c i Prencipe di Re di a Cancelliere Consiglio Senato Vrbino S.S.ria h [added beside 81, struck/overwritten entry] perche i Alanzone Cancelliere h a Roma Ferrara stato n [replacement, illegible] (Moncalvo?) Prencipe di S.S.ta Roma Alanzone Fiorenza c e S.Cu.a [replacement, illegible]"
+}

@@ -1599,6 +1599,14 @@ ADJUDICATED = {
         'design kin only: shares the generic a=10 b=12 c=14 d=16 e=18 f=20 run; Mercy is read by its own key',
     ('ciphers/clair1108-duvergier/key_1696.tsv', 'ciphers/bowes-walsingham-1583/ciphertext.txt'):
         'probable false positive: 1 shared code value, n=101 at the stratum floor, English text scored as French',
+    # XMATCH-0307 (7 Oct 2026), the 03:00 nightly's two leads; numbers in each target's HYPOTHESES.md.
+    ('ciphers/rah-juan-manuel-1521/key_tomokiyo_alpha.tsv', 'ciphers/trew-posthius-1614-18/ciphertext.tsv'):
+        'false positive: the letter->shape table loads as an identity alphabet (a=a ... z=z) and reads the clear '
+        'note/crib/key-row lines of the combined Trew file; judge FAILs la17 and de17',
+    ('ciphers/_keys/gonzaga-nevers-asmn-ag423-c396/key.tsv',
+     'ciphers/jan-van-nassau-1572-75/j5s/ciphertext_glossed_5557_5552.tsv'):
+        'false positive: decode vs the leaf gloss, exact 0 (shuffle 0), letter agreement 0.819 at shuffle level '
+        '(1000 class-shuffled keys: mean 0.711, p95 1.513)',
 }
 
 
