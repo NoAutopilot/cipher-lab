@@ -10189,3 +10189,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 00:49 | LANE DEFAULT-account-1-20261007-0042 | spawned 00:49 UTC: D07-COL26K colbert26 per-code positional known-answer statistic session_01XM145m6M8vzphpjrLwUKtg (Opus, cap 3, box 40); 6 live; next check-in ~01:05 UTC
 2026-10-07 00:50 | D07-NEVFV verifier | claim: D07-NEVFV fr3416-nevers-fils-1589 AUDIT 3 propagation after NEVF-APPLY, cap 4, box end 01:40 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
 2026-10-07 00:51 | D07-NOXT worker | claim D07-NOXT fr16142-noailles-constantinople-1571 atlas-pile to key.tsv bridge with c262 tiles, cap 4, box end 01:40 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
+2026-10-07 00:51 | D07-D1411 worker | claim D07-D1411 decode-1411-hhsta-vienna-1600 p.4 4/5 re-read on per-number tiles + T21r rescore, cap 6, box 00:50-02:00 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
