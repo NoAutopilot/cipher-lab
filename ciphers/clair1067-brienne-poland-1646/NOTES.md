@@ -400,4 +400,4 @@ about 80 letters 1643-1654; Clair 578's eight 1648-50 letters are outside Tomoki
 in the record; folders clair577-* already wait on ASKS row 94). Not yet checked for cipher, and on Gallica if the series is
 digitised there: letters of Marie-Louise of Poland in Clairambault 407 f.14 (1646), 420 f.144 (Mar 1649), 424 f.46 (Dec 1649) and
 de Lumbres in 406 f.300/323, 407 f.36, 419 f.237, 421 f.27; next: SRU for those volumes and one native fetch per folio, about $1.
-Every candidate: `KEYHUNT-2026-10-07-KH1-C.tsv`.
+Every candidate: `keyhunt/2026-10-07-KH1C.tsv`.

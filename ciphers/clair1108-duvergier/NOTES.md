@@ -453,4 +453,4 @@ KH1-C (LANE KH-1), 17:47-18:35 UTC by date -u. Key key_1696.tsv. Searched 7 Oct 
 Vergier item), free-text "Vergier chiffres", "Vergier Dunkerque" (adds only fr.15009, Vergier's verse), "Pontchartrain chiffre
 1696" (0). **Unread digitised siblings outside this folder: 0.** Inside it, fol.247v (canvas f251, about 60-70 groups) is still
 uncut; next: native fetch and `tools/decode_key.py` with key_1696.tsv, about $2. Vergier's other dispatches (AN Marine B3) are
-not reachable from the cloud. Every candidate: `KEYHUNT-2026-10-07-KH1-C.tsv`.
+not reachable from the cloud. Every candidate: `keyhunt/2026-10-07-KH1C.tsv`.

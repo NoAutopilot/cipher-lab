@@ -201,4 +201,4 @@ f.152 located at canvas 280).
 Unread siblings: key_mayenne_1592-93_polyphonic.tsv = 2 (fr.3984 f.186 Desportes to Aldobrandini, f.189 Desportes to
 Frachetta, 22 Jul 1593; both already listed as a keyless pool in fr4715-f61 NOTES, no own folder). key_mayenne_1593_homophonic.tsv
 = 0 (the aid lists no Mayenne-Diou letter after fr.3984 f.7). fr.3984 f.152 (Pericard, 21 Jul 1593) carries a short figure cipher,
-not either symbol table: logged, dropped. No test run (cap). Every candidate: KEYHUNT-2026-10-07-KH1-B.tsv.
+not either symbol table: logged, dropped. No test run (cap). Every candidate: keyhunt/2026-10-07-KH1B.tsv.

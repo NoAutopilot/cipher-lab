@@ -1169,4 +1169,4 @@ Every WVO August letter with cipher in the window is already in this folder. 106
 13 Mar 1563, Marburg 3II Korr. 1563 f.28) carries a complete contemporary interlinear decipherment, and its text is 98's
 f.67 ("Es wirt auch bei uns fur gewis gesagt das Wilhelm von Grombach ..."). Its sign set is the Hessian one, not System B.
 That makes it a known-plaintext page for the Orange-Hessen key, not for this one. Test: none (no survivor).
-File: KEYHUNT-2026-10-07-KH1-D.tsv.
+File: keyhunt/2026-10-07-KH1D.tsv.

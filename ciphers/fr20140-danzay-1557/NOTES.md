@@ -705,4 +705,4 @@ Searched 7 Oct 2026 (date -u): Gallica SRU "Danzay" (199 records; every other Bn
 100; not retried). f.37 is clear. ff.38-39 are letters to Danzay with margin dates 17 and 18 Nov 1558, cursive minutes with
 no cipher seen at this size. ff.40-42 are Latin letters of 1566 and ff.43-49 are despatches dated 1567, outside the
 1554-1560 window. **Unread siblings for key.tsv: 0.** A native look at ff.38-39 would rule out isolated cipher words.
-Test: none. File: KEYHUNT-2026-10-07-KH1-D.tsv.
+Test: none. File: keyhunt/2026-10-07-KH1D.tsv.

@@ -221,6 +221,6 @@ although Tomokiyo's list says "Interlined deciphering"; not found in Lettres mis
 queries. It is in no folder and not in QUEUE.md. No test run (cap); next: six-line crop, two blind passes + reconcile against
 fr3986's sign_guide/atlas, decode, shuffled-key control, about USD 7. Note: the finding aid under-flags cipher (fr.3985 f.88
 carries cipher per Tomokiyo but is not marked "avec chiffre"), so the count is a lower bound. Every candidate:
-KEYHUNT-2026-10-07-KH1-B.tsv.
+keyhunt/2026-10-07-KH1B.tsv.
 
-KH1-F (LANE KH-1), 18:29-18:38 UTC 7 Oct 2026 by date -u: fr.3988 f.143r-f.144v (four cipher pages, not two) has no gloss on canvases 304-307 and no decipherment on 302-303/309/310 (308 unread); not in Lettres missives iii-iv. Hand profile against the no.60 atlas (GAPS4 method, `keyhunt_f143/`): careful blind pass N=177 atlas 42.9%, key60 91.0%, NEW 0.6% vs leaf-298 office hand 75.9/91.0/0.0 and f.198r Revol 45.5/84.5/9.1; pre-registered gate atlas >=65% fails -> atlas not licensed, no decode, no control (KEYHUNT-2026-10-07-KH1-F.tsv). Next: a held-out tile check on this hand, ~USD 4.
+KH1-F (LANE KH-1), 18:29-18:38 UTC 7 Oct 2026 by date -u: fr.3988 f.143r-f.144v (four cipher pages, not two) has no gloss on canvases 304-307 and no decipherment on 302-303/309/310 (308 unread); not in Lettres missives iii-iv. Hand profile against the no.60 atlas (GAPS4 method, `keyhunt_f143/`): careful blind pass N=177 atlas 42.9%, key60 91.0%, NEW 0.6% vs leaf-298 office hand 75.9/91.0/0.0 and f.198r Revol 45.5/84.5/9.1; pre-registered gate atlas >=65% fails -> atlas not licensed, no decode, no control (keyhunt/2026-10-07-KH1F.tsv). Next: a held-out tile check on this hand, ~USD 4.

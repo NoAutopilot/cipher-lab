@@ -697,4 +697,4 @@ Searched 7 Oct 2026 (date -u): TNA Discovery API, 1577-1586: "Bowes cipher" 0 hi
 Walsingham" 15. Two of those are Bowes holdings outside BL: NYPL MssCol 1313 (letters 1582-1597; archives.nypl.org
 answered 403, stopped) and NRAS885 (private letter books 1569-1580). Cotton Caligula C VII/B VIII are not digitised, and
 SP 52 has no free images. **Unread cloud-fetchable siblings: 0.** One desk check is worth doing: whether NYPL MssCol 1313
-is digitised and carries cipher. Test: none. File: KEYHUNT-2026-10-07-KH1-D.tsv.
+is digitised and carries cipher. Test: none. File: keyhunt/2026-10-07-KH1D.tsv.

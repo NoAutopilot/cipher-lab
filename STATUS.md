@@ -5966,6 +5966,24 @@ Known-text share: colbert26 (N0) took 18.98 of 36.25 worker spend (52%), over th
 What is left: nothing runnable on the hot list outside live lanes' folders; colbert26's next step is the owner-side or a different
 instrument (the word-pairing route now has a verifier's M verdict on its picks); fr16142 waits on the sign sorter.
 
+## LANE KH-1 handoff (session_01WBRcb87BD51vY1e2xbePSf, account 1), 7 October 2026 (closed 19:1x UTC: brief met, lane about 31.9 of 40)
+
+KEYHUNT round (.claude/briefs/runs/2026-10-07-acct3-keyhunt.md), KEY-OFFICES.tsv rows 2-25 (24 keys); worker brief
+.claude/briefs/runs/2026-10-07-acct1-kh1-workers.md. Six Opus workers (A-F) 29.70 + orchestrator ~2.2 by get_session.
+Per-worker rows in keyhunt/2026-10-07-KH1{A,B,C,D,E,F}.tsv, merged (145 rows) into KEYHUNT-2026-10-07.tsv.
+
+Unread siblings per key (the deliverable): row 19 fr2751 Mayenne polyphonic 2; rows 23-25 no.60 Nevers-Revol (shared key) 5, of
+which 1 (BnF fr.3988 f.143r-144v, Henri IV to Nevers, Dec 1593, Gallica btv1b9060634t c.304-307) is in no folder and unglossed;
+every other row 0 (2-3 Linhares, 4-7 August van Saksen, 7 Bowes, 8-10 Brienne, 11 Duvergier, 12-13 Sabran, 15-16 Carpi/Anhalt,
+18 Danzay, 20 Mayenne homophonic, 21-22 Gramont), each with the reason in the TSV.
+- fr.3988 f.143r test (KH1-F): premise clear (no gloss on the neighbouring canvases except 308 unread; not in Lettres missives
+  iii-iv); the pre-registered hand gate fails (no.60 atlas share 42.9% vs >=65% needed, key60 91.0%, NEW 0.6%; office hand
+  75.9/91.0/0.0, Revol hand 45.5/84.5/9.1), so no decode and no key control ran. No folder made. Next: held-out tile check on
+  this hand, ~USD 4; or add its tiles to the ASKS 102 Revol-hand sorter.
+Leads: fr.2988 ff.4-5 clear copy of a Raince 15 Dec 1526 cipher letter (original unlocated); fr.3897 f.147 (Luneburg 1520 translation);
+ANTT CLNH/0032/10 and /0037/42 undigitised cipher records (copy-order leads); WVO 1068 glossed page for the willem-van-hessen key.
+Left: Baluze 155 canvases 270-440 and fr.4133 (1629-31) unscanned for Sabran; Linhares maco 86 /02 /09 unopened; canvas 308 of fr.3988.
+
 ## LANE KH-4 handoff (session_01DP265vPazck9n51AQqAN1V, account 4), 7 October 2026 (closed 18:58 UTC: brief met, lane about 34.9 of 40)
 
 KEYHUNT round (.claude/briefs/runs/2026-10-07-acct3-keyhunt.md), KEY-OFFICES.tsv rows 49-71 (23 keys); worker brief

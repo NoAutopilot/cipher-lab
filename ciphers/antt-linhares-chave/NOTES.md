@@ -1501,4 +1501,4 @@ anywhere in the repo describe cipher, both undigitised (copy-order leads only): 
 António de Araújo's first letter after leaving Lisbon on the frigate Thetis, "Era em cifra, escrita de Lorient",
 c.1807-08) and `PT/TT/CLNH/0037/42` (secret instructions "nesta espécie de cifra, que só poderá decifrar o Sr.
 F. A. M. G.", mentions Wellesley, c.1808-09); whether either uses this dictionary key is unknown. No test decode
-(no survivor). Every candidate: `KEYHUNT-2026-10-07-KH1-E.tsv`.
+(no survivor). Every candidate: `keyhunt/2026-10-07-KH1E.tsv`.

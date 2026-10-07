@@ -640,4 +640,4 @@ although Tomokiyo's list says "Interlined deciphering"; not found in Lettres mis
 queries. It is in no folder and not in QUEUE.md. No test run (cap); next: six-line crop, two blind passes + reconcile against
 fr3986's sign_guide/atlas, decode, shuffled-key control, about USD 7. Note: the finding aid under-flags cipher (fr.3985 f.88
 carries cipher per Tomokiyo but is not marked "avec chiffre"), so the count is a lower bound. Every candidate:
-KEYHUNT-2026-10-07-KH1-B.tsv.
+keyhunt/2026-10-07-KH1B.tsv.

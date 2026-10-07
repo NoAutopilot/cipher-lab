@@ -872,4 +872,4 @@ f.79 (canvas 163). Cipher seen only on f.79 (key source), f.105-107 (canvas 227,
 265-266, DECODE R2750 Decrypted). **Unread siblings found: 0 confirmed.** The scan stopped at canvas 269 after a second
 "Remote end closed connection" from Gallica (one retry spent). Open: Baluze 155 canvases 270-440 (Servien 1632, f.141-164 not in
 DECODE) and Sabran's 1629-31 register fr.4133 (btv1b9060195s), which neither Tomokiyo nor DECODE names; next: thumbnail scans
-of both, about $3 together. Every candidate: `KEYHUNT-2026-10-07-KH1-C.tsv`.
+of both, about $3 together. Every candidate: `keyhunt/2026-10-07-KH1C.tsv`.
