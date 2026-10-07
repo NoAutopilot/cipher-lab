@@ -1,0 +1,13 @@
+# NZ-SURIJ step 2: one blind Sonnet same/different call (7 Oct 2026 ~09:56 UTC), crops only, reference X = 0746 R02 [sh-lig] (first
+# S-like unit). Crops (scratchpad, not committed; boxes on the committed/regenerable line crops): X = p0746R_L02 (860,70,950,178);
+# B = p0746R_L02 (1110,70,1200,178) [known SAME: another R02 SH unit]; D = p0746L_L02 (270,72,350,171) [known DIFFERENT: left-page
+# dot-footed S]; C = images/crops_2046_leg/leg46_L09_s1.jpg (500,0,560,101) [4.VEL 2046 L09 tok16 s-loop]; A = leg46_L10_s1.jpg
+# (750,0,800,104) [2046 L10 tok23 s-hook (B-pass reading)]. 2039 Remarque L03 [s-loop] crop (rem2039_L03 0,0,45,52) is blotted and
+# illegible at 52 px: not sent. Labels A-D shuffled; the call was not told which pairs were controls.
+pair	role	verdict	shape (verbatim, abridged)
+B	control known-same	UNSURE	tall slanted long-s stroke below the line; small curled element at left not clearly attached
+D	control known-different	DIFFERENT	no tall long-s; hash strokes and a heavy blob
+C	target 2046 [s-loop]	SAME	tall long-s with top curl descending well below the line, small curled flourish on the left
+A	target 2046 [s-hook]	DIFFERENT	short compact s-curl on the line, no ascender or descender
+# PREREG: the look counts only if both controls come out right. Known-same came out UNSURE -> step 2 is a NON-TEST; A and C are
+# descriptive only. No alias, no key entry.
