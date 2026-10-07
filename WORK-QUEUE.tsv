@@ -303,3 +303,6 @@ KHF-4	account-4	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	8	75	
 ST-LEDGER	account-1	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	queued	2026-10-07 20:0x	STEAM: ledger scout + work (one key, many entries)
 ST-REBUILD	account-2	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	queued	2026-10-07 20:0x	STEAM: key rebuilds from glossed siblings, then unglossed neighbours
 ST-ACCESS	account-4	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	queued	2026-10-07 20:0x	STEAM: screen 27, copy-order shortlist of 33 (free tiers first), Monroe/Pinkney
+TOMO-63	account-1	.claude/briefs/runs/2026-10-07-acct3-standing.md	Opus 5.5	40/day	standing	queued	2026-10-07 20:2x	STANDING: Birago f.119 numeric cipher (Tomokiyo), lead; helper rows on acct 2/4
+BNF-FOCUS	account-2	.claude/briefs/runs/2026-10-07-acct3-standing.md	Opus 5.5	40/day	standing	queued	2026-10-07 20:2x	STANDING: BnF value dataset, catalogue enrichment, unread BnF queue
+DEB-RUN	account-4	.claude/briefs/runs/2026-10-07-acct3-standing.md	Opus 5.5	40/day	standing	queued	2026-10-07 20:2x	STANDING: Debosnys keep-going lane
