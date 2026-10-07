@@ -1,0 +1,53 @@
+# D4-MERC, 7 Oct 2026: each of the 48 settled f.151 labels (ciphertext_draft.tsv) matched by eye on the shared-scale sheet
+# (make_glyph_sheet.py -> sheet/tile_1..4.jpg: Lasry key image x2.2 over f.151 crop halves x0.9) to the key glyph it most
+# resembles, or none. One vision unit (this session). conf: M = same construction (strokes, loops, bars), L = loose look-alike.
+# key_cell names the key column and row (row 1 = first glyph under the letter). Grade M at best: 600-px key image, 2-reader draft.
+label	key_letters	conf	key_cell	note
+D	o	M	O1	delta; key O row 1 is a delta
+Q	p	M	P3	open square; key P row 3 is a square
+oc	s	M	S2	reversed c
+E	v	M	V3	epsilon
+f	v	M	V4	phi (filled bowl on stem); key V row 4 is a phi
+#	v	M	V2	double-barred cross; key V row 2 is a hash
+9	v	L	V5	digit 9; key V row 5 is a 9/g-like
+X	n	M	N2	capital X
+x	y/v	L	Y2/V1	small x/star
+7	o	M	O3	digit 7
+6	e	M	E3	digit 6
+2	f	M	F3	digit 2
+4	c	M	C1	digit 4
+8	t/n/m	L	T3/N3/M3	8-like loop glyphs in three columns
+3	a/d/q	L	A5/D1/Q2	z-tail / 3 shapes
+R	q	M	Q3	capital R
+n	e	M	E2	eta / n
+w	h	M	H3	omega / w
+b	b	M	B2	beta / sz
+K	s	M	S1	quatrefoil knot
+p	c	M	C3	p
+P	c	L	C3	p with stroke
+d	d	L	D7	d-like
+y	d	L	D3	y-like with tail
+m	i	L	I1	m
+e	a	L	A4	e-like loop
+a	b/d	L	B3/D7	a-like
+u	e	L	E1	u with hook
+th	m	L	M3	theta vs looped 8-like
++	q/u	L	Q1/U1	cross with flag
+s	i	L	I3	S-like
+S	i/n	L	I3/N3	S-hook with closed loop
+i	a	L	A1	dotted i / short stroke
+T	none	-	-	no T-shaped letter glyph in the key
+v	none	-	-	plain v; nearest O2 is a closed u
+r	none	-	-	pointed check-mark
+o	none	-	-	no o in the key
+L	none	-	-	lambda / long stroke
+M	none	-	-	capital M
+N	none	-	-	capital N; Lasry's Unknown row has an N-like sign
+=	none	-	-	double bar
+&	none	-	-	looped knot with tail
+hp	none	-	-	tall looped stem
+q	none	-	-	q with foot bar
+g	none	-	-	double-bowl g
+5	none	-	-	flat-topped 5
+Tb	none	-	-	T-topped stem with foot loop
+ff	nomenclator	-	-	'ff' prefix of the key's nomenclator groups; excluded from cells as in MERC151B
