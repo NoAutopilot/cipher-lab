@@ -594,3 +594,13 @@ Read so far: 11 of 15 cipher tokens H, 2 M, 2 U (reading_gravel1672_tokens.tsv)
 - [x] image-check: native crop re-read of all three passages (this section)
 - [n/a] retry: first attempt passed its gate, nothing to retry
 Verdict: keep going: 0 internal gaps; cheapest next: the owner sends REQUEST.md (AE CP Allemagne 194 quote request, gate-7 checked 6 Oct 2026 by OUT-CHECK-REQ2678, ASKS 150), ~$0 (every gap now waiting-on ASKS 150 or JSTOR/SO rows; the key-rebuild step stays [ ] until the reproduction arrives)
+
+## Archive reply (La Courneuve, 7 Oct 2026, 08:37 UTC, logged by the account-3 orchestrator)
+Standard reply: the archive does not search its holdings for readers. A reproduction order goes on its form and must give
+the exact cote, dates and FOLIO NUMBERS; no quote is given before that. Options it lists: (a) the reproduction form with
+cote + folios; (b) paid independent researchers (two named; their addresses are not kept here, rule 9 -- see the mailbox
+thread); (c) consult in person (Mon-Thu 10-17, reader card by online pre-registration). Microfilm inventories are online
+(diplomatie.gouv.fr "etat general des fonds", section "Inventaire des documents microfilmes") -- not yet checked for CP
+Allemagne 194. Next: (1) check the microfilm inventory for CP Allemagne 194 (agent, ~$1); (2) the person fills the form
+with "Correspondance politique, Allemagne 194, ff. 40-48 (around f. 44, 29 Jan 1665, per Auerbach 1912)" -- a range the
+archive can act on without a search.

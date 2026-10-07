@@ -1,4 +1,4 @@
-status: sent by the person 6 Oct 2026 about 23:37 UTC from the project mailbox; reply pending (drafted R12A-REQ2678, 6 Oct 2026 18:3x UTC; gate-7 check OUT-CHECK-REQ2678, 6 Oct 2026 19:4x UTC)
+status: sent 6 Oct 2026 23:37 UTC; archive replied 7 Oct 08:37 UTC (no quote without exact folios; use the form; NOTES.md) (drafted R12A-REQ2678, 6 Oct 2026 18:3x UTC; gate-7 check OUT-CHECK-REQ2678, 6 Oct 2026 19:4x UTC)
 to: lecture.archives@diplomatie.gouv.fr (Archives diplomatiques, site de La Courneuve, "Courriel Archives" / "Contact salle de lecture", read from https://www.diplomatie.gouv.fr/fr/archives-bibliotheque/venir-aux-archives on 6 Oct 2026, 18:2x UTC)
 recipient name: [RECIPIENT NAME -- left blank; "Madame, Monsieur" unless the person knows a named archivist]
 subject: Demande de devis : reproduction, Correspondance politique Allemagne 194 (Gravel, Ratisbonne, janvier-mai 1665)

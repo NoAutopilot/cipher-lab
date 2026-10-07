@@ -617,3 +617,10 @@ Chromium challenge), bdh-rd.bne.es 1 (403 challenge), web.archive.org 2 (CDX, co
 
 ## While waiting (R9-LQROWS, 6 Oct 2026)
 LOCAL-QUEUE row L58 (viewer-capture of BNE MSS/20212/27, 14 leaves) queued 6 Oct 2026; a sign-inventory check against the 1522/1524 keys follows its images.
+
+## Reply from the author (7 Oct 2026, 08:01 UTC, logged by the account-3 orchestrator)
+Prof. Bertomeu Masià answered the 6 Oct copy request: the volume (Heras García ed., *Italia y España. Una pasión
+intelectual*, Salamanca 2024) is open access at https://eusal.es/producto/italia-y-espana-una-pasion-intelectual/ ,
+and the cipher her chapter studies "is not the same cipher he used in 1522". So the chapter is not a key source for the
+1522 letters (Salazar 9/26). Next (cheap, ~$1): fetch the chapter from the open-access volume, note which cipher/date it
+covers and whether its key could serve any other letter in this repo (tools/key_crossmatch.py once transcribed); cite it.
