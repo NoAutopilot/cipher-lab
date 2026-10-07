@@ -125,6 +125,46 @@ with O9-AE's, except "And" (N2-L) for "&" (O9-AE) and the copy
 routes. One collision: "Staff" is a book code word (p.[25B] row 22, Station) but here the plain "Chf Staff" of both entries
 and the OR's "Chief of Staff"; marked `plain:` in ciphertext-no2.txt.
 
+## The Kimber entry of 11 June 1864 opening p.90 (AM-ECK64K, 7 Oct 2026)
+
+N2-M is the second entry of mssEC 19 p.90 (pointer 8982), headed "Kimber Vicksburg  Washn June 11 1864": a message to
+Canby at Vicksburg through the operator S. P. Kimber, signed with the Quartermaster-General's code word. Read on three
+two-line crops of the 2400 px IIIF image by the worker, the volunteer text as second witness; the two agree on every word.
+
+Reading: "1 PM June 11. To Maj Gen E R S Canby. I can not find the gauge of the Vicksburg & Shreveport Rail-road. What
+is it? Signed Quarter[?] Master General." Then, after the signature: "use Farmer Famish Mastiff for Can".
+
+| token | key-no2.md | grade |
+|---|---|---|
+| Hannah | 1 PM (time word) | H |
+| Hawkins | 11 (numeral) | H |
+| Farmer | Maj Gen E R S Canby | H |
+| tulip | Period | H |
+| talbot | Of the | H |
+| Holly | Vicksburg | H |
+| warner | Rail-road | H |
+| Stanhope | Interrogation | H |
+| wiley | Signature | H |
+| Burglar | Quarter[?] Master General | H (the key row's own [?]) |
+| Farmer, Famish, Mastiff (service line) | Canby (three rows) | H as decoded, but see below |
+
+`decode_no2.py` counts H 13. Ten of the 13 are code words used in the message. The last line, written after the
+signature, reads as a service instruction to the Vicksburg end: "use Farmer, Famish, Mastiff for Can[by]", i.e. the three
+code words the book gives for Canby, named rather than used; the three tokens decode to Canby either way, and are listed
+here so a verifier can count them separately (10 H in the message, 3 H in the service line). "Sleeve port" is not a
+code word and is read as the clerk's spelling of Shreveport (I, by inference from "Holly & ... warner" = Vicksburg &
+... Rail-road; N2-A writes "She reeves port"); it is left as written in the derived block.
+
+Printed check: OR ser. I vol. 34 pt 4 (IA `warofrebellion344unit`, djvu full text, 1 download) was searched for
+"find the gauge", "what is it", "Shreveport Railroad", "gauge" and every "June 11, 1864" date line: this telegram is
+not printed there (the Washington 11 June items printed are Halleck to Canby 4 p.m., p.304, on the Shreveport road's
+cost, and Meigs to Allen, p.305, saw-mills for Canby). The same volume prints Meigs to Canby, Washington, 17 June 1864
+1.30 p.m. (p.424-425): "I learn that the gauge of the Vicksburg and Shreveport Railroad is 5 feet 6 inches ... I have
+telegraphed you twice to inform me of the gauge", and Canby's replies giving the gauge (24 June and later). That
+places N2-M as one of the two earlier gauge telegrams the 17 June print mentions and confirms the signature reading
+(the Quartermaster-General, Meigs) in context; it is corroboration, not a printed twin, so no token is raised to C.
+Not searched: other OR volumes, the Meigs letter books, other editions; a search result only.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -200,5 +240,11 @@ Code-word tokens: H 15.
 
 Code-word tokens: H 13.
 
-Totals over the 12 entries: H 286, C 6, I 10, M 1.
+**N2-M | Page 90 | 8982 | 11 June 1864 1 PM, Washington to Canby at Vicksburg (operator S. P. Kimber)**
+
+{time: 1 PM} {date: June 11} to [Maj Gen E R S Canby] [.] I can not find the gauge [Of the] [Vicksburg] & Sleeve port [Rail-road] what is it [?]  {tail: [signed] [Quarter[?] Master General] use [Maj Gen E R S Canby] [Maj Gen E R S Canby] [Canby Ed R S] for Can}
+
+Code-word tokens: H 13.
+
+Totals over the 13 entries: H 299, C 6, I 10, M 1.
 <!-- decode.py: derived block ends -->
