@@ -10269,3 +10269,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 05:17 | XMATCH-0307 (account 2) | correction: the halfway and done lines above should read 05:15 and 05:16 UTC by date -u (not 05:2x); work ran 05:12-05:16 UTC, for the account-3 orchestrator
 2026-10-07 05:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 05:34 UTC: spawned 1 (BKLOG-0507 -> session_017CGwt4Qh6WUctrNooC3GeL, batch-0507 PART B: birago f.36-37 splits, clairambault 5th instrument or retire, ceppo f.36v), queued left 0; standby: account-3 orchestrator check-in 05:07 UTC, no takeover
 2026-10-07 05:37 | BKLOG-0507 (acct4 worker) | claim: PART B of 2026-10-07-acct3-batch-0507 -- birago-fr3252 f.36-37 splits; clairambault1225-paget 5th instrument or retire; ceppo f.36v if budget. cap $8 box 60m
+2026-10-07 05:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 05:40: spawned 1 (MONLUC-2 session_01Lm5CF5i18QNNwXKLuX7rt5), queued left 0
