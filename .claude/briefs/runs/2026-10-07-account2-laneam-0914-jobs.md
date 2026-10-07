@@ -107,3 +107,27 @@ copyist's hand and sign family as f.198/f.298 (side-by-side crop sheet, crop com
 clear-text twin? Record canvases, sign-family verdict and counts of cipher lines in NOTES.md; if same family, cut line crops into a folder
 for the owner's sorter (do not build or publish a sorter) and name the next step (tiles added to ASKS 102's sorter, or a crib). No reading.
 Gallica requests <= 60. Report what was found and where it was not found.
+
+## Wave 3 (spawned 10:5x UTC 7 Oct): the two verifier flags raised by waves 1-2. Separate sessions from every solver named.
+Wave 2 results: AM-ECK64K N2-M (Kimber 11 June 1864, p.90) H 13, 342df8ee9, AUDIT flag 620c2c4c8; AM-REV68 items 68 = f.146v, 75 = ff.157r-v,
+same no.60 family and copyist by eye, 15 line crops in images/siblings/ (6ecaa98c3, flag for the account-3 orchestrator / ASKS 102 sorter).
+AM-D1411P5: p.5 266 numbers, T21r_h12 PASS 0.628 vs gloss 0.613 (thin), S 114 / M 152, p.5 left page a copy of p.2; verifier flagged.
+
+### AM-ECKV -- eckert-1864 AUDIT propagation for N2-L and N2-M (verifier, Opus; cap 2.5, box 40 min)
+You are a separate session from AM-ECK64N2 and AM-ECK64K. CLAUDE.md "Verifier brief (template)" steps 1-5, scoped to the two entries
+reading-no2.md gained after AUDIT.md was written: N2-L (p.61, Buckley to Hunter at New Orleans, 30 Apr 1864, twin of O9-AE; 2f2e7308c) and
+N2-M (p.90, Kimber 11 June 1864, Burglar/QMG to Canby on the Vicksburg & Shreveport gauge; 342df8ee9). (1) re-derive both with the folder's
+No. 2 decode script and `--check` (rule 7), check H 13 + H 13 against key-no2.md and the crops; (2) novelty search per entry, scaled to two
+short telegrams: OR ser. I vols for the dates (N2-L's plain is O9-AE's, so its class follows O9-AE's; N2-M: OR I/34 pt 4 and the Meigs/Canby
+correspondence, IA full text, Google Books with country=US, a phrase search on the decoded text), log every family searched or unreachable;
+(3) N-class, key source (`period`), depth line per entry; append "## AUDIT (propagation, AM-ECKV)" to AUDIT.md, update status.json result rows
+and any SECOND-OPINIONS-QUEUE.tsv row for this target if it quotes counts; a new SO row only for an entry at N3 or better. Do not decode other entries.
+
+### AM-D1411V -- decode-1411-hhsta-vienna-1600, adversarial check of AM-D1411P5's p.5 PASS and 114 S grades (verifier, Opus; cap 4, box 50 min)
+You are a separate session from AM-D1411P5 and every earlier decode-1411 solver. No AUDIT.md exists (no reading claimed); this is a rule-3/rule-4
+check, not a novelty audit. Read NOTES.md "## AM-D1411P5 step" and d1411p5/. (1) Confirm the PREREG commit predates the scored run (git log
+order) and list every deviation; (2) re-run the scoring script(s) and `--check`; (3) the result rests on a thin margin (0.628 vs gloss 0.613),
+two post-score crop-split merges and a left page that copies p.2 (82/95 numbers equal): re-score on the independent material only (p.5 minus the
+p.2 copy) and without the post-score merges, against the same controls, and report both numbers; (4) decide per the PREREG's own grade rule
+whether the 114 S grades stand, drop to M, or stand only on the independent part; write the verdict as "## AM-D1411V verifier" in NOTES.md,
+correct the grade counts, Remaining gaps and Verdict line if they change, gaps_check. Do not read new pages or re-transcribe.
