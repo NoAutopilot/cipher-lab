@@ -1,0 +1,51 @@
+line	win	pos	sign	gloss	conf	note	chk
+03	01	1	HZ	ez	M	gloss word Venez; only ez stands over the sign	fix
+03	01	2	b	u	L	u over b (off by one)	fix
+03	01	3	r	e	L	e over r	fix
+03	01	4	mt	u	L	u over mt	fix
+03	01	5	pH	l	L		ok
+03	01	6	b	t	L		ok
+03	01	7	99	g	M		ok
+03	02	8	7	no	M	n and o over the 7 (n over its tail)	fix
+03	02	9	8	g	L	g (9-shaped, long tail) over 8	fix
+03	02	10	Zt	r	L	rotunda r over Zt	fix
+03	02	11	ls	r	L		ok
+03	02	12	?	oy	M	o and y over the 5-like sign; y could also belong to x4	fix
+03	02	13	x4	-	M	nothing clearly above	fix
+03	02	14	8	ox	M	o and x over 8	fix
+03	02	15	2	t	L	cross-shaped t over 2	fix
+03	02	16	f	z	L	z over f	fix
+03	03	17	99	g	M		ok
+03	03	18	Hu	l'emp	M	l'emp. over the big hook	fix
+03	03	19	26	en	M	e,n over 26	fix
+03	03	20	c	a	L	a over c	fix
+03	03	21	m	u	L	u over m	fix
+03	04	22	k	n	L	n over k	fix
+03	04	23	od	s	L		ok
+03	04	24	pH	e	L		ok
+03	04	25	e	p	L		ok
+03	04	26	7	a	L		ok
+03	04	27	^7	re	M		ok
+03	04	28	is	de	L	d,e over is	fix
+03	04	29	a	s	L	s over a	fix
+03	04	30	q	au	L		ok
+03	05	31	Z	es	L		ok
+03	05	32	7	n	L		ok
+03	05	33	99	os	L		ok
+03	05	34	s	po	L	p,o both over first s	fix
+03	05	35	s	l	L	l over second s	fix
+03	05	36	s	e	L	e over third s	fix
+03	05	37	m	m	L	m over m	fix
+03	05	38	7	a	L	a over 7	fix
+03	05	39	ff	r	L	r over ff	fix
+03	06	40	i~	q	M	long bar over i; gloss is q with bar (off by one in reader)	fix
+03	06	41	a	s	L		ok
+03	06	42	is	de	L	d,e over is	fix
+03	06	43	s	b	L	b over s	fix
+03	06	44	8	o	L	o over 8	fix
+03	06	45	o	uff	L	u,f,f over o	fix
+03	06	46	y	r	L		ok
+03	06	47	r	g	L		ok
+03	06	47.5	d.	au	M	d with dots above, between r and the 6; skipped by reader (same sign shows at left of w07)	ins
+03	07	48	6	m	M	m of 'mais' over 6	fix
+03	07	49	8	ais	M	a,i,s over 8	fix

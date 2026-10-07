@@ -1,0 +1,56 @@
+line	win	pos	sign	gloss	conf	note	chk
+12	01	1	g	p	M	p over g; the a is over the x (reader had p a)	fix
+12	01	2	x	a	M	a sits between g and x, nearer x	fix
+12	01	3	fh	y	L	y over the fh (reader had -)	fix
+12	01	4	a	s	L		ok
+12	01	5	3	a	L		ok
+12	01	6	e	p	L		ok
+12	01	7	co	u	L		ok
+12	01	8	do	y	L		ok
+12	02	9	p	e	L		ok
+12	02	10	o	a	L		ok
+12	02	11	ls	d	M	d over the s-part of this sign; the sign may be two (small curled stroke + s) but one gloss letter either way (reader had -)	fix
+12	02	12	6	e	L	e only (reader had d e; the d is over the ls)	fix
+12	02	13	1	l	L		ok
+12	02	14	x	a	L		ok
+12	02	15	HZ	-	L		ok
+12	02	16	1	n	L		ok
+12	03	17	2	e	L		ok
+12	03	18	s	s t	M	s t over the s (reader had s)	fix
+12	03	19	e	p	L	p over e (reader had t)	fix
+12	03	20	3	a	L	a over 3 (reader had p)	fix
+12	03	21	od	s	L	s over od (reader had a s)	fix
+12	03	21.5	?	a u	M	reader skipped this sign between od and ^21: curved stroke with two dots above plus a short dash; gloss aussy sits above it and ^21 jointly, a u placed here	ins
+12	03	22	^21	s s y	M	bar over 21; second gloss line 'sam' sits directly above the bar (unassigned); s s y over the digits (reader had a u s s y)	fix
+12	03	23	i	d	M	curly i/1-shaped stroke	ok
+12	03	24	s	e	L		ok
+12	03	25	a	s	L		ok
+12	04	26	a	-	L	same a as row 25 across the window seam (reader gave it the gloss s a of the ^16)	del
+12	04	27	^16	s a	M	bar over a 1 and a 6 (the 1 is a small curled stroke); reader had ^6 with gloss i	fix
+12	04	28	s	i	L	i over the s (reader had -)	fix
+12	04	29	Hun	n	L		ok
+12	04	30	6	m a	M	m a over the 6 (reader had -)	fix
+12	04	31	8	i s	M	i s over the 8 (reader had m a i s)	fix
+12	04	32	e	p	L		ok
+12	04	33	xff	o	L		ok
+12	05	34	od	s	L	s over od (reader had -)	fix
+12	05	35	18	s i	M	gloss struck-through dit above, s i written below it over the 1; 1 and 8 may be two signs	fix
+12	05	36	7	b	M	7 and the following o may be one sign; b over it (reader had d i s)	fix
+12	05	37	o	-	L		ok
+12	05	38	s	l	L	l over first s (reader had b)	fix
+12	05	39	s	e	L	e over second s (reader had l e)	fix
+12	05	40	99	g	L		ok
+12	05	41	b.	r e	L	two dots	ok
+12	05	42	8	P	L		ok
+12	05	43	8	r i n	L		ok
+12	06	44	15	d e	L	d e over the 15 (reader had d)	fix
+12	06	45	6	l	L	reader had e	fix
+12	06	46	1	a	L	reader had l	fix
+12	06	47	u	c	L	reader had a	fix
+12	06	48	x4	h	L	reader had -	fix
+12	06	48.5	o	-	M	small circle attached to the cross arm of the x4, possibly part of it; reader skipped it	ins
+12	06	49	3	a	L	reader had c	fix
+12	06	50	e	p	L	reader had h	fix
+12	06	51	r	e	L	reader had -	fix
+12	06	52	1	d	L	reader had -	fix
+12	07	53	6	u	L		ok

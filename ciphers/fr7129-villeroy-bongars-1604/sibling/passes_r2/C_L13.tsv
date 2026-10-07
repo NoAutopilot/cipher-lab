@@ -1,0 +1,45 @@
+line	win	pos	sign	gloss	conf	note	chk
+13	01	1	99	g	M		ok
+13	01	2	pH	L	M	first L of the gloss sits between the second 9 and the pH, kept on the pH	ok
+13	01	3	mt	L	L		ok
+13	01	4	do	o	L	o only (reader had o n)	fix
+13	01	5	k	n	L	n sits over the k (reader had -)	fix
+13	01	6	1	-	L		ok
+13	01	7	s	d e	L		ok
+13	02	8	ab	b	L		ok
+13	02	9	3	a	L		ok
+13	02	10	b	t	L		ok
+13	02	11	ba	u	L	reader had u i	fix
+13	02	12	s	i	L	reader had -	fix
+13	02	13	mt	u	L	reader had u r	fix
+13	02	14	y	r	L	reader had a	fix
+13	02	15	x	a	L	reader had -; the a (with dot) is over the x	fix
+13	03	16	9	p l	L		ok
+13	03	17	4	g	M	g with a tail over the 4 (reader had y)	fix
+13	03	18	99	h	M	h-like flourished gloss over the first 9 (reader had -)	fix
+13	03	19	^253	r e n t	M	one long bar runs over the three signs read by the reader as ^2, s. (5 with two dots), 3: joined into one number; above it 'toujours' crossed by a strike and an interlined 'rent'; which line is live is unclear	fix
+13	03	20	s.	-	M	merged into ^253 (digit 5 with two dots)	del
+13	03	21	3	-	L	merged into ^253 (flat 3)	del
+13	03	22	1	q u e	M	own short bar over the 1; gloss above is crowded (t u e g with cross), kept as read	ok
+13	03	23	^16	s a	M	bar starts at the right edge of the 1, so it may be 1 then ^6; gloss s a (reader had s o)	fix
+13	04	24	b	t	L	t over b (reader had a; the a belongs to the ^16)	fix
+13	04	25	26	e n	L	reader had t e n	fix
+13	04	26	18	d e	L	d e over the 18 (n is just right of it); reader had -	fix
+13	04	27	Hun	n	L	reader had d e n	fix
+13	04	28	ab	t	L		ok
+13	04	29	7	-	L	reader had a s	fix
+13	04	30	3	a	L	a over the 3 (reader had -)	fix
+13	05	31	^16	s a	L	reader had a s	fix
+13	05	32	?	m	L	h-like hooked sign	ok
+13	05	33	f	o	L	reader had -	fix
+13	05	34	u	r	L	reader had o	fix
+13	05	35	b	t	L	reader had r	fix
+13	05	36	x4	i	M	reader had t	fix
+13	05	37	9	l	M	reader had i l	fix
+13	06	38	25	e s t	M	reader had e s	fix
+13	06	39	b	u	L	reader had t	fix
+13	06	40	ff	r	L	reader had -	fix
+13	06	41	3	a	L	reader had u	fix
+13	06	42	fh	y	L	reader had r	fix
+13	06	43	99	g	L	reader had a y g	fix
+13	06	44	?	X e u s	M	F-like sign, continues into window 07 (skipped there)	ok

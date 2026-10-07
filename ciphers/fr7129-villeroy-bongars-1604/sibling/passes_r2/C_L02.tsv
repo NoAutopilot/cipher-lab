@@ -1,0 +1,52 @@
+line	win	pos	sign	gloss	conf	note	chk
+02	01	1	g	p	M		ok
+02	01	2	xff	v	L		ok
+02	01	3	pH	i	L	between	ok
+02	01	4	8	o	L	n of 'on' sits over 8 right half / gap; could be 8=on, 2=-	unsure
+02	01	5	2	n	L		unsure
+02	01	6	f	z	M		ok
+02	01	7	u	d	L	cut at edge	ok
+02	02	8	s	e	L	e of 'dem' over s (off by one in reader)	fix
+02	02	9	Hu	m	L	m over the big hook	fix
+02	02	10	r	e	L	e over r	fix
+02	02	11	b	t	L	t over b	fix
+02	02	12	g	t	L		ok
+02	02	13	^7	re	M	r,e both over ^7	fix
+02	02	14	e	p	L	p over e	fix
+02	02	15	q	e	L	e over q	fix
+02	02	16	s	i	L	i over s	fix
+02	02	17	k	n	L	n (w03) over k	fix
+02	03	18	q	e	L		ok
+02	03	19	b	d	L	d over b	fix
+02	03	20	26	en	M	e,n over the 26	fix
+02	03	21	is	de	L	d,e over is	fix
+02	03	22	od	s	L	s over od	fix
+02	03	23	co	r	L	r over co	fix
+02	03	24	8	o	L	o over 8	fix
+02	03	25	o	n	L	n over o; o of 'on' is over the 8	fix
+02	04	26	od	-	L	same sign as pos 25 (seam duplicate)	del
+02	04	27	mt	u	L		ok
+02	04	28	v	r	L		ok
+02	04	29	s	i	L		ok
+02	04	30	ff	r	L		ok
+02	04	31	6	l	L		ok
+02	04	32	i	a	L		ok
+02	04	33	m	u	L		ok
+02	04	34	mt	-	L		ok
+02	04	35	e	e	L		ok
+02	05	36	ff	r	L		ok
+02	05	37	Zt	i	L		ok
+02	05	38	y	t	L		ok
+02	05	39	p	e	L		ok
+02	05	40	ur	&	L		ok
+02	05	41	^7	-	L		ok
+02	05	42	8	rog	L		ok
+02	06	43	2	en	L		ok
+02	06	44	6	-	L		ok
+02	06	45	Zt	a	L		ok
+02	06	46	tt	-	L		ok
+02	06	47	b	u	L		ok
+02	06	48	o	e	L		ok
+02	06	49	y	r	L		ok
+02	06	50	b	t	L		ok
+02	06	51	un	i	L		ok

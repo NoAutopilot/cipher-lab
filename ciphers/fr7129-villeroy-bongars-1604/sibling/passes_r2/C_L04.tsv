@@ -1,0 +1,55 @@
+line	win	pos	sign	gloss	conf	note	chk
+04	01	1	9	p	L		ok
+04	01	2	s	o	L		ok
+04	01	3	od	s	L	s over od (off by one in reader)	fix
+04	01	4	2	e	L	e over 2	fix
+04	01	5	6	n	L	n over 6	fix
+04	01	6	9	p	L		ok
+04	01	7	Zt	-	L	nothing above; e belongs to the next sign	fix
+04	01	8	r	e	L	e over r	fix
+04	01	9	ff	r	L		ok
+04	02	10	is	de	L		ok
+04	02	11	a	s	L		ok
+04	02	12	i	d	L		ok
+04	02	13	8	oit	M	o,i,t all over 8	fix
+04	02	14	f	z	L	z over f	fix
+04	02	15	13	du	L	d,u over 13; an e may sit at its right end	unsure
+04	02	16	tt	h	L	three bars; h over it (reader's e is the dash after u)	fix
+04	02	17	p	e	L	e over p	fix
+04	03	18	do	z	L		ok
+04	03	19	9	z	M	z-like glyph with long horizontal bar over 9, not a p	fix
+04	03	20	Zt	-	L		ok
+04	03	21	e	p	L	p with crossed stem (per/par abbreviation)	ok
+04	03	22	b	n	L	n over b (off by one)	fix
+04	03	23	p	i	L	i over p	fix
+04	03	24	od	s	L	s over od	fix
+04	03	25	^16	sa	M	bar over 16; s,a over it	fix
+04	04	26	Hun	n	L	n over the big hook	fix
+04	04	27	s.	re	L		ok
+04	04	28	is	de	M	reader read 15; looks like the same ı+s sign as pos 10; d,e over it	fix
+04	04	29	2	f	L	f over 2	fix
+04	04	30	8	i	L		ok
+04	04	31	9	c	L		ok
+04	04	32	q	f	L		ok
+04	04	33	un	&	L		ok
+04	05	34	Hr	m	L		ok
+04	05	35	y.	a	L		ok
+04	05	36	p	i	L		ok
+04	05	37	i	n	L		ok
+04	05	38	a	s	L		ok
+04	05	39	8	o	L	o over 8	fix
+04	05	40	o	u	L	u over o	fix
+04	05	41	mt	u	L		ok
+04	05	42	o	e	L		ok
+04	06	43	o	e	L	same sign as pos 42 (seam duplicate)	del
+04	06	44	y	r	L		ok
+04	06	45	Zt	a	L		ok
+04	06	46	n	i	L		ok
+04	06	47	Hun	n	L		ok
+04	06	48	r	e	L		ok
+04	06	49	Z	s	M	angular Z shape rather than a curved 2	fix
+04	06	50	8	o	L		ok
+04	06	51	o	u	L		ok
+04	06	52	Ch	-	L	hook encloses the small v of pos 53; b stands over both	ok
+04	07	53	v	b	L		ok
+04	07	54	f	z	L	z (5-like glyph) over f	fix
