@@ -49,3 +49,11 @@ No run, no numbers. The four instruments above (hard-EM aligner, Gibbs segmentat
 segment the gloss text; for codes seen once they stay [retired] (rule 3 third-attempt clause). Named untried instrument, different
 in kind: spatial alignment of gloss words to groups from the leaf images (x-extents), gated first on the 122 firm tokens hidden
 (>= 0.80 of >= 40 recoverable, shuffled-row control). Not refuted, not tested; ~15 vision units. NOTES.md "BKLOG-0507".
+
+## B0709-A2 (7 Oct 2026): spatial gloss-over-group alignment, known-answer gate
+Gate pre-registered in align/PREREG_spatial.md. Target known-answer: 3/31 recoverable firm tokens (5/31 with both borderlines
+favourable), f66R plus f66L P34; pooled bound with the 71 unmeasured firm tokens all assumed right: 0.745 < 0.80 -> FAIL.
+Control (shuffled rows) not run: the target failed step 2, so the control could license nothing. Baseline (no image positions,
+even spread): 49/122 = 0.402. Reason: the gloss is written as running text starting at the margin or line start at hand width,
+not over its groups. Instrument FAILs on this document (premise false here), not a statement about the codes' values.
+Measurements align/spatial_pilot.tsv; NOTES.md "B0709-A2".

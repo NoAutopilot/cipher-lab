@@ -1421,3 +1421,47 @@ Read so far: token level H 50, S 72, M 370, I 7, U 6 of 505 (firm 122), unchange
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
 - [x] retry: tools/decode_key.py --check exit 0; fresh-session re-derivation SAME twice (RUN6-PAGETR7, D2-PAGR7), 0 tokens differ
 Verdict: keep going: 1 internal gaps; cheapest next: spatial gloss-over-group alignment, known-answer gate first, ~$7 (or the Marine B7 original, LOCAL-QUEUE L11)
+
+## B0709-A2 (7 Oct 2026, 08:12-08:2x UTC by date -u, account-2 worker for the account-3 orchestrator): spatial alignment, known-answer gate
+Brief `.claude/briefs/runs/2026-10-07-acct3-batch-0709.md` B0709-A2 item 1. Gate registered before any measurement in
+align/PREREG_spatial.md (commit before measuring). Disk only, 0 network requests, no subagent; x-extents read by eye on ruled
+crops of images/f66R.jpg and images/f66L.jpg (the folder's 1700-px half-leaves), 5 crops. Measurements: align/spatial_pilot.tsv.
+
+Pilot order: f66R first (the leaf with the most glosses inside the band over their own groups), then the best-placed pair on
+f66L (P34). Result on the known-answer tokens: **3 of 31 recoverable firm tokens** give the firm value as their spatial chunk
+(5 of 31 if both borderline letters fall the favourable way). Why: the decipherer did not write the gloss over the groups it
+decodes. On most lines he began it at the left margin or at the start of the line above (P38, P40, P46, P51-P53: the gloss starts
+about 260 px left of the first group) and wrote it at ordinary hand width, so a short gloss covers only part of its run (P43 "la
+Jeune Princesse" over 7 groups; P39 compressed to the right of its run). Only P34 on f66L ("le Duc de Parme Regnant") sits close
+over its groups, and even there 2 of 6.
+
+Gate (PREREG_spatial step 2, >= 0.80) is FAILed by bound, without measuring the other five half-leaves: the other firm tokens
+number 71 (122 less f66R's 43 and P34's 8), so even if every one were recoverable and right the pooled rate is at most
+(5 + 71) / (31 + 71) = 0.745. Sensitivity, stated: the bound depends on counting the shifted-but-overlapping pairs as recoverable,
+which the registered definition does (gloss in the band above, overlapping in x); on the strictly-over pairs alone (P34, P39,
+P43, P45, P55: 16 tokens, at most 5 right) the bound would not settle, but those 16 alone score 0.31. The shuffled-row control
+(step 3) was not run: a target that fails step 2 licenses nothing either way, and the control cannot rescue it. Informational
+baseline (registered): spreading each gloss's letters evenly over its run with no image positions gives 49/122 = 0.402
+(script in this section's commit message), well above the spatial ~0.10, so the image positions carry less information than the
+text order alone. No M token was read, no key value or grade changed, key.tsv and reading untouched.
+
+Verdict on the instrument: spatial gloss-over-group alignment FAILs its known-answer gate on this document because its premise
+does not hold here (the gloss is laid out as running text, not over the groups). With the four text-segmentation instruments
+already retired, no untried instrument for the single-attestation codes is known in this folder; the step reopens only with new
+material (the Marine B7 original, LOCAL-QUEUE L11) or a different instrument someone names.
+
+## Remaining gaps (B0709-A2, 7 Oct 2026)
+Read so far: token level H 50, S 72, M 370, I 7, U 6 of 505 (firm 122), unchanged from D2-PAGR7 (tools/decode_key.py --check 5 Oct 2026, re-derived twice in fresh sessions, RD7-2026-10-05-def2.md); 99.2% of tokens lie under a period interlinear gloss read off the images on disk
+- Code-level values for the 370 M tokens (mostly single-attestation codes) - blocker: waiting-on LOCAL-QUEUE L11 (the Marine B7 original); five instruments run on this folder's material: four text-segmentation instruments [retired] (tools/interlinear_align.py, tools/gibbs_align.py, the firm-neighbour pin, multi-seed settle7) and spatial gloss-over-group alignment FAILed its known-answer gate (B0709-A2, align/PREREG_spatial.md, 3/31 vs 0.80); a second witness of the same text is the only known route
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (B0709-A2, 7 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [retired] key-rebuild: four text-segmentation instruments retired under rule 3 (interlinear_align, gibbs_align, pin, multi-seed settle7) and the fifth, spatial gloss-over-group alignment, FAILed its pre-registered known-answer gate (B0709-A2, 3/31 firm, bound 0.745 < 0.80); no untried instrument known; reopens with new material (LOCAL-QUEUE L11) or a named different instrument
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
+- [x] retry: tools/decode_key.py --check exit 0; fresh-session re-derivation SAME twice (RUN6-PAGETR7, D2-PAGR7), 0 tokens differ
+Verdict: parked: every gap has an outside blocker

@@ -1,0 +1,32 @@
+pair	page	code	firm_value	gloss_over_x	spatial_chunk	match	note
+P38	f66R	176	ni	Dernier/Duc	r	0	gloss line starts ~300 px left of the first group (x ~355 vs 618)
+P38	f66R	45	r	Duc	u	0	
+P38	f66R	204	que	(none; nearest letters)	(none)	0	gloss ends x ~1070, group at 1120-1160
+P39	f66R	146	le	(none; gloss starts right)	(none)	0	gloss starts x 915, group 730-765; whole gloss compressed to the right
+P40	f66R	212	re	Parme	pa	0	gloss starts in margin (x 355), groups at 620
+P40	f66R	212	re	Parme	rm	0	
+P40	f66R	90	du	Parme	e	0	
+P40	f66R	204	que	que/35	e3	0	
+P43	f66R	145	la	la	l	0	gloss at hand width, not stretched over 7 groups
+P43	f66R	135	je	la	a	0	
+P43	f66R	48	u	Jeune	je	0	
+P45	f66R	48	u	unique	u	1	
+P45	f66R	176	ni	unique	niqu	0	
+P45	f66R	204	que	unique	(none)	0	"unique" spans x 1075-1140 over three groups 1050-1190
+P46	f66R	147	li	deux/Princes	(other letters)	0	gloss starts in margin (x 345), groups at 615
+P46	f66R	47	t	Princes	(other letters)	0	
+P47	f66R	45	r	(none)	(none)	0	gloss ends x ~1010, group at 1150
+P51	f66R	48	u	Partialite	pa	0	gloss starts in margin
+P52	f66R	155	ma	Duchesse	(other letters)	0	gloss starts in margin
+P52	f66R	221	se	Maison	(other letters)	0	
+P53	f66R	48	u	de genie	(other letters)	0	gloss starts in margin
+P53	f66R	48	u	genie	e	0	
+P55	f66R	221	se	(none; gloss starts right)	(none)	0	
+P55	f66R	185	on	oncles	onc	0	"on" if the boundary letter falls the other way (counted 0, borderline)
+P55	f66R	32	c	oncles	les	0	
+P34	f66L	146	le	le	le	1	the best-placed pair on the leaf
+P34	f66L	90	du	Duc	du	1	
+P34	f66L	32	c	Duc/de	cd	0	borderline: "c" if the 'd' of de falls to 87
+P34	f66L	87	de	de/Parme	ep	0	
+P34	f66L	212	re	Regnant	gn	0	
+P34	f66L	174	na	Regnant	t	0	
