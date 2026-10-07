@@ -1483,3 +1483,22 @@ Run: `python3 scripts/trim_join_char.py` (exit 3; pt18 train 621,050 words, held
   not a re-tuning of this scorer's knob (rule 3's third-attempt clause does not close the step); it would face the same two gates.
 - Requests: none (corpus on disk). No subagent.
 
+
+## Keyhunt 7 Oct 2026
+
+KH1-E (LANE KH-1, 7 Oct 2026, 17:47-18:00 UTC by date -u), for key.tsv and key_example.tsv (KEY-OFFICES rows 2-3).
+Sources searched, 7 Oct 2026: this NOTES.md (LX-TR, LX-SIB/SIB2/SIB3, Remaining gaps); QUEUE.md (PP-03/06/07,
+PX-SCDIGI3/4 DigitArq sweeps, KX "already listed"); sources/solver-diffs/2026-09-24-pares-digitarq.tsv; DigitArq
+`api/docs/search` (`cifra Linhares`, `cifrado Linhares`, `cifra Funchal`, `Domingos de Sousa Coutinho cifra`,
+`Rodrigo de Sousa Coutinho cifra`, `dicionário cifra`, `cifra Bezerra`, and maço 85/87 listing phrases) plus 3
+`docs/details` calls; full-coverage thumbnails of maço 86 `/04` (46 images) and `/01` (82), read as montages in
+the scratchpad (not committed). 143 digitarq.arquivos.pt requests, >=3.5 s apart, no 403/429/challenge.
+Result: **unread digitised siblings carrying cipher: 0 for each key.** Maço 86 is now 19 of 21 items eye-checked
+(LX-SIB/SIB2/SIB3 + /04 /01 here), 266 of 604 images; `/02` (126) and `/09` (212) are still unopened (next: full
+thumbnails, one DigitArq session each for /02 and two for /09). Thumbnail scale (141x128) shows numeral-group
+blocks but would miss a few cipher words set inside a line of prose. Two catalogue records in the fonds not on file
+anywhere in the repo describe cipher, both undigitised (copy-order leads only): `PT/TT/CLNH/0032/10` (copy of
+António de Araújo's first letter after leaving Lisbon on the frigate Thetis, "Era em cifra, escrita de Lorient",
+c.1807-08) and `PT/TT/CLNH/0037/42` (secret instructions "nesta espécie de cifra, que só poderá decifrar o Sr.
+F. A. M. G.", mentions Wellesley, c.1808-09); whether either uses this dictionary key is unknown. No test decode
+(no survivor). Every candidate: `KEYHUNT-2026-10-07-KH1-E.tsv`.
