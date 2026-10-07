@@ -10480,3 +10480,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 16:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 16:10 UTC: spawned 1 (HUNT-NO2 session_01LUEKwykFTvP7tRpZoxiyXD, Opus 5.5), queued left 0 (the 15:09 firing spawned 0 but could not post: GitHub credential service 503)
 2026-10-07 16:12 | LANE HUNT-NO2 (account 2, session_01LUEKwykFTvP7tRpZoxiyXD) | claim: eckert-1864 Huntington Cipher No. 2 reply draft (outreach/huntington-eckert-no2-2026-10.md) + separate gate-7 checker; nothing sent; cap 10, box 16:12-17:42 UTC; for acct3-orchestrator
 2026-10-07 16:15 | HUNT-NO2 drafter | claim: drafting outreach/huntington-eckert-no2-2026-10.md for LANE HUNT-NO2
+2026-10-07 16:16 | HUNT-NO2 drafter | done: drafted outreach/huntington-eckert-no2-2026-10.md, CONTRIBUTIONS row added, nothing sent for LANE HUNT-NO2
