@@ -5814,3 +5814,24 @@ scouts grep spelling variants (Lansac/Lanssac); Sonnet check-solved workers stop
 undone, twice, even when told the box is a minimum. Known-text share of worker spend about 19% (CROI, CROI2, BAUG).
 What is left: QUEUE rows 8-11 (colbert-embassy-ciphers-1665-71, fr15972-cp39-spanish-intercepts-1595-96, fr4736-courcelles-chateauneuf-1586,
 colbert-croissy-alsace-cleves-1659-66; EV 0.4-0.5, all Tomokiyo partial keys) are the next check-solved candidates if a lane wants them.
+
+## LANE NEWT-A-account-1 handoff (session_01XkZSCGtkqTz1SjaokR9ZcN, owner account), 7 October 2026 (closed 02:0x UTC: PART A backlog and every B/C hand-over tested, lane 14.12 of 60)
+Brief .claude/briefs/runs/2026-10-06-acct3-newtargets.md PART A; jobs .claude/briefs/runs/2026-10-06-owner-newta-breadth.md.
+- Spec backlog (10 non-bench specs with empty cheap_test_done): 2 Birago skipped (off limits); the other 8 already had test 1 run in
+  their folders and only the spec field was missing -- filled from the folder records, no re-run (193ceef7): clair1067 judge FAIL with
+  its own period gloss also FAIL (cannot decide); fr5160 FAIL with gloss PASS (reading noise, plaintext on f.87/f.68r); decode-2754
+  control 0.31 < gate 0.6 (too-short); fr3993-villeroy control 0.764 vs target FAIL -1.35 (negative for one-sign-one-letter
+  homophonic only); fr4712 power 0/20 (non-test); baluze103 FAIL -1.595 with sibling 0.767 and synthetic band r~0.25-0.30
+  (transcription, not table); eckert-1862 and sachsstaatsarchiv-manteuffel-1712 judge-only stubs, no test 1 (past breadth).
+- NA-HYDE (0.89) hyde-add4166-1659: groups-per-name vs letters on the Birch print, exact 0/39 vs shuffled pairing 0.036 -- no beat,
+  conditional on print. Next: spec test 2 (Hyde-Barwick key on groups < 693 vs shuffled groups).
+- NA-CRAV (2.96) craven-rupert-1648: DECODE R8447 full-size fetched, cipher only 7 lines, N=42 / 35 distinct, 2-pass 95.3%;
+  design_prior no family above null (FP 0.140). Next: spec test 2 (R8445/6/8/9 and Rupert keys vs shuffled-key control, ~$3).
+- NA-MONL (3.54) fr4735-monluc-lansac-poland-1573: Tomokiyo Monluc Cipher 1 table on glossed f.86 -> 0.435 vs shuffled max 0.313
+  (PASS, known-answer). Next: per-cell C-grade key check from f.86 (~$2), then test 2 (unglossed c268 with fr16; compare c270 first).
+  This is the one candidate the round produced where a cheap test moved it.
+- Known-text share (owner guardrail): NA-MONL (3.54 of 7.39 worker spend) ran on a glossed leaf, but to test a key for the
+  ~3,800 unglossed signs on c258-c390, which the guardrail allows.
+- Lesson: "spec with empty cheap_test_done" is not a reliable breadth backlog -- most workers record test 1 in NOTES.md only.
+  A spec writer or breadth worker should write cheap_test_done in the same commit.
+
