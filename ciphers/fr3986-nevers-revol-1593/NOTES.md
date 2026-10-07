@@ -515,18 +515,19 @@ Read so far: 0 signs to a continuous text. f.198 recto: 264 signs profiled (GAPS
 - f.198 recto cipher block (canvas 395, 11 cipher-bearing lines, 264 signs in one blind profile pass) - blocker: waiting-on ASKS row 102 (the owner's sort of the Revol-hand sign-sorter page); fetched and profiled 2 Oct 2026 (GAPS4: atlas share 45.5%, NEW 9.1%, 0 H, the verso's profile, not leaf 298's 75.9%/0%/57%), atlas passes not licensed; tiles cut 2 Oct 2026 (GAPS5: 1,018 tiles from 23 lines, 41 provisional piles, 23 focus rows, https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb); next after the sort: two blind passes against the settled Revol-hand list, ~$8
 
 ## Escalation (GAPS3, 2 Oct 2026; GAPS-2 list updated in place)
-- [x] siblings: fr.3985 ff.126-130 and fr.3986 ff.151-152 (the interlined leaves) are the atlas source and the held-out; c.264's lower lines are in the atlas (A53-A62); c.298 lines 1-3 aligned as the held-out (65 signs, 2 Oct 2026); lines 4-10 left (mostly code words)
+- [x] siblings: fr.3985 ff.126-130 and fr.3986 ff.151-152 (the interlined leaves) are the atlas source and the held-out; c.264's lower lines are in the atlas (A53-A62); c.298 lines 1-3 aligned as the held-out (65 signs, 2 Oct 2026); lines 4-10 left (mostly code words); the two other "avec chiffre" Revol copies, items 68 (f.146v, c.287) and 75 (ff.157r-v, c.308-309), located and cut 7 Oct 2026 (AM-REV68): same sign family, no gloss, no clear twin, 15 cipher-bearing line crops in images/siblings/ for the owner's sorter
 - [n/a] clear-pages: the leaf is a clear-French letter with inline cipher runs (verso) and a cipher block (recto); no clear copy of this letter is known (Bourdeau's f.157v clear copy is no.75, 9 Oct; premise check (a)-(d) and the web and blog check, 2 Oct 2026, found none)
 - [x] known-keys: key no.60 is in hand (key.tsv; tools/keys/key60.tsv + key_atlas_extra.tsv for the v2 draft); the key is not the blocker
 - [x] print: Gomberville seconde partie, Berger de Xivrey vol.3 and Memoires de la Ligue v.5-6 read 24 Sept 2026; Memoires de Nevers ii ContentSearch ("Desenzan", "Revol"), Lettres missives vol.3 full text, Rott 1882/1900 read 2 Oct 2026; absent
 - [x] key-rebuild: atlas extended (A53-A62), held-out widened to 65 signs on whole-line crops, 65/65 on leaf 298 (2 Oct 2026, GAPS-2), but the Revol hand does not profile like the atlas's office hand (GAPS4); the Revol-hand tile cut and sorter page are done (GAPS5, 2 Oct 2026); the sort itself is the owner's, waiting-on ASKS row 102
 - [x] image-check: canvas 395 = f.198 recto (stamp 198, head "23 d'octobre 1593"), canvases 396/397 = f.198 verso (two scans), 398 = f.199r blank (2 Oct 2026, images/probes.json); recto native region fetched and cut 2 Oct 2026 (GAPS4, images/recto, 54 crops), profiled: Revol-hand profile, atlas passes not licensed
 - [retired] retry: blind passes on the verso runs with the 264ext atlas (instrument: atlas + whole-line crops + blind Sonnet passes), 2 Oct 2026 GAPS3, agreement 36%, judge FAIL, the fourth pass family that failed to move agreement; reopened only by new material (the recto) or an atlas from this copyist's own hand
-Verdict: parked: every gap has an outside blocker (waiting-on ASKS row 102, the owner's sort of https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb; then two blind passes against the settled Revol-hand list, ~$8)
+Verdict: parked: every gap has an outside blocker (waiting-on ASKS row 102, the sibling tiles of items 68/75 cut 7 Oct 2026 for adding to it; the owner's sort of https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb; then two blind passes against the settled Revol-hand list, ~$8)
 
 ## While waiting
 
 - DONE (AM-LOOK, 7 Oct 2026; fr.3986 list of 15 items, fr.3985 not parsed): list the other Nevers-to-Revol letters of 1593 in fr.3985/fr.3986 from the BnF finding aid (catalogue only, no images), to name sibling leaves in the same copyist's hand that would add tiles to the sorter or a crib, ~$2.
+- DONE (AM-REV68, 7 Oct 2026): items 68 (f.146v) and 75 (ff.157r-v) located, same sign family, 15 cipher line crops cut (images/siblings/). Open: tiles into ASKS 102's sorter (~$1.5, account-3 hand-off); crib test of f.146r (to the King, same day, clear) against item 68, ~$2.
 
 ## Web and blog check (GAPS3-fr3986-nevers-revol-1593, 2 Oct 2026)
 
@@ -581,3 +582,46 @@ WebFetch 2 (dbourdeau.github.io 1, github.com 1); no 403/429.
 
 Item: Nevers-to-Revol letters of 1593 from the BnF archivesetmanuscrits finding aid, 10:4x UTC, for LANE LANE-AM-0914 (catalogue only, no images). Route: POST to `/resultatRechercheSimple.html` with `TEXTE_LIBRE_INPUT` "Nevers Revol 1593 Français 3986" (the bare root URL answers 405 to a POST; the form posts to that results page), 15 results, one page. Fr.3986 entries (item no. as printed, then letter): 3 Nevers to Revol, Nevers 14 Sept 1593 (copy); 8 Revol to Nevers, Fontainebleau 15 Sept; 15 Nevers to Revol, Nevers 13 Sept (copy); 30 Revol to Nevers, Fontainebleau 22 Sept; 39 Nevers to Revol, Fovan 26 Sept (copy); 41 Revol to Nevers, Fontainebleau 17 Sept; 47 Nevers to Revol, Montbeliard 29 Sept (copy); 54 Nevers to Revol, Basle 1 Oct (copy); 58 Nevers to Revol, Bade 4 Oct (copy); **68 Nevers to Revol, "avec chiffre", Vese 7 Oct (copy)**; 72 Pisani to Nevers, Dezensan 8 Oct; **75 Nevers to Revol, "avec chiffre", Coire 9 Oct (copy)**; 77 Revol to Nevers, Chartres 7 Oct; 92 Revol to Nevers, Mante 21 Oct; **101 Nevers to Revol, "avec chiffre", Desanzan 23 Oct (copy)**. The finding aid's numbers are the volume's item numbers, not confirmed folios; the item-to-folio map was not tested here. Candidates for the copyist's hand: the three "avec chiffre" copies (68, 75, 101) are the cipher-bearing siblings the finding aid itself marks; whether they are the same copyist as f.198/f.298 needs the image. Not covered: a second search for fr.3985 gave a result page whose entries this worker did not parse, so no fr.3985 list is given; search returns only entries whose notice matches the query terms, so other 1593 letters in the volume may exist. Requests: archivesetmanuscrits.bnf.fr 5 (1 home page, 1 rejected POST, 3 results).
 
+
+## AM-REV68 (7 Oct 2026): census of sibling items 68 and 75
+
+Worker AM-REV68 (account 2, for LANE LANE-AM-0914), brief `.claude/briefs/runs/2026-10-07-account2-laneam-0914-jobs.md`. Clock 10:36-10:4x UTC
+7 Oct 2026 (date -u). Census only; no reading, no transcription, no gate (nothing scored, so no PREREG/control).
+
+Location. Tomokiyo's league.htm (on disk, `sources/cryptiana/web/league.htm`) gives no.68 = fol.146v (Vese, 7 Oct) and no.75 = fol.157
+(Coyre, 9 Oct); Bourdeau's `targets/nevers1593/` (shallow clone adbf9a1, 5 Oct 2026, grepped for this target only) has transcription drafts
+of f.146v (c.287) and f.157v (c.309) and the canvas = 2 x folio rule. Eye-checked at 1000 px and 2000 px this pass (`images/siblings/probes.json`):
+- **Item 68** = canvas 287, **f.146v**: opens "Monsr de Revol" in the copyist's cursive; the facing f.146r (c.286, stamped 146, head
+  "7 d'octobre 1593") is a different letter in a looser hand, "Sire, je croy que V.M. se pourra un peu esbair des nouvelles...", to the King,
+  same day, clear. Endorsement at the foot of f.146v ("... 1593 7 oct ... a Revol ..."). Cipher: **7 cipher-bearing lines** in mid-page (2 whole,
+  5 mixed), about 190 signs by eye (estimate, +-25%).
+- **Item 75** = canvases 308-309, **ff.157r-157v**: f.157r (stamp 157, head "9 octobre 1593") opens "Monsieur de Revol"; f.157v closes "...Coyre
+  ... 9 octobre 1593". The preceding f.156r (c.306, stamp 156, head "9 d'octobre 1593") is another 9 Oct letter, not checked beyond its head
+  (Bourdeau's "ff.156-157v" for no.75 is not confirmed by this pass; the "Monsieur de Revol" opening is on f.157r). Cipher: **8 cipher-bearing
+  lines**, f.157r 4 (two mid-page runs, two lines near the foot) and f.157v 4 (the top two lines, two runs in lines 4-5), about 175 signs by
+  eye (estimate). Bourdeau's caution that his f.157v draft over-reads cipher holds: the cipher there is runs inside clear cursive.
+
+Sign family and hand (by eye, `images/siblings/hand_compare_sheet.jpg`: f.198r lines 3-4 from the GAPS4 source region, f.146v L05-L06,
+f.157v L01, f.157r L08). Same sign family as f.198 (key no.60 symbols: the double-cross, the d-loop/delta sign, T, pi with perp, 20/14/4 figures,
+xx/xxx, lambda, the tailed q, superscript dots and accents). Same cursive copyist as f.198r-v for the clear text ("Monsr de Revol" openings,
+the hooked 'que' sign) by eye; ink and pen are heavier on 146v/157 than on f.198 (scan or pen, not established). Not the office hand of the
+interlined leaves (c.264/c.298). Verdict: **same family, same copyist by eye** -- unmeasured; a sorter pile check would test it.
+
+Gloss / twin. No interlinear decipherment over any cipher run on f.146v, f.157r or f.157v at 2000 px and in the native line crops; marginal
+marks are clear-text corrections. No clear-text copy of either letter bound beside it. One possible content parallel, not a twin: f.146r, the
+same-day clear letter to the King (c.286), may cover the same news ("des nouvelles", Montbeliard/Swiss route) -- a crib candidate to test, not
+established. Tomokiyo's henryiv2.htm notes f.146v "partly reads 'demander l'absolution', 'a la verite', 'interest'" (his anchors, uncredited
+as a reading by this pass).
+
+Crops for the owner's sorter (do not publish; no sorter built): `images/siblings/f146v/` (11 lines, c.287 region 700,1900,3600,1260),
+`f157r/` (8 lines, c.308 region 400,4600,4100,1250), `f157v/` (6 lines, c.309 region 850,950,3600,820), each with manifest.json and
+debug overlay; `images/siblings/cipher_lines.tsv` lists the 15 cipher-bearing crops with extent and estimated sign counts. Crop commands:
+`python3 tools/iiif_lines.py --ark btv1b9060631k --canvas 287 --region 700,1900,3600,1260 --out images/siblings/f146v --prefix f146v --debug`
+(likewise canvas 309 / 308 with the regions above) -> 11, 6 and 8 lines.
+
+Next step (named, not run): add the 15 sibling cipher lines' tiles to ASKS 102's Revol-hand sorter (build_tiles.py on these crops, ~$1.5,
+an account-3 orchestrator hand-off; the sort stays the owner's), which roughly doubles the Revol-hand sign sample (~365 more signs);
+second, a cheap crib test of f.146r (to the King, same day) against item 68's cipher runs, ~$2.
+
+Requests: gallica.bnf.fr 21 (11 canvas probes at 1000 px, 5 at 2000 px, 2 info.json, 3 native regions; >= 2 s apart, all 200); github.com 1
+shallow clone. No 403/429/challenge.

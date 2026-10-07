@@ -1,0 +1,68 @@
+[
+ {
+  "file": "probe_c284.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f284/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "leaf stamped 145, blank side"
+ },
+ {
+  "file": "probe_c285.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f285/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "spread, endorsements/blank"
+ },
+ {
+  "file": "probe_c286.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f286/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "f.146r, '7 d'octobre 1593', 'Sire, je croy que V.M. se pourra un peu esbair des nouvelles...', letter to the King in clear, different (looser) hand"
+ },
+ {
+  "file": "probe_c287.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f287/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "f.146v, item 68: 'Monsr de Revol...' copy, cipher in 7 lines mid-page, no interlinear gloss"
+ },
+ {
+  "file": "probe_c288.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f288/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "f.147r (by canvas order, not eye-checked)"
+ },
+ {
+  "file": "probe_c305.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f305/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "blank/endorsement"
+ },
+ {
+  "file": "probe_c306.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f306/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "f.156r, '9 d'octobre 1593', a different 9 Oct letter (start not checked beyond the head)"
+ },
+ {
+  "file": "probe_c307.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f307/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "f.156v (not eye-checked)"
+ },
+ {
+  "file": "probe_c308.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f308/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "f.157r, item 75 begins 'Monsieur de Revol', head '9 octobre 1593'; cipher in 4 lines"
+ },
+ {
+  "file": "probe_c309.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f309/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "f.157v, item 75 continued: cipher in 4 lines at the top, closes 'Coyre ... 9 octobre 1593'"
+ },
+ {
+  "file": "probe_c310.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f310/full/,1000/0/native.jpg",
+  "fetched": "2026-10-07",
+  "what": "f.158r (not eye-checked)"
+ }
+]
