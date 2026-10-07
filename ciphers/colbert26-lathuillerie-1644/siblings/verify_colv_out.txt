@@ -1,0 +1,32 @@
+DA1-COLV value-independence split; pairs word_pairs_da1.tsv + word_pairs_col3.tsv; spans {'c3940': 97, 'c47': 75, 'c50': 154, 'c54': 38, 'c55': 93, 'c56': 50, 'c62': 58, 'c63': 31}
+instrument c3940: H 20/65 p95 12 P 0.0000 -> CLEARS
+instrument c47: H 21/53 p95 12 P 0.0000 -> CLEARS
+instrument c50: H 31/110 p95 19 P 0.0000 -> CLEARS
+instrument c54: H 8/28 p95 7 P 0.0149 -> CLEARS
+instrument c55: H 19/67 p95 15 P 0.0012 -> CLEARS
+instrument c56: H 10/30 p95 7 P 0.0014 -> CLEARS
+instrument c62: H 8/37 p95 8 P 0.0541 -> FAILS
+instrument c63: H 7/22 p95 6 P 0.0145 -> CLEARS
+code	value	R10_units	side	N	H	ctrl_mean	p95	P	per_canvas	verdict(b)
+16	se	c48,c50,c63	IN	5	3	0.08	1	0.0000	c50:3/4 c63:0/1	-
+16	se	c48,c50,c63	OUT	19	5	0.74	2	0.0007	c3940:2/6 c47:0/2 c54:0/2 c55:2/8 c56:1/1	keep C
+20	i	c3940,c47,c48,c49,c50,c54,c55	IN	44	20	5.62	9	0.0000	c3940:4/8 c47:3/11 c50:8/15 c54:3/5 c55:2/5	-
+20	i	c3940,c47,c48,c49,c50,c54,c55	OUT	7	3	0.90	2	0.0417	c56:2/4 c63:1/3	FAIL -> M
+67	leur	c49,c55	IN	1	0	0.01	0	1.0000	c55:0/1	-
+67	leur	c49,c55	OUT	7	2	0.07	1	0.0012	c3940:1/3 c47:0/1 c50:1/3	keep C
+81	me	c3940,c50,c56	IN	7	3	0.18	1	0.0002	c3940:0/1 c50:2/3 c56:1/3	-
+81	me	c3940,c50,c56	OUT	8	3	0.22	1	0.0003	c47:1/3 c54:0/1 c55:2/3 c63:0/1	keep C
+96	que	c3940,c47,c55	IN	11	6	0.51	2	0.0000	c3940:3/4 c47:2/3 c55:1/4	-
+96	que	c3940,c47,c55	OUT	10	0	0.34	1	1.0000	c50:0/6 c54:0/1 c56:0/2 c63:0/1	FAIL -> M
+30	s	c32,c3536,c47,c48,c49,c50,c55,c56,c63	IN	69	22	11.67	17	0.0001	c47:2/7 c50:7/28 c55:8/22 c56:4/10 c63:1/2	-
+30	s	c32,c3536,c47,c48,c49,c50,c55,c56,c63	OUT	23	8	3.36	6	0.0129	c3940:5/14 c54:3/9	FAIL -> M
+85	na	c49,c50,c56	IN	3	2	0.08	1	0.0009	c50:0/1 c56:2/2	-
+85	na	c49,c50,c56	OUT	4	1	0.03	0	0.0301	c3940:0/1 c47:0/1 c55:0/1 c63:1/1	FAIL -> M
+k = 1 spans where the code alone covers a word without its value (reported, not gated):
+  16 se: contains 1; not 4: p(c3940); a(c3940); des(c55); a(c62)
+  20 i: contains 0; not 4: que(c47); de(c47); de(c54); et(c54)
+  67 leur: contains 0; not 2: le(c3940); luy(c3940)
+  81 me: contains 0; not 1: sur(c56)
+  96 que: contains 4; not 3: le(c50); et(c50); nous(c55)
+  30 s: contains 6; not 7: de(c50); cy(c55); la(c55); cy(c55); le(c56); a(c56); point(c62)
+  85 na: contains 0; not 1: sont(c62)

@@ -9,7 +9,7 @@ code	value	grade	source	note
 17	o	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=s:1
 18	h	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=3 others=
 19	m	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
-20	i	C	DA1-COL word-level pairing c50/c3940/c47 (siblings/word_da1.py, pre-registered, PASS vs pairing-shuffle control, 7 Oct 2026)	was i M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=9 agree=3 others=u:2,n:1,o:1,r:1,t:1)
+20	i	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; value-independent canvases (outside R10 units) 3/7, P 0.042 > 0.00714; DA1-COL/COL3 value i at C before	was i M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=9 agree=3 others=u:2,n:1,o:1,r:1,t:1)
 21	e	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=uil:1
 22	m	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=6 agree=4 others=o:2
 23	n	C	R9-COL26 per-code control (siblings/percode_control.py)	was n(M) from f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), n=18 agree=7; R9-COL26 anchor-span H 16/23 vs control B p95 13, P 0.0008 (Bonferroni 0.01), held-out c62+c63 3/4
@@ -18,7 +18,7 @@ code	value	grade	source	note
 26	aines	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=lareyne:1
 28	la	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=8 agree=8 others=
 29	a	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=26 agree=4 others=se:4,le:3,u:3,deur:2,p:2,r:2,l:1,ler:1,li:1,ner:1,our:1,upp:1
-30	s	C	DA1-COL3 held-out word-level pairing c54/c55/c56/c63 (siblings/word_col3.py, PREREG-DA1-COL3.md, PASS vs pairing-shuffle control, 7 Oct 2026)	was s M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=15 agree=4 others=a:3,e:2,es:1,l:1,o:1,ques:1,r:1,sseco:1); DA1-COL2 pass PASS, DA1-COL pass FAIL; held-out 16/43 P 0.0008
+30	s	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; value-independent canvases c3940+c54 8/23, P 0.013 > 0.00714 on DA1-COL reader (0.0038 on DA1-COL2 reader: reader-dependent); DA1-COL/COL3 value s at C before	was s M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=15 agree=4 others=a:3,e:2,es:1,l:1,o:1,ques:1,r:1,sseco:1); DA1-COL2 pass PASS, DA1-COL pass FAIL; held-out 16/43 P 0.0008
 31	mdebrienne	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=13 agree=3 others=l:2,rt:2,t:2,astimens:1,rit:1,roit:1,u:1
 32	o	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=14 agree=3 others=a:2,e:2,t:2,u:2,eu:1,n:1,uste:1
 33	ux	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=
@@ -48,7 +48,7 @@ code	value	grade	source	note
 61	rge	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=5 agree=3 others=auec:1,l:1
 65	s	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=
 66	f	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=1 others=m:1,o:1
-67	leur	C	DA1-COL word-level pairing c50/c3940/c47 (siblings/word_da1.py, pre-registered, PASS vs pairing-shuffle control, 7 Oct 2026)	was uasi M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)
+67	leur	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; conflict (rule 4): f.23 own gloss pairs 67 with the chunk uasi of quasi (P25w083, 48 67); sibling OUT 2/7 P 0.0012 kept as lead; DA1-COL/COL3 value leur at C before	was uasi M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)
 68	s	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
 69	s	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=
 70	o	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
@@ -59,13 +59,13 @@ code	value	grade	source	note
 78	u	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=2 others=i:1
 79	s	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=t:1
 80	fault	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
-81	me	C	DA1-COL word-level pairing c50/c3940/c47 (siblings/word_da1.py, pre-registered, PASS vs pairing-shuffle control, 7 Oct 2026)	was il M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)
+81	il	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; conflict (rule 4): f.23 own gloss writes il over 81 alone (P22w072, single segment); value restored to il for f.23; siblings me OUT 3/8 P 0.0003, lead; DA1-COL/COL3 value me at C before	was il M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)
 82	monnepueu	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=5 agree=3 others=epueu:1,nepueu:1
-85	na	C	DA1-COL3 held-out word-level pairing c54/c55/c56/c63 (siblings/word_col3.py, PREREG-DA1-COL3.md, PASS vs pairing-shuffle control, 7 Oct 2026)	was luy M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=); held-out 3/4 P 0.0000 (Naples x2, maintenant)
+85	luy	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; conflict (rule 4): f.23 own gloss writes luy over this group alone (P16w052, single segment; sign itself 85/86 disputed, f23_reconciled P16); value restored to luy for f.23; siblings na: OUT 1/4 P 0.030, IN c56 Naples x2; DA1-COL/COL3 value na at C before	was luy M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=); held-out 3/4 P 0.0000 (Naples x2, maintenant)
 87	amais	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
 89	m	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=3 others=
 91	d	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
-96	que	C	DA1-COL word-level pairing c50/c3940/c47 (siblings/word_da1.py, pre-registered, PASS vs pairing-shuffle control, 7 Oct 2026)	was r M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)
+96	que	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; value-independent canvases 0/10 (c50 0/6); also f.23 own gloss puts 96 inside ordres (P42w116); DA1-COL/COL3 value que at C before	was r M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)
 97	pour	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=3 others=
 98	vous	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=4 others=
 99	ourueoir	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=
