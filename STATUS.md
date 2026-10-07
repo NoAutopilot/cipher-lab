@@ -6001,3 +6001,24 @@ Leads for other lanes: DECODE R9657 is a Lope Hurtado 1522 letter, unglossed sib
 1615 Charles de Gonzague key sheet (KEY-OFFICES candidate); WVO 1068 is a glossed known-plaintext source for willem-van-hessen key_1069;
 Aerztebriefe tags 8 Sailer-to-Philipp of Hessen 1543 letters "Geheimschrift"; KH1-B's flag fr.3988 f.143 (no.60, unglossed).
 Left: the Monroe-reel rows in keyhunt/2026-10-07-KH4D2.tsv (5 unlocated, 4 unscreened, costs in the TSV); Pinkney M30 screen (~$3-7).
+
+## LANE KH-2 handoff (session_01R5gb64HksKMDGLo9vTiGgj, account 2), 7 October 2026 (closed 19:2x UTC: brief met, lane about 31.7 of 40)
+
+KEYHUNT round (.claude/briefs/runs/2026-10-07-acct3-keyhunt.md), KEY-OFFICES.tsv rows 26-48 (23 keys); worker brief
+.claude/briefs/runs/2026-10-07-acct2-kh2-workers.md. Seven Opus workers (A-F, then E2) 29.41 + orchestrator ~2.3 by get_session.
+Per-worker rows in keyhunt/2026-10-07-KH2{A,B,C,D,E,E2,F}.tsv, merged (232 rows) into KEYHUNT-2026-10-07.tsv.
+
+Unread siblings per key (the deliverable): rows 34 (jan-van-nassau key_1572) and 37 (orange-nassau key_nepveu) 1, the same letter,
+WVO 11008; row 40 sforza-maino: 4 cipher items with no clear copy in italien 1584 (f.13, f.15, f.143, f.259), but the held key is an
+anneal artefact, not a reading key, so they wait on a key rebuild; every other row 0 (26-29, 30, 31-33, 35, 36, 38, 39, 41-47, 48),
+each with the reason in the TSV.
+- ciphers/wvo-11008-certain-1572 (open): Oranje (as George Certain) to Lodewijk (as Lambert Certain), Keulen 12 Aug 1572, KHA A 11/XI 15;
+  54 tokens H39 M15; control beaten (4-gram -1.435 vs shuffled-key p95 -1.576, 6/1000); fr16 judge FAIL at N=39. Next: check-solved,
+  then tools/intake_gate_check.py.
+- sforza-maino-1446: italien 1584/1585 carry ~25 cipher/clear-copy pairs in the f.68/f.70 sign family (Amidani, Pusterla, Marcolino,
+  Guarna, the Duke, 1447). Next: known-plaintext key rebuild from those pairs (~USD 5), then the 4 unglossed items.
+Leads for other lanes: WVO 11106 (Willem van den Bergh to Oranje, 19 Sep 1572, whole page glyph cipher, WVO "zonder sleutel"; WVO 1810
+Lumbres 1575 another key) -- cryptanalysis; Thurloe intercepted letter Jo. Weddall 29 Aug 1656 (Birch vol 5), unglossed numerals, no held
+key; ~44 printed Downing letters 1657-60 with decipherments = pool extension for key_downing; Beinecke Rochambeau Papers unsearched
+(bot-challenged) for La Luzerne; 30 later RAH images of the Gonzalez Bravo neighbours unopened.
+Left: nothing runnable inside this round's rows except the Amidani key rebuild and wvo-11008 intake.
