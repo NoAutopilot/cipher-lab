@@ -16,12 +16,16 @@
   <named material>" and re-checks once a day for that material. The owner can stop it in ROOM.md / chat.
 - Rule 10, rule 3 and rule 4 hold unchanged; a pass goes to a separate verifier session before it is reported.
 
-## TOMO-63 (lead account 1; helpers on accounts 2 and 4 by WORK-QUEUE rows the lead writes, <= $15/day each)
-Target: ciphers/birago-nevers-1571 -- BnF fr.3251 f.119 (no.63, Birago to Nevers, Saluzzo 13 Nov 1571), the numeric-figure
-paragraph Satoshi Tomokiyo named as not deciphered and asked about (his reply, 5 Oct 2026); sibling fr.3252 f.100r in the
-same numeric cipher (found by us). Start from the existing record: birago-nevers-1571/NOTES.md, ../birago-fr3252-1571-72/num/,
-HYPOTHESES.md (crib drag, families already tried). Credit Tomokiyo throughout; when a reading passes its verifier, the
-account-3 orchestrator drafts the note to him (gate 7) -- the lane never writes to him.
+## TOMO-ARM (lead account 1; helpers on accounts 2 and 4 by WORK-QUEUE rows the lead writes, <= $15/day each)
+Corrected by the owner 7 Oct 20:3x UTC: the target Satoshi Tomokiyo recommended to us (his reply to the owner's 24 Sept
+email, outreach/tomokiyo-gramont-danzay.md; held reply outreach/tomokiyo-armstrong-reply.md) is
+ciphers/armstrong-madison-1808 -- John Armstrong to Madison, Paris, 20 Feb 1808 (NARA RG 59 M34 roll 14), the shorthand-
+and-code passages. Start from its NOTES.md, HYPOTHESES.md, the WE028 key Tomokiyo published, tools/data/uscodes-1800/ (his
+"model learns a sibling code's vocabulary" suggestion), and the owner's shorthand sorter (ASKS 128,
+https://claude.ai/artifact/R9GrLoF1ajudygVjo4d17N; read its db only when the owner says "done"). Secondary, lower priority,
+same lane: ciphers/birago-nevers-1571 (BnF fr.3251 f.119, the numeric paragraph Tomokiyo also flagged as undeciphered,
+sibling fr.3252 f.100r). Credit Tomokiyo throughout; when a reading passes its verifier, the account-3 orchestrator drafts
+the note to him (gate 7) and releases the held reply -- the lane never writes to him.
 
 ## BNF-FOCUS (account 2), standing
 Goal: be genuinely useful to the BnF (Gallica / Manuscrits / Arsenal) -- the project's most-used holding. Wave 1 builds
