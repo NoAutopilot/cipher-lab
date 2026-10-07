@@ -4318,15 +4318,15 @@
       ],
       "audit_status": "two audits",
       "superseded_by": "",
-      "depth": "D3",
+      "depth": "D4",
       "depth_pct": 100.0,
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
-      "depth_by": "D12-VP verifier (account 2)",
+      "depth_by": "D4-V2AJ verifier (account 4)",
       "depth_date": "7 Oct 2026",
-      "decode_status": "Partially decrypted",
+      "decode_status": "Decrypted",
       "date": "7 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Augur to Ingalls, 9 Mar 1864, Grant coming down to the Army of the Potomac tomorrow (N2-AJ)",
@@ -4348,7 +4348,7 @@
       "reading_version": "D12-E1 7 Oct 2026 (reading-no2.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D12-VP)' section 4",
       "depth_sentence": "At midnight on 9 March 1864 Augur tells Ingalls that Lieutenant-General Grant will come down to the Army of the Potomac the next day.",
-      "depth_check": "period key book (mssEC 47) for every value; header time '12. midn' (re-read by D4-V2AJ, was transcribed 'noon') agrees with the time word Viola = 12 midnight; content agrees with OR I/33 pp.663-664 (Humphreys circular 10 Mar 1864, Grant arrived at headquarters); no print of this text",
+      "depth_check": "period key book (mssEC 47) for every value; image crop agrees word for word; header time '12. midn' (re-read by D4-V2AJ, was transcribed 'noon') agrees with the time word Viola = 12 midnight; printed traffic of the next day confirms the decoded content (Grant at Meade's headquarters 10 Mar 1864: Humphreys circular and Stanton to Burnside 'General Grant has gone to the front', OR I/33 pp.663-664); fresh rule-7 re-derivation by a second session",
       "depth_note": "code words H 9"
     },
     {

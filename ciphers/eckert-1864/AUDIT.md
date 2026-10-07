@@ -1689,6 +1689,12 @@ Archive full text, Google Books, OpenAlex or CrossRef (two audits, 7 Oct 2026)."
 printed", "previously unknown" -- the event (Grant's visit of 10 March) is well known; N3 is about this telegram's text.
 Sentence: "At midnight on 9 March 1864 Augur tells Ingalls that Lieutenant-General Grant will come down to the Army of the
 Potomac the next day."
+- **Depth raised D3 -> D4** after reading D4-V2AI's section 3 (same lane, same page): rule 4a's D4 items are met -- every
+  cipher-letter token H (9/9), no residue, a non-statistical external check (the image agrees word for word; the header time
+  agrees with the time word; printed traffic of 10 March independently confirms the decoded content, Grant at Meade's
+  headquarters that day, OR I/33 pp.663-664), and a fresh rule-7 re-derivation by a session other than the solver's (section 1).
+  "No print of this text" (the D3 reason above and in D12-VP) is a novelty fact, not a depth criterion; the D3 line above is
+  superseded. Outward words: "deciphered". decode_status Decrypted.
 
 ### 4. Postmortem
 - Over-claim: none; the solver and D12-VP say "not located". Error caught: the header "12. noon" is "12. midn"; the logged
