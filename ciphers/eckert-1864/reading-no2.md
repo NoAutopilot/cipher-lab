@@ -171,17 +171,17 @@ Found by a CONTENTdm full-text search of the volunteer text of mssEC 19 (object 
 Buckley: 202 pages carry one of the names; the 93 of them up to about page 160 were fetched and every entry headed by one of the
 four operators scored against key-no2.md, key.md and key-no9.md (NOTES.md "ECK64-NO2"). Eight short unread entries were read
 from strip crops of the 2400 px page images, the volunteer text as second witness. Code-word tokens over the eight: **H 120,
-C 1, I 8, M 0** (21-entry total H 419, C 7, I 18, M 1).
+C 1, I 8, M 0** (21-entry total H 419, C 7, I 18, M 1) as committed; H 119 and H 418 after the verifier's N2-Q correction below.
 
 | entry | ledger | OR print found | agreement |
 |---|---|---|---|
 | N2-N | Halleck to Grant, 16 Feb 1864 3.30 PM: leased plantations on the Mississippi; Ellet's Marine Brigade | I/32 pt 2 p.407 | word for word, except that the OR has "important by the Government" where the ledger has only Republic (= Important) |
 | N2-O | Halleck to Grant, 29 Feb 1864 3.30 PM: further information of Longstreet's retreat | I/32 pt 2 p.494 | word for word |
-| N2-P | the Secretary of War (Barton) to Grant, 18 Mar 1864 3.30 PM: the Department will not transfer troops from Steele's command unless at Grant's request | not located in I/32 pt 3 or I/34 pt 2 (IA djvu full text, phrase search) | -- |
-| N2-Q | Burnside (Lawn) to Grant, 23 Apr 1864 4.15 PM: the troops all started from [Ann] Tennessee; Second Ohio Cavalry not yet mounted; asks whether all the horses here go to Butler before it is mounted; no cavalry but the Third New Jersey; "hurry up answer" | not located in I/33 (phrases "is mounted", "no cavalry except"); I/33 p.722 prints Halleck to Grant of 24 Mar on Burnside's request for the dismounted Second Ohio | -- |
+| N2-P | the Secretary of War (Barton) to Grant, 18 Mar 1864 3.30 PM: the Department will not transfer troops from Steele's command unless at Grant's request | not in I/32 pt 3 or I/34 pt 2; printed in The Papers of Ulysses S. Grant vol. 10 from the RG 107 telegram sent (verifier, AUDIT.md "ECK64-NO2 verifier") | word for word ("General Steeles Command") |
+| N2-Q | Burnside (Lawn) to Grant, 23 Apr 1864 4.15 PM: the troops all started from Annapolis; Second Ohio Cavalry not yet mounted; asks whether all the horses here go to Butler before it is mounted; no cavalry but the Third New Jersey; "hurry up answer" | not in I/33; printed in The Papers of Ulysses S. Grant vol. 10 p.343, "April 23, 1864, 4:00 P.M." (verifier) | word for word, with "Annapolis" where the ledger has "Ann Apple is" (see the correction below) |
 | N2-R | Augur (Lantern) to Meade (Mohawk), 26 Apr 1864 11.30 AM: cannot send the party without some co-operation from Warrenton and Point of Rocks; else will postpone | not located in I/33 | -- |
 | N2-S | Halleck to Grant, 26 May 1864 10.30 AM: instructions sent to Butler and Hunter; 4,000 or 5,000 re-enforcements to Port Royal; want of water transportation; nothing from Sherman | I/36 pt 3 p.207 (running head next to the hit; may be one off) | word for word ("Gertrude rank" = 12 m. have been sent) |
-| N2-T | the Secretary of War (Beach) to Dana (Saturn), 6 June 1864 10 AM: two French officers, a colonel and a captain, sent to observe the military operations, anxious to go to Grant's headquarters; held back a week; ask Grant whether to let them go to the front | not located in I/36 pt 3 ("French officers", "to observe", "observe the military") | -- |
+| N2-T | the Secretary of War (Beach) to Dana (Saturn), 6 June 1864 10 AM: two French officers, a colonel and a captain, sent to observe the military operations, anxious to go to Grant's headquarters; held back a week; ask Grant whether to let them go to the front | not located in I/36 pt 3 or (verifier) I/36 pt 1, III/4, PUSG vol. 11; Dana's answer of 7 June is printed in I/36 pt 1 p.91 ("With regard to the French officers, General Grant says he does not want them") | -- |
 | N2-U | the President (College) to Grant, 15 June 1864 7 AM: "I begin to see it. You will succeed. God bless you all." | I/40 pt 2 p.47 | word for word; OR "Have just read your dispatch of 1 [1.30] p. m.", ledger "recd", time word Hannah = 1 PM |
 
 Notes on particular tokens:
@@ -191,8 +191,11 @@ Notes on particular tokens:
 - "Slumberations" (N2-T) = operations (Slumber + -ations), I from context. The Slumber row of [25B] carries no meaning in this
   copy and Religion is taken = Operations there by inference (key-no2.md section 6); this one witness says Slumber = Operations,
   so the copyist's misalignment on [25B] may run differently from the one-row-up rule for rows 5-8. Not resolved here.
-- "Ann" (N2-Q) is marked plain and left unread: the TIME table gives Ann = 1 AM, which cannot stand in "started from Ann
-  Apple" (Apple = Tennessee); the sense wants "East". No grade is counted for it.
+- "Ann Apple is" (N2-Q) is the clear word Annapolis in three pieces (verifier correction, 7 Oct 2026: The Papers of Ulysses S.
+  Grant vol. 10 p.343 prints "Troops all started from Annapolis"). The derived block below still reads Apple as the code word
+  Tennessee (H) and "Ann" as an unread plain word; both are wrong at this place. Corrected counts: N2-Q H 18, I 1; the eight
+  H 119, C 1, I 8, M 0; the 21 entries H 418, C 7, I 18, M 1. Pending: `plain: Ann Apple` on N2-Q in ciphertext-no2.txt and a
+  re-run of decode_no2.py (solver's step).
 - N2-Q's date words "Genesis Nelson Brooks" read April 22 (20 + 2) where the ledger header says 23rd and Julia = 4 PM against
   the header's 4.15: the message was enciphered the day before it was sent, or the encoder slipped; logged, not resolved.
 - N2-T's date words "Hunter Mark Dawson Emily" read Washington, July 6, 10 AM (Mark = July, H) where the ledger header says June
@@ -205,8 +208,9 @@ Notes on particular tokens:
 - Pencilled interlinear guesses over N2-Q and N2-R ("paragraph", "mules", "trains", "doing", "did", "get", "may", "partake",
   "go") are a later hand's and are not transcribed.
 
-Nothing here is a novelty statement (rule 10); P, Q, R and T were not located in the volumes named, which is a search
-result only.
+Nothing here is a novelty statement (rule 10). Verifier's classes (AUDIT.md "ECK64-NO2 verifier", 7 Oct 2026): N, O, P, Q, S, U
+N1 (printed: OR, or for P and Q The Papers of Ulysses S. Grant vol. 10); R and T N3 (no prior print or decipherment located;
+Dana's printed 7 June reply answers T).
 
 ## Derived block
 

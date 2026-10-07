@@ -1135,3 +1135,101 @@ Requests: hdl.huntington.org 2 (image, item info), archive.org 3 (two djvu texts
 ### 4. Postmortem
 No over-claim found: reading-no2.md and NOTES.md say "a search result only, no novelty claimed" for N2-M and tie N2-L to
 O9-AE's print. The gap was propagation only (two entries had no AUDIT class); closed here.
+
+## AUDIT (propagation, ECK64-NO2 verifier)
+
+Verifier ECK64-NO2-V (account 1, for the account-3 orchestrator), 7 Oct 2026, from 11:55 UTC by `date -u`; a separate
+session from the ECK64-NO2 solver and not protecting its conclusions. Scope: the eight Cipher No. 2 entries N2-N..U that
+reading-no2.md gained in section "Eight further Beckwith/Caldwell entries, February-June 1864 (ECK64-NO2, 7 Oct 2026)".
+Nothing decoded; the derived block and ciphertext-no2.txt are left as the solver committed them (one correction below is
+logged for the solver to apply).
+
+### 1. Re-derivation (rule 7)
+- `python3 decode_no2.py --check`: "reading-no2.md is current", exit 0.
+- Every code word of N2-N..U looked up by script in key-no2.md (word or its stem + inflection: Kindles, suppers, Nutmegs,
+  Silvers, swindling, Nuptials, radicals): every value and grade agrees with the derived block. The one C token is
+  "radicals" in N2-T (Radical = Officer, C, alignment fixed by N2-B against the OR). The eight I tokens are the clerk's forms
+  of key-no2.md section 8: yard (N2-Q, N2-S, N2-T), stick (N2-S, N2-T, N2-U), Balm (N2-O), Slumberations (N2-T). Count:
+  N 17 H; O 12 H + 1 I; P 10 H; Q 19 H + 1 I (as committed); R 9 H; S 23 H + 2 I; T 19 H + 1 C + 3 I; U 11 H + 1 I = H 120,
+  C 1, I 8, M 0, as the solver states.
+- The three new section-8 rows (Balm, stick, Slumberations) are graded I with their single-context evidence written out;
+  honest. The Slumber = Operations witness against the inferred Religion = Operations on [25B] is stated, not resolved.
+- Conflicts stated, not hidden: N2-Q date words April 22 vs header 23rd and Julia 4 PM vs 4.15; N2-T Mark = July vs header
+  June 6th. Both are in reading-no2.md and NOTES.md.
+- Caveat: N2-O's "Chart[?]" carries the solver's own [?] and is counted H; the OR print (I/32 pt 2 p.494, "Major-General
+  Grant") fixes the addressee, so the count stands.
+
+### 2. Correction to the reading (N2-Q "Ann Apple is")
+The Papers of Ulysses S. Grant, vol. 10 (Jan. 1-May 31, 1864), p.343, prints this telegram from the National Archives copy
+(RG 107): "On April 23, 1864, 4:00 P.M., Maj. Gen. Ambrose E. Burnside telegraphed to USG. 'Troops all started from
+Annapolis Second Ohio Cavalry not yet mounted Is it intended that all the horses now here ... before the second is mounted It
+has been waiting a long time and I have no cavalry except the third New Jersey'" (Google Books snippets, volume id
+mD4fAQAAMAAJ, queries "Troops all started from Annapolis", "before the Second is mounted", "no cavalry except the Third New
+Jersey"). So the ledger's "Ann Apple is" is the clear word Annapolis written in three pieces, not Ann + Apple (= Tennessee,
+H) + "is". The committed reading "[Troops] all started from Ann [Tennessee] is" is wrong at that place: Apple is a plain
+syllable here and should not be counted H, and "Ann" is not an unread token. Corrected counts used below: N2-Q H 18, I 1;
+the eight H 119, C 1, I 8, M 0; the 21-entry total H 418, C 7, I 18, M 1. The derived block still shows the old value
+until the solver marks the entry `plain: Ann Apple` in ciphertext-no2.txt and re-runs `decode_no2.py` (a one-line change;
+next step for the target, not done here because a verifier does not decode). PUSG's 4:00 P.M. agrees with the date-group
+time word Julia = 4 PM; its April 23 agrees with the header, against the date words' 22.
+
+### 3. Search log (7 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| OR djvu full texts on IA, whitespace- and hyphen-normalised: I/32 pt 2, I/32 pt 3, I/33, I/34 pt 2, I/36 pt 3, I/40 pt 2 (solver's cache) and, fetched here, I/34 pt 1 (warofrebellion341unit), I/36 pt 1 (warofrebellion361unit), I/37 pt 1 (warofrebellion371unit), III/4 (warofrebellionco0004genf) | P: "transfer troops from", "Steele's command unless", "unless at your request"; Q: "Second Ohio Cavalry", "no cavalry except/but", "not yet mounted", "hurry up", "Third New Jersey"; R: "co-operation from Warrenton", "I will postpone", "cannot send the party", "Point of Rocks", every Augur/Meade item of 25-27 Apr 1864 in I/33; T: "French officers", "two French", "to observe the military", "keep them away", "let them go to the front", "does not want them"; and the N, O, S, U texts | N2-N printed I/32 pt 2 p.407 (head "407" above the item), N2-O p.494 (the next head, "495", follows the item), N2-S I/36 pt 3 p.207 (between heads 207 and 208), N2-U I/40 pt 2 p.47 (between 47 and 48): all four confirmed, word for word as the solver says. P, Q, R, T: not in any of the ten volumes. I/33 p.722 has Halleck to Grant of 24 Mar on Burnside's request for the dismounted Second Ohio (context only). I/36 pt 1 p.91 (page from the next running head, 92) prints Dana to Stanton, Cold Harbor, 7 June 1864, 9 a.m.: "With regard to the French officers, General Grant says he does not want them. He will send formal declaration if you wish" -- the answer to N2-T, not N2-T itself |
+| Google Books API (key, country=US), 25 queries | P: "not transfer troops from Steele's command", "This Department will not transfer troops", "Steeles Command unless at your request"; Q: "no cavalry except the Third New Jersey", "before the Second is mounted", "Troops all started from Annapolis", Burnside + "April 23, 1864"; R: "some co-operation from Warrenton", "cannot send the party as I wish", Augur + Meade + "Point of Rocks" + "April 26, 1864", "I will postpone" + names; T: "two French officers" + Stanton/Dana 1864, "French officers" + "Grant's headquarters", "anxious to go to General Grant's headquarters", "holding them back for a week", "go to the front or keep them away", "French officers" + "Papers of Ulysses S. Grant" | **P printed**: PUSG vol. 10, "This Department will not transfer troops from General Steeles Command unless at your request." ALS (telegram sent), DNA, RG 107, Telegrams Collected (Bound) (page not shown in the snippet). **Q printed**: PUSG vol. 10 p.343 (above). R: no hit. T: no print of the query; only Dana's 7 June reply (OR I/36 pt 1) |
+| IA full-text search (be-api fts), PUSG volumes | vol. 10 "Steeles Command" (positive control: 1 hit), vol. 10 "Point of Rocks" (0), vol. 11 "French officers" quoted and unquoted (0; vol. 11 indexed, "Dana" 1 hit) | P control works; R and T not in PUSG vols. 10-11 by fts |
+| Huntington CONTENTdm item info, pointers 8915, 8944, 8948, 8979 (solver's cached fetch of 7 Oct, read here) | every metadata field | volunteer transcription (code words undecoded), notes on pencilled words, keywords (tel044 Chickahominy, tel100 Annapolis); no decoded field |
+| Earlier families of this file (Zooniverse Talk, project blog, solver repositories, open indexes; 20-26 Sept) | not re-run for these entries | no decoded field anywhere on the project as of those passes |
+| Augur's and Meade's letters sent (NARA RG 393), Meade papers (HSP), Stanton papers (LoC), NARA RG 107 telegrams (M473/M504) | not reachable as text | unread |
+Requests: archive.org 6 (4 djvu texts, 1 advancedsearch, 1 metadata), be-api.us.archive.org 6 (fts), googleapis.com 25, hdl.huntington.org 0 (solver's cache read); all 200.
+
+### 4. Classification (key `period` for all eight: key-no2.md from Cipher No. 2, mssEC 47)
+- **N2-N** (p.10, Halleck to Grant, 16 Feb 1864, 3.30 PM): **N1**, text `known` (OR I/32 pt 2 p.407). Depth **D4**, 100%
+  (17/17 H), check: OR print, re-derivation here. Safe: "The Cipher No. 2 ledger copy reads, with the period book, to the
+  text printed in OR I/32 pt 2 p.407." Unsafe: anything implying the content was unknown. Sentence: "Halleck tells Grant
+  that the Secretary of War wants Ellet's Marine Brigade assigned to protect the leased plantations on the Mississippi."
+- **N2-O** (p.14, Halleck to Grant, 29 Feb 1864, 3.30 PM): **N1**, `known` (OR I/32 pt 2 p.494). Depth **D3**, 92% (12 H,
+  1 I: Balm), check: OR print. Not D4 while Balm is I. Safe/unsafe as N2-N. Sentence: "Halleck asks Grant for any
+  further information of Longstreet's retreat."
+- **N2-P** (p.23, the Secretary of War to Grant, 18 Mar 1864, 3.30 PM): **N1**, `known` (PUSG vol. 10, from the RG 107
+  telegram sent). The solver's "not located" was true of the OR volumes searched; the text is printed in the Grant
+  Papers. Depth **D4**, 100% (10/10 H), check: PUSG print. Safe: "Reads, with the period book, to the text printed in The
+  Papers of Ulysses S. Grant, vol. 10." Unsafe: "not printed". Sentence: "Stanton tells Grant the War Department will not
+  transfer troops from Steele's command unless Grant asks."
+- **N2-Q** (p.52, Burnside to Grant, 23 Apr 1864): **N1**, `known` (PUSG vol. 10 p.343). Depth **D3**, 95% (18 H, 1 I:
+  yard; Apple removed as plain, section 2), check: PUSG print. Safe: "Reads to the text printed in PUSG vol. 10 p.343,
+  except that the ledger's 'Ann Apple is' is Annapolis." Unsafe: "started from Tennessee"; "not printed". Sentence:
+  "Burnside tells Grant his troops have all left Annapolis, the Second Ohio Cavalry is not yet mounted, and he has no
+  cavalry but the Third New Jersey."
+- **N2-R** (p.56, Augur to Meade, 26 Apr 1864, 11.30 AM): **N3**. No prior plaintext or decipherment located after the
+  search above. Not N4: Augur's and Meade's letters-sent books and the NARA telegram series, where such a telegram would
+  be copied, are unread. Depth **D3**, 100% (9/9 H) with the period key book as the external source of every value and the
+  date words confirming the header's 26th; not D4, because no print or sequel checks the content. Safe: "Read at grade H
+  with the period Cipher No. 2 book; no prior decipherment or printed text located in OR I/33 or I/37 pt 1, Google Books,
+  PUSG vol. 10 or the Huntington record (searched 7 Oct 2026)." Unsafe: "first", "unpublished", "never printed".
+  Sentence: "Augur tells Meade he cannot send the party without co-operation from Warrenton and from Point of Rocks, and
+  will postpone it if Meade cannot give the force now."
+- **N2-S** (p.79, Halleck to Grant, 26 May 1864, 10.30 AM): **N1**, `known` (OR I/36 pt 3 p.207). Depth **D3**, 92% (23 H,
+  2 I), check: OR print. Sentence: "Halleck tells Grant his instructions went to Butler and Hunter and that 4,000 or 5,000
+  re-enforcements will go to Port Royal, though water transportation is short."
+- **N2-T** (p.87, the Secretary of War to Dana, 6 June 1864, 10 AM): **N3**. The query itself was not located; Dana's
+  answer of 7 June (OR I/36 pt 1 p.91) is printed and shows the subject was in the record, so a summary of the exchange is
+  known while this text is not. Not N4: Stanton papers and RG 107 telegrams sent unread. Dana's 7 June answer also supports
+  the ledger header (June 6) against the date word Mark = July. Depth **D3**, 87% (19 H, 1 C, 3 I), check: Dana's printed
+  reply. Safe: "Read at grade H/C with the period Cipher No. 2 book; the query is not located in OR I/36 pts 1 and 3, III/4,
+  Google Books or PUSG vol. 11; Dana's printed reply of 7 June answers it (searched 7 Oct 2026)." Unsafe: "first",
+  "unknown episode". Sentence: "Stanton asks Dana to learn from Grant whether two French officers, a colonel and a captain
+  sent to observe the operations, may go to the front."
+- **N2-U** (p.93, Lincoln to Grant, 15 June 1864, 7 AM): **N1**, `known` (OR I/40 pt 2 p.47; also a widely quoted Lincoln
+  text). Depth **D3**, 92% (11 H, 1 I), check: OR print. Sentence: "Lincoln tells Grant: I begin to see it. You will
+  succeed. God bless you all."
+
+### 5. Postmortem and corrections
+- Failure: the solver searched only OR volumes, not the sender-/recipient-specific edition (The Papers of Ulysses S.
+  Grant), the same gap as the Eckert 1864 precedent at the top of this file; two of the four "not located" entries are
+  printed there. Corrected: reading-no2.md ECK64-NO2 table and token notes (P and Q now "printed in PUSG vol. 10"; the
+  "Ann" note replaced by the Annapolis correction) and NOTES.md ECK64-NO2 (a correction paragraph). The solver's wording
+  was search-result only, so no novelty over-claim; the over-claim was the N2-Q token Apple = Tennessee (H).
+- Next step for the solver: `plain: Ann Apple` on N2-Q in ciphertext-no2.txt, re-run decode_no2.py, update the counts.
+- SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-N2R and SO-ECKERT-N2T added (N3). No rows for the N1 items.

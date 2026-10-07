@@ -4055,6 +4055,340 @@
       "depth_sentence": "On 11 June 1864 the Quartermaster-General telegraphs Canby at Vicksburg that he cannot find the gauge of the Vicksburg and Shreveport Railroad and asks what it is.",
       "depth_check": "OR I/34 pt 4 pp.424-425 (Meigs to Canby 17 June, 'telegraphed you twice ... the gauge'; Canby's 24 June reply); page image re-read and decode_no2.py --check by the verifier",
       "depth_note": "code words H 13; 'Sleeve port' is a clear-word spelling, not a cipher token"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D4",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Halleck to Grant, 16 Feb 1864, Ellet's Marine Brigade for the leased plantations (N2-N)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/32 pt 2 p.407.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.10, pointer 8902"
+      ],
+      "document_id": "Huntington mssEC 19 p.10, N2-N (Halleck to Grant, 16 Feb 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.10, N2-N (Halleck to Grant, 16 Feb 1864)"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "17/17 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "depth_sentence": "Halleck tells Grant that the Secretary of War wants Ellet's Marine Brigade assigned to protect the leased plantations on the Mississippi.",
+      "depth_check": "OR I/32 pt 2 p.407 prints the same telegram; decode_no2.py --check re-derived by the verifier",
+      "depth_note": "code words H 17"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 92.3,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Halleck to Grant, 29 Feb 1864, Longstreet's retreat (N2-O)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/32 pt 2 p.494.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.14, pointer 8906"
+      ],
+      "document_id": "Huntington mssEC 19 p.14, N2-O (Halleck to Grant, 29 Feb 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.14, N2-O (Halleck to Grant, 29 Feb 1864)"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "12 H, 1 I (Balm = February) of 13",
+      "unresolved_spans": "none",
+      "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "depth_sentence": "Halleck asks Grant for any further information of Longstreet's retreat.",
+      "depth_check": "OR I/32 pt 2 p.494 prints the same telegram",
+      "depth_note": "code words H 12, I 1"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D4",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: the Secretary of War to Grant, 18 Mar 1864, no transfer of troops from Steele's command (N2-P)",
+      "grade": "N1",
+      "line": "Reads, with the period book, to the text printed in The Papers of Ulysses S. Grant, vol. 10.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.23, pointer 8915"
+      ],
+      "document_id": "Huntington mssEC 19 p.23, N2-P (Stanton to Grant, 18 Mar 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.23, N2-P (Stanton to Grant, 18 Mar 1864)"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "10/10 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "depth_sentence": "Stanton tells Grant the War Department will not transfer troops from Steele's command unless Grant asks.",
+      "depth_check": "The Papers of Ulysses S. Grant vol. 10 prints the RG 107 telegram sent word for word",
+      "depth_note": "code words H 10"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 94.7,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Burnside to Grant, 23 Apr 1864, troops left Annapolis; Second Ohio Cavalry not mounted (N2-Q)",
+      "grade": "N1",
+      "line": "Reads to the text printed in PUSG vol. 10 p.343, except that the ledger writes Annapolis as \"Ann Apple is\".",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.52, pointer 8944"
+      ],
+      "document_id": "Huntington mssEC 19 p.52, N2-Q (Burnside to Grant, 23 Apr 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.52, N2-Q (Burnside to Grant, 23 Apr 1864)"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "18 H, 1 I (yard) of 19 after the verifier correction (Ann Apple is = Annapolis, plain)",
+      "unresolved_spans": "none",
+      "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "depth_sentence": "Burnside tells Grant his troops have all left Annapolis, the Second Ohio Cavalry is not yet mounted, and he has no cavalry but the Third New Jersey.",
+      "depth_check": "The Papers of Ulysses S. Grant vol. 10 p.343 prints it (4:00 P.M.)",
+      "depth_note": "code words H 18, I 1 (corrected; derived block still shows H 19 with Apple = Tennessee, pending the solver fix); date words read 22 against header and PUSG 23"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Augur to Meade, 26 Apr 1864, a party needing co-operation from Warrenton and Point of Rocks (N2-R)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in OR I/33 or I/37 pt 1, Google Books, PUSG vol. 10 or the Huntington record (searched 7 Oct 2026).",
+      "gap": "letters-sent books and NARA telegram series unread, so not N4; SO-ECKERT-N2R queued",
+      "phrases": [
+        "Huntington mssEC 19 p.56, pointer 8948"
+      ],
+      "document_id": "Huntington mssEC 19 p.56, N2-R (Augur to Meade, 26 Apr 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.56, N2-R (Augur to Meade, 26 Apr 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "9/9 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "depth_sentence": "Augur tells Meade he cannot send the party without co-operation from Warrenton and from Point of Rocks, and will postpone it if Meade cannot give the force now.",
+      "depth_check": "period key book (mssEC 47) for every value; date words confirm the header 26th; no print or sequel located",
+      "depth_note": "code words H 9"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 92.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Halleck to Grant, 26 May 1864, re-enforcements to Port Royal (N2-S)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/36 pt 3 p.207.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.79, pointer 8971"
+      ],
+      "document_id": "Huntington mssEC 19 p.79, N2-S (Halleck to Grant, 26 May 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.79, N2-S (Halleck to Grant, 26 May 1864)"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "23 H, 2 I of 25",
+      "unresolved_spans": "none",
+      "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "depth_sentence": "Halleck tells Grant his instructions went to Butler and Hunter and that 4,000 or 5,000 re-enforcements will go to Port Royal, though water transportation is short.",
+      "depth_check": "OR I/36 pt 3 p.207 prints the same telegram",
+      "depth_note": "code words H 23, I 2"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 87.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: the Secretary of War to Dana, 6 June 1864, two French officers (N2-T)",
+      "grade": "N3",
+      "line": "Read at grade H/C with the period Cipher No. 2 book; the query is not located in OR I/36 pts 1 and 3, III/4, Google Books or PUSG vol. 11; Dana's printed reply of 7 June answers it (searched 7 Oct 2026).",
+      "gap": "letters-sent books and NARA telegram series unread, so not N4; SO-ECKERT-N2T queued",
+      "phrases": [
+        "Huntington mssEC 19 p.87, pointer 8979"
+      ],
+      "document_id": "Huntington mssEC 19 p.87, N2-T (Stanton to Dana, 6 June 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.87, N2-T (Stanton to Dana, 6 June 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "19 H, 1 C, 3 I of 23",
+      "unresolved_spans": "none",
+      "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "depth_sentence": "Stanton asks Dana to learn from Grant whether two French officers, a colonel and a captain sent to observe the operations, may go to the front.",
+      "depth_check": "Dana to Stanton, 7 June 1864, 9 a.m., OR I/36 pt 1 p.91 answers it (\"With regard to the French officers, General Grant says he does not want them\")",
+      "depth_note": "code words H 19, C 1, I 3; date word Mark = July against header June 6"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 91.7,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: the President to Grant, 15 June 1864, \"I begin to see it\" (N2-U)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/40 pt 2 p.47.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.93, pointer 8985"
+      ],
+      "document_id": "Huntington mssEC 19 p.93, N2-U (Lincoln to Grant, 15 June 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.93, N2-U (Lincoln to Grant, 15 June 1864)"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "11 H, 1 I of 12",
+      "unresolved_spans": "none",
+      "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "depth_sentence": "Lincoln tells Grant: I begin to see it. You will succeed. God bless you all.",
+      "depth_check": "OR I/40 pt 2 p.47 prints the same telegram",
+      "depth_note": "code words H 11, I 1"
     }
   ],
   "lanes": [
