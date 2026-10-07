@@ -96,3 +96,31 @@ entry's print check as unreachable (not as "not located").
 Entries: 8948/56/0, 8951/59/2, 8956/64/0, 8961/69/2, 8965/73/0, 8966/74/0, then 8964/72/1 (long) last. Same as D12-E3 (section "## D12-E4",
 status READ D12-E4). PUSG vol. 10 (to May) / vol. 11 (June on) where Grant is a party.
 Wave 2 sessions (12:34 UTC): D12-E3 session_014UAgDp1xLqVrhj1oS83wcY; D12-E4 session_01P4LyLzaZCVox5oC7XKgXUm. Archived 12:34: D12-V2M, V2R, V2T, E2.
+
+Wave 2 results (12:5x UTC): D12-E1 N2-AD..AK 8 entries pp.4-18 (7.42; 8900/8/0 and 8907/15/2 are Cipher No. 1, not read), 6 in print, 2 not
+located (Howell, Augur); D12-E62H eckert-1862 6 Hurlbut M -> C + mssEC 19 9174 x2 C, 9877 stays M (4.95, 1.10x); D12-E3 N2-AL..AR pp.40-55,
+all 7 in OR (3.87); D12-E4 N2-AS..AY pp.56-74, 6 OR + 1 PUSG 10 (6.22, 1.04x). Lane spend 43.3 of 60 (workers 38.3, orchestrator 5.0).
+
+## Wave 3 (last; spawned 12:5x UTC 7 Oct)
+
+### D12-VP -- eckert-1864 AUDIT propagation for N2-V..AY (verifier, Opus; cap 5, box 60 min)
+You are a separate session from D12-E1..E4 and every earlier eckert-1864 solver. CLAUDE.md "Verifier brief (template)" scoped to the 30
+blocks reading-no2.md gained after AUDIT.md: N2-V..AC (D12-E2), N2-AD..AK (D12-E1), N2-AL..AR (D12-E3), N2-AS..AY (D12-E4). Price: the 28
+"located in print" entries are a check, not a search -- re-derive all with `decode_no2.py --check`, spot-check one strip crop per worker
+(4 IIIF images), confirm each cited print page by a script (IA djvu full text on disk/fetched once per volume; PUSG vol. 10 snippet
+entries: establish the page where possible, else say "page not established") and class N1 with one table row each. Spend the rest on the
+two not located (D12-E1's Howell and Augur entries): full verifier search per entry (OR by date and correspondent +/- 3 days, PUSG 10,
+sender/recipient papers, Huntington whole-collection full text, IA, Google Books, open indexes, JSTOR-QUEUE rows in both families) and an
+N-class; for N3+, the SECOND-OPINIONS-QUEUE.tsv row in this session. Depth line per entry (D3/D4 rule 4a). Also record the key-no2.md
+section 8 conflicts the solvers logged (Religion/Slumber = Operations; Nuptial = Steele in N2-AQ; N2-AT yawl) as logged, not resolved.
+Append "## AUDIT (propagation, D12-VP)" to AUDIT.md; status.json result rows for N3+ entries only (one row per N3+ entry, as earlier
+ones; rebase first). Do not decode other entries.
+
+### D12-V62 -- eckert-1862 grade-change check (verifier, Opus; cap 3, box 45 min)
+Separate session from D12-E62H. D12-E62H moved 6 Hurlbut-row tokens M -> C (overrides.tsv) and mssEC 19 9174 lehigh+leopard M -> C, citing
+OR 33, PUSG 11, OR 49.1 (commit b5a795fe6). Check each C against its cited print page (script, the IA djvu text) and the image crop if
+needed; keep, drop to M, or correct; rerun ec18.py --check. D12-E62H also flagged pre-existing staleness: `ec18.py --book 2 --check` stale
+since key-no2.md changed (ECK64-NO2 and today's section 8 rows) and `ec18_align.py --check` stale: regenerate both with their own scripts if
+the change is only the key-no2 rows, report the diff counts, and say if any committed reading changes. Write "## D12-V62 verifier" in
+NOTES.md and, if AUDIT.md quotes the changed counts, an AUDIT propagation section; gaps_check.
+Wave 3 sessions (12:52 UTC): D12-VP session_01Q6FAeqaULVdZY4x3K9Huwk; D12-V62 session_01MomWz5Aeez9vHpAnQ7ZRnK. Archived 12:52: D12-E1, E62H, E3, E4.
