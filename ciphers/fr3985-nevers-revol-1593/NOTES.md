@@ -224,3 +224,29 @@ carries cipher per Tomokiyo but is not marked "avec chiffre"), so the count is a
 keyhunt/2026-10-07-KH1B.tsv.
 
 KH1-F (LANE KH-1), 18:29-18:38 UTC 7 Oct 2026 by date -u: fr.3988 f.143r-f.144v (four cipher pages, not two) has no gloss on canvases 304-307 and no decipherment on 302-303/309/310 (308 unread); not in Lettres missives iii-iv. Hand profile against the no.60 atlas (GAPS4 method, `keyhunt_f143/`): careful blind pass N=177 atlas 42.9%, key60 91.0%, NEW 0.6% vs leaf-298 office hand 75.9/91.0/0.0 and f.198r Revol 45.5/84.5/9.1; pre-registered gate atlas >=65% fails -> atlas not licensed, no decode, no control (keyhunt/2026-10-07-KH1F.tsv). Next: a held-out tile check on this hand, ~USD 4.
+
+KHF-4 (account 4, session_01FjZnYWC5C2nFYxBYK1Eijh), 19:36-19:5x UTC 7 Oct 2026 by date -u, brief
+`.claude/briefs/runs/2026-10-07-acct3-kh-follow.md`: held-out family check on fr.3988 f.143r (KH1-F's named next step).
+Instrument changed from KH1-F's profile because that profile had no negative control: nobody had measured what a sign set
+from a *different* key scores when read against the no.60 sheet. 65 tiles, one sign each, shuffled and blind
+(`keyhunt_f143/heldout/`): f.143r 25 (eye-tagged), leaf 298 = fr.3986 f.152, no.60 known, 20 (positive control), BnF
+fr.4715 f.61r = Mayenne 1592 key, not no.60, 20 (negative control). Sealed key and gate pushed before the read
+(4c9b5991/f8594ba1, `PREREG.md`). One blind Sonnet pass (`pass_blind.tsv`); `score.py` (exit 0 on the committed `score.txt`):
+
+| set | N | S1 tag = sealed tag | S2 in-family (non-NONE tag at H/M) |
+|---|---|---|---|
+| leaf 298 (no.60, positive) | 20 | 17/20 = 85.0% (Wilson 64-95) | 85.0% |
+| Mayenne 1592 (not no.60, negative) | 20 | -- (form labels, not comparable) | **14/20 = 70.0%** (Wilson 48-86) |
+| fr.3988 f.143r (test) | 25 | 21/25 = 84.0% (Wilson 65-94) | 96.0% (Wilson 80-99) |
+
+Gate (a) met; **gate (b) failed**: the reader put 70% of a foreign key's signs into no.60 tags (6, φ, ‡ as 4‡, oo as -oo,
+V as V+, 4H as 2++), so "is this sign in the no.60 vocabulary" does not separate key families of this period at the
+sign level. **Verdict: NON-TEST, as registered; neither a pass nor a fail for f.143r.** It also means KH1-F's key60
+share (~90%) carries no family evidence either: no.60's 360-sign table holds most period symbol forms. The f.143r numbers
+do sit level with the no.60 positive control (S1 84 vs 85, S2 96 vs 85), but the gate does not license reading that.
+This is the first attempt with this instrument; the sign-level family question is [retired] for this kind of tile test,
+because the negative control shows the vocabulary overlap is the limit, not the setting. Next (different instrument,
+not run): decode-level discrimination -- one blind transcription of f.143r lines 6-9 decoded with key60 vs the same
+transcription under value-shuffled keys and under the Mayenne key, judged by `tools/judge_plaintext.py` with a French
+1590s corpus. That is a decode before the atlas licence, so it needs the orchestrator's say-so; about USD 4.
+No reading, no grades changed. Requests: gallica.bnf.fr 3 (IIIF).

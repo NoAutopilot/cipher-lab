@@ -1,0 +1,72 @@
+tile	set	sealed	read	conf	S1	S2
+t01	f143r	20	20	H	hit	fam
+t02	mayenne61	-∞-	-oo	M	-	fam
+t03	f143r	+o	+o	H	hit	fam
+t04	leaf298	8	8	H	hit	fam
+t05	f143r	///	///	H	hit	fam
+t06	f143r	alpha	alpha	H	hit	fam
+t07	f143r	E	E	H	hit	fam
+t08	leaf298	do	do	M	hit	fam
+t09	mayenne61	‡	4‡	M	-	fam
+t10	f143r	g	g	M	hit	fam
+t11	mayenne61	43	g3	M	-	fam
+t12	mayenne61	-∞-	-oo	M	-	fam
+t13	mayenne61	‡	4‡	M	-	fam
+t14	f143r	o	o	H	hit	fam
+t15	leaf298	g	9	L	-	-
+t16	f143r	r	r	H	hit	fam
+t17	leaf298	to	to	H	hit	fam
+t18	leaf298	8	δ	M	-	fam
+t19	mayenne61	φ	φ	H	hit	fam
+t20	f143r	18	18	H	hit	fam
+t21	leaf298	L40	L40	M	hit	fam
+t22	f143r	pi	f	M	-	fam
+t23	leaf298	E	E	H	hit	fam
+t24	mayenne61	ϱ	NONE	L	-	-
+t25	f143r	⊥	⊥	H	hit	fam
+t26	f143r	E	E	H	hit	fam
+t27	mayenne61	6	6	H	hit	fam
+t28	leaf298	to	to	H	hit	fam
+t29	mayenne61	a	NONE	M	-	-
+t30	mayenne61	φφ	φ	M	-	fam
+t31	mayenne61	φ	φ	H	hit	fam
+t32	leaf298	E	E	H	hit	fam
+t33	f143r	a+	a+	H	hit	fam
+t34	mayenne61	⊏	L	L	-	-
+t35	f143r	X	X	H	hit	fam
+t36	leaf298	pi	π	H	hit	fam
+t37	f143r	do	R	M	-	fam
+t38	leaf298	6	6	H	hit	fam
+t39	f143r	T	T	H	hit	fam
+t40	f143r	o	o	H	hit	fam
+t41	leaf298	to	to	H	hit	fam
+t42	f143r	‡	‡	M	hit	fam
+t43	f143r	g	g	M	hit	fam
+t44	leaf298	lam	λ	H	hit	fam
+t45	f143r	++	H	L	-	-
+t46	leaf298	r	r	L	hit	-
+t47	mayenne61	⊏	L	L	-	-
+t48	mayenne61	φφ	φ	L	-	-
+t49	mayenne61	V	V+	M	-	fam
+t50	leaf298	T	T	H	hit	fam
+t51	leaf298	do	do	M	hit	fam
+t52	f143r	do	R	M	-	fam
+t53	mayenne61	4H	2++	M	-	fam
+t54	f143r	a+	a+	H	hit	fam
+t55	f143r	⊥	⊥	H	hit	fam
+t56	mayenne61	φ	φ	H	hit	fam
+t57	leaf298	pi	pi	H	hit	fam
+t58	mayenne61	‡	4‡	M	-	fam
+t59	mayenne61	6	6	H	hit	fam
+t60	leaf298	pi	π	H	hit	fam
+t61	leaf298	8	NONE	L	-	-
+t62	f143r	+o	+o	H	hit	fam
+t63	f143r	T	T	H	hit	fam
+t64	mayenne61	a	NONE	L	-	-
+t65	leaf298	=	=	H	hit	fam
+
+f143r: N=25  S1 21/25=84.0% (Wilson 65.3-93.6)  S2 24/25=96.0% (Wilson 80.5-99.3)
+mayenne61: N=20  S1 5/20=25.0% (Wilson 11.2-46.9)  S2 14/20=70.0% (Wilson 48.1-85.5)
+leaf298: N=20  S1 17/20=85.0% (Wilson 64.0-94.8)  S2 17/20=85.0% (Wilson 64.0-94.8)
+gate (a) leaf298 S1>=80: True; (b) mayenne61 S2<=50 and >=30 below leaf298 S2: False; (c) f143r S1>=80 and S2>=mayenne S2+30: False
+VERDICT: NON-TEST (b)

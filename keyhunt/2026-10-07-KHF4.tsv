@@ -1,0 +1,2 @@
+key_path	letter	shelfmark	action	result
+tools/keys/key60.tsv (no.60)	Henri IV to Nevers, Dec 1593	BnF fr.3988 f.143r	KHF-4 held-out tile family check, positive control leaf 298, negative control fr.4715 f.61r Mayenne 1592	NON-TEST: negative control in-family 70% (gate <=50%); leaf298 S1 85% S2 85%; f143r S1 84% S2 96%; next: decode-level discrimination (key60 vs shuffled vs Mayenne key + judge), ~USD 4, needs orchestrator
