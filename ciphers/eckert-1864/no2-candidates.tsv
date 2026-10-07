@@ -22,15 +22,15 @@ pointer	page	entry_on_page	header	words	markers	k2_tokens	k1_tokens	k9_tokens	st
 8917	25	1	S. H. Beckwith (2)  Washn Mar 26th 1864 230 P. M	72	0	14	12	5	READ D12-E2
 8926	34	0	S. H. Beckwith (2) Porter treason request  Washn Apr. 8th 33	86	1	26	13	4	READ D12-E2
 8930	38	1	Beckwith "ch" (2) Dunn Transmit  Washn Apr 16th 1864 330 P. 	98	5	33	24	6	READ
-8932	40	0	S. H. Beckwith "ch" Enlist transfer Wash'n Apr. 18th 1864 	123	6	39	27	4	
-8935	43	1	SH Beckwith Culpeper  Washington Apl 19th 1864 	81	2	22	19	9	
-8936	44	0	SH Beckwith   	95	2	21	14	6	
+8932	40	0	S. H. Beckwith "ch" Enlist transfer Wash'n Apr. 18th 1864 	123	6	39	27	4	READ D12-E3
+8935	43	1	SH Beckwith Culpeper  Washington Apl 19th 1864 	81	2	22	19	9	READ D12-E3
+8936	44	0	SH Beckwith   	95	2	21	14	6	READ D12-E3
 8941	49	0	SH Beckwith Culpeper  Washn Apl 21st 1864 	56	2	34	14	5	READ
-8942	50	2	S. H. Beckwith (2)  Wash'n Apr 22nd 1864 230 PM	110	4	35	29	9	
-8944	52	0	Caldwell Hdqrs AP  Washn Apl 23rd 1864	35	1	11	11	5	
+8942	50	2	S. H. Beckwith (2)  Wash'n Apr 22nd 1864 230 PM	110	4	35	29	9	READ D12-E3
+8944	52	0	Caldwell Hdqrs AP  Washn Apl 23rd 1864	35	1	11	11	5	READ D12-E3
 8944	52	1	Beckwith (2) advance signal  Washn Apr 23rd 415 P. M	74	4	22	18	5	READ ECK64-NO2
-8945	53	0	S. H. Beckwith (2)  Perry you  Wash'n D. C. Apr. 24th 1864 1	161	7	45	31	8	
-8946	54	2	S. H. Beckwith (2) Thomas wonder year Wash'n D. C. Apr 25th 	87	7	29	21	9	
+8945	53	0	S. H. Beckwith (2)  Perry you  Wash'n D. C. Apr. 24th 1864 1	161	7	45	31	8	READ D12-E3
+8946	54	2	S. H. Beckwith (2) Thomas wonder year Wash'n D. C. Apr 25th 	87	7	29	21	9	READ D12-E3
 8948	56	0	No 2	100	0	21	16	2	
 8948	56	1	No 2 t Caldwell MC  Wash Apl 20 1864 	44	1	9	7	1	READ ECK64-NO2
 8950	58	0	(No 2)  2 PM	76	3	29	21	6	READ

@@ -298,6 +298,38 @@ Notes on particular tokens (logged, not resolved):
 - Words after the signature are the operators' own talk ("nasty day this", "fill up", "honey pleads guilty to charge &
   apologises", "Sharks"); keyed words among them are marked plain.
 
+## Seven entries of pages 40-55, April 1864 (D12-E3, 7 Oct 2026)
+
+The seven unread entries of no2-candidates.tsv on pages 40-54 of mssEC 19 (N2-AQ runs onto page 55), read from strip crops of the
+2400 px page images with the volunteer text as second witness (NOTES.md "D12-E3"). All seven are Halleck's telegrams of 18-25 April
+1864 (six to Grant at Culpeper, one to Meade) and all seven are printed in the OR. Code-word tokens over the seven:
+**H 215, C 14, I 11, M 0**; two tokens carry [?] (Sard in N2-AM, Jennie in N2-AQ) and are graded by their key rows.
+
+| entry | ledger | print found | agreement |
+|---|---|---|---|
+| N2-AL | Halleck to Grant, 18 Apr 1864 3 PM: the 8th Ohio Cavalry, W. S. Smith's call for 30,000 horses, Pope's 6th Minnesota | OR I/33 p.897 | word for word; the ledger's plain "read" stands where the OR prints "equipped" |
+| N2-AM | Halleck to Grant, 19 Apr 1864 2 PM: General Devens collecting recruits; General Seymour relieved | OR I/33 p.907 | word for word; "Devons" is the plain name Devens (marked plain; the book's Devon = Jasper does not apply); Greenlys = depots, Sard = Period, Grup = Meade, each C from this print |
+| N2-AN | Halleck to Grant, 19 Apr 1864 3 PM: the Iowa delegation and Senators Wilkinson and Washburne on the infantry of the Northwestern Department | OR I/34 pt 3 p.234-235 | word for word except: the ledger's "Savory Spoon would" = OR "from the Northwestern" ("would" for -western, not graded); the ledger adds Pedlar (Cavalry) after "2000", which the OR does not print |
+| N2-AO | Halleck to Grant, 22 Apr 1864 2.30 PM: two new cavalry regiments equipped as infantry for Burnside; the Tenth Corps to Fort Monroe | OR I/33 p.940 | word for word; the ledger's plain "means" stands where the OR prints "transports" |
+| N2-AP | Halleck to Meade, 23 Apr 1864 10.30 AM: whether the cavalry in Augur's department are to be armed with carbines | OR I/33 p.949 | word for word, time agrees |
+| N2-AQ | Halleck to Grant, 25 Apr 1864 3 PM: Sherman's request for a rendezvous at Cairo; Plymouth surrendered; Porter's dispatch from Grand Ecore | OR I/32 pt 3 p.489 (first half) and I/34 pt 3 p.278 (second half, with a footnote to the first) | word for word, with Telegram = withdrawn and Yancy = Wednesday (C, key-no2.md section 8) |
+| N2-AR | Halleck to Grant, 24 Apr 1864 11.30 AM: notice to the French; the 22nd New York Cavalry dismounted | OR I/33 p.966-967 | word for word; "French" and "Summer" are plain here (OR "the French", "summer farm work") and marked plain |
+
+Logged, not resolved (data conflicts, section 8 style):
+- N2-AQ "and Nuptial Princeton and the Sheffields" = OR I/34 pt 3 p.278 "and Steele's command and the gun-boats": the book's Nuptial
+  is Smith (as in N2-AL "W. S. Nuptial" and four times in N2-AQ itself, each = Smith in the print); here the same word stands for
+  Steele. The derived block reads Smith; the print says Steele.
+- N2-AQ date words "Oliver Clarke" = 26 against the ledger header's 25th and the OR's April 25, 3 p.m.; the time word, read Tennir by
+  the volunteer, is read Jennie[?] (3 PM) from the image, as the OR's time.
+- N2-AR header and time word Florence = 11.30 AM against the OR's 11.30 p.m.
+- N2-AL and N2-AO: plain "read" (OR equipped) and "means" (OR transports) are left as written, not graded.
+
+Service notes not in the blocks: N2-AL pencilled "128 w (4.20 P. M Tinker)" (volunteer), figures over the first words; N2-AM, N2-AN
+none read; N2-AR pencilled "showers return 9 5 1 Jam weather tomorrow 7 3" under the last line and "(172 w ...) Sent at ... Tinker";
+N2-AQ "Harding & Nuptial both arbitraries careful another same" after the signature (an operator's note that the two names went
+as arbitraries; the print bears it out for Harding = A. J. Smith). "Lady mighty fine day this sam" (N2-AO) and "Lady warm day this
+Sam" (N2-AR, volunteer "I am") are operator's chat after the signature.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -523,5 +555,47 @@ For [Sedgwick Jno] [.] Unless there be strong reasons to the contrary please sen
 
 Code-word tokens: H 8.
 
-Totals over the 37 entries: H 802, C 23, I 25, M 2.
+**N2-AL | Page 40 | 8932 | 18 Apr 1864 3 PM, Halleck to Grant at Culpeper (Beckwith, "ch")**
+
+[18] [April] {time: 3 PM} For [Grant U S] The [8] [Ohio] [Cavalry] was [Order]ed to be mounted and read at [Camp] Denne son and then sent to [General] Crook [.] The [Cavalry] Bunan has been directed to do this at once [.] [General] W. S. [Smith] at [Nashville] has called on [Davidson J W] for [30000] [Cavalry] [Horse]'s [,] such requisitions can not possibly be filled [.] On the [28] of [March] [Pope John] asked for a delay in sending the [6] [Minnesota] to [Army] [Of the] [Potomac] for reasons given [.] I will immediately send you a copy of his letter or will make the [Order] peremptory if you say so [.] [Pope John]'s [Force] against the Indians is very small [H W Halleck]
+
+Code-word tokens: H 34, C 2, I 2.
+
+**N2-AM | Page 43 | 8935 | 19 Apr 1864 2 PM, Halleck to Grant at Culpeper (Beckwith, no mark)**
+
+{time: 2 PM} For [Lieut Gen U.S. Grant] [.] [General] Devons has been ordered through the [North] and [East] states to Collect together [Recruit]'s and send them to [Regiment]'s and [depots] the war [Department] thinks his services there almost indispensable for the next week or [2] [.][?] men are still [Recruit]ing [At the] rate of a [1000] per day Please see if [Maj Gen G G Meade] can not spare him a little longer [.] [General] Seymore is relieved from [Department] [Of the] [South] Where shall I send him  {tail: [signed] [Maj Genl H W Halleck] awl}
+
+Code-word tokens: H 20, C 3.
+
+**N2-AN | Page 44 | 8936 | 19 Apr 1864 3 PM, Halleck to Grant at Culpeper (Beckwith, no mark)**
+
+{time: 3 PM} For [Lieut Gen U.S. Grant] [.] The [Iowa] delegation in house of Representatives and Senators Wilkinson and Mister Wash burn urge strenuously the with draw all of all [Infantry] [Force] [From the] [North] would [Department] as need less and Expensive there while the [Troops] would be useful in active service which they are anxious to be engaged in [.] as you have the subject under consider ration it is proper to apprise you of these opinions They affirm that [1500] or [2000] [Cavalry] is the whole [Force] needed in that [Department]
+
+Code-word tokens: H 18.
+
+**N2-AO | Page 50 | 8942 | 22 Apr 1864 2.30 PM, Halleck to Grant at Culpeper (Beckwith, "(2)")**
+
+{time: 2.30 PM} [22] For [Grant U S] I have [Order]ed [2] new [Regiment]'s of [Cavalry] at the [Depot] to be [Equipage]ed as [Infantry] and turned over to [Burnside A E] [.] After sending a [1000] [Horse]'s to [Butler B F] it will not be possible to mount all of [Maj Gen A E Burnside]'s [Cavalry] in time [.] It has been suggested that a part of [Meade G G] [Cavalry] now here could be [Equiping [sic]]ed as [Infantry] and sent to the [Front] [.] As the means for [Artillery] and [Horse]'s can also carry [Men] would it not be well to send the fragments [Of the] [10] [Corps] to [Monroe] with out waiting further for [Gillmore Q A]'s arrival  {tail: [signed] [H W Halleck] mighty fine day this sam}
+
+Code-word tokens: H 33, C 1, I 1.
+
+**N2-AP | Page 52 | 8944 | 23 Apr 1864 10.30 AM, Halleck to Meade (operator Caldwell, no mark)**
+
+{time: 10.30 AM} [Maj Gen G G Meade] [.] Please [Telegraph (-ed, -ing)] to [Augur C C] whether all your [Cavalry] now in his [Department] are to be [Arms]ed with car beans and sent to the [Front] or if not all what part  {tail: [signed] [Maj Genl H W Halleck]}
+
+Code-word tokens: H 11.
+
+**N2-AQ | Page 54-55 | 8946, 8947 | 25 Apr 1864 3 PM, Halleck to Grant at Culpeper (Beckwith, "(2)")**
+
+[Washington] {time: 3 PM}[?] [April] [26] For [Maj Genl U S Grant] [.] [Maj Gen W T Sherman] requests that all unassigned [Troops] in [Illinois] and the [North] [West] rendezvous at [Cairo] [,] your [Order]'s sent to those states were to rendezvous at [Louisville] [,] Shall I change the [Order] as [Maj Gen W T Sherman] requests [?] Despatches received from [Butler B F] and Peck state that the garrison at Ply mouth after a small loss [,] [Surrendered] to the [Rebel]'s on [Wednesday] the [20] [,] no particulars [.] [Maj Gen B. F. Butler] says no thing about what he intends to do [.] I have just seen [Porter D D]'s dispatch dated Grand Ecore [April] [14] to the Navy [Department] [.] He says what ever may be said the [Army] there has met with a great [Defeat (-ed, -ing)] and is much demoralized [.] He speaks in strong terms of [Banks N P] mismanagement and [Of the] good conduct of [Smith A.J.] and his [Corps] [.] He fears that if [Smith] is [Withdrawn] [Banks N P] will [Retreat (-ed, -ing)] still further [,] and [Smith] [Command (-ed, -ing)] and the [Gunboat]'s above the rapids [( )] which [,] from fall of water can not be [Withdrawn] [( )] [Will be] greatly periled if not lost [.] He says [Banks N P]'s [Army] was [10] days behind the appointed time [.] He protests against the withdrawal of [Smith] at this time as it would be fatal to us [.] The Navy [Department] asks to know this in [Order] to [Telegraph (-ed, -ing)] instructions to [Cairo] for [Porter D D] [,] What shall I reply [?]  {tail: [signed] [H W Halleck]}
+
+Code-word tokens: H 61, C 6, I 5.
+
+**N2-AR | Page 53 | 8945 | 24 Apr 1864 11.30 AM, Halleck to Grant at Culpeper (Beckwith, "(2)")**
+
+[Washington] [April] [24] {time: 11.30 AM} For [Lieut Gen U.S. Grant] [.] Before receiving your dispatch I had [Telegraph (-ed, -ing)]ed to [Butler B F] to use his own judge ment as to the manner of giving notice to the French [.] The [20] second [New York] [Cavalry] now at the [Depot] is undisciplined and unfit for the [Field] [.] I have [Order]ed them [Arms]ed as [Infantry] and their [Horse]'s to be given to the second [Ohio] [( )] veteran [( )] and to detachments of [Army] [Of the] [Potomac] [.] I think at least a [Regiment] [Of the] latter should be given to [Maj Gen A E Burnside] as he [Will be] deficient in [Cavalry] on going to the [Field] [.] The [North] ern States are nearly exhausted of [Cavalry] [Horse]'s and purchases [Will be] small till after the crops are put in [.] When the mares have folded they [Will be] used for Summer farm work and more [Horse]'s can be procured  {tail: [signed] [H W Halleck] warm day this Sam}
+
+Code-word tokens: H 38, C 2, I 3.
+
+Totals over the 44 entries: H 1017, C 37, I 36, M 2.
 <!-- decode.py: derived block ends -->
