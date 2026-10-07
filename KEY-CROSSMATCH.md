@@ -1,5 +1,30 @@
 # Key cross-match
 
+## Re-fit after the loader fix (XCAL, 7 Oct 2026, 12:13-12:3x UTC)
+
+**Why.** FRESH-0914 (7 Oct) made 20 key tables that had loaded as identity alphabets load as real keys (13 Thurloe
+printed keys incl. pool_1654 Stamford, Montholon witness f24 x2, Harley 287 gloss x3, aosb1629, fr15576).
+
+**Gate.** `--calibrate` re-run: **unchanged at stat >= 3.292** (still set by Lodewijk 4612, the weakest verified pair in
+the stratum). Null draws passing fell from 3 to 2 of 260 (rate 0.0077, now meets the 1% target); null p99 3.498;
+order-shuffled own decodes passing 49 of 65. None of the 20 corrected keys is a VERIFIED_PAIRS key, so the fit could
+not move on their account; the small shifts come from ciphertext and reading files edited since 26 Sept. The one
+Thurloe calibration pair (Montagu on P11) is still skipped.
+
+**Thurloe keys cannot be tested by this tool (non-test, not a negative).** The only `en16` corpus is
+`tools/data/en16_repo/`, built from thurloe-printed's own readings; scoring a Thurloe key on a Thurloe text excludes
+that folder, the corpus is empty, and the positive control (step 7) has 0 candidates: Blake, Blake-ext, Downing,
+Fauconberg, Montagu and Montagu-ext are marked unusable, the rest have no own text. Any cross-folder Thurloe row is
+therefore unbacked by a positive control. Next step: an era-matched 1650s English corpus from outside the folder
+(printed Thurloe State Papers clear letters, or Mercurius Politicus), ~12 min (V6-PTCORP shape).
+
+**Nightly once (scoped).** `--since-hours 25` plus all 20 relabelled keys, 76 keys with an own text, 6,134 rows,
+~11 min: 24 non-own rows over the gate, 18 dropped by the per-pair nulls, 6 survive -- 2 adjudicated
+(Gonzaga-Nevers on jvn glossed 5557/5552, listed twice) and 4 sibling (jvn key_5549 on lvn 4610/4616 and their
+`_pre` files, = lvn key.tsv, JVN-LVN). **0 new leads.** The two corrected-key rows over the gate were adjudicated anyway
+(both FAIL: below their 20 decoy keys, judge FAIL in fr16 and en16, 21/435 and 7/150 tokens agree with the verified
+key); numbers in each target's HYPOTHESES.md, both added to ADJUDICATED.
+
 ## Calibrated gate and rerun (XMATCH-CAL, 26 Sept 2026, 18:05-18:30 UTC)
 
 **Why.** The 25 Sept verdict needed `pass_real`, which no own-text pair cleared, verified readings included, so

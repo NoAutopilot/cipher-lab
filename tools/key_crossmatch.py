@@ -1687,6 +1687,13 @@ ADJUDICATED = {
      'ciphers/jan-van-nassau-1572-75/j5s/ciphertext_glossed_5557_5552.tsv'):
         'false positive: decode vs the leaf gloss, exact 0 (shuffle 0), letter agreement 0.819 at shuffle level '
         '(1000 class-shuffled keys: mean 0.711, p95 1.513)',
+    # XCAL (7 Oct 2026): the two over-gate rows of corrected (relabelled) Thurloe keys after FRESH-0914.
+    ('ciphers/thurloe-printed/key_steele.tsv', 'ciphers/lodewijk-van-nassau-1573-74/ciphertext_4612.tsv'):
+        'false positive: English word cells decode as words in any order; loses to 20 decoy keys (fr16 -1.958 vs '
+        'max -1.718), judge FAIL fr16 and en16, 21/435 tokens agree with the verified key',
+    ('ciphers/thurloe-printed/key_montagu_extended.tsv', 'ciphers/jan-van-nassau-1572-75/ciphertext_5549_ps.tsv'):
+        'false positive: loses to 20 decoy keys (fr16 -1.941 vs max -1.871), judge FAIL fr16 and en16, 7/150 '
+        'tokens agree with key_5549',
 }
 
 
