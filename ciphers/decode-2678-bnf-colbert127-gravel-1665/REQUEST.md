@@ -85,3 +85,34 @@ Thank you in advance for your help.
 Yours faithfully,
 
 [SIGN-OFF]
+
+## Reproduction form, field values (B1320-A1, 7 Oct 2026, 14:0x UTC by date -u; after the archive's 7 Oct reply)
+
+Microfilm check: the archive's own list "Correspondance politique (des origines à 1896)" (PDF, 340 pp., 872,170 bytes,
+sha256 cd18669e0d684b1953cc5b110b203e9a457683b61a6ace26fc1451819e17ba7c, dated 14 May 2020), linked from
+https://www.diplomatie.gouv.fr/fr/archives-bibliotheque/s-orienter-dans-les-fonds-et-collections/etat-general-des-fonds-inventaires-en-ligne
+("Inventaire des documents microfilmés"), p. 6: **Mnesys cote 2CP, Correspondance politique, Allemagne Or.-1870, article
+/194/, microfilm 13108** (194 is on a reel of its own; 195 = microfilm 7057; 196-197 = 13129). So CP Allemagne 194 is
+filmed. On site, readers may consult microfilms without limit and take PDF copies on their own USB key (same page).
+
+Form: `formulaire_demande_reproduction_2026_06_15.pdf` (3 pp.), linked from
+https://www.diplomatie.gouv.fr/fr/archives-bibliotheque/venir-aux-archives/reproduire-et-reutiliser-des-archives
+(read 7 Oct 2026). Values for the person to copy (the DEMANDEUR block is the person's own and is left out here, rule 9):
+
+| form field | value |
+|---|---|
+| DESCRIPTION, N° | 1 |
+| Cote | Correspondance politique, Allemagne, vol. 194 (2CP/194; microfilm 13108) |
+| Description | 1665, correspondance entre la Cour et Gravel, à Ratisbonne (1er janvier - 30 mai 1665) : folios 40 à 48, recto et verso (dépêche de Gravel du 29 janvier 1665, fol. 44, et pièces voisines) |
+| TYPE DE REPRODUCTION, ligne 1 | Prise de vue par appareil photo à main levée, format jpg (18 vues : ff. 40r-48v). Alternative if the archive prefers the film: numérisation de microfilm (bobine entière, 13108), jpg -- outside contractor, no price in the tariff |
+| Réutilisation envisagée | [x] Travaux de recherche -- Sujet de recherche : « Lettres chiffrées de la correspondance diplomatique française (XVIIe siècle) : passages chiffrés des dépêches de Gravel, Ratisbonne, 1665 » |
+| | [x] Mise en ligne sur Internet -- Adresse du site : https://github.com/NoAutopilot/cipher-lab |
+| À ..., le ... / Signature | the person's |
+
+Why these values: the archive's reply asks for cote and folios (no search by staff); ff. 40-48 brackets f. 44 (Auerbach 1912,
+"29 janvier 1665, vol. CXCIV, fol. 44", AUDIT.md AUDIT 2) and is an estimate, not read from an inventory. Eighteen views is
+inside the tariff's free hand-held tier (1-19 views free; 10 EUR at 20, +0.50 EUR a view beyond), and well under the 50-view
+line above which requests may be refused. Credit line required on reuse: "Archives du ministère des Affaires étrangères,
+France, Correspondance politique, Allemagne 194, fol. ..., [date]". If the form is refused or the folios miss the cipher
+passages, the cheapest fallback is a reader's visit (Mon-Thu 10-17, pre-registration online) to read reel 13108 and copy
+PDFs to a USB key.

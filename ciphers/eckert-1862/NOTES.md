@@ -2168,3 +2168,21 @@ AUDIT.md quotes no book-2 count, but its R12A recount (lines 393-394) quotes ent
 AUDIT.md section 'Propagation D12-V62' added; no N-class changes.
 Requests: archive.org 58 (2 OR texts read first + 8 DIR62 + 48 OR; 1 HTTP 500 on 46.3, one retry after 15 s, sha then matched),
 hdl.huntington.org 1, googleapis.com 1; >= 1.6 s apart. 0 subagents, 0 vision.
+
+## B1320-A1 (7 Oct 2026, 13:4x-14:0x UTC by date -u, account 1 for the account-3 orchestrator): ec18 staleness closed
+Separate session from D12-E62H and D12-V62. AUDIT.md: the D12-E62H regrades (6 Hurlbut-row M -> C, mssEC 19 9174 x2 M -> C)
+were already carried in by D12-V62 ("Propagation D12-V62", 8 of 8 kept, 9945 p.580 -> 581); re-read, nothing to add, no
+N-class changes. Data: vol18.json re-fetched (sha256 cb162574..., matches pilot1864/manifest.tsv), all 48 OR `_djvu.txt` of
+or_volumes.tsv (every sha256 matches) and the 8 DIR62 1862 volumes, to scratch, not committed.
+- The one stale output D12-V62 left, `ec18_align.py --rows align_free_rows.tsv` (both splits): old-key test as D12-V62's --
+  key-no2.md put back at 93b80b20 (the version before ECK64-NO2's 500d30a6, 11:54 UTC) -> `--check` exit 0 both splits, so
+  the staleness is only today's key-no2 rows. Regenerated with `--write` at HEAD's key-no2.md:
+  legacy scored 816 -> 820, AGREE 325/816 = 0.398 -> 327/820 = 0.399, conflict 121 -> 122, collision 29 -> 30, control
+  61/816 = 0.075 -> 61/820 = 0.074, grades H 61, C 360 -> 362, S 500 -> 502, I 1 -> 5; split2 768 scored, 328/768 = 0.427,
+  control 0.087, H 70, C 365, S 432, I 5. Six entries change (9669.5, 9809.203, 9865.319, 9870.333, 10005.584, 10012.597):
+  new key-no2 rows Monkey = Schofield (2 tokens now AGREE with the print), Yancy = Wednesday (CONFLICT with the printed
+  dateline "Va. October 19, 1864"), stick = Period (I, not scored), telegram = Withdrawn (COLLISION). None is quoted in AUDIT.md.
+- Checks after (all exit 0, legacy and --split2): `ec18.py --book 2 --possessive --guard DIR62 --check`, book-1
+  `--possessive --guard DIR62 --check`, `--read-free DIR62 --check`, `ec18_align.py --check`, and `ec18_align.py --rows`
+  align_free / align_flip / align_flipctl `--check`.
+Requests: archive.org 56 (48 OR + 8 DIR62), hdl.huntington.org 1; >= 1.6 s apart. 0 subagents, 0 vision.

@@ -1,12 +1,12 @@
 statistic	value
 entries	57
-keyed_word_tokens_scored	816
-target_agree	325/816 = 0.398
-target_conflict	121
+keyed_word_tokens_scored	820
+target_agree	327/820 = 0.399
+target_conflict	122
 target_unfixed	322
 target_partial	19
-target_collision	29
-control_agree	61/816 = 0.075
+target_collision	30
+control_agree	61/820 = 0.074
 entries_target_rate_above_control	34/57
 numerals_agree	35/75
-grades_after_all_tokens	H 61, C 360, S 500, I 1, M 0
+grades_after_all_tokens	H 61, C 362, S 502, I 5, M 0

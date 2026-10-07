@@ -155,6 +155,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 10015.601	1	49.2	858	target	111	extract			plain-replaced	CONFLICT	georgia
 10015.601	1	49.2	858	target	116	America	Delaware	H	word	UNFIXED	necessary u s geant lieutenant general headquarters department of the cumberland nashville
 9669.5	2	33	452	target	1	Valley	Quotation	H	punct	NOTSCORED	
+9669.5	2	33	452	target	7	telegram	Withdrawn	C	word	COLLISION	telegram
 9669.5	2	33	452	target	17	dg			plain-replaced	CONFLICT	commanding
 9669.5	2	33	452	target	21	Walnut	Rail-road	H	word	CONFLICT	army
 9669.5	2	33	452	target	24	Gem	Newberne	H	word	CONFLICT	potomac
@@ -269,6 +270,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9809.203	2	37.2	582	target	11	saffron	Force	H	word	AGREE	
 9809.203	2	37.2	582	target	15	Nathan	40 (numeral)	H	numeral	AGREE	
 9809.203	2	37.2	582	target	16	zebra	1000 (numeral)	H	numeral	AGREE	000
+9809.203	2	37.2	582	target	21	stick	Period	I	punct	NOTSCORED	
 9809.203	2	37.2	582	target	25	cushing	7 (numeral)	H	numeral	AGREE	
 9809.203	2	37.2	582	target	27	Edwards	8 (numeral)	H	numeral	AGREE	
 9809.203	2	37.2	582	target	28	Dwight	1000 (numeral)	H	numeral	AGREE	000
@@ -286,6 +288,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9809.203	2	37.2	582	target	65	pedlar	Cavalry	H	word	AGREE	
 9809.203	2	37.2	582	target	71	Dawson	6 (numeral)	H	numeral	AGREE	sixth
 9809.203	2	37.2	582	target	72	pelham	Corps	H	word	AGREE	
+9809.203	2	37.2	582	target	73	stick	Period	I	punct	NOTSCORED	
 9809.203	2	37.2	582	target	82	queen	Division	H	word	AGREE	
 9809.203	2	37.2	582	target	84	quotients	Department	H	word	AGREE	departments
 9809.203	2	37.2	582	target	86	Bergen	Pennsylvania	H	word	AGREE	penn sylvania
@@ -339,7 +342,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9809.203	2	37.2	582	target	238	wrangle	Valley	H	word	AGREE	
 9809.203	2	37.2	582	target	244	Harvey	Richmond	H	word	CONFLICT	riclimoiid
 9809.203	2	37.2	582	target	248	walnut	Rail-road	H	word	AGREE	railroad
-9809.203	2	37.2	582	target	249	stick			plain-replaced	CONFLICT	railroad
+9809.203	2	37.2	582	target	249	stick	Period	I	punct	NOTSCORED	
 9809.203	2	37.2	582	target	253	Negus	Sheridan P H	H	word	AGREE	general sheri dan
 9809.203	2	37.2	582	target	260	canby			plain-replaced	CONFLICT	can he
 9809.203	2	37.2	582	target	263	robin	Enemy	H	word	AGREE	
@@ -438,7 +441,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9865.319	2	43.2	352	target	68	nay			plain-replaced	CONFLICT	in a
 9865.319	2	43.2	352	target	74	nutmeg	Steele Fdk	H	word	PARTIAL	
 9865.319	2	43.2	352	target	76	maxim	Reynolds J J	H	word	UNFIXED	
-9865.319	2	43.2	352	target	80	monkey			plain-replaced	CONFLICT	schofield
+9865.319	2	43.2	352	target	80	monkey	Schofield	C	word	AGREE	
 9865.319	2	43.2	352	target	84	nuisance	Thomas Geo H	H	word	PARTIAL	
 9865.319	2	43.2	352	target	85	oppress	Everything	H	word	AGREE	
 9865.319	2	43.2	352	target	87	famish	Maj Gen E R S Canby	H	word	AGREE	can be
@@ -479,7 +482,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9867.323	2	41.3	841	target	80	wedlock	Tomorrow	H	word	AGREE	to morrow with general meigs
 9867.323	2	41.3	841	target	92	negus	Sheridan P H	H	word	AGREE	
 9867.323	2	41.3	841	target	95	wiley	Signature	H	sig	NOTSCORED	
-9870.333	2	43.2	1	target	1	yancy			plain-replaced	CONFLICT	va october 19 1864
+9870.333	2	43.2	1	target	1	Yancy	Wednesday	C	word	CONFLICT	va october 19 1864
 9870.333	2	43.2	1	target	2	Delia	7.30 AM (time word)	H	time	AGREE	
 9870.333	2	43.2	1	target	3	lamb	H W Halleck	H	word	AGREE	
 9870.333	2	43.2	1	target	4	Simms	Heavy	H	word	AGREE	
@@ -1256,6 +1259,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 10005.584	2	47.3	440	target	30	Job	May	H	word	UNFIXED	
 10005.584	2	47.3	440	target	31	Fisher	8 (numeral)	H	numeral	UNFIXED	
 10005.584	2	47.3	440	target	32	Susan	11 PM (time word)	H	time	AGREE	
+10005.584	2	47.3	440	target	33	Monkey	Schofield	C	word	AGREE	
 10005.584	2	47.3	440	target	34	Homer	Raleigh	H	word	AGREE	
 10005.584	2	47.3	440	target	35	tulip	Period	H	punct	NOTSCORED	
 10005.584	2	47.3	440	target	38	talbot	Of the	H	word	AGREE	
@@ -1291,7 +1295,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 10012.597	2	46.3	1161	target	34	sharon	Gun	H	word	AGREE	
 10012.597	2	46.3	1161	target	35	panamas	Battery	H	word	AGREE	batteries
 10012.597	2	46.3	1161	target	42	silvers	Horse	H	word	AGREE	7 horses
-10012.597	2	46.3	1161	target	43	stick			plain-replaced	CONFLICT	7 horses
+10012.597	2	46.3	1161	target	43	stick	Period	I	punct	NOTSCORED	
 10012.597	2	46.3	1161	target	45	pedlar	Cavalry	H	word	AGREE	
 10012.597	2	46.3	1161	target	53	silver	Horse	H	word	AGREE	horses
 10012.597	2	46.3	1161	target	58	silver	Horse	H	word	AGREE	

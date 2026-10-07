@@ -539,7 +539,7 @@ Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolv
 - R9634 residual (Bourdeau 872/1191 = 73.2% read, read_r9634.md at his HEAD a02b838, credited): ~40 single-occurrence code groups - blocker: no-key-material; no clear copy in the record or in CSP Spain ii (his NOTES "Remaining gaps"); Kolosova's Ko.7/Ko.10 tables are the only named key source (L17 / ASKS 74)
 - R9634 residual spelled words (14r12, 14v03, 14v16, 15r11, 15v05, 15v13) - blocker: illegible; DECODE's full-size file is the only image online and was re-tested 6 Oct 2026 (A4-RFLOPE section); a blind sign pass at that resolution settled none; needs the RAH images of 9/26 ff.14-16 (owner's browser on bibliotecadigital.rah.es, or a reproduction request)
 - R9646 remainder 19/118 and R9649 remainder 3/89 - blocker: illegible; Bourdeau's "Where the work is now limited": DECODE serves ~1700 px per folio, too little for per-glyph discrimination ("What would actually move this target" item 3)
-- Kolosova's Ko.7/Ko.10 tables (pp. 312, 333, 388, 405) and Bertomeu Masiá 2024 - blocker: waiting-on LOCAL-QUEUE.tsv row L17 and ASKS row 74; L17 is the owner's read of Kolosova 2017/2024, row 74 the RODERIC request-a-copy form, which takes the requester's own details (rule 9)
+- Kolosova's Ko.7/Ko.10 tables (pp. 312, 333, 388, 405) - blocker: waiting-on LOCAL-QUEUE.tsv row L17 (the owner's read of Kolosova 2017/2024). Bertomeu Masià 2024 was read 7 Oct 2026 (B1320-A1 section below): a 1538 key of Lope Hurtado to Cobos, not a key source for the 1522 letters; ASKS row 74 answered
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
 - [ ] siblings: catalogue check done (R8-LOPE2, 6 Oct 2026): MSS/20212/27 (five letters 1522-1526, "Algunas parcialmente cifradas y con cifra", 14 h.) IS digitised in BNE Digital (card c3c70ca0-ac7a-42d5-8d01-f3216ed199d6), image host Cloudflare-blocked from the cloud; MSS/18697/29 (Tortosa 25 June 1522, "Parcialmente cifrada") has no digital link. next: capture the 14 leaves of MSS/20212/27 through the owner's browser (LOCAL-QUEUE viewer-capture row, as L57 for bne20211-ferdinand-1478), then a sign-inventory check against Bourdeau's 1522 and 1524 keys, ~$2
@@ -624,3 +624,32 @@ intelectual*, Salamanca 2024) is open access at https://eusal.es/producto/italia
 and the cipher her chapter studies "is not the same cipher he used in 1522". So the chapter is not a key source for the
 1522 letters (Salazar 9/26). Next (cheap, ~$1): fetch the chapter from the open-access volume, note which cipher/date it
 covers and whether its key could serve any other letter in this repo (tools/key_crossmatch.py once transcribed); cite it.
+
+## Bertomeu Masià 2024 read (B1320-A1, 7 Oct 2026, 13:5x UTC by date -u)
+Fetched once from the open-access volume: Manuel Heras García (coord.), *Italia y España: una pasión intelectual*,
+Ediciones Universidad de Salamanca (Aquilafuente 364), May 2024, ISBN 978-84-1311-960-1 (PDF), DOI 10.14201/0AQ0364;
+PDF https://eusal.es/omp/eusal/catalog/download/2600/6481/9675?inline=1 (from https://eusal.es/visor-pdf/?id=30696),
+1046 pp., 24,191,575 bytes, sha256 80177d934f4b8f6fcc748b3a89d00a3d4f05f1e0abf58017578b1de64832d9de. Licence page: the
+Creative Commons BY-NC-ND summary (attribution, non-commercial, no derivatives; version not printed in the text layer).
+The PDF is not committed (open access at a stable DOI; re-fetch); printed p. N = PDF page N+1.
+Chapter: María José Bertomeu Masià, "Una cifra para negociar el matrimonio de Margarita de Parma", pp. 865-878.
+- Covers: one letter, Lope Hurtado de Mendoza (mayordomo mayor of Margarita de Parma) to Francisco de los Cobos,
+  Pisa, 24 April 1538, AGS Estado leg. 1439 doc. 7 (cipher, two folios, signed) with doc. 8 (the recipient secretary's
+  contemporary decipherment); the key sheet is AGS leg. 1.1.1 doc. 121 (unlabelled; identified as this letter's key
+  at J. Benavent's suggestion). The author found no other letter in this key. Correspondents and date differ from
+  this target (Lope Hurtado to Charles V, Rome, 1522), and the author's 7 Oct reply says it is not the 1522 cipher.
+- Design as printed: two signs per letter (three for n and s; i/y share, u/v share; no sign for j, k, ch, c-cedilla,
+  ñ, w; j written x); syllable signs = a letter sign with a superscript numeral 11-20 (series 11-15 or 16-20); signs
+  with superscript 1-10 are nulls; special signs for doubled consonants (ff gg ll nn pp rr ss tt vv); no nomenclator
+  (Papa, Madama, Duquesa spelled by syllable; "Su Magestad", "Papa" sometimes left in clear; "y" left in clear).
+  The 'a' signs were lost to a hole in the key sheet and rebuilt from doc. 7 vs doc. 8; 'pu' illegible.
+- Edition of the full letter (docs. 7+8 integrated) on pp. 875-876; the decipherment's "dar orden" over cancelled
+  "quitar" against the cipher's "mirar" is the one semantic divergence noted.
+- Key cross-match: the key's signs are printed only as images (pp. 869-873, the table pp. 869-871), not as text, so
+  `tools/key_crossmatch.py` cannot run until the sign table is transcribed; not done in this job (no vision budget).
+  By design it does not fit the Charles V letters already in this repo (the 1521-1528 RAH/BnF folders are numeral or
+  symbol nomenclators with code groups; this key has no code vocabulary and uses superscript-numeral syllables);
+  no folder here holds a 1538 Lope Hurtado or Cobos letter (grep of ciphers/*/NOTES.md for Hurtado/Cobos/leg. 1439).
+  Next, only if a 1530s Lope Hurtado or Cobos cipher letter enters the repo: transcribe the pp. 869-873 sign table
+  (one vision call per page, ~5 x USD 0.5) and run key_crossmatch. Cite as Bertomeu Masià 2024; not a key source for
+  R9634/R9646/R9649. Requests: eusal.es 5, 0 subagents, 0 vision.

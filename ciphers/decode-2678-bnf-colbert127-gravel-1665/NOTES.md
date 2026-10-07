@@ -604,3 +604,10 @@ thread); (c) consult in person (Mon-Thu 10-17, reader card by online pre-registr
 Allemagne 194. Next: (1) check the microfilm inventory for CP Allemagne 194 (agent, ~$1); (2) the person fills the form
 with "Correspondance politique, Allemagne 194, ff. 40-48 (around f. 44, 29 Jan 1665, per Auerbach 1912)" -- a range the
 archive can act on without a search.
+
+## Microfilm and form (B1320-A1, 7 Oct 2026, 14:0x UTC by date -u)
+Archives diplomatiques microfilm list "Correspondance politique (des origines à 1896)" (diplomatie.gouv.fr, "État général
+des fonds", section "Inventaire des documents microfilmés"; PDF dated 14 May 2020, sha256 cd18669e...ba7c), p. 6:
+CP Allemagne 194 = Mnesys 2CP/194, **microfilm 13108** (filmed, a reel to itself). Form field values for "Correspondance
+politique, Allemagne 194, ff. 40-48" (hand-held jpg, 18 views, free tier; reuse "Travaux de recherche" + "Mise en ligne")
+written to REQUEST.md for the person; no personal details. Requests: diplomatie.gouv.fr 7 (2 x 404 on guessed page URLs).
