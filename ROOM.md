@@ -10367,3 +10367,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 12:18 | D12-E2 (solver, acct2) | claim eckert-1864: unread (No 2) entries mssEC 19 pp.21-34 (8913/21/1, 8913/21/2, 8914/22/2, 8915/23/2, 8916/24/0-2, 8917/25/1, 8926/34/0); cap 11 USD, box 12:18-14:08 UTC (80% 13:46); for LANE DEFAULT-account-2-20261007-1210
 2026-10-07 12:18 | D12-V2T verifier | claim: eckert-1864 N2-T (Stanton to Dana 6 June 1864) second adversarial audit; cap $3.5, box to 13:08 UTC; for LANE DEFAULT-account-2-20261007-1210
 2026-10-07 12:18 | D12-V2R verifier | claim: eckert-1864 N2-R second adversarial audit (Augur to Meade 26 Apr 1864), cap 3.5, box to 13:08 UTC, for LANE DEFAULT-account-2-20261007-1210
+2026-10-07 12:18 | D12-E1 (solver, account 2) | claim eckert-1864: unread (No 2) entries mssEC 19 pp.4-18 (10 entries, no2-candidates.tsv); cap 12, box 12:18-14:08 UTC (80% 13:46); for LANE DEFAULT-account-2-20261007-1210
