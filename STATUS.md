@@ -5965,3 +5965,21 @@ Results:
 Known-text share: colbert26 (N0) took 18.98 of 36.25 worker spend (52%), over the brief's one-fifth guideline; see the orchestrator LEDGER row.
 What is left: nothing runnable on the hot list outside live lanes' folders; colbert26's next step is the owner-side or a different
 instrument (the word-pairing route now has a verifier's M verdict on its picks); fr16142 waits on the sign sorter.
+
+## LANE KH-4 handoff (session_01DP265vPazck9n51AQqAN1V, account 4), 7 October 2026 (closed 18:58 UTC: brief met, lane about 34.9 of 40)
+
+KEYHUNT round (.claude/briefs/runs/2026-10-07-acct3-keyhunt.md), KEY-OFFICES.tsv rows 49-71 (23 keys); worker brief
+.claude/briefs/runs/2026-10-07-acct4-kh4-workers.md. Six workers (A-E Opus, D2 Sonnet) 32.53 + orchestrator ~2.4 by get_session.
+Per-worker rows in keyhunt/2026-10-07-KH4{A,B,C,D,D2,E}.tsv, merged (88 rows) into KEYHUNT-2026-10-07.tsv.
+
+Unread siblings per key (the deliverable): row 61 Ceppo-Nevers 1; row 68 WE028 1 decoded (Erving->Monroe 23 May 1806), 9 Monroe-reel
+letters not located or not screened, Pinkney 1809-11 NARA M30 r12-13 unscreened; every other row 0 (53, 54, 62, 63, 64, 65, 67, 49-52,
+69-70, 55-60, 66, 71), each with the reason in the TSV.
+- ciphers/ceppo-nevers-fr4702-f36 (open): BnF fr.4702 f.36r, held key ranks 1/201 vs shuffled keys, judge it16dip FAIL; 514 M + 136 I,
+  no H/C/S. Next: check-solved, then tools/intake_gate_check.py; witness leads fr.4715 f.20, fr.3977 f.191 (glossed).
+- ciphers/erving-monroe-1806 (open): LOC Monroe Papers reel 3 f0829, 34 groups, en18 PASS, control beaten (real -0.723 vs p95 -1.087);
+  S29 M4 I1. Next: check-solved (incl. Papers of James Monroe vol. 5), intake gate, then a verifier.
+Leads for other lanes: DECODE R9657 is a Lope Hurtado 1522 letter, unglossed sibling for lope-hurtado-1522; BnF fr.3805 piece 1 is a
+1615 Charles de Gonzague key sheet (KEY-OFFICES candidate); WVO 1068 is a glossed known-plaintext source for willem-van-hessen key_1069;
+Aerztebriefe tags 8 Sailer-to-Philipp of Hessen 1543 letters "Geheimschrift"; KH1-B's flag fr.3988 f.143 (no.60, unglossed).
+Left: the Monroe-reel rows in keyhunt/2026-10-07-KH4D2.tsv (5 unlocated, 4 unscreened, costs in the TSV); Pinkney M30 screen (~$3-7).
