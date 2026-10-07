@@ -2922,3 +2922,81 @@ index.tsv P27/P28 `cipher_system` cells corrected to R8-THUR25 / AUDIT.md R8-THU
 
 ### KH2-F keyhunt (LANE KH-2, account 2, 7 Oct 2026, by date -u)
 Birch vols 1-7 (IA djvu) swept for further cipher passages of the seven pool keys outside index.tsv: unread unglossed siblings 0 for every key; glossed siblings not yet in this folder: Montagu 6 letters (vol.1 l.62335, 62564; vol.4 l.51359, 60576; vol.5 l.15466; vol.7 l.26827), Fauconberg 2 (vol.7 l.36328, 46115), Blake 2 one-line code lists (vol.3 l.19317, vol.4 l.55548), Downing about 44 letters (vol.6-7), all printed with their decipherment. Suggestion (not run): align the Downing letters into key_downing.tsv the way P25-P28 were. Rows in keyhunt/2026-10-07-KH2F.tsv.
+
+## Key extension (THU-1, 7 Oct 2026, account 2, for LANE ST-REBUILD)
+Brief: .claude/briefs/runs/2026-10-07-acct2-st-rebuild-workers.md (THU-1). Status line unchanged (no reading moved).
+All letters below are printed by Birch 1742 with their contemporary decipherment, so every one is N0 by construction;
+nothing here is a counted result. Regenerate everything with `python3 thu1/extend.py` (`--check` exits 1 if stale).
+
+**Siblings (KH2-F rows), IA djvu text fetched once (vols 1, 4, 5, 7; 4 requests to archive.org, scratchpad only).**
+- M1 Mountagu, Cales Bay, 19 May 1656 (vol.1 l.62335-62563): `montagu_1656-05-19_vol1_pairs.tsv`, 25 pairs (tool `pairs`).
+- M2 Mountagu, Lisbon bay, 11 Sept 1656 (vol.1 l.62564-62798): `montagu_1656-09-11_vol1_pairs.tsv`, 37 pairs.
+- M3 Mountagu, Naseby in Stokes Bay, 2 Mar 1655/6 (vol.4 pp.570-571): short inline code runs inside clear prose, which the
+  tool's numeral-line detector misses (it found 1 pair); 7 pairs cut by hand from the OCR into `montagu_1656-03-02_vol4_pairs.tsv`
+  (gloss and numerals verbatim; only the gloss over 125 531, OCR-garbled "p.%. *' i^ Blake at Portfmouth", was cut to its
+  legible words "Blake at Portsmouth").
+- M4 Mountagu, off Lisbon, 5 Apr 1656 (vol.4 l.60600-60608): 3 hand-cut pairs, `montagu_1656-04-05_vol4_pairs.tsv` (tool found 0).
+- M5 Mountagu, 3 July 1656 (vol.5 l.15466-15865): `montagu_1656-07-03_vol5_pairs.tsv`, 7 pairs.
+- F1 Fauconberg to H. Cromwell, [Sept 1658] (vol.7 l.36328-36727; not P19/P20): `fauconberg_1658-09_vol7_l36328_pairs.tsv`, 11 pairs.
+- Not usable: vol.7 l.26827-26972 (Mountagu [1658]) -- the djvu OCR of the cipher block is unreadable symbol soup (pairs extracted
+  are noise); needs the page image, which this job's brief excluded. Vol.7 l.46115 (KH2-F's second Fauconberg row) is a
+  Fauconberg letter of 2 Nov 1658 with no cipher at all; the numerals in that window (l.46512-46517) belong to an unsigned
+  intelligence letter, "Sir, London, 5th November, 1658", in a mixed letter-and-number cipher printed WITHOUT a gloss
+  ("D Ink 32- huge x 72 68 i 47 n y a 22 27 ..."), not Fauconberg's system -- a lead for a scout (an unglossed printed cipher
+  passage; KH2-F's sweep missed it because it was read as Fauconberg's).
+
+**Gate G2 (pre-registered in the brief; `thu1/g2_gate.py`, `thu1/g2_result.tsv`).** Each sibling aligned with NO prior (the
+alignment does not see the key); every numeral group with a non-empty gloss chunk and a value in the current key scored as
+agree/disagree with the key's meaning (letters only, f=s, u=v); control = 200 keys with the meanings permuted across values
+(seed 1656). PASS = real >= 0.70 and > shuffle p95.
+
+| letter | key | scored | real | shuffle mean | shuffle p95 | G2 |
+|---|---|---|---|---|---|---|
+| M3 2 Mar 1655/6 | key_montagu_extended | 44 | 0.705 | 0.015 | 0.045 | PASS |
+| M4 5 Apr 1656 | key_montagu_extended | 18 | 0.778 | 0.008 | 0.056 | PASS |
+| M1 19 May 1656 | key_montagu_extended | 402 | 0.420 | 0.015 | 0.035 | FAIL |
+| M5 3 July 1656 | key_montagu_extended | 117 | 0.538 | 0.023 | 0.060 | FAIL |
+| M2 11 Sept 1656 | key_montagu_extended | 656 | 0.654 | 0.019 | 0.049 | FAIL |
+| F1 Sept 1658 | key_fauconberg | 59 | 0.797 | 0.038 | 0.119 | PASS |
+
+Cross-key check (diagnostic, not a gate): key_fauconberg scores M1/M2/M5 at 0.08/0.10/0.05 (shuffle p95 0.09-0.12) and
+key_montagu_extended scores F1 at 0.09 -- at shuffle level, as a different key should.
+
+**The registered FAILs are not evidence of a different key.** The same gate run on letters that are already IN the pools
+the keys were built from (in-sample, so an optimistic positive control): Fauconberg P16 0.972, P18 0.963, P19 0.946, P22
+0.906 PASS but P20 0.388, P21 0.211, P23 0.164 FAIL; Montagu P15 0.727 PASS, P14 0.333 FAIL; the Montagu source letter
+(montagu_1656-05-29, 1,635 groups) 0.943 PASS. 4 of 9 known same-key letters fail G2: the statistic measures how well the
+no-prior OCR alignment lands on a short or noisy letter, not key identity. M1's own alignment marks 169 of its tokens
+'conflict' with itself; restricted to its self-consistent ('agrees') tokens the key agrees 128/137 (M1), 392/423 (M2),
+44/46 (M5) -- diagnostic only, not a re-gate (the threshold and statistic stay as registered). Logged: M1, M2, M5 are
+"same key, untested by G2 at this OCR quality", not "different key/channel".
+
+**Extension.** PASS letters re-aligned with the current key as `--prior`; codes the key lacks:
+`key_montagu_extended2.tsv` = key_montagu_extended.tsv verbatim + 5 codes, all grade C (read from the printed gloss), n=1
+each: 125 Blake, 531 Portsmouth, 607 Lawson, 609 "the V[ice] admirall" (all M3), 506 Lagos-bay (M4). Five disagreements with
+existing values, in `thu1/conflicts.tsv`: 115 (key d, M3/M4 gloss "anchor"), 205 (fitt / sit), 215 (go / set) -- all three
+key values are one-place M rows -- and 480 (key "your", C from 2 places in P11-13; M4 gloss "the", i.e. "the agent") and
+11 (key d; M4 "e" in "agent", single). Not merged either way; 480 is a two-witness data conflict (rule 4 shape: log, not
+majority). `key_fauconberg_extended.tsv` = key_fauconberg.tsv + 0 codes: every F1 code is already in the key (47/59 agree).
+FAIL-letter codes absent from the key, read from the gloss as whole OCR words or self-consistent chunks, are HELD, grade M,
+not merged: `thu1/held_codes.tsv`, 17 rows (e.g. 160 danger, 192 execution, 256 intelligence, 499 galloons, 100 block).
+
+**Residue (brief step 3).** P10 p.620 L10 (Blake): not applicable -- no Blake key extended. P3 postscript (Butler): not
+applicable -- no Butler key extended, and none of the five added Montagu codes occurs in P3 or P10 (grep). No residue decode
+was run.
+
+**Same-channel letters beyond Birch (step 4; nothing ordered).** EMLO Solr (emlo.bodleian.ox.ac.uk/solr/all/select, 11
+requests): the Thurloe papers (Bodleian MSS. Rawl. A.) are not catalogued item-level there (264 'Thurloe' hits, nearly all
+the Pell catalogue); 0 hits for Montagu+Thurloe. The Fauconberg-to-Henry-Cromwell channel is in EMLO's "Cromwell, Henry"
+catalogue, from BL Lansdowne MSS, printed in P. Gaunt (ed.), *The Correspondence of Henry Cromwell, 1655-1659*, Camden 5th
+ser. 31 (2007) (EMLO manifestation note, e.g. Belasyse to H. Cromwell 29 Mar 1659 = Gaunt p.486 letter 494). EMLO lists only
+3 Thomas Belasyse letters there (30 Nov 1657, 29 Mar 1659, 12 Apr 1659), none keyworded "Cipher letter"; the six Henry
+Cromwell items so keyworded are from Harrison, Jephson and Boyle, not Montagu or Fauconberg. So: the originals of
+Fauconberg's letters are BL Lansdowne (not Rawlinson), and Gaunt 2007 is the edition to check for any Fauconberg cipher letter
+Birch did not print; the Montagu originals are Rawl. A., whose catalogue (archives.bodleian.ox.ac.uk) is bot-checked to the
+cloud and BL images are offline since 2023. No ASKS.md row written (no credential involved; a Gaunt 2007 check is a
+LOCAL-QUEUE/JSTOR-style desk job for the lane to decide).
+
+**Suggestions (not run).** (1) A re-gate of M1/M2/M5 needs a different instrument, not a new threshold: page-image pairs
+(as R8-THUR25 did for P25-P28) or a gate pre-registered on statistics the in-pool controls pass. (2) The vol.7 l.26827
+Mountagu [1658] block needs its page image. (3) The 5 Nov 1658 unglossed intelligence cipher (vol.7 l.46512-46517) to a scout.

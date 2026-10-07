@@ -1,0 +1,7 @@
+letter	pairs	key	scored	all_num_tokens	agree	real	shuffle_mean	shuffle_p95	verdict
+M3	montagu_1656-03-02_vol4_pairs.tsv	key_montagu_extended.tsv	44	48	31	0.705	0.015	0.045	PASS
+M4	montagu_1656-04-05_vol4_pairs.tsv	key_montagu_extended.tsv	18	19	14	0.778	0.008	0.056	PASS
+M1	montagu_1656-05-19_vol1_pairs.tsv	key_montagu_extended.tsv	402	416	169	0.420	0.015	0.035	FAIL
+M5	montagu_1656-07-03_vol5_pairs.tsv	key_montagu_extended.tsv	117	120	63	0.538	0.023	0.060	FAIL
+M2	montagu_1656-09-11_vol1_pairs.tsv	key_montagu_extended.tsv	656	669	429	0.654	0.019	0.049	FAIL
+F1	fauconberg_1658-09_vol7_l36328_pairs.tsv	key_fauconberg.tsv	59	59	47	0.797	0.038	0.119	PASS

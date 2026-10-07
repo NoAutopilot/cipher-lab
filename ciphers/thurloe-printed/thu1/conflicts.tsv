@@ -1,0 +1,6 @@
+letter	value	key_meaning	sibling_chunk	status
+M3	205	sitt	sit	single-segment
+M4	215	go	set	single-segment
+M4	115	d	anchor	single-segment
+M4	480	your	the	single-segment
+M4	11	d	e	single
