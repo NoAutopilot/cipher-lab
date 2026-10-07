@@ -116,3 +116,25 @@ gate. Units: 5 canvases x 1 pairing pass + 1 reconciliation (price per pass, Usa
 stop there and write what remains. Use the folder's existing native crops and siblings/word_da1.py / word_col2.py method unchanged. A code
 reaches C only if it passes on held-out material per the registration; never lower a code already at C on held-out silence alone (a miss
 on held-out is logged, not a demotion, unless the registration says so). Flag in ROOM for a verifier at the end (no AUDIT.md yet).
+
+## Wave 4 (spawned 16:09 UTC 7 Oct)
+Wave 3 done 15:49 (COL3 5.07). colbert26 key_f23 changed three times today (DA1-COL +6 C, DA1-COL2 46 ce C->M, DA1-COL3 30 s and
+85 na to C with 85 luy->na); the folder has no AUDIT.md. Intake gate as wave 1 (partial, citation found, exit 0).
+
+### DA1-COLV -- colbert26-lathuillerie-1644 verifier on the f.23 reading after DA1-COL/COL2/COL3 (verifier, Opus; cap 6, box 80 min)
+You are a separate session from every solver of this folder (DA1-COL, DA1-COL2, DA1-COL3 and earlier A2-/R*-/D22-/D07-COL workers) and
+do not protect their conclusions. Follow CLAUDE.md "Verifier brief (template)" and .claude/briefs/verifier.md, scoped to the f.23 reading
+(and f.24 only as it shares key_f23). In order:
+1. Rule 7: re-derive the reading with the folder's decode (decode.json via `python3 tools/decode_key.py ciphers/colbert26-lathuillerie-1644
+   --check`, or the folder's own script) and say whether it is stale.
+2. Adversarially check today's key changes against their pre-registrations (PREREG files and siblings/word_da1.py, word_col2.py, the
+   DA1-COL3 script): registered before scoring (git order), control able to differ on the statistic (rule 3), held-out units that cleared
+   their own control only (the Szembek per-unit rule), multiple-testing honesty. 85 = na replaces luy on 4 occurrences: test it hardest; a
+   code with conflicting support is M, not C (rule 4). Lower any C you cannot support, with a NOTES line.
+3. Count H/C/S/M/I on f.23 and f.24; depth D0-D4 per rule 4a with `tools/depth_check.py`.
+4. Novelty: the logged search families of the template (Le Clerc Negociations secretes and the APW database are already logged in NOTES;
+   cover what the folder has not: sender/recipient editions, the holding archive's catalogue, IA/Google Books/HathiTrust EF phrase
+   searches on decoded clauses, open-index scholarship with the keys, JSTOR-QUEUE rows in families (i) and (ii)). Class N0-N5 with key
+   source (`ours`/`period`/`published`).
+5. Write AUDIT.md; update status.json depth/class fields for the folder's result row (rebase first); if N3+, append the
+   SECOND-OPINIONS-QUEUE.tsv row in the same session. Do not decode new material.
