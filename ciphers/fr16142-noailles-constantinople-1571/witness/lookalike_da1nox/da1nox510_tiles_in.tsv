@@ -1,0 +1,63 @@
+run	passage	pos	A	B	passC	why	status	candidates	before	after
+da1nox510	L05	1		W:sieur	W:sieur	split	split	W:sieur,q2,t1		W:le N2 ?
+da1nox510	L05	3	N2	W:faire	N2	split	split	N2,W:faire	W:sieur W:le	? N1 o1/e2
+da1nox510	L05	10	m2	W:dict	m2	split	split	W:dict,m2	c1 o1/e2 u1	
+da1nox510	L06	1		f2	f2	split	split	W:sieur,f2,q2		N1 i3 W:le
+da1nox510	L06	2	N1	o1/e2	N1	split	split	N1,o1/e2	f2	i3 W:le s2
+da1nox510	L06	3	i3	r2	i3	split	split	i3,r2	f2 N1	W:le s2 N2
+da1nox510	L06	6	N2	W:ent	N2	split	split	N2,W:ent	i3 W:le s2	d1 i3 ?
+da1nox510	L06	8	i3	r2	i3	split	split	i3,r2	s2 N2 d1	? W:de N1
+da1nox510	L06	17		W:sieur	W:sieur	split	split	W:sieur,q2,t1	u1 W:le W:de	s1 m2 e3
+da1nox510	L06	19	m2	W:dict	m2	split	split	W:dict,m2	W:de W:sieur s1	e3 r1 a1
+da1nox510	L06	26		h1	h1	split	split	W:sieur,h1,q2	n2 c1 o1/e2	W:sieur W:le a3
+da1nox510	L06	27		W:sieur	W:sieur	split	split	W:sieur,q2,t1	c1 o1/e2 h1	W:le a3
+da1nox510	L06	29		a3	a3	split	split	W:sieur,a3,q2	h1 W:sieur W:le	
+da1nox510	L07	8	l2	n2	l2	split	split	l2,n2	e3 a3 o1/e2	r2 W:le W:de
+da1nox510	L07	13	i3	r2	i3	split	split	i3,r2	W:le W:de p2	i2 W:le l1
+da1nox510	L07	22		q2	q2	split	split	W:sieur,q2,t1	i2 d1 o1/e2	a2 t2 i2
+da1nox510	L08	1		f2	f2	split	split	W:sieur,f2,q2		t1 l1 N3
+da1nox510	L08	2		t1	t1	split	split	W:sieur,q2,t1	f2	l1 N3 W:de
+da1nox510	L08	4	N3		N3	split	split	N3,W:sieur,q2	f2 t1 l1	W:de ? l1
+da1nox510	L08	18	i1	W:dict	i1	split	split	W:dict,i1	d1 o1/e2 m2	i2 o1/e2 a2
+da1nox510	L09	9	i3	r2	i3	split	split	i3,r2	r1 a1 t2	i2 a3 o1/e2
+da1nox510	L09	13	N2	e3	N2	split	split	N2,e3	i2 a3 o1/e2	u1 ? ?
+da1nox510	L09	14	u1	W:ent	u1	split	split	W:ent,u1	a3 o1/e2 N2	? ? W:sieur
+da1nox510	L09	17	W:sieur		W:sieur	split	split	W:sieur,q2,t1	u1 ? ?	r1 e3 t2
+da1nox510	L09	22	i3	r2	i3	split	split	i3,r2	e3 t2 o1/e2	q2 e3 n2
+da1nox510	L09	23		q2	q2	split	split	W:sieur,q2,t1	t2 o1/e2 i3	e3 n2 N1
+da1nox510	L10	2		t1	t1	split	split	W:sieur,q2,t1	a3	o1/e2 n2 a3
+da1nox510	L10	10	i3	r2	i3	split	split	i3,r2	W:de N1 o1/e2	l2 ? h1
+da1nox510	L10	13		h1	h1	split	split	W:sieur,h1,q2	i3 l2 ?	l1 n1 N1
+da1nox510	L10	20	i3	r2	i3	split	split	i3,r2	o1/e2 n1 d1	i2 a3 W:sieur
+da1nox510	L10	23		W:sieur	W:sieur	split	split	W:sieur,q2,t1	i3 i2 a3	W:le d1 o1/e2
+da1nox510	L10	27	i3	r2	i3	split	split	i3,r2	W:le d1 o1/e2	s2 t2
+da1nox510	L11	5	i3	r2	i3	split	split	i3,r2	e3 s2 o1/e2	x1 q2 e1
+da1nox510	L11	7		q2	q2	split	split	W:sieur,q2,t1	o1/e2 i3 x1	e1 d1 i3
+da1nox510	L11	10	i3	r2	i3	split	split	i3,r2	q2 e1 d1	p2 e3 u1
+da1nox510	L11	18		f2	f2	split	split	W:sieur,f2,q2	p2 r1 ?	? i2 t2
+da1nox510	L11	22		h1	h1	split	split	W:sieur,h1,q2	? i2 t2	W:sieur i3 q2
+da1nox510	L11	23		W:sieur	W:sieur	split	split	W:sieur,q2,t1	i2 t2 h1	i3 q2 r1
+da1nox510	L11	24	i3	r2	i3	split	split	i3,r2	t2 h1 W:sieur	q2 r1 e3
+da1nox510	L11	25		q2	q2	split	split	W:sieur,q2,t1	h1 W:sieur i3	r1 e3 u1
+da1nox510	L11	27	e3	c1	e3	split	split	c1,e3	i3 q2 r1	u1 t1 N2
+da1nox510	L11	29		t1	t1	split	split	W:sieur,q2,t1	r1 e3 u1	N2
+da1nox510	L11	30	N2	W:ent	N2	split	split	N2,W:ent	e3 u1 t1	
+da1nox510	L12	18	t1		t1	split	split	W:sieur,q2,t1	e1 m2 a1	? W:le ?
+da1nox510	L12	20	W:le		W:le	split	split	W:le,W:sieur,q2	a1 t1 ?	? W:de N1
+da1nox510	L12	25	i3	r2	i3	split	split	i3,r2	W:de N1 o1/e2	u1 e3 q2
+da1nox510	L12	28		q2	q2	split	split	W:sieur,q2,t1	i3 u1 e3	t2 h1 l1
+da1nox510	L12	30		h1	h1	split	split	W:sieur,h1,q2	e3 q2 t2	l1 N3
+da1nox510	L12	32	N3		N3	split	split	N3,W:sieur,q2	t2 h1 l1	
+da1nox510	L13	6	n1		n1	split	split	W:sieur,n1,q2	s2 o1/e2 r1	? i3 o1/e2
+da1nox510	L13	8	i3	r2	i3	split	split	i3,r2	r1 n1 ?	o1/e2 q1 h1
+da1nox510	L13	11		h1	h1	split	split	W:sieur,h1,q2	i3 o1/e2 q1	l1 N3 p2
+da1nox510	L13	13	N3		N3	split	split	N3,W:sieur,q2	q1 h1 l1	p2 o1/e2 i3
+da1nox510	L13	16	i3	r2	i3	split	split	i3,r2	N3 p2 o1/e2	r1 s2 u1
+da1nox510	L13	20		t1	t1	split	split	W:sieur,q2,t1	r1 s2 u1	i3 N2 l1
+da1nox510	L13	21	i3	r2	i3	split	split	i3,r2	s2 u1 t1	N2 l1 i2
+da1nox510	L13	22	N2	W:ent	N2	split	split	N2,W:ent	u1 t1 i3	l1 i2 N1
+da1nox510	L13	29		t1	t1	split	split	W:sieur,q2,t1	o1/e2 n2 t2	
+da1nox510	L14	7		q2	q2	split	split	W:sieur,q2,t1	n2 c1 o1/e2	o1/e2 W:le n1
+da1nox510	L14	24		q2	q2	split	split	W:sieur,q2,t1	a2 n2 x1	e1 W:sieur s2
+da1nox510	L14	26		W:sieur	W:sieur	split	split	W:sieur,q2,t1	x1 q2 e1	s2 i3 c1
+da1nox510	L14	28	i3	r2	i3	split	split	i3,r2	e1 W:sieur s2	c1 N1
