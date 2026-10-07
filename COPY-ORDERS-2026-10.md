@@ -1,4 +1,4 @@
-# Copy-order shortlist, October 2026 (SA-CO, LANE ST-ACCESS, account 4; written 7 Oct 2026, 21:43-22:05 UTC by date -u)
+# Copy-order shortlist, October 2026 (SA-CO, LANE ST-ACCESS, account 4; written 7 Oct 2026, 21:43-22:03 UTC by date -u)
 
 Enciphered letters that a held key (or a published one) could read but that no cloud route reaches. One row per order
 unit, ranked for the owner: free tier first, then (unread cipher units x key weight) / price. The machine-readable copy,
