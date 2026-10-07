@@ -230,7 +230,6 @@ Grade counts: none claimed (no reading asserted). Requests: none to any host. Su
 ## Remaining gaps (MONLUC-2, 7 Oct 2026)
 Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against its own gloss (MONLUC-KEY), unchanged this pass.
 - K07 form A (= t on f.86, association p 0.022, gain gate 1 of 3) - blocker: not-attempted; a second leaf would test it held out instead of the drifting line gate; next: count form-A vs form-B '2/Z' on c268 lines 1-5 crops and see whether A sits where t is expected in the c268 decode, ~$1
-- K01 'g' vs 'q' forms - blocker: not-attempted; shapes grade into each other, no blind sort run; next: blind sort of the 15 K01 crops as done for K07, ~$0.5
 - c268 transcription noise (27% pass disagreement) - blocker: not-attempted; above the one-tenth line, so the next pass is a person's per TRANSCRIPTION.md; next: tools/lookalike_pass.py on c268 passes A/B, then the sorter's focus.tsv for the owner, ~$1
 - a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py), so no longer calibrated N is in hand; a decipherment leaf for ff.132-138 would give a C-grade test without the judge (the next gap)
 - in-volume decipherment of ff.132-138 - blocker: not-attempted; f.139 opening tested and not matched; next: look at ff.140-141 and items 17/18/112-120 for a Monluc 28 Apr text, ~$1
@@ -243,6 +242,23 @@ Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against 
 - [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY) and per sign form (this pass)
 - [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
 - [ ] key-rebuild: K69 = t candidate held (gain gate 1 of 3); planned step: test form A on c268 as a held-out leaf
-- [x] image-check: native single-sign crops of K01/K07/K14 on f.86 looked at, K07 and K14 blind-sorted
+- [x] image-check: native single-sign crops of K01/K07/K14 on f.86 looked at, K07, K14 and (FRESH-0914, 7 Oct 2026) K01 blind-sorted
 - [n/a] retry: nothing has failed that a plain retry would change
-Verdict: keep going: 6 internal gaps; cheapest next: blind sort of the 15 K01 crops, ~$0.5
+Verdict: keep going: 5 internal gaps; cheapest next: count form-A vs form-B '2/Z' (K07) on c268 lines 1-5 crops against the c268 decode, ~$1
+
+## FRESH-0914: K01 blind sort (7 Oct 2026, account-1 parent worker)
+
+The 15 K01 instances of f.86 (c172; L02:8, 16, 17, 24, 28, 37; L03:1, 35, 43, 54; L04:10, 12, 17, 18, 28) were cut as native
+single-sign crops (60x90 px from `images/src_ark_12148_btv1b9060724s_f172_1230_950_2580_520.jpg`, no Gallica request), centres
+interpolated from `split_c172.tsv`'s K07 anchors and set by eye on a contact sheet; shuffled (seed 914) into
+`images/signs/c172_K01_blind.png`; record `split_c172_K01.tsv`. One Sonnet sorter, shown only that image (no line, no gloss),
+called two forms: **A, tail hooks left (g/9)** 12 crops, **B, straight descender (q)** 3 (L02:17, L04:18 high; L04:10 low, its
+descender cut by the region edge).
+- Letters faced (gloss_faced): form A = n n n n n n n a e (+3 unglossed); form B = d m n. Association control (form A on n,
+  form B on d; 10,000 label permutations): statistic 8, p = 0.19 -- **not significant**. The three q-forms face three different
+  letters, so they are not a hidden sign with its own value at this N; two of them (L02:17, L04:18) are passB's K12 calls.
+- Reading: K01 is one dominant g-form on this leaf, which faces n, consistent with the table's '9' = n (K12) value MONLUC-2
+  noted; the q-form is the minority look-alike and does not separate by letter. **key.tsv unchanged**, no grade change, the gap
+  is closed as tested (shape question answered: two forms, no letter split licensed at N=15).
+Requests: 0. Subagents: 1 (Sonnet, blind sort).
+

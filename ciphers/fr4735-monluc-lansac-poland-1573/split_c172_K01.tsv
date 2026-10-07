@@ -1,0 +1,17 @@
+# FRESH-0914 7 Oct 2026: K01 instances on f.86 (c172), native sign crops 60x90 (images/signs/c172_K01_blind.png, crop #, shuffled seed 914), centres located from split_c172.tsv's K07 anchors + eye offsets; blind = Sonnet sorter shown only the crops: A g-form (tail hooks left), B q-form (straight descender)
+line	pos	x	y	crop	blind	conf	passB	gloss_faced
+L02	8	402	233	#15	A	H	K01	n
+L02	16	706	214	#11	A	M	K12	n
+L02	17	762	212	#9	B	M	K12	d
+L02	24	1027	197	#5	A	H	K01	n
+L02	28	1195	186	#14	A	H	K01	n
+L02	37	1570	161	#8	A	H	K01	a
+L03	1	112	395	#2	A	H	K01	n
+L03	35	1480	310	#1	A	H	K01	n
+L03	43	1768	296	#4	A	H	K01	
+L03	54	2211	286	#10	A	H	K01	e
+L04	10	504	491	#7	B	M	K12	m
+L04	12	551	486	#12	A	M	K12	n
+L04	17	738	472	#13	A	M	-	
+L04	18	784	469	#3	B	M	K12	n
+L04	28	1146	451	#6	A	M	K12	
