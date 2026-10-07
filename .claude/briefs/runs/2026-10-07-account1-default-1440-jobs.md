@@ -85,3 +85,22 @@ Wayback CDX if 404) against this letter's code layer (85, 0100 and the M codes),
 Bowes cipher. A code reading from that key is H only if the key is a period key for this channel; a different-correspondent key is a
 hypothesis to test with a control (wrong-key or shuffled-code null that can differ on the fit statistic), not a grade. Tick or retire the
 known-keys rung with the result; credit Tomokiyo.
+
+## Wave 2 (spawned 15:1x UTC 7 Oct)
+Wave 1 all done by 15:02 (get_session: NOX 7.19, COL 5.78, VIV 3.14, LIN 1.71, GRA 1.91, BOW 1.08 = 20.81). Intake gate re-run 15:1x:
+colbert26 and bowes as in wave 1/1b (partial, citation found, exit 0).
+
+### DA1-COL2 -- colbert26-lathuillerie-1644 second blind word-pairing pass + re-score (solver, Opus; cap 5, box 70 min)
+Verdict (NOTES.md l.1881): "a second blind word-pairing pass on c50, c3940, c47 to measure the pairing's reader agreement and re-score
+siblings/word_da1.py, ~$4.5". You are not DA1-COL's session and must not read DA1-COL's pairing files before your pass is written
+(read only the crops, the gloss transcription and the code-group transcription). Units: 3 canvases x 1 blind pass each + 1 comparison.
+Report per-canvas agreement with DA1-COL's pairing; re-score word_da1.py on your pass (unchanged statistic, control, gate). If any of the
+six codes DA1-COL merged at C (16 se, 20 i, 46 ce, 67 leur, 81 me, 96 que) fails on your pass, say so and lower it to M in key_f23 with a
+NOTES line; do not raise anything beyond what both passes support. Held-out units c54-56/c62-63 are a later job, not yours.
+
+### DA1-BOWW -- bowes-walsingham-1583 Wayback CDX for CottonMSBowes.png (solver, Opus; cap 2.5, box 40 min)
+NOTES.md l.624: one Wayback CDX lookup for Tomokiyo's glyph sheet CottonMSBowes.png (2 Oct attempt was a connection reset, not a 404).
+CDX API then the `if_` capture (CLAUDE.md access playbook item 2); one retry after a pause at most. If found: save under
+sources/cryptiana/ (unmodified snapshot, credit Tomokiyo), compare its sign alphabet with this letter's signs 02-28 and the f.290-293 key
+as the known-keys rung describes, with a control that can differ (shuffled sign assignment), and tick or retire the rung. If not
+captured: log the CDX result (URL, date, rows) in NOTES.md and mark the action done.
