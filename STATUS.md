@@ -6022,3 +6022,26 @@ Lumbres 1575 another key) -- cryptanalysis; Thurloe intercepted letter Jo. Wedda
 key; ~44 printed Downing letters 1657-60 with decipherments = pool extension for key_downing; Beinecke Rochambeau Papers unsearched
 (bot-challenged) for La Luzerne; 30 later RAH images of the Gonzalez Bravo neighbours unopened.
 Left: nothing runnable inside this round's rows except the Amidani key rebuild and wvo-11008 intake.
+
+## LANE ST-REBUILD handoff (session_013jm31txSFKvvEoKkMWjGn8, account 2), 7 October 2026 (closed 23:0x UTC: scope spent, lane about 49.6 of 50)
+
+STEAM round (.claude/briefs/runs/2026-10-07-acct3-steam.md, section ST-REBUILD); worker brief
+.claude/briefs/runs/2026-10-07-acct2-st-rebuild-workers.md (waves 1-3). Seven workers 40.18 + orchestrator ~9.4 by get_session.
+No counted result (nothing at N3+/D2+); one NEAR row added.
+- Step 1, Sforza 1447 (BnF italien 1584, Gallica btv1b100373864), pool folder ciphers/sforza-italien1584-1447 (blocked by f.143 only):
+  * Amidani key rebuilt from 3 glossed slips (amidani/, 1,618 signs): held-out G1 PASS 0.763 vs 200-shuffle p95 ~0.39 (SFZ-1).
+    It does NOT read Amidani's 1446 f.70 (sforza-maino-1446, re-read from the DECODE R7899 full-size image in our labels, SFZ-70):
+    identity-map lm -2.316 vs p95 -1.700; status stays closed-negative (conditional), premise check added.
+  * No-copy items (SFZ-0): f.259 has a copy (f.258); f.143 is glossed in place (blocked, Battioni 2013 unread); survivors f.13, f.15.
+  * Each sender has his own key (Amidani key on Duke f.8 0.267 vs p95 0.334; on Pusterla 0.241 vs 0.275).
+  * Duke (ciphers/sforza-duke-1447-f15, open, gate 0): Duke key G1 FAIL 0.441 vs 0.60 -- single reader, sign inventory unsettled;
+    f.6/f.9 are the contemporary translations. Next: settle the Duke sign inventory + second reader on f.5/f.8, try pusterla/g1p.py's
+    anchored learner, ~$4.
+  * Pusterla (ciphers/sforza-pusterla-1447-f13, partial, NEAR row): key G1 PASS 0.733/0.589 vs p95 ~0.39; f.13 decode beats
+    200 shuffled keys on two reads (best lm -1.196 vs p95 -1.247, rank 1/201) but judge FAIL vs real_p05 -0.918; signature decodes
+    "de Pusterla". Next: add f.71 (text printed in Osio III no. CCCXCI) and f.67 to the key (~$4 each), an it15 Lombard judge corpus.
+- Step 2, thurloe-printed (THU-1): key_montagu_extended2.tsv +5 C codes, Fauconberg +0; all Birch siblings N0 by construction;
+  KH2-F's vol7 l.46115 numerals are an unglossed letter+number cipher in a London intelligence letter of 5 Nov 1658 (scout lead).
+- Step 3: no rebuild candidate outside Sforza meets glossed >= 10 with an unglossed sibling (KEYHUNT-2026-10-07.tsv, NEXT-STEPS.tsv
+  checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
+Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
