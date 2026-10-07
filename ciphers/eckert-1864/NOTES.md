@@ -840,3 +840,63 @@ and their grades are unchanged. Effect: the time word Viola = 12 midnight PM now
 logged by D12-E1 and by D12-VP section 5 is void (a transcription slip of the plain header, not a key or ledger conflict).
 status.json, PROGRESS.tsv and SECOND-OPINIONS-QUEUE.tsv quote no N2-AJ "noon" (grep); the SO prompt was already corrected by
 D4-V2AJ. Rule 10 propagation into D12-VP's sections 3-5 is left to the next verifier (flagged in ROOM). Requests: hdl.huntington.org 1 (200).
+
+## LS-PRE (7 Oct 2026, account 1, for LANE ST-LEDGER): which mssEC 19 entries have no Official Records hit
+
+Filter before anyone decodes; nothing was decoded. Tool: `tools/huntington_transc.py` (shared; offline test
+`tools/tests/test_huntington_transc.py`). The 415 page pointers of object 9302 come from `dmGetCompoundObjectInfo` (8887-9301; page n =
+pointer - 8892, verified at both ends: 8893 = "Page 1", 9301 = "Spine"); the volunteer text (`transc`, 405 pages with text) is committed
+as `sources/mssEC19/p<pointer>.json` (text only, 1.7 MB). Segmenter, plain-token OR check and calibration: `entries_mssEC19.py`
+(`python3 entries_mssEC19.py --or-dir <scratch> --cache <scratch>/or_full.json`). Output: `entries-mssEC19.tsv` (893 segments: headers
+with a date, plus run-ons at the top of a page as entry 0; columns as briefed plus `or_cov`).
+
+**OR check.** Plain tokens = every token not in the code-word column of a key table of key.md, key-no2.md or key-no9.md, with a list of
+function words always kept plain (to, in, the, and, ... are listed in the keys). Rare 3-grams of plain tokens (seen at most 40 times in
+the whole scanned corpus) are looked up in the IA full text; `or_hit` is set when the hits inside one 400-token window cover at least 7
+distinct plain tokens of the entry (`or_cov`, recorded for every row). Volumes scanned (IA `_djvu.txt`, to scratch, 58 files): OR ser. I
+vols 32-52 as `warofrebellion<vol><part>unit` (see the identifier caveats below), `warofrebellionco0043unit_i5n6`,
+`warofrebellionco0047unit_e7s2`, `warofrebellionco0047unit_q8d9`, `warofrebellion501unit`, `502unit`, `53unit`, and ORN ser. I vols 9
+and 10 (`officialrecordso0009unse`, `officialrecordso0010unse`). Series III vols 4-5 were NOT searched: the IA copies found
+(`in.ernet.dli.2015.165578`, `.171703`) have no `_djvu.txt` (HTTP 404) and `waroftherebellio026242mbp` turned out to be Series II vol IV
+(removed); no IA identifier for ser. III vol 5 was found. ORN vols 11-12 were not fetched.
+
+Identifier caveats (volume/part read from each file's own title page and its date profile): `warofrebellion323unit` is I/32 pt 3 (title
+page OCR "XXXIX"); `warofrebellion431unit` is I/47 pt 2 (Jan-Mar 1865 dates, title page "XLVII"), NOT I/43 pt 1; `432unit` is I/43
+pt 2; `warofrebellionco0043unit_i5n6` is a I/43 volume (Sep-Dec 1864) added to cover the missing pt 1; `502unit`, `522unit` have OCR
+title pages "I", "III" but are the supplement parts 50 pt 2 and 52 pt 2 by date profile. `warofrebellion423unit` and `53unit` carry no
+readable title page. Per-file date profiles are in the session scratch only.
+
+**Calibration (rule 3).** On the 98 already-read entries that the pointer + date match could place (ciphertext.txt E1-E20,
+ciphertext-no2.txt, ciphertext-no9.txt; truth = the repo's own tables, a search result and not a verdict): recall 41/50 = 0.82 of the
+entries logged as printed in the OR (0.90 for entries of 60 words or more, 28/31; 0.68 below 60 words, 13/19: a short entry has few plain tokens to match); false hits 0/14 of the entries logged "not located". The margin is thin: the
+not-located entries covered 3-6 plain tokens against the threshold of 7 (N2-D 6, O9-E 6, O9-V 6), so a lower threshold would start
+to hit them; an entry at `or_cov` 4-6 with no `or_hit` is not clean. The "not located" side is only 14 entries and each is itself a
+search result. Recall above 0.7, so this is a ranking with a stated error rate, not a verdict (rule 10). Nine known-printed entries
+were missed (N2-AG, Z, AO, AP, AU, G; O9-C, D, H; `or_cov` 3-6). `cipher_guess` (1/2/9 by leave-one-out Bayes over key-table tokens, trained on the
+same already-read entries; `clear` under 12% key-table tokens; `short` under 6 words) is right on 75 of 98; treat it as a hint.
+
+**Counts (893 segments).** priority 1 (cipher, no `or_hit`, not read, operator not at an army commander's headquarters; the sender is
+inside the cipher so Beckwith/Kimber/Canby/Grant/Halleck/Lincoln/Stanton in the header are the proxy): 308 (guess No. 1: 261, No. 2: 39,
+No. 9: 8); of these 159 have a 1864 date and 149 a 1865 date. priority 2 (cipher, no `or_hit`, not read, but a headquarters operator): 91
+(No. 1: 38, No. 2: 40, No. 9: 13). priority 3 (an `or_hit`, already read, clear, or under six words): 494, of which 98 are the
+already-read entries, 38 `clear`, 28 `short`. Entries dated after about June 1865 cannot have an OR hit in the volumes scanned (ser. I
+ends there); their priority-1 rank is by construction, not by search.
+
+Requests: hdl.huntington.org about 420 (2 compound-object, about 417 item-info incl. one dropped connection retried once, 3 probes; all
+200 but that one); archive.org about 71 (5 advancedsearch, 3 metadata, 1 HEAD, 62 `_djvu.txt` download attempts of which 59 returned
+200; one 500 on `warofrebellion361unit` retried once, 200; two 404 for the `in.ernet.dli` copies, not retried). Other hosts: none.
+
+## Remaining gaps (LS-PRE, 7 Oct 2026)
+Read so far: 98 of 893 mssEC 19 segments read (the already-read E, N2 and O9 entries matched by pointer and date; `decode.py`, `decode_no2.py`, `decode_no9.py --check` unchanged by this pass); 308 priority-1 rows unread.
+- priority-1 rows of `entries-mssEC19.tsv` (308) - blocker: not-attempted; read in order of lowest `or_cov` with key.md, key-no2.md or key-no9.md as `cipher_guess` says; next: one chunk of 8 rows, ~$10
+- OR check without Series III vols 4-5 and ORN vols 11-12 - blocker: not-attempted; no IA copy with OCR text found for them; next: find IA identifiers with `_djvu.txt` and rerun `entries_mssEC19.py --rerun`, ~$0.5
+
+## Escalation (LS-PRE, 7 Oct 2026)
+- [x] siblings: mssEC 25 second copy read for E4/E5 earlier (Second reader, 24 Sept 2026); this pass adds the whole ledger's entry list, no sibling reading
+- [n/a] clear-pages: the ledger text is the cipher itself, the OR check above is the print comparison
+- [x] known-keys: key.md (mssEC 41), key-no2.md (mssEC 47) and key-no9.md (mssEC 67) are the period books in use
+- [ ] print: OR check run for ser. I vols 32-52 and ORN 9-10 only; Series III vols 4-5 still to add, ~$0.5
+- [n/a] key-rebuild: period cipher books exist for the three vocabularies in the ledger
+- [n/a] image-check: nothing was read in this pass, so no token to image-check
+- [n/a] retry: no read attempted and no failed attempt to retry
+Verdict: keep going: 2 internal gaps; cheapest next: add Series III vols 4-5 to the OR check (~$0.5), then read the lowest-`or_cov` priority-1 rows of `entries-mssEC19.tsv`, ~$1.2 per entry (updated LS-PRE, 7 Oct 2026: recall 0.82 and false hits 0/14 on the already-read entries).
