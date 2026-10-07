@@ -77,3 +77,52 @@ Tooling + filter. Script-first; no model reads pages.
    no or_hit, not read, sender/addressee not Halleck-Grant-Lincoln-Stanton-to-army-commander; 2 = cipher, no or_hit; 3 = the rest).
    Also one short section "## LS-PRE (7 Oct 2026)" appended to ciphers/eckert-1864/NOTES.md: counts by priority and cipher, the
    recall/false-hit calibration, identifiers used. Do not decode anything. Do not edit no2-candidates.tsv except to add nothing.
+
+---
+
+# Wave 2 (written 7 Oct 2026 22:3x UTC, after LS-PRE): read only the filtered entries
+
+LS-PRE's `ciphers/eckert-1864/entries-mssEC19.tsv` ranks 893 segments; the lane picked priority-1 rows with words >= 50, `or_cov` <= 3
+(no Official Records hit and a low near-hit cover; LS-PRE's calibration: recall 0.90 for entries of 60+ words, 0 false hits of 14),
+dated 1864, non-headquarters addressees (Horner at New York, Sheldon at Fort Monroe, Mason, Sampson, McCaine in the Valley).
+The filter is a ranking, not a verdict: some will still turn out printed.
+
+## LS-R1 / LS-R2 (Opus 5.5, solver): read the listed entries with the period key
+
+Entries (pointer/page/entry_on_page in entries-mssEC19.tsv; your IDs are fixed so the two of you never collide):
+ LS-R1 (cap $11, box 120 min): 8934/42/1 E21, 8949/57/2 E22, 8955/63/1 E23, 8964/72/0 E24, 9023/131/1 E25, 9053/161/1 E26,
+   9091/199/1 E27, 9091/199/2 E28, 9115/223/1 E29 (the long one last).
+ LS-R2 (cap $9, box 110 min): 9051/159/1 E30, 9051/159/2 E31, 9054/162/1 E32, 9055/163/0 E33, 9056/164/0 E34, 9057/165/3 E35,
+   9060/168/1 E36.
+ If an entry is in Cipher No. 2 (header "(No 2)", Beckwith-style punctuation words), read it with key-no2.md into ciphertext-no2.txt
+ instead, IDs N2-BG.. (LS-R1) or N2-BP.. (LS-R2), as the D4-E5 section did. If it is in the old vocabulary, key-no9.md / O9-AH.. (R1),
+ O9-AP.. (R2). If none of the three keys reads at least 80% of its code-word tokens, stop that entry, record "key not in hand" with the
+ counts, and go to the next -- do not guess.
+Method exactly as D4-E5 (NOTES.md section "## D4-E5"): 2400 px IIIF image of the pointer to scratch
+(`hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`), strip crops with tools/iiif_lines.py (command
+pasted in your NOTES section), read the crops yourself (no subagent), the volunteer text in ciphers/eckert-1864/sources/mssEC19/p<pointer>.json
+as second witness; list every word where they disagree and which you took. Append the block to ciphertext.txt in the format of its
+header comment (### E<n> | Page | pointer | date, addressee (operator)), `python3 decode.py --write` then `--check` exit 0; grade per token
+(the decoder counts H/C; add any I/M by hand as earlier blocks do). After decoding, locate it in print: OR by date and correspondent (the
+LS-PRE identifiers; djvu fetched once per volume), ORN, Lincoln Collected Works / Papers of U. S. Grant (Google Books API with key and
+country=US), IA full text with 2-3 decoded phrases; record per entry where it was found and where it was not. Mark the row in
+entries-mssEC19.tsv `already_read` with your ID.
+Shared files: ciphertext.txt and reading.md are touched by both of you. Fetch + rebase immediately before each push; on a conflict keep
+both sides' blocks in ID order and regenerate reading.md with `decode.py --write` (never hand-merge the derived block). Push after
+every two or three entries, not only at the end.
+Write a section "## LS-R<k> (7 Oct 2026, account 1, for LANE ST-LEDGER)" in NOTES.md: per-entry table (ID, date, from/to in the
+decoded plain, H/C/I/M, found in print where / not located in what), the crop commands, requests per host. Update the Verdict line's
+"cheapest next" (prepend; keep the older text). Price: ~1.1 per entry; stop before an entry that would cross 80% of cap or box.
+Flag the batch for a verifier in ROOM. Report what was found and where it was not found; do not classify novelty.
+
+## LS-V1 / LS-V2 (Opus 5.5, verifier; cap $6, box 75 min each) -- spawned by the lane after LS-R1 / LS-R2 finish
+
+Separate session from every solver of the batch. CLAUDE.md "Verifier brief (template)" scoped to LS-R<k>'s entries. Re-derive with
+`decode.py --check` (and decode_no2/no9 if used); spot-check two entries' strip crops against the IIIF image; for entries the solver
+located in print, confirm the page by script and class N1 (a check, not a search). Spend the rest on the not-located entries: full search
+per entry (OR by date and correspondent +/- 3 days, ser. III, ORN, sender/recipient papers -- e.g. Seward/State Dept for Horner's New York
+traffic, Sheridan/Valley campaign for McCaine --, PUSG, Lincoln CW, Huntington full text, IA, Google Books, OpenAlex/S2/CORE, JSTOR-QUEUE
+rows in both families). N-class + key `period` + text known/unknown + depth (rule 4a, D-level, depth_pct, one true sentence for D2+).
+Append "## AUDIT (LS-V<k>)" to AUDIT.md; status.json result rows for N3+ entries only, one per entry in the format of the 7 Oct eckert
+rows (rebase first); SECOND-OPINIONS-QUEUE.tsv row per N3+ entry in this session; correct any over-claim in the solver's section.
+`tools/depth_check.py` passes for the rows you add. Do not decode other entries.
