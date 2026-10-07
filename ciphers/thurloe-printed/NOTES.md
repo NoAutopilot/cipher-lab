@@ -2985,7 +2985,7 @@ not merged: `thu1/held_codes.tsv`, 17 rows (e.g. 160 danger, 192 execution, 256 
 applicable -- no Butler key extended, and none of the five added Montagu codes occurs in P3 or P10 (grep). No residue decode
 was run.
 
-**Same-channel letters beyond Birch (step 4; nothing ordered).** EMLO Solr (emlo.bodleian.ox.ac.uk/solr/all/select, 11
+**Same-channel letters beyond Birch (step 4; nothing ordered).** EMLO Solr (emlo.bodleian.ox.ac.uk/solr/all/select, 18
 requests): the Thurloe papers (Bodleian MSS. Rawl. A.) are not catalogued item-level there (264 'Thurloe' hits, nearly all
 the Pell catalogue); 0 hits for Montagu+Thurloe. The Fauconberg-to-Henry-Cromwell channel is in EMLO's "Cromwell, Henry"
 catalogue, from BL Lansdowne MSS, printed in P. Gaunt (ed.), *The Correspondence of Henry Cromwell, 1655-1659*, Camden 5th
