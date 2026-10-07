@@ -94,3 +94,36 @@ institution's public address read from its own contact page with date), status `
 gate 7 is a separate session the lane will run. Log the drafts' paths in the done line. Personal data stays out (rule 9).
 Hosts: archive tariff/contact pages, one request at a time; if a page is challenged, record "tariff page unreachable from
 cloud" and the URL, and move on.
+
+## Wave 2 (written 7 Oct 2026 ~22:15 UTC after SA-O/SA-MP/SA-CO reported)
+
+## SA-CO2 (free-tier unblockers; Sonnet 5.5; cap USD 5; box 90 min)
+vision calls: 0 x USD 0.4 = 0 (catalogue and print lookups only; fixed ~2.5).
+Read COPY-ORDERS-2026-10.md rows CO-01..CO-03 and the two drafts first. Three lookups, each ~USD 1, in order:
+ a. CO-02: identify the Archives nationales Marine B3 volume(s) holding Vergier's letters to Pontchartrain 1695-97
+    (Dunkerque/Calais/Boulogne): the AN Marine B3 inventory (Taillemite / état des inventaires; SIV or FranceArchives
+    finding aid; Gallica/IA printed inventaire de la série B3; Depping t. IV's own source notes). Put the cote(s) into
+    outreach/an-marine-vergier-2026-10.md, remove its "NOT SENDABLE YET" note only if a cote is found.
+ b. CO-01: confirm the MHi holding named in outreach/mhs-erving-letterbook-2026-10.md (MHi ABIGAIL catalogue / collection
+    guides: Erving letterbook, or Winthrop Family Papers item) with the record URL; correct the draft's collection line.
+ c. CO-03: folios of La Luzerne's coded dispatches in AAE CP Etats-Unis 15-28 from printed sources (Doniol, Histoire de la
+    participation, footnotes citing "Corr. pol. Etats-Unis vol. N fol. M"; LOC Foreign Copying transcripts). Record folios
+    in COPY-ORDERS-2026-10.md CO-03; no new draft (an AAE thread is open; note "add to the open AAE thread").
+ Update COPY-ORDERS-2026-10.md/.tsv cells for these three rows. No send, no checked: line, no CONTRIBUTIONS row.
+
+## SA-MP2 (Pinkney short-run screen by script; Sonnet 5.5; cap USD 5; box 120 min)
+vision calls: 6 x USD 0.4 = 2.4 (+ fixed ~2.5 = 4.9).
+SA-MP found NARA M30 r12-13 free of dense code pages, but its short-run control (M30 r11 f65, a 5-group run) was not
+visible at sheet scale. Instrument: tools/numeral_page_detect.py (tool shelf: read its docstring; it is built for full
+blocks, a single line cannot move its top-5 mean). Steps:
+ 1. Add an option `--line-max` (image score = best single line score instead of top-5 mean) with an offline test in
+    tools/tests/test_numeral_page_detect.py (synthetic page with ONE digit line in prose ranks above a pure-prose page),
+    and update its row in tools/data/tool_shelf.tsv.
+ 2. CONTROL FIRST: fetch M30 reel 11 (whole-reel PDF once, catalog.archives.gov medialz path as SA-MP used for 12/13;
+    extract pages at ~1200 px with pdftoppm/PyMuPDF to scratchpad, then delete the PDF). Score every frame; the known
+    coded frames (r11 f65 and any others named in keyhunt/2026-10-07-KH4D.tsv / SA-MP's TSV) must rank in the top 3% of
+    the reel. If they do not, stop: log "short-run screen untestable by this tool at this scale" with the ranks, done.
+ 3. Only on a passed control: same for r12 and r13; view the top 3% of frames (contact sheets of crops of the top-scoring
+    line, never full pages to a subagent). Record any frame with coded groups in keyhunt/2026-10-07-SAMP2.tsv, KEYHUNT
+    line 57, and (if unglossed and WE028 or another held key) the WE028 key's target-folder NOTES line per common step 4.
+ Disk: one reel at a time; delete each PDF after extraction.
