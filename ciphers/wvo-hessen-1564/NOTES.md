@@ -722,3 +722,66 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair and gloss-row crops and sorter tiles; owner sorted all 258 tiles
 - [n/a] retry: no step has failed that a retry would change
 Verdict: keep going: 4 internal gaps; cheapest next: re-align with the settled labels under the PREREG and its shuffle control (~$1), then an eye check of the C03/C07/C09 gloss letters against the key (~$1.2), then a verifier
+
+## f.23 gloss re-aligned on the owner's settled signs (WVO-REALIGN, account 1 for account 3, 7 Oct 2026, 01:42-01:4x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-07-acct3-wvo-realign.md`. PREREG `PREREG-WVO-REALIGN.md` pushed (ebeabbb9) before any
+scored run. Files in `realign/` (`run.py real` / `run.py control 300` regenerate everything; `decode.json` for decode_key).
+`settled/` is left as WVO-APPLY wrote it. No network, no subagent; three gloss crops opened (C09 check only).
+- Method: `tools/interlinear_align.py align` with the PREREG-R9-WVOALIGN parameters unchanged, cipher rows labelled by
+  settled sign (aside/bad-cut tiles each a unique label, E.L. clear), gloss unchanged (R10-WVOTX). Key by settled/make_key.py's
+  rule (C: top >= 2, >= 2 rows, >= 0.6 share).
+- Result, before (WVO-APPLY: R10 alignment on k-piles, relabelled) -> after (re-aligned on settled signs):
+
+| figure | before | after |
+|---|---|---|
+| tiles C and agreeing with the gloss letter over them (AGREE) | 159/257 | **159/257** (61.9%, unchanged) |
+| C tiles | 202 | 192 |
+| C tiles in conflict with the gloss letter | 22 | 19 |
+| C tiles with no aligned letter | 21 | 14 |
+| M tiles valued / blank value | 33 / 12 | 42 / 13 |
+| key rows C / M | 24 / 23 | 22 / 25 |
+
+  The gloss letter moved on 59 tiles (C03 24, C07 7, C09 7, C01 6, C06 6, C04 5, C02 4): 19 tiles left AGREE and 19 others
+  joined it, 140 in both. **Nothing changed in the AGREE total**: the one-place slips the re-alignment was meant to fix moved
+  rather than vanished.
+- Control (brief): settled labels permuted within each row, 300 draws, seed 1564, full pipeline per draw: AGREE mean 3.34,
+  p95 9, max 19, p = 0.0033 -- real 159 > p95, so the re-aligned agreement beats chance; but the **gain over WVO-APPLY is
+  0 tiles: gain not shown**. CONSISTENT under the same control: real 22 vs mean 1.38, p95 3. PREREG-R9 derangement control
+  (`--shuffle 1000 --seed 1564`, tool's own tally): real 25 vs mean 2.43, p95 5, max 7, p = 0.001 (the tool counts 25 where
+  run.py's key rule counts 22 C rows; the tool's tally folds chunks and breaks ties its own way; not reconciled here).
+- Key changes (realign/key.tsv vs settled/key.tsv): **k28 b (C) -> e (C)** on 2/2 aligned tiles, 2 rows -- a C row changed
+  value under re-alignment, the second time k28 has done so (R10: a -> b); a verifier should eye-check k28's tiles before
+  either value is used. k11 c M -> C (5/8, 4 rows). k06 e and k23 i C -> M (4/7 and 5/9, below 0.6). k13-e k C -> b M (1/2).
+  Single-tile M rows changed or lost value: k03-c, k05-b, k17, k18-b, k20-b, k21-b, k22-c, k23-b, k27-b.
+- `python3 tools/decode_key.py ciphers/wvo-hessen-1564/realign --check`:
+  ```
+  ciphertext.tsv: tokens 257: C 192, M 42, U 23
+  reading up to date
+  ```
+  exit 0. Rule 4 counts on the 257 tiles: H 0, C 192, S 0, M 42 valued + 13 blank, I 0, ungraded 10 (aside/bad-cut),
+  plus 1 clear token (E.L.).
+- C09 l-vs-f (tile f23_C09_01_022, gloss f, key k01 = l at C, both before and after): one look at `r10tx/crops/f23G_L17_s3.jpg`
+  and `_s4.jpg`, compared with the f of "erfrucht" in `f23G_L17_s2.jpg` and the l of "freundtlich" in `f23G_L01_s4.jpg`. The
+  letter after "er" stands on the line with a looped ascender and no descender, the shape of the l in "freundtlich"; the f in
+  "erfrucht" has a crossbar and descends below the line. By letter shape the gloss letter reads l, as the key predicts (grade M:
+  one worker's look, not a second pass). The gloss file is not changed here; the change and any reading of the word are a
+  reconciler's or verifier's call.
+- Not touched: status.json, depth, AUDIT.md, top-level key/reading, settled/.
+
+## Remaining gaps (finish-or-blocker pass, WVO-REALIGN, 7 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, two audits); key per the owner's settled signs, re-aligned on them: 22 C / 25 M; 159 of 257 tiles C and agreeing with the gloss letter (unchanged by re-alignment; within-row control p95 9); decode_key realign/ --check exit 0
+- alignment slips (re-alignment on settled signs moved 59 gloss letters but left AGREE at 159; 19 C conflicts, 14 C unaligned remain) - blocker: not-attempted; tools/interlinear_align.py under the PREREG-R9 parameters has now run three times on this leaf and this run changed the labels without moving the figure (rule 3 third-attempt clause: no fourth tuning of that tool), so the next step is a different instrument; next: a per-row eye alignment of the 33 conflict/unaligned C tiles against r10tx/crops with realign/tile_letters.tsv, ~$1.5
+- uncertain gloss letters (C03 "voans sp", C07 s, the abbreviation after "kin"; C09 f/l now looked at once, shape l) - blocker: not-attempted; two machine passes misread this hand and only C09 has had an eye check against the key; next: one Opus pass over r10tx/crops/ rows C03, C07 with realign/tile_letters.tsv, and a second look at C09, ~$1.2
+- verifier on the key (k28 changed value at C twice: a -> b -> e) and the tile-level figure before status.json or depth moves - blocker: not-attempted; a solver may not verify its own key; next: a verifier session with settled/, realign/, AUDIT.md AUDIT 2 and the sorter answers, eye-checking k28, ~$2
+- crib-placement test - blocker: not-attempted; not in this brief; next: the crib-placement test against realign/key.tsv, ~$2
+
+## Escalation (WVO-REALIGN, 7 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174; R9-WVOX concordance FAIL 0/7) and 1069 key (R9-WVOX concordance PASS 8/18)
+- [x] clear-pages: f.23's own interlinear gloss transcribed, reconciled, aligned, verified, re-aligned on settled signs (R9-WVOALIGN, R10-WVOTX, R10-WVOV, WVO-REALIGN)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
+- [x] key-rebuild: key rebuilt per the owner's settled signs and re-aligned on them (WVO-APPLY, WVO-REALIGN)
+- [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair and gloss-row crops and sorter tiles; owner sorted all 258 tiles; C09 gloss letter looked at against the key
+- [n/a] retry: no step has failed that a retry would change
+Verdict: keep going: 4 internal gaps; cheapest next: a verifier on realign/ with an eye check of k28 (~$2), then the C03/C07 gloss letters (~$1.2)

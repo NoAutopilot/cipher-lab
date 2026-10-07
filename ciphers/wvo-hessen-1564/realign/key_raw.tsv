@@ -1,0 +1,44 @@
+value	meaning	n	agree	others
+X01019	z	2	2	
+X01025	n	1	1	
+X01027	o	1	1	
+X01028	h	2	2	
+X01029	l	1	1	
+X01032	r	1	1	
+X01035	o	1	1	
+X01036	m	1	1	
+k01	l	5	4	f:1
+k02	w	6	6	
+k03	t	10	6	i:2,d:1,e:1
+k03-c	a	1	1	
+k05	n	11	11	
+k05-b	p	1	1	
+k06	e	7	4	n:1,o:1,u:1
+k07	r	8	8	
+k08	h	11	9	i:2
+k09	s	14	14	
+k11	c	8	5	h:1,s:1,v:1
+k12	e	6	6	
+k13	i	11	8	k:1,s:1,w:1
+k13-b	k	1	1	
+k13-c	k	1	1	
+k13-d	m	7	6	k:1
+k13-e	b	2	1	k:1
+k14	r	8	8	
+k16	u	11	9	i:1,r:1
+k18	a	6	6	
+k18-b	a	1	1	
+k18-c	p	1	1	
+k19	g	5	4	t:1
+k20	n	13	11	g:1,t:1
+k20-c	o	1	1	
+k22	d	14	14	
+k22-b	o	3	2	e:1
+k23	i	9	5	e:1,s:1,t:1,z:1
+k23-b	a	1	1	
+k24	f	3	3	
+k25	a	3	3	
+k26	e	19	18	n:1
+k27	a	5	5	
+k27-b	o	1	1	
+k28	e	2	2	

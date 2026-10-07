@@ -1,0 +1,259 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+C01	0	@k02	code	k02		w	agrees
+C01	1	@k13	code	k13		i	agrees
+C01	2	@k14	code	k14		r	agrees
+C01	3	@k13-c	code	k13-c		k	single
+C01	4	@k22-b	code	k22-b		o	agrees
+C01	5	@k05	code	k05		n	agrees
+C01	6	@k20	code	k20		n	agrees
+C01	7	@k06	code	k06		e	agrees
+C01	8	@k05	code	k05		n	agrees
+C01	9	@k11	code	k11			null-or-unaligned
+C01	10	@k03-c	code	k03-c		a	single
+C01	11	@k11	code	k11		c	agrees
+C01	12	@k08	code	k08		h	agrees
+C01	13	EL	clear				clear
+C01	14	@k23	code	k23		i	agrees
+C01	15	@k20	code	k20		n	agrees
+C01	16	@k24	code	k24		f	agrees
+C01	17	@k07	code	k07		r	agrees
+C01	18	@k12	code	k12		e	agrees
+C01	19	@k16	code	k16		u	agrees
+C01	20	@k05	code	k05		n	agrees
+C01	21	@k22	code	k22		d	agrees
+C01	22	@k03	code	k03		t	agrees
+C01	23	@k01	code	k01		l	agrees
+C01	24	@k08	code	k08		i	conflict:h
+C01	25	@k11	code	k11		c	agrees
+C01	26	@k08	code	k08			null-or-unaligned
+C01	27	@X01028	code	X01028		h	agrees
+C02	0	@k26	code	k26		e	agrees
+C02	1	@k20	code	k20		n	agrees
+C02	2	@k11	code	k11		v	conflict:c
+C02	3	@k26	code	k26		e	agrees
+C02	4	@k21	code	k21			null-or-unaligned
+C02	5	@k16	code	k16		r	conflict:u
+C02	6	@k03	code	k03		t	agrees
+C02	7	@k14	code	k14		r	agrees
+C02	8	@k18	code	k18		a	agrees
+C02	9	@k16	code	k16		u	agrees
+C02	10	@k26	code	k26		e	agrees
+C02	11	@k05	code	k05		n	agrees
+C02	12	@k05	code	k05		n	agrees
+C02	13	@k03	code	k03		i	conflict:t
+C02	14	@k03	code	k03		t	agrees
+C02	15	@k16	code	k16		v	agrees
+C02	16	@k06	code	k06		o	conflict:e
+C02	17	@k07	code	k07		r	agrees
+C02	18	@k08	code	k08		h	agrees
+C02	19	@k25	code	k25		a	agrees
+C02	20	@k01	code	k01		l	agrees
+C02	21	@k03	code	k03		t	agrees
+C02	22	@k26	code	k26		e	agrees
+C02	23	@k20	code	k20		n	agrees
+C02	24	@k04	code	k04			null-or-unaligned
+C02	25	@k22	code	k22		d	agrees
+C02	26	@k18	code	k18		a	agrees
+C02	27	@k09	code	k09		s	agrees
+C02	28	@k02	code	k02		w	agrees
+C02	29	@k13	code	k13		i	agrees
+C02	30	@k14	code	k14			null-or-unaligned
+C02	31	@X01032	code	X01032		r	single
+C03	0	@k09	code	k09		s	agrees
+C03	1	@k26	code	k26		e	agrees
+C03	2	@k08	code	k08		h	agrees
+C03	3	@k22	code	k22		d	agrees
+C03	4	@k08	code	k08		h	agrees
+C03	5	@k12	code	k12		e	agrees
+C03	6	@k14	code	k14			null-or-unaligned
+C03	7	@k22-c	code	k22-c			null-or-unaligned
+C03	8	@k27	code	k27			null-or-unaligned
+C03	9	@k16	code	k16		v	agrees
+C03	10	@k09	code	k09			null-or-unaligned
+C03	11	@k27-b	code	k27-b		o	single
+C03	12	@k18-b	code	k18-b		a	single
+C03	13	@k06	code	k06		n	conflict:e
+C03	14	@k13	code	k13		s	conflict:i
+C03	15	@k23	code	k23		s	conflict:i
+C03	16	@k05-b	code	k05-b		p	single
+C03	17	@k23	code	k23		z	conflict:i
+C03	18	@k23	code	k23		e	conflict:i
+C03	19	@k16	code	k16		i	conflict:u
+C03	20	@k20	code	k20		t	conflict:n
+C03	21	@k19	code	k19		t	conflict:g
+C03	22	@k06	code	k06		u	conflict:e
+C03	23	@X01025	code	X01025		n	single
+C03	24	@k20	code	k20		g	conflict:n
+C03	25	@k28	code	k28		e	agrees
+C03	26	@k26	code	k26		n	conflict:e
+C03	27	@k13-e	code	k13-e		b	single
+C03	28	@k22-b	code	k22-b		e	conflict:o
+C03	29	@k13-d	code	k13-d		k	conflict:m
+C03	30	@X01035	code	X01035		o	single
+C03	31	@X01036	code	X01036		m	single
+C04	0	@k25-c	code	k25-c			null-or-unaligned
+C04	1	@k02-b	code	k02-b			null-or-unaligned
+C04	2	@k13-d	code	k13-d		m	agrees
+C04	3	@k08-b	code	k08-b			null-or-unaligned
+C04	4	@k26	code	k26		e	agrees
+C04	5	@k20	code	k20		n	agrees
+C04	6	@k20-b	code	k20-b			null-or-unaligned
+C04	7	@k08	code	k08		h	agrees
+C04	8	@k25	code	k25		a	agrees
+C04	9	@k28	code	k28		e	agrees
+C04	10	@k17	code	k17			null-or-unaligned
+C04	11	@k05	code	k05		n	agrees
+C04	12	@k22	code	k22		d	agrees
+C04	13	@k27	code	k27		a	agrees
+C04	14	@k09	code	k09		s	agrees
+C04	15	@k22	code	k22		d	agrees
+C04	16	@k23	code	k23		i	agrees
+C04	17	@k12	code	k12		e	agrees
+C04	18	@k03-b	code	k03-b			null-or-unaligned
+C04	19	@k13	code	k13		k	conflict:i
+C04	20	@k13	code	k13		i	agrees
+C04	21	@k20	code	k20		n	agrees
+C04	22	@k09	code	k09		s	agrees
+C04	23	@k22-b	code	k22-b			null-or-unaligned
+C04	24	@X01027	code	X01027		o	single
+C05	0	@k08	code	k08		h	agrees
+C05	1	@k26	code	k26		e	agrees
+C05	2	@k24	code	k24		f	agrees
+C05	3	@k03	code	k03		t	agrees
+C05	4	@k08	code	k08		i	conflict:h
+C05	5	@k19	code	k19		g	agrees
+C05	6	@k13-b	code	k13-b		k	single
+C05	7	@k07	code	k07		r	agrees
+C05	8	@k18	code	k18		a	agrees
+C05	9	@k05	code	k05		n	agrees
+C05	10	@k11	code	k11		c	agrees
+C05	11	@k13-e	code	k13-e		k	conflict:b
+C05	12	@k02	code	k02		w	agrees
+C05	13	@k22-b	code	k22-b		o	agrees
+C05	14	@k07	code	k07		r	agrees
+C05	15	@k22	code	k22		d	agrees
+C05	16	@k06	code	k06		e	agrees
+C05	17	@k20	code	k20		n	agrees
+C05	18	@k09	code	k09		s	agrees
+C05	19	@k26	code	k26		e	agrees
+C05	20	@k13	code	k13		i	agrees
+C05	21	@k22	code	k22		d	agrees
+C05	22	@k25	code	k25		a	agrees
+C05	23	@k09	code	k09		s	agrees
+C06	0	@k13-d	code	k13-d		m	agrees
+C06	1	@k27	code	k27		a	agrees
+C06	2	@k28-c	code	k28-c			null-or-unaligned
+C06	3	@k05	code	k05		n	agrees
+C06	4	@k12	code	k12			null-or-unaligned
+C06	5	@k13	code	k13		i	agrees
+C06	6	@k14	code	k14		r	agrees
+C06	7	@k22	code	k22		d	agrees
+C06	8	@k03	code	k03			null-or-unaligned
+C06	9	@k23	code	k23		i	agrees
+C06	10	@k12	code	k12		e	agrees
+C06	11	@k27	code	k27		a	agrees
+C06	12	@k28-b	code	k28-b			null-or-unaligned
+C06	13	@k22	code	k22		d	agrees
+C06	14	@k26	code	k26		e	agrees
+C06	15	@k07	code	k07		r	agrees
+C06	16	@k05	code	k05		n	agrees
+C06	17	@k18-b	code	k18-b			null-or-unaligned
+C06	18	@X01019	code	X01019		z	agrees
+C06	19	@k02	code	k02		w	agrees
+C06	20	@k26	code	k26		e	agrees
+C06	21	@k23	code	k23		i	agrees
+C06	22	@k13-d	code	k13-d		m	agrees
+C06	23	@k13	code	k13			null-or-unaligned
+C06	24	@k18	code	k18		a	agrees
+C06	25	@k08	code	k08			null-or-unaligned
+C06	26	@k01	code	k01			null-or-unaligned
+C06	27	@X01028	code	X01028		h	agrees
+C06	28	@X01029	code	X01029		l	single
+C07	0	@k09	code	k09		s	agrees
+C07	1	@k11	code	k11		c	agrees
+C07	2	@k08	code	k08		h	agrees
+C07	3	@k01	code	k01		l	agrees
+C07	4	@k27	code	k27		a	agrees
+C07	5	@k19	code	k19		g	agrees
+C07	6	@k26	code	k26		e	agrees
+C07	7	@k05	code	k05		n	agrees
+C07	8	@k16	code	k16		v	agrees
+C07	9	@k20	code	k20		n	agrees
+C07	10	@k22	code	k22		d	agrees
+C07	11	@k23	code	k23		t	conflict:i
+C07	12	@k23-b	code	k23-b		a	single
+C07	13	@k16	code	k16		u	agrees
+C07	14	@k11	code	k11		s	conflict:c
+C07	15	@k08	code	k08		h	agrees
+C07	16	@X01019	code	X01019		z	agrees
+C07	17	@k18-b	code	k18-b			null-or-unaligned
+C07	18	@k02	code	k02		w	agrees
+C07	19	@k26	code	k26		e	agrees
+C07	20	@k13	code	k13			null-or-unaligned
+C07	21	@k13	code	k13		i	agrees
+C07	22	@k13-d	code	k13-d		m	agrees
+C07	23	@k18	code	k18		a	agrees
+C07	24	@k11	code	k11		h	conflict:c
+C07	25	@k01	code	k01		l	agrees
+C08	0	@k18-c	code	k18-c		p	single
+C08	1	@k16	code	k16		u	agrees
+C08	2	@k14	code	k14		r	agrees
+C08	3	@k19	code	k19		g	agrees
+C08	4	@k13	code	k13		i	agrees
+C08	5	@k06	code	k06		e	agrees
+C08	6	@k07	code	k07		r	agrees
+C08	7	@k12	code	k12		e	agrees
+C08	8	@k20	code	k20		n	agrees
+C08	9	@k13-d	code	k13-d		m	agrees
+C08	10	@k16	code	k16		u	agrees
+C08	11	@k09	code	k09		s	agrees
+C08	12	@k09	code	k09		s	agrees
+C08	13	@k26	code	k26		e	agrees
+C08	14	@k05	code	k05		n	agrees
+C08	15	@k22	code	k22		d	agrees
+C08	16	@k26	code	k26		e	agrees
+C08	17	@k07	code	k07		r	agrees
+C08	18	@k13-d	code	k13-d		m	agrees
+C08	19	@k18	code	k18		a	agrees
+C08	20	@k09	code	k09		s	agrees
+C08	21	@k09	code	k09		s	agrees
+C08	22	@k12	code	k12		e	agrees
+C08	23	@k20	code	k20		n	agrees
+C09	0	@k22	code	k22		d	agrees
+C09	1	@k27	code	k27		a	agrees
+C09	2	@k09	code	k09		s	agrees
+C09	3	@k28-b	code	k28-b			null-or-unaligned
+C09	4	@k09	code	k09		s	agrees
+C09	5	@k13	code	k13		w	conflict:i
+C09	6	@k06	code	k06			null-or-unaligned
+C09	7	@k23	code	k23		i	agrees
+C09	8	@k14	code	k14		r	agrees
+C09	9	@k26	code	k26		e	agrees
+C09	10	@k14	code	k14		r	agrees
+C09	11	@k24	code	k24		f	agrees
+C09	12	@k14	code	k14		r	agrees
+C09	13	@k16	code	k16		u	agrees
+C09	14	@k11	code	k11		c	agrees
+C09	15	@k08	code	k08		h	agrees
+C09	16	@k23	code	k23			null-or-unaligned
+C09	17	@k03	code	k03		t	agrees
+C09	18	@k26	code	k26		e	agrees
+C09	19	@k07	code	k07		r	agrees
+C09	20	@k01	code	k01		f	conflict:l
+C09	21	@k06	code	k06		e	agrees
+C09	22	@k22	code	k22		d	agrees
+C09	23	@k03	code	k03		i	conflict:t
+C09	24	@k21-b	code	k21-b			null-or-unaligned
+C09	25	@k19	code	k19		g	agrees
+C09	26	@k11	code	k11			null-or-unaligned
+C09	27	@k03	code	k03		e	conflict:t
+C09	28	@k03	code	k03		d	conflict:t
+C10	0	@k02	code	k02		w	agrees
+C10	1	@k20-c	code	k20-c		o	single
+C10	2	@k14	code	k14		r	agrees
+C10	3	@k22	code	k22		d	agrees
+C10	4	@k26	code	k26		e	agrees
+C10	5	@k20	code	k20		n	agrees
+C10	6	@k09	code	k09		s	agrees
+C10	7	@k26	code	k26		e	agrees
+C10	8	@k13	code	k13		i	agrees

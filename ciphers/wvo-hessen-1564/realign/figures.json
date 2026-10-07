@@ -1,0 +1,13 @@
+{
+ "C": 192,
+ "CONSISTENT": 22,
+ "C_agree": 159,
+ "C_conflict": 19,
+ "C_unaligned": 14,
+ "M_blank": 13,
+ "M_valued": 42,
+ "aside_badcut": 10,
+ "clear": 1,
+ "key_C": 22,
+ "key_M": 25
+}
