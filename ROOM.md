@@ -10165,3 +10165,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 00:03 | NC-CROI worker | claim: NC-CROI colbert-croissy-london-1668-74 check-solved + premise check, cap 7, box ends 01:13 UTC 7 Oct, for LANE NEWT-C-account-4
 2026-10-07 00:03 | NC-MONL worker | claim: NC-MONL fr4735-monluc-lansac-poland-1573 check-solved + premise check, cap 7, box end 01:13 UTC 7 Oct, for LANE NEWT-C-account-4
 2026-10-07 00:03 | NC-BAUG worker | claim: NC-BAUG clair369-baugy-castille-maurier-1616 check-solved + premise check, cap 7, box end 01:10 UTC 7 Oct, for LANE NEWT-C-account-4
+2026-10-07 00:03 | NC-ENGA worker | claim: NC-ENGA fr15972-england-ambassadors-1595-1608 check-solved + premise check, cap 7, box ends 01:10 UTC 7 Oct, for LANE NEWT-C-account-4
