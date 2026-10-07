@@ -178,7 +178,7 @@ Orange Nassau 1572 cipher Louis of Nassau`, `site:ciphermysteries.com William of
 "dechiffrement" other than this project's own held-key reading -- not found.
 (b) Other solvers' working files: Bourdeau and Aymeloglu trees cloned and grepped (above); neither holds this letter,
 the 1572 table, or a rendering of it -- not found. The held key is this repo's own (jan-van-nassau-1572-75
-key_1572.tsv = orange-nassau-1572 key_nepveu.tsv), and nobody else has run it on this text.
+key_1572.tsv = orange-nassau-1572 key_nepveu.tsv); no other application of it to this text was located (searched as logged here and in AUDIT.md, 7 Oct 2026 -- a search result, not a novelty verdict; corrected by KHF2-VERIFIER).
 (c) Physical neighbours: WVO PDF page 2 (address leaf, 3696x2100) viewed at native resolution, address and right
 edge: the address in the clerk's hand, seal traces and the KHA stamp only; no decipherment, endorsement or slip.
 Page 1 has no interlinear gloss (KH2-D, native crops). Neighbours in the WVO by the same cover names (opmerkingen
