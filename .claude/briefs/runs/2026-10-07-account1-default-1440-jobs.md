@@ -117,7 +117,7 @@ stop there and write what remains. Use the folder's existing native crops and si
 reaches C only if it passes on held-out material per the registration; never lower a code already at C on held-out silence alone (a miss
 on held-out is logged, not a demotion, unless the registration says so). Flag in ROOM for a verifier at the end (no AUDIT.md yet).
 
-## Wave 4 (spawned 16:09 UTC 7 Oct)
+## Wave 4 (spawned 16:08 UTC 7 Oct)
 Wave 3 done 15:49 (COL3 5.07). colbert26 key_f23 changed three times today (DA1-COL +6 C, DA1-COL2 46 ce C->M, DA1-COL3 30 s and
 85 na to C with 85 luy->na); the folder has no AUDIT.md. Intake gate as wave 1 (partial, citation found, exit 0).
 
