@@ -1,0 +1,47 @@
+line	win	pos	sign	gloss	conf	note
+01	01	1	?	y	L	sign cut off at bottom of window, tail only
+01	02	2	m	-	L	left of tick; taken from window edge
+01	02	3	?	-	L	flat dash sign
+01	02	4	Hun	-	L	large hook with minims
+01	02	5	Z	-	M
+01	02	6	Zt	a	M
+01	02	7	pH	i	M
+01	02	8	b	t	M	cross above is t
+01	02	9	^7	re	M
+01	02	10	ba	n	L	partly cut at window edge
+01	03	11	r	e	L
+01	03	12	s	i	L
+01	03	13	p	l	L
+01	03	14	s	l	L
+01	03	15	s	e	L
+01	03	16	f	z	L
+01	03	17	un	&	L	slash after it not counted
+01	04	18	e	p	L
+01	04	19	p	e	L
+01	04	20	b	u	L
+01	04	21	y	t	L
+01	04	22	2	es	L
+01	04	23	8	t	L
+01	04	24	^7	re	M
+01	04	25	w	u	L
+01	04	26	Hun	n	M
+01	05	27	n	i	L
+01	05	28	un	-	L
+01	05	29	od	s	M
+01	05	30	Zt	a	M
+01	05	31	co	un	L
+01	05	32	i	d	L
+01	05	33	i	e	L
+01	05	34	s	s	L
+01	05	35	a	-	L	between
+01	06	36	HZ	s	L
+01	06	37	Zt	a	L
+01	06	38	y	x	L
+01	06	39	k	i	L
+01	06	40	7	n	L
+01	06	41	8	o	L
+01	06	42	^35	y	L
+01	06	43	a	uoy	L
+01	07	44	cc	-	L
+01	07	45	o	-	L
+01	07	46	t	-	L	bar through it
