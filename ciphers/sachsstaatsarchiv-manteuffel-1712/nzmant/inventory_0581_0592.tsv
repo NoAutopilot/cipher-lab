@@ -1,0 +1,13 @@
+# NZ-MANT (7 Oct 2026, LANE LANE-NZ-0914, account 4): eye screen of the Loc. 694/08 frames 0581-0592 not yet seen (0582 0584 0586 0588 0589 0592).
+# frame = URL file number in images/loc694-08-09/frames.tsv (film "Aufnahme Einheit" label = file+1). Already seen before this pass: 0581 0583 0587 0591 (GAPS184), 0585 0590 (R13-MANTSCR).
+# Method: full-size frames fetched once to scratch (not committed), downscaled to 1400 px, read by the worker's own eye; 0588/0589 zoomed to ~1450 px per third of a page. No subagent.
+# Control: 694/08 0511 (ff.409v-410, dense unglossed code groups) at the same 1400 px scale: code groups plainly visible on both pages -> control read.
+# code: y/n; glossed: y/n; range: letter = every value seen <400 (Krauske's table), nomenclator = values >400 seen. Values read at screen/zoom scale are M at best.
+loc	frame	folio	code	glossed	range	codes_seen	note
+694/08	0511	ff.409v-410	y	n	nomenclator	(control)	in-sheet positive control, read as code-bearing at sheet scale
+694/08	0582	f.470	n	n	-	-	blank verso (damaged, "beschaedigt") + letter "a Mr le B. de Manteuffel", Gustrow 17 Xbre 1712, French clear
+694/08	0584	f.471	n	n	-	-	short letter, Berlin 17 Xbre 1712 (Lottum, Schlippenbach), French clear
+694/08	0586	f.473	n	n	-	-	short letter, Berlin 20 Xbre 1712, French clear
+694/08	0588	ff.473v-474	y	y	letter	37 ("Ilgen" above)	Berlin 31 Xbre 1712, otherwise clear; one single code: "de la part de 37" glossed "Ilgen" (Krauske 37 = g; 39/46 carry the Ilgen note)
+694/08	0589	ff.474v-475	y	y	letter	187 1000 run of ~45 groups (33 46 28 54 16 9 22 67 60 51 34 21 66 26 35 10 44 103 1 2 27 15 50 14 ...); singles 39 46 46 ("Ilgen"), 150 ("le Roy de Pol"), 257 ("le Roy de Pr."), 180? ("le Roy de Pol" -- digits 150/180 unsettled at this scale), 11 ("K"), 44, 4, 7	continuation of 0588's letter (f.475 signed); the 3-line run after "le Roy de Suede etoit toujours opiniatre" is unglossed; glossed singles agree with Krauske where read (150, 257, 11=k, 39/46 Ilgen note); highest value 1000 (Krauske "et"); nothing in 381-625
+694/08	0592	(folio not seen)	n	n	-	-	letter end signed Lowenthal, Bayreuth 27 Xbre 1712, French clear; right page blank
