@@ -766,3 +766,12 @@ Brief: `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` "R10-WVHMIN". No 
   folder's sibling 1069 key (8 of 18 shapes, perm p95 3). Recorded only; nothing applied.
 - Subagents: 2 Sonnet calls (one per pass). Vision by this worker: about 12 crop/region reads. Hosts: none.
 
+
+## KH4-C (account 4, 7 Oct 2026): unflagged glossed sibling WVO 1068
+
+- WVO 1068 (Oranje to Willem van Hessen, Brussels, 13 Mar 1563; HSAM Bestand 3II, Nassau-Niederlande, Korr. 1563 f.27r-30v;
+  `01068.pdf`, 5 pp.) has a postscript in cipher on p.2, about 18 lines, with a plain line written above each cipher line
+  ("es wirt auch bei uns fur gewis gesagt das wilhelm von grombach ..."). WVO's remark says "geheimschrift", not "cijfer", so the
+  24 Sept harvest (opmerkingen=cijfer) missed it; 1069 is its answer. Glossed, so a key source for the Orange-to-Hessen direction, not
+  a target. WVO 1130 (21 Feb 1567) is the same kind (a copy with the coded passages solved). Not transcribed (KH4-C brief: survivors
+  only); suggestion: test 1068's sign shapes against key_1069.tsv and the f.23 key (wvo-hessen-1564). Log: keyhunt/2026-10-07-KH4C.tsv.
