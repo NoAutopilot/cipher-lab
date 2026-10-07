@@ -237,3 +237,12 @@ images on disk, no host).
 Requests this pass: none (no network host contacted). No subagents.
 
 **Regrade, 24 Sept 2026 07:23 UTC (LANE R orchestrator, per LANE W's AUDIT.md):** the interlinear clear text is known plaintext on the leaf, so every aligned sign is grade C, not H. build_align.py and decode.json changed; `tools/decode_key.py ciphers/rah-canada-1869 --check` exits 0: **667 signs, C 665, M 2.**
+
+**Keyhunt sibling sweep (7 Oct 2026, KH2-E for LANE KH-2):** RAH's POST search (`resultados_busqueda.do`) now returns
+Anubis 307 to curl. Harvested the OAI-PMH feed instead (ListRecords oai_dc, 138 pages, 13,800 of 24,739 records,
+stopped after two network timeouts), which covers OAI ids 12000-20000 with no gaps (2,563 Isabel II archive items).
+The only titles or descriptions mentioning cipher in 1864-74 are this note (14495) and 15711 (Xiquena, a plaintext
+copy, already `rah-xiquena-1868`). Result: 0 unread siblings at catalogue level. The eight neighbouring González Bravo
+records (14490-14494, 14496-14497, 14499) were not opened. A cipher passage untitled in the catalogue would be
+missed, so an image eye-check of those eight is the remaining cheap step (about USD 1). Rows are in
+`keyhunt/2026-10-07-KH2E.tsv`.
