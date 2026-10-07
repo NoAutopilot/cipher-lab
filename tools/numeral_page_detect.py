@@ -16,13 +16,16 @@ words -- fewer, wider components with tall ascender/descender loops. Per line:
   line score = sep * narrow.
 The unit score is the mean of its top-5 line scores (so a cipher block inside a prose page still counts);
 the image score is its best unit. Higher = more digit/symbol-like.
+--line-max (SA-MP2, 7 Oct 2026): the unit score is instead the single best line score, so a short coded run
+in a prose page (a few digit groups on one line) can rank; it is noisier on tables and ruled forms, so it is a
+ranking for an eye, not a verdict.
 
 Meant to catch: a full or half page of digit groups or symbol rows (a Janssens-style digit grid, the
 Smissaert 209 paired digit rows). Must NOT be relied on for: a single coded line or a code number quoted
 in prose (one line cannot move a top-5 mean), and tables/accounts in figures, which it will rank high too
 (that is why the top candidates go to an eye, never straight to a verdict).
 
-Usage: numeral_page_detect.py IMG [IMG ...] [--width 600] [--tsv out.tsv]
+Usage: numeral_page_detect.py IMG [IMG ...] [--width 600] [--line-max] [--tsv out.tsv]
 Offline test: tools/tests/test_numeral_page_detect.py (synthetic digit page vs synthetic cursive page).
 """
 import argparse
@@ -92,14 +95,14 @@ def line_score(band):
     return float(sep * narrow)
 
 
-def score_image(path, width=600):
+def score_image(path, width=600, line_max=False):
     img = Image.open(path)
     best = 0.0
     for u in units(img):
         ink = binarize(u, width)
         ls = [s for (a, b) in lines(ink) if (s := line_score(ink[a:b])) is not None]
         if ls:
-            best = max(best, float(np.mean(sorted(ls)[-5:])))
+            best = max(best, float(max(ls)) if line_max else float(np.mean(sorted(ls)[-5:])))
     return best
 
 
@@ -107,9 +110,10 @@ def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("images", nargs="+")
     p.add_argument("--width", type=int, default=600)
+    p.add_argument("--line-max", action="store_true", help="score = best single line, not top-5 mean")
     p.add_argument("--tsv")
     a = p.parse_args(argv)
-    rows = [(f, score_image(f, a.width)) for f in a.images]
+    rows = [(f, score_image(f, a.width, a.line_max)) for f in a.images]
     out = open(a.tsv, "w") if a.tsv else sys.stdout
     out.write("image\tscore\n")
     for f, s in rows:

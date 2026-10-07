@@ -49,6 +49,33 @@ def test_digits_beat_cursive():
         assert sc == 0.0
 
 
+def prose_with_one_digit_line(path):
+    """Cursive page with ONE row replaced by separate upright digit glyphs."""
+    cursive_page(path)
+    im = Image.open(path)
+    dr = ImageDraw.Draw(im)
+    y = 70 + 5 * 52 - 10
+    dr.rectangle([40, y - 4, 570, y + 36], fill=235)
+    x = 50
+    for g in range(9):
+        for k in range(4):
+            dr.rectangle([x, y, x + 7, y + 16], outline=20, width=2)
+            x += 12
+        x += 18
+    im.save(path)
+
+
+def test_line_max_ranks_one_digit_line():
+    with tempfile.TemporaryDirectory() as t:
+        a, b = os.path.join(t, "one.png"), os.path.join(t, "cur.png")
+        prose_with_one_digit_line(a)
+        cursive_page(b)
+        assert d.score_image(a, line_max=True) > 1.5 * d.score_image(b, line_max=True), (
+            d.score_image(a, line_max=True), d.score_image(b, line_max=True))
+        assert d.score_image(a, line_max=True) > d.score_image(a)  # one line beats its top-5 mean
+
+
 if __name__ == "__main__":
     test_digits_beat_cursive()
+    test_line_max_ranks_one_digit_line()
     print("ok")
