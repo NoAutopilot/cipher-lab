@@ -1,0 +1,90 @@
+# D4-VILL2 vill2_align.py: tools/interlinear_align.py key on the gloss-in-view f.260r pairs (grade C, the clerk's)
+value	meaning	n	agree	others
+%13	c	2	1	i:1
+%15	b	5	1	d:1,e:1,ssi:1,tgpod:1
+%150	o	1	1	
+%16	n	1	1	
+%18	e	4	1	ndes:1,sat:1,sible:1
+%25	est	1	1	
+%26	e	12	5	en:2,a:1,fdiffe:1,hen:1,n:1,pe:1
+%61	a	2	1	la:1
+%68	i	1	1	
+%69	y	1	1	
+%78	urgnog	1	1	
+%99	g	9	3	a:1,gxeus:1,m:1,n:1,r:1,yoxtzgle:1
+%^16	s	6	2	entq:1,sam:1,sarrord:1,ydessa:1
+%^18	esirer	2	1	fongran:1
+%^20	o	1	1	
+%^21	a	1	1	
+%^253	h	1	1	
+%^26	n	1	1	
+%^27	e	1	1	
+%^35	y	1	1	
+%^99	i	1	1	
+1	d	13	6	a:2,ad:1,e:1,l:1,o:1,r:1
+2	e	13	6	n:2,de:1,g:1,r:1,s:1,t:1
+3	a	10	9	uc:1
+4	e	3	1	h:1,l:1
+5	o	3	1	st:1,y:1
+6	l	11	4	e:2,de:1,en:1,ma:1,t:1,u:1
+7	e	10	2	a:1,en:1,gr:1,l:1,n:1,nt:1,us:1,x:1
+8	o	21	7	i:2,is:2,r:2,a:1,b:1,e:1,fi:1,g:1,l:1,n:1,s:1
+9	p	9	2	cf:1,ed:1,he:1,l:1,n:1,pe:1,z:1
+Ch	p	2	1	u:1
+Cx	r	5	2	et:1,n:1,ur:1
+HZ	ez	3	1	n:1,s:1
+Hr	a	1	1	
+Hu	m	3	3	
+Hun	n	9	4	a:1,e:1,en:1,re:1,rh:1
+Z	s	11	9	d:1,f:1
+Z.	e	4	1	n:1,r:1,re:1
+Zt	t	13	5	a:3,p:2,n:1,s:1,zz:1
+^3	l	1	1	
+^7	re	12	6	r:2,e:1,pr:1,t:1,zl:1
+a	s	22	19	d:1,e:1,en:1
+ab	b	9	2	s:2,an:1,de:1,l:1,r:1,re:1
+b	t	27	9	u:8,n:4,d:1,e:1,et:1,h:1,po:1,r:1
+b.	d	1	1	
+ba	n	3	1	t:1,u:1
+c	i	4	1	na:1,q:1,s:1
+cc	n	4	3	u:1
+co	u	3	2	r:1
+d	r	4	4	
+d.	qs	1	1	
+do	o	5	3	du:1,y:1
+e	p	11	10	r:1
+f	o	6	3	z:3
+ff	r	10	6	i:1,o:1,s:1,t:1
+fh	y	7	2	au:1,e:1,l:1,t:1,z:1
+g	p	18	4	d:2,o:2,t:2,f:1,g:1,l:1,le:1,ni:1,ro:1,s:1,sh:1
+i	d	8	3	a:2,n:2,u:1
+is	de	5	2	e:1,p:1,re:1
+i~	no	1	1	
+k	n	6	6	
+ls	e	7	3	d:2,i:1,s:1
+m	u	10	5	l:2,an:1,i:1,x:1
+mt	u	8	5	l:2,e:1
+n	i	3	2	un:1
+o	e	20	8	a:3,d:1,ff:1,h:1,n:1,o:1,s:1,t:1,u:1,us:1
+od	s	15	15	
+p	e	20	10	i:5,l:2,eb:1,t:1,z:1
+pH	l	8	3	ai:1,e:1,i:1,p:1,s:1
+q	e	16	14	a:1,f:1
+qo	h	3	2	r:1
+r	e	13	11	f:1,r:1
+s	i	31	13	e:7,l:3,o:3,a:1,pr:1,s:1,sd:1,t:1
+s.	e	3	2	n:1
+sin	n	1	1	
+ss	e	4	2	en:1,le:1
+t	n	4	1	s:1,t:1,y:1
+tt	t	6	3	a:1,d:1,h:1
+u	r	11	8	c:1,d:1,te:1
+un	i	9	4	et:1,o:1,rh:1,tm:1,u:1
+ur	t	1	1	
+ut	di	2	1	he:1
+v	r	4	3	b:1
+w	d	2	1	re:1
+x	a	5	4	r:1
+x4	g	5	2	t:2,i:1
+xff	r	4	2	o:1,u:1
+y	r	16	5	t:3,a:2,e:1,et:1,i:1,ma:1,n:1,o:1

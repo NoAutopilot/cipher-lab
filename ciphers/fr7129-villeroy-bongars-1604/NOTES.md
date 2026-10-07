@@ -656,7 +656,7 @@ folder. Subagents: 8 Sonnet.
 Waits on nobody outside the repository: the M9 hold-out gate (0.340 vs 0.70 bar) means the block is on
 instrument choice, not access, since 27 Sept 2026 (VB-KEY).
 
-- Transcribe f.260 lines with the clerk's decipherment in view, sign-aligned by one reader and checked by a second -- a different instrument than the two blind passes tried. L. (7 Oct 2026, D4-VILL: not started -- Gallica answered 503 to the f.260r native image and info.json at 13:5x UTC; retry on a later day, nothing else blocks it.)
+- [retired 7 Oct 2026, D4-VILL2: instrument = Sonnet reader + Sonnet checker with the clerk's gloss in view on 2x windows; P1 0.321 / P2 0.453 vs 0.70, see section below] Transcribe f.260 lines with the clerk's decipherment in view, sign-aligned by one reader and checked by a second. Next instrument (untried): the owner's sign sorter on the f.260 window crops (`tools/sign_sorter.py`), since the reader/checker split exceeds a tenth (40% of rows changed) -- CLAUDE.md Usage 6 makes the next pass a person's. L.
 - [done 6 Oct 2026, R12D-VILL: no signal at this coverage, see section below] Decode f.268 restricted to key v3's high-confidence cells only (23 confirmed, cells attested by 2+ occurrences such as s=i, p=i, o=e, r=e, m=u, b=u, e=p, 26=en), leaving the rest as `[MARK]` -- a partial, honestly-graded reading testable now with no new material. M.
 - [done 7 Oct 2026, D4-VILL: no better -- 0.294 held out vs VB-KEY's 0.340, families still split; see section below] Re-run the known-plaintext alignment through `tools/interlinear_align.py` (the general shared tool) on the same f.260 pairs, instead of the private `kp_key_v3.py`, to check whether the shared tool's hard-EM separates the g/9/y/f/u/d families any better. M.
 
@@ -748,3 +748,51 @@ unchanged and is the genuinely different instrument: f.260r transcribed with the
 one checker (first "While waiting" bullet / READ2-RELABEL), ~$8-10, needing only Gallica to answer; no other blocker.
 
 Requests: gallica.bnf.fr 3 (manifest timeout, 2 x 503), nothing saved. Subagents: 0.
+
+## Gloss-in-view transcription of f.260r (D4-VILL2, 7 Oct 2026): hold-out bar NOT met, instrument retired
+
+Account 4, LANE DEFAULT-account-4-20261007-1335; brief job D4-VILL2 (the transcription part of READ2-RELABEL that D4-VILL
+could not run). Status unchanged: `blocked`. No f.268 decode, no reading, no grades on f.268. Pre-registered in
+`PREREG-D4-VILL2.md` (pushed 8d93bf8bb; deviation appended and pushed 13dca4418, both before any score).
+
+**Material.** Gallica answered at 14:45 UTC. `python3 tools/gallica_folio.py btv1b8555834s --folio 260` -> canvas f525
+'260r' 3725x5914. Lower block fetched once: `python3 tools/iiif_lines.py --ark btv1b8555834s --canvas 525 --region
+450,2280,3200,2250 --out ciphers/fr7129-villeroy-bongars-1604/sibling/f260r_crops --prefix f260 --debug --max-width 1700
+--overlap 120`, recut `--image <src> --region 0,105,3200,2145 --prefix p260 --lines-per-crop 2` into 13 gloss+cipher
+bands (overlay `p260_lines_debug.jpg` checked: each band = one gloss row + its cipher row; L01-L12 = VB-KEY's lines 1-12,
+L13 one more). Then `python3 sibling/f260r_crops/cut_windows.py`: 7 windows per band, 520 px, 80 px overlap, red seam
+tick, enlarged 2x (`sibling/f260r_crops/win/`, 91 windows). Folder `sibling/f260r_crops/` 6.6 MB, committed.
+
+**Passes.** First reader pair on the 1700 px half-line crops: both calls said they spread the gloss proportionally
+instead of reading it per sign -- not the instrument; kept in `sibling/passes_r2/v1_proportional/`, never scored.
+Reader v2 (3 Sonnet calls, every window opened, gloss straight above each sign) -> `passes_r2/R_L01..13.tsv`; checker
+(3 Sonnet calls, same windows, reader TSV in view, no key) -> `passes_r2/C_L01..13.tsv`. Checker verdicts over 644 reader
+rows: ok 386, fix 233, ins 14, del 8, unsure 3 -- **40% of rows changed**, mostly one-sign gloss shifts. My
+reconciliation unit (taking the checker's rows; one spot check of w01_02 against ink x-positions): the checker's
+Zt=a, pH=i, b=t, ^7=reu agree with the page there. Reconciled: 636 signs over 13 lines (`sibling/pairs_r2_f260.tsv`).
+
+**Key and hold-out** (`python3 sibling/vill2_align.py run`; `--check` exit 0; key `sibling/key_r2_f260.tsv`, grade C,
+the clerk's values, a working key, not a key of record):
+```
+P1 M9 hold-out (VB-KEY 28 obs)          : 473/1475 = 0.321; 20 class-shuffled keys mean 0.245 sd 0.013 max 0.273; z 5.74; gate 0.70 NOT met
+P2 new-transcription leave-one-line-out : 346/763  = 0.453; 20 class-shuffled keys mean 0.242 sd 0.016 max 0.274; z 13.15; gate 0.70 NOT met
+shared-tool --shuffle 20 (new pairs)    : CONSISTENT real 21; control mean 10.55, p95 15, max 15; p = 0.048
+for comparison: VB-KEY hard-EM 0.340 (27 Sept), D4-VILL shared tool on the blind pairs 0.294 (7 Oct)
+```
+**Families** (direct read-off of the checked gloss per sign, count and majority share): ff 10 r (0.90), f 6 z (0.83),
+^7 12 re (0.67), 99 9 g (0.67), u 13 r (0.54), y 17 r (0.47), Zt 14 a (0.43); still spread: g 18 (0.22), 9 9 (0.22), 8 24
+(0.25), 7 12 (0.25), ls 8 (0.25), 1 13 (0.31), 2 13 (0.31), 6 13 (0.31). So ff = r and ^7 = re firm up; the g/9 family,
+the single digits and the d family stay split over four or more values per sign under gloss-in-view labels too.
+
+**Rule 3 (third-attempt clause).** This WAS the genuinely different instrument the NOTES named (transcription with the gloss
+in view, reader + checker), and it fails its own gate on both tests. P2 rose against every earlier figure (0.453, z 13),
+but a sign that reads four or more clerk values across lines is either several shapes our inventory merges or a reading
+error the 40% reader/checker split cannot settle; a model pass cannot tell which. Logged **[retired]: Sonnet
+gloss-in-view reader + checker for "the f.275 key via the f.260 clerk gloss"** at this transcription quality -- not a key
+negative, not a design negative. A further model pass at the same windows is not the next step. Untried, different
+instrument: the owner's sign sorter on the f.260 window crops (CLAUDE.md Usage 6: a reader split above a tenth and an
+unsettled inventory send the next pass to a person), which would separate the g/9/d/digit shapes before any re-alignment.
+Status stays `blocked` (the Tomokiyo-paper gap, line 3).
+
+Requests: gallica.bnf.fr 2 (manifest via gallica_folio, one native region), no 403/429. Subagents: 8 Sonnet (2 unused
+proportional readers, 3 readers, 3 checkers).
