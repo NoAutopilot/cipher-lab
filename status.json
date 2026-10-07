@@ -3972,6 +3972,89 @@
       "depth_by": "R10-DEC2678V",
       "depth_date": "6 Oct 2026",
       "decode_status": "Partially decrypted"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, AM-ECKV)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D4",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "AM-ECKV (account 2)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Cipher No. 2 copy of Halleck to Banks and Steele, 30 Apr 1864 (N2-L)",
+      "grade": "N1 (plaintext in print)",
+      "line": "The Cipher No. 2 copy of Halleck's 30 April 1864 order to Banks and Steele reads, with the period book, to the text printed in the Official Records.",
+      "gap": "n/a: the order is printed in OR I/34 pt 3 p.358",
+      "phrases": [
+        "Huntington mssEC 19 p.61, Buckley (No 2), 30 Apr 1864"
+      ],
+      "document_id": "Huntington mssEC 19 p.61, N2-L (Halleck to Banks and Steele, 30 Apr 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.61, N2-L (Halleck to Banks and Steele, 30 Apr 1864)"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "13/13 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "2f2e7308c",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, AM-ECKV)' section 3",
+      "depth_sentence": "Halleck orders that no troops be withdrawn from the operations against Shreveport and on the Red River, which are to continue under the senior officer in command until further orders.",
+      "depth_check": "OR I/34 pt 3 p.358 prints the same order; O9-AE twin under key-no9.md; decode_no2.py --check re-derived by the verifier",
+      "depth_note": "code words H 13; plain words clear, ungraded"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, AM-ECKV)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D4",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "AM-ECKV (account 2)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Quartermaster-General to Canby, 11 June 1864, the Vicksburg and Shreveport gauge (N2-M)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text of this telegram located in OR I/34 pt 4, OR III/4, Google Books or the Huntington record (searched 7 Oct 2026).",
+      "gap": "Meigs letter books (LoC) and NARA RG 92 copies unread, so not N4; SO-ECKERT-N2M queued",
+      "phrases": [
+        "Huntington mssEC 19 p.90, Kimber, Washn June 11 1864"
+      ],
+      "document_id": "Huntington mssEC 19 p.90, N2-M (QMG to Canby, 11 June 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.90, N2-M (QMG to Canby, 11 June 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "13/13 code words H (10 message, 3 service line)",
+      "unresolved_spans": "none among the code words; the key row for the signature word carries the book's own [?], fixed in context by OR I/34 pt 4 pp.424-425",
+      "reading_version": "342df8ee9",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, AM-ECKV)' section 3",
+      "depth_sentence": "On 11 June 1864 the Quartermaster-General telegraphs Canby at Vicksburg that he cannot find the gauge of the Vicksburg and Shreveport Railroad and asks what it is.",
+      "depth_check": "OR I/34 pt 4 pp.424-425 (Meigs to Canby 17 June, 'telegraphed you twice ... the gauge'; Canby's 24 June reply); page image re-read and decode_no2.py --check by the verifier",
+      "depth_note": "code words H 13; 'Sleeve port' is a clear-word spelling, not a cipher token"
     }
   ],
   "lanes": [

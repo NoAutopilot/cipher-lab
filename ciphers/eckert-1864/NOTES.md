@@ -635,3 +635,10 @@ does not print this telegram (searched by phrase and every 11 June date line); i
 the QMG reading of Burglar -- context corroboration, no token raised to C. Other volumes and the Meigs letter books not
 searched; a search result only, no novelty claimed. `python3 decode_no2.py --check` exit 0. Requests:
 hdl.huntington.org 2 (item info, image), archive.org 1, all 200.
+
+## AM-ECKV (7 Oct 2026, account 2, verifier, for LANE LANE-AM-0914): N2-L and N2-M carried into AUDIT.md
+
+Rule 10 propagation for the two entries above. decode_no2.py --check re-derived (exit 0), 13 + 13 H against key-no2.md,
+p.90 image re-read. N2-L **N1** (plain printed OR I/34 pt 3 p.358), D4; N2-M **N3** (not located in OR I/34 pt 4, OR III/4,
+Google Books, the Huntington record; Meigs letter books and NARA RG 92 unread), D4, key period; status.json rows added;
+SO-ECKERT-N2M queued. See AUDIT.md "## AUDIT (propagation, AM-ECKV)".

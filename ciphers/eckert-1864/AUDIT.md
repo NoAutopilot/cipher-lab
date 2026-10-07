@@ -1074,3 +1074,64 @@ E5 N4**. Reply: the Huntington note of 24 Sept 2026 (outreach/huntington-eckert-
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **Huntington mssEC 19 p.49, E4 (Fox to Butler, 21 Apr 1864)**: **D4** (Decrypted; outward "deciphered"), 100.0% (code words E4 H 11, E5 H 20; plain words are clear, ungraded). Check: period cipher book mssEC 41 (H) for every code word; second ledger copy mssEC 25 pp.77/79; blind second reader (96% token agreement) and decode.py --check. Sentence: "Fox asks Butler to block the channel at Roanoke Island against the ram, and Meigs tells Butler that 4,000 men rather than three regiments are here for Fort Monroe, with 1,000 cavalry horses at the depot."
+
+## AUDIT (propagation, AM-ECKV)
+
+Verifier AM-ECKV (account 2, for LANE LANE-AM-0914), 7 Oct 2026, 10:54-11:00 UTC by `date -u`; a separate session from
+AM-ECK64N2 and AM-ECK64K, the two solvers. Scope: the two Cipher No. 2 entries reading-no2.md gained after every earlier
+section of this file was written (rule 10 propagation, flags of 10:21 and 10:39 UTC in ROOM.md). Nothing else decoded.
+
+### 1. Re-derivation (rule 7)
+- `python3 decode_no2.py --check` from a fresh clone of origin/main: "reading-no2.md is current", exit 0.
+- Each code word of both entries checked by script against key-no2.md (word, value, grade, book page): N2-L Hunter,
+  Ogden, Reliance, Lapland, Nutmeg x2, Crowd, Wharf, Altar, Wafer, Prospect, Wiley, Lady = **13 H**; N2-M Hannah,
+  Hawkins, Farmer x2, Tulip, Talbot, Holly, Warner, Stanhope, Wiley, Burglar, Famish, Mastiff = **13 H** (10 in the
+  message, 3 in the post-signature service line "use Farmer Famish Mastiff for Can"). No value differs from the solvers'.
+- Image: mssEC 19 p.90 (pointer 8982) fetched once at 2400 px (scratch), crop step `tools/iiif_lines.py --image
+  p8982.jpg --region 180,1140,2040,640 --centres 60,160,260,360,460,560 --lines-per-crop 2` (3 crops), read by this
+  session: every word of the N2-M block in ciphertext-no2.txt agrees (Hannah, Hawkins, Farmer, tulip, talbot, Holly,
+  "Sleeve port", warner, Stanhope, wiley, Burglar, Farmer Famish Mastiff, "for Can"). p.61 (N2-L) not re-fetched: its
+  13 tokens are each fixed independently by O9-AE's reading and the OR print of the same order.
+- Caveat carried forward: the key row for Burglar reads "Quarter[?] Master General" with the book's own [?]; the
+  QMG value is corroborated in context (below), not by the book alone.
+
+### 2. Search log (7 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| OR ser. I vol. 34 pt 4 (IA warofrebellion344unit, djvu full text, whitespace-normalised) | "find the gauge", "what is it", every "gauge", every "June 11, 1864" date line (44), the three Washington 11 June items read | not printed. Washington 11 June: Halleck to Canby 4 p.m. (officers), G.O. 210, Meigs to Allen (saw-mills for Canby). Meigs to Canby 17 June 1864 1.30 p.m. prints "I have telegraphed you twice to inform me of the gauge"; Canby to the QMG 24 June gives it |
+| OR ser. III vol. 4 (IA warofrebellionco0004genf, djvu full text) | "find the gauge"; "gauge" near Vicksburg/Shreveport/Canby | no hit |
+| OR ser. I vol. 34 pt 3 p.358 (via reading-no9.md, O9-AE) | N2-L's order | printed word for word (Halleck to Banks and Steele, 30 Apr 1864, 10.30 p.m.) |
+| Google Books API (key, country=US) | "cannot find the gauge"; "can not find the gauge"; "find the gauge of the Vicksburg"; "gauge of the Vicksburg and Shreveport" Meigs Canby | no Civil War hit for the first three; the fourth returns only OR (1891), the 17-24 June Meigs/Canby exchange |
+| Huntington CONTENTdm item info, pointer 8982 | every metadata field | volunteer transcription of the ledger text (code words in clear form, undecoded); keywords tel178 "Shreveport"; no decoded field, no gauge/QMG reading |
+| Earlier families of this file (Zooniverse Talk, project blog, solver repositories, open indexes; 20-26 Sept) | not re-run for this entry | no decoded field anywhere on the project as of those passes |
+| Meigs letter books (LoC), NARA RG 92/107, M504 | not reachable as text | unread (as for E5) |
+Requests: hdl.huntington.org 2 (image, item info), archive.org 3 (two djvu texts, one advancedsearch), googleapis.com 4; all 200.
+
+### 3. Classification
+- **N2-L** (mssEC 19 p.61, Buckley "(No 2)", Halleck to Banks at New Orleans with a copy to Steele, 30 Apr 1864, 10 pm):
+  **N1**, key `period` (key-no2.md from Cipher No. 2, mssEC 47), text `known`. Its plain is O9-AE's order, printed in OR
+  I/34 pt 3 p.358; our reading is an independent re-decipherment of a second cipher copy. Safe sentence: "The Cipher No. 2
+  copy of Halleck's 30 April 1864 order to Banks and Steele reads, with the period book, to the text printed in the
+  Official Records." Unsafe: any wording that the order's content was unknown.
+  Depth **D4**, 100% (13/13 code words H; plain words clear), check: OR print of the same order (non-statistical),
+  O9-AE twin under key-no9.md, decode_no2.py --check re-derived here. Sentence: "Halleck orders that no troops be
+  withdrawn from the operations against Shreveport and on the Red River, which are to continue under the senior officer
+  in command until further orders."
+- **N2-M** (mssEC 19 p.90, Kimber, Washington to Canby at Vicksburg, 11 June 1864, 1 PM, signed with the QMG code word):
+  **N3**, key `period`. No prior plaintext or decipherment located after the search above; the OR prints the 17 June
+  sequel that mentions two earlier gauge telegrams, not this one. Not N4: the Meigs letter books and NARA RG 92 copies,
+  the principal places a QMG telegram would be filed, are unread. The clear words ("I can not find the gauge ... what is
+  it") have been public on the volunteer transcription since 2018, as for E4/E5. Safe sentence: "Read at grade H with
+  the period Cipher No. 2 book; no prior decipherment or printed text of this telegram located in OR I/34 pt 4, OR III/4,
+  Google Books or the Huntington record (searched 7 Oct 2026)." Unsafe: "first", "unpublished", "never printed".
+  Depth **D4**, 100% (13/13 H; "Sleeve port" = Shreveport is clear-word spelling, not a cipher token), check: OR I/34
+  pt 4 pp.424-425 (Meigs to Canby 17 June, "telegraphed you twice ... the gauge") and Canby's 24 June reply to the QMG
+  (non-statistical, fixes Burglar = QMG in context), image re-read and decode_no2.py --check here. Sentence: "On 11 June
+  1864 the Quartermaster-General telegraphs Canby at Vicksburg that he cannot find the gauge of the Vicksburg and
+  Shreveport Railroad and asks what it is."
+- SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E4E5 quotes no N2 counts, unchanged; new row **SO-ECKERT-N2M** for N2-M (N3),
+  prompt second-opinions/PROMPT-chatgpt-n2m.md. No row for N2-L (N1).
+
+### 4. Postmortem
+No over-claim found: reading-no2.md and NOTES.md say "a search result only, no novelty claimed" for N2-M and tie N2-L to
+O9-AE's print. The gap was propagation only (two entries had no AUDIT class); closed here.
