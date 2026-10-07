@@ -143,3 +143,21 @@ the DECODE images D4-COST left on disk or one DECODE browser login, crop command
 the registered q rule passes) enter key.tsv at C with occurrences cited; then re-score R1166 P4's PREREG decode gate (C coverage vs 0.80)
 with the updated key and report the number. Update Remaining gaps / Escalation; `tools/gaps_check.py costabili-modena-1491`. Report what was
 found and where it was not found; do not classify novelty.
+
+## Wave 4 (spawned 14:4x UTC 7 Oct). D4-VP2 done 14:30 (3.05; N2-AZ..BF all N1), D4-COST2 done 14:28 (3.26). Gallica manifest 200 at 14:42.
+
+### D4-VILL2 -- fr7129-villeroy-bongars-1604 READ2-RELABEL, the transcription part (solver, Opus; cap 8, box 90 min)
+Same job as D4-VILL above, which ran the disk-only part (PREREG 956d9a6c8; shared-tool hold-out 0.294) and stopped on Gallica 503. Do only
+what it could not: fetch f.260r native, crop (command pasted, overlay checked), reader pass with the clerk's decipherment in view (2 half-page
+calls), checker pass (2 calls), one reconciliation unit; then `tools/interlinear_align.py` on the new sign-aligned pairs and the M9 hold-out
+under a fresh PREREG (pushed before scoring; same metric and 0.70 bar). If Gallica fails again: one retry after a pause, then stop and say so.
+Rule 3 third-attempt clause: this is the "different instrument" (transcription with the gloss in view) the NOTES name; if it fails, log the
+instrument as [retired] for this hypothesis.
+
+### D4-COST3 -- costabili-modena-1491 R1167 P2 vs clear copy P6, x-marker rule registered (solver, Opus; cap 3.5, box 45 min)
+Separate session from D4-COST and D4-COST2. D4-COST2's named next step (ROOM 14:28): pre-register the x-marker rule (the dot by x merged with
+its sign, fixed before any score) plus the PREREG-D4-COST2 sigla table, statistic, gate and shuffle control unchanged; then score R1167 P2
+against its matching part of P6 (new material, never scored), both reader passes. If condition (a) passes, TT = s, Z = t (and q per its
+registered rule) enter key.tsv at C with occurrences cited, and the R1166 P4 coverage gate is re-scored (report the number vs 0.80). If it
+fails, rule 3 third-attempt clause: log the alignment instrument for these signs as [retired] at this transcription quality. Update Remaining
+gaps / Escalation; `tools/gaps_check.py costabili-modena-1491`. Report what was found and where it was not found; do not classify novelty.
