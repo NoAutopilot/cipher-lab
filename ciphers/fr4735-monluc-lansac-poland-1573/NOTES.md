@@ -146,3 +146,50 @@ line 1. NA-MONL marked that insertion as exploratory, and the same is said here.
   antt-linhares-chave and rah-canada-1869, with and without the change).
 - **Depth candidate:** D1 at most on this leaf (scattered words, e.g. "a la roche[lle] que pour empesche" on cells already
   confirmed). The leaf's own gloss is the plaintext, so nothing here is a reading of unglossed text.
+
+## MONLUC-KEY test 2: c268 (f.138) lines 1-5 with the published table (7 Oct 2026, Opus, for the account-3 orchestrator)
+Scope: one leaf, the first 5 cipher lines only (~175 signs of the page's ~1,050), priced as 3 units (2 blind passes and the
+reconciliation) plus one clear-text reading of c270. Crops: the native region `src_ark_..._f268_700_1500_2800_650.jpg` (one
+Gallica fetch). `tools/iiif_lines.py --follow-slope` split this slanted page wrongly (it doubled two lines and missed one; debug overlay
+checked), so the five bands were cut by a manual shear (a = -0.032), and the method is recorded in images/manifest.json. c270: region
+500,1050,3050,1300 cut into 4 bands. Gallica requests this pass: 2 overviews + 2 info/region, at least 1.5 s apart, plus one reset retried once.
+- **Transcription.** passes/c268_passA.tsv and c268_passB.tsv are blind Sonnet passes against keysheet_monluc1_ids.png, and agree on
+  130/177 positions (73%; pass B's L03 stops after 18 signs). Pass A is the base, and every position pass B does not match is conf M
+  (ciphertext_c268.tsv). 27% disagreement is above TRANSCRIPTION.md's one-tenth line, so a further machine pass is not the next
+  step (see gaps).
+- **Decode** (`score_c268.py`, `--check` for rule 7; reading_c268.txt, table unchanged, W: words dropped as nulls). L01 reads
+  "lesperuiteursde [mihil] [Cur] quinpespargnenulhon", and pass B alone gives the same line. Not graded, and no reading is claimed:
+  the gate below cannot license one.
+- **Judge (fr16 corpus, spec key 'fr').** The decode FAILs: language -1.426 vs real_p05 -0.901 (null_p99 -1.799), word cover 0.84 vs min 0.5
+  (pass). **Shuffled-decode control** (same tokens shuffled, same key, 100 draws): 0/100 PASS, best language score -1.749, so the
+  decode is above every shuffle. **Positive control (calibration):** the f.86 decode with the same table, a decode the leaf's own gloss
+  confirms (0.640 vs shuffle max 0.347), scores -1.864, *below* null_p99, and FAILs; the f.86 gloss itself PASSes (-0.894). So
+  at N about 150-170 and this transcription noise the judge does not recognise a decode known to come from the right key:
+  **the judge is a non-test for this key at this N** (rule 3, the ZX-DEC349 and positive-control paragraphs). The c268 FAIL is
+  "judge cannot decide", not a negative. What remains is control-backed: c268 decodes more French-like than all 100 of its own
+  shuffles, and the published table reads it as French at least as well as it reads the glossed f.86.
+- **f.139 (c270) is not the decipherment of these lines.** The c270 reading (c270_text.txt, one blind pass, low confidence) aligned
+  against the c268 decode gives 0.385 vs shuffle mean 0.357, p95 0.391: no match. c270 begins with the subscription "...De Varsovie
+  ... d'avril 1573" closing the f.138 letter, then clear prose about Pybrac, Bellievre, the Admiral's cause and "la conspiraon", so it reads
+  as the letter's clear continuation. Whether any later leaf carries the decipherment is untested.
+- **Stop.** Per the brief, the run stops at the first failed control: the judge's positive control. Depth candidate: D1 at most
+  ("fragments read" shape: "qui n'espargne(nt) nul ho[mme]" is one decode line, unconfirmed by any gloss).
+
+## Remaining gaps (MONLUC-KEY, 7 Oct 2026)
+Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against its own gloss, and c268 lines 1-5 (~175 signs) decoded but ungraded because the judge's positive control fails at this N.
+- K01/K12, K07 and K14 look-alikes (f.86: K07 faces t 7, g 5; K14 faces s 7, p 3; K01 faces n 8) - blocker: not-attempted; one look at native single-sign crops of each instance against the key sheet is untried; next: crop the K01/K07/K14 instances of c172 L02-L04 at native size and compare the forms, ~$1
+- c268 transcription noise (27% pass disagreement, above the 10% line) - blocker: not-attempted; the next pass is a person's in the sign sorter, per TRANSCRIPTION.md; next: tools/lookalike_pass.py on c268 passes A/B, then the sorter's focus.tsv for the owner, ~$1
+- rest of c268 (lines 6-30), c264, c258 and f.210 (Cipher 2) - blocker: not-attempted; to be worked once the look-alikes are settled; next: the same 3-unit protocol per 5-10 lines with the judge calibrated at the larger N, ~$3 per leaf
+- a judge that can see this key at short N - blocker: not-attempted; the positive control fails at N~150; next: judge the c268 decode at N >= 500 (lines 1-15) and re-run the f.86 calibration, or use a gloss-free C-grade test (a decipherment leaf), ~$3
+- in-volume decipherment of ff.132-138 - blocker: not-attempted; f.139 opening tested and not matched (0.385 vs p95 0.391); next: look at ff.140-141 and the items 17/18/112-120 decipherment leaves for a Monluc 28 Apr text, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80 - blocker: not-attempted; carried from NC-MONL2 and still unlooked; next: one look each, ~$1.5
+
+## Escalation (MONLUC-KEY, 7 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared this pass
+- [ ] clear-pages: f.139 opening tested against c268 lines 1-5, no match; the remaining clear leaves untested; planned step: ff.140-141 look
+- [x] known-keys: Tomokiyo's Cipher 1 table applied to f.86 (per cell, 15 confirmed vs shuffle p95 3) and to c268 lines 1-5
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
+- [ ] key-rebuild: corrections from the f.86 gloss failed the held-out gain gate (1 line of 3); planned step: after the look-alike image check
+- [ ] image-check: native single-sign crops of the split cells untried; planned step: the first gap above
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 6 internal gaps; cheapest next: native single-sign crops of the K01/K07/K14 instances on f.86, ~$1

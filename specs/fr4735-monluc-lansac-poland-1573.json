@@ -33,6 +33,15 @@
    "control": "same tokens shuffled (pooled), same key/gloss/alignment, 200 draws: mean 0.255, p95 0.279, max 0.313; target beats all 200 (p<0.005)",
    "verdict": "PASS (known-answer): the published table reads this leaf well above shuffle; ceiling is set by the gloss covering only 96 of 147 decoded letters -- the rest of line 2 decodes to the clear line 1 above it ('...a la roche[lle] que pour empesche'); exploratory (post hoc) gloss with line 1 inserted: 0.640 vs control max 0.347",
    "cost": "read from get_session by the orchestrator"
+  },
+  {
+   "date": "7 Oct 2026",
+   "by": "MONLUC-KEY (Opus, for the account-3 orchestrator)",
+   "test": "2 (scoped). Published table (key.tsv unchanged) on c268 (f.138) cipher lines 1-5, ~175 signs, 2 blind passes (73% agree), judged with fr16; c270 compared first",
+   "target": "judge FAIL: language -1.426 vs real_p05 -0.901, null_p99 -1.799; word cover 0.84 (pass). c270 alignment 0.385",
+   "control": "shuffled-decode: 0/100 PASS, best -1.749 (target above all). c270 shuffle mean 0.357, p95 0.391. Positive control: the f.86 decode (gloss-confirmed) scores -1.864 and FAILs, so the judge is a non-test for this key at N~150-170",
+   "verdict": "judge cannot decide (positive control fails); c268 decodes above every shuffle; f.139 is not the decipherment of these lines. Next: settle the K01/K07/K14 look-alikes on native sign crops, then the owner's sign sorter if passes still split >10%",
+   "cost": "read from get_session by the orchestrator"
   }
  ]
 }

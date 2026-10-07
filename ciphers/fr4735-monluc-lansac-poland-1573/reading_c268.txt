@@ -1,0 +1,6 @@
+# c268 (f.138) first 5 cipher lines, Tomokiyo Monluc Cipher 1 table, pass A base; _ = unkeyed sign; W: words dropped. Not graded: see NOTES.md.
+L01	lesperuiteursdequinpespargnenulhon
+L02	eurlara_elarepuuauionnila_onp_ien_enu
+L03	poplonfaiuparlerleropnedalnelar_quin
+L04	upenpninlaiseunoneauaenueadrequilesu
+L05	eeopilauirenunelaynex_lupionqqil
