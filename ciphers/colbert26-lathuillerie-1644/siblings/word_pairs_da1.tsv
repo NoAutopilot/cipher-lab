@@ -1,0 +1,330 @@
+line	word	first	last	conf	note	groups
+50a01	Espag(ls)	0	1	ok		56 97
+50a01	ont	2	3	?		24 23
+50a01	bien	4	5	?		31 67
+50a02	compté	0	2	ok		48 22 25
+50a02	et	3	3	ok		21
+50a02	quils	4	5	?		39 97
+50a02	sont	6	7	?		24 23
+50a03	en	0	1	?		15 23
+50a03	desmordent	2	5	ok		51 30 83 29
+50a03	et	6	7	?		51 23
+50a03	se	8	8	ok		31
+50a03	relaschent	9	12	ok		39 16 11 75
+50a03	de	13	13	ok		30
+50a03	quoy	14	15	ok		12 66
+50a03	que	16	16	?		23
+50a03	ce	17	17	?		31
+50a03	fort	18	18	ok		51
+50a05	telles	0	1	ok		21 21
+50a05	nouuelles	2	5	ok		76 30 88 32
+50a05	de	6	6	ok		26
+50a05	Naples	7	9	?		21 76 30
+50a06	La	0	1	?		75 78
+50a06	Lorraine	2	4	ok		29 10 20
+50a06	ne	5	5	ok		86
+50a06	deuroit	6	8	ok		86 51 11
+50a06	pas	9	10	?		32 13
+50a07	estre	0	0	ok		54
+50a07	restituee	1	4	?		11 11 30 22
+50a08	garentie	0	2	ok		60 11 23
+50a08	et	3	3	ok		22
+50a08	que	4	5	ok		15 39
+50a08	le	6	6	ok		96
+50a08	Duché	10	11	?		66 51
+50a08	de	12	13	?		40 29
+50a08	Bar	14	15	?		75 51
+50a08	nous	16	17	ok		81 32
+50a08	demeurant	18	20	ok		10 23 31
+50a08	auec	21	22	?		44 76
+50a08	les	23	23	ok		31
+50a09	Trois	0	1	ok		13 20
+50a09	Eueschez	2	4	?		30 15 26
+50a09	du	9	10	?		54 11
+50a09	reste	11	12	?		30 21
+50a10	que	0	1	ok		9? 34
+50a10	veritablement	2	7	ok		97 26 12 20 10 34
+50a10	est	8	8	?		11
+50a11	Seroit	0	1	ok		16 13
+50a11	rendue	2	4	ok		20 31 11
+50a11	au	5	5	ok		23
+50a11	Duc	6	6	ok		54
+50a11	Charles	7	9	ok		10 32 54
+50a11	quil	10	11	ok		12 12
+50a11	ny	12	13	?		65 29
+50a11	a	14	14	ok		76
+50a11	pas	15	16	?		30 97
+50a12	aussy	0	0	ok		43
+50a12	bien	1	2	?		48 96
+50a12	que	3	3	?		76
+50a12	les	4	4	ok		30
+50a13	Espagnolz	0	3	?		56 28 32 13
+50a13	vouldroient	4	8	ok		13 20 15 23 31
+50a13	songer	9	11	ok		18 23 61
+50a13	a	12	12	ok		29
+50a13	leur	13	13	ok		10
+50a13	restablissement	14	20	?		67 11 30 20 11 77 30
+50a14	prendre	0	2	ok		[cut]5 11 23
+50a14	du	3	4	?		13 11
+50a14	relasche	5	7	?		54 11 75
+50a14	recommencer	11	16	?		11 48 22 81 23 46
+50a14	la	17	17	ok		29
+50b01	Guerre	0	1	ok		61 17
+50b01	Sy	2	2	ok		76
+50b01	leed	3	4	ok		52 31
+50b01	Dur	5	6	ok		54 12
+50b01	oules	7	9	?		24 32 76
+50b01	Espagnolz	10	13	?		30 56 78 79
+50b01	couluz	14	15	ok		35 75
+50b01	nous	16	17	ok		15 23
+50b01	en	18	18	ok		53
+50b01	donnoient	19	23	ok		23 88 71 23 31
+50b02	Subjet	0	2	ok		19 11 71
+50b03	et	0	1	?		39 95
+50b04	qualors	0	2	ok		29 30 97
+50b04	quils	3	4	ok		21 30
+50b04	auroint	5	7	ok		10 32 13
+50b05	Intentions	0	2	ok		23 87 30
+50b05	Ils	3	4	ok		20 21
+50b05	se	5	6	?		30 16
+50b05	rejoindroent	9	13	ok		20 23 13 13 71
+50b05	auec	14	15	ok		23 31
+50b05	nous	16	17	ok		44 75
+50b05	plus	18	19	ok		80 58
+50b05	fortent	20	22	?		29 31 96
+50b05	que	23	23	ok		70
+50b05	jam	24	24	ok		69
+50b06	patria	0	2	?		90 37 20
+50b06	de	3	3	ok		10
+50b06	nostre	4	6	?		51 88 37
+50b07	desvnion	0	3	?		51 30 32 87
+50b07	de	6	7	ok		51 87
+50b07	ny	8	8	ok		93
+50b07	pouuoir	9	11	ok		32 89 53
+50b07	donner	12	14	ok		23 86 29
+50b08	remede	0	2	ok		11 81 51
+50b09	Soient	0	1	ok		30 76
+50b09	Infidelles	2	5	?		20 33 34 23
+50b09	quils	9	10	ok		76 30
+50b09	soient	11	13	?		97 30 30
+50b09	Republique	14	18	ok		76 11 94 11 77
+50b09	et	19	19	ok		96
+50b09	partane	20	23	?		30 39 78 20
+50b10	quil	0	0	ok		97
+50b10	y	1	1	ok		21
+50b10	ayt	2	3	ok		35 10
+50b10	peu	4	5	ok		35 31
+50b10	de	6	6	ok		91
+50b10	fondement	7	11	ok		32 51 58 23 51
+50b10	a	12	12	ok		70
+50b10	faire	13	14	ok		10 57
+50b10	dessus	15	16	ok		51 30
+50b10	eux	17	18	ok		19 30
+50b10	quils	19	21	?		15 32 33
+50b11	mayene	0	2	ok		85 35 15
+50b11	Jamais	3	5	ok		23 31 70
+50b11	executé	6	9	?		69 15 36 15
+50b11	nettement	10	14	?		49 21 86 31 21
+50b11	pas	15	16	ok		70 90
+50b11	vn	17	18	?		30 32
+50b11	des	19	19	ok		23
+50b11	Traictez	20	23	?		51 30 31 10
+50b12	que	0	1	ok		21 36
+50b12	nous	2	3	ok		96 75
+50b12	avons	4	5	ok		10 28
+50b12	faut	9	10	?		30 15
+50b12	ensemble	11	14	?		23 16 22 11
+50b13	Leur	0	1	ok		67 10
+50b13	Alliance	2	5	?		21 77 10 23
+50b13	nous	6	7	ok		46 75
+50b13	sied	8	9	ok		17 15
+50b13	bien	10	11	ok		31 48
+50b14	plus	0	1	?		80 78
+50b15	par	0	1	ok		20 22
+50b15	impetuosite	2	4	ok		91 24 24
+50b15	que	5	6	ok		17 21
+50b15	par	7	8	ok		96 78
+50b15	raison	9	10	ok		10 20
+50b15	Ils	11	12	?		18 23
+50b15	nous	13	14	?		20 21
+50b15	abbandonnent	16	20	?		75 10 40 23 53
+50b16	Ils	0	1	ok		20 21
+50b16	nous	2	2	ok		30
+50b16	ayderoient	3	6	ok		75 10 34 51
+50b16	vne	7	8	ok		29 76
+50b16	autre	9	10	ok		32 86
+50b16	fois	11	11	ok		?5
+39L01	que	0	0	?		96
+39L01	desp[iter]	1	2	?		51 30
+39L02	quil	2	3	?	left run; word narrow vs 5 groups, 0-1 and 4 unglossed	29 97
+39L02	qui	5	5	ok	right run	97
+39L02	retard[em]	6	8	ok		11 20 29
+39L03	La	0	1	ok		51 23
+39L03	conclusion	2	6	?		31 75 48 23 12
+39L03	de	7	7	ok		79
+39L03	la	8	8	ok		17
+39L03	paix	9	11	?		24 23 51
+39L03	cest	12	13	ok		75 90
+39L03	trop	14	15	ok		20 33
+39L03	se	16	17	?	groups 18-21 past gloss	12 54
+39L04	flatter	0	4	?		16 75 31 21 29
+39L04	que	5	5	ok		96
+39L04	M	6	6	?		40
+39L04	le	7	7	?		24
+39L04	P	8	8	?		16
+39L05	Knut	0	1	ok		20 89
+39L05	qui	2	2	ok		31
+39L05	est	3	3	ok		97
+39L05	Depute	4	6	?		54 51 94
+39L05	de	7	7	ok		21
+39L05	la	8	8	ok		51
+39L05	Province	9	11	ok		75 25 13
+39L05	de	12	12	ok		27
+39L05	Zelande	13	15	ok	groups 16-20 past gloss end	23 46 51
+39L06	Seuls	0	2	?		16 32 21
+39L06	ordres	3	5	ok		30 24 29
+39L06	sont	6	7	ok		13 11
+39L06	retenus	8	10	ok		30 78 23
+39L07	luy	2	2	ok	groups 0-1 left of gloss	66
+39L07	en	3	4	?		13 23
+39L07	a	5	5	?		10
+39L07	faict	6	6	ok		58
+39L08	plainte	0	2	ok		25 75 20
+39L08	et	3	3	ok		23
+39L08	que	4	4	ok		21
+39L08	Phles	5	7	?		39 96 25
+39L08	le	8	8	ok		67
+39L08	Roy	9	10	?	group 11 unglossed	77 91
+39L08	qui	12	12	ok		76
+39L08	en	13	13	ok		13
+39L08	a	14	14	ok		35
+39L08	[este]	15	17	?	bracketed	97 13 23
+39L09	retracter	0	4	?		11 31 10 12 21
+39L10	dy	0	0	ok		52
+39L10	faire	1	2	ok		51 23
+39L10	toutes	3	5	ok		32 21 30
+39L11	choses	0	1	ok		12 68
+39L11	possibles	2	5	?	groups 6-9 unglossed	16 30 93 30
+39L12	que	0	0	ok		96
+39L12	ces	1	1	ok		46
+39L12	messrs	2	3	?		30 71
+39L12	cy	4	5	?		30 47
+39L12	passassent	6	9	?		90 30 15 30
+39L12	a	10	10	?		16
+39L12	la	11	11	?		23
+39L12	Signature	12	14	?		31 10 75
+39L12	de	15	16	?	groups 17-20 past gloss	17 17
+39L13	leur	0	1	ok		67 31
+39L13	Traitte	2	3	ok		10 20
+39L13	auec	4	5	ok		12 21
+39L13	lEspagne	6	9	ok	group 10 unglossed	44 76 30 90
+39L13	apres	11	12	?		86 10
+39L13	lhonneur	13	16	?		25 11 30 21
+39L13	que	17	18	?		68 23
+39L14	lon	0	1	?		78 23
+39L14	luy	2	2	?		67
+39L14	faut	3	4	?		10 58
+39L14	cinq	5	6	?		47 23
+39L14	des	7	8	?		27 51
+40L01	faut	0	1	ok		58 46
+40L01	cette	2	3	ok		31 21
+40L01	proposition	4	7	ok		25 13 93 17
+40L01	au	8	8	ok		87
+40L01	moment	9	10	ok		10 32
+40L01	que	11	12	ok		83 81
+40L01	les	13	14	?		23 31
+40L02	Plenipotentiaires	0	7	?		87 93 21 23 22 10 20 11
+40L02	partirent	8	10	ok		30 78 22
+40L02	de	11	11	?		11
+40L02	cette	12	13	?		23 31
+40L02	ville	14	16	?		51 46 31
+40L02	pour	17	18	?		21 27
+40L03	aller	0	1	ok		10 21
+40L03	a	2	2	ok		76
+40L03	Munster	3	5	ok		29 10 84
+40L04	[esti]	0	0	?	bracketed	54
+40L04	plus	1	2	?		15 80
+40L04	utile	3	5	?	group 6 unglossed	32 22 76
+40L04	quelle	7	8	?		21 76
+40L04	ne	9	9	ok		86
+40L04	sera	10	11	ok		16 10
+40L04	maintenant	12	16	?		80 20 23 21 85
+40R01	poinct	0	2	ok		93 20 23
+40R01	la	3	3	ok		31
+40R01	condition	4	7	ok		75 48 23 52
+40R01	esgalle	8	10	?		87 15 30
+47L01	Mais	0	1	?		69 54
+47L01	d'vne	2	2	?		86
+47L01	façon	3	5	ok		55 48 23
+47L02	Sy	0	0	?		17
+47L02	pressant	1	4	?		25 11 30 15
+47L02	tirer	7	8	?		22 11
+47L02	aduantage	9	12	?		29 10 13 25
+47L03	que	0	0	?		20
+47L03	cela	1	2	?		61 96
+47L03	nanime	3	5	?		46 75 85
+47L03	les	6	6	ok		87
+47L03	Espagnolz	7	10	ok		81 76 30 56
+47L04	Indubitable	0	3	?		20 23 54 42
+47L04	de	4	4	ok		20
+47L04	veoir	5	7	?		11 76 51
+47L04	conclurre	8	11	?		89 48 23 12
+47L04	leur	12	12	?		79
+47L04	Traicté	13	15	?		11 67 31
+47L04	auec	16	18	?		10 20 12
+47L05	tiennent	0	2	?		22 15 23
+47L05	plus	3	4	?		86 23
+47L05	ferme	5	6	?		31 80
+47L05	a	7	7	ok		56
+47L05	conuenir	8	10	?		29 81 30
+47L06	du	0	1	?		54 93
+47L06	point	2	3	ok		20 23
+47L06	de	4	4	ok		31
+47L06	La	5	5	ok		51
+47L06	Lorraine	6	8	ok		75 78 29
+47L06	qui	9	10	?		10 20
+47L07	demeure	0	2	?		51 81 32
+47L07	encore	3	5	?		11 15 23
+47L07	Indecis	8	10	?		20 23 51
+47L07	entre	11	12	ok		47 30
+47L07	nous	13	15	?		15 23 31
+47L08	tenir	0	1	ok		57 87
+47L08	auec	2	3	ok		29 44
+47L08	cet	4	5	?		46 31
+47L08	Estat	6	8	ok		54 10 31
+47L09	et	0	0	ok		39
+47L09	laisser	1	2	?		75 20
+47L09	nostre	3	5	?		30 16 29
+47L09	Traicté	6	9	?		88 37 11 31
+47L09	en	10	10	ok		10
+47L09	arriere	11	13	?		20 12 21
+47L10	que	0	0	ok		96
+47L10	rien	1	2	ok		83 86
+47L10	ne	3	3	ok		18
+47L10	sort	4	5	ok		20 31
+47L11	capable	0	2	?		45 90 11
+47L11	de	3	4	?		76 51
+47L11	nous	5	6	?		75 11
+47L11	rebuter	7	8	?		44 21
+47L11	de	9	9	?		29
+47L11	lalliance	10	13	?		51 75 21 77
+47L11	de	14	14	ok		10
+47L11	ces	15	15	?		23
+47L11	gens	16	17	?		46 51
+47L11	cy	18	18	?		46
+47L12	et	0	1	?		47 39
+47L12	quencore	2	3	?		96 23
+47L12	bien	4	5	ok		48 11
+47L12	quils	6	7	ok		48 97
+47L12	ayent	8	10	?		21 36 10
+47L12	manque	11	13	ok		71 23 31
+47L12	a	14	15	?		80 23
+47L13	on	0	1	ok		24 23
+47L13	ne	2	3	?		86 75
+47L13	laisse	4	5	ok		20 30
+47L13	pas	6	7	?		16 90
+47L13	encore	8	9	?		30 15
+47L14	dauoir	0	2	?		?2 89 13
+47L14	enuie	3	5	?		23 27 15
+47L14	de	6	6	?		51
+47L14	continuer	7	10	?		48 23 22 89
