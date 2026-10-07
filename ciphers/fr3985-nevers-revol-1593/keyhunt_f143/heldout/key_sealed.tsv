@@ -1,0 +1,66 @@
+set	idx	x	y	sealed_tag	basis
+f143r	6	539	122	++	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	7	607	122	⊥	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	10	750	122	18	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	11	818	122	alpha	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	12	884	122	T	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	13	946	122	g	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	14	999	122	⊥	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	19	1350	122	‡	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	20	1420	122	do	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	21	1498	122	E	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	46	240	222	o	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	47	302	222	T	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	52	560	222	g	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	56	851	222	///	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	58	971	222	20	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	60	1128	222	a+	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	62	1250	222	o	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	69	1790	222	a+	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	71	1951	222	+o	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	85	3058	222	+o	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	97	841	302	do	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	101	1127	302	E	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	102	1193	302	r	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	103	1262	302	X	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+f143r	106	1475	302	pi	KHF-4 eye tag, form unambiguous (not gloss-confirmed; no gloss exists)
+leaf298	2	362	340	L40	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	3	464	340	E	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	4	521	340	8	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	6	630	340	do	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	7	700	340	=	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	9	815	340	r	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	10	871	340	8	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	13	1061	340	do	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	15	1175	340	to	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	36	2730	340	to	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	37	2803	340	T	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	38	2869	340	pi	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	39	2934	340	g	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	47	232	453	8	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	49	404	453	pi	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	55	745	453	lam	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	56	802	453	6	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	65	1658	453	pi	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	66	1734	453	to	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+leaf298	70	2008	453	E	eye tag in gloss-aligned leaf 298 (no.60 known); tag vocabulary as heldout298_answers.tsv
+mayenne61	6	473	198	a	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	8	565	198	ϱ	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	9	623	198	φ	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	10	672	198	V	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	12	778	198	‡	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	13	833	198	43	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	14	895	198	a	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	15	947	198	‡	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	16	1002	198	6	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	19	1166	198	φφ	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	20	1240	198	⊏	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	21	1295	198	φ	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	42	1382	504	4H	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	44	1522	504	⊏	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	46	1627	504	φφ	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	47	1734	504	-∞-	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	50	93	578	φ	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	53	279	578	-∞-	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	58	615	578	6	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
+mayenne61	60	722	578	‡	Mayenne 1592 key (not no.60); form label only, true family = not-no.60
