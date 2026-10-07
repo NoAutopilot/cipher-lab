@@ -1233,3 +1233,75 @@ Requests: archive.org 6 (4 djvu texts, 1 advancedsearch, 1 metadata), be-api.us.
   was search-result only, so no novelty over-claim; the over-claim was the N2-Q token Apple = Tennessee (H).
 - Next step for the solver: `plain: Ann Apple` on N2-Q in ciphertext-no2.txt, re-run decode_no2.py, update the counts.
 - SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-N2R and SO-ECKERT-N2T added (N3). No rows for the N1 items.
+
+## AUDIT 2 (second adversarial, D12-V2T)
+
+Verifier D12-V2T (account 2, for LANE DEFAULT-account-2-20261007-1210), 7 Oct 2026, 12:18-12:3x UTC by `date -u`; a
+separate session from the ECK64-NO2 solver and from its verifier (ECK64-NO2-V), not protecting either. Scope: **N2-T only**
+(mssEC 19 p.87, pointer 8979, the Secretary of War to Dana, Washington, 6 June 1864, 10 AM, two French officers).
+CLAUDE.md Outreach gate 2: try to find it in print by every family the first audit did not cover. Nothing decoded.
+
+### 1. Re-derivation (rule 7) and image check
+- `python3 ciphers/eckert-1864/decode_no2.py --check`: "reading-no2.md is current", exit 0.
+- Image: one IIIF fetch, `hdl.huntington.org/digital/iiif/p16003coll11/8979/full/2400,/0/default.jpg` (scratch, regenerable);
+  crop step run before reading: `python3 tools/iiif_lines.py --image $S/img/p8979.jpg --out $S/crops --prefix t --region
+  120,1240,2120,900 --centres 50,150,250,350,450,550,650,750,850 --lines-per-crop 3 --max-width 2400` (3 crops, read by this
+  worker). Every word of ciphertext-no2.txt N2-T agrees with the strip crops, header "S. H. Beckwith Wash'n June 6th 1864
+  10 am" included; the Huntington volunteer text of pointer 8979 agrees too.
+- Every code word looked up by script in key-no2.md: Hunter = Washington, Mark = July, Dawson = 6, Emily = 10 AM, Saturn =
+  Dana C A, Arnold = 2, Pike = comma, Allen = 1, Pearl = Colonel, Interest = Captain, Madrid = Grant U S, Snake = Head
+  Quarters, Magic = Grant U S, Sexton = Front, Beach = Secretary of War (all H); radicals = Officer (C); yard, stick,
+  Slumberations (I, section 8). Counts as committed: H 19, C 1, I 3, M 0.
+
+### 2. Gaps in the first audit's log for N2-T, and what was searched here
+First audit covered: OR I/36 pts 1 and 3, III/4 by phrase; Google Books (6 T queries); PUSG vol. 11 by be-api fts
+"French officers"; Huntington item info for 8979. Not covered: Dana's own book; OR by date/correspondent index; OR beyond
+June (a sequel); the Huntington's full text across the whole collection; Zooniverse Talk for this entry; the War Department
+telegraph-office books; open indexes; JSTOR.
+
+| family | searched | result |
+|---|---|---|
+| OR I/36 pt 3 (warofrebellion363unit djvu), index by correspondent | "Dana, Charles A. Correspondence with Edwin M. Stanton" | one page only, 722 (Stanton's telegram on the "lying report" about Meade), not N2-T. No other Stanton-to-Dana item in the volume |
+| OR I/36 pt 1 (warofrebellion361unit djvu), index + phrase | "Dana, Charles A" (63-96: Dana's dispatches to Stanton, his side only); "French" (0 relevant); "not want them" | p.91, Dana's 7 June reply, OCR garbled ("fend fnr™i d"), so a phrase search of this copy alone cannot exclude; the index shows the volume prints Dana's side only |
+| OR I/40 pt 1 (warofrebellion401unit djvu), sequel window | "French officers", "glad to have them" | **sequel printed**: Dana to Stanton, City Point, Va., 18 June 1864, 8 a.m., pp.24-25 (between running heads 24 and 26): "With regard to the two French officers who wish to come here, General Grant now desires me to say that he will be glad to have them, but wishes them to understand that the campaign is carried on under the greatest inconveniences as respect personal comfort." A second answer, not the query |
+| Dana, *Recollections of the Civil War* (1898; recollectcivilwa00danarich djvu) | "French" | one hit, the French Broad river (Knoxville 1863); nothing on French officers |
+| PUSG vol. 11 (papersofulyssess0011gran, be-api fts) | "French" (4 hits: Loring/French, Fred's lessons, index "French, Samuel G."), "France" (Kearsarge), "observers", "foreign officers", "keep them away", "French colonel", "Dana" (July letters only) | not in PUSG 11 |
+| Bates, *Lincoln in the Telegraph Office* (1907, telegraphoffice00baterich); Plum, *The Military Telegraph during the Civil War* (1882, militarytelegra03plumgoog, militarytelegra04plumgoog), djvu text | "French officer" | 0 |
+| Huntington CONTENTdm, whole mssEC collection (p16003coll11), `CISOSEARCHALL` page level over the volunteer transcriptions | "French" (129 pages), "Slumberations", "producing them back", "radicals" (16 pages) | N2-T's text occurs on one page only, pointer 8979 itself (code words undecoded). Dana's 7 June reply is on 10396 (mssEC "Received" vol. 10550, p.254) and the 18 June sequel on 10429 (p.287), both in clear. The "Dana" book (4147) has no copy. No decoded copy of N2-T anywhere in the collection |
+| Zooniverse Talk, Decoding the Civil War (project 2125, `/searches`) | "French officers" (4 hits, none this page), "Saturn" (0), "Slumberations" (0) | nothing on this entry |
+| Google Books API (key, country=US), 6 queries | "French officers" Stanton Dana "June 6, 1864"; "sent here to observe the military operations"; "I have been holding them back for a week"; "whether I shall let them go to the front"; "two French officers" Grant 1864 Dana; "French officers" "Grant's headquarters" 1864 Stanton | only OR (I/36 pt 1 Dana's 7 June reply; I/40 pt 1 Dana's 18 June sequel) and its House-documents reprint; no print of the query |
+| loc.gov JSON search | "French officers" Stanton Dana 1864 | 2,103 results, newspapers only; the Stanton papers are not full-text searchable here |
+| OpenAlex (key), Semantic Scholar (key), CORE (key) | French officers / military observers + Grant 1864 / Stanton Dana | nothing on the episode (OpenAlex 96, S2 321, CORE 0; top results off-topic) |
+| CrossRef | French officers observers Army of the Potomac 1864 | empty response body, unreachable this pass (not retried) |
+| JSTOR-QUEUE.tsv | 4 rows appended 7 Oct 2026: family (i) "French officers" AND (Stanton OR Dana) AND Grant AND 1864; family (ii) "to observe the military operations" AND French AND 1864, "whether I shall let them go to the front", "he will be glad to have them" AND French | queued; never block the class |
+| Stanton papers (LoC), NARA RG 107 telegrams sent (M473), Dana's papers | not reachable as text | unread: manuscripts, not editions |
+
+Requests: archive.org 9 (djvu 7, advancedsearch 3, counted with be-api separately), be-api.us.archive.org 11 (the last
+three answered non-JSON; host stopped, not retried), hdl.huntington.org 6 (1 IIIF image, 5 dmQuery, one empty reply on a
+`%20` query, rerun as single-word queries), googleapis.com 6, talk.zooniverse.org 3, loc.gov 1, api.openalex.org 1,
+api.semanticscholar.org 1, api.core.ac.uk 1, api.crossref.org 1.
+
+### 3. Classification
+**N2-T: N4** (raised from N3). The principal editions for a Stanton-Dana telegram of June 1864 (OR ser. I vols. 36 pts 1
+and 3 and 40 pt 1 by phrase and by correspondent index, ser. III vol. 4; PUSG vols. 10-11; Dana's *Recollections*; Bates;
+Plum), the holding catalogue's full text across the whole collection, and the transcription project's Talk pages are now
+covered, and no prior plaintext or decipherment of the query was located. What is printed is the other side of the exchange:
+Dana's replies of 7 June (OR I/36 pt 1 p.91) and 18 June (OR I/40 pt 1 pp.24-25). Internal or unpublished work (the
+Stanton papers at LoC, NARA RG 107 telegrams sent) is not excluded, as N4 allows. Key: `period` (key-no2.md from Cipher No.
+2, mssEC 47). Text: not `known` (the query); the episode is known from Dana's printed replies.
+Depth **D3**, 87% (19 H + 1 C of 23 code words; 3 I: yard, stick, Slumberations; no name codes unread). Not D4 while three
+tokens are I. Check: Dana's two printed replies, the second of which shows the request went on.
+Sentence: "Stanton asks Dana to learn from Grant whether two French officers, a colonel and a captain sent to observe the
+operations and held back a week, may go to Grant's headquarters at the front; Grant first declined (7 June), then agreed
+(18 June)."
+Safe: "Read at grade H/C with the period Cipher No. 2 book; no prior decipherment located (OR, The Papers of Ulysses S.
+Grant, Dana's Recollections, Bates, Plum, the Huntington's full text and the Zooniverse project, searched 7 Oct 2026);
+Dana's two replies are printed in OR I/36 pt 1 p.91 and I/40 pt 1 pp.24-25." Unsafe: "first", "unpublished", "never
+printed", "an unknown episode" (the episode is in the OR through Dana's replies), "new".
+
+### 4. Postmortem
+No over-claim found in reading-no2.md, NOTES.md or the first AUDIT for N2-T. The first audit's gap was family breadth (no
+date/correspondent sweep, no sequel window, no whole-collection Huntington search); the sweep found a second printed answer
+(18 June) and no copy of the query. Corrections: status.json N2-T row (grade N4, `audit_status` 'two audits', the sequel
+in `depth_check`). SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-N2T and its prompt quote no class or count, unchanged. PROGRESS.tsv
+has no N2-T row.

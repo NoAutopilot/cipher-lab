@@ -4311,9 +4311,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, D12-V2T)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 87.0,
@@ -4321,15 +4322,15 @@
         "names_codes": "0",
         "other": "0"
       },
-      "depth_by": "ECK64-NO2 verifier (account 1)",
+      "depth_by": "ECK64-NO2 verifier (account 1); D12-V2T (account 2) confirmed",
       "depth_date": "7 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "7 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: the Secretary of War to Dana, 6 June 1864, two French officers (N2-T)",
-      "grade": "N3",
-      "line": "Read at grade H/C with the period Cipher No. 2 book; the query is not located in OR I/36 pts 1 and 3, III/4, Google Books or PUSG vol. 11; Dana's printed reply of 7 June answers it (searched 7 Oct 2026).",
-      "gap": "letters-sent books and NARA telegram series unread, so not N4; SO-ECKERT-N2T queued",
+      "grade": "N4",
+      "line": "Read at grade H/C with the period Cipher No. 2 book; no prior decipherment located (OR, The Papers of Ulysses S. Grant, Dana's Recollections, Bates, Plum, the Huntington's full text and the Zooniverse project, searched 7 Oct 2026); Dana's two replies are printed in OR I/36 pt 1 p.91 and I/40 pt 1 pp.24-25.",
+      "gap": "Stanton papers (LoC) and NARA RG 107 telegrams sent unread (unpublished, not excluded at N4); JSTOR rows queued 7 Oct 2026; SO-ECKERT-N2T queued",
       "phrases": [
         "Huntington mssEC 19 p.87, pointer 8979"
       ],
@@ -4338,14 +4339,14 @@
         "Huntington mssEC 19 p.87, N2-T (Stanton to Dana, 6 June 1864)"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
       "completeness": "19 H, 1 C, 3 I of 23",
       "unresolved_spans": "none",
       "reading_version": "ECK64-NO2 7 Oct 2026 (reading-no2.md; N2-Q derived block pending the Annapolis fix)",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, D12-V2T)' section 3",
       "depth_sentence": "Stanton asks Dana to learn from Grant whether two French officers, a colonel and a captain sent to observe the operations, may go to the front.",
-      "depth_check": "Dana to Stanton, 7 June 1864, 9 a.m., OR I/36 pt 1 p.91 answers it (\"With regard to the French officers, General Grant says he does not want them\")",
+      "depth_check": "Dana to Stanton, 7 June 1864, 9 a.m., OR I/36 pt 1 p.91 answers it (\"With regard to the French officers, General Grant says he does not want them\"); and Dana to Stanton, City Point, 18 June 1864, 8 a.m., OR I/40 pt 1 pp.24-25 (\"General Grant now desires me to say that he will be glad to have them\")",
       "depth_note": "code words H 19, C 1, I 3; date word Mark = July against header June 6"
     },
     {
