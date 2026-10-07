@@ -620,7 +620,8 @@ Requests this pass: searcharchives.bl.uk 1 (via WebFetch); github.com 2 (shallow
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: the known-keys rung this folder's Verdict names as cheapest -- Tomokiyo's Walsingham-Wotton 1585 reconstruction (elizabeth.htm images) tried against the code layer (85, 0100 and the M codes) plus one TNA Discovery API search, ~$2. LOCAL-QUEUE L44 and the BL reproduction (gap 6) stay the outside blockers.
+- Done 6 Oct 2026 (R11A-BOWES, -BOWES2, -BOWES3, sections above): the Walsingham-Wotton 1585 key shares no code with Bowes's list (0 of 4 shared referents), TNA Discovery and DECODE metadata hold no Bowes/Cary key; the known-keys rung stays [ ] only for the 8 SP 106 leaves, which need images (owner-side). Re-dispatched 7 Oct 2026 as DA1-BOW and stopped unrun as already done.
+- Action that depends on nobody (not run): one Wayback CDX lookup for Tomokiyo's glyph sheet CottonMSBowes.png (the 2 Oct 2026 attempt was a connection reset, not a 404 verdict), which would let the Wotton 1585 sign alphabet and the f.290-293 key be compared with signs 02-28, ~$1. LOCAL-QUEUE L44 and the BL reproduction (gap 6) stay the outside blockers.
 
 ## IA-DESK-ALT (account-3 worker, 5 Oct 2026): CSP Scotland vi via Internet Archive, re-checked
 
