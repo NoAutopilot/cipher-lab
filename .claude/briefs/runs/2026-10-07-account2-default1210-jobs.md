@@ -79,3 +79,19 @@ NOTES.md section, Remaining gaps / Verdict, gaps_check. Report what was found an
 Wave 1 sessions (12:16 UTC): D12-V2M session_01PugdoD1Sjk6HZnB5SXjDPi; D12-V2R session_01HwXefTYDLb82sruCuUhEQH; D12-V2T
 session_01Lsy7bgiVTbeuQHNrggXhBp; D12-E1 session_01HybNY3c6889sZU8de9LeAE; D12-E2 session_019gxbpr5FVaBnraBBwvT9U5; D12-E62H
 session_01LebTAsxigKvN3AuFJccvdn. Caps 38.
+
+Wave 1 results (12:3x UTC): D12-V2M N2-M N3 -> N4 (4.02, D- 1.15x); D12-V2T N2-T N3 -> N4 (3.53); D12-V2R N2-R kept N3 (3.46; the Supplement
+to the OR is not full-text searchable from the cloud -- lane leaves the verifier's N3 as written, no raise by the orchestrator);
+D12-E2 N2-V..AC 8 entries pp.21-34, all located in print (5 OR, 3 PUSG 10 page not established), H 115 C 11 I 2 (4.82).
+
+## Wave 2 (spawned 12:3x UTC 7 Oct). Intake gate as wave 1 (eckert-1864 partial, citation found). E2 ran ~0.6 per entry.
+
+### D12-E3 -- eckert-1864, unread "(No 2)" entries of mssEC 19 pages 40-54 (solver, Opus; cap 6, box 90 min)
+Entries: 8932/40/0, 8935/43/1, 8936/44/0, 8942/50/2, 8944/52/0, 8946/54/2, then 8945/53/0 (long) last. Same method, rules and write-up as
+D12-E1 (section "## D12-E3", status READ D12-E3, next free block letter at your push; D12-E1 and D12-E4 write the same files). OR for the date
+by phrase and by date/correspondent, PUSG vol. 10 where Grant is a party. If archive.org answers 502, one retry after a pause, then log the
+entry's print check as unreachable (not as "not located").
+
+### D12-E4 -- eckert-1864, unread "(No 2)" entries of mssEC 19 pages 56-74 (solver, Opus; cap 6, box 90 min)
+Entries: 8948/56/0, 8951/59/2, 8956/64/0, 8961/69/2, 8965/73/0, 8966/74/0, then 8964/72/1 (long) last. Same as D12-E3 (section "## D12-E4",
+status READ D12-E4). PUSG vol. 10 (to May) / vol. 11 (June on) where Grant is a party.
