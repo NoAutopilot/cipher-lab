@@ -165,6 +165,49 @@ places N2-M as one of the two earlier gauge telegrams the 17 June print mentions
 (the Quartermaster-General, Meigs) in context; it is corroboration, not a printed twin, so no token is raised to C.
 Not searched: other OR volumes, the Meigs letter books, other editions; a search result only.
 
+## Eight further Beckwith/Caldwell entries, February-June 1864 (ECK64-NO2, 7 Oct 2026)
+
+Found by a CONTENTdm full-text search of the volunteer text of mssEC 19 (object 9302) for Beckwith, Kimber, Caldwell and
+Buckley: 202 pages carry one of the names; the 93 of them up to about page 160 were fetched and every entry headed by one of the
+four operators scored against key-no2.md, key.md and key-no9.md (NOTES.md "ECK64-NO2"). Eight short unread entries were read
+from strip crops of the 2400 px page images, the volunteer text as second witness. Code-word tokens over the eight: **H 120,
+C 1, I 8, M 0** (21-entry total H 419, C 7, I 18, M 1).
+
+| entry | ledger | OR print found | agreement |
+|---|---|---|---|
+| N2-N | Halleck to Grant, 16 Feb 1864 3.30 PM: leased plantations on the Mississippi; Ellet's Marine Brigade | I/32 pt 2 p.407 | word for word, except that the OR has "important by the Government" where the ledger has only Republic (= Important) |
+| N2-O | Halleck to Grant, 29 Feb 1864 3.30 PM: further information of Longstreet's retreat | I/32 pt 2 p.494 | word for word |
+| N2-P | the Secretary of War (Barton) to Grant, 18 Mar 1864 3.30 PM: the Department will not transfer troops from Steele's command unless at Grant's request | not located in I/32 pt 3 or I/34 pt 2 (IA djvu full text, phrase search) | -- |
+| N2-Q | Burnside (Lawn) to Grant, 23 Apr 1864 4.15 PM: the troops all started from [Ann] Tennessee; Second Ohio Cavalry not yet mounted; asks whether all the horses here go to Butler before it is mounted; no cavalry but the Third New Jersey; "hurry up answer" | not located in I/33 (phrases "is mounted", "no cavalry except"); I/33 p.722 prints Halleck to Grant of 24 Mar on Burnside's request for the dismounted Second Ohio | -- |
+| N2-R | Augur (Lantern) to Meade (Mohawk), 26 Apr 1864 11.30 AM: cannot send the party without some co-operation from Warrenton and Point of Rocks; else will postpone | not located in I/33 | -- |
+| N2-S | Halleck to Grant, 26 May 1864 10.30 AM: instructions sent to Butler and Hunter; 4,000 or 5,000 re-enforcements to Port Royal; want of water transportation; nothing from Sherman | I/36 pt 3 p.207 (running head next to the hit; may be one off) | word for word ("Gertrude rank" = 12 m. have been sent) |
+| N2-T | the Secretary of War (Beach) to Dana (Saturn), 6 June 1864 10 AM: two French officers, a colonel and a captain, sent to observe the military operations, anxious to go to Grant's headquarters; held back a week; ask Grant whether to let them go to the front | not located in I/36 pt 3 ("French officers", "to observe", "observe the military") | -- |
+| N2-U | the President (College) to Grant, 15 June 1864 7 AM: "I begin to see it. You will succeed. God bless you all." | I/40 pt 2 p.47 | word for word; OR "Have just read your dispatch of 1 [1.30] p. m.", ledger "recd", time word Hannah = 1 PM |
+
+Notes on particular tokens:
+
+- "stick" (N2-S, N2-T, N2-U) stands where a sentence ends: the clerk's short form of Yardstick = Period, I, as "Yard" is.
+- "Balm" (N2-O) in the date group "Balm Nelson Ellsworth" = February 29: the book's month word is Balaam (N2-N), I.
+- "Slumberations" (N2-T) = operations (Slumber + -ations), I from context. The Slumber row of [25B] carries no meaning in this
+  copy and Religion is taken = Operations there by inference (key-no2.md section 6); this one witness says Slumber = Operations,
+  so the copyist's misalignment on [25B] may run differently from the one-row-up rule for rows 5-8. Not resolved here.
+- "Ann" (N2-Q) is marked plain and left unread: the TIME table gives Ann = 1 AM, which cannot stand in "started from Ann
+  Apple" (Apple = Tennessee); the sense wants "East". No grade is counted for it.
+- N2-Q's date words "Genesis Nelson Brooks" read April 22 (20 + 2) where the ledger header says 23rd and Julia = 4 PM against
+  the header's 4.15: the message was enciphered the day before it was sent, or the encoder slipped; logged, not resolved.
+- N2-T's date words "Hunter Mark Dawson Emily" read Washington, July 6, 10 AM (Mark = July, H) where the ledger header says June
+  6th; Luke is June in N2-U and elsewhere. A data conflict between the key row and the ledger date; the token stays H as the book
+  reads it, and the date of the entry is the ledger's. "French" in "Arnold French radicals" is plain (two French officers), not
+  the numeral 10; "producing" ("I have been producing them back") is left as written.
+- N2-N: "Elliotts" is plain (Ellet's Marine Brigade; the OR "General Ellet's"), not the numeral Elliott = 10; "desires" is plain
+  (the book's Desire is a code word). N2-R's header date "2[6?]" is confirmed by its date words Oliver Clarke = 26 (the
+  volunteer text reads "20").
+- Pencilled interlinear guesses over N2-Q and N2-R ("paragraph", "mules", "trains", "doing", "did", "get", "may", "partake",
+  "go") are a later hand's and are not transcribed.
+
+Nothing here is a novelty statement (rule 10); P, Q, R and T were not located in the volumes named, which is a search
+result only.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -246,5 +289,53 @@ Code-word tokens: H 13.
 
 Code-word tokens: H 13.
 
-Totals over the 13 entries: H 299, C 6, I 10, M 1.
+**N2-N | Page 10 | 8902 | 16 Feb 1864 3.30 PM, Halleck to Grant at Nashville (operator S. H. Beckwith, "2")**
+
+[Washington] {time: 3.30 PM} [16] [February] For [Lieut Gen U.S. Grant] [.] It is deemed [Important] that leased plantations on the [Mississippi] [River] receive due protection and the [Secretary of War] desires that [General] Elliotts [Marine] [Brigade] be as signed to that service [.] It is under stood that it has been so as signed temporarily by [Maj Gen W T Sherman]  {tail: [signed] [H W Halleck] How you make it go}
+
+Code-word tokens: H 17.
+
+**N2-O | Page 14 | 8906 | 29 Feb 1864 3.30 PM, Halleck to Grant (Beckwith, "(2)")**
+
+[Washington] {time: 3.30 PM} [February] [29] For [Lieut Gen U.S. Grant][?] [.] Have you any further [Information] of [Longstreet]'s [Retreat (-ed, -ing)] [?] Please keep us advised here as far as possible of his [Movement]'s [General in Chief]
+
+Code-word tokens: H 12, I 1.
+
+**N2-P | Page 23 | 8915 | 18 Mar 1864 3.30 PM, the Secretary of War to Grant (Beckwith, "(2)")**
+
+[Washington] [18] {time: 3.30 PM} For [Grant U S] This [Department] will not transfer [Troops] from [Steele Fdk]'s [Command (-ed, -ing)] unless at your request  {tail: [signed] [Secretary of War]}
+
+Code-word tokens: H 10.
+
+**N2-Q | Page 52 | 8944 | 23 Apr 1864 4.15 PM, Burnside to Grant (Beckwith, "(2)", "advance signal")**
+
+[Washington] [April] [22] {time: 4 PM} For [Grant U S] [.] [Troops] all started from Ann [Tennessee] is [.] Second [Ohio] [Cavalry] not yet mounted [.] Is it intended that all the [Horse]'s now here shall go to [Butler B F] before the Second is mounted [?] It has been waiting a long time and I have no [Cavalry] except the third [New Jersey]  {tail: [signed] [Burnside A E] hurry up answer}
+
+Code-word tokens: H 19, I 1.
+
+**N2-R | Page 56 | 8948 | 26 Apr 1864 11.30 AM, Augur to Meade (operator M. C. Caldwell, "No 2")**
+
+{time: 11.30 AM} [26] for [Meade G G] I cannot send the party as I wish without some co operation from [Warrenton] [.] I wish some also from [Point] of Rocks If you cannot give the [Force] now I will post pone [Augur C C]
+
+Code-word tokens: H 9.
+
+**N2-S | Page 79 | 8971 | 26 May 1864 10.30 AM, Halleck to Grant (Beckwith)**
+
+{time: 10.30 AM} [26] for [Lieut Gen U.S. Grant] [.] Your instructions of yesterday {time: 12 noon AM} [Has been sent] to [Maj Gen B. F. Butler] and [Hunter D] [.] I hope to send you some [4] or [5000] [Re-enforcements] to [Port Royal] [To day] & [Tomorrow] we are somewhat em bare assed for want of water [Transportation] while [Move (-ed, -ing)]ing [Smith]'s [Command (-ed, -ing)] [.] Nothing recently from [Maj Gen W T Sherman]  {tail: [signed] [Maj Genl H W Halleck] wretch}
+
+Code-word tokens: H 23, I 2.
+
+**N2-T | Page 87 | 8979 | 6 June 1864 10 AM, the Secretary of War to Dana (Beckwith)**
+
+[Washington] [July] [6] {time: 10 AM} For [Dana C A] [.] [2] French [Officer]'s [,] [1] a [Colonel] the other a [Captain] [,] sent him to observe the Military [operations] are anxious to go to [Grant U S]'s [Head Quarters] [.] I have been producing them back for a week [.] Please ask [Grant U S] whether I shall let them go to the [Front] or keep them away [,] and let me know  {tail: [signed] [Secretary of War] Yes sir money received cat}
+
+Code-word tokens: H 19, C 1, I 3.
+
+**N2-U | Page 93 | 8985 | 15 June 1864 7 AM, the President to Grant (Beckwith)**
+
+[Washington] [June] [15] {time: 7 AM} For [Lieut Gen U.S. Grant] [.] Have just recd your dispatch of {time: 1 PM} yesterday [.] I begin to see it [.] you will suck seed [.] God bless you all  {tail: [signed] [President U.S.]}
+
+Code-word tokens: H 11, I 1.
+
+Totals over the 21 entries: H 419, C 7, I 18, M 1.
 <!-- decode.py: derived block ends -->

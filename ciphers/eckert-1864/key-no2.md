@@ -1811,3 +1811,6 @@ route-page reading of "Yard".
 | Elliot | 10 (numeral) | I | DEF1-ECK64, 5 Oct 2026: N2-D "the Elliot Star" (the 10th Infantry); the book's numeral word is Elliott (fly leaf row 10 L), the clerk wrote one t |
 | Russel | 60 (numeral) | I | DEF1-ECK64, 5 Oct 2026: N2-D "Russel Austin" (63); the book's word is Russell (fly leaf row 24 R), the clerk wrote one l |
 | Domming | 7 (numeral) | I | DEF1-ECK64, 5 Oct 2026: N2-I "Luke Domming" = June 7, the ledger date of the entry; the book's word is Downing (fly leaf row 7 R) |
+| Balm | February | I | ECK64-NO2, 7 Oct 2026: N2-O "Huron Imogene Balm Nelson Ellsworth" = Washington, 3.30 PM, February 29, the ledger date of the entry; the book's month word is Balaam (N2-N), the clerk wrote Balm |
+| stick | Period | I | ECK64-NO2, 7 Oct 2026: N2-S, N2-T, N2-U, each where a sentence ends ("yesterday stick I begin to see it"); the clerk's short form of Yardstick (p.25 l.23 R = Period), as Yard is |
+| Slumberations | operations | I | ECK64-NO2, 7 Oct 2026: N2-T "to observe the Military Slumberations": Slumber + -ations. The book's Slumber row on [25B] (row 8) carries no meaning in this copy (section 6); this entry says Slumber = Operations, which bears on the [25B] alignment (Religion is taken = Operations there by inference). One witness |

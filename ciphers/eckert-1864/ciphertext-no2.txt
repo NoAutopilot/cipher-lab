@@ -175,3 +175,87 @@ I can not find the gauge
 talbot Holly & Sleeve port warner
 what is it Stanhope wiley Burglar
 use Farmer Famish Mastiff for Can
+
+# Added 7 Oct 2026 (ECK64-NO2): eight further Beckwith/Caldwell "(2)" entries of mssEC 19 found by a CONTENTdm full-text
+# search of the volunteer text for Beckwith, Kimber, Caldwell and Buckley (202 pages of object 9302; candidate list in
+# NOTES.md), read by the worker from tools/iiif_lines.py strip crops of the 2400 px IIIF page images (scratch, regenerable;
+# commands in NOTES.md), volunteer text as second witness. Pencilled figures, interlinear guesses ("doing", "did", "may",
+# "partake", "paragraph", "mules", "trains") and service notes are a later hand's or the office's and are not transcribed.
+# "Ann" in N2-Q is marked plain: the TIME table reads it 1 AM, which cannot stand in "from Ann Apple" (reading-no2.md).
+
+### N2-N | Page 10 | 8902 | 16 Feb 1864 3.30 PM, Halleck to Grant at Nashville (operator S. H. Beckwith, "2")
+S. H. Beckwith "2"  Washn Feby 16th 1864 3 30 PM
+Hang Imogene Knapp Balaam For Chart Tulip It is
+deemed Republic that leased plant = a = tions on the
+Agnew Wafer receive due protect = ion and the Costume
+desires that Spark Elliotts Summit Palmyra be as signed
+to that service yacht It is under stood that
+it has been so as signed tempor = a = rily
+by Fortune yawl Lady How you make it go
+plain: Elliotts desires
+
+### N2-O | Page 14 | 8906 | 29 Feb 1864 3.30 PM, Halleck to Grant (Beckwith, "(2)")
+S. H Beckwith (2)  Washn Feby 29th 1864 3.30 PM
+Huron Imogene Balm Nelson Ellsworth
+For Chart[?] yardstick Have you
+any further Spencer of Kindles
+vomit Stanhope Please keep us
+advised here as far as
+possible of his suppers Empress
+
+### N2-P | Page 23 | 8915 | 18 Mar 1864 3.30 PM, the Secretary of War to Grant (Beckwith, "(2)")
+S. H. Beckwith (2)  Wash'n Mar 18th 1864 3 30 PM
+Hunter Ludlow Imogene For Madrid
+This Quotient will not transfer
+Wharf from Nutmegs Princeton unless
+at your request Yawl Barton
+
+### N2-Q | Page 52 | 8944 | 23 Apr 1864 4.15 PM, Burnside to Grant (Beckwith, "(2)", "advance signal")
+Beckwith (2) advance signal  Washn D. C. Apr 23rd 4 15 PM
+Huron Genesis Nelson Brooks Julia For Madrid tulip Wharf
+all started from Ann Apple is yard Second Biscay
+Pekin not yet mounted yacht Is it intended that
+all the Silvers now here shall go to Legend
+before the Second is mounted Stanhope It has been
+waiting a long time and I have no Pedlar
+except the third Bagdad yawl Lawn hurry up answer
+plain: Ann
+
+### N2-R | Page 56 | 8948 | 26 Apr 1864 11.30 AM, Augur to Meade (operator M. C. Caldwell, "No 2")
+No 2 Caldwell MC  Wash Apl 2[6?] 1864
+Florence Oliver Clarke for Mohawk I cannot send
+the party as I wish without some co
+operation from Harlot tulip I wish some also
+from Trinity of Rocks If you cannot give
+the Salem now I will post pone Lantern
+
+### N2-S | Page 79 | 8971 | 26 May 1864 10.30 AM, Halleck to Grant (Beckwith)
+1030 am Beckwith  Washn May 26 1864
+Elizabeth Oliver Dawson for Crowd tulip Your instructions
+of yesterday Gertrude rank to Growl and Meriden
+yard I hope to send you some Baker
+or Dayton Donaldson vesper to Godwin wherry &
+wedlock we are somewhat em bare assed for
+want of water weasel while swindling Nuptials prospect
+stick Nothing recently from Fortune wiley Cupid wretch
+
+### N2-T | Page 87 | 8979 | 6 June 1864 10 AM, the Secretary of War to Dana (Beckwith)
+S. H. Beckwith  Wash'n June 6th 1864 10 am
+Hunter Mark Dawson Emily For Saturn Tulip Arnold French
+radicals Pike Allen a Pearl the other a Interest
+Pike sent him to observe the Military Slumberations are
+anxious to go to Madrids Snake yard I have
+been producing them back for a week stick Please
+ask Magic whether I shall let them go to
+the Sexton or keep them away Pike and let
+me know yawl Beach Yes sir money received cat
+plain: French
+
+### N2-U | Page 93 | 8985 | 15 June 1864 7 AM, the President to Grant (Beckwith)
+7 am SH Beckwith  Washington June 15" 1864
+Happy Luke Jones Clotilda For Crowd
+tulip Have just recd your dispatch
+of Hannah yesterday stick I begin
+to see it yacht you will
+suck seed tulip God bless you
+all yawl College
