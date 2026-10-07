@@ -302,7 +302,7 @@ KHF-2	account-2	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	10	90
 KHF-4	account-4	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	8	75	done 2026-10-07 19:44	2026-10-07 19:3x	fr3988 f.143 Henri IV to Nevers 1593 held-out hand check; NON-TEST: neg control 70% in-family
 ST-LEDGER	account-1	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	queued	2026-10-07 20:0x	STEAM: ledger scout + work (one key, many entries)
 ST-REBUILD	account-2	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	claimed session_013jm31txSFKvvEoKkMWjGn8 2026-10-07 21:10	2026-10-07 20:0x	STEAM: key rebuilds from glossed siblings, then unglossed neighbours
-ST-ACCESS	account-4	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	queued	2026-10-07 20:0x	STEAM: screen 27, copy-order shortlist of 33 (free tiers first), Monroe/Pinkney
+ST-ACCESS	account-4	.claude/briefs/runs/2026-10-07-acct3-steam.md	Opus 5.5	50	480	claimed session_01HvLc1KhkzLZ2aCNnWHdqNo 2026-10-07 21:35	2026-10-07 20:0x	STEAM: screen 27, copy-order shortlist of 33 (free tiers first), Monroe/Pinkney
 TOMO-ARM	account-1	.claude/briefs/runs/2026-10-07-acct3-standing.md	Opus 5.5	40/day	standing	queued	2026-10-07 20:2x	STANDING: Armstrong-Madison 1808 (Tomokiyo recommended), Birago f.119 secondary; helpers acct 2/4
 BNF-FOCUS	account-2	.claude/briefs/runs/2026-10-07-acct3-standing.md	Opus 5.5	40/day	standing	claimed session_01AV11ecu7tuCqWGttLsiNK8 2026-10-07 21:10	2026-10-07 20:2x	STANDING: BnF value dataset, catalogue enrichment, unread BnF queue
-DEB-RUN	account-4	.claude/briefs/runs/2026-10-07-acct3-standing.md	Opus 5.5	40/day	standing	queued	2026-10-07 20:2x	STANDING: Debosnys keep-going lane
+DEB-RUN	account-4	.claude/briefs/runs/2026-10-07-acct3-standing.md	Opus 5.5	40/day	standing	claimed session_01KBx2V5yEGzw3yFXtCMgaAz 2026-10-07 21:35	2026-10-07 20:2x	STANDING: Debosnys keep-going lane
