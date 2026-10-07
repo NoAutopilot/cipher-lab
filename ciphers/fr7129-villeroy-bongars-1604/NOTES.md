@@ -800,3 +800,10 @@ proportional readers, 3 readers, 3 checkers).
 70-102 tool calls each, zooming crowded stretches, unpriced by the per-call estimate). The orchestrator's stop message
 arrived after the hold-out had already been scored under the pushed PREREG; nothing was scored after it. All 13 lines
 were read and checked; no transcription step is left half done.
+
+## Sibling hunt for keys f.274/f.275 (KH4-B, 7 Oct 2026, LANE KH-4)
+
+No unglossed sibling found; no leaf decoded. fr.7131 f.120 (1609), fr.15579 f.104 and fr.15580 f.139/f.148 (Bongars
+to Villeroy) all carry an interlinear gloss over the cipher; fr.15580 f.152/171/172 probably do too (seen at 1000 px
+only). Canvas maps: fr.15579 `btv1b90645569` canvas = folio+7 (openings); fr.15580 `btv1b90637751` canvas = folio+12.
+Cipher no.2 (f.274): no letter using it located. Full list: `keyhunt/2026-10-07-KH4B.tsv`. Requests: gallica.bnf.fr 30.
