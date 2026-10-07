@@ -1575,3 +1575,65 @@ info) + 4 IIIF images, googleapis.com 8, api.openalex.org 1; all 200 except one 
 - No novelty over-claim in the four solvers' sections: each says "located"/"not located" only. Corrections: D12-E2's C 11 is
   C 10 (section 1); N2-AG page 615, not 614; N2-AE "about p.392" is pp.392-393. Not edited in reading-no2.md (a solver file);
   this section is the record.
+
+## AUDIT 2 (second adversarial, D4-V2AI)
+
+Verifier D4-V2AI (account 4, LANE DEFAULT-account-4-20261007-1335), 7 Oct 2026, 13:43-13:5x UTC by `date -u`; a separate session
+from the solver (D12-E1) and from the first auditor (D12-VP), not protecting either. One entry: **N2-AI** (mssEC 19 p.18, pointer
+8910, Capt. Wm. T. Howell, A.Q.M., to Brig. Gen. Ingalls, Washington 8 Mar 1864 3.30 PM, operator A. H. Caldwell). Nothing decoded
+beyond re-running the committed script; reading-no2.md left as committed.
+
+### 1. Re-derivation (rule 7) and image check
+- `python3 ciphers/eckert-1864/decode_no2.py --check`: "reading-no2.md is current", exit 0. N2-AI: 40 code-word tokens, H 40, no C/S/M/I.
+- Strip crop from the 2400 px IIIF image (`hdl.huntington.org/digital/iiif/p16003coll11/8910/full/2400,/0/default.jpg`, scratch, not
+  committed): `python3 tools/iiif_lines.py --image $S/img/p8910.jpg --out $S/crops --prefix p18 --region 120,240,2160,1560
+  --lines-per-crop 4 --max-width 1600` (17 lines, 5 bands x 2 segments). All 16 message lines read on the crops agree word for word
+  with ciphertext-no2.txt (Imogene ... Rucker in forms / Optic water Weasel / Hug ... Pearl Biggs at Bunyan / Trinity / Stephen
+  Milans / Yardstick / Wayworn ... Bunyan / Waltzer ... Girdle Tulip / Waltzer from Granada ... Weasel / Hulk for Allen Seward Summer
+  and Silvers / Optic by Wedlock evening Yacht / Kirby Douglas Pekin Silvers / Wedlock ... Cap Feilner / Spencer).
+- Every code word checked against key-no2.md (book page and line): Hug and Hulk both Yorktown (p.16 l.26 L/R), Girdle and Granada
+  both New York (p.15 l.16 L/R), Weasel and Wayworn both Transportation (p.24 l.23 R/L), Bunyan Monroe, Pearl Colonel, Optic
+  Available, Waltz(er) Steam, Milan(s) Kilpatrick J, Silver(s) Horse, Allen 1 + Seward 1000, Kirby 14 + Douglas 100 (= 1,400),
+  Pekin Cavalry, Summer Men, Wedlock Tomorrow, Spencer Information, Stephen Left, Trinity Point, Spark General, Palermo Brig. General,
+  Tulip Period, Imogene 3.30 PM (agrees with the header "3.30 PM"). No conflict found.
+
+### 2. Families D12-VP section 3 did not cover, searched here (7 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| IA full text, whole corpus (be-api fts, no identifier) | phrases "Rucker informs me that he has sent", "1,400 cavalry horses", "all his available water transportation", "transportation at Yorktown for", "Captain Feilner"; boolean Howell AND Ingalls AND Yorktown AND Kilpatrick (AND Rucker); Feilner AND Ingalls AND Kilpatrick | 0 hits for every message phrase; "Captain Feilner" 93 hits, all John Feilner as naturalist / with Sully 1864, none this text. Positive control "Dumfries is a bad place" (N2-AH): 9 items incl. OR I/33 |
+| Butler, Private and Official Correspondence vol. 3 (Feb 1863-Mar 1864; IA privateoffice03butlrich, djvu read) | Howell, Feilner, Rucker, Ingalls, Biggs, Kilpatrick, Yorktown, transportation, steamer | no N2-AI text. Prints the surrounding traffic: Butler to Kilpatrick at Yorktown, 5 Mar 1864, "Transports for your cavalry will be at Newport News" (p.492-493), and Lt. Col. H. C. Biggs as Butler's chief quartermaster -- independent agreement with the decoded "Colonel Biggs at Monroe" (Pearl, Bunyan) and "Yorktown" (Hug/Hulk) |
+| OR I/36 pt 1 (warofrebellion361unit, djvu): Ingalls's own report as chief QM (No. 7) | Howell, Feilner, Yorktown, Ingalls | no N2-AI text; the report starts in May 1864; Howell hits are other Howells |
+| OR ser. III vol. 4 (QM correspondence 1864-65) | IA advancedsearch for the volume (rootrich series has ser. 3 vols 1-2 only); Google Books API "Ingalls Yorktown Kilpatrick Series III quartermaster 1864" | **not reachable as full text** from the cloud on this date; Google Books gave only ser. I hits and QM annual reports (no snippet of this text) |
+| Google Books API (key, country=US), 11 further queries | "Captain Howell" Kilpatrick Yorktown; Howell quartermaster Ingalls Yorktown steamers; "1,400 cavalry horses"; "1400 cavalry horses" 1864; "Rucker informs me"; Feilner cavalry horses 1864; Biggs "Fort Monroe" Yorktown Kilpatrick "March 8, 1864"; "Wm. T. Howell" quartermaster; Kilpatrick Dahlgren raid Yorktown transports Ingalls (two 503s, each retried once after a pause, 200) | no N2-AI text. Context only: Wm. T. Howell appears as Ingalls's assistant QM at City Point, Jan 1865 (OR ser. I), and in later QM registers; QM General's annual report 1865 prints Cavalry Bureau horse purchases from July 1864 (after this date) |
+| Semantic Scholar (key) | "Kilpatrick Yorktown transportation Ingalls March 1864 cavalry" | 0 |
+| CORE (key) | Kilpatrick AND Yorktown AND Ingalls (first call 500, one retry 200) | 0 |
+| CrossRef | "Kilpatrick Dahlgren raid Yorktown transportation 1864" | top hits a Confederate-newspaper anthology chapter "The Dahlgren Raid" (10.2307/jj.26193459.36) and 1864 newspaper items; none bears on a Union QM telegram |
+| OpenAlex (key) | "Howell Ingalls Yorktown water transportation 1864" | 0 |
+| JSTOR | rows 312-313 (families i and ii) already queued by D12-VP; one more family (ii) row added: "Rucker informs me that he has sent" | pending (never blocks) |
+| Unreachable / unread (unchanged) | NARA RG 92 (QM General consolidated correspondence; Howell's and Ingalls's letters), RG 107 (M473/M504 telegrams), RG 393; the Supplement to the OR; OR ser. III vol. 4 full text; Ingalls papers; HathiTrust full text | unread |
+Requests: be-api.us.archive.org 10, archive.org 6 (advancedsearch 4, metadata 1) + 2 djvu downloads, googleapis.com 13, api.semanticscholar.org 1,
+api.core.ac.uk 2, api.crossref.org 2, api.openalex.org 1, hdl.huntington.org 1 (IIIF image).
+
+### 3. Classification (key `period`)
+- **N2-AI: N3, held.** No prior plaintext or decipherment located after both audits' searches. Not N4: the series where a QM's
+  telegram to Ingalls would be kept or printed (RG 92, RG 107, the Supplement, OR ser. III vol. 4) are still unread, and those are
+  the principal places the text could be. Not lowered: nothing found in print or in another decipherment.
+- **Depth: D4 (raised from D3).** Rule 4a's D4 criteria, item by item: every cipher-letter token H (40/40, period book mssEC 47); no
+  residue; a non-statistical external check (the image agrees with the transcription word for word, and printed traffic of the same
+  days independently confirms specific decoded values: Biggs as the Fort Monroe chief QM, transports for Kilpatrick's cavalry at
+  Yorktown -- Butler Correspondence vol. 3 pp.492-493; Kilpatrick's command shipping from Yorktown, OR I/33 pp.650, 662); and a
+  fresh rule-7 re-derivation by a session other than the solver's (section 1). D12-VP held D3 because "no print of this text"; that
+  is a novelty fact, not a depth criterion. Outward words: "deciphered". decode_status Decrypted.
+- Safe sentence: "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official
+  Records (ser. I vols 33, 36 pt 1, 51 pt 1), the Grant Papers vol. 10, Butler's printed Correspondence vol. 3, the Huntington
+  collection's full text, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar, CORE or CrossRef (searched 7 Oct
+  2026, two audits)." Unsafe: "first", "unpublished", "never printed", "unknown".
+- Depth sentence (unchanged, checked against the derived block): "Captain Howell tells Ingalls that Rucker has sent all available
+  water transportation to Yorktown, enough for 1,000 men and horses by the next evening, and that the first of the 1,400 cavalry
+  horses being bought arrives tomorrow."
+
+### 4. Postmortem
+- No over-claim in D12-E1's or D12-VP's text for N2-AI. One understatement corrected: depth D3 -> D4 (section 3). The
+  SO-ECKERT-N2AI prompt quotes no class or depth, so it needs no change. status.json row updated (two audits, D4).
+- Context, not a finding: "Cap Feilner" is most likely Capt. John Feilner, 1st U.S. Cavalry (Pope to Halleck, April 1864, in the
+  Mereness Calendar names him); not used in the grading.
