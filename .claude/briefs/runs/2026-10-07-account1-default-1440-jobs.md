@@ -86,8 +86,8 @@ Bowes cipher. A code reading from that key is H only if the key is a period key 
 hypothesis to test with a control (wrong-key or shuffled-code null that can differ on the fit statistic), not a grade. Tick or retire the
 known-keys rung with the result; credit Tomokiyo.
 
-## Wave 2 (spawned 15:1x UTC 7 Oct)
-Wave 1 all done by 15:02 (get_session: NOX 7.19, COL 5.78, VIV 3.14, LIN 1.71, GRA 1.91, BOW 1.08 = 20.81). Intake gate re-run 15:1x:
+## Wave 2 (spawned 15:08 UTC 7 Oct)
+Wave 1 all done by 15:02 (get_session: NOX 7.19, COL 5.78, VIV 3.14, LIN 1.71, GRA 1.91, BOW 1.08 = 20.81). Intake gate re-run 15:07:
 colbert26 and bowes as in wave 1/1b (partial, citation found, exit 0).
 
 ### DA1-COL2 -- colbert26-lathuillerie-1644 second blind word-pairing pass + re-score (solver, Opus; cap 5, box 70 min)
