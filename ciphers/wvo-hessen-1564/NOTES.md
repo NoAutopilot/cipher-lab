@@ -785,3 +785,58 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; f.23 cut into row-pair and gloss-row crops and sorter tiles; owner sorted all 258 tiles; C09 gloss letter looked at against the key
 - [n/a] retry: no step has failed that a retry would change
 Verdict: keep going: 4 internal gaps; cheapest next: a verifier on realign/ with an eye check of k28 (~$2), then the C03/C07 gloss letters (~$1.2)
+
+## Verifier on WVO-REALIGN's realign/ and k28 eye check (NZ-WVOV, account 4, 7 Oct 2026, 09:46-09:5x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-07-account4-lanenz-0914-jobs.md` job NZ-WVOV (verifier hat; not the solver). No network,
+no subagent. Crops cut from the committed native page `images/01109_p3_400full.jpg` (3308 x 4678) into `images/k28v/`:
+```
+python3 tools/iiif_lines.py --image ciphers/wvo-hessen-1564/images/01109_p3_400full.jpg --out ciphers/wvo-hessen-1564/images/k28v \
+  --region <x,y,w,h> --prefix k28_<row> --lines-per-crop 9     # C03 2250,440,800,300; C04 1200,610,800,300; C06a 700,1000,500,320;
+                                                               # C06b 1350,1000,500,320; C09 700,1560,500,320
+  (same, --prefix gl_<row>: C03L 550,470,1250,280; C03R 1700,470,1200,280; C07 1100,1130,1300,300) -- 8 crops, each 1 wrote
+```
+1. **Reproduction: upheld.** `realign/run.py real` + `run.py control 300` re-run from the committed inputs (70 s): all 13 files
+   in `realign/` byte-identical to the commit. Figures as stated: AGREE 159/257, C 192, conflict 19, unaligned 14; within-row
+   permutation control AGREE mean 3.34, p95 9, max 19 (300 draws); PREREG-R9 derangement CONSISTENT 25 vs mean 2.43, p95 5.
+   `decode_key.py realign --check` exit 0. Git order (origin/main): PREREG-WVO-REALIGN.md alone in ebeabbb98 (01:42:22 UTC),
+   results in 5073b62ce (01:46:18 UTC) -- the PREREG predates the scored run. NOTES' "gain not shown" (159 -> 159) is the
+   correct reading of the PREREG: the control licenses agreement over chance, not a gain over WVO-APPLY.
+2. **k28: b upheld at C; realign's e is a one-place alignment slip, not a second witness.** Both k28 tiles are the triangle.
+   C04 idx 9 (`k28_C04_L01.jpg`): the gloss "haben" (looped h) stands over k08 k25 k28 k17 k05 = h a **b** e n, the b written
+   directly above the triangle; realign/ puts e over k28 and nothing over k17, i.e. it dropped b. C03 idx 25 (`k28_C03_L01.jpg`,
+   `gl_C03R_L01.jpg`): "bekom" over k28 k26 k13-e k22-b k13-d = **b** e k o m, consistent with k26 = e (C elsewhere), k22-b = o,
+   k13-d = m; realign/ shifts the whole run one place (k28 e, k26 n, k13-e b, k22-b e, k13-d k). So realign/key.tsv's k28 = e (C)
+   and k13-e = b (M) are over-claims from the slip; settled/key.tsv's k28 = b (C) and AUDIT 2's eye check (b in "bekommen" and
+   "haben") stand. Rule 4: the two values are not two period witnesses in conflict -- one gloss, two alignments, one of them
+   off by a place; the image settles it. Grade: k28 = b, C (2 tiles, 2 rows). k28-b/k28-c tiles (C06 idx 2 and 12, C09 idx 3)
+   looked at once: not the triangle (as AUDIT 2 found); no value claimed. realign/ files are left as the instrument wrote them
+   (they reproduce byte-identically); use settled/key.tsv for k28 and k13-e. No key file value changed, so no reading change
+   and nothing to carry into AUDIT.md (it already holds k28 = b).
+3. **C03 / C07 gloss letters (one look each, grade M, gloss file not changed).** C03 (`gl_C03L_L01.jpg`): after "sehd he" the
+   gloss reads v o a n, then a round final-s, then a long s run into a p-like bowl, then a colon before "zeit" -- R10's
+   "voans sp" is what the hand shows; the word is not read here. C07 (`gl_C07_L01.jpg`): "taush" -- t, a, u, then the long-s
+   stroke curling from u's tail into the looped h; no separate c. By eye the five letters stand over k23, k23-b, k16, k11, k08
+   (tiles C07 idx 11-15) -- the realign/ placement, not R10's (R10 put a over k11 and u over k08). This puts the long s over k11,
+   whose key value is c (C, 5/8): either the encipherer wrote "tausch" and the gloss-writer "taush", or k11 carries s here; not
+   settled from one occurrence (a data point for k11, not a key change).
+- Rule 4 counts: unchanged from WVO-REALIGN / WVO-APPLY (no key value changed by this job). With k28 = b and the C03 slip
+  corrected by eye, the two k28 tiles and the C03 "bekom" run agree with settled/key.tsv, i.e. the realign/ AGREE figure
+  understates rather than overstates on these tiles.
+- Request count: 0 network requests.
+
+## Remaining gaps (finish-or-blocker pass, NZ-WVOV, 7 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, three audits); key per the owner's settled signs (settled/key.tsv, 24 C / 23 M), re-alignment reproduced byte-identically (159/257 AGREE, control p95 9); k28 = b upheld by eye, realign's k28 = e a one-place slip; decode_key settled/ and realign/ --check exit 0
+- alignment slips (19 C conflicts, 14 C unaligned; the C03 "bekom" and C04 "haben" slips confirmed by eye this job) - blocker: not-attempted; rule 3 third-attempt clause retired tools/interlinear_align.py for this leaf; next: a per-row eye alignment of the 33 conflict/unaligned C tiles against the gloss crops (images/k28v shows the crop recipe) with realign/tile_letters.tsv, writing an eye-aligned tile_letters file, ~$1.5
+- k11 in "taush" (C07 idx 14 under the long s; k11 = c elsewhere) and C03 "voans sp" - blocker: not-attempted; one occurrence each, read once by eye, not settled; next: fold into the per-row eye alignment above, ~$0 extra
+- crib-placement test - blocker: not-attempted; not in this brief; next: the crib-placement test against settled/key.tsv (k28 = b), ~$2
+
+## Escalation (NZ-WVOV, 7 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174; R9-WVOX concordance FAIL 0/7) and 1069 key (R9-WVOX concordance PASS 8/18)
+- [x] clear-pages: f.23's own interlinear gloss transcribed, reconciled, aligned, verified, re-aligned and re-verified (R9-WVOALIGN, R10-WVOTX, R10-WVOV, WVO-REALIGN, NZ-WVOV)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
+- [x] key-rebuild: key rebuilt per the owner's settled signs and re-aligned on them (WVO-APPLY, WVO-REALIGN); k28 verified by eye (NZ-WVOV)
+- [x] image-check: all five 1109 pages and four 1107 pages viewed; owner sorted all 258 tiles; k28 tiles and C03/C07/C09 gloss letters looked at against the key
+- [n/a] retry: no step has failed that a retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: a per-row eye alignment of the 33 conflict/unaligned C tiles (~$1.5), then the crib-placement test against settled/key.tsv (~$2)
