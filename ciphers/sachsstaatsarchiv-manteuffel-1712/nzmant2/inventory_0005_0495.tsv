@@ -1,0 +1,54 @@
+# NZ-MANT2 (7 Oct 2026, LANE LANE-NZ-0914, account 4): Loc. 694/08 frames 0005-0495 stride 10 offset 5, eye screen by this worker at sheet scale (6 per sheet, 780 px tiles, 0511 in-sheet control on every sheet), code-bearing frames re-read at ~1500 px per page. Grade M throughout; no transcription.
+# frame = URL file number in images/loc694-08-09/frames.tsv. range = code range seen; U range = f.410 U codes 381-625.
+loc	frame	code	glossed	range	note
+694/08	0511	y	n	nomenclator	(control) code groups plainly visible on every sheet
+694/08	0005	y	y	letter	one short run with a small gloss, mid right page (f.2?, Berlin 6 Feb 1712)
+694/08	0015	y	y	letter	two short runs glossed, e.g. 7.35.21.50.28 / 29.6.2.120.35 (f.?, no.6, Berlin 9 Feb 1712)
+694/08	0025	n	n	-	no code group seen at sheet scale
+694/08	0035	n	n	-	no code group seen at sheet scale
+694/08	0045	n	n	-	no code group seen at sheet scale
+694/08	0055	n	n	-	no code group seen at sheet scale
+694/08	0065	y	n	letter	one short run 71.35.21.20.10.26 (f.47, Berlin 12 Mar 1712)
+694/08	0075	n	n	-	no code group seen at sheet scale
+694/08	0085	n	n	-	no code group seen at sheet scale
+694/08	0095	n	n	-	no code group seen at sheet scale
+694/08	0105	y	y	letter	three code lines at top of left page glossed "le Roy", "la Cour de Prusse", "vous"; max seen 170 (le); Dresden draft side
+694/08	0115	n	n	-	no code group seen at sheet scale
+694/08	0125	n	n	-	no code group seen at sheet scale
+694/08	0135	y	y	letter+names	heavily glossed: Ilgen, "le Roy de Prusse" 257, "la Couronne" over 110.39.16.31; max seen 257 (ff.100v-101, Berlin 18 Jun 1712)
+694/08	0145	y	y	letter+names to 378	heavily glossed: 160 Manteuffel, 257 R. de Pr., 9 Ilgen, 11 K., 259 "le Roy ou Ilgen", 376 "l'envoye de", 378 "Secretaire"; all read glosses agree with key.tsv; highest 378 (ff.109v-110)
+694/08	0155	n	n	-	no code group seen at sheet scale
+694/08	0165	n	n	-	no code group seen at sheet scale
+694/08	0175	n	n	-	no code group seen at sheet scale
+694/08	0185	n	n	-	no code group seen at sheet scale
+694/08	0195	n	n	-	no code group seen at sheet scale
+694/08	0205	n	n	-	no code group seen at sheet scale
+694/08	0215	y	n	names (singles)	Dresden clear draft with single codes 47 97 98 1.28; no runs, no gloss (f.166, Dresden 20 Jul 1712)
+694/08	0225	n	n	-	no code group seen at sheet scale
+694/08	0235	n	n	-	no code group seen at sheet scale
+694/08	0245	n	n	-	no code group seen at sheet scale
+694/08	0255	n	n	-	no code group seen at sheet scale
+694/08	0265	n	n	-	no code group seen at sheet scale
+694/08	0275	n	n	-	no code group seen at sheet scale
+694/08	0285	n	n	-	no code group seen at sheet scale
+694/08	0295	n	n	-	no code group seen at sheet scale
+694/08	0305	y	n	names (singles)	singles 177 150 in clear text (f.237)
+694/08	0315	y	y	letter+names to 292	Extrait de la resolution (encl. to 16 Sept 1712): 198 St., 257 R. de Pr., 292 Pol., 187 R. de Suede, 202 la Republique, 150 Roy, 110.15.16.6.60.33.14.21.35 "la Couronne"; glosses agree with key.tsv; highest 292 (f.244)
+694/08	0325	y	n	names (singles)	possible singles (157? 308?) in clear, sheet scale only (f.253)
+694/08	0335	y	n	names (singles)	possible single 177 in clear, sheet scale only (f.262)
+694/08	0345	n	n	-	no code group seen at sheet scale
+694/08	0355	n	n	-	no code group seen at sheet scale
+694/08	0365	y	y	letter	one short run with small gloss on left page (f.289v-290)
+694/08	0375	y	n	letter+names	runs 66.60.21.33.12.120 and 35.16.51.66.14.100; singles 177 187 46 35; max 187 (ff.299v-300)
+694/08	0385	y	n	names (singles)	singles 97 / g.c. in clear (f.308 P.S.)
+694/08	0395	y	n	letter	run 107.120.6.15.1.35.60.100.9.21.66.21.120 and 17.9.21.120.10; max 120
+694/08	0405	n	n	-	no code group seen at sheet scale
+694/08	0415	y	y	letter+names	glossed runs "le Postirung par nos propres gens", "du Mecklenbourg"; 257 "le Roy de Prusse", 147|177 "le Czar" (digit unsettled; key 177 = le czar), 76 "St."; max 257
+694/08	0425	y	y	letter	one run 50.39.28.47.64.38.60.59.38 with small gloss; max 64
+694/08	0435	y	n	letter	run 55.35.6.90.449|44.9.21.7 (one group unsettled, read 44.9 more likely); 153? single (f.343, 23 Oct 1712)
+694/08	0445	n	n	-	no code group seen at sheet scale
+694/08	0455	n	n	-	no code group seen at sheet scale
+694/08	0465	y	y?	letter+names	runs 17.66.15.41.39.35.60.110.742|292 (last group unsettled), 217.21.35.34.60.17.33.51.10.26..., 81.66.21.73.60.120...; 217 150 singles; one possible small gloss (ff.371v-372)
+694/08	0475	y	y	letter+names to 288	glossed: 257 R. de Pr., 217 la Reine (d'Angl.), 202 la Republique, 150 Roy, 11 "Kameke", 9 Ilgen, 288?, 170.16.21.6 "Comte de Dona", 31.66.83.25.12 "marechal"; highest ~288 (ff.379v-380)
+694/08	0485	y	n	letter+names	runs 35.16.51, 51.15.33.28, 110.15.16.6.26.12, 55.60.35.28.33.20; singles 187 202; max 202
+694/08	0495	n	n	-	no code group seen at sheet scale
