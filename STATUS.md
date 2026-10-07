@@ -5892,3 +5892,25 @@ dated sections and ROOM.md 6-7 Oct lines. Gate 0a: SESSION-SWEEP-account-2 claim
   against p.1-p.4 before scoring (D1411V's lesson); fr3416 f.27r gloss to one blind Opus pass or a person (~3); fr3986 f.146r clear letter (same
   day, to the King) as a crib candidate for item 68; eckert-1864 further No. 2 siblings named in its Verdict. Every other a-m row is blocked from
   outside (owner sorters, copy orders, LOCAL-QUEUE).
+
+## LANE DEFAULT-account-2-20261007-1210 handoff (session_011LUSjgh3ctGxLUSQvqB2Nj, account 2), 7 October 2026 (closed 13:4x UTC: cap nearly spent, lane about 57 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-07-account2-default1210-jobs.md. Gate 0a clear. Backlog: VERIFY-BACKLOG
+(three eckert-1864 N3 second audits) then `next_steps.py --hot-only` (eckert-1864's 74 unread No 2 entries of mssEC 19; eckert-1862 Hurlbut M row).
+Workers (10, Opus, all archived and ledgered; 7 D, 3 D- at 1.04-1.15x): 46.05; orchestrator ~11.0; five_hour `allowed` throughout.
+
+Results:
+- eckert-1864 second adversarial audits: N2-M (Kimber 11 June 1864) N3 -> N4; N2-T (Stanton to Dana 6 June 1864) N3 -> N4; N2-R (Augur to Meade
+  26 Apr 1864) N3 held only because the Supplement to the OR is not full-text searchable from the cloud (verifier's flag; orchestrator did not raise it).
+- eckert-1864 Cipher No. 2 entries of mssEC 19 pp.4-74 read with key-no2 (period key): 30 entries N2-V..AY (H ~1,136, C ~39, I ~22, M 1;
+  decode_no2 --check exit 0). D12-VP verifier: 28 N1 (OR / PUSG 10 / Basler 7, pages confirmed by script), N2-AI (Howell to Ingalls 8 Mar 1864) and
+  N2-AJ (Augur to Ingalls 9 Mar 1864) N3, D3, key period, SO-ECKERT-N2AI/N2AJ queued, JSTOR rows queued. Two pp.8/15 header entries are Cipher No. 1.
+  key-no2.md section 8 gained ~17 clerk forms at C; conflicts logged, not resolved (Religion/Slumber = Operations; Nuptial = Steele; N2-AT yawl).
+- eckert-1862 Hurlbut row: 6 of 7 M -> C plus mssEC 19 9174 x2 C, upheld by D12-V62 (one page cite corrected); ec18 --book 2 / ec18_align /
+  --read-free regenerated after the key-no2 rows (4 readings_b2 entries change, e.g. 9681.34 Monkey -> [Schofield]).
+Known-text share: ~0 by intent (no entry's print status was known before reading); ex post 28 of 30 read entries are in print (N1), so
+roughly 20 of the 46 worker spend landed on text that proved known -- the cost of finding the 2 N3 entries in this ledger.
+
+Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 unread, plus 109 mssEC 19 pages never fetched), ~0.6-0.9 per entry
+by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
+still stale, cause untested (~1); 9877 Hurlbut token stays M.
