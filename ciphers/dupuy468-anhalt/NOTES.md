@@ -337,3 +337,14 @@ key.tsv's word-sign globally, printing MEKLEBURG where the gloss at that place r
 exceptions.tsv (ASSIGNMENTS row 25, see "Exceptions" above), so r04 prints <DUX> at that position, matching the
 gloss and the second, adversarial audit's own inferred "[ducis]" (AUDIT.md). This caveat is left here as a
 record of the fix, not as an outstanding warning; reading.txt itself is current (python3 check.py --check).
+
+## Keyhunt 7 Oct 2026
+
+KH1-A (LANE KH-1, account 1), KEY-OFFICES row 16 (key.tsv, key_from_gloss.tsv; Lüneburg-Moltzan cipher, 24 Jan 1520), window
+1517-1523. Searched 7 Oct 2026: BnF Archives et manuscrits ("Anhalt", "Moltzan", "Luneburg", "Lunebourg chiffres", "Ernest
+Lunebourg", "duc de Lunembourg", "Brunswick 1520", "Joachim chiffres", "Celles chancelier"; full finding aids of Dupuy 468,
+Dupuy 264, fr.3897); DECODE lists on disk; dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (grep "anhalt", "Dupuy 468").
+**Unread siblings for this key: 0** (no other cipher letter of this office located). Leads: fr.3897 f.147 (no.74) is a French
+"translat" of Ernest of Lüneburg to the Chancellor, Celle, 28 Jan [1520], four days after f.28; its Latin original (possibly
+in this cipher) was not found in any catalogue reached. Dupuy 264 f.47 (Joachim "de Moltzain", 12 Mar s.a., Latin) is not
+digitised (no Gallica link) and not catalogued as cipher. No test run. Rows: `KEYHUNT-2026-10-07-KH1-A.tsv`.

@@ -1530,3 +1530,15 @@ Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 
   original on Gallica, check key family, align as known plaintext -- the Verdict line above is still this step.
 - May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.
 - 5 Oct 2026 (PR-LAND-67): LOCAL-QUEUE L3 answer landed, local-runner/L3-2026-10-05.md -- blocked: HathiTrust full-text search behind Cloudflare at the owner's desk browser; no phrase query ran, no absence claimed. Row blocked; owner desk ASKS 140.
+
+## Keyhunt 7 Oct 2026
+
+KH1-A (LANE KH-1, account 1), KEY-OFFICES rows 21-22 (key.tsv, key_extension_f30.tsv; Gramont's cipher (1530)), window
+1527-1533. Searched 7 Oct 2026: BnF Archives et manuscrits ("Gramont chiffre", "Tarbe chiffre", "Gramont déchiffrement",
+"Granmont", "Grammont chiffre", "cardinal de Gramont", "evesque de Tarbe", "GABRIEL DE GRAMONT"; finding aids of fr.3005,
+3007, 3012, 3015, 3040, Dupuy 726); DECODE lists on disk; Tomokiyo `francis.htm`; dbourdeau/cyphersolver (targets/gramont1529).
+Images viewed at sheet scale (Gallica IIIF): fr.3005 ff.137-138 (Bologna 30 Jan), fr.3012 f.23 (Bologna 30 Mar 1530), fr.3015
+ff.7-8, 10 (Bologna 12 Mar), fr.3007 f.111 (Rome 26 Sept [1529]), Dupuy 726 ff.76, 150-153 (1532-33): all in clear.
+**Unread siblings for this key: 0.** The known cipher letters in this key (fr.3019 f.20, fr.3071 f.17, fr.3040 ff.12 and 18)
+are read by Tomokiyo, Lasry, Bourdeau or DECODE, or printed (Le Grand). The fr.3038 f.42 decipherment's cipher original
+stays unlocated (N8-GRA). No test run. Rows: `KEYHUNT-2026-10-07-KH1-A.tsv`.

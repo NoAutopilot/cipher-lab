@@ -560,3 +560,17 @@ prior plaintext-and-decipherment source, and adds no new textual content of its 
 finding aid's own item list (which this file's own "Correction to the QUEUE description" section already
 worked through). Per this brief's instruction, no class change is proposed; not flagging "for LANE V8" since
 the brief's trigger condition (a decipherment newly in print because of this post) does not hold.
+
+## Keyhunt 7 Oct 2026
+
+KH1-A (LANE KH-1, account 1), KEY-OFFICES row 15 (key.tsv, Raince's 1525-26 cipher), window 1522-1532. Searched 7 Oct 2026:
+BnF Archives et manuscrits (POST `resultatRechercheSimple.html`: "Raince chiffre", "Raince", "Carpi chiffre", "Carpy chiffre";
+full finding aids of Dupuy 452, 264, 265, 486, fr.2933, 2963, 2988, 3040, 3091, 3092, 3897); DECODE lists on disk
+(`sources/decode/records-*-2026-09-24*.tsv`, BnF 1517-1533); Tomokiyo `francis.htm` (cached); dbourdeau/cyphersolver
+(fresh shallow clone, grep only: targets/raince, bayard1526, dubellay). Images viewed at sheet scale (Gallica IIIF): fr.2988
+ff.4-5, fr.3092 ff.21/25, fr.2963 ff.167-170, fr.2933 c215-c236, fr.3897 ff.222/236/238.
+**Unread siblings for this key: 0.** Every cipher letter of Raince's in the window is printed (Jacqueton, Bourrilly, Pastor),
+glossed on the leaf, DECODE-decrypted, or already being read by Bourdeau (fr.2984 nos.7 and 24); every uncatalogued Raince
+or Carpi letter viewed (1522, 1524) is in clear. Leads, not siblings: fr.2988 ff.4-5 is a clear fair copy of a Raince cipher
+letter of 15 Dec 1526 whose cipher original was not located (known plaintext if it surfaces); Dupuy 264 f.61 is a 1522 Rome
+decipherment, volume not digitised. No test run. Rows: `KEYHUNT-2026-10-07-KH1-A.tsv`.
