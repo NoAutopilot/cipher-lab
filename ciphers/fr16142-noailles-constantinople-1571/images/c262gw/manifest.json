@@ -1,0 +1,1507 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "images/c262gw/c262gw_L01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2115,
+    1470,
+    2255
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 63.5,
+    "b": -0.01667,
+    "peaks_kept": 3,
+    "half_height": 62,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2216,
+    1470,
+    2344
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 152.17,
+    "b": -0.00333,
+    "peaks_kept": 3,
+    "half_height": 62,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2307,
+    1470,
+    2436
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 244.25,
+    "b": -0.005,
+    "peaks_kept": 3,
+    "half_height": 62,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2405,
+    1470,
+    2541
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 349.58,
+    "b": -0.01167,
+    "peaks_kept": 3,
+    "half_height": 62,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L05.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2505,
+    1470,
+    2633
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 441.17,
+    "b": -0.00333,
+    "peaks_kept": 3,
+    "half_height": 62,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L06.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2599,
+    1470,
+    2733
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 540.75,
+    "b": -0.00833,
+    "peaks_kept": 3,
+    "half_height": 63,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L07.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2704,
+    1470,
+    2837
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 643.58,
+    "b": -0.005,
+    "peaks_kept": 3,
+    "half_height": 64,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L08.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2801,
+    1470,
+    2932
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 739.25,
+    "b": -0.005,
+    "peaks_kept": 3,
+    "half_height": 63,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L09.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2878,
+    1470,
+    3024
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 831.67,
+    "b": -0.02,
+    "peaks_kept": 3,
+    "half_height": 63,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L10.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2978,
+    1470,
+    3118
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 925.0,
+    "b": -0.01333,
+    "peaks_kept": 3,
+    "half_height": 63,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L11.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    3090,
+    1470,
+    3224
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 1023.58,
+    "b": 0.00833,
+    "peaks_kept": 3,
+    "half_height": 63,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L12.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    3175,
+    1470,
+    3307
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 1108.0,
+    "b": 0.00667,
+    "peaks_kept": 3,
+    "half_height": 63,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L13.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    3265,
+    1470,
+    3393
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     56,
+     150,
+     246,
+     340,
+     436,
+     530,
+     630,
+     726,
+     822,
+     918,
+     1014,
+     1110,
+     1206
+    ]
+   },
+   "date": "07 Oct 2026",
+   "slope_fit": {
+    "a": 1200.42,
+    "b": -0.00167,
+    "peaks_kept": 3,
+    "half_height": 63,
+    "win": 300,
+    "local": false
+   }
+  },
+  {
+   "crop": "images/c262gw/c262gw_L01_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    476,
+    2138,
+    719,
+    2233
+   ],
+   "band": 1,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L01_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    751,
+    2138,
+    897,
+    2233
+   ],
+   "band": 1,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L01_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    925,
+    2138,
+    1167,
+    2233
+   ],
+   "band": 1,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L01_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1199,
+    2138,
+    1250,
+    2233
+   ],
+   "band": 1,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L01_g05.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1269,
+    2138,
+    1470,
+    2233
+   ],
+   "band": 1,
+   "group": 5,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L02_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    470,
+    2233,
+    591,
+    2328
+   ],
+   "band": 2,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L02_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    624,
+    2233,
+    731,
+    2328
+   ],
+   "band": 2,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L02_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    752,
+    2233,
+    812,
+    2328
+   ],
+   "band": 2,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L02_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    832,
+    2233,
+    925,
+    2328
+   ],
+   "band": 2,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L02_g05.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    956,
+    2233,
+    1108,
+    2328
+   ],
+   "band": 2,
+   "group": 5,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L02_g06.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1163,
+    2233,
+    1289,
+    2328
+   ],
+   "band": 2,
+   "group": 6,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L02_g07.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1346,
+    2233,
+    1470,
+    2328
+   ],
+   "band": 2,
+   "group": 7,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L03_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    491,
+    2328,
+    746,
+    2423
+   ],
+   "band": 3,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L03_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    779,
+    2328,
+    1045,
+    2423
+   ],
+   "band": 3,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L03_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1078,
+    2328,
+    1381,
+    2423
+   ],
+   "band": 3,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L03_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1433,
+    2328,
+    1444,
+    2423
+   ],
+   "band": 3,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L04_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    499,
+    2423,
+    730,
+    2518
+   ],
+   "band": 4,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L04_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    751,
+    2423,
+    973,
+    2518
+   ],
+   "band": 4,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L04_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1000,
+    2423,
+    1434,
+    2518
+   ],
+   "band": 4,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L04_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1462,
+    2423,
+    1470,
+    2518
+   ],
+   "band": 4,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L05_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    504,
+    2518,
+    622,
+    2613
+   ],
+   "band": 5,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L05_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    655,
+    2518,
+    829,
+    2613
+   ],
+   "band": 5,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L05_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    868,
+    2518,
+    881,
+    2613
+   ],
+   "band": 5,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L05_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    905,
+    2518,
+    1246,
+    2613
+   ],
+   "band": 5,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L05_g05.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1270,
+    2518,
+    1461,
+    2613
+   ],
+   "band": 5,
+   "group": 5,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L06_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    485,
+    2613,
+    574,
+    2710
+   ],
+   "band": 6,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L06_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    604,
+    2613,
+    832,
+    2710
+   ],
+   "band": 6,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L06_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    870,
+    2613,
+    1122,
+    2710
+   ],
+   "band": 6,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L06_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1155,
+    2613,
+    1216,
+    2710
+   ],
+   "band": 6,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L06_g05.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1254,
+    2613,
+    1410,
+    2710
+   ],
+   "band": 6,
+   "group": 5,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L06_g06.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1442,
+    2613,
+    1450,
+    2710
+   ],
+   "band": 6,
+   "group": 6,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L07_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    499,
+    2710,
+    558,
+    2808
+   ],
+   "band": 7,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L07_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    577,
+    2710,
+    793,
+    2808
+   ],
+   "band": 7,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L07_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    820,
+    2710,
+    1073,
+    2808
+   ],
+   "band": 7,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L07_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1098,
+    2710,
+    1208,
+    2808
+   ],
+   "band": 7,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L07_g05.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1260,
+    2710,
+    1470,
+    2808
+   ],
+   "band": 7,
+   "group": 5,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L08_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    509,
+    2808,
+    770,
+    2904
+   ],
+   "band": 8,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L08_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    801,
+    2808,
+    1106,
+    2904
+   ],
+   "band": 8,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L08_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1128,
+    2808,
+    1470,
+    2904
+   ],
+   "band": 8,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L09_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    514,
+    2904,
+    1126,
+    3000
+   ],
+   "band": 9,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L09_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1146,
+    2904,
+    1470,
+    3000
+   ],
+   "band": 9,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L10_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    514,
+    3000,
+    600,
+    3096
+   ],
+   "band": 10,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L10_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    641,
+    3000,
+    858,
+    3096
+   ],
+   "band": 10,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L10_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    887,
+    3000,
+    942,
+    3096
+   ],
+   "band": 10,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L10_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    963,
+    3000,
+    1180,
+    3096
+   ],
+   "band": 10,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L10_g05.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1208,
+    3000,
+    1272,
+    3096
+   ],
+   "band": 10,
+   "group": 5,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L10_g06.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1297,
+    3000,
+    1444,
+    3096
+   ],
+   "band": 10,
+   "group": 6,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L10_g07.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1466,
+    3000,
+    1470,
+    3096
+   ],
+   "band": 10,
+   "group": 7,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L11_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    509,
+    3096,
+    575,
+    3192
+   ],
+   "band": 11,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L11_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    596,
+    3096,
+    768,
+    3192
+   ],
+   "band": 11,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L11_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    788,
+    3096,
+    1186,
+    3192
+   ],
+   "band": 11,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L11_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1205,
+    3096,
+    1450,
+    3192
+   ],
+   "band": 11,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L12_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    478,
+    3192,
+    494,
+    3288
+   ],
+   "band": 12,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L12_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    516,
+    3192,
+    885,
+    3288
+   ],
+   "band": 12,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L12_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    931,
+    3192,
+    983,
+    3288
+   ],
+   "band": 12,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L12_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1010,
+    3192,
+    1183,
+    3288
+   ],
+   "band": 12,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L12_g05.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1204,
+    3192,
+    1385,
+    3288
+   ],
+   "band": 12,
+   "group": 5,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L12_g06.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1424,
+    3192,
+    1450,
+    3288
+   ],
+   "band": 12,
+   "group": 6,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L13_g01.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    478,
+    3288,
+    809,
+    3384
+   ],
+   "band": 13,
+   "group": 1,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L13_g02.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    832,
+    3288,
+    955,
+    3384
+   ],
+   "band": 13,
+   "group": 2,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L13_g03.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    978,
+    3288,
+    1353,
+    3384
+   ],
+   "band": 13,
+   "group": 3,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "images/c262gw/c262gw_L13_g04.jpg",
+   "source_url": "",
+   "source_file": "ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg",
+   "box": [
+    1401,
+    3288,
+    1470,
+    3384
+   ],
+   "band": 13,
+   "group": 4,
+   "method": "tools/iiif_lines.py --groups 18 column ink profile",
+   "date": "07 Oct 2026"
+  }
+ ],
+ "command": "python3 tools/iiif_lines.py --image <copy of images/src_ark_12148_btv1b9060927q_f262_full.jpg> --region 470,2130,1000,1300 --centres 56,150,246,340,436,530,630,726,822,918,1014,1110,1206 --follow-slope 300 --slope-margin 15 --max-width 2400 --prefix c262gw --out <dir> --groups 18 --debug (DA1-NOX, 7 Oct 2026)"
+}
