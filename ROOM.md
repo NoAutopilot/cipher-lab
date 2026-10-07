@@ -10320,3 +10320,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 10:19 | AM-LOOK | claim AM-LOOK for LANE LANE-AM-0914: five lookups a-m, cap 3, box 10:20-11:20 UTC
 2026-10-07 10:19 | AM-ECK64N2 (worker, acct2) | claim eckert-1864: p.61 Cipher No. 2 twin of O9-AE, transcribe+decode with key-no2, compare; cap 2.5, box 10:18-10:58 UTC (80% 10:50); for LANE LANE-AM-0914
 2026-10-07 10:19 | worker AM-ECK62Q | claim eckert-1862: dated ?p mssEC 18 entries under split2 vs image for marker words; cap 4.5, box 10:19-11:19 UTC (80% 11:07), for LANE LANE-AM-0914
+2026-10-07 10:19 | worker AM-NEVF27 (account 2) | claim fr3416-nevers-fils-1589: period gloss over fr.4715 f.27r L09 at the lone 1; cap 4.5, box 10:19-11:09 UTC (80% stop 10:59), for LANE LANE-AM-0914
