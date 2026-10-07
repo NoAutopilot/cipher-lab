@@ -20,9 +20,9 @@
  ],
  "matched_control": "shuffled-group control on the same leaf at the same N and K; design must match (code+nulls+jargon words, not plain monoalphabetic), see CLAUDE.md rule 3.",
  "judge": {
-  "language": "fr16",
+  "language": "fr",
   "min_word_cover": 0.5,
-  "note": "fr16 (16th-c. letters) is era-matched to 1573; its leave-one-out per-fold spread has not been checked for this spec, so a FAIL/PASS is of unknown reliability (rule 3, es17c/EN-FOLDS paragraphs)."
+  "note": "fr16 (16th-c. letters) is era-matched to 1573; its leave-one-out per-fold spread has not been checked for this spec, so a FAIL/PASS is of unknown reliability (rule 3, es17c/EN-FOLDS paragraphs). 7 Oct 2026 MONLUC-KEY: 'fr16' is not a LANG_CORPORA key; 'fr' is the fr16 corpus (tools/data/fr16, Lettres de Catherine de Medicis), so the language is set to 'fr' with no change of corpus."
  },
  "cheap_test_done": [
   {
