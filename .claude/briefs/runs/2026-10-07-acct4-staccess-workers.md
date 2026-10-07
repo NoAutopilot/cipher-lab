@@ -138,3 +138,9 @@ SA-G's unit (e) reached only Dupuy 452 (keyhunt/2026-10-07-SAG.tsv). Screen the 
 (Dupuy 468 ff.30-), 125 (fr.3897 ff.72-127), 140 (Gramont fr.3003 no.5, fr.3053 no.12, fr.2974), 240 (Melanges de Colbert
 113, Servien at Turin 1662-; sample the volume at sheet scale). Order: 113, 101, 115, 114, 123, 124, 125, 140, 240.
 Write keyhunt/2026-10-07-SAG2.tsv; update KEYHUNT lines; "Unread sibling found" NOTES line only for unglossed cipher.
+
+## SA-G3 (Gallica screen, last six rows; Sonnet 5.5; cap USD 7; box 100 min; written ~23:22 UTC)
+vision calls: 12 x USD 0.4 = 4.8 (+ fixed ~2.5 = 7.3; SA-G2 stopped at 6 calls with 6 rows left, so 2 calls per row here).
+Rows (arks already in keyhunt/2026-10-07-SAG2.tsv): KEYHUNT lines 114, 123, 124, 125, 140 (fr.3003 no.5, fr.3053 no.12;
+fr.2974 has no Gallica record -- log it), 240 (Melanges de Colbert 113, sample at sheet scale). Control: Dupuy 452 c23 at
+700 px (it does NOT flag at 300 px sheets: screen candidate leaves at >=600 px). Same output rules; keyhunt/2026-10-07-SAG3.tsv.
