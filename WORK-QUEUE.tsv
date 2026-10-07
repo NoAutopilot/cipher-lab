@@ -279,4 +279,4 @@ WVO-REALIGN	account-1	.claude/briefs/runs/2026-10-07-acct3-wvo-realign.md	Opus 5
 MONLUC-KEY	account-1	.claude/briefs/runs/2026-10-07-acct3-monluc-xmatch.md	Opus 5.5	8	60	claimed session_01H1d53gHv23tnZ8fqpg1qkL 2026-10-07 04:42	2026-10-07 04:2x	PART A: Monluc per-cell key check + test 2 on unglossed items
 XMATCH-0307	account-2	.claude/briefs/runs/2026-10-07-acct3-monluc-xmatch.md	Opus 5.5	5	45	claimed session_013HqQcPULwv81UCPYDHwsj7 2026-10-07 05:10	2026-10-07 04:2x	PART B: two nightly crossmatch leads, decoy/gloss controls
 MONLUC-2	account-1	.claude/briefs/runs/2026-10-07-acct3-batch-0507.md	Opus 5.5	6	50	queued	2026-10-07 05:0x	PART A: Monluc K01/K07/K14 crops + grow test-2 N to where the judge positive control passes
-BKLOG-0507	account-4	.claude/briefs/runs/2026-10-07-acct3-batch-0507.md	Opus 5.5	8	60	queued	2026-10-07 05:0x	PART B: birago f.36-37 splits; clairambault 5th instrument or retire; ceppo f.36v
+BKLOG-0507	account-4	.claude/briefs/runs/2026-10-07-acct3-batch-0507.md	Opus 5.5	8	60	claimed session_017CGwt4Qh6WUctrNooC3GeL 2026-10-07 05:35	2026-10-07 05:0x	PART B: birago f.36-37 splits; clairambault 5th instrument or retire; ceppo f.36v
