@@ -76,7 +76,7 @@ of the HYPOTHESES.md z A-vs-R entry, ~$0.5" (R12D-GRAZB2 found f.30 zb and fr.30
 re-run the affected scripts with --check, confirm key.tsv unchanged or say exactly what changed, close the HYPOTHESES.md entry half.
 
 ## Wave 1b (spawned 14:5x UTC 7 Oct)
-Intake gate: see the line pasted in DA1-BOW below.
+Intake gate 14:5x UTC: `bowes-walsingham-1583: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` exit 0.
 
 ### DA1-BOW -- bowes-walsingham-1583 known-keys rung: Walsingham-Wotton 1585 (solver, Opus; cap 3, box 50 min)
 NOTES.md l.623 (the folder's "depends on nobody" action) and Escalation "[ ] known-keys" (l.587): try Tomokiyo's Walsingham-Wotton 1585
