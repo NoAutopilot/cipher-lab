@@ -20,6 +20,6 @@ count. Consequence (rule 4): each print-read use is C from its own print; the 9 
 What would settle it: the cipher book (or table) in use on the Caldwell/Beckwith line in 1864 read at Legend.
 D12-E62H (7 Oct 2026, solver) adds four Legend witnesses, each the print of its own telegram: Butler 9671 3 Feb 1864 and
 9672 5 Feb 1864, Caldwell 2 (OR 33 pp.502, 514, Halleck to Sedgwick); Butler 9786 11 Jul 1864 to Grant's HQ via Beckwith (Dana's
-telegram as deciphered in Papers of U. S. Grant vol. 11, not in OR); Canby 9945 25 Jan 1865 to Thomas, Eastport (OR 49.1 p.580,
+telegram as deciphered in Papers of U. S. Grant vol. 11, not in OR); Canby 9945 25 Jan 1865 to Thomas, Eastport (OR 49.1 p.581 [D12-V62: was p.580],
 second IA scan). Totals Butler 16, Canby 11, unread 5. 9786 falls inside the overlap window (Beckwith line, Butler); the addressee
 pattern above holds for all four (still grade I, not used). The conflict stays unresolved.

@@ -5,19 +5,19 @@ book_1	311
 book_2	168
 book_unassigned	192
 fully_keyed	18
-fully_keyed_grades	H 294, C 9, I 8, M 0
+fully_keyed_grades	H 294, C 10, I 12, M 0
 or_matches_real_dates	13
 or_matches_permuted_dates_mean	0.90
 or_matches_permuted_dates_max	3
 draw20_real_dates	13
 draw20_rotated_dates	0
-all_entries_or_matches_real_dates	306
-all_entries_or_matches_permuted_dates_mean	3.80
-all_entries_or_matches_by_book	1 124, 2 111, ? 71
-book2_matched_keyed_meanings_in_print	1668/2262 = 0.737
-book2_control_other_entry_window	961/2262 = 0.425
-book1_entries_read_with_key_no2_md_in_print	589/2633 = 0.224
+all_entries_or_matches_real_dates	307
+all_entries_or_matches_permuted_dates_mean	4.00
+all_entries_or_matches_by_book	1 124, 2 112, ? 71
+book2_matched_keyed_meanings_in_print	1679/2282 = 0.736
+book2_control_other_entry_window	972/2282 = 0.426
+book1_entries_read_with_key_no2_md_in_print	589/2636 = 0.223
 or_volumes	48
 min_5grams	4
 flags	possessive=True guard=True
-guarded_tokens	440
+guarded_tokens	450

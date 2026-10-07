@@ -414,3 +414,10 @@ print of its own telegram. No N-class, depth or safe sentence changes (sections 
 Note (not a finding): 9785.169 and 9788.172 are marker-assigned Cipher No. 2 entries (entries.tsv book 2) read here through the
 No. 1 key; key-no2.md also gives Legend = Butler (H, p.18 l.5), so 9788's C (Butler) agrees with that book too.
 Requests: hdl.huntington.org 1, archive.org 56, >= 1.6 s apart; 0 subagents.
+
+## Propagation D12-V62 (7 Oct 2026, verifier, account 2)
+D12-E62H (b5a795fe6) moved six Hurlbut-row override tokens M -> C, each from the print of its own telegram (OR 33 pp.502, 514;
+OR 49.1 p.581 -- cited as p.580, corrected; p.646; Papers of U. S. Grant vol. 11, page not read), plus mssEC 19 9174 lehigh and
+leopard (OR 49.1 p.624). D12-V62 re-read every cited print by script: 8 of 8 C kept. The recount quoted above (lines 393-394) is
+now legacy H 12665 C 70 M 1, split2 H 12642 C 70 M 1. The counted readings (H 367 C 4) and every N-class here are unchanged. The
+book-2 cross-reading outputs (readings_b2.md) were regenerated for today's key-no2.md rows; none is quoted in this file.

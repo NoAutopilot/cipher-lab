@@ -17,7 +17,7 @@ The rule (AUDIT.md "Carry-over R12A-ECKV2"), the same as lehigh_grades.py's:
   Hurlbut) is contradicted by every print-read use, so H does not carry. Legend: two values read by print in overlapping
   months (Butler 11 Feb - 10 Nov 1864, Canby 27 May 1864 - 19 May 1865), so no witness matches an unread use (rule 4).
 D12-E62H (7 Oct 2026, solver): five mssEC 18 M rows gained a print of their own telegram -- Legend 9671, 9672 (OR 33),
-9945 and Leghorn 9945 (OR 49.1 p.580, read in the second IA scan warofrebellion014901rootrich), Legend 9786 (a printed
+9945 and Leghorn 9945 (OR 49.1 p.581 [D12-V62: was p.580], read in the second IA scan warofrebellion014901rootrich), Legend 9786 (a printed
 decipherment outside OR: Papers of U. S. Grant vol. 11, "PUSG 11" in or_vol), and mssEC 19 Leopard 9174 (first use, OR 49.1
 p.624 in the same second scan) -- recorded in the uses tables; same rule.
 The key rows (ciphers/eckert-1864/key.md p.17 l.5-6) stay H as the record of what the book says.

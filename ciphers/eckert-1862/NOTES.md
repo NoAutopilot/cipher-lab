@@ -2135,3 +2135,36 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; Hurlbut-row M tokens 7 -> 1 (D12-E62H); cheapest next: the 112 undated-match '?' entries by a different instrument, or leave '?' as the residue no print or image decides, ~$3; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
+
+## D12-V62 verifier (7 Oct 2026, account 2, LANE DEFAULT-account-2-20261007-1210): grade-change check of D12-E62H (b5a795fe6)
+
+Separate session from D12-E62H. Each M -> C checked against its cited print with a script on the IA `_djvu.txt` (no vision).
+| token(s) | cited print | check | verdict |
+|---|---|---|---|
+| 9671.9 legend | OR 33 p.502 | warofrebellion33unit (sha matches or_volumes.tsv): "Washington, D. C., February 3, 1864 -- 4.30 p. m. ... Please communicate directly with General B. F. Butler, Fort Monroe, in regard to his proposed movements"; time and addressee match the ledger, between the 502/503 heads | keep C Butler |
+| 9672.12 legend | OR 33 p.514 | same scan: "February 5, 1864 -- 11.30 a. m. ... General Butler again asks for a demonstration by your army"; p.514 | keep C Butler |
+| 9785.169 legend | PUSG 11 | Google Books API, quoted phrase "spare Butler for the Chief Supreme Command": 2 hits, both The Papers of Ulysses S. Grant vol. 11 (r0d5C4hAav8C, 1T4fAQAAMAAJ, June 1-Aug 15 1864); snippet aligns word for word with "spare Legend for the supreme Princeton"; page not read | keep C Butler (page not established) |
+| 9945.500 legend, leghorn | OR 49.1 p.580 | warofrebellion014901rootrich: "January 25, 1865 -- 6 p. m. ... More cavalry horses will be sent to you as soon as General Canby can be supplied" | keep C Canby / can be; **page corrected to p.581** (the telegram sits after the 581 running head, before 582) in legend_uses.tsv, leghorn_uses.tsv, hurlbut_row_grades.py docstring and .tsv (regenerated, --check current, counts unchanged), HYPOTHESES.md |
+| 9952.516 lehigh | OR 49.1 p.646 | same scan: "February 4, 1865 -- 10 a. m. ... say 4,000 or 5,000. Canby has many dismounted men", before the 647 head | keep C Canby |
+| mssEC 19 9174 lehigh, leopard (first) | OR 49.1 p.624 | same scan: "February 1, 1865 -- 13.40 p. m. Brig. Gen. EGBERT ALLEN, Louisville: ... sent by General Thomas to General Canby ... General Canby has been notified of this arrangement", p.624 | keep C Canby |
+Result: 8 of 8 C kept, 0 dropped, 1 page citation corrected. ec18.py `--possessive --guard DIR62 --check` exit 0 legacy and --split2;
+hurlbut_row_grades.py and lehigh_grades.py --check current; decode.py --check exit 0.
+
+Pre-existing staleness (flagged by D12-E62H). Test: with ciphers/eckert-1864/key-no2.md put back at 67099403c (10:15 UTC, the last
+commit of entries_b2.tsv; the only input that changed since is key-no2.md: ECK64-NO2, D12-E2, E1, E3, E4), `--book 2 --check`
+(both splits), `ec18_align.py --check` and `--read-free --check` all exit 0; so the staleness is only the key-no2 rows. Regenerated
+with their own scripts at HEAD's key-no2.md, all --check exit 0 after:
+- `--book 2` legacy: 74 entries change; totals H 12907 -> 12911, C 138 -> 161, I 154 -> 226, M 10, oov 5064 -> 5056; fully keyed 18
+  (H 294, C 9 -> 10, I 8 -> 12, M 0); book-2 OR matches 111 -> 112; meanings in print 0.737 -> 0.736 (control 0.425 -> 0.426);
+  guarded tokens 440 -> 450. split2 the same shape (matches 118 -> 119, 0.746 -> 0.745, guarded 446 -> 456).
+- Committed readings that change (readings_b2.md, both splits): 9681.34 "Monkey" -> [Schofield] (C); 9781.163 one more I;
+  9848.277 and 9898.393 "stick" -> [.] (I), with 22 -> 26 and 7 -> 9 shared 5-grams with their OR print. These are Cipher No. 2
+  readings of mssEC 18 (cross-book), not the counted eckert-1862 readings (H 367 C 4 unchanged).
+- `ec18_align.py` (both splits): grades_after_all_tokens I 6 -> 9 (H 168, C 253 unchanged); align_entries 2 rows.
+- `--read-free` (both splits): readings_free.md 13 / 15 lines change (key-no2 rows).
+- Not regenerated (box): `ec18_align.py --rows align_free_rows.tsv --check` is stale both splits; cause not tested (it may be the
+  same key-no2 rows); next: the old-key test above on it, then --write, ~$1.
+AUDIT.md quotes no book-2 count, but its R12A recount (lines 393-394) quotes entries.tsv at C 64 M 7, which D12-E62H moved to C 70 M 1:
+AUDIT.md section 'Propagation D12-V62' added; no N-class changes.
+Requests: archive.org 58 (2 OR texts read first + 8 DIR62 + 48 OR; 1 HTTP 500 on 46.3, one retry after 15 s, sha then matched),
+hdl.huntington.org 1, googleapis.com 1; >= 1.6 s apart. 0 subagents, 0 vision.

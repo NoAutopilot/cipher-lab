@@ -357,7 +357,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9848.277	2	39.2	434	target	2	Brown	1 (numeral)	H	numeral	UNFIXED	n ga chap li lexington sejytcmher 31 1861 brig gen a 0
 9848.277	2	39.2	434	target	3	Chart	Lieut Gen U.S. Grant	H	word	AGREE	
 9848.277	2	39.2	434	target	4	Bridle	City Point	H	word	AGREE	
-9848.277	2	39.2	434	target	5	stick			plain-replaced	CONFLICT	va
+9848.277	2	39.2	434	target	5	stick	Period	I	punct	NOTSCORED	
 9848.277	2	39.2	434	target	8	Wayne	Regiment	H	word	AGREE	
 9848.277	2	39.2	434	target	9	was			plain-replaced	CONFLICT	avas
 9848.277	2	39.2	434	target	15	John	Imboden	H	word	COLLISION	johnson s
@@ -376,6 +376,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9848.277	2	39.2	434	target	61	umber	Pursuit	H	word	AGREE	
 9848.277	2	39.2	434	target	62	Talbot	Of the	H	word	AGREE	
 9848.277	2	39.2	434	target	63	Robin	Enemy	H	word	AGREE	
+9848.277	2	39.2	434	target	64	stick	Period	I	punct	NOTSCORED	
 9848.277	2	39.2	434	target	77	Brimstone	City Point	H	word	AGREE	
 9848.277	2	39.2	434	target	78	Yawl	Signed	H	sig	NOTSCORED	
 9848.277	2	39.2	434	target	79	Embrace	General in Chief	H	word	UNFIXED	
@@ -389,6 +390,7 @@ id	book	or_vol	or_page_ocr	side	idx	code_word	meaning	key_grade	kind	status	prin
 9898.393	2	43.2	640	target	18	wedlock	Tomorrow	H	word	AGREE	to morrow
 9898.393	2	43.2	640	target	26	Spencer	Information	H	word	AGREE	
 9898.393	2	43.2	640	target	28	Charity	Gordonsville	H	word	AGREE	gordon sville
+9898.393	2	43.2	640	target	31	stick	Period	I	punct	NOTSCORED	
 9898.393	2	43.2	640	target	33	trifle	Will be	H	word	AGREE	
 9898.393	2	43.2	640	target	36	windham	Signed	H	sig	NOTSCORED	
 9898.393	2	43.2	640	target	37	George	McCallum D C	H	word	UNFIXED	geo k leet captain and assistant adjutant general kernstown va november 18

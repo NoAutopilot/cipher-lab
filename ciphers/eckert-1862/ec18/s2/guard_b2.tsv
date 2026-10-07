@@ -2,8 +2,10 @@ id	word_index	code_word	meaning	rule
 9668.3	6	Benjamin	Secretary of Navy	B
 9668.3	7	Saint	Force	B
 9669.4	37	desired	Lookout Valley	B
+9669.5	7	telegram	Withdrawn	B
 9670.7	14	Harpers	Trenton	B
 9670.7	19	subject	Protect	B
+9671.8	8	telegram	Withdrawn	B
 9672.11	6	wick	South	J
 9673.14	44	battle	Maj Gen H W Halleck	B
 9674.16	23	rank	Has been sent	B
@@ -11,6 +13,7 @@ id	word_index	code_word	meaning	rule
 9678.28	42	John	Imboden	B
 9678.28	51	John	Imboden	B
 9681.32	33	desire	Lookout Valley	B
+9681.33	14	Telegram	Withdrawn	B
 9683.36	83	staff	Station	B
 9685.41	15	author	Chattahoochee	B
 9686.43	44	respect	Mask	B
@@ -54,6 +57,7 @@ id	word_index	code_word	meaning	rule
 9734.96	64	Shelter	Helping	B
 9734.96	72	Ridge	Equipment	B
 9734.96	78	respect	Mask	B
+9734.96	85	telegram	Withdrawn	B
 9735.98	33	John	Imboden	B
 9736.100	104	Lock	Dix Jno A	J
 9737.101	54	Falmouth	Osterhaus J P	B
@@ -131,6 +135,7 @@ id	word_index	code_word	meaning	rule
 9797.179	88	rank	Has been sent	B
 9798.181	7	learned	Design	B
 9798.182	8	opinion	Field	B
+9798.183	46	suggestions	fortifications	B
 9799.184	5	Barnard	President of U.S.	B
 9801.189	12	desires	Lookout Valley	B
 9802.191	13	Shelter	Helping	B
@@ -183,6 +188,7 @@ id	word_index	code_word	meaning	rule
 9843.269	43	John	Imboden	B
 9844.270	11	subjects	Protect	B
 9844.271	1	Benjamin	Secretary of Navy	B
+9844.271	65	telegram	Withdrawn	B
 9848.277	15	John	Imboden	J
 9848.278	3	Woodbury	Monday	B
 9848.278	83	opinion	Field	B
@@ -234,6 +240,7 @@ id	word_index	code_word	meaning	rule
 9875.344	100	Question	Defend (-ed, -ing) [#]	B
 9876.346	74	reward	Follow (-ed, -ing) [#]	B
 9876.346	81	question	Defend (-ed, -ing) [#]	B
+9878.353	12	Telegrams	Withdrawn	B
 9880.359	26	Shelter	Helping	B
 9880.359	30	spring	In the mean time [?]	J
 9880.359	36	John	Imboden	B
@@ -328,6 +335,7 @@ id	word_index	code_word	meaning	rule
 9963.535	14	white	South	B
 9965.539	40	John	Imboden	B
 9966.542	66	guns	Maj Gen J G Foster	B
+9966.542c	7	telegram	Withdrawn	B
 9967.542e	252	question	Defend (-ed, -ing) [#]	B
 9969.543b	76	learn	Design	B
 9970.544	58	respect	Mask	B
@@ -359,6 +367,7 @@ id	word_index	code_word	meaning	rule
 9991.570	134	staff	Station	B
 9991.571	6	Campbell	Harker	B
 9992.571c	36	subject	Protect	B
+9993.572	6	telegram	Withdrawn	B
 9993.572	25	desire	Lookout Valley	B
 9993.572	117	Shelter	Helping	B
 9993.572	124	John	Imboden	B
@@ -391,6 +400,7 @@ id	word_index	code_word	meaning	rule
 10017.605	38	measures	Engage	B
 10023.617	16	respects	Mask	B
 10023.617	49	express	Tyners Station	B
+10023.617	123	telegram	Withdrawn	B
 10029.627	1	Battle	Maj Gen H W Halleck	B
 10030.629	17	measures	Engage	B
 10030.629	59	respect	Mask	B

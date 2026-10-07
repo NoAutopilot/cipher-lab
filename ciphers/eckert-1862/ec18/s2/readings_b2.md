@@ -6,9 +6,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 [Washington] {time: 1.30 PM} [27] For [Maj Genl U S Grant] The [Wisconsin] [Regiment] is ordered to [Nashville] as requested others will be so ordered as fast as reported ready unless you should wish other wise [.] much anxiety is felt here about [Maj Gen W T Sherman]'s [Movement] [,] We have nothing office all since the [8] [.] [Rebel] accounts represent his [Force]'s as far [South] as Quit - man but say nothing of any [Movement] on [Selma] [.] it is [Report] that [Johnston] has ordered the [Evacuation] of the part of [Georgia] [North] of [Chattahoochee] [River]  {tail: [signed] [Maj Gen H W Halleck] End}
 
-**9681.34** (Page 15, 1864-03-03; H 12 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
+**9681.34** (Page 15, 1864-03-03; H 12 C 1 I 0 M 0; no OR ser. I vols. 32-49 match)
 
-{time: 10 AM} For [Meade G G] [.] Monkey was at morris town on the night of {date: Mar 1} [.] [Grant U S] says ["] [Longstreet] seems to be going in to [Virginia] ["]  {tail: [signed] [Feint]}
+{time: 10 AM} For [Meade G G] [.] [Schofield] was at morris town on the night of {date: Mar 1} [.] [Grant U S] says ["] [Longstreet] seems to be going in to [Virginia] ["]  {tail: [signed] [Feint]}
 
 **9701.64** (Page 35, 1864-04-09; H 25 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
 
@@ -22,9 +22,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 [Washington] {date: May 27} {time: 3 PM} For [Canby Ed R S] [.] The [Department] [Of the] [Missouri] has been added to your [Command (-ed, -ing)] and Mud directed to obey your orders [.] He has [To day] been directed to send down the [River] to you the [10] [Kansas] [Infantry] [,] the [68] U. S. [,] the [12] [Missouri] [Volunteer] [Cavalry] and the [7] [Kansas] [Cavalry] [.] If the latter are not fully mounted [1] or both [Regiment]'s are to go as [Infantry] [.] [Pope John] has sent by [Rail-road] to [Cairo] to [Embark (-ed, -ing) [#]] for lower [Mississippi] the [6] [Minnesota] [Infantry]  {tail: [signed] [Maj Genl H W Halleck] Please time all your [Cipher]'s}
 
-**9781.163** (Page 115, 1864-07-09; H 28 C 1 I 1 M 0; no OR ser. I vols. 32-49 match)
+**9781.163** (Page 115, 1864-07-09; H 28 C 1 I 2 M 0; no OR ser. I vols. 32-49 match)
 
-[Washington] [July] [9] {time: 9 PM} For [Lieut Gen U.S. Grant] [.] A [McLamores Cove] not  {tail: [signed] by [Wallace Lew] but approved by him to the News paper press states that they had a severe [Battled [?]] whiny [Near] Monocacy [Bridge (-ed, -ing)] and that our [Troops] were quarrelled and are now [Retreat (-ed, -ing)]ing on the [Baltimore] [Road] [.] Knowing the character [Of the] source you can judge of its reliability stick nothing further from Minden [.] I do not deem it safe to [Withdraw] any [Force]'s from [Harpers Ferry] till he forms a [Junction] [.] Please in form me what [Force]'s besides Ricketts [Division] have been sent to [Baltimore] in [Order] that I may know the means of defence at that place [signed] [H W Halleck]}
+[Washington] [July] [9] {time: 9 PM} For [Lieut Gen U.S. Grant] [.] A [McLamores Cove] not  {tail: [signed] by [Wallace Lew] but approved by him to the News paper press states that they had a severe [Battled [?]] whiny [Near] Monocacy [Bridge (-ed, -ing)] and that our [Troops] were quarrelled and are now [Retreat (-ed, -ing)]ing on the [Baltimore] [Road] [.] Knowing the character [Of the] source you can judge of its reliability [.] nothing further from Minden [.] I do not deem it safe to [Withdraw] any [Force]'s from [Harpers Ferry] till he forms a [Junction] [.] Please in form me what [Force]'s besides Ricketts [Division] have been sent to [Baltimore] in [Order] that I may know the means of defence at that place [signed] [H W Halleck]}
 
 **9798.182** (Page 132, 1864-07-19; H 13 C 0 I 0 M 0; print: OR ser. I vol. 37.2 p. 382 (OCR running head), 15 shared 5-grams)
 
@@ -46,13 +46,13 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 {time: 10.30 AM} [19] to [Maj Genl U S Grant] [.] [Porter D D] and my self will call upon you at {time: 12 noon AM} [Tomorrow]  {tail: [signed] G V. [McMinnville] asst}
 
-**9848.277** (Page 182, 1864-09-21; H 21 C 0 I 1 M 0; print: OR ser. I vol. 39.2 p. 434 (OCR running head), 22 shared 5-grams)
+**9848.277** (Page 182, 1864-09-21; H 21 C 0 I 3 M 0; print: OR ser. I vol. 39.2 p. 434 (OCR running head), 26 shared 5-grams)
 
-{time: 2 PM} [21] [Lieut Gen U.S. Grant] [City Point] stick a veteran [Regiment] was sent from here yesterday to John sons [Island] as additional [Guard (-ed, -ing)] for [Prisoners] of War against [Rebel] reads from Can a day [.] There are several new [Regiment]'s here detailed by your direction to await [Movement] of [Sheridan P H] . [.] I think they would not be of much use to him [In the] [Pursuit] [Of the] [Enemy] stick Shall I retain them here for the present or send them to [City Point]  {tail: [signed] [General in Chief] her}
+{time: 2 PM} [21] [Lieut Gen U.S. Grant] [City Point] [.] a veteran [Regiment] was sent from here yesterday to John sons [Island] as additional [Guard (-ed, -ing)] for [Prisoners] of War against [Rebel] reads from Can a day [.] There are several new [Regiment]'s here detailed by your direction to await [Movement] of [Sheridan P H] . [.] I think they would not be of much use to him [In the] [Pursuit] [Of the] [Enemy] [.] Shall I retain them here for the present or send them to [City Point]  {tail: [signed] [General in Chief] her}
 
-**9898.393** (Page 232, 1864-11-18; H 13 C 0 I 1 M 0; print: OR ser. I vol. 43.2 p. 640 (OCR running head), 7 shared 5-grams)
+**9898.393** (Page 232, 1864-11-18; H 13 C 0 I 2 M 0; print: OR ser. I vol. 43.2 p. 640 (OCR running head), 9 shared 5-grams)
 
-{time: 1.30 PM} [18] For [Sheridan P H] [.] your [McLamores Cove] of yesterday received [.] [Scout (-ed, -ing)]'s have been directed to go out [Tomorrow] morning and use every effort to obtain [Information] from [Gordonsville] and vicinity stick They [Will be] Kept active  {tail: [signed] [McCallum D C] Kay Leet Asst. [Adjutant General]}
+{time: 1.30 PM} [18] For [Sheridan P H] [.] your [McLamores Cove] of yesterday received [.] [Scout (-ed, -ing)]'s have been directed to go out [Tomorrow] morning and use every effort to obtain [Information] from [Gordonsville] and vicinity [.] They [Will be] Kept active  {tail: [signed] [McCallum D C] Kay Leet Asst. [Adjutant General]}
 
 **9902.402** (Page 236, 1864-11-30; H 12 C 2 I 0 M 0; print: OR ser. I vol. 43.2 p. 708 (OCR running head), 11 shared 5-grams)
 
