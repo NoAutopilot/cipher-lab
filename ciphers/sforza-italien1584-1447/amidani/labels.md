@@ -45,3 +45,13 @@ cannot read: `?`. A sign you are unsure between two labels: `a/b?`.
 
 A superscript small circle or dot above a sign (e.g. above x or 8): write the label followed by `^` (e.g. `x^`).
 Clear (uncoded) words written in ordinary script among the signs: write them as `w:word` (e.g. `w:adusse`), one token.
+
+## Additions made while reading (SFZ-1, 7 Oct 2026)
+
+- `cX` (two characters, `c` + a letter, e.g. `cp cr ci cm cu`): a sign written in the shape of a cursive minuscule letter X, run
+  together with its neighbours so that the group looks like a clear word ("primu", "tanno", "lano", "adusse", "maxie", "mea").
+  The alignment shows these groups are cipher, not clear text (e.g. f.366 "adusse" aligns to "sonno"), so each letter-shape is
+  a separate sign label; the same shape is assumed to be the same sign wherever it occurs.
+- `A`: a-like sign with a bar or tilde above (ā). `P`: b with a bar through the ascender (ƀ). `n`: ∩-shaped sign. `K`: ß-like
+  (fi-ligature-like) sign. `X`: a large cross with a loop (f.148 L7 only). `V`: circle with a horizontal bar (θ). `4`: 4-like.
+- Deviation from the brief: these were read by SFZ-1 itself (one reader), not by two blind Sonnet passes; see NOTES.md.

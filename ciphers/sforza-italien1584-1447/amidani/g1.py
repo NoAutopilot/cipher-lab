@@ -25,6 +25,7 @@ import stream_align as sa  # noqa: E402
 UNITS = [
     ('f366', 'ciphertext_f366.tsv', 'clear_f365.txt', 'fundamentalmente'),  # slip opens in clear up to this word
     ('f367', 'ciphertext_f367.tsv', 'clear_f368.txt', None),
+    ('f148', 'ciphertext_f148.tsv', 'clear_f147.txt', 'havia inteso'),  # slip opens in clear up to "inteso"
 ]
 OPTS = dict(band=40, step=60)
 SEED = 1447
@@ -38,6 +39,8 @@ def load(u):
     txt = ' '.join(l.strip() for l in open(os.path.join(HERE, cl)) if not l.startswith('#')).replace('[ ]', ' ')
     if start:
         txt = txt[txt.index(start) + len(start):]
+    if 'Nientemeno' in txt:  # f.148's cipher ends where its clear closing ("Niente[meno] ...") begins
+        txt = txt[:txt.index('Nientemeno')]
     return name, syms, sa.letters(txt)
 
 
@@ -102,11 +105,14 @@ def main(check=False):
     keytxt = '\n'.join(out) + '\n'
     # conflicts on shared signs (both units give >=2 counts)
     conf = []
-    a, b = [selfk[n] for n in ('f366', 'f367')]
-    for s in allsyms:
-        ra, rb = a[ids[s]], b[ids[s]]
-        if ra.max() >= 2 and rb.max() >= 2:
-            conf.append((s, chr(97 + int(ra.argmax())), chr(97 + int(rb.argmax()))))
+    names = list(selfk)
+    for x in range(len(names)):
+        for y in range(x + 1, len(names)):
+            a, b = selfk[names[x]], selfk[names[y]]
+            for s in allsyms:
+                ra, rb = a[ids[s]], b[ids[s]]
+                if ra.max() >= 2 and rb.max() >= 2:
+                    conf.append((f'{s}[{names[x]}/{names[y]}]', chr(97 + int(ra.argmax())), chr(97 + int(rb.argmax()))))
     # leave-one-out
     rng = np.random.default_rng(SEED)
     rows = ['held_out\tn_signs\tn_null\ttrain_signs\tunseen\treal\tshuffle_mean\tshuffle_p95\tabove_p95']
@@ -135,7 +141,7 @@ def main(check=False):
     verdict = 'PASS' if mean >= 0.60 and allabove else 'FAIL'
     rows.append(f'# mean held-out accuracy {mean:.3f}; gate >= 0.60 and every unit > shuffle p95: {verdict}')
     agree = sum(1 for _, x, y in conf if x == y)
-    rows.append(f'# shared signs with >=2 counts in both unit keys: {len(conf)}; same value {agree}; conflicts '
+    rows.append(f'# shared sign-pairs (sign, unit pair) with >=2 counts in both unit keys: {len(conf)}; same value {agree}; conflicts '
                 + ', '.join(f'{s}:{x}/{y}' for s, x, y in conf if x != y))
     gtxt = '\n'.join(rows) + '\n'
     if check:

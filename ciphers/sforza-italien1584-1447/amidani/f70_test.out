@@ -1,0 +1,5 @@
+f.70 codes 390; decoded 377; codes with no counterpart or untrained: K O P W
+lm(it16dip)	real -1.779	shuffle mean -2.016	p95 -1.812
+q4(copies)	real 0.029	shuffle mean 0.016	p95 0.032
+verdict: FAIL (both above shuffle p95 required)
+decode (TEST ONLY, not a reading, every token M at best): iresenoeraosaneresegalnsoerscoceeetluarnnertsraeemansralnmlcscaosamcrsalnamnestrralasaoscrrseonneracnsmatlsnernsrlaunmlarsrccertsscscutelnsraecmtacslcnaosranosrabsnrtcerteamenlncenesrsranosecmrlaalena

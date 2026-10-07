@@ -137,3 +137,5 @@ loan or the publisher's page).
 gallica.bnf.fr 53 canvases at 1200 px + 3 crops = 56 (1.6-2 s apart, no 4xx/5xx); archive.org 6 (advancedsearch 3, metadata 1,
 download 2, one 500 and one retry), be-api.us.archive.org 7; googleapis.com/books 1; ciphermysteries.com 2 and voynich.ninja 1
 via WebFetch.
+
+- SFZ-1 (7 Oct 2026, 21:4x UTC): Amidani 1447 known-plaintext key in `amidani/` (ff.366/365, 367/368, 148/147; key.tsv 65 labels, 35 at C); held-out gate G1 PASS (0.776/0.775/0.739 vs shuffle p95 0.38-0.42); f.70 (italien 1583, 1446) test FAIL under a description-only mapping of Bourdeau's codes (not a test of the 1446 key: needs f.70 re-read from an image). See amidani/NOTES.md.
