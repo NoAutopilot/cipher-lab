@@ -5914,3 +5914,28 @@ roughly 20 of the 46 worker spend landed on text that proved known -- the cost o
 Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 unread, plus 109 mssEC 19 pages never fetched), ~0.6-0.9 per entry
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
+
+## LANE DEFAULT-account-4-20261007-1335 handoff (session_01FwjSioN4d1tryS9vCFN4aN, account 4), 7 October 2026 (closed 15:2x UTC: backlog spent, lane about 55 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-07-account4-default1335-jobs.md. Gate 0a: no SESSION-SWEEP-account-4 row.
+Backlog: VERIFY-BACKLOG (eckert-1864 N2-AI/N2-AJ audit 2), then `next_steps.py --hot-only` filtered against 7 Oct briefs and ROOM claims.
+Workers (12, Opus, all ledgered; 4 waves): 47.39 by get_session; orchestrator ~7.2; five_hour `allowed` throughout. D4-VILL2 ran 2.0x its
+$8 cap (16.19; interrupted 15:10, the hold-out had already scored); every other worker under cap.
+
+Results:
+- eckert-1864: N2-AI and N2-AJ second audits keep N3 (RG 92/107/393 and the OR Supplement unread), depth D3 -> D4; N2-AJ header re-read
+  "12. midn" (D4-E5H corrected the reading files; D4-VP2 carried it into D12-VP sections 3-5). Seven (No 2) entries pp.86-105 read as
+  N2-AZ..BF (H 292 C 15 I 14 M 0), all N1 (OR / PUSG 11) per D4-VP2, 3 page cites corrected.
+- fr15564-mercoeur-1586: shared-scale glyph sheet, 33/48 labels have a Lasry-key counterpart; sheet-matched cells test FAIL with clean control. blocked.
+- hessen-daenemark-1672: Escalation key-rebuild by de17 context fill: control FAIL (MRR 0.208 vs null p95 0.314), step [retired].
+- costabili-modena-1491: R1167 cipher vs clear copy, three runs (D4-COST, COST2, COST3); gates pass on the expanded-sigla convention but no
+  sign meets the per-sign conditions; copy alignment [retired] for TT/Z/q (rule 3 third attempt); key unchanged, R1166 P4 coverage 0.718 < 0.80.
+- fr7129-villeroy-bongars-1604: f.260r 13 lines read + checked with the clerk gloss in view (crops/passes/PREREG on main, ad13b43d7);
+  M9 hold-out 0.321 (shuffle 0.245) and within-f.260 0.453 vs 0.70 bar NOT met; instrument [retired]; next step the owner's sign sorter on the
+  f.260 windows. Its NOTES section, vill2_align.py and key/pair TSVs (commits fe84c6f2d, 47346e8b5, a59e5c473) were unpushed at close
+  because of GitHub HTTP 500s; the session was retrying. If they never land: re-derive with `python3 sibling/vill2_align.py run`.
+Known-text share: E5 + VP2 = 8.48 of 47.39 (18%) on entries that proved printed; Costabili's three runs (9.27) were key-building on a
+period-deciphered leaf for the unread R1166 P4 (guardrail-allowed); together 37%.
+
+Left: eckert-1864 No 2 pp.107-182 (~34 entries, expected mostly N1; read only if the next lane accepts the known-text cost); fr7129 and
+fr15564 and costabili q/TT wait on the owner's sign sorter; hessen-daenemark nomenclator needs physical access.
