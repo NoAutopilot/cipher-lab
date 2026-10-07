@@ -64,3 +64,14 @@ KEYHUNT-2026-10-07-KH1-D.tsv (WVO geheimschrift search: WVO 1068 glossed), KEYHU
   key_stamford. Sibling = a cipher passage in Birch printed as cipher/undeciphered ("the rest in cipher", unglossed
   number groups) from the same correspondent and key window, not already in thurloe-printed/. Use the IA djvu text
   with scripts (tools/ia_numeral_runs.py), not a model reading volumes.
+
+## Wave 2 (18:4x UTC, after wave 1 closed)
+- KH2-E2 (screening only, cap $3, box 60 min; no key rebuild, no decode): finish the two unscreened sets KH2-E left
+  (read its ROOM done line and keyhunt/2026-10-07-KH2E.tsv first). (a) Eye-check the 8 Gonzalez Bravo neighbour
+  records of rah-canada-1869 in RAH (OAI didl + tools/browser_fetch.js --binary, CLAUDE.md RAH recipe), one low-res
+  image per record: cipher yes/no. (b) For row 40 sforza-maino-1446, screen the Mazzatinti 'In cifre' items 1446-49 in
+  italien 1584 (Gallica btv1b100373864) and 1585 at low resolution: carries cipher, glossed/clear copy beside it, and
+  whether the cipher alphabet looks like f.68/f.70's (Maino/Amidani) or another. Count, do not decode: the held key is
+  an anneal artefact, so the Amidani known-plaintext key rebuild stays a named next step (~USD 5) in NOTES.md.
+  Append rows to a separate file keyhunt/2026-10-07-KH2E2.tsv (same columns). Per-unit: ~$0.05 per low-res image
+  check; stop at 80% of cap.
