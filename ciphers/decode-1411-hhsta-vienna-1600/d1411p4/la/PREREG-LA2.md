@@ -1,4 +1,4 @@
-# PREREG-LA2: per-number tile re-read of the p.4 4/5 forms (written 7 Oct 2026 01:0x UTC by date -u, before any tile is read)
+# PREREG-LA2: per-number tile re-read of the p.4 4/5 forms (written 7 Oct 2026 00:52 UTC by date -u; time corrected in the next commit, text unchanged, before any tile is read)
 
 Job D07-D1411 (LANE DEFAULT-account-1-20261007-0042). Re-run of R12A-D1411LA (PREREG-LA.md, cafba26e3/f376b6b96), whose
 line-crop re-read was void (83/83 '?', reader could not see the digits). The scoring pre-registration PREREG-D1411P4.md
@@ -9,7 +9,7 @@ changed after this file. Only the instrument changes:
 1. Tiles: the same 83 numbers of la/tiles.tsv (same mask column). Each is cut on its own from its native-resolution line
    crop (images/d1411p4_crops/<line>.jpg, cut from IMG_R1411_I6598_P4.png at native resolution by iiif_lines.py in
    R12A-D1411P4), with x-ranges placed by the worker on a ruler overlay (la2/boxes.tsv; the worker places boxes, does not
-   read shapes), a 12 px margin, full line height, enlarged 4x (LANCZOS) by la2/cut_tiles.py into la2/tiles/<line>_<pos>.png.
+   read shapes), a 25 px margin (12 px in the draft; widened after a framing check on one tile, before any read), full line height, enlarged 4x (LANCZOS) by la2/cut_tiles.py into la2/tiles/<line>_<pos>.png.
    A tile may include a neighbour's edge; the prompt names how many digits the target number has and which are masked.
 2. Prompt (la2/prompt.md): same shape vocabulary as PREREG-LA (X cross, R r-form, O other digit, ?), value-blind: for each
    tile only the masked pattern (e.g. '#6', '##') is shown, never the committed value, a table, a gloss or a decode.
