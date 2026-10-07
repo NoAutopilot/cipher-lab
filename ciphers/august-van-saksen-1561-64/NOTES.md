@@ -1159,3 +1159,14 @@ Worker RUN6-AVS62 (LANE-RUN6, account 1), 04:45-04:5x UTC by `date -u`. Brief `.
   novelty class (rule 10).
 - Remaining for this job: none. Follow-up suggestion (not run, Workers rule 7): native re-look of 74 p3 l.10 idx 6 and f.19 l.13 when 74
   is next opened (re-fetch `pdf_url` for 00074 in images/manifest.json).
+
+## Keyhunt 7 Oct 2026 (KH1-D, LANE KH-1)
+Searched 7 Oct 2026 (date -u): WVO advanced search (resources.huygens.knaw.nl) by correspondent "Saksen" (198 August
+letters 1558-1567) and by remarks "geheimschrift" (11) and "geheim" (19). The 24 Sept harvest used only "cijfer", which
+misses "geheimschrift". That adds 76 (no cipher on the original), 1068 and 1130 (Willem van Hessen). Detail pages read
+for 76, 1068, 1130; 01068.pdf fetched to the scratchpad (not committed). **Unread siblings for key/key_53/key_74/key_98: 0.**
+Every WVO August letter with cipher in the window is already in this folder. 1068 (Willem -> Willem van Hessen,
+13 Mar 1563, Marburg 3II Korr. 1563 f.28) carries a complete contemporary interlinear decipherment, and its text is 98's
+f.67 ("Es wirt auch bei uns fur gewis gesagt das Wilhelm von Grombach ..."). Its sign set is the Hessian one, not System B.
+That makes it a known-plaintext page for the Orange-Hessen key, not for this one. Test: none (no survivor).
+File: KEYHUNT-2026-10-07-KH1-D.tsv.

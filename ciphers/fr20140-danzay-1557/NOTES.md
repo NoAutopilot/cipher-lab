@@ -698,3 +698,11 @@ remains H 37 (10 nulls) / M 26 / U 4 (line 1 H 15 M 8 U 2; lines 2-4 H 22 M 18 U
 AUDIT.md and status.json stand. The earlier suggestion "test LRD against t row 2 in ...ment par deça" is settled
 by the sign identity, without using Tomokiyo's t row 2 cell. `<le>` now occurs on f.36r only at 36R2 pos 1.
 - Suggestion (V3b, 24 Sept 2026, from second opinion SO-DANZAY-F35): reading.txt shows LRD as `<le Roy de Dannemarch>` where it reads r/R (V5, V11-12, V26, V28, item 3 above); a solver should decide whether to key LRD as letter r in context and show both values, as for T and hk.
+
+## Keyhunt 7 Oct 2026 (KH1-D, LANE KH-1)
+Searched 7 Oct 2026 (date -u): Gallica SRU "Danzay" (199 records; every other BnF Danzay volume is dated 1566-1588) and
+700 px thumbnails of fr.20140 canvases 72-99 (ff.37r-50v). ff.50-56 were not fetched (Gallica connection reset at canvas
+100; not retried). f.37 is clear. ff.38-39 are letters to Danzay with margin dates 17 and 18 Nov 1558, cursive minutes with
+no cipher seen at this size. ff.40-42 are Latin letters of 1566 and ff.43-49 are despatches dated 1567, outside the
+1554-1560 window. **Unread siblings for key.tsv: 0.** A native look at ff.38-39 would rule out isolated cipher words.
+Test: none. File: KEYHUNT-2026-10-07-KH1-D.tsv.

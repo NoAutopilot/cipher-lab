@@ -691,3 +691,10 @@ owner's desk runner opens `https://web.archive.org/web/*/cryptiana.web.fc2.com/c
 If a capture exists, a ~$1 comparison of signs 02-28 against the f.290-293 key follows, with a shuffled-assignment control.
 Requests: web.archive.org 2 (both reset), archive.org 1 (429). Subagents 0.
 
+
+## Keyhunt 7 Oct 2026 (KH1-D, LANE KH-1)
+Searched 7 Oct 2026 (date -u): TNA Discovery API, 1577-1586: "Bowes cipher" 0 hits, "Bowes cypher" 1 (unrelated), "Bowes
+Walsingham" 15. Two of those are Bowes holdings outside BL: NYPL MssCol 1313 (letters 1582-1597; archives.nypl.org
+answered 403, stopped) and NRAS885 (private letter books 1569-1580). Cotton Caligula C VII/B VIII are not digitised, and
+SP 52 has no free images. **Unread cloud-fetchable siblings: 0.** One desk check is worth doing: whether NYPL MssCol 1313
+is digitised and carries cipher. Test: none. File: KEYHUNT-2026-10-07-KH1-D.tsv.
