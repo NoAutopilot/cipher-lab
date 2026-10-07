@@ -622,3 +622,11 @@ Next steps (not run): (1) read the printed letters at offsets 2685183 and 282721
 BnF copy carries code groups that match key.tsv names (a plain-copy known-plaintext check, C grade); (2) the printed
 fr.5761 letters of vol. I as cipher-group witnesses; (3) volume II/III (1520-21) not searched. Vol. I is a Kluckhohn
 "Cop." for each BnF item, so the groups may be only partly retained.
+
+## Keyhunt 7 Oct 2026 (KH2-A, LANE KH-2)
+
+Unread fetchable siblings for key.tsv: 0. The fr.3092 "Memoire chiffre" leaves (f.101, f.103-104, f.107; Gallica btv1b10720612s
+canvas 105, 107-108, 111), full-page symbol cipher near Langeac/d'Orval items of 1521, are already read by Lasry and Biermann
+(2023; Tomokiyo GL.htm "De la Tremoille's(?) cipher"), and their signs look unlike the eight blocks here at sheet scale. The
+fr.5761 ff.54-172 copies with names in cipher are printed with names resolved in RTA J.R. I (Kluckhohn 1893), so they are a
+possible C-grade check of the name codes (no leaf walk yet), not unread text. Rows: `keyhunt/2026-10-07-KH2A.tsv`.

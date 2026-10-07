@@ -2173,3 +2173,11 @@ Colbert 26 part III is read whole, 375 of 375 canvases, none with cipher (R12A-F
 step is done. Next step: the Français 20661-20662 lead (Brienne's 1653 despatch minutes, R11A-F5160 (3)) has no Gallica link and
 needs an on-site read or a reproduction quote -- person-side, via REQUEST.md; nothing in this folder is runnable by an agent
 until that answers.
+
+## Keyhunt 7 Oct 2026 (KH2-A, LANE KH-2)
+
+Unread fetchable siblings: key_1659 0, key_brienne_1647 0, key_brienne_1651 0. Searched 7 Oct 2026: this file's census sections
+(not repeated), Gallica SRU (Servien/Brienne/Estrades with chiffre), archivesetmanuscrits records for Clairambault 571-582
+(D'Estrades papers: no Gallica link on any), Tomokiyo louisxiv0.htm (Clair. 577/579 cipher letters already reconstructed or listed),
+DECODE lists on disk (R9430 = Clair. 577 key only). Printed clear text for the D'Estrades side: Saint-Leger 1924 (Gallica
+bpt6k6549213m). No leaf tested. Rows: `keyhunt/2026-10-07-KH2A.tsv`.
