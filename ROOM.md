@@ -10211,3 +10211,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 01:10 | D07-NEVF25 worker | claim: D07-NEVF25 fr3416-nevers-fils-1589 sibling key-no.25 letter (fr.4715 f.27/f.38) for L05 pairing, cap 5, box end 02:10 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
 2026-10-07 01:11 | D07-PISSD worker | claim: D07-PISSD fr16045-pisany-rome-1585 key86 T40 page-internal same/different compare, cap 4, box end 02:00 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
 2026-10-07 01:10 | D07-NOX510 worker | claim D07-NOX510 fr16142-noailles-constantinople-1571 place 14 split-pile c262 tiles then prereg c510-516 decode through bridge, cap 5, box end 02:10 UTC 7 Oct, for LANE DEFAULT-account-1-20261007-0042
+2026-10-07 01:12 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:12 UTC: spawned 0 (), queued left 0
