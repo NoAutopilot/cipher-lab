@@ -225,7 +225,7 @@ keyhunt/2026-10-07-KH1B.tsv.
 
 KH1-F (LANE KH-1), 18:29-18:38 UTC 7 Oct 2026 by date -u: fr.3988 f.143r-f.144v (four cipher pages, not two) has no gloss on canvases 304-307 and no decipherment on 302-303/309/310 (308 unread); not in Lettres missives iii-iv. Hand profile against the no.60 atlas (GAPS4 method, `keyhunt_f143/`): careful blind pass N=177 atlas 42.9%, key60 91.0%, NEW 0.6% vs leaf-298 office hand 75.9/91.0/0.0 and f.198r Revol 45.5/84.5/9.1; pre-registered gate atlas >=65% fails -> atlas not licensed, no decode, no control (keyhunt/2026-10-07-KH1F.tsv). Next: a held-out tile check on this hand, ~USD 4.
 
-KHF-4 (account 4, session_01FjZnYWC5C2nFYxBYK1Eijh), 19:36-19:5x UTC 7 Oct 2026 by date -u, brief
+KHF-4 (account 4, session_01FjZnYWC5C2nFYxBYK1Eijh), 19:36-19:45 UTC 7 Oct 2026 by date -u, brief
 `.claude/briefs/runs/2026-10-07-acct3-kh-follow.md`: held-out family check on fr.3988 f.143r (KH1-F's named next step).
 Instrument changed from KH1-F's profile because that profile had no negative control: nobody had measured what a sign set
 from a *different* key scores when read against the no.60 sheet. 65 tiles, one sign each, shuffled and blind

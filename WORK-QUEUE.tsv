@@ -299,4 +299,4 @@ KH-2	account-2	.claude/briefs/runs/2026-10-07-acct3-keyhunt.md	Opus 5.5	40	300	c
 KH-4	account-4	.claude/briefs/runs/2026-10-07-acct3-keyhunt.md	Opus 5.5	40	300	done 2026-10-07 18:58	2026-10-07 17:2x	key-hunt: unread siblings for KEY-OFFICES rows 49-71
 KHF-1	account-1	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	10	90	queued	2026-10-07 19:3x	erving-monroe-1806 check-solved + verifier
 KHF-2	account-2	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	10	90	queued	2026-10-07 19:3x	wvo-11008 Orange to Lodewijk 1572 check-solved + verifier
-KHF-4	account-4	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	8	75	claimed session_01FjZnYWC5C2nFYxBYK1Eijh 2026-10-07 19:35	2026-10-07 19:3x	fr3988 f.143 Henri IV to Nevers 1593 held-out hand check
+KHF-4	account-4	.claude/briefs/runs/2026-10-07-acct3-kh-follow.md	Opus 5.5	8	75	done 2026-10-07 19:44	2026-10-07 19:3x	fr3988 f.143 Henri IV to Nevers 1593 held-out hand check; NON-TEST: neg control 70% in-family
