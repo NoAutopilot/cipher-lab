@@ -220,6 +220,7 @@ body.traypad #offer{bottom:100px}
       <label for="order">Order <select id="order"><option value="odd">Odd ones first</option><option value="page">Page order</option></select></label>
     </div></details>
     <section id="rank" hidden><h2 class="ftitle">Most useful first</h2><p class="sub" id="rankNote"></p><div class="tiles" id="rankTiles"></div></section>
+    <details id="refBox" class="opts" hidden><summary id="refCap"></summary><div style="overflow:auto;max-height:70vh;background:var(--tile);border-radius:6px;margin-top:6px"><img id="refImg" alt="Reference sheet" style="max-width:none;display:block"></div><p class="hint">Scroll the sheet sideways if it is wide; it stays open while you sort.</p></details>
     <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><div class="tiles" id="focusTiles"></div></section>
     <div id="list"></div>
     <p class="hint" id="foot"></p>
@@ -1350,6 +1351,7 @@ function markFocusDone(){ document.querySelectorAll('#focusTiles > div').forEach
 function markRankDone(){ document.querySelectorAll('#rankTiles > div').forEach(d => { const sid = d.dataset.sid;
   const done = (!!moves[sid] && moves[sid] !== 'OUT') || !!checked[sid] || !!statusOf(homeOf[sid]); d.querySelector('.t').classList.toggle('done', done); }); }
 const render0 = render; render = function(){ render0(); markRankDone(); markFocusDone(); };
+if (DATA.refImg){ $('refBox').hidden = false; $('refImg').src = DATA.refImg; $('refCap').textContent = DATA.refCaption || 'Reference sheet'; }
 render();
 
 updateUndo();

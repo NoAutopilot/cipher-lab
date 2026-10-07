@@ -428,6 +428,9 @@ def main(argv=None):
                     '<out stem>_region.jpg beside it (a supporting file to publish with the page)')
     ap.add_argument('--focus', help='TSV sid<TAB>question: tiles shown first in a "Check these first" box')
     ap.add_argument('--focus-note', default='')
+    ap.add_argument('--ref-image', help='a reference sheet (e.g. a published sign table) shown in a collapsible panel above the piles')
+    ap.add_argument('--ref-caption', default='Reference sheet', help='heading and credit line for --ref-image')
+    ap.add_argument('--ref-width', type=int, default=1400, help='max width in px the reference image is scaled to')
     ap.add_argument('--refs', help='TSV with a sid column: tiles the person already sorted, shown with a check as examples (correctable)')
     g = ap.add_mutually_exclusive_group()
     g.add_argument('--clusters', help='TSV sid<TAB>cluster, or glyph_atlas clusters.tsv: cluster-level decisions')
@@ -465,6 +468,14 @@ def main(argv=None):
         data['clusterSource'] = 'atlas'
     if a.atlas:
         data['atlas'] = a.atlas
+    if a.ref_image:
+        from PIL import Image as _I
+        import io as _io, base64 as _b64
+        im = _I.open(a.ref_image).convert('RGB')
+        if im.width > a.ref_width: im = im.resize((a.ref_width, round(im.height * a.ref_width / im.width)))
+        buf = _io.BytesIO(); im.save(buf, 'JPEG', quality=85)
+        data['refImg'] = 'data:image/jpeg;base64,' + _b64.b64encode(buf.getvalue()).decode()
+        data['refCaption'] = a.ref_caption
     focus_sids = []
     if a.focus:
         data['focus'] = [{'sid': r[0], 'q': r[1]} for r in (l.rstrip('\n').split('\t') for l in open(a.focus)) if len(r) >= 2]
