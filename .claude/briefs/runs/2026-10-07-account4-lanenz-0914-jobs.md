@@ -72,3 +72,15 @@ transcribed. Check that against the folder (which glossed frames with U-code hit
 eye at reduced size, with frame 0511 as an in-sheet positive control; record class / glossed / code range per frame. No transcription, no
 key change. Rewrite the Verdict's cheapest-next to the true next step (with cost), or "parked" per rule 5 if every route left is
 outside-blocked or only the low-yield 0001-0501 off-stride-10 screen remains (then name it with its cost as a [ ] step). gaps_check passes.
+
+## Wave 3 (spawned 10:1x UTC 7 Oct; named by NZ-MANT)
+
+### NZ-MANT2 -- sachsstaatsarchiv-manteuffel-1712: 0517 doubtful 399/400 native zoom, then 694/08 0001-0501 stride-10 offset-5 eye screen (Opus; cap 3, box 50 min)
+Intake: `sachsstaatsarchiv-manteuffel-1712: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+NZ-MANT's Verdict (7 Oct 2026, commit 1072a01aa): "cheapest next: a native zoom of 0517's doubtful 399/400 (~0.5), then the 694/08 0001-0501
+stride-10 offset-5 eye screen (~50 frames, ~1.5) for glossed nomenclator-range runs". Step 1: one native crop (crop step pasted) of 0517's
+doubtful digits, read by your own eye; if a digit settles to a code in f.410's U list, say so (M at most, no key change from one sighting).
+Step 2: frames 0005, 0015, ... 0495 not already in any inventory (check the inventories first), contact sheets of ~12 at reduced size with
+0511 as in-sheet positive control, archiv.sachsen.de one fetch at a time >= 1.5 s; unit = one sheet ~0.35; stop before a sheet that crosses
+80% of cap or box. Record class/glossed/code range per frame in a new inventory TSV; name the top glossed nomenclator-range frames (if any)
+as the next step with cost. No transcription, no key change. Update gap counts and Verdict; gaps_check passes.
