@@ -1,4 +1,5 @@
-Status: open
+Status: found-solved
+Verifier KHF-1 verifier, 7 Oct 2026 (AUDIT.md): **N0**, key `published`, text known, depth D3 (about 85%). The passage was deciphered and printed by Irving Brant, *James Madison: Secretary of State, 1800-1809* (1953), at his chapter note 12: "Monroe received from George Erving in cipher and placed in his papers without an interlining. Deciphered a century and a half later, it reads: 'It is said that Randolph asked when Mr. Monroe would return home. The President answered, not until his successor arrives. The other bluntly observed that he, Mr. Monroe, would be the next President.'" Our reading is an independent re-decipherment that agrees with it word for word. The check-solved verdict `open` below was wrong (AUDIT.md section 4); the line that follows is the check-solved worker's, kept as written.
 1904 LOC *Papers of James Monroe* calendar (IA cu31924029594037) p.39 and the 1891 Dept of State *Calendar of the Correspondence of James Monroe* (IA cu31924032751665) p.70 read by this worker (both list the letter, the 1891 one says "Remarks about Randolph in cipher", neither prints or deciphers it); Preston, *Papers of James Monroe* vol. 5 (2014) table of contents (1806 section, every entry) read by this worker, letter absent; Hamilton, *Writings of James Monroe* vol. IV (IA writingsjamesmo03monrgoog) full-text grep for Erving/Lisbon/successor, letter absent.
 
 # George W. Erving to James Monroe, Lisbon 23 May 1806 -- coded passage in WE028
@@ -64,9 +65,10 @@ the shuffled-key control above is the stronger evidence.
   decode), read in ciphers/armstrong-madison-1808 H25/H29 -- the same channel; not this letter.
 
 Report what was found and where it was not found; novelty is a verifier's call (rule 10).
+Verifier, 7 Oct 2026: N0 -- Brant (1953) printed this passage's decipherment; see AUDIT.md.
 
 ## Check-solved (KHF-1, 7 Oct 2026)
-Verdict: **open** (KHF-1, account 1, 20:42-21:0x UTC by date -u). Edition by edition:
+Verdict: **open** (KHF-1, account 1, 20:42-21:0x UTC by date -u). **Overturned by the verifier, 7 Oct 2026: printed decipherment in Brant 1953, see AUDIT.md -- `found-solved`.** Edition by edition:
 - **1904 LOC calendar** (*Papers of James Monroe, listed in chronological order*, IA cu31924029594037, `_djvu.txt`, whole
   volume grepped for "Erving" -- 40 hits -- and every 1806 heading): p.39, May 1806, "23. George William Erving to Monroe."
   No summary, no cipher flag.
@@ -118,7 +120,7 @@ page on disk (above); `site:ciphermysteries.com Erving Monroe cipher 1806` (**Ci
 No comment thread to read: no hit on any of the three blogs touched this letter.
 Google Books API (`country=US`, keyed): `"Monroe would be the next President"` and `"until his successor arrives" Monroe`
 -- no result; `"Erving" "Lisbon" "23 May 1806"` -- the 1891 calendar (above) and Weber, *United States Diplomatic Codes and
-Ciphers* (WE028 background, not this letter).
+Ciphers* (WE028 background, not this letter). [Verifier correction, 7 Oct 2026: Weber's note cites **this very letter** -- "Erving to Monroe, Madrid, February 5, 1806 and Lisbon, May 23, 1806, in JMP, R 3" -- as a use of the code; and the query "Monroe would be the next President" returns seven hits when re-run, two of them Brant's printed decipherment. See AUDIT.md.]
 
 ## Premise check (KHF-1, 7 Oct 2026)
 - (a) Folder's own mentions: the only gloss-like marks are two **code numbers interlined by the writer** -- "1385" above "78"

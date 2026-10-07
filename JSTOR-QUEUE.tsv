@@ -322,3 +322,5 @@ ciphers/wvo-11008-certain-1572	"Lambert Certain" AND 1572 AND (chiffre OR cipher
 ciphers/wvo-11008-certain-1572	"duc de Holstein" AND Orange AND 1572 AND chiffre	2026-10-07	queued	
 ciphers/wvo-11008-certain-1572	"J'ay recheu ce jourduy les deux vostres"	2026-10-07	queued	
 ciphers/wvo-11008-certain-1572	"Lambert Certain" "Tournay"	2026-10-07	queued	
+ciphers/erving-monroe-1806	Erving AND Monroe AND 1806 AND (cipher OR code) AND Randolph	2026-10-07	queued	
+ciphers/erving-monroe-1806	"not until his successor arrives"	2026-10-07	queued	
