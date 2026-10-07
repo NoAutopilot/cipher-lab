@@ -1,0 +1,10 @@
+positive control 83=de+31=que on scored canvas 20-21: H 10/10 ctrl mean 5.21 p95 8 max 10 P 0.0017
+positive control 83=de+31=que on held-out f.24: H 14/16 ctrl mean 9.62 p95 13 max 15 P 0.0102
+code	value	side	N	H	ctrl_mean	p95	max	P	P_min	pos_power_at_N	side_verdict
+42	si	scored	4	4	1.48	3	4	0.0144	0.0144	0.049	PASS
+42	si	heldout	2	1	1.01	2	2	0.7588	0.2524	0.000	UNDERPOWERED
+11	le	scored	8	8	4.01	6	8	0.0030	0.0030	0.990	PASS
+11	le	heldout	12	8	5.60	8	9	0.0604	0.0000	0.621	FAIL
+6	je	scored	4	1	0.29	1	1	0.2929	0.0000	0.045	FAIL
+6	je	heldout	9	0	0.00	0	0	1.0000	0.0000	0.410	FAIL
+GATE: 42=si HELD-OUT-UNDERPOWERED, 11=le FAIL, 6=je FAIL
