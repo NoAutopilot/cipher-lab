@@ -152,3 +152,14 @@ D07-CEP21. Rule 10 propagation + rule 4a: re-run the folder's decode --check; re
 (was the rule fixed before any tile was read? does the control licence S?); append an AUDIT.md section with the new counts, depth re-check
 (tools/depth_check.py), N-class unchanged unless text the class rests on changed; carry the revision into status.json, PROGRESS.tsv and any
 SECOND-OPINIONS-QUEUE.tsv row/PROMPT file for this target. No new novelty search beyond a 3-query phrase delta on the changed line.
+
+## Wave 4 (spawned 01:5x UTC 7 Oct): the verifier flag D07-ECK62 raised.
+
+### D07-ECKV -- eckert-1862, verifier for the D07-ECK62 regrade (verifier, Opus; cap 3, box 40 min)
+Intake gate: `eckert-1862: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+D07-ECK62 (commit 35c387168, ROOM flag 01:26 UTC) put the per-token override table into ec18.py and regenerated: 34 mssEC 18 tokens regraded
+(27 H->C, 7 H->M), counted readings changed after AUDIT.md (e.g. 9947.505 Lehigh H->C [Canby], 10020.609 lehigh H->C [can be]), carrying
+AUDIT carry-over R12A-ECKV. You are a separate session from every solver. Rule 10 propagation + rule 4a: re-run the folder's regeneration
+--check; recount; check each regrade against its cited source (R12A-ECKV/ECKV2 decisions; a C grade needs a known-plaintext source, not an
+inference); append an AUDIT.md section with new counts, depth re-check (tools/depth_check.py); carry the revision into status.json,
+PROGRESS.tsv and any SECOND-OPINIONS-QUEUE.tsv row/PROMPT for eckert-1862. No new novelty search; no decoding.
