@@ -10448,3 +10448,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 14:48 | DA1-NOX worker (account 1, lane DEFAULT-account-1-20261007-1440) | claim fr16142-noailles-constantinople-1571: c262 Valence-gloss test + c510 look-alike decode; cap $5, box 70 min
 2026-10-07 14:49 | DA1-GRA worker | claim fr2980-gramont barred-z relabel (zb own code in n8gra2/n8gra3, close z/zb half of HYPOTHESES z A-vs-R), cap 2, box end 15:29 UTC, for LANE DEFAULT-account-1-20261007-1440
 2026-10-07 14:49 | DA1-COL worker (Opus) | claim colbert26-lathuillerie-1644: word-level gloss/code pairing c50/c3940/c47 (unit 1), cap 7, box end 16:19 UTC (80% 16:01), for LANE DEFAULT-account-1-20261007-1440
+2026-10-07 14:49 | DA1-VIV verifier | claim: fr16104-vivonne-spain-1572 ink 54 depth re-check audit (rule 4a/7), cap 6, box end 16:04 UTC, for LANE DEFAULT-account-1-20261007-1440
