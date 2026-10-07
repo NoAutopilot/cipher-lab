@@ -120,3 +120,26 @@ prior (`tools/interlinear_align.py` where pairs are word-level). Pre-register th
 control) before scoring; new values enter at C only from the alignment. Units: ~3 vision calls x 1.5 + floor. Update Remaining gaps /
 Escalation, `tools/gaps_check.py costabili-modena-1491`. Keep committed images under 30 MB (crops only; manifest for the rest). Report what
 was found and where it was not found; do not classify novelty.
+
+## Wave 3 (spawned 14:2x UTC 7 Oct). D4-E5H done 14:06 (1.10), D4-COST done 14:09 (3.32). Gallica still timing out at 14:18.
+
+### D4-VP2 -- eckert-1864 AUDIT propagation N2-AZ..BF + N2-AJ header (verifier, Opus; cap 4, box 50 min)
+Separate session from D4-E5 (solver of N2-AZ..BF) and D4-E5H. Exactly as D12-VP's "## AUDIT (propagation, D12-VP)" did for N2-V..AY:
+`decode_no2.py --check` exit 0; check tokens of at least 3 of the 7 new entries on strip crops (one IIIF image per page, regenerable); for
+each of N2-AZ..BF verify the solver's print citations (OR volume/part/page, PUSG 11 for N2-AZ) by script or page read, and search for any
+entry the solver did not locate; class each (N1 where printed, otherwise N3 with the search log), key `period`, depth; carry the six new
+key-no2 section 8 clerk forms; status.json result rows and PROGRESS.tsv (rebase first); SO rows for any N3 or better (CLAUDE.md "A verifier
+that assigns N3 ..."). Also carry D4-E5H's N2-AJ header correction ("12. midn", commit 1c88589f1) into D12-VP's sections 3-5 by an
+appended correction note (do not rewrite their text), and into any SECOND-OPINIONS-QUEUE.tsv / status.json text quoting noon or the Viola
+conflict. Write "## AUDIT (propagation, D4-VP2)". Do not decode other entries.
+
+### D4-COST2 -- costabili-modena-1491 R1167 sigla-expanded alignment, registered (solver, Opus; cap 5, box 60 min)
+Separate session from D4-COST. Orchestrator ruling on D4-COST's question: CLAUDE.md rule 3 (PX-BRODEC paragraph) already requires both
+renderings normalised to one convention (abbreviations expanded) before a diff is gated, so the sigla-expanded convention is the right one;
+but D4-COST chose it after scoring, so its values stay M. This job: write the expansion table (che/ter/per sigla and any others, from the
+clear copy's own usage, fixed before any score) and the gate (D4-COST's statistic, gate and shuffle control unchanged) into a PREREG file and
+push it; then run on a stretch D4-COST did not score (R1167 P2 against the matching part of the clear copy, or the rest of P1; crops from
+the DECODE images D4-COST left on disk or one DECODE browser login, crop command pasted). If it passes, TT = s and Z = t (and q's values if
+the registered q rule passes) enter key.tsv at C with occurrences cited; then re-score R1166 P4's PREREG decode gate (C coverage vs 0.80)
+with the updated key and report the number. Update Remaining gaps / Escalation; `tools/gaps_check.py costabili-modena-1491`. Report what was
+found and where it was not found; do not classify novelty.
