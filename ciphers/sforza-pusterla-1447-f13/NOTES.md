@@ -114,19 +114,83 @@ Report: Pusterla's 1447 key (from his glossed pairs) decodes f.13 better than sh
 statistics, and it decodes the signature to his name. The body text is not recovered at this transcription quality. No
 novelty claim is made (rule 10); a verifier session is the lane's call.
 
-## Remaining gaps (SFZ-P, 7 Oct 2026)
-Read so far: 0 lines read as Italian; signature decodes "de Pusterla"; shared-key test PASS vs 200 shuffled keys (lm and q4); judge FAIL vs real prose
-- f.13 transcription - blocker: not-attempted; err_2reader 61% (pass B weak), 229 disagreements unreconciled; next: one more blind Sonnet pass on the single-line deskewed crops with pusterla_labels.md, reconcile A/B/C with tools/reconcile_passes.py --vote, rerun decode.py, ~$3
-- Pusterla key coverage - blocker: not-attempted; held-out accuracy 0.59-0.73 from two units; next: add the f.67 and f.71 pairs (f.71's text is printed in Osio III no. CCCXCI, a third clear witness) to ../sforza-italien1584-1447/pusterla/g1p.py UNITS, ~$4 per unit
-- second reader for the key units f.81, f.42 - blocker: not-attempted; single-reader transcriptions; next: one Sonnet pass per slip on deskewed single-line crops, reconcile, ~$1.5 each
-- print and novelty search on any decoded text - blocker: not-attempted; nothing reads yet; next: after a reading exists, tools/print_check.py and a verifier session, ~$3
+## S4: pass C, three-pass vote, key-constrained lattice decode (SFZ-P2, 7 Oct 2026, 22:25-22:4x UTC by date -u)
 
-## Escalation (SFZ-P, 7 Oct 2026)
+Worker SFZ-P2 for LANE ST-REBUILD (account 2), brief `.claude/briefs/runs/2026-10-07-acct2-st-rebuild-workers.md` Wave 3.
+
+**Crops.** `tools/iiif_lines.py --image images/src_*_f15_* --deskew --centres 250,340,400,460,524,584,644,704,764,820,880,936,1050,1320 --prefix f13 --overlap 0 --out <scratch> --debug`
+gave the slope fit of each line (the auto-detected centres of SFZ-P's command missed r6, and its segments overlap by
+1600 px). Line 4's fit jumped to line 3 on the right (slope 0.003), so it was set by hand between its neighbours (y =
+445 + 0.034x). The level crops in `images/level/` (13 lines; L02-L12 as two halves, 0-1650 and 1600-3200 px of the
+region, 50 px overlap) are a PIL affine shear of the source region along each fit, 96 px high. Fits (a, b) for y = a + b*x:
+L01 244.1/0.04218, L02 302.0/0.04292, L03 373.5/0.03572, L04 445/0.034, L05 516.7/0.03163, L06 582.9/0.03114, L07
+634.4/0.03662, L08 703.8/0.03564, L09 773.8/0.03477, L10 845.4/0.03896, L11 917.3/0.03708, L12 989.9/0.04134, SIG
+1285.0/0.03474. Every line was checked by eye on a montage: all 13 are level and complete. This includes line 7, which
+pass A read from the overview only.
+
+**Pass C** (`ciphertext_f13_passC.tsv`, 365 signs, 11 `a/b?`): one blind Sonnet subagent call on the level crops, with
+pusterla_labels.md and no sight of passes A/B or the key. Its first file was written empty, so it was rewritten from the
+same call's transcript; no images were re-read. Agreement, `tools/reconcile_passes.py --method nw`:
+
+| pair | agree | err_2reader |
+|---|---|---|
+| A-B (SFZ-P) | 38.8% | 61% |
+| A-C | 261/371 = 70.4% | 29.6% |
+| A-B-C, all three | 101/381 = 26.5% | -- |
+
+Pass B (two-line crops, drifting line breaks) is the outlier. err_true is not measurable: there is no benchmark item for
+this hand. Pass A was read after the key existed, so the A-C agreement may lean toward the key labels (bias unmeasured).
+C was blind to the key.
+
+**Lattice decode** (`lattice_decode.py`, outputs `lattice/`, `--check` exits 1 when stale). Pre-registered in its
+docstring before any run: `g ÷` = `g÷` in every pass; reconcile_passes' star alignment and --keep-alts weights; skeleton =
+the --vote majority rule (15 gap-majority columns dropped; 356 positions: 95 at 3/3, 182 at 2/3, 79 at 1/3);
+key_decode_lattice viterbi at its defaults (lam 1.0, beam 64, unk_cost default); corpus it16dip. The corpus is 16th-c.
+Italian diplomatic letters and this is a 1447 letter, an **era mismatch**: there is no 15th-c. Italian corpus on disk.
+lam was not tuned.
+Degenerate optimum: **77 of 356 positions moved off the vote's top-1** (S at best; listed in `lattice/decode.tsv`,
+column `moved`). 12 chosen positions are signs absent from the key.
+
+Gate (pre-registered), numbers side by side (it16dip mean log10 4-gram per letter):
+
+| decode | real | shuffle mean | shuffle p95 | shuffle max | rank of 201 | judge real_p05 | judge null_p99 |
+|---|---|---|---|---|---|---|---|
+| lattice (200 shuffled keys, each re-decoded on the lattice, seed 13) | -1.196 | -1.411 | -1.247 | -1.199 | 1 | -0.918 | -1.753 |
+| vote top-1, no lattice (same shuffles) | -1.651 | -1.955 | -1.768 | -- | 2 | -- | -- |
+| pass A alone (S3, SFZ-P) | -1.622 | -1.953 | -1.758 | -- | -- | -0.935 | -1.765 |
+
+Judge output (`python3 tools/judge_plaintext.py ciphers/sforza-pusterla-1447-f13/lattice/spec.json --file ciphers/sforza-pusterla-1447-f13/lattice/plain.txt`):
+
+    FAIL language: score=-1.196, null_p99=-1.753, real_p05=-0.918, real_median=-0.823, mode=both, N=360
+    FAIL - ciphers/sforza-pusterla-1447-f13/lattice/spec.json (a PASS is a gate for a verifier, not a reading; rule 10)
+
+Letter distribution of the lattice decode: a 60, e 47, o 39, i 39, v 27, l 19, c 16, n 16, d 16, m 15, r 15, s 11, p 10,
+h 10, t 8, g 8, f 3, z 1. This is not the all-one-letter optimum.
+
+**Verdict: gate FAIL.** The shuffled-key half passes: the real key ranks 1 of 201 on the lattice. The margin over the
+best shuffle is thin (-1.196 vs -1.199). The judge half fails: -1.196 against real_p05 -0.918. The lattice decode
+was itself chosen to maximise this statistic, and it still sits about a third of the way from real prose toward the
+shuffled null. No reading is claimed; `reading.txt` (S3, pass A) stays the committed decode, and no grade counts change.
+Lattice text sample, for the record only: "...ditledoveroavereneavedomicoesmaialtrodialaveavilo...". It has
+Italian-looking fragments (dove, vere, altro, che) and no clause.
+The third pass did what the brief asked of it: two-reader disagreement fell from 61% to 30%. What still limits the
+decode is key coverage (held-out 0.59-0.73) together with a 30% two-reader disagreement. With that, the it16dip judge
+cannot place the text near real prose. Era mismatch is a possible contributor; this run did not test it.
+
+## Remaining gaps (SFZ-P2, 7 Oct 2026; supersedes SFZ-P's list)
+Read so far: 0 lines read as Italian; signature decodes "de Pusterla"; shared-key test PASS (pass A, 200 shuffles); lattice decode on the A/B/C vote beats 200 shuffled keys (rank 1) but judge FAIL -1.196 vs real_p05 -0.918
+- f.13 transcription - blocker: not-attempted; A-C err_2reader 29.6% (pass B 61%); 280 three-pass disagreement columns unsettled; next: owner sign-sorter or lookalike pass on the A/C split (tools/lookalike_pass.py on the T=/z-/h7/pq and mo/coo pairs pass C named), ~$2
+- Pusterla key coverage - blocker: not-attempted; held-out accuracy 0.59-0.73 from two units, the named limit after this run; next: add the f.67 and f.71 pairs (f.71's text is printed in Osio III no. CCCXCI) to ../sforza-italien1584-1447/pusterla/g1p.py UNITS, then rerun lattice_decode.py, ~$4 per unit
+- era-matched judge corpus - blocker: not-attempted; it16dip is 16th-c., the letter is 1447; next: build a 15th-c. Italian chancery/letter corpus (e.g. Osio I-III clear letters, minus f.13's month) and rerun the judge, ~$2
+- second reader for the key units f.81, f.42 - blocker: not-attempted; single-reader transcriptions; next: one Sonnet pass per slip on level single-line crops, reconcile, ~$1.5 each
+- print and novelty search on any decoded text - blocker: not-attempted; nothing reads yet; next: after a judge PASS, tools/print_check.py and a verifier session, ~$3
+
+## Escalation (SFZ-P2, 7 Oct 2026)
 - [x] siblings: Pusterla's glossed slips f.81/f.80 and f.42/f.41 used; f.67, f.71, f.72, f.75, f.77 remain
 - [x] clear-pages: later-hand clear copies f.80 and f.41 used; f.14 (same-day clear letter) is context only
 - [ ] known-keys: Cerioni 1970 and ASMi Sforzesco cipher registers not checked for a Pusterla 1447 key
 - [x] print: Osio III full-text searched (f.13 absent; f.71's text printed as no. CCCXCI)
-- [x] key-rebuild: key.tsv rebuilt from two pairs; G1 PASS
-- [ ] image-check: f.13 re-transcription on deskewed crops with a third pass
-- [ ] retry: decode.py rerun after the transcription and key extensions
-Verdict: keep going: 4 internal gaps; cheapest next: a third blind pass on f.13's deskewed crops and a vote reconcile, ~$3
+- [ ] key-rebuild: key.tsv from two pairs, G1 PASS; f.67/f.71 units not yet added
+- [x] image-check: level single-line crops (images/level/), third blind pass C, three-pass vote (SFZ-P2)
+- [x] retry: lattice_decode.py on the A/B/C vote, shuffled-key PASS, judge FAIL
+Verdict: keep going: 5 internal gaps; cheapest next: add the f.71 pair (printed clear text) to the Pusterla key and rerun lattice_decode.py, ~$4
