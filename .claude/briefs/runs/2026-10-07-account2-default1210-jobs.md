@@ -75,3 +75,7 @@ Hurlbut-row tokens against another witness, ~$4". Find the seven in overrides.ts
 (another sent or received copy in mssEC 18-19 or 04-14, the OR print, a later re-use of the same code word in a print-matched entry), and
 grade each H/C/S/M with the witness named. No change without a witness; an override change re-runs the folder's decode --check. Update
 NOTES.md section, Remaining gaps / Verdict, gaps_check. Report what was found and where it was not found.
+
+Wave 1 sessions (12:16 UTC): D12-V2M session_01PugdoD1Sjk6HZnB5SXjDPi; D12-V2R session_01HwXefTYDLb82sruCuUhEQH; D12-V2T
+session_01Lsy7bgiVTbeuQHNrggXhBp; D12-E1 session_01HybNY3c6889sZU8de9LeAE; D12-E2 session_019gxbpr5FVaBnraBBwvT9U5; D12-E62H
+session_01LebTAsxigKvN3AuFJccvdn. Caps 38.
