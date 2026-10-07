@@ -1542,3 +1542,6 @@ ff.7-8, 10 (Bologna 12 Mar), fr.3007 f.111 (Rome 26 Sept [1529]), Dupuy 726 ff.7
 **Unread siblings for this key: 0.** The known cipher letters in this key (fr.3019 f.20, fr.3071 f.17, fr.3040 ff.12 and 18)
 are read by Tomokiyo, Lasry, Bourdeau or DECODE, or printed (Le Grand). The fr.3038 f.42 decipherment's cipher original
 stays unlocated (N8-GRA). No test run. Rows: `keyhunt/2026-10-07-KH1A.tsv`.
+
+## Unread sibling found (SA-G3, 7 Oct 2026)
+BnF fr.3053 (btv1b90601432) canvases 16 (p.7) and 34 (p.17): full symbol-cipher leaves, no decipherment seen on c34, marginal/inline text on c16 unchecked. Key unknown (screened at 520 px sheet scale only, 6 of 162 canvases). Next step: view c16/c34 at 700 px, compare sign inventory with the held Gramont key, ~USD 0.8. Source: keyhunt/2026-10-07-SAG3.tsv.
