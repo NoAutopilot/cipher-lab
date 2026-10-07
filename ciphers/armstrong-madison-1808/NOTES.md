@@ -4197,3 +4197,14 @@ target. Routes: the NYPL email of 5 Oct (awaiting reply; add these items and cat
 editors (their catalogue flags 5 Apr and 4 May 1805 "Digital image"). Both are the orchestrator's outward contacts.
 Requests: fms14.longtermsolutions.com one session (~300 UI round-trips over 8 minutes, one record at a time, 1.8-2.2 s
 apart), academics.umw.edu 1 page. No vision calls, no subagents.
+
+## TOMO-ARM wave 1b: Armstrong to Monroe, 7 July 1807, postscript (7 Oct 2026, 22:10-22:20 UTC)
+
+LOC James Monroe Papers, Series 1 reel 4 frame 0302 (docket "J. Armstrong 7 July 1807", filmed mirror-reversed; ARM H25 had
+it as "clear prose"), fetched once at full size from tile.loc.gov (`service:mss:mss33217:004:0300:0302`), mirrored and rotated
+locally, read by one reader (this session, no subagent). The postscript under the signature: "10 July. I regret exceedingly
+that from some change in your cypher or in mine, or from the use of one with which I am altogether unacquainted, your last
+letter by Mr R[ussell?] is altogether unintelligible to me." Grade H for the sense, M for the bearer's name and two words.
+The ASP FR 3:242 print is an extract and omits the postscript. So Armstrong and Monroe still corresponded in a private
+cipher in mid-1807, and their copies no longer agreed. That the 20 Feb 1808 letter is in this cipher is not shown (I). Requests:
+tile.loc.gov 3 (one 404 route guess, two frames at pct:40, one full).
