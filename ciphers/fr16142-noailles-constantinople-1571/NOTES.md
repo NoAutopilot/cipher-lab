@@ -1556,11 +1556,55 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
 - "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
 
-## Escalation (D07-NOXT, 7 Oct 2026)
+## D07-NOX510: split-pile tiles bounded; c510-516 decoded through the 19-pile bridge (7 Oct 2026, 01:10-01:2x UTC by date -u, account-1 worker)
+Brief: `.claude/briefs/runs/2026-10-07-account1-default-0042-jobs.md` D07-NOX510 (LANE DEFAULT-account-1-20261007-0042; D07-NOXT's
+Verdict cheapest next). Disk only: requests 0, subagents 0. Pre-registered `sorter/owner-sort-2026-10-04/aln/PREREG-D07NOX510.md`
+(pushed 7c5a8cdc6 before any decode statistic); script `aln/nox510.py` (imports `bridge_ownerpiles.py` unchanged); outputs
+`aln/results/d07nox510_summary.json`, `d07nox510_decode.tsv`; `python3 aln/nox510.py check` and `bridge_ownerpiles.py check` exit 0.
+key.tsv, gloss.tsv unchanged.
+
+**Part 1, the 14 split-pile c262 tiles: bounded, not placed.** All 14 sit in k006 (1) and k072 (13); none in k087. With no tile features on
+disk, the bridge was re-run under every whole-group placement and 200 random placements over parent + split children. The bridge changes
+only at k072: sending the k072 tiles to k072-b moves the "i" value from k072 to k072-b (V2, 27/208), or puts it on both (V1, 129/208),
+or gives k072-b "l" (V4, 5) or k072 "l" (V3, 12); D07-NOXT's bridge (V0) holds in 35/208. No other pile moves. The owner left 23 of 24
+c510-516 k072 tiles in k072 (1 moved to k072-b), so the parent placement is the base-rate choice, but it is not settled by eye. Every
+variant was scored in Part 2; none changes the verdict.
+
+**Part 2, decode: FAIL as registered.** 9,861 c510-516 tiles (owner piles, bad cuts dropped); 2,409 fall in the 19 bridged piles and are
+read (24%), the rest left unread. Against Dupuy 221R-226R after "icelle que" (9,284 letters), set-aware exact LCS ratio:
+
+| | R | (k) bridge values permuted among piles, 200: mean / p99 / max | (o) decoded order shuffled, 200: mean / p99 / max | gate |
+|---|---|---|---|---|
+| **primary (D07-NOXT bridge, V0)** | **0.34277** | 0.3214 / 0.35869 / 0.36312 (31 of 200 >= target) | 0.33088 / 0.33268 / 0.33336 | **FAIL** |
+| V1 (k072 and k072-b i) | 0.34274 | 0.3196 / 0.36499 / 0.36874 | 0.33114 / 0.33316 / 0.33368 | FAIL |
+| V2 (k072-b i, k072 unread) | 0.34067 | 0.3197 / 0.35699 / 0.36175 | 0.32912 / 0.33142 / 0.33296 | FAIL |
+| V3 (k072 l, k072-b i) | 0.34069 | 0.3165 / 0.36192 / 0.36805 | 0.33028 / 0.33231 / 0.33282 | FAIL |
+| V4 (k072-b l) | 0.34274 | 0.3161 / 0.36276 / 0.36634 | 0.33111 / 0.33317 / 0.33350 | FAIL |
+
+Reading of the numbers: the decoded stream beats every order-shuffle (0.3428 vs max 0.3334), so the owner-pile stream carries order that
+lines up with Dupuy -- but 31 of 200 random reassignments of the 19 letters among the same piles line up as well or better, so that
+order signal is not attributable to the key.tsv values the bridge carries (the PREREG's "(o)-PASS with (k)-FAIL" case). Secondary: 17
+decoded tokens in contiguous LCS runs >= 4 vs order-shuffle p99 24 (max 30), so no per-token signal either. Grades: H 0, C 0, S 0,
+**M 2,409**, I 0 (2,409 decoded tokens; 7,452 tiles unread, ungraded). No reading is claimed. Conditional on RUN2-NXATL's tile
+segmentation (tiles != signs), the owner's quick-pass merges, one reconciler's c262 labels and the thin 10/19 bridge tie.
+This is the second atlas-tile-stream decode to fail against its nulls (RUN6-NOXDEC on c262 vs gloss; now c510-516 vs Dupuy); the
+reader-transcription route (RUN6-NOXREAD's instrument, which passed on c262) is the different instrument for c510-516.
+
+## Remaining gaps (D07-NOX510, 7 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner's lock-on onto Dupuy 221R-226R is a basin with one common key (N8-NOX PASS) that agrees with Tomokiyo's key on 7 of 17 bridge piles (N8-NOX2 PASS); that key mapped onto the reconciled c262 reader signs reads toward the gloss beyond four nulls (RUN6-NOXREAD PASS, 0.3506 on the leaf-corrected gloss); test0's known-answer gate passes under both difflib and exact LCS (R9-NOX, stable); per-label masked alignment PASS by the letter but thin, S 2 of 36 (D1-F16142A); bridge widened 17 -> 19 owner piles, key tie 10 of 19, thin (D07-NOXT); c510-516 atlas-tile stream through the 19-pile bridge FAILs vs Dupuy (beats order shuffles, not key permutations; D07-NOX510); 0 open leaves decoded
+- Second, print-blind read of c262 gloss L01-L13: two whole-line blind Opus reads missed their own control (DEF1-NOXB 0.667, D2-NOXB2 0.714, gate 0.80); DEF1-NOXG's and R7A-NOX262's corrections rest on print-aware reads only - blocker: not-attempted; next: two independent blind passes on word-level crops of L01-L13 (tools/iiif_lines.py, 2-3 words per crop; the whole-line eye is barred from a third try by rule 3's repeat clause), ~$1.5
+- c262 cipher rows below c262rc L10 (beside gloss L14-L21, read once by R10-NOX2 into gloss_below_L13.tsv) not transcribed, so the gloss cannot join the scored block - blocker: not-attempted; next: cut those rows with tools/iiif_lines.py --follow-slope (region below y 3318, x from ~1380), two blind passes against the settled labels + reconciliation, then extend c262rc_recon.tsv and gloss.tsv together and re-run test0 --check, ~$3
+- c510-516 read with Tomokiyo's key on a reader transcription (the atlas-tile stream route FAILed, D07-NOX510) - blocker: not-attempted; next: two blind passes on a c510-516 line set (start c510 L05-L14) against the settled labels with Dupuy 221R-226R as reference, scored with test0 --stat lcs and its key-shuffle/order-shuffle nulls, pre-registered, ~$5
+- 14 c262 tiles in owner-split clusters (13 k072, 1 k006) bounded, not placed: only k072's "i" moves between k072 and k072-b, and no placement changes the D07-NOX510 verdict - blocker: not-attempted; next: one eye pass on the 13 k072 crops against the k072/k072-b exemplars only if a later test uses the k072 value, ~$1
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (D07-NOX510, 7 Oct 2026)
 - [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); date-only Dupuy matches text-checked (RUN6-NOXDUP, R7A-NOX262)
 - [x] basin test: the locked-on runs share one key (N8-NOX, pre-registered, PASS vs non-locking and shuffled-Dupuy nulls)
 - [x] key tie: basin count-based consensus vs key.tsv via the c262 bridge (N8-NOX2, pre-registered, PASS 7/17 vs 4/5/5); widened under the owner piles to 10/19 (D07-NOXT, PREREG-D07NOXT.md, PASS vs 5/9/4, thin)
-- [retired] decode on atlas tiles: c262 tile-stream decode vs gloss (RUN6-NOXDEC FAIL, 0.1803 on the L01-L13-corrected gloss, still under nulls), instrument atlas-tile stream + test0 ratio
+- [retired] decode on atlas tiles: c262 tile-stream decode vs gloss (RUN6-NOXDEC FAIL, 0.1803 on the L01-L13-corrected gloss, still under nulls) and c510-516 tile stream through the 19-pile bridge vs Dupuy (D07-NOX510 FAIL, 0.3428 vs key-perm max 0.3631; beats order-shuffle max 0.3334), instrument atlas-tile stream + LCS/test0 ratio
 - [x] decode on a reader transcription: basin key mapped onto the reconciled c262 signs (RUN6-NOXREAD PASS; 0.3506 vs p99 0.2413/0.2525/max 0.2665/0.2546)
 - [x] per-token alignment: masked per-label alignment PASS by the letter (S 2 vs p99 0/0) with basin anchors gap 3 (RUN6-NOXALIGN, corrected gloss) and with W:-word anchors gap 5 (D1-F16142A, PREREG-D1F16142A.md); neither knob moved S, so more tuning of the same instrument on the same 10 rows is not the next step (rule 3 repeat clause); more cipher rows under the gloss (L14-L21) is
 - [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
@@ -1568,5 +1612,5 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] print: Charrière III pp.258, 520-524 and 551-558 read; p.258 differs from the leaf gloss at L08 and L09 (spelling)
 - [n/a] key-rebuild: a published key exists
 - [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
-- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin), D07-NOXT bridge under owner piles (PASS 17 -> 19)
-Verdict: keep going: 8 internal gaps; cheapest next: 14 split-pile c262 tiles placed (~$1), then the c510-516 decode through the 19-pile bridge, pre-registered, ~$2
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin), D07-NOXT bridge under owner piles (PASS 17 -> 19), D07-NOX510 split-pile bound + c510-516 tile-stream decode (FAIL, PREREG-D07NOX510.md)
+Verdict: keep going: 7 internal gaps; cheapest next: two blind word-level passes on c262 gloss L01-L13, ~$1.5; for c510-516 the next step is the reader-transcription decode (two blind passes on c510 L05-L14, pre-registered), ~$5
