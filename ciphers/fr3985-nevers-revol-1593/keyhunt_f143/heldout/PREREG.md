@@ -1,5 +1,5 @@
 # KHF-4 held-out family check, fr.3988 f.143r (Henri IV to Nevers, Dec 1593) -- pre-registration
-Written and pushed before the blind read, 7 Oct 2026 ~19:5x UTC (clock read by date -u). Worker KHF-4 (account 4).
+Written and pushed before the blind read, 7 Oct 2026 19:42 UTC (clock read by date -u). Worker KHF-4 (account 4).
 
 Question (KH1-F's named next step): does the f.143r hand write signs of the no.60 key family at all?
 
