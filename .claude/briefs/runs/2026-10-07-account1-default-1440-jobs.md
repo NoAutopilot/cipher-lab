@@ -35,7 +35,7 @@ if it was, write one ROOM line saying so and stop.
 - Done: one ROOM line `done (<start>-<end> UTC by date -u, brief met|stopped at cap): <result, commit>` "for LANE
   DEFAULT-account-1-20261007-1440", then a five-line final report.
 
-## Wave 1 (spawned 14:5x UTC 7 Oct)
+## Wave 1 (spawned 14:47 UTC 7 Oct)
 Intake gate 14:4x UTC (tools/intake_gate_check.py, each exit 0):
 `fr16142-noailles-constantinople-1571: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
 `colbert26-lathuillerie-1644: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
@@ -75,8 +75,8 @@ Verdict tail (NOTES.md l.1494): "relabel the fr.3040 barred z (reader label zb) 
 of the HYPOTHESES.md z A-vs-R entry, ~$0.5" (R12D-GRAZB2 found f.30 zb and fr.3040 barred z are different classes). Do the relabel,
 re-run the affected scripts with --check, confirm key.tsv unchanged or say exactly what changed, close the HYPOTHESES.md entry half.
 
-## Wave 1b (spawned 14:5x UTC 7 Oct)
-Intake gate 14:5x UTC: `bowes-walsingham-1583: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` exit 0.
+## Wave 1b (spawned 14:48 UTC 7 Oct)
+Intake gate 14:48 UTC: `bowes-walsingham-1583: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` exit 0.
 
 ### DA1-BOW -- bowes-walsingham-1583 known-keys rung: Walsingham-Wotton 1585 (solver, Opus; cap 3, box 50 min)
 NOTES.md l.623 (the folder's "depends on nobody" action) and Escalation "[ ] known-keys" (l.587): try Tomokiyo's Walsingham-Wotton 1585
