@@ -150,3 +150,20 @@ has been stopped at Black and ordered world
 talbot Agnew to opr rate against Knell &
 Co yacht He has full discretion how to
 operate welch Lady
+
+# Added 7 Oct 2026 (AM-ECK64N2): the "(No 2)" entry above O9-AE on p.61, the same order as O9-AE sent in Cipher No. 2.
+# Read by the worker from iiif_lines.py strip crops of the p.61 page image (IIIF 2400 px, scratch; commands in NOTES.md)
+# with the volunteer transcription as second witness; the two agree on every word. "directs" ends in a flourish that may be
+# no s (volunteer "directs"); "given" is written over an erased word; "And" at the head of line 7 is written over another
+# word. "10 pm" is pencilled over the date; the code word Reliance gives 10.30 PM, as O9-AE's Susan and the OR do.
+
+### N2-L | Page 61 | 8953 | 30 Apr 1864 10 PM, Halleck to Banks at New Orleans and Steele (operator Buckley, "(No 2)")
+Buckley (No 2)  N. Orleans La   Wash Apl 30. 1864 10 pm
+Hunter Ogden Apl Reliance for Lapland & nutmeg
+---- Crowd directs that orders heretofore given be
+so modified that no wharf be with drawn
+from operations against Shreveport & on Altar Wafer
+And that operations there be continued under the
+Senior officer in Prospect until further orders wiley
+lady Chf Staff Copy sent nutmeg via Little Rock
+plain: Staff

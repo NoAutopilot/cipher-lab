@@ -97,6 +97,34 @@ planting, Tappahannock, Despatches, animals, raining, Seward, negroes. Clerk's f
 section 8 at grade I: Elliot (Elliott = 10), Russel (Russell = 60), Domming (Downing = 7). Nothing here is a
 novelty statement (rule 10); D, F and I were not located in the volumes named, which is a search result only.
 
+## The p.61 twin of O9-AE (AM-ECK64N2, 7 Oct 2026)
+
+N2-L is the "(No 2)" entry above O9-AE on mssEC 19 p.61 (pointer 8953): the same order of 30 Apr 1864, Halleck to Banks
+and Steele, sent by Buckley in Cipher No. 2 to New Orleans with a copy for Steele via Little Rock, while O9-AE went by
+Clowry in the old vocabulary to Little Rock with a copy for Banks via Cairo. Read by the worker from strip crops of the
+page image, volunteer text as second witness; they agree on every word. Code-word tokens: **H 13, C 0, I 0, M 0**
+(12-entry total H 286, C 6, I 10, M 1). Every one of the 13 is also fixed independently by O9-AE (key-no9.md) and by the
+OR print of the order (I/34 pt 3 p.358, cited for O9-AE in reading-no9.md); word-by-word comparison:
+
+| N2-L code word | key-no2.md | O9-AE word | O9-AE value | agree |
+|---|---|---|---|---|
+| Hunter | Washington | Pagan | Washington | yes |
+| Ogden | 30 | (plain "30th") | -- | yes |
+| Reliance | 10.30 PM | Susan | 10.30 PM | yes (both headers pencil "10 pm"; OR 10.30 p.m.) |
+| Lapland | Banks N P | amen | Banks | yes |
+| nutmeg | Steele Fdk | (plain "Steele") | -- | yes |
+| Crowd | Lieut Gen U.S. Grant | vomit vermin Bangor | Lieutenant, Maj. Gen., Grant | yes |
+| wharf | Troops | youth | Troops | yes |
+| Altar Wafer | Red R, River | Glover Spartan | Red River, River | yes (both books double the River) |
+| Prospect | Command | (plain "command") | -- | yes |
+| wiley lady | Signature, H W Halleck | signed applause | Halleck | yes |
+| nutmeg (copy) | Steele Fdk | Amen (copy) | Banks | each copy goes to the other addressee |
+
+Agreement: 13 of 13 code-word tokens; no key-no2.md value differs. Plain words: the running text from "directs" to "Chf Staff Copy sent ... via" agrees word for word
+with O9-AE's, except "And" (N2-L) for "&" (O9-AE) and the copy
+routes. One collision: "Staff" is a book code word (p.[25B] row 22, Station) but here the plain "Chf Staff" of both entries
+and the OR's "Chief of Staff"; marked `plain:` in ciphertext-no2.txt.
+
 ## Derived block
 
 <!-- decode.py: derived block starts -->
@@ -166,5 +194,11 @@ Code-word tokens: H 19.
 
 Code-word tokens: H 15.
 
-Totals over the 11 entries: H 273, C 6, I 10, M 1.
+**N2-L | Page 61 | 8953 | 30 Apr 1864 10 PM, Halleck to Banks at New Orleans and Steele (operator Buckley, "(No 2)")**
+
+[Washington] [30] Apl {time: 10.30 PM} for [Banks N P] & [Steele Fdk] ---- [Lieut Gen U.S. Grant] directs that orders heretofore given be so modified that no [Troops] be with drawn from operations against Shreveport & on [Red R] [River] And that operations there be continued under the Senior officer in [Command (-ed, -ing)] until further orders  {tail: [signed] [H W Halleck] Chf Staff Copy sent [Steele Fdk] via Little Rock}
+
+Code-word tokens: H 13.
+
+Totals over the 12 entries: H 286, C 6, I 10, M 1.
 <!-- decode.py: derived block ends -->
