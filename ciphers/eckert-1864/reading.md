@@ -32,6 +32,15 @@ the clerk's slips ("Prss", "mangled", "For rest").
 | E18 | Halleck to Rosecrans, 28 Oct 12 M | OR I/41 pt 4 p.296 | reads word for word; "Bethel Windsor" = Tennessee River, "Wilson port" = Eastport |
 | E19 | Halleck to Thomas, Nashville, 10 Dec 2 PM | OR I/45 pt 2 p.130 (1.40 p.m.) | reads word for word: 2,400 cavalry horses, one third of the cavalry dismounted |
 | E20 | Halleck to Col. Winslow, Cairo, 10 Dec 3 PM | OR I/45 pt 2 p.136 | reads word for word: all troops from Missouri must go to Thomas |
+| E21 | Meigs (QMG) to Lt. Col. Biggs, Fort Monroe, 19 Apr 1864 1 PM | not located (OR I/33 carries Meigs to Wise of 16 Apr and Wise's list of 19 Apr, p.915, not this) | reads cleanly: 3 ferry boats and 3 tugs leave Washington for Fort Monroe; Wise has chartered 10 side-wheel steamers, 4 propellers, 7 tugs, 2 steam barges; "chart" left plain (chartered), "Helen", "Richland" are vessel names (LS-R1) |
+| E22 | Welles to Porter via Capt. Pennock, Cairo, 26 Apr 1864 12.30 | ORN I/26 p.92 | reads word for word (LS-R1) |
+| E23 | G. V. Fox to Col. H. S. Olcott, New York, 2 May 1864 9 PM | not located | reads cleanly: investigate only, not prosecute, at the New York Navy Yard; "Whiting", "Fox" left plain (LS-R1) |
+| E24 | Seward to C. F. Adams (London) and Dayton (Paris), 18 May 1864 | OR III/4 and Papers relating to Foreign Affairs 1864 (Google Books snippets, page not fixed) | reads word for word: arrest of the fabricators and publishers of the spurious proclamation (LS-R1) |
+| E25 | Halleck to Wallace, Baltimore, 29 July 1864 12.30 PM | OR I/37 pt 2 p.501 (12.20 p.m.) | reads word for word but "pike" (book: Cut off), absent from the OR, graded M by hand; Squase = infantry, Samson = Ferry (C); "Might's" = Wright's (LS-R1) |
+| E26 | Stanton to Dix, New York, 21 Aug 1864 1.30 PM | not located | reads cleanly: arms and ammunition for copperheads in Indiana stored at No. 42 Walker St; "Walker" left plain (the street) (LS-R1) |
+| E27 | Judge Advocate L. C. Turner to 'beverage' (unread), New York, 10 Oct 1864 | not located | reads cleanly but the first word "Grunt" (book: Warrenton, one line below Growl = Washington) graded M by hand; addressee word "beverage" not in the book (LS-R1) |
+| E28 | F. W. Seward to Thurlow Weed, New York, 11 Oct 1864 11.30 AM | not located | reads cleanly: Captain Pennock will put a boat of the Mississippi squadron at the disposal of the New York election agents; "Pilgrim[?]" written "Pelgrim" (LS-R1) |
+| E29 | Dana to Dix, New York, 5 Nov 1864 4 PM | not located as a telegram; its content (Dudley Harris of Portland, aliases Spencer and Barbour, Colonel Martin of Boston) is in Confederates Downeast (1985) by Google Books snippet | reads cleanly: arrest on Monday morning of six named rebel agents, with descriptions (LS-R1) |
 
 Sixteen of the twenty were matched to an Official Records print by the subagent sweep of 26 volume-parts of
 series I on the Internet Archive (or_check in NOTES.md section 4); the four it did not match (E4, E5, E6, E12)
@@ -258,9 +267,9 @@ Code-word tokens: H 9.
 
 **E25 | Page 131 | 9023 | 29 July 1864 12.30 PM, to 'Submit' (Wallace) at Baltimore (operator Sampson)**
 
-[Maj. Gen. Lew Wallace (Baltimore)] ---- It is [Report]ed that Mose by & White have [Cross (-ed, -ing)]ed the [Potomac] at Edwards & Conrads Samson with [400] [Cavalry] & [3] [Pieces] of [Artillery] ---- Send out immedy your [Cavalry] [Cut off] a [Battery] & some Squase to protect the [Rail Road] & also any of Might's trains on Rockville & Fred e r i c k p i k e s i g [General in Chief]
+[Maj. Gen. Lew Wallace (Baltimore)] ---- It is [Report]ed that Mose by & White have [Cross (-ed, -ing)]ed the [Potomac] at Edwards & Conrads [Ferry] with [400] [Cavalry] & [3] [Pieces] of [Artillery] ---- Send out immedy your [Cavalry] [Cut off] a [Battery] & some [Infantry] to protect the [Rail Road] & also any of Might's trains on Rockville & Fred e r i c k p i k e s i g [General in Chief]
 
-Code-word tokens: H 14, C 1.
+Code-word tokens: H 14, C 3.
 
 **E26 | Page 159 | 9053 | 21 Aug 1864 1.30 PM, to Dix, New York (Horner)**
 
@@ -268,23 +277,23 @@ Code-word tokens: H 14, C 1.
 
 Code-word tokens: H 24.
 
-**E27 | Page 199 | 9091 | 10 Oct 1864, Judge Advocate L. C. Turner to 'beverage', New York (Horner)**
+**E27 | Page 197 | 9091 | 10 Oct 1864, Judge Advocate L. C. Turner to 'beverage', New York (Horner)**
 
 [Warrenton] {time: 12.30} for beverage ---- [2] [Men] [,] Jewett & Siebert [,] came from [Richmond] last week [,] the first going to harem the last to [New York] ---- They are supposed toby [Rebel] agents ---- James Gemmell [Cross (-ed, -ing)]ed the [Potomac] with them & is now in Old Capitol ---- A Miss Gardner was with them ---- She was going to Norwich [Connecticut] & had been teaching [South]  {tail: [signed] L. C. Turner L C Turner Judge Advo.}
 
 Code-word tokens: H 15.
 
-**E28 | Page 199 | 9091 | 11 Oct 1864 11.30 AM, to Thurlow Weed, New York (Horner)**
+**E28 | Page 197 | 9091 | 11 Oct 1864 11.30 AM, to Thurlow Weed, New York (Horner)**
 
 {time: 11.30 AM} for Thurlow Weed [New York] [.] [Captain][?] Pennock U S Navy of [Cairo] in temporary [Command = Er (-ed, -ing)] [Of the] [Mississippi] squadron will putty boat [At the] disposal [Of the] [New York] election agents to proceed when required to receive the vote or proxy [Of the] sailors [At the] ensuing election stop All the facilities wilby furnished by the naval officer  {tail: [signed] FW Seward Asst [Secretary of State]}
 
 Code-word tokens: H 15.
 
-**E29 | Page 223 | 9115 | 5 Nov 1864 4 PM, to Dix, New York (John Horner)**
+**E29 | Page 221 | 9115 | 5 Nov 1864 4 PM, to Dix, New York (John Horner)**
 
 [Washington] {time: 4 PM} [5] for [Maj Gen Jno A. Dix] [.] The [Secretary of War] directs the [Arrest (-ed, -ing)] at {time: 10 AM} on Monday morning next [Of the] [Follow (-ed, -ing)]ing named [Rebel] agents and the size your of their papers [.] [Major] Dudley Harris Port land [Maine] [,] [35] or [40] years old has a bull dog look [,] snuffs up his nose squints with his left eye [,] dark hair slightly tinged with gray bright dark eyes with a slight scar under the right eye [,] He has aliasses as Spencer [,] Barbour & C [.] [Colonel] J D Martin Boston [.] [Colonel] Geo and Tauntar A Haw thorne [New York] [.] J Taylor tavern keeper Brooklyn [.] W O Massie water street [New York]  {tail: [signed] [C. A. Dana] assistant [Secretary of War] end}
 
 Code-word tokens: H 33.
 
-Totals over the 29 entries: H 473, C 9, I 0, M 0.
+Totals over the 29 entries: H 473, C 11, I 0, M 0.
 <!-- decode.py: derived block ends -->

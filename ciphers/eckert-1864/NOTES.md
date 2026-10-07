@@ -899,4 +899,56 @@ Read so far: 98 of 893 mssEC 19 segments read (the already-read E, N2 and O9 ent
 - [n/a] key-rebuild: period cipher books exist for the three vocabularies in the ledger
 - [n/a] image-check: nothing was read in this pass, so no token to image-check
 - [n/a] retry: no read attempted and no failed attempt to retry
-Verdict: keep going: 2 internal gaps; cheapest next: add Series III vols 4-5 to the OR check (~$0.5), then read the lowest-`or_cov` priority-1 rows of `entries-mssEC19.tsv`, ~$1.2 per entry (updated LS-PRE, 7 Oct 2026: recall 0.82 and false hits 0/14 on the already-read entries).
+Verdict: keep going: 2 internal gaps; cheapest next: the next priority-1 rows of `entries-mssEC19.tsv` (LS-R1 read nine as E21-E29: 3 located in print (ORN I/26, OR III/4 + FRUS 1864, OR I/37 pt 2), 6 not located in what was searched, so the filter halves the printed share against D4-E5/D12-E3), ~$1.1 per entry, and a verifier pass on E21-E29 (updated LS-R1, 7 Oct 2026: H 173, C 3, M 2, `decode.py --check` exit 0). Earlier: keep going: 2 internal gaps; cheapest next: add Series III vols 4-5 to the OR check (~$0.5), then read the lowest-`or_cov` priority-1 rows of `entries-mssEC19.tsv`, ~$1.2 per entry (updated LS-PRE, 7 Oct 2026: recall 0.82 and false hits 0/14 on the already-read entries).
+
+## LS-R1 (7 Oct 2026, account 1, for LANE ST-LEDGER)
+
+Nine entries picked by LS-PRE's filter (entries-mssEC19.tsv priority 1, no OR hit, `or_cov` <= 3, 1864, non-headquarters
+addressees) read with key.md (Cipher No. 1) as E21-E29 in ciphertext.txt; reading.md summary rows and derived block.
+All nine are Cipher No. 1 (key.md reads every code-word token but the ones listed below; no entry needed key-no2.md or
+key-no9.md). `python3 decode.py --write` then `--check` exit 0. Rows marked `already_read` in entries-mssEC19.tsv (with
+8935/43/0, the run-on of E21).
+
+| ID | date | from / to (decoded plain) | H | C | I | M | found in print / not located in |
+|---|---|---|---|---|---|---|---|
+| E21 | 19 Apr 1864 1 PM | Meigs (QMG) to Lt. Col. H. S. Biggs, Fort Monroe | 37 | 0 | 0 | 0 | not located in OR I/33 (which prints Meigs to Wise of 16 Apr and Wise's list of 19 Apr, p.915), I/36 pts 2-3, I/42-43 (IA djvu, phrase grep); IA full text and Google Books "Van Vliet has chartered": no hit |
+| E22 | 26 Apr 1864 12.30 | Welles to Porter via Capt. Pennock, Cairo | 21 | 0 | 0 | 0 | ORN I/26 p.92 (IA `officialrecordso0026unse`), word for word |
+| E23 | 2 May 1864 9 PM | G. V. Fox to Col. H. S. Olcott, New York | 7 | 0 | 0 | 0 | not located in the IA djvu set above or by Google Books ("Solicitor Whiting gave his opinion", "commissioned to investigate only, not to prosecute"); IA full text 502 twice, not run |
+| E24 | 18 May 1864 | Seward to C. F. Adams (London), copy to Dayton (Paris) | 9 | 0 | 0 | 0 | OR ser. III vol 4 (1900) and Papers relating to Foreign Affairs 1864 (Google Books snippets "fabricators and publishers of the spurious proclamation"; page not fixed) |
+| E25 | 29 July 1864 12.30 PM | Halleck to Wallace, Baltimore | 13 | 3 | 0 | 1 | OR I/37 pt 2 p.501 (12.20 p.m.), word for word but "pike" (absent from the OR) |
+| E26 | 21 Aug 1864 1.30 PM | Stanton to Dix, New York | 24 | 0 | 0 | 0 | not located in OR I/42 pts 2-3, I/43 pts 1-2 (djvu grep "Walker street", "disguised as"), Google Books ("42 Walker street" Dix; "disguised as hardware"), IA full text ("Walker street" "copperheads": no relevant hit) |
+| E27 | 10 Oct 1864 | Judge Advocate L. C. Turner to 'beverage' (unread), New York | 14 | 0 | 0 | 1 | not located: djvu grep "Gemmell", "Miss Gardner", Google Books and IA full text ("James Gemmell" "Old Capitol"; "Jewett and Siebert"): no hit |
+| E28 | 11 Oct 1864 11.30 AM | F. W. Seward to Thurlow Weed, New York | 15 | 0 | 0 | 0 | not located: djvu grep "Thurlow Weed", Google Books ("proxy of the sailors", "Mississippi squadron will put a boat"), IA full text "proxy of the sailors": no hit |
+| E29 | 5 Nov 1864 4 PM | Dana to Dix, New York | 33 | 0 | 0 | 0 | the telegram not located (OR I/43 pt 2 djvu: no "Dudley Harris"); its content is in print: Confederates Downeast (1985) names Dudley Harris of Portland with the aliases Spencer and Barbour and Colonel Martin of Boston (Google Books snippet; whether it quotes this telegram not established); Maine (1990) snippet likewise |
+
+Grades: the decoder counts H 175, C 3 over E21-E29; by hand, three of its H tokens are moved: E25 "pike" (book: Cut off;
+the OR text, "your cavalry, a battery", has no word for it) H -> M; E27 "Grunt" (book: Warrenton, printed one line below
+Grapes/Growl = Washington, in the place-of-origin slot of a Washington message) H -> M; E28 "Pilgrim[?]" (image "Pelgrim",
+book Pilgrim = Captain; Pennock was a captain) kept H with the flag. Net: H 173, C 3, I 0, M 2 (the table above). E27's
+addressee word "beverage" is not in key.md: unread, not graded. Two key.md section 7 rows added at C from OR I/37 pt 2 p.501:
+Squase = Infantry, Samson = Ferry (the book's Sampson). Plain-word judgements (a `plain:` line, not graded): E21 chart
+(chartered), Helen, Richland (vessel names); E23 Whiting (the War Department solicitor), Fox (the signer); E24 Francis Adams,
+publishers; E25 White (Elijah White); E26 Walker (No. 42 Walker St, New York); E27 harem (Harlem); E28 squadron; E29 hair,
+Spencer, Taylor (names).
+
+Image vs volunteer text (image taken in every case): E22 "despatch" (volunteer dispatch); E24 "publishers" (publishing);
+E25 "Ed - wards" (Ed - monds); E26 "sutton" (sultan; Sutton = Information in the book); E28 "Pelgrim" (Pilgrim, kept as
+Pilgrim[?]); E29 "Person" read as written though the image is closer to "Psrson". E23's signature "Sig G. Fox Asst" is
+partly overwritten in darker pencil on the page, readable. Pencil glosses in a later hand above E22 and E24 ("(hand) (the)
+(event)", "(point) (prisons) (mutton)", numbers) are not ledger text and were not transcribed. Page numbers in the block
+headers are the ledger's printed numbers (pp.159, 197, 221 are image pages 161, 199, 223 in entries-mssEC19.tsv).
+
+Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`
+fetched once to $S/img; regions set from 500 px thumbnails; crops read by the worker, no subagent):
+`python3 tools/iiif_lines.py --image $S/img/p<pointer>.jpg --out $S/crops/<pointer> --prefix p<pointer> --region <x,y,w,h>
+--centres 50,150,...(100 px pitch) --lines-per-crop 4 [--top-margin 70] --max-width 2400` with 8934 `0,1950,2400,830`, 8935
+`0,120,2400,1200` (+ single strip `0,440,2400,160` --centres 80), 8949 `0,1300,2400,1520`, 8955 `0,950,2400,1650`, 8964
+`0,0,2400,850` (+ `0,780,2400,280` --centres 60,160), 9023 `0,1050,2400,1000`, 9053 `0,100,2400,1400` (+ `0,1420,2400,330`),
+9091 `0,100,2400,1780`, 9115 `0,930,2400,1200`. The automatic line finder found 0-4 lines on these faint pencil pages, so
+fixed centres were used.
+
+Requests: hdl.huntington.org 9 (IIIF images, all 200; the volunteer text came from the committed sources/mssEC19); archive.org
+10 (djvu: I/33, I/37 pt 2, I/43 pts 1-2, I/42 pts 2-3, I/36 pt 3, ORN 26: 200; one 503 on a mis-guessed identifier, not
+retried; 1 advancedsearch); be-api.us.archive.org 11 (fts; 4 answered 502, one retry each, E23 failed twice and was dropped);
+www.googleapis.com 18 (Books API with key and country=US; 2 answered 503, retried once, 200). Report what was found and where
+it was not found; novelty is a verifier's (rule 10): batch flagged for LS-V1.

@@ -1293,3 +1293,5 @@ printed in mssEC 41, with the grade the evidence allows.
 | mangled | telegraphed | C | OR I/37 pt 1 p.525 = E9, "General Grant telegraphed last evening"; both passes read "mangled", a slip for "wrangled" |
 | Brenton | (Assistant) Secretary of the Navy, the tail "Asst Brenton Fox" = Asst. Sec. G. V. Fox | M | E4; Butler's reply to Fox, OR I/33 p.279, fixes the correspondent but not the word |
 | Handle | Maj Gen J. B. Hood (Confederate) | C | A3V3-ECKC, 4 Oct 2026: mssEC 18 entry 9864.317 (13 Oct 1864, to Schofield) "meet any forces that Handle may send North" = OR I/39 pt 3 p.249 (OCR running head) "any forces that Hood may send north"; one witness, conditional on the volunteer transcription |
+| Squase | Infantry | C | written "Squase"; OR I/37 pt 2 p.501: Halleck to Wallace, 29 July 1864 12.20 PM, "your cavalry, a battery, and some infantry" = E25 (LS-R1, 7 Oct 2026) |
+| Samson | Ferry | C | clerk's spelling of Sampson; OR I/37 pt 2 p.501 = E25, "Edwards and Conrad's Ferries"; the book has Sampson = Ferry (p.20 l.22), used so in E21 (LS-R1, 7 Oct 2026) |
