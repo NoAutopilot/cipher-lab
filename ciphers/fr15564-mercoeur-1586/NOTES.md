@@ -193,3 +193,46 @@ Next step that depends on nobody: a shared-scale glyph sheet of f.151's 48 label
 vision unit, ~USD 2) to replace description matching; the owner's sign sorter pass (Usage 6, >10% disagreement) to
 settle the inventory and lower the measured error, after which the homophonic control is swept 0.05-0.25 and the target
 run if a noise-matched control meets 0.6 (~USD 1). Status stays `blocked`.
+
+## Shared-scale glyph sheet and sheet-matched Lasry cells rerun (D4-MERC, 7 Oct 2026)
+
+Worker D4-MERC (account 4, LANE DEFAULT-account-4-20261007-1335), 13:44-13:5x UTC 7 Oct 2026, disk only (no request to any
+host). Pre-registered in `PREREG-D4MERC.md` (commit 28190e31) and the cells file committed (4b1ceb60) before scoring.
+
+**Sheet.** `make_glyph_sheet.py` -> `sheet/tile_1..4.jpg` (+ `sheet_full.jpg`): Lasry's key image
+(`sources/cryptiana/web/GL/GL_BnFfr15564.png`) at x2.2 above the six MERC151 crops cut in halves at x0.9, which puts a key
+glyph (~19 px tall at 1x by row ink profile) and an f.151 sign body (~45 px) at about the same height. Deviation from the
+brief: the settled draft carries span and position but no pixel boxes, so one exemplar per label could not be cut by
+script; the tiles show the cipher spans in place with a 100-px ruler, and the labels were found by their sequence.
+
+**Match (one vision unit, this session; `lasry_glyph_match_f151_sheet.tsv`).** Overlap: **33 of 48 labels** have a key
+counterpart (32 letter glyphs + 'ff' as the nomenclator prefix), **16 at M** (same construction: delta = O, open square =
+P, reversed c = S, epsilon / phi / hash = V, X = N, R = Q, beta = B, omega = H, eta = E, quatrefoil knot = S, digits
+2 = F, 4 = C, 6 = E, 7 = O, p = C) and 16 at L (loose look-alikes); **15 have none** (T v r o L M N = & hp q g 5 Tb).
+The sheet shows the two inventories share a striking set of non-alphabetic shapes (delta, open square, reversed c,
+epsilon, phi, hash, quatrefoil), which the description-only match of MERC151 had put among the "no counterpart" group;
+but f.151's commonest signs (y, r, L, o, v) are plain Latin shapes with no or only a loose key counterpart.
+
+**Rerun (same flags as MERC151B).** `tools/partial_key_test.py --cells lasry_cells_f151_sheet.tsv --draft
+ciphertext_draft.tsv --lang fr --keys 500 --within 10 --width 400 --min-run 4 --seed 342 --key-seed 3420`:
+
+| run | runs / keyed signs | order gain | permuted-key mean / p95 | >= real | verdict |
+|---|---|---|---|---|---|
+| MERC151B description cells (3 Oct) | 19 / 95 | 0.0962 | -0.0410 / 0.1364 | 55/500 | no signal |
+| D4-MERC sheet cells (target) | 16 / 84 | 0.1474 | 0.0081 / 0.2348 | 77/500 | **no signal (FAIL)** |
+| D4-MERC `--shuffle-target 1` control | -- | -0.0318 | p95 0.1877 | -- | no signal (control clean) |
+
+Pre-registered verdict: FAIL. With a matched shape inventory the f.151 spans still show no letter-order signal under
+Lasry's fr.15564 letter values, conditional on a 2-reader draft (err_2reader 28.8%) and on matching at the key image's
+600-px resolution. Shared shapes with different values (or the same key family with a changed letter assignment) remain
+possible; this test does not separate them.
+
+Not found: any French reading of f.151 under the Lasry fr.15564 key with sheet-matched glyphs. Report only; no novelty
+classification (rule 10). Status stays `blocked`.
+
+## While waiting (updated D4-MERC, 7 Oct 2026)
+
+Next step that depends on nobody: none cheap left on the Lasry-key side; the shared-shape set (delta, square, reversed c,
+epsilon, phi, hash, knot) suggests the same cipher-maker's sign stock with a different assignment, so the next useful
+test is a homophonic/key-family run once the owner's sign-sorter pass (Usage 6) lowers err_2reader and the noise-matched
+control meets 0.6 (~USD 1). Status stays `blocked`.
