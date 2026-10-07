@@ -1480,3 +1480,9 @@ Google Books 0, IA advancedsearch 0 ("acioremti"). Details: AUDIT.md "Verifier: 
 unique solves (N3+ and D2+): 17 -- D4 1, D3 3, D2 13; not counted D0/D1: 13; legacy ungraded: 0
 ```
 Hosts: www.googleapis.com 1, archive.org 1.
+
+KH4-A, 7 Oct 2026 (key hunt, one line each): (1) BnF fr.4702 f.36r (Ceppo to Nevers, unglossed) was decoded with this key in
+the new folder `ciphers/ceppo-nevers-fr4702-f36`. The key ranks 1/201 against shuffled keys there, and the judge FAILs.
+(2) A suggested witness, not yet used here: BnF fr.4715 f.20 (item 5, "Mémoire, en chiffre, avec déchiffrement. Mars 1571.
+En italien", Gallica btv1b52509819x). Tomokiyo says it is in the Ceppo-Nevers cipher, so its period gloss could test the
+two I-graded signs.

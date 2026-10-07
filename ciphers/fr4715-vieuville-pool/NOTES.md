@@ -1382,3 +1382,8 @@ Verdict: parked: every gap has an outside blocker (GAPS100, 3 Oct 2026: frame wa
 
 ## While waiting (GAPS100, 3 Oct 2026)
 The one action that depends on nobody: when a new BnF fr.3993-4715 Nevers leaf or a key sheet is imaged by any lane, grep its gloss pairs for the six no.44 slot codes (.03, .07, .49, .57, .6) before anything else; until then nothing internal is untried.
+
+KH4-A, 7 Oct 2026 (key hunt, one-line suggestion): BnF fr.3977 f.191 (item 71, "Lettre, avec chiffre et déchiffrement, de
+ROBERT, marquis DE LA VIEUVILLE, au duc de Nevers, 13 aoust 1589"; sources/bnf-aem/cc504266_francais3974-3995.html) is a
+glossed Vieuville letter not named in this folder. It may carry the undocumented dotted word-code layer, so it could
+serve as a known-answer witness. Not fetched.
