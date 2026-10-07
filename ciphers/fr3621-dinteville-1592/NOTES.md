@@ -884,7 +884,7 @@ Verdict: keep going: 2 internal gaps; cheapest next: native sub-crops of f.128's
 
 ## While waiting
 
-- fr.3623 f.23r: build the sign-sorter sheet for the owner from the existing crops (f3623/, pilot/), then the 6-line alignment (~$30-48) -- the sheet depends on nobody; fr.4718 fols. 17/21/40 wait on the BnF reproduction order
+- (Done, DIN-SORTER, 3 Oct 2026, rebuilt 5 Oct; waiting on ASKS 112 -- noted 7 Oct 2026 by LANE-AM-0914 freshness check) fr.3623 f.23r: build the sign-sorter sheet for the owner from the existing crops (f3623/, pilot/), then the 6-line alignment (~$30-48) -- the sheet depends on nobody; fr.4718 fols. 17/21/40 wait on the BnF reproduction order
 - f.128 `0` native sub-crop look at the seven conflicting occurrences (~$5)
 
 ## Date line read (account-3 orchestrator, 3 Oct 2026 ~09:15 UTC)
