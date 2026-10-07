@@ -2029,3 +2029,47 @@ The D07-ECK62 override table and regeneration verified and endorsed in AUDIT.md 
 match the R12A-ECKV/ECKV2 tables exactly, every C cites its own telegram's print (6 of 6 spot-checked in OR), counts agree
 (counted readings H 369 C 2 -> H 367 C 4), all regeneration --check runs exit 0 on re-fetched data. No N-class or depth change;
 status.json, PROGRESS.tsv and SO-ECK-4992 carry no affected token. Remaining gaps / Escalation / Verdict above stand unchanged.
+
+## AM-ECK62Q (7 Oct 2026, account 2 worker for LANE LANE-AM-0914): the dated `?p` mssEC 18 entries under split2 against the image
+
+Step check: named by D07-ECK62's Verdict, not run before (no dated section, no ROOM done line). PREREG `ec18/s2/PREREG-ECK62-QP.md`
+pushed 574f2cdf6 before any image was fetched. vol18.json re-fetched to scratch (sha256 cb162574..., matches pilot1864/manifest.tsv);
+the 25 `?p` entries and their page pointers from `ec18.entries(split2=True)` and `s2/print_q.tsv`.
+- Images: 25 Huntington IIIF pages (`hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2000,/0/default.jpg`), scratch only,
+  not committed. Crop step: `python3 tools/iiif_lines.py --image img/p<ptr>.jpg --out crops/p<ptr> --prefix p<ptr> --lines-per-crop 9
+  --overlap 40 --max-width 2000 --distance 45 --prominence 20` (defaults found 0 lines on these pages); per-entry crops cut from the
+  tool's line centres (`--dry-run`) by the entry's line span in the volunteer text, three re-cuts where the span missed (9868.326 body,
+  9923.449, 9735.98 tail) and one page-tail strip for five entries. One eye (this worker), no subagent.
+- Control (PREREG item 3, chosen before any image): 8 marker-known entries on the same pages, 4 per book. Recall 25/25 marker tokens
+  found legibly on the image (gate >= 0.80), cross-set false markers 0 (gate 0): PASS. Not blind (disclosed in the PREREG).
+- Target: 0 of 25 `?p` entries show a marker word or book annotation the volunteer text lacks. No entry moved; no grade, reading or
+  key row changed. This is a search result: at this resolution the volunteer text dropped no marker on these 25 entries.
+  Not looked at: the continuation of 9668.3 on p.9669 and of 9706.69g on p.9707.
+- Why the print could not decide them: 9818.220 (Halleck), 9844.271 (Stanton), 9870.332 (Lincoln) are written wholly in clear and
+  9981.558 closes "E M Stanton" in clear; the rest use route words and code names that both books share, with "period" and "sig" written
+  out, so neither the marker rule nor the 5-gram margin can tell the books apart.
+- Header numbers (text-side tabulation over all 729 split2 entries, descriptive, not a gate): early-1864 headers "Beckwith 1",
+  "Caldwell 2" agree with the marker book, but from spring 1864 "No 1" ... "No 7" are daily serials ("No 2" heads 6 book-1 entries;
+  "No 3"-"No 7" have no book of that number; "9" heads Sheldon/Horner/Rowe entries of both kinds). Not usable as a book marker.
+- Seen on the image and absent from the volunteer text (not markers, recorded for a later worker): 9676.23 margin "Copy to Genl Grant";
+  9706.69g small interlinear words over code words (Engage, hope, horse, saved, not, burned) and route digits.
+- Rule 7: `decode.py --check` exit 0; ec18 outputs untouched (nothing regenerated). Requests: hdl.huntington.org 26 (1 dmQuery + 25
+  IIIF pages), >= 1.6 s apart, no errors. Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, AM-ECK62Q, 7 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); received ledgers mssEC 01-14 all searched for residue twins (GAPS171, D1-ECK62L): 0 code-bearing twins; mssEC 18 cascade split2 (ec18/s2/): 729 entries, align_free AGREE 0.427 vs control 0.088; 17 neither-book entries: 0 wrong telegram, 5 right, 12 undecided
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L, 0 twins); next: the image of the residue pages against the volunteer text for the M-graded tokens (transcription slips the decode reads as code), ~$4
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; Nutmeg = James River gains a 5 Jul 1863 witness (C, D1-ECK62L) but no second 1862 telegram; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); received copies in mssEC 12-13: 0 (D1-ECK62W); every Lehigh in mssEC 18-19 aligned 6 Oct 2026 (D1-ECK62S: 13 uses, 8 print-read, all Canby or 'can be', 0 Hurlbut; ec18/lehigh_uses.tsv); Lehigh graded by a verifier (R12A-ECKV, AUDIT.md 'Carry-over R12A-ECKV', ec18/lehigh_grades.tsv: C 8, M 4, clear 1; 9947.505 = Canby C, 10020.609 = can be C, superseding the committed readings' Hurlbut brackets until ec18.py's next full regeneration); Leghorn/Legend/Leopard swept 6 Oct 2026 (R12A-ECKLEG: 48 print-read, 0 Hurlbut) and graded by a verifier (R12A-ECKV2, AUDIT.md 'Carry-over R12A-ECKV2', ec18/hurlbut_row_grades.tsv: C 47, gloss 1, M 12; Legend's Butler/Canby conflict logged with witnesses in HYPOTHESES.md, unresolved); folded into ec18.py as a per-token override table 7 Oct 2026 (D07-ECK62: 34 mssEC 18 tokens, 27 H->C, 7 H->M; counted readings 9947.505 and 10020.609 H->C; ec18/overrides.tsv); next: the 7 M-graded Hurlbut-row tokens (OCR lacunae, telegrams with no aligned print) against another witness, ~$4
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; the 13 code words date 30 Dec 1864 - 13 Jul 1865, Cipher No. 3/No. 4 period; the Huntington holds only No. 5 (R8-ECK62); the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; 100 under the legacy split, 137 '?' entries under split2 print_q; the 25 dated `?p` entries checked against the image for dropped marker words 7 Oct 2026 (AM-ECK62Q, PREREG-ECK62-QP: 0 of 25 carry a marker, control 25/25 marker tokens found, 0 cross-set; 0 moved; 4 are written in clear, no book applies; ec18/s2/image_qp.tsv); header 'No N' numbers are serials after spring 1864, not book markers (No 2 on 6 book-1 entries; No 3-7 exist); next: the 112 undated-match '?' entries by a different instrument (bigram support under both keys already tried, RUN6-ECK62), or leave '?' as the residue no print or image decides, ~$3
+
+## Escalation (AM-ECK62Q, 7 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171) and mssEC 04-14 6 Oct 2026 (D1-ECK62L, 0 twins, Nutmeg 1863 witness); mssEC 12-13 for the Lehigh 1865 copies (D1-ECK62W, 0); every Lehigh in sent ledgers mssEC 18-19 (D1-ECK62S, 8 print-read, all Canby or 'can be'); every Leghorn/Legend/Leopard in mssEC 18-19 (R12A-ECKLEG, 48 print-read, 0 Hurlbut); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram and conflict-pair tests done on legacy (R7B-ECK62, R7C-ECK62C) and split2 (R10-ECK62T: 0 wrong, 5 right, 12 undecided; primary untested at N 60); splitter fixed and adopted (R9-ECK62, R10-ECK62S, R10-ECK62T)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; the `?p` image check ran (AM-ECK62Q: 0 markers dropped, 0 moved); cheapest next: the 7 M-graded Hurlbut-row tokens against another witness, ~$4; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
