@@ -5835,3 +5835,23 @@ Brief .claude/briefs/runs/2026-10-06-acct3-newtargets.md PART A; jobs .claude/br
 - Lesson: "spec with empty cheap_test_done" is not a reliable breadth backlog -- most workers record test 1 in NOTES.md only.
   A spec writer or breadth worker should write cheap_test_done in the same commit.
 
+
+## LANE DEFAULT-account-1-20261007-0042 handoff (session_01K3xPt4vRjTP7t7Psb4Vezr, account 1), 7 October 2026 (closed 02:0x UTC: runnable hot backlog worked in four waves, lane 52.45 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-07-account1-default-0042-jobs.md. Gate 0a: SESSION-SWEEP-account-1 row still
+`claimed` (TSV on disk since 5 Oct), proceeded as RUN8-12 did. VERIFY-BACKLOG held only Birago (off limits) and nla-heinrich audit2 (N0, not owed).
+15 Opus 5.5 workers, all ledgered and archived (13 D, 2 D-: VIV53 1.12x, ECKV 1.11x); workers 46.65, orchestrator 5.80.
+
+Results:
+- fr3416-nevers-fils-1589: AUDIT 3 propagation (D07-NEVFV) H 80/M 22 (token 45 H->M); sibling key-no.25 check on fr.4715 f.27r (D07-NEVF25) a non-test (control 2/20 vs 14/20), L05 pairing still M.
+- fr16142-noailles-constantinople-1571: bridge 17 -> 19 owner piles (D07-NOXT, PASS); c510-516 decode through the bridge fails its null-swap control (D07-NOX510) -> atlas-bridge instrument retired; reader-transcription passes on c510 L05-L14 split 22.9% (D07-NOXREAD), stopped at reconciliation, witness/c510_recon.tsv (278 signs).
+- fr16045-pisany-rome-1585: key86 T40 table-cell compare (D07-PIST40) and page-internal same/different (D07-PISSD) both non-tests; T40 image-compare step retired (rule 3 third attempt).
+- fr16104-vivonne-spain-1572: ink 53 e/o per-position vs key cells a non-test (control 4/12, 5/12 vs 8/12), no relabel (D07-VIV53).
+- decode-1411-hhsta-vienna-1600: p.4 per-number 4x tiles 79/83 firm, 58 settled, 1 value change 65->64; T21r 0.581 vs gloss 0.613 unchanged (D07-D1411).
+- colbert26-lathuillerie-1644: per-code positional known-answer 0 PASS of 3 (42=si held-out underpowered; 11=le P 0.060) (D07-COL26K).
+- eckert-1862: ec18.py override table, 34 tokens regraded 27 H->C / 7 H->M (D07-ECK62), endorsed by verifier D07-ECKV.
+- ceppo-nevers-fr3251-1570s: f.21v L10.6 f -> r at S (D07-CEP21), endorsed by verifier D07-CEPV (S 157/267); breach logged: PREREG-S13S69 reached git only with results.
+
+Open for the next lane (all folders' Verdict lines updated by their workers): fr16142 c510 tools/lookalike_pass.py on the reconciled passes then score (~$2);
+colbert26 word-level gloss-to-span pairing on native crops (~$6); fr16045 BnF 1586-87 table lookup (~$1) or the f.246r-v campaign (~$36);
+decode-1411 p.5 read by a person; fr16104 owner sign sorter; antt-linhares skipped (intake gate: blocked).
