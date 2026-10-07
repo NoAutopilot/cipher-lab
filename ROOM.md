@@ -10246,3 +10246,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 02:24 | standby (owner account) | alive; holder account 3, last activity 01:04 (commit ea719183a from its orchestrator session); no takeover
 2026-10-07 02:34 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 02:34 UTC: spawned 0, queued left 0 (autofill: default lane < 12 h); standby: account-3 orchestrator last commit 01:04 UTC (90 min), no takeover
 2026-10-07 02:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 02:39: spawned 0, queued left 0 (autofill: default lane < 12 h)
+2026-10-07 03:00 | key_crossmatch nightly (tools/key_crossmatch.py) | for the parent: xmatch hit (new lead): ciphers/rah-juan-manuel-1521/key_tomokiyo_alpha.tsv reads ciphers/trew-posthius-1614-18/ciphertext.tsv stat=5.68 (gate 3.292, null p99 3.498) per-pair in-class p99 3.282, z4gram 5.677 vs order-shuffled p99 3.115 cov=0.815 n=324 -- read by eye before any claim
