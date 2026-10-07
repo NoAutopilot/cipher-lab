@@ -86,3 +86,24 @@ each item at ~0.5.
    1586-87 key table he reproduces (henryiii_Vivonne5.png)? If yes, find its Gallica ark via SRU/IIIF. Remaining gaps row "key86 T40".
 5. fr5160-letellier-1653: one fetch of Colbert 26 canvas 679 at `full/600,/0/native.jpg` (the two earlier tries 404'd at another size; the
    info.json gives the true size), look for cipher, and close part III in NOTES.md.
+
+## Wave 2 (spawned 10:3x UTC 7 Oct; follow-ups named by wave 1). Intake gate output as wave 1 for eckert-1864; fr3986 below.
+Wave 1 results: AM-ECK64N2 N2-L read H 13 (2f2e7308c, AUDIT flag); AM-NEVF27 non-test (control 3/14); AM-ECK62Q 0/25 moved (control PASS);
+AM-LOOK 5 lookups done (fr3986 finding aid: items 68 and 75 "avec chiffre", Nevers to Revol 7 and 9 Oct 1593). AM-D1411P5 still running.
+
+### AM-ECK64K -- eckert-1864, the Kimber entry of 11 June 1864 (Vicksburg) opening p.90, pointer 8982 (Opus; cap 2.5, box 40 min)
+Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict (updated by AM-ECK64N2): read it with key-no2.md, disk + 1 IIIF page (crop command pasted, AM-ECK64N2's strip-crop route),
+check against the OR volume for its date (on disk if harvested; else one IA full-text query). Grade per token (H by key, C where a printed
+twin fixes the word). Add it as the next N2 entry in reading-no2.md beside N2-L, decode_no2 --check, update Verdict, gaps_check, and add your
+entry to AM-ECK64N2's ROOM AUDIT flag (one flag line naming both entries for the verifier). Report what was found and where it was not found.
+
+### AM-REV68 -- fr3986-nevers-revol-1593, census of sibling items 68 and 75 ("avec chiffre", Nevers to Revol, Vese 7 Oct and Coire 9 Oct 1593) (Opus; cap 3.5, box 50 min)
+Intake gate: `fr3986-nevers-revol-1593: blocked` (terminal state; this is a sibling census, not deep work on the target letter).
+fr.3986 is Gallica btv1b9060631k (481 canvases, all "NP", so folio labels are useless; give tools/gallica_folio.py eye-checked anchors or step
+through 300 px thumbnails, >= 2 s apart). Find the canvases of finding-aid items 68 and 75 (they fall between item 58, 4 Oct, and item 77, 7 Oct;
+use the target letter f.198 / item 101 canvas and any item already located in NOTES.md as anchors). For each: does it carry cipher, is it the same
+copyist's hand and sign family as f.198/f.298 (side-by-side crop sheet, crop command pasted, by eye), is there an interlinear decipherment or
+clear-text twin? Record canvases, sign-family verdict and counts of cipher lines in NOTES.md; if same family, cut line crops into a folder
+for the owner's sorter (do not build or publish a sorter) and name the next step (tiles added to ASKS 102's sorter, or a crib). No reading.
+Gallica requests <= 60. Report what was found and where it was not found.
