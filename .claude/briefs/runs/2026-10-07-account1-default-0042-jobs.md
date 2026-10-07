@@ -91,3 +91,43 @@ control that can vary on the statistic (rule 3: e.g. rotated/shuffled position a
 the Bonferroni correction and the power at each code's own N (subsample the positive control to that N, rule 3 last paragraph). Report target
 and control side by side per code; UNDERPOWERED is a result, not a negative. No vision. If a code passes, write it as S in key_* with the
 evidence and flag ROOM for a verifier only if a counted reading changes. Then the word-level pairing (~$6) is named, not run.
+
+## Wave 2 (spawned 01:0x UTC 7 Oct; follow-ups named by wave 1 plus next_steps rows). Intake gate output (01:0x UTC) pasted per job.
+antt-linhares-chave skipped: intake gate `blocked (line 3) -- already terminal`.
+
+### D07-NOX510 -- fr16142-noailles-constantinople-1571, place the 14 split-pile c262 tiles, then decode c510-516 through the bridge (Opus; cap 5, box 60 min)
+Intake gate: `fr16142-noailles-constantinople-1571: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict (D07-NOXT, 7 Oct): place the 14 split-pile c262 tiles (~1), then the c510-516 decode through the 19-pile bridge, pre-registered
+(~2). The 4 label conflicts D07-NOXT listed stay listed, not resolved by majority. PREREG committed and pushed before the decode: statistic,
+a control that can vary on it (e.g. the same decode with the bridge's key values permuted among piles, and a shuffled-order text), gate.
+Grade every decoded token (rule 4: S only where the control is beaten; M otherwise). judge_plaintext.py only if a spec exists. Any reading
+produced is a candidate for a verifier; flag ROOM. Vision at most 2 subagent calls on crop paths.
+
+### D07-NEVF25 -- fr3416-nevers-fils-1589, sibling key-no.25 letter for the L05 pairing (Opus; cap 5, box 60 min)
+Intake gate: `fr3416-nevers-fils-1589: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict (AUDIT 3, 7 Oct): check a sibling key-no.25 letter (fr.4715 f.27 or f.38) for orphan single digits, to settle the L05
+"45 79 (null)" vs "4 57 9 (m)" pairing. Locate the leaf via tools/gallica_folio.py (paste the call), crop with tools/iiif_lines.py (paste),
+read the figure runs (one subagent call per page, crop paths only, 2 blind passes + 1 reconciliation, ~1.5 each). Decide in advance (PREREG)
+what pattern in the sibling settles the pairing either way and what leaves it open. Do not decode the sibling beyond what the question needs;
+if it carries an unread cipher, say so in NOTES.md as a next step with a cost. If L05 grades change: decode --check and ROOM flag for a verifier.
+
+### D07-PISSD -- fr16045-pisany-rome-1585, key86 T40 page-internal same/different compare (Opus; cap 4, box 50 min)
+Intake gate: `fr16045-pisany-rome-1585: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict (D07-PIST40, 7 Oct: table-cell compare a NON-TEST, control 1/5): compare the f.302v T40 tokens with the same page's own
+C-graded T17 tokens as same/different pairs, disk only. PREREG first with a matched control that must pass (known-same and known-different
+pairs from C-graded tokens on the page, mixed blind into the set). If the control misses, stop and log non-test; this is then the third
+instrument on T40 (rule 3 third-attempt clause: mark the step [retired] with the instrument named, unless a genuinely different instrument
+remains). Units: pair sheet + 1 blind Sonnet call + 1 reconciliation, ~3.5.
+
+### D07-ECK62 -- eckert-1862, per-token override table in ec18.py at full regeneration (Opus; cap 4, box 50 min)
+Intake gate: `eckert-1862: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next: the per-token override table in ec18.py at its next full regeneration (Lehigh + Leghorn/Legend/Leopard grades,
+R12A-ECKV2), ~$3. Scripts only. Rule 7: the regeneration's --check exits 0 and the committed readings match; list every token whose grade
+moved (before/after counts). If counted readings change, flag ROOM for a verifier. The No. 4 book (13 words) stays waiting on the desk read.
+
+### D07-CEP21 -- ceppo-nevers-fr3251-1570s, f.21v S10/S26 and S13/S69 witness-shape rule, then a 4x read (Opus; cap 5, box 60 min)
+Intake gate: `ceppo-nevers-fr3251-1570s: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next: derive the S10/S26 and S13/S69 witness-shape rule from the fr.3252 glosses (as D22-CEPPO21 did for S65/S80 via
+fr.3252 f.36v), PREREG it before reading, then read the f.21v tokens on 4x tiles (~$3). Do not re-run the [retired] instrument (blind model
+reads of the a1b36v tiles). Crop step pasted; crop paths only. Grade changes: decode --check, counts before/after, ROOM flag for a verifier if
+a counted reading changes.
