@@ -1,0 +1,467 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050065">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050065">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3615
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050065_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065">Français 3615 • Anc. 9104 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e76">1 Lettre de « HENRY [IV]... à mon cousyn monseigneur le duc de Nevers,... Du camp de Saynt Cloud, ce deusyesme jour d'aoust... 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e82">Fol. 2 • 2 Lettre close de « HENRY [IV]... à noz chers et bien amez les eschevins, manans et habitans de nostre ville de La Charité... Escript au camp à St Cloux, le IIe jour de aoust 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e101">Fol. 3 • 3 Lettre de « HENRY [roi de Navarre]... à monseigneur de Bastenay,... A La Rochelle, le dernier novembre 1588 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e109">Fol. 4 • 4 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Escrit au camp du Mans, le Ve decembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e120">Fol. 5 • 5 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers, gouverneur et mon lieutenant general en mon pays de Champaigne... Escript à Mante, le XVme jour de juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e131">Fol. 6 • 6 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... De Myssy, ce mercredy à IX heures du soyr, XXVIIIme novambre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e142">Fol. 8 • 7 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp de St Denis, le XXVIIIe jour de juillet 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e156">Fol. 9 • 8 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce mardy à quatre heures du matyn, XXVIIIme juyllet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e167">Fol. 10 • 9 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... A Chaliot, ce XXIXe aoust 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e178">Fol. 11 • 10 Lettre de « HENRY [IV]... à mon cousin monseigneur le duc de Nevers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e186">Fol. 12 • 11 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce jeudy à deus heures apres mydy, XVme octobre, à Saynt Denys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e197">Fol. 13 • 12 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Escryt à Neuchatel, le XXIme novambre, à X heures du soyr ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e208">Fol. 14 • 13 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... De St Denis, le XXIII octobre, à sept heures du soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e219">Fol. 15 • 14 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce XXIIIIme octobre, à Saynt Denys, à mydy... 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e230">Fol. 16 • 15 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce samedy à unse heures du soyr, VIIme novambre, à Saynt Denys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e241">Fol. 17 • 16 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit à Chasteau Thierry... novembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e249">Fol. 19 • 17 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit au camp de Ceuvre, le Xe jour de novembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e260">Fol. 20 • 18 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp d'Aunay, le XVI novembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e268">Fol. 21 • 19 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... De Attichy, le XVIIIe jour de novembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e279">Fol. 22 • 20 Réponses de « HENRY » IV aux articles d'un mémoire du duc de Nevers, relatif aux affaires du gouvernement de Champagne. « Faict à Attichy, le XVIIIe jour de novembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e295">Fol. 23 • 21 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... De Attichy, le XXe jour de novembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e306">Fol. 24 • 22 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... De Vyerchy, le samedy matin XXIIII novembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e314">Fol. 25 • 23 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit au camp de Fere, le XXIIIIe jour de novembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e325">Fol. 26 • 24 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Escryt à Cedan, ce XVme octobre... [15]91 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e336">Fol. 27 • 25 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Escryt à Grandpré, le IIIme octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e347">Fol. 28 • 26 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp de St Quentin, le Xe decembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e361">Fol. 30 • 27 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit à St Quentin, le Xe jour de decembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e375">Fol. 31 • 28 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... Du camp de St Denis, le XXVII decembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e386">Fol. 32 • 29 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... De Saynt Denys, ce XXVIIme may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e397">Fol. 33 • 30 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... De St Denys, le 29e jour de decembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e411">Fol. 34 • 31 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit à Senlys, le IIe jour de janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e422">Fol. 35 • 32 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp de Mesly, le IIII janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e430">Fol. 36 • 33 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernois,... De Bulles, le VIe jour de janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e441">Fol. 37 • 34 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... De Senlis, le XVII janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e449">Fol. 38 • 35 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... De Senlis, le XVIII janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e457">Fol. 39 • 36 Lettre adressée par « HENRY » IV à des capitaines étrangers nouvellement arrivés pour prendre service dans son armée. « De Nanteuil le Haudoin, le dernier jour de janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e465">Fol. 40 • 37 Lettres closes de « HENRY » IV, par lesquelles il demande un état « des receptes de Langres, Chaource et Pougy », apportées « à Chaalons... Donné à Nanteuil, le dernier jour de janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e473">Fol. 41 • 38 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... D'Estampes, le XI febvrier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e481">Fol. 42 • 39 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Au camp d'Ably, le XIIIIe jour de fevrier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e492">Fol. 43 • 40 Lettre du maréchal duc JEAN « D'AUMONT » au duc de Nevers. « Au camp de Thoury en Beausse, ce 21 febvrier 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e505">Fol. 44 • 41 Lettre de « FRANÇOIS D'ORLEANS [comte DE SAINT-PAUL]... à monsieur le duc de Nevers,... De Vernon, ce XVIIe mars 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e521">Fol. 46 et 47 • 42-43 Deux lettres de « HENRY [IV]... à mon cousin le duc de Nivernois,... Du camp devant Chartres, le 20 jour de mars 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e529">Fol. 48 • 44 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp devant Chartres, le 22e jour de mars 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e545">Fol. 49 • 45 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp devant Chartres, le 24e jour de mars 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e556">Fol. 50 • 46 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp devant Chartres, le IXe jour d'avril 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e567">Fol. 51 • 47 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp devant Chartres, le XIe jour d'avril 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e578">Fol. 52 • 48 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit au camp de Chartres, le XIXe jour d'apvril 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e589">Fol. 54 • 49 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... De Mante, le VIIIe juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e600">Fol. 55 • 50 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp de Vernon, le XIe jour de juing 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e611">Fol. 56 • 51 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp de Andely, le 14e jour de juing 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e622">Fol. 58 • 52 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Des Cordelyeres, ce mercredy à sys heures du soyr, 2me ceptambre... 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e633">Fol. 59 • 53 Lettre de « HENRY [IV]... à ma cousyne la duchesse de Nevers,... Ce 3me novambre, à Rouan ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e644">Fol. 60 • 54 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp de Magny, le XXVIIe jour de juing 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e655">Fol. 62 • 55 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp de Magny, le 27e jour de juing 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e666">Fol. 63 • 56 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernois,... Du camp de Magny, le XXXe jour de juing 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e677">Fol. 64 • 57 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit au camp de Compiene, le XXVIe jour de juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e688">Fol. 66 • 58 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce XXXme mars, à Drenetal ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e699">Fol. 67 • 59 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp devant Noyon, le 30e jour de juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e710">Fol. 68 • 60 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Mante, le IIIe jour de juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e721">Fol. 69 et 71 • 61-62 Deux lettres de « HENRY [IV]... à mon cousin le duc de Nevers,... De Mante, le IIIIe jour de juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e732">Fol. 72 • 63 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp de Mante, le VIe jour de juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e743">Fol. 73 • 64 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernois,... De Mante, le XIIIe jour de juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e754">Fol. 75 • 65 Lettre du maréchal JEAN, duc « D'AUMONT,... à monsieur le duc de Nevers,... A Semur, ce XXXe juing 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e765">Fol. 76 • 66 Lettre du maréchal JEAN, duc « D'AUMONT,... à monsieur le duc de Nevers,... De Langres, ce XVe juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e776">Fol. 78 • 67 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp devant Noyon, le dernier jour de juillet 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e784">Fol. 79 • 68 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Escrit au camp de Noyon, le premier jour d'aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e792">Fol. 81 • 69 Mandement de « HENRY » IV au « commissaire et controlleur ordinaire ou extraordinaire des guerres », leur prescrivant de faire les montres des compagnies placées sous le commandement du duc de Nevers. « Donné en nostre armée devant Noyon, le IIIe jour de aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e813">Fol. 82 • 70 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp devant Noyon, le Ve jour de aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e824">Fol. 83 • 71 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit au camp devant Noyon, le VIIe jour d'aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e835">Fol. 84 • 72 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp devant Noyon, le XVe jour d'aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e846">Fol. 85 • 73 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Escrit au camp de Noyon, le XIXe jour d'aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e857">Fol. 86 • 74 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... De Noyon, le XIXme jour d'aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e868">Fol. 87 • 75 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Noyon, le XXIIIIe jour d'aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e879">Fol. 88 • 76 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Noyon, ce XXVIIe jour d'aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e890">Fol. 89 • 77 Lettre de « HENRY » IV au duc de Nevers. « Escrit à Noion, le XIIe jour de septembre ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e901">Fol. 90 • 78 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Chaulny, le XIIIe jour de septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e912">Fol. 91 • 79 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à La Capelle, le 17e jour de septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e923">Fol. 92 • 80 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernois,... Du camp de Maubert, le mercredy XVIIIme jour de septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e934">Fol. 93 • 81 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Chaulny... septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e942">Fol. 94 • 82 Lettre de « HENRY » IV au duc de Nevers. « Escrit au camp de Grandpré, le IIIe jour d'octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e953">Fol. 96 • 83 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... Escrit à Attigny, le 6e jour d'octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e964">Fol. 97 • 84 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp d'Attigny, le IXe jour d'octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e975">Fol. 98 • 85 Lettre de « HENRY D'ORLEANS [duc DE LONGUEVILLE]... à monsieur le duc de Nevers,... A Compiengne, ce dernier febvrier... [15]90 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e988">Fol. 100 • 86 Lettre, avec chiffre et déchiffrement, de « POTIER [DE GESVRES]... à monseigneur le duc de Nivernoys,... Du camp de Noyon, le 19e jour d'aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050065_d0e1004">Fol. 101 • 87 Articles d'un mémoire envoyé au roi par le duc DE NEVERS, pour savoir sa volonté touchant les affaires de Champagne et l'entrée du duc de Lorraine dans cette province. Copie.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3615 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc500653&Cote=Français 3615&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3615 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9104</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Armée. • Règlements et ordonnances (XVIe s.).</p>
+<p>Aumont, Jean d', maréchal de France, comte de Châteauroux. • Actes et lettres.</p>
+<p>Extraordinaire des Guerres. • Pièces diverses.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e76');">1 Lettre de « HENRY [IV]... à mon cousyn monseigneur le duc de Nevers,... Du camp de Saynt Cloud, ce deusyesme jour d'aoust... 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e82');">2 Lettre close de « HENRY [IV]... à noz chers et bien amez les eschevins, manans et habitans de nostre ville de La Charité... Escript au camp à St Cloux, le IIe jour de aoust 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e101');">3 Lettre de « HENRY [roi de Navarre]... à monseigneur de Bastenay,... A La Rochelle, le dernier novembre 1588 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e109');">4 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Escrit au camp du Mans, le Ve decembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e120');">5 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers, gouverneur et mon lieutenant general en mon pays de Champaigne... Escript à Mante, le XVme jour de juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e131');">6 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... De Myssy, ce mercredy à IX heures du soyr, XXVIIIme novambre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e142');">7 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp de St Denis, le XXVIIIe jour de juillet 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e156');">8 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce mardy à quatre heures du matyn, XXVIIIme juyllet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e167');">9 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... A Chaliot, ce XXIXe aoust 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e178');">10 Lettre de « HENRY [IV]... à mon cousin monseigneur le duc de Nevers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e186');">11 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce jeudy à deus heures apres mydy, XVme octobre, à Saynt Denys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e197');">12 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Escryt à Neuchatel, le XXIme novambre, à X heures du soyr ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e208');">13 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... De St Denis, le XXIII octobre, à sept heures du soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e219');">14 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce XXIIIIme octobre, à Saynt Denys, à mydy... 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e230');">15 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce samedy à unse heures du soyr, VIIme novambre, à Saynt Denys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e241');">16 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit à Chasteau Thierry... novembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e249');">17 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit au camp de Ceuvre, le Xe jour de novembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e260');">18 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp d'Aunay, le XVI novembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e268');">19 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... De Attichy, le XVIIIe jour de novembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e279');">20 Réponses de « HENRY » IV aux articles d'un mémoire du duc de Nevers, relatif aux affaires du gouvernement de Champagne. « Faict à Attichy, le XVIIIe jour de novembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e295');">21 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... De Attichy, le XXe jour de novembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e306');">22 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... De Vyerchy, le samedy matin XXIIII novembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e314');">23 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit au camp de Fere, le XXIIIIe jour de novembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e325');">24 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Escryt à Cedan, ce XVme octobre... [15]91 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e336');">25 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Escryt à Grandpré, le IIIme octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e347');">26 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp de St Quentin, le Xe decembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e361');">27 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit à St Quentin, le Xe jour de decembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e375');">28 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... Du camp de St Denis, le XXVII decembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e386');">29 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... De Saynt Denys, ce XXVIIme may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e397');">30 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... De St Denys, le 29e jour de decembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e411');">31 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit à Senlys, le IIe jour de janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e422');">32 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp de Mesly, le IIII janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e430');">33 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernois,... De Bulles, le VIe jour de janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e441');">34 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... De Senlis, le XVII janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e449');">35 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... De Senlis, le XVIII janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e457');">36 Lettre adressée par « HENRY » IV à des capitaines étrangers nouvellement arrivés pour prendre service dans son armée. « De Nanteuil le Haudoin, le dernier jour de janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e465');">37 Lettres closes de « HENRY » IV, par lesquelles il demande un état « des receptes de Langres, Chaource et Pougy », apportées « à Chaalons... Donné à Nanteuil, le dernier jour de janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e473');">38 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... D'Estampes, le XI febvrier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e481');">39 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Au camp d'Ably, le XIIIIe jour de fevrier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e492');">40 Lettre du maréchal duc JEAN « D'AUMONT » au duc de Nevers. « Au camp de Thoury en Beausse, ce 21 febvrier 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e505');">41 Lettre de « FRANÇOIS D'ORLEANS [comte DE SAINT-PAUL]... à monsieur le duc de Nevers,... De Vernon, ce XVIIe mars 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e521');">42-43 Deux lettres de « HENRY [IV]... à mon cousin le duc de Nivernois,... Du camp devant Chartres, le 20 jour de mars 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e529');">44 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp devant Chartres, le 22e jour de mars 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e545');">45 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp devant Chartres, le 24e jour de mars 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e556');">46 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp devant Chartres, le IXe jour d'avril 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e567');">47 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp devant Chartres, le XIe jour d'avril 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e578');">48 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit au camp de Chartres, le XIXe jour d'apvril 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e589');">49 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... De Mante, le VIIIe juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e600');">50 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp de Vernon, le XIe jour de juing 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e611');">51 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp de Andely, le 14e jour de juing 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e622');">52 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Des Cordelyeres, ce mercredy à sys heures du soyr, 2me ceptambre... 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e633');">53 Lettre de « HENRY [IV]... à ma cousyne la duchesse de Nevers,... Ce 3me novambre, à Rouan ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e644');">54 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp de Magny, le XXVIIe jour de juing 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e655');">55 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp de Magny, le 27e jour de juing 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e666');">56 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernois,... Du camp de Magny, le XXXe jour de juing 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e677');">57 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escrit au camp de Compiene, le XXVIe jour de juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e688');">58 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce XXXme mars, à Drenetal ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e699');">59 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Du camp devant Noyon, le 30e jour de juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e710');">60 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Mante, le IIIe jour de juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e721');">61-62 Deux lettres de « HENRY [IV]... à mon cousin le duc de Nevers,... De Mante, le IIIIe jour de juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e732');">63 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp de Mante, le VIe jour de juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e743');">64 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernois,... De Mante, le XIIIe jour de juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e754');">65 Lettre du maréchal JEAN, duc « D'AUMONT,... à monsieur le duc de Nevers,... A Semur, ce XXXe juing 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e765');">66 Lettre du maréchal JEAN, duc « D'AUMONT,... à monsieur le duc de Nevers,... De Langres, ce XVe juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e776');">67 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp devant Noyon, le dernier jour de juillet 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e784');">68 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Escrit au camp de Noyon, le premier jour d'aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e792');">69 Mandement de « HENRY » IV au « commissaire et controlleur ordinaire ou extraordinaire des guerres », leur prescrivant de faire les montres des compagnies placées sous le commandement du duc de Nevers. « Donné en nostre armée devant Noyon, le IIIe jour de aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e813');">70 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Du camp devant Noyon, le Ve jour de aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e824');">71 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit au camp devant Noyon, le VIIe jour d'aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e835');">72 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp devant Noyon, le XVe jour d'aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e846');">73 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Escrit au camp de Noyon, le XIXe jour d'aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e857');">74 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... De Noyon, le XIXme jour d'aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e868');">75 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Noyon, le XXIIIIe jour d'aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e879');">76 Lettre de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Noyon, ce XXVIIe jour d'aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e890');">77 Lettre de « HENRY » IV au duc de Nevers. « Escrit à Noion, le XIIe jour de septembre ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e901');">78 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Chaulny, le XIIIe jour de septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e912');">79 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à La Capelle, le 17e jour de septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e923');">80 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernois,... Du camp de Maubert, le mercredy XVIIIme jour de septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e934');">81 Lettre, avec chiffre et déchiffrement, de « HENRY [IV]... à mon cousin le duc de Nevers,... Escrit à Chaulny... septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e942');">82 Lettre de « HENRY » IV au duc de Nevers. « Escrit au camp de Grandpré, le IIIe jour d'octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e953');">83 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernoys,... Escrit à Attigny, le 6e jour d'octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e964');">84 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Du camp d'Attigny, le IXe jour d'octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e975');">85 Lettre de « HENRY D'ORLEANS [duc DE LONGUEVILLE]... à monsieur le duc de Nevers,... A Compiengne, ce dernier febvrier... [15]90 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e988');">86 Lettre, avec chiffre et déchiffrement, de « POTIER [DE GESVRES]... à monseigneur le duc de Nivernoys,... Du camp de Noyon, le 19e jour d'aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050065_d0e1004');">87 Articles d'un mémoire envoyé au roi par le duc DE NEVERS, pour savoir sa volonté touchant les affaires de Champagne et l'entrée du duc de Lorraine dans cette province. Copie.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

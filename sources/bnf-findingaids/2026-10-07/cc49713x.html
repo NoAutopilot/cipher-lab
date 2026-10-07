@@ -1,0 +1,508 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049713">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049713">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3252
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049713_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713">Français 3252 • Anc. 8761 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e92">1 Lettre de « HENRY [duc D'ANJOU]... à mon cousin monseigneur le duc de Nyvernoys,... Escript à Monceaulx, le VIIme jour de sepbre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e104">Fol. 2 • 2 Lettre de « HENRY [duc D'ANJOU]... à monseigneur le duc de Nevers,... Escript au chasteau de Boullongne lez Paris, le XXme jour de fevrier 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e115">Fol. 3 • 3 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « De vostre ville de Saluces... septembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e123">Fol. 5 • 4 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « De votre ville de Saluces... septembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e131">Fol. 7 • 5 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e139">Fol. 8 • 6 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « Du XXVe octobre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e150">Fol. 10 • 7 « Coppie de la lectre de monseigneur DULIN,... à monseigneur de Birague,... De Lyon, ce premier jour de novembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e163">Fol. 12 • 8 « Coppie de la lectre du roy [Charles IX], que monseigneur DE BIRAGUE luy a adressée le VIme novembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e174">Fol. 14 • 9 « Coppie de la lectre que monseigneur DE BIRAGUE a envoyée à la reyne, le VIme nobre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e188">Fol. 16 • 10 « Coppie de la lectre que monseigneur DE BIRAGUE a envoyée à monseigneur [le duc d'Anjou], le VIme novembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e199">Fol. 18 • 11 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernoys,... De Saluces, le IIIIme jour de decembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e210">Fol. 20 • 12 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « De Saluces, le VIIIme jour de decembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e221">Fol. 21 • 13 Copie d'une lettre de LOUIS DE BIRAGUE. « De Grenoble, le XXme decembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e232">Fol. 22 • 14 Lettre de « HIER [ONIMUS] DE PURPURA,... à monseigneur le duc de Nevers,... De Saluces, ce XXIIe decembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e243">Fol. 24 • 15 « Coppie des [trois] lettres que monseigneur DE BIRAGUE escrit à Leurs Majestez. Du XXVIme decembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e254">Fol. 26 • 16 Lettre de « ROGIER DE BELLEGARDE,... à monseigneur le duc de Nevers,... A Rouanes, ce XXVIIe decembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e265">Fol. 28 • 17 Copie d'une lettre de LOUIS DE BIRAGUE. « De Lyon, le IIIe janvier 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e276">Fol. 29 • 18 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du IIIIe janvier 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e287">Fol. 30 • 19 Copie d'une lettre de LOUIS DE BIRAGUE au duc de Nevers. « Ce VIIIme de febvrier 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e298">Fol. 31 et 32 • 20 Deux copies d'une lettre de LOUIS DE BIRAGUE au duc de Nevers. « Ce 18 febvrier 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e306">Fol. 33 • 21 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « De Saluces, le XXIme jour de fevrier 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e317">Fol. 34 • 22 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « De Saluces, le XVIme jour de mars 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e328">Fol. 35 • 23 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « De Saluces, le IIIIme jour d'avril 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e339">Fol. 36 • 24 Lettre, avec chiffre et déchiffrement, de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 5 aprile 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e347">Fol. 38 • 25 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Expedié le XIIIIme avril 1571, à Pinerol ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e358">26 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Pinarolo, li 14 aprile 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e364">Fol. 42 • 27 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XVIIme avril 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e375">Fol. 44 • 28 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Pinarolo, li 17 aprile 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e383">Fol. 45 • 29 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du 26 apvril 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e391">Fol. 47 • 30 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 26 aprile 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e399">Fol. 49 • 31 Requête de LOUIS DE BIRAGUE « à messieurs du conseil du roy pour les finances ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e407">Fol. 51 • 32 Deux extraits de lettres « du FRATIN, ingenieur, estant à Final ». 1 et 6 mai 1571.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e420">Fol. 52 • 33 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIme may 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e431">Fol. 54 • 34 « Coppie de la lectre du roy [CHARLES IX] escritte à monseigneur de Nevers,... Escript à Ennet, le IXme jour de may 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e442">Fol. 54 • 35 Copie d'une lettre du duc D'ANJOU au duc de Nevers. « Escript à Annet, le IXme jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e453">Fol. 55 • 36 « Coppie d'une lectre escritte par monseigneur DE BIRAGUE au Sr de Bellegarde,... De Saluces, le XVIIIme jour de may 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e467">Fol. 57 • 37 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 29 maggio 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e481">Fol. 59 • 38 Extrait d'une lettre de CHARLES IX à Louis de Birague. « Du IIIIme aoust 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e492">Fol. 60 • 39 Copie d'une lettre de CHARLES IX à Louis de Birague. « Escrit à Bloys, le Xme jour de septembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e503">Fol. 61 • 40 Copie d'une lettre de CHARLES IX au Sr de Bellegarde. « Escrit à Bloys... septembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e514">Fol. 62 • 41 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XVIIme septembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e525">Fol. 64 • 42 Copie d'une lettre de « ROGER DE BELLEGARDE » à « monseigneur Fayet,... A Thurin, ce XXIXme septembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e536">Fol. 65 • 43 Copie de la réponse de « FAYET,... De Saluces, le dernier septembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e549">Fol. 66 • 44 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme octobre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e560">Fol. 68 • 45 Lettre de « ROGIER DE BELLEGARDE,... à monseigneur le duc de Nevers,... De Carmagnolle, ce 15e de octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e571">Fol. 70 • 46 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XIXme jour d'octobre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e582">Fol. 72 • 47 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XXXme octobre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e593">Fol. 73 • 48 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. Du 5 octobre 1571.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e601">Fol. 74 • 49 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « Le dernier octobre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e609">Fol. 75 • 50 « Coppie de la premiere lectre escritte par monseigneur DE BIRAGUE au cappitaine La Vallette, commandant pour monseigneur de Bellegarde à Carmagnolles... De Saluces, le IIIIe novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e623">Fol. 75 • 51 « Coppie de la response dudict LA VALLETTE à mondict Sr de Birague,... De Carmagnolle, ce Vme novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e637">Fol. 75 • 52 « Coppie de la seconde lectre escritte par mondict Sr DE BIRAGUE audict La Vallette,... De Saluces, le VIIIe jour de novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e651">Fol. 76 • 53 « Coppie de la lectre que monseigneur DE BIRAGUE escrit au roy. Du IXme novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e662">Fol. 78 • 54 « Coppie de la commission du cappitaine Marc Balbo pour conduyre ung tiers de la compagnye de chevaulx legiers du Sr Julles Centurion,... Donné à Saluces, le dixme jour de novembre l'an mil V.C. soixante et unze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e687">Fol. 79 • 55 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XIIIme novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e698">Fol. 80 • 56 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « Du XIIIme novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e709">Fol. 81 • 57 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XVIe jour de novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e720">Fol. 83 • 58 Lettre de « ST JULLIEN,... à monseigneur le duc de Nivernois,... De Pignerol, ce XXVe novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e739">Fol. 85 • 59 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e747">Fol. 86 • 60 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXIIIIe jour de decembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e758">Fol. 90 • 61 Lettre des « sindicz de Pinerol,... à monseigneur de Birague,... De Pinerol, ce XXI decembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e766">Fol. 92 • 62 Lettre de « ST JULLIEN,... à monseigneur le duc de Nivernois,... De Saluces, ce XXIIIe decembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e780">Fol. 94 • 63 Lettre de « ST JULLIEN,... à monseigneur le duc de Nivernoys,... De Saluces, ce XXIIIe decembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e794">Fol. 96 • 64 « Coppia d'una lettera scritta [dal Sr LODOVICO BIRAGO] al Sr Fabiano di Monluc, governatore di Pinarolo... Da Saluzzo, li 24 di decembre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e808">Fol. 98 • 65 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme janvier 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e819">Fol. 99 • 66 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « Du VIIIme janvier 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e830">Fol. 100 • 67 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 8 di genaio 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e844">Fol. 102 • 68 Lettre de CHARLES IX à Louis de Birague. « Escript à Amboyse, le XIXme jour de janvier 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e855">Fol. 103 • 69 « Coppie de la lectre que monseigneur DE BIRAGUE escrit à Sa Majesté. Du VIIme fevrier 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e866">Fol. 105 • 70 Copie d'une lettre de LOUIS DE GONZAGUE, duc de Nevers, à Louis de Birague. « De Blois, ce IXe fevrier 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e882">Fol. 107 • 71 Copie d'une lettre de CHARLES DE BIRAGUE à Catherine de Médicis.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e895">72 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « De Saluces, le XXIme jour de fevrier 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e904">Fol. 109 • 73 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXIme jour de fevrier 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e915">Fol. 111 • 74 Copie de deux lettres de LOUIS DE BIRAGUE à Charles IX et à Catherine de Médicis. « Du XIIme mars 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e926">Fol. 113 • 75 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XIIme jour de mars 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e937">Fol. 115 • 76 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XIIIme jour de mars 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e948">Fol. 117 • 77 Lettre, avec chiffre, de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XIIIme mars 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e959">Fol. 119 • 78 Lettre de LOUIS DE GONZAGUE, duc de Nevers, à Louis de Birague. « De Bloys, ce 28 jour de mars 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e972">Fol. 121 • 79 « Coppie de [deux] lettres escrittes au roy et à la royne par le S. LUDOVIC DE BIRAGUE,... Du XIIme avril 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e983">Fol. 123 • 80 « Coppie de lectre escripte par monseigneur... LUDOVICO GONZAGA,... au seigneur Ludovic de Birague,... Escript à Blois, ce 19 jour d'avril 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e991">Fol. 125 • 81 « Coppie de lectre escripte par monseigneur [LOUIS DE GONZAGUE] au seigneur Ludovic de Birague,... Escript à Bloys, ce 28 jour d'avril 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e999">Fol. 127 • 82 « Coppie de l'eedict du roy sur le faict de l'exercice de la religion en Piedmont... Donné à Dieppe, le VIIIme jour de aoust, l'an de grace mil cinq cens soixante troys et de notre regne le troysme ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1013">Fol. 129 • 83 Copie de deux lettres de LOUIS DE BIRAGUE à Charles IX et à Catherine de Médicis. « Du XXIIIIme may 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1024">Fol. 131 • 84 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXIIIIme jour de may 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1035">Fol. 133 • 85 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXXme jour de may 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1046">Fol. 135 • 86 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1054">Fol. 137 • 87 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme jung 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1065">Fol. 139 • 88 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du 27 octobre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1073">Fol. 141 • 89 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XVme jung 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1084">Fol. 143 • 90 « Coppie de la lectre escritte au roy par le Sr LUDOVIC DE BIRAGUE,... De Saluces, le XXVIIme jung 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1098">Fol. 145 • 91 Copie de deux lettres de LOUIS DE BIRAGUE à Charles IX et à Catherine de Médicis. « Du VIme juillet 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1109">Fol. 148 • 92 Copie d'une lettre de « LA RALDE,... à monsieur de Birague,... A Pinerol, le Xme juillet 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1125">Fol. 149 • 93 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XIme juillet 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1136">Fol. 151 • 94 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du 27 juillet 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1144">Fol. 153 • 95 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1155">Fol. 155 • 96 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Pinarolo, alli VIII d'agosto 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1169">Fol. 157 • 97 Lettre de LOUIS DE BIRAGUE à Charles IX.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1177">Fol. 158 • 98 « Responce faicte sur la requeste que ceulx de Pragela et Valcluson ont presentée au Sr Ludovic de Birague ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1196">Fol. 159 • 99 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XVme aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1207">Fol. 161 • 100 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XXVIIme aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1218">Fol. 163 • 101 Copie d'une lettre d'HONORAT DE SAVOIE, « conte DE TENDE,... à Ludovic de Birague,... A Marignane, le XXVIIIme aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1234">Fol. 163 • 102 Copie de la réponse de LOUIS DE BIRAGUE au comte de Tende. « De Saluces, le IIme octobre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1245">Fol. 165 • 103 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme septembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1256">Fol. 167 • 104 « Coppye della lectre de monseigneur » le duc D'ANJOU à Louis de Birague. « Escrit à Paris, le XIIIIe jour de septembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1267">Fol. 168 • 105 « Coppie de la lectre escritte au roy par le Sr LUDOVIC DE BIRAGUE. Du dernier septembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1278">Fol. 170 • 106 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXVIIIme jour d'octobre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1289">Fol. 172 • 107 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces... novembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1297">Fol. 174 • 108 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXVIIIme jour de novembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1308">Fol. 176 • 109 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le Xme jour de decembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1319">Fol. 178 • 110 Copie d'une lettre du Sr « DE CHAPPONNAY,... à monsieur de Birague,... De Grenoble, ce XXVe juillet 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1338">Fol. 179 • 111 Minute d'une lettre du roi pour les villes de « Pinerol, Savillan, Carmagnolles, marquisat de Saluces, habitans de Cental ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049713_d0e1356">Fol. 181 • 112 Requête des « officiers de l'artillerie entretenuz pour le service du roy deça les monts... à monseigneur le duc de Nevers ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3252 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49713x&Cote=Français 3252&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060232m">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31542 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49713x&Cote=MF 31542&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3252 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8761</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31542. Cote de la matrice (pour commander une reproduction) : R 4307.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060232m" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9060232m.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9060232m.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Bellegarde, Roger Ier de Saint-Lary, maréchal de. • Actes et lettres.</p>
+<p>Birague, Louis de. • Actes et lettres.</p>
+<p>Carmagnola. • Pièces.</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Charles IX, roi de France. • Actes et lettres.</p>
+<p>Chiffres diplomatiques.</p>
+<p>Édits de Pacification.</p>
+<p>France. • Pitorre (Charles IX).</p>
+<p>Henri III, roi de France. • Anjou, actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e92');">1 Lettre de « HENRY [duc D'ANJOU]... à mon cousin monseigneur le duc de Nyvernoys,... Escript à Monceaulx, le VIIme jour de sepbre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e104');">2 Lettre de « HENRY [duc D'ANJOU]... à monseigneur le duc de Nevers,... Escript au chasteau de Boullongne lez Paris, le XXme jour de fevrier 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e115');">3 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « De vostre ville de Saluces... septembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e123');">4 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « De votre ville de Saluces... septembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e131');">5 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e139');">6 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « Du XXVe octobre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e150');">7 « Coppie de la lectre de monseigneur DULIN,... à monseigneur de Birague,... De Lyon, ce premier jour de novembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e163');">8 « Coppie de la lectre du roy [Charles IX], que monseigneur DE BIRAGUE luy a adressée le VIme novembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e174');">9 « Coppie de la lectre que monseigneur DE BIRAGUE a envoyée à la reyne, le VIme nobre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e188');">10 « Coppie de la lectre que monseigneur DE BIRAGUE a envoyée à monseigneur [le duc d'Anjou], le VIme novembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e199');">11 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernoys,... De Saluces, le IIIIme jour de decembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e210');">12 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « De Saluces, le VIIIme jour de decembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e221');">13 Copie d'une lettre de LOUIS DE BIRAGUE. « De Grenoble, le XXme decembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e232');">14 Lettre de « HIER [ONIMUS] DE PURPURA,... à monseigneur le duc de Nevers,... De Saluces, ce XXIIe decembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e243');">15 « Coppie des [trois] lettres que monseigneur DE BIRAGUE escrit à Leurs Majestez. Du XXVIme decembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e254');">16 Lettre de « ROGIER DE BELLEGARDE,... à monseigneur le duc de Nevers,... A Rouanes, ce XXVIIe decembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e265');">17 Copie d'une lettre de LOUIS DE BIRAGUE. « De Lyon, le IIIe janvier 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e276');">18 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du IIIIe janvier 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e287');">19 Copie d'une lettre de LOUIS DE BIRAGUE au duc de Nevers. « Ce VIIIme de febvrier 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e298');">20 Deux copies d'une lettre de LOUIS DE BIRAGUE au duc de Nevers. « Ce 18 febvrier 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e306');">21 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « De Saluces, le XXIme jour de fevrier 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e317');">22 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « De Saluces, le XVIme jour de mars 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e328');">23 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « De Saluces, le IIIIme jour d'avril 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e339');">24 Lettre, avec chiffre et déchiffrement, de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 5 aprile 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e347');">25 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Expedié le XIIIIme avril 1571, à Pinerol ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e358');">26 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Pinarolo, li 14 aprile 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e364');">27 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XVIIme avril 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e375');">28 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Pinarolo, li 17 aprile 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e383');">29 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du 26 apvril 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e391');">30 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 26 aprile 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e399');">31 Requête de LOUIS DE BIRAGUE « à messieurs du conseil du roy pour les finances ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e407');">32 Deux extraits de lettres « du FRATIN, ingenieur, estant à Final ». 1 et 6 mai 1571.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e420');">33 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIme may 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e431');">34 « Coppie de la lectre du roy [CHARLES IX] escritte à monseigneur de Nevers,... Escript à Ennet, le IXme jour de may 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e442');">35 Copie d'une lettre du duc D'ANJOU au duc de Nevers. « Escript à Annet, le IXme jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e453');">36 « Coppie d'une lectre escritte par monseigneur DE BIRAGUE au Sr de Bellegarde,... De Saluces, le XVIIIme jour de may 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e467');">37 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 29 maggio 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e481');">38 Extrait d'une lettre de CHARLES IX à Louis de Birague. « Du IIIIme aoust 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e492');">39 Copie d'une lettre de CHARLES IX à Louis de Birague. « Escrit à Bloys, le Xme jour de septembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e503');">40 Copie d'une lettre de CHARLES IX au Sr de Bellegarde. « Escrit à Bloys... septembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e514');">41 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XVIIme septembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e525');">42 Copie d'une lettre de « ROGER DE BELLEGARDE » à « monseigneur Fayet,... A Thurin, ce XXIXme septembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e536');">43 Copie de la réponse de « FAYET,... De Saluces, le dernier septembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e549');">44 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme octobre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e560');">45 Lettre de « ROGIER DE BELLEGARDE,... à monseigneur le duc de Nevers,... De Carmagnolle, ce 15e de octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e571');">46 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XIXme jour d'octobre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e582');">47 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XXXme octobre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e593');">48 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. Du 5 octobre 1571.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e601');">49 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « Le dernier octobre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e609');">50 « Coppie de la premiere lectre escritte par monseigneur DE BIRAGUE au cappitaine La Vallette, commandant pour monseigneur de Bellegarde à Carmagnolles... De Saluces, le IIIIe novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e623');">51 « Coppie de la response dudict LA VALLETTE à mondict Sr de Birague,... De Carmagnolle, ce Vme novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e637');">52 « Coppie de la seconde lectre escritte par mondict Sr DE BIRAGUE audict La Vallette,... De Saluces, le VIIIe jour de novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e651');">53 « Coppie de la lectre que monseigneur DE BIRAGUE escrit au roy. Du IXme novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e662');">54 « Coppie de la commission du cappitaine Marc Balbo pour conduyre ung tiers de la compagnye de chevaulx legiers du Sr Julles Centurion,... Donné à Saluces, le dixme jour de novembre l'an mil V.C. soixante et unze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e687');">55 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XIIIme novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e698');">56 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « Du XIIIme novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e709');">57 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XVIe jour de novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e720');">58 Lettre de « ST JULLIEN,... à monseigneur le duc de Nivernois,... De Pignerol, ce XXVe novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e739');">59 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e747');">60 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXIIIIe jour de decembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e758');">61 Lettre des « sindicz de Pinerol,... à monseigneur de Birague,... De Pinerol, ce XXI decembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e766');">62 Lettre de « ST JULLIEN,... à monseigneur le duc de Nivernois,... De Saluces, ce XXIIIe decembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e780');">63 Lettre de « ST JULLIEN,... à monseigneur le duc de Nivernoys,... De Saluces, ce XXIIIe decembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e794');">64 « Coppia d'una lettera scritta [dal Sr LODOVICO BIRAGO] al Sr Fabiano di Monluc, governatore di Pinarolo... Da Saluzzo, li 24 di decembre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e808');">65 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme janvier 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e819');">66 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « Du VIIIme janvier 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e830');">67 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 8 di genaio 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e844');">68 Lettre de CHARLES IX à Louis de Birague. « Escript à Amboyse, le XIXme jour de janvier 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e855');">69 « Coppie de la lectre que monseigneur DE BIRAGUE escrit à Sa Majesté. Du VIIme fevrier 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e866');">70 Copie d'une lettre de LOUIS DE GONZAGUE, duc de Nevers, à Louis de Birague. « De Blois, ce IXe fevrier 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e882');">71 Copie d'une lettre de CHARLES DE BIRAGUE à Catherine de Médicis.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e895');">72 Copie d'une lettre de LOUIS DE BIRAGUE à Catherine de Médicis. « De Saluces, le XXIme jour de fevrier 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e904');">73 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXIme jour de fevrier 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e915');">74 Copie de deux lettres de LOUIS DE BIRAGUE à Charles IX et à Catherine de Médicis. « Du XIIme mars 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e926');">75 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XIIme jour de mars 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e937');">76 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XIIIme jour de mars 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e948');">77 Lettre, avec chiffre, de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XIIIme mars 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e959');">78 Lettre de LOUIS DE GONZAGUE, duc de Nevers, à Louis de Birague. « De Bloys, ce 28 jour de mars 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e972');">79 « Coppie de [deux] lettres escrittes au roy et à la royne par le S. LUDOVIC DE BIRAGUE,... Du XIIme avril 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e983');">80 « Coppie de lectre escripte par monseigneur... LUDOVICO GONZAGA,... au seigneur Ludovic de Birague,... Escript à Blois, ce 19 jour d'avril 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e991');">81 « Coppie de lectre escripte par monseigneur [LOUIS DE GONZAGUE] au seigneur Ludovic de Birague,... Escript à Bloys, ce 28 jour d'avril 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e999');">82 « Coppie de l'eedict du roy sur le faict de l'exercice de la religion en Piedmont... Donné à Dieppe, le VIIIme jour de aoust, l'an de grace mil cinq cens soixante troys et de notre regne le troysme ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1013');">83 Copie de deux lettres de LOUIS DE BIRAGUE à Charles IX et à Catherine de Médicis. « Du XXIIIIme may 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1024');">84 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXIIIIme jour de may 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1035');">85 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXXme jour de may 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1046');">86 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1054');">87 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme jung 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1065');">88 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du 27 octobre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1073');">89 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XVme jung 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1084');">90 « Coppie de la lectre escritte au roy par le Sr LUDOVIC DE BIRAGUE,... De Saluces, le XXVIIme jung 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1098');">91 Copie de deux lettres de LOUIS DE BIRAGUE à Charles IX et à Catherine de Médicis. « Du VIme juillet 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1109');">92 Copie d'une lettre de « LA RALDE,... à monsieur de Birague,... A Pinerol, le Xme juillet 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1125');">93 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XIme juillet 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1136');">94 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du 27 juillet 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1144');">95 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1155');">96 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Pinarolo, alli VIII d'agosto 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1169');">97 Lettre de LOUIS DE BIRAGUE à Charles IX.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1177');">98 « Responce faicte sur la requeste que ceulx de Pragela et Valcluson ont presentée au Sr Ludovic de Birague ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1196');">99 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XVme aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1207');">100 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du XXVIIme aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1218');">101 Copie d'une lettre d'HONORAT DE SAVOIE, « conte DE TENDE,... à Ludovic de Birague,... A Marignane, le XXVIIIme aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1234');">102 Copie de la réponse de LOUIS DE BIRAGUE au comte de Tende. « De Saluces, le IIme octobre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1245');">103 Copie d'une lettre de LOUIS DE BIRAGUE à Charles IX. « Du VIIIme septembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1256');">104 « Coppye della lectre de monseigneur » le duc D'ANJOU à Louis de Birague. « Escrit à Paris, le XIIIIe jour de septembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1267');">105 « Coppie de la lectre escritte au roy par le Sr LUDOVIC DE BIRAGUE. Du dernier septembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1278');">106 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXVIIIme jour d'octobre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1289');">107 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces... novembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1297');">108 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le XXVIIIme jour de novembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1308');">109 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nyvernois,... De Saluces, le Xme jour de decembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1319');">110 Copie d'une lettre du Sr « DE CHAPPONNAY,... à monsieur de Birague,... De Grenoble, ce XXVe juillet 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1338');">111 Minute d'une lettre du roi pour les villes de « Pinerol, Savillan, Carmagnolles, marquisat de Saluces, habitans de Cental ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049713_d0e1356');">112 Requête des « officiers de l'artillerie entretenuz pour le service du roy deça les monts... à monseigneur le duc de Nevers ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

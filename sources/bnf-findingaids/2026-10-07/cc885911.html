@@ -1,0 +1,620 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000088591">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000088591">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Dupuy</div>
+					<h1>Dupuy 452
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000088591_info">Informations bibliographiques</a></div><div class="niv0"><div class="withoutChild"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088591">Dupuy 452 • Recueil de lettres et de documents, concernant les relations politiques de la FRANCE et de l'ITALIE pendant la première moitié du XVIe siècle.</a></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Dupuy 452 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc885911&Cote=Dupuy 452&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10036146c">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 19924 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc885911&Cote=MF 19924&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Dupuy 452 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de documents, concernant les relations politiques de la FRANCE et de l'ITALIE pendant la première moitié du XVI<emph render="super">e</emph> siècle.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier et parchemin257 feuillets.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 19924. Cote de la matrice (pour commander une reproduction) : R 180350.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10036146c" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10036146c.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10036146c.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Originaux et copies.</p>
+<p>Les lettres contenues dans ce volume sont adressées aux personnages suivants : Au Sacré Collège, par le roi d'Angleterre Henri [VIII], s. l. n. d., en latin (13) ; — par le cardinal d'York [Thomas Wolsey], s. d., en latin (14) ; — par Adrien VI, au moment de son élection, « ex Victoria, die ultima februarii » [1522] (19) ; — par François I<emph render="super">er</emph>, juillet 1536, en latin (34) ; copies ;</p>
+<p>Au cardinal de Sens, chancelier de France, [Antoine Du Prat], par [Alberto Pio] de Carpi, Rome, 18 mai 1520, orig. (16) ; — par le premier président [de la Chambre] des comptes de Provence, [Balthazar Gérente, sieur de Sénas], Rome, mai 1528, orig. (42) ; — par G[abriel] de Gramont, évêque de Tarbes, Rome, 15 mai [1530], orig. (48) ; — par Alfonso d'Este, duc de Ferrare, 14 mars 1528, en latin, orig., cachet (153) ; — par [Claude] Dodieu, [sire de Vély], Florence, 26 avril et 9 mai 1529 (176 et 178) ; — par Odet de Foix, [sire de Lautrec], Plaisance, 4 nov., orig. (250) ; Parme, 2 déc. s. a., orig. (252) ;</p>
+<p>A Mgr de Lautrec [Odet de Foix], par [Alberto Pio] de Carpi, Rome, 20 fév. s. a., orig. (17) ;</p>
+<p>A Madame [Louise de Savoie], par [Alberto Pio] de Carpi, Rome, 22 oct. 1525, orig., presque entièrement en chiffres (20) ; — par Nicolas Raince, secrétaire de l'ambassade de France à Rome, 25 oct. 1525, autogr., presque entièrement en chiffres (28) ; — [par le même ?], s. d. (31) ; — par « el vescovo de Baieux » [Luigi Canossa, évêque de Bayeux], Venise, 18 et 21 nov. 1525, orig. 163 et 160) ;</p>
+<p>Au trésorier [Florimond] Robertet, par Nicolas Raince, Rome, 24 oct. 1525, autogr. (24) ;</p>
+<p>Au Roi [François I<emph render="super">er</emph>], par le Sacré Collège, Rome. 16 juin 1526, orig., en latin (33) ; — par D[enys Briçonnet], évêque de Saint-Malo, « le doyan d'Orl[éans] » et « Poton », Rome, 16 juin [1515 ?], autogr. (46) ; — par G[abriel] de Gramont, évêque de Tarbes, Florence, 23 août 1529, orig. (49) ; — par les « priores libertatis et vexillifer justitiae » de Florence, 15 janv. 1515 [1516], original, parchemin, en latin, (171) ; — par Odet de Foix, [sire de Lautrec], « au camp devant le Bosque », 11 août s. a., original (248) ; — par [Ferrariis], Rome, 14 avril 1535, duplicata (84) ;</p>
+<p>Au Pape [Clément VII], par le Roi [François I<emph render="super">er</emph>], Compiègne, 14 sept. [1527], minute, en latin (36) ; et Amiens, août [1527], en français (37) ; — par le cardinal [Antoine] Du Prat, Paris, 9 janv. [1528], minute, en latin (40) ;</p>
+<p>Au duc d'Albanye [Jean Stuart], par Jean de Furnes, Rome, 18-22 déc., autog. (69-71) ; Rome, 13 janv. s. a. (90), et Lyon, 1<emph render="super">er</emph> mars (102), — par Nicolas Raince, Rome, 24 janv. 1534, orig. (80) ; — par Ferrariis, Rome, 16 avril s. a., autogr. (82) ; — par J. de Furnes et Ferrariis, Rome, 25 janv. s. a., orig. (86) ; — par Philippe [de La Chambre], cardinal de Boulogne, Rome, 22 déc. (94) ; 25 janv. s. a. (96) ; 15 avril s. a. (100), autographes ;</p>
+<p>Au Roi [Henri II], par [Jean-Paul de Selve, évêque de Saint-Flour], 8 janv. 1558 (142) ;</p>
+<p>A la république de Venise, par Lautrec [Odet de Foix], en italien (168) ;</p>
+<p>A l'évêque d'Avranches [Jean de Langeac], ambassadeur à Venise, par Odet de Foix, [sire de Lautrec], Naples, 22 juin [1528], orig. (246).</p>
+<p>Parmi les autres documents contenus dans ce volume, on peut signaler les suivants : Instruction intitulée : <emph render="italic">Cardinale papabile</emph>, en italien (5) ; — Déclaration d'Alberto Pio, comte de Carpi, relative à ses démarches pour faire donner le chapeau cardinalice au chancelier [Antoine Du Prat], Compiègne, 9 sept. 1527, en latin, orig., parchemin, sceau (39) ; — « Instructions pour Sebastien, sur ce qu'il doit dire et faire bien entendre au Roy [François I<emph render="super">er</emph>] de par nouz cardinal de Saint-Severin [Federico di San-Severino], seigneurs de Montmor [Louis de Hangest, sire de Genlis] et de Soliés [Louis de Forbin] », orig., signatures autogr. (44) ; — Récit de l'élection de Paul III (52) ; — Déchiffrements de dépêches diplomatiques de Rome, 16 avril [1535] (56), et 6 nov. (60) ; — Déchiffrements de dépêches de [Philippe de La Chambre], cardinal de Boulogne, 22 déc. s. a. (72) ; s. d. (76) ; — « Discorsi sopra Paolo terzo, dopo essere stato diece anni nel Pontificato, s'haveva da dichiararsi Francese overo lmperiale » (107) ;</p>
+<p>Description de l'État de Ferrare, en italien (145) ; — Hommage prêté au roi d'Espagne Philippe II par Ranuccio Farnese, duc de Parme et de Plaisance, pour le duché de ce nom, Madrid, 1<emph render="super">er</emph> oct. 1594, en latin, copie (155) ; — Bulle de Léon X, investissant Federico Gonzaga, fils aîné de Francesco, marquis de Mantoue, de l' « oppidum Pupilii », Rome, 15 kal. april. (18 mars) 1513, copie (157) ; — Traité conclu par Claude Dodieu avec Malatesta Baglioni, Florence, 16-19 avril 1529, en latin (172).</p>
+<p>Traduction italienne de lettres de Louis XII, relatives au duché de Milan, s. d. (180) ; — « Ex hac tabula lector diligens judicare potest, ad quos Burgundiae et Mediolani ducatus, et Amedei Sabaudiae ducis haereditas pertineat », in-fol., <emph render="italic">impr</emph>. (183) ; — « Arbre de consanguinité des maisons de France, Bourgongne, Milan et Savoye, par laquelle on peult juger à qui appartient le d[r]oict ès choses aujourdhuy contentieuses èsdictes maisons », in-fol., <emph render="italic">impr</emph>. (184) ; — Mémoire sur le duché de Milan (186) ; — Lettres de l'empereur Maximilien, donnant à Louis XII l'investiture du duché de Milan, Haguenau, 7 avril 1505 (190) ; Trente, 14 juin 1509 (196 et 200) ; — Hommage pour le duché de Milan, fait au nom de Louis XII par le cardinal Georges d'Amboise, Haguenau, 6 avril 1505, en latin (194) ; — Quittance de 100.000 écus d'or au soleil, reçus par l'empereur Maximilien du roi Louis XII, pour l'investiture du duché de Milan, Trente, 14 juin 1509, en latin (206) ;</p>
+<p>Acte notarié, relatif à la donation et cession du duché de Milan faites par Louis XII en faveur de sa fille Renée de France, Blois, 2 déc. 1512, en latin et en français, orig., parchemin (208) ; — Lettres de Louis XII, relatives à la même cession, Paris, nov. 1513 (209) ; — Copie d'un livret imprimé à Turin en 1615, et relatif à la confiscation du comté d'Aste, en italien, de la main de P. Dupuy (211) ; — Lettres de François I<emph render="super">er</emph>, relatives aux duché de Milan, comté d'Aste et seigneurie de Gênes, en français, s. d. (215) ; conférant divers privilèges à la ville de Côme, Milan, déc. 1515, en latin, copie authentique, d'une main italienne (218) ; concernant les affaires de Milan, Lyon, 22 août 1523, en français, copie authentique (223) ; — Bulle de Léon X, relative à l'administration de la justice dans le duché de Milan, Rome, 17 kal. jul. 1518 (221) ; — Discours prononcé au mariage de Bernabó et Margherita Visconti, en latin, prose et vers (223) ;</p>
+<p>Mémoire de [Jean] Du Tillet sur la Sicile et Naples (235) ; — Note de Th. Godefroy sur les documents concernant la Sicile, l'Aragon, Naples et la Bourgogne, conservés au Trésor des chartes du palais de Nancy, autogr. (239) ; — « Memorial des points sur lesquelz a esté à debatre et des raisons alleguées par nostre tressainct Père », au sujet de l'investiture de Naples et de la Sicile (240) ; — Lettres de François I<emph render="super">er</emph>, nommant Odet de Foix, sire de Lautrec, son lieutenant-général en Italie, Paris, juin 1527, en latin (244) ; — Lettres d'abolition, accordées par François I<emph render="super">er</emph> aux rebelles de Naples, Saint-Germain-en-Laye, 20 fév. 1526, en latin (253) ; — Lettres du chancelier d'Espagne, M[ercurino] Gatt[inar]a, au vice-roi de Naples [Charles de Lannoy], Gênes, 25 et 27 juillet 1527, en français (255 et 257) ; etc.</p>
+</span>
+</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Volume constitué en 1636.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>ADRIEN VI, pape • Correspondance</p>
+<p>AMBOISE (Georges D'), cardinal, Accord par lui ratifié • Hommage pour le Milanais</p>
+<p>ASTI • Comté. Lettres le concernant</p>
+<p>BAGLIONE (Malatesta) • Traité par lui conclu</p>
+<p>BOURGOGNE • Duché et ducs de Bourgogne</p>
+<p>BRIÇONNET (Denis) [non Guillaume], évêque de Saint-Malo • Lettres</p>
+<p>CANOSSA (Luigi), évêque de Bayeux • Lettres</p>
+<p>CARDINAUX • Lettres du sacré Collège</p>
+<p>CLEMENT VII, pape • Lettres à lui adressées</p>
+<p>COME (Italie) • Privilèges octroyés à cette ville par François Ier</p>
+<p>DODIEU (Claude), sieur de Vély • Lettres</p>
+<p>DODIEU (Claude), sieur de Vély • Traité par lui conclu</p>
+<p>DU PRAT (Antoine), archevêque de Sens, chancelier, cardinal, légat apostolique • Cardinalat</p>
+<p>DU PRAT (Antoine), archevêque de Sens, chancelier, cardinal, légat apostolique • Lettres</p>
+<p>DU PRAT (Antoine), archevêque de Sens, chancelier, cardinal, légat apostolique • Lettres à lui adressées</p>
+<p>DU TILLET (Jean), greffier civil au Parlement de Paris, frère de Jean du Tillet, évêque de Meaux • Mémoires par lui faits</p>
+<p>ESPAGNE • Documents divers</p>
+<p>ESTE (Alphonse Ier D'), duc de Ferrare et de Modène • Lettres</p>
+<p>FARNESE (Ranuccio I), duc de Parme et de Plaisance • Hommage par lui rendu</p>
+<p>FERRARE • Duché et ducs</p>
+<p>FERRARE (Renée de France, duchesse DE) • Cession et dons à elle faits</p>
+<p>FERRARIIS (N. DE), secrétaire du duc d'Albany • Lettres</p>
+<p>FLORENCE • Pièces diverses</p>
+<p>FORBIN (Louis DE), sieur de Soliers</p>
+<p>FRANCE • Maison de France : rois, reines, princes du sang, etc</p>
+<p>FRANCE • Relations avec l'Italie</p>
+<p>FRANÇOIS Ier, roi de France • Pièces diverses le concernant</p>
+<p>FRANÇOIS Ier, roi de France • Lettres</p>
+<p>FRANÇOIS Ier, roi de France • Lettres et actes émanés de lui</p>
+<p>FRANÇOIS Ier, roi de France • Lettres à lui adressées</p>
+<p>FURNES (Jean DE) • Lettres</p>
+<p>GENES • Relations avec la France</p>
+<p>GERENTE (Balthazar DE ?), sieur de Sénas, premier président de la Chambre des Comptes de Provence • Lettre</p>
+<p>GONZAGUE (Frédéric II DE), marquis, puis duc de Mantoue • Bulle en sa faveur</p>
+<p>GRAMONT (Gabriel DE), évêque de Tarbes • Lettres</p>
+<p>HANGEST (Louis DE), sire de Genly et de Montmor • Instructions à Sébastien, par lui envoyé vers François Ier</p>
+<p>HENRI V, roi d'Angleterre • Traités par lui faits</p>
+<p>HENRI VIII, roi d'Angleterre • Lettres</p>
+<p>HENRI II, roi de France • Lettres à lui adressées</p>
+<p>HENRI, prince de Galles (+1612), Projet de mariage avec Chrestienne de France</p>
+<p>ITALIE • Relations avec la France</p>
+<p>JACQUES Ier, roi d'Angleterre [Jacques VI, roi d'Écosse] • Ambassadeurs</p>
+<p>LA CHAMBRE (Philippe DE), cardinal de Boulogne • Dépêches déchiffrées</p>
+<p>LA CHAMBRE (Philippe DE), cardinal de Boulogne • Lettres</p>
+<p>LANGEAC (Jean DE), évêque d'Avranches, puis de Limoges, ambassadeur • Lettre à lui adressée</p>
+<p>LANNOY (Charles DE), vice-roi de Naples • Lettre à lui adressée</p>
+<p>LAUTREC (Odet de Foix, seigneur DE) • Lettres</p>
+<p>LAUTREC (Odet de Foix, seigneur DE) • Lettres à lui adressées</p>
+<p>LAUTREC (Odet de Foix, seigneur DE) • Lettres le nommant lieutenant général en Italie</p>
+<p>LEON X, pape • Bulles</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12214255s" class="hrefLink ext">Louis XII</a>
+</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12214255s" class="hrefLink ext">Louis XII</a>
+</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12214255s" class="hrefLink ext">Louis XII</a>
+</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12515579c" class="hrefLink ext">Louise de Savoie</a>
+</p>
+<p>LUCAS (Jacques), doyen de l'église d'Orléans • Lettres</p>
+<p>MAXIMILIEN Ier D'AUTRICHE, roi des Romains, empereur • Lettres et actes divers émanés de lui</p>
+<p>MAXIMILIEN Ier D'AUTRICHE, roi des Romains, empereur • Quittances par lui données</p>
+<p>MILAN • Duché et ducs</p>
+<p>NAPLES • Royaume</p>
+<p>NAPLES • Ville</p>
+<p>PAUL III, pape • Discours le concernant</p>
+<p>PAUL III, pape • Élection</p>
+<p>PHILIPPE II, roi d'Espagne • Hommage à lui rendu</p>
+<p>PIO (Alberto), prince de Carpi, ambassadeur • Déclaration par lui faite</p>
+<p>PIO (Alberto), prince de Carpi, ambassadeur • Lettres</p>
+<p>POTON • Lettre</p>
+<p>« PUPILII » (Oppidum) • Bulle d'investiture de cette place</p>
+<p>RAINCE (Nicolas) • Lettres</p>
+<p>ROBERTET (Florimond) • Lettres à lui adressées</p>
+<p>ROME • Dépêches de Rome</p>
+<p>ROME • Lettres datées de Rome</p>
+<p>SAINT-SEVERIN (Frédéric DE), cardinal • Instructions par lui données</p>
+<p>SAVOIE • Maison de Savoie</p>
+<p>SAVOIE (Amédée IX, duc DE) • Succession</p>
+<p>SAVOIE (Chrétienne ou Christine de France, duchesse DE) • Mariage projeté avec le prince de Galles</p>
+<p>SEBASTIEN, agent diplomatique • Instructions à lui données</p>
+<p>SICILE • Mémoires et notes la concernant</p>
+<p>STUART (Jean), duc d'Albany, gouverneur de la Marche • Lettres à lui adressées</p>
+<p>VENISE • Lettres à elle adressées</p>
+<p>VISCONTI (Bernabo) • Discours prononcé à son mariage</p>
+<p>VISCONTI (Margherita) • Discours prononcé à son mariage</p>
+<p>WOLSEY (Thomas), cardinal • Lettres</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<br/>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

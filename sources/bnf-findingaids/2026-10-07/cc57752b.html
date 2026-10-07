@@ -1,0 +1,511 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057752">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057752">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4702
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057752_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752">Français 4702 • Anc. 9524 • Recueil de pièces originales et de copies concernant l'histoire, à commencer en 1570 pour finir dans les premières années du XVIIe siècle.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e171">Fol. 1 • 1 « Discorso delle cose come s'hano a tratare col Sr duca di Mantova. Per il cavaglier GUAZZO ». Adressé au duc de Nevers. Cette pièce est cotée H. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e182">Fol. 11 • 2 « Inventario delle scritture che 'l Sr Barchino ha ritirate... à Mantova ». Lesdites écritures sont comprises entre les dates extrêmes 1542-1566. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e193">Fol. 13 • 3 Fragment. On lit en tête cette note : « Con la lettera di n° 31 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e201">Fol. 14 • 4 Lettre à écrire par le duc DE NEVERS, concernant « il cavaliere Guazzo ». Adressée, semble-t-il, au duc de Mantoue. Elle est de la main du « cavaliere Guazzo » luimême. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e209">Fol. 15 • 5 Lettre adressée au duc de Nevers par un de ses agents. En italien. Nous n'avons ici que les deux premiers feuillets.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e217">Fol. 17 • 6 « Memoriale di FRANCESCO BECIO al Sr cavaglier Guazzo. Pinerol, 26 gennaio 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e228">Fol. 19 et 21 • 7-8 Lettres, en italien, concernant les affaires du duc de Nevers. Nous n'avons que les deux premiers feuillets de chacune.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e236">Fol. 23 • 9 Mémoire concernant les débats de la comtesse de La Mirandole et du Sr Luigi, son beau-frère. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e247">Fol. 25 • 10 Fragment de lettre, en italien, adressée au duc de Nevers. Écrite de la même main que la lettre indiquée sous l'article 5.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e255">Fol. 26 • 11 Fragment de lettre du « cavaliere GUAZZO ». Casal, 31 mars 1581. C'est le sixième feuillet de la lettre indiquée sous l'article 8. En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e263">12-15 Fragments, en italien, de lettres et mémoires concernant les affaires du duc de Nevers.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e269">12 (fol. 27) En tête : « Con la lettera n° 4 ». Écriture identique à celle de l'article 3.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e275">13 (fol. 29) Suite immédiate de l'article 10.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e281">14 (fol. 30) 3e feuillet de l'article 7.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e290">15 (fol. 31 et 32) Feuillets 4 et 5 de l'article 8.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e296">Fol. 33 • 16 Fragment de lettre du « cavaliere GUAZZO ». Mantoue, 5 juillet 1572. C'est le 4e feuillet de l'article 7. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e307">Fol. 34 et 35 • 17-18 Notes, en italien, concernant les affaires du duc de Nevers. 1572.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e315">Fol. 36 et 37 • 19-20 Chiffres de CESARE CEPPO au duc de Nevers. Le second est accompagné du déchiffrement en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e323">Fol. 38 et 39 • 21-22 Lettres de « CESARE CEPPO » au duc de Nevers. Mantoue, 16 septembre 1589. La seconde est un double de la première. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e331">Fol. 40 • 23 « Nota delle scritture dimandate et che ancora non si sono havute a Mantova, et sono di quelle di fu Madama eccellentissima », Marguerite Paléologue, duchesse de Mantoue. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e339">Fol. 41 • 24 « Scritture lasciate presso il Sr Gio. Gaspar Barchino,... per il Sr Cesare Ceppo, pertinenti al Sor duca di Nevers, l'ultimo di decembre 1569 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e356">Fol. 43 • 25 « Parere dil senato di Casale a Mma illma et eccma [Marguerite Paléologue, duchesse de Mantoue] per le terre di Caliano, Calusio et 40,000 scudi dil dotto di Mma [Anne d'Alençon, sa mère] di felice memoria ». Après 1551. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e376">Fol. 45 et 46 • 26-27 Lettres de « HIERONIMO GRIMALDI » au duc de Nevers. 1589. La seconde lettre est incomplète : nous n'avons ici que les deux premiers feuillets. L'adresse de la première est au fol. 48. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e384">Fol. 49 • 28 Lettre de CAMILLO VOLTA au cardinal d'Est. Copie inachevée. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e392">Fol. 51 • 29 « Aviso di Millano. 10 d'agosto 1572 ». Adressé, semble-t-il, au duc de Nevers par le Sr GUAZZO. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e403">30 Mémoire, en italien, portant au dos cette note : « Per il duca di Nivers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e412">31 Discours, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e423">Fol. 57 • 32 Acte d'une déclaration de Louis de Gonzague, duc de Nevers, en faveur de Ferdinand de Gonzague, prince de Molfetta. En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e431">Fol. 59 • 33 Lettre de « LIVIA PICA » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e439">34 Mémoire, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e453">Fol. 63 • 35 Lettre, en italien, adressée de Bologne au duc de Nevers, Louis de Gonzague, alors à Rome, pour y négocier l'absolution du roi Henri IV. 8 décembre 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e461">Fol. 65 et 67 • 36-37 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, au duc de Mantoue, son neveu, et à Camillo Volta. Mai 1590 et août 1577. En italien. Minutes incomplètes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e469">Fol. 69 • 38 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS, au général des capucins. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e477">Fol. 71 • 39 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à Camillo Volta. Nevers, 21 juillet 1589. En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e485">Fol. 73 • 40 « Memoriale di M. PIETRO GIORGIO DELLA SALA, per il signor senator Becio ». Après février 1568. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e498">Fol. 75 • 41 « Nota di alcune cose occorse mentre si sono trattati a Mantova li negocii del Sr duca di Nevers eccmo, l'ultima volta che ha mandato il cavaliere GUAZZO, delle quale cose non si e fatta mentione nel discorso delli negocii, come sono passati, per non interrompere il filo di detti negocii ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e512">Fol. 77 et suiv • 42-47 Lettres et nouvelles adressées au duc de Nevers, de Rome, Marseille et Bologne. Nous n'avons, sous le n° 42, que les deux premiers feuillets d'une lettre de CAMILLO VOLTA au duc de Nevers, 19 mai 1586. Parties chiffrées, accompagnées du déchiffrement. Cette lettre est cotée 30. En italien. Sous les nos 43 à 47 sont des avis en italien, sauf un (le n° 45). Ces avis, adressés au duc de Nevers en 1594, sont tous de la même main.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e523">Fol. 85 • 48 « Minuta della lettera scritta da S. Ecca [le duc DE NEVERS] al papa [Sixte-Quint], per il Sr Scipione Gonzaga ». Vers 1587. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e537">Fol. 87 • 49 Lettre de « PAOLO MOROSI » au duc de Nevers. Venise, 19 mai 1586. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e545">Fol. 89 • 50-51 Lettres adressées par CHARLES DE GONZAGUE, duc DE NEVERS, au duc et à la duchesse de Mantoue. En italien. Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e553">52 Mémoire, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e574">53 Lettre, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e593">54 Mémoire, en italien, concernant les difficultés rencontrées par Henri de France, roi de Pologne, dans le gouvernement de ce royaume, et le remède qu'il faut y apporter.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e606">Fol. 94 • 55 Déchiffrement d'une partie de lettre adressée au duc de Nevers par l'intermédiaire de l'ambassadeur d'Espagne auprès du pape Sixte-Quint, à Rome. L'auteur de la lettre, un agent du duc de Nevers, déclare audit duc que le roi d'Espagne voudrait le voir peser sur le duc de Mayenne en faveur des intérêts espagnols. Entre 1589 et 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e614">56 Réflexions sur le rôle d'un roi au milieu de ses sujets. Ce mémoire, qui semble viser les affaires de Pologne, commence (fol. 96) par : « Essendo il regno de ridotto in tanta licenza de mal fare... ». L'auteur de ces réflexions, mises sur le compte d'un certain « Filandro », paraît être le duc de Nevers. 1575. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e620">Fol. 97 • 57 Déchiffrement d'une partie de lettre adressée au duc de Nevers par un de ses agents, concernant les offices que le roi d'Espagne attend du duc de Nevers. 16 février 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e628">Fol. 98 • 58 Minute de lettre du duc DE NEVERS, LOUIS DE GONZAGUE, au duc de Mantoue. Decize, 19 mars 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e636">59 Lettre, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e652">60 « Lettera di un gentilhuomo, di 25 di marzo, scritta al Sr Lodovico Birago, ricevuta il 7 d'aprile, insieme con una di detto sigor Lodovico ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e674">Fol. 103 • 61 « Conto (pour frais de lettres) di HIERONIMO GRIMALDI (correspondant du duc de Nevers à Gènes), di lire disisette e soldi cinque ». Entre 1582 et 1585. En italien. Autographe.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e682">62 Post-scriptum d'une lettre, en italien, adressée au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e698">Fol. 106 • 63 Post-scriptum de la lettre qui occupe les feuillets 98 et 99 du présent ms. En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e706">Fol. 107 • 64 Lettre du duc de Nevers, Louis de Gonzague, au cardinal Scipion de Gonzague. Vers 1590. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e714">Fol. 108 • 65 Déchiffrement d'une partie de lettre adressée au duc de Nevers. Relatif aux avances faites par le roi d'Espagne au duc de Nevers, à qui cependant on veut retirer le gouvernement de la Champagne pour le donner au duc de Guise. 19 février 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e722">Fol. 109 • 66 Petit mémoire, en italien, concernant un article inscrit « nel accordo fato tra illmi et eccmi Sri li Sr duca di Nevers et marchesa di Peschara, sopra li debiti ch' erano atenenti alla fe. me. dell' illma et eccma marsa di Monferrato », Marguerite Paléologue, leur mère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e751">Fol. 110 et 111 • 67-68 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, dont l'une est adressée à Camillo Volta, le 26 mai 1576, et l'autre, le 28 mai 1590, au duc de Mantoue, neveu dudit duc. En italien. Minutes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e759">Fol. 112 • 69 Mémoire, en latin. En tête on lit : « Copia VIIIa Gebennensis matrimonii ». A la fin on lit : « CAMILLUS CASTELLANUS ». Il s'agit ici de prouver que le mariage de Claude de Foix et de Charles de Luxembourg, vicomte de Martigue, n'a pu être rendu valable par les dispenses des papes Paul III et Jules III.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e780">Fol. 113 • 70 « Copia della risposta del padre maestro alla Sra marchesa » Isabelle de Gonzague, marquise de Pescara, soeur de L. de G., duc de Nevers, pour le rassurer sur les intentions dudit duc à son égard, au sujet du partage des biens laissés par leur mère, Marguerite Paléologue. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e794">Fol. 114 • 71-72 Lettres du duc DE NEVERS, LOUIS DE GONZAGUE, à Camillo Volta. « Da bagni », 6 et 7 août 1571. En italien. Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e802">Fol. 116 • 73 Lettre de « GIACOMO MARIA ANGELO » au « cavallier Guazzo, a Casale... D'Alba, alli 11 d'aprile 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e810">Fol. 118 • 74 Nouvelles de Milan, adressées au duc de Nevers, avec lettre du Sr GUAZZO du 13 septembre 1572. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e821">Fol. 120 • 75 Nouvelles datées de Gênes, 17 mai 1594. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e829">Fol. 122 et suiv • 76-78 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, à Camillo Volta. Août et juin 1576. Minutes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e837">Fol. 126 • 79 Lettre de « FULVIO ANGELUCCI, contenant 4 sonnets en l'honneur de Charles de Gonzague, duc de Nevers. La lettre est adressée « à monsieur... Salvato, Me de chambre » dudit duc, « à Paris ». 1616. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057752_d0e848">80 « Amaestramento, per far uno barbaro da corer », mémoire.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4702 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57752b&Cote=Français 4702&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b530546654">Consulter le document numérisé</a></li></ul><ul class="listeLiens"></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4702 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9524</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'histoire, à commencer en 1570 pour finir dans les premières années du XVII<emph render="super">e</emph> siècle.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b530546654" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b530546654.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b530546654.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Becio, Francesco. • Mémorial.</p>
+<p>Ceppo, Cesare. • Lettres.</p>
+<p>Charles IX, roi de France. • Pièces et recueils divers.</p>
+<p>Clément VIII, pape. • Rapports, avec le duc de Ferrare.</p>
+<p>Espagne. Histoire extérieure. • Relations, avec l'Italie.</p>
+<p>France. • Pitorre (1570-1616).</p>
+<p>Gonzague, Famille de.</p>
+<p>Gonzague, Isabelle de, marquise de Pescaire. • Succession de la duchesse de Ferrare.</p>
+<p>Grimaldi, Jérôme. • Lettres.</p>
+<p>Guazzo, Chevalier Stefano, agent du duc de Nevers. • Correspondance.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>Mantoue, Marguerite Paléologue, duchesse de. • Succession.</p>
+<p>Modène, César d'Este, duc de. • Lettres.</p>
+<p>Morosi, Paolo. • Lettres.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Pièces diverses.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Pic de la Mirandole, Livia. • Lettres.</p>
+<p>Pologne. • Ambassades et affaires extérieures.</p>
+<p>Pologne. • Anjou, mémoire sur les difficultés de son gouvernement.</p>
+<p>Thou, Famille de.</p>
+<p>Volta, Camillo. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e171');">1 « Discorso delle cose come s'hano a tratare col Sr duca di Mantova. Per il cavaglier GUAZZO ». Adressé au duc de Nevers. Cette pièce est cotée H. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e182');">2 « Inventario delle scritture che 'l Sr Barchino ha ritirate... à Mantova ». Lesdites écritures sont comprises entre les dates extrêmes 1542-1566. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e193');">3 Fragment. On lit en tête cette note : « Con la lettera di n° 31 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e201');">4 Lettre à écrire par le duc DE NEVERS, concernant « il cavaliere Guazzo ». Adressée, semble-t-il, au duc de Mantoue. Elle est de la main du « cavaliere Guazzo » luimême. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e209');">5 Lettre adressée au duc de Nevers par un de ses agents. En italien. Nous n'avons ici que les deux premiers feuillets.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e217');">6 « Memoriale di FRANCESCO BECIO al Sr cavaglier Guazzo. Pinerol, 26 gennaio 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e228');">7-8 Lettres, en italien, concernant les affaires du duc de Nevers. Nous n'avons que les deux premiers feuillets de chacune.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e236');">9 Mémoire concernant les débats de la comtesse de La Mirandole et du Sr Luigi, son beau-frère. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e247');">10 Fragment de lettre, en italien, adressée au duc de Nevers. Écrite de la même main que la lettre indiquée sous l'article 5.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e255');">11 Fragment de lettre du « cavaliere GUAZZO ». Casal, 31 mars 1581. C'est le sixième feuillet de la lettre indiquée sous l'article 8. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e263');">12-15 Fragments, en italien, de lettres et mémoires concernant les affaires du duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e296');">16 Fragment de lettre du « cavaliere GUAZZO ». Mantoue, 5 juillet 1572. C'est le 4e feuillet de l'article 7. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e307');">17-18 Notes, en italien, concernant les affaires du duc de Nevers. 1572.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e315');">19-20 Chiffres de CESARE CEPPO au duc de Nevers. Le second est accompagné du déchiffrement en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e323');">21-22 Lettres de « CESARE CEPPO » au duc de Nevers. Mantoue, 16 septembre 1589. La seconde est un double de la première. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e331');">23 « Nota delle scritture dimandate et che ancora non si sono havute a Mantova, et sono di quelle di fu Madama eccellentissima », Marguerite Paléologue, duchesse de Mantoue. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e339');">24 « Scritture lasciate presso il Sr Gio. Gaspar Barchino,... per il Sr Cesare Ceppo, pertinenti al Sor duca di Nevers, l'ultimo di decembre 1569 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e356');">25 « Parere dil senato di Casale a Mma illma et eccma [Marguerite Paléologue, duchesse de Mantoue] per le terre di Caliano, Calusio et 40,000 scudi dil dotto di Mma [Anne d'Alençon, sa mère] di felice memoria ». Après 1551. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e376');">26-27 Lettres de « HIERONIMO GRIMALDI » au duc de Nevers. 1589. La seconde lettre est incomplète : nous n'avons ici que les deux premiers feuillets. L'adresse de la première est au fol. 48. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e384');">28 Lettre de CAMILLO VOLTA au cardinal d'Est. Copie inachevée. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e392');">29 « Aviso di Millano. 10 d'agosto 1572 ». Adressé, semble-t-il, au duc de Nevers par le Sr GUAZZO. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e403');">30 Mémoire, en italien, portant au dos cette note : « Per il duca di Nivers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e412');">31 Discours, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e423');">32 Acte d'une déclaration de Louis de Gonzague, duc de Nevers, en faveur de Ferdinand de Gonzague, prince de Molfetta. En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e431');">33 Lettre de « LIVIA PICA » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e439');">34 Mémoire, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e453');">35 Lettre, en italien, adressée de Bologne au duc de Nevers, Louis de Gonzague, alors à Rome, pour y négocier l'absolution du roi Henri IV. 8 décembre 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e461');">36-37 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, au duc de Mantoue, son neveu, et à Camillo Volta. Mai 1590 et août 1577. En italien. Minutes incomplètes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e469');">38 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS, au général des capucins. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e477');">39 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à Camillo Volta. Nevers, 21 juillet 1589. En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e485');">40 « Memoriale di M. PIETRO GIORGIO DELLA SALA, per il signor senator Becio ». Après février 1568. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e498');">41 « Nota di alcune cose occorse mentre si sono trattati a Mantova li negocii del Sr duca di Nevers eccmo, l'ultima volta che ha mandato il cavaliere GUAZZO, delle quale cose non si e fatta mentione nel discorso delli negocii, come sono passati, per non interrompere il filo di detti negocii ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e512');">42-47 Lettres et nouvelles adressées au duc de Nevers, de Rome, Marseille et Bologne. Nous n'avons, sous le n° 42, que les deux premiers feuillets d'une lettre de CAMILLO VOLTA au duc de Nevers, 19 mai 1586. Parties chiffrées, accompagnées du déchiffrement. Cette lettre est cotée 30. En italien. Sous les nos 43 à 47 sont des avis en italien, sauf un (le n° 45). Ces avis, adressés au duc de Nevers en 1594, sont tous de la même main.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e523');">48 « Minuta della lettera scritta da S. Ecca [le duc DE NEVERS] al papa [Sixte-Quint], per il Sr Scipione Gonzaga ». Vers 1587. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e537');">49 Lettre de « PAOLO MOROSI » au duc de Nevers. Venise, 19 mai 1586. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e545');">50-51 Lettres adressées par CHARLES DE GONZAGUE, duc DE NEVERS, au duc et à la duchesse de Mantoue. En italien. Copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e553');">52 Mémoire, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e574');">53 Lettre, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e593');">54 Mémoire, en italien, concernant les difficultés rencontrées par Henri de France, roi de Pologne, dans le gouvernement de ce royaume, et le remède qu'il faut y apporter.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e606');">55 Déchiffrement d'une partie de lettre adressée au duc de Nevers par l'intermédiaire de l'ambassadeur d'Espagne auprès du pape Sixte-Quint, à Rome. L'auteur de la lettre, un agent du duc de Nevers, déclare audit duc que le roi d'Espagne voudrait le voir peser sur le duc de Mayenne en faveur des intérêts espagnols. Entre 1589 et 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e614');">56 Réflexions sur le rôle d'un roi au milieu de ses sujets. Ce mémoire, qui semble viser les affaires de Pologne, commence (fol. 96) par : « Essendo il regno de ridotto in tanta licenza de mal fare... ». L'auteur de ces réflexions, mises sur le compte d'un certain « Filandro », paraît être le duc de Nevers. 1575. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e620');">57 Déchiffrement d'une partie de lettre adressée au duc de Nevers par un de ses agents, concernant les offices que le roi d'Espagne attend du duc de Nevers. 16 février 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e628');">58 Minute de lettre du duc DE NEVERS, LOUIS DE GONZAGUE, au duc de Mantoue. Decize, 19 mars 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e636');">59 Lettre, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e652');">60 « Lettera di un gentilhuomo, di 25 di marzo, scritta al Sr Lodovico Birago, ricevuta il 7 d'aprile, insieme con una di detto sigor Lodovico ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e674');">61 « Conto (pour frais de lettres) di HIERONIMO GRIMALDI (correspondant du duc de Nevers à Gènes), di lire disisette e soldi cinque ». Entre 1582 et 1585. En italien. Autographe.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e682');">62 Post-scriptum d'une lettre, en italien, adressée au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e698');">63 Post-scriptum de la lettre qui occupe les feuillets 98 et 99 du présent ms. En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e706');">64 Lettre du duc de Nevers, Louis de Gonzague, au cardinal Scipion de Gonzague. Vers 1590. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e714');">65 Déchiffrement d'une partie de lettre adressée au duc de Nevers. Relatif aux avances faites par le roi d'Espagne au duc de Nevers, à qui cependant on veut retirer le gouvernement de la Champagne pour le donner au duc de Guise. 19 février 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e722');">66 Petit mémoire, en italien, concernant un article inscrit « nel accordo fato tra illmi et eccmi Sri li Sr duca di Nevers et marchesa di Peschara, sopra li debiti ch' erano atenenti alla fe. me. dell' illma et eccma marsa di Monferrato », Marguerite Paléologue, leur mère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e751');">67-68 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, dont l'une est adressée à Camillo Volta, le 26 mai 1576, et l'autre, le 28 mai 1590, au duc de Mantoue, neveu dudit duc. En italien. Minutes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e759');">69 Mémoire, en latin. En tête on lit : « Copia VIIIa Gebennensis matrimonii ». A la fin on lit : « CAMILLUS CASTELLANUS ». Il s'agit ici de prouver que le mariage de Claude de Foix et de Charles de Luxembourg, vicomte de Martigue, n'a pu être rendu valable par les dispenses des papes Paul III et Jules III.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e780');">70 « Copia della risposta del padre maestro alla Sra marchesa » Isabelle de Gonzague, marquise de Pescara, soeur de L. de G., duc de Nevers, pour le rassurer sur les intentions dudit duc à son égard, au sujet du partage des biens laissés par leur mère, Marguerite Paléologue. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e794');">71-72 Lettres du duc DE NEVERS, LOUIS DE GONZAGUE, à Camillo Volta. « Da bagni », 6 et 7 août 1571. En italien. Copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e802');">73 Lettre de « GIACOMO MARIA ANGELO » au « cavallier Guazzo, a Casale... D'Alba, alli 11 d'aprile 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e810');">74 Nouvelles de Milan, adressées au duc de Nevers, avec lettre du Sr GUAZZO du 13 septembre 1572. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e821');">75 Nouvelles datées de Gênes, 17 mai 1594. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e829');">76-78 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, à Camillo Volta. Août et juin 1576. Minutes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e837');">79 Lettre de « FULVIO ANGELUCCI, contenant 4 sonnets en l'honneur de Charles de Gonzague, duc de Nevers. La lettre est adressée « à monsieur... Salvato, Me de chambre » dudit duc, « à Paris ». 1616. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057752_d0e848');">80 « Amaestramento, per far uno barbaro da corer », mémoire.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

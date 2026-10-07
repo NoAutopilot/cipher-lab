@@ -1,0 +1,507 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049712">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049712">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3251
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049712_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712">Français 3251 • Anc. 8760 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e89">1 « Coppia di la lettera del Sor LODOVICO BIRAGO,... alla Rna [Catherine de Médicis]... Da Saluzzo, il 30 novembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e101">Fol. 3 • 2 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 7 di febrajo 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e115">Fol. 5 • 3 Lettre de « LODOVICO BIRAGO » au « duca di [Nevers]... Data in Saluzzo, il 3e settembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e126">Fol. 7 • 4 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 3 di 7bre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e148">Fol. 9 • 5 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 12 de 7bre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e165">Fol. 11 • 6 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nivers,... Da Saluzzo, il 14 settembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e173">Fol. 13 • 7 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il 16 settembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e181">Fol. 15 • 8 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 18 de 7bre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e198">Fol. 17 • 9 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, il 24 settembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e212">Fol. 19 • 10 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 26 di 7bre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e229">Fol. 21 • 11 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il XII ottobre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e237">Fol. 23 • 12 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il 25 octobre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e245">Fol. 25 • 13 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzze, il 30 ottobre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e259">Fol. 27 • 14 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Data in Saluzzo, il 6 novembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e267">Fol. 29 • 15 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 6 di novembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e286">Fol. 31 • 16 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, il 9 novembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e300">Fol. 33 • 17 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, le 13 di novembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e314">Fol. 35 • 18 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nevers,... Data in Saluzzo, il 15 novembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e322">Fol. 37 • 19 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, l'ultimo di novembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e336">Fol. 39 • 20 Lettre, avec chiffre et déchiffrement, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, il 30 novembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e350">Fol. 41 • 21 « Coppia di la lettera mandata dal Sr duca DI SAVOIA all' sigr Don Cesare Gonzaga,... Da Turrino... decembre 1570 ».En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e369">Fol. 43 • 22 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Data in Saluzzo, il 2 decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e387">Fol. 45 • 23 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il 4 decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e405">Fol. 47 • 24 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, alli IIII di decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e429">Fol. 49 • 25 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, alli IIII di decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e453">Fol. 51 • 26 Lettre de « FRANCI[SCHO] TERNAVANO, sendicho », et « JOC. FRANCISCHO LUNGO, sindicho... all' illmo... sigr duca di Nevers,... Da Carmagnola, alli 10 di decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e492">Fol. 53 • 27 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, il 20 di decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e516">Fol. 55 • 28 « Coppia di lettera del Sor LODOVICO BIRAGO,... al Sor duca di Mantoa,... Da Saluzzo, il 20 decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e540">Fol. 57 • 29 « Coppia di la lettera mandata [dal sigr LODOVICO BIRAGO] al sigr duca di Mantoa,... Da Saluzzo, il 22 di decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e564">Fol. 59 • 30 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il 28 decembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e582">Fol. 61 • 31 Fragment d'un mémoire relatif à l'établissement d'un nouvel ordre de chevalerie militaire destiné à combattre les Turcs. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e610">Fol. 61 • 32 « Risposta fatta a monseigneur il vicle di Saluzzo per conto dil CORDERO ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e641">Fol. 64 • 33 « Instruttione sopra le qualle si formaranno gli articoli che si presentaranno a Suoa Maytà Chrima in nome della comunità et huomini di Carmagnola ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e665">Fol. 66 • 34 « Coppia della sententia datta contra la comunità di Carmagnola per l'illmo Sr LODOVICO BIRAGO ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e694">Fol. 68 • 35 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 23 di genaio 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e718">Fol. 70 • 36 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, il 24 genaio 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e736">Fol. 72 • 37 Lettre de « LODOVICO BIRAGO,... all' illmo... duca di Nevers,... Da Saluzzo, alli 5 di febraro 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e757">Fol. 74 • 38 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 12 febraio 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e775">Fol. 76 • 39 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 21 febraio 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e793">Fol. 78 • 40 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 23 febraio 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e811">Fol. 80 • 41 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 15 marzo 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e829">Fol. 82 • 42 Lettre, avec chiffre, de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 20 marzo 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e847">Fol. 84 • 43 « Copia d'una lettera scritta dal Sr LODOVICO BIRAGO al Sr duca di Nevers, di 29 di marzo 1571, riceputa il 7 di aprile 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e871">Fol. 86 • 44 « Copia d'una lettera scritta dal Sr duca DI SAVOIA al Sr Lodovico Birago, venuta insieme con qte altre il settimo di aprile 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e898">Fol. 87 • 45 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 9 maggio 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e922">Fol. 89 • 46 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 9 maggio 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e946">Fol. 91 • 47 Lettre de « LODOVICO BIRAGO,... Da Saluzzo, li 29 agosto 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e964">Fol. 93 • 48 « Coppia d'una attestatione fatta dal conte LUIGI MONTEFIA,... In Saluzzo, li 6 settembre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e987">Fol. 95 • 49 Lettre de « LODOVICO BIRAGO,... all' illmo... sigor duca di Nevers,... Da Saluzzo, li 17 settembre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1011">Fol. 97 • 50 « Coppia d'una attestatione fatta dal Sr PERCEVALLO SOLARO de SSi di Casalgrasso,... In Turino, li XXV di settembre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1042">Fol. 98 • 51 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 27 settembre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1066">Fol. 100 • 52 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 8 ottobre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1090">Fol. 102 • 53 « Copia de la patente di mastro di campo delle compagnie italiane », délivrée par Charles IX à « Alessandro Ferretti,... Data à Blois, li XVI d'ottobre l'anno di gratia M.D.LXXI, et del nostro regno undecimo ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1108">Fol. 104 • 54 « Avisi di Vinetia, mandati dal Sr duca DI SAVOIA all' illmo Sr Lodovico Birago,... Da Vinetia, li 19 ottobre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1135">Fol. 106 • 55 « Relatione di GIO[V]ANNI FRASCHETTA, fatta il 30 agousto 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1153">Fol. 108 • 56 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 30 ottobre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1172">Fol. 110 • 57 « Coppia delli avisi mandati dalli sigi illmi Vinetiani all' Alta dil sigr duca di Savoia, quali rimostrano la vitoria havuta da Christiani in mare contra l'armata turchesca ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1197">Fol. 112 • 58 « Attestatione fatta da... GLAUDIO MICHELE,... Fatta in Saluzzo, li sei del mese di novembre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1213">Fol. 114 • 59 Copie de trois « lettres que monseigneur DE BIRAGUE a escrittes au cappitaine La Vallette et sindictz de Carmagnolles ». Saluces, 4 et 8 novembre 1571. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1226">Fol. 115 • 60 Copie d'une lettre de « GIUSEPPE GAVARRA, sindico », à Louis de Birague. « In Carmagnola, li 8 novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1239">Fol. 116 • 61 « Coppia d'una attestatione di SIGAUDI,... Fatta in Saluzzo, li 9 di novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1257">Fol. 117 • 62 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 11 novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1276">Fol. 119 • 63 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 13 di novembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1290">Fol. 120 • 64 « Coppia d'una attestatione fatta dal capitano MARIO BALBO, insiema col maresciale di logis della compagnia del Sr Centurione et sigr Alloigio da Lodi, la quale attestatione si e nel pachetto dil re tradotta d'italiano in francese ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1314">Fol. 122 • 65 Lettre des « sindici di Pinarolo, NICOLA FERNATIA, CARLO MONERIO,... all' illmo... Sr il duca di Nivernois,... Da Pinarolo, alli VIII di decembre 1571 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1338">Fol. 124 • 66 « Coppia d'una lettera scritta da monseigneur... RUGIERO DI BELLAGARDA,... à monseigneur... il vesc° di Saluzzo... Di Carmagnola, li 18 di decembre 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1356">Fol. 126 • 67 « Descriptione delle chiese et redditti d'esse che sono sopra il marchesato di Saluzzo e paes di Sua Maetà ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1372">Fol. 131 • 68 Procès-verbal du refus opposé à la publication d'une ordonnance du roi Charles IX par le Sr La Valette, capitaine à Carmagnole. 12 décembre 1571. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1391">Fol. 135 • 69 Fragment d'instruction donnée à un ambassadeur. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1409">Fol. 136 • 70 « Attestatione fatta dal MISINTA per conto di l'andata a Carmagnola... Fatta in Saluzzo, li 7 di genaio 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1420">Fol. 138 • 71 Lettre, avec chiffre, de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 7 di febraio 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1433">Fol. 142 • 72 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 21 di febraio 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1447">Fol. 144 • 73 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, alli 27 di marzo 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1461">Fol. 146 • 74 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li XI d'aprile 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1475">Fol. 148 • 75 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 12 d'aprile 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1483">Fol. 150 • 76 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 24 di maggio 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1497">Fol. 152 • 77 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li IX di giugno 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1505">Fol. 154 • 78 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 15 giugno 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1519">Fol. 156 • 79 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 19 di giugno 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1533">Fol. 158 • 80 « Coppia di la lettera scritta al comendatore maggiore governatore nel stato di Milano... Da Saluzzo, li XIX di giugno 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1546">Fol. 160 • 81 Lettre de « LUIS DE REQUESENS,... al señor Ludovico de Virago,... De Milan, a XXII de junio 1572 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1564">Fol. 162 • 82 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 27 di giugno 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1583">Fol. 164 • 83 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 6 di luglio 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1597">Fol. 166 • 84 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 11 di luglio 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1605">Fol. 168 • 85 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 29 di luglio 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1619">Fol. 170 • 86 Lettre, avec chiffre, de « LODOVICO BIRAGO... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 27 di agosto 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1633">Fol. 178 • 87 Lettre, avec chiffre, de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 8 di settembre 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1641">Fol. 181 • 88 « Coppia di la lettera scritta [dal Sor] LODOVICO BIRAGO,... al sigr gran comendatore a Milano... Da Pinarolo, li XXI di settembre 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1655">Fol. 182 • 89 « Coppia di la risposta fatta dal Sr gran comendatore... LUIS DE REQUESENS,... En Santian, a XXVI de setiembre 1572 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1671">Fol. 184 • 90 Lettre, avec chiffre, de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 2 di ottobre 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1684">Fol. 186 • 91 Lettre de « CAROLO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 28 di novembre 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1698">Fol. 188 • 92 Lettre de « ANDREA BIRAGO » au « duca di [Nev]ers,... Di Lione, li XX settembre 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1716">Fol. 190 • 93 Lettre de « CAROLO BIRAGO » au « duc [a di N]evers,... Da Saluze, li XXVI di 7bre 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1727">Fol. 192 • 94 « Memoria per la comunità di Carmagnola » des syndics « JOC. FRANC° LUNGO » et « STEPHANO GALLINA,... In Pinarolo, li 27 di genayo 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1750">Fol. 194 • 95 Lettre de « CAROLO BIRAGO,... all' illmo duca di Nevers,... Da Saluze, li 4 di 9bre 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1769">Fol. 196 • 96 « Pasquin trové à Pinerol, le 27 octobre 1574, sur l'allienation d'icelluy ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1785">Fol. 198 • 97 Lettre de « GIO[VANNI] BATT[ISTA] CAPPON,... all' illmo... signor duca di Nivernoys,... Da Pinerollo, al 7 di setembre 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049712_d0e1801">Fol. 200 • 98 Lettre de « GIO[VANNI] BATT[ISTA] CAPPON,... al signor duca di Nivernois,... Da Pinarollo, alli XX di novembre M.D.LXX ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3251 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49712p&Cote=Français 3251&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060248g">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31541 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49712p&Cote=MF 31541&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3251 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8760</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31541. Cote de la matrice (pour commander une reproduction) : R 4306.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060248g" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9060248g.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9060248g.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Birague, Charles de. • Lettres.</p>
+<p>Birague, Louis de. • Actes et lettres.</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Charles IX, roi de France. • Actes et lettres.</p>
+<p>Chiffres diplomatiques.</p>
+<p>France. • Pitorre (Charles IX).</p>
+<p>Monerio, Carlo, syndic de Pignerol. • Lettre.</p>
+<p>Savoie, Emmanuel-Philibert, duc de. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e89');">1 « Coppia di la lettera del Sor LODOVICO BIRAGO,... alla Rna [Catherine de Médicis]... Da Saluzzo, il 30 novembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e101');">2 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 7 di febrajo 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e115');">3 Lettre de « LODOVICO BIRAGO » au « duca di [Nevers]... Data in Saluzzo, il 3e settembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e126');">4 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 3 di 7bre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e148');">5 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 12 de 7bre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e165');">6 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nivers,... Da Saluzzo, il 14 settembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e173');">7 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il 16 settembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e181');">8 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 18 de 7bre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e198');">9 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, il 24 settembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e212');">10 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 26 di 7bre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e229');">11 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il XII ottobre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e237');">12 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il 25 octobre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e245');">13 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzze, il 30 ottobre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e259');">14 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Data in Saluzzo, il 6 novembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e267');">15 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 6 di novembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e286');">16 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, il 9 novembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e300');">17 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, le 13 di novembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e314');">18 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nevers,... Data in Saluzzo, il 15 novembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e322');">19 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, l'ultimo di novembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e336');">20 Lettre, avec chiffre et déchiffrement, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, il 30 novembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e350');">21 « Coppia di la lettera mandata dal Sr duca DI SAVOIA all' sigr Don Cesare Gonzaga,... Da Turrino... decembre 1570 ».En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e369');">22 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Data in Saluzzo, il 2 decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e387');">23 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il 4 decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e405');">24 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, alli IIII di decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e429');">25 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, alli IIII di decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e453');">26 Lettre de « FRANCI[SCHO] TERNAVANO, sendicho », et « JOC. FRANCISCHO LUNGO, sindicho... all' illmo... sigr duca di Nevers,... Da Carmagnola, alli 10 di decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e492');">27 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, il 20 di decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e516');">28 « Coppia di lettera del Sor LODOVICO BIRAGO,... al Sor duca di Mantoa,... Da Saluzzo, il 20 decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e540');">29 « Coppia di la lettera mandata [dal sigr LODOVICO BIRAGO] al sigr duca di Mantoa,... Da Saluzzo, il 22 di decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e564');">30 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, il 28 decembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e582');">31 Fragment d'un mémoire relatif à l'établissement d'un nouvel ordre de chevalerie militaire destiné à combattre les Turcs. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e610');">32 « Risposta fatta a monseigneur il vicle di Saluzzo per conto dil CORDERO ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e641');">33 « Instruttione sopra le qualle si formaranno gli articoli che si presentaranno a Suoa Maytà Chrima in nome della comunità et huomini di Carmagnola ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e665');">34 « Coppia della sententia datta contra la comunità di Carmagnola per l'illmo Sr LODOVICO BIRAGO ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e694');">35 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 23 di genaio 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e718');">36 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, il 24 genaio 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e736');">37 Lettre de « LODOVICO BIRAGO,... all' illmo... duca di Nevers,... Da Saluzzo, alli 5 di febraro 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e757');">38 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 12 febraio 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e775');">39 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 21 febraio 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e793');">40 Lettre de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li 23 febraio 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e811');">41 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 15 marzo 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e829');">42 Lettre, avec chiffre, de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 20 marzo 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e847');">43 « Copia d'una lettera scritta dal Sr LODOVICO BIRAGO al Sr duca di Nevers, di 29 di marzo 1571, riceputa il 7 di aprile 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e871');">44 « Copia d'una lettera scritta dal Sr duca DI SAVOIA al Sr Lodovico Birago, venuta insieme con qte altre il settimo di aprile 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e898');">45 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 9 maggio 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e922');">46 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 9 maggio 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e946');">47 Lettre de « LODOVICO BIRAGO,... Da Saluzzo, li 29 agosto 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e964');">48 « Coppia d'una attestatione fatta dal conte LUIGI MONTEFIA,... In Saluzzo, li 6 settembre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e987');">49 Lettre de « LODOVICO BIRAGO,... all' illmo... sigor duca di Nevers,... Da Saluzzo, li 17 settembre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1011');">50 « Coppia d'una attestatione fatta dal Sr PERCEVALLO SOLARO de SSi di Casalgrasso,... In Turino, li XXV di settembre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1042');">51 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 27 settembre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1066');">52 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 8 ottobre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1090');">53 « Copia de la patente di mastro di campo delle compagnie italiane », délivrée par Charles IX à « Alessandro Ferretti,... Data à Blois, li XVI d'ottobre l'anno di gratia M.D.LXXI, et del nostro regno undecimo ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1108');">54 « Avisi di Vinetia, mandati dal Sr duca DI SAVOIA all' illmo Sr Lodovico Birago,... Da Vinetia, li 19 ottobre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1135');">55 « Relatione di GIO[V]ANNI FRASCHETTA, fatta il 30 agousto 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1153');">56 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 30 ottobre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1172');">57 « Coppia delli avisi mandati dalli sigi illmi Vinetiani all' Alta dil sigr duca di Savoia, quali rimostrano la vitoria havuta da Christiani in mare contra l'armata turchesca ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1197');">58 « Attestatione fatta da... GLAUDIO MICHELE,... Fatta in Saluzzo, li sei del mese di novembre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1213');">59 Copie de trois « lettres que monseigneur DE BIRAGUE a escrittes au cappitaine La Vallette et sindictz de Carmagnolles ». Saluces, 4 et 8 novembre 1571. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1226');">60 Copie d'une lettre de « GIUSEPPE GAVARRA, sindico », à Louis de Birague. « In Carmagnola, li 8 novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1239');">61 « Coppia d'una attestatione di SIGAUDI,... Fatta in Saluzzo, li 9 di novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1257');">62 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 11 novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1276');">63 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 13 di novembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1290');">64 « Coppia d'una attestatione fatta dal capitano MARIO BALBO, insiema col maresciale di logis della compagnia del Sr Centurione et sigr Alloigio da Lodi, la quale attestatione si e nel pachetto dil re tradotta d'italiano in francese ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1314');">65 Lettre des « sindici di Pinarolo, NICOLA FERNATIA, CARLO MONERIO,... all' illmo... Sr il duca di Nivernois,... Da Pinarolo, alli VIII di decembre 1571 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1338');">66 « Coppia d'una lettera scritta da monseigneur... RUGIERO DI BELLAGARDA,... à monseigneur... il vesc° di Saluzzo... Di Carmagnola, li 18 di decembre 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1356');">67 « Descriptione delle chiese et redditti d'esse che sono sopra il marchesato di Saluzzo e paes di Sua Maetà ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1372');">68 Procès-verbal du refus opposé à la publication d'une ordonnance du roi Charles IX par le Sr La Valette, capitaine à Carmagnole. 12 décembre 1571. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1391');">69 Fragment d'instruction donnée à un ambassadeur. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1409');">70 « Attestatione fatta dal MISINTA per conto di l'andata a Carmagnola... Fatta in Saluzzo, li 7 di genaio 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1420');">71 Lettre, avec chiffre, de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 7 di febraio 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1433');">72 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 21 di febraio 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1447');">73 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, alli 27 di marzo 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1461');">74 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li XI d'aprile 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1475');">75 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 12 d'aprile 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1483');">76 Lettre de « CAROLO BIRAGO,... all' illmo... Sor duca di Nevers,... Da Saluzze, li 24 di maggio 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1497');">77 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nevers,... Da Saluzzo, li IX di giugno 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1505');">78 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 15 giugno 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1519');">79 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 19 di giugno 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1533');">80 « Coppia di la lettera scritta al comendatore maggiore governatore nel stato di Milano... Da Saluzzo, li XIX di giugno 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1546');">81 Lettre de « LUIS DE REQUESENS,... al señor Ludovico de Virago,... De Milan, a XXII de junio 1572 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1564');">82 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 27 di giugno 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1583');">83 Lettre de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 6 di luglio 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1597');">84 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 11 di luglio 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1605');">85 Lettre, avec chiffre, de « LODOVICO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 29 di luglio 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1619');">86 Lettre, avec chiffre, de « LODOVICO BIRAGO... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 27 di agosto 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1633');">87 Lettre, avec chiffre, de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 8 di settembre 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1641');">88 « Coppia di la lettera scritta [dal Sor] LODOVICO BIRAGO,... al sigr gran comendatore a Milano... Da Pinarolo, li XXI di settembre 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1655');">89 « Coppia di la risposta fatta dal Sr gran comendatore... LUIS DE REQUESENS,... En Santian, a XXVI de setiembre 1572 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1671');">90 Lettre, avec chiffre, de « LODOVICO BIRAGO » au duc de Nevers. « Da Saluzzo, li 2 di ottobre 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1684');">91 Lettre de « CAROLO BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 28 di novembre 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1698');">92 Lettre de « ANDREA BIRAGO » au « duca di [Nev]ers,... Di Lione, li XX settembre 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1716');">93 Lettre de « CAROLO BIRAGO » au « duc [a di N]evers,... Da Saluze, li XXVI di 7bre 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1727');">94 « Memoria per la comunità di Carmagnola » des syndics « JOC. FRANC° LUNGO » et « STEPHANO GALLINA,... In Pinarolo, li 27 di genayo 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1750');">95 Lettre de « CAROLO BIRAGO,... all' illmo duca di Nevers,... Da Saluze, li 4 di 9bre 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1769');">96 « Pasquin trové à Pinerol, le 27 octobre 1574, sur l'allienation d'icelluy ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1785');">97 Lettre de « GIO[VANNI] BATT[ISTA] CAPPON,... all' illmo... signor duca di Nivernoys,... Da Pinerollo, al 7 di setembre 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049712_d0e1801');">98 Lettre de « GIO[VANNI] BATT[ISTA] CAPPON,... al signor duca di Nivernois,... Da Pinarollo, alli XX di novembre M.D.LXX ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

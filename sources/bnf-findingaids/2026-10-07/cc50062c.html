@@ -1,0 +1,477 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050062">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050062">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3612
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050062_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062">Français 3612 • Anc. 9101 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e126">1 Lettre chiffrée, avec déchiffrement, du cardinal DE PELLEVE au duc de Nevers. « A Rome, ce 6 octobre... [15]86 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e132">Fol. 3 • 2 Lettre chiffrée, avec déchiffrement, de HENRI DE LORRAINE, duc DE GUISE, au duc de Nevers. « De Paris, XXIXe mars 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e153">Fol. 4 • 3 Lettre chiffrée, avec déchiffrement, du cardinal DE PELLEVE « all' illmo... duca di Nevers,... A Rome, ce 2 en juliet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e174">Fol. 6 • 4 Lettre chiffrée, avec déchiffrement, du cardinal DE « P[ELLEVE]... all' illmo... duca di Nevers,... A Rome, ce 14 juilet... 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e195">Fol. 8 • 5 Lettre chiffrée, avec déchiffrement, de HENRI DE LORRAINE, duc DE GUISE, au duc de Nevers. « Le IXe fevrier 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e216">Fol. 9 • 6 Lettre, avec chiffre et déchiffrement, de JEAN DE PILES au duc de Nevers. « De Rome, ce XXVe mars 1586 au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e242">Fol. 11 • 7 Lettre chiffrée, avec déchiffrement, du cardinal DE « PELLEVE » au duc de Nevers. « A Rome, ce... 23 febvrier 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e265">Fol. 13 • 8 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois et de Rethelois,... De Rome, ce XX may 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e288">Fol. 15 • 9 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce premier jour de l'an 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e311">Fol. 17 • 10 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XIIIIe janvier 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e337">Fol. 19 • 11 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXIIII janvier 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e360">Fol. 21 • 12 Lettre de « JEHAN DE PILES » au duc de Nevers. « De Rome, ce 26 febvrier 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e383">Fol. 22 • 13 Lettre de « LODOVICO GONZAGA », duc DE NEVERS, à « monsieur de Guierchy,... De La Cassine, ce premier mars 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e406">Fol. 23 • 14 Lettre chiffrée, avec déchiffrement, de HENRI DE LORRAINE, duc DE GUISE, au duc de Nevers. « Le XIIe jour de mars 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e432">Fol. 24 • 15 Lettre chiffrée, avec déchiffrement, du « P[ère] C[LAUDE MATHIEU]... à monseigneur le duc de Nevers et Retelloys,... De Rome, ce di de janvier... 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e460">Fol. 26 • 16 Lettre, avec chiffre et déchiffrement, du P. CLAUDE MATHIEU au duc de Nevers. Rome, « le 23 janvier 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e488">Fol. 27 • 17 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXV mars 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e511">Fol. 29 • 18 Lettre d'«A. DE PLANI,... à monseigneur le duc de Nivernois,... A Rome, ce XXVe mars... 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e542">Fol. 31 • 19 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce huictiesme avril 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e565">Fol. 33 • 20 Lettre du P. CLAUDE MATHIEU « à monseigneur le duc de Nevers,... De Lorette, ce 15 apvril 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e593">Fol. 35 • 21 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXIIe avril 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e619">Fol. 37 • 22 « Coppie du pouvoir » donné par le roi HENRI III à « monsieur le mareschal de Biron » pour le commandement de « l'armée de Poittou... Donné à Paris, le deuxme jour de may, l'an de grace mil cinq cens quatre vingtz six ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e650">Fol. 41 • 23 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois et de Rethelois,... De Rome, ce 6 may 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e673">Fol. 43 • 24 Lettre chiffrée, avec déchiffrement, de NICOLAS DE PELLEVE, « c[ardinal] de Sens... à monseigneur le duc de Nevers,... 19 may 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e696">Fol. 45 • 25 « Coppie collationnée des lettres de pouvoir » accordées par le roi HENRI III « à monsieur le duc de Joyeuse », pour le commandement de « l'armée d'Auvergne... Donné à Sainct Maur des Fossez, le vingtiesme jour de juing, l'an de grace mil cinq cens quatre vingtz six ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e722">Fol. 49 • 26 Lettres patentes de « HENRY » III, par lesquelles il donne le commandement de l'armée de Provence et Dauphiné au « duc d'Espernon,... Donné à Paris, le vingt ungme juillet, l'an de grace mil cinq cens quatre vingtz six ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e753">Fol. 50 • 27 « Estatz et appoinctemens des officiers de l'armée du roy, conduicte en Provence et Dauphiné par monsieur le duc d'Espernon, en l'année M.V.C.IIII.XX.VI ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e787">Fol. 52 • 28 Lettre de HENRI DE LORRAINE, duc DE GUISE, au duc de Nevers. « De Paris, ce 27 juillet, à 10 heures du soir... 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e810">Fol. 54 • 29 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois et Rethelois,... De Rome, ce 29 juillet 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e828">Fol. 56 • 30 Lettre chiffrée, avec déchiffrement, du cardinal DE « PELEVE,... all' illmo... duca di Nevers,... A Rome, ce 17iesme juin... 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e852">Fol. 58 • 31 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XIIe d'aoust 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e863">Fol. 60 • 32 Lettre chiffrée, avec déchiffrement, de HENRIETTE DE CLEVES, duchesse DE NEVERS, à Charles, cardinal de Bourbon. « De Paris, ce 24 aoust... 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e881">Fol. 61 • 33 Lettre de « l'abbé DE LIPOMAN,... à monsieur le duc de Nevers,... De Romme, le VIIIme de septembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e902">Fol. 63 • 34 Lettre de « LODOVICO GONZAGA [duc DE NEVERS]... à la royne, mere du roy... De Chanlemys, ce 8 aoust 1586 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e910">Fol. 64 • 35 Mémoire de « P. T. », tendant à prouver que la reconnaissance des droits de Henri, « roy de Navarre », à la couronne de France, est contraire à l'intérêt de l'État. « 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e918">Fol. 66 • 36 Lettre du Sr « BERTHONNIER » au duc de Nevers. « Ce 20e septembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e942">Fol. 67 • 37 Fragment de lettre, avec chiffre, adressée « à monseigneur [le duc de Nevers]... Le 29 septembre à midy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e960">Fol. 69 • 38 Mémoire du duc DE MAYENNE pour se justifier, auprès des membres de sa famille, d'avoir enlevé Mlle de Caumont, qu'il destinait à son fils aîné. « Novembre 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e986">Fol. 74 • 39 Articles de la capitulation accordée par « le duc du Mayne,... et le mareschal de Matignon » à la garnison « de Castillon... Fait au camp devant Castillon, le XXXe jour d'aoust 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1017">Fol. 75 • 40 « Nom des principaulx quy estoint audict Castillon ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1040">Fol. 76 • 41 Lettre du duc DE MAYENNE au roi. « Novembre 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1058">Fol. 77 • 42 Acte par lequel le duc « DE MAYENNE » s'engage à fournir des explications « à monsieur de La Vauguyon » sur l'enlèvement de Mlle de Caumont. 1586. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1089">Fol. 78 • 43 Lettre du capitaine « SACREMORE BIRAGUE » au duc le Nevers. « De Lusignan, ce 2 novembre 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1107">Fol. 80 • 44 « Discours du progrès de l'armée de M. du Maine » en Guyenne. « Oct. 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1125">Fol. 84 • 45 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce septiesme octobre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1143">Fol. 86 • 46 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXI octobre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1156">Fol. 88 • 47 Lettre chiffrée avec déchiffrement, de compliments « à monseigneur le duc de Nevers,... Ce II novembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1169">Fol. 90 • 48 Lettre de M. « G[AILLART] DE CORNAC,... à monseigneur le duc de Nyvernois,... De Gaillon, ce VI novembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1177">Fol. 92 • 49 Lettres de commission données par « HENRY,... roy de Navarre... gouverneur et lieutenant general pour le roy en Guienne » au « cappitaine La Gaultrye », pour commander en la « place de La Faye Montgeault,... Donné à La Rochelle, le dernier jour de nouvembre, l'an mil cinq cens quatre vingtz et six ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1198">Fol. 94 • 50 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce 15 decembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1206">Fol. 96 • 51 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XVIe decembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1217">Fol. 98 • 52 « Nomina, cognomina, patriae et administrationes S. R. E. card. a S. D. N. Xysto V creatorum, die XVIII decembris M. D. LXXXV... In Roma ». Imprimé.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1235">Fol. 99 • 53 Lettre chiffrée, avec déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXXe decembre 1586 au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1246">Fol. 101 • 54 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le VIIIe jour d'apvril 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1257">55 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le XXXe jour d'apvril 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1266">56 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le IIme jour de may 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1275">Fol. 102 • 57 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le VIme jour de may 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1286">58 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le XIIme jour de may 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1295">59 Lettre de « HENRY,... roy de Navarre... à monsieur de Chamlemys,... De Bergerac, ce XVIe jour d'apvril 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1304">Fol. 103 • 60 Lettre de « HENRY [III]... à monsieur de Chamlemys,... De Paris, le XIIIIe jour de may 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1315">61 Lettres closes de « HENRY » III, pour donner contreordre au départ des compagnies qui devaient entrer en campagne. « Donné à Paris, le XIIIIe jour de may 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1324">Fol. 104 • 62 « Procès verbal » de l'élection « du maire et des eschevins de la ville... d'Amiens ». Octobre 1586. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1337">Fol. 110 • 63 Autre copie de la même pièce.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1345">Fol. 118 • 64 « Les villes et lieux possedez en Languedoc par monsieur de Montmorency et ceulx de la religion nouvelle, depuis le Pont St Esprit, l'an 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1366">Fol. 120 • 65 « Villes que tiennent les hughenaulx en Guiene et Poitou, l'an 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1384">Fol. 122 • 66 Bref du pape SIXTE V, adressé à l'évêque de Nevers, Arnaud Sorbin de Sainte-Foi, « pour les cordilliers de Nevers ». Rome, 25 octobre 1586. En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1405">Fol. 124 • 67 Lettre de JEAN-LOUIS DE LA ROCHEFOUCAUD, comte DE « RANDAN,... à monseigneur le duc de Nevers,... De Randan, ce XVe decembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1416">Fol. 126 • 68 Lettre du comte DE « RANDAN,... à monseigneur le duc de Nevers,... De Randan, ce V octobre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1424">Fol. 128 • 69 Lettre du Sr « A. DE LA ROCHETTE,... à monseigneur le duc de Nevers,... De Paris, ce 7 de juillet 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1440">Fol. 130 • 70 Lettre du Sr « A. DE LA ROCHETTE,... à monseigneur le duc de Nevers,... De Paris, ce 9 de juillet 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1451">Fol. 132 • 71 Mémoire du Sr DE LA ROCHETTE au duc de Nevers. « 27e jun... 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1465">Fol. 134 • 72 Lettre du Sr « A. DE LA ROCHETTE,... à monseigneur le duc de Nevers,... De Chartres, ce 26 d'octobre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1476">Fol. 136 • 73 « Roolle des gentilzhommes et cappitaines de chevaulx legiers qui pourroient aller servir le roy » en « Italie... l'an 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1489">Fol. 137 • 74 Lettre, avec chiffre, contenant des nouvelles de la cour, adressée au duc de Nevers, 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1502">Fol. 138 • 75 « Estat de la despence que le roy entend estre faicte en l'armée de Champaigne, 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1515">Fol. 140 • 76 « Reiglement sur le taux et pris des vivres de munition, faict par le roi en son conseil d'Estat... A Paris, le vingt ungme jour de janvier mil cinq cens quatre vingtz six ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1534">Fol. 144 • 77 Lettre de JEAN-LOUIS DE LA ROCHEFOUCAUD, comte DE « RANDAN,... à monseigneur le duc de Nevers,... De Randan, ce XX janvier... [15]86 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1542">Fol. 146 • 78 Lettre de « LOUIS DE GONZAGUE, duc DE NEVERS, à monseigneur de Cavriane,... Le 22 juillet 1586 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1550">Fol. 147 • 79 Lettre de M. DE « CHAVYGNY,... à monseigneur le duc de Nevers,... De Chinon, le XIe de novembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1566">Fol. 149 • 80 Lettre, avec chiffre, de LOUIS DE GONZAGUE, duc DE NEVERS, au cardinal « Sipione [Gonzaga]... Della Cassina, il 27 marzo 1586 ». En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1574">Fol. 150 • 81 Brevet de « réserve du second estat de mareschal de France qui viendra à vaquer », accordé par « HENRY » III au « Sr de Crevecueur,... XXIIIIme jour de mars M.V.C. quatre vingtz et six ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1596">Fol. 152 • 82 Lettre du Sr DE « BREULLEBAULT,... à monseigneur [le duc de Nevers]... A Paris, se lundy XXVe may... [15]86 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1615">Fol. 154 • 83 Lettre du Sr DE « BREULLEBAULT » au duc de Nevers. « A Paris, ce IIme may » 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1629">Fol. 155 • 84 Lettre de JEAN-LOUIS DE LA ROCHEFOUCAUD, comte DE « RANDAN,... à monseigneur le duc de Nevers,... De Randan, ce VI jenvier 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1637">Fol. 157 • 85 Lettres patentes de « HENRY » III, enjoignant au « president des tresoriers generaulx de France estably en Champaigne, Me Adrian Petremol », de faire assigner « à comparoir en [son] conseil d'Estat » les officiers de sa généralité qui ont négligé d'exécuter une commission touchant la levée des blés. « Donné à Paris, le vingt deuxme jour de may, l'an de grace mil V.C. quatre vingtz six ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1659">86 Mandement d'«ADRIAN PETREMOL, sieur DE ROZIERS,... à Claude Valletat, huissier », lui prescrivant de donner assignation aux prévôts et échevins de Laon, Reims et Rethel, à « comparoir au conseil d'Estat... Faict à Victry, le vingt septiesme jour de may » 1586. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1665">87 Assignation donnée par « CLAUDE VALLETAT, huissier... aux gouverneur et eschevins de Rethel ». 9 juin 1586. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1671">Fol. 159 • 88 Lettre du Sr « LEMARESCHAL,... à monseigneur le duc de Nevers,... A Blois, le XXme jour de decembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1690">Fol. 161 • 89 Lettre du Sr « BERTHONNIER,... à monseigneur [le duc de Nevers]... Le 2e septembre 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1709">Fol. 163 • 90 « Mesures et pris du sel, formant et vin de Lespare... Cognac, 1586, decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1722">Fol. 165 • 91 « Copie de l'arest du conseil d'Estat touchant les maieur, provost et eschevins d'Amians... A Paris, le vingt neufme jour de decembre mil V.C. quatre vintz et six ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1741">Fol. 166 • 92 État des bourgeois d'Amiens nommés quarteniers de la « garde stationnaire » de cette ville. « Faict... le XXX juillet mil V.C.IIII.XX. huict ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1755">Fol. 168 • 93 Lettre du Sr « BOLACRE,... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, le premier de l'an 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1771">Fol. 170 et 172 • 94-95 Deux lettres (la 2e chiffrée avec déchiffrement) du Sr « RENYER,... à monseigneur » le duc de Nevers, 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1782">Fol. 174 • 96 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Paris, ce 18e mars... 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1796">Fol. 176 • 97 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Parys, ce 21 mars... [15]86 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1807">Fol. 178 • 98 Lettre chiffrée, avec déchiffrement, du Sr « RENYER » au duc de Nevers. « A Paris, le 2e avril » 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1821">Fol. 179 • 99 Lettre chiffrée avec déchiffrement du Sr RENIER au duc de Nevers. « 7 avril [15]86 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1832">Fol. 180 • 100 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Paris, le 15e avril » 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1846">Fol. 182 • 101 Lettre du Sr « RENYER » au duc de Nevers. « A Paris, ce 18e avril » 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1860">Fol. 184 • 102 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur » le duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1871">Fol. 186 • 103 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à madame [la duchesse de Nevers]... A Parys, ce 18e avril » 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1885">Fol. 188 • 104 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Parys, ce 21 juillet » 1586.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1896">Fol. 190 • 105 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur » le duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050062_d0e1907">Fol. 192 • 106 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Paris, ce 6e septembre ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3612 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50062c&Cote=Français 3612&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3612 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9101</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Amiens. • Pièces diverses.</p>
+<p>Berthonnier. • Lettres.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Guise, Henri Ier de Lorraine, duc de, dit le Balafré. • Actes et lettres.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>La Rochefoucauld, Jean-Louis de, comte de Randan. • Lettres.</p>
+<p>La Rochette, A. de, gouverneur de Provins. • Lettres.</p>
+<p>Mayenne, Charles de Lorraine, marquis, puis duc de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Pièces diverses.</p>
+<p>Pellevé, Nicolas de, cardinal, archevêque de Sens. • Actes et lettres.</p>
+<p>Pétremol, Adrien de, sr de Rosières. • Actes et lettres.</p>
+<p>Piles, Jean de, abbé d'Orbais. • Lettres.</p>
+<p>Renier. • Lettres.</p>
+<p>Valletat, Claude, huissier. • Assignation.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e126');">1 Lettre chiffrée, avec déchiffrement, du cardinal DE PELLEVE au duc de Nevers. « A Rome, ce 6 octobre... [15]86 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e132');">2 Lettre chiffrée, avec déchiffrement, de HENRI DE LORRAINE, duc DE GUISE, au duc de Nevers. « De Paris, XXIXe mars 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e153');">3 Lettre chiffrée, avec déchiffrement, du cardinal DE PELLEVE « all' illmo... duca di Nevers,... A Rome, ce 2 en juliet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e174');">4 Lettre chiffrée, avec déchiffrement, du cardinal DE « P[ELLEVE]... all' illmo... duca di Nevers,... A Rome, ce 14 juilet... 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e195');">5 Lettre chiffrée, avec déchiffrement, de HENRI DE LORRAINE, duc DE GUISE, au duc de Nevers. « Le IXe fevrier 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e216');">6 Lettre, avec chiffre et déchiffrement, de JEAN DE PILES au duc de Nevers. « De Rome, ce XXVe mars 1586 au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e242');">7 Lettre chiffrée, avec déchiffrement, du cardinal DE « PELLEVE » au duc de Nevers. « A Rome, ce... 23 febvrier 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e265');">8 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois et de Rethelois,... De Rome, ce XX may 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e288');">9 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce premier jour de l'an 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e311');">10 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XIIIIe janvier 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e337');">11 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXIIII janvier 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e360');">12 Lettre de « JEHAN DE PILES » au duc de Nevers. « De Rome, ce 26 febvrier 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e383');">13 Lettre de « LODOVICO GONZAGA », duc DE NEVERS, à « monsieur de Guierchy,... De La Cassine, ce premier mars 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e406');">14 Lettre chiffrée, avec déchiffrement, de HENRI DE LORRAINE, duc DE GUISE, au duc de Nevers. « Le XIIe jour de mars 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e432');">15 Lettre chiffrée, avec déchiffrement, du « P[ère] C[LAUDE MATHIEU]... à monseigneur le duc de Nevers et Retelloys,... De Rome, ce di de janvier... 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e460');">16 Lettre, avec chiffre et déchiffrement, du P. CLAUDE MATHIEU au duc de Nevers. Rome, « le 23 janvier 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e488');">17 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXV mars 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e511');">18 Lettre d'«A. DE PLANI,... à monseigneur le duc de Nivernois,... A Rome, ce XXVe mars... 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e542');">19 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce huictiesme avril 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e565');">20 Lettre du P. CLAUDE MATHIEU « à monseigneur le duc de Nevers,... De Lorette, ce 15 apvril 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e593');">21 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXIIe avril 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e619');">22 « Coppie du pouvoir » donné par le roi HENRI III à « monsieur le mareschal de Biron » pour le commandement de « l'armée de Poittou... Donné à Paris, le deuxme jour de may, l'an de grace mil cinq cens quatre vingtz six ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e650');">23 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois et de Rethelois,... De Rome, ce 6 may 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e673');">24 Lettre chiffrée, avec déchiffrement, de NICOLAS DE PELLEVE, « c[ardinal] de Sens... à monseigneur le duc de Nevers,... 19 may 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e696');">25 « Coppie collationnée des lettres de pouvoir » accordées par le roi HENRI III « à monsieur le duc de Joyeuse », pour le commandement de « l'armée d'Auvergne... Donné à Sainct Maur des Fossez, le vingtiesme jour de juing, l'an de grace mil cinq cens quatre vingtz six ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e722');">26 Lettres patentes de « HENRY » III, par lesquelles il donne le commandement de l'armée de Provence et Dauphiné au « duc d'Espernon,... Donné à Paris, le vingt ungme juillet, l'an de grace mil cinq cens quatre vingtz six ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e753');">27 « Estatz et appoinctemens des officiers de l'armée du roy, conduicte en Provence et Dauphiné par monsieur le duc d'Espernon, en l'année M.V.C.IIII.XX.VI ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e787');">28 Lettre de HENRI DE LORRAINE, duc DE GUISE, au duc de Nevers. « De Paris, ce 27 juillet, à 10 heures du soir... 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e810');">29 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois et Rethelois,... De Rome, ce 29 juillet 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e828');">30 Lettre chiffrée, avec déchiffrement, du cardinal DE « PELEVE,... all' illmo... duca di Nevers,... A Rome, ce 17iesme juin... 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e852');">31 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XIIe d'aoust 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e863');">32 Lettre chiffrée, avec déchiffrement, de HENRIETTE DE CLEVES, duchesse DE NEVERS, à Charles, cardinal de Bourbon. « De Paris, ce 24 aoust... 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e881');">33 Lettre de « l'abbé DE LIPOMAN,... à monsieur le duc de Nevers,... De Romme, le VIIIme de septembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e902');">34 Lettre de « LODOVICO GONZAGA [duc DE NEVERS]... à la royne, mere du roy... De Chanlemys, ce 8 aoust 1586 ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e910');">35 Mémoire de « P. T. », tendant à prouver que la reconnaissance des droits de Henri, « roy de Navarre », à la couronne de France, est contraire à l'intérêt de l'État. « 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e918');">36 Lettre du Sr « BERTHONNIER » au duc de Nevers. « Ce 20e septembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e942');">37 Fragment de lettre, avec chiffre, adressée « à monseigneur [le duc de Nevers]... Le 29 septembre à midy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e960');">38 Mémoire du duc DE MAYENNE pour se justifier, auprès des membres de sa famille, d'avoir enlevé Mlle de Caumont, qu'il destinait à son fils aîné. « Novembre 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e986');">39 Articles de la capitulation accordée par « le duc du Mayne,... et le mareschal de Matignon » à la garnison « de Castillon... Fait au camp devant Castillon, le XXXe jour d'aoust 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1017');">40 « Nom des principaulx quy estoint audict Castillon ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1040');">41 Lettre du duc DE MAYENNE au roi. « Novembre 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1058');">42 Acte par lequel le duc « DE MAYENNE » s'engage à fournir des explications « à monsieur de La Vauguyon » sur l'enlèvement de Mlle de Caumont. 1586. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1089');">43 Lettre du capitaine « SACREMORE BIRAGUE » au duc le Nevers. « De Lusignan, ce 2 novembre 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1107');">44 « Discours du progrès de l'armée de M. du Maine » en Guyenne. « Oct. 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1125');">45 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce septiesme octobre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1143');">46 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXI octobre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1156');">47 Lettre chiffrée avec déchiffrement, de compliments « à monseigneur le duc de Nevers,... Ce II novembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1169');">48 Lettre de M. « G[AILLART] DE CORNAC,... à monseigneur le duc de Nyvernois,... De Gaillon, ce VI novembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1177');">49 Lettres de commission données par « HENRY,... roy de Navarre... gouverneur et lieutenant general pour le roy en Guienne » au « cappitaine La Gaultrye », pour commander en la « place de La Faye Montgeault,... Donné à La Rochelle, le dernier jour de nouvembre, l'an mil cinq cens quatre vingtz et six ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1198');">50 Lettre de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce 15 decembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1206');">51 Lettre, avec chiffre et déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XVIe decembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1217');">52 « Nomina, cognomina, patriae et administrationes S. R. E. card. a S. D. N. Xysto V creatorum, die XVIII decembris M. D. LXXXV... In Roma ». Imprimé.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1235');">53 Lettre chiffrée, avec déchiffrement, de « JEHAN DE PILES,... à monseigneur le duc de Nivernois,... De Rome, ce XXXe decembre 1586 au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1246');">54 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le VIIIe jour d'apvril 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1257');">55 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le XXXe jour d'apvril 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1266');">56 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le IIme jour de may 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1275');">57 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le VIme jour de may 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1286');">58 Lettre de « HENRY [III]... à monsieur de Chamlemys,... Escript à Paris, le XIIme jour de may 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1295');">59 Lettre de « HENRY,... roy de Navarre... à monsieur de Chamlemys,... De Bergerac, ce XVIe jour d'apvril 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1304');">60 Lettre de « HENRY [III]... à monsieur de Chamlemys,... De Paris, le XIIIIe jour de may 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1315');">61 Lettres closes de « HENRY » III, pour donner contreordre au départ des compagnies qui devaient entrer en campagne. « Donné à Paris, le XIIIIe jour de may 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1324');">62 « Procès verbal » de l'élection « du maire et des eschevins de la ville... d'Amiens ». Octobre 1586. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1337');">63 Autre copie de la même pièce.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1345');">64 « Les villes et lieux possedez en Languedoc par monsieur de Montmorency et ceulx de la religion nouvelle, depuis le Pont St Esprit, l'an 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1366');">65 « Villes que tiennent les hughenaulx en Guiene et Poitou, l'an 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1384');">66 Bref du pape SIXTE V, adressé à l'évêque de Nevers, Arnaud Sorbin de Sainte-Foi, « pour les cordilliers de Nevers ». Rome, 25 octobre 1586. En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1405');">67 Lettre de JEAN-LOUIS DE LA ROCHEFOUCAUD, comte DE « RANDAN,... à monseigneur le duc de Nevers,... De Randan, ce XVe decembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1416');">68 Lettre du comte DE « RANDAN,... à monseigneur le duc de Nevers,... De Randan, ce V octobre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1424');">69 Lettre du Sr « A. DE LA ROCHETTE,... à monseigneur le duc de Nevers,... De Paris, ce 7 de juillet 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1440');">70 Lettre du Sr « A. DE LA ROCHETTE,... à monseigneur le duc de Nevers,... De Paris, ce 9 de juillet 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1451');">71 Mémoire du Sr DE LA ROCHETTE au duc de Nevers. « 27e jun... 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1465');">72 Lettre du Sr « A. DE LA ROCHETTE,... à monseigneur le duc de Nevers,... De Chartres, ce 26 d'octobre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1476');">73 « Roolle des gentilzhommes et cappitaines de chevaulx legiers qui pourroient aller servir le roy » en « Italie... l'an 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1489');">74 Lettre, avec chiffre, contenant des nouvelles de la cour, adressée au duc de Nevers, 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1502');">75 « Estat de la despence que le roy entend estre faicte en l'armée de Champaigne, 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1515');">76 « Reiglement sur le taux et pris des vivres de munition, faict par le roi en son conseil d'Estat... A Paris, le vingt ungme jour de janvier mil cinq cens quatre vingtz six ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1534');">77 Lettre de JEAN-LOUIS DE LA ROCHEFOUCAUD, comte DE « RANDAN,... à monseigneur le duc de Nevers,... De Randan, ce XX janvier... [15]86 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1542');">78 Lettre de « LOUIS DE GONZAGUE, duc DE NEVERS, à monseigneur de Cavriane,... Le 22 juillet 1586 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1550');">79 Lettre de M. DE « CHAVYGNY,... à monseigneur le duc de Nevers,... De Chinon, le XIe de novembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1566');">80 Lettre, avec chiffre, de LOUIS DE GONZAGUE, duc DE NEVERS, au cardinal « Sipione [Gonzaga]... Della Cassina, il 27 marzo 1586 ». En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1574');">81 Brevet de « réserve du second estat de mareschal de France qui viendra à vaquer », accordé par « HENRY » III au « Sr de Crevecueur,... XXIIIIme jour de mars M.V.C. quatre vingtz et six ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1596');">82 Lettre du Sr DE « BREULLEBAULT,... à monseigneur [le duc de Nevers]... A Paris, se lundy XXVe may... [15]86 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1615');">83 Lettre du Sr DE « BREULLEBAULT » au duc de Nevers. « A Paris, ce IIme may » 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1629');">84 Lettre de JEAN-LOUIS DE LA ROCHEFOUCAUD, comte DE « RANDAN,... à monseigneur le duc de Nevers,... De Randan, ce VI jenvier 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1637');">85 Lettres patentes de « HENRY » III, enjoignant au « president des tresoriers generaulx de France estably en Champaigne, Me Adrian Petremol », de faire assigner « à comparoir en [son] conseil d'Estat » les officiers de sa généralité qui ont négligé d'exécuter une commission touchant la levée des blés. « Donné à Paris, le vingt deuxme jour de may, l'an de grace mil V.C. quatre vingtz six ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1659');">86 Mandement d'«ADRIAN PETREMOL, sieur DE ROZIERS,... à Claude Valletat, huissier », lui prescrivant de donner assignation aux prévôts et échevins de Laon, Reims et Rethel, à « comparoir au conseil d'Estat... Faict à Victry, le vingt septiesme jour de may » 1586. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1665');">87 Assignation donnée par « CLAUDE VALLETAT, huissier... aux gouverneur et eschevins de Rethel ». 9 juin 1586. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1671');">88 Lettre du Sr « LEMARESCHAL,... à monseigneur le duc de Nevers,... A Blois, le XXme jour de decembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1690');">89 Lettre du Sr « BERTHONNIER,... à monseigneur [le duc de Nevers]... Le 2e septembre 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1709');">90 « Mesures et pris du sel, formant et vin de Lespare... Cognac, 1586, decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1722');">91 « Copie de l'arest du conseil d'Estat touchant les maieur, provost et eschevins d'Amians... A Paris, le vingt neufme jour de decembre mil V.C. quatre vintz et six ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1741');">92 État des bourgeois d'Amiens nommés quarteniers de la « garde stationnaire » de cette ville. « Faict... le XXX juillet mil V.C.IIII.XX. huict ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1755');">93 Lettre du Sr « BOLACRE,... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, le premier de l'an 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1771');">94-95 Deux lettres (la 2e chiffrée avec déchiffrement) du Sr « RENYER,... à monseigneur » le duc de Nevers, 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1782');">96 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Paris, ce 18e mars... 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1796');">97 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Parys, ce 21 mars... [15]86 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1807');">98 Lettre chiffrée, avec déchiffrement, du Sr « RENYER » au duc de Nevers. « A Paris, le 2e avril » 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1821');">99 Lettre chiffrée avec déchiffrement du Sr RENIER au duc de Nevers. « 7 avril [15]86 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1832');">100 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Paris, le 15e avril » 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1846');">101 Lettre du Sr « RENYER » au duc de Nevers. « A Paris, ce 18e avril » 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1860');">102 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur » le duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1871');">103 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à madame [la duchesse de Nevers]... A Parys, ce 18e avril » 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1885');">104 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Parys, ce 21 juillet » 1586.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1896');">105 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur » le duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050062_d0e1907');">106 Lettre chiffrée avec déchiffrement du Sr « RENYER,... à monseigneur [le duc de Nevers]... A Paris, ce 6e septembre ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,649 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000095506">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000095506">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Mélanges Colbert</div>
+					<h1>Mélanges de Colbert 26</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000095506_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095506">Mélanges de Colbert 26 • I. Correspondance diplomatique de Gaspard COIGNET DE LA THUILLERIE et d'Abel SERVIEN (1644-1648). — II et III. Dépêches de Henri-Louis DE LOMENIE, comte DE BRIENNE, secrétaire d'État aux Affaires Étrangères (juillet-décembre 1661).</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095506_d0e743">I Lettres originales [15] de Gaspard Coignet « de La Thuillerie », datées de La Haye, 1644-1648 (fol. 1, 24, 27, 31, 35, 43, 50, 58), Hambourg, 1644 (fol. 11), « Heiderslebe », 1644 (fol. 13), « Coppenhaghen », 1644-1646 (fol. 15, 19, 21), « Christianopoli », 1645 (fol. 17) — avec les minutes des réponses d'Abel Servien, datées de Deventer, 1644 (fol. 3), Munster, 1644 (fol. 5, 8), etc.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095506_d0e752">II « Dépesches de M. [Henri-Louis de Loménie, comte] de Brienne, concernant les affaires de France et de la marine, de Lorraine, d'Allemagne et des royaumes du Nord, et de Suisse », juillet-décembre 1661.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000095506_d0e764">III « Dépesches de M. [Henri-Louis de Loménie, comte] de Brienne, concernant les affaires de Hollande, Angleterre, Espagne, Italie, Turquie, » juillet-décembre 1661.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Mélanges de Colbert 26 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc955062&Cote=Mélanges de Colbert 26&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10035069t">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 15148 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc955062&Cote=MF 15148&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Mélanges de Colbert 26 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-label">
+<div class="did-unittitle">I. Correspondance diplomatique de Gaspard COIGNET DE LA THUILLERIE et d'Abel SERVIEN (1644-1648). — II et III. Dépêches de Henri-Louis DE LOMENIE, comte DE BRIENNE, secrétaire d'État aux Affaires Étrangères (juillet-décembre 1661).</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle.</div>
+<div class="divdid">Papier.66, 332 et 366 feuillets.375 × 240 mm.Demi-reliure.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="accessrestrict-class">
+<div class="label-part">
+<p class="commonBam-label">Conditions d'accès</p>
+</div>
+<div class="description-part">
+<span>
+<p>En raison de son état de conservation, la consultation de ce document est soumise à autorisation, sur demande motivée.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 15148. Cote de la matrice (pour commander une reproduction) : R 149702.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10035069t" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10035069t.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10035069t.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>AIX-EN-PROVENCE • Lettres adressées aux consuls</p>
+<p>AKAKIA (Roger), sr du Fresne • Lettres à lui adressées</p>
+<p>ALEXANDRE IV, pape • Bulles</p>
+<p>ALEXANDRE VII, pape • Lettre à lui adressée</p>
+<p>ALLEMAGNE</p>
+<p>ANGLETERRE</p>
+<p>ANGLURE DE BOURLEMONT (Louis D') • Lettres à lui adressées</p>
+<p>ANGOULEME (Françoise de Nargonne, duchesse D') • Lettre à elle adressée</p>
+<p>ARGOUGES (François D')</p>
+<p>AUBEVILLE (François de Sève D') • Lettre à lui envoyée</p>
+<p>AUGUSTINS (Ordre des) • Lettres adressées au général des Augustins</p>
+<p>BARA, doyen de la Roquette • Lettres à lui adressées</p>
+<p>BARBERINI (Cardinal Antonio), Lettres • Lettres à lui adressées</p>
+<p>BARBERINI (Cardinal Carlo) • Lettre à lui adressée</p>
+<p>LA BARDE (Jean DE) • Lettres à lui adressées</p>
+<p>BAVIERE (Charles-Louis Ier DE), électeur palatin • Lettres à lui adressées</p>
+<p>BAVIERE (Maximilien-Henri DE), électeur de Cologne • Lettres à lui adressées</p>
+<p>BENEDETTI (Abbé Elpidio) • Lettres à lui adressées</p>
+<p>BERINGHEN (Henri, marquis DE) • Lettre à lui adressée</p>
+<p>BIDAL (Pierre), baron d'Asfeld • Lettres à lui adressées</p>
+<p>BONIFACE VIII, pape • Bulles</p>
+<p>BOREEL (Guillaume) • Lettre à lui adressée</p>
+<p>BOUCHERAT (Jean) • Lettre à lui adressée</p>
+<p>BRACCESI (Abbé) • Lettre à lui adressée</p>
+<p>BRACCIANO (Ferdinando Orsini, duc DE) Lettre à lui adressée</p>
+<p>BRISACIER (Guillaume DE) • Lettre à lui adressée</p>
+<p>BRUYANT (Le P.) • Lettre à lui adressée</p>
+<p>CÉLESTIN V, pape • Bulles</p>
+<p>CAMBRAI • Diocèse</p>
+<p>CARNAVALET (François DE) • Lettres à lui adressées</p>
+<p>CATAUX, ou CATOU (M. DE) • Lettres à lui adressées</p>
+<p>CHARITE (Hôpital de la), à Paris • Lettre à la prieure</p>
+<p>CHARLES III ou IV, duc de Lorraine • Lettres à lui adressées</p>
+<p>CHARLES-LOUIS DE BAVIERE, prince palatin</p>
+<p>CHASSAN (Bénigne, ou Pierre (?) de Saumaise, sr DE) • Lettres à lui adressées</p>
+<p>CHIGI (Agostino) • Lettre à lui adressée</p>
+<p>CHIGI (Mario) • Lettre à lui adressée</p>
+<p>COIGNET DE LA THUILLERIE (Gaspard) • Correspondance</p>
+<p>COLBERT (Charles), marquis de Croissy, frère du ministre • Lettres à lui adressées</p>
+<p>COLOGNE</p>
+<p>COURTIN (Honoré) • Lettres à lui adressées</p>
+<p>CREQUY (François, marquis DE) • Lettres à lui adressées</p>
+<p>DER LEYEN (Karl-Kaspar VON), archevêque de Trêves • Lettre à lui adressée</p>
+<p>DOLE (Parlement de) • Lettres à eux adressées</p>
+<p>DOMINICAINS (Ordre des)</p>
+<p>DU CAMBOUT (Pierre-César), marquis de Coislin • Lettres à lui adressées</p>
+<p>DU SAUSSAY (André), évêque de Toul • Lettre à lui adressée</p>
+<p>DUNEAU (Le P.) • Lettres à lui adressées</p>
+<p>DUQUESNE (Abraham) • Lettres à lui adressées</p>
+<p>ESPAGNE</p>
+<p>ESTE (Rinaldo, cardinal D') • Lettre à lui adressée</p>
+<p>ESTRADES (Godefroy, comte D') • Lettres à lui adressées</p>
+<p>LA FERTE-SENECTERE, ou SENNETERRE (Henri, maréchal DE) • Lettres à lui adressées</p>
+<p>LA FEUILLADE (Georges d'Aubusson DE), évêque de Metz, puis archevêque d'Embrun • Lettres à lui adressées</p>
+<p>FRISCHMANN (Jean) • Lettres à lui adressées</p>
+<p>GALERES • Lettres relatives aux galères</p>
+<p>GENES</p>
+<p>GENES • République</p>
+<p>GIUSTINIANI (Francesco) • Lettre à lui adressée</p>
+<p>GRAVEL (Robert DE) • Lettres à lui adressées</p>
+<p>GREGOIRE X, pape • Bulles</p>
+<p>GUELDRE (La) • Duché</p>
+<p>GUILLAUME IV, langdrave de Hesse-Cassel • Lettres à lui adressées</p>
+<p>HANAU (Amélie-Élisabeth DE), princesse de Hesse-Cassel • Lettre à elle adressée</p>
+<p>LA HAYE-VENTELET (Denis DE) • Lettres à lui adressées</p>
+<p>HENRI IV, roi de France • Correspondance</p>
+<p>HESSE</p>
+<p>HESSE-CASSEL (Amélie-Élisabeth de Hanau, princesse DE)</p>
+<p>HESSE-CASSEL (Guillaume IV, landgrave DE)</p>
+<p>HESSE-DARMSTADT (Frédéric DE), cardinal-évêque de Breslau • Lettres à lui adressées</p>
+<p>HOPITAUX • Autres hôpitaux de Paris</p>
+<p>ITALIE</p>
+<p>JESUITES (Compagnie des) • Lettre adressée au général</p>
+<p>KETTLER (Jacob), duc de Courlande • Lettres à lui adressées</p>
+<p>LOMENIE (Henri-Auguste DE), comte de Brienne • Lettres à lui adressées</p>
+<p>LOMENIE (Henri-Louis DE), comte de Brienne • Dépêches diplomatiques</p>
+<p>LORRAINE</p>
+<p>LOUIS XIV, roi de France • Dépêches</p>
+<p>LOUIS XIV, roi de France • Lettres</p>
+<p>LUBOMIRSKI (Prince Stanislas) • Lettres à lui adressées</p>
+<p>LUCQUES • République</p>
+<p>LUMBRES (Antoine DE) • Lettres à lui adressées</p>
+<p>MACHAULT (Louis DE) • Lettres à lui adressées</p>
+<p>MAHOMET IV, sultan • Lettre à lui adressée</p>
+<p>MAIDALCHINI (Cardinal Francesco) • Lettre à lui adressée</p>
+<p>MALLIER DU HOUSSAY-MONNERVILLE (Claude) • Lettre à lui adressée</p>
+<p>MARIE-JEANNE-BAPTISTE, duchesse de Savoie</p>
+<p>MARINE</p>
+<p>MARINE • Lettres relatives à la marine</p>
+<p>MAZARIN (Armand-Charles de La Porte, duc) • Lettres à lui adressées</p>
+<p>MEDICIS (Ferdinand II DE), grandduc de Toscane • Lettre à lui adressée</p>
+<p>LA MEILLERAYE (Charles de La Porte, marquis, puis duc DE) • Lettre à lui adressée</p>
+<p>MERINVILLE (François des Monstiers, comte DE) • Lettre à lui adressée</p>
+<p>METZ (Parlement de) • Lettre adressée au Parlement</p>
+<p>NAVAILLES (Philippe de Montaut-Bénac, duc DE) • Lettres à lui adressées</p>
+<p>NEUFVILLE DE VILLEROY (Camille DE), archevêque de Lyon • Lettres à lui adressées</p>
+<p>NEUFVILLE DE VILLEROY (Nicolas III DE) • Lettres</p>
+<p>NEUFVILLE DE VILLEROY (Nicolas III DE) • Lettres à lui adressées</p>
+<p>NINI (Cardinal Jacques-Philippe) • Lettre à lui adressée</p>
+<p>NOIRMOUTIER (Louis de La Trémoille, duc DE) • Lettre à lui adressée</p>
+<p>NORD (Royaumes du)</p>
+<p>OPPEDE (Henri de Maynier de Forbin, baron, puis marquis D') • Lettres à lui adressées</p>
+<p>ORSINI (Ferdinando), duc de Bracciano</p>
+<p>PALOTTI (Cardinal Giovanni), archevêque de Cosenza • Lettre à lui adressée</p>
+<p>PARIS • Hôpitaux et prisons. Hôpital de la Charité des femmes (Place Royale)</p>
+<p>PARIS • Hôpitaux et prisons</p>
+<p>PARIS • Rues et places. Place Royale</p>
+<p>PAS (Antoine DE), marquis de Feuquières • Lettres à lui adressées</p>
+<p>PAS (Isaac DE), marquis de Feuquières • Lettre à lui adressée</p>
+<p>PAYS-BAS ESPAGNOLS</p>
+<p>PAYS-BAS HOLLANDAIS</p>
+<p>PHILIPPE IV, roi d'Espagne • Lettre à lui adressée</p>
+<p>PROVENCE (Parlement de) • Lettres adressées aux parlementaires</p>
+<p>QUINQUET (Le P.) • Lettre à lui adressée</p>
+<p>RENNES (Parlement de) • Lettres du Parlement</p>
+<p>ROBOLI (Le sr) • Lettre à lui adressée</p>
+<p>ROGGENBACH (Jean-Conrad DE), évêque de Bâle • Lettres à lui adressées</p>
+<p>LA ROQUETTE (M. DE) • Lettre à lui adressée</p>
+<p>ROUEN (Parlement de) • Lettre au procureur-général</p>
+<p>ROUXEL DE MEDAVY (Jean), sr de GRANCEY • Lettres à lui adressées</p>
+<p>LA ROVERE (Victoire DE), grandeduchesse de Toscane • Lettre à elle adressée</p>
+<p>SAVOIE</p>
+<p>SAVOIE (Marie-Jeanne-Baptiste, duchesse DE) • Lettre à elle adressée</p>
+<p>SCHONBORN (Jean-Philippe DE), archevêque de Mayence • Lettre à lui adressée</p>
+<p>SERVIEN (Abel), marquis de Sablé • Lettres</p>
+<p>SERVIEN (Ennemond) • Lettres à lui adressées</p>
+<p>SEVE D'AUBEVILLE (François DE), Lettres • Lettre à lui envoyée</p>
+<p>SOLEURE (Canton de)</p>
+<p>STRASBOURG (Alsace)</p>
+<p>STROZZI (Abbé Luigi) • Lettre à lui adressée</p>
+<p>SUISSE</p>
+<p>SUISSE • Lettres adressées aux seigneurs des cantons</p>
+<p>TARENTE (Henri-Charles de La Trémouille, prince DE) • Lettre à lui adressée</p>
+<p>TASSART (L. DE) • Lettre à lui adressée</p>
+<p>TERNES (Jean d'Espincha, marquis DE) • Lettres à lui adressées</p>
+<p>TESTARD DE LA GUETTE (Louis) • Lettres à lui adressées</p>
+<p>THOU (Jacques-Auguste DE) • Lettres à lui adressées</p>
+<p>TRIPOLI (Afrique) • Lettre adressée au sultan de Tripoli</p>
+<p>TUNIS • Lettre adressée au bey</p>
+<p>TURQUIE</p>
+<p>TURQUIE • Lettre adressée au grand-vizir</p>
+<p>VEDOA (Antoine DE) • Lettre à lui adressée</p>
+<p>VENISE</p>
+<p>VERDUN • Chapitre</p>
+<p>WOLFGANG-WILHELM, duc de Neubourg • Lettre à lui adressée</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000095506_d0e743');">I Lettres originales [15] de Gaspard Coignet « de La Thuillerie », datées de La Haye, 1644-1648 (fol. 1, 24, 27, 31, 35, 43, 50, 58), Hambourg, 1644 (fol. 11), « Heiderslebe », 1644 (fol. 13), « Coppenhaghen », 1644-1646 (fol. 15, 19, 21), « Christianopoli », 1645 (fol. 17) — avec les minutes des réponses d'Abel Servien, datées de Deventer, 1644 (fol. 3), Munster, 1644 (fol. 5, 8), etc.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095506_d0e752');">II « Dépesches de M. [Henri-Louis de Loménie, comte] de Brienne, concernant les affaires de France et de la marine, de Lorraine, d'Allemagne et des royaumes du Nord, et de Suisse », juillet-décembre 1661.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000095506_d0e764');">III « Dépesches de M. [Henri-Louis de Loménie, comte] de Brienne, concernant les affaires de Hollande, Angleterre, Espagne, Italie, Turquie, » juillet-décembre 1661.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

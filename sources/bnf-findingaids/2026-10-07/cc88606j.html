@@ -1,0 +1,634 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000088606">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000088606">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Dupuy</div>
+					<h1>Dupuy 468
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000088606_info">Informations bibliographiques</a></div><div class="niv0"><div class="withoutChild"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088606">Dupuy 468 • Recueil de documents concernant l'histoire de l'ALLEMAGNE, du DANEMARK, de la HONGRIE, de la POLOGNE et de la SUEDE, et les relations de ces différents pays avec la France, de 1447 à 1633 environ. — Nombreux originaux.</a></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Dupuy 468 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc88606j&Cote=Dupuy 468&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10035959t">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 33333 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc88606j&Cote=MF 33333&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Dupuy 468 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de documents concernant l'histoire de l'ALLEMAGNE, du DANEMARK, de la HONGRIE, de la POLOGNE et de la SUEDE, et les relations de ces différents pays avec la France, de 1447 à 1633 environ. — Nombreux originaux.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier et parchemin.234 feuillets.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 33333. Cote de la matrice (pour commander une reproduction) : R 204900.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10035959t" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10035959t.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10035959t.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>On remarque dans ce volume les pièces suivantes : Étendue de la juridiction de la Chambre de Spire en première instance (4) ; — Notes de Théodore Godefroy, sur la juridiction des villes impériales et sur les limites de la souveraineté des princes allemands (8), et sur le concordat conclu, en 1447, entre Nicolas V et Frédéric III (9) ; — Mémoires sur l'usurpation du duché de Milan, de Sienne, du marquisat de Final, de Piombino, de Monaco, du comté de Bourgogne et des duchés de Brabant, Limbourg, Luxembourg et Gueldre, de la ville impériale de Cambrai, du duché de Wurtemberg et de la ville impériale de Constance, par les empereurs Charles-Quint et Ferdinand I<emph render="super">er</emph> et par les rois d'Espagne Philippe II et Philippe III (11) ;</p>
+<p>Lettres adressées à François I<emph render="super">er</emph> par les personnages suivants : Ernest, [prince d'Anhalt-Zerbst-Dessau], et de Joachim, son frère, s. l., veille de la saint Paul, s. d. [1515 ou 1516], orig., en latin, presque entièrement en chiffres (28) ; déchiffrement interlinéaire d'une seconde main, probablement contemporaine, la clé qui s'en déduit lit le reste de la lettre.  Le texte ainsi lu correspond phrase par phrase à la traduction française contemporaine de cette même lettre conservée dans le ms. <a href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc50342g" class="hrefLink" target="_blank" title="Consulter ce document">Français 3897</a>, f. 146 (« Translat. des lettres du filz du duc de Lunembourg et Joachin au roy »), éditée dans les <emph render="italic">Deutsche Reichstagsakten, Jüngere Reihe</emph>, t. II (Gotha, 1896), p. 122, sous le titre « Ernst v. Lüneburg und Joachim v. Moltzan an Franz I. ... Zerbst, [1520] Januar 24 ».  Il s'ensuit que le f. 28  est l'original latin chiffré de cette lettre, que les auteurs en sont Ernest de Brunswick-Lunebourg et Joachim von Moltzan (Maltzan), et que sa date est le 24 janvier 1520 (« in vigilia sancti Pauli »), non 1515/16. La souscription « Ernestus dux ... Joachimus » et le texte (« ego filius ... Luneburg », « ego Joachimus ad dominum Cancellarium et dominum admiraldum scripsi ») l'indiquent aussi. (renseignements aimablement fournis par M. Ryan Turner 24 septembre 2026) ; — Louis [V le Pacifique], comte palatin du Rhin, au même, Heidelberg, jour de la Fête-Dieu 1516, et 14 janv. 1518, orig., en latin (30 et 31) ; — l'archevêque de Trèves, Richard [von Greifenklau], Coblentz, 6 nov. 1518 (32), et « ex oppido nostro Palatiolo », 10 juin 1520, orig., en latin (33) ; — les magistrats et conseillers de la ville impériale d'Augsbourg, 31 mars 1528, orig., parch., en latin (34) ; — les députés, capitaines et sénateurs des États généraux de la grande confédération de la province de Souabe, réunis à Augsbourg, 17 mars 1528, orig. (?), en latin (35) ;</p>
+<p>Lettre de Joachim I<emph render="super">er</emph>, margrave de Brandebourg, au chancelier Antoine Du Prat, « ex castello nostro nova Keimrat apud Stansinum Grimwitz » (?), 9 juillet 1531, orig., en latin (37) ; — Traité conclu entre François I<emph render="super">er</emph> et le duc de Clèves et Juliers [Charles d'Egmond], « in castro Hamboich », 2 avril 1519, en latin (39) ; et traduction française dudit traité (41) ; — Convention passée entre le duc de Gueldre et de Juliers [Charles d'Egmond], et Jacques Colin, abbé de Saint-Ambroise, envoyé de François I<emph render="super">er</emph>, « Grunsfort », 14 oct. 1534, en français, orig., sceau (43) ; — Lettre de Charles [d'Egmond], duc de Gueldre et Juliers, au Roi [François I<emph render="super">er</emph>], Arnhem, 17 nov. s. a., orig. (45) ;</p>
+<p>Instructions données au duc de Suffolk [Charles Brandon], nommé ambassadeur près les trois États de Bohême par François I<emph render="super">er</emph>, s. d., orig., en latin (49) ; — Réponse que doit porter Hubert Languet à Charles IX, de la part d'Auguste le Pieux, duc de Saxe, et d'autres princes allemands, Dresde, 27 juillet 1565, en latin (53) ; — Remontrances « du sieur de La Roulière » au Roi [Louis XIII] et à son Conseil, au sujet de l'armée du comte de Mansfeld, orig., Paris, 30 nov. 1623 (57) ; et 2 janv. 1624 (69) ; — Documents divers, relatifs au comte de Mansfeld, 1624 (61, 71, etc.) ; — Requête du « Conseil secret, dit les Treize, de la ville de Strasbourg » au Roi [Louis XIII], 5/15 juillet 1624 (79) ;</p>
+<p>Pièces relatives aux relations des Protestants allemands avec Louis XIII, 1633-1634 (81) ; — Traités d'alliance conclus entre Louis XIII et la reine Christine de Suède, Compiègne, 28 avril 1635 (95) ; et le duc Bernard de Saxe-Weimar, Saint-Germain-en-Laye, 26 oct. 1635 (97) ; — Harangue de [Claude] de Mesmes, [comte] d'Avaux, aux États généraux de Suède, assemblés à Stockholm, pour leur persuader de conclure une trêve avec le roi de Pologne [Ladislas VII], 1635, en latin (103) ; — Lettres, sans nom d'auteur, adressées au chancelier Oxenstiern, Hambourg, 1/11 mai 1636, en français (111), et au marquis de Saint-Chamond, s. d., en latin (115) ; — Proposition faite, de la part de Charles I<emph render="super">er</emph> d'Angleterre, au chancelier Oxenstiern, pour la réintégration de l'électeur Palatin en ses biens et dignités, Stralsund, 3 juin 1636, en latin (119) ; — Liste généalogique des princes et comtes de la maison de Nassau (127) ;</p>
+<p>Liste des enfants, légitimes et naturels, de Christian IV, roi de Danemark, 1633 (130) ; — Publication par Jacques IV, roi d'Écosse, de la trêve conclue entre Louis XII et Jean, roi de Danemark, Édimbourg, 30 avril 1499 (132) ; — Ordonnance de Christian II, roi de Danemark, Copenhague, 20 nov. 1518, en latin (138) ; — Lettres de Christian II à François I<emph render="super">er</emph>, Copenhague, 16 nov. 1519, orig., en français (139), et 6 fév. 1520, orig., en latin (140) ; — Lettre de Frédéric I<emph render="super">er</emph> de Danemark à François I<emph render="super">er</emph>, Gottorp, 21 juillet 1531, orig., en latin (141) ; — Lettre de Franç[ois] de Bordeaux à [François I<emph render="super">er</emph>], Copenhague, 24 juin s. a., orig. (142) ; — Généalogie des rois de Hongrie et de Bohême, issus de l'empereur Sigismond, de la maison de Luxembourg, par Th. Godefroy (149) ; — Note de Th. Godefroy, sur le traité pour la succession de Hongrie et de Bohême, conclu entre l'empereur Ferdinand II et Philippe III d'Espagne, Prague, juin 1617 (150) ; — Traité conclu entre François I<emph render="super">er</emph> et Jean, roi de Hongrie, s. d. (151) ; — Lettre de François I<emph render="super">er</emph> à Jean, roi de Hongrie, Saint-Germain-en-Laye, 24 fév. 1526, en latin (153) ; — Lettre de Jean, roi de Hongrie, à François I<emph render="super">er</emph>, Buda, 26 avril 1527, orig., parch., en latin (155) ; — Lettre d' « Antonius Wrancius, praepositus Bude Veteris », à « Andreas Corsinus », secrétaire de Jean, roi de Hongrie, à la cour de François I<emph render="super">er</emph>, Rome, 20 fév. 1532, en latin (156) ;</p>
+<p>Lettres du roi de Pologne Sigismond I<emph render="super">er</emph> à François I<emph render="super">er</emph>, Cracovie, 18 janv. 1524, et 6 sept. 1527, orig., parch., en latin (159 et 160) ; — Traité de paix conclu entre Ladislas IV, roi de Pologne, et Michel Federovich, grand-duc de Moscovie, « apud flumen Polanowki », 13 juin 1634, en latin (161) ; — « N° 159. Extraordinaire du v novembre 1635, contenant les articles de la trêve entre Ladislas, roy de Pologne, et Christine, reine de Suède », Stumischdorf, 12 sept. 1635, in-4°, <emph render="italic">impr</emph>. (165) ; — Trêve pour 26 ans, conclue entre Ladislas IV, roi de Pologne, et Christine de Suède, « Stumsdorf » en Prusse, 2 sept. 1635, en latin (167) ; — Lettre de Charles Ogier à Nicolas Bourbon, Marienbourg, 7 kal. oct. 1635, en latin, copie de Jacques Dupuy (175) ; — Lettre du Roi [Louis XIII] au roi de Pologne [Ladislas VII], Paris, 13 août 1636, en français (179) ;</p>
+<p>Extraits « ex libro quodam intitulato sive inscripto Analogia universorum temporum, de anno 1328, invento in antiqua bibliotheca Avenionensi » (184) ;</p>
+<p>Traité de paix conclu entre Christian IV de Danemark, et Gustave-Adolphe, « Ulffsbeck », 29 juin 1624, en latin (185) ; — Traité d'alliance entre les mêmes, Stockholm, 4 janv. 1628, en latin (193) ; — Lettre, sans nom d'auteur, à M<emph render="super">lle</emph> de Rambouillet, en lui envoyant un sonnet sur la mort du roi de Suède, s. d. [1633] (199), et texte dudit sonnet (200) ; — « Résolution des Estats généraux du royaume de Suède, délibérée, conclue et publiée... en l'Assemblée de Stocholme, le 14 mars 1633 », traduction française faite sur la version allemande (201) ; — « Articles arrestez au Synode national des Églises réformées de France, tenu à Charenton lez Paris, au mois de septembre 1623... », in-4°, <emph render="italic">impr</emph>. (211) ; etc.</p>
+</span>
+</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Volume constitué en 1637.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>F. 127<br/>2003<br/>recensé p. 292 (généalogies de maisons souveraines)<br/>Jean-Philippe GÉRARD, <emph render="italic">Répertoire des ressources généalogiques et héraldiques du département des manuscrits de la bibliothèque nationale</emph>, Versailles, Mémoires et Documents, 2003<br/>
+<emph render="italic">Mss. [ 8° Impr. 8836</emph>
+</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>ALLEMAGNE • Documents sur l'histoire politique et religieuse (XIIIe-XVIIe s.)</p>
+<p>ALLEMAGNE • Église. Concordat</p>
+<p>ALLEMAGNE • Électeurs et princes. Limites de leur souveraineté</p>
+<p>ALLEMAGNE • Traités. Négoéiations et traités des princes protestants avec Louis XIII</p>
+<p>ALLEMAGNE • Villes. Juridiction</p>
+<p>Analogia universorum temporum de anno 1328</p>
+<p>ANHALT-ZERBST-DESSAU (Ernest, prince D') • Lettre</p>
+<p>ANHALT-ZERBST-DESSAU (Joachim, prince D'), frère d'Ernest d'Anhalt-Zerbst-Dessau • Lettre</p>
+<p>AUGSBOURG • Lettre des magistrats et conseillers de la ville à François Ier</p>
+<p>AVAUX (Claude de Mesmes, comte D') • Harangues</p>
+<p>BOHEME • Rois</p>
+<p>BORDEAUX (François DE) • Lettre à François Ier</p>
+<p>BOURBON (Nicolas), de Vendeuvre, le jeune • Lettres à lui adressées</p>
+<p>BRABANT • Documents divers</p>
+<p>BRANDEBOURG (Joachim Ier, margrave DE) • Lettre</p>
+<p>CAMBRAI • Divers</p>
+<p>CHARENTON (Seine) • Synodes nationaux tenus à Charenton (1623)</p>
+<p>CHARLES-QUINT, empereur • Usurpations</p>
+<p>CHARLES Ier, roi d'Angleterre • Propositions par lui faites</p>
+<p>CHARLES IX, roi de France • Réponse à lui faite</p>
+<p>CHRISTIAN II, roi de Danemark • Lettres</p>
+<p>CHRISTIAN II, roi de Danemark • Ordonnance</p>
+<p>CHRISTIAN IV, roi de Danemark • Ses enfants</p>
+<p>CHRISTIAN IV, roi de Danemark • Traités</p>
+<p>CHRISTINE, reine de Suède • Traités</p>
+<p>COLIN (Jacques), abbé de Saint-Ambroise de Bourges et prieur de Saint-Jean de Blois • Traité par lui conclu</p>
+<p>CONCORDATS</p>
+<p>CONDE (Henri II de Bourbon, prince DE) • Ordonnances</p>
+<p>CONSTANCE • Ville</p>
+<p>CORSINUS (Andreas), secrétaire de Jean Zapolsky • Lettre à lui adressée</p>
+<p>DANEMARK • Documents et pièces se rapportant à l'histoire de ce pays</p>
+<p>DU PRAT (Antoine), archevêque de Sens, chancelier, cardinal, légat apostolique • Documents à lui destinés</p>
+<p>DU PRAT (Antoine), archevêque de Sens, chancelier, cardinal, légat apostolique • Lettres à lui adressées</p>
+<p>DUPUY (Jacques), prieur de Patay et de Saint-Sauveur-lès-Bray (Seine-et-Marne) • Copies et extraits de sa main</p>
+<p>DUPUY (Pierre) • Copies et extraits de sa main</p>
+<p>EGMOND (Charles D'), duc de Clèves et Juliers • Lettre</p>
+<p>EGMOND (Charles D'), duc de Clèves et Juliers • Traité par lui conclu</p>
+<p>FERDINAND Ier, roi de Hongrie, roi des Romains, puis empereur • Usurpations</p>
+<p>FINAL (Marquisat de)</p>
+<p>FRANCHE-COMTE • Documents divers concernant cette province</p>
+<p>FRANÇOIS Ier, roi de France • Lettres</p>
+<p>FRANÇOIS Ier, roi de France • Lettres à lui adressées</p>
+<p>FRANÇOIS Ier, roi de France • Traités, conventions par lui conclus ou projetés</p>
+<p>FREDERIC IV [non Frédéric III], empereur • Concordat</p>
+<p>FREDERIC Ier, roi de Danemark • Lettres</p>
+<p>GODEFROY (Théodore) • Notes diverses par lui prises</p>
+<p>GREIFENKLAU (Richard VON), archevêque de Trèves • Lettres</p>
+<p>GUELDRE (Duché de)</p>
+<p>GUSTAVE II ADOLPHE, roi de Suède • Mort</p>
+<p>GUSTAVE II ADOLPHE, roi de Suède • Traités par lui conclus</p>
+<p>HONGRIE • Pièces diverses concernant ce pays</p>
+<p>JACQUES IV, roi d'Écosse • Publication par lui faite d'une trêve</p>
+<p>JEAN, roi de Danemark</p>
+<p>JEAN ZAPOLSKI, voïvode de Transylvanie, roi de Hongrie • Lettre à lui adressée</p>
+<p>JEAN ZAPOLSKI, voïvode de Transylvanie, roi de Hongrie • Lettres</p>
+<p>JEAN ZAPOLSKI, voïvode de Transylvanie, roi de Hongrie • Traité avec François Ier</p>
+<p>LADISLAS VII [non IV], roi de Pologne • Lettres à lui adressées</p>
+<p>LADISLAS VII [non IV], roi de Pologne • Traité par lui conclu</p>
+<p>LADISLAS VII [non IV], roi de Pologne • Trêve par lui faite</p>
+<p>LANGUET (Hubert)</p>
+<p>LA ROULIERE (N., sieur DE) • Remontrances par lui faites au Conseil du roi</p>
+<p>LIMBOURG (Ville et duché de), en Belgique</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12214255s" class="hrefLink ext">Louis XII</a>
+</p>
+<p>LOUIS XIII, roi de France • Lettres</p>
+<p>LOUIS XIII, roi de France • Rapports avec les Protestants allemands et la Suède</p>
+<p>LOUIS XIII, roi de France • Requêtes et suppliques à lui adressées</p>
+<p>LOUIS XIII, roi de France • Traités, contrats, etc</p>
+<p>LOUIS V LE PACIFIQUE, comte palatin du Rhin • Lettres</p>
+<p>LUXEMBOURG (Duché de) • Documents divers s'y rapportant</p>
+<p>MANSFELD (Ernest, comte DE) • Pièces le concernant</p>
+<p>MILAN • Duché et ducs</p>
+<p>MONACO</p>
+<p>MOSCOVIE • Traités conclus par ce pays</p>
+<p>NASSAU (Maison de)</p>
+<p>NICOLAS V, pape • Concordat</p>
+<p>OGIER (Charles) • Lettres</p>
+<p>OXENSTIERN (Axel), chancelier de Suède • Lettres à lui adressées</p>
+<p>OXENSTIERN (Axel), chancelier de Suède • Proposition à lui faite</p>
+<p>PHILIPPE II, roi d'Espagne • Usurpations par lui faites</p>
+<p>PHILIPPE III, roi d'Espagne • Usurpations</p>
+<p>PIOMBINO (Toscane) • Son usurpation par la maison d'Autriche</p>
+<p>POLOGNE • Documents et pièces diverses concernant son histoire</p>
+<p>PROTESTANTS • Synode de Charenton (1623)</p>
+<p>RAMBOUILLET (Mlle DE) • Lettre et sonnet à elle adressés, sur la mort du roi de Suède (1633)</p>
+<p>SAINT-CHAMOND (Melchior Mitte, comte de Miolans, marquis DE), ambassadeur • Lettres à lui adressées</p>
+<p>SAXE (Auguste, dit le Pieux, électeur DE) • Réponse par lui faite</p>
+<p>SAXE-WEIMAR (Bernard, duc DE) • Traité par lui conclu</p>
+<p>SIENNE (Italie) • Son usurpation par la maison d'Autriche</p>
+<p>SIGISMOND, empereur • Rois de Hongrie et de Bohême issus de lui</p>
+<p>SIGISMOND Ier, roi de Pologne • Lettres</p>
+<p>SOUABE • Lettre des États généraux de la province</p>
+<p>SPIRE • Chambre de Spire</p>
+<p>STRASBOURG • Conseil secret, dit les Treize</p>
+<p>SUEDE • Documents divers la concernant</p>
+<p>SUEDE • États-Généraux de 1633, 1640 et de 1643</p>
+<p>SUEDE • Trêve avec la Pologne</p>
+<p>SUFFOLK (Charles Brandon, duc DE), ambassadeur • Instructions à lui données</p>
+<p>WRANCIUS (Antonius), prévôt de Buda • Lettres</p>
+<p>WÜRTEMBERG • Duché</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<br/>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

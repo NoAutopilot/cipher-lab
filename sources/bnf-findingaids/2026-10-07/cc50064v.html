@@ -1,0 +1,475 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050064">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050064">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3614
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050064_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064">Français 3614 • Anc. 9103 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e116">1 Lettre des « maire et eschevins de la ville de Poictiers... à monseigneur le duc de Nevers,... De Poictiers, le premier janvier apres midy 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e122">Fol. 2 • 2 Lettre des sieurs « LE BLANC, DUFAULTREY, FARGET,... à monsieur de Gesvre, intendant des vivres des camp et armée de Sa Majesté... Tours, ce Vme jour de janvier 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e148">Fol. 4 • 3 Lettre des « mayre et eschevyns de Nantes... à monseigneur le duc de Nevers,... De Nantes, ce 17e de janvyer 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e164">Fol. 6 • 4 Lettre des « president et mayre de Nantes... à messieurs Garrault et Bauldry, commissaires des vivres... De Nantes, ce XVme de janvier 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e175">Fol. 8 • 5 Lettre des « mayre et eschevins de Nantes... à monseigneur le duc de Nevers,... De Nantes, ce 18e de janvier 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e186">Fol. 10 • 6 Lettre de « M. CHARETE,... à monseigneur le duc de Nevers,... A Nantes, ce XIXe jour de janvier 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e202">Fol. 12 • 7 Lettre du Sr « MESTEIER, cappitaine de la ville et chasteau de Bressuyre... à monseigneur le duc de Nevers,... A Bressuyre, ce 20e janvyer 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e224">Fol. 14 • 8 Lettre des « president et tresoriers generaulx de France establiz à Chaalons... à madame la duchesse de Nyvernois,... A Chaalons, ce VIIe febvrier 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e240">Fol. 16 • 9 Lettre circulaire des « eschevins et corps de la ville de Paris » aux habitans des villes du royaume, pour les inviter à entrer dans l'union des catholiques contre le roi. « De Paris, ce XXIme febvrier 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e256">Fol. 18 • 10 Lettre des « gens du conseil de la ville de Chaalons » au duc de Nevers. « De Chaalons, le XIIIe mars 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e272">11 Lettre des « gens du conseil de vostre ville de Chaalons » au roy. « De Chaalons, ce XIIIe inars 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e281">Fol. 19 • 12 Lettre des « eschevins et manans de la ville de Maizieres » au duc de Nevers. « De vostre ville de Maizieres, ce premier jour d'apvril 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e294">Fol. 20 • 13 Lettre des « eschevins et autres de... Maizieres » au duc de Nevers. « De vostre ville de Maizieres, ce Xe avril 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e310">Fol. 22 • 14 Lettre des « eschevins et gens du conseil de la ville de Mezieres... à monsieur d'Ambly, gouverneur de Donchery... De Mezieres, ce XIe april 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e326">15 Lettre du « sieur DE BEAUREGAR aux eschevins de Rains... De Vieville, ce XIIIe apvril » 1589. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e335">Fol. 24 • 16 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur de Nevers,... De Chaalons, ce premier de may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e348">Fol. 25 • 17 Demande en réduction par le Sr « DENYS CAMUS » du nombre des pionniers réquisitionnés au « village de Teigny », suivi du consentement accordé par le Sr « DE ROCHEFORT, gouverneur... de Vezelay... Faict à Vezelay, le XIIIIiesme may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e383">Fol. 26 • 18 Procès-verbal de « l'assemblée generalle faicte en l'hostel commung de la ville de Nevers, par [les] eschevins d'icelle, ce mercredy matin dix septiesme jour de may, l'an mil cinq cens quatre vingtz et neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e396">Fol. 28 • 19 Lettre des « gens des comptes » de « Nevers... à monseigneur [le duc de Nevers]... En vostre chambre... ce jeudy XVIIIe may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e412">Fol. 30 • 20 « Conclusion et resolution faicte en l'assemblée generalle des habitans de la ville de Nevers, en la salle de l'officialité, le lundy vingt deuxiesme jour de may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e425">Fol. 32 • 21 Lettre des « habitans de Bourbon-Lanceiz... à monseigneur le duc de Nyvernois et Rethelois,... Ce XXVe jour du mois de may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e444">Fol. 34 • 22 Lettre des « maire et eschevyns [de Clamecy]... à monseigneur [le duc de Nevers]... En vostre ville de Clamecy, ce XXVIIme may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e460">Fol. 36 • 23 Lettre des « eschevins de Nevers... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, ce XXVIIe may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e476">Fol. 38 • 24 Lettre des « habitans de Cosne sur Loyre... à monseigneur [le duc de Nevers]... En vostre ville de Cosne sur Loire, ce vingt neufme may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e490">Fol. 40 • 25 « Resolution prinse en l'assemblée des habitans de Nevers... Lundi matin vingtneufiesme jour de may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e503">Fol. 42 • 26 Lettre des « eschevins de la ville de Nevers... à monseigneur [le duc de Nevers]... De Nevers, ce trentiesme may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e511">Fol. 44 • 27 Lettre au duc de Nevers des Srs « DE LAUNAY, VERNE » et « BRINON, president et tresoriers generaulx de France à Molins... A Molins, ce dernier jour de may 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e547">Fol. 45 • 28 Copie de la lettre précédente.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e575">Fol. 46 • 29 « Articles que le Sr de Launay represente à Sa Majesté de la part de monsieur le duc de Nevers,... May 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e606">Fol. 48 • 30 Résolution prise « en l'assemblée faicte par nous eschevins de la ville de Nevers, en la salle de l'officialité, le jeudi premier jour de jung 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e634">Fol. 49 • 31 Lettre des « eschevins de Nevers,... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, ce deuxe juing 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e665">Fol. 52 • 32 Lettre des « habitans de Gien... à monseigneur le duc de Nevers,... A Gien, ce Ve juing 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e701">Fol. 54 • 33 « Extraict du registre des deliberations du conseil des habitans de la ville de Nevers, en l'assemblée tenue en la salle de l'officialité, ce vendredi matin neufiesme jour de jung 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e729">Fol. 56 • 34 Lettre des « eschevins de Nevers... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, ce 9 jung 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e757">Fol. 58 • 35 Lettre des Sri « DE COLONS, P. GASCOING, GUILLAUME, PERNIN, BELLON, officiers de l'election de Nyvernois », au duc de Nevers. « De vostre ville de Nevers, le 14e de juin 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e819">Fol. 59 • 36 « Extraict du registre des deliberations et resolutions prinses en l'assemblée des soixante esleuz par les habitans de la ville de Nevers et vingt quatre conseillers d'icelle... Ce jeudi quinziesme jung 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e847">Fol. 61 • 37 Minute de lettre du duc DE NEVERS à « monsieur de La Chastre,... De Desize, ce XVIe jung 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e878">38 Minute de lettre du duc DE NEVERS à « monsieur de Corbes,... De Desize, ce XVIe jung 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e887">Fol. 62 • 39 Lettre des « eschevins... de Nevers » au duc de Nevers. « De vostre ville de Nevers, ce XXIe jung 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e918">Fol. 63 • 40 Lettre des Srs « VERNE » et « DELACROIX, tresauriers generaulx de France establys à Molins... à monseigneur le duc de Nevers,... De Molins, le XXIIe juing 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e962">Fol. 65 • 41 Lettre d'ANTOINE DE LA GRANGE, Sr D'« ARQUYAN », et du Sr « MILLET,... à monseigneur le duc de Nivernois,... A Sancerre, ce XXVIIe jung 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1009">Fol. 67 • 42 Lettre des Srs « DE LAUNAY, VERNE, BRINON, ROUX, DE LACROIX, PALIERNE, presidens et tresoriers generaulx de France à Molins », au duc de Nevers. « A Molins, ce XXIe jour de juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1063">Fol. 68 • 43 Lettre des Srs « DE LAUNAY, VERNE et BRINON, presidens et tresoriers generaulx de France en la generallité establye à Molins », au duc de Nevers. « De Molins, ce XXVIIIe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1102">Fol. 69 • 44 Lettre des Srs DE LAUNAY, VERNE et BRINON, « presidens et tresoriers generaulx de France à Molins », au duc de Nevers. « A Molins, ce IIe jour de aoust 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1141">Fol. 70 • 45 Lettre des « maire, gouverneur, escheuvins et gens du conseil de la ville d'Aucerre... à monseigneur le duc du Nivernois,... De l'hostel commung de la ville d'Aucerre, ce 12e d'aoust » 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1162">Fol. 71 • 46 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nevers,... De Chaalons, ce XIIIe aoust 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1173">Fol. 72 • 47 Lettre des échevins de Rethel au duc de Nevers. Mai 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1186">Fol. 74 • 48 Lettre des « maire, gouverneurs, eschevins et gens du conseil de la ville d'Aucere... à monseigneur le duc de Nyvernois,... De l'hostel commung de la ville d'Aucere, ce XVIIe aoust » 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1207">Fol. 75 • 49 Lettre des « vierg et eschevins de la ville d'Ostiun... à monseigneur le duc de Nivernoys,... D'Ostiun, ce XXVIIIe d'aoust 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1228">Fol. 77 • 50 Lettre du Sr « BOUSSAT, lieutenant general et maire » de Langres, « à monsegneur le duc de Nevers,... A Langres, 3 septembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1249">Fol. 79 • 51 Lettre des « habitans de la ville de Chablyes... à monseigneur le duc de Nevers,... De Chablies, ce 24e septembre » 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1268">Fol. 81 • 52 « Double d'inventaire de la vaisselle d'argent appartenant à monseigneur le duc de Nevers, baillée en gaige à Florimond Fleuriot, maistre de la monnoye de Nantes... pour la somme de XVI.C. liv.,... A Nantes, ce XIXe de janvier 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1290">Fol. 82 • 53 Lettre du duc DE NEVERS « au roy... Du Pont de Sée, ce mardy au soir XXIIIIe janvier 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1306">Fol. 84 • 54 Lettre du duc DE NEVERS à « monseigneur de Champloiseau,... De Bloys, ce Xme febvryer 1589 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1317">Fol. 86 • 55 Lettre des « gens du conseil de la ville de Chaalons » au duc de Nevers. « De Chaalons, ce XIII mars 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1325">Fol. 87 • 56 Lettre des Srs « H. HEYDT, BALHASAR IRMY, DE STAAL,... à monseigneur le duc de Nevers,... De vostre ville de Nevers, ce 17 d'aupril 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1351">Fol. 88 • 57 Lettre du Sr D'«AMBLIZE,... à monseigneur le ducq de Nevers,... A vostre Buzancy, ce 19e d'apvril 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1370">Fol. 89 • 58 Lettre, avec chiffre, du duc DE NEVERS « à Mr de Montholon,... Nevers, 1589, 20 avril ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1381">Fol. 91 • 59 Lettre du duc DE NEVERS « à Mr de Longueville,... Desize, 1589, 30 may ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1392">Fol. 92 • 60 Lettre, avec chiffre et déchiffrement, contenant des nouvelles de la cour, adressée au duc de Nevers. « Ce 1 juing [1589], de Tours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1400">Fol. 94 • 61 Lettre, avec chiffre, adressée « à monseigneur, duc de Nivernoys,... Ce 8 juing 1589, à sept heures du matin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1408">Fol. 95 • 62 Lettre du Sr D'«AMBLIZE,... à monseigneur [le duc de Nevers]... A vostre Buzancy, ce 19e de juyn 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1422">Fol. 97 • 63 Minute de lettre de LOUIS DE GONZAGUE, duc DE NEVERS, « à madame de Guyse,... De Nevers, ce 25e juing 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1433">Fol. 98 • 64 Lettre du Sr « J. CHANDON,... à monsigneur [le duc de Nevers]... De vostre ville de Nevers, ce 12 juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1449">Fol. 100 • 65 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XIIe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1468">Fol. 102 • 66 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc du Nivernoys,... A Clamecy, ce XVe juillet, à neuf heures du soir, 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1482">Fol. 103 • 67 Minute de lettre du duc DE NEVERS à « monsieur de La Forest,... De La Charité, ce 17e juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1493">Fol. 104 • 68 Minute de lettre du duc DE NEVERS à « monsieur de Neufvy,... De La Charité, ce XVIIe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1504">Fol. 105 • 69 Minute de lettre du duc DE NEVERS « aux eschevins de Bourges... De La Charité, ce XVIIe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1515">Fol. 106 et 108 • 70-71 Deux Lettres du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XVIIe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1529">Fol. 110 • 72 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XIXe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1543">Fol. 112 • 73 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernois,... A Clamecy, ce XXe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1557">Fol. 114 • 74 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernois,... A Clamecy, ce XXIIe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1571">Fol. 116 • 75 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XXIIIe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1585">Fol. 118 • 76 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XXIIIIe juillet 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1599">Fol. 120 • 77 Lettre du Sr « ROCHELE,... à monseigneur le duc de Nivernoys,... De Bourges, le VIIe d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1618">Fol. 122 • 78 Lettre du Sr « RICHEOME,... au Rnd Pere le P. Jacques Comelet, superieur de la maison professe de St Louis, de la compaignie de Jesus, à Paris... D'Avignon, ce 13 septembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1645">Fol. 124 • 79 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Chamlemys, ce premier octobre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1661">Fol. 126 • 80 Lettre du Sr DE « CHAZERON,... à monseigneur le duc de Nevers,... De Molins, ce 16 d'octobre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1677">Fol. 128 • 81 Lettre du Sr DE « CHAZERON,... à monseigneur le duc de Nivernoys,... Du chasteau de Molins, ce lundy au soir, 16 d'octobre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1693">Fol. 130 • 82 Minute de lettre du duc DE NEVERS « à Mr de La Chastre,... De Desize, ce 16 octobre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1704">Fol. 131 • 83 Minute de lettre du duc DE NEVERS « à Mr de Chazeron,... De Desize, ce 17 octobre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1715">Fol. 132 • 84 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... De Nevers, ce XVIIIe octobre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1729">Fol. 133 • 85 Lettre du Sr « DE MONTHOLON,... à monseigneur [le duc de Nevers]... De Tours, ce 30 octobre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1745">Fol. 135 • 86 Lettre du Sr « GALLATY DE GLAREIS ritter... à monsieur de Montolon,... A Montlehery, ce IIIIme jour de novembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1774">Fol. 137 • 87 Lettre du Sr « DE MONTHOLON,... à monseigneur [le duc de Nevers]... De Tours, ce 18 novembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1795">Fol. 139 • 88 Lettre du Sr « DE MONTHOLON,... à monseigneur[le duc de Nevers]... De Tours, ce 25 novembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1816">Fol. 141 • 89 Lettre du Sr « DE MONTHOLON,... à monseigneur [le duc de Nevers]... De Tours, ce 3 decembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1837">Fol. 143 • 90 Lettre du Sr « DUHAMEL,... à monsieur de Montholon,... A Chenonceau, ce Ve decembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1866">Fol. 145 • 91 Lettre du Sr « DUHAMEL » à monseigneur de Montholon. « A Chenonceau, ce VIIIe decembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1895">Fol. 147 • 92 Lettre du Sr « DE MONTHOLON,... à monseigneur [le duc de Nevers]... Ce 12 decembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1916">Fol. 149 • 93 Lettre du Sr « CHANDON,... à monsigneur [le duc de Nevers]... De Tours, ce XXIe decembre mil V.C.IIII.XX. et neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1951">Fol. 151 • 94 Lettre de M. DE MONTHOLON au duc de Nevers. « Ce matin, dimanche XXIIIIme decembre 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1972">Fol. 152 • 95 Fragment d'une lettre « de Mr DE MONTHOLON » au duc de Nevers. « 1589, 24 decembre ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050064_d0e1993">Fol. 154 • 96 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Chamlemys, ce 29e decembre 1589 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3614 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50064v&Cote=Français 3614&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3614 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9103</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Châlons-sur-Marne. • Conseil de ville, correspondance.</p>
+<p>Champlemys, De la Rivière de, bailli de Nivernais. • Actes et lettres.</p>
+<p>Cour. • Nouvelles (XVIe s.).</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Hubert, Denis de, sieur de Beauregard. • Lettre.</p>
+<p>Inventaires. • Nevers (Maison de).</p>
+<p>Launay, Jacques de. • Actes et lettres.</p>
+<p>Montholon, François de, fils de Montholon, François de, garde des sceaux. • Lettres.</p>
+<p>Moulins, Allier. • Trésoriers généraux.</p>
+<p>Nevers. • Commune.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Poitiers. • Lettres, des échevins.</p>
+<p>Verne, trésorier général à Moulins. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e116');">1 Lettre des « maire et eschevins de la ville de Poictiers... à monseigneur le duc de Nevers,... De Poictiers, le premier janvier apres midy 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e122');">2 Lettre des sieurs « LE BLANC, DUFAULTREY, FARGET,... à monsieur de Gesvre, intendant des vivres des camp et armée de Sa Majesté... Tours, ce Vme jour de janvier 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e148');">3 Lettre des « mayre et eschevyns de Nantes... à monseigneur le duc de Nevers,... De Nantes, ce 17e de janvyer 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e164');">4 Lettre des « president et mayre de Nantes... à messieurs Garrault et Bauldry, commissaires des vivres... De Nantes, ce XVme de janvier 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e175');">5 Lettre des « mayre et eschevins de Nantes... à monseigneur le duc de Nevers,... De Nantes, ce 18e de janvier 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e186');">6 Lettre de « M. CHARETE,... à monseigneur le duc de Nevers,... A Nantes, ce XIXe jour de janvier 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e202');">7 Lettre du Sr « MESTEIER, cappitaine de la ville et chasteau de Bressuyre... à monseigneur le duc de Nevers,... A Bressuyre, ce 20e janvyer 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e224');">8 Lettre des « president et tresoriers generaulx de France establiz à Chaalons... à madame la duchesse de Nyvernois,... A Chaalons, ce VIIe febvrier 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e240');">9 Lettre circulaire des « eschevins et corps de la ville de Paris » aux habitans des villes du royaume, pour les inviter à entrer dans l'union des catholiques contre le roi. « De Paris, ce XXIme febvrier 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e256');">10 Lettre des « gens du conseil de la ville de Chaalons » au duc de Nevers. « De Chaalons, le XIIIe mars 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e272');">11 Lettre des « gens du conseil de vostre ville de Chaalons » au roy. « De Chaalons, ce XIIIe inars 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e281');">12 Lettre des « eschevins et manans de la ville de Maizieres » au duc de Nevers. « De vostre ville de Maizieres, ce premier jour d'apvril 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e294');">13 Lettre des « eschevins et autres de... Maizieres » au duc de Nevers. « De vostre ville de Maizieres, ce Xe avril 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e310');">14 Lettre des « eschevins et gens du conseil de la ville de Mezieres... à monsieur d'Ambly, gouverneur de Donchery... De Mezieres, ce XIe april 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e326');">15 Lettre du « sieur DE BEAUREGAR aux eschevins de Rains... De Vieville, ce XIIIe apvril » 1589. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e335');">16 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur de Nevers,... De Chaalons, ce premier de may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e348');">17 Demande en réduction par le Sr « DENYS CAMUS » du nombre des pionniers réquisitionnés au « village de Teigny », suivi du consentement accordé par le Sr « DE ROCHEFORT, gouverneur... de Vezelay... Faict à Vezelay, le XIIIIiesme may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e383');">18 Procès-verbal de « l'assemblée generalle faicte en l'hostel commung de la ville de Nevers, par [les] eschevins d'icelle, ce mercredy matin dix septiesme jour de may, l'an mil cinq cens quatre vingtz et neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e396');">19 Lettre des « gens des comptes » de « Nevers... à monseigneur [le duc de Nevers]... En vostre chambre... ce jeudy XVIIIe may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e412');">20 « Conclusion et resolution faicte en l'assemblée generalle des habitans de la ville de Nevers, en la salle de l'officialité, le lundy vingt deuxiesme jour de may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e425');">21 Lettre des « habitans de Bourbon-Lanceiz... à monseigneur le duc de Nyvernois et Rethelois,... Ce XXVe jour du mois de may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e444');">22 Lettre des « maire et eschevyns [de Clamecy]... à monseigneur [le duc de Nevers]... En vostre ville de Clamecy, ce XXVIIme may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e460');">23 Lettre des « eschevins de Nevers... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, ce XXVIIe may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e476');">24 Lettre des « habitans de Cosne sur Loyre... à monseigneur [le duc de Nevers]... En vostre ville de Cosne sur Loire, ce vingt neufme may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e490');">25 « Resolution prinse en l'assemblée des habitans de Nevers... Lundi matin vingtneufiesme jour de may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e503');">26 Lettre des « eschevins de la ville de Nevers... à monseigneur [le duc de Nevers]... De Nevers, ce trentiesme may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e511');">27 Lettre au duc de Nevers des Srs « DE LAUNAY, VERNE » et « BRINON, president et tresoriers generaulx de France à Molins... A Molins, ce dernier jour de may 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e547');">28 Copie de la lettre précédente.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e575');">29 « Articles que le Sr de Launay represente à Sa Majesté de la part de monsieur le duc de Nevers,... May 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e606');">30 Résolution prise « en l'assemblée faicte par nous eschevins de la ville de Nevers, en la salle de l'officialité, le jeudi premier jour de jung 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e634');">31 Lettre des « eschevins de Nevers,... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, ce deuxe juing 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e665');">32 Lettre des « habitans de Gien... à monseigneur le duc de Nevers,... A Gien, ce Ve juing 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e701');">33 « Extraict du registre des deliberations du conseil des habitans de la ville de Nevers, en l'assemblée tenue en la salle de l'officialité, ce vendredi matin neufiesme jour de jung 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e729');">34 Lettre des « eschevins de Nevers... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, ce 9 jung 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e757');">35 Lettre des Sri « DE COLONS, P. GASCOING, GUILLAUME, PERNIN, BELLON, officiers de l'election de Nyvernois », au duc de Nevers. « De vostre ville de Nevers, le 14e de juin 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e819');">36 « Extraict du registre des deliberations et resolutions prinses en l'assemblée des soixante esleuz par les habitans de la ville de Nevers et vingt quatre conseillers d'icelle... Ce jeudi quinziesme jung 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e847');">37 Minute de lettre du duc DE NEVERS à « monsieur de La Chastre,... De Desize, ce XVIe jung 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e878');">38 Minute de lettre du duc DE NEVERS à « monsieur de Corbes,... De Desize, ce XVIe jung 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e887');">39 Lettre des « eschevins... de Nevers » au duc de Nevers. « De vostre ville de Nevers, ce XXIe jung 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e918');">40 Lettre des Srs « VERNE » et « DELACROIX, tresauriers generaulx de France establys à Molins... à monseigneur le duc de Nevers,... De Molins, le XXIIe juing 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e962');">41 Lettre d'ANTOINE DE LA GRANGE, Sr D'« ARQUYAN », et du Sr « MILLET,... à monseigneur le duc de Nivernois,... A Sancerre, ce XXVIIe jung 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1009');">42 Lettre des Srs « DE LAUNAY, VERNE, BRINON, ROUX, DE LACROIX, PALIERNE, presidens et tresoriers generaulx de France à Molins », au duc de Nevers. « A Molins, ce XXIe jour de juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1063');">43 Lettre des Srs « DE LAUNAY, VERNE et BRINON, presidens et tresoriers generaulx de France en la generallité establye à Molins », au duc de Nevers. « De Molins, ce XXVIIIe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1102');">44 Lettre des Srs DE LAUNAY, VERNE et BRINON, « presidens et tresoriers generaulx de France à Molins », au duc de Nevers. « A Molins, ce IIe jour de aoust 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1141');">45 Lettre des « maire, gouverneur, escheuvins et gens du conseil de la ville d'Aucerre... à monseigneur le duc du Nivernois,... De l'hostel commung de la ville d'Aucerre, ce 12e d'aoust » 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1162');">46 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nevers,... De Chaalons, ce XIIIe aoust 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1173');">47 Lettre des échevins de Rethel au duc de Nevers. Mai 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1186');">48 Lettre des « maire, gouverneurs, eschevins et gens du conseil de la ville d'Aucere... à monseigneur le duc de Nyvernois,... De l'hostel commung de la ville d'Aucere, ce XVIIe aoust » 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1207');">49 Lettre des « vierg et eschevins de la ville d'Ostiun... à monseigneur le duc de Nivernoys,... D'Ostiun, ce XXVIIIe d'aoust 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1228');">50 Lettre du Sr « BOUSSAT, lieutenant general et maire » de Langres, « à monsegneur le duc de Nevers,... A Langres, 3 septembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1249');">51 Lettre des « habitans de la ville de Chablyes... à monseigneur le duc de Nevers,... De Chablies, ce 24e septembre » 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1268');">52 « Double d'inventaire de la vaisselle d'argent appartenant à monseigneur le duc de Nevers, baillée en gaige à Florimond Fleuriot, maistre de la monnoye de Nantes... pour la somme de XVI.C. liv.,... A Nantes, ce XIXe de janvier 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1290');">53 Lettre du duc DE NEVERS « au roy... Du Pont de Sée, ce mardy au soir XXIIIIe janvier 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1306');">54 Lettre du duc DE NEVERS à « monseigneur de Champloiseau,... De Bloys, ce Xme febvryer 1589 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1317');">55 Lettre des « gens du conseil de la ville de Chaalons » au duc de Nevers. « De Chaalons, ce XIII mars 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1325');">56 Lettre des Srs « H. HEYDT, BALHASAR IRMY, DE STAAL,... à monseigneur le duc de Nevers,... De vostre ville de Nevers, ce 17 d'aupril 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1351');">57 Lettre du Sr D'«AMBLIZE,... à monseigneur le ducq de Nevers,... A vostre Buzancy, ce 19e d'apvril 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1370');">58 Lettre, avec chiffre, du duc DE NEVERS « à Mr de Montholon,... Nevers, 1589, 20 avril ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1381');">59 Lettre du duc DE NEVERS « à Mr de Longueville,... Desize, 1589, 30 may ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1392');">60 Lettre, avec chiffre et déchiffrement, contenant des nouvelles de la cour, adressée au duc de Nevers. « Ce 1 juing [1589], de Tours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1400');">61 Lettre, avec chiffre, adressée « à monseigneur, duc de Nivernoys,... Ce 8 juing 1589, à sept heures du matin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1408');">62 Lettre du Sr D'«AMBLIZE,... à monseigneur [le duc de Nevers]... A vostre Buzancy, ce 19e de juyn 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1422');">63 Minute de lettre de LOUIS DE GONZAGUE, duc DE NEVERS, « à madame de Guyse,... De Nevers, ce 25e juing 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1433');">64 Lettre du Sr « J. CHANDON,... à monsigneur [le duc de Nevers]... De vostre ville de Nevers, ce 12 juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1449');">65 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XIIe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1468');">66 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc du Nivernoys,... A Clamecy, ce XVe juillet, à neuf heures du soir, 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1482');">67 Minute de lettre du duc DE NEVERS à « monsieur de La Forest,... De La Charité, ce 17e juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1493');">68 Minute de lettre du duc DE NEVERS à « monsieur de Neufvy,... De La Charité, ce XVIIe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1504');">69 Minute de lettre du duc DE NEVERS « aux eschevins de Bourges... De La Charité, ce XVIIe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1515');">70-71 Deux Lettres du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XVIIe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1529');">72 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XIXe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1543');">73 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernois,... A Clamecy, ce XXe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1557');">74 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernois,... A Clamecy, ce XXIIe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1571');">75 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XXIIIe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1585');">76 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Clamecy, ce XXIIIIe juillet 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1599');">77 Lettre du Sr « ROCHELE,... à monseigneur le duc de Nivernoys,... De Bourges, le VIIe d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1618');">78 Lettre du Sr « RICHEOME,... au Rnd Pere le P. Jacques Comelet, superieur de la maison professe de St Louis, de la compaignie de Jesus, à Paris... D'Avignon, ce 13 septembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1645');">79 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Chamlemys, ce premier octobre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1661');">80 Lettre du Sr DE « CHAZERON,... à monseigneur le duc de Nevers,... De Molins, ce 16 d'octobre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1677');">81 Lettre du Sr DE « CHAZERON,... à monseigneur le duc de Nivernoys,... Du chasteau de Molins, ce lundy au soir, 16 d'octobre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1693');">82 Minute de lettre du duc DE NEVERS « à Mr de La Chastre,... De Desize, ce 16 octobre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1704');">83 Minute de lettre du duc DE NEVERS « à Mr de Chazeron,... De Desize, ce 17 octobre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1715');">84 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... De Nevers, ce XVIIIe octobre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1729');">85 Lettre du Sr « DE MONTHOLON,... à monseigneur [le duc de Nevers]... De Tours, ce 30 octobre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1745');">86 Lettre du Sr « GALLATY DE GLAREIS ritter... à monsieur de Montolon,... A Montlehery, ce IIIIme jour de novembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1774');">87 Lettre du Sr « DE MONTHOLON,... à monseigneur [le duc de Nevers]... De Tours, ce 18 novembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1795');">88 Lettre du Sr « DE MONTHOLON,... à monseigneur[le duc de Nevers]... De Tours, ce 25 novembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1816');">89 Lettre du Sr « DE MONTHOLON,... à monseigneur [le duc de Nevers]... De Tours, ce 3 decembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1837');">90 Lettre du Sr « DUHAMEL,... à monsieur de Montholon,... A Chenonceau, ce Ve decembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1866');">91 Lettre du Sr « DUHAMEL » à monseigneur de Montholon. « A Chenonceau, ce VIIIe decembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1895');">92 Lettre du Sr « DE MONTHOLON,... à monseigneur [le duc de Nevers]... Ce 12 decembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1916');">93 Lettre du Sr « CHANDON,... à monsigneur [le duc de Nevers]... De Tours, ce XXIe decembre mil V.C.IIII.XX. et neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1951');">94 Lettre de M. DE MONTHOLON au duc de Nevers. « Ce matin, dimanche XXIIIIme decembre 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1972');">95 Fragment d'une lettre « de Mr DE MONTHOLON » au duc de Nevers. « 1589, 24 decembre ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050064_d0e1993');">96 Lettre du Sr DE « CHAMLEMYS,... à monseigneur le duc de Nivernoys,... A Chamlemys, ce 29e decembre 1589 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

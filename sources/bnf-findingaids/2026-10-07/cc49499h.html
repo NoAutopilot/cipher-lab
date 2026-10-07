@@ -1,0 +1,502 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049499">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049499">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 2754-3068</div>
+					<h1>Français 3040
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049499_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499">Français 3040 • Anc. 8565 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e79">1 Lettre du « cardinal DE LORRAINE,... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e85">Fol. 4 • 2 Lettre de « NORFFOLK,... à monseigneur... le grand maistre... Escript à Westmoustier, le XXVIIe de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e101">Fol. 7 • 3 Lettre du comté « DE CARPI,... à monseigneur... le grant maistre... De Rome, ce huytme jour de juillet mil V.C.XXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e120">Fol. 12 • 4 Lettre, en chiffre, de « G[ABRIEL], cardinal DE GRAMONT,... à monseigneur... le grant maistre... A Rome, le XXVIIme jour de aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e136">Fol. 16 • 5 Lettre, avec chiffre, de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur... le grant maistre... A Romme, le Vme jour d'octobre mil V.C.XXIX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e150">Fol. 18 • 6 Lettre, en chiffre, de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur le grant maistre... A Boulongne, le XXVIIIme jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e161">Fol. 21 • 7 Lettre chiffrée de NICOLAS RAINCE « à monseigneur le grant maistre... Ce mercredi septme jour de novembre mil V.C.XXVI. Rome ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e180">Fol. 24 • 8 Lettre de « NICOLAS RAINCE à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e198">Fol. 26 • 9 Lettre de NICOLAS « RAINCE,... à monseigneur... le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e216">Fol. 30 • 10 Lettre de « NICOLAS RAINCE,... au roy... De Rome, ce lundi XIIIe jour de fevrier M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e240">Fol. 33 • 11 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi XXIIe jour de fevrier M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e264">Fol. 36 • 12 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce dimanche XXVIe jour de fevrier M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e288">Fol. 38 • 13 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi matin XXIIe jour de mars M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e312">Fol. 41 • 14 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi XIIe jour d'avril M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e336">Fol. 44 • 15 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce samedi premier jour d'avril M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e357">Fol. 47 • 16 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce jeudi IIIIe jour de may M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e381">Fol. 50 • 17 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi dixme jour de may M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e405">Fol. 53 • 18 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi derrenier jour de may M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e426">Fol. 56 • 19 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi matin dernier jour de may M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e447">Fol. 58 • 20 « Extraict d'une lettre de NICOLAS RAINCE,... à monseigneur l'evesque d'Ast, au camp. du premier juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e465">Fol. 62 • 21 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce vendredi premier jour de juillet M.V.C.[XXXI] ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e486">Fol. 66 • 22 Lettre de « PIERRE LIZET,... premier president, à monseigneur... le grand maistre... De Paris, ce XVe jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e512">Fol. 68 • 23 Lettre chiffrée de « J[EAN] DU BELLAY, evesque de Bayonne... De Londres, le dernier de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e535">Fol. 71 • 24 « Ordonnance faicte par le roy HENRY [IV]... pour la discipline de son infanterie... Faict au camp de Cernay, ce XXIe de fevrier 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e561">Fol. 76 • 25 Lettre du « president des comptes de Provence... à monseigneur... le grant maistre... De Romme, ce XXIIe jour d'avril M.D.XXIX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e587">Fol. 78 • 26 Lettre de « CHARLE [DE] GRAMONT, evesque d'Ayre... à monseigneur... le grand maistre... A Baionne, le XXVIIe jour d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e613">Fol. 81 • 27 Lettre de « CHARLE [DE] GRAMONT, evesque d'Ayre... à monseigneur... le grand maistre... De Bayonne, ce XX de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e636">Fol. 83 • 28 Lettre de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur... le grant maistre... A Paris, le IIe de septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e657">Fol. 85 • 29 Lettre de FRANÇOIS, cardinal « DE TOURNON, archevesque de Bourges... à monseigneur... le grant maistre... De Paris, ce XVe de fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e673">Fol. 87 • 30 Lettre de FRANÇOIS, cardinal « DE TOURNON, archevesque de Bourges... à monseigneur... le grant maistre... De Paris, ce XXII d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e686">Fol. 89 • 31 Lettre de FRANÇOIS, cardinal « DE TOURNON, archevesque de Bourges... à monseigneur... le grant maistre... De Sainct Germein, ce dimenche de Quasimodo ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e694">Fol. 91 • 32 Copie de lettre datée « de Sainct Pol, ce premier jour de juing », sur une entrevue du pape et du roi François Ier.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049499_d0e715">Fol. 94 • 33 Mémoire « pour le fait du mariage de monseigneur d'Orleans et de madame d'Urbin », nièce du pape; signé : « RAINCE,... Coppie ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3040 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49499h&Cote=Français 3040&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059870w">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31339 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49499h&Cote=MF 31339&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3040 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8565</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31339. Cote de la matrice (pour commander une reproduction) : R 3975.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059870w" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9059870w.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9059870w.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>François Ier, roi de France. • Actes et lettres.</p>
+<p>François Ier, roi de France. • Notes, pièces et recueils divers.</p>
+<p>Gramont, Gabriel de, évêque de Tarbes, cardinal. • Actes et lettres.</p>
+<p>Guise, Charles de Lorraine, cardinal de, dit le cardinal de Lorraine. • Actes et lettres.</p>
+<p>Raince, Nicolas. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e79');">1 Lettre du « cardinal DE LORRAINE,... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e85');">2 Lettre de « NORFFOLK,... à monseigneur... le grand maistre... Escript à Westmoustier, le XXVIIe de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e101');">3 Lettre du comté « DE CARPI,... à monseigneur... le grant maistre... De Rome, ce huytme jour de juillet mil V.C.XXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e120');">4 Lettre, en chiffre, de « G[ABRIEL], cardinal DE GRAMONT,... à monseigneur... le grant maistre... A Rome, le XXVIIme jour de aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e136');">5 Lettre, avec chiffre, de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur... le grant maistre... A Romme, le Vme jour d'octobre mil V.C.XXIX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e150');">6 Lettre, en chiffre, de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur le grant maistre... A Boulongne, le XXVIIIme jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e161');">7 Lettre chiffrée de NICOLAS RAINCE « à monseigneur le grant maistre... Ce mercredi septme jour de novembre mil V.C.XXVI. Rome ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e180');">8 Lettre de « NICOLAS RAINCE à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e198');">9 Lettre de NICOLAS « RAINCE,... à monseigneur... le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e216');">10 Lettre de « NICOLAS RAINCE,... au roy... De Rome, ce lundi XIIIe jour de fevrier M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e240');">11 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi XXIIe jour de fevrier M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e264');">12 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce dimanche XXVIe jour de fevrier M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e288');">13 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi matin XXIIe jour de mars M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e312');">14 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi XIIe jour d'avril M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e336');">15 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce samedi premier jour d'avril M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e357');">16 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce jeudi IIIIe jour de may M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e381');">17 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi dixme jour de may M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e405');">18 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi derrenier jour de may M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e426');">19 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce mercredi matin dernier jour de may M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e447');">20 « Extraict d'une lettre de NICOLAS RAINCE,... à monseigneur l'evesque d'Ast, au camp. du premier juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e465');">21 Lettre de « NICOLAS RAINCE,... à monseigneur... le grant maistre... De Rome, ce vendredi premier jour de juillet M.V.C.[XXXI] ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e486');">22 Lettre de « PIERRE LIZET,... premier president, à monseigneur... le grand maistre... De Paris, ce XVe jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e512');">23 Lettre chiffrée de « J[EAN] DU BELLAY, evesque de Bayonne... De Londres, le dernier de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e535');">24 « Ordonnance faicte par le roy HENRY [IV]... pour la discipline de son infanterie... Faict au camp de Cernay, ce XXIe de fevrier 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e561');">25 Lettre du « president des comptes de Provence... à monseigneur... le grant maistre... De Romme, ce XXIIe jour d'avril M.D.XXIX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e587');">26 Lettre de « CHARLE [DE] GRAMONT, evesque d'Ayre... à monseigneur... le grand maistre... A Baionne, le XXVIIe jour d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e613');">27 Lettre de « CHARLE [DE] GRAMONT, evesque d'Ayre... à monseigneur... le grand maistre... De Bayonne, ce XX de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e636');">28 Lettre de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur... le grant maistre... A Paris, le IIe de septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e657');">29 Lettre de FRANÇOIS, cardinal « DE TOURNON, archevesque de Bourges... à monseigneur... le grant maistre... De Paris, ce XVe de fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e673');">30 Lettre de FRANÇOIS, cardinal « DE TOURNON, archevesque de Bourges... à monseigneur... le grant maistre... De Paris, ce XXII d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e686');">31 Lettre de FRANÇOIS, cardinal « DE TOURNON, archevesque de Bourges... à monseigneur... le grant maistre... De Sainct Germein, ce dimenche de Quasimodo ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e694');">32 Copie de lettre datée « de Sainct Pol, ce premier jour de juing », sur une entrevue du pape et du roi François Ier.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049499_d0e715');">33 Mémoire « pour le fait du mariage de monseigneur d'Orleans et de madame d'Urbin », nièce du pape; signé : « RAINCE,... Coppie ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

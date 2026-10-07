@@ -1,0 +1,476 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050067">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050067">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3617
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050067_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067">Français 3617 • Anc. 9106 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e121">1 Lettre des « presidens et tresoriers generaulx de France à Molins », au duc de Nevers. « A Molins, ce IIIIe may 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e130">Fol. 2 • 2 Lettre des « vierg et eschevins d'Ostiun... à monseigneur le duc de Nevers,... D'Ostiun, ce 29e jung 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e146">Fol. 3 • 3 Lettre des Srs « YMBERT, AYMERIC et BATAILHIER,... officiers de Lesparre,... à monseigneur » le duc de Nevers. « Juillet 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e167">Fol. 5 • 4 Lettre des Srs « YMBERT, AYMERIC et BATAILHIER » au duc de Nevers. « A Bourdeaus, ce 7 juillet 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e183">Fol. 6 • 5 Lettres d'exemption de tailles accordées par « HENRY » IV à « Claude Medart, maistre des requestes ordinaire de l'hostel de feu... le duc d'Anjou et d'Allençon,... Donné à Gisors, le douziesme jour d'octobre, l'an de grace mil cinq cens quattre vingtz dix ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e196">Fol. 8 • 6 Ordonnance de renvoi au « duc de Nevers », par le roi « HENRY » IV, de la requête du « sieur de Thons,... Donné au camp de Gisors, le quinzme jour d'octobre, l'an de grace mil cinq cens quatre vingtz et dix ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e212">Fol. 9 • 7 Passe-port délivré par les « maire et eschevins de la ville de Lengres... à Claude Medart, sieur de Villiers,... Faict audict Lengres, le XVe jour du mois de mars mil cinq cens quattre vingtz et dix ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e233">Fol. 10 • 8 Passe-port délivré par les « maire et eschevins de la ville de Lengres... à Claude Medart, sieur de Villiers,... Faict audict Lengres, le treiziesme jour du mois de may mil cinq cens quattre vingtz dix ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e246">Fol. 11 • 9 Procès-verbal de l' « assemblée tenue en la maison de ville de Nevers, le dymanche quatorziesme jour du moys de janvier mil cinq cens quatre vingtz et dix ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e264">Fol. 13 • 10 Requête du « sieur DE THONS,... au roy et à nosseigneurs de son conseil », demandant pour le Sr Claude Médart l'autorisation de sortir de Langres, 1590. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e290">Fol. 15 • 11 Minute d'un mandement du roi HENRI IV aux « generaulx [des finances] de Chaalons », leur prescrivant de lui envoyer un état de son domaine, compris dans l'étendue de cette généralité. « 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e303">Fol. 16 • 12 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nivernoys,... De Lengres, ce IIIIe janvier 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e314">Fol. 17 • 13 Lettre des « eschevins de Nevers... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, ce XIIIIe janvier 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e330">Fol. 19 • 14 Mandement de « HENRY » IV aux trésoriers de l'épargne « Balthazar Gobelin et François Hotman », d'avoir à payer, des deniers de leurs charges, au duc de Nevers, « la somme de quatre mil cens soixante six escus... Donné à Crevecoeur, le XVIIIe jour de novembre, l'an de grace mil cinq cens quatre vingtz unze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e361">Fol. 20 • 15 Lettre des sieurs « POVIN, MARC DE BURY, CHANTERAINES, le capittaine LA PORREE, capitaine SORRUSCHON, M. BILSEIN », au duc de Nevers. « Le 22 janvier 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e404">Fol. 22 • 16 Ordonnance de « HENRY » IV, prescrivant aux « president et esleuz en l'eslection de nostre ville de Langres », de faire « provission et amas de salpestres » en cette ville. « Donné au camp devant Rouen, le troisiesme jour de septembre, l'an de grace mil V.C. quatre vingtz douze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e425">Fol. 23 • 17 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nivernoys,... De Lengres, ce XIe febvrier 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e441">Fol. 24 • 18 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... De Chaa lons, ce XVIIe febvrier 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e462">Fol. 25 • 19 Lettre des « eschevins de Clamecy... à monseigneur [le duc de Nevers]... En vostre ville de Clamecy, ce vingtiesme febvrier, l'an mil cinq cens quatre vingtz et douze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e485">Fol. 27 • 20 Lettres de réserve d'un office de secrétaire du roi, accordées par « HENRY » IV au « sieur François de Montholon, intendant des affaires de monseigneur le duc de Nevers,... Dernier de febvrier mil cinq cens quatre vingtz douze, le roy estant au camp de Boissay ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e506">Fol. 28 • 21 Procès-verbal dressé par « JEHAN GAULTIER, sergent royal à Mante », de la signification par lui faite « aux doyen, chanoynes, vicaires et chappellains de l'esglise Nostre Dame de Mante », d'avoir à payer « trois années des decimes... L'an mil cinq [cens] quatre vingtz douze, le samedy vingt neufiesme jour de febvrier apres midy ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e534">Fol. 29 • 22 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, le IXe jour de mars M.V.C.IIII.XX. et douze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e561">Fol. 30 • 23 Lettres de commission accordées par « HENRY » IV à « René de Viaulx, sieur de Chamlivault », lui donnant pouvoir de « lieutenant pour commander » dans une partie de la Champagne, en l'absence du gouverneur de cette province. « Donné au camp devant Rouen, le XXIIIIe jour de mars, l'an de grace mil cinq cens quatre vingtz douze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e587">Fol. 32 • 24 Lettres patentes de « HENRY » IV, confirmant un don de cent mil écus, promis par son prédécesseur au duc de Longueville, à l'occasion de son mariage. « Donné au camp devant Rueile, le vingt cinqme jour de mars, l'an de grace mil cinq cens quatre vingtz douze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e613">Fol. 34 • 25 Lettres de commission de « HENRY » IV, donnant pouvoir au « comte de Tonnerre » de commander dans son comté en l'absence du duc de Nevers, gouverneur de Champagne. « Donné au camp à Darnetal devant Rouen, le XXVe jour de mars, l'an mil V.C.IIII.XX. douze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e648">Fol. 35 • 26 Lettres du duc DE NEVERS, « LODOVICO GONZAGA », par lesquelles il donne son consentement à « l'entherinement et accomplissement [des précédentes lettres]... Donné à Nevers, le Ve jour de may mil V.C. quatre vingtz. douze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e672">Fol. 36 • 27 Lettre des « maire et eschevins de la ville de Langres... à monseigneur de Nevers,... A Langres, ce IIIIe apvril 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e693">Fol. 37 • 28 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XIIIme apvril 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e714">Fol. 38 • 29 Lettre de JEAN DE SAINTE MAURE, Sr D'«ORIGNY » et de LEONARD DE CHAUMONT, Sr DE « ST-CHERON,... à monseigneur le duc de Nivernoys,... De Lengres, ce XXe apvryl ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e754">Fol. 39 • 30 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XXVIIme apvril 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e775">Fol. 40 • 31 Lettre des « gouverneur et gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... De Chaalons, ce 29e apvril 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e796">Fol. 41 • 32 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XIIIe may 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e817">Fol. 42 • 33 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XXVIme may 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e838">Fol. 43 • 34 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nevers,... De Chaalons, ce XIIIIe jour de juing 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e859">Fol. 44 • 35 Lettres des « Peres de la province de France parisienne de l'ordre St Françoys... à monseigneur le duc de Nevers,... De vostre couvent de St François, à Pontoize, ce 15 juing 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e893">Fol. 46 • 36 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... De Chaalons, ce XVIe de juing 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e914">Fol. 47 • 37 Lettre de « FRANÇOIS LEMARESCHAL,... à monseigneur le duc de Nevers,... Escript à Sancerre, le XXme jour de jung 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e940">Fol. 49 • 38 Lettre des « eschevins de Tonnerre... à monseigneur le duc de Nevers,... A Tonnerre, ce XXIIIIe jour de jung ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e966">Fol. 51 • 39 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nyvernois,... A Lengres, ce XXVIIIe juin 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e987">Fol. 52 • 40 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, le XXIXe juing 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1008">Fol. 53 • 41 Lettre des « maire et eschevins de Langres... à monseigneur le duc de Nevers,... De Langres, ce IIIIe jullet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1029">Fol. 55 • 42 Minute d'un mandement de « LODOVICO GONZAGUE, duc de Nivernoys,... à messieurs les esleuz, controlleur et autres officiers pour le roy en l'ellection de Tonnerre », leur ordonnant de répartir un impôt de trois mille écus entre les paroisses de cette élection. « Donné à Tonnerre, le dixe jour de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1050">Fol. 57 • 43 Engagement pris par les « habitans de la ville d'Attigny sur Ayne », de ne pas ouvrir leurs portes aux troupes de la ligue et d'être désormais fidèles au roi. « A Attigny, le mardy XXIe juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1074">Fol. 59 • 44 Lettre de « GERARD DE LIVRON BOURBONNE,... à messieurs les maire et eschevins de Langres... De Coiffy, ce XXI juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1095">Fol. 61 • 45 Sommation faite par « GILLES BOUTAULT », au nom du duc de Nevers, à « Mre Jacques Hilleur, conseiller du roy, receveur general en la generalité d'Orleans, transferé à Bloys », d'avoir à lui payer « la somme de cinq mil escuz d'or à luy ordonnés pour partye de sa pension... XXVe juillet M.V.C.IIII.XX. douze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1130">Fol. 62 • 46 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XXIXe juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1151">Fol. 64 • 47 Lettre des « esleuz de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce VIe aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1172">Fol. 65 • 48 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce VIIe aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1193">Fol. 66 • 49 Lettre des « maire et eschevins de Langres... à monseigneur le duc de Nevers,... De Langres, ce XIIIIe jour d'aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1214">Fol. 68 • 50 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce XVIe aoust 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1235">Fol. 69 • 51 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce XXe aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1256">Fol. 70 • 52 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nevers,... De Lengres, ce XXIIe aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1277">Fol. 71 • 53 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce dernier aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1295">Fol. 72 • 54 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... A Chaalons, ce VIe septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1316">Fol. 73 • 55 Lettre des « maire et eschevins de Langres... à monseigneur le duc de Nivernois,... De l'hostel de ville, à Langres, ce XIme septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1337">Fol. 75 • 56 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce XXVe septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1353">Fol. 76 • 57 Lettre des « gens du conseil et habitans de Saincte-Menehould » au duc de Nevers. « De Saincte Menebould, ce XXVIe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1369">Fol. 77 • 58 Lettres patentes de « HENRY » IV, accordant aux « habitans du païs de Nivernois » la remise des tailles anciennes restant dues, et un sursis pour le payement des tailles de l'année. « Donné au camp de Champs, le dixiesme jour d'octobre mil cinq cens quatre vingtz douze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1387">Fol. 79 • 59 Lettre des « maire et eschevins de la ville d'Aucerre... à messieurs les maire et eschevins de la ville de Troye... A Aucerre, ce XIe octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1408">Fol. 80 • 60 Lettre des « tresoriers generaulx de France... à monseigneur le duc de Nyvernois,... De Melun, ce XIIIIe jour d'octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1424">Fol. 81 • 61 Lettre des « eschevyns et procureur du faict commung de la ville de La Charité... à monseigneur [le duc de Nevers]... A La Charité, ce 16 octobre 1592».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1442">Fol. 83 • 62 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce XVIIe octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1458">Fol. 84 • 63 Lettre des « tresoriers generaulx de France à Meleun... à monseigneur le duc de Nevers,... C'est de Meleun, le premier jour de novembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1471">Fol. 85 • 64 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce XIe novembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1487">Fol. 86 • 65 Lettre des « officiers [de Coulommiers]... à monseigneur [le duc de Nevers]... De vostre ville de Coulommiers, ce vintiesme jour de decembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1500">Fol. 87 • 66 Notification faite aux « esleuz de Chaalons », par « FERRY DE GRAY, sieur DE MALMEDY, commissaire ordinaire de l'artillerie », de la livraison de 352 livres de cordages. « Le XVe jour de juillet 1592 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1514">67 Certificat des élus de Châlons concernant cette même livraison de cordages. « Le deuxiesme jour de mars mil cinq cens quatre vingtz et treize ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1520">Fol. 88 • 68 Lettres d'évocation de « HENRY » IV, par lesquelles il se réserve la connaissance des droits du comte de Maulevrier au titre de duc de Bouillon. « Donné à Paris, le cinquiesme jour de mars mil cinq cens quatre vingtz quinze ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1528">Fol. 90 • 69 Lettre des « presidens et tresoriers generaulx de France à Molins... à monseigneur le duc de Nivernoys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1541">Fol. 92 • 70 Lettre des « eschevins et maistres commis à la garde de Maizières... à madame la duchesse de Nevers. « De vostre ville de Maizieres, ce XVe jour de juing 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1557">Fol. 94 • 71 Lettre des « eschevins de la ville de Dezise... à madame » la duchesse de Nevers. « De vostre ville de Desize, ce IIIIe aoust 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1578">Fol. 96 • 72 Lettre des Srs « M. ROY » et « DE COLONS, advocat et procureur generaulx » du duc de Nevers, « à madame » la duchesse de Nevers. « De vostre ville de Nevers, le 30e aoust 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1602">Fol. 98, 100 et 102 • 73-75 Trois lettres des Srs « DE LA CHASTAIGNE, E. BARDIN, MARION,... à madame la [duchesse de Nevers]. Du bureau de vostre chambre du conseil et des comptes à Nevers, ce VIIIe octobre 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1616">Fol. 104 • 76 Lettres des « majeur et eschevins de Sainct Wallery... à madame la duchesse de Nivernoys,... De vostre ville de Sainct Wallery, ce troiesme decembre 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1629">Fol. 106 • 77 Lettre des « president, conseillers et maistre de voz comptes à Nevers... à madame [la duchesse de Nevers]... Au bureau de vostre chambre, le XXe febvrier 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1650">Fol. 108 • 78 Lettre des « eschevins de la ville de Desize... à madame [la duchesse de Nevers]... De vostre ville de Desize, ce 25e febvrier 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1676">Fol. 110 • 79 Lettre des Srs « NEVELET, CHARLEMAIGNE, J. FAVIER, R. TISSERANT,... à madame [la duchesse de Nevers]... De Troyes, ce septme mars 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1720">Fol. 112 • 80 Lettre des échevins de la ville de Nevers à la duchesse de Nevers. « De vostre ville de Nevers, ce 13 mars 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1743">Fol. 114 • 81 Lettre des « lieutenant et advocat generaulx de Rethellois », les Srs « D'ESPINOY » et « SYMONNET,... à madame [la duchesse de Nevers]... De vostre ville de Rethel, ce 23 mars 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1774">Fol. 115 • 82 Lettre des « eschevins, maistres et gens du conseil de Maizieres... à madame [la duchesse de Nevers]... De vostre ville de Maizieres, ce XXVe mars 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1795">Fol. 117 • 83 Lettre des Srs « D'ESPINOY » et « SYMONNET, lieutenant et advocat generaulx en Rethellois... à madame [la duchesse de Nevers]... De vostre ville de Rethel, ce XIIIIe apvril 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1829">Fol. 118 • 84 Lettre des « bailly, procureur fiscal et son substitut de la ville de Sainct Florentin... à madame [la duchesse de Nevers]... De vostre ville de Sainct Florentin, ce 21 may 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1852">Fol. 120 • 85 Lettre des « president, conseillers et maistre de voz comptes à Nevers... à madame [la duchesse de Nevers]... De vostre ville de Nevers, ce dernier jour de may 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1870">Fol. 122 • 86 Lettre des Srs « J. LECLERC, L. THIERRIAT, PONCE,... à madame [la duchesse de Nevers]... De vostre ville de St Florentin, ce 6 juing 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1909">Fol. 124 • 87 Lettre de « JEHAN JACQUEMIER, advocat et procureur en la baronnye d'Ervy... à madame [la duchesse de Nevers]... D'Ervy, ce VIe jung 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1935">Fol. 126 • 88 Lettre des « eschevins et habitans de Dezize... à madame [la duchesse de Nevers]... De vostre ville de Desize, ce 14e jung 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1961">Fol. 128 • 89 Lettre des « president, maistres des comptes, conseillers en vostre chambre à Nevers », à la duchesse de Nevers. « Au bureau de vostre chambre du conseil et des comptes à Nevers, ce XVIIe febvrier 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1982">Fol. 129 • 90 Lettre des « eschevins, maistres et gens du conseil de la ville de Maizieres... à monseigneur [le duc de Nevers]... De vostre ville de Maizieres, ce XXVIIIe mars 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e1998">Fol. 131 • 91 Lettre des Srs POMPONNE DE « BELLIEVRE » et NICOLAS « BRULLART [DE SILLERY]... à monseigneur le duc de Nivernoys,... De Vervins, ce premier jour de may 1598 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e2024">Fol. 132 • 92 Lettre des Srs POMPONNE DE « BELLIEVRE » et NICOLAS « BRULLART [DE SILLERY]... à monseigneur le duc de Nevers,... De Vervins, le XIe jour de may 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e2053">Fol. 133 • 93 Lettre des « eschevins, maistres et gens du conseil de Maizieres... à madame [la duchesse de Nevers]... De vostre ville de Maizieres, ce 3e juing 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e2064">Fol. 135 • 94 Lettre des « eschevins et maistres commis à la garde de Maizieres... à madame [la duchesse de Nevers]... De vostre ville de Maiziere, le XXIe octobre 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e2075">Fol. 137 • 95 Lettre des Srs « J. GASCOING, GUYTON » et « HARDY,... à madame [la duchesse de Nevers]... De vostre ville de Nevers, ce XXe apvril 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050067_d0e2104">Fol. 139 • 96 Lettre des « president et tresoriers generaulx de France à Molins », au duc de Nevers. « De Molins, ce VIIme jour d'aoust 1599 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3617 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50067k&Cote=Français 3617&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3617 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9106</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Bardin. • Lettres.</p>
+<p>Châlons-sur-Marne. • Conseil de ville, correspondance.</p>
+<p>Châlons-sur-Marne. • Généralité, président et trésoriers généraux de France, lettres.</p>
+<p>Châlons-sur-Marne. • Notes et pièces diverses.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>La Chastaigne, De. • Lettres.</p>
+<p>Langres. • Échevinage, lettres et actes des échevins.</p>
+<p>Langres. • Notes et pièces diverses.</p>
+<p>Marion, Simon, avocat. • Lettres.</p>
+<p>Mézières. • Lettres des habitants.</p>
+<p>Moulins, Allier. • Trésoriers généraux.</p>
+<p>Nevers. • Chambre des Comptes.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Roy, M. • Lettre.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e121');">1 Lettre des « presidens et tresoriers generaulx de France à Molins », au duc de Nevers. « A Molins, ce IIIIe may 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e130');">2 Lettre des « vierg et eschevins d'Ostiun... à monseigneur le duc de Nevers,... D'Ostiun, ce 29e jung 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e146');">3 Lettre des Srs « YMBERT, AYMERIC et BATAILHIER,... officiers de Lesparre,... à monseigneur » le duc de Nevers. « Juillet 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e167');">4 Lettre des Srs « YMBERT, AYMERIC et BATAILHIER » au duc de Nevers. « A Bourdeaus, ce 7 juillet 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e183');">5 Lettres d'exemption de tailles accordées par « HENRY » IV à « Claude Medart, maistre des requestes ordinaire de l'hostel de feu... le duc d'Anjou et d'Allençon,... Donné à Gisors, le douziesme jour d'octobre, l'an de grace mil cinq cens quattre vingtz dix ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e196');">6 Ordonnance de renvoi au « duc de Nevers », par le roi « HENRY » IV, de la requête du « sieur de Thons,... Donné au camp de Gisors, le quinzme jour d'octobre, l'an de grace mil cinq cens quatre vingtz et dix ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e212');">7 Passe-port délivré par les « maire et eschevins de la ville de Lengres... à Claude Medart, sieur de Villiers,... Faict audict Lengres, le XVe jour du mois de mars mil cinq cens quattre vingtz et dix ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e233');">8 Passe-port délivré par les « maire et eschevins de la ville de Lengres... à Claude Medart, sieur de Villiers,... Faict audict Lengres, le treiziesme jour du mois de may mil cinq cens quattre vingtz dix ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e246');">9 Procès-verbal de l' « assemblée tenue en la maison de ville de Nevers, le dymanche quatorziesme jour du moys de janvier mil cinq cens quatre vingtz et dix ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e264');">10 Requête du « sieur DE THONS,... au roy et à nosseigneurs de son conseil », demandant pour le Sr Claude Médart l'autorisation de sortir de Langres, 1590. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e290');">11 Minute d'un mandement du roi HENRI IV aux « generaulx [des finances] de Chaalons », leur prescrivant de lui envoyer un état de son domaine, compris dans l'étendue de cette généralité. « 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e303');">12 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nivernoys,... De Lengres, ce IIIIe janvier 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e314');">13 Lettre des « eschevins de Nevers... à monseigneur [le duc de Nevers]... De vostre ville de Nevers, ce XIIIIe janvier 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e330');">14 Mandement de « HENRY » IV aux trésoriers de l'épargne « Balthazar Gobelin et François Hotman », d'avoir à payer, des deniers de leurs charges, au duc de Nevers, « la somme de quatre mil cens soixante six escus... Donné à Crevecoeur, le XVIIIe jour de novembre, l'an de grace mil cinq cens quatre vingtz unze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e361');">15 Lettre des sieurs « POVIN, MARC DE BURY, CHANTERAINES, le capittaine LA PORREE, capitaine SORRUSCHON, M. BILSEIN », au duc de Nevers. « Le 22 janvier 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e404');">16 Ordonnance de « HENRY » IV, prescrivant aux « president et esleuz en l'eslection de nostre ville de Langres », de faire « provission et amas de salpestres » en cette ville. « Donné au camp devant Rouen, le troisiesme jour de septembre, l'an de grace mil V.C. quatre vingtz douze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e425');">17 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nivernoys,... De Lengres, ce XIe febvrier 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e441');">18 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... De Chaa lons, ce XVIIe febvrier 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e462');">19 Lettre des « eschevins de Clamecy... à monseigneur [le duc de Nevers]... En vostre ville de Clamecy, ce vingtiesme febvrier, l'an mil cinq cens quatre vingtz et douze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e485');">20 Lettres de réserve d'un office de secrétaire du roi, accordées par « HENRY » IV au « sieur François de Montholon, intendant des affaires de monseigneur le duc de Nevers,... Dernier de febvrier mil cinq cens quatre vingtz douze, le roy estant au camp de Boissay ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e506');">21 Procès-verbal dressé par « JEHAN GAULTIER, sergent royal à Mante », de la signification par lui faite « aux doyen, chanoynes, vicaires et chappellains de l'esglise Nostre Dame de Mante », d'avoir à payer « trois années des decimes... L'an mil cinq [cens] quatre vingtz douze, le samedy vingt neufiesme jour de febvrier apres midy ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e534');">22 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, le IXe jour de mars M.V.C.IIII.XX. et douze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e561');">23 Lettres de commission accordées par « HENRY » IV à « René de Viaulx, sieur de Chamlivault », lui donnant pouvoir de « lieutenant pour commander » dans une partie de la Champagne, en l'absence du gouverneur de cette province. « Donné au camp devant Rouen, le XXIIIIe jour de mars, l'an de grace mil cinq cens quatre vingtz douze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e587');">24 Lettres patentes de « HENRY » IV, confirmant un don de cent mil écus, promis par son prédécesseur au duc de Longueville, à l'occasion de son mariage. « Donné au camp devant Rueile, le vingt cinqme jour de mars, l'an de grace mil cinq cens quatre vingtz douze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e613');">25 Lettres de commission de « HENRY » IV, donnant pouvoir au « comte de Tonnerre » de commander dans son comté en l'absence du duc de Nevers, gouverneur de Champagne. « Donné au camp à Darnetal devant Rouen, le XXVe jour de mars, l'an mil V.C.IIII.XX. douze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e648');">26 Lettres du duc DE NEVERS, « LODOVICO GONZAGA », par lesquelles il donne son consentement à « l'entherinement et accomplissement [des précédentes lettres]... Donné à Nevers, le Ve jour de may mil V.C. quatre vingtz. douze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e672');">27 Lettre des « maire et eschevins de la ville de Langres... à monseigneur de Nevers,... A Langres, ce IIIIe apvril 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e693');">28 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XIIIme apvril 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e714');">29 Lettre de JEAN DE SAINTE MAURE, Sr D'«ORIGNY » et de LEONARD DE CHAUMONT, Sr DE « ST-CHERON,... à monseigneur le duc de Nivernoys,... De Lengres, ce XXe apvryl ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e754');">30 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XXVIIme apvril 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e775');">31 Lettre des « gouverneur et gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... De Chaalons, ce 29e apvril 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e796');">32 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XIIIe may 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e817');">33 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XXVIme may 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e838');">34 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nevers,... De Chaalons, ce XIIIIe jour de juing 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e859');">35 Lettres des « Peres de la province de France parisienne de l'ordre St Françoys... à monseigneur le duc de Nevers,... De vostre couvent de St François, à Pontoize, ce 15 juing 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e893');">36 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... De Chaalons, ce XVIe de juing 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e914');">37 Lettre de « FRANÇOIS LEMARESCHAL,... à monseigneur le duc de Nevers,... Escript à Sancerre, le XXme jour de jung 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e940');">38 Lettre des « eschevins de Tonnerre... à monseigneur le duc de Nevers,... A Tonnerre, ce XXIIIIe jour de jung ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e966');">39 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nyvernois,... A Lengres, ce XXVIIIe juin 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e987');">40 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, le XXIXe juing 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1008');">41 Lettre des « maire et eschevins de Langres... à monseigneur le duc de Nevers,... De Langres, ce IIIIe jullet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1029');">42 Minute d'un mandement de « LODOVICO GONZAGUE, duc de Nivernoys,... à messieurs les esleuz, controlleur et autres officiers pour le roy en l'ellection de Tonnerre », leur ordonnant de répartir un impôt de trois mille écus entre les paroisses de cette élection. « Donné à Tonnerre, le dixe jour de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1050');">43 Engagement pris par les « habitans de la ville d'Attigny sur Ayne », de ne pas ouvrir leurs portes aux troupes de la ligue et d'être désormais fidèles au roi. « A Attigny, le mardy XXIe juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1074');">44 Lettre de « GERARD DE LIVRON BOURBONNE,... à messieurs les maire et eschevins de Langres... De Coiffy, ce XXI juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1095');">45 Sommation faite par « GILLES BOUTAULT », au nom du duc de Nevers, à « Mre Jacques Hilleur, conseiller du roy, receveur general en la generalité d'Orleans, transferé à Bloys », d'avoir à lui payer « la somme de cinq mil escuz d'or à luy ordonnés pour partye de sa pension... XXVe juillet M.V.C.IIII.XX. douze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1130');">46 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... De Langres, ce XXIXe juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1151');">47 Lettre des « esleuz de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce VIe aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1172');">48 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce VIIe aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1193');">49 Lettre des « maire et eschevins de Langres... à monseigneur le duc de Nevers,... De Langres, ce XIIIIe jour d'aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1214');">50 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce XVIe aoust 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1235');">51 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce XXe aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1256');">52 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nevers,... De Lengres, ce XXIIe aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1277');">53 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce dernier aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1295');">54 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... A Chaalons, ce VIe septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1316');">55 Lettre des « maire et eschevins de Langres... à monseigneur le duc de Nivernois,... De l'hostel de ville, à Langres, ce XIme septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1337');">56 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce XXVe septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1353');">57 Lettre des « gens du conseil et habitans de Saincte-Menehould » au duc de Nevers. « De Saincte Menebould, ce XXVIe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1369');">58 Lettres patentes de « HENRY » IV, accordant aux « habitans du païs de Nivernois » la remise des tailles anciennes restant dues, et un sursis pour le payement des tailles de l'année. « Donné au camp de Champs, le dixiesme jour d'octobre mil cinq cens quatre vingtz douze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1387');">59 Lettre des « maire et eschevins de la ville d'Aucerre... à messieurs les maire et eschevins de la ville de Troye... A Aucerre, ce XIe octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1408');">60 Lettre des « tresoriers generaulx de France... à monseigneur le duc de Nyvernois,... De Melun, ce XIIIIe jour d'octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1424');">61 Lettre des « eschevyns et procureur du faict commung de la ville de La Charité... à monseigneur [le duc de Nevers]... A La Charité, ce 16 octobre 1592».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1442');">62 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce XVIIe octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1458');">63 Lettre des « tresoriers generaulx de France à Meleun... à monseigneur le duc de Nevers,... C'est de Meleun, le premier jour de novembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1471');">64 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce XIe novembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1487');">65 Lettre des « officiers [de Coulommiers]... à monseigneur [le duc de Nevers]... De vostre ville de Coulommiers, ce vintiesme jour de decembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1500');">66 Notification faite aux « esleuz de Chaalons », par « FERRY DE GRAY, sieur DE MALMEDY, commissaire ordinaire de l'artillerie », de la livraison de 352 livres de cordages. « Le XVe jour de juillet 1592 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1514');">67 Certificat des élus de Châlons concernant cette même livraison de cordages. « Le deuxiesme jour de mars mil cinq cens quatre vingtz et treize ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1520');">68 Lettres d'évocation de « HENRY » IV, par lesquelles il se réserve la connaissance des droits du comte de Maulevrier au titre de duc de Bouillon. « Donné à Paris, le cinquiesme jour de mars mil cinq cens quatre vingtz quinze ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1528');">69 Lettre des « presidens et tresoriers generaulx de France à Molins... à monseigneur le duc de Nivernoys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1541');">70 Lettre des « eschevins et maistres commis à la garde de Maizières... à madame la duchesse de Nevers. « De vostre ville de Maizieres, ce XVe jour de juing 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1557');">71 Lettre des « eschevins de la ville de Dezise... à madame » la duchesse de Nevers. « De vostre ville de Desize, ce IIIIe aoust 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1578');">72 Lettre des Srs « M. ROY » et « DE COLONS, advocat et procureur generaulx » du duc de Nevers, « à madame » la duchesse de Nevers. « De vostre ville de Nevers, le 30e aoust 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1602');">73-75 Trois lettres des Srs « DE LA CHASTAIGNE, E. BARDIN, MARION,... à madame la [duchesse de Nevers]. Du bureau de vostre chambre du conseil et des comptes à Nevers, ce VIIIe octobre 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1616');">76 Lettres des « majeur et eschevins de Sainct Wallery... à madame la duchesse de Nivernoys,... De vostre ville de Sainct Wallery, ce troiesme decembre 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1629');">77 Lettre des « president, conseillers et maistre de voz comptes à Nevers... à madame [la duchesse de Nevers]... Au bureau de vostre chambre, le XXe febvrier 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1650');">78 Lettre des « eschevins de la ville de Desize... à madame [la duchesse de Nevers]... De vostre ville de Desize, ce 25e febvrier 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1676');">79 Lettre des Srs « NEVELET, CHARLEMAIGNE, J. FAVIER, R. TISSERANT,... à madame [la duchesse de Nevers]... De Troyes, ce septme mars 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1720');">80 Lettre des échevins de la ville de Nevers à la duchesse de Nevers. « De vostre ville de Nevers, ce 13 mars 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1743');">81 Lettre des « lieutenant et advocat generaulx de Rethellois », les Srs « D'ESPINOY » et « SYMONNET,... à madame [la duchesse de Nevers]... De vostre ville de Rethel, ce 23 mars 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1774');">82 Lettre des « eschevins, maistres et gens du conseil de Maizieres... à madame [la duchesse de Nevers]... De vostre ville de Maizieres, ce XXVe mars 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1795');">83 Lettre des Srs « D'ESPINOY » et « SYMONNET, lieutenant et advocat generaulx en Rethellois... à madame [la duchesse de Nevers]... De vostre ville de Rethel, ce XIIIIe apvril 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1829');">84 Lettre des « bailly, procureur fiscal et son substitut de la ville de Sainct Florentin... à madame [la duchesse de Nevers]... De vostre ville de Sainct Florentin, ce 21 may 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1852');">85 Lettre des « president, conseillers et maistre de voz comptes à Nevers... à madame [la duchesse de Nevers]... De vostre ville de Nevers, ce dernier jour de may 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1870');">86 Lettre des Srs « J. LECLERC, L. THIERRIAT, PONCE,... à madame [la duchesse de Nevers]... De vostre ville de St Florentin, ce 6 juing 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1909');">87 Lettre de « JEHAN JACQUEMIER, advocat et procureur en la baronnye d'Ervy... à madame [la duchesse de Nevers]... D'Ervy, ce VIe jung 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1935');">88 Lettre des « eschevins et habitans de Dezize... à madame [la duchesse de Nevers]... De vostre ville de Desize, ce 14e jung 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1961');">89 Lettre des « president, maistres des comptes, conseillers en vostre chambre à Nevers », à la duchesse de Nevers. « Au bureau de vostre chambre du conseil et des comptes à Nevers, ce XVIIe febvrier 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1982');">90 Lettre des « eschevins, maistres et gens du conseil de la ville de Maizieres... à monseigneur [le duc de Nevers]... De vostre ville de Maizieres, ce XXVIIIe mars 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e1998');">91 Lettre des Srs POMPONNE DE « BELLIEVRE » et NICOLAS « BRULLART [DE SILLERY]... à monseigneur le duc de Nivernoys,... De Vervins, ce premier jour de may 1598 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e2024');">92 Lettre des Srs POMPONNE DE « BELLIEVRE » et NICOLAS « BRULLART [DE SILLERY]... à monseigneur le duc de Nevers,... De Vervins, le XIe jour de may 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e2053');">93 Lettre des « eschevins, maistres et gens du conseil de Maizieres... à madame [la duchesse de Nevers]... De vostre ville de Maizieres, ce 3e juing 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e2064');">94 Lettre des « eschevins et maistres commis à la garde de Maizieres... à madame [la duchesse de Nevers]... De vostre ville de Maiziere, le XXIe octobre 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e2075');">95 Lettre des Srs « J. GASCOING, GUYTON » et « HARDY,... à madame [la duchesse de Nevers]... De vostre ville de Nevers, ce XXe apvril 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050067_d0e2104');">96 Lettre des « president et tresoriers generaulx de France à Molins », au duc de Nevers. « De Molins, ce VIIme jour d'aoust 1599 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

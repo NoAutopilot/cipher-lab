@@ -1,0 +1,507 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050063">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050063">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3613
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050063_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063">Français 3613 • Anc. 9102 • Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e101">1 Lettre du « cardinale d'Aragone... al Sor Camill Volta,... Di Procida, a 19 d'agosto 1588 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e110">Fol. 3 • 2 Lettre de « GIOVANNI FRANCESCO, cardinale MOROSINI,... all'illmo... sigr duca di Nivers,... Di Tours, a VIII d'april M.D.LXXXIX ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e129">Fol. 5 • 3 Lettre du « cardinale di Pavia [IPPOLITO ROSSI]... al'illmo... sigr duca di Nivers,... Di Pavia, alli XVII di genar M.D.LXXXVIIII ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e148">Fol. 7 • 4 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca di Nivers,... Di Orliens, a XXV di april M.D.LXXXIX ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e167">Fol. 9 • 5 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca de Nivers,... Di Gian, a XXVIII di april M.D.LXXXIX ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e181">Fol. 11 • 6 Lettre de « GIOVANNI FRANCESCO, cardinale MOROSINI legato... all' illmo... sigr duca di Nivers,... Di Molins, a XXVII di maggio M.D.LXXXIX ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e195">Fol. 13 • 7 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca di Nivers,... Di Molins, a XXIX di maggio M.D.LXXXIX ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e209">Fol. 15 • 8 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca di Nivers,... Di Molins, a II di giugno M.D.LXXXIX » En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e223">Fol. 17 • 9 Lettre du « cardinale MOROSINI,... all' illmo... duca di Nivers,... Di Molins, a li XIIII di giugno 1589 ». En ita lien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e234">Fol. 19 • 10 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca di Nivers,... Di Molins, a li 28 di giugno 1589 » En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e248">Fol. 21 • 11 Lettre du « cardinale MOROSINI,... all' illmo... sigr duca di Nivers,... Di Molins, a li XXX di giugno 1589 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e262">Fol. 23 • 12 Lettre de VINCENT Ier, « duca DI MANTOVA », à « la duchessa di Nevers,... Di Mantova, a 12 di marzo 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e283">Fol. 25 • 13 Lettre de « LEONORA [DE MEDICIS], duchessa di Mantova », à la « duchessa di Nevers,... Di Mantova, a 28 di febbraio 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e306">Fol. 27 • 14 Lettre de « LEONORA [DE MEDICIS], duchessa di Mantova », à « madama di Nevers,... Di Mantova, à 12 di marzo 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e324">Fol. 29 • 15 Lettre du « cardinale MOROSINI, legato... all' illmo sigr duca de Nivers,... Di Molins, a IIII di luglio M.D.LXXXIX ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e348">Fol. 31 • 16 Lettre de VINCENT Ier, « duca DI MANTOVA », à la duchessa di Nevers,... Di Mantova, li 17 di maggio 1597 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e364">Fol. 33 • 17 Lettre de VINCENT Ier, « duca DI MANTOVA », à la duchessa di Nevers,... Di Mantova, li 24 di luglio 1597 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e375">Fol. 35 • 18 Lettre de « VINCENT Ier, duca DI MANTOVA », à la « duchessa di Nevers,... Di Mantova, a XI di giugno 1597 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e386">Fol. 36 • 19 Lettre d'ALPHONSE II, « duca DI FERRARA », au duc « di Nivers,... Di Ferrara, a 9 di febbraio 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e404">Fol. 38 • 20 « Copia della lettera del Sr cardinale GASTRUCCI, prefetto della signatura, al sigr cardinal Gondy,... Di Roma, li XV di novembre 1589 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e433">21 « Copia della lettera del Sr cardinal DI COSENZA, daario, al Sr cardinal Gondy,... Di Roma, alli XVI di novembre 1589 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e445">Fol. 39 • 22 Fin d'une lettre de « GIOVANNI-MARIA MANELLI,... Di Roma, li XVIII di novembre 1589 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e463">Fol. 40 • 23 Lettre du Sr « CAMILLO VOLTA,... all' Illmo... sigor luca di Nevers,... Di Roma, li XIII di gennaro dell' MD]LXXXVII ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e490">Fol. 44 • 24 Lettre du Sr « CAMILLO VOLTA « au duc de Nevers. Di Roma, il di XXVII di gennaro dell' XXXVII ». En talien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e511">Fol. 48 • 25 Lettre de VINCENT Ier, « duca DI MANTOVA », au duc de « Nevers,... Di Mantova, a 8 di genaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e532">Fol. 50 • 26 Lettre de VINCENT Ier, « duca DI MANTOVA », au duc de Nevers. « Di Mantova, a 3 di genaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e553">Fol. 52 • 27 Lettre du Sr « CAMILLO VOLTA » au duc de Nevers. « Di Roma, il di IX di febraio dell' XXXVII ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e574">Fol. 54 • 28 Lettre de « RANUCCIO FARNESE » au duc de Nevers. « Di Roma, li 28 di marzo 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e597">Fol. 55 • 29 Lettre de VINCENT Ier, « duca DI MANTOVA », au duc « di Nevers,... Di Mantova, li 15 di ottobre 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e618">Fol. 57 • 30 Lettre du Sr « CAMILLO VOLTA » au duc de Nevers. « Di Roma, l'ultimo di ottobre 1588 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e639">Fol. 59 • 31 « Coppie de la lectre de M. le legat il cardinale CAETANO,... all' illmo... Sr cardinal di Vandosmo,... Di Digion, a XVII di decembre 1589 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e668">Fol. 60 • 32 Résumé de correspondances diplomatiques adressées au duc de Nevers par ses agents d'Anvers, le 8 mars ; de Turin, les 9, 12 et 14 mars; et de Savoie, le 16 mars 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e701">Fol. 62 • 33 Lettre, avec chiffre, du Sr « HERCOLE RONDINELLI » au duc de Nevers. « Di Parigi, il di XImo di 9bre 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e733">Fol. 63 • 34 Lettre du Sr « CESARE CEPPO,... all'illmo... sigor duca di Nevers,... Di Mantova, il di 9 di gennaro 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e765">Fol. 65 • 35 Lettre de « FABIO GONZAGA,... all' illmo... Sr duca di Navers,... Di Mantova, alli XI febrajo 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e794">Fol. 67 • 36 Certificat par lequel « HIERONIMO AGOCCHI » donne à « Luigi Najorez, sacerdote dell' ordine di S. Francesco », acte de sa renonciation au parti du roi de Navarre, et de la promesse qu'il fait de vivre désormais suivant les règles de son ordre. « In Han, li 3 d'aprile 1593 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e820">Fol. 69 • 37 Lettre de « HIERONIMO AGOCCHI,... all' illmo Sre... Pietro Aldobrandini,... In Han, li 4 d'aprile 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e849">Fol. 71 • 38 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... sigr duca de Nevers,... Di Mantova, a 2 di gennaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e878">Fol. 73 • 39 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... sigor duca di Nevers,... Di Mantova, a 7 di gennaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e907">Fol. 75 • 40 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... sigor duca di Nevers,... Di Mantova, a 15 di gennaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e936">Fol. 77 • 41 Lettre du Sr « CESARE CEPPO,... all'illmo... sigor duca di Nevers,... Di Mantova, il di 16 genaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e973">Fol. 79 • 42 Lettre de « JACOMO DA L'ARMI,... all' illmo Sor... duca di Niversse,... Di Bologna, a 17 di gennaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1007">Fol. 81 • 43 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... sigr duca di Nevers,... Di Mantova, a 17 di gennaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1036">Fol. 83 • 44 Lettre du Sr « LUIGI FIUME » au duc de Nevers. « Di Roma, a 22 di gennaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1065">Fol. 85 • 45 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... Sor duca di Nevers,... Di Mantova, a 22 di gennaro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1094">Fol. 87 • 46 Lettre du Sr « GIUFFREDO LOMELLINI,... all' illmo sigre duca di Nivers,... Di Roma, a 22 di gennaro del 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1131">Fol. 89 • 47 Lettre du duc DE NEVERS au Sr « Loinelino, chierico di camera... Di Scarparia, il 28 del [15]94 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1157">Fol. 90 • 48 Lettre du duc DE NEVERS. « Da Fiorenzuola, alli 28 di gennaro 1594 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1180">Fol. 91 • 49 Lettre de « GIROLAMO GONDY,... all' illmo... Sr duca di Nevers,... Di Fiorenza, 29 di genayo 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1214">Fol. 93 • 50 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS. « Di Bollogna, il 29 di l'anno 1594 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1242">Fol. 94 • 51 Lettre du duc DE NEVERS. « Di Bologna, il 30 del anno [15]94 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1270">52 Lettre du duc DE NEVERS. « Di Mantova, il 30 gennaro [15]94 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1276">Fol. 95 • 53 Lettre de « GIROLAMO GONDY,... all' illmo... Sr ducca de Nivers,... Di Fiorenza, il di primo di febrayo 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1310">Fol. 97 et 99 • 54-55 Deux lettres du duc DE NEVERS. « Di Milano, a di 2 di febrajo 1594 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1318">Fol. 100 • 56 Minute de lettre du duc DE NEVERS « al Sr Luigi Fiume,... Di Ferrara, il 3 di febrajo [15]94 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1349">Fol. 101 • 57 « Nobili Veneziani dell' eccmo senato ch' incontrorno l'illmo et eccmo Sor duca de Nivers colle piate della serma Sria, li 6 febrajo 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1405">Fol. 102 • 58 Lettre du Sr « TOMASO BOZZI » au duc de Nevers. « Di Roma, alli 9 di febrajo 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1441">Fol. 104 • 59 Noms des gentilshommes vénitiens qui ont tenu compagnie au duc de Nevers pendant son séjour à Venise, du 6 au 13 février 1594. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1474">Fol. 105 • 60 Lettre de « GIROLAMO GONDY,... all' illmo... Sr ducca di Nevers,... Di Fiorenza, 12 di febraio 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1508">Fol. 107 • 61 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... Sor duca di Nevers,... Di Mantova, a 16 di febraio 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1542">Fol. 109 • 62 Lettre de « HERCOLE GONZAGA,... all' illmo... sigor duca di Nivers,... Di Correggio, li XXI febraio 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1581">Fol. 111 • 63 Lettre de « GIROLAMO GONDY,... all' illmo... sigr duca di Nivers,... Di Fiorenza, 21 di febrayo 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1615">Fol. 113 • 64 Lettre de « MARGHERITA, duchessa DI SABIONETTA,... all' illmo sigr... duca di Nivers,... Di Gazuolo, a 27 febraro 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1649">Fol. 115 • 65 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS. « Di Mantova, il 27 febraro 1594 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1672">Fol. 116 • 66 Lettre du Sr « SACROMORO MALATESTA » au duc de Nevers. « Di Vinezia, il di 28 febrajo del [15]94 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1703">Fol. 117 • 67 Lettre du duc DE NEVERS « à Mr Lomelini,... Di Mantova, il ultimo febrajo [15]94 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1729">Fol. 119 • 68 « Nativita delli figliuoli dello sermo et potentissimo Massimiliano II,... imperator de' Romani... et d'Maria infanta natta regina di Spagna ». Disposé en tableau.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1755">Fol. 120 • 69 Lettre du Sr « PIERRE VIDAL » au duc de Nevers. « De Venize, ce XIe mars 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1789">Fol. 121 • 70 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, « au pape [Clément VIII]... Di Peschiano, il 21 marzo 1594 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1812">Fol. 123 • 71 Lettre du « conte DE VILLACHIARA » au duc de Nevers. « Di Venetia, li 3 di aprile 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1840">Fol. 124 • 72 Lettre du Sr « GALEAZZO FREGOSO,... all' illmo... sigr duca di Nivers,... Di Venetia, li 3 di aprile 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1872">Fol. 126 • 73 Résumés de lettres adressées au duc de Nevers par le Sr CAMILLO « VOLTA ». Du 24 février au 20 avril 1594. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1908">74 Résumé d'une lettre du duc de Parme, RANUCE Ier FARNESE, au duc de Ferrare, du 20 mars 1594. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1917">75 Résumés de lettres adressées au duc de Nevers par les Srs « conte DI VILLACHIARA (a di 3 aprile 1594, in Venetia), GORGONIO GALEA (alli 15 aprile 1594, in Mantova), SOLDO (a di 18 marzo 1594, in Brescia), GALEAZZO FREGOSO (a di 14 aprile 1594, in Verona) ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1926">Fol. 128 • 76 Lettre du Sr « JULLIO CARRETTO,... all' illmo... Sr duca di Nivers,... Di Roma, li 12 di novembre 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1958">Fol. 130 • 77 Lettre du « P. THOMASO GOZZI,... all' illmo... sigr ducha de Nivers,... Febvrier [15]94 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e1987">Fol. 132 • 78 Lettre de « FRANCESCO GONZAGA, vescovo di Martova,... all' illma Sra... madama la duchessa di Nevers,... Di San Quintino, alli 29 di decembre 1597 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2011">Fol. 134 • 79 Lettre de « SCIPIONE [GONZAGA], patriarca di Gierusalemme... all' illmo... Sor duca di Nevers,... Di Roma, a 12 di gennaro 1587 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2040">Fol. 136 • 80 Lettre du Sr « VINCENZIO BADALOCCHIO,... all' illmo... Sor duca di Nivers,... In Roma, il di XIIII di giugno M.D.XCI ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2067">Fol. 137 • 81 Lettre de « VINCENZIO BADALOCCHIO,... all' illmo... duca di Nivers,... In Roma, il di primo di giugno M.D.XCI ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2088">Fol. 138 • 82 Lettre de « VINCENZIO BADALOCCHIO,... all' illmo... sigr duca di Nivers,... In Roma, il di XVIII d'agosto M.D.XCI ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2112">Fol. 140 • 83 Lettre de « VINCENZIO BADALOCCHIO » au duc de Nevers. « In Roma, il di III di maggio M.D.XCI ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2130">Fol. 141 • 84 Lettre de « VINCENZIO BADALOCCHIO,... all' illmo... signor duca di Nivers,... In Roma, il di XXI di giugno M.D.XCI ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2151">Fol. 143 • 85 Lettre de « VINCENZIO BADALOCCHIO,... all' illmo... Sor duca di Nevers,... In Roma, il di XXIIII d'agosto M.D.XCI ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2175">Fol. 145 • 86 Lettre de FILIPPO SEGA, « vescovo di Piacenza... al molto magco sigre Balbani a Lion... Di Parigi, li 7 di gennaro 1591 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2204">Fol. 147 • 87 Lettre adressée au duc de Nevers. « Di Roma questo di, 20 de maggio 1591 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2222">Fol. 148 • 88 Lettre, avec chiffre, de FILIPPO SEGA, « vescovo di Piacenza... all' illmo... Sor cardinale Caetano,... Di Parigi, li 9 di gennaro 1591 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2246">Fol. 150 • 89 Lettre de « SCIPIONE, cardinale GONZAGA,... all' illmo... sigor duca di Nevers,... Di Roma, à 30 di decembre 1591 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2278">Fol. 151 • 90 Minute de lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à sa nièce la duchesse de Mantoue. « Di Parigi, il 18 di maggio 1591 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2296">Fol. 152 • 91 Minute de lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à son neveu Vincent Ier, duc de Mantoue. « 1595, 3 giugno ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2317">Fol. 154 • 92 Lettre de « LEONORA [DE MEDICIS], duchessa DI MANTOVA,... all' illma sigra mia, madama la duchessa di Nevers,... Di Mantova, a 6 di maggio 1596 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2346">Fol. 156 • 93 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illma... sigra duchessa di Nevers,... Di Parigi, li 2 di settembre 1596 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2370">Fol. 158 • 94 Lettre du Sr « FEDERICO PICO » à la « duchessa di Nevers,... Della Mirandola, a di XXI ottobre 1596 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2396">Fol. 159 • 95 État des impôts ordinaires et extraordinaires du Milanais vers la fin du XVIe siècle. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2422">Fol. 162 • 96 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... alla illma sigra... duchessa di Nevers,... Di Macone, alli 17 di settembre 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2446">Fol. 164 • 97 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... alla illma... sigra duchessa di Nevers,... Di Vervino, alli 10 di maggio 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2470">Fol. 166 • 98 Lettre de « FABIO GONZAGA,... all' illma... sigra duchessa di Nevers,... Di Casale, a 15 di febrajo 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2499">Fol. 168 • 99 Lettre de « FRANCESCO [GONZAGA], vescovo di Mantova... al molto magco Sr Filippo Persei,... Di Parigi, alli 27 di agosto 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2523">Fol. 170 • 100 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... alla illma... sigra duchessa di Nivers,... Di Vervins, a 27 di febrajo 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2547">Fol. 172 • 101 Lettre de « GIOVANNI FRANCESCO LUZZARA,... alla illma Sra mia... madama la duchessa di Nevers,... Di Mantova,... il 12 marzo 1598 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2566">Fol. 174 • 102 Lettre de VINCENT Ier, « duca DI MANTOVA,... alla illma... sigra duchessa di Nevers,... Di Mantova, a 20 di marzo 1599 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050063_d0e2588">Fol. 176 • 103 Lettre « all' illmo... Sr duca di Nevernoys et Retelloys,... Di Lione, alli XXIII novembre M.D.LXXXXIX ». En italien.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3613 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50063m&Cote=Français 3613&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90582263">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 16426 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50063m&Cote=MF 16426&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3613 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9102</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 16426. Cote de la matrice (pour commander une reproduction) : R 153036.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90582263" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b90582263.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b90582263.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Avalos, Inigo d', cardinal d'Aragon. • Lettres.</p>
+<p>Badalocchio, Vincenzo. • Lettres.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Fregoso, Galeazzo. • Lettres.</p>
+<p>Gondi, Jérôme de. • Lettres.</p>
+<p>Gonzague, François de, cardinal de Saint-Pierre-ès-Liens. • Lettres.</p>
+<p>Gonzague, Vincent Ier de, duc de Mantoue. • Lettres et actes.</p>
+<p>Morosini, Giovanni-Francesco, cardinal. • Lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Volta, Camillo. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e101');">1 Lettre du « cardinale d'Aragone... al Sor Camill Volta,... Di Procida, a 19 d'agosto 1588 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e110');">2 Lettre de « GIOVANNI FRANCESCO, cardinale MOROSINI,... all'illmo... sigr duca di Nivers,... Di Tours, a VIII d'april M.D.LXXXIX ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e129');">3 Lettre du « cardinale di Pavia [IPPOLITO ROSSI]... al'illmo... sigr duca di Nivers,... Di Pavia, alli XVII di genar M.D.LXXXVIIII ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e148');">4 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca di Nivers,... Di Orliens, a XXV di april M.D.LXXXIX ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e167');">5 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca de Nivers,... Di Gian, a XXVIII di april M.D.LXXXIX ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e181');">6 Lettre de « GIOVANNI FRANCESCO, cardinale MOROSINI legato... all' illmo... sigr duca di Nivers,... Di Molins, a XXVII di maggio M.D.LXXXIX ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e195');">7 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca di Nivers,... Di Molins, a XXIX di maggio M.D.LXXXIX ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e209');">8 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca di Nivers,... Di Molins, a II di giugno M.D.LXXXIX » En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e223');">9 Lettre du « cardinale MOROSINI,... all' illmo... duca di Nivers,... Di Molins, a li XIIII di giugno 1589 ». En ita lien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e234');">10 Lettre du « cardinale MOROSINI, legato... all' illmo... sigr duca di Nivers,... Di Molins, a li 28 di giugno 1589 » En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e248');">11 Lettre du « cardinale MOROSINI,... all' illmo... sigr duca di Nivers,... Di Molins, a li XXX di giugno 1589 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e262');">12 Lettre de VINCENT Ier, « duca DI MANTOVA », à « la duchessa di Nevers,... Di Mantova, a 12 di marzo 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e283');">13 Lettre de « LEONORA [DE MEDICIS], duchessa di Mantova », à la « duchessa di Nevers,... Di Mantova, a 28 di febbraio 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e306');">14 Lettre de « LEONORA [DE MEDICIS], duchessa di Mantova », à « madama di Nevers,... Di Mantova, à 12 di marzo 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e324');">15 Lettre du « cardinale MOROSINI, legato... all' illmo sigr duca de Nivers,... Di Molins, a IIII di luglio M.D.LXXXIX ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e348');">16 Lettre de VINCENT Ier, « duca DI MANTOVA », à la duchessa di Nevers,... Di Mantova, li 17 di maggio 1597 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e364');">17 Lettre de VINCENT Ier, « duca DI MANTOVA », à la duchessa di Nevers,... Di Mantova, li 24 di luglio 1597 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e375');">18 Lettre de « VINCENT Ier, duca DI MANTOVA », à la « duchessa di Nevers,... Di Mantova, a XI di giugno 1597 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e386');">19 Lettre d'ALPHONSE II, « duca DI FERRARA », au duc « di Nivers,... Di Ferrara, a 9 di febbraio 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e404');">20 « Copia della lettera del Sr cardinale GASTRUCCI, prefetto della signatura, al sigr cardinal Gondy,... Di Roma, li XV di novembre 1589 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e433');">21 « Copia della lettera del Sr cardinal DI COSENZA, daario, al Sr cardinal Gondy,... Di Roma, alli XVI di novembre 1589 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e445');">22 Fin d'une lettre de « GIOVANNI-MARIA MANELLI,... Di Roma, li XVIII di novembre 1589 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e463');">23 Lettre du Sr « CAMILLO VOLTA,... all' Illmo... sigor luca di Nevers,... Di Roma, li XIII di gennaro dell' MD]LXXXVII ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e490');">24 Lettre du Sr « CAMILLO VOLTA « au duc de Nevers. Di Roma, il di XXVII di gennaro dell' XXXVII ». En talien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e511');">25 Lettre de VINCENT Ier, « duca DI MANTOVA », au duc de « Nevers,... Di Mantova, a 8 di genaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e532');">26 Lettre de VINCENT Ier, « duca DI MANTOVA », au duc de Nevers. « Di Mantova, a 3 di genaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e553');">27 Lettre du Sr « CAMILLO VOLTA » au duc de Nevers. « Di Roma, il di IX di febraio dell' XXXVII ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e574');">28 Lettre de « RANUCCIO FARNESE » au duc de Nevers. « Di Roma, li 28 di marzo 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e597');">29 Lettre de VINCENT Ier, « duca DI MANTOVA », au duc « di Nevers,... Di Mantova, li 15 di ottobre 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e618');">30 Lettre du Sr « CAMILLO VOLTA » au duc de Nevers. « Di Roma, l'ultimo di ottobre 1588 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e639');">31 « Coppie de la lectre de M. le legat il cardinale CAETANO,... all' illmo... Sr cardinal di Vandosmo,... Di Digion, a XVII di decembre 1589 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e668');">32 Résumé de correspondances diplomatiques adressées au duc de Nevers par ses agents d'Anvers, le 8 mars ; de Turin, les 9, 12 et 14 mars; et de Savoie, le 16 mars 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e701');">33 Lettre, avec chiffre, du Sr « HERCOLE RONDINELLI » au duc de Nevers. « Di Parigi, il di XImo di 9bre 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e733');">34 Lettre du Sr « CESARE CEPPO,... all'illmo... sigor duca di Nevers,... Di Mantova, il di 9 di gennaro 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e765');">35 Lettre de « FABIO GONZAGA,... all' illmo... Sr duca di Navers,... Di Mantova, alli XI febrajo 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e794');">36 Certificat par lequel « HIERONIMO AGOCCHI » donne à « Luigi Najorez, sacerdote dell' ordine di S. Francesco », acte de sa renonciation au parti du roi de Navarre, et de la promesse qu'il fait de vivre désormais suivant les règles de son ordre. « In Han, li 3 d'aprile 1593 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e820');">37 Lettre de « HIERONIMO AGOCCHI,... all' illmo Sre... Pietro Aldobrandini,... In Han, li 4 d'aprile 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e849');">38 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... sigr duca de Nevers,... Di Mantova, a 2 di gennaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e878');">39 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... sigor duca di Nevers,... Di Mantova, a 7 di gennaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e907');">40 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... sigor duca di Nevers,... Di Mantova, a 15 di gennaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e936');">41 Lettre du Sr « CESARE CEPPO,... all'illmo... sigor duca di Nevers,... Di Mantova, il di 16 genaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e973');">42 Lettre de « JACOMO DA L'ARMI,... all' illmo Sor... duca di Niversse,... Di Bologna, a 17 di gennaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1007');">43 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... sigr duca di Nevers,... Di Mantova, a 17 di gennaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1036');">44 Lettre du Sr « LUIGI FIUME » au duc de Nevers. « Di Roma, a 22 di gennaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1065');">45 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... Sor duca di Nevers,... Di Mantova, a 22 di gennaro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1094');">46 Lettre du Sr « GIUFFREDO LOMELLINI,... all' illmo sigre duca di Nivers,... Di Roma, a 22 di gennaro del 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1131');">47 Lettre du duc DE NEVERS au Sr « Loinelino, chierico di camera... Di Scarparia, il 28 del [15]94 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1157');">48 Lettre du duc DE NEVERS. « Da Fiorenzuola, alli 28 di gennaro 1594 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1180');">49 Lettre de « GIROLAMO GONDY,... all' illmo... Sr duca di Nevers,... Di Fiorenza, 29 di genayo 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1214');">50 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS. « Di Bollogna, il 29 di l'anno 1594 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1242');">51 Lettre du duc DE NEVERS. « Di Bologna, il 30 del anno [15]94 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1270');">52 Lettre du duc DE NEVERS. « Di Mantova, il 30 gennaro [15]94 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1276');">53 Lettre de « GIROLAMO GONDY,... all' illmo... Sr ducca de Nivers,... Di Fiorenza, il di primo di febrayo 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1310');">54-55 Deux lettres du duc DE NEVERS. « Di Milano, a di 2 di febrajo 1594 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1318');">56 Minute de lettre du duc DE NEVERS « al Sr Luigi Fiume,... Di Ferrara, il 3 di febrajo [15]94 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1349');">57 « Nobili Veneziani dell' eccmo senato ch' incontrorno l'illmo et eccmo Sor duca de Nivers colle piate della serma Sria, li 6 febrajo 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1405');">58 Lettre du Sr « TOMASO BOZZI » au duc de Nevers. « Di Roma, alli 9 di febrajo 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1441');">59 Noms des gentilshommes vénitiens qui ont tenu compagnie au duc de Nevers pendant son séjour à Venise, du 6 au 13 février 1594. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1474');">60 Lettre de « GIROLAMO GONDY,... all' illmo... Sr ducca di Nevers,... Di Fiorenza, 12 di febraio 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1508');">61 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illmo... Sor duca di Nevers,... Di Mantova, a 16 di febraio 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1542');">62 Lettre de « HERCOLE GONZAGA,... all' illmo... sigor duca di Nivers,... Di Correggio, li XXI febraio 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1581');">63 Lettre de « GIROLAMO GONDY,... all' illmo... sigr duca di Nivers,... Di Fiorenza, 21 di febrayo 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1615');">64 Lettre de « MARGHERITA, duchessa DI SABIONETTA,... all' illmo sigr... duca di Nivers,... Di Gazuolo, a 27 febraro 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1649');">65 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS. « Di Mantova, il 27 febraro 1594 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1672');">66 Lettre du Sr « SACROMORO MALATESTA » au duc de Nevers. « Di Vinezia, il di 28 febrajo del [15]94 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1703');">67 Lettre du duc DE NEVERS « à Mr Lomelini,... Di Mantova, il ultimo febrajo [15]94 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1729');">68 « Nativita delli figliuoli dello sermo et potentissimo Massimiliano II,... imperator de' Romani... et d'Maria infanta natta regina di Spagna ». Disposé en tableau.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1755');">69 Lettre du Sr « PIERRE VIDAL » au duc de Nevers. « De Venize, ce XIe mars 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1789');">70 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, « au pape [Clément VIII]... Di Peschiano, il 21 marzo 1594 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1812');">71 Lettre du « conte DE VILLACHIARA » au duc de Nevers. « Di Venetia, li 3 di aprile 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1840');">72 Lettre du Sr « GALEAZZO FREGOSO,... all' illmo... sigr duca di Nivers,... Di Venetia, li 3 di aprile 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1872');">73 Résumés de lettres adressées au duc de Nevers par le Sr CAMILLO « VOLTA ». Du 24 février au 20 avril 1594. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1908');">74 Résumé d'une lettre du duc de Parme, RANUCE Ier FARNESE, au duc de Ferrare, du 20 mars 1594. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1917');">75 Résumés de lettres adressées au duc de Nevers par les Srs « conte DI VILLACHIARA (a di 3 aprile 1594, in Venetia), GORGONIO GALEA (alli 15 aprile 1594, in Mantova), SOLDO (a di 18 marzo 1594, in Brescia), GALEAZZO FREGOSO (a di 14 aprile 1594, in Verona) ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1926');">76 Lettre du Sr « JULLIO CARRETTO,... all' illmo... Sr duca di Nivers,... Di Roma, li 12 di novembre 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1958');">77 Lettre du « P. THOMASO GOZZI,... all' illmo... sigr ducha de Nivers,... Febvrier [15]94 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e1987');">78 Lettre de « FRANCESCO GONZAGA, vescovo di Martova,... all' illma Sra... madama la duchessa di Nevers,... Di San Quintino, alli 29 di decembre 1597 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2011');">79 Lettre de « SCIPIONE [GONZAGA], patriarca di Gierusalemme... all' illmo... Sor duca di Nevers,... Di Roma, a 12 di gennaro 1587 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2040');">80 Lettre du Sr « VINCENZIO BADALOCCHIO,... all' illmo... Sor duca di Nivers,... In Roma, il di XIIII di giugno M.D.XCI ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2067');">81 Lettre de « VINCENZIO BADALOCCHIO,... all' illmo... duca di Nivers,... In Roma, il di primo di giugno M.D.XCI ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2088');">82 Lettre de « VINCENZIO BADALOCCHIO,... all' illmo... sigr duca di Nivers,... In Roma, il di XVIII d'agosto M.D.XCI ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2112');">83 Lettre de « VINCENZIO BADALOCCHIO » au duc de Nevers. « In Roma, il di III di maggio M.D.XCI ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2130');">84 Lettre de « VINCENZIO BADALOCCHIO,... all' illmo... signor duca di Nivers,... In Roma, il di XXI di giugno M.D.XCI ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2151');">85 Lettre de « VINCENZIO BADALOCCHIO,... all' illmo... Sor duca di Nevers,... In Roma, il di XXIIII d'agosto M.D.XCI ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2175');">86 Lettre de FILIPPO SEGA, « vescovo di Piacenza... al molto magco sigre Balbani a Lion... Di Parigi, li 7 di gennaro 1591 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2204');">87 Lettre adressée au duc de Nevers. « Di Roma questo di, 20 de maggio 1591 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2222');">88 Lettre, avec chiffre, de FILIPPO SEGA, « vescovo di Piacenza... all' illmo... Sor cardinale Caetano,... Di Parigi, li 9 di gennaro 1591 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2246');">89 Lettre de « SCIPIONE, cardinale GONZAGA,... all' illmo... sigor duca di Nevers,... Di Roma, à 30 di decembre 1591 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2278');">90 Minute de lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à sa nièce la duchesse de Mantoue. « Di Parigi, il 18 di maggio 1591 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2296');">91 Minute de lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à son neveu Vincent Ier, duc de Mantoue. « 1595, 3 giugno ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2317');">92 Lettre de « LEONORA [DE MEDICIS], duchessa DI MANTOVA,... all' illma sigra mia, madama la duchessa di Nevers,... Di Mantova, a 6 di maggio 1596 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2346');">93 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... all' illma... sigra duchessa di Nevers,... Di Parigi, li 2 di settembre 1596 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2370');">94 Lettre du Sr « FEDERICO PICO » à la « duchessa di Nevers,... Della Mirandola, a di XXI ottobre 1596 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2396');">95 État des impôts ordinaires et extraordinaires du Milanais vers la fin du XVIe siècle. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2422');">96 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... alla illma sigra... duchessa di Nevers,... Di Macone, alli 17 di settembre 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2446');">97 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... alla illma... sigra duchessa di Nevers,... Di Vervino, alli 10 di maggio 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2470');">98 Lettre de « FABIO GONZAGA,... all' illma... sigra duchessa di Nevers,... Di Casale, a 15 di febrajo 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2499');">99 Lettre de « FRANCESCO [GONZAGA], vescovo di Mantova... al molto magco Sr Filippo Persei,... Di Parigi, alli 27 di agosto 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2523');">100 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova... alla illma... sigra duchessa di Nivers,... Di Vervins, a 27 di febrajo 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2547');">101 Lettre de « GIOVANNI FRANCESCO LUZZARA,... alla illma Sra mia... madama la duchessa di Nevers,... Di Mantova,... il 12 marzo 1598 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2566');">102 Lettre de VINCENT Ier, « duca DI MANTOVA,... alla illma... sigra duchessa di Nevers,... Di Mantova, a 20 di marzo 1599 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050063_d0e2588');">103 Lettre « all' illmo... Sr duca di Nevernoys et Retelloys,... Di Lione, alli XXIII novembre M.D.LXXXXIX ». En italien.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

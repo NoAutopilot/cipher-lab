@@ -1,0 +1,508 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050072">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050072">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3622
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050072_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072">Français 3622 • Anc. 9111 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e106">1 Lettre de « HENRY [IV]... à ma tante la duchesse de Nemours,... Ce XXIme juyllet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e115">Fol. 2 • 2 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escript à Mante, le XXe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e126">Fol. 3 • 3 Lettre de JEAN « DE VYVONNE, marquis DE PISANY », au duc de Nevers. « De Desençan (Desenzano), le IIe janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e142">Fol. 5 • 4 Lettre du Sr « HURAULT DE MAISSE,... à monsieur le duc de Nivernois,... De Venise, le 1er janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e161">Fol. 7 • 5 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Racanati, ce IIe jour de janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e182">Fol. 9 • 6 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Soleurre, ce 3e janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e208">Fol. 10 • 7 Lettre de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... A Bresse, le Ve janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e239">Fol. 12 • 8 Lettre du Sr « HURAULT DE MAISSE,... à monseigneur le duc de Nivernois,... De Venise, le 8 janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e265">Fol. 14 • 9 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nyvernois,... Ce 9 janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e288">Fol. 16 • 10 Lettre de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... De Bresse, le XIIe janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e319">Fol. 19 • 11 Lettre du Sr « HURAULT DE MAISSE » au duc de Nevers. « De Venise ; le 15 janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e345">Fol. 22 • 12 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Racanati, ce XVIe jour de janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e371">Fol. 25 • 13 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monseigneur » le duc de Nevers. « De Rome, ce lundi 17 janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e399">Fol. 27 • 14 Lettre de « HENRI D'ORLEANS [duc DE LONGUEVILLE]... à monsieur le duc de Nivernoys,... A St Quentin, ce XIXe janvyer 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e438">Fol. 30 • 15 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nyvernois,... A Ricanati, ce XXIe jour de janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e469">Fol. 32 • 16 Lettre du Sr « HURAULT DE MAISSE,... à monsieur le duc de Nevers,... De Venise, le 22e janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e503">Fol. 34 • 17 Lettre du Sr « HURAULT DE MAISSE,... all' illmo duca de Nivers,... De Venise, le 26e jour de janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e540">Fol. 36 • 18 Lettre de « PIERRE, cardinal DE GONDY », au duc de Nevers. « De Racanati, ce XXVIIIe jour de janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e571">Fol. 37 • 19 Minute de lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monsieur d'Ossat,... De Scarperia, le XXVIII janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e599">Fol. 38 • 20 Nouvelles de Rome, « Di Roma, de 29 di gennaio 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e632">Fol. 40 • 21 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Lorette, ce IIe jour de fevrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e668">Fol. 2 • 22 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce IIme fevrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e682">Fol. 44 • 23 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernois,... A Lorette, ce IIIIe jour de fevrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e713">Fol. 47 • 24 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monsigneur le duc de Nivernois,... De Rome, ce V febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e741">Fol. 50 • 25 Lettre d'«ALFONCE DE D'ORNANO » au roi. « De Lyon, ce IXe fevrier 1594 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e777">Fol. 51 • 26 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce XI fevrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e808">Fol. 54 • 27 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monseigneur le duc de Nivernois,... De Rome, ce 12 febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e836">Fol. 57 • 28 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nyvernois,... De Rome, ce XVe febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e867">Fol. 60 • 29 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monseigneur le duc de Nivernois,... De Rome, ce 16 febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e895">Fol. 62 • 30 Lettre du Sr « DE VULCOB,... à monseigneur le duc de Nivernois,... De Padoue, ce XVIIe jour de fevrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e934">Fol. 64 • 31 Lettre du Sr « HURAULT DE MAISSE,... à monsieur le duc de Nivernois,... A Venise, ce XVIIe fevrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e968">Fol. 66 • 32 Lettre du Sr « GIROLAMO GONDY » au duc de Nevers. « Di Fiorenza, il di 18 di febrayo 1594 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1004">Fol. 68 • 33 Lettre du Sr « HURAULT DE MAISSE » au duc de Nevers. « De Venise, le III febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1035">Fol. 70 • 34 Lettre de « PIERRE, cardinal DE GONDY », au duc de Nevers. « Ce 19 febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1063">Fol. 72 • 35 Lettre du Sr « HURAULT DE MAISSE,... à monseigneur le duc de Nivernois,... De Venise, le 23 febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1094">Fol. 74 • 36 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce 26e fevrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1128">Fol. 76 • 37 Lettre de FRANÇOIS SAVARY DE « BREVES,... à monseigneur le duc de Nevers,... Escripte de Pera lez Constantinople, ce 27me febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1159">Fol. 78 • 38 Lettre du Sr « HURAULT DE MAISSE,... à monseigneur le duc de Nivernois,... De Venise, le dernier febvrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1190">Fol. 80 • 39 Lettre du Sr « DE VULCOB,... à monseigneur le duc de Nivernois,... De Padoue, ce dernier jour de fevrier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1226">Fol. 82 • 40 Lettre de « PIERRE, cardinal DE GONDY », au duc de Nevers. « A Romme, ce IIIIe jour de mars 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1257">Fol. 84 • 41 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce XII mars 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1288">Fol. 86 • 42 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Soleurre, ce XXIIIe mars 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1319">Fol. 88 • 43 Lettre du Sr D'ELBENE au duc de Nevers. « De Rome, ce 26e mars 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1353">Fol. 90 • 44 « Passeport de monseigneur [le duc CHARLES II] DE LORRAINE pour le passage de monseigneur [le duc de Nevers] par la Lorraine... Donné à Nancy, le vingt septiesme jour de mars mil cinq cent quatre vingt et quatorze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1386">Fol. 91 • 45 Lettre, avec chiffre, de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à Mr de Gondy,... De Veze, ce XXVIIe mars 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1420">Fol. 93 • 46 Lettre du Sr « HURAULT DE MAISSE,... à monseigneur le duc de Nivernois,... A Venise, ce IIIe avril 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1454">Fol. 95 • 47 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monseigneur de Revol,... De Langres, ce VIIIe avril 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1480">Fol. 96 • 48 Lettre de CHARLES DE GONTAUT, maréchal DE « BIRON,... à monseigneur le duc de Nevers,... Au camp de La Chapelle sur Aureuze, le XIIIIe avril 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1511">Fol. 97 • 49 « Ce qui s'est passé en la reduction de la ville de Troyes en l'obeyssance du roy... Faict à Troyes, le XIIIe avril 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1542">Fol. 99 • 50 Lettre d'ALBERT « DE GONDY [duc DE RETZ]... à monseigneur le duc de Nivernois,... A Paris, le XVIIe d'apvril 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1573">Fol. 101 • 51 Lettre de LOUIS « POTIER [DE GESVRES]... à monseigneur le duc de Nyvernois,... De Paris, le XVII avril 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1601">Fol. 104 • 52 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nivernoys,... De Villeroi, le XVIIIe de avril 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1635">Fol. 106 • 53 Lettre du duc DE NEVERS « à monsieur Dinteville,... De La Cassine, ce premier may 1594 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1663">Fol. 107 • 54 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce 2e may 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1697">Fol. 110 • 55 Lettre de FRANÇOIS DE BONNE « DES DIGUIERES » au duc de Nevers. « A Aix, le 18 jour de may 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1730">Fol. 112 • 56 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nevers,... A Desansan (Desenzano), ce XIII juing 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1758">Fol. 114 • 57 Lettre de LOUIS « POTIER [DE GESVRES]... à monseigneur le duc de Nyvernoys,... Ce XXVI juing 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1791">Fol. 115 • 58 Lettre du Sr « D'ELBENE » au duc de Nevers. « De Rome, ce Ve juillet 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1825">Fol. 116 • 59 Lettre du duc « CHARLES DE LORRAINE,... à monseigneur Du Cluseau,... D'Amiens, ce XXVIe jour de juillet 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1866">Fol. 117 • 60 Lettre de NICOLAS « BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Paris, ce XXIIIIe jour d'aoust 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1897">Fol. 119 • 61 « Double de la lettre escripte » par le duc DE NEVERS « à monsieur de Schomberg,... C'est de Lyon, le XXIIIe jour de septembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1923">Fol. 121 • 62 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nevers,... C'est de Lyon, le XXIXe jour de septembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1954">Fol. 123 • 63 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monseigneur de Bellievre,... De Paris, ce 20e octobre 1594 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e1985">Fol. 125 • 64 Lettre de « L[ODOVICO] GONZAGA, duc DE NEVERS », au roi. « De Poissy, ce dernier octobre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2013">Fol. 126 • 65 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... C'est de Lyon, le IIe jour de novembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2044">Fol. 129 • 66 Lettre de « HENRY D'ORLEANS [duc DE LONGUEVILLE]... à monsieur le duc de Nyvernois,... Ce 6 novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2077">Fol. 132 • 67 Lettre de « GEOFFROY LOMELLINY,... à monseigneur le duc de Nivernois,... De Rome, ce 8me de 9bre de 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2116">Fol. 134 • 68 Lettre de « GEOFFROY LOMELLINY » au duc de Nevers. « De Rome, ce IX de novembre du 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2144">Fol. 135 • 69 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce 9me novembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2183">Fol. 137 • 70 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... De Lyon, le Xe jour de novembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2214">Fol. 139 • 71 Nouvelles de Rome, sur les intentions du pape d'accorder l'absolution au roi, et sur les intrigues des Espagnols pour détourner ce projet. « Novembre 1594 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2247">Fol. 141 • 72 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monsieur de Bellievre,... De St Germain, ce 15e novembre 1594 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2281">Fol. 142 • 73 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... C'est de Lyon, ce XVIIIe jour de novembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2312">Fol. 144 • 74 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... De Lyon, le XIXe jour de novembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2343">Fol. 146 • 75 Lettre de « CHARLES [DE] GONZAGUE CLEVES,... à monseigneur » le duc de Nevers. « De Sanlis, ce 25 octobre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2371">Fol. 147 • 76 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... C'est de Lyon, le XXVIIe jour de novembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2402">Fol. 149 • 77 Lettre de POMPONNE DE « BELLIEVRE » au duc de Nevers. « C'est de Lyon, le VIIe jour de Xbre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2436">Fol. 150 • 78 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monseigneur de Believre,... De Paris, ce 3 decembre 1594. Coppie ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2464">Fol. 152 • 79 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monseigneur de Villeroy,... De Paris, ce 4e decembre 1594 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2495">Fol. 155 • 80 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nivernoys,... De Gien, ce premier de decembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2526">Fol. 157 • 81 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Recanati, le 9 decembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2554">Fol. 159 • 82 Lettre de « HENRY D'ORLEANS [duc DE LONGUEVILLE]... à monsieur le duc de Nyvernois,... De Peronne, ce XI de decembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2587">Fol. 161 • 83 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... De Lyon, le XIe jour de decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2618">Fol. 163 • 84 Lettre du duc DE NEVERS au roi. « C'est de Lyon, le XIe jour de decembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2644">Fol. 164 • 85 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Recanati, 12 decembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2667">Fol. 166 • 86 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nivernois,... De Amiens, ce XIIIe de decembre 1594 au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2691">Fol. 169 • 87 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monseigneur le duc de Nivernois,... De Rome, ce 26 mars 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2709">Fol. 171 • 88 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nevers,... D'Amiens, ce XIIIIe de decembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2723">Fol. 172 • 89 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nyvernois,... De Roye, le XXIIIe de decembre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050072_d0e2737">Fol. 173 • 90 Lettre du duc DE NEVERS au roi. « De Paris, ce 24 decembre 1594 ». Minute.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3622 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50072k&Cote=Français 3622&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058938q">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 33051 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50072k&Cote=MF 33051&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3622 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9111</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 33051. Cote de la matrice (pour commander une reproduction) : R 222628.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058938q" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9058938q.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9058938q.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Arquien, D'. • Lettres.</p>
+<p>Bellièvre, Pompone Ier de, chancelier. • Actes et lettres.</p>
+<p>Brèves, François Savary de. • Actes et lettres.</p>
+<p>Brèves, François Savary de. • Ambassades en Turquie (1592, 1602).</p>
+<p>Brûlart, Nicolas, marquis de Sillery, chancelier de France. • Actes et lettres.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Gondi, Pierre de, évêque de Paris, cardinal. • Lettres.</p>
+<p>Hurault de Maisse, André. • Lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Ossat, Arnaud d', cardinal. • Actes et lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e106');">1 Lettre de « HENRY [IV]... à ma tante la duchesse de Nemours,... Ce XXIme juyllet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e115');">2 Lettre de « HENRY [IV]... à mon cousin le duc de Nyvernois,... Escript à Mante, le XXe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e126');">3 Lettre de JEAN « DE VYVONNE, marquis DE PISANY », au duc de Nevers. « De Desençan (Desenzano), le IIe janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e142');">4 Lettre du Sr « HURAULT DE MAISSE,... à monsieur le duc de Nivernois,... De Venise, le 1er janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e161');">5 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Racanati, ce IIe jour de janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e182');">6 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Soleurre, ce 3e janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e208');">7 Lettre de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... A Bresse, le Ve janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e239');">8 Lettre du Sr « HURAULT DE MAISSE,... à monseigneur le duc de Nivernois,... De Venise, le 8 janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e265');">9 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nyvernois,... Ce 9 janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e288');">10 Lettre de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... De Bresse, le XIIe janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e319');">11 Lettre du Sr « HURAULT DE MAISSE » au duc de Nevers. « De Venise ; le 15 janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e345');">12 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Racanati, ce XVIe jour de janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e371');">13 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monseigneur » le duc de Nevers. « De Rome, ce lundi 17 janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e399');">14 Lettre de « HENRI D'ORLEANS [duc DE LONGUEVILLE]... à monsieur le duc de Nivernoys,... A St Quentin, ce XIXe janvyer 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e438');">15 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nyvernois,... A Ricanati, ce XXIe jour de janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e469');">16 Lettre du Sr « HURAULT DE MAISSE,... à monsieur le duc de Nevers,... De Venise, le 22e janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e503');">17 Lettre du Sr « HURAULT DE MAISSE,... all' illmo duca de Nivers,... De Venise, le 26e jour de janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e540');">18 Lettre de « PIERRE, cardinal DE GONDY », au duc de Nevers. « De Racanati, ce XXVIIIe jour de janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e571');">19 Minute de lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monsieur d'Ossat,... De Scarperia, le XXVIII janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e599');">20 Nouvelles de Rome, « Di Roma, de 29 di gennaio 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e632');">21 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Lorette, ce IIe jour de fevrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e668');">22 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce IIme fevrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e682');">23 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernois,... A Lorette, ce IIIIe jour de fevrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e713');">24 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monsigneur le duc de Nivernois,... De Rome, ce V febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e741');">25 Lettre d'«ALFONCE DE D'ORNANO » au roi. « De Lyon, ce IXe fevrier 1594 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e777');">26 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce XI fevrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e808');">27 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monseigneur le duc de Nivernois,... De Rome, ce 12 febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e836');">28 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nyvernois,... De Rome, ce XVe febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e867');">29 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monseigneur le duc de Nivernois,... De Rome, ce 16 febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e895');">30 Lettre du Sr « DE VULCOB,... à monseigneur le duc de Nivernois,... De Padoue, ce XVIIe jour de fevrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e934');">31 Lettre du Sr « HURAULT DE MAISSE,... à monsieur le duc de Nivernois,... A Venise, ce XVIIe fevrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e968');">32 Lettre du Sr « GIROLAMO GONDY » au duc de Nevers. « Di Fiorenza, il di 18 di febrayo 1594 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1004');">33 Lettre du Sr « HURAULT DE MAISSE » au duc de Nevers. « De Venise, le III febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1035');">34 Lettre de « PIERRE, cardinal DE GONDY », au duc de Nevers. « Ce 19 febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1063');">35 Lettre du Sr « HURAULT DE MAISSE,... à monseigneur le duc de Nivernois,... De Venise, le 23 febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1094');">36 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce 26e fevrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1128');">37 Lettre de FRANÇOIS SAVARY DE « BREVES,... à monseigneur le duc de Nevers,... Escripte de Pera lez Constantinople, ce 27me febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1159');">38 Lettre du Sr « HURAULT DE MAISSE,... à monseigneur le duc de Nivernois,... De Venise, le dernier febvrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1190');">39 Lettre du Sr « DE VULCOB,... à monseigneur le duc de Nivernois,... De Padoue, ce dernier jour de fevrier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1226');">40 Lettre de « PIERRE, cardinal DE GONDY », au duc de Nevers. « A Romme, ce IIIIe jour de mars 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1257');">41 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce XII mars 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1288');">42 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Soleurre, ce XXIIIe mars 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1319');">43 Lettre du Sr D'ELBENE au duc de Nevers. « De Rome, ce 26e mars 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1353');">44 « Passeport de monseigneur [le duc CHARLES II] DE LORRAINE pour le passage de monseigneur [le duc de Nevers] par la Lorraine... Donné à Nancy, le vingt septiesme jour de mars mil cinq cent quatre vingt et quatorze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1386');">45 Lettre, avec chiffre, de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à Mr de Gondy,... De Veze, ce XXVIIe mars 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1420');">46 Lettre du Sr « HURAULT DE MAISSE,... à monseigneur le duc de Nivernois,... A Venise, ce IIIe avril 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1454');">47 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monseigneur de Revol,... De Langres, ce VIIIe avril 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1480');">48 Lettre de CHARLES DE GONTAUT, maréchal DE « BIRON,... à monseigneur le duc de Nevers,... Au camp de La Chapelle sur Aureuze, le XIIIIe avril 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1511');">49 « Ce qui s'est passé en la reduction de la ville de Troyes en l'obeyssance du roy... Faict à Troyes, le XIIIe avril 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1542');">50 Lettre d'ALBERT « DE GONDY [duc DE RETZ]... à monseigneur le duc de Nivernois,... A Paris, le XVIIe d'apvril 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1573');">51 Lettre de LOUIS « POTIER [DE GESVRES]... à monseigneur le duc de Nyvernois,... De Paris, le XVII avril 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1601');">52 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nivernoys,... De Villeroi, le XVIIIe de avril 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1635');">53 Lettre du duc DE NEVERS « à monsieur Dinteville,... De La Cassine, ce premier may 1594 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1663');">54 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce 2e may 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1697');">55 Lettre de FRANÇOIS DE BONNE « DES DIGUIERES » au duc de Nevers. « A Aix, le 18 jour de may 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1730');">56 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nevers,... A Desansan (Desenzano), ce XIII juing 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1758');">57 Lettre de LOUIS « POTIER [DE GESVRES]... à monseigneur le duc de Nyvernoys,... Ce XXVI juing 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1791');">58 Lettre du Sr « D'ELBENE » au duc de Nevers. « De Rome, ce Ve juillet 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1825');">59 Lettre du duc « CHARLES DE LORRAINE,... à monseigneur Du Cluseau,... D'Amiens, ce XXVIe jour de juillet 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1866');">60 Lettre de NICOLAS « BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Paris, ce XXIIIIe jour d'aoust 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1897');">61 « Double de la lettre escripte » par le duc DE NEVERS « à monsieur de Schomberg,... C'est de Lyon, le XXIIIe jour de septembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1923');">62 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nevers,... C'est de Lyon, le XXIXe jour de septembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1954');">63 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monseigneur de Bellievre,... De Paris, ce 20e octobre 1594 ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e1985');">64 Lettre de « L[ODOVICO] GONZAGA, duc DE NEVERS », au roi. « De Poissy, ce dernier octobre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2013');">65 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... C'est de Lyon, le IIe jour de novembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2044');">66 Lettre de « HENRY D'ORLEANS [duc DE LONGUEVILLE]... à monsieur le duc de Nyvernois,... Ce 6 novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2077');">67 Lettre de « GEOFFROY LOMELLINY,... à monseigneur le duc de Nivernois,... De Rome, ce 8me de 9bre de 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2116');">68 Lettre de « GEOFFROY LOMELLINY » au duc de Nevers. « De Rome, ce IX de novembre du 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2144');">69 Lettre du Sr « D'ELBENE,... à monseigneur le duc de Nevers,... De Rome, ce 9me novembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2183');">70 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... De Lyon, le Xe jour de novembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2214');">71 Nouvelles de Rome, sur les intentions du pape d'accorder l'absolution au roi, et sur les intrigues des Espagnols pour détourner ce projet. « Novembre 1594 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2247');">72 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monsieur de Bellievre,... De St Germain, ce 15e novembre 1594 ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2281');">73 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... C'est de Lyon, ce XVIIIe jour de novembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2312');">74 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... De Lyon, le XIXe jour de novembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2343');">75 Lettre de « CHARLES [DE] GONZAGUE CLEVES,... à monseigneur » le duc de Nevers. « De Sanlis, ce 25 octobre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2371');">76 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... C'est de Lyon, le XXVIIe jour de novembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2402');">77 Lettre de POMPONNE DE « BELLIEVRE » au duc de Nevers. « C'est de Lyon, le VIIe jour de Xbre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2436');">78 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monseigneur de Believre,... De Paris, ce 3 decembre 1594. Coppie ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2464');">79 Lettre de « L[ODOVICO] G[ONZAGA, duc DE NEVERS]... à monseigneur de Villeroy,... De Paris, ce 4e decembre 1594 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2495');">80 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nivernoys,... De Gien, ce premier de decembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2526');">81 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Recanati, le 9 decembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2554');">82 Lettre de « HENRY D'ORLEANS [duc DE LONGUEVILLE]... à monsieur le duc de Nyvernois,... De Peronne, ce XI de decembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2587');">83 Lettre de POMPONNE DE « BELLIEVRE,... à monseigneur le duc de Nivernois,... De Lyon, le XIe jour de decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2618');">84 Lettre du duc DE NEVERS au roi. « C'est de Lyon, le XIe jour de decembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2644');">85 Lettre de « PIERRE, cardinal DE GONDY,... à monseigneur le duc de Nivernoys,... A Recanati, 12 decembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2667');">86 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nivernois,... De Amiens, ce XIIIe de decembre 1594 au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2691');">87 Lettre d'«A[RNAUD, cardinal] D'OSSAT,... à monseigneur le duc de Nivernois,... De Rome, ce 26 mars 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2709');">88 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nevers,... D'Amiens, ce XIIIIe de decembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2723');">89 Lettre du Sr « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Nyvernois,... De Roye, le XXIIIe de decembre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050072_d0e2737');">90 Lettre du duc DE NEVERS au roi. « De Paris, ce 24 decembre 1594 ». Minute.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>
