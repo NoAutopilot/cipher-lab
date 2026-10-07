@@ -41,3 +41,20 @@ host table for every request; report request count per host. Commit by explicit 
 Per rule 10, report what was found and where it was not found; never new, unpublished, first, solved, cracked; do not classify
 novelty. Do not start other targets. Never print or commit credentials, never name the owner. Never call AskUserQuestion.
 A negative's done line carries target and control numbers side by side, or it is not a negative.
+
+## Job NA-MONL (Opus 5.5, cap $6 -- image fetch plus key transcription and a short two-pass read, breadth.md; box 70 min) -- added 7 Oct 2026 01:2x UTC
+Spec specs/fr4735-monluc-lansac-poland-1573.json, folder ciphers/fr4735-monluc-lansac-poland-1573 (handed over by LANE NEWT-C-account-4,
+ROOM 01:09 UTC 7 Oct). Gate (run 01:2x UTC by the lane orchestrator): `fr4735-monluc-lansac-poland-1573: partial (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0). The Lansac half is already read by Bourdeau
+(targets/lanssac): do not touch it.
+Test 1 (spec, known-answer): transcribe Tomokiyo's Monluc Cipher 1 table from sources/cryptiana/web/henryiii_Monluc1.png to
+key.tsv (his own caveat: "may not be accurate"; key source = published, credit Tomokiyo). Probe Gallica once
+(`curl -sS -o /dev/null -w "%{http_code}"` on the btv1b9060724s manifest; it was failing 6 Oct); if it answers, fetch canvas 172 at
+native resolution, crop with `tools/iiif_lines.py --ark btv1b9060724s --canvas 172 --region ... --out ... --debug` (MANDATORY, paste
+the command), and read the three cipher lines and the marginal decipherment in two blind passes (Sonnet subagents on crops only,
+one call per pass + 1 reconciliation unit). Apply key.tsv to the cipher lines; score agreement with the marginal gloss (letters
+or words, normalised to one convention first -- rule 3 PX-BRODEC paragraph). Matched control: the same key on the same lines'
+groups shuffled, 200 draws (the shuffle changes which group aligns with which gloss letter, so the control can differ -- rule 3
+orthogonality paragraph). Report both numbers; N ~165 signs, so a miss is "untestable at this N", not a negative. If Gallica is
+down after one retry, stop, write the key.tsv only, and log "blocked: Gallica" in the spec's cheap_test_done. Do not read c258-c270
+(that is test 2).
