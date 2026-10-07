@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """R8-COST (6 Oct 2026): score the two blind P4 passes per PREREG-R8-COST.md.
-usage: r8cost_score.py passA.tsv passB.tsv [--out r8cost_score.tsv]
+usage: r8cost_score.py passA.tsv passB.tsv [--out r8cost_score.tsv] [--key KEY.tsv]  (default key_n9cos2.tsv; --key added D4-COST2)
 Joins each line's overlapping segment crops (drops '|' cut signs; drops the longest suffix/prefix repeat of <= 6 tokens
 between neighbours), aligns A vs B per line with difflib on sign tokens, and reports err_2reader, C coverage
 (against key_n9cos2.tsv) and the decode-gate verdict; writes per-line agreed sequences with C values."""
@@ -8,9 +8,9 @@ import csv, difflib, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 PUNCT = {".", ",", ":", ";", "/", "|"}
 
-def key():
+def key(path=None):
     k = {}
-    for r in csv.DictReader(open(os.path.join(HERE, "key_n9cos2.tsv")), delimiter="\t"):
+    for r in csv.DictReader(open(path or os.path.join(HERE, "key_n9cos2.tsv")), delimiter="\t"):
         k[r["sign"]] = (r["value"], r["grade"])
     return k
 
@@ -54,7 +54,7 @@ def load(path):
 def main():
     a, la = load(sys.argv[1]); b, lb = load(sys.argv[2])
     out = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else None
-    K = key()
+    K = key(sys.argv[sys.argv.index("--key") + 1] if "--key" in sys.argv else None)
     tot = eq = cov = 0; rows = []; dis = 0; samelen = 0
     for ln in sorted(set(a) | set(b)):
         sa = [x[1] for x in a.get(ln, []) if x[0] == "SIGN"]
