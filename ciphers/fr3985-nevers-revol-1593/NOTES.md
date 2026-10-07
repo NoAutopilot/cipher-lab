@@ -206,3 +206,19 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 17 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Keyhunt 7 Oct 2026
+
+KH1-B (LANE KH-1), 17:47-17:59 UTC 7 Oct 2026 by date -u, for key no.60 (key.tsv, shared by fr3985/fr3986/fr3987).
+Searched: BnF archivesetmanuscrits finding aid Français 3974-3995 (ark cc504266, full inventory, 169 cipher items parsed),
+Tomokiyo henryiv2.htm/league.htm/nevers.htm on disk, the folders' own NOTES, QUEUE.md, sources/; Gallica fr.3988 (canvases
+287-305, 8 requests); print: Lettres missives de Henri IV iv (archive.org recueildeslettre04henr, djvu text, Dec 1593 entries)
+and Gomberville Memoires de Nevers (Gallica bpt6k64451005 ContentSearch).
+Unread no.60 siblings without a folder of their own: 5 -- fr.3985 f.115 (27 Aug 1593), fr.3986 f.146v and f.157 (AM-REV68
+census), fr.3989 f.3 (1 Jan 1594), and **fr.3988 f.143r-v** (Henri IV to Nevers, catalogued 22 Dec 1593, leaf headed "24 de Dec
+1593"; Gallica btv1b9060634t canvases 304-305): two full pages of symbol cipher in the court hand, no interlinear gloss at 1800 px
+although Tomokiyo's list says "Interlined deciphering"; not found in Lettres missives iv or by the Gomberville ContentSearch
+queries. It is in no folder and not in QUEUE.md. No test run (cap); next: six-line crop, two blind passes + reconcile against
+fr3986's sign_guide/atlas, decode, shuffled-key control, about USD 7. Note: the finding aid under-flags cipher (fr.3985 f.88
+carries cipher per Tomokiyo but is not marked "avec chiffre"), so the count is a lower bound. Every candidate:
+KEYHUNT-2026-10-07-KH1-B.tsv.
