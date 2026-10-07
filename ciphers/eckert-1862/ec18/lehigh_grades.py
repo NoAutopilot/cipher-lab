@@ -16,6 +16,8 @@ The rule (AUDIT.md "Carry-over R12A-ECKV"):
   value (mssEC 41 p.17 l.6, Hurlbut) is contradicted by every print-read use of 24 Oct 1864 - 24 May 1865, so H does
   not carry to an unread use in or after that window (rule 4: conflicting support -> M where no witness reads it).
 - clear: not a code token (a clear place/product word).
+D12-E62H (7 Oct 2026, solver): 9952's slot, lost in warofrebellion491unit's OCR, reads Canby in the second IA scan
+warofrebellion014901rootrich (OR 49.1 p.646); its lehigh_uses.tsv row is now aligned, so it grades C by the rule above; so does mssEC 19 9174 (OR 49.1 p.624, same scan).
 The key row itself (ciphers/eckert-1864/key.md p.17 l.6) stays H as the record of what the book says.
 """
 import csv, sys
@@ -33,9 +35,9 @@ def grade(r):
     if st.startswith("aligned") and sense.startswith('"can be"'):
         return "C", "can be", "print of this telegram reads 'can be'"
     if st.startswith("date/addressee matched"):
-        return "M", "", "dated, OR slot lost in OCR; book H (Hurlbut) contradicted by all 8 print-read uses"
+        return "M", "", "dated, OR slot lost in OCR; book H (Hurlbut) contradicted by all 10 print-read uses"
     if st == "not aligned":
-        return "M", "", "Sept 1865, not in OR ser. I; book H (Hurlbut) contradicted by all 8 print-read uses"
+        return "M", "", "Sept 1865, not in OR ser. I; book H (Hurlbut) contradicted by all 10 print-read uses"
     if st == "not a code use":
         return "clear", "", "clear word (Lehigh Iron)"
     raise SystemExit(f"unclassified status: {st!r} ({r['pointer']})")

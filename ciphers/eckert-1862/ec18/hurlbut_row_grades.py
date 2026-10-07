@@ -16,6 +16,10 @@ The rule (AUDIT.md "Carry-over R12A-ECKV2"), the same as lehigh_grades.py's:
 - M: no print reads the slot (not found in OR, or an OCR lacuna). Leghorn/Leopard: the book's H value (mssEC 41 p.17,
   Hurlbut) is contradicted by every print-read use, so H does not carry. Legend: two values read by print in overlapping
   months (Butler 11 Feb - 10 Nov 1864, Canby 27 May 1864 - 19 May 1865), so no witness matches an unread use (rule 4).
+D12-E62H (7 Oct 2026, solver): five mssEC 18 M rows gained a print of their own telegram -- Legend 9671, 9672 (OR 33),
+9945 and Leghorn 9945 (OR 49.1 p.580, read in the second IA scan warofrebellion014901rootrich), Legend 9786 (a printed
+decipherment outside OR: Papers of U. S. Grant vol. 11, "PUSG 11" in or_vol), and mssEC 19 Leopard 9174 (first use, OR 49.1
+p.624 in the same second scan) -- recorded in the uses tables; same rule.
 The key rows (ciphers/eckert-1864/key.md p.17 l.5-6) stay H as the record of what the book says.
 """
 import csv, re, sys
@@ -28,8 +32,8 @@ BOOK = "Maj Gen S. A. Hurlbut"
 SENSES = (("Canby", "Canby"), ("Butler", "Butler"), ('\'can be\'', "can be"), ("'circumstances'", "circumstances"),
           ("'these circumstances'", "circumstances"))
 M_WHY = {
-    "leghorn": "no print reads the slot; book H (Hurlbut) contradicted by all 15 print-read uses",
-    "leopard": "OR slot lost in OCR; book H (Hurlbut) contradicted by all 10 print-read uses",
+    "leghorn": "no print reads the slot; book H (Hurlbut) contradicted by all 16 print-read uses",
+    "leopard": "OR slot lost in OCR; book H (Hurlbut) contradicted by all 11 print-read uses",
     "legend": "no print reads the slot; Legend has two print-read values in overlapping months (Butler, Canby): M",
 }
 
@@ -41,7 +45,8 @@ def grade(word, r):
             if sense.startswith(pre):
                 if word == "leopard" and r["pointer"] == "9057":
                     return "gloss", mean, "ledger writes 'Gen Canby' in clear with 'leopard' inserted; print reads Canby"
-                return "C", mean, f"print of this telegram reads {mean!r} (OR {r['or_vol']} p.{r['or_page']})"
+                src = r["or_vol"] if not r["or_vol"][:1].isdigit() else f"OR {r['or_vol']} p.{r['or_page']}"
+                return "C", mean, f"print of this telegram reads {mean!r} ({src})"
         raise SystemExit(f"unclassified sense: {sense!r} ({word} {r['pointer']})")
     if st == "not aligned" or st.startswith("date/addressee matched"):
         return "M", "", M_WHY[word]

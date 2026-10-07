@@ -3,14 +3,14 @@ id	code_word	book_value	override	source
 10019.607	lehigh	Maj Gen S. A. Hurlbut H	can be C	lehigh_grades.tsv
 10019.607	leghorn	Maj Gen S. A. Hurlbut H	can be C	hurlbut_row_grades.tsv
 10020.609	lehigh	Maj Gen S. A. Hurlbut H	can be C	lehigh_grades.tsv
-9671.9	legend	Maj Gen S. A. Hurlbut H	? M	hurlbut_row_grades.tsv
-9672.12	legend	Maj Gen S. A. Hurlbut H	? M	hurlbut_row_grades.tsv
+9671.9	legend	Maj Gen S. A. Hurlbut H	Butler C	hurlbut_row_grades.tsv
+9672.12	legend	Maj Gen S. A. Hurlbut H	Butler C	hurlbut_row_grades.tsv
 9674.18	legend	Maj Gen S. A. Hurlbut H	Butler C	hurlbut_row_grades.tsv
 9718.75	legend	Maj Gen S. A. Hurlbut H	Butler C	hurlbut_row_grades.tsv
 9736.99	legend	Maj Gen S. A. Hurlbut H	Butler C	hurlbut_row_grades.tsv
 9746.114	legend	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv
 9754.126	leghorn	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv
-9785.169	legend	Maj Gen S. A. Hurlbut H	? M	hurlbut_row_grades.tsv
+9785.169	legend	Maj Gen S. A. Hurlbut H	Butler C	hurlbut_row_grades.tsv
 9788.172	legend	Maj Gen S. A. Hurlbut H	Butler C	hurlbut_row_grades.tsv
 9825.236	leghorn	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv
 9825.236	legend	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv
@@ -25,10 +25,10 @@ id	code_word	book_value	override	source
 9937.479	leghorn	Maj Gen S. A. Hurlbut H	can be C	hurlbut_row_grades.tsv
 9937.479	legend	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv
 9937.479	leopard	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv
-9945.500	leghorn	Maj Gen S. A. Hurlbut H	? M	hurlbut_row_grades.tsv
-9945.500	legend	Maj Gen S. A. Hurlbut H	? M	hurlbut_row_grades.tsv
+9945.500	leghorn	Maj Gen S. A. Hurlbut H	can be C	hurlbut_row_grades.tsv
+9945.500	legend	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv
 9947.505	lehigh	Maj Gen S. A. Hurlbut H	Canby C	lehigh_grades.tsv
-9952.516	lehigh	Maj Gen S. A. Hurlbut H	? M	lehigh_grades.tsv
+9952.516	lehigh	Maj Gen S. A. Hurlbut H	Canby C	lehigh_grades.tsv
 9952.516	leghorn	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv
 9955.521	lehigh	Maj Gen S. A. Hurlbut H	Canby C	lehigh_grades.tsv
 9955.521	leopard	Maj Gen S. A. Hurlbut H	Canby C	hurlbut_row_grades.tsv

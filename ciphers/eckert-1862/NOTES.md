@@ -2073,3 +2073,65 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; the `?p` image check ran (AM-ECK62Q: 0 markers dropped, 0 moved); cheapest next: the 7 M-graded Hurlbut-row tokens against another witness, ~$4; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
+
+## D12-E62H (7 Oct 2026, account 2 worker for LANE DEFAULT-account-2-20261007-1210): the 7 M-graded Hurlbut-row tokens against another witness
+
+Step check: named by AM-ECK62Q's Verdict, not run before. Intake gate: `eckert-1862: partial (line 3) -- edition/page or
+full-text-search citation found within 6 lines`. Data re-fetched to scratch, not committed: vol18.json (sha256 cb162574...,
+matches pilot1864/manifest.tsv); OR 32.1-49.2 48 `_djvu.txt` (all 48 sha256 match or_volumes.tsv); DIR62 8 `_djvu.txt`.
+- The seven (ec18/overrides.tsv, D07-ECK62): 9671.9 legend, 9672.12 legend, 9785.169 legend, 9877.348 leghorn, 9945.500 leghorn,
+  9945.500 legend, 9952.516 lehigh. Witness sought for each: the print of the same telegram in a second scan or edition.
+- 9671 (3 Feb 1864 4.30 PM, Caldwell 2, "For Nestor Please Pine directly with Legend Bunyan in regard to his proposed suppers"):
+  OR 33 p.502, Halleck to Sedgwick, "communicate directly with General B. F. Butler, Fort Monroe, in regard to his proposed
+  movements". Legend = (General B. F.) Butler, C. The R12A-ECKLEG script had pointed to a different telegram (32.2 p.106).
+- 9672 (5 Feb 1864 11.30 AM, "Legend again asks for a demon = stra = tion by your Peru"): OR 33 p.514, Halleck to Sedgwick,
+  "General Butler again asks for a demonstration by your army". Butler, C (R12A-ECKLEG's script hit 33 p.513 was this telegram,
+  not checked by eye then).
+- 9786 (= entry 9785.169, 11 Jul 1864, Beckwith, "For Palermo Raw line", "If the Shark could spare Legend for the supreme
+  Princeton all danger would certainly cease"): not in OR 37.2 or 40.3 (both IA scans grepped). Printed as deciphered in The
+  Papers of Ulysses S. Grant vol. 11 (ed. J. Y. Simon, SIU Press), Dana to Grant's headquarters, "If the General could spare
+  Butler for the Chief Supreme Command all danger danger would certainly cease - Especially as Hunter is at hand"; read as a
+  Google Books API snippet (volume r0d5C4hAav8C, PARTIAL view), page number not read. Butler, C (print of this telegram, outside OR).
+- 9945 (25 Jan 1865 6 PM, "more panama spaffords wilby sent to you peru Legend Leghorn supplied"): absent from the OCR of
+  warofrebellion491unit (why R12A-ECKLEG's phrase search missed it); the second IA scan warofrebellion014901rootrich prints it,
+  OR 49.1 p.580, Halleck to Thomas, Eastport, "More cavalry horses will be sent to you as soon as General Canby can be
+  supplied". Legend = Canby C, Leghorn = "can be" C.
+- 9952 (4 Feb 1865, "Waldo ---- Lehigh has many dis mounted spit"): the slot lost in warofrebellion491unit's margin reads in
+  warofrebellion014901rootrich, OR 49.1 p.646: "say 4,000 or 5,000. Canby has many dismounted men". Lehigh = Canby, C.
+- 9877 (27 Oct 1864, Sampson, Baltimore, furloughs to vote, "provided the same leghorn done without prejudice to the public
+  service"): not found in OR 43.2 (warofrebellion432unit and warofrebellion014302rootrich; the nearest is Middle Department
+  General Orders No. 107 on furloughs to vote, a different document), nor by two Google Books API phrase queries. Stays M (the
+  sense "can be" is grade I, not used).
+- Beyond the seven, same scan, same rule (mssEC 19, not in ec18's outputs): 9174 lehigh and the first 9174 leopard (1 Feb 1865,
+  Halleck to Egbert Allen, Louisville, OR 49.1 p.624) read "General Canby" in warofrebellion014901rootrich: C.
+- Changes: witnesses written into ec18/{legend,leghorn,lehigh,leopard}_uses.tsv (status "aligned (D12-E62H ...)"); the grade
+  scripts unchanged in rule, with a non-OR source label ("PUSG 11") and the print-read counts in their M reasons updated;
+  hurlbut_row_grades.tsv now leghorn C 16 M 1, legend C 27 (Butler 16, Canby 11) M 5, leopard C 10 gloss 1; lehigh_grades.tsv
+  C 10 M 2 clear 1. ec18.py `--write` legacy and `--split2`: overrides.tsv 6 rows M -> C (33 C, 1 M); entries.tsv H 12665,
+  C 64 -> 70, M 7 -> 1 (s2: H 12642, C 70, M 1). Counted readings unchanged (H 367 C 4): none of the seven sits in a fully keyed entry.
+- Legend conflict (HYPOTHESES.md, appended): Butler 13 -> 16, Canby 10 -> 11, unread 9 -> 5; not resolved.
+- Rule 7: ec18.py --possessive --guard DIR62 --check exit 0 legacy and --split2 (and exit 0 on the committed state before the
+  change); hurlbut_row_grades.py and lehigh_grades.py --check current; --split-report --check exit 0; decode.py --check exit 0.
+  Stale before this job and left untouched (flagged in ROOM): `--book 2 --check` (key-no2.md changed 11:54 UTC today by
+  ECK64-NO2: readings_b2 I 8 -> 12), and `ec18_align.py --check` (stale with this job's changes stashed too).
+- Requests: archive.org 70 (48 OR + 8 DIR62 + 3 error pages for wrong DIR62 ids + 9 extra scans/volumes + 2 be-api fts),
+  hdl.huntington.org 1, googleapis.com 8; >= 1.5 s apart except the DIR62 re-fetch, which overlapped the OR fetch (two streams
+  to archive.org for about one minute). 0 subagents, 0 vision. Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, D12-E62H, 7 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); received ledgers mssEC 01-14 all searched for residue twins (GAPS171, D1-ECK62L): 0 code-bearing twins; mssEC 18 cascade split2 (ec18/s2/): 729 entries, align_free AGREE 0.427 vs control 0.088; 17 neither-book entries: 0 wrong telegram, 5 right, 12 undecided
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L, 0 twins); next: the image of the residue pages against the volunteer text for the M-graded tokens (transcription slips the decode reads as code), ~$4
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; Nutmeg = James River gains a 5 Jul 1863 witness (C, D1-ECK62L) but no second 1862 telegram; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); received copies in mssEC 12-13: 0 (D1-ECK62W); every Lehigh in mssEC 18-19 aligned 6 Oct 2026 (D1-ECK62S: 13 uses, 8 print-read, all Canby or 'can be', 0 Hurlbut; ec18/lehigh_uses.tsv); Lehigh graded by a verifier (R12A-ECKV, AUDIT.md 'Carry-over R12A-ECKV', ec18/lehigh_grades.tsv: C 8, M 4, clear 1; 9947.505 = Canby C, 10020.609 = can be C, superseding the committed readings' Hurlbut brackets until ec18.py's next full regeneration); Leghorn/Legend/Leopard swept 6 Oct 2026 (R12A-ECKLEG: 48 print-read, 0 Hurlbut) and graded by a verifier (R12A-ECKV2, AUDIT.md 'Carry-over R12A-ECKV2', ec18/hurlbut_row_grades.tsv: C 47, gloss 1, M 12; Legend's Butler/Canby conflict logged with witnesses in HYPOTHESES.md, unresolved); folded into ec18.py as a per-token override table 7 Oct 2026 (D07-ECK62: 34 mssEC 18 tokens, 27 H->C, 7 H->M; counted readings 9947.505 and 10020.609 H->C; ec18/overrides.tsv); the 7 M-graded mssEC 18 tokens checked against a second witness 7 Oct 2026 (D12-E62H: 6 to C from the print of their own telegram -- OR 33 pp.502/514, OR 49.1 pp.580/646 in the second IA scan warofrebellion014901rootrich, and Papers of U. S. Grant vol. 11 for 9786 -- 1 left M, 9877.348 leghorn 27 Oct 1864 to Baltimore, not in OR 43.2 either scan; mssEC 19 9174 lehigh and leopard also to C from OR 49.1 p.624; overrides.tsv 33 C, 1 M); next: 9877 against the received copy or a Middle Department print (Lew Wallace papers), not-attempted, ~$2
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; the 13 code words date 30 Dec 1864 - 13 Jul 1865, Cipher No. 3/No. 4 period; the Huntington holds only No. 5 (R8-ECK62); the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; 100 under the legacy split, 137 '?' entries under split2 print_q; the 25 dated `?p` entries checked against the image for dropped marker words 7 Oct 2026 (AM-ECK62Q, PREREG-ECK62-QP: 0 of 25 carry a marker, control 25/25 marker tokens found, 0 cross-set; 0 moved; 4 are written in clear, no book applies; ec18/s2/image_qp.tsv); header 'No N' numbers are serials after spring 1864, not book markers (No 2 on 6 book-1 entries; No 3-7 exist); next: the 112 undated-match '?' entries by a different instrument (bigram support under both keys already tried, RUN6-ECK62), or leave '?' as the residue no print or image decides, ~$3
+
+## Escalation (D12-E62H, 7 Oct 2026)
+- [x] siblings: second IA scan of OR 49.1 and Papers of U. S. Grant vol. 11 for the Hurlbut-row M tokens (D12-E62H, 6 of 7 read); received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171) and mssEC 04-14 6 Oct 2026 (D1-ECK62L, 0 twins, Nutmeg 1863 witness); mssEC 12-13 for the Lehigh 1865 copies (D1-ECK62W, 0); every Lehigh in sent ledgers mssEC 18-19 (D1-ECK62S, 8 print-read, all Canby or 'can be'); every Leghorn/Legend/Leopard in mssEC 18-19 (R12A-ECKLEG, 48 print-read, 0 Hurlbut); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram and conflict-pair tests done on legacy (R7B-ECK62, R7C-ECK62C) and split2 (R10-ECK62T: 0 wrong, 5 right, 12 undecided; primary untested at N 60); splitter fixed and adopted (R9-ECK62, R10-ECK62S, R10-ECK62T)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; Hurlbut-row M tokens 7 -> 1 (D12-E62H); cheapest next: the 112 undated-match '?' entries by a different instrument, or leave '?' as the residue no print or image decides, ~$3; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
