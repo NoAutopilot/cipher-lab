@@ -161,3 +161,15 @@ the 1527 letter: it does not tie him to Pietro Antonio either way. Whether the 1
 Not found: any Taurello in vol. XLV (previous note) or XLVI; Pastor, Gayangos CSP Spain vol. 3, Boletin RAH serial printing still unread. Verdict unchanged: blocked.
 Requests: archive.org advancedsearch 2, download 3 full djvu (05, 22, 01) + 1 (52) + 43 range-limited heads (2 s apart), be-api 0. Total about 49 archive.org requests. No vision, no subagents.
 Next (one step, ~$0.3): search vol. XLII's other Taurello/Torello mentions (index p. 571 and neighbouring pages) and the Sanuto indexes of vols 43-44 for the same envoy, to see whether a forename ever appears.
+
+## NZ-TAUR (7 Oct 2026, 09:48-09:5x UTC; for LANE LANE-NZ-0914)
+
+Job: R8-TAUR's named next step -- search Sanuto vols XLII-XLIV for the 1526 envoy "Taurello" and any forename. Search result only; no novelty class.
+Full djvu OCR (one download each, 2 s apart) of `idiariidimarino05sanugoog` (TOMO XLII), `01` and `41` (both TOMO XLIII, two scans), `33` (TOMO XLIV); grep for taurel/torel/taur[eo]/tauri/tavrel and "Pietr? Antonio Tau".
+- Vol. XLII: exactly two Taurello hits, both already read by R8-TAUR: text l.41313 (Granada 5 July 1526, "el zonzer di Herera li el di Taurello vien in Italia") and index l.63130 ("Taurello (Torelli) messo dell'Imperatore al papa, 571"). Index p. 571 is that one passage; no second page, no forename.
+- Vols XLIII (both scans) and XLIV: 0 Taurello/Torello hits. Only noise: Tauris/Tauri (Persia, Tabriz), "Tauro" (the mountain), Vittorello (a Spanish captain at Lecco).
+- Control: same djvu texts read the vocabulary (Tauris, Tauro, Vittorello hits; XLII's own Taurello reads), so the grep covers the right text. Limit: Google OCR, one scan per volume; a miss is a result for these scans only.
+Result: no forename for the 1526 imperial envoy in Sanuto XLII-XLIV; he is not tied to Pietr'Antonio Taurello (grade M lead at most). The Sanuto route is now exhausted for the 1526-27 volumes read (XLII, XLIII, XLIV, XLV, XLVI).
+Requests: archive.org 4 downloads. No vision, no subagents.
+Remaining gaps (not read): Pastor Anhang, Gayangos CSP Spain vol. 3, Boletin RAH serial of Robert, ASMo piece-number check.
+Verdict: blocked (standing; no new material from Sanuto; the next step needs Pastor/Gayangos or the ASMo piece, outside what a script can reach).
