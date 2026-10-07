@@ -368,3 +368,34 @@ checked sign by sign. Those pairs are known plaintext (grade C) for Amidani's 14
 slips, align with `tools/interlinear_align.py`, then test the resulting key on f.70 (Bourdeau's transcription) with
 a shuffled-key control. About USD 5. If the key differs from f.70's, it is still a key for the 1447 Amidani
 letters. The other 42 italien 1584/1585 cipher entries were not screened for clear copies.
+
+## Keyhunt screen of italien 1584/1585 'In cifre' items (7 Oct 2026, KH2-E2 for LANE KH-2)
+
+Low-resolution screen only (top 30% of each opening at 500 px, plus one 1000 px cipher band from 8 letters). Nothing
+was transcribed or decoded, since the held key is not a reading key (see above). Per-item rows are in
+`keyhunt/2026-10-07-KH2E2.tsv`. Folios come from the folio numbers visible in the strips. Where none was legible, they
+are inferred from canvas order. Italien 1584 anchors: c21=f.20, c41=f.44, c61=f.63, c101=f.106, c141=f.148,
+c221=f.226, c321=f.329, c341=f.347, c361=f.368, c401=f.410. Italien 1585 (ark:/12148/btv1b52525947w, 507 single-page
+canvases) anchors: c31=f.12, c60=f.31, c151=f.78.
+
+- **Most of the cipher letters in these volumes have a later clear copy beside them.** In italien 1584, 37 of the 42
+  Mazzatinti items screened have a later-hand clear copy on a neighbouring folio, headed with a French date such as
+  "1447 10 janvier". Some copies are marked "Original non retrouvé". Cipher was seen on 29 of the 42; the rest could
+  not be isolated in the strips. Only 4 items show cipher with no copy in the fetched window: f.13 (Pusterla, 21 Jan),
+  f.15 (Duke, 23 Jan), f.143 (Marcolino, 4 May) and f.259 (Guarna, 22 Aug). The window may simply have missed their
+  copies. In italien 1585, 6 of the 7 items carry cipher and 4 have a clear copy. The two without one in the window
+  are f.14-15 and f.71, and f.71's preceding canvases were not fetched.
+- **Alphabets.** At low resolution, Pusterla, Marcolino, the Duke's letters, Amidani and Guarna (1447) all use the
+  same letter-like sign family as Bourdeau's f.68/f.70 inventory (barred b, 8, cross, phi, barred yogh, z). Two
+  differ: Lancillotto Figino's f.402-403 (3 Dec 1447) is numeral-heavy (9, 3, 2, ff, +), and Nicodemo da Pontremoli's
+  1448-49 letters (italien 1585 f.30, f.71) use triangles, an inverted A, %, and square-bracket signs. Whether the
+  1447 family is one key or several was not tested sign by sign.
+- **Consequence.** Italien 1584 is a large pool of known-plaintext pairs, about 25 cipher/clear-copy pairs in the
+  f.68/f.70 sign family, not only the three Amidani slips KH2-E found. The Amidani known-plaintext key rebuild stays
+  the named next step (~USD 5, not started): crop ff.365-371 and f.147/148, transcribe, align with
+  `tools/interlinear_align.py`, then test on f.70 with a shuffled-key control. If Amidani's key does not read f.70,
+  the Duke/Pusterla/Guarna pairs (f.29/30, f.35/36, f.41/42, f.237/238, f.357/358) are the next pools for the same
+  method. A clear copy is a later hand's decipherment, so any reading built on it is grade C at best.
+
+Requests: gallica.bnf.fr about 245 (2 manifests, 22 anchor crops, 177 italien 1584 strips, 6+34 italien 1585 crops,
+8 cipher bands; 1 HTTP 500 retried once).

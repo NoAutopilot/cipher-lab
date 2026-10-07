@@ -246,3 +246,12 @@ copy, already `rah-xiquena-1868`). Result: 0 unread siblings at catalogue level.
 records (14490-14494, 14496-14497, 14499) were not opened. A cipher passage untitled in the catalogue would be
 missed, so an image eye-check of those eight is the remaining cheap step (about USD 1). Rows are in
 `keyhunt/2026-10-07-KH2E.tsv`.
+
+## Keyhunt neighbour screen (7 Oct 2026, KH2-E2 for LANE KH-2)
+
+The 8 González Bravo / Isabel II neighbour records were each screened on their first image only: OAI 14490, 14491,
+14492, 14493, 14494, 14496, 14497 and 14499 (Leg. XIX nos 112-116 and 118-120, Jun-Dec 1869). The images were found
+through the OAI didl and fetched with `tools/browser_fetch.js --binary`, all 8 on the first try. Every first image is
+plain Spanish handwriting, with no cipher. The records have 2-14 images each (38 in all), and the remaining 30 were
+not opened, so this negative holds only for the pages screened. Rows: `keyhunt/2026-10-07-KH2E2.tsv`. Unread
+siblings for this key: 0 found. Requests: bibliotecadigital.rah.es 9 OAI + 8 image fetches.
