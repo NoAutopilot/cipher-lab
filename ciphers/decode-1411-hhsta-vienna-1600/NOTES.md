@@ -714,17 +714,67 @@ fair copy (or decipherment working) is not established. Post-hoc words under T21
 readings): the p.2 runs "konig", "eicsen" (reichsen?), "dani | maris b(altic)" recur on p5L_L24-L31; p5R_L09 "IeIE", p5R_L13 "uPBErn".
 
 Token grades (rule 4, `d1411p5/grades.py --check` exits 0, `d1411p5/grades.tsv`): under the preferred T21r_h12 per the prereg grade rule,
-**S 114, M 152** of 266 p.5 numbers (S = both passes agree with no flag and the residue letter is gloss-backed or residue 21; residue 12 = h
+**S 114, M 152** (withdrawn by AM-D1411V below: S 0, M 266) of 266 p.5 numbers (S = both passes agree with no flag and the residue letter is gloss-backed or residue 21; residue 12 = h
 stays M, not gloss-backed); H 0, C 0, I 0. **Caveat for the verifier:** the S grades rest on a thin PASS (+0.015) driven mostly by a copy of
 already-scored p.2 text; the independent right page alone does not reach the gloss. No reading-ready flag; earlier pages' grades unchanged
 (rule 7: the earlier numbers.tsv/decodes are untouched). Vision: 2 Sonnet subagent calls (84 crops each) + 1 reconciliation unit (5 crop
 sheets) + worker placement views (overview, 4 ruler views, 3 contact sheets). Requests: de-crypt.org about 3 (1 login, record page, 1 image).
 Status unchanged: open.
 
+## AM-D1411V verifier: AM-D1411P5's p.5 PASS and 114 S grades (7 Oct 2026, account 2)
+
+Separate session from AM-D1411P5 and every earlier decode-1411 solver (brief AM-D1411V, LANE LANE-AM-0914). A rule-3/rule-4 check,
+not a novelty audit (no reading is claimed; no AUDIT.md). No new page read, nothing re-transcribed.
+
+**(1) Order and deviations.** PREREG-D1411P5.md and score_p5.py: 1fbc0c3fc, 10:20:24 UTC; crops/lines.tsv: ebafac499, 10:25:53;
+passes, reconciliation, numbers, score, grades: 570ccd37e, 10:33:44. Neither the PREREG nor score_p5.py was touched after 1fbc0c3fc.
+The PREREG predates the scored run. Deviations: (a) **material premise**: the PREREG tests "unread p.5 numerals"; 130 of the 266
+(merged) are a second copy of p.2's cipher text (d1411v alignment: five spans p5L_L01_a-L31_a, 120 numbers in difflib blocks >= 4),
+and that p.2 text is the material T21r was chosen on -- GAPS146's p2L lines (contaminated for the r question, DEF1-1411) and
+def1411's p2Lb/p2R numbers, on which DEF1-1411's letter test fixed residue 21 = r and where "reicsen" first suggested h at 12/22.
+On the copy the test is in-sample, not a test on unseen numerals; nobody could know this before the passes, so it is the material's
+fault, not the worker's, but it voids the premise. (b) two post-score crop-split merges (16, 36), reported by the worker; they move
+T21r from -0.001 to +0.004 against the gloss; h12 passes either way. (c) the crop step used the committed cut_halves.py, not
+iiif_lines.py half-line crops as registered (iiif_lines for placement only; first cut discarded before any pass); reported,
+immaterial to the statistic. (d) the passes' "intext?" flag on p5L_L15 "18 60" overruled (read as cipher, M); reported. (e) the
+PREREG's pooled-set sentence says "p.3 + p.5 (d4p3 + d1411p4)"; the script pools p.3+p.4+p.5 -- wording only, descriptive, decides
+nothing. (f) score_p5.py's fail string still says "p.4" -- cosmetic.
+
+**(2) Re-run.** `score_p5.py --check`, `make_numbers.py --check`, `grades.py --check`: all exit 0. `d1411v/rescore_v.py` (statistic,
+controls and PASS rule copied from the PREREG unchanged; 200 order shuffles seed 1411, 23 shifted rules, gloss cover 0.6129) reproduces
+both registered runs exactly (merged N=266: T21r 0.6165, h12 0.6278; unmerged N=268: T21r 0.6119, h12 0.6231). `--check` exits 0.
+
+**(3) Re-score on the independent material and without the merges** (`d1411v/rescore_v.json`; "indep" = p.5 minus the p.2-copy spans
+= 30 left-page numbers + p5R/f.186):
+
+| set | N (merged / unmerged) | T21r cover | T21r_h12 cover | shuffled p99 (T21r / h12) | shifted max | minus gloss (h12) | verdict (all three tables) |
+|---|---|---|---|---|---|---|---|
+| all p.5, merged (registered after merges) | 266 | 0.617 | 0.628 | 0.511 / 0.485 | 0.444 | +0.015 | T21r, h12 PASS |
+| all p.5, unmerged (registered first run) | 268 | 0.612 | 0.623 | 0.493 / 0.466 | 0.440 | +0.010 | h12 PASS; T21r below gloss |
+| **indep, merged** | 136 | 0.588 | 0.588 | 0.537 / 0.529 | 0.493 | **-0.025** | controls beaten, below gloss |
+| **indep, unmerged** | 137 | 0.584 | 0.584 | 0.555 / 0.526 | 0.489 | **-0.029** | controls beaten, below gloss |
+| p5R only, merged / unmerged | 106 / 107 | 0.576 / 0.570 | same | 0.547 / 0.551 (T21r) | 0.481 / 0.477 | -0.037 / -0.043 | controls beaten, below gloss (unmerged T21r: 2/200 shuffles >= real) |
+| copy span, merged / unmerged | 130 / 131 | 0.615 / 0.611 | 0.639 / 0.634 | 0.515 / 0.527 (T21r) | 0.392 / 0.389 | +0.026 / +0.021 | h12 PASS (in-sample) |
+
+The PASS lives entirely on the copy of the material T21r was built on. On the independent numerals every table beats its order and
+shift controls but stays 0.025-0.029 below the leaf's own gloss -- the same result as p.3 and p.4 (0.03-0.07 below). h12 and T21r
+give identical coverage on the independent set: the h12 preference also comes only from the copy (residue 12 letter test was run
+on all p.5; not re-run here, but h at 12 has no independent coverage support on p.5). The Addendum A gloss agreement does stand on
+independent material: all 26 pass-agreed gloss pairs sit outside the copy spans, T21r 15/26 vs value-shuffled p99 7 (0 of 10,000).
+
+**(4) Grade verdict (PREREG "Grades": "No grade moves unless PASS(T21r) (or a preferred variant)").** The registered PASS is void as a
+test of unseen numerals (deviation a); on the independent part, scored under the PREREG's own rule, no table PASSes. **The 114 S
+grades drop to M: p.5 is S 0, M 266** (of the 114: 64 on the p.2-copy spans, 50 on independent numerals; H 0, C 0, I 0). They do not
+stand even on the independent part, because that part has no PASS of its own. Unchanged: the p.5 letter tests are descriptive at
+best (12 = h favoured only with the copy included); the gloss agreement 15/26 stands; the copy finding stands and is the useful
+result of the step (two transcriptions of one text, 82/95 equal, a reader-error measure). `d1411p5/grades.tsv` is left as the
+worker's registered output (grades.py --check exits 0) and is superseded by this section; status open.
+Requests: none (no network). Cost: verifier session only.
+
 ## Remaining gaps (AM-D1411P5, 7 Oct 2026)
-Read so far: 114 of about 1,196 cipher numbers at S (p.5, under T21r_h12, thin PASS; verifier pending); p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; p.5 gloss pairs M 26; other numbers M
+Read so far: 0 cipher numbers at S (AM-D1411V withdrew AM-D1411P5's 114 p.5 S grades: the PASS rests on a copy of the p.2 text T21r was built on; independent p.5 numerals beat controls but stay 0.025 below the gloss); p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; p.5 gloss pairs M 26; other numbers M
 - p.5 left page = second copy of p.2 (13 of 95 aligned numbers differ) - blocker: not-attempted; found after the score in this step, out of its brief; next: settle the 13 differences (and the p.2/p.5 GAPS146-block differences) by a side-by-side per-number image comparison of the two copies, then re-score p.2+p.5 on the settled text, ~$3
-- unglossed numerals p.3, p.4, p.5 right page (f.186) - blocker: not-attempted; independent pages stay 0.03-0.07 below the leaf's own gloss in coverage (p5R alone 0.576); next: after the copy comparison, cut and read p.6 numerals (IMG_R1411_I6600_P6.png) in two blind passes with T21r_h12 frozen as primary, checking first whether p.6 is itself a copy, ~$6
+- unglossed numerals p.3, p.4, p.5 right page (f.186) - blocker: not-attempted; independent pages stay 0.025-0.07 below the leaf's own gloss in coverage (p.5 independent 0.588, AM-D1411V); next: after the copy comparison, cut and read p.6 numerals (IMG_R1411_I6600_P6.png) in two blind passes with T21r primary and h12/h22 beside (h12 has no independent support on p.5), and a pre-registered exclusion of any numbers aligning to already-read pages (d1411v/rescore_v.py copy_mask) before scoring, ~$6
 - p.4 4/5 residual (25 of 83 tiles unsettled, la2/applied.tsv) - blocker: waiting-on ASKS row 120 (a person's read; the 25 tiles can be added to that read or to a sign-sorter focus list); machine re-reads retired for this question
 - gloss letter identities (z/r at 21, n/u, residue 14) - blocker: waiting-on ASKS row 120 (a person's read of the gloss); p.5 adds 26 pairs; residue 12 = h now favoured by p.5's letter test
 - pages 7-12 numerals - blocker: not-attempted; full-size images re-fetchable with one DECODE login; next: after p.6, the same two-pass step per page, ~$6 each
@@ -734,7 +784,7 @@ Read so far: 114 of about 1,196 cipher numbers at S (p.5, under T21r_h12, thin P
 - [x] clear-pages: clear words around the cipher read in GAPS137; context words used only as post-hoc observation
 - [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
 - [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a verifier accepts a PASS
-- [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r (DEF1-1411, D4-1411P3, R12A-D1411P4), residue 12 = h favoured on p.5 and T21r_h12 PASS on p.5 (AM-D1411P5, thin, copy-driven)
+- [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r (DEF1-1411, D4-1411P3, R12A-D1411P4), residue 12 = h favoured on p.5 and T21r_h12 PASS on p.5 (AM-D1411P5) voided by AM-D1411V: in-sample copy of p.2; independent p.5 below gloss
 - [ ] image-check: settle the 13 p.2/p.5 copy differences by side-by-side per-number comparison of the two copies' images
 - [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause; also retired for the p.4 4/5 look-alike: machine re-read by a Sonnet shape reader (line crops R12A-D1411LA, then per-number tiles D07-D1411), a person's read is the remaining route
-Verdict: keep going: 3 internal gaps; cheapest next: settle the 13 p.2/p.5 copy differences by side-by-side image comparison and re-score, ~$3; a verifier should review the AM-D1411P5 PASS (thin, copy-driven) before any S grade is used outward
+Verdict: keep going: 3 internal gaps; cheapest next: settle the 13 p.2/p.5 copy differences by side-by-side image comparison and re-score, ~$3; AM-D1411V withdrew the p.5 S grades (S 0); re-score p.2+p.5 on the settled copy text is descriptive only (in-sample for T21r), the gate for any S grade is a PASS on independent numerals (p.6 onward)
