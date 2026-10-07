@@ -1305,3 +1305,76 @@ date/correspondent sweep, no sequel window, no whole-collection Huntington searc
 (18 June) and no copy of the query. Corrections: status.json N2-T row (grade N4, `audit_status` 'two audits', the sequel
 in `depth_check`). SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-N2T and its prompt quote no class or count, unchanged. PROGRESS.tsv
 has no N2-T row.
+## AUDIT 2 (second adversarial, D12-V2M)
+
+Verifier D12-V2M (account 2, for LANE DEFAULT-account-2-20261007-1210), 7 Oct 2026, 12:18-12:29 UTC by `date -u`. Scope: N2-M
+only (mssEC 19 p.90, Kimber, Washington to Canby at Vicksburg, 11 June 1864, 1 PM). A separate session from the solver
+(AM-ECK64K) and the first auditor (AM-ECKV). Outreach gate 2: try to find the item in print by every family the first audit
+did not cover. Nothing decoded.
+
+### 1. Gaps in the first audit's log (read before searching)
+AM-ECKV searched OR I/34 pt 4 by phrase and by every 11 June date line, OR III/4 by phrase, Google Books (4 queries) and the
+Huntington item record for p.90. Not covered: The Papers of Ulysses S. Grant vol. 11; the Meigs letter books (named as the N4
+blocker); Canby's papers; the OR by correspondent over 8-14 June; the Huntington's full text across the whole collection (a second
+copy of the same telegram in another ledger); IA full text across all items; Zooniverse Talk for this subject; the open indexes
+(OpenAlex, Semantic Scholar, CORE, CrossRef); JSTOR rows.
+
+### 2. Re-derivation and image (rule 7)
+- `python3 decode_no2.py --check`: "reading-no2.md is current", exit 0.
+- Key rows re-read in key-no2.md for all 12 code-word types (Hannah, Hawkins, Farmer, Tulip, Talbot, Holly, Warner, Stanhope,
+  Wiley, Burglar, Famish, Mastiff): every value as in reading-no2.md.
+- Image: p.90 (pointer 8982) fetched once at 2400 px to scratch; crop step `python3 tools/iiif_lines.py --image p8982.jpg --out
+  crops --prefix V2M --region 180,1140,2040,640 --centres 60,160,260,360,460,560 --lines-per-crop 2` (3 crops), read by this
+  session: "Kimber Vicksburg / Washn June 11 1864 / Hannah June Hawkins to Farmer tulip / I can not find the gauge / talbot Holly
+  & Sleeve port warner / what is it Stanhope wiley Burglar / use Farmer Famish Mastiff for Can". Agrees word for word with
+  ciphertext-no2.txt.
+- New corroboration of the one caveat (Burglar's key row carries the book's own "[?]"): the Huntington full-text search (below)
+  found the cipher copy of Meigs's 17 June 1864 1.30 p.m. telegram on mssEC 19 p.94 (pointer 8986, Kimber, volunteer text): it is
+  addressed "For Mastiff" (one of the three Canby words N2-M's service line names) and signed "Windham Meigs Buggy" (the line then runs on into an operator's note, "We have Gondola hurrah ..."). Windham =
+  Signed and Buggy = Quarter[?] Master General (key-no2.md, Buggy is the right-hand word of the same book row p.12 l.21 as
+  Burglar); OR I/34 pt 4 p.425 prints that telegram's signature "M. C. MEIGS, Quartermaster-General". So the row's value is fixed
+  by a print through its twin word, not only by context. Read from the volunteer text of p.94, not image-checked; corroboration,
+  no grade changed (all 13 tokens were already H).
+
+### 3. Search log (7 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| OR ser. I vol. 34 pt 4 (IA warofrebellion344unit djvu, whitespace-normalised) by date and correspondent | every date line 8-14 June 1864 (356 June-date lines scanned) within 200/300 chars of Meigs/Quartermaster-General and Canby/Vicksburg/Shreveport/railroad; every "gauge" | the window prints Meigs to Allen 11 June (p.305, saw-mills for Canby) and Hardie to Canby, Washington 13 June 8 p.m. (p.331-332: Canby's 4 June telegram to Meigs on the Vicksburg-Monroe railroad referred to Grant); Canby to the QMG, 4 June, printed. No 11 June QMG-to-Canby gauge telegram. The gauge sequence printed: Meigs 17 June (pp.424-425, "telegraphed you twice"), Canby 24 June (two, New Orleans and Vicksburg), Meigs's reply |
+| OR ser. III vol. 4 (IA warofrebellionco0004genf) by date | the 25 date lines 8-14 June 1864 against Meigs/QMG + Canby/railroad | no hit |
+| IA full text, all items (be-api fts) | "find the gauge of the Vicksburg" (0); "can not find the gauge" (0); "cannot find the gauge" (1, a 20th-c. wind-turbine book); "gauge of the Vicksburg and Shreveport" (8: all OR I/34 pt 4 copies, the 17 June print) | not printed in any IA-indexed item |
+| The Papers of Ulysses S. Grant vol. 11 (June-Aug 1864; IA papersofulyssess0011gran, fts) | gauge (0); "Vicksburg and Shreveport" gauge (0); Shreveport (5 hits); "Vicksburg and Shreveport Railroad"; Canby railroad Meigs | index "Vicksburg and Shreveport Railroad, 436-37": Calendar, 27 June 1864, USG endorsement on Canby's correspondence about rebuilding the road ("I do not think it advisable to build the Shreveport and Vicksburg railroad ..."). Grant is not a party to N2-M and the volume does not print it; Shreveport hits are a positive control that the volume is indexed |
+| Huntington CONTENTdm, whole collection p16003coll11 (CISOSEARCHALL, page level) | gauge (25 pages); Shreveport (13 objects) | 1864 gauge pages read from the item text: mssEC 19 p.90 (N2-M itself), p.94 (the 17 June Meigs telegram, cipher copy, above), mssEC 18 p.317/321 (Beckwith, March-April 1865, unrelated), object 10550 p.327 (Canby to Halleck, New Orleans 23 June, on Halleck's telegram of the 11th, i.e. the printed 4 p.m. one, not N2-M), object 4849 p.305 (Canby's 24 June reply to Meigs, received copy). No second copy of N2-M in any ledger the volunteers transcribed |
+| Library of Congress, Montgomery C. Meigs Papers (digitised 2024; loc.gov collection API) | "gauge Shreveport" (0), "Canby 1864" (0), the Letterbooks series listed | the digitised personal letterbooks have no volume for June 1864 (folders 1861 Apr-1862 Feb, then "1864, Apr.", then 1857-1889 others); the first audit's "Meigs letter books" blocker is closed for the LoC series: there is no June 1864 letterbook in it. Not opened page by page |
+| Canby papers | not located as a digitised or edited series in this pass | not searched beyond the OR, which prints his side of the exchange |
+| NARA RG 92 (QMG telegrams sent) and RG 107 (Telegrams Collected) | no NARA API key (CLAUDE.md host table) | unreachable; archival copies, unpublished |
+| Google Books API (key, country=US) | "gauge of the Vicksburg & Shreveport" (0); "find the gauge" Canby (243, none of them this telegram: OR 1891 Canby 23-24 June, unrelated books); "Vicksburg and Shreveport" gauge Meigs "telegraphed you twice" (0); "Vicksburg and Shreveport" railroad Meigs Canby 1864 gauge (4: OR and the 1892 House-documents reprint, the 24 June items) | not printed |
+| Zooniverse Talk (talk.zooniverse.org, project 2125) | gauge (5 comments), Shreveport (4), Burglar (0) | none on mssEC_19_090; the gauge comments are on mssEC_16_302, mssEC_24_082 and a Sept 1863 Louisville item; no decoding of N2-M on the project |
+| Open indexes | OpenAlex `"Vicksburg and Shreveport" railroad` (6, none on the 1864 gauge), OpenAlex "Meigs Canby 1864 railroad gauge telegram" (0); Semantic Scholar (429, one retry after 5 s, 200: 0); CORE `"Vicksburg and Shreveport" AND gauge` (0); CrossRef bibliographic query (top 8 unrelated) | no scholarship quoting the 11 June telegram |
+| JSTOR | two rows appended to JSTOR-QUEUE.tsv, families (i) and (ii) | queued; never blocks |
+Requests: hdl.huntington.org 8 (1 image, 2 searches, 5 item info), archive.org/be-api 14, googleapis.com 4, api.openalex.org 2,
+api.semanticscholar.org 2 (one 429), api.core.ac.uk 1, api.crossref.org 1, loc.gov 6 (one 403 on /search/ with a browser UA,
+then 200 with the descriptive UA), talk.zooniverse.org 4, www.zooniverse.org 2.
+
+### 4. Classification
+- **N2-M: N4**, key `period` (key-no2.md from Cipher No. 2, mssEC 47), text not known in print. Raised from N3: the principal
+  editions (OR ser. I vol. 34 pt 4 by phrase, date and correspondent; OR ser. III vol. 4; PUSG vol. 11), the catalogues (the
+  Huntington's own full text across every mssEC ledger; the LoC Meigs Papers, which have no June 1864 letterbook) and the project
+  pages (Zooniverse Talk) are covered, with IA full text, Google Books and four open indexes. Internal or unpublished work is not
+  excluded: the NARA RG 92/107 copies are unread (no API key), and the JSTOR rows are queued. The clear words ("I can not find the
+  gauge ... what is it") have been public on the volunteer transcription since 2018, as for E4/E5; what the period book adds is
+  the addressee (Canby), the place (Vicksburg), "Rail-road" and the signature (the Quartermaster-General).
+- Safe sentence: "Read at grade H with the period Cipher No. 2 book; no prior decipherment located (OR ser. I vol. 34 pt 4 by
+  phrase, date and correspondent, OR ser. III vol. 4, Papers of U. S. Grant vol. 11, the Huntington's full ledger text, the LoC
+  Meigs Papers, Zooniverse Talk, IA and Google Books full text and four open indexes, searched 7 Oct 2026); its 17 June sequel and
+  Canby's 24 June reply are printed in OR I/34 pt 4." Unsafe: "first", "new", "unpublished", "never printed", or any wording that
+  the telegram's text was unknown (its clear words were public).
+- Depth **D4**, 100% (13/13 code words H, 10 in the message, 3 in the service line), unchanged; checks: OR I/34 pt 4 pp.424-425
+  (the 17 June sequel) and the p.94 twin-row signature against the same print (non-statistical), image re-read and
+  `decode_no2.py --check` re-derived here. Sentence unchanged: "On 11 June 1864 the Quartermaster-General telegraphs Canby at
+  Vicksburg that he cannot find the gauge of the Vicksburg and Shreveport Railroad and asks what it is."
+- SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-N2M and its prompt quote no class or count; unchanged.
+
+### 5. Postmortem
+No over-claim found in reading-no2.md, NOTES.md or status.json. The first audit's N4 blocker ("Meigs letter books unread") rested
+on a series that has no June 1864 volume in its digitised form; the real remaining unread copies are NARA's, which rule 10's N4
+does not require.

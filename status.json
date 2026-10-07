@@ -4019,9 +4019,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, AM-ECKV)'"
+        "AUDIT.md '## AUDIT (propagation, AM-ECKV)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, D12-V2M)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D4",
       "depth_pct": 100.0,
@@ -4035,9 +4036,9 @@
       "date": "7 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Quartermaster-General to Canby, 11 June 1864, the Vicksburg and Shreveport gauge (N2-M)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text of this telegram located in OR I/34 pt 4, OR III/4, Google Books or the Huntington record (searched 7 Oct 2026).",
-      "gap": "Meigs letter books (LoC) and NARA RG 92 copies unread, so not N4; SO-ECKERT-N2M queued",
+      "grade": "N4",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment located (OR ser. I vol. 34 pt 4 by phrase, date and correspondent, OR ser. III vol. 4, Papers of U. S. Grant vol. 11, the Huntington's full ledger text, the LoC Meigs Papers, Zooniverse Talk, IA and Google Books full text and four open indexes, searched 7 Oct 2026); its 17 June sequel and Canby's 24 June reply are printed in OR I/34 pt 4.",
+      "gap": "NARA RG 92/107 copies unread (no API key) and JSTOR rows queued; neither blocks N4 (internal/unpublished work not excluded); SO-ECKERT-N2M queued",
       "phrases": [
         "Huntington mssEC 19 p.90, Kimber, Washn June 11 1864"
       ],
@@ -4046,14 +4047,14 @@
         "Huntington mssEC 19 p.90, N2-M (QMG to Canby, 11 June 1864)"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
       "completeness": "13/13 code words H (10 message, 3 service line)",
-      "unresolved_spans": "none among the code words; the key row for the signature word carries the book's own [?], fixed in context by OR I/34 pt 4 pp.424-425",
+      "unresolved_spans": "none among the code words; the signature row's book '[?]' is fixed by its twin word Buggy on mssEC 19 p.94 (17 June 1864) against the OR I/34 pt 4 p.425 print",
       "reading_version": "342df8ee9",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, AM-ECKV)' section 3",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, AM-ECKV)' section 3; '## AUDIT 2 (second adversarial, D12-V2M)' section 4",
       "depth_sentence": "On 11 June 1864 the Quartermaster-General telegraphs Canby at Vicksburg that he cannot find the gauge of the Vicksburg and Shreveport Railroad and asks what it is.",
-      "depth_check": "OR I/34 pt 4 pp.424-425 (Meigs to Canby 17 June, 'telegraphed you twice ... the gauge'; Canby's 24 June reply); page image re-read and decode_no2.py --check by the verifier",
+      "depth_check": "OR I/34 pt 4 pp.424-425 (Meigs to Canby 17 June, 'telegraphed you twice ... the gauge'; Canby's 24 June reply); page image re-read and decode_no2.py --check by the verifier; second audit D12-V2M: image re-read, decode_no2.py --check, p.94 twin-row signature against OR p.425",
       "depth_note": "code words H 13; 'Sleeve port' is a clear-word spelling, not a cipher token"
     },
     {
