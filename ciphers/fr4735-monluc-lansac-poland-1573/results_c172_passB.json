@@ -1,0 +1,15 @@
+{
+ "tokens": 148,
+ "decoded_letters": 144,
+ "gloss_letters": 96,
+ "decoded": "gepmuigaerquelunnicgpegaeuraepgatealaruchtequepuurempepchaieupgquelquecruatgeegfauaruigquilaeupgpuiacgchargaeaguciequlpuigpinonnexennregepmognag",
+ "gloss": "tesmoignagenieustquelqueauancefaudroitquilneustpointchargedenegocrienquisoitsmonderendretesmoign",
+ "target_matched": 59,
+ "target_rate": 0.4097,
+ "control_mean": 0.2655,
+ "control_p95": 0.2917,
+ "control_max": 0.3194,
+ "draws": 200,
+ "seed": 1,
+ "rank_p": 0.0
+}

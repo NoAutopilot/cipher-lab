@@ -1,0 +1,13 @@
+tesmoignage
+et mondit seigneur nest alle a la rochelle que pour empesch
+ny eust
+quelque auanc
+e faudroit
+quil neust point
+charge de negoc
+rien qui soit
+smon de
+rendre tesmoign
+# EXPLORATORY (chosen after seeing the decode, not pre-registered): the margin gloss with the clear line 1 of f.86
+# ("& mondt seigneur nest alle a la Rochelle que pour empesch", read by NA-MONL from images/c172cipher_L01_s1/s2)
+# inserted after "tesmoignage", on the same row. "&" and "mondt" written out (et, mondit) to one convention.

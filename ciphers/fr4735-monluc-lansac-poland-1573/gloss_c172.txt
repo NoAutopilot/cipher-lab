@@ -1,0 +1,13 @@
+tesmoignage
+ny eust
+quelque auanc
+e faudroit
+quil neust point
+charge de negoc
+rien qui soit
+smon de
+rendre tesmoign
+# Contemporary marginal decipherment, left margin of f.86 (c172), read line by line by NA-MONL 7 Oct 2026 from
+# images/c172gloss_L02..L10 (two blind Sonnet passes in passes/pass?.tsv G01-G10 agree on lines 1, 5, 7, 9 and part of
+# 2, 3, 4, 6, 8; the reconciler's reading is given). Words cut by the crop or the hand ("auanc", "negoc", "tesmoign")
+# are left as written, not expanded. Above this '#' line is what score_c172.py reads.

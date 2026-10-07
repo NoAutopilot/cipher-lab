@@ -1,0 +1,15 @@
+{
+ "tokens": 150,
+ "decoded_letters": 147,
+ "gloss_letters": 145,
+ "decoded": "gepmuigaerqueloaaicgpegaeuraepgatealarochetequepuurempepcheaieupgquelquecruatgeegfaudroigquilaeupgpoiacgchargdeaguciequlpoigpiaoadereaadregepmogaag",
+ "gloss": "tesmoignageetmonditseigneurnestallealarochellequepourempeschnieustquelqueauancefaudroitquilneustpointchargedenegocrienquisoitsmonderendretesmoign",
+ "target_matched": 94,
+ "target_rate": 0.6395,
+ "control_mean": 0.2925,
+ "control_p95": 0.3265,
+ "control_max": 0.3469,
+ "draws": 200,
+ "seed": 1,
+ "rank_p": 0.0
+}

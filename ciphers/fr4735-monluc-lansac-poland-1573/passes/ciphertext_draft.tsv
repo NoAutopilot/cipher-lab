@@ -1,0 +1,153 @@
+line	position	sign	confidence	alt	why
+L02	1	K07	H		agree
+L02	2	K05	H		agree
+L02	3	K14	H		agree
+L02	4	K62	M	B:K11	differ
+L02	5	K39	H		agree
+L02	6	K09	H		agree
+L02	7	K07	H		agree
+L02	8	K01	H		agree
+L02	9	K42	H		agree
+L02	10	K49	H		agree
+L02	11	K15	H		agree
+L02	12	K39	H		agree
+L02	13	K26	H		agree
+L02	14	K62	H		agree
+L02	15	K13	M	B:K39	differ
+L02	16	K01	M	B:K12	differ
+L02	17	K01	M	B:K12	differ
+L02	18	K09	H		agree
+L02	19	K03	H		agree
+L02	20	K07	H		agree
+L02	21	K14	H		agree
+L02	22	K05	H		agree
+L02	23	K07	H		agree
+L02	24	K01	H		agree
+L02	25	K42	H		agree
+L02	26	K39	H		agree
+L02	27	K16	H		agree
+L02	28	K01	H		agree
+L02	29	K05	H		agree
+L02	30	K14	H		agree
+L02	31	K07	H		agree
+L02	32	K41	H		agree
+L02	33	K15	M	B:K18	differ
+L02	34	K26	H		agree
+L02	35	K41	H		agree
+L02	36	K10	H		agree
+L02	37	K01	H		agree
+L02	38	K49	H		agree
+L02	39	K13	M	B:K39	differ
+L02	40	K03	H		agree
+L02	41	K08	H		agree
+L02	42	K26	M	B:?vertical_bar	differ
+L02	43	K15	M	B:K18	differ
+L02	44	K05	H		agree
+L02	45	K15	H		agree
+L02	46	K39	H		agree
+L02	47	K26	H		agree
+L02	48	K14	H		agree
+L02	49	K39	H		agree
+L02	50	K39	H		agree
+L02	51	K16	H		agree
+L02	52	K42	H		agree
+L02	53	K62	M	B:K11	differ
+L02	54	K14	H		agree
+L02	55	K05	H		agree
+L02	56	K14	H		agree
+L02	57	K03	H		agree
+L02	58	K08	H		agree
+L02	59	K26	M	B:-	gap
+L02	60	END_CUT	H		agree
+L03	1	K01	H		agree
+L03	2	K09	H		agree
+L03	3	K26	H		agree
+L03	4	K39	H		agree
+L03	5	K14	H		agree
+L03	6	K07	H		agree
+L03	7	K15	H		agree
+L03	8	K39	H		agree
+L03	9	K42	H		agree
+L03	10	K10	H		agree
+L03	11	K15	H		agree
+L03	12	K39	H		agree
+L03	13	K26	H		agree
+L03	14	K03	H		agree
+L03	15	K16	H		agree
+L03	16	K39	H		agree
+L03	17	K41	H		agree
+L03	18	K38	H		agree
+L03	19	K07	H		agree
+L03	20	K05	H		agree
+L03	21	K26	H		agree
+L03	22	K07	H		agree
+L03	23	K06	H		agree
+L03	24	K41	H		agree
+L03	25	K39	H		agree
+L03	26	K04	M	B:K01	differ
+L03	27	K49	H		agree
+L03	28	K13	M	B:K39	differ
+L03	29	K09	H		agree
+L03	30	K07	H		agree
+L03	31	K15	H		agree
+L03	32	K39	H		agree
+L03	33	K09	H		agree
+L03	34	K10	H		agree
+L03	35	K01	H		agree
+L03	36	K05	H		agree
+L03	37	K39	H		agree
+L03	38	K14	H		agree
+L03	39	K07	H		agree
+L03	40	K14	H		agree
+L03	41	K13	M	B:K39	differ
+L03	42	K09	H		agree
+L03	43	K01	H		agree
+L03	44	K03	H		agree
+L03	45	K07	H		agree
+L03	46	K03	H		agree
+L03	47	K08	H		agree
+L03	48	K41	H		agree
+L03	49	K16	H		agree
+L03	50	K07	H		agree
+L03	51	?vertical_bar	H		agree
+L03	52	K04	M	B:K01	differ
+L03	53	K05	H		agree
+L03	54	K01	H		agree
+L03	55	?vertical_bar	H		agree
+L03	56	K07	H		agree
+L03	57	K39	H		agree
+L03	58	K03	H		agree
+L03	59	K09	H		agree
+L03	60	K05	H		agree
+L03	61	END_CUT	H		agree
+L04	1	K15	H		agree
+L04	2	K39	H		agree
+L04	3	K10	H		agree
+L04	4	K49	M	B:K14	differ
+L04	5	K13	M	B:K39	differ
+L04	6	K09	H		agree
+L04	7	K07	H		agree
+L04	8	K14	H		agree
+L04	9	K09	H		agree
+L04	10	K01	M	B:K12	differ
+L04	11	K13	H		agree
+L04	12	K01	M	B:K12	differ
+L04	13	K04	M	B:K12	differ
+L04	14	K26	H		agree
+L04	15	K16	M	B:K20	differ
+L04	16	K05	H		agree
+L04	17	K01	M	B:-	gap
+L04	18	K01	M	B:K12	differ
+L04	19	K04	M	B:K12	differ
+L04	20	K16	H		agree
+L04	21	K42	H		agree
+L04	22	K07	H		agree
+L04	23	K42	H		agree
+L04	24	K14	H		agree
+L04	25	K62	M	B:K11	differ
+L04	26	K13	H		agree
+L04	27	K07	H		agree
+L04	28	K01	M	B:K12	differ
+L04	29	K41	H		agree
+L04	30	K07	H		agree
+L04	31	?vertical_bar	H		agree
