@@ -526,7 +526,7 @@ Verdict: parked: every gap has an outside blocker (waiting-on ASKS row 102, the 
 
 ## While waiting
 
-- Depends on nobody: list the other Nevers-to-Revol letters of 1593 in fr.3985/fr.3986 from the BnF finding aid (catalogue only, no images), to name sibling leaves in the same copyist's hand that would add tiles to the sorter or a crib, ~$2.
+- DONE (AM-LOOK, 7 Oct 2026; fr.3986 list of 15 items, fr.3985 not parsed): list the other Nevers-to-Revol letters of 1593 in fr.3985/fr.3986 from the BnF finding aid (catalogue only, no images), to name sibling leaves in the same copyist's hand that would add tiles to the sorter or a crib, ~$2.
 
 ## Web and blog check (GAPS3-fr3986-nevers-revol-1593, 2 Oct 2026)
 
@@ -576,3 +576,8 @@ NOTES.md (17 Sept 2026, already cited above, "fr. 3986 f. 198 (23 Oct, no. 101) 
 
 Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026. Requests: web search 8 queries,
 WebFetch 2 (dbourdeau.github.io 1, github.com 1); no 403/429.
+
+## AM-LOOK (7 Oct 2026)
+
+Item: Nevers-to-Revol letters of 1593 from the BnF archivesetmanuscrits finding aid, 10:4x UTC, for LANE LANE-AM-0914 (catalogue only, no images). Route: POST to `/resultatRechercheSimple.html` with `TEXTE_LIBRE_INPUT` "Nevers Revol 1593 Français 3986" (the bare root URL answers 405 to a POST; the form posts to that results page), 15 results, one page. Fr.3986 entries (item no. as printed, then letter): 3 Nevers to Revol, Nevers 14 Sept 1593 (copy); 8 Revol to Nevers, Fontainebleau 15 Sept; 15 Nevers to Revol, Nevers 13 Sept (copy); 30 Revol to Nevers, Fontainebleau 22 Sept; 39 Nevers to Revol, Fovan 26 Sept (copy); 41 Revol to Nevers, Fontainebleau 17 Sept; 47 Nevers to Revol, Montbeliard 29 Sept (copy); 54 Nevers to Revol, Basle 1 Oct (copy); 58 Nevers to Revol, Bade 4 Oct (copy); **68 Nevers to Revol, "avec chiffre", Vese 7 Oct (copy)**; 72 Pisani to Nevers, Dezensan 8 Oct; **75 Nevers to Revol, "avec chiffre", Coire 9 Oct (copy)**; 77 Revol to Nevers, Chartres 7 Oct; 92 Revol to Nevers, Mante 21 Oct; **101 Nevers to Revol, "avec chiffre", Desanzan 23 Oct (copy)**. The finding aid's numbers are the volume's item numbers, not confirmed folios; the item-to-folio map was not tested here. Candidates for the copyist's hand: the three "avec chiffre" copies (68, 75, 101) are the cipher-bearing siblings the finding aid itself marks; whether they are the same copyist as f.198/f.298 needs the image. Not covered: a second search for fr.3985 gave a result page whose entries this worker did not parse, so no fr.3985 list is given; search returns only entries whose notice matches the query terms, so other 1593 letters in the volume may exist. Requests: archivesetmanuscrits.bnf.fr 5 (1 home page, 1 rejected POST, 3 results).
+

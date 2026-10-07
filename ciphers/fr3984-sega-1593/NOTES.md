@@ -255,7 +255,7 @@ images/fr3985/*.
 Waits on reading Acta Nuntiaturae Gallicae (Sega legation), a modern critical print-only/paywalled edition
 unreachable on IA/HathiTrust/Google Books, since 24 Sept 2026 (the check-solved brief's rule 9 blocker).
 
-- Search OpenAlex/Persée/HAL for the Sega legation / Baudouin-Desportes 1593 correspondence, in case a secondary work excerpts the edition. S, tools/print_check.py.
+- DONE (AM-LOOK, 7 Oct 2026; no hit, Persée result list not parsed) Search OpenAlex/Persée/HAL for the Sega legation / Baudouin-Desportes 1593 correspondence, in case a secondary work excerpts the edition. S, tools/print_check.py.
 - Fetch the four fr.3984 folios (nos. 6, 8, 88, 90) at native resolution now, the way IMG-FETCH already did for fr.3985 no.7 -- images ready on disk for the solver the moment the edition question clears. M, tools/iiif_lines.py.
 - Re-grep both solver-repo clones for "fr.3984"/"Baudouin-Desportes"/"Sega" more broadly (partial matches, not only the exact strings already tried), in case a partial transcription was added since 24 Sept 2026. S.
 
@@ -267,3 +267,8 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 17 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## AM-LOOK (7 Oct 2026)
+
+Item: scholarship search for the Sega legation / Baudouin-Desportes 1593 correspondence, 10:3x UTC, for LANE LANE-AM-0914. Searched: OpenAlex (Bearer key; "Sega legation France 1593 Baudouin Desportes", "Filippo Sega legato Francia 1593 cifra", "Baudouin Desportes Clement VIII 1593 chiffre"), Semantic Scholar (x-api-key, same three; the third got HTTP 429, not retried), CrossRef (same three), HAL (3 queries incl. "Acta Nuntiaturae Gallicae Sega": 0 results each), Persée (one search-page request, HTTP 200, result list not parsed from the HTML, so counted as unsearched). Hits: none about this legation or correspondence; the returned items are unrelated (a Rabelais 1593 edition, Philippe Desportes' Pseaumes 1593, Cardinal Romanus 1225, Vincent Desportes on decision-making, Grove "Legato", the Medici exhumations book). Secondary works excerpting the Acta edition: none found by these queries. This is a search result, not a verdict; tools/print_check.py was not run (no phrases.txt for this folder). Requests: api.openalex.org 3, api.semanticscholar.org 3, api.crossref.org 3, api.archives-ouvertes.fr 3, www.persee.fr 1.
+

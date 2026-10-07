@@ -190,7 +190,7 @@ canvas	ark	result	notes
 676	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
 677	btv1b10035069t	clear	left page blank; right page section title Lettres du Roy, clear; R12A-F5160B 6 Oct 2026
 678	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
-679	btv1b10035069t	fetch-failed	HTTP 404 on full/600, twice (30 s pause between); info.json answers 200 (7853x6176), so the canvas exists; not retried further under the good-citizen rule; R12A-F5160B 6 Oct 2026
+679	btv1b10035069t	clear	fetched at full/600 on retry AM-LOOK 7 Oct 2026; plain despatch text, folio 270, no cipher
 681	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
 682	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
 683	btv1b10035069t	clear	R12A-F5160B 6 Oct 2026
