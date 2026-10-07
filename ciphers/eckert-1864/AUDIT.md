@@ -1637,3 +1637,61 @@ api.core.ac.uk 2, api.crossref.org 2, api.openalex.org 1, hdl.huntington.org 1 (
   SO-ECKERT-N2AI prompt quotes no class or depth, so it needs no change. status.json row updated (two audits, D4).
 - Context, not a finding: "Cap Feilner" is most likely Capt. John Feilner, 1st U.S. Cavalry (Pope to Halleck, April 1864, in the
   Mereness Calendar names him); not used in the grading.
+
+## AUDIT 2 (second adversarial, D4-V2AJ)
+
+Verifier D4-V2AJ (account 4, LANE DEFAULT-account-4-20261007-1335), 7 Oct 2026, 13:44-13:5x UTC by `date -u`; a session separate
+from the solver (D12-E1) and the first auditor (D12-VP), not protecting either. Scope: **N2-AJ** only (mssEC 19 p.18, pointer
+8910, second entry, Augur to Ingalls, 9 Mar 1864). Nothing decoded; reading-no2.md and ciphertext-no2.txt left as committed.
+
+### 1. Re-derivation and image check
+- `python3 ciphers/eckert-1864/decode_no2.py --check`: "reading-no2.md is current", exit 0 (13:46 UTC). Block: 9 code words, H 9.
+- Crop step (2400 px IIIF image, scratch): `python3 tools/iiif_lines.py --image $S/img/p8910.jpg --out $S/crops --prefix p18
+  --region 120,2020,2160,440 --lines-per-crop 2 --max-width 1600` (5 lines, 6 crops) and the header line `--region
+  120,1950,2160,110 --lines-per-crop 1`. Read on the crops: "Viola For Palermo Ingalls Yardstick / Crowd will be down to / the
+  Persia Talbot Annal to / more row Wiley Lantern Sharks" -- every word agrees with ciphertext-no2.txt.
+- **Header correction.** The header's time, read at native resolution (IIIF region 4800,5050,700,250 of the 6215 x 7200
+  master), is **"12. midn"** (m, dotted i, looped d, n: midnight), not "12. noon" as ciphertext-no2.txt, reading-no2.md (block
+  title and line 296), the SO prompt and D12-VP section 3/4 have it. So the time word Viola = 12 midnight (key-no2.md, TIME page
+  555) **agrees** with the header; the "Viola midnight vs header noon" conflict logged by the solver and by D12-VP (section 5)
+  was a transcription slip of the plain header, not a key or ledger conflict. Midnight 9/10 March also fits the content: "to-
+  morrow" is 10 March, the day Humphreys's circular says Grant arrived at Meade's headquarters. Not edited in the solver's files
+  (ciphertext as transcribed is not silently repaired); flagged in ROOM.md for the solver side to correct ciphertext-no2.txt's
+  header and regenerate; the reading's 9 code words are unchanged. (NOTES.md's "Viola 12.30 PM" at lines 453 and 513 belongs to
+  the old vocabulary, key-no9, not to Cipher No. 2.)
+
+### 2. Families D12-VP section 3 did not cover, searched here
+| family | searched | result |
+|---|---|---|
+| OR I/33 by date and correspondent (warofrebellion33unit djvu, fetched once) | every item dated 9 and 10 March 1864 in the Union correspondence (pp.659-665): Meade/Williams orders, Stanton's Washington-defences order to Canby, Halleck relieved, Stanton to Grant "Hdqrs. Army of the Potomac" 1.40 p.m., Humphreys circular, Burnside/Stanton, Tyler to Taylor (Dept. of Washington) | no Augur-to-Ingalls item; Ingalls's index entries (596, 647, 650, 651, 852-853, 856, 921) none on 9-10 Mar |
+| OR ser. III vol. 4 (in.ernet.dli.2015.171703 djvu; poor OCR) | items dated 6-12 March 1864 (lines 14124-15982 of the OCR): Augur, Ingalls, Grant, Quartermaster, "Potomac" | none; the volume's March items are recruiting/furlough orders. (in.ernet.dli.2015.165578, labelled ser. III vol. 4, is a different volume -- no 1864 March items) |
+| PUSG vol. 10 (IA fts, papersofulyssess0010gran), further terms | "Augur" (5 snippets: Comstock to Augur 26 Mar, USG to Augur 25 Mar etc., none 9 Mar); "Ingalls" (16 Feb letter, 13 Apr report); "midnight"; "will be down"; "Army of the Potomac tomorrow"; "to the front" | no N2-AJ text and no editorial note quoting it |
+| IA full text, whole archive (be-api fts, no identifier) | "will be down to the Army of the Potomac"; "Grant will be down to the Army"; "down to the Army of the Potomac to-morrow" | 0, 0, 0; positive control "General Grant has gone to the front" (Stanton to Burnside, OR I/33 p.664) 21 hits |
+| Huntington CONTENTdm p16003coll11, CISOSEARCHALL, full-text flag | "Grant down Potomac" (4), "Augur Grant" (22); item info of all 26 read and grepped for Ingalls / "will be down" / Mch 9 | no second copy (plain or cipher) of this telegram; the two Ingalls hits (pointers 10525, 7832) are Ingalls's own later telegrams |
+| Google Books API (key, country=US), 4 queries | "will be down to the Army of the Potomac" (loose matches only, OR formal reports, Army and Navy Journal); "Grant will be down" Augur Ingalls; Augur Ingalls "March 9, 1864" telegram Grant; control "General Grant has gone to the front" Burnside | no N2-AJ text; control found OR I/33 and House documents |
+| Open indexes | OpenAlex (key) phrase: 0 works; CrossRef bibliographic: only a chapter "Grant as General in Chief" in Taaffe, *Commanding the Army of the Potomac* (doi 10.2307/j.ctv7n0c2r.11), a narrative secondary work, text not read; CORE (key): noise only; Semantic Scholar: HTTP 429 twice (one retry after a pause), unreachable this session | nothing |
+| JSTOR | JSTOR-QUEUE.tsv rows for N2-AJ already exist in both families: (i) "Augur" AND "Ingalls" AND "March 9, 1864" ...; (ii) "will be down to the Army of the Potomac" | pending (never blocks) |
+| Unreachable / unread | NARA RG 393 Dept. of Washington telegrams sent (Augur's own book, the most likely place a copy survives), RG 92 Quartermaster General (Ingalls's received telegrams), RG 107 M473/M504; Ingalls papers; Supplement to the OR (Hewett); HathiTrust full text (Cloudflare) | unread |
+
+Requests: archive.org 9 (6 djvu downloads incl. one 403 on a wrong identifier and one empty first try, 3 metadata/search) + be-api.us.archive.org 12, hdl.huntington.org 31 (3 IIIF images, 1 info.json,
+2 searches x2, 26 item info), googleapis.com 4, api.openalex.org 1, api.crossref.org 1, api.core.ac.uk 2 (one 500, retried once),
+api.semanticscholar.org 2 (429, 429); all others 200.
+
+### 3. Class (key `period`)
+**N2-AJ stays N3.** No prior plaintext or decipherment located after the searches of D12-VP section 3 and this section. Not N4:
+Augur's Department of Washington telegrams-sent book (RG 393), where the sender's copy would sit, and the Supplement to the OR
+are unread, the same reason D12-V2R kept N2-R at N3. Depth **D3**, 100% (9/9 H), check: the period key for every value, the
+header time now agreeing with the time word, and the content agreeing with the printed events of 10 March (Humphreys circular,
+Stanton "General Grant has gone to the front", OR I/33 pp.663-664); not raised to D4, since no print of this text exists to
+check it against. Safe sentence: "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text
+located in OR I/33, I/51 pt 1 or ser. III vol. 4, the Grant Papers vol. 10, the Huntington collection's full text, Internet
+Archive full text, Google Books, OpenAlex or CrossRef (two audits, 7 Oct 2026)." Unsafe: "first", "unpublished", "never
+printed", "previously unknown" -- the event (Grant's visit of 10 March) is well known; N3 is about this telegram's text.
+Sentence: "At midnight on 9 March 1864 Augur tells Ingalls that Lieutenant-General Grant will come down to the Army of the
+Potomac the next day."
+
+### 4. Postmortem
+- Over-claim: none; the solver and D12-VP say "not located". Error caught: the header "12. noon" is "12. midn"; the logged
+  time-word conflict for N2-AJ in reading-no2.md line 296, D12-VP sections 3, 4 and 5, the SO prompt and status.json is void.
+  Corrected here, in the SO prompt (row SO-ECKERT-N2AJ, still queued) and in status.json; the solver files are flagged, not
+  edited.

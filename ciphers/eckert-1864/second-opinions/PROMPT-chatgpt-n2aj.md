@@ -7,9 +7,9 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 THE ITEM
 - Source: Thomas T. Eckert's telegraph ledger, Huntington Library, San Marino, mssEC 19 p.18 (digital pointer 8910,
   https://hdl.huntington.org/digital/collection/p16003coll11/id/8910), second entry headed "A H Caldwell Washn Mch 9 1864 12.
-  noon". Read with War Department Cipher No. 2 (the book is in the same collection, mssEC 47).
+  midn" (midnight; first transcribed "noon", corrected by the second audit D4-V2AJ, 7 Oct 2026). Read with War Department Cipher No. 2 (the book is in the same collection, mssEC 47).
 - Reading, Maj. Gen. C. C. Augur (Department of Washington) to Brig. Gen. Rufus Ingalls: "Lieut. Gen. Grant will be down to the
-  Army of the Potomac to-morrow." Signed Augur. (The time word reads 12 midnight against the header's noon.)
+  Army of the Potomac to-morrow." Signed Augur. (The time word reads 12 midnight, agreeing with the header.)
 - Context we already know: OR I/33 prints Humphreys's circular of 10 March 1864 that Grant had arrived at Meade's headquarters.
   The question is whether THIS telegram's text is printed anywhere.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading-no2.md,

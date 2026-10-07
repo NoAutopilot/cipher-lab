@@ -4313,9 +4313,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, D12-VP)'"
+        "AUDIT.md '## AUDIT (propagation, D12-VP)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, D4-V2AJ)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -4330,8 +4331,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Augur to Ingalls, 9 Mar 1864, Grant coming down to the Army of the Potomac tomorrow (N2-AJ)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (I/33, I/51 pt 1), the Grant Papers vol. 10, the Huntington collection's full text, Google Books or OpenAlex (searched 7 Oct 2026, one audit).",
-      "gap": "NARA RG 92/RG 393/RG 107 copies and the Supplement to the OR unread, JSTOR rows pending, so not N4; SO-ECKERT-N2AJ queued",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in OR I/33, I/51 pt 1 or ser. III vol. 4, the Grant Papers vol. 10, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex or CrossRef (two audits, 7 Oct 2026).",
+      "gap": "NARA RG 393 (Dept. of Washington telegrams sent), RG 92, RG 107 copies and the Supplement to the OR unread, JSTOR rows pending, so not N4; SO-ECKERT-N2AJ queued",
       "phrases": [
         "Huntington mssEC 19 p.18, pointer 8910"
       ],
@@ -4346,8 +4347,8 @@
       "unresolved_spans": "none",
       "reading_version": "D12-E1 7 Oct 2026 (reading-no2.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D12-VP)' section 4",
-      "depth_sentence": "Augur tells Ingalls that Lieutenant-General Grant will come down to the Army of the Potomac tomorrow.",
-      "depth_check": "period key book (mssEC 47) for every value; agrees with OR I/33 (Humphreys circular 10 Mar 1864, Grant arrived at headquarters); time word Viola = midnight conflicts with the header's noon; no print of this text",
+      "depth_sentence": "At midnight on 9 March 1864 Augur tells Ingalls that Lieutenant-General Grant will come down to the Army of the Potomac the next day.",
+      "depth_check": "period key book (mssEC 47) for every value; header time '12. midn' (re-read by D4-V2AJ, was transcribed 'noon') agrees with the time word Viola = 12 midnight; content agrees with OR I/33 pp.663-664 (Humphreys circular 10 Mar 1864, Grant arrived at headquarters); no print of this text",
       "depth_note": "code words H 9"
     },
     {
