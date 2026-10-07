@@ -82,3 +82,12 @@ Folder Verdict cheapest next: re-run the p.4 4/5 re-read (R12A-D1411LA's la/ til
 seeing numbers; the earlier PREREG stands, cite it). Cut per-number tiles from the DECODE full-size p.4 image on disk (if absent, the
 re-fetch command in Remaining gaps; one browser login at most). A 5-tile pilot first: if the pilot still returns '?' on 3+ of 5, stop and log
 the instrument as void at this resolution. Units: tiles + 2 read passes + rescore = ~6.
+
+### D07-COL26K -- colbert26-lathuillerie-1644, canvas 20-21 positional known-answer statistic per candidate code (Opus; cap 3, box 40 min)
+Intake gate: `colbert26-lathuillerie-1644: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+Folder Verdict cheapest next (after D22-COL26P's span-level positional test, 0 PASS of 26): the canvas 20-21 positional known-answer statistic
+per candidate code (42 si, 11 le/les, 6 je) with f.24 as held-out, scripts only. PREREG committed and pushed before the scored run, naming a
+control that can vary on the statistic (rule 3: e.g. rotated/shuffled position assignment, not a value shuffle of a position-only statistic),
+the Bonferroni correction and the power at each code's own N (subsample the positive control to that N, rule 3 last paragraph). Report target
+and control side by side per code; UNDERPOWERED is a result, not a negative. No vision. If a code passes, write it as S in key_* with the
+evidence and flag ROOM for a verifier only if a counted reading changes. Then the word-level pairing (~$6) is named, not run.
