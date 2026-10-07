@@ -2919,3 +2919,6 @@ Verdict: parked: every remaining gap is no-key-material or waiting-on ASKS row 1
 
 ### R9-HOUSE (account-4 worker, 6 Oct 2026, by date -u)
 index.tsv P27/P28 `cipher_system` cells corrected to R8-THUR25 / AUDIT.md R8-THURV2 (same Manning key; 24 of 26 shared values agree on the page-image pairs; the 2/15 "different sub-key" note was an OCR-alignment shift). No other cell touched.
+
+### KH2-F keyhunt (LANE KH-2, account 2, 7 Oct 2026, by date -u)
+Birch vols 1-7 (IA djvu) swept for further cipher passages of the seven pool keys outside index.tsv: unread unglossed siblings 0 for every key; glossed siblings not yet in this folder: Montagu 6 letters (vol.1 l.62335, 62564; vol.4 l.51359, 60576; vol.5 l.15466; vol.7 l.26827), Fauconberg 2 (vol.7 l.36328, 46115), Blake 2 one-line code lists (vol.3 l.19317, vol.4 l.55548), Downing about 44 letters (vol.6-7), all printed with their decipherment. Suggestion (not run): align the Downing letters into key_downing.tsv the way P25-P28 were. Rows in keyhunt/2026-10-07-KH2F.tsv.
