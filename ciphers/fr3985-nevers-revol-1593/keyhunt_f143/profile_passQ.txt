@@ -1,0 +1,9 @@
+leaf 298 office hand passD	N=145	atlas 75.9%	key60 91.0%	new 0.0%	H 57.2%
+f.198 verso passA	N=66	atlas 6.1%	key60 34.8%	new 19.7%	H 21.2%
+f.198 verso passB	N=73	atlas 46.6%	key60 68.5%	new 9.6%	H 13.7%
+f.198 recto passA	N=264	atlas 45.5%	key60 84.5%	new 9.1%	H 0.0%
+fr.3988 f.143r pass under test	N=177	atlas 42.9%	key60 91.0%	new 0.6%	H 20.9%
+distinct 70 atlas tags used 26 of 41
+top [('.x.', 9), ('r', 9), ('++', 8), ('∂', 7), ('//', 6), ('g', 6), ('⊥', 6), ('6', 6), ('E', 6), ('o', 5), ('4+', 5), ('π', 4), ('a+', 4), ('∝', 4), ('T', 4), ('f', 4), ('λ', 4), ('pi', 3), ('+w', 3), ('3', 3)]
+not key60/not NEW ['+q', 'h', 'h.', 'ix', 'j', 'k+', 'x++', 'β', 'σ', 'ℓ', '∓']
+NEW ['NEW:struck-+o']
