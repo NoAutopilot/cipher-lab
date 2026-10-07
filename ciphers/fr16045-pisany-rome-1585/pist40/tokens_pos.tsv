@@ -1,0 +1,16 @@
+leaf	line	tok_index	label	role	context	x_centre_strip	located
+f302v	L04	4	T40	test	T46 T30 [T40] T30 T33	275	eye
+f302v	L06	26	T40	test	T73 T54 [T40] T26 T46	1475	eye
+f302v	L06	34	T40	test	T39 T26 [T40] T41 T40	2000	eye
+f302v	L06	36	T40	test	T40 T41 [T40] T18 T09	2125	eye
+f302v	L07	27	T40	test	T25 T41 [T40] T01 T47	1505	eye
+f302v	L08	10	T40	test	T16 T26 [T40] T04 T13	585	eye
+f302v	L09	6	T40	test	T12 T26 [T40] T41 T47	375	eye
+f302v	L11	11	T40	test	T42 T05 [T40] T05 T50	555	eye-shape-uncertain
+f302v	L11	16	T40	test	T01 T14 [T40] T35 T50	995	eye-shape-uncertain
+f302v	L11	40	T40	test	T64 T09 [T40]	2070	eye
+f302v	L02	16	T17	control	T62 T16 [T17] T46 T01	1020	eye
+f302v	L02	26	T17	control	T25 T26 [T17] T05 T12	1625	eye
+f302v	L03	9	T17	control	T16 T40 [T17] T20 T26	455	eye
+f302v	L03	6	T46	control	T26 T26 [T46] T16 T40	325	eye
+f302v	L04	2	T46	control	T26 [T46] T30 T40	150	eye

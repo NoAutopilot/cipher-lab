@@ -1,0 +1,16 @@
+id	line	tok_index	label	role
+R01	L11	40	T40	test
+R02	L06	34	T40	test
+R03	L09	6	T40	test
+R04	L02	16	T17	control
+R05	L07	27	T40	test
+R06	L03	6	T46	control
+R07	L08	10	T40	test
+R08	L06	36	T40	test
+R09	L04	4	T40	test
+R10	L11	11	T40	test
+R11	L02	26	T17	control
+R12	L06	26	T40	test
+R13	L03	9	T17	control
+R14	L04	2	T46	control
+R15	L11	16	T40	test
