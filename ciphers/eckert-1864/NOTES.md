@@ -830,3 +830,13 @@ in reading-no2.md. `python3 decode_no2.py --check` exit 0. These readings postda
 before any is described outside the repo.
 Requests: hdl.huntington.org 20 (11 item-info, 9 images; all 200), archive.org 5 (djvu I/34 pt 4, I/36 pt 3, I/37 pt 1, I/37 pt 2,
 I/40 pt 2; all 200), www.googleapis.com 3 (Books API, all 200).
+
+## D4-E5H (7 Oct 2026, account 4, for LANE DEFAULT-account-4-20261007-1335): N2-AJ header time corrected, noon -> midn
+D4-V2AJ's flag (ROOM 13:54 UTC): the p.18 (pointer 8910) N2-AJ header reads "12. midn", not "12. noon". Checked independently on one
+IIIF region fetch, `hdl.huntington.org/digital/iiif/p16003coll11/8910/4800,5050,700,250/full/0/default.jpg` (native resolution,
+scratch): "12. midn" -- m, dotted i, looped d, n. Corrected in ciphertext-no2.txt (block title and header line), reading-no2.md
+(summary table row, conflicts line, regenerated block title); `python3 decode_no2.py --write` then `--check` exit 0. The 9 code words
+and their grades are unchanged. Effect: the time word Viola = 12 midnight PM now agrees with the header, so the noon/midnight conflict
+logged by D12-E1 and by D12-VP section 5 is void (a transcription slip of the plain header, not a key or ledger conflict).
+status.json, PROGRESS.tsv and SECOND-OPINIONS-QUEUE.tsv quote no N2-AJ "noon" (grep); the SO prompt was already corrected by
+D4-V2AJ. Rule 10 propagation into D12-VP's sections 3-5 is left to the next verifier (flagged in ROOM). Requests: hdl.huntington.org 1 (200).

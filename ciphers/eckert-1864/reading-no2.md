@@ -278,7 +278,7 @@ last and stands out of date order); N2-AE runs onto the top twelve lines of page
 | N2-AG | Halleck to Meade, 29 Feb 1864 3 PM: telegram forwarded to Butler; Longstreet's retreat | OR I/33 p.614 | word for word |
 | N2-AH | Ingalls to Meade, 7 Mar 1864: Kilpatrick's command, boats to Alexandria | OR I/33 p.650 | word for word; OR time 10.50 a.m., ledger header and time word Elizabeth 10.30 AM |
 | N2-AI | Capt. Wm. T. Howell, A.Q.M., to Ingalls, 8 Mar 1864 3.30 PM: water transportation at Yorktown, a steamer from New York, 1,400 cavalry horses being bought | not located in OR I/33 (phrases Rucker, Feilner, Howell, the date line) | -- |
-| N2-AJ | Augur to Ingalls, 9 Mar 1864 noon: "Lieut Gen Grant will be down to the Army of the Potomac tomorrow" | not located in OR I/33 by phrase | -- |
+| N2-AJ | Augur to Ingalls, 9 Mar 1864 midnight: "Lieut Gen Grant will be down to the Army of the Potomac tomorrow" | not located in OR I/33 by phrase | -- |
 | N2-AK | the President (College) to Sedgwick, 11 Feb 1864 8 PM (Nancy): "Unless there be strong reasons to the contrary please send Kilpatrick to us here for 2 or 3 days" | not in OR I/33, which prints Sedgwick's reply of 9.25 p.m. (p.551, "General Kilpatrick has been ordered to proceed at once to Washington"); printed in Basler, Collected Works of Lincoln vol. 7 (be-api snippet "Gen. Kilpatrick to us here, for two or three days. A. Lincoln", no page) | agrees as far as the snippet runs; the ledger has no "Gen." |
 
 Notes on particular tokens (logged, not resolved):
@@ -293,7 +293,8 @@ Notes on particular tokens (logged, not resolved):
   reads; Peru/Persia = Army in the book.
 - Chumb (N2-AF, M as in N2-B) stands where the OR prints "Generals Banks"; this is the second entry with that clerk's word for
   Banks (the volunteer text reads "cherub", the image "Chumb").
-- N2-AJ: the time word Viola = 12 midnight PM against the header "12. noon". N2-AH: OR 10.50 a.m. against Elizabeth = 10.30 AM.
+- N2-AJ: the header reads "12. midn" (first transcribed "12. noon"; corrected from a native-res crop, D4-V2AJ / D4-E5H, 7 Oct
+  2026), so the time word Viola = 12 midnight PM agrees with it; the earlier noon/midnight conflict is void. N2-AH: OR 10.50 a.m. against Elizabeth = 10.30 AM.
 - N2-AF: the image reads "given no Repeats" (= OR "given no orders"); the volunteer text has "my".
 - Words after the signature are the operators' own talk ("nasty day this", "fill up", "honey pleads guilty to charge &
   apologises", "Sharks"); keyed words among them are marked plain.
@@ -632,7 +633,7 @@ Code-word tokens: H 21.
 
 Code-word tokens: H 40.
 
-**N2-AJ | Page 18 | 8910 | 9 Mar 1864 noon, Augur to Brig. Gen. Ingalls (A. H. Caldwell)**
+**N2-AJ | Page 18 | 8910 | 9 Mar 1864 midnight, Augur to Brig. Gen. Ingalls (A. H. Caldwell)**
 
 {time: 12 midnight PM} For [Brig. General] Ingalls [.] [Lieut Gen U.S. Grant] will be down to the [Army] [Of the] [Potomac] to more row  {tail: [signed] [Augur C C] Sharks}
 
