@@ -1,0 +1,93 @@
+# NZ-SURIJ per-token image labels, worker's own eye, 7 Oct 2026 09:49-09:52 UTC (date -u); native regions {base}/560,150,2040,3800 and
+# {base}/3060,150,1900,1260 (R14-SUR746 crops/manifest.tsv), crops cut by tools/iiif_lines.py --centres as R14-SUR746, viewed at native
+# size in half-lines and the cipher rows zoomed 2x (S units) by PIL. Not blind to the R14-SUR746 gloss (PREREG caveat).
+unit	crop	class	label	shape
+Y1	L02	Y	Y	y-form, no dots above (looped or straight descender)
+Y2	L02	Y	Y	y-form, no dots above (looped or straight descender)
+Y3	L02	Y	Y	y-form, no dots above (looped or straight descender)
+Y4	L02	Y	Y	y-form, no dots above (looped or straight descender)
+Y5	L03	Y	?	count rule: image shows a y-form at reader "3 c/" (or3y/,) besides "f y 9" -> 2 vs reader 1
+Y6	L04	Y	?	count rule: image shows y-forms at reader "% . 9 /" and after the x-like flourish -> 6+ vs reader 5
+Y7	L04	Y	?	count rule: image shows y-forms at reader "% . 9 /" and after the x-like flourish -> 6+ vs reader 5
+Y8	L04	Y	?	count rule: image shows y-forms at reader "% . 9 /" and after the x-like flourish -> 6+ vs reader 5
+Y9	L04	Y	?	count rule: image shows y-forms at reader "% . 9 /" and after the x-like flourish -> 6+ vs reader 5
+Y10	L04	Y	?	count rule: image shows y-forms at reader "% . 9 /" and after the x-like flourish -> 6+ vs reader 5
+Y11	L05	Y	?	count rule: right half "f 3 y r y r y r y" shows 3 y-forms, not 4
+Y12	L05	Y	?	count rule: right half "f 3 y r y r y r y" shows 3 y-forms, not 4
+Y13	L05	Y	?	count rule: right half "f 3 y r y r y r y" shows 3 y-forms, not 4
+Y14	L05	Y	?	count rule: right half "f 3 y r y r y r y" shows 3 y-forms, not 4
+Y15	L05	Y	?	count rule: right half "f 3 y r y r y r y" shows 3 y-forms, not 4
+Y16	L05	Y	?	count rule: right half "f 3 y r y r y r y" shows 3 y-forms, not 4
+Y17	L06	Y	Y	y-form, no dots above (looped or straight descender)
+Y18	L06	Y	Y	y-form, no dots above (looped or straight descender)
+Y19	L07	Y	Y	y-form, no dots above (looped or straight descender)
+Y20	L07	Y	Y	y-form, no dots above (looped or straight descender)
+Y21	L08	Y	Y	y-form, no dots above (looped or straight descender)
+Y22	L08	Y	Y	y-form, no dots above (looped or straight descender)
+Y23	L09	Y	Y	y-form, no dots above (looped or straight descender)
+Y24	L09	Y	Y	y-form, no dots above (looped or straight descender)
+Y25	L09	Y	Y	y-form, no dots above (looped or straight descender)
+Y26	L10	Y	IJ	y/ij form with two distinct dots above (ÿ), the 0758 ONE form
+Y27	L10	Y	Y	y-form, no dots above (looped or straight descender)
+Y28	L10	Y	Y	y-form, no dots above (looped or straight descender)
+Y29	L10	Y	Y	y-form, no dots above (looped or straight descender)
+Y30	L11	Y	Y	y-form, no dots above (looped or straight descender)
+Y31	L11	Y	Y	y-form, no dots above (looped or straight descender)
+Y32	L11	Y	Y	y-form, no dots above (looped or straight descender)
+Y33	L12	Y	Y	y-form, no dots above (looped or straight descender)
+Y34	L12	Y	Y	y-form, no dots above (looped or straight descender)
+Y35	L13	Y	Y	y-form, no dots above (looped or straight descender)
+Y36	L13	Y	IJ	y/ij form with two distinct dots above (ÿ), the 0758 ONE form
+Y37	L14	Y	Y	y-form, no dots above (looped or straight descender)
+Y38	L14	Y	Y	y-form, no dots above (looped or straight descender)
+Y39	L14	Y	Y	y-form, no dots above (looped or straight descender)
+Y40	L15	Y	Y	y-form, no dots above (looped or straight descender)
+Y41	L15	Y	IJ	y/ij form with two distinct dots above (ÿ), the 0758 ONE form
+Y42	L15	Y	Y	y-form, no dots above (looped or straight descender)
+Y43	L16	Y	?	count rule: reader "[psi] 7 %" is a y-form in the image -> 7 vs reader 6 (the line carries 3 dotted ij forms, all set to ? by the rule)
+Y44	L16	Y	?	count rule: reader "[psi] 7 %" is a y-form in the image -> 7 vs reader 6 (the line carries 3 dotted ij forms, all set to ? by the rule)
+Y45	L16	Y	?	count rule: reader "[psi] 7 %" is a y-form in the image -> 7 vs reader 6 (the line carries 3 dotted ij forms, all set to ? by the rule)
+Y46	L16	Y	?	count rule: reader "[psi] 7 %" is a y-form in the image -> 7 vs reader 6 (the line carries 3 dotted ij forms, all set to ? by the rule)
+Y47	L16	Y	?	count rule: reader "[psi] 7 %" is a y-form in the image -> 7 vs reader 6 (the line carries 3 dotted ij forms, all set to ? by the rule)
+Y48	L16	Y	?	count rule: reader "[psi] 7 %" is a y-form in the image -> 7 vs reader 6 (the line carries 3 dotted ij forms, all set to ? by the rule)
+Y49	L17	Y	Y	y-form, no dots above (looped or straight descender)
+Y50	L17	Y	Y	y-form, no dots above (looped or straight descender)
+Y51	L17	Y	IJ	y/ij form with two distinct dots above (ÿ), the 0758 ONE form
+Y52	L18	Y	Y	y-form, no dots above (looped or straight descender)
+Y53	L18	Y	IJ	y/ij form with two distinct dots above (ÿ), the 0758 ONE form
+Y54	L18	Y	Y	y-form, no dots above (looped or straight descender)
+Y55	L18	Y	Y	y-form, no dots above (looped or straight descender)
+Y56	L19	Y	Y	y-form, no dots above (looped or straight descender)
+Y57	L19	Y	Y	y-form, no dots above (looped or straight descender)
+Y58	L20	Y	Y	y-form, no dots above (looped or straight descender)
+Y59	L20	Y	Y	y-form, no dots above (looped or straight descender)
+Y60	L20	Y	Y	y-form, no dots above (looped or straight descender)
+Y61	L20	Y	Y	y-form, no dots above (looped or straight descender)
+Y62	R01	Y	Y	y-form, no dots above (looped or straight descender)
+Y63	R01	Y	Y	y-form, no dots above (looped or straight descender)
+Y64	R02	Y	Y	y-form, no dots above (looped or straight descender)
+Y65	R02	Y	Y	y-form, no dots above (looped or straight descender)
+Y66	R02	Y	Y	y-form, no dots above (looped or straight descender)
+Y67	R02	Y	Y	y-form, no dots above (looped or straight descender)
+Y68	R03	Y	Y	y-form, no dots above (looped or straight descender)
+Y69	R03	Y	IJ	y/ij form with two distinct dots above (ÿ), the 0758 ONE form
+Y70	R03	Y	Y	y-form, no dots above (looped or straight descender)
+Y71	R03	Y	Y	y-form, no dots above (looped or straight descender)
+Y72	R04	Y	Y	y-form, no dots above (looped or straight descender)
+Y73	R05	Y	Y	y-form, no dots above (looped or straight descender)
+Y74	R05	Y	Y	y-form, no dots above (looped or straight descender)
+Y75	R05	Y	Y	y-form, no dots above (looped or straight descender)
+S1	L02	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S2	L03	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S3	L03	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S4	L04	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S5	L11	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S6	L12	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S7	L12	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S8	L14	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S9	L16	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S10	L18	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S11	L19	S	S	dot at the foot, one stroke rising to ascender height, sits on the line, no closed loop, no descender (the 0702 S form)
+S12	R02	S	SH	short curled stroke joined to a tall long-s whose loop runs below the line, one sign (the 0730/0758 [sh-lig])
+S13	R02	S	SH	short curled stroke joined to a tall long-s whose loop runs below the line, one sign (the 0730/0758 [sh-lig])
+S14	R02	S	SH	short curled stroke joined to a tall long-s whose loop runs below the line, one sign (the 0730/0758 [sh-lig])
