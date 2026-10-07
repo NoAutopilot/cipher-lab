@@ -1,0 +1,13 @@
+{
+ "N_groups": 34,
+ "letters": 105,
+ "real_4gram": -0.723,
+ "shuffle_4gram_mean": -1.296,
+ "shuffle_4gram_p95": -1.087,
+ "shuffle_4gram_max": -0.971,
+ "real_cover": 0.971,
+ "shuffle_cover_mean": 0.865,
+ "shuffle_cover_p95": 0.941,
+ "shuffle_cover_max": 0.972,
+ "shuffles": 200
+}

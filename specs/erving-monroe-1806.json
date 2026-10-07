@@ -1,0 +1,26 @@
+{
+ "slug": "erving-monroe-1806",
+ "name": "George W. Erving to James Monroe, Lisbon 23 May 1806, coded passage (WE028)",
+ "date": "1806-05-23",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext": "see ciphers/erving-monroe-1806/ciphertext.txt (34 numeral groups)",
+ "ciphertext_source": "LOC James Monroe Papers mss33217 Series 1 reel 3 frame 0829 (tile.loc.gov IIIF), two blind passes 7 Oct 2026",
+ "alphabet": "WE028 numeral groups 1-1600",
+ "constraints": [
+  "key held: tools/data/uscodes-1800/WE028.tsv"
+ ],
+ "cheap_tests_in_order": [
+  "decode with WE028 + shuffled-key control (done 7 Oct 2026, KH4-D)"
+ ],
+ "matched_control": "control.py: 200 shuffled WE028 keys, same 34 groups",
+ "judge": {
+  "language": "en18",
+  "letters_min": 50,
+  "letters_max": 400,
+  "control_samples": 200,
+  "corpora_note": "en18 = 1795-1815 American diplomatic English (tools/data/en18/README.md); at N=105 letters the fold spread is unmeasured -- a PASS/FAIL of unknown reliability at this length (rule 3)"
+ },
+ "written": "7 Oct 2026, KH4-D (LANE KH-4, account 4)"
+}

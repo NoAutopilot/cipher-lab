@@ -1,0 +1,7 @@
+L01	1173=when/S 134=mis/S 1379=ter/S 146=mon/S 1486=ro/S 501=E/S 1199=would/S
+L02	1462=ret/S 490=ur/S 401=N/M 190=home/S 1385=the/S 78=president/S
+L03	360=not/S 483=until/S 184=his/S 385=suc/S 1022=ces/S 252=sor/S 680=ar/M 1480=rive/S 1067=S/S
+L04	134=mis/S 1379=ter/I 146=mon/M
+L05	1486=ro/S 501=E/S 1199=would/S 1310=be/S 1385=the/S 417=ne/S 651=X/M 1361=T/S 78=president/S
+# joined: whenmistermonroEwould | returNhomethepresident | notuntilhissuccessorarriveS | mistermon | roEwouldbetheneXTpresident
+# grades: H=0 C=0 S=29 M=4 I=1 of 34

@@ -1,0 +1,12 @@
+# George W. Erving to James Monroe, Lisbon 23 May 1806 (LOC James Monroe Papers, mss33217 Series 1 reel 3, frames 0828-0830;
+# coded lines on frame 0829 right page, lines 1-5). Numeral groups only, as transcribed: two blind Sonnet passes on the
+# line crops in images/ (passA.tsv, passB.tsv, 33/33 agree, tools/reconcile_passes.py), 7 Oct 2026, KH4-D.
+# {N} = a group neither pass read: L04's second group is overwritten in the manuscript with "137" interlined above it;
+# 1379 is this worker's reading of the overwrite (grade I). L04's last group 146 sits at the crop edge (both passes "140?";
+# this worker reads 146 on the full frame; grade M). A struck-out blot after 190 on L02 is omitted (cancelled by the writer).
+# Plain words between runs (from the image): L01 "Randolph asked", L02 "answered" after 78, L04 "the other bluntly observed that he".
+L01	1173 134 1379 146 1486 501 1199
+L02	1462 490 401 190 1385 78
+L03	360 483 184 385 1022 252 680 1480 1067
+L04	134 {1379} 146
+L05	1486 501 1199 1310 1385 417 651 1361 78
