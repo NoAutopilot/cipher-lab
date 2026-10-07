@@ -7495,3 +7495,8 @@ are estimates, not measured. Ranked by EV = p_move x value / cost. Not promoted;
 | 15 | S3 | cleveland-barlow-grenville-1807 | catalogue note only | none | no Barlow/Grenville hit in the three repos beyond unrelated Joel Barlow | Fetch the item at full size, count signs, check the box for sibling letters | 0.1 |  |
 | 16 | S3 | bne-granvela-hurtado-1548-51 | catalogue note only | none located | catalogued only: aaymeloglu bne-ranked.md lines 27, 30, 31 | Look for a sibling key in the Granvela papers before any attack | 0.03 |  |
 | 17 | S3 | kassel-moritz-chem-geheimschrift-1623 | catalogue note only | none on the leaf | no hit for 'chem. 19' in the repos | Find the 1961 alphabet through a library index, then test one leaf | 0.03 |  |
+
+**NEWT-C check-solved results (7 Oct 2026, 00:07-00:44 UTC).** CS NC-MONL fr4735-monluc-lansac-poland-1573: partial, spec written (Monluc
+residue; Lansac read by Bourdeau), to NEWT-A. NC-CROI colbert-croissy-london-1668-74: found-solved (DECODE 25/72; residue sample glossed).
+NC-BAUG clair369-baugy-castille-maurier-1616: found-solved (cabinet-noir). NC-SANC, NC-BETH, NC-ENGA: blocked (per-folder NOTES.md "While
+waiting"). Rows 8-11 not yet sent.

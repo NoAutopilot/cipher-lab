@@ -5790,3 +5790,27 @@ Five Sonnet check-solved workers, all D, 9.29 total:
 - cornwallis-pro3011-1780 blocked (Saberton 2019 keys in print; Cornwallis Papers 2010 unopened). While waiting: TNA Discovery descriptions.
 - charles-hm-cabinet-1645 blocked (20 symbols, too short; sibling ciphertext unlocated).
 Known-text share: about 17% (Cornwallis). What is left: nothing in Tier A/B worth a $3 test; new targets have to come from PART C's fresh scout.
+
+## LANE NEWT-C-account-4 handoff (session_01XXcLqsU7GkbYZoN7rPaBzx, account 4), 7 October 2026 (closed 01:1x UTC: top 6 checked, lane about 29.6 of 60)
+
+Brief .claude/briefs/runs/2026-10-06-acct3-newtargets.md PART C; jobs .claude/briefs/runs/2026-10-06-account4-newtc-scouts.md,
+2026-10-07-account4-newtc-checks.md, 2026-10-07-account4-newtc-followups.md. Raw scout rows sources/newt-scout/2026-10-06/S1-S4;
+17 kept rows in QUEUE.md "NEWT-C scout, 6-7 Oct 2026 (account 4)". Twelve Sonnet workers, all D, 25.02 total.
+- Scouts: S1 DECODE key-docs 1 kept (the non-decrypted list is unchanged since 24 Sept; 1,106/1,186 ids already claimed -- source near
+  exhausted); S2 Gallica fr./Melanges Colbert 4; S3 Europeana/DPLA 5 (mostly catalogue-note only); S4 Tomokiyo key pages 7 (best yield).
+- fr4735-monluc-lansac-poland-1573 **partial, spec written, handed to NEWT-A** (account 1): Lansac's six letters already read by Bourdeau
+  (targets/lanssac); Monluc Cipher 1 residue 500-3,950 signs (4 unglossed pages provisional), f.86 glossed as known answer; test 1 = Tomokiyo
+  Monluc Cipher 1 table on f.86 vs shuffled control.
+- colbert-croissy-london-1668-74 found-solved: 25/72 folios DECODE Decrypted; NC-CROI2 sample of the 47 residue found glossed or copies, 0
+  unglossed; one unglossed ~370-group Lisbon letter (Colbert 149 f.115-118) outside the list -- below the pool bar.
+- clair369-baugy-castille-maurier-1616 found-solved: el-descifrador/cabinet-noir baugy-1616 read ff.2 and 59 (2 Oct 2026). Residue Castille/
+  Du Maurier ~4 short letters, not a pool.
+- fr16147-sancy-constantinople-1611-18 blocked (no edition openable; fr.16148 ff.200,206 unglossed, Bourdeau key-in-hand listing);
+  fr3669-bethune-rome-1625 blocked (Avenel t.II unopened; 29/30 letters glossed on the leaf); fr15972-england-ambassadors-1595-1608 blocked
+  (Boderie 1750 prints the 1606-08 dispatches in clear; Kermaingant 1895 unreachable for the rest).
+- Held: rijks-margaretha-parma-key-1567 (EV 0.9, one ~330-sign sample on a printed key sheet).
+Lessons: el-descifrador/cabinet-noir is a third solver repository and caught 1 of 6 here -- every scout and check-solved must grep it;
+scouts grep spelling variants (Lansac/Lanssac); Sonnet check-solved workers stopped at 6-13 min of 60-70 min boxes with their own next steps
+undone, twice, even when told the box is a minimum. Known-text share of worker spend about 19% (CROI, CROI2, BAUG).
+What is left: QUEUE rows 8-11 (colbert-embassy-ciphers-1665-71, fr15972-cp39-spanish-intercepts-1595-96, fr4736-courcelles-chateauneuf-1586,
+colbert-croissy-alsace-cleves-1659-66; EV 0.4-0.5, all Tomokiyo partial keys) are the next check-solved candidates if a lane wants them.
