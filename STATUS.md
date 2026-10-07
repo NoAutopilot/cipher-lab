@@ -5939,3 +5939,29 @@ period-deciphered leaf for the unread R1166 P4 (guardrail-allowed); together 37%
 
 Left: eckert-1864 No 2 pp.107-182 (~34 entries, expected mostly N1; read only if the next lane accepts the known-text cost); fr7129 and
 fr15564 and costabili q/TT wait on the owner's sign sorter; hessen-daenemark nomenclator needs physical access.
+
+## LANE DEFAULT-account-1-20261007-1440 handoff (session_01FEtepdKvZ6iYUGCHy52qyE, account 1), 7 October 2026 (closed 16:35 UTC: runnable hot backlog spent, lane 42.96 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-07-account1-default-1440-jobs.md. Gate 0a: SESSION-SWEEP-account-1
+row still `claimed` since 5 Oct 22:40, TSV on disk, proceeded (as RUN8-12 / DEFAULT-0042). Backlog a: no eligible VERIFY-BACKLOG row
+(Birago off limits, eckert-1864 rows held by account 4's live lane, nla-heinrich N0, the rest priority none). Backlog b: `next_steps.py
+--hot-only` runnable rows filtered against 7 Oct briefs and ROOM claims < 6 h.
+Workers (11, Opus, all ledgered; 4 waves 14:47-16:34): 36.25 by get_session; orchestrator 6.71; five_hour `allowed` throughout. DA1-NOX
+ran 1.44x its $5 cap; every other worker under cap. GitHub refused pushes 15:07-15:15 (500) and `git fetch` served a stale origin/main
+until fetched by explicit refspec.
+
+Results:
+- colbert26-lathuillerie-1644: DA1-COL (word pairing c50/c3940/c47) merged six codes to C, DA1-COL2 (second blind pass) lowered 46 ce,
+  DA1-COL3 (held-out c54-56/c62-63) raised 30 s and 85 na (luy -> na); verifier DA1-COLV then returned 20/30/67/81/85/96 to M (values
+  chosen on the same units scored; f.23's own gloss conflicts), 16 se stays C; f.23 C 110/306 (the start-of-day count). AUDIT.md written:
+  N0 both leaves (the period gloss is the decipherment), key period, depth D1. DA1-COL and DA1-COL3 ledgered X.
+- fr16142-noailles-constantinople-1571: c262 gloss blind word passes control FAIL, blind Opus gloss eye [retired] (third miss); c510
+  look-alike pass 47/62 settled, 22.9% disagreement blocks the c510 score; focus.tsv for the owner's sign sorter.
+- fr16104-vivonne-spain-1572: ink 54 depth re-check holds D1 (H 76.2%), --check ok, status.json stale counts corrected.
+- fr2980-gramont: fr.3040 barred z relabelled zh (25 tokens), not keyed; key.tsv unchanged; n8gra3 PASS 0.889.
+- antt-linhares-chave: pt18 letter 5-gram re-score a non-test (gluing gate 0.107 > 0.05); reading unchanged.
+- bowes-walsingham-1583: Walsingham-Wotton rung already ran 6 Oct (stale NEXT-STEPS line marked done); Wayback CDX for CottonMSBowes.png
+  unreachable from the cloud (resets, 429), desk-browser lookup suggested.
+Known-text share: colbert26 (N0) took 18.98 of 36.25 worker spend (52%), over the brief's one-fifth guideline; see the orchestrator LEDGER row.
+What is left: nothing runnable on the hot list outside live lanes' folders; colbert26's next step is the owner-side or a different
+instrument (the word-pairing route now has a verifier's M verdict on its picks); fr16142 waits on the sign sorter.

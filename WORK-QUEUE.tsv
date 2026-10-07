@@ -292,5 +292,5 @@ JVN-LVN	account-4	.claude/briefs/runs/2026-10-07-acct3-batch-1117.md	Opus 5.5	8	
 DEFAULT-account-2-20261007-1210	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-07 13:37	2026-10-07 12:10	auto-fill: empty queue
 B1320-A1	account-1	.claude/briefs/runs/2026-10-07-acct3-batch-1320.md	Opus 5.5	10	75	claimed session_012E12d7nNshZufJTP52B9dG 2026-10-07 13:40	2026-10-07 13:2x	eckert-1862 verifier + stale checks; Bertomeu chapter; La Courneuve microfilm + form fields
 DEFAULT-account-4-20261007-1335	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-07 15:24	2026-10-07 13:35	auto-fill: empty queue; closed 15:2x UTC, backlog spent, ~55 of 60
-DEFAULT-account-1-20261007-1440	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_01FEtepdKvZ6iYUGCHy52qyE 2026-10-07 14:40	2026-10-07 14:40	auto-fill: empty queue
+DEFAULT-account-1-20261007-1440	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-07 16:35	2026-10-07 14:40	auto-fill: empty queue
 HUNT-NO2	account-2	.claude/briefs/runs/2026-10-07-acct3-hunt-no2.md	Opus 5.5	10	90	claimed session_01LUEKwykFTvP7tRpZoxiyXD 2026-10-07 16:10	2026-10-07 15:2x	Huntington Cipher No 2 update: draft + separate gate-7 check, not sent
