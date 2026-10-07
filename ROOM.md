@@ -10295,3 +10295,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-07 08:22 | standby (owner account) | alive; holder account 3, last line 07:11 (signed acct3-orchestrator check-in 07:1x); no takeover
 2026-10-07 08:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 08:34 UTC: spawned 0, queued left 0 (B0709-A4 done 07:41; autofill: default lane < 12 h); standby: account-3 orchestrator check-in 07:11 UTC (84 min), no takeover
 2026-10-07 08:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 08:39: spawned 0, queued left 0 (autofill: default lane < 12 h)
+2026-10-07 09:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 09:10 UTC: spawned 0 (), queued left 0
