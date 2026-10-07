@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	10	ok
+api.openalex.org	10	ok
+api.semanticscholar.org	7	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22il%20vous%20cognoistroit%20et%20que%20vous%20le%20supplanteriez%22
+archive.org	2	ok (some errors)
+be-api.us.archive.org	20	ok (some errors)
+www.googleapis.com	10	ok

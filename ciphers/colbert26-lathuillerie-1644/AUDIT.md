@@ -115,7 +115,15 @@ this audit (7 Oct 2026):
 
 ### 5a. print_check result
 
-(filled below when the run finished)
+`tools/print_check.py` finished 16:3x UTC (print-check.tsv, print-check-hosts.tsv; requests: archive.org 2, be-api 20, googleapis 10,
+OpenAlex 10, Semantic Scholar 7, CrossRef 10). 10 phrases x 4 listed sources + global hosts, 90 rows. Le Clerc vols 2-4 (cached djvu text):
+no hit for any phrase; vol 1: djvu 500, be-api fts no hits for 7 phrases, 3 not searched (502). IA global full text: 4 phrases not
+searched (502), the rest no hits. Google Books: the high counts (333-348 volumes) are loose word matches, not the phrase (top titles are
+Francois de Sales, Bible, dictionaries); the one narrow result is "erection en duche et principaute de l'empire du comte de meurs" -> 6
+volumes, all Groen van Prinsterer, *Archives ou correspondance inedite de la maison d'Orange-Nassau* (1859) -- the Orange side of the
+Meurs affair is in print there; whether it prints this La Thuillerie letter was not checked (snippet only; next verifier step, an IA
+full-text read of that series volume for "Meurs" 1646). Semantic Scholar: 4 phrases blocked by 429; the others matched nothing relevant.
+OpenAlex/CrossRef: no relevant record. None of these alters N0: the decipherment of each item is on the leaf itself.
 
 ### 6. Classification
 
