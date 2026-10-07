@@ -344,8 +344,8 @@ addressee line other than "Mon fil" and no date line were found in the cropped r
 Not found in print: nothing searched (transcription job).
 
 ## Remaining gaps
-Read so far: 81 of 102 figure tokens at H (79%); 21 M (NEVF-APPLY, 6 Oct 2026; was 75/27); nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
-- L05 run (1 token M, token 79): a person confirmed all 8 split digits in the sign sorter (NEVF-APPLY, 6 Oct 2026: 6 tokens M -> H); 79's 7 is confirmed too, but the token stays M on the pairing question (45 79, 79 null by key, vs 4 57 9, 57 = m) - blocker: open-codes; a digit read cannot settle a pairing; next: a verifier's judgement of the pairing against the confirmed 20 digits (a re-pairing at pos 12-13 shifts every later pair), inside the owed AUDIT.md pass, ~$0 extra
+Read so far: 80 of 102 figure tokens at H (78%); 22 M (D07-NEVFV AUDIT 3, 7 Oct 2026: token 45 H -> M; NEVF-APPLY had 81/21, was 75/27); nomenclator transcribed (204 rows, 192 H); 1 code word read at H (xiiij = Seigneur, A1B-FILS-XIIIJ2)
+- L05 run (2 tokens M, 45 and 79): digits all confirmed by a person (NEVF-APPLY); the pairing (45 79, e + null, vs 4 57 9, m with two orphan digits, giving 'et moiens' with L06) was judged by the verifier from the image (D07-NEVFV AUDIT 3, 7 Oct 2026): even spacing, no grouping mark, left open and 45 lowered to M - blocker: open-codes; not-attempted: whether this scribe writes stray single digits elsewhere under key no.25; next: read the figure runs of one sibling letter under the same key (fr.4715 f.27 or f.38, Tomokiyo) for single-digit orphans, ~$3
 - L10 tail past the ink blot (5 tokens M) - blocker: illegible; blot over the 14th token in the only image; next: a colour/higher-resolution image if Gallica ever serves one
 - fr.3416 f.38 known-answer alignment - blocker: illegible; two attempts FAIL the pre-registered gate with every number flat (FILS-F38 0.309 vs shuffled-gloss p95 0.327 / shuffled-key p95 0.306; A1B-FILS-F38B 0.304 vs 0.324 / 0.312, f38b/f38_align.txt): the second figure pass agrees with the first on bands 2-4 and the second gloss pass is all L, so reconciliation returned pass A's gloss unchanged; blind passes + align_f38.py are retired for this test (rule 3 third-attempt clause); next: new material only -- a clear minute or register copy of no.32 (17 Nov 1589) in the Nevers registers (fr.3994/fr.4715/fr.3993 catalogue check), or the owner's own reading of the gloss in the sign sorter, ~$1 for the catalogue check
 - upper letter U01-U26, B11, M1-M4 (clear text): reconciled once (FILS-RECON); 251 words H, 43 M, 23 U - blocker: illegible; to every machine reader tried, measured by its own hidden H-word control: 1100-px word windows to Sonnet (A1B-FILS-UPPER, reads H neighbours wrong) and to Opus (A1B-FILS-UPPER2, 0/6 vs gate 5/6), then whole 2400-px line strips to Opus (DEF1-F3416, 5 Oct 2026, 1/6 vs gate 5/6, verify/upper_strips/): both instruments retired under rule 3's third-attempt clause; the M/U words need a person reading the hand (a palaeographer, or the owner on the strips images/f43u_*), not a fourth machine pass
@@ -360,7 +360,7 @@ Read so far: 81 of 102 figure tokens at H (79%); 21 M (NEVF-APPLY, 6 Oct 2026; w
 - [x] key-rebuild: nomenclator transcribed by two blind passes (FILS-NOMEN, keys/key_no25_nomenclator.tsv, 192/204 H)
 - [x] image-check: 2x re-crops of L05/L10 read and reconciled (FILS-CLEAR); L05 split digits read by a person in the sign sorter (R10-NEVF2 built, NEVF-APPLY applied 6 Oct 2026): 6 tokens M -> H
 - [x] retry: blind Sonnet word-window check of the upper letter's M/U words (A1B-FILS-UPPER): 1 token M->H, reader below capability on this hand; the same windows to a blind Opus reader (A1B-FILS-UPPER2): 0/6 controls, non-test, 0 tokens moved; second blind read of L05 (FILS-NOMEN): 3 tokens M->H, 7 still split; targeted read of the stroke under L10 (A1B-FILS-L10): 28 = Ml de Biron withdrawn; wider-crop read of the L02 code word (A1B-FILS-XIIIJ2): xiiij = Seigneur M->H; glyph-atlas classification of the L05 split glyphs (A1B-FILS-L05): non-test at the pre-registered class gate (no H exemplar of 0), 0 tokens moved; the same re-registered without class 0 (R9-NEVF, 6 Oct 2026): non-test at the leave-one-out gate (0.644 vs 0.90), 0 tokens moved; whole line strips of the upper letter to a blind Opus pass C (DEF1-F3416, 5 Oct 2026): 1/6 H controls (gate 5/6), non-test, 0 tokens moved, line-strip instrument retired
-Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: the AUDIT.md verifier pass owed for the moved counts (rule 10 propagation), judging token 79's pairing at the same time
+Verdict: keep going: 1 internal gap (3 more illegible); cheapest next: a sibling key-no.25 letter (fr.4715 f.27 or f.38) checked for orphan single digits, to settle the L05 45 79 / 4 57 9 pairing (AUDIT 3 done 7 Oct 2026)
 
 ## FILS-UPPER pre-registration (account 1, 3 Oct 2026, written 10:3x UTC before any read returned)
 
@@ -772,3 +772,11 @@ z 5.04 (unchanged); H tokens only 62 letters -1.029 rank 1/201 z 5.38 (was 59 le
 z 5.66; shuffled-target control beats real 0/200. No spec in specs/ for this target, so no judge_plaintext.py run.
 AUDIT.md not touched: the graded counts moved (75 -> 81 H; depth_pct there is 73.5%), so a verifier pass is owed (rule 10 propagation),
 flagged in ROOM.md. Requests: 0 network. Vision: 0 looks. Not found in print: nothing searched (apply job).
+
+## D07-NEVFV verifier pass (account 1 for LANE DEFAULT-account-1-20261007-0042, 7 Oct 2026, 00:50-01:0x UTC)
+
+AUDIT.md "AUDIT 3 (propagation)". `decode_f35.py --check` OK; NEVF-APPLY's H 81 / M 21 reproduced. Token 79's pairing judged from the
+line image: even spacing, no grouping mark; `45 79` keeps the frame (pre-registered rule), `4 57 9` reads "et moiens" with L06 but needs
+two one-digit orphans key no.25 has no code for -> 79 left M, and **45 lowered H -> M** (same question). **Reading change after AUDIT.md:
+grades only (H 80 / M 22), no letter changed.** Depth D1, 78.4%; N4 unchanged. status.json and PROGRESS.tsv updated; SO-NV02-F35 prompt
+quotes no counts, unchanged. Requests 0 network.

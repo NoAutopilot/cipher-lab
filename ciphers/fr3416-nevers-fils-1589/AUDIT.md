@@ -333,3 +333,39 @@ Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **BnF fr.3416 f.35r, the duc de Nevers to his son (Charles, duc de Rethelois), c. late 1589**: **D1** (Non-decrypted; outward "fragments read"), 73.5% (H 75 of 102 figure tokens). Check: period key sheet fr.3995 f.51r (H) but the figure runs read as isolated syllables/words ('s.es.auoir'), no stretch above AD. Class without a reading: not counted as a unique solve.
+
+## AUDIT 3 (propagation) -- D07-NEVFV, account 1 for LANE DEFAULT-account-1-20261007-0042, 7 Oct 2026, 00:50-01:0x UTC by date -u
+
+Verifier, separate session from every solver and from NEVF-APPLY (session_01US4m8bWufn8tBfr1swic9c). Rule 10 propagation
+after NEVF-APPLY (c1101fad, 6 Oct 2026) moved the graded counts; rule 4a depth re-check. Nothing decoded beyond f.35r.
+
+1. **Re-derivation.** `python3 decode_f35.py` then `--check`: `check: OK` (before and after the one grade correction below).
+   Recount of `f35r_ciphertext.tsv` as NEVF-APPLY left it: **H 81, M 21 of 102** -- NEVF-APPLY's figures reproduce.
+2. **Token 79 (L05, pos 13-14) judged from the line image** (`images/src_..._f43_3950_3560_3150_1800.jpg`, crop x 1750-3150,
+   y 480-680, and x 2350-2800 at 2x; scratch crops, not committed). The run reads `4 3 1 8 1 9 8 7 3 9 4 5 7 9 6 5 5 4 1 6`
+   with **even spacing and no grouping mark** between 4|5 or 7|9 (or anywhere in the run), so the image does not settle
+   the pairing. The two parses:
+   - `45 79` (committed): keeps the run's frame from its first digit (the folder's pre-registered pairing rule; all 10 pairs
+     are key no.25 codes); run 4 + run 5 (L06 `45 64 83`) read `e..t.e.oi.` + `ens` = "et e oiens" -- no word.
+   - `4 57 9`: reads "et moiens" (= *et moyens*) across the line break, a plain French phrase, but needs **two orphan single
+     digits**, and key no.25 has no one-digit code (its nulls are 01-09, 11-19, x9).
+   Decision: **left M**, reason: the pre-registered rule (pair from the run's first digit; neither key coverage nor
+   language chooses a pairing) keeps `45 79`, while the language evidence for `4 57 9` is real and keeps it open. Not
+   settleable from the image on disk; the next step would be a second Nevers letter under key no.25 showing whether this
+   scribe writes stray single digits (fr.4715 ff.27, 38, 59, 68, 69 per Tomokiyo).
+   **Correction (over-claim):** token **45 at L05 pos 11-12 was H**, but it is the other half of the same question (under
+   `4 57 9` there is no token 45), so its value is not settled either: **H -> M** (note in `f35r_ciphertext.tsv`).
+   Run 4 now renders `e..t.E.oi.`; no letter changed, only case.
+3. **Counts now: H 80, M 22 of 102 figure tokens (78.4%).** Statistics (`decode_f35.py`, seed 1, fr16): all tokens 72 letters
+   -1.150 rank 1/201 z 5.04 (unchanged); H tokens only 61 letters -0.995 rank 1/201 z 5.48; positive control NV-03 f.38v
+   -0.769 z 5.66; shuffled-target control beats real 0/200.
+4. **Depth (rule 4a):** **D1** stays (outward "fragments read"), depth_pct **78.4** (H 80 of 102; was 73.5). Check: period key
+   sheet fr.3995 f.51r (H); runs still read as isolated syllables/words ('s.es.auoir', 'nlesauroit'), no stretch above the
+   authentication distance and no code value read in two contexts; the "et moiens" parse is not adopted, and even adopted it
+   would be a two-word fragment. No depth_sentence (D1). `tools/depth_check.py`: runs clean; the item stays among "class
+   without a reading, not counted" (13 D0/D1), unique solves 17.
+5. **N-class unchanged (N4, third audit, 3 Oct 2026).** No letter of the reading changed (NEVF-APPLY: case only; this pass:
+   case only), so no phrase-delta search was run. The safe sentence above ("graded 62 of 102 tokens H") is out of date:
+   read it with **80 of 102 tokens H** (22 M). `second-opinions/PROMPT-chatgpt-NV02.md` (SO-NV02-F35) quotes no counts and no
+   run-4 text, so it needs no change; status.json's result row and PROGRESS.tsv row updated to H 80 / M 22.
+Requests: 0 network. Vision: 2 looks at local crops by this session (no subagent).
