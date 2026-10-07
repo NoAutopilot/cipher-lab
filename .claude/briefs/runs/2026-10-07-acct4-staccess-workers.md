@@ -38,6 +38,7 @@ steps in the TSV/NOTES, stop; never write a dollar figure for yourself; trial cr
 carries the control result beside it (rule 3).
 
 ## SA-G (Gallica screen; Sonnet 5.5; cap USD 8; box 150 min; ~14 units at ~USD 0.4 each + fixed ~2.5)
+vision calls: 12 x USD 0.4 = 4.8 (+ fixed ~2.5 = 7.3 of cap 8).
 Stop before starting a unit that would cross 80% of cap or box. Gallica only (`tools/gallica_folio.py` for folio->canvas;
 IIIF image API at reduced size). Units in this order (highest key value first):
  a. line 180: BnF Baluze 155 canvases 270-440 (Servien 1632, Sabran key; DECODE R2751/R2752 already flagged f.131-134,
@@ -52,6 +53,7 @@ IIIF image API at reduced size). Units in this order (highest key value first):
  Line 210 (Danzay 1566-88) stays dropped (outside the key window) -- do not screen.
 
 ## SA-O (other hosts screen; Sonnet 5.5; cap USD 7; box 150 min)
+vision calls: 10 x USD 0.4 = 4.0 (+ fixed ~2.5 = 6.5 of cap 7).
  a. lines 213/225 and 214/226: ANTT PT/TT/CLNH/0086/02 (126 images) and /0086/09 (212 images), DigitArq via
     `tools/digitarq_fetch.py` at reduced size, >=3 s apart. Control: the antt-linhares-chave target leaf (its NOTES).
  b. line 385: RAH 9/6958 Leg. XIX, the 8 unopened Gonzalez Bravo neighbours + up to 30 later images (OAI didl ids; image
@@ -63,6 +65,7 @@ IIIF image API at reduced size). Units in this order (highest key value first):
     (host-table route); screen only hits. Control: the huntington-blathwayt target item.
 
 ## SA-MP (Monroe reels + Pinkney M30; Sonnet 5.5; cap USD 7; box 150 min)
+vision calls: 10 x USD 0.4 = 4.0 (+ fixed ~2.5 = 6.5 of cap 7; KH4-D2 ran 1.9x a 3 cap on the same reels).
  a. KEYHUNT lines 59 and 61: Erving to Monroe 23 Sep 1804 and the undated Nov-Dec 1804 item, LOC mss33217 S1 reel 3:
     every frame f0496-0530 and f0561-0640 at pct:20 (KH4-D2's next steps). Then lines 66 and 70 (Erving 24 Feb 1807,
     Bowdoin 27 Mar 1807, not located in r4 f0040-0072 / f0106-0148): read the 1904 calendar neighbours for a misfiled
