@@ -1,0 +1,20 @@
+# MONLUC-2 7 Oct 2026: K07 instances on f.86 (c172), native sign crops (images/signs/c172_K07_blind.png, crop #), source px in src_..._f172_1230_950_2580_520.jpg
+# blind = a Sonnet sorter shown only the shuffled crops (no gloss, no line): A peaked z-top, B flat-top 2; reader = MONLUC-2 by eye (not blind to the gloss)
+line	pos	sign	x	y	crop	reader	blind
+L02	1	K07	128	240	#13	hook	A
+L02	7	K07	368	228	#12	plain	B
+L02	20	K07	878	197	#2	hook	A
+L02	23	K07	995	192	#1	plain	B
+L02	31	K07	1315	170	#16	hook	B
+L03	6	K07	335	372	#9	hook	A
+L03	19	K07	875	333	#15	hook	A
+L03	22	K07	1007	330	#5	hook	A
+L03	30	K07	1305	311	#11	hook	?
+L03	39	K07	1630	295	#6	hook	?
+L03	45	K07	1845	285	#17	hook	A
+L03	50	K07	2085	270	#10	plain	B
+L03	56	K07	2260	283	#8	plain	B
+L04	7	K07	370	492	#3	hook	A
+L04	22	K07	915	450	#4	hook	?
+L04	27	K07	1120	445	#7	plain	B
+L04	30	K07	1237	440	#14	plain	B

@@ -1,0 +1,59 @@
+{
+ "decoded_letters": 147,
+ "gloss_letters": 145,
+ "rows": [
+  {
+   "N": 50,
+   "decode": {
+    "pass_": false,
+    "language": -1.733,
+    "real_p05": -0.978,
+    "null_p99": -1.569,
+    "words": 0.7
+   },
+   "gloss": {
+    "pass_": true,
+    "language": -0.774,
+    "real_p05": -0.978,
+    "null_p99": -1.569,
+    "words": 0.96
+   }
+  },
+  {
+   "N": 100,
+   "decode": {
+    "pass_": false,
+    "language": -1.744,
+    "real_p05": -0.948,
+    "null_p99": -1.711,
+    "words": 0.67
+   },
+   "gloss": {
+    "pass_": true,
+    "language": -0.902,
+    "real_p05": -0.948,
+    "null_p99": -1.711,
+    "words": 0.92
+   }
+  },
+  {
+   "N": 147,
+   "decode": {
+    "pass_": false,
+    "language": -1.864,
+    "real_p05": -0.91,
+    "null_p99": -1.752,
+    "words": 0.673
+   },
+   "gloss": {
+    "pass_": true,
+    "language": -0.894,
+    "real_p05": -0.926,
+    "null_p99": -1.738,
+    "words": 0.91
+   }
+  }
+ ],
+ "positive_control_passes_at": [],
+ "verdict": "judge untestable at this N"
+}

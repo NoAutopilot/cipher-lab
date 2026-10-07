@@ -1,0 +1,71 @@
+{
+ "labels": "blind",
+ "instances": 17,
+ "used": 11,
+ "faced_by_group": {
+  "A": "nsttt",
+  "B": "gggggt"
+ },
+ "statistic": 8,
+ "perm_p": 0.0219,
+ "draws": 10000,
+ "seed": 1,
+ "all_lines": {
+  "K07": {
+   "n": 10,
+   "aligned": 9,
+   "faced": "gggggtttt",
+   "majority": "g",
+   "share": 0.556,
+   "table": "g",
+   "verdict": "mixed"
+  },
+  "K69": {
+   "n": 7,
+   "aligned": 5,
+   "faced": "nsttt",
+   "majority": "t",
+   "share": 0.6,
+   "table": "g",
+   "verdict": "mixed"
+  }
+ },
+ "held_out": {
+  "L02": {
+   "K69_train": "ntt",
+   "K07_train": "gggttt",
+   "corrections": {
+    "K69": "t"
+   },
+   "base": 34,
+   "corrected": 37,
+   "gain": 3,
+   "shuffle_gain_mean": 0.15,
+   "shuffle_gain_p95": 2,
+   "passes": true
+  },
+  "L03": {
+   "K69_train": "qst",
+   "K07_train": "ggiltu",
+   "corrections": {},
+   "base": 40,
+   "corrected": 40,
+   "gain": 0,
+   "shuffle_gain_mean": 0.0,
+   "shuffle_gain_p95": 0,
+   "passes": false
+  },
+  "L04": {
+   "K69_train": "nsttt",
+   "K07_train": "ggggttt",
+   "corrections": {},
+   "base": 16,
+   "corrected": 16,
+   "gain": 0,
+   "shuffle_gain_mean": 0.0,
+   "shuffle_gain_p95": 0,
+   "passes": false
+  }
+ },
+ "gate_passed_lines": 1
+}
