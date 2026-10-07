@@ -4198,7 +4198,7 @@ editors (their catalogue flags 5 Apr and 4 May 1805 "Digital image"). Both are t
 Requests: fms14.longtermsolutions.com one session (~300 UI round-trips over 8 minutes, one record at a time, 1.8-2.2 s
 apart), academics.umw.edu 1 page. No vision calls, no subagents.
 
-## TOMO-ARM wave 1b: Armstrong to Monroe, 7 July 1807, postscript (7 Oct 2026, 22:10-22:20 UTC)
+## TOMO-ARM wave 1b: Armstrong to Monroe, 7 July 1807, postscript (7 Oct 2026, 22:01-22:07 UTC)
 
 LOC James Monroe Papers, Series 1 reel 4 frame 0302 (docket "J. Armstrong 7 July 1807", filmed mirror-reversed; ARM H25 had
 it as "clear prose"), fetched once at full size from tile.loc.gov (`service:mss:mss33217:004:0300:0302`), mirrored and rotated
