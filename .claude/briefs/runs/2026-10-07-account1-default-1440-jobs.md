@@ -104,3 +104,15 @@ CDX API then the `if_` capture (CLAUDE.md access playbook item 2); one retry aft
 sources/cryptiana/ (unmodified snapshot, credit Tomokiyo), compare its sign alphabet with this letter's signs 02-28 and the f.290-293 key
 as the known-keys rung describes, with a control that can differ (shuffled sign assignment), and tick or retire the rung. If not
 captured: log the CDX result (URL, date, rows) in NOTES.md and mark the action done.
+
+## Wave 3 (spawned 15:41 UTC 7 Oct)
+Wave 2 done by 15:25 (COL2 3.87, BOWW 1.24). Intake gate: colbert26 as wave 1 (partial, citation found, exit 0).
+
+### DA1-COL3 -- colbert26-lathuillerie-1644 held-out word pairing on c54-56 and c62-63 (solver, Opus; cap 7, box 80 min)
+Verdict (NOTES.md, DA1-COL / DA1-COL2 sections): word pairing on c54-56/c62-63 as held-out units for the codes DA1-COL marked
+FAIL-LOWPOWER (and the two that passed DA1-COL2's pass only: 30 s, 75 la; and 46 ce, now M; and 31 t, held as a data conflict).
+Pre-register before reading: which codes are tested, the held-out statistic, the pairing-shuffle control that can differ on it, and the
+gate. Units: 5 canvases x 1 pairing pass + 1 reconciliation (price per pass, Usage 6); if the cap or box would be crossed after c54-56,
+stop there and write what remains. Use the folder's existing native crops and siblings/word_da1.py / word_col2.py method unchanged. A code
+reaches C only if it passes on held-out material per the registration; never lower a code already at C on held-out silence alone (a miss
+on held-out is logged, not a demotion, unless the registration says so). Flag in ROOM for a verifier at the end (no AUDIT.md yet).
