@@ -26,7 +26,7 @@ NOTES.md, and the common tail in .claude/briefs/README.md. Model Opus 5.5 unless
 
 ---
 
-## SFZ-1 (Opus, cap $16, box 150 min): Amidani 1447 known-plaintext key rebuild, hold-out gate, then f.70
+## SFZ-1 (Opus, cap $18, box 150 min): Amidani 1447 known-plaintext key rebuild, hold-out gate, then f.70
 
 Why: BnF italien 1584 (Gallica ark:/12148/btv1b100373864, from microfilm, two pages per canvas) holds Vincenzo
 Amidani's 1447 cipher slips with clear copies beside them (KH2-E, KH2-E2: ciphers/sforza-maino-1446/NOTES.md last two
@@ -51,7 +51,9 @@ Per unit: (a) native-resolution region fetch + line crops; (b) sign reading: fir
  against the crop); (d) align the slip to its copy with `python3 tools/interlinear_align.py stream SYMBOLS.txt TEXT.txt
  OUT_KEY.tsv` (or `align` with --code-prefix if stream does not fit); key.tsv per unit and pooled.
  Pricing per unit: about 2 read passes + 1 reconcile + 1 clear-copy pass = 4 calls at ~$1.0-1.5 = ~$5 incl. alignment.
- Expect 2-3 units inside the cap. The degenerate optimum of the alignment is "every sign null / one letter everywhere":
+ Expect 2-3 units inside the cap.
+ vision calls: 6 x USD 1.5 + 2 reconciliation = 12.00 (two units, Sonnet subagents on line crops; a third unit only
+ under 80% of cap). Opus rate unmeasured: first call measured and reported, stop if over USD 3. The degenerate optimum of the alignment is "every sign null / one letter everywhere":
  keep --null-cost at its default or below and report how many signs aligned to null.
 Gate G1 (pre-registered, leave-one-letter-out, needs >=2 units): key built from the other units, decode the held-out
  slip's reconciled signs, score letter accuracy against its own clear copy (edit-distance alignment, nulls excluded,
@@ -87,12 +89,13 @@ window may simply have missed their copies." These are the only reading targets 
    two solver repos; Cryptiana/Cipherbrain), including the "## Premise check" section, then
    `python3 tools/intake_gate_check.py sforza-italien1584-1447` and paste its output in NOTES.md.
 5. Rows to keyhunt/2026-10-07-SFZ0.tsv (KH2E2 columns). No transcription, no decode.
+vision calls: 4 x USD 0.75 = 3.00 (the worker's own looks at ~1200 px canvases, about 8 per item, priced per item).
 
 ## THU-1 (Opus, cap $7, box 90 min): thurloe-printed -- extend key_montagu / key_fauconberg from glossed siblings
 
 Why: KH2-F (keyhunt/2026-10-07-KH2F.tsv) found six glossed Montagu letters (Birch vols 1, 4, 5, 7) and two glossed
 Fauconberg letters (vol 7) not yet in ciphers/thurloe-printed/, and 0 unglossed siblings. The printed glosses make the
-extension a scripted job (Usage 2: scripts read, you judge).
+extension a scripted job (Usage 2: scripts read, you judge). Disk only: IA djvu text, no images.
 1. For each sibling: `python3 tools/interlinear_align.py pairs <djvu> FIRST LAST <folder>/montagu_<date>_pairs.tsv`
    (djvu line ranges in the KH2F rows; fetch each volume's _djvu.txt once into your scratchpad; vol 6 via the bim_ copy
    if needed), then `align` with the existing key as --prior where the tool allows it.
