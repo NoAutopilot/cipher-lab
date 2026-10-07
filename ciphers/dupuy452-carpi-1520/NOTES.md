@@ -574,3 +574,8 @@ glossed on the leaf, DECODE-decrypted, or already being read by Bourdeau (fr.298
 or Carpi letter viewed (1522, 1524) is in clear. Leads, not siblings: fr.2988 ff.4-5 is a clear fair copy of a Raince cipher
 letter of 15 Dec 1526 whose cipher original was not located (known plaintext if it surfaces); Dupuy 264 f.61 is a 1522 Rome
 decipherment, volume not digitised. No test run. Rows: `keyhunt/2026-10-07-KH1A.tsv`.
+
+## Unread sibling found (SA-G2, 7 Oct 2026)
+BnF fr.3091 (btv1b9060253s) canvas 50 (about f.46-47, unlabelled): both pages full cipher, no gloss seen; BnF Dupuy 265 f.336r
+(canvas 687, btv1b52515673w): three inline numeral/symbol lines, no gloss (1535, outside the key window). Key unknown; next: view
+at native scale and compare sign set with key.tsv, ~USD 0.5. Screen only; SA-G2 did not transcribe. Details keyhunt/2026-10-07-SAG2.tsv.
