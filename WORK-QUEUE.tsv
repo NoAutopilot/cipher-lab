@@ -276,5 +276,5 @@ WVO-APPLY	account-1	.claude/briefs/runs/2026-10-06-acct3-wvo-apply.md	Opus 5.5	3
 DEFAULT-account-4-20261007-0037	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	bounced 2026-10-07 00:37 auto-fill while lane NEWT-C-account-4 (session_01XXcLqsU7GkbYZoN7rPaBzx, claimed 23:35) is live; auto-fill counts only LANE-/DEFAULT- rows as open lanes	2026-10-07 00:37	auto-fill: empty queue
 DEFAULT-account-1-20261007-0042	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-07 02:06	2026-10-07 00:42	auto-fill: empty queue
 WVO-REALIGN	account-1	.claude/briefs/runs/2026-10-07-acct3-wvo-realign.md	Opus 5.5	3	40	claimed session_01GNSyk1ssQtFSZgtKSmkvpP 2026-10-07 01:40	2026-10-07 01:0x	WVO-APPLY next step: re-align gloss on settled labels + shuffle control
-MONLUC-KEY	account-1	.claude/briefs/runs/2026-10-07-acct3-monluc-xmatch.md	Opus 5.5	8	60	queued	2026-10-07 04:2x	PART A: Monluc per-cell key check + test 2 on unglossed items
+MONLUC-KEY	account-1	.claude/briefs/runs/2026-10-07-acct3-monluc-xmatch.md	Opus 5.5	8	60	claimed session_01H1d53gHv23tnZ8fqpg1qkL 2026-10-07 04:42	2026-10-07 04:2x	PART A: Monluc per-cell key check + test 2 on unglossed items
 XMATCH-0307	account-2	.claude/briefs/runs/2026-10-07-acct3-monluc-xmatch.md	Opus 5.5	5	45	queued	2026-10-07 04:2x	PART B: two nightly crossmatch leads, decoy/gloss controls
