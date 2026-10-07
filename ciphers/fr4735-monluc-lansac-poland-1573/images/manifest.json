@@ -377,6 +377,168 @@
     "prominence": 38.1
    },
    "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L01_s1.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 175 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 1,
+   "segment": 1,
+   "x": [
+    0,
+    1450
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L01_s2.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 175 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 1,
+   "segment": 2,
+   "x": [
+    1350,
+    2800
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L02_s1.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 306 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 2,
+   "segment": 1,
+   "x": [
+    0,
+    1450
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L02_s2.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 306 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 2,
+   "segment": 2,
+   "x": [
+    1350,
+    2800
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L03_s1.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 402 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 3,
+   "segment": 1,
+   "x": [
+    0,
+    1450
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L03_s2.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 402 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 3,
+   "segment": 2,
+   "x": [
+    1350,
+    2800
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L04_s1.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 490 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 4,
+   "segment": 1,
+   "x": [
+    0,
+    1450
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L04_s2.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 490 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 4,
+   "segment": 2,
+   "x": [
+    1350,
+    2800
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L05_s1.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 586 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 5,
+   "segment": 1,
+   "x": [
+    0,
+    1450
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c268cipher_L05_s2.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f268/700,1500,2800,650/full/0/native.jpg",
+   "method": "manual sloped band (shear a=-0.032, centre 586 in sheared region, +-55/50 px), MONLUC-KEY; iiif_lines.py row profile split this slanted page wrongly",
+   "band": 5,
+   "segment": 2,
+   "x": [
+    1350,
+    2800
+   ],
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c270clear_B1.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f270_500_1050_3050_1300.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f270/500,1050,3050,1300/full/0/native.jpg",
+   "method": "manual horizontal band of about 3 lines, scaled 2/3, MONLUC-KEY",
+   "band": 1,
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c270clear_B2.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f270_500_1050_3050_1300.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f270/500,1050,3050,1300/full/0/native.jpg",
+   "method": "manual horizontal band of about 3 lines, scaled 2/3, MONLUC-KEY",
+   "band": 2,
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c270clear_B3.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f270_500_1050_3050_1300.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f270/500,1050,3050,1300/full/0/native.jpg",
+   "method": "manual horizontal band of about 3 lines, scaled 2/3, MONLUC-KEY",
+   "band": 3,
+   "date": "07 Oct 2026"
+  },
+  {
+   "crop": "c270clear_B4.jpg",
+   "source_file": "src_ark_12148_btv1b9060724s_f270_500_1050_3050_1300.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060724s/f270/500,1050,3050,1300/full/0/native.jpg",
+   "method": "manual horizontal band of about 3 lines, scaled 2/3, MONLUC-KEY",
+   "band": 4,
+   "date": "07 Oct 2026"
   }
  ]
 }
