@@ -1,6 +1,6 @@
 # mssEC 18: fully keyed entries read through Cipher No. 1 (A3V3-ECK18, 4 Oct 2026)
 
-Derived by ec18.py from the Decoding the Civil War volunteer transcription (not reconciled against the page image: every reading is conditional on that transcription, rule 2) and ciphers/eckert-1864/key.md (mssEC 41). Brackets are key.md meanings with that row's grade; words outside brackets are as the volunteers wrote them. Book 1r/2r: the print-free book overridden by an accepted D2-ECK62R flip (PREREG-ECK62-FLIP rule 4; aligned against print, book grade S; carried here by R7B-ECK62, 6 Oct 2026). Not a novelty claim (rule 10).
+Derived by ec18.py from the Decoding the Civil War volunteer transcription (not reconciled against the page image: every reading is conditional on that transcription, rule 2) and ciphers/eckert-1864/key.md (mssEC 41). Brackets are key.md meanings with that row's grade; words outside brackets are as the volunteers wrote them. Book 1r/2r: the print-free book overridden by an accepted D2-ECK62R flip (PREREG-ECK62-FLIP rule 4; aligned against print, book grade S; carried here by R7B-ECK62, 6 Oct 2026). Not a novelty claim (rule 10). Per-token overrides (D07-ECK62, 7 Oct 2026; the verifiers' grade tables lehigh_grades.tsv and hurlbut_row_grades.tsv): the code word's book value is replaced in the telegrams those tables name, grade as decided there; listed in overrides.tsv.
 
 **9673.15** (Page 7, 1864-02-07; H 10 C 0 I 0 M 0; print: OR ser. I vol. 32.2 p. 347 (OCR running head), 5 shared 5-grams)
 
@@ -78,9 +78,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 {time: 1 PM} [Colonel]  {tail: [signed] [Quartermaster] [Monroe] [Steam]er Nevada wilby at [Monroe] in aday or [2] with [Recruits]'s Please order her tooths [Point] immy after they have landed also all other sea going [Steam] vessels that may reach [Monroe] during the next [5] or [6] days [signed] Rucker (another) for Polkar Lynch ship [Force] Lawrence [Norfolk] [Telegraph (-ed, -ing)] recvd No torpedoes [Of the] kind you name are [Available] [Rapidan] will take months to prepare them [.] Besides the Bureau does not know for what purpose these are intended [.] Will not the [Rebel] torpedoes on hand or those on board the Stromboli or those sent [From the] [After the] yard answer [?] [signed] H A Wise chf Bureau}
 
-**9947.505** (Page 281, 1865-01-27; H 14 C 0 I 0 M 0; print: OR ser. I vol. 48.1 p. 646 (OCR running head), 6 shared 5-grams)
+**9947.505** (Page 281, 1865-01-27; H 13 C 1 I 0 M 0; print: OR ser. I vol. 48.1 p. 646 (OCR running head), 6 shared 5-grams)
 
-[Washington] {time: 2 PM} [27] for [Major] [General] [McMinnville] Any [Cavalry] that you can spare for [Maj Gen S. A. Hurlbut] will be mounted at [Cavalry] [Depot] at [St Louis]  {tail: [signed] [General-in-Chief] Oh for a lodge in some}
+[Washington] {time: 2 PM} [27] for [Major] [General] [McMinnville] Any [Cavalry] that you can spare for [Canby] will be mounted at [Cavalry] [Depot] at [St Louis]  {tail: [signed] [General-in-Chief] Oh for a lodge in some}
 
 **9948.507** (Page 282, 1865-01-31; H 9 C 0 I 0 M 0; no OR ser. I vols. 32-49 match)
 
@@ -94,9 +94,9 @@ Derived by ec18.py from the Decoding the Civil War volunteer transcription (not 
 
 {time: 9 PM} [1] for Pipe You may suspend prepare [Rations] for [Camp] paining [West] [Of the] [Mississippi] for the present [.] If [Kirby Smith] attempts to hold out a [Force] will be sent to over run the whole country [West] [Of the] [Mississippi]  {tail: [signed] [Maj Genl U.S. Grant] and c}
 
-**10020.609** (Page 354, 1865-05-24; H 15 C 0 I 0 M 0; print: OR ser. I vol. 48.2 p. 573 (OCR running head), 15 shared 5-grams)
+**10020.609** (Page 354, 1865-05-24; H 14 C 1 I 0 M 0; print: OR ser. I vol. 48.2 p. 573 (OCR running head), 15 shared 5-grams)
 
-{time: 9.30 AM} [24] for Pope [.] [General] [McMinnville] may use his [Artillery] to the best advantage Either as mounted [Men] or other wise [.] I can send you [Cavalry] from here [As soon as] [Transportation] [Maj Gen S. A. Hurlbut] provided  {tail: [signed] [Maj Genl U.S. Grant] and Such is life}
+{time: 9.30 AM} [24] for Pope [.] [General] [McMinnville] may use his [Artillery] to the best advantage Either as mounted [Men] or other wise [.] I can send you [Cavalry] from here [As soon as] [Transportation] [can be] provided  {tail: [signed] [Maj Genl U.S. Grant] and Such is life}
 
 **10026.621** (Page 360, 1865-06-01; H 13 C 0 I 0 M 0; print: OR ser. I vol. 48.2 p. 716 (OCR running head), 21 shared 5-grams)
 

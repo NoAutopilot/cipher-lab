@@ -5,7 +5,7 @@ book_1	311
 book_2	168
 book_unassigned	192
 fully_keyed	28
-fully_keyed_grades	H 369, C 2, I 0, M 0
+fully_keyed_grades	H 367, C 4, I 0, M 0
 or_matches_real_dates	14
 or_matches_permuted_dates_mean	0.45
 or_matches_permuted_dates_max	1

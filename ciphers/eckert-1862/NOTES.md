@@ -1976,3 +1976,50 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; Hurlbut-row words graded (R12A-ECKV2); cheapest next: the per-token override table in ec18.py at its next full regeneration (Lehigh + Leghorn/Legend/Leopard grades), ~$3; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy
+
+## D07-ECK62 (7 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261007-0042): per-token override table in ec18.py, full regeneration
+
+Step check: named by R12A-ECKV2's Verdict, not run before. Data re-fetched to scratch, not committed: vol18.json (sha256 cb162574...,
+matches pilot1864/manifest.tsv), DIR62 8 `_djvu.txt`, OR 32.1-49.2 48 `_djvu.txt` (all 48 sha256 match or_volumes.tsv).
+- Code (`ec18/ec18.py`, `overrides()` / `apply_overrides()`): the verifiers' tables `ec18/lehigh_grades.tsv` (R12A-ECKV) and
+  `ec18/hurlbut_row_grades.tsv` (R12A-ECKV2) are read as a per-token override table for the Cipher No. 1 main run (legacy and
+  `--split2`): decided C -> the print meaning at C, M -> `[?]` at M, clear/gloss -> left as written. Placement: the entry with the
+  row's date and the code word (or its plural/possessive) whose opening page is at most two pointers before the row's page; among
+  several the nearest; with none, the one entry opening on the row's page (the sweep's date line and the splitter's heading
+  disagree for 10019 lehigh: sweep 23 May, ledger heading 24 May). All 34 mssEC 18 rows placed on exactly one entry, 0 conflicts,
+  0 unplaced (mssEC 19 rows do not apply: ec18.py reads mssEC 18 only). Listed per token in `ec18/overrides.tsv` and `ec18/s2/overrides.tsv`.
+- Display only: every 5-gram, OR match, permutation control, book decision and meaning-in-print agreement is still computed from
+  the book-value decode, because the overrides come from the same print and would make the matcher circular. Proof: `matches.tsv`,
+  `guard.tsv` and every statistic in `control.tsv` except the grade line are byte-identical after the regeneration; the run exits if
+  an override makes the collision guard decide differently (it did not).
+- Grades moved (rule 4), entries.tsv over all 671 legacy entries: H 12699 -> 12665, C 37 -> 64, M 0 -> 7 (34 tokens: 27 H->C, 7 H->M);
+  split2 (729 entries) the same 34 tokens: H 12676 -> 12642, C 37 -> 64, M 0 -> 7. Counted readings (the 28 fully keyed No. 1 entries,
+  readings.md and s2/readings.md): 2 tokens, H 369 C 2 -> H 367 C 4 -- 9947.505 Lehigh [Maj Gen S. A. Hurlbut] H -> [Canby] C and
+  10020.609 lehigh [Maj Gen S. A. Hurlbut] H -> [can be] C, the two R12A-ECKV had already superseded on paper; the other 32 tokens sit
+  in entries that are not fully keyed (no committed reading text). No book, match or fully-keyed status changed.
+- Not changed: `align_tokens.tsv` (both cascades) keeps the key value and its CONFLICT status for the two tokens -- it is the evidence
+  the grade rests on, not a reading; key.md rows stay H (what the book says); Cipher No. 2 (`--book 2`) runs untouched.
+- Rule 7: `ec18.py ... --possessive --guard DIR62 --check` current (legacy and --split2), `--book 2` current both ways, `ec18_align.py
+  --check` exit 0 both ways, `--read-free --check` exit 0 both ways, `--split-report --check` exit 0, `decode.py --check` exit 0.
+- The counted reading changed after AUDIT.md: flagged in ROOM for a verifier (AUDIT.md "Carry-over R12A-ECKV" already decided these two
+  grades; the regeneration only carries them).
+- Requests: hdl.huntington.org 2 (vol18.json; the first attempt wrote nothing, re-fetched once), archive.org 56 (8 DIR62 + 48 OR), >= 1.6 s
+  apart; 0 subagents, 0 vision. Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, D07-ECK62, 7 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); received ledgers mssEC 01-14 all searched for residue twins (GAPS171, D1-ECK62L): 0 code-bearing twins; mssEC 18 cascade split2 (ec18/s2/): 729 entries, align_free AGREE 0.427 vs control 0.088; 17 neither-book entries: 0 wrong telegram, 5 right, 12 undecided
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L, 0 twins); next: the image of the residue pages against the volunteer text for the M-graded tokens (transcription slips the decode reads as code), ~$4
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; Nutmeg = James River gains a 5 Jul 1863 witness (C, D1-ECK62L) but no second 1862 telegram; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; Lehigh conflict held M with witnesses (DEF1-ECK62P); received copies in mssEC 12-13: 0 (D1-ECK62W); every Lehigh in mssEC 18-19 aligned 6 Oct 2026 (D1-ECK62S: 13 uses, 8 print-read, all Canby or 'can be', 0 Hurlbut; ec18/lehigh_uses.tsv); Lehigh graded by a verifier (R12A-ECKV, AUDIT.md 'Carry-over R12A-ECKV', ec18/lehigh_grades.tsv: C 8, M 4, clear 1; 9947.505 = Canby C, 10020.609 = can be C, superseding the committed readings' Hurlbut brackets until ec18.py's next full regeneration); Leghorn/Legend/Leopard swept 6 Oct 2026 (R12A-ECKLEG: 48 print-read, 0 Hurlbut) and graded by a verifier (R12A-ECKV2, AUDIT.md 'Carry-over R12A-ECKV2', ec18/hurlbut_row_grades.tsv: C 47, gloss 1, M 12; Legend's Butler/Canby conflict logged with witnesses in HYPOTHESES.md, unresolved); folded into ec18.py as a per-token override table 7 Oct 2026 (D07-ECK62: 34 mssEC 18 tokens, 27 H->C, 7 H->M; counted readings 9947.505 and 10020.609 H->C; ec18/overrides.tsv); next: the 7 M-graded Hurlbut-row tokens (OCR lacunae, telegrams with no aligned print) against another witness, ~$4
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; the 13 code words date 30 Dec 1864 - 13 Jul 1865, Cipher No. 3/No. 4 period; the Huntington holds only No. 5 (R8-ECK62); the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud (403, 6 Oct 2026); next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; 100 under the legacy split, 137 '?' entries under split2 print_q; next: the image (marker words the volunteer text may have dropped) for the dated `?p` entries under split2, ~$4
+
+## Escalation (D07-ECK62, 7 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171) and mssEC 04-14 6 Oct 2026 (D1-ECK62L, 0 twins, Nutmeg 1863 witness); mssEC 12-13 for the Lehigh 1865 copies (D1-ECK62W, 0); every Lehigh in sent ledgers mssEC 18-19 (D1-ECK62S, 8 print-read, all Canby or 'can be'); every Leghorn/Legend/Leopard in mssEC 18-19 (R12A-ECKLEG, 48 print-read, 0 Hurlbut); parallel sent ledger mssEC 18 opened by text 4 Oct 2026 (GAPS206), read with Cipher No. 1 (A3V3-ECK18) and No. 2 (A3V3-ECK2)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, mssEC 49-66), No. 5 values match none of the 14 words (R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [x] print: wrong-telegram and conflict-pair tests done on legacy (R7B-ECK62, R7C-ECK62C) and split2 (R10-ECK62T: 0 wrong, 5 right, 12 undecided; primary untested at N 60); splitter fixed and adopted (R9-ECK62, R10-ECK62S, R10-ECK62T)
+- [x] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191); Handle, Harry, author added at C (A3V3-ECKC); possessive and collision guard added to decode.py (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings reconciled against the image (reading.md); the six mssEC 18 collision/conflict entries (DEF1-ECK62I) and the Lehigh key row (DEF1-ECK62P)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; Hurlbut-row grades carried into ec18.py's outputs (D07-ECK62, overrides.tsv); cheapest next: the dated `?p` mssEC 18 entries under split2 against the image for marker words, ~$4; the No. 4 book for the 13 words waits on a desk-browser read of the Friedman copy

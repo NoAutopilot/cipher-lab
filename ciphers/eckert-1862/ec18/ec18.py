@@ -264,6 +264,82 @@ def decode_all(es, key, pos, g):
         e["text"], e["reading"], e["counts"], e["guarded"] = text, reading, counts, gl
 
 
+# D07-ECK62 (7 Oct 2026): per-token override table. A verifier's grade decision on a key row (R12A-ECKV ->
+# lehigh_grades.tsv; R12A-ECKV2 -> hurlbut_row_grades.tsv; AUDIT.md "Carry-over R12A-ECKV"/"R12A-ECKV2") replaces the
+# book value of that code word in the telegrams it names: decided C -> [print meaning] at C; M -> [?] at M (the book's
+# Hurlbut is contradicted by every print-read use); clear/gloss -> left as written. A row applies to the entry with the
+# row's date (any date when the sweep found no date line above it on the page), the code word (or its plural/possessive)
+# in its text and an opening page within two pointers before the row's page (an entry runs on); among several, the one
+# opening nearest the row's page; with none, the one entry opening on the row's page whatever its date. Exactly one
+# entry must remain, else the row is listed as not applied.
+# Display only: every statistic, 5-gram, OR match, control and book decision is computed from the book-value decode (the
+# overrides come from the same print, so letting them into the matcher would be circular); only the reading text and its
+# H/C/I/M counts take the override. --check fails if a token decodes differently from the book apart from the override
+# (a guard firing differently on the new meaning), or if two rows for one entry and word disagree.
+OVERRIDE_FILES = ("lehigh_grades.tsv", "hurlbut_row_grades.tsv")
+
+
+def overrides():
+    """[(ledger, pointer, word, (y, m, d), meaning, grade, source)] from OVERRIDE_FILES."""
+    rows = []
+    for f in OVERRIDE_FILES:
+        lines = [l.split("\t") for l in (HERE / f).read_text().splitlines() if l and not l.startswith("#")]
+        h = lines[0]
+        for r in lines[1:]:
+            c = dict(zip(h, r + [""] * (len(h) - len(r))))
+            word = c.get("word") or "lehigh"
+            if "date_ocr" in c:
+                m = DATE2.search(c["date_ocr"])
+                date = (1800 + int(m.group(3)), month_of(m) + 1, int(m.group(2))) if m else None
+            else:
+                date = tuple(int(x) for x in c["date"].split("-"))
+            rows.append((c["ledger"], int(c["pointer"]), word.lower(), date, c["decided_meaning"], c["decided_grade"], f))
+    return rows
+
+
+def apply_overrides(es, key, pos, g, ledger="mssEC 18"):
+    """Re-decode the entries an override row names with a per-entry key copy; returns the report lines."""
+    by = collections.defaultdict(list)
+    rep = []
+    for led, ptr, word, date, mean, grade, f in overrides():
+        if led != ledger:
+            continue
+        has = [e for e in es if 0 <= ptr - e["ptr"] <= 2 and any(
+            (d1.lookup(x.strip(" .,;:'\"()"), {word: 1}, True)[0] or "").lower() == word
+            and d1.lookup(x.strip(" .,;:'\"()"), {word: 1}, True)[2] for x in e["text"].split(" "))]
+        hit = [e for e in has if date is None or e["date"] == date]
+        if len(hit) > 1:
+            hit = [e for e in hit if e["ptr"] == max(x["ptr"] for x in hit)]
+        if not hit:  # the sweep's date line and the splitter's heading disagree: the one entry opening on that page
+            hit = [e for e in has if e["ptr"] == ptr]
+        if len(hit) != 1:
+            rep.append(f"# not applied ({len(hit)} entries match): {f} {ptr} {word} {date} -> {mean or '-'} {grade}")
+            continue
+        by[(hit[0]["id"], word)].append((mean, grade, f, ptr))
+    ide = {e["id"]: e for e in es}
+    for eid in sorted({k[0] for k in by}):
+        e, k2 = ide[eid], dict(key)
+        for (i2, word), vals in by.items():
+            if i2 != eid:
+                continue
+            if len({(m, gr) for m, gr, _, _ in vals}) > 1:
+                rep.append(f"# conflict, not applied: {eid} {word} {vals}")
+                continue
+            mean, grade = vals[0][:2]
+            if grade in ("C", "M"):
+                k2[word] = (mean or "?", grade, key[word][2])
+            else:
+                k2.pop(word, None)
+            rep.append(f"{eid}\t{word}\t{key[word][0]} {key[word][1]}\t{(mean or '?') if grade in ('C', 'M') else 'as written'} "
+                       f"{grade}\t{vals[0][2]}")
+        gl = []
+        reading, counts = d1.decode_entry(e["text"], k2, possessive=pos, guard=g, guarded=gl)
+        if [x[0] for x in gl] != [x[0] for x in e["guarded"]]:
+            raise SystemExit(f"override changed the guard's decisions in {eid}")
+        e["reading"], e["counts"], e["override"] = reading, counts, True
+    return rep
+
+
 def occ(text, i):
     """(lowercased core, occurrence number) of word i of text.split(' ')."""
     ws = [w.strip(" .,;:'\"()").lower() for w in text.split(" ")]
@@ -473,6 +549,8 @@ def main(argv):
         e["grams"] = {" ".join(w[i:i + 5]) for i in range(len(w) - 4)}
     full = [e for e in es if e["full"]]
     allg = set().union(*(e["grams"] for e in es))
+    book_reading = {e["id"]: e["reading"] for e in es}  # the statistics below use only grams/meanings computed above
+    ovr = apply_overrides(es, key, "--possessive" in argv, make_guard(argv)) if bk == "1" else []
     vols, pos = or_index(ordir, allg)
     nums = sorted({int(v.split(".")[0]) for v in vols})
     vr = f"{nums[0]}-{nums[-1]}"
@@ -499,9 +577,9 @@ def main(argv):
     # matched entry's window (rotation by one; seed-free) as the control
     b1 = [e for e in es if e["id"] in allreal and e["book"] == bk]
     b2 = [e for e in es if e["id"] in allreal and e["book"] == other]
-    ag = agreement([(meaning_words(e["reading"]), allreal[e["id"]]) for e in b1], vols)
-    agc = agreement([(meaning_words(e["reading"]), allreal[f["id"]]) for e, f in zip(b1, b1[1:] + b1[:1])], vols)
-    ag2 = agreement([(meaning_words(e["reading"]), allreal[e["id"]]) for e in b2], vols)
+    ag = agreement([(meaning_words(book_reading[e["id"]]), allreal[e["id"]]) for e in b1], vols)
+    agc = agreement([(meaning_words(book_reading[e["id"]]), allreal[f["id"]]) for e, f in zip(b1, b1[1:] + b1[:1])], vols)
+    ag2 = agreement([(meaning_words(book_reading[e["id"]]), allreal[e["id"]]) for e in b2], vols)
     # the brief's 20-entry control: 20 fully keyed entries drawn with seed 18, dates permuted among them (derangement)
     draw = sorted(random.Random(SEED).sample(ids, min(20, len(ids))))
     sub = [e for e in full if e["id"] in draw]
@@ -550,7 +628,10 @@ def main(argv):
           f"{kfile.name} ({'mssEC 47' if bk == '2' else 'mssEC 41'}). "
           f"Brackets are {kfile.name} meanings with that row's grade; words outside brackets are as the volunteers wrote them. "
           "Book 1r/2r: the print-free book overridden by an accepted D2-ECK62R flip (PREREG-ECK62-FLIP rule 4; aligned "
-          "against print, book grade S; carried here by R7B-ECK62, 6 Oct 2026). Not a novelty claim (rule 10).", ""]
+          "against print, book grade S; carried here by R7B-ECK62, 6 Oct 2026). Not a novelty claim (rule 10)."
+          + (" Per-token overrides (D07-ECK62, 7 Oct 2026; the verifiers' grade tables lehigh_grades.tsv and "
+             "hurlbut_row_grades.tsv): the code word's book value is replaced in the telegrams those tables name, grade as "
+             "decided there; listed in overrides.tsv." if ovr else ""), ""]
     for e in full:
         m = real.get(e["id"])
         c = e["counts"]
@@ -564,6 +645,8 @@ def main(argv):
                 f"guarded_tokens\t{len(gd) - 1}"]
     outs = {f"entries{sfx}.tsv": "\n".join(ent) + "\n", f"matches{sfx}.tsv": "\n".join(mt) + "\n",
             f"control{sfx}.tsv": "\n".join(ctl) + "\n", f"readings{sfx}.md": "\n".join(rd)}
+    if bk == "1":
+        outs["overrides.tsv"] = "\n".join(["id\tcode_word\tbook_value\toverride\tsource"] + ovr) + "\n"
     if "--guard" in argv:
         outs[f"guard{sfx}.tsv"] = "\n".join(gd) + "\n"
     if "--write" in argv:
