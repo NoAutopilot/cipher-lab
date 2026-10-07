@@ -172,3 +172,25 @@ amidani/f70_test.py's two statistics with 200 shuffles; PASS = both above p95. O
 SFZ-D S3, judge output; on FAIL: the numbers side by side and the line "1446 key differs from 1447 at this
 transcription" -- do not move the status line either way (the lane does, after a verifier). Do NOT log in to DECODE
 more than once. vision calls: 2 x USD 1.5 + 1 reconciliation = 4.50.
+
+---
+
+## Wave 3 (written 7 Oct 2026 ~22:25 UTC, after SFZ-D/SFZ-P/SFZ-70 reported)
+
+## SFZ-P2 (Opus, cap $6, box 75 min): f.13 transcription repair and key-constrained decode
+Why: SFZ-P's Pusterla key passes G1 (0.733/0.589 vs shuffle p95 ~0.39) and its f.13 decode beats 200 shuffled keys, but
+the judge FAILs against real prose and the two f.13 reads disagree on 61% of signs (pass B weak). The transcription,
+not the key, is the named limit (ciphers/sforza-pusterla-1447-f13/NOTES.md "Remaining gaps" gap 1).
+1. One more blind pass C on f.13's existing single-line deskewed crops (one Sonnet subagent call, pusterla_labels.md,
+   no sight of passes A/B), then `tools/reconcile_passes.py A B C --vote` (with --keep-alts if available).
+2. `tools/key_decode_lattice.py from-passes ...` then `decode` with ../sforza-italien1584-1447/pusterla/key.tsv and the
+   it16dip corpus at the tool's pre-registered default lam (state it before running; do not tune lam on f.13).
+   Degenerate optimum: the lattice can pick any candidate that makes common Italian -- report how many positions moved
+   off the vote's top-1 and grade every such position S at best.
+3. Gate (pre-registered): judge (tools/judge_plaintext.py inline spec, it16dip, era flag) PASS against real_p05 AND the
+   200-shuffled-key control on the same lattice decode (shuffle the key, rerun the lattice decode, same lam): real above
+   p95 on the lm score. Report all numbers side by side, plus the decode's letter distribution.
+4. PASS: update decode.py (--check), reading.txt, per-token grade counts H/C/S/M/I, judge output pasted; leave status
+   `partial`; name the verifier as the next step in "## Remaining gaps" (the lane does not open it: cap). FAIL: numbers in
+   NOTES.md, gaps_check, stop. No new folios, no key-unit additions (gap 2 stays for a later worker).
+vision calls: 1 x USD 1.5 + 1 reconciliation = 3.00.
