@@ -1,0 +1,47 @@
+line	win	pos	sign	gloss	conf	note	chk
+07	01	1	7	ni	L		ok
+07	01	2	6	l	L		ok
+07	01	3	q	h	L	overstrike	ok
+07	01	4	Cx	o	L		ok
+07	01	5	b	f	M		ok
+07	01	6	mt	u	L		ok
+07	01	7	a	s	M		ok
+07	01	8	od	en	M	win02 shows full circle with dot, not c; gloss e,n over it	fix
+07	02	9	26	en	L		fix
+07	02	10	ab	&	L	crossed b	ok
+07	02	11	ss	le	M		ok
+07	02	12	Z	sf	L		ok
+07	02	13	Hun	d	L		ok
+07	02	14	ls	i	L		ok
+07	02	15	2	f	M	two f strokes: first over the 2, second over the ab	fix
+07	02	16	ab	f	M	a with crossed stroke, cut at edge	fix
+07	03	17	p	e	L		ok
+07	03	18	d	re	L		ok
+07	03	19	26	en	L		ok
+07	03	20	a	s	L		ok
+07	03	21	15	de	L		ok
+07	03	22	^20	Strasbourg	M	Stras with bourg written small beneath, all over the ^20	fix
+07	04	23	78	No	L		ok
+07	04	24	cc	g	L		ok
+07	04	25	q	na	L		ok
+07	04	26	w	de	L		ok
+07	04	27	p	b	L		ok
+07	04	28	m	u	L		ok
+07	04	29	8	e	M	gloss e (c-like) over the 8; cut at window edge in win04	fix
+07	05	30	2	n	M	n over the 2, s over the od	fix
+07	05	31	od	s	M		fix
+07	05	32	15	de	L	de over the 15, s over the ^18	fix
+07	05	33	^18	si	M	fits desirer = de|si|re|r|z	fix
+07	05	34	^7	re	L		ok
+07	05	35	y	r	L		ok
+07	05	36	99	z	L		ok
+07	06	37	61	la	L		ok
+07	06	38	68	mais	L		ok
+07	06	39	c	o	L		ok
+07	06	40	1	n	L		ok
+07	06	41	t	d	L		ok
+07	06	42	o	iff	L		ok
+07	06	43	c	u	L		ok
+07	06	44	o	s	L		ok
+07	06	45	o	-	L		ok
+07	07	46	b	u	M		ok

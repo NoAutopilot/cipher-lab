@@ -1,0 +1,52 @@
+line	win	pos	sign	gloss	conf	note	chk
+08	01	1	ff	r	M		ok
+08	01	2	pH	p	L		ok
+08	01	3	q	e	M		ok
+08	01	4	s	l	L		ok
+08	01	5	s	e	L		ok
+08	01	6	od	s	L		ok
+08	01	7	1	d	L		ok
+08	01	8	8	i	L		ok
+08	01	9	sin	s	L	cut at window edge	ok
+08	02	10	13	an	L		ok
+08	02	11	qo	ch	L		ok
+08	02	12	r	e	L		ok
+08	02	13	?	r	L		ok
+08	02	14	u	-	L		ok
+08	02	15	y	&	L		ok
+08	02	16	od	s	L		ok
+08	03	17	p	e	M		ok
+08	03	18	ff	r	L		ok
+08	03	19	g	o	M		ok
+08	03	20	s	i	L		ok
+08	03	21	x4	t	L		ok
+08	03	22	cc	n	M		ok
+08	03	23	q	e	M		ok
+08	03	24	Z.	e	L		ok
+08	03	25	Z	s	M	cut at window edge; first s of essaire stands over it (win04)	fix
+08	04	26	^16	sai	L	s,a,i over the ^16	fix
+08	04	27	pH	r	L		ok
+08	04	28	^7	e	L		ok
+08	04	29	g	p	M	p stem/bowl over the g	fix
+08	04	30	s	o	M	o over the s	fix
+08	04	31	m	Le	L		ok
+08	04	32	26	en	L	cut at window edge	ok
+08	05	33	a	a	L		ok
+08	05	34	ab	n	L		ok
+08	05	35	e	p	L		ok
+08	05	36	q	es	L		ok
+08	05	37	a	s	L		ok
+08	05	38	Zt	r	L		ok
+08	05	39	Hun	h	L		ok
+08	05	40	r	e	L		ok
+08	06	41	v	r	L		ok
+08	06	42	g	d	L		ok
+08	06	43	g	-	L		ok
+08	06	44	o	-	M	only two 9-shaped signs follow v (light 9, dark 9); no separate o in the zoomed crop	del
+08	06	45	s	l	M	l over first s, e over second s	fix
+08	06	46	s	e	L		ok
+08	06	47	Z	s	L		ok
+08	06	48	18	dis	M	d,i,s over the 18 (s over the 8)	fix
+08	06	49	x	e	M		fix
+08	06	50	16	nt	M	n over the 1, t over the 6 (win07)	fix
+08	07	51	y	-	L		ok

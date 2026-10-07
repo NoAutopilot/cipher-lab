@@ -1,0 +1,46 @@
+line	win	pos	sign	gloss	conf	note	chk
+09	01	1	m	i n	L	first sign dotted left; could be un; n gloss sits between m and Hun, kept on m	ok
+09	01	2	Hun	-	L	large hook, underlined	ok
+09	01	3	b	t	L		ok
+09	01	4	p	e	L		ok
+09	01	5	^7	r	M	bar over 7	ok
+09	01	6	od	e	L		ok
+09	01	7	g	s s	L	cut at window edge; gloss between	ok
+09	02	8	q	e	L	gloss e is over q, z over fh (reader had them swapped)	fix
+09	02	9	fh	z	L	gloss z over fh	fix
+09	02	10	u	r	L		ok
+09	02	11	g	o	L		ok
+09	02	12	k	n	M		ok
+09	02	13	ba	t	L	gloss struck-through word above	ok
+09	03	14	s	i	L		ok
+09	03	15	Hun	n	L		ok
+09	03	16	a	s	L		ok
+09	03	17	26	e n	M		ok
+09	03	18	b	t	L		ok
+09	03	19	u	&	L		ok
+09	03	20	t	-	L		ok
+09	03	21	^16	s a	M	bar over 16	ok
+09	04	22	x	r	L		ok
+09	04	23	a	r	L		ok
+09	04	24	t	-	L	cross-f ligature	ok
+09	04	25	r	o	L		ok
+09	04	26	y	r	L		ok
+09	04	27	tt	d	L		ok
+09	04	27.5	7	a	L	reader skipped this stand-alone 7 between tt and a; gloss a sits over it	ins
+09	04	28	a	s	L	gloss s (reader had a s; the a belongs to the 7)	fix
+09	05	29	fh	s	L	second s of gloss sits over this sign (reader had -)	fix
+09	05	30	26	e n	M		ok
+09	05	31	ab	t	L		ok
+09	05	32	7	-	L		ok
+09	05	33	26	e n	M	gloss en (reader had e only)	fix
+09	05	34	Z	s	L	gloss s only (n belongs to the 26)	fix
+09	05	35	7	-	L		ok
+09	06	36	un	-	L		ok
+09	06	37	ab	-	L		ok
+09	06	38	26	e n	M		ok
+09	06	39	Hu	b	L		ok
+09	06	40	s	l	L	gloss l only (reader gave l e)	fix
+09	06	41	s	e	L	gloss e (reader gave d e)	fix
+09	06	42	150	d e s	L	d e s all above the 1 5 0 (reader gave s)	fix
+09	06	43	o	-	L	window-edge fragment of the 6 of 69 / duplicate of 0 of 150 across the seam	del
+09	07	44	69	m o y	M		ok

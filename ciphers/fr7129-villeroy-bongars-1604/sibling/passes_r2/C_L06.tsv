@@ -1,0 +1,54 @@
+line	win	pos	sign	gloss	conf	note	chk
+06	01	1	b	&	M		ok
+06	01	2	g	p	L		ok
+06	01	3	s	o	L		ok
+06	01	4	ff	r	L		ok
+06	01	5	ls	o	L		ok
+06	01	6	pH	i	L		ok
+06	01	7	b	t	L		ok
+06	01	8	2	e	L		ok
+06	02	8.5	8	sh	M	8 skipped by reader; gloss s,h over it	ins
+06	02	9	g	e	M	gloss e over first g (reader had th, which stand over the 8)	fix
+06	02	10	g	g	L		ok
+06	02	11	m	nish	M	gloss n,i,s,h all over the m	fix
+06	02	12	a	an	M	gloss a n over the a (h belongs to m)	fix
+06	02	13	2	s	L		ok
+06	02	14	ls	es	M		fix
+06	02	15	Zt	t	M	flat 3 under the t with long crossbar	fix
+06	02	16	9	a	L		ok
+06	02	17	6	p&	L		ok
+06	03	18	?	r	L	9-and-o with hook	ok
+06	03	19	un	h	L		ok
+06	03	20	p	e	L		ok
+06	03	21	i	-	L		ok
+06	03	22	ls	de	L		ok
+06	03	23	Z.	r	L		ok
+06	03	24	a	es	L		ok
+06	03	25	c	q	L		ok
+06	04	26	mt	u	L	u over the m-with-tail; a belongs to the y	fix
+06	04	27	y	a	L	gloss a stands over y	fix
+06	04	28	ab	r	L		ok
+06	04	29	b	t	L		ok
+06	04	30	ls	i	L		ok
+06	04	31	o	e	L		ok
+06	04	32	d	r	L		ok
+06	04	33	Z	s	L		ok
+06	04	34	6	l	M	gloss l over the 6, a over the 1	fix
+06	05	35	1	a	M		fix
+06	05	36	8	an	L		ok
+06	05	37	^26	tan	M	final t of tant stands at the right edge over the o	fix
+06	05	38	o	t	M		fix
+06	05	39	s	po	L		ok
+06	05	40	Z.	re	M	r and swash e over Z.	fix
+06	05	41	x4	t	M	swash t over x4; f belongs to Ch	fix
+06	05	42	Ch	f	L	f descender stands over Ch (win06)	fix
+06	06	43	un	ai	L		ok
+06	06	44	v	r	L		ok
+06	06	45	b	t	L		ok
+06	06	46	g	g	L		ok
+06	06	47	g	-	L		ok
+06	06	48	o	p	M	p stem and bowl stand over o, not over g	fix
+06	06	49	s	o	M	gloss o over s	fix
+06	06	50	y	d	M	gloss d over y/15 boundary, y side (win07)	fix
+06	07	51	15	e	L		ok
+06	07	52	Cx	t	M		ok

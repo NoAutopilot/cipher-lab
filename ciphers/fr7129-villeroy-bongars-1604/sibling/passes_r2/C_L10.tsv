@@ -1,0 +1,48 @@
+line	win	pos	sign	gloss	conf	note	chk
+10	01	1	26	e n	M	n ends over the 26; the s belongs to the od	fix
+10	01	2	od	s	L	s sits over the dotted circle (reader had -)	fix
+10	01	3	^99	3	M	bar over 99; flourished gloss above, read 3, uncertain	ok
+10	01	4	ab	i	M	i over right end of the cross; l is over the 9	fix
+10	01	5	9	l	M	l sits just left of the 9	fix
+10	01	6	fh	z	L		ok
+10	02	6.5	d	a	M	reader skipped this uncial d-shaped sign (round d with curl and dot) between fh and ff; gloss a over it	ins
+10	02	7	ff	u r	M	u and r over the ff (reader had a u r)	fix
+10	02	8	8	o	L		ok
+10	02	9	2	n t	L		ok
+10	02	10	3	-	L		ok
+10	02	11	b	a t	L		ok
+10	02	12	p	e	L		ok
+10	02	13	k	n	M		ok
+10	03	14	un	i	L		ok
+10	03	15	y	r	L		ok
+10	03	16	g	-	L		ok
+10	03	17	5	p	L		ok
+10	03	18	^7	o r e	M		ok
+10	03	19	u	r	L		ok
+10	03	20	m	u	L		ok
+10	03	21	q	e	L	e of the gloss ueill sits over q (reader had -)	fix
+10	04	22	s	i	L	only the i is over the s; l belongs to the m	fix
+10	04	23	m	l	L		ok
+10	04	24	a	l	L	second l of the gloss is over a (reader had i)	fix
+10	04	25	fh	i	M	i over the cross stroke after a (reader had -)	fix
+10	04	26	p	-	L	no gloss over p; the r is over the Cx	fix
+10	04	27	Cx	r	L	5 with cross on top; r over it	fix
+10	04	28	u	r	L		ok
+10	04	29	2	e	L		ok
+10	05	30	5	s t	M	s and t over the 5 (reader had e s)	fix
+10	05	31	q	e	L	reader had t e	fix
+10	05	32	a	s	L	small s over a (reader had -)	fix
+10	05	33	b	u	L	u over b (reader had s)	fix
+10	05	34	qo	r	L	r over qo (reader had u r)	fix
+10	05	35	s.	e	L	two dots	fix
+10	05	36	Z	s	L	s over Z (reader had t)	fix
+10	05	37	^18	f	M		ok
+10	06	38	g	o	L		ok
+10	06	39	Hun	n	L		ok
+10	06	40	^3	g r a	M		ok
+10	06	41	u	n d e	M	e of the lower gloss line is exactly over the u (centre-aligned); alternative: e on p	fix
+10	06	42	p	l	L	l over p (reader had e l)	fix
+10	06	43	ss	l e	L	l e over the two long s (reader had l e e)	fix
+10	06	44	o	e	L	e over o (reader had s)	fix
+10	06	45	a	s	L	s over a (reader had -)	fix
+10	07	46	u	r	L		ok

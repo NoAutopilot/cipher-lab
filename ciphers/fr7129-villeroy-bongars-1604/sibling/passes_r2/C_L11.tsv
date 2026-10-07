@@ -1,0 +1,52 @@
+line	win	pos	sign	gloss	conf	note	chk
+11	01	1	4	h	L		ok
+11	01	2	o	e	M	two circles visible (one attached to the 4's bar, one raised); e sits over the raised one	ok
+11	01	3	d	r	L	gloss r over d (reader had r r)	fix
+11	01	4	Cx	r	L	5 with cross; second r of the gloss is over it (reader had -)	fix
+11	01	5	3	a	L		ok
+11	01	6	6	-	M		ok
+11	01	7	8	-	M		ok
+11	01	8	4	i	L	the i at the window edge is over this 4 (reader had -)	fix
+11	02	9	8	e	M	only e over the 8; the i is over the 4 of window 01	fix
+11	02	10	u	r	L		ok
+11	02	11	y	r	L		ok
+11	02	12	5	o	L		ok
+11	02	13	x4	y	L		ok
+11	02	14	99	g	M		ok
+11	03	14.5	s.	r e	M	reader skipped this dotted b/s-shaped sign (two dots above) after the 99; r e over it	ins
+11	03	15	o	s	L		ok
+11	03	16	q	e	L		ok
+11	03	17	ff	r	L		ok
+11	03	18	3	a	L		ok
+11	03	19	u	r	M	r stem sits at the right edge of the u, dash runs over the tt	ok
+11	03	20	tt	h	L		ok
+11	03	21	do	o	L		ok
+11	04	22	Z	s	L		ok
+11	04	23	p	e	L		ok
+11	04	24	tt	i t	L		ok
+11	04	25	^7	r e	M		ok
+11	04	26	a	s	L		ok
+11	04	27	tt	d	L		ok
+11	04	28	un	i	M	cut at window edge: four minims completed in window 05, so un, not u	fix
+11	05	29	r	f	L		ok
+11	05	30	q	f	L		ok
+11	05	31	s	i	L	i over the right edge of the s (reader had -)	fix
+11	05	32	xff	r	L	small r over the xff (reader had i)	fix
+11	05	33	p	i	L	i over the p (reader had r)	fix
+11	05	34	s	l	L	tall l over the first long s (reader had i)	fix
+11	05	35	s	e	L	e over the second s (reader had l)	fix
+11	05	36	6	-	M	this is a 6 with a long upstroke, not an o; no gloss over it (the tail of the e passes over); l of the next word is over the 1	fix
+11	06	37	1	l a	L		ok
+11	06	38	3	d u	M	shape is a v/u stroke joined to a flat 3	ok
+11	06	39	qo	c h	L		ok
+11	06	40	r	-	L		ok
+11	06	41	od	e	L		ok
+11	06	42	a	s	L		ok
+11	06	43	7	s	L	second s of the gloss only (reader had s e)	fix
+11	06	44	p	e	L	e over the p (reader had -)	fix
+11	06	45	1	d	L	blotted d over the 1 (reader had d e)	fix
+11	06	46	s	e	L	e over the s (reader had d)	fix
+11	06	47	a	s	L	s over the a (reader had e s)	fix
+11	07	48	1	d	M	1 and 8 are separate (gap, dot between); d over the 1	fix
+11	07	48.5	8	i t	M	i t over the 8	ins
+11	07	49	fh	-	L	no gloss over it; t belongs to the 8	fix
