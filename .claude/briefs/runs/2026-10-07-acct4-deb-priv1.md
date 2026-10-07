@@ -1,6 +1,6 @@
 # DEB-PRIV1 -- Debosnys museum scans: inventory, then a sign-match crib pass (private repo only)
 
-Written by LANE DEB-RUN (account 4, session_01KBx2V5yEGzw3yFXtCMgaAz), 7 Oct 2026 22:0x UTC by date -u.
+Written by LANE DEB-RUN (account 4, session_01KBx2V5yEGzw3yFXtCMgaAz), 7 Oct 2026 21:5x UTC by date -u.
 Run IN the account-4 standing session (the only one with the private repository). Opus 5.5. Cap USD 8; box 75 min.
 Unit pricing (CLAUDE.md Usage 6): 43 scans; step 2 is one Sonnet subagent call per scan on line/region crops
 (`tools/iiif_lines.py --image <scan> --out <private scratch dir>`, pasted before the first call), about 0.15 USD per
