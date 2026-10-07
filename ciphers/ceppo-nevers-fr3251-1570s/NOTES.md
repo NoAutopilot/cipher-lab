@@ -1028,10 +1028,10 @@ verifier's to move, not this worker's: L11.17 is one more tile that, if endorsed
 
 ## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
 
-Read so far: 411 of 682 tokens at S across the four letters (f.11r 53/135, f.21v 189/267 after CEPPO-SPLITS and BIRAGO-SMALL, f.35 35/76, f.87 134/204, the
+Read so far: 421 of 682 tokens at S across the four letters (f.11r 53/135, f.21v 195/267 after CEPPO-SPLITS, BIRAGO-SMALL, D22-CEPPO21 and D07-CEP21, f.35 35/76, f.87 138/204, the
 HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
 on every folio.
-- f.21v, 61 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026), and the S65/S80 pair is read by the R-8 witness shape on 4x tiles (D22-CEPPO21, 6 Oct 2026: 26 of 27 8-tokens decided, every one agreeing with its passD label; 5 M -> S where shape and score agree; L01.10, L11.9 stay M (score prefers the other value), L03.39 undecided; verifier wanted for the 5); next: the next-largest f.21v splits S10/S26 and S13/S69 (5 tiles each, `harvest/f21v/lookalike/confusion.tsv`) need a witness shape rule from the fr.3252 f.36r/f.36v glosses (none pre-registered yet), then the same 4x read, ~$3.
+- f.21v, 60 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026), and the S65/S80 pair is read by the R-8 witness shape on 4x tiles (D22-CEPPO21, 6 Oct 2026: 26 of 27 8-tokens decided, every one agreeing with its passD label; 5 M -> S where shape and score agree; L01.10, L11.9 stay M (score prefers the other value), L03.39 undecided; verifier wanted for the 5); S10/S26 and S13/S69 read by the R-g/R-bar witness shape on 4x tiles (D07-CEP21, 7 Oct 2026: S10/S26 both print s, value-neutral; L10.6 S69 -> X_THETA2 r at S, judge -1.135 -> -1.128; L06.2.15 UNDECIDED at the gutter, L06.2.12 stays M; verifier wanted for L10.6); next: a verifier on the D22/D07 S tokens, then the remaining f.21v split pairs in `harvest/f21v/lookalike/confusion.tsv` (S60/S69 L06.2.12 is done; the next pair by count), ~$3.
 - f.87, 62 M + 4 U tokens of 204 (S 138) - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, VERIFY-CEPPO-WP, 3 Oct 2026: 7 applied, L04.41/L05.42 t at M contested, L02.35 rejected); L04.39 read barred by both blind readers but gate (iii) fails, S65 kept at M (A1B-CEPPO-87); S31/S32/S76 still have no witness rule (no agreed gloss on f.36r S31 x2, f.37r S76 (A1B-CEPPO-87), nor on f.36v S32 x1 and S76/S58 x5 (A1B-CEPPO-36V, 3 Oct 2026, 2 blind Sonnet reads each); f.36v S76/S58 x3 carry a two-stroke gloss both readers see (ii/ll/11, not z) but name no letter); D1-CEPPO (6 Oct 2026): a third, blind Opus reader on a1b36v T1-T6 gives 2-of-3 agreement on one tile only (T4, "ll" over S76/S58, against printed z; logged as a data conflict in HYPOTHESES.md); the same reader reads the same looped sign as "ss" on T5/T6, so no shape rule; f.87's six S76 tokens were already M, no grade change; next: the owner's sign sorter for the S31/S32/S76 looped family (sorter/), or a further glossed Birago/Ceppo leaf with the looped sign -- blind model reads of the a1b36v tiles are [retired] (three readers, A1B-CEPPO-36V + D1-CEPPO)
 - f.11r, 12 I tokens (the pound sign read l from context) - blocker: no-key-material; every witness on disk or one fetch away is now searched: ff.27/39/82 (A1B-CEPPO-POUND), fr.3252 f.36r/f.36v/f.37r + slip (A1B-CEPPO-36: one occurrence, gloss not legible blind), fr.3252 f.47r (A1B-CEPPO-11V, 3 Oct 2026: 0 X_POUND labels in passA/passB/recon, and the leaf carries no interlinear gloss, so no glossed occurrence is possible), f.11v (A1B-CEPPO-11V: show-through of f.11r and a docket only, no cipher, no decipherment); stays I under PREREG c5412f90. f.117r is not a gloss source either (no slip or clear copy, birago Premise check (c)) and waits on the owner's sorter; reopens only with a new glossed Birago/Ceppo leaf.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
@@ -1045,7 +1045,7 @@ on every folio.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: f.21v S10/S26 and S13/S69 witness-shape rule from the fr.3252 glosses, then a 4x read (~$3); f.21v S65/S80 read 6 Oct 2026 (D22-CEPPO21, 5 M -> S); f.36v S76/S58 gloss tiles read by three blind readers (A1B-CEPPO-36V 2 Sonnet, D1-CEPPO 1 Opus, 6 Oct 2026): one tile agrees on "ll" (data conflict with printed z), no rule -- [retired] instrument: blind model reads of the a1b36v tiles; L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
+Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: a verifier on the f.21v D22-CEPPO21/D07-CEP21 S tokens (6 + 1), then the next f.21v split pair by count; f.21v S10/S26 and S13/S69 read 7 Oct 2026 (D07-CEP21, L10.6 f -> r); f.21v S65/S80 read 6 Oct 2026 (D22-CEPPO21, 5 M -> S); f.36v S76/S58 gloss tiles read by three blind readers (A1B-CEPPO-36V 2 Sonnet, D1-CEPPO 1 Opus, 6 Oct 2026): one tile agrees on "ll" (data conflict with printed z), no rule -- [retired] instrument: blind model reads of the a1b36v tiles; L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1416,3 +1416,54 @@ FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading
 The gloss letters behind R-8 were read by one worker (M), and the f.21v tile read is one eye; **VERIFIER WANTED** for the five S
 (AUDIT.md grade note). The instrument separates S65/S80 on f.21v (26 of 27 decidable), so it is not retired. f.11r, f.35, f.87
 unchanged. Report: what was found and where it was not found; no novelty class. Hosts: none (0 network requests); github push only.
+
+## D07-CEP21: f.21v S13/S69 and S10/S26 read by witness shape on 4x tiles (7 Oct 2026, account 1)
+
+Brief `.claude/briefs/runs/2026-10-07-account1-default-0042-jobs.md` (D07-CEP21), for LANE DEFAULT-account-1-20261007-0042. Clock
+01:10 UTC at start. Pre-registration `harvest/f21v/lookalike/PREREG-S13S69.md`, written to disk at 01:12:56 UTC before any tile (first tile 01:13:34, file mtimes), but **not pushed before the read**: the room.py call committed only its ROOM line (629f40012), so the prereg reached git with the results. The ordering rests on file times on this worker's disk, not on git (correction appended to the PREREG file).
+
+**The rule, from files already on disk (no new gloss read).** Printed sheet (`nevers_add1.png`, boxes `harvest/sign_id_map.json`):
+S13 = g, a small closed oval with a short tick inside; S69 = f, a loop crossed by one bar running out past both sides; S60 = r, a
+steeper loop with one bar; X_THETA2 (off-sheet) = r, an oval with two bars. S10 and S26 are both printed **s** (rows 4 and 1).
+Glossed witness, fr.3252 f.36v (`harvest/witness_f36/alignment_pairs.tsv`): S13 = g x1, S26 = s x2, double-barred oval = r x1;
+**no glossed S69, no glossed S10.** Rules: R-g (closed oval, mark inside, nothing crossing outside -> S13), R-bar (one bar past both
+sides -> S69, the unglossed side; two bars -> X_THETA2), R-s (value-neutral: both s).
+
+**Crops (command, pasted).** `python3 tools/iiif_lines.py --image ciphers/ceppo-nevers-fr3251-1570s/harvest/f21v/c23_cipher_w.jpg
+--out <scratchpad>/f21v_sp --prefix f21v --debug --groups 8 --group-upscale 3` (13 bands, as CEPPO-SPLITS/D22). Each target was
+located on 2x strips by its passD neighbours, then cut at 4x from the same native region (`harvest/f21v/lookalike/s13s69_tiles/`).
+Reader: this worker's eye, before any score. No subagent; 0 network requests.
+
+**Read** (`harvest/f21v/lookalike/s13s69_reads_f21v.tsv`), 7 primary tiles:
+- L06.2.12 two bars -> X_THETA2, agrees. L11.4, L11.22 one bar past both sides -> S69, agree (unglossed side).
+- **L10.6 two bars -> X_THETA2 (r)**; passD had S69 (f) at M. The one label the rule changes.
+- L06.2.15 (passD S13): a bar runs out past the left side; the right side is lost in the gutter shadow. UNDECIDED (leans S69).
+- L09.3 (an open reversed-C with a dot) and L11.2 (a w with a stroke above) are not ovals; the rule does not apply; labels kept.
+5 of 7 decided (retirement threshold 4): the instrument is not retired.
+S10/S26 (secondary, value-neutral): L03.24, L04.10, L04.15 are the printed S10 form ('L' with a dot in the angle), agreeing with passD;
+L07.34 (a '2' with a trailing dash) UNDECIDED; L05.7, L05.28 not located (value-neutral, skipped). No letter or grade can move here.
+
+**Gates for L10.6 (rule 3), side by side** (`harvest/decode_control.py <seq> --shuffles 200 --windows 20 --err 0.15 --extra X_THETA2=r`):
+| sequence | real key | z (seeds 1/2/3) | rank | power |
+|---|---|---|---|---|
+| passD, L10.6 S69 (f) | -1.1096 | 6.43 (seed 1) | 1/201 | 20/20 |
+| L10.6 X_THETA2 (r) | -1.1002 | 6.45 / 7.02 / 6.90 | 1/201 x3 | 20/20 x3 |
+Placement control (`harvest/f21v/lookalike/s13s69_control.py --n 500 --seed 1`, it can vary on the score): one random letter-bearing
+f.21v token set to r, 500 draws: mean -1.1177, p95 -1.0968; 29/500 reach the real score (p 0.060), so the gain is near the top of
+the null but not beyond its p95. In-family: L11.4 -> r -0.0066, L11.22 -> r -0.0038 (the score prefers f at the one-bar tiles, as the
+shape does), L06.2.15 -> r +0.0005. So the score does not simply favour r. L06.2.12 -> S69 scores +0.0003 (shape and score disagree
+by a hair), so it stays M under the strict rule; it was not lifted.
+Judge, pasted (before, then after):
+```
+FAIL language: score=-1.135, null_p99=-1.721, real_p05=-0.93, real_median=-0.829, mode=both, N=262
+FAIL language: score=-1.128, null_p99=-1.721, real_p05=-0.93, real_median=-0.829, mode=both, N=262
+```
+
+**Change.** `harvest/f21v/passD.tsv` L10.6 S69 M -> X_THETA2 H (note column cites this job); `ciphertext_f21v.tsv` rebuilt
+(`build_decode_inputs.py f21v --seq f21v/passD.tsv`; the rebuild before the change reproduced the committed file byte for byte);
+`reading_f21v_letters.txt` regenerated (one letter). `tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s --check`: "reading up
+to date", exit 0. f.21v tokens 267: S 194 -> **195**, M 61 -> **60**, I 7, U 5. L10 reads `acioremti·e` (was `aciofemti·e`); no word
+is claimed. f.11r, f.35, f.87 unchanged. This is a reading change after AUDIT.md: grade note appended there, **VERIFIER WANTED**.
+The witness behind X_THETA2 is one glossed instance read by one worker (M), and the f.21v tile is one eye.
+
+Report: what was found and where it was not found; no novelty class. Hosts: none (0 network requests).

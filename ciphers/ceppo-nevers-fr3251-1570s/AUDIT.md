@@ -1123,3 +1123,10 @@ passD label (24 barred = a, 2 plain = et), L03.39 undecided. No label or letter 
 M 66 -> 61. Key control unchanged (rank 1/201, z 6.43, power 20/20); judge unchanged (-1.135 FAIL). SO-CEPPO-F21V unaffected
 (letters identical). The depth line above uses the verifier's endorsed count (155) and is not changed here; a verifier decides
 whether to endorse the five. Details: NOTES.md "D22-CEPPO21".
+
+## f.21v reading note (D07-CEP21, 7 Oct 2026; solver-side propagation per rule 10, no class or depth change)
+One letter of the f.21v reading changed after this AUDIT.md was written: L10.6 is a closed oval with TWO bars running out past both
+sides (the fr.3252 f.36v double-barred oval, glossed r), so it is relabelled S69 (f, M) -> X_THETA2 (r, S). L10 now reads
+`acioremti·e` (was `aciofemti·e`); no word is claimed for the passage. f.21v grades S 194 -> 195, M 61 -> 60. The passage is not
+quoted in this file's safe sentences or in any SECOND-OPINIONS-QUEUE.tsv row (grep, 7 Oct 2026). **VERIFIER WANTED** for the one S.
+Details: NOTES.md "D07-CEP21".

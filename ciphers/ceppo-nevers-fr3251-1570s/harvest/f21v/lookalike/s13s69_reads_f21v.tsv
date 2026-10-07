@@ -1,0 +1,12 @@
+token	passD	conf	shape_read	rule	decision	tile
+L06.2.12	X_THETA2	M	closed oval, two bars both running out past both sides	R-bar two bars	X_THETA2 (agrees)	s13s69_tiles/L06.2.12.jpg
+L06.2.15	S13	M	closed oval, one bar inside running out past the LEFT side; right side lost in the gutter shadow	R-bar? (right side not judgeable)	UNDECIDED	s13s69_tiles/L06.2.15.jpg
+L09.3	X_NEW	-	open backward-3 / reversed-C with a dot inside; not a closed oval, no bar	none	n/a (not S13 by R-g; label kept)	s13s69_tiles/L09.3.jpg
+L10.6	S69	M	closed oval, TWO parallel bars running out past both sides	R-bar two bars	X_THETA2 (contradicts S69)	s13s69_tiles/L10.6.jpg
+L11.2	X_NEW	-	w with a short stroke above; not an oval	none	n/a (label kept)	s13s69_tiles/L11.2.jpg
+L11.4	S69	M	closed oval, one bar running well out past both sides	R-bar one bar	S69 (agrees; unglossed side)	s13s69_tiles/L11.4.jpg
+L11.22	S69	M	closed oval, one bar running out past both sides	R-bar one bar	S69 (agrees; unglossed side)	s13s69_tiles/L11.22.jpg
+L03.24	S10	H	right-angle 'L' with a dot in the angle (printed S10 form), not the 9-with-dot S26 form	R-s	S10 (agrees; value s either way)	strip only
+L04.10	S10	H	same 'L' with dot	R-s	S10 (agrees; value s either way)	strip only
+L04.15	S10	H	same 'L' with dot	R-s	S10 (agrees; value s either way)	strip only
+L07.34	S26	L	'2' with a trailing dash; neither the 'L'-dot nor clearly the 9-with-dot form	R-s	UNDECIDED	strip only
