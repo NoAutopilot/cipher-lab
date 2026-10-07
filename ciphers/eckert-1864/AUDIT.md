@@ -1701,3 +1701,88 @@ Potomac the next day."
   time-word conflict for N2-AJ in reading-no2.md line 296, D12-VP sections 3, 4 and 5, the SO prompt and status.json is void.
   Corrected here, in the SO prompt (row SO-ECKERT-N2AJ, still queued) and in status.json; the solver files are flagged, not
   edited.
+
+## AUDIT (propagation, D4-VP2)
+
+Verifier D4-VP2 (account 4, LANE DEFAULT-account-4-20261007-1335), 7 Oct 2026, 14:21-14:3x UTC by `date -u`; a separate session
+from D4-E5 (solver of N2-AZ..BF), D4-E5H and every earlier eckert-1864 solver, not protecting their conclusions. Scope: the seven
+Cipher No. 2 blocks reading-no2.md gained after the last propagation (N2-AZ..BF, mssEC 19 pp.86-105, June-July 1864), the six
+key-no2.md section 8 clerk's forms D4-E5 added, and D4-E5H's N2-AJ header correction. Nothing decoded; the solvers' files untouched.
+
+### 1. Re-derivation (rule 7) and image check
+- `python3 decode_no2.py --check`: "reading-no2.md is current", exit 0 (14:2x UTC).
+- Per-block code-word counts from the derived block: N2-AZ H 15, I 2; N2-BA H 32; N2-BB H 49, C 4, I 3; N2-BC H 27, C 3, I 2;
+  N2-BD H 54, C 1; N2-BE H 56, C 3, I 4; N2-BF H 59, C 4, I 3. Sum H 292, C 15, I 14, M 0, as D4-E5 states.
+- Strip crops from the 2400 px IIIF images (`hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`,
+  scratch, regenerable), crop step `python3 tools/iiif_lines.py --image $S/img/p<pointer>.jpg --out $S/crops/<d> --prefix p<page>
+  --region <x,y,w,h> --lines-per-crop 3 --max-width 1600` with the solver's regions: 8983 (N2-AZ) 120,200,2200,1520, 8 lines read;
+  8988 (N2-BC) 150,150,2250,1550, 4 lines; 8996 (N2-BE) 150,1730,2250,900, 4 lines + header. Every word read agrees with
+  ciphertext-no2.txt, the code words included: Imogene Hawkins Mars tulip Crowd stick yard Behead Chart rockland (N2-AZ); hang Morgan
+  Hannah Crowd Bridle tulip Whims World Bermuda pedlar Meriden raven Meriden's virtue (N2-BC); Hunter Mark Fisher Henrietta Chant
+  Tulip Famish whiffs Ginger Mark Brooks Clarke Dwight Summer Richard Bunyan (N2-BE): 40 code-word tokens, 40 agree. N2-AZ's
+  pencilled glosses over line 1 ("flor", "weida", "frame", "help") are seen as the solver describes and are not transcribed.
+
+### 2. Print confirmation by script
+OR pages from the IA djvu full texts fetched once here (warofrebellion344unit, 363unit, 371unit, 372unit, 402unit; also 361unit,
+401unit, 511unit for N2-AZ): each phrase is found and its page is the last running-head page number before it (the head is the
+first line of each page in these OCR files; curly apostrophes in the OCR were matched by shorter phrases). PUSG vol. 11
+(papersofulyssess0011gran) by IA full-text search (be-api), which gives the sentence but not the page.
+
+| entry | solver's citation | phrase found (script) | page here | class |
+|---|---|---|---|---|
+| N2-AZ | PUSG 11 by Google Books snippet, page not established | be-api: "hope General Grant will not put too much confidence in, Barnard", "practical military affairs", "deplorable results", "proper comprehension of practical purposes", "If General Grant trusts to his own judgment we are safe, but trust in Barnard is" | page not established | N1 |
+| N2-BA | OR I/34 pt 4 p.424-425 | "I learn that the gauge" (p.424), "locomotive builders", "can be had ready built" (p.425) | 424-425 | N1 |
+| N2-BB | OR I/40 pt 2 p.117, also I/37 pt 1 p.645 | "German engineer", "6th and 7th", "well supplied with provisions", "verified by others" | **I/40 pt 2 p.116; I/37 pt 1 p.644** (each whole telegram between the 116/117 and 644/645 heads) | N1 |
+| N2-BC | OR I/37 pt 1 p.650-651 | "possession of Staunton" (650), "superior to Hunter's", "extremely perilous", "communication to him from this side" (651) | 650-651 | N1 |
+| N2-BD | OR I/34 pt 4 p.528 | "limited to the defensive", "shortest time to serve" | 528 | N1 |
+| N2-BE | OR I/37 pt 2 p.119 | "telegraphs from New Orleans", "Monocacy.", "2,496", "Maryland Heights, at Hagerstown", "considerable alarm in" | 119 | N1 |
+| N2-BF | OR I/36 pt 3 p.569-570 | "June 4, 1864 -- 2.20 p.m." head, "6,683", "remounted here", "About 1,000 more", "5,000 more men", "Lewisburg", "moving against Marietta" | **569** (the whole telegram lies between the 569 head and the next page's head, whose number the OCR lost) | N1 |
+
+N2-AZ beyond the solver's log: not in OR I/36 pt 1 (where Dana's own reports are printed), I/36 pt 3, I/40 pt 1, I/40 pt 2 or
+I/51 pt 1 by "confidence in Barnard", "practical military affairs", "deplorable results", "McClellan's blunders" (0 hits each;
+controls "6,683" and "German engineer" found in 363unit and 402unit). The ledger's "is in large degree" against the printed draft's
+"is ne smal degree" (struck words kept by PUSG) is the solver's observation and agrees with the be-api snippet.
+
+All seven: **N1**, key `period` (Cipher No. 2, mssEC 47), text `known`. Safe sentence for each: "The Cipher No. 2 ledger copy reads,
+with the period book, to the text printed in <print, page>." Unsafe: anything implying the content was unknown. No N3 or better, so
+no SECOND-OPINIONS-QUEUE.tsv row. Page corrections (not edited in reading-no2.md or key-no2.md, solver files; this section is the
+record): N2-BB OR I/40 pt 2 **p.116** (not 117) and I/37 pt 1 **p.644** (not 645); N2-BF OR I/36 pt 3 **p.569** (not 569-570).
+The same three page numbers recur in key-no2.md section 8's citations for Dorming, Pene and Sprage.
+
+Depth (rule 4a), % = (H+C)/code-word tokens from the derived block, external check the print and the re-derivation above:
+**D4** (every code-word token H or C): N2-BA (32/32), N2-BD (55/55). **D3**: N2-AZ 88% (2 I: the clerk's split "Barn = yard"),
+N2-BB 95%, N2-BC 94%, N2-BE 94%, N2-BF 95% (every I token the short period form yard or stick, per D4-E5). Outward words: D4
+"deciphered", D3 "largely deciphered (about N%)"; text `known` for all seven.
+
+### 3. key-no2.md section 8: the six clerk's forms (C), each checked against the print here
+| form | value | witness in the ledger | print phrase found (script) |
+|---|---|---|---|
+| Dorming | 7 | N2-BB twice | "left Lee's army June 7", "on the 6th and 7th" (OR I/40 pt 2 p.116) |
+| Pene | Army | N2-BB "Jaunts Pene well seasoned" | "Lee's army is well supplied with provisions" (I/40 pt 2 p.116) |
+| plantation | communication | N2-BC | "to get any communication to him from this side" (I/37 pt 1 p.651) |
+| Meridians | Hunter D | N2-BC "superior to Meridians" | "superior to Hunter's" (I/37 pt 1 p.651) |
+| Mindins | Hunter D | N2-BE | "Hunter's army move's so slow" (I/37 pt 2 p.119) |
+| Sprage | 1000 | N2-BF "Caldwell Sprage more" | "5,000 more men" (I/36 pt 3 p.569) |
+All six stand at C as single-context or two-context clerk's forms; carried into this audit with the page corrections above.
+Plantation and Mindins have one witness each; their C rests on the print alone.
+
+### 4. N2-AJ header correction (D4-E5H, commit 1c88589f1), carried into D12-VP's sections 3-5
+D12-VP's text above is left as written; this note supersedes it where it says otherwise. The p.18 (pointer 8910) N2-AJ header
+reads "12. midn" (D4-V2AJ, D4-E5H, each on a native-resolution crop), not "12 noon". Therefore: in section 3, read N2-AJ's
+header as "12 midn" and drop "time word Viola = 12 midnight, conflict logged by the solver"; in section 4, the clause "and the
+time word (Viola = midnight) conflicts with the header's noon" no longer holds (time word and header agree); in section 5, delete
+"N2-AJ Viola midnight vs header noon" from the time/number-word list. The class (N3), depth and safe sentence are unchanged
+(D4-V2AJ's AUDIT 2 already raised depth to D4 and reads the header as midn). Checked here: status.json's N2-AJ row already reads
+"12. midn"; SECOND-OPINIONS-QUEUE.tsv and the second-opinions/ folder carry no "noon" or "Viola" for N2-AJ (grep).
+
+### 5. Search log and requests
+Families: OR (IA djvu full text, eight volumes named above); PUSG vol. 11 (IA be-api fts, 6 queries); the solver's Google Books
+snippet for N2-AZ not repeated (the be-api snippet is the same text). Not searched (not needed for N1 entries): JSTOR, OpenAlex,
+NARA. Requests: archive.org 9 (8 djvu texts, 1 advancedsearch), be-api.us.archive.org 6, hdl.huntington.org 4 (one empty reply, retried once
+after a pause, 200); all others 200.
+
+### 6. Postmortem
+- No novelty over-claim in D4-E5's section: it says "located"/"not located" and "a search result only". Corrections: the three
+  page numbers in section 2; D4-E5's NOTES.md "65-entry total from the decoder" is the 58-entry total (the derived block says
+  "Totals over the 58 entries"; 58 `### N2-` blocks in ciphertext-no2.txt). Not edited in the solver's files.
+- PROGRESS.tsv carries no eckert-1864 row; none added (one-row-per-leaf register, not this job's to open).

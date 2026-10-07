@@ -4476,6 +4476,300 @@
       "depth_sentence": "Lincoln tells Grant: I begin to see it. You will succeed. God bless you all.",
       "depth_check": "OR I/40 pt 2 p.47 prints the same telegram",
       "depth_note": "code words H 11, I 1"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 88.2,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D4-VP2 verifier (account 4)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: the Secretary of War to Dana, 11 June 1864, no confidence in Barnard (N2-AZ)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in PUSG vol. 11 (page not established).",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.91, pointer 8983"
+      ],
+      "document_id": "Huntington mssEC 19 p.91, pointer 8983, N2-AZ",
+      "documents": [
+        "Huntington mssEC 19 p.91, pointer 8983, N2-AZ"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "15 H, 2 I of 17",
+      "unresolved_spans": "none",
+      "reading_version": "D4-E5 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D4-VP2)' section 2",
+      "depth_sentence": "The Secretary of War tells Dana he hopes Grant will not put too much confidence in Barnard, whose judgement on practical military affairs he distrusts.",
+      "depth_check": "PUSG vol. 11 (page not established) prints the same telegram; decode_no2.py --check exit 0",
+      "depth_note": "code words 15 H, 2 I of 17"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D4",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D4-VP2 verifier (account 4)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Meigs to Canby, 17 June 1864, gauge of the Vicksburg and Shreveport Railroad (N2-BA)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/34 pt 4 pp.424-425.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.94, pointer 8986"
+      ],
+      "document_id": "Huntington mssEC 19 p.94, pointer 8986, N2-BA",
+      "documents": [
+        "Huntington mssEC 19 p.94, pointer 8986, N2-BA"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "32 H of 32",
+      "unresolved_spans": "none",
+      "reading_version": "D4-E5 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D4-VP2)' section 2",
+      "depth_sentence": "Meigs tells Canby the Vicksburg and Shreveport Railroad is 5 ft 6 in gauge and should be altered to 5 ft if repaired, since no 5 ft 6 in rolling stock can be had ready built.",
+      "depth_check": "OR I/34 pt 4 pp.424-425 prints the same telegram; decode_no2.py --check exit 0",
+      "depth_note": "code words 32 H of 32"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 94.6,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D4-VP2 verifier (account 4)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Halleck to Grant, 17 June 1864, a German engineer officer's report from Lee's army (N2-BB)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/40 pt 2 p.116 (also I/37 pt 1 p.644).",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 pp.94-95, pointers 8986-8987"
+      ],
+      "document_id": "Huntington mssEC 19 pp.94-95, pointers 8986-8987, N2-BB",
+      "documents": [
+        "Huntington mssEC 19 pp.94-95, pointers 8986-8987, N2-BB"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "49 H, 4 C, 3 I of 56",
+      "unresolved_spans": "none",
+      "reading_version": "D4-E5 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D4-VP2)' section 2",
+      "depth_sentence": "Halleck passes to Grant a German engineer officer's report that Pickett's and Breckinridge's divisions went through Gordonsville against Hunter on 6 and 7 June.",
+      "depth_check": "OR I/40 pt 2 p.116 (also I/37 pt 1 p.644) prints the same telegram; decode_no2.py --check exit 0",
+      "depth_note": "code words 49 H, 4 C, 3 I of 56"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 93.8,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D4-VP2 verifier (account 4)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Halleck to Grant, 19 June 1864, no word from Hunter (N2-BC)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/37 pt 1 pp.650-651.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.96, pointer 8988"
+      ],
+      "document_id": "Huntington mssEC 19 p.96, pointer 8988, N2-BC",
+      "documents": [
+        "Huntington mssEC 19 p.96, pointer 8988, N2-BC"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "27 H, 3 C, 2 I of 32",
+      "unresolved_spans": "none",
+      "reading_version": "D4-E5 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D4-VP2)' section 2",
+      "depth_sentence": "Halleck tells Grant the cavalry sent to Hunter found the enemy in Staunton and Lexington and came back without reaching him.",
+      "depth_check": "OR I/37 pt 1 pp.650-651 prints the same telegram; decode_no2.py --check exit 0",
+      "depth_note": "code words 27 H, 3 C, 2 I of 32"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D4",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D4-VP2 verifier (account 4)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Halleck to Canby, 24 June 1864, defensive only; troops to Fort Monroe (N2-BD)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/34 pt 4 p.528.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 pp.97-98, pointers 8989-8990"
+      ],
+      "document_id": "Huntington mssEC 19 pp.97-98, pointers 8989-8990, N2-BD",
+      "documents": [
+        "Huntington mssEC 19 pp.97-98, pointers 8989-8990, N2-BD"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "54 H, 1 C of 55",
+      "unresolved_spans": "none",
+      "reading_version": "D4-E5 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D4-VP2)' section 2",
+      "depth_sentence": "Halleck tells Canby that Grant limits him to the defensive and wants all available white troops of the Gulf sent to Fort Monroe.",
+      "depth_check": "OR I/34 pt 4 p.528 prints the same telegram; decode_no2.py --check exit 0",
+      "depth_note": "code words 54 H, 1 C of 55"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 93.7,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D4-VP2 verifier (account 4)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Halleck to Grant, 8 July 1864, the enemy around Maryland Heights (N2-BE)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/37 pt 2 p.119.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 pp.104-105, pointers 8996-8997"
+      ],
+      "document_id": "Huntington mssEC 19 pp.104-105, pointers 8996-8997, N2-BE",
+      "documents": [
+        "Huntington mssEC 19 pp.104-105, pointers 8996-8997, N2-BE"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "56 H, 3 C, 4 I of 63",
+      "unresolved_spans": "none",
+      "reading_version": "D4-E5 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D4-VP2)' section 2",
+      "depth_sentence": "Halleck tells Grant that Ricketts' division has gone forward to the Monocacy and that the enemy threatening Frederick has caused alarm in Washington, Baltimore and Pennsylvania.",
+      "depth_check": "OR I/37 pt 2 p.119 prints the same telegram; decode_no2.py --check exit 0",
+      "depth_note": "code words 56 H, 3 C, 4 I of 63"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+      ],
+      "audit_status": "one audit (propagation)",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 95.5,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "D4-VP2 verifier (account 4)",
+      "depth_date": "7 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "7 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Halleck to Grant, 4 June 1864, cavalry horses and re-enforcements (N2-BF)",
+      "grade": "N1",
+      "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in OR I/36 pt 3 p.569.",
+      "gap": "printed text exists; no novelty",
+      "phrases": [
+        "Huntington mssEC 19 p.86, pointer 8978"
+      ],
+      "document_id": "Huntington mssEC 19 p.86, pointer 8978, N2-BF",
+      "documents": [
+        "Huntington mssEC 19 p.86, pointer 8978, N2-BF"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "text": "known",
+      "completeness": "59 H, 4 C, 3 I of 66",
+      "unresolved_spans": "none",
+      "reading_version": "D4-E5 7 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, D4-VP2)' section 2",
+      "depth_sentence": "Halleck tells Grant that 6,683 cavalry horses went to the Army of the Potomac in May and that Sherman holds Allatoona Pass.",
+      "depth_check": "OR I/36 pt 3 p.569 prints the same telegram; decode_no2.py --check exit 0",
+      "depth_note": "code words 59 H, 4 C, 3 I of 66"
     }
   ],
   "lanes": [
