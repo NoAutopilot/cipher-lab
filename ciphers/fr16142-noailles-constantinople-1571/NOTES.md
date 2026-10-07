@@ -1510,3 +1510,63 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin)
 Verdict: keep going: 7 internal gaps; cheapest next: place c262 tiles under the owner's labels to widen the 17-pile bridge, ~$1
+
+## D07-NOXT: c262 tiles placed under the owner's piles, widened bridge (7 Oct 2026, 00:50-00:5x UTC by date -u, account-1 worker)
+Brief: `.claude/briefs/runs/2026-10-07-account1-default-0042-jobs.md` D07-NOXT (LANE DEFAULT-account-1-20261007-0042; D1-F16142A's
+Verdict cheapest next). Disk only: requests 0, subagents 0 (no tile needed the eye). Pre-registered `sorter/owner-sort-2026-10-04/aln/
+PREREG-D07NOXT.md` (pushed 6b4f5cb05 before any count); script `aln/bridge_ownerpiles.py` (EM copied from `run2/nxatl/c262_align.py`,
+asserted to reproduce `cluster_provisional_names.tsv` exactly on the raw clusters; filter and keytie statistic imported from
+`aln/keytie.py`); outputs `aln/results/d07noxt_summary.json`, `d07noxt_provisional_owner.tsv` (owner pile -> c262 provisional label),
+`d07noxt_c262_tiles.tsv`; `python3 aln/bridge_ownerpiles.py check` and `python3 aln/keytie.py check` exit 0. key.tsv unchanged.
+
+**Placement.** The owner sorted c510-516 tiles only, never c262's, so c262's 403 tiles are placed by cluster: atlas cluster -> owner pile
+through the 18 merges (67 tiles move), then the c262 alignment EM re-run with owner piles as the cluster ids. 14 tiles sit in clusters
+the owner split (k006, k072, k087 -> -b/-c/-d) and stay at the parent id; no tile features are on disk to place them by script, and
+they were not sent to the eye (listed in the summary json, `split_parent_tile_ids`).
+
+| | bridged piles (letter label, purity >= 0.40, support >= 3, in all six locked basin keys) |
+|---|---|
+| before (N8-NOX / keytie, raw clusters) | 17 |
+| **after (owner piles)** | **19** (+k000 r, k035 e/o, k091 e/o, k107 a; -k076 and -k080, now inside k060 and k000) |
+| null: owner-pile ids permuted among c262 tiles, same EM, 20 seeds | 2-8, max 8 |
+
+**Primary: PASS as registered** (19 > 17 and > null max 8). Net widening is small, +2 piles: the merges pooled support (k000 = k080 +
+k106 + k000, 29 tiles, r1 0.55; k035 = k002 + k035; k107 = k013 + k056 + k107) but also folded two old bridge piles into others.
+**Secondary (keytie's statistic on the 19 piles): PASS as registered, thin.** Basin consensus letter in the pile's Tomokiyo-key set on
+**H = 10 of 19** (k000 r, k022 e, k035 o, k053 s, k060 l, k073 t, k091 e, k102 d, k107 a, k115 a) vs (a) letter-set permutation p99 5,
+max 8; (b) non-locking 6-subsets p99 9, max 10 (not degenerate, 10 distinct values); (c) shuffled Dupuy max 4. On the old 17 piles H was
+7. The margin over (b) is one pile and one non-locking subset reaches 10, so this restates N8-NOX2's modest tie on two more piles; it is
+not a per-sign confirmation. Disagreements unchanged in kind: k021 d (prov. x), k045 x (f), k071 m (e), k086 r (y), k117 e (n), k041 m /
+k101 p / k112 l (e or o), k072 s (i).
+
+**Conflicts (listed, not resolved).** (i) Owner merges joining clusters with different c262 provisional labels: k000 = k000 t2 (1 tile)
++ k080 r1 (20) + k106 r1 (8); k035 = k002 o1/e2 (8) + k035 s1 (1); k065 = k009 c1 (1) + k065 e3 (1) + k083 i2 (1); k107 = k013 a2 (2) +
+k056 a2 (2) + k107 e1 (2). Each minority member carries 1-2 c262 tiles. (ii) Bridged piles with a runner-up of another key letter at >= 1/3
+of support: k101 o1/e2 5 vs r1 2; k053 s2 3 vs o1/e2 1. Every value grade M (the labels are one reconciler's rulings; c262 placement by
+cluster, not by the owner's eye). Conditional on RUN2-NXATL's unchecked alignment and the owner's quick-pass merges.
+
+## Remaining gaps (D07-NOXT, 7 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); the stream aligner's lock-on onto Dupuy 221R-226R is a basin with one common key (N8-NOX PASS) that agrees with Tomokiyo's key on 7 of 17 bridge piles (N8-NOX2 PASS); that key mapped onto the reconciled c262 reader signs reads toward the gloss beyond four nulls (RUN6-NOXREAD PASS, 0.3506 on the leaf-corrected gloss); test0's known-answer gate passes under both difflib and exact LCS (R9-NOX, stable); per-label masked alignment PASS by the letter but thin, S 2 of 36 with denser anchors and gap 5 as with basin anchors (D1-F16142A); c262 tiles placed under the owner piles widen the bridge 17 -> 19 piles (null max 8) and the basin key ties to key.tsv on 10 of 19 (D07-NOXT, thin); 0 open leaves decoded
+- Second, print-blind read of c262 gloss L01-L13: two whole-line blind Opus reads missed their own control (DEF1-NOXB 0.667, D2-NOXB2 0.714, gate 0.80); DEF1-NOXG's and R7A-NOX262's corrections rest on print-aware reads only - blocker: not-attempted; next: two independent blind passes on word-level crops of L01-L13 (tools/iiif_lines.py, 2-3 words per crop; the whole-line eye is barred from a third try by rule 3's repeat clause), ~$1.5
+- c262 cipher rows below c262rc L10 (beside gloss L14-L21, read once by R10-NOX2 into gloss_below_L13.tsv) not transcribed, so the gloss cannot join the scored block - blocker: not-attempted; next: cut those rows with tools/iiif_lines.py --follow-slope (region below y 3318, x from ~1380), two blind passes against the settled labels + reconciliation, then extend c262rc_recon.tsv and gloss.tsv together and re-run test0 --check, ~$3
+- Test 0's gate now passes (difflib and LCS): score an unglossed target block with Tomokiyo's key under the same test0 rule - blocker: not-attempted; next: two blind passes on a c510-516 line set against the settled labels + Dupuy 221R-226R as reference, scored with --stat lcs, ~$5
+- 14 c262 tiles sit in owner-split clusters (k006, k072, k087) and were not placed in the -b/-c/-d piles - blocker: not-attempted; next: rebuild tile features with tools/glyph_atlas.py on the committed c262rc crops and assign by nearest owner-sorted tile, or one eye pass on those 14 crops against the split piles' exemplars, ~$1
+- Decode of c510-516 with Tomokiyo's key through the 19-pile bridge not run (the guardrail purpose: the unread block is read only after the bridge's tie passes) - blocker: not-attempted; next: apply key.tsv through the 19 bridged piles (other piles left unread) to c510-516's owner-pile stream and score against Dupuy 221R-226R with test0's LCS rule and its shuffled-key/shuffled-text controls, pre-registered, ~$2; the fuller version (two blind reader passes on a c510-516 line set) stays ~$5
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; next: same pipeline with its control first, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; next: two passes against settled labels, ~$5
+- "Relation d'une bataille" c231 has no clear copy found - blocker: not-attempted; next: grep Charrière III and the Lepanto relations, ~$1
+
+## Escalation (D07-NOXT, 7 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); date-only Dupuy matches text-checked (RUN6-NOXDUP, R7A-NOX262)
+- [x] basin test: the locked-on runs share one key (N8-NOX, pre-registered, PASS vs non-locking and shuffled-Dupuy nulls)
+- [x] key tie: basin count-based consensus vs key.tsv via the c262 bridge (N8-NOX2, pre-registered, PASS 7/17 vs 4/5/5); widened under the owner piles to 10/19 (D07-NOXT, PREREG-D07NOXT.md, PASS vs 5/9/4, thin)
+- [retired] decode on atlas tiles: c262 tile-stream decode vs gloss (RUN6-NOXDEC FAIL, 0.1803 on the L01-L13-corrected gloss, still under nulls), instrument atlas-tile stream + test0 ratio
+- [x] decode on a reader transcription: basin key mapped onto the reconciled c262 signs (RUN6-NOXREAD PASS; 0.3506 vs p99 0.2413/0.2525/max 0.2665/0.2546)
+- [x] per-token alignment: masked per-label alignment PASS by the letter (S 2 vs p99 0/0) with basin anchors gap 3 (RUN6-NOXALIGN, corrected gloss) and with W:-word anchors gap 5 (D1-F16142A, PREREG-D1F16142A.md); neither knob moved S, so more tuning of the same instrument on the same 10 rows is not the next step (rule 3 repeat clause); more cipher rows under the gloss (L14-L21) is
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; registered gate passes under difflib and under exact LCS (R9-NOX, PREREG-R9NOX-LCS.md, stable to the gloss change)
+- [x] print: Charrière III pp.258, 520-524 and 551-558 read; p.258 differs from the leaf gloss at L08 and L09 (spelling)
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin), D07-NOXT bridge under owner piles (PASS 17 -> 19)
+Verdict: keep going: 8 internal gaps; cheapest next: 14 split-pile c262 tiles placed (~$1), then the c510-516 decode through the 19-pile bridge, pre-registered, ~$2
