@@ -55,6 +55,9 @@ aligned copy letters by the same band_dp as kp87b/cgrades87b.py). Witness only; 
 - T40 (table a): 0 of 12 C; aligned s 5, r 1, o 1 -- new on this page; may be a reader-label merge (cf. T31) rather
   than a table error; not seen on f.301v/f.275r as a conflict. Next: image compare of the f.302v T40 tokens with the
   table's a and s cells, disk only.
+  D07-PIST40 (7 Oct 2026, pist40/): table-cell crop compare, 10 of 12 tokens, matched control (3 C-graded T17 + 2 T46
+  tokens of f.302v) FAILed 1/5 -> non-test, no token counts; test tokens read T46 7 / T40 3 (none T40 at medium+). By eye every
+  located token is the T17 n-with-descender shape (merge hypothesis, untested). Next: page-internal same/different compare.
 - T31 (table m): 9 tokens, aligned m 3, o 3, t 1, r 1: still split. Rule 4: every T31 token stays M (3 that
   cgrades87b scores C are counted M in NOTES).
 Arm B (key86 + REMAP_B) scored 0.621 vs arm A 0.590 on the reconciled page (blind A 0.571 vs 0.553, blind B 0.630

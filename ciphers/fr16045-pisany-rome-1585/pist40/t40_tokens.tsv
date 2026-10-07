@@ -1,0 +1,17 @@
+id	line	tok_index	label	role	best	second	conf	admissible	status	read_T40	description
+R04	L02	16	T17	control	T40	T46	low	T17	UNSETTLED		n/m-like arch pair, descender weak, bottom stroke ambiguous
+R11	L02	26	T17	control	T46	T40	high	T17	UNSETTLED		clear y-like sign: n head with a curved descender hooking left
+R06	L03	6	T46	control	T46	T17	low	T46	UNSETTLED		y-like top with a looped/circled body and a short curved tail
+R13	L03	9	T17	control	T40	T46	low	T17	UNSETTLED		n-like arch with a long straight vertical descender right of centre
+R14	L04	2	T46	control	T46	T40	high	T46	SETTLED-T46		y-shape with thick hooked descender curling left
+R09	L04	4	T40	test	T40	T46	low	T17	UNSETTLED (control gate failed)		n-like arch with a long straight descender
+R12	L06	26	T40	test	T46	T40	low	T17	UNSETTLED (control gate failed)		n/y with a faint descender hooking left at the bottom
+R02	L06	34	T40	test	T46	T40	medium	T17	UNSETTLED (control gate failed)		n/u-shaped head with a thick descender curling left at bottom
+R08	L06	36	T40	test	T40	T46	low	T17|T40	UNSETTLED (control gate failed)		small n arch with a straight descender stroke down (no hook)
+R05	L07	27	T40	test	T46	T17	medium	T17	UNSETTLED (control gate failed)		small y-shape with a big curved hook descender below
+R07	L08	10	T40	test	T46	T40	low	T17	UNSETTLED (control gate failed)		n-like arch on top with a curved descender hook at the bottom left
+R03	L09	6	T40	test	T40	T04	low	T17	UNSETTLED (control gate failed)		small n-like arch, short, no clear descender (centre sign faint)
+R10	L11	11	T40	test	T46	T40	low	T17	UNSETTLED (control gate failed)		n/y shape with a long straight descender through the sign
+R15	L11	16	T40	test	T46	T40	medium	T17	UNSETTLED (control gate failed)		n/y head with a long descender and a curved bottom hook
+R01	L11	40	T40	test	T46	T40	medium	T17	UNSETTLED (control gate failed)		y-like sign: small n/u top with a long curved descender hooking left
+# control gate: 1/5 controls settled to own label (need >= 4): FAIL

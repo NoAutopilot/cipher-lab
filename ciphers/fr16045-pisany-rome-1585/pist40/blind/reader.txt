@@ -1,0 +1,27 @@
+id	best	second	confidence	description
+R01	A	G	medium	y-like sign: small n/u top with a long curved descender hooking left
+R02	A	G	medium	n/u-shaped head with a thick descender curling left at bottom
+R03	G	B	low	small n-like arch, short, no clear descender (centre sign faint)
+R04	G	A	low	n/m-like arch pair, descender weak, bottom stroke ambiguous
+R05	A	I	medium	small y-shape with a big curved hook descender below
+R06	A	I	low	y-like top with a looped/circled body and a short curved tail
+R07	A	G	low	n-like arch on top with a curved descender hook at the bottom left
+R08	G	A	low	small n arch with a straight descender stroke down (no hook)
+R09	G	A	low	n-like arch with a long straight descender
+R10	A	G	low	n/y shape with a long straight descender through the sign
+R11	A	G	high	clear y-like sign: n head with a curved descender hooking left
+R12	A	G	low	n/y with a faint descender hooking left at the bottom
+R13	G	A	low	n-like arch with a long straight vertical descender right of centre
+R14	A	G	high	y-shape with thick hooked descender curling left
+R15	A	G	medium	n/y head with a long descender and a curved bottom hook
+
+Cells:
+A: y-like, n head with a descender hooking left
+B: small square-bracket n (arch with flat top, no descender)
+C: s/5-like curl with a small dot
+D: m with a circle around it
+E: X-like crossing strokes
+F: 3-like sign with a tail
+G: small plain n/arch, no descender
+H: T or inverted-T with a base bar, boxed
+I: small circled sign with a curled 7/y shape
