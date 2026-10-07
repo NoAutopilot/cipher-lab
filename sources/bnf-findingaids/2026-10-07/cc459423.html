@@ -1,0 +1,479 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000045942">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000045942">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 15370-17058 [Saint-Germain] > Français 15370-15911</div>
+					<h1>Français 15540-15584</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000045942_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942">Français 15540-15584 • Recueil de lettres, pour la plupart originales, et autres pièces, relatives à l'histoire de France, principalement sous les règnes de Charles IX, Henri III, Henri IV et Louis XIII. (1477-1657).</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e55">Français 15540 • Harlay 309 • I Règnes de Louis XI et de CHARLES VIII ; lettres originales adressées à ces souverains (1477-1488).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e604">Français 15541 • Harlay 311 • II Règnes de CHARLES VIII et de LOUIS XII (1487-1500).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e1150">Français 15542 • Harlay 318 (1) • III Règnes de FRANÇOIS Ier, HENRI II, FRANÇOIS II et CHARLES IX (1532-1568).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e1356">Français 15543 • Harlay 318 (2) • IV Règne de CHARLES IX (1567).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e1500">Français 15544 • Harlay 320 (1) • V Règne de CHARLES IX (1568, janvier et février).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e1731">Français 15545 • Harlay 320 (2) • VI Règne de CHARLES IX (1568, mars et avril).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e1968">Français 15546 • Harlay 320 (3) • VII Règne de CHARLES IX (1568, mai et juin).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e2240">Français 15547 • Harlay 320 (4) • VIII Règne de CHARLES IX (1568, juillet et août).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e2558">Français 15548 • Harlay 320 (5) • IX Règne de CHARLES IX (1568, septembre-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e2769">Français 15549 • Harlay 323 (1) • X Règne de CHARLES IX (1569, janvier-juin).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e2945">Français 15550 • Harlay 323 (2) • XI Règne de CHARLES IX (1569, juillet-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e3233">Français 15551 • Harlay 323 (3) • XII Règne de CHARLES IX (1570, janvier-mai).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e3479">Français 15552 • Harlay 323 (4) • XIII Règne de CHARLES IX (1570, juin-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e3768">Français 15553 • Harlay 323 (5) • XIV Règne de CHARLES IX (1571).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e3964">Français 15554 • Harlay 326 (1) • XV Règne de CHARLES IX (1572, janvier-juin).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e4218">Français 15555 • Harlay 326 (2) • XVI Règne de CHARLES IX (1572, juillet-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e4482">Français 15556 • Harlay 326 (3) • XVII Règne de CHARLES IX (1573, janvier-février).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e4788">Français 15557 • Harlay 326 (4) • XVIII Règne de CHARLES IX (1573, mars-mai).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e5041">Français 15558 • Harlay 326 (5) • XIX Règne de CHARLES IX (1573, juin-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e5314">Français 15559 • Harlay 326 (6) • XX Règnes de CHARLES IX et HENRI III (1574).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e5580">Français 15560 • Harlay 326 (7) • XXI Règne de HENRI III (1575-1578).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e5808">Français 15561 • Harlay 329 (1) • XXII Règne de HENRI III (1579).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e6038">Français 15562 • Harlay 329 (2) • XXIII Règne de HENRI III (1580, janvier-avril).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e6355">Français 15563 • Harlay 329 (3) • XXIV Règne de HENRI III (1580, mai-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e6611">Français 15564 • Harlay 329 (4) • XXV Règne de HENRI III (1581, janvier-juin).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e6818">Français 15565 • Harlay 329 (5) • XXVI Règne de HENRI III (1581, juillet-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e7017">Français 15566 • Harlay 329 (6) • XXVII Règne de HENRI III (1582 et 1583).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e7249">Français 15567 • Harlay 329 (7) • XXVIII Règne de HENRI III (1584, janvier-mars).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e7448">Français 15568 • Harlay 329 (8) • XXIX Règne de HENRI III (1584, avril-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e7672">Français 15569 • Harlay 329 (9) • XXX Règne de HENRI III (1585, janvier-mai).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e8039">Français 15570 • Harlay 329 (10) • XXXI Règne de HENRI III (1585, juin-septembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e8447">Français 15571 • Harlay 329 (11) • XXXII Règne de HENRI III (1585, octobre-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e8703">Français 15572 • Harlay 329 (12) • XXXIII Règne de HENRI III (1586, janvier-juillet).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e8984">Français 15573 • Harlay 329 (13) • XXXIV Règne de HENRI III (1586, août-décembre).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e9275">Français 15574 • Harlay 329 (14) • XXXV Règne de HENRI III (1587-1589).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e9664">Français 15575 • Harlay 331 • XXXVI Règne de HENRI IV (1590-1594).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e9905">Français 15576 • Harlay 337 (1) • XXXVII Règne de HENRI IV (1595-1599).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e10133">Français 15577 • Harlay 337 (2) • XXXVIII Règne de HENRI IV (1600-1602).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e10351">Français 15578 • Harlay 340 (1) • XXXIX Règne de HENRI IV (1603-1605).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e10607">Français 15579 • Harlay 340 (2) • XL Règne de HENRI IV (1606-1609).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e10763">Français 15580 • Harlay 340 (3) • XLI Règnes de HENRI IV et de Louis XIII (1610-1611).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e10937">Français 15581 • Harlay 340 (4) • XLII Règne de Louis XIII (1612-1614).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e11213">Français 15582 • Harlay 340 (5) • XLIII Règne de Louis XIII (1615-1616).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e11364">Français 15583 • Harlay 343 • XLIV Règne de Louis XIII (1617-1627).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000045942_d0e11778">Français 15584 • Harlay 345 • XLV Règnes de Louis XIII et de Louis XIV (1628-1657).</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 15540-15584<br/>Cette cote ne correspond pas à une unité matérielle communicable. Veuillez sélectionner un document réservable parmi les niveaux inférieurs.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 15540-15584 
+							</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres, pour la plupart originales, et autres pièces, relatives à l'histoire de France, principalement sous les règnes de Charles IX, Henri III, Henri IV et Louis XIII. (1477-1657).</div>
+</div>
+<div class="did-date">XVe-XVIIe siècle</div>
+<div class="divdid">Papier.45 volumes.In-folio.Reliure basane gr.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Un dépouillement partiel de cette collection forme la plus grande partie du manuscrit français 17022, depuis le f. 20, et occupe en outre les feuillets 3-34, 37-84, 96-103, 142-152, 167-177 et 191-230 du manuscrit français 17023. — Sur les lacunes de cette collection, voy. Ludovic LALANNE et H. BORDIER, Dictionnaire des pièces autographes volées, principalement pages 154 et 155.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<br/>2015<br/>Cité p. 215<br/>Jean-Philippe GENET, <emph render="italic">La vérité. Vérité et crédibilité : construire la vérité dans le système de communication de l'Occident (XIIIe-XVIIe siècle), </emph>Paris : Publications de la Sorbonne, 2015.<br/>
+<emph render="italic">MSS [8 IMPR 12610</emph>
+</p>
+</span>
+</div>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e55');">Français 15540 (cote) • I Règnes de Louis XI et de CHARLES VIII ; lettres originales adressées à ces souverains (1477-1488).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e604');">Français 15541 (cote) • II Règnes de CHARLES VIII et de LOUIS XII (1487-1500).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e1150');">Français 15542 (cote) • III Règnes de FRANÇOIS Ier, HENRI II, FRANÇOIS II et CHARLES IX (1532-1568).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e1356');">Français 15543 (cote) • IV Règne de CHARLES IX (1567).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e1500');">Français 15544 (cote) • V Règne de CHARLES IX (1568, janvier et février).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e1731');">Français 15545 (cote) • VI Règne de CHARLES IX (1568, mars et avril).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e1968');">Français 15546 (cote) • VII Règne de CHARLES IX (1568, mai et juin).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e2240');">Français 15547 (cote) • VIII Règne de CHARLES IX (1568, juillet et août).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e2558');">Français 15548 (cote) • IX Règne de CHARLES IX (1568, septembre-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e2769');">Français 15549 (cote) • X Règne de CHARLES IX (1569, janvier-juin).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e2945');">Français 15550 (cote) • XI Règne de CHARLES IX (1569, juillet-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e3233');">Français 15551 (cote) • XII Règne de CHARLES IX (1570, janvier-mai).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e3479');">Français 15552 (cote) • XIII Règne de CHARLES IX (1570, juin-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e3768');">Français 15553 (cote) • XIV Règne de CHARLES IX (1571).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e3964');">Français 15554 (cote) • XV Règne de CHARLES IX (1572, janvier-juin).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e4218');">Français 15555 (cote) • XVI Règne de CHARLES IX (1572, juillet-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e4482');">Français 15556 (cote) • XVII Règne de CHARLES IX (1573, janvier-février).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e4788');">Français 15557 (cote) • XVIII Règne de CHARLES IX (1573, mars-mai).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e5041');">Français 15558 (cote) • XIX Règne de CHARLES IX (1573, juin-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e5314');">Français 15559 (cote) • XX Règnes de CHARLES IX et HENRI III (1574).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e5580');">Français 15560 (cote) • XXI Règne de HENRI III (1575-1578).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e5808');">Français 15561 (cote) • XXII Règne de HENRI III (1579).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e6038');">Français 15562 (cote) • XXIII Règne de HENRI III (1580, janvier-avril).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e6355');">Français 15563 (cote) • XXIV Règne de HENRI III (1580, mai-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e6611');">Français 15564 (cote) • XXV Règne de HENRI III (1581, janvier-juin).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e6818');">Français 15565 (cote) • XXVI Règne de HENRI III (1581, juillet-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e7017');">Français 15566 (cote) • XXVII Règne de HENRI III (1582 et 1583).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e7249');">Français 15567 (cote) • XXVIII Règne de HENRI III (1584, janvier-mars).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e7448');">Français 15568 (cote) • XXIX Règne de HENRI III (1584, avril-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e7672');">Français 15569 (cote) • XXX Règne de HENRI III (1585, janvier-mai).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e8039');">Français 15570 (cote) • XXXI Règne de HENRI III (1585, juin-septembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e8447');">Français 15571 (cote) • XXXII Règne de HENRI III (1585, octobre-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e8703');">Français 15572 (cote) • XXXIII Règne de HENRI III (1586, janvier-juillet).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e8984');">Français 15573 (cote) • XXXIV Règne de HENRI III (1586, août-décembre).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e9275');">Français 15574 (cote) • XXXV Règne de HENRI III (1587-1589).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e9664');">Français 15575 (cote) • XXXVI Règne de HENRI IV (1590-1594).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e9905');">Français 15576 (cote) • XXXVII Règne de HENRI IV (1595-1599).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e10133');">Français 15577 (cote) • XXXVIII Règne de HENRI IV (1600-1602).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e10351');">Français 15578 (cote) • XXXIX Règne de HENRI IV (1603-1605).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e10607');">Français 15579 (cote) • XL Règne de HENRI IV (1606-1609).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e10763');">Français 15580 (cote) • XLI Règnes de HENRI IV et de Louis XIII (1610-1611).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e10937');">Français 15581 (cote) • XLII Règne de Louis XIII (1612-1614).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e11213');">Français 15582 (cote) • XLIII Règne de Louis XIII (1615-1616).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e11364');">Français 15583 (cote) • XLIV Règne de Louis XIII (1617-1627).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000045942_d0e11778');">Français 15584 (cote) • XLV Règnes de Louis XIII et de Louis XIV (1628-1657).</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

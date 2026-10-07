@@ -1,0 +1,503 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050075">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050075">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3625
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050075_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075">Français 3625 • Anc. 9114 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e126">1 Lettre de « FRANÇOIS DE LUXEMBOURG [duc DE PINEY]... à monsieur le duc de Nevers,... A Pougy, le dernier jung 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e132">Fol. 2 • 2 Lettre de « FRANÇOIS DE LUXEMBOURG [duc DE PINEY]... à monsieur le duc de Nevers,... A Pougy, ce 7 juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e140">Fol. 3 • 3 Lettre de « FRANÇOIS DE LUXEMBOURG [duc DE PINEY]... à monsieur le duc de Nevers,... A Pougy, ce 16me juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e151">Fol. 4 • 4 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres », au duc de Nevers. « Ce 16 de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e164">Fol. 5 • 5 Lettre d'«ELEONOR DE BOURBON [abbesse de Fontevrault]... à madame la duchesse de Nevers, ma niepce... A Fontevrault, ce 14 de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e182">Fol. 6 • 6 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres... à monseigneur le duc de Nevers,... A Mussy, ce 6 de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e190">Fol. 7 • 7 « Coppie de letre », avec chiffre et déchiffrement, de « HENRY DE LA TOUR [duc] DE BOUILLON,... A Sedan, ce VIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e211">Fol. 8 • 8 Lettre du « collonel H. HEYDT,... à monseingnier le duc de Nevers et de Retteloys,... De Dreux, 9e jour de julliet, l'an 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e227">Fol. 9 • 9 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nevers,... De Dreus, ce VIIIIme juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e248">Fol. 10 • 10 Lettre, avec chiffre et déchiffrement, du Sr DE « LAURIERE,... à monseigneur le duc de Nivernois,... A Courgenay, ce XIIIe jullet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e267">Fol. 12 • 11 Lettre de « HENRI » IV au duc de Nevers. « Escrit à St Denis, le XIIIIe jour de juillet 1596 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e286">Fol. 13 • 12 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres... à monseigneur le duc de Nevers,... A Mussy, ce 15 juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e294">Fol. 14 • 13 Lettre du Sr DE « DINTEVILLE,... à monseigneur le duc de Nyvernois,... De Rosnay, ce XVI juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e310">Fol. 15 • 14 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres... à monseigneur le duc de Nivernois,... A Mussy, ce 16 juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e328">Fol. 16 • 15 Lettre du Sr de « DINTEVILLE » au duc de Nevers. « De Pougy, ce XVII juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e349">Fol. 18 • 16 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres... à monseigneur le duc de Nevers,... A Mussy, ce 18 de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e367">Fol. 20 • 17 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres », au duc de Nevers. « A Mussy, ce 23 juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e385">Fol. 21 • 18 Lettre, avec chiffre et déchiffrement, du Sr « POTIER DE GESVRES,... à monseigneur le duc de Nyvernois,... De St Denys, ce XXIIIe jour de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e407">Fol. 22 • 19 Lettre du Sr DE « DINTEVILLE,... à monseigneur le duc de Nyvernois,... A Viapre pres Planci, ce XXVIIe jullet 92 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e426">Fol. 23 • 20 Lettre du Sr DE « LAVANE,... à monseigneur le duc de Nivernois,... A Vergi, ce XXVIII juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e442">Fol. 24 • 21 Lettre de « LODOVICO GONZAGUE [duc DE NEVERS]... a Sr de Toutevoye,... De Montereau, ce XIIII aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e458">Fol. 25 • 22 Lettre du Sr DE « DINTEVILLE,... à monseigneur le duc de Nyvernois,... A Nangis, ce XVI aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e469">Fol. 26 • 23 Lettre de « LODOVICO BIRAGO,... à monseigneur duc de Nyvernoys,... Du camp pres Migy, ce 20me ou 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e490">Fol. 28 • 24 Lettre de « DECIUS A WEYDENBERG,... illustrissim domino Ludovico Gonzagae,... Datae OEniponti, vigesim quinta die augusti, anno salutis nonagesimo secundo » En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e503">Fol. 30 • 25 Lettre du Sr DE « DINTEVILLE,... à monseigneur le duc de Nivernoys,... A Langres, ce VI octobre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e519">Fol. 32 • 26 « Copie de la lettre de monsieur DE DINTEVILLE monsieur le conte de Champlite, le 6 octobre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e527">Fol. 33 • 27 Lettre de PIERRE, cardinal « DE GONDI,... à monse gneur le duc de Nivernois,... De Solurre, ce dernier novembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e540">Fol. 34 • 28 « Roolle des bouches estans au train et maison de monseigneur le duc » de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e553">Fol. 35 • 29 « Roolle des seigneurs et gentilzhommes de la suitte de monseigneur [le duc de Nevers]... A Mantou, ce 30 octobre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e566">Fol. 36 • 30 Lettre touchant une pension de 300 écus à expédier au profit du Sr « Thomas Du Lu,... C'est de Romme, novembre 1593 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e580">Fol. 37 • 31 Lettre, avec chiffre et déchiffrement, de « M. MARCHANT,... pour monseigneur le duc de Nevers,... 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e593">Fol. 39 • 32 « Estat du pris que se vend chascun minot de sel au grenier et magazin à sel de Nogent sur Seyne Pou monseigneur de Nevers,... 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e606">Fol. 40 • 33 Lettre, avec chiffre et déchiffrement, relative au affaires de la Ligue, en 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e614">Fol. 41 • 34 Lettre, avec chiffre et déchiffrement, relative au affaires de la Ligue. « De Mantes, ce 20 octobre 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e622">Fol. 42 • 35 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à mon seigneur le duc de Nivernoys,... De Soleurre, ce XIIIe de cembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e633">Fol. 44 • 36 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à mon seigneur le duc de Nivernois,... De Soleure, ce 18e de cembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e644">Fol. 46 • 37 « Minutte de declaration » que le duc de Nevers voulait obtenir du roi, au sujet de la confiscation de biens du feu « Sr de Neufy Des Barres », qui avait été déclaré rebelle et qui possédait des terres dépendantes du duché de Nivernois. « 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e663">Fol. 48 • 38 « Despence [du duc de Nevers] de l'an 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e676">Fol. 49 • 39 « Recepte [du duc de Nevers] de l'an 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e689">Fol. 50 • 40 Lettre du Sr DE « SIPIERRE,... à monseigneur le duc de Nevers,... Semur, ce dernier de juin 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e705">Fol. 52 • 41 Lettre des « maire et eschevins » de la ville de Langres « à monseigneur le duc de Nivernoys,... De Langres, ce dernier jour de jung 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e723">Fol. 54 • 42 Lettre du Sr « D'AMANZE,... à monseigneur de Nyvernois,... Juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e749">Fol. 55 • 43 Lettre des « esleuz des estatz de Bourgongne... à monseigneur le duc de Nivernois,... A Semeur, le premier de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e767">Fol. 56 • 44 Lettre du Sr DE « SIPIERRE,... à monseigneur le duc de Nevers,... A Semur, ce premier juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e788">Fol. 57 • 45 Lettre des « esleuz des estatz de Bourgongne... à monseigneur le duc de Nivernois,... A Semeur, le deuxiesme juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e806">Fol. 58 • 46 Lettre de FRANÇOIS DE LA MAGDELEINE, marquis DE « RAGNY,... à monseigneur le duc de Nivernois,... A Ragny, ce II juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e829">Fol. 59 • 47 Lettre du Sr DE « SIPIERRE,... à monseigneur le duc de Nevers,... A Semur, ce IIe de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e853">Fol. 60 • 48 Lettre du Sr DE « MIREBEAU,... à monseigneur le duc de Nevers,... A Flavigny, ce IIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e882">Fol. 61 • 49 Lettre des « president et tresoriers generaulx de France en Champaigne... à monseigneur le duc de Nevers,... A Chaalons, ce IIIe jour de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e908">Fol. 62 • 50 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce IIIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e934">Fol. 63 • 51 Requête des « laboureurs de la ville de Chaalons... à messieurs les lieutenant, gens du conseil et gouverneur de la ville de Chaalons ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e957">52 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernoys,... De Chaalons, ce IIIIe juillet 1593 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e966">Fol. 64 • 53 « Coppie de la lettre des maire et eschevins de la ville de Troyes, escripte au sieur Grammont, gouverneur de Nogent... A Troyes, ce Ve juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e997">Fol. 65 • 54 Lettre des « president et esleuz en l'election de Lengres... à monseigneur le duc de Nivernois,... De Lengres, ce 7e juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1028">Fol. 66 • 55 Lettre, avec chiffre, du Sr DE « LAURIERE,... à monseigneur le duc de Nyvernois,... Chalons, ce IX juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1059">Fol. 67 • 56 Lettre d'«ANNE D'ACQUAVIVE,... à monseigneur le duc de Nivernois,... A Chatelvilein, ce Xme jeullet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1090">Fol. 68 • 57 Lettre des « maire et eschevins [de la ville de Langres]... à monseigneur le duc de Nivernois,... A Lengres, ce Xme juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1121">Fol. 69 • 58 Lettre du Sr DE « MYRAMONT,... à monseigneur de Nevers,... Nogent, ce Xe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1160">Fol. 70 • 59 Lettre du Sr DE « MYRAMONT,... à monseigneur de Nevers,... A Nogent, le XIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1199">Fol. 71 • 60 « Copie de la lectre de monsieur le president DU BLANMESNIL à monsieur de Dinteville, du XII juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1237">Fol. 72 • 61 Lettre d'«ANNE D'ACQUAVIVE,... à monsieur Metezeau, secretaire de monseigneur le duc de Nivernois,... De Chasteauvillain, ce XIIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1273">Fol. 73 • 62 Lettre du Sr DE « MYRAMONT,... à monseigneur de Nevers,... A Nogent, ce XIIIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1312">Fol. 74 • 63 Lettre du Sr DE « ST CHERON », suivie d'un postscriptum d'«ANNE D'ACQUAVIVE,... à monseigneur le duc de Nevers,... Chastelvilain, ce XVIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1359">Fol. 75 • 64 Mémoire concernant « la trefve » entre Claude de Lorraine « et ceulx de Troyes... Donné à Troyes, le dix septiesme jour de julliet, l'an mil cinq cens quatre vingtz treize ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1397">Fol. 77 • 65 Lettre du Sr DE « MYRAMONT,... à monseigneur le duc de Nevers. « A Nogent, ce XVIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1436">Fol. 78 • 66 Lettre des « eschevins de la ville de Desize » au duc de Nevers. « De Desize, ce XVIIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1477">Fol. 79 • 67 Lettre de « RENEE DE MARCONNAY,... à monseigneur de Nivernois,... Grancey, ce XIX juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1515">Fol. 80 • 68 Lettre d'«ANNE D'ACQUAVIVE,... à monseigneur le duc de Nevers,... A Chatelvilein, ce 18me jeulet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1551">Fol. 82 • 69 Lettre du Sr DE « MYRAMONT,... à monseigneur le duc de Nyvernois,... A Nogent, ce XX juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1587">Fol. 83 • 70 Lettre du Sr DE « ROCHEBARON,... à monseigneur le duc de Nevers,... De Joncy,... juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1628">Fol. 84 • 71 Lettre du Sr D'«AMANZE,... à monseigneur de Nyvernois,... XXIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1672">Fol. 85 • 72 Lettre de « P. DE THOMASSIN,... à monseigneur le duc de Nevers,... A Chaalons, ce vingt deuxiesme jour de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1710">Fol. 86 • 73 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce XXIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1751">Fol. 88 • 74 Lettre adressée à « madame » la duchesse de Nevers pour lui donner des nouvelles de la guerre. « De Lion, 23e julliet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1797">Fol. 89 • 75 Lettre des « maire et eschevins de la ville de Troyes... à monseigneur de Nevers,... A Troyes, ce XXIIIe julliet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1843">Fol. 90 • 76 Lettre des « capitaynes de la garnison de Verdun... à monseigneur le duc de Nevers,... Verdun, ce 24e jullet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1889">Fol. 91 • 77 « Coppie des lettres du roy aux habitans de sa ville de Chaalons... Donné à St Denys, le XXVe jour de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1933">Fol. 93 • 78 Lettre des « maire et eschevins [de la ville de Langres]... à monseigneur le duc de Nivernoys,... A Lengres, ce XXVIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e1969">Fol. 94 • 79 Lettre de CLAUDE « DE JOYEUSE [comte DE GRANDPRE]... à monseigneur le duc de Nevers,... De Langres, ce XXVIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2010">Fol. 95 • 80 Lettre du Sr DE « MYRAMONT,... à monseigneur le duc de Nivernois,... Nogent, ce XXVIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2049">Fol. 96 • 81 Lettre de « P. DE THOMASSIN,... à monseigneur le duc de Nevers,... A Chaalons, ce dernier jour de juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2077">Fol. 97 • 82 Lettre de « P. DE THOMASSIN,... à monseigneur le duc de Nevers,... A Chalons, ce IIesme aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2108">Fol. 98 • 83 « Extraict de l'estat au vray de la recepte et despence à faire par Claude Legras, commis de l'extraordinaire des guerres au gouvernement de Champaigne et de Brye, des places qui se doibvent paier sur la recepte generalle de Paris durant l'année M.V.C.IIII.XX. et treize ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2157">Fol. 99 • 84 Lettre des « maire et eschevins [de Langres]... à monseigneur le duc de Nevers,... A Lengres, ce cinquiesme aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2185">Fol. 100 • 85 Lettre des « president et tresoriers generaulx de France en Champaigne... à monseigneur le duc de Nyvernois,... A Chaalons, ce Vme jour d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2221">Fol. 101 • 86 Lettre de « P. DE THOMASSIN,... à monseigneur le duc de Nevers,... A Chaalons, ce VIIe jour d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2252">Fol. 102 • 87 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... A Langres, en l'hostel de ville, le huictiesme aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2275">Fol. 103 • 88 Lettre de « N[ICOLAS] D'ANGENNES [Sr DE RAMBOUILLET]... à monseigneur le duc de Nevers,... A Rambouillet, ce IXme d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2309">Fol. 105 • 89 Lettre d'«ANNE D'ACQUAVIVE,... à monseigneur le duc de Nevers... A Lengres, ce 23me d'aut 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2335">Fol. 107 • 90 Lettre des « officiers du grenier à scel » de Desize, au duc de Nevers. « De vostre ville de Desize, ce 10e de septembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2361">Fol. 108 • 91 Lettre du Sr DE « MALEYSSYE,... au roy... De La Capelle, se Xe d'octobre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2390">Fol. 109 • 92 Minute d'une lettre du duc DE NEVERS « à M. le cardinal de Gondy,... De Chelles, ce XXIIIIe octobre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2411">Fol. 110 • 93 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nivernois,... A Lengres, ce XXVIIIe octobre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2432">Fol. 112 • 94 Lettre du Sr D'«AMBLY,... à madame » la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2453">Fol. 113 • 95 Lettre du Sr DE « VITRY,... à monseigneur le duc de Nevers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2469">Fol. 114 • 96 Lettre du sieur MARCHANT au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2487">Fol. 115 • 97 Lettres du roi HENRI IV pour le remboursement des sommes que les habitants de La Chappelle d'Angilon en Berry avaient avancées, en payant eux-mêmes leurs garnisons. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2505">Fol. 116 • 98 Lettre du Sr « MARCHANT » au duc de Nevers. « Ce XXI decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2526">Fol. 117 • 99 Lettre du Sr « DE CARDONE,... à monseigneur, duc de Nivernoys,... De vostre petite maison d'Anglure, le 22 decembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2547">Fol. 119 • 100 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Soleure, ce 27me decembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050075_d0e2563">Fol. 121 • 101 Lettre du Sr « ANCEL,... à monseigneur le duc de Nyvernois,... De Prague, le penultiesme jour de decembre 1593 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3625 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc500759&Cote=Français 3625&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b52511322v">Consulter le document numérisé</a></li></ul><ul class="listeLiens"></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3625 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9114</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original : Français 3625.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b52511322v" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b52511322v.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b52511322v.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Acquaviva, Anne d'. • Actes et lettres.</p>
+<p>Bourgogne. • Parlement, actes et pièces.</p>
+<p>Brûlart, Nicolas, marquis de Sillery, chancelier de France. • Actes et lettres.</p>
+<p>Châlons-sur-Marne. • Conseil de ville, correspondance.</p>
+<p>Della Torre, Geronimo. • Lettre, n.</p>
+<p>Des Cars, Charles de Peyrusse-, évêque de Poitiers, puis de Langres. • Lettres.</p>
+<p>Dinteville, Joachim de Jaucourt, baron de. • Lettres.</p>
+<p>Extraordinaire des Guerres. • Pièces diverses.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Langres. • Échevinage, lettres et actes des échevins.</p>
+<p>Ligue, La. • Notes et pièces diverses.</p>
+<p>Luxembourg, François de, duc de Piney. • Lettres.</p>
+<p>Miramont, Gui de. • Lettres et actes.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Thomassin, P. de, gouverneur de Châlons. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e126');">1 Lettre de « FRANÇOIS DE LUXEMBOURG [duc DE PINEY]... à monsieur le duc de Nevers,... A Pougy, le dernier jung 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e132');">2 Lettre de « FRANÇOIS DE LUXEMBOURG [duc DE PINEY]... à monsieur le duc de Nevers,... A Pougy, ce 7 juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e140');">3 Lettre de « FRANÇOIS DE LUXEMBOURG [duc DE PINEY]... à monsieur le duc de Nevers,... A Pougy, ce 16me juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e151');">4 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres », au duc de Nevers. « Ce 16 de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e164');">5 Lettre d'«ELEONOR DE BOURBON [abbesse de Fontevrault]... à madame la duchesse de Nevers, ma niepce... A Fontevrault, ce 14 de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e182');">6 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres... à monseigneur le duc de Nevers,... A Mussy, ce 6 de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e190');">7 « Coppie de letre », avec chiffre et déchiffrement, de « HENRY DE LA TOUR [duc] DE BOUILLON,... A Sedan, ce VIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e211');">8 Lettre du « collonel H. HEYDT,... à monseingnier le duc de Nevers et de Retteloys,... De Dreux, 9e jour de julliet, l'an 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e227');">9 Lettre de « LODOVICO BIRAGO,... à monseigneur le duc de Nevers,... De Dreus, ce VIIIIme juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e248');">10 Lettre, avec chiffre et déchiffrement, du Sr DE « LAURIERE,... à monseigneur le duc de Nivernois,... A Courgenay, ce XIIIe jullet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e267');">11 Lettre de « HENRI » IV au duc de Nevers. « Escrit à St Denis, le XIIIIe jour de juillet 1596 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e286');">12 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres... à monseigneur le duc de Nevers,... A Mussy, ce 15 juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e294');">13 Lettre du Sr DE « DINTEVILLE,... à monseigneur le duc de Nyvernois,... De Rosnay, ce XVI juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e310');">14 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres... à monseigneur le duc de Nivernois,... A Mussy, ce 16 juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e328');">15 Lettre du Sr de « DINTEVILLE » au duc de Nevers. « De Pougy, ce XVII juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e349');">16 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres... à monseigneur le duc de Nevers,... A Mussy, ce 18 de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e367');">17 Lettre de CHARLES II DE PERUSSE « D'ESCARS, e[vêque], duc de Lengres », au duc de Nevers. « A Mussy, ce 23 juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e385');">18 Lettre, avec chiffre et déchiffrement, du Sr « POTIER DE GESVRES,... à monseigneur le duc de Nyvernois,... De St Denys, ce XXIIIe jour de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e407');">19 Lettre du Sr DE « DINTEVILLE,... à monseigneur le duc de Nyvernois,... A Viapre pres Planci, ce XXVIIe jullet 92 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e426');">20 Lettre du Sr DE « LAVANE,... à monseigneur le duc de Nivernois,... A Vergi, ce XXVIII juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e442');">21 Lettre de « LODOVICO GONZAGUE [duc DE NEVERS]... a Sr de Toutevoye,... De Montereau, ce XIIII aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e458');">22 Lettre du Sr DE « DINTEVILLE,... à monseigneur le duc de Nyvernois,... A Nangis, ce XVI aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e469');">23 Lettre de « LODOVICO BIRAGO,... à monseigneur duc de Nyvernoys,... Du camp pres Migy, ce 20me ou 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e490');">24 Lettre de « DECIUS A WEYDENBERG,... illustrissim domino Ludovico Gonzagae,... Datae OEniponti, vigesim quinta die augusti, anno salutis nonagesimo secundo » En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e503');">25 Lettre du Sr DE « DINTEVILLE,... à monseigneur le duc de Nivernoys,... A Langres, ce VI octobre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e519');">26 « Copie de la lettre de monsieur DE DINTEVILLE monsieur le conte de Champlite, le 6 octobre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e527');">27 Lettre de PIERRE, cardinal « DE GONDI,... à monse gneur le duc de Nivernois,... De Solurre, ce dernier novembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e540');">28 « Roolle des bouches estans au train et maison de monseigneur le duc » de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e553');">29 « Roolle des seigneurs et gentilzhommes de la suitte de monseigneur [le duc de Nevers]... A Mantou, ce 30 octobre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e566');">30 Lettre touchant une pension de 300 écus à expédier au profit du Sr « Thomas Du Lu,... C'est de Romme, novembre 1593 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e580');">31 Lettre, avec chiffre et déchiffrement, de « M. MARCHANT,... pour monseigneur le duc de Nevers,... 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e593');">32 « Estat du pris que se vend chascun minot de sel au grenier et magazin à sel de Nogent sur Seyne Pou monseigneur de Nevers,... 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e606');">33 Lettre, avec chiffre et déchiffrement, relative au affaires de la Ligue, en 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e614');">34 Lettre, avec chiffre et déchiffrement, relative au affaires de la Ligue. « De Mantes, ce 20 octobre 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e622');">35 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à mon seigneur le duc de Nivernoys,... De Soleurre, ce XIIIe de cembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e633');">36 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à mon seigneur le duc de Nivernois,... De Soleure, ce 18e de cembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e644');">37 « Minutte de declaration » que le duc de Nevers voulait obtenir du roi, au sujet de la confiscation de biens du feu « Sr de Neufy Des Barres », qui avait été déclaré rebelle et qui possédait des terres dépendantes du duché de Nivernois. « 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e663');">38 « Despence [du duc de Nevers] de l'an 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e676');">39 « Recepte [du duc de Nevers] de l'an 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e689');">40 Lettre du Sr DE « SIPIERRE,... à monseigneur le duc de Nevers,... Semur, ce dernier de juin 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e705');">41 Lettre des « maire et eschevins » de la ville de Langres « à monseigneur le duc de Nivernoys,... De Langres, ce dernier jour de jung 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e723');">42 Lettre du Sr « D'AMANZE,... à monseigneur de Nyvernois,... Juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e749');">43 Lettre des « esleuz des estatz de Bourgongne... à monseigneur le duc de Nivernois,... A Semeur, le premier de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e767');">44 Lettre du Sr DE « SIPIERRE,... à monseigneur le duc de Nevers,... A Semur, ce premier juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e788');">45 Lettre des « esleuz des estatz de Bourgongne... à monseigneur le duc de Nivernois,... A Semeur, le deuxiesme juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e806');">46 Lettre de FRANÇOIS DE LA MAGDELEINE, marquis DE « RAGNY,... à monseigneur le duc de Nivernois,... A Ragny, ce II juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e829');">47 Lettre du Sr DE « SIPIERRE,... à monseigneur le duc de Nevers,... A Semur, ce IIe de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e853');">48 Lettre du Sr DE « MIREBEAU,... à monseigneur le duc de Nevers,... A Flavigny, ce IIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e882');">49 Lettre des « president et tresoriers generaulx de France en Champaigne... à monseigneur le duc de Nevers,... A Chaalons, ce IIIe jour de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e908');">50 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernois,... De Chaalons, ce IIIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e934');">51 Requête des « laboureurs de la ville de Chaalons... à messieurs les lieutenant, gens du conseil et gouverneur de la ville de Chaalons ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e957');">52 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nivernoys,... De Chaalons, ce IIIIe juillet 1593 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e966');">53 « Coppie de la lettre des maire et eschevins de la ville de Troyes, escripte au sieur Grammont, gouverneur de Nogent... A Troyes, ce Ve juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e997');">54 Lettre des « president et esleuz en l'election de Lengres... à monseigneur le duc de Nivernois,... De Lengres, ce 7e juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1028');">55 Lettre, avec chiffre, du Sr DE « LAURIERE,... à monseigneur le duc de Nyvernois,... Chalons, ce IX juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1059');">56 Lettre d'«ANNE D'ACQUAVIVE,... à monseigneur le duc de Nivernois,... A Chatelvilein, ce Xme jeullet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1090');">57 Lettre des « maire et eschevins [de la ville de Langres]... à monseigneur le duc de Nivernois,... A Lengres, ce Xme juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1121');">58 Lettre du Sr DE « MYRAMONT,... à monseigneur de Nevers,... Nogent, ce Xe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1160');">59 Lettre du Sr DE « MYRAMONT,... à monseigneur de Nevers,... A Nogent, le XIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1199');">60 « Copie de la lectre de monsieur le president DU BLANMESNIL à monsieur de Dinteville, du XII juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1237');">61 Lettre d'«ANNE D'ACQUAVIVE,... à monsieur Metezeau, secretaire de monseigneur le duc de Nivernois,... De Chasteauvillain, ce XIIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1273');">62 Lettre du Sr DE « MYRAMONT,... à monseigneur de Nevers,... A Nogent, ce XIIIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1312');">63 Lettre du Sr DE « ST CHERON », suivie d'un postscriptum d'«ANNE D'ACQUAVIVE,... à monseigneur le duc de Nevers,... Chastelvilain, ce XVIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1359');">64 Mémoire concernant « la trefve » entre Claude de Lorraine « et ceulx de Troyes... Donné à Troyes, le dix septiesme jour de julliet, l'an mil cinq cens quatre vingtz treize ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1397');">65 Lettre du Sr DE « MYRAMONT,... à monseigneur le duc de Nevers. « A Nogent, ce XVIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1436');">66 Lettre des « eschevins de la ville de Desize » au duc de Nevers. « De Desize, ce XVIIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1477');">67 Lettre de « RENEE DE MARCONNAY,... à monseigneur de Nivernois,... Grancey, ce XIX juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1515');">68 Lettre d'«ANNE D'ACQUAVIVE,... à monseigneur le duc de Nevers,... A Chatelvilein, ce 18me jeulet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1551');">69 Lettre du Sr DE « MYRAMONT,... à monseigneur le duc de Nyvernois,... A Nogent, ce XX juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1587');">70 Lettre du Sr DE « ROCHEBARON,... à monseigneur le duc de Nevers,... De Joncy,... juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1628');">71 Lettre du Sr D'«AMANZE,... à monseigneur de Nyvernois,... XXIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1672');">72 Lettre de « P. DE THOMASSIN,... à monseigneur le duc de Nevers,... A Chaalons, ce vingt deuxiesme jour de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1710');">73 Lettre des « gens du conseil de la ville de Chaalons... à monseigneur le duc de Nyvernois,... A Chaalons, ce XXIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1751');">74 Lettre adressée à « madame » la duchesse de Nevers pour lui donner des nouvelles de la guerre. « De Lion, 23e julliet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1797');">75 Lettre des « maire et eschevins de la ville de Troyes... à monseigneur de Nevers,... A Troyes, ce XXIIIe julliet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1843');">76 Lettre des « capitaynes de la garnison de Verdun... à monseigneur le duc de Nevers,... Verdun, ce 24e jullet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1889');">77 « Coppie des lettres du roy aux habitans de sa ville de Chaalons... Donné à St Denys, le XXVe jour de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1933');">78 Lettre des « maire et eschevins [de la ville de Langres]... à monseigneur le duc de Nivernoys,... A Lengres, ce XXVIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e1969');">79 Lettre de CLAUDE « DE JOYEUSE [comte DE GRANDPRE]... à monseigneur le duc de Nevers,... De Langres, ce XXVIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2010');">80 Lettre du Sr DE « MYRAMONT,... à monseigneur le duc de Nivernois,... Nogent, ce XXVIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2049');">81 Lettre de « P. DE THOMASSIN,... à monseigneur le duc de Nevers,... A Chaalons, ce dernier jour de juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2077');">82 Lettre de « P. DE THOMASSIN,... à monseigneur le duc de Nevers,... A Chalons, ce IIesme aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2108');">83 « Extraict de l'estat au vray de la recepte et despence à faire par Claude Legras, commis de l'extraordinaire des guerres au gouvernement de Champaigne et de Brye, des places qui se doibvent paier sur la recepte generalle de Paris durant l'année M.V.C.IIII.XX. et treize ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2157');">84 Lettre des « maire et eschevins [de Langres]... à monseigneur le duc de Nevers,... A Lengres, ce cinquiesme aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2185');">85 Lettre des « president et tresoriers generaulx de France en Champaigne... à monseigneur le duc de Nyvernois,... A Chaalons, ce Vme jour d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2221');">86 Lettre de « P. DE THOMASSIN,... à monseigneur le duc de Nevers,... A Chaalons, ce VIIe jour d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2252');">87 Lettre des « maire et eschevins de Langres... à monseigneur de Nevers,... A Langres, en l'hostel de ville, le huictiesme aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2275');">88 Lettre de « N[ICOLAS] D'ANGENNES [Sr DE RAMBOUILLET]... à monseigneur le duc de Nevers,... A Rambouillet, ce IXme d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2309');">89 Lettre d'«ANNE D'ACQUAVIVE,... à monseigneur le duc de Nevers... A Lengres, ce 23me d'aut 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2335');">90 Lettre des « officiers du grenier à scel » de Desize, au duc de Nevers. « De vostre ville de Desize, ce 10e de septembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2361');">91 Lettre du Sr DE « MALEYSSYE,... au roy... De La Capelle, se Xe d'octobre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2390');">92 Minute d'une lettre du duc DE NEVERS « à M. le cardinal de Gondy,... De Chelles, ce XXIIIIe octobre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2411');">93 Lettre des « maire et eschevins de la ville de Lengres... à monseigneur le duc de Nivernois,... A Lengres, ce XXVIIIe octobre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2432');">94 Lettre du Sr D'«AMBLY,... à madame » la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2453');">95 Lettre du Sr DE « VITRY,... à monseigneur le duc de Nevers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2469');">96 Lettre du sieur MARCHANT au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2487');">97 Lettres du roi HENRI IV pour le remboursement des sommes que les habitants de La Chappelle d'Angilon en Berry avaient avancées, en payant eux-mêmes leurs garnisons. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2505');">98 Lettre du Sr « MARCHANT » au duc de Nevers. « Ce XXI decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2526');">99 Lettre du Sr « DE CARDONE,... à monseigneur, duc de Nivernoys,... De vostre petite maison d'Anglure, le 22 decembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2547');">100 Lettre de « N[ICOLAS] BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Soleure, ce 27me decembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050075_d0e2563');">101 Lettre du Sr « ANCEL,... à monseigneur le duc de Nyvernois,... De Prague, le penultiesme jour de decembre 1593 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

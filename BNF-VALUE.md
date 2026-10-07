@@ -87,8 +87,23 @@ ff.26/130/194 (Tomokiyo reconstructed the Savoy cipher, savoy.htm); fr.3988 f.14
 in the KHF lane); the no.60 Nevers-Revol copies (own folders, waiting on ASKS 102); italien 1583-1585 (lane
 ST-REBUILD, live); fr.3978 and fr.3994 images (not online).
 
-The finding-aid sweep of Français 3610-3641, 3315, 3413, 4687-4712, 3669, 3675, 3805 and 15571-15576 was still running
-when this section was written; its additions are appended below as wave 1b.
+Wave 1b (sweep finished 21:3x UTC, 7 Oct 2026): notices for Français 3610-3634 and 15540-15584 fetched; Français
+3315, 3413, 3635-3641, 3669, 3675, 3805, 4687, 4688, 4698, 4712 and 15571 not matched by the simple search's first
+page (not fetched, not a negative). Across all fetched notices, 105 items carry "chiffre" without "déchiffrement";
+the fr.36xx ones not covered by a folder, NEVERS-VEIN.tsv or KEYHUNT add these rows (Gallica availability not yet
+checked for any of them):
+
+| Rank | Item(s) | Why | Key / instrument in hand | Cheapest first step | Est. |
+|---|---|---|---|---|---|
+| Q2b | fr.3631 no.27, fol. 28, Dinteville to Nevers, "Au camp de Collaverde, ce 14e juin 1593" | a later letter of the same sender whose 1592 syllabic key this project rebuilt from the printed sibling f.128 (`ciphers/fr3621-dinteville-1592/f128/key_syl.tsv`, grade C rows); only named in that folder's web-search log | that key, its held-out and wrong-text controls | Gallica availability + check-solved, then a sign-identity look against the f.130 atlas | ~$3 |
+| Q9 | fr.3624 nos.47, 51, 67, ff.53, 57, 78, "MARCHANT" to Nevers, 6, 11 and 26 Jan 1593 | three letters of one sender in one month: a small pool | none identified (no Tomokiyo entry located) | Gallica availability; key identification against the published Nevers tables (fr.3995) | ~$2 |
+| Q10 | fr.3620 no.64, fol. 70, Henri IV to Nevers, Noyon, 12 Sept 1592 | Desenclos and Lasry published "An early French digit cipher" on a Henri IV-Nevers letter of 1592 -- possibly this one (found-solved risk) | their paper (open-index lookup) | check-solved first | ~$1 |
+| Q11 | fr.3623 nos.23-25, 60, ff.35-38, 88 (Bienvenut and anonymous newsletters to Nevers, Feb-June 1590) | four 1590 newsletters "avec chiffre"; fr.3623 f.23 (Dinteville) is already in `fr3621-dinteville-1592` | none identified | Gallica availability, key identification | ~$2 |
+| Q12 | fr.3634 nos.4, 45, 60, 80 (memoir received at Meun; agent's letter on the Champagne garrisons; Nevers to the duchess; Regnyer to Nevers 13 Jan) and fr.3416 nos.64-65 (Regnyer, 9 and 12 Jan) | Regnyer pool of three across two volumes; Tomokiyo: "several code numbers ... can be identified only by finding the code book" | none | low: sporadic code numbers | -- |
+| Q13 | fr.3613 no.33 f.62 (Rondinelli to Nevers, Paris, 11 Nov 1590), no.88 f.148 (Sega to Cardinal Caetano, 9 Jan 1591) | Sega 1591: Tomokiyo reconstructed a Mayenne-Sega cipher of Jan 1591 (Cryptologia) -- check whether it covers f.148 | Tomokiyo's paper | check-solved | ~$1 |
+
+The full extract (105 rows: notice ark, volume, folio, item, record text) is reproducible from the snapshots with
+`tools/bnf_findingaid.py --html`; it is not committed separately.
 
 ## Next best attempt and why
 
@@ -96,3 +111,13 @@ Q1 (no.54 pool): three letters at once against a key already transcribed in this
 the same volume for a known-answer gate -- the pools-first rule, a held key, a matched control already built, and a
 BnF record that says nothing about a decipherment. First step is the check-solved + premise check (the intake gate
 requires it before any transcription).
+
+## ITERATE (lane-level; appended, never rewritten)
+
+| date | hypothesis | instrument | matched control | result (both numbers) | verdict | what it taught |
+|---|---|---|---|---|---|---|
+| 7 Oct 2026 | the BnF's own item-level "avec chiffre" marks miss cipher this project has seen on the leaves | `tools/bnf_findingaid.py` notice parse, compared item by item with folder evidence (fr.3251, 3252, 3416, 3621, 2980, 3040, 2751, 4702, 4715) | the same comparison on items we know are marked (fr.3252 nos.24/30/67/77, fr.3416 no.30, fr.3621 no.116: all marked, i.e. the instrument does not invent gaps) | 2 cipher letters in fr.3251 unmarked (nos.11, 14) beside 14 marked; 0 of 6 in the control set unmarked | pass (evidence rows E1-E2) | volumes with item lists are checkable in minutes; Dupuy and Mélanges de Colbert notices are prose (no item list) -- not a negative |
+| 7 Oct 2026 | the League collection (fr.3974-3995) holds cipher letters the BnF marks without a decipherment that no folder covers | the same parser over notice cc504266 (2,299 items), crossed with ciphers/*/NOTES.md, KEYHUNT-2026-10-07.tsv and Tomokiyo's pages | -- (a census, not a test) | 48 cipher-marked items without "déchiffrement"; after dropping those with folders, live KH work or Tomokiyo readings, 8 queue rows (Q1-Q8) | n/a (census) | KEYHUNT's per-key sweep dropped no.54 letters because it was looking for no.60: a per-volume sweep finds what a per-key sweep cannot |
+
+Next best attempt and why: Q1 check-solved (worker BNF-Q1-CS, spawned 21:33 UTC) -- a pool of three unread letters,
+a held key, glossed siblings for a known-answer gate.
