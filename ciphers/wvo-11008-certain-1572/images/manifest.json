@@ -1,0 +1,29 @@
+{
+ "source": "https://resources.huygens.knaw.nl/media/wvo/images/11000-11999/11008.pdf",
+ "record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=11008",
+ "fetched": "2026-10-07",
+ "pdf_images": [
+  {
+   "page": 1,
+   "size": [
+    3754,
+    2096
+   ],
+   "note": "letter, one wide sheet"
+  },
+  {
+   "page": 2,
+   "note": "address leaf"
+  }
+ ],
+ "crops": {
+  "tool": "python3 tools/iiif_lines.py --image <page1 jpg extracted with pdfimages -j> --out <dir> --prefix p1 --lines-per-crop 3 --max-width 2000 --debug",
+  "kept": [
+   "p1_L02_s1.jpg",
+   "p1_L02_s2.jpg",
+   "p1_L07_s1.jpg",
+   "p1_L07_s2.jpg"
+  ],
+  "note": "bands L02 (lines 4-6) and L07 (lines 19-21) carry the numeral runs; L01/L08 also given to both passes, no runs; regenerate the rest from the PDF"
+ }
+}

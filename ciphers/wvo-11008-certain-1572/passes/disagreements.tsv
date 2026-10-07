@@ -1,0 +1,7 @@
+line	col	A	B	flagged	crop
+p1_L07_s1_r1	1	-	2	B	
+p1_L07_s1_r1	2	-	9	B	
+p1_L07_s1_r1	4	36	38	A	
+p1_L08_s2_r1	1	2	-		
+p1_L08_s2_r1	2	4	-		
+p1_L08_s2_r1	3	6	-	A	

@@ -4097,3 +4097,5 @@ the long-established key.tsv reading, not new evidence: grades per token are tho
 key or AUDIT.md changed. Nothing reads in 4610/4616 under key_5549 that does not already read under key_full.
 Suggestion (one line, not run): FRESH-0914's next_steps dry-run should treat a key whose `source` column cites the
 target's own key file as already applied, so this row does not regenerate. Requests 0, subagents 0, vision calls 0.
+
+- KH2-D (7 Oct 2026): WVO 1810 (Willem to Lumbres, 8 Jan 1575, secretary copy, KHAG A 11/XIV I/11) has two short numeral runs (60 73 121 41 60 57 124 76 65; 103 60 196 47, eye-read); key.tsv/key_full.tsv give "zcv?zz?da"/"iz?x" -- not this table (13 tokens, too short for a control); keyhunt/2026-10-07-KH2D.tsv.

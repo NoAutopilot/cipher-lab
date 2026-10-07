@@ -1,0 +1,16 @@
+stat	value
+letters_decoded	39
+real_word_cover	23
+shuffle_n	1000
+shuffle_mean	2.23
+shuffle_p95	8
+shuffle_max	16
+shuffles_ge_real	0
+fr16_only_real	7
+fr16_only_shuffle_mean	2.23
+fr16_only_shuffle_p95	8
+fr16_only_ge_real	100
+q4_real	-1.435
+q4_shuffle_mean	-1.813
+q4_shuffle_p95	-1.576
+q4_ge_real	6

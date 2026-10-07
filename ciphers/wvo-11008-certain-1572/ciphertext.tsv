@@ -1,0 +1,55 @@
+run	pos	code	conf	context
+1	1	10	H	end of line 4, after 'rappeler ses ...'
+1	2	9	H	
+1	3	12	M	
+1	4	120	M	
+2	1	33	H	line 5, before 'lequel a faict charge'
+2	2	15	H	
+2	3	12	M	
+2	4	60	H	
+2	5	9	M	
+2	6	12	M	
+2	7	15	H	
+2	8	24	H	
+2	9	42	H	
+2	10	33	H	
+2	11	54	H	
+2	12	57	H	
+2	13	15	H	
+2	14	27	H	
+2	15	39	H	
+2	16	11	H	
+2	17	14	H	
+2	18	17	H	
+3	1	2	L	line 20, damaged; passes split (A 36 36?, B 2? 9?)
+3	2	9	L	
+3	3	36	H	
+3	4	38	M	
+3	5	15	H	
+3	6	25	H	
+3	7	37	H	
+3	8	40	H	before 'le Sr Dominique est venu'
+4	1	15	H	line 21, after 'et s'est'
+4	2	51	H	
+4	3	36	H	
+4	4	60	H	
+4	5	69	M	
+4	6	12	H	
+4	7	15	H	
+4	8	39	H	
+4	9	40	H	
+4	10	44	H	
+4	11	52	H	
+4	12	31	H	before '@ Arnoult est'
+5	1	60	H	after 'Arnoult est'
+5	2	33	H	
+5	3	21	H	
+5	4	54	H	
+5	5	54	H	
+5	6	27	H	
+5	7	39	H	
+5	8	21	H	
+5	9	24	H	
+5	10	15	H	
+5	11	39	H	
+5	12	43	M	before 'Or pour'
