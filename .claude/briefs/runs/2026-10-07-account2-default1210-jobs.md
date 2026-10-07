@@ -95,3 +95,4 @@ entry's print check as unreachable (not as "not located").
 ### D12-E4 -- eckert-1864, unread "(No 2)" entries of mssEC 19 pages 56-74 (solver, Opus; cap 6, box 90 min)
 Entries: 8948/56/0, 8951/59/2, 8956/64/0, 8961/69/2, 8965/73/0, 8966/74/0, then 8964/72/1 (long) last. Same as D12-E3 (section "## D12-E4",
 status READ D12-E4). PUSG vol. 10 (to May) / vol. 11 (June on) where Grant is a party.
+Wave 2 sessions (12:34 UTC): D12-E3 session_014UAgDp1xLqVrhj1oS83wcY; D12-E4 session_01P4LyLzaZCVox5oC7XKgXUm. Archived 12:34: D12-V2M, V2R, V2T, E2.
