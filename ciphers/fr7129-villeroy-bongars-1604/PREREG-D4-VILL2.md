@@ -41,3 +41,12 @@ both. P1 < 0.70 and P2 >= 0.70: the key is consistent under gloss-in-view labels
 of the held-out lines and of f.268; no f.268 decode; next step = f.268 re-transcribed against the new labelled sign
 sheet. Both < 0.70: rule 3 third-attempt clause -- the gloss-in-view instrument is logged [retired] for "the f.275 key
 read via the f.260 clerk gloss" at this transcription quality. Status stays `blocked` (Tomokiyo-paper gap) either way.
+
+**Deviation logged before scoring (7 Oct 2026, 14:5x UTC; nothing scored yet).** The first two reader calls (half-page
+crops, 1700 px wide) both reported that they did not read the gloss per sign but spread each segment's gloss
+proportionally over its signs -- not the instrument. Their files are kept apart in `sibling/passes_r2/v1_proportional/`
+and are NOT used for any number. Replacement: each band cut by `sibling/f260r_crops/cut_windows.py` (command `python3
+sibling/f260r_crops/cut_windows.py`) into 7 windows of 520 px (80 px overlap, red seam tick) enlarged 2x, at which the
+gloss letter over each sign is visible; reader v2 (`READER2_PROMPT.md`, 3 Sonnet calls L01-04, L05-08, L09-13, every
+window opened, no proportional spreading), then the checker on the same windows. Everything else above is unchanged
+(key rule, P1, P2, gate, control, decision).
