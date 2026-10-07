@@ -50,6 +50,33 @@ Tomokiyo, verbatim (louisxiv0.htm): "This cipher is used in many letters in Mela
 (c) physical neighbours: NOT DONE. Gallica manifest for Colbert 164 (btv1b100350812, 720 canvases) carries no folio labels (tools/gallica_folio.py: "0 with a folio label"), so locating f.303 etc. needs eye-checked anchors; no image was viewed.
 (d) recipient's side: the addressees are Louis XIV, Lionne, J.-B. Colbert and Seignelay (French offices); the English side (Calendar of State Papers Domestic 1668-74, Arlington's papers) is not a recipient edition for these dispatches; not searched. Not found/unreachable.
 
+## NC-CROI2 (7 Oct 2026)
+Job: classify the 47 residue folios (a copy / b contemporary decipherment on the leaf / c cipher, no decipherment / d not cipher or mislocated). Method: Gallica IIIF low-res, one look each (~37 canvases viewed, 6 volumes, 5 of 6 volumes touched at 164/149/159/165bis; 160 NOT looked at; 166 sampled at c40, 48, 60, 70, 150, 165, 350, 360 -- all clear text, Calais/Brittany correspondents, ties to f.27/30/46/128/145/335 unconfirmed). No manifest carries folio labels (all 'NP'); folio numbers stamped top right were read by eye and are only partly legible at 600-700 px, so canvas-to-folio ties are +-2 canvases except where a number was read.
+Result: **not a full classification.** 47 folios were not each located; the table lists what was seen. Verdict line 1 unchanged: `found-solved`.
+
+| vol | canvas (folio tie) | what the leaf shows | class |
+|---|---|---|---|
+| 149 | c188 (~f.113, copy to Lionne?) | ~18 lines digit cipher, Colbert signature, interlinear gloss | (b) (copy, glossed) |
+| 149 | c397 (29 Oct 1668, not a listed folio) | ~18 lines digits, interlinear gloss | (b), outside the 47 |
+| 149 | c267 = f.166 (number read) | clear text on this side; cipher, if any, on the next side not viewed | unresolved |
+| 149 | c640 = f.406, c644 = f.408 | clear (f.402 ~c636 not viewed) | unresolved |
+| 149 | c189-193 (f.115-118, number read "116") | a letter dated Lisbon 20 Oct 1668 (not London): ~17 lines + ~6 lines letter-and-digit symbols, NO gloss on the leaf | (c)/(d): unglossed, ~370 groups, different hand/sender and a letter-form symbol set not checked against the DE=68 key; not one of the 47 (neighbour, f.115-118) |
+| 159 | c325 (~f.320) | ~6 lines digits, interlinear gloss | (b) |
+| 159 | c246, c284, c310, c345, c355 | clear on the sides viewed | unresolved (ids unconfirmed) |
+| 164 | c315 (~f.303; c313 = f.301, c316 = f.304 read) | ~5 lines digits, interlinear gloss | (b) |
+| 164 | c456 (~f.444, "Copie de la lettre ... Seignelay" 12 Juin 1673) | ~5 lines digits, interlinear gloss; text duplicates c459 | (a)+(b) |
+| 164 | c459 (~f.447) | clear duplicate text of c456 | (a) |
+| 164 | c560 (~f.545) | cipher lines mid-page, gloss not made out | unresolved |
+| 164 | c642 (~f.627), c644 (~f.629, number read 629) | 2 blocks / ~4 lines digits, interlinear gloss | (b), (b) |
+| 164 | c682 | clear (f.667 ~c683 not viewed) | unresolved |
+| 165bis | c210 (~f.5xx-6xx, number illegible) | ~40 lines digits, interlinear gloss | (b) |
+| 165bis | c70, c140, c280 (~f.541, ~f.6xx, ~f.683, "Nancy 20 7bre 1673") | clear on the sides viewed | unresolved |
+Counts of the 47: located and seen cipher with gloss (b) about 6-7; copy (a) 1-2; (c) 0 among the 47; (d) 0; the rest (about 38) unlocated or seen only clear. Pattern, stated as observation not a result: in this pool the clerks' interlinear gloss is usual where the cipher is a few lines to a page; the one gloss-free cipher seen is the Lisbon letter at f.115-118, not a London dispatch and not on the list.
+Estimate of residue (c) from the leaf look: 0 letters among the 47 seen; at most ~370 groups (Lisbon, outside the 47). Gate (>= 2 letters or >= 1,500 groups) NOT met on what was seen, but 38 folios were not seen, so this is "not shown", not "absent".
+Decision: keep `found-solved`; spec NOT written (partial not triggered). Reason: every cipher passage seen in the pool carries its own period gloss or is a copy, and no unglossed London letter was located.
+Caveats: (1) status stays tied to DECODE Decrypted for 25/72 folios, the rest rests on this sample only; (2) a fuller pass needs per-volume folio anchors (about 1 USD per volume) and a look at both sides of each target folio; 160 (7 folios) untouched and 166 (6) only sampled; (3) the Lisbon letter at 149 f.115-118 is worth a one-line check against DECODE/Tomokiyo before anyone calls the pool exhausted.
+Requests: Gallica ~85 images (1.6 s apart, 2 connection resets, one retry each), no other host.
+
 ## While waiting
 Nothing is waiting: verdict is found-solved. The one action that depends on nobody, if the pool is ever revisited: for each of the 47 residue folios, anchor the Colbert 149/159/160/164/165bis/166 canvases by eye (gallica_folio.py --anchor) and see whether a contemporary decipherment is written on the leaf or a Decrypted sibling holds the original (several are copies). ~$1 per volume, not requested.
 
