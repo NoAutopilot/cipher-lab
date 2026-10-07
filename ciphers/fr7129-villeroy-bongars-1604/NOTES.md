@@ -656,9 +656,9 @@ folder. Subagents: 8 Sonnet.
 Waits on nobody outside the repository: the M9 hold-out gate (0.340 vs 0.70 bar) means the block is on
 instrument choice, not access, since 27 Sept 2026 (VB-KEY).
 
-- Transcribe f.260 lines with the clerk's decipherment in view, sign-aligned by one reader and checked by a second -- a different instrument than the two blind passes tried. L.
+- Transcribe f.260 lines with the clerk's decipherment in view, sign-aligned by one reader and checked by a second -- a different instrument than the two blind passes tried. L. (7 Oct 2026, D4-VILL: not started -- Gallica answered 503 to the f.260r native image and info.json at 13:5x UTC; retry on a later day, nothing else blocks it.)
 - [done 6 Oct 2026, R12D-VILL: no signal at this coverage, see section below] Decode f.268 restricted to key v3's high-confidence cells only (23 confirmed, cells attested by 2+ occurrences such as s=i, p=i, o=e, r=e, m=u, b=u, e=p, 26=en), leaving the rest as `[MARK]` -- a partial, honestly-graded reading testable now with no new material. M.
-- Re-run the known-plaintext alignment through `tools/interlinear_align.py` (the general shared tool) on the same f.260 pairs, instead of the private `kp_key_v3.py`, to check whether the shared tool's hard-EM separates the g/9/y/f/u/d families any better. M.
+- [done 7 Oct 2026, D4-VILL: no better -- 0.294 held out vs VB-KEY's 0.340, families still split; see section below] Re-run the known-plaintext alignment through `tools/interlinear_align.py` (the general shared tool) on the same f.260 pairs, instead of the private `kp_key_v3.py`, to check whether the shared tool's hard-EM separates the g/9/y/f/u/d families any better. M.
 
 ## Next step (READ2-RELABEL, 3 Oct 2026)
 The images are not the blocker. On disk: images/keys/ holds the native Gallica captures of f.268 r and v (canvases 541, 542, 3721x5914, copy-free, no login) and of the three key tables f.270r, 271r, 274r and 275r (manifest.json), and images/sweep/ holds the f.258-f.267 thumbnails. Only f.260 itself is not on disk at full size (its native crops from the 27 Sept 2026 known-plaintext pass were scratch only). The next step is the first "While waiting" bullet above, a different instrument from the two blind crop passes: re-fetch f.260r (canvas 525) at native size with tools/iiif_lines.py, cut line crops, and transcribe the lower and upper cipher blocks with the clerk's decipherment in view, sign-aligned by one reader and checked by a second, then run the alignment through tools/interlinear_align.py; ~$8-10 at the per-pass rate. The status line above stays `blocked` for the Tomokiyo paper route (paper still unread); that is a separate gap and does not stop this step.
@@ -700,3 +700,51 @@ two runs do not license anything. This confirms VB-KEY: the families that would 
 family, single digits) are exactly the unconfirmed ones, so the limit is still sign transcription.
 Next step unchanged: the first "While waiting" bullet / READ2-RELABEL (f.260 transcribed with the clerk's decipherment in
 view, one reader + one checker, then tools/interlinear_align.py), ~$8-10; it needs f.260r re-fetched from Gallica.
+
+## Shared-tool alignment of the existing f.260 pairs (D4-VILL, 7 Oct 2026): hold-out bar NOT met
+
+Account 4, LANE DEFAULT-account-4-20261007-1335; brief job D4-VILL (READ2-RELABEL). Status unchanged: `blocked`. No
+reading, no grades on f.268, no f.268 decode. Pre-registered in `PREREG-D4-VILL.md` (pushed 956d9a6c8 before the scored
+run).
+
+**What the brief asked and what ran.** The brief's main unit -- re-fetch f.260r native and transcribe its ~30 cipher
+lines with the clerk's gloss in view (one reader, one checker), then align with the shared tool -- did not start:
+gallica.bnf.fr answered the manifest (`tools/gallica_folio.py btv1b8555834s --folio 260`) with a read timeout, the
+native image (`/iiif/ark:/12148/btv1b8555834s/f525/full/full/0/native.jpg`) with HTTP 503 and the one retry
+(`.../f525/info.json`) with HTTP 503 "maintenance downtime or capacity problems", 13:46-13:53 UTC 7 Oct 2026; the host was
+not hit again (good-citizen rule). Canvas 525 = f.260r is taken from VB-KEY and the sweep thumbnail
+`images/sweep/f260r_canvas525.jpg` (the manifest check could not run). No crops were cut, so no vision unit ran.
+What ran instead is the disk-only part the brief also names (and the third "While waiting" bullet): the same 28 line
+observations VB-KEY used (its blind f.260 passes, 23 observations; VB-KP's f.258 lines 2-6), aligned by the shared
+`tools/interlinear_align.py` instead of the private `kp_key_v3.py` DP. Script `sibling/shared_align.py` (`--check` exit
+0): --code-prefix mode, 2+-digit numerals as word codes (0-12 letters), every other sign 0-2 letters, --keep-fs,
+--prior = key v2's single-letter cells; the tool's per-token chunks go through the unchanged `kp_key_v3.build()`, so
+only the aligner differs. Outputs `sibling/shared_pairs_f260.tsv`, `sibling/key_shared_f260.tsv` (grade C, the clerk's
+values; a working key, not a key of record).
+
+**Hold-out (control first in the same run; metric of record: matched clerk letters / clerk letters, 28 observations).**
+```
+PRIMARY   key from f.260 only : 433/1475 = 0.294; 20 class-shuffled keys mean 0.228 sd 0.013 max 0.258; z 4.95; gate 0.70 NOT met
+SECONDARY VB-KEY scope        : 432/1475 = 0.293; 20 class-shuffled keys mean 0.239 sd 0.010 max 0.254; z 5.41; gate 0.70 NOT met
+VB-KEY (kp_key_v3 hard-EM)    : 502/1475 = 0.340; shuffled mean 0.246 sd 0.010; z 9.90 (27 Sept 2026, for comparison)
+shared-tool --shuffle 20 (f.260 pairs, plain lines dealt to the wrong cipher lines): CONSISTENT real 18; control mean
+  11.10, p95 16, max 16; p = 0.048
+```
+The key carries signal against both controls, but reads the held-out lines worse than VB-KEY's aligner (-0.046), far
+under the 0.70 bar.
+
+**Families (count, top values, share of the majority; v3 for comparison).** g 37: p 6, e 5 (0.16; v3 p 0.14); 9 37: e/-/t
+4 each (0.11; v3 0.16); y 23: a 7, r 6 (0.30; v3 r 0.29); f 23: o 6, z 4 (0.26; v3 e 0.14); u 29: t 5, r 4 (0.17; v3 i
+0.17); d 10: r 6 (0.60; v3 0.36); ls 8: d 5 (0.62; v3 0.44); do 7 (0.14; v3 o 0.25); Zt 10: t 3 (0.30; v3 0.25); ff 22:
+r 8 (0.36; v3 0.34); single digits 1/2/4/6/7/8/^7 0.15-0.50 (v3 0.20-0.43); word codes 99 0.20, 18 0.22. Only d = r and
+ls = d reach 0.6, each on 8-10 aligned tokens, and both agree with v3's majority values already. The g/9/y/f/u families
+stay spread over five or more values under either aligner.
+
+**Rule 3 (third-attempt clause).** This was NOT a genuinely different instrument for the leg that fails: the same
+blind transcription (41% sign agreement between passes on f.260), re-aligned. Three aligners on that transcription
+(VB-KP's difflib comparison, VB-KEY's hard-EM, now the shared tool) all leave the same families split, and the third
+scores lower: logged "untestable by alignment of the blind f.260 transcription", not a key negative. The open step is
+unchanged and is the genuinely different instrument: f.260r transcribed with the clerk's gloss in view by one reader and
+one checker (first "While waiting" bullet / READ2-RELABEL), ~$8-10, needing only Gallica to answer; no other blocker.
+
+Requests: gallica.bnf.fr 3 (manifest timeout, 2 x 503), nothing saved. Subagents: 0.

@@ -4,7 +4,7 @@ Job (brief `.claude/briefs/runs/2026-10-07-account4-default1335-jobs.md`, D4-VIL
 f.275 key from the clerk's interlinear decipherment of the sibling f.260r with the shared `tools/interlinear_align.py`
 (not the private `sibling/kp_key_v3.py` alignment), score it on the VB-KEY M9 hold-out, compare families with key v3.
 
-**Deviation logged before scoring (13:55 UTC).** The new sign-aligned transcription of f.260r (one reader with the
+**Deviation logged before scoring (pushed 13:54 UTC, 956d9a6c8).** The new sign-aligned transcription of f.260r (one reader with the
 clerk's gloss in view, one checker) needs f.260r re-fetched from Gallica. At 13:46-13:53 UTC Gallica answered the
 manifest with a read timeout, the native image with HTTP 503 and the info.json retry with HTTP 503 ("temporarily
 unable to service your request due to maintenance downtime or capacity problems"); per the good-citizen rule the host
