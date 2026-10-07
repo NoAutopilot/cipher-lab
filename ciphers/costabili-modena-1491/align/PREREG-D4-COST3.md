@@ -51,3 +51,15 @@ against 0.80, gate not moved. If (a) fails: rule 3 third-attempt clause, the ali
 transcription quality.
 Readers: two blind Sonnet calls over the 9 line crops (A top-down, B bottom-up), labels.tsv + RUN3-COSK2 dash convention, no value, no copy, no key.
 Units: 2 Sonnet reader calls + scoring; cap 3.5.
+
+## Amendment 1 (7 Oct 2026, written after pass A's hand-back note, before any score and before this worker opened either read)
+Pass A's hand-back said its c2_L09 crop is "essentially empty". Re-checking the crop centres printed by `tools/iiif_lines.py` (6 97 190 276 372
+467 566 634 706) against the debug overlay: the crops are c2_L01 = page line 21, c2_L02..c2_L08 = page lines 22-28, and c2_L09 = blank margin.
+The PREREG above mislabeled them by one from c2_L03 on: "ma como ho dicto de s." is on **c2_L07**, and the last cipher line (page 28) is c2_L08.
+**Registered run (as written above): non-test** -- the spans are cut at a {CLEAR} on c2_L08, which carries none, so both spans drop in both passes
+by the rule (the scorer is run unchanged and its output reported).
+**Amended run:** the same spans with the line index corrected: w1 = first token of c2_L02 to the first {CLEAR} on c2_L07 (exclusive); w2 = after
+the last {CLEAR} on c2_L07 to the end of c2_L08 (c2_L09 ignored). Clear text, statistic, gate, x-marker rule and conditions (a)-(d) unchanged.
+Because this amendment follows a reader's hand-back note, a value that passes (a)-(d) in the amended run is reported as **C-eligible pending
+the lane orchestrator's ruling**, and is not written to key.tsv by this worker; the R1166 P4 re-score is still run on a scratch key and reported.
+Scorer: `align/d4cost3_score.py --l7` selects the amended indices.

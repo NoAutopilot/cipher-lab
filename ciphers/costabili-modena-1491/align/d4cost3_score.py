@@ -30,10 +30,10 @@ def stream(path):
         rows[ln] = out
     return rows
 
-def spans(rows):
-    lines = [f'L{i:02d}' for i in range(2, 10)]
+def spans(rows, anchor='L08'):
+    lines = [f'L{i:02d}' for i in range(2, 10) if anchor == 'L08' or i <= 8]
     seq = [(ln, t) for ln in lines for t in rows.get(ln, [])]
-    l8 = [k for k in range(len(seq)) if seq[k][0] == 'L08' and seq[k][1] == '{CLEAR}']
+    l8 = [k for k in range(len(seq)) if seq[k][0] == anchor and seq[k][1] == '{CLEAR}']
     if not l8: return {}
     return {'w1': seq[:l8[0]], 'w2': seq[l8[-1] + 1:]}
 
@@ -41,10 +41,11 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('passes', nargs='+')
     ap.add_argument('--key', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'key_n9cos2.tsv'))
+    ap.add_argument('--l7', action='store_true', help='Amendment 1: anchor clear words on c2_L07, w2 to end of c2_L08')
     ap.add_argument('--seeds', type=int, default=20); ap.add_argument('--out')
     a = ap.parse_args(); key = load_key(a.key); res = []; newv = {}
     for pf in a.passes:
-        name = os.path.basename(pf).split('.')[0]; sp = spans(stream(pf))
+        name = os.path.basename(pf).split('.')[0]; sp = spans(stream(pf), 'L07' if a.l7 else 'L08')
         hit = tot = 0; null = [[0, 0] for _ in range(a.seeds)]; vals = collections.defaultdict(list)
         for s in ('w1', 'w2'):
             if s not in sp: print(f'{name}\t{s}\tDROPPED (markers not as registered)'); continue
