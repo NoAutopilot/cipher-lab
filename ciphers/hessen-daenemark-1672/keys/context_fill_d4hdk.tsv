@@ -1,0 +1,20 @@
+kind	token	code	left	right	truth	rank_of_truth	top1	top2	margin
+control	p2_17.1	229	in	man	Berlin	5	Franckreich	Schweden	0.225
+control	p2_2.1	605	zwischen	und	Dennemarck	7	Schweden	Konig	0.016
+control	p2_25.1	651	nach	gehet	Brandenburg	8	Berlin	Franckreich	0.536
+control	p2_28.1	774	faveur	erklaren	Holland	13	Konig	Kayser	0.331
+control	p2_28.2	775	wen	nur	Staaten	9	Konig	Schweden	0.054
+control	p2_3.1	651	und	ergeben	Brandenburg	1	Brandenburg	Schweden	0.427
+control	p2_9.1	653	an	sehr	Brandenburg	9	Konig	Hertzog	0.517
+control	p3_17.3	601	in	adel	Dennemarck	8	Franckreich	Schweden	0.231
+control	p3_2.1	5756	das	mit	Franckreich	4	Hertzog	Schweden	0.032
+control	p3_26.2	447	zwischen	@Konig	Kayser	4	Schweden	Konig	0.249
+control	p3_26.4	834	und	unter	Daniae	21	Brandenburg	Franckreich	0.204
+control	p3_3.1	601	und	vorbeigangen	Dennemarck	13	Brandenburg	Schweden	0.434
+control	p3_5.1	229	zu	sache	Berlin	4	Sachsen	Brandenburg	0.400
+control	p3_6.1	681	das	in	Brandenburg	7	Konig	Schweden	0.281
+target	p2_7.1	625	hat	hierbei			Konig	Hertzog	0.127
+target	p3_4.1	625	dank	wird			Konig	Kayser	0.108
+target	p3_17.2	634		nun			Konig	Kayser	0.354
+target	p3_26.3	602		und			Konig	Kayser	0.577
+summary	control_n=14	top1=0.071	mrr=0.208	null_mrr_p95=0.314	prior_top1=0.000	gate=FAIL			

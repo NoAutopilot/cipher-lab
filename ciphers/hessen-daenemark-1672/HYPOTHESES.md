@@ -31,3 +31,9 @@ except the gloss itself.
 |---|---|---|---|
 | one-part alphabetical nomenclator (S1, Kendall tau) | power 1.000/0.989/0.807, size 0.051/0.047/0.040 | tau 0.194, p 0.172 | control-backed negative at K=16 |
 | topical-block nomenclator (S2, same-topic adjacent pairs) | power 1.000/0.769/0.318, size 0.017/0.026/0.016 | 5 pairs, p 0.014 | non-test at this N (power < 0.8 at noise 0.4); not support |
+
+## Context fill of unread nomenclator groups (D4-HDK, 7 Oct 2026, account-4; PREREG-D4HDK.md)
+
+| hypothesis | control (14 held-out C-grade gloss tokens, 28 referents) | target | verdict |
+|---|---|---|---|
+| a de17 word-bigram context fill recovers nomenclator values (625, 634, 602) | top-1 0.071, MRR 0.208 vs shuffled-context null p95 0.314; prior-only top-1 0.000 | not scored (gate FAIL); record-only ranks in keys/context_fill_d4hdk.tsv | CONTROL BELOW GATE: instrument non-discriminating at these contexts; key-rebuild [retired] (keys/context_fill_d4hdk.py) |
