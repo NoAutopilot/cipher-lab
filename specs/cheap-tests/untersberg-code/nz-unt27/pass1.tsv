@@ -1,0 +1,55 @@
+line	pos	sign	conf	note
+S1	1	DL	med	SIGN:d with looped bowl and descender below baseline
+S1	2	e	med	e
+S1	3	N	high	SIGN:N
+S1	4	a	med	a
+S1	5	LP	med	SIGN:l/p-like loop stem
+S1	6	LP	med	SIGN:l/p-like loop stem
+S1	7	ELP	low	SIGN:e-like loop with tail
+S1	8	LS	med	SIGN:long S swash descending below baseline
+S1	9	o	low	SIGN:o-like loop
+S1	10	a	low	a
+S1	11	u	low	SIGN:u/s curl
+S1	12	G	low	SIGN:g-like hook with descender
+S2	1	SH	med	SIGN:tall S-like swash stem descending below baseline with c
+S2	2	o	med	o
+S2	3	XST	med	SIGN:x with long descender stem below baseline
+S2	4	TH	low	SIGN:t/H-like with looped left hook on stem
+S2	5	a	med	a
+S2	6	v	med	v
+S2	7	r	low	r
+S2	8	ES	low	SIGN:large e/S swash with long tail up to top right
+S2	9	e	med	SIGN:e-like
+S2	10	SH	med	SIGN:S with hooked top, descending right
+S3	1	NH	low	SIGN:n-like with hook
+S3	2	FF	low	SIGN:ff-like double stem with flourish
+S3	3	a	high	a
+S3	4	:	high	:
+S3	5	N	high	N
+S3	6	p	med	p
+S3	7	a	high	a
+S3	8	:	high	:
+T1	1	c	med	c
+T1	2	r	med	r
+T1	3	c	high	c
+T1	4	Y	med	SIGN:y-like fork on stem
+T1	5	RH	med	SIGN:r with hooked top joined to stem, descender below basel
+T1	6	c	high	c
+T1	7	XST	med	SIGN:x/cross on long stem with descender
+T1	8	o	med	SIGN:small circle o
+T1	9	T	med	SIGN:T-like with sloping crossbar
+T2	1	EPS	high	SIGN:epsilon-like reversed 3
+T2	2	SIX	med	SIGN:6/G-like with loop
+T2	3	c	med	SIGN:open C
+T2	4	l	med	SIGN:l-like curved stroke
+T2	5	PLUS	high	SIGN:+ cross
+T2	6	8	high	8
+T2	7	Z	med	SIGN:Z/2 like angular
+T2	8	VN	low	SIGN:v/N-like angular with descender
+T3	1	EPS	med	SIGN:3 reversed (omega-like)
+T3	2	a	high	a
+T3	3	c	high	c
+T3	4	XC	med	SIGN:x-like curled
+T3	5	e	med	e
+T3	6	SEVH	med	SIGN:7/curl hooked top with descender
+T3	7	o	med	o

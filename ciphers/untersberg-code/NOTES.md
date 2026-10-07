@@ -675,3 +675,60 @@ text-bearing opening has been screened (R8-UNTB, R9-UNTB2). symA now moves only 
 an outside witness (Lang 2010 via LOCAL-QUEUE L26; Weber-Fleischer 1992). Optional cheap side-step, about USD 2: the two figures' tablets
 and scroll on opening 27, which Herzog also calls unresolvable, have not been transcribed blind. Same crop + 2-pass recipe; they are a third
 sign context.
+
+## Opening-27 tablet and scroll, blind 2-pass and symA (NZ-UNT27 (account 4), 7 Oct 2026, 09:47-09:5x UTC by date -u)
+
+Brief: LANE-NZ-0914 wave 2 spawn line (ROOM.md 09:45 UTC, "R13-UNTOP named side-step, cap 3"). The job file
+`.claude/briefs/runs/2026-10-07-account4-lanenz-0914-jobs.md` carried no NZ-UNT27 section when this ran; the job followed its
+common rules and R13-UNTOP's recipe. PREREG: `specs/cheap-tests/untersberg-code/PREREG-NZ-UNT27.md` (fd7fb05eb), pushed before
+any pass and before the worker viewed the crops.
+
+**Crop step (pasted).** Opening 27 at native 4900x3064 (1 request, scratchpad, not committed). The R9-UNTB2 boxes did not work as
+given, so the step deviates from the PREREG here. The tablet's three symbol "columns" are three lines painted sideways, and the scroll's
+lines run at about 57 degrees, so `--region 1820,1100,200,580` cut 11 slivers across the columns and the scroll box gave 2 bands across
+diagonal lines. Before any pass, the worker rotated the two sheets upright (PIL: tablet box 1680,1160,1990,1740 rotated 90 degrees
+counter-clockwise; scroll box 2700,960,3380,1660 rotated 57 degrees clockwise). Then:
+`python3 tools/iiif_lines.py --image ltab_ccw.jpg --out tL --region 25,22,530,240 --lines-per-crop 1 --max-width 2400 --distance 50 --debug`
+(3 lines) and `python3 tools/iiif_lines.py --image rscroll_rot.jpg --out tR --region 190,320,590,240 --lines-per-crop 1 --max-width 2400 --debug`
+(3 lines). Both debug overlays were checked, one band per line. The control crop is R13-UNTOP's opening-11 L4 box. Two blind Sonnet
+passes, one call each, on seven neutrally lettered crops (2x upscaled; C/A/F = scroll lines 1-3, B/G/E = tablet lines 1-3, D = control).
+
+**Gate 1 (sorter rule): passed, narrowly.** A fixed rule list (`nz-unt27/normalize.py`, written after both passes returned, the same for
+both) mapped the descriptions to class labels. `tools/reconcile_passes.py` then gave 49/54 aligned columns agreeing (90.7%), with 5
+disagreements, just under the 10% line. This is agreement on worker-assigned labels, not accuracy. The worker settled the 5 on the crops
+(all M). Reconciled (`specs/cheap-tests/untersberg-code/nz-unt27/reconciled.tsv`), committed before any comparison:
+- scroll S1: DL e N a LP LP ELP LS o a u G
+- scroll S2: SH o XST TH a v r DH e SH (an underline stroke under "av" is dropped)
+- scroll S3: NH FF a : N p a :
+- tablet T1: c r c Y RH c XST o T
+- tablet T2: EPS SIX c l PLUS 8 Z VN
+- tablet T3: EPS a c XC e SEVH o
+These labels are defined in normalize.py. R9-UNTB2's by-eye readings ("de Naleesge.. / zotaasdes / ahFa· Nea:", tablet "3, 9, c, +, 8,
+e, a, r, x ...") are consistent with this in sign count. Read upright, the tablet is not columns of symbols. It is three lines in mostly
+ordinary letter shapes (c r c y r c ...; e 6 c l + 8 z ...; w a c x e 7 o), and the scroll is a cursive Latin-letter line set.
+
+**Control (PREREG gate 2): passed by both passes.** Pass 1 flagged both symA positions (D11 "D-like with loop", D15 "p/P with flourish
+descender"), and pass 2 flagged D15 ("P-like with descender").
+
+**Gate 2 (symA in a third context): 2 joint positions by the PREREG wording, both rejected by the worker's eye.** `nz-unt27/gate2.py`
+(output in `gate2_output.txt`) lists per pass every description naming a hook/loop/curl together with a descender. Pass 1 gives 6 and
+pass 2 gives 4. Matched to the same aligned column and read as the PREREG words it (a hooked or looped *top*: C1's "looped bowl" is a
+bowl, so it is excluded), the joint count is 2: scroll S2 col 1 and tablet T3 col 6. The worker's own eye, which does not count toward
+the gate, finds that neither has symA's build. Side by side in `images/nz-unt27_symA_candidates.jpg` (left S2 col 1 and middle T3 col 6,
+both at 2x; right the control symA at 1x), S2 col 1 is a long S-swash whose tail sweeps down-left with no bowl, and T3 col 6 is a 7-shaped
+hook with a short tail and no bowl. symA is a closed bowl on a stem with a flourished top and a long straight descender. So the gate's 2 is a
+weakness of the description rule: "hooked top + descender" also matches an S-swash and a 7-hook. It is not evidence of symA. This NOTES
+section therefore records "2 by the rule, 0 by eye". It does not record that symA is attested here, and it does not record a clean
+negative. A tighter rule for any later screen would require a closed bowl (loop) joined to the stem.
+
+Rule 4: nothing read or graded (H 0, C 0, S 0); the transcription's settlements are M. Counts for the opening-11 text are unchanged
+(C 0, M 4, H 0, I 1). Herzog 1929 p. 50 calls these sheets unresolvable and prints no text, so there was nothing to collate.
+
+Requests: sammlung-online.salzburgmuseum.at 1 (IIIF full/4900, opening 27, HTTP 200, descriptive User-Agent). No other host. Subagents:
+2 Sonnet (one call each, seven crops). Files: `specs/cheap-tests/untersberg-code/PREREG-NZ-UNT27.md`,
+`specs/cheap-tests/untersberg-code/nz-unt27/` (pass1/2_raw.tsv, pass1/2.tsv, normalize.py, reconcile outputs, reconciled.tsv, gate2.py,
+gate2_output.txt), `ciphers/untersberg-code/images/nz-unt27_symA_candidates.jpg` (16 KB).
+
+Next step for symA (one line, not run): every painted text in Hs 2398 has now been screened (openings 11 and 27, inscription, tablet and
+scroll). symA moves only through the paleographer crop packet (F4; add `nz-unt27_symA_candidates.jpg` as negative comparanda) or an
+outside witness (Lang 2010 via LOCAL-QUEUE L26; Weber-Fleischer 1992). There is no further in-manuscript step.

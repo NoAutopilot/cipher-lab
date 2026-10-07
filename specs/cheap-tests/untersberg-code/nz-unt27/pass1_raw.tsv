@@ -1,0 +1,88 @@
+line	pos	sign	conf	note
+A	1	SIGN:tall S-like swash stem descending below baseline with curl top	med	initial P/S-like
+A	2	o	med	
+A	3	SIGN:x with long descender stem below baseline	med	crossed x on long stem
+A	4	SIGN:t/H-like with looped left hook on stem	low	
+A	5	a	med	
+A	6	v	med	
+A	7	r	low	
+A	8	SIGN:large e/S swash with long tail up to top right	low	tall curved form
+A	9	SIGN:e-like	med	
+A	10	SIGN:S with hooked top, descending right	med	
+A	11	SIGN:underline dash under pos 5-6	low	stroke below baseline
+B	1	c	med	open C with tail
+B	2	r	med	hooked top stem
+B	3	c	high	
+B	4	SIGN:y-like fork on stem	med	
+B	5	SIGN:r with hooked top joined to stem, descender below baseline	med	long arm hook
+B	6	c	high	
+B	7	SIGN:x/cross on long stem with descender	med	
+B	8	SIGN:small circle o	med	
+B	9	SIGN:T-like with sloping crossbar	med	
+C	1	SIGN:d with looped bowl and descender below baseline	med	
+C	2	e	med	p/e-like loop
+C	3	SIGN:N	high	with tail
+C	4	a	med	
+C	5	SIGN:l/p-like loop stem	med	
+C	6	SIGN:l/p-like loop stem	med	
+C	7	SIGN:e-like loop with tail	low	
+C	8	SIGN:long S swash descending below baseline	med	
+C	9	SIGN:o-like loop	low	
+C	10	a	low	
+C	11	SIGN:u/s curl	low	
+C	12	SIGN:g-like hook with descender	low	
+D	1	m	med	
+D	2	.	med	
+D	3	s	med	
+D	4	i	med	
+D	5	SIGN:g-like 9	med	
+D	6	.	med	
+D	7	v	med	
+D	8	.	med	
+D	9	l	med	
+D	10	.	med	
+D	11	SIGN:D-like with loop	med	
+D	12	.	med	
+D	13	e	med	
+D	14	.	med	
+D	15	SIGN:p/P with flourish descender	med	
+D	16	.	med	
+D	17	s	med	
+D	18	s	med	
+D	19	.	med	
+D	20	a	med	
+D	21	.	med	
+D	22	u	med	
+D	23	.	med	
+D	24	n	med	
+D	25	.	med	
+D	26	i	med	
+D	27	.	med	
+D	28	SIGN:X	med	
+D	29	m	med	
+D	30	i	med	
+D	31	s	med	
+D	32	u	med	
+E	1	SIGN:3 reversed (omega-like)	med	
+E	2	a	high	
+E	3	c	high	
+E	4	SIGN:x-like curled	med	
+E	5	e	med	
+E	6	SIGN:7/curl hooked top with descender	med	
+E	7	o	med	
+F	1	SIGN:n-like with hook	low	
+F	2	SIGN:ff-like double stem with flourish	low	
+F	3	a	high	
+F	4	:	high	colon
+F	5	N	high	
+F	6	p	med	p with loop
+F	7	a	high	
+F	8	:	high	
+G	1	SIGN:epsilon-like reversed 3	high	
+G	2	SIGN:6/G-like with loop	med	
+G	3	SIGN:open C	med	
+G	4	SIGN:l-like curved stroke	med	
+G	5	SIGN:+ cross	high	
+G	6	8	high	
+G	7	SIGN:Z/2 like angular	med	
+G	8	SIGN:v/N-like angular with descender	low	

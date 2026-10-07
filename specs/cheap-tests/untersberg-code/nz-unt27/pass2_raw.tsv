@@ -1,0 +1,86 @@
+line	pos	sign	conf	note
+A	1	SIGN:tall S-curve, hooked top, long descender to lower left	med	
+A	2	o	high	
+A	3	SIGN:x with long stem descending below baseline	med	
+A	4	SIGN:t-like, hooked/looped top on stem with crossbar	low	
+A	5	a	med	
+A	6	r	med	
+A	7	SIGN:tall d-like, hooked top, curved descender below baseline	low	
+A	8	e	med	
+A	9	S	med	
+B	1	c	high	
+B	2	SIGN:r-like stem with branching top arm	med	
+B	3	c	high	
+B	4	SIGN:y/Y with forked top and stem descender	med	
+B	5	SIGN:r with long stem and curved arm	med	
+B	6	c	high	
+B	7	SIGN:cross/x with long stem, descender below baseline	med	
+B	8	o	med	
+B	9	T	med	
+C	1	SIGN:d-like, tall stem with looped bowl, descender	med	
+C	2	e	low	
+C	3	N	med	
+C	4	a	med	
+C	5	l	med	
+C	6	SIGN:p-like loop on stem	low	
+C	7	SIGN:e/p-like loop	low	
+C	8	SIGN:long S stroke with descender, ligature-like	low	
+C	9	o	low	
+C	10	a	low	
+C	11	u	low	
+C	12	SIGN:g-like looped	low	
+D	1	m	high	
+D	2	.	high	
+D	3	s	med	
+D	4	i	high	
+D	5	g	med	
+D	6	.	high	
+D	7	v	med	
+D	8	.	high	
+D	9	l	med	
+D	10	.	high	
+D	11	D	med	
+D	12	.	high	
+D	13	e	med	
+D	14	.	high	
+D	15	SIGN:P-like with descender	med	
+D	16	.	high	
+D	17	s	med	
+D	18	s	med	
+D	19	.	high	
+D	20	a	high	
+D	21	.	high	
+D	22	u	med	
+D	23	.	high	
+D	24	n	med	
+D	25	.	high	
+D	26	i	med	
+D	27	.	high	
+D	28	x	med	
+D	29	m	med	
+D	30	i	med	
+D	31	s	med	
+D	32	u	low	
+E	1	SIGN:omega-like w with open top	med	
+E	2	a	high	
+E	3	c	high	
+E	4	SIGN:x/z-like, curved crossed	med	
+E	5	e	med	
+E	6	SIGN:7-like with looped hook top and stem descender	low	
+E	7	o	high	
+F	1	SIGN:n-like hooked, diagonal	low	
+F	2	SIGN:ff-like, two stems with crossbar	low	
+F	3	a	high	
+F	4	:	high	
+F	5	N	med	
+F	6	p	med	
+F	7	a	high	
+F	8	:	high	
+G	1	SIGN:epsilon-like reversed 3 with descender	med	
+G	2	SIGN:6-like loop with hooked top	med	
+G	3	SIGN:C open	high	
+G	4	l	med	
+G	5	+	high	
+G	6	8	high	
+G	7	SIGN:Z-like angular	med	
+G	8	SIGN:N/A-like with long diagonal and descender	low	

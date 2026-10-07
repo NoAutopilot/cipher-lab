@@ -1,0 +1,12 @@
+pass1: control symA flagged at D['11', '15'] -> HIT; symA-like on tablet/scroll: 6
+    A 1 SIGN:tall S-like swash stem descending below baseline with curl top
+    A 10 SIGN:S with hooked top, descending right
+    B 5 SIGN:r with hooked top joined to stem, descender below baseline
+    C 1 SIGN:d with looped bowl and descender below baseline
+    C 12 SIGN:g-like hook with descender
+    E 6 SIGN:7/curl hooked top with descender
+pass2: control symA flagged at D['15'] -> HIT; symA-like on tablet/scroll: 4
+    A 1 SIGN:tall S-curve, hooked top, long descender to lower left
+    A 7 SIGN:tall d-like, hooked top, curved descender below baseline
+    C 1 SIGN:d-like, tall stem with looped bowl, descender
+    E 6 SIGN:7-like with looped hook top and stem descender

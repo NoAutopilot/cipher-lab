@@ -25,6 +25,11 @@
       "size_bytes": 2972353,
       "foliation_visible": "pencil pagination '20' (top-left, left/verso page) and '21' (bottom, right/recto page) -- consistent with Herzog 1929's own foliation of this same manuscript as 'fol. 10\\'' (verso) / 'fol. 11' (recto): pencil page = 2x Herzog folio number for a verso, 2x+1 for a recto.",
       "content": "CONFIRMED MATCH to Herzog 1929's Bild 2/fol. 10'-11 (see NOTES.md 'Leaf identified' section): left page shows the six-line inscription painted as text inside an arch-topped frame drawn on a red rock tablet (matching Herzog's footnote d, p.29: 'Die Inschrift wird nach oben hin von einem Bogen eingerahmt' -- the inscription is framed above by an arch), with a standing figure pointing at/copying the tablet and a seated armed figure beside it; right page continues the narrative prose, which reads almost word-for-word against Herzog's printed text for fol. 11 ('Und wie ich solang geschaut und abgeschriben hab, in dem ist es Abend worden...'). NOT independently transcribed here per brief scope ('do not transcribe' -- a later blind pass will)."
+    },
+    {
+      "file": "nz-unt27_symA_candidates.jpg",
+      "derived_from": "https://sammlung-online.salzburgmuseum.at/iiif/iiif/2/e0f9d823-c1bc-4adf-9351-2a4190cb82af/full/4900,/0/default.jpg + hs2398_opening11_inscription_leaf.jpg",
+      "what": "NZ-UNT27 (7 Oct 2026): opening-27 scroll S2 col1 and tablet T3 col6 (rotated upright, 2x) beside opening-11 L4 symA (1x); see NOTES.md"
     }
   ],
   "openings_sampled_not_matching": {
