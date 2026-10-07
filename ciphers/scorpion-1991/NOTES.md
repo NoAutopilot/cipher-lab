@@ -342,3 +342,9 @@ SUPPORT, so the NO SUPPORT is conservative. Grades: every code M (eye judgement)
 **Verdict:** status stays `open`. The shape question "does S1 draw on the published Zodiac alphabets" now has three
 preregistered tests and none supports it; with exact-code kappa 0.55 on S1 a fourth coder would add little. What would
 move it: new material (the further Scorpion messages Schmeh mentions), or an S5 transcription if a later family needs it.
+
+## Next step (LANE-NZ-0914 freshness check, 7 Oct 2026)
+
+NEXT-STEPS.tsv still read this folder as `runnable` from the older line "Cheapest next: that blind second-coder test" (section above
+R13-SCORP2C); that test ran on 6 Oct 2026 (R13-SCORP2C). next: no agent step is left on the material in hand (no key material); new material only (the
+further Scorpion messages Schmeh mentions), or an S5 transcription if a later family needs it.

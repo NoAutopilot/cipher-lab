@@ -1296,7 +1296,7 @@ reproduces all four windows exactly; window 1's 0.004 shortfall is a FAIL under 
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
-- Action that depends on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
+- [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
   the queued SO prompt, ~$1.5. Step (n) ran on 6 Oct 2026 (R15-OLDUV, section 20: one u/v naming, judge folded v->u on both sides,
   all four windows still FAIL; gap to real_p05 narrowed 0.03-0.12, window 1 now 0.004 short). Step (f') ran on 6 Oct 2026
   (R14-OLDF2, section 19: C1_29 and C1_31 changed, re-judged, all four windows still FAIL). Step (f) ran on 6 Oct 2026 (R14-OLDF, section 18: no sign settled by the

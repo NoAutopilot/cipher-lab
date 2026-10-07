@@ -1090,3 +1090,9 @@ in nos. 7/19 (planted as a crib, control first), or more ciphertext in the same 
 ciphertext-only run of `solve_nomen` on these transcripts.
 Gap record (status `open`): no. 7 nomenclator layer -- structural restriction control below gate (non-test); ciphertext-only route
 exhausted at N<=481; next: outside word-code material (a fasc. 2 key/legend with drawn word codes), cost unknown until one is found.
+
+## Next step (LANE-NZ-0914 freshness check, 7 Oct 2026): no key material in hand
+
+NEXT-STEPS.tsv read this folder as `runnable` (7 Oct 2026); the last named step (R13-SIENAWC, 6 Oct 2026) is new material only. next (no key material): no agent step is left on the
+transcripts in hand (ciphertext-only nomenclator route exhausted at N<=481); reopened by a fasc. 2 key sheet or legend with drawn word codes,
+or more ciphertext in the same sign set from a reader other than agent J.
