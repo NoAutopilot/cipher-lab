@@ -98,3 +98,25 @@ glosses using a German 17th-c. corpus (`tools/data/de17`), pre-registered (PRERE
 [retired] with the instrument named. Then the retry step: `python3 tools/decode_key.py ciphers/hessen-daenemark-1672 --check`, regrade.
 Update Remaining gaps / Escalation; `tools/gaps_check.py hessen-daenemark-1672` passes. Report what was found and where it was not found;
 do not classify novelty.
+
+## Wave 2 (spawned 14:0x UTC 7 Oct). Wave 1 all done by 13:58 UTC (workers 17.78 by get_session).
+Lane known-text share so far: D4-E5 5.43 of 17.78 (all 7 entries proved printed); no further eckert reading chunks this lane.
+
+### D4-E5H -- eckert-1864 N2-AJ header correction (solver side, Opus; cap 2, box 30 min)
+D4-V2AJ's ROOM flag 13:54 UTC: mssEC 19 p.18 (8910) N2-AJ header reads "12. midn", not "12. noon" (native-res crop). Check the crop
+yourself (one IIIF region fetch or the crop V2AJ left), then correct the header in ciphertext-no2.txt and reading-no2.md (and any status.json
+/ PROGRESS.tsv / SECOND-OPINIONS-QUEUE.tsv text that quotes "noon" or the Viola/noon conflict for N2-AJ; rebase first), regenerate with
+`python3 ciphers/eckert-1864/decode_no2.py` and `--check` exit 0. Code words unchanged. Note the change in NOTES.md (rule 10 propagation is
+the next verifier's job; flag it in ROOM). Do not touch other entries.
+
+### D4-COST -- costabili-modena-1491 R1167 cipher letter vs its clear copy (solver, Opus; cap 6, box 70 min)
+Intake gate 14:0x UTC pasted in the lane's ROOM line. Remaining gaps item 2: "R1167 cipher letter vs its clear copy P5-P6: completeness and
+token alignment - blocker: not-attempted ... align with the N8-COS C key as prior, ~$5". Known-text work that builds the key for the unread
+R1166 P4 (guardrail allowed). One DECODE browser login (`tools/decode_browser_login.js`, the R8-COST command form, `--guess-fullsize` if
+needed, >= 1.5 s between files), fetch R1167 P1-P3 cipher pages and P5-P6 clear copy only (and R1165 P1 for the Vestigia image map gap,
+~$0.3, if the same login serves it). Crop step pasted (`tools/iiif_lines.py --image ...`), 2-3 lines of R1167 P1 to start: check whether
+the clear copy is complete against the cipher (opening, date, anchors, line counts); then token-align a stretch with the N8-COS C key as
+prior (`tools/interlinear_align.py` where pairs are word-level). Pre-register the gate for any new sign value (held-out occurrences, shuffle
+control) before scoring; new values enter at C only from the alignment. Units: ~3 vision calls x 1.5 + floor. Update Remaining gaps /
+Escalation, `tools/gaps_check.py costabili-modena-1491`. Keep committed images under 30 MB (crops only; manifest for the rest). Report what
+was found and where it was not found; do not classify novelty.
