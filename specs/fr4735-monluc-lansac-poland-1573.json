@@ -1,0 +1,28 @@
+{
+ "slug": "fr4735-monluc-lansac-poland-1573",
+ "name": "Monluc (bishop of Valence) cipher letters from Poland, BnF fr.4735 (Tome II = Gallica btv1b9060724s), Feb-Jul 1573",
+ "date": "5 Feb, 28 Apr and Jun-Jul 1573 (BnF depouillement items 35-36, 53-55, 85-92)",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext_pending": "No transcription exists (Tomokiyo gives only the key images, not a reading). Images: Gallica btv1b9060724s (614 canvases, all labelled NP, so folio->canvas is by eye anchors read from the pencil foliation: c148=f.72, c180=f.90, c266=f.137, c384=f.207, c422=f.226; about 2 canvases per folio, stubs shift it). Look-up on 7 Oct 2026 (NC-MONL2): c172 (about f.86) three cipher lines with a contemporary marginal decipherment in the left margin; c258, c264 (f.136), c268 (f.138) full cipher pages, no marginal gloss on the page; c390 (f.210) one cipher paragraph, no gloss seen. Transcription of any of them is test 0 (TRANSCRIPTION.md: crops via tools/iiif_lines.py first).",
+ "alphabet": "Monluc Cipher 1 and Cipher 2: letter-form and symbol substitution with nulls that look like words and jargon words (Tomokiyo, henryiii.htm). Key images fetched once 7 Oct 2026: sources/cryptiana/web/henryiii_Monluc1.png, henryiii_Monluc2.png (Tomokiyo; his transcription 'may not be accurate').",
+ "constraints": {
+  "pool_signs_estimate": "unglossed on-page cipher about 3,300 signs (three full pages at about 30 lines x 35-38 signs: c258, c264, c268) plus about 500 (c390); glossed about 165 (c172). Estimates from the leaf look, not counts.",
+  "caveat_in_volume_decipherment": "BnF finding aid marks items 35, 36, 53-55, 85-92 'avec chiffre et dechiffrement'. c270 (f.139) is a clear-text page opening with a Varsovie dateline and 1573 right after the cipher pages c264-c268; it may be the contemporary decipherment of one of them. Not compared line by line. If it is, those pages are known-answer material, not residue.",
+  "print": "Noailles 1867 vols II-III OCR: Monluc letters of 12 Nov 1572, 20 Nov 1572, 20 Jan 1573, 31 Mar 1573 are printed; no letter dated 5 Feb, 28 Apr or Jun-Jul 1573 found by date-string grep (conditional on OCR).",
+  "duplicate_effort": "Lanssac's letters in the same volume are read by Bourdeau (targets/lanssac); Monluc's are not in either solver repository."
+ },
+ "cheap_tests_in_order": [
+  "1. Known-answer: apply Tomokiyo's Monluc Cipher 1 table (henryiii_Monluc1.png, transcribed to key.tsv by the worker) to the three glossed cipher lines on c172; the marginal decipherment is the answer. Matched control: the same key on the same lines' groups shuffled (rule 3). Report both numbers; N is about 165 signs, so a miss is 'untestable at this N', not a negative. Cost $2-3.",
+  "2. One unglossed full page (c268, f.138) read with the same key, judged with fr16; also read c270 against it first to settle whether f.139 is its decipherment (if so it becomes a second known-answer leaf and test 2 moves to c264 or c390). Control: shuffled groups at the same N and K. Cost $3.",
+  "3. Cipher 2 (f.210, c390, July 1573) only after tests 1-2."
+ ],
+ "matched_control": "shuffled-group control on the same leaf at the same N and K; design must match (code+nulls+jargon words, not plain monoalphabetic), see CLAUDE.md rule 3.",
+ "judge": {
+  "language": "fr16",
+  "min_word_cover": 0.5,
+  "note": "fr16 (16th-c. letters) is era-matched to 1573; its leave-one-out per-fold spread has not been checked for this spec, so a FAIL/PASS is of unknown reliability (rule 3, es17c/EN-FOLDS paragraphs)."
+ },
+ "cheap_test_done": []
+}

@@ -35,3 +35,76 @@ Plain searches run: 2 (queries above; sender+recipient+date and shelfmark combin
 
 ## Intake gate
 `python3 tools/intake_gate_check.py fr4735-monluc-lansac-poland-1573` -> "partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0. No spec written: the web/blog and premise checks are incomplete, so the target is not yet cleared for a first test.
+
+## NC-MONL2 (7 Oct 2026)
+Finding aid, images and the undone check-solved items run by NC-MONL2 (Sonnet, for LANE NEWT-C-account-4). Image look only: no transcription, no key applied, no cryptanalysis.
+
+**Dépouillement.** BnF archivesetmanuscrits, `POST resultatRechercheSimple.html`, `TEXTE_LIBRE_INPUT=Monluc Pologne 1573` (87 results on page 1, unpaginated) and the notice `ark:/12148/cc57784f/cd0e2277` (full table of contents of fr.4734-4736 with folios). Digitised Tome II = Gallica `btv1b9060724s` (found by SRU on the recueil title; 614 canvases, every label NP, so folio->canvas is by eye).
+
+**Monluc items the aid marks as cipher (all with "Déchiffrement" or "Avec chiffre et déchiffrement" in the aid line):**
+
+| aid item | fol. | date, to | aid wording | Tomokiyo leaf |
+|---|---|---|---|---|
+| 22, 23 | 50, 56 | 18 Dec 1572, king / Anjou | Déchiffrement | -- |
+| 24 | 60 | 8 Jan 1573, king | Déchiffrement | -- |
+| 33 | 80 | 5 Feb 1573, king | Déchiffrement | -- |
+| 35 | 84 | 5 Feb 1573, king | avec chiffre et déchiffrement | f.84 |
+| 36 | 87 | 5 Feb 1573, Brulart | avec chiffre et déchiffrement | f.87 |
+| 53-55 | 132 ff. (to 141) | 28 Apr 1573, king / queen mother; king's letter incomplete at the end | avec chiffre et déchiffrement | ff.132, 136, 138 |
+| 66 | 166 | 2 May 1573 | "est un déchiffrement" | -- |
+| 85-92 | 207-223 | June-July 1573, king / queen mother / Anjou | avec chiffre et déchiffrement | f.209 (July, Cipher 2) |
+
+(Items 17, 18, 112-120 are decipherments of other correspondents' letters. Lanssac's cipher items 51, 60-61, 63, 65, 70 are Bourdeau's, not listed here.)
+
+**Canvas anchors read from the pencil foliation (corner crops, 7 Oct 2026):** c140=f.68, c148=f.72, c150=f.73, c156=f.77, c158=f.78, c180=f.90, c186=f.93, c266=f.137, c384=f.207, c386=f.208, c388=f.209, c392=f.211, c394=f.212, c396=f.213, c422=f.226. Two canvases per folio, with stubs and folded sheets shifting by a canvas or two. Canvases looked at (low-res, 450-600 px, plus two crops at 1500 px): 24 corner crops, 17 full pages.
+
+**Per-leaf look (class: a = copy of a glossed letter, b = cipher with a contemporary decipherment on the leaf, c = cipher with none found, d = clear/other).** Signs are an estimate from lines x signs per line, not a count.
+
+| leaf (canvas) | what the look showed | class | est. cipher signs |
+|---|---|---|---|
+| f.84 (c168) | address leaf with signature "...la Royne mere du Roy", no cipher seen | d | 0 |
+| f.85 (c170) | clear body text | d | 0 |
+| f.86 (c172) | letter with 3 cipher lines at the top (letter forms and symbols, Cipher-1 look) and a line-by-line contemporary marginal decipherment in the left margin ("tesmoignage / ny eust / quelque maniere / il faudroit / quil n'eust point / charge de negocier / Rien qui soit / si mon el / Rendre tesmoignage...") | b | about 165 glossed |
+| f.87 (c174) | address leaf, signature; left margin carries rotated cipher-looking lines with digit groups next to clear text; not read | unresolved | unmeasured |
+| f.132-133 (c256-c258) | c256 folded verso with cipher spill; c258 full cipher page, about 33 lines | c (provisional) | about 1,200 |
+| f.135 (c262) | cipher continues at top edge of the sheet above a blank verso | c (provisional) | not counted |
+| f.136 (c264) | full cipher page, about 33 lines, "Madame" opening of the next leaf visible at right | c (provisional) | about 1,200 |
+| f.137 (c266) | blank verso | d | 0 |
+| f.138 (c268) | full cipher page, about 30 lines, no marginal gloss on the page | c (provisional) | about 1,050 |
+| f.139 (c270) | clear page; first lines are a Varsovie dateline "... 1573", then text about "l'Admiral", "Bellievre", "conspiration"; position straight after the cipher pages suggests the clear version of one of them, NOT compared line by line | a? (unverified) | 0 |
+| f.140 (c272) | clear letter "Madame, nous sommes..." | d | 0 |
+| f.209 (c388) | clear letter to the king; July 1573 | d | 0 |
+| f.210 (c390) | one cipher paragraph (11 lines, Cipher-2 look), signed Monluc, dated 20 July 1573; no gloss seen on the page | c (provisional) | about 500 |
+
+Counts: (b) 1 letter (about 165 glossed signs); (c) provisional 4 pages (ff.133, 136, 138, 210; about 3,950 signs by the look), each possibly decipherable from f.139 or ff.211-223 if those are in-volume decipherments (not compared); (a) 1 unverified; (d) clear leaves otherwise. Not looked at: ff.50, 56, 60, 80 (the "Déchiffrement" items), f.166, ff.211-223, f.139 against f.138, f.87 margin.
+
+**Marginal-decipherment check (premise (c), neighbours).** Present on f.86 only (b). The aid's "avec chiffre et déchiffrement" for items 53-55 and 85-92 therefore does not mean a per-line gloss on the cipher pages themselves; the decipherment, if any, is on a separate leaf (f.139 candidate for 53-55; ff.211-223 for 85-92, unlooked). Until f.139 and ff.211-223 are compared the Monluc residue is **between about 500 and about 3,950 signs, not settled.**
+
+**Noailles 1867 (print), by date, OCR of vols II and III on IA (`henridevaloisetl02noai`, `03noaiuoft`, 7 Oct 2026, whole-volume grep).** Monluc letters printed with their dates: 12 Nov 1572 (to Brulart and to the queen mother), 20 Nov 1572, 20 Jan 1573, 31 Mar 1573 ("De Conin"), the "Avis de Varsovie du IX avril 1573", all in clear. No letter of Monluc's dated 5 Feb 1573, 28 Apr 1573, 2 May 1573 or Jun-Jul 1573 found (searches: "5 fév", "28 avr", "2 mai 1573", "juin 1573", "juillet 1573"; the only 28/29 Apr hit is Vulcob's letter from Vienna, 29 Apr). No "Suivent ... lignes en chiffres" for Monluc. A search result, conditional on OCR quality and on the aid's dates matching the printed ones; vol. I and the 1572 letters were not re-searched.
+
+## Web and blog check (NC-MONL2, 7 Oct 2026)
+Site searches by plain GET: cryptiana.blogspot.com `?q=Monluc`, `?q=Lansac`, `?q=Montluc` -- "No posts matching the query" for all three; ciphermysteries.com `?s=Monluc` -- "Nothing Found"; `?s=Montluc` -- one unrelated hit (Kingsley, Rondelet, 1874); scienceblogs.de/klausis-krypto-kolumne (Cipherbrain) `?s=Monluc`, `?s=Montluc`, `?s=Poland 1573` -- no results. No post, so no comment thread to open. Google Books API (key, country=US): four queries; the two Monluc+chiffre+Pologne queries returned 0 items, "Noailles Henri de Valois et la Pologne Monluc chiffre" returned 50 items led by Noailles 1878-scan "Henri de Valois et la Pologne en 1572" (ALL_PAGES) whose snippets quote prose, no editor's note on a deciphered cipher. Requests this pass: BnF archivesetmanuscrits 4, Gallica SRU 1 + IIIF about 40 (1.6 s apart), IA 2 (djvu), cryptiana.web.fc2.com 2 (key PNGs), blogs 8, googleapis 4. Tomokiyo is credited for the key images (henryiii.htm: "my transcription may not be accurate").
+
+## Verdict (NC-MONL2)
+Status stays `partial`. The Lanssac half is Bourdeau's (above). The Monluc half has at least one cipher letter with a contemporary decipherment on the leaf (f.86, about 165 signs: known-answer material) and about 3,950 estimated signs on four full cipher pages with no gloss on the page; whether f.139 and ff.211-223 are in-volume decipherments of them is the one thing that sets the residue between about 500 and about 3,950 signs. The residue is therefore at or above the brief's 1,500-sign / 2-letter line only on the upper bound; the intake gate exits 0 and `specs/fr4735-monluc-lansac-poland-1573.json` is written with that caveat in its constraints. No test run.
+
+## Remaining gaps (NC-MONL2, 7 Oct 2026)
+Read so far: unmeasured, no Monluc cipher token read; one leaf (f.86, about 165 signs) carries a marginal gloss and about 3,950 signs sit on four pages with no gloss on the page.
+- f.139 against ff.136/138 (is it the clear decipherment?) - blocker: not-attempted; one side-by-side image look is untried, no transcription needed; next: crop c268 and c270 with tools/iiif_lines.py and compare the first 5 lines by eye, ~$1
+- ff.211-223 (June-July 1573 items 85-92, with f.210 cipher) - blocker: not-attempted; c392-c420 were never looked at beyond corner crops; next: look at c392-c420 for a clear decipherment page, ~$1.5
+- Monluc Cipher 1 key as a table - blocker: not-attempted; the key image is on disk but untranscribed; next: transcribe henryiii_Monluc1.png into key.tsv (Tomokiyo's table, credited), ~$1
+- f.87 margin and ff.50, 56, 60, 80 (earlier cipher items) - blocker: not-attempted; those leaves were not looked at in this pass; next: one look each at c174 margin and the four canvases, ~$1.5
+- transcription of any cipher page - blocker: not-attempted; no crops cut yet and the residue size is unsettled; next: tools/iiif_lines.py crops of c268 then the two-pass standard (TRANSCRIPTION.md), ~$6
+
+## Escalation (NC-MONL2, 7 Oct 2026)
+- [x] siblings: clear sibling letters ff.131, 140, 209 looked at; f.139 candidate decipherment flagged, not compared
+- [ ] clear-pages: f.139 and ff.211-223 compared to the cipher pages; planned step in the first two gaps above
+- [ ] known-keys: Tomokiyo's Monluc Cipher 1 and 2 tables fetched (henryiii_Monluc1.png, henryiii_Monluc2.png) but not yet applied; planned step: spec test 1
+- [x] print: Noailles vols II-III by date and Google Books, 7 Oct 2026, no Monluc cipher decipherment found
+- [n/a] key-rebuild: a published key exists so no rebuild is needed first
+- [ ] image-check: only low-res looks; planned step: crops of c268 and c270 at native size
+- [n/a] retry: nothing attempted that failed, so no retry applies
+Verdict: keep going: 5 internal gaps; cheapest next: compare f.139 with f.138 by eye, ~$1
+
+## Intake gate (NC-MONL2)
+See the command output pasted by the worker in the done line; the gate was re-run after this section was written.
