@@ -36,3 +36,10 @@ Grade rule (carried from PREREG-D07NEVF25, fixed now): f.27r is "Evesque"'s hand
 `4 57 9` parse of f.35r L05 admissible as practice; it does not by itself move tokens 45 or 79 from M (the f.35r image shows even
 spacing; a grade move needs same-writer material read at H). So the re-judge of f.35r token 79 under this rule leaves 45/79 M
 whatever the outcome; `decode_f35.py --check` is run to show nothing moved. The rest of f.27r is not transcribed here (~$30 job).
+
+Deviation, recorded 10:2x UTC before any pass read: the locating look (one 0.5x strip of region y 600-800, then the debug crop) shows the
+decipherer's gloss for L09 written BELOW the figure line, between L09 and L10 (the clear word under `48 67 76` sits there), not above it;
+the words above L09 belong to L08's gloss. Crop (pasted): `python3 tools/iiif_lines.py --image <src_..._f67_560_1000_3150_1100.jpg>
+--region 0,680,3150,175 --out <scratch>/g --prefix f27g --centres 87 --top-margin 87 --bottom-margin 88 --max-width 1700 --debug` ->
+2 segments 1700x175 (overlap 150), each holding the L08 gloss line, L09 figures, the L09 gloss line, and the top of L10's figures.
+S, K and Z are computed on the gloss line BELOW L09 (the band between L09 and L10); the gloss above is transcribed and reported only.
