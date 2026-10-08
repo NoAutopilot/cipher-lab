@@ -1,0 +1,13 @@
+# SUR-IJ blind Opus reader (one call, 8 Oct 2026 19:51 UTC); references R1 key N-row dotted y, R2 key M-row first sign, R3 key K-row b
+# reader: R1 and R2 same sign = unclear
+tile	id	class	match	marks_above	conf	note	scored
+Q1	t746L10	target	none	dots:1	0.45	hook plus long descender, like R1's body, but one dot only	not matched
+Q2	cY2	known-diff	none	unclear	0.3	looped d-like stroke then separate small upright tick	control ok
+Q3	cY1	known-diff	none	none	0.5	R1-like hook plus long descender, no dots above	control ok
+Q4	cC	known-diff	R3	none	0.35	u-shape at left, small looped bowl at right edge	control ok
+Q5	t758L05	target	none	dots:1	0.45	hook plus long descender like R1's body, single dot	not matched
+Q6	t746L13	target	R2	dots:2	0.5	small bowl with descender, two dots above, like R2	below 0.6
+Q7	t758L03	target	R1	dots:2	0.45	two heavy dots over thin double diagonal strokes	below 0.6
+Q8	cSame	known-same	R1	dots:2	0.95	looks like the same image as R1, rescaled; same dots	control ok
+# gate: known-same R1 0.95 PASS; known-diff 3/3 not R1/R2 PASS -> gate PASS
+# targets matched at R1|R2, conf>=0.6, dots: 0/4 (descriptive: 2/4 at R1|R2 below 0.6; 2/4 'none' with dots:1) -> outcome B

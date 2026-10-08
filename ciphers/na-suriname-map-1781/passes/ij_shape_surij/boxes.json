@@ -1,0 +1,58 @@
+{
+ "t758L03": [
+  "target",
+  "c758/p0758R_L03.jpg",
+  1030,
+  1065,
+  "0758 R L03 e i j, dotted ij"
+ ],
+ "t758L05": [
+  "target",
+  "c758/p0758R_L05.jpg",
+  925,
+  965,
+  "0758 R L05 [delta] i j r, dotted ij"
+ ],
+ "t746L10": [
+  "target",
+  "c746/p0746L_L10.jpg",
+  535,
+  580,
+  "0746 L L10 b 7 y, Y26 IJ"
+ ],
+ "t746L13": [
+  "target",
+  "c746/p0746L_L13.jpg",
+  1318,
+  1352,
+  "0746 L L13 [y-fam] j, Y36 IJ"
+ ],
+ "cSame": [
+  "known-same",
+  "KEY",
+  0,
+  0,
+  "key 0003 left N-row dotted y, box shifted 12 px, x1.25"
+ ],
+ "cY1": [
+  "known-diff",
+  "c746/p0746L_L10.jpg",
+  660,
+  690,
+  "0746 L L10 undotted y (c [delta] y r)"
+ ],
+ "cY2": [
+  "known-diff",
+  "c746/p0746L_L10.jpg",
+  1345,
+  1385,
+  "0746 L L10 undotted y (r 3 y,)"
+ ],
+ "cC": [
+  "known-diff",
+  "c746/p0746L_L10.jpg",
+  700,
+  730,
+  "0746 L L10 plain r-form after the y, no dots"
+ ]
+}

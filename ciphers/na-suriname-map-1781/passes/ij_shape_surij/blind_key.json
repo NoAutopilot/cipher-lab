@@ -1,0 +1,42 @@
+{
+ "Q1": {
+  "id": "t746L10",
+  "class": "target",
+  "what": "0746 L L10 b 7 y, Y26 IJ"
+ },
+ "Q2": {
+  "id": "cY2",
+  "class": "known-diff",
+  "what": "0746 L L10 undotted y (r 3 y,)"
+ },
+ "Q3": {
+  "id": "cY1",
+  "class": "known-diff",
+  "what": "0746 L L10 undotted y (c [delta] y r)"
+ },
+ "Q4": {
+  "id": "cC",
+  "class": "known-diff",
+  "what": "0746 L L10 plain r-form after the y, no dots"
+ },
+ "Q5": {
+  "id": "t758L05",
+  "class": "target",
+  "what": "0758 R L05 [delta] i j r, dotted ij"
+ },
+ "Q6": {
+  "id": "t746L13",
+  "class": "target",
+  "what": "0746 L L13 [y-fam] j, Y36 IJ"
+ },
+ "Q7": {
+  "id": "t758L03",
+  "class": "target",
+  "what": "0758 R L03 e i j, dotted ij"
+ },
+ "Q8": {
+  "id": "cSame",
+  "class": "known-same",
+  "what": "key 0003 left N-row dotted y, box shifted 12 px, x1.25"
+ }
+}
