@@ -1511,3 +1511,99 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - ciphers/lodewijk-van-nassau-1573-74 letters 4610/4611/4612/4616 (Nassau-Orange chancery 1573-74 table, 1574 key per J5S) [same-key; read] -- apply Lodewijk 4613/4615 table to the remaining unprinted stretch of 5549 p4-p5 (already clear in print) as external check; low yield; ~$1; p 0.04; evidence: NOTES.md:2-12 (key_1572 vs 1574 table); KEY-OFFICES.tsv
 - WVO 5207 (23 May 1574), 5213 (26 Nov 1574), 5221 (30 Jul 1575) to Jan [same-recipient; not-in-repo] -- none: plaintext printed in Groen (N1) yields ~0; p 0.02; evidence: NOTES.md:2,4,28-31
 - WVO 5200 p2 (rest of 18 Oct 1572 letter after p1 N1) [same-volume; read] -- none: printed in Groen; yields ~0; p 0.02; evidence: AUDIT.md:15-19 (p1 N1, Groen IV CCCLXXXIX)
+
+## D3-5551: WVO 5551 under key_full, three clear-token re-reads (8 Oct 2026, account 4, LANE DEPTH)
+
+Worker D3-5551 (Opus), brief `.claude/briefs/runs/2026-10-08-acct4-depth-wave1.md` "## D3-5551", 18:44-19:0x UTC by date -u.
+Intake gate: `jan-van-nassau-1572-75: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+Prior work: `tools/prior_work.py jan-van-nassau-1572-75 --item-spec 'shelfmark=WVO 5551;folio=p3;date=1574-04-17;...' --step-type decode`
+exit 4 (LOOK 1, UNCHECKED 4, UNCHECKED-NET 1, no specific hold); each row answered CLEAR in `prior-work.tsv` from the 25 Sept
+check-solved and the two audits (V-TX, V-TX2) plus this pass's look at pp.1-4 (no gloss or clear copy of the cipher lines).
+
+### 1. key_full decode
+
+Current job: `decode_key.py ... --config decode_5551.json --check` -> `tokens 32: C 23, I 2, M 1, U 6`, reading up to date.
+New job `decode_5551_full.json` (same ciphertext, key `../lodewijk-van-nassau-1573-74/key_full.tsv`, read-only) ->
+`reading_5551_full.txt` / `_tokens.tsv`, `--check` "reading up to date": **`tokens 32: C 26, I 2, M 1, U 3`**. Checked the
+lane's fact: key_full grades 126, 127, 137 NULL at C (names.tsv: empty in 8/8, 31/31, 8/8 aligned observations, AX-NAMES2
+class b); 140, 145, 146 are in neither key.tsv nor key_full.tsv. Confirmed.
+
+```
+L1  d e r [NULL] k o n i g uingt VAN p o l e n [145] WILL ? ?
+L2  o f f e n t l i VFF i [146] [NULL] e s [140] ? [NULL] [NULL] ?    (nulls shown here; the txt omits them)
+```
+
+Recount (nulls out of the denominator): 4 nulls (121, 127, 137, 126, all C); 28 letter-valued tokens: C 22, I 2 (106 k, 89 f),
+M 1 (136), U 3 (145, 146, 140). H/C/S share 22/28 = **78.6%** (with nulls counted as decode_key.py prints them: 26/32 = 81.3%;
+the board's 71.9% was 23/32 under key.tsv).
+
+### 2. Re-reads of the clear `?` tokens (two blind Sonnet passes on crops + reconciliation)
+
+Crops cut from p3 re-rendered at 300 dpi (one fetch of `resources.huygens.knaw.nl/media/wvo/images/05000-05999/05551.pdf`,
+pymupdf, page index 2, 2481x3508), scratch only (this folder's images/ is at 29 MB of 30): line 1 box (530,190,2300,300),
+line 2 (530,280,2300,410), details (1820,150,2290,300), (1080,280,1520,410), (1700,280,2040,410), (2000,280,2300,410).
+Pass A and pass B saw only the crops. Readers: A, B, and this worker (W); the 25 Sept pair (TX-WV5551D and its subagent) in brackets.
+
+| token | A | B | W | 25 Sept | reconciled |
+|---|---|---|---|---|---|
+| L1-19 (after WILL) | "ſo" | "her"/"Ihr" (low) | "jhro" | jhro / zu | split; a short word, "jhro"/"Ihr" 2 of 4 readers |
+| L1-20 (line end) | "ſchrif[?]"/"ſchriſt" | "ſchl"/"ſich" (low) | "ſich" | torn | split; long-s + h-loop word, **not cut**: A and B both see the final stroke end before the edge |
+| L2-16 (after 140) | "Lerm"/"Lerin" | "Herrn" (med) | "leren"/"beren" | beren / Perm | split; 5-6 letters ending -rn/-ren |
+| L2-19 (line end) | "Gun"/"Guin" | "wun"/"wie" (low) | "wie"/"wü" | torn | split; runs into the dark margin, likely cut |
+
+None of these is a numeral: each stays a clear token, so the brief's "a read sign that maps to a key_full value is C;
+otherwise U" changes no count (no re-read sign is a cipher code). The tsv's `=?` tokens are left as they are.
+
+**Transcription finding (not applied, rule 1):** all three readers this pass see a **long-s written against 104** (A "ſ104",
+B "ſio4", W "ſ104") and a further small glyph **between 104 and 146** (A "ſ[?]h[?]", B "ꝛ", W "ch"); `ciphertext_5551.tsv`
+has neither. With W's reading of the glyph after 103 ("vff" in the tsv) and after 104 as Kurrent "ch", L2 opens
+"offentli(ch) ſ[104=i](ch)" = "offentlich sich": cipher letters inside clear words. A and B read those two glyphs as
+"rſ"/"ꝛſ" and "ſh"/"ꝛ", so "ch" is this worker's reading only (1 of 3): proposed, not committed. The numerals themselves are
+unchanged: 31 of 32 agree across all four readers; pass A alone reads **140 as 110** (B, W and both 25 Sept readers: 140;
+the middle digit is the hand's short looped 4, cf. 29 and 84 on the same line). Kept 140.
+
+### 3. Codes 140, 145, 146 against the sibling keys (rule 4 conflict paragraph)
+
+5551 is Jan to Willem, Cologne, 17 Apr 1574 (incoming to Willem, the direction of key_full's list A, 4613/4615).
+
+| code | witnesses | direction/date | ruling |
+|---|---|---|---|
+| 140 | names.tsv NULL C 2/2 (5810, Willem to Lodewijk, 6 Jan 1574); key_7205 NULL H 6 of 9 empty, b x3 (Willem to Lodewijk, 16 Jan 1574); key_5801 s M (7 of 51); key_7206 'franoy' M x1; GAPS33 letter calls y, t in 5811 (Willem to Lodewijk, 13 Apr 1574), conflict logged in the Lodewijk HYPOTHESES.md | every C/H witness is Willem outgoing (list B); none Jan to Willem | **U** stays (no C/H value with matching direction; below key_full's >=4 gate) |
+| 145 | key_5801 a M (3 of 13); GAPS28 NULL "licensed" but GAPS33/39 contradict the band calls, nothing applied | no C/H anywhere | **U** |
+| 146 | key_5801 c M x1; key_7206 d M x1 | no C/H anywhere | **U** |
+| 136 (M, not asked) | key_full 'uingt' M (4613, French); names.tsv **NULL C 8/8** (5810); key_7206 e M; key_5801 a M | conflict between list A (4613) and list B (5810) | **M** stays; read as a null, L1 is "der konig van polen", the sense both 25 Sept readers missed with 'uingt' -- logged, not applied |
+
+key_4614 carries none of 136/140/145/146.
+
+### 4. Depth statistics and residue
+
+`tools/depth_stats.py` (PREREG `depth5551/PREREG.md`, corpus de1600, 100 class shuffles): longest primary H/C/S run 6 letters
+("entlii", broken by I-graded 89), secondary 8; AD 87.7 letters (55.1 at R=3.4; H(K) 124.8 bits = 110 design + 14.8 liberties);
+**cipher clause false**; control (i) word-segmentable stretch 12 vs shuffle p95 21, fail. No code value reads in two contexts in
+this item (every code occurs once), so the **code clause is not met either**. The whole item is 32 codes, so no stretch in it can
+reach AD under the 8 Oct depth bar. **Flag for the lane:** under `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md` read
+literally, this item's evidence supports D1, not the D2 the board carries (4 Oct DEPTH-REGRADE). AUDIT.md depth lines not
+touched (brief); a depth verifier rules.
+
+Residue (U 3 + M 1 + I 2 of 28 letter tokens): 140, 145, 146 are in the band 121-151 where key_full's other rows are nulls or
+name codes; none is a name code by any witness (values offered are single letters or a null). So the residue is letter/null
+codes, not names; 136 is a null-or-'vingt' conflict; 106 and 89 are table-rule letters (I) that fit their words (konig, offentli).
+
+### Remaining gaps
+
+- [ ] 140/145/146 values: need a list-A (incoming to Willem) witness with these codes; next: align 4613/4615-circle siblings
+  carrying them, or the Marburg copy (HStAM, MAIL-3); blocker: waiting-on ASKS row 48 thread for the Marburg reply.
+- [ ] The two glyphs around 104 (ſ, ch?): a third blind pass told only "Kurrent ch and long-s occur next to numerals" to settle
+  whether L2 reads "offentlich sich"; next: ~$0.8, one pass.
+- [ ] 136 null vs 'vingt': conflict between list A and list B, logged; settles only with another list-A occurrence.
+- [retired] line-end words beyond the edge: L2-19 cut by the leaf (illegible/physical).
+
+### Escalation
+
+1. Siblings: done in effect (key_full is the sibling-pooled key; 5810/5811/7205/7206/5801 values checked above).
+2. Known keys: key.tsv, key_full.tsv, key_4614/5801/7205/7206 checked; nothing C/H for the three codes.
+3. Image check: done this pass (300 dpi, three readers).
+Verdict: keep going (one cheap pass on the 104 glyphs; the codes wait on new list-A material).
+
+Requests: resources.huygens.knaw.nl 1 (the PDF). Subagents: 2 Sonnet blind passes. Report what was found and where it was not
+found; novelty not classified.
