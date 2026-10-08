@@ -95,3 +95,49 @@ Outward depth wording: D1, "fragments read". Class without a reading -- not coun
 
 Requests this audit: cryptiana.web.fc2.com 1; www.googleapis.com 22 (7 answered 503; those queries not retried); archive.org 2
 (djvu.txt) + be-api 5; gallica.bnf.fr 1 (SRU); api.openalex.org 4. Vision calls 0.
+
+## AUDIT 2 (second adversarial, V1-F4712)
+
+Verifier V1-F4712 (account 3, Opus, session_012yTB3tLbwovJXT9yadjBGT, for LANE-VERIFY-1), 8 Oct 2026, 16:10-16:3x UTC by date -u.
+A separate session from the solver (D2-F4712), the first auditor (D2V-F4712) and every earlier worker on this folder. No decoding
+done here; no key applied to f.10r. Claim under audit: AUDIT 1's safe sentence for item A (six tokens at C, N3, D1).
+
+### Prior-work checks 3-5 (`tools/prior_work.py` does not exist; checks run by hand)
+
+| check | route | query / what was read | result |
+|---|---|---|---|
+| 1 own work | repo grep (NOTES, AUDIT, HYPOTHESES, ROOM, status.json, WORK-QUEUE) | "fr4712", "4712", "f.35", "Lasry", "no.71" | folder work as AUDIT 1 lists; no status.json row for this target; **no session ever considered the two other ciphers of the same volume** (f.7 = Nevers collection key no.71; f.35 = 1592, solved by Lasry 2022) |
+| 2 leaf / neighbours | disk only (Gallica 403 to the cloud on 8 Oct; no probe spent) | `images/src_ark_..._f18_4100_2750_3300_560.jpg` (cipher lines of f.10r) | the crop shows the three cipher lines and the clear text around them, no gloss, no date line; **the day of October 1592 is still not settled from disk** (no crop of the date line exists) |
+| 3 Tomokiyo cache | `sources/cryptiana/web/nevers.htm`, `GL.htm`, `unsolved*.htm`, `READABLE.tsv`, `blog/` | "4712" | nevers.htm: f.10 "undeciphered" (unchanged); f.13 "25 appears to read Paris"; **f.35 (1592, "Monsieur Pasquier ... des finances") "In 2022, George Lasry solved this"**; GL.htm prints Lasry's key image (30/05/2022) |
+| 3a Lasry's f.35 key (cryptiana.web.fc2.com, 2 requests: `GL/GL_BnFfr4712_f35.png`, `..._decipher.png`, viewed, not committed) | form only, not applied | the key is a one-symbol-per-letter substitution (A-X with homophones, doubled letters FF LL MM NN RR, ~15 nulls, "DE?", "LE/SS", "LETTRE?"), no two-digit code numbers | **design mismatch with f.10r** (two-digit numbers 8-95 plus two signs), so f.35's key is not a candidate for f.10r and Lasry's solve is not a prior decipherment of f.10r. Checked by form, not by trial |
+| 3b f.7 / key no.71 | nevers.htm text ("Figures with an overbar are used to represent names and words (in French). Used in an unsigned letter in BnF fr.4712, f.7"); Cabinet Noir holds the no.71 key (NV-INTAKE) | -- | **unchecked as a key for f.10r**: same volume, two-digit figures for names and words, never applied or ruled out by any session (the folder's known-keys line covers nos.1 and 4 only). A lead for a solver, not a verifier's step; it does not change item A's class (no prior decipherment of f.10r exists either way) |
+| 3c solver repos, DECODE | by NV-INTAKE 3 Oct (not repeated) | -- | nothing for f.10 |
+| 4 edition / calendar | Google Books API (key, `country=US`), 19 queries, 1 answered 503 and was retried once (answered) | Nevers to the duchess 1592; "duc de Nevers" "à sa femme" 1592; "lettres du duc de Nevers" duchesse 1592; "fr. 4712" + f° 10 / fol. 10 / f° 13 / fol. 13; "Français 4712"; "ms. fr. 4712"; Boltanski "ducs de Nevers" "4712" | catalogues; Henri IV *Lettres missives* (Berger de Xivrey) to Nevers, Jan 1592 (not October, not to the duchess); Boltanski 2006 cites fr.4712 f°7 only; Hamilton 2024 f°100; *Practiques et practiqueurs* (2002) f°36; Gondi 1953 f°4; Champion (1942/43) the Henri III "pensées". **No snippet cites f°10 or f°13 or prints a passage of a Nevers letter to the duchess of October 1592.** Positive control: the catalogue's own fr.4712 entry is returned for "Français 4712" Nevers duchesse (found) |
+| 5 G3 -- phrase context of the six tokens | Google Books (same pass) | "octobre 1592" Nevers "Berry"; "octobre 1592" "duc de Nevers" "duchesse"; Nevers 1592 "Berry" "La Châtre" octobre; "Henriette de Clèves" 1592 Berry; "transfert de la monnaie de Bourges à Nevers"; "Nevers" "Bourges" "octobre 1592" "bureau des finances"; Nevers 1592 "baron de" "Berry" chiffre lettre duchesse | **context, not prior text:** royal letters of **9 October 1592** moved Bourges's bureau des finances, élection and mint (the Berry institutions) to Sancerre, Issoudun and **Nevers** (*Mémoires de la Société historique du Cher* 1868; *Bulletin de la Société nivernaise* 1869/1896 print the lettres patentes "pour le transfert de la monnaie de Bourges à Nevers"). Same month as f.10 ("i octobre 1592", BnF 1895) and it shares "Berry" with a carried gloss; but "Nevers" is the sender, so it is one rare entity, not two, and the day of f.10 is unsettled -- not SUBSTANCE by the ±3-day two-entity rule. It prints royal letters, not Nevers's letter to his wife; nothing to diff. Logged as a reading lead (what f.10's "Berry" may concern), not as prior plaintext |
+| 5 G3 -- other families | IA advancedsearch 3, be-api fts 3 (1 answered 502, 1 answered 503, not retried); OpenAlex (key) 4; Semantic Scholar (key) 3 (2 answered 429, not retried); HAL API 3; Persée site search 2 | "duchesse de Nevers" 1592 chiffre; "fr. 4712" Nevers; "ms. fr. 4712"; "monnaie de Bourges" Nevers 1592; Louis de Gonzague lettres chiffrées duchesse; Henriette de Clèves correspondance; Nevers cipher letter duchess 1592 | IA: 0 metadata hits; fts hits are numismatic catalogues on the 1592 mint transfer. OpenAlex: nothing on this letter. S2: only Desenclos & Lasry, "An early French digit cipher: deciphering a letter from the King of France to the Duke of Nevers (1592)" -- a Henri IV letter, already logged by NV-INTAKE, not this one. HAL 0. Persée: an OR search, no article on fr.4712 or this letter |
+| unreachable / not run | Gallica (403 to the cloud 8 Oct; images from disk only); JSTOR (cloud-blocked; no row queued: no clause to phrase-search, a 6-token lookup); Boltanski 2006 full text (snippet view only, its index for "4712" returns f°7 alone); CORE (no key here) | -- | -- |
+
+### Classification (second audit)
+
+| item | prior plaintext | prior decipherment | N | depth | change |
+|---|---|---|---|---|---|
+| A. f.10r six tokens from the f.13r gloss | none located | none located; the only modern solve in the volume (Lasry 2022, f.35) is a different cipher design | **N3** (kept) | **D1** (kept) | none. Not raised to N4: Boltanski 2006 still not read in full, key no.71 on f.10r neither tried nor excluded, and the f.10 date is not settled |
+| B. f.13r gloss table | on the leaf | period | N0 | n/a | none |
+
+Key source: item A `period` (unchanged). Safe sentence: AUDIT 1's, with "two audits" in place of "one audit". Unsafe: as AUDIT 1.
+Depth stays D1 (16% at C, no clause; depth-bar file not consulted for a raise, none was attempted).
+
+### Postmortem and corrections
+
+- **Gap found (premise check, not an over-claim):** NV-INTAKE's premise check (c) named f.7 (no.71) as a neighbour, and nevers.htm
+  says Lasry solved f.35 of the same volume in 2022, but no session logged either as a known-key check for f.10r. f.35's key is
+  ruled out here by form (letter substitution, not a two-digit code); no.71 is left as an untried known key -- added to NOTES.md
+  "Escalation" as a [ ] line for the lane orchestrator, not run (do not decode).
+- AUDIT 1's statements all held on re-search; the date correction ("i octobre 1592") stands, day still unread.
+- SO-F4712-F10 (SECOND-OPINIONS-QUEUE.tsv row 84) left as queued: the class did not move.
+- No status.json row exists for this target; none written (AUDIT 1's reasoning: a six-token crib lookup; the lane orchestrator's
+  call).
+
+Requests this audit: cryptiana.web.fc2.com 4 (2 http->302, 2 https 200); www.googleapis.com 20 (1 answered 503, retried once);
+archive.org 3 + be-api 3 (one 502, one 503); api.openalex.org 4; api.semanticscholar.org 3 (two 429); api.archives-ouvertes.fr 3;
+www.persee.fr 2; gallica.bnf.fr 0. Vision calls 3 (two Cryptiana key images, one f.10r crop from disk).

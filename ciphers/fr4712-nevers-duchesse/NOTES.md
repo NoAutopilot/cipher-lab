@@ -424,3 +424,13 @@ days before the ASKS 113 answer) and reproduce (`f13_carry.py --check` OK); gate
 source period. Correction: the BnF 1895 catalogue dates f.10 "i octobre 1592", monogram signature (note under the title). No
 reading changed. SO-F4712-F10 queued. Next for audit 2: Boltanski (2006) on fr.4712 f°10-13, Semantic Scholar/Persée/HAL, one crop of
 the f.10 date line.
+
+## V1-F4712 AUDIT 2 (second adversarial verifier, account 3, 8 Oct 2026)
+AUDIT.md "## AUDIT 2 (second adversarial, V1-F4712)": item A stays **N3, D1**; G3 run (19 Google Books queries on the six tokens'
+context, plus IA, OpenAlex, S2, HAL, Persée). No prior decipherment of f.10r located. Context lead only: royal letters of
+9 Oct 1592 moved Bourges's (Berry's) finance bureau and mint to Nevers -- same month as f.10, not a printed version of it.
+Known-key gap: f.35 of this volume (1592) was solved by G. Lasry in 2022 (Tomokiyo GL.htm), but its key is a one-symbol letter
+substitution, not a two-digit code -- ruled out by form. Key no.71 (f.7 of this volume, figures for names and words) was never
+tried on f.10r.
+- [ ] known-keys (added by V1-F4712): key no.71 (fr.3995 Nevers collection; f.7 of this volume, Cabinet Noir's key) on f.10r's 37 numbers,
+  with a matched control; ~$2. f.35 (Lasry 2022) ruled out by design.
