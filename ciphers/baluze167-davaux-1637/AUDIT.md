@@ -157,3 +157,83 @@ key's. The safe sentence stands as AUD1 wrote it, with "BnF catalogue, Acta Paci
 Semantic Scholar" added to the list of sources searched. Unsafe: anything stronger than N3 wording (rule 10).
 Requests: googleapis.com 9, api.semanticscholar.org 8 (2 x 429), archivesetmanuscrits.bnf.fr 2, apw.digitale-sammlungen.de 7 (browser),
 archive.org 2, grotius.huygens.knaw.nl 8, github.com 2 clones; all one at a time, >= 1.5 s apart except S2 (1.2-3 s).
+
+## AUDIT 3 (AUD-SIG-CHAV), 8 Oct 2026, 23:39-23:5x UTC by date -u
+
+Verifier: AUD-SIG-CHAV (account 3, Opus), for LANE-VERIFY-4 (account 3), brief `.claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md`
+-> `.claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md` "## AUD-SIG-CHAV", step type `new-family-audit`. Account 3 did not read,
+re-derive or first-audit this item (reader D4-B167 acct 4, AUD1-B167 acct 2, AUD2-B167 acct 1). f.228 (SIG-B228/B228B) is not
+this audit's item. Task: the two families both audits left open -- (a) the AAE Correspondance politique and printed French selections,
+(b) the Hessian side -- and the class may stay, rise or fall. No decoding. Files: `audsigchav/search-log.tsv`, `audsigchav/excerpts.txt`,
+`audsigchav/prior_work_*.txt`, raw API answers `audsigchav/*.json`.
+
+### Prior-work checks 3-5
+
+- `tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=229r;date=1640-08-25;sender=Chavigny;recipient=Avaux;...' --step-type new-family-audit --fetch`: exit 4; 16 LEAD rows, all our own earlier reads and audits of this folder (D4-B167, D1-BAL170, AUD1/AUD2, the live claim), "new-family-audit is never DONE"; Tomokiyo CONTEXT (f.229 not quoted); solver caches CLEAR; editions UNCHECKED-NET (no prior_editions.tsv row). Nothing outside our own work.
+- G3, same with `--reading reading_b170f229.txt --network`: exit 4; IA global CLEAR, Google Books not searched (HTTP 429). The tool's
+  auto phrases were weak (it took the header line); AUD1's eight decoded phrases had already run on IA and Google Books, so G3 here
+  was spent on the families the brief names (below): recipient side (d'Avaux's papers via Bougeant), Hessian staff and court (Rommel,
+  Eberstein family history), the same autumn's royal letter to Eberstein (Caillet 1912), and the press of the day (Gazette 1640 --
+  unreachable).
+
+### 1. Search log (8 Oct 2026; full log `audsigchav/search-log.tsv`)
+
+| family | searched | result |
+|---|---|---|
+| (b) Hessian: Rommel, *Geschichte von Hessen* VIII (1843) | IA 11749504bsb `_djvu.txt`, grep Eberstein, Melander, Chavigni, Bouthillier, Avaux, Longueville, Pension/Geschenk/gratif | pp. 588-590: Banér blamed Melander for the failed campaign; Amalie, "to sacrifice to unity with Sweden and France", gave the command to Kaspar von Eberstein as Generallieutenant (summer 1640). No French gratification, no Chavigny despatch |
+| (b) Hessian: *Geschichte der Freiherren von Eberstein* (1865) | IA geschichtederfr00ebergoog, grep | pp. 732-733: Melander quarrelled with Banér at Saalfeld, proposed Kaspar von Eberstein, who received the Generalat "Anfang Juli" 1640. No French reward |
+| (b) Hessian: *Amalie Elisabeth, Landgräfin von Hessen* (1812) | IA 10019860bsb, grep | Eberstein 0 |
+| (a)/(b) Caillet, documents of the Morin-Pons collection (Bibl. mun. de Lyon) on France and the Landgravine, *Correspondance historique et archéologique* 19 (1912), pp. 61-66 | found by IA global full text "comte d'Heberstein"; IA lacorrespondancehistorique19 | **prints Louis XIII to the comte d'Eberstein, Saint-Germain-en-Laye, 9 Nov 1640, countersigned Bouthillier**: glad the Landgravine has given him her armies' command, and has ordered La Boderie "de vous donner une marque du gré que je vous en sçauroy"; the closing spells him "d'Heberstein". Caillet's note sends the reader to AAE Allemagne t. XII and XIV. Not this despatch; see section 3 |
+| (a) d'Avaux's side: Bougeant, *Histoire des guerres et des négociations qui précédèrent le traité de Westphalie* II (1751, "composée sur les Mémoires du Comte d'Avaux") | IA histoiredesguerr002boug (be-api, then `_djvu.txt`); the 1727 4to and vol. III by be-api | Livre VI (1640): the d'Avaux-Salvius talks on renewing the Hamburg treaty, margins citing the King's despatches and Pufendorf; the Erfurt junction of Longueville and Guébriant with Banér, the Hessians and Lüneburg; France's interest "à s'attacher la Landgrave de Hesse & les Ducs de Lunebourg". No Chavigny despatch of 25 Aug 1640, no Longueville-command clause, no Eberstein gratification (Eberstein only at Kempen, 1642) |
+| (a) French print: Siri, *Memorie recondite* VIII; *Mercure françois* XXIII-XXIV | be-api "Eberstein" | 0 |
+| (a) AAE Correspondance politique 1640 (Allemagne, Hambourg, Suède) and its État numérique / inventories | IA advancedsearch | no inventory copy online on IA; the volumes (and the minute or duplicate of this despatch) unread, manuscript, not online here |
+| G3 press: *Gazette* 1640 | IA advancedsearch | no IA copy; Gallica 403 all day, not probed (brief) -- unreachable |
+| (e) Google Books | 6 queries + 2 after a pause (key, country=US) | 7 x HTTP 429, 1 x 200 / 0 items; stopped (good-citizen rule) -- unreachable this pass |
+| (g) JSTOR | JSTOR-QUEUE.tsv | two rows appended, families (i) and (ii) |
+
+Requests: archive.org 18 (advancedsearch 7, metadata 4, `_djvu.txt` download 7), be-api.us.archive.org 9 (plus the prior_work.py
+G3 run's own ia-global calls), www.googleapis.com 8 (7 x 429), all one at a time, >= 1.6 s apart. Gallica 0.
+
+### 2. Classification
+
+| item | prior plaintext | prior decipherment | class | key |
+|---|---|---|---|---|
+| Baluze 170 f.229r-v (Chavigny to d'Avaux, Amiens, 25 Aug 1640) | none located: not in Bougeant II (built on d'Avaux's own papers), Rommel VIII, the Eberstein history, Caillet 1912, Siri VIII, Mercure françois XXIII-XXIV, nor in the sources AUD1/AUD2 logged | none located | **N3 (stays)** | published (Tomokiyo) |
+
+Why it stays at N3 and does not reach N4: the printed families the brief names are now covered on both sides, but three things the
+N4 bar needs are still open. (1) The AAE volumes, which may hold a minute or a deciphered duplicate; Caillet names Allemagne XII and
+XIV for the Eberstein correspondence. A manuscript copy is "internal or unpublished work", but the published AAE inventory was not
+reached either. (2) The press of the day: the 1640 *Gazette* is only on Gallica, which answered 403 all day. (3) Google Books was
+unreachable this pass. JSTOR is queued and blocks nothing on its own. Why not N1/N2: no printed text of the passage, in cipher or in
+clear, was located, and nobody else's reading of these signs was found.
+
+### 3. External check and depth (keep or lower only)
+
+- **Caillet 1912 corroborates the gratification clause from outside the cipher.** The reading's last ciphered sentence, "ON gratiffiera
+  le comte d'Heberstein qui luy doit succeder affin de l'obliger a mieux faire que son predecesseur" (f.229v L12-15, letter signs M), is
+  matched eleven weeks later by the King's letter of 9 Nov 1640, countersigned Bouthillier. It sends La Boderie to give Eberstein "une
+  marque du gré" for serving the Landgravine, and it spells the name "d'Heberstein" as the reading does. Rommel VIII and the Eberstein
+  history independently confirm "qui luy doit succeder": Eberstein took Melander's command in July 1640, after Banér blamed Melander.
+  That also fits 73= = Banér (Bougeant's "Banier") in "la trop grande fermete de [73=]", AUD2's ruling; the value stays at the key's.
+  These are non-statistical checks of *content*. They supply no sign value, they do not turn an M letter sign into H/C/S, and they do
+  not change the 29%.
+- **Depth: D2 (stays)**, "partially deciphered (about 29%)" (106/366 H). The 80% H/C/S bar for D3 is not met; depth is keep-or-lower
+  only under the 8 Oct depth bar. The external check goes into the record so a later D3 ruling has it to hand.
+- **Verifier's sentence (D2), written from the reading and the print:** "Chavigny tells d'Avaux in cipher that the King will give a
+  gratification to the comte d'Heberstein, who succeeds [Melander] in command of the Landgravine's army, to bind him to do better than
+  his predecessor -- a promise carried out on 9 Nov 1640, when Louis XIII wrote to Eberstein that La Boderie would give him a mark of
+  his favour (printed by Caillet 1912)." Conditional on the M letter signs.
+
+### 4. Safe and unsafe sentences; corrections
+
+- **Safe:** AUD1's sentence with this audit's sources added: "... no prior decipherment or printed text of it was located in ...,
+  Bougeant's *Histoire des guerres et des négociations* II (from d'Avaux's papers), Rommel's *Geschichte von Hessen* VIII, the
+  Eberstein family history (1865) or Caillet's Morin-Pons documents (1912) (searched 8 Oct 2026, three audits); the King's letter of
+  9 Nov 1640 printed by Caillet corroborates the Eberstein clause's content."
+- **Unsafe:** "first decipherment", "previously unread", "new", or anything that presents France's reward to Eberstein as unknown. The
+  reward is in print (Caillet 1912). What this passage adds is the *instruction* and its stated purpose, written in cipher on 25 Aug.
+  research/SIGNIFICANCE-2026-10-08.md line 15 says "The command quarrel and Eberstein's appointment are already in print; what is ours
+  is the coded intention". That stands, but it should now add that the reward itself was carried out and printed. That correction
+  is made in the "## Lane SIG additions" line, not by rewriting line 15.
+- No over-claim found in the target's files. status.json: `audit_refs` gains this section, `audit_status` "three audits", `gap`
+  updated; class, depth and key unchanged. SECOND-OPINIONS-QUEUE.tsv SO-BAL170-F229: class and counts unchanged, row left as filed.

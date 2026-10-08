@@ -46,3 +46,14 @@ Checks still owed:
 - Lee (2011) for the Louisville and Nashville proposal.
 
 I checked the audit classes for Chavigny (N3) and E37 (N3) in the repository, and that Gramont's f.30 had no audited reading when the audit was written. Everything else rests on the readers' and the reviewer's own checks.
+
+## Lane SIG additions
+
+- **Chavigny to d'Avaux, 25 Aug 1640 (Baluze 170 f.229), AUD-SIG-CHAV (account 3 verifier), 8 Oct 2026.** *What it says:* in cipher, the
+  King will give Count Eberstein a gratification, now that he succeeds Melander at the head of the Landgravine's army, to bind him to do
+  better than his predecessor; the dukes and the Landgravine want their troops joined to Longueville and kept under his command. *What it
+  adds beyond print:* the reward itself is in print -- Louis XIII's letter to "le comte d'Heberstein", 9 Nov 1640, countersigned
+  Bouthillier, sending La Boderie to give him "une marque du gré" (Caillet, *Correspondance historique et archéologique* 1912, pp. 65-66),
+  and the succession is in Rommel VIII pp. 588-590 -- so the passage adds the decision and its stated purpose eleven weeks earlier, in
+  the secretary of state's own despatch to the Hamburg envoy, not the fact of the reward. *Caveat:* the clause rests on letter signs
+  graded M; key Tomokiyo's (published); class stays N3 (AAE volumes, the 1640 *Gazette* and Google Books not reached), depth D2.

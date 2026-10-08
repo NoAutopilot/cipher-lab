@@ -1,0 +1,38 @@
+[
+ {
+  "q": "\"Chavigny\" \"d'Avaux\" \"25 août 1640\"",
+  "status": "HTTP Error 429: Too Many Requests"
+ },
+ {
+  "q": "\"Eberstein\" \"gratification\" 1640 Hesse",
+  "status": "HTTP Error 429: Too Many Requests"
+ },
+ {
+  "q": "\"Heberstein\" Landgrave Longueville 1640",
+  "status": "HTTP Error 429: Too Many Requests"
+ },
+ {
+  "q": "\"Chavigny\" \"Avaux\" Eberstein Melander",
+  "status": "HTTP Error 429: Too Many Requests"
+ },
+ {
+  "q": "\"Correspondance politique\" Allemagne 1640 Chavigny \"d'Avaux\" inventaire",
+  "status": "HTTP Error 429: Too Many Requests"
+ },
+ {
+  "q": "\"Eberstein\" \"Melander\" Frankreich 1640 Geschenk",
+  "status": 200,
+  "total": 0,
+  "rows": []
+ },
+ {
+  "q": "\"Chavigny\" \"d'Avaux\" \"25 août 1640\"",
+  "retry": 1,
+  "status": "HTTP Error 429: Too Many Requests"
+ },
+ {
+  "q": "\"comte d'Eberstein\" gratification 1640 Chavigny",
+  "retry": 1,
+  "status": "HTTP Error 429: Too Many Requests"
+ }
+]
