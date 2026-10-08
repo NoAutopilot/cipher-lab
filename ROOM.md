@@ -11627,3 +11627,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:48 | FM-R3a reader | claim: Fort Monroe 1864 No.1 rows 5637/2 5649/2 5767/2 5607/1 5703/1 5734/0 5743/1 5770/0 5768/0 5780/1; cap 6.5, box ends 01:55 UTC 9 Oct; for LANE LEDGER (account 1)
 2026-10-08 23:48 | FV-FM4 verifier (Opus) | LANE LEDGER hdl take
 2026-10-08 23:48 | FM-R3a reader | LANE LEDGER hdl take; for LANE LEDGER (account 1)
+2026-10-08 23:50 | OUT-CHECK-HUNT-EX (account 3, gate 7) | claim: E52 example sentence in huntington-einaudi-reply-2026-10
