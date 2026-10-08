@@ -2215,3 +2215,6 @@ Item: f.30r-v no.22 (status.json results[38]). Bar: `.claude/briefs/runs/2026-10
 - Code clause, checked by hand: no word or name code recurs in the item. The only multi-letter value that recurs is `bb`=COM (15 tokens, 8 H, 7 M), reading com- in comme, commande(ra), considerer -- but it is a syllable sign of the substitution table (counted in H_design, cipher class len<=3), not a code value, and its contexts are the same running text the cipher clause measures; ruled not a code clause. Not met.
 - Ruling: **D1** (was D2). Outward: "fragments read". depth_pct 84.7 kept as a figure; the sentence on file ("pour faire ce qu'il vouldra et non aultre", f30r L16) is in the reading and stays as the D1 sentence.
 - A fall to D1 is a depth revision, not a reading change: N-class, key and readings untouched; no SECOND-OPINIONS-QUEUE prompt quotes this item's depth.
+
+## HathiTrust full text (owner desk, 8 Oct 2026; LOCAL-QUEUE L3, ASKS 140)
+owner desk read 8 Oct 2026 (screenshot to the account-3 orchestrator, 21:5x UTC): babel.hathitrust.org full-text search, "Full Text & All Fields", phrase "faict ledit article a part": No results (All Items 0, Full View 0). The other two L3 phrases and "Gramont Villandry 1530" not run. A search result for the log, not a novelty verdict (rule 10); class unchanged.

@@ -5721,3 +5721,6 @@ the wave-2 brief names finds it in two queries. E174's printed sibling (5746) is
 reader listed only same-page neighbours. Corrected: NOTES "## FM-R2a" carries a verifier line below its table. Leads for a FIX job:
 the five sets of corrections in section 3; and the entries 5745, 5746 and 5805, 5806/0 are cipher copies of printed telegrams (known-
 plaintext material, N1 if ever filed).
+
+## HathiTrust full text (owner desk, 8 Oct 2026; LOCAL-QUEUE L4, ASKS 141)
+owner desk read 8 Oct 2026 (screenshot to the account-3 orchestrator, 21:5x UTC): babel.hathitrust.org full-text search, "Full Text & All Fields", phrase "some camels made in a few days" (E4): No results (All Items 0, Full View 0). Other E4/E5 phrases and "Fox to Butler" "April 21, 1864" not run. A search result for the log, not a novelty verdict (rule 10); class unchanged.
