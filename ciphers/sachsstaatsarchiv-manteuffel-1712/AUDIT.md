@@ -402,3 +402,32 @@ news" clause of prior-work check 5, the Eckert shape). Over-claim found: none ou
 located in what was searched (a search result, not a novelty statement)"); NOTES.md's FAM-MANT15 line 'Next: (3) a verifier ...' is
 now done -- noted under Remaining gaps. Requests this audit: www.archiv.sachsen.de 3, resources.huygens.knaw.nl 6, www.googleapis.com
 5, be-api.us.archive.org 4; no 403/429/challenge.
+## G3 check (V1-G3D)
+
+Verifier V1-G3D (account 3, session_01B3GbNMSz6kStoU6DvctLBF, for LANE-VERIFY-1), 8 Oct 2026, 16:56-17:0x UTC by `date -u`.
+This is the prior-work-step.md check 5 on the 694/08 f.410 lower block (N4, two audits, D1 per DEPTH-MH). It is not a third full audit,
+and nothing was decoded. Account check: VERIFY-MANT, AUDIT2-MANT and the f.410 readers were not account 3. MANT-0609 (account 4 for the
+account-3 orchestrator) was a frame inventory, not a reading or an audit of f.410. 694/09 (FAM-MANT15/FAM-MANTV, live today on account
+2) was not touched.
+
+Prior-work checks 3-5:
+- **Check 5, decoded phrases:** AUDIT2-MANT's print_check run on the five `phrases.txt` stretches (3 Oct) stands and was not repeated.
+- **Other correspondents' and later quotations of the same reports.** IA full text (be-api) `"Manteuffel" Stettin 1712 Flemming` ->
+  6,225 loose matches. Its relevant new hit is Droysen, *Geschichte der preußischen Politik* IV.2 (1886, IA
+  `droysen-geschichte-der-preussischen-politik-v-4-no-2`). AUDIT2-MANT had read only IV.1. The djvu text was fetched once and grepped.
+  IV.2 quotes Manteuffel's Berlin reports from 1713 on (Friedrich Wilhelm I's accession, 18 April, 20 May, 18 Oct, 1718), and none of
+  November 1712. It has no "reine d'Angleterre", "ne fera rien" or matching "contentement" passage. **Negative.** A second fts
+  query (Berlin Novembre 1712 Stettin "Reine d'Angleterre") failed on a malformed response and was not retried.
+- **Press of the day** (November-December 1712). Google Books (key, country=US) gave 0 on all three of:
+  - `"Mercure historique" 1712 Stettin "reine d'Angleterre" Berlin Danemarck`
+  - `Fama 1712 Stettin Sequestration Berlin Manteuffel`
+  - `Berlin novembre 1712 Stettin Suedois Danemarc "reine d'Angleterre" prince`
+
+  IA advancedsearch found no dated 1712-13 *Mercure historique et politique* items. *Europäische Fama* volumes are on IA
+  (`bub_gb_*`) but undated in the metadata, so the November 1712 issues were not identified. **Partly searched**; the issue-level
+  read is unchecked. A monthly would not share the P.S.'s specific content (the Queen of England's displeasure touching the prince,
+  Stettin), only the public news of the Pomeranian campaign.
+
+Result: no print hit. **Class kept: N4.** D1 stands (not re-examined). status.json and SO-MANT-F410 are unchanged. Requests:
+archive.org 4 (advancedsearch 2, metadata 1, djvu 1, plus one 404 on a guessed filename), be-api.us.archive.org 2,
+www.googleapis.com 3.

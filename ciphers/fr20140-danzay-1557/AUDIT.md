@@ -1304,3 +1304,34 @@ Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **BnF fr.20140 f.35r-36r, Danzay to the Cardinal of Lorraine, 27 Jan 1557**: **D2** (Partially decrypted; outward "partially deciphered (about 77%)"), 77.4% (H 509 of 638 (f.35) + 37 of 67 (f.36r) = 546 of 705). Check: published key (Tomokiyo 2026) applied, H grade. Sentence: "Danzay's cipher speaks of the King of Denmark and of a promise that they would willingly employ themselves ('a promis qu'ils s'en ploieroient'), and it names the chancellor."
+
+## G3 check (V1-G3D)
+
+Verifier V1-G3D (account 3, session_01B3GbNMSz6kStoU6DvctLBF, for LANE-VERIFY-1), 8 Oct 2026, 16:56-17:0x UTC by `date -u`.
+This is the prior-work-step.md check 5 (decoded-phrase re-search) on the two-audit N4 item, not a third full audit. Nothing decoded.
+Account check: no reading and no novelty audit of this item ran on account 3. DESENCLOS-PREMISE and DEPTH-REGRADE (account 3,
+4 Oct) were a bibliography sweep and a depth grade, not novelty audits, so the item was not skipped.
+
+Item: BnF fr.20140 f.35r-36r, Danzay to the Cardinal of Lorraine, Copenhagen 27 Jan 1557 (reading.txt, reading_f36.txt).
+
+Prior-work checks 3-5:
+- **Check 5, decoded phrases** (`phrases_g3.txt`, six cipher-derived phrases the earlier phrase lists did not carry: "les passions et
+  affections de ceulx", "la resolution des affaires", "de leur volonte", "le chancelier barbe", "avecques le peu de perte pour le change",
+  "qu'il s'en ploieroit volontiers"): `tools/print_check.py --only ia-global,gbooks,openalex` -> `print-check-g3.tsv`. IA full text
+  answered HTTP 502 on three of six phrases (not searched, logged); the other three IA hits and every Google Books and OpenAlex hit are
+  word matches in unrelated works (1554-2025, none on Danzay, Denmark or 1557). **No hit.**
+- **Same-news / antecedents.** Google Books (key, country=US): `Danzay 1557 Dannemarc cardinal Lorraine` -> 3 hits, all the index of
+  Teulet, *Papiers d'État relatifs à l'histoire de l'Écosse* (Bannatyne Club 1851). The snippet seemed to tie a "(1557), 280, lettre
+  écrite par lui au cardinal de Lorraine" to Danzay, so the three volumes were fetched from IA (`papiersdetatpies00bann`, `02bann`,
+  `03bann`, djvu text) and grepped. That index line belongs to the entry before Danzay's. Danzay's own entry (vol. III) is "reçoit du
+  comte de Bothwell d'amples communications (1567), II, 237" and "Sa correspondance n'a pu être retrouvée". In vol. II, p. 237 note 2
+  repeats that only post-1567 Danzay letters were known. The first audit had named this edition, but full-text-searched only the
+  1862 *Relations politiques*. It is now searched in full: **negative.** `"Danzay" "janvier 1557"` -> 2 hits (Richard 1910, on
+  a family payment, already read by the first audits). `Dancay ambassadeur Danemark 1557 chancelier` -> 0.
+- **Press of the day:** not applicable. There was no periodical news press in January 1557.
+- Already covered by earlier audits and not repeated: Ribier I-II, CSP Foreign Mary, CSP Scotland, Danish regesta and Kancelliets
+  Brevbøger 1551-60, Daussy 2001/2015, Cuisiat (Guise/Lorraine), Tomokiyo, DECODE, and the solver repositories.
+
+Result: no print or calendar entry shares this letter's substance. **Class kept: N4.** Depth not re-examined (D2 stands). status.json
+and the SO row are unchanged. Requests: be-api.us.archive.org 6, www.googleapis.com 9, api.openalex.org 6, archive.org 4 (advancedsearch 1,
+djvu 3). Files: `phrases_g3.txt`, `print-check-g3.tsv`, `print-check-g3-hosts.tsv`.

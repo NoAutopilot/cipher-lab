@@ -2169,3 +2169,39 @@ depth_check (DEF1-GRACOS, 05 Oct 2026 21:00 UTC, exit 0, 0 FAIL; both items N0, 
 ```
 unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0
 ```
+
+## G3 check (V1-G3D)
+
+Verifier V1-G3D (account 3, session_01B3GbNMSz6kStoU6DvctLBF, for LANE-VERIFY-1), 8 Oct 2026, 16:56-17:0x UTC by `date -u`.
+This is the prior-work-step.md check 5 on no.21 (f.29r) and no.22 (f.30r-v), both two-audit N4. It is not a third full audit, and nothing
+was decoded. Account check: neither reading and none of the novelty audits ran on account 3. VER-GRACOS (account 3, 4 Oct) verified
+a key-grade value (ST = L) on disk, and DESENCLOS-PREMISE/DEPTH-REGRADE were a bibliography sweep and a depth grade. None of these is a
+novelty audit, so the items were not skipped.
+
+Prior-work checks 3-5:
+- **Check 5, decoded phrases** (`phrases_g3.txt`): five phrases not in the earlier lists (f.30: "qu'il parle de la reputation",
+  "vous le perdriez entierement", "selon ce qu'il desire et maintenir", "que nous n'avons eu les parolles"; f.29: "pour faire ledit
+  article a part"). Run with `tools/print_check.py --only ia-global,gbooks` -> `print-check-g3.tsv`. IA answered 502 on two phrases
+  (not searched) and gave 0 on three. The Google Books hits are word matches in unrelated works (Digeste 1805, Luke commentary
+  2007, coutumiers 1635-1724, a sermon book 1837). **No hit.**
+- **Other correspondents' versions of the same news, +-3 days and to 1 June** (the Imperial side at Rome). *CSP Spanish* IV.1 (IA
+  `calendarofletter0004pasc`, djvu text fetched once) was read for every Rome despatch of 18 May-1 June 1530:
+  - Muscettola, 18 May: the siege of Florence, Empoli, Volterra. No Gramont.
+  - Mai, 22 May: the English divorce envoys.
+  - Mai, 26 May (pp. 560-561, the entry the f.30 audit cited): Tarbes told the Pope that the Spaniards were delaying execution of the
+    treaty of Cambrai and the release of the French princes. "Four days ago" he complained to Muscettola that his courier had been
+    stopped at Florence and the despatches taken.
+  - Muscettola, 1 June: the Pope rebuked the French ambassador over Florence. The ambassador answered that once the King had his sons
+    back he would make the Florentines give up their obstinacy.
+
+  Diffed against f.29r and f.30r-v. No passage shares the letter's specific content: the "declaration de la liberté de Florence",
+  Avignon, "la ville et la force entre vos mains", or the f.29r article. Florence and the Pope are generic to the month, so none of
+  this is SUBSTANCE in the step's sense. These are the Imperial agents' reports of other conversations, not a version of these
+  letters. The 26 May courier interception stays what the f.30 second audit called it: a reason an archival decipherment at
+  Simancas or Vienna cannot be excluded, which does not block N4.
+- **Press of the day:** not applicable to May 1530 (no periodical press). Sanuto's *Diarii* (the nearest equivalent) was covered by the
+  f.30 second audit.
+
+Result: no print hit. **Classes kept: no.21 N4, no.22 N4.** Depths not re-examined. status.json and the SO rows are unchanged.
+Requests: be-api.us.archive.org 5, www.googleapis.com 5, archive.org 1 (djvu). Files: `phrases_g3.txt`, `print-check-g3.tsv`,
+`print-check-g3-hosts.tsv`.

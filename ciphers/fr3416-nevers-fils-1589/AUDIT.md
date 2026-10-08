@@ -392,3 +392,10 @@ files of that job). Disk only, nothing decoded, no crops cut, no vision; key, ci
 - **Content sentence:** none possible. Run 1 gives 'ainsi ne les auroit [Seigneur] ...' with no subject or object that the
   reading supplies; the other runs are syllables ('s.es.auoir', 'b.onnefaSUN').
 - **Ruling: D1 held** (D07-NEVFV 7 Oct 2026 stands), depth_pct 78.4 (H 80 of 102), outward "fragments read".
+
+## G3 check (V1-G3D) -- skipped
+
+V1-G3D (account 3, 8 Oct 2026, 17:0x UTC by `date -u`) skipped f.35r per its brief (".claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md",
+Third wave: "Skip any item whose reading or an audit ran on account 3"). The reading NV02-READ and the first audit VERIFY-NV02 both ran on
+account 3 (3 Oct 2026). The G3 decoded-phrase re-search for this item is still owed, by a session on another account. No class or
+status changed.
