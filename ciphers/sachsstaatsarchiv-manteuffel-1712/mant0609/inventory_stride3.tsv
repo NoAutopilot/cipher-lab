@@ -1,0 +1,89 @@
+# MANT-0609X (8 Oct 2026, LANE FAMILY account 2): 694/09 inventory of 85 of the 169 frames no earlier pass listed (every second uninventoried frame in file order; brief "stride 3, about 85") + 2 blind positive controls. www.archiv.sachsen.de frames.tsv URLs, 87 requests, 2.1 s apart, all HTTP 200. Contact sheets of 12 (600 px tiles), one Sonnet call per sheet (8), then every light/moderate flag eye-checked by this worker at ~1100-1500 px. Frame ids are URL file numbers (film stamp = file+1). Grade M.
+loc	frame	sheet_label	sheet_read	sheet_conf	code	glossed	note	http	sha256_16
+694/09	0001	S1-04	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	6bf18ccc60b3ee93
+694/09	0004	S7-05	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	558e510a3f62c842
+694/09	0008	S1-05	light	low	y	y	HEAVY: ~13 lines of code groups, est. 170-190 tokens, interlinear period gloss over most runs; values mostly 1-120 with 187 202 297 401 503 seen; continuation of the 0007 report (Berlin Jan 1713); P.S. at foot	200 image/jpeg	08e05a6b1ebc5a37
+694/09	0015	S6-05	moderate	high	ctl	n	positive control (known 69-token unglossed leaf, FAM-MANT15)	200 image/jpeg	97842410c5f08d10
+694/09	0018	S1-11	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	999406fd045bec81
+694/09	0021	S4-06	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	62d0109ce34e4634
+694/09	0024	S7-12	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	5b4e57225ec041cc
+694/09	0028	S7-04	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	574e309ae3efc580
+694/09	0031	S1-10	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	f1f2fe9aa72a3125
+694/09	0034	S1-08	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	fe472f3f94234071
+694/09	0038	S6-07	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	453192dec76dbad0
+694/09	0044	S2-12	light	low	n	-	clear copy (Fürstenberg, Dresde 4 Feb 1713); "300 m" a sum	200 image/jpeg	6de033380c3d5ba9
+694/09	0048	S1-02	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	0317cc44a4c899a5
+694/09	0051	S6-04	light	low	dup	-	left page is the 0052 leaf (code line 405.67.71... ) seen again; not a new leaf	200 image/jpeg	e7419ae631ddd2d6
+694/09	0052	S2-08	light	low	ctl	n	positive control (known 44-token leaf 0052, FAM-MANT15)	200 image/jpeg	1ba248b1826bed46
+694/09	0054	S3-05	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	34c0f36800a6309d
+694/09	0058	S5-08	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	523ac7fd8bbc4d4f
+694/09	0061	S2-04	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	aaf8f6416aac3413
+694/09	0064	S3-11	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	1fae3867edd162a6
+694/09	0068	S6-01	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	a916aeaddaafb1a1
+694/09	0078	S6-08	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	3fe138a7a91bdbcc
+694/09	0084	S5-12	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	2cab826e561238e8
+694/09	0088	S4-07	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	d71fa041e05e1f2f
+694/09	0091	S7-07	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	0ec310b52ec30d49
+694/09	0094	S7-11	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	421e0bd67ff7b819
+694/09	0098	S5-03	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	ce2e8a9f401fe59a
+694/09	0101	S6-09	light	low	n	-	clear minute (No 21-25 replies); numerals are letter numbers	200 image/jpeg	a5c729fd521a0bc1
+694/09	0104	S2-07	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	0994d189596f7417
+694/09	0108	S3-04	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	e5ed194b22c8d94a
+694/09	0111	S7-09	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	7e0f7313dc645ff6
+694/09	0114	S2-02	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	1f2b67e78bff49f1
+694/09	0118	S7-08	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	2618c38c947ad28e
+694/09	0121	S5-05	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	7872e83ea1f6e4e8
+694/09	0124	S3-10	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	dcea31bc76612ba0
+694/09	0128	S2-06	light	low	n	-	clear copy (f.97, Mar 1713)	200 image/jpeg	38b32b7c6fb579a5
+694/09	0131	S6-03	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	76d05214749d801d
+694/09	0134	S4-04	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	3c2185c80509e9cb
+694/09	0138	S4-03	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	c173f53dbd3decb3
+694/09	0141	S2-11	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	b9a413813d88ad02
+694/09	0144	S5-07	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	4254d1cbfcb84e23
+694/09	0148	S1-12	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	c799c92a90296d8c
+694/09	0151	S8-01	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	9b6deee6f0d4b774
+694/09	0154	S3-03	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	665f0085dc72d3e7
+694/09	0158	S5-04	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	8d06326eb2588827
+694/09	0161	S3-09	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	103fa68553008d89
+694/09	0164	S6-02	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	034b40e7f9463c0c
+694/09	0168	S7-02	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	fc1858550aafd0ed
+694/09	0171	S4-12	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	873fe4729826c631
+694/09	0174	S6-12	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	1086de0250135f1c
+694/09	0178	S2-01	moderate	low	n	-	clear copy of a letter (f.134, Berlin May 1713); sheet false positive	200 image/jpeg	543608580541b94f
+694/09	0181	S4-09	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	656b2201436c6b04
+694/09	0184	S3-06	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	78b82541a6e16f1b
+694/09	0188	S4-08	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	fe7bef297ad7fbfc
+694/09	0191	S3-01	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	c18af16071d1ecb9
+694/09	0194	S2-10	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	9e6cd7eeca58e6ac
+694/09	0198	S3-07	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	fe8f01ed6d99b827
+694/09	0201	S5-10	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	991f01c8d6e43344
+694/09	0204	S1-03	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	52fbd1b038cfc28c
+694/09	0208	S2-03	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	e479faf5fcd101af
+694/09	0211	S4-05	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	16a78a8d87cbcb17
+694/09	0214	S6-10	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	184f2c51ed70d196
+694/09	0218	S6-11	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	0ff1c60b99756ced
+694/09	0221	S6-06	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	adedf26105c01d59
+694/09	0224	S7-01	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	436046a046fe919a
+694/09	0228	S3-02	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	183bdf8762f10c4b
+694/09	0231	S4-02	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	1200e45920390be3
+694/09	0234	S5-09	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	5355af8965fe2f2c
+694/09	0238	S4-10	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	7477ae2c3909bf40
+694/09	0241	S3-12	light	low	n	-	clear draft with deletions (f.183)	200 image/jpeg	d3a7f47f8af5f960
+694/09	0244	S5-02	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	748e3ff3815578a7
+694/09	0248	S1-01	light	low	n	-	clear, dense hand, underlined words only	200 image/jpeg	4c1d8130aafb3471
+694/09	0251	S3-08	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	b76f12589b16f1da
+694/09	0254	S5-11	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	6fab149cc7d9a8e6
+694/09	0258	S7-03	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	d61a83a70e813421
+694/09	0261	S8-02	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	44263663445e0e38
+694/09	0264	S1-09	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	f97c665eb4ad6b72
+694/09	0268	S2-09	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	85bbccc354146b39
+694/09	0271	S5-01	light	low	n	-	clear, short text; page marked beschaedigt	200 image/jpeg	c84aab72bde094e0
+694/09	0274	S4-11	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	c49826044490cef0
+694/09	0278	S2-05	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	dc7ab3f7bf72f7a1
+694/09	0281	S5-06	none	high	n	-	sheet none; not eye-checked	200 image/jpeg	f094acf06df9d6aa
+694/09	0284	S4-01	light	low	n	-	clear (f.64, 1713)	200 image/jpeg	2463d15de28b3d9a
+694/09	0288	S8-03	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	8855a650ae590426
+694/09	0291	S7-10	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	33cdca3fbeea0409
+694/09	0294	S1-07	light	low	n	-	clear (f.226), letter end and signature	200 image/jpeg	b760bcd0f6a5a2e3
+694/09	0298	S1-06	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	d16f34173936de95
+694/09	0301	S7-06	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	03bc5909c8f9b288
