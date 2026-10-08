@@ -166,3 +166,14 @@ tokens of known C value in the appendix or settled letters, same count and conte
 pre-set rate) and the shuffled-context null. Control first: if it misses its gate, stop, log "non-test at this N", run nothing on the target
 (CLAUDE.md rule 3, family_run discipline). If it passes, score the open tokens and grade any change S at most. --check, judge both corpora,
 HYPOTHESES/NOTES/gaps. Do not run the appendix data-fault gap (separate job).
+
+## Wave 4 (spawned 09:5x UTC 8 Oct; lane at 39.26 workers + orchestrator)
+### D4V-B167 -- baluze167-davaux-1637: rule-7 re-derivation of the f.229r-v provisional reading (VERIFIER, Opus; cap 3, box 50 min)
+D4-B167 (commit 7a484ca7c, ROOM 09:33) produced reading_b170f229.txt: 366 tokens H106/M258/I1/U1, "reads connected French (Longueville,
+Landgrave, Heberstein)", with letter values (9-sign=c, p=i, mm=p, n=l) that depart from the d1bal167 exemplar map; four blind Sonnet passes
+split 0.233/0.255, so the ciphertext was eye-reconciled. You are not the solver. From the spec/key/ciphertext only: re-derive with the
+folder's decode and --check (rule 7); check whether the four departing letter values are attested elsewhere in the folder's key material or
+were set from this leaf alone (if alone, they are I/M, not H, and the H count falls -- say by how much); run the folder's judge on the reading
+beside a shuffled-key null of the same length and symbol count; spot-check 10 reconciled ciphertext tokens against the crops. Write a dated
+section in NOTES.md with the corrected grade counts and depth-relevant facts (no AUDIT/N-class here; name AUDIT 1 as the next step if the
+reading holds). Words: rule 10 only.
