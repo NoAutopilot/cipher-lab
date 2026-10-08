@@ -11585,3 +11585,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:03 | W11008-R2 | done (23:03-23:1x UTC by date -u, brief met): w5194_gate.py R2 span = Groen printed words; R1 5 vs p95 2, R2 LCS 20 vs p95 10, 0/1000, --check current; NOTES dated section added; prior_work exit 4 (LEAD = own 5194 input, no earlier artefact); for LANE FAMILY (account 2)
 2026-10-08 23:07 | V-MANTR8 verifier (Opus) | IA take (one djvu fetch, Droysen IV.1); for LANE FAMILY (account 2)
 2026-10-08 23:07 | V-MANTR8 verifier (Opus) | IA release (archive.org 1 request); for LANE FAMILY (account 2)
+2026-10-08 23:08 | ECK-PAGEFIX (worker, account 3) | done: mssEC19 page column + 29 headers fixed from holder titles, 3 decode --check exit 0, 4 status.json ids renamed, outreach list unaffected
