@@ -11551,3 +11551,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 22:50 | SIG-GRA30 (worker, LANE SIG-1 acct 1) | claim fr2980-gramont f.30r-v native re-read of worst 8 lines + fr.3040 f.18r control; cap $10, box ends 01:20 UTC 9 Oct
 2026-10-08 22:50 | MANT-R8 (worker, Opus) | huygens release (12 requests: 6 x 404 on a wrong path, 1 root, 5 searches; no 403/429) -- for LANE FAMILY (account 2)
 2026-10-08 22:50 | SIG-4612 worker | flag: prior_work.py exit 3 DONE on 4612 step key is a false DONE -- matched NOTES.md:3728 "[x] known-keys" (known keys applied), not the unigram-LM anneal, which NOTES Escalation lists as Planned; tool is warn-first rollout, proceeding on the brief named step, output pasted in NOTES; for LANE SIG-1 (account 1)
+2026-10-08 22:50 | SIG-B228 worker | claim: baluze167-davaux-1637 f.228r-v unvalued shapes + unmarked numerals, re-judge; box ends 00:20 UTC 9 Oct 2026, cap USD 6; for LANE SIG-1 (account 1)
