@@ -57,3 +57,13 @@ which would be logged as a non-test, not a no.60 negative.
 | 8 Oct 2026 | f.91's cipher is Nevers no.60 | BNF-G60B gate (fr.3987 f.54 canvas 99 lines 1-8), pre-registered in 2026-10-08-ytbiz-bnf-g60b.md | value-shuffled keys (not reached) | not run: no agreement number, no shuffle number, no target decode | non-test: gate unaffordable (registered step 0 STOP) | see G60B note |
 
 G60B note (BNF-G60B, 8 Oct 2026 07:38-07:45 UTC by date -u; intake_gate_check.py exit 0 "open (line 1)"). Crop command: `python3 tools/iiif_lines.py --ark btv1b90606320 --canvas 99 --out ciphers/fr3987-nevers-revol-1593/images --prefix f54 --debug` cut 50 half-pitch bands (gloss and cipher split, 66-70 px crops, a blob at L02), unusable as lines; one re-cut with `--distance 130 --prominence 60` gave 25 bands, of which L03-L10 are single interlinear lines (L01 margin, L02 merged blob). Cipher lines 1-2 taken as L03-L04. Step 0: one Sonnet pass on L03-L04 gave 41 + 35 tokens, about 10 of 76 marked uncertain (the subagent called the line cramped); cost not separable from the session reading, counted as $0.6 per the brief. Projection (2 x 4 + 1 + 1) x 0.6 = $6.0 > $5, so STOP as registered: no further calls, no gloss read, no f.91 work. Not a no.60 negative. What it taught: the tool's default cut does not give one cipher line per crop on this leaf, and a gate over 8 lines is priced at about $6 at this rate, above the registered $5 line. Next best attempt: re-register with a 4-line span (about $3.6 projected) and a crop step settled first (distance 130 cut, line order checked against the page), or take new material (a cleaner no.60 witness); not re-run here. Pass A file (scratch, not committed): passA_l12.tsv.
+
+Lane note (BNF-FOCUS, 8 Oct 2026 09:1x UTC by date -u): G60B's STOP was the lane's brief error, not the worker's -- the
+registered price check (2 x 4 + 1 + 1 calls at $0.6 = $6.0 against a $5 ceiling) could never pass. Recorded so the
+non-test is not counted against the no.60 hypothesis. Retrospective (attempts G41, G60, G60B): no gate has run; two
+stops were brief design (unrunnable gate, impossible price check), one was a key/alphabet mismatch caught only after
+spend. What the data say: f.91's signs fit no.60's tag set; the glossed no.60 leaves are cramped court/copyist hands
+whose machine sign reading is 67.9% on held-out signs (fr3986 atlas_heldout, 19/28) -- a letter-agreement gate there
+measures reader error more than the key. Different instrument for the next attempt: a synthetic matched control with
+the measured reader error (no image calls) to establish whether a key-vs-shuffled test on f.91's length can discriminate
+at all, then f.91 itself. Registered in .claude/briefs/runs/2026-10-08-ytbiz-bnf-g60c.md.
