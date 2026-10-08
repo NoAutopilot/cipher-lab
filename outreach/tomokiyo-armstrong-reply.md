@@ -1,4 +1,4 @@
-status: held (owner, 26 Sept 2026 16:15 UTC: not sent until Armstrong moves; fold one sentence on its state into the Gramont-Danzay note once JSTOR gate 2 clears, ASKS 44) -- was: ready (drafted 26 Sept 2026 07:32 UTC by parent 7f, body updated 16:12 UTC by parent 7h with the cycle-1/2 results; the person sends it in the existing thread and records the date in CONTRIBUTIONS.md)
+status: SUPERSEDED 8 Oct 2026 22:41 UTC by outreach/tomokiyo-thanks-2026-10.md (outreach/README.md rule 1c: one message per recipient; that note is the reply in his thread and carries the Armstrong state without an ask) -- not to be sent. Was: held (owner, 26 Sept 2026 16:15 UTC: not sent until Armstrong moves; fold one sentence on its state into the Gramont-Danzay note once JSTOR gate 2 clears, ASKS 44) -- was: ready (drafted 26 Sept 2026 07:32 UTC by parent 7f, body updated 16:12 UTC by parent 7h with the cycle-1/2 results; the person sends it in the existing thread and records the date in CONTRIBUTIONS.md)
 subject: Re: Armstrong 1808 and the Raince letter
 to: reply in your existing thread with S. Tomokiyo
 targets: ciphers/armstrong-madison-1808, ciphers/dupuy452-carpi-1520
