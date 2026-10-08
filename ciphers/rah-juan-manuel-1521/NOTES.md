@@ -1154,3 +1154,28 @@ Read so far: 0 of 28 letters read in full; R9501 f.34 (30 lines) trial-decoded w
 - [x] image-check: R9528, R9529, R9502, R9526 and R9501 full-size images fetched (sha1s in images/manifest.json), crops and windows checked; f.34 out-of-table groups and J-initial groups eye-checked (R13-RJM34LA, R13-RJMV2, R14-RJMZ)
 - [x] retry: look-alike passes on f.194/f.199 (R11-RJMLA, residual 0.040 / 0.137), f.34 (R13-RJM34LA, 0.065) and f.147 (R14-RJM9526, 0.113); agreement, not error; R9526 retest run with settled splits (calibration passes, both keys FAIL the floor)
 Verdict: parked: every remaining gap waits on ASKS.md row 138 (the owner's sort of the label set) or LOCAL-QUEUE L17 (Kolosova); after the sort, re-run scripts/pool_tq.py and test147b.py on the settled labels
+
+## CSP Spain II calendar map (D1A-RJM, 8 Oct 2026, 06:29-06:33 UTC)
+Brief: .claude/briefs/runs/2026-10-08-account1-default-0540-jobs.md, job D1A-RJM (the NOTES.md "While waiting" action). `scripts/calendar_map.py
+--cache DIR` (imports csp_date_map.py's parser) re-fetched BHO CSP Spain II pp381-386 .. pp463-481 (10 pages, 10 requests to
+www.british-history.ac.uk, 1.6 s apart, all HTTP 200; no other host) and wrote `calendar_map.tsv`: per record the CSP entry number, BHO page,
+Salazar reference, closing date, match confidence, whether the form line says "in cipher" / "Contemporary deciphering", the number of
+document form lines in the entry, and any other cipher sentence. It also scans entries of ALL titles (nos. 385-435) for the records with no
+Juan Manuel heading.
+- Re-run of csp_date_map.py reproduces the committed csp_date_map.tsv byte for byte (diff empty): the 4 Oct mapping stands.
+- 16 of 28 records have a CSP entry: 14 high (folio and date agree), 2 medium (R9499 = no.392 and R9501 = no.393, date only).
+- 12 records have none (R9500, R9502, R9506, R9507, R9511, R9512, R9515, R9516, R9521, R9526, R9527, R9529); a loose day/month scan of all
+  entries' closing lines found no entry under another title for 11 of them. R9526 (6 Jun) gets loose hits no.421 (= R9525, matched on
+  folio A.24 ff.143-145) and no.422 (Lope Hurtado de Mendoza, 7 Jun, A.24 f.152), neither of which is a Juan Manuel letter at ff.147-148.
+  Juan Manuel entries in the BHO range not mapped to a record are all outside Mar-Jun 1522 (nos. 368-390 Dec 1521-Feb 1522; no.458, 1 Aug 1522).
+- Cipher content: every matched entry except R9501 says "Autograph in cipher" and all say "Contemporary deciphering" (R9501: "Autograph.
+  Contemporary deciphering"; R9499, R9501 date-only). **No CSP abstract summarises a cipher passage or quotes any code word**: the calendar
+  carries the plaintext sense only and flags the cipher solely in the form line. Entry-level caveat: an entry bundles the letter and its
+  enclosures (n_document_form_lines 2-3 for R9504, R9514), so the flags are the union over the entry; no.395 (R9504) adds "The despatch in
+  cipher is not extant" (the Venice enclosure) and no.403 (R9514) "The letters are not written in cipher, but such expressions are used in
+  them that it is difficult to understand them" -- these belong to enclosures, not to Juan Manuel's own letter, and cannot be assigned to it
+  without the page image.
+- Where it was not found: the Supplement to vols. I-II (Gayangos) was not searched; the abstracts are English editorial summaries, so no
+  plaintext for any record is read from them (a print-check result for the log, rule 10).
+Next step unchanged: alphabet recovery / Kolosova annex (see Remaining gaps); this job closes the "CSP map" while-waiting item with a
+per-record cipher-content column. No status change (partial).
