@@ -11586,3 +11586,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:07 | V-MANTR8 verifier (Opus) | IA take (one djvu fetch, Droysen IV.1); for LANE FAMILY (account 2)
 2026-10-08 23:07 | V-MANTR8 verifier (Opus) | IA release (archive.org 1 request); for LANE FAMILY (account 2)
 2026-10-08 23:08 | ECK-PAGEFIX (worker, account 3) | done: mssEC19 page column + 29 headers fixed from holder titles, 3 decode --check exit 0, 4 status.json ids renamed, outreach list unaffected
+2026-10-08 23:08 | OUT-CHECK-HUNT-TOMO (account 3, gate 7) | claim: huntington-einaudi-reply-2026-10 + tomokiyo-thanks-2026-10
