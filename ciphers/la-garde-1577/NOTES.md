@@ -1430,3 +1430,82 @@ Read so far: 0 of 229 cipher tokens graded H/C/S (no reading exists; transcripti
 - [x] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells remain
 - [ ] retry: homophonic and masc re-runs at the base-code error (above)
 Verdict: keep going: 4 internal gaps; cheapest next: re-run homophonic prereg control at the 0.055 base-code error, ~$1.5
+
+## LAG-HOM: `homophonic` prereg re-run at the measured base-code error 0.055 / 0.084 (8 Oct 2026, account 2, LANE FAMILY-A2c, Opus, CPU only)
+
+**Job:** LAG-ERR's named next step. No network, no vision, no subagents. Intake gate: lane orchestrator 22:2x UTC, exit 0.
+Prior work: `tools/prior_work.py la-garde-1577 --item-spec '...KHA A 11/XIV C/M-12...' --step-type decode --fetch` -> **exit 4**:
+LEAD 1-own (this job's own ROOM claim; recorded CLEAR, `prior-work.tsv`), LOOK 2-leaf (3 crops owed), UNCHECKED 3-tomokiyo,
+3-solver, 4-editions, UNCHECKED-NET 3-solver. Check 1 by hand: HYPOTHESES.md had no homophonic row below noise 0.10 and no
+target run, so the step was not done. Checks 2-4 (plaintext prior reading) are **unchecked**: this job makes no reading claim
+and has no vision or network; they stay owed before any decode is called a reading (gap below).
+
+**Pre-registration:** `families/homophonic_prereg.md` Amendment 1 (commit 224e2bf16, pushed 22:4x UTC before any run): same
+cipher, N=229, K=26, corpora, `profile=target`, restarts 8, seeds 1-3, gate 0.60 unchanged; run C at noise 0.055 (gating),
+run D at 0.084 (the LAG-ERR 95% upper bound, SALV-DIAG bracket), shuffled target beside C. Amendment 2 (commit 508cceea4,
+pushed after C/D/shuffle and **before** it was computed): judge power on the control decodes, read-out fixed in advance.
+
+**Runs** (`tools/family_run.py specs/la-garde-1577.json --family homophonic --cipher .../basecode_cipher.txt --tokens space
+--seeds 3 --gate 0.6 --restarts 8 --measured-error p --param profile=target --param noise=p`; rows verbatim in HYPOTHESES.md):
+
+| Run | Control recovery, seeds 1-3 | Mean | Gate 0.60 | Target score | Judge (real_p05 -0.96, null_p99 -1.601) |
+|---|---|---|---|---|---|
+| C, noise 0.055 | 0.856 / 0.402 / 0.838 | **0.699** | met | -572.867 | **FAIL -1.208** |
+| D, noise 0.084 | 0.852 / 0.371 / 0.777 | **0.667** | met | -572.867 | FAIL -1.208 (same decode) |
+| C, shuffled target (seed 1) | as C | 0.699 | met | -585.017 | FAIL -1.254 |
+
+The control now gates at both ends of the measured interval (it failed at 0.23 in R15-LAGHOM: 0.351). The target decode is
+byte-identical to A2-LAG3's masc decode (`masc-1-a2lag3masconbase.txt`, same score -572.867): at K=26 the homophonic solve
+settles on the same one-sign-per-letter-ish key. Judge FAIL on the target, FAIL on the shuffled decode, so ARM-C1 is not
+triggered (no PASS to void).
+
+**Judge power (Amendment 2, `families/lag_hom_judgepower.py`, `--check` exit 0, `lag_hom_judgepower.tsv`).** The same spec
+judge scored the solver's own control decodes (12 decodes: noise 0.055 seeds 1-9, 0.084 seeds 1-3); the true control
+plaintexts PASS (sanity, seeds 1 and 7):
+
+| Control decodes | n | Judge PASS | Judge score range |
+|---|---|---|---|
+| recovery >= 0.60 (0.751-0.908) | 9 | **1** (0.055 seed 7, recovery 0.908) | -0.987 to -1.090 for the 8 FAILs |
+| recovery < 0.60 (0.371-0.594) | 3 | 0 | -1.135 to -1.172 |
+
+Pre-registered read-out: fewer than half of the gated-recovery control decodes PASS (1 of 9), so **the judge cannot see a
+decode at the recovery the gate accepts; the target FAIL is "judge cannot decide at this N", not a negative.** The control
+gate and the target verdict measure different things here: the solver recovers 75-91% of a matched control's letters, and the
+judge (calibrated on clean real prose, real_p05 -0.96) still FAILs such decodes 8 times in 9.
+Descriptive only (not pre-registered as a gate): the target's -1.208 sits below all twelve control decodes, including the three
+that recovered only 37-59% (-1.135 to -1.172), and 0.046 above its own shuffled decode (-1.254). That places the target decode
+nearer the shuffled floor than any control decode, which is consistent with "not this design, or not at this error" but is
+not a test: no threshold was fixed for it and the shuffled floor is a single seed.
+
+**Result.** At the measured base-code error (0.055, bracket 0.084) the homophonic control gates (0.699 / 0.667), the target
+was run and its decode FAILs the judge, and so does the shuffled decode; but the judge FAILs 8 of 9 gated control decodes too,
+so this is **not a control-backed negative** for `homophonic` -- the instrument that would turn a solver run into a verdict at
+N=229 is missing (a judge, or a score, that separates a 0.75-0.90 recovery decode from noise). Grades: 0 cipher tokens read
+(H 0, C 0, S 0, M 0, I 0); no reading claimed. Status unchanged (`open`). Report for the lane: target below gate (judge FAIL),
+nothing for a verifier.
+
+**What would settle it (named, not run):** a verdict statistic with power at this N, checked on control decodes first: e.g.
+the solver's own score relative to a per-design null (target best -572.9 vs control decodes -526.5 to -547.5 at 0.055, and
+vs the shuffled target -585.0 -- a score-gap gate across, say, 20 control seeds and 20 shuffle seeds, pre-registered), or the
+judge at a partial-decode-tolerant setting calibrated on control decodes. Either is a new instrument (rule 3 third-attempt
+clause does not bar it); about USD 1.5-2. The masc ladder shares the decode, so the same statistic would answer masc too.
+
+Requests: none. Vision: 0. Network: git only. Files: `families/homophonic_prereg.md` (Amendments 1-2), three HYPOTHESES.md
+rows, three decode files under `families/`, `families/lag_hom_judgepower.py`, `families/lag_hom_judgepower.tsv`,
+`prior-work.tsv`, this section.
+
+## Remaining gaps (LAG-HOM, 8 Oct 2026)
+Read so far: 0 of 229 cipher tokens graded H/C/S (no reading exists; homophonic control gates at 0.055/0.084, target judge FAIL, judge FAILs 8/9 gated control decodes)
+- homophonic/masc verdict at N=229 - blocker: not-attempted; the spec judge has no power on decodes at the gated recovery (1/9 PASS); next: pre-registered score-gap gate (target best score vs control-decode and shuffled-target score distributions, 20+20 seeds), ~$2
+- two M-grade, not image-settled `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: not-attempted; witness reads 18, committed 10; next: crop check from images/06179_p2.png, ~$1.5
+- plaintext prior-work rows (leaf gloss LOOK, Tomokiyo, solver caches, Gachard window) - blocker: not-attempted; prior_work.py exit 4 again on 8 Oct 2026 (LAG-HOM), owed before any decode is called a reading; next: `prior_work.py --fetch` then `--record`, ~$1
+
+## Escalation (LAG-HOM, 8 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells remain
+- [ ] retry: homophonic re-run done at 0.055/0.084 (LAG-HOM: control gates, judge lacks power); next is a different verdict statistic, not another family run
+Verdict: keep going: 3 internal gaps; cheapest next: pre-registered score-gap gate on the homophonic/masc decode at N=229, ~$2
