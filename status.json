@@ -1699,7 +1699,7 @@
       "kind": "solve",
       "title": "August of Saxony, cipher enclosure of 1561-64 (WVO 53, Nassau papers): read cryptanalytically, no key or sibling decipherment",
       "grade": "N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', two audits); S 356, M 8 of 364 tokens after a re-read from the native scan (6 Oct 2026, R11A-AVS53; G4 = p regraded S -> M by verifier R11A-AVSV2, 6 Oct 2026; audited at S 238, M 126); presented as a PROPOSED reading (a cryptanalytic result; the WVO editor's request, 26 Sept 2026); the KHA Collectie Japikse 20th-century copy is an unseen witness that the editor names as the likeliest place for an earlier decipherment -- N-class referred to the verifier lane (ROOM 26 Sept)",
-      "line": "The first solver reading to pass a novelty audit: tools/homophonic_anneal.py read the enclosure with a synthetic control of the same design at 99.3 percent; a verifier, an adversarial second audit and an N4 decision (10:56 UTC) found no prior decipherment or printed plaintext. Its sibling 57 and letter 126 were read by alignment and are N4 as well.",
+      "line": "The first solver reading to pass a novelty audit: tools/homophonic_anneal.py read the enclosure with a synthetic control of the same design at 99.3 percent; a verifier, an adversarial second audit and an N4 decision (10:56 UTC) found no prior decipherment or printed plaintext. Its sibling 57 was read by alignment and is N4 as well; letter 126, also read by alignment, is N2 since 8 Oct 2026 (the same sentence is deciphered in the period on WVO 1109 f.23; AUDIT.md 'G3 check (V1-G3C)').",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64",
       "phrases": [
         "WVO 53",
@@ -2585,19 +2585,20 @@
       "date": "24 Sept 2026",
       "kind": "recovery",
       "title": "William of Orange to Elector August of Saxony, Brussels 16 Sept 1564 (WVO 126, Dresden Locat 8510/5 f.139): cipher postscript read with a key aligned from Orange's 1563 letter (WVO 98) and its decipherment",
-      "grade": "126: C 234, M 6 of 240 signs (AVS175B, 3 Oct 2026; audited at C 214, M 26), N4 (no prior decipherment located; AUDIT.md 'N4 decision (D1)'; KHA minute with a 'Zeitung' unimaged). 57: C 294, M 7 of 301 (R11A-AVS57, 6 Oct 2026), N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', held on 'Re-check 57 against DNOK (V8)': WVO's DNOK is Demandt's regest nr. 113, HessJb 38 (1988), clear text only; Dresden minute with a 'Zettel' unseen). 53 (both pages): S 358, M 6 of 364 (R11A-AVS53, 6 Oct 2026), a cryptanalytic result, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)'). Caveats from the WVO editor's reply (26 Sept 2026): the KHA Collectie Japikse copies of 53 and 126 (unseen) are the likeliest place for an earlier decipherment; the KHA minute of 126 ('Zeitung') and the Dresden minute of 57 ('Zettel') may carry the text in clear; Kluckhohn I nr. 148 is 30-31 Dec 1561, six weeks after 57. N-class of 53 and 126 referred to the verifier lane.",
-      "line": "The Orange-Saxony symbol ciphers use more than one key. System A (WVO 74, 1562) also reads August's enclosure of 18 Nov 1561 (WVO 57: the Emperor asked August to elect Maximilian King of the Romans). System B (98, 1563) reads 126 (1564: the Queen of Spain was bled and purged and lost the child). Orange's postscript of 24 Oct 1561 (WVO 53) was read cryptanalytically on both pages (Don Carlos marriage rumour; Vendôme and Navarre; the King of France too young for it to go forward). All three are N4: no prior decipherment located in the principal editions (Groen, Gachard, Rachfahl, von Weber, Kluckhohn; Japikse's edition ends Sept 1561), the KHA and WVO records or a phrase search (AUDIT.md 'N4 decision (D1)' and '(D2)'). Unseen witnesses may carry the text in clear: Orange's KHA minute of 126 with a 'Zeitung', August's Dresden minute of 57 with a 'Zettel'.",
+      "grade": "126: C 234, M 6 of 240 signs (AVS175B, 3 Oct 2026; audited at C 214, M 26), N2 since 8 Oct 2026 (AUDIT.md 'G3 check (V1-G3C, 8 Oct 2026)': the same sentence is deciphered in the period on Orange's cipher enclosure to Wilhelm of Hesse two days later, WVO 1109 f.23, Marburg; was N4 per 'N4 decision (D1)'). 57: C 294, M 7 of 301 (R11A-AVS57, 6 Oct 2026), N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', held on 'Re-check 57 against DNOK (V8)': WVO's DNOK is Demandt's regest nr. 113, HessJb 38 (1988), clear text only; Dresden minute with a 'Zettel' unseen). 53 (both pages): S 358, M 6 of 364 (R11A-AVS53, 6 Oct 2026), a cryptanalytic result, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)'). Caveats from the WVO editor's reply (26 Sept 2026): the KHA Collectie Japikse copies of 53 and 126 (unseen) are the likeliest place for an earlier decipherment; the KHA minute of 126 ('Zeitung') and the Dresden minute of 57 ('Zettel') may carry the text in clear; Kluckhohn I nr. 148 is 30-31 Dec 1561, six weeks after 57. N-class of 53 and 126 referred to the verifier lane.",
+      "line": "The Orange-Saxony symbol ciphers use more than one key. System A (WVO 74, 1562) also reads August's enclosure of 18 Nov 1561 (WVO 57: the Emperor asked August to elect Maximilian King of the Romans). System B (98, 1563) reads 126 (1564: the Queen of Spain was bled and purged and lost the child). Orange's postscript of 24 Oct 1561 (WVO 53) was read cryptanalytically on both pages (Don Carlos marriage rumour; Vendôme and Navarre; the King of France too young for it to go forward). 126 is N2 since 8 Oct 2026: the same sentence is deciphered in the period on Orange's cipher enclosure to Wilhelm of Hesse of 18 Sept 1564 (WVO 1109 f.23, Marburg; AUDIT.md 'G3 check (V1-G3C)'). 53 and 57 are N4: no prior decipherment located in the principal editions (Groen, Gachard, Rachfahl, von Weber, Kluckhohn; Japikse's edition ends Sept 1561), the KHA and WVO records or a phrase search (AUDIT.md 'N4 decision (D1)' and '(D2)'). Unseen witnesses may carry the text in clear: Orange's KHA minute of 126 with a 'Zeitung', August's Dresden minute of 57 with a 'Zettel'.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64",
       "key": "period",
       "document_id": "Dresden Locat 8510/5 f.139 (WVO 126), Orange to August, Brussels 16 Sept 1564 (cipher postscript)",
       "claim_scope": "recovered-passages",
-      "plaintext_novelty": "N4",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N4",
       "completeness": "234/240",
-      "unresolved_spans": "6 signs at M (Qf, one Λ, K = die x2, 1 = i x2); the KHA minute ('Zeitung') and Collectie Japikse copies unseen",
+      "unresolved_spans": "6 signs at M (Qf, one Λ, K = die x2, 1 = i x2); the KHA minute ('Zeitung') and Collectie Japikse copies unseen; the same sentence is deciphered in the period on WVO 1109 f.23 (Orange to Wilhelm of Hesse, 18 Sept 1564)",
       "audit_refs": [
         "AUDIT.md '## V3 audit of WVO 126 (cipher postscript)'",
-        "AUDIT.md '## A2.3 Item 126, second audit'"
+        "AUDIT.md '## A2.3 Item 126, second audit'",
+        "AUDIT.md '## G3 check (V1-G3C, 8 Oct 2026)' (N4 -> N2)"
       ],
       "audit_status": "two audits",
       "reading_version": "ead347b (reading_126.txt, unchanged since)",
@@ -2615,7 +2616,7 @@
       "depth_by": "session_01Fnch9NWA9fjZi8vmp6UEnb (R11A-AVSV)",
       "depth_date": "6 Oct 2026",
       "decode_status": "Partially decrypted",
-      "text": "unknown"
+      "text": "known (in manuscript: period decipherment on sibling WVO 1109 f.23, HSAM Marburg; not in print)"
     },
     {
       "date": "24 Sept 2026",

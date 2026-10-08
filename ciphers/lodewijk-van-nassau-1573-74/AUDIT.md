@@ -1747,3 +1747,31 @@ depth_note. SO-LODEWIJK-1573-74's notes column gets one clause pointing here. SO
 **N-class.** Unchanged, because the evidence does not move it: the change is a transcription correction to ten p3 tokens, and no
 searched-for phrase or prior print is affected. The classes stand at 4610/4611/4616 N4 (no prior decipherment located) and 4612 N3. Key
 source: ours (key_full, aligned from the period decipherment sheets). Requests: resources.huygens.knaw.nl 1 (the 4610 PDF). No subagents.
+
+## G3 check (V1-G3C, 8 Oct 2026)
+
+Verifier V1-G3C (LANE-VERIFY-1, account 3, session_01WsYSAR7cc8ohC6cNQNaLMM), 16:56-17:1x UTC by `date -u`. Prior-work step
+check 5 (G3) on the N4 items 4610, 4611, 4616 and 5797 p5 (code 161) / p7 (code 153), per
+`.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md` "Fourth wave". Not a full third audit; nothing decoded. Account-3 involvement
+checked first: DEPTH-REGRADE (4 Oct, depth only) ran on account 3, and NEXT-LVN / JVN-LVN were briefed by account 3 but run on
+accounts 2 and 4 (neither is a reading of these items nor an N-class audit), so no item was skipped.
+
+### Prior-work checks 3-5
+
+| check | route, query | result |
+|---|---|---|
+| 3 (holder, same-week letters) | WVO date search (resources.huygens.knaw.nl `brieven?geavanceerd=1&jaar=&maand=&dag=`) from 3 Jun 1573, 2 Jul 1573, 12 Apr 1574, 22 Oct 1573 (first 20 rows each) | 4610: no other Nassau letter 3-6 Jun 1573 (Orange's outgoing orders only). 4611: none 2-6 Jul 1573. 4616: 5811 (Orange to Lodewijk, 13 Apr 1574) and 4503 (Orange to Lodewijk, 15 Apr 1574), both already audited in this file (V7, DEF1-LVN); 5551 (Jan van Nassau, 17 Apr) falls outside +-3 days. 5797: no other letter from Jan or Lodewijk 22-26 Oct 1573 |
+| 5 (antecedents/replies) | Orange's printed replies on disk (`groen/groe009arch04_01_0045`, `_0052`, `_0107`: Groen IV CDXXVII, CDXXXIII, CDLXXXIV), grep for the readings' rare entities (electeurs, convocation, conseillers, chevaux, florins, rechute, Rudolff, Berghe, Strasbourg, Goch, Clèves, Weeze, loger, duc d'Albe, forces) | no shared rare entity in the reply texts; "Electeur" occurs only in Groen's editorial notes (the Palatine in Feb 1573; Frederick's piety). The replies acknowledge receipt (already logged by V2/D1); they do not restate the cipher content |
+| 5 (decoded phrases) | `tools/print_check.py --only ia-global,gbooks`, 10 new phrases from the current readings and the 5797 spots: 'convocation des conseillers des electeurs', 'trois cens chevaux qui sont prests de hazarder', 'le capitaine Rudolff', 'forces du capitaine Rudolff', 'le conte van den Berghe', 'nous sommes arrive aupres de Goch', 'pour loger demain', 'nous verrons demain lequel sera le meilleur', 'Pfaltzgraf helt sich wol', 'Landgraf ist willens'; one retry of the IA 502s | IA full text: 0 hits on 9; 'le conte van den Berghe' unreachable (HTTP 502 twice). Google Books: word-bag matches only (19th-20th-century law reports, dictionaries, fashion papers; for van den Berghe, histories of the 1580s Lalaing/van den Bergh treason), none prints or paraphrases any of the four letters. The V8 phrase families for 5797 (phrases.txt, print-check-a2/-v8c) stand |
+| 5 (other correspondents, same news) | 5797's names: no same-week Nassau letter in WVO (above); the period code values come from the 5550 gloss (already the H source) | nothing that fills Groen's blanks |
+| 5 (press of the day) | no printed newspaper for 1573-74; the period 'Zeitung' is the letter itself | n/a, logged |
+
+### Verdict
+
+No SUBSTANCE witness (two rare entities or numbers within +-3 days) was found for any item. **4610 N4, 4611 N4, 4616 N4, 5797 p5
+(161) N4, 5797 p7 (153) N4: all kept.** Status.json and SECOND-OPINIONS-QUEUE.tsv rows unchanged. Residual: the readings of
+4610/4611 are fragmentary French, so phrase search is weak for them by construction (few clean 5-8-word runs); the class rests
+mostly on the edition coverage logged by V2, A1, D1 and V8.
+
+Requests (V1-G3C): resources.huygens.knaw.nl counted in august-van-saksen-1561-64/AUDIT.md (one session total, 16);
+be-api.us.archive.org 14 for this target; www.googleapis.com 10. No subagents.

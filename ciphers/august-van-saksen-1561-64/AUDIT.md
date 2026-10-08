@@ -953,3 +953,81 @@ key_53.tsv's `n=` notes are S1's 100 dpi counts (G6 now 7, 8 now 5); regrade_53.
 Postmortem: one over-grade (G4 = p at S on anneal evidence that the lane's own count-2 control shows unreliable), carried from S1
 (24 Sept 2026) through every later audit because the count-2 control did not exist until R11A-AVS9C; the low-count sign 9 was
 held to that standard and G4 was not. Fixed here.
+
+## G3 check (V1-G3C, 8 Oct 2026)
+
+Verifier V1-G3C (LANE-VERIFY-1, account 3, session_01WsYSAR7cc8ohC6cNQNaLMM), 16:56-17:1x UTC by `date -u`. Prior-work step
+check 5 (G3) on the three N4 items, per `.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md` "Fourth wave". Not a full third
+audit; nothing decoded. Account-3 involvement checked first: only DEPTH-REGRADE (4 Oct, depth only, no reading and no N-class) ran
+here on account 3, so the items were not skipped. The decoded bodies are reading_126.txt, reading_53.txt and reading_57.txt as committed.
+
+### Prior-work checks 3-5
+
+| check | route, query | result |
+|---|---|---|
+| 1 (own work) | grep 126/53/57, 1109, 3646, 56 in this folder, ciphers/wvo-hessen-1564, ROOM | 1109 named here only as a design lead (NOTES "Remaining gaps"); **no file connects 1109's gloss with 126's text** |
+| 3 (holder) | WVO date search (resources.huygens.knaw.nl `brieven?geavanceerd=1&jaar=&maand=&dag=`), 16 Sept 1564, 24 Oct 1561, 18 Nov 1561, and August as correspondent from 19 Nov 1561; records 1109, 3646, 54, 55, 56 | same-week siblings found: **1109** (Orange to Wilhelm IV of Hesse, Brussels 18 Sept 1564, HSAM 3II, "met een ... in cijferschrift geschreven bijlage", "Mededeling van courante berichten"); **3646** (Orange to Günther von Schwarzburg, Brussels 16 Sept 1564, KHA A 11/XIV I/1 nr. 47, minute, annotated "Mutatis mutandis ad Sachsonis electorem"); **56** (instruction to an envoy to Philipp of Hesse, c. Nov 1561, Dresden Loc. 8510/5 f.15-21, contemporary copy, "met aansluitend een nieuwsbericht uit de Nederlanden"); 54 (ferrets, 30 Oct 1561) and 55 (thanks, 5 Nov 1561) irrelevant; Orange's next letter to August after 57 is 58 (31 Dec 1561), already fetched by this folder |
+| 5 (decoded phrases) | `tools/print_check.py --only ia-global,gbooks` on 5 new 126 variants ('die adern zwei mahl schlagen', 'zweimahl purgiren mussen', 'irer frucht erlediget', 'auss Hispanien andere zeitung', 'Konigin so heftig kranck'); one retry of the IA 502 | IA full text: 0 hits on 4, 'zweimahl purgiren mussen' unreachable (HTTP 502 twice). Google Books: word-bag matches only (1813-1897 dictionaries and novels; Weller's *Nachlese zu den deutschen Zeitungen* 1889 as a loose match), none prints or paraphrases the passage. 53 and 57 phrase families were already run item-level (A2.6, A3.4, D2.2); not re-run |
+| 5 (other correspondents, same news) | the 1109 enclosure gloss as transcribed in `ciphers/wvo-hessen-1564/r10tx/gloss_r10.tsv` (two blind passes, reconciled, verified by R10-WVOV), checked by eye here on `r10tx/view/row_L05.jpg` and `row_L11.jpg`; 3646 minute (WVO PDF, 2 pages, fetched once) read by eye at 140-220 dpi; 56 copy (WVO PDF, 14 pages) skimmed by eye at 110-120 dpi, pp. 3-9 | see below |
+| 5 (press of the day) | no printed newspaper exists for 1561/1564; the period equivalent is the handwritten 'Zeitung' circulated with letters, which is what 3646 and 56 are | covered by the row above |
+
+### 126: SUBSTANCE found -- the same sentence, deciphered in the period, on a sibling letter
+
+f.23 of WVO 1109 is Orange's cipher enclosure to Landgrave Wilhelm IV of Hesse, written two days after 126 in a different symbol
+system, with a contemporary interlinear decipherment (`ciphers/wvo-hessen-1564/AUDIT.md`, N0 for that leaf). Its gloss, as
+reconciled there, against 126 as read here (normalised spelling):
+
+| 1109 f.23 period gloss (wvo-hessen-1564, r10tx) | 126 reading (reading_126.txt) |
+|---|---|
+| wir konnen auch [E.L.] infreundtlich en vertrauen nit vorhalten das wir | [wir] konnen auch [E.L.] in freundtlichem uertrauen nit uerhalten [das] [wir] |
+| sehd he voans sp zeit tungen bekom men haben | seidhero auss hispanien andere zeitung bekommen haben welche uermelden |
+| das die kin so heftig kranck worden sei das | [das] [die] konnigin so heftig kranck worden sei [das] |
+| man ir die adern zweimahl schlagen vnd taush zweimahl | man ir [die] adesn zwei mahl slagen [und] auch zwei mahl |
+| purgieren mussen dermassen dass wir erfrucht erfed iged worden sei | purgieren mussen dermassen [das] sie irer frucht erlediget worden sei |
+
+The two are one German sentence, word for word apart from the gloss-writer's slips ("kin" for Konigin, "taush" for auch, "wir
+erfrucht" for "sie irer frucht"). By eye here: "man ir die adern zweimahl" (row L11) and "... zei[t]tungen bekom[men]" (row L05) are
+as transcribed. Orange sent the same enciphered news to Saxony on 16 Sept and to Hesse on 18 Sept; the Hesse copy carries its own
+period decipherment. The 3646 minute (same day as 126, "Mutatis mutandis ad Sachsonis electorem") has a marginal insertion beginning,
+as far as read here (grade M, not a transcription), "Allein das wir auß ... hispanien Zeittungen bekommen hab[en], das die Konnigin
+schwanger gewe[sen] ...", i.e. Spanish news about the Queen in clear in Orange's own draft; the bleeding and purging sentence was not
+seen in it at this resolution.
+
+**Class: 126 lowered from N4 to N2.** The plaintext is known elsewhere: the period decipherment of a sibling letter's enclosure
+(WVO 1109 f.23, HSAM Marburg, imaged by WVO at `resources.huygens.knaw.nl/media/wvo/images/01000-01999/01109.pdf`) carries the same
+sentence; it is in manuscript, not in print, so not N1 by the letter of rule 10 (a lane that counts a publicly imaged period gloss as
+publication would put it at N1). No prior mapping of 126's own ciphertext (System B) to it was found, and the 1109 gloss is a
+different key's decipherment, so not N0. Key source unchanged (`period`, System B from WVO 98); text: `known` (in manuscript).
+Depth unchanged (D3, C 234 of 240); the 1109 gloss is a non-statistical external check of the content, recorded here for the
+next depth verifier, not used to raise depth.
+- Safe sentence: "Orange's cipher postscript to August of 16 Sept 1564 (WVO 126) reads with a period key as news from Spain that the
+  Queen was bled and purged twice and lost her child; the same sentence, deciphered in the period, is on Orange's cipher enclosure
+  to Wilhelm of Hesse two days later (WVO 1109 f.23, Marburg). Our reading maps 126's own ciphertext to it."
+- Unsafe: "no prior decipherment located" for 126's text, any N4 wording, "previously unread news".
+- Postmortem: the N4 decision (D1) searched print and the KHA/Dresden witnesses of 126 itself; nobody searched Orange's other
+  letters of the same week. WVO's date search lists 1109 two rows below 126. The miss is the "other correspondents' versions"
+  family that the 8 Oct G3 rule now names.
+- Consequence for outward wording: status.json results rows 9 and 59 corrected here (126 no longer N4). CONTRIBUTIONS.md and any
+  outreach draft resting on "126 ... N4" are not touched by this check; flagged to the lane orchestrator.
+
+### 53: parallel news found, not the text; N4 kept
+
+The WVO 56 copy (Dresden Loc. 8510/5 f.15-21, unprinted, imaged) carries, after the instruction, a "Zeittung so itzt im Niederlandt
+vorhanden" (p.3; first item: the King of Spain came to Madrid on 14 Oct). Skimmed by eye, pp.3-9: p.7 "Das Konigs zu Hispanien Sohn
+der Jung Printz werdt ehist heraus in die Niederlandt kommen" (the Prince of Spain to come to the Netherlands); pp.8-9 the King of
+Navarre's envoys to the King of Spain and his claim to the Kingdom of Navarre (with the Duchy of Vendôme named). Two entities are
+shared with 53 (the Prince of Spain coming to govern these lands; Bourbon-Vendôme's Navarre claim against Spain), within weeks. The
+specific claims of 53 -- the Prince to marry his father's sister, Vendôme to recover Navarre "mit der gute oder krig", the French
+king too young -- were not seen in pp.3-9; pp.10-13 were not read at legible resolution (unchecked). This is a parallel news witness
+in manuscript, not 53's plaintext. **Class kept N4.** It is a candidate non-statistical external check of 53's cryptanalytic
+content (useful to a depth verifier; not used here to raise depth). Suggestion, not run: one reading pass over 56 pp.7-13, ~$1.5.
+
+### 57: N4 kept
+
+Same-week WVO neighbours are 3943 (August's 23 Nov postscript, Demandt nr. 115, read by V8) and 12220 (Catherine de Medici,
+unrelated); Orange's answer is 58 (31 Dec 1561), outside +-3 days and already fetched here. 57's distinctive phrases were run
+item-level by A2/A3/D2 and the Palatine version of the same embassy (Kluckhohn I nr. 148) was diffed by D2. No SUBSTANCE witness.
+**Class kept N4.**
+
+Requests (V1-G3C, whole session, shared with the lodewijk-van-nassau-1573-74 check): resources.huygens.knaw.nl 16 (1 search form,
+8 date-search pages, 5 records, 2 PDFs: 03646, 00056); be-api.us.archive.org 6 for this target; www.googleapis.com 5. No subagents.
