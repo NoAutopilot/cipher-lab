@@ -11,3 +11,6 @@
 - Key rows: Picket = Demoralize (-ed, -ing) (key-no2.md p.20 l.18, H), Picket = Defeat (-ed, -ing) (key.md p.19 l.18, H); "Pickets" decodes by the stem+ending rule to the verb.
 - Conflict: N2-CD "Pickets queen about Clarke Dwight Sugar ..." is printed (same OR page) as "Pickett's division about 6000 infantry"; the clerk wrote the general's name as the plain word, which collides with a keyed verb.
 - Status: M in N2-CD (H -> M). Rule for later readers: a plain proper name that equals a key word is read from context and graded M.
+
+## Mint / Mogul: McPherson or Steedman (FM-R1, 8 Oct 2026)
+Witness A: key.md, Mint / Mogul = Maj Gen J. B. McPherson (H, mssEC 41 p.17 l.19, undated). Witness B: E169 (mssEC 25 / obj 5952, pointer 5782, Eckert to Sheldon, Beckwith and Caldwell, 9 Sept 1864): "in place of McPherson place [Gen] James [B.] Steedman: Mint and Mogul". Not settled by frequency: an entry keeps McPherson before 9 Sept 1864 and Steedman after only on B's single witness; grade M for either value until a second dated witness. Next: grep filed entries with Mint/Mogul by date.

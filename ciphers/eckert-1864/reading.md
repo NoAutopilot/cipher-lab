@@ -845,5 +845,65 @@ Code-word tokens: H 24.
 
 Code-word tokens: H 13, C 1.
 
-Totals over the 119 entries: H 1815, C 20, I 0, M 0.
+**E160 | Page 258 | 5802 | mssEC 25 (obj 5952, pointer 5802), 2 Nov 1864 Hd Qrs A. of J., R. O'Brien to Geo. D. Sheldon, Ft Monroe (FM-R1, 8 Oct 2026; row 5802/2; image-read)**
+
+Geo D Sheldon Ft Monroe {time: 2.30 PM} for martin [.] [Battery] in first napoleon [3] ossifers [110] [Men] [.] [Battery] E third napoleon [3] ossifers [100] & [19] [Men] [.] gloryth [New York] Napoleons [4] ossifers [166] [Men] [.] D [1] U S [9] inch [After the] [2] ossifers [122] [Men] [.] F fifth [9] inch parrots [3] ossifers [116] [Men]  {tail: [signed] [Colonel] Howard raining fast R OBrien}
+
+Code-word tokens: H 43.
+
+**E161 | Page 228 | 5772 | mssEC 25 (obj 5952, pointer 5772), 13 July 1864 Baltimore, J. W. Sampson to Sheldon, forwarding Lieut. D. L. Braine's Annapolis telegram (FM-R1; row 5772/0; image-read)**
+
+Geo Sheldon Ft Monroe Annapolis [13] {time: 11.30 PM} for [S. P. Lee] [.] I arrived at Annapolis morning of [13] plainfieldion [Cut off] between that [Point] and [Washington] [.] [Colonel] polking has no [Troops] save invalids [.] please send [Light] draft [Ferry] boat [,] [Communicate (-ed, -ing)] [Threaten (-ed, -ing)]ed  {tail: [signed] D L Braine Lieut [Command = Er (-ed, -ing)]er [Command = Er (-ed, -ing)]ing W S S [Vicksburg] finis J. W. [Ferry]}
+
+Code-word tokens: H 22.
+
+**E162 | Page 258 | 5802 | mssEC 25 (obj 5952, pointer 5802), 1 Nov 1864 Butler's Hd Qrs, R. O'Brien to Sheldon (FM-R1; row 5802/0; image-read)**
+
+Geo D Sheldon Ft Monroe {time: 12.30} for [Captain] martin [Monroe] [.] best [5] [Battery]'s sligs [Army] of James [,] Napoleons [,] [Battery] m [1] united states [Artillery] [,] [Battery] E [3] united states [Artillery] [,] [17] [New York] [3] inch [.] [Battery] Do [1] U S [Artillery] [,] [Battery] F [5] same  {tail: [signed] Lieut [Colonel] Howard R OBrien}
+
+Code-word tokens: H 29.
+
+**E163 | Page 279 | 5823 | mssEC 25 (obj 5952, pointer 5823), 9 Dec 1864 Butler's Hd, R. O'Brien to Sheldon (FM-R1; row 5823/1; transcription only)**
+
+Geo D Sheldon Ft Monroe {time: 11 AM} for [Maj Gen B. F. Butler] [Monroe] [.] I think a large sized weasler or [2] ought toby loaded with subsist hence for age at [Ammunition] [,] Read die to fall low & a moments no tis  {tail: [signed] Jacks W Turner [Brigadier General] etc R OBrien}
+
+Code-word tokens: H 9.
+
+**E164 | Page 120 | 5664 | mssEC 25 (obj 5952, pointer 5664), 10 May 1864 Bermuda Landing, R. O'Brien to Sheldon (FM-R1; row 5664/0; transcription only)**
+
+Geo D Sheldon my cifer of [10] Columns says down [6] down [10] up [1] down [8] up [2] down [4] up [7] down [3] up [5] down poney compare with yours Cant translate your sifer repeat it soon R OBrien
+
+Code-word tokens: H 10.
+
+**E165 | Page 264 | 5808 | mssEC 25 (obj 5952, pointer 5808), 14 Nov 1864 Washington, T. T. Eckert to Sheldon (FM-R1; row 5808/2; transcription only)**
+
+Geo D Sheldon make [Follow (-ed, -ing)]ing Editions to no [1] [Cipher] for Pulaski Godfrey and grainery for Paducah Goslin and Gazette for [Elizabeth City] Baker and Buffalo for [General] Stanly Napier and for [General] Rousseau native act Knowledge receipt quick TT Eckert
+
+Code-word tokens: H 6.
+
+**E166 | Page 236 | 5780 | mssEC 25 (obj 5952, pointer 5780), 20 Aug 1864 Fortress Monroe, Sheldon to Maj. Eckert, forwarding a Hilton Head dispatch (FM-R1; row 5780/0; transcription only)**
+
+Maj. Eckert , [Volunteer] . Hill ton Head August [18] [By the way of] [Monroe] {time: 10 PM} [20] for [General-in-Chief] [Washington] [.] I send [Today] by waywormers Arago and Cosmopolitan [2] old [Report] [Regiment]'s [,] the [100] and [3] [New York] [Volunteer]'s and [70] forth Penn [Volunteer]'s with orders to [Colonel]'s [100] Heine and Lieut. [Colonel] A Von Weitzel [Command = Er (-ed, -ing)]ing off I sirs [,] to await at [Monroe] [2] hours for orders [.] In the event of no orders being received [,] they are to proceed at once to [Alexandria] ["] I a disquorum and march direct to [Washington] and [Report] to you at that place [.] very Respect fully  {tail: [signed] [Maj Gen J. G. Foster] &c. Geo. D. Sheldon}
+
+Code-word tokens: H 37.
+
+**E167 | Page 274 | 5818 | mssEC 25 (obj 5952, pointer 5818), 6 Dec 1864 New York, John Horner to Sheldon (FM-R1; row 5818/0; transcription only)**
+
+Geo D Sheldon Ft. Monroe forward following to [Maj Gen B. F. Butler] Comdg [Army] of [James] [.] Russia is in [New York] [.] have examined her [.] accomodations poor [.] for [Horse]'s bad [.] River services bad outside good [.] draft not less than [7] and [1] half feet [.] power good [.] length [200] and [5] and depth [12] feet [.] not more than [14] [Mile]'s per hour speed [.] Mattawan not the craft for your services [.] have not seen Sanborne yet [.] particulars by letter yours Wm breed ford address [37] broad Wesport raining here [Maj Genl U.S. Grant] Horner
+
+Code-word tokens: H 28.
+
+**E168 | Page 40 | 5584 | mssEC 25 (obj 5952, pointer 5584), 17 Mar 1864 Washington, H. W. Halleck (signed) to Sheldon, text written forward then in reverse word order (FM-R1; row 5584/1; image-read)**
+
+Geo D Sheldon Ft. Monroe page on [Cipher] in no [1] Endless orphan add of additional arbitraries and sigel franz for [Major] [General] Lewis [General] [Major] season [Maj. Gen. Lew Wallace (Baltimore)] for Chief in general [Ram] also alter Halleck so far to [Major] [General] Hood under is answer if this in no [1] [Cipher] on page of additional arbitraries add orphan Endless for [Major] [General] Franz sigel and season [Maj. Gen. Lew Wallace (Baltimore)] for [Major] [General] Lewis [Ram] also alter General in Chief to [Major] [General] H W Halleck answer if this is under stood
+
+Code-word tokens: H 18, C 2.
+
+**E169 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 9 Sept 1864 Washington, T. T. Eckert to Sheldon, Beckwith and Caldwell (FM-R1; row 5782/1; transcription only)**
+
+G. D. Sheldon "F" Beckwith & Caldwell "U. S." in number [1] [Cipher] please make following additions and insert the same in all copies in use in your [Department]'s [.] for [Major] [General] burr bridge use Kent and Kearney stop for [General] a Jay Smith [Gen A. J. Smith] and [Gen A. J. Smith] [.] for [General] see C wash burn [Gen C. C. Washburne] and [Gen C. C. Washburne] [.] in place of Schenck insert [General] Jas. a mower in [Maj Genl Mower] and [Maj Genl Mower] [.] in place of McPherson place [General] James steed man [Maj Gen J. B. McPherson] and [Maj Gen J. B. McPherson] answer T. T. Eckert
+
+Code-word tokens: H 21.
+
+Totals over the 129 entries: H 2038, C 22, I 0, M 0.
 <!-- decode.py: derived block ends -->
