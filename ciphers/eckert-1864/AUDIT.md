@@ -3141,3 +3141,67 @@ Key source for all four: `period` (Cipher No. 1, key.md = mssEC 41; Cipher No. 2
 - Rows: status.json E66, E68, N2-BN `audit_status` "two audits", audit_refs and gap updated, class and depth unchanged; E70 `grade` N2,
   `audit_status` "two audits", line and gap rewritten. SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E70 withdrawn (N2); SO-ECKERT-E66, -E68, -N2BN stay
   queued (no count or class changed). No JSTOR row added.
+
+## AUDIT 2 (second adversarial, D2V-E74)
+
+Verifier D2V-E74 (account 2, LANE DEFAULT-account-2-20261008-0710, session_01GWXLUH2ZBG9tHhixnLF26u), 8 Oct 2026, 07:21-07:4x UTC by `date -u`;
+a separate session from the reader (LS-R7) and from LS-V7, not protecting either. Scope: **E74 only** (mssEC 19 p.177 printed / p.179,
+pointer 9071). Nothing decoded beyond `decode.py --check` (exit 0). Outreach gate 2 emphasis: search to disprove novelty.
+
+### 1. The two open pointers, identified
+- **"Sanders' despatch"** = George N. Sanders' telegram from St Catharines, C.W., 1 Sept 1864, to "Hon. D. Wier, Halifax": "Platform and
+  Presidential nominee unsatisfactory. Vice President and speeches satisfactory. Tell Philmore not to oppose. Geo. N. Sanders." It was made
+  public by **Seward in his Auburn speech of 3 Sept 1864**, which read it out as evidence of a Chicago-Richmond compact (Daily National
+  Intelligencer, Washington, 8 Sept 1864, p.2, read through its ALTO OCR, loc.gov resource sn83026172/1864-09-08/ed-1 sp=2); the Portland
+  Daily Press of 9 Sept p.2 reprints it as "a despatch to his co-laborer ... in the British Provinces", and the Philadelphia Evening Telegraph
+  of 12 Sept p.1 prints Sanders' "intercepted dispatch" reply to Seward from Clifton House, 9 Sept. The Danville Quarterly Review (1864)
+  quotes it too (Google Books snippet). So the date fits exactly: published 3-8 Sept, E74 on 11 Sept. The Tycoon/Niagara pointer of the
+  brief is the right man (Sanders of the Clifton House), but the despatch is the 1 Sept Halifax telegram, not the July Niagara letters.
+  Whether "Tycoon" here is Lincoln (Hay's usage) or Seward, who spoke, the page does not say; not settled here.
+- **"Chas Armond"** = a War Department telegraph operative sent to Halifax. Huntington CONTENTdm full text (`CISOSEARCHALL^armond`,
+  p16003coll11, 4 leaves): mssEC 29 (Vol. 4, Telegrams Received, Maj. Eckert, 25 Jul-16 Sep 1864) leaf 341 (pointer 12323): "St John [N.B.]
+  Sept 2 ... Maj Eckert We arrived here this Eve ... Shall reach our destination tomorrow noon ... Armond . D H Opr"; leaf 348 (12330):
+  "Halifax Sept 3, Maj TT Eckert, We arrived this evening ... Armond"; mssEC 18 p.169 (9835): "Chas Armond Halifax Washn Sept 6th 1864 ...
+  Your [wrangle] rec'd & I'm obliged to you tis very important to watch [Shelby] ... who he associates with how he talks and what he is at
+  ... for I think he means mischief on the Pacific coast [signed] [Bruno]" (cipher, not decoded here). Armond reached Halifax on 3 Sept,
+  the day Seward published a telegram addressed to a Confederate agent at Halifax: E74 is the War Department telling its man there that
+  the publication (which exposed the interception) was not its doing. Context only, from catalogue transcriptions; not a print of E74.
+
+### 2. The deciding finding: E74's text is already public
+The Huntington's own catalogue record for pointer 9071 (dmGetItemInfo `transc` field; transcribers M. Underwood, K. Peck; digitised
+23 Nov 2015; Zooniverse "Decoding the Civil War" subject 2880343) carries E74 word for word: "Chas Armond Washn 8 pm Sept 11th 1864 | The
+public = nation of Sand hers despatch was an enormous blunder Twas done by the Tycoon without my knowledge I did not know he had seen it
+until too late and four saw the consequences would be very bad It cannot happen again Webster Brutus call Coox Edwards". For a cipher
+entry the public transcription is ciphertext; for E74 it is the plaintext, except the two signature code words. The only thing our reading
+adds is "Webster Brutus" = "[signed] [Secretary of War]" (key.md p.10 l.19, H), from a period key that is itself digitised. So the
+plaintext is published by the holding archive: **N1** (the E70 shape of AUD2-LS-H, but stronger: this item's own record, not a sibling).
+
+### 3. Search log (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| Huntington CONTENTdm full text (`CISOSEARCHALL`, coll11) | armond (4), Tycoon (1 = 9071), blunder (17, only 9071 relevant), Sanders (12: none Sept 1864), Sanders+despatch (0), Sanders+Weir (0), Wier (1, 1862, unrelated); item info for 9071, 9835, 12323, 12330, 8728, 8754, 3036 | **9071's public transcription = E74's text**; Armond's three sibling leaves (section 1) |
+| 1864 press, Chronicling America (loc.gov JSON `dates=` window, ALTO OCR, 3 s apart) | "Sanders despatch" 1-12 Sept (14 pages; 6 read: Evening Star 6 Sept p.1, Worcester Spy 9 Sept p.4, Portland Press 9 Sept p.2, Phila Evening Telegraph 12 Sept p.1, Wheeling Intelligencer 6 Sept p.3, Fremont Journal 9 Sept p.2); "Philomons" (1 = Portland); "Sanders Chicago platform satisfactory" 28 Aug-30 Sep (54 pages; Natl Intelligencer 8 Sept p.2 read; Dayton Empire 6 Sept, NY Herald 7 and 13 Sept answered 429) | Sanders' despatch and Seward's use of it located (section 1); E74 itself, or any report of the War Department disowning the publication, not found in the 7 pages read. First request of the session met a Cloudflare page; one retry after a pause answered; stopped on the 429 |
+| IA full text (be-api fts) | "enormous blunder" Tycoon; Sanders despatch "enormous blunder"; "without my knowledge" Tycoon Stanton 1864; "cannot happen again" Stanton Tycoon | nothing relevant |
+| Sender's/recipient's printed papers | Lincoln, Collected Works vol. 8 (Basler; IA `collectedworksab08linc`, `collectedworksof0008royp_m9a6`, be-api per item, "Sherman" control answered): "Halifax" 0, "Armond" 0, "enormous blunder" 0; Bates, *Lincoln in the Telegraph Office* (1907, IA `lincolnintelegra00bates` djvu, whole text grep): Armond, Tycoon, Wier, Philmore, "enormous blunder" 0 (Halifax only for the Keith/Nov 1864 matters); Stanton papers: no printed letterbook for Sept 1864 found | no print of E74 |
+| Google Books API (key, country=US) | 5 queries ("enormous blunder" Sanders Seward Auburn; "Tell Philmore not to oppose"; "Armond" Halifax 1864 Eckert; Stanton Sanders Wier Halifax intercepted; "done by the Tycoon" -- 503, not retried) | 1 hit, Danville Quarterly Review 1864, for Sanders' telegram only |
+| OpenAlex, Semantic Scholar (keys) | 2 queries each (Sanders telegram Halifax interception; Seward Auburn speech Sanders telegram) | nothing relevant |
+| JSTOR | families (i) and (ii) already queued (JSTOR-QUEUE.tsv rows 400-401, LS-V7); one family (i) row added for "Armond" AND Halifax AND 1864 | pending (never blocks) |
+| Unread / unreachable | Zooniverse "Decoding the Civil War" Talk boards (where volunteers may have discussed the entry); the Huntington blog; NARA RG 107; HathiTrust full text; the 429'd press pages; Seward's Works vol. 5 (the speech, context only) | unread |
+
+### 4. Classification
+| ID | N-class | text known? | key | depth | check |
+|---|---|---|---|---|---|
+| E74 Stanton ([Secretary of War]) to Chas Armond, Halifax, 11 Sept 1864 | **N1** (lowered from N3) | **known**: the Huntington's public transcription of pointer 9071 | period | D1 (unchanged) | `--check` exit 0; catalogue `transc` field read against ciphertext.txt E74: identical but for the struck "the", which the Huntington keeps as plain "the" |
+
+- Safe sentence: "E74 is clear text signed with two Cipher No. 1 code words, read at grade H as '[signed] [Secretary of War]' with the period
+  book; its text is in the Huntington's public transcription of mssEC 19 (pointer 9071). The 'Sanders despatch' is George N. Sanders'
+  1 Sept 1864 telegram to D. Wier at Halifax, which Seward read out at Auburn on 3 Sept; 'Chas Armond' is the War Department operative at
+  Halifax who telegraphed Eckert on 2-3 Sept (Huntington mssEC 29 leaves 341, 348)." Unsafe: "unknown telegram", "previously unread",
+  any word implying the text was not available.
+- Depth: D1 stands (2 cipher tokens, no clause above the authentication distance). Not a counted solve, and not an N3.
+- Postmortem: LS-V7 classed the text "unknown" without reading the item's own public transcription; for an entry that is mostly clear text
+  that record is the first place a print check should look. The identifications in section 1 are this audit's; they rest on press OCR
+  and catalogue transcriptions, not on images read here.
+- Rows: status.json results[179] grade N1, text known, audit_status "two audits"; SO-ECKERT-E74 withdrawn (N1: second opinions are queued
+  only at N3 or better). Requests: Huntington 14, loc.gov about 21 (1 challenge, 3 answered 429; stopped), be-api 14, archive.org 3, Google
+  Books 5, OpenAlex 2, Semantic Scholar 2.

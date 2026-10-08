@@ -1326,3 +1326,11 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - E65 (8958/66/0) moved out of ciphertext.txt into ciphertext-no2.txt as N2-BO (N2-BN was the last used ID); decode.py and decode_no2.py `--write` then `--check` exit 0; header comment of ciphertext.txt records "E65: withdrawn, re-filed as N2-BO"; entries-mssEC19.tsv already_read cell and the LS-R6 table row updated (N2-BO decodes H 8, Butler to Stager, Cairo / Red R., per AUDIT LS-V6).
 - E60 (9003/111/1) header corrected to Lincoln to John Hay at the Astor House and a `plain: John` line added; decode.py `--write`/`--check` exit 0, code-word tokens H 7 (was 8).
 - The LS-R6 line "8958/66/0 ... is Cipher No. 1 vocabulary" above and its step-2 verdict are superseded by the LS-V6 note; no reading class changed.
+
+## D2V-E74 (8 Oct 2026, account 2, verifier, for LANE DEFAULT-account-2-20261008-0710)
+Second adversarial audit of E74 (AUDIT.md "## AUDIT 2 (second adversarial, D2V-E74)"). E74 lowered N3 -> **N1**: the Huntington's own public
+transcription of pointer 9071 already carries its clear body word for word; only the signature "Webster Brutus" = [signed] [Secretary of War]
+is in cipher (D1 unchanged). Identified: "Sand hers despatch" = George N. Sanders' telegram of 1 Sept 1864 from St Catharines to D. Wier at
+Halifax, read out by Seward at Auburn on 3 Sept (Natl Intelligencer 8 Sept 1864 p.2); "Chas Armond" = the War Department telegraph operative
+who reached Halifax on 3 Sept and telegraphed Eckert (mssEC 29 leaves 341, 348; mssEC 18 p.169 is a 6 Sept cipher to him, not decoded). No
+reading changed. Suggestion for a reader (not run): mssEC 18 p.169's "Chas Armond Halifax" block is a sibling worth decoding, ~$0.3.

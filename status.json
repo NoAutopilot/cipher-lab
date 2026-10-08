@@ -6201,9 +6201,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V7)'"
+        "AUDIT.md '## AUDIT (LS-V7)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, D2V-E74)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D1",
       "depth_pct": 100.0,
@@ -6216,10 +6217,10 @@
       "decode_status": "Non-decrypted",
       "date": "8 Oct 2026",
       "kind": "reading",
-      "title": "Eckert 1864: Stanton (Brutus) to Chas Armond, 11 Sept 1864, the publication of Sanders' despatch an enormous blunder (E74; clear text, signature in cipher)",
-      "grade": "N3",
-      "line": "Mostly clear text, signed with two Cipher No. 1 code words read at grade H; no prior printed text located in the Official Records, the 1864 press pages read, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; D1: only the signature is in cipher, so not a counted solve; 'Sanders' and the addressee unidentified; five press pages of 9-30 Sept 1864 unread; SO-ECKERT-E74 queued",
+      "title": "Eckert 1864: Stanton ([Secretary of War]) to Chas Armond at Halifax, 11 Sept 1864, the publication of Sanders' despatch an enormous blunder (E74; clear text, signature in cipher)",
+      "grade": "N1",
+      "line": "Clear text signed with two Cipher No. 1 code words read at grade H ('[signed] [Secretary of War]'); the text is in the Huntington's public transcription of mssEC 19 (pointer 9071) (two audits, 8 Oct 2026).",
+      "gap": "N1 (lowered by D2V-E74 8 Oct 2026): the Huntington's own public transcription of pointer 9071 carries the clear body word for word; D1, only the signature is in cipher; not a counted solve; 'Sanders' despatch' = G. N. Sanders' 1 Sept 1864 telegram to D. Wier, Halifax, read out by Seward at Auburn 3 Sept; Chas Armond = War Department operative at Halifax (mssEC 29 leaves 341, 348); SO-ECKERT-E74 withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.179, pointer 9071, E74"
       ],
@@ -6228,14 +6229,15 @@
         "Huntington mssEC 19 p.179, pointer 9071, E74"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N1",
       "mapping_novelty": "N3",
       "completeness": "2 H of 2 code words; the rest clear text",
-      "unresolved_spans": "Sand hers, Chas Armond (unidentified names)",
+      "unresolved_spans": "none (Sanders and Chas Armond identified, AUDIT 2 D2V-E74)",
       "reading_version": "LS-R7 8 Oct 2026 (reading.md), grades as revised in AUDIT (LS-V7) section 4",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V7)' section 5",
       "depth_check": "fresh rule-7 re-derivation (LS-V7); image lines 1-2 and tail (LS-V7)",
-      "depth_note": "2 H of 2 code words; the rest clear text"
+      "depth_note": "2 H of 2 code words; the rest clear text",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
