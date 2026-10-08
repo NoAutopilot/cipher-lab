@@ -842,3 +842,53 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; owner sorted all 258 tiles; k28 tiles and C03/C07/C09 gloss letters looked at against the key
 - [n/a] retry: no step has failed that a retry would change
 Verdict: keep going: 4 internal gaps; cheapest next: a per-row eye alignment of the 33 conflict/unaligned C tiles (~$1.5), then the crib-placement test against settled/key.tsv (~$2) (loose-ends 8 Oct 2026 added 1: fetch the 14 PDFs once and scan them for cipher spans (siblings of f.23 only), ~$0.5)
+
+## Neighbouring PDFs scan + per-row eye alignment of the 33 C tiles (D2-WVO, account 2, 8 Oct 2026, 07:39-07:4x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-08-account2-default-0710-jobs.md` job D2-WVO. Files in `d2wvo/`. Solver hat: search results and
+counts only, no novelty classification.
+
+**1. The 14 neighbouring WVO PDFs (R10-WVOREPLY table above).** 13 fetched once from `resources.huygens.knaw.nl/media/wvo/images/<band>/<nr>.pdf`
+(HTTP 200 each, 2.2 s apart, descriptive UA; 1111 already on disk as `raw/01111.pdf`). The PDFs are kept out of the repository (about 70 MB;
+30 MB folder rule); `d2wvo/pdf_manifest.tsv` holds URL, bytes, sha256 prefix and page count for re-fetch. 63 pages in all.
+- Text extraction (`pdftotext`): every PDF's text layer is only the archive header (holding archive, shelfmark, WVO URL) -- the scans are
+  image-only, so text cannot show a numeral or sign span.
+- Page look: every page rendered at 30 dpi (`pdftoppm -r 30`) into four contact sheets of 15 pages and looked at by this worker. No page
+  shows a block of separated signs like f.23's cipher rows, a numeral block, or an interlinear letter-over-sign layout; every text page
+  is running German secretary/Kanzlei hand, plus address leaves and seals. **No cipher span seen in 1110, 1112-1118, 3616, 4117, 4120,
+  4121, 5908** (1111 was already read natively, R8-WVO1111, plain). Limit: at 30 dpi a short cipher word or a few code numbers inside a
+  line would not show; this rules out cipher rows or blocks, not single words.
+- Requests: resources.huygens.knaw.nl 13 (PDFs), no 429/403.
+
+**2. Per-row eye alignment of the 33 conflict/unaligned C tiles.** `PREREG-D2-WVO.md` pushed (d5bb09022) before the montage was built.
+`d2wvo/build_montage.py` (crop step: tile boxes from `sorter/signs.tsv` + `sorter/bands.tsv` cut from `images/01109_p3_400full.jpg`, one panel
+per tile with the gloss row above, red box; four 12-panel sheets `montage_1-4.jpg`) mixed the 33 targets with 10 decoys sampled from the 159
+AGREE tiles (seed 1564), labelled P01-P43 only (`panel_key.tsv` holds the answers, not given to the reader). One blind Opus vision subagent
+read the letter over each box (`blind_read.tsv`); `scored.tsv` joins both.
+- **Decoy gate: 7/10, below the pre-registered 8/10 -> FAIL. Eye alignment by this reader is a non-test at this accuracy; no target class
+  is used and no key value changes.** (Not used, for the record: targets 10 AGREE, 21 CONFLICT, 2 NONE; the reader's letter equals R10's
+  gloss letter on 13 of 33 and realign/'s on 6.)
+- Diagnosis (this worker's reconciliation unit, one look at P13, P28, P42 with P03 for comparison): all three decoy misses are sign k22
+  (key d, C, 13/13 aligned), each read "g" by the reader. The gloss letter over k22 is the looped secretary d whose ascender bends back
+  into an 8-like loop; its neighbours read "en/ d a s" (das), "w o r d e n" (worden), "v n d" (vnd) -- d in each word, so the misses are
+  the reader's d/g confusion on one letter form, not a gloss or key error. The k19 g (P03, "nungen") has a closed lower loop and no
+  back-bent ascender. Re-scoring the gate without k22 would be post hoc; the gate stands as FAIL.
+- `python3 tools/decode_key.py ciphers/wvo-hessen-1564 --check` (209 tokens: H 58, M 61, U 90) and `... settled --check` (257: C 202, M 33,
+  U 22): both "reading up to date", exit 0 (no key file touched).
+- Rule 4 counts: unchanged (no key value changed). Network for this part: 0 requests; vision: 1 Opus subagent call + 1 reconciliation look.
+
+## Remaining gaps (finish-or-blocker pass, D2-WVO, 8 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, three audits); key per the owner's settled signs (settled/key.tsv, 24 C / 23 M); 159/257 tiles AGREE (control p95 9); k28 = b upheld by eye; the 14 neighbouring WVO letters scanned at 30 dpi, no cipher rows or blocks; decode_key top-level and settled/ --check exit 0
+- alignment slips (19 C conflicts, 14 C unaligned) - blocker: not-attempted; a blind single-reader eye alignment failed its own decoy gate (7/10, all misses the looped d of k22 read as g; D2-WVO), first attempt with that instrument; next: one blind read with a letter-form reference strip (the k22 looped d in "worden"/"vnd" beside the k19 g in "nungen", plus h, i, s exemplars) and 10 fresh decoys, same PREREG gate, ~$1.5
+- k11 in "taush" (C07 idx 14) and C03 "voans sp" - blocker: not-attempted; one occurrence each, read once by eye; next: fold into the reference-strip eye read above, ~$0 extra
+- crib-placement test - blocker: not-attempted; not in this brief; next: the crib-placement test against settled/key.tsv (k28 = b), ~$2
+
+## Escalation (D2-WVO, 8 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174; R9-WVOX concordance FAIL 0/7), 1069 key (R9-WVOX PASS 8/18); the 14 neighbouring WVO PDFs fetched and looked at, no cipher rows or blocks (D2-WVO)
+- [x] clear-pages: f.23's own interlinear gloss transcribed, reconciled, aligned, verified, re-aligned and re-verified (R9-WVOALIGN, R10-WVOTX, R10-WVOV, WVO-REALIGN, NZ-WVOV)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
+- [x] key-rebuild: key rebuilt per the owner's settled signs and re-aligned on them (WVO-APPLY, WVO-REALIGN); k28 verified by eye (NZ-WVOV)
+- [ ] image-check: the 33 conflict/unaligned C tiles eye-read blind once, decoy gate FAIL 7/10 (D2-WVO); next: the reference-strip blind read named in Remaining gaps, ~$1.5
+- [n/a] retry: the eye read is the step above, re-tried with a changed instrument (reference strip), not a plain retry
+Verdict: keep going: 3 internal gaps; cheapest next: the crib-placement test against settled/key.tsv (~$2) or the reference-strip eye read of the 33 tiles (~$1.5)
