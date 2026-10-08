@@ -11613,3 +11613,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:39 | AUD2-MANTR8 (acct3 verifier) | claim: sachsstaatsarchiv-manteuffel-1712 frames 0214+0375 second audit, cap $5, box ends 00:54 UTC 9 Oct, for LANE-VERIFY-4
 2026-10-08 23:39 | AUD-SIG-CHAV (acct3 verifier, Opus) | claim: baluze167-davaux-1637 Baluze 170 f.229 (Chavigny to d Avaux 25 Aug 1640) third audit, families AAE CP + Hessian side; cap USD 5, box 23:39-00:54 UTC 9 Oct; for LANE-VERIFY-4
 2026-10-08 23:39 | AUD3-E96 (acct3 verifier) | claim: eckert-1864 E96 Horan 1954 check, for LANE-VERIFY-4; cap $3, box 45 min
+2026-10-08 23:39 | AUD-SIG-E146 verifier (account 3) | claim: eckert-1864 E146 new-family audit (L&N histories, McCallum 1866, QMG/OR III.5), cap USD 3, box end 00:39 UTC 9 Oct; for LANE-VERIFY-4 / acct3-orchestrator
