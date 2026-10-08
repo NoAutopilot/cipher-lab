@@ -20,6 +20,12 @@ own mean bits per character (computed from the corpus, not the cipher). The defa
   python3 word_anneal.py control  --objective unigram  # refuses unless precheck_unigram.json passed
   python3 word_anneal.py target   --objective unigram  # refuses unless control_unigram.json passed
 Outputs carry a _unigram suffix; the GAPS43 files are never overwritten.
+
+SIG-4612B (8 Oct 2026, account 1, LANE SIG-1): `--objective bigram` (PREREG-bigram.md) prices word order: Viterbi over
+(position, previous word) of sum -log2 P(w | prev), interpolated absolute discounting (D = 0.75) of fr16 word-bigram counts
+onto the unigram above (same lexicon, same OOV_BITS); the first word of a run and any word after an OOV character take the
+unigram cost. Pre-check only under rule 3's third-attempt clause; outputs carry a _bigram suffix.
+  python3 word_anneal.py precheck --objective bigram
 """
 import csv, json, math, os, random, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(HERE)
@@ -33,6 +39,7 @@ ALPHA = sorted(set(WS.fold(c) for c in 'ABCDEFGHIKLMNOPQRSTVXYZ'))   # 23 folded
 ITERS, RESTARTS, T0, T1, PSWAP = 60000, 6, 1.5, 0.05, 0.3
 OBJECTIVE = 'seg'          # 'seg' (GAPS43 default) or 'unigram' (SIG-4612)
 UNI_MINCOUNT, UNI_OOV_MULT = 2, 2.0
+BI_D = 0.75
 
 def unigram_lexicon():
     """fr16 word-unigram costs in bits, and OOV_BITS = UNI_OOV_MULT x the corpus's mean bits per character."""
@@ -55,15 +62,55 @@ def unigram_cost(s, lex, maxlen, oov):
         best[i] = b
     return best[n]
 
+def bigram_model(lex):
+    """fr16 word bigrams over consecutive corpus tokens both in the unigram lexicon (a token outside it breaks the chain).
+    Returns (pair counts, context count, lambda per context): P(w|v) = max(c(v,w)-D,0)/c(v) + lambda(v) * P_uni(w),
+    lambda(v) = D x (distinct followers of v) / c(v), which sums to 1 over the lexicon."""
+    import collections
+    pair = collections.Counter(); ctx = collections.Counter(); prev = None
+    for w in fr.corpus_words():
+        if w not in lex: prev = None; continue
+        if prev is not None: pair[(prev, w)] += 1; ctx[prev] += 1
+        prev = w
+    foll = collections.Counter(v for v, w in pair)
+    lam = {v: BI_D * foll[v] / ctx[v] for v in ctx}
+    return dict(pair), dict(ctx), lam
+
+def bigram_cost(s, lex, maxlen, oov, bi, _cache={}):
+    """Viterbi over states (end position, last word or None after OOV/start); least total bits."""
+    pair, ctx, lam = bi
+    n = len(s); states = [{None: 0.0}] + [None] * n
+    for i in range(1, n + 1):
+        cur = {None: min(states[i - 1].values()) + oov}
+        for k in range(1, min(maxlen, i) + 1):
+            w = s[i - k:i]; u = lex.get(w)
+            if u is None: continue
+            pu = 2.0 ** -u; b = float('inf')
+            for v, c0 in states[i - k].items():
+                if v is None or v not in ctx: c = c0 + u
+                else:
+                    key = (v, w); bc = _cache.get(key)
+                    if bc is None:
+                        bc = -math.log2(max(pair.get(key, 0) - BI_D, 0) / ctx[v] + lam[v] * pu); _cache[key] = bc
+                    c = c0 + bc
+                if c < b: b = c
+            cur[w] = b
+        states[i] = cur
+    return min(states[n].values())
+
 def cost_fn(lex, maxlen):
-    """Objective selected by OBJECTIVE; lex is a set (seg) or a (dict, oov) pair (unigram)."""
+    """Objective selected by OBJECTIVE; lex is a set (seg), a (dict, oov) pair (unigram) or (dict, oov, bigram) (bigram)."""
+    if OBJECTIVE == 'bigram':
+        d, oov, bi = lex
+        return lambda s: bigram_cost(s, d, maxlen, oov, bi)
     if OBJECTIVE == 'unigram':
         d, oov = lex
         return lambda s: unigram_cost(s, d, maxlen, oov)
     return lambda s: BS.seg_cost(s, lex, maxlen)
 
 def suffix(name):
-    return name if OBJECTIVE == 'seg' else name.replace('.json', '_unigram.json').replace('.tsv', '_unigram.tsv')
+    if OBJECTIVE == 'seg': return name
+    return name.replace('.json', f'_{OBJECTIVE}.json').replace('.tsv', f'_{OBJECTIVE}.tsv')
 
 def subruns(runs, key):
     """Split value-1-120 runs at codes with no single-letter key row (same rule as word_share_check_v3)."""
@@ -98,7 +145,8 @@ class State:
         for i, v in new.items(): self.cost[i] = v
         self.total += d
 
-def anneal(subs, init, lex, maxlen, seed, iters=ITERS, restarts=RESTARTS):
+def anneal(subs, init, lex, maxlen, seed, iters=None, restarts=None):
+    iters, restarts = iters or ITERS, restarts or RESTARTS
     codes = sorted(c for c in init if any(c in s for s in subs))
     best = None
     for r in range(restarts):
@@ -127,9 +175,12 @@ def perturb(key, frac, rng, codes):
     return out, ch
 
 def setup():
-    if OBJECTIVE == 'unigram':
+    if OBJECTIVE in ('unigram', 'bigram'):
         d, maxlen, oov = unigram_lexicon(); lex = (d, oov)
         print(f'unigram lexicon {len(d)} words, maxlen {maxlen}, OOV {oov:.3f} bits/char', flush=True)
+        if OBJECTIVE == 'bigram':
+            bi = bigram_model(d); lex = (d, oov, bi)
+            print(f'bigram model {len(bi[0])} pairs, {len(bi[1])} contexts, D {BI_D}', flush=True)
     else:
         lex, maxlen = BS.lexicon()
     m = fr.load(); words = {w for w in m.words if len(w) >= 3}
@@ -164,6 +215,7 @@ def precheck():
     json.dump(res, open(os.path.join(HERE, suffix('precheck.json')), 'w'), indent=1)
 
 def control():
+    if OBJECTIVE == 'bigram': sys.exit('SIG-4612B: bigram objective is pre-check only (rule 3 third-attempt clause)')
     if OBJECTIVE == 'unigram' and not json.load(open(os.path.join(HERE, suffix('precheck.json'))))['pass']:
         sys.exit('PRECHECK FAILED: control not run (PREREG-unigram.md)')
     lex, maxlen, words, kf = setup()
@@ -229,5 +281,7 @@ def target():
 
 if __name__ == '__main__':
     if '--objective' in sys.argv: OBJECTIVE = sys.argv[sys.argv.index('--objective') + 1]
-    assert OBJECTIVE in ('seg', 'unigram')
+    if '--iters' in sys.argv: ITERS = int(sys.argv[sys.argv.index('--iters') + 1])      # timing runs only
+    if '--restarts' in sys.argv: RESTARTS = int(sys.argv[sys.argv.index('--restarts') + 1])
+    assert OBJECTIVE in ('seg', 'unigram', 'bigram')
     {'precheck': precheck, 'control': control, 'target': target}[sys.argv[1]]()
