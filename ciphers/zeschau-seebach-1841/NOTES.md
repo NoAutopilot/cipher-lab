@@ -751,3 +751,15 @@ No find in (a)-(d) makes the item calibration or found-solved.
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the Verdict's cheapest next -- the R9-ZESCH word-parse objective (`wordseg_syllabary.py`) with a stronger search (parallel tempering or 10x moves), its matched control first, ~$3 (R9-ZESCH, 6 Oct 2026: control 0.0026 vs 0.60, but the true key outscores the annealer's optima). Check Bourdeau's stated next step first (duplicate-effort risk, GAPS185).
+
+
+## Dresden reply, 8 Oct 2026 12:02 UTC (account-3 orchestrator)
+Reply in the project mailbox thread to our 5 Oct quote request (CONTRIBUTIONS row "Dresden reproduction quote, second fonds"),
+from the Hauptstaatsarchiv Dresden's Referent, case reference 12-2642/615/130 (an earlier copy of the same reply was recalled
+11:53 UTC and resent). Facts given: digital copies of 10731 Sächsische Gesandtschaft in Russland, Nr. 12 can be supplied; the file
+is **not foliated**, so no leaf numbers can be given; estimate 6-10 images; price EUR 4.00 base fee + EUR 0.40 per image, at most
+about EUR 10. Route: the archive's copy-application form ("Antrag auf Herstellung von Kopien",
+https://www.archiv.sachsen.de/fotografieren-und-kopieren-9056.html), filled in, signed, scanned and returned by email to the
+Referent, copy type "Datei - einfache Qualität, 0,40 EUR je Aufnahme". Owner step (ASKS 64); nothing ordered or paid yet.
+Rule 1d check: R5005 (18 Jan 1841) is transcribed and was excluded from the request; R5006's 692 digits on disk come from
+DECODE, not from the archive's own images, so the archive images are new material for all three 1842-43 letters.
