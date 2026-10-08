@@ -75,3 +75,6 @@ estimate, images on disk or host route, and the prior-work check 1 result per le
 expected value (P(first cheap test moves it) x value / cost; pools of 2,000+ signs and keys in hand first; BnF-on-disk wins ties). Write
 `research/FAMILY-POOLS-2026-10-08.md` (table + the top 6 with a one-paragraph next step each, cost band, and whether a check-solved is owed
 -- run `tools/intake_gate_check.py` on each existing folder and paste the line). Push; ROOM done line names the top 3.
+
+Spawned 16:21 UTC: FAM-MANT15 session_01KPBKpmZqWfbkT1aviBKAhy (Opus), FAM-HERM session_012WzDikiwfPBMe8fx6Rb8MR (Sonnet), FAM-WVOH
+session_01VJrv6UnrkT7hdhqsD4jAxg (Opus), FAM-POOL session_017eSeTNe93RXnLzuWvfzzwx (Opus). Wave 2 is drawn from FAM-POOL's ranked list.
