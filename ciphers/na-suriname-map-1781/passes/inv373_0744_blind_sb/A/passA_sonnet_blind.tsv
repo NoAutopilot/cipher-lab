@@ -1,0 +1,44 @@
+# SUR-BLIND pass A: one blind Sonnet call on crops p0744L_L01-L21 (crop paths only, reader-code vocabulary, [ij]=dotted, y=undotted; no values, no key), 8 Oct 2026 22:2x UTC, after PREREG 09cd01ce8. Verbatim as returned.
+crop	kind	text	conf	remarks
+L01	gloss	Strikten en tessem zo veel mogelyk de daar by ge	0.6	
+L01	cipher	, [lambda] 3 & [w-tilde] 3 [ij] [psi] n k [hash] e 3 7 c [ij] k [hash] 9 3 c t b r 7 7 r [delta] : o d t 9 3 S c [delta] : [lambda]	0.5	
+L02	gloss	plaatsken schepen alle te gelyk op de zelve kust	0.5	
+L02	cipher	[psi] [lambda] 7 [psi] r d 3 7 S d l [delta] 9 c 3 [lambda] 7 9 3 c t b [hash] S r 7 n 3 c c d b 5 y l 7 h 4 3 0	0.4	
+L03	gloss	neu wellen, en haare kraaften te zamen	0.5	
+L03	cipher	b 7 y , 3 l & : p o 3 b o [delta] 9 [lambda] 7 l [lambda] 7 n i . p y 3 y 9 3 l k [hash] y 7 l , 4 : [lambda] ' 3 0	0.4	
+L04	gloss	genomen, wat er ook mag voorkomen in Haat	0.5	
+L04	cipher	k [hash] b y 4 9 5 k [hash] o b k [hash] [ij] 3 [ij] , d 8 7 [lambda] d . o 8 y [psi] [lambda] . : p r 8 [psi] [lambda] d e 3 .	0.4	
+L05	gloss	is te verwielen, zy dient van die naturen te zyn,	0.5	
+L05	cipher	, o y 8 7 c d l , n t r 8 3 y r 5 : y r 8 3 [ij] [delta] [lambda] 5 5 0 [lambda] 3 n t y , r [delta] [lambda] o t	0.4	
+L06	gloss	dat zy een zwaare schok kan verdragen zonder	0.5	
+L06	cipher	3 7 y [psi] 4 [delta] : 0 3 [psi] p $ [hash] b b 7 . [ij] e 3 7 c d [ij] n [hash] [ij] r 3 0 [lambda] 7 d 0 3 7 6 b y	0.4	
+L07	gloss	te breeken en tetsens niet gemakkelyk kan gemaakt	0.4	
+L07	cipher	3 l [lambda] 3 & [w-tilde] 3 y . [psi] l & 3 [lambda] 9 d y [delta] b b . 3 c t b b [delta] y 9 3 b [delta] [pi] S [lambda] 4 [hash] o w 3 y	0.4	
+L08	gloss	worden. Ondere affecten te geniet en oordeelen wy	0.4	
+L08	cipher	[hash] y w 3 7 n d 3 & [w-tilde] 7 c [lambda] d l [lambda] 7 9 3 [ij] f 7 [lambda] d l , [hash] k o r 3 7 c d h 4 t r [delta] [lambda]	0.4	
+L09	gloss	dat zwaare anker touwen de beste boom naar	0.4	
+L09	cipher	[psi] 4 [delta] : 0 3 7 . y b 3 0 [lambda] k 5 4 . 3 [ij] r 7 d 3 [psi] [lambda] 7 d k [hash] y b a y 5 t [lambda] c 3 7 5 d .	0.4	
+L10	gloss	uitleveren, mits dat dezelve met hout zo.	0.4	
+L10	cipher	, o 7 l , y 8 [lambda] [psi] w [delta] [lambda] r 3 n 7 c 5 d y 3 [lambda] S [hash] 5 [lambda] n k r [delta] [ij] 8 9 9 3 r 7 6 ,	0.4	
+L11	gloss	danig gedekt word, dat dezelve volkomen dryft.	0.4	
+L11	cipher	, [lambda] 4 k o r w 7 . [lambda] r 3 n 7 c e d 5 k c b k [hash] [ij] 7 l r o t 9 [lambda] . S S 3 0	0.4	
+L12	gloss	hier toe is niet alleen veel moeite en tyd nodig,	0.5	
+L12	cipher	, [lambda] [hash] 7 8 [psi] [ij] 8 3 [lambda] . [delta] 9 c 3 7 y e 3 7 c y [hash] 3 & . [lambda] 7 d l [lambda] t r [ij] k [hash] r 8 9 ,	0.4	
+L13	gloss	maar daar word ook, veel tros Lynwerk en dunne	0.4	
+L13	cipher	y : p o n [ij] o 4 k o r k [hash] b 5 3 7 c [lambda] o [hash] 4 , c t y 4 3 0 b , 3 l o 5 y 3	0.3	
+L14	gloss	yzere hoepel banden toe gesticht, het gemis	0.4	
+L14	cipher	t n 3 0 7 & [hash] 3 S 7 c d r . y r 7 [ij] [lambda] [hash] 3 e 7 0 3 8 [psi] p & [lambda] , [lambda] ' 9 3 y 8 [psi] 5 : [ij]	0.3	
+L15	gloss	van deze noodzakelykheden is oorzaak dat wy	0.5	
+L15	cipher	r 3 7 n d y k [hash] r n : p b 3 c t b $ 3 7 r d l [psi] 8 6 K [hash] o n [delta] : b r p [lambda] 4 t	0.3	
+L16	gloss	Zodanigen boom met der jaardigt hebben schom	0.3	
+L16	cipher	n k [hash] r : p y 8 9 3 l 0 k [hash] y y 8 3 [lambda] e 3 0 5 : p o r 8 9 [lambda] 1 5 3 d 6 7 [ij] -	0.3	
+L17	gloss	'e meer dan een over gedacht en de middelen	0.3	
+L17	cipher	[psi] & $ k [hash] y 3 0 y 3 7 0 r : y 3 7 l [psi] k 5 3 0 9 d r [delta] 9 [lambda] , 3 l n d y 8 r : n 3	0.3	
+L18	gloss	daartoe betrekkelyk onderzogt hebben.	0.4	
+L18	cipher	c 7 y r [delta] : o [lambda] [hash] 3 d 7 [lambda] o 3 b b 7 c t b [hash] y r 3 0 [psi] k 9 [lambda] $ 3 d 6 7 [ij]	0.3	
+L19	gloss	Indien de Linie gelegt word dienen haare enden	0.4	
+L19	cipher	t y r 8 3 l r 7 c 8 y 8 3 9 d c 3 9 [lambda] 4 k o r , r 8 3 y 7 l $ [delta] : 0 3 d l r 3 l	0.3	
+L20	gloss	boven de Redout en zonaa aan de Kanten te	0.3	
+L20	cipher	d [hash] 5 3 y r 7 0 d r [hash] 5 [lambda] , 3 [ij] n [hash] y 4 [delta] : y r 7 b p y [lambda] 3 l [lambda] 7 b .	0.3	
+L21	gloss	komen, dat is toen minstens geen schepen kunnen	0.4	
+L21	cipher	K [hash] y 3 l r [delta] [lambda] ' 3 0 r 7 7 y 8 y [psi] [lambda] 3 l 9 3 7 y [psi] p $ 3 7 S 3 y b 5 y l 3 h	0.3	
