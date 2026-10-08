@@ -43,3 +43,36 @@ CISOSEARCHALL route, transcribe, apply key.md, with the same pre-filter as mssEC
 only if (a)-(e) run dry. Readers Sonnet where the filter makes them mechanical; first verifiers Opus, separate sessions, LS-V
 pattern, then WORK-QUEUE second-audit rows as above. An entry whose clear text is in print (OR, the Huntington transcription,
 the press of the day) is N1/N2: record it and move on.
+
+# Round 3b (account-3 orchestrator, 8 Oct 2026 11:4x UTC by date -u), from SIBS-READ's, ST-LEDGER-3's and DEFAULT-account-4's hand-ups
+
+Common rules as above (usage bar first; intake gate pasted; crops command pasted; control first; separate verifier sessions;
+depth bar file; rule 10 wording; stop before 80% of cap or box; STATUS.md/LEDGER/WORK-QUEUE at close).
+
+## VIV52 (account 1), lane orchestrator, cap $35, box 6 h: fr.16104 piece 52, Vivonne to the Queen, 5 Sept 1572
+The lead SIBS-READ handed up: ff.164r-168r (canvases 178-182), full cipher, about 270 lines, no gloss seen at 1200 px, "not in
+Gachard" (ciphers/fr16104-vivonne-spain-1572/NOTES.md lines 329, 374, 391). Steps: (1) premise, ~$1: Gachard II's entry for this
+letter, and the leaves after f.165 for a "dechiffré" or clear copy; stop and report if either exists. (2) crops with
+`tools/iiif_lines.py` from native Gallica regions (paste the command), two blind passes + one reconciliation per canvas, priced per
+pass. (3) decode with key.tsv / key_tomokiyo.tsv through the viv54 pipeline, `--check`, shuffled-key control, fr16 judge.
+(4) a separate first-verifier session if the reading beats its control. The existing Vivonne fragments are D1; say so if this
+letter reads no further than they do.
+
+## AUD1-B167 (account 2), verifier, Opus, cap $5, box 60 min: first audit of baluze167-davaux-1637, 170 f.229r-v
+Reading by D4-B167, re-derived exactly by D4V-B167 (H106/M258/I1/U1, fr17 judge PASS). You are separate from both. Verifier
+template (CLAUDE.md): N-class with logged search, key source (Tomokiyo's published letter table: `published`, credited), depth per
+the depth bar with the verifier's own sentence if D2, AUDIT.md, status.json row, SO row at N3+.
+
+## B167-228 (account 4), solver, Opus, cap $3, box 45 min: provisional decode of 170 f.228r-v with the f.229 letter values
+NOTES.md line 947's cheapest next. Crops already re-cut and re-passed (D1-BAL170, D1-BAL170B). decode_key.py --check, shuffled-key
+control, fr17 judge. Report what was found and where it was not found; do not classify novelty.
+
+## LS3-V86 (account 2), verifier, Opus, cap $3, box 45 min: first audit of eckert-1864 E86 and O9-BC (LS3-R18b)
+Separate from LS3-R18b, LS3-V18a and LS3-V18b. Same LS-V pattern; pre-filter OR ser. I, II and III and ORN (LS3-V18a found an entry in
+ser. III that earlier audits missed), the Huntington public transcription and the press of the day.
+
+## SIBS-PREMISE (account 4), Sonnet worker, cap $3, box 45 min: premise-pass SIBLINGS-2026-10-08.tsv
+SIBS-READ found 6 of 7 checked rows' state column wrong. Disk only, no network: for every row with p_counted >= 0.1, read the
+target's NOTES.md, AUDIT.md and Siblings section and set state to one of read / glossed / printed / unread-unglossed /
+needs-image / not-located, quoting the NOTES line. Write SIBLINGS-2026-10-08.tsv in place (shrink guard) and append the ten best
+unread-unglossed rows, with keys in hand, to the "Round 3b" section of this brief's file as a "## Next sibling round" list.
