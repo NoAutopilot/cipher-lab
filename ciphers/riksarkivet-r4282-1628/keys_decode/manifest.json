@@ -1,0 +1,92 @@
+{
+ "fetched": "2026-10-08 17:25-17:27 UTC",
+ "by": "FAM-4333L (LANE FAMILY, account 2)",
+ "route": "tools/decode_browser_login.js, one real-browser login, --guess-fullsize, 2000 ms delay",
+ "note": "Each record image is served as a one-page PDF wrapping one JPEG (R4104 3789x2416, 5278x4187, 3804x2449; R4120 5367x4330, 2587x3913, 2615x3939); extracted with pdfimages -j. PDFs not committed (about 10 MB); committed copies are 2000 px long side, JPEG q85. The IMG_*_P.png 'full-size' guesses were 100x100 generic icons (5244 bytes), not images.",
+ "items": [
+  {
+   "record": "R4104",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4104_I24174_P.pdf",
+   "original_file": "IMG_R4104_I24174_P.pdf",
+   "original_bytes": 986280,
+   "original_sha1": "f30977093cdb744eebd5f843924a0eb169b51254",
+   "original_px": null,
+   "committed_copy": "IMG_R4104_I24174_P_2000.jpg",
+   "committed_px": [
+    2000,
+    1275
+   ],
+   "committed_sha1": "646d3ac946cdd46a0828fb39fb7be2439e75feee"
+  },
+  {
+   "record": "R4104",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4104_I24175_P.pdf",
+   "original_file": "IMG_R4104_I24175_P.pdf",
+   "original_bytes": 2321448,
+   "original_sha1": "fa8511b5e0d88454f35a5621da2d8c9db3bb590f",
+   "original_px": null,
+   "committed_copy": "IMG_R4104_I24175_P_2000.jpg",
+   "committed_px": [
+    2000,
+    1587
+   ],
+   "committed_sha1": "35401637a4ab657f65ab09715843617bccf8aeb6"
+  },
+  {
+   "record": "R4104",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4104_I24176_P.pdf",
+   "original_file": "IMG_R4104_I24176_P.pdf",
+   "original_bytes": 1751987,
+   "original_sha1": "14644f530570aad37c490f02aba1b55264175c4d",
+   "original_px": null,
+   "committed_copy": "IMG_R4104_I24176_P_2000.jpg",
+   "committed_px": [
+    2000,
+    1288
+   ],
+   "committed_sha1": "f3d7d2e4ca8e3729af05a60b3949840467894285"
+  },
+  {
+   "record": "R4120",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4120_I24250_P.pdf",
+   "original_file": "IMG_R4120_I24250_P.pdf",
+   "original_bytes": 2227714,
+   "original_sha1": "3eb04d8cde2310f5dae85f9ad4d5b27f9b0d8800",
+   "original_px": null,
+   "committed_copy": "IMG_R4120_I24250_P_2000.jpg",
+   "committed_px": [
+    2000,
+    1614
+   ],
+   "committed_sha1": "daf04fb51d1e04aee9ec314f7f43e048ed93bd38"
+  },
+  {
+   "record": "R4120",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4120_I24251_P.pdf",
+   "original_file": "IMG_R4120_I24251_P.pdf",
+   "original_bytes": 1558454,
+   "original_sha1": "615820c3c9e587aaa6b9e83fd61b7486626a906d",
+   "original_px": null,
+   "committed_copy": "IMG_R4120_I24251_P_2000.jpg",
+   "committed_px": [
+    1322,
+    2000
+   ],
+   "committed_sha1": "21489b0256fe384ccc6fb0483a25615039117a8a"
+  },
+  {
+   "record": "R4120",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4120_I24252_P.pdf",
+   "original_file": "IMG_R4120_I24252_P.pdf",
+   "original_bytes": 1556859,
+   "original_sha1": "04bf9a0c8bb4b5739ab3237fa95985716f5519bb",
+   "original_px": null,
+   "committed_copy": "IMG_R4120_I24252_P_2000.jpg",
+   "committed_px": [
+    1328,
+    2000
+   ],
+   "committed_sha1": "9d49645c8bb7a95d6329a77a187de229691f2502"
+  }
+ ]
+}

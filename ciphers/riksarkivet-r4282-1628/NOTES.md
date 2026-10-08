@@ -1484,3 +1484,29 @@ England", "Laudian, cypher for Germany", "Ross, cypher for France", "Binnie, lor
 lord, cypher for Patrick Ruthven". Page read the same night: Eleazar Borthwick to Hamilton from Gothenburg and Stockholm, Apr-Jul 1637 (see hamilton-1650 NOTES.md).
 A cover-name list, not a numeric key, so unlikely to read the 1628 Camerarius cipher directly; recorded as context for the
 Swedish targets. Next if wanted: pp.40-41 page read (owner loan, 2 min).
+
+## FAM-4333L (8 Oct 2026, account 2, LANE FAMILY): DECODE key records R4104 and R4120 viewed
+One real-browser DECODE login (shared with decode-4333-rusdorff-oxenstierna-1628). Each image is served as a one-page PDF
+around one JPEG; extracted, 2000 px copies and source URLs/sha1 in keys_decode/manifest.json (PDFs not committed). Described by a
+Sonnet reader on the 2000 px copies; values approximate where small. This is the KEY1629-XMATCH suggestion above, done.
+- R4104 = Chifferklaver II:2, cover "Positiva och Resolutiva", "(a = 19, 48, 63, 96, 139, 191)", "(11 - 271)", "1620-talet ?".
+  Swedish homophonic key: 4-8 scattered values per letter (A 19 48 63 96 139 191; B 15 34 67 94 146 171; C 26 43 79 122 153 180),
+  letter values 11-193 plus doubles (ff ll nn ss tt) and a few glyphs, and a Swedish nomenclator 209-271 (Guarnison, Ammunition,
+  Proviant, General ... Commendant; Riga, Reval, Stockholm, Göteborg). Verso pencil "Carl X", "1670-". No correspondent named.
+- R4120 = cover "II:15" (DECODE says II:18), "1626", "Camerarius och Grubbe", "(a = 14, 15, 16)". Latin key: 24-letter alphabet
+  in four bands of six, three CONSECUTIVE values per letter (A 14-16, B 26-28, C 38-40, D 50-52, E 62-64, F 74-76, G 17-19,
+  T 23-25, Z 83-85), nulls above 85 (86 87 100 120 130, and letters); instruction sheet with the example "Deus nobiscum" =
+  50.62 35.80. 20.32.26.41.81.39.36.77.; cover-name lists "Vera nomina / Ficta" (Rex Sueciae -> Achilles/Antonius; Rex Hungariae
+  Bethlen Gabor -> Paulus/Sigismundus; Ordines Belgici -> Areopagitae/Quirites; Dux Vinariensis -> Tryphon/Hannibal; Camerarius ->
+  Leodius/Anastasius ...) and "Vera nota / Ficta" countries (Transsylvania -> Norwegia; Suecia -> Piccardia; Polonia -> Biscaia ...).
+  No numeric name codes.
+- Against the expectation (aosb/key_aosb1629.tsv: three interleaved rows a d g k n q t x / b e h l o r u / c f i m p s, each a block
+  of 8 consecutive numbers, values 12-91, word codes to 1981): **neither record is that table.** R4104 scatters its homophones and
+  stops at 271; R4120 gives each letter three consecutive numbers (a = 14,15,16, not a block per row) and has no word codes.
+  So the 1629 "chifferklaven" is still not located among the DECODE key records on disk.
+- Against R4282 itself (single digits, Greek letters, capitals): both are numeric; not candidates on design grounds (inferred, not
+  tested). One cheap side check stays open: R4120's cover names (Achilles, Areopagitae, Leodius, Tryphon, Norwegia, Piccardia ...)
+  may appear in the CLEAR Latin of 1626-28 Camerarius letters; next: grep R4282/R4284's clear phrases and the AOSB I:3/I:4
+  Camerarius letters for those words, ~$0.5 (not done; Usage 7).
+- R4120 is a range candidate for the Rusdorf 1625 numeric letters (see decode-4333-rusdorff-oxenstierna-1628/NOTES.md, FAM-4333L).
+No status change for R4282 (open).

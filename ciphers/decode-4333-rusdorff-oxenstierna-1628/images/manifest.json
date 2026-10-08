@@ -1,0 +1,263 @@
+{
+ "fetched": "2026-10-08 17:25-17:27 UTC",
+ "by": "FAM-4333L (LANE FAMILY, account 2)",
+ "route": "tools/decode_browser_login.js, one real-browser login, --guess-fullsize, 2000 ms delay",
+ "note": "Full-size originals served (not forbidden.png; 2448x3264 camera images). Originals not committed (about 30 MB); committed copies are 1600 px long side, JPEG q82. Re-fetch originals with one login: source_url.",
+ "items": [
+  {
+   "record": "R4333",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4333_I25979_P1.jpg",
+   "original_file": "IMG_R4333_I25979_P1.jpg",
+   "original_bytes": 2789693,
+   "original_sha1": "077e65d6245560a032d28d0b0b136b79a0ca12ec",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4333_I25979_P1_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "0a10e98452862bb91a493b297d0bdb75c6971024"
+  },
+  {
+   "record": "R4333",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4333_I25979_P2.jpg",
+   "original_file": "IMG_R4333_I25979_P2.jpg",
+   "original_bytes": 2640709,
+   "original_sha1": "5da89067fe7da6a596a2d095813e1a32c0128fcd",
+   "original_px": [
+    3264,
+    2448
+   ],
+   "committed_copy": "IMG_R4333_I25979_P2_1600.jpg",
+   "committed_px": [
+    1600,
+    1200
+   ],
+   "committed_sha1": "b00f7830d6893026b827da81b2f9cba3a6ed2e97"
+  },
+  {
+   "record": "R4333",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4333_I25979_P3.jpg",
+   "original_file": "IMG_R4333_I25979_P3.jpg",
+   "original_bytes": 2870911,
+   "original_sha1": "4a865947f7c3f3230b94817b5e40ad799c1a321a",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4333_I25979_P3_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "a48ff4da3bb10b0ecd8065055608e5a4399612d6"
+  },
+  {
+   "record": "R4333",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4333_I25979_P4.jpg",
+   "original_file": "IMG_R4333_I25979_P4.jpg",
+   "original_bytes": 2490893,
+   "original_sha1": "98d19b693f5e071091ac9b7aca7abb0f6e18f945",
+   "original_px": [
+    3264,
+    2448
+   ],
+   "committed_copy": "IMG_R4333_I25979_P4_1600.jpg",
+   "committed_px": [
+    1600,
+    1200
+   ],
+   "committed_sha1": "fa03d4ed475e74f239a8fa99ec00c3fba9d83046"
+  },
+  {
+   "record": "R4334",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4334_I25984_P1.jpg",
+   "original_file": "IMG_R4334_I25984_P1.jpg",
+   "original_bytes": 578375,
+   "original_sha1": "22d493db3af4d45e4e12d567903dfe01563c9cf6",
+   "original_px": [
+    3264,
+    2448
+   ],
+   "committed_copy": "IMG_R4334_I25984_P1_1600.jpg",
+   "committed_px": [
+    1600,
+    1200
+   ],
+   "committed_sha1": "d8194f3587bc886790e940d958e7165712cf0520"
+  },
+  {
+   "record": "R4334",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4334_I25984_P2.jpg",
+   "original_file": "IMG_R4334_I25984_P2.jpg",
+   "original_bytes": 902951,
+   "original_sha1": "5617452f51822c43e765e44f1e77732ec69200f0",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4334_I25984_P2_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "4b7c866caf26f46ade45374f423685f7b373d051"
+  },
+  {
+   "record": "R4334",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4334_I25984_P3.jpg",
+   "original_file": "IMG_R4334_I25984_P3.jpg",
+   "original_bytes": 1182938,
+   "original_sha1": "3ff1f170e37eaddcb0165711bdfcdaa320a8b024",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4334_I25984_P3_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "4db836b2b45586d9d7b4c2b233f7d91f5442ea37"
+  },
+  {
+   "record": "R4335",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4335_I25985_P1.jpg",
+   "original_file": "IMG_R4335_I25985_P1.jpg",
+   "original_bytes": 801976,
+   "original_sha1": "c33d6cb9487b9666e603257fd65875eec1fe1de0",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4335_I25985_P1_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "d1f8c4db0df2b4dab9ff3ef5fdadd0adfc8023d9"
+  },
+  {
+   "record": "R4335",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4335_I25985_P2.jpg",
+   "original_file": "IMG_R4335_I25985_P2.jpg",
+   "original_bytes": 910837,
+   "original_sha1": "0c43c37ecacaf91eaca110b8f95882773fc976ae",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4335_I25985_P2_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "99ffc7feec50de6ceff0c02b6b2f33793f2cb6ad"
+  },
+  {
+   "record": "R4335",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4335_I25985_P3.jpg",
+   "original_file": "IMG_R4335_I25985_P3.jpg",
+   "original_bytes": 620122,
+   "original_sha1": "961d0ac6dad59e0797095cb308d48832236dd4e9",
+   "original_px": [
+    3264,
+    2448
+   ],
+   "committed_copy": "IMG_R4335_I25985_P3_1600.jpg",
+   "committed_px": [
+    1600,
+    1200
+   ],
+   "committed_sha1": "4a2322c4a7e85379e63f6465f4991f0e244ed47f"
+  },
+  {
+   "record": "R4336",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4336_I25992_P1.jpg",
+   "original_file": "IMG_R4336_I25992_P1.jpg",
+   "original_bytes": 2516680,
+   "original_sha1": "2bd96d5f7144f3d25de855bbe9106354c23b7b3c",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4336_I25992_P1_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "79da1ed42693065970ffd817243dff1d287cb68c"
+  },
+  {
+   "record": "R4336",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4336_I25992_P2.jpg",
+   "original_file": "IMG_R4336_I25992_P2.jpg",
+   "original_bytes": 2460771,
+   "original_sha1": "10d94c4767556ba7ca1a19d87220b6ead6febc06",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4336_I25992_P2_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "992ab7c34d5595197f6e55624dace4aebc099302"
+  },
+  {
+   "record": "R4337",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4337_I25993_P1.jpg",
+   "original_file": "IMG_R4337_I25993_P1.jpg",
+   "original_bytes": 2698666,
+   "original_sha1": "66bdd0f0ca44b65ef900bc36e79cf99e1c78da6d",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4337_I25993_P1_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "30040c8aec3b860034acd081ca19c0e3733f93ed"
+  },
+  {
+   "record": "R4337",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4337_I25993_P2.jpg",
+   "original_file": "IMG_R4337_I25993_P2.jpg",
+   "original_bytes": 2067704,
+   "original_sha1": "2bdc362a9509086fd10a7a6666431b86b9248ce2",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4337_I25993_P2_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "fee7cacee10da3c7eb4a3d6527f2e7e30b778c6b"
+  },
+  {
+   "record": "R4337",
+   "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4337_I25993_P3.jpg",
+   "original_file": "IMG_R4337_I25993_P3.jpg",
+   "original_bytes": 2570983,
+   "original_sha1": "f3198c28c8b7bee04afdb1bee6a0355e5dd92e82",
+   "original_px": [
+    2448,
+    3264
+   ],
+   "committed_copy": "IMG_R4337_I25993_P3_1600.jpg",
+   "committed_px": [
+    1200,
+    1600
+   ],
+   "committed_sha1": "a27067216808f9127ed0d4006c1ae446138a57b7"
+  }
+ ]
+}
