@@ -885,5 +885,17 @@ Code-word tokens: H 6.
 
 Code-word tokens: H 8.
 
-Totals over the 77 entries: H 1860, C 71, I 61, M 2.
+**N2-BZ | Page 154 | 9047 | 14 Aug 1864 1.30 PM, to Chart at Grant's headquarters (operator S. H. Beckwith; LS4-R1a, row 9047/1; first read as No. 1 and re-filed here, Cipher No. 2 punctuation tulip/yacht/yawl)**
+
+[Washington] Mosis [14] Hamit For [Lieut Gen U.S. Grant] [.] The [Secretary of War] and I concur that you better confer with [Lee] and stipulate for a mutual dish continueants of house burning & other destruction of private property tu and [.] The time and manner of confer ants and particulars of stipulation we have on our part to your convenience and judge ment  {tail: [signed] [President U.S.] another {time: 2 PM} For Lt [Colonel] Bowers [Cairo] [.] [Colonel] Sharpes [Men] are not disposed to go out before [Wednesday] or [Thursday] [,] say they can not obtain [Information] by starting sooner [.] a man named WJLee formerly employed by [Colonel] Sharpe offers to make a trip to [Gordonsville] on [Horse] back starting [Tomorrow] morning if furnished with [Horse] and [200] doll yours [.] [Colonel] Sharpes [Men] represent him to be a good & reliable man [signed] Geo K Leet}
+
+Code-word tokens: H 29, I 2.
+
+**N2-CA | Page 157 | 9049 | 16 Aug 1864, to Mastiff (operator Chapel; LS4-R1a, row 9049/2; first read as No. 1, re-filed here: tulip, Mastiff)**
+
+{time: 8.30 PM} {date: Aug 16} for [Canby Ed R S] [New Orleans] [.] [Maj Genl U S Grant] directs that if [Kirby Smith] succeeds in [Cross (-ed, -ing)]ing the [Mississippi] that you [Concentrate (-ed, -ing)] all the [Troops] you can spare on [Mobile]  {tail: [signed] [General in Chief] does Myers still trouble you}
+
+Code-word tokens: H 14.
+
+Totals over the 79 entries: H 1903, C 71, I 63, M 2.
 <!-- decode.py: derived block ends -->

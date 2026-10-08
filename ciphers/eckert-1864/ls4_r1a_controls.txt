@@ -1,0 +1,99 @@
+E88 tokens=14 no1=7(0.50) no2=7(0.50) no9=2(0.14)
+  no1: H7 C0 I0 M0
+    {time: 12.30} Lawrence Send your dies Mounted [Cavalry] to [Cavalry] [Depot] Wash for remounts [Telegraph (-ed, -ing)] the number  {tail: [signed] [Chief of Staff]}
+  no2: H7 C0 I0 M0
+    {time: 12 noon AM} Lawrence Send your dies Mounted [Battery] to [Battery] [Depot] Wash for remounts [Valley] the number [Surrendered] [Secretary of State]
+  no9: H2 C0 I0 M0
+    {time: 12 noon} Lawrence Send your dies Mounted Pacific to Panama [Joe Johnston] Wash for remounts Wrangle the number walrus Borgia
+  no1shuf: H7 C0 I0 M0
+    {time: 12.30} Lawrence Send your dies Mounted [Lebanon] to [Orange C.H.] [Engine] Wash for remounts [Enemy] the number  {tail: [signed] [West]}
+  no2shuf: H7 C0 I0 M0
+    {time: 12 noon AM} Lawrence Send your dies Mounted [Effect (-ed, -ing) [#]] to [Davidson J W] [Indiana] Wash for remounts [Success] the number [Captain] [Saunders]
+E89 tokens=11 no1=8(0.73) no2=7(0.64) no9=2(0.18)
+  no1: H8 C0 I0 M0
+    {time: 2.30 PM} [15] for [Maj Gen Geo. H. Thomas] [.] How much [Force] and [Artillery] had Gill him [?] [President of the U.S.]
+  no2: H7 C0 I0 M0
+    {time: 2.30 PM} Ghost for [H W Halleck] [1000] How much [Force] and [Steidman [sic] J B] had Gill him [Infantry] [Bragg]
+  no9: H2 C0 I0 M0
+    {time: 4 PM} Ghost for Lamb [Movement] How much saint and negro had Gill him Sugar Irving
+  no1shuf: H8 C0 I0 M0
+    {time: 2.30 PM} [15] for [Cahawba] [.] How much [Unite (-ed, -ing)] and [Vermont] had Gill him [?] [Ohio]
+  no2shuf: H7 C0 I0 M0
+    {time: 2.30 PM} Ghost for [Secretary of Treasury] [1000] How much [Secretary of War] and [Rail-road] had Gill him [City Point] [McDaniels " [ditto = Gap]]
+E90 tokens=16 no1=13(0.81) no2=10(0.62) no9=2(0.12)
+  no1: H12 C0 I0 M0
+    {time: 1.30 PM} [20] for [Colonel] Biggs [Monroe] [.] Has [P. H. Sheriden] [Left] the [James] must we [Forage (-ed, -ing)] him by the other line [?]  {tail: [signed] [Qr Master Genl U.S.] Pleasant}
+  no2: H9 C0 I0 M0
+    {time: 1 PM} Harrow for [Casualties] Biggs [Tennessee] unity Has [Schenck R C] [Necessary] the [Pennsylvania] must we shade him by the other line [Infantry] [Surrendered] [Secretary of Treasury] Pleasant
+  no9: H2 C0 I0 M0
+    {time: 2 PM} Harrow for Pandora Biggs Animal unity Has Nabob [Transportation] the Bergen must we shade him by the other line Star Walrus Belcher Pleasant
+  no1shuf: H12 C0 I0 M0
+    {time: 1.30 PM} [20] for [Cleveland] Biggs [Newbern] [.] Has [Pemberton] [Selma] the [Volunteering] must we [Forage (-ed, -ing)] him by the other line [?]  {tail: [signed] [Surrender (-ed, -ing)] Pleasant}
+  no2shuf: H9 C0 I0 M0
+    {time: 1 PM} Harrow for [Banks N P] Biggs [Wheeler] unity Has [Maine] [Williamsburg] the [Nashville] must we shade him by the other line [Sheridan P H] [Captain] [Driven back] Pleasant
+E91 tokens=26 no1=11(0.42) no2=9(0.35) no9=4(0.15)
+  no1: H10 C0 I0 M0
+    [Washington] {date: May 21} {time: 10 AM} For H S Sanford Brevont Hearse [New York] [.] Please come hither [,] Your depart ure for Europe [As soon as] practicable is deemed Tartan  {tail: [signed] [Secretary of State] Johnnie has gone for a soldier boy}
+  no2: H8 C0 I0 M0
+    [Maj Gen B. F. Butler] May Harsh Plug {time: 10 AM} For H S Sanford Brevont Hearse [Macon] [1000] Please come hither [Cavalry] Your depart ure for Europe [Army] practicable is deemed Tartan [100] [Monroe] Johnnie has gone for a soldier boy
+  no9: H4 C0 I0 M0
+    Growl May Harsh Plug {time: 7 AM} For H S Sanford Brevont Hearse [Arkansas (river)] [Movement] Please come hither Pekin Your depart ure for Europe Persia practicable is deemed Tartan [Troops] Bunyan Johnnie has gone for a soldier boy
+  no1shuf: H10 C0 I0 M0
+    [Gen J. M. Palmer] {date: May 21} {time: 10 AM} For H S Sanford Brevont Hearse [Ford (-ed, -ing)] [.] Please come hither [,] Your depart ure for Europe [Tuscaloosa] practicable is deemed Tartan  {tail: [signed] [Maj Gen J. G. Foster] Johnnie has gone for a soldier boy}
+  no2shuf: H8 C0 I0 M0
+    [Aquia Creek] May Harsh Plug {time: 10 AM} For H S Sanford Brevont Hearse [Louisville] [1000] Please come hither [Jasper] Your depart ure for Europe [Clinch] practicable is deemed Tartan [100] [Finding] Johnnie has gone for a soldier boy
+E92 tokens=28 no1=13(0.46) no2=14(0.50) no9=5(0.18)
+  no1: H11 C0 I0 M0
+    {time: 11 AM} for Capt Thomas ---- Let the vessels bringing up ricketts [Troops] return at once to [City Point] & send to that place all [Steam] [Transport (-ed, -ing)]'s in US service now [Available] [In the] port of [Baltimore] [.] Despatch!  {tail: [signed] [Qr Master Genl U.S.] ---- ---- ----}
+  no2: H11 C0 I0 M0
+    {time: 11 AM} for Capt Thomas ---- Let the vessels bringing up ricketts [Telegraph (-ed, -ing)] return at once to [Cairo] & send to that place all [Transportation] [Telegraph (-ed, -ing)]'s in US service now [Steele Fdk] [Left] port of [Baton Rouge] [1000] Despatch! [Surrounding] [Secretary of Treasury] ---- ---- ----
+  no9: H5 C0 I0 M0
+    {time: 9 AM} for Capt Thomas ---- Let the vessels bringing up ricketts [Threaten] return at once to [W. S. Sherman] & send to that place all wayworn [Threaten]'s in US service now nutmeg stephen port of Banditti [Movement] Despatch! webster belcher ---- ---- ----
+  no1shuf: H11 C0 I0 M0
+    {time: 11 AM} for Capt Thomas ---- Let the vessels bringing up ricketts [Flank (-ed, -ing)] return at once to [Red River] & send to that place all [Available] [Atlanta]'s in US service now [Kanawha] [Heavy] port of [" " Treasury] [.] Despatch!  {tail: [signed] [Surrender (-ed, -ing)] ---- ---- ----}
+  no2shuf: H11 C0 I0 M0
+    {time: 11 AM} for Capt Thomas ---- Let the vessels bringing up ricketts [Valley] return at once to [Saturday] & send to that place all [Telegraph (-ed, -ing)] [Subsist (-ed, -ing)]'s in US service now [Comstock Lt Col C B] [Advance (-ed, -ing)] port of [Maj Gen J G Foster] [1000] Despatch! [Tuckers Station] [Driven back] ---- ---- ----
+E93 tokens=23 no1=13(0.57) no2=11(0.48) no9=2(0.09)
+  no1: H13 C0 I0 M0
+    {time: 4 PM} [16] to Polking officer [Nashville] Send immediately to [Louisville] [Kentucky] [2] [Regiment]'s of dis mounted [Cavalry] or [100] days [Men]'s well armed & supplied with [Ammunition]  {tail: [signed] [General-in-Chief]}
+  no2: H11 C0 I0 M0
+    {time: 4 PM} Gas to [Commander]ing officer [General in Chief] Send immediately to [Independence] [Mississippi] plank [Skirmish (-ed, -ing)]'s of dis mounted [Battery] or William days [Near]'s well armed & supplied with [Dahlgren J A] [Surrendered] [Ewell]
+  no9: H2 C0 I0 M0
+    {time: 7 PM} Gas to Polking officer Embrace Send immediately to Dragon Aurora plank whips of dis mounted Panama or William days [Transports]'s well armed & supplied with offal walrus Ireland
+  no1shuf: H13 C0 I0 M0
+    {time: 4 PM} [16] to Polking officer [Jones] Send immediately to [Arrest (-ed, -ing)] [Qr Master Genl U.S.] [2] [Encountered enemy in strong force]'s of dis mounted [Orange C.H.] or [100] days [Ohio]'s well armed & supplied with [Port Royal]  {tail: [signed] [Abandon (-ed, -ing)]}
+  no2shuf: H11 C0 I0 M0
+    {time: 4 PM} Gas to [Suffolk]ing officer [Corinth] Send immediately to [Lynchburg] [Maj Gen B. F. Butler] plank [Rail-road]'s of dis mounted [Davidson J W] or William days [Surround]'s well armed & supplied with [Threaten (-ed, -ing)] [Captain] [Drove in Enemys Pickets]
+E94 tokens=22 no1=10(0.45) no2=10(0.45) no9=3(0.14)
+  no1: H9 C0 I0 M0
+    [Washington]er {time: 10.30 AM} {date: Aug 1} For [Maj Gen Jno A. Dix] [.] The money and pack cage concerning which I [Telegraph (-ed, -ing)]d you on Friday are [In the] Chemical bank and not the bank of Commerce  {tail: [signed] [C. A. Dana] of old nick}
+  no2: H9 C0 I0 M0
+    [Maj Gen B. F. Butler]er {time: 10.30 AM} Aug Plug For [Wheeler] unity The money and [Forward] cage [Gordons Mill]ing which I [Valley]d you on Friday are [Killing] Chemical bank and not the bank of Commerce [Saturday] [Cheatham] of old nick
+  no9: H3 C0 I0 M0
+    Growler {time: 8 AM} Aug Plug For Kasson unity The money and pack cage concerning which I wrangled you on Friday are Sligo Chemical bank and not the bank of Commerce [Troops] [Baltimore] of old nick
+  no1shuf: H9 C0 I0 M0
+    [Gen J. M. Palmer]er {time: 10.30 AM} {date: Aug 1} For [Right] [.] The money and pack cage concerning which I [Enemy]d you on Friday are [Pearl] Chemical bank and not the bank of Commerce  {tail: [signed] [Threaten (-ed, -ing)] of old nick}
+  no2shuf: H9 C0 I0 M0
+    [Aquia Creek]er {time: 10.30 AM} Aug Plug For [Tallapoosa] unity The money and [West Point] cage [Charleston]ing which I [Success]d you on Friday are [Etowah] Chemical bank and not the bank of Commerce [Hardee] [Ewell] of old nick
+N2-BZ tokens=92 no1=27(0.29) no2=34(0.37) no9=6(0.07)
+  no1: H26 C0 I0 M0
+    [Lee] Mosis Kirby Hamit For [Knoxville] [Open (-ed, -ing)] The [Adjt Genl. U.S.] and I concur that you better confer with [Maj Genl G. G. Meade] and stipulate for a mutual dish continueants of house burning & other destruction of private property tu and [Drove in our pickets] The time and manner of confer ants and particulars of stipulation we have on our part to your convenience and judge ment [Encountered enemy in strong force] [Jasper] another {time: 2 PM} For Lt [Camp] Bowers [City Point] yard [Camp] Sharpes [I
+  no2: H29 C0 I2 M0
+    [Washington] Mosis [14] Hamit For [Lieut Gen U.S. Grant] [.] The [Secretary of War] and I concur that you better confer with [Lee] and stipulate for a mutual dish continueants of house burning & other destruction of private property tu and [.] The time and manner of confer ants and particulars of stipulation we have on our part to your convenience and judge ment  {tail: [signed] [President U.S.] another {time: 2 PM} For Lt [Colonel] Bowers [Cairo] [.] [Colonel] Sharpes [Men] are not disposed to go out before [Wedne
+  no9: H6 C0 I0 M0
+    Hunter Mosis Kirby Hamit For Chart tulip The Beach and I concur that you better confer with Jaunt and stipulate for a mutual dish continueants of house burning & other destruction of private property tu and [Hd. Qrs.] The time and manner of confer ants and particulars of stipulation we have on our part to your convenience and judge ment yawl college another {time: 3 PM} For Lt Pearl Bowers [W. S. Sherman] yard Paxton Sharpes Summer are not disposed to go out before [Hd. Qrs.] or [Reinforcements] Pike say they can n
+  no1shuf: H26 C0 I0 M0
+    [Our scouts report] Mosis Kirby Hamit For [Guard (-ed, -ing)] [Martinsburg] The [Nashville] and I concur that you better confer with [Subsistence] and stipulate for a mutual dish continueants of house burning & other destruction of private property tu and [Expedition] The time and manner of confer ants and particulars of stipulation we have on our part to your convenience and judge ment [Maj Gen D. Butterfield] [Troops] another {time: 2 PM} For Lt [Fredericksburg] Bowers [Gunboat] yard [Chattanooga] Sharpes [Brecke
+  no2shuf: H29 C0 I2 M0
+    [Fight (-ing, Fought) [#]] Mosis [14] Hamit For [Rhodes] [.] The [Fortify (-ed, -ing, -cation) [#]] and I concur that you better confer with [Train] and stipulate for a mutual dish continueants of house burning & other destruction of private property tu and [.] The time and manner of confer ants and particulars of stipulation we have on our part to your convenience and judge ment  {tail: [signed] [East] another {time: 2 PM} For Lt [Martinsburg] Bowers [Hatch J P] [.] [Force] Sharpes [Unsuccessful] are not disposed 
+N2-CA tokens=22 no1=14(0.64) no2=14(0.64) no9=2(0.09)
+  no1: H13 C0 I0 M0
+    {time: 8.30 PM} Aug Knapp for [Maj Gen B. M. Prentiss] [Stevenson] [Open (-ed, -ing)] [Culpepper] directs that if [Maj Genl A. E. Burnside] succeeds in [Cross (-ed, -ing)]ing the [Kentucky] that you [By the way of] all the [Scatter (-ed, -ing)] you can spare on [Richmond] [Rail Road] [Nashville] does Myers still trouble you
+  no2: H14 C0 I0 M0
+    {time: 8.30 PM} {date: Aug 16} for [Canby Ed R S] [New Orleans] [.] [Maj Genl U S Grant] directs that if [Kirby Smith] succeeds in [Cross (-ed, -ing)]ing the [Mississippi] that you [Concentrate (-ed, -ing)] all the [Troops] you can spare on [Mobile]  {tail: [signed] [General in Chief] does Myers still trouble you}
+  no9: H2 C0 I0 M0
+    {time: 4.30 PM} Aug Knapp for Mastiff Ginger tulip [C. A. Dana] directs that if Jargon succeeds in pluming the Aurora that you peasant all the widow you can spare on Garden welch Embrace does Myers still trouble you
+  no1shuf: H13 C0 I0 M0
+    {time: 8.30 PM} Aug Knapp for [Guard (-ed, -ing)] [La Grange] [Martinsburg] [Today] directs that if [Baltimore] succeeds in [Pieces]ing the [Qr Master Genl U.S.] that you [Suffolk] all the [Lynchburg] you can spare on [Scatter (-ed, -ing)] [Maj Gen J. G. Foster] [Jones] does Myers still trouble you
+  no2shuf: H14 C0 I0 M0
+    {time: 8.30 PM} {date: Aug 16} for [Unite (-ed, -ing)] [Lee] [.] [Effect (-ed, -ing)] directs that if [Jeff Davis] succeeds in [Williams " [ditto = Ferry]]ing the [Maj Gen B. F. Butler] that you [Maj Gen B. F. Butler] all the [Commander] you can spare on [Beatty J]  {tail: [signed] [Corinth] does Myers still trouble you}

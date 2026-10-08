@@ -649,9 +649,9 @@ Code-word tokens: H 12.
 
 **E91 | Page 75 | 8967 | 21 May 1864 10 AM, to H. S. Sanford (operator Jno Horner; LS4-R1a, row 8967/1)**
 
-[Washington] {date: May 21} {time: 10 AM} For H S Sanford Brevont Hearse [New York] [.] Please come hither [,] Your depart ure for [Mobile] [As soon as] practicable is deemed Tartan  {tail: [signed] [Secretary of State] Johnnie has gone for a soldier boy}
+[Washington] {date: May 21} {time: 10 AM} For H S Sanford Brevont Hearse [New York] [.] Please come hither [,] Your depart ure for Europe [As soon as] practicable is deemed Tartan  {tail: [signed] [Secretary of State] Johnnie has gone for a soldier boy}
 
-Code-word tokens: H 11.
+Code-word tokens: H 10.
 
 **E92 | Page 104 | 8996 | 7 Jul 1864, to Capt. Thomas (operator Sampson, Bueto; LS4-R1a, row 8996/1)**
 
@@ -671,5 +671,5 @@ Code-word tokens: H 13.
 
 Code-word tokens: H 9.
 
-Totals over the 90 entries: H 1365, C 14, I 0, M 0.
+Totals over the 90 entries: H 1364, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
