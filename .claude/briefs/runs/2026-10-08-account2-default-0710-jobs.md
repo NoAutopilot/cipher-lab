@@ -200,3 +200,22 @@ marker sign, capitals, etc.), pre-register in PREREG-D2-FAIR.md with a planted-m
 each scheme in a same-length decoy; the sweep must recover it) and a null (shuffled text) false-pass rate; push before scoring. Score with
 tools/judge_plaintext.py where a judge spec exists (note the `en` corpus caveat, CLAUDE.md rule 3). Report the best scheme with both numbers;
 HYPOTHESES.md, NOTES, gaps.
+
+## Wave 4 (spawned as slots free, from 08:0x UTC 8 Oct)
+Intake gate 07:5x UTC: `censorship-manual-stego: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0);
+`whitworth-1707: blocked (line 3) -- already terminal, nothing to gate` (search-only job, no deep work).
+
+### D2-DUPL -- censorship-manual-stego: joined-hand Duployé control + blind re-read (solver, Opus; cap 3.5, box 75 min)
+NOTES.md "## While waiting" (l.~274) and Escalation retry rung (l.271): fetch a period Duployé stenography manual from Internet Archive (public
+domain; advancedsearch, 1.5 s apart; pick one printing joined handwritten word forms), cut crops of joined words at the target's pixel size
+with tools/iiif_lines.py --image, and use them as a design-matched control for the existing signature-'H' test: pre-register in
+PREREG-D2-DUPL.md (control must read >= the registered rate on known Duployé words before the target read counts). Then one blind subagent
+read of the signature crop (a fresh subagent that is not told the hypotheses) and re-run scripts/sig_hypothesis_score.py on that reading.
+Report control and target numbers side by side; HYPOTHESES.md, NOTES, gaps. The TNA 1200 dpi images still wait on ASKS row 126.
+
+### D2-WHIT -- whitworth-1707: two lookups R8-WHIT left (worker, Opus; cap 2.5, box 50 min)
+NOTES.md "## While waiting (27 Sept)" and "## R8-WHIT lookups (6 Oct)": (1) retry `tools/htrc_ef_headwords.py` for 'Whitworth' / 'cipher' /
+'cypher' / 'decipher' / 'SP 91' on Hartley 2002 (mdp.39015055900651) and Rothstein 1986 (mdp.39015028544073) -- EF was down on 6 Oct; one
+retry after a pause at most; record page hits. (2) one DECODE browser login (tools/decode_browser_login.js; CLAUDE.md DECODE row) and a
+holder/sender search for Whitworth / SP 91 / Moscow 1705-1712 records. Search result only; status stays blocked. NOTES (section + While
+waiting ticks), request counts per host.
