@@ -180,3 +180,13 @@ the decoded words inside their frame.
 
 Result: no SUBSTANCE located. **Class kept: N3** (Haug 2015 remains the named N2/N4 decider). No status.json or SO change.
 Requests: be-api.us.archive.org 3, www.googleapis.com 4, api.openalex.org 3.
+
+## Depth re-rule (DV-AD3, 8 Oct 2026)
+
+Item: Gravel to Colbert, 29 Jan 1665 (status.json results[125]). Bar: `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`, copied before ruling into `research/DEPTH-AD-2026-10-08/PREREG-DVAD3.md` (commit 2556487c). Verifier DV-AD3 (account 4, LANE DEPTH), a separate session from DEPTH-AD and from every solver of this folder. Re-run: `tools/depth_stats.py` with DEPTH-AD's own inputs (`research/DEPTH-AD-2026-10-08/u08_gravel/`), seeds 8100-8299, 200 shuffles; tokens TSV re-derived from the folder's committed reading with `research/DEPTH-AD-2026-10-08/to_tokens.py` and found identical; summary.json reproduced with no field differing.
+- Decode: `tools/decode_key.py ciphers/decode-2678-bnf-colbert127-gravel-1665 --check` exit 0, "reading up to date" (8 Oct 2026). Tokens 15: H 11, M 2, U 2 (H/C/S 73.3%; on file 73).
+- Design: number+mark syllabic nomenclator, published 1672 key (Tomokiyo), not fitted to this leaf. V 96, 13 distinct codes: H_design 85.6; liberties 2 M + 2 U 15.2; H(K) 100.8; R 2.172 (fr17); AD 69.6 letters (44.5 at R 3.4; 59.1 design bits alone). Under the bar the unfitted period key does not shrink H(K) to the liberties.
+- Cipher clause: longest contiguous H/C/S run 12 letters ("eles c ha no i ne" -> "les chanoine", P3). Not met; M-through run 12.
+- Code clause, checked by hand: 15 tokens, no code value recurs. Not met. The pre-registered value/order-shuffle controls and the clear-frame agreement on file are external/statistical checks, which the bar places at D3/D4 and does not accept in place of a clause at D2.
+- Ruling: **D1** (was D2). Outward: "fragments read". The sentence on file ("les chanoine[s]" as recipients of the pension) is read from P3 and stays as the D1 sentence.
+- Depth revision only: N3 and key untouched; no SECOND-OPINIONS-QUEUE prompt quotes this item's depth.

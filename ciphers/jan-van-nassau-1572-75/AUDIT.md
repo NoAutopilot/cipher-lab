@@ -623,3 +623,13 @@ G3 tool run (V2-G3GAPS): on the committed reading_5551.txt the tool's LEAD came 
 decode key", Google Books locks-and-safes volumes) -- an artifact (comment lines not skipped; flagged to the lane). Groen IV and
 Gachard t.1-6: 6 phrases each, no hit (UNCHECKED: no control hit). The cipher lines are too fragmentary (two short lines, nine unread
 groups) for a clean re-run to say more than the hand searches above; not re-run. No SUBSTANCE. Class unchanged.
+
+## Depth re-rule (DV-AD3, 8 Oct 2026)
+
+Item: WVO 5551 (status.json results[2]). Bar: `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`, copied before ruling into `research/DEPTH-AD-2026-10-08/PREREG-DVAD3.md` (commit 2556487c). Verifier DV-AD3 (account 4, LANE DEPTH), a separate session from DEPTH-AD and from every solver of this folder. Re-run: `tools/depth_stats.py` with DEPTH-AD's own inputs (`research/DEPTH-AD-2026-10-08/u07_wvo5551/`), seeds 8100-8299, 200 shuffles; tokens TSV re-derived from the folder's committed reading with `research/DEPTH-AD-2026-10-08/to_tokens.py` and found identical; summary.json reproduced with no field differing.
+- Decode: `decode_key.py --config decode_5551.json --check` and `--config decode_5551_full.json --check` both exit 0 (8 Oct 2026). Full-key reading (key_full): 32 tokens, C 26, I 2, M 1, U 3 -- H/C/S 81.2% (on file 71.9%; DEPTH-AD's figure is confirmed).
+- Design: letter cipher + nulls + name codes (Lodewijk 1574 table, key_full; nulls blanked). V 24, 28 distinct codes: H_design 128.4; liberties 1 M + 3 U (+I) 14.8; H(K) 143.1; R 2.135 (de1600); AD 100.6 letters (63.1 at R 3.4; 90.2 design bits alone).
+- Cipher clause: longest contiguous H/C/S run 6 letters ("entlii", L2). Not met; M-through run also 6.
+- Code clause, checked by hand: no code recurs inside the 32 tokens. The one word code, 136 = 'uingt' (M), stands in "der konig [uingt] van polen", where it makes no German sense, so it cannot count as a sensible context even if pooled with its contexts in the Lodewijk letters. Name codes 145, 146, 140 are U. Not met.
+- Ruling: **D1** (was D2). Outward: "fragments read". The sentence on file (the King of Poland, 'offentli[ch]') is read from the two lines and stays as the D1 sentence.
+- Depth revision only: N-class, key and readings untouched; no SECOND-OPINIONS-QUEUE prompt quotes this item's depth.

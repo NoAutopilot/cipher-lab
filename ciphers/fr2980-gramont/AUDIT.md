@@ -2205,3 +2205,13 @@ Prior-work checks 3-5:
 Result: no print hit. **Classes kept: no.21 N4, no.22 N4.** Depths not re-examined. status.json and the SO rows are unchanged.
 Requests: be-api.us.archive.org 5, www.googleapis.com 5, archive.org 1 (djvu). Files: `phrases_g3.txt`, `print-check-g3.tsv`,
 `print-check-g3-hosts.tsv`.
+
+## Depth re-rule (DV-AD3, 8 Oct 2026)
+
+Item: f.30r-v no.22 (status.json results[38]). Bar: `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`, copied before ruling into `research/DEPTH-AD-2026-10-08/PREREG-DVAD3.md` (commit 2556487c). Verifier DV-AD3 (account 4, LANE DEPTH), a separate session from DEPTH-AD and from every solver of this folder. Re-run: `tools/depth_stats.py` with DEPTH-AD's own inputs (`research/DEPTH-AD-2026-10-08/u02_gramont_f30/`), seeds 8100-8299, 200 shuffles; tokens TSV re-derived from the folder's committed reading with `research/DEPTH-AD-2026-10-08/to_tokens.py` and found identical; summary.json reproduced with no field differing.
+- Decode: `decode.py --check` exit 0 and `tools/decode_key.py ciphers/fr2980-gramont --check` exit 0 (8 Oct 2026). Tokens 1969: H 1468, C 18, S 181, M 239, U 63 (H/C/S 84.7%).
+- Design: letter homophonic + nulls + a few syllable signs, published key (Tomokiyo/Lasry) + key_extension_f30 (S). V 24, 59 distinct cipher-class codes: H_design 270.5 bits; liberties 239 M + 63 U = 527.9 bits; H(K) 798.4; R 2.116 (fr16); AD 565.8 letters (352.2 at R 3.4; 191.8 on the design bits alone with no liberty charged).
+- Cipher clause: longest contiguous H/C/S run 47 letters ("voyreivsqvesasestreiadeclareqvilvevltallelenavi"). Not met under any of the three AD figures. The M-through run (DV-MERCY alternative) is 175, also below 565.8 / 352.2.
+- Code clause, checked by hand: no word or name code recurs in the item. The only multi-letter value that recurs is `bb`=COM (15 tokens, 8 H, 7 M), reading com- in comme, commande(ra), considerer -- but it is a syllable sign of the substitution table (counted in H_design, cipher class len<=3), not a code value, and its contexts are the same running text the cipher clause measures; ruled not a code clause. Not met.
+- Ruling: **D1** (was D2). Outward: "fragments read". depth_pct 84.7 kept as a figure; the sentence on file ("pour faire ce qu'il vouldra et non aultre", f30r L16) is in the reading and stays as the D1 sentence.
+- A fall to D1 is a depth revision, not a reading change: N-class, key and readings untouched; no SECOND-OPINIONS-QUEUE prompt quotes this item's depth.
