@@ -1,0 +1,4 @@
+images/gate178/passA.tsv: letters 245 real score -1.400 shuffled mean -1.781 p99 -1.609 max -1.592 rank 0/200
+zdebuezcroyreleyezcroyreleyudedehespetrnhespererulcunchmlcesoteldoeuoyerdqoyloprdqoylopudebuezcrestrerlonestfomoyenlonpeultpelonpeultperdoxfultesddpreslzdonnegrndpernncesdunenoutncesdunenouuelleelleti
+images/gate178/passB.tsv: letters 312 real score -1.396 shuffled mean -1.781 p99 -1.642 max -1.593 rank 0/200
+lttiynosecroyzsururrurlpouuzmttionretintentiamispixsytunncesdunenouuenncesdunenouuelleellmxfultesumprespreslzdonnegrndmoyenxetonpeutidolonpeultperdouneudebuezcrindrprindrtrerionestfoueuoyerdqoylopurdq

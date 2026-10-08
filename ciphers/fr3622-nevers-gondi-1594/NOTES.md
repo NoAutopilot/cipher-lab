@@ -32,3 +32,6 @@ Gallica requests this job: about 39 incl. 1 reset+1 retry.
 ciphers/fr3622-nevers-gondi-1594: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
+
+## BNF-G41 (8 Oct 2026, account 2, first cheap test)
+Gate on fr.3983 f.178 passed in modified form (ITERATE.md: real -1.40 vs shuffled max -1.59, rank 0/200, both passes). Target f.91 (canvas 100 of btv1b9058938q, native 8004x6167, `images/f91/f100_native.jpg`): the cipher lines (about 5, mid-page) are written in a symbol alphabet, not in digits, so key no.41 (numeric codes) has no entry for them; target decode not run, `decode_key.py --check` n/a (no reading). Grades for a reading: none (0 H, 0 C, 0 S tokens on f.91). Where it was not found: no.41 does not read f.91's glyphs. Calls made: 4 Sonnet blind passes (key A/B, gate digits A/B), no reconciliation call for the gate digits (the gate used both passes separately). Requests: Gallica 11 (manifest cached earlier, canvases 150/151/306-310 thumbnails, f151/f310/f100 native).
