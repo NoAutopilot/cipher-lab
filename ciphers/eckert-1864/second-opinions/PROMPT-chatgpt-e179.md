@@ -11,10 +11,10 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM3b)", which also lists our grade corrections).
 
-WHERE WE HAVE LOOKED: the Official Records and Naval Official Records volumes named in the summary (local text search of the Internet Archive OCR); Butler's Private and Official Correspondence vols. IV-V; the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: the Official Records and Naval Official Records volumes named in the summary (local text search of the Internet Archive OCR); Butler's Private and Official Correspondence vols. IV-V; the Huntington's CONTENTdm full-text search; second audit AUD2-LEDGER-6 (8 Oct 2026): The Papers of Ulysses S. Grant vol. 10 (Internet Archive full-text search); the Fort Monroe entries of 10-15 Apr 1864 in OR ser. I vol. 33 read one by one; Library of Congress Chronicling America newspapers of 8-25 Apr 1864.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- The Papers of Ulysses S. Grant; newspapers of the day; Google Books; HathiTrust; JSTOR; Plum, The Military Telegraph (1882).
+- NARA RG 92 (Quartermaster General's consolidated correspondence) for Biggs's requisition; Google Books; HathiTrust; JSTOR; Plum, The Military Telegraph (1882).
 
 HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path

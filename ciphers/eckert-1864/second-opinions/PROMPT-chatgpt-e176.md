@@ -11,10 +11,10 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM3b)", which also lists our grade corrections).
 
-WHERE WE HAVE LOOKED: the Official Records and Naval Official Records volumes named in the summary (local text search of the Internet Archive OCR); Butler's Private and Official Correspondence vols. IV-V; the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: the Official Records and Naval Official Records volumes named in the summary (local text search of the Internet Archive OCR); Butler's Private and Official Correspondence vols. IV-V; the Huntington's CONTENTdm full-text search; second audit AUD2-LEDGER-6 (8 Oct 2026): Library of Congress Chronicling America newspapers of 7-20 Dec 1864.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- The Papers of Ulysses S. Grant; newspapers of the day; Google Books; HathiTrust; JSTOR; Plum, The Military Telegraph (1882).
+- The Papers of Ulysses S. Grant vol. 13 (16 Nov 1864-20 Feb 1865; not reachable to us); regimental and division histories of the Fort Fisher expedition (Ames, 24th Corps); Google Books; HathiTrust; JSTOR; Plum, The Military Telegraph (1882).
 
 HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path

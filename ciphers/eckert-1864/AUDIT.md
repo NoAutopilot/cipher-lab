@@ -5820,3 +5820,115 @@ Butler, Topsy = 12): every value FV-FM3c used agrees with key.md. Key source `pe
   unchanged (class unchanged), but `second-opinions/PROMPT-chatgpt-e191.md` gains a note of the press item.
 - Requests: hdl.huntington.org 9; archive.org 2 (`_djvu.txt`); www.loc.gov 13 + tile.loc.gov 4; chroniclingamerica.loc.gov 5 (403, stopped);
   googleapis 10 (429, stopped). Subagents 0.
+
+## AUDIT 2 (AUD2-LEDGER-6)
+
+Verifier AUD2-LEDGER-6 (account 3, LANE-VERIFY-3, session_01BXGGugopfPUPjpwtNtnyDw), 8 Oct 2026, 21:43-22:2x UTC by `date -u`. Second
+adversarial audit of **E171, E175, E176, E178, E179** (Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952; reader FM-R2a,
+first audit FV-FM3b, both account 1). Account 3 neither read nor first-audited these items. A separate session from both; it does not protect
+their conclusions. Nothing decoded beyond key look-ups; `decode.py --check` exit 0 at 22:1x UTC (after FIX-DEC's commit 9e576d1d), decode.py
+not touched. Key source `period` for all five. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md: kept or lowered, never raised.
+
+### Prior-work checks 3-5
+- **Duplicate diff (first step).** Pointers 5779, 5838, 5820, 5600 and the addressees/dates against every `###` header in ciphertext*.txt and
+  status.json: the same-pointer siblings are other telegrams (E178 is 5838/2, E175 5838/0; no other filed entry on 5779, 5820, 5600). **No
+  duplicate.** One correction to FV-FM3b's sibling list: lead (c), "5839/1 = mssEC 19 p.249 (9143) ... not filed", is wrong -- 9143 (Fox to
+  Rodgers, 22 Dec 1864, 10.30 PM) is already filed as **E77** (ciphertext.txt; "Reliance = 10.30 PM").
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<page>;canvas=<ptr>;ptr=<ptr>;date;sender;recipient;
+  place=Fort Monroe;kind=telegram' --step-type second-audit --fetch` (no items.tsv rows), per entry, exit 4 each. Step LEADs: the target-level
+  live claim of V1-KNOWN (16:02; done line 16:16; none of these five) -- cleared; NOTES.md:2239 FM-PRE sibling listing ("not read") -- cleared.
+  Plaintext: E171 and E178 **KNOWN-PART** (5-civil-war: clear words public in the holder transcription; E171 29 code words not, E178 20 not);
+  E175, E176, E179 "ambiguous entry" LEADs (two or three entries on the same pointer and date) -- resolved by row (5838/0, 5820/0, 5600/0).
+  Tomokiyo hits are folio-number collisions with 16th-century items (spanish3D, viete, henryvii, AlonsoSanchez): unrelated. aaymeloglu cache not
+  on disk (UNCHECKED-NET); cyphersolver/bourdeau caches: CLEAR. Editions: OR ser. I +-1 day CLEAR on the volumes on disk.
+- `--reading <decoded body> --network` (G3): E171: CLEAR on OR I/43 pt 2, I/45 pt 2, ORN I/9-10, Butler IV; KNOWN-PART (holder transcription); the tool hit its per-item request cap before the other OR I/44-49 volumes, ia-global and gbooks (UNCHECKED-NET). E175: CLEAR on the same set; six LEADs, all the boilerplate 'For Secretary of the Navy' (near hits in OR I/33, 34 pt 1, 35 pt 2, 40 pt 3, ORN I/9-10), none within +-3 days: unrelated; the tool does not reach ORN I/11, which I read by hand (below); ia-global/gbooks UNCHECKED-NET (request cap). E176, E178, E179: run after this commit; results in the addendum at the end of this section.
+- **Holder's transcription** (sources/fortmonroe/p5779, p5838, p5820, p5600 and sources/mssEC18/p9917, cached JSON of the Huntington's
+  public `transc` field, read on disk, no request): ciphertext.txt matches each word for word. What the public transcription already shows in
+  clear, per entry: E171 the frame (arrived ... Arago ... will wait as ordered ... proceed to ... Virgin I a ... W Heine), not the addressee,
+  regiment, origin, destination, time or Foster; **E175 most of the substance** (main journal brasses cut ... quarter ovan inch ... can not go to
+  see under ... daze ... Temple in Pontoosuc most anxious to ... the money tower Saugus at ... ready for see a waiting ... send Pontoosuc or Nereus
+  with her ... John Rodgers), not the addressee, "four", "Porter", "Norfolk", "convoy"; E176 the eight steamer names, not the division, corps or
+  any of the figures; **E178 the whole body** (The Crescent ... Guide ... City of Albany Hero of Jersey C. Vanderbilt and Mary Washington are the
+  boots ordered to Hill turn heard in obedience to dispatch of ... The weather outside hasbin too severe ... prospects are fair for their getting out
+  tonight ... Webster), the code adding only 10.30 AM, "for Quartermaster General, Washington", "17(th)", "Colonel" and "Quartermaster"; E179 the
+  frame (shelter tents at once ... requisition of ... water ... drawing not over ... feet ... ferry boats ... like city of Norwich or George
+  Leary ... Her man Biggs), not the figures (10,000; 9 ft; 6; 6), W. F. Smith or "transportation".
+- **Recipient-side and same-day replies.** E175: Washington's sent copy of the reply, mssEC 18 p.251 (9917), and its received copy, 5838/1,
+  both open with the cipher time and date words **"Florence hope" = 11.30 AM (key.md TIME page) + 19 (numeral row 19)**: the day "19" is
+  inside the cipher, not only in the clerk's heading. E179: the Quartermaster General's answer is our own filed **E21** (Meigs to Biggs, 19 Apr
+  1864 1 PM: 3 ferry boats and 3 tugs leave Washington for Monroe; Capt. Wise has chartered side-wheel steamers, propellers, tugs and barges),
+  and OR I/33 pp.886-887 prints Meigs to Wise, 16 Apr 1864 5 p.m. ("dispatch to Washington as quickly as possible all the light-draught
+  steamers that can be obtained, and send to Fort Monroe not less than fifty schooners and forty barges") and Grant to Butler 16 Apr ("I presume
+  the call for vessels is in consequence of the preparations ordered"). These are the department's response, not E179. OR I/33 also prints
+  Biggs to Meigs, 6 Apr 1864 (received 1.30 p.m.; Perit, Salvor, Montauk), so this Fort Monroe-to-QMG channel does reach print: I read OR I/33's
+  Fort Monroe entries of 10-15 Apr 1864 (lines 71054-74387 of `warofrebellion33unit`) one by one; E179 is not among them. E178: the "dispatch of
+  17th" (QMG to Fort Monroe) is not filed and was not located in OR I/44 (FV-FM3b). E171: Foster's printed order (OR I/35 pt 2, FV-FM3b);
+  Halleck's answer not located. E176: Small's or Butler's acknowledgement not located (OR I/42 pt 3 by FV-FM3b; Butler V by me, below).
+- **Sender's same-week letters to other recipients.** Butler's *Private and Official Correspondence* IV-V (cached `privateofficialc04butl`,
+  `c05butl`, grep for Weybosset, Perit, Beckwith, Leary, City of Norwich, Biggs, shelter tents, Vanderbilt, Hero of Jersey, Rodgers, Dictator,
+  Heine, Arago): only context -- Butler to Turner 17 Apr 1864 ("I have required for 20,000 shelter tents for your Corps", already cited by
+  FV-FM3b), the George Leary under charter at Fort Monroe (5 May), Biggs as chief quartermaster passim. None of the five telegrams. Rodgers's
+  own later traffic: 5839/2 (25 Dec, "the brasses are worn again") and E77 (Fox, 22 Dec) are on the next page; ORN I/11 p.205 prints Fox 25 Dec.
+- **Grant Papers** (`be-api` full-text search, which answered this session; positive controls "Halleck" and "Foster" hit vol. 12, "Meigs",
+  "shelter tents" and "water transportation" hit vol. 10): vol. 12 (16 Aug-15 Nov 1864; `papersofulyssess0012gran`) Heine 0, Arago 0, "103rd
+  New York" 0, Cosmopolitan 0, Seventy-fourth 0; vol. 11 (1 Jun-15 Aug; `...0011gran`) Heine 0, Arago 0; vol. 10 (1 Jan-31 May;
+  `...0010gran`) Biggs 0, Leary 0, Norwich 1 (Milroy's Norwich University, unrelated), "10,000 shelter" 0; the "shelter tents", "ferry boats" and
+  "water transportation" hits are other telegrams (western armies; Meade). **Vol. 13 (16 Nov 1864-20 Feb 1865), the volume for E175, E176 and
+  E178, is not on the Internet Archive** (advancedsearch, 0 items); the Mississippi State Scholars Junction PDF
+  (scholarsjunction.msstate.edu/usg-volumes/31) answered a Cloudflare challenge to curl and to headless Chromium (2 attempts, stopped):
+  **unsearched**. The brief's "vols 10/11/13" maps to vols 10 (E179), 12 (E171; vol. 11 ends 15 Aug) and 13.
+- **ORN I/11 date conflict (E175).** Re-read ORN I/11 pp.197-198 (`officialrecordso0011unse`, `_djvu.txt`): Welles's "Send the Pontoosuc
+  direct to New Inlet and let the Nereus take the Saugus down" is printed under "Navy Department, December 17, 1864", directly after Fox's own
+  17 Dec telegram and Howell's 17 Dec report of the Nereus's arrival. Against it: (1) the reply answers E175's question, and E175 is in the
+  ledger at 19 Dec 8.30 AM; (2) both ledger copies date the reply 19 Dec in the clerk's heading; (3) both carry the cipher date word "hope" = 19
+  with Florence = 11.30 AM. The weight is for **19 Dec 1864, 11.30 AM**, three hours after E175; ORN's 17 Dec is most likely an editorial
+  placement beside Fox's 17 Dec telegram. Not settled without the Navy Department's own telegram record (NARA RG 45), which I did not reach.
+- **Press of the day** (Library of Congress `loc.gov/collections/chronicling-america` JSON API; page OCR through `tile.loc.gov`
+  word-coordinates full text): E175 "Dictator brasses" 7 pages and "Saugus Nereus" 1 page, 15-31 Dec 1864, all read: "Dictator" there is Lee as
+  dictator, a Chicago switch engine, or the ironclad list of the Wilmington fleet (Daily National Intelligencer 19 Dec p.2); no brasses, no
+  Rodgers report. "Pontoosuc" 2 pages: a Pittsfield mill company and the fleet list (Intelligencer 30 Dec p.3). E171 "Arago Heine" 2 pages:
+  Portland Daily Press 23 Aug 1864 p.3 ("The transport Arago, from Port Royal 18th, has arrived via Fortress Monroe", New York 22 Aug) and Daily
+  National Intelligencer 24 Aug p.3 ("The United States transport Arago, from Port Royal on the 18th, has arrived", New York 23 Aug) -- the
+  Arago's passage by Fort Monroe, not Heine's telegram or the regiment; "Arago 103d" 0. E176 "Weybosset Perit" 0; "Weybosset" 3 pages
+  (Pawtucket gazette, the Providence street). E178 "Vanderbilt Crescent Hilton" 0; "Hero of Jersey" 0 (first try HTTP 520, one retry answered).
+  E179 '"George Leary" Norwich' 0. Chronicling America is a sample of the press (no New York Herald OCR for every day); a 0 is a search result.
+- **Google Books** (keyed, `country=US`): HTTP 429 on the first call (daily quota still exhausted); my script sent five more queries before
+  stopping (6 requests): **unreachable**, as for FV-FM3b. Not searched: HathiTrust and JSTOR (cloud-blocked), Plum (1882), Basler, the two
+  solver repositories beyond the cached caches, NARA RG 45/92/107.
+
+### Reading checks (second eye on FV-FM3b section 3)
+- All five ciphertexts were compared with the cached holder transcription: no difference. FV-FM3b's grade corrections were checked against
+  key.md and are confirmed: E171 "pony harrow pea hem" = Pony 9 + Harrow 20 + P.M. = **9.20 P.M.** (the committed reading.md prints "[29]",
+  the decoder adding two numerals that are hour and minute; and "plug publish pebble" = 1-100-3 = 103 is printed "[100] and [3]", dropping
+  Plug = 1: two decoder slips for the fix job, not my edit -- decode.py untouched); E175 "Temple", "money tower", "journal", "John" plain, "tulip"
+  M; E176 "small" plain, "sutton" M, figures 300/600/425/800/350/300/500/80 = 3,355 men; E178 ship names and "Webster" plain; E179 "shelter"
+  plain, "measles" M. Counts kept: E171 31 H, E175 15 H 1 M, E176 35 H 1 M, E178 11 H, E179 15 H 1 M.
+
+### Classification (key `period`)
+| ID | N-class | text | depth | depth_pct | check (kept or lowered, never raised) |
+|---|---|---|---|---|---|
+| **E171** Heine via Sheldon to Halleck, 20 Aug 1864 | **N3** (kept) | not located | **D3** (kept) | 100 | Foster's printed order (OR I/35 pt 2) and the press of 22-24 Aug (Arago from Port Royal via Fort Monroe) agree on ship, route and date; code clause as FV-FM3b |
+| **E175** Rodgers via Sheldon to the Secretary of the Navy, 19 Dec 1864 | **N3 weak** (lowered from N3: most of the substance is clear in the holder's public transcription; the code adds the addressee, "four" days, Porter, Norfolk and convoy) | not located; reply printed (ORN I/11 p.198, misdated 17 Dec) | **D3** (kept) | 94 | external: the printed reply answers the question; date now carried by the cipher date word "hope" = 19 in both copies of the reply |
+| **E176** Beckwith to Sheldon for Lt. Col. Small, 8 Dec 1864 | **N3** (kept) | not located; the same embarkation by steamer in Ames's report (OR I/42 pt 1 p.981), not the figures | **D3** (kept) | 97 | as FV-FM3b; the per-steamer strengths are what the cipher carries and are not in print |
+| **E178** R. C. Webster via Sheldon to the Quartermaster General, 20 Dec 1864 | **N1** (lowered from N3 weak: the whole body is clear in the Huntington's public transcription; the key adds only time, addressee, "17th" and ranks) -- same ruling as FV-FM3c for E187 | known (holder transcription) | **D2** (kept) | 100 | code clause Bender = QMG here and in E179 |
+| **E179** Biggs via Sheldon to the Quartermaster General, 11 Apr 1864 | **N3** (kept) | not located; the department's response is printed (OR I/33 pp.886-887) and filed (E21) | **D2** (kept) | 94 | code clause as FV-FM3b; external context (Meigs to Wise 16 Apr; E21) supports the request but D3 is not raised here |
+
+Safe sentences (rule 10 wording; "first", "unpublished", "never printed" are unsafe for all five):
+- **E171 N3.** FV-FM3b's safe sentence stands, with "(searched 8 Oct 2026)" covering also Grant Papers vols. 11-12 and the Chronicling America press of 19-31 Aug 1864.
+- **E175 N3 (weak).** "Read at grade H with Cipher No. 1 (much of the body is clear in the Huntington's public transcription; the key adds the addressee, the four days, Porter, Norfolk and the convoy): on 19 Dec 1864 at 8.30 a.m. Commodore John Rodgers, commanding the monitor Dictator, tells the Secretary of the Navy through Fort Monroe that the Dictator's main journal brasses are cut a quarter of an inch and she cannot go to sea for four days, that Temple in the Pontoosuc is anxious to join Porter, and that the monitor Saugus is ready at Norfolk awaiting convoy, and asks whether to send the Pontoosuc or the Nereus with her; the Navy Department's reply is printed in ORN ser. I vol. 11 p.198 under 17 Dec, but both ledger copies carry the cipher date 19, 11.30 a.m.; Rodgers's own telegram was not located in ORN ser. I vol. 11, Grant Papers vols. 11-12 or the Chronicling America press of 15-31 Dec 1864 (searched 8 Oct 2026; Grant Papers vol. 13 not reached)."
+- **E176 N3.** FV-FM3b's sentence stands; add "(Grant Papers vol. 13 not reached)".
+- **E178 N1.** "Read with Cipher No. 1 (eleven code words; the body is clear in the Huntington's public transcription): on 20 Dec 1864 at 10.30 a.m. Col. R. C. Webster at Fort Monroe tells the Quartermaster General that the Crescent, Guide, City of Albany, Hero of Jersey, C. Vanderbilt and Mary Washington, ordered to Hilton Head by the dispatch of the 17th, have been held in by weather; the telegram itself was not located in print (searched 8 Oct 2026)." Unsafe: any wording that presents the body as recovered by decipherment.
+- **E179 N3.** FV-FM3b's sentence stands; add "the Quartermaster General's response is printed (OR ser. I vol. 33 pp.886-887, Meigs to Wise 16 Apr 1864) but not this request".
+
+### Postmortem
+- FV-FM3b did not weigh how much of each body is already clear in the holder's public transcription: E178 is N1 on the E187 precedent its own
+  sister audit (FV-FM3c) set the same evening, and E175's question and its main fact (the brasses) are clear in public, so N3 is weak.
+- FV-FM3b's sibling lead (c) listed 9143 as unfiled; it is E77. Check ciphertext*.txt headers by pointer before calling a sibling unfiled.
+- The ORN date conflict FV-FM3b recorded is resolved in weight (not in proof) by the cipher date word inside the reply.
+- Decoder slips left for the fix job (not edited here): E171 "[29]" for Pony Harrow (9.20) and "[100] and [3]" dropping Plug (103).
+- Requests: archive.org 6 (advancedsearch 2, metadata 3, `_djvu.txt` 1, 2 s apart); be-api.us.archive.org 25 (1 x 502, retried later);
+  scholarsjunction.msstate.edu 4 (2 HTML pages; the PDF twice, challenged, stopped); www.loc.gov 15 searches + 11 resource JSON; tile.loc.gov 11
+  OCR; googleapis 6 (all 429); hdl.huntington.org 0 (transcriptions read from the on-disk cache; no host take); prior_work.py's own G3 requests
+  are in its output. Subagents 0.
+- Rows written: status.json results 223-227 (`audit_status` "two audits", `audit_refs`, E175 and E178 class, E178 `text` known);
+  SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E178 withdrawn (N1), SO-ECKERT-E175 prompt corrected (weak, date); WORK-QUEUE AUD2-LEDGER-6 done.
