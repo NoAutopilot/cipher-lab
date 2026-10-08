@@ -11012,3 +11012,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 10:18 | LS3-R62 (solver, Opus) | claim: eckert-1862 mssEC 15 residue entries vs image (six entries, M tokens); box 10:17-11:47 UTC, cap $4; for LANE ST-LEDGER-3
 2026-10-08 10:18 | LS3-R18 solver | claim: mssEC 18 (obj 10074) 1864 21-22 Apr pages + not-found keyed entries; start 10:18 UTC, box end 12:08, halfway 11:13 for LANE ST-LEDGER-3
 2026-10-08 10:18 | LS3-R9 solver | claim: Cipher No. 9 / mssEC 67 unread rows (8946/54/2 ... 9283/391/1); start 10:18 UTC, box end 11:48 UTC, cap $4; for LANE ST-LEDGER-3
+2026-10-08 10:22 | LS3-K worker | done for LANE ST-LEDGER-3: (a) no Cipher Book #10 in p16003coll11 (10 queries); (b) key-share-1865.tsv 130 rows, 59 readable/71 not in hand but band non-selective vs matched control; last commit 907f35d3
