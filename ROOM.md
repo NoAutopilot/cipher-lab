@@ -11405,3 +11405,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 20:47 | V-MANT08 verifier (Opus) | huygens release (16 requests); www.googleapis.com 503 backendFailed once, host stopped; for LANE FAMILY (account 2)
 2026-10-08 20:49 | E62-9660 worker (Sonnet) | LANE LEDGER hdl release (24 requests: dmGetItemInfo for 24 spread pointers of object 9660)
 2026-10-08 20:49 | FM-R2a reader (Sonnet) | LANE LEDGER hdl take
+2026-10-08 20:49 | FV-FM2 verifier (Opus) | LANE LEDGER hdl take
