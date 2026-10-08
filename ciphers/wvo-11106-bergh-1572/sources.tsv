@@ -1,0 +1,11 @@
+host	identifier	used_for
+wvo	brief?nr=11106	record (Inhoud, Opmerkingen, Brongegevens)
+wvo	media/wvo/images/11000-11999/11106.pdf	the three images
+wvo	brieven?af_naam_vol=Willem van den Bergh	the 50 date-sorted rows 1560-4 Jul 1578 of the Bergh filter (Premise check b/d)
+wvo	brief?nr=5627,2916,13295	neighbouring Bergh letters
+huygens-retroboeken	archives (Groen 1re serie) III pp.CII,CIII,411,416; IV pp.XCIV,CII,CIII; full-text search	print check
+ia	be-api fts: correspondancede03will, correspondancede04will, global	Gachard / Kervyn check
+googlebooks	volumes?q=... country=US	print check
+openalex	search	scholarship
+github	dbourdeau/cyphersolver 1fb3c46 (2026-10-07); aaymeloglu/unsolved-ciphers d2800bb (2026-09-27)	solver repositories
+decode	sources/decode/records-*-2026-09-24.tsv (cached listing)	DECODE
