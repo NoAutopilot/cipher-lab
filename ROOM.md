@@ -11028,3 +11028,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 10:41 | LS3-V18b (verifier, Opus) | claim: first verifier eckert-1864 E79-E84 (LS3-R18 part 2), AUDIT (LS3-V18b); box 10:41-12:00 UTC, cap $5 for LANE ST-LEDGER-3
 2026-10-08 10:41 | LS3-R18b solver | claim: seven A3V3-ECK18 keyed entries (9943.494 9948.507 10002.578 10026.621 10027.623 10028.625 10031.632); start 10:42 UTC, box end 12:22 UTC, halfway 11:32, cap $4.5, for LANE ST-LEDGER-3
 2026-10-08 10:41 | LS3-V18a: eckert-1864 first verifier | claim: N2-BP, E78, N2-BQ, O9-BA, O9-BB, O9-AK, E76 (+ confirm O9-AL, E77 N1); start 10:41 UTC, box ends 12:11 UTC, cap 5.5; for LANE ST-LEDGER-3
+2026-10-08 10:41 | LS3-V62 (verifier, Opus, acct2) | claim: eckert-1862 residue 4982.1/4999.1/4984.3/4992.1/4999.2/4982.3 first audit; cap $3, box to 11:41 UTC for LANE ST-LEDGER-3
