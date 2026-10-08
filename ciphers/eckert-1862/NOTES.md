@@ -2243,6 +2243,7 @@ them, totals C 155 I 36 M 82 reproduced per entry by a scratch script); 13 OR 18
 - Request counts: hdl.huntington.org 66 (58 page texts + 8 images), archive.org 17 (13 OR texts + 4 error pages for wrong
   ids), >= 1.6 s apart. 0 subagents; vision: 4 page overviews + 7 line crops.
 Report what was found and where it was not found; no novelty class.
+- Correction (LS3-V62, verifier, 8 Oct 2026): 4982.3 and 4999.2 are printed in OR ser. I vol. 52 pt 1, pp. 211 and 214 (not in the 13-volume re-grep above; "0 hits" was a gap in the volume set, not an absence); the print witnesses Camden = Thomas on 14 Feb. 4999.1, 4992.1, 4984.3 are clear text on the Huntington record (D2V-E74 shape, N1). 4982.1 N3 at D1. AUDIT.md "## AUDIT (LS3-V62)".
 
 ## Remaining gaps (finish-or-blocker pass, LS3-R62, 8 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); 6 residue entries' 9 M tokens image-checked 8 Oct 2026 (LS3-R62: 0 slips, grades unchanged); received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L): 0 code-bearing twins
