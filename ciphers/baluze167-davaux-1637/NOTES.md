@@ -784,3 +784,49 @@ signs unlabelled. 170 f.228-229v (4 leaf-pages, ~42 cipher lines): f.228r and f.
 - [ ] image-check: 170 f.228r-v crops passed and reconciled (D1-BAL170, D1-BAL170B), sign sorter built (R12A-BALS); f.229r-v (c240 right, c241 left) still to crop
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B)
 Verdict: keep going: 3 internal gaps plus f.228 waiting on the owner's sort; cheapest next: crop and pass f.229r-v (~$5), independent of the sort
+
+## D1A-B167 (account 1 worker, for LANE DEFAULT-account-1-20261008-0540), 8 Oct 2026, 06:30-06:3x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-08-account1-default-0540-jobs.md` job D1A-B167 (native crops of the five bare passages; crops only, no
+pass, no reading). Intake gate (pasted in the brief): `baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation
+found within 6 lines`. No gate scored, no PREREG.
+**Step status at start.** Four of the five passages already had native crops on disk from earlier workers: 168 f.246v-247v (b168f246v_*,
+b168f247*_*, N8-BAL/N9-BAL2), 169 f.53 (b169f53_L01-L05), 169 f.98 (b169f98_L01-L03), 169 f.142 (b169f142_L01-L06), 170 f.228r-v
+(b170f228r_*, b170f228v_*, D1-BAL170). Not cut: 170 f.229r (c240 right page) and f.229v (c241 left page). This job cut those two.
+**Crop step (pasted):**
+`python3 tools/iiif_lines.py --ark btv1b90015040 --canvas 240 --region 4150,1400,2490,3340 --prefix b170f229r --out
+ciphers/baluze167-davaux-1637/images/crops --max-width 2490 --top-margin 70 --debug` -> 21 lines, 21 bands x 1 segment (auto centres,
+checked on the overlay: one red centre per line). The first cut without `--top-margin` clipped the marks over the numerals (L07 "78' 30' 40'"), so it was re-cut from the cached source.
+`python3 tools/iiif_lines.py --ark btv1b90015040 --canvas 241 --region 950,1100,2490,2700 --prefix b170f229v --out
+ciphers/baluze167-davaux-1637/images/crops --max-width 2490 --top-margin 70 --centres 287,418,542,709,832,996,1142,1346,1575,1691,1887,2063,2197,2371,2558 --debug`
+-> 15 lines. A first region at x=1110 clipped the line starts ("pour" read "vour") and was deleted. The auto profile at x=950 missed the
+short last cipher line "4i y y." (y 2558), so the centres were given by eye from the first cut's detection.
+**Kept:** f.229r L03-L14, L16-L18, L20-L21 (17 crops); f.229v L01-L06, L12-L15 (10 crops). Each carries cipher. Dropped as clear-text-only:
+f.229r L01, L02, L15, L19; f.229v L07-L11. Overlays `b170f229r_lines_debug.jpg` and `b170f229v_lines_debug.jpg` were shrunk to 900 px.
+Folder size: the two native source regions (1.3 + 1.1 MB) are not committed. images/crops/manifest.json keeps each crop's source_url and
+box, so they can be re-fetched. Folder 31,075,905 bytes, under the tool's 30 MiB limit.
+**Eye check (one crop per passage):** 168 f.247 L01 (cipher run after "consequence"), 169 f.53 L04-L05 and f.98 L01-L03 (short runs in the
+clear text), 169 f.142 L02, 170 f.228v b_L03, 170 f.229r L07, f.229v L13 and L15. Each shows cipher with nothing written between the lines.
+That matches survey.tsv's "absent". f.229r ~17 cipher-bearing lines, f.229v ~10, consistent with D1-BAL170's ~20 + ~9 estimate.
+Grades (rule 4): no reading; key.tsv, ciphertext.txt, reading.txt and passes/ unchanged. Requests: gallica.bnf.fr 7 (2 overview canvases
+at 1000 px, 2 info.json, 3 native regions incl. the deleted x=1110 one; all HTTP 200, no challenge, >= 1.5 s apart).
+Subagents: none.
+
+## Remaining gaps (D1A-B167, 8 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter
+signs unlabelled. 170 f.228-229v: f.228r and f.228v reconciled (35 + 119 tokens), owner sign sorter built (sorter170/). f.229r-v: native crops cut (D1A-B167, 27 cipher-bearing lines), no pass yet.
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 f.228r-v bare passage - blocker: waiting-on the owner's answer in the R12A-BALS sign sorter (sorter170/out/baluze170_f228_sorter.html, handed to the account-3 orchestrator to publish, ROOM flag 6 Oct 2026); then tools/sign_sorter_apply.py and a provisional decode of f.228 with key.tsv, marks graded M
+- 170 f.229r-v bare passage - blocker: not-attempted; crops ready (images/crops/b170f229r_L*, b170f229v_L*, D1A-B167); next: two blind Sonnet passes per page with d1bal170/prompt.txt (4 calls) plus one reconciliation unit, or fold the 27 lines into the owner's sorter170 rebuild so they share the f.228 sort, ~$7.5
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (8 Oct 2026, D1A-B167)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3); f.166 glosses agree with key.tsv on every numeral used to split a word (D1-BAL167); L:q used to settle the q-like sign on 170 f.228v (D1-BAL170B)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); exemplar set enlarged to 63 court-hand signs (D1-BAL167, per-shape ceiling 0.698) but f.247's b/L/K/u forms have no glossed counterpart; untried: a glossed text in the f.247 hand
+- [x] image-check: native crops now exist for all five bare passages (170 f.229r-v cut by D1A-B167; one crop per passage eye-checked, bare cipher on each)
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B); 170 f.229 crops re-cut for clipped marks and line starts (D1A-B167)
+Verdict: keep going: 3 internal gaps plus f.228 waiting on the owner's sort; cheapest next: two blind passes on the 170 f.229r-v crops plus reconciliation (~$7.5), or add those lines to the sorter170 rebuild for the owner

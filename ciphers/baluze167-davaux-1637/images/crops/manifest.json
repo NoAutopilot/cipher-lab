@@ -3148,6 +3148,770 @@
     ]
    },
    "date": "06 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L03.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    1569,
+    6640,
+    1808
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L04.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    1738,
+    6640,
+    1965
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L05.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    1895,
+    6640,
+    2115
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L06.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    2045,
+    6640,
+    2285
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L07.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    2215,
+    6640,
+    2443
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L08.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    2373,
+    6640,
+    2597
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L09.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    2527,
+    6640,
+    2787
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L10.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    2717,
+    6640,
+    2972
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L11.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    2902,
+    6640,
+    3125
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L12.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    3055,
+    6640,
+    3273
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L13.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    3203,
+    6640,
+    3423
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L14.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    3353,
+    6640,
+    3587
+   ],
+   "lines_in_crop": 1,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L16.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    3675,
+    6640,
+    3905
+   ],
+   "lines_in_crop": 1,
+   "band": 16,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L17.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    3835,
+    6640,
+    4066
+   ],
+   "lines_in_crop": 1,
+   "band": 17,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L18.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    3996,
+    6640,
+    4225
+   ],
+   "lines_in_crop": 1,
+   "band": 18,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L20.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    4316,
+    6640,
+    4547
+   ],
+   "lines_in_crop": 1,
+   "band": 20,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229r_L21.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f240/4150,1400,2490,3340/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f240_4150_1400_2490_3340.jpg",
+   "box": [
+    4150,
+    4477,
+    6640,
+    4707
+   ],
+   "lines_in_crop": 1,
+   "band": 21,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 157,
+    "distance": 109,
+    "prominence": 109.2
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L01.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    1235,
+    3440,
+    1452
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L02.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    1382,
+    3440,
+    1580
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L03.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    1510,
+    3440,
+    1725
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L04.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    1655,
+    3440,
+    1870
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L05.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    1800,
+    3440,
+    2014
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L06.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    1944,
+    3440,
+    2169
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L12.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    3005,
+    3440,
+    3230
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L13.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    3160,
+    3440,
+    3384
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L14.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    3314,
+    3440,
+    3564
+   ],
+   "lines_in_crop": 1,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b170f229v_L15.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90015040/f241/950,1100,2490,2700/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b90015040_f241_950_1100_2490_2700.jpg",
+   "box": [
+    950,
+    3494,
+    3440,
+    3740
+   ],
+   "lines_in_crop": 1,
+   "band": 15,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     287,
+     418,
+     542,
+     709,
+     832,
+     996,
+     1142,
+     1346,
+     1575,
+     1691,
+     1887,
+     2063,
+     2197,
+     2371,
+     2558
+    ]
+   },
+   "date": "08 Oct 2026",
+   "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
   }
  ]
 }
