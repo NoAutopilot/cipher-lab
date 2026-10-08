@@ -1,4 +1,4 @@
-# OUT-UMW (account 2, lane orchestrator for the account-3 orchestrator), Opus 5.5, cap $8, box 75 min
+# OUT-UMW (account 2; draft B added 8 Oct 00:4x UTC after the PJM reply was found unlogged, lane orchestrator for the account-3 orchestrator), Opus 5.5, cap $8, box 75 min
 Why: TOMO-ARM wave 1 (ROOM 7 Oct 22:07 UTC; ciphers/armstrong-madison-1808/ITERATE.md W1/W1b and "Next best attempt") found the
 one witness that could give Tomokiyo's target a key: Armstrong to Monroe 22 Jan, 5 Apr, 4 May 1805, each "partially in code and
 deciphered" (Monroe's own decipherment), NYPL Monroe Papers; the UMW Monroe Catalogue Online marks 5 Apr and 4 May 1805 "Digital
@@ -13,7 +13,17 @@ the same session).
    (one message per recipient), 1d: a `holdings:` header line listing what we already hold for this item (Monroe Catalogue records,
    LOC Monroe reel 4 f.0302, NARA M34 roll 14 frames, Founders Online texts) so the note asks for nothing held. Rule 10 wording;
    nothing read is claimed. [SIGN-OFF] placeholder. CONTRIBUTIONS.md row (status drafted). Do NOT send, do NOT create a mailbox draft.
-2. CHECKER (gate 7, separate session, spawned only after the drafter's push): read the draft against ITERATE.md, NOTES.md and the
+1b. DRAFTER, draft B (same drafter session, after draft A): outreach/pjm-kreider-reply-2026-10.md -- a short reply in the existing
+   Papers of James Madison thread (reply to the editor-in-chief's message of 7 Oct 2026 13:11 UTC; recipient = the address that
+   message came from, read by the owner from the thread -- write "[reply in thread]" in the to: line, no personal address in the
+   file). Thank her for the Skeen pointer and the clear answer; share ONE finding she may not have (her reply says no other Armstrong
+   code is known): the Monroe Catalogue Online shows NYPL's Monroe Papers hold Armstrong to Monroe 22 Jan, 5 Apr, 4 May 1805, each
+   "partially in code and deciphered", and LOC Monroe Papers reel 4 f.0302 (Armstrong to Monroe, 7 July 1807, P.S. 10 July) speaks
+   of "some change in your cypher or in mine" -- a private Armstrong-Monroe cipher, so Monroe is one candidate for the "other
+   correspondent"; we are asking for images to test it and will tell her the result either way. No ask. Rule 10 wording (nothing
+   read), rule 1a voice, rule 1d holdings line, [SIGN-OFF]; CONTRIBUTIONS.md row (drafted). Facts from
+   ciphers/armstrong-madison-1808/NOTES.md "Papers of James Madison reply, 7 Oct 2026" and ITERATE.md W1/W1b only.
+2. CHECKER (gate 7, separate session, spawned only after the drafter's push): read BOTH drafts against ITERATE.md, NOTES.md and the
    catalogue records it cites; falsify every date, docid, shelfmark, address and holdings item; confirm rule 1d (no ask for anything
    in the holdings line) and rule 1a; write the `checked:` line naming corrections; status `ready`. Run tools/send_queue_check.py
    only if a SEND-QUEUE row is added (it is not, unless the owner asks).

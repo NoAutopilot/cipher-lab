@@ -4208,3 +4208,17 @@ letter by Mr R[ussell?] is altogether unintelligible to me." Grade H for the sen
 The ASP FR 3:242 print is an extract and omits the postscript. So Armstrong and Monroe still corresponded in a private
 cipher in mid-1807, and their copies no longer agreed. That the 20 Feb 1808 letter is in this cipher is not shown (I). Requests:
 tile.loc.gov 3 (one 404 route guess, two frames at pct:40, one full).
+
+## Papers of James Madison reply, 7 Oct 2026 13:11 UTC (logged 8 Oct 00:4x UTC by the account-3 orchestrator)
+To our 26 Sept question (CONTRIBUTIONS.md row of 26 Sept; forwarded internally 29 Sept). From the editor-in-chief, Secretary of
+State Series. Facts given: the edition knows of **no other letter in this code, and no other code Armstrong used, numerical or
+shorthand, besides his usual State Department code**; the edition will not search further (cost: Armstrong's non-Madison
+correspondence is largely lost, the rest scattered across eastern US repositories); their information on that correspondence comes
+from the bibliographical essay in C. Edward Skeen, *John Armstrong, Jr., 1758-1845* (1981), p.261 (archive.org
+`johnarmstrongjr10000skee`, pp.260-261; line B step B3 already used Skeen's Rokeby citations -- check whether p.261's essay itself
+was read in full before reusing it); no evidence of the intended recipient -- her conjecture, labelled as such, "one of his New York
+political colleagues". She offers to write if they find more.
+What it changes: nothing read; it confirms that the edition holds no key or sibling, so the key route runs through the
+recipient-side witnesses. TOMO-ARM wave 1's Armstrong-Monroe private cipher (NYPL 1805 letters deciphered by Monroe; LOC reel 4
+f.0302, 10 July 1807 P.S.) is not in the edition's knowledge as stated and is the lead to test (W2). A reply that thanks her and
+shares that finding (no ask) is in OUT-UMW's brief as draft B; gate 7 before the owner sends.
