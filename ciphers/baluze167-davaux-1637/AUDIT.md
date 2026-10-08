@@ -99,3 +99,61 @@ cipher or in clear, was located, and no reading of these numerals or signs by an
 - status.json: a `results` row added for this item (N3, D2, key published, one audit). SECOND-OPINIONS-QUEUE.tsv: SO-BAL170-F229 queued,
   prompt `second-opinions/PROMPT-chatgpt-b170f229.md`. Second audit: one WORK-QUEUE row (AUD2-B167) for a different account.
 - Rule 10: this audit is the only place the class is assigned; the solver files keep their "where not found" wording.
+
+## AUDIT 2 (AUD2-B167), 8 Oct 2026, 12:43-12:5x UTC by date -u
+
+Verifier: AUD2-B167 (account 1, Opus), brief `.claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md` section "AUD2-B167". This session
+has not touched the target before (not D4-B167, D4V-B167 or AUD1-B167). Task: try to break AUD1's N3 / D2. Search log
+`aud2b167/search-log.tsv`, raw API answers `aud2b167/gb*.json`, `aud2b167/s2.txt`. No decoding beyond reading the committed files.
+
+### 1. Prior print or decipherment (the families AUD1 left open)
+
+| family | result |
+|---|---|
+| BnF archivesetmanuscrits, Baluze 170 (ark:/12148/cc34098s/ca19857865) and parent cc34098s | read. Digitised (Gallica btv1b90015040, from microfilm MF 8419); no bibliography, no edition and no decipherment named; parent describes letters of Chavigny to d'Avaux 1637-1650 |
+| Acta Pacis Westphalicae I 1 (instructions 1636-43), APW digital via the browser tool | Eberstein only in the Swedish 1637 memorials (the Eberstein counts); Chavigny only in the introduction and the 1643 instruction; no 1640 despatch to d'Avaux. All-APW query "Hamburg Chavigny 1640" hits only introductions and bibliographies |
+| APW II B bibliography, followed up | led to Boppe, *Correspondance inédite du comte d'Avaux avec son père* (1887, IA correspondancei00avaugoog): it prints a letter of **25 Aug 1640** (letter LIX), but it is the father (Roissy) to d'Avaux from Paris, on other matters (AAE Allemagne vol. 13 per its heading); no Eberstein, "jonction" or "seuls adh" anywhere in the volume |
+| Grotius *Briefwisseling* XI, letters 4803-4847 (25 Aug-22 Sept 1640, to Oxenstierna, Salvius) | read: Longueville's lack of reinforcements, the Weimarian colonels, d'Avaux and the Swedish treaty; no text of or reference to this despatch |
+| Google Books, the three phrases that got HTTP 503 | "soient jointes a M de Longueville": 200, word-bag only. The two apostrophe/longer forms 503'd again; their variants ("maistre de la campagne" ennemi laissant; "perdrons les seuls") answered 200 with no match. Covered by variant, not by the exact form |
+| Semantic Scholar (keyed) | 6 queries answered 200, nothing relevant; 2 further 429 |
+| Solver repositories, re-cloned today | Bourdeau (head 7 Oct 2026): no Baluze 170 item. Aymeloglu (head 27 Sept 2026): only DECODE row 2761 (f.228-230 "Decrypted", key attached), as AUD1 logged |
+
+**Result: AUD1's negative holds.** No printed text or decipherment of this passage was located. Still not searched: the AAE
+Correspondance politique (Allemagne) duplicate or minute (unpublished, not online here); recipient-side Hessian and Lüneburg editions (for
+example Rommel's *Geschichte von Hessen* VIII); JSTOR (rows queued by AUD1). **Class: N3 confirmed.** This audit does not raise it to
+N4. The editions, catalogue and project pages AUD1 named as gaps are now covered, but the Hessian-side print has not been checked, and
+two phrases were searched in Google Books only through variants. Key: **published** (Tomokiyo), unchanged.
+
+### 2. Depth re-ruled under the 8 Oct depth bar
+
+- **Code clause: met, on 10: alone; 8: is weaker but passes.** 10: = "les" appears 7 times. Two contexts discriminate, because other
+  plausible values (des/ses/ces) fail: "LES DITs" (f.229r L05; L20 repeats the formula and counts once) and "COURONNE OU AVEC les deux
+  ensemble" (L09, set in clear text). 8: = "leur" appears twice, in independent phrases. One sits in clear-text context ("QUE leur
+  troupes soient jointes a M DE LONGUEVILLE", L11-12), which supports it. But "ses"/"nos" would also read there, so 8: shows that the
+  value fits, not that it is the only value. An H grade on either value was not used (bar, bullet 4). 73= reads in three contexts, but
+  its value is contested (Tomokiyo "Bavier" against Banér), so the clause does not rest on it.
+- **Cipher clause: not met.** AUD1's ruling stands: there are 258 M liberties, and the published key does not shrink H(K).
+- **Caveat AUD1 did not state:** the letter signs are transcribed as `L:x` (the transcription header says "letter settled from context
+  in this letter"). So their transcription is not independent of the reading, which is one more reason they are M and stay out of both
+  clauses. They also explain why the two blind passes split by 0.23-0.26.
+- **This verifier's sentence (D2), taken from the ciphered parts:** "In cipher Chavigny writes that through the excessive firmness of
+  [73=] France would lose the only adherents it has, each withdrawing shamefully and leaving the enemy master of the field, and that the
+  comte d'Heberstein, who is to succeed, will be given a gratification to bind him to do better than his predecessor." This is
+  conditional on the M letter signs. Corroborated, not supplied, by Grotius 4813/4836 (Longueville stalled on the Rhine, 1640).
+- **Depth: D2 confirmed**, "partially deciphered (about 29%)" (106/366 H).
+
+### 3. Crop spot check (images/crops/b170f229v_L02, L12, L13)
+
+Signs were counted by eye on the crops and compared with `ciphertext_b170f229.txt`: L02 13/13, L12 13/13, L13 21/21. The order and the
+identity of the numerals agree. The letter-sign shapes are consistent with the values given (the u-shape with a descending cross = f,
+L12 pos 4 and L13 pos 19; without the cross = t, L02 pos 1 and L13 pos 11). On L02, 16 shows no clear accent at either position; it is
+already transcribed `16'?` (M). No discrepancy found.
+
+### 4. Corrections
+
+None to the reading or the grades. Two points of wording, applied here only: AUD1's "Why not N4" list is now down to the Hessian-side
+editions, the AAE series and JSTOR; and Banér, not Bavaria, remains the better contextual fit for 73=, with the value left at the
+key's. The safe sentence stands as AUD1 wrote it, with "BnF catalogue, Acta Pacis Westphalicae I 1, Boppe 1887, Grotius *Briefwisseling*,
+Semantic Scholar" added to the list of sources searched. Unsafe: anything stronger than N3 wording (rule 10).
+Requests: googleapis.com 9, api.semanticscholar.org 8 (2 x 429), archivesetmanuscrits.bnf.fr 2, apw.digitale-sammlungen.de 7 (browser),
+archive.org 2, grotius.huygens.knaw.nl 8, github.com 2 clones; all one at a time, >= 1.5 s apart except S2 (1.2-3 s).

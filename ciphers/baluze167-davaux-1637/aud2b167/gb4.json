@@ -1,0 +1,675 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 58,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "zzw-AQAAMAAJ",
+      "etag": "bD7b9DAMZfw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/zzw-AQAAMAAJ",
+      "volumeInfo": {
+        "title": "Bulletin officiel de la Fédération de l'alliance franc̜aise aux États-Unis et au Canada",
+        "authors": [
+          "Federation of French Alliances in the United States and Canada"
+        ],
+        "publishedDate": "1907",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "CORNELL:31924015168317"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 580,
+        "printType": "BOOK",
+        "categories": [
+          "Canada"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.9.9.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=zzw-AQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=zzw-AQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=zzw-AQAAMAAJ&q=%22seuls+adherans%22+Chavigny&dq=%22seuls+adherans%22+Chavigny&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=zzw-AQAAMAAJ&dq=%22seuls+adherans%22+Chavigny&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Bulletin_officiel_de_la_F%C3%A9d%C3%A9ration_de.html?hl=&id=zzw-AQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=zzw-AQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eChavigny\u003c/b\u003e . Choses de France . Cours illustré de M. Camille Enlart , Directeur du Musée du Trocadéro , Conférencier de la Fédération . Ce cours n&#39;est ouvert qu&#39;aux \u003cb\u003eseuls adhérents\u003c/b\u003e et à leurs invités . Mardi 23 novembre , La Ville au&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "RBZs9LqxkvcC",
+      "etag": "yMLsRdkjask",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/RBZs9LqxkvcC",
+      "volumeInfo": {
+        "title": "L'histoire prédite et jugée par Nostradamus",
+        "subtitle": "texte de l'édition de 1566, à Lyon, par Pierre Rigaud, preuves tirées des auteurs les plus connus",
+        "authors": [
+          "Henri Torné-Chavigny"
+        ],
+        "publishedDate": "1860",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001102217465"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 664,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.8.11.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=RBZs9LqxkvcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=RBZs9LqxkvcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=RBZs9LqxkvcC&pg=RA3-PA219&dq=%22seuls+adherans%22+Chavigny&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=RBZs9LqxkvcC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=RBZs9LqxkvcC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=RBZs9LqxkvcC&rdid=book-RBZs9LqxkvcC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/L_histoire_pr%C3%A9dite_et_jug%C3%A9e_par_Nostra.epub?id=RBZs9LqxkvcC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/L_histoire_pr%C3%A9dite_et_jug%C3%A9e_par_Nostra.pdf?id=RBZs9LqxkvcC&hl=&output=pdf&sig=ACfU3U2Bz3ecFfgEyoiXv1fZDvgHUSd-xQ&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=RBZs9LqxkvcC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eADHERANS\u003c/b\u003e de Louis XVIII on doit trouver la proscription par Louis XVIII des \u003cb\u003eADHÉRANS\u003c/b\u003e de Napoléon . 22 avril 1815 ... \u003cb\u003eseuls\u003c/b\u003e donnent la plus haute importance à la conduite des \u003cb\u003eADHÉRANS\u003c/b\u003e . L&#39;expres- sion BIENS PUBLIEZ n&#39;est qu&#39;une&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "GhsHAQAAIAAJ",
+      "etag": "QjSMAzGIiBk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GhsHAQAAIAAJ",
+      "volumeInfo": {
+        "title": "Revue de pathologie comparée",
+        "publishedDate": "1937",
+        "description": "Includes the Bulletin of the Société de pathologie comparée.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UCAL:B3368457"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1468,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.11.12.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GhsHAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GhsHAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=GhsHAQAAIAAJ&q=%22seuls+adherans%22+Chavigny&dq=%22seuls+adherans%22+Chavigny&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=GhsHAQAAIAAJ&dq=%22seuls+adherans%22+Chavigny&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Revue_de_pathologie_compar%C3%A9e.html?hl=&id=GhsHAQAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=GhsHAQAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eseuls adhérents\u003c/b\u003e ayant versé leur cotisation aux « Journées Médicales de Paris » 18 rue de Verneuil , Paris 7e . Le ... \u003cb\u003eChavigny\u003c/b\u003e ( Strasbourg ) , Maranon ( Ma- drid ) , Marinesco , Preda , Tomesco , Ballif , Obreglia , Urechia&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "WnJOzwhhOoYC",
+      "etag": "g10lgRllfS8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/WnJOzwhhOoYC",
+      "volumeInfo": {
+        "title": "Les Vrayes Centuries et propheties de Maistre Michel Nostradamus. Où se void representé tout ce qui s'est passé, tant en France, Espagne, Italie, Allemagne, Angleterre, qu'autres parties du monde. Reveües & corrigées suivant les premieres Editions imprimées en Avignon en l'an 1558. & à Lyon en l'an 1558. & autres. Avec la vie de l'Autheur",
+        "authors": [
+          "Nostradamus",
+          "Jean-Aimé de Chavigny"
+        ],
+        "publishedDate": "1668",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001100833131"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 224,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=WnJOzwhhOoYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=WnJOzwhhOoYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=WnJOzwhhOoYC&pg=PA42&dq=%22seuls+adherans%22+Chavigny&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=WnJOzwhhOoYC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=WnJOzwhhOoYC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=WnJOzwhhOoYC&rdid=book-WnJOzwhhOoYC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Les_Vrayes_Centuries_et_propheties_de_Ma.epub?id=WnJOzwhhOoYC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Les_Vrayes_Centuries_et_propheties_de_Ma.pdf?id=WnJOzwhhOoYC&hl=&output=pdf&sig=ACfU3U3ZzzDNdCdjYIS-c_4KWqEa0EqXNw&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=WnJOzwhhOoYC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Nostradamus, Jean-Aimé de \u003cb\u003eChavigny\u003c/b\u003e. 79 L&#39;ordre fatal sempiternel par chaine , I Viendra tourner par ordre consequent ... \u003cb\u003eadherans\u003c/b\u003e iront fi bas traffer , Que le bastard sera demy receu . 81 Le grand criard sans honte audacieux , Sera&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "f5hTAAAAcAAJ",
+      "etag": "sxe3f+5KDEw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/f5hTAAAAcAAJ",
+      "volumeInfo": {
+        "title": "Mémoires complets et authentiques du Duc de Saint-Simon sur le siècle de Louis XIV et la régence",
+        "subtitle": "Mémoires complets et authentiques du Duc de Saint-Simon sur le siècle de Louis 14 et la régence",
+        "authors": [
+          "Louis de Rouvroy duc de Saint-Simon"
+        ],
+        "publishedDate": "1856",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "KBNL:KBNL03000129034"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 368,
+        "printType": "BOOK",
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.6.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=f5hTAAAAcAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=f5hTAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=f5hTAAAAcAAJ&pg=PA294&dq=%22seuls+adherans%22+Chavigny&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=f5hTAAAAcAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=f5hTAAAAcAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=f5hTAAAAcAAJ&rdid=book-f5hTAAAAcAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/M%C3%A9moires_complets_et_authentiques_du_Du.epub?id=f5hTAAAAcAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/M%C3%A9moires_complets_et_authentiques_du_Du.pdf?id=f5hTAAAAcAAJ&hl=&output=pdf&sig=ACfU3U3h2NA9q46dtEdZouwUD1Cx4s1HOg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=f5hTAAAAcAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eseul\u003c/b\u003e moyen de vous laisser &gt;&gt; sur cela la liberté que vous souhaiteriez serait que vous pussiez y &gt;&gt; accréditer un peu M. de \u003cb\u003eChavigny\u003c/b\u003e , ce que l&#39;on me dit n&#39;être pas &gt;&gt; facile par les mauvaises impressions qu&#39;on a voulu donner à Ma&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "J9qjAizxzdkC",
+      "etag": "8Rr/MejEp/I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/J9qjAizxzdkC",
+      "volumeInfo": {
+        "title": "Recueil des instructions données aux ambassadeurs et ministres de France depuis les traités de Westphalie jusqu'à la Révolution française",
+        "subtitle": "Bavière, Palatinat, Deux-Ponts / avec une introd. et des notes par André Lebon",
+        "publishedDate": "1889",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "ONB:+Z312481709"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 662,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.2.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=J9qjAizxzdkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=J9qjAizxzdkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=J9qjAizxzdkC&pg=PA276&dq=%22seuls+adherans%22+Chavigny&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=J9qjAizxzdkC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=J9qjAizxzdkC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=J9qjAizxzdkC&rdid=book-J9qjAizxzdkC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Recueil_des_instructions_donn%C3%A9es_aux_am.epub?id=J9qjAizxzdkC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=J9qjAizxzdkC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eChavigny\u003c/b\u003e , se résolut de la proposer à la première conférence comme le \u003cb\u003eseul\u003c/b\u003e moyen de soulager le. pays. et. les. finances. épuisées. de. l&#39;Électeur . Le. maréchal. de. Sec-. kendorff et sa cabale , quoiqu&#39;ils n&#39;eussent pas la moindre con&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "mhDSAAAAMAAJ",
+      "etag": "vIHkGJodCKs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/mhDSAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Recueil des instructions données aux ambassadeurs et ministres de France depuis les traités de Westphalie jusqu'à la révolution française",
+        "authors": [
+          "France. Commission des archives diplomatiques"
+        ],
+        "publishedDate": "1889",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015082405450"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 662,
+        "printType": "BOOK",
+        "categories": [
+          "Archives"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.10.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=mhDSAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=mhDSAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=mhDSAAAAMAAJ&pg=PA276&dq=%22seuls+adherans%22+Chavigny&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=mhDSAAAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=mhDSAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=mhDSAAAAMAAJ&rdid=book-mhDSAAAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Recueil_des_instructions_donn%C3%A9es_aux_am.epub?id=mhDSAAAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Recueil_des_instructions_donn%C3%A9es_aux_am.pdf?id=mhDSAAAAMAAJ&hl=&output=pdf&sig=ACfU3U2J3uOcEAOcXuRSE6Rs6lgmY_AOVA&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=mhDSAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eChavigny\u003c/b\u003e , se résolut de la proposer à la première conférence comme le \u003cb\u003eseul\u003c/b\u003e moyen de soulager le. pays. et. les. finances. épuisées. de. l&#39;Électeur . Le. maréchal. de. Sec-. kendorff et sa cabale , quoiqu&#39;ils n&#39;eussent pas la moindre con&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ZFJHVa8rkQ8C",
+      "etag": "z1JQp00KJOw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZFJHVa8rkQ8C",
+      "volumeInfo": {
+        "title": "Recueil des instructions données aux ambassadeurs et ministres de France depuis les traités de Westphalie jusqu'a la Révolution française: Bavière, Palatinat et Deux-Ponts",
+        "authors": [
+          "France. Commission des archives diplomatiques"
+        ],
+        "publishedDate": "1889",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OXFORD:601630422"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 736,
+        "printType": "BOOK",
+        "categories": [
+          "Archives"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZFJHVa8rkQ8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZFJHVa8rkQ8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=ZFJHVa8rkQ8C&pg=RA1-PA276&dq=%22seuls+adherans%22+Chavigny&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=ZFJHVa8rkQ8C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ZFJHVa8rkQ8C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=ZFJHVa8rkQ8C&rdid=book-ZFJHVa8rkQ8C&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Recueil_des_instructions_donn%C3%A9es_aux_am.epub?id=ZFJHVa8rkQ8C&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZFJHVa8rkQ8C&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eChavigny\u003c/b\u003e , se résolut de la proposer à la première conférence comme le \u003cb\u003eseul\u003c/b\u003e moyen de soulager le pays et les finances épuisées de l&#39;Électeur . Le maréchal de Sec- kendorff et sa cabale , quoiqu&#39;ils n&#39;eussent pas la moindre con&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "_Tt_UasS-h0C",
+      "etag": "5pcAWdofznc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_Tt_UasS-h0C",
+      "volumeInfo": {
+        "title": "Histoire générale de la Champagne et de la Brie",
+        "authors": [
+          "Auguste Maurice Poinsignon"
+        ],
+        "publishedDate": "1886",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001104002022"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 700,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=_Tt_UasS-h0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=_Tt_UasS-h0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=_Tt_UasS-h0C&pg=PA295&dq=%22seuls+adherans%22+Chavigny&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=_Tt_UasS-h0C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=_Tt_UasS-h0C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=_Tt_UasS-h0C&rdid=book-_Tt_UasS-h0C&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Histoire_g%C3%A9n%C3%A9rale_de_la_Champagne_et_d.epub?id=_Tt_UasS-h0C&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Histoire_g%C3%A9n%C3%A9rale_de_la_Champagne_et_d.pdf?id=_Tt_UasS-h0C&hl=&output=pdf&sig=ACfU3U363qwFpre95q3mwf3pA-ZReNMO3g&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=_Tt_UasS-h0C&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eseul\u003c/b\u003e diocèse qui fût demeuré complètement à l&#39;abri de l&#39;erreur ; partout la ... \u003cb\u003eadhérents\u003c/b\u003e , sans attendre son retour à Reims , fait , dès le 27 ... \u003cb\u003eChavigny\u003c/b\u003e , ne devait prendre possession que le 23 août 1718. ) 29 évèques&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Q3F6qk9GHz0C",
+      "etag": "W0lBpORAWyk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Q3F6qk9GHz0C",
+      "volumeInfo": {
+        "title": "Recueil des intructions données aux Ambassadeurs et Ministres de France, depuis les traités de Westphalie jusqu'à la Rèvolution Française",
+        "publishedDate": "1889",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001103964420"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 662,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "3.5.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Q3F6qk9GHz0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Q3F6qk9GHz0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=Q3F6qk9GHz0C&pg=PA276&dq=%22seuls+adherans%22+Chavigny&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Q3F6qk9GHz0C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Q3F6qk9GHz0C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=Q3F6qk9GHz0C&rdid=book-Q3F6qk9GHz0C&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Recueil_des_intructions_donn%C3%A9es_aux_Amb.epub?id=Q3F6qk9GHz0C&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Recueil_des_intructions_donn%C3%A9es_aux_Amb.pdf?id=Q3F6qk9GHz0C&hl=&output=pdf&sig=ACfU3U2-KIKr6oSULvP8yzV-OcaW0rmiVg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Q3F6qk9GHz0C&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eChavigny\u003c/b\u003e , se résolut de la proposer à la première conférence comme le \u003cb\u003eseul\u003c/b\u003e moyen de soulager le pays et les finances épuisées de l&#39;Électeur . Le maréchal de Sec- kendorff et sa cabale , quoiqu&#39;ils n&#39;eussent pas la moindre con&nbsp;..."
+      }
+    }
+  ]
+}

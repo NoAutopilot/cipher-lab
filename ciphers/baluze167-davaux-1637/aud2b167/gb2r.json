@@ -1,0 +1,676 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 24,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "e7tBAAAAcAAJ",
+      "etag": "CuyB/njdX70",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/e7tBAAAAcAAJ",
+      "volumeInfo": {
+        "title": "La Defense de la monarchie francoise",
+        "authors": [
+          "Jean de Baricave"
+        ],
+        "publishedDate": "1614",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BSB:BSB10355530"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 1084,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "3.5.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=e7tBAAAAcAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=e7tBAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=e7tBAAAAcAAJ&pg=PA726&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=e7tBAAAAcAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=e7tBAAAAcAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=e7tBAAAAcAAJ&rdid=book-e7tBAAAAcAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/La_Defense_de_la_monarchie_francoise.epub?id=e7tBAAAAcAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/La_Defense_de_la_monarchie_francoise.pdf?id=e7tBAAAAcAAJ&hl=&output=pdf&sig=ACfU3U3uMy6vEiY3U525pJf5FoWxAmiTSg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=e7tBAAAAcAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eennemi\u003c/b\u003e estranger , ou domestique , qui s&#39;en pourra rendre le maistre . Et fi le Prince est le plus fort &amp; \u003cb\u003emaistre de la campagne\u003c/b\u003e ... \u003cb\u003elaisser\u003c/b\u003e telles forteresses à la garde du peuple , je n&#39;y voy nulle raison ni apparence : D&#39;autant qu&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "eyIKAAAAIAAJ",
+      "etag": "VAkFWah97eU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/eyIKAAAAIAAJ",
+      "volumeInfo": {
+        "title": "Recueil mémorable d'aulcuns cas advenus depuis l'an du salut 1573 tant à Beauvais qu'ailleurs",
+        "authors": [
+          "Ricquier"
+        ],
+        "publishedDate": "1909",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "STANFORD:36105039474254"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 320,
+        "printType": "BOOK",
+        "categories": [
+          "Archives"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.9.9.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=eyIKAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=eyIKAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=eyIKAAAAIAAJ&q=%22maistre+de+la+campagne%22+ennemi+laissant&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=eyIKAAAAIAAJ&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Recueil_m%C3%A9morable_d_aulcuns_cas_advenus.html?hl=&id=eyIKAAAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=eyIKAAAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003elaisser\u003c/b\u003e sortir le bled de France que pour les autres choses qu&#39;il prend ... \u003cb\u003eennemi\u003c/b\u003e qui empeschoient de venir a Beauvais . - Juin . Ceux de Compiégne ... \u003cb\u003emaistre de la campagne\u003c/b\u003e . 11 juillet . - Le Roi de Navarre , étant passé a&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "WHoCgdsD_1wC",
+      "etag": "Ab+jLJMLh/g",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/WHoCgdsD_1wC",
+      "volumeInfo": {
+        "title": "La Gazette de France",
+        "publishedDate": "1644",
+        "description": "Gazette nationale de France",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001104199075"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 1124,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.7.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=WHoCgdsD_1wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=WHoCgdsD_1wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=WHoCgdsD_1wC&pg=PA44&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=WHoCgdsD_1wC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=WHoCgdsD_1wC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=WHoCgdsD_1wC&rdid=book-WHoCgdsD_1wC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/La_Gazette_de_France.epub?id=WHoCgdsD_1wC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/La_Gazette_de_France.pdf?id=WHoCgdsD_1wC&hl=&output=pdf&sig=ACfU3U3WEuHk9SXxDYAde1sFQZNCxj95Pg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=WHoCgdsD_1wC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003elaisse\u003c/b\u003e vivre à discrétion fur ceux de noftre parti : Reméde non moins dangereux que le mal mef- me , &amp; peut estre autant impossible à exécuter que nos autres desseins , en cas que l&#39;\u003cb\u003eennemi\u003c/b\u003e se trouve encor \u003cb\u003emaistre de la campagne\u003c/b\u003e . Nos&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "NbBLAAAAMAAJ",
+      "etag": "fCHWYgBIO1w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/NbBLAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Documents",
+        "authors": [
+          "Société académique d'archéologie, sciences et arts du département de l'Oise, Beauvais"
+        ],
+        "publishedDate": "1909",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015068229429"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 312,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.11.12.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=NbBLAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=NbBLAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=NbBLAAAAMAAJ&q=%22maistre+de+la+campagne%22+ennemi+laissant&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=NbBLAAAAMAAJ&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Documents.html?hl=&id=NbBLAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=NbBLAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003elaisser\u003c/b\u003e sortir le bled de France que pour les autres choses qu&#39;il prend . Or ... \u003cb\u003eennemi\u003c/b\u003e qui empeschoient de venir a Beauvais . Juin . Ceux de Compiègne ... \u003cb\u003emaistre de la campagne\u003c/b\u003e . 11 juillet . Le Roi de Navarre , étant passé a&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "d8tTAAAAcAAJ",
+      "etag": "wh3fX02tTZI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/d8tTAAAAcAAJ",
+      "volumeInfo": {
+        "title": "Inventaire general de l'histoire de France depuis Pharamond jusques a present",
+        "authors": [
+          "Jean de Serres"
+        ],
+        "publishedDate": "1608",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "ONB:+Z167404606"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 1258,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.9.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=d8tTAAAAcAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=d8tTAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=d8tTAAAAcAAJ&pg=PA524&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=d8tTAAAAcAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=d8tTAAAAcAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=d8tTAAAAcAAJ&rdid=book-d8tTAAAAcAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Inventaire_general_de_l_histoire_de_Fran.epub?id=d8tTAAAAcAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Inventaire_general_de_l_histoire_de_Fran.pdf?id=d8tTAAAAcAAJ&hl=&output=pdf&sig=ACfU3U0-s9NGI67uIXe2KT7A3ws8M2EkJg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=d8tTAAAAcAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003emaistre de la campagne\u003c/b\u003e , que hazarder leurs gents en vn second effort contre vn \u003cb\u003eennemi\u003c/b\u003e que la vergongne ou le ... \u003cb\u003elaisse\u003c/b\u003e Sept compagnies de cauallerie , &amp; cinquan- te d&#39;infanterie dedans Ostende , pour tenir la vil- le munie d&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "dnVyEQAAQBAJ",
+      "etag": "tXwP1uxUCZc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/dnVyEQAAQBAJ",
+      "volumeInfo": {
+        "title": "Histoire de La Flèche et de ses seigneurs",
+        "subtitle": "1er Period 1050-1589 - Tome 1",
+        "authors": [
+          "Charles de Montzey"
+        ],
+        "publisher": "BoD – Books on Demand",
+        "publishedDate": "2025-07-17",
+        "description": "Réimpression inchangée de l'édition originale de 1877. La maison d'édition Antigonos est spécialisée dans la publication de réimpressions de livres historiques. Nous veillons à ce que ces ouvrages soient mis à la disposition du public dans de bonnes conditions afin de préserver leur patrimoine culturel.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783563242919"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3563242917"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 294,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=dnVyEQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=dnVyEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=dnVyEQAAQBAJ&pg=PA250&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=dnVyEQAAQBAJ&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Histoire_de_La_Fl%C3%A8che_et_de_ses_seigneu.html?hl=&id=dnVyEQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Histoire_de_La_Fl%C3%A8che_et_de_ses_seigneu-sample-pdf.acsm?id=dnVyEQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=dnVyEQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eennemi\u003c/b\u003e vint le trouver . Sébastien Moreau ( de Villefranche ) , référendaire général du duché de Milan , dit ... \u003cb\u003emaistre de &lt;&lt; la campagne\u003c/b\u003e , il estoit seigneur des villes . » Le roi manda cependant au- près de lui le maréchal La&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "CSaCqHF2WeIC",
+      "etag": "8A/dGFqOVls",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/CSaCqHF2WeIC",
+      "volumeInfo": {
+        "title": "Histoire du grand schisme d'Occident",
+        "authors": [
+          "Louis Maimbourg"
+        ],
+        "publishedDate": "1680",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "EHC:148100223284Z"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 676,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.3.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=CSaCqHF2WeIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=CSaCqHF2WeIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=CSaCqHF2WeIC&pg=PA160&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=CSaCqHF2WeIC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=CSaCqHF2WeIC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=CSaCqHF2WeIC&rdid=book-CSaCqHF2WeIC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Histoire_du_grand_schisme_d_Occident.epub?id=CSaCqHF2WeIC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=CSaCqHF2WeIC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eennemi\u003c/b\u003e par de petits combats , quand ils le pour- roient faire à coup seûr , &amp; de prendre l&#39;occasion de se ... \u003cb\u003emaistre de la campagne\u003c/b\u003e , où l&#39;on n&#39;eût pas le loisir d&#39;empescher qu&#39;il ne trouvast encore affez de vivres durant cét&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "a34wnEjMTskC",
+      "etag": "5wdx3duOgiE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/a34wnEjMTskC",
+      "volumeInfo": {
+        "title": "Histoire de la FlÃ¨che et de ses seigneurs",
+        "subtitle": "1050 - 1589",
+        "authors": [
+          "Charles “de” Montzey"
+        ],
+        "publishedDate": "1877",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "ONB:+Z256628808"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 316,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.6.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=a34wnEjMTskC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=a34wnEjMTskC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=a34wnEjMTskC&pg=PA250&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=a34wnEjMTskC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=a34wnEjMTskC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=a34wnEjMTskC&rdid=book-a34wnEjMTskC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Histoire_de_la_Fl%C3%83_che_et_de_ses_seigne.epub?id=a34wnEjMTskC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=a34wnEjMTskC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eennemi\u003c/b\u003e vint le trouver . Sébastien Moreau ( de Villefranche ) , référendaire ... \u003cb\u003emaistre de &lt;&lt; la campagne\u003c/b\u003e , il estoit seigneur des villes . » Le roi manda ... \u003cb\u003elaisser\u003c/b\u003e .... ..... &lt;&lt; Tortone , ler janvier 1525 . ( Page 41&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wREfZ7Y_EpwC",
+      "etag": "df8AcnKaER0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wREfZ7Y_EpwC",
+      "volumeInfo": {
+        "title": "Histoire générale d'Espagne, comprinse en XXVII livres,...",
+        "authors": [
+          "Louis Turquet de Mayerne"
+        ],
+        "publishedDate": "1586",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001100789705"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 1604,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "4.7.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wREfZ7Y_EpwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wREfZ7Y_EpwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=wREfZ7Y_EpwC&pg=PA1491&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=wREfZ7Y_EpwC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=wREfZ7Y_EpwC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=wREfZ7Y_EpwC&rdid=book-wREfZ7Y_EpwC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Histoire_g%C3%A9n%C3%A9rale_d_Espagne_comprinse.epub?id=wREfZ7Y_EpwC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wREfZ7Y_EpwC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003elaissant\u003c/b\u003e Hamed pour le dernier , fans que representation eust lieu . roy Muley Ha Cest arrest paffé en loy ... \u003cb\u003emaistre de la campagne\u003c/b\u003e , marcha droict à Fez , où il fut bien receu , &amp; proclamé Roy : &amp; lors il donna congé à&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "jg0dLi7OwtkC",
+      "etag": "ei03RqwrbdY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/jg0dLi7OwtkC",
+      "volumeInfo": {
+        "title": "Histoire generale d'Espagne, comprinse en 27. liures: esquels se voyent les origines & antiquités Espagnoles: les entreprinses de diuerses nations en celle region, dés les commencement: ... auec les succes memorables de paix & de guerre, iusques au regne de Philippe 2. A la fin du liure sont les genealogies des princes d'Espagne. Auec une table fort ample des principales matieres.[Loys de Mayerne, Turquet!",
+        "authors": [
+          "Louis Turquet : de Mayerne"
+        ],
+        "publishedDate": "1587",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "IBNT:BT100028032"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 1602,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.7.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=jg0dLi7OwtkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=jg0dLi7OwtkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=jg0dLi7OwtkC&pg=PA1491&dq=%22maistre+de+la+campagne%22+ennemi+laissant&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=jg0dLi7OwtkC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=jg0dLi7OwtkC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=jg0dLi7OwtkC&rdid=book-jg0dLi7OwtkC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Histoire_generale_d_Espagne_comprinse_en.epub?id=jg0dLi7OwtkC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=jg0dLi7OwtkC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003elaissant\u003c/b\u003e Hamed pour le dernier , sans que representation eust lieu , ry Muley Ha- Cest arrest passé en loy ... \u003cb\u003emaistre de la campagne\u003c/b\u003e , marcha droict à Fez , où il fut bien receu , &amp; proclamé Roy : &amp; lors il donna congé à&nbsp;..."
+      }
+    }
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 336,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "eck6OhRrah8C",
+      "etag": "qeOZqsO4mOg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/eck6OhRrah8C",
+      "volumeInfo": {
+        "title": "\"Rien ne nous plaît que le combat\"",
+        "subtitle": "la campagne des Provinciales de Pascal : étude d'un dialogue polémique",
+        "authors": [
+          "Olivier Jouslin"
+        ],
+        "publisher": "Presses Univ Blaise Pascal",
+        "publishedDate": "2007",
+        "description": "\"En janvier 1656, Arnauld le docteur est jugé en Sorbonne par ses pairs. Le jeune Pascal, auréolé par ses expériences montrant le vide, est à nouveau parisien. La puissante abbaye qu'est Port-Royal l'avait attiré dès son séjour rouennais. Les solitaires, après quelques essais infructueux - et une certaine réticence - décident de lui donner sa chance et de le laisser défendre leur cause : il vient de leur lire la première Provinciale. Elle pourra venir en aide à Arnauld. La Campagne des Petites Lettres va durer un an. Puis plusieurs polémiques et une réponse essentielle - l'Apologie pour les casuistes - l'amènent à se prolonger jusqu'en 1659. On propose au lecteur de suivre ici la campagne au plus près de son déroulement chronologique et de rétablir ainsi dans son intégralité le mécanisme de la polarisation polémique.\"--",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9782845163607"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "2845163606"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 827,
+        "printType": "BOOK",
+        "categories": [
+          "Casuistry"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.5.3.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=eck6OhRrah8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=eck6OhRrah8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=eck6OhRrah8C&pg=PA734&dq=%22perdrons+les+seuls%22&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=eck6OhRrah8C&dq=%22perdrons+les+seuls%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Rien_ne_nous_pla%C3%AEt_que_le_combat.html?hl=&id=eck6OhRrah8C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Rien_ne_nous_pla%C3%AEt_que_le_combat-sample-pdf.acsm?id=eck6OhRrah8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=eck6OhRrah8C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eperdront seuls\u003c/b\u003e aux yeux de Dieu , mais , selon leurs ennemis , leurs agissements les perdront dans tous les domaines aux yeux des hommes . La perte de valeur , au sens le plus total du terme , est bien ce qui attend les jésuites à l&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "_Fg8AAAAYAAJ",
+      "etag": "hjiYt/Yflec",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_Fg8AAAAYAAJ",
+      "volumeInfo": {
+        "title": "Annales des mines, ou Recueil de mémoires sur l'exploitation des mines, et sur les sciences qui s'y rapportent",
+        "publishedDate": "1817",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "HARVARD:HNJSUC"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 548,
+        "printType": "BOOK",
+        "categories": [
+          "Mineral industries"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=_Fg8AAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=_Fg8AAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=_Fg8AAAAYAAJ&pg=PA274&dq=%22perdrons+les+seuls%22&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=_Fg8AAAAYAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=_Fg8AAAAYAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=_Fg8AAAAYAAJ&rdid=book-_Fg8AAAAYAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Annales_des_mines_ou_Recueil_de_m%C3%A9moire.epub?id=_Fg8AAAAYAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Annales_des_mines_ou_Recueil_de_m%C3%A9moire.pdf?id=_Fg8AAAAYAAJ&hl=&output=pdf&sig=ACfU3U3kOH-KOvE6WsVfsKZ-rowfbYqU5w&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=_Fg8AAAAYAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eperdront seuls\u003c/b\u003e des onglets pyramidaux ; ils com- prendront entre eux un espace vide , égal à une pyramide tronquée , renversée et terminée d&#39;un côté par le carré culminant du remblai , de l&#39;autre , par un carré semblable situé dans le&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "K2qA_DB7BHAC",
+      "etag": "fxUrE+Ih0U0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/K2qA_DB7BHAC",
+      "volumeInfo": {
+        "title": "Annales des mines",
+        "authors": [
+          "Frankreich"
+        ],
+        "publishedDate": "1817",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "ZBZH:ZBZ-00056610"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 554,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.5.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=K2qA_DB7BHAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=K2qA_DB7BHAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=K2qA_DB7BHAC&pg=PA274&dq=%22perdrons+les+seuls%22&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=K2qA_DB7BHAC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=K2qA_DB7BHAC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=K2qA_DB7BHAC&rdid=book-K2qA_DB7BHAC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Annales_des_mines.epub?id=K2qA_DB7BHAC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=K2qA_DB7BHAC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eperdront seuls\u003c/b\u003e des onglets pyramidaux ; ils com- prendront entre eux un espace vide , égal à une pyramide tronquée , renversée et terminée d&#39;un côté par le carré culminant du remblai , de l&#39;autre , par un carré semblable situé dans le&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uOAKY-QSXG4C",
+      "etag": "hCcmKBEUlzg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uOAKY-QSXG4C",
+      "volumeInfo": {
+        "title": "Annales des mines",
+        "subtitle": "Réalités industrielles",
+        "publishedDate": "1817",
+        "description": "Annales des mines",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001104169128"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 554,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uOAKY-QSXG4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uOAKY-QSXG4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=uOAKY-QSXG4C&pg=PA274&dq=%22perdrons+les+seuls%22&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=uOAKY-QSXG4C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=uOAKY-QSXG4C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=uOAKY-QSXG4C&rdid=book-uOAKY-QSXG4C&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Annales_des_mines.epub?id=uOAKY-QSXG4C&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Annales_des_mines.pdf?id=uOAKY-QSXG4C&hl=&output=pdf&sig=ACfU3U1H7Wgm4dhHNtbZdU5KJBY_DWJsAg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=uOAKY-QSXG4C&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eperdront seuls\u003c/b\u003e des onglets pyramidaux ; ils com- prendront entre eux un espace vide , égal à une pyramide tronquée , renversée et terminée d&#39;un côté par le carré culminant du remblai , de l&#39;autre , par un carré semblable situé dans le&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "FhvjAAAAMAAJ",
+      "etag": "cEyQcWRvQT4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/FhvjAAAAMAAJ",
+      "volumeInfo": {
+        "title": "En vue de Dieu seul",
+        "authors": [
+          "Charles de Foucauld"
+        ],
+        "publishedDate": "1999",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015050718835"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 324,
+        "printType": "BOOK",
+        "categories": [
+          "Bible"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.5.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=FhvjAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=FhvjAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=FhvjAAAAMAAJ&q=%22perdrons+les+seuls%22&dq=%22perdrons+les+seuls%22&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=FhvjAAAAMAAJ&dq=%22perdrons+les+seuls%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/En_vue_de_Dieu_seul.html?hl=&id=FhvjAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=FhvjAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eseule\u003c/b\u003e seconde , un \u003cb\u003eseul\u003c/b\u003e instant de toute notre vie : mais que tous nos instants , sans en excepter une \u003cb\u003eseule\u003c/b\u003e seconde , soient employés en vue de Dieu \u003cb\u003eseul\u003c/b\u003e ... Ainsi nous nous \u003cb\u003eperdrons\u003c/b\u003e pour lui , ainsi nous l&#39;aimerons du plus grand amour&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "KjnuigbKO6wC",
+      "etag": "6CIMJUAHOwg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/KjnuigbKO6wC",
+      "volumeInfo": {
+        "title": "Nouveaux fragments de droit et d'histoire",
+        "authors": [
+          "Henri Beaune"
+        ],
+        "publishedDate": "1899",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "KUL:KULGB059792"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 454,
+        "printType": "BOOK",
+        "categories": [
+          "Law"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=KjnuigbKO6wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=KjnuigbKO6wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=KjnuigbKO6wC&pg=PA391&dq=%22perdrons+les+seuls%22&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=KjnuigbKO6wC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=KjnuigbKO6wC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=KjnuigbKO6wC&rdid=book-KjnuigbKO6wC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Nouveaux_fragments_de_droit_et_d_histoir.epub?id=KjnuigbKO6wC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=KjnuigbKO6wC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eseuls\u003c/b\u003e .... Nous \u003cb\u003eperdrons\u003c/b\u003e des soldats , mais nous ne \u003cb\u003eperdrons\u003c/b\u003e pas de batailles .... Quand on a pour soi , dans l&#39;ordre spirituel , la souve- raine autorité de l&#39;Église , on peut attendre avec con- fiance le jugement de la postérité et se&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Si4aAAAAYAAJ",
+      "etag": "0UBs1suRrbQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Si4aAAAAYAAJ",
+      "volumeInfo": {
+        "title": "Le commerce rochelais au XVIIIe siècle",
+        "subtitle": "d'après les documents composant les anciennes archives de la Chambre de commerce de La Rochelle",
+        "authors": [
+          "Emile Garnault"
+        ],
+        "publishedDate": "1898",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "HARVARD:32044105555387"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 386,
+        "printType": "BOOK",
+        "categories": [
+          "La Rochelle (France)"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Si4aAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Si4aAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=Si4aAAAAYAAJ&pg=PA268&dq=%22perdrons+les+seuls%22&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Si4aAAAAYAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Si4aAAAAYAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=Si4aAAAAYAAJ&rdid=book-Si4aAAAAYAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Le_commerce_rochelais_au_XVIIIe_si%C3%A8cle.epub?id=Si4aAAAAYAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Le_commerce_rochelais_au_XVIIIe_si%C3%A8cle.pdf?id=Si4aAAAAYAAJ&hl=&output=pdf&sig=ACfU3U1YC1iwESdh-GwRPzbSrebYQ2hWew&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Si4aAAAAYAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Bnu6Wl_sMDoC",
+      "etag": "hRkTWLEwS4w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Bnu6Wl_sMDoC",
+      "volumeInfo": {
+        "title": "Revue des questions historiques",
+        "publishedDate": "1935",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OSU:32435025918210"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 942,
+        "printType": "BOOK",
+        "categories": [
+          "History"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Bnu6Wl_sMDoC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Bnu6Wl_sMDoC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=Bnu6Wl_sMDoC&q=%22perdrons+les+seuls%22&dq=%22perdrons+les+seuls%22&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Bnu6Wl_sMDoC&dq=%22perdrons+les+seuls%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Revue_des_questions_historiques.html?hl=&id=Bnu6Wl_sMDoC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Bnu6Wl_sMDoC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eseuls\u003c/b\u003e peuvent nous dire pourquoi ils ont fait ce qu&#39;ils ont fait , comme ils ... \u003cb\u003eseule\u003c/b\u003e théologie de Saint - Thomas d&#39;Aquin . Mais la nature même de ... \u003cb\u003eperdrons\u003c/b\u003e rien , car la pensée française n&#39;a fait en cela qu&#39;exprimer une&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "OgzOBjSP2F8C",
+      "etag": "uQGU0x7jTtM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/OgzOBjSP2F8C",
+      "volumeInfo": {
+        "title": "Archives parlementaires de 1787 à 1860",
+        "subtitle": "recueil complet des débats législatifs & politiques des chambres françaises, imprimé par ordre du Sénat et de la Chambre des députés",
+        "publishedDate": "1969",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UCD:31175012501451"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 812,
+        "printType": "BOOK",
+        "categories": [
+          "France"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=OgzOBjSP2F8C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=OgzOBjSP2F8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=OgzOBjSP2F8C&q=%22perdrons+les+seuls%22&dq=%22perdrons+les+seuls%22&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=OgzOBjSP2F8C&dq=%22perdrons+les+seuls%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Archives_parlementaires_de_1787_%C3%A0_1860.html?hl=&id=OgzOBjSP2F8C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=OgzOBjSP2F8C&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eseul\u003c/b\u003e . « Les circonstances difficiles où nous nous sommes trouvés depuis la mémorable époque du 10 août , auraient exigé sans doute les ressources et les pouvoirs dont vous \u003cb\u003eseuls\u003c/b\u003e ... \u003cb\u003eperdrons\u003c/b\u003e jamais de vue que nous tenons dans nos mains&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ccydRF1-mjkC",
+      "etag": "ArIPuyO7u2w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ccydRF1-mjkC",
+      "volumeInfo": {
+        "title": "Cosmos",
+        "subtitle": "revue des sciences et de leurs applications",
+        "publishedDate": "1893",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OXFORD:605403655"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 564,
+        "printType": "BOOK",
+        "categories": [
+          "Science"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ccydRF1-mjkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ccydRF1-mjkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=ccydRF1-mjkC&pg=PA58&dq=%22perdrons+les+seuls%22&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=ccydRF1-mjkC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ccydRF1-mjkC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=ccydRF1-mjkC&rdid=book-ccydRF1-mjkC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Cosmos.epub?id=ccydRF1-mjkC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ccydRF1-mjkC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eperdrons\u003c/b\u003e pas pour cela un \u003cb\u003eseul\u003c/b\u003e vrai savant . C&#39;est que si les attrac- tions dont je viens de parler ont grossi ... \u003cb\u003eseuls\u003c/b\u003e le droit d&#39;ambitionner le titre de savant . De même que l&#39;autel nourrit le prêtre , la science vient en aide à&nbsp;..."
+      }
+    }
+  ]
+}

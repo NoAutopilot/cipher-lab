@@ -1,0 +1,683 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 152,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "HbVWAAAAMAAJ",
+      "etag": "V3MVkqOAanQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/HbVWAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Œuvres du Cardinal de Retz",
+        "authors": [
+          "Jean François Paul de Gondi de Retz"
+        ],
+        "publishedDate": "1896",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015069883620"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 552,
+        "printType": "BOOK",
+        "categories": [
+          "France"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.10.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=HbVWAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=HbVWAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=HbVWAAAAMAAJ&pg=PA230&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=HbVWAAAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=HbVWAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=HbVWAAAAMAAJ&rdid=book-HbVWAAAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/%C5%92uvres_du_Cardinal_de_Retz.epub?id=HbVWAAAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/%C5%92uvres_du_Cardinal_de_Retz.pdf?id=HbVWAAAAMAAJ&hl=&output=pdf&sig=ACfU3U1UQJ2qXYBp4E0g2XjPYWLtvcE7wA&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=HbVWAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003em\u003c/b\u003e&#39;ait rendu si haute- ment le mal pour le bien ? ( VI , 41. ) HAUTEUR : Je ... \u003cb\u003ejointes\u003c/b\u003e ensemble . ( IV , 184. ) HAVRE : Dieu veuille que ces ports ne \u003cb\u003esoient\u003c/b\u003e ... \u003cb\u003eLongueville\u003c/b\u003e a d&#39;autres prétentions , à la bonne heure . \u003cb\u003eM\u003c/b\u003e. le prince de&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "bTko5EquNCEC",
+      "etag": "J+N9WWIapdo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bTko5EquNCEC",
+      "volumeInfo": {
+        "title": "Oeuvres du cardinal de Retz: Lexique de la langue du cardinal de Retz... par L.-A. Regnier. 1896",
+        "authors": [
+          "Jean François Paul de Gondi de Retz"
+        ],
+        "publishedDate": "1896",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UFL:31262058902049"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 544,
+        "printType": "BOOK",
+        "categories": [
+          "France"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bTko5EquNCEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bTko5EquNCEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=bTko5EquNCEC&pg=PA230&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=bTko5EquNCEC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=bTko5EquNCEC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=bTko5EquNCEC&rdid=book-bTko5EquNCEC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Oeuvres_du_cardinal_de_Retz_Lexique_de_l.epub?id=bTko5EquNCEC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bTko5EquNCEC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "TF5iEAAAQBAJ",
+      "etag": "jAx+e9UTr4Q",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/TF5iEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Lexique de La Langue du Cardinal de Retz",
+        "authors": [
+          "Louis-Adolphe Regnier"
+        ],
+        "publisher": "BoD – Books on Demand",
+        "publishedDate": "2022-03-02",
+        "description": "Réimpression de l ́original de 1896.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783752475890"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3752475897"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 530,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=TF5iEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=TF5iEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=TF5iEAAAQBAJ&pg=PA230&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=TF5iEAAAQBAJ&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Lexique_de_La_Langue_du_Cardinal_de_Retz.html?hl=&id=TF5iEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Lexique_de_La_Langue_du_Cardinal_de_Retz-sample-pdf.acsm?id=TF5iEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=TF5iEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003ejointes\u003c/b\u003e ensemble . ( IV , 184. ) HAVRE : Dieu veuille que ces ports ne \u003cb\u003esoient\u003c/b\u003e pas les retraites des vais- seaux qui ... \u003cb\u003eM\u003c/b\u003e. de Vendôme . ( I , 199. ) Voyez encore III , 302 . HÉROÏQUE : Dans le rang des qualités qui le composent&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "VnU9AQAAMAAJ",
+      "etag": "Bfy1+Lejnmw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/VnU9AQAAMAAJ",
+      "volumeInfo": {
+        "title": "Œuvres du cardinal de Retz: Lexique de la langue du cardinal de Retz, avec une introduction grammaticale par L.-A. Regnier. 1896",
+        "authors": [
+          "Jean François Paul de Gondi de Retz"
+        ],
+        "publishedDate": "1896",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UCD:31175010848847"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 542,
+        "printType": "BOOK",
+        "categories": [
+          "France"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.9.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=VnU9AQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=VnU9AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=VnU9AQAAMAAJ&pg=PA230&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=VnU9AQAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=VnU9AQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=VnU9AQAAMAAJ&rdid=book-VnU9AQAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/%C5%92uvres_du_cardinal_de_Retz_Lexique_de_l.epub?id=VnU9AQAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=VnU9AQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "cBoeCNM1nzcC",
+      "etag": "pby8MACnjyQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/cBoeCNM1nzcC",
+      "volumeInfo": {
+        "title": "Œuvres du crdinal de Retz",
+        "authors": [
+          "Jean François Paul de Gondi de Retz"
+        ],
+        "publishedDate": "1896",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "MINN:31951002182301I"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 544,
+        "printType": "BOOK",
+        "categories": [
+          "France"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.5.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=cBoeCNM1nzcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=cBoeCNM1nzcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=cBoeCNM1nzcC&pg=PA230&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=cBoeCNM1nzcC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=cBoeCNM1nzcC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=cBoeCNM1nzcC&rdid=book-cBoeCNM1nzcC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/%C5%92uvres_du_crdinal_de_Retz.epub?id=cBoeCNM1nzcC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=cBoeCNM1nzcC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003em\u003c/b\u003e&#39;ait rendu si haute- ment le mal pour le bien ? ( VI , 41. ) HAUTEUR : Je ... \u003cb\u003ejointes\u003c/b\u003e ensemble . ( IV , 184. ) HAVRE : Dieu veuille que ces ports ne \u003cb\u003esoient\u003c/b\u003e ... \u003cb\u003eLongueville\u003c/b\u003e a d&#39;autres prétentions , à la bonne heure . \u003cb\u003eM\u003c/b\u003e. le prince de&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Zzpx6KbbZ0wC",
+      "etag": "RauNGHDFomg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Zzpx6KbbZ0wC",
+      "volumeInfo": {
+        "title": "Oeuvres du cardinal de Retz",
+        "authors": [
+          "Retz"
+        ],
+        "publishedDate": "1896",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001103514258"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 544,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.9.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Zzpx6KbbZ0wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Zzpx6KbbZ0wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=Zzpx6KbbZ0wC&pg=PA230&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Zzpx6KbbZ0wC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Zzpx6KbbZ0wC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=Zzpx6KbbZ0wC&rdid=book-Zzpx6KbbZ0wC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Oeuvres_du_cardinal_de_Retz.epub?id=Zzpx6KbbZ0wC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Oeuvres_du_cardinal_de_Retz.pdf?id=Zzpx6KbbZ0wC&hl=&output=pdf&sig=ACfU3U2On8FLE4s_Uz1C5V7wHWhPCI_Hjg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Zzpx6KbbZ0wC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003em\u003c/b\u003e&#39;ait rendu si haute- ment le mal pour le bien ? ( VI , 41. ) HAUTEUR : Je ... \u003cb\u003ejointes\u003c/b\u003e ensemble . ( IV , 184. ) HAVRE : Dieu veuille que ces ports ne \u003cb\u003esoient\u003c/b\u003e ... \u003cb\u003eLongueville\u003c/b\u003e a d&#39;autres prétentions , à la bonne heure . \u003cb\u003eM\u003c/b\u003e. le prince de&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "AkJxg-WlZFcC",
+      "etag": "OJa+771jLug",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AkJxg-WlZFcC",
+      "volumeInfo": {
+        "title": "Oeuvres du Cardinal de Retz",
+        "subtitle": "avec une introduction grammaticale. Lexique de la langue du Cardinal de Retz",
+        "authors": [
+          "Adolphe Regnier"
+        ],
+        "publishedDate": "1896",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BSB:BSB11808242"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 544,
+        "printType": "BOOK",
+        "categories": [
+          "French language"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.2.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AkJxg-WlZFcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AkJxg-WlZFcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=AkJxg-WlZFcC&pg=PA230&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=AkJxg-WlZFcC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=AkJxg-WlZFcC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=AkJxg-WlZFcC&rdid=book-AkJxg-WlZFcC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Oeuvres_du_Cardinal_de_Retz.epub?id=AkJxg-WlZFcC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AkJxg-WlZFcC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003em\u003c/b\u003e&#39;ait rendu si haute- ment le mal pour le bien ? ( VI , 41. ) HAUTEUR : Je ... \u003cb\u003ejointes\u003c/b\u003e ensemble . ( IV , 184. ) HAVRE : Dieu veuille que ces ports ne \u003cb\u003esoient\u003c/b\u003e ... \u003cb\u003eLongueville\u003c/b\u003e a d&#39;autres prétentions , à la bonne heure . \u003cb\u003eM\u003c/b\u003e. le prince de&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wNzcEIuhrqoC",
+      "etag": "rWz9QdqEcaA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wNzcEIuhrqoC",
+      "volumeInfo": {
+        "title": "Journal des savants",
+        "publishedDate": "1853",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001102945693"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 804,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wNzcEIuhrqoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wNzcEIuhrqoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=wNzcEIuhrqoC&pg=PA296&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=wNzcEIuhrqoC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=wNzcEIuhrqoC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=wNzcEIuhrqoC&rdid=book-wNzcEIuhrqoC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Journal_des_savants.epub?id=wNzcEIuhrqoC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Journal_des_savants.pdf?id=wNzcEIuhrqoC&hl=&output=pdf&sig=ACfU3U1vxYEJ-RtqsuJdE_2k0SePQJ4M0A&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wNzcEIuhrqoC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "\u003cb\u003eM\u003c/b\u003e. d&#39;Herbois ( encore la princesse Palatine ) , et qu&#39;ił se serve de Silvandre ( Courtin ) pour cela , et le tout ... \u003cb\u003esoient joints\u003c/b\u003e en cause avec elle pour la servir . Je manderay à \u003cb\u003eM\u003c/b\u003e. de Bourgneuf de faire generalement tout ce que&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "e1mEA4oh2XYC",
+      "etag": "wJOhy2+GutE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/e1mEA4oh2XYC",
+      "volumeInfo": {
+        "title": "Mémoires de François de Boyvin baron du Villars",
+        "authors": [
+          "François de Boyvin du Villars"
+        ],
+        "publishedDate": "1884",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BML:37001103434754"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 970,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.9.10.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=e1mEA4oh2XYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=e1mEA4oh2XYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=e1mEA4oh2XYC&pg=PA359&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=e1mEA4oh2XYC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=e1mEA4oh2XYC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=e1mEA4oh2XYC&rdid=book-e1mEA4oh2XYC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/M%C3%A9moires_de_Fran%C3%A7ois_de_Boyvin_baron_d.epub?id=e1mEA4oh2XYC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/M%C3%A9moires_de_Fran%C3%A7ois_de_Boyvin_baron_d.pdf?id=e1mEA4oh2XYC&hl=&output=pdf&sig=ACfU3U15fV53kHPsCrKtGev2lCn83_7dHQ&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=e1mEA4oh2XYC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003ejoint\u003c/b\u003e à l&#39;armée de \u003cb\u003eM\u003c/b\u003e. d&#39;Aumalle ; deux autres camps ennemis s&#39;assemblent en sa presence ; perd l&#39;occasion de combattre . Nous en fismes autant quand \u003cb\u003eM. de Longueville\u003c/b\u003e amena le secours du roy Henry IV , que nous avions assiegé à Diepe&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "YGXTDK-p24sC",
+      "etag": "zFxCFhxTI4s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/YGXTDK-p24sC",
+      "volumeInfo": {
+        "title": "Journal des sçavans",
+        "publishedDate": "1853",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015036658642"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 802,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.10.14.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=YGXTDK-p24sC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=YGXTDK-p24sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "fr",
+        "previewLink": "http://books.google.com/books?id=YGXTDK-p24sC&pg=PA296&dq=%22soient+jointes+a+M+de+Longueville%22&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=YGXTDK-p24sC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=YGXTDK-p24sC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=YGXTDK-p24sC&rdid=book-YGXTDK-p24sC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Journal_des_s%C3%A7avans.epub?id=YGXTDK-p24sC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Journal_des_s%C3%A7avans.pdf?id=YGXTDK-p24sC&hl=&output=pdf&sig=ACfU3U2OW20J6RgY8EnN4pDdBku_1iCpPg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=YGXTDK-p24sC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "\u003cb\u003eM\u003c/b\u003e. d&#39;Herbois ( encore la princesse Palatine ) , et qu&#39;il se serve de Silvandre ( Courtin ) pour cela , et le tout ... \u003cb\u003esoient joints\u003c/b\u003e en cause avec elle pour la servir . Je manderay à \u003cb\u003eM\u003c/b\u003e. de Bourgneuf de faire generalement tout ce que&nbsp;..."
+      }
+    }
+  ]
+}

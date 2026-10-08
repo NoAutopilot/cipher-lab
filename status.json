@@ -6618,9 +6618,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/baluze167-davaux-1637",
       "key": "published",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (AUD1-B167)'"
+        "AUDIT.md '## AUDIT (AUD1-B167)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-B167)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 29.0,
@@ -6635,8 +6636,8 @@
       "kind": "reading",
       "title": "Baluze 170 f.229r-v: Chavigny to d'Avaux, Amiens, 25 Aug 1640, bare cipher passage on the junction of the dukes' and the Landgravine's troops with Longueville",
       "grade": "N3",
-      "line": "Read with Tomokiyo's published D'Avaux key (106 numeral tokens H, 180 letter signs M); no prior decipherment or printed text located in Avenel's Richelieu letters VI-VIII, Le Clerc's Negociations secretes t.1, the Guebriant histories (1657, 1913), Internet Archive full text, Google Books, OpenAlex or CrossRef (searched 8 Oct 2026).",
-      "gap": "AAE Correspondance politique and Chavigny's own registers unread; BnF catalogue record not read; Semantic Scholar 429; JSTOR rows queued; so not N4; one audit (AUD1-B167); SO-BAL170-F229 queued",
+      "line": "Read with Tomokiyo's published D'Avaux key (106 numeral tokens H, 180 letter signs M); no prior decipherment or printed text located in Avenel's Richelieu letters VI-VIII, Le Clerc's Negociations secretes t.1, the Guebriant histories (1657, 1913), Internet Archive full text, Google Books, OpenAlex, CrossRef, Semantic Scholar, the BnF catalogue record, Acta Pacis Westphalicae I 1, Boppe 1887 and Grotius's Briefwisseling (searched 8 Oct 2026, two audits).",
+      "gap": "AAE Correspondance politique and Chavigny's own registers unread; Hessian/Lueneburg-side editions (e.g. Rommel VIII) not checked; two phrases searched in Google Books only by variant; JSTOR rows queued; so not N4; two audits (AUD1-B167, AUD2-B167: N3 and D2 confirmed); SO-BAL170-F229 queued",
       "phrases": [
         "touchant la jonction de leurs forces",
         "gratiffiera le comte d'Heberstein"

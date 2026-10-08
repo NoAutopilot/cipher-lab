@@ -1,0 +1,21 @@
+## Chavigny Avaux 1640 correspondence 200
+ total 0
+  File "<string>", line 2
+    import sys,json;t=sys.stdin.read();j,_,c=t.rpartition('\nHTTP ');print('##','Chavigny d'Avaux Hamburg 1640',c.strip())
+                                                                                                              ^
+SyntaxError: unterminated string literal (detected at line 2)
+## Eberstein Hesse-Cassel 1640 Longueville junction 200
+ total 0
+## Avaux cipher Richelieu nomenclator 429
+ total None
+## Baluze 170 Chavigny 200
+ total 0
+## Chavigny Avaux Hamburg 1640 HTTP 200
+ total 0
+## Avaux cipher Richelieu HTTP 200
+ total 1
+ - 2011 The Trope of the Book in the Jungle: Colonial and Postcolonial Avatars
+## Chavigny secretary of state 1640 Germany allies HTTP 200
+ total 0
+## Amalie Elisabeth Hesse-Kassel France alliance 1640 HTTP 429
+ total None
