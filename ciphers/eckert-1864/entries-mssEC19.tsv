@@ -312,8 +312,8 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9043	151	1	Hayes Phila  Wash. Aug 11. 1864.	Hayes Phila	retained Sig Dana Apt Secy	23	0	4	0	clear	none	3		3
 9044	152	0				59	18	24	3	1	warofrebellion385unit@leaf0(cov13)	13		3
 9044	152	1	SH Beckwith & McCaine  Wash'n Aug 12th 1864	SH Beckwith & McCaine		103	31	37	8	1	none	6		2
-9045	153	1	Horner N. Y.  Wash. Aug 12. 1864.	Horner N. Y.	1130 pm	85	17	29	3	1	none	4		1
-9045	153	2	John Horner N. Y.  Washn Aug 12th 1864	John Horner N. Y.		128	29	46	7	1	none	4		1
+9045	153	1	Horner N. Y.  Wash. Aug 12. 1864.	Horner N. Y.	1130 pm	85	17	29	3	1	none	4	LS-R3 E38	1
+9045	153	2	John Horner N. Y.  Washn Aug 12th 1864	John Horner N. Y.		128	29	46	7	1	none	4	LS-R3 E39	1
 9046	154	0	Jno Homer N. Y.  Washn Aug 13th 1864	Jno Homer N. Y.		70	16	28	8	1	none	4		1
 9046	154	1	Beckwith City Pt (No 2)  Wash. D. C. Aug. 13. 1864 9.30 P. M.	Beckwith City Pt (No 2)		99	24	37	7	2	warofrebellion412unit@leaf0(cov33)	33		3
 9047	155	1	<deletion>Thayer Phila</deletion> Wash Aug. 14. 1864	<deletion>Thayer Phila</deletion>		37	8	9	3	1	none	3		1

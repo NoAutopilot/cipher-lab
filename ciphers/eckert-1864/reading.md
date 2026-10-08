@@ -41,6 +41,8 @@ the clerk's slips ("Prss", "mangled", "For rest").
 | E27 | Judge Advocate L. C. Turner to 'beverage' (unread), New York, 10 Oct 1864 | not located | reads cleanly but the first word "Grunt" (book: Warrenton, one line below Growl = Washington) graded M by hand; addressee word "beverage" not in the book (LS-R1) |
 | E28 | F. W. Seward to Thurlow Weed, New York, 11 Oct 1864 11.30 AM | not located | reads cleanly: Captain Pennock will put a boat of the Mississippi squadron at the disposal of the New York election agents; "Pilgrim[?]" written "Pelgrim" (LS-R1) |
 | E29 | Dana to Dix, New York, 5 Nov 1864 4 PM | not located as a telegram; its content and the wording of the description ("a bulldog look; snuffs up his nose") are in Confederates Downeast (1985), quoting the informant Jones (LS-V1: N2) | reads cleanly: arrest on Monday morning of six named rebel agents, with descriptions (LS-R1) |
+| E38 | Seward (signed Secretary of State) to John G. Palfrey, Postmaster, Boston, via Horner, New York, 12 Aug 1864 11 PM | not located (Google Books and IA full text, LS-R3) | reads cleanly: a letter with a remittance forwarded from Halifax by way of St Johns by Alex Keith Jr, the rebel agent there, to N. Ferris, No. 10 North Market St, Boston; secure it and forward it to the State Department; "John", "Johns", "watch" left plain (LS-R3) |
+| E39 | Seward (signed Secretary of State) to Abraham Wakeman, Postmaster, New York, 12 Aug 1864 11.30 PM | not located (Google Books and IA full text, LS-R3) | reads cleanly: three remittances by Keith (to Ferris, Boston; J. B. Hunter & Co, New York; Gordon Bruce & Co, New York, for Mitchell Kenner & Co, Montreal) to be secured with information on the addressees; "perfume" printed [3] by the decoder is the book's other row, By the way of (key.md p.18 l.24 R), by hand; "John", "Johns", "Hunter", "person", "trade" left plain (LS-R3) |
 
 Sixteen of the twenty were matched to an Official Records print by the subagent sweep of 26 volume-parts of
 series I on the Internet Archive (or_check in NOTES.md section 4); the four it did not match (E4, E5, E6, E12)
@@ -295,5 +297,17 @@ Code-word tokens: H 15.
 
 Code-word tokens: H 33.
 
-Totals over the 29 entries: H 473, C 11, I 0, M 0.
+**E38 | Page 152 | 9045 | 12 Aug 1864 11 PM, to John G. Palfrey, Postmaster, Boston, via Horner, New York**
+
+{time: 11 PM} {date: Aug 12} for John G PalFrey Post master Boston ---- A letter containing a remittance was this day forwarded from Halifax [By the way of] St Johns by Alex Keith Jr the [Rebel] agent there to N. Ferris No [10] [North] Mkt St Boston ---- It is very impt to the [Government] to get possession of that letter ---- You will please watch for & secure it & forward to me immedy [At the] State [Department] & [Report] your proceeding to the Post Mr [General]  {tail: [signed] [Secretary of State] ----}
+
+Code-word tokens: H 13.
+
+**E39 | Page 152 | 9045 | 12 Aug 1864 11.30 PM, to Abraham Wakeman, Postmaster, New York (Horner)**
+
+[Washington] {time: 11.30 PM} [12] for Abraham Wake man P M [New York] [.] A remittance was forwarded this day the [12] by Alex Keith Jr Halifax [By the way of] St John to N Ferris No [10] [North] Mkt St Bos ton [.] Another remittance by the same person to J B Hunter & Co [New York] via St Johns another remittance by same person to Gordon Bruce & Co [New York] [3] St John with directions to this house to ["] ship immy to Mitchell Kenner & Co Montreal [.] These letters with enclosures should at all hazards be secured & forwarded to me with [Information] as to the trade business or occupation [Of the] parties to whom they are addressed This [Telegraph (-ed, -ing)] will be your authority & you will [Report] to Post master [General]  {tail: [signed] [Secretary of State] will call see you soon}
+
+Code-word tokens: H 22.
+
+Totals over the 31 entries: H 508, C 11, I 0, M 0.
 <!-- decode.py: derived block ends -->
