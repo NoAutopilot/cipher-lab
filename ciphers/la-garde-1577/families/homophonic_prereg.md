@@ -14,3 +14,22 @@ Written and pushed before any scored run (CLAUDE.md rule 3).
   measured error); reported for the curve only.
 - If run A's control mean < 0.60: CONTROL BELOW GATE -> logged "untestable by this family at this N/error", stop.
   No reading is claimed from any statistic; a target decode with a judge PASS would still need a verifier.
+
+## Amendment 1 (8 Oct 2026, 22:4x UTC, LAG-HOM, account 2, LANE FAMILY-A2c) -- written and pushed before any scored run
+
+Reason: LAG-ERR (8 Oct 2026, `lag_err.tsv`) measured the marks-stripped base-code pass-to-pass disagreement, the reduction
+`basecode_cipher.txt` is built with, at **0.055 pooled (95% Wilson 0.036-0.084)**; the 0.23 above was the marks-kept figure.
+The error level changes; nothing else does. Cipher, N=229, K=26, `--tokens space`, spec corpora, family `homophonic`,
+`--param profile=target`, restarts 8, seeds 1-3, **gate 0.60 on the control mean (unchanged)**.
+
+- Run C (scored, gating): `--param noise=0.055 --measured-error 0.055`, control first; target only if the gate is met
+  (tool enforces, exit 3 otherwise). If gated: the same command with `--shuffle-target 1` beside it; both decodes judged by the
+  spec's judge. A target judge PASS counts only if the shuffled decode FAILs (ARM-C1).
+- Run D (upper bracket, rule 3 SALV-DIAG): the same command at `--param noise=0.084 --measured-error 0.084`. If D's control
+  mean < 0.60, the family is a non-test at the upper CI bound and any run C target result is stated as conditional on the
+  true error being near 0.055, not across the interval.
+- Interpretation fixed in advance: gate met at C and D, target judge FAIL with the shuffled decode also FAIL = a
+  control-backed negative for `homophonic` (K=26, profile=target) at N=229 on the base codes, conditional on the transcription
+  (rule 2) and on the dropped free `[mark]` tokens (LAG-ERR: about 2-3% uncertain). A target PASS with shuffled FAIL goes to
+  the lane for a separate verifier; no reading is claimed by this job. Control below gate at C = untestable by this family at
+  this N and error (third-attempt clause: the homophonic/masc ladder closes for this instrument).
