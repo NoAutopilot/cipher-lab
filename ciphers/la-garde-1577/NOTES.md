@@ -1526,7 +1526,7 @@ convention, seeds 1-40). PASS iff T > p95(b) and T >= p05(a). Power check: 10 he
 each against p95 of 20 shuffles of its own ciphertext and p05(a); power PASS iff >= 80% of those with recovery >= 0.60 pass.
 
 **Script:** `families/lag_gap.py` (291 solves, 4 processes, 11 min); every score in `families/lag_gap.tsv`; `--report`
-re-prints the read-out from the TSV; `--check` re-runs and diffs (exit code pasted below).
+re-prints the read-out from the TSV; `--check` re-ran all 291 solves and diffed: **exit 0** (byte-identical TSV, 23:2x UTC).
 
 | Set | n | Scores |
 |---|---|---|
