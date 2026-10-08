@@ -1,0 +1,4 @@
+N tags 134; in key 110; not in key (U) 24: ['6+', 'I', 'a', 'h', 'z']
+viterbi text: tlaaanlasaabiensnisaiariedesnaatlabeeitsetlatdessatlabesdelaanasnettsditsnzoetttemetslaunelasatnaassasntdesetlasnzmaiamadootesalassedestetdelaenostrestsaa
+(a) 4-gram: real -1.344 shuffled mean -1.675 p95 -1.403 p99 -1.272 rank 194/200
+(b) word cover: real 0.870 shuffled mean 0.679 p95 0.804 p99 0.844 rank 198/200

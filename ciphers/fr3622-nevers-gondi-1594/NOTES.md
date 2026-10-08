@@ -35,3 +35,11 @@ exit 0
 
 ## BNF-G41 (8 Oct 2026, account 2, first cheap test)
 Gate on fr.3983 f.178 passed in modified form (ITERATE.md: real -1.40 vs shuffled max -1.59, rank 0/200, both passes). Target f.91 (canvas 100 of btv1b9058938q, native 8004x6167, `images/f91/f100_native.jpg`): the cipher lines (about 5, mid-page) are written in a symbol alphabet, not in digits, so key no.41 (numeric codes) has no entry for them; target decode not run, `decode_key.py --check` n/a (no reading). Grades for a reading: none (0 H, 0 C, 0 S tokens on f.91). Where it was not found: no.41 does not read f.91's glyphs. Calls made: 4 Sonnet blind passes (key A/B, gate digits A/B), no reconciliation call for the gate digits (the gate used both passes separately). Requests: Gallica 11 (manifest cached earlier, canvases 150/151/306-310 thumbnails, f151/f310/f100 native).
+
+## BNF-G60E, f.91 under the G60D instrument (8 Oct 2026)
+Key no.60: Bourdeau's transcription (fr3986 key.tsv, CC BY 4.0), credit D. Bourdeau; numbering S. Tomokiyo. Crops: image `images/f91/block.jpg`
+cut by hand into sloped bands (`images/f91/v2/`; the tool's default cut `images/f91/f91_L0*` truncated the right-hand ends and its
+passes were discarded). Gallica IIIF returned HTTP 500 twice, a local copy was used. Result (numbers only, registered rule, no classification):
+N=134 tags, (a) -1.344 vs p95 -1.403 / p99 -1.272, (b) 0.870 vs p99 0.844 (rank 198/200); pass agreement 0.65. Per-token grades (H = in key and both passes agree;
+M otherwise; U = tag not in key): H 75, M 35, U 24; no H/C period reading, so this is a cryptanalytic result at most. Viterbi text is a draft
+(`scripts/g60e_result.txt`), no translation claim. No reading file written, so decode_key.py --check not applicable. Verifier next.
