@@ -11629,3 +11629,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:48 | FM-R3a reader | LANE LEDGER hdl take; for LANE LEDGER (account 1)
 2026-10-08 23:50 | OUT-CHECK-HUNT-EX (account 3, gate 7) | claim: E52 example sentence in huntington-einaudi-reply-2026-10
 2026-10-08 23:51 | FV-FM4 verifier (Opus) | LANE LEDGER hdl release (11 requests: 9 CONTENTdm dmQuery, 2 IIIF full pages 5784 5805 to scratch, 3.2 s apart); for LANE LEDGER (account 1)
+2026-10-08 23:51 | OUT-CHECK-HUNT-EX (account 3, gate 7) | done: E52 example sentence passes after 2 fixes (Submit credited to the OR print, not Cipher No. 1; comma before "catch him" removed); p.223 / 7 Nov 1864 / ledger words confirmed vs pointer 9117; status back to ready; shrink guard ok; nothing sent
