@@ -8,7 +8,7 @@ THE ITEM
 - Source: Thomas T. Eckert's telegraph ledger, Huntington Library, San Marino, mssEC 19 p.91 (digital pointer 8983),
   https://hdl.huntington.org/digital/collection/p16003coll11/id/8983, entry E49, headed "Sheldon, Washington 12 June 1864 4.10 PM, to Biggs, chief quartermaster, Fort Monroe". Read with War Department Cipher No. 1 (the book is in the same collection, mssEC 41).
 - Reading: Meigs, Quartermaster General, to Biggs: an expedition sixteen thousand strong is to embark at White House tomorrow; send to that place immediately every vessel fitted to aid in this movement and in removing stores and wounded to a new base or hospital.
-- Context we already know: The movement of 13 June 1864 from White House by water is well known; this telegram itself we have not found in print.
+- Context we already know: The movement of 13 June 1864 from White House by water is well known; this telegram itself we have not found in print. Since 8 Oct 2026 (AUD2-LS-E) we also know OR ser. I vol. 36 pt 3 p.769 prints Capt. P. P. Pitkin's telegram to Meigs from White House, 12 June 1864 (received 2.15 p.m.), asking for water transport for 16,000 troops the next day, which this telegram relays; this row is withdrawn (class N2), kept for the record.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (LS-V4)").

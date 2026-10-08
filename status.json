@@ -5444,9 +5444,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V4)'"
+        "AUDIT.md '## AUDIT (LS-V4)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-E)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5460,9 +5461,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Meigs to Biggs, Fort Monroe, 12 June 1864, an expedition of 16,000 to embark at White House (E49)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/92/156 copies, the 1864 press page by page, HathiTrust full text and the open scholarship indexes unread, JSTOR rows pending, so not N4; one audit (LS-V4), not counted until a second adversarial audit; SO-ECKERT-E49 queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book; the telegram relays Capt. Pitkin's request from White House, printed in the Official Records (ser. I vol. 36 pt 3 p.769), for water transport for 16,000 troops the next day; Meigs's own wording was not located in print.",
+      "gap": "N2 (AUD2-LS-E, 8 Oct 2026): substance in OR I/36 pt 3 p.769 (Pitkin to Meigs, White House, 12 June 1864, received 2.15 PM), Meigs's wording not located in print; not counted; SO-ECKERT-E49 withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.91, pointer 8983, E49"
       ],
@@ -5471,23 +5472,24 @@
         "Huntington mssEC 19 p.91, pointer 8983, E49"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "4/4 code words H; mostly in clear",
       "unresolved_spans": "none",
       "reading_version": "LS-R4 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V4)' section 4",
       "depth_sentence": "Meigs warns Biggs that an expedition sixteen thousand strong is to embark at White House the next day and tells him to send there every vessel fit to help, and to move stores and wounded to a new base or hospital.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V4); time word Julia = 4 PM agrees with the header 4.10 PM",
+      "depth_check": "fresh rule-7 re-derivation (LS-V4); time word Julia = 4 PM agrees with the header 4.10 PM; external check (AUD2-LS-E): the code words read Embark and Tomorrow agree with Pitkin's printed request (OR I/36 pt 3 p.769, transportation by water for 16,000 troops required from White House to-morrow); image crop checked word for word (AUD2-LS-E)",
       "depth_note": "4/4 code words H; mostly in clear"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V4)'"
+        "AUDIT.md '## AUDIT (LS-V4)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-E)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 89.5,
@@ -5502,8 +5504,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Meigs to Col Biggs, Fort Monroe, 11 Aug 1864, the Continental to Hilton Head with the General-in-Chief's dispatch (E50)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/92/156 copies, the 1864 press page by page, HathiTrust full text and the open scholarship indexes unread, JSTOR rows pending, so not N4; one audit (LS-V4), not counted until a second adversarial audit; SO-ECKERT-E50 queued",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III, by date and correspondent), the Papers of Ulysses S. Grant (vols 11-12), the senders' and recipients' printed papers and memoirs, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE.",
+      "gap": "Grant Papers vol. 13, NARA RG 92/107/156/393 copies, the Meigs Papers and HathiTrust full text unread, Semantic Scholar partly unreachable, JSTOR rows pending, so not N4; second audit AUD2-LS-E 8 Oct 2026 held N3 (OR by date incl. ser. II vol. 7 and McCallum, Grant Papers 11-12, Dana, Wallace, 1864 press by date window); SO-ECKERT-E50 queued",
       "phrases": [
         "Huntington mssEC 19 p.149, pointer 9042, E50"
       ],
@@ -5519,16 +5521,17 @@
       "reading_version": "LS-R4 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V4)' section 4",
       "depth_sentence": "Meigs tells Biggs to provision and water the Continental, bring her from the Department of the South, and send her to Hilton Head with a dispatch the General-in-Chief is preparing, reporting her hour of sailing.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V4); OR I/42 pt 2 prints the related order sending the Continental to Fort Monroe through Biggs",
+      "depth_check": "fresh rule-7 re-derivation (LS-V4); OR I/42 pt 2 prints the related order sending the Continental to Fort Monroe through Biggs; image crop checked word for word (AUD2-LS-E)",
       "depth_note": "17/19 code words H; amirs, ham unread"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V4)'"
+        "AUDIT.md '## AUDIT (LS-V4)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-E)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5543,8 +5546,8 @@
       "kind": "reading",
       "title": "Eckert 1864: W. H. Whiton to Adna Anderson, Government Railroads, Nashville, 21 Oct 1864, accept the inspector-generalship (E51)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/92/156 copies, the 1864 press page by page, HathiTrust full text and the open scholarship indexes unread, JSTOR rows pending, so not N4; one audit (LS-V4), not counted until a second adversarial audit; SO-ECKERT-E51 queued; the outcome (Anderson chief superintendent from 1864) is in his ASCE memoir 1888/89, the telegram not located",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III, by date and correspondent), the Papers of Ulysses S. Grant (vols 11-12), the senders' and recipients' printed papers and memoirs, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE. Anderson's appointment as General Inspector of the Military Railroads, which the telegram urges him to accept, was reported in the Nashville Daily Union on 9 November 1864; the telegram itself was not located.",
+      "gap": "Grant Papers vol. 13, NARA RG 92/107/156/393 copies, the Meigs Papers and HathiTrust full text unread, Semantic Scholar partly unreachable, JSTOR rows pending, so not N4; second audit AUD2-LS-E 8 Oct 2026 held N3 (OR by date incl. ser. II vol. 7 and McCallum, Grant Papers 11-12, Dana, Wallace, 1864 press by date window); weakest N3: outcome (appointment as General Inspector) printed in the Nashville Daily Union 9 Nov 1864 p.3 and the ASCE memoir, the offer and Whiton's urging not; SO-ECKERT-E51 queued",
       "phrases": [
         "Huntington mssEC 19 p.204, pointer 9098, E51"
       ],
@@ -5560,16 +5563,17 @@
       "reading_version": "LS-R4 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V4)' section 4",
       "depth_sentence": "W. H. Whiton urges Adna Anderson, Government Railroads, Nashville, to accept the proposed inspector-generalship promptly, saying it is all right and carries greatly increased powers and better advantages.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V4); OR III/4 names W. H. Whiton in charge of the Military Railroads office, Washington",
+      "depth_check": "fresh rule-7 re-derivation (LS-V4); OR III/4 names W. H. Whiton in charge of the Military Railroads office, Washington; external check (AUD2-LS-E): the decoded post 'Inspector General ship' agrees with the Nashville Daily Union 9 Nov 1864 p.3 (Anderson appointed General Inspector of U.S. Military Rail Roads); image crop checked word for word (AUD2-LS-E)",
       "depth_note": "11/11 code words H"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V4)'"
+        "AUDIT.md '## AUDIT (LS-V4)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-E)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5584,8 +5588,8 @@
       "kind": "reading",
       "title": "Eckert 1864: C. A. Dana to Wallace, Baltimore, 7 Nov 1864, a rebel agent calling himself Dr Hamilton (E52)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/92/156 copies, the 1864 press page by page, HathiTrust full text and the open scholarship indexes unread, JSTOR rows pending, so not N4; one audit (LS-V4), not counted until a second adversarial audit; SO-ECKERT-E52 queued; the Nov 1864 press (Chronicling America result lists) not read",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III, by date and correspondent), the Papers of Ulysses S. Grant (vols 11-12), the senders' and recipients' printed papers and memoirs, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE.",
+      "gap": "Grant Papers vol. 13, NARA RG 92/107/156/393 copies, the Meigs Papers and HathiTrust full text unread, Semantic Scholar partly unreachable, JSTOR rows pending, so not N4; second audit AUD2-LS-E 8 Oct 2026 held N3 (OR by date incl. ser. II vol. 7 and McCallum, Grant Papers 11-12, Dana, Wallace, 1864 press by date window); the 1864 press pass is incomplete (7 of 15 Chronicling America pages read, 8 unreachable this session); SO-ECKERT-E52 queued",
       "phrases": [
         "Huntington mssEC 19 p.223, pointer 9117, E52"
       ],
@@ -5608,9 +5612,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V4)'"
+        "AUDIT.md '## AUDIT (LS-V4)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-E)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 90.9,
@@ -5624,9 +5629,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: A. B. Dyer to Capt Edson, Fort Monroe, 5 Dec 1864, ordnance supplies for Sherman's army to Hilton Head (E54)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/92/156 copies, the 1864 press page by page, HathiTrust full text and the open scholarship indexes unread, JSTOR rows pending, so not N4; one audit (LS-V4), not counted until a second adversarial audit; SO-ECKERT-E54 queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book; the telegram passes on Halleck's order of the same day, printed in the Official Records (ser. I vol. 44 p.627), that all supplies for Sherman's army go to Hilton Head; Dyer's own wording and his instruction to Lt Arnold were not located in print.",
+      "gap": "N2 (AUD2-LS-E, 8 Oct 2026): substance in OR I/44 p.627 (Halleck, 5 Dec 1864, copied to the Chief of Ordnance), Dyer's wording not located in print; not counted; SO-ECKERT-E54 withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.241, pointer 9135, E54"
       ],
@@ -5635,14 +5640,14 @@
         "Huntington mssEC 19 p.241, pointer 9135, E54"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "10/11 code words H; Toby unread",
       "unresolved_spans": "Toby unread",
       "reading_version": "LS-R4 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V4)' section 4",
       "depth_sentence": "Dyer, Chief of Ordnance, tells Capt. Edson at Fort Monroe to send at once to Hilton Head all ordnance supplies ordered for Sherman's army, and to write to Lt Arnold there to hold them on board until ordered where to land them.",
-      "depth_check": "image crop, all lines, checked (LS-V4); fresh rule-7 re-derivation (LS-V4); OR I/42 pt 3 and I/44 name Edson at Fort Monroe and Lt Arnold at Hilton Head on ordnance the same weeks",
+      "depth_check": "image crop, all lines, checked (LS-V4); fresh rule-7 re-derivation (LS-V4); OR I/42 pt 3 and I/44 name Edson at Fort Monroe and Lt Arnold at Hilton Head on ordnance the same weeks; external check (AUD2-LS-E): Kidnap's = Sherman's and the landing clause agree with Halleck's printed order (OR I/44 p.627)",
       "depth_note": "10/11 code words H; Toby unread"
     }
   ],
