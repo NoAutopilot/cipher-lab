@@ -1331,6 +1331,117 @@ requests at IIIF thumbnail size, so two sessions under the per-host cap, or one 
 digits inside words -- the only units here large enough to hide another such letter; ~$3. (b) the five PHYSICAL 1.01.02 intercept
 units need a scan order or a reading-room visit (owner step, ASKS only if (a) finds the design recurring).
 
+## 22. OLD-SIBS, 8 Oct 2026: leaves 4, 5, 7 (and scans 9-11) read with the B/C1 key -- the same letter, not a sibling; status stays open
+
+Brief: `.claude/briefs/runs/2026-10-08-acct3-old-sibs.md`, section OLD-SIBS (account 4, 04:38-05:1x UTC by date -u). Prereg
+`transcription/PREREG_OLD-SIBS.md`, pushed (847c403e) before any blind pass was read.
+
+**Leaves 4/5/7/9-11 (step 0).** Scans 9-11 fetched once from `service.archief.nl` (3 requests, >=1.5 s apart, HTTP 200;
+manifest updated). **All eleven scans are one letter, not a file of several.** One hand throughout; one subject (the writer's
+canonry and rectorship, the Regente's powers sent "a mis manos", Agustin Mexia "su cunado", the licenciado Gomara, Dr Garay,
+Dr Cetina, Horacio Doria, the Cardinal, the "Abadia de Lerma donde el Duque funda ahora una iglesia collegial", a student
+nephew and Sebastian de Chaves); the pencil folio stamps read 54 (scan 1), 55 (2), 56 (6), 57 (9), 60 (4), 62 (7), 64 (10) --
+the "~40" in section 1 is "60", and scan 3's stamp is 54 or 59, not settled; leaf 8 ends "...sacristan que tiene la pequena" and
+scan 9 (f.57) continues "y si la pretendia hacer capellania"; leaf 5's "para esto enviava poderes a mis manos ... hiciessen la
+vacante" runs into leaf 4's "Hecho md de enviarme los poderes a mis manos". Scan 11 is f.64v, the verso of scan 10's right
+page (its show-through is scan 10's last lines reversed): the close "Guarde Dios a v.m. ... de Alcala y [month unclear] 23 de
+605", the signature "Don Juan Gara de Senisteros" and a postscript naming "Juan de la Pena". Section 1's and OLD-CAT's (section
+21) reading of leaves 4/5/7 as "a different correspondence" / "a second ciphered letter" is corrected here: they are folios
+59v-62r of the same letter. None of the new cipher repeats blocks A/B/C1/C2 (different folios, different text). **Scan 10
+(ff.63v/64r) carries one more cipher block of about 25 lines** (right page), not transcribed by this job (outside its 3-leaf
+unit plan); scans 3, 8, 9 and 11 carry no cipher.
+
+**Premise check (step 1).** The item is already at stage 2 and no new letter was identified, so the check is the folder's own
+log (sections 3, Premise check) plus phrase searches on the new clear and decoded text: Lonchay & Cuvelier vol. I djvu OCR
+(`sources/ia-fulltext/print-check/correspondancede0000unse_m5g7_djvu.txt.gz`, grep `abbaye de lerma|abadia de lerma|collegial|
+mexia|gomara|garay|senisteros|alcala`): only Augustin Mexia the maitre de camp / councillor (pp. index 40798 ff.), not this
+letter. The Huygens Oldenbarnevelt retroboeken search was not re-run (section 3 searched the correspondents' names there,
+0 hits; no new names that edition would index). `tools/intake_gate_check.py na-oldenbarnevelt-2442-1605`:
+`na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Crops (step 2).** `python3 tools/iiif_lines.py --image images/<leaf>.jpg --out images/crops_L457 --region ... --prefix ...`
+(commands below), 85 line crops before the leaf-5 re-cut, 84 after:
+```
+L4a: --image 004_... --region 750,1900,1780,1720 --prefix L4a --distance 75 --prominence 20 --debug   (15 lines)
+L4b: --image 004_... --region 2590,30,2390,3570  --prefix L4b --distance 75 --prominence 20 --deskew --debug   (30)
+L7a: --image 007_... --region 750,1160,1780,360  --prefix L7a --distance 75 --prominence 20 --debug   (3)
+L7b: --image 007_... --region 2590,690,2390,2950 --prefix L7b --distance 75 --prominence 20 --debug   (25)
+L5a: --image 005_... --region 480,280,2210,520   --prefix L5a --mask-neighbours --debug   (4)
+L5b: --image 005_... --region 480,2840,2210,900  --prefix L5b --mask-neighbours --distance 80 --prominence 20 --debug   (7)
+```
+Overlays checked (`*_lines_debug.jpg`). Defaults found 0-2 lines on the large regions; `--distance 75 --prominence 20` fixed
+that. **Crop error (mine):** L4/L7 crops were cut without `--mask-neighbours` and carry half-lines of the neighbours, and L4b
+merged one line pair (L4b_L10/L11 show the same line); the passes report choosing between "two lines of similar weight". Leaf 5
+was re-cut with `--mask-neighbours` before its passes ran. L5a's region also missed two cipher spans of leaf 5 (the
+"8n m4n7s d8 s2 s8n7r34" line and the three "s2pl3c4r4 ... r34 p7r m23 gr4nd8" lines); they were read only in reconciliation.
+
+**Blind passes (step 3).** Six Sonnet subagent calls, crops only, notation as PREREG_OLD-PASS2; pass A forward, pass B reverse.
+Files `transcription/passJ_OLDSIBS_<leaf>_{A,B}.tsv`. Per-sign disagreement (`transcription/diff_oldsibs.py`, normaliser
+`diff_pass2.norm_tok`):
+
+| leaf | A vs B disagreement | mean normalised signs |
+|---|---|---|
+| L4 (ff.59v/60r) | 30.9% | 1519 |
+| L5 | 31.6% | 396 |
+| L7 (ff.61v/62r) | 57.1% | 784 |
+| pooled | 38.7% | 2698 |
+
+All three leaves are over the 10% rule: **split recorded, no third machine pass** (prereg item 4). Part of the L4/L7 split is
+the crop error above (line identity, not sign identity); L5, masked, still split 31.6%. Agreement, not accuracy.
+
+**Reconciliation (one unit per leaf).** Opus, eye on native-resolution views of the same pixels (`transcription/
+reconciled_L457_OLDSIBS.tsv`, every token on 85 lines: L4 41 incl. the first cipher line of f.60r, L5 15, L7 29). The reconciler
+knew the B/C1 key; signs were set from the image, and doubtful ones are left as seen (e.g. L4a_05 "q28 gr4nd7", L5_1 "s28ss8",
+L7b_18 "s7633n7") rather than repaired to a better word. Six plain lines at the top of f.60r were not transcribed (no digits).
+
+**Solve (step 4).**
+(a) Fixed B/C1 key (2=u 3=i 4=a 7=o 8=e; 5=s, 6=b): `python3 scripts/decode_L457.py` -> `reading_L457.txt`,
+`reading_L457_tokens.tsv`; `--check` exits 0. The key reads all three leaves as continuous Spanish (below).
+(b) Free solve, every clear letter fixed as a crib: `scripts/solve_digit_subst.py target transcription/ciphertext_L457_solver.tsv
+--corpus corpus/es16-donquijote/donquijote1605_pg2000_body.txt --restarts 8 --seed 1` (N=2919 signs, 1487 digit positions,
+K=7 digits 2 3 4 5 6 7 8; `V.S.` abbreviations excluded): **all 8 restarts reach the same score (-6137.3) and the same map,
+2=u 3=i 4=a 5=s 6=b 7=o 8=e -- identical to the B/C1 key.** (`transcription/free_solve_L457_seed1.json`.)
+Matched control, same N=2919, K=7, corpus held-out tail, seed 1, crib noise bracketing the measured split
+(`transcription/control_L457_noise*_seed1.json`): **1828 of 1828 digit positions (100.0%) and the true key recovered at crib noise 0.0, 0.2
+and 0.4** (one seed each). Target and control side by side: the free solve on the target returns the B/C1 map; the same solver
+recovers a planted 7-sign map perfectly at this N even with 40% of the clear letters corrupted. Limits: one seed per noise level;
+the control plants the K most frequent letters (e a o s n i l), not the target's vowel set; crib noise corrupts clear letters, not
+misread digits. The control is at ceiling, which is fine for this use (a power check on a map recovery, not a gain gate).
+
+**Grades (step 5).** Cipher tokens 729: **H 0, C 0, S 87, M 642, I 0** (clear tokens 70). S needs the token in the best-matching
+line of both blind passes and a lexicon decode (es1600 + Don Quijote words seen >= 2 times); the weak blind passes (pass A matched
+117 of 729 tokens, pass B 267) hold most tokens at M, by the prereg's rule, not because the decode fails (582 of 729 decodes are
+lexicon words). Per leaf: L4 376 (S 50), L5 111 (S 17), L7 242 (S 20). Cryptanalytic result (no H or C).
+
+**Judge (es1600, reported per rule 7; spec copy with `"language": "es1600"`, cipher-only decode `transcription/
+reading_L457_cipher_only.txt`):**
+```
+reading_L457_cipher_only.txt  FAIL language: score=-0.99, null_p99=-2.054, real_p05=-0.808, real_median=-0.755, mode=both, N=2919
+                              ok   words: cover=0.908, min=0.5, real_text_median_cover=0.934
+shuffled decode seed 1        FAIL language: score=-2.1   (cover 0.582)
+shuffled decode seed 2        FAIL language: score=-2.121 (cover 0.57)
+shuffled decode seed 3        FAIL language: score=-2.138 (cover 0.582)
+```
+FAIL, the same shape as B/C1 (section 16: -0.992 vs -0.852): far above the shuffled nulls, below real_p05. The cipher-only
+stream drops every clear word and every V.S., so it is a run of cipher fragments joined, not continuous prose.
+
+**What the leaves say (fixed-key decode; a solver's reading, M-graded where the passes split).** f.59v/60r: the writer took the
+Regente's powers to Agustin Mexia, the Regente's brother-in-law, who on hearing that the Cardinal had given the canonry "se dio al
+demonio", saying it was meant for Dr Cetina or Dr Sosa; Dr Garay asked whether he brought a letter of V.S. for the Cardinal, and
+Horacio Doria asked the same; because it mattered that a letter of V.S. arrive in time, **the writer made "una firma de V.S." on a
+sheet of paper "lo mejor que pude" and had a servant write the substance of the letter, telling him V.S. had left him some
+signatures in blank.** Leaf 5: that letter was made to match V.S.'s style; a second letter "en nombre de V.S." went to the Abbot
+about a bull to hold the canonry and chair with the rectorship. ff.61v/62r: a student (Chaves, a nephew whose family the writer must keep on side: "basta ser sobrino de quien es", beside
+the Regente's favour) sold his long gown and part of his manteo, made a sotanilla, and, by his own account in secret, took forty
+reales from the money bag; the writer asks V.S. how to recover the cost of the manteo and the forty reales from Chaves.
+
+Requests: service.archief.nl 3. Subagent calls: 6 blind passes (Sonnet). No other host.
+
+**Verdict: open** (unchanged; a verifier classifies). Next steps: (o1) scan 10's cipher block (ff.63v/64r right page, ~25 lines):
+masked crops, two blind passes + one reconciliation, fixed key, ~$4.5; (o2) re-cut L4/L7 with `--mask-neighbours` and re-run the
+two blind passes there only if a verifier needs the S share raised (rule 3 third-attempt clause does not apply: the instrument
+changes, masked crops), ~$9; (o3) verifier for blocks L4/L5/L7 (queued as a WORK-QUEUE row, account 2).
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
