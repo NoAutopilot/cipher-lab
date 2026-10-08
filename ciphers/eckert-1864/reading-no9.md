@@ -308,5 +308,23 @@ Van Vliet See my dispatch of Eleven forty five AM to [Captain] Wise Period For [
 
 Code-word tokens: H 8.
 
-Totals over the 33 entries: H 286, C 0, I 0, M 0.
+**O9-AH | Page 45 | 8937 | 20 Apr 1864, Meigs? (signature not in clear) to Vinton at New York (operator John Horner N. Y.; old vocabulary, "Pagan ... Hannah"; six-column page)**
+
+[Washington] Apr Twentieth {time: 2 PM} For [Captain] GD Wise Asst [Quartermaster] Aston house [New York] period communicate at once with [Major] van Vliet who has al ready chartered a number of vessels for the expedition period I am advised that all the vessels should reach [(Fort) Monroe] by the twenty fourth so that they can be all fully coaled by the twenty fifth period [Colonel] reports that he has [Transportation] for fourteen thousand men or for six thous and men and eighteen hundred horses al ready period [Troops] rein forcing will arrive by water but some of their [Transportation] will be of too heavy draft for the special service period [B. F. Butler] desires to move in all thirty thous and men comma two thous and horses comma [Equipage] of ten [Batteries] and one hundred wagguns and he states that the men should have room to lie down as they should be fresh for their mornings work period
+
+Code-word tokens: H 14.
+
+**O9-AI | Page 15 | 8907 | 1 Mar 1864 2.30 PM, to Brig. Gen. Wright at San Francisco, for D. W. Cheeseman, Assistant Treasurer, Camden (old vocabulary, "From Ida ... Hannah")**
+
+From [Abingdon] March first {time: 2 PM} For D W Chese man Esq Assistant Treasurer U S [Maine] period Make no further shipments of gold to London until other wise ordered Quadroon
+
+Code-word tokens: H 3.
+
+**O9-AJ | Page 15 | 8907 | 4 Mar 1864 noon, to Brig. Gen. Wright at San Francisco, for D. W. Cheeseman, U. S. Treas., Camden (old vocabulary, "Ida ... Deborah", darker ink)**
+
+[Abingdon] March fourth {time: 3 AM} for D W. Cheeseman U. S. Treas. [Maine] period You were directed on the first inst. to ship no more Coin period If not too late detain that referred to in your telegram of yesterday period Report immediately Signature Quadroon noon Mch 4th
+
+Code-word tokens: H 3.
+
+Totals over the 36 entries: H 306, C 0, I 0, M 0.
 <!-- decode.py: derived block ends -->
