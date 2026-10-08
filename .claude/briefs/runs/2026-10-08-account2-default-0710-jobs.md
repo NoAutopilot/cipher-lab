@@ -106,3 +106,49 @@ of the transcription), pre-register in PREREG-D2-VIVX.md that the gate, statisti
 PREREG_vivv.md unchanged (no new knob), push, then re-run vivmous.py and the vivv contamination checks. Report old vs new (0.45 vs p99
 0.398) and whether every number moves together. If it does not move, that is the second attempt of this instrument: log it in HYPOTHESES.md
 and the Escalation as rule 3 would require; do not tune further. Grades stay M/I unless a clause reads (rule 4, rule 4a). Disk only.
+
+## Wave 2 (spawned as wave-1 slots free, from 07:3x UTC 8 Oct)
+Source: the LOOSE-ENDS pass of 8 Oct 04:12-04:27 (account 2) wrote fresh "source: loose-ends 8 Oct" steps into 15 NOTES.md files; these
+are the cheap ones outside the exclusions. Intake gate 07:2x UTC (each exit 0):
+`fr2933-salviati-1525: open (line 1)`; `lambeth-bacon-649: open (line 3)`; `mccormick-1999: open (line 1)`; `sp105-paget-1693: open (line 1)`;
+`siena-concistoro-2308: open (line 1)`; `decode-4450-bnf-fr20506-1525: open (line 1)`; `wvo-hessen-1564: partial (line 1)`;
+`scorpion-1991: open (line 1)` -- each "-- edition/page or full-text-search citation found within 6 lines".
+Each loose-ends folder carries an Escalation block whose other rungs read "not assessed ... the next worker on this folder fills it": fill
+the rungs you can from the folder's own NOTES.md (one line each, [x]/[ ]/[n/a]/[retired] with the reason) while you are there; no new work
+for them beyond your named step.
+
+### D2-PRINT4 -- four loose-ends print/search steps (worker, Opus; cap 3.5, box 75 min; one target at a time, one host at a time)
+1. fr2933-salviati-1525: fetch the CSP Spain vol. 2 text (archive.org djvu; first check whether account 1's D1A-RJM, rah-juan-manuel-1521,
+   8 Oct, left that volume's text or an identifier on disk) and grep Salviati / Toledo / 16-20 Oct 1525 for a paraphrase or clear context of
+   the despatch. Search result only.
+2. lambeth-bacon-649: Tosh 2014 QMRO thesis on the Anthony Bacon letters -- CORE API (CORE_API_KEY, `Authorization: Bearer`, path
+   `v3/search/works/` with the trailing slash) or a Wayback copy; grep for ff.490-495 / Lambeth 649 / cipher / decipher.
+3. mccormick-1999: Cipher Mysteries 2013 post, comments 79-163 (NOTES.md l.273): Wayback CDX then `if_` captures of the comment pages;
+   grep for a claimed reading or new material (new ciphertext, an image link).
+4. sp105-paget-1693: walk the SOAS catalogue /records/PP_MS_4/02 sub-series titles and list any cipher-bearing Paget letters.
+For each: section in NOTES.md (what was searched, where, hits quoted with locators, request counts), Remaining gaps/Escalation updated,
+gaps_check. A hit that changes a target's status or adds material: say so in ROOM, do not start the follow-up.
+
+### D2-DEC2 -- one DECODE login, two records (worker, Opus; cap 4, box 75 min)
+One browser login (`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js ...`, with `--guess-fullsize` where an image is needed;
+CLAUDE.md DECODE row; one login per session, scrub the account name from any saved page, images that say "not in the public domain" are
+not committed -- manifest with sha1 + re-fetch command, as IMG-DECODE2 did).
+1. siena-concistoro-2308: fetch the record image for no. 11 (NOTES.md Escalation l.~1110) and label it blind (one vision call on line crops
+   cut with tools/iiif_lines.py --image; record what system it shows; no decode unless the folder's key already applies, then with --check).
+2. decode-4450-bnf-fr20506-1525: open the 15 records the Verdict names and compare their systems with Ranzo's letter+number code
+   (RecordsView metadata and, where needed, one contact-sheet look); write a table record -> holder, date, system, alphabet, match y/n. No key
+   transfer in this job (a later one needs a shuffled-key control of the same length).
+Report de-crypt.org request count.
+
+### D2-WVO -- wvo-hessen-1564: 14 neighbouring PDFs scan + per-row eye alignment of the 33 C tiles (solver, Opus; cap 4, box 80 min)
+1. Fetch the 14 free WVO PDFs of the neighbouring letters (NOTES.md l.571) once (resources.huygens.knaw.nl, >= 2 s apart, descriptive UA),
+   manifest in the folder, and scan each for cipher spans (siblings of f.23 only): text extraction first, a page look only where text
+   suggests numerals/signs. 2. The per-row eye alignment of the 33 conflict/unaligned C tiles (Verdict l.844): tiles already on disk under
+   realign/ (read NZ-WVOV's section l.789 first); pre-register what counts as aligned in PREREG-D2-WVO.md before looking; one Opus vision call
+   on a montage of the 33 tiles + your reconciliation = 2 units. Do not run the crib-placement test (next job). Rule 3 per-unit merge
+   clause for any key.tsv change; decode --check; NOTES/HYPOTHESES/gaps.
+
+### D2-SCORP -- scorpion-1991: the eight oranchak.com images (worker, Opus; cap 2, box 45 min)
+Fetch scorpion1-8.jpg from oranchak.com once (NOTES.md l.154; descriptive UA, 1.5 s apart), images/manifest.json, and look (contact sheet,
+then one crop if needed) for an uncrossed scan of S5. If found, say so and where; transcription of S5 is a later job (S5 is 180 signs,
+below unicity alone, so no solve attempt). Update NOTES/gaps.
