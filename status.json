@@ -6009,7 +6009,8 @@
       "key": "period",
       "audit_refs": [
         "AUDIT.md '## AUDIT (LS-V6)'",
-        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-G)'"
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-G)'",
+        "AUDIT.md '## G3 check (V1-G3B): N2-BM, E78, O9-BB'"
       ],
       "audit_status": "two audits",
       "superseded_by": "",
@@ -6026,8 +6027,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Meigs to Ingalls, 27 July 1864, mules shipped and horse shipments stopped (N2-BM)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BM queued; second audit AUD2-LS-G 8 Oct 2026 held N3 (OR I/32 pt 3, 35 pt 2, 37 pt 2, 51 pt 1, Grant Papers vols 10-12, Butler, Dana, Sheridan, Heitman, press keyword pass). Ingalls's reply printed (OR I/40 pt 3 p.555).",
+      "line": "Read at grade H with the period Cipher No. 2 book; the clear words are in the Huntington's public transcription (mssEC 19 p.127, pointer 9019); no prior decipherment of the code words (the figure 500, horses, the address and signature) or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026; two audits and a G3 check). Ingalls's reply is printed (OR I/40 pt 3 p.555).",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-N2BM queued; second audit AUD2-LS-G 8 Oct 2026 held N3 (OR I/32 pt 3, 35 pt 2, 37 pt 2, 51 pt 1, Grant Papers vols 10-12, Butler, Dana, Sheridan, Heitman, press keyword pass). Ingalls's reply printed (OR I/40 pt 3 p.555). G3 check V1-G3B 8 Oct 2026: N3 kept, weak (clear words public in Huntington 9019; code words not); 4 IA-global phrases and 14 Chronicling America pages unread (502/timeouts).",
       "phrases": [
         "Huntington mssEC 19 p.127, pointer 9019, N2-BM"
       ],

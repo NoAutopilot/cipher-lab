@@ -4093,3 +4093,40 @@ not repeated. Key source for all four: `period`. Depth under .claude/briefs/runs
 - Two IA print-check caches are mislabelled (431unit per LS4-V2a, 362unit here); any "OR I/36 pt 2 cached: none" from the cache is suspect.
 - Requests: googleapis.com 15 (two 503s, not retried beyond once); be-api.us.archive.org 26 (3 errors, one retry each); archive.org 3 (1 advancedsearch, 2 djvu);
   hdl.huntington.org 7 (4 searches, 3 item JSONs), >= 3.2 s apart; www.loc.gov 13 (6 searches, 7 page JSONs); tile.loc.gov 6; api.openalex.org 4.
+
+## G3 check (V1-G3B): N2-BM, E78, O9-BB
+
+Verifier V1-G3B (account 3, LANE-VERIFY-1, session_013A2x5dTAEDhm13qj3mXcGd), 8 Oct 2026, 16:38-16:5x UTC by `date -u`. A G3 job
+(prior-work-step.md check 5), not a full third audit: the decoded-phrase re-search plus same-day replies and antecedents, same-leaf
+siblings in the Huntington transcription, and the press of the day. Skip rule checked: no reading or audit of these three ran on
+account 3 (N2-BM: LS-R6 reader, LS-V6 account 1, AUD2-LS-G account 2; E78 and O9-BB: LS3-R18 reader and LS3-V18a account 2,
+AUD2-LS3-A account 4). Nothing decoded; bodies taken from reading-no2.md, reading.md, reading-no9.md as committed.
+
+### Prior-work checks 3-5
+| Check | Route | Query | Result |
+|---|---|---|---|
+| 5a decoded phrases | `tools/print_check.py` (`--only ia,ia-global,gbooks`) | 15 phrases, 4-6 per item (N2-BM: "under changed circumstances do you need more mules", "about 500 have been shipped", "the rest will be held till I hear from you", "obliged to stop shipments of horses to you"; E78: "is your transportation coming", "report daily by mail", "stop everything coming up the Potomac and send it to Monroe", "ordered a large quantity of transportation which will be needed here", "as soon as you are supplied should be allowed to come here"; O9-BB: "enough surgery and propellers", "complete the supply of tugs ferry boats barges and schooners", "there will be much material to move", "steamers enough to move troops are now engaged", "devote yourself to expediting the arrival of vessels", "I fear delay which would be most injurious") against OR I/40 pt 3, I/33, I/36 pt 1, I/35 pt 2 | listed IA volumes: 0 hits for all 15. Google Books: counts of 1-364 volumes, all loose (unquoted-match) noise; no 1860s-1890s volume in the top 10 carries any phrase. IA global: 6 of 15 phrases HTTP 502 on the tool's pass |
+| 5a retry | be-api fts, one retry per 502 phrase (8 phrases) | as above | "is your transportation coming", "there will be much material to move", "devote yourself to expediting the arrival" 0 hits; "report daily by mail" 10 hits, all 1900s+ trade/agency reports, none Civil War; "under changed circumstances do you need more mules", "complete the supply of tugs", "steamers enough to move troops are now engaged", "shipments of horses to you" 502 again: **unreachable** on IA global this session (not retried further) |
+| 5a Google Books, targeted (key, country=US) | snippet check of pre-1990 volumes | "stop everything coming up the Potomac"; "steamers enough to move troops"; "as soon as you are supplied should be allowed"; "more mules" Ingalls Meigs 1864; "Van Vliet" tugs "ferry boats" barges schooners 1864; Biggs "Fort Monroe" transportation Meigs "April 21, 1864" | no phrase match in any snippet. "more mules" returns only Ingalls's printed reply (OR I/40 pt 3 p.555, already logged by AUD2-LS-G). The Biggs query returns 1879 Senate/House committee reports on Biggs's relief claim (Meigs letter on his Fort Monroe service): context, not E78's text |
+| 5b same-day replies and antecedents, OR by date (local IA djvu, normalized regex) | `warofrebellion403unit`, `372unit`, `432unit` for 26-29 July 1864 (Meigs/QMG + mules/horses); `33unit`, `361unit`, `352unit` for 20-24 Apr 1864 (Biggs/Van Vliet/Meigs/QMG + transportation/tugs/ferry/schooners/propellers/barges/vessels) | July: only Ingalls's 28 July 10 AM reply (p.555), already logged. April: Ingalls to Meigs 20 Apr (OR I/33, spring wagons, hay and grain) -- unrelated to E78/O9-BB |
+| 5b sender/recipient papers | Butler, Private and Official Correspondence vol. 4 (`privateofficialc04butl`, cached), 21-24 Apr 1864 | Meigs/Biggs/Van Vliet/Quartermaster | Butler to Meigs 21 Apr: "three Veteran Regts ... at Alexandria ... Will you send them, or shall we send up transportation?" and Halleck to Butler 21 Apr on 1,000 horses. Context for the same transport question; neither gives E78's or O9-BB's order |
+| 5c same-leaf siblings (Huntington public transcription, item field `transc`, cached sources/mssEC18, mssEC19) | N2-BM: 9017, 9018, **9019**, 9020, 9021; E78/O9-BB: 9712, 9713, 9715, 9716, **9717**, 9718 | read in full | No sibling carries N2-BM's, E78's or O9-BB's substance (9017-9021: Acton/Harpers Ferry and Crook/Wells messages; 9713 a vessel-tonnage list; 9715 Seymour militia; 9716 Benham = N2-BQ; 9718 Fox naval news 23 Apr). **9019 itself prints N2-BM's clear words**: "under changed circumstances do you need more mules Stanhope About Dayton Snyder have been shipped The rest wilby held till I hear from you we have been obliged to stop shipments of Silvers to you", with "In galls" in clear in the address. The code words (Helen, Palestine, Vermont, Stanhope, Dayton Snyder = About 500, Silvers = Horses, Wiley Buggy) are not glossed. Earlier audits did not record this for N2-BM (it is the E78/O9-BB shape AUD2-LS3-A named) |
+| 5d press of the day (Chronicling America, www.loc.gov JSON) | +-3 days | "mules Ingalls" 24-30 July 1864: 1 page (Daily Davenport Democrat, 29 July), page OCR not read (loc.gov resource fetch timed out, one try). "Van Vliet" 19-25 Apr 1864: 13 pages (Gold Hill Daily News, New-York Daily Tribune 19-25 Apr), snippets not read (result JSON truncated by timeout, one retry). "Biggs Monroe transportation" 18-24 Apr: timed out | **partly unreachable**: hit counts only; the pages' text was not read. A press item giving the order's substance cannot be excluded from this pass |
+| JSTOR, HathiTrust, NARA RG 92/107 | -- | -- | not run here (unreachable from the cloud / unread, as both earlier audits logged) |
+
+### Result per item
+| ID | phrases run | substance diff (two rare entities or numbers within +-3 days) | class |
+|---|---|---|---|
+| N2-BM Meigs to Ingalls, 27 July 1864 | 4 + 1 targeted | no print hit; Ingalls's reply (p.555) shares "more mules" only, not 500 or the horse stop | **N3 kept, "weak" added**: the clear words are public in the Huntington transcription of 9019; what the key adds is the figure 500, "horses", the address/signature code words and "[?]". D2 kept, 100 |
+| E78 QMG to Biggs, 21 Apr 1864 | 5 + 3 targeted | no print hit; Butler's 21 Apr question to Meigs is the same topic, not this order | **N3, weak, kept**. D3 kept |
+| O9-BB Meigs to Van Vliet, 22 Apr 1864 | 6 + 2 targeted | no print hit; the 13 press pages naming Van Vliet that week were not read | **N3, weak, kept**. D3 kept |
+
+- No class moves. N2-BM's safe sentence gains the clause the E78/O9-BB sentences already carry: "the clear words are in the Huntington's
+  public transcription (mssEC 19 p.127, pointer 9019); the code words (the figure 500, horses, the address and signature) were not located
+  in print or decipherment." Unsafe for N2-BM now also: any wording implying the clear text was not available.
+- Gaps a later pass can close cheaply: IA global for the four 502 phrases; the 14 Chronicling America pages above (read the OCR, ~$0.3).
+- Over-claim corrected: status.json N2-BM `line` and `gap`, and the second-opinion prompt PROMPT-chatgpt-n2bm.md ("WHERE WE HAVE LOOKED"),
+  now state that the clear words are public in the Huntington transcription. SO rows unchanged otherwise (no class moved).
+
+Requests: be-api.us.archive.org 15 (tool) + 8 (retry), 6 + 4 HTTP 502; archive.org 3; www.googleapis.com 15 (tool) + 6; www.loc.gov 5
+searches + 1 resource (one HTTP/2 stream error, 2 timed out, 1 truncated). Local cached files otherwise.

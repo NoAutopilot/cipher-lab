@@ -13,6 +13,8 @@ THE ITEM
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (LS-V6)").
 
 WHERE WE HAVE LOOKED: the Official Records by date and correspondent (ser. I and III); Chronicling America; Internet Archive full text; Google Books; OpenAlex, Semantic Scholar, CORE.
+Note: the telegram's clear words (not its code words) are already public in the Huntington's own transcription of pointer 9019; what
+our key adds is the figure 500, "horses", and the address and signature words. Ingalls's reply of 28 July is printed (OR ser. I vol. 40 pt 3 p.555).
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
 - NARA RG 92 (Quartermaster General, telegrams sent, July 1864); OR ser. III vol. 5 (Cavalry Bureau report).
