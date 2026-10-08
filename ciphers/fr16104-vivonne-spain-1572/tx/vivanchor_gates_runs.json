@@ -1,0 +1,29 @@
+{
+ "63": {
+  "grades": {
+   "U": 1103,
+   "M": 2369,
+   "H": 12290
+  },
+  "longest_H_run": 40,
+  "where": "f191v L27-L28: leaqesoailquonttousouautoutrailantcereoe"
+ },
+ "53": {
+  "grades": {
+   "U": 196,
+   "H": 3744,
+   "M": 440
+  },
+  "longest_H_run": 41,
+  "where": "f171r L27-L28: naraeuaeouiendracestearaeeaaernerailanoio"
+ },
+ "54": {
+  "grades": {
+   "H": 1491,
+   "U": 191,
+   "M": 272
+  },
+  "longest_H_run": 26,
+  "where": "f173v L07-L07: entuieluaaaaendeestentreen"
+ }
+}

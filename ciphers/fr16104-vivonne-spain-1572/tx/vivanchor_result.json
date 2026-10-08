@@ -1,0 +1,279 @@
+{
+ "tokens": 5451,
+ "vocab_ge7": 300,
+ "control": {
+  "per_letter": {
+   "d": {
+    "n": 3,
+    "windows": 3,
+    "own_labels": [
+     "3",
+     "h",
+     "k"
+    ],
+    "share_own": 1.0,
+    "recovers": true,
+    "labels": {
+     "k": 2,
+     "3": 1
+    }
+   },
+   "t": {
+    "n": 11,
+    "windows": 7,
+    "own_labels": [
+     "#",
+     "R",
+     "n"
+    ],
+    "share_own": 1.0,
+    "recovers": true,
+    "labels": {
+     "#": 8,
+     "R": 3
+    }
+   },
+   "o": {
+    "n": 8,
+    "windows": 8,
+    "own_labels": [
+     "d"
+    ],
+    "share_own": 1.0,
+    "recovers": true,
+    "labels": {
+     "d": 8
+    }
+   },
+   "r": {
+    "n": 9,
+    "windows": 8,
+    "own_labels": [
+     "L",
+     "g"
+    ],
+    "share_own": 0.778,
+    "recovers": true,
+    "labels": {
+     "g": 7,
+     "#": 1,
+     "x": 1
+    }
+   },
+   "c": {
+    "n": 4,
+    "windows": 3,
+    "own_labels": [
+     ":",
+     "A"
+    ],
+    "share_own": 0.75,
+    "recovers": true,
+    "labels": {
+     ":": 3,
+     "d": 1
+    }
+   },
+   "n": {
+    "n": 28,
+    "windows": 18,
+    "own_labels": [
+     "p"
+    ],
+    "share_own": 0.536,
+    "recovers": false,
+    "labels": {
+     "p": 15,
+     "V": 7,
+     "oo": 2,
+     "t": 1,
+     "d": 1,
+     "S": 1,
+     "z": 1
+    }
+   },
+   "s": {
+    "n": 22,
+    "windows": 14,
+    "own_labels": [
+     "x"
+    ],
+    "share_own": 0.273,
+    "recovers": false,
+    "labels": {
+     "d": 7,
+     "x": 6,
+     "oo": 2,
+     "R": 2,
+     "S": 1,
+     "V": 1,
+     "tz": 1,
+     "#": 1,
+     "g": 1
+    }
+   }
+  },
+  "recovered": 5,
+  "of": 7,
+  "gate": ">= 5 of 7",
+  "pass": true
+ },
+ "target": {
+  "anchoring_windows": 110,
+  "positions": 140,
+  "dropped_conflicting": 2,
+  "label_centric": {
+   "2": {
+    "n": 3,
+    "values": {
+     "u": 2,
+     "m": 1
+    },
+    "assign": null,
+    "positions": [
+     "f102v:L29:16",
+     "f102v:L36:15",
+     "f102v:L36:19"
+    ]
+   },
+   "V": {
+    "n": 8,
+    "values": {
+     "n": 7,
+     "s": 1
+    },
+    "assign": "n",
+    "positions": [
+     "f102v:L03:40",
+     "f102v:L17:22",
+     "f103r:L07:29",
+     "f102r:L20:43",
+     "f102v:L28:43",
+     "f102v:L20:11",
+     "f102r:L12:21"
+    ]
+   },
+   "c": {
+    "n": 1,
+    "values": {
+     "p": 1
+    },
+    "assign": null,
+    "positions": [
+     "f103r:L20:34"
+    ]
+   },
+   "o": {
+    "n": 2,
+    "values": {
+     "p": 2
+    },
+    "assign": null,
+    "positions": [
+     "f102r:L02:23",
+     "f102r:L09:10"
+    ]
+   },
+   "t": {
+    "n": 1,
+    "values": {
+     "n": 1
+    },
+    "assign": null,
+    "positions": [
+     "f102r:L04:37"
+    ]
+   }
+  },
+  "cell_centric": {
+   "f": {
+    "n": 6,
+    "labels": {
+     "p": 4,
+     "P": 1,
+     "g": 1
+    },
+    "assign": "p",
+    "conflict": true,
+    "positions": {
+     "p": [
+      "f102v:L07:46",
+      "f102v:L07:47",
+      "f102v:L34:33",
+      "f102v:L34:34"
+     ],
+     "P": [
+      "f102r:L03:10"
+     ],
+     "g": [
+      "f103r:L07:11"
+     ]
+    }
+   },
+   "m": {
+    "n": 4,
+    "labels": {
+     "3": 2,
+     "2": 1,
+     "z": 1
+    },
+    "assign": null,
+    "conflict": false,
+    "positions": {
+     "3": [
+      "f103r:L11:40",
+      "f103r:L11:44"
+     ],
+     "2": [
+      "f102v:L29:16"
+     ],
+     "z": [
+      "f102r:L06:40"
+     ]
+    }
+   },
+   "p": {
+    "n": 3,
+    "labels": {
+     "o": 2,
+     "c": 1
+    },
+    "assign": null,
+    "conflict": false,
+    "positions": {
+     "o": [
+      "f102r:L02:23",
+      "f102r:L09:10"
+     ],
+     "c": [
+      "f103r:L20:34"
+     ]
+    }
+   },
+   "qu": {
+    "n": 4,
+    "labels": {
+     "z": 2,
+     "2": 2
+    },
+    "assign": null,
+    "conflict": false,
+    "positions": {
+     "z": [
+      "f102r:L02:53",
+      "f102r:L12:6"
+     ],
+     "2": [
+      "f102v:L36:15",
+      "f102v:L36:19"
+     ]
+    }
+   }
+  }
+ },
+ "null_windows_shuffled": {
+  "n": 20,
+  "median": 3,
+  "max": 7
+ }
+}

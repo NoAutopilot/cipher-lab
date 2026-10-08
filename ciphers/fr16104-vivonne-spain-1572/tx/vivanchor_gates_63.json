@@ -1,0 +1,67 @@
+{
+ "ink": "63",
+ "seed": "20261008VA-63",
+ "draws": 200,
+ "C1_f103r": {
+  "letters": 1831,
+  "s": -1.7038,
+  "cover": 0.706,
+  "b1": {
+   "null_median": -2.1196,
+   "null_p99": -1.7338,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.9479,
+   "null_p99": -1.8975,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "C2_ink54": {
+  "letters": 1795,
+  "s": -1.6578,
+  "cover": 0.794,
+  "b1": {
+   "null_median": -2.1233,
+   "null_p99": -1.7425,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8745,
+   "null_p99": -1.8215,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "target": {
+  "letters": 14659,
+  "s": -1.5329,
+  "cover": 0.814,
+  "b1": {
+   "null_median": -2.1399,
+   "null_p99": -1.8226,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8462,
+   "null_p99": -1.8258,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "c": {
+   "wrong_keys": 200,
+   "b2_passes": 45,
+   "margin_median": -0.0222,
+   "margin_p99": 0.0445,
+   "margin_max": 0.0499,
+   "real_margin": 0.2929,
+   "pass": true
+  }
+ },
+ "verdict_b2": "PASS",
+ "verdict_wrong_keys": "PASS"
+}
