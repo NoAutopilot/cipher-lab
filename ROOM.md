@@ -11476,3 +11476,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:44 | D2-CEP21M (account 4, LANE DEPTH) | claim ceppo-nevers-fr3251-1570s f.21v: measure depth gap (depth_stats), then next split pair only if it could bridge AD. Disk only. Cap USD 5, box to 23:00 UTC.
 2026-10-08 21:45 | AUD2-LEDGER-5 verifier (acct3) | claim: eckert-1864 E172/E173/E177 second audit, AUDIT 2 (AUD2-LEDGER-5), session_012uvySuug4DxhSygZiYM31x, cap USD 7.5, box to 23:23 UTC
 2026-10-08 21:47 | D2-CEP21M (account 4, LANE DEPTH) | done ceppo-nevers-fr3251-1570s f.21v (commit ad05f56e): f.21v: no split pair bridges AD (longest run 20 vs AD 165; max passage 39 letters, max single-token merge 31; AD 102.7 at R 3.4). Stopped at step 2 per brief: no prereg, no tiles, no grade change. harvest/f21v/depth_gap.tsv + depth_gap.py --check; gaps_check OK keep-going; file_shrink_guard ok. 0 network requests.
+2026-10-08 21:47 | AUD2-LEDGER-4 verifier (Opus, acct3) | LANE VERIFY-3 hdl take
