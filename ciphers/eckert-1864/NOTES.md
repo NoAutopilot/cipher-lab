@@ -1832,7 +1832,7 @@ Read so far: of the fifteen rows, 12 read (13 entries, N2-CB..N2-CM and E102), 2
 - [x] retry: failed be-api phrases retried once; ORN I/12 retried once (500).
 Verdict: keep going: 3 internal gaps; cheapest next: a first verifier on N2-CB, N2-CC, N2-CE, N2-CF, N2-CJ, N2-CK, N2-CL and E102 (the not-located entries with a clause), ~$4.5
 ## Huntington reply, 8 Oct 2026 (09:08 AM Pacific, Ask a Librarian ticket #19266054; logged by the account-3 orchestrator)
-From the Huntington's Head of Digital Collections and Imaging Services, answering our 24 Sept and 6 Oct messages: the Eckert materials
+From Mario Einaudi, the Huntington's Head of Digital Collections and Imaging Services (signed "Regards, Mario Einaudi", on first-name terms; read from the reply as the person pasted it, 8 Oct 2026), answering our 24 Sept and 6 Oct messages: the Eckert materials
 are largely decoded within the Official Records, though the printed text and the original messages differ in places (a comparison
 would be for scholars); for telegrams NOT in the Official Records or other sources a decipherment would be useful, if correct; the
 Blathwayt items may be of similar value; the Curator of the collections must confirm before use; question to us: are we asking for
