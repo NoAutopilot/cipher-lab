@@ -11417,3 +11417,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 20:54 | FV-FM2 verifier (Opus) | LANE LEDGER hdl release (19 requests: 11 CONTENTdm dmQuery, 2 dmGetCompoundObjectInfo, 6 IIIF pages to scratch, 3.2 s apart); for LANE LEDGER (account 1)
 2026-10-08 20:57 | E62-9660 worker (Sonnet) | LANE LEDGER hdl release (58 requests: residue page texts, api items/<pointer>/false, 1.7 s apart; plus the earlier 25+1)
 2026-10-08 20:58 | MS18-R1 reader | LANE LEDGER hdl take
+2026-10-08 20:58 | FM-R2b reader (Sonnet, acct1) | LANE LEDGER hdl take
