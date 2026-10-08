@@ -3624,7 +3624,7 @@ it was found in the press, which the brief named.
 
 ## AUDIT 2 (second adversarial, AUD2-LS3-B)
 
-Verifier AUD2-LS3-B (account 1, WORK-QUEUE row AUD2-LS3-B, session_01XTwC7fiKALx6WC8A3weak9), 8 Oct 2026, 12:44-13:1x UTC by `date -u`; a
+Verifier AUD2-LS3-B (account 1, WORK-QUEUE row AUD2-LS3-B, session_01XTwC7fiKALx6WC8A3weak9), 8 Oct 2026, 12:44-13:0x UTC by `date -u`; a
 separate session from the readers (LS3-R9: E76; LS3-R18: O9-BA, E83, E84) and from the earlier auditors (LS3-V18a: O9-BA, E76; LS3-V18b: E83,
 E84), all account 2; not protecting any of their conclusions. Scope: **O9-BA, E76, E83, E84**. Nothing decoded beyond `--check`. Depth under
 .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. Key source for all four: `period`.
