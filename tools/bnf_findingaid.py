@@ -35,14 +35,31 @@ def curl(args):
     return r.stdout.decode('utf-8', errors='ignore')
 
 
-def find_ark(cote):
-    s = curl(['-X', 'POST', '--data-urlencode', 'TEXTE_LIBRE_INPUT=' + cote,
-              '-d', 'DOC_NUMERISE_INPUT_RADIO=all_docs&NUMERO_DEPARTEMENT_INPUT=', BASE + 'resultatRechercheSimple.html'])
+def _match(s, cote):
     for m in re.finditer(r'href="[^"]*ark:/12148/(cc[0-9a-z]+)(?:/[a-z0-9]+)?"[^>]*>(.*?)</a>', s, re.S):
         t = H.unescape(' '.join(re.sub(r'<[^>]+>', '', m.group(2)).split()))
         if t.startswith(cote + ' .') or t.startswith(cote + '.'):
             return m.group(1), t
     return None, None
+
+
+def find_ark(cote):
+    """POST the simple search (keeping the session cookie); if the exact title is not on the default first page of
+    20, ask the same result list again at 100 per page (BNF-FOCUS, 8 Oct 2026: fr.3413, 3635-3641, 4687-4712 were
+    missed on page 1)."""
+    import tempfile
+    jar = tempfile.NamedTemporaryFile(prefix='bnfjar', delete=False).name
+    try:
+        s = curl(['-c', jar, '-b', jar, '-X', 'POST', '--data-urlencode', 'TEXTE_LIBRE_INPUT=' + cote,
+                  '-d', 'DOC_NUMERISE_INPUT_RADIO=all_docs&NUMERO_DEPARTEMENT_INPUT=', BASE + 'resultatRechercheSimple.html'])
+        ark, t = _match(s, cote)
+        if ark:
+            return ark, t
+        time.sleep(2)
+        s = curl(['-c', jar, '-b', jar, BASE + 'resultatRechercheSimple.html?pageEnCours=1&nbResultParPage=100'])
+        return _match(s, cote)
+    finally:
+        os.unlink(jar)
 
 
 def to_text(s):

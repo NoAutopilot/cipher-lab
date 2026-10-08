@@ -84,3 +84,17 @@ G60D note (BNF-G60D, 8 Oct 2026 10:2x-10:4x UTC by date -u). Caveats: the synthe
 Next best attempt: a separate verifier (lane briefs it) re-derives the reading from ciphertext.tsv and tests it with a shuffled-position control and 1000 nulls; if f.91 holds, sign-sorter settle the 5 tags missing from key.tsv.
 
 | 8 Oct 2026 | f.91's cipher is Nevers no.60 (robustness of G60E) | BNF-G60R: `scripts/g60r_robust.py` over the unchanged `g60d_instrument.py` and `ciphertext.tsv`; 135 tokens read (110 keyed; '?' stripped; `w:...` and 6+, I, a, h, z unkeyed and skipped by the Viterbi, as in G60E); real (a) -1.344, (b) 0.870 reproduce G60E to 3 dp | Null A: 1000 class-preserving shuffled keys (seed 7001); Null B (ARM-C1 shuffled target): 200 permutations of tag order (seed 7002), decoded with the real key | Null A: (a) p99 -1.308, 21/1000 >= real; (b) p99 0.847, 4/1000 >= real. Null B: (a) p95 -1.217, p99 -1.194, 63.0% >= real; (b) p95 0.892, p99 0.916, 16.5% > real | registered rule (brief 2026-10-08-ytbiz-bnf-g60r.md): **does not hold** -- real (b) beats Null A p99 but not Null B p99, and 16.5% (>= 5%) of order-shuffled texts exceed it; the word-cover 'fits' is produced by no.60's word/syllable values on any order of these tags, not by the order on f.91 | lesson: a key-shuffle null alone cannot license a word-cover gate for a code-heavy key; the order-shuffle (ARM-C1) null is the one that discriminates here. Agree with G60E's own caveat (thin margin, short-word Viterbi text, shuffled-target decode needed); the result does not survive it. Row stays a non-test of "is f.91 no.60", not a negative of no.60 |
+
+## Retrospective after 7 attempts (lane, 8 Oct 2026 13:3x UTC by date -u)
+- Moved anything: G60D (an instrument that sees no.60 on synthetic text: word-valued decoding, class-preserving
+  shuffles) and G60R (the shuffled-ORDER control that exposed the limit).
+- Never moved: every gloss-leaf gate (G41 substituted, G60/G60B unrunnable/mispriced), and every statistic that scores
+  a bag of decoded words -- with a word- and syllable-valued key like no.60 a random ORDER of the same signs reads as
+  well (G60R: order-shuffle p99 0.916 > real 0.870).
+- What the data say f.91 is NOT: not key no.41 (figures vs symbols, by image). Whether it IS no.60 is untestable by
+  any order-blind statistic at N=135; a decision needs an order-sensitive test (a readable clause of >= 12 letters
+  surviving the order-shuffle control, crib placement) or more ciphertext from the same correspondence, or the owner's
+  sign sorter to settle the 5 tags absent from key.tsv and the 35% reader disagreement.
+- Rule 3 third-attempt clause: the machine family "two blind passes + no.60 + bag-of-words score" is retired for f.91
+  (untestable by this instrument at this N); reopened only by an order-sensitive instrument or new material.
+Status: open (rule 5 gaps: owner sign sorter; order-sensitive test). Lane moves to the next queue row.
