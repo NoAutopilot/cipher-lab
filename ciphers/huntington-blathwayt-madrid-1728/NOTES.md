@@ -389,9 +389,9 @@ Read so far: 130 of 172 target tokens at C (75.6%; R8-HUNT 6 Oct 2026: census fi
 - [x] known-keys: the run's own period glosses give the key (395 groups, grade C)
 - [x] print: TNA SP 94/98-100, SP 98, SP 100, SP 36/13-14 and SP 54 descriptions (RUN6-BLATH 5 Oct; R10-HUNTTNA 6 Oct 2026): no decipherment of BLA191(a) catalogued; HMC Polwarth V search-inside done (H1, 5 Oct 2026)
 - [x] key-rebuild: key.tsv rebuilt from the glosses by build_key.py (R17)
-- [x] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap)
+- [ ] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap); (signs, D3-BLA 8 Oct 2026) BLA191 p5 L12 pos 2-4, 6-12 read the same by a blind Sonnet pass, pass A and pass B (d3bla_signs.tsv), which would move 8 tokens M -> C (26 ai, 591 in, 275 dans, 659 l', 758 no, 942 ra, 754 n, 163 ce) plus 46 -> C by the spelling-tie rule; held out of the reading because PREREG-D3BLA's shuffled-code gate failed (target 9 vs random-code mean 27.05, p95 31), a gate that could not pass by construction (the 42 are the residue the key already failed on); next: a known-answer control for the three-reader agreement rule on glossed sibling columns that pass A flagged M, re-registered, ~$1
 - [x] retry: context-fill of the 18 unkeyed groups with a BLA185 blanking control (R9-HUNT attempt 1 FAIL; R10-HUNT2 attempt 2 PASS on fresh seeds 4-6, 4 groups filled, 14 stay U)
-Verdict: keep going: 2 internal gaps; cheapest next: a copy of SP 54/19/98B (Seville, 20 Oct 1729, cipher with contemporary decipherment, same Marchmont channel) to test against key.tsv and the 14 open codes (R10-HUNTTNA, 6 Oct 2026); the State Papers decipherment gap is now needs-physical-access
+Verdict: keep going: 2 internal gaps; cheapest next: the known-answer re-gate of D3-BLA's L12 signs (~$1, 9 tokens C if it passes); then a copy of SP 54/19/98B (Seville, 20 Oct 1729, cipher with contemporary decipherment, same Marchmont channel) to test against key.tsv and the 14 open codes (R10-HUNTTNA, 6 Oct 2026); the State Papers decipherment gap is now needs-physical-access
 
 ## IA-DESK-ALT (account-3 worker, 5 Oct 2026): HMC Polwarth IV and V via Internet Archive
 
@@ -579,3 +579,52 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - BLA 187 (enclosed cipher, partial decipherment) and BLA 191(a) undecoded 12 lines [same-volume; unread] -- BLA191(a) unkeyed groups already context-filled (R9-HUNT, NOTES.md:500) and no TNA copy found (R10-HUNTTNA, NOTES.md:562); remaining: re-grade BLA187/191(a) residue with key.tsv --check + shuffled control; ~$2; p 0.15; evidence: huntington-blathwayt-madrid-1728/NOTES.md:49,53,147; key.tsv; ciphertext.tsv (reconciler: R9-HUNT/R10-HUNTTNA sections read)
 - BLA 188 (~400 tokens), 189, 190 (incl. p7 anomaly), 194, 179, 185 deciphered siblings [same-volume; read] -- already aligned into key; resolve BLA 190 p7 anomaly (misfiled leaf) then re-grade; ~$1; p 0.1; evidence: huntington-blathwayt-madrid-1728/NOTES.md:143-148; key_items.tsv; reading_tokens.tsv
 - Remaining BLA 176-195 items (e.g. BLA 176-178, 180-183, 192-193, 195) and SP 54/19/98B Seville 20 Oct 1729 [same-series; not-in-repo] -- get copy of SP 54/19/98B to test against key.tsv; needs physical access; p 0.1; evidence: huntington-blathwayt-madrid-1728/NOTES.md:394 (verdict keep going, R10-HUNTTNA)
+
+## D3-BLA: residue re-grade of the 42 non-C tokens (account-4 worker, LANE DEPTH, 8 Oct 2026 18:46-19:0x UTC by date -u)
+
+Rule pre-registered in PREREG-D3BLA.md (pushed 061e190a at 18:49 UTC, before any crop was read or any score computed). Prior-work
+gate (`tools/prior_work.py --item-spec 'shelfmark=Huntington mssBLA 186|191(a)|184' --step-type decode`): exit 4 each; LEAD
+"audited reading of ours" answered KNOWN (our reading, extended here), LOOK 2-leaf answered CLEAR (no gloss or clear copy on these
+leaves, item table above and I3 below); the live-claim LEAD was this job's own claim; UNCHECKED rows (Tomokiyo, solver caches,
+editions) are generic and were not re-run, since this job reads no plaintext. No network requests this job.
+
+**Universe.** reading_tokens.tsv at beefb778f: 172 tokens, C 130, M 22, S 3, U 17; the 42 non-C are 18 with an M sign (BLA186 p1
+778; BLA191 p5 L01 941, 386; L05 1099; L06 214; L07 937; L11 385; all of L12 pos 2-12), 7 key ties (1240 x2 s|que, 1250 x2
+hier|c'est, 665 co|lo, 46 accommodeme|acomodement, 1018 sec|ser), 17 unkeyed (U) and 3 context fills (S).
+
+**I1 image.** Crops cut from the 1200 px disk copies, no fetch: `python3 tools/iiif_lines.py --image
+ciphers/huntington-blathwayt-madrid-1728/images/BLA191_p5.jpg --region 340,230,780,850 --out <scratch>/crops --prefix b191p5 --debug`
+(13 lines found, centres in region y 30 ... 833); the single-line BLA186 p1 region gave 0 lines in the tool, so that one and the 2x
+reading crops were cut with PIL at the tool's centres (BLA191 p5 page y 260/514/581/646/910/975 +-34, x 340-1120; BLA186 p1 y
+1065-1135, x 320-1120), crops kept out of the repo. One blind Sonnet pass on the 7 crops (2 units with this reconciliation).
+Result by the pre-registered rule (blind = pass A = pass B, no competing reading on the crop): **BLA191 p5 L12 pos 2, 3, 4, 6-12
+settle to H** (1018 26 591 275 659 585 758 942 754 163); L12 pos 5 1185 stays M (blind offered 1183); 941 (blind 941, both passes
+947), 386 (overwritten first digit), 1099 (blind 1099/1699, pass A 1899), 214 (pass B 274), 937 (blind 935/937, passes 933), 778
+(blind 778/738) stay M. Recorded in d3bla_signs.tsv only.
+
+**I2 tie rule.** One tie is one word in two spellings: 46 accommodeme|acomodement -> accommodement. 1240, 1250, 665, 1018 stay M.
+**I3 siblings.** None of the 20 codes that stay unread (17 U, the 3 S fills) carries a gloss on any column of the run, as read or as an
+alternative (1118 occurs once more, BLA194 p1 L14, unglossed). No C.
+**I4 BLA190 p7.** One-system test with p7 left out: 94 of its 109 glossed H columns agree with the rest of the run's value (0.862, gate
+0.65, higher than every other item's leave-one-out share). Same code; its glosses stay in key.tsv. Which letter the leaf belongs to is a
+catalogue question this test does not touch; the 3 Nov 1729 date stands as R1 read it.
+
+**Gate: FAIL.** Under I1+I2+I3, 9 of the 42 would be C (8 L12 tokens + 46). Shuffled-code control (a), random attested codes (457) at the
+same 42 positions with the same sign grades, 1000 seeds: mean 27.05, p95 31, max 33. Control (b), the 42 codes permuted: mean 12.17, p95
+14. The target does not beat either, so per PREREG-D3BLA **no promotion is written**: reading_tokens.tsv stays **C 130, M 22, S 3, U 17**
+(`tools/decode_key.py . --check` 0; `python3 d3bla.py --check` 0, d3bla_summary.json).
+Why it failed, and why that is the brief's gate rather than a negative on the signs: the 42 positions are by construction the residue the
+key already failed on (unkeyed codes, ties, doubtful signs), while 85% of attested codes are keyed with one value, so any random code at those
+positions promotes more often than the true ones. Control (b) holds the code multiset fixed, so per-code key lookup can differ from the target
+only through the sign grade (rule 3, bCAS/AX-5799 shape). Neither control can measure what I1 claims, which is that three independent readers
+agree on a digit string. The next step is a control that can vary on that axis: a known-answer test of the three-reader rule on glossed sibling
+columns that pass A flagged M. There the gloss's key code is the answer, so the rule can be scored right or wrong. Re-register it and run it.
+
+**Residue, as it stands (42).** Names or codes: 4 in BLA184 p1 (1259, 1240 x2, 1250, the probable names section), 6 in BLA191 p5 L02
+("du [6]", a date figure); possibly 73 (BLA186 p1, "l'ambassadeur [73]") and 1019/711 ("des [1019][711]s"), context only. The
+other 34 sit in ordinary French text: the 10 L12 tokens and 1185 (sign doubt only), 941, 386, 1099, 937, 385, 778 (sign or value
+doubt), 665, 46, 1018 (ties), and 470, 190, 805, 1210, 460, 1118, 1052, 836, 585 x2, 222 (unkeyed), 689, 285, 214, 1152 (fills).
+Observation, not acted on (outside the 42): BLA184 p1 L02 pos 2, 1243, decodes C 'il' from a single bracket witness (BLA190 p5, n=1),
+inside the range R17 called a probable names section ("Monsieur 1240 de 1243 la Paz"). A verifier should check it before the BLA184
+count is quoted.
+Report: what was found and where it was not found; novelty not classified.
