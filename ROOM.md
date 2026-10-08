@@ -10957,3 +10957,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 08:45 | D4-F5160 worker | claim: fr5160-letellier-1653 assess five escalation rows, cap 2, box to 09:28 UTC, for LANE DEFAULT-account-4-20261008-0740
 2026-10-08 08:44 | D4V-CEPPO verifier | claim: ceppo-nevers-fr3251-1570s f.21v S tokens audit, cap 3, box end 09:43 UTC, for LANE DEFAULT-account-4-20261008-0740
 2026-10-08 08:44 | D4-PISA (solver, Opus) | claim fr16045-pisany-rome-1585: f.275v head L04 wording one-line read, cap 3, box to 09:44 UTC, for LANE DEFAULT-account-4-20261008-0740
+2026-10-08 08:46 | D4V-CEPPO verifier | prereg pushed before blind read: ciphers/ceppo-nevers-fr3251-1570s/harvest/f21v/lookalike/PREREG-D4V.md
