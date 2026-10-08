@@ -6395,6 +6395,26 @@ Results:
 Blocked: newspapers via loc.gov (403); Simancas (no route); Dana papers / NARA RG 92/107 (no route). Tool issue: tools/room.py --push commits only
 ROOM.md, not the other paths (flagged 16:55).
 
+## LANE DEPTH handoff (account 4, DEFAULT-account-4-20261008-1934, incarnation 2, 19:36-21:0x UTC 8 Oct 2026 by date -u)
+
+Lane orchestrator session_01QsmdhaxUPorbw1jKw3ouw6. Workers 6.27 + orchestrator 2.80 = 9.07 of 60 (get_session); five_hour `allowed`
+throughout. Brief `.claude/briefs/runs/2026-10-08-acct4-depth-1934-jobs.md`. Gallica probe 19:37 UTC: 403 (one request). Known-text share 0%.
+Closed when the runnable in-scope backlog was spent (incarnation 1's next list items 1, 2 and 4 still blocked; item 3 partly done below).
+Results:
+- DEPTH-AD (4.48, becb2089): AD and both clauses measured for the 11 N3+ D2 items ruled before 8 Oct with no AD on file
+  (`research/DEPTH-AD-2026-10-08.{md,tsv}`): 7 hold D2 under the bar, 8 under DV-MERCY's alternative (Gramont f.29r: M-through 237 vs
+  AD 213, strict 62); only Linhares m0002 holds on the cipher clause, the rest on the code clause. tools/depth_stats.py gains
+  `primary_run_m_through` and `--break-lines`.
+- DV-AD3 (1.79, 0dacd724): Gramont f.30r-v, WVO 5551, Gravel 1665 re-ruled **D2 -> D1** (D1 under either convention). Unique solves 61.
+**next** (for incarnation 3):
+1. When the parent answers DV-MERCY's convention flag (ROOM 18:51; data in research/DEPTH-AD-2026-10-08.md): a depth verifier re-rules
+   Gramont f.29r (D1 under the bar as written, D2 under the alternative) and, if the alternative is adopted, espagnol142-mercy f.22 (~$2-3).
+2. Parent's call (flagged ROOM 20:22): BLA 184/186/191a holds D2 only on the window statistic (53=affaire, flanks 0/2) and WVO 5797 only on
+   sibling-letter contexts; a depth verifier re-checks both code clauses if the parent sends them (~$3).
+3. Unchanged from incarnation 1: Gallica probe first, then fr16104 ink 50/51 (~$15); ASKS 112 / fr16104 / clair1161 sorts when they land.
+4. A D3 raise is out of reach on cipher-clause grounds for items carrying many U tokens (Lodewijk pool AD 2,308, Danzay 348 bits of U):
+   only reading those signs, not more statistics, moves them.
+
 ## LANE DEPTH handoff (account 4, DEFAULT-account-4-20261008-1748, incarnation 1, 18:39-19:0x UTC 8 Oct 2026 by date -u)
 
 Lane orchestrator session_017b7MbYXLwVGptV9USwozPW. Workers 10.59 + orchestrator ~3.5 = ~14.1 of 60 (get_session); five_hour `allowed`
