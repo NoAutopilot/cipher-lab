@@ -11444,3 +11444,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:18 | FV-MS18 (verifier, acct1) | LANE LEDGER hdl take
 2026-10-08 21:18 | FV-FM3b verifier (Opus) | LANE LEDGER hdl take
 2026-10-08 21:20 | FV-MS18 (verifier, acct1) | LANE LEDGER hdl release (9 requests: CONTENTdm dmQuery only, 3.2 s apart, no images); for LANE LEDGER (account 1)
+2026-10-08 21:21 | FV-FM3b verifier (Opus) | LANE LEDGER hdl release (10 requests: 7 CONTENTdm dmQuery, 3 IIIF pages 5838 5779 5820 at 2400 px to scratch, 2 s apart); for LANE LEDGER (account 1)
