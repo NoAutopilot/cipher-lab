@@ -641,3 +641,32 @@ Result: no SUBSTANCE (no text sharing two rare entities or numbers with the ciph
 ii 414-15 remains the only print of the letter, with the cipher shown as "(Cypher.)". **Class kept: N4** for the cipher lines;
 the press family stays a named unchecked gap, not a clear. status.json and the SO row are unchanged (no class move).
 Requests: be-api.us.archive.org 4, www.googleapis.com 5, api.openalex.org 4.
+
+## G3 check (V2-G3GAPS)
+
+Verifier V2-G3GAPS (account 3, session_01HvvEnDAfg1rBUioVEigxJZ), 8 Oct 2026, 19:56-20:07 UTC by date -u, for LANE-VERIFY-2. Closes the
+one gap V1-G3E left open above (press of the day); not a full audit; nothing decoded. Item: mssBLA 186, the two cipher lines (p1
+"l'ambassadeur [73] a ete fort [470] [778] [190] te affaire"; p3 "Monsieur de Patigno m'en a parle ce soir"). Class on file N4.
+Duplicate diff: BLA 186 (Madrid, 13 Sept 1728 N.S. = Rose's "September 3d" O.S.) is the only BLA entry with that date and pointer; no duplicate.
+
+### Prior-work checks 3-5
+
+| check | route, query | result |
+|---|---|---|
+| prior_work.py (step) | `tools/prior_work.py huntington-blathwayt-madrid-1728 --item-spec 'shelfmark=Huntington mssBLA 186;folio=p1,p3;date=1728-09-13;sender=N;recipient=Blathwayt' --step-type second-audit --fetch` | exit 0; plaintext UNCHECKED (3-tomokiyo: no folio key; 3-solver: aaymeloglu cache not on disk; 4-editions: no prior_editions.tsv row). Specific holds 0. The editions family is covered by hand in the audits above (Rose 1831 ii 414-15) |
+| prior_work.py (G3) | same spec, `--reading reading.txt --network --max-requests 8` | output below if it completed in the session; see "G3 tool run" |
+| 5, press of the day | The Gazette (thegazette.co.uk) London Gazette issue PDFs, OCR text layer, read for every Madrid / Spain paragraph: nos. 6708 (10-14 Sept 1728 O.S.), 6709 (14-17 Sept), 6710 (17-21 Sept), 6711, 6712, 6713 (28 Sept-1 Oct). The brief named 13 Sept +-1 issue; the window was widened forward because Madrid news reaches the Gazette about 8-14 days late (6710 prints "Madrid, Sept. 10, N.S.") | 6708-6709: no Madrid news. 6710: Madrid 10 Sept N.S., the Sardinian ambassador d'Arvillar notifying the Queen of Sardinia's death; nothing on Ripperda. 6712: letters from Madrid of 20 Sept and 1 Oct N.S.: Ripperda, escaped from Segovia, passed Miranda del Duero 8 Sept, supposedly for Oporto; his Duchess seized at Madrid on the 20th and put under guard for assisting the escape. 6713: "The last Letters from Spain" on the route of Ripperda's escape (servant maid and corporal as abettors, Miranda 8 Sept). **No paragraph names an ambassador's view of the affair or a conversation with Patino.** |
+| 5, press, Gazette de France | not run (the London Gazette pass answered the brief) | unchecked |
+| loc.gov | not probed: no loc.gov holding bears on a 1728 Madrid newsletter | not applicable |
+
+Result: the London Gazette of 14 Sept-1 Oct 1728 carries the clear-text subject of the letter (Ripperda's escape from Segovia,
+already printed from the letter itself by Rose), not the content of either cipher line. No SUBSTANCE witness (no text sharing two
+rare entities with the cipher lines). **Class kept: N4.** status.json and the SO row unchanged. The press family is now searched
+(London Gazette), with the Gazette de France still unchecked.
+Requests: www.thegazette.co.uk 7 (1 issue page, 6 issue PDFs, >=2 s apart).
+
+G3 tool run (V2-G3GAPS): on the committed reading.txt, `prior_work.py --reading --network` returned exit 4 with a LEAD whose
+phrase is the file's own `#` header ("H C 130 S M", Google Books 359 volumes on veterans' affairs) -- an artifact: `reading_phrases()`
+does not skip comment lines or line labels (flagged to the lane). Re-run on a header-free copy holding only BLA 186's two lines
+("l'ambassadeur a ete fort te affaire. Monsieur de Patigno m'en a parle ce soir"): ia-global CLEAR (no hits); gbooks UNCHECKED-NET
+(HTTP 503, not retried); exit 4 owes only UNCHECKED-NET rows (4-editions, gbooks). No SUBSTANCE or LEAD from the tool. Class unchanged.
