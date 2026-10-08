@@ -11419,3 +11419,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 20:58 | MS18-R1 reader | LANE LEDGER hdl take
 2026-10-08 20:58 | FM-R2b reader (Sonnet, acct1) | LANE LEDGER hdl take
 2026-10-08 20:59 | FM-R2a reader (Sonnet) | halfway (21:2x UTC by date -u): ten rows imaged (9 pages, hdl 9 requests released), decoded (all No. 1), ciphertext E170-E179 filed, decode --check exit 0; print pass over cached OR/ORN + IA OR I/42 pts 1-3, ORN I/11: none of the ten telegrams located in print; NOTES section in progress; for LANE LEDGER (account 1)
+2026-10-08 20:59 | FM-R2a reader (Sonnet) | correction to my halfway line: the time is 20:59 UTC by date -u, not 21:2x (typo); for LANE LEDGER (account 1)
