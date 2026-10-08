@@ -5690,6 +5690,129 @@
       "depth_sentence": "On 22 Aug 1864 Washington tells McCaine at Harper's Ferry, for Sheridan, that a small train of forges and other wagons for his cavalry left the day before, escorted by the 25th New York Cavalry, 350 men, ordered to him, together with a detachment of 375 men belonging to the 1st and 3rd Cavalry Divisions, all mounted and equipped.",
       "depth_check": "image crop, all lines, checked (LS-V2c); fresh rule-7 re-derivation (LS-V2c); OR I/43 pt 1 brigade itinerary: 25th New York Cavalry assigned to the cavalry brigade 24 Aug 1864",
       "depth_note": "28/30 code words H; signature Chisel plane unread"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V5)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 80.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V5 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Meigs to Capt. Thomas, quartermaster, 8 Apr 1864, the steamer Relief to Annapolis for colored troops (E57)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the Meigs letterbooks, the 1864 press pages listed in AUDIT (LS-V5) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; the plan (OR I/35 pt 2 p.37) is in print, the Relief order is not located; SO-ECKERT-E57 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.35, pointer 8927, E57"
+      ],
+      "document_id": "Huntington mssEC 19 p.35, pointer 8927, E57",
+      "documents": [
+        "Huntington mssEC 19 p.35, pointer 8927, E57"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "8 H + 2 I of 10 code words",
+      "unresolved_spans": "none (two plain sound-alike words graded I: Ann, collared)",
+      "reading_version": "LS-R5 8 Oct 2026 (reading.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V5)' section 4",
+      "depth_sentence": "Meigs tells Captain Thomas, quartermaster, that if on examination the Relief proves a good staunch steamer she is to call at Annapolis for a load of colored troops, and if she is not needed there, to go on to Hilton Head and report for duty.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V5); image checked, all lines (LS-V5); external: OR I/35 pt 2 p.37 prints the plan this telegram executes (Halleck's 5 Apr memo: two colored regiments at Annapolis to go to South Carolina; Meigs's 5 Apr orders for steamers to Annapolis)",
+      "depth_note": "8 H + 2 I of 10 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V5)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 92.3,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_by": "LS-V5 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Washington (General-in-Chief code word) to Sherman, Nashville, 27 Apr 1864, the 11th Michigan Cavalry of no use at Lexington (E59)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the Meigs letterbooks, the 1864 press pages listed in AUDIT (LS-V5) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; Sherman's printed papers searched by phrase only; SO-ECKERT-E59 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.59, pointer 8951, E59"
+      ],
+      "document_id": "Huntington mssEC 19 p.59, pointer 8951, E59",
+      "documents": [
+        "Huntington mssEC 19 p.59, pointer 8951, E59"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "12 H + 1 M of 13 code words",
+      "unresolved_spans": "one time word M (Susan = 11.30 PM by key.md against the header 11.30 AM)",
+      "reading_version": "LS-R5 8 Oct 2026 (reading.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V5)' section 4",
+      "depth_sentence": "Washington tells Sherman at Nashville that the Cavalry Bureau reports the 11th Michigan Cavalry is of no use at Lexington, that its efficiency is being impaired there, and that it ought to be sent to the field.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V5); header image checked (LS-V5); external: OR I/32 pt 3 places the Eleventh Michigan Cavalry at Lexington, Ky., under Hobson in April 1864",
+      "depth_note": "12 H + 1 M of 13 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V5)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 90.9,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V5 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Meigs to Lt Col Biggs, Fort Monroe, 6 Apr 1864, the Spaulding to Hilton Head and the Montauk with two propellers to Annapolis (E62)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the Meigs letterbooks, the 1864 press pages listed in AUDIT (LS-V5) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; weakest of the three: the exchange around it is printed (Meigs 5 Apr, Biggs 5 and 6 Apr), its own wording is not located; SO-ECKERT-E62 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.29, pointer 8921, E62"
+      ],
+      "document_id": "Huntington mssEC 19 p.29, pointer 8921, E62",
+      "documents": [
+        "Huntington mssEC 19 p.29, pointer 8921, E62"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "10 H + 1 I of 11 code words",
+      "unresolved_spans": "none (one plain sound-alike word graded I: Ann)",
+      "reading_version": "LS-R5 8 Oct 2026 (reading.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V5)' section 4",
+      "depth_sentence": "Meigs tells Biggs at Fort Monroe to order the Spaulding on to Hilton Head to report to the quartermaster there, to send the Montauk and the other two propellers to Annapolis to carry troops to Hilton Head with plenty of coal, and to report his coal on hand, the coal expected within a fortnight, and every steamer arrival daily.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V5); external: Biggs's printed replies of 5 Apr (OR I/35 pt 2 pp.37-38, the Montauk and two other propellers) and 6 Apr (OR I/33 p.814, Montauk's broken valve-crank, Spaulding not yet arrived) answer the ships and orders this telegram names",
+      "depth_note": "10 H + 1 I of 11 code words"
     }
   ],
   "lanes": [

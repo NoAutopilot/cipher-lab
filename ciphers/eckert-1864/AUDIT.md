@@ -2577,3 +2577,103 @@ IA `warofrebellion431unit_0` (OR ser. I vol. 43 pt 1) `_djvu.txt`, whitespace-no
   (not edited in the source, since the code word is what the clerk wrote).
 - Rows: status.json one result row for E33 (N3, audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv row SO-ECKERT-E33 with its prompt
   in second-opinions/; two JSTOR-QUEUE.tsv rows. Requests: in the ROOM done line.
+
+## AUDIT (LS-V5)
+
+Verifier LS-V5 (account 1, LANE ST-LEDGER-2), 8 Oct 2026, 04:17-04:4x UTC by `date -u`; a separate session from every reader (LS-R5 read
+these entries), not protecting its conclusions. Scope: LS-R5's entries **E55-E64** (mssEC 19, all Cipher No. 1, key.md = mssEC 41).
+Nothing decoded beyond re-running the committed script. Key source for every item: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+
+### 1. Re-derivation (rule 7) and image check
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0. E55-E64 derived block H 136, C 1 (as LS-R5).
+- Strip crops from the 2400 px IIIF images (scratch, not committed), regions as LS-R5's: `python3 tools/iiif_lines.py --image $S/img/p9038.jpg
+  --out $S/crops/9038 --prefix p9038 --region 100,270,2300,2060 --centres 30,142,235,328,422,515,608,701,794,888,981,1074,1167,1260,1354,1447,1540,1633,1726,1820,1913
+  --lines-per-crop 3 --max-width 2400`; `... p9003 --region 100,600,2300,900 --centres 60,168,272,368,464,560,652,740,828 --lines-per-crop 3`;
+  `... p8927 --region 100,260,2300,780 --centres 40,140,252,348,448,540,628,712 --lines-per-crop 4`; plus single bands for the I/M re-reads:
+  `p8932 --region 100,1700,2300,820 --centres 500,596,692,772 --lines-per-crop 4`, `p8951 --region 100,1040,2300,720 --centres 50,192 --lines-per-crop 2`,
+  `p9036 --region 100,1100,2300,1000 --centres 40,...,912 --lines-per-crop 5`.
+- Word for word, header to tail: **E64** (9038, the longest, all 21 lines), **E60** (9003, all 9 lines), **E57** (8927, all 8 lines) agree with
+  ciphertext.txt. Small notes only: E64 line 18 reads "formed in to [to]" with the second "to" written over/struck (transcribed "in to"); E64 line 19 the
+  struck "you" is confirmed; E57's tail "Bender his on one" carries pencil glosses "over game tide" (the clerk's check group, not message text).
+- Re-read from the image, every I/M token and every image-vs-volunteer word LS-R5 lists: E58 "pembroke", "Tinkers" (as written, line 9; a separate
+  marginal entry "draft tonnage of them" sits beside it, not part of E58); E59 "Susan" (as written; header "1130 am" -- the key's 11.30 PM stays M);
+  E63 "money" is a pencil interlineation over "peasant ... ca - cy" (= "via Monocacy", which the print confirms); E64 "Sapan Rape" and "Dismiss" as
+  written; E57 "collared", "Ann a / pol is", "whisky", "his on one" as written; E64 "nick" (not "wick"). No transcription correction.
+
+### 2. Entries located in print: page confirmed by script (a check, not a search)
+| ID | printed at | how confirmed |
+|---|---|---|
+| E55 | OR ser. I vol. 39 pt 2 **p.304** (Washington, August 26, 1864 -- 11 a.m., to Lieut. Col. C. H. Howard, Louisville, Ky.) | IA `warofrebellion392unit` djvu, before the running head 305: "A dispatch just received from General Canby states that General A. J. Smith's command has already been detached to co-operate with General Sherman. H. W. HALLECK, Major-General and Chief of Staff." Word for word with the ledger's plain and code words. Two derived-block notes: the pencil interlineation "leopard" over "Gen Canby" (carried by LS-R5 as `<ins>`) decodes to [Maj Gen S. A. Hurlbut], which is not in the print -- a later gloss, not message text; the signature code word "Jew" = General-in-Chief, the print signs Halleck as Chief of Staff (the E48 shape). "Lol" = Louisville (plain abbreviation) |
+| E56 | OR ser. I vol. 43 pt 2 **p.682** (Washington, D. C., November 28, 1864, to Major-General Sheridan, "Copy to Major-General Thomas, Nashville") | cached `warofrebellion432unit` djvu, after the running head 682: "General Grant directs me to say that it is not expected of you to give to the major-generals ordered to report to you commands of more than divisions. H. W. HALLECK." LS-R5 searched I/45 pt 2 and missed it in the volume it already held. **Corrections**: "eggs peck dead" is *expected* (print), not "expedient" as LS-R5's table has it; "or dear ed to nick to you" is "ordered to report to you", so the unread word "nick" is *report* (also E64, below) |
+| E58 | **Papers of Ulysses S. Grant vol. 10** (Jan.-May 1864), a note printing the telegram "received, DNA, RG 107, Telegrams Collected (Bound)" and ending "Please acknowledge this.", followed by "On the same day, 3:00 P.M., USG telegraphed to Townsend. '11 a.m. dispatch received. Papers refered to will be sent in the morning'" | Google Books API (key, country=US), snippet only, two copies of PUSG vol. 10 (ids 7DAAxfRuXKoC, mD4fAQAAMAAJ); page not read. E58 is Townsend's 11 AM telegram to Grant of 19 Apr 1864 ending "Please acknowledge this" and asking for papers (the Jeffery letter), so the note is taken to print E58; class N1 on that identification. A reader of PUSG 10 should confirm the page |
+| E60 | Collected Works of Abraham Lincoln (Basler, 1953) **vol. 7**; Nicolay and Hay, Complete Works (1894); OR ser. III vol. 4 (1900) | Google Books API snippets (three queries): "John Hay, Astor House, New York. Executive Mansion, Washington, July 16, 1864. Yours received. Write the Safe-conduct, as you propose, without waiting for one by mail from me. If there is, or is not, any thing in the affair, I wish to know it, without unnecessary delay. A. LINCOLN" (Basler cites ALS, DNA WR RG 107, Presidential Telegrams I, 98). **Correction**: the addressee is **John Hay at the Astor House, New York** (the Greeley-Niagara peace affair), not Grant: "John" in "For John Hay Asthore house" is Hay's name in clear, which the decoder took for the Grant code word. Ledger "with the safe conduct" against the print's "Write the safe-conduct" (image: "with"; a clerk's slip or mishearing, not a misread) |
+| E61 | OR ser. I vol. 36 pt 2 **p.587** (War Department, May 9, 1864 -- 4 p.m., to Major-General Butler) | cached `warofrebellion362unit` djvu, between the running heads 587 and 588 (OCR damaged: "A dispatch from General Grant has just been received ... EDWIN M. STANTON"); full wording from the Google Books snippet of the same volume: "... his whole army to form a junction with you, but had not determined his route. Another dispatch from him is being translated. EDWIN M. STANTON." Also in Private and Official Correspondence of Gen. Benjamin F. Butler vol. 4 (1917) |
+| E63 | OR ser. I vol. 43 pt 1 **p.709** (Washington, D. C., August 6, 1864 -- 11.30 a.m., to Lieutenant-General Grant, Monocacy) | IA `warofrebellion431unit_0` djvu (fetched once to scratch, 3.96 MB), before the running head 710: "One brigade of Torbert's division of cavalry left last night and another will start this morning for Harper's Ferry, via Monocacy. As your telegram of last night says, 'Send all cavalry yet to arrive,' &c., I presume you allude to the division expected from City Point. Do you want an order issued making a military division of the four departments, or shall it await your return here? H. W. HALLECK, Major-General and Chief of Staff." Word for word; the signature "Sugar Ben - jam - in" is Halleck's |
+| E64 | OR ser. I vol. 43 pt 1 **p.719** (Washington City, August 7, 1864 -- 12 m., and 12.15 p.m., both to Major-General Sheridan, signed U. S. Grant) | same djvu, between the running heads 719 and 720: both telegrams of the entry, word for word ("Do not hesitate to give commands to officers in whom you repose confidence ... give Averell some other command, or relieve him from the expedition, and order him to report to General Hunter ..." and "The Departments of Washington, the Middle, the Susquehanna, and of Western Virginia, have been formed into a military division called the Middle Division ..."). The print settles LS-R5's unread and M words: "Dismiss" = Averell (a name code word not in key.md), "Sapan" in "relieve Sapan Rape" = "him from the" (Rape = Expedition), "nick" = report, Mutton = Hunter (as decoded), "confide = ants" = confidence |
+
+LS-R5 had marked E55, E63, E64 "NOT searched in the right volume" and E60, E61 "not located": all five are in print. LS-R5's own correction note
+(431unit "not the volume I took it for") was right about the scratch cache but wrong as a gap: `warofrebellion431unit_0` is I/43 pt 1 (LS-R2c used it the same morning).
+
+### 3. Entries not located: search families (8 Oct 2026) -- E57, E59, E62
+Phrases (decoded wording): E57 "good staunch steamer", "load of colored troops" + Relief + Annapolis; E59 "of no use at Lexington", "its efficiency is
+being impaired", Eleventh Michigan Cavalry + "sent to the field"; E62 "Montauk and other two propellers", "plenty of coal as it is probably scarce",
+"report daily any arrivals of steamers". Script in scratch (`q.py`, `ca.py`), plus hand queries.
+
+| family | searched | result |
+|---|---|---|
+| OR by date and correspondent, +/- 3 days (IA djvu, normalized text, regex) | E57, E62: ser. I vol. 33 (cached), vol. 35 pt 2 (`warofrebellion352unit`, Dept. of the South, Apr 1864), ser. III vol. 4 (`warofrebellionco0004genf`) -- Relief, staunch, colored troops + Annapolis, Spaulding, Montauk, two propellers, coal supply, Meigs/Biggs/Thomas 5-9 Apr; E59: ser. I vol. 32 pt 3 (`warofrebellion323unit`, Chap. XLIV, Kentucky Apr 1864) -- Cavalry Bureau, Eleventh Michigan, Lexington, 25-29 Apr | **no hit for the three telegrams**. Context only: I/35 pt 2 pp.37-38 prints Halleck's memorandum of 5 Apr ("two colored regiments (1,800 men) at Annapolis to be sent to South Carolina"), Meigs to Biggs 5 Apr 3 p.m. ("Send the Spaulding to Annapolis immediately to take a colored regiment thence to Hilton Head") and Biggs's reply ("Spaulding is at New Berne ... I have the Montauk and two other similar propellers ... carry 800 men"); I/33 p.814 prints Biggs's 6 Apr reply (received 1.30 p.m.: "Propeller Montauk has broken valve-crank ... Spaulding not yet arrived. Will give her orders as soon as she comes in") -- the exchange around E57 and E62, not their text. I/32 pt 3 has the Eleventh Michigan Cavalry at Lexington under Hobson in April (E59's subject), not E59 |
+| Sender's/recipient's printed papers | E59: PUSG and Sherman by Google Books phrase queries; E57/E62: Meigs (no printed papers found), Butler correspondence vol. 4 by phrase | no hit |
+| Huntington full text (CONTENTdm `CISOSEARCHALL`) | Jeffery (only 8932 = E58), staunch (3227 mssEC 05 gunboats 1862; 9382 Oct 1862 -- unrelated; 8927 = E57), Lexington (88 leaf hits, titles only, not read), Montauk (empty reply, not retried) | no second copy of E57/E59/E62 found |
+| 1864 press (loc.gov Chronicling America JSON, by date window) | E57 "steamer Relief Annapolis colored troops" 7-20 Apr (11 pages: Worcester Daily Spy, Chicago Daily Tribune, Springfield Weekly Republican, Muscatine Weekly Journal); E62 "Montauk propellers Annapolis Hilton Head" 5-20 Apr (0); E59 "Eleventh Michigan Cavalry Lexington" 25 Apr-15 May (1: Cleveland Morning Leader 29 Apr p.4) | result lists only; the page OCR fetch (`tile.loc.gov` ocr.txt) failed (400/stub), pages not read. Unread, next step below |
+| IA full text, all items (be-api fts) | every phrase above | 0 relevant hits where it answered; four phrase calls returned HTTP 502 (not retried) |
+| Google Books API (key, country=US) | every phrase above (12 queries for these three, 2 returned 503) | no hit on any of the three telegrams (loose matches on common words only) |
+| OpenAlex, CORE, Semantic Scholar | 4 queries each (Meigs/Biggs April 1864 transports; Eleventh Michigan Cavalry Lexington; the Eckert ledger) | nothing relevant; S2 answered 429 once |
+| JSTOR | 6 rows appended to JSTOR-QUEUE.tsv (E57, E59, E62; families i and ii) | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (QMG telegrams sent, April 1864), RG 107 (M473); the press pages listed above; HathiTrust full text; ORN (not run for these three: army transports, no naval correspondent) | unread |
+
+### 4. Classification (key `period` for all ten)
+Depth counts: `depth_pct` = H / (H + I + M + unread message code words); clerk's tail check groups ("Bender his on one", "Tall oaks from little acorns grow")
+are not message text and are not counted.
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E55 Halleck to C. H. Howard, 26 Aug 1864 | N1 | known (OR I/39 pt 2 p.304) | D4 | 100 (11/11 H; the "leopard" gloss excluded) | word for word with the print |
+| E56 Halleck (for Grant) to Sheridan, copy Thomas, 28 Nov 1864 | N1 | known (OR I/43 pt 2 p.682) | D4 | 100 (13/13 H; "nick" = report by the print) | word for word with the print |
+| E57 Meigs to Capt. Thomas, quartermaster, 8 Apr 1864 | **N3** | unknown | D3 | 80.0 (8 H + 2 I of 10) | image checked here, all lines; external: OR I/35 pt 2 p.37 (Halleck's memo, Meigs's 5 Apr orders) prints the plan this telegram executes -- colored troops at Annapolis to be carried to Hilton Head |
+| E58 Townsend to Grant, 19 Apr 1864 | N1 | known (PUSG vol. 10, note; identification by snippet) | D3 | 85.7 (12/14 H + M; "pembroke", "Tinkers" M) | identification by Grant's printed reply to the "11 a.m. dispatch" |
+| E59 Halleck (General-in-Chief code word) to Sherman, Nashville, 27 Apr 1864 | **N3** | unknown | D3 | 92.3 (12 H + 1 M of 13) | header image checked here; external: OR I/32 pt 3 places the Eleventh Michigan Cavalry at Lexington, Ky., under Hobson in April 1864 |
+| E60 Lincoln to John Hay, Astor House, 16 Jul 1864 | N1 | known (Basler vol. 7; OR III/4) | D4 | 100 (7/7 H after the "John" correction) | word for word with the print, but for "with" / "Write" |
+| E61 Stanton to Butler, 9 May 1864 | N1 | known (OR I/36 pt 2 p.587) | D4 | 100 (6/6 H) | word for word with the print |
+| E62 Meigs to Biggs, Fort Monroe, 6 Apr 1864 | **N3** | unknown | D3 | 90.9 (10 H + 1 I of 11) | re-derivation; external: Biggs's printed replies of 5 Apr (OR I/35 pt 2 pp.37-38, "the Montauk and two other similar propellers") and 6 Apr (OR I/33 p.814, "Montauk has broken valve-crank ... Spaulding not yet arrived. Will give her orders") answer the ships and orders this telegram names |
+| E63 Halleck to Grant, Monocacy, 6 Aug 1864 | N1 | known (OR I/43 pt 1 p.709) | D4 | 100 (21/21 H; "money" = Mono-) | word for word with the print |
+| E64 Grant to Sheridan, two telegrams, 7 Aug 1864 | N1 | known (OR I/43 pt 1 p.719) | D4 | 94.7 (35 H + 1 C of 38; "Sapan Rape" 1 M; "Dismiss" = Averell, unread name code) | word for word with the print |
+
+- **N3 (E57, E59, E62)**: no prior plaintext or decipherment located after the logged search. Not N4: NARA RG 92/107, the press pages listed,
+  HathiTrust full text and the Meigs letterbooks are unread, and JSTOR rows are pending. Safe sentence (each): "Read at grade H with the period
+  Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington
+  collection's full text, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026)." Unsafe: "first", "unpublished",
+  "never printed", "unknown telegram".
+- **E62 is the weakest N3** (the E47/E37 shape): the exchange around it is in print (Meigs 5 Apr, Biggs 5 and 6 Apr), and Biggs's 6 Apr reply answers
+  it. If a second audit finds Meigs's 6 Apr wording quoted (e.g. in a Quartermaster's report or RG 92 edition), it drops to N2/N1.
+- **E57**: the plan is printed (Halleck's 5 Apr memo); the Relief order to Captain Thomas is not located.
+- **E55, E56, E58, E60, E61, E63, E64: N1** (independent re-decipherments of printed texts). Not counted. E58's N1 rests on a snippet identification
+  (PUSG vol. 10): a second audit should read the page.
+- Depth sentences (D2+ each, checked against the derived block): E57 "Meigs tells Captain Thomas, quartermaster, that if on examination the
+  Relief proves a good staunch steamer she is to call at Annapolis for a load of colored troops, and if she is not needed there, to go on to Hilton
+  Head and report for duty." E59 "Washington tells Sherman at Nashville that the Cavalry Bureau reports the 11th Michigan Cavalry is of no use at
+  Lexington, that its efficiency is being impaired there, and that it ought to be sent to the field." E62 "Meigs tells Biggs at Fort Monroe to order
+  the Spaulding on to Hilton Head to report to the quartermaster there, to send the Montauk and the other two propellers to Annapolis to carry troops
+  to Hilton Head with plenty of coal, and to report his coal on hand, the coal expected within a fortnight, and every steamer arrival daily."
+
+### 5. Postmortem
+- Over-claims and errors corrected in LS-R5's section (a correction note is appended there): E60's addressee (John Hay at the Astor House, not Grant;
+  the decoder's [Maj Genl U.S. Grant] for "John" is wrong here, so E60 is H 7, not 8); E56 "eggs peck dead" = expected, not expedient; E55's
+  [Hurlbut] comes from a later pencil gloss, not the message. Five of LS-R5's "not located / not searched" entries are printed (E55, E60, E61, E63,
+  E64) and a sixth (E56) sat in a volume LS-R5 had already cached; E58 is in PUSG 10. The filter's `or_cov` passed all seven; the fault is the
+  ranking (LS-PRE's calibration: recall 0.90 at 60+ words, and these are short or famous), and a Sonnet reader's paraphrased phrases (LS-R5's own
+  note) -- a verbatim phrase from the decoded line found five of them in one call each.
+- Not changed in ciphertext.txt / reading.md (no decoding in a verifier's brief): the E60 header "to Grant (code word John)" and the decoder's
+  reading of "John" there. Next: a reader adds a `plain: John` line to E60 and a header fix, ~$0.2.
+- Rows: status.json one result row per N3 entry (E57, E59, E62), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E57, -E59,
+  -E62 with prompts in second-opinions/; JSTOR-QUEUE.tsv six rows. Requests: in the ROOM done line.

@@ -1197,6 +1197,14 @@ Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p160
 9003 `100,600,2300,900` 60,168,272,368,464,560,652,740,828; 8959 `100,1920,2300,520` 52,148,240,332,428 and `100,2330,2300,300` 110 (last line); 8921 `100,1260,2300,1080` 80,172,260,360,460,560,660,760,860,940;
 9036 `100,1100,2300,1000` 40,112,212,312,412,512,612,712,812,912; 9038 `100,270,2300,2060` 30,142,235,328,422,515,608,701,794,888,981,1074,1167,1260,1354,1447,1540,1633,1726,1820,1913.
 
+Verifier corrections (LS-V5, 8 Oct 2026, AUDIT.md "## AUDIT (LS-V5)"): seven of the ten are in print and class N1 -- E55 OR I/39 pt 2 p.304,
+E56 OR I/43 pt 2 p.682 (in the cached `432unit`), E58 Papers of U. S. Grant vol. 10 (note; snippet identification), E60 Basler vol. 7 and OR III/4,
+E61 OR I/36 pt 2 p.587, E63 OR I/43 pt 1 p.709, E64 OR I/43 pt 1 p.719 (`warofrebellion431unit_0` is I/43 pt 1). Corrections to the table above:
+E60 is Lincoln to **John Hay at the Astor House, New York**, not to Grant ("John" is Hay's name in clear; H 7, not 8); E56 "eggs peck dead" is
+*expected*, not "expedient", and "nick" is *report* (also in E64); E55's [Hurlbut] in the derived block comes from the later pencil gloss "leopard",
+not the message; E64 "Dismiss" = Averell and "Sapan" = "him from the" by the print. E57, E59, E62 not located after a full search: N3. The three
+LS-R5 gaps below are closed by that audit (print located or searched; M tokens re-read from the image, unchanged).
+
 ## Remaining gaps (LS-R5, 8 Oct 2026)
 Read so far: 108 of 893 mssEC 19 segments read after LS-R5's ten (E55-E64: H 136, C 1, I 4, M 4; `decode.py --check` exit 0); the rest of the 300 or so priority-1 rows unread by this job.
 - Print location of E55, E63, E64 (5-26 Aug 1864) - blocker: not-attempted; the OR volume for 4-31 Aug 1864 is not in the cached set (`431unit` proved to be Jan 1865, `372unit` ends 3 Aug, `432unit` starts 1 Sept); next: fetch that volume's djvu once and search the verbatim ledger phrases, ~$0.5
