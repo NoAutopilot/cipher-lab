@@ -7027,9 +7027,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS4-R2b)'"
+        "AUDIT.md '## AUDIT (FV-LS4-R2b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LS4C)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS4-R2b verifier (account 4)",
       "depth_date": "8 Oct 2026",
@@ -7043,8 +7044,8 @@
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R2b)' section 4",
       "reading_version": "LS4-R2b 8 Oct 2026 (reading-no2.md), grades as corrected in AUDIT (FV-LS4-R2b) section 1",
       "title": "Eckert 1864: Quartermaster-General to Ingalls, City Point, 9 Aug 1864, steamers engaged and ordered to City Point (N2-CE)",
-      "line": "Read at grade H with the period War Department Cipher No. 2; much of the frame is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (ser. I vols. 42 pt 2, 43 pt 2), Internet Archive full text, Google Books or the Huntington's own full-text search (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame partly clear in the public transcription of 9039; Meigs letterbooks (NARA RG 92), Grant Papers vol. 11 pages, the press of 9-10 Aug 1864 unread",
+      "line": "Read at grade H with the period War Department Cipher No. 2; much of the frame is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (ser. I vols. 42 pt 2, 43 pts 1-2), the Grant Papers (vol. 11), Internet Archive full text, Google Books or the Huntington's own full-text search (searched 8 Oct 2026).",
+      "gap": "N3 (weak): much of the frame clear in the public transcription; Meigs's letterbooks and Ingalls's papers (NARA RG 92) unread",
       "depth": "D3",
       "depth_pct": 94.9,
       "depth_unread": {
@@ -7068,9 +7069,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS4-R2b)'"
+        "AUDIT.md '## AUDIT (FV-LS4-R2b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LS4C)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS4-R2b verifier (account 4)",
       "depth_date": "8 Oct 2026",
@@ -7084,8 +7086,8 @@
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R2b)' section 4",
       "reading_version": "LS4-R2b 8 Oct 2026 (reading-no2.md), grades as corrected in AUDIT (FV-LS4-R2b) section 1",
       "title": "Eckert 1864: T. T. Eckert to City Point, 18 Dec 1864 11.15 PM, tell Rawlins that Grant left Washington by boat at 3 PM (N2-CK)",
-      "line": "Read at grade H with the period War Department Cipher No. 2; no prior decipherment of its code words or printed text was located in the Official Records (ser. I vols. 42 pt 3, 44), Internet Archive full text or Google Books, which reaches the Grant Papers vol. 13 (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame and 'Raw lines' clear in the public transcription of 9142; Grant Papers vol. 13 pages for 17-20 Dec 1864 (snippets only), the press, NARA RG 107 unread",
+      "line": "Read at grade H with the period War Department Cipher No. 2; Grant's departure from Washington by boat on 18 Dec 1864 was reported in the Washington Evening Star the next day (which gives 1 o'clock); no prior decipherment or printed text of the telegram was located in the Official Records (ser. I vols. 42 pt 3, 44), the Grant Papers (vol. 13, snippet search), Internet Archive full text or Google Books (searched 8 Oct 2026).",
+      "gap": "N3 (weak): frame and 'Raw lines' clear in the public transcription of 9142; the fact it carries was in the press next day (Evening Star 19 Dec 1864 p.2); Grant Papers vol. 13 note pages and NARA RG 107 unread",
       "depth": "D3",
       "depth_pct": 100.0,
       "depth_unread": {
@@ -7102,16 +7104,17 @@
         "Huntington mssEC 19 p.248, pointer 9142, N2-CK"
       ],
       "depth_sentence": "At 11.15 PM on 18 Dec 1864 Eckert in Washington has the City Point operator tell General Rawlins that Grant left Washington by boat for City Point at 3 PM that day.",
-      "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, FV-LS4-R2b); image read by the reader, volunteer text agrees; code clause: Brimstone = City Point in N2-CK and N2-CE; external: Meade to Rawlins 19 Dec 1864 11.25 a.m. (OR I/42 pt 3 p.1038) expects Grant at City Point that day; matched control LS4-R2b (time word closest under No. 2; 0 of 3 shuffle clauses)",
+      "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, FV-LS4-R2b); image read by the reader, volunteer text agrees; code clause: Brimstone = City Point in N2-CK and N2-CE; external: Meade to Rawlins 19 Dec 1864 11.25 a.m. (OR I/42 pt 3 p.1038) expects Grant at City Point that day; matched control LS4-R2b (time word closest under No. 2; 0 of 3 shuffle clauses); image word for word and Evening Star 19 Dec 1864 p.2 (Grant left Washington by dispatch boat on the 18th) (AUD2-LS4C)",
       "depth_note": "10 H of 10 code words"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS4-R2b)'"
+        "AUDIT.md '## AUDIT (FV-LS4-R2b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LS4C)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS4-R2b verifier (account 4)",
       "depth_date": "8 Oct 2026",
@@ -7125,7 +7128,7 @@
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R2b)' section 4",
       "reading_version": "LS4-R2b 8 Oct 2026 (reading-no2.md), grades as corrected in AUDIT (FV-LS4-R2b) section 1",
       "title": "Eckert 1864: to Col. Bradley, chief quartermaster, City Point, 18 Dec 1864, boats in the James for Sherman's transports (N2-CJ)",
-      "line": "Read at grade H with the period War Department Cipher No. 2; the frame is in clear in the Huntington's public transcription (Sherman and the James are code), and no prior printed text was located in the Official Records (ser. I vols. 42 pt 3, 44), Internet Archive full text or Google Books (searched 8 Oct 2026).",
+      "line": "Read at grade H with the period War Department Cipher No. 2; Grant's printed telegram to Meigs of 19 Dec 1864 (OR ser. I vol. 44 p.755) records that he had 'directed General Ingalls to go on'; the frame is in clear in the Huntington's public transcription (Sherman and the James are code), and no prior printed text of this telegram was located in the Official Records (ser. I vols. 42 pt 3, 44), the Grant Papers (vol. 13, snippet search), Internet Archive full text or Google Books (searched 8 Oct 2026).",
       "gap": "N3 (weak): frame clear in the public transcription of 9142, two content code words; sender ('Rue Two In galls') M; Grant Papers vol. 13 pages, QMG records unread",
       "depth": "D2",
       "depth_pct": 87.5,
@@ -7143,7 +7146,7 @@
         "Huntington mssEC 19 p.248, pointer 9142, N2-CJ"
       ],
       "depth_sentence": "On 18 Dec 1864 Col. Bradley, chief quartermaster at City Point, is told to send off without delay those of the named boats that are in the James, under the orders first given for Sherman's transports.",
-      "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, FV-LS4-R2b); code clause: Abbot/Abbott = James in N2-CJ and N2-CE; no external check; matched control LS4-R2b (0 of 3 shuffle clauses)",
+      "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, FV-LS4-R2b); code clause: Abbot/Abbott = James in N2-CJ and N2-CE; no external check; matched control LS4-R2b (0 of 3 shuffle clauses); external check found by AUD2-LS4C: Grant to Meigs 19 Dec 1864 (OR I/44 p.755), 'directed General Ingalls to go on' -- D2 kept, candidate for a D3 ruling by the depth lane",
       "depth_note": "7 H of 8 code words"
     },
     {

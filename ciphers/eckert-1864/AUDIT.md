@@ -4483,6 +4483,88 @@ running heads.
 - Rows written in this session: status.json results for N2-CE, N2-CK, N2-CJ (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
   SO-ECKERT-N2CE, SO-ECKERT-N2CK, SO-ECKERT-N2CJ (prompts in second-opinions/). `tools/depth_check.py`: exit 0.
 
+## AUDIT 2 (AUD2-LS4C)
+
+Verifier AUD2-LS4C (account 3, LANE-VERIFY-2, session_01DkRJaQvUnNVnFj9purna5b), 8 Oct 2026, 19:58-20:3x UTC by `date -u`. A separate
+session from the reader (LS4-R2b, account 1) and the first auditor (FV-LS4-R2b, account 4); not protecting their conclusions. Scope:
+**N2-CE, N2-CK, N2-CJ** (ciphertext-no2.txt, Cipher No. 2, key-no2.md). Nothing decoded: `decode_no2.py --check` and `decode.py --check`
+exit 0 (rule 7). Key source for all three: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md (kept or lowered, never
+raised). Subagents 0.
+
+### 0. Duplicate diff
+Pointer, date and addressee of the three against every filed ID (ciphertext.txt, ciphertext-no2.txt, ciphertext-no9.txt, status.json), and a
+phrase grep ("drivers are needed", "relieve ours", "transports for fortune", "orders given at first", "brimstone by boat", "Raw lines", "Rue
+Two"): one block each; "Raw lines" elsewhere is E87 (mssEC 18, June 1865, a different telegram). The same-leaf siblings are other entries:
+9039/0 = E68 (7 Aug, to Bruch); 9040/1 = McCaine 9 Aug 12 PM; 9142/1 = Meigs to Grant 19 Dec 12 noon (unfiled; printed, below).
+**No duplicate.** Status.json rows 198-200 are the only rows for these entries.
+
+### Prior-work checks 3-5 (search-family log; families the first audit left unread run first)
+`tools/prior_work.py eckert-1864 --item-spec '<date;sender;recipient;ptr;place>' --step-type second-audit --fetch`, one run per entry
+(origin/main b0c40c805): verdict LEAD / exit 4 for each; every LEAD resolved here:
+- 1-own: two stale live claims (LS4-R2b 15:58, V1-KNOWN 16:02; both 4.0 h, no done line): the reader's own claim and a target-level claim
+  that names no unit of these three; neither covers this audit.
+- 5-civil-war KNOWN-PART: clear words of the frame public in the Huntington transcription (already recorded by FV-LS4-R2b; "weak").
+- 5-civil-war same-page sibling: N2-CE -> E68 (9039/0, different telegram, already audited); N2-CJ/N2-CK -> 9142/1 `warofrebellion44unit`
+  hit: read, it is Meigs to Grant, 19 Dec 1864 12 m., printed OR I/44 p.755 (below), not either entry.
+- 3-holder LEAD (NOTES.md:1814): the reader's own print-check line, not a holder decipherment.
+- 4-editions LEAD for N2-CE (`warofrebellion361unit`, 10 Aug 1864 provost-marshal item): OR I/36 is May-June 1864; a date-window false hit.
+- UNCHECKED-NET: the aaymeloglu repository (no local clone; not searched) -- unchecked.
+G3 (`--reading <decoded body> --network`, after the reading): run per entry with `--cache` in scratch and `--max-requests 10` (N2-CK 20:16, N2-CJ 20:19, N2-CE 20:34-20:48 UTC). N2-CK: 5 decoded phrases, no hit in 33 cached volumes (OR ser. I 32-41 pt 1, 43 pt 2, 45 pt 2; ORN I/9-10; Butler Correspondence vol. 4); N2-CJ: 6 phrases, no hit in the same set; N2-CE: 37 volumes clear and 18 LEAD rows, every one a generic fragment ('the Cavalry which has been', 'as possible A large number') with 'within +-3 days: False' -- read and set aside, none is this telegram. The tool's ia-global and Google Books routes were not reached for any entry (its request budget went on volume downloads: UNCHECKED-NET); they were run by hand below (be-api, Google Books API). OR I/42 pts 2-3, 43 pt 1 and 44 were not in the tool's cache when it ran for N2-CK/N2-CJ; the hand grep below covers them.
+
+| # | family / route | query (as run) | result |
+|---|---|---|---|
+| 3 | Huntington public transcription of each pointer and the same-leaf siblings (sources/mssEC19 p9039, p9040, p9142, read in full) | -- | frame clear as FV-LS4-R2b recorded; no clear copy of any of the three code bodies on the leaf. |
+| 3 | Other ledgers on disk (sources/mssEC18 400 leaves, sources/fortmonroe, ms18) | grep of the same seven phrases | no copy of any of the three ("Raw lines" in Fort Monroe p5870/p5875 and mssEC 18 p10031 are Jan and June 1865 Rawlins telegrams) |
+| 4 | **OR I/43 pt 1** (`warofrebellion431unit` `_djvu.txt`, 1 request; the Aug 1864 Shenandoah correspondence, where the 6th Corps and the cavalry were -- FV-LS4-R2b grepped 43 pt 2, which starts in October) and OR I/42 pt 2 (`422unit`, re-fetched) | all items dated 8-9 Aug 1864 naming Ingalls, Meigs or the Quartermaster-General; "drivers", "wagons/trains of the Sixth Corps", "Sixth Corps wagons", "steamers ... Fort Monroe", "wait events", "relieve ours", "present report of officers", "steamers has/have been engaged", "large number of steamers", "blockade the river", "kept away from you" (whitespace/hyphen-normalised regex) | **N2-CE not printed.** Only the already-known 6 Aug Meigs to Ingalls (42 pt 2 p.66, "300 wagons, teams, and drivers"). |
+| 4 | OR I/42 pt 3 (`423unit`) and I/44 (`44unit`), re-fetched | every item dated 17-19 Dec 1864 naming Ingalls, Bradley, Emerick, Eckert or Rawlins; "orders given at first", "transports for (General) Sherman", "sent off as directed", "left here at 3", "City Point by boat", "inform General Rawlins" | **N2-CJ, N2-CK not printed.** Context found (I/44 p.755): **Meigs to Grant, Washington, 19 Dec 1864 12 m.** (= the unfiled sibling 9142/1 on the same leaf): Hilton Head called for six light steamers for Sherman on the Ogeechee; "I am told that yesterday verbal orders, by your authority, were given forbidding the detachment of the steamers. What shall be done?"; **Grant to Meigs, City Point, 19 Dec 3.30 p.m.**: "My order against sending vessels to Savannah was given with the understanding that vessels were being sent to move Sherman's army. I soon learned the facts, and directed General Ingalls to go on." Also printed in the Grant Papers vol. 13 (Google Books snippet: "ALS (telegram sent), CSmH; telegram received ... DNA, RG 92 ... O.R., I, xliv, 755"). |
+| 4 | Grant Papers vol. 11 (June-Aug 1864; IA `papersofulyssess0011gran`, be-api full text) | positive control "put in command of all the troops in the field" (1 hit); "drivers are needed", "relieve ours", "wait events", "steamers has been engaged", "present report of officers", Ingalls wagons "Sixth Corps" cavalry drivers | control 1, all N2-CE queries 0 |
+| 4 | Grant Papers vol. 13 (Nov 1864-Feb 1865; not on IA; Google Books API, key, `country=US`; the volume answers, ids `mnRjmhe3QLoC`, `ij8fAQAAMAAJ`) | "directed Gen. Ingalls to go on" (2 hits, both this volume: the Grant to Meigs note); "My order against sending vessels to Savannah" (6, incl. vol. 13); "transports for Sherman will be carried out"; "boats named as are in the James"; "sent off as directed without delay"; "without delay to their destination" Ingalls; "in relation to the transports for" (2 hits: vol. 11/12, Grant to Butler, an earlier unrelated telegram); "will be carried out" Ingalls Bradley Sherman; "left here at 3 P.M. to-day for City Point"; "for City Point by boat"; Eckert Rawlins "by boat"; "Rawlins" "left here at" Grant "by boat"; "Eckert" "Emerick"; Ingalls Bradley Grant transports (one hit in vol. 13: a footnote on Bradley's appointment beside an Ingalls telegram of 5 Dec, not this one); "Grant left here" and "USG left Washington" (HTTP 503, not retried) | **no snippet of N2-CJ or N2-CK in vol. 13**; snippet search only, the note pages themselves unread |
+| 4 | Google Books other (N2-CE) | "relieve ours" drivers Meigs; "wagons of the 6th Corps" (1: Banners and Bugles 1972, a Monocacy-campaign narrative, not this telegram); "steamers has been engaged" (trade reports only); "wait events" Ingalls 1864 (503) | none |
+| 5d | **Press of the day** (loc.gov Chronicling America JSON, 4 searches, then page OCR through tile.loc.gov) | "General Grant left City Point" 18-22 Dec 1864 (179 pages) and 9-13 Aug 1864 (70); "steamers engaged City Point wagons Sixth Corps" 18-22 Dec (9) and 9-13 Aug (4); words ANDed. One page read: Evening Star (Washington), 19 Dec 1864, p.2 | **N2-CK's substance was public the next day:** "GENERAL GRANT. Lieutenant General Grant, who accompanied his wife a part of the way on return trip home from City Point, left here yesterday afternoon at 1 o'clock, in the dispatch boat M. Martin, to rejoin the Army of the Potomac." (the press hour, 1 o'clock, differs from the telegram's 3 PM; the telegram's own wording and its addressee are not in the paper). The other pages of the four result lists were not read (keyword noise). |
+| -- | Unread | Meigs's letters-sent books and Ingalls's correspondence (NARA RG 92, catalogue unreachable without a key), the Rufus Ingalls papers, the Grant Papers vol. 13 note pages themselves, ORN, HathiTrust, JSTOR, the aaymeloglu repository | unread |
+
+### Image
+Leaf 9142 at 2400 px (hdl.huntington.org IIIF, 1 request, scratch, not committed), crops of the N2-CK block and the N2-CJ signature line by
+local PIL crop. **N2-CK** agrees word for word with ciphertext-no2.txt (header "11 15 pm Emerick City Point", "you can inform spark Raw lines
+magic Stephen here at Jennie wherry for brimstone by boat T T Eckert"); the first audit had not cut it. **N2-CJ** body agrees; the signature
+reads **"Rue Fus In galls Palermo Imogene"** -- "Fus", not "Two" as ciphertext-no2.txt and the Huntington text have it -- i.e. "Rufus
+Ingalls" in syllables, the name the reader inferred. A transcription correction for a fix worker (the token stays M; no count changes).
+N2-CE was cut word for word by FV-LS4-R2b and is not repeated.
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth | check |
+|---|---|---|---|---|
+| **N2-CE** QMG to Ingalls, 9 Aug 1864 | **N3 (weak)** -- kept | unknown | **D3** -- kept (94.9) | first audit's clauses and external check stand; OR I/43 pt 1 and Grant Papers vol. 11 now also negative |
+| **N2-CK** Eckert to Emerick for Rawlins, 18 Dec 1864 11.15 PM | **N3 (weak)** -- kept; weaker: the fact it carries was in the Washington press next day | unknown (substance public) | **D3** -- kept (100) | image now word for word (this audit); external: Evening Star 19 Dec 1864 p.2 and Meade to Rawlins 19 Dec (OR I/42 pt 3 p.1038) both confirm Grant's departure from Washington by boat on the 18th |
+| **N2-CJ** Rufus Ingalls to Col. Bradley, City Point, 18 Dec 1864 | **N3 (weak)** -- kept | unknown | **D2** -- kept (87.5) | code clause Abbot = James stands; **new external check**: Grant to Meigs 19 Dec 1864 (OR I/44 p.755; Grant Papers vol. 13), "directed General Ingalls to go on", and Meigs's 19 Dec noon telegram on the same leaf, agree with the reading. Not raised: a D3 ruling needs the depth lane's AD measurement with the external check; named here as a candidate. |
+
+- **N2-CE: N3 (weak), kept.** Safe sentence (first audit's, extended): "Read at grade H with the period War Department Cipher No. 2: on 9 Aug
+  1864 the Quartermaster General tells Brig. Gen. Ingalls at City Point that the wagons of the Sixth Corps and of the cavalry sent to
+  Washington should follow the troops and that a large number of steamers has been engaged and ordered to City Point; much of the frame is
+  in clear in the Huntington's public transcription; no prior decipherment of its code words or printed text located in the Official
+  Records (ser. I vols. 42 pt 2, 43 pts 1-2), the Grant Papers (vol. 11), Internet Archive full text, Google Books or the Huntington's
+  own full-text search (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never printed". Not N4: Meigs's letterbooks and Ingalls's
+  papers unread.
+- **N2-CK: N3 (weak), kept.** Safe sentence: "Read at grade H with Cipher No. 2: late on 18 Dec 1864 T. T. Eckert in Washington tells the City
+  Point operator to inform General Rawlins that Grant left Washington at 3 PM that day for City Point by boat; Grant's departure was reported
+  in the Washington Evening Star the next day (which gives 1 o'clock); no prior decipherment or printed text of the telegram located in OR
+  ser. I vols. 42 pt 3 and 44, the Grant Papers (vol. 13, snippet search), Internet Archive full text or Google Books (searched 8 Oct
+  2026)." Unsafe: any wording that the telegram reveals something not known at the time; "first".
+- **N2-CJ: N3 (weak), kept.** Safe sentence: "Read at grade H with Cipher No. 2: on 18 Dec 1864 Rufus Ingalls tells Col. Bradley, chief
+  quartermaster at City Point, that the orders first given about the transports for Sherman will be carried out and that the named boats now
+  in the James are to be sent off without delay; Grant's printed telegram to Meigs of 19 Dec 1864 (OR ser. I vol. 44 p.755) records that he
+  had 'directed General Ingalls to go on'; the frame is in clear in the Huntington's public transcription; no prior printed text of this
+  telegram located (searched 8 Oct 2026)." Unsafe: "first", "unpublished".
+- Audit status: two audits for all three. SO-ECKERT-N2CE/N2CK/N2CJ: no class moved, prompts not rewritten.
+
+### Postmortem
+- No over-claim in the first audit's classes. Two gaps closed: FV-LS4-R2b grepped OR I/43 pt 2 for an 8-9 Aug 1864 item, but that part
+  starts in October -- the Aug 1864 Valley correspondence is in 43 pt 1 (negative here); and its "N2-CK image not cut" is now cut.
+- Corrections for a fix worker (~$0.1): N2-CJ signature "Rue Two" -> "Rue Fus" (image; ciphertext-no2.txt l.1185 and NOTES.md LS4-R2b
+  table and M list); the unfiled 9142/1 sibling (Meigs to Grant, 19 Dec 1864 noon) is printed OR I/44 p.755 (N1 if ever filed).
+- Requests: archive.org 5 (4 `_djvu.txt`, 1 advancedsearch), be-api.us.archive.org 7, googleapis.com books 26 (3 HTTP 503, not retried),
+  www.loc.gov 6, tile.loc.gov 1, hdl.huntington.org 1; plus tools/prior_work.py's own `--network` calls (cap 25 per entry, its log).
+
 ## AUDIT (FV-LS5-A)
 
 Verifier FV-LS5-A (account 1, for LANE LEDGER), 8 Oct 2026, 18:13-18:4x UTC by `date -u`; a separate session from the readers LS5-R1c and
