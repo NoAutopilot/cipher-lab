@@ -861,5 +861,17 @@ Following rumors are given for [Information] [Grant U S] & [Has been sent] to [M
 
 Code-word tokens: H 21, I 1.
 
-Totals over the 73 entries: H 1819, C 70, I 60, M 2.
+**N2-BV | Page 173 | 9065 | 7 Sept 1864, Beckwith (cipher time word 10.30 AM), to Grant (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees)**
+
+{time: 10.30 AM} [7] for [Lieut Gen U.S. Grant] [.] I've received your [telegram] and will attend tooth line this side of [Point] [Lookout] stop Act comack is beyond my control  {tail: [signed] Gimlet I owe you one}
+
+Code-word tokens: H 7, C 1.
+
+**N2-BW | Page 175 | 9067 | 7 Sept 1864 9.30 PM, Harpers Ferry, J. D. Stevenson to the Secretary of War (LS4-R2a, 8 Oct 2026; image-read, volunteer text "raven" where the image reads "ravens"; found word for word in OR I/43 pt 2)**
+
+[Harpers Ferry] {time: 9.30 PM} [7] for [Secretary of War] [.] All [Report]'s from [Front] confirm the retiring of [Enemy] stop A [Heavy] [Cavalry] [Reconnoissance] is being made in direction of [Winchester] [.] [Prisoners]'s and [Deserter]'s [Report] the [Enemy]'s shading to Fishers [Hill] Nothing from [Sheridan P H] on the subject  {tail: [signed] J. D. Stevenson [Brig. General]}
+
+Code-word tokens: H 20, I 1.
+
+Totals over the 75 entries: H 1846, C 71, I 61, M 2.
 <!-- decode.py: derived block ends -->
