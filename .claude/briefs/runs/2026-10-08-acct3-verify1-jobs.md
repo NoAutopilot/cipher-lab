@@ -77,3 +77,17 @@ where a class moves. Skip (and say so) any item whose reading or audit ran on ac
 
 ## V1-G3A (account 3), cap $9, box 80 min: E5, N2-M, N2-T (the N4s: outward wording rests on them), N2-R, N2-AI, N2-AJ
 ## V1-G3B (account 3), cap $5, box 55 min: N2-BM, E78, O9-BB
+
+## Fourth wave (16:5x UTC): G3 checks (Third wave paragraph applies, minus the eckert-specific routes) on non-eckert two-audit items:
+the N4s first (outward wording rests on them; their audits predate the 8 Oct G3 rule), then N3 at D2+. Per item use the folder's
+reading file and the family adapter in prior-work-step.md (Dutch: WVO print codes + Huygens retroboeken; French embassies: Négociations/
+Correspondance + Tomokiyo; German: Acta Borussica etc.; Spanish/Flemish: Gachard, CSP Spain). Section "## G3 check (<JOB>)" in each
+AUDIT.md. Skip any item whose reading or an audit ran on account 3 (say so). Units about $1.3 per item + 1 reconciliation.
+
+## V1-G3C (account 3), cap $7, box 75 min: august-van-saksen-1561-64 WVO 126 postscript, WVO 53 postscript, WVO 57 enclosure (N4);
+lodewijk-van-nassau-1573-74 WVO 4610/4611/4616 and WVO 5797 p5/p7 (N4)
+## V1-G3D (account 3), cap $7, box 75 min: fr20140-danzay-1557 f.35r-36r (N4); fr2980-gramont f.29r no.21 and f.30r-v no.22 (N4);
+fr3416-nevers-fils-1589 f.35r (N4); sachsstaatsarchiv-manteuffel-1712 694/08 f.410 lower block (N4)
+## V1-G3E (account 3), cap $7, box 75 min: huntington-blathwayt-madrid-1728 BLA 186 (N4); antt-linhares-chave m0002 (N3 D2);
+jan-van-nassau-1572-75 WVO 5551 (N3 D2); decode-2678-bnf-colbert127-gravel-1665 (N3 D2); vanbeuningen-dewitt-1657 item 2 (N3, no depth:
+rule its depth under the bar as part of this check)
