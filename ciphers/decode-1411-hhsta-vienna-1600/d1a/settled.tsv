@@ -1,0 +1,15 @@
+# exemplar control 30/31 = 0.968 (gate 0.80): PASS
+op	p2_line	p2_pos	p2_tx	p2_tile	p2_read	p2_conf	p2_alt	p5_line	p5_pos	p5_tx	p5_tile	p5_read	p5_conf	p5_alt	class	settled
+D01	p2Lb_L01	9	53	T17	53	unsure	83	p5L_L12_a	1	93	T54	93	unsure	53	U	
+D02	p2Lb_L02	3	19	T37	19	sure	-	p5L_L14_a	2	29	T52	69	unsure	29	U	
+D03	p2Lb_L02	7	7	T47	7	unsure	2	p5L_L14_b	1	4	T03	7	unsure	2	U	
+D04a	p2Lb_L04	2	6	T56	68	unsure	60	p5L_L15_b	2	60	T44	60	unsure	68	U	
+D04b	p2Lb_L04	4	12	T13	12	sure	-	p5L_L16_a	1	22	T33	22	sure	-	S3	
+D05	p2Lb_L04	10	57	T45	57	sure	-	p5L_L16_b	1	54	T51	57	unsure	59	S1	57
+D06	p2Lb_L05	4	81	T04	87	sure	-	p5L_L18_b	2	61	T20	81	unsure	84	U	
+D07	p2Lb_L05	6	71	T06	71	unsure	21	p5L_L18_b	4	21	T42	21	unsure	71	U	
+D08	p2Lb_L06	2	19	T49	19	unsure	17	p5L_L19_a	1	17	T31	17	sure	-	S2	17
+D09	p2Lb_L08	4	46	T12	40	unsure	48	p5L_L23_a	3	96	T30	46	unsure	96	U	
+D10	p2Lb_L09	3	81	T21	51	unsure	91	p5L_L23_b	5	51	T26	51	unsure	52	U	
+D11	p2Lb_L11	3	95	T25	95	sure	-	p5L_L26_a	3	45	T38	48	unsure	45	U	
+D12	p2R_L02	4	5	T35	5	unsure	2	p5L_L30_b	7	51	T50	51	unsure	81	U	

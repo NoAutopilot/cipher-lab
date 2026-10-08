@@ -1,0 +1,25 @@
+{
+ "n_settled_ops": 2,
+ "as_transcribed": {
+  "N": 290,
+  "T21r": {
+   "cover": 0.6345,
+   "shuffled_p99": 0.5103
+  },
+  "T21r_h12": {
+   "cover": 0.6276,
+   "shuffled_p99": 0.4897
+  }
+ },
+ "settled": {
+  "N": 290,
+  "T21r": {
+   "cover": 0.6414,
+   "shuffled_p99": 0.5172
+  },
+  "T21r_h12": {
+   "cover": 0.6345,
+   "shuffled_p99": 0.5
+  }
+ }
+}

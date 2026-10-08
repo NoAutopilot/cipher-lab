@@ -771,10 +771,50 @@ result of the step (two transcriptions of one text, 82/95 equal, a reader-error 
 worker's registered output (grades.py --check exits 0) and is superseded by this section; status open.
 Requests: none (no network). Cost: verifier session only.
 
+## D1A-D1411: p.2/p.5 copy differences, per-number image comparison (8 Oct 2026, account 1)
+
+Brief D1A-D1411 (LANE DEFAULT-account-1-20261008-0540). Pre-registered in d1a/PREREG-D1A-D1411.md (commit 09035fe74, 05:49 UTC;
+addendum before the read, 7de9fadb0). Material: the committed line crops (images/def1411_crops, images/d1411p5_crops); no network.
+Tiles placed by band-limited ink segmentation (d1a/bandseg.py, d1a/tiles_spec.tsv; d1a/tiles.py checks every tile's (line, pos,
+value) against both numbers.tsv and the posthoc alignment: disputed = replace ops, exemplars = equal-block numbers graded ok).
+57 tiles (26 disputed, 31 exemplars) shuffled into three montages with neutral ids (d1a/montage/, key d1a/tile_key.tsv); one blind
+Opus shape read (d1a/blind_read.tsv, no key, no context, no pairing told); settlement by script (`d1a/settle.py --check`).
+
+**Control: exemplar accuracy 30/31 = 0.968 (gate 0.80) -- PASS** (the one miss: p2Lb_L11 18 read 28, sure).
+
+| op | p.2 tx -> read | p.5 tx -> read | class | settled |
+|---|---|---|---|---|
+| D01 | 53 -> 53 (unsure, alt 83) | 93 -> 93 (unsure, alt 53) | U | |
+| D02 | 19 -> 19 (sure) | 29 -> 69 (unsure, alt 29) | U (p.5 read matches neither) | |
+| D03 | 7 -> 7 (unsure, alt 2) | 4 -> 7 (unsure, alt 2) | U (both read 7, neither sure) | |
+| D04a | 6 [+ mark] -> 68 (unsure, alt 60) | 60 -> 60 (unsure, alt 68) | U | |
+| D04b | 12 -> 12 (sure) | 22 -> 22 (sure) | S3 genuine variant | |
+| D05 | 57 -> 57 (sure) | 54 -> 57 (unsure, alt 59) | S1 | 57 |
+| D06 | 81 -> 87 (sure) | 61 -> 81 (unsure, alt 84) | U | |
+| D07 | 71 -> 71 (unsure, alt 21) | 21 -> 21 (unsure, alt 71) | U | |
+| D08 | 19 -> 19 (unsure, alt 17) | 17 -> 17 (sure) | S2 | 17 |
+| D09 | 46 -> 40 (unsure, alt 48) | 96 -> 46 (unsure, alt 96) | U | |
+| D10 | 81 -> 51 (unsure, alt 91) | 51 -> 51 (unsure, alt 52) | U (both read 51, neither sure) | |
+| D11 | 95 -> 95 (sure) | 45 -> 48 (unsure, alt 45) | U (p.5 read matches neither) | |
+| D12 | 5 -> 5 (unsure, alt 2) | 51 -> 51 (unsure, alt 81) | U | |
+
+Result: of 13 differences, 2 settled as transcription errors (p.5 "54" is 57 as on p.2; p.2 "19" at p2Lb_L06 is 17 as on p.5), 1
+is a genuine copy variant (12 / 22, both read sure), 10 unsettled. Descriptive leanings, not settlements: D03 both tiles read 7
+(p.5 transcribed 4); D10 both read 51 (p.2 transcribed 81); D04a both copies carry the same two-sign shape (6 + a mark that p.2's
+transcription took as the sign token and p.5's as 0) -- a token-convention difference, not a numeral one. Worker reconciliation (the
+same tiles on the placement sheet) moved nothing. The reader agrees with its exemplars but marks most look-alike tiles unsure: the
+instrument passes its control and still cannot decide most of this hand's look-alikes at tile scale; a person's read is the remaining
+route (the 10 tiles join ASKS row 120). Committed numbers.tsv files are untouched (rule 7); settled values only in d1a/settled.tsv.
+
+**Re-score (descriptive only, in-sample for T21r; AM-D1411V ruling, no grades move; `d1a/rescore.py --check`):** p.2 (def1411) +
+p.5 copy span, N=290: T21r 0.635 -> 0.641 settled (shuffled p99 0.510 / 0.517); T21r_h12 0.628 -> 0.635 (p99 0.490 / 0.500). Two
+substitutions move coverage by +0.007; nothing licensed. Grades unchanged: S 0 on p.5.
+Cost: one blind Opus subagent call + worker reconciliation. Requests: none (no network). Status unchanged: open.
+
 ## Remaining gaps (AM-D1411P5, 7 Oct 2026)
 Read so far: 0 cipher numbers at S (AM-D1411V withdrew AM-D1411P5's 114 p.5 S grades: the PASS rests on a copy of the p.2 text T21r was built on; independent p.5 numerals beat controls but stay 0.025 below the gloss); p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; p.5 gloss pairs M 26; other numbers M
-- p.5 left page = second copy of p.2 (13 of 95 aligned numbers differ) - blocker: not-attempted; found after the score in this step, out of its brief; next: settle the 13 differences (and the p.2/p.5 GAPS146-block differences) by a side-by-side per-number image comparison of the two copies, then re-score p.2+p.5 on the settled text, ~$3
-- unglossed numerals p.3, p.4, p.5 right page (f.186) - blocker: not-attempted; independent pages stay 0.025-0.07 below the leaf's own gloss in coverage (p.5 independent 0.588, AM-D1411V); next: after the copy comparison, cut and read p.6 numerals (IMG_R1411_I6600_P6.png) in two blind passes with T21r primary and h12/h22 beside (h12 has no independent support on p.5), and a pre-registered exclusion of any numbers aligning to already-read pages (d1411v/rescore_v.py copy_mask) before scoring, ~$6
+- p.5 left page = second copy of p.2 (13 of 95 aligned numbers differ) - blocker: waiting-on ASKS row 120 (a person's read); D1A-D1411 (8 Oct) settled 2 of 13 (57, 17) and found 1 genuine copy variant (12/22) by a blind per-number tile read with a passed exemplar control (30/31); the other 10 stay unsettled for this machine instrument (both reads unsure or matching neither candidate) -- the 10 tiles (d1a/settled.tsv, montages d1a/montage/) can join the person's read of ASKS row 120
+- unglossed numerals p.3, p.4, p.5 right page (f.186) - blocker: not-attempted; independent pages stay 0.025-0.07 below the leaf's own gloss in coverage (p.5 independent 0.588, AM-D1411V); next: cut and read p.6 numerals (IMG_R1411_I6600_P6.png) in two blind passes with T21r primary and h12/h22 beside (h12 has no independent support on p.5), and a pre-registered exclusion of any numbers aligning to already-read pages (d1411v/rescore_v.py copy_mask) before scoring, ~$6
 - p.4 4/5 residual (25 of 83 tiles unsettled, la2/applied.tsv) - blocker: waiting-on ASKS row 120 (a person's read; the 25 tiles can be added to that read or to a sign-sorter focus list); machine re-reads retired for this question
 - gloss letter identities (z/r at 21, n/u, residue 14) - blocker: waiting-on ASKS row 120 (a person's read of the gloss); p.5 adds 26 pairs; residue 12 = h now favoured by p.5's letter test
 - pages 7-12 numerals - blocker: not-attempted; full-size images re-fetchable with one DECODE login; next: after p.6, the same two-pass step per page, ~$6 each
@@ -785,6 +825,6 @@ Read so far: 0 cipher numbers at S (AM-D1411V withdrew AM-D1411P5's 114 p.5 S gr
 - [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
 - [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a verifier accepts a PASS
 - [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r (DEF1-1411, D4-1411P3, R12A-D1411P4), residue 12 = h favoured on p.5 and T21r_h12 PASS on p.5 (AM-D1411P5) voided by AM-D1411V: in-sample copy of p.2; independent p.5 below gloss
-- [ ] image-check: settle the 13 p.2/p.5 copy differences by side-by-side per-number comparison of the two copies' images
+- [x] image-check: D1A-D1411 (8 Oct) per-number tile comparison of the 13 p.2/p.5 copy differences: 2 settled, 1 genuine variant, 10 unsettled (control 30/31); remainder to a person's read (ASKS row 120)
 - [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause; also retired for the p.4 4/5 look-alike: machine re-read by a Sonnet shape reader (line crops R12A-D1411LA, then per-number tiles D07-D1411), a person's read is the remaining route
-Verdict: keep going: 3 internal gaps; cheapest next: settle the 13 p.2/p.5 copy differences by side-by-side image comparison and re-score, ~$3; AM-D1411V withdrew the p.5 S grades (S 0); re-score p.2+p.5 on the settled copy text is descriptive only (in-sample for T21r), the gate for any S grade is a PASS on independent numerals (p.6 onward)
+Verdict: keep going: 2 internal gaps; cheapest next: cut and read p.6 numerals (IMG_R1411_I6600_P6.png) in two blind passes with a pre-registered exclusion of copy spans, ~$6 (the gate for any S grade is a PASS on independent numerals); the p.2/p.5 copy differences were compared by D1A-D1411 (2 settled, 10 to a person's read, ASKS row 120)
