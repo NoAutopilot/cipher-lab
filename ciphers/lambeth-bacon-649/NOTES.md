@@ -180,16 +180,37 @@ Next action that depends on nobody: unchanged. Test these 13 values against an i
 
 next: no agent step is left. The Baconiana Jan 1897 page-image check named above ran 5 Oct 2026 (D2-BACON, section above, 13 values in baconiana-1897-values.tsv). The values are tested only against an image of Lambeth MS 649 ff.490-495, which needs the copy order in REQUEST.md (and Pott's 1896 manuscript via the Francis Bacon Society, ASKS row 122). Who acts: owner. Blocker class: needs-image.
 
-## Remaining gaps (loose-ends pass, 8 Oct 2026)
-Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- Tosh's 2014 QMRO thesis on the Anthony Bacon letters, never read (bot-challenged) - blocker: not-attempted; noted in the body at NOTES.md:97, never carried as a step (loose-ends 8 Oct 2026); next: fetch the QMRO thesis (CORE with CORE_API_KEY, or a Wayback copy) and grep for ff.490-495 and cipher/decipher, ~$0.5
+## D2-PRINT4: Tosh 2014 thesis via CORE (8 Oct 2026, 07:43-07:45 UTC by date -u; search result only)
+- Found and read in full (machine text): Tosh, William Patrick, "Testimonies of affection and
+  dispatches of intelligence: The letters of Anthony Bacon, 1558-1601" (PhD thesis, Queen Mary University of London,
+  CORE record 38519174, year field 2013; same text under CORE ids 335951779, 390466273, 367155825, 384958651;
+  PDF https://core.ac.uk/download/77039196.pdf). The CORE v3 search API (`Authorization: Bearer`, path
+  `v3/search/works/`) returned the full text (667,678 characters) in the search response; the PDF itself was not fetched.
+- Grepped for `649`, `\b49[0-5]\b`, `cypher|cipher`, `decyph|deciph`, `code`. Not found: any citation of LPL MS 649
+  ff. 490-495, any Moresin letter, any decipherment of a cipher letter in MS 649. The thesis cites MS 649 sixteen times,
+  nearest to the target being **fol. 479r-v** (Anthony Standen to Anthony Bacon, n.d. spring 1591, holograph; notes 10,
+  11, 18, 26 of ch. 3) and fols. 462r (Trott verse, 1593), 509-511 (Trott/Crewe, 1593). Cipher mentions in the
+  thesis: Standen to Bacon, 8 Sept 1592, LPL MS 648 fol. 246r "(partly ciphered)"; Godfrey Aleyn to John Aleyn, n.d.
+  1595, LPL MS 652 fol. 323r "(contemporary deciphered copy)", a ciphered letter quoted in the body. Neither is in
+  ff. 490-495.
+- What this gives the target: nothing on ff. 490-495; Tosh read the MS 649 Standen holographs but does not discuss the
+  cipher letters. Two other cipher pieces in the Bacon papers with a period decipherment (MS 652 fol. 323r) or partial
+  cipher (MS 648 fol. 246r) are possible same-network key witnesses, not checked against this item (follow-up suggestion
+  only). Status unchanged (open).
+- Requests: api.core.ac.uk 1 (200). Earlier note in this file (Web and blog check) calls it "Tosh's 2014 QMRO thesis";
+  CORE's year field reads 2013.
 
-## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] print: fetch the QMRO thesis (CORE with CORE_API_KEY, or a Wayback copy) and grep for ff.490-495 and cipher/decipher; ~$0.5; source: loose-ends 8 Oct
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: fetch the QMRO thesis (CORE with CORE_API_KEY, or a Wayback copy) and grep for ff.490-495 and cipher/decipher, ~$0.5
+## Remaining gaps (D2-PRINT4, 8 Oct 2026)
+Read so far: unmeasured; no image of ff. 490-495 has been seen, so nothing is transcribed or read
+- an image of LPL MS 649 ff. 490-495 - blocker: needs-physical-access; no free image (Lambeth LUNA no hit, Adam Matthew subscription only), copy order in REQUEST.md
+- Pott's 1896 manuscript decipherment of the Moresin letter - blocker: waiting-on ASKS row 122; the Francis Bacon Society's reply on the Pott manuscript (outreach/francis-bacon-society-pott-1896.md)
+
+## Escalation (D2-PRINT4, 8 Oct 2026)
+- [x] siblings: Lambeth CalmView (A2P4-LAMB3): Moresin letters at MS 649 ff. 328, 485-9, 496-508 bracket the target; Tosh (D2-PRINT4) adds MS 648 f.246r and MS 652 f.323r cipher pieces elsewhere in the papers
+- [ ] clear-pages: needs the image (REQUEST.md); whether a facing or neighbouring decipherment exists cannot be checked without it
+- [x] known-keys: Pott's printed values, Baconiana Jan 1897 pp.23-29 (D2-BACON, 13 values in baconiana-1897-values.tsv)
+- [x] print: Birch 1754, Baconiana 1896-1928, Pott 1891, Tosh thesis (D2-PRINT4) searched; no print of ff. 490-495 located
+- [ ] key-rebuild: test the 13 Pott values against an image once one exists (REQUEST.md)
+- [ ] image-check: copy order, REQUEST.md (needs the person)
+- [n/a] retry: no failed attempt on this item to retry yet
+Verdict: keep going: 0 internal gaps; cheapest next: test the Pott values against an image once the copy order lands, ~$1

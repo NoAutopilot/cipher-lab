@@ -197,16 +197,40 @@ TNA Discovery /records/v1/details, fetched once each: C6822019 (SP 105/60/121), 
 - Not found: any item-level listing, so whether these files hold Stepney's 1693-94 letters is not answerable from the catalogue; by their series titles they are Levant Company (Smyrna/Aleppo) correspondence, not Vienna despatches, which weakens the earlier web-search-record premise that they would hold the received copy of f.135. The catalogue search for "Stepney" returned only unrelated records (Stepney Green, Addis, Stencl); the Paget hit was the PP MS 4 collection record.
 - Tab: sp105_soas_items.tsv. Folders 4/02/27/02-05 and 4/02/28/02-03 and the Vienna/Stepney series of PP MS 4 (if any; the collection tree at /records/PP_MS_4 was not walked) were not read. Next, if wanted: walk /records/PP_MS_4/02 sub-series titles (~$0.5) for a Vienna/Imperial-court series; otherwise owner-side desk enquiry to special.collections@soas.ac.uk for item-level description. Status unchanged (open).
 
-## Remaining gaps (loose-ends pass, 8 Oct 2026)
-Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- SOAS PP MS 4/02 sub-series titles, never walked (a possible Vienna/Imperial court series) - blocker: not-attempted; noted in the body at NOTES.md:198, never carried as a step (loose-ends 8 Oct 2026); next: walk the /records/PP_MS_4/02 sub-series titles on the SOAS catalogue and list any cipher-bearing Paget letters, ~$0.5
+## D2-PRINT4: SOAS PP MS 4/02 sub-series titles (8 Oct 2026, 07:49-07:57 UTC by date -u; catalogue only)
+- Route: archives.soas.ac.uk (Epexio), `tools/browser_fetch.js` (client-rendered; no challenge). Fetched
+  /records/PP_MS_4/02 (series "Correspondence to William Paget", 1684-1707, extent "58 sub-series"), /records/PP_MS_4
+  (collection), /records/PP_MS_4/02/64. Tab: sp105_soas_402_subseries.tsv (every title the tree shows).
+- The series tree renders **39 rows, sub-series 26-64 only** (38 "Bundle no. 38 not used"). The other 19 of the 58 are
+  not in the rendered tree; direct record URLs /02/01 and /02/13 answer "Page not found", /02/07 and /02/25 timed out
+  (60 s each, not retried). So sub-series 01-25 (if numbered so) are unread: catalogue gap, not a negative.
+- Titles that bear on the Vienna period (Paget at Vienna Sept 1690-Feb 1693, per the collection's admin history):
+  42 "16 memoirs and memorials unsigned [c. 1690-93 Vienna period]. Some in French and Latin"; 45 "Letters from Swiss
+  Cantons [Vienna Period]"; 46 "Letters of Prince Furstenburg in French 1691-92"; 39 W. D. Colt (Celle and Hannover)
+  1689-90; 40 H. Duncombe, Stockholm 1689-91; 41 Chr. and F. G. de Schmettau 1691-1707; 53 Mamucca della Torre "from
+  Vienna 1692-99"; 61 Paget/Colyer to the Imperial plenipotentiaries 1699; 64 "Letters from Imperial (Austrian)
+  Ministers to Paget", four folders (64/01 30 letters from Alessandro Mavrocordato 1693-1700; 64/02-04 Imperial
+  ministers 1697-98, 1699-1703, 1700-01); 47 "Misc letters arranged alphabetically by sender" (no dates).
+- Not found: **no title names Stepney, cipher, cypher, chiffre or key** (0 hits in all four saved pages); no sub-series
+  is Stepney's. The collection record's "Associated material" says "Correspondence (1693-1694) with George Stepney, held
+  at the Public Record Office [ref. SP105/58-60]", i.e. SOAS itself points to our target's letter-book, not to a
+  received set at SOAS. If Paget's received Stepney letters survive at SOAS, the likeliest places are 47 (alphabetical
+  misc senders) or the unrendered 01-25; neither is listed to item level.
+- What this gives the target: nothing cipher-bearing by title; it narrows where a received copy of f.135 could be.
+  Status unchanged (open).
+- Requests: archives.soas.ac.uk 7 browser fetches (3 rendered, 2 "Page not found", 2 timeouts), >= 3 s apart.
 
-## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: walk the /records/PP_MS_4/02 sub-series titles on the SOAS catalogue and list any cipher-bearing Paget letters; ~$0.5; source: loose-ends 8 Oct
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: walk the /records/PP_MS_4/02 sub-series titles on the SOAS catalogue and list any cipher-bearing Paget letters, ~$0.5
+## Remaining gaps (D2-PRINT4, 8 Oct 2026)
+Read so far: unmeasured; no image of SP 105/60 f.135 has been seen (not digitised, IMG-AUDIT)
+- an image of SP 105/60 f.135 (and f.123, the cipher-word sibling) - blocker: needs-physical-access; not digitised (Discovery `digitised` False), copy order in REQUEST.md
+- the item lists of SOAS PP MS 4/02/47 and the unrendered sub-series 01-25 - blocker: waiting-on a reply from SOAS Special Collections (special.collections@soas.ac.uk); the catalogue gives no item level and the 01-25 records do not render (D2-PRINT4)
+
+## Escalation (D2-PRINT4, 8 Oct 2026)
+- [x] siblings: SOAS PP MS 4/02 titles walked (D2-PRINT4) and the SP 105/60 neighbours listed (Premise check (c)): f.123 cipher words with readings, f.138, f.151, f.168
+- [ ] clear-pages: f.123's "[In cipher]" words with the cataloguer's readings are a crib source once an image exists
+- [ ] known-keys: SP 106 key templates; the cataloguer says f.135's key is untraced there; not re-checked by D2-PRINT4
+- [x] print: CSPD W&M vol. 4, Lexington Papers 1851, Google Books sweep (Verdict); no print of the f.135 PS
+- [ ] key-rebuild: needs the image (REQUEST.md)
+- [ ] image-check: copy order, REQUEST.md (needs the person)
+- [n/a] retry: no failed attempt on this item to retry yet
+Verdict: keep going: 0 internal gaps; cheapest next: check SP 106 key templates for Stepney's 1693-94 cipher against the f.123 cipher words, ~$0.5

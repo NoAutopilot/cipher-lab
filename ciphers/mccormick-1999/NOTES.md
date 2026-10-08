@@ -522,16 +522,40 @@ reads of every line against the spec (~USD 3), which settles 36/86 and any other
 Status stays `open` (no H, C or S tokens). Requests: fbi.gov 2 curl + 1 browser, archives.fbi.gov 1 curl + 1 browser, vault.fbi.gov
 1 curl + 4 browser, web.archive.org 3 (reset), scienceblogs.de 1, web search 2.
 
-## Remaining gaps (loose-ends pass, 8 Oct 2026)
-Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- Cipher Mysteries 2013 post, comments 79-163, never read - blocker: not-attempted; noted in the body at NOTES.md:273, never carried as a step (loose-ends 8 Oct 2026); next: fetch a Wayback copy of the comment pages and grep them for a claimed reading or new material, ~$0.5
+## D2-PRINT4: Cipher Mysteries 2013 post, comments 79-163 (8 Oct 2026, 07:45-07:48 UTC by date -u; search result only)
+- Source: "Ricky McCormick's mysterious notes..." (ciphermysteries.com/2013/03/12/ricky-mccormicks-two-mysterious-notes/),
+  Wayback CDX then two `if_` captures: 20210425073734 (145 comments, all on one page, no comment-page-N links) and
+  20260907172517 (header "163 thoughts", 163 comments on one page). Parsed per comment (author, date, text, links);
+  working files in the scratchpad, not committed.
+- **Correction** to "Web and blog check" above (NOTES.md l.273): comments 79-163 are not 2013-2015. Comments 1-78 run
+  12 Mar 2013-28 Oct 2015; **79-163 run 8 Feb 2016-31 May 2026**. The 2 Oct fetch saw a cached copy holding 78.
+- Not found in 79-163: new ciphertext, a third page, a higher-resolution or uncropped image, or an FBI/police source.
+  The only image link is Wikimedia's Ricky_McCormick_note_1.jpg (comment 143), already used here. Pelling (comments 80,
+  82, 86, 126, 128, 131) keeps to the private-shorthand view and accepts no reading.
+- Claimed readings (word guesses, mutually incompatible, none with a method or a control), verbatim excerpts:
+  Rick A. Roberts (9 Feb 2016, c.83) "PRSEONDE 71 NCBE = FIRST RESP.(RESPONSE) ON DE(DECEMBER) 71 in C.B.E."; Roberts
+  (8 and 18 Mar 2016, c.89, c.98) military-acronym expansions ("N WLD XLRC MSP ... = NORTH WEAPON LOADING DIRECTOR");
+  mcrisorius (12 Apr 2016, c.104) "71 onde = 7 ounce x 1"; Debbie Mott (27 Apr 2018, c.140) first line of note 2
+  "direct latin"; Anarchy Sam (30 Jan 2021, c.144) and DAMON DRILL (15 Mar 2022, c.146) "194 WLD'S NCBE" as a World's
+  Fair (1974 / 1904 St. Louis); Dawn M Winningham (12 Feb 2021, c.145) "1/2 MUNDDLSE = 1/2 mayonnaise"; Iain/Ian
+  Tucson (11-12 Feb 2023, 27 Jul 2024, c.152-153, 157-158) St. Louis street names ("29Kensole" = Kenosho Avenue) and
+  anagrams of MUNSARSTENMUNARSE; Ian M (8 Jun 2024, c.156) "First person dead 71 not coming back ever"; TJ M (20 Jan
+  2026, c.159) "WLD -> would", "PRSE / PURTISE -> person", "a self-taught system of documentation, not an encoded
+  message"; Craig Drelas (15 Mar 2026, c.162) a 9,400-character essay, "A Tragic Ledger Misread as a Code", no key.
+- What this gives the target: no new material; more instances of the semi-literate-shorthand reading already rated in
+  Cheap test 5. Status unchanged (open).
+- Requests: web.archive.org 4 (2 CDX, 2 captures), >= 2 s apart.
 
-## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] print: fetch a Wayback copy of the comment pages and grep them for a claimed reading or new material; ~$0.5; source: loose-ends 8 Oct
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: fetch a Wayback copy of the comment pages and grep them for a claimed reading or new material, ~$0.5
+## Remaining gaps (D2-PRINT4, 8 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+
+## Escalation (D2-PRINT4, 8 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [x] key-rebuild: cheap tests 2-4 (masc, homophonic, token/nomenclator) and cheap test 5 (rating the proposed readings) logged above
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [ ] retry: not assessed by D2-PRINT4; the next worker on this folder fills it
+Verdict: keep going: 0 internal gaps; cheapest next: assess the retry rung against NEAR.md's row, ~$0.3

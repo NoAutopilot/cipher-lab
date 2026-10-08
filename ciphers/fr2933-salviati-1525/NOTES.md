@@ -3451,16 +3451,47 @@ Result: no decipherment or plaintext of the item found; two leads for later step
 lines; the Phillipps 7293 letter book as a possible clear copy). Neither changes the status line.
 Requests: archive.org 3 advancedsearch + 3 `_djvu.txt` (200 each), >=2 s apart; github.com 2 shallow clones.
 
-## Remaining gaps (loose-ends pass, 8 Oct 2026)
-Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- the CSP Spain vol. 2 calendar text for 16-20 Oct 1525 (BHO node 74508), never read (access failed 401/reset, not a negative) - blocker: not-attempted; noted in the body at NOTES.md:3400, never carried as a step (loose-ends 8 Oct 2026); next: fetch the CSP Spain vol. 2 text (archive.org djvu or a Wayback copy of the BHO page) and grep Salviati/Toledo 16 Oct 1525 for a paraphrase or clear context of the despatch, ~$0.3
+## D2-PRINT4: CSP Spain calendar for Oct 1525 (8 Oct 2026, 07:40-07:44 UTC by date -u; search result only)
+- Correction to the loose-ends step: October 1525 is in CSP Spain vol. III part 1 (1525-1526, ed. Gayangos, 1873), not vol. 2
+  (Bergenroth, to 1525 May). BHO node 74508 "Spain: October 1525, 16-20" is that volume. Its OCR was already on disk:
+  `sources/ia-fulltext/print-check/calendarofletter0003pasc_djvu.txt.gz` (IA `calendarofletter0003pasc`); account 1's
+  D1A-RJM (rah-juan-manuel-1521) left no CSP identifier of its own. Whole text grepped for Salviat, then every entry
+  3-31 Oct 1525 read by its margin dates (OCR running heads give the page).
+- Not found: no entry from or to Salviati dated 16-20 Oct 1525, and no paraphrase of his 16 Oct despatch. The 16 Oct
+  entry is Jonglet to Madame (London), as the 3 Oct search summary said; 15-19 Oct are De Praet (Lyons), Lope Hurtado
+  (Novara), Lope de Soria (Genoa) and the Viceroy of Catalonia (Barcelona).
+- Clear context found (all CSP Spain III/1, OCR page numbers):
+  - no. 226, Lope Hurtado to the Emperor, Novara 15 Oct 1525 (Spanish, "Original partly in cipher. Contemporary
+    deciphering", pp. ~363-366): Pescara's arrest of Morone; Hurtado leaving for Rome to ask the Pope "que esté quedo".
+  - 20 Oct 1525, Torres Novas (imperial ambassadors in Portugal), P.S., p. ~371: "Should the Pope's Legate residing at
+    the Imperial court (Salviati) have power to dispense in secundo gradu" -- the Portuguese-marriage dispensation, a
+    topic a legate's October despatch could carry.
+  - no. 245, the Emperor to the Duke of Sessa, Toledo 31 Oct 1525, p. ~411: "His Legate (Cardinal Salviati) has arrived,
+    and been received in due honour"; "The Legate Cardinal (Salviati) is here. He brings powers from the Pope which We
+    have not yet examined"; the report of his detention at Lyons "was misinformed".
+  - no. 246, the Emperor (Munoz A.83 ff.272-4), Toledo 31 Oct 1525, pp. ~419-420: the Legate was informed of every
+    particular of the negotiation with the Duchess of Alencon (who left Toledo for Madrid on 19 Oct), "and has done
+    everything he could to persuade all parties to peace".
+  - Lope Hurtado to the Emperor, Rome, after 5 Nov 1525 (Salazar A.36), p. ~445: the Archbishop of Capua "had lately
+    conceived certain suspicions about him (Cardinal Salviati), owing to the circumstance of his having sent to his father,
+    Jacopo de Salviatis, a copy of his letter to the Pope of the 6th, with two paragraphs in cipher more than were in
+    the original". Month of "the 6th" not stated in the calendar text (Oct or Nov 1525); a period report that Salviati's
+    letters to Rome mixed clear text and cipher paragraphs and were copied to his father.
+- What this gives the target: date-and-place context for 16 Oct 1525 (Salviati at or reaching the court at Toledo,
+  Alencon negotiation in its last days, dispensation question pending), usable only as topic cribs; no clear copy, no
+  paraphrase. Status unchanged (open).
+- Requests: none to any host (file on disk). Cost: local grep only.
 
-## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] print: fetch the CSP Spain vol. 2 text (archive.org djvu or a Wayback copy of the BHO page) and grep Salviati/Toledo 16 Oct 1525 for a paraphrase or clear context of the despatch; ~$0.3; source: loose-ends 8 Oct
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: fetch the CSP Spain vol. 2 text (archive.org djvu or a Wayback copy of the BHO page) and grep Salviati/Toledo 16 Oct 1525 for a paraphrase or clear context of the despatch, ~$0.3
+## Remaining gaps (D2-PRINT4, 8 Oct 2026)
+Read so far: unmeasured; no reading of the cipher exists, the folder's families are logged as non-tests at the measured transcription error (SALV-DIAG)
+- the Phillipps MS 7293 letter book (BL RP 271/2/4, despatches 17 July 1525-15 May 1527), a possible clear register copy - blocker: needs-physical-access; the original was sold in 1968, holder not recorded, BL image service down since 2023 (Premise check (d))
+
+## Escalation (D2-PRINT4, 8 Oct 2026)
+- [x] siblings: Premise check (d), 3 Oct 2026: fr.3087 item 90 (3 Oct 1525, two cipher lines per Molini) and siblings.tsv; no decipherment
+- [ ] clear-pages: the plain-Italian boxes are read (SALV-PLAIN1-3); the Phillipps 7293 register copy is the clear text still wanted; not assessed further by D2-PRINT4
+- [ ] known-keys: Key search (LANE R5 B, 24 Sept 2026) found no Salviati or Giberti-office key that fits; D2-PRINT4 did not re-assess
+- [x] print: CSP Spain III/1 for Oct 1525 read (D2-PRINT4); Desjardins/Canestrini and Molini read earlier; context only
+- [ ] key-rebuild: not assessed by D2-PRINT4; many families logged in HYPOTHESES.md, SALV-DIAG says the next step is a transcription pass to lower the measured error
+- [ ] image-check: not assessed by D2-PRINT4; the next worker on this folder fills it
+- [ ] retry: not assessed by D2-PRINT4; the next worker on this folder fills it
+Verdict: keep going: 0 internal gaps; cheapest next: assess the clear-pages/key-rebuild rungs from HYPOTHESES.md and SALV-DIAG, ~$0.5
