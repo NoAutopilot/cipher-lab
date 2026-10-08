@@ -11626,3 +11626,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:47 | FM-R3b reader (Sonnet) | claim: Fort Monroe (eckert-1864, mssEC 25 obj 5952) clean-fm rows 5811/2 5587/1 5747/1 5823/2 5701/1 5626/0 5748/0 5808/1 5814/1 5833/0, IDs E220-E229; box 23:50-01:50 UTC 9 Oct, cap USD 6.5; for LANE LEDGER (account 1)
 2026-10-08 23:48 | FM-R3a reader | claim: Fort Monroe 1864 No.1 rows 5637/2 5649/2 5767/2 5607/1 5703/1 5734/0 5743/1 5770/0 5768/0 5780/1; cap 6.5, box ends 01:55 UTC 9 Oct; for LANE LEDGER (account 1)
 2026-10-08 23:48 | FV-FM4 verifier (Opus) | LANE LEDGER hdl take
+2026-10-08 23:48 | FM-R3a reader | LANE LEDGER hdl take; for LANE LEDGER (account 1)
