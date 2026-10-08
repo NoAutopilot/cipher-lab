@@ -2270,10 +2270,11 @@ Grades (decoder counts less the M tokens named in the table, by my hand count): 
 
 ## Remaining gaps (FM-R2b, 8 Oct 2026)
 Read so far: ten of ten rows filed (E185-E194); in print: E186, E188, E192. Not located in what was searched: E185 E187 E189 E190 E191 E193 E194.
+First audit FV-FM3c (8 Oct 2026, AUDIT.md "## AUDIT (FV-FM3c)"): E190 is in print (OR I/42 pt 3 p.1006, N1); E189's clear received copy is in the holder's public transcription (pointer 4711, N1); E187 N1 (body clear); E185 N3 weak D3, E191 N3 D2; pages 5799, 5748, 5831 eye-checked against the image (match). The bullets below are updated accordingly.
 - E185 (Porter telegrams, 10 Dec 1864) - blocker: not-attempted; ORN I/11 and Butler's Dec 1864 letters not searched; next: ORN I/11 by Saugus/Onondaga/Parker, ~$0.4
-- E187, E189, E190, E191, E193, E194 (Butler traffic Mar-Nov 1864) - blocker: not-attempted; searched only OR I/33, 36 pt 3, 40 pt 2, 42 pts 2-3 and Butler IV, V by distinctive phrases; next: loosen phrases to rare names (Obethner, Bovee, Baldwin, Chestnut, Langdon) in OR I/33 pt 1, I/40 pts 1-3, I/42 pt 1 and the ORN volumes, ~$0.8
-- E187 Schoonmaker/Patrick and the E185 "Hemp town" word - blocker: not-attempted; hand readings "Van Rensselaer" and "Hampton Roads" are M; next: word-by-word crop pass on 5799 and 5824, ~$0.5
-- E186 E187 E188 E189 E190 E192 E193 (image check) - blocker: not-attempted; those seven pages were read from the transcription only; next: image pass on pointers 5635 5799 5584 5748 5831 5643 5784 via tools/iiif_lines.py --image, ~$1.2
+- E191, E193, E194 (Butler traffic Mar-Nov 1864) - blocker: not-attempted; E187/E189/E190 settled N1 by FV-FM3c; E191 searched in OR I/33, Butler III-IV by FV-FM3c; next: OR ser. II vols. 6-7 and Baltimore press for Chestnut (E191, queued as AUD2-LEDGER-7), rare names by printed stem (Langdon) for E193/E194, ~$0.8
+- [settled by FV-FM3c] E187 Van Rensselaer (companion telegram 13215, Maj & PM) and E185 "Hemp town wileys" = Hampton Roads (5830 heads "Hampton wileys"); no step left.
+- E186 E188 E192 E193 (image check) - blocker: not-attempted; 5799, 5748, 5831 eye-checked by FV-FM3c (match); next: image pass on pointers 5635 5584 5643 5784 via tools/iiif_lines.py --image, ~$0.7
 
 ## Escalation (FM-R2b, 8 Oct 2026)
 - [x] siblings: same-page neighbours (e.g. 5805/1, 5824/1, 5589/0 and 5589/1) read in the images, not filed; none is one of the ten.

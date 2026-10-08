@@ -5496,3 +5496,132 @@ Safe and depth sentences:
 - Leads for the next reader (not read here): 5837/1 (= 9141, Fox 17 Dec, in ORN, C-grade pair), 5839/1 (= 9143, Fox 22 Dec, in ORN), 5839/2 (Rodgers 25 Dec, brasses worn again), 5837/0 (OR I/44 p.739). File only after the duplicate diff.
 - Requests: hdl.huntington.org 10 (7 dmQuery, 3 IIIF pages to scratch; token 21:21-21:22 UTC, after FV-MS18's release); archive.org 5 (`_djvu.txt` to scratch, 2 s apart); be-api 2 answered plus 6 x 502 (stopped after one retry); googleapis 0. Subagents 0.
 - Rows written: status.json results for E171, E175, E176, E178, E179 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E171/-E175/-E176/-E178/-E179; WORK-QUEUE.tsv AUD2-LEDGER-6.
+
+## AUDIT (FV-FM3c)
+
+Verifier FV-FM3c (account 1, for LANE LEDGER), 8 Oct 2026, 21:12-21:3x UTC by `date -u`; a separate session from the reader FM-R2b
+(account 1), not protecting its conclusions. Scope: **E185, E187, E189, E190, E191** (ciphertext.txt, Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952; NOTES "## FM-R2b"). Nothing decoded beyond key look-ups in key.md. Key source for every item: `period`.
+Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm3c_hdl.py` (CONTENTdm full text + page images), `fortmonroe/fv_fm3c_print.py` (OR/ORN/Butler grep),
+`fortmonroe/fv_fm3c_beapi.py` (IA full text).
+
+### 1. Duplicates, prior-work checklist, own transcription and image
+- **Duplicate diff:** pointers 5824, 5799, 5748, 5831, 5589 occur in ciphertext*.txt only in E185-E191's own headers (5799 in status.json
+  is a lodewijk folio number, unrelated); same-date headers (E19, E20 10 Dec; E174 14 June, 5747, a different Sheldon-O'Brien lumber
+  telegram; O9-W 28 Mar) are other telegrams. **No duplicate.**
+- **Sender's/receiver's copies on disk** (`sources/mssEC19`, `sources/mssEC18`, `sources/fortmonroe`, rare-word grep: Obethner, Bovee,
+  Chestnut, Pitkin, Schoonmaker, Saugus, Colhoun, Onondaga, Grove Wharf, Pratt): only each entry's own page, plus the neighbours in
+  section 2. No copy of any of the five in mssEC 19 or 18.
+- Prior-work checklist (hand run; `tools/prior_work.py` not run): (1) own work: only FM-PRE and FM-R2b name these rows, no live claim;
+  (2) leaf: **eye check this session** of 5799 (E187), 5748 (E189), 5831 (E190) -- the three FM-R2b read from the transcription only --
+  by `tools/iiif_lines.py --image <page> --out <scratch> --region ... --lines-per-crop 4` crops of the entry (2400 px pages under the hdl
+  token, to scratch, not committed): the volunteer transcription matches the image word for word for all three entries (E189's cipher
+  really omits "no" before "means"; E190 "Obethner", "Bovee", "wilby"). 5824 (E185) and 5589 (E191) were image-read by FM-R2b. No gloss on
+  any page. (3) holder: section 2; (4) editions: section 2; (5) antecedents and replies: section 2.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, transcription returned; under the hdl token 21:14-21:16 UTC):
+obethner (5831 only), bovee (5831), colhoun (5824), "grove wharf" (5831), schoonmaker (5799; 13215), "schoon maker" (9012, unrelated; 5799),
+rensselaer (5799), "pitkin forage" (**4711**, 4712), "wilsons wharf" (15: clear uses passim, e.g. 4601, 5656, 5692, 5718, 13283),
+"pratt streets" (5589 only), "davenport hindoo" (5830, 5831), chestnut (12: 5589; the rest Philadelphia's Chestnut St., poles, woods,
+Chestnut Hill, and 9217 "Rosetta Glory Chestnut" = a code word in mssEC 19; none about a Colonel Chestnut).
+
+| ID | holder text | print | verdict |
+|---|---|---|---|
+| E185 | **Colhoun's same-day reply**, mssEC 25 p.283 (pointer 5827), public transcription: "City Point Dec. 10 - 1864 / Geo. D. Sheldon Ft Monroe / Us S Saugus pledge Spoons above black / Rosetta for Niagara unity wrangle just received / will start down at early delight whelp / Youth E. R Cole hound polkaer" = "U.S.S. Saugus, [N] miles above [City Point]. For [Porter]: telegram just received; will start down at early daylight [tomorrow]. E. R. Colhoun, [Commander]". Also 5813 (1 Dec, Porter via O'Brien to Parker: fill the Saugus, Canonicus and Mahopac with coal and have them ready to come down). | ORN I/11 (`officialrecordso0011unse`, fetched to scratch): Porter to Parker 28 Nov "Move the Saugus and Canonicus up to Dutch Gap"; Porter's 30 Nov telegram to fill the three monitors "and have them ready to come down here without delay" (= the 5813 cipher); Porter's report that before leaving Hampton Roads he sent the monitors up the James; the Saugus "arrived from Hampton Roads" for Fort Fisher on the 25th; monitors ordered to Beaufort 11 Dec. **The 10 Dec orders themselves: not located** (every "December 10/11, 1864" heading in ORN I/11 read: other Porter telegrams of 10 Dec, to Fox and Schenck, but not these). | not located; context and reply corroborate |
+| E187 | the body is clear in the public transcription of 5799. Companion telegram, same day, pointer 13215 (Leaf 317; ledger not identified -- the dmGetParent call failed and was not retried): "Fort Monroe Oct 29 / Genl Patrick / Mr Schoonmaker left for Washn this evening via Balto and intends returning about November tenth / Van Rensslaer / Maj & [PM] / Genl Patrick thinks the matter is being conducted for purposes intimated in my despatch ..." -- confirms "taunton Vanren seller" = Major Van Rensselaer (provost marshal) at Fort Monroe. | OR I/42 pts 2-3 (`warofrebellion422unit`, `warofrebellion423unit`): Schoonmaker, Rensselaer 0 in pt 3 (OCR-tolerant patterns); Butler V 0. Patrick's published diary (Sparks 1964): not reachable. | **N1** (body clear in the holder's public transcription) |
+| E189 | **the clear received copy**, pointer 4711 (Page 270; by pointer arithmetic from 4642 = mssEC 11 p.201 (LS4-V1a), mssEC 11 p.270 -- inferred, not read from the record), public transcription: "1 PM 1864 / 8 Pm Ft Monroe Va June 14 / Genl Rucker QrMr ---- Capt Pitkin wants me to send all forage to Jamestown Island [should, struck] I have no means of doing it until steamers arrive, here one Steamer can tow two schooners & I think the forage should go further, to Ft Powhatan or Wilson's Wharf signed H. Biggs Cf Qrmr." Every key value in E189 agrees with it (Quartermaster, Captain, forage x2, Island, steamers, 1, 2, Fort, signed, Quartermaster, 1 PM). | OR I/40 pt 2 (`warofrebellion402unit`): only context (Ingalls 15 June: "taken Pitkin and party to Douthat's Wharf"); not the telegram. | **N1** (plaintext in the holder's public transcription) |
+| E190 | antecedent 5830 (13 Dec, O'Brien for Lt. Davenport to the commanding officer at Williamsburg = Hindoo: hold the two cavalry companies ready to embark). | **FOUND, word for word: OR I/42 pt 3 p.1006** (`warofrebellion423unit`; index "Hicks, Julius C. Correspondence with Benjamin F. Butler 993, 1006"): "Williamsburg, December 14, 1864 -- 2.30 p. m. Lieutenant Davenport, Headquarters Army of the James: Just received your dispatch. Have sent for one company of the First New York Mounted Rifles, Captain Oberteuffer; one company of the Fourth Massachusetts Cavalry, Captain Bouve. They will be at Grove's Wharf as soon as possible. J. C. HICKS, Major Sixteenth New York, Commanding Post." The antecedent is printed too ("Butler's Headquarters, December 13, 1864 -- 10 p. m. Commanding Officer, Williamsburg: The commanding general directs that you order the two companies cavalry now at Williamsburg ..."), and the roster prints "16th New York Heavy Artillery (four companies), Maj. Julius C. Hicks; 4th Massachusetts Cavalry, Company G, Capt. Edward T. Bouve". FM-R2b's "Grove Wharf hits are 4 May 1864" missed it: the print spells Oberteuffer, Bouve and Grove's Wharf, and the OCR has "Bifles". | **N1** (printed) |
+| E191 | the body is clear in the public transcription of 5589 except the code words; no reply or Baltimore copy found ("pratt streets" 5589 only). | OR I/33 (cached): Chesnut/Chestnut 0, Pratt 6 (batteries, a colonel), "Wallace" near arrest: Sullivan 31 Mar "I have notified General Wallace to arrest the parties", unrelated; Butler III (`privateofficialc03butl`, fetched to scratch) and IV: Chesnut 0 (IV's Pratt hits are Butler to Mrs. Thomas G. Pratt, unrelated). | not located |
+
+**IA full text (be-api, all items):** "send the Saugus down" 0, "Saugus down at once" 0, "Obethner" 2 (OCR noise), "William Chesnut" 581
+and "South and Pratt streets" 82 (top hits a 2008 deed, an 1819 Pittsburgh firm, a Baltimore guidebook: none about 1864), "Colonel
+Chesnut" (Mary Chesnut's diary, unrelated), "forage to Jamestown Island" 0; five queries answered 502. **Grant Papers** (lending-only, be-api
+inside the item, snippet only): vol. 13 "Onondaga" 0 and "Grove Wharf" 0 -- not a negative: "AUDIT 2 (second adversarial, AUD2-LS3-B)" above found vol. 13 not
+searchable this way (positive control "Sheridan" 0); vol. 12 "Schoonmaker" 0; vol. 13 "Saugus" and vol. 10 "Chesnut" 502, after which the
+host was stopped (second error). Basler: not searched (no entry to or from Lincoln). Google Books: not called (daily quota, lane note).
+Press of the day: not searched.
+
+### 3. Grade and reading corrections (FM-R2b's table, reading.md)
+- **E185:** "Polkaer" = Polka + er = **Commander** (H), not "Commodore?": ORN prints "Commander W. A. Parker, U. S. S. Onondaga, Dutch Gap"
+  and "Commander E. R. Colhoun". "william" (Parker's name) is plain (decoder's 100 wrong). **"Hemp town wileys" = Hampton Roads**: "Hemp" is
+  the clerk's spelling of "Hamp(ton)", plain (decoder's Breckenridge wrong); wileys = Wiley + s = Roads (H; the same ledger heads 5830
+  "Hampton wileys"). "Tommy" = "to me", plain. Reading: "[Commander] William A. Parker, U.S.S. Onondaga, Dutch Gap. Send the Saugus down at
+  once. [Signed] [D. D. Porter] [3 PM]" and "[Commander] E. R. Colhoun, U.S. Ironclad Saugus, [City Point]. [Report] to me with your vessel
+  without delay at Hampton [Roads]. [Signed] [Porter] [3 PM]". Code groups: Polkaer x2, zebra x2, youth, walrus, Niagara x2, Imogene x2,
+  Black, wick, wileys = **13 H of 13**, 0 M (FM-R2b: H 9 / M 6; decoder H 15).
+- **E187:** Shelby, zodiac, taunton, wreathed, walrus = 5 H; "Wranglam" = Wrangle (Telegraph) + "am" = telegram, **M** (sense secure,
+  form unlisted). "Vanren seller" = Van Rensselaer, Major and provost marshal at Fort Monroe (13215): the name is plain, settled.
+- **E189:** signer "begs Vincent" = **H. Biggs, [Quartermaster]** (Chief Quartermaster, Fort Monroe; the clear copy signs "H. Biggs Cf
+  Qrmr"); "how Patton" = Powhatan (plain); **"Wilsons Wharf" is plain** (decoder's West/Today wrong; written in clear passim). The cipher
+  omits "no" ("I have [no] means"), as the image confirms. Code groups: **17 H of 17**, each agreeing with the clear copy (FM-R2b H 17 / M 2).
+- **E190:** **"Wharf" is plain** (decoder's Today wrong); "Obethner" = Capt. Oberteuffer, "Bovee" = Capt. Edward T. Bouve, "Grove Wharf" =
+  Grove's Wharf; signer Maj. Julius C. Hicks, 16th New York Heavy Artillery, commanding post at Williamsburg; addressee Lt. Davenport.
+  Code groups: Hindoo, henrietta, female, Snake, zodiac, plug, frog, zebra, pilgrim, plunge, torch, penny, panama, princess, unity,
+  persia, yoke, Tappan, gas, france, negro = **21 H of 21**; every value the print can test agrees (Williamsburg, 14, 2.30 p.m., one x2,
+  New York x2, Captain x2, Fourth, Cavalry, as soon as, Major, Sixteenth); "negro" = Artillery stands where the print has "Commanding Post".
+- **E191:** "Wallace" (addressee, Maj. Gen. Lew Wallace, Middle Department) and "William" are plain (decoder's Ram and 100 wrong, the same
+  slip FV-FM2 found in E168). Code groups: Tappan, Shelby, Banditti, unity, oakum, pandora, baptism, zebra, whelp, youth, Knox, Topsy =
+  **12 H of 12** (FM-R2b H 12 / M 2, decoder 14).
+
+### 4. Classification (key `period`)
+`depth_pct` = H / code-word groups (plain names the decoder mapped are excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E185** Porter (via Sheldon, Fort Monroe) to Cdr. W. A. Parker (Onondaga) and Cdr. E. R. Colhoun (Saugus), 10 Dec 1864 | **N3** (weak: the operative sentence "Send the Saugus down at once" is clear in the public transcription; the key supplies Porter, Commander, City Point, Report, Roads) | unknown | **D3** | 100 (13 H of 13) | code clause: Niagara = Porter and Black = City Point read in 5813, 5827, 5838 and here; external (non-statistical): Colhoun's same-day reply 5827 ("will start down at early daylight") and ORN I/11 (monitors called down from the James for Fort Fisher); image read by FM-R2b; matched control FM-R2b |
+| **E187** Sheldon to Patrick (via Caldwell), 29 Oct 1864 | **N1** (body clear in the holder's public transcription; the key adds General, Major, telegram, telegraphed) | known (holder transcription) | **D2** | 83.3 (5 H of 6; Wranglam M) | code clause: Taunton = Major (E168, here), Shelby = General passim; companion 13215 confirms Van Rensselaer; image checked here |
+| **E189** Biggs to Rucker (via Sheldon to Eckert), 14 June 1864 | **N1** | **known**: clear received copy, public transcription of 4711 | **D3** | 100 (17 H of 17, all agreeing with the clear copy) | external (non-statistical): the clear copy; image checked here |
+| **E190** Hicks (Williamsburg) to Lt. Davenport via Sheldon, 14 Dec 1864 | **N1** | **known**: OR I/42 pt 3 p.1006, word for word | **D3** | 100 (21 H of 21, agreeing with the print) | external (non-statistical): the print; antecedent 5830 also printed; image checked here |
+| **E191** Butler (via Sheldon) to Maj. Gen. Lew Wallace, Baltimore, 28 Mar 1864 | **N3** | unknown | **D2** | 100 (12 H of 12) | code clause: Baptism/Banditti = Baltimore (E79 and passim), Knox = Butler passim; no external check of the content (no reply, no print found); image read by FM-R2b; D3 withheld |
+
+- **E185: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 10 Dec 1864 Fort Monroe forwarded two telegrams
+  signed by Rear Admiral D. D. Porter -- to Commander W. A. Parker of the Onondaga at Dutch Gap, 'send the Saugus down at once', and to
+  Commander E. R. Colhoun of the ironclad Saugus at City Point, 'report to me with your vessel without delay at Hampton Roads'; not located
+  in the Naval Official Records (ser. I vol. 11), the Official Records (ser. I vol. 42 pt 3), Internet Archive full text or the Huntington's
+  full-text search (searched 8 Oct 2026)." Unsafe: "first", "unpublished". Depth sentence (D3): "On 10 Dec 1864 Porter, gathering his
+  monitors for Fort Fisher, ordered the Saugus down from the James to Hampton Roads without delay, and Colhoun answered the same day that
+  he would start at daylight."
+- **E187: N1.** Safe sentence: "Read with Cipher No. 1 (six code words; the body is clear in the Huntington's public transcription): on
+  29 Oct 1864 Sheldon told Gen. M. R. Patrick that a copy of every message at Fort Monroe signed by or addressed to Schoonmaker had been
+  given to Major Van Rensselaer, who had telegraphed it to him." Depth sentence (D2): "On 29 Oct 1864 Fort Monroe told Patrick that every
+  Schoonmaker message had been copied to Major Van Rensselaer and telegraphed on." No status.json row, no SO row.
+- **E189: N1.** Safe sentence: "An independent re-decipherment with Cipher No. 1 of Biggs's 14 June 1864 telegram to Rucker (forage for
+  Jamestown Island, Fort Powhatan or Wilson's Wharf), whose clear received copy is in the Huntington's public transcription (pointer 4711);
+  every code value agrees with it." Depth sentence (D3): "On 14 June 1864 Biggs told Rucker that Pitkin wanted all forage sent to
+  Jamestown Island, that he had one steamer able to tow two schooners, and that the forage should go further up, to Fort Powhatan or
+  Wilson's Wharf." No status.json row, no SO row.
+- **E190: N1.** Safe sentence: "An independent re-decipherment with Cipher No. 1 of Maj. J. C. Hicks's 14 Dec 1864 telegram from
+  Williamsburg, printed word for word in the Official Records ser. I vol. 42 pt 3 p.1006; every testable code value agrees with the
+  print." Depth sentence (D3): "On 14 Dec 1864 Hicks at Williamsburg reported a company of the 1st New York Mounted Rifles and one of the
+  4th Massachusetts Cavalry on their way to Grove's Wharf for Butler's expedition." No status.json row, no SO row.
+- **E191: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 28 Mar 1864 Butler, through Fort Monroe, advised Maj. Gen. Lew
+  Wallace at Baltimore to arrest at once Colonel William Chestnut at the corner of South and Pratt Streets and hold him safe, and to send
+  him a confidential staff officer of high intelligence by the next night's boat; not located in the Official Records (ser. I vol. 33),
+  Butler's printed correspondence (vols. III-IV), Internet Archive full text or the Huntington's full-text search (searched 8 Oct 2026)."
+  Depth sentence (D2): "On 28 Mar 1864 Butler asked Lew Wallace, a week into his Baltimore command, to arrest a Colonel William Chestnut of
+  South and Pratt Streets at once." (Wallace took the Middle Department on 22 Mar 1864: context, not from the reading.)
+- Not N4 for E185 or E191: the Grant Papers vol. 13 (not searchable by be-api), OR ser. II (prisoners, 1864) for Chestnut, Butler's
+  letterbooks, Wallace's papers, Patrick's diary, the Baltimore press and Google Books are unread.
+- Second audits (account-3 VERIFY lane): E185 (N3 weak D3), E191 (N3 D2) -- WORK-QUEUE row AUD2-LEDGER-7. Start with OR ser. II vol. 6/7
+  and the Baltimore American of late March 1864 for Chestnut (E191), and ORN I/11's Porter correspondence for 10 Dec and the Onondaga/Saugus
+  logs (E185).
+
+### 5. Postmortem
+- FM-R2b's "none" for E190 was a miss: the telegram is in OR I/42 pt 3 p.1006, under the printed spellings Oberteuffer, Bouve and Grove's
+  Wharf, which the reader's phrase list ("Captain Obethner", "Grove Wharf") could not match; and the reader's E189 search did not reach the
+  holder's own full text, where the clear received copy (4711) sits. Lesson for readers: search the holder's full text by the *rare plain*
+  words before print, and search print by the printed form of a name (strip the clerk's spelling to a stem: "Oberte", "Bouv", "Grove").
+- Under-reads corrected in section 3 (Commander for "Commodore?", Hampton Roads, "to me", Biggs as signer, Van Rensselaer); decoder
+  over-counts on plain names (William, Wallace, Hemp, Wilsons, Wharf) -- the same shape FV-FM2 found in FM-R1.
+- Corrections for a fix worker (~$0.4, rule 7 + rule 10 propagation): reading.md / NOTES "## FM-R2b" grade cells for E185 (13 H), E187 (5 H
+  1 M), E189 (17 H), E190 (21 H), E191 (12 H); exceptions so decode.py leaves "William" (E185, E191), "Wallace" (E191), "Hemp" (E185),
+  "Wilsons", "Wharf" (E189, E190) plain; E190's print citation into the FM-R2b table. `decode.py --check` not re-run here (no reading file
+  touched).
+- Requests: hdl.huntington.org 17 (12 dmQuery answered, 1 dropped connection then one retry of the remainder, 3 IIIF pages to scratch,
+  1 dmGetParent that returned non-JSON, not retried; two token windows 21:14-21:16 and 21:25-21:26 UTC); archive.org 4 (`_djvu.txt` to
+  scratch: OR I/42 pt 3, I/40 pt 2, ORN I/11, Butler III); be-api 17 (7 answered + 5 502 in the first run; 3 answered + 2 502 in the
+  second, host stopped). Subagents 0.
+- Rows written in this session: status.json results for E185 and E191 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
+  SO-ECKERT-E185, SO-ECKERT-E191 (prompts in second-opinions/); WORK-QUEUE.tsv AUD2-LEDGER-7.

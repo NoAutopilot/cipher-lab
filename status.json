@@ -8103,6 +8103,88 @@
       "depth_sentence": "On 11 Apr 1864 Fort Monroe asks Washington for 10,000 shelter tents for W. F. Smith's troops and for shallow-draught boats.",
       "depth_check": "code clause: Bender = QMG as E178, Nankin = W. F. Smith; no external check of the content (OR I/33 shelter-tent requisitions context only); D3 withheld",
       "depth_note": "15 H of 16 code-word groups ('shelter' plain); 'measles' M"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3c verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3c)' section 4",
+      "reading_version": "FM-R2b 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3c) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Porter to Commanders Parker (Onondaga) and Colhoun (Saugus), 10 Dec 1864, the Saugus ordered down to Hampton Roads (E185)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 10 Dec 1864 Fort Monroe forwarded two telegrams signed by Rear Admiral D. D. Porter -- to Commander W. A. Parker of the Onondaga at Dutch Gap, 'send the Saugus down at once', and to Commander E. R. Colhoun of the ironclad Saugus at City Point, 'report to me with your vessel without delay at Hampton Roads'; not located in the Naval Official Records (ser. I vol. 11), the Official Records (ser. I vol. 42 pt 3), Internet Archive full text or the Huntington's full-text search (searched 8 Oct 2026).",
+      "gap": "N3 (weak: the operative sentence is clear in the public transcription): Grant Papers vol. 13 (not searchable by be-api), Porter's and the monitors' logs, Google Books unread",
+      "depth": "D3",
+      "completeness": "13 H of 13 code-word groups ('William', 'Hemp', 'Tommy' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.280, pointer 5824, E185"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.280, pointer 5824, E185",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.280, pointer 5824, E185"
+      ],
+      "depth_sentence": "On 10 Dec 1864 Porter, gathering his monitors for Fort Fisher, ordered the Saugus down from the James to Hampton Roads without delay, and Colhoun answered the same day that he would start at daylight.",
+      "depth_check": "code clause: Niagara = Porter and Black = City Point read in 5813, 5827, 5838 and here; external (non-statistical): Colhoun's same-day reply (pointer 5827) and ORN I/11 context; matched control FM-R2b",
+      "depth_note": "13 H of 13 code-word groups ('William', 'Hemp', 'Tommy' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3c verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3c)' section 4",
+      "reading_version": "FM-R2b 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3c) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Butler to Maj. Gen. Lew Wallace, Baltimore, 28 Mar 1864, arrest Colonel William Chestnut (E191)",
+      "line": "Read at grade H with Cipher No. 1: on 28 Mar 1864 Butler, through Fort Monroe, advised Maj. Gen. Lew Wallace at Baltimore to arrest at once Colonel William Chestnut at the corner of South and Pratt Streets and hold him safe, and to send him a confidential staff officer of high intelligence by the next night's boat; not located in the Official Records (ser. I vol. 33), Butler's printed correspondence (vols. III-IV), Internet Archive full text or the Huntington's full-text search (searched 8 Oct 2026).",
+      "gap": "N3: OR ser. II (prisoners), Baltimore press of late March 1864, Wallace's papers, Butler's letterbooks, Google Books unread",
+      "depth": "D2",
+      "completeness": "12 H of 12 code-word groups ('Wallace', 'William' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.45, pointer 5589, E191"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.45, pointer 5589, E191",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.45, pointer 5589, E191"
+      ],
+      "depth_sentence": "On 28 Mar 1864 Butler asked Lew Wallace at Baltimore to arrest a Colonel William Chestnut of South and Pratt Streets at once and hold him safe.",
+      "depth_check": "code clause: Baptism/Banditti = Baltimore (E79 and passim), Knox = Butler passim; no external check of the content; D3 withheld",
+      "depth_note": "12 H of 12 code-word groups ('Wallace', 'William' plain)"
     }
   ],
   "lanes": [
