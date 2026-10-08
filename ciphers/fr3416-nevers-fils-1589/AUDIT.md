@@ -369,3 +369,26 @@ after NEVF-APPLY (c1101fad, 6 Oct 2026) moved the graded counts; rule 4a depth r
    read it with **80 of 102 tokens H** (22 M). `second-opinions/PROMPT-chatgpt-NV02.md` (SO-NV02-F35) quotes no counts and no
    run-4 text, so it needs no change; status.json's result row and PROGRESS.tsv row updated to H 80 / M 22.
 Requests: 0 network. Vision: 2 looks at local crops by this session (no subagent).
+
+## AUDIT (depth re-check, DEPTH-MH)
+
+Verifier DEPTH-MH (account 1, session_01LMs2EyN5RhSA1321cqQrnZ), 8 Oct 2026 02:55-03:0x UTC by date -u; separate from every
+solver and from D07-NEVFV (session_01US4m8bWufn8tBfr1swic9c). Add-on of .claude/briefs/runs/2026-10-08-acct3-scout-jobs.md
+"## DEPTH-MH", under the bar in .claude/briefs/runs/2026-10-08-acct3-depth-bar.md (as copied into the two PREREG-DEPTH-MH.md
+files of that job). Disk only, nothing decoded, no crops cut, no vision; key, ciphertext, reading and N-class (N4) untouched.
+
+- **Item:** f.35r figure runs, 102 tokens, H 80 / M 22 (f35r_ciphertext.tsv, as D07-NEVFV left it).
+- **AD:** key no.25 alphabet V = 22 letter values; 39 distinct figure codes used on f.35r; H(K) = 39 x log2 22 + 22 M x log2 22
+  = 272.0 bits. R = 1.908 (the fr18 5-gram figure used for the other two items of this job; fr16 would be the era corpus, but
+  even the generous R = 3.4 does not change the outcome): **AD 214 letters** (120 at R = 3.4).
+- **Run 1** (`79 32 53 82 54 39 64 56 45 82 34 93 75 68 53 86 xiiij 17 43`, '.aisi.nlesauroit[Seigneur].e'): 14 H letters
+  between nulls before the code word, the longest H stretch on the leaf. **Cipher clause fails** (14 vs 214/120).
+- **Code clause:** xiiij 'Seigneur' occurs once in the figures; no figure-run code value recurs in a second context.
+  The bare figures in the clear letter are each single or not code-like: '{11}' (U19, 'Et {11} leur conse-'; no.25 nomenclator
+  11 = Roy de nauarre) once; '97' (U23, '97 fit'; 97 = recherche) once; '7' twice, but in 'q' le 7 Jour' it reads as a date
+  (7 = Pape gives 'le Pape Jour', not sense) and '{si 7}' is a braced, uncertain reading. **Even with overbars confirmed, none
+  of them could read sensibly in two independent contexts**, so the brief's crop-and-ASKS step was not triggered (no crops cut,
+  no ASKS row filed).
+- **Content sentence:** none possible. Run 1 gives 'ainsi ne les auroit [Seigneur] ...' with no subject or object that the
+  reading supplies; the other runs are syllables ('s.es.auoir', 'b.onnefaSUN').
+- **Ruling: D1 held** (D07-NEVFV 7 Oct 2026 stands), depth_pct 78.4 (H 80 of 102), outward "fragments read".

@@ -3451,10 +3451,10 @@
         "names_codes": "0",
         "other": "22 M"
       },
-      "depth_check": "period key sheet fr.3995 f.51r (H) but the figure runs read as isolated syllables/words ('s.es.auoir'), no stretch above AD",
+      "depth_check": "period key sheet fr.3995 f.51r (H) but the figure runs read as isolated syllables/words ('s.es.auoir'), no stretch above AD; DEPTH-MH 8 Oct 2026 re-check: D1 held -- run 1 longest H stretch 14 letters vs AD 214 (120 at R 3.4); no code value in two contexts (clear-letter bare figures 11, 97 once each, 7 reads as a date), no content sentence possible",
       "depth_note": "H 80 of 102 figure tokens (AUDIT 3, D07-NEVFV, 7 Oct 2026)",
-      "depth_by": "session_01US4m8bWufn8tBfr1swic9c",
-      "depth_date": "7 Oct 2026",
+      "depth_by": "session_01LMs2EyN5RhSA1321cqQrnZ",
+      "depth_date": "8 Oct 2026",
       "decode_status": "Non-decrypted",
       "text": "unknown"
     },
