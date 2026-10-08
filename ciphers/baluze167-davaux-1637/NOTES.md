@@ -1120,3 +1120,88 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 - [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167); 170 f.228 numeral marks re-read blind twice on line strips (SIG-B228)
 - [x] retry: 170 f.228r re-cut and re-passed (D1-BAL170, D1-BAL170B), decoded (B167-228) and re-decoded with external shape values and marks (SIG-B228)
 Verdict: keep going: 3 internal gaps; cheapest next: two-blind-read exemplar test of f.228's u4/4u signs and the two 71 marks, then re-judge (~$2)
+
+## SIG-B228B (8 Oct 2026, account 1, for LANE SIG-1), 23:17-23:3x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md` section SIG-B228B. No novelty class. Pre-registration
+`b167228/prereg_sig2.md` committed and pushed (249ab1037, 23:20 UTC) before any tile was cut or read.
+**Prior-work step (pasted):** `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228v;date=1640-08-25;sender=Chavigny;recipient=Avaux' --step-type transcribe`
+first run exit 4 (10 LEAD: escalation checkboxes of other steps, the f.229 audit, Bourdeau's catalogue line; 1 LOOK: leaf gloss check); each
+answered with `--record` (CONTEXT: this step is the untried one in SIG-B228's Remaining gaps; CLEAR: D1-BAL170's c239-241 overview shows no
+gloss on f.228); re-run: `holds: specific 0 (none); generic 2 (UNCHECKED-NET 2) ... exit 0: proceed on the residue: whole item`.
+
+**u4/4u signs (unit 1).** Targets: the four f.228v signs D1-BAL170B settled as s:u4 from an A u4 / B 4u split (`d1bal170b/rec_f228v/disagreements.tsv`:
+v a_L02 c4, b_L01 c10, b_L05 c8, b_L06 c6). `b167228/sig2_tiles.py` cut them with SIG-B228's tile geometry, plus 3 decoys (f.228v h, gam, y+,
+already valued from f.229) and 2 anchors (v a_L01 c5 both D1-BAL170B passes read 4u; v b_L04 c1 both read u4), shuffled to U1-U9
+(`sig2/key_private2.tsv` held back), against SIG-B228's unchanged f.229 exemplar sheet (11 tiles, E-a = 4u, E-t = u4). Tile centres placed by
+this worker on gridded copies (location only). Two blind Sonnet reads (`sig2/prompt_shapes2.txt`; `sig2/shapesA.tsv`, `shapesB.tsv`), scored by
+`b167228/sig2_score.py`:
+| tile kind | read A | read B | result |
+|---|---|---|---|
+| decoy h = n | n | n | right |
+| decoy y+ = r | r | r | right |
+| decoy gam = u | s (low) | u (low) | split |
+| **decoy gate (>= 2 of 3 right by both)** | | | **2/3 PASS** |
+| anchor 4u (= a) | a | a | right |
+| anchor u4 (= t) | t | t | right |
+| target b_L01 c10 | a (high) | a (high) | a |
+| target b_L05 c8 | a (med) | a (med) | a |
+| target b_L06 c6 | a (high) | a (high) | a |
+| target a_L02 c4 | a (med) | a (low; second t) | a |
+All four targets take the f.229 4u value a, through `b167228/sig2_shape_map.tsv` (per-token override in to_pipe.py, shape asserted), grade M
+like every letter sign. The other f.228v s:u4 tokens that both D1-BAL170B passes read u4 (a_L01 c6, b_L03 c3, b_L04 c1/c3/c8) are unchanged (t).
+
+**The two v a_L01 71' marks (unit 2).** Tight crops (`sig2/N1-N8.png`, `sheet_marks.png`), two blind reads (`sig2/marksA.tsv`, `marksB.tsv`):
+both reads named "acute" for all 8 crops -- the 4 acute controls (4/4), both 71s, and both pre-registered "none" controls (v b_L02 13,
+v a_L01 16; 0/2). **Mark gate FAIL** (prereg item 6 needs >= 1 of 2 none-controls) -> no change; both 71' stay as transcribed (H).
+Note: SIG-B228's line-strip reads saw both 71s and both none-controls unmarked; these tight-crop reads see a stroke over all of them.
+Two sessions' reads of the same strokes reverse with crop size, so Sonnet mark detection on this hand is not a usable instrument at either
+scale (the eye on the crops sees a detached slanting stroke above 13 and 16 too, so the "none" labels of those controls may themselves be wrong).
+
+**Decode (rule 7).** `python3 b167228/to_pipe.py` then `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> `reading up to date`, exit 0.
+Changed reading lines (4 tokens t -> a): a_L02 `ge ci le a TOUS AJUSTEMENS ...`; b_L01 `... que cu la l a n`; b_L05 `POUR cu la l a n g ra ve`;
+b_L06 `le traitte que l le a fait`. **Counts, 154 cipher tokens:** H 71, M 70, I 12, U 1 before and after (the four tokens stay M). No C, no S.
+
+**Judge (b167228/judge_null.py unchanged, fr17 spec d4vb167/judge_spec_fr17.json, seed 20261008; output `b167228/judge_null_sig2.out`):**
+| text | SIG-B228 | SIG-B228B |
+|---|---|---|
+| reading_b170f228 (U dropped), N 294 letters, real_p05 -0.935 | -0.971: FAIL | **-0.925: PASS** (margin 0.010) |
+| shuffled key, all signs, 20 | median -1.258, max -1.046 | median -1.240, max -1.063 |
+| shuffled letter-sign values only, 20 | median -1.224, max -1.131 | median -1.240, max -1.134 |
+| positive control, f.229 same N, 3 segments | -0.790, -0.860, -0.825: 3/3 PASS | -0.790, -0.860, -0.825: 3/3 PASS |
+The PASS margin is 0.010 above real_p05: it rests on four M tokens set by an exemplar test whose decoy gate passed at its minimum (2/3).
+The four values were fixed by the blind reads before the judge ran and were not chosen to move it.
+**Period gloss through the same judge (rule 3, ZX-DEC349): none exists on disk for this hand at this length.** f.228-229 carry no interlinear
+gloss (survey.tsv c239-241 "absent"); the only transcribed glosses are 167 f.157 (gloss.tsv, 2 phrases, ~55 letters) and 168 f.110r
+(reconciled_b168f110r.tsv header, ~60 letters), other leaves and well under N 294; not scored.
+**External check (not a gate):** Tomokiyo's f.228r fragment "sont mal satisfaits de" -- f.228r is untouched by this job; still agrees at every token.
+
+**What f.228v now says (provisional; letters M; [ ] unread or doubtful).** "... tesmoigne qu'il a quelque crainte que [cu] la langrave et les ducs
+de Lunebourg ... avec les ennemis et qu'ainsy luy et Bavier soient contraincts de se retirer chacun de leur coste. Pour [cu] la langrave j'ay
+peine a le croire veu le traitte qu'elle a fait depuis peu avec le Roy, mais pour les ducs de Lunebourg c'est chose qui n'est pas ..." and,
+on a_L02, "... a tous ajustemens raisonnables pour le bien". The two "la l[?]ngrave" now read langrave and "que l le [t] fait" reads "qu'elle a
+fait", resolving the doubt SIG-B228 marked. One true sentence about content, for the verifier: the cipher says Chavigny doubts the
+Landgravine of Hesse-Kassel would come to terms with the enemy because of the treaty she has recently made with the King.
+Where not found: no gloss text of this hand to score; no printed text of f.228 searched (no network in brief).
+Subagents: 4 Sonnet calls (2 shape reads, 2 mark reads). Network: none. Rule 10: no novelty claim made here.
+`python3 tools/gaps_check.py baluze167-davaux-1637` -> `OK keep-going baluze167-davaux-1637: keep going: 3 internal gap(s), 1 step(s) untried`, exit 0.
+
+## Remaining gaps (SIG-B228B, 8 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: provisional reading audited (AUD1-B167: N3, D2, one audit).
+170 f.228r-v: provisional decode (SIG-B228B: H 71, M 70, I 12, U 1 of 154; fr17 PASS -0.925 vs real_p05 -0.935, margin 0.010).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 f.228r-v reading - blocker: not-attempted; the fr17 judge now passes by 0.010 but no verifier has ruled on the reading (brief SIG-B228B item 4: depth and novelty are a separate verifier's, sent by the lane after this job); next: a separate verifier session on reading_b170f228.txt, ~$3
+- 170 f.229r-v reading - blocker: waiting-on the answer of second audit AUD2-B167 (WORK-QUEUE.tsv, account 1) and the SO-BAL170-F229 reply (SECOND-OPINIONS-QUEUE.tsv); the letter signs stay M until a shape-level control on this hand; next for depth: a shape-level control (letter signs of this hand against the glossed 170 leaves), ~$3
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (8 Oct 2026, SIG-B228B)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762; Siblings section above
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values applied to f.228 (B167-228); f.228's unvalued shapes and the four u4/4u split signs matched to f.229 exemplars by two blind reads with decoys (SIG-B228, SIG-B228B)
+- [x] print: Avenel VI-VIII, Négociations secrètes t.1, Guébriant histories 1657 and 1913, IA/Google Books/OpenAlex/CrossRef phrase search (AUD1-B167); Tomokiyo's f.228 fragment agrees with the decode at every token (SIG-B228)
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); f.229 letter values settled (D4-B167, D4V-B167) and carried to f.228 (B167-228, SIG-B228, SIG-B228B); untried: a glossed text in the f.247 hand
+- [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167); 170 f.228 numeral marks re-read blind on line strips (SIG-B228) and tight crops (SIG-B228B: gate FAIL, the two scales reverse each other, so no further machine mark pass)
+- [x] retry: 170 f.228r re-cut and re-passed (D1-BAL170, D1-BAL170B), decoded (B167-228), re-decoded with external shape values and marks (SIG-B228) and the u4/4u signs (SIG-B228B)
+Verdict: keep going: 3 internal gaps; cheapest next: a separate verifier on the f.228 reading (the lane's next step), then the f.247-hand glossed-text search (~$3)
