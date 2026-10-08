@@ -461,5 +461,11 @@ Code-word tokens: H 8.
 
 Code-word tokens: H 12.
 
-Totals over the 55 entries: H 893, C 13, I 0, M 0.
+**E34 | Page 162 | 9056 | 24 Aug 1864 10.30 AM, to McCaine at Harper's Ferry (operator not given)**
+
+{time: 10.30 AM} to [P. H. Sheriden] [Harpers Ferry] I have no news [From the] [8] [Illinois] [Cavalry] orphrom Gansevoort [.] H refuge E justin from [Culpepper] which place he [Left] on Friday last [Report]'s no [Force]'s [Of the] [Enemy] there except a corn scripting party & small parties of [10] out [15] passing through daily [.] Fits shew [Lee] with his [Cavalry] about [3000] & part of [Longstreet] felton about [10000] [Left] there to [Join (-ed, -ing)] Early last Friday a week stop He thinks they went through Sperry will and Thorn towns [Gap] [.] Moss buy with [2] [Pieces] of [Artillery] [Attack (-ed, -ing)]ed the small [Cavalry] [Force] at Anandale this morning I have not yet heard [Of the] result the [Force] there is in a stockade  {tail: [signed] Bore Did you get letter yet}
+
+Code-word tokens: H 37.
+
+Totals over the 56 entries: H 930, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
