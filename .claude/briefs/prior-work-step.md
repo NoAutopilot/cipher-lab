@@ -1,19 +1,31 @@
 # Prior-work step (every brief that transcribes, keys, decodes, aligns, crops, looks up or audits an item)
 
 **Run the tool first** (`tools/prior_work.py`, PRIOR-WORK v1, 8 Oct 2026; rollout warn-first): before the first priced
-step, `python3 tools/prior_work.py <slug> --item <item_id> --step-type <read|transcribe|decode|crop|lookup|audit> --fetch` (offline
-except for that `git fetch origin main`; the target's state is read at origin/main, not from your working tree)
-(an item not yet in ciphers/<slug>/items.tsv: `--item-spec 'shelfmark=BnF fr.3040;folio=18r;date=1530-03-28;sender=..;recipient=..'`;
-a whole brief: `--brief <brief.md>`; a register before choosing job 1: `python3 tools/prior_work.py - --register
-NEXT-STEPS.tsv --columns next_step,parallel`),
-then `--network` for a single letter at intake, then `--reading <reading.txt> --network` after decode (G3), and paste its
-output. Obey the exit code: 3 DONE (stop, ROOM flag), 2 KNOWN with no named consumer (stop, or rerun with
-`--known-answer item:<unread id>` / `gate:<name>` for a known-answer or key check), 4 LOOK/LEAD/UNCHECKED owed (do that one
-look or read first, then `--record <row_id> 'CLEAR: ...'` or `'KNOWN: ...'`; it blocks this item only, never the lane), 0
-proceed on the CLEAR / KNOWN-PART residue it lists. `python3 tools/prior_work.py --help` lists every flag. Where v1 does not
-reach (its docstring's TODO list: WEB rows, WVO print codes, RAH copia classes, the printed-cipher router, edition volumes
-with no row in tools/data/prior_editions.tsv), **run the checklist below by hand** and paste one line per check (route,
-query, result) into the worker's NOTES section. A check that did not run is "unchecked", never "clear".
+step, `python3 tools/prior_work.py <slug> --item <item_id> --step-type <type> --fetch` (offline except for that
+`git fetch origin main`; the target's state is read at origin/main, not from your working tree; an items.tsv not yet pushed
+needs `--ref WORKTREE`). Step types: `read`, `transcribe`, `decode`, `crop` (they work the text); `key`, `align` (key
+rebuilding or alignment against a known text: KNOWN is their input, never a stop); `lookup`; `audit` (exits 3 DONE when
+an AUDIT.md/status.json class already covers the item -- a re-audit). Never DONE, whatever is on file: `second-audit`
+(the second adversarial audit of Outreach gate 2 / the Audit 2 column of VERIFY-BACKLOG.tsv), `upgrade-audit` (a class
+upgrade), `new-family-audit` (an audit over source families the first one did not cover) and `propagate-revision`
+(rule 10's carrying of a revised reading into AUDIT.md and the SO queue).
+An item not yet in ciphers/<slug>/items.tsv: `--item-spec 'shelfmark=BnF fr.3040;folio=18r;date=1530-03-28;sender=..;recipient=..'`;
+a whole brief: `--brief <brief.md>` (a per-item exit table; the run exits with the common code when every item agrees,
+4 when any item owes a look or read, 5 for a mix of proceed (0) and stop (2/3) -- proceed only on the items marked 0);
+a register before choosing job 1: `python3 tools/prior_work.py - --register NEXT-STEPS.tsv` (the step columns are
+autodetected: next_step,parallel for NEXT-STEPS, sibling,cheap_step for SIBLINGS, step for LOOSE-ENDS; `--columns` overrides),
+then `--network` for a single letter at intake, then `--reading <reading.txt> --network` after decode (G3; refused for a
+folder with a RESTRICTED.md, where `--reading` runs offline and logs phrases as hashes), and paste its output. Obey the
+exit code: 3 DONE (stop, ROOM flag), 2 KNOWN with no named consumer (stop, or rerun with `--known-answer item:<unread id>`
+/ `gate:<name>` for a known-answer or key check), 4 LOOK/LEAD/UNCHECKED owed (do that one look or read before the step,
+then `--record <row_id> 'CLEAR: ...'` or `'KNOWN: ...'`; any row that is not DONE can be answered, a false KNOWN included;
+it blocks this item only, never the lane), 0 proceed on the CLEAR / KNOWN-PART residue it lists. The "holds" line splits
+specific evidence (DONE, KNOWN, LEAD ...) from generic holds (LOOK, UNCHECKED): never quote an exit-code rate as recall.
+`python3 tools/prior_work.py --help` lists every flag. Where v1 does not reach (its docstring's TODO list: WEB rows, WVO
+print codes, RAH copia classes, the printed-cipher router, edition volumes with no row in tools/data/prior_editions.tsv,
+the aaymeloglu/unsolved-ciphers repository unless a local `--clone` is given), **run the checklist below by hand** and
+paste one line per check (route, query, result) into the worker's NOTES section. A check that did not run is
+"unchecked", never "clear".
 
 Owner, 8 Oct 2026: "Can we improve our chances of not solving already solved work?" and "must be applicable to other work, not
 just Eckert". Evidence: workflow wf_e1b87449-ccc mined all 68 AUDIT.md files and the room log (scratchpad copy in the account-3

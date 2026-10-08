@@ -1,0 +1,46 @@
+case	set	rec	slug	kind	step	spec
+L01	leak	0	fr2980-gramont	print	read	shelfmark=BnF fr.3040;folio=18r;date=1530-03-28;sender=Gramont;recipient=Montmorency
+L02	leak	137	pro3055-clinton-1779	print	read	shelfmark=TNA PRO 30/55/24/76;date=1780-07-06;sender=Clinton;recipient=Haldimand
+L03	leak	180	jan-van-nassau-1572-75	print	read	wvo=5200;date=1572-10-18;sender=William of Orange;recipient=Jan van Nassau;place=Zwolle
+L04	leak	188	bowes-walsingham-1583	print	read	shelfmark=BL Cotton Caligula C VII;folio=196r;date=1583-04-07;sender=Robert Bowes;recipient=Walsingham;place=Edinburgh
+L05	leak	193	na-janssens-java-1811	print	read	shelfmark=NA 2.01.27.05 invnr 12;folio=188;date=1811-06-22;sender=Janssens;recipient=Minister of Marine
+L06	leak	227	clair349-este-guise-1556	print	read	shelfmark=BnF Clairambault 349;folio=3;date=1557-01-04;sender=Cardinal of Ferrara;recipient=Guise
+L07	leak	236	es132-vargas-mexia-1578	print	read	shelfmark=BnF Espagnol 132;folio=90v;date=1578-09-19;sender=Philip II;recipient=Vargas Mexia
+L08	leak	4	eckert-1864	print	read	item_id=E6;ptr=8950;date=1864-04-26;sender=Halleck;recipient=Sherman;kind=ledger-entry
+L09	leak	104	eckert-1862	print	read	item_id=T1;date=1862-02-05;sender=McClellan;recipient=Halleck;kind=ledger-entry
+L10	leak	2	rah-juan-manuel-1521	gloss	read	decode=R9502;shelfmark=RAH 9/23;folio=40;date=1522-03-08;sender=Juan Manuel;recipient=Charles V
+L11	leak	134	nevers-birago-fr3251-1572	gloss	read	shelfmark=BnF fr.3251;folio=178r;date=1572-09-08;sender=Birago;recipient=Nevers
+L12	leak	196	fr5160-letellier-1653	gloss	read	shelfmark=BnF fr.5160;folio=86;date=1659-11-21;sender=Brienne;recipient=Servien
+L13	leak	211	fr16142-noailles-constantinople-1571	gloss	read	shelfmark=BnF fr.16142;canvas=262;date=1572-04-25;sender=Noailles;recipient=Charles IX
+L14	leak	221	fr16045-pisany-rome-1585	gloss	read	shelfmark=BnF fr.16045;folio=247r;date=1586-09-17;sender=Pisany;recipient=Henri III
+L15	leak	250	huntington-luzerne-destouches-1781	gloss	read	shelfmark=Huntington mssDE 108(A);date=1781-01-16;sender=La Luzerne;recipient=Destouches
+L16	leak	155	thurloe-printed	gloss	read	item_id=P2;shelfmark=Birch vol.2 pp.565-566;date=1654-08-25;sender=Stouppe;recipient=prince of Tarente
+L17	leak	79	eckert-1864	gloss	read	item_id=E79;ptr=9812;date=1864-08-05;sender=Quartermaster General;recipient=Capt. Thomas;kind=ledger-entry
+L18	leak	298	fr16104-vivonne-spain-1572	own	read	shelfmark=BnF fr.16104;folio=157r;date=1572-09-05;sender=Saint-Gouard;recipient=Charles IX
+L19	leak	299	lodewijk-van-nassau-1573-74	own	read	wvo=5810;date=1574-01-06;sender=Orange;recipient=Lodewijk
+L20	leak	276	fr16144-savary-lancosme-1588	own	crop	shelfmark=BnF fr.16144;canvas=380
+L21	leak	303	fr3621-dinteville-1592	own	lookup	shelfmark=BnF fr.3623;date=1592-07-05;sender=Dinteville;recipient=Nevers
+L22	leak	291	eckert-1864	own	read	item_id=N2-L;ptr=8953;date=1864-04-30;sender=Halleck;recipient=Banks;kind=ledger-entry
+L23	leak	239	nla-heinrich-braunschweig-1519	holder	read	shelfmark=NLA BU L 1 Nr. 548;folio=269r;sender=Heinrich;recipient=Anna
+L24	leak	81	eckert-1864	holder	read	item_id=E81;ptr=9858;date=1864-10-04;sender=Rucker;recipient=Webster;kind=ledger-entry
+L25	leak	121	eckert-1862	holder	read	ptr=4978/1;date=1862-02-11;sender=Colburn;recipient=Buell;kind=ledger-entry
+L26	leak	258	malsburg-hessen-1636	decipherment	transcribe	shelfmark=HStAM 4 h Nr. 1411;folio=3;date=1636-02-23;sender=Malsburg;recipient=Hesse-Kassel government
+L27	leak	213	hessen-1824	decipherment	read	shelfmark=HStAM 9 a Nr. 259;folio=249;date=1824-02-20
+L28	leak	231	oxenstierna-gustav-adolf-1632	decipherment	read	date=1632-07-23;sender=Gustav II Adolf;recipient=Axel Oxenstierna
+L29	leak	255	erving-monroe-1806	decipherment	read	shelfmark=LOC Monroe Papers mss33217 reel 3;date=1806-05-23;sender=George W. Erving;recipient=James Monroe;place=Lisbon
+L30	leak	238	gunther-van-schwarzburg-1561	decipherment	read	wvo=8246;date=1561-05-02;sender=William of Orange;recipient=Gunther von Schwarzburg
+S01	surv	0	fr2980-gramont	survivor	read	shelfmark=BnF fr.2980;folio=29r;date=1530-05-20;sender=Gramont;recipient=Villandry
+S02	surv	4	eckert-1864	survivor	read	item_id=N2-M;ptr=8982;date=1864-06-11;sender=Quartermaster General;recipient=Canby;kind=ledger-entry
+S03	surv	12	eckert-1864	survivor	read	item_id=E47;ptr=8922;date=1864-04-06;sender=Meigs;recipient=Biggs;kind=ledger-entry
+S04	surv	9	fr3416-nevers-fils-1589	survivor	read	shelfmark=BnF fr.3416;folio=35r;sender=Nevers;recipient=Rethelois
+S05	surv	18	lodewijk-van-nassau-1573-74	survivor	read	wvo=4610;date=1573-06-03;sender=Lodewijk;recipient=Orange
+S06	surv	26	fr20140-danzay-1557	survivor	read	shelfmark=BnF fr.20140;folio=35r;date=1557-01-27;sender=Danzay;recipient=Cardinal of Lorraine
+S07	surv	27	august-van-saksen-1561-64	survivor	read	wvo=126;date=1564-09-16;sender=Orange;recipient=Elector August
+S08	surv	32	nevers-birago-fr3251-1572	survivor	read	shelfmark=BnF fr.3251;folio=174r;date=1572-08-27;sender=Birago;recipient=Nevers
+S09	surv	42	thurloe-printed	survivor	read	item_id=P4;shelfmark=Birch vol.3 pp.187-189;date=1655-03-13;sender=William Stamford;recipient=Thurloe
+S10	surv	49	fr16104-vivonne-spain-1572	survivor	read	shelfmark=BnF fr.16104;folio=173r;date=1572-09-07;sender=Saint-Gouard;recipient=Charles IX
+S11	surv	53	fr3621-dinteville-1592	survivor	read	shelfmark=BnF fr.3621;folio=130r;decode=R9451;date=1592-07-04;sender=Dinteville;recipient=Nevers
+S12	surv	56	sachsstaatsarchiv-manteuffel-1712	survivor	read	shelfmark=Dresden Loc. 694/08;folio=410;sender=Manteuffel;recipient=Flemming
+S13	surv	60	decode-2678-bnf-colbert127-gravel-1665	survivor	read	shelfmark=Melanges de Colbert 127;folio=349;decode=R2678;date=1665-01-29;sender=Gravel;recipient=Colbert
+S14	surv	62	es132-vargas-mexia-1578	survivor	read	shelfmark=BnF Espagnol 132;folio=89r;date=1578-09-19;sender=Philip II;recipient=Vargas Mexia
+S15	surv	41	hellen-frederick-1752	survivor	read	decode=R1953;date=1752-01-04;sender=Hellen;recipient=Frederick II
