@@ -184,3 +184,31 @@ Depth stays **D1** ("fragments read"; 125/306 = 40.8% C on f.23, the gloss carri
 **Postmortem.** D2-COL26's result holds as registered; two over-propagated tokens lowered. A grade change that turns a tested code into
 an anchor must keep the test script runnable at HEAD (rule 7), and a sibling-key PASS applied back to a leaf with its own gloss is
 checked token by token against that gloss before C.
+
+## AUDIT 2 (second adversarial, V1-KNOWN, account 3, LANE-VERIFY-1, 8 Oct 2026, 16:1x UTC by date -u)
+
+Separate session from every solver of this folder, from DA1-COLV (AUDIT 1) and D2V-COL26 (addendum). Scope (brief V1-KNOWN): confirm N0
+(period gloss on the leaf) and D1 with D2V-COL26's grade change carried. Nothing decoded.
+
+### Prior-work checks 3-5 (`tools/prior_work.py` not on main; by hand)
+| check | route | result |
+|---|---|---|
+| 1 own work | grep AUDIT.md, NOTES.md, status.json, ROOM.md | AUDIT 1 + addendum; no live claim |
+| 2 leaf | `images/crops/canvas26_full.jpg` (f.23) viewed here | the second hand's interlinear gloss runs above the digit groups ("la charge de Surintendance des bastimens", "pour la charge de M. de Brienne", "Il vous cognoistroit et que vous le supplanteriez", "vous ferez un peu mieux cette charge que luy"), as AUDIT 1 s.1 quotes it |
+| 3/4 holder, edition | AUDIT 1 s.5/5a (APW, Le Clerc, print_check, open indexes, JSTOR rows queued) | not re-run: nothing a print could change below N0 |
+| 5 G3 | n/a | no N3+ sentence |
+
+### N0: confirmed for f.23 and f.24
+The plaintext of each leaf is its own period interlinear decipherment (rule 10 N0: decipherment of this very item already known). Key
+`period` (rebuilt by us from the gloss), text `known` (manuscript gloss; not located in print). AUDIT 1's safe sentences stand with the
+count carried: f.23 "125 of 306 tokens at grade C" (not 110), f.24 27 of 168.
+
+### D1: confirmed, D2V-COL26 carried
+`python3 tools/decode_key.py ciphers/colbert26-lathuillerie-1644 --check` (16:1x UTC): "reading up to date"; f.23 C 125, M 180, U 1;
+f.24 C 27, M 140, U 1 -- the addendum's counts (30 = s C on 15 tokens, two lowered to M by exceptions_f23.tsv). Longest contiguous C
+stretch counted from `reading_tokens_*.tsv`: **f.23 11 letters** (AUDIT 1's table says 10; one more since 30 = s became C), f.24 8 letters
+-- far below any authentication distance for a two-digit nomenclator, and C here is known plaintext from the gloss, not a reading from the
+key. **D1 ("fragments read") for both leaves.** status.json results[145] already carries C 125 / D1; only `audit_status` changes.
+
+Postmortem: no over-claim. Correction carried: AUDIT 1 s.4's "longest C stretch 10 letters" is 11 at HEAD (grade change, not an error).
+No SECOND-OPINIONS-QUEUE row exists or is owed (N0). PROGRESS.tsv: no row (none added). Requests: none (disk only).

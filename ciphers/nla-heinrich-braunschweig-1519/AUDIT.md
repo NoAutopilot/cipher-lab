@@ -138,3 +138,37 @@ sheet's letter set over the same numbers, H tokens only.
 
 Requests: www.googleapis.com 8 (all 200), be-api.us.archive.org 9 (all 200), api.openalex.org 4 (200),
 api.semanticscholar.org 2 (429, 429; stopped).
+
+## AUDIT 2 (second adversarial, V1-KNOWN)
+
+Verifier V1-KNOWN (account 3, LANE-VERIFY-1, session_01DfHeib8Hf3XPLUnNhGQbBW), 8 Oct 2026, 16:1x UTC by `date -u`. Separate session
+from R9-NLATX (solver), R9-NLACS (check-solved) and R9-NLAV (first audit). Scope (brief V1-KNOWN): confirm the N0 basis and the depth
+under `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`. Nothing decoded.
+
+### Prior-work checks 3-5 (`tools/prior_work.py` not on main; by hand)
+| check | route | result |
+|---|---|---|
+| 1 own work | grep AUDIT.md, NOTES.md, status.json, ROOM.md | read once (R9-NLATX) and audited once (R9-NLAV); no live claim |
+| 2 leaf | images on disk, `nla_bu_l1_562_aufn_0002.jpg` viewed here | f.55: "8. August 1522", a key table of 17 numbers to letters, signed "Dr. Grein 2/10 1858", then "Die betreffenden Worte lauten also: regimente, sonen, sone, vorlatinge, regimentes, reden, landtschop, land, vorlassinge, regimentes, landen, luden" -- the decipherment of this very item, on file beside the letter |
+| 3/4 holder, edition | R9-NLAV's s.3 log (Google Books, IA be-api, OpenAlex; Havemann, Stanelle) | not re-run: nothing a print could change below N0 |
+| 5 G3 | n/a | no N3+ sentence |
+
+### N0: confirmed
+Rule 10's N0 is "plaintext and decipherment of this very item already known"; the f.55 sheet (seen here) and f.268's list (R9-NLAV) are
+exactly that. Key `archival` (Grein's 19th-century sheets, credited; not of the time, not printed), as R9-NLAV set it. No novelty sentence
+of any kind is open; R9-NLAV's safe and unsafe sentences stand.
+
+### Depth under the 8 Oct depth bar: **lowered for Nr. 548 (D1); Nr. 562 holds D2**
+The bar (written after R9-NLAV's 6 Oct ruling) requires a contiguous H/C/S stretch longer than the authentication distance (AD, about
+1.5 x unicity, an unfitted external key not shrinking H(K)). Counted here from the committed `reading_tokens_<n>.tsv` (cipher stream in
+order, clear text excluded): longest contiguous H run **548: 17 letters** (17 M tokens break the stream); **562: 31 letters**. AD for a
+monoalphabetic table over a 20-letter (u/v folded) alphabet: H(K) = log2(20!/(20-k)!) = 61.1 bits for 548 (19 codes) and about 58 bits
+for 562 (17 codes on the sheet); at a redundancy of 3.0-3.2 bits/letter for Low German, unicity about 19-20 (548) and 18-19 (562)
+letters, AD about 29-31 (548) and 27-29 (562). So 562's 31-letter H run clears its AD (narrowly) and R9-NLAV's 562 sentence ("regimente
+... vorlatinge/vorlassinge ... sonen ... landtschop") is a true, specific sentence written from that reading: **D2 holds for Nr. 562**.
+548's longest run (17) is below its AD and no sentence about 548's content was written: **Nr. 548 is D1** ("fragments read") under the
+bar, against R9-NLAV's D2. Rule 4a lowers depth on any revision; the combined status.json row (both letters) takes the lower value,
+**D1**, with the split recorded in `depth_note`. Neither item counts either way (N0).
+
+Postmortem: no over-claim in class or wording; the 548 D2 was ruled before the depth bar existed. PROGRESS.tsv: no row (none added).
+Requests: none (images and TSVs on disk).

@@ -3896,19 +3896,21 @@
       "completeness": "167/190",
       "unresolved_spans": "23 numbers M (settled by a key-aware reconciliation); clear text untranscribed; Grein's list 2 (letter to 'den Drosten') belongs to a letter outside f.267-270",
       "audit_refs": [
-        "AUDIT.md '## 1. Verdict' (R9-NLAV)"
+        "AUDIT.md '## 1. Verdict' (R9-NLAV)",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
       "fields_source": "nla-heinrich-braunschweig-1519/AUDIT.md sections 1, 2, 5; H 167, M 23 of 190",
-      "depth": "D2",
+      "depth": "D1",
       "depth_pct": 87.9,
       "depth_sentence": "In the 1522 Trier letter the enciphered words concern the 'regimente' (government), its 'vorlatinge'/'vorlassinge' (relinquishing), 'sonen' (sons) and the 'landtschop' (estates of the land), the matter the archive's wrapper summarises as the duke's intentions about resuming the government.",
       "depth_check": "archivist's word list (Grein 1858/1860) agrees 166/167 H letters, 13/14 zero-M words, shuffled-key control p95 0.24; shares Grein's key, so checks our transcription, not the key; not D3: cipher words not yet read in their clear-text sentences (R9-NLAV 6 Oct 2026)",
-      "depth_by": "R9-NLAV",
-      "depth_date": "6 Oct 2026",
-      "decode_status": "Partially decrypted"
+      "depth_by": "R9-NLAV; lowered by V1-KNOWN (account 3) under the 8 Oct depth bar",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "depth_note": "Nr. 562 D2 (31-letter contiguous H run > AD ~27-29); Nr. 548 D1 (longest H run 17 < AD ~29-31, no 548 sentence); combined row takes D1"
     },
     {
       "date": "6 Oct 2026",
@@ -3978,9 +3980,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, AM-ECKV)'"
+        "AUDIT.md '## AUDIT (propagation, AM-ECKV)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D4",
       "depth_pct": 100.0,
@@ -4062,9 +4065,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D4",
       "depth_pct": 100.0,
@@ -4098,15 +4102,16 @@
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)' section 4",
       "depth_sentence": "Halleck tells Grant that the Secretary of War wants Ellet's Marine Brigade assigned to protect the leased plantations on the Mississippi.",
       "depth_check": "OR I/32 pt 2 p.407 prints the same telegram; decode_no2.py --check re-derived by the verifier",
-      "depth_note": "code words H 17"
+      "depth_note": "V1-KNOWN 8 Oct 2026: derived block reads 'leased [communication]s' (C) where the ledger's 'plant = a = tions' is the plain word plantations (OR I/32 pt 2 p.407); solver fix pending (mark plain, re-run decode_no2.py); the 17 code words are H, class and depth unchanged"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 92.3,
@@ -4146,9 +4151,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D4",
       "depth_pct": 100.0,
@@ -4188,9 +4194,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 94.7,
@@ -4356,9 +4363,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 92.0,
@@ -4440,9 +4448,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'"
+        "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 91.7,
@@ -4482,9 +4491,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 88.2,
@@ -4500,7 +4510,7 @@
       "title": "Eckert 1864: the Secretary of War to Dana, 11 June 1864, no confidence in Barnard (N2-AZ)",
       "grade": "N1",
       "line": "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in PUSG vol. 11 (page not established).",
-      "gap": "printed text exists; no novelty",
+      "gap": "printed text exists; no novelty; PUSG vol. 11 page still not established (V1-KNOWN 8 Oct 2026: HTRC EF API 500 twice)",
       "phrases": [
         "Huntington mssEC 19 p.91, pointer 8983"
       ],
@@ -4524,9 +4534,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D4",
       "depth_pct": 100.0,
@@ -4566,9 +4577,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 94.6,
@@ -4608,9 +4620,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 93.8,
@@ -4650,9 +4663,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D4",
       "depth_pct": 100.0,
@@ -4692,9 +4706,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 93.7,
@@ -4734,9 +4749,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (propagation, D4-VP2)'"
+        "AUDIT.md '## AUDIT (propagation, D4-VP2)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN)'"
       ],
-      "audit_status": "one audit (propagation)",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 95.5,
@@ -4777,9 +4793,10 @@
       "key": "period",
       "audit_refs": [
         "AUDIT.md '## AUDIT 1 (verifier DA1-COLV ...)'",
-        "AUDIT.md '## AUDIT 1 addendum (D2V-COL26 ...)'"
+        "AUDIT.md '## AUDIT 1 addendum (D2V-COL26 ...)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-KNOWN ...)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D1",
       "depth_pct": 40.8,

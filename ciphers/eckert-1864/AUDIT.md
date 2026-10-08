@@ -3912,3 +3912,71 @@ wrong book):
   are not this brief's files).
 - Correction (reader's file, for a reader, ~$0.1): N2-BU "Gov Bruff" = Governor Brough (print); no class change.
 - Requests: in the ROOM done line.
+## AUDIT 2 (second adversarial, V1-KNOWN)
+
+Verifier V1-KNOWN (account 3, LANE-VERIFY-1, session_01DfHeib8Hf3XPLUnNhGQbBW), 8 Oct 2026, 16:02-16:17 UTC by `date -u`. A separate
+session from every solver of these entries (O9-AE, AM-ECK64N2/K, ECK64-NO2, D4-E5, D4-E5H) and from their first auditors (AM-ECKV,
+ECK64-NO2-V, D4-VP2); not protecting any of their conclusions. Scope: the 14 Cipher No. 2 entries at N1 with one audit (VERIFY-BACKLOG
+`audit2` rows): N2-L, N2-N, N2-O, N2-P, N2-Q, N2-S, N2-U, N2-AZ, N2-BA, N2-BB, N2-BC, N2-BD, N2-BE, N2-BF. A record correction, not a
+novelty search: open each cited print at the page, diff it against reading-no2.md's derived text, check the holder's public
+transcription for a decoded field. Nothing decoded; solver files untouched.
+
+### 1. Prior-work checks 3-5 (`tools/prior_work.py` not on main at 16:02 UTC; checks by hand)
+| check | route | query | result |
+|---|---|---|---|
+| 1 own work | grep AUDIT.md, reading-no2.md, status.json, ROOM.md | N2-L..BF ids, pointers | each entry already read and audited once (AM-ECKV, ECK64-NO2-V, D4-VP2); no live claim on these 14; nothing re-read |
+| 3 holder | Huntington CONTENTdm item info, cached `sources/mssEC19/p<pointer>.json` (committed 8 Oct 2026) for 8953, 8902, 8906, 8915, 8944, 8971, 8978, 8983, 8985, 8986, 8987, 8988, 8989, 8990, 8996, 8997; live re-fetch of 8983 | `transc`, `notes`, every non-empty field | fields: title, transc (+ notes, telnum on the live record). Every `transc` is the ledger verbatim with the code words undecoded (e.g. 8983 "I hope Crowd will not put too much confidence in Barnard stick"); live 8983 `transc` byte-identical to the cache; notes only on routing words. **No decoded field: no N0 from the holder** for any of the 14 |
+| 3 portal/solvers | earlier families of this file (Zooniverse Talk, project blog, both solver repositories, 20-26 Sept) | not re-run | no decoded field on the project as of those passes |
+| 4 edition | OR djvu full texts on IA, fetched once to scratch: I/32 pt 2 (warofrebellion322unit), I/34 pt 3 (343unit), I/34 pt 4 (344unit; one 500, one retry 200), I/36 pt 3 (363unit), I/37 pt 1 (371unit), I/37 pt 2 (372unit), I/40 pt 2 (402unit); PUSG vols 10-11 by IA be-api fts | phrase per entry (table 2), page = running head before the phrase, script | every cited OR page confirmed (table 2); PUSG 10 and 11 phrases found (page not given by be-api) |
+| 5 G3 | n/a | -- | no N3+ sentence is written here; every class is N1 on a print already located |
+
+### 2. Print at the page (script: whitespace-normalised phrase search, running-head page before and after the hit)
+| entry | print cited | phrase found | page here | diff of print vs derived text |
+|---|---|---|---|---|
+| N2-L | OR I/34 pt 3 p.358 | "no troops be withdrawn" | 358 | word for word ("Shreveport & on Red River", "until further orders"); the OR prints the Steele copy, the ledger the Banks + Steele heading |
+| N2-N | OR I/32 pt 2 p.407 | "leased plantations", "Marine Brigade be" | 407 | agrees except: print "important **by the Government** that leased **plantations**"; ledger omits "by the Government" (copy variant). **The derived block reads "leased [communication]s" (C): wrong, see section 3** |
+| N2-O | OR I/32 pt 2 p.494 | "further information of Longstreet", "keep us advised here" | 494 | word for word |
+| N2-P | PUSG vol. 10 | be-api: "transfer troops from General Steeles Command unless at your request." ALS (telegram sent), DNA, RG 107 | page not given by be-api | word for word (print adds "General") |
+| N2-Q | PUSG vol. 10 p.343 (ECK64-NO2-V, Google Books snippet) | be-api: "It has been waiting a long time and I have no cavalry except the third New Jersey" ALS (telegram sent) | p.343 not re-confirmed (be-api gives no page) | word for word; Annapolis correction **applied**: ciphertext-no2.txt marks "Ann Apple is" plain, derived text "started from Ann Apple is", counts H 18, I 1 (`decode_no2.py --check` current) |
+| N2-S | OR I/36 pt 3 p.207 | "Your instructions of yesterday", "for want of water" | 207 | word for word (ledger time word "12 noon" = print "12 m.") |
+| N2-U | OR I/40 pt 2 p.47 | "You will succeed", "God bless you" | 47 | word for word (ledger "suck seed" = succeed) |
+| N2-AZ | PUSG vol. 11, page not established | be-api: "confidence in, Barnard", "deplorable results" (1 hit each) | **page still not established** (below) | agrees; ledger "is in large degree" vs the printed draft's struck words (D4-VP2) |
+| N2-BA | OR I/34 pt 4 pp.424-425 | "I learn that the gauge" (424), "can be had ready built" (425) | 424-425 | word for word |
+| N2-BB | OR I/40 pt 2 p.116; I/37 pt 1 p.644 (D4-VP2's correction) | "German engineer", "verified by others" | 116; 644 | word for word; D4-VP2's page correction (not 117 / 645) confirmed |
+| N2-BC | OR I/37 pt 1 pp.650-651 | "possession of Staunton" (650), "communication to him from this side" (651) | 650-651 | word for word |
+| N2-BD | OR I/34 pt 4 p.528 | "limited to the defensive", "shortest time to serve" | 528 | word for word |
+| N2-BE | OR I/37 pt 2 p.119 | "considerable alarm in", "Maryland Heights, at Hagerstown" | 119 | word for word |
+| N2-BF | OR I/36 pt 3 p.569 | "remounted here", "moving against Marietta", "6,683" | 569 (next detected head 571; 570's head lost in the OCR, as D4-VP2 found) | word for word |
+
+N2-AZ page: tried the HathiTrust route for a page locator (Bibliographic API, series OCLC 382397: v.11 = mdp.39015074927263,
+wu.89062231709, mdp.49015002159110, all "Limited (search-only)"); the HTRC Extracted Features API answered HTTP 500 ("No primary node is
+available") twice (one retry after a pause), so the page could not be placed by token counts. Still "page not established"; next step a
+person's page look in the IA lending reader (papersofulyssess0011gran) or the EF API once it answers (~$0.10).
+
+### 3. Correction found: N2-N "plant = a = tions" (regression after the first audit)
+ECK64-NO2-V counted N2-N as 17 H. The derived block now reads "It is deemed [Important] that leased **[communication]s**" with
+"Code-word tokens: H 17, C 1": D4-E5 later added key-no2.md section 8's clerk's form `plantation = communication` (C, one witness, N2-BC),
+and the decoder now matches the clerk's split "plant = a = tions" in N2-N to it. The print (OR I/32 pt 2 p.407) has "leased
+**plantations** on the Mississippi River" -- the ledger's "plant = a = tions" is the clear word plantations written in syllables, the same
+shape as N2-Q's "Ann Apple is". The C token is a misreading of a plain word, not a cipher token. Next step for a solver (a verifier does
+not decode): mark `plain: plant = a = tions` (or the decoder's equivalent) on N2-N in ciphertext-no2.txt, re-run `decode_no2.py`, and
+check the other blocks for the same section-8 form matching a clear word (~$0.10). The 17 code-word tokens are all H and right, so
+class (N1) and depth (D4) are unchanged; the status.json row notes the pending correction.
+
+### 4. Classification (second audit) -- all 14 confirmed **N1**, key `period` (Cipher No. 2, mssEC 47), text `known`
+Prior plaintext: yes for every entry, in the print at the page in table 2 (OR, or PUSG for N2-P, N2-Q, N2-AZ). Prior decipherment of
+this ledger copy: none located (the holder's transcription leaves every code word undecoded; the prints come from the War Department's
+received or sent copies). So not N0; N1 stands for all 14. Depth: unchanged from the first audits (N2-L D4, N2-N D4, N2-O D3, N2-P D4,
+N2-Q D3, N2-S D3, N2-U D3, N2-AZ D3, N2-BA D4, N2-BB D3, N2-BC D3, N2-BD D4, N2-BE D3, N2-BF D3); the prints confirm each first auditor's
+content sentence. Safe sentence for each: "The Cipher No. 2 ledger copy reads, with the period book, to the text printed in <print,
+page>." Unsafe: anything implying the content was unknown; for N2-N, quoting the derived block's "leased communications".
+SECOND-OPINIONS-QUEUE.tsv: no row exists for any of the 14 (grep), and none is owed (N1).
+
+### 5. Postmortem
+- No over-claim in class or wording. One reading error introduced after the first audit (N2-N, section 3): a section-8 clerk's form
+  added for one block re-read a plain word in an older block. A section-8 row should be tested against every earlier block's clear
+  syllables before it is committed (one-line suggestion; not applied to briefs here).
+- PROGRESS.tsv carries no eckert-1864 row (D4-VP2); none added.
+
+Requests: archive.org 10 (8 djvu fetches incl. one 500 + retry, 2 metadata), be-api.us.archive.org 7 (2 empty replies), hdl.huntington.org 1,
+catalog.hathitrust.org 1, data.htrc.illinois.edu 2 (500, 500; stopped); all >= 1.5 s apart.
