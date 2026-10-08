@@ -1,0 +1,10 @@
+# D2-DEC2 concordance of no. 11's drawn signs with R13-SIENAJ's blind ids (no. 7/19/9). Certain: '=' -> B07, '+' -> C07 (named directly
+# in inv_no11.tsv). Doubtful pairs below are merged only in the descriptive --liberal run, never in the scored one. R13-SIENAJ's own rows kept.
+liberal_id	members	judgement
+DLOOP	J19 I07 C09 M11	R13 rows plus no. 11's M11: doubtful, hooked-back d, but no. 11's is mostly barred above
+YOGH	D19 H07	possible: 3 with tail; no. 19's tail longer
+BETA	H19 J07	doubtful: no. 19's has a z-like lower bowl, no. 7's a plain stem
+LAMBDA	L19 E07 D09	doubtful: lambda / inverted y / inverted v
+PBAR	D07 E09 B19	doubtful: p with crossed descender (no. 19's B19 is i-like, psi-shaped)
+OBAR	B09	(no counterpart judged)
+HASH	A07 D11	doubtful: no. 7's '#' double-barred cross vs no. 11's double-barred dagger

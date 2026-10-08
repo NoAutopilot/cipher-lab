@@ -1,0 +1,40 @@
+# R13-SIENAJ blind inventory, no. 7 (DECODE R4796 P1), cipher stretches of lines L01 end - L12; read by eye from line bands
+# (iiif_lines.py --image ... --region 60,2540,2190,620, then 3-line 1.5x autocontrast PIL strips of the same bands), 6 Oct 2026 17:4x UTC;
+# agent J's transcripts not opened. Glosses above the line (e over '2' etc.) excluded. count = rough.
+id	kind	description	count	where
+c	letter	c (mostly in co/cco)	20+	all lines
+o	letter	o (oo, co)	30+	all lines
+p	letter	p	15+	all lines
+t	letter	t	4	L02, L03
+x	letter	x	20+	all lines
+m	letter	m	6	L02, L03, g1, g2, g3
+k	letter	k	5	L02, L03, g1_1, g2_1
+f	letter	f	5	L03, g1, g2_1
+a	letter	a	8	L03, g1_1, g2, g3
+S	letter	capital S	5	L02, L03, g2_1, g3_0
+H	letter	capital H	2	L03, g1_1
+q	letter	q / q with bar	6	L03, g1_1, g2_1, g3
+g	letter	g	2	L02, g3_0
+b	letter	b	3	g1_0, g2_0, g2_1
+v	letter	small v	1	g2_1 'f v ='
+1	digit	1	4	g1_1, g3
+2	digit	2 (r-rotunda-like)	8	all lines
+3	digit	3	15+	all lines
+4	digit	4	15+	all lines
+5	digit	5	3	g2_1, g3 'x35m'
+6	digit	6 (flat-topped)	6	L03, g1, g2
+7	digit	7	3	g1_0, g2_1
+8	digit	8	12	all lines
+9	digit	9	3	L01, g2_0, g2_1
+A07	drawn	# double-barred cross	12+	all lines
+B07	drawn	= double bar	4	L02, g1_1, g2_1, g3_0
+C07	drawn	+ cross	8	L02, g1_1, g2, g3
+D07	drawn	p with crossed descender (ꝑ)	4	L02, L03, g3_1
+E07	drawn	inverted-y / lambda-like (ʎ)	8	L02, L03, g1, g2_1, g3
+F07	drawn	6/G with bar through (Ꝋ-like)	1	L02 start
+G07	drawn	circle with vertical stroke (φ)	5	g2_0, g3 x3
+H07	drawn	3 with tail, yogh-like (ȝ)	3	g1_0, g2_0, g3_0
+I07	drawn	d with backward loop (∂)	4	L03, g1_1, g3 x2
+J07	drawn	B/ß-like with stem	2	L03 end, g2_0
+K07	drawn	U/horseshoe sign	2	g2_1
+L07	drawn	o-slash-o, percent-like	1	g2_1

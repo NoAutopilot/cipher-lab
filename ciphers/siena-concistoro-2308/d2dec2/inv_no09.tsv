@@ -1,0 +1,24 @@
+# R13-SIENAJ blind inventory, no. 9 (DECODE R4798 P1), cipher on lines 5-6 and the 'YVMq3.Z' group (line 8 right); read by eye from
+# iiif_lines.py --image ... --region 450,980,2200,230 crops plus one 2x PIL zoom of the line-8 group, 6 Oct 2026 17:4x UTC; agent J's
+# transcript not opened. Two blotted signs (after 'x' on line 5, and after the point) not inventoried (illegible at this size).
+id	kind	description	count	where
+o	letter	o	4	L5, L6
+x	letter	x	2	L5
+q	letter	q	5	L5 x3, L6 x1, line 8
+b	letter	b (open-bowl)	3	L5 x2, L6
+V	letter	capital V	3	L5, L6, line 8
+p	letter	p	3	L6 x3
+m	letter	M/m	1	line 8
+Z	letter	capital Z	1	line 8
+2	digit	2	4	L5 x3, L6
+3	digit	3	2	L5, line 8
+4	digit	4	1	L5
+6	digit	6	2	L5, L6
+7	digit	7	3	L5 x2, L6
+9	digit	9	6	L5 x3, L6 x3
+A09	drawn	square (□)	1	L5
+B09	drawn	o with overbar (oo overlined)	3	L5, L6 x2
+C09	drawn	d with backward loop (ꝺ/∂), partly blotted	1	L5 end
+D09	drawn	inverted v / lambda-like (ʌ)	1	L5 after b
+E09	drawn	p with crossed descender (ꝑ)	1	L6 start
+F09	drawn	Y with cross stroke (ɏ)	1	line 8

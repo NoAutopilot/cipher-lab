@@ -1,0 +1,42 @@
+# R13-SIENAJ blind inventory, no. 19 (DECODE R4807, single image), cipher passages of the last four lines; read by eye from line crops
+# (iiif_lines.py --image ... --region 500,1230,3300,560, plus 2x PIL zooms of the same bands), 6 Oct 2026 17:4x UTC; agent J's
+# transcripts not opened. count = rough count over the four lines.
+id	kind	description	count	where
+k	letter	k (ꝁ-like, lz)	5	L1 L2 L3 L4
+g	letter	small looped g	1	L1 'k g'
+f	letter	long f with crossbar and descender (ꝼ)	5	L1 x2, L2, L4 x2
+V	letter	capital V	1	L1
+u	letter	u	2	L1, L3 'pu'
+s	letter	round s	2	L3 'krs', L4 's4'
+ſ	letter	long s	4	L1 x2, L3 x2
+i	letter	i	4	L1 x3, L3
+b	letter	b	1	L1 'b7r'
+r	letter	r (round form)	5	L1, L2, L3, L4 x2
+o	letter	o	4	L2, L3, L4
+p	letter	p	4	L2, L3 x2
+c	letter	c (between points)	2	L3 x2
+S	letter	capital S (between points)	1	L3
+t	letter	t (doubled tt)	4	L3, L4
+q	letter	q	1	L3
+m	letter	m	1	L3
+x	letter	x (with tail)	1	L3 '9x8'
+0	digit	0	3	L2 '10' x2, L4
+1	digit	1	5	L2, L4
+3	digit	3	5	L2, L3, L4 x3
+4	digit	4	2	L1, L4
+6	digit	6	1	L3
+7	digit	7	8	L1 x2, L2 x4, L3, L4 x2
+8	digit	8	4	L2, L3 x2, L4
+9	digit	9	3	L1, L2, L3
+A19	drawn	7/z with crossbar and p-like descender	2	L1 after u, L3 end
+B19	drawn	i with crossed descender, psi-like	1	L1 after the point
+C19	drawn	two stacked tildes (≈)	2	L1 x2
+D19	drawn	3 with long tail, yogh-like (ȝ)	2	L1, L2
+E19	drawn	inverted triangle (∇)	9	L1 x2, L2 x3, L3 x2, L4 x3
+F19	drawn	S with hooked top and descender (g-like)	4	L1, L3 x2, L4
+G19	drawn	flag/pennant sign (partly blotted)	1	L1 start
+H19	drawn	B/ß with z-like lower bowl	5	L2 x3, L3 x2, L4
+I19	drawn	$-like cross-barred s, standing alone between clear words	1	L2 'afferma _'
+J19	drawn	d with backward loop (∂)	1	L2
+K19	drawn	upright triangle with stem through (Δ with descender)	2	L3 x2
+L19	drawn	lambda (λ)	1	L3

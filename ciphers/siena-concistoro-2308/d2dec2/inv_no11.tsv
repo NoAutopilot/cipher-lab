@@ -1,0 +1,47 @@
+# D2-DEC2 blind inventory, no. 11 (DECODE R4800 P2, Donato Acciaiuoli, dated "13 Junij 1478"), two cipher blocks (5 + 5 lines) read by eye
+# from tools/iiif_lines.py --image IMG_R4800_I27945_P2.jpg crops (--region 1400,650,2050,500 --centres 160,205,252,301,358; --region
+# 1400,1080,2050,700 --centres 273,320,371,422,473,550), 8 Oct 2026 07:5x UTC. Bourdeau's/agent transcripts of no. 11 not opened.
+# R13-SIENAJ convention: plain Latin letter or Arabic digit named as itself; any other drawn sign an id; dots '.' and the clear text excluded.
+# Cross-letter: '=' and '+' judged certainly the same as no. 7's B07 / C07 (named with those ids); every other drawn sign keeps its own id.
+id	kind	description	count	where
+a	letter	a	12+	A, B
+b	letter	b	10+	A, B
+c	letter	c	5	A L4, B L4-5
+d	letter	d	5	A L4, B L4-5
+g	letter	g (long-tailed)	6	A, B
+m	letter	m (also with superscript n, see F11)	3	A L4, B L1
+n	letter	n	8	A, B
+o	letter	o	40+	all lines
+p	letter	p	4	A L2, A L5, B L4
+q	letter	q (plain)	15+	all lines
+s	letter	s	15+	all lines
+t	letter	t (lower case, in 'to')	20+	all lines
+T	letter	T capital	5	A L1, B L2, B L5
+z	letter	z	4	A L2, B L3
+E	letter	E capital (in 'SET', 'ES')	2	A L5, B L5
+w	letter	w (round, omega-like)	15+	all lines
+0	digit	0	2	B L3, B L5
+2	digit	2	5	A L1, B L1, B L3, B L4
+3	digit	3	15+	all lines
+4	digit	4	3	B L4
+5	digit	5	2	A L2, A L5
+6	digit	6	6	A L2, A L5, B L2, B L5
+7	digit	7	4	A L3, B L1
+8	digit	8	2	B L1, B L3
+B07	drawn	= double bar (same as no. 7's B07)	1	B L5
+C07	drawn	+ single cross (same as no. 7's C07)	20+	all lines (mostly before o)
+A11	drawn	11 two vertical strokes as one unit	25+	all lines
+B11	drawn	/// three oblique strokes	3	A L3, A L4, B L1
+C11	drawn	// two oblique strokes	3	A L1, B L1, B L3
+D11	drawn	double-barred dagger (two crossbars on a stem)	20+	all lines
+E11	drawn	triple-barred stem (#-like, three crossbars)	8	A L1, A L4, B L1-2, B L5
+F11	drawn	m with superscript n	3	A L2, A L5, B L1
+G11	drawn	inverted T (perpendicular)	8	A L1-2, A L4, B L1, B L5
+H11	drawn	pi	6	A L1, A L3, B L3, B L5
+I11	drawn	reversed E / epsilon backwards	3	A L1-2, B L2, B L4
+J11	drawn	circle with dot / point (circumpunct)	2	B L2, B L5
+K11	drawn	q with crossed descender	10+	all lines
+L11	drawn	n with crossed hooked tail (n-4 ligature)	8	A L2-3, A L5, B L3-4
+M11	drawn	d/delta with backward-hooked ascender, often barred above	6	A L1, A L4, B L1-2, B L5
+N11	drawn	short horizontal dash between signs	10+	all lines (o-o, w-o)
+O11	drawn	z-x ligature (zx)	2	A L2, B L2
