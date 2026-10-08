@@ -68,7 +68,7 @@ exit=0
 ## Remaining gaps
 
 Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
-- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes, 60 clusters) but the width/position mapping of boxes to transcription positions labels only ~5 of 19 sampled tiles right, so the sorter page was not built for the owner; next: box-numbered strips (`glyph_atlas.py classify --strips`) + two blind reads per box, then sorter/build_inputs.py, ~$7.5
+- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19 right, box-numbered strip reads (BERGH-STRIP) 16/19, FAIL against the pre-registered 17 (atlas over-segments: 39% of read boxes are pieces; stacked leader lines); sorter page not built; next: sign-group reads ("boxes 3+4 -> y") on the same 19 gate windows with a de-stacked number layout, then all boxes and sorter/build_inputs.py, ~$7.5
 - Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777), Latin (la17, 0.611) and Dutch (nl16, 0.681, NL16-11106) and at a merged K38 in French (FAM-11106L); Bergh's six WVO sibling letters 1574-77 are in French (2) and German (4), none Dutch; single-letter homophonic is now negative in all four candidate languages, so the open question is the design, not the language; next: the multi-sign family (below)
 - Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
 - Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
@@ -80,9 +80,9 @@ Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct
 - [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
 - [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
 - [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17, nl16 (NL16-11106) and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); the syllabary/multi-sign family is untried.
-- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106), box labels by alignment failed the eye check; box-numbered reads next, then the owner's sorter.
+- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106), box labels by alignment failed the eye check (5/19); box-numbered strip reads (BERGH-STRIP) 16/19, FAIL at the pre-registered 17 (over-segmentation, leader layout); sign-group reads next, then the owner's sorter.
 - [ ] retry: the syllabary/multi-sign family after the inventory is settled.
-Verdict: keep going: 4 internal gaps; cheapest next: box-numbered strip reads on the GLY-11106 atlas so the sorter piles are per box, ~$7.5, then the syllabary/multi-sign family once the inventory is settled, ~$1
+Verdict: keep going: 4 internal gaps; cheapest next: sign-group reads (box numbers -> one sign) on the 19 BERGH-STRIP gate windows with a de-stacked layout, so the sorter piles are per sign, ~$7.5, then the syllabary/multi-sign family once the inventory is settled, ~$1
 
 ## While waiting
 
@@ -341,3 +341,60 @@ numbered; two blind Sonnet reads of the numbered strips (one call per half page 
 ~$7.5 at 1.5/call) give box-level labels, remove the "one pass has a sign the other lacks" splits and the joined-box problem (a reader
 marks a box as two signs), and make the purity check a real test of the atlas. Then rebuild sorter/ from those labels.
 Report what was found and where it was not found; novelty is not classified here (rule 10).
+
+## BERGH-STRIP: box-numbered strip reads on the GLY-11106 atlas (LANE FAMILY, account 2, 8 Oct 2026, 22:18-22:3x UTC by `date -u`)
+
+Prior work: `tools/prior_work.py wvo-11106-bergh-1572 --item-spec 'shelfmark=WVO 11106;wvo=11106;date=1572-09-19;sender=Willem van den
+Bergh;recipient=Willem van Oranje' --step-type crop --fetch` exit 4 (LEAD 4 live claims, LOOK 1, UNCHECKED 3); answered with `--record`
+(FAM-11106T/FAM-11106L/NL16-11106 claims have done lines at ROOM 11210/11254/11332, the fourth is this job's own claim; leaf look =
+FAM-CS11106 Premise check (c); solver repos and Groen/Gachard = FAM-CS11106 by hand; this step reads shapes, not plaintext); re-run exit 0
+("proceed on the residue: whole item"), UNCHECKED-NET 1 (aaymeloglu repo not cloned). Check 1 by hand: no atlas/box_sign.tsv, no
+atlas/strips/, no PREREG-BERGH-STRIP.md before this job; GLY-11106 claim has its done line. Disk only, 0 network requests.
+
+**Crop step (pasted).** The strips are cut from the committed line crops of FAM-11106T, `python3 tools/iiif_lines.py --image p-000.jpg
+--out images/crops --region 470,280,2050,2070 --prefix p2 --debug --mask-neighbours --mask-margin 50 --mask-keep 0.2` (22 lines), by
+`python3 ciphers/wvo-11106-bergh-1572/atlas/strips.py --gate`: one window strip per gate box (640 px of the line around it, 2x, <= 1280 px
+wide), every atlas box whose centre falls in the window outlined and given a window-local number in a band below, the gate box not marked
+out; 19 strips, 285 numbered boxes; number -> sid in atlas/strips/key.tsv (never shown to the readers). The PNGs are not committed
+(8 MB, regenerated byte-for-byte by the same command; key.tsv regenerates identically, checked).
+
+**Pre-registration:** PREREG-BERGH-STRIP.md, pushed 4b08c4405 (22:22 UTC) before any strip was read: truth for GLY-11106's 19 eye-checked
+boxes, hit = both blind passes agree and the label is accepted (listed look-alike pairs accepted as each other, FRAG/OTHERLINE as
+fragment), a split is a miss, no reconciler arbitration on gate boxes; PASS >= 17/19.
+
+**Reads:** two blind Sonnet passes (A: strips 1-10, 11-19; B: 19-11, 10-1, reverse order), sign list tx/signlist.md and strip paths only;
+4 vision calls. Files atlas/strips/passA.tsv (285 rows), passB.tsv (282: B skipped 3 numbers, scored as splits).
+
+**Result (`python3 atlas/score_strips.py atlas/strips/passA.tsv atlas/strips/passB.tsv`; `--check` regenerates atlas/box_sign.tsv):**
+
+| | value |
+|---|---|
+| gate, 19 eye-checked boxes | **16/19 -- FAIL** (pre-registered PASS >= 17) |
+| baseline, alignment mapping (atlas/boxmap.tsv) on the same 19 | 5/19 (6/19 counting the r/yx box) |
+| A/B agreement, all 285 numbered boxes | 223/285 = 0.782 |
+| agreed boxes read as a fragment / other line's tail | 87/223 = 39% |
+| agreed boxes holding two or more signs | 8/223 |
+| splits by kind (62) | sign vs sign 34, one pass says fragment 15, one says joined 10, B row missing 3 |
+| old alignment label = agreed single-sign read | 26/109 (24%) |
+
+The three misses, looked at on the strips after scoring (the score is not changed by this):
+- gate_07 #4, L06_01_004 (truth y): both passes read **9**. The atlas box holds the head of the y only; its tail is a separate box (#3).
+  The readers labelled the piece inside the outline as a whole sign, as instructed ("be literal").
+- gate_15 #6, L18_01_007 (truth fragment): A **u**, B **n?**. The box is the right half of a u that the atlas cut into two boxes (#5, #6);
+  each half reads as a whole u/n.
+- gate_09 #13, L06_01_026 (truth 7): A **7** (right), B **s+g?** -- the label of the next box (#14). Numbers 12 and 13 sit on leader lines
+  at almost the same x (box 12 is a descender above box 13), so B followed the wrong leader: a strip-layout fault, not a reading fault.
+
+Reading: box-level reads beat the alignment mapping by a wide margin (16 vs 5 of 19; the alignment labels match only 24% of agreed reads
+across 285 boxes, confirming GLY-11106's eye check), but the gate failed on two faults of the instrument, not of the readers: (1) the atlas
+over-segments (39% of agreed boxes are pieces; a sign split into two boxes gives each piece a whole-sign label), and (2) the stacked
+leader-line layout lets a reader take a neighbour's number. Per the brief, stopped at the gate: no all-box pass, sorter/ not rebuilt,
+atlas/box_sign.tsv covers only the 285 boxes in the 19 gate windows and is not fit for sorter piles.
+
+What would settle it (next, a different instrument, not a re-run of this one): ask the readers for **sign groups**, not box labels --
+"box numbers that together make one sign -> label" (e.g. `3+4 -> y`, `5+6 -> u`), which absorbs the over-segmentation without
+re-segmenting; and draw each number directly under its own box with no shared verticals (offset a number sideways when two boxes share
+an x-range). Same 19 gate windows and the same PREREG truth table, re-registered for group scoring; ~4 calls + 1, ~$7.5.
+
+Requests: 0 network. Calls: 4 Sonnet vision (2 per pass), this worker's diagnosis of 3 strips. Report what was found and where it was not
+found; novelty is not classified here (rule 10).

@@ -68,9 +68,8 @@ def main():
             k = strip(line, x0, x1, allb, f'{line}_h{h}', keyrows)
             print(f'{line}_h{h} {k} boxes')
     kp = os.path.join(HERE, 'strips', 'key.tsv')
-    new = not os.path.exists(kp)
-    with open(kp, 'a') as f:
-        if new: f.write('strip\tnum\tsid\n')
+    with open(kp, 'w') as f:
+        f.write('strip\tnum\tsid\n')
         for r in keyrows: f.write('\t'.join(map(str, r)) + '\n')
 
 

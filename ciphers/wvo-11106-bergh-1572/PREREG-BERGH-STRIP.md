@@ -49,3 +49,7 @@ owner's sorter's job); the pairs accepted are only those already listed in tx/fo
 - FAIL: <= 16/19. Stop at the gate, write the reason, do not run the all-box pass.
 - Baseline it must beat: the alignment mapping, 5/19 (6/19 counting #11 as r/yx). Reader self-consistency is reported beside it
   (A/B agreement on every numbered box in the strips, gate boxes and neighbours), so a pass with low A/B agreement is visible.
+
+## Outcome (appended after scoring, 22:2x UTC 8 Oct 2026)
+
+Gate 16/19: **FAIL** (needs >= 17). A/B agreement 223/285. Misses: L06_01_004 (both 9; box is the head of a y split from its tail), L18_01_007 (u / n?; half of a split u), L06_01_026 (A 7, B took the neighbouring number). Stopped at the gate; see NOTES.md BERGH-STRIP.
