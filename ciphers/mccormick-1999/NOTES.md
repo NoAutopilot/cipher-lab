@@ -544,7 +544,7 @@ Status stays `open` (no H, C or S tokens). Requests: fbi.gov 2 curl + 1 browser,
   message"; Craig Drelas (15 Mar 2026, c.162) a 9,400-character essay, "A Tragic Ledger Misread as a Code", no key.
 - What this gives the target: no new material; more instances of the semi-literate-shorthand reading already rated in
   Cheap test 5. Status unchanged (open).
-- Requests: web.archive.org 4 (2 CDX, 2 captures), >= 2 s apart.
+- Requests: web.archive.org 5 (3 CDX, 2 captures), >= 2 s apart.
 
 ## Remaining gaps (D2-PRINT4, 8 Oct 2026)
 Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
