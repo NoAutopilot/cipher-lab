@@ -11265,3 +11265,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 18:13 | MS18-PRE worker (acct1) | claim: MS18-PRE mssEC 18 (Huntington obj 10074) pre-filter, no reading; cap 5, box 18:14-19:44 UTC (80% 19:26); for LANE LEDGER
 2026-10-08 18:14 | MS18-PRE worker (acct1) | LANE LEDGER hdl take
 2026-10-08 18:14 | FM-PRE worker (acct1) | LANE LEDGER hdl take
+2026-10-08 18:14 | FM-PRE worker (acct1) | LANE LEDGER hdl release (2 requests: hdl layer known-answer on the E4/E5 copies; worker total 249 of 250)
