@@ -2267,3 +2267,68 @@ Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md Audit 2, D1); f.67 C
 - [ ] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops (reconcile_*.py with --check); canvas 11-12 block and canvas 32 have only blind passes; next: one reconciliation unit each against re-fetched native crops, ~$3 for both
 - [x] retry: every failed fetch has been retried and closed (canvases 45, 55, 58, 74, 679; canvas 11 HTTP 500 and canvas 32 resets recovered); the one failed solve's retry is the key-rebuild step above, not a repeat at the same size
 Verdict: keep going: 3 internal gaps; cheapest next: reconcile the canvas 11-12 block and canvas 32 against native crops (passes on disk), ~$3
+
+## D4-F5160B: canvas 11-12 block and canvas 32 reconciled (text level) and trialled (8 Oct 2026, 09:24-09:4x UTC)
+
+Worker D4-F5160B (solver), LANE DEFAULT-account-4-20261008-0740. **Image step not done:** none of canvas 11, 12 or 32 has a
+native image or crop on disk (`images/census/` holds only 428-439 px thumbnails; the 24 Sept crops were never committed,
+30 MB cap). One Gallica IIIF region request for canvas 11 (`f11/1250,2700,2150,1450/full/0/default.jpg`) answered **HTTP
+503**; the canvas 12 request then hung and was stopped; canvas 32 was not requested. Per the brief, the fetch stopped there
+and the reconciliation below is from the two blind passes on disk only. Requests: gallica.bnf.fr 2 (one 503, one aborted).
+
+**(1) Reconciliation, text level** (`reconcile_c11c32.py`, `--check`): both pass pairs aligned with
+`tools/reconcile_passes.py` (NW). Clear phrases kept as `[PLAIN:...]` run breaks; scribal dots dropped. Agreements keep
+the passes' joint confidence; every disagreement is M with the other pass in `alt`. The only settlement made without the
+image: pass B declined to name two shapes and described them ("cursive open hook, like ⊃"; "looped ascender flourish,
+cursive H/&") at exactly the positions pass A labels `Ɔ` (10 positions) and `db` (5) -- the shapes are agreed, so the
+token takes pass A's label at M; whether this `db` is the established tt+looped-d sign stays open (`alt` "new sign").
+- `ciphertext_c11.tsv`: 113 signs, H 23 / M 90 (11 with a differing reading in `alt`; the rest M because one or both
+  passes flagged them); 4 clear phrases. Pass agreement on aligned signs 91/114 = 79.8%.
+- `ciphertext_c32.tsv`: 107 signs, H 64 / M 43 (15 with `alt`, 8 of them the loop+cross sign A `db` / B `tt`); 6 clear
+  phrases. Pass agreement 92/110 = 83.6%.
+
+**(2) Four-key trial** (`trial_1653.py`, new table `trial_1653_c11c32.tsv`, own rng, `--check`; same measure and both
+controls as the f1/f9 table: 200 derangements of the key, and a synthetic French encipherment at the letter's own keyed
+positions). Token counts (signs / keyed / chars scored), real vs shuffled mean and max, z, beats-control:
+
+| key | letter | signs/keyed | real | shuffled mean / max | z | synthetic true vs max deranged | beats |
+|---|---|---|---|---|---|---|---|
+| key_1646 | c11+c32 | 220/54 | -4.518 | -3.704 / -3.034 | -2.96 | -3.362 vs -3.098 (6 >=) | no |
+| key_brienne_1647 | c11+c32 | 220/63 | -3.718 | -4.362 / -3.362 | 1.89 | -3.311 vs -3.769 | no (6 >= real) |
+| key_brienne_1651 | c11+c32 | 220/114 | -4.441 | -4.698 / -3.823 | 0.89 | -3.216 vs -4.120 | no |
+| key_1659 | c11 | 113/57 | -3.962 | -4.687 / -3.933 | 2.36 | -3.331 vs -4.005 | no (1 >= real) |
+| key_1659 | c32 | 107/49 | -3.858 | -4.570 / -3.874 | 2.18 | -3.409 vs -3.824 | yes |
+| key_1659 | c11+c32 | 220/106 | -3.916 | -4.630 / -4.063 | 2.84 | -3.474 vs -3.957 | yes |
+
+Per-letter rows for every key are in the TSV. Reading: key_1659 (this volume's own 1659 table) again beats its shuffled
+control at the character level, now on two more 1653 pieces (c32 alone and pooled), the same pattern as f1/f9 (z 3.48 /
+3.68), but its true-key score sits well below its own synthetic (-3.92 vs -3.47) and the longest runs are not French words
+(c11 `TECEQPAR`, `CEQVESLA`; c32 `LACHASSE`, `YQVLETA`): a related table, not this one -- the existing f1/f9 conclusion,
+unchanged. The other three keys: clean negatives or chance, as on f1/f9. **No token read: 0 H/C/S of 220 cipher signs**
+(rule 4: no reading claimed). Where not found: none of the four known keys reads either piece.
+
+**(3) Pre-existing staleness repaired.** `trial_1653.py --check` already failed before this job (all four f1/f9 tables
+stale against the current inputs; the script is deterministic, two runs byte-identical). Regenerated: key_1659 rows move
+z 3.38 -> 3.48 (f1) and 3.71 -> 3.68 (f9), still `beats_control yes`; key_1646/1647/1651 rows unchanged; the
+1659-codes delta table shifts in the third decimal. No conclusion changes. The input that moved was not traced (shallow
+clone; the last commit touching key_1659.tsv and the trial outputs is a folded multi-session commit).
+
+**Next:** image arbitration of the 26 split positions (c11 11 + 15 one-pass/description rows; c32 15, first the 8 db/tt)
+when Gallica answers -- one region fetch per canvas, crops with `tools/iiif_lines.py --image`, one reconciliation unit each,
+~$3; then the pooled control_1653 rerun with all four letters (~970 signs).
+
+## Remaining gaps (D4-F5160B, 8 Oct 2026)
+Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md Audit 2, D1); f.67 C 435 / M 111 of 546 (align_f67.py); 1653 band f.1-2+f.9 0 of 752; canvas 11-12 block 0 of 113 and canvas 32 0 of 107 (ciphertext_c11/c32.tsv, text-level reconciled, trial_1653_c11c32.tsv)
+- Français 20661-20662 (Brienne 1653 despatch minutes, R11A-F5160 (3)), no Gallica link - blocker: waiting-on ASKS 154; REQUEST.md written and ASKS row 154 filed 8 Oct 2026 (D4-ASKS): BnF enquiry whether the volumes hold minutes to Servien for the 1653 letters, then a reproduction quote
+- canvas 11-12 and canvas 32 image arbitration (26 split positions, 8 of them db/tt) - blocker: not-attempted; Gallica HTTP 503 on 8 Oct 2026 09:2x UTC, crops not on disk (D4-F5160B); next: one region fetch per canvas when Gallica answers, iiif_lines crops, one reconciliation unit each, ~$3
+- 1653 band f.1-2 + f.9 + c11 + c32 (972 tokens, a key_1659-like syllabic table; key_1659 beats its control at character level on f1, f9, c32 and pooled c11+c32 but reads no words) - blocker: not-attempted; nomenclator_anneal.py control read 25.7% (one attempt, not retired); next: rerun control_1653 with all four letters (~970 tokens) and, if still below bar, a word-level (dictionary-constrained) solver between the clear frames with its own matched control, ~$4
+
+## Escalation (D4-F5160B, 8 Oct 2026)
+- [x] siblings: canvas walks 4-367 complete (walk_37_159.tsv, walk_160_367.tsv; canvas 45 D1A-CAN 8 Oct); sibling volumes and Colbert 26 part III read whole (375/375, AM-LOOK 7 Oct); KH2-A keyhunt 7 Oct: 0 unread fetchable siblings for key_1659/1647/1651
+- [x] clear-pages: f.68r clear text aligned to f.67 and tested (D1A-F68, PASS 0.801 vs p99 0.518); f.87 decipherment is the key source for f.86/f.88; the 1653 band has no interlinear or clear copy on any canvas 4-36 (Premise check, 2 Oct 2026)
+- [x] known-keys: all four keys of the office (key_1646, Tomokiyo 1647, Tomokiyo 1651, key_1659) trialled under matched controls on all four 1653 pieces (trial_1653.tsv f1/f9; trial_1653_c11c32.tsv c11/c32/pooled, D4-F5160B 8 Oct): none reads; key_1659 character signal only; KEY-OFFICES.tsv holds no other key of this office for 1650-1655
+- [x] print: the read items were print-checked (print-check.tsv 115 rows for f.86/f.88, print-check-f67.tsv 132 rows for f.67) and searched by two verifier audits (AUDIT.md 1, F67, Audit 2); the 1653 band has nothing read to search
+- [ ] key-rebuild: key_1659 rebuilt from f.87 (79 groups, period) and confirmed on a second letter (D1A-F68); for the 1653 table one cryptanalytic attempt (nomenclator_anneal.py, control 25.7% against a ~60% bar, NOTES "1653 band: constrained solve") -- one attempt, so not retired under rule 3; next: rerun the control with all four letters (~970 tokens), then a word-level solver with its own control, ~$4
+- [ ] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops; canvas 11-12 and canvas 32 reconciled at text level only (Gallica 503, 8 Oct); next: image arbitration of their 26 split positions, ~$3
+- [x] retry: every failed fetch has been retried and closed (canvases 45, 55, 58, 74, 679; canvas 11 HTTP 500 and canvas 32 resets recovered 24 Sept); the 8 Oct 503 is the image-check step above, to be retried in a later session, not looped here
+Verdict: keep going: 2 internal gaps; cheapest next: image arbitration of canvas 11-12 and canvas 32 when Gallica answers (~$3), or the pooled control_1653 rerun with all four letters (~$4, does not need the images)

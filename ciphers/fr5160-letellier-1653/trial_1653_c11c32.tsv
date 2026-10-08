@@ -1,0 +1,13 @@
+key	letter	signs	keyed	chars_scored	real_bpc	shuffled_mean	shuffled_sd	shuffled_max	shuffled_ge_real	z	syn_true	syn_shuffled_mean	syn_shuffled_max	syn_shuffled_ge_true	beats_control	longest_real_runs
+key_1646	c11	113	28	34	-4.535	-3.646	0.267	-2.966	200	-3.33	-3.477	-3.636	-3.056	59	no	MRRE | TEO | ORO
+key_1646	c32	107	26	23	-4.493	-3.777	0.372	-3.041	190	-1.92	-3.224	-3.739	-3.126	3	no	MRSY | CHEC | TOC
+key_1646	c11+c32	220	54	57	-4.518	-3.704	0.275	-3.034	199	-2.96	-3.362	-3.687	-3.098	6	no	MRRE | MRSY | CHEC
+key_brienne_1647	c11	113	26	28	-3.672	-4.339	0.457	-3.062	14	1.46	-3.445	-4.349	-3.596	0	no	REEFA | RETEE | DETO
+key_brienne_1647	c32	107	37	56	-3.741	-4.388	0.371	-3.462	10	1.74	-3.320	-4.377	-3.536	0	no	QVECA | RETE | SREO
+key_brienne_1647	c11+c32	220	63	84	-3.718	-4.362	0.341	-3.362	6	1.89	-3.311	-4.352	-3.769	0	no	REEFA | RETEE | QVECA
+key_brienne_1651	c11	113	53	76	-4.368	-4.629	0.348	-3.535	51	0.75	-3.792	-4.636	-4.151	0	no	NAIGSIMO | GMIEGI | ROYIL
+key_brienne_1651	c32	107	61	95	-4.500	-4.760	0.336	-3.799	46	0.77	-3.268	-4.769	-4.033	0	no	HEMISVIE | BMBILBSE | GEGNAIV
+key_brienne_1651	c11+c32	220	114	171	-4.441	-4.698	0.289	-3.823	37	0.89	-3.216	-4.689	-4.120	0	no	NAIGSIMO | HEMISVIE | BMBILBSE
+key_1659	c11	113	57	91	-3.962	-4.687	0.307	-3.933	1	2.36	-3.331	-4.614	-4.005	0	no	TECEQPAR | CEQVESLA | COITEDE
+key_1659	c32	107	49	74	-3.858	-4.570	0.326	-3.874	0	2.18	-3.409	-4.583	-3.824	0	yes	LACHASSE | YQVLETA | AREBRE
+key_1659	c11+c32	220	106	165	-3.916	-4.630	0.251	-4.063	0	2.84	-3.474	-4.614	-3.957	0	yes	TECEQPAR | CEQVESLA | LACHASSE

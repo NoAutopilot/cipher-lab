@@ -7,7 +7,9 @@
 Keys: key_1646 (clair1067, Brienne to the Queen of Poland 1646, recovered at grade C from its interlinear
 decipherment), key_brienne_1647 and key_brienne_1651 (Tomokiyo's published tables, Brienne to d'Estrades, reconstructed
 by George Lasry), key_1659 (this volume's f.86-88, recovered from the f.87 decipherment).
-Letters: ciphertext_f1.tsv (10 Jan 1653, 528 signs) and ciphertext_f9.tsv (folio 9, 226 signs).
+Letters: ciphertext_f1.tsv (10 Jan 1653, 528 signs) and ciphertext_f9.tsv (folio 9, 226 signs); separately (D4-F5160B,
+8 Oct 2026) ciphertext_c11.tsv (canvas 11-12 block) and ciphertext_c32.tsv (canvas 32), each and pooled, in
+trial_1653_c11c32.tsv.
 
 Sign mapping, 1653 spelling -> key spelling (grade I: the tables were transcribed by different hands, so shape
 identity is assumed, not shown). Bare numerals map to the bare code. Overlined numerals map to the key's marked
@@ -50,6 +52,9 @@ LETTERS = {
     'key_1659': {'m': 'm'},
 }
 CIPHERS = {'f1': 'ciphertext_f1.tsv', 'f9': 'ciphertext_f9.tsv'}
+# D4-F5160B (8 Oct 2026): canvas 11-12 block and canvas 32, text-level reconciliation (reconcile_c11c32.py), run as a
+# separate table (trial_1653_c11c32.tsv) with its own rng so the f1/f9 tables above are unchanged by their addition.
+EXTRA = {'c11': 'ciphertext_c11.tsv', 'c32': 'ciphertext_c32.tsv'}
 
 
 def load_key(fn):
@@ -207,12 +212,14 @@ def code_deltas(m, ciphers):
     return rows
 
 
-def run_all():
+def run_all(cmap=None):
     m = fr.load()
     held = m._held
     rng = random.Random(SEED)
     rows, over = [], []
-    ciphers = {c: load_cipher(f) for c, f in CIPHERS.items()}
+    ciphers = {c: load_cipher(f) for c, f in (cmap or CIPHERS).items()}
+    if cmap:   # extra letters: each alone, then pooled (a None between letters breaks runs)
+        ciphers['+'.join(cmap)] = [t for toks in list(ciphers.values()) for t in toks + [None]]
     for kname, (kfn, _) in KEYS.items():
         key = load_key(kfn)
         ders = derangements(key, rng, NDER)
@@ -236,11 +243,15 @@ def run_all():
                          '%.3f' % syn_true, '%.3f' % statistics.mean(syn_ctrl), '%.3f' % max(syn_ctrl),
                          sum(c >= syn_true for c in syn_ctrl), 'yes' if beats else 'no',
                          ' | '.join(sorted(runs([key[c] if c else None for c in keyed]), key=len, reverse=True)[:3])])
+        if cmap:
+            continue
         # overlap: which 1653 signs this key can and cannot write
         cnt = collections.Counter(t for toks in ciphers.values() for t in toks if t is not None)
         for t, n in sorted(cnt.items(), key=lambda x: (-x[1], x[0])):
             c = to_code(t, kname)
             over.append([kname, t, n, c if c in key else '', key.get(c, '') if c in key else ''])
+    if cmap:
+        return rows
     srows, sstat = stretches(m, ciphers)
     return rows, over, srows, sstat, code_deltas(m, ciphers)
 
@@ -265,7 +276,9 @@ def render():
                      'synthetic: true key %d, derangements mean %.2f' % (sn, smean), ''])
     b4 = io.StringIO(); w4 = csv.writer(b4, delimiter='\t', lineterminator='\n')
     w4.writerow(['code_1659', 'value', 'uses_f1_f9', 'delta_bpc_if_unkeyed']); w4.writerows(deltas)
-    return {'trial_1653.tsv': b.getvalue(), 'trial_1653_overlap.tsv': b2.getvalue(),
+    b5 = io.StringIO(); w5 = csv.writer(b5, delimiter='\t', lineterminator='\n')
+    w5.writerow(HEAD); w5.writerows(run_all(EXTRA))
+    return {'trial_1653.tsv': b.getvalue(), 'trial_1653_c11c32.tsv': b5.getvalue(), 'trial_1653_overlap.tsv': b2.getvalue(),
             'trial_1653_stretches.tsv': b3.getvalue(), 'trial_1653_1659codes.tsv': b4.getvalue()}
 
 

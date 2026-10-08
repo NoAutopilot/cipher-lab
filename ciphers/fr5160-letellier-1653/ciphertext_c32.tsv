@@ -1,0 +1,114 @@
+line	pos	token	conf	alt	note
+L01	1	m	H		both passes
+L01	2	_11	M		both passes
+L01	3	27	H		both passes
+L01	4	_11	M		both passes
+L01	5	db	M		both passes
+L01	6	3	H		both passes
+L01	7	_11	M		both passes
+L01	8	,	H		both passes
+L01	9	91	H		both passes
+L01	10	_40	H		both passes
+L01	11	_9	M	9	passes differ; image not re-read
+L01	12	db	M	tt	loop+cross sign: A db, B tt; image not re-read
+L02	1	60	M		both passes
+L02	2	4	H		both passes
+L02	3	50	H		both passes
+L02	4	20	H		both passes
+L02	5	_16	M	_6	passes differ; image not re-read
+L02	6	d	M		both passes
+L02	7	[PLAIN:sans se ressouvenir]	M	Sanurse souvenir	clear French
+L03	1	[PLAIN:des obligations desquelles on estoit redeva.]	M	des obligations desquelles on estoit redevable	clear French
+L04	1	[PLAIN:a sa Couronne]	H		clear French
+L04	2	11	H		both passes
+L04	3	9	H		both passes
+L04	4	6	H		both passes
+L04	5	61	H		both passes
+L04	6	_20	M		both passes
+L04	7	db	M	tt	loop+cross sign: A db, B tt; image not re-read
+L04	8	_11	M		both passes
+L05	1	X	H		both passes
+L05	2	db	M	tt	loop+cross sign: A db, B tt; image not re-read
+L05	3	11	M		both passes
+L05	4	_22	M		both passes
+L05	5	61	H		both passes
+L05	6	68	M	66	passes differ; image not re-read
+L05	7	db	M	tt	loop+cross sign: A db, B tt; image not re-read
+L05	8	mm	H		both passes
+L05	9	_9	M		both passes
+L05	10	db	M	tt	loop+cross sign: A db, B tt; image not re-read
+L06	1	36	H		both passes
+L06	2	66	H		both passes
+L06	3	11	M		both passes
+L06	4	_11	M		both passes
+L06	5	_13	H		both passes
+L06	6	X	H		both passes
+L06	7	mm	H		both passes
+L06	8	d	M		both passes
+L06	9	£	M		both passes
+L07	1	_9	H		both passes
+L07	2	_16	H		both passes
+L07	3	m	H		both passes
+L07	4	_51	H		both passes
+L07	5	97	H		both passes
+L07	6	db	M	tt	loop+cross sign: A db, B tt; image not re-read
+L07	7	93	H		both passes
+L07	8	db	M	tt	loop+cross sign: A db, B tt; image not re-read
+L07	9	_26	H		both passes
+L07	10	—	H		both passes
+L08	1	72	H		both passes
+L08	2	d	H		both passes
+L08	3	db	M	tt	loop+cross sign: A db, B tt; image not re-read
+L08	4	20	H		both passes
+L08	5	,	H		both passes
+L08	6	6	M	_6	passes differ; image not re-read
+L08	7	[PLAIN:il ne fault point que]	H		clear French
+L09	1	[PLAIN:Je suppose sy nous ne nous y portrons p]	M	Je suopreme sy nous ne nous y portrons p	clear French
+L10	1	¨4	H		both passes
+L10	2	m	H		both passes
+L10	3	61	H		both passes
+L10	4	tt	H		both passes
+L10	5	_23	H		both passes
+L10	6	11	M		both passes
+L10	7	21	H		both passes
+L10	8	37	H		both passes
+L10	9	d	M		both passes
+L10	10	11	M		both passes
+L10	11	m	M		both passes
+L11	1	4	H		both passes
+L11	2	60	H		both passes
+L11	3	,	H		both passes
+L11	4	23	H		both passes
+L11	5	_11	M		both passes
+L11	6	3	H		both passes
+L11	7	2	H		both passes
+L11	8	_2	H		both passes
+L11	9	_20	H		both passes
+L11	10	_52	H		both passes
+L11	11	_7	M	_17	passes differ; image not re-read
+L12	1	73	H		both passes
+L12	2	11	M		both passes
+L12	3	tt	H		both passes
+L12	4	,	H		both passes
+L12	5	_50	H		both passes
+L12	6	_13	H		both passes
+L12	7	X	H		both passes
+L12	8	mm	H		both passes
+L12	9	_41	H		both passes
+L12	10	11	M		both passes
+L12	11	¨4	H		both passes
+L13	1	_19	H		both passes
+L13	2	(4)	H		both passes
+L13	3	d	M	_d	passes differ; image not re-read
+L13	4	13	M	£	passes differ; image not re-read
+L13	5	d	M		both passes
+L13	6	_11	M		both passes
+L13	7	d	M		both passes
+L13	8	_49	H		both passes
+L13	9	35	H		both passes
+L13	10	11	M		both passes
+L13	11	—	M		both passes
+L14	1	mm	H		both passes
+L14	2	_11	M		both passes
+L14	3	20	H		both passes
+L14	4	[PLAIN:le Comte Philippes quelc]	M	le Comte Philippes que se	clear French
