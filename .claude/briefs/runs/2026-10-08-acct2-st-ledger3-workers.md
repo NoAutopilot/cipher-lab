@@ -79,3 +79,40 @@ vols. 47-49 for 1865, IA/Google Books with country=US + key, OpenAlex/S2/CORE wi
 blocking). Depth per .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. AUDIT.md heading "## AUDIT (LS3-V9)" etc. in the target the
 entries are filed in; status.json rows for N3+ only, audit_status "one audit"; SO row per N3+ entry; `tools/depth_check.py` passes;
 file_shrink_guard before the final push. Do not decode other entries. Caps: about 0.6 per entry + 1.
+
+---
+
+# Wave 2 (written 8 Oct 2026 10:4x UTC)
+Wave 1 done by get_session: LS3-K 1.32 (no "10" book in p16003coll11; 1865 key-share band non-selective, logged untestable by that
+instrument), LS3-R9 2.85 (O9-AK, E76 read, not located; O9-AL OR I/37 pt 2 p.453 and E77 ORN I/11 p.204 located by the reader),
+LS3-R18 4.42 (N2-BP, E78, N2-BQ, O9-BA, O9-BB from pp.48-51; E79-E84 from the A3V3 list; 9730.87/9731.89/9908.417/9939.484 in OR),
+LS3-R62 3.77 (eckert-1862 residue 4982.1, 4999.1, 4984.3, 4992.1, 4999.2, 4982.3: 0 slips, chosen key beats all controls).
+Every first verifier: the LS-V7 section of the ST-LEDGER-2 worker brief and the "First verifiers" section above. Points specific to
+these readers: LS3-R18 read pages in three bands at 2000 px rather than crops -- so the verifier re-reads every code word of three
+entries (incl. the longest) from line crops it cuts itself (`tools/iiif_lines.py --image ... --out ...`, paste); the readers' clause
+counts are hand counts by one reader -- recount them; ORN (Navy Official Records) was not searched by LS3-R18 -- search it for every
+entry, first. A verifier that finds an entry in print classes it N1/N2 and moves on.
+
+## LS3-V18a (Opus 5.5, first verifier; cap $5.5, box 90 min): N2-BP, E78, N2-BQ, O9-BA, O9-BB (LS3-R18 part 1) + O9-AK, E76 (LS3-R9)
+ Also confirm by script, N1 if word for word: O9-AL (OR I/37 pt 2 p.453) and E77 (ORN I/11 p.204). O9-BA (five tokens, no time word)
+ and the key row Bologna/Bolivia = Heintzelman (one eye) are the weakest: re-read the mssEC 67 p.[10] row from the image. E76 is
+ Butler's own telegram: Butler's Private and Official Correspondence vol. 5 (Nov 1864) first. AUDIT.md "## AUDIT (LS3-V18a)".
+
+## LS3-V18b (Opus 5.5, first verifier; cap $5, box 80 min): E79, E80, E81, E82, E83, E84 (LS3-R18 part 2)
+ E80 (Welles to Porter, 1 Oct 1864, Farragut/Tennessee): ORN ser. I vols. 21 and 26 first; Welles diary. E81/E83/E84 are Quartermaster
+ requests with a clear sibling on the same leaf (9858 Horner, "Send all weaselers ..."): say whether the sibling is the same telegram.
+ AUDIT.md "## AUDIT (LS3-V18b)".
+
+## LS3-V62 (Opus 5.5, first verifier; cap $3, box 60 min): eckert-1862 residue 4982.1, 4999.1, 4984.3, 4992.1, 4999.2, 4982.3
+ In ciphers/eckert-1862 (AUDIT.md "## AUDIT (LS3-V62)"). The key is C-grade from print alignment (key source per rule 10: say which).
+ 4982.1 is the only entry with a clause; decide its depth under the depth bar (two of its seven code tokens are M). The other five
+ carry 1-4 code tokens in plain text: say in one line each whether they reach D2 at all; if not, no status.json row, no SO row.
+ OR ser. I vol. 7 (McClellan to Buell, same day) is a parallel for 4982.1, not the telegram: confirm.
+
+## LS3-R18b (Sonnet 5.5, solver; cap $4.5, box 100 min): the last seven A3V3-ECK18 keyed entries
+ 9943.494, 9948.507, 10002.578, 10026.621, 10027.623, 10028.625, 10031.632 (Jan-Jun 1865; skip 9947.505 and 10020.609). Same method
+ as LS3-R18 part 2 (pre-filter over OR 32-49 incl. 47-49 + ORN + Butler/Lincoln cached, then image, crops -- cut line crops with
+ `tools/iiif_lines.py` and read them, not 2000 px bands -- time-word control, 200-seed shuffle, IDs from E85 after fetching). 1865:
+ LS3-K found the token-share band cannot tell No. 1 from Nos. 3/4, so the book rests on the ledger's own "No N" label and the
+ time word; an entry with neither, or whose time word disagrees with the header under No. 1, is "key not in hand", not read.
+ NOTES section "## LS3-R18b (8 Oct 2026, account 2, for LANE ST-LEDGER-3)".
