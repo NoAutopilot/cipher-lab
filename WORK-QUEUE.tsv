@@ -338,3 +338,4 @@ AUD2-LS-F	account-4	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	11	
 AUD2-LS-G	account-2	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	15	130	claimed session_01TcAy4jno93MduXhrCA6S9n 2026-10-08 05:10	2026-10-08 05:1x	second audits eckert-1864 N2-BI..BM, O9-AH
 AUD2-LS-H	account-2	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	11	95	claimed session_01Bjiw1YWYMTTnu6iuX6WgXM 2026-10-08 06:10	2026-10-08 05:3x	second audits eckert-1864 E66 E68 E70 N2-BN (LS-V7)
 DEFAULT-account-1-20261008-0540	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_01RR9DYMbpvFjP1tVfVsp2Ho 2026-10-08 05:40	2026-10-08 05:40	auto-fill: empty queue
+DEFAULT-account-4-20261008-0634	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	bounced 2026-10-08 06:35 account-4 lane DEB-RUN still claimed (autofill sees only LANE-/DEFAULT- rows); refill after DEB-RUN closes	2026-10-08 06:34	auto-fill: empty queue
