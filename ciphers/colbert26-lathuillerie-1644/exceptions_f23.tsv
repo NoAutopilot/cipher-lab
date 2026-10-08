@@ -1,0 +1,3 @@
+line	pos	value	grade	reason
+P10.1	5	s	M	D2V-COL26 8 Oct 2026: rule-4 per-token conflict, f.23 own gloss word P10w023 "intelligence" has no s (interlinear/f23w_align.tsv)
+P21.1	2	s	M	D2V-COL26 8 Oct 2026: rule-4 per-token conflict, f.23 own gloss word P21w071 "d oznabrug" has no s (interlinear/f23w_align.tsv)

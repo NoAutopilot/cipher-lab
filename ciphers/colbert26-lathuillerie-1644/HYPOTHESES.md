@@ -18,3 +18,7 @@ shuffled-gloss (S) controls, N >= 5, power floor P_min(L) < 0.0083.
 | 81 | me (il) | 2/2 (0/2) | - | - | TOO-SHORT |
 | 85 | na (luy) | 0/2 (0/2) | - | - | TOO-SHORT |
 | 96 | que | 5/8 | 0.86 / 3 / 0.0032 | 1.20 / 4 / 0.0053 | PASS |
+
+Verifier D2V-COL26 (8 Oct 2026, AUDIT.md addendum): the table above re-runs byte-identical (script fixed to run at HEAD); registration,
+OUT status, controls and threshold hold. Propagation to f.23: 2 of the 17 f.23 tokens of 30 sit in own-gloss words with no s and are
+lowered to M (exceptions_f23.tsv); f.23 C 127 -> 125.

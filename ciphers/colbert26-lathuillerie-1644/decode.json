@@ -16,7 +16,8 @@
    "reading": "reading_f23.txt",
    "tokens": "reading_tokens_f23.tsv",
    "format": "tsv",
-   "style": "spaced"
+   "style": "spaced",
+   "exceptions": "exceptions_f23.tsv"
   }
  ]
 }

@@ -144,3 +144,43 @@ test they applied to 31. Corrected: key_f23.tsv (six rows), reading_f23.txt / re
 gaps count 141 -> 110 and a DA1-COLV section. No AUDIT.md or SECOND-OPINIONS-QUEUE.tsv row existed before, so nothing else to propagate;
 N0 needs no second-opinion row. A brief or registration for a sibling-key merge should split IN/OUT value-choice units and check the
 leaf's own gloss for conflict before C (proposed as a one-line NOTES suggestion, not applied to briefs here).
+
+## AUDIT 1 addendum (D2V-COL26, verifier, account 2, LANE DEFAULT-account-2-20261008-0710, 8 Oct 2026, 07:42-08:0x UTC by date -u)
+
+Separate session from D2-COL26 and from DA1-COLV. Checked D2-COL26's grade change (key_f23 30 = s M -> C, f.23 C 110 -> 127) and its
+96 = que PASS. Class unchanged: **N0** (text known from the period gloss; no novelty search run beyond this note). Key `period`.
+
+1. **Re-run.** `siblings/d2col26_test.py` as committed crashed at HEAD (its own `assert` that no tested code is an anchor fails once
+   30 is C), so the committed output was not reproducible from HEAD (rule 7). Re-run in a scratch copy with key_f23.tsv from the
+   pre-registration commit 65d490d04: output **byte-identical** to siblings/d2col26_test_out.txt. Fixed the script (tested codes are
+   now removed from the anchor set instead of asserted absent, which is the same anchor set of 23 the run used); re-run at HEAD:
+   byte-identical again. Script unchanged between 65d490d04 and 816f2bb1b otherwise; inputs (c30/c33/c5051/c6263 reconciled TSVs,
+   f23w_pairs.tsv, ciphertext.tsv) last changed 943bec9fb (06:38 UTC), before the registration.
+2. **OUT of every value-choice unit: holds**, by DA1-COLV's own IN/OUT definition (the `units=` lists in key_f23_anchor_r10.tsv;
+   union c32, c3536, c3940, c47, c48, c49, c50, c54, c55, c56, c63; scoring units c33, c51, c62 not in it). Caveat recorded, not a
+   lowering: c33 and c62 were among R10-COL26B's 14 scanned units (anchor_split_r10.py), but its value choice counts units whose spans
+   contain the gram, and neither c33 nor c62 is listed for any of the six values, so neither cast a vote for the value tested on it.
+3. **PREREG predates the score:** 65d490d04 (07:25:00 UTC, PREREG + script, no output) before 816f2bb1b (07:27:35, output + key
+   change); the only later PREREG edit is the written-time correction.
+4. **Controls can differ from the target:** both L (length-matched f.23 windows) and S (gloss shuffled within unit) change the French
+   text each occurrence meets and re-walk the anchor brackets; the statistic (value substring inside the bracket) moves with both
+   (30 = s: L mean 8.21, S mean 13.36 of 22, real 19). Not a non-test. Note: S's mean is high because `s` is a one-letter value.
+5. **Threshold as registered:** 0.05/6 = 0.0083 on both controls, N >= 5 on cleared units, c30 excluded for failing its own
+   instrument check. 30 = s PASS (L P 0.0000, S P 0.0062); 96 = que PASS (5/8, P 0.0032 / 0.0053, kept M per the merge rule);
+   20 = i FAIL (L P 0.0093); 67/81/85 TOO-SHORT. Applied as registered.
+6. **Propagation to f.23 (the leaf's own gloss, rule 4).** The PASS is on 1648 siblings; f.23 is 1646. Checked each of the 17 f.23
+   tokens of code 30 against f.23's own word-level gloss (interlinear/f23w_align.tsv, f23w_pairs.tsv; P36 is the held-out pair "que
+   vous estes tresbien icy"): 15 sit in a gloss word containing s; **two do not**: P10.1 pos 5 in "intelligence" (P10w023) and P21.1
+   pos 2 in "d oznabrug" (P21w071). Those are per-token data conflicts with the leaf's own known plaintext and are **lowered to M**
+   (exceptions_f23.tsv, wired into decode.json's f.23 job); the other 15 stay C. Diagnostic only, not a gate and not pre-registered:
+   9 of the 11 f.23 gloss words carrying 30 contain s vs 6.0 expected from words of the same code count (P 0.034), consistent with
+   s on f.23 itself.
+
+**Counts after this addendum.** `tools/decode_key.py ciphers/colbert26-lathuillerie-1644 --check`: reading up to date, exit 0.
+f.23 C 127 -> **125** of 306 (M 178 -> 180, U 1); f.24 unchanged (C 27, M 140, U 1). Grade-only change, reading text unchanged; judge
+re-run: `FAIL language: score=-1.401, null_p99=-1.888, real_p05=-0.873` / `ok words: cover=0.735` / `FAIL` (same as AUDIT 1).
+Depth stays **D1** ("fragments read"; 125/306 = 40.8% C on f.23, the gloss carries the text). status.json results[145] counts updated.
+
+**Postmortem.** D2-COL26's result holds as registered; two over-propagated tokens lowered. A grade change that turns a tested code into
+an anchor must keep the test script runnable at HEAD (rule 7), and a sibling-key PASS applied back to a leaf with its own gloss is
+checked token by token against that gloss before C.

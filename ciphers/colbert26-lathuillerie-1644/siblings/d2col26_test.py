@@ -8,7 +8,7 @@ def norm(s): return re.sub(r'[^a-z]', '', re.sub(r'\[[^\]]*\]', '', s.lower())).
 key = {r['code']: (norm(r['value']), r['grade']) for r in csv.DictReader(open(f'{T}/key_f23.tsv'), delimiter='\t')}
 ANC = {c: v for c, (v, g) in key.items() if g == 'C' and v}
 TEST = [('20', 'i'), ('30', 's'), ('67', 'leur'), ('81', 'me'), ('81', 'il'), ('85', 'na'), ('85', 'luy'), ('96', 'que')]
-assert not set(c for c, _ in TEST) & set(ANC)
+ANC = {c: v for c, v in ANC.items() if c not in {t for t, _ in TEST}}  # D2V-COL26: tested codes never anchors (was an assert; 30 is C since 816f2bb1b)
 ALPHA = 0.05 / 6; D = 10000
 units = {}
 runs = {}
