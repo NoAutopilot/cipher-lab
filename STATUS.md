@@ -5940,6 +5940,36 @@ period-deciphered leaf for the unread R1166 P4 (guardrail-allowed); together 37%
 Left: eckert-1864 No 2 pp.107-182 (~34 entries, expected mostly N1; read only if the next lane accepts the known-text cost); fr7129 and
 fr15564 and costabili q/TT wait on the owner's sign sorter; hessen-daenemark nomenclator needs physical access.
 
+## LANE DEFAULT-account-1-20261008-0540 handoff (session_01RR9DYMbpvFjP1tVfVsp2Ho, account 1), 8 October 2026 (closed 06:5x UTC: runnable hot backlog spent, lane ~41.4 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-08-account1-default-0540-jobs.md. Gate 0a: SESSION-SWEEP-account-1
+row still `claimed` since 5 Oct 22:40, TSV on disk, proceeded (as RUN8-12 and the 7 Oct DEFAULT lanes). Backlog a: no eligible
+VERIFY-BACKLOG row (eckert-1864 held by ST-LEDGER-2 / the account-3 orchestrator; Birago off limits; nla-heinrich, colbert26 N0).
+Backlog b: `next_steps.py --hot-only` runnable rows and blocked rows' parallel actions, filtered against ROOM claims < 6 h and live briefs.
+Workers (18, 4 waves 05:45-06:42; 16 Opus, 2 Sonnet; all ledgered): 35.87 by get_session; orchestrator ~5.5; five_hour `allowed`
+throughout; every worker under or at cap (D1A-D1411 4.05 at its 4 cap). Known-text share 3.88 (11%).
+
+Results:
+- decode-1411: p.2/p.5 copy differences, exemplar control 30/31; 2 of 13 settled, 1 genuine variant, 10 to ASKS 120; descriptive only.
+- fr16045-pisany: T40 alignment witness a non-test (power 0/50; instrument retired for T40); f.275v gloss two blind readers G1 PASS
+  (0.551, 0.691) but G2 0.80 FAIL twice -> blind single-call reader untestable for G2 at this length; key86 unchanged.
+- fr5160-letellier: canvas 45 blank; key_1659 second-letter test on f.68r PASS 0.801 vs null p99 0.518 (no key change).
+- fr4715-vieuville-pool: f.67v blank; Verdict parked.
+- pro3055-clinton (N0, record correction): B.147 p.381 period decipherment carries "give up", "Trouble and pains", "25 Sail" -- the
+  drops and "28" are the 1920 print's.
+- na-suriname: pooled [ij] 10/10 PASS (D1A-SUR) held by the verifier D1A-SURV: pool reused NZ-SURIJ's failed tokens and neither unit
+  cleared its own control (rule 3 per-unit merge); no key entry.
+- clairambault296-paget-1713: residue.tsv from the 1714 key (103 weak/open codes, 329 tokens) ready for the letter's arrival.
+- clairambault1225-paget-1714: run 221 46 2 185 is the same codes on both leaves, glosses differ by sense; f66R 169 -> numeral 2 (I).
+- maurice-rupert: Evelyn harvest coverage 35->43/93; key test power 0/50 non-test; stays parked.
+- rah-juan-manuel: calendar_map.tsv 16/28 records mapped to CSP Spain II; no abstract summarises cipher passages.
+- baluze167: crops of all five bare passages now on disk (f.229r-v cut). clair1161: all 342 canvases swept, no new cipher leaf.
+- Searches, no hits: naf14913 f.206r phrase + Souchon; sp77 Cal. Clar. iv for "Sir L.R."; fr5761 Reichstagsakten; fr3975 phrases.
+What is left: nothing runnable on the hot list outside live lanes' folders. tools/next_steps.py's `parallel` column is stale for many rows
+(fr16106 Mousset, Suriname 0702, Wallis Thurloe, Brochado m0200, Estrades 9430-9432, Ormond 1871, fr4712 keys, Dupuy 521 all already
+run); a regeneration of NEXT-STEPS from the folders' latest sections would save the next lane the hand-checking. Named next steps:
+fr16045 one-line native read of f.275v head L04 (~2); na-suriname dotted ij vs Nieuw N-row; fr5160 f.68 now keyed (verifier optional).
+
 ## LANE DEFAULT-account-1-20261007-1440 handoff (session_01FEtepdKvZ6iYUGCHy52qyE, account 1), 7 October 2026 (closed 16:35 UTC: runnable hot backlog spent, lane 42.96 of 60)
 
 Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-07-account1-default-1440-jobs.md. Gate 0a: SESSION-SWEEP-account-1
