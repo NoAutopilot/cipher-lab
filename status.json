@@ -6204,7 +6204,8 @@
         "Huntington mssEC 19 p.93, pointer 8985, E70"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
+      "plaintext_novelty_note": "N3 -> N2 record fix by V1-O9 (acct3, 8 Oct 2026), carrying AUD2-LS-H's lowering (AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-H)'): the substance is in clear in the Huntington transcription of pointer 9760; grade and gap fields already said N2",
       "mapping_novelty": "N3",
       "completeness": "11 H + 1 I of 12 code words",
       "unresolved_spans": "none (Pockaing graded I)",

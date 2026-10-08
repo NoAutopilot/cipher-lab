@@ -2765,7 +2765,7 @@ for their morning", "Astor House", "chartered a number of vessels"; O9-AI/AJ "no
 | N2-BM Meigs to Ingalls, 27 July 1864 | **N3** | unknown | **D2** | 100 (10 H) | re-derivation |
 | E65 Stanton to Stager, 6 May 1864 | **N2** | substance and one quoted clause known (Plum 1882 II p.47) | not rated: committed reading uses the wrong key (section 2) | -- | -- |
 | O9-AH Meigs? to Capt. G. D. Wise, 20 Apr 1864 | **N3** | unknown | **D2** | 100 (14 H; mostly in clear) | re-derivation; image as transcribed by LS-R6 |
-| O9-AI, O9-AJ (to D. W. Cheesman, 1 and 4 Mar 1864) | N3 (no prior text located) | unknown | **D1** | 33.3 (1 H of 3 code words; "Ida", "Camden" M) | image checked here. The text is written in clear in the ledger; the decipherment adds three code words, two uncertain, so no result row is filed |
+| O9-AI, O9-AJ (to D. W. Cheesman, 1 and 4 Mar 1864) | N3 (no prior text located) -- **lowered to N1 by V1-O9** (AUDIT 2 below: both bodies are in the Huntington's public transcription of 8907) | unknown | **D1** | 33.3 (1 H of 3 code words; "Ida", "Camden" M) | image checked here. The text is written in clear in the ledger; the decipherment adds three code words, two uncertain, so no result row is filed |
 
 - **N3 (N2-BI, N2-BJ, N2-BK, N2-BL, N2-BM, O9-AH)**: no prior plaintext or decipherment located after the logged search. Not N4: NARA RG 92/107,
   the press page by page, Sheridan's and Dana's memoirs and HathiTrust are unread; JSTOR pending. Safe sentence (each): "Read at grade H with
@@ -3980,3 +3980,53 @@ SECOND-OPINIONS-QUEUE.tsv: no row exists for any of the 14 (grep), and none is o
 
 Requests: archive.org 10 (8 djvu fetches incl. one 500 + retry, 2 metadata), be-api.us.archive.org 7 (2 empty replies), hdl.huntington.org 1,
 catalog.hathitrust.org 1, data.htrc.illinois.edu 2 (500, 500; stopped); all >= 1.5 s apart.
+
+## AUDIT 2 (second adversarial, V1-O9): O9-AI, O9-AJ
+
+Verifier V1-O9 (account 3, LANE-VERIFY-1, session_01TDxmCRpJd25KsCabidCycM), 8 Oct 2026, 16:10-16:2x UTC by `date -u`; brief
+`.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md` "V1-O9". A separate session from the reader (LS-R6) and the first auditor (LS-V6),
+not protecting either's conclusion. Scope: **O9-AI, O9-AJ** (8907/15/0, to D. W. Cheeseman, Assistant Treasurer, via Brig. Gen. Wright,
+San Francisco, 1 and 4 Mar 1864) and one status.json record fix for E70. Nothing decoded; `decode_no9.py --check` "reading-no9.md is
+current", exit 0. Key source: `period` (mssEC 67).
+
+### 1. The deciding finding: the holder's own public transcription carries both bodies
+Prior-work check 3 (holder), which LS-V6 did not run for this pointer: the Huntington CONTENTdm item API for pointer 8907
+(`hdl.huntington.org/digital/api/collections/p16003coll11/items/8907/false`, field `text`; `telkwd` "tel025 : Cheeseman tel026 : Cheeseman";
+notes "Second telegram is written in ink") prints, word for word with reading-no9.md: "Br Gen Geo Wright San Francisco Washn Mar 1st 1864
+230 PM | From Ida March first. Hannah. For DW Cheese man Esq Assistant Treasurer US Camden period Make no further shipments of gold to
+London until other wise ordered Quadroon" and "Washn D. C. Br Gen Wright San Fran. Mch 4. 1864. | Ida March fourth Deborah for D W.
+Cheese - man U. S. Treas. Camden period You were directed on the first inst. to ship no more Coin period If not too late detain that
+referred to in your telegram of yesterday period Report immediately Signature Quadroon noon Mch 4th". The clerk's own header already
+gives "Washn" (what "Ida" = Abingdon stands for) and the hour. The only words the key could add are the date-line place (Ida), the time
+words (Hannah, Deborah; Deborah = 3 AM disagrees with "noon", M), the address word Camden (= Maine, M in this context) and the signer
+Quadroon (unresolved). **Not one body word is a code word.** By the D2V-E74 line (this file, LS3-V18b: body clear in the holding
+archive's public transcription except at most one code word = N1), both are **N1**: plaintext already published by the holding
+archive; our reading is an independent re-reading of the same leaf, not a decipherment of unknown text.
+
+### 2. Prior-work checks 3-5 and the families LS-V6 did not cover (8 Oct 2026)
+| check / family | route, query | result |
+|---|---|---|
+| 1 own work | grep 8907, O9-AI, O9-AJ in NOTES.md, AUDIT.md, status.json, SECOND-OPINIONS-QUEUE.tsv, JSTOR-QUEUE.tsv, entries/key-share TSVs | LS-R6 reading, LS-V6 audit; NOTES.md PF pass listed 8907/1 among six "clean rows with a `u` Huntington hit (partial overlap)"; no SO or JSTOR row for either |
+| 3 holder | Huntington item API, pointer 8907 (1 request) | **both bodies in clear in the public transcription** (section 1) |
+| 4 edition/calendar | LS-V6's OR ser. I vol. 33 / ser. III vol. 4 searches and the Chase Papers (Google Books) stand; not repeated | not located (as LS-V6) |
+| 5 (G3) press of the day, Chronicling America (www.loc.gov JSON, `dates=1864-02-26/1864-03-20`, pages read through their ALTO OCR, 3 s apart) | unquoted: "Cheesman gold" (5 pages), "shipments of gold London" (100), "Assistant Treasurer San Francisco gold" (37), "Chase gold shipments San Francisco" (20), "Cheeseman treasurer"; 9 pages read by regex (assistant treasurer, Chee?se?man, shipments of gold/coin/treasure, for London): Nashville Daily Union 6 and 12 Mar p.3, NY Tribune 17 Mar p.5, Worcester Spy 29 Feb p.2, Gold Hill Daily News 5 Mar p.2, 11 Mar p.2, 12 Mar p.1, Oroville Weekly Union Record 12 Mar p.3, Placer Herald 19 Mar p.4 | no report of the order. "Cheesman" hits are a steamboat (J. W. Cheesman), a New York physician and a patent pill; Gold Hill Daily News 12 Mar p.1 reprints a Sacramento editorial on the "drain of treasure" by California's treasure shipments (context only, not the order) |
+| Unread | San Francisco dailies (Alta California, Bulletin) page by page via CDNC; NARA RG 56 (Treasury telegrams to the Assistant Treasurer, San Francisco); Chase's journal for March 1864 | unread; moot for the class, since section 1 already settles N1 |
+
+### 3. Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| O9-AI to Cheeseman, 1 Mar 1864 2.30 PM | **N1** (lowered from N3) | known: body in clear in the Huntington's public transcription of pointer 8907 | D1 (held) | 33.3 (1 H of 3 code words, header/signature only) | fresh `--check`; holder record |
+| O9-AJ to Cheeseman, 4 Mar 1864 noon | **N1** (lowered from N3) | known: as O9-AI | D1 (held) | 33.3 | as O9-AI |
+
+- Safe sentence: "The text of both telegrams is in the Huntington's public transcription of mssEC 19 p.15 (pointer 8907); the period key adds
+  only the date-line place, the time words and the address word." Unsafe: anything implying the order to stop gold shipments to London
+  was unknown or newly read.
+- No status.json result row and no SECOND-OPINIONS-QUEUE.tsv row (none existed; the class is not N3+ and the depth is D1).
+- Postmortem: LS-V6 noted "the text is written in clear in the ledger" yet classed N3 because its search families covered print and the
+  press but not the holding archive's own transcription -- the D2V-E74 lesson again (prior-work step, check 3).
+
+### 4. Record fix: E70 in status.json
+The E70 result row already carried grade N2, gap and line from AUD2-LS-H, but `plaintext_novelty` still read N3; set to **N2** with a
+`plaintext_novelty_note` citing AUD2-LS-H ('## AUDIT 2 (second adversarial, AUD2-LS-H)' above). Nothing else on E70 touched.
+
+Requests: hdl.huntington.org 1; www.loc.gov 5 searches + 9 item JSON + 9 ALTO pages (tile.loc.gov), 3 s apart, no 429.
