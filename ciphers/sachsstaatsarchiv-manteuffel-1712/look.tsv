@@ -7,3 +7,4 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	after-2	391r			folio arithmetic	owed
 2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	after-3	391v			folio arithmetic	owed
 2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	after-4	392r			folio arithmetic	owed
+2026-10-08 22:40	adhoc-35b9c7	adhoc-35b9c7:2-leaf:3ca102	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	owed
