@@ -513,3 +513,70 @@ Cipher tokens are the code words only (LS3-R62's grades, H/C/S/M/I); plain words
 - **Text-known shape**: entries whose only code words are names/signatures fall under D2V-E74 (N1, the holding archive's public
   transcription); the residue's mostly-clear entries should be pre-sorted on this before any further verifier time is spent on them.
 - `tools/depth_check.py` (8 Oct 2026, after this section): "unique solves (N3+ and D2+): 52 -- D4 5, D3 28, D2 19; not counted D0/D1: 12"; no eckert-1862 row added (no N3+ D2 item). `tools/gaps_check.py eckert-1862`: "OK keep-going".
+
+## AUDIT 2 (second adversarial, V1-1862)
+
+Verifier V1-1862 (account 3, LANE-VERIFY-1, session_01HdWByoLSWN9ZvDVZzWL2wX), 8 Oct 2026, 16:10-16:2x UTC by `date -u`. A session
+separate from every reader (GAPS110-171, LS3-R62) and from both first auditors (VERIFY-ECK, account 4, 3 Oct; LS3-V62, account 2, 8 Oct),
+not protecting their conclusions. Items: **4992.3** (McClellan to Buell, 16 Feb 1862, the N3 for "Sermon = Bowling Green", queued as
+SO-ECK-4992) and **4982.1** (McClellan to Halleck, 14 Feb 1862, 2 PM, N3 D1). Nothing decoded; no `--check` re-run (no input changed since
+LS3-V62's and VERIFY-ECK's runs). Families the first audits did not cover were searched first, then G3 on the decoded wording.
+
+### 1. Prior-work checks 3-5 (`tools/prior_work.py` does not exist; checklist by hand)
+| check | route, query | result |
+|---|---|---|
+| 1 own work | grep 4992/4982 in AUDIT.md, NOTES.md, status.json, PROGRESS.tsv, VERIFY-BACKLOG.tsv, SECOND-OPINIONS-QUEUE.tsv | two first audits (above); SO-ECK-4992 queued 3 Oct; no status.json result row and no PROGRESS row for either item |
+| 3 holder | Huntington CONTENTdm `dmGetItemInfo/p16003coll11/4992` and `/4982`, field `transc` (2 requests) | **both entries' clear text is public**, code words in place: 4992 "For Alvord give me distribution of your troops how many in sermon line and where placed ... everything about rebels Andes"; 4982 "Alden Please inform me ... sent up the Myrtle & Mary with Bremen what widow have since been sent ... from Alvords Command in legend ... North of the Koran Andes Sarah". Same page 4982, entry 3 (11 PM): "where is your Whig on the **Sermon line**" |
+| 3 solver blog | Decoding the Civil War blog, WordPress public API, **all 154 posts fetched and grepped** (not the site search): sermon, bowling green, distribution of your troops, number of troops sent, myrtle, widow | "sermon" 0; Myrtle 0; widow 0; "bowling green" once ("Bickering Generals", 18 May 2017, clear prose about McClellan urging Buell, no code word). VERIFY-ECK read three posts and ran 12 site searches; this is the full corpus |
+| 4 edition, sender | *McClellan's Own Story* (1887), IA `cu31924030917391` djvu, whole-text grep of both entries' phrases | not present (the one hit, "no matter how long", is about his horse Dan) |
+| 4 edition, sender | Sears, *Civil War Papers of George B. McClellan* (1989), IA `civilwarpapersof0000mccl`, be-api fts restricted to the item; positive control "Buell" -> hit (Dec 1861 letter to Buell) | "distribution of your troops" 0; "number of troops sent" 0; "no matter how long" 0; "sent up the Cumberland" 1 = the Jan 1862 letter to Halleck (OR 7 p.527 text), not 4982.1; "exact state of affairs" 1 = a McClellan letter ("can then tell you the exact state of affairs, & the time when I shall probably reach"), not 4992.3. "Bowling Green line": 502, one retry not spent on it (two other 502s that minute) -- unchecked |
+| 4 OR ser. I | vol. 52 pt 1 (`warofrebellion521unit`; **not searched by VERIFY-ECK for 4992.3**) and vol. 7 (`warofrebellionco0007vari`), whole-text grep, plus every 14-18 Feb 1862 McClellan-Buell and McClellan-Halleck telegram listed by script | neither entry printed. Positive control: OR 52.1 p.211 (4982.3, LS3-V62) found by the same grep |
+| 5 G3 same-day / replies | OR 7 telegrams of 14-17 Feb read in full (list above) | **4992.3: SUBSTANCE, diffed**: OR 7 pp.620-621, "February 16, 1862--11 a.m. Brig. Gen. D. C. Buell, Louisville, Ky.: Give me in detail your situation and that of the enemy. Whither did he go from Bowling Green? I wish the position of things in full. Geo. B. McClellan", and Buell's reply the same day, "My dispatch of yesterday gives in detail the position of my troops ... converging on Bowling Green". Same day, same parties, same request in substance, but a **different telegram**: no shared wording beyond "give me" ("distribution of your troops", "how many in [Bowling Green] line", "all other lines", "no matter how long a telegram it requires", "everything about rebels" are all absent). 4982.1: Buell's 14 Feb 6 PM answer to the sister telegram (OR 7 p.612) and Halleck's 15 Feb 11 AM ("I have only about 30,000 men in the field, but am pushing forward re-enforcements") answer in part; neither is 4982.1 |
+| 5 G3 phrase re-search | IA be-api fts, all items: "sermon line" (331, all homiletics/T. S. Eliot), "Sermon = Bowling Green" (32, church notices), "exact state of affairs and everything" 0, "number of troops sent up the" (10, all Illinois colonial-trade texts), "Myrtle & Mary" (personal names only); "how many in sermon", "everything about rebels", "sermon line" McClellan: 502 twice (one retry each) -- unchecked | no relevant hit |
+| 5 G3 Google Books | API with key and country=US, 7 queries ("sermon line" Buell; "Sermon" "Bowling Green" telegraph cipher McClellan; "how many in sermon line"; "everything about rebels"; "number of troops sent up the Cumberland"; Myrtle Mary Cumberland Tennessee cipher telegram; "Eckert" ledger "Sermon") | 0 relevant (loose matches: sermons, OR 7 passages already read, a 1990 book on denim) |
+| 5 G3 press of the day | Chronicling America through loc.gov JSON API, 13-22 Feb 1862, 3 queries | **403 on all three; stopped (good-citizen rule) -- unchecked**. Low prior: these were War Department cipher telegrams, but the press stays unread |
+| not searched | OR ser. III vol. 1 (Scott railroad traffic; not either entry's subject), Buell papers, NARA RG 107 (M473), Zooniverse Talk (no keyword search), JSTOR (no row: a one-code-word item) | unchecked |
+
+Requests: archive.org download 3, advancedsearch 2, be-api 16 (6 answered 502), Huntington CONTENTdm 2, public-api.wordpress.com 5,
+googleapis.com 7, loc.gov 3 (403). One at a time, >= 1.5 s apart.
+
+### 2. Findings
+- **Sermon = Bowling Green is readable from two public sources without our key.** The Huntington's own transcription of 4982 entry 3 has
+  "where is your Whig on the Sermon line", and OR ser. I vol. 52 pt 1 p.211 (1898) prints that telegram as "where is your advance on the
+  Bowling Green line?" (LS3-V62 found the print; it did not draw this consequence for 4992.3). The *meaning* of the code word, for the token
+  of 14 Feb, is therefore in print against a public transcription -- the N2 shape (plaintext known elsewhere, no prior mapping of the code
+  word to it found). No one was found to have written the mapping down (DCW blog full corpus, Google Books, IA full text). The value is
+  correct beyond doubt: it now has a fourth witness two days before 4992.3, on the same McClellan-Buell line. key.md's row cites OR 7
+  pp.584, 624, 626 only; adding OR 52.1 p.211 is the solver lane's job, not done here.
+- **4992.3 as an entry.** Its clear frame is public (Huntington); its three code words are Alvord and Andes (published, DCW 2017) and
+  Sermon. Its own text -- "how many in [Bowling Green] line" -- was found in no print; the nearest print is the different 11 a.m. telegram
+  of the same day (OR 7 p.620). So the N3 stands for one thing only: no prior decipherment of this entry's one unpublished code word was
+  located. It is not a newly found telegram (the text is public) and not a newly recovered key value (the value is printed against a
+  public transcription two days earlier).
+- **4982.1 as an entry.** Confirmed as LS3-V62 left it: clear frame public, ten code tokens (C 7, M 2, I 1), no print of the telegram in
+  OR 7, OR 52.1, *Own Story* or Sears; the sister telegram to Buell (OR 7 p.612) and Halleck's 15 Feb reply are context only.
+
+### 3. Classes and depth (depth bar .claude/briefs/runs/2026-10-08-acct3-depth-bar.md; kept or lowered, never raised)
+| item | N-class | key | depth | code tokens | change |
+|---|---|---|---|---|---|
+| 4992.3 McClellan to Buell, 16 Feb 1862 | **N3**, scoped: the entry's reading of Sermon; clear text N1 (Huntington), Alvord/Andes published; the code-word *value* itself N2 (OR 52.1 p.211 against the public transcription of 4982.3) | ours (Sermon, from print alignment), published (Alvord, Andes) | **D1** (first depth ruling for this item: three isolated name/place substitutes in clear text, no clause, no value read in two contexts inside the entry; D1 is the honest ceiling) | 3, all C | class kept; scope narrowed; depth set |
+| 4982.1 McClellan to Halleck, 14 Feb 1862, 2 PM | **N3** (kept) | ours (+ published for Andes, Alden, Alvord) | **D1** (kept) | 10 (C 7, M 2, I 1) | none |
+
+- **Safe sentence (4992.3)**: "A 16 Feb 1862 telegram from McClellan to Buell in the mssEC 15 sent ledger, public in the Huntington's
+  transcription, asks how many troops are on the 'Sermon' line; Sermon reads Bowling Green, a value also witnessed by OR ser. I vol. 52 pt 1
+  p.211 against the same ledger's 14 Feb entry. No print of this telegram and no earlier statement of the code word's meaning was located
+  (searched 3 and 8 Oct 2026)." Unsafe: "an unknown telegram", "a newly recovered code word", "first decipherment", any depth word above
+  "fragments read".
+- **Safe sentence (4982.1)**: LS3-V62's, unchanged, plus "and in neither McClellan's Own Story nor Sears's Civil War Papers (8 Oct 2026)".
+- **status.json / PROGRESS.tsv**: no result row exists for either item and none is added (N3 at D1 is not a counted solve, the LS3-V62 and
+  LS-V7 E74 handling). **SO-ECK-4992**: the class does not move, so the row is left as queued; its prompt already asks about OR 52 pt 1,
+  and a second-opinion runner checking it will find p.211 on its own. Recommend (not done, prompt edits are the lane's): add one line to
+  the prompt naming OR 52.1 p.211 so the runner tests the narrowed claim.
+
+### 4. Postmortem
+- VERIFY-ECK (3 Oct) cleared 4992.3 without OR 52 pt 1 and without reading the same-day OR 7 telegrams to Buell; LS3-V62 (8 Oct) found
+  OR 52.1 p.211 for 4982.3 but did not carry its Sermon witness to 4992.3. The N3 survives, narrower: an N3 resting on one code word needs
+  the check "is this word's meaning already printed against a public clear copy elsewhere in the same ledger?" before the class, which a
+  grep of the holder's transcription for the code word plus the print of each hit answers in two requests.
+- Unreachable this session (re-run before outreach): Chronicling America press (403), three be-api phrase queries (502), Sears for
+  "Bowling Green line" (502).
