@@ -2188,3 +2188,74 @@ or_volumes.tsv (every sha256 matches) and the 8 DIR62 1862 volumes, to scratch, 
   `--possessive --guard DIR62 --check`, `--read-free DIR62 --check`, `ec18_align.py --check`, and `ec18_align.py --rows`
   align_free / align_flip / align_flipctl `--check`.
 Requests: archive.org 56 (48 OR + 8 DIR62), hdl.huntington.org 1; >= 1.6 s apart. 0 subagents, 0 vision.
+
+## LS3-R62 (8 Oct 2026, account 2, for LANE ST-LEDGER-3)
+Solver session (10:17-10:5x UTC by date -u); brief `.claude/briefs/runs/2026-10-08-acct2-st-ledger3-workers.md` section LS3-R62.
+Gap under test (D12-E62H Remaining gaps, gap 1): are the residue's M-graded tokens transcription slips the decode reads as code?
+Intake gate (lane header, 10:1x UTC): `eckert-1862: partial (line 3) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+Data to scratch, not committed: the 58 residue page texts (pages_manifest.tsv pointers; `residue_decode.py --check` current on
+them, totals C 155 I 36 M 82 reproduced per entry by a scratch script); 13 OR 1862 `_djvu.txt` (vols. 5, 7 x2 scans, 8, 9,
+10 pt1-2, 11 pt1/3, 12 pt1/3, 51 pt1, 53); page images 2583 px of 4960, 4979, 4982, 4983, 4984, 4992, 4999, 5024.
+- Selection (script over the residue entries with >= 1 M token, 54 of 124; keyed share = key tokens / (key tokens + oov), then
+  fewest oov): top six by share were 5024.1 (1.0), 4979.1 (0.875), 4982.1 (0.769), 4960.2 (0.765), 4999.1 (0.75), 4983.1 (0.667).
+- OR re-grep before reading (lane pre-filter; 6-gram shingles of each entry's non-key words against the 13 volumes): four of
+  those six are in print and are recorded N1-likely, not decoded further: 5024.1 OR I/51 pt1 about p.539 (24 6-gram hits),
+  4960.2 OR I/51 pt1 about p.523 (17), 4983.1 OR I/51 pt1 pp.531-533 (69), 4979.1 OR I/53 p.513 (Washington 12 Feb 1862,
+  McClellan to Halleck, "Retain the Ohio battery; also the other troops for Kansas if absolutely necessary. I would rather not
+  hold back the Kansas infantry if you can help it"). The last corrects GAPS187's "entry 1 unprinted" for page 4979 (vol. 53
+  was not in that grep); its print also witnesses wharf = infantry, Lamb = Kansas, Koran = Ohio for 12 Feb (not folded into
+  key.md here). Of all 54 M-bearing entries, 20 have >= 3 6-gram hits in one OR volume (mostly OR 51 pt1).
+- The six read (next by share with <= 2 hits, both hits checked by eye as different telegrams): 4982.1 (share 0.769; its 2 hits
+  are McClellan's same-day telegram to Buell, OR 7, "what re-enforcements have been sent from your command ... up the
+  Cumberland and Tennessee", a parallel, not this telegram), 4999.1 (0.75, 0 hits), 4984.3 (0.667, 0), 4992.1 (0.667, 0),
+  4999.2 (0.667, 0), 4982.3 (0.667, 1 generic).
+- Crops (pasted commands, one per entry region; scratch, not committed):
+  `python3 tools/iiif_lines.py --image p4982.jpg --out crops --region 320,240,2000,920 --prefix p4982e1 --lines-per-crop 4`;
+  `... p4982.jpg ... --region 320,2000,2000,880 --prefix p4982e3 --lines-per-crop 4`; `... p4999.jpg ... --region 300,180,1950,250
+  --prefix p4999e1 --lines-per-crop 2`; `... p4999.jpg ... --region 300,1520,1950,300 --prefix p4999e2 --lines-per-crop 3`;
+  `... p4984.jpg ... --region 320,1700,2000,800 --prefix p4984e3 --lines-per-crop 4`; `... p4992.jpg ... --region 330,330,2000,320
+  --prefix p4992e1 --lines-per-crop 3`. Read by this session (no subagents), with one page overview each for layout.
+- Result, every M token settled from the image (print/residue/image_check_ls3r62.tsv, 9 rows): 9 of 9 read exactly as the
+  volunteer text has them (Myrtle, Mary, Camden, Ingress x2, jolly, Anthon, Humboldt x2), and all six head dates read as
+  transcribed (Feb 14 2 PM, Feb 14 11 PM, Feb 19 x2, March 2d 1862, Feb 16). 0 transcription slips. Each M is a key-range M:
+  the word's only witness is a single day or a range that misses the entry (Myrtle 21 Feb only, Mary 6 Feb only, Ingress 17 Feb
+  only, Camden 16-21 Feb, Anthon Feb row ends 15 Feb, Humboldt and jolly rows themselves M). The image cannot move these; a dated
+  witness can. One image-only detail outside the graded text: 4984.3's tail word "lose" is struck through (no deletion mark in
+  the volunteer text); tail, ungraded, no change.
+- Grades per entry, before = after (H/C/S/M/I): 4982.1 0/7/0/2/1; 4999.1 0/2/0/1/0; 4984.3 0/1/0/3/0; 4992.1 0/3/0/1/0;
+  4999.2 0/3/0/1/0; 4982.3 0/4/0/1/1. Residue totals unchanged, C 155, I 36, M 82; `print/residue_decode.py --check` and
+  `decode.py --check` re-run after: "residue readings are current", "reading.md is current", exit 0.
+- Matched control (lane point: other books + a meaning-shuffled copy of the chosen key, seed 1862, residue_decode.py's own
+  permutation): code-word tokens that fill their slot in a grammatical clause, chosen key / shuffled / No. 1 / No. 2 / No. 9
+  (key.md, key-no2.md, key-no9.md of ciphers/eckert-1864, read literally):
+  4982.1 10/10 / 0 / 0 / 1 ("what [Troops] have") / 0; 4999.1 3/3 / 1 ("[Gordonsville] road") / 0 / 0 / 0; 4984.3 4/4 / 0 / 0 /
+  0 / 0; 4992.1 4/4 / 1 ("[Gordonsville] railway") / 0 / 0 / 0; 4999.2 3/4 (jolly unresolved) / 1 / 0 / 0 / 0; 4982.3 6/6 / 0 /
+  1 / 1 / 0. The chosen key beats all four on every entry. Internal check: the time word matches the head's hour in both entries
+  that carry one (4982.1 Sarah = 2 PM under "2 PM"; 4982.3 Francis = 11 PM under "11 PM"); No. 1, No. 2 and No. 9 time words there
+  read 6.30 PM / 11 PM, 11.30 PM / 12.30 AM, 9.30 PM / 11 AM.
+- Clause of authentication length: 4982.1 reads one clause carrying seven code tokens, "the number of troops sent up the
+  [Cumberland River] & [Tennessee River] with [Grant] what [reinforcements] have since been sent from your Dept what from
+  [Buell]'s Command in [Kentucky] and from the states in his Dept North of the [Ohio]", but two of the seven (the rivers) are M,
+  so it does not count as an S/C stretch; whether a mostly-plain telegram with C-graded arbitraries clears the authentication
+  distance is the verifier's call (rule 4a). The other five carry 1-4 code tokens each in otherwise plain text.
+- Request counts: hdl.huntington.org 66 (58 page texts + 8 images), archive.org 17 (13 OR texts + 4 error pages for wrong
+  ids), >= 1.6 s apart. 0 subagents; vision: 4 page overviews + 7 line crops.
+Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (finish-or-blocker pass, LS3-R62, 8 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (GAPS197); 6 residue entries' 9 M tokens image-checked 8 Oct 2026 (LS3-R62: 0 slips, grades unchanged); received ledgers mssEC 01-14 searched (GAPS171, D1-ECK62L): 0 code-bearing twins
+- residue entries of mssEC 15 (about 290) - blocker: open-codes; image test of the M tokens run 8 Oct 2026 (LS3-R62: 9 of 9 M tokens in the six highest-share unprinted entries read as transcribed, dates too; the residue's M is key-range M, not transcription), and 20 of the 54 M-bearing entries are in OR 1862 print by a 6-gram re-grep (4979.1 in OR 53 p.513, correcting GAPS187); next: align those 20 printed entries to their print (print/or_align.py method) to give their M tokens dated C witnesses and widen the single-day key rows (Myrtle, Mary, Ingress, Camden, Humboldt), then regenerate the residue, ~$2
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 860 oov tokens remain (GAPS197); conflicts Lamb, Luna date-separated, Indus split by slot; table-change dates unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; state as in D12-E62H's Remaining gaps (Hurlbut-row M 7 -> 1); next: 9877 against the received copy or a Middle Department print (Lew Wallace papers), ~$2
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; Cipher No. 3/No. 4 period; the one known No. 4 copy (Friedman Collection, Marshall Foundation) is Cloudflare-blocked from the cloud; next: the No. 4 copy read from a desk browser (LOCAL-QUEUE row, owner's machine), ~$1
+- mssEC 18 entries still '?' - blocker: not-attempted; state as in D12-E62H's Remaining gaps; next: the 112 undated-match '?' entries by a different instrument, or leave '?' as the residue no print or image decides, ~$3
+
+## Escalation (LS3-R62, 8 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-14 (GAPS171, D1-ECK62L), mssEC 12-13 (D1-ECK62W), parallel sent ledger mssEC 18 (GAPS206, A3V3-ECK18, A3V3-ECK2), second OR scans and PUSG 11 (D12-E62H)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: Huntington cipher books searched for No. 3/No. 4: none (No. 5 only, R8-ECK62); next: Cipher No. 4 in the Friedman Collection (Marshall Foundation), from a desk browser, ~$1
+- [ ] print: residue M tokens on the 20 printed residue entries not yet aligned to their print (LS3-R62 re-grep); next: or_align.py over them, ~$2
+- [x] key-rebuild: Koran/Lamb/Luna/Indus (GAPS191); Handle, Harry, author (A3V3-ECKC); possessive and collision guard (RUN3-ECK62)
+- [x] image-check: the ten mssEC 15 readings (reading.md); six mssEC 18 entries (DEF1-ECK62I); Lehigh row (DEF1-ECK62P); six residue entries' M tokens (LS3-R62, 0 slips)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 4 internal gaps; cheapest next: align the 20 printed residue entries to their OR print for dated C witnesses, ~$2 (the image route for the residue M tokens is tested, 0 slips in six entries); the No. 4 book waits on a desk-browser read of the Friedman copy
