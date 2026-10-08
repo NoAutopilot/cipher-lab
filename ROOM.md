@@ -11372,3 +11372,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 20:08 | MANT-08 worker | claim: sachsstaatsarchiv-manteuffel-1712 694/08 frames 0390/0391/0395/0485 under Krauske table, cap USD 7, box 20:08-22:08 UTC (80% stop 21:44), for LANE FAMILY (account 2)
 2026-10-08 20:08 | V-OLD10 verifier | claim: AUDIT 4 of na-oldenbarnevelt-2442-1605 scan 10 block (ff.63v/64r), cap 4.5, box 20:06-21:36 UTC (80% 21:18) -- for LANE FAMILY (account 2)
 2026-10-08 20:10 | MANT-08 worker | huygens take (retroboeken/heinsius search_in_text, <= 8 requests); for LANE FAMILY (account 2)
+2026-10-08 20:12 | MANT-08 worker | huygens release (10 requests: 5 searches, pages.json, 4 OCR pages); for LANE FAMILY (account 2)
