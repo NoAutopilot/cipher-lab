@@ -10821,6 +10821,102 @@
     "local": false
    },
    "source_file_downscaled": true
+  },
+  {
+   "crop": "c106_viv_fp_L07_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f106/1200,1290,2980,220/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009663p_f106_1200_1290_2980_220.jpg",
+   "box": [
+    1200,
+    1290,
+    3600,
+    1510
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "08 Oct 2026"
+  },
+  {
+   "crop": "c106_viv_fp_L07_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f106/1200,1290,2980,220/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009663p_f106_1200_1290_2980_220.jpg",
+   "box": [
+    1780,
+    1290,
+    4180,
+    1510
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "08 Oct 2026"
+  },
+  {
+   "crop": "c106_viv_fp_L34_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f106/1200,4360,2980,220/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009663p_f106_1200_4360_2980_220.jpg",
+   "box": [
+    1200,
+    4360,
+    3600,
+    4580
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "08 Oct 2026"
+  },
+  {
+   "crop": "c106_viv_fp_L34_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f106/1200,4360,2980,220/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9009663p_f106_1200_4360_2980_220.jpg",
+   "box": [
+    1780,
+    4360,
+    4180,
+    4580
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     110
+    ]
+   },
+   "date": "08 Oct 2026"
   }
  ],
  "manual_crops": [
