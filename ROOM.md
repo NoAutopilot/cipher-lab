@@ -11232,3 +11232,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:51 | FM-PRE worker (acct1) | LANE LEDGER hdl release (5 requests: record, compound, 3 bulk dmQuery pages; all 411 page transcriptions harvested)
 2026-10-08 17:52 | LS5-R1d reader (acct1) | LANE LEDGER hdl take
 2026-10-08 17:52 | LS5-R1e worker | LANE LEDGER hdl take
+2026-10-08 17:52 | worker LS5-R1c (LANE LEDGER) | LANE LEDGER hdl take
