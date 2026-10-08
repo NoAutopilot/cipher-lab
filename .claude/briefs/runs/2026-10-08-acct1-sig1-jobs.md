@@ -119,3 +119,33 @@ Lee (2011) on the L&N, Klein's History of the Louisville & Nashville Railroad (1
 Railroads reports (McCallum's 1866 report; Donaldson's own QM reports for 1864-65 in the QMG annual report / OR ser. III vol. 5) -- searched
 for the Dec 1864 seizure proposal. Same template steps; AUDIT.md section "## AUDIT 3 (AUD-SIG-E146)"; propagation; one line in the
 "## Lane SIG additions" section as above.
+
+---
+
+# Wave 2 (written 8 Oct 2026 23:1x UTC by date -u). Gallica probe 23:15 UTC: 403 (manifest btv1b9001489r) -- the Baluze full-volume sweep stays blocked this incarnation.
+
+## SIG-B228B (Opus 5.5, solver; cap $3.5, box 60 min, no network): Baluze 170 f.228 -- the u4/4u signs and the two 71 marks, re-judge
+Target baluze167-davaux-1637. Read NOTES "## SIG-B228" and its Remaining gaps item "170 f.228r-v reading". Same common block as wave 1.
+1. Pre-register first (`b167228/prereg_sig2.md`, committed before any tile is read): the f.228v signs D1-BAL170B settled as s:u4 from a u4/4u
+   split (b_L01, b_L05 "la l[?]ngrave", and any other u4/4u split rows on f.228 the reconciliation lists) get a value only if two blind Sonnet
+   reads both match them to the same f.229 exemplar (E-a for 4u, E-t for u4) in SIG-B228's tile-sheet method (`b167228/sig_tiles.py`), with
+   >= 2 of 3 decoys (already-valued f.228 tiles) right in both reads; else they stay as they are. The two v a_L01 71' marks: one more blind
+   read pair on a tighter crop, with the same 4-numeral control; a mark changes only on agreement of both reads.
+2. Units: 1 tile sheet x 2 reads + 1 mark strip x 2 reads + reconciliation = ~5 calls at ~$0.6.
+3. Apply through b167228/sig_shape_map.tsv / to_pipe.py / exceptions only; `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check`
+   exit 0; re-run `b167228/judge_null.py` unchanged and paste the table beside SIG-B228's (-0.971 vs -0.935). Per CLAUDE.md rule 3 (ZX-DEC349
+   paragraph): also score through the same judge any period gloss text of the same hand and length on disk (f.229's own glossed neighbours'
+   period gloss, if a clear gloss text exists in survey.tsv/gloss.tsv) beside the reading, and report it.
+4. NOTES "## SIG-B228B (8 Oct 2026, account 1, for LANE SIG-1)", counts before/after, Remaining gaps / Escalation, gaps_check. Do not classify.
+   The lane sends the reading to a separate verifier after this job whatever the judge says (the verifier rules on depth).
+
+## SIG-4612B (Opus 5.5, solver; cap $3, box 60 min, no network): Lodewijk 4612 -- word-bigram objective, pre-check only
+Target lodewijk-van-nassau-1573-74. Read NOTES "## SIG-4612" and gaps43/PREREG-unigram.md. This is the third LM objective for the same global
+anneal (GAPS43 segmentation, SIG-4612 unigram): under CLAUDE.md rule 3's third-attempt clause it runs the PRE-CHECK ONLY.
+1. Pre-register (`gaps43/PREREG-bigram.md`, committed first): fr16 word-bigram (with unigram backoff, per-character OOV cost) score of the best
+   segmentation; on the 5811 cut, key_full must score better than the anneal's optimum from key_full start AND from 3 random starts.
+2. If the pre-check FAILs: stop; log in HYPOTHESES.md and NOTES that the global LM-anneal instrument is [retired] for 4612 (three objectives,
+   three pre-check/control failures), next step needs new material or a different instrument. If it PASSes: run the 20%-perturbed control,
+   3 seeds, gate >= 0.90 each, and only on PASS the 4612 v3 target, exactly as SIG-4612's brief steps 3-5.
+3. Units: implement `--objective bigram` in gaps43/word_anneal.py with an offline test (~$1), pre-check (~$1). Serial CPU only.
+4. NOTES "## SIG-4612B (8 Oct 2026, account 1, for LANE SIG-1)"; Remaining gaps item updated; gaps_check.
