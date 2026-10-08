@@ -38,3 +38,6 @@ FAIL: nothing promoted; log "rule not licensed at this precision" and stop.
 Caveat declared in advance: these 40 columns are glossed siblings that pass A flagged M; L12 tokens are unglossed, so a PASS
 licenses the rule on a related population, not on L12 itself (stated in NOTES, not hidden). If S < 10 the result is "untestable at
 this N", not a FAIL of the rule (rule 3, third-attempt clause applies to a further attempt).
+
+## Amendment 1 (21:5x UTC by date -u, before any crop was cut or read, nothing scored)
+The first d3bla2_universe.py (commit 3b8babd6, pushed 21:44 UTC; the header time "21:5x" above was typed ahead of the clock, the clock read 21:44) keyed passA/passB by raw (line,pos). That is wrong for BLA188_p3 (pass A is one line ahead from L10; see settle.fix_a) and wherever B has gaps against A. The script now uses settle.py's aligned columns (fix_a + Needleman-Wunsch), as ciphertext.tsv does: a candidate is an aligned, glossed column where A's conf is not H or A and B groups differ ('-' counts). 115 candidates, still > 40, same seed 20261008, same sampling call over the sorted list; `d3bla2_universe.tsv` replaced (now with A_group, A_conf, B_group columns, so the single-reader scores come from the same file). Nothing else in this file changes. The first sample is discarded unread.
