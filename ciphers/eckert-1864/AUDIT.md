@@ -2678,6 +2678,8 @@ are not message text and are not counted.
 - Rows: status.json one result row per N3 entry (E57, E59, E62), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E57, -E59,
   -E62 with prompts in second-opinions/; JSTOR-QUEUE.tsv six rows. Requests: in the ROOM done line.
 
+Correction carried (LS-FIX, 8 Oct 2026, commit f4dba16ec): E60 header now Lincoln to John Hay at the Astor House, "John" plain in clear (H 7); no class change.
+
 ## AUDIT (LS-V6)
 
 Verifier LS-V6 (account 1, LANE ST-LEDGER-2), 8 Oct 2026, 04:16-04:4x UTC by `date -u`; a separate session from every reader of the
@@ -2812,3 +2814,5 @@ passes it -- so neither verdict is licensed; whether No. 1 reads the 1865 rows i
   decoding; the wrong book still yields fluent-looking plain words in a mostly-plain telegram.
 - Rows: status.json one result row per N3 entry (N2-BI, N2-BJ, N2-BK, N2-BL, N2-BM, O9-AH), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv
   rows SO-ECKERT-N2BI, -N2BJ, -N2BK, -N2BL, -N2BM, -O9AH with prompts in second-opinions/. Requests: in the ROOM done line.
+
+Correction carried (LS-FIX, 8 Oct 2026, commit f4dba16ec): E65 withdrawn from ciphertext.txt and re-filed as N2-BO in ciphertext-no2.txt, decoded with key-no2.md; no class change.
