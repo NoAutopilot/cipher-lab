@@ -1,5 +1,5 @@
-open
-Verdict: open -- key no.1 a non-test at 37 tokens (DUCH-KEY1B, power 0/20); key no.4 cannot cover f.10r (DUCH-KEY4); ff.9, 11, 12 carry no cipher (DUCH-LEAVES); f.13r's glossed codes (DUCH-F13, 3 Oct 2026: 34 codes, both passes agree on every number, 6 codes glossed at H) cover 6 of f.10r's 37 tokens (82 82, 21 21, 12 12; p 0.029 vs random code sets), all M because the f.13r and f.10r hands were not shown to be the same writer, so the pre-registered crib gate (>=3 C) fails; f.13r's list is not key no.1 (0/6 agree). next: settle the hand question (a person's palaeographic look at images/f10b vs images/f13r, ASKS) and a third read of the 40 gloss (Vill./Lill.) ~USD 2; if the hands match, the 6 carries become C and the gate is met. Hand test (R11A-F4712, 6 Oct 2026): blind digit comparison with positive and negative controls was a NON-TEST (positive control 4/10 = negative control 4/10, f.13r 5/10; too few digits, no 8 on f.13r panels); the owner's ASKS 113 "I think the same" (5 Oct) stands as the only same-writer judgement; next: apply it as C per ASKS 113's rule with decode --check, ~USD 1.5.
+partial
+Verdict: partial -- 6 of f.10r's 37 tokens (S1) carry f.13r's H glosses at grade C (82 82 "D. n.", 21 21 "Berry", 12 12 "b. Pal."; D2-F4712, 8 Oct 2026, applying the owner's ASKS 113 same-writer judgement under PREREG_duchf13.md; pre-registered crib gate met: 6 C >= 3, p 0.029 vs random code sets); the other 31 tokens have no reading (key no.1 a non-test at 37 tokens, DUCH-KEY1B; key no.4 cannot cover f.10r, DUCH-KEY4; f.13r's list is not key no.1, 0/6). The same-writer basis is one person's "I think the same" against our own "leaning different" on the 8-form, and R11A-F4712's blind digit test was a NON-TEST (6 Oct). See "## Remaining gaps" at the end.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -360,3 +360,55 @@ The 3 Oct leaf-census step (ff.9, 11, 12) was done by DUCH-LEAVES (no figure run
 NON-TEST, 6 Oct 2026); the live step is the one the top-of-file Verdict names. next: apply the owner's same-writer judgement
 (ASKS 113, 5 Oct 2026, "I think the same") to the 6 f.13r-glossed carries as C per that row's rule, re-run the decode with
 --check, ~$1.5. Who acts: agent.
+
+## D2-F4712 (account 2 for LANE DEFAULT-account-2-20261008-0710, 8 Oct 2026, 07:21-07:3x UTC by date -u): ASKS 113 applied -- six carries at C
+
+Applied exactly what PREREG_duchf13.md (commit 1d4fcd95) and ASKS row 113 pre-registered; no new gate. `f13_carry.py` now has
+`HAND_SAME = True` (with the 3 Oct `None` and the reason for the change in a comment); `python3 f13_carry.py` rewrote
+`f13_carry.tsv` / `f13_carry_stats.tsv`, and `python3 f13_carry.py --check` answers OK. The folder has no key.tsv/decode.json,
+so the folder's own carry script is the rule-7 decode for these tokens.
+
+Same-writer evidence, side by side (prereg condition (c)); the carry follows the person's judgement, the other two rows stay on record:
+
+| source | date | judgement | basis |
+|---|---|---|---|
+| owner's eye check, ASKS 113 | 5 Oct 2026 | "I think the same" (moderate confidence) | side-by-side f10c_L01_s1-3 vs f13g_L01-L04_s1 |
+| DUCH-F13 (our look) | 3 Oct 2026 | not shown, leaning different | 8 written as an open form on f.10r ("82 82"), a closed loop on f.13r (".82.", ".58.") |
+| R11A-F4712 blind digit test | 6 Oct 2026 | NON-TEST (positive control 4/10 = negative 4/10) | too few digits; no 8 on the f.13r panels |
+
+The six carried tokens (S1, Tomokiyo's segmentation), each graded C; caveat on every one: the open-8 vs looped-8 conflict above.
+
+| f.10r idx (S1) | token | f.13r gloss (H on f.13r) | grade |
+|---|---|---|---|
+| 1 | 82 | D. n. | C |
+| 2 | 82 | D. n. | C |
+| 8 | 21 | Berry | C |
+| 22 | 12 | b. Pal. | C |
+| 25 | 21 | Berry | C |
+| 30 | 12 | b. Pal. | C |
+
+S2 gives the same six tokens (idx 1, 2, 8, 21, 24, 29); S3 (offset 1) gives 21 x3, 12 x2 and 58 "R" (six C).
+Rule 4 counts for f.10r under S1 (37 tokens): **H 0, C 6, S 0, M 0, I 0; 31 unread** (16% of tokens at C). No H or C letter-level
+reading exists; this is a crib lookup, not a reading of the passage: "D. n.", "Berry", "b. Pal." are left as written on f.13r
+and no referent is claimed. Pre-registered gate (stat 2 p <= 0.05 AND >= 3 C under S1): **met** (p 0.029, 6 C). What the
+gate licenses (prereg): f.10r gets a crib at these six positions; nothing beyond the glossed tokens.
+Stat 3 unchanged: 0/6 f.13r H glosses agree with key no.1 (rotation p 1.000) -- f.13r's list is not key no.1.
+Code 40's gloss ("Vill."/"Lill.") is still M on f.13r and does not occur on f.10r under S1, so it does not affect this carry.
+No AUDIT.md exists for this target, so no audited reading changed; the move open -> partial is flagged in ROOM for a verifier.
+Requests: none (no network). Vision calls: 0.
+
+## Remaining gaps (D2-F4712, 8 Oct 2026)
+Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens unread
+- f.10r tokens outside f.13r's H-glossed codes (31 of 37) - blocker: no-key-material; key no.1 is a non-test at 37 tokens (DUCH-KEY1B), key no.4 cannot cover f.10r (DUCH-KEY4), f.13r's M glosses do not reach them; next: view the leaves after f.13 (f.13v onward, canvas 23+) for another glossed or deciphered sibling, ~$2
+- same-writer basis of the six C carries - blocker: not-attempted; one person's eye vs our 8-form reading, the machine digit test was a NON-TEST; next: a digit-rich f.13r/f.10r comparison or a palaeographer's look, ~$2
+- f.13r code 40 gloss (Vill. vs Lill.) and code 93 conflict - blocker: not-attempted; neither occurs on f.10r under S1, so they do not limit this letter; next: a third reader on recon_1.jpg tiles 40a/40b, ~$1.5
+
+## Escalation (D2-F4712, 8 Oct 2026)
+- [ ] siblings: leaves after f.13 (f.13v onward, canvas 23+) are unviewed; planned: a leaf census like DUCH-LEAVES
+- [x] clear-pages: ff.9, 11, 12 checked, no cipher (DUCH-LEAVES); f.13r's glossed codes used as the crib (DUCH-F13, this job)
+- [x] known-keys: key no.1 applied (non-test, DUCH-KEY1B), key no.4 tried (design mismatch, DUCH-KEY4)
+- [x] print: Gomberville's Mémoires (1665) full-text searched (NV-INTAKE, 3 Oct 2026), no cipher passage printed
+- [n/a] key-rebuild: 37 tokens is far below any cryptanalytic length for a code of this size
+- [x] image-check: f.10r read from crops (DUCH-KEY1B), f.13r two blind passes agree on all 34 codes (DUCH-F13)
+- [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
+Verdict: keep going: 2 internal gaps; cheapest next: leaf census of f.13v onward for a glossed sibling, ~$2 (the code 40 third read, ~$1.5, does not touch f.10r)

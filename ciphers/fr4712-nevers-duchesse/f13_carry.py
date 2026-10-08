@@ -9,7 +9,11 @@ H = Path(__file__).resolve().parent
 sys.path.insert(0, str(H))
 import score_key1 as sk
 
-HAND_SAME = None  # prereg (c): True / False / None (undecided) -- set from the NOTES.md hand comparison
+# prereg (c): True / False / None (undecided) -- set from the NOTES.md hand comparison.
+# 3 Oct 2026 DUCH-F13: None (not shown, leaning different: f.10r open 8 vs f.13r looped 8).
+# 8 Oct 2026 D2-F4712: True, applying the owner's eye check (ASKS 113, 5 Oct 2026, "I think the same") under ASKS 113's
+# pre-registered rule; the conflicting 8-form evidence and R11A-F4712's NON-TEST (6 Oct) are recorded beside it in NOTES.md.
+HAND_SAME = True
 
 def load_pairs():
     rows = [l for l in open(H / "f13_code_gloss.tsv") if not l.startswith("#")]
