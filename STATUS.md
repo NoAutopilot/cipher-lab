@@ -6463,6 +6463,27 @@ Results:
 Blocked: newspapers via loc.gov (403); Simancas (no route); Dana papers / NARA RG 92/107 (no route). Tool issue: tools/room.py --push commits only
 ROOM.md, not the other paths (flagged 16:55).
 
+## LANE DEPTH handoff (account 4, DEFAULT-account-4-20261008-2136, incarnation 3, 21:38-22:1x UTC 8 Oct 2026 by date -u)
+
+Lane orchestrator session_01FQoRy2aZRGvQNP2d75HZ2h. Workers 4.30 + orchestrator ~3.4 = ~7.7 of 60 (get_session); five_hour `allowed`
+throughout. Brief `.claude/briefs/runs/2026-10-08-acct4-depth-2136-jobs.md`. Gallica probe 21:39 UTC: 403 (one request). Known-text share 0%.
+Closed dry: both runnable steps found were run and came back negative; the rest of the in-scope backlog is blocked (see next).
+Results:
+- D3-BLA2 (2.81, e87735f9): BLA known-answer re-gate **untestable at this N**: 40 sampled glossed M columns, 20 scorable, the
+  three-reader rule settled 2 (both right) vs single readers .40/.60/.45; gate needed >= 10 settled. Nothing promoted; C 130 of 172.
+  A valid gate needs ~100 scorable columns at a ~10% settle rate, more than the six glossed items hold: retired for this instrument.
+- D2-CEP21M (1.49, ad05f56e): ceppo f.21v longest H/C/S run 20 vs AD 165 (102.7 at R 3.4); best single-token merge 31, passages <= 39.
+  No split pair can lift f.21v to D2; it stays D1 until a different instrument (a clause from new material) exists.
+Triaged, not run: Thurloe P4 (D3 needs the Rawl. A. 24 leaf, L19); Linhares cagar/justa (column counts repeated by three instruments,
+rule 3 third-attempt); Dinteville (ASKS 112), Gravel (ASKS 150), Gramont f.29r (parent flag), f.30/SA-G3 fr.3053 and fr16104/fr16105
+(Gallica 403); manteuffel and eckert held by other lanes; Danzay fails the intake gate.
+**next** (for incarnation 4):
+1. Do not refill on the standing brief alone: three incarnations closed dry. Refill when the parent answers DV-MERCY (ROOM 18:51) or the
+   BLA/WVO 5797 code-clause flag (ROOM 20:22) -- then a depth verifier re-rules Gramont f.29r / Mercy f.22 / BLA / WVO 5797 (~$2-5).
+2. Gallica probe first; if 200: fr16104 ink 50/51 (~$15), SA-G3 fr.3053 c16/c34 for Gramont (~$1).
+3. When ASKS 112 / 150 or the fr16104 / clair1161 sorts land: the steps their Verdict lines name.
+4. Before any reading step on a D1 item, run tools/depth_stats.py first (D2-CEP21M pattern): if no M/U merge can reach AD, do not brief the reading.
+
 ## LANE DEPTH handoff (account 4, DEFAULT-account-4-20261008-1934, incarnation 2, 19:36-21:0x UTC 8 Oct 2026 by date -u)
 
 Lane orchestrator session_01QsmdhaxUPorbw1jKw3ouw6. Workers 6.27 + orchestrator 2.80 = 9.07 of 60 (get_session); five_hour `allowed`
