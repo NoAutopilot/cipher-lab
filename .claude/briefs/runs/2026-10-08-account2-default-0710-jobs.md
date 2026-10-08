@@ -152,3 +152,51 @@ Report de-crypt.org request count.
 Fetch scorpion1-8.jpg from oranchak.com once (NOTES.md l.154; descriptive UA, 1.5 s apart), images/manifest.json, and look (contact sheet,
 then one crop if needed) for an uncrossed scan of S5. If found, say so and where; transcription of S5 is a later job (S5 is 180 signs,
 below unicity alone, so no solve attempt). Update NOTES/gaps.
+
+## Wave 3 (spawned as slots free, from 07:4x UTC 8 Oct)
+Intake gate 07:4x UTC (each exit 0, "-- edition/page or full-text-search citation found within 6 lines"): `craven-rupert-1648: open (line 1)`;
+`heinsius-hermitage-1704: open (line 1)`; `fair-game-2010: open (line 3)`.
+
+### D2V-F4712 -- fr4712-nevers-duchesse AUDIT 1 (VERIFIER, Opus; cap 4, box 80 min)
+Claim under audit: D2-F4712 (8 Oct 2026, commit f1d0a70c0) graded six f.10r tokens C from f.13r's H glosses (82 "D. n.", 21 "Berry",
+12 "b. Pal.") after ASKS 113's same-writer answer, status open -> partial (ROOM flag 07:22). No AUDIT.md exists. CLAUDE.md "Verifier brief
+(template)" steps 1-5 in full: you are not the solver. Check the carry against PREREG_duchf13.md (was the rule pre-registered before the
+answer? does f13_carry.py --check reproduce?), whether "D. n." / Berry / b. Pal. readings of f.10r are already printed (Nevers papers,
+fr.4712 inventories, the Duchesse de Nevers correspondence in print, Gallica/IA full text, Google Books country=US, open indexes), then an
+N-class and depth (rule 4a) per item in ciphers/fr4712-nevers-duchesse/AUDIT.md "## AUDIT 1 (D2V-F4712)", and a status.json result row only
+if the folder's reading meets the claim_scope rules (read tools/verify_backlog.py's docstring and an existing comparable row first; if
+unsure, write none and say so). N3+ -> SECOND-OPINIONS-QUEUE.tsv row in the same session. Do not decode.
+
+### D2V-COL26 -- colbert26-lathuillerie-1644 grade propagation check (VERIFIER, Opus; cap 3, box 60 min)
+Known-text target (N0). D2-COL26 (8 Oct, ROOM flag 07:27, PREREG-D2-COL26.md) raised key_f23 30 = s M -> C on value-independent units
+c33/c51/c62 (f.23 C 110 -> 127) and recorded 96 que PASS (kept M, f.23 conflict), 20 i FAIL, 67/81/85 TOO-SHORT. As a separate session from
+D2-COL26 and from DA1-COLV: re-run its scripts (byte-identical?), confirm the units are OUT of every R10-COL26B value-choice unit, that the
+PREREG predates the score (git log), that the control can differ from the target on the statistic, and that the multiple-test threshold was
+applied as registered. Then append "## AUDIT 1 addendum (D2V-COL26)" to AUDIT.md (keep N0; adjust depth/counts if the C count holds or not),
+and update status.json results[145] counts only if they are stated there. Lower anything that does not hold. No novelty search beyond
+noting the class is unchanged.
+
+### D2-CRAV -- craven-rupert-1648 spec test 2: key-family test (solver, Opus; cap 4, box 80 min)
+specs/craven-rupert-1648.json cheap test 2: apply the decipherments of DECODE R8445/R8446/R8448/R8449 (cipher value -> plaintext pairs from
+the same volume; check what is on disk from NA-CRAV first; one DECODE browser login if the pairs are not on disk) and the Cryptiana
+Nicholas-Rupert and THE=g4 keys (sources/cryptiana) as candidate tables to R8447's 42 tokens, beside a shuffled-key control at the same N
+and symbol count AND a matched-design control (a synthetic nomenclator letter of N=42 enciphered with one of the sibling tables, rule 3:
+match the design). Pre-register in PREREG-D2-CRAV.md (statistic: coverage + consistent-reading count; gate) and push before scoring. A
+coverage-only gate against a shuffled-ORDER control is a non-test (CLAUDE.md rule 3, bCAS): the control must be able to fail. Write both
+numbers into the spec's cheap_test_done and HYPOTHESES.md; NOTES/gaps.
+
+### D2-HERM -- heinsius-hermitage-1704: Deel 4-19 sweep for deciphered l'Hermitage letters (worker, Opus; cap 2.5, box 60 min)
+NOTES.md "## While waiting (GF4-BATCH15)": sweep Deel 4-19 of the Heinsius edition on Huygens retroboeken (full-text search per volume,
+CLAUDE.md host row: >= 2-2.1 s apart, descriptive UA, <= ~120 requests) for "Hermitage" letters footnoted "cijfer"/"cijfers"/"opgelost"/
+"gedechiffreerd"; positive control: one known cipher footnote (e.g. letter 341.1 in Deel 2, from heinsius-vanhaersolte-1703 NOTES.md)
+must be found by the same query form. List every hit (Deel, letter no., date, footnote text). Any deciphered l'Hermitage letter: add its
+H.A. number to REQUEST.md beside 946 and 2317 (draft only; no send). NOTES/Next step.
+
+### D2-FAIR -- fair-game-2010: marker-scheme sweep with planted-message control (solver, Opus; cap 3, box 60 min)
+NOTES.md l.127-145 and Verdict: the anneal is retired (rule 3 third-attempt clause); the named different instrument is a marker-scheme
+sweep (the SHORTLIST idea in aaymeloglu/unsolved-ciphers is cited, never copied -- no licence; write your own script in the folder or add an
+option to a tools/ script). Enumerate the marker schemes you will test (every n-th letter, first/last letter of words, letters after a
+marker sign, capitals, etc.), pre-register in PREREG-D2-FAIR.md with a planted-message control at N=67 (plant an English sentence under
+each scheme in a same-length decoy; the sweep must recover it) and a null (shuffled text) false-pass rate; push before scoring. Score with
+tools/judge_plaintext.py where a judge spec exists (note the `en` corpus caveat, CLAUDE.md rule 3). Report the best scheme with both numbers;
+HYPOTHESES.md, NOTES, gaps.
