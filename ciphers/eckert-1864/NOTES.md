@@ -899,7 +899,7 @@ Read so far: 98 of 893 mssEC 19 segments read (the already-read E, N2 and O9 ent
 - [n/a] key-rebuild: period cipher books exist for the three vocabularies in the ledger
 - [n/a] image-check: nothing was read in this pass, so no token to image-check
 - [n/a] retry: no read attempted and no failed attempt to retry
-Verdict: keep going: 2 internal gaps; cheapest next: the next priority-1 rows of `entries-mssEC19.tsv` (LS-R1 read nine as E21-E29: 3 located in print (ORN I/26, OR III/4 + FRUS 1864, OR I/37 pt 2), 6 not located in what was searched, so the filter halves the printed share against D4-E5/D12-E3), ~$1.1 per entry, and a verifier pass on E21-E29 (updated LS-R1, 7 Oct 2026: H 173, C 3, M 2, `decode.py --check` exit 0). Earlier: keep going: 2 internal gaps; cheapest next: add Series III vols 4-5 to the OR check (~$0.5), then read the lowest-`or_cov` priority-1 rows of `entries-mssEC19.tsv`, ~$1.2 per entry (updated LS-PRE, 7 Oct 2026: recall 0.82 and false hits 0/14 on the already-read entries).
+Verdict: keep going: 2 internal gaps; cheapest next: a verifier pass on E37-E46 (LS-R3, 8 Oct 2026: ten entries read, H 161, C 1, `decode.py --check` exit 0; 1 located in print, ORN I/11 p.68 (E44), 9 not located in what was searched), then the parked E30-E36 and the next priority-1 rows, ~$1 per entry. Earlier: keep going: 2 internal gaps; cheapest next: the next priority-1 rows of `entries-mssEC19.tsv` (LS-R1 read nine as E21-E29: 3 located in print (ORN I/26, OR III/4 + FRUS 1864, OR I/37 pt 2), 6 not located in what was searched, so the filter halves the printed share against D4-E5/D12-E3), ~$1.1 per entry, and a verifier pass on E21-E29 (updated LS-R1, 7 Oct 2026: H 173, C 3, M 2, `decode.py --check` exit 0). Earlier: keep going: 2 internal gaps; cheapest next: add Series III vols 4-5 to the OR check (~$0.5), then read the lowest-`or_cov` priority-1 rows of `entries-mssEC19.tsv`, ~$1.2 per entry (updated LS-PRE, 7 Oct 2026: recall 0.82 and false hits 0/14 on the already-read entries).
 
 ## LS-R1 (7 Oct 2026, account 1, for LANE ST-LEDGER)
 
@@ -959,3 +959,57 @@ The seven priority-1 entries assigned as E30-E36 (pointers/page/entry 9051/159/1
 ended without a commit, so nothing of them is on origin and the IDs E30-E36 are unused. They are still unread; next: one solver session
 on them with the LS-R1 method, ~$8, and the reason the two sessions stopped looked at first (session records show only "decode handed
 off" / a refused tool call).
+
+## LS-R3 (8 Oct 2026, account 1, for LANE ST-LEDGER)
+
+Ten priority-1 entries of `entries-mssEC19.tsv` (no OR hit in LS-PRE's filter; Horner at New York, Sheldon at Fort Monroe, Sampson at
+Baltimore) read with key.md (Cipher No. 1) as E37-E46 in ciphertext.txt; reading.md summary rows and derived block. All ten are Cipher
+No. 1: key.md reads every code-word token but the unread words listed below, so no entry needed key-no2.md or key-no9.md. `python3
+decode.py --write` then `--check` exit 0. Rows marked `already_read` with LS-R3 and the ID.
+
+| ID | date | from / to (decoded plain) | H | C | I | M | found in print / not located in |
+|---|---|---|---|---|---|---|---|
+| E37 | 2 Nov 1864 9.30 AM | J. B. Fry (Pro. Mar. Genl) to Capt. B. F. Manierre, Provost Marshal 8th District, New York, and to W. E. Dodge | 22 | 0 | 0 | 0 | not located as a telegram: Google Books (3 queries, "Manierre" + "withdraw as a candidate for Congress" etc.) gave only a New York Times Index entry (snippet empty) on Manierre and the candidacy |
+| E38 | 12 Aug 1864 11 PM | Seward (signed Secretary of State) to John G. Palfrey, Postmaster, Boston | 13 | 0 | 0 | 0 | not located: Google Books ("Alex Keith" Ferris remittance Halifax; "North Market street" Ferris Keith; "Gordon, Bruce"), IA full text ("No. 10 North Market" Ferris; "Alexander Keith, jr." remittance Ferris): no hit on the telegram (one IA hit names Keith as the rebel agent, another item) |
+| E39 | 12 Aug 1864 11.30 PM | Seward to Abraham Wakeman, Postmaster, New York | 22 | 0 | 0 | 0 | not located: the same searches, and Google Books "Abraham Wakeman" Keith remittance Halifax: no hit |
+| E40 | 13 Aug 1864 3 PM | Seward to Robert Murray, U.S. Marshal; George Harrington, Acting Sec. of the Treasury, to Hiram Barney, Collector, New York | 12 | 0 | 0 | 0 | not located: Google Books ("Detain the schooner Princess": 1846/1858 documents only, another vessel; schooner Princess Murray marshal Harrington 1864: 0) |
+| E41 | 15 Oct 1864 8 PM | F. W. Seward to C. A. Seward, 29 Nassau St, New York | 10 | 0 | 0 | 0 | not located: Google Books ("Tassara" "Minor" "Savage" Havana Evarts 1864: 0) |
+| E42 | 25 Apr 1864 | Meigs to Lt. Col. H. Biggs, Quartermaster, Fort Monroe | 28 | 0 | 0 | 0 | not located: OR I/33 djvu (`warofrebellion33unit`) grep "saddle horses", "winds and waves", "Rucker informed": no hit; Google Books "winds and waves control": poetry and modern only |
+| E43 | 29 May 1864 5.30 PM | Rucker to Col. Biggs, Fort Monroe | 19 | 1 | 0 | 0 | not located as a telegram: OR I/36 pt 3 (`warofrebellion363unit`) prints Biggs' answer of 30 May 8.30 PM ("Tell General Rucker will return the City of Albany and Ranger"; index: City of Albany p.367), not this; Google Books finds only that reply |
+| E44 | 15 Nov 1864 8.30 PM (ORN: 16 Nov) | G. V. Fox to Porter (Niagara), Hampton Roads | 15 | 0 | 0 | 0 | ORN I/11 p.68 (`officialrecordso0011unse`), word for word, dated Washington, November 16, 1864 (the date word Gas = 16 agrees with the ORN; the ledger header says 15th) |
+| E45 | 29 Nov 1864 10.45 AM | Rucker to Col. Newport, Chief Quartermaster, Baltimore | 11 | 0 | 0 | 0 | not located: OR I/42 pt 3 (`warofrebellion423unit`) grep "Newport, chief", "available steamer(s) and propeller(s)": no hit; Google Books: no hit |
+| E46 | 30 Nov 1864 12.30 | signature unread ("M wise well wily Govr") to John A. Kennedy, Supt of Police, New York | 9 | 0 | 0 | 0 | not located: OR I/43 pt 2 (`warofrebellion432unit`) grep "chief conspirator", "burning of New York", "Old Capitol Prison" (other items only); Google Books: no hit |
+
+Grades: the decoder counts H 161, C 1 over E37-E46 (the C token is E43 "mangled" = telegraphed, key.md section 7); no token moved
+by hand, so H 161, C 1, I 0, M 0. Hand notes on H tokens: E39 "perfume" is printed [3] by the decoder (key.md's numeral row overrides
+the arbitrary row in the lookup), but the book's other row, Perfume = By the way of (p.18 l.24 R), is what the context reads ("Gordon
+Bruce & Co, New York, by way of St John", two lines after "Halifax peasant St John"); H either way, the choice is the reader's. E43
+"Windsors[?]" (the image is unclear, the volunteer text has Windsors) read as Windsor = River with the flag; "windpipe" = River two
+lines later in the same entry agrees. E44's "Shaky" is not in key.md and stands in clear in the ORN print ("shaky steamer"). Unread
+words not in key.md, left as written and not graded: E37 "Wreath" (answer by Wreath), E43 "Waymorners" (Waymorners Coal; key.md has
+Wayworn = Steam), E40 "nick" (examine her cargo and nick). Header conflicts: E44 ledger 15th vs date word 16 (ORN 16); E45 time word
+Fanny = 11 AM vs the volunteer text's header time 10.45 (the note above the header was cut on the crop). Plain-word judgements
+(`plain:` lines): E37 Dodge (W. E. Dodge; book McMinnville); E38 John, Johns, watch; E39 John, Johns, Hunter, person, trade; E40
+Princess (the schooner; book Captain); E41 Hunter (Wm Hunter, chief clerk); E42 saddle (saddle horses; book Guard); E43 White (White
+House; book Report); E44 Fox (the signer).
+
+Image vs volunteer text (image taken in every case): E37 "Pro Mar Shelby" (volunteer "Two Mar"); E40 "U S D Marshal" (NS Marshal),
+"Seward[?]" (Benard; the capital is a looped S, the rest close to "eward", flagged), "U S Mar shall" (NS Man shall); E43 "P monchie"
+in the last line (monarchic); E45 "sligo" (slign); E46 "bring" (being) written as on the page. E38 "hang" struck through, as the
+volunteer text has it. The ledger's printed page numbers are in the block headers (image pages in entries-mssEC19.tsv run two
+higher from p.200 on, 9097 = p.203; 9045 = p.152).
+
+Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg` fetched
+once to $S/img; regions set from 320-500 px thumbnails; crops read by the worker at 1400 px, no subagent; the automatic line finder
+found 0 lines on 9045, so fixed centres were used throughout): `python3 tools/iiif_lines.py --image $S/img/p<pointer>.jpg --out
+$S/crops/<dir> --prefix p<dir> --region <x,y,w,h> --centres <c0+pitch*k> --lines-per-crop <n> --max-width 2400` with 9045
+`150,280,2200,2420` centres 50+96k (k=0..24), 4 per crop; 9046 `100,230,2250,850` 40+100k (k=0..7), 4, and `100,960,2250,280` 60,160;
+9110 `100,1800,2250,900` 60+97k (k=0..8), 5; 9111 `100,190,2250,400` 60,160,260,350; 9097 `100,1360,2250,620` 50+100k (k=0..5), 6;
+8945 `100,1880,2250,950` 60+95k (k=0..9), 5; 8975 `100,160,2250,950` 50+97k (k=0..9), 5, and `100,1060,2250,200` 70; 9124
+`100,1480,2250,1050` 60+97k (k=0..9), 5; 9129 `100,1240,2250,480` 50+97k (k=0..4), 5; 9130 `100,1400,2250,480` 50+97k (k=0..4), 5 and
+`100,1750,2250,760` 50+97k (k=0..7), 4.
+
+Requests: hdl.huntington.org 10 (IIIF images, all 200; the volunteer text came from the committed sources/mssEC19); archive.org 5
+(djvu I/33, I/36 pt 3, I/42 pt 3, I/43 pt 2, ORN I/11; all 200); be-api.us.archive.org 3 (fts, all 200); www.googleapis.com 15 (Books
+API with key and country=US, all 200). Report what was found and where it was not found; novelty is a verifier's (rule 10): batch
+flagged for LS-V3.

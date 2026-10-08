@@ -113,7 +113,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8944	52	0	Caldwell Hdqrs AP  Washn Apl 23rd 1864	Caldwell Hdqrs AP		35	12	16	5	2	warofrebellion33unit@leaf0(cov12)	12	N2-Q	3
 8944	52	1	Beckwith (2) advance signal  Washn Apr 23rd 415 P. M	Beckwith (2) advance signal		72	22	31	5	2	none	4	N2-AP	2
 8945	53	0	S. H. Beckwith (2)  Perry you  Wash'n D. C. Apr. 24th 1864 11.30 AM	S. H. Beckwith (2) Perry you	showers return 9 5 1 Jam weather tomorrow 7 3	158	31	71	7	1	warofrebellion33unit@leaf0(cov38)	38	N2-AR	3
-8945	53	1	Geo D. Sheldon  Washington D. C. April 25th 1864	Geo D. Sheldon		98	27	28	7	1	none	4		1
+8945	53	1	Geo D. Sheldon  Washington D. C. April 25th 1864	Geo D. Sheldon		98	27	28	7	1	none	4	LS-R3 E42	1
 8946	54	1	Sheldon  Wash Apl 25. 1864	Sheldon		25	7	6	1	1	none	3	O9-AD	2
 8946	54	2	David No 9  Wash Apl 25.1864	David No 9		38	6	11	4	9	none	4		1
 8946	54	3	S. H. Beckwith (2) Thomas wonder year Wash'n D. C. Apr 25th 1864	S. H. Beckwith (2) Thomas wonder year		87	22	42	8	2	warofrebellion323unit@leaf0(cov24)	24		3
@@ -177,7 +177,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8973	81	2	12 M R OBrien  Washn May 28th 1864	12 M R OBrien		200	48	72	9	1	warofrebellion363unit@leaf0(cov28)	28		3
 8974	82	1	SH Beckwith  Washn May 28th 1864	SH Beckwith		23	4	10	1	2	warofrebellion363unit@leaf0(cov8)	8		3
 8974	82	2	Jno Horner N. Y.  Washington May 29th 1864	Jno Horner N. Y.		84	21	29	6	1	officialrecordso0010unse@leaf0(cov7)	7		3
-8975	83	0	GD Sheldon  Washn 530 pm May 29th 1864	GD Sheldon	840 PM	87	18	22	4	1	none	4		1
+8975	83	0	GD Sheldon  Washn 530 pm May 29th 1864	GD Sheldon	840 PM	87	18	22	4	1	none	4	LS-R3 E43	1
 8975	83	1	SH Beckwith  Washn DC May 29. 1864.	SH Beckwith		53	11	22	2	2	warofrebellion344unit@leaf0(cov10)	10		3
 8976	84	1	Beckwith Wash May 1864 . Pm	Beckwith		0	0	0	0	short	none	0		3
 8976	84	2	Hd Qrs Gen Grant Wash May 31.1864.	Hd Qrs Gen Grant		148	32	55	7	2	warofrebellion363unit@leaf0(cov42)	42		3
@@ -483,7 +483,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9123	231	3	Washn Novr 15th 1864			18	8	8	2	1	none	0		1
 9124	232	0	John Horner  Washn 1130 am Novr 16 64	John Horner		42	12	22	4	1	none	5		1
 9124	232	1	John Horner N. York  Washington Nov 16th 1864	John Horner N. York	830 PM	33	7	14	5	1	none	4		1
-9124	232	2	GD Sheldon Ft Monroe  Washn Nov 15th 1864	GD Sheldon Ft Monroe		56	16	13	5	1	none	4		1
+9124	232	2	GD Sheldon Ft Monroe  Washn Nov 15th 1864	GD Sheldon Ft Monroe		56	16	13	5	1	none	4	LS-R3 E44	1
 9125	233	1	Beckwith Burlington N. J.  Wash'n Nov. 18th 64	Beckwith Burlington N. J.		18	5	6	2	2	none	3		2
 9125	233	2	Beckwith Burlington N. J.  Nov. 19th 1864			29	5	12	0	2	none	4		2
 9125	233	3	R. O. Brien Hd Qrs Army Janus  Nov. 19th 1864			36	11	12	4	1	none	3		1
@@ -498,10 +498,10 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9128	236	2	Clowry  Washn Novr 26th 1864	Clowry		21	12	9	4	1	none	3		1
 9129	237	1	J. C. Van Duzer  Wash'n Nov 28th 1864 10.30 A. M.	J. C. Van Duzer		27	14	14	4	1	none	0		1
 9129	237	2	Van Duzer & McCaine  Wash'n Nov 28th 1864 11. am	Van Duzer & McCaine	1045 am	42	10	18	2	1	none	0		1
-9129	237	3	Sampson Balto  Washn Nov 29th 1864	Sampson Balto	10 am	48	9	13	5	1	none	3		1
+9129	237	3	Sampson Balto  Washn Nov 29th 1864	Sampson Balto	10 am	48	9	13	5	1	none	3	LS-R3 E45	1
 9129	237	4	SH Beckwith City Pt  Washn Nov 29th 64	SH Beckwith City Pt		43	9	14	4	2	none	4		2
 9130	238	0	Beckwith & McCaine  Wash'n Nov 29th 1864	Beckwith & McCaine		90	18	36	3	2	warofrebellion432unit@leaf0(cov14)	14		3
-9130	238	1	John Horner  Washn Novr 30th 1864	John Horner		49	10	14	5	1	none	3		1
+9130	238	1	John Horner  Washn Novr 30th 1864	John Horner		49	10	14	5	1	none	3	LS-R3 E46	1
 9131	239	0	RRM Caine #2  Washn Novr 30th 1864	RRM Caine #2		35	13	22	4	2	none	4		1
 9131	239	1	Capt Bruch Lvl  Washn Dec 1st 1864	Capt Bruch Lvl	come on at once Ingrate	20	6	7	2	1	none	3		1
 9131	239	2	SH Beckwith  Washn Dec 1st 1864	SH Beckwith		36	10	17	1	2	warofrebellion423unit@leaf0(cov10)	10		3

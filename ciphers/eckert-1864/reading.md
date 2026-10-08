@@ -46,6 +46,11 @@ the clerk's slips ("Prss", "mangled", "For rest").
 | E39 | Seward (signed Secretary of State) to Abraham Wakeman, Postmaster, New York, 12 Aug 1864 11.30 PM | not located (Google Books and IA full text, LS-R3) | reads cleanly: three remittances by Keith (to Ferris, Boston; J. B. Hunter & Co, New York; Gordon Bruce & Co, New York, for Mitchell Kenner & Co, Montreal) to be secured with information on the addressees; "perfume" printed [3] by the decoder is the book's other row, By the way of (key.md p.18 l.24 R), by hand; "John", "Johns", "Hunter", "person", "trade" left plain (LS-R3) |
 | E40 | Seward to Robert Murray, U.S. Marshal, and George Harrington, Acting Secretary of the Treasury, to Hiram Barney, Collector, New York, 13 Aug 1864 3 PM | not located (Google Books: 2 queries, LS-R3) | reads cleanly: detain the schooner Princess and her cargo for further orders; let the Boston message go forward when these two have taken effect; "Princess" left plain (the schooner; book: Captain); "Seward[?]" (volunteer text "Benard") (LS-R3) |
 | E41 | F. W. Seward to C. A. Seward, 29 Nassau St, New York, 15 Oct 1864 8 PM | not located (Google Books: 1 query, LS-R3) | reads cleanly: W. T. Minor, consul general, Thomas Savage, vice consul general at Havana, Wm Hunter, chief clerk of the State Department, and Tassara, the Spanish minister at Washington; see Mr Evarts and ask him to cooperate with you; "Hunter" left plain (LS-R3) |
+| E42 | Meigs (QMG) to Lt. Col. H. Biggs, quartermaster, Fort Monroe, 25 Apr 1864 | not located (OR I/33 djvu grep "saddle horses", "winds and waves"; Google Books "winds and waves control": no hit, LS-R3) | reads cleanly: every exertion is being made, but winds and waves control barges and sail vessels; 1,000 horses being shipped; the requisition for 100 saddle horses referred to the Cavalry Bureau; General Rucker told you that you had not sent transportation enough for the infantry, batteries of artillery and 1,000 horses; send for the mules; "saddle" left plain (book: Guard) (LS-R3) |
+| E43 | Rucker to Col. Biggs, Fort Monroe, 29 May 1864 5.30 PM | not located as a telegram; Biggs' reply of 30 May 8.30 PM ("Tell General Rucker will return the City of Albany and Ranger") is in OR I/36 pt 3 (index: City of Albany, p.367), LS-R3 | reads cleanly: have you sent the coal up the York and Pamunkey rivers I telegraphed about on the 27th? It will be needed at White House at once; the steamers City of Albany and Ranger left today for Fort Monroe with General Benham's command and its horses; send these two boats back at once to move cattle and horses up the Pamunkey; "White" left plain (White House); "Waymorners" not in key.md, unread; "Windsors[?]" (volunteer text) read as River(s) (LS-R3) |
+| E44 | G. V. Fox (Asst. Sec. Navy) to Porter ('Niagara'), Hampton Roads, 15/16 Nov 1864 8.30 PM | ORN I/11 p.68 (Washington, November 16, 1864), word for word (LS-R3) | reads word for word: see if you have any shaky steamer that will carry 300 tons ... otherwise I will get a blockade runner ... General Butler left this evening and will cooperate; the date word Gas = 16 agrees with the ORN, the ledger header says 15th (LS-R3) |
+| E45 | Rucker (QMG's office) to Col. Newport, chief quartermaster, Baltimore, 29 Nov 1864 10.45 AM | not located (OR I/42 pt 3 djvu grep "Newport, chief", "available steamer(s) and propeller(s)"; Google Books: no hit, LS-R3); the twin to Ingalls at City Point on the same page is not read | reads cleanly: send here at once every available steamer and propeller in the service at your post that can be spared, with their names; the time word Fanny = 11 AM against a header time 10.45 (volunteer text; the image crop cut it) (LS-R3) |
+| E46 | 'M wise well wily Govr' (signature unread) to John A. Kennedy, Superintendent of Police, New York, 30 Nov 1864 12.30 | not located (OR I/43 pt 2 djvu grep "chief conspirator", "burning of New York"; Google Books: no hit, LS-R3) | reads cleanly: a man believed to be the man described in the New York Evening Post of Monday as the chief conspirator for the burning of New York is in the Old Capitol Prison; send a man to identify him (LS-R3) |
 
 Sixteen of the twenty were matched to an Official Records print by the subagent sweep of 26 volume-parts of
 series I on the Internet Archive (or_check in NOTES.md section 4); the four it did not match (E4, E5, E6, E12)
@@ -330,5 +335,35 @@ Code-word tokens: H 12.
 
 Code-word tokens: H 10.
 
-Totals over the 34 entries: H 552, C 11, I 0, M 0.
+**E42 | Page 53 | 8945 | 25 Apr 1864, to Lt. Col. Biggs, Fort Monroe (operator Geo. D. Sheldon)**
+
+[Washington] {date: Apr 25} {time: 12} For Lt [Colonel] Biggs [Quartermaster] Every exertion is being made [,] winds & waves control barges & sail Vessels many of which with steamers are on their way and must be arriving [.] [1000] [Horse]'s are being shipped [.] Your requisition for [100] saddle [Horse]'s was referred to [Cavalry] Bureau which supplies saddle [Horse]'s [.] [Brigadier General] Rucker informed you that you had not sent here [Transportation] enough for the [Infantry] [Battery]'s of [Artillery] and [1000] [Horse]'s to go from this place [.] send for the mules  {tail: [signed] Meigs [Qr Master Genl U.S.] cleared up beautifully again}
+
+Code-word tokens: H 28.
+
+**E43 | Page 83 | 8975 | 29 May 1864 5.30 PM, to Lt. Col. Biggs, Fort Monroe (operator G. D. Sheldon)**
+
+{time: 5.30 PM} {date: May 29} to [Colonel] Biggs Have you sent the Waymorners Coal up the York & Pair monchie [River]'s[?] about which I [telegraphed] on [27] inst [?] It will be needed at White House at once pause The [Steam]er City of Albany & Ranger [Left] here [Today] for [Monroe] with [General] Benhams [Command = Er (-ed, -ing)] & its [Horse]'s &c Please arrange it so that I can have these [2] boats back here at once I need them to move cattle & [Horse]'s up the P monchie [River] answer  {tail: [signed] Rucker}
+
+Code-word tokens: H 19, C 1.
+
+**E44 | Page 230 | 9124 | 15 Nov 1864 8.30 PM, to 'Niagara' at Hampton Roads (operator G. D. Sheldon, Fort Monroe)**
+
+{time: 8.30 PM} [16] For [D. D. Porter] Hampton [Road]'s [.] See if you have any Shaky [Steam]er that will carry [300] tuns [.] It will save time [.] other wise I will get a block aid runner [.] We will go on with this [.] [Maj Gen B. F. Butler] left this evening and will cooper rate  {tail: [signed] Fox assistant [Secretary of Navy] end}
+
+Code-word tokens: H 15.
+
+**E45 | Page 235 | 9129 | 29 Nov 1864 10.45 AM, to Col. Newport, chief quartermaster, Baltimore (operator Sampson)**
+
+{time: 11 AM} For [Colonel] New port Chief [Quartermaster] [.] Please send here immedy every available [Steam]er and prop heller you have [In the] service at your [Post] that Canby spared [.] ascertain at once and give names of those you send  {tail: [signed] D H Rook cur [Brigadier General] and [Quartermaster] End}
+
+Code-word tokens: H 11.
+
+**E46 | Page 236 | 9130 | 30 Nov 1864, to Mr Kennedy, Superintendent of Police, New York (John Horner)**
+
+{time: 12.30} [30] for Mr Kennedy Supt Police [New York] A man believed toby the man described [In the] [New York] evening [Post] of Monday as bring the chief conspirator forth burning of [New York] is [In the] old capital prison send on a man to identify him  {tail: [signed] M wise well wily Govr &c}
+
+Code-word tokens: H 9.
+
+Totals over the 39 entries: H 634, C 12, I 0, M 0.
 <!-- decode.py: derived block ends -->
