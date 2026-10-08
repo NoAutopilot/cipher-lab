@@ -5010,3 +5010,91 @@ OR and editions as `_djvu.txt` (archive.org, fetched once to scratch): `warofreb
 - Requests: archive.org 9 (3 advancedsearch, 6 `_djvu.txt`; one 403 on a lending-only Bates copy, a second copy used), be-api 9 (fts), googleapis
   books 15 (+ the tool's own), loc.gov 4, plus `tools/prior_work.py --network`'s own calls (its prior-work.tsv rows carry the per-host counts).
   Subagents 0.
+## AUDIT 2 (AUD2-LEDGER-2)
+
+Verifier AUD2-LEDGER-2 (account 3, LANE-VERIFY-2, session_01EHvPx73gjfwZh5dDmkCVV7), 8 Oct 2026, 19:58-20:4x UTC by `date -u`. A separate
+session from the readers (LS5-R1d, LS5-R1e, account 1) and the first auditor (FV-LS5-B, account 1); not protecting their conclusions.
+Scope: **E123** (with Peck's telegram it answers), **E143, E145, E146**. Nothing decoded; key look-ups in key.md only. The first audit's
+image check (9044, 8992) and its Huntington full-text pass are not repeated. Key source for all four: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md (kept or lowered, never raised).
+
+### Prior-work checks 3-5 (search-family log)
+- Duplicate diff (pointer, date, addressee against every filed ID; FV-LS5-B's diff re-read and spot-checked): 9062/2, 8992/1, 9044/1,
+  9139/1 carry only these entries; the other entries on the same pointers are the step-0 Blair (9062), Stager (8992/0, in print), Sholes
+  (9044) entries and N2-BK (9139, to McCaine: a different telegram). **No duplicate.**
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 19;canvas=<p>;ptr=<p/n>;date=<d>' --step-type second-audit
+  --fetch` (no items.tsv for eckert-1864), pasted per item (CLEAR rows, the target-level V1-KNOWN claim and the status.json CONTEXT row
+  trimmed):
+  - E123 (9062/2): `KNOWN-PART 5-civil-war clear words public in the holder transcription, 15 code word(s) not`; `LEAD same-page sibling
+    or_hit warofrebellion432unit` = the step-0 Blair entry on 9062 and Peck's antecedent (OR I/43 pt 2 p.21), both already known; `LEAD
+    4-editions edition-hit warofrebellion432unit ... department of the east ... september 2 1864` = Peck's own traffic, not the reply.
+  - E143 (8992/1): `KNOWN-PART ... 13 code word(s) not`; `LEAD 1-own done-candidate NOTES.md:1979` = LS5-R1c's escalation line saying
+    8992/1 is "not mine": not a reading of this entry.
+  - E145 (9044/1): `KNOWN-PART ... 31 code word(s) not`; `LEAD same-page sibling or_hit warofrebellion385unit` = the 11 AM Sholes/Sherman
+    entry on 9044 (Atlanta volume), not E145.
+  - E146 (9139/1): `KNOWN-PART ... 27 code word(s) not`; `LEAD same-page sibling LS-R6 N2-BK or_hit none` = read: a different telegram.
+  - Verdict LEAD on each; every LEAD resolved above. Generic UNCHECKED-NET: aaymeloglu/unsolved-ciphers (no local clone); OR djvu not on disk.
+- G3 by the tool (`--reading <decoded body> --network`): E123 ran out of its per-item request budget before the phrase search
+  (`6-g3 ... ia-global: not searched (max-requests (item) reached)`), so G3 for E123 rests on the hand searches below. E143: 32 `6-g3` LEADs,
+  all the stock phrases "It is not necessary to" / "which can possibly be spared" in 25 OR/ORN volumes; one within +-3 days (I/37 pt 1)
+  shares only the word "necessary": noise, no substance. E145 and E146: see the last bullet of this section.
+- Hand checks (the VERIFY-1 lesson families first):
+
+| # | family / route | query (as run) | result |
+|---|---|---|---|
+| 3 | holder transcription | FV-LS5-B's CONTENTdm full-text pass (16 queries, positive controls) | not repeated; accepted |
+| 4 | **recipient side, E145: OR I/43 pt 1** (`warofrebellion014301rootrich`, the right identifier; FV-LS5-B had the wrong one), fetched and grepped | "Leet", "Longstreet", "Fitz(hugh) Lee", "Orange Court", "Beaver Dam", "running order", "supposed to be with him", "sent to Early", "Hill's corps" | E145's own text **not printed**. Two recipient-side passages: (a) **Sheridan, Cedar Creek, 12 Aug 1864 12 midnight, to Halleck (p.19)**: "A telegram from Captain Leet and also one from General Max Weber locates Longstreet in the Valley, marching here" -- fits E120 (Leet, 11 Aug, Longstreet's corps "moving to join Early") at least as well as E145: not attributed; (b) **Sheridan, Cedar Creek, 13 Aug 1864 10 p.m., to Grant (p.784, between the running heads 783 and 785)**: "Your dispatch of August 12 received ... All the reports that I hear ... confirm your telegram that Longstreet is in the Valley, and that Fitz Lee's cavalry is making its way up the country and when last heard from was at Orange Court-House" -- two of E145's clauses ([Longstreet] is in [the Shenandoah] [Valley]; Fitz Hugh [Lee]'s [Cavalry] was at [Orange C.H.]) in print as the content of a telegram received by Sheridan; Grant's own 12 Aug 9 a.m. telegram to Halleck (p.775) says neither, so the details plausibly came through E145 (copied to Sheridan), but the print does not name Leet |
+| 4 | **Grant Papers vol. 11** (IA `papersofulyssess0011gran`, be-api restricted) | "running order" (0), "Beaver Dam" (Beaver Dam Station index, a June order: unrelated), "Orange Court House" (Sheridan's 13 Aug, above), "marching orders" (other telegrams), "Longstreet is in the Valley" (2: Sheridan), "Leet Bowers Longstreet", "We had some information here", "Scout just arrived", "Fitz Lees Cavalry", "Aug. 12, Capt. George K. Leet" (0), "Hills Corps" (June), "last Friday" (July) | **E145's antecedent printed** (note, page not located): "Aug. 10, Lt. Col. Theodore S. Bowers telegraphed to Capt. George K. Leet. 'We had some information here yesterday that troops supposed to be over a Regt left Richmond last saturday ...'" -- the "dispatch of [10th]" E145 answers ("know nothing of [force] mentioned in your dispatch of [10th]"). The 11 Aug Leet telegram in the same note is E120 (already filed, found by LS5-R1d). E145 itself not located |
+| 4 | OR I/42 pt 2 (`warofrebellion422unit`), local grep | same phrases | not printed (Sharpe 12 Aug and Babcock 5 Aug only, as FV-LS5-B) |
+| 4 | **E143: destination department and same-week orders**: OR I/34 pt 4 (`warofrebellion344unit`, Gulf, to 30 June) and I/40 pt 2 (`warofrebellion402unit`), fetched and grepped | "Van Vliet", "ocean steamers", "steamers"+"New Orleans", "Quartermaster-General will send", June 25-30 Meigs/Ingalls traffic | Context printed, not E143: **Halleck to Canby, 24 June 1864 (received 1 July), I/34 pt 4**: white troops of the Gulf (the Nineteenth Corps or its equivalent) to Fort Monroe; "The Quartermaster-General will send you ocean transports as rapidly as possible. Please telegraph about how many troops you can spare"; **Ingalls to Biggs, 26 June (I/40 pt 2)**: "all available ocean steamers now in your harbor to repair forthwith to New Orleans ... for duty transporting troops"; **Ingalls to Meigs, 26 June 9 a.m.**: "Your dispatch of 11.30 a.m. yesterday ... The only ocean steamers in this river are ..."; 27 June: "General Grant thinks it important that the ocean steamers heretofore ordered shall go to New Orleans". E143's own orders (use steamers already in service; do not take up ocean steamers not in service; number unknown, prepare for a large number) are not printed |
+| 4 | **E146: OR I/45 pt 2** (cached), by date and correspondents | "Louisville and Nashville Railroad/road", "rolling stock", "Military Railroads", "immediate possession", "changing hands", "vitally necessary", R. Allen, Donaldson | not printed; Meigs to Allen 2 Dec (horses) and Donaldson/Allen traffic of 26 Dec only |
+| 4 | E123: Welles's diary vol. 2 (IA `diaryofgideonwel02well_0`, djvu grep) | "Sound steamer", "Electric Spark", "New London", "Peck", "pirat", "Barney", "Long Island" | nothing about the 3 Sept plot |
+| 5 (G3) | IA full text, no identifier | "possession of the Louisville and Nashville" (1865 Supreme Court record and later items: unrelated), "Louisville and Nashville" "take possession" Donaldson McCallum 1864 (secondary works: Risch, *Quartermaster Support of the Army*; a Tennessee Historical Quarterly 2008 article; a biography citing Cotterill, "The Louisville and Nashville Railroad, 1861-1865", AHR 1924 -- not read), "Sound steamers" Peck Stanton 1864, "Electric Spark" plot steamers Peck (0), "plot to seize" steamers "Long Island Sound" 1864 (Spann, *Gotham at War*, notes citing the Herald of 3 Sept 1864; restricted search for "Long Island" steamers plot: 0), Guthrie Donaldson L&N December 1864 (0) | none of the four located |
+| 5 | Google Books (key, `country=US`) | "Donaldson recommends" L&N 1864; L&N Donaldson Allen "military railroads" Dec 1864 possession (503, one retry: Army and Navy Journal 17 Dec 1864, unrelated); Cotterill L&N 1861-1865 Donaldson possession (0); "guarding or arming" (503, one retry: 1925 statutes); "owners or shippers" Stanton Peck steamers (Lloyd's registers); "sound steamers" plot 1864 Barney Peck (503, one retry: OR I/43 pt 2 and ORN I/3 -- Peck's telegram and Eckert's forwarding only, as known); "Hill's corps" "Fitz Hugh Lee" Leet 12 Aug 1864 (0) | none of the four located |
+| 4/5 | Press of the day (E123: the New York papers of 4-6 Sept 1864) | loc.gov Chronicling America JSON, "sound steamers plot", 3-10 Sept 1864 | **unreachable**: connection timed out after 30 s (1 try, not retried); a named gap, not a negative |
+| -- | Not searched / unreachable | Stanton papers, Peck papers, Barney papers (E123); QMG letters-sent, NARA RG 92 (E143, E146; no key for catalog.archives.gov); USMRR records and Cotterill 1924 (E146; JSTOR, owner's machine); HathiTrust (Cloudflare); OR III/5 (McCallum's report) not fetched (cap) | unread |
+
+- `tools/prior_work.py ... --reading --network` for E145 and E146: the first run was killed by its 200 s timeout; the rerun's output is in
+  "### G3 tool rerun" at the end of this section.
+
+### Corrections
+- **E145 "History's"** is the key row History = Hill (key.md p.15 l.14 R, H) with a possessive 's, left plain by the decoder; it carries the
+  depth sentence's "Hill's corps" (FV-LS5-B's sentence already says so; its count did not include the token). Graded **H** (exact key spelling):
+  E145 becomes H 29, M 3 of 32 code words, depth_pct **90.6** (was 90.3). reading.md is not changed here (a reader's job).
+- No over-claiming sentence found in NOTES "## LS5-R1d"/"## LS5-R1e" or in FV-LS5-B: all say "not located". The status.json `gap` of E145
+  ("OR I/43 pt 1 unread") is now out of date and is rewritten.
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth (kept) | note |
+|---|---|---|---|---|
+| E123 Stanton to Peck, New York, 3 Sept 1864 8.30 PM | **N3** (weak), two audits | unknown; frame clear in the public transcription; Peck's antecedent and Eckert's forwarding to Welles printed (OR I/43 pt 2 p.21; ORN I/3 p.197) | D3 (94.1) | not N4: press of the day unreachable; Stanton/Peck/Barney papers unread |
+| E143 QMG to Maj. Van Vliet, New York, 30 June 1864 3 PM | **N3** (weak), two audits | unknown; frame clear; context printed (Halleck to Canby 24 June; Ingalls 26-27 June), not E143's instructions | D3 (93.3) | not N2: the print carries the programme (ocean steamers to New Orleans for the Nineteenth Corps) but none of E143's three instructions; contrast E100, where the same sender's same-afternoon orders carried every clause |
+| E145 Leet to Bowers, City Point, copy to Sheridan, 12 Aug 1864 | **N3** (weak), two audits | unknown; about half clear; antecedent printed (Bowers to Leet 10 Aug, Grant Papers vol. 11 note); two clauses echoed in Sheridan's 13 Aug reply to Grant (OR I/43 pt 1) | D2 (90.6) | not N2: three of five clauses (Hill's brigade sent to Early last Friday, its division under marching orders; nothing known of the force of the 10th; Central road not running beyond Beaver Dam) not in print, and the print does not name Leet. An external check of two clauses now exists; a raise to D3 is left to the depth-bar check, not made here |
+| E146 QMG via Bruch to Brig. Gen. Allen, Louisville, 12 Dec 1864 2 PM | **N3** (weak), two audits | unknown; frame clear | D2 (100) | not N4: QMG/USMRR records and Cotterill 1924 unread |
+
+Safe sentences: FV-LS5-B's, with these changes. E145: "... not located in OR I/42 pt 2, OR I/43 pt 1 or the Grant Papers vol. 11 (full-text
+search, 8 Oct 2026); the 10 Aug dispatch it answers is printed in a note of the Grant Papers vol. 11, and Sheridan's reply to Grant of 13 Aug
+(OR I/43 pt 1 p.784) repeats its news that Longstreet was in the Valley and Fitz Lee's cavalry at Orange Court-House." E143: add "the order to send
+ocean transports for the Nineteenth Corps is printed (Halleck to Canby, 24 June 1864, OR I/34 pt 4; Ingalls, 26 June, OR I/40 pt 2)". E123,
+E146: add "the press of the day was not reachable" (E123). Unsafe as FV-LS5-B, plus for E145 "unknown to Sheridan" or "never reached
+Grant's headquarters".
+
+Depth sentences: all four checked against reading.md and key.md: true (E145's "Hill's corps" rests on History = Hill, above).
+
+### Postmortem
+- FV-LS5-B left OR I/43 pt 1 unread because the identifier it tried (`warofrebellion431unit`) is another volume; the right one,
+  `warofrebellion014301rootrich`, holds Sheridan's acknowledgements of the Washington telegrams of 11-13 Aug. For a "copy to Sheridan" entry,
+  read the copy recipient's replies of the next two days as a block: the recipient-side echo is there even when the telegram is not.
+- Requests: archive.org 6 (four OR `_djvu.txt`, one Welles `_djvu.txt`, one advancedsearch); be-api.us.archive.org 28 (no errors);
+  googleapis.com books 10 (three 503s, one retry each); www.loc.gov 1 (timeout, not retried); plus `tools/prior_work.py --network`'s own
+  requests (budgeted by the tool). >= 2 s apart, one host at a time. Subagents 0.
+
+### G3 tool rerun (E145, E146; `--reading <decoded body> --network --max-requests 40`, 20:29-20:40 UTC)
+- E145: `SUBSTANCE 6-g3 [adhoc-b1a036:6-g3:f919f2] warofrebellion421unit: 'Division to which it belongs' 1 exact/1 near; within +-3 days: True`
+  -- read (`/tmp/cipher-lab-prior-work/warofrebellion421unit_djvu.txt.gz`, OR I/42 pt 1 p.105): the record of events of a Union brigade
+  (Second Brigade, Second Division) that "received marching orders" on 13 Aug and on 15 Aug "rejoined the division to which it belongs" at
+  Deep Bottom. Shared words only, a different army: **false positive, not substance.** The other `6-g3` LEADs on this phrase are other
+  dates (not within +-3 days) and the IA-global/Google Books "most blocking" phrases return registers and statutes: noise.
+- E146: `6-g3` LEADs only on "vitally necessary to sustain the" (IA-global, 26 unrelated items) and the header words (Google Books, OR
+  volumes at large): noise. Same-page sibling N2-BK read: a different telegram.
+- Neither rerun changes a class.

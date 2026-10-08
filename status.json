@@ -7150,9 +7150,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS5-B)'"
+        "AUDIT.md '## AUDIT (FV-LS5-B)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-B verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7167,7 +7168,7 @@
       "reading_version": "LS5-R1d 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
       "title": "Eckert 1864: Stanton to Maj. Gen. Peck, New York, 3 Sept 1864 8.30 PM, the plot to seize the Sound steamers passed to the Navy (E123)",
       "line": "Read at grade H with the period War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription (telegram, rebel, steamers, Secretary of the Navy and the signature are code); Peck's telegram it answers is printed (OR ser. I vol. 43 pt 2 p.21; ORN ser. I vol. 3 p.197), but no prior printed text of this reply was located in OR I/43 pt 2, ORN I/3, Internet Archive full text, Google Books or the Huntington's full-text layer (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 9062; Welles's diary, Stanton papers and press of the day unread",
+      "gap": "N3 (weak), two audits: frame clear in the public transcription of 9062; press of the day unreachable (loc.gov timeout 8 Oct 2026); Stanton, Peck and Barney papers unread; Welles's diary vol. 2 searched, nothing",
       "depth": "D3",
       "depth_pct": 94.1,
       "depth_unread": {
@@ -7191,9 +7192,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS5-B)'"
+        "AUDIT.md '## AUDIT (FV-LS5-B)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-B verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7208,7 +7210,7 @@
       "reading_version": "LS5-R1e 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
       "title": "Eckert 1864: Quartermaster General to Maj. Van Vliet, New York, 30 June 1864 3 PM, steamers to bring troops from New Orleans (E143)",
       "line": "Read at grade H with the period War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription (steamers, troops, New Orleans and the signature are code); it answers Van Vliet's clear 1 PM telegram of the same day (Huntington mssEC 10 p.308); no prior printed text located in OR ser. I vols. 40 pt 2, 34, ser. III vol. 4, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 8992; QMG letters-sent (NARA RG 92) unread",
+      "gap": "N3 (weak), two audits: frame clear in the public transcription of 8992; context printed (Halleck to Canby 24 June 1864, OR I/34 pt 4; Ingalls 26-27 June, OR I/40 pt 2), not E143's instructions; QMG letters-sent (NARA RG 92) unread",
       "depth": "D3",
       "depth_pct": 93.3,
       "depth_unread": {
@@ -7232,9 +7234,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS5-B)'"
+        "AUDIT.md '## AUDIT (FV-LS5-B)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-B verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7248,15 +7251,15 @@
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS5-B)' section 5",
       "reading_version": "LS5-R1e 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
       "title": "Eckert 1864: Capt. Geo. K. Leet to Lt. Col. Bowers, City Point, copy to Sheridan, 12 Aug 1864, Hill's brigade to Early, Fitz Lee at Orange C.H., Longstreet in the Valley (E145)",
-      "line": "Read at grade H with the period War Department Cipher No. 1; about half is in clear in the Huntington's public transcription; not located in OR ser. I vol. 42 pt 2, Internet Archive full text or a Google Books snippet search of the Papers of U. S. Grant (vol. 11 pages not read; searched 8 Oct 2026).",
-      "gap": "N3 (weak): about half clear in the public transcription of 9044; Grant Papers vol. 11 pages around 12 Aug 1864 and OR I/43 pt 1 unread",
+      "line": "Read at grade H with the period War Department Cipher No. 1; about half is in clear in the Huntington's public transcription; not located in OR ser. I vol. 42 pt 2, OR ser. I vol. 43 pt 1 or the Papers of U. S. Grant vol. 11 (full-text search; searched 8 Oct 2026); the 10 Aug dispatch it answers is printed in a note of the Grant Papers vol. 11, and Sheridan's reply to Grant of 13 Aug (OR I/43 pt 1 p.784) repeats its news that Longstreet was in the Valley and Fitz Lee's cavalry at Orange Court-House.",
+      "gap": "N3 (weak), two audits: about half clear in the public transcription of 9044; antecedent (Bowers to Leet 10 Aug) in a Grant Papers vol. 11 note; two clauses echoed in Sheridan to Grant 13 Aug (OR I/43 pt 1 p.784); E145 itself not located; a D3 raise left to the depth-bar check",
       "depth": "D2",
-      "depth_pct": 90.3,
+      "depth_pct": 90.6,
       "depth_unread": {
         "names_codes": "3 M (France, Beaver, Brussells = Shenandoah)",
         "other": "0"
       },
-      "completeness": "28 H of 31 code words",
+      "completeness": "29 H of 32 code words (History = Hill added, AUD2-LEDGER-2)",
       "unresolved_spans": "",
       "phrases": [
         "Huntington mssEC 19 p.151, pointer 9044, E145"
@@ -7267,15 +7270,16 @@
       ],
       "depth_sentence": "On 12 Aug 1864 Captain Leet at Washington reports to Lt. Col. Bowers at City Point, with a copy for Sheridan at Winchester, that a brigade of Hill's corps was sent to Early the previous Friday while its division was under marching orders, that Fitz Hugh Lee's cavalry was at Orange Court House on Wednesday night, that Longstreet is said to be in the Valley with his corps, and that the Central road is not running beyond Beaver Dam.",
       "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS5-B); image 13 lines (FV-LS5-B); code clause Pelton/Pelham = Corps in 'Hill's corps' and 'his corps'; no external check of this text; matched control LS5-R1e",
-      "depth_note": "28 H of 31 code words"
+      "depth_note": "29 H of 32 code words"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS5-B)'"
+        "AUDIT.md '## AUDIT (FV-LS5-B)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-B verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7290,7 +7294,7 @@
       "reading_version": "LS5-R1e 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
       "title": "Eckert 1864: Quartermaster General via Capt. Bruch to Brig. Gen. Allen, Louisville, 12 Dec 1864 2 PM, should the Military Railroads take the Louisville and Nashville (E146)",
       "line": "Read at grade H with the period War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription (Louisville, Nashville, Railroad, Army and the signature are code); no prior printed text located in OR ser. I vol. 45 pt 2, Internet Archive full text, Google Books or the Huntington's full-text layer (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 9139; 'Tartan', 'Stan' unread; QMG and USMRR records unread",
+      "gap": "N3 (weak), two audits: frame clear in the public transcription of 9139; 'Tartan', 'Stan' unread; QMG and USMRR records and Cotterill (AHR 1924) unread",
       "depth": "D2",
       "depth_pct": 100.0,
       "depth_unread": {
