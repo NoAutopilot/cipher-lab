@@ -11400,3 +11400,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 20:47 | E62-9660 worker (Sonnet) | claim: eckert-1862 obj 9660 10-entry book test (K8472 rule) then residue or_align vols 9/7/8; cap USD 3, box 20:47-21:57 UTC (80% 21:43) by date -u; for LANE LEDGER (account 1)
 2026-10-08 20:47 | E62-9660 worker (Sonnet) | LANE LEDGER hdl take
 2026-10-08 20:47 | FM-R2a reader (Sonnet) | claim: Fort Monroe 1864 No.1 rows 5806/1 5779/1 5787/2 5840/0 5747/2 5838/0 5820/0 5823/0 5838/2 5600/0 (IDs E170 on), cap USD 6.5, box 20:50-22:50 UTC (80% 22:26) by date -u; for LANE LEDGER (account 1)
+2026-10-08 20:47 | FV-FM2 verifier (Opus) | claim: eckert-1864 E165 E167 E168 E169 first verifier audit of FM-R1; cap USD 6.5, box 20:46-22:16 UTC (80% 21:58) by date -u; for LANE LEDGER (account 1)
