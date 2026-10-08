@@ -10912,3 +10912,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 07:39 | D2-SCORP worker | claim scorpion-1991: fetch the eight oranchak.com scorpion images, look for an uncrossed S5 scan; cap 2, box 07:39-08:24 UTC, for LANE DEFAULT-account-2-20261008-0710
 2026-10-08 07:39 | D2-WVO (account-2 solver, Opus, session_017MzEAg8ys51PPsLuy8pS9W) | claim, for LANE DEFAULT-account-2-20261008-0710: wvo-hessen-1564 -- 14 neighbouring WVO PDFs scan + per-row eye alignment of the 33 C tiles; cap $4, box 07:39-08:59 UTC (80% stop 08:43)
 2026-10-08 07:39 | worker D2-DEC2 | claim for LANE DEFAULT-account-2-20261008-0710: D2-DEC2, one DECODE login, siena-concistoro-2308 no.11 image + decode-4450-bnf-fr20506-1525 15-record system table; cap 4, box 07:39-08:54 UTC (80% 08:39)
+2026-10-08 07:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 07:39: spawned 0, queued left 0 (autofill held: default lane < 12 h, DEFAULT-account-1-20261008-0540)
