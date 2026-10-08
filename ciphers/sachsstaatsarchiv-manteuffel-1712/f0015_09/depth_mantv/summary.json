@@ -1,0 +1,42 @@
+{
+ "tokens": 69,
+ "grades": {
+  "M": 21,
+  "C": 47,
+  "U": 1
+ },
+ "hcs": 47,
+ "hcs_pct": 68.1,
+ "primary_run": 8,
+ "primary_run_text": "e s p a p i e r",
+ "secondary_run": 16,
+ "secondary_run_text": "Stanislas l'envoyé",
+ "H_model_bits": 2.792,
+ "R": 1.908,
+ "V": 35,
+ "distinct_cipher_codes": 29,
+ "H_design": 148.7,
+ "H_lib": 26.7,
+ "H_K": 175.5,
+ "unicity": 92.0,
+ "AD": 137.9,
+ "AD_R3_4": 77.4,
+ "cipher_clause": false,
+ "stat_i_target": 53,
+ "stat_i_p95": 50,
+ "stat_i_max": 72,
+ "stat_i_pass": true,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "shuffle": "classes",
+ "cipher_class": "code<=120",
+ "recurring_codes": {
+  "198": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 2
+  }
+ },
+ "wordlist_size": 7287
+}

@@ -292,3 +292,113 @@ met (longest letter run 11 against AD 380). depth_pct 66.7 (C 144 of 216). Outwa
 cipher text)"; DECODE mapping "Partially decrypted". The fr18 judge FAIL near its gate is the ZX-DEC349 shape and was not used.
 Limits: (i) beats the shuffle maximum by one letter only; the ruling rests on one code value; D3 would need >= 80% H/C/S.
 Not changed: SO-MANT-F410 (its prompt quotes no depth and the counts are unchanged).
+
+## AUDIT (FAM-MANTV)
+
+Verifier FAM-MANTV (account 2, LANE FAMILY, 8 Oct 2026, 16:54-17:1x UTC by date -u); a separate session from the solver FAM-MANT15
+and from every earlier verifier of this target. Brief: .claude/briefs/runs/2026-10-08-ytbiz-family-1613-jobs.md "### FAM-MANTV".
+Depth bar copied into PREREG-FAM-MANTV.md and pushed (c253ff720) before any depth statistic. Nothing decoded beyond the re-derivation;
+key.tsv, the ciphertexts and the readings are untouched.
+
+**Items.** A = SHStA Dresden 10026 Geheimes Kabinett Loc. 694/09, URL files 0015+0016 (f.8-8v): "Extrait de la relation de M. de
+Gersdorf du 3 Janv. 1713" (Gersdorff, Saxon envoy at The Hague; clear first page 0014, f.7), sent with Manteuffel's letter of 13 Jan
+1713; 69 cipher tokens in 8 runs inside clear French (f0015_09/). B = Loc. 694/09 0052 (slip beside the extract sent with Manteuffel's
+letter of 11 Feb 1713), 43 tokens in 3 runs (f0052_09/). Solver's reading of A (key application of Krauske's 1893 table, C 47 M 21
+U 1): "le dit C. ne desesperoit pas d'en empecher les suites"; "Celui [deser?] qui m'en a fait ce recit"; "comme si la Porte vouloit
+reconnoitre Stanislas pour [r]oy"; "que [159] avoit fait garder ses papiers ches Colliers"; f.8v "quelqu'un de la part de Stanislas
+y est recu comme l'envoye"; "il feroit tout son mieux pour empecher les suites de cette resolution prise a la Porte".
+
+**1. Re-derivation (rule 7).** `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712[/f0015_09|/f0052_09] --check`:
+exit 0 all three ("reading up to date"; A C 47 M 21 U 1; B C 29 M 11 U 3). Shuffle gates re-run unchanged except the seed
+(scratch copies of shuffle_gate_0015.py / _0052.py): A seed 77113, real -1.010 vs 1000 shuffled keys mean -2.016, p99 -1.597,
+max -1.443, 0/1000 at or above -> PASS (solver: seed 15, 0/1000, p99 -1.608); power control 0085 r9+r10 1/1000 PASS. B seed 77152:
+real -1.394 vs p99 -1.553, max -1.311, 1/1000 -> PASS (solver 2/1000). Reproduces. The gate says the Krauske table is the right
+key family for these leaves; it is not a reading.
+
+**2. Transcription spot check.** Frames 0015, 0016, 0052 fetched once from www.archiv.sachsen.de (3 requests, 1.6 s apart, 200;
+sha256 prefixes 97842410, 5496f00b, 1ba248b1, identical to the solver's), cropped at the solver's regions and read by me at native
+scale. 0015 r1 (16 groups), r2 (5), r3 (8), r5 (21), 0016 r1 198, r2 376, r3 (16) and 0052 r1/r3 all agree group for group with
+ciphertext.tsv; 0015 r1 tok15 reads 66 (the solver's low flag stands); 0052 r1's first group is overwritten (465/405) as flagged.
+No disagreement found in 4 spot runs (A: 0015 r1, r3, r5; 0016 r3) beyond the solver's own low-confidence flags.
+
+**3. Prior-work checks 1-5 (by hand; tools/prior_work.py absent).**
+1. Our own work: the solver's check (grep of NOTES/AUDIT/HYPOTHESES/mant0609/ROOM) re-read; only MANT-0609's rank and R13-MANTSCR's
+   screen line precede FAM-MANT15. CLEAR.
+2. Leaf and neighbours: solver fetched and eye-read 0013-0018, 0051-0053, no gloss/clear copy; I re-read 0015/0016/0052 at the crop
+   regions: no interlinear or marginal decipherment over A's runs. 0052 carries small interlinear numerals over run 1 (role unsettled,
+   solver's note stands). CLEAR for A.
+3. Holder/portal/solver repositories: offline, as the solver; no item-level catalogue note. CLEAR offline.
+4. Edition and calendar identity (left "unchecked" by the solver): no edition of Gersdorff's Hague relations is known to this repo;
+   Google Books API (country=US, key) 5 queries ('"Gersdorf" relation 1713 Stanislas Porte Colyer' 0; 'Gersdorff Manteuffel 1713
+   "Stanislas" Haye relation' 0; 'Goltz papiers Colyer 1712 Stanislas envoyé Porte' 0; '"ne desesperoit pas d'en empecher"' 214, first 6 unrelated (Varillas,
+   Saint-Simon, Louis XIII); 'Colyer Goltz Adrianopel 1712 Stanuslaus' 4, all Feldzüge des Prinzen Eugen von Savoyen (1891) on the
+   1712-13 Porte crisis, a secondary account of the same events, not of this relation); IA full text (be-api) '"relation de M. de
+   Gersdorf"' 0, '"Stanislas pour roy" Gersdorf' 0 (control '"graaf Colyer"' 1 hit, so the route answers). Acta Borussica BO I,
+   Droysen IV.1 and NASG 14-19 were searched by earlier verifiers for Manteuffel's reports, not for Gersdorff's; Sbornik RIO and the
+   Leszczynski literature: UNCHECKED (not reached in this box).
+5. After decode, other correspondents' versions of the same news (the leaf's own clear text says "Ces lettres sont du 12 & du 18 Nov"
+   and "Et comme Mr de Colier mande"): **SUBSTANCE FOUND.** Huygens retroboeken, Briefwisseling van Anthonie Heinsius Deel 14
+   (RGP GS 226), full-text search 'Colyer' within Deel 14 (35 hits, 2 requests), then the OCR pages read (4 requests,
+   retroapp/service_heinsius/14_226/html/heinsius_14_GS226_{214,215,236,237}.html):
+   - **no. 336, Colyer to Heinsius, Pera, 12 Nov 1712 (H.A. 1686), pp.213-214**: "Den heer generael-majoor Goltz, internuntius van
+     Polen alhier, bevreest wesende dat insgelijx gevangen geset mogte worden, heeft alle sijne schrifturen elders doen verbergen
+     ... de Turcken den coning Augustus ... niet begeeren t'erkennen, maer Stanislaus (van wien gister een envoyé over Bender alhier
+     is aengelant) op den troon van Polen sullen tragten te herstellen"; P.S. "den envoyé Crispin van Stanuslaus hier gecaresseert
+     wert".
+   - **no. 367, Colyer to Heinsius, 18 Nov 1712, p.236**: confirms the 12 Nov news ("het armement van een envoyé extr. van den
+     gecroonden Stanuslaus alhier, ende dat den G. Heer voorgenomen soude hebben opgem. Stanuslaus op den troon van Polen te doen
+     herstellen"); the mufti "zich verlegen vint" (the leaf's clear text: "puisque le Mufti etoit absolument contraire").
+   Diff against A's cipher spans: "comme si la Porte vouloit reconnoitre Stanislas pour roy" = Colyer's Stanislaus "op den troon ...
+   te herstellen" (agree); "quelqu'un de la part de Stanislas y est recu comme l'envoye" = Colyer's envoy of Stanislaus arrived and
+   "gecaresseert" (agree); "[159] avoit fait garder ses papiers ches Colliers" = Goltz "heeft alle sijne schrifturen elders doen
+   verbergen" (agree in substance, Gersdorff names the place as Colyer's; 159 = Goltz is an identification I, not a key value, and
+   is not entered in key.tsv); "le dit C. ne desesperoit pas d'en empecher les suites" / "feroit tout son mieux pour empecher les
+   suites de cette resolution" and "deser": not in nos. 336/367 (Colyer's wish to mediate and be excused from following the court is
+   close but not the same sentence). So three of the five readable cipher spans relay news already printed from Colyer's own letters;
+   the agreement is also a non-statistical external check of the key application on this leaf (three specific facts, none supplied
+   to the solver). Gersdorff's own French text was not found in print.
+
+**4. Depth (rule 4a, depth bar of 8 Oct; PREREG-FAM-MANTV.md).** `tools/depth_stats.py --cipher-class 'code<=120' --shuffle classes
+--seeds 8100-8299` on each item (outputs f0015_09/depth_mantv/, f0052_09/depth_mantv/):
+| | A (0015+0016) | B (0052) |
+|---|---|---|
+| H/C/S % | 68.1 (C 47 of 69) | 67.4 (C 29 of 43) |
+| longest H/C/S run, cipher codes only | 8 letters ('e s p a p i e r') | 8 ('n u d e v a n t') |
+| AD (H(K) = distinct codes x log2 35 + liberties; R 1.908) | 137.9 (77.4 at R 3.4) | 127.0 (71.3) |
+| cipher clause | fails (8 vs 138) | fails |
+| control (i) word-segmenting stretch | 53 vs p95 50, max 72: passes p95, below max | 25 vs p95 31: fails |
+| code clause, 198 Stanislas (C), 2 contexts | windows -4.104 / -3.474 vs p95 -3.973 / -3.280: **both below** (flanks-only above) | no recurring code |
+Pre-registered rule: the code clause needs both windows above p95; both are below, so **the code clause is not met** for A. Note for
+the next verifier: depth_stats.py builds its 8+value+8 window from cipher tokens only, so on a leaf where each cipher run is an island
+in clear French the flanks splice letters from the neighbouring runs (here 'e s|sa e r' from the 'deser' run, 'i e r s|sa' from the
+end of 0015 r5), not 198's real context ("reconnoitre [198] pour roy", "de la part de [198] y est recu"). That makes the window
+statistic a poor test on this shape of leaf; it is recorded, not overridden (ROOM flag for the parent). The external check of step 3.5
+is a D3/D4 element under the bar and does not replace the clause at D2; D3 is out anyway (68.1% < 80%).
+**Ruling: A D1** ("fragments read"; DECODE mapping Non-decrypted), depth_pct 68.1. **B D0** (the key ranks first, 1/1000 and 2/1000,
+but nothing reads: 'un pour', 'devant', 'elle'; control (i) below p95). No D2 sentence is written.
+
+**5. Classification (rule 10).**
+- **A: N2** -- the news carried by its cipher spans is known in print elsewhere (Colyer to Heinsius, 12 and 18 Nov 1712, Briefwisseling
+  van Anthonie Heinsius Deel 14 nos. 336 and 367, pp.213-214, 236), and no prior mapping of this ciphertext (Gersdorff's relation of
+  3 Jan 1713 as forwarded to Manteuffel, Loc. 694/09 f.8-8v) to it was found. Key: published (Krauske's 1893 manuscript table, someone
+  else's non-period key, credited). Prior plaintext: in substance yes (Colyer, printed; earliest citation found Heinsius Deel 14, RGP Grote
+  Serie 226) -- Gersdorff's own wording no. Prior decipherment: none located. Evidence quality: re-derivation clean, transcription
+  spot check clean, key family gate 0/1000, external agreement on three facts. Confidence: medium-high on N2 (the class could only
+  fall to N1 if Gersdorff's relation itself is printed, e.g. in Sbornik RIO or a Saxon-Polish edition, unchecked).
+  Safe sentence: "Applying Dr. Krauske's 1893 manuscript key table to the unglossed cipher spans of an extract of Gersdorff's Hague
+  relation of 3 January 1713 (SHStA Dresden, Loc. 694/09 f.8-8v) gives French fragments -- the Porte recognising Stanislas as king, his
+  envoy received, papers kept at the Dutch ambassador Colyer's -- whose news is already printed in Colyer's own letters to Heinsius of
+  12 and 18 November 1712 (Briefwisseling van Anthonie Heinsius XIV, nos. 336, 367)."
+  Unsafe sentence: "A previously unread report on the Porte and Stanislas has been deciphered."
+- **B: no class** -- nothing reads (D0); a class needs a reading. The slip's key family is confirmed (gate 1/1000); the next step is
+  the solver's own (native re-read of 4 groups), not an audit.
+- Not queued: no SECOND-OPINIONS-QUEUE row and no AUD2-FAMILY-1 WORK-QUEUE row (the brief gates both on N3+ and D2+; neither item
+  qualifies).
+
+**6. Postmortem and corrections.** Failure caught: the solver's check 4/5 searched only the decoded French phrases and left the
+other-correspondent route unchecked, although the leaf's clear text names the source ("Mr de Colier mande", letters of "12 & 18 Nov")
+-- one search of the printed Heinsius edition by sender and date found the same news (the "other correspondents' versions of the same
+news" clause of prior-work check 5, the Eckert shape). Over-claim found: none outward (the solver wrote "no novelty class" and "Not
+located in what was searched (a search result, not a novelty statement)"); NOTES.md's FAM-MANT15 line 'Next: (3) a verifier ...' is
+now done -- noted under Remaining gaps. Requests this audit: www.archiv.sachsen.de 3, resources.huygens.knaw.nl 6, www.googleapis.com
+5, be-api.us.archive.org 4; no 403/429/challenge.
