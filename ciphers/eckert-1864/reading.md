@@ -569,5 +569,11 @@ Code-word tokens: H 6.
 
 Code-word tokens: H 5.
 
-Totals over the 73 entries: H 1177, C 14, I 0, M 0.
+**E78 | mssEC 18 p.48, pointer 9714 | 21 Apr 1864 3.30 PM, to Lt Col H. Biggs (operator Geo D Sheldon; signed by the Quartermaster General's word)**
+
+{time: 3.30 PM} For Lt [Colonel] H Biggs [Quartermaster] Is your [Transportation] coming [?] [Report] daily by mangle period At present orders Stop every thing coming up [Potomac] and send it to [Monroe] but I have ordered a large quantity of [Transportation] which will be needed here and [As soon as] you are supplied should be allowed to come here  {tail: [signed] [Qr Master Genl U.S.] Oh for wings of Dove}
+
+Code-word tokens: H 12.
+
+Totals over the 74 entries: H 1189, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->

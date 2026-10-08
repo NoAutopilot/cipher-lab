@@ -825,5 +825,17 @@ Cleveland O. [Maj Gen B. F. Butler] May 6th {time: 12 midnight PM} for Stager --
 
 Code-word tokens: H 8.
 
-Totals over the 67 entries: H 1734, C 69, I 59, M 2.
+**N2-BP | mssEC 18 p.48, pointer 9714 | 21 Apr 1864 1.30 PM, to Grant at Culpeper (operator Beckwith)**
+
+[Grant U S] The Govrs of [Ohio] [Indiana] [Illinois] & [Iowa] are here & propose to offer to the Govt [100000] [Near] to be ready for the [Field] clothed [Arms]ed & fully [Equipment]d within [20] days from date of notice & to serve for the [.] of [3] months in [fortifications] or where ever their services may be required & in any State [.] The [Department] would be glad to have your [Field] as to whether this offer should be accepted or refused  {tail: [signed] [Secretary of War] {time: 1.30 PM} [April] [21] End}
+
+Code-word tokens: H 24, C 1.
+
+**N2-BQ | mssEC 18 p.50, pointer 9716 | 21 Apr 1864 7 PM, to Humphreys (operator Caldwell, Hd qrs; signed H. W. Benham)**
+
+{time: 7 PM} for Humphreys Your [2] [Telegraph (-ed, -ing)]'s of [To day] are recd & the estimates were sent at once to [General] Rucker omitting land [Transportation] [.] [Telegraph (-ed, -ing)]'s willbe sent as desired I first marked the one referred to confidential but not being aware that that would ensure a [Cipher] I changed the words so that I presumed they would be safe H. W. Benham Br Gen
+
+Code-word tokens: H 9.
+
+Totals over the 69 entries: H 1767, C 70, I 59, M 2.
 <!-- decode.py: derived block ends -->

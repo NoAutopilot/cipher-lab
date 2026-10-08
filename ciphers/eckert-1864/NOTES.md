@@ -1405,3 +1405,69 @@ Read so far: of the ten rows, 4 read (O9-AK, O9-AL, E76, E77); 3 recorded N1-lik
 - [x] image-check: mssEC 67 p.[10] read from the 1800 px image; ledger pages from 2400 px images.
 - [n/a] retry: the three 1865 rows are gated by the brief on LS3-K's call, which is "book not in hand".
 Verdict: keep going: 1 internal gap; cheapest next: a verifier phrase search for O9-AK and E76 in the sender-family editions, ~$0.5
+
+## LS3-R18 (8 Oct 2026, account 2, for LANE ST-LEDGER-3)
+
+mssEC 18 (object 10074), the parallel sent ledger. Part 1: the 21-22 Apr 1864 pages from the image (started 10:18 UTC by `date -u`).
+Route: Huntington IIIF `hdl.huntington.org/iiif/2/p16003coll11:<pointer>/full/full/0/default.jpg`, pointers 9714-9717 = printed pages
+48-51 (the printed number is on the leaf; pointer - 9660 = page + 6 here, so "page n = pointer - 9660" of RUN6-ECK is off by two for these
+leaves: 9714 is page 48, not 54); 4 image requests, 2 s apart, 2.3-2.4 MB each (6018-6169 x 7200), nothing committed. Crop command run
+(the page's ink profile is weak against the dark scan border, so a text-region box was needed; the line finder wrote 21 crops per page, the
+worker read the pages at 2000 px wide in three bands instead of 21 crops each):
+`python3 tools/iiif_lines.py --image /tmp/.../p9714.jpg --out /tmp/.../c9714 --prefix p9714 --region 620,600,4900,5000 --distance 200 --prominence 20 --smooth 3 --lines-per-crop 3 --max-width 2400 --overlap 100`
+(20 lines, 7 bands x 3 segments).
+Transcription against the volunteer text (rule 2: the image is the source): all six entries agree with the volunteers' text on every code word;
+differences are all in plain words (the image has "service" at E78/N2-BP line 7 where the volunteers have "services", and "sent"/"send" at E78
+is ambiguous). One word is doubtful on the image, N2-BP's last signature word, "Yawl" (volunteers) against a hand that could be "Yard"; kept as
+Yawl (= Signed in key-no2.md), graded M. Pencilled service notes (a "(1)" after the operator's name at p.48, "No 2" over p.50) are in the
+headers.
+
+Entries on the four leaves (all 21-22 Apr; page 49's C. S. Cutler to Gov. Seymour entry is a seventh, below):
+
+| id | file | leaf (printed p., pointer) | hour | book | code-word tokens (key-row grade) | M by hand |
+|---|---|---|---|---|---|---|
+| N2-BP | ciphertext-no2.txt | 48, 9714 | 21 Apr 1.30 PM | 2 | H 24, C 1 | 3: Yawl/Yard; "spit" = Near (should read "men"); the second "opinion" (key row Field) is the plain word |
+| E78 | ciphertext.txt | 48, 9714 | 21 Apr 3.30 PM | 1 | H 12 | 1: Sugar has no key.md row (shown [?]) |
+| N2-BQ | ciphertext-no2.txt | 50, 9716 | 21 Apr 7 PM | 2 | H 9 | 0 (5 plain words that are also book words, Humphreys, Rucker, desired, marked, presumed, are on a `plain:` line) |
+| O9-BA | ciphertext-no9.txt | 51, 9717 | 22 Apr 3 PM | 9 | H 5 | all 5: no time word in the entry, so the book rests on the words alone; "Randolphed" (probably "armed") has no row |
+| O9-BB | ciphertext-no9.txt | 51, 9717 | 22 Apr 10 PM | 9 | H 9 | 1: "Surgery" has no book-9 row |
+| (not filed) | -- | 49, 9715 | 21 Apr 5.30 PM, C. S. Cutler, Albany NY, to Gov. Seymour | none of the three | -- | -- |
+
+Not filed: the Cutler entry (printed p.49, 143 tokens). It carries a time word, Rosalie, that is 5.30 PM only in key-no9.md (the header says
+5.30 PM), but its other code words read wrongly under book 9 ("Gov [Infantry] Daniel [B. F. Butler]", "the [Maine] requests", "[Jno. Morgan]'s
+Escorts") and under books 1 and 2 (Rosalie = 9 PM / 9.30 PM, against the header). Read as: no book in the folder reads it; logged unread, not a
+negative about any book family. ec18 (A3V3-ECK18) had it as book 2 with 37 words not in the key; the image agrees with that count. The Horner NY
+Ericsson/Tecumseh telegram of 9.40 PM on printed p.50 is in plain words (RUN6-ECK's note stands).
+
+Book assignment (vocabulary shares, tokens of the entry found in key.md / key-no2.md / key-no9.md; the shares do not separate the books, they
+include the common words every table carries, so the assignment rests on the ledger-time statistic below, not on them):
+E78 12/14/4 of 63; N2-BP 14/24/9 of 85; N2-BQ 6/8/1 of 63; O9-BA 6/7/5 of 39; O9-BB 13/13/9 of 79.
+
+Matched control (rule 3; `python3 ls3_r18_control.py`). The statistic: does the decoded time word equal the time the ledger itself writes in the
+entry's header line? That number can differ between the real book, the other two books and a shuffled book, and the shuffle moves the time rows.
+Real, books 1/2/9: E78 Y/n/n; N2-BP n/Y/n; N2-BQ n/Y/n; O9-BB n/n/Y; O9-BA has no time word (not testable). Shuffled copy of the chosen book
+(meanings permuted among rows of the same kind, 200 seeds, seed 1000+i): time word agrees in 5, 3, 4, 3 of 200 (E78, N2-BP, N2-BQ, O9-BB) and 0 of 200
+for O9-BA. So the four timed entries sit on the book their time word picks, one book of three each time, against a 1.5-2.5% shuffle floor.
+Hand count of code-word tokens that read as a grammatical clause, chosen book vs the other two (approximate, one reader): E78 10/12 vs 5/12 (book 2),
+1/4 (book 9); N2-BP 19/21 vs 3/16 (book 1), 1/9 (book 9); N2-BQ 9/9 vs 4/9 (book 1), 1/1; O9-BB 9/9 vs 2/10 (book 1), 1/10 (book 2); O9-BA 5/5 vs 3/8
+(book 1), 1/8 (book 2). A shuffled-meaning decode of each is word salad ("Is your [Talladega] coming [.] [Reinforce] daily", "[Suffolk] The Govrs
+of [Failure] [Johnston] [Hunter D]"; samples in the script's output). O9-BA is the weakest: no time word, five tokens.
+Readings with the judge: `python3 tools/judge_plaintext.py specs/eckert-1862.json --file ciphers/eckert-1864/ls3_r18_readings.md` ->
+`FAIL language: score=-1.123, null_p99=-2.082, real_p05=-0.847, real_median=-0.812, mode=both, N=1941` (bracketed readings, 5 short entries; the en judge is
+of unknown reliability, tools/data/en/README.md). Reported as a FAIL. Regeneration: `decode.py`, `decode_no2.py`, `decode_no9.py --check` and
+`ls3_r18_control.py --check` exit 0.
+What the five say (each carries its source word grades as above, none beats the volunteers' text on a plain word; conditional on the key rows):
+N2-BP, War Department to Grant at Culpeper: the governors of Ohio, Indiana, Illinois and Iowa propose to offer 100,000 men within 20 days for 3 months
+in fortifications, "the Department would be glad to have your opinion"; signed Secretary of War. E78: to Lt Col H. Biggs, Quartermaster: is your
+transportation coming ... daily; orders stop everything coming up the Potomac and send it to Monroe; signed Qr Master Genl U.S. N2-BQ: Benham's reply
+to Humphreys, "your 2 telegrams of today are received and the estimates were sent at once to General Rucker, omitting land transportation ... I first
+marked the one referred to confidential but not being aware that that would ensure a cipher I changed the words". O9-BA: Halleck to Canby, "what is the
+condition of the 14th NY Artillery. Has it been [armed?] and drilled as infantry ... Halleck". O9-BB: Meigs to Maj Van Vliet, Quartermaster, New York:
+complete the supply of tugs, ferry boats, barges and schooners for both Fort Monroe and Washington; steamers enough to move troops are now engaged.
+Print pre-filter (rule 3 lane point; OR ser. I vols. 32 pt 3, 33, 34 pts 1-4, 35, 36 cached in scratch, phrase search, a 4-gram/500-word overlap scan
+and an address/date scan for "April 21/22, 1864" dispatches): no hit for any of the five. Related only: OR 33 prints Halleck to Dix 19 Apr 1864
+("Fourteenth New York Heavy Artillery"), Dix's reply 21 Apr, and Halleck to Burnside 23 Apr ("armed as infantry"), which fit O9-BA's subject but are not
+its text. Searched: the OCR of those volumes by script, 8 Oct 2026; not searched: the image of any OR page, Butler/Grant/Lincoln editions for these five
+(done for part 2 only). Conditional on the OCR.
+Not found: a key row for Sugar (key.md), Randolph (key-no9.md), Surgery (key-no9.md); the second copy of any E4/E5 telegram (the Premise question of
+section 2, RUN6-ECK) is still not on these four leaves.
