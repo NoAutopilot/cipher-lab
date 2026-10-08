@@ -112,3 +112,36 @@ Read so far: 0 of 42 cipher tokens read (test 2 excluded five candidate tables; 
 - [x] image-check: DECODE full-size images obtained and transcribed 6 Oct 2026
 - [ ] retry: not applicable
 Verdict: keep going: 1 internal gap; cheapest next: R8451-R8454 sibling pairs, ~$3
+
+## Test 3: the 1649 siblings R8451-R8454 (CRAV-49, LANE FAMILY account 2, 8 Oct 2026 19:19-19:3x UTC by date -u)
+**Prior work (run 19:2x UTC, pasted before the first priced step).** `python3 tools/prior_work.py craven-rupert-1648 --item-spec 'shelfmark=BL Add MS 18982;folio=185-195;decode=8451;...' --step-type key --fetch` -> exit 4 (LEAD 1-own done-candidate, LEAD 1-own live-claim, CLEAR 3-tomokiyo, LEAD 3-decode "R8451 'Decrypted', fetch the documents", UNCHECKED-NET 3-solver aaymeloglu, CLEAR 3-solver cyphersolver/bourdeau, LEAD 4-editions CSP Domestic). Answered: live-claim CLEAR (it was this worker's own claim); done-candidate CLEAR (NOTES.md:101-107 say R8451-R8454 not yet tried). By hand: check 1 (own work) -- grep 845[1-4] in this folder, ROOM.md and the registers: no prior fetch or table; check 2 (leaf and neighbours) -- every image of R8451-R8453 (12 leaves, P2-P4 are blank, address and endorsement leaves) looked at: no clear copy or decipherment of R8447 (Craven, 6 Nov 1648) on any of them; R8451 and R8452 are original and "Duplicat" of one letter; check 3 (holder/portal) -- DECODE records 8451-8454: Author "Charles R.", Receiver "P. R. (Prince Rupert?)", Status Decrypted, "Inline Cleartext: Yes", Documents 0 -- the "Decrypted" flag is the period interlinear gloss, not a document; aaymeloglu repository unchecked (no local clone); check 4 (editions) -- not run for these 1649 letters: they are key sources here, not targets, and R8447 itself is already covered by Warburton (above). CSP Domestic: unchecked.
+**Material.** One DECODE browser login (`decode_browser_login.js 8451 <scratch> --fetch-page RecordsView/8452,8453,8454 --guess-fullsize --delay 2000 --max-files 24`). It returned all four record pages and the 12 full-size images of R8451-R8453 (6657-6729 x 9005-9021, about 10-14 MB each; sha256 in test3/sibling_images_sha256.tsv; not committed). The 24-file cap was reached before R8454 (f.195, 2 images): **R8454 not fetched, not tested.** No record page was committed (no account name on disk).
+**What the leaves are.**
+- R8451 (f.185) and R8452 (f.187): Charles R. to "Deare Cousin", St Germains 3 Aug 1649 n.st., headed "my owne Cypher"; R8452 is marked "Duplicat". About 110 numeric groups (10-269), with a period interlinear decipherment, fuller on R8452. Ungraded gist of the gloss: "I am advertised from Lord [?] that one Brocket, who is said to be governor of Kinsale, hath taken money of Cromwell to betray the town to him, and that there is some suspicion of [?] at Waterford and [?] ... it is further advertised that the rebels intend to attempt the corrupting of many of the ... in Ireland".
+- R8453 (f.191): Charles R. to "Deare Cousin", Jersey 15 Nov [1649], headed "L. Gerrards Cypher"; about 120 groups (9-557), colon-separated, interlinear decipherment. The endorsement on f.192v ("Desires y P. to come with his Fleet to Rochell, Brest, or Blavett to transport him to Ireland; Chequeux will informe his H. more particularly") matches the glossed "Brest", "Rochelle", "Blavet", which checks the pair reading.
+**Tables.** test3/T_8452.tsv (70 codes; R8451 adds no pairs) and test3/T_8453.tsv (81 codes), read by this worker from line crops cut with `python3 tools/iiif_lines.py --image <scratch>/IMG_R8452_I39026_P1.jpg --out <scratch>/crops --region 1450,2350,3500,2900 --prefix r8452 --lines-per-crop 2 --debug` and `... IMG_R8453_I39035_P1.jpg --region 1450,2150,3500,3700 --prefix r8453 --lines-per-crop 2`. Single reader, all M (I where the gloss sits between two codes). No subagent was used.
+**Registered test (PREREG-D2-CRAV.md amendment A2, pushed 304aa0e7e before scoring): A1 unchanged.** test3/coverage_a2.tsv:
+
+| table | target COV /41 | key-true p01 (median) | random-code p99 | verdict |
+|---|---|---|---|---|
+| T_8452 ("my owne Cypher", Aug 1649) | 6 | 35 (39) | 15 | EXCLUDED (control is an upper bound) |
+| T_8453 ("L. Gerrards Cypher", Nov 1649) | 7 | 30 (36) | 12 | EXCLUDED (control is an upper bound) |
+
+The key-true p01 sits above the random-code p99 in both rows, so the control could fail differently from the target (rule 3). The target's coverage is below even the random-code p99 in both rows: the codes R8447 shares with each table (T_8452: 60 85 95 107 118; T_8453: 63 107 167 183 311) are no more than chance overlap. Also recorded before scoring: R8447 has 9 of 41 tokens above 269 and 4 above 557 (852, 922, 1037, 1067), outside both tables' ranges. **Reading:** none; 0 of 41 tokens read; no decode was run because neither table was NOT EXCLUDED. All of this is conditional on the two-pass R8447 transcription and on single-reader sibling pairs.
+**Requests:** de-crypt.org: 1 login session, 4 record pages + 24 files (12 thumbnails, 12 full images), 2 s apart. No other hosts.
+Script: `python3 test3/coverage_a2.py --check` (OK).
+
+## Remaining gaps (CRAV-49, 8 Oct 2026)
+Read so far: 0 of 42 cipher tokens read (seven sibling and known tables EXCLUDED under A1; no key applies)
+- the 40 legible groups - blocker: not-attempted; R8454 (f.195, 2 images, Charles R. 1649) was not fetched and BL f.142 ("heavily ciphered, with deciphering") has not been tried; R8447's codes run to 1067, beyond every sampled table (max 557), so the key is likely a larger nomenclator than any found so far; next: one DECODE login for R8454 and a check whether f.142 sits under a DECODE record, then the A1 test, ~$2
+- the struck group X and the torn 18? on f.134r - blocker: illegible; a blotted strike-out and a tear through the figure on the DECODE image; next: the original, or a BL image if the BL restores its images
+
+## Escalation (CRAV-49, 8 Oct 2026)
+- [x] siblings: R8445/R8446/R8448 (D2-CRAV) and R8451-R8453 (CRAV-49) tables EXCLUDED under A1; R8449 has no pairs; R8454 not fetched (file cap)
+- [ ] clear-pages: use the clear context around each run ("write to [40.97.52.35.85]" is a name) to constrain groups
+- [x] known-keys: Tomokiyo's Nicholas-Rupert letter table EXCLUDED; THE=g4 unpublished; no other Rupert key on disk
+- [ ] print: no edition prints the letter (Warburton checked); recheck only if a later test reads a name
+- [ ] key-rebuild: only if a sibling key reads part of the letter
+- [x] image-check: DECODE full-size images obtained and transcribed 6 Oct 2026
+- [ ] retry: not applicable
+Verdict: keep going: 1 internal gap; cheapest next: R8454 + f.142 sibling pairs, ~$2

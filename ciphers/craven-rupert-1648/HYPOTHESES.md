@@ -9,6 +9,9 @@
 | 8 Oct 2026 | D2-CRAV (A1) | R8447 enciphered with the London 1 June 1648 key (T_8445, sample) | COV 2 | key-true p01 25 (upper bound), random-code p99 8 | EXCLUDED (same caveat) |
 | 8 Oct 2026 | D2-CRAV (A1) | R8447 enciphered with the Nicholas-Rupert July 1645 letter table (Tomokiyo) | COV 8 | key-true p01 29, random-code p99 17 | EXCLUDED (letter part only; the word series 98-373/427-616 are unpublished) |
 | 8 Oct 2026 | D2-CRAV | THE=g4 (Tomokiyo's reconstruction from 18982 f.79) | -- | -- | not tested: no published table found |
+| 8 Oct 2026 | CRAV-49 (A1 via amendment A2) | R8447 enciphered with Charles R.'s "my owne Cypher" (St Germains 3 Aug 1649, T_8452 sample) | COV 6 | key-true p01 35 (upper bound), random-code p99 15 | EXCLUDED (control is an upper bound) |
+| 8 Oct 2026 | CRAV-49 (A2) | R8447 enciphered with "L. Gerrards Cypher" (Jersey 15 Nov 1649, T_8453 sample) | COV 7 | key-true p01 30 (upper bound), random-code p99 12 | EXCLUDED (control is an upper bound) |
+| 8 Oct 2026 | CRAV-49 | R8454 (f.195) table | -- | -- | not tested: images not fetched (one-login file cap) |
 
 Scripts: test2/key_family_test.py --check, test2/coverage_exclusion.py --check. PREREG: PREREG-D2-CRAV.md (registered 85370ca81, A1 670996f9d).
 All negatives are conditional on the two-pass transcription (95.3% agreement) and on single-reader M-grade sibling pairs.
