@@ -91,3 +91,26 @@ that conflicts with key.md (do not edit key.md for a conflict: log it in HYPOTHE
 single-day key rows named there (Myrtle, Mary, Ingress, Camden, Humboldt) only when the print gives a date. Then regenerate the residue
 (residue_decode.py) and report the C/M/I counts before and after. No Huntington requests needed. NOTES "## E62-ALN (8 Oct 2026, account 1,
 for LANE LEDGER)", Remaining gaps and Escalation updated, gaps_check after.
+
+---
+
+# Wave 2 (written 8 Oct 2026 18:1x UTC)
+Wave 1 by get_session: LS5-R1c 4.53, LS5-R1d 4.19, LS5-R1e 2.79, K8472 2.49 (no book in hand reads 8472 or 6254: that ledger stops).
+Readers filed 24 entries; 15 located in print by the readers themselves, 10 rows skipped at step 0. Not located (9): E103 E104 E106 N2-DB
+(LS5-R1c), E122 E123 (LS5-R1d), E143 E145 E146 (LS5-R1e).
+hdl token lesson: three readers posted `take` within the same minute (17:52) -- the check-then-take is not atomic across sessions. Before
+your first hdl request after posting `take`, fetch ROOM again: if another `take` without `release` is newer than the last release and
+earlier than yours, wait for its release.
+
+## FV-LS5-A and FV-LS5-B (Opus 5.5, first verifiers, separate sessions from the readers; cap $5 / $4.5, box 90 / 80 min)
+Exactly the "## First verifiers LS4-V2a and LS4-V1a" section of .claude/briefs/runs/2026-10-08-acct1-st-ledger4-workers.md (points 1-4 first
+per entry: own Huntington transcription + CONTENTdm full-text search of the decoded substance; OR ser. I-III + ORN; Papers of U. S. Grant
+(Google Books snippet search, country=US, reaches vol. 13) and Basler; press of the day), plus .claude/briefs/prior-work-step.md check 5 (G3,
+same-day replies/antecedents, the clear reply in the received ledgers mssEC 11). New first point from FV-LS4-R2b (17:56 UTC: N2-CC = N2-M,
+N2-CL = N2-R): **diff each entry's pointer, date and addressee against every already-filed ID in NOTES.md/status.json** -- a duplicate is
+withdrawn, not audited. Depth per .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. AUDIT.md heading "## AUDIT (FV-LS5-A)" / "(FV-LS5-B)";
+status.json rows for N3+ only with audit_status "one audit"; SO row per N3+ entry; tools/depth_check.py passes; file_shrink_guard. hdl
+token as above, at most 40 requests. On N3+ D2+ add a WORK-QUEUE row `AUD2-LEDGER-<n>` (account account-3, Opus 5.5, cap 2.5 per entry)
+and name it in ROOM for the account-3 VERIFY lane. Unit ~0.8 per entry.
+- FV-LS5-A: E103, E104, E106, N2-DB (NOTES "## LS5-R1c"), E122 (NOTES "## LS5-R1d").
+- FV-LS5-B: E123 (incl. its reply), E143, E145, E146 (NOTES "## LS5-R1d", "## LS5-R1e").
