@@ -349,16 +349,41 @@ NEXT-STEPS.tsv still read this folder as `runnable` from the older line "Cheapes
 R13-SCORP2C); that test ran on 6 Oct 2026 (R13-SCORP2C). next: no agent step is left on the material in hand (no key material); new material only (the
 further Scorpion messages Schmeh mentions), or an S5 transcription if a later family needs it.
 
-## Remaining gaps (loose-ends pass, 8 Oct 2026)
-Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- the eight oranchak.com scorpion1-8.jpg images, never fetched; one may be an uncrossed scan of S5 - blocker: not-attempted; noted in the body at NOTES.md:154, never carried as a step (loose-ends 8 Oct 2026); next: fetch the eight images once and look for an uncrossed S5 row (S5 is 180 signs, below unicity alone), ~$0.3
+## The eight oranchak.com images (D2-SCORP, 8 Oct 2026, 07:39-07:41 UTC)
 
-## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: fetch the eight images once and look for an uncrossed S5 row (S5 is 180 signs, below unicity alone); ~$0.3; source: loose-ends 8 Oct
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: fetch the eight images once and look for an uncrossed S5 row (S5 is 180 signs, below unicity alone), ~$0.3
+Fetched once each over plain http (https presents Dreamhost's default certificate, A2P4-SCORP above),
+`http://www.oranchak.com/scorpion1.jpg`-`scorpion8.jpg`, descriptive UA, 1.6 s apart, all 200 image/jpeg. SHA-1 and a
+note per file in `images/manifest.json`; looked at as one contact sheet (no crop needed, no vision subagent).
+
+| file | what it is |
+|---|---|
+| scorpion1 | AMW "Official Investigation Transcript" cover, "Scorpion Letters" typed brief (no cipher) |
+| scorpion2 | plain-English letter page, "I am your worst nightmare coming true ...", signed SCORPION |
+| scorpion3 | byte-identical (same SHA-1) to `images/Scorpion-Letter-2.jpg` = S1; not kept |
+| scorpion4 | byte-identical (same SHA-1) to `images/Scorpion-Letter-1.jpg` = S5, crossed-out row present; not kept |
+| scorpion5 | plain-English letter page, "... mindracking experimentation with my complex ciphers ...", signed SCORPION |
+| scorpion6 | plain-English letter page, "intricate and difficult to recopy onto these cards ..." |
+| scorpion7, 8 | blank AMW "NOTES" pages (no cipher) |
+
+**Result: no uncrossed scan of S5 among the eight.** The only S5 image on the site is the same file already in this
+folder (the scienceblogs.de copy), with the hatched row. The crossed-out row stays unreadable from published images;
+the source scans on both sites are one scan. The three clear-text pages (2, 5, 6) are kept in `images/oranchak/`: they
+are the letters' plain-English parts (scorpion5 speaks of "my first one ... my second, third, fourth, and now
+temporarily final cryptograph system" and "another cipher for you"), context only, not a crib for either cryptogram's
+content. No transcription made, no solve attempt (S5 is 180 signs, below unicity alone). Requests: www.oranchak.com 8.
+
+## Remaining gaps (D2-SCORP, 8 Oct 2026)
+Read so far: 0 of 250 published cipher signs (S1 70 + S5 180); no reading attempted beyond the controls above
+- S1 and S5 readings - blocker: too-short; S1 N=70 and S5 N=180 sit below the unicity distance for a homophonic key, and the homophonic and cycling-homophonic matched controls at both sizes read below gate (A2P4-SCORP, A2P4-SCORP3, R11-SCORPCYC sections above)
+- the crossed-out S5 row - blocker: illegible; hatched over in the only published scan, and the eight oranchak.com images hold no other copy (D2-SCORP above)
+- the further Scorpion letters (S2-S4 and later) - blocker: needs-physical-access; held by law enforcement and never published (Premise check (c))
+
+## Escalation (D2-SCORP, 8 Oct 2026)
+- [x] siblings: the published S1 and S5 both transcribed or controlled; the unpublished sibling letters are unreachable (Premise check (c))
+- [x] clear-pages: the three plain-English letter pages fetched 8 Oct 2026 (images/oranchak/scorpion2, 5, 6); context only, no crib for the cipher content
+- [n/a] known-keys: anonymous 1991 sender, no period or published key exists to apply
+- [x] print: check-solved web pass GF-A2-12, 3 Oct 2026 (Cipherbrain, Cipher Mysteries, Bourdeau); no accepted decipherment
+- [n/a] key-rebuild: no key material at all, no decipherment or key sheet to rebuild from
+- [x] image-check: the eight oranchak.com images fetched and looked at, D2-SCORP 8 Oct 2026; no uncrossed S5
+- [x] retry: homophonic and cycling-homophonic families run with matched controls at S1 and S5 sizes, all below gate; nothing to retry without new material
+Verdict: parked: every gap has an outside blocker

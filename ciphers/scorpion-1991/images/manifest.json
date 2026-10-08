@@ -12,5 +12,71 @@
     "size": 174411,
     "sha1": "d8324152e2c90cc30b670197a00fbcf2f9cb227b",
     "note": "second cryptogram per Schmeh (180 chars, 155 unique) -- despite filename order, this is the SECOND cryptogram"
+  },
+  {
+    "id": "oranchak/scorpion1.jpg",
+    "url": "http://www.oranchak.com/scorpion1.jpg",
+    "fetched": "8 Oct 2026, D2-SCORP",
+    "size": 144620,
+    "sha1": "75ac12561ca569bb8240419c6cf0b0963b7f86ca",
+    "note": "AMW 'Official Investigation Transcript' cover sheet, 'Scorpion Letters' brief (typed, no cipher)"
+  },
+  {
+    "id": "oranchak/scorpion2.jpg",
+    "url": "http://www.oranchak.com/scorpion2.jpg",
+    "fetched": "8 Oct 2026, D2-SCORP",
+    "size": 183591,
+    "sha1": "2ff1611a3e7ab119a79da69e644324eb9080ef34",
+    "note": "plain-English letter page ('I am your worst nightmare coming true ...'), signed SCORPION"
+  },
+  {
+    "id": "oranchak/scorpion3.jpg",
+    "url": "http://www.oranchak.com/scorpion3.jpg",
+    "fetched": "8 Oct 2026, D2-SCORP",
+    "size": 62115,
+    "sha1": "b49f1215e4f02612dc7b464a75a046e44ace30af",
+    "kept": false,
+    "note": "DUPLICATE of images/Scorpion-Letter-2.jpg (S1, same sha1 b49f1215...); not kept"
+  },
+  {
+    "id": "oranchak/scorpion4.jpg",
+    "url": "http://www.oranchak.com/scorpion4.jpg",
+    "fetched": "8 Oct 2026, D2-SCORP",
+    "size": 174411,
+    "sha1": "d8324152e2c90cc30b670197a00fbcf2f9cb227b",
+    "kept": false,
+    "note": "DUPLICATE of images/Scorpion-Letter-1.jpg (S5 with 'Hi! Remember me?' and the crossed-out row, same sha1 d8324152...); not kept"
+  },
+  {
+    "id": "oranchak/scorpion5.jpg",
+    "url": "http://www.oranchak.com/scorpion5.jpg",
+    "fetched": "8 Oct 2026, D2-SCORP",
+    "size": 138978,
+    "sha1": "d2a0f85b0b9489e5747a147c554026e6afa0430d",
+    "note": "plain-English letter page ('...mindracking experimentation with my complex ciphers ...'), signed SCORPION"
+  },
+  {
+    "id": "oranchak/scorpion6.jpg",
+    "url": "http://www.oranchak.com/scorpion6.jpg",
+    "fetched": "8 Oct 2026, D2-SCORP",
+    "size": 184836,
+    "sha1": "51e02f8271fc4bebaa982d38cea3ba2ce4869221",
+    "note": "plain-English letter page ('intricate and difficult to recopy onto these cards ...')"
+  },
+  {
+    "id": "oranchak/scorpion7.jpg",
+    "url": "http://www.oranchak.com/scorpion7.jpg",
+    "fetched": "8 Oct 2026, D2-SCORP",
+    "size": 162138,
+    "sha1": "4990a6b008b773e0349fbf066ffe50727b48b3ba",
+    "note": "blank AMW 'NOTES' ruled page (no cipher)"
+  },
+  {
+    "id": "oranchak/scorpion8.jpg",
+    "url": "http://www.oranchak.com/scorpion8.jpg",
+    "fetched": "8 Oct 2026, D2-SCORP",
+    "size": 99401,
+    "sha1": "8e77aaac88f89f517caef6d3d2961cfabaa1c125",
+    "note": "blank AMW 'NOTES' page with AMW seal (no cipher)"
   }
 ]
