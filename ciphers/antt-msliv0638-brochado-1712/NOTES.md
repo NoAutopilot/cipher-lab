@@ -2400,3 +2400,47 @@ FAIL language: score=-1.41, null_p99=-1.427, real_p05=-1.134, real_median=-0.87,
 pt17 -1.481 -> -1.436, pt18 -1.461 -> -1.410: still FAIL, now just above each shuffled-null p99. The appendix's own
 m0291 Carta 96 sign that the atlas called `ff` is transcribed `f.f` in ciphertext_appendix.tsv; not changed here
 (appendix data-fault gap). Cost units: 2 Sonnet vision passes + 1 reconciliation. Requests: 0 to any host.
+
+## D4V-BROC (8 Oct 2026, LANE DEFAULT-account-4-20261008-0740): rule-7 re-derivation of the revised letter 134 reading
+
+Verifier, not the solver; worked from key.tsv, body_ciphertext.tsv and the decode config only (09:01-09:06 UTC by date -u).
+
+**Re-derivation.** `tools/decode_key.py ciphers/antt-msliv0638-brochado-1712 --check` -> appendix C1445/M220/U37, body
+C81/M23/U7, "reading up to date", exit 0; `scripts/20_letter134_reading.py --check` -> up to date, exit 0. Independently, a
+20-line script (scratchpad, not committed) mapped the 70 letter-134 tokens of body_ciphertext.tsv through key.tsv with the
+decode.json grade rule (C only when key grade C and transcription conf H; M otherwise; no key row U) and compared token by
+token with reading_body_tokens.tsv: **0 value or grade differences** (2 rows differ only in the unkeyed marker, `_` vs `?`),
+counts **C 54 / M 14 / U 2**, reading `uilhacopretendhradilataranossa_adparanosfasrrcrdor drproualoshgtal_ento`, identical to
+reading_body_letter134.txt. Against the pre-D4-BROC reading (`uilfaco_retend...nosfa_rrcrdor...`) the letters changed at 3
+positions: m0275-r1 pos 4 f -> h (M), pos 8 U -> p (C: pre-registered slot S1, both valid passes class P, conf H, key 55 C),
+m0276-r1 pos 10 U -> s (M). pos 2 (9 -> 8) keeps the value i. The only non-M change is a pre-registered slot. **Rule 7: passes.**
+
+**The `ff -> s` key row's evidence.**
+- Independent of letter 134: yes. The witness is m0179-r1 pos 16 (letter 80) against the appendix's own copy of the same run
+  (m0287 Carta 80, `...4.55.12.15.f.8.3.15`), aligned by the shared suffix `8.3.15`; nothing in letter 134 enters it.
+- But it is a sign-identity witness, not a Deciffrada one: the body doubled-loop sign is equated with the copy's `f`, whose value
+  s comes from the `f` row (3 obs, s 2 / e 1, entries m0287 Carta 80 and m0291 Carta 96). The copy-to-body alignment is itself
+  imperfect (the body has `55.55.ff` where the copy has `f`, decoding `proppsito` for "proposito"), so n=1 and grade M is right.
+- **A second witness exists and is not counted.** The m0291 Carta 96 sign D4-BROC's G2 decoy calls one doubled-loop sign is
+  transcribed `2.f.f.15.c.12.7.8.12.25` in ciphertext_appendix.tsv, under the Deciffrada "...o Thesoureiro". Read as one sign,
+  `ff.15.c.12.7.8.12.25` = s.o.u.r.e.i.r.o, a Deciffrada-backed ff = s independent of both m0179 and letter 134. Read as two `f`
+  tokens it is the source of the `f` row's stray `e` observation. Correcting that appendix row (f.f -> ff, an image-backed edit,
+  D4-BROC's own G2 is the image evidence) would give `ff` two witnesses and remove the spurious `e` from `f`; not done here
+  (verifier does not change the reading).
+- Circularity note: m0179-r1 is a CONTROL letter (decode.json header). Its pos 16 now reads s only because the key row was built
+  from that very token, so m0179-r1's agreement with Carta 80 at pos 16 is no longer a check on the key. Any control score for
+  m0179-r1 recomputed after 8 Oct should exclude pos 16. Its pos 14 change (11 -> 55) leaves the letter p either way.
+
+**Could D4-BROC's KA gate fail?** Yes, but with little power on the classes that matter. G1 (decoy-line token accuracy >= 0.85,
+truths from the master transcription, script 22) is a real known-answer test with headroom (both passes 0.939). G2 and G3 are
+one item each: G2's expected answer D disagrees with the master transcription (`f.f`) but is supported by the Carta 96
+Deciffrada's single s, so it is defensible; G3 is one agreed 55. A pass guessing D vs P at random clears G2+G3 one time in four,
+so the D/P settlements (S1 = P, S2/K = D) rest mainly on the two blind passes agreeing, not on the gate. The PREREG was pushed
+(41c7ba9f1, 08:50:13 UTC) before the results commit (3aae2fe15, 08:53:38); its claim to precede the passes is not separately
+timestamped. Out-of-slot changes (m0275-r1 pos 2/4, m0179-r1 pos 14) are correctly held at M; note pos 4 f -> h is the change
+that makes `uilhaco` match "velhaco", so it should stay M until an independent image read confirms 10 over 16.
+
+**Verdict.** Reading re-derived exactly (0 differences); rule 7 holds. Key row `ff -> s` M stands, under-attested rather than
+over-claimed. Judge still FAILs pt17/pt18 (D4-BROC's numbers, not re-run). Next steps: (1) appendix data fix m0291 Carta 96
+pos 34-35 `f.f` -> `ff` with the `f`/`ff` rows rebuilt (cheap, ~$1, image already on disk); (2) AUDIT.md with an N-class and
+depth (rule 10 / 4a verifier, out of scope here); (3) an independent image read of m0275-r1 pos 4 (10 vs 16). No novelty class.
