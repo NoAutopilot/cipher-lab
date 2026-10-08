@@ -6076,3 +6076,22 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
 - Step 3: no rebuild candidate outside Sforza meets glossed >= 10 with an unglossed sibling (KEYHUNT-2026-10-07.tsv, NEXT-STEPS.tsv
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
+
+## LANE ST-LEDGER handoff (session_016rC9SvHBi7gsLuXBh6whmZ, account 1), 8 October 2026 (closed 02:2x UTC: cap spent, lane about 48.8 of 50)
+
+STEAM round (.claude/briefs/runs/2026-10-07-acct3-steam.md, section ST-LEDGER); worker brief
+.claude/briefs/runs/2026-10-07-acct1-st-ledger-workers.md (waves 1-4). Ten workers 41.67 + orchestrator ~7.1 by get_session.
+Result: 20 entries of Huntington mssEC 19 (1864 sent ledger) at N3, key period, D3-D4, each with ONE audit (status.json rows,
+SO-ECKERT-E* rows queued) -- not counted until a second adversarial audit: E21, E23, E26, E27, E28 (LS-V1); E37-E43, E45, E46
+(LS-V3); E47, E49-E52, E54 (LS-V4). Plus E29 N2; E22, E24, E25, E44, E48, E53 N1.
+- Step 1 scout (LS-SCOUT): mssEC 19/18 stays the best ledger with a key in hand; next new ones are Huntington object 5952 (Fort
+  Monroe ciphers received and sent, Feb 1864-Apr 1865, ~600 entries, 1864 part under Cipher No. 1/No. 2) and object 8472
+  (Cipher Messages sent Aug 1862-Jan 1864, key not established). LEDGER-SCOUT-2026-10-07.tsv/.md.
+- The lever was the filter, not the key: LS-PRE's entries-mssEC19.tsv checks each entry's plain words against the OR before
+  decoding (control on 98 read entries: recall 41/50, 0/14 false hits). Filtered batches gave 20 N3 of 27 audited; the two prior
+  unfiltered chunks gave 0 of 14. Readers cost ~0.55 per entry, verifiers ~0.6 per entry.
+- Parked: E30-E36 (McCaine, Aug 1864): two sessions (LS-R2, LS-R2b) ended without a commit; cause not established
+  (NOTES.md "## ST-LEDGER parked entries").
+Left, runnable: (a) second adversarial audits of the 20 N3 entries (weakest flagged: E37, E46, E51, E52), ~$3.5 each, to make
+them count; (b) the ~280 remaining priority-1 rows of entries-mssEC19.tsv (1865 rows need a check that Cipher No. 1 still reads
+them -- Nos. 3/4 are not in hand), ~$1.2 per entry read+audit; (c) E30-E36; (d) object 5952 with the same pre-filter.
