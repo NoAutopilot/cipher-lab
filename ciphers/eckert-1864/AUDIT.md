@@ -2030,3 +2030,119 @@ api.semanticscholar.org 1 (429; print_check's 2 also 429), api.openalex.org 10 a
   N2 (`plaintext_novelty` N2, `mapping_novelty` N3), `audit_status` "two audits", depth D4, not counted.
   SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E28 withdrawn (N2), and its prompt's context line names the Welles and Lincoln Papers prints.
   SO-ECKERT-E27 unchanged (class and counts unchanged).
+
+## AUDIT (LS-V3)
+
+Verifier LS-V3 (account 1, LANE ST-LEDGER, session_01Sg3MsAogd98jwqoVTLY6Mk), 8 Oct 2026, 01:10-02:0x UTC by `date -u`; a separate
+session from the solver (LS-R3), not protecting its conclusions. Scope: LS-R3's entries **E37-E46** (mssEC 19, Cipher No. 1, key.md =
+mssEC 41). Nothing decoded beyond re-running the committed script. Key source for every item: `period` (the War Department's own
+Cipher No. 1 book).
+
+### 1. Re-derivation (rule 7) and image spot-check
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0. E37-E46 derived block: H 161, C 1 by the decoder,
+  no hand regrading by LS-R3; checked here, accepted. Code words left unread and not graded by LS-R3 are counted here as unread tokens
+  for depth: E37 "Wreath", E40 "nick", E43 "Waymorners" (one each).
+- Strip crops from the 2400 px IIIF images (scratch, not committed): `python3 tools/iiif_lines.py --image $S/img/p9130.jpg --out
+  $S/crops/9130 --prefix p9130 --region 100,1400,2250,480 --centres 50,147,244,341,438 --lines-per-crop 5 --max-width 2400`, the same
+  with `--region 100,1850,2250,220 --centres 50,147 --lines-per-crop 2` for its last lines, and `python3 tools/iiif_lines.py --image
+  $S/img/p9110.jpg --out $S/crops/9110 --prefix p9110 --region 100,1800,2250,900 --centres 60,157,...,836 --lines-per-crop 5
+  --max-width 2400`. E46 (9130), all seven lines, and E37 (9110) lines 1-5 ("Grapes Eugenia Nov Peach for Princess Be F. Man = erie /
+  Provost Mare shall Platina District Frog zebra Confidential zodiac You / had better imm'y with draw as a candid eight for / Congress
+  or re sign as Provost Mare shall Pekin I") agree word for word with ciphertext.txt. One doubt, not a correction: E46's last-line
+  first word, transcribed "youth", has a cut descender on the crop and could be "north"; it is a check/end word outside the plain text
+  and changes no reading.
+
+### 2. Entry LS-R3 located in print: page confirmed by script (a check, not a search)
+| ID | printed at | how confirmed |
+|---|---|---|
+| E44 | ORN ser. I vol. 11 **p.68** ([Telegram.] Washington, November 16, 1864, Fox to Porter) | IA `officialrecordso0011unse` djvu: "See if you have any shaky steamer that will carry 300 tons. It will save time. Otherwise I will get a blockade runner. We will go on with this. General Butler left this evening and will cooperate. G. V. Fox", before the p.69 running head; word for word with the decode |
+
+### 3. Entries LS-R3 did not locate: search families (8 Oct 2026)
+Phrases (decoded wording): "withdraw as a candidate for Congress or resign as provost marshal", "I advise the former"; "remittance was
+this day forwarded from Halifax", "Alex Keith Jr the rebel agent", "N. Ferris No. 10 North Market", "Gordon Bruce & Co", "Mitchell
+Kenner & Co Montreal"; "Detain the schooner Princess", "Detain the Princess and her cargo"; "ask him to cooperate with you"; "winds and
+waves control barges and sail vessels", "requisition for 100 saddle horses"; "City of Albany and Ranger left here today", "move cattle
+and horses up the Pamunkey"; "every available steamer and propeller"; "chief conspirator for the burning of New York", "send on a man
+to identify him". Run with `tools/print_check.py` (scratch target, `--only ia,ia-global,gbooks,openalex,crossref`), plus hand queries
+by name and by event (AUD2-LS-A's lesson: search the press for the event, not only the decoded wording).
+
+| family | searched | result |
+|---|---|---|
+| OR by date and correspondent, +/- 3 days (IA djvu, whole volume, regex on normalized text) | ser. I vols 33 (E42), 36 pt 3 (E43), 42 pt 3 (E45), 43 pt 2 (E45, E46); ser. II vols 7 and 8 (E38-E40, E46); ser. III vol. 4 (E37, E42) -- names Manierre, Keith, Ferris, Palfrey, Wakeman, Princess, Tassara, Evarts, Newport, Kennedy, Rucker, City of Albany, "chief conspirator", "superintendent of police", and every phrase | no hit for any E37-E43, E45, E46 telegram. Context only: I/36 pt 3 prints Biggs' answer of 30 May 1864 ("Tell General Rucker will return the City of Albany and Ranger soon as I can get hold of them", index p.367), which confirms the request in E43's last sentence but is not E43; I/43 pt 2 prints Butler's and Gordon's notes to John A. Kennedy, Superintendent of Police, New York, 7-11 Nov 1864 (E46's addressee and title); III/4 lists the steamer City of Albany p.916 (QMG report) |
+| ORN | ser. I vol. 11 | only E44 (above) |
+| Sender/recipient papers | Butler, Private and Official Correspondence vols 4-5 (E42, E43, Biggs was Butler's chief QM); William H. Seward autobiography/letters vol. 3 (E38-E41); Bates, Lincoln in the Telegraph Office (E38-E40, E44); Papers relating to Foreign Affairs 1864, 38th Cong. 2nd sess. (IA `papersrelatingto04unit`, E41); Headley, Confederate Operations in Canada and New York (1906, E46) -- all IA djvu | no hit for any telegram. Context: Bates prints the Dec 1863 Keith cipher letters intercepted by Wakeman "who had been instructed by the authorities to keep a sharp lookout for communications addressed to Keith" (the watch E38-E40 belong to, eight months later); Foreign Affairs 1864 prints the Arguelles correspondence (Tassara, Savage at Havana, F. W. Seward, April-May 1864), titles agreeing with E41's list -- the telegram's purpose is plausibly that affair, inferred, not checked |
+| Contested-election record (E37) | Dodge vs. Brooks, House Misc. Doc., 39th Cong. 1st sess. (IA `unitedstatescon739offigoog`, `11037420bsb`) | **outcome in print, telegram not**: Brooks's notice of contest prints "B. F. Manierre was the republican candidate for Congress in the eighth district. As provost marshal of that district he had great influence ... You or your friends induced Mr. Manierre to retire"; witnesses are asked about "Mr. Manierre's ceasing to be a candidate". No mention of Fry or of any War Department telegram (no "Fry" in either copy) |
+| 1864 press (loc.gov Chronicling America JSON, `www.loc.gov/collections/chronicling-america/?fo=json`, ALTO text via `tile.loc.gov`) | E37: "Manierre withdraw Congress" 1864 (7 pages); New-York Daily Tribune 1 Nov p.4, 3 Nov p.5, 4 Nov p.8 read in OCR; E38-E40: "schooner Princess" and "Keith Halifax letter remittance" Aug-Sept 1864; E46: "Old Capitol incendiary identify" Nov-Dec 1864; E41: Tassara Savage Havana Oct-Nov 1864 | E37: **New-York Daily Tribune, 4 Nov 1864, p.8, "Mr. Manierre Declines"** prints his withdrawal letter (New-York, Nov. 2, 1864, signed Benj. F. Manierre) recounting the negotiations with Dodge's committee and recommending support for "W. E. Dodge, the Union candidate for Congress"; it gives no War Department instruction (OCR scrambled across columns; read for Fry, provost, Washington, War Department: none). Other queries: section 3a |
+| Huntington full text (CONTENTdm p16003coll11, `CISOSEARCHALL`) | Manierre, Keith, Ferris, Tassara, Wakeman, Palfrey, Newport, Kennedy | Ferris, Palfrey: only 9045 (E38-E39's page); Tassara: only 9097 (E41's page); Manierre: 0. Keith also on 9042 (p.149: 11 Aug 1864 to Wakeman, the watch on Keith's mail ordered), 9816-9817 and 9819 (pp.150-153 of another volume: Stanton to Gilpin, Dana to Walborn, 10-11 Aug 1864, "Spare no means to catch Keith who purchased the locomotives"; a 13 Aug follow-up to Wakeman on the Gordon Bruce & Co remittance) -- sibling telegrams of the same affair, not plain copies of E38-E40 |
+| IA full text, all items (be-api fts) | every phrase; plus "Manierre" "candidate for Congress", "Alexander Keith" "rebel agent" Halifax, "schooner Princess" Halifax 1864, "chief conspirator" "Old Capitol", Tassara Savage Havana consul 1864; inside Larabee, The Dynamite Fiend (Keith's biography, `dynamitefiendchi0000lara`: Ferris, Princess, 1864) | no hit on any telegram; the Dodge vs. Brooks hit above; The Dynamite Fiend names Keith as the Confederate agent in Halifax in 1864, nothing on the August remittances (Ferris, Princess: 0) |
+| Google Books API (key, country=US) | every phrase (print_check, top 10 each); hand: Manierre provost marshal Congress Dodge 1864; "Manierre" Fry withdraw; Keith Halifax remittance Ferris Boston 1864; "Alexander Keith" Halifax locomotives Seward; Keith "Gordon, Bruce"; "Old Capitol" "Evening Post" incendiary 1864; Tassara Savage Minor Havana Seward Evarts 1864; Rucker Biggs "City of Albany" Ranger Benham | no hit on any telegram (phrase queries return loose matches on common words); only the OR I/36 pt 3 Biggs reply (E43 context) |
+| OpenAlex (key) | every phrase | no relevant hit |
+| CrossRef | first phrases | 2 answered, no relevant hit; then HTTP 429, stopped (unreachable for the rest) |
+| CORE (key) | "Alexander Keith" Halifax 1864 remittance; "Manierre" provost marshal 1864; "Tassara" Havana 1864 Seward; "schooner Princess" 1864; "Old Capitol" "burning of New York" 1864 | no relevant hit |
+| Semantic Scholar (key) | 3 event queries | 2 answered, no relevant hit; 1 HTTP 429 |
+| JSTOR | 8 rows appended to JSTOR-QUEUE.tsv (families i and ii: E37, E38-E40, E41, E42, E46), commit 7b8c2fa6 | pending (never blocks) |
+| Unread / unreachable | NARA RG 107 (M473 telegrams sent by the Secretary of War; Fry's Provost Marshal General letters sent, RG 110), RG 92 (Meigs, Rucker), RG 59 (State: Seward's domestic letters, M40), RG 60/21 (the Arguelles prosecution); Seward Papers (Rochester); Stanton Papers (LoC); New York Evening Post 28 Nov 1864 (E46's own reference); New York newspapers Aug 1864 page by page; HathiTrust full text | unread |
+
+### 3a. Press queries by date window (loc.gov Chronicling America, `dates=` filter; pages read in ALTO OCR via tile.loc.gov)
+| query, window | pages | result |
+|---|---|---|
+| "schooner Princess", 12-31 Aug 1864 | 0 | no hit |
+| Keith Halifax letter remittance, 12 Aug-15 Sept 1864 | 1 (Chicago Tribune 3 Sept p.1) | read: an advertisement of Keith, Faxon & Co, Chicago; unrelated |
+| Old Capitol incendiary identify, 28 Nov-15 Dec 1864 | 6; read Evening Star (Washington) 29 Nov p.2 and 1 Dec p.2, New York Herald 29 Nov p.4 | **E46's reference is in print, the telegram's fact is not**: the Evening Star of 29 Nov quotes "Last evening's N. Y. Post" (Monday 28 Nov): Superintendent Kennedy's detectives arrested a man holding the baggage of "the chief conspirator", who "is said to have left the city last night ... He is young and firm-looking and is believed to be a lieutenant in the rebel army" -- the description E46 names. The Herald of 29 Nov p.4 ("The phosphorus incendiaries in Washington") reports a suspect seen in Washington the week before. Neither, nor the Star of 1 Dec (Old Capitol committals: three of Mosby's men), says a suspect is held in the Old Capitol or that New York was asked to identify him |
+| Tassara Savage Havana, Oct-Nov 1864 | 0 | no hit |
+
+### 4. Classification (key `period` for all ten)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E37 Fry to Manierre (and to W. E. Dodge), 2 Nov 1864 | **N3** | unknown (the outcome, Manierre's withdrawal in Dodge's favour, is in print: Tribune 4 Nov 1864 p.8; Dodge vs. Brooks) | D3 | 95.7 (22/23 H; "Wreath" unread) | image crop checked here (lines 1-5); the printed withdrawal letter of the same day agrees with the decoded instruction's outcome |
+| E38 Seward to Palfrey, 12 Aug 1864 | **N3** | unknown | D3 | 100 (13/13 H) | re-derivation; Huntington 9042, 9816-9819 (sibling telegrams of 10-13 Aug on Keith's mail) and Bates (Wakeman's standing watch on Keith) agree with the decoded context |
+| E39 Seward to Wakeman, 12 Aug 1864 | **N3** | unknown | D3 | 100 (22/22 H) | as E38; the 13 Aug follow-up on 9819 names the same Gordon Bruce & Co remittance |
+| E40 Seward to Murray; Harrington to Barney, 13 Aug 1864 | **N3** | unknown | D3 | 92.3 (12/13 H; "nick" unread) | re-derivation; one flagged token "Seward[?]" in the signature |
+| E41 F. W. Seward to C. A. Seward, 15 Oct 1864 | **N3** | unknown | D3 | 100 (10/10 H) | re-derivation; Foreign Affairs 1864 confirms the titles (Savage vice consul general at Havana, Tassara Spanish minister) |
+| E42 Meigs to Biggs, 25 Apr 1864 | **N3** | unknown | D3 | 100 (28/28 H) | re-derivation; no external print check of a decoded value made here |
+| E43 Rucker to Biggs, 29 May 1864 | **N3** | unknown (the reply, OR I/36 pt 3, 30 May, prints only that the two boats will be returned) | D3 | 95.2 (19 H + 1 C of 21; "Waymorners" unread) | re-derivation; OR I/36 pt 3 Biggs's reply of 30 May names City of Albany and Ranger and Benham's boats, as decoded |
+| E44 Fox to Porter, 16 Nov 1864 | N1 | known (ORN I/11 p.68) | D4 | 100 (15/15 H) | word for word with the print |
+| E45 Rucker to Newport, 29 Nov 1864 | **N3** | unknown | D3 | 100 (11/11 H) | re-derivation; header time conflict (Fanny = 11 AM vs 10.45) as LS-R3 says |
+| E46 '? Govr' to John A. Kennedy, 30 Nov 1864 | **N3** | unknown (the Evening Post description it cites is reprinted in the Evening Star, 29 Nov 1864 p.2; the Old Capitol prisoner is not located) | D3 | 100 (9/9 H; the signature words "M wise well wily" unread, a name) | image crop checked here, all lines; OR I/43 pt 2 confirms Kennedy as Superintendent of Police, New York, Nov 1864 |
+
+- **N3 (E37-E43, E45, E46)**: no prior plaintext or decipherment located after the logged search. Not N4: the series where each
+  telegram would most likely be kept or printed (NARA RG 107/110/92/59, the Seward and Stanton papers, the 1864 New York press page by
+  page, HathiTrust full text) are unread, and JSTOR rows are pending. Safe sentence (each): "Read at grade H with the period Cipher
+  No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and
+  correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling
+  America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never
+  printed", "unknown telegram".
+- **E37 is the weakest N3**: its outcome is printed (Manierre withdrew on 2 Nov 1864 and backed Dodge; Brooks's 1865 contest says
+  Dodge's friends induced it). What is not located is the Provost Marshal General's instruction itself (withdraw or resign, "I advise
+  the former") and its copy to Dodge. A second audit should read the contested-election testimony and the Tribune/Herald of 2-5 Nov 1864
+  in full for a mention of Fry before this is counted; if the instruction is reported there, E37 drops to N2 (the E26 rule of AUD2-LS-A).
+- **E46 is the second weakest**: the description it cites (the chief conspirator, young, believed a rebel lieutenant) is printed in the
+  Evening Star of 29 Nov 1864 from the Evening Post of 28 Nov; that a man answering it was held in the Old Capitol on 30 Nov, and that
+  Kennedy was asked to send a man to identify him, is not located. A second audit should read the Washington and New York press of
+  30 Nov-10 Dec 1864 for the Old Capitol identification before this is counted.
+- **E44: N1** (independent re-decipherment of a printed text; the date word Gas = 16 agrees with the ORN, the ledger header's 15th
+  does not). Not counted.
+- Depth sentences (D2+ each, checked against the derived block):
+  E37 "The Provost Marshal General tells Capt. B. F. Manierre, provost marshal of the 8th District, New York, to withdraw at once as a
+  candidate for Congress or resign as provost marshal, advising the former, and sends the same text to W. E. Dodge." E38 "Seward tells
+  the Boston postmaster that a letter with a remittance from Alexander Keith Jr, the rebel agent at Halifax, is on its way to N. Ferris,
+  10 North Market Street, Boston, and must be seized and sent to the State Department." E39 "Seward tells the New York postmaster to
+  seize three remittances sent by Keith from Halifax -- to Ferris in Boston, to J. B. Hunter & Co and to Gordon Bruce & Co in New York,
+  the last for Mitchell Kenner & Co of Montreal -- and to report on the addressees' business." E40 "Seward orders the U.S. Marshal at
+  New York to detain the schooner Princess and her cargo, and the Acting Secretary of the Treasury orders the Collector to detain her
+  and examine her cargo with the marshal's help." E41 "Frederick Seward sends C. A. Seward in New York the names and posts of W. T.
+  Minor and Thomas Savage at Havana, William Hunter of the State Department and Tassara, the Spanish minister, and asks him to see
+  Mr Evarts and ask his cooperation." E42 "Meigs tells Biggs that winds and waves hold up the barges and sailing vessels, that 1,000
+  horses are being shipped, that his request for 100 saddle horses went to the Cavalry Bureau, and that he is to send for the mules."
+  E43 "Rucker asks Biggs whether the coal for the York and Pamunkey has been sent, as it is needed at White House at once, and asks for
+  the steamers City of Albany and Ranger back to move cattle and horses up the Pamunkey." E45 "Rucker tells Colonel Newport at
+  Baltimore to send every steamer and propeller he can spare to Washington at once and to give their names." E46 "Kennedy, New York's
+  police superintendent, is told that a man believed to be the chief conspirator of the attempt to burn New York, as described in
+  Monday's Evening Post, is in the Old Capitol Prison, and asked to send someone to identify him."
+
+### 5. Postmortem
+- No over-claim found in LS-R3's section or reading.md: every not-located entry is worded as "not located in" a named source; E44's
+  page and date were right. Understatements filled: LS-R3 did not search OR ser. II/III, the senders' papers, the press or the
+  Huntington full text; done here and they changed no class, but they put E37's outcome in print (section 4).
+- Rows: status.json one result row per N3 entry (E37, E38, E39, E40, E41, E42, E43, E45, E46); SECOND-OPINIONS-QUEUE.tsv rows
+  SO-ECKERT-E37 ... -E46 (not E44) with prompts in second-opinions/. Requests: listed in the ROOM done line.
