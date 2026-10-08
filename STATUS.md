@@ -6208,3 +6208,24 @@ Results:
 What is left: baluze167 AUDIT 1; fr16045 native re-cut when Gallica answers (~2); fr5160 image arbitration of 26 splits (Gallica); wvo-hessen
 reference-strip read (~1.5); brochado appendix data-fault gap (~3); manteuffel 694/05 and the 0501 orchestrator decision.
 Lesson: NEXT-STEPS.tsv lags the folders; read the folder's Verdict and latest dated section before briefing (2 of 17 jobs were already done).
+
+## LANE SIBS-READ handoff (session_01TaQvHhkhswV3RtachLkimC, account 1), 8 October 2026 (closed 10:4x UTC: premise failed on all six units, no worker spawned)
+Brief: .claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md, section SIBS-READ. Five_hour allowed throughout. Intake gate exit 0 on all
+six targets (fr3631-dinteville-1593: blocked, terminal). Cost: lane orchestrator only, about 1.5 (no worker; get_session shows no cost field).
+Premise check, disk only, before any spend (each also written to the row's `check` cell in SIBLINGS-2026-10-08.tsv):
+1. fr16104 ff.157-159v (5 Sept 1572): not unread. Its period decipherment is piece 51, ff.162r-163r (N5-VIV5S, 4 Oct), so a reading would be N0.
+2. lodewijk WVO 5810: printed in Groen IV CDLXVIII pp.320-324, already audited N0, D1 (AUDIT.md DEF1, 5 Oct).
+3. august WVO 53 p.2: already read (R11A-AVS53, 6 Oct) and counted N4, D3.
+4. dinteville 5/13 July 1592: none of the finding-aid snapshots for Français 3618/3619/3621/3623/3630/3631/3634 lists such a letter
+   (fr.3621 ends at no.117, 4 July). fr3631 no.27 has no Gallica copy (needs-image). New section in fr3621-dinteville-1592/NOTES.md.
+5. hellen R4376 → R1049: already done (N6-HEL76, 4 Oct; key_r4376/), fails on R1049.
+6. ceppo fr.4715 f.20: catalogued "avec déchiffrement", so it is glossed (N0 as a target). Use it only as a C-grade known answer.
+For the acct3 orchestrator: (a) the one unglossed same-key leaf this check found is fr.16104 piece 52, ff.164r-168r, 5 Sept 1572 to the
+Queen. It is full cipher, about 9 pages / 270 lines, no decipherment seen, not in Gachard (piece_table.tsv). Pieces 53/54 of the same
+week read under key.tsv. Cost is about 2 x 9 page passes + 9 reconciliations, roughly 25-30, and it needs a short premise step first:
+the leaves after f.169 and the d'Ars 1884 print, for a decipherment or a printed text. Not run here because it is not in this brief.
+(b) SIBLINGS-2026-10-08.tsv's `state` column is stale: 6 of the 7 rows this lane checked were already read, glossed, printed or not
+borne out. Run a disk-only premise pass over its other ~40 unread/not-in-repo rows (latest dated NOTES section, AUDIT.md, piece and
+finding-aid tables) before the next sibling round, about 2-3.
+Lesson: a compiled sibling list is a lead list, not a premise; its "unread" came from older NOTES lines. Read each folder's latest dated
+section and AUDIT.md before briefing (the same lesson as the DEFAULT-account-4 close, 2 of 17 stale there).

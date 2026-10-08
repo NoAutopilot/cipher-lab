@@ -980,3 +980,11 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - fr.4718 fols 17, 21, 40 (three Dinteville cipher letters with decipherment, Jul-Aug 1592) [same-sender; not-in-repo] -- none: BnF reproduction batch (ASKS 78); p 0.02; evidence: fr3621-dinteville NOTES.md:959 (waiting-on ASKS 78, no Gallica copy)
 - fr.3621 f.128r (3 July 1592 sibling in same volume, aligned to 1882 print) [same-volume; read] -- none: already used for key; p 0.02; evidence: fr3621-dinteville NOTES.md:955,963 (0.831 vs shuffle max 0.358)
 - fr3622-nevers-gondi-1594, fr3620-henri4-nevers-1592 (found-solved), fr3625-lauriere-1593 (found-solved) [same-series; read] -- none: fr3620/3625 already solved; fr3622 open different key; p 0.02; evidence: folders.tsv
+
+## SIBS-READ premise check (8 Oct 2026, 10:4x UTC by date -u, account 1, LANE SIBS-READ): the 5/13 July 1592 lead
+Disk only, no network. The BnF finding-aid snapshots of 7 Oct 2026 (sources/bnf-findingaids/2026-10-07/) were parsed item by item for
+Dinteville letters of July 1592: Français 3618, 3619, 3621 (cc50071b; its list ends at no.117, 4 July 1592), 3623 (cc50073t), 3630,
+3631 and 3634. Found: fr.3621 nos.113 (1 July), 114 (1 July, "avec chiffre et déchiffrement"), 116 (4 July, "Lettre chiffrée", this
+folder's f.130); fr.3634 no.84 (4 July, not flagged chiffre). Not found: any Dinteville letter dated 5 or 13 July 1592 in these
+volumes. The WebSearch lead (line 116 above) stays unconfirmed by any catalogue; nothing to read. fr3631 no.27 (14 June 1593) still has
+no Gallica copy (cc50081j, "Réserver" only), so that folder stays blocked on the image.
