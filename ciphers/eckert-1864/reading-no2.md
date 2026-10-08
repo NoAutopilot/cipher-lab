@@ -849,5 +849,17 @@ Code-word tokens: H 10.
 
 Code-word tokens: H 10.
 
-Totals over the 71 entries: H 1787, C 70, I 59, M 2.
+**N2-BT | Page 132 | 9024 | 30 July 1864, S H Beckwith (no time in clear; cipher time word 7 AM), Couch to Halleck, copy for Grant (LS4-R2a, 8 Oct 2026; image-read)**
+
+Carlisle [Pennsylvania] {time: 7 AM} [30] for [Maj Genl H W Halleck] stop The [Rebel]'s hin terd Shame burr splurge at about {time: 3 AM} this [Day] stop [Averill W W] was at Green Castle  {tail: [signed] [Couch D N] copy for [Grant U S]}
+
+Code-word tokens: H 11.
+
+**N2-BU | Page 165 | 9057 | 29 Aug 1864, S H Beckwith, City Point (cipher: information of Grant, sent to Sherman) (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees)**
+
+Following rumors are given for [Information] [Grant U S] & [Has been sent] to [Maj Gen W T Sherman] [.] [Rebel]'s in [Valley] [Report] Hood [Killed] & [Longstreet] in [Command (-ed, -ing)] at [Atlanta] [.] The mily Agt at Gallipolis [Telegraph (-ed, -ing)]'s Gov Bruff this morning that [Breckenridge] with [8000] [Men] has [Advance (-ed, -ing) [#]]ed into [Kanawha] [Valley] [By the way of] Lewisburg
+
+Code-word tokens: H 21, I 1.
+
+Totals over the 73 entries: H 1819, C 70, I 60, M 2.
 <!-- decode.py: derived block ends -->
