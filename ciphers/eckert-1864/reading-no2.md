@@ -975,5 +975,17 @@ Beckwith Ft. Monroe Wash Oct 8. 1864 [Saturday] for [Lieut Gen U.S. Grant] ---- 
 
 Code-word tokens: H 24.
 
-Totals over the 92 entries: H 2212, C 81, I 76, M 2.
+**N2-DA | Page 128 | 9020 | 28 July 1864 9 AM (cipher time word), S. H. Beckwith (LS5-R1c; row 9020/1; image-read; first tried against No. 1, read as No. 2)**
+
+[Washington] {time: 9 AM} [July] [20] Fishn For [Maj Genl U S Grant] Will meet you at [Monroe] at {time: 8 PM} [Saturday] the [30] unless you shall notify me that it will be in convenient to you  {tail: [signed] [President of U.S.] thanks for corrections}
+
+Code-word tokens: H 11.
+
+**N2-DB | Page 198 | 9090 | 10 Oct 1864 10.50 AM, Beckwith at City Point (LS5-R1c; row 9090/1; image-read; first tried against No. 1, read as No. 2)**
+
+Beckwith City Pt Wash DC Oct 10. 64 [Monday] {time: 11 AM} [Lieut Gen U.S. Grant] ---- [Charleston] dispatches are for Electioneering purposes being published in [New York] & [Philadelphia] papers representing a great disaster & refuse of [30] Bright [Men] in your [Army] [Friday] --- Please favor me with a [Report] that I can publish [Of the] true condition of things immedy [Secretary of War]
+
+Code-word tokens: H 13.
+
+Totals over the 94 entries: H 2236, C 81, I 76, M 2.
 <!-- decode.py: derived block ends -->

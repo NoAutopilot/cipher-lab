@@ -809,5 +809,41 @@ Code-word tokens: H 26.
 
 Code-word tokens: H 21, C 1.
 
-Totals over the 113 entries: H 1734, C 17, I 0, M 0.
+**E103 | Page 237 | 9129 | 28 Nov 1864 10.30 AM, J. C. Van Duzer (LS5-R1c, 8 Oct 2026; row 9129/1; image-read)**
+
+[Washington] {time: 10.30 AM} [28] For [Brigadier General]  {tail: [signed] Orders have been given to transfer to [Baltimore] all mail matter in [10] dead for [Maj Gen W. T. Sherman] [Army] [signed] [C. A. Dana] crazy}
+
+Code-word tokens: H 12.
+
+**E104 | Page 15 | 8907 | 4 Mar 1864, operator Caldwell (HQ Army of the Potomac), for Humphreys (LS5-R1c; row 8907/1; image-read)**
+
+HdQrs AP for Hum phrey Dispatch in relation to wolves recd Send wolves down to [Fredericksburg] & below to ascertain if the [Enemy] have any [Force] this side of the [Rappahannock] or on the northern neck Sig [Maj Genl G. G. Meade]
+
+Code-word tokens: H 5.
+
+**E105 | Page 180 | 9072 | 12 Sept 1864, operator Carey at Lexington (LS5-R1c; row 9072/0; image-read)**
+
+{time: 11 AM} [12] for Kent Your proposed [Movement] should be made as Early as possible while [Breckenridge]'s [Corps] is occupied by [P. H. Sheriden] [Near] [Winchester]  {tail: [signed] [General-in-Chief] have additions arrived}
+
+Code-word tokens: H 10.
+
+**E106 | Page 77 | 8969 | 22 May 1864 10.30 PM, R. R. McCaine, entry struck through and marked 'Not sent' (LS5-R1c; row 8969/3; image-read)**
+
+{time: 10.30 PM} Narrow [2] to [Maj. Gen. David Hunter] [Grenada] Creek [Open (-ed, -ing)] your mangle to [Adjt Genl. U.S.] asking for [2] [Brigade] just received Please understand that no [Reinforcements] can be sent to your [Department] without the special orders of [Maj Genl U.S. Grant] & that all your operations are to be based on the [Troops] you now have [.] all available [Troops] have been ordered elsewhere by [Maj Genl U.S. Grant] [.] none can go to you  {tail: [signed] [General-in-Chief] how you like [Maj. Gen. David Hunter]}
+
+Code-word tokens: H 17, C 2.
+
+**E107 | Page 90 | 8982 | 11 June 1864, Sam Bruch at Louisville (LS5-R1c; row 8982/2; image-read)**
+
+Sam Bruch Louisville {time: 3 PM} [11] for [Brigadier General] Burr [Enemy] [.] In addition to the [Indiana] [Troops] ordered to [Louisville] under your [Command = Er (-ed, -ing)] you are authorized to divest and put on duty in [Kentucky] any such [100] day [Men] as may be enroute to [Tennessee] [Report]ing your action to Adjt [General] [Of the] [Army] to [Maj Gen W. T. Sherman] & polking officer at [Nashville]  {tail: [signed] [General-in-Chief] send copy to [Command = Er (-ed, -ing)] officer [Nashville] & [Louisville] cant you catch that jail bird}
+
+Code-word tokens: H 24.
+
+**E108 | Page 104 | 8996 | 6 July 1864, R. R. McCaine at Parkersburg (LS5-R1c; row 8996/0; image-read)**
+
+{time: 2.30 PM} [6] for [Maj. Gen. David Hunter] [.] Orphan [Report]'s that the [Enemy] has been [Cross (-ed, -ing)]ing at Antietam [Ford (-ed, -ing)] and Shepards town for [40] hours in large [Force] [.] It is important that your [Troops] be brought forward as rap idly as possible  {tail: [signed] [General-in-Chief]}
+
+Code-word tokens: H 13, C 1.
+
+Totals over the 119 entries: H 1815, C 20, I 0, M 0.
 <!-- decode.py: derived block ends -->
