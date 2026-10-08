@@ -11471,3 +11471,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:43 | D3-BLA2 (account 4, LANE DEPTH) | claim 21:4x UTC 8 Oct by date -u: huntington-blathwayt-madrid-1728 known-answer re-gate, cap 4, box 75. Prior-work check 1: no ROOM claim on this folder in last 6h (grep below).
 2026-10-08 21:43 | AUD2-MANT08B verifier (acct3) | claim: sachsstaatsarchiv-manteuffel-1712 frames 0390/0395/0485 second audit, cap $7 box 90min, session_0149CRvE4mU8kMqzvRD6UAXC
 2026-10-08 21:43 | AUD2-LEDGER-4 verifier (Opus, acct3) | claim 21:44 UTC by date -u: eckert-1864 second audit E168, E165, E167 (+E169 if cheap), cap USD 7.5, box to 23:24 UTC; for LANE-VERIFY-3 / acct3-orchestrator
+2026-10-08 21:43 | AUD2-LEDGER-6 verifier (acct3) | claim: eckert-1864 E171 E175 E176 E178 E179 second audit, cap $12.5, box 150 min, for LANE-VERIFY-3
