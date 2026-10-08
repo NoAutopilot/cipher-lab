@@ -651,7 +651,7 @@ Read so far: 17 Sept 1586 f.244r, f.244v, f.245r; 4 Nov 1586 f.275r and f.275v l
 - 17 Sept 1586 second letter f.246r-f.247r (about 60 lines) vs Colbert pp.52-55 and the f.248r-v period decipherment - blocker: not-attempted; outside this brief; next: transcribe f.248r-v (faint, native region) and Colbert c445-c446, crops of c504-c506, per-line two-reader pipeline as kp87a, pre-registered, ~$45 for 60 lines
 - 4 Nov 1586 f.275v block B lines 12-15 (L17-L20, transcribed RUN6-PIS, tx86h; third reader tx86i, D2-PIS275): kp86h, kp86i and kp86j all FAIL (arm A 0.497/0.497/0.500 vs order p99 0.519/0.524/0.531, err 0.19/0.22/0.26), lines M - blocker: not-attempted; [retired] kp86d nw_score known-answer test for these lines (rule 3 third attempt, D2-PIS275); next: read the interlinear later-hand gloss above L17-L20 at native resolution, align it sign by sign to tx86i/local_ciphertext.tsv (C where gloss, key86 and copy agree), ~$2
 - 4 Nov 1586 f.276r-f.279r (about 76 lines on rectos plus 4 dense versos) vs Colbert pp.122-~136 - blocker: not-attempted; outside this brief; next: same per-line pipeline page by page, ~$12 per dense page
-- f.275v period decipherment (head of page and left margin, second hand, beside both cipher blocks) as a second witness - blocker: not-attempted; outside this brief; next: read the gloss at native resolution, normalise to one convention with the copy (rule 3 PX-BRODEC), score agreement, ~$2
+- f.275v period decipherment (head of page and left margin, second hand) as a second witness: D1A-PISG + D1A-PISG2 (8 Oct 2026) two blind readers, G1 witness PASS both (0.551, 0.691 vs null p99 0.389/0.459), G2 0.80 FAIL both; copy-informed reconciliation 0.945 (descriptive) - blocker: not-attempted; [retired] blind single-call reader for G2 (rule 3, second failure); next: a different instrument -- a blind reader one line per call at native resolution settling head L04's end (copy 'si cachee' vs 'tres secrete'), or a person's read of crop f275vGH_L04_s2, ~$2
 - 9 Sept 1586 f.228v-f.234r (about 78 lines, ten pages) vs Colbert pp.13-34 - blocker: not-attempted; outside this brief; next: read the margin glosses (f.228v, f.231v, f.233v) at native resolution, then per-line pipeline, ~$55
 - key86 T31 label and T45/T47/T49/T57 remap - blocker: not-attempted; running in PIS1-KEY (same wave); kp87b adds a fourth page where arm B beats A (HYPOTHESES.md "kp87b witness"); next: PIS1-KEY's report, ~$0
 - Versos not viewed (July-Aug 1585 St-Goard letters, Feb/July 1586, 22 Sept, 6-7 Oct 1586, letters to Villeroy) - blocker: not-attempted; outside this brief; next: about 40 more 360 px fills with the fill loop in images/manifest_pis1inv.tsv's URL pattern, ~$1
@@ -1012,6 +1012,32 @@ Report: found -- the f.275v head/margin gloss is a period decipherment of the Co
 at the 0.80 level from one blind read; any sign-level value for T40.
 Requests: Gallica 3 (1 x 1000 px view, 2 native regions). Subagent calls: 1 Sonnet.
 
+## D1A-PISG2 (8 Oct 2026)
+Brief: .claude/briefs/runs/2026-10-08-account1-default-0540-jobs.md "D1A-PISG2" (LANE DEFAULT-account-1-20261008-0540, account 1), 06:30-06:4x UTC by date -u.
+Step still undone (D1A-PISG's "second blind reader"). Same PREREG-D1A-PISG.md, gates, normalisation and nulls unchanged; same 21 crops (images/f275vGH_*, f275vGA_*, f275vGBS_*), no new requests.
+- Reader B: 1 blind Opus subagent call over the 21 crops (no copy, key or decode); reply verbatim pisg/reader_B.txt (self-rated low to moderate).
+- Reconciliation: the worker's own read of the 21 crops against reader A and reader B, with the Colbert copy in view: pisg/gloss_reconciled.txt.
+  Descriptive only, never gated (PREREG). pisg/pisg.py gained `--reader FILE --out FILE` (default unchanged; `python3 pisg/pisg.py --check` still "up to date").
+- Scores (`python3 pisg/pisg.py --reader reader_B.txt --out pisg_result_B.json`, `--reader gloss_reconciled.txt --out pisg_result_R.json`):
+
+  | read | letters | identity | head / mA / mB | N1 p99 | N2 p99 | G1 | G2 >= 0.80 |
+  |---|---|---|---|---|---|---|---|
+  | A blind Sonnet (D1A-PISG) | 617 | 0.551 | 0.463 / 0.553 / 0.586 | 0.389 | 0.389 | PASS | FAIL |
+  | B blind Opus | 638 | 0.691 | 0.627 / 0.659 / 0.718 | 0.459 | 0.422 | PASS | FAIL |
+  | reconciled (copy seen; descriptive) | 724 | 0.945 | 0.948 / 0.941 / 0.944 | 0.467 | 0.428 | not gated | not gated |
+
+- Reading: both blind readers independently witness the Colbert 4 Nov 1586 text (G1 PASS twice). The registered blind agreement gate G2 fails on the second
+  reader too (0.691), so by rule 3's third-attempt clause the blind single-call reader is the limit: G2 is **untestable by this instrument (one blind
+  vision call over 21 line/strip crops) at this length**, not refuted. The copy-informed reconciliation reaches 0.945 with the remaining gap mostly [?]
+  marks, so nothing in the reconciled text points to a gloss-vs-copy wording difference; that observation is descriptive (the reconciler saw the copy).
+  Both blind readers' worst errors are mis-segmentations a copy-free reader cannot repair ("aller a la guerre" for "a laquelle elle",
+  "dominique/dimmenche" for "communiquer", "Crisy/Cristy" for "lettres", "Cath/olique et apostolique" for "ladite royne en particuliere").
+- Head L04 end ("tenir si cachee" in the copy vs D1A-PISG's descriptive "tres secrete"): not settled; pale on f275vGH_L04_s2, read [?] here. M.
+- T40: running-text gloss, no sign-level value (as D1A-PISG). key86.tsv, transcriptions, readings and grades unchanged.
+Report: found -- a second independent blind read also witnesses the Colbert text (0.691 vs p99 0.459); the reconciled gloss agrees with the copy at 0.945
+(descriptive). Not found -- blind agreement >= 0.80 (G2 FAIL, both readers); a resolved wording difference at head L04; any T40 value.
+Requests: none (crops on disk). Subagent calls: 1 Opus.
+
 ## Remaining gaps (RUN6-PIS, 5 Oct 2026; merges PIS1-KEY2's list; RUN6-PISFIN updates the f.275v B 12-15 row)
 Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.245r and (second letter) f.247r (kp86g, err 0.268, C 236 / M 122); 4 Nov 1586 f.275r and f.275v lines 1-16; 24 Mar 1587 f.301v and f.302v: 8 pages known-answer PASS with Tomokiyo's 1586-87 table against the Colbert copy; f.75 (1585) NON-TEST.
 - key86 T40 cell (table a; f.302v tokens align to s 5 of 7; all 68 T40 tokens of the seven pages align s 16 / r 10 / a 8 / GAP 18, D1A-PIS) - blocker: not-attempted; [retired] blind-Sonnet crop compare (D07-PIST40 control 1/5, D07-PISSD 5/7) and [retired] per-token alignment witness (D1A-PIS variants A and B, power control 0/50: a pure cell reads only ~0.43 at this reader error); next: a person's sort of the T40 tokens against T17/T46 in the sign sorter (tools/sign_sorter.py, per TRANSCRIPTION.md), or lower reader error on the seven pages first, ~$1
@@ -1037,7 +1063,7 @@ Read so far: (RUN6-PIS adds f.275v L17-L20 as M) 17 Sept 1586 f.244r, f.244v, f.
 - [ ] key-rebuild: T31 relabel SUPPORTED in aggregate; per-token compare 9 of 23 settled (R9-PIS2); 9-token re-score SUPPORTED on both pages (D4-PISRS; f.275r control 5/5 and null R12A-PISRS), 4 f.275r labels committed (R12A-PISRS); T45/T47/T49/T57 remap joint gate FAIL (retired, pis1key.py remap); T40 table-cell compare a non-test (D07-PIST40, control 1/5) and page-internal same/different a non-test (D07-PISSD, control 5/7): blind crop-compare retired for T40, reopens with a higher-resolution key witness; T40 per-token alignment witness a non-test (D1A-PIS, power control 0/50), retired for T40
 - [x] image-check: f.247r cut one line per band, three bands re-cut fixed-y, montage checked
 - [ ] retry: f.246r/f.246v (crop commands above); f.275v B 12-15 (kp86d retired; gloss read R8-PIS, 13 C; gl275 conflict compares R9-PIS, none settled); f.276-279, f.228-234; 1585 letters after the key grows; Brienne for June 1588
-Verdict: keep going: 14 internal gaps; cheapest next: f.275v gloss second blind reader + reconciliation, ~$3 (D1A-PISG, 8 Oct 2026: one blind read, witness G1 PASS 0.551 vs p99 0.389, G2 0.80 FAIL; the T40 alignment witness ran as D1A-PIS: non-test, power control 0/50); most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
+Verdict: keep going: 14 internal gaps; cheapest next: f.275v head L04 wording one-line blind read, ~$2 (D1A-PISG2, 8 Oct 2026: second blind reader G1 PASS 0.691, G2 FAIL, blind single-call reader retired for G2; reconciliation 0.945 descriptive); most valuable next: 17 Sept 1586 f.246r + f.246v (the rest of the letter, ~50 lines, two witnesses), ~$36
 
 ## AM-LOOK (7 Oct 2026)
 

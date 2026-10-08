@@ -144,4 +144,7 @@ R12A-PISRS (6 Oct 2026; pisrs/PREREG_t36commit.md): the 4 f.275r labels committe
 |---|---|---|---|---|---|---|
 | G1 witness | pooled semi-global identity, 617 gloss letters (1 blind Sonnet read) vs 1207 copy letters | 0.551 | 0.389 | 0.389 | > both p99 | PASS |
 | G2 agreement | same | 0.551 | -- | -- | >= 0.80 | FAIL (one low-confidence reader; reader error and wording difference not separable) |
+| G1 witness, reader B (D1A-PISG2) | same, 638 letters, 1 blind Opus read (pisg/pisg_result_B.json) | 0.691 | 0.459 | 0.422 | > both p99 | PASS |
+| G2 agreement, reader B (D1A-PISG2) | same | 0.691 | -- | -- | >= 0.80 | FAIL -- second failure: untestable by this instrument (blind single-call reader) at this length, not refuted |
+| reconciled (D1A-PISG2, copy seen) | same, 724 letters (pisg/pisg_result_R.json) | 0.945 | 0.467 | 0.428 | descriptive, not gated | -- |
 No key86 change (running-text gloss, no sign-level value; T40 not covered).
