@@ -124,3 +124,43 @@ sweep scripts (passes/inv373_sweep_r13/), service.archief.nl IIIF, one at a time
 (grep each scan number in the folder and ROOM). Stop rule: list every scan carrying cipher, glossed or not, with a one-line description;
 for each glossed find say which held-out class test in the Remaining gaps it could feed; for each unglossed find say whether the period
 key (inv. 86) could read it. No reading. Update NOTES.md, Remaining gaps / Escalation, gaps_check.
+
+## Wave 3 (17:2x UTC 8 Oct)
+Wave 2 ledgered (11.82). FAM-MANTV: Manteuffel 694/09 0015-16 N2 D1 (its news in print in Colyer to Heinsius, Briefwisseling XIV), so the
+694/08 frame reader is deferred (low value per dollar; next incarnation's call). Intake gate 17:19 UTC (each exit 0):
+`wvo-11106-bergh-1572: open (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`riksarkivet-r4282-1628: open (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`decode-4333-rusdorff-oxenstierna-1628: blocked (line 1) -- already terminal, nothing to gate` (the login job below is the premise leaf
+check its check-solved named, not deep work); `na-suriname-map-1781: partial (line 1) -- ...` (exit 0).
+
+### FAM-11106T (Opus, cap 11, box 150 min): wvo-11106-bergh-1572, transcription of page 2 + design prior + first family test
+Read `TRANSCRIPTION.md` first. Page 2 image from images/11106.pdf (extract at native 300 ppi once, add to manifest). Prior-work: checks 1-4
+are in the folder's check-solved/Premise sections (FAM-CS11106, 8 Oct): re-run check 1 only and paste. Units (~1.5 each): crop with
+`tools/iiif_lines.py --image <p2> --out images/crops ...` (paste the command and the debug overlay check), two halves of ~12 lines; per half
+2 blind Sonnet passes (crop paths only, a shared provisional sign list drawn by you from the crops first, no meanings) + `tools/reconcile_passes.py`
++ your reconciliation from the native crops = 6 units ~9. If the passes split on more than a tenth of signs or the inventory is unsettled,
+run `tools/lookalike_pass.py` once, then write the residue to a focus.tsv for the owner's sign sorter and stop transcribing (no third pass).
+Output ciphertext.txt / ciphertext.tsv (per sign conf), sign inventory with counts. Then `python3 tools/design_prior.py` on it (paste), and
+only if a family is above null and under 80% of cap: `tools/family_run.py` for the top family with its matched control (French 16th c.,
+tools/data fr16; N and K from the transcription) -- control first, target only if the control passes its gate. Note the editorial year
+(1572 vs 1574/76/77): no historical crib is used. Report what was found and where it was not found; do not classify novelty.
+
+### FAM-4333L (Opus, cap 4, box 60 min): decode-4333-rusdorff-oxenstierna-1628 + riksarkivet-r4282-1628, one DECODE login
+ONE real-browser login for the whole job (`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js ...`, with `--guess-fullsize`, the
+A2-HDK route; CLAUDE.md DECODE row; scrub the account name from anything saved; never print credentials). In that session fetch, 2 s apart:
+full-size images of R4333-R4337 (15 pages) and of DECODE key records R4104 and R4120, with images/manifest.json in each folder (R4104/R4120
+images go to ciphers/riksarkivet-r4282-1628/keys_decode/). If full-size is refused, take the largest served size and say so. Then, disk only:
+(1) Premise leaf check for R4333-37 (check-solved's (c)): any gloss, decipherment, clear copy or key on any of the 15 pages, one Sonnet call
+per page at reduced size; (2) R4104/R4120: describe each table (layout, value range, symbol types) and compare it with riksarkivet-r4282's
+expectation (NOTES.md ~line 1383: a 3-row 8-block letter table, 2-digit values 12-91) and with R4333's numeric groups (760 761 3230 853 953);
+say plainly whether either is a candidate key for either target -- no key test in this job (name it as the next step with its control);
+(3) one LOCAL-QUEUE.tsv row for the owner's runner: Google Books page view of Rusdorff, *Mémoires et négociations secrètes* (Cuhn 1789)
+vol. II p.668 and a search inside for "Oxenstiern" 1628 (format per tools/local_runner_brief.md; run `tools/key_livecheck.py` first and
+quote its Google Books line). Update both NOTES.md files (status stays as rule 5 allows).
+
+### FAM-SUR729 (Opus, cap 3, box 60 min): na-suriname-map-1781, inv. 373 scan 0729 glossed row labels as a PREREG crib
+FAM-SUR373's named ~$2 step (NOTES.md tail, Verdict): 0729 (glossed gun Staat, rows Nieuw Amsterdam / Zelandia / Leyden / Purmerent) row
+labels as a pre-registered crib for the 2046/2077 map cartouches. Write PREREG-FAM-SUR729.md (what counts as a hit, the control: same crib
+placed against shuffled/other cartouches or a permuted key, chosen so it CAN differ from the target on the statistic) and push it before
+scoring. Fetch 0729 at native size once (service.archief.nl, <= 5 requests). Grade C only for values the gloss fixes; anything else M.
+Update Remaining gaps / Escalation; a reading change after AUDIT.md -> say so and flag for a verifier in ROOM.
