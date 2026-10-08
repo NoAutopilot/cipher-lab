@@ -8424,6 +8424,49 @@
       },
       "depth_check": "V-MANTR8: cipher clause fails (10 letters vs AD ~127-138); no recurring code",
       "decode_status": "Non-decrypted"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/baluze167-davaux-1637",
+      "key": "published",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT 1 f.228 (SIG-V228)'"
+      ],
+      "audit_status": "one audit",
+      "depth": "D2",
+      "depth_pct": 36.0,
+      "depth_unread": {
+        "names_codes": "2",
+        "other": "1"
+      },
+      "depth_by": "SIG-V228 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Baluze 170 f.228r-v: Chavigny to d'Avaux, Amiens, 25 Aug 1640, cipher passages on the Landgravine of Hesse-Kassel, the dukes of Lüneburg and the enemy",
+      "grade": "N3",
+      "line": "Read with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens H, letter signs M); apart from the four words Tomokiyo quotes ('sont mal satisfaits de'), no prior decipherment or printed text located in Avenel VI-VIII, Rommel's Geschichte von Hessen VIII, Charveriat II, the Guebriant histories, Boppe 1887, Internet Archive full text, OpenAlex or CrossRef (searched 8 Oct 2026, one audit).",
+      "gap": "AAE Correspondance politique and Chavigny's registers unread; Google Books unreachable (429) this audit; JSTOR rows queued; one audit (SIG-V228); second audit AUD2-SIG-228 queued; SO-BAL170-F228 queued; 15 mark-read regrades returned to I, not yet applied in the decode files",
+      "phrases": [
+        "quelque crainte que la langrave et les ducs de Lunebourg",
+        "le traitte qu'elle a fait depuis peu avec le Roy"
+      ],
+      "document_id": "BnF Baluze 170 ff.228r-v (letter ff.228r-230r)",
+      "documents": [
+        "BnF Baluze 170 ff.228r-v (Gallica btv1b90015040, canvases 239-240)"
+      ],
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "154 cipher tokens: H 56, M 70, I 27, U 1 (verifier-corrected from the solver's H 71 / I 12)",
+      "unresolved_spans": "f.228r a_L02 '73' unmarked (name unread; Tomokiyo '*'), b_L02 wave sign; f.228v b_L02 '13' (verb before 'avec les ennemis')",
+      "reading_version": "SIG-B228B 8 Oct 2026 (reading_b170f228.txt), grades corrected by SIG-V228",
+      "fields_source": "baluze167-davaux-1637/AUDIT.md '## AUDIT 1 f.228 (SIG-V228)' sections 5-6",
+      "depth_sentence": "In cipher Chavigny reports a fear that the Landgravine and the dukes of Lüneburg would [verb unread] with the enemy, so that he and [73=] would each be forced to withdraw to his own side; of the Landgravine he can hardly believe it, given the treaty she has recently made with the King, but he does not say the same of the dukes of Lüneburg.",
+      "depth_check": "cipher clause not met (longest H stretch ~11 letters); code clause: 10: les ('avec les ennemis', 'les ducs de Lunebourg') and 9: luy ('avec luy', 'luy et Bavier') read sensibly; fr17 PASS by 0.010 (SIG-B228B), not independent of the letter-sign labels; no rule-7 fresh re-derivation yet",
+      "depth_note": "letter signs matched to f.229 exemplars by blind reads with decoy gates at their minimum; 15 Sonnet mark regrades demoted to I by the verifier; held at D2",
+      "key_note": "Tomokiyo's table (published, credited) plus our letter-sign shape values from f.229 exemplars",
+      "superseded_by": ""
     }
   ],
   "lanes": [

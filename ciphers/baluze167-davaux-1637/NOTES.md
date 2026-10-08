@@ -1205,3 +1205,11 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 - [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167); 170 f.228 numeral marks re-read blind on line strips (SIG-B228) and tight crops (SIG-B228B: gate FAIL, the two scales reverse each other, so no further machine mark pass)
 - [x] retry: 170 f.228r re-cut and re-passed (D1-BAL170, D1-BAL170B), decoded (B167-228), re-decoded with external shape values and marks (SIG-B228) and the u4/4u signs (SIG-B228B)
 Verdict: keep going: 3 internal gaps; cheapest next: a separate verifier on the f.228 reading (the lane's next step), then the f.247-hand glossed-text search (~$3)
+
+## SIG-V228 verifier pointer (8 Oct 2026, account 1, for LANE SIG-1)
+First audit of the f.228r-v passage: AUDIT.md "## AUDIT 1 f.228 (SIG-V228)" (N3 with Tomokiyo's four-word fragment as N1; D2, about 36%).
+Grade correction for the next solver step (not applied here, no decoding in the verifier's brief): the 15 numerals SIG-B228 regraded H from
+`b167228/sig_marks.tsv` return to I (the mark gate's control tested present marks only; SIG-B228B found the reader names marks on
+"none" controls; the verifier's eye sees no mark on f.228r a_L02 16 and 73 or on c_L01 86). Corrected counts H 56, M 70, I 27, U 1.
+The f.228r "de Bavier" is therefore unread (unmarked 73; Tomokiyo "*"), and the f.228v fear clause's verb is unread ("come to terms" is
+an inference). Next: set to_pipe.py to grade sig_marks tokens I, re-run decode_key --check; second audit AUD2-SIG-228 queued (WORK-QUEUE).
