@@ -788,3 +788,118 @@ over-claiming sentence found in NOTES.md or status.json lines (all use "fragment
 the press of Oct-Nov 1712 (Google Books, once its quota resets) and Sbornik RIO; the four V-MANT08 transcription fixes. Requests this
 session: archive.org 14 (metadata/djvu/advancedsearch), be-api.us.archive.org 9, resources.huygens.knaw.nl 8, github.com 1 (clone),
 www.googleapis.com 2 (429, stopped) plus prior_work.py's own --network calls; no 403 or challenge.
+
+## AUDIT 2 (AUD2-MANT0391)
+
+Verifier AUD2-MANT0391 (account 3, LANE VERIFY-3, session_017eR38q5E5bjn5bSwJrFGFg), 8 Oct 2026, 21:42-22:1x UTC by `date -u`.
+Brief: .claude/briefs/runs/2026-10-08-acct3-verify3-jobs.md "AUD2-MANT0391". Account 3 never read nor first-audited this item (reader
+MANT-08 and first auditor V-MANT08 are account 2). Item: **B 0391**, SHStA Dresden 10026 Loc. 694/08 URL file 0391 = f.313, P.S.
+"Berl. ce 13 Oct. 1712", Manteuffel to Flemming. Nothing decoded; key.tsv, ciphertext.tsv and the readings untouched. Duplicate diff:
+pointer, date and addressee differ from every other filed item of this target; no duplicate. Frames 0390/0395/0485 are AUD2-MANT08B's.
+
+**1. Re-derivation and gate.** `decode_key.py f0390_08 --check` exit 0 (89 tokens C 54 M 35) as AUD2-MANT08B ran it at origin/main;
+V-MANT08's fixes are still not applied. Per-unit gate (gate.out): **frame_0391 clears on its own letters**, 28 letters, real -1.298 vs
+1000 shuffled keys p99 -1.487, 0/1000 -- unlike 0390 (307/1000) and 0485 (16/1000), so B does not lean on the pooled gate.
+
+**2. Image check (native frame 0391, 1 request to www.archiv.sachsen.de, HTTP 200 image/jpeg 4339x3865; my own crops and 3x zooms of the
+right page, no subagent).** V-MANT08's corrections:
+- **r4 tok5 = 39, confirmed**: the glyph is the folder's y-form 9 with a long descender, unlike the closed 4s of "44" just before it.
+  "Bullinbroug" reads as written.
+- **r5 tok1 = 160 by shape, confirmed** (tall-bowled 6 in second place, "1b0"); 100 (d, "detacheroit") by sense: **M**, as V-MANT08 says.
+- **Line 14 "Il a dit que 2?7 vouloit absolument faire la paix dans le nord"**: the middle digit is overwritten; 217 or 227 cannot be
+  settled at native resolution. Agreed: doubtful.
+- **217 omissions: V-MANT08 under-counted.** Beyond line 8 ("217 s'est expliqué par ses ministres au sujet des affaires du nord") and
+  line 14, the leaf carries **four more name codes absent from ciphertext.tsv and runs.tsv**, all clearly written with a full stop:
+  lines 18-19 "Heusch m'assure que l'El. son maitre a taché de detourner **217.** des sentiments du dernier"; line 20 "en luy declarant a son
+  tour, que **266.** contribueroit de tout son coeur a faciliter la paix en question, lorsqu'elle devoit etre generale"; line 23 "mais
+  qu'il ne se meleroit jamais de persuader **227.** d'en faire une particuliere"; line 27 (item 2 of the P.S.) "Le meme ajouta ... qu'il
+  savoit bien que **257.** se meloit aussi de vouloir moyenner une paix". So 0391 carries 217 x4 (one more doubtful), 266 x2, 227 x2,
+  257 x1: at least 35-36 code tokens, not 30. Key values (key.tsv): 217 la reine d'Angleterre C, 257 le roi de Prusse C, 266
+  Hannover|Electeur de Hanovre M, 227 le roi de Danemark|Danemark M. For the next reader to add (with the earlier fixes), then re-run
+  `--check` and shuffle_gate_0390.py; not applied here.
+- Identification (new, from print): **Heusch is the Hanoverian resident at Berlin** -- "der hannoversche Resident Heusch in Berlin"
+  (Publikationen aus den Preussischen Staatsarchiven 87, IA `publikationenaus87prusuoft`, be-api snippet), "his minister Heusch at
+  Berlin" (J. F. Chance, *George I and the Northern War*, 1909, IA `georgeinorthernw0000jame`, snippet); "l'El. son maitre" on the leaf
+  agrees. Fabrice is not identified here. This answers part of SO-MANT-0839 question 2.
+
+**3. Prior-work checks 3-5.** `tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec 'shelfmark=SHStA Dresden 10026 Loc.
+694/08;folio=frame 0391;date=1712-10-13;sender=Manteuffel;recipient=Flemming' --step-type second-audit --fetch`: exit 4; LEADs = the
+FAM-MANTV/MANT-08/V-MANT08 claims (recorded CLEAR by V-MANT08) and my own claim line (this session: CLEAR); UNCHECKED tomokiyo and
+solver-by-unit (no folio key); UNCHECKED-NET aaymeloglu, 4-editions. Then `--reading <decoded sentences> --clone <aaymeloglu clone>`
+(offline): G3 ia-global and gbooks UNCHECKED-NET, answered by hand below. By hand:
+- Check 3: github.com/aaymeloglu/unsolved-ciphers shallow clone grepped (Manteuffel / 694/08): one row, DECODE 4999, the 1717
+  Flemming-Manteuffel key (Loc. 03233/02) -- another key and unit. CLEAR.
+- Check 4, editions by date (djvu text fetched once from IA and grepped; positive control = each volume's own dated 1712 letters found):
+  - **Bolingbroke, Letters and Correspondence (Parke 1798)** II (`letterscorrespon02boliuoft`) and III (`letterscorrespo03boli`; dated
+    letters Whitehall 19, 26 Sept, Windsor 30 Sept, Whitehall 14 Oct, 19-28 Nov 1712 present): 'Denmark'/'Danish' 3 + 2 hits in all --
+    II p.115 (the King of Denmark's offer, Jan 1712), II Hanover memorial (the Queen's steps with Denmark over Bremen), III p.70 (to
+    Pulteney, 9 Sept 1712, on the King of Denmark's mistress); nothing on detaching Denmark from its allies, nothing to or about Hanover
+    on a northern peace in Sept-Nov 1712. **Not located.**
+  - **Klopp, Der Fall des Hauses Stuart XIV** (`derfalldehauses07klopgoog`, Fraktur OCR, poor): **pp. 421-422 print the related
+    background**: Thomas Harley in Hanover (Aug-Sept 1712) was told to ask the Elector to join the Queen in restoring peace in the North;
+    the Elector answered that he would count it an honour to support the Queen's intentions and join his efforts to hers for peace,
+    "vorausgesetzt dass dieser Friede allgemein sei, und dass alle bei dem nordischen Kriege betheiligten Parteien in gleicher Weise seine
+    guten Dienste annähmen" (from Grote's instruction, Robethon papers), and Harley left at the end of September with a written
+    declaration that the Elector could not separate himself from Emperor, Empire and allies. This is the same Hanoverian position the
+    P.S.'s clear text reports via Heusch (266 to help the peace "lorsqu'elle devoit etre generale", never to press 227 into a separate
+    one), but on another occasion and not from Heusch's report. Oxford's "trop loin de s'en meler" and Bolingbroke's declaration on
+    detaching Denmark: no match under fuzzy grep ('nemar' 10 hits, none 1712 London declarations). **Not located; weak (OCR).**
+  - **Macpherson, Original Papers II** (`originalpapersco02macp`; first fetch HTTP 500, one retry 200): Hanover papers of 1712 jump
+    from May to Dec; 'Denmark'/'Danes'/'Bremen' in 1712 pages: none on this. **Not located.**
+  - **Sbornik RIO 61** (`sbornik33unkngoog`, vol. 61, 1888): Whitworth's Berlin letters to Bolingbroke nos. 64-67 (16/27 Sept, 20/31 Oct,
+    25 Oct/5 Nov, 11/22 Nov 1712; read in full for Sept-Oct): the Tsar's movements, the Rügen project, Flemming's letter on Saxon
+    confusion, "Mr Breton ... will give you an account of the affairs of this court"; **nothing on the Queen's or Hanover's northern
+    declarations. Not located.**
+  - **Chance 1909** (lending item; be-api snippets only): Bolingbroke "harped always in his despatches upon the theme that no action
+    [in the north]..." (background: British non-intervention while the French peace was pending); 'detach' 3 hits, all on Prussia/the
+    Tsar 1714-15. Not located (snippets only, pages not read).
+  - **Hinrichs, Friedrich Wilhelm I.** (1941, IA `bwb_C0-BHF-356`, snippets): cites Heusch 12, 15, 20 Oct 1712 and Manteuffel to
+    Flemming 4 and 23 Oct 1712 (via Acta Borussica BO I) on court matters (Kameke); no 13 Oct 1712 citation, no Oxford/Fabrice hit.
+    Hinrichs, *Preussen als historisches Problem* (`preussenalshisto0000carl`): Heusch/Manteuffel 1713-14 only. Not located.
+  - **Acta Borussica BO I**: AUDIT2-MANT's heading list (Google Books search-inside, 3 Oct 2026) has Manteuffel reports of 19 Sept, 4,
+    7 and 23 Oct 1712 at pp. 256-258 and no 13 Oct one. My own search-inside queries (Bolingbroke 0, Oxford 0, Heusch 2 at front-matter
+    pages, Danemarck 0) are **void**: the positive control 'Manteuffel' also returned 0 this session, so the endpoint is not answering.
+    Droysen IV.1 and Heinsius XIV: V-MANT08's and AUD2-MANT08B's reads stand (Heinsius XIV has no Berlin letter of October 1712).
+  - **The press of the day (Mercure historique, Europäische Fama, Lamberty) and Google Books generally: UNREACHABLE.** The Books API
+    answered HTTP 429 to all 7 of my calls (I sent the batch of 7 at 2 s intervals before reading the first status -- six calls past the
+    good-citizen limit, my error; host left alone after that); IA advancedsearch has no 1712 Mercure historique or Lamberty volume by
+    title, and the Fama items carry only the 1702 series date. Unchecked by all three audits.
+- Check 5 (G3) by hand, IA be-api global full text: '"trop loin de s'en meler"' 0; '"faire la paix dans le nord"' 2 (unrelated:
+  anthropology 2005, Le Rhin dans l'histoire); '"bon gre malgre" Danemarc alliez' 132 (loose AND; top hits Charles V, Bender, Mercure
+  françois -- unrelated); '"Heusch" Manteuffel' (Hinrichs, above); '"moyenner une paix" Prusse 1712' 44 (loose; Rákóczi, Polish
+  partitions -- unrelated); '"Heusch" "Fabrice"', '"resident Heusch"', '"Heusch" Bolingbroke': only the identification above.
+  Recipient-side (Flemming's papers) and the sender's same-week letters to other recipients: none printed found; the Hanoverian side
+  (Heusch's own report of the same news to Hanover) is not printed in Klopp XIV or Macpherson II as far as grep reaches.
+
+**4. Depth (rule 4a, 8 Oct depth bar; keep or lower).** **D2 kept.** Cipher clause fails (longest C stretch < 12 letters vs AD about
+127-138). Code clause met more strongly than the first audit found: 217 reads in at least three clear-context, non-verbatim sentences
+(lines 8, 10, 19), 266 in two (lines 12, 20), 227 in two (lines 16, 23), with Oxford and Bullinbroug letter-spelled on the same leaf.
+The P.S. now makes sense end to end, and the Hanoverian half agrees in substance with the position Klopp XIV prints (a consistency
+check, not proof the key reads these runs). D3 is out: H/C/S 46.7% by tool count (14 of 30); with the omitted name codes added it would
+rise, but the in-sense share of cipher tokens stays under 80% and there is no independent check of the letter-valued runs. depth_pct
+46.7 kept until the next reader's re-run. My D2 sentence (true on the image; line 14's doubtful code left out): "In his postscript of
+13 October 1712 Manteuffel passes on what the Hanoverian resident Heusch had told him: Oxford had said the Queen of England was too far
+off to meddle in pacifying the North and would defer to Hanover on its execution, Bolingbroke's declaration had been far more violent
+(Denmark to be detached from its allies by the spring), and the Elector had tried to turn the Queen from Bolingbroke's view, saying
+Hanover would gladly help a general peace but would never press Denmark into a separate one; Heusch added that the King of Prussia was
+also trying to mediate a peace."
+
+**5. Classification (rule 10).** Key: **published** (Dr. Krauske's 1893 manuscript table, Loc. 694/10, credited). Prior decipherment:
+none located. **B 0391: N3 held**, confidence medium. Oxford's and Bolingbroke's declarations as reported here were not located in
+Bolingbroke's Letters and Correspondence II-III, Klopp XIV, Macpherson II, Sbornik RIO 61 (Whitworth at Berlin), Heinsius XIV, Droysen
+IV.1, Hinrichs 1941 (snippets) or IA full text; Hanover's matching position is printed in substance (Klopp XIV pp. 421-422, on another
+occasion), which keeps the Hanoverian half from counting as unlocated. Not N4: Google Books and the press of the day were unreachable,
+and Klopp/Chance were read by grep or snippet only. Safe: "Applying Krauske's 1893 table to the cipher names in Manteuffel's postscript
+of 13 Oct 1712 (Loc. 694/08) gives Oxford, Bolingbroke and the queen of England in a report, passed on by the Hanoverian resident Heusch,
+of their differing declarations on the northern peace; no prior plaintext located in the searched editions (Bolingbroke's Letters and
+Correspondence, Klopp XIV, Macpherson II, Sbornik RIO 61, Heinsius XIV, Droysen IV.1); Hanover's own stance (a general peace only) is
+printed in Klopp XIV pp. 421-422." Unsafe: "A previously unread report on Bolingbroke has been deciphered"; "the Queen's northern policy
+of October 1712 revealed".
+
+**6. Postmortem and corrections.** Failure caught: both MANT-08 and the first audit missed name codes on 0391 (the first audit found
+two of the omissions, not the four in the P.S.'s second half); the first audit left Heusch unidentified, and that one identification
+changes how the P.S. reads (a Hanoverian report, so the Hanoverian half has a printed parallel). Over-claim found: none outward;
+status.json results[220] `line` named only Heinsius XIV and Droysen IV.1 as searched -- extended, audit_status set to "two audits",
+depth_sentence replaced with the sentence above (the old one put line 14's doubtful code as "she"). SO-MANT-0839: class unchanged, row
+not edited. Requests this audit: www.archiv.sachsen.de 1; archive.org (metadata, advancedsearch, download) 15; be-api.us.archive.org 27;
+www.googleapis.com 7 (all 429); books.google.com 6 (200, answers void); github.com 1 clone. One 500 (archive.org, retried once).

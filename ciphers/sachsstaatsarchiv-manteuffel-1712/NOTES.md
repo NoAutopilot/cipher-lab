@@ -1928,3 +1928,10 @@ is the y-glyph 9 (39 = i), so Bullinbroug reads as written; 0390 r9 tok3 is 9, n
 0391 carries 217 at least twice more than ciphertext.tsv records (lines 8 and 14). Not applied here (verifier does not decode): the next
 reader applies them and re-runs `tools/decode_key.py f0390_08 --check` and shuffle_gate_0390.py. Classes: 0390 N3 D1, 0391 N3 D2,
 0395 N2 D1, 0485 N3 D1; key published (Krauske 1893). SO-MANT-0839 and AUD2-MANT0391 queued.
+
+## AUD2-MANT0391 (verifier, 8 Oct 2026, account 3, LANE VERIFY-3) -- see AUDIT.md "AUDIT 2 (AUD2-MANT0391)"
+Second audit of 0391 (P.S. 13 Oct 1712). V-MANT08's 39 and 160/100 calls confirmed on the native frame; line 14's code 2?7 doubtful.
+Four more name codes on the P.S.'s second half are missing from f0390_08/ciphertext.tsv: 217 (line 19), 266 (line 20), 227 (line 23),
+257 (line 27) -- the next reader adds them with V-MANT08's fixes and re-runs `--check` and shuffle_gate_0390.py. Heusch = the
+Hanoverian resident at Berlin. Klopp XIV pp. 421-422 prints Hanover's matching position (a general peace only); Oxford's and
+Bolingbroke's declarations not located. 0391 N3 D2 held; key published (Krauske 1893). Press of the day and Google Books unreachable.

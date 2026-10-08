@@ -7937,31 +7937,32 @@
       "kind": "recovery",
       "key": "published",
       "claim_scope": "recovered-passages",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
-      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026)",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit) and \"AUDIT 2 (AUD2-MANT0391)\" (second audit, 8 Oct 2026)",
       "audit_refs": [
-        "AUDIT.md \"AUDIT (V-MANT08)\""
+        "AUDIT.md \"AUDIT (V-MANT08)\"",
+        "AUDIT.md \"AUDIT 2 (AUD2-MANT0391)\""
       ],
       "novelty": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0391), Manteuffel to Flemming, P.S. 13 Oct 1712",
       "title": "SHStA Dresden Loc. 694/08 frame 0391 (P.S. 13 Oct 1712): unglossed cipher spans read with Dr. Krauske's 1893 manuscript key table",
-      "grade": "N3 (V-MANT08, first audit), key published (Krauske 1893 manuscript table, credited). MANT-08 pooled 0390/0391/0395/0485: 89 tokens C 54 M 35; shuffled-key gate 0/1000; fr18 judge cannot decide at N=83. Four transcription fixes owed (AUDIT V-MANT08 item 6).",
-      "line": "Partially deciphered (D2, V-MANT08 8 Oct 2026). Applying Krauske's 1893 table to the cipher names in Manteuffel's postscript of 13 Oct 1712 (Loc. 694/08) gives Oxford, Bolingbroke and the queen of England in a report of their differing declarations on the northern peace; no prior plaintext located in the searched editions (Heinsius XIV, Droysen IV.1).",
+      "grade": "N3 held (V-MANT08 first audit; AUD2-MANT0391 second audit, 8 Oct 2026), key published (Krauske 1893 manuscript table, credited). Frame 0391 clears the shuffled-key gate on its own letters (0/1000, 28 letters). Transcription fixes owed: V-MANT08 item 2 plus four name codes (217, 266, 227, 257) on the P.S.'s second half missing from ciphertext.tsv (AUDIT 2 item 2).",
+      "line": "Partially deciphered (D2, V-MANT08 and AUD2-MANT0391, 8 Oct 2026). Applying Krauske's 1893 table to the cipher names in Manteuffel's postscript of 13 Oct 1712 (Loc. 694/08) gives Oxford, Bolingbroke and the queen of England in a report, passed on by the Hanoverian resident Heusch, of their differing declarations on the northern peace; no prior plaintext located in the searched editions (Bolingbroke's Letters and Correspondence, Klopp XIV, Macpherson II, Sbornik RIO 61, Heinsius XIV, Droysen IV.1); Hanover's own stance (a general peace only) is printed in Klopp XIV pp. 421-422.",
       "completeness": "cipher spans of one frame",
-      "unresolved_spans": "M tokens and transcription fixes listed in AUDIT (V-MANT08)",
+      "unresolved_spans": "M tokens (r5 tok1 160/100, line 14 code 217/227) and transcription fixes listed in AUDIT (V-MANT08) item 2 and AUDIT 2 (AUD2-MANT0391) item 2",
       "depth": "D2",
       "depth_pct": 46.7,
       "depth_unread": {
         "names_codes": "see AUDIT",
         "other": "M tokens"
       },
-      "depth_check": "V-MANT08: code clause met: 217 la reine d'Angleterre in two non-verbatim sentences beside letter-spelled Oxford and Bullinbroug on the same leaf; cipher clause fails",
+      "depth_check": "V-MANT08: code clause met: 217 la reine d'Angleterre in two non-verbatim sentences beside letter-spelled Oxford and Bullinbroug on the same leaf; cipher clause fails; AUD2-MANT0391: kept D2 -- 217 in three clear-context sentences (lines 8, 10, 19), 266 x2, 227 x2 on the image; cipher clause fails; D3 out (<80% in sense, no independent check)",
       "decode_status": "Partially decrypted",
-      "depth_sentence": "In his postscript of 13 October 1712 Manteuffel reports that Oxford had said the Queen of England was too far off to meddle in pacifying the North and would defer to Hanover's views, while Bolingbroke declared she wanted peace in the North absolutely and that the King of Denmark would be detached from his allies."
+      "depth_sentence": "In his postscript of 13 October 1712 Manteuffel passes on what the Hanoverian resident Heusch had told him: Oxford had said the Queen of England was too far off to meddle in pacifying the North and would defer to Hanover on its execution, Bolingbroke's declaration had been far more violent (Denmark to be detached from its allies by the spring), and the Elector had tried to turn the Queen from Bolingbroke's view, saying Hanover would gladly help a general peace but would never press Denmark into a separate one."
     },
     {
       "date": "8 Oct 2026",
