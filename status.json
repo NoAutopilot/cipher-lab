@@ -6650,7 +6650,7 @@
       "documents": [
         "BnF Baluze 170 ff.229r-v (Gallica btv1b90015040, canvases 240-241)"
       ],
-      "claim_scope": "provisional-reading",
+      "claim_scope": "recovered-passages",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "completeness": "366 cipher tokens: H 106, M 258, I 1, U 1",
