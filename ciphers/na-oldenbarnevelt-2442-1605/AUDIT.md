@@ -4,7 +4,8 @@ Class (rule 10): **blocks B and C1: N3** (no prior plaintext and no prior deciph
 below). Key source: **ours** (the a=4, e=8, i=3, o=7, u=2 vowel-digit key was recovered by this project's cryptanalysis,
 VX-CT03, 25 Sept 2026; no period key, gloss or published key exists for it as far as searched). Text: not known in print.
 Blocks A and C2 are out of scope (not re-read from the image yet) and are not classified here.
-Leaves 4/5/7 (ff.59v-62r): **N3, D1**, key ours -- see "AUDIT 3" at the end (OLD-SIBS-V, 8 Oct 2026).
+Leaves 4/5/7 (ff.59v-62r): **N3, D1**, key ours -- see "AUDIT 3" (OLD-SIBS-V, 8 Oct 2026) and "AUDIT 4" (second
+adversarial audit, V1-OLD, 8 Oct 2026: N3 and D1 kept) at the end.
 
 Verifier VERIFY-OLD (account 2, LANE-A2PUSH), 3 Oct 2026, 00:02-00:10 UTC. This session did not solve the target, did
 not decode and did not re-read the image. Claim under audit (NOTES.md sections 8-9; brief
@@ -435,3 +436,77 @@ agreement with the B/C1 map is partly circular (key-aware reconciliation, 3a) an
 `s28ss8` is very likely `f28ss8` "fuesse", and L4a_05 "grando" likely "quando" -- solver-lane corrections, not made here. The
 brief's "forged a signature" is the brief's wording, not the repo's; the repo's own sentence stands.
 SO row: `SO-OLDEN-2442-L457` queued with `second-opinions/PROMPT-chatgpt-L457.md` (N3 per the verifier template).
+
+## AUDIT 4 (second adversarial, V1-OLD): leaves 4/5/7 (ff.59v-62r)
+
+Verifier V1-OLD (account 3, LANE-VERIFY-1, session_01DAY8kYbVijnShAHKHxomYh), 8 Oct 2026, 16:09-16:3x UTC by `date -u`. Brief
+`.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md`, section V1-OLD. Separate from OLD-SIBS (account 4, reader) and from
+OLD-SIBS-V (account 2, AUDIT 3); not protecting either. No key, ciphertext, override, transcription or reading was changed.
+Claim under audit: AUDIT 3's row -- leaves 4/5/7 **N3, D1**, key ours, cipher tokens 729 (H 0, C 0, S 87, M 642), safe
+sentence as written there.
+
+### 4a. Re-derivation and depth recount
+
+- `python3 scripts/decode_L457.py --check` -> `committed reading matches a fresh run; {'clear': 70, 'M': 642, 'S': 87}`, exit 0.
+- Recount from `reading_L457_tokens.tsv` by a script of this session (digits of cipher tokens): L4 761 (S 79), L5 220 (S 25),
+  L7 521 (S 31); all 1502, S 135 = **9.0%**; longest contiguous S run 7 digits (L5 "decia como io"). Same as AUDIT 3.
+- Depth under `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`: the longest S stretch (7 digits) is below even B/C1's
+  small-liberty AD (24.2-24.4 digits), and with 642 M words counted as liberties the AD is far higher; no code clause (no code
+  values in this design). **D1 kept** ("fragments read"). Not raised: the eye-check in AUDIT 3 3a was by a key-aware verifier and
+  does not regrade tokens; the named way up stays NOTES section 22 step (o2).
+
+### 4b. Prior-work checks 3-5 (search families the first audit did not cover first)
+
+| check / family | route, query (8 Oct 2026) | result |
+|---|---|---|
+| 1 own work | grep of NOTES/AUDIT/WORK-QUEUE and the last 1,500 ROOM lines for 2442 / L457 / OLD-SIBS | only OLD-SIBS (reader) and OLD-SIBS-V (AUDIT 3); no other live claim; scan 10's cipher block (ff.63v/64r) is still unread (step o1) and is outside this audit |
+| 2 leaf and neighbours | from the record (NOTES Premise check, section 22, AUDIT 3 3b; all 11 scans viewed by earlier sessions); not re-viewed here | no gloss, clear copy or key on any scan |
+| 3 holder + solver repositories | NA EAD note carried from AUDIT 1 ("Merendeels in cijferschrift", no "gedecodeerd"/"sleutel"); fresh depth-1 clones of dbourdeau/cyphersolver (last commit 7 Oct 2026) and aaymeloglu/unsolved-ciphers (27 Sept 2026) grepped for Horacio Doria, Senisteros, Agustin Mexia, Oldenbarnevelt, 3.01.14 | Oldenbarnevelt hits are Bourdeau's `aerssen1601` (Van Aerssen to Oldenbarnevelt, 1601), a different item; nothing on inv. 2442 |
+| 4 **Oldenbarnevelt edition (Huygens retroboeken, Bescheiden Deel 1-3, RGP GS 80/108/121), full text** -- new names | `searchText`, whole edition: positive control Spinola (20+); Doria 0, Mexia 0, Mexía 0, Chaves 0, Cetina 0, Garay 0, Gomara 0, canonicaet 0, Senisteros 0, Peña 0, onderschepte 0, intercepte 0; Lerma 8 (all Spanish court diplomacy, Deel 2 pp.141, 484-490, and index), Toledo 14 (Alva and Pedro de Toledo, indexes), onderschept 1 (Deel 1 p.405, English interception of a 1590s letter), "Spaensche brieven" 20 (scattered, none Dec 1605-1606 Spanish intercepts) | not found |
+| 4 **Oldenbarnevelt edition, chronological letter list ("Brievenlijst", `toc` accessor, date filter)** | every letter dated 1 Nov 1605-31 Jul 1606: nos. 120-136 (Deel 2 pp.126-145: Harderwijk, Brederode, Von Rheydt, Amsterdam admiralty 28 Dec 1605, Isaac le Maire 8 Jan 1606 + memorie, to Fr. van Aerssen 18 Jan, A. Serlippens 29 Jan, Paulus Bacx 7 Feb, Willem Lodewijk 24 Mar, Utenhove 8/17 May, Caron 13 May, M. de Hornes 16 May, Merula, Berkel memorie, Van Bilderbeke); pp.133-134 read (Serlippens/Bacx window) | no letter encloses, forwards or mentions an intercepted Spanish letter of Dec 1605; the edition does not print or calendar inv. 2442 |
+| 4 recipient side (Juan de la Peña; "V.S.") | Google Books (keyed, `country=US`): "Juan de la Peña" Oldenbarnevelt (1: the 1984 NA inventory only), "Juan de la Peña" "Agustín Mexía" (1: *La estirpe de las Rojas* 2007, a Juan de la Peña Zorrilla in a genealogy, not this letter), "Juan de la Peña" canonjía Alcalá 1605 regente (0) | no printed correspondence of the recipient located; V.S. unidentified |
+| 4 Spanish side by entity | IA be-api fts: "cuñado del regente" Mexía (5: the Aragon 1591 accounts -- Juan Palacios "cuñado del Regente Campi" beside the maestre de campo Agustín Mexía; co-occurrence, not this matter), "Agustín Mexía" canongía (48: Almansa y Mendoza's *Cartas* 1621-26 canonry lists, the *Correspondencia ... Catalogue* vol. 7; none this letter), "Horacio Doria" canongía (502, one retry not made: limit reached on host errors) | not found |
+| 5 **G3, decoded-phrase re-search** | `tools/print_check.py . --phrases phrases_L457_V1OLD.txt --only ia-global,gbooks,openalex` (15 phrases: the four AUDIT 3 could not search -- garai/carta, firma de V.S., Agustin Mexia/cuñado, rectoria/canongia/cathedra -- plus 11 new decoded phrases from L4/L5/L7, decoded and modern spelling: "pregunto horacio doria lo mismo", "le auia parecido vacarla libremente en manos de su senoria", "hice otra carta en nombre de V.S. para el abad", "por auer sido rector el doctor capata aquel ano", "la buena amistad que nos ha hecho el regente", the manteo/sotanilla lines, "algunas firmas en blanco", ...) -> `print-check-V1OLD.tsv` (45 rows, 10 with hits), hosts `print-check-hosts-V1OLD.tsv`; then single retries by hand: IA be-api "pregunto horacio doria" 0, "hice una firma de V.S." 0, "vacarla libremente en manos" 0, "cuñado del regente" 11 (Aragon 1591, above), "me pregunto el doctor garai" 502; Google Books "me pregunto el doctor garay/garai si traia carta" (1: *Revista colombiana* 1933, scattered words), "poder tener con la rectoria la canongia" (12, scattered: Valencian clergy, *Archivo teológico granadino*), "pregunto horacio doria lo mismo" 503 twice | every gbooks/openalex hit is a scattered-word match (St Teresa concordance, 19th-c. codes and gazettes, CODOIN 1884 for "algunas firmas en blanco", a 1720 Toledo chapter lawsuit *Por el dean y cabildo* for "Horacio Doria"); **no hit shows this letter**. Still unsearched: ia-global for 6 phrases (be-api 502/503 on the run and on one retry) |
+| 5 same-day replies / other correspondents' versions / press | Oldenbarnevelt's incoming letters Nov 1605-Jul 1606 (row above) are the only "same file" correspondents in print; no reply from Peña or V.S. is known; no periodical press exists for a private Alcalá canonry matter in 1605 (relaciones de sucesos carry court news, not this) -- searched only through the names above | nothing sharing two rare entities within +-3 days located |
+| scholarship | Semantic Scholar (keyed) 4: Senisteros Alcalá, canonjía San Justo Alcalá 1605 rector, Horacio Doria canónigo Toledo, Agustín Mexía regente cuñado canonjía (all noise or 0); CrossRef 3: Senisteros (0), canonjía Alcalá 1605 regente Mexía cardenal Sandoval (noise: Cervantes's letter to Sandoval y Rojas), Horacio Doria canónigo Toledo (noise) | nothing about this letter |
+| Simancas / PARES; HathiTrust full text | dead host / Cloudflare from the cloud (CLAUDE.md host table) | **unreachable** (unchanged) |
+
+Requests this session: resources.huygens.knaw.nl 25, be-api.us.archive.org 15 (print_check) + 8, www.googleapis.com 15
+(print_check) + 9, api.openalex.org 15, api.semanticscholar.org 4, api.crossref.org 3, github.com 2 (clones). No 429; IA be-api
+502/503 on 9 calls, Google Books 503 on 3 (each retried at most once).
+
+### 4c. Class
+
+**N3 kept** (leaves 4/5/7, ff.59v-62r): no prior plaintext or decipherment located after the search logged here and in AUDIT
+1-3. The Oldenbarnevelt edition, the one printed series built from the holding file, neither prints nor calendars the letter,
+and none of its letters of Nov 1605-Jul 1606 refers to it. **Not N4:** the Spanish side (Simancas, a surviving original or other
+copy) is still unreachable, the sender and "V.S." are unidentified, six G3 phrases are still unsearched on IA full text (host
+errors), and no specialist or archive has been asked. **Key: ours. Text: not known in print.** Depth **D1** (4a).
+
+| item | class | depth | prior plaintext | prior decipherment | key | evidence | confidence |
+|---|---|---|---|---|---|---|---|
+| inv. 2442, leaves 4/5/7 (ff.59v-62r), 729 cipher words | **N3** (second audit, agrees with AUDIT 3) | **D1** (9.0% S digits; longest S run 7 < AD) | none located | none located | ours | cryptanalytic, fixed B/C1 key, key-aware reconciliation; judge FAIL -0.99 vs -0.808 | moderate on novelty (Spanish side unreachable) |
+
+- **Safe sentence (AUDIT 3's, kept):** "Folios 59v-62r of the same Senisteros letter (Nationaal Archief 3.01.14 inv. 2442) read as
+  Spanish under the vowel-digit key we recovered from its other passages; only fragments are graded as read so far. No prior
+  decipherment or print was located after the search logged in AUDIT.md (N3)."
+- **Unsafe sentence:** "The Oldenbarnevelt papers preserve an intercepted Spanish letter, now deciphered for the first time,
+  in which a canon forged his patron's letter." ("intercepted" is not established -- the file says only "afschrift"; "deciphered"
+  is a D4 word and these leaves are D1; "first time" is barred below N4; "canon" and "forged" go past what the leaves say.)
+
+### 4d. Postmortem and propagation
+
+- No over-claim found in AUDIT 3, NOTES section 22 or `second-opinions/PROMPT-chatgpt-L457.md` (the prompt quotes no grade,
+  class or depth; its "a contested Toledo canonry" is posed as a question). The SECOND-OPINIONS-QUEUE.tsv row
+  `SO-OLDEN-2442-L457` stays `queued`, unedited: class and counts unchanged.
+- Gap closed: AUDIT 3 had not searched the Oldenbarnevelt edition for the leaf-4/5/7 names (NOTES section 22: "not re-run")
+  nor its chronological list; both are now negative, with a positive control.
+- **status.json carries no row for this target** (no `targets`/`results` entry for na-oldenbarnevelt-2442-1605; AUDIT 2's
+  postmortem already named this as a parent follow-up). Not created here (the orchestrator writes status.json); handed up in
+  the ROOM done line with the fields: L457 class N3 (two audits), depth D1, depth_pct 9.0, key ours, text not known;
+  B/C1 N3, D2.
+- Wording elsewhere, not edited (outside this item's files): QUEUE.md row VX-E03 calls the letter "intercepted Spanish
+  correspondence", which the file does not establish; LOOSE-ENDS-2026-10-08.md line 3 and WORK-QUEUE row OLD-SIBS keep the
+  superseded "different letter" phrasing (corrected in NOTES section 22).
+- Next steps unchanged: (o1) scan 10 cipher block; (o2) masked re-cut + two blind passes for D2; ia-global re-run of the six
+  phrases in `phrases_L457_V1OLD.txt` that met host errors (`--only ia-global`, about 6 requests) when be-api answers.
