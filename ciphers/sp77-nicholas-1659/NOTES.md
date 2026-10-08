@@ -147,7 +147,7 @@ Marces for the same week (pp. 80-82; Hyde's has "Italics in cypher, undecyphered
 
 Waits on: the TNA page copy of SP 77/32/289 (REQUEST.md; consolidated TNA batch, ASKS row 73).
 
-- S: grep CSPD 1659-60's index and Cal. Clar. iv's index (both already fetchable from IA) for royalist aliases and agents at St Sebastian in Aug 1659 (Holder, Bennet, Peter Wilson's house) to identify "Sir L.R.", ~$1.
+- [x] (R7-NICH 6 Oct; tail p.316 on read D1A-SRCH 8 Oct 2026, nothing found) S: grep CSPD 1659-60's index and Cal. Clar. iv's index (both already fetchable from IA) for royalist aliases and agents at St Sebastian in Aug 1659 (Holder, Bennet, Peter Wilson's house) to identify "Sir L.R.", ~$1.
 
 Requests this pass (shared with the sibling targets where noted): archive.org 5 (advancedsearch 2, djvu.txt 3),
 github.com 2 shallow clones (shared), WebSearch 2 for this target.
@@ -182,3 +182,13 @@ Entries (page, date, writer, one line):
 Whether any entry names or quotes the cipher letter: **no**. No entry is a Nicholas letter to St Sebastian, none mentions "Sir L.R." or any L.R., and no St Sebastian report other than Bennet's no. 4 (from Fuentarabia) appears in these pages. Nicholas appears only in a footnote (p. 312, n.1): Nicholas to Marces 13/23 Aug (CSPD 1659-60 p.108), the letter already logged on 6 Oct as a different one. The window carries no key, alias list or plaintext, so no crib for SP 77/32/289 results. Not found in this window is a search result for the log, not a verdict on the item.
 
 Status unchanged: open. Remaining step stays the TNA page copy (REQUEST.md, ASKS row 73); the 316 tail and p.317 onward (Lockhart letters at St Jean de Luz, 8/18 Aug) were not read in detail and are the only unread part of the week.
+
+## Cal. Clar. iv Aug 1659 tail, whole-volume alias grep (D1A-SRCH, 8 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261008-0540)
+
+Step run: the 3 Oct "While waiting" item's open remainder. R7-NICH (CSPD 1659-60 indexes, Cal. Clar. iv Aug window) and R8-NICH2 (Cal. Clar. iv pp. 310-316) had left the 8/18 Aug tail and p.317 onward unread. Text: IA `calendarofclaren04bodluoft` `_djvu.txt`, fetched once (archive.org, 2 requests: the first answered 302 with no body, the followed request 200, 2.28 MB), grepped by script on the whole volume, then the Aug 8/18 to Aug 31 window (about 1,900 lines) grepped for Sir L., L. R., Nicholas, cipher/cypher, Holder, Wilson, alias, Rumbold, Marces and read at headline level around the hits.
+
+Found, by djvu line in the fetched file: Bennet writes from Fuentarabia nos. 3-9 (lines 17550, 17845, 18351, 18632, 19058, 19697, 20362: 2/12 Aug to 3/13 Sept); Holder at St Sebastian appears as a forwarding agent (line 8928, "nor from Mr. Holder at S. Sebastian, who forward B[ennet's]"; 20229 "Sir H. Bennet or Mr. Holder than Marcos"; 21694 money from Holder; 23272-23276 letters to Edw. Roche "went safe to Holder"; 24133 Holder's letter of 25 Oct). In the 8/18-31 Aug tail the entries are intercepted Marces copies (Thomson to Lockhart 8/18, Lockhart to the Council of State 8/18 and 15/25, Vane to Lockhart 8/18, Mazarin extracts 13/23 and 15/25), Stanesby's examination of 8 Aug, and an undeciphered note (220v). Nicholas appears only in the footnote already logged (Nicholas to Marces 13/23 Aug, CSPD 1659-60 p.108).
+Not found: any "Sir L.R." or L.R. in the volume or the window (OCR spaces normalised); any Nicholas letter to St Sebastian of 6/16 Aug; any alias list or key. No crib for SP 77/32/289 results. Whole-volume OCR search only: a name printed with OCR damage would be missed. Not run: a body read of CSPD 1659-60 beyond R7's index hits.
+
+Status unchanged: open. Next step stays the TNA page copy of SP 77/32/289 (REQUEST.md, ASKS row 73).
+Requests this pass: archive.org 2; no other host.

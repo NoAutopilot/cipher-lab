@@ -223,9 +223,9 @@ runner), open since 26 Sept 2026 -- the JPASS credentials are reported in hand p
 23:38 UTC), next run pending. LOCAL-QUEUE row L25 (Labro 2012 via WorldCat/Cairn) also pending since 26 Sept
 2026.
 
-- S: phrase-search f.206r's own quote ('venitiens en faveur de la Reine de Hongrie...') via Google Books/archive.org be-api -- only tried on JSTOR so far.
+- [x] (D1A-SRCH, 8 Oct 2026: run, 0 hits; see section below) S: phrase-search f.206r's own quote ('venitiens en faveur de la Reine de Hongrie...') via Google Books/archive.org be-api -- only tried on JSTOR so far.
 - M: fetch and read the four unviewed Gallica folios (f.214, f.217, f.250, f.274) via IIIF, the same free no-login route already used for f.206r -- tools/gallica_folio.py + tools/iiif_lines.py.
-- S: full-text search Souchon 1915 (Gallica ark bpt6k935116v) inside the volume for the 1743-44 passage; only its catalogue entry has been checked so far, not the text itself.
+- [x] (D1A-SRCH, 8 Oct 2026: run, no print of the passage; see section below) S: full-text search Souchon 1915 (Gallica ark bpt6k935116v) inside the volume for the 1743-44 passage; only its catalogue entry has been checked so far, not the text itself.
 
 ## Web and blog check (GF4-BATCH14, account-4, 3 Oct 2026)
 
@@ -1702,3 +1702,31 @@ Brief: verify R9-ROUS4's key.tsv entry 605 = republique (grade C, count-vector g
 4. decode_key --check exit 0 (tokens 62: C 24, I 1, M 37; reading.txt unchanged -- 605 does not occur in the decoded f.205v/207r passage).
 5. Propagation: no AUDIT.md in this folder; SECOND-OPINIONS-QUEUE.tsv has 0 rows for this target (grep, 6 Oct 2026). Nothing to carry.
 Checks (R9-ROUSV2, 6 Oct 2026): see the done line. Requests: none (disk only).
+
+## D1A-SRCH-naf14913-rousseau-venice-1743 (8 Oct 2026, account 1 worker for LANE DEFAULT-account-1-20261008-0540)
+
+Step run: the two "While waiting" lines (phrase search of f.206r's quote; full-text search of Souchon 1915 for the 1743-44 passage). R8-ROUS2 (6 Oct) had already run Google Books (4 queries) and be-api (3 queries); this pass repeats be-api with a different phrase set and adds the Souchon full-text search. Phrase text: `slip_f206r.txt`.
+
+Queries and hit counts (hit = the exact phrase in a text, not a stemmed word match):
+| Host | Query | Hits |
+|---|---|---|
+| be-api.us.archive.org fts | "venitiens en faveur de la Reine de Hongrie" | 0 |
+| be-api | "en faveur de la Reine de Hongrie et particulièrement" | 0 |
+| be-api | "donner sous main des provisions" | 0 |
+| be-api | "provisions à l'armée de M. le Prince de Lobkowitz" | 0 |
+| be-api | "attachés aux intérêts de cette princesse" | 0 |
+| be-api (positive control) | "Reine de Hongrie" / "prince de Lobkowitz" | answered, French bucket 19,251 / 1,504 docs: the endpoint matches phrases of this vocabulary, so the zeros are not a dead endpoint |
+| googleapis books (country=US, key) | "venitiens en faveur de la Reine de Hongrie" | 338 loose (words scattered; top hits Burchard diary, Histoire de la république de Venise); no volume shows the passage |
+| googleapis | "sous main des provisions" | 15: *Histoire de Hollande* 1693 (unrelated) and *Le Persan en Empire* 1743, three copies (the unrelated periodical already logged 3 Oct, a different sentence on Lobkowitz) |
+| googleapis | "armée de M. le Prince de Lobkowitz" | 6: Campagne de Maillebois / Broglie-Belle-Isle compilations (1772-73) and *Carnet de la Sabre-tache* 1932, military dispatches, none the f.206r sentence |
+| googleapis | "donner sous main des provisions à l'armée" | 329 loose, none the passage |
+| gallica ContentSearch inside Souchon 1915 (bpt6k935116v) | "donner sous main" / "les plus attach" / "aux interests de cette princesse" / "interêts de cette princesse" | 0 each |
+| Souchon | "venitiens en faveur" | 2: PAG_86 (introduction) and PAG_633 (a letter, "la condescendance des Vénitiens en faveur du ..."), neither the sentence |
+| Souchon | "en faveur de la Reine de Hongrie" | 1: PAG_119, a regest: the ambassador received the Senate's answer to his memorial "sur les prétendues démarches de la République en faveur de la Reine de Hongrie" |
+| Souchon | "sous main" | 7: PAG_118 (regest of the same affair: Venice said to send troops "sous main" to the Austrian army), PAG_429 (Venetians have "peut-être favorisé sous main les interests de la Reine d'Hongrie"), others unrelated |
+| Souchon | Lobkowitz (64 page hits), provisions (9) | PAG_116: Lobkowitz makes the Legations supply forage, wood, utensils; no sentence matching the slip |
+
+Found: the topic (Venetian under-the-counter help to Maria Theresa's army, a 1743-44 Montaigu affair) is regested in Souchon pp. PAG_116-119 and in a Montaigu letter at PAG_429; those are Montaigu's own letters or the editor's summaries, a different text from f.206r's sentence (a decipherment of an incoming letter, Lorenzi, 11 Jan 1744, Souchon no. 2047). Not found: the f.206r sentence, or any exact two-clause match of it, in be-api full text, Google Books snippets or Souchon's Gallica OCR. PAG_ numbers are Gallica view positions, not printed pages (printed page not mapped here). "No hits" is a search result for the log, not a novelty verdict (rule 10).
+
+Status unchanged: partial. Remaining gaps and Escalation sections above stand; the print line gains this pass (no change to the verdict).
+Requests this pass: be-api 7, googleapis.com/books 4, gallica.bnf.fr ContentSearch 11 (3 + 7 + 3 repeats of the same page text), all >= 2 s apart; no other host.
