@@ -820,18 +820,17 @@ it was not found; no novelty class.
 Read so far: 0 of 138 f.157r tokens read; six key tests negative with matched controls (two Lasry, Servien 1632, f.146r, f.247, merged f.146r+f.247: 5.122 bpc, 0.700 of shuffles as good); no printed crib (GAPS40); blind homophonic control 0.31 at 128 restarts vs gate 0.6 (GAPS46).
 - f.157r cipher runs (138 tokens, 38 sign types) - blocker: too-short; the blind homophonic control at the target's own N and K plateaus at 0.31 recovery (0.147 at 8 restarts, 0.312 at 32, 0.309 at 128; gate 0.6; HYPOTHESES.md 3 Oct 2026), so a blind solve is below unicity here; only a key or crib reopens it, and every reachable key is negative (Sabran 1636 table retired) and no print carries a crib (GAPS40)
 - fr.4141 Genoa cipher letters (ff.276-591, most of the 17), the likely home of "Mr de ch. g^r"'s own table - blocker: needs-physical-access; the BnF catalogue sub-unit FRBNFEAD000050537_a19860114 reads "Français 4141 Réserver" with no digitised-document link, while the fr.4140 sub-unit links Gallica (read 3 Oct 2026, FT4d)
-- Lasry's Farnese-Sabran key and decipherment images for Baluze 156 f.40 (Tomokiyo GL.htm), never fetched or applied (the Sabran 1631 key read 0/31) - blocker: not-attempted; noted in the body at NOTES.md:207, never carried as a step (loose-ends 8 Oct 2026); next: fetch the f.40 key images and apply them to the 137 tokens of f.157r beside a shuffled-key null of the same length and symbol count, ~$1.5
 
 ## Escalation (GAPS46, 3 Oct 2026)
 - [x] siblings: fr.4140 f.146r key, f.247 key, and the f.247/207/254 sweep
 - [n/a] clear-pages: f.157v and f.158r are plain French with no cipher
 - [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, f.247 1636 and their merge, all negative with matched controls
-  - [ ] fetch the f.40 key images and apply them to the 137 tokens of f.157r beside a shuffled-key null of the same length and symbol count; ~$1.5; source: loose-ends 8 Oct
+  - [x] fetch the f.40 key images and apply them to f.157r beside a shuffled-key null: already run 25 Sept 2026 (YX-DEC2754, NOTES section "Second Sabran-circle key", HYPOTHESES row 3: 5.412 bpc at the shuffle median vs positive 3.754); the loose-ends 8 Oct flag read the 24 Sept "not fetched this pass" sentence and missed the 25 Sept section (D4-B2754, 8 Oct 2026)
 - [x] print: Avenel t.V whole-volume full-text search and Sourdis Correspondance I-III searched, no letter, summary or crib (GAPS40)
 - [retired] key-rebuild: Sabran 1636 table (f.146r, f.247, merged) failed three times on f.157r, rule 3 third-attempt clause; a fr.4141 table reopens it; blind homophonic rebuild measured too-short (GAPS46)
 - [x] image-check: f.157r re-read from native iiif_lines crops, 2 blind Opus passes 90.7% + reconciliation (GAPS35)
 - [n/a] retry: no transient failure to retry this pass
-Verdict: keep going: 1 internal gaps; cheapest next: fetch the f.40 key images and apply them to the 137 tokens of f.157r beside a shuffled-key null of the same length and symbol count, ~$1.5 (loose-ends 8 Oct 2026; was: parked: every gap has an outside blocker (too-short at N=138 for a blind solve; fr.4141 needs physical access or a BnF reproduction order))
+Verdict: parked: every gap has an outside blocker (too-short at N=138 for a blind solve; fr.4141 needs physical access or a BnF reproduction order). The 8 Oct loose-ends gap (f.40 key images) was already closed on 25 Sept 2026, see the known-keys sub-step (D4-B2754, 8 Oct 2026)
 
 ## While waiting (GAPS46, 3 Oct 2026)
 The one action that depends on nobody: build an era-matched 1620s-1640s French corpus (`tools/data/fr17`: for example
@@ -889,3 +888,16 @@ francois"). **Match: inside DECODE R2750 (f.123-130) / Tomokiyo servien.htm: N0,
 cipher leaf candidate" on canvases 273-274 is the second, independently enciphered copy that Tomokiyo used to recover
 the key. KEYHUNT-2026-10-07.tsv line 180 is updated to match. Canvas-to-folio note: KH1-C placed f.123-130 at canvases
 265-266, but the stamp on c273 reads 129. The stamp governs, and KH1-C's estimate was off. No transcription.
+
+## D4-B2754 check, 8 Oct 2026 (account 4, LANE DEFAULT-account-4-20261008-0740)
+
+The brief's step (fetch the Baluze 156 f.40 key images, apply them to f.157r beside a shuffled-key null) was already run on
+25 Sept 2026 by YX-DEC2754: the f.40 the loose-ends note means is Lasry's Farnese-to-Sabran key table
+(`images/BnF_Baluze156_f40.png`, with `images/BnF_Baluze156_decipher.png`, both on disk), transcribed to
+`key_sabran2_letters.tsv` and scored by `letters_trial.py --key2` (`letters_trial2.tsv`: 5.412 bpc on 79 letters, exactly the
+1000-shuffle median; positive control 3.754, 0.000 of shuffles as good). Re-run today: `letters_trial.py --key2 --check` exits
+0 (the script prints the first trial's file name in its "up to date" message; it checks `letters_trial2.tsv`). The 8 Oct
+loose-ends gap was raised from the 24 Sept sentence "not fetched this pass" and missed the 25 Sept section; the gap is removed
+and the Verdict restored to parked. No new fetch, no new score, no PREREG (nothing scored). Requests: none. Vision calls 0.
+Status word unchanged: **open**. Not done here: a re-derivation of the f.40 glyph-to-DC8 shape match from cleaner crops
+(the 25 Sept section's own caveat (c)); a suggestion only.
