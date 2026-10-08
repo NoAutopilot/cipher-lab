@@ -71,3 +71,11 @@ control (one line, no reading).
    located by the reader in OR I/43 pt 2 p.468: confirm by script, N1.
  - LS-V2c (Opus 5.5, cap $4, box 60 min): LS-R2c's E30-E36: confirm the five OR I/43 pt 1 locations by script (N1 if word for word),
    full search on E33 and E36.
+
+## LS-R7 (Sonnet 5.5, solver; cap $5.5, box 100 min; written 04:2x UTC): ten more 1864 rows, non-army addressees
+ Points A-C and the LS-R5 section apply. McCaine (Valley) rows are skipped: LS-R2c found 5 of 7 already in OR I/43 pt 1.
+ Entries and IDs: 9151/259/3 E66 (header says Jan 3rd 1864; page sits in Jan 1865 -- read the date from the image and say which),
+ 9134/242/0 E67, 9039/147/0 E68, 9093/201/2 E69, 8985/93/2 E70, 8914/22/0 E71, 9075/183/1 E72, 9118/226/0 E73, 9071/179/2 E74,
+ 8899/7/1 E75. No. 2 entries go to N2-BN, N2-BO...; old vocabulary O9-AK... (fetch first; take the next free ID if one is used).
+ Do not commit OR djvu text or other bulk caches (LS-R5 committed 5.5 MB to sources/ia-fulltext/print-check/; reuse it, add nothing).
+ NOTES section "## LS-R7 (8 Oct 2026, account 1, for LANE ST-LEDGER-2)".
