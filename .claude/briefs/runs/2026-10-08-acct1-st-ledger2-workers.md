@@ -79,3 +79,12 @@ control (one line, no reading).
  8899/7/1 E75. No. 2 entries go to N2-BN, N2-BO...; old vocabulary O9-AK... (fetch first; take the next free ID if one is used).
  Do not commit OR djvu text or other bulk caches (LS-R5 committed 5.5 MB to sources/ia-fulltext/print-check/; reuse it, add nothing).
  NOTES section "## LS-R7 (8 Oct 2026, account 1, for LANE ST-LEDGER-2)".
+
+## LS-V7 (Opus 5.5, first verifier; cap $5.5, box 80 min; written 04:4x UTC) -- LS-R7's batch, same section as LS-V5/LS-V6
+ LS-R7 read E66 E67 E68 E70 E72 E73 E74 (No. 1) and one No. 2 entry (its done line says "N2-BN as E71": settle which ID the file
+ actually carries and make the NOTES table agree), with M 13, I 5; E69 and E75 recorded "key not in hand". E67 is located by the
+ reader in ORN I/11 (Wise to Porter 3 Dec 1864): confirm by script, N1. Two findings from the other verifiers apply here: LS-V6 found
+ a Sonnet-read entry (E65) decoded with the wrong key (Cipher No. 1 instead of No. 2), so for EVERY entry first check which key's
+ vocabulary its code words belong to (share of tokens in key.md vs key-no2.md vs key-no9.md) before judging the reading; and re-read
+ from the image every M token. For E69/E75 say in one line whether one of the three keys does read them after all (counts only).
+ Points from Wave 2 (three crops word for word, I/M re-reads, press of the day) hold.
