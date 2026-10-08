@@ -76,7 +76,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8925	33	1	Capt Bulkley New Orleans  Washington D. C. Apr. 8th 1864	Capt Bulkley New Orleans		69	19	27	7	2	none	4		1
 8926	34	0	S. H. Beckwith (2) Porter treason request  Washn Apr. 8th 330 P. M. 1864	S. H. Beckwith (2) Porter treason request	no 15 NY	87	16	42	4	2	warofrebellion323unit@leaf0(cov9)	9	N2-AC	3
 8926	34	1	John Horner N. Y. (9)  Wash'n April 8th 1864 4. P. M.	John Horner N. Y. (9)		66	9	18	9	9	none	4	O9-U	2
-8927	35	0	Geo W. Baldwin (1) navy Plan Progress  Washn Apr. 8th 1864.	Geo W. Baldwin (1) navy Plan Progress	no 38	49	10	11	4	1	none	3		1
+8927	35	0	Geo W. Baldwin (1) navy Plan Progress  Washn Apr. 8th 1864.	Geo W. Baldwin (1) navy Plan Progress	no 38	49	10	11	4	1	none	3	LS-R5 E57	1
 8927	35	1	H. E. Shayer Phila  Washn DC Apr 9th 1130 am	H. E. Shayer Phila	board in time Mc M	103	4	17	0	clear	none	6		3
 8928	36	0	Geo D Sheldon Ft Monroe  Washn Apl 11th 1864	Geo D Sheldon Ft Monroe	no 7	49	9	14	1	1	warofrebellion511unit@leaf0(cov24)	24		3
 8928	36	1	Geo D. Sheldon  7 Washn Apr 12 1864 330 pm 3:30 PM	Geo D. Sheldon 7		96	20	39	3	1	warofrebellion33unit@leaf0(cov32)	32		3
@@ -86,7 +86,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8930	38	2	Beckwith "ch" (2) Dunn Transmit  Washn Apr 16th 1864 330 P. M	Beckwith "ch" (2) Dunn Transmit		97	27	51	6	2	warofrebellion33unit@leaf0(cov13)	13		3
 8931	39	0	G. W. Baldwin (1)  Thomas Ramark Slave Partial Washn DC Apr. 16 1864 5 P. M	G. W. Baldwin (1) Thomas Ramark Slave Partial		173	45	69	14	1	warofrebellion33unit@leaf0(cov45)	45		3
 8932	40	0	S. H. Beckwith "ch" Enlist transfer Wash'n Apr. 18th 1864	S. H. Beckwith "ch" Enlist transfer	128 w  (4.20 P. M Tinker)	121	25	54	4	2	warofrebellion33unit@leaf0(cov40)	40	N2-AL	3
-8932	40	1	Washington Apl 19th 1864			48	13	18	2	1	none	3		1
+8932	40	1	Washington Apl 19th 1864			48	13	18	2	1	none	3	LS-R5 E58	1
 8933	41	0	John Horner N York.  Washn April 19th 1864	John Horner N York.	169 w/d	159	18	45	11	9	none	6	O9-X	2
 8934	42	0	H. E. Thayer Phila  Washn Apl 19th 1864	H. E. Thayer Phila	Me eggs quarter master General	81	5	16	0	clear	none	4		3
 8934	42	1	Geo D. Sheldon Ft Monroe  Washington Apl 19th 1864	Geo D. Sheldon Ft Monroe		63	28	22	5	1	none	3	LS-R1 E21	1

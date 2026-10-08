@@ -437,5 +437,17 @@ Code-word tokens: H 11.
 
 Code-word tokens: H 13.
 
-Totals over the 51 entries: H 814, C 13, I 0, M 0.
+**E57 | Page 35 | 8927 | 8 Apr 1864, to Pilgrim (Thomas) at Annapolis? (operator Geo. W. Baldwin)**
+
+{time: 4 PM} For [Captain] Thomas [Quartermaster] [.] If on Examination Relief is a good staunch [Steam]er let her call at Ann a pol is for a load of collared [Troops] & if not there needed proceed to Hil ton Head & report for duty  {tail: [signed] Meigs [Qr Master Genl U.S.] his on one}
+
+Code-word tokens: H 8.
+
+**E58 | Page 40 | 8932 | 19 Apr 1864, to Grant (code word John; page gives no operator or addressee header)**
+
+{time: 11 AM} For [Maj Genl U.S. Grant] [.] [General-in-Chief] says please return the letter of [100] Jeffery to Secretary See ward enclosed to you in his dispatch [Of the] [17] Please acknowledge this  {tail: [signed] E D Town send assistant [Adjt Genl. U.S.] Please send copy of that message to [Maj Genl A. E. Burnside] in [Cipher] at [Offensive]'s request}
+
+Code-word tokens: H 12.
+
+Totals over the 53 entries: H 834, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
