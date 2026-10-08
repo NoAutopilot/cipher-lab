@@ -5024,9 +5024,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-C)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 95.7,
@@ -5042,7 +5043,7 @@
       "title": "Eckert 1864: Fry to Manierre (and to W. E. Dodge), 2 Nov 1864, withdraw as a candidate for Congress or resign (E37)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E37 queued; weakest N3: the outcome (Manierre's withdrawal for Dodge) is in print (Tribune 4 Nov 1864 p.8; Dodge vs. Brooks, House Misc. Doc. 39th Cong. 1st sess.), the instruction is not",
+      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E37 queued; the outcome (Manierre's withdrawal for Dodge) is in print (Tribune 4 Nov 1864 p.8; Dodge vs. Brooks, House Misc. Doc. 39th Cong. 1st sess.), the instruction is not; second audit AUD2-LS-C 8 Oct 2026 held N3 (1864 press by date window incl. NYT, Dodge vs. Brooks read through, Papers relating to Foreign Affairs, Huntington siblings 9820/9047, fresh phrase pass)",
       "phrases": [
         "Huntington mssEC 19 pp.216-217, pointer 9110-9111"
       ],
@@ -5058,16 +5059,17 @@
       "reading_version": "LS-R3 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V3)' section 4",
       "depth_sentence": "The Provost Marshal General tells Capt. B. F. Manierre, provost marshal of the 8th District, New York, to withdraw at once as a candidate for Congress or resign as provost marshal, advising the former, and sends the same text to W. E. Dodge.",
-      "depth_check": "image crop lines 1-5 checked (LS-V3); fresh rule-7 re-derivation (LS-V3); Manierre's own withdrawal letter of the same day (New-York Daily Tribune 4 Nov 1864 p.8) agrees with the outcome",
+      "depth_check": "image crop lines 1-5 checked (LS-V3); fresh rule-7 re-derivation (LS-V3); Manierre's own withdrawal letter of the same day (New-York Daily Tribune 4 Nov 1864 p.8) agrees with the outcome; external check (AUD2-LS-C): code words Platina/Paddle read 8 agree with 'Eighth District -- Capt. Benj. F. Manierre' (NY Dispatch 13 Nov 1864 p.5); all lines image-checked (9110, 9111)",
       "depth_note": "22/23 code words H; 'Wreath' unread"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-C)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5083,7 +5085,7 @@
       "title": "Eckert 1864: Seward to Palfrey, Boston postmaster, 12 Aug 1864, seize Keith's remittance letter to N. Ferris (E38)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E38 queued",
+      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E38 queued; second audit AUD2-LS-C 8 Oct 2026 held N3 (1864 press by date window incl. NYT, Dodge vs. Brooks read through, Papers relating to Foreign Affairs, Huntington siblings 9820/9047, fresh phrase pass)",
       "phrases": [
         "Huntington mssEC 19 p.152, pointer 9045"
       ],
@@ -5106,9 +5108,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-C)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5124,7 +5127,7 @@
       "title": "Eckert 1864: Seward to Wakeman, New York postmaster, 12 Aug 1864, three Keith remittances to be seized (E39)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E39 queued",
+      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E39 queued; second audit AUD2-LS-C 8 Oct 2026 held N3 (1864 press by date window incl. NYT, Dodge vs. Brooks read through, Papers relating to Foreign Affairs, Huntington siblings 9820/9047, fresh phrase pass)",
       "phrases": [
         "Huntington mssEC 19 p.152, pointer 9045"
       ],
@@ -5147,9 +5150,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-C)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 92.3,
@@ -5165,7 +5169,7 @@
       "title": "Eckert 1864: Seward to Murray and Harrington to Barney, 13 Aug 1864, detain the schooner Princess (E40)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E40 queued",
+      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E40 queued; second audit AUD2-LS-C 8 Oct 2026 held N3 (1864 press by date window incl. NYT, Dodge vs. Brooks read through, Papers relating to Foreign Affairs, Huntington siblings 9820/9047, fresh phrase pass)",
       "phrases": [
         "Huntington mssEC 19 p.153, pointer 9046"
       ],
@@ -5181,16 +5185,17 @@
       "reading_version": "LS-R3 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V3)' section 4",
       "depth_sentence": "Seward orders the U.S. Marshal at New York to detain the schooner Princess and her cargo, and the Acting Secretary of the Treasury orders the Collector to detain her and examine her cargo with the marshal's help.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V3); Huntington full text (Keith telegrams of 10-13 Aug 1864) gives the context",
+      "depth_check": "fresh rule-7 re-derivation (LS-V3); Huntington full text (Keith telegrams of 10-13 Aug 1864) gives the context; external check (AUD2-LS-C): code word Barnard read [Acting Secretary of the] Treasury agrees with 'George Harrington, Acting Secretary of the Treasury', 5 Aug 1864 (Foreign Relations 1865); image 9046 checked",
       "depth_note": "12/13 code words H; 'nick' unread"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-C)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5206,7 +5211,7 @@
       "title": "Eckert 1864: F. W. Seward to C. A. Seward, 15 Oct 1864, Havana consuls, Hunter and Tassara; see Evarts (E41)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E41 queued",
+      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E41 queued; second audit AUD2-LS-C 8 Oct 2026 held N3 (1864 press by date window incl. NYT, Dodge vs. Brooks read through, Papers relating to Foreign Affairs, Huntington siblings 9820/9047, fresh phrase pass)",
       "phrases": [
         "Huntington mssEC 19 p.203, pointer 9097"
       ],
