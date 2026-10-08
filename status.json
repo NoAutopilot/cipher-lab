@@ -7898,6 +7898,211 @@
       },
       "depth_check": "V-MANT08: no recurring code (187, 202 singletons); cipher clause fails",
       "decode_status": "Non-decrypted"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3b verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3b)' section 4",
+      "reading_version": "FM-R2a 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3b) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Heine (103rd New York) via Sheldon to Halleck, 20 Aug 1864, arrival on the Arago (E171)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 20 Aug 1864 Col. W. Heine telegraphs Halleck through Fort Monroe that he has arrived at 9.20 p.m. in the steamer Arago with the 103rd New York Volunteers from Port Royal, will wait two hours for orders and, none arriving, will proceed to Alexandria as Foster ordered -- the arrival telegram Foster's printed letter of 18 Aug (OR ser. I vol. 35 pt 2) says he ordered; the telegram itself not located in the Official Records (ser. I vols. 35 pt 2, 42 pts 1-3) or the Huntington's full-text search (searched 8 Oct 2026).",
+      "gap": "N3: Grant Papers, press, Google Books unread; be-api 502",
+      "depth": "D3",
+      "completeness": "31 H of 31 code-word groups (address 'Washington' and 'Virgin[ia]' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.235, pointer 5779, E171"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.235, pointer 5779, E171",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.235, pointer 5779, E171"
+      ],
+      "depth_sentence": "On the night of 20 Aug 1864 Col. Heine reports the 103rd New York at Fort Monroe on the Arago and says he will go on to Alexandria if no orders come within two hours.",
+      "depth_check": "code clause: Lester = Foster, Flint = Port Royal, France/Frog = New York passim; external: Foster to Halleck 18 Aug 1864 (OR I/35 pt 2) orders this arrival telegram; image read by FM-R2a",
+      "depth_note": "31 H of 31 code-word groups (address 'Washington' and 'Virgin[ia]' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3b verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3b)' section 4",
+      "reading_version": "FM-R2a 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3b) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 94.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Rodgers (USS Dictator) via Sheldon to the Secretary of the Navy, 19 Dec 1864, Dictator's brasses cut (E175)",
+      "line": "Read at grade H with Cipher No. 1: on 19 Dec 1864 Commodore John Rodgers, commanding the monitor Dictator, tells the Secretary of the Navy through Fort Monroe that the Dictator's main journal brasses are cut a quarter of an inch and she cannot go to sea for four days, that Temple in the Pontoosuc is anxious to join Porter, and that the monitor Saugus is ready at Norfolk awaiting convoy, and asks whether to send the Pontoosuc or the Nereus with her; the Navy Department's reply is printed in ORN ser. I vol. 11 p.198 (dated there 17 Dec), Rodgers's own telegram not located there (searched 8 Oct 2026).",
+      "gap": "N3: Rodgers's own telegram not in ORN I/11; Welles reply dated 17 Dec in ORN vs 19 Dec in both ledgers; Google Books unread",
+      "depth": "D3",
+      "completeness": "15 H of 16 code-word groups; 'tulip' M; Journal, Temple, Tower, John decoder false positives removed",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.294, pointer 5838, E175"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.294, pointer 5838, E175",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.294, pointer 5838, E175"
+      ],
+      "depth_sentence": "On 19 Dec 1864 Rodgers reports the Dictator's main journal brasses cut a quarter of an inch, so she cannot sail for the Fort Fisher attack for four days.",
+      "depth_check": "code clause: Niagara = Porter here and in Fox 17 Dec (ORN I/11 p.198, C); external: printed Welles reply answers E175's question; image read by this verifier",
+      "depth_note": "15 H of 16 code-word groups; 'tulip' M; Journal, Temple, Tower, John decoder false positives removed"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3b verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3b)' section 4",
+      "reading_version": "FM-R2a 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3b) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "1",
+        "other": "0"
+      },
+      "depth_pct": 97.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Beckwith (Bermuda Hundred) to Sheldon for Lt. Col. Small, 8 Dec 1864, embarkation of the 2nd Division, 24th Corps (E176)",
+      "line": "Read at grade H with Cipher No. 1: on 8 Dec 1864 Beckwith at Bermuda Hundred sends Fort Monroe, for Lt. Col. Small, the embarkation of the 2nd Division, 24th Corps, by steamer and number of men (Haze 300, Sedgwick 600, Perit 425, C. Thomas 800, Idaho 350, Louisa Moore 300, Weybosset 500, Montauk 80); the same embarkation is described in Ames's report (OR ser. I vol. 42 pt 1 p.981), this telegram not located (searched 8 Oct 2026).",
+      "gap": "N3: be-api 502, Google Books unread",
+      "depth": "D3",
+      "completeness": "35 H of 36 code-word groups; 'sutton' M",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.276, pointer 5820, E176"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.276, pointer 5820, E176",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.276, pointer 5820, E176"
+      ],
+      "depth_sentence": "On 8 Dec 1864 the 2nd Division of the 24th Corps was loaded at Bermuda Hundred onto eight named steamers, 3,355 men in all by the telegram's figures.",
+      "depth_check": "code clause: Quincy = Division, Pelton = Corps, numerals passim; external: Ames report OR I/42 pt 1 p.981 and record of events: same date, division, six of eight steamers; image read by FM-R2a",
+      "depth_note": "35 H of 36 code-word groups; 'sutton' M"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3b verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3b)' section 4",
+      "reading_version": "FM-R2a 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3b) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): R. C. Webster via Sheldon to the Quartermaster General, 20 Dec 1864, six steamers for Hilton Head held by weather (E178)",
+      "line": "Read with Cipher No. 1, the code words at grade H and most of the body in clear: on 20 Dec 1864 Col. R. C. Webster at Fort Monroe tells the Quartermaster General that the Crescent, Guide, City of Albany, Hero of Jersey, C. Vanderbilt and Mary Washington, ordered to Hilton Head by the dispatch of the 17th, have been held in by weather; not located in the Official Records (ser. I vols. 42 pt 3, 44) (searched 8 Oct 2026).",
+      "gap": "N3 weak (body clear): OR I/44 and I/42 pt 3 searched; press, Google Books unread",
+      "depth": "D2",
+      "completeness": "11 H of 11 code-word groups; body clear; ship names and 'Webster' (signer) plain",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.294, pointer 5838, E178"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.294, pointer 5838, E178",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.294, pointer 5838, E178"
+      ],
+      "depth_sentence": "On 20 Dec 1864 six steamers ordered from Fort Monroe to Hilton Head were still held in port by bad weather.",
+      "depth_check": "code clause: Bender = Quartermaster General here, E179 and 5608/0; no external check of the content; D3 withheld",
+      "depth_note": "11 H of 11 code-word groups; body clear; ship names and 'Webster' (signer) plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3b verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3b)' section 4",
+      "reading_version": "FM-R2a 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3b) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 94.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Herman Biggs via Sheldon to the Quartermaster General, 11 Apr 1864, shelter tents and ferry boats (E179)",
+      "line": "Read at grade H with Cipher No. 1: on 11 Apr 1864 Lt. Col. Herman Biggs at Fort Monroe asks the Quartermaster General for 10,000 shelter tents at once for W. F. Smith's requisition, a large amount of water transportation drawing not over 9 feet, and 6 ferry boats and at least 6 vessels like the City of Norwich or George Leary; not located in the Official Records (ser. I vol. 33) or Butler's printed correspondence vol. IV (searched 8 Oct 2026).",
+      "gap": "N3: Grant Papers vol. 10, press, Google Books unread",
+      "depth": "D2",
+      "completeness": "15 H of 16 code-word groups ('shelter' plain); 'measles' M",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.56, pointer 5600, E179"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.56, pointer 5600, E179",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.56, pointer 5600, E179"
+      ],
+      "depth_sentence": "On 11 Apr 1864 Fort Monroe asks Washington for 10,000 shelter tents for W. F. Smith's troops and for shallow-draught boats.",
+      "depth_check": "code clause: Bender = QMG as E178, Nankin = W. F. Smith; no external check of the content (OR I/33 shelter-tent requisitions context only); D3 withheld",
+      "depth_note": "15 H of 16 code-word groups ('shelter' plain); 'measles' M"
     }
   ],
   "lanes": [
