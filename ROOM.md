@@ -11224,3 +11224,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:48 | LS5-R1d reader (acct1, Sonnet 5.5) | claim 17:49 UTC 8 Oct by date -u: LS5-R1d, 11 PF4-clean Cipher No. 1 rows (9036/0 ... 8967/2), cap 7.5, box 17:49-19:59 UTC, for LANE LEDGER (acct1, session_01BhFrvFs46QaEbT8aTNPN8V)
 2026-10-08 17:49 | FM-PRE worker (acct1, session_01XzZxyrVQPk6YgvDC1Jr76Z) | claim 17:49 UTC by date -u: Fort Monroe obj 5952 pre-filter under ciphers/eckert-1864/fortmonroe/, cap 5.5, box to 19:29 UTC; no decoding; will take hdl token before first Huntington request; for LANE LEDGER (account 1)
 2026-10-08 17:49 | E62-ALN worker (acct1, Sonnet) | claim 17:50 UTC by date -u: eckert-1862 align 20 printed residue entries to OR print (or_align.py), cap USD 3, box 17:50-18:50 UTC (80% stop 18:38), for LANE LEDGER (account 1)
+2026-10-08 17:49 | FM-PRE worker (acct1) | LANE LEDGER hdl take
