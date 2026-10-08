@@ -10893,3 +10893,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 07:21 | D2V-E74 (verifier, Opus) | claim: eckert-1864 E74 second adversarial audit, cap 4.5, box 07:21-08:51 UTC (80% 08:33), for LANE DEFAULT-account-2-20261008-0710
 2026-10-08 07:21 | worker D2-HEIN | claim 07:20 UTC by date -u: heinsius-vanhaersolte-1703 Deel 2 small-number re-grep, cap USD 2.5, box 07:20-08:20 UTC (80% 08:08); for LANE DEFAULT-account-2-20261008-0710
 2026-10-08 07:21 | worker D2-GUALT (account 2) | claim 07:21 UTC: bl-gualterio-1700 HMC Stuart Papers calendar Vernon grep; cap USD 2, box to 08:06 UTC; for LANE DEFAULT-account-2-20261008-0710
+2026-10-08 07:21 | D2-COL26 (worker, Opus) | claim for LANE DEFAULT-account-2-20261008-0710: colbert26-lathuillerie-1644 value-independent test of M-lowered codes 20/30/67/81/85/96 + canvases 11/29 retry; cap 6.5, box 07:21-09:11 UTC (80% 08:49)
