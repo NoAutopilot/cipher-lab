@@ -1,0 +1,17 @@
+# prior_portals.tsv -- portal and solver-repository registry for tools/prior_work.py check 3 (PRIOR-WORK v1, 8 Oct 2026).
+# APPEND-ONLY: add rows, never rewrite one (a correction is a new row with the same portal id; the last row wins). Columns:
+#   portal (id), kind (tomokiyo | decode-listing | decode-record | solver-repo | holder-portal), cache_paths (space-separated,
+#   relative to the repository root; what v1 reads offline), keyed_on (the item identifier that finds an entry), verdict_rules
+#   (how a matching sentence is classed; a status word alone is never KNOWN or CLEAR), freshness_days (v2: older caches become
+#   UNCHECKED offline), v1 (implemented | registry-only), source.
+portal	kind	cache_paths	keyed_on	verdict_rules	freshness_days	v1	source
+tomokiyo	tomokiyo	sources/cryptiana/web	volume + folio (heading volume carried down); DECODE R-id	'deciphered'/'attached'/'dechiffre' + exact folio = KNOWN; folio within 2 = LEAD fuzzy-match; 'can be read with' = KEY-SOURCE; 'undeciphered' = no evidence	7	implemented	sources/cryptiana/README.md (snapshot 19 Sept 2026, cp932 pages)
+decode-listing	decode-listing	sources/decode	DECODE R-id (id column)	'Partially decrypted' = KNOWN-PART; 'Decrypted' = LEAD (may be a key only, R2761); 'Non-decrypted' = CONTEXT (R9502 and R361 carry decipherments); page count <= 8 = whole unit in look.tsv	7	implemented	tools/decode_list.py output TSVs
+decode-record	decode-record	sources/decode	record_<id>.html	'Cleartext Publication' or a PLAINTEXT tag = LEAD fetch (one browser login per session, tools/decode_browser_login.js)	7	implemented	sources/decode/*/record_*.html
+cyphersolver	solver-repo	sources/cyphersolver sources/cyphersolver-site	volume + folio, R-id, pointer	a reading file naming the unit, not citing cipher-lab, not later than ours = KNOWN; directory, catalogue or planning line = CONTEXT duplicate-effort-risk	2	implemented	github.com/dbourdeau/cyphersolver (MIT code, CC BY 4.0 text); snapshots under sources/cyphersolver/<date>
+bourdeau-targets	solver-repo	sources/bourdeau	volume + folio, R-id	as cyphersolver	2	implemented	sources/bourdeau/
+unsolved-ciphers	solver-repo		volume + folio, R-id	as cyphersolver; no licence: cite only (CLAUDE.md rule 8); pass a local clone with --clone	2	implemented	github.com/aaymeloglu/unsolved-ciphers
+hcportal	holder-portal		HCPortal record id	'Partially solved' = KNOWN-PART pending LOOK	7	registry-only	research/PRIOR-WORK-LEAK-2026-10-08.md check 4
+wvo	holder-portal		WVO briefnr	print codes (GPA, GPAS, GSME, LMSAC, DNOK, JC, Japikse nr., Groen, Fruin) = LOOK edition-page, never KNOWN by themselves; 'Collectie Japikse' = CONTEXT unseen-witness	7	registry-only	sources/wvo/NOTES.md
+rah	holder-portal		RAH signatura	'Copia del ... cifrado' / 'Es copia conforme' = LEAD copia; 'Copia, en cifra' = CONTEXT	7	registry-only	sources/salazar-castro-index
+huntington	holder-portal	ciphers/eckert-1864/sources ciphers/eckert-1862	CONTENTdm pointer	the holder's own transcription: no code word = KNOWN; code words = KNOWN-PART (civil-war adapter, check 5)	7	implemented	tools/huntington_transc.py

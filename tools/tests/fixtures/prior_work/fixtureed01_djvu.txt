@@ -1,0 +1,12 @@
+WAR OF THE REBELLION (fixture text for tools/tests/test_prior_work.py; not a real volume)
+FORT MONROE, VA., April 21, 1864-12 p.m.
+Hon. G. V. FOX, Assistant Secretary of the Navy:
+The torpedo boat is ready and the camels are at Norfolk. BENJ. F. BUTLER, Major-General.
+
+WASHINGTON, April 23, 1864.
+Major-General AUGUR:
+The cavalry at Warrenton Junction will move at daylight with 350 men toward Bealeton Station.
+H. W. HALLECK, Major-General, Chief of Staff.
+
+HEADQUARTERS, March 2, 1864.
+General MEADE: nothing to report. U. S. GRANT.

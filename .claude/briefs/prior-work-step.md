@@ -1,5 +1,20 @@
 # Prior-work step (every brief that transcribes, keys, decodes, aligns, crops, looks up or audits an item)
 
+**Run the tool first** (`tools/prior_work.py`, PRIOR-WORK v1, 8 Oct 2026; rollout warn-first): before the first priced
+step, `python3 tools/prior_work.py <slug> --item <item_id> --step-type <read|transcribe|decode|crop|lookup|audit> --fetch` (offline
+except for that `git fetch origin main`; the target's state is read at origin/main, not from your working tree)
+(an item not yet in ciphers/<slug>/items.tsv: `--item-spec 'shelfmark=BnF fr.3040;folio=18r;date=1530-03-28;sender=..;recipient=..'`;
+a whole brief: `--brief <brief.md>`; a register before choosing job 1: `python3 tools/prior_work.py - --register
+NEXT-STEPS.tsv --columns next_step,parallel`),
+then `--network` for a single letter at intake, then `--reading <reading.txt> --network` after decode (G3), and paste its
+output. Obey the exit code: 3 DONE (stop, ROOM flag), 2 KNOWN with no named consumer (stop, or rerun with
+`--known-answer item:<unread id>` / `gate:<name>` for a known-answer or key check), 4 LOOK/LEAD/UNCHECKED owed (do that one
+look or read first, then `--record <row_id> 'CLEAR: ...'` or `'KNOWN: ...'`; it blocks this item only, never the lane), 0
+proceed on the CLEAR / KNOWN-PART residue it lists. `python3 tools/prior_work.py --help` lists every flag. Where v1 does not
+reach (its docstring's TODO list: WEB rows, WVO print codes, RAH copia classes, the printed-cipher router, edition volumes
+with no row in tools/data/prior_editions.tsv), **run the checklist below by hand** and paste one line per check (route,
+query, result) into the worker's NOTES section. A check that did not run is "unchecked", never "clear".
+
 Owner, 8 Oct 2026: "Can we improve our chances of not solving already solved work?" and "must be applicable to other work, not
 just Eckert". Evidence: workflow wf_e1b87449-ccc mined all 68 AUDIT.md files and the room log (scratchpad copy in the account-3
 orchestrator's session; summary in STATUS.md "Prior-work leak study, 8 Oct 2026"): 310 records of work spent on items already read,
@@ -7,13 +22,6 @@ orchestrator's session; summary in STATUS.md "Prior-work leak study, 8 Oct 2026"
 decipherment or clear copy on the same leaf or a sibling leaf 72 (the largest non-Eckert source), our own earlier work 49, the
 holder's own public transcription 19, a modern decipherment 14. 216 were caught only by the solver or the first audit; about two
 thirds were catchable in seconds by a script before reading.
-
-**If `tools/prior_work.py` exists, run it** (`python3 tools/prior_work.py <slug> --item <id> --offline`, then `--network` for a
-single letter at intake, then `--reading <file>` after decode) and obey its exit code: 3 DONE (stop, ROOM flag), 2 KNOWN with no
-named consumer (stop, or proceed only as a named known-answer/key check), 4 LOOK/LEAD/UNCHECKED owed (do that one look or read
-first; it blocks this item only, never the lane), 0 proceed on the CLEAR / KNOWN-PART residue it lists. **Until it exists, run the
-checklist below by hand** and paste one line per check (route, query, result) into the worker's NOTES section before the first
-priced step. A check that did not run is "unchecked", never "clear".
 
 1. **Our own work (always, offline, seconds).** `git fetch` first. Grep the item's identifiers (volume + folio + canvas, never
    folio alone; DECODE R-id; WVO nr; ledger pointer; inv./scan) in the target's NOTES.md, AUDIT.md, ITERATE.md, HYPOTHESES.md,

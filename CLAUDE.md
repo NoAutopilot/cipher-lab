@@ -619,6 +619,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    design_prior.py is run before an attack family is chosen for an unread letter), `tools/gaps_check.py` (1 Oct 2026,
    rule 5's "Finish or name the blocker": a `partial` NOTES.md ends in parsed Remaining gaps and Escalation sections,
    and "parked" passes only when every gap has an outside blocker and no step is untried).
+   `tools/prior_work.py` (8 Oct 2026, PRIOR-WORK v1, warn-first) is the per-item prior-work gate (own work, the leaf and its
+   neighbours, holder/portal/solver caches, editions, the civil-war adapter, G3; tools/shelfmark.py keys units); its must-catch and
+   must-not-block kinds are in its docstring and its offline tests in tools/tests/test_prior_work.py.
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
    target that needs something they lack gets an option added to the tool, not a private copy.
    `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image
