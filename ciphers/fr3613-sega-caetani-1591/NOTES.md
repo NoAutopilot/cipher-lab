@@ -52,3 +52,6 @@ Requests: WebSearch 5, OpenAlex 3, Google Books 3, archive.org 3, classiques-gar
 fr3613-sega-caetani-1591: blocked (line 1) -- already terminal, nothing to gate
 exit 0
 ```
+
+## Edition and key leads added (BNF-SEGA-POOL, 8 Oct 2026)
+DBI "SEGA, Filippo" and "CAETANI, Enrico" Fonti e Bibl. read in full: no edition of Sega's 1591 letters or of Caetani's legation despatches is listed; Manfroni 1893 (Riv. stor. ital. X, archive.org BIBLIOFBK-RIVSTOITA-1893-010-2) grepped whole-number: narrative from Caetani's diary, no 9 Jan 1591 letter, no cipher. ANG complete volume list still not obtained (no Sega or Caetani volume seen). Tomokiyo's Cryptologia article (2017) concerns Farnese/Mayenne letters TO Sega, Jan 1591 (fr.3980), not this letter's cipher. Per Cauare cipher (mantua.htm; Barberini to Sega 1593) is a further untested key candidate beside Meister's Caetani table. Verdict unchanged: blocked. See ciphers/fr3984-sega-memoirs-1593/NOTES.md.
