@@ -1,0 +1,10 @@
+You are a blind palaeographic matcher. Do not read any other file in the repository; use only the two images named below.
+
+Images (absolute paths, view each with the Read tool):
+1. UNKNOWN sheet: /home/user/cipher-lab/ciphers/baluze167-davaux-1637/b167228/sig2/sheet_unknown2.png -- 9 tiles U1..U9 cut from a 1640 French cipher letter. Each tile is centred on ONE target sign (the sign nearest the horizontal centre of the tile); neighbouring signs at the tile edges are context, ignore them.
+2. EXEMPLAR sheet: /home/user/cipher-lab/ciphers/baluze167-davaux-1637/b167228/sig_tiles/sheet_f229_exemplars.png -- 11 labelled tiles E-s, E-n, E-r, E-a, E-c, E-m, E-u, E-p, E-e, E-t, E-l from the next leaf of the same letter, same hand. The label letter is the plaintext letter of the centred sign. Some exemplars differ only in small details (e.g. which part of a sign the crossbar or the loop is on, the order of a minim and a crossed stroke); compare closely at full size.
+
+Task: for every tile U1..U9, independently: the single best-matching exemplar label letter (e.g. "s"), or NONE if no exemplar is the same sign shape (do not force a match); a second-best letter or -; conf high/medium/low; a few words on the target sign's shape and what decided it.
+Judge only by shape. Do not use any idea of what the text might say.
+
+Output ONLY a TSV block with header: tile<TAB>match<TAB>second<TAB>conf<TAB>shape_description , 9 rows, nothing else after it.

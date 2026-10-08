@@ -1,0 +1,18 @@
+id	role	where	x	y
+U1	DECOY:gam=u	v_b_L07	1150	1088
+U2	ANCHOR:4u=a	v_a_L01_c5	780	152
+U3	DECOY:y+=r	v_b_L07	1265	1088
+U4	target:u4|4u	v_b_L05_c8	1305	752
+U5	target:u4|4u	v_b_L06_c6	1220	920
+U6	target:u4|4u	v_b_L01_c10	2290	120
+U7	target:u4|4u	v_a_L02_c4	660	270
+U8	DECOY:h=n	v_b_L04	840	592
+U9	ANCHOR:u4=t	v_b_L04_c1	270	592
+N1	control:acute	v_b_L04 90	400	472-642
+N2	control:acute	v_b_L02 44	1290	144-314
+N3	control:acute	v_b_L02 65	365	144-314
+N4	target:71	v_a_L01_occ2	540	30-200
+N5	control:acute	r_b_L02 40	1060	300-440
+N6	control:none	v_b_L02 13	2130	144-314
+N7	target:71	v_a_L01_occ5	1515	30-200
+N8	control:none	v_a_L01 16	1870	30-200

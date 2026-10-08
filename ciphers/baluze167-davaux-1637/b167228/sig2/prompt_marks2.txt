@@ -1,0 +1,12 @@
+You are a blind reader of a 1640 French cipher letter. Do not read any other repository file; use only the image named below.
+In this cipher a numeral may carry a mark that changes its meaning: an ACUTE (a short slanting stroke above or just above-right of the
+numeral, detached from it), a DIAERESIS (two dots above), a BAR (a horizontal stroke above), or NO mark. Note: in this hand the digit 1 is
+often written like a dotted i, and the dot can be a short slanting flick sitting directly on top of the 1; that flick belongs to the digit
+and is NOT a mark. A stroke that is the descender or tail of a sign in the line above, or a stray line crossing the paper, is NOT a mark.
+
+Image: /home/user/cipher-lab/ciphers/baluze167-davaux-1637/b167228/sig2/sheet_marks.png -- 8 crops N1..N8, each centred on ONE numeral (the numeral nearest the horizontal centre of the crop; signs at
+the edges are context). The numerals are: N1 90, N2 44, N3 65, N4 71, N5 40, N6 13, N7 71, N8 16. View the image at full size.
+
+For each crop report the mark of the centred numeral: acute, diaeresis, bar, none, or unsure; and in a few words where the stroke sits
+(over which digit, detached or joined) and why you judged it a mark or not.
+Output ONLY a TSV block with header crop<TAB>numeral<TAB>mark<TAB>note , 8 rows, nothing after it.
