@@ -1,0 +1,5 @@
+# D2-DUPL blind control read, fresh Sonnet subagent, 8 Oct 2026 (chart + two degraded strips only; not told the words)
+D A | A T | A P | A P | A B | A B | A | D A | A L | A L | A L | A
+A | A P | D A | A T | L A | A R | A R | K A | A K | A L | A L | A K | A L
+L A | D A | A P | L A | K A | A L | A L | D A | A L | A R | A R | A K | A L | A
+A R | A L | A K | A P | L A | A L | A R | A P | A R | A L | A P | A K | A L | A

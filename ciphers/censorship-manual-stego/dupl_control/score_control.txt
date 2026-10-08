@@ -1,0 +1,4 @@
+key n=133 read n=101
+accuracy=0.376 chance_mean=0.177 chance_p95=0.211
+diag loop-merged (A=O, E=I) accuracy=0.519
+diag rising-slant subsequence (R/L/G/K) key=LLRRLRRRLLRLRLLRRLRLLRLLLLLRLRRRRLLLRLRLLLRLRRLR read=LLLLRRKKLLKLLLKLLLRRKLRLKLLRRLKL accuracy=0.479

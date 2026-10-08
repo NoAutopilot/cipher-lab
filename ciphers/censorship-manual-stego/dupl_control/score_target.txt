@@ -1,0 +1,16 @@
+reading: B T B (n=3)
+ARRAS (a-r-a)            sim=0.000 null_mean=0.101 null_p95=0.333 p=1.000
+AVANT ARRAS              sim=0.125 null_mean=0.092 null_p95=0.250 p=0.620
+DEVANT ARRAS             sim=0.111 null_mean=0.107 null_p95=0.222 p=0.770
+VON ARAS (Gerry 2017)    sim=0.000 null_mean=0.122 null_p95=0.286 p=1.000
+-- decoys --
+LILLE                    sim=0.000 null_mean=0.104 null_p95=0.333 p=1.000
+LENS                     sim=0.000 null_mean=0.146 null_p95=0.250 p=1.000
+METZ                     sim=0.000 null_mean=0.146 null_p95=0.333 p=1.000
+LYON                     sim=0.000 null_mean=0.150 null_p95=0.250 p=1.000
+PARIS                    sim=0.000 null_mean=0.149 null_p95=0.250 p=1.000
+CALAIS                   sim=0.000 null_mean=0.146 null_p95=0.250 p=1.000
+VERDUN                   sim=0.000 null_mean=0.142 null_p95=0.400 p=1.000
+DOUAI                    sim=0.000 null_mean=0.154 null_p95=0.333 p=1.000
+NANCY                    sim=0.000 null_mean=0.119 null_p95=0.400 p=1.000
+REIMS                    sim=0.000 null_mean=0.150 null_p95=0.250 p=1.000

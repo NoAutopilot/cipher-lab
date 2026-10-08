@@ -255,6 +255,32 @@ the signature is Gerry's (Cipherbrain, 7 May 2017) and the 2020 blog comment's, 
 
 Requests: cdn.jsdelivr.net 1 (font) plus 1 reachability probe; no other host.
 
+## D2-DUPL joined-hand control + blind re-read (8 Oct 2026, LANE DEFAULT-account-2-20261008-0710)
+
+Pre-registered in PREREG-D2-DUPL.md (pushed ac622c643 before any read). Control material: "VERSION 3" of the Institut
+sténographique de France, *Méthode de sténographie Duployé perfectionnée* (1905), Internet Archive `cihm_84595`, PDF
+p.12 (printed p.9): four lines of joined Duployé word forms (T D L R with A O), known answer printed on PDF p.13
+("Traduction de la version 3"); key `dupl_control/version3_key.tsv` (133 primitives, phonetic). Crops:
+`tools/iiif_lines.py --image v-12.png --region 160,1090,1660,400 --lines-per-crop 2 --top-margin 45 --bottom-margin 45`,
+scaled to ~60 px stroke height, blur 1.5, halved and doubled (GAPS183's degradation): `images/dupl_control/`.
+Two fresh Sonnet subagents, the same 18-letter chart, neither told any hypothesis, the words or GAPS183's reading.
+
+| | read | score |
+|---|---|---|
+| control (Version 3, 133 primitives) | `dupl_control/read_control.txt` (101 primitives) | **accuracy 0.376**, gate 0.60; chance mean 0.177, p95 0.211; loop-merged (A=O, E=I) 0.519; R/L/G/K subsequence 0.479 |
+| target (signature 'H') | `B T B` (long stem, crossbar, long stem) | ARRAS sim 0.000 p=1.000; AVANT ARRAS 0.125 p=0.620; VON ARAS p=1.000; 10 decoys p=1.000 (`dupl_control/score_target.txt`) |
+
+Result: **CONTROL BELOW GATE.** The reader beats chance on joined Duployé at this pixel size but reads only about 38% of
+primitives right (it writes most loops as A and confuses R/L/K), so at this resolution a blind primitive read of joined
+shorthand cannot carry the A/R distinctions "Arras" needs. Per the pre-registration the target read does not count. It
+is also worth recording that the blind reader saw no loops at all in the 'H' (`B T B`, a plain Latin H), where
+GAPS183's non-blind read saw `A G A B T B`: the loops that drove GAPS183's p about 0.05 did not reappear blind. Neither
+read is a reading (rule 4: 3 M tokens, no H/C/S). Not a negative either (rule 3): a non-test at this resolution. The
+shorthand step now needs the ASKS row 126 image; a further primitive-read pass on the present 565x225 image is the same
+instrument at the same resolution (rule 3, third-attempt clause) and should not be briefed.
+Requests: archive.org 4 (advancedsearch 1, metadata 1, PDFs of cihm_80270 and cihm_84595), cdn.jsdelivr.net 2
+(one 404). Vision subagent calls 2.
+
 ## Remaining gaps (GAPS183, 3 Oct 2026)
 Read so far: unmeasured -- the plaintexts are printed in the manual, and what is unread is where the marks lie; no carrier located beyond the published fragments
 - fashion-drawing Morse (p.14 dress trims) - blocker: illegible; marks 2-5 px in every online copy, TNA scan pixel-identical (Bourdeau 15 Sept 2026); waiting-on ASKS row 126 (Kew record copy at 1200 dpi)
@@ -273,5 +299,21 @@ Verdict: keep going: 0 internal gaps; cheapest next: joined-hand Duployé contro
 
 ## While waiting
 
-- The action that depends on nobody: fetch a period Duployé manual from Internet Archive (full text, public domain), cut crops of the joined handwritten words it prints, and use them as a design-matched control (joined hand, same pixel size). Then have a fresh session that does not know the hypotheses re-read the signature's "H" blind, and re-run scripts/sig_hypothesis_score.py on that reading, ~$3.
+- Done 8 Oct 2026 (D2-DUPL): the joined-hand Duployé control read 0.376 against its 0.60 gate, so the blind re-read does not count. No further action here depends on nobody: when the ASKS row 126 image arrives, re-run the same control at the new image's stroke size (PREREG-D2-DUPL.md, scripts/duploye_joined_control.py) before any re-read.
 - Waiting on the owner: ASKS row 126, a TNA record copy of KV 2/2424 manual pp.14 and 17 at 1200 dpi or better.
+
+## Remaining gaps (D2-DUPL, 8 Oct 2026)
+Read so far: unmeasured -- the plaintexts are printed in the manual, and what is unread is where the marks lie; no carrier located beyond the published fragments
+- fashion-drawing Morse (p.14 dress trims) - blocker: illegible; marks 2-5 px in every online copy, TNA scan pixel-identical (Bourdeau 15 Sept 2026); waiting-on ASKS row 126 (Kew record copy at 1200 dpi)
+- signature shorthand "Before Arras" (p.14) - blocker: illegible; D2-DUPL's joined-hand control read 0.376 against its 0.60 gate at this resolution (PREREG-D2-DUPL.md), so no blind primitive read of the present image can decide; waiting-on ASKS row 126
+- map Morse beyond "alles fertig" (p.17, tram-band pen marks) - blocker: illegible; Bourdeau's marks_raad.py found 24 candidates that do not separate into dots and dashes; waiting-on ASKS row 126
+
+## Escalation (8 Oct 2026)
+- [n/a] siblings: a single training brochure, no sibling items carry these illustrations
+- [x] clear-pages: the manual's own captions pp.14, 16, 17 read and quoted (bCEN, 25 Sept 2026)
+- [n/a] known-keys: the plaintexts are given; there is no key to recover
+- [x] print: Cipherbrain threads, Futility Closet, solver repositories read (bCEN 25 Sept, GF-A2-12 3 Oct 2026)
+- [n/a] key-rebuild: image steganography, no cipher key involved
+- [x] image-check: TNA scan equals Schmeh's (Bourdeau); signature shorthand test run 3 Oct 2026 (GAPS183), borderline
+- [x] retry: joined-hand Duployé control + blind re-read (D2-DUPL, 8 Oct 2026): control 0.376 below gate 0.60, non-test at this resolution; only the ASKS row 126 image reopens it
+Verdict: parked: every gap has an outside blocker
