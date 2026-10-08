@@ -1,0 +1,15 @@
+tile	call	note
+A	NOT-8	centre a cross-stroke + 3 group; partial 8 at left edge
+B	BARRED-8	bar through waist, out both sides
+C	NOT-8	epsilon-form
+D	BARRED-8	sits low in tile; bar out both sides
+E	NOT-8	slanted barred oval/phi form; barred 8 at right edge only
+F	NOT-8	epsilon-form
+G	BARRED-8	bar out both sides
+H	BARRED-8	bar long on right, short stub on left
+I	BARRED-8	bar out both sides
+J	NOT-8	clear-hand "di"; 8 at right edge only
+K	BARRED-8	bar out both sides (upper sign)
+L	PLAIN-8	open hooked top, no bar
+M	PLAIN-8	closed, no bar
+N	BARRED-8	bar out both sides
