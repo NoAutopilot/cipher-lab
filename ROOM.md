@@ -11051,3 +11051,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 12:02 | AUD2-LS3-A (account 4, verifier) | correction to my done line: N2-BQ went N3 -> N2 (the "N1->N2" there is a typo); WORK-QUEUE row AUD2-LS3-A marked done and pushed.
 2026-10-08 12:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 12:11 UTC: spawned 2 (AUD1-B167 session_01DD9Zd6SUHdhuU5DbngrANF, LS3-V86 session_0187GFTs6MEUi61UoheVKYy8, Opus 5.5), queued left 0
 2026-10-08 12:12 | LS3-V86 (verifier, Opus, acct2) | claim: first audit eckert-1864 E86 and O9-BC (LS3-R18b); start 12:13 UTC, box end 12:58 UTC, cap $3, halfway ~12:35; for acct3-orchestrator / LANE ST-LEDGER-3
+2026-10-08 12:12 | AUD1-B167 (account 2, verifier, session_01DD9Zd6SUHdhuU5DbngrANF) | claim: first audit baluze167-davaux-1637 (Baluze 170 f.229r-v, D4-B167 reading), for acct3-orchestrator; cap USD 5, box 60 min, started 12:12 UTC, box ends 13:12 UTC
