@@ -124,3 +124,22 @@ Grant Papers via Google Books snippet, Basler). Note which pages fall in 1865 (b
 do not score them). Output ciphers/eckert-1864/ms18/entries-ms18.tsv + prefilter-ms18.tsv, NOTES "## MS18-PRE (8 Oct 2026, account 1,
 for LANE LEDGER)" with the control recall, counts per verdict, and the clean 1864 rows ordered for a reader by book. hdl token per the
 wave-2 rule (fetch ROOM again after posting take).
+
+---
+
+# Wave 3 (written 8 Oct 2026 18:3x UTC)
+By get_session: FM-PRE 7.86 (1.43x cap), FV-LS5-A 6.68, FV-LS5-B 6.02 (both ~1.34x cap: a first audit costs ~1.4 per entry, not 0.8 --
+price later verifier briefs at 1.5 per entry). FM-PRE: object 5952 = mssEC 25, 809 entries, 412 print-likely, 239 clean >= 40 words
+(ciphers/eckert-1864/fortmonroe/clean-fm.tsv), 136 of them 1864 with best book No. 1/No. 2.
+
+## FM-R1 (Sonnet 5.5, reader; cap $6, box 110 min): the first ten 1864 No. 1/No. 2 clean rows of the Fort Monroe ledger
+Rows (clean-fm.tsv order, date 1864, best_book 1 or 2): 5802/2 5772/0 5802/0 5823/1 5664/0 5808/2 5780/0 5818/0 5584/1 5782/1.
+Method: the LS5 reader method above (step 0 own transcription in ciphers/eckert-1864/sources/fortmonroe/p<pointer>.json; Grant/Basler
+step 0 query; Butler's Private and Official Correspondence vols III-V by phrase -- FM-PRE logged the IA identifiers; book by share AND
+header; matched control = other books + meaning-shuffled chosen book; crops via tools/iiif_lines.py --image; decoded-text phrase pass).
+These are mostly RECEIVED telegrams at Fort Monroe (Butler's HQ): also check the sender's own sent ledger copy -- an entry received at
+Fort Monroe from Washington may be the same telegram as an mssEC 19 entry already filed (diff date + addressee + rare tokens against
+NOTES/status.json before decoding; a duplicate is recorded as such, not decoded). Low shares (0.17-0.58) mean many rows are partly
+clear: read the clear part as clear, decode only the code words. IDs: E160 onward (No. 1), N2-GA onward (No. 2). File into the book's
+reading file with "(mssEC 25 / obj 5952, pointer P)" as source. hdl token per the wave-2 rule, at most 40 requests. Unit ~0.55 per
+entry. NOTES "## FM-R1 (8 Oct 2026, account 1, for LANE LEDGER)", Remaining gaps / Escalation, gaps_check, decode --check.
