@@ -149,3 +149,31 @@ anneal (GAPS43 segmentation, SIG-4612 unigram): under CLAUDE.md rule 3's third-a
    3 seeds, gate >= 0.90 each, and only on PASS the 4612 v3 target, exactly as SIG-4612's brief steps 3-5.
 3. Units: implement `--objective bigram` in gaps43/word_anneal.py with an offline test (~$1), pre-check (~$1). Serial CPU only.
 4. NOTES "## SIG-4612B (8 Oct 2026, account 1, for LANE SIG-1)"; Remaining gaps item updated; gaps_check.
+
+---
+
+# Wave 3 (written 8 Oct 2026 23:4x UTC by date -u)
+
+## SIG-V228 (Opus 5.5, FIRST VERIFIER, separate from SIG-B228/SIG-B228B/B167-228; cap $6, box 90 min): Baluze 170 f.228r-v
+Target baluze167-davaux-1637, the f.228r-v cipher passages (the letter whose clear close is f.230r; Chavigny to d'Avaux, 1640 -- establish the
+exact date and sender from the leaf/NOTES, do not assume f.229's 25 Aug). Claim under audit: NOTES "## SIG-B228B" -- reading_b170f228.txt,
+H 71 / M 70 / I 12 / U 1 of 154 cipher tokens, fr17 -0.925 vs real_p05 -0.935 (PASS by 0.010), and its content sentence "the cipher says Chavigny
+doubts the Landgravine of Hesse-Kassel would come to terms with the enemy because of the treaty she has recently made with the King".
+Run the CLAUDE.md "Verifier brief (template)" steps 1-5 with these specifics:
+1. Prior work: `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec '...' --step-type audit --fetch`, then after extracting phrases
+   `--reading ciphers/baluze167-davaux-1637/reading_b170f228.txt --network` (G3) and `tools/print_check.py` on f.228 phrases; paste outputs.
+2. Adversarial reading check (not a re-decode): the PASS margin is 0.010 and rests on M letters set by exemplar tests whose decoy gates passed
+   at their minimum (2/3). Report what share of the clauses you would quote rests on cipher letters vs the letter's own clear words (upper case),
+   whether the content sentence survives with every M letter in it doubted, and the authentication-distance test of rule 4a (a cipher stretch
+   above ~1.5 x unicity read continuously). Spot-check 15 tokens on the native crops (images/crops/b170f228*).
+3. Source families (template step 2) with emphasis on: Avenel VI (Richelieu, Aug-Sept 1640), the Négociations / d'Avaux correspondence editions,
+   Hesse-Kassel side (Rommel VIII; Amalie Elisabeth's treaty with France of 1639/1640) and Brunswick-Lüneburg side (the dukes' 1640 negotiations,
+   Banér's campaign of 1640), Tomokiyo's louisxiii.htm (he quotes one f.228 fragment: is more printed anywhere?), DECODE, solver repos, JSTOR
+   rows in both families (i) and (ii).
+4. N-class and depth (rule 4a; .claude/briefs/runs/2026-10-08-acct3-depth-bar.md) in AUDIT.md "## AUDIT 1 f.228 (SIG-V228)" with key source
+   (`published`: Tomokiyo's table, plus our shape values), safe/unsafe sentences; status.json row via the parent fields (claim_scope,
+   plaintext_novelty, depth...) and depth_check; at N3+ D2+ append the SECOND-OPINIONS-QUEUE.tsv row and add WORK-QUEUE `AUD2-SIG-228`
+   (account-3, Opus 5.5, cap 5, box 60) naming this section, and a ROOM line for the account-3 orchestrator.
+5. Write one line in research/SIGNIFICANCE-2026-10-08.md under a new section "## Lane SIG additions" (create it at the end if absent): what the
+   passage says, what it adds beyond print, the caveat -- rule 10 wording, yours, not the solver's.
+Do not decode, do not touch other targets, do not print credentials.
