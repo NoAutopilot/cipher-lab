@@ -1505,6 +1505,28 @@ Brief `.claude/briefs/runs/2026-10-07-account1-default-1440-jobs.md`, job DA1-GR
 
 Requests: none. Subagent calls: 0. Novelty not classified (rule 10).
 
+## fr.3040 barred z relabelled `zh` on f.18r L11-L21 (n12gra); re-score PASS 0.815 on 298, key.tsv unchanged (D4-GRA, account 4, 8 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-08-account4-default-0740-jobs.md`, job D4-GRA (the Verdict's "cheapest next"). No new gate: DA1-GRA's
+rule in `relabel_zh.py` is applied unchanged (extension written into its docstring before the re-score), and the re-score is R12D-GRA's
+registered instrument `n12gra/score5.py` (= PREREG-N9-GRA4's gate), unchanged. Disk only, no subagent, no vision call, no requests.
+- **Relabel.** `n12gra/recon_settled_prezh.tsv` = the file as committed by R12D-GRA; `relabel_zh.py` now rewrites `n12gra/recon_settled.tsv`
+  from it and also passes over `n9gra4/recon.tsv` in place. Neither shape sort (N9-GRAZ, R12D-GRAZB2) sampled any f18rB row, so only
+  reader `zb` moves: **16 zb -> zh** (n12gra); the 5 plain `z` stay `z` in both files; n9gra4/recon.tsv has no zb and is unchanged.
+  n8gra2/n8gra3 unchanged. `relabel_zh.py --check` exit 0; per-token log `relabel_zh.tsv` (now 68 rows).
+- **Re-score** (`n12gra/target_zh.json`): f.18r L11-L21 agree **0.815 on 298 keyed** vs N1 p99 0.329 / N2 p99 0.319, **PASS** (registered
+  `target.json` 0.802 on 298 with zb = NULL). Keyed N is unchanged (zb was NULL, zh is an unkeyed wildcard; neither counts as keyed), so the
+  registered planted control (`n12gra/control.json`, N=298, mean 0.871, gate 0.502, PASS) is the same computation and was not re-run.
+  Secondary (z as wildcard) 0.816 on 293.
+- **zh (open-code listing, pooled f.18r + f.18v + f.19r):** 41 occurrences -> R x39, gap x2 (this block 16 -> R x15, gap x1); null all-same
+  rate 0.000. The registered rule needs every occurrence the same letter; the two gaps keep it below C, so **zh is not added to key.tsv**.
+- **Plain z left as z on f.18r L11-L21:** 5 aligned -> A x4, S x1, none R. With DA1-GRA's 2 shape-confirmed plain z (both A), every plain z
+  on fr.3040 that a sort or this block can place reads A, not R; the 6 R-aligned f.18v/f.19r z (OFF or sort-disagreement) are the residue.
+- `decode.py --check` and `tools/decode_key.py . --check` exit 0, key.tsv `git diff` empty, f.30 extended reading unchanged (H 1468, C 18,
+  S 181, M 239, U 63).
+
+Requests: none. Subagent calls: 0. Novelty not classified (rule 10).
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA and N8-GRA3, 4 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18, S 181, M 239; U 63 -- ST moved S -> C by N8-GRA3, 4 Oct 2026; after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
@@ -1519,7 +1541,7 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); R12D-GRAZB, 6 Oct 2026: the blind sort of f.30 zb beside fr.3040 barred z was a NON-TEST (decoy control failed: proportional-position ticks land on neighbours); R12D-GRAZB2, 6 Oct 2026: rerun with per-sign boxes, decoy control PASS, outcome DIFFERENT: the f.30 zb is not the fr.3040 barred z, so fr.3040's zb = R does not transfer, zb NULL stands, key.tsv unchanged; the open gaps above are unchanged; DA1-GRA, 7 Oct 2026: the fr.3040 barred z relabelled `zh` in n8gra2/n8gra3 (25 tokens, -> R x24, gap x1; n8gra3 re-score PASS 0.889 on 696), z/zb half of the HYPOTHESES.md z A-vs-R entry closed, key.tsv unchanged; cheapest next: the same relabel rule on n9gra4/n12gra (f.18r L11-L21), ~$0.3, then the plain-z A (f.30) vs R (fr.3040, 6 leftover unboxed z) half stays a listed conflict
+Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); R12D-GRAZB, 6 Oct 2026: the blind sort of f.30 zb beside fr.3040 barred z was a NON-TEST (decoy control failed: proportional-position ticks land on neighbours); R12D-GRAZB2, 6 Oct 2026: rerun with per-sign boxes, decoy control PASS, outcome DIFFERENT: the f.30 zb is not the fr.3040 barred z, so fr.3040's zb = R does not transfer, zb NULL stands, key.tsv unchanged; the open gaps above are unchanged; DA1-GRA, 7 Oct 2026: the fr.3040 barred z relabelled `zh` in n8gra2/n8gra3 (25 tokens, -> R x24, gap x1; n8gra3 re-score PASS 0.889 on 696), z/zb half of the HYPOTHESES.md z A-vs-R entry closed, key.tsv unchanged; D4-GRA, 8 Oct 2026: the same relabel on f.18r L11-L21 (16 zb -> zh, re-score PASS 0.815 on 298; pooled zh 41 -> R x39, gap x2, not keyed; the 5 plain z there align A x4, S x1), key.tsv unchanged; the plain-z A (f.30) vs R (fr.3040, 6 leftover unboxed z on f.18v/f.19r) half stays a listed conflict; cheapest next: per-sign-box shape check of those 6 R-aligned z with R12D-GRAZB2's method and decoy control (one vision call), ~$1.5
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 

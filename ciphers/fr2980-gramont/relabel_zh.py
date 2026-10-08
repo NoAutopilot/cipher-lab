@@ -9,13 +9,18 @@ label `zb` (and the barred tokens the passes wrote as `z`) collide with f.30's c
   - every other `z` stays `z`: K1 (plain), OFF in both sorts, or the two sorts disagree (K2 in N9-GRAZ but C2/C3 in
     R12D-GRAZB2) -- listed by --list, not settled here.
 Input: <dir>/recon_prezh.tsv (the reconciled files as committed before this job); output <dir>/recon.tsv.
+D4-GRA (8 Oct 2026, account 4): same rule, unchanged, extended to f.18r L11-L21: n12gra/recon_settled_prezh.tsv (the file
+as committed by R12D-GRA) -> n12gra/recon_settled.tsv, and n9gra4/recon.tsv in place (it carries no `zb`; its plain `z`
+tokens are in neither sort, so the rule leaves the file unchanged -- logged for the record). Neither sort sampled any
+f18rB row, so on f.18r L11-L21 only reader `zb` moves.
 --check exits 1 if a committed recon.tsv differs from what this rule writes. key.tsv is not read or changed:
 `zh` is not in key.tsv, so the registered scorers treat it as an unkeyed wildcard.
 """
 import csv, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
-DIRS = ["n8gra2", "n8gra3"]
+TARGETS = [("n8gra2", "recon_prezh.tsv", "recon.tsv"), ("n8gra3", "recon_prezh.tsv", "recon.tsv"),
+           ("n12gra", "recon_settled_prezh.tsv", "recon_settled.tsv"), ("n9gra4", "recon.tsv", "recon.tsv")]
 
 
 def rd(p):
@@ -32,8 +37,8 @@ def classes():
     return n9, r12
 
 
-def relabel(d, n9, r12, log):
-    src = (HERE / d / "recon_prezh.tsv").read_text().splitlines()
+def relabel(d, n9, r12, log, inp="recon_prezh.tsv"):
+    src = (HERE / d / inp).read_text().splitlines()
     out = [src[0]]
     for ln in src[1:]:
         row, codes = ln.split("\t")
@@ -57,9 +62,9 @@ def relabel(d, n9, r12, log):
 def main():
     n9, r12 = classes()
     log, stale = [], False
-    for d in DIRS:
-        new = relabel(d, n9, r12, log)
-        p = HERE / d / "recon.tsv"
+    for d, inp, outp in TARGETS:
+        new = relabel(d, n9, r12, log, inp)
+        p = HERE / d / outp
         if "--check" in sys.argv:
             if p.read_text() != new:
                 print(f"STALE {p}"); stale = True
@@ -70,7 +75,7 @@ def main():
         for r in log:
             print("\t".join(r))
     if "--check" in sys.argv:
-        print("recon.tsv up to date" if not stale else "recon.tsv STALE")
+        print("recon files up to date" if not stale else "recon files STALE")
         sys.exit(1 if stale else 0)
 
 
