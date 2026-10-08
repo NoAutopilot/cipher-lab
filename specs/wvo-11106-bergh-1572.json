@@ -1,0 +1,29 @@
+{
+ "slug": "wvo-11106-bergh-1572",
+ "name": "Willem van den Bergh ('Guillaume de Berghe') to Willem van Oranje, 19 Septembris [year editorial: WVO 1572; Bergh also wrote to Orange 1574, 1576, 1577], KHA A 11/XIV A/10-12, WVO 11106",
+ "date": "19 September, year not on the leaf (WVO editor: 1572)",
+ "language_candidates": [
+  "fr",
+  "nl",
+  "de"
+ ],
+ "ciphertext": "ciphers/wvo-11106-bergh-1572/ciphertext.txt",
+ "ciphertext_source": "WVO PDF image p.2 (resources.huygens.knaw.nl/media/wvo/images/11000-11999/11106.pdf), 22 line crops images/crops/, two blind Sonnet passes per half + tools/reconcile_passes.py + reconciler picks (tx/build_ciphertext.py), FAM-11106T 8 Oct 2026",
+ "alphabet": "provisional glyph labels (tx/signlist.md): lowercase letter-shapes, S long s, sz, dd looped d, o2, G hooked g, yx crossed-tail sign, capitals A B C D E, digits 2-9, X; space-separated tokens",
+ "constraints": [
+  "820 cipher signs, 41 distinct labels (provisional; look-alike pairs d/dd, y/yx, s/S, g/G/q/9 unsettled, 72 positions in tx/focus.tsv)",
+  "err_2reader 0.10 (84 of 833 aligned columns split); err_true not measurable (no benchmark item of this hand)",
+  "no word division; closing formula in clear French; address in French",
+  "no crib used (owner/brief: the year is editorial)"
+ ],
+ "cheap_tests_in_order": [
+  "1. design_prior.py on the transcription",
+  "2. family_run.py, the design prior's class above null, matched control first (fr16, N and K from the transcription, noise bracketing err_2reader)"
+ ],
+ "judge": {
+  "language": "fr",
+  "min_word_cover": 0.5,
+  "note": "fr = tools/data/fr16 Catherine de Medicis letters (1570s), era-matched, single source file: a FAIL/PASS is of unknown fold reliability (CLAUDE.md rule 3)"
+ },
+ "written": "8 Oct 2026 by FAM-11106T (LANE FAMILY, account 2)"
+}
