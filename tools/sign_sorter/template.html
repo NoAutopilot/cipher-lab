@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-08.2"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-08.3"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -104,6 +104,11 @@ body.ink2 .t img,body.ink2 canvas,body.ink2 .bigt img{filter:grayscale(1) contra
 #ctx[hidden]{display:none}
 #ctx{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:16px}
 #ctx .box{background:var(--surface);color:var(--ink);border-radius:8px;padding:14px;max-width:min(980px,100%);width:100%;max-height:100%;overflow:auto;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;box-sizing:border-box}
+/* iPhone (owner, 8 Oct 2026: "I still can't see the strip"): Safari shrinks a scroll-container grid row (min-height 0) to the space
+   left under the dialog's max-height, so the line strip became a sliver. Rows are sized to their content and the strip box is not a
+   scroll container (the canvas is drawn at the box's own width, so nothing scrolls sideways anyway). */
+#ctx .box{grid-auto-rows:max-content;align-content:start;-webkit-overflow-scrolling:touch}
+#ctx .cv{overflow:visible;flex-shrink:0;min-height:min-content}
 .cv{overflow-x:auto;background:var(--tile);min-width:0;max-width:100%}
 canvas{display:block;max-width:none;height:auto}
 #ctxQ,#s2Q{font-weight:600;margin:0}
