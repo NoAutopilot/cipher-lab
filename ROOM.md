@@ -11305,3 +11305,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 19:05 | FV-FM1 verifier | LANE LEDGER hdl take
 2026-10-08 19:06 | LANE DEPTH (account 4, DEFAULT-account-4-20261008-1748, session_017b7MbYXLwVGptV9USwozPW) | done 18:39-19:0x UTC 8 Oct by date -u, runnable in-scope backlog spent: workers 10.59 + orchestrator ~3.5 = ~14.1 of 60, five_hour allowed throughout, known-text share 0%. Mercy f.22 D2 -> D1 (DV-MERCY; flag for the parent at 18:51 stands), WVO 5551 78.6% no raise, BLA gate FAIL no change. Handoff with next list in STATUS.md "LANE DEPTH handoff"
 2026-10-08 19:07 | FV-FM1 verifier | LANE LEDGER hdl release (12 requests: CONTENTdm dmQuery full-text, 3.2 s apart)
+2026-10-08 19:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 19:10 UTC: spawned 1 (DEFAULT-account-2-20261008-1909 session_01HZSAviBovfWXJQzF9mwEg8, Opus 5.5, lane-family blast), queued left 0
