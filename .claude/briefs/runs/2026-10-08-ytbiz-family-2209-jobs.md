@@ -146,3 +146,45 @@ download) else one fetch each ("sachsen take", >= 2 s; MANT-0008 may hold it -- 
 ../key.tsv and --check; pooled shuffled-key gate (the shuffle_gate_0390.py design, 1000 shuffles) pre-registered before scoring; per-frame
 numbers alongside the pooled one. Stop before a unit that crosses 80% of cap or box. Report what was found and where it was not found; a
 gate PASS goes to the lane for a separate verifier; do not classify novelty.
+
+## Wave 2 results (22:5x UTC): SUR-BLIND 4.89 (one unit, 0744 left: dotted-ij gate PASS both passes -> verifier), MANT-0008 4.83 (Krauske vs
+0008 gloss 159/205 vs p99 46 PASS; no key entry), LAG-HOM 1.82 (controls pass, judge has no power on gated control decodes: cannot decide),
+V-11008KP 1.91 (AUDIT 3; R2 span not as printed, re-scored PASS; N3 D1 unchanged), MANT-R8 5.65 (7 frames, pooled gate PASS 7/1000 thin ->
+verifier). Wave 2 total 19.10; workers 34.13 so far.
+
+## Wave 3 (23:0x UTC 8 Oct)
+
+### V-MANTR8 (Opus, cap 4, box 75 min): FIRST VERIFIER, sachsstaatsarchiv-manteuffel-1712 f0375_08/ (MANT-R8)
+You are a verifier, a session other than the solver (MANT-R8, session_01Ch5SyJKu1jEKbwHfjBFxyT). CLAUDE.md "Verifier brief (template)" in
+full; claim under audit: NOTES.md section MANT-R8 (f0375_08/: 694/08 0375 0214 0436 0241 0435 0065 and 694/09 0070, 99 tokens C 67 M 30 U 2,
+PREREG-MANTR8 pooled shuffled-key gate PASS 7/1000, limit 10; "ma guerison" 0214, Kraut 0436, Arnold/Eosand 0375). (1) Re-derive with
+`tools/decode_key.py ... --check` and re-run the gate with fresh seeds; eye-check at least the tokens the three readings hang on against the
+crops (disk only). (2) Try to break the gate: is 7/1000 robust to new seeds, and does any single frame carry it? (3) Prior work and print per
+the template (Heinsius XIII-XIV already searched by the solver -- repeat with your own phrases; Acta Borussica I; Droysen IV.1; the frames'
+own clear text around each code run for whether the cipher only repeats clear words). (4) N-class and depth per item under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md (names-only runs are usually D0-D1), key class `published` (Krauske 1893, unprinted MS --
+see AUDIT.md VERIFY-MANT), status.json row(s) only if a class is assigned, SO row only at N3+ per CLAUDE.md. Write "## AUDIT (V-MANTR8)" in
+AUDIT.md. Rule 10 wording only.
+
+### V-SUR0744 (Opus, cap 3, box 60 min): VERIFIER, na-suriname-map-1781 SUR-BLIND unit 0744 left
+You are a verifier, a session other than the solver (SUR-BLIND, session_01KtpBbP72ZnZgkeS9uLr2en). Read NOTES.md "SUR-BLIND" section,
+PREREG-SUR-BLIND.md and score.py. Claim: on the held-out unit 0744 left, two blind passes put dotted ij in m|n at 0.833 (A) / 0.722 (B) vs
+shuffle p99 0.700 / 0.688 (n_al 18 each), unit PASS; undotted y reads m|n at the same rate. (1) Re-run score.py --check and the gate with
+fresh seeds. (2) Try to break it: is the gate's shuffle the right null for this statistic (CLAUDE.md rule 3: can the control differ from the
+target on it?), is pass B's margin (0.722 vs 0.688) within seed noise, and does the "undotted y the same rate" finding mean the gate tests a
+class (y-family) rather than the dot? (3) Rule on what the unit licenses for the key/transcription conventions (no new key value unless
+the gate holds on both passes with fresh seeds), and write "## AUDIT (V-SUR0744)" in AUDIT.md (create a section if absent) with the outcome
+and what the next units (0744 right, 0745) must show. No novelty class unless a reading is claimed. Rule 10 wording only.
+
+### LAG-GAP (Opus, cap 2.5, box 60 min): la-garde-1577, the pre-registered score-gap gate at N=229
+NOTES "Remaining gaps" (LAG-HOM): the spec judge has no power on decodes at the gated recovery, so judge the homophonic/masc decode by score
+gap instead. Pre-register in PREREG-LAG-GAP.md BEFORE computing: the target's best solver score vs (a) the best scores of control decodes at
+the measured noise (0.055 and 0.084; >= 20 seeds) and (b) the best scores on shuffled targets (>= 20 seeds), same N=229, K, corpus and
+restarts as LAG-HOM; PASS = target above the (b) p95 and within the (a) range; name a power check (a control text at the same N passes the
+gate). Run with tools/family_run.py or the LAG-HOM scripts; CPU only. Both numbers to HYPOTHESES.md. PASS goes to the lane for a separate
+verifier; a FAIL with a passed power check is a control-backed negative for this family at this N -- log it so (rule 3). NOTES, gaps, check.
+
+### W11008-R2 (Sonnet, cap 0.8, box 30 min): wvo-11008-certain-1572, set 5194's R2 span to Groen's printed words
+AUDIT.md "AUDIT 3" item 4: set R2's span in `w5194_gate.py` to Groen p.448's printed words exactly as the verifier quotes them ("resolu en
+campagne je me trouve" ... -- read AUDIT 3 for the exact span), regenerate w5194_gate.tsv, run its --check, and record the numbers (should
+match AUDIT 3's re-score: R2 20 vs p95 10). Update NOTES W11008-KP section with a dated line; no other change. Disk only.
