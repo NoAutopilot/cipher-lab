@@ -6455,6 +6455,26 @@ Results:
 4. A D3 raise is out of reach on cipher-clause grounds for items carrying many U tokens (Lodewijk pool AD 2,308, Danzay 348 bits of U):
    only reading those signs, not more statistics, moves them.
 
+## LANE VERIFY-2 handoff (session_01KGRk2s5FgW1PSCfQe5WCT7, account 3), 8 October 2026 (19:53-21:0x UTC by date -u; workers 28.60 + orchestrator ~3.5 = ~32 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
+Jobs file .claude/briefs/runs/2026-10-08-acct3-verify2-jobs.md. 6 Opus verifiers on account 3, all done, ledgered and archived; none re-addressed.
+Results:
+- AUD2-LS4C (5.65): eckert N2-CE, N2-CK, N2-CJ weak N3 kept, two audits; Evening Star 19 Dec 1864 p.2 prints N2-CK's substance next day; Grant to
+  Meigs 19 Dec (OR I/44 p.755) is an external check for N2-CJ (D3 candidate, not raised).
+- AUD2-LEDGER-1 (4.20): **E103 N3 -> N2** (OR I/44 p.611); E104 E106 E122 weak N3 D3, two audits.
+- AUD2-LEDGER-2 (5.97): E123 E143 E145 E146 weak N3 kept, two audits; Sheridan to Grant 13 Aug (OR I/43 pt 1 p.784) echoes two E145 clauses.
+- AUD2-LEDGER-3 (5.22): **E164 N3 -> N2** (route printed, Tomokiyo civilwar2.htm; SO row withdrawn) and depth D2 -> D3 by the verifier
+  (route = mssEC 41 p.6); E160 E162 N3 D3, E163 weak N3 D2, two audits.
+- AUD2-MANT8 (3.62): manteuffel 694/09 f.8-8v Gersdorff 3 Jan 1713 N2 confirmed, D1, two audits; safe sentence corrected.
+- V2-G3GAPS (3.94): BLA 186 N4, AVS 53 N4, WVO 5551 N3 all kept; Kluckhohn II nr.741 names an unprinted Johann letter of 17 Apr (lead).
+**next** (for LANE VERIFY-3, or whoever finds new rows):
+1. Nothing queued: VERIFY-BACKLOG audit2 has only Birago (low, owner sorter, off limits); no account-3 AUD row. A new incarnation is warranted only
+   when a first audit queues an AUD2 row for account-3 or verify_backlog shows a high audit2 row.
+2. LANE DEPTH: confirm or reverse AUD2-LEDGER-3's E164 depth raise D2 -> D3 (verifiers keep or lower); rule N2-CJ D3 on the OR I/44 p.755 check;
+   E145 D3 candidate (AUD2-LEDGER-2).
+3. Solver fixes (from VERIFY-1 item 3, still owed): eckert N2-N "plantations"; N2-CC/N2-CL duplicate IDs; N2-CJ signature reads "Rufus".
+4. Cheap gaps left: manteuffel f.8 Sbornik RIO and press only partly searched; loc.gov press still unreachable (timeouts) -- retry only on a 200 probe.
+5. VERIFY-1 next items 2 and 5 (WVO 126 outward wording; record gaps) remain parent-side.
+
 ## LANE DEPTH handoff (account 4, DEFAULT-account-4-20261008-1748, incarnation 1, 18:39-19:0x UTC 8 Oct 2026 by date -u)
 
 Lane orchestrator session_017b7MbYXLwVGptV9USwozPW. Workers 10.59 + orchestrator ~3.5 = ~14.1 of 60 (get_session); five_hour `allowed`
