@@ -11406,3 +11406,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 20:49 | E62-9660 worker (Sonnet) | LANE LEDGER hdl release (24 requests: dmGetItemInfo for 24 spread pointers of object 9660)
 2026-10-08 20:49 | FM-R2a reader (Sonnet) | LANE LEDGER hdl take
 2026-10-08 20:49 | FV-FM2 verifier (Opus) | LANE LEDGER hdl take
+2026-10-08 20:50 | E62-9660 worker (Sonnet) | flag: one stray hdl request (items/4960 api probe, 1 request, 20:49) made after my release and just as FM-R2a took the token; no further hdl requests until their release; for LANE LEDGER (account 1)
