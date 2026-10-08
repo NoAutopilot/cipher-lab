@@ -1,5 +1,5 @@
 blocked
-Check-solved verdict: Krüger 1876 (IA full text, read by this worker) was opened, but the standard printed edition, Cuhn's *Mémoires et négociations secrètes de Rusdorf* (Leipzig 1789) and the *Consilia et negotia politica* (1725), exist in Google Books full view and could NOT be opened as text from this container (not on IA; no in-book search route), so the edition check is unread and the verdict is blocked.
+Check-solved verdict (updated RUS-CS, 8 Oct 2026): still `blocked`. This worker opened Krüger 1876 earlier (FAM-CS4333) but could not open Cuhn's *Mémoires* (1789) or the *Consilia* (1725) as text from the cloud: HathiTrust bibliographic API returned no record for either title (OCLC 236090673 empty; the *Mémoires* has no Open Library/OCLC entry), so HTRC Extracted Features had no HTID to query; Google Books API snippets show the *Mémoires* print Latin letters addressed 'Illustrissimo Domino AXELIO OXENSTIERN ... Regni Sueciae Cancellario' (ids o2ZeAAAAcAAJ, M4B-0ou3Tb0C, p. 23 of a volume), but no page carrying these leaves' dates was reached. Edition check unread; LOCAL-QUEUE L67 stays the named blocker.
 
 # decode-4333-rusdorff-oxenstierna-1628
 
@@ -89,6 +89,27 @@ Findings (search results and design observations; nothing read, nothing graded a
   R4336/R4337; not a candidate for the name codes.** Not tested (no key test in this job).
 - Against R4334/R4335: neither key is a letter-shift; not candidates.
 
+## RUS-CS: cloud routes for the edition check (RUS-CS, 8 Oct 2026, 19:20-19:25 UTC by date -u)
+Prior work: `tools/prior_work.py ... --item-spec ... --step-type lookup --fetch` exit 4: LEAD = this worker's own ROOM claim (not another worker's), UNCHECKED rows for tomokiyo (no folio), solver caches (no folio/R-id), editions (no prior_editions.tsv row); answered by the hand checks below. Check 1 own work: nothing done beyond FAM-CS4333/FAM-4333L in this folder (grep above). Checks 2-4: below. Check 5: no decode, n/a.
+
+| route | query | result |
+|---|---|---|
+| (1a) Open Library search | rusdorf memoires negociations; title=memoires negociations secretes; author=rusdorf | *Consilia* 1725 has OCLC 236090673; no entry for the 1789 *Mémoires* |
+| (1b) HathiTrust Bibliographic API (Chrome UA) | brief/oclc/236090673; brief/oclc/79767843 (Nachrichten 1762) | empty records for both; positive control brief/oclc/29081812 (Krüger 1876) returns record 100567861, htid hvd.32044014784144 => API works, the two Rusdorf titles are not found by these OCLC numbers |
+| (1c) HTRC Extracted Features | not run: no HTID for either title | unchecked (not a negative) |
+| (2) Google Books API, key + country=US, filter=full | volume metadata for 4LxfAAAAcAAJ HaRJAAAAcAAJ kmZeAAAAcAAJ 35xJAAAAcAAJ o2ZeAAAAcAAJ sC5XAAAAcAAJ | all ALL_PAGES, 725-838 pp.; M4B-0ou3Tb0C is a further *Mémoires* copy (816 pp.) |
+| (2) same, `"Oxenstiern" "Rusdorf"` | snippet in o2ZeAAAAcAAJ and M4B-0ou3Tb0C | "Illustrissimo Domino AXELIO OXENSTIERN ... Regni Sueciae Cancellario SALUTEM OFFICIOSAM" at printed p. 23 of a volume: the *Mémoires* DO print Rusdorf's Latin letters to Oxenstierna, dates not seen |
+| (2) same, date queries (Idus Martii; Aprilis 1624; Novembris 1624; Februarii 1625 + Rusdorf; Hagae 1625; Londini 1624; Martii 1624) | none of 7 returns a snippet from the Rusdorf volumes | no hit; the snippet route does not search inside a volume, so this is not a negative. Positive control (a known letter by date) not available => unchecked |
+| (2) leads seen, not read | `"Oxenstiern" "Novembris 1624"` -> dJ4AAAAAYAAJ (Bidrag till kännedom av Finlands natur och folk): a list "Epistolae Ludovici Camerarii ad Axelium Oxenstierna ... Novembris 1624 ... Dec. 1626", Camerarius not Rusdorf; `"Oxenstiern" "Februarii 1625" Rusdorf` -> HBEPCaK4NZEC (Deputy Keeper of the Public Records, annual report): calendar line with "Rusdorff ... 11 August 1625"; also 'Rusdorff an Oxenstierna, 15. März 1625' in Droysen's Geschichte der preussischen Politik III (ScU5AQAAMAAJ), citing Mém. I p.450ff | each a lead for the print check (the Droysen cite is a different date from the leaves' 15/25 Feb 1625) |
+| (3) Riksarkivet NAD (sok.riksarkivet.se) | two search URLs, 2 requests | both 302 to /captcha: unreachable from the cloud; note for "E 701 Ser. B." not reached |
+| (4) AOSB ser. I Bd 3 (IA rikskanslerenax00akadgoog, djvu text, one fetch after one 500 error and one retry, saved only in scratchpad) | all 3-digit numbers 7xx near a cipher footnote; "Rusdorf" occurrences | table below; "Rusdorf" appears twice in the OCR (p.306 the 10 Feb 1626 letter, and the index entry: Rusdorf pp. 32, 44, 75, 76, 214, 215, 306, 307, 313, 314, 319) |
+
+AOSB I:3 printed name codes (OCR, ±1 page, verify on the page image) against the 7xx codes seen on R4336/R4337 (reduced-image reader transcription, grade I): 746 = "Regi Daniae" (R4336 p1, p2); 785 = "Regi Bohemiae" (not seen on R4333-37); 744 and 747 appear as footnote codes without a gloss in the OCR (R4336: 744, 747 present); 745, 740, 734, 678, 598, 301, 240, 517, 356, 306, 637, 738, 631, 388, 627, 635, 628, 458, 238, 239, 670, 236, 428 have no printed counterpart found in I:3. Overlap is on 746, 744, 747 only. A table, no decoding and no mapping claimed: in-range numbers are a lead, not a match, and 1625 Swedish chancery codes need not be Rusdorf's. Note also that the index lists Rusdorf as 'Kur-Pfalzisk resident och svensk korrespondent i England' and the Oxenstierna letter of 10 Feb 1626 says his letters were not deciphered at the chancery ("icke öfversat aff cyphrene").
+
+Request counts (this worker): openlibrary.org 5, catalog.hathitrust.org 3, www.googleapis.com 20, sok.riksarkivet.se 2 (captcha, stopped), archive.org 2 (one 500, one retry 200). Cost not read by this worker (orchestrator's get_session).
+
+What this changes: the *Mémoires* print at least some Rusdorf Latin letters to Oxenstierna, so the printed-edition check (L67) is a live, specific need and prior-work check 4 stays UNCHECKED, not clear. The cloud routes tried cannot read the pages. No reading, no novelty class.
+
 ## While waiting
 The one action that depends on nobody: open the Mémoires (Cuhn 1789, vols 1-2) and the 1725 Consilia in Google Books full view in a page-viewing environment (any browser; or HathiTrust full text via the owner's desk runner) and search "Oxenstiern", "Oxenstierna", "1628" and the signature numbers 760/761/3230/853/953; then one browser login (`tools/decode_browser_login.js`, `--guess-fullsize`, ~$1) to view the 15 native leaves for premise (c). Neither is a purchase or a person's reply.
 
@@ -97,19 +118,20 @@ Read so far: 0 of 15 pages read by us (unmeasured token count: no transcription 
 - Mémoires 1789 / Consilia 1725 letters to Oxenstierna of 1624, 1625, 1628 - blocker: waiting-on LOCAL-QUEUE L67 (owner's runner, Google Books page view); no cloud text route (FAM-CS4333)
 - R4336 + R4337 numeric letters (5 pages) - blocker: not-attempted; no transcription; next: two blind Sonnet passes on line crops + reconcile, ~$6
 - R4120 key on R4336/R4337 letter groups - blocker: not-attempted; range match only (14-85, nulls 86+); next: after transcription, PREREG then decode vs 200 within-class permuted keys and a matched synthetic control, ~$2
-- 7xx name codes in R4336/R4337 - blocker: not-attempted; same range as AOSB I:3 printed footnote codes (746 Regi Daniae); next: tabulate the I:3 footnote codes from IA OCR and compare, ~$1
+- 7xx name codes in R4336/R4337 - blocker: not-attempted; tabulated against I:3 by RUS-CS (8 Oct 2026, overlap 746, 744, 747 only), further use needs the R4336/R4337 transcription; next: two blind passes on line crops + reconcile, ~$6
 - R4334/R4335 letter cipher (1624) - blocker: not-attempted; apparent one-place shift, period gloss on R4334 p2; next: prior-work check 4 on Mémoires vol. I (L67) then a shift decode with --check, ~$1.5
 - R4333 p1+p3 numeric pages - blocker: not-attempted; undated; next: transcribe with R4336/37, ~$2
-- Riksarkivet NAD note for volume "E 701 Ser. B." - blocker: not-attempted; catalogue note never reached; next: sok.riksarkivet.se/nad search, ~$0.3
+- Riksarkivet NAD note for volume "E 701 Ser. B." - blocker: waiting-on LOCAL-QUEUE L67 (owner's runner); sok.riksarkivet.se 302s to a captcha from the cloud (RUS-CS 8 Oct 2026); next: add the NAD lookup to the L67 runner request, ~$0.3
 - Kassel MS vol. 3 / Munich Camerarius Bd.72-74 copy-books - blocker: not-attempted; digitisation status unknown; next: Kassel/BSB catalogue lookup, ~$0.5
 
 ## Escalation (FAM-4333L, 8 Oct 2026)
 - [ ] siblings: the Oxenstiernska samlingen volume's other leaves (DECODE shows only 15 pages); NAD lookup first
 - [x] clear-pages: all 15 leaves viewed at full size served, address leaves and dating lines read (FAM-4333L)
 - [ ] known-keys: R4120 (Camerarius-Grubbe 1626) range-matches the numeric letter groups; test after transcription
-- [ ] print: Mémoires/Consilia unread, waiting on L67; AOSB I:3 footnote codes not yet tabulated
+- [ ] print: Mémoires/Consilia unread, waiting on L67 (HathiTrust API no record, EF no HTID, Google Books snippets do not search in-volume; RUS-CS 8 Oct 2026); AOSB I:3 footnote codes tabulated
 - [ ] key-rebuild: R4334 p2 margin gloss (a-z keyed) is a period key source for the 1624 letter cipher
 - [x] image-check: full-size images served and viewed by reduced-copy readers (premise c), FAM-4333L
 - [n/a] retry: nothing has been attempted yet to retry
 Update FAM-4333L (8 Oct 2026): the leaves date 1624-1625, carry two cipher systems, and one page (R4334 p2) carries its own period gloss; the numeric letters R4336/R4337 have a range-matched period key candidate (R4120). The DECODE "1628" label is not supported by any dated page; the folder name is kept so links stay valid. Status stays blocked until L67 settles the edition check (intake gate).
-Verdict: keep going: 7 internal gaps; cheapest next: Riksarkivet NAD lookup, ~$0.3
+Update RUS-CS (8 Oct 2026): edition check still unread; cloud routes exhausted (HathiTrust no record, NAD captcha, snippets only). Leads to read on L67: Mémoires p. 23 ff. Latin letters to Oxenstierna, Droysen's cite of Mém. I p.450ff.
+Verdict: keep going: 6 internal gaps; cheapest next: L67 owner-runner page view of the Mémoires, ~$0 cloud
