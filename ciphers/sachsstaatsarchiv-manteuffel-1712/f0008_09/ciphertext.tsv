@@ -1,0 +1,16 @@
+# 694/09 frame 0008, code lines L01-L12 (crop centres 95..768 in region 620,1330,1520,830 of the full-size frame). Two blind Sonnet
+# passes (passA_0008.tsv, passB_0008.tsv) + worker reconciliation from the image. conf: high = passes agree; low = settled by the
+# worker (this hand writes 9 with a 'y' tail; 5 with a flat 'S' top). '|' = clear words / list marker; X / ~ = blot or struck (not codes).
+line	tokens	settled
+L01	| 110 55 66 54 28 120 10 7 | 103	54 (A 54, B 84) low
+L02	15 57 34 60 46 30 35 | 187 24 6 9 21 35 5 35 54 59 17 25 81 34 60 35 28 10 6 44 16 22	9 (A 19, B 9); 5 (A 5, B 6); 59 (A 59, B 57) low
+L03	10 34 12 103 66 50 67 30 6 14 66 15 30 22 31 13 33 100 2 43 35 32 28 |
+L04	| 17 66 30 9 1 39 35 60 110 37 16 44 401 51 46 14 10 21 33 X 63 46	9 (A 19?, B 9?); 401 (A 101?, B 401) eye 401
+L05	30 37 4 24 |
+L06	15 35 60 28 33 50 60 31 46 51 | 120 50 7 9 60 | 50 5 35 3 28 16	9 (A 9?, B 4) low; 16 (B only, edge) low
+L07	59 35 51 29 35 51 36 33 15 2 51 503 399 | 64 22 21 57 38 32 59	59 (A 54?, B 54?; eye '5 9') low; 29 (A 29?, B 27) low; end 59 (A 54?, B 5?) low, edge
+L08	25 68 10 50 170 130 160 202 | 100 35 29 28 60 54 34 17 10 51 100	29 (A 29?, B 27) low
+L09	297 | 187
+L10	| 27 35 28 39 1 X 50 120 35 51 81 35 21 66 30 10 29 18 67 25 53 10 58 26 10 17 60 35 24
+L11	10 2 28 66 57 39 16 14 29 | 51 50 44 42 X 35 27 66 32 16 67 29 43 35 31 10 15 33 ~14 28	X = small struck group (A 4?, B 4?)
+L12	60 2 46 52 54 26 64

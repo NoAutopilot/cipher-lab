@@ -146,3 +146,17 @@ Not resolved here (prereg: key changes only for codes that clear): 451 and 588 s
 code that loses BH significance when material is added should leave the key is an orchestrator decision. 714: 5 'u' vs 2 'une' chunks
 (0521, 0526), the un/une conflict above, unchanged.
 | 6 Oct 2026 R13-MANT85 | per-leaf aligner gate, PREREG-MANT85 (694/09 frame 0085, March 1713, 11 glossed pairs, letter range; runs 9+10 one pair) | 200 gloss permutations, seed 85: mean 0.310, p95 0.542 (secondary per-line pairing: mean 0.216, p95 0.438) | S 0.125 (3/24, S_single N 0); secondary 0.000 (0/16) | FAIL; nothing merges. Known-answer (not a gate): Krauske's letter table reads the glossed runs (la reyne, nous avons plus gagnes, k-r, g-r) -- table still in use in 694/09; 483/501/349 unglossed |
+
+## MANT-0008 (8 Oct 2026, LANE FAMILY account 2): 694/09 frame 0008 gloss gate, and the rule-4 slots it raises
+| family | control | control result | target result | verdict |
+|---|---|---|---|---|
+| Krauske key.tsv vs the leaf's own interlinear gloss, per-code DP alignment over 13 glossed runs (PREREG-MANT-0008, f0008_09/gloss_gate.py) | key values permuted over codes, 1000 draws, seed 8 | mean 31.66, p95 42, p99 46, max 57 | S 159/205 keyed codes (0.776) | PASS (S > p99 and >= 0.5 x keyed); 26 of 67 distinct codes matched on every instance |
+
+Slots where the gloss reads a value Krauske does not give (rule 4: logged with both witnesses, key.tsv unchanged; each is one instance):
+| code | Krauske 1893 (key.tsv) | 694/09 0008 gloss slot | context | status |
+|---|---|---|---|---|
+| 18 | null ("wahrscheinlich non-valeurs", brace 18-19) | q | G12 '29.18.67.25' under "...menaces qu'a..." (s q u a) | conflict, single instance; a null would leave 'q' unconsumed, which the DP also allows at -0.25 -- weak |
+| 63 | null ("non valeurs?", brace 61-63) | ff | G05 '33.63.46.30' under "...offici..." (o ff i c) | conflict, single instance; gloss ending unread |
+| 57 | s (C) | a | G02 '15.57.34' under "caprice" (c a p); every other code in G02 matched | conflict, single instance; 57 is also a reader split (57/59 on L02) and 57 misses twice more (G09 v, G12 t), so a misread 50 (= a) is as likely as a key difference |
+| 130 | Walling (M) | 'Roy' by position (G09 '170.130.160.202' under "le Roy et la Pologne") | the DP scores names letters-only, so these name slots are positional only | listed, not scored as conflicts: 130 gloss Roy; 160 (Manteuffel, C) under "et"; 202 (la republique de Pologne, C) under "Pologne" (agrees in substance) |
+Codes above 401 on the leaf: 503 and 399 (G08 run end, after "les forces" is fully spelled) and 297 (G10 run end, after "des troupes") sit under no gloss letters -- no value from this leaf.

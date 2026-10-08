@@ -1,0 +1,23 @@
+key: key.tsv; spans 13; code tokens in spans 210; keyed 205
+S (codes matched under key) = 159/205 keyed (0.776)
+shuffled-key control (1000 draws, seed 8): mean 31.66, p95 42, p99 46, max 57
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+G01	L01	la Battaille	5/8	110:match:la 55:match:b 66:match:a 54:miss:t 28:match:t 120:miss:ill 10:match:e 7:null:
+G02	L01-L02	le caprice du	7/8	103:match:le 15:match:c 57:miss:a 34:match:p 60:match:r 46:match:i 30:match:c 35:match:e
+G03	L02	Roy de Suede	1/1	187:match:roidesuede
+G04	L02-L03	qui ne veut pas preter l'oreille a aucun accommodement	40/44	24:match:q 6:match:u 9:match:i 21:match:n 35:match:e 5:match:v 35:match:e 54:match:u 59:match:t 17:match:p 25:match:a 81:miss:s 34:match:p 60:match:r 35:match:e 28:match:t 10:match:e 6:miss:r 44:match:l 16:match:o 22:miss:r 10:match:e 34:miss:i 12:match:l 103:match:le 66:match:a 50:match:a 67:match:u 30:match:c 6:match:u 14:match:n 66:match:a 15:match:c 30:match:c 22:match:o 31:match:m 13:match:m 33:match:o 100:match:d 2:match:e 43:match:m 35:match:e 32:match:n 28:match:t
+G05	L04-L05	pacifier la Pologne sinon offici	19/25	17:match:p 66:match:a 30:match:c 9:match:i 1:match:f 39:match:i 35:match:e 60:match:r 110:match:la 37:miss:p 16:match:o 44:match:l 401:match:o 51:match:s 46:match:i 14:match:n 10:miss:o 21:match:n 33:match:o 63:miss:ff 46:match:i 30:match:c 37:null: 4:null: 24:miss:i
+G06	L06	cette armee	6/10	15:match:c 35:match:e 60:miss:t 28:match:t 33:miss:e 50:match:a 60:match:r 31:match:m 46:miss:e 51:miss:e
+G07	L06	d'agir	5/5	120:match:d 50:match:a 7:match:g 9:match:i 60:match:r
+G08	L06-L07	avec toutes les forces	15/19	50:match:a 5:match:v 35:match:e 3:miss:c 28:match:t 16:match:ou 59:match:t 35:match:e 51:match:s 29:miss:l 35:match:e 51:match:s 36:match:f 33:match:o 15:match:c 2:match:e 51:match:s 503:null: 399:null:
+G09	L07-L08	convenu avec le Roy et la Pologne	8/15	64:match:c 22:match:o 21:match:n 57:miss:v 38:miss:e 32:match:n 59:miss:u 25:match:a 68:match:v 10:match:e 50:miss:c 170:match:le 130:miss:lap 160:miss:olo 202:miss:gne
+G10	L08-L09	des troupes	9/12	100:match:d 35:match:e 29:match:s 28:match:t 60:match:ro 54:match:u 34:null: 17:match:p 10:match:e 51:match:s 100:null: 297:null:
+G11	L09	Roy de Suede	1/1	187:match:roidesuede
+G12	L10-L11	a des menaces qu'a des representations	27/37	27:null: 35:null: 28:null: 39:null: 1:null: 50:match:a 120:match:d 35:match:e 51:match:s 81:miss:m 35:match:e 21:match:n 66:match:a 30:match:c 10:match:e 29:match:s 18:miss:q 67:match:u 25:match:a 53:match:d 10:match:e 58:match:s 26:match:r 10:match:e 17:match:p 60:match:r 35:match:e 24:miss:s 10:match:e 2:miss:n 28:match:t 66:match:a 57:miss:t 39:match:i 16:match:o 14:match:n 29:match:s
+G13	L11-L12	s'allier a nous contre	16/25	51:match:s 50:match:a 44:match:l 42:match:l 35:match:e 27:match:r 66:match:a 32:match:n 16:match:o 67:match:u 29:match:s 43:null: 35:null: 31:null: 10:null: 15:match:c 33:match:o 28:match:t 60:match:r 2:match:e 46:null: 52:null: 54:null: 26:null: 64:null:
+
+distinct codes: 67; matched on every instance: 26
+unkeyed codes and their slots: 18=q; 63=ff; 297=0; 399=0; 503=0
+keyed codes with a non-match slot: 1(f)=null:; 2(e)=miss:n; 3(w)=miss:c; 4(x)=null:; 6(u)=miss:r; 7(g)=null:; 10(e)=miss:o,null:; 22(o|a)=miss:r; 24(q)=miss:i,miss:s; 26(r)=null:; 27(r)=null:; 28(t)=null:; 29(s)=miss:l; 31(m)=null:; 33(o)=miss:e; 34(p)=miss:i,null:; 35(e)=null:,null:; 37(g)=miss:p,null:; 38(h)=miss:e; 39(i)=null:; 43(m)=null:; 46(i)=miss:e,null:; 50(a)=miss:c; 51(s|sa)=miss:e; 52(t)=null:; 54(u)=miss:t,null:; 57(s)=miss:a,miss:v,miss:t; 59(t)=miss:u; 60(r|re|ro)=miss:t; 64(c)=null:; 81(k)=miss:s,miss:m; 100(d)=null:; 120(d)=miss:ill; 130(Walling)=miss:lap; 160(Manteuffel)=miss:olo; 202(la république de Pologne)=miss:gne

@@ -1,0 +1,14 @@
+span_id	line	gloss	codes	note
+G01	L01	la Battaille	110 55 66 54 28 120 10 7	gloss over the run
+G02	L01-L02	le caprice du	103 15 57 34 60 46 30 35	gloss over L02 15..35; 103 (L01 end) is the run's first code
+G03	L02	Roy de Suede	187	main text has 'de 187'
+G04	L02-L03	qui ne veut pas preter l'oreille a aucun accommodement	24 6 9 21 35 5 35 54 59 17 25 81 34 60 35 28 10 6 44 16 22 10 34 12 103 66 50 67 30 6 14 66 15 30 22 31 13 33 100 2 43 35 32 28	gloss covers L02 right and the start of L03; L03 right unglossed (nulls)
+G05	L04-L05	pacifier la Pologne sinon offici	17 66 30 9 1 39 35 60 110 37 16 44 401 51 46 14 10 21 33 63 46 30 37 4 24	first word read pa[c|u]fier (M); last word's ending unread, omitted; X blot excluded
+G06	L06	cette armee	15 35 60 28 33 50 60 31 46 51	gloss doubtful (passes: Setto armis / Lotto); worker's best reading, M
+G07	L06	d'agir	120 50 7 9 60	gloss pass d'o[f]ir; worker eye d'agir (M)
+G08	L06-L07	avec toutes les forces	50 5 35 3 28 16 59 35 51 29 35 51 36 33 15 2 51 503 399	'les forces' over L07 start; 503 399 at run end
+G09	L07-L08	convenu avec le Roy et la Pologne	64 22 21 57 38 32 59 25 68 10 50 170 130 160 202	
+G10	L08-L09	des troupes	100 35 29 28 60 54 34 17 10 51 100 297	
+G11	L09	Roy de Suede	187	
+G12	L10-L11	a des menaces qu'a des representations	27 35 28 39 1 50 120 35 51 81 35 21 66 30 10 29 18 67 25 53 10 58 26 10 17 60 35 24 10 2 28 66 57 39 16 14 29	leading gloss word (retit?/rebut?) unread, omitted; X excluded
+G13	L11-L12	s'allier a nous contre	51 50 44 42 35 27 66 32 16 67 29 43 35 31 10 15 33 28 60 2 46 52 54 26 64	gloss continues with an unread word (les D...?), omitted; struck groups excluded
