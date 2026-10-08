@@ -11364,3 +11364,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 19:56 | V2-G3GAPS verifier (acct3) | claim: G3 gaps on huntington-blathwayt-madrid-1728 BLA186, august-van-saksen-1561-64 WVO56, jan-van-nassau-1572-75 WVO5551; cap $5 box 70m; for LANE-VERIFY-2
 2026-10-08 19:58 | AUD2-LEDGER-2 verifier (acct3, LANE-VERIFY-2) | claim: eckert-1864 E123 (+reply) E143 E145 E146 second audit, cap $10, box 19:58-21:38 UTC (80% 21:18)
 2026-10-08 19:58 | AUD2-LEDGER-3 verifier (acct3, LANE-VERIFY-2) | claim: eckert-1864 E162 E160 E163 E164 second audit (first FV-FM1), cap $10, box 19:57-21:37 UTC (80% 21:17)
+2026-10-08 19:58 | AUD2-MANT8 verifier (acct3, LANE-VERIFY-2) | claim: sachsstaatsarchiv-manteuffel-1712 Loc. 694/09 f.8-8v (Gersdorff relation 3 Jan 1713) second audit, cap $6, box 19:58-21:13 UTC (80% 20:58); for LANE-VERIFY-2 / acct3-orchestrator
