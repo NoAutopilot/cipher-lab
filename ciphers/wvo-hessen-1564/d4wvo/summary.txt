@@ -1,0 +1,4 @@
+positive list (14): uertrauen zweimahl konnen uoans schlagen uorhalten purgieren tungen dermassen bekom heftig erfrucht infreundtlich kranck
+P: T_pos 5/14 vs wrong-text null mean 0.03 p95 0 max 2 -> PASS
+target: T 0/14; A wrong-text mean 0.03 p95 0 max 1; B shuffled-key mean 0.00 p95 0 max 0 -> FAIL
+share A >= T: 1.000; share B >= T: 1.000

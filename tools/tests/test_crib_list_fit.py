@@ -49,5 +49,13 @@ def test_min_score_refuses_read_text():
     assert clf.verdict(res, min_score=0)["candidate"], "without --min-score the H71 false positive would pass"
 
 
+def test_wild_span_one():
+    # D4-WVO: with spans=(1,) a wildcard consumes exactly one letter, so a 3-letter word cannot fit 2 tokens.
+    toks = [("a", False, "x:1"), ("_", True, "x:2")]
+    assert clf.fit("ab", toks, spans=(1,))[:3] == (1, 1, 0)
+    assert clf.fit("abc", toks, spans=(1,))[0] < 0
+    assert clf.fit("abc", toks)[:3] == (1, 1, 0)
+
+
 if __name__ == "__main__":
-    test_positive(); test_minimum_fit_refuses(); test_min_score_refuses_read_text(); print("test_crib_list_fit: ok")
+    test_positive(); test_minimum_fit_refuses(); test_min_score_refuses_read_text(); test_wild_span_one(); print("test_crib_list_fit: ok")

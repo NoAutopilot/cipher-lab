@@ -44,8 +44,9 @@ def load_window(codes, key, start, end, fixed_grades=("S",), wild_codes=()):
     return toks
 
 
-def fit(word, toks, anchor="free"):
-    """(score, agree, mismatch, start_loc) of the best whole alignment of word to toks."""
+def fit(word, toks, anchor="free", spans=(1, 2)):
+    """(score, agree, mismatch, start_loc) of the best whole alignment of word to toks; spans = letters a wildcard
+    token may consume ((1,) when every sign is one letter, D4-WVO 8 Oct 2026)."""
     seq = toks[::-1] if anchor == "end" else toks
     w = word[::-1] if anchor == "end" else word
 
@@ -57,7 +58,7 @@ def fit(word, toks, anchor="free"):
             return (-99, 0, 0)
         l, wild, _ = seq[st + i]
         if wild:
-            return max(f(i + 1, j + k, st) for k in (1, 2) if j + k <= len(w))
+            return max(f(i + 1, j + k, st) for k in spans if j + k <= len(w))
         s, a, m = f(i + 1, j + 1, st)
         eq = l == w[j]
         return (s + (1 if eq else -1), a + eq, m + (not eq))
@@ -71,12 +72,12 @@ def fit(word, toks, anchor="free"):
     return best
 
 
-def rank(words, toks, anchor="free", forms=("{w}",)):
+def rank(words, toks, anchor="free", forms=("{w}",), spans=(1, 2)):
     res = []
     for word in words:
         for form in forms:
             ww = form.format(w=word)
-            res.append(fit(ww, toks, anchor) + (ww,))
+            res.append(fit(ww, toks, anchor, spans) + (ww,))
     res.sort(key=lambda r: (-r[0], r[4]))
     return res
 
@@ -106,10 +107,12 @@ def main():
     ap.add_argument("--max-mismatch", type=int, default=1)
     ap.add_argument("--min-score", type=int, default=6, help="minimum absolute fit (agree - disagree); H71 calibration")
     ap.add_argument("--top", type=int, default=12)
+    ap.add_argument("--wild-span", type=int, choices=[1, 2], default=2,
+                    help="max letters a wildcard token consumes (1: one sign = one letter; default 2)")
     a = ap.parse_args()
     words = [l.split("\t")[0].strip() for l in open(a.words) if l.strip()]
     toks = load_window(a.codes, a.key, a.start, a.end, tuple(a.fixed_grades), tuple(a.wild_codes))
-    res = rank(words, toks, a.anchor, tuple(a.forms))
+    res = rank(words, toks, a.anchor, tuple(a.forms), (1,) if a.wild_span == 1 else (1, 2))
     v = verdict(res, a.p_max, a.min_agree, a.max_mismatch, a.min_score)
     print("window:", "".join("?" if w else l for l, w, _ in toks))
     print(f"{len(res)} forms; best {v['best']} fit {v['score']} ({v['agree']} agree, {v['mismatch']} disagree) at "

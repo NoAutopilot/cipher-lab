@@ -877,18 +877,43 @@ read the letter over each box (`blind_read.tsv`); `scored.tsv` joins both.
   U 22): both "reading up to date", exit 0 (no key file touched).
 - Rule 4 counts: unchanged (no key value changed). Network for this part: 0 requests; vision: 1 Opus subagent call + 1 reconciliation look.
 
-## Remaining gaps (finish-or-blocker pass, D2-WVO, 8 Oct 2026)
-Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, three audits); key per the owner's settled signs (settled/key.tsv, 24 C / 23 M); 159/257 tiles AGREE (control p95 9); k28 = b upheld by eye; the 14 neighbouring WVO letters scanned at 30 dpi, no cipher rows or blocks; decode_key top-level and settled/ --check exit 0
+## Crib-placement test against settled/key.tsv (D4-WVO, account 4, 8 Oct 2026, 08:43-08:5x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-08-account4-default-0740-jobs.md` job D4-WVO. `PREREG-D4-WVO.md` pushed (1f2aa94a9) before
+any score. Instrument: the shared `tools/crib_list_fit.py` (new option `--wild-span 1`: a wildcard tile consumes one letter,
+offline test added), driven by `d4wvo/crib_test.py` (stream `settled/ciphertext.tsv` C01-C10, fixed = C-graded key letters,
+M/unvalued/X tiles wild; a word places at the tool's own default rule: agree >= 0.6 x length, mismatch <= 1, fit >= 6).
+Crib list: the 14 words of `wvo1111_transcription.md` candidates 1, 2, 4, 5 (`d4wvo/crib_list.tsv`).
+- **Positive control (instrument power): 5 of 14 gloss words place** (schlagen, uorhalten, purgieren, dermassen,
+  infreundtlich) vs their wrong-text null mean 0.03, p95 0, max 2 -> PASS. All five are 8-13 letters; no 5- or 6-letter
+  gloss word placed (konnen, tungen, heftig, kranck, bekom, uoans) -- at fit >= 6 a word of 6 letters or fewer needs every
+  letter on a C tile, so the instrument has power on long words only.
+- **Target: 0 of 14 crib words place**; wrong-text cribs (A, de1600 words of the same lengths, 1000 draws) mean 0.03, p95 0;
+  shuffled key (B, 1000) mean 0.00, p95 0 -> **FAIL (pre-registered: T must exceed both p95s)**. Best target fits are 2-3
+  (zeitungen 4 agree / 2 disagree; frucht 3/1; plage 4/1). Read as: none of the long 1111/1109-Inhoud cribs (zeitungen,
+  gemahlin, gesegnet, widderumb, schwanger, pestilentz, augustus, franckreich, lothringen) is in the stream under the
+  settled key, at an instrument that found 5 of 8 long gloss words; the short cribs (frucht, leibs, plage, sterben,
+  sachsen) are untested at this rule, not refuted. Consistent with the gloss itself (no Saxony, France or plague words; a
+  medical report: "heftig kranck worden ... die adern zweimahl ... purgieren mussen ... frucht").
+- Post hoc, not gating: "zeittungen" (the gloss's own C03 spelling, listed as an alternative in wvo1111_transcription.md but
+  not in the pre-registered list) does not place either (fit 2, 4/2), because C03's tiles there are among the aligner's
+  conflict/unaligned slips -- the reference-strip eye read is the step that would settle them.
+- No key value changed; no sign value implied (no target word placed). Rule 4 counts unchanged.
+- Network 0 requests; no subagent; CPU ~75 s per run.
+- Not run (cap): the reference-strip blind eye read of the 33 tiles (one vision call + reconciliation, ~$1.5-3, would cross
+  80% of this job's $4 cap).
+
+## Remaining gaps (finish-or-blocker pass, D2-WVO, 8 Oct 2026; D4-WVO update 8 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, three audits); key per the owner's settled signs (settled/key.tsv, 24 C / 23 M); 159/257 tiles AGREE (control p95 9); k28 = b upheld by eye; crib-placement test of the 1111/1109 crib list FAIL 0/14 against a positive control 5/14 (D4-WVO); the 14 neighbouring WVO letters scanned at 30 dpi, no cipher rows or blocks; decode_key top-level and settled/ --check exit 0
 - alignment slips (19 C conflicts, 14 C unaligned) - blocker: not-attempted; a blind single-reader eye alignment failed its own decoy gate (7/10, all misses the looped d of k22 read as g; D2-WVO), first attempt with that instrument; next: one blind read with a letter-form reference strip (the k22 looped d in "worden"/"vnd" beside the k19 g in "nungen", plus h, i, s exemplars) and 10 fresh decoys, same PREREG gate, ~$1.5
 - k11 in "taush" (C07 idx 14) and C03 "voans sp" - blocker: not-attempted; one occurrence each, read once by eye; next: fold into the reference-strip eye read above, ~$0 extra
-- crib-placement test - blocker: not-attempted; not in this brief; next: the crib-placement test against settled/key.tsv (k28 = b), ~$2
 
-## Escalation (D2-WVO, 8 Oct 2026)
+## Escalation (D2-WVO, 8 Oct 2026; D4-WVO update)
 - [x] siblings: 174 key leaf (NX-WVO174; R9-WVOX concordance FAIL 0/7), 1069 key (R9-WVOX PASS 8/18); the 14 neighbouring WVO PDFs fetched and looked at, no cipher rows or blocks (D2-WVO)
 - [x] clear-pages: f.23's own interlinear gloss transcribed, reconciled, aligned, verified, re-aligned and re-verified (R9-WVOALIGN, R10-WVOTX, R10-WVOV, WVO-REALIGN, NZ-WVOV)
 - [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
 - [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
-- [x] key-rebuild: key rebuilt per the owner's settled signs and re-aligned on them (WVO-APPLY, WVO-REALIGN); k28 verified by eye (NZ-WVOV)
+- [x] key-rebuild: key rebuilt per the owner's settled signs and re-aligned on them (WVO-APPLY, WVO-REALIGN); k28 verified by eye (NZ-WVOV); crib-placement test of the 1111/1109-Inhoud list on the settled stream, positive control PASS 5/14, target FAIL 0/14 (D4-WVO, PREREG-D4-WVO.md)
 - [ ] image-check: the 33 conflict/unaligned C tiles eye-read blind once, decoy gate FAIL 7/10 (D2-WVO); next: the reference-strip blind read named in Remaining gaps, ~$1.5
 - [n/a] retry: the eye read is the step above, re-tried with a changed instrument (reference strip), not a plain retry
-Verdict: keep going: 3 internal gaps; cheapest next: the crib-placement test against settled/key.tsv (~$2) or the reference-strip eye read of the 33 tiles (~$1.5)
+Verdict: keep going: 2 internal gaps; cheapest next: the reference-strip eye read of the 33 tiles (~$1.5), which also covers k11 "taush" and C03 "voans sp"
