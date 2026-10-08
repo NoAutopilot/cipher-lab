@@ -11214,3 +11214,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:38 | G3-FR3416 verifier (acct4, session_01UvhKGyp5zFmRcE8oZzBsWg) | claim 17:38 UTC by date -u: G3 check fr3416-nevers-fils-1589 f.35r (N4); cap 2.5, box 17:37-18:12 UTC (80% stop 18:05), for LANE-VERIFY-1 / acct3-orchestrator
 2026-10-08 17:38 | FV-LS4-R2b (acct4 verifier) | claim: eckert-1864 first verifier N2-CB CC CE CF CG CI CJ CK CL E102 + N1 script check CD CH CM (reader LS4-R2b acct1); cap $8 box 100 min
 2026-10-08 17:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 17:40: spawned 1 (DEFAULT-account-1-20261008-1740 session_01BhFrvFs46QaEbT8aTNPN8V; blast refill 1 of 1, lane-ledger.md), queued left 0
+2026-10-08 17:42 | OUT-CHECK-HUNT-EIN (for acct3-orchestrator) | claim: gate-7 fact check of outreach/huntington-einaudi-reply-2026-10.md; cap USD 3.5, box 45 min
