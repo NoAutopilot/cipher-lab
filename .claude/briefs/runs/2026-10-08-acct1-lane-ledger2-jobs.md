@@ -61,3 +61,27 @@ LEDGER)", Remaining gaps / Escalation, gaps_check, decode --check.
 2. Then, offline: E62-ALN's remaining 7 printed residue entries (OR vols 9/7/8; NOTES "## E62-ALN" Remaining gaps) with print/or_align.py, as E62-ALN did;
    conflicts to HYPOTHESES.md, never key.md (rule 4); residue C/M/I counts before/after.
 NOTES "## E62-9660 (8 Oct 2026, account 1, for LANE LEDGER)", Remaining gaps / Escalation updated, gaps_check after.
+
+---
+
+# Wave 2 (written 8 Oct 2026 21:1x UTC)
+Wave 1 by get_session: FIX-FM1 1.67, FV-FM2 5.27 (E168 N3 D3, E165 N3 weak D3, E167 N3 D2, E169 N2; AUD2-LEDGER-4 queued), FM-R2a 3.77 (E170-E179, none
+located), FM-R2b 3.55 (E185-E194; E186 E188 E192 in print), MS18-R1 4.20 (E200-E209; E201 E203 E204 E205 E208 in print). E62-9660 still running.
+Google Books answered 429 to every call from every worker since ~20:50 (daily quota; resets midnight Pacific = 07:00 UTC, after this box): do not call it.
+Grant Papers instead: IA be-api full text inside the lending-only volumes by identifier, `papersofulyssess00NNgran` (vol. 10 Jan-May 1864, 11 Jun-Aug, 12
+Aug-Nov, 13 Nov 1864-Feb 1865), as AUDIT.md's earlier sections did; log it as snippet-only (no page). Basler likewise via IA.
+
+## FV-FM3a, FV-FM3b, FV-FM3c, FV-MS18 (Opus 5.5, first verifiers, separate sessions from the readers; cap $7 each, box 90 min each)
+Exactly "## FV-FM2" above (= FV-FM1 of the wave-4 jobs file: duplicate diff first; own Huntington transcription + CONTENTdm full-text; OR I-III, ORN; Grant
+Papers (route above) and Basler; Butler's Private and Official Correspondence III-V; press of the day; G3 with decoded phrases; the sender's copy in
+mssEC 19/18 or the receiver's in mssEC 25 -- sources on disk), depth per .claude/briefs/runs/2026-10-08-acct3-depth-bar.md, the reader's own "Remaining
+gaps" next steps for your entries are your first print leads. Where the reader read a page from the transcription only (FM-R2b: 5635 5799 5584 5748 5831
+5643 5784), eye-check your entry's lines in the image (tools/iiif_lines.py --image, crops only) before grading. AUDIT.md headings "## AUDIT (FV-FM3a)" etc.;
+status.json/SO rows for N3+ only, audit_status "one audit"; depth_check; file_shrink_guard. On N3+ D2+ append a WORK-QUEUE row `AUD2-LEDGER-5` (FV-FM3a),
+`-6` (FV-FM3b), `-7` (FV-FM3c), `-8` (FV-MS18) (account-3, Opus 5.5, cap 2.5 per entry) and name it in ROOM for the account-3 VERIFY lane. hdl at most 40
+requests each under the token (wave-2 rule). Unit ~1.4 per entry; stop before an entry that would cross 80% of cap or box.
+- FV-FM3a: E170, E172, E173, E174, E177 (NOTES "## FM-R2a").
+- FV-FM3b: E171, E175, E176, E178, E179 (NOTES "## FM-R2a"; E171/E175/E176 have related print named there -- decide whether it is the same telegram).
+- FV-FM3c: E185, E187, E189, E190, E191 (NOTES "## FM-R2b").
+- FV-MS18: E200, E202, E206, E207, E209 (NOTES "## MS18-R1").
+Handed on, not briefed this wave: E193, E194 (FM-R2b); FV-FM2's decoder over-count fix for key-supplement telegrams (~0.4).
