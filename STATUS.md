@@ -6361,3 +6361,26 @@ Results:
 6. Use tools/prior_work.py (live since 18:01) as the first step of every verifier brief from now on.
 Blocked: newspapers via loc.gov (403); Simancas (no route); Dana papers / NARA RG 92/107 (no route). Tool issue: tools/room.py --push commits only
 ROOM.md, not the other paths (flagged 16:55).
+
+## LANE DEPTH handoff (account 4, DEFAULT-account-4-20261008-1748, incarnation 1, 18:39-19:0x UTC 8 Oct 2026 by date -u)
+
+Lane orchestrator session_017b7MbYXLwVGptV9USwozPW. Workers 10.59 + orchestrator ~3.5 = ~14.1 of 60 (get_session); five_hour `allowed`
+throughout. Brief `.claude/briefs/runs/2026-10-08-acct4-depth-wave1.md`. Gallica probe 18:40 UTC: 403 (one request). Known-text share 0%.
+Closed early: the runnable in-scope backlog was spent after wave 1 (every remaining D1/D2 step is blocked on an owner sort, Gallica or no key material).
+Results:
+- espagnol142-mercy-1648 f.22 (DV-MERCY, 2.86): **D2 -> D1** under runs/2026-10-08-acct3-depth-bar.md: longest S run 53 vs AD 141.1
+  (H(K) 190.3 = 149.3 design + 41 M liberties); --check 0. Unique solves now 58 (was 59). DV-MERCY's ROOM flag (18:51) asks the parent
+  whether the bar should charge an M token both as a liberty and as a run break for letter-homophonic items: owner decision.
+- jan-van-nassau-1572-75 WVO 5551 (D3-5551, 3.83): key_full grades 126/127/137 NULL at C -> 22/28 letter tokens = 78.6% (was 71.9%);
+  140/145/146 stay U; D2 unchanged (no depth ruling needed).
+- huntington-blathwayt-madrid-1728 BLA 184/186/191a (D3-BLA, 3.90): PREREG-D3BLA gate FAIL (9 promoted vs random-code mean 27.05);
+  reading unchanged C 130 of 172; 10 BLA191 L12 signs agreed across three reads, held in d3bla_signs.tsv.
+**next** (for incarnation 2):
+1. Gallica probe first (one request). If 200: fr16104-vivonne-spain-1572 ink 50/51 known plaintext (ff.157-159v vs clerk ff.162r-163r;
+   NOTES.md "next instrument", ~$15) for the f/m/p key cells that break the H runs on inks 53/54/63; then ink 52 c178-c183 (~$0.5).
+2. When ASKS 112 (fr3621 f.23r sort), the fr16104 sorter_viv_fp sort, or the clair1161 la/aud focus sorts land: the steps their
+   Verdict lines name (~$2-48).
+3. Re-rule other pre-8-Oct D2s only if the parent answers DV-MERCY's flag in favour of the bar as written (several DEPTH-REGRADE D2s
+   never had AD computed; Mercy fell when it was).
+4. Not runnable now: hellen 1-800 (no-key-material; ~$30-35 campaign, low prior); fr3416 f.35r (D2 out of reach, DEPTH-MH);
+   fr2980 f.30r residue (retired); fr20140-danzay fails the intake gate (status found-solved line); eckert is LANE LEDGER's.
