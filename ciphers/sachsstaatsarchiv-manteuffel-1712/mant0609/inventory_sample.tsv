@@ -1,0 +1,91 @@
+# MANT-0609 (8 Oct 2026, account 4): eye screen of 89 unseen frames (694/09 stride 5 offset 2 = 0002-0302, plus +-1 neighbours of earlier code-bearing frames in 694/09 and 694/08). www.archiv.sachsen.de frames.tsv URLs, 90 requests with control 08/0511, 1.6 s apart, all HTTP 200. Sheets of 5 + control (780 px tiles, read at ~670 px), 8 native zooms. Worker eye only, no subagent. Grade M.
+loc	frame	code	glossed	note	http	sha256_16
+694/09	0002	n	-	volume cover (Einband), 1713	200 image/jpeg	64fb4dff4460dc7b
+694/09	0007	n	-	f.? report Berlin 7 Jan 1713, French clear at sheet scale	200 image/jpeg	a663edb45ed902fa
+694/09	0012	n	-	copy "Copie d'une lettre ... Lipse", French clear	200 image/jpeg	e45a6f843fcbb4f3
+694/09	0017	y	n	left page several lines with dotted numeral runs; right letter Hamburg 2? Janv 1713 clear; same page as 0016 right; see 0016	200 image/jpeg	00a52d473574d20f
+694/09	0022	n	-	report 13, Berlin 23 Janv 1713, French clear at sheet scale	200 image/jpeg	bf6181017ddf5948
+694/09	0027	n	-	report, Berlin Janv 1713, French clear	200 image/jpeg	7cc1b42b5e2c7483
+694/09	0032	n	-	two-page letter f.21, French clear	200 image/jpeg	16f99bf83d17312b
+694/09	0037	n	-	letter to Manteuffel f.24, French clear	200 image/jpeg	7e109d20cdf11b9e
+694/09	0042	n	-	report f.28, Berlin 4 Fevr 1713, French clear at sheet scale	200 image/jpeg	0d5eb201dfb80045
+694/09	0047	n	-	report no.10 f.32, Berlin 8 Fevr 1713, French clear	200 image/jpeg	db32dd218bed428b
+694/09	0052	y	n	left page: several lines of numerals mid-page; right Extrait a la lettre du 11 Fevr 1713; mixed: letter runs + 257 + 405 394 520 outside Krauske; zoom	200 image/jpeg	1ba248b1826bed46
+694/09	0057	n	-	report no.12 f.34, French clear	200 image/jpeg	3b89e260afe86739
+694/09	0062	n	-	letter ff.?-43, French clear	200 image/jpeg	7e7812d7b68f5dd8
+694/09	0067	n	-	letter f.46, a la lettre du 19 Fevr 1713, clear	200 image/jpeg	db5aa720738ee7ae
+694/09	0072	n	-	letter f.51 large hand, clear	200 image/jpeg	552290471ce83d9b
+694/09	0077	n	-	report f.55, clear	200 image/jpeg	c88e2e1870c3d61e
+694/09	0082	n	-	letter f.59, clear	200 image/jpeg	39ef7a4bb906b7f5
+694/09	0087	n	-	German Extract a la lettre du 1er Mars 1713, clear	200 image/jpeg	9fa6c7791b9c1cd0
+694/09	0092	n	-	letter f.69 Hamburg Mars 1713, clear	200 image/jpeg	91be7168a5feed2b
+694/09	0097	n	-	letter f.72 two pages, clear	200 image/jpeg	e928c387eef5b7e0
+694/09	0102	n	-	report with dated references in the margin (lettre du ...), French clear at sheet scale	200 image/jpeg	53870649186c7793
+694/09	0107	n	-	report f.80, dense French, no code-group line seen	200 image/jpeg	41f425a20bd0c68f
+694/09	0112	n	-	letter f.85, a la lettre de Mant. du 21 Mars 1713, clear	200 image/jpeg	56dc86a9db179263
+694/09	0117	n	-	German order (Ordre du Roi au B. de Manteuffel), clear	200 image/jpeg	53268b7bce38602b
+694/09	0122	n	-	cover/envelope, Manteuffel 16 Mars 1713	200 image/jpeg	0db2d8a3be66dee1
+694/09	0127	n	-	report, Stralsund/Swedish news, clear	200 image/jpeg	7e38248b613f985f
+694/09	0132	n	-	letter to Manteuffel, Hamburg 8 Avril 1713, clear	200 image/jpeg	de903ced5953accb
+694/09	0137	n	-	letter to Manteuffel, Hamburg Avril 1713, clear	200 image/jpeg	01a88d7d7367c86a
+694/09	0142	n	-	report f.106, a few numeral-like groups in the left page; not zoomed; sheet-scale numeral-like marks only, left possible	200 image/jpeg	35fbffe244f2b4f6
+694/09	0147	n	-	Dresden 6 Avril 1713 letter + P.S., clear	200 image/jpeg	e5410789b37e4517
+694/09	0152	n	-	report Berlin Avril 1713, clear at sheet scale	200 image/jpeg	871a14a2218dc273
+694/09	0157	n	-	report, clear	200 image/jpeg	5c1e1fde31b67fc4
+694/09	0162	n	-	letter f.121, Berlin 29 Avril 1713, clear	200 image/jpeg	59ad21806f7ce4d4
+694/09	0167	n	-	report end, clear	200 image/jpeg	3803cad2c075f181
+694/09	0172	possible	-	report f.129, possible short numeral group in right page; not zoomed; one possible short group	200 image/jpeg	18f31d7889d4a3a6
+694/09	0177	n	-	report f.133, a la lettre de Mant. du 8 May 1713, clear	200 image/jpeg	36e81c3aab095137
+694/09	0182	n	-	report f.138, clear	200 image/jpeg	78cc35df9b89240b
+694/09	0187	n	-	report f.143, clear	200 image/jpeg	37323ce6a83ee016
+694/09	0192	n	-	report two pages, clear at sheet scale	200 image/jpeg	df89be355ff9d14c
+694/09	0197	n	-	letter to Manteuffel f.151, 20 May 1713, clear	200 image/jpeg	ab480412ea7bde18
+694/09	0202	n	-	report, clear	200 image/jpeg	17f0c7a884c38249
+694/09	0207	n	-	letter f.158, clear	200 image/jpeg	4c3849b5e44b16d1
+694/09	0212	n	-	letter to Manteuffel f.162, June 1713, clear	200 image/jpeg	ec478c7968fa4acc
+694/09	0217	n	-	Extrait f.167, a la lettre de Manteuffel du 30 May 1713, clear	200 image/jpeg	6e0fe7848853bb28
+694/09	0222	n	-	Copie de la relation f.169, clear	200 image/jpeg	745b9ba504ab8ad7
+694/09	0227	n	-	letter end, clear	200 image/jpeg	ee37420379fc4d07
+694/09	0232	n	-	letter f.176, 20 Aout 1713, clear	200 image/jpeg	710d830f9f2dc117
+694/09	0237	n	-	P.S. f.180, damaged edge, clear	200 image/jpeg	05d0e72020c52ae0
+694/09	0242	n	-	report f.184, dense small hand, no code-group line seen at sheet scale	200 image/jpeg	98793ee41fe665b6
+694/09	0247	n	-	report two pages, clear	200 image/jpeg	93864cb69d3271d5
+694/09	0252	n	-	report f.193, clear	200 image/jpeg	6c39e620dbe8dac9
+694/09	0257	n	-	report f.197, clear	200 image/jpeg	3f28ec728a123ee3
+694/09	0262	n	-	letter end, signed, clear	200 image/jpeg	d7fe1841de5f45ec
+694/09	0267	n	-	report, Berlin Sept 1713, clear at sheet scale	200 image/jpeg	75ce320ac251dd02
+694/09	0272	n	-	Copie de la lettre f.208, clear	200 image/jpeg	cac732c9f85c711a
+694/09	0277	n	-	Copie f.212, letter dated 1713, clear	200 image/jpeg	1e7291e6b57a0bb0
+694/09	0282	n	-	letter to Manteuffel f.216, Berlin, clear	200 image/jpeg	c28db4f2d2a8cfe7
+694/09	0287	n	-	report f.220, Nov 1713, clear at sheet scale	200 image/jpeg	e997d41bf126c0da
+694/09	0292	n	-	report f.224, clear at sheet scale	200 image/jpeg	d94d9b0deb75d60c
+694/09	0297	n	-	report f.229, Dec 1713, clear	200 image/jpeg	4810f6528be25a36
+694/09	0302	n	-	letter end f.234, clear	200 image/jpeg	147fb65735c6719b
+694/09	0014	n	-	Extrait de la relation f.7, a la lettre de Manteuffel du 13 Janv 1713, clear	200 image/jpeg	06c7de59767a8d52
+694/09	0016	y	n	same leaf as 0017 (f.8 verso?): numeral runs mid-page, unglossed at sheet scale; letter+names (198 376), unglossed; zoom	200 image/jpeg	5496f00bbc40dba1
+694/09	0069	n	-	letter to Manteuffel f.48, Hamburg Feb 1713, clear	200 image/jpeg	a50903f54ff083d9
+694/09	0071	n	-	letter f.50, Hamburg Feb 1713, clear	200 image/jpeg	0f17c99871701ba7
+694/09	0074	n	-	report end f.53, signed, clear	200 image/jpeg	cf274b4c8d85d017
+694/09	0076	n	-	short letter end, clear	200 image/jpeg	d0eab2e4a2a31ff9
+694/09	0009	possible	-	report Berlin 13 Janv 1713 (no.2?), dense hand, no run resolved at sheet scale	200 image/jpeg	bb17f7f08891c290
+694/09	0011	n	-	letter end, clear	200 image/jpeg	beb8ff5602b73774
+694/09	0039	possible	-	report f.26, Berlin 21 Janv 1713, dense hand, no run resolved at sheet scale	200 image/jpeg	408316e3411006a8
+694/09	0041	n	-	letter to Manteuffel f.27, Hamburg 12 Fevr 1713, clear	200 image/jpeg	182caf29fa50c160
+694/09	0079	possible	-	report + P.S. two pages, dense, no run resolved at sheet scale	200 image/jpeg	24df8403e1329cfd
+694/09	0081	n	-	report end, clear at sheet scale	200 image/jpeg	339ed0c8bf1fc4b1
+694/08	0064	possible	-	report ff.45v-46 dense two pages, damaged; no run resolved at sheet scale	200 image/jpeg	a374643be72cdd47
+694/08	0066	n	-	German letter to the Feldmarschall, clear	200 image/jpeg	bb00cb73edec941d
+694/08	0374	possible	-	report ff.298v-299, dense, no run resolved at sheet scale	200 image/jpeg	91e3a9abb8b9a0a6
+694/08	0376	possible	-	report two pages, dense, damaged	200 image/jpeg	56f295228df0f106
+694/08	0394	possible	-	report f.316, possible numeral groups in right page; not zoomed	200 image/jpeg	14fa77fea503480c
+694/08	0396	y	n	left page: dotted numeral runs mid-page; right Extrait a la lettre du 9 Oct 1712 f.317; left page = 0395 page (same run); zoom	200 image/jpeg	e82e4797fc64312a
+694/08	0434	possible	-	report f.342v, dense, no run resolved at sheet scale	200 image/jpeg	e397ca319f00c100
+694/08	0436	y	n	report ff.343v-344?, possible numeral groups in left page; letter range singles/short runs (11.60.66.6.28, 55.12, 11.60), unglossed; zoom	200 image/jpeg	52beb0a0b31be6fd
+694/08	0484	possible	-	report ff.383v-384?, dense both pages, no run resolved at sheet scale	200 image/jpeg	b1a31cc7a9e1cbbf
+694/08	0486	y	n	left page numeral-like runs; right Copie d'une lettre a Ilgen, a la lettre de Mant. du 11 Nov 1712 (f.388); left page = 0485 page (same runs); right Copie a Ilgen; zoom	200 image/jpeg	646ca6e4cb7a7199
+694/08	0240	possible	-	report f.185, damaged, dense right page, no run resolved at sheet scale	200 image/jpeg	392707938e5a03a5
+694/08	0242	n	-	report + P.S. ff.186v-187, possible runs left page; zoom of left page: no code group	200 image/jpeg	2d91e1dd27498f5d
+694/08	0390	y	n	report ff.311v-312, possible run mid left page; letter+names (45 46 257 160), unglossed; zoom	200 image/jpeg	9e414dc8552da7db
+694/08	0392	possible	-	report f.314, dense, no run resolved at sheet scale	200 image/jpeg	3008e07dd67c3948
+694/08	0214	y	n	report f.165, runs in right page (sheet scale); letter+names (160 155 110.247), unglossed; zoom	200 image/jpeg	e082c4fcc85a4d5d
+694/08	0216	n	-	letter f.167 large hand, clear	200 image/jpeg	6ea8ab0582f34ac1

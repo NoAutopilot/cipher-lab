@@ -1,0 +1,23 @@
+rank	loc	frame	folio_date	tokens_seen	runs	longest_run	krauske_cov	anykey_cov	outside_krauske	source	leaf_note
+1	694/09	0015	f.8, letters of 12 and 18 Nov [Jan 1713]	51	4	21	0.98	0.98	159	R13-MANTSCR	
+2	694/09	0052	f.36? left page, beside Extrait a la lettre du 11 Fevr 1713	44	2	32	0.93	0.93	394 405 520	MANT-0609 zoom	small numerals over the first run (103.17.39.23.39.5?) are a numeral correction, not a word gloss
+3	694/08	0485	ff.384v-385 (Nov 1712); 0486 left page is the same page	21	4	6	1.00	1.00		NZ-MANT2 + MANT-0609 zoom of 0486	
+4	694/08	0391	f.312v? (Oct 1712)	20	2	11	1.00	1.00		GAPS207	one possible partial gloss
+5	694/08	0390	ff.311v-312 (Oct 1712)	19	2	7	1.00	1.00		MANT-0609 zoom	'touchant' written above-left of 110.28.60.35.5.10 reads as text, not a gloss (M)
+6	694/09	0016	f.8v? (Jan 1713, Hamburg/Berlin report)	18	1	16	1.00	1.00		MANT-0609 zoom	same page shows on 0017's left
+7	694/08	0395	f.316 (Oct 1712); 0396 left page is the same page	18	2	13	1.00	1.00		NZ-MANT2 + MANT-0609 zoom of 0396	first group 107 (NZ-MANT2) or 103 (MANT-0609 zoom)
+8	694/08	0375	ff.299v-300 (Sept 1712)	16	2	6	1.00	1.00		NZ-MANT2	
+9	694/09	0070	f.49 minute, Ad No 15/16	16	5	4	1.00	1.00		R13-MANTSCR	
+10	694/08	0214	f.165 (Jul 1712)	16	3	10	0.94	0.94	247	MANT-0609 zoom	110.247 may be 110.2.47 (digits run together); 0215 (singles 47 97 98 1.28) is the next page
+11	694/08	0436	ff.343v-344 (Oct 1712)	15	5	5	1.00	1.00		MANT-0609 zoom	
+12	694/08	0241	f.185? (Aug 1712)	12	1	12	0.92	0.92	599	GAPS207	599 uncertain
+13	694/08	0435	f.343, 23 Oct 1712	9	1	8	1.00	1.00		NZ-MANT2	449 read as 44.9 (more likely)
+14	694/08	0065	f.47, Berlin 12 Mar 1712	6	1	6	1.00	1.00		NZ-MANT2	
+15	694/08	0215	f.166, Dresden 20 Jul 1712	5	1	2	0.80	1.00	98	NZ-MANT2	
+16	694/09	0075	f.54, Hamburg 2 Mars 1713	2	1	2	1.00	1.00		R13-MANTSCR	
+17	694/08	0305	f.237	2	0	0	1.00	1.00		NZ-MANT2	singles in clear
+18	694/08	0513	ff.411v-412 (Nov 1712)	11	0	0	0.18	0.36	357 405 447 508 587 611 622 649	GAPS189	nomenclator range, 7 of 14 outside-key codes also in 0511 U; eye-read subset
+19	694/08	0335	f.262	1	0	0	1.00	1.00		NZ-MANT2	sheet scale only
+20	694/08	0385	f.308 P.S.	1	0	0	1.00	1.00		NZ-MANT2	
+21	694/08	0325	f.253	2	0	0	0.00	0.00	157 308	NZ-MANT2	sheet scale only, both uncertain
+22	694/08	0512	f.410v? (Nov 1712)	0	0	0				N9-MANT2	~8 lines with underlined runs, codes not listed

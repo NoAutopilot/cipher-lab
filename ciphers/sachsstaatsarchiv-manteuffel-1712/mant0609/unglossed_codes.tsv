@@ -1,0 +1,25 @@
+# MANT-0609 (8 Oct 2026): unglossed (or at most one gloss) code-bearing frames of Loc. 694/08 and 694/09 not yet transcribed, with the codes eye-read so far (grade M, sheet or zoom scale; a sample of each leaf's codes, not a transcription).
+# codes: space-separated groups as read; dotted runs written with dots. source = who read them. leaf_note flags frames that show a page already listed under a neighbour.
+loc	frame	folio_date	glossed	codes	source	leaf_note
+694/09	0052	f.36? left page, beside Extrait a la lettre du 11 Fevr 1713	n	405.67.21.34.33.6.60.51.35.44.103.24.394.10.58.28.31.4.24.54.16.54.28.14.6.100.2.5.66.32.52.11 257 520.10.12.103.66.15.16.4.28.35.6	MANT-0609 zoom	small numerals over the first run (103.17.39.23.39.5?) are a numeral correction, not a word gloss
+694/09	0016	f.8v? (Jan 1713, Hamburg/Berlin report)	n	198 376 2.31.23.10.90.35.27.42.10.51.58.5.9.28.10.29	MANT-0609 zoom	same page shows on 0017's left
+694/09	0015	f.8, letters of 12 and 18 Nov [Jan 1713]	n	32.10.100.35.29.10.51.17.2.60.33.9.59.17.68.51 100.2.51.2.26 198.17.33.6.27.6.33.71 159 51.35.29.17.50.34.9.10.27.51.90.2.73.64.33.42.12.9.10.26.51	R13-MANTSCR	
+694/09	0070	f.49 minute, Ad No 15/16	n	51.59 7.16.19.120 17.26.60 30.50.22.28 25.26.21	R13-MANTSCR	
+694/09	0075	f.54, Hamburg 2 Mars 1713	n	29.28	R13-MANTSCR	
+694/08	0214	f.165 (Jul 1712)	n	160 110.247 31.66.7.6.35.60.4.51.16.21 36.42 155	MANT-0609 zoom	110.247 may be 110.2.47 (digits run together); 0215 (singles 47 97 98 1.28) is the next page
+694/08	0215	f.166, Dresden 20 Jul 1712	n	47 97 98 1.28	NZ-MANT2	
+694/08	0241	f.185? (Aug 1712)	n	110.5.9.44.120.35.51.28.10.24.599.21	GAPS207	599 uncertain
+694/08	0390	ff.311v-312 (Oct 1712)	n	45 46 257 46 160 110.28.60.35.5.10 257 1.26.4.51.35.21.120	MANT-0609 zoom	'touchant' written above-left of 110.28.60.35.5.10 reads as text, not a gloss (M)
+694/08	0391	f.312v? (Oct 1712)	n	33.41.16.60.170 55.6.12.44.39.21.40.60.16.67.7 217 227 257 266	GAPS207	one possible partial gloss
+694/08	0395	f.316 (Oct 1712); 0396 left page is the same page	n	103.120.6.15.1.35.60.100.9.21.66.21.120 17.9.21.120.10	NZ-MANT2 + MANT-0609 zoom of 0396	first group 107 (NZ-MANT2) or 103 (MANT-0609 zoom)
+694/08	0375	ff.299v-300 (Sept 1712)	n	66.60.21.33.12.120 35.16.51.66.14.100 177 187 46 35	NZ-MANT2	
+694/08	0435	f.343, 23 Oct 1712	n	55.35.6.90.44.9.21.7 153	NZ-MANT2	449 read as 44.9 (more likely)
+694/08	0436	ff.343v-344 (Oct 1712)	n	11.60.66.6.28 55.12 11 11.60 11.60 11.60 11	MANT-0609 zoom	
+694/08	0485	ff.384v-385 (Nov 1712); 0486 left page is the same page	n	35.16.51 187 51.15.33.28 110.15.16.6.26.12 202 55.60.35.28.33.21	NZ-MANT2 + MANT-0609 zoom of 0486	
+694/08	0065	f.47, Berlin 12 Mar 1712	n	71.35.21.20.10.26	NZ-MANT2	
+694/08	0305	f.237	n	177 150	NZ-MANT2	singles in clear
+694/08	0335	f.262	n	177	NZ-MANT2	sheet scale only
+694/08	0385	f.308 P.S.	n	97	NZ-MANT2	
+694/08	0325	f.253	n	157 308	NZ-MANT2	sheet scale only, both uncertain
+694/08	0513	ff.411v-412 (Nov 1712)	n	405 401 357 649 587 447 508 622 102 357 611	GAPS189	nomenclator range, 7 of 14 outside-key codes also in 0511 U; eye-read subset
+694/08	0512	f.410v? (Nov 1712)	n		N9-MANT2	~8 lines with underlined runs, codes not listed

@@ -1665,6 +1665,51 @@ for f.410's U codes is unlikely to pay; the routes left are (1) the 4-digit syst
 hypothesis), (2) 0145 as a calibration leaf (glossed codes to 378 that Krauske already keys; transcription 2 passes + reconciliation ~$4.5)
 only if the lane wants a further known-answer check of the gloss hand, (3) recipient-side or a third witness for the U codes (outside material).
 
+## MANT-0609-sachsstaatsarchiv-manteuffel-1712 (8 Oct 2026, 13:37-13:5x UTC, account 4, for acct3-orchestrator): 694/09 + 694/08 frame inventory, unglossed cipher frames ranked
+
+Brief (2026-10-08-acct3-sibs-ledger3.md, section MANT-0609): sample 694/09 and the uninventoried 694/08 frames within the host limit, list the
+unglossed cipher frames by rank with Krauske-table coverage, no decoding. The brief's premise (SIBLINGS row: "873 of 894 frames not
+inventoried") was stale: every inventory on disk merged by `mant0609/consolidate.py` -> `mant0609/seen_before.tsv` gives **259 of 894 seen
+before this job** (694/08 199 of 592, 694/09 60 of 302).
+
+Sample (89 unseen frames, `mant0609/inventory_sample.tsv`): 694/09 at stride 5 offset 2 (0002-0302, 61 frames, the off-stride half of
+R13-MANTSCR's stride-5 pass) plus the +-1 neighbours of earlier code-bearing frames (694/09: 12; 694/08: 16, around the unglossed frames
+0065 0215 0241 0375 0391 0395 0435 0485). www.archiv.sachsen.de frames.tsv URLs, 90 requests with the control, one at a time, 1.6 s apart,
+all HTTP 200 (sha256 prefixes in the TSV; images in scratch only). 18 contact sheets of 5 frames + control 694/08 0511 (code groups plainly
+visible on every sheet), 8 native zoom crops (PIL, page region only). Worker eye only, no subagent. Grade M throughout.
+- 694/09 off-stride: **2 new code-bearing leaves of 61 frames** (0016/0017, one page: 198, 376 and a 16-group run 2.31.23.10.90.35.27.42.10.51.58.5.9.28.10.29;
+  0052: a 32-group run with 405 and 394, then 257 and 520.10.12.103.66.15.16.4.28.35.6, unglossed -- 520 is one of f.410's U codes, but
+  with no gloss it gives no value). 4 possibles (0009, 0039, 0079 dense hands; 0172 one group), 55 clear. The Jan-Sept 1713 volume stays
+  thin: about 5% of frames (R13-MANTSCR's stride 5 found 9%).
+- 694/08 neighbours: 3 new leaves (0214 f.165: 160, 155, 31.66.7.6.35.60.4.51.16.21, 110.247; 0390 ff.311v-312: 45, 46, 257, 160,
+  110.28.60.35.5.10, 1.26.4.51.35.21.120; 0436: 11.60.66.6.28, 55.12, 11.60 x3). 0396 and 0486 re-show the 0395 and 0485 pages (consecutive
+  frames share a page). 0242 zoomed: no code. 8 possibles at sheet scale (0064 0240 0374 0376 0392 0394 0434 0484, dense hands, not zoomed).
+- No glossed frame and nothing for f.410's U codes beyond 0052's unglossed 520.
+Inventory now **348 of 894 frames seen** (694/08 215 of 592, 694/09 133 of 302; 0396, 0486 and 0017 are second views of a page already listed).
+
+**Ranked unglossed cipher frames** (`mant0609/unglossed_codes.tsv` -> `mant0609/rank.py` -> `mant0609/rank_unglossed.tsv`; 22 frames;
+coverage = share of the eye-read tokens that are Krauske rows of key.tsv, codes 1-401; rank = coverage x tokens seen):
+
+| rank | loc/frame | tokens seen | Krauske cov | outside Krauske |
+|---|---|---|---|---|
+| 1 | 694/09 0015 (f.8, Jan 1713) | 51 | 0.98 | 159 |
+| 2 | 694/09 0052 (Feb 1713) | 44 | 0.93 | 394 405 520 |
+| 3 | 694/08 0485 (Nov 1712) | 21 | 1.00 | - |
+| 4 | 694/08 0391 (Oct 1712) | 20 | 1.00 | - |
+| 5 | 694/08 0390 (Oct 1712) | 19 | 1.00 | - |
+| 6 | 694/09 0016 (f.8v?, same letter as 0015) | 18 | 1.00 | - |
+| 7 | 694/08 0395 (f.316) | 18 | 1.00 | - |
+| 8-13 | 694/08 0375, 694/09 0070, 694/08 0214, 0436, 0241, 0435 | 9-16 | 0.92-1.00 | 247 (0214), 599 (0241) |
+| 14-22 | short or singles: 0065 0215 09/0075 0305 0513 0335 0385 0325 0512 | 0-11 | 0.00-1.00 | 0513 is nomenclator range (0.18) |
+
+All but 0513 (and the two unsettled singles of 0325) are letter-range, so Krauske's table should read them; coverage is of an eye-read
+sample, not a transcription. Nothing decoded, key.tsv, ciphertext.tsv and the reading unchanged.
+Next read (named, not run): **694/09 0015 + 0016 together (f.8 and its verso, Jan 1713)**: about 70 code tokens at 0.98 Krauske coverage,
+the largest unglossed letter-range block found; crop with `tools/iiif_lines.py --image`, 2 blind passes + 1 reconciliation (~$4.5 at the
+per-pass rate), decode_key.py, judge fr18 with shuffled-key control. Second: 694/09 0052 (one 32-group run, ~$2.5), whose 405/394/520
+stay U without a gloss.
+Requests: www.archiv.sachsen.de 90. Vision: 0 subagent calls; worker read 18 sheets and 8 zooms.
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated R8-MANT530 6 Oct 2026, R8-MANT 6 Oct 2026, GAPS158 3 Oct 2026, GAPS177 3 Oct 2026, GAPS180 3 Oct 2026, GAPS184 3 Oct 2026, GAPS189 3 Oct 2026, GAPS195 3 Oct 2026, GAPS201 3 Oct 2026, GAPS207 4 Oct 2026, RUN3-MANT 4 Oct 2026, RUN4-MANT 4 Oct 2026, RUN4-MANT2 4 Oct 2026, RUN4-MANT3 4 Oct 2026, RUN5-MANT4 4 Oct 2026, RUN5-MANT6 4 Oct 2026, N9-MANT 5 Oct 2026)
 Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 47 of 894 report frames inventoried, 13 carry code groups (694/08 0510, 0511, 0579, 0580; GAPS184: 0513, 0528, 0531, 0534, 0540, 0549, 0558, 0573, 0576); print check closed for now (GAPS180, 3 Oct 2026: NASG, Acta Borussica I, Droysen IV.1, Haake 1902/1926/1939 and Rous 2016 searched with controls, no print of f.410; detail in AUDIT.md)
 - Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; f.467 gloss calibration DONE (GAPS166, 3 Oct 2026: period gloss G -1.417 vs real_p05 -1.033, margin -0.384, so fr18 cannot certify genuine gloss at 128 letters; f.410 windows at that length margin median +0.052; reading ready for a separate verifier); rest of file 0511 DONE (GAPS177, 3 Oct 2026: f.409v + upper f.410, 162 tokens, passes 69% agree on f.409v, C 39 M 21 U 102, keyed 37%; fr18 judge on decode vs 20 shuffled-key decodes: candidate -1.469, rank 16 of 21, non-discriminating; paragraph 8 letter run reads "ma negociation ... la piece s[u]sdite a quo[i] [j]e vise", M, under letters_min)
