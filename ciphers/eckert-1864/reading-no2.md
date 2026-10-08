@@ -771,5 +771,41 @@ Code-word tokens: H 56, C 3, I 4.
 
 Code-word tokens: H 59, C 4, I 3.
 
-Totals over the 58 entries: H 1546, C 65, I 54, M 2.
+**N2-BG | Page 74-75 | 8966, 8967 | 20 May 1864 10 PM, to A. H. Caldwell at Fredericksburg (Cipher No. 2, "(213 w)", "Sent to Fredericksburg at 1130 PM Tinker")**
+
+[Washington] {date: May 20} {time: 10 PM} For [Brig. General] Rufus Ingalls [.] [Grant U S] was in formed this morning by [Telegraph (-ed, -ing)] from [Maj Genl H W Halleck] that a fleet would be at the mouth [Of the] [Rappahannock] at day light [Tomorrow] [Saturday] to go to [Fredericksburg] to reswindle the [Wounded] and also to carry supplies of [Forage (-ed, -ing)] for the [Army] [.] To reswindle the whole may require several days [.] The navy will convoy the fleet and asks [,] & [Maj Genl H W Halleck] has so [Telegraph (-ed, -ing)]ed to [Grant U S] [,] that [Cavalry] occupy the Bluffs [Of the] narrow [River] from [Port Royal] to [Fredericksburg] to prevent Guerillas from interfering with this operation [.] Two [Steam] boats and covered barges for the seventy [Wounded] [,] other [Steam]ers and [Forage (-ed, -ing) [#]] [,] The State of [Maine] and [Connecticut] will go to Tappay hannick or as near there as possible to receive the [Wounded] brought down by the lighter vessels [.] Some [3000] bed steads and Medical supplies were sent a few days since to [Fredericksburg] for the [Wounded] [.] If the place is [Abandon (-ed, -ing) [#]]ed all the [Wounded] should be put up on the vessels even if much [Lieut Gen U.S. Grant]ed and thus brought off  {tail: [signed] [Quarter[?] Master General] How are you long saved fraternity}
+
+Code-word tokens: H 48, I 1.
+
+**N2-BH | Page 210 | 9104 | 26 Oct 1864 5 PM, to R. R. McCaine (Cipher No. 2, Hang line indicator; page number printed 210)**
+
+[Washington] {time: 5 PM} [26] for [Sheridan P H] [.] The [Secretary of War] [Lookout Valley]'s you to [Order] the [18] [Connecticut] wiggles toby at New [Shelbyville] the [2] of [November] and the [2] [East] urn shore [Maryland] [Regiment] Toby at [Baltimore] by the [4] of [November] [.] The [Quarter Master] to furnish them [Transportation] [,] The [Regiment]'s Toby reap laced at [Martinsburg] by others [Order]ed by you from Ell swear [.] ack knoll edge reseat  {tail: [signed] Ed Tom send asst [Adjutant General] see you No tug you used wrong line indicators gave us a vexing [May]}
+
+Code-word tokens: H 29, C 2, I 1.
+
+**N2-BI | Page 119 | 9011 | 24 July 1864 10 AM, to Pickford (Cipher No. 2; volunteer text Bickford; pencil above "100 w day N.D.")**
+
+{time: 11 AM} [24] for [Brig. General] In gulls [.] about [1000] [Cavalry] [Horse]'s which are on hand with [Artillery] [Horse]'s will be sent immy stop more as they come in [.] Invasion [,] Depreciation of vouchers & certificates & short supply of money have lately checked deliveries of [Horse]'s [.] [3900] & [62] [Cavalry] [Horse]'s have been issued here since [1] July stop Most [Of the] [Troops]ers thus mounted will I [Hotly [?]] ree [Join] [Maj Genl U S Grant]  {tail: [signed] [Quarter[?] Master General]}
+
+Code-word tokens: H 30, I 1.
+
+**N2-BJ | Page 87 | 8979 | 4 June 1864 10 PM, to C. A. Dana (Cipher No. 2; "10 pm", no addressee in clear)**
+
+{time: 10 PM} [June] [4] for [Dana C A] [.] [Lieutenant] [Colonel] Wade Son [Of the] Senator who served as [Captain] of [Cavalry] [In the] [Army] [Of the] [Potomac] & distinguished himself for pluck & gal aunt try has just returned from [New Orleans] & wants to serve on [Sheridan P H] [Staff] pause [Meade G G] knows him [.] Please ascertain & [Report] whether [Sheridan P H] will take him  {tail: [signed] [Secretary of War] cable still remains broken}
+
+Code-word tokens: H 22, I 1.
+
+**N2-BK | Page 245 | 9139 | 12 Dec 1864, to R. R. McCaine (Cipher No. 2, Julia time word; page number printed 245)**
+
+{time: 4 PM} For [Sheridan P H] Dispatch received and [Secretary of War] requested to reoke the as sign ment [.] It was made prince I pally be cause the [Officer] was acting in that cape as city as was under stood by your [Order]'s and as was spoud by your select shun and wich [.] Is a chief [Quarter Master] to your [Army] needed and if so who is most cape able and most worthy  {tail: [signed] [Quarter[?] Master General] boo}
+
+Code-word tokens: H 8, C 2, I 1.
+
+**N2-BL | Page 33 | 8925 | 8 Apr 1864 2.30 PM, Meigs to Capt Bulkley at New Orleans, via Cairo, copy via N. Y. (Cipher No. 2)**
+
+Via Cairo Copy via N. Y. (2.30 P. M) [Washington] {date: Apr 8} {time: 2.30 PM} For [Colonel] Holabird Chief [Quarter Master] [Department] [Of the] Gulf [New Orleans] [.] Confidential Parston [.] send a vessel loaded with [Forage (-ed, -ing)] to Pen say cooly to make sure of a supply there by [1] of May to meet any contingentsay [.] I order [Forage (-ed, -ing) [#]] al so sent forward from [New York] but storms may delay it  {tail: [signed] MC Meigs [Quarter[?] Master General]}
+
+Code-word tokens: H 17.
+
+Totals over the 64 entries: H 1700, C 69, I 59, M 2.
 <!-- decode.py: derived block ends -->

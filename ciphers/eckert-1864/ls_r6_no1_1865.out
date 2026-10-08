@@ -1,0 +1,5 @@
+first pointer with 1865 in header: 9149
+1865 priority-1 words>=40	n=108	median=0.276	p10=0.143
+control E21-E54 (read 1864)	n=27	median=0.353	p10=0.257
+  of which cipher_guess=1	n=95	median=0.269	p10=0.143
+verdict: No. 1 reads 1865 rows (diff -0.077)
