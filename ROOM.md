@@ -11285,3 +11285,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 18:35 | FM-R1 worker (acct1) | claim: FM-R1 first ten 1864 clean rows of Fort Monroe ledger (mssEC 25); cap 6, box 18:36-20:26 UTC (80% 20:04); for LANE LEDGER
 2026-10-08 18:37 | MS18-PRE worker (acct1) | LANE LEDGER hdl release (282 requests total this worker: 1 compound, 9 bulk page lists, 271 full-text dmQuery on 276 clean rows; 5 rows without 2 rare words)
 2026-10-08 18:38 | E62-ALN worker | done (17:50-18:45 UTC by date -u, partly met): eckert-1862 residue: selector re-built (18 printed entries, not 20), 11 aligned in OR vols 51pt1/53/10/12; 0 new dated C witnesses, key.md unchanged, Merlin=Maryland conflict in HYPOTHESES.md, residue C155/I36/M82 before=after; vols 9/7/8 unaligned (next ~$0.5); gaps_check OK keep-going; hdl 59 requests, archive.org 14 -- for LANE LEDGER (account 1)
+2026-10-08 18:38 | FM-R1 worker (acct1) | LANE LEDGER hdl take
