@@ -4,6 +4,7 @@
 canvas	folio	dateline_or_docket	system	gloss	basis
 20	17	Christianopel, 6 Avril 1645 (close on canvas 21)	mixed	yes	viewed; letters, z/v/gt/hk-like marks among digits (also corpus A, KX-LATHCT1 d2 .567 l1 .300)
 21	18	Christianopel, 6 Avril 1645	mixed	yes	viewed; same letter as canvas 20
+29	26	"Extrait d'une lettre de [cipher name] du 30e Mars 1646"; left leaf a rotated docket, "[?] may 1646" at 1000 px	mixed	yes	viewed D2-COL26 8 Oct 2026 (fetched that day; HTTP 500 / failures before): digits with bare letters and marks (l, w, y, z, h-bar, ff) under a full interlinear gloss (Knut, Penaranda, P. d'Orange, Limbourg), f.24 / canvas 20-21 type
 30	27	docket left leaf "[?] May 1646 a M. Servien" (NOTES KX-LATHTR: 8 May 1646)	d2	yes	viewed; also corpus B, d2 = 1.000 on 147 transcribed tokens
 31	27	duplicate capture of canvas 30	d2	yes	not viewed separately (leaves.tsv: pixel-identical text)
 32	28	continuation of canvas 30	d2	yes	viewed

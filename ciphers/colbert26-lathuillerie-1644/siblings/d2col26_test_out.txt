@@ -1,0 +1,14 @@
+D2-COL26 bracketed-walk test; anchors 23 key_f23 C codes; units {'c30': 11, 'c33': 9, 'c51': 4, 'c62': 12}
+instrument c30: anchor hits 17 vs L p95 18 max 23 P 0.1279 -> FAILS
+instrument c33: anchor hits 24 vs L p95 19 max 24 P 0.0002 -> CLEARS
+instrument c51: anchor hits 15 vs L p95 11 max 16 P 0.0003 -> CLEARS
+instrument c62: anchor hits 37 vs L p95 25 max 30 P 0.0000 -> CLEARS
+code	value	N	H	per_unit	L_mean	L_p95	L_P	L_Pmin	S_mean	S_p95	S_P	verdict
+20	i	10	8	c30:7/9 c33:6/6 c51:1/2 c62:1/2	3.64	6	0.0093	0.0000	3.37	6	0.0029	FAIL
+30	s	22	19	c30:10/12 c33:8/10 c51:4/4 c62:7/8	8.21	12	0.0000	0.0000	13.36	17	0.0062	PASS
+67	leur	0	0		-	-	-	-	-	-	-	TOO-SHORT
+81	me	2	2	c30:0/1 c33:2/2	-	-	-	-	-	-	-	TOO-SHORT
+81	il	2	0	c30:0/1 c33:0/2	-	-	-	-	-	-	-	TOO-SHORT
+85	na	2	0	c62:0/2	-	-	-	-	-	-	-	TOO-SHORT
+85	luy	2	0	c62:0/2	-	-	-	-	-	-	-	TOO-SHORT
+96	que	8	5	c30:3/4 c33:4/5 c62:1/3	0.86	3	0.0032	0.0000	1.20	4	0.0053	PASS

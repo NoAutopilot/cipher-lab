@@ -1,6 +1,6 @@
 # PREREG-D2-COL26 -- value-independent test of the six codes DA1-COLV lowered to M (registered before scoring)
 
-Worker D2-COL26 (account 2, LANE DEFAULT-account-2-20261008-0710), 8 Oct 2026, written ~07:35 UTC by date -u, pushed before
+Worker D2-COL26 (account 2, LANE DEFAULT-account-2-20261008-0710), 8 Oct 2026, written 07:24 UTC by date -u (pushed 65d490d04 at 07:25; first draft said ~07:35, an estimate, corrected), pushed before
 siblings/d2col26_test.py is run. Brief: .claude/briefs/runs/2026-10-08-account2-default-0710-jobs.md, job D2-COL26.
 
 **Codes and values under test** (the R10-COL26B sibling values; key_f23_anchor_r10.tsv): 20 = i, 30 = s, 67 = leur, 81 = me,
