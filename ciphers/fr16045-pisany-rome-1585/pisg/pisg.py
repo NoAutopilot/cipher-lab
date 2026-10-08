@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """D1A-PISG: score the blind f.275v gloss read against the Colbert copy (PREREG-D1A-PISG.md).
-python3 pisg/pisg.py [--check]   (run from the target folder or anywhere)"""
+python3 pisg/pisg.py [--reader reader_B.txt --out pisg_result_B.json] [--check]   (run from the target folder or anywhere)
+Default reader_A.txt -> pisg_result.json (D1A-PISG); D1A-PISG2 adds --reader/--out for the second blind reader and the reconciliation."""
 import json, random, re, sys, unicodedata
 from pathlib import Path
 H = Path(__file__).resolve().parent; T = H.parent
@@ -17,7 +18,7 @@ def segments(path):
     for ln in path.read_text().splitlines():
         if ln.startswith("=== "): cur = ln[4:].strip(); segs[cur] = []; continue
         if cur and cur != "notes":
-            ln = re.sub(r"\((?:L0|very|\"|fairly|no sep|\?)[^)]*\)", " ", ln)  # reader's own remarks, not transcription
+            ln = re.sub(r"\((?:L0|very|\"|fairly|no sep|struck|\?)[^)]*\)", " ", ln)  # reader's own remarks, not transcription
             segs[cur].append(ln)
     return {k: norm(" ".join(v)) for k, v in segs.items() if k != "notes"}
 def semiglobal(g, c):
@@ -38,8 +39,10 @@ def ident(segs, copy):
     tot = sum(len(v) for v in segs.values())
     return sum(semiglobal(v, copy) for v in segs.values() if v) / tot, tot
 def p99(xs): xs = sorted(xs); return xs[int(0.99 * (len(xs) - 1))]
+def arg(name, default):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
 def main():
-    segs = segments(H / "reader_A.txt"); copy = norm((T / "kp86i/colbert_f275v.txt").read_text())
+    segs = segments(H / arg("--reader", "reader_A.txt")); copy = norm((T / "kp86i/colbert_f275v.txt").read_text())
     pool = norm(" ".join((T / f).read_text() for f in ["kp86/colbert_p49_50.txt", "kp86b/colbert_p51_52.txt",
             "kp86g/colbert_f247r.txt", "kp87a/colbert_p338_339.txt", "kp87b/colbert_p341_342.txt"]))
     tgt, tot = ident(segs, copy)
@@ -57,7 +60,7 @@ def main():
            "too_short": tot < 150}
     res["G1_witness"] = (not res["too_short"]) and tgt > res["N1_span_p99"] and tgt > res["N2_order_p99"]
     res["G2_agreement_080"] = tgt >= 0.80
-    out = H / "pisg_result.json"; txt = json.dumps(res, indent=1) + "\n"
+    out = H / arg("--out", "pisg_result.json"); txt = json.dumps(res, indent=1) + "\n"
     if "--check" in sys.argv:
         ok = out.exists() and out.read_text() == txt; print("up to date" if ok else "STALE"); sys.exit(0 if ok else 1)
     out.write_text(txt); print(txt)
