@@ -2340,3 +2340,41 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); K8472 read 
 - [ ] image-check: the test used volunteer text only; next: 3 page images per ledger if a book is found
 - [n/a] retry: no failed attempt
 Verdict: keep going: 1 internal gap; cheapest next: the 10-entry book test on 9660's own pages, ~$0.5 (8472 and 6254 wait on a book not in hand; known-keys and image-check steps open).
+
+## E62-ALN (8 Oct 2026, account 1, for LANE LEDGER)
+Worker E62-ALN, 17:50-18:36 UTC by date -u, cap 3. Not complete: three of five volumes aligned, two unrun (see gaps).
+Prior-work checks (by hand; tools/prior_work.py absent): own work -- grep of this folder's NOTES/HYPOTHESES/AUDIT for or_align on the
+residue: only LS3-R62's "[ ] print" row, no artefact (not done); ROOM -- no live claim on this target; holder transcription -- the
+58 residue page texts re-fetched from hdl.huntington.org (59 requests, one retried; `residue_decode.py --check` current on them);
+OR vols. 5, 7 (two scans), 8, 9, 10 pt1-2, 11 pt1/3, 12 pt1/3, 51 pt1, 53 (rootrich; the 1972 reprint is access-restricted) from
+archive.org (14 requests).
+- The 20-entry list of LS3-R62 was scratch and could not be reproduced. `print/residue_select.py` (new) re-selects M-bearing residue
+  entries by shared word n-grams with one OR volume: 6-grams >= 3 gave 10 entries, 5-grams >= 3 (the or_align anchor rule) gave 17,
+  both on the ledger words and the decoded reading. 4979.1 (OR 53 p.513) is missed by both because the volume's OCR breaks
+  "abso lutely"; it was added by hand. So 18 entries, not 20; the difference is the selector, not a finding.
+- `print/or_align.py` unchanged, per volume, output in `print/residue_print/<volume>/`. Run: vol. 53, 10 pt1, 10 pt2, 12 pt3 (100 shuffles),
+  vol. 51 pt1 (3 shuffles, slow). Not finished: vol. 9 (killed), vol. 7 (timeout at 150 s); vol. 8 not started.
+- Result, M tokens with a dated C witness: none. The five single-day rows named in the brief (Myrtle, Mary, Ingress, Camden,
+  Humboldt) get no date from any aligned entry (no ledger occurrence of them is in the aligned set), so key.md is unchanged.
+  Agreement with key.md: Koran = Ohio and Lamb = Kansas (4979.1, 12 Feb, OR 53 p.513), Negus = Potomac and Opal = Winchester
+  (5015, OR 51 p.532), Whale = cavalry, whistle = enemy (5021/5028, p.537): these re-witness existing rows on new days, not
+  entered. New single, not entered: Eddy = Banks (5021 entry 0, p.537, one telegram). Conflict: Merlin = Maryland vs key.md Virginia
+  (5021.1, 25 Feb), logged in HYPOTHESES.md with both witnesses. Junk: War = "Avar" (OCR), valleys = department (vol. 12 pt3 p.332).
+- Held-out and control: 0 scored in every run (test 0/0), so no gain claim; the proposals are single occurrences.
+- Residue before/after: key.md unchanged, so `residue_decode.py --check` current and totals C 155, I 36, M 82 before = after.
+## Remaining gaps (E62-ALN, 8 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82; 18 printed residue entries selected, 11 aligned to OR print 8 Oct 2026 (E62-ALN: 0 new dated C witnesses, 1 conflict logged, key.md unchanged)
+- residue entries of mssEC 15 (about 290) - blocker: open-codes; the printed ones in vols. 9, 7 and 8 (about 5 entries) are unaligned; next: or_align.py with --shuffles 3 on those three volumes (each run takes minutes), ~$0.5
+- Myrtle, Mary, Ingress, Camden, Humboldt single-day rows - blocker: no-key-material; none of the aligned entries carries one of the five words, so the print gave no date; next: select printed residue entries by those words, not by M count, ~$1
+- residue code words not fixed by any known plaintext - blocker: open-codes; Merlin = Maryland (print, 25 Feb) conflicts with key.md Virginia, logged in HYPOTHESES.md; next: read the 5021 page image at that line, ~$0.5
+- 17 neither-book entries (s2/confpair_pairs.tsv) - blocker: no-key-material; Cipher No. 3/No. 4 period, as LS3-R62; next: the Friedman Collection No. 4 copy from a desk browser, ~$1
+
+## Escalation (E62-ALN, 8 Oct 2026)
+- [x] siblings: as LS3-R62 (received ledgers mssEC 01-14, mssEC 12-13, mssEC 18, second OR scans)
+- [x] clear-pages: as LS3-R62 (no clear copy bound in mssEC 15)
+- [ ] known-keys: as LS3-R62; next: Cipher No. 4 in the Friedman Collection from a desk browser, ~$1
+- [ ] print: vols. 9, 7, 8 remainder of the printed residue entries; next: or_align.py --shuffles 3, ~$0.5
+- [x] key-rebuild: as LS3-R62; no key.md change here
+- [x] image-check: as LS3-R62 (six residue entries' M tokens, 0 slips)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 2 internal gaps; cheapest next: or_align.py on vols. 9, 7, 8 for the remaining printed residue entries, ~$0.5

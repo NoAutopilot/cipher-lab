@@ -23,3 +23,9 @@ D12-E62H (7 Oct 2026, solver) adds four Legend witnesses, each the print of its 
 telegram as deciphered in Papers of U. S. Grant vol. 11, not in OR); Canby 9945 25 Jan 1865 to Thomas, Eastport (OR 49.1 p.581 [D12-V62: was p.580],
 second IA scan). Totals Butler 16, Canby 11, unread 5. 9786 falls inside the overlap window (Beckwith line, Butler); the addressee
 pattern above holds for all four (still grade I, not used). The conflict stays unresolved.
+
+E62-ALN (8 Oct 2026, account 1): Merlin conflict from the print, not folded into key.md (rule 4). key.md: Merlin = Virginia, C,
+05 Feb-17 Jun 1862, OR 7 p.584 ("Western Virginia"). Ledger 5021 entry 1 (25 Feb 1862, aligned to OR ser. I vol. 51 pt 1 p.537 by
+print/or_align.py): Merlin <-> "Maryland". Witness A (Virginia): OR 7 p.584, Western Virginia telegram, Feb. Witness B (Maryland):
+OR 51 pt 1 p.537, the ledger's 25 Feb entry 1 (single occurrence, one telegram; one-word replace block, no held-out test possible).
+Unresolved: could be a date/line split (Feb Western Virginia vs 25 Feb Maryland) or an OCR/alignment slip; the page image is not read.

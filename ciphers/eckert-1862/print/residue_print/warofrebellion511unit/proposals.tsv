@@ -1,0 +1,7 @@
+ledger_word	n_occ	n_telegrams	top_meaning	top_count	all_meanings	key_md	status
+eddy	1	1	banks	1	banks:1		single
+merlin	1	1	maryland	1	maryland:1	Virginia	conflicts-key
+negus	1	1	potomac	1	potomac:1	Potomac	agrees-key
+opal	1	1	winchester	1	winchester:1	Winchester	agrees-key
+whale	1	1	cavalry	1	cavalry:1	cavalry	agrees-key
+whistle	1	1	enemy	1	enemy:1	the enemy	agrees-key
