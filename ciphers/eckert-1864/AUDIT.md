@@ -6211,7 +6211,7 @@ The print is also a non-statistical external check on three code words of E96: P
 
 ## AUDIT 3 (AUD-SIG-E146)
 
-Verifier: account 3, session_01BjKGq37wscDi4tRT9a5KiS (Opus), for LANE-VERIFY-4, 8 Oct 2026 23:39-00:0x UTC 9 Oct (date -u). Step type
+Verifier: account 3, session_01BjKGq37wscDi4tRT9a5KiS (Opus), for LANE-VERIFY-4, 8 Oct 2026 23:39-23:57 UTC (date -u). Step type
 `new-family-audit` (brief: .claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md "## AUD-SIG-E146"). Account 3 did not read or first-audit E146
 (reader LS5-R1e and first auditor FV-LS5-B on account 1; AUD2-LEDGER-2 was a different account-3 session). Nothing decoded; decode.py and
 keys untouched. Claim under audit: E146 at **N3 (weak), D2**, "not located in OR I/45 pt 2 or the other sources searched".

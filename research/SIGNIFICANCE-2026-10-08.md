@@ -57,7 +57,7 @@ I checked the audit classes for Chavigny (N3) and E37 (N3) in the repository, an
   and the succession is in Rommel VIII pp. 588-590 -- so the passage adds the decision and its stated purpose eleven weeks earlier, in
   the secretary of state's own despatch to the Hamburg envoy, not the fact of the reward. *Caveat:* the clause rests on letter signs
   graded M; key Tomokiyo's (published); class stays N3 (AAE volumes, the 1640 *Gazette* and Google Books not reached), depth D2.
-- **Quartermaster General to Allen, Louisville, 12 Dec 1864 (eckert-1864 E146), AUD-SIG-E146 (account 3 verifier), 8-9 Oct 2026.** *What it
+- **Quartermaster General to Allen, Louisville, 12 Dec 1864 (eckert-1864 E146), AUD-SIG-E146 (account 3 verifier), 8 Oct 2026.** *What it
   says:* Donaldson recommended that the US Military Railroads take immediate possession of the Louisville and Nashville Railroad as vitally
   necessary to sustain the army; the Quartermaster General asked Allen whether he agreed, or whether lending USMRR rolling stock would do, and
   whether the company could not do all that was possible without the interruption of a change of hands, public freight and travel having
