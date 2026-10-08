@@ -6783,6 +6783,47 @@
       "depth_sentence": "On 14 Aug 1864 Captain Leet tells Lieutenant Colonel Bowers that Colonel Sharpe's men will not go out before Wednesday or Thursday, and that W. J. Lee, once employed by Sharpe, offers to ride to Gordonsville starting tomorrow morning if given a horse and 200 dollars.",
       "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, LS4-V1a); image checked, 7 lines (LS4-V1a); code clause: Charity = Gordonsville reads in N2-BB, N2-E and here; no external check",
       "depth_note": "21 H of 22 code words (Black M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS4-V2a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS4-V2a verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Grant to Rawlins, 22 Nov 1864 8 PM, will not be at City Point until Thursday (N2-BY)",
+      "grade": "N3",
+      "line": "Read at grade H with the period War Department Cipher No. 2; the plain words are in the Huntington's public transcription; no prior decipherment of the code words or printed text located in the Official Records (ser. I vol. 42 pt 3), Internet Archive full text, Google Books (which reaches the Grant Papers vol. 13), OpenAlex or the Huntington's own full-text search (searched 8 Oct 2026).",
+      "gap": "weak N3 (LS4-V2a, 8 Oct 2026): plain words public in the Huntington transcription; Grant Papers vol. 13 pages for 18-24 Nov (not on IA), the press of 22-26 Nov, NARA RG 107 and HathiTrust unread, JSTOR rows pending, so not N4; one audit; SO-ECKERT-N2BY queued",
+      "phrases": [
+        "Huntington mssEC 19 p.234, pointer 9126, N2-BY"
+      ],
+      "document_id": "Huntington mssEC 19 p.234, pointer 9126, N2-BY",
+      "documents": [
+        "Huntington mssEC 19 p.234, pointer 9126, N2-BY"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "8 H of 8 code words",
+      "unresolved_spans": "",
+      "reading_version": "LS4-R2a 8 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS4-V2a)' section 5",
+      "depth_sentence": "At 8 PM on 22 Nov 1864, from Washington, Grant tells his chief of staff Brig. Gen. Rawlins that he will not be at City Point until Thursday.",
+      "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, LS4-V2a); image all 3 lines from line crops (LS4-V2a); date word Oliver Arnold = 22 agrees with the header; code clause: Bridle = City Point reads in place in a second entry (ciphertext-no2.txt 'for Crowd Bridle'); external: Grant to Stanton 18 Nov 1864 (OR I/42 pt 3) puts him in Washington on Tuesday 22 Nov; matched control LS4-R2a (No. 1, No. 9, three shuffles: 0 of 3 clauses)",
+      "depth_note": "8 H of 8 code words"
     }
   ],
   "lanes": [

@@ -428,3 +428,5 @@ ciphers/eckert-1864	Ricketts AND "City Point" AND Baltimore AND transports AND "
 ciphers/eckert-1864	"vessels bringing up Ricketts"	2026-10-08	queued	
 ciphers/eckert-1864	Leet AND Bowers AND Sharpe AND Gordonsville AND "August 14, 1864" AND (cipher OR telegram OR scout)	2026-10-08	queued	
 ciphers/eckert-1864	"formerly employed by Colonel Sharpe"	2026-10-08	queued	
+ciphers/eckert-1864	Grant AND Rawlins AND "November 22, 1864" AND ("City Point" OR telegram OR cipher)	2026-10-08	queued	
+ciphers/eckert-1864	"not be at City Point until Thursday"	2026-10-08	queued	

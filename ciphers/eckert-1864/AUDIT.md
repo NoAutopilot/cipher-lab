@@ -3828,3 +3828,87 @@ re-running the committed scripts and looking code words up in the three key file
   SO-ECKERT-E90, SO-ECKERT-E92, SO-ECKERT-N2BZ2 with prompts in second-opinions/; JSTOR-QUEUE.tsv 6 rows (families i and ii). Requests:
   hdl.huntington.org 8 searches + 2 item JSONs + 3 images, >= 3.2 s apart; archive.org 5 djvu + 4 metadata + 1 advancedsearch; be-api 15
   (one 502, one retry after 5 s); scholarsjunction.msstate.edu 3 (two 403s, stopped); chroniclingamerica.loc.gov 2 (403, stopped); www.loc.gov 2.
+
+## AUDIT (LS4-V2a)
+
+Verifier LS4-V2a (account 1, LANE ST-LEDGER-4, session_01UhR6Y5Vm6G5WJw1j7EERL6), 8 Oct 2026, 15:58-16:2x UTC by `date -u`; a separate
+session from the reader LS4-R2a, not protecting its conclusions. Scope (lane brief, Wave 3): N2-BR, N2-BU, N2-BY classified; N2-BV and N2-BX
+depth ruling only. Nothing decoded; key look-ups only. Key source for every item: `period` (Cipher No. 2, key-no2.md from mssEC 47). Depth
+under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+
+### 1. Re-derivation, own transcription, image
+- `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check`: exit 0 each.
+- Own Huntington transcription (sources/mssEC19/p<pointer>.json) read first for all five: none is clear; the content words of each are code
+  words in the transcription, the plain words are public there (the E78 shape, not the E74/E76 shape).
+- Image (2400 px, `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`, scratch, not committed). Crops cut here:
+  `python3 tools/iiif_lines.py --image $S/img/p9126.jpg --out $S/c9126 --prefix p9126 --region 150,250,2200,300 --lines-per-crop 3 --max-width 2400`
+  and `python3 tools/iiif_lines.py --image $S/img/p9057.jpg --out $S/c9057 --prefix p9057 --region 150,900,2200,680 --lines-per-crop 2 --max-width 2400`.
+  **N2-BU** (the longest, 7 lines) and **N2-BY** (3 lines) agree word for word with ciphertext-no2.txt, header to tail. N2-BR (p8915) fetched but
+  not cut: it is N1 by print (section 2). No M or I token in the three classified entries needed a re-read beyond these lines.
+- Key rows used by N2-BY, checked in key-no2.md: Hang = Washington, Nancy = 8 PM, Oliver = 20, Arnold = 2, Palermo = Brig. General, Bridle =
+  City Point, Yankee = Thursday, Crowd = Lieut Gen U.S. Grant (signature). Oliver Arnold = 22 agrees with the header "Nov. 22nd".
+
+### 2. Located in print
+| ID | printed at | how confirmed |
+|---|---|---|
+| **N2-BR** | **The Papers of Ulysses S. Grant vol. 10** (Simon ed.; IA `papersofulyssess0010gran`, lending item, page not read), in a note: Stanton "telegraphed to USG. 'This Department will not transfer troops from General Steeles Command unless at your request.' ALS (telegram sent), DNA, RG 107, Telegrams Collected (Bound)", followed by Thayer's telegram of 11 Mar on Curtis and Blunt | be-api full text (phrase "will not transfer troops from", 2 hits, one this volume) and Google Books snippet (key, country=US; "Steeles command unless at your request", 2 hits, both Grant Papers Jan-May 1864). Word for word with the ledger reading; the ledger's "Nutmegs" = Steele carries the print's "General Steele". The occasion is printed too: OR I/34 pt 2 (`warofrebellion342unit`), Grant to Stanton, Nashville, 14 Mar 1864: "Generals Curtis and Blunt desire a transfer of a portion of Steele's force and territory to the Department of Kansas. I think such a change decidedly unadvisable." **N1.** |
+| **N2-BX** | **The Papers of Ulysses S. Grant vol. 13** (Nov 1864-Feb 1865; not on IA), in a note: Stanton's telegram "... come this way if possible on your return." ALS (telegram sent), DNA, RG 107; then "At 8:30 P.M., USG telegraphed to Stanton. 'I will be in ...'" | Google Books snippet, two hits (the 1985 volume). Grant's reply is in OR I/42 pt 3 (`warofrebellion423unit`): Burlington, N. J., 18 Nov 1864, 8.30 p.m., to Stanton: "I will be in Washington Tuesday morning. Will go to New York with my family and remain until Monday." **N1.** |
+
+### 3. Substance printed, wrapper not located: N2-BU
+N2-BU (Washington, 29 Aug 1864, to City Point for Grant's information, also sent to Sherman) joins two telegrams that are both printed in
+OR ser. I vol. 43 pt 1 (IA `warofrebellion431unit_0`; note: the cached `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` is
+**not** vol. 43 pt 1 -- its text is the 1865 Carolinas volume, chap. LIX -- so LS4-R2a's "OR I/43 pts 1-2 cached, Gallipolis none" searched the
+wrong book):
+- "Rebels in Valley report Hood killed & Longstreet in command at Atlanta" = Sheridan to Halleck, Charlestown, W. Va., 29 Aug 1864, 9.30 p.m.
+  (about p.953, before the running head 954): "The rebels report that Hood has been killed, and that Longstreet is in command at Atlanta."
+- "The mily Agt at Gallipolis telegraphs Gov Bruff this morning that Breckinridge with 8000 men has advanced into Kanawha Valley by the way of
+  Lewisburg" = Brough to Stanton, Columbus, 28 Aug 1864, received 10 a.m. 29th (p.951; also OR I/39 pt 2, `warofrebellion392unit`): "Our military
+  agent at Gallipolis telegraphs me this morning, 'I have reliable information of Breckinridge's advance into the Kanawha Valley with 8,000, via
+  Lewisburg.'" The ledger's plain "Gov Bruff" is Governor Brough (the reader's spelling as written; E35 on the same leaf writes "B Rough").
+  E35 (same leaf, N1) is the relay of the same Brough telegram.
+- Not located: the War Department's own wrapper ("Following rumors are given for information of Grant & has been sent to Sherman"): OR I/42 pt 2
+  and I/38 pt 5 (`warofrebellion422unit`, `warofrebellion385unit`) whole-volume regex; Grant Papers vol. 12 by IA full text ("Gallipolis", "Hood
+  killed": 0); Google Books. **N2** (the E49 kind: content in print, no prior mapping of this ciphertext to it).
+
+### 4. Not located: N2-BY (search log, 8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| Own transcription and Huntington full text | p9126 transcription; CONTENTdm p16003coll11 `CISOSEARCHALL` "Rawlins Thursday", "Rawlins City Point Thursday" | not clear in its own transcription; one hit, pointer 8811 (Sheridan to Rawlins, Aug 1865, "next Thursday"): unrelated |
+| OR by date | OR I/42 pt 3 (`warofrebellion423unit`) whole-volume regex: Rawlins, Thursday, Burlington, 17-24 Nov 1864 | not printed. Context: Grant to Halleck 17 Nov ("I leave this morning for Burlington, N. J. Will have with me a cipher operator"); to Stanton 18 Nov ("I will be in Washington Tuesday morning", i.e. 22 Nov); to Rawlins from Burlington 19 Nov 11.30 a.m.; Butler to Grant at Burlington 20-21 Nov. Agrees with a Grant in Washington on Tuesday 22 Nov sending this |
+| Grant Papers | vol. 13 is not on Internet Archive (IA advancedsearch lists vols. 1-12, 14-20); Google Books snippet search reaches vol. 13 (it found N2-BX there) | "not be at City Point until Thursday", "will not be at City Point until", Rawlins + "until Thursday": no Grant Papers hit. MSU Scholars Junction PDFs of the series: Cloudflare challenge (403), not retried |
+| IA full text (be-api) | "not be at City Point until Thursday" (502, not retried), "City Point until Thursday" | 3 hits, all Lincoln's April 1865 City Point visit: unrelated |
+| Press | Chronicling America (loc.gov JSON, 22-26 Nov 1864, "Grant" "City Point" Thursday) | request timed out; not retried: unread |
+| Scholarship | OpenAlex (key) phrase | 0 |
+| JSTOR | 2 rows appended to JSTOR-QUEUE.tsv (families (i) and (ii)) | pending (never blocks) |
+| Unread | Grant Papers vol. 13 pages for 18-24 Nov (the volume itself, not snippets); NARA RG 107; the press of 22-26 Nov; HathiTrust | unread |
+
+### 5. Classification (key `period`)
+`depth_pct` = (H + C) / code-word tokens.
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| N2-BR Stanton to Grant, 18 Mar 1864 3.30 PM | **N1** | known (Grant Papers vol. 10, note) | D3 | 100 (10 H of 10) | word for word with the print |
+| N2-BU War Department to Grant (and Sherman), 29 Aug 1864 | **N2** | substance known (OR I/43 pt 1 pp.951, 953) | D3 | 95.5 (21 H of 22; 1 I) | image all 7 lines; every content code word (Rebels, Valley, Report, Killed, Longstreet, Command, Atlanta, Telegraphs, Breckinridge, 8000, Advanced, Kanawha, By the way of) agrees with the two printed telegrams |
+| N2-BY Grant to Rawlins, 22 Nov 1864 8 PM | **N3** (weak: the plain words public in the Huntington transcription) | unknown | D3 | 100 (8 H of 8) | image all 3 lines; date word Oliver Arnold = 22 agrees with the header; code clause: Bridle = City Point reads in place in a second entry (ciphertext-no2.txt l.765, "for Crowd Bridle" = for Lieut. Gen. Grant, City Point); external: Grant's printed telegram of 18 Nov (OR I/42 pt 3) puts him in Washington on Tuesday 22 Nov; matched control by LS4-R2a (No. 1, No. 9, three shuffles: 0 of 3 clauses) |
+| N2-BX Stanton to Grant, 18 Nov 1864 4 PM | **N1** | known (Grant Papers vol. 13, note) | D1 | 100 (6 H of 6) | depth ruling: six code words (place, time, date, address, signature); the sentence is plain; no clause above the AD and no code value tested in two contexts within the entry -> D1 |
+| N2-BV to Grant, 7 Sept 1864 10.30 AM | not classified (brief: depth only) | - | D1 | 100 of 7 code words (7 H + 1 C), 3 M plain-word groups | depth ruling: the code words are address, date, time and "Point Lookout"; the only specific content ("tooth line", "Act comack", "Gimlet") is M-graded plain words, so a true specific sentence cannot be written from the reading without emending them -> D1, no status.json row, no SO row |
+
+- **N2-BY: N3.** Safe sentence: "Read at grade H with the period War Department Cipher No. 2: Grant tells Rawlins on 22 Nov 1864 that he will not be at
+  City Point until Thursday; the plain words are in the Huntington's public transcription; no prior decipherment of the code words or printed text
+  located in the Official Records (ser. I vol. 42 pt 3), Internet Archive full text, Google Books (which reaches the Grant Papers vol. 13), OpenAlex
+  or the Huntington's own full-text search (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never printed". Not N4: the Grant Papers vol. 13
+  pages themselves, the press and NARA RG 107 are unread -- a second audit should read Grant Papers vol. 13 for 18-24 Nov before this is counted.
+- Depth sentence (D3, written from the reading): "At 8 PM on 22 Nov 1864, from Washington, Grant tells his chief of staff Brig. Gen. Rawlins that he
+  will not be at City Point until Thursday."
+- **N2-BR, N2-BX: N1**; **N2-BU: N2**. Not counted; no status.json or SO rows.
+
+### 6. Postmortem
+- Two of LS4-R2a's five "not located" entries are in the Grant Papers notes, word for word, and a third is two printed telegrams joined. The brief
+  named the Grant Papers; the reader's be-api pass searched without the right phrase. Lesson for every Washington-to-Grant 1864 entry: the Grant
+  Papers notes print Stanton's and Halleck's telegrams to Grant from the RG 107 "telegrams sent" -- the very books this ledger is -- so a Google Books
+  snippet query (key, country=US) on 4-6 plain words is the cheapest step and reaches vol. 13, which IA does not hold.
+- The cached `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` is mislabelled for this purpose: it is not OR I/43 pt 1 (the real
+  one is IA `warofrebellion431unit_0`). Any earlier "OR I/43 pt 1 cached: none" that used the cache is suspect. Logged here, not fixed (bulk caches
+  are not this brief's files).
+- Correction (reader's file, for a reader, ~$0.1): N2-BU "Gov Bruff" = Governor Brough (print); no class change.
+- Requests: in the ROOM done line.
