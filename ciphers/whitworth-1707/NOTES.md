@@ -1,6 +1,6 @@
 # Charles Whitworth (Moscow) to Harley and Boyle, 1707-08: the "undeciphered" items of TNA SP 91/5
 
-- **Status:** blocked (6 Oct 2026, R8-WHIT: Hartley 2002 and Rothstein 1986 not read; HTRC EF API down, books in copyright, no page text reachable). Narrowed on 19 Sept 2026 to one short passage. Of the five Discovery items catalogued
+- **Status:** blocked (8 Oct 2026, D2-WHIT: HTRC EF still down, DECODE logged-in field search 0 Whitworth-Moscow records; 6 Oct 2026, R8-WHIT: Hartley 2002 and Rothstein 1986 not read; HTRC EF API down, books in copyright, no page text reachable). Narrowed on 19 Sept 2026 to one short passage. Of the five Discovery items catalogued
   "undeciphered", four have their plaintext in print or in the same volume; only the gap in SP 91/5/108
   (Moscow, 30 July/10 Aug 1707) is unread. Nothing can be done from published sources; the next step is the
   copy order in `REQUEST.md`.
@@ -216,9 +216,9 @@ than a standalone TNA order.
 Waits on: a TNA page-copy order for SP 91/5/108 and one or two 1707 neighbours (REQUEST.md, route identified
 19 Sept 2026, now folded into the consolidated TNA batch, ASKS row 73).
 
-- S: run tools/htrc_ef_headwords.py for 'Whitworth'/'Harley' against Hartley 2002 and Rothstein 1986 -- the HTRC Extracted Features API works from the cloud even though hathitrust.org itself is Cloudflare-blocked; unchecked per this file's own failure log.
-- S: re-run DECODE's sender/holder search for 'Whitworth'/'SP 91' via the now-working browser login (tools/decode_browser_login.js) -- the 19 Sept check used the pre-fix anonymous-JWT route, which 401s on view/list.
-- S: re-grep HMC Portland vols 3-6 (already fetched) for 'Boyle' and 'Moscow' in addition to 'Whitworth', broadening the one term already tried.
+- S [tried 6 and 8 Oct 2026, EF down both days; retry later]: run tools/htrc_ef_headwords.py for 'Whitworth'/'Harley' against Hartley 2002 and Rothstein 1986 -- the HTRC Extracted Features API works from the cloud even though hathitrust.org itself is Cloudflare-blocked; unchecked per this file's own failure log.
+- S [done 8 Oct 2026, D2-WHIT: 0 relevant records]: re-run DECODE's sender/holder search for 'Whitworth'/'SP 91' via the now-working browser login (tools/decode_browser_login.js) -- the 19 Sept check used the pre-fix anonymous-JWT route, which 401s on view/list.
+- S [done 6 Oct 2026, R8-WHIT]: re-grep HMC Portland vols 3-6 (already fetched) for 'Boyle' and 'Moscow' in addition to 'Whitworth', broadening the one term already tried.
 
 ## R8-WHIT lookups (6 Oct 2026, 03:44-03:5x UTC, Sonnet worker for LANE-RUN8-account-4)
 
@@ -242,3 +242,30 @@ Waits on: a TNA page-copy order for SP 91/5/108 and one or two 1707 neighbours (
 
 Requests: openlibrary.org 3, catalog.hathitrust.org 5, data.htrc.illinois.edu 6 (all errors), archive.org 5.
 Reading unchanged. Remaining gap is unchanged: the SP 91/5/108 passage (copy order, REQUEST.md).
+
+## D2-WHIT lookups (8 Oct 2026, 08:17-08:21 UTC, worker for LANE DEFAULT-account-2-20261008-0710)
+
+1. **HTRC EF retry.** `tools/htrc_ef_headwords.py mdp.39015055900651 mdp.39015028544073 --words
+   whitworth,cipher,cypher,decipher,deciphered,cyphers,ciphers,sp,91` at 08:17 and once more at 08:19 UTC (fresh cache
+   both times): both htids returned `PrimaryUnavailableException ... No primary node is available! (Supervisor-1/ef)`
+   both times, the same error as 6 Oct. **Unreachable, not a negative**; no page hits recorded. Host stopped after
+   the one permitted retry. Next: retry on a later date (or read the books at the owner's desk / a library copy).
+2. **DECODE, one logged-in browser session** (`tools/decode_browser_login.js --listen`, one login, 11 page requests
+   1.5 s apart). RecordsSearch form read first for the field names (Sender, Receiver, Holder, Origin City, Additional
+   Information are "contains"; Start Year is "between"). Field searches on RecordsList:
+   | search | result |
+   |---|---|
+   | Sender contains "Whitworth" | 4 records, 8149-8152, London BL Add MS 38238 (parts 4-7), 1803-1809, France/Paris, English -- by date and place presumably the later Charles Whitworth (Earl Whitworth, Paris embassy 1802-03; inferred, records not opened), not the 1705-12 Moscow envoy; no SP 91 item |
+   | Receiver contains "Whitworth" | 0 |
+   | Additional information contains "Whitworth" | 0 |
+   | Additional information contains "SP 91" | 0 |
+   | Origin city contains "Mosc" / "Moskva" | 0 / 0 |
+   | Sender contains "Harley" / Receiver contains "Harley" | 0 / 0 |
+   | Holder contains "National Archives", start year 1700-1715 | 305 records; page 1 (100 rows) all National Archives of Hungary G15 (Rakoczi); pages 2-4 not read (single-login session already closed) |
+   | Holder contains "National Archives" (control, no date) | 897 records -- the field search returns rows, so the zeros above are real listing results |
+   Search result only: no DECODE record of the 1705-12 Moscow despatches or of SP 91 was found by these field
+   searches on 8 Oct 2026. Not a statement about TNA's holdings. Saved pages stay in the session scratchpad (they
+   carry the account name), not committed.
+
+Requests: data.htrc.illinois.edu 4 (all errors), de-crypt.org 1 login + 11 pages. Reading unchanged; status stays
+blocked on the SP 91/5/108 copy order (REQUEST.md, ASKS row 73).
