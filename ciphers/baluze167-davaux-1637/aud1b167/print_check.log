@@ -1,0 +1,3 @@
+8 phrases, 5 listed sources: 60 rows, 7 with hits -> ciphers/baluze167-davaux-1637/aud1b167/print-check.tsv
+requests: archive.org 2, be-api.us.archive.org 8, www.googleapis.com 8, api.openalex.org 9, api.semanticscholar.org 1, api.crossref.org 2
+  api.semanticscholar.org: blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22touchant%20la%20jonction%20de%20leurs%20forces%22

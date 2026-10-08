@@ -6613,6 +6613,48 @@
       "depth_sentence": "On 1 Nov 1864 Butler asks W. P. Smith for his special car for himself and his staff on the first through train to New York, strictly confidential, with the acknowledgement to go care of Colonel Hardie.",
       "depth_check": "fresh rule-7 re-derivation (LS3-V18a); time word Francis = 12 agrees with the header 12M; code clause: Pandora = Colonel reads in E66 too; external: Hardie to Butler and Grant to Butler, 1 Nov 1864 (OR I/42 pt 3 pp.480-481); held at D2 because six code words carry little of the sense",
       "depth_note": "6 H of 6 code words; most of the text is plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/baluze167-davaux-1637",
+      "key": "published",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (AUD1-B167)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 29.0,
+      "depth_unread": {
+        "names_codes": "1",
+        "other": "1"
+      },
+      "depth_by": "AUD1-B167 verifier (account 2)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Baluze 170 f.229r-v: Chavigny to d'Avaux, Amiens, 25 Aug 1640, bare cipher passage on the junction of the dukes' and the Landgravine's troops with Longueville",
+      "grade": "N3",
+      "line": "Read with Tomokiyo's published D'Avaux key (106 numeral tokens H, 180 letter signs M); no prior decipherment or printed text located in Avenel's Richelieu letters VI-VIII, Le Clerc's Negociations secretes t.1, the Guebriant histories (1657, 1913), Internet Archive full text, Google Books, OpenAlex or CrossRef (searched 8 Oct 2026).",
+      "gap": "AAE Correspondance politique and Chavigny's own registers unread; BnF catalogue record not read; Semantic Scholar 429; JSTOR rows queued; so not N4; one audit (AUD1-B167); SO-BAL170-F229 queued",
+      "phrases": [
+        "touchant la jonction de leurs forces",
+        "gratiffiera le comte d'Heberstein"
+      ],
+      "document_id": "BnF Baluze 170 ff.229r-v (letter ff.228r-230r)",
+      "documents": [
+        "BnF Baluze 170 ff.229r-v (Gallica btv1b90015040, canvases 240-241)"
+      ],
+      "claim_scope": "provisional-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "366 cipher tokens: H 106, M 258, I 1, U 1",
+      "unresolved_spans": "f.229r L03-L05, L10 '13 73=', f.229v L01, L04",
+      "reading_version": "D4-B167 8 Oct 2026 (reading_b170f229.txt), re-derived D4V-B167",
+      "fields_source": "baluze167-davaux-1637/AUDIT.md '## AUDIT (AUD1-B167)' sections 3-4",
+      "depth_sentence": "Chavigny tells d'Avaux that the dukes and Madame la Landgrave want their troops joined to M. de Longueville and kept under his command even when the armies of the two crowns are together, and that the comte d'Heberstein, who is to succeed, will be gratified to bind him to do better than his predecessor.",
+      "depth_check": "cipher clause not met (longest H stretch ~12 letters); code clause: 8: leur ('leurs forces', 'leurs troupes') and 10: les (7 contexts) read sensibly; external: letter values printed in Tomokiyo's table (D3/D4 element, not used for D2); fr17 PASS (D4V-B167); rule-7 re-derivation exact (D4V-B167)",
+      "depth_note": "letter signs eye-identified against the published table, no shape-level control; held at D2"
     }
   ],
   "lanes": [

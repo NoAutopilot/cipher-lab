@@ -945,3 +945,40 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 - [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167)
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B); 170 f.229 crops re-cut (D1A-B167), passed (D4-B167) and re-derived (D4V-B167)
 Verdict: keep going: 4 internal gaps; cheapest next: provisional decode of 170 f.228r-v with the f.229 letter values (~$2), and AUDIT 1 on the f.229 reading (~$3)
+
+## AUD1-B167 verifier (account 2, for the account-3 orchestrator), 8 Oct 2026, 12:12-12:3x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md` section AUD1-B167 (first audit of the 170 f.229r-v reading; separate from
+D4-B167 and D4V-B167). Result in AUDIT.md '## AUDIT (AUD1-B167)': **N3, D2 (about 29% H), key published (Tomokiyo, credited)**; status.json
+results row added; SO-BAL170-F229 queued; two JSTOR-QUEUE rows; WORK-QUEUE AUD2-B167 (second audit, account 1). Re-ran
+`tools/decode_key.py --check` (up to date). Search files: `aud1b167/` (phrases.txt, sources.tsv, print-check.tsv, print-check-hosts.tsv).
+Where not found (8 Oct 2026): Avenel VI-VIII (OCR grep; vol VI has Richelieu's own Amiens letters of 2 and 19 Aug 1640, no Chavigny
+despatch to d'Avaux, no Eberstein in VI-VIII); Le Clerc, Négociations secrètes t.1; Le Laboureur, Guébriant (1657); Noailles, Guébriant
+(1913); IA global full text, Google Books, OpenAlex, CrossRef. Not reached: Semantic Scholar (429), AAE Correspondance politique, BnF
+catalogue record for Baluze 170. Rule 10: the class is in AUDIT.md only.
+
+## Siblings (8 Oct 2026, AUD1-B167)
+- 170 f.228r-v (same letter, same hand): reconciled 35 + 119 tokens, unread; next: provisional decode with the f.229 letter values (job
+  B167-228 in the same brief, account 4).
+- 168 f.246-247v: bare, two blind passes, letter signs unlabelled (gap below).
+- 169 ff.52-53, 97-98, 142: read in full with the published key (reading.txt); not yet audited as separate items.
+- 61 other letters of Baluze 167-171 carry a period interlinear decipherment (survey.tsv): N0 by rule 10, usable as C-grade known answers.
+
+## Remaining gaps (AUD1-B167, 8 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: provisional reading audited (AUD1-B167: N3, D2, one audit).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled. 170 f.228r-v: reconciled (35 + 119 tokens).
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 f.228r-v bare passage - blocker: not-attempted; the owner's sorter (sorter170/) is unanswered but the f.229 values give this hand; next: provisional decode of passes/reconciled_b170f228{r,v}.tsv with the f.229 letter values (9 c, mm p, n l, P i/s), marks graded M (B167-228 in the sibs-ledger3 brief), ~$2
+- 170 f.229r-v reading - blocker: waiting-on the answer of second audit AUD2-B167 (WORK-QUEUE.tsv, account 1) and the SO-BAL170-F229 reply (SECOND-OPINIONS-QUEUE.tsv); the letter signs stay M until a shape-level control on this hand; next for depth: a shape-level control (letter signs of this hand against the glossed 170 leaves), ~$3
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (8 Oct 2026, AUD1-B167)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762; Siblings section above
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); its letter-sign block attests the f.229 values (D4V-B167)
+- [x] print: Avenel VI-VIII, Négociations secrètes t.1, Guébriant histories 1657 and 1913, IA/Google Books/OpenAlex/CrossRef phrase search (AUD1-B167): nothing printed for f.229
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); f.229 letter values settled and checked against the table (D4-B167, D4V-B167); untried: the same for f.228 and a glossed text in the f.247 hand
+- [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167)
+- [x] retry: 170 f.229 crops re-cut (D1A-B167), passed (D4-B167), re-derived (D4V-B167) and audited (AUD1-B167)
+Verdict: keep going: 3 internal gaps; cheapest next: provisional decode of 170 f.228r-v with the f.229 letter values (~$2), then the second audit AUD2-B167

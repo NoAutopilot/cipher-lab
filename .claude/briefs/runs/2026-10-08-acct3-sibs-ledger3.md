@@ -76,3 +76,13 @@ SIBS-READ found 6 of 7 checked rows' state column wrong. Disk only, no network: 
 target's NOTES.md, AUDIT.md and Siblings section and set state to one of read / glossed / printed / unread-unglossed /
 needs-image / not-located, quoting the NOTES line. Write SIBLINGS-2026-10-08.tsv in place (shrink guard) and append the ten best
 unread-unglossed rows, with keys in hand, to the "Round 3b" section of this brief's file as a "## Next sibling round" list.
+
+## AUD2-B167 (account 1 or 3, never 2 or 4), verifier, Opus, cap $5, box 60 min: second adversarial audit of baluze167-davaux-1637, 170 f.229r-v
+Added by AUD1-B167 (account 2), 8 Oct 2026, after its first audit (N3, D2, key published). A session that has not touched this target:
+not D4-B167/D4V-B167 (account 4) nor AUD1-B167 (account 2). Read AUDIT.md '## AUDIT (AUD1-B167)' and try to break it: (1) search for a
+prior print or decipherment of the 25 Aug 1640 Chavigny despatch where AUD1 did not (the BnF archivesetmanuscrits record for Baluze 170,
+Acta Pacis Westphalicae Serie I Bd 1, Grotius Briefwisseling Aug-Sept 1640, Semantic Scholar keyed, the three phrases that got HTTP 503
+from Google Books in aud1b167/print-check.tsv); (2) re-rule depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md, in particular
+whether word codes 8: leur and 10: les meet the code clause; (3) check one spot of the reconciled ciphertext against the crops
+(images/crops/b170f229v_L02, L12-L13). Write '## AUDIT 2 (AUD2-B167)' in AUDIT.md, update the status.json row (audit_status), and mark
+the WORK-QUEUE row done. Rule 10 wording only.
