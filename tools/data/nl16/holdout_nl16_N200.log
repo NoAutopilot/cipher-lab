@@ -1,0 +1,7 @@
+corpus=nl16 held_out=marn001bien01.txt.gz N=200 samples=200 real_p05=-0.851 false_negatives=154/200 (77.0%)
+corpus=nl16 held_out=marn001trou01.txt.gz N=200 samples=200 real_p05=-0.830 false_negatives=127/200 (63.5%)
+corpus=nl16 held_out=coor001zede01.txt.gz N=200 samples=200 real_p05=-0.863 false_negatives=47/200 (23.5%)
+corpus=nl16 held_out=spie001twes01.txt.gz N=200 samples=200 real_p05=-0.838 false_negatives=160/200 (80.0%)
+corpus=nl16 held_out=coor001boev01.txt.gz N=200 samples=200 real_p05=-0.836 false_negatives=135/200 (67.5%)
+corpus=nl16 TOTAL false-negative rate: 623/1000 (62.3%)
+corpus=nl16 per-fold spread: 23.5-80.0% (3.4x)

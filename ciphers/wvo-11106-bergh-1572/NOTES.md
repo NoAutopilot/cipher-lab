@@ -69,21 +69,20 @@ exit=0
 
 Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
 - Whole letter, inventory - blocker: not-attempted; 72 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv, owner's sorter needs tiles first; next: `tools/glyph_atlas.py segment`/`cluster` on images/crops so `tools/sign_sorter.py --focus` can show them, ~$2
-- Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777) and Latin (la17, 0.611) and at a merged K38 in French (FAM-11106L); Dutch untested, no 16th-c. Dutch corpus on file; next: build a 16th-c. Dutch letter corpus (archive.org djvu, e.g. GPA/Groen Dutch letters, about 12 min) and run homophonic nl, ~$2
+- Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777), Latin (la17, 0.611) and Dutch (nl16, 0.681, NL16-11106) and at a merged K38 in French (FAM-11106L); Bergh's six WVO sibling letters 1574-77 are in French (2) and German (4), none Dutch; single-letter homophonic is now negative in all four candidate languages, so the open question is the design, not the language; next: the multi-sign family (below)
 - Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
 - Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
-- Sibling Bergh letters - blocker: not-attempted; Opmerkingen of WVO 5628-5631, 9663, 9666 (Bergh, 1574-77) unopened; next: six Huygens requests for a cipher or key mention, ~$0.3
 
 ## Escalation
 
-- [ ] siblings: WVO 5628-5631, 9663, 9666 Opmerkingen unopened (planned, ~$0.3).
+- [x] siblings: WVO 5628-5631, 9663, 9666 opened (NL16-11106): no cipher or key mention; languages French (5628, 5629) and German (5630, 5631, 9663, 9666).
 - [x] clear-pages: leaf p1-p3 viewed at native resolution, no gloss or clear copy (FAM-CS11106 Premise check (c)).
 - [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
 - [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
-- [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17 and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); Dutch needs a corpus first.
+- [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17, nl16 (NL16-11106) and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); the syllabary/multi-sign family is untried.
 - [ ] image-check: tx/focus.tsv's 72 look-alike positions await an atlas and the owner's sorter.
 - [ ] retry: the syllabary/multi-sign family after the inventory is settled.
-Verdict: keep going: 5 internal gaps; cheapest next: WVO sibling Opmerkingen, ~$0.3, then a 16th-c. Dutch corpus + homophonic nl, ~$2, then the syllabary/multi-sign family once the inventory is settled
+Verdict: keep going: 4 internal gaps; cheapest next: the glyph atlas for the 72 look-alike positions, ~$2, then the syllabary/multi-sign family once the inventory is settled, ~$1
 
 ## While waiting
 
@@ -220,4 +219,58 @@ was renamed families/homophonic-1-fam11106l-la17.txt, and the fr16 and de1600 K4
 (rows labelled "decode-file regen"; seed 1 reproduces the same anneal and judge scores exactly).
 
 Requests: 0 network requests (all corpora on disk). No subagents. Seven family_run.py runs, about 8 minutes of CPU.
+Report what was found and where it was not found; novelty is not classified here (rule 10).
+
+## NL16-11106: a 16th-c. Dutch corpus and the Dutch homophonic run (LANE FAMILY, account 2, 8 Oct 2026, 19:20-19:3x UTC by `date -u`)
+
+Brief `.claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md` "### NL16-11106". Prior work: `tools/prior_work.py wvo-11106-bergh-1572
+--item-spec 'wvo=11106;date=1572-09-19;...' --step-type decode --fetch` exit 4 (LEAD x4: FAM-CS11106's own Premise-check line and three
+ROOM claims; LOOK 2-leaf; UNCHECKED solver unit and Groen/Gachard edition rows); all eight answered CLEAR with `--record` from the folder's
+own evidence (FAM-11106T/L done lines ROOM 11210/11254; Premise check (c) leaf view; Check-solved 2, 5, 6 with positive controls) --
+ciphers/wvo-11106-bergh-1572/prior-work.tsv. Check 1 by hand: no `nl`/`nl16` row in HYPOTHESES.md, no live claim. Checks 2-4: FAM-CS11106's,
+unchanged. Check 5: no decode reads, not applicable.
+
+**(a) Corpus.** `tools/data/nl16/` (README.md, MANIFEST.tsv, build.py, holdout_check.py, offi_calibration.py; wired as `LANG_CORPORA["nl16"]`;
+offline test tools/tests/test_judge_plaintext_lang_nl16.py, 4 of 4 pass): DBNL editions of Marnix (Bijencorf 1569, Trouwe vermaninge 1589),
+Coornhert (Zedekunst 1586, Boeventucht 1587) and Spieghel (Twe-spraack 1584), period-spelling filtered, 1,316,679 folded letters, five files,
+three authors. Register is moral/polemical/grammatical prose, not letters (stated, not fixed). Leave-one-file-out false-negative rate
+against the in-model real_p05, per fold: **N=820: 95.0 / 94.0 / 43.5 / 98.0 / 77.0, blended 81.5% (spread 2.3x); N=200: 77.0 / 63.5 / 23.5
+/ 80.0 / 67.5, blended 62.3%.** The real_p05 gate rejects most genuine unseen 16th-c. Dutch (no spelling standard; each author's spelling
+is learned), so a FAIL against real_p05 is not a negative. Unseen-text yardstick (pre-registered): 1561 Officia Ciceronis, out of corpus,
+N=820 windows under the full model: p05 **-0.951**, median -0.859.
+
+**(b) Family run.** PREREG-NL16-11106.md pushed (3fe89d84a) before any score. `tools/family_run.py specs/wvo-11106-bergh-1572-nl16.json --family
+homophonic --cipher tx/ciphertext_oneline.txt --tokens space --seeds 6 --restarts 8 --gate 0.6 --param profile=target --param noise=0.10
+--measured-error 0.10 --decode-tag nl16` (same K 41, N 820, noise 0.10 as FAM-11106L's rows):
+
+```
+CONTROL seed 1: N=820 K=38 recovery 0.834 score -1937.52
+CONTROL seed 2: N=820 K=38 recovery 0.767 score -2042.20
+CONTROL seed 3: N=820 K=39 recovery 0.705 score -1988.27
+CONTROL seed 4: N=820 K=39 recovery 0.698 score -2036.99
+CONTROL seed 5: N=820 K=40 recovery 0.667 score -2107.22
+CONTROL seed 6: N=820 K=40 recovery 0.417 score -2156.60
+TARGET best score -2249.563; judge: FAIL language: score=-1.36, null_p99=-2.021, real_p05=-0.832, real_median=-0.746, mode=both, N=820
+exploratory --shuffle-target 1 (not PREREG): TARGET best score -2380.291; judge score -1.478
+```
+
+| run | control mean (seeds >= 0.6) | target judge | unseen p05 | shuffled floor | target anneal vs worst passing control | result |
+|---|---|---|---|---|---|---|
+| nl16 / K41 | 0.681 (5 of 6) | -1.36 | -0.951 | -1.478 | -2249.6 vs -2107.2 | control-backed negative (PREREG rule 3) |
+
+Reading: the control reads its own design at the target's N, K and noise (0.681, gate 0.6); the target's decode sits 0.41 below the unseen-
+Dutch p05 and only 0.12 above its own shuffled floor, and its best anneal score is worse than every passing control seed's. Single-letter
+homophonic Dutch K41 is a control-backed negative, conditional on the provisional transcription (72 unsettled look-alike positions) and on
+a single-letter design. Attempt count: Dutch homophonic K41 attempt 1.
+
+**(c) WVO siblings** (Opmerkingen, 6 Huygens requests, >= 2.2 s apart, "huygens take/release" in ROOM): 5628 (4 May 1574, Bremen, French,
+KHA A 11/XIV A/10-8, Opmerkingen: original bought from the widow Boele van Hensbroek), 5629 (7 Jan 1576, Bremen, French, A/10-9, Opmerkingen:
+encloses a copy of a letter from Overijssel), 5630 (11 Apr 1576, Bremen, German, A/10-10, autograph postscript), 5631 (10 Mar 1577,
+Heerenberg, German, A/10-11, "geen"), 9663 (17 Jun 1576, German, Huisarchief Bergh inv. 367, minute, "geen"), 9666 (24 Oct 1577, Heerenberg,
+German, HAB inv. 368, minute, "geen"). No cipher, key or decipherment mention in any. Bergh wrote to Orange in French and German; no Dutch
+letter of his is in this set, which makes Dutch the least likely plaintext language of the four tested. The KHA neighbours A/10-8..A/10-11
+have images on WVO; the images were not opened in this job.
+
+Requests: www.dbnl.org 15 (4 author pages, 6 texts, 5 empty ids), >= 2 s apart, no 403/429; resources.huygens.knaw.nl 6. No Gallica, no IA.
+No subagents. family_run.py: 2 runs, about 1.5 minutes CPU; holdout_check.py 2 runs.
 Report what was found and where it was not found; novelty is not classified here (rule 10).

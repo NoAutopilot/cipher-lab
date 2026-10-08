@@ -103,6 +103,13 @@ LANG_CORPORA = {
     "nl18": [DATA / "nl18" / f for f in ("beschryvingvangu01hart.txt.gz", "beschryvingvangu02hart.txt.gz",
              "bub_gb_mGdCAAAAcAAJ.txt.gz", "bataviaindeszelf02amst.txt.gz", "beschryvingvanh00esch.txt.gz",
              "reizennaaceilon00roosgoog.txt.gz", "verzamelingvanst01vand.txt.gz")],
+    # nl16 (8 Oct 2026, NL16-11106, LANE FAMILY account 2): Dutch prose of 1569-1589 in its own spelling from DBNL editions --
+    # Marnix, Den Byencorf (1569) and Trouwe vermaninge (1589); Coornhert, Zedekunst (1586) and Boeventucht (1587); Spieghel,
+    # Twe-spraack (1584) -- period-spelling filtered (ende, ofte, wt, ick, oock, sulcx, gh- ...), each capped at 450k folded
+    # letters, for wvo-11106-bergh-1572 (a 1572 letter tested as Dutch), which nl18 (1770-99) and nl20 do not era-match.
+    # Register: moral/polemical prose, not letters. Read tools/data/nl16/README.md (per-fold FN and spread) first.
+    "nl16": [DATA / "nl16" / f"{i}.txt.gz" for i in ("marn001bien01", "marn001trou01", "coor001zede01", "spie001twes01",
+             "coor001boev01")],
     # pl18 (4 Oct 2026, A3V3-SANGP, account 3): Polish memoir/letter prose of 1683-c.1790 in 19th-c. editions --
     # Otwinowski's Pamietniki do panowania Augusta II (1838), Pasek's Pamietniki (1860), Jan III's Listy (1823),
     # Ojczyste spominki I (1845), Kitowicz's Pamietniki (1882); Polish diacritics pre-folded to a-z at build
