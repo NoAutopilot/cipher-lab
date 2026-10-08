@@ -713,5 +713,11 @@ Code-word tokens: H 16.
 
 Code-word tokens: H 6.
 
-Totals over the 97 entries: H 1436, C 14, I 0, M 0.
+**E102 | Page 79 | 8971 | 26 May 1864, operator Sam Bruch (LS4-R2b; row 8971/2; first tried as No. 2, read as No. 1; image-read)**
+
+[Washington] {time: 11 AM} {date: May 26} For [Brigadier General] Bur bridge [Command = Er (-ed, -ing)]ing District of [Kentucky] [.] [General] Wash burn [Telegraph (-ed, -ing)]'s from [Memphis] that For rest is collecting a large [Cavalry] [Force] at [Corinth] & Tupelo probably preparatory to a raid in to Middle [Tennessee] and [Kentucky]  {tail: [signed] [General-in-Chief] home of the oppressed}
+
+Code-word tokens: H 18.
+
+Totals over the 98 entries: H 1454, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->

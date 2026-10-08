@@ -897,5 +897,77 @@ Code-word tokens: H 29, I 2.
 
 Code-word tokens: H 14.
 
-Totals over the 79 entries: H 1903, C 71, I 63, M 2.
+**N2-CB | Page 240 | 9132 | 1 Dec 1864 3 PM (cipher time word), S. H. Beckwith, to Billy (LS4-R2b, 8 Oct 2026; row 9132/0; image-read)**
+
+{time: 3 PM} [1] for Billy [.] [Foster J G] has no other [Cavalry] than the [Maj Gen H W Halleck] lion of [4] [Massachusetts] which is now red used to [100] [Men] He asks forth [8] come ponies with [10] [Corps] [.] If I [Order] as you direct it will leave not a single Mount ed man [In the] [Department] [Of the] [South] Is this your in ten shun [?]  {tail: [signed] [H W Halleck]}
+
+Code-word tokens: H 22, C 1.
+
+**N2-CC | Page 90 | 8982 | 11 June 1864, Kimber at Vicksburg, to Canby (LS4-R2b; row 8982/1; image-read)**
+
+{time: 1 PM} {date: June 11} to [Maj Gen E R S Canby] [.] I can not find the gauge [Of the] [Vicksburg] & Sleeve port [Rail-road] what is it [?]  {tail: [signed] [Quarter[?] Master General] use [Maj Gen E R S Canby] [Maj Gen E R S Canby] [Canby Ed R S] for Can}
+
+Code-word tokens: H 13.
+
+**N2-CD | Page 94-95 | 8986, 8987 | 17 June 1864, S. H. Beckwith, to Grant (LS4-R2b; row 8986/1; image-read, runs on to the next page)**
+
+[Washington] [June] [17] {time: 2.30 PM} For [Grant U S] [.] A german [Engineer] [Officer] who [Left] [Lee]'s [Army] [June] [7] says that [Demoralize (-ed, -ing)]'s [Division] about [6000] [Infantry] and [Breckenridge]'s [Division] about [7000] [Infantry] [Fire]ed through [Gordonsville] in [Cars] on the [6] and [7] against [Hunter D] [.] He did not see their [Cavalry] or [Artillery] [.] He estimates entire [Force] [Left] under [Lee] and [Beauregard] from [60] to [75000] exclusive of Home [Guard (-ed, -ing)]'s [( )] Militia [( )] in [Richmond] [.] He says that all damage to [Rail-road]'s has been repaired and [Cars] run from [Washington] to [Charlottsville [sic]] and Stanton [.] [Lee]'s [Communicate (-ed, -ing)] well [Supply]ed with Provisions but [Ammunition] of inferior quality and much complained of [.] Many of this mans Statements are verified by others  {tail: [signed] [H W Halleck]}
+
+Code-word tokens: H 52, C 3, I 3.
+
+**N2-CE | Page 146-147 | 9039, 9040 | 9 Aug 1864 9.30 AM, F. T. Bickford (LS4-R2b; row 9040/0 is the tail of this entry; image-read)**
+
+{date: Aug 9} Enigma For [Brig. General] In galls [.] up on the present report of Officers I think that all the wagons [Of the] [6] [Corps] and [Of the] [Cavalry] which has been sent to this place should [Follow (-ed, -ing) [#]] the [Troops] [,] Their drivers are needed to relieve ours [.] Ship them [As soon as] possible [.] A large number of [Steam]ers has been engaged and ordered to [City Point] to be ready for any [Movement] in [Force] [.] If on their arrival they are not needed there it will be well for them to return to [Monroe] and wait Events Pause Consult however in regard to this with the [Commander] [Of the] [Force]'s on the [James] [.] If [Harrison]ed at [City Point] these boats will be [Available] to meet any [Movement] in [Force] intended to block ade the [River] stop If at [Monroe] they might be kept away from you [.] the [Commander] [Of the] [Troops] should decide this [Defend (-ed, -ing) [#]]  {tail: [signed] [Quarter[?] Master General] Brent [Major] [General] & c}
+
+Code-word tokens: H 39, I 2.
+
+**N2-CF | Page 160 | 9052 | 21 Aug 1864 1 PM (ledger), Beckwith at City Point (LS4-R2b; row 9052/1; image-read)**
+
+[Willich A] [Kentucky] [August] [21] for [General in Chief] [.] I am satisfied [From the] [Report]'s of my [Scout (-ed, -ing)]'s [Kentucky] is Tobey in vaded by a large [Force] under [19] & [Wheeler] [.] If there are any [Troops]'s which [Canby Ed R S] sent tommy please [Order] them at once Windy Bur bridge End
+
+Code-word tokens: H 16, C 1, I 1.
+
+**N2-CG | Page 229 | 9121 | 11 Nov 1864 (cipher time word 3 PM), S. H. Beckwith, to Grant (LS4-R2b; row 9121/1; image-read)**
+
+{time: 3 PM} [11] [Maj Genl U S Grant] [.] [Troops]'s sent [North] have been [Order]ed back tother [Command (-ed, -ing)]'s When willow be up to make annual [Report]  {tail: [signed] [Maj Gen H W Halleck]}
+
+Code-word tokens: H 10, C 1.
+
+**N2-CH | Page 230 | 9122 | 12 Nov 1864 9 AM, Beckwith, G. V. Fox to Grant (LS4-R2b; row 9122/2; image-read)**
+
+{time: 9 AM} [12] [Lieut Gen U.S. Grant] [.] We shelly at Hampton [Road] at {time: 7 AM} [Tomorrow] morning unless its stormy weather which will cause some delay [Porter D D] [Join]'s no there GV [McMinnville]
+
+Code-word tokens: H 9, I 1.
+
+**N2-CI | Page 233 | 9125 | 19 Nov 1864, Beckwith at Burlington N. J., to Grant (LS4-R2b; row 9125/2; image-read)**
+
+[Washington] Brook [15] PM For [Lieut Gen U.S. Grant] [.] There is no reason why you should not go to Grain ada [.] Let me know your ad dress there [.] [Secretary of War]
+
+Code-word tokens: H 5, I 2.
+
+**N2-CJ | Page 250 | 9142 | 18 Dec 1864, J. H. Emerick at City Point (LS4-R2b; row 9142/0, first telegram; image-read)**
+
+[Colonel] Bradley chief [Quarter Master] The orders given at first in relation to the transports for [Maj Gen W T Sherman] will be carried out [.] Have such of the boats named as are in the [James] sent off as directed without delay to their destination  {tail: [signed] Rue Two In galls [Brig. General] {time: 3.30 PM}}
+
+Code-word tokens: H 7, I 1.
+
+**N2-CK | Page 250 | 9142 | 18 Dec 1864 11.15 PM, Emerick at City Point, signed T. T. Eckert (LS4-R2b; row 9142/0, second telegram; image-read)**
+
+[Washington] [18] {time: 11.30 PM} [.] you can inform [General] Raw lines [Grant U S] [Left] here at {time: 3 PM} [To day] for [City Point] by boat T T Eckert
+
+Code-word tokens: H 10.
+
+**N2-CL | Page 56 | 8948 | 26 Apr 1864 (ledger header read from the image; the volunteer text has 20), A. H. Caldwell (LS4-R2b; row 8948/2; image-read)**
+
+{time: 11.30 AM} [26] for [Meade G G] I cannot send the party as I wish without some co operation from [Warrenton] [.] I wish some also from [Point] of Rocks If you cannot give the [Force] now I will post pone [Augur C C] Vols prompt port
+
+Code-word tokens: H 9.
+
+**N2-CM | Page 110-111 | 9002, 9003 | 15 July 1864, S. H. Beckwith (LS4-R2b; row 9003/0 is the tail on p.111 of this entry; image-read)**
+
+{time: 4 PM} [15] [Lieut Gen U.S. Grant] stop [Steam]er McClellan from [New Orleans] with [860] [Men] [19] [Corps] arrived here {time: 12.30 PM} [.] A [Rail-road] agent who left [Feint] Hook this morning [Report]'s [Hunter D]'s [Force] began to reach [Harpers Ferry] [Wednesday] evening and were till this morning [Cross (-ed, -ing) [#]]ing [River] to Pleasant [Valley] although foot sore and badly used up [.] [1] [Regiment] remains at [Martinsburg] & a quickenment at Duffield [.] [Crook S [?]] is with the main [Column] stop A signal [Officer] at [Point] of Rocks says [Enemy] [Cross (-ed, -ing) [#]]ed large wagon [Train] at Nolans [Ferry] yesterday morning [Follow (-ed, -ing) [#]]ed by the [Mass] of their [Cavalry] & [Infantry] [.] Another signal [Officer] at [Infantry] loaf [Mountain] says they [Cross (-ed, -ing) [#]]ed [400] wagons at [South] ford [3] [Mile] below mouth of Monocacy yesterday morning [Move (-ed, -ing)]ing in direction of Snickers [Gap] [.] They were still [Cross (-ed, -ing)]ing at {time: 11 AM} according to this [Officer] [.] [Maj Genl H W Halleck] thinks the main [Body] have gone through Snickers & but a small portion through Ashby [Gap] stop [H W Halleck] estimates the [Force] they have had before [Washington] at [28000] to [30000] as follows Earlys [Corps] [3] [Division]'s spike [Rhodes] Gordons & Ramsers [12000] stop [Breckenridge]'s [Corps] [2] [Division] [12000] stop [Cavalry] & [Artillery] [4000] to [6000] with [30] cannon [.] [Maj Genl H W Halleck] thinks they have got [5] or [6000] excellent [Horse]'s and Brook [1000] poor cattle mostly cows [.] [Ord E O C] is [Order]ed to you no news from [Right]  {tail: [signed] [Dana C A] How are you}
+
+Code-word tokens: H 93, C 4, I 3.
+
+Totals over the 91 entries: H 2188, C 81, I 76, M 2.
 <!-- decode.py: derived block ends -->
