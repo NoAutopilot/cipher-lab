@@ -94,16 +94,25 @@ A FAIL at N=39 on a names-only string; the judge's letter-shuffle null is not th
 resources.huygens.knaw.nl (whole KH2-D job): about 40 (WVO searches and detail pages, 6 PDFs, 6 retroboeken
 searches), >= 2 s apart, no 403/429.
 
-## Remaining gaps
+## Remaining gaps (W11008-KP, 8 Oct 2026)
+Read so far: 39 of 54 tokens at H under the table, confirmed on sibling 5194 (PASS, see "## 5194 known-plaintext check"); runs 2, 4 and 5 read as three names.
+- run 3 positions 1-2 (two codes under a stain; pos 3-4 now read 36, 38 at H by the native look of 8 Oct 2026) - blocker: illegible; paper damage at native size, images/p1_L07_s1.jpg and the W11008-KP native crop
+- run 1 position 4 ("1?0", middle digit smudged, a three-digit group outside the table either way) - blocker: illegible; native look 8 Oct 2026
+- run 1 positions 1-3 and run 3 read only "c d" / "c m e" (no word) - blocker: too-short; four and six codes with no clear context that narrows them
+- AUDIT.md does not yet carry the 5194 key-family confirmation - blocker: not-attempted; the verifier, not the solver, writes AUDIT.md; next: verifier audit update, ~$1
 
-- [x] check-solved and intake gate: done 7 Oct 2026 (KHF-2), verdict open, gate output below.
-- [ ] run 1 code 120 and run 3's damaged start; next: one more look at page 1 at native resolution, ~$0.5.
-- [ ] 5194 (Groen III 448-449, same cover scheme, in cipher) as a known-plaintext check that the Certain letters use
-  this table; next: transcribe 5194's runs and decode, ~$2.5.
+## Escalation (W11008-KP, 8 Oct 2026)
+- [x] siblings: 5194 used as a known-plaintext sibling (PASS); 6222/6223 are clear in Groen with no cipher recorded in WVO
+- [n/a] clear-pages: the 11008 leaf is clear text except the five runs
+- [x] known-keys: the 1572 table, confirmed on 5194 by the pre-registered gate
+- [x] print: Groen III and IV searched by KHF-2; 11008 is not printed
+- [n/a] key-rebuild: the table is a period printed table, so nothing needs rebuilding
+- [x] image-check: native look at runs 1 and 3, 8 Oct 2026
+- [n/a] retry: no failed step to retry here
+Verdict: keep going: 1 internal gaps; cheapest next: verifier AUDIT.md update with the 5194 confirmation, ~$1
 
-## Escalation
-
-Verdict: keep going (check-solved first).
+Optional, wider than 11008 (one-line suggestion, not a gap): the rest of 5194 (3 pages, about 1,500 numerals) against
+Groen as a full known-plaintext alignment, for null-usage statistics and to check the interlinear letters; ~$6.
 
 ## Check-solved (KHF-2, 7 Oct 2026)
 
@@ -207,3 +216,59 @@ Vlissingen in Dutch place-name spelling). `tools/data/fr16` (16th-century French
 corpus; the KH2-D judge FAIL (-1.648 vs real_p05 -1.098, N=39) reflects a names-only string at N=39, not a corpus
 mismatch -- no Dutch or German corpus would fit better, since the only common word is French. The key-permutation
 control (4-gram -1.435 vs shuffle p95 -1.576, 6/1000) is the result that carries the reading.
+
+## 5194 known-plaintext check (W11008-KP, 8 Oct 2026)
+
+Worker W11008-KP (LANE FAMILY-A2c, account 2), 22:19-22:3x UTC 8 Oct 2026 by `date -u`, brief
+`.claude/briefs/runs/2026-10-08-ytbiz-family-2209-jobs.md`.
+
+Prior work: `tools/prior_work.py wvo-11008-certain-1572 --item-spec 5194 --step-type key --fetch` exit 4. The only
+row owed was the LEAD on this worker's own claim, recorded CLEAR in prior-work.tsv. The Groen-edition LEAD is the
+input for this step (Groen prints 5194 in clear), not a stop. No earlier artefact for 5194 exists in ciphers/ (grep 5194).
+
+Material. WVO 5194 (KHA A 3, 895/I; 24 June 1572, "George Certain" to "Lambert Certain", Frankfurt). The WVO PDF
+(05194.pdf) has 3 pages. **Unlike 11008, almost the whole letter is in numerals.** Clear words appear only here and
+there ("Mon frere Lambert Ceste servira pour vous advertir que", "suis", "toussiours", "Selon que desia plus.rs fois
+vous ay escrit", ...). Small letters are written above some numerals (see below). Groen III pp.447-449 (CCCLXIX)
+prints the letter in clear French; its OCR html was read through the Huygens retroboeken `pages.json?source=3` route,
+pages 448-449.
+
+Sample (cap 3.5, so not the whole letter). Page 1 manuscript lines 3-8 are `iiif_lines.py` bands L02-L04 (crops in
+`images/w5194/`). Two blind Sonnet passes ran per band (`passes/w5194/`). Of the 140 tokens they disagree on 4: two
+were settled from the image as clear letters (t, u), one clear letter stays c/e (M), and one is a spelling of
+"toussiours". The reconciled file is `w5194_ciphertext.tsv`. It holds two runs bounded by clear anchors that Groen
+also prints: R1 que..suis (14 numerals) and R2 suis..toussiours (97 numerals, plus the clear fragments me, d, a, r,
+e, t, u).
+
+Gate (pre-registered in `PREREG-W11008KP.md`, pushed before the diff): the LCS between the key_nepveu decode (letter
+codes only, every other number a null) and Groen's span, against 1000 seeded permutations of the 24 letter values.
+`python3 w5194_gate.py` (`--check` for rule 7) writes `w5194_gate.tsv`:
+
+| run | numerals | letter codes | decode | Groen span | LCS | shuffle mean | p95 | shuffles >= real | verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| R1 | 14 | 5 | comie | comme je | 5 | 0.85 | 2 | 0/1000 | PASS |
+| R2 | 97 | 33 | resouetrecytroiousncampagnfitroue | resolu de me mettre d icy a trois jours en campagne je me trouve | 32 | 10.79 | 14 | 0/1000 | PASS |
+
+Result: **PASS on both runs.** 37 of the 38 decoded letters fall in order inside Groen's text. The Certain letters
+use the printed 1572 Orange-Nassau table (multiples of 3 = letters), and 5194 pads it heavily with nulls: 38 of 111
+numerals are letter codes and 73 are nulls. This confirms the key family for 11008. On 5194 the agreeing values are
+grade C (aligned from print), on top of the H the table already carries. 11008's own reading is unchanged. The
+control can differ from the target on this statistic, since a permutation changes which letters come out. The
+shuffle p95 is far below ceiling (2 and 14, against maxima of 7 and 51), so the gate had headroom.
+
+Interlinear letters on 5194 (descriptive only, not used in the gate). Both passes saw small letters above about 25
+numerals in the sample. Where one sits over a letter code it often equals the table value (o over 42, m over 36,
+t over 57, r over 51, a over 3, p over 45, n over 39, e over 15). The passes graded the attachment M, though, and
+several sit over nulls. This looks like a partial period decipherment on the leaf; check it at native size before
+citing it.
+
+Where it was not found: no decipherment of 5194's numerals against Groen was found in ciphers/, sources/ or the WVO
+record (which says only "in cijferschrift"). Groen prints the clear text without saying where the decipherment came
+from. Not searched: Groen's notes on the neighbouring pages for a decipherment source, or secondary literature.
+
+Native look at 11008 (gap item 2): run 1 reads "10 . 9 . 12 . 1?0", with the last group's middle digit smudged; at
+three digits it falls outside the table either way. Run 3 reads "[stain] 36 : 38 : 15 : 25 : 37 : 40": 36 and 38
+are confirmed (now H in ciphertext.tsv; 38 is a null), and the first two codes lie under a stain. `decode.py --check` OK.
+
+Requests: resources.huygens.knaw.nl 7 (the 5194 record, 05194.pdf, one 404 on a wrong-path PDF, 11008.pdf,
+pages.json source 3, Groen pp.448 and 449 html), >= 2 s apart, no 403/429.

@@ -24,7 +24,7 @@ run	pos	code	conf	context
 3	1	2	L	line 20, damaged; passes split (A 36 36?, B 2? 9?)
 3	2	9	L	
 3	3	36	H	
-3	4	38	M	
+3	4	38	H	
 3	5	15	H	
 3	6	25	H	
 3	7	37	H	

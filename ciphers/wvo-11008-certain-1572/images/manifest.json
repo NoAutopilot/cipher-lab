@@ -25,5 +25,45 @@
    "p1_L07_s2.jpg"
   ],
   "note": "bands L02 (lines 4-6) and L07 (lines 19-21) carry the numeral runs; L01/L08 also given to both passes, no runs; regenerate the rest from the PDF"
+ },
+ "w5194": {
+  "source": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05194.pdf",
+  "record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5194",
+  "fetched": "2026-10-08",
+  "pdf_images": [
+   {
+    "page": 1,
+    "size": [
+     2200,
+     3564
+    ]
+   },
+   {
+    "page": 2,
+    "size": [
+     2233,
+     3267
+    ]
+   },
+   {
+    "page": 3,
+    "size": [
+     2162,
+     2329
+    ]
+   }
+  ],
+  "crops": {
+   "tool": "python3 tools/iiif_lines.py --image <page1 jpg from pdfimages -j> --out <dir> --prefix p1 --lines-per-crop 2 --max-width 2000 --debug",
+   "kept": [
+    "w5194/p1_L02_s1.jpg",
+    "w5194/p1_L02_s2.jpg",
+    "w5194/p1_L03_s1.jpg",
+    "w5194/p1_L03_s2.jpg",
+    "w5194/p1_L04_s1.jpg",
+    "w5194/p1_L04_s2.jpg"
+   ],
+   "note": "bands L02-L04 = manuscript lines 3-8 of page 1 (the sample in w5194_ciphertext.tsv); regenerate the rest from the PDF"
+  }
  }
 }
