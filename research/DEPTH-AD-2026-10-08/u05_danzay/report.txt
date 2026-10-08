@@ -1,0 +1,9 @@
+{"tokens": 705, "grades": {"H": 546, "M": 85, "U": 74}, "hcs": 546, "hcs_pct": 77.4, "primary_run": 13, "primary_run_text": "r e s o l u t i o n  d e s", "secondary_run": 26, "secondary_run_text": "r e u r e le Roy de Dannemarch q u e l", "H_model_bits": 2.584, "R": 2.116, "V": 26, "distinct_cipher_codes": 52, "H_design": 244.4, "H_lib": 432.8, "H_K": 677.3, "unicity": 320.0, "primary_run_m_through": 20, "primary_run_m_through_text": "f o r t d y r u|a e i l e et a t e n u|a e", "AD": 480.0, "AD_R3_4": 298.8, "cipher_clause": false, "cipher_clause_m_through": false, "stat_i_target": 34, "stat_i_p95": 66, "stat_i_max": 107, "stat_i_pass": false, "n_shuffles": 200, "seeds": "8100-8299", "shuffle": "all", "cipher_class": "len<=3", "wordlist_size": 10228}
+LRD	le Roy de Dannemarch	H	-3.466	p95 -3.763	max -3.287	ABOVE	flanks -4.445 p95 -3.711 below	e r   le Roy de Dannemarch    f
+LRD	le Roy de Dannemarch	H	-3.094	p95 -3.721	max -3.406	ABOVE	flanks -3.493 p95 -3.707 ABOVE	 r l a|luy le Roy de Dannemarch o  n e
+LRD	le Roy de Dannemarch	H	-3.119	p95 -3.684	max -3.335	ABOVE	flanks -3.609 p95 -3.672 ABOVE	e  c e le Roy de Dannemarch o  a u
+LRD	le Roy de Dannemarch	H	-3.129	p95 -3.891	max -3.409	ABOVE	flanks -3.551 p95 -3.755 ABOVE	s  l a|luy le Roy de Dannemarch o  r n
+LRD	le Roy de Dannemarch	H	-2.907	p95 -3.747	max -3.446	ABOVE	flanks -3.326 p95 -3.749 ABOVE	p a|luy r e le Roy de Dannemarch a  c e
+LRD	le Roy de Dannemarch	H	-2.968	p95 -3.805	max -3.129	ABOVE	flanks -3.325 p95 -3.657 ABOVE	e u r e le Roy de Dannemarch q u e l
+LRD	le Roy de Dannemarch	H	-3.611	p95 -4.043	max -3.436	ABOVE	flanks -4.256 p95 -4.043 below	s b o u le Roy de Dannemarch g  o n
+LRD	le Roy de Dannemarch	H	-3.21	p95 -3.897	max -3.289	ABOVE	flanks -3.878 p95 -3.807 below	e c o  le Roy de Dannemarch e r  p

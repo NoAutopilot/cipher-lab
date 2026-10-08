@@ -5,7 +5,9 @@ Reads a reading-tokens TSV (line, pos, sign, conf, value, grade; as written by t
 (code, value, grade, ...), and computes, for the depth bar in .claude/briefs/runs/2026-10-08-acct3-depth-bar.md:
 
   1. grade runs: longest contiguous H/C/S run in letters (primary: cipher-class tokens only, a code-class token breaks
-     the run; secondary: code-class H/C/S tokens let through and counted), per line and over the item;
+     the run; secondary: code-class H/C/S tokens let through and counted), per line and over the item; also
+     primary_run_m_through (DEPTH-AD, 8 Oct 2026: the DV-MERCY alternative, cipher-class M tokens continue the run and
+     their letters count, while M is still charged in H(K)) and cipher_clause_m_through;
   2. AD = 1.5 x H(K)/R, H(K) = distinct cipher-class codes in the item x log2(V) + liberties (M: log2(max(2, alts)),
      U: log2(V)), R = log2(26) - held-out per-letter cross-entropy of an interpolated char 5-gram on the corpus;
      also AD at R = 3.4 (sensitivity);
@@ -23,7 +25,7 @@ grade a reading (it never changes grades) or as a judge of the plaintext (no PAS
 Usage:
   python3 tools/depth_stats.py --tokens T.tsv --key K.tsv --line-prefix PFX [--exclude-prefix X]
       --cipher-class code<=120 | len<=3  --shuffle classes|all  --seeds 8100-8299  --out DIR
-      [--corpus tools/data/fr18]
+      [--corpus tools/data/fr18] [--break-lines]
 Writes DIR/summary.json, DIR/runs.tsv, DIR/contexts.tsv and prints a short report.
 """
 import argparse, collections, glob, gzip, json, math, os, random, sys, unicodedata
@@ -130,6 +132,8 @@ def main(argv=None):
     ap.add_argument('--cipher-class', required=True, help='code<=N or len<=N')
     ap.add_argument('--shuffle', choices=['classes', 'all'], required=True)
     ap.add_argument('--seeds', default='8100-8299'); ap.add_argument('--out', required=True)
+    ap.add_argument('--break-lines', action='store_true',
+                    help='item-level runs never cross a line id (e.g. one id per cipher segment between clear words)')
     ap.add_argument('--corpus', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'fr18'))
     a = ap.parse_args(argv)
 
@@ -167,11 +171,13 @@ def main(argv=None):
         t['letters'] = None if t['grade'] == 'U' else fold(first_alt(t['value']))
 
     # 1. grade runs
-    def runs(allow_code):
+    def runs(allow_code, ok_grades='HCS'):
         best, cur, cur_line_best, per_line, prev_line = (0, None), 0, collections.Counter(), {}, None
         start = 0
         for idx, t in enumerate(toks):
-            ok = t['grade'] in 'HCS' and t['grade'] != '' and (t['cls'] == 'cipher' or allow_code)
+            ok = t['grade'] in ok_grades and t['grade'] != '' and (t['cls'] == 'cipher' or allow_code)
+            if a.break_lines and idx and t['line'] != toks[idx - 1]['line']:
+                cur = 0
             if ok:
                 if cur == 0:
                     start = idx
@@ -194,6 +200,7 @@ def main(argv=None):
         return best, per_line
     (prim, prim_span), prim_lines = runs(False)
     (sec, sec_span), sec_lines = runs(True)
+    (prim_m, prim_m_span), _ = runs(False, 'HCSM')
 
     def span_text(sp):
         if not sp:
@@ -319,7 +326,8 @@ def main(argv=None):
                 secondary_run=sec, secondary_run_text=span_text(sec_span),
                 H_model_bits=round(H, 3), R=round(R, 3), V=V, distinct_cipher_codes=len(dcodes),
                 H_design=round(Hdes, 1), H_lib=round(Hlib, 1), H_K=round(HK, 1), unicity=round(HK / R, 1),
-                AD=round(AD, 1), AD_R3_4=round(AD34, 1), cipher_clause=prim > AD,
+                primary_run_m_through=prim_m, primary_run_m_through_text=span_text(prim_m_span),
+                AD=round(AD, 1), AD_R3_4=round(AD34, 1), cipher_clause=prim > AD, cipher_clause_m_through=prim_m > AD,
                 stat_i_target=tgt_i, stat_i_p95=p95(sh_i), stat_i_max=max(sh_i), stat_i_pass=tgt_i > p95(sh_i),
                 n_shuffles=len(sh_i), seeds=a.seeds, shuffle=a.shuffle, cipher_class=a.cipher_class,
                 recurring_codes={c: dict(n_occ=r['n_occ'], independent_contexts=len(r['contexts']),

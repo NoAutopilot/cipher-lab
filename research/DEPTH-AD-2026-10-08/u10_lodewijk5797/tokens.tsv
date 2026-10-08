@@ -1,0 +1,74 @@
+line	pos	sign	conf	value	grade
+p5_spot5	0	131			C
+p5_spot5	1	123		l	M
+p5_spot5	2	173		graf	H
+p5_spot3	3	154		herzogvonsachsen	C
+p5_spot3	4	124			C
+p5_spot3	5	144			C
+p5_spot3	6	134			C
+p5_spot3	7	161		landgraf	H
+p5_spot3	8	126			C
+p5_spot3	9	136		uingt	M
+p5_spot3	10	146		?	U
+p6_spot4	11	172		lecontejean	M
+p6_spot4	12	58		z	I
+p6_spot4	13	85		e	M
+p6_spot4	14	38		u	M
+p6_spot4	15	95		g	M
+p6_spot4	16	82		e	M
+p6_spot4	17	35		t	M
+p6_spot4	18	100		h	I
+p6_spot4	19	155		?	U
+p6_control_abso	20	200		herzogvonalba	M
+p6_control_abso	21	122			M
+p6_control_abso	22	132			M
+p6_control_abso	23	142		?	U
+p6_control_abso	24	62		a	M
+p6_control_abso	25	66		b	M
+p6_control_abso	26	26		s	M
+p6_control_abso	27	6		o	M
+p7_spot2	28	153		pfaltzgraf	H
+p7_spot2	29	146		?	U
+p7_spot2	30	137			C
+p7_spot6	31	182		?	U
+p7_spot6	32	128			M
+p7_spot6	33	133			C
+p7_spot6	34	142		?	U
+p7_spot6	35	117		m	C
+p7_spot6	36	103		i	C
+p7_spot6	37	33		t	C
+p7_spot6	38	132			M
+p7_spot6	39	170		?	U
+p5_control_election	40	82		e	M
+p5_control_election	41	112		l	M
+p5_control_election	42	83		e	M
+p5_control_election	43	72		c	M
+p5_control_election	44	32		t	M
+p5_control_election	45	102		i	M
+p5_control_election	46	10		o	M
+p5_control_election	47	2		n	M
+p8_spot7	48	156		?	U
+p8_spot7	49	127			C
+p8_spot7	50	135			C
+p8_spot7	51	144			C
+p8_spot7	52	129			M
+p3_spot1_open	53	121			M
+p3_spot1_open	54	130			M
+p3_spot1_open	55	145		?	U
+p3_spot1_open	56	30		s	M
+p3_spot1_open	57	81		e	M
+p3_spot1_open	58	71		c	M
+p3_spot1_open	59	6		o	M
+p3_spot1_open	60	36		u	M
+p3_spot1_open	61	25		r	M
+p3_spot1_open	62	29		s	M
+p3_spot1_open	63	124			M
+p3_spot1_open	64	146		?	U
+p3_spot1_open	65	138			M
+p3_spot1_open	66	84		e	M
+p3_spot1_open	67	3		n	M
+p3_spot1_open	68	31		t	M
+p3_spot1_open	69	21		r	M
+p3_spot1_open	70	85		e	M
+p3_spot1_open	71	12		p	M
+p3_spot1_open	72	23		r	M

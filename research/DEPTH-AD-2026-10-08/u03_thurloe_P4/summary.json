@@ -1,0 +1,52 @@
+{
+ "tokens": 424,
+ "grades": {
+  "C": 342,
+  "H": 73,
+  "U": 6,
+  "M": 3
+ },
+ "hcs": 415,
+ "hcs_pct": 97.9,
+ "primary_run": 35,
+ "primary_run_text": "i r r e c o n c i i a b l k w i t h t h e m a s l o n g a a i l i t e",
+ "secondary_run": 35,
+ "secondary_run_text": "i r r e c o n c i i a b l k w i t h t h e m a s l o n g a a i l i t e",
+ "H_model_bits": 2.393,
+ "R": 2.308,
+ "V": 26,
+ "distinct_cipher_codes": 32,
+ "H_design": 150.4,
+ "H_lib": 31.2,
+ "H_K": 181.6,
+ "unicity": 78.7,
+ "primary_run_m_through": 35,
+ "primary_run_m_through_text": "i r r e c o n c i i a b l k w i t h t h e m a s l o n g a a i l i t e",
+ "AD": 118.0,
+ "AD_R3_4": 80.1,
+ "cipher_clause": false,
+ "cipher_clause_m_through": false,
+ "stat_i_target": 82,
+ "stat_i_p95": 38,
+ "stat_i_max": 62,
+ "stat_i_pass": true,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "shuffle": "classes",
+ "cipher_class": "len<=3",
+ "recurring_codes": {
+  "67": {
+   "n_occ": 3,
+   "independent_contexts": 3,
+   "contexts_above_p95": 3,
+   "flanks_above_p95": 3
+  },
+  "81": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 2
+  }
+ },
+ "wordlist_size": 9064
+}

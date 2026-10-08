@@ -1,0 +1,12 @@
+{"tokens": 366, "grades": {"M": 258, "H": 106, "I": 1, "U": 1}, "hcs": 106, "hcs_pct": 29.0, "primary_run": 8, "primary_run_text": "qui luy do", "secondary_run": 11, "secondary_run_text": "avec le Roy en", "H_model_bits": 2.528, "R": 2.172, "V": 117, "distinct_cipher_codes": 72, "H_design": 494.7, "H_lib": 264.9, "H_K": 759.5, "unicity": 349.7, "primary_run_m_through": 94, "primary_run_m_through_text": "le n ne mi ma i s t re de la ca m pa g ne g ra ti f fi e ra le co m te d he be r s te i n qui luy do i t su c ce de r a f fi n de lo b li ge r a mi e u x", "AD": 524.5, "AD_R3_4": 335.1, "cipher_clause": false, "cipher_clause_m_through": false, "stat_i_target": 558, "stat_i_p95": 114, "stat_i_max": 176, "stat_i_pass": true, "n_shuffles": 200, "seeds": "8100-8299", "shuffle": "classes", "cipher_class": "len<=3", "wordlist_size": 8833}
+14:	madame	M	-2.941	p95 -3.294	max -2.916	ABOVE	flanks -3.466 p95 -3.852 ABOVE	du c s et madame la l a n
+14:	madame	M	-2.404	p95 -3.382	max -2.929	ABOVE	flanks -2.756 p95 -3.81 ABOVE	se m b le madame la l a n
+32:	tion	H	-2.4	p95 -3.483	max -3.171	ABOVE	flanks -3.103 p95 -3.93 ABOVE	ve les con di tion s qui l s
+32:	tion	H	-2.621	p95 -3.193	max -2.806	ABOVE	flanks -3.304 p95 -3.418 ABOVE	la jo n c tion de leur s fo
+73=	Bavier	H	-2.742	p95 -3.105	max -2.927	ABOVE	flanks -3.012 p95 -3.475 ABOVE	p re s de Bavier pour le fe r
+73=	Bavier	H	-3.474	p95 -3.085	max -2.697	below	flanks -3.412 p95 -3.376 below	i re a sued Bavier qui l s ve
+73=	Bavier	H	-2.927	p95 -3.373	max -3.078	ABOVE	flanks -3.057 p95 -3.791 ABOVE	r me te de Bavier pe r d ro
+86'	avec	H	-2.44	p95 -3.546	max -3.15	ABOVE	flanks -2.665 p95 -3.852 ABOVE	fo r ce s avec les a r me
+86'	avec	H	-2.843	p95 -3.042	max -2.658	ABOVE	flanks -3.123 p95 -3.219 ABOVE	a l li e avec le Roy en re co
+8:	leur	H	-2.365	p95 -3.255	max -2.618	ABOVE	flanks -2.781 p95 -3.415 ABOVE	n c tion de leur s fo r ce
+8:	leur	H	-2.794	p95 -3.421	max -2.986	ABOVE	flanks -2.948 p95 -3.763 ABOVE	u le n t leur t ro u pe

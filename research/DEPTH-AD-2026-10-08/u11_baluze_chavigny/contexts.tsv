@@ -1,0 +1,12 @@
+code	value	grade	line	target	shuffle_p95	shuffle_max	above_p95	flanks	flanks_p95	flanks_above	window	context
+14:	madame	M	L06	-2.941	-3.294	-2.916	True	-3.466	-3.852	True	tsducsetmadamelalangra	du c s et madame la l a n
+14:	madame	M	L16	-2.404	-3.382	-2.929	True	-2.756	-3.81	True	ensemblemadamelalangra	se m b le madame la l a n
+32:	tion	H	L06	-2.4	-3.483	-3.171	True	-3.103	-3.93	True	lesconditionsquilsto	ve les con di tion s qui l s
+32:	tion	H	L07	-2.621	-3.193	-2.806	True	-3.304	-3.418	True	ntlajonctiondeleursf	la jo n c tion de leur s fo
+73=	Bavier	H	L04	-2.742	-3.105	-2.927	True	-3.012	-3.475	True	cepresdebavierpourlefe	p re s de Bavier pour le fe r
+73=	Bavier	H	L10	-3.474	-3.085	-2.697	False	-3.412	-3.376	False	ireasuedbavierquilsveu	i re a sued Bavier qui l s ve
+73=	Bavier	H	L02	-2.927	-3.373	-3.078	True	-3.057	-3.791	True	ermetedebavierperdrons	r me te de Bavier pe r d ro
+86'	avec	H	L08	-2.44	-3.546	-3.15	True	-2.665	-3.852	True	rsforcesaveclesarmee	fo r ce s avec les a r me
+86'	avec	H	L17	-2.843	-3.042	-2.658	True	-3.123	-3.219	True	estallieavecleroyenr	a l li e avec le Roy en re co
+8:	leur	H	L07	-2.365	-3.255	-2.618	True	-2.781	-3.415	True	nctiondeleursforcesa	n c tion de leur s fo r ce
+8:	leur	H	L11	-2.794	-3.421	-2.986	True	-2.948	-3.763	True	sveulentleurtroupess	u le n t leur t ro u pe

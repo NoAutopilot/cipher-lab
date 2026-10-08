@@ -1,0 +1,19 @@
+code	value	grade	line	target	shuffle_p95	shuffle_max	above_p95	flanks	flanks_p95	flanks_above	window	context
+1154	vous	C	BLA191_p5_L01	-3.351	-3.187	-2.989	False	-3.953	-3.565	False	irl|quejevousaimicord	l' ? que je vous ai mi co|lo r
+1154	vous	C	BLA191_p5_L04	-3.091	-2.817	-2.387	False	-3.503	-2.931	False	ierquandvousme|riscav	ri se hier|c'est quand vous me ? ri scavoi
+1250	hier|c'est	M	BLA184_p1_L04	-3.7	-2.976	-2.801	False	-3.992	-3.179	False	vo|sililshierlambassa	s|que il il s|que hier|c'est l' ambassadeur ? a
+1250	hier|c'est	M	BLA191_p5_L04	-3.284	-2.848	-2.632	False	-3.339	-3.122	False	readrisehierquandvou	e ad ri se hier|c'est quand vous me ?
+275	dans	C	BLA191_p5_L07	-2.934	-2.672	-2.414	False	-3.436	-2.751	False	iquoyquedanslaffaire	s pour moi quoyque dans l' affaire pas se
+275	dans	M	BLA191_p5_L12	-2.576	-2.928	-2.549	True	-2.834	-3.122	True	iinutiledansl|norance	sec|ser ai in utile dans l' ? no ra
+53	affaire	C	BLA186_p1_L01	-2.672	-2.724	-2.502	True	-3.191	-2.965	False	tefort|||teaffairemonsieur	? ? ? te affaire monsieur de pa ti
+53	affaire	C	BLA191_p5_L08	-2.962	-3.009	-2.657	True	-3.586	-3.234	False	quedanslaffairepasseeje	moi quoyque dans l' affaire pas se e je
+737	monsieur	C	BLA186_p3_L01	-2.867	-2.994	-2.637	True	-3.083	-3.064	False	eaffairemonsieurdepatign	? ? te affaire monsieur de pa ti g
+737	monsieur	C	BLA191_p5_L06	-3.487	-3.077	-2.888	False	-3.694	-3.32	False	ommencarmonsieurkennemam	t du commen car monsieur ken ne m' ame
+816	ordre	C	BLA191_p5_L07	-2.469	-2.757	-2.544	True	-2.948	-2.96	True	lnaaucunordredes||spour	il n a aucun ordre des ? ? s
+816	ordre	C	BLA191_p5_L13	-2.612	-2.5	-2.262	False	-2.902	-2.676	False	cquelqueordrepourma|	des moi donc quelque ordre pour ma ?
+835	pour	C	BLA191_p5_L02	-2.437	-2.664	-2.359	True	-2.795	-2.819	True	engrandepourvotrelet	est bien grand e pour votre lettre du ?
+835	pour	C	BLA191_p5_L07	-3.448	-2.847	-2.562	False	-3.898	-3.061	False	rdredes||spourmoiquoyq	des ? ? s pour moi quoyque dans l'
+835	pour	C	BLA191_p5_L10	-2.791	-2.617	-2.225	False	-3.16	-2.713	False	sfournirpourlemieuxa	v vo is fournir pour le mieux a l'
+835	pour	C	BLA191_p5_L13	-2.812	-2.518	-2.069	False	-3.213	-2.743	False	queordrepourma|	moi donc quelque ordre pour ma ?
+924	quand	C	BLA191_p5_L03	-3.944	-3.257	-2.814	False	-3.965	-3.703	False	redu|jyaiquandce|demars	? j' y ai quand ce ? de m
+924	quand	C	BLA191_p5_L04	-3.104	-2.521	-2.347	False	-3.675	-2.865	False	risehierquandvousme|ri	ad ri se hier|c'est quand vous me ? ri

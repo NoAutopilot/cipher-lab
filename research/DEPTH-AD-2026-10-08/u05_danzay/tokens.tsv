@@ -1,0 +1,706 @@
+line	pos	sign	conf	value	grade
+R1.s000	0	xinf			H
+R1.s000	1	xA			H
+R1.s000	2	st		i	M
+R1.s000	3	lam		l	H
+R1.s000	4	dia		e	H
+R1.s000	5	r2		r	H
+R2.s000	6	xk			U
+R2.s000	7	iii			H
+R2.s001	8	LRD		le Roy de Dannemarch	H
+R2.s001	9	x8			U
+R2.s001	10	D			U
+R2.s001	11	ringT			U
+R2.s001	12	del		f	H
+R2.s001	13	pi		o	H
+R2.s001	14	eps		r	H
+R2.s001	15	pd		t	H
+R2.s001	16	fd		d	H
+R2.s001	17	ven		y	M
+R2.s001	18	r2		r	H
+R2.s001	19	hk		u|a	M
+R2.s001	20	dia		e	M
+R2.s001	21	eq		i	H
+R2.s001	22	lam		l	H
+R2.s001	23	dia		e	H
+R2.s001	24	et		et	M
+R2.s001	25	a1		a	H
+R2.s001	26	pd		t	H
+R2.s001	27	x		e	H
+R2.s001	28	ae		n	H
+R2.s001	29	hk		u|a	M
+R2.s001	30	dia		e	H
+R3.s001	31	x88			H
+R3.s003	32	iii			H
+R3.s003	33	r2		r	H
+R3.s012	34	xk			U
+R3.s012	35	eps		r	M
+R4.s013	36	lam		l	H
+R4.s013	37	T		a|luy	M
+R4.s013	38	LRD		le Roy de Dannemarch	H
+R4.s013	39	pib		o	H
+R4.s013	40	ring7			U
+R4.s013	41	ae		n	H
+R4.s013	42	dia		e	H
+R4.s013	43	ringT			U
+R4.s013	44	ae		n	H
+R4.s013	45	x		e	H
+R4.s013	46	sha		m	H
+R4.s013	47	b6		p	H
+R4.s013	48	dia		e	H
+R4.s013	49	H		s	H
+R4.s014	50	al		c	H
+R4.s014	51	hp		h	H
+R4.s014	52	x		e	H
+R4.s014	53	iii			H
+R4.s014	54	S			U
+R4.s014	55	x8			U
+R4.s014	56	ae		n	H
+R4.s014	57	dia		e	H
+R5.s014	58	b6		p	H
+R5.s014	59	eps		r	H
+R5.s014	60	dia		e	H
+R5.s014	61	H		s	H
+R5.s014	62	pd		t	H
+R5.s014	63	x		e	H
+R5.s015	64	O			H
+R5.s015	65	ls		s	M
+R5.s015	66	T		a|luy	M
+R5.s015	67	xb		u	H
+R5.s015	68	phi		f	H
+R5.s015	69	x88			H
+R5.s015	70	eps		r	M
+R5.s015	71	ringT			U
+R5.s015	72	ae		n	H
+R6.s019	73	xN			H
+R6.s019	74	ls		s	M
+R6.s020	75	lam		l	H
+R6.s020	76	T		a|luy	M
+R6.s020	77	q4		q	H
+R6.s020	78	mu		u	H
+R6.s020	79	dia		e	H
+R6.s020	80	llt		ll	H
+R6.s020	81	x		e	H
+R6.s020	82	rx		x	M
+R6.s020	83	ae		n	H
+R6.s020	84	dia		e	H
+R6.s020	85	del		f	H
+R6.s020	86	T		a|luy	M
+R6.s020	87	xb		u	H
+R6.s020	88	lam		l	H
+R6.s020	89	fd		d	H
+R6.s020	90	eps		r	H
+R6.s020	91	T		a|luy	M
+R6.s020	92	xinf			H
+R6.s020	93	xk			U
+R7.s020	94	a1		a	H
+R7.s020	95	x8			U
+R7.s020	96	H		s	H
+R7.s020	97	dia		e	H
+R7.s020	98	x88			H
+R7.s020	99	H		s	H
+R7.s020	100	a1		a	H
+R7.s020	101	eq		i	H
+R7.s020	102	s9		s	M
+R7.s020	103	circ			U
+R7.s020	104	eps		r	H
+R7.s021	105	fd		d	H
+R7.s021	106	x		e	H
+R7.s021	107	al		c	H
+R7.s021	108	dia		e	H
+R7.s021	109	iii			H
+R7.s021	110	I			U
+R7.s021	111	mu		u	H
+R7.s021	112	eq		i	H
+R7.s021	113	r2		r	H
+R7.s021	114	Pbar			U
+R8.s021	115	iii			H
+R8.s021	116	eps		r	H
+R8.s021	117	dia		e	H
+R8.s021	118	eps		r	H
+R8.s021	119	T		a|luy	M
+R8.s021	120	s9		s	M
+R8.s021	121	b6		p	H
+R8.s021	122	eps		r	H
+R8.s021	123	x		e	H
+R8.s021	124	s9		s	H
+R8.s021	125	x		e	H
+R8.s021	126	ae		n	H
+R8.s021	127	pd		t	H
+R8.s022	128	b6		p	H
+R8.s022	129	pi		o	H
+R8.s022	130	xb		u	H
+R8.s022	131	eps		r	H
+R8.s022	132	x8			U
+R8.s022	133	Y		son?	H
+V1.s024	134	x8			U
+V1.s024	135	b6		p	H
+V1.s024	136	eps		r	H
+V1.s024	137	Om		o	H
+V1.s024	138	r2		r	H
+V1.s024	139	tss			U
+V1.s024	140	mc		c	H
+V1.s024	141	pd		t	H
+V1.s024	142	iii			H
+V1.s024	143	B		p	H
+V1.s024	144	T		a|luy	M
+V1.s024	145	eps		r	H
+V1.s024	146	pd		t	H
+V1.s024	147	eq		i	H
+V1.s024	148	al		c	M
+V1.s024	149	x		e	H
+V1.s024	150	lam		l	H
+V1.s024	151	circ			U
+V1.s024	152	dia		e	H
+V1.s024	153	eps		r	H
+V1.s024	154	iii			H
+V1.s024	155	le		le	H
+V1.s024	156	x8			U
+V1.s024	157	ls		s	M
+V2.s024	158	al		c	H
+V2.s024	159	hp		h	H
+V2.s024	160	T		a|luy	M
+V2.s024	161	ae		n	H
+V2.s024	162	mc		c	H
+V2.s024	163	x		e	H
+V2.s024	164	llam			U
+V2.s024	165	eq		i	H
+V2.s024	166	Y		son?	H
+V2.s024	167	eps		r	H
+V2.s025	168	fd		d	H
+V2.s025	169	T		a|luy	M
+V2.s025	170	ae		n	H
+V2.s025	171	pi		o	H
+V2.s025	172	ring7			U
+V2.s025	173	H		s	H
+V2.s025	174	hk		u|a	M
+V2.s025	175	q4		q	H
+V2.s025	176	mu		u	H
+V2.s025	177	dia		e	H
+V2.s025	178	lam		l	H
+V2.s025	179	I			U
+V2.s025	180	xb		u	H
+V2.s025	181	x		e	H
+V2.s025	182	xA			H
+V3.s025	183	b6		p	H
+V3.s025	184	T		a|luy	M
+V3.s025	185	eps		r	H
+V3.s025	186	pd		t	H
+V3.s025	187	eq		i	H
+V3.s025	188	a1		a	H
+V3.s025	189	lam		l	H
+V3.s025	190	circ			U
+V3.s025	191	pd		t	H
+V3.s025	192	x		e	H
+V3.s026	193	S			U
+V3.s026	194	iii			H
+V3.s026	195	ring7			U
+V3.s026	196	a1		a	H
+V3.s026	197	pd		t	H
+V3.s026	198	x		e	H
+V3.s027	199	fd		d	H
+V3.s027	200	x		e	H
+V3.s027	201	B		p	H
+V3.s027	202	dia		e	H
+V3.s027	203	H		s	H
+V3.s027	204	al		c	H
+V3.s027	205	hp		h	H
+V3.s027	206	x		e	H
+V4.s029	207	pd		t	H
+V4.s029	208	Om		o	H
+V4.s029	209	mu		u	H
+V4.s029	210	s9		s	H
+V4.s030	211	lam		l	H
+V4.s030	212	x		e	H
+V4.s030	213	s9		s	H
+V4.s030	214	iii			H
+V4.s030	215	a1		a	H
+V4.s030	216	llt		ll	H
+V4.s030	217	T		a|luy	M
+V4.s030	218	eq		i	H
+V4.s031	219	eps		r	H
+V4.s031	220	x		e	H
+V4.s031	221	H		s	H
+V4.s031	222	Hh			U
+V4.s031	223	r2		r	H
+V5.s031	224	xA			H
+V5.s031	225	fd		d	H
+V5.s031	226	x		e	H
+V5.s031	227	Zl			U
+V5.s031	228	al		c	H
+V5.s031	229	dia		e	H
+V5.s032	230	LRD		le Roy de Dannemarch	H
+V5.s032	231	pib		o	H
+V5.s032	232	ring7			U
+V5.s032	233	a1		a	H
+V5.s032	234	mu		u	H
+V5.s032	235	x88			H
+V5.s032	236	pp		m	H
+V5.s032	237	x		e	H
+V5.s033	238	Pbar			U
+V5.s033	239	loop			H
+V5.s033	240	shat			U
+V5.s033	241	T		a|luy	M
+V5.s033	242	B		p	H
+V5.s033	243	eps		r	H
+V5.s033	244	pib		o	H
+V5.s033	245	pp		m	H
+V5.s033	246	eq		i	H
+V5.s033	247	H		s	H
+V6.s033	248	q4		q	H
+V6.s033	249	mu		u	H
+V6.s033	250	eq		i	H
+V6.s033	251	lam		l	H
+V6.s033	252	iii			H
+V6.s033	253	s9		s	H
+V6.s033	254	dia		e	H
+V6.s033	255	ae		n	H
+V6.s033	256	B		p	H
+V6.s033	257	lam		l	H
+V6.s033	258	pib		o	H
+V6.s033	259	ring7			U
+V6.s033	260	dia		e	H
+V6.s033	261	eps		r	H
+V6.s033	262	pi		o	H
+V6.s033	263	pdx			U
+V6.s033	264	pd		t	H
+V6.s033	265	iii			H
+V6.s033	266	x88			H
+V6.s034	267	r2		r	H
+V6.s034	268	x8			U
+V6.s034	269	xst			H
+V7.s034	270	dia		e	H
+V7.s034	271	ae		n	H
+V7.s034	272	al		c	H
+V7.s034	273	x		e	H
+V7.s034	274	fd		d	H
+V7.s034	275	pi		o	H
+V7.s034	276	ae		n	H
+V7.s034	277	pd		t	H
+V7.s034	278	Pbar			U
+V7.s034	279	iii			H
+V7.s034	280	xN			H
+V8.s045	281	et		et	M
+V8.s045	282	x8			U
+V8.s045	283	lam		l	H
+V8.s045	284	x		e	H
+V8.s045	285	H		s	H
+V8.s045	286	mu		u	H
+V8.s045	287	B		p	H
+V8.s045	288	eps		r	H
+V8.s045	289	pib		o	H
+V8.s045	290	b6		p	H
+V8.s045	291	pi		o	H
+V8.s045	292	H		s	H
+V8.s045	293	xM			H
+V8.s045	294	S			U
+V8.s046	295	sha		m	H
+V8.s046	296	T		a|luy	M
+V9.s046	297	pd		t	H
+V9.s046	298	x		e	H
+V9.s046	299	ae		n	H
+V9.s046	300	mu		u	H
+V9.s046	301	xN			H
+V9.s046	302	xst			H
+V9.s048	303	lam		l	H
+V9.s048	304	dia		e	H
+V9.s048	305	xM			H
+V9.s048	306	iii			H
+V9.s048	307	al		c	H
+V9.s048	308	hp		h	H
+V9.s048	309	T		a|luy	M
+V9.s048	310	ae		n	H
+V9.s048	311	al		c	H
+V9.s048	312	x		e	H
+V9.s048	313	lam		l	H
+V9.s048	314	eq		i	H
+V9.s048	315	dia		e	H
+V9.s048	316	eps		r	H
+V10.s048	317	bl		b	H
+V10.s048	318	T		a|luy	M
+V10.s048	319	eps		r	H
+V10.s048	320	bd		b	H
+V10.s048	321	ring7			U
+V10.s049	322	iii			H
+V10.s049	323	b6		p	H
+V10.s049	324	dia		e	H
+V10.s049	325	mu		u	H
+V10.s049	326	lam		l	H
+V10.s049	327	pd		t	H
+V10.s049	328	Zl			U
+V10.s049	329	bd		b	H
+V10.s049	330	x		e	H
+V10.s049	331	T		a|luy	M
+V10.s049	332	mu		u	H
+V10.s049	333	al		c	H
+V10.s049	334	pi		o	H
+V10.s049	335	xb		u	H
+V10.s049	336	b6		p	H
+V11.s052	337	x		e	H
+V11.s052	338	ae		n	H
+V11.s052	339	xb		u	H
+V11.s052	340	dia		e	H
+V11.s052	341	eps		r	H
+V11.s052	342	H		s	H
+V11.s052	343	iii			H
+V11.s052	344	lam		l	H
+V11.s052	345	T		a|luy	M
+V11.s053	346	LRD		le Roy de Dannemarch	H
+V11.s053	347	pib		o	H
+V11.s053	348	ring7			U
+V11.s053	349	r2		r	H
+V11.s053	350	ae		n	H
+V11.s053	351	Y		son?	H
+V12.s058	352	x8			U
+V12.s058	353	b6		p	H
+V12.s058	354	eps		r	H
+V12.s058	355	dia		e	H
+V12.s058	356	b6		p	H
+V12.s058	357	T		a|luy	M
+V12.s058	358	eps		r	H
+V12.s058	359	x		e	H
+V12.s058	360	LRD		le Roy de Dannemarch	H
+V12.s058	361	a1		a	H
+V12.s058	362	ring7			U
+V12.s059	363	al		c	H
+V12.s059	364	dia		e	H
+V12.s059	365	H		s	H
+V12.s059	366	pd		t	H
+V12.s059	367	xst			H
+V12.s059	368	T		a|luy	M
+V12.s059	369	fdx			U
+V12.s059	370	mu		u	H
+V12.s059	371	a1		a	H
+V12.s059	372	eq		i	H
+V12.s059	373	eps		r	H
+V12.s059	374	x		e	H
+V12.s059	375	loop			H
+V17.s107	376	x8			U
+V17.s107	377	r2		r	H
+V17.s107	378	lam		l	H
+V17.s107	379	x		e	H
+V17.s107	380	H		s	H
+V17.s107	381	iii			H
+V17.s107	382	b6		p	H
+V17.s107	383	T		a|luy	M
+V17.s107	384	lsx			U
+V17.s107	385	eq		i	H
+V17.s107	386	x8			U
+V17.s107	387	pi		o	H
+V17.s107	388	ae		n	H
+V17.s107	389	H		s	H
+V17.s108	390	et		et	M
+V17.s108	391	T		a|luy	M
+V17.s108	392	fdx			U
+V17.s108	393	dia		e	H
+V17.s108	394	mc		c	H
+V17.s108	395	pd		t	H
+V17.s108	396	eq		i	H
+V17.s108	397	pi		o	H
+V17.s108	398	ae		n	H
+V17.s108	399	H		s	H
+V18.s108	400	fd		d	H
+V18.s108	401	dia		e	H
+V18.s108	402	mc		c	H
+V18.s108	403	dia		e	H
+V18.s108	404	xb		u	H
+V18.s108	405	lam		l	H
+V18.s108	406	rx		x	M
+V18.s108	407	fd		d	H
+V18.s108	408	x		e	H
+V18.s108	409	H		s	H
+V18.s108	410	q4		q	H
+V18.s108	411	mu		u	H
+V18.s108	412	x		e	H
+V18.s108	413	lam		l	H
+V18.s108	414	H		s	H
+V18.s108	415	loop			H
+V18.s109	416	sha		m	H
+V18.s109	417	x		e	H
+V18.s110	418	T		a|luy	M
+V18.s110	419	ring7			U
+V18.s110	420	fd		d	H
+V18.s110	421	dia		e	H
+V18.s110	422	eps		r	H
+V18.s110	423	r2		r	H
+V18g.s110	424	x8			U
+V18g.s110	425	O			H
+V18g.s110	426	T		a|luy	M
+V18g.s110	427	mu		u	H
+V18g.s110	428	lam		l	H
+V18g.s110	429	pd		t	H
+V18g.s110	430	r2		r	H
+V19.s110	431	et		et	M
+V19.s110	432	pd		t	H
+V19.s110	433	fd		d	H
+V19.s110	434	x		e	H
+V19.s110	435	H		s	H
+V19.s110	436	I			U
+V19.s110	437	mu		u	H
+V19.s110	438	dia		e	H
+V19.s110	439	lam		l	H
+V19.s110	440	H		s	H
+V19.s110	441	ringT			U
+V19.s110	442	lam		l	H
+V19.s110	443	T		a|luy	M
+V19.s110	444	eps		r	H
+V19.s110	445	x		e	H
+V19.s110	446	H		s	H
+V19.s110	447	pi		o	H
+V19.s110	448	lam		l	H
+V19.s110	449	mu		u	H
+V19.s110	450	pd		t	H
+V19.s110	451	eq		i	H
+V19.s110	452	pi		o	H
+V19.s110	453	ae		n	H
+V19.s110	454	iii			H
+V19.s110	455	fd		d	H
+V19.s110	456	x		e	H
+V19.s110	457	H		s	H
+V20.s110	458	a1		a	H
+V20.s110	459	fdl			U
+V20.s110	460	r2		r	H
+V20.s110	461	T		a|luy	M
+V20.s110	462	eq		i	H
+V20.s110	463	iii			H
+V20.s110	464	eps		r	H
+V20.s110	465	x		e	H
+V20.s110	466	H		s	H
+V20.s110	467	bbar			U
+V20.s110	468	Y		son?	H
+V20.s110	469	b6		p	H
+V20.s110	470	x		e	H
+V20.s110	471	ae		n	H
+V20.s110	472	fd		d	H
+V20.s110	473	iii			H
+V20.s110	474	x88			H
+V23.s139	475	ringT			U
+V23.s139	476	xinf			H
+V23.s139	477	loop			H
+V23.s139	478	fd		d	H
+V23.s139	479	x		e	H
+V23.s139	480	lam		l	H
+V23.s139	481	x		e	H
+V23.s139	482	mu		u	H
+V23.s139	483	eps		r	H
+V23.s139	484	iii			H
+V23.s139	485	xb		u	H
+V23.s139	486	pi		o	H
+V23.s139	487	lam		l	H
+V23.s139	488	pib		o	H
+V23.s139	489	ae		n	H
+V23.s139	490	pd		t	H
+V23.s139	491	x		e	H
+V23.s140	492	dt			U
+V23.s140	493	x		e	H
+V23.s140	494	ae		n	H
+V23.s140	495	s9		s	H
+V23.s140	496	mu		u	H
+V23.s140	497	eq		i	H
+V23.s140	498	H		s	H
+V24.s140	499	dia		e	H
+V24.s140	500	ae		n	H
+V24.s141	501	fd		d	H
+V24.s141	502	pi		o	H
+V24.s141	503	xb		u	H
+V24.s141	504	bd		b	H
+V24.s141	505	pd		t	H
+V24.s141	506	x		e	H
+V24.s141	507	xinf			H
+V24.s141	508	ls		s	H
+V24.s141	509	x88			H
+V24.s141	510	xN			H
+V25.s149	511	r2		r	H
+V25.s149	512	x88			H
+V25.s149	513	T		a|luy	M
+V25.s149	514	mu		u	H
+V25.s149	515	sha		m	H
+V25.s149	516	pi		o	H
+V25.s149	517	ring7			U
+V25.s149	518	x		e	H
+V25.s149	519	ae		n	H
+V25.s150	520	x8			U
+V25.s150	521	ringT			U
+V25.s150	522	fd		d	H
+V25.s150	523	x		e	H
+V25.s150	524	iii			H
+V25.s150	525	phi		f	H
+V25.s150	526	T		a|luy	M
+V25.s150	527	eq		i	H
+V25.s150	528	eps		r	H
+V25.s150	529	x		e	H
+V26.s150	530	T		a|luy	M
+V26.s150	531	x8			U
+V26.s150	532	fdl			U
+V26.s150	533	r2		r	H
+V26.s150	534	dia		e	H
+V26.s150	535	mu		u	H
+V26.s150	536	eps		r	H
+V26.s150	537	x		e	H
+V26.s150	538	LRD		le Roy de Dannemarch	H
+V26.s150	539	q4		q	H
+V26.s150	540	mu		u	H
+V26.s150	541	dia		e	H
+V26.s150	542	lam		l	H
+V26.s150	543	I			U
+V26.s150	544	xb		u	H
+V26.s150	545	xst			H
+V26.s150	546	x		e	H
+V26.s150	547	O			H
+V26.s150	548	ringT			U
+V26.s150	549	T		a|luy	M
+V26.s150	550	hk		u|a	M
+V26.s150	551	g8		g	H
+V26.s150	552	H		s	H
+V26.s150	553	bd		b	H
+V26.s150	554	pi		o	H
+V26.s150	555	mu		u	H
+V26.s150	556	eps		r	H
+V26.s150	557	g7		g	H
+V27.s150	558	iii			H
+V27.s150	559	b6		p	H
+V27.s150	560	T		a|luy	M
+V27.s150	561	eps		r	H
+V27.s151	562	ae		n	H
+V27.s151	563	lam		l	H
+V27.s151	564	dia		e	H
+V27.s151	565	H		s	H
+V27.s151	566	loop			H
+V27.s151	567	sha		m	H
+V27.s151	568	T		a|luy	M
+V27.s151	569	eps		r	H
+V27.s151	570	al		c	H
+V27.s151	571	hp		h	H
+V27.s151	572	T		a|luy	M
+V27.s151	573	ae		n	H
+V27.s151	574	H		s	H
+V27.s151	575	iii			H
+V27.s151	576	fdx			U
+V27.s151	577	x		e	H
+V27.s151	578	xinf			H
+V27.s151	579	llam			U
+V27.s151	580	eq		i	H
+V27.s151	581	pi		o	H
+V27.s151	582	ae		n	H
+V28.s151	583	x8			U
+V28.s151	584	al		c	H
+V28.s151	585	a1		a	H
+V28.s151	586	eps		r	H
+V28.s151	587	fd		d	H
+V28.s151	588	x		e	H
+V28.s151	589	r2		r	H
+V28.s151	590	T		a|luy	M
+V28.s151	591	mu		u	H
+V28.s151	592	q4		q	M
+V28.s151	593	s9		s	H
+V28.s151	594	bl		b	H
+V28.s151	595	pib		o	H
+V28.s151	596	xb		u	H
+V28.s151	597	LRD		le Roy de Dannemarch	H
+V28.s151	598	g8		g	H
+V28.s151	599	x8			U
+V28.s151	600	pi		o	H
+V28.s151	601	ae		n	H
+V28.s151	602	le		le	H
+V28.s151	603	iii			H
+V28.s151	604	b6		p	H
+V28.s151	605	pi		o	H
+V28.s151	606	xb		u	H
+V28.s151	607	rt		rr	H
+V28.s151	608	T		a|luy	M
+V28.s151	609	loop			H
+V29.s151	610	T		a|luy	M
+V29.s151	611	eq		i	H
+V29.s151	612	s9		s	H
+V29.s151	613	ep			U
+V29.s151	614	ringT			U
+V29.s151	615	sha		m	H
+V29.s151	616	ae		n	H
+V29.s151	617	a1		a	M
+V29.s151	618	pd		t	H
+V29.s151	619	eps		r	H
+V29.s151	620	x		e	H
+V29.s151	621	al		c	H
+V29.s151	622	pi		o	H
+V29.s151	623	mut			U
+V29.s151	624	LRD		le Roy de Dannemarch	H
+V29.s151	625	x		e	H
+V29.s151	626	eps		r	H
+V29.s151	627	xinf			H
+V29.s151	628	b6		p	H
+V29.s151	629	a1		a	H
+V29.s151	630	xN			H
+V29.s151	631	s9		s	H
+V29.s151	632	hp		h	H
+V29.s151	633	x		e	H
+V29.s151	634	al		c	H
+V29.s151	635	T		a|luy	M
+V29.s151	636	r2		r	H
+V29.s152	637	xk			U
+36R1.s000	0	T		a|luy	M
+36R1.s000	1	mu		u	H
+36R1.s000	2	dia		e	M
+36R1.s000	3	al		c	H
+36R1.s000	4	I			U
+36R1.s000	5	hk		u|a	M
+36R1.s000	6	x		e	H
+36R1.s000	7	H		s	H
+36R1.s000	8	r2		r	M
+36R1.s000	9	x8			U
+36R1.s000	10	b6		p	M
+36R1.s000	11	dia		e	M
+36R1.s000	12	xb		u	H
+36R1.s000	13	xinf			H
+36R1.s000	14	fd		d	H
+36R1.s000	15	x		e	H
+36R1.s000	16	B		p	H
+36R1.s000	17	x		e	H
+36R1.s000	18	eps		r	H
+36R1.s000	19	pd		t	M
+36R1.s000	20	x		e	H
+36R1.s000	21	b6		p	M
+36R1.s000	22	pib		o	H
+36R1.s000	23	xb		u	H
+36R1.s000	24	r2		r	H
+36R2.s000	25	le		le	H
+36R2.s000	26	loop			M
+36R2.s000	27	mc		c	M
+36R2.s000	28	h9		h	M
+36R2.s000	29	T		a|luy	M
+36R2.s000	30	ae		n	H
+36R2.s000	31	g8		g	M
+36R2.s000	32	x		e	H
+36R3.s010	33	dia		e	H
+36R3.s010	34	mu		u	M
+36R3.s010	35	r2		r	M
+36R3.s010	36	ae		n	H
+36R3.s010	37	g8		g	H
+36R3.s010	38	xN			M
+36R3.s011	39	T		a|luy	M
+36R3.s011	40	sha		m	H
+36R3.s011	41	dia		e	H
+36R3.s011	42	T		a|luy	M
+36R3.s011	43	eps		r	H
+36R3.s012	44	loop			M
+36R4.s012	45	q4		q	M
+36R4.s012	46	ww			U
+36R4.s012	47	ven		y	M
+36R4.s012	48	iii			H
+36R4.s012	49	pp		m	H
+36R4.s012	50	dia		e	H
+36R4.s012	51	ae		n	H
+36R4.s012	52	pd		t	M
+36R4.s012	53	xA			H
+36R4.s012	54	b6		p	H
+36R4.s012	55	T		a|luy	M
+36R4.s012	56	eps		r	H
+36R4.s012	57	fd		d	H
+36R4.s012	58	xA			M
+36R4.s012	59	x		e	H
+36R4.s012	60	al		c	H
+36R4.s012	61	T		a|luy	M
+36R4.s012	62	xA			H
+36R4.s013	63	r2		r	M
+36R4.s013	64	x88			H
+36R4.s013	65	ringT			U
+36R4.s013	66	iii			H

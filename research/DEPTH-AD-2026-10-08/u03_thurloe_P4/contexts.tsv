@@ -1,0 +1,6 @@
+code	value	grade	line	target	shuffle_p95	shuffle_max	above_p95	flanks	flanks_p95	flanks_above	window	context
+67	england	C	P4.s261	-2.846	-3.867	-3.37	True	-3.605	-4.297	True	ethougxtenglandthemater	u g x t england t h e m
+67	england	C	P4.s721	-2.23	-3.088	-2.434	True	-2.564	-3.533	True	derableienglandwhichthe	b l e i england which t h e
+67	england	C	P4.s760	-3.415	-3.797	-3.384	True	-3.885	-4.488	True	ritormndenglandhdehasha	r m n d england h d e h
+81	which	C	P4.s721	-2.173	-2.758	-2.523	True	-2.65	-2.937	True	ienglandwhichthehaven	l e i england which t h e have
+81	which	C	P4.s733	-3.544	-3.759	-3.457	True	-3.627	-4.373	True	ldsoffrtwhichlreadito	f f r t which l r e a

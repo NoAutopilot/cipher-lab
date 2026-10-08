@@ -1,0 +1,35 @@
+code	value	grade	line	target	shuffle_p95	shuffle_max	above_p95	flanks	flanks_p95	flanks_above	window	context
+136	uingt	M	W5797.p5_spot3	-4.2	-3.245	-2.881	False	-4.153	-3.194	False	landgrafuingt|lecontej	  landgraf  uingt ? lecontejean z e
+136	uingt	M	W4610.p2_L04	-4.011	-4.192	-3.769	True	-3.901	-4.934	True	remandey|uingtne|marchy	d e y ? uingt n e ? m
+136	uingt	M	W4610.p2_L16	-3.917	-4.355	-3.95	True	-3.72	-4.917	True	tfourniruingtocens||acc	r n i r uingt   o c
+136	uingt	M	W4610.p2_L24	-3.631	-4.321	-3.884	True	-3.386	-4.922	True	eine|lieu|uingtenremaib	e u ?  uingt e n r e
+136	uingt	M	W4610.p2_L25	-3.788	-4.267	-3.566	True	-3.62	-4.874	True	sdezuous|uingtle|mempes	o u s ? uingt l e ? m
+136	uingt	M	W4610.p3_L24	-3.815	-4.256	-3.989	True	-3.721	-4.926	True	ciodemay|uingt|tde||yfaic	m a y ? uingt ? t d e
+136	uingt	M	W4611.p1_L17	-3.762	-4.36	-3.943	True	-3.743	-4.907	True	esqui|luyuingtsontuenu	? l u y uingt s o n t
+136	uingt	M	W4612.p1_r11	-5.212	-4.342	-4.084	False	-5.337	-4.888	False	ubnpzeus|uingtxyselvsy	u s ?  uingt x y s e
+153	pfaltzgraf	H	W5797.p7_spot2	-4.715	-3.948	-3.53	False	-4.037	-4.44	True	alba|absopfaltzgraf|||mit|elect	a b s o pfaltzgraf ?  ? 
+153	pfaltzgraf	H	W4610.p3_L03	-4.09	-4.391	-4.089	True	-3.289	-4.921	True	on||dupais||||pfaltzgraf||sollicit	? ? ? ? pfaltzgraf ? ?  s
+153	pfaltzgraf	H	W4610.p3_L09	-3.933	-4.375	-3.847	True	-3.034	-4.935	True	t|deniers||pfaltzgraf|contrece	r s ? ? pfaltzgraf ? c o n
+161	landgraf	H	W5797.p5_spot3	-4.427	-3.613	-2.987	False	-4.092	-3.596	False	nsachsenlandgrafuingt|lec	herzogvonsachsen    landgraf  uingt ? lecontejean
+161	landgraf	M	W4610.p3_L20	-4.055	-4.576	-4.151	True	-3.514	-5.048	True	entshiez|||landgraflacourtd	 ? ? ? landgraf l a c o
+172	lecontejean	M	W5797.p6_spot4	-4.269	-3.779	-3.385	False	-4.946	-3.83	False	rafuingt|lecontejeanzeugeth|h	landgraf  uingt ? lecontejean z e u g
+172	lecontejean	H	W4611.p1_L03	-3.496	-4.321	-3.806	True	-3.912	-4.888	True	nscauoir|lecontejeanalle|uers	i r ?  lecontejean a l l e
+192	roidespagne	H	W4610.p1_L33	-2.892	-4.28	-3.897	True	-3.328	-5.018	True	seretourroidespagne|zportegr	o u r  roidespagne ? z p o
+192	roidespagne	H	W4610.p1_L34	-2.848	-4.383	-4.106	True	-3.015	-5.113	True	ffectionroidespagnelnamoien	t i o n roidespagne l n a m
+192	roidespagne	M	W4610.p2_L02	-3.101	-4.11	-3.938	True	-3.808	-4.911	True	dygeneueroidespagnel|ens|etes	u e   roidespagne l ? e n
+192	roidespagne	H	W4610.p3_L08	-3.15	-4.458	-3.973	True	-3.711	-5.087	True	nberuice|roidespagnesobliger	c e  ? roidespagne   s o
+192	roidespagne	H	W4610.p3_L13	-3.327	-4.154	-3.754	True	-3.866	-4.846	True	gouse|quaroidespagne||des|edefi	? q u a roidespagne ? ? d e
+192	roidespagne	H	W4610.p3_L22	-2.52	-4.192	-3.639	True	-3.069	-4.79	True	rfrereduroidespagne|e|sleuroy	r e d u roidespagne ? e ? s
+200	herzogvonalba	M	W5797.p6_control_abso	-5.131	-4.201	-3.516	False	-5.139	-4.53	False	nzeugeth|herzogvonalba|absopfal	e t h ? herzogvonalba   ? a
+200	herzogvonalba	C	W4610.p3_L15	-4.136	-3.852	-3.474	False	-3.336	-4.188	True	escripte||herzogvonalba|franckre	t e ? ? herzogvonalba ?  franckreich ?
+200	herzogvonalba	C	W4611.p1_L14	-4.578	-4.343	-3.911	False	-3.813	-4.753	True	bruit|queherzogvonalbaseme|icyd	q u e  herzogvonalba s e m e
+200	herzogvonalba	C	W4611.p2_L02	-4.361	-4.511	-4.02	True	-3.526	-4.981	True	px|forcesherzogvonalbalecappit	r c e s herzogvonalba l e c a
+200	herzogvonalba	C	W4611.p2_L17	-4.575	-4.348	-3.877	False	-3.872	-4.84	True	rapain|au|herzogvonalbamalueill	 a u ? herzogvonalba m a l u
+200	herzogvonalba	M	W4611.p2_L20	-4.958	-3.781	-3.352	False	-4.583	-4.32	False	ueau|et|in|herzogvonalbaa||z|herzog	? i n ? herzogvonalba a ? ? 
+200	herzogvonalba	C	W4611.p2_L20	-5.032	-3.917	-3.577	False	-4.651	-4.351	False	onalbaa||z|herzogvonalbaelzmonsh	?  z ? herzogvonalba e l z m
+202	franckreich	H	W4610.p3_L15	-4.079	-3.743	-3.358	False	-3.756	-4.08	True	gvonalba|franckreich||delapaix	? herzogvonalba ?  franckreich ? ? d e
+202	franckreich	H	W4612.p1_r12	-5.115	-4.252	-3.891	False	-5.394	-4.946	False	dusosdzpfranckreichp|p|||||||zurdnt	s d z p franckreich p ? p ?
+221	hollande	H	W4610.p2_L11	-3.927	-4.359	-3.958	True	-3.933	-5.022	True	iageuershollande|mais|nuoi	r s   hollande ? m a i
+221	hollande	H	W4611.p2_L01	-3.749	-4.354	-3.966	True	-3.891	-5.04	True	tireroit|hollandebeabcoup	i t ?  hollande b e a b
+221	hollande	H	W4611.p2_L10	-3.899	-4.216	-3.865	True	-3.566	-4.795	True	e||lennemyhollandeuers|ceca	n e m y hollande u e r s
+221	hollande	M	W4616.p1_L17	-3.591	-3.843	-3.705	True	-3.464	-4.863	True	mellieurhollande||p|	i e u r hollande  ? ? 

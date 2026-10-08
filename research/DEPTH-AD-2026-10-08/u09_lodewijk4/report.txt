@@ -1,0 +1,28 @@
+{"tokens": 4243, "grades": {"U": 478, "C": 3039, "M": 450, "I": 263, "H": 13}, "hcs": 3052, "hcs_pct": 71.9, "primary_run": 35, "primary_run_text": "a u i s e r o n s p l u s t o s t d e o g e r p a r d e c a s u r l e", "secondary_run": 35, "secondary_run_text": "a u i s e r o n s p l u s t o s t d e o g e r p a r d e c a s u r l e", "H_model_bits": 2.584, "R": 2.116, "V": 24, "distinct_cipher_codes": 134, "H_design": 614.4, "H_lib": 2641.6, "H_K": 3256.0, "unicity": 1538.4, "primary_run_m_through": 42, "primary_run_m_through_text": "d e d u c d e c l e n u e s n o m m e m u c a n t a n d a n t  p u o s t r e a d u i", "AD": 2307.6, "AD_R3_4": 1436.5, "cipher_clause": false, "cipher_clause_m_through": false, "stat_i_target": 54, "stat_i_p95": 34, "stat_i_max": 50, "stat_i_pass": true, "n_shuffles": 200, "seeds": "8100-8299", "shuffle": "classes", "cipher_class": "len<=3", "wordlist_size": 10228}
+136	uingt	M	-4.011	p95 -4.192	max -3.769	ABOVE	flanks -3.901 p95 -4.934 ABOVE	d e y ? uingt n e ? m
+136	uingt	M	-3.917	p95 -4.355	max -3.95	ABOVE	flanks -3.72 p95 -4.917 ABOVE	r n i r uingt   o c
+136	uingt	M	-3.631	p95 -4.321	max -3.884	ABOVE	flanks -3.386 p95 -4.922 ABOVE	e u ?  uingt e n r e
+136	uingt	M	-3.788	p95 -4.267	max -3.566	ABOVE	flanks -3.62 p95 -4.874 ABOVE	o u s ? uingt l e ? m
+136	uingt	M	-3.815	p95 -4.256	max -3.989	ABOVE	flanks -3.721 p95 -4.926 ABOVE	m a y ? uingt ? t d e
+136	uingt	M	-3.762	p95 -4.36	max -3.943	ABOVE	flanks -3.743 p95 -4.907 ABOVE	? l u y uingt s o n t
+136	uingt	M	-5.212	p95 -4.342	max -4.084	below	flanks -5.337 p95 -4.888 below	u s ?  uingt x y s e
+153	pfaltzgraf	H	-4.09	p95 -4.391	max -4.089	ABOVE	flanks -3.289 p95 -4.921 ABOVE	? ? ? ? pfaltzgraf ? ?  s
+153	pfaltzgraf	H	-3.933	p95 -4.375	max -3.847	ABOVE	flanks -3.034 p95 -4.935 ABOVE	r s ? ? pfaltzgraf ? c o n
+192	roidespagne	H	-2.892	p95 -4.28	max -3.897	ABOVE	flanks -3.328 p95 -5.018 ABOVE	o u r  roidespagne ? z p o
+192	roidespagne	H	-2.848	p95 -4.383	max -4.106	ABOVE	flanks -3.015 p95 -5.113 ABOVE	t i o n roidespagne l n a m
+192	roidespagne	M	-3.101	p95 -4.11	max -3.938	ABOVE	flanks -3.808 p95 -4.911 ABOVE	u e   roidespagne l ? e n
+192	roidespagne	H	-3.15	p95 -4.458	max -3.973	ABOVE	flanks -3.711 p95 -5.087 ABOVE	c e  ? roidespagne   s o
+192	roidespagne	H	-3.327	p95 -4.154	max -3.754	ABOVE	flanks -3.866 p95 -4.846 ABOVE	? q u a roidespagne ? ? d e
+192	roidespagne	H	-2.52	p95 -4.192	max -3.639	ABOVE	flanks -3.069 p95 -4.79 ABOVE	r e d u roidespagne ? e ? s
+200	herzogvonalba	C	-4.136	p95 -3.852	max -3.474	below	flanks -3.336 p95 -4.188 ABOVE	t e ? ? herzogvonalba ?  franckreich ?
+200	herzogvonalba	C	-4.578	p95 -4.343	max -3.911	below	flanks -3.813 p95 -4.753 ABOVE	q u e  herzogvonalba s e m e
+200	herzogvonalba	C	-4.361	p95 -4.511	max -4.02	ABOVE	flanks -3.526 p95 -4.981 ABOVE	r c e s herzogvonalba l e c a
+200	herzogvonalba	C	-4.575	p95 -4.348	max -3.877	below	flanks -3.872 p95 -4.84 ABOVE	 a u ? herzogvonalba m a l u
+200	herzogvonalba	M	-4.958	p95 -3.781	max -3.352	below	flanks -4.583 p95 -4.32 below	? i n ? herzogvonalba a ? ? 
+200	herzogvonalba	C	-5.032	p95 -3.917	max -3.577	below	flanks -4.651 p95 -4.351 below	?  z ? herzogvonalba e l z m
+202	franckreich	H	-4.079	p95 -3.743	max -3.358	below	flanks -3.756 p95 -4.08 ABOVE	? herzogvonalba ?  franckreich ? ? d e
+202	franckreich	H	-5.115	p95 -4.252	max -3.891	below	flanks -5.394 p95 -4.946 below	s d z p franckreich p ? p ?
+221	hollande	H	-3.927	p95 -4.359	max -3.958	ABOVE	flanks -3.933 p95 -5.022 ABOVE	r s   hollande ? m a i
+221	hollande	H	-3.749	p95 -4.354	max -3.966	ABOVE	flanks -3.891 p95 -5.04 ABOVE	i t ?  hollande b e a b
+221	hollande	H	-3.899	p95 -4.216	max -3.865	ABOVE	flanks -3.566 p95 -4.795 ABOVE	n e m y hollande u e r s
+221	hollande	M	-3.591	p95 -3.843	max -3.705	ABOVE	flanks -3.464 p95 -4.863 ABOVE	i e u r hollande  ? ? 

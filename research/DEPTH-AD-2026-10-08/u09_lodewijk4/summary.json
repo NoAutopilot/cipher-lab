@@ -1,0 +1,77 @@
+{
+ "tokens": 4243,
+ "grades": {
+  "U": 478,
+  "C": 3039,
+  "M": 450,
+  "I": 263,
+  "H": 13
+ },
+ "hcs": 3052,
+ "hcs_pct": 71.9,
+ "primary_run": 35,
+ "primary_run_text": "a u i s e r o n s p l u s t o s t d e o g e r p a r d e c a s u r l e",
+ "secondary_run": 35,
+ "secondary_run_text": "a u i s e r o n s p l u s t o s t d e o g e r p a r d e c a s u r l e",
+ "H_model_bits": 2.584,
+ "R": 2.116,
+ "V": 24,
+ "distinct_cipher_codes": 134,
+ "H_design": 614.4,
+ "H_lib": 2641.6,
+ "H_K": 3256.0,
+ "unicity": 1538.4,
+ "primary_run_m_through": 42,
+ "primary_run_m_through_text": "d e d u c d e c l e n u e s n o m m e m u c a n t a n d a n t  p u o s t r e a d u i",
+ "AD": 2307.6,
+ "AD_R3_4": 1436.5,
+ "cipher_clause": false,
+ "cipher_clause_m_through": false,
+ "stat_i_target": 54,
+ "stat_i_p95": 34,
+ "stat_i_max": 50,
+ "stat_i_pass": true,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "shuffle": "classes",
+ "cipher_class": "len<=3",
+ "recurring_codes": {
+  "192": {
+   "n_occ": 6,
+   "independent_contexts": 6,
+   "contexts_above_p95": 6,
+   "flanks_above_p95": 6
+  },
+  "136": {
+   "n_occ": 7,
+   "independent_contexts": 7,
+   "contexts_above_p95": 6,
+   "flanks_above_p95": 6
+  },
+  "221": {
+   "n_occ": 4,
+   "independent_contexts": 4,
+   "contexts_above_p95": 4,
+   "flanks_above_p95": 4
+  },
+  "153": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 2
+  },
+  "200": {
+   "n_occ": 6,
+   "independent_contexts": 6,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 4
+  },
+  "202": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 1
+  }
+ },
+ "wordlist_size": 10228
+}

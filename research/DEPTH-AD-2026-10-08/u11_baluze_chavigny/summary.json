@@ -1,0 +1,70 @@
+{
+ "tokens": 366,
+ "grades": {
+  "M": 258,
+  "H": 106,
+  "I": 1,
+  "U": 1
+ },
+ "hcs": 106,
+ "hcs_pct": 29.0,
+ "primary_run": 8,
+ "primary_run_text": "qui luy do",
+ "secondary_run": 11,
+ "secondary_run_text": "avec le Roy en",
+ "H_model_bits": 2.528,
+ "R": 2.172,
+ "V": 117,
+ "distinct_cipher_codes": 72,
+ "H_design": 494.7,
+ "H_lib": 264.9,
+ "H_K": 759.5,
+ "unicity": 349.7,
+ "primary_run_m_through": 94,
+ "primary_run_m_through_text": "le n ne mi ma i s t re de la ca m pa g ne g ra ti f fi e ra le co m te d he be r s te i n qui luy do i t su c ce de r a f fi n de lo b li ge r a mi e u x",
+ "AD": 524.5,
+ "AD_R3_4": 335.1,
+ "cipher_clause": false,
+ "cipher_clause_m_through": false,
+ "stat_i_target": 558,
+ "stat_i_p95": 114,
+ "stat_i_max": 176,
+ "stat_i_pass": true,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "shuffle": "classes",
+ "cipher_class": "len<=3",
+ "recurring_codes": {
+  "73=": {
+   "n_occ": 3,
+   "independent_contexts": 3,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 2
+  },
+  "14:": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 2
+  },
+  "32:": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 2
+  },
+  "8:": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 2
+  },
+  "86'": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 2
+  }
+ },
+ "wordlist_size": 8833
+}

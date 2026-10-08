@@ -1,0 +1,88 @@
+{
+ "tokens": 172,
+ "grades": {
+  "C": 130,
+  "U": 17,
+  "M": 22,
+  "S": 3
+ },
+ "hcs": 133,
+ "hcs_pct": 77.3,
+ "primary_run": 17,
+ "primary_run_text": "dit ce que je po v vo is",
+ "secondary_run": 57,
+ "secondary_run_text": "ce sans quil m' ai t jamais dit ce que je po v vo is fournir pour le mieux a l'",
+ "H_model_bits": 2.792,
+ "R": 1.908,
+ "V": 134,
+ "distinct_cipher_codes": 66,
+ "H_design": 466.4,
+ "H_lib": 142.1,
+ "H_K": 608.5,
+ "unicity": 318.9,
+ "primary_run_m_through": 17,
+ "primary_run_m_through_text": "dit ce que je po v vo is",
+ "AD": 478.4,
+ "AD_R3_4": 268.4,
+ "cipher_clause": false,
+ "cipher_clause_m_through": false,
+ "stat_i_target": 85,
+ "stat_i_p95": 102,
+ "stat_i_max": 113,
+ "stat_i_pass": false,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "shuffle": "classes",
+ "cipher_class": "len<=3",
+ "recurring_codes": {
+  "1250": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "53": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 0
+  },
+  "737": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 0
+  },
+  "1154": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "835": {
+   "n_occ": 4,
+   "independent_contexts": 4,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 1
+  },
+  "924": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "816": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 1
+  },
+  "275": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 1
+  }
+ },
+ "wordlist_size": 7287
+}

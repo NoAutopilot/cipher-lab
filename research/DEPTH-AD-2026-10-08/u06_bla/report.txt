@@ -1,0 +1,19 @@
+{"tokens": 172, "grades": {"C": 130, "U": 17, "M": 22, "S": 3}, "hcs": 133, "hcs_pct": 77.3, "primary_run": 17, "primary_run_text": "dit ce que je po v vo is", "secondary_run": 57, "secondary_run_text": "ce sans quil m' ai t jamais dit ce que je po v vo is fournir pour le mieux a l'", "H_model_bits": 2.792, "R": 1.908, "V": 134, "distinct_cipher_codes": 66, "H_design": 466.4, "H_lib": 142.1, "H_K": 608.5, "unicity": 318.9, "primary_run_m_through": 17, "primary_run_m_through_text": "dit ce que je po v vo is", "AD": 478.4, "AD_R3_4": 268.4, "cipher_clause": false, "cipher_clause_m_through": false, "stat_i_target": 85, "stat_i_p95": 102, "stat_i_max": 113, "stat_i_pass": false, "n_shuffles": 200, "seeds": "8100-8299", "shuffle": "classes", "cipher_class": "len<=3", "wordlist_size": 7287}
+1154	vous	C	-3.351	p95 -3.187	max -2.989	below	flanks -3.953 p95 -3.565 below	l' ? que je vous ai mi co|lo r
+1154	vous	C	-3.091	p95 -2.817	max -2.387	below	flanks -3.503 p95 -2.931 below	ri se hier|c'est quand vous me ? ri scavoi
+1250	hier|c'est	M	-3.7	p95 -2.976	max -2.801	below	flanks -3.992 p95 -3.179 below	s|que il il s|que hier|c'est l' ambassadeur ? a
+1250	hier|c'est	M	-3.284	p95 -2.848	max -2.632	below	flanks -3.339 p95 -3.122 below	e ad ri se hier|c'est quand vous me ?
+275	dans	C	-2.934	p95 -2.672	max -2.414	below	flanks -3.436 p95 -2.751 below	s pour moi quoyque dans l' affaire pas se
+275	dans	M	-2.576	p95 -2.928	max -2.549	ABOVE	flanks -2.834 p95 -3.122 ABOVE	sec|ser ai in utile dans l' ? no ra
+53	affaire	C	-2.672	p95 -2.724	max -2.502	ABOVE	flanks -3.191 p95 -2.965 below	? ? ? te affaire monsieur de pa ti
+53	affaire	C	-2.962	p95 -3.009	max -2.657	ABOVE	flanks -3.586 p95 -3.234 below	moi quoyque dans l' affaire pas se e je
+737	monsieur	C	-2.867	p95 -2.994	max -2.637	ABOVE	flanks -3.083 p95 -3.064 below	? ? te affaire monsieur de pa ti g
+737	monsieur	C	-3.487	p95 -3.077	max -2.888	below	flanks -3.694 p95 -3.32 below	t du commen car monsieur ken ne m' ame
+816	ordre	C	-2.469	p95 -2.757	max -2.544	ABOVE	flanks -2.948 p95 -2.96 ABOVE	il n a aucun ordre des ? ? s
+816	ordre	C	-2.612	p95 -2.5	max -2.262	below	flanks -2.902 p95 -2.676 below	des moi donc quelque ordre pour ma ?
+835	pour	C	-2.437	p95 -2.664	max -2.359	ABOVE	flanks -2.795 p95 -2.819 ABOVE	est bien grand e pour votre lettre du ?
+835	pour	C	-3.448	p95 -2.847	max -2.562	below	flanks -3.898 p95 -3.061 below	des ? ? s pour moi quoyque dans l'
+835	pour	C	-2.791	p95 -2.617	max -2.225	below	flanks -3.16 p95 -2.713 below	v vo is fournir pour le mieux a l'
+835	pour	C	-2.812	p95 -2.518	max -2.069	below	flanks -3.213 p95 -2.743 below	moi donc quelque ordre pour ma ?
+924	quand	C	-3.944	p95 -3.257	max -2.814	below	flanks -3.965 p95 -3.703 below	? j' y ai quand ce ? de m
+924	quand	C	-3.104	p95 -2.521	max -2.347	below	flanks -3.675 p95 -2.865 below	ad ri se hier|c'est quand vous me ? ri

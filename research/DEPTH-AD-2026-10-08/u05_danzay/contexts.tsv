@@ -1,0 +1,9 @@
+code	value	grade	line	target	shuffle_p95	shuffle_max	above_p95	flanks	flanks_p95	flanks_above	window	context
+LRD	le Roy de Dannemarch	H	R2.s001	-3.466	-3.763	-3.287	True	-4.445	-3.711	False	iler|leroydedannemarch|||fortdyru	e r   le Roy de Dannemarch    f
+LRD	le Roy de Dannemarch	H	R4.s013	-3.094	-3.721	-3.406	True	-3.493	-3.707	True	enuer|rlaleroydedannemarcho|ne|nempe	 r l a|luy le Roy de Dannemarch o  n e
+LRD	le Roy de Dannemarch	H	V5.s032	-3.119	-3.684	-3.335	True	-3.609	-3.672	True	res|rde|celeroydedannemarcho|aume||apr	e  c e le Roy de Dannemarch o  a u
+LRD	le Roy de Dannemarch	H	V11.s053	-3.129	-3.891	-3.409	True	-3.551	-3.755	True	enuerslaleroydedannemarcho|rnson|pr	s  l a|luy le Roy de Dannemarch o  r n
+LRD	le Roy de Dannemarch	H	V12.s058	-2.907	-3.747	-3.446	True	-3.326	-3.749	True	n|prepareleroydedannemarcha|cesta|ua	p a|luy r e le Roy de Dannemarch a  c e
+LRD	le Roy de Dannemarch	H	V26.s150	-2.968	-3.805	-3.129	True	-3.325	-3.657	True	rea||reureleroydedannemarchquel|ue|au	e u r e le Roy de Dannemarch q u e l
+LRD	le Roy de Dannemarch	H	V28.s151	-3.611	-4.043	-3.436	True	-4.256	-4.043	False	rauqsbouleroydedannemarchg|onlepou	s b o u le Roy de Dannemarch g  o n
+LRD	le Roy de Dannemarch	H	V29.s151	-3.21	-3.897	-3.289	True	-3.878	-3.807	False	mnatreco|leroydedannemarcherpashec	e c o  le Roy de Dannemarch e r  p

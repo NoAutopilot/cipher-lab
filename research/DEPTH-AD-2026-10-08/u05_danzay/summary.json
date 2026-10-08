@@ -1,0 +1,45 @@
+{
+ "tokens": 705,
+ "grades": {
+  "H": 546,
+  "M": 85,
+  "U": 74
+ },
+ "hcs": 546,
+ "hcs_pct": 77.4,
+ "primary_run": 13,
+ "primary_run_text": "r e s o l u t i o n  d e s",
+ "secondary_run": 26,
+ "secondary_run_text": "r e u r e le Roy de Dannemarch q u e l",
+ "H_model_bits": 2.584,
+ "R": 2.116,
+ "V": 26,
+ "distinct_cipher_codes": 52,
+ "H_design": 244.4,
+ "H_lib": 432.8,
+ "H_K": 677.3,
+ "unicity": 320.0,
+ "primary_run_m_through": 20,
+ "primary_run_m_through_text": "f o r t d y r u|a e i l e et a t e n u|a e",
+ "AD": 480.0,
+ "AD_R3_4": 298.8,
+ "cipher_clause": false,
+ "cipher_clause_m_through": false,
+ "stat_i_target": 34,
+ "stat_i_p95": 66,
+ "stat_i_max": 107,
+ "stat_i_pass": false,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "shuffle": "all",
+ "cipher_class": "len<=3",
+ "recurring_codes": {
+  "LRD": {
+   "n_occ": 8,
+   "independent_contexts": 8,
+   "contexts_above_p95": 8,
+   "flanks_above_p95": 5
+  }
+ },
+ "wordlist_size": 10228
+}
