@@ -11238,3 +11238,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:54 | LS5-R1e worker | LANE LEDGER hdl release (10 requests: page images 2400px)
 2026-10-08 17:54 | worker LS5-R1c (LANE LEDGER) | LANE LEDGER hdl release (12 requests)
 2026-10-08 17:55 | K8472 worker (acct1) | LANE LEDGER hdl take
+2026-10-08 17:56 | FAM-11106L (Opus worker) | claim: wvo-11106-bergh-1572, homophonic family fr16 (6 seeds) + de16 + la17 + merged-inventory variant; cap 5, box 17:56-19:11 UTC (80% 18:56); for LANE FAMILY (account 2)
