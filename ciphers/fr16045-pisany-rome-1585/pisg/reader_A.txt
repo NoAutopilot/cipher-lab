@@ -1,0 +1,53 @@
+=== head
+[?] [?] [?] (L01 crops show only the top sliver of the page, a large flourish and the tops of letters of the next line; no separate line legible)
+mc sur la dominique a moy d'apres [?] la [?]  (L02 s1; "mc"/"me" start uncertain; "dominique" fairly clear)
+[?]moy d'apres [?] la fres[?] aucun entendre  (L02 s2; "fres..aucun entendre" very doubtful)
+a b(?)c(?) j. Ma[te] pour Crisy allent en [?]fen[?]sion b[?]   (L03 s1; very uncertain)
+allent en [?]fen[?]sion bien[?] et pre[?]nne  (L03 s2; very uncertain)
+[?]m de [?]uomi[?]. t [?]a[?]ffe[?] aeguet et de [?]  (L04 s1; very uncertain)
+[?]a[?] aeguet et de[?]  (L04 s2)
+[?]ap[?]tier [?] la  (L05 s1; very uncertain)
+[?] la [?]auo[?] [?]  (L05 s2; very uncertain)
+=== marginA
+de[?]ligne[?]nm
+[?] my a faict
+f[?] la Con[?] Brucas (?)
+pour[?]putaul[?] on
+2 [?]ruct [?] Cr.
+=== marginB
++ Fort a ffe 83 d
+Carogum de so[?]
+Gllr ressom au d[?]
+a b r[?]s lhe xe pao la
+de de luxembourg
+Mc pomoir
+assermo gurbs
+[?]ec[?]l comm roy,
+nes[?]sp[?]ez et plan d[?]
+Bouts et agant
+tou[?]ouoir ds Cach
+[?]gme[?] [?]aotrollhm
+rewomandas auoyt
+au[?]ff[?] to[?]t G ll[?]
+auoit [?]am G la
+[?]ombrg G loz auoit f
+faire d[?]ll[?]ig le [?]
+[?]uimrao[?] de [?]onmb
+outer la royne
+dauz. [?]uy fron[?]e
+ouri[?] G que fortune
+emoyer biur ll
+po[?] a[?]faze[?] a ss[?]
+de offendre et rewomande
+quir [?]oitter [?] 15 
+fa chair et de faume
+Cer rozeur de [?]
+bouclum roiyaoyo
+[?]o[?]ffer aucte
+[?]bis Mt[?] bioron
+l[?]sport
+[?]ong to[?]b[?]
+[?]nout [?]
+[?]allr a le guer ll
+=== notes
+Overall confidence LOW. The head crops are pale and cut; L01 holds no readable line (the text visible at its bottom edge is the same line as L02). Head lines 2-9 are mostly guesses. Only fragments (la dominique, pour Crisy, de luxembourg, Mc pomoir, la royne, tou[?]ouoir, fortune, offendre et recommande) are moderately reliable. Margin B has ghost show-through of reverse-side text; many abbreviated words and the strip overlaps were handled by dropping repeated lines, but exact line splits near strip joins (Mc pomoir, [?]uimrao, quir [?]oitter, [?]bis Mt[?] bioron) may be off by one. Right-edge cipher/main-text fragments (e.g. 15, 3E, 22) ignored.

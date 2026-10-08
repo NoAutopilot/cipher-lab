@@ -1,0 +1,26 @@
+{
+ "gloss_letters": 617,
+ "copy_letters": 1207,
+ "identity": 0.5511,
+ "per_segment": {
+  "head": [
+   0.463,
+   162
+  ],
+  "marginA": [
+   0.5532,
+   47
+  ],
+  "marginB": [
+   0.5858,
+   408
+  ]
+ },
+ "N1_span_p99": 0.389,
+ "N1_mean": 0.3811,
+ "N2_order_p99": 0.389,
+ "N2_mean": 0.3622,
+ "too_short": false,
+ "G1_witness": true,
+ "G2_agreement_080": false
+}

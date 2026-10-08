@@ -138,3 +138,10 @@ resolution (it put T36 or T31 as top two for 18 of 23 tokens). No token settled 
 | f.275r | 4 x T31->T36 | 0.6471 | 0.6527 | 0.466 | 0.495 | 5/5 (R12A-PISRS) | 0.6502 / 0.6527 (ours = null max; 7.5% reach it) | SUPPORTED |
 Gate unchanged from PIS1-KEY (a); key86.tsv, tx86/tx86e, readings and grades unchanged; T31 tokens stay M. f.244r T36 shape vs copy o conflict (rule 4) stands.
 R12A-PISRS (6 Oct 2026; pisrs/PREREG_t36commit.md): the 4 f.275r labels committed into tx86e (tx86e/apply_t36.py; pre-edit file tx86e/ciphertext_f275r_preT36.tsv), reading regenerated (4 letters m -> s), kp86e grades C 360 -> 364 / M 191 -> 187; f.244r and the 9 UNSETTLED f.275r T31 tokens stay M; key86 unchanged.
+
+## D1A-PISG f.275v head/margin period gloss vs Colbert copy (8 Oct 2026; PREREG-D1A-PISG.md, pisg/pisg_result.json)
+| test | statistic | target | N1 span null p99 | N2 order null p99 | gate | result |
+|---|---|---|---|---|---|---|
+| G1 witness | pooled semi-global identity, 617 gloss letters (1 blind Sonnet read) vs 1207 copy letters | 0.551 | 0.389 | 0.389 | > both p99 | PASS |
+| G2 agreement | same | 0.551 | -- | -- | >= 0.80 | FAIL (one low-confidence reader; reader error and wording difference not separable) |
+No key86 change (running-text gloss, no sign-level value; T40 not covered).
