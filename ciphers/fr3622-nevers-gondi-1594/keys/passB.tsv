@@ -1,0 +1,184 @@
+table	text	code	overbar	conf
+Alphabet	a	06 07 08 09	n	L
+Alphabet	b	34	n	M
+Alphabet	c	33	n	M
+Alphabet	d	32	n	M
+Alphabet	e	72 73 74 75	n	M
+Alphabet	f	30	n	M
+Alphabet	g	31	n	M
+Alphabet	h	29	n	M
+Alphabet	i/j	76 78 79	n	L
+Alphabet	l	20?	n	L
+Alphabet	m	23	n	M
+Alphabet	n	56 58 59	n	L
+Alphabet	o	46 47 49	n	M
+Alphabet	p	24	n	M
+Alphabet	qu	25	n	M
+Alphabet	r	42 43 44 45	n	M
+Alphabet	s	26	n	M
+Alphabet	t	27	n	M
+Alphabet	u	12 13 14 15	n	M
+Alphabet	x	20	n	M
+Alphabet	y	21	n	M
+Alphabet	z	22	n	M
+Nulles	nulles	16 17 18 19 39 40 48 50	n	M
+Noms propres	Pape	21	y	M
+Noms propres	Legat	22	y	M
+Noms propres	Duc de Florence	23	y	M
+Noms propres	Duc de Ferrare	24	y	M
+Noms propres	D: de Mantoue	25	y	M
+Noms propres	Duc de Venize	26	y	M
+Noms propres	de Gennes	27	y	M
+Noms propres	Roy d'Espagne	28	y	M
+Noms propres	Turc	28	y	M
+Noms propres	Duc de Savoye	29	y	M
+Noms propres	?	30	y	M
+Noms propres	D: de Lorraine	31	y	M
+Noms propres	D: de Parme	32	y	M
+Noms propres	Empereur	33	y	M
+Noms propres	Princes d'Allemagne	34	y	M
+Noms propres	Royne d'Angleterre	35	y	M
+Noms propres	Roy	36	y	M
+Noms propres	Royne	37	y	M
+Noms propres	Car de Bourbon	38	y	M
+Noms propres	Car de Lenoncourt	39	y	M
+Noms propres	Car Gondy	40	y	M
+Noms propres	Car de Vienne	41	y	M
+Noms propres	Prince de Conty	42	y	M
+Noms propres	Conte de Soissons	43	y	M
+Noms propres	Mons de Montpencier	44	y	M
+Noms propres	Duc de Nevers	45	y	M
+Noms propres	D: de Longueville	46	y	M
+Noms propres	D: de Mercure	47	y	M
+Noms propres	D: de Guise	48	y	M
+Noms propres	D: de Nemours	49	y	M
+Noms propres	D: de Mayne	50	y	M
+Noms propres	D: d'Aumalle	51	y	M
+Noms propres	D: de Retz	52	y	M
+Noms propres	D: d'Espernon	53	y	M
+Noms propres	Mal de Mont?	54	y	M
+Noms propres	Mal de Biron	55	y	M
+Noms propres	Mal Daumont	56	y	M
+Noms propres	Mal de Matignon	57	y	M
+Noms propres	Mr de Vienne	58	y	M
+Noms propres	Mr de la Guiche	59	y	M
+Noms propres	Mr de Sienne	60	y	M
+Noms propres	Mr de Beaulieu	61	y	M
+Noms propres	Mr Forget	62	y	M
+Noms propres	Mons Revol	63	y	M
+Noms propres	Sorcellier	64	y	M
+Noms propres	Mr de Luxembourg	65	y	M
+Noms propres	Mr de Castillon	66	y	M
+Noms propres	Mr le Vicomte Turenne	67	y	M
+Noms propres	Mr de la Trimouille	68	y	M
+Noms propres	Mr de ?teuille	69	y	M
+Noms propres	Mons de Monteuille(struck)	70	y	M
+Noms propres	Lediguieres	70	y	M
+Noms propres	S Alfonse	71	y	M
+Noms propres	Mr de la Sasche	72	y	M
+Noms propres	Mr de Guyry	73	y	M
+Noms propres	Mr dampierre	74	y	M
+Noms propres	-	75	y	M
+Noms propres	-	76	y	M
+Noms propres	-	77	y	M
+Provinces	Espagne	78	y	M
+Provinces	Angleterre	79	y	M
+Provinces	Flandres	80	y	M
+Provinces	Allemaigne	81	y	M
+Provinces	Italie	82	y	M
+Provinces	Piemont	83	y	M
+Provinces	Savoye	84	y	M
+Provinces	Monferrat	85	y	M
+Provinces	Avignon	86	y	M
+Provinces	Lyonnois	87	y	M
+Provinces	Forest	88	y	M
+Provinces	Champagne	89	y	M
+Provinces	Normandie	90	y	M
+Provinces	Picardie	91	y	M
+Provinces	Bretagne	92	y	M
+Provinces	Poitou	93	y	M
+Provinces	Guienne	94	y	M
+Provinces	Languedoc	95	y	M
+Provinces	Auvergne	96	y	M
+Provinces	Provence	97	y	M
+Provinces	Daulphine	98	y	M
+Provinces	Bourgongne	99	y	M
+Provinces	Nivernois	100	y	M
+Provinces	Bourbonnois	101	y	M
+Provinces	Berry	102	y	M
+Noms generaulx	Francois	1	y	M
+Noms generaulx	Italiens	2	y	M
+Noms generaulx	Suisses	3	y	M
+Noms generaulx	Reistres	4	y	M
+Noms generaulx	Allemans	5	y	M
+Noms generaulx	Anglois	6	y	M
+Noms generaulx	Espagnolz	7	y	M
+Noms generaulx	Enseigne	8	y	M
+Noms generaulx	Lieuten	9	y	M
+Noms generaulx	Capne	10	y	M
+Noms generaulx	Lieuten gnal	11	y	M
+Noms generaulx	Gouverneur	12	y	M
+Noms generaulx	Ambassadeur	13	y	M
+Noms generaulx	Mons	14	y	M
+Noms generaulx	Seig	15	y	M
+Noms generaulx	Baron	16	y	M
+Noms generaulx	Conte	17	y	M
+Noms generaulx	Marquis	18	y	M
+Noms generaulx	Duc	19	y	M
+Noms generaulx	Carl	20	y	M
+Motz	Pour	65	n	M
+Motz	Par	64	n	M
+Motz	Plus	63	n	M
+Motz	paix	62	n	M
+Motz	que	61	n	M
+Motz	qui	60	n	M
+Motz	quant	59	n	M
+Motz	royne	58	n	M
+Motz	recercher	57	n	M
+Motz	suis	56	n	M
+Motz	trefve	55	n	M
+Motz	vous	54	n	M
+Motz	ayme	53	n	M
+Motz	amis	52	n	M
+Motz	avec	51	n	M
+Motz	avoir	50	n	M
+Motz	argent	49	n	M
+Motz	armee	48	n	M
+Motz	home	47	n	M
+Motz	bien	46	n	M
+Motz	car	45	n	M
+Motz	catoliques	44	n	M
+Motz	come	43	n	M
+Motz	deffiance	42	n	M
+Motz	dissimule	41	n	M
+Motz	desespoir	40	n	M
+Motz	demers	39	n	M
+Motz	enuye	38	n	M
+Motz	ennemis	37	n	M
+Motz	entreprise	36	n	M
+Motz	escrit	35	n	M
+Motz	est	34	n	M
+Motz	en	33	n	M
+Motz	est(struck)	32	n	M
+Motz	fait	31	n	M
+Motz	faire	30	n	M
+Motz	fault	29	n	M
+Motz	frere	28	n	M
+Motz	femme	27	n	M
+Motz	fils	26	n	M
+Motz	guerre	25	n	M
+Motz	guarnison	24	n	M
+Motz	Huguenotz	23	n	M
+Motz	Intelligence	22	n	M
+Motz	Jour	21	n	M
+Motz	Je	20	n	M
+Motz	Lre	19	n	M
+Motz	Lon	18	n	M
+Motz	ligne	17	n	M
+Motz	ma	16	n	M
+Motz	mort	15	n	M
+Motz	nouvelles	14	n	M
+Motz	ne	13	n	M
+Motz	nous	12	n	M
+Motz	non	11	n	M
+Motz	na	10	n	M

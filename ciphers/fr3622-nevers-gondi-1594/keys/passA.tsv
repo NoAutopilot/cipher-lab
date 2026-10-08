@@ -1,0 +1,208 @@
+table	text	code	overbar	conf
+alphabet	a	06	n	M
+alphabet	a	07	n	M
+alphabet	a	08	n	M
+alphabet	a	09	n	M
+alphabet	b	34	n	H
+alphabet	c	33	n	H
+alphabet	d	32	n	H
+alphabet	e	72	n	H
+alphabet	e	73	n	H
+alphabet	e	74	n	H
+alphabet	e	75	n	H
+alphabet	f	30	n	H
+alphabet	g	31	n	H
+alphabet	h	29	n	H
+alphabet	i/j	76	n	M
+alphabet	i/j	78	n	M
+alphabet	i/j	79	n	M
+alphabet	l	28	n	M
+alphabet	m	23	n	H
+alphabet	n	56	n	M
+alphabet	n	58	n	M
+alphabet	n	59	n	M
+alphabet	o	46	n	H
+alphabet	o	47	n	H
+alphabet	o	49	n	H
+alphabet	p	24	n	H
+alphabet	gu	25	n	H
+alphabet	r	42	n	H
+alphabet	r	43	n	H
+alphabet	r	44	n	H
+alphabet	r	45	n	H
+alphabet	s	26	n	H
+alphabet	t	27	n	H
+alphabet	u	12	n	H
+alphabet	u	13	n	H
+alphabet	u	14	n	H
+alphabet	u	15	n	H
+alphabet	x	20	n	H
+alphabet	y	21	n	H
+alphabet	z	22	n	H
+nulles	null	16	n	H
+nulles	null	17	n	H
+nulles	null	18	n	H
+nulles	null	19	n	H
+nulles	null	39	n	H
+nulles	null	40	n	H
+nulles	null	48	n	H
+nulles	null	50	n	H
+Noms propres	Pape	~21	y	H
+Noms propres	Legat	~22	y	H
+Noms propres	Duc de florence	~23	y	H
+Noms propres	Duc de ferrare	~24	y	H
+Noms propres	D. de Mantoue	~25	y	H
+Noms propres	Duc de Venize	~26	y	L
+Noms propres	S. de Gennes	~26?	y	L
+Noms propres	Roy d'espagne	~27	y	L
+Noms propres	Turc	~28	y	H
+Noms propres	Duc de savoye	~29	y	H
+Noms propres	D. de lorraine	~30	y	H
+Noms propres	D. de Parme	~32	y	H
+Noms propres	Empereur	~33	y	H
+Noms propres	Princes d'allemagne	~34	y	H
+Noms propres	Royne d'Angleterre	~35	y	H
+Noms propres	Roy	~36	y	H
+Noms propres	Royne	~37	y	H
+Noms propres	Card de Bourbon	~38	y	H
+Noms propres	Card de Lenoncourt	~39	y	H
+Noms propres	Card Gondy	~40	y	H
+Noms propres	Card de Vienne	~41	y	H
+Noms propres	Prince de Conty	~42	y	H
+Noms propres	Conte de Soissons	~43	y	H
+Noms propres	Mons de Montpencier	~44	y	H
+Noms propres	Duc de Nevers	~45	y	H
+Noms propres	D. de longle	~46	y	H
+Noms propres	D. de Mercure	~47	y	H
+Noms propres	D. de Guise	~48	y	H
+Noms propres	D. de Nemours	~49	y	H
+Noms propres	D. de Mayne	~50	y	H
+Noms propres	D. d'Aumalle	~51	y	H
+Noms propres	D. de Retz	~52	y	H
+Noms propres	D. d'espernon	~53	y	H
+Noms propres	Mal de Mont..	~54	y	M
+Noms propres	Mareschal de Biron	~55	y	H
+Noms propres	Mal Daumont	~56	y	H
+Noms propres	Mal de Matignon	~57	y	H
+Noms propres	Mr de Vienne	~58	y	M
+Noms propres	Mr de la Guesle	~59	y	H
+Noms propres	Mr de Sienne	~60	y	M
+Noms propres	Mr de Beaulieu	~61	y	H
+Noms propres	Mr forget	~62	y	H
+Noms propres	Mons Revol	~63	y	H
+Noms propres	Sorcellier	~64	y	H
+Noms propres	Mr de Luxembourg	~65	y	H
+Noms propres	Mr de Castillon	~66	y	H
+Noms propres	Mr le vicomte Turenne	~67	y	H
+Noms propres	Mr de la Trimouille	~68	y	H
+Noms propres	Mr de D'Inteuille (struck)	~69	y	M
+Noms propres	Mons de Monteuille (struck)	~70	y	L
+Noms propres	Ledeguieres	~70	y	H
+Noms propres	s Alfonse	~71	y	H
+Noms propres	Mr de la Sasche	~72	y	H
+Noms propres	Mr de Giury	~73	y	M
+Noms propres	Mr dampierre	~74	y	H
+Noms propres	(blank)	~75	y	H
+Noms propres	(blank)	~76	y	H
+Noms propres	(blank)	~77	y	H
+Provinces	Espagne	~78	y	H
+Provinces	Angleterre	~79	y	H
+Provinces	Flandres	~80	y	H
+Provinces	Allemagne	~81	y	H
+Provinces	Italie	~82	y	H
+Provinces	Piemont	~83	y	H
+Provinces	Savoye	~84	y	H
+Provinces	Monferrat	~85	y	H
+Provinces	Avignon	~86	y	M
+Provinces	Lisimois	~87	y	M
+Provinces	forest	~88	y	H
+Provinces	Champaigne	~89	y	H
+Provinces	Normandie	~90	y	H
+Provinces	Picardie	~91	y	H
+Provinces	Bretagne	~92	y	H
+Provinces	Poitou	~93	y	H
+Provinces	Guienne	~94	y	H
+Provinces	Languedoc	~95	y	H
+Provinces	Auvergne	~96	y	H
+Provinces	Prouance	~97	y	H
+Provinces	daulfine	~98	y	H
+Provinces	Bourgongne	~99	y	H
+Provinces	Nyvernois	~100	y	H
+Provinces	Bourbonnois	~101	y	H
+Provinces	Berry	~102	y	H
+Noms generaulx	francois	~1	y	H
+Noms generaulx	Italiens	~2	y	H
+Noms generaulx	Suisses	~3	y	H
+Noms generaulx	Reistres	~4	y	M
+Noms generaulx	Allemans	~5	y	H
+Noms generaulx	Anglois	~6	y	H
+Noms generaulx	Espagnols	~7	y	H
+Noms generaulx	Enseigne	~8	y	H
+Noms generaulx	lieuten	~9	y	H
+Noms generaulx	capne	~10	y	H
+Noms generaulx	lieuten gnal	~11	y	H
+Noms generaulx	Gouverneur	~12	y	H
+Noms generaulx	Ambassadeur	~13	y	H
+Noms generaulx	Mons	~14	y	H
+Noms generaulx	Seig	~15	y	H
+Noms generaulx	Baron	~16	y	H
+Noms generaulx	Conte	~17	y	H
+Noms generaulx	Marquis	~18	y	H
+Noms generaulx	Duc	~19	y	H
+Noms generaulx	Cardl	~20	y	H
+Mots	Pour	65	n	H
+Mots	Par	64	n	H
+Mots	Plus	63	n	H
+Mots	paix	62	n	H
+Mots	que	61	n	M
+Mots	qui	60	n	M
+Mots	quant	59	n	H
+Mots	royne	58	n	M
+Mots	recerche	57	n	H
+Mots	suis	56	n	H
+Mots	trefve	55	n	H
+Mots	vous	54	n	H
+Mots	ayme	53	n	H
+Mots	amis	52	n	H
+Mots	avec	51	n	H
+Mots	avoir	50	n	H
+Mots	argent	49	n	H
+Mots	armee	48	n	H
+Mots	homme	47	n	M
+Mots	bien	46	n	H
+Mots	car	45	n	H
+Mots	catoliques	44	n	H
+Mots	come	43	n	H
+Mots	deffiance	42	n	H
+Mots	dissimule	41	n	H
+Mots	desespoir	40	n	H
+Mots	demeurt	39	n	M
+Mots	enuye	38	n	H
+Mots	ennemis	37	n	H
+Mots	entreprise	36	n	H
+Mots	escrit	35	n	H
+Mots	est	34	n	H
+Mots	en	33	n	H
+Mots	est(struck)	32	n	H
+Mots	fait	31	n	H
+Mots	faire	30	n	H
+Mots	fault	29	n	H
+Mots	frere	28	n	H
+Mots	femme	27	n	H
+Mots	fils	26	n	H
+Mots	guerre	25	n	H
+Mots	guarnison	24	n	H
+Mots	Huguenots	23	n	M
+Mots	Intelligence	22	n	H
+Mots	Jour	21	n	H
+Mots	Je	20	n	H
+Mots	lettre	19	n	M
+Mots	lon	18	n	M
+Mots	ligne	17	n	H
+Mots	ma	16	n	H
+Mots	mort	15	n	H
+Mots	nouvelles	14	n	H
+Mots	ne	13	n	H
+Mots	nous	12	n	H
+Mots	non	11	n	H
+Mots	na	10	n	H
