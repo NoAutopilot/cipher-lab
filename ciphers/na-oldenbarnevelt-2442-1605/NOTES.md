@@ -1447,6 +1447,41 @@ stretch 7 digits, below the AD), key ours; `--check` exit 0; free solve seed 2 i
 independent key recovery); ~100 tokens eye-checked, agree apart from suggested `f28ss8` (L5_1, "fuesse") and `q24nd7`? (L4a_05,
 "quando"); leaf identity confirmed. D2 for these leaves waits on step (o2). SO-OLDEN-2442-L457 queued.
 
+## 23. OLD-S10, 8 Oct 2026: scan 10 cipher block (ff.63v/64r right page) read with the fixed B/C1 key (step (o1)); status stays open
+
+Brief: `.claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md`, "### OLD-S10" (account 2, LANE FAMILY, 19:19 UTC start by
+date -u). Prereg `transcription/PREREG_OLD-S10.md`, pushed before any blind pass was read.
+
+**Prior work (before the first priced step).** `python3 tools/prior_work.py na-oldenbarnevelt-2442-1605 --item-spec
+'shelfmark=NA 3.01.14 inv. 2442;folio=63v-64r;canvas=10;date=1605-12-23;sender=Juan Gara de Senisteros;recipient=Juan de la Pena'
+--step-type transcribe --fetch` -> exit 4 (LEAD 1-own x2, LOOK 2-leaf, UNCHECKED-NET 3-solver aaymeloglu, UNCHECKED-NET
+4-editions; CLEAR 3-solver bourdeau caches; CONTEXT 3-tomokiyo x2 = Throckmorton/Longlee pages, other letters). Rows answered
+with `--record` (prior-work.tsv). By hand:
+- check 1 (own work): grep NOTES/AUDIT/ROOM for scan 10 / ff.63v-64r -> only OLD-SIBS's "not transcribed by this job" (NOTES
+  section 22) and the (o1) next step; no crops, passes or reading for scan 10 on disk; no other live claim. CLEAR.
+- check 2 (leaf and neighbours): scan 10 already on disk (`images/010_...jpg`, 5000x3667, OLD-SIBS fetch; no NA request this
+  job). Left page (f.63v) eye-read at 1250 px per half: plain Spanish prose (new Abbot, colegio, the writer's fever after Toledo,
+  Pedro de Medrano/Henrique de Guzman, Francisco Garcia), no interlinear or marginal decipherment. Right page (f.64r): eight
+  clear lines then the 23-line cipher block, no gloss over it (one superscript scribal correction "clerigo" over a struck
+  word, line L10). Scans 9 and 11 per OLD-SIBS (9 clear continuation; 11 = f.64v close, signature, postscript, no cipher);
+  scan 8 clear. CLEAR (no gloss or clear copy of this block on the leaf or its neighbours).
+- check 3 (holder, solver repos): NA EAD "merendeels in cijferschrift", no decipherment (AUDIT 1); aaymeloglu and dbourdeau
+  clones grepped by V1-OLD 8 Oct (AUDIT 4b): nothing on inv. 2442. CLEAR (carried, not re-run).
+- check 4 (editions): Lonchay & Cuvelier I (full djvu grep) and Huygens Bescheiden Oldenbarnevelt 1-3 (full text) read at
+  check-solved and AUDIT 4: neither names Senisteros, Pena or the letter. CLEAR (carried, not re-run).
+- NOTES tail duplication (brief's question): the "Verdict: open ... / ## While waiting" tail appears once (Verdict lines at
+  1440 and the single "## While waiting" heading at 1450); not duplicated. Not rewritten.
+
+**Crops.** The block's lines rise about 0.09 px/px to the right; `--deskew` mis-fit two bands around the struck word on L10
+(crops held halves of two lines), so the region was levelled once by a fixed rotation (5.14 deg, PIL bicubic, region
+x 2560-5000, y 1050-3667 of the native scan; blank left margin trimmed) into a scratch image, and the tool cut it:
+```
+python3 ../../tools/iiif_lines.py --image <scratch>/s10_region_rot2.jpg --out images/crops_L10 --prefix L10 --mask-neighbours --debug
+  region 2366x2557, 24 lines, 24 bands x 1 segments; pitch 104
+```
+Overlay checked (`images/crops_L10/L10_lines_debug.jpg`): L01 is the clear line "avs memande Responder en este particular
+luego"; L02-L24 are the 23 lines of the block, one line per crop.
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
