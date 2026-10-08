@@ -3,7 +3,8 @@
 
     python3 vivmous.py           # decode pass A/B, grade, score vs the copy f.105r with value-permutation null + matched control
     python3 vivmous.py --check   # recompute; exit 1 if vivmous_result.json or mousset_decode.txt differ from the committed files
-A published-key check, not a fit: nothing here changes a value. Reuses test1.py's copy folding and tools/stream_align.nw_score.
+D2-VIVX (8 Oct 2026, PREREG-D2-VIVX.md) re-ran it after D4-VIVV's crosswalk fixes; the pre-fix results are kept as
+*_cw1.json / mousset_decode_cw1.txt. A published-key check, not a fit: nothing here changes a value. Reuses test1.py's copy folding and tools/stream_align.nw_score.
 """
 import json, os, sys
 import numpy as np
@@ -26,11 +27,14 @@ def crosswalk():
 
 
 def tokens(seq):
-    """Apply the 'o o' -> d pair rule; returns label tokens."""
+    """Apply the 'o o' -> d pair rule, then (D2-VIVX crosswalk row '1+o') '1' + single 'o' -> x; returns label tokens."""
     out, i = [], 0
     while i < len(seq):
         if seq[i] == 'o' and i + 1 < len(seq) and seq[i + 1] == 'o':
             out.append('oo'); i += 2
+        elif (seq[i] == '1' and i + 1 < len(seq) and seq[i + 1] == 'o'
+              and not (i + 2 < len(seq) and seq[i + 2] == 'o')):
+            out.append('1+o'); i += 2
         else:
             out.append(seq[i]); i += 1
     return out
@@ -155,7 +159,7 @@ def main(check):
     res['control_passes'] = sum(r['verdict'] == 'PASS' for r in res['control'])
     res['verdict'] = ('NON-TEST' if res['control_passes'] < 3 else res['target_A']['verdict'])
     js = json.dumps(res, indent=1, ensure_ascii=False) + '\n'
-    dt = '\n'.join(['# Mousset 1912 key applied to f.101v (D4-VIVMOUS). {a|b} = shape fits two table glyphs; ? = no table glyph.'] + dec_txt) + '\n'
+    dt = '\n'.join(['# Mousset 1912 key applied to f.101v (D4-VIVMOUS; crosswalk as fixed by D2-VIVX, 8 Oct 2026). {a|b} = shape fits two table glyphs; ? = no table glyph.'] + dec_txt) + '\n'
     pj, pd = os.path.join(HERE, 'vivmous_result.json'), os.path.join(HERE, 'mousset_decode.txt')
     if check:
         ok = open(pj).read() == js and open(pd).read() == dt

@@ -1,0 +1,76 @@
+{
+ "plain_letters": 1284,
+ "grades": {
+  "H": 328,
+  "M": 837,
+  "I": 280
+ },
+ "target_A": {
+  "n_dec": 1133,
+  "W": 1284,
+  "real": 0.4537,
+  "null_p99": 0.3998,
+  "null_mean": 0.3218,
+  "verdict": "PASS",
+  "n_tokens": 1293,
+  "tokens_one": 798,
+  "tokens_multi": 261,
+  "tokens_none": 234
+ },
+ "target_B": {
+  "n_dec": 1125,
+  "W": 1284,
+  "real": 0.4196,
+  "null_p99": 0.4045,
+  "null_mean": 0.3127,
+  "verdict": "PASS",
+  "n_tokens": 1257,
+  "tokens_one": 671,
+  "tokens_multi": 352,
+  "tokens_none": 234
+ },
+ "control": [
+  {
+   "n_dec": 1143,
+   "W": 1284,
+   "real": 0.6369,
+   "null_p99": 0.3955,
+   "null_mean": 0.3242,
+   "verdict": "PASS"
+  },
+  {
+   "n_dec": 1122,
+   "W": 1284,
+   "real": 0.6524,
+   "null_p99": 0.3859,
+   "null_mean": 0.3151,
+   "verdict": "PASS"
+  },
+  {
+   "n_dec": 1162,
+   "W": 1284,
+   "real": 0.6386,
+   "null_p99": 0.3847,
+   "null_mean": 0.3178,
+   "verdict": "PASS"
+  },
+  {
+   "n_dec": 1105,
+   "W": 1284,
+   "real": 0.6462,
+   "null_p99": 0.3846,
+   "null_mean": 0.3213,
+   "verdict": "PASS"
+  },
+  {
+   "n_dec": 1130,
+   "W": 1284,
+   "real": 0.6345,
+   "null_p99": 0.3832,
+   "null_mean": 0.3171,
+   "verdict": "PASS"
+  }
+ ],
+ "control_passes": 5,
+ "verdict": "PASS"
+}
