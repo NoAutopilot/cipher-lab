@@ -269,3 +269,10 @@ Sardinia" (the gloss's "cette isle" beside Lomellini is most likely Tabarka, per
     unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 9; legacy ungraded: 0
 
 (Paget rows: N0, so not counted as a unique solve; no error or warning names this folder.)
+
+## A2-5. Propagation after D1A-PAGV (8 Oct 2026, 06:37 UTC by date -u; rule 10, verifier session D1A-PAGV, account 1)
+- Reading revised: one token, f66R 169 (code 2), "pr" M -> "2" I (exceptions.tsv), on image evidence (barred numeral under the gloss's
+  "deux", as at f65R 55). Counts now H 50, S 72, M 369, I 8, U 6 of 505; firm (H+S) unchanged at 122, so the depth basis (firm share) and
+  the N-class are unchanged: N0, D1 as in A2-3. The run 221 46 2 185's two glosses ("ses 2 oncles" f65R / "ces deux Princes" f66R) are a
+  gloss variant by sense, not a code conflict (NOTES.md "D1A-PAGV", HYPOTHESES.md). No SECOND-OPINIONS-QUEUE row exists for this target
+  (N0), so nothing else to carry.

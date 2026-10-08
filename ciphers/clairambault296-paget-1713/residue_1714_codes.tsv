@@ -1,5 +1,5 @@
 code	n_tokens	n_glossed	n_unglossed	letters	key_value	key_grade	token_grades	read_as(value:n; exc=exceptions.tsv image/settle ruling)	status	positions(*=unglossed)
-2	3	1	2	L2	pr	M	I2 M1	2(exc):2 pr:1	weak	f65R:55* f66L:290* f66R:169
+2	3	1	2	L2	pr	M	I3	2(exc):3	weak	f65R:55* f66L:290* f66R:169
 4	1	0	1	L2	OPEN	-	U1	?:1	OPEN	f66L:170*
 19	1	0	1	L2	OPEN	-	U1	?:1	OPEN	f66L:171*
 20	2	2	0	L1,L2	ui	M	M2	sa(exc):1 ui:1	weak	f65L:44 f66L:189

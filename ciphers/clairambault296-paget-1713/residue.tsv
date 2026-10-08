@@ -1,7 +1,7 @@
 code	occurrences	status	key_value	letter	leaf:pos	gloss_own	read_as	prev2_codes[key]	next2_codes[key]
 2	3	weak	pr	L2	f65R:55	unglossed	2	221[se] 46[s]	185[on] 37[OPEN]
 2	3	weak	pr	L2	f66L:290	unglossed	2	220[sa] 97[en]	177[nop] 77[q]
-2	3	weak	pr	L2	f66R:169	gloss	pr	221[se] 46[s]	185[on] 32[c]
+2	3	weak	pr	L2	f66R:169	gloss	2	221[se] 46[s]	185[on] 32[c]
 4	1	OPEN	OPEN	L2	f66L:170	unglossed	?	233[te] 400[OPEN]	19[OPEN] 600[OPEN]
 19	1	OPEN	OPEN	L2	f66L:171	unglossed	?	400[OPEN] 4[OPEN]	600[OPEN] 155[ma]
 20	2	weak	ui	L1	f65L:44	gloss	ui	45[r] 77[q]	222[OPEN] 191[e]

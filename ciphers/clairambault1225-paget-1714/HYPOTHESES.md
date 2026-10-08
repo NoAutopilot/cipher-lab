@@ -57,3 +57,10 @@ Control (shuffled rows) not run: the target failed step 2, so the control could 
 even spread): 49/122 = 0.402. Reason: the gloss is written as running text starting at the margin or line start at hand width,
 not over its groups. Instrument FAILs on this document (premise false here), not a statement about the codes' values.
 Measurements align/spatial_pilot.tsv; NOTES.md "B0709-A2".
+
+## D1A-PAGV (8 Oct 2026): run 221 46 2 185, two glosses -- ruled a gloss variant, not a data conflict
+Witnesses (one decipherer's hand, Letter 2, 28 Aug 1714, Paget to the minister): f65R P18 gloss "ses 2. oncles" over 221 46 2 185;
+f66R P46 gloss "de [ses struck, 'ce' over] deux Princes qui" over 87 221 46 2 185 32 146. Codes identical on both images (f66R:167 is 221,
+not pass B's 201). Both glosses agree on 221 46 = ses (f66R before correction) and barred 2 = the numeral two; 185 32 146 on f66R key-read
+on c le = "oncle(s)", so the cipher says "oncles" in both places and "Princes" is a sense gloss for the same two Farnese uncles. No code
+value has two disagreeing H witnesses. Effect: f66R 169 read as numeral 2 (grade I, exceptions.tsv); no key.tsv change. NOTES.md "D1A-PAGV".

@@ -1465,3 +1465,47 @@ Read so far: token level H 50, S 72, M 370, I 7, U 6 of 505 (firm 122), unchange
 - [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA)
 - [x] retry: tools/decode_key.py --check exit 0; fresh-session re-derivation SAME twice (RUN6-PAGETR7, D2-PAGR7), 0 tokens differ
 Verdict: parked: every gap has an outside blocker
+
+## D1A-PAGV (8 Oct 2026, 06:31-06:37 UTC by date -u, account 1, verifier): run 221 46 2 185 glossed two ways
+Brief: D1A-PAG (clairambault296-paget-1713 NOTES.md, D1A-PAG section) saw the run 221 46 2 185 at f65R:53-56 and f66R:167-170 with
+two different gloss chunks. Checked both on crops cut from images/f65R.jpg and images/f66R.jpg (the folder's 1700-px half-leaves, 2x
+Lanczos; crops kept as imgcheck/pagv_f65R_P18.jpg, pagv_f66R_P46_gloss.jpg, pagv_f66R_P46_codes.jpg). 0 network requests, no subagent.
+
+Image reads (by eye, this session):
+- f65R (P18): codes "198. 46. 221. 87. 201. 156. 52. 221. 46. 2. 185. -", the 2 carrying a bar; gloss "...Princesse de Parme et ses 2. oncles".
+- f66R (P46): codes "147. 32. 47. le 30. 89. 212. 34. 87. 221. 46. 2. 185. 32. 146.", the 2 again barred; the first code of the run is
+  plainly 221 (pass B's 201 at f66R:167 is a misread; ciphertext.tsv already holds 221, pass A). Gloss "lie et adorée de ses deux
+  Princes qui" with "ses" struck through and a short superscript (read "ce", i.e. "ces") written over it -- the struck word passA_context
+  item 5 noted as illegible. So the decipherer first wrote "ses" here too.
+
+Ruling: **gloss variant, not a transcription error and not a code conflict.** The codes are the same in both places on the image. Both
+glosses put "ses" over 221 46 (f66R before its correction) and a numeral two over the barred 2 ("2." / "deux"). They differ only on the
+noun: f65R "oncles" over 185; f66R "Princes" over 185 32 146, where the keyed values read on (185, H) + c (32, S) + le (146, S), i.e. the
+cipher on f66R spells "oncle(s)" as on f65R. The decipherer glossed f66R by sense: the two uncles are the princes the same leaf names
+("le Prince Antoine de Parme", "frere du Duc de Parme"). The tokens' align chunks on f66R (87 ses, 221 de, 46 ux, 2 pr, 185 in, 32 ces,
+146 qui) are shifted one chunk against the cipher because the gloss is a paraphrase; f65R's chunks (221 se, 46 s, 185 on) stand.
+No second H witness disagrees on any code value, so rule 4's data-conflict clause does not apply; logged in HYPOTHESES.md for the record.
+
+Change (image evidence): exceptions.tsv adds f66R 169 `2` grade I (the barred numeral under the gloss's "deux"), the same treatment as
+f65R 55 and f66L 290; before it the token read "pr" (M), from the shifted chunk. `tools/decode_key.py . --check`: "tokens 505: H 50,
+I 8, M 369, S 72, U 6 / reading up to date" (was I 7, M 370). key.tsv untouched: its row "2 pr M single attestation" now has no token
+read that way (all three code-2 tokens are exceptions); make_key.py/build_votes.py --check were already exit 1 before this change
+(exceptions.tsv carries hand rulings they do not regenerate) and are unchanged in kind. reconcile.py --check and build_pairs.py --check
+exit 0. Sister clairambault296-paget-1713 residue_1714.py re-run (it reads this folder's tokens): code 2 row now "I3", --check up to date.
+No other token's value or grade changed; 185/32/146 on f66R stay M/S as they were.
+
+## Remaining gaps (D1A-PAGV, 8 Oct 2026)
+Read so far: token level H 50, S 72, M 369, I 8, U 6 of 505 (firm 122), tools/decode_key.py --check 8 Oct 2026 after the D1A-PAGV f66R 169 numeral ruling; 99.2% of tokens lie under a period interlinear gloss read off the images on disk
+- Code-level values for the 369 M tokens (mostly single-attestation codes) - blocker: waiting-on LOCAL-QUEUE L11 (the Marine B7 original); five instruments run on this folder's material: four text-segmentation instruments [retired] (tools/interlinear_align.py, tools/gibbs_align.py, the firm-neighbour pin, multi-seed settle7) and spatial gloss-over-group alignment FAILed its known-answer gate (B0709-A2, align/PREREG_spatial.md, 3/31 vs 0.80); a second witness of the same text is the only known route
+- f66L 169-172 '400 4 19 600', 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg, none of the four codes recurs under a gloss; the Marine B7 original waits on LOCAL-QUEUE L11
+- f61L, one solid-inked cipher group - blocker: illegible; hand-marked ILLEGIBLE in both passes, its gloss ("on verra quelques personnes a Genes") is read, its code is not; the only other witness is the Marine B7 original (LOCAL-QUEUE L11)
+
+## Escalation (D1A-PAGV, 8 Oct 2026)
+- [x] siblings: neighbouring leaves f55-f59, f67, f70, f75 opened (OX-PAG); the Paget 1713 sibling is another target's row; no internal sibling step left in this folder
+- [x] clear-pages: no separate clear copy; the interlinear decipherment on the images covers 501 of 505 tokens and is used in full
+- [x] known-keys: KEY-CROSSMATCH.tsv 45 rows, 28 none, 9 unusable-key, 8 no_corpus; no French Marine or consular key 1700-1729 on file
+- [x] print: tools/print_check.py on 16 gloss phrases and 5 keyword sources (A2-PAG, 2 Oct 2026); nothing printed located
+- [retired] key-rebuild: four text-segmentation instruments retired under rule 3 (interlinear_align, gibbs_align, pin, multi-seed settle7) and the fifth, spatial gloss-over-group alignment, FAILed its pre-registered known-answer gate (B0709-A2, 3/31 firm, bound 0.745 < 0.80); no untried instrument known; reopens with new material (LOCAL-QUEUE L11) or a named different instrument
+- [x] image-check: 81 line crops, 14 blind passes plus reconciliation (A2-PAG2) and the f66L gutter strip (A2-PAG3), all on disk; P23 gloss "nee" corrected from the leaf (A3V3-PAGA); run 221 46 2 185 checked on both leaves (D1A-PAGV): gloss variant, f66R 169 numeral
+- [x] retry: tools/decode_key.py --check exit 0; fresh-session re-derivation SAME twice (RUN6-PAGETR7, D2-PAGR7), 0 tokens differ
+Verdict: parked: every gap has an outside blocker

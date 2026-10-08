@@ -58,3 +58,4 @@ f66R	285	ni	S	N4-PAG65 ruling: code 176, RUN2-PAG demotion lifted once 116 = ge 
 f66L	276	ri	S	N4-PAG213 ruling: code 213, own Gibbs chunk = per-letter run value, gloss "son Mari epousa" admits it after 155 ma (H) with the word ending at "Mari" (align/settle7_rulings.tsv)
 f66L	143	mo	S	N4-PAG126 ruling: code 158, own Gibbs chunk = code value, gloss "modeste" admits it at the word start before 87 de (H) (align/settle7_rulings.tsv)
 f66L	48	mo	S	A3V3-PAGR ruling (settle7.py rule, re-run after the P23 gloss fix "ne" -> "nee"): code 158, own Gibbs chunk mo = per-letter run value (10/10 seeds; was mils 10/10 on the misread gloss), gloss "nee le meme mois" (align/settle7_rulings.tsv)
+f66R	169	2	I	cipher numeral repeating the gloss's own "deux" (P46); barred 2 like f65R 55, image-checked D1A-PAGV 8 Oct 2026
