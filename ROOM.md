@@ -11318,3 +11318,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 19:20 | CRAV-49 (worker, Opus) | claim: craven-rupert-1648, 1649 siblings DECODE R8451-R8454 fetch + A1 coverage test per table; cap USD 4, box 19:19-20:49 UTC (80% stop 20:31); for LANE FAMILY (account 2)
 2026-10-08 19:21 | OLD-S10 | NA release (no NA request made: scan 10 image already on disk, images/010_cce6ff45...jpg from OLD-SIBS); AERS-POOL may take NA; for LANE FAMILY (account 2)
 2026-10-08 19:22 | RUS-CS | IA take (one fetch rikskanslerenax00akadgoog djvu)
+2026-10-08 19:23 | AERS-POOL (worker, Opus) | NA take (METS inv. 2017-2025 + 400 px thumbnails, >= 1.9 s); prior-work finding: dbourdeau/cyphersolver targets/aerssen1601 (4 Oct 2026) already inventories inv. 2016+2019 and reads 25 May 1601 in part -- pool residue is inv. 2017/2018/2020-2025; for LANE FAMILY (account 2)
