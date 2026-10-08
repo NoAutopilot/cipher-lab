@@ -6074,9 +6074,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V7)'"
+        "AUDIT.md '## AUDIT (LS-V7)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-H)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 86.8,
@@ -6092,7 +6093,7 @@
       "title": "Eckert 1864-65: the Quartermaster General's office to Van Vliet, New York, 3 Jan 1865, steamers for 1,000 construction-corps men to Savannah and 4,000 troops from Baltimore (E66)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (Army and Navy, by date and correspondent), Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; weak N3: Van Vliet's two replies of 3 Jan 1865 are printed (OR I/46 pt 2 p.28), this question is not located; 'Waymomers' unread; SO-ECKERT-E66 queued",
+      "gap": "OR ser. III vols. 4-5 (not on IA; HathiTrust/HTRC unreachable), NARA RG 92/107/77/156, the Huntington Sent volume page by page, the remaining Chronicling America pages and HathiTrust full text unread, JSTOR rows pending, so not N4; two audits (LS-V7, AUD2-LS-H); weak N3: Van Vliet's replies (OR I/46 pt 2 p.28) and both movements as events (Sherman to Grant 16 Jan 1865, OR I/47 pt 2 pp.59-60; McCallum to Sherman 29 Dec 1864, OR I/44 p.834) are printed, this request is not located; 'Waymomers' unread; SO-ECKERT-E66 queued",
       "phrases": [
         "Huntington mssEC 19 p.257, pointer 9151, E66"
       ],
@@ -6115,9 +6116,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V7)'"
+        "AUDIT.md '## AUDIT (LS-V7)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-H)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 88.9,
@@ -6133,7 +6135,7 @@
       "title": "Eckert 1864: Stanton via Capt. Bruch, Louisville, to Burbridge, 7 Aug 1864, hear Surgeon Ferry's statement and send him to Washington under guard (E68)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (Army and Navy, by date and correspondent), Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; 'Jones' unread; SO-ECKERT-E68 queued",
+      "gap": "OR ser. III vols. 4-5 (not on IA; HathiTrust/HTRC unreachable), NARA RG 92/107/77/156, the Huntington Sent volume page by page, the remaining Chronicling America pages and HathiTrust full text unread, JSTOR rows pending, so not N4; two audits (LS-V7, AUD2-LS-H); Surgeon Ferry unidentified in OR I/38 pt 5, I/39 pt 2, II/7 and the Aug-Sept 1864 press; 'Jones' unread; SO-ECKERT-E68 queued",
       "phrases": [
         "Huntington mssEC 19 p.146, pointer 9039, E68"
       ],
@@ -6156,9 +6158,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V7)'"
+        "AUDIT.md '## AUDIT (LS-V7)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-H)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 91.7,
@@ -6172,9 +6175,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: the Chief of Ordnance to St Louis, 16 Jun 1864, Callender to issue four 12-pounder howitzers and 400 rounds to Carrington at Indianapolis (E70)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (Army and Navy, by date and correspondent), Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; the Mereness Calendar not searched inside; SO-ECKERT-E70 queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book; the order's substance is in Ramsay's same-day telegram to Carrington (Huntington, War Department telegrams sent, p.94, pointer 9760), no prior decipherment of this entry located (two audits, 8 Oct 2026).",
+      "gap": "N2 (lowered by AUD2-LS-H 8 Oct 2026): Ramsay's same-hour telegram to Carrington ('I have ordered to be sent you from St Louis Arsenal with quick dispatch and by special messenger four mountain howitzers complete with four hundred rounds of ammunition') is in clear in the Huntington's public transcription of the Sent book p.94; not counted as a solve; SO-ECKERT-E70 withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.93, pointer 8985, E70"
       ],
@@ -6191,7 +6194,8 @@
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V7)' section 5",
       "depth_sentence": "On 16 Jun 1864 the Chief of Ordnance orders Major Callender, commanding the St Louis arsenal, to issue at once to General Carrington at Indianapolis four 12-pounder howitzers with implements and equipments complete and 400 rounds of assorted ammunition, 100 of them canister, sent by a special messenger, and to report the issue by telegraph.",
       "depth_check": "fresh rule-7 re-derivation (LS-V7); image checked, all 10 lines (LS-V7); external: Callender at the St Louis arsenal and Carrington at Indianapolis in OR I/39 pt 2",
-      "depth_note": "11 H + 1 I of 12 code words"
+      "depth_note": "11 H + 1 I of 12 code words",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
@@ -6237,9 +6241,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V7)'"
+        "AUDIT.md '## AUDIT (LS-V7)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-H)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -6255,7 +6260,7 @@
       "title": "Eckert 1864: Benham to Humphreys, 16 Mar 1864, the advance bridge train of canvas pontoons ready (N2-BN, Cipher No. 2)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I vol. 33 by date and correspondent), the 1864 press, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; weak N3: Humphreys' order of 29 Feb 1864 that this answers is printed (OR I/33 pp.616-617), the report itself is not located; SO-ECKERT-N2BN queued",
+      "gap": "OR ser. III vols. 4-5 (not on IA; HathiTrust/HTRC unreachable), NARA RG 92/107/77/156, the Huntington Sent volume page by page, the remaining Chronicling America pages and HathiTrust full text unread, JSTOR rows pending, so not N4; two audits (LS-V7, AUD2-LS-H); weak N3: the order it answers is printed (Humphreys to Benham 29 Feb 1864, OR I/33 pp.616-617); SO-ECKERT-N2BN queued",
       "phrases": [
         "Huntington mssEC 19 p.22, pointer 8914, N2-BN"
       ],
