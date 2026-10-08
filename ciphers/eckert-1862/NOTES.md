@@ -2289,3 +2289,54 @@ no1 6/10, no2 8/10, no9 0/10, mssEC15 0/10 reads by this rule. Gate: a target ve
 control reached >= 7/10 (today only no2); a "no book reads it" verdict is conditional: for no9 and mssEC15 (small books whose words are mostly
 a subset of no1/no2, so the strict-share condition cannot hold even for their own entries) and for no1 (6/10) the instrument is below its gate,
 so a negative for those three is "untested by this instrument", not a negative. No further retuning of the statistic (rule 3, third-attempt clause).
+
+### K8472 results (run 17:5x-18:1x UTC; scoring after the pre-registration commit 76d30fd8)
+Prior-work lines continued: check 2 (leaf/neighbours): the volunteer text of the 52 fetched pages and 14 neighbours shows no interlinear or marginal
+decipherment and no clear copy (only the clerk's `period`/`applause` plain filler words); images not looked at (text route, rule 2: every verdict
+below is conditional on the volunteers' transcription). Check 3: the holder's transcription is the input; Tomokiyo's cached pages
+(sources/cryptiana/web, `mssEC 16`, `mssEC 22`, `Cipher Messages sent`) and the solver-diff tables: no hit on either ledger. Check 4 (editions): not run,
+no entry was read or decoded (brief: no reading beyond the test) -- "unchecked", not clear.
+Requests, hdl.huntington.org: 3 compound lists + 52 page texts + 14 neighbour texts = 69, 1.6-1.8 s apart, one token block each (take 17:55, release
+17:57; second take 17:58 and release 18:0x for the 9660 comparison). Pages: obj8472/p*.json (25 spread over 405 pp.), obj6254/p*.json (25 over 301 pp.),
+obj9660/ (2). Entries: obj<N>/entries.txt (10 each, k8472_select.py: >= 8 code-shaped words, best per stratum), scores: obj<N>/scores.tsv.
+
+Test (shares = recognised tokens / non-function tokens, mean over 10; clauses beat both shuffled copies of the same book):
+| ledger | no1 | no2 | no9 | mssEC15 | entries passing (need 7) |
+|---|---|---|---|---|---|
+| 8472 (mssEC 16, Aug 1862-Jan 1864) | 0.300 | 0.314 | 0.120 | 0.025 | no1 1, no2 1, no9 0, mssEC15 0 |
+| 6254 (mssEC 22, AoP HQ Aug 1862-Apr 1863) | 0.248 | 0.243 | 0.081 | 0.015 | no1 0, no2 1, no9 0, mssEC15 0 |
+Matched control (same code, leave-one-out, true book): mean true-book share no1 0.542, no2 0.618; passes no1 6/10, no2 8/10, no9 0/10, mssEC15 0/10.
+Both ledgers' best shares (0.31, 0.25) sit far below the control's true-book shares for the two books that could read at all; no1 and no2 tie on
+share within 0.01-0.02 (they share the Stager template words), which is what a book that reads neither looks like and also what a thin vocabulary
+overlap looks like.
+
+**Verdict, pre-registered rule: no book in hand reads object 8472 or object 6254.** What the control licenses: for no2 the negative is control-backed
+(8/10 on its own entries, 1/10 on each target); for no1 (control 6/10, below gate), no9 and mssEC15 (control 0/10) the instrument cannot read them even when
+they are the true book, so for those three the result is "untested by this instrument", not a negative (rule 3). Ledger-level conclusion stays
+conditional on the volunteer transcriptions and on 10 selected, vocabulary-rich entries per ledger. By the 1862 NOTES (section 5) the book needed is the
+filled-in book of the Aug 1862-1863 period; none is in hand (Huntington cipher-book search: mssEC 41-46 No.1, 47-48 No.2, 56 No.5, 67 No.9; see
+Remaining gaps).
+
+**Object 9660 vs 8472: not a duplicate copy, on the two dates compared.** 9660 p.35 (pointer 9343) opens 30 Aug 1862 10.10 AM (`For Axis All of
+Berkshires Corps ...`) and 31 Aug 2.30 PM (Stager to Campbell, Michigan Southern, "General director of United States Military Rail Roads"); 8472 has
+pp.28-29 (pointers 8098-8099) going from 25 Aug straight to 1 Sept, no 30-31 Aug entries, and the Campbell telegram is in none of the 8472 pages 8094-8103 (grep).
+9660 p.195 (pointer 9503) carries 8 July 1863 12.30 PM `For Anna ... enemy is crossing at Williamsport` and 1.45 PM `For Bengal Oakum`; 8472 pp.248-250
+(pointers 8318-8320) for 8 July hold different entries (11 AM Harrisburg, Baldwin Balto, 4.30 PM Caldwell/A of P) and not these two. The two books overlap in
+period and share the form but not the entries sampled: 9660 is a second ledger (it records the 30 Aug-31 Aug and 8 Jul entries that 8472 lacks) to be tested
+on its own, not skipped as a copy. Not found: any entry text common to both; two dates only.
+
+## Remaining gaps (K8472, 8 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); K8472 read no entry of objects 8472/6254/9660 (book test only, 20 entries scored, none decoded for reading).
+- object 8472 (mssEC 16) entries - blocker: no-key-material; the book of the Aug 1862-Jan 1864 period is not in hand (no book reads it, no2 negative control-backed)
+- object 6254 (mssEC 22) entries - blocker: no-key-material; same
+- object 9660 (357 pp., 30 Aug 1862 and 8 Jul 1863 entries absent from 8472) - blocker: not-attempted; only two dates compared, no entry of 9660 scored; next: the same 10-entry test with entries picked from 9660's own pages, ~$0.5
+
+## Escalation (K8472)
+- [x] siblings: 9660 vs 8472 compared on two dates (different entries)
+- [x] clear-pages: no clear copy or gloss in the volunteer text of the 66 pages read
+- [ ] known-keys: a filled-in book of the Aug 1862-1863 period (Tomokiyo's concordance lists No. 3/4/7/12 outside Huntington's mssEC 41-67 set); next: Cipher No. 4 copy (Friedman Collection) from a desk browser, ~$1
+- [n/a] print: no entry was decoded
+- [n/a] key-rebuild: no reading; a rebuild from OR matches needs the entries' counterparts, not started
+- [ ] image-check: the test used volunteer text only; next: 3 page images per ledger if a book is found
+- [n/a] retry: no failed attempt
+Verdict: keep going: 1 internal gap; cheapest next: the 10-entry book test on 9660's own pages, ~$0.5 (8472 and 6254 wait on a book not in hand; known-keys and image-check steps open).
