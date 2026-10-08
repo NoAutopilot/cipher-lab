@@ -378,3 +378,4 @@ V1-G3E	account-3	.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md	Opus 5.5	7
 G3-FR3416	account-4	.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md	Opus 5.5	2.5	35	done 2026-10-08 17:42	2026-10-08 17:1x	G3 check fr3416-nevers-fils-1589 f.35r (N4); re-addressed from LANE-VERIFY-1 (account-3 read and audited it); for acct3-orchestrator
 V1-LS4B	account-3	.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md	Opus 5.5	8	80	done 2026-10-08 17:46	2026-10-08 17:3x	second audits eckert-1864 E96 E97 E100 (first audit FV-LS4-R1b, account 2; reader account 1); LANE-VERIFY-1
 DEFAULT-account-1-20261008-1740	account-1	.claude/briefs/lane-ledger.md	Opus 5.5	60	600	claimed session_01BhFrvFs46QaEbT8aTNPN8V 2026-10-08 17:40	2026-10-08 17:40	auto-fill: blast 1 of 1 until 2026-10-10 18:00
+DEFAULT-account-4-20261008-1748	account-4	.claude/briefs/lane-depth.md	Opus 5.5	60	600	queued	2026-10-08 17:48	auto-fill: blast 1 of 1 until 2026-10-10 18:00

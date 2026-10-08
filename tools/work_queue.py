@@ -27,10 +27,10 @@ A was asked (tests tools/tests/test_work_queue.py). --next without --account nev
 Blast mode (owner, 8 Oct 2026: "5 - 8 running on all accts, with refills"). A BLAST-<A> row (status `active <UTC>`, note
 `lanes=N until=YYYY-MM-DD HH:MM [brief=PATH]`, written by `--blast A --lanes N --until "..." [--brief PATH]`, ended by
 `--unblast A`; brief= names the standing lane brief the refill rows use, default .claude/briefs/default-lane.md) changes rules (2), (3)
-and (5) for account A while `until` is in the future: auto-fill adds a DEFAULT row whenever fewer than N lane rows are open
+and (5) for account A while `until` is in the future (and rule (1) only for queued LANE rows: queued single jobs
+such as AUD2 audits no longer hold the lane refill -- 8 Oct 2026, account 4's lane never started behind them): auto-fill adds a DEFAULT row whenever fewer than N lane rows are open
 (a lane here is LANE-*, DEFAULT-*, or any claimed row with box_min >= 240, i.e. a named lane-orchestrator row), the
-after-close wait is 15 min instead of 60, and the 12-h DEFAULT hold does not apply. Rules (1) and (4) still hold: a queued row
-is spawned first and PAUSE wins. Catches: an account idling for hours between lanes while the owner wants it full. Must NOT
+after-close wait is 15 min instead of 60, and the 12-h DEFAULT hold does not apply. Rule (4) still holds: PAUSE wins. Catches: an account idling for hours between lanes while the owner wants it full. Must NOT
 fill: N lanes already open, a queued row exists, PAUSE set, BLAST expired (then the normal rules return), another account's
 BLAST row (tests tools/tests/test_work_queue.py). Each lane runs ~6 live workers (default-lane.md), so N=1 is ~7 sessions.
 Every write is whole-file read-modify-write; rows are never deleted, only their status cell changes.
@@ -70,9 +70,10 @@ def autofill(rows, account, t=None):
     """Return the DEFAULT row to append for `account`, or None with the reason; never mutates rows."""
     t = t or datetime.datetime.utcnow(); A = canon(account)
     mine = [r for r in rows if canon(r["account"]) == A]
-    if any(r["status"].startswith("queued") for r in mine): return None, "queued row exists"
     if any(r["job_id"] == "PAUSE-" + A and r["status"].startswith("paused") for r in mine): return None, "paused"
     b = blast(mine, A, t)
+    if b and any(r["status"].startswith("queued") and is_lane_wide(r) for r in mine): return None, "queued row exists"
+    if not b and any(r["status"].startswith("queued") for r in mine): return None, "queued row exists"
     if b:
         n, until, bbrief = b; open_n = 0; last = None
         for r in mine:

@@ -141,9 +141,11 @@ def test_blast_skips_12h_hold_but_waits_15_min_after_close():
     assert w.autofill(rows, 'account-1', T)[1] == 'filled'
 
 
-def test_blast_never_overrides_queued_or_pause():
-    rows = [_blast(), row('J', 'account-1', 'queued')]
+def test_blast_never_overrides_queued_lane_or_pause():
+    rows = [_blast(), row('LANE-Q', 'account-1', 'queued')]
     assert w.autofill(rows, 'account-1', T) == (None, 'queued row exists')
+    rows = [_blast(), row('AUD2-X', 'account-1', 'queued', box='95')]
+    assert w.autofill(rows, 'account-1', T)[1] == 'filled'  # a queued single job does not hold the lane refill
     p = row('PAUSE-account-1', 'account-1', 'paused 2026-10-05 12:00'); p['brief'] = '-'
     assert w.autofill([_blast(), p], 'account-1', T) == (None, 'paused')
 
