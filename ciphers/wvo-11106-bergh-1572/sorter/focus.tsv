@@ -1,0 +1,65 @@
+sid	question
+L01_01_004	L01:4: A read s, B read -: which sign?
+L01_01_006	L01:7: A read dd, B read d: which sign?
+L01_01_009	L01:9: A read g, B read -: which sign?
+L01_01_013	L01:13: A read z, B read 2: which sign? (box holds two signs: cut it first)
+L01_01_015	L01:15: A read dd, B read d: which sign?
+L01_01_022	L01:21: A read n, B read -: which sign?
+L02_01_015	L02:14: A read -, B read y~: which sign? (box holds two signs: cut it first)
+L02_01_019	L02:20: A read -, B read l: which sign? (box holds two signs: cut it first)
+L03_01_016	L03:11: A read s, B read 5: which sign? (box holds two signs: cut it first)
+L03_01_021	L03:17: A read s, B read S: which sign?
+L03_01_043	L03:40: A read n, B read u: which sign? (box holds two signs: cut it first)
+L04_01_007	L04:5: A read s, B read S: which sign?
+L04_01_013	L04:11: A read s, B read l: which sign?
+L04_01_016	L04:14: A read G, B read g: which sign?
+L04_01_030	L04:29: A read s, B read S: which sign?
+L04_01_032	L04:31: A read d, B read -: which sign?
+L04_01_037	L04:35: A read n, B read u: which sign?
+L05_01_039	L05:30: A read yx, B read y: which sign?
+L06_01_006	L06:3: A read yx, B read y: which sign? (box holds two signs: cut it first)
+L06_01_034	L06:25: A read d, B read dd: which sign?
+L06_01_039	L06:32: A read G, B read g: which sign?
+L08_01_037	L08:28: A read -, B read k~: which sign?
+L08_01_043	L08:37: A read g, B read 9: which sign?
+L09_01_004	L09:4: A read d, B read dd: which sign?
+L09_01_020	L09:19: A read g, B read e: which sign?
+L09_01_024	L09:25: A read y, B read -: which sign? (box holds two signs: cut it first)
+L09_01_034	L09:34: A read y, B read yx: which sign?
+L10_01_001	L10:1: A read sz, B read S: which sign?
+L10_01_007	L10:5: A read G, B read g: which sign?
+L10_01_010	L10:7: A read s, B read S: which sign?
+L10_01_025	L10:20: A read y, B read yx: which sign? (box holds two signs: cut it first)
+L11_01_005	L11:6: A read y, B read yx: which sign? (box holds two signs: cut it first)
+L11_01_006	L11:7: A read s, B read S: which sign? (box holds two signs: cut it first)
+L11_01_015	L11:19: A read -, B read d: which sign? (box holds two signs: cut it first)
+L11_01_031	L11:35: A read s, B read S: which sign?
+L13_01_007	L13:7: A read o2, B read o: which sign? (box holds two signs: cut it first)
+L13_01_023	L13:20: A read d, B read dd: which sign?
+L13_01_024	L13:23: A read 5, B read s: which sign? (box holds two signs: cut it first)
+L14_01_003	L14:2: A read yx, B read y: which sign?
+L14_01_009	L14:8: A read d, B read dd: which sign? (box holds two signs: cut it first)
+L14_01_024	L14:24: A read d, B read dd: which sign?
+L14_01_037	L14:33: A read yx, B read y: which sign?
+L15_01_023	L15:19: A read -, B read q: which sign?
+L16_01_022	L16:21: A read g, B read q: which sign?
+L16_01_024	L16:25: A read yx, B read y: which sign? (box holds two signs: cut it first)
+L17_01_002	L17:2: A read g, B read q: which sign?
+L17_01_008	L17:9: A read yx, B read y: which sign?
+L17_01_011	L17:13: A read d, B read dd: which sign? (box holds two signs: cut it first)
+L17_01_012	L17:15: A read g, B read q: which sign? (box holds two signs: cut it first)
+L17_01_022	L17:26: A read -, B read r: which sign? (box holds two signs: cut it first)
+L18_01_001	L18:1: A read g, B read q: which sign?
+L18_01_002	L18:3: A read yx, B read f: which sign?
+L18_01_006	L18:8: A read d, B read dd: which sign?
+L18_01_028	L18:35: A read d, B read dd: which sign?
+L19_01_006	L19:5: A read -, B read q: which sign?
+L19_01_007	L19:6: A read g, B read y: which sign?
+L19_01_009	L19:9: A read d, B read dd: which sign?
+L19_01_011	L19:12: A read g, B read G: which sign? (box holds two signs: cut it first)
+L19_01_012	L19:15: A read d, B read a: which sign? (box holds two signs: cut it first)
+L20_01_004	L20:6: A read s, B read S: which sign?
+L21_01_003	L21:3: A read yx, B read y: which sign?
+L21_01_009	L21:10: A read d, B read dd: which sign? (box holds two signs: cut it first)
+L21_01_022	L21:23: A read d, B read dd: which sign? (box holds two signs: cut it first)
+L21_01_025	L21:26: A read g, B read 9: which sign?

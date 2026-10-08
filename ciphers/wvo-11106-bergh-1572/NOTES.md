@@ -68,7 +68,7 @@ exit=0
 ## Remaining gaps
 
 Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
-- Whole letter, inventory - blocker: not-attempted; 72 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv, owner's sorter needs tiles first; next: `tools/glyph_atlas.py segment`/`cluster` on images/crops so `tools/sign_sorter.py --focus` can show them, ~$2
+- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes, 60 clusters) but the width/position mapping of boxes to transcription positions labels only ~5 of 19 sampled tiles right, so the sorter page was not built for the owner; next: box-numbered strips (`glyph_atlas.py classify --strips`) + two blind reads per box, then sorter/build_inputs.py, ~$7.5
 - Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777), Latin (la17, 0.611) and Dutch (nl16, 0.681, NL16-11106) and at a merged K38 in French (FAM-11106L); Bergh's six WVO sibling letters 1574-77 are in French (2) and German (4), none Dutch; single-letter homophonic is now negative in all four candidate languages, so the open question is the design, not the language; next: the multi-sign family (below)
 - Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
 - Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
@@ -80,9 +80,9 @@ Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct
 - [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
 - [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
 - [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17, nl16 (NL16-11106) and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); the syllabary/multi-sign family is untried.
-- [ ] image-check: tx/focus.tsv's 72 look-alike positions await an atlas and the owner's sorter.
+- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106), box labels by alignment failed the eye check; box-numbered reads next, then the owner's sorter.
 - [ ] retry: the syllabary/multi-sign family after the inventory is settled.
-Verdict: keep going: 4 internal gaps; cheapest next: the glyph atlas for the 72 look-alike positions, ~$2, then the syllabary/multi-sign family once the inventory is settled, ~$1
+Verdict: keep going: 4 internal gaps; cheapest next: box-numbered strip reads on the GLY-11106 atlas so the sorter piles are per box, ~$7.5, then the syllabary/multi-sign family once the inventory is settled, ~$1
 
 ## While waiting
 
@@ -273,4 +273,71 @@ have images on WVO; the images were not opened in this job.
 
 Requests: www.dbnl.org 15 (4 author pages, 6 texts, 5 empty ids), >= 2 s apart, no 403/429; resources.huygens.knaw.nl 6. No Gallica, no IA.
 No subagents. family_run.py: 2 runs, about 1.5 minutes CPU; holdout_check.py 2 runs.
+Report what was found and where it was not found; novelty is not classified here (rule 10).
+
+## GLY-11106: glyph atlas on the look-alike positions, sorter inputs (LANE FAMILY, account 2, 8 Oct 2026, 19:44-19:5x UTC by `date -u`)
+
+Prior work: `tools/prior_work.py wvo-11106-bergh-1572 --item-spec 'shelfmark=WVO 11106;date=1572-09-19;...' --step-type crop --fetch`
+exit 4 (4 LEAD live-claim rows, 1 LOOK 2-leaf, 4 UNCHECKED); all answered with `--record` from this file (FAM-11106T/FAM-11106L/
+NL16-11106 claims have done lines at ROOM 11210/11254/11332; leaf look = FAM-CS11106 Premise check (c); Tomokiyo, solver repos and
+Groen/Gachard/Kervyn = FAM-CS11106 "Prior work" 3-4); re-run exit 0 ("proceed on the residue: whole item"), UNCHECKED-NET 1 left
+(aaymeloglu repo not cloned; FAM-CS11106 grepped it by hand). Check 1 by hand: no atlas/ or sorter/ in the folder before this job.
+Disk only, 0 network requests. No vision subagent calls.
+
+### Segment and cluster (commands)
+
+```
+python3 tools/glyph_atlas.py segment --page L01=images/crops/p2_L01.jpg ... --page L22=images/crops/p2_L22.jpg \
+    --out atlas --median-h 22 --min-area 0.3 --rel 0.7 --merge-vgap 0.6 --debug        # 875 boxes, 26 marks
+python3 tools/glyph_atlas.py cluster --out atlas --k 60 --k-marks 8                       # atlas/clusters.tsv, sheet_signs_00-02.png
+```
+Parameters chosen by box count against the transcription's 831 positions per line (sum of |boxes - positions| over 22 lines):
+default `--median-h pool` collapsed to 1 px (specks); `--median-h 25` 180; `--cursive` (gap 0.15-0.7, split-w 1.6-2.2, piece
+1.1-1.4) 192-401; median-h 22 + rel 0.7 + merge-vgap 0.6 **104** (2 lines exact). The overlay (atlas/debug_L01.jpg, the only one
+kept) shows the hand's joins ("pg", "pbm", "st", "mn", C+long S) as single boxes and descender pieces as small boxes. atlas/crops/
+and the other 21 debug images are regenerated by the segment command.
+
+### Box -> position mapping (atlas/map_tx.py) and the known-answer check (atlas/purity.py)
+
+No reader x-positions exist, so a monotone DP aligns each line's boxes to its positions on widths and a position prior (box may take
+one position, two joined positions, or none): 760 boxes matched (126 joined), 829/831 positions covered, 462 firm 1:1, 420 firm and
+2-reader-agreed (418 on cipher rows). Purity on those 418 (share carrying their cluster's majority label), permutation null of the
+labels over the same boxes (2000 draws, so it can differ from the target):
+
+| scope | n | purity | null mean | null p95 | p |
+|---|---|---|---|---|---|
+| all firm+agreed, k=60 | 418 | 0.402 | 0.257 | 0.273 | <0.001 |
+| (k=30 / k=100, same boxes) | 418 | 0.337 / 0.438 | 0.213 / 0.296 | | |
+| d/dd (5/7) | 12 | 0.917 | 0.933 | 1.000 | 1.000 |
+| y/yx (5/9) | 14 | 0.929 | 0.876 | 1.000 | 0.372 |
+| s/S (60/5) | 65 | 0.985 | 0.942 | 0.969 | 0.011 |
+| z/2 (3/9) | 12 | 0.833 | 0.868 | 0.917 | 0.922 |
+| n/u (12/17) | 29 | 0.862 | 0.831 | 0.897 | 0.336 |
+| g/G, s/5, g/y | 67, 61, 68 | 0.955, 0.984, 0.941 | 0.957, 0.987, 0.943 | | 0.73, 1.0, 0.73 |
+| g/q, g/9 | no firm agreed q or 9 box | | | | |
+
+**Eye check of the mapping (sorter preflight contact sheet, 24 random tiles, seed 20261006, read by this worker):** of 19 tiles with
+a label from the mapping, 5 carry the right label (b, 7, e, s, u), 1 is uncertain (yx on an r-like sign) and 13 are wrong (3 as g,
+r as f, 4 as g, y as 7, B as u, s as A, 3 as B, and 6 speck fragments labelled s/m/h/r); 2 of the other 5 are boxes reaching into
+the next line's tails. So the purity figures measure the alignment at least as much as the atlas: **the known-answer check is not a
+test of the atlas at this mapping** (the labels it scores are mostly wrong), and nothing above says whether the clusters separate the
+look-alike pairs. Tightening the box filter (centre band 55-135 px, specks under 8-12 px dropped) moved the box-count fit the wrong
+way (138-187); no further tuning was tried.
+
+### Sorter inputs (built, NOT fit to put in front of the owner)
+
+`python3 sorter/build_inputs.py` writes sorter/labels.tsv (875 tiles; pile = mapped label, else 'joined' 126, 'unmatched' 177, a
+shape-cluster guess 27, 'fragment' 11), sorter/focus.tsv (64 of tx/focus.tsv's 71 questions placed on a tile; the 7 others in
+sorter/focus_unplaced.tsv; tx/focus.tsv has 71 rows, not 72), sorter/cipher_lines.tsv. `tools/sign_sorter.py --signs atlas/signs.tsv
+--labels sorter/labels.tsv --marks atlas/marks.tsv --pages atlas/crops --clusters atlas/clusters.tsv --focus sorter/focus.tsv ...`
+built a 3.3 MB page (48 piles) and `sorter_preflight` PASSed all four checks (shape 2.5% against the 5% limit), but the contact sheet
+above fails by eye, so the page was deleted, not committed, and no ASKS-ready sheet exists. Preflight's shape check cannot see a
+wrong pile; only the eye check caught it.
+
+### What would settle it (next)
+
+Labels must come per box, not by alignment: `tools/glyph_atlas.py classify --strips` renders each line with every box outlined and
+numbered; two blind Sonnet reads of the numbered strips (one call per half page per pass, crop paths only; 4 calls + 1 reconciliation,
+~$7.5 at 1.5/call) give box-level labels, remove the "one pass has a sign the other lacks" splits and the joined-box problem (a reader
+marks a box as two signs), and make the purity check a real test of the atlas. Then rebuild sorter/ from those labels.
 Report what was found and where it was not found; novelty is not classified here (rule 10).

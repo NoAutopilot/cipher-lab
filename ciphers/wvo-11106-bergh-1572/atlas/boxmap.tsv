@@ -1,0 +1,876 @@
+sid	line	pos	label	kind	agree	cost	firm	joined
+L01_01_001	L01	1	B	cipher	1	0.71	0	0
+L01_01_002	L01	2	e	cipher	1	0.18	1	0
+L01_01_003	L01	3	S	cipher	1	0.00	1	0
+L01_01_004	L01	4	s	cipher	0	0.18	1	0
+L01_01_005	L01	5+6	p+g	cipher	1	0.22	0	1
+L01_01_006	L01	7	dd	cipher	0	0.50	0	0
+L01_01_007	L01			unmatched			0	0
+L01_01_008	L01	8	o	cipher	1	0.00	1	0
+L01_01_009	L01	9	g	cipher	0	0.18	1	0
+L01_01_010	L01			unmatched			0	0
+L01_01_011	L01	10	7	cipher	1	0.16	1	0
+L01_01_012	L01	11	yx	cipher	1	0.22	1	0
+L01_01_013	L01	12+13	g+z	cipher	0	0.53	0	1
+L01_01_014	L01	14	m	cipher	1	0.05	1	0
+L01_01_015	L01	15	dd	cipher	0	0.11	1	0
+L01_01_016	L01	16	l	cipher	1	0.01	1	0
+L01_01_017	L01	17	G	cipher	1	1.01	0	0
+L01_01_018	L01			unmatched			0	0
+L01_01_019	L01	18	p	cipher	1	0.04	1	0
+L01_01_020	L01	19	b	cipher	1	0.00	1	0
+L01_01_021	L01	20	m	cipher	1	0.16	1	0
+L01_01_022	L01	21	n	cipher	0	0.21	1	0
+L01_01_023	L01	22+23	s+s	cipher	1	0.18	0	1
+L01_01_024	L01	24	t	cipher	1	0.71	0	0
+L01_01_025	L01	25	f	cipher	1	0.26	1	0
+L01_01_026	L01	26	g	cipher	1	0.03	1	0
+L01_01_027	L01	27	3	cipher	1	0.11	1	0
+L01_01_028	L01	28	m	cipher	1	0.55	0	0
+L01_01_029	L01			unmatched			0	0
+L01_01_030	L01			unmatched			0	0
+L01_01_031	L01	29	b	cipher	1	0.61	0	0
+L01_01_032	L01	30	y	cipher	1	0.07	1	0
+L01_01_034	L01	31	g	cipher	1	0.18	1	0
+L01_01_035	L01			unmatched			0	0
+L01_01_036	L01	32	s	cipher	1	0.42	1	0
+L01_01_037	L01	33	m	cipher	1	0.24	1	0
+L01_01_038	L01	34	n	cipher	1	0.39	1	0
+L01_01_039	L01	35	C	cipher	1	0.66	0	0
+L01_01_040	L01	36+37	S+3	cipher	1	0.97	0	1
+L01_01_041	L01	38	g	cipher	1	0.11	1	0
+L01_01_042	L01	39	r	cipher	1	0.14	1	0
+L01_01_043	L01	40	c	cipher	1	0.21	1	0
+L01_01_044	L01	41	2	cipher	1	0.16	1	0
+L01_01_045	L01	42	s	cipher	1	0.05	1	0
+L01_01_046	L01	43	k	cipher	1	0.03	1	0
+L01_01_047	L01	44	k	cipher	1	0.03	1	0
+L01_01_048	L01	45	g	cipher	1	0.34	1	0
+L01_01_049	L01	46	s	cipher	1	0.03	1	0
+L01_01_050	L01			unmatched			0	0
+L01_01_051	L01	47	s	cipher	1	0.16	1	0
+L02_01_001	L02	1	u	cipher	1	0.08	1	0
+L02_01_002	L02	2	s	cipher	1	0.34	1	0
+L02_01_003	L02	3+4	t+g	cipher	1	0.13	0	1
+L02_01_004	L02			unmatched			0	0
+L02_01_005	L02	5	g	cipher	1	0.50	0	0
+L02_01_006	L02	6	s	cipher	1	0.16	1	0
+L02_01_007	L02	7	7	cipher	1	0.03	1	0
+L02_01_008	L02			unmatched			0	0
+L02_01_009	L02			unmatched			0	0
+L02_01_010	L02	8	G	cipher	1	0.67	0	0
+L02_01_011	L02	9	3	cipher	1	0.21	1	0
+L02_01_012	L02	10	g	cipher	1	0.21	1	0
+L02_01_013	L02	11	3	cipher	1	0.55	0	0
+L02_01_014	L02	12	yx	cipher	1	0.30	1	0
+L02_01_015	L02	13+14	h~+y~	struck	0	0.32	0	1
+L02_01_016	L02	15	r~	struck	1	0.05	1	0
+L02_01_017	L02	16+17	3+5	cipher	0	0.05	0	1
+L02_01_018	L02	18	g	cipher	1	0.00	1	0
+L02_01_019	L02	19+20	n+l	cipher	0	0.09	0	1
+L02_01_020	L02	21	A	cipher	1	0.16	1	0
+L02_01_021	L02	22+23	m+s	cipher	1	0.55	0	1
+L02_01_022	L02	25	r	cipher	1	0.01	1	0
+L02_01_023	L02	26	dd	cipher	1	0.05	1	0
+L02_01_024	L02			unmatched			0	0
+L02_01_025	L02	27	o	cipher	1	0.58	0	0
+L02_01_026	L02	28+29	b+7	cipher	1	0.16	0	1
+L02_01_027	L02	30	p	cipher	1	0.17	1	0
+L02_01_028	L02	31	yx	cipher	1	0.22	1	0
+L02_01_029	L02	32	g	cipher	1	0.29	1	0
+L02_01_030	L02	33	3	cipher	1	0.08	1	0
+L02_01_031	L02			unmatched			0	0
+L02_01_032	L02	34	4	cipher	1	0.05	1	0
+L02_01_033	L02	35	z	cipher	0	0.13	1	0
+L02_01_034	L02	36	g	cipher	1	0.18	1	0
+L02_01_035	L02	37	D	cipher	1	0.45	1	0
+L02_01_036	L02	38+39	p+m	cipher	1	0.38	0	1
+L02_01_037	L02			unmatched			0	0
+L02_01_038	L02	40	h	cipher	1	0.61	0	0
+L02_01_039	L02	41+42	b+n	cipher	1	0.00	0	1
+L02_01_040	L02	43+44	s+t	cipher	1	0.71	0	1
+L03_01_001	L03	1	g	cipher	1	0.34	1	0
+L03_01_002	L03			unmatched			0	0
+L03_01_003	L03	2	m	cipher	1	0.05	1	0
+L03_01_004	L03	3	p	cipher	1	0.09	1	0
+L03_01_005	L03			unmatched			0	0
+L03_01_006	L03	4	p	cipher	1	0.01	1	0
+L03_01_007	L03	5	g	cipher	1	0.26	1	0
+L03_01_008	L03	6	g	cipher	1	0.55	0	0
+L03_01_009	L03	7	B	cipher	1	0.47	0	0
+L03_01_010	L03			unmatched			0	0
+L03_01_011	L03	8	E	cipher	1	0.08	1	0
+L03_01_012	L03			unmatched			0	0
+L03_01_013	L03	9	7	cipher	1	0.05	1	0
+L03_01_014	L03			unmatched			0	0
+L03_01_015	L03	10	2	cipher	1	0.05	1	0
+L03_01_016	L03	11+12	s+g	cipher	0	0.21	0	1
+L03_01_017	L03			unmatched			0	0
+L03_01_018	L03	13	g	cipher	1	0.45	1	0
+L03_01_019	L03	14	g	cipher	1	0.05	1	0
+L03_01_020	L03	15+16	S+E	cipher	1	0.29	0	1
+L03_01_021	L03	17	s	cipher	0	0.18	1	0
+L03_01_022	L03	18	g	cipher	1	0.13	1	0
+L03_01_023	L03	19+20	4+D	cipher	1	0.24	0	1
+L03_01_024	L03	21+22	l+g	cipher	1	0.07	0	1
+L03_01_026	L03	23	b	cipher	1	0.00	1	0
+L03_01_027	L03	24	g	cipher	1	0.47	0	0
+L03_01_028	L03	25	X	cipher	1	0.34	1	0
+L03_01_029	L03	26+27	s+dd	cipher	1	0.05	0	1
+L03_01_030	L03			unmatched			0	0
+L03_01_031	L03	28	g	cipher	1	0.05	1	0
+L03_01_032	L03			unmatched			0	0
+L03_01_033	L03	29	r	cipher	1	0.07	1	0
+L03_01_034	L03	30	3	cipher	1	0.13	1	0
+L03_01_035	L03	31	g	cipher	1	0.47	0	0
+L03_01_036	L03	32+33	m+k	cipher	1	0.26	0	1
+L03_01_037	L03	34	r	cipher	1	0.22	1	0
+L03_01_038	L03	35	g	cipher	1	0.05	1	0
+L03_01_040	L03	36	3	cipher	1	0.45	1	0
+L03_01_041	L03	37+38	A+o	cipher	1	0.08	0	1
+L03_01_042	L03	39	s	cipher	1	0.24	1	0
+L03_01_043	L03	40+41	n+yx	cipher	0	0.07	0	1
+L04_01_001	L04	1	4	cipher	1	0.32	1	0
+L04_01_002	L04	2	m	cipher	1	0.03	1	0
+L04_01_003	L04	3	g	cipher	1	0.13	1	0
+L04_01_004	L04			unmatched			0	0
+L04_01_005	L04			unmatched			0	0
+L04_01_006	L04	4	4	cipher	1	0.11	1	0
+L04_01_007	L04	5	s	cipher	0	0.29	1	0
+L04_01_008	L04	6	r	cipher	1	0.04	1	0
+L04_01_009	L04			unmatched			0	0
+L04_01_010	L04	7	3	cipher	1	0.03	1	0
+L04_01_011	L04	8	E	cipher	1	0.24	1	0
+L04_01_012	L04	9	G~	struck	1	0.13	1	0
+L04_01_013	L04	11	s	cipher	0	0.16	1	0
+L04_01_014	L04	12	d	cipher	1	0.83	0	0
+L04_01_015	L04	13	s	cipher	1	0.66	0	0
+L04_01_016	L04	14	G	cipher	0	0.51	0	0
+L04_01_017	L04			unmatched			0	0
+L04_01_018	L04	15	f	cipher	1	0.37	1	0
+L04_01_019	L04	16	s	cipher	1	0.13	1	0
+L04_01_020	L04	17+18	d+yx	cipher	1	0.16	0	1
+L04_01_021	L04			unmatched			0	0
+L04_01_022	L04	19	6	cipher	1	0.29	1	0
+L04_01_023	L04	20	s	cipher	1	0.37	1	0
+L04_01_024	L04	21+22	A+h	cipher	1	1.05	0	1
+L04_01_025	L04	23+24	b+o	cipher	1	0.97	0	1
+L04_01_026	L04	26	r	cipher	1	0.01	1	0
+L04_01_027	L04	27	c	cipher	1	0.00	1	0
+L04_01_028	L04			unmatched			0	0
+L04_01_029	L04	28	o	cipher	1	0.08	1	0
+L04_01_030	L04	29	s	cipher	0	0.03	1	0
+L04_01_031	L04	30	z	cipher	1	0.00	1	0
+L04_01_032	L04	31	d	cipher	0	0.33	1	0
+L04_01_033	L04	32	l	cipher	1	0.80	0	0
+L04_01_034	L04			unmatched			0	0
+L04_01_035	L04	33	dd	cipher	1	0.26	1	0
+L04_01_036	L04	34	s	cipher	1	0.24	1	0
+L04_01_037	L04	35	n	cipher	0	0.24	1	0
+L04_01_038	L04	36+37	p+B	cipher	1	0.28	0	1
+L04_01_039	L04	38	g	cipher	1	0.13	1	0
+L04_01_040	L04	39+40	r+dd	cipher	1	0.78	0	1
+L05_01_001	L05	1	E	cipher	1	0.16	1	0
+L05_01_002	L05	2+3	o+s	cipher	1	1.21	0	1
+L05_01_003	L05	4	g	cipher	1	0.13	1	0
+L05_01_004	L05			unmatched			0	0
+L05_01_005	L05	5	s	cipher	1	0.18	1	0
+L05_01_006	L05	6	g	cipher	1	0.32	1	0
+L05_01_007	L05			unmatched			0	0
+L05_01_008	L05	7	p	cipher	1	0.33	1	0
+L05_01_009	L05			unmatched			0	0
+L05_01_010	L05	8	s	cipher	1	0.37	1	0
+L05_01_011	L05			unmatched			0	0
+L05_01_012	L05	9	m	cipher	1	0.50	0	0
+L05_01_013	L05	10	B	cipher	1	0.61	0	0
+L05_01_014	L05	11	g	cipher	1	0.50	0	0
+L05_01_015	L05	12	o	cipher	1	0.21	1	0
+L05_01_016	L05			unmatched			0	0
+L05_01_017	L05			unmatched			0	0
+L05_01_018	L05	13	i	cipher	1	0.26	1	0
+L05_01_019	L05	14	c	cipher	1	0.29	1	0
+L05_01_020	L05	15	m	cipher	1	0.00	1	0
+L05_01_021	L05			unmatched			0	0
+L05_01_022	L05	16	g	cipher	1	0.29	1	0
+L05_01_023	L05	17+18	r+yx	cipher	1	0.21	0	1
+L05_01_024	L05	19	s	cipher	1	0.18	1	0
+L05_01_025	L05	20	t	cipher	1	0.45	1	0
+L05_01_026	L05			unmatched			0	0
+L05_01_027	L05	21+22	f+g	cipher	1	0.16	0	1
+L05_01_028	L05			unmatched			0	0
+L05_01_029	L05	23	d	cipher	1	0.62	0	0
+L05_01_030	L05			unmatched			0	0
+L05_01_031	L05			unmatched			0	0
+L05_01_032	L05	24	g	cipher	1	0.21	1	0
+L05_01_033	L05	25+26	o+s	cipher	1	0.08	0	1
+L05_01_034	L05			unmatched			0	0
+L05_01_035	L05	27	G	cipher	1	0.07	1	0
+L05_01_036	L05	28	m	cipher	1	0.34	1	0
+L05_01_037	L05			unmatched			0	0
+L05_01_038	L05	29	p	cipher	1	0.04	1	0
+L05_01_039	L05	30	yx	cipher	0	0.09	1	0
+L05_01_040	L05			unmatched			0	0
+L05_01_041	L05			unmatched			0	0
+L05_01_042	L05	31	t	cipher	1	0.42	1	0
+L05_01_043	L05	37	yx	cipher	1	0.67	0	0
+L06_01_001	L06	1	B	cipher	1	0.05	1	0
+L06_01_002	L06	2	i	cipher	1	0.24	1	0
+L06_01_003	L06			unmatched			0	0
+L06_01_004	L06			unmatched			0	0
+L06_01_005	L06			unmatched			0	0
+L06_01_006	L06	3+4	yx+g	cipher	0	0.33	0	1
+L06_01_007	L06			unmatched			0	0
+L06_01_008	L06			unmatched			0	0
+L06_01_009	L06	5	f	cipher	1	0.37	1	0
+L06_01_010	L06			unmatched			0	0
+L06_01_011	L06	6	s	cipher	1	0.11	1	0
+L06_01_012	L06	7	g	cipher	1	0.08	1	0
+L06_01_013	L06	8+9	s+dd	cipher	1	0.84	0	1
+L06_01_014	L06	10	l	cipher	1	0.25	1	0
+L06_01_015	L06	11	s	cipher	1	0.13	1	0
+L06_01_016	L06			unmatched			0	0
+L06_01_018	L06			unmatched			0	0
+L06_01_019	L06			unmatched			0	0
+L06_01_020	L06	12	m	cipher	1	0.47	0	0
+L06_01_021	L06			unmatched			0	0
+L06_01_022	L06	13+14	d+4	cipher	1	0.07	0	1
+L06_01_023	L06	15	G	cipher	1	0.01	1	0
+L06_01_024	L06			unmatched			0	0
+L06_01_025	L06			unmatched			0	0
+L06_01_026	L06	16	7	cipher	1	0.03	1	0
+L06_01_027	L06	17+18	s+g	cipher	1	0.03	0	1
+L06_01_028	L06	19	n	cipher	1	0.21	1	0
+L06_01_029	L06			unmatched			0	0
+L06_01_030	L06	20+21	E+u	cipher	1	0.53	0	1
+L06_01_031	L06	22+23	y+s	cipher	1	0.54	0	1
+L06_01_032	L06	24	t	cipher	1	0.05	1	0
+L06_01_033	L06			unmatched			0	0
+L06_01_034	L06	25	d	cipher	0	0.01	1	0
+L06_01_035	L06	26+27	l+g	cipher	1	0.04	0	1
+L06_01_036	L06	28	s	cipher	1	0.13	1	0
+L06_01_037	L06	29+30	b+s	cipher	1	0.05	0	1
+L06_01_038	L06	31	7	cipher	1	0.08	1	0
+L06_01_039	L06	32	G	cipher	0	0.86	0	0
+L06_01_040	L06	33	o	cipher	1	0.03	1	0
+L06_01_041	L06	34	e	cipher	1	0.00	1	0
+L06_01_042	L06	35+36	s+p	cipher	1	0.07	0	1
+L06_01_043	L06	38	o	cipher	1	0.05	1	0
+L06_01_044	L06	39	e	cipher	1	0.11	1	0
+L07_01_001	L07	1	s	cipher	1	0.03	1	0
+L07_01_002	L07			unmatched			0	0
+L07_01_003	L07	2	t	cipher	1	0.05	1	0
+L07_01_005	L07	3	3	cipher	1	0.00	1	0
+L07_01_006	L07			unmatched			0	0
+L07_01_007	L07	4+5	yx+3	cipher	1	0.17	0	1
+L07_01_008	L07			unmatched			0	0
+L07_01_009	L07	6	r	cipher	1	0.14	1	0
+L07_01_010	L07			unmatched			0	0
+L07_01_011	L07	7	p	cipher	1	0.12	1	0
+L07_01_012	L07			unmatched			0	0
+L07_01_013	L07	8	g	cipher	1	0.05	1	0
+L07_01_014	L07	9+10	E+l	cipher	1	0.75	0	1
+L07_01_015	L07	11	g	cipher	1	0.03	1	0
+L07_01_016	L07			unmatched			0	0
+L07_01_017	L07	12	b	cipher	1	0.42	1	0
+L07_01_018	L07			unmatched			0	0
+L07_01_019	L07	13	d	cipher	1	0.12	1	0
+L07_01_020	L07	14	X	cipher	1	0.42	1	0
+L07_01_021	L07	15	G	cipher	1	0.04	1	0
+L07_01_022	L07			unmatched			0	0
+L07_01_023	L07			unmatched			0	0
+L07_01_024	L07	16	yx	cipher	1	0.46	0	0
+L07_01_025	L07	17+18	3+g	cipher	1	0.34	0	1
+L07_01_026	L07	19+20	dd+4	cipher	1	0.11	0	1
+L07_01_027	L07	21	h	cipher	1	0.08	1	0
+L07_01_028	L07	22	m	cipher	1	0.37	1	0
+L07_01_029	L07	23	p	cipher	1	0.04	1	0
+L07_01_030	L07	24	b	cipher	1	0.03	1	0
+L07_01_031	L07	25	4	cipher	1	0.05	1	0
+L07_01_032	L07	26+27	b+s	cipher	1	0.05	0	1
+L07_01_033	L07			unmatched			0	0
+L07_01_034	L07	28+29	g+p	cipher	1	0.54	0	1
+L07_01_035	L07			unmatched			0	0
+L07_01_036	L07	31	u	cipher	1	0.74	0	0
+L07_01_037	L07	32	s	cipher	1	0.00	1	0
+L07_01_038	L07	33	t	cipher	1	0.11	1	0
+L07_01_039	L07	34	f	cipher	1	0.55	0	0
+L07_01_040	L07	35	g	cipher	1	0.08	1	0
+L07_01_041	L07	36	dd	cipher	1	0.18	1	0
+L07_01_042	L07	37	u	cipher	1	0.00	1	0
+L07_01_043	L07	38	e	cipher	1	0.00	1	0
+L08_01_002	L08	1	S	cipher	1	0.16	1	0
+L08_01_003	L08			unmatched			0	0
+L08_01_004	L08	2	s	cipher	1	0.32	1	0
+L08_01_005	L08	3+4	k+d	cipher	1	0.17	0	1
+L08_01_006	L08	5	g	cipher	0	0.24	1	0
+L08_01_007	L08			unmatched			0	0
+L08_01_008	L08			unmatched			0	0
+L08_01_009	L08	6	n	cipher	1	0.00	1	0
+L08_01_010	L08	7	C	cipher	1	0.45	1	0
+L08_01_011	L08			unmatched			0	0
+L08_01_012	L08	8	e	cipher	1	0.29	1	0
+L08_01_013	L08	9	o	cipher	1	0.24	1	0
+L08_01_014	L08	10	s	cipher	1	0.21	1	0
+L08_01_015	L08			unmatched			0	0
+L08_01_016	L08	11	t	cipher	1	0.13	1	0
+L08_01_017	L08	12	g	cipher	1	0.00	1	0
+L08_01_018	L08	13	r	cipher	1	0.17	1	0
+L08_01_019	L08	15+16	k+d	cipher	1	0.41	0	1
+L08_01_020	L08			unmatched			0	0
+L08_01_021	L08	17	g	cipher	0	0.13	1	0
+L08_01_022	L08	18	n	cipher	1	0.74	0	0
+L08_01_024	L08			unmatched			0	0
+L08_01_025	L08	19+20	A+y	cipher	1	0.25	0	1
+L08_01_026	L08	21	u	cipher	1	0.03	1	0
+L08_01_027	L08			unmatched			0	0
+L08_01_028	L08	22	s	cipher	1	0.11	1	0
+L08_01_029	L08			unmatched			0	0
+L08_01_030	L08	23	t	cipher	1	0.05	1	0
+L08_01_031	L08	24	e	cipher	1	0.37	1	0
+L08_01_032	L08	25	m	cipher	1	0.34	1	0
+L08_01_033	L08			unmatched			0	0
+L08_01_034	L08			unmatched			0	0
+L08_01_035	L08	26	g	cipher	1	0.03	1	0
+L08_01_036	L08	27	dd	cipher	1	0.29	1	0
+L08_01_037	L08	28	k~	struck	0	0.16	1	0
+L08_01_038	L08	32	u	cipher	1	0.16	1	0
+L08_01_039	L08	33	c	cipher	0	0.00	1	0
+L08_01_040	L08	34	s	cipher	1	0.13	1	0
+L08_01_041	L08	35	t	cipher	1	0.24	1	0
+L08_01_042	L08	36	3	cipher	1	0.00	1	0
+L08_01_043	L08	37	g	cipher	0	0.37	1	0
+L08_01_044	L08	38	m	cipher	1	0.53	0	0
+L08_01_045	L08	39+40	o+s	cipher	1	0.18	0	1
+L08_01_046	L08	41	D	cipher	1	0.05	1	0
+L09_01_001	L09	1	s	cipher	1	0.03	1	0
+L09_01_002	L09	2	t	cipher	1	0.18	1	0
+L09_01_003	L09	3	e	cipher	1	0.05	1	0
+L09_01_004	L09	4	d	cipher	0	0.51	0	0
+L09_01_005	L09	5	g	cipher	1	0.21	1	0
+L09_01_006	L09	6	B	cipher	1	0.03	1	0
+L09_01_007	L09			unmatched			0	0
+L09_01_008	L09			unmatched			0	0
+L09_01_009	L09			unmatched			0	0
+L09_01_010	L09	7	l	cipher	1	0.04	1	0
+L09_01_011	L09	8	g	cipher	1	0.05	1	0
+L09_01_012	L09	9+10	g+g	cipher	1	0.63	0	1
+L09_01_013	L09			unmatched			0	0
+L09_01_014	L09	11+12	h+g	cipher	1	0.03	0	1
+L09_01_015	L09	13	n	cipher	1	0.16	1	0
+L09_01_016	L09	14+15	A+e	cipher	1	0.24	0	1
+L09_01_017	L09	16	p	cipher	1	0.33	1	0
+L09_01_018	L09	17+18	g+u	cipher	1	0.55	0	1
+L09_01_019	L09			unmatched			0	0
+L09_01_020	L09	19	g	cipher	0	0.03	1	0
+L09_01_021	L09	21	b	cipher	1	0.21	1	0
+L09_01_022	L09	22+23	s+g	cipher	1	0.39	0	1
+L09_01_023	L09			unmatched			0	0
+L09_01_024	L09	24+25	s+y	cipher	0	0.28	0	1
+L09_01_025	L09	26	yx	cipher	1	0.43	1	0
+L09_01_026	L09	27	X	cipher	1	0.39	1	0
+L09_01_027	L09	28	s	cipher	1	0.13	1	0
+L09_01_028	L09	29	g	cipher	1	0.16	1	0
+L09_01_029	L09	30	E	cipher	1	0.24	1	0
+L09_01_030	L09	31	dd	cipher	1	0.34	1	0
+L09_01_031	L09			unmatched			0	0
+L09_01_032	L09	32	b	cipher	1	0.42	1	0
+L09_01_033	L09	33	s	cipher	1	0.18	1	0
+L09_01_034	L09	34	y	cipher	0	0.04	1	0
+L09_01_035	L09	35	l	cipher	1	0.01	1	0
+L09_01_036	L09	36+37	t+s	cipher	1	0.24	0	1
+L09_01_037	L09	38+39	m+3	cipher	1	0.29	0	1
+L09_01_038	L09	41	u	cipher	1	0.66	0	0
+L10_01_001	L10	1	sz	cipher	0	0.24	1	0
+L10_01_002	L10	2	u	cipher	1	0.50	0	0
+L10_01_003	L10	3	d	cipher	1	0.33	1	0
+L10_01_004	L10			unmatched			0	0
+L10_01_005	L10	4	s	cipher	1	0.37	1	0
+L10_01_006	L10			unmatched			0	0
+L10_01_007	L10	5	G	cipher	0	0.07	1	0
+L10_01_008	L10			unmatched			0	0
+L10_01_009	L10	6	dd	cipher	1	0.24	1	0
+L10_01_010	L10	7	s	cipher	0	0.21	1	0
+L10_01_011	L10	8	r	cipher	1	0.09	1	0
+L10_01_012	L10	9+10	4+g	cipher	1	0.55	0	1
+L10_01_013	L10			unmatched			0	0
+L10_01_014	L10			unmatched			0	0
+L10_01_015	L10	11	B	cipher	1	0.29	1	0
+L10_01_016	L10			unmatched			0	0
+L10_01_017	L10	12	b	cipher	1	0.16	1	0
+L10_01_018	L10	13+14	h+n	cipher	1	0.24	0	1
+L10_01_019	L10	15	p	cipher	1	0.22	1	0
+L10_01_020	L10	16+17	s+t	cipher	1	0.11	0	1
+L10_01_021	L10	18	g	cipher	1	0.21	1	0
+L10_01_022	L10			unmatched			0	0
+L10_01_023	L10	19	4	cipher	1	0.47	0	0
+L10_01_024	L10			unmatched			0	0
+L10_01_025	L10	20+21	y+n	cipher	0	0.17	0	1
+L10_01_026	L10			unmatched			0	0
+L10_01_027	L10	22+23	b+s	cipher	1	0.32	0	1
+L10_01_028	L10	24	g	cipher	1	0.26	1	0
+L10_01_029	L10	25	m	cipher	1	0.18	1	0
+L10_01_030	L10			unmatched			0	0
+L10_01_031	L10	26	B	cipher	1	0.26	1	0
+L10_01_032	L10			unmatched			0	0
+L10_01_033	L10	27	E	cipher	1	0.66	0	0
+L10_01_034	L10	28	u	cipher	1	0.03	1	0
+L10_01_035	L10			unmatched			0	0
+L10_01_036	L10	29+30	f+g	cipher	1	0.08	0	1
+L10_01_037	L10	31	A	cipher	1	0.26	1	0
+L10_01_038	L10			unmatched			0	0
+L10_01_039	L10	32+33	g+s	cipher	1	0.45	0	1
+L10_01_040	L10	34	s	cipher	1	1.00	0	0
+L10_01_041	L10	35	m	cipher	1	0.66	0	0
+L10_01_042	L10	36	f	cipher	1	0.08	1	0
+L10_01_043	L10	38	m	cipher	1	0.39	1	0
+L10_01_044	L10			unmatched			0	0
+L11_01_001	L11	1	f	cipher	1	0.03	1	0
+L11_01_002	L11	2	p	cipher	1	0.43	1	0
+L11_01_003	L11	3	s	cipher	1	0.11	1	0
+L11_01_004	L11	4	m	cipher	1	0.05	1	0
+L11_01_005	L11	5+6	E+y	cipher	0	0.49	0	1
+L11_01_006	L11	7+8	s+r	cipher	0	0.64	0	1
+L11_01_007	L11	9	4	cipher	1	0.03	1	0
+L11_01_008	L11	10+11	dd+8	cipher	1	0.84	0	1
+L11_01_009	L11	12+13	b+s	cipher	1	0.37	0	1
+L11_01_010	L11			unmatched			0	0
+L11_01_011	L11	14	g	cipher	1	0.26	1	0
+L11_01_012	L11	15	G	cipher	1	0.33	1	0
+L11_01_013	L11	16	yx	cipher	1	0.22	1	0
+L11_01_014	L11	17+18	b+dd	cipher	1	0.05	0	1
+L11_01_015	L11	19+20	d+b	cipher	0	0.93	0	1
+L11_01_016	L11			unmatched			0	0
+L11_01_017	L11			unmatched			0	0
+L11_01_018	L11			unmatched			0	0
+L11_01_019	L11	21	s	cipher	1	0.39	1	0
+L11_01_020	L11			unmatched			0	0
+L11_01_021	L11	22	m	cipher	1	0.42	1	0
+L11_01_022	L11	23	2	cipher	1	0.42	1	0
+L11_01_023	L11	24	g	cipher	1	0.13	1	0
+L11_01_025	L11	25	yx	cipher	1	0.67	0	0
+L11_01_026	L11	26	B	cipher	1	0.08	1	0
+L11_01_027	L11	27+28	u+e	cipher	1	0.82	0	1
+L11_01_028	L11	29	o	cipher	1	0.00	1	0
+L11_01_029	L11	30+31	g+g	cipher	1	0.42	0	1
+L11_01_030	L11			unmatched			0	0
+L11_01_031	L11	35	s	cipher	0	0.03	1	0
+L11_01_032	L11	36	r	cipher	1	0.33	1	0
+L11_01_033	L11	37	r	cipher	1	0.04	1	0
+L11_01_034	L11	38	g	cipher	1	0.00	1	0
+L11_01_035	L11			unmatched			0	0
+L11_01_036	L11	39	s	cipher	1	0.18	1	0
+L11_01_037	L11	40	t	cipher	1	0.11	1	0
+L12_01_001	L12			unmatched			0	0
+L12_01_002	L12	1	e	cipher	1	0.18	1	0
+L12_01_003	L12			unmatched			0	0
+L12_01_004	L12	2	u	cipher	1	0.21	1	0
+L12_01_005	L12	3+4	g+g	cipher	1	0.58	0	1
+L12_01_006	L12	6	f	cipher	1	0.82	0	0
+L12_01_007	L12	7	h	cipher	1	0.32	1	0
+L12_01_008	L12	8	g	cipher	1	0.87	0	0
+L12_01_009	L12	9	b	cipher	1	0.03	1	0
+L12_01_010	L12			unmatched			0	0
+L12_01_011	L12			unmatched			0	0
+L12_01_012	L12	10	p	cipher	1	0.07	1	0
+L12_01_013	L12	11	b	cipher	1	0.66	0	0
+L12_01_014	L12	12	h	cipher	1	0.16	1	0
+L12_01_015	L12			unmatched			0	0
+L12_01_016	L12	13	g	cipher	1	0.21	1	0
+L12_01_017	L12	14	A	cipher	1	0.00	1	0
+L12_01_018	L12			unmatched			0	0
+L12_01_019	L12	15	yx	cipher	1	0.07	1	0
+L12_01_020	L12			unmatched			0	0
+L12_01_021	L12	16	m	cipher	1	0.24	1	0
+L12_01_022	L12	17	g	cipher	1	0.50	0	0
+L12_01_023	L12			unmatched			0	0
+L12_01_024	L12	18+19	g+o	cipher	1	0.61	0	1
+L12_01_025	L12	20	s	cipher	1	0.00	1	0
+L12_01_026	L12	21	n	cipher	1	0.34	1	0
+L12_01_027	L12	22	b	cipher	1	0.05	1	0
+L12_01_028	L12			unmatched			0	0
+L12_01_029	L12	23	m	cipher	1	0.08	1	0
+L12_01_030	L12	24	s	cipher	1	0.03	1	0
+L12_01_031	L12	25	B	cipher	1	0.05	1	0
+L12_01_032	L12	26	e	cipher	1	0.05	1	0
+L12_01_033	L12	27	u	cipher	1	0.18	1	0
+L12_01_034	L12	28	s	cipher	1	0.16	1	0
+L12_01_035	L12			unmatched			0	0
+L12_01_036	L12	29	t	cipher	1	0.05	1	0
+L12_01_037	L12			unmatched			0	0
+L12_01_038	L12	30	g	cipher	1	0.24	1	0
+L12_01_039	L12	31	r	cipher	1	0.09	1	0
+L12_01_040	L12	32	4	cipher	1	0.00	1	0
+L12_01_041	L12			unmatched			0	0
+L12_01_042	L12	33	g	cipher	1	0.26	1	0
+L12_01_043	L12	34	r	cipher	1	0.12	1	0
+L12_01_044	L12	35	f	cipher	1	0.13	1	0
+L12_01_045	L12	36	z	cipher	1	0.03	1	0
+L12_01_046	L12			unmatched			0	0
+L12_01_047	L12			unmatched			0	0
+L12_01_048	L12	37	g	cipher	1	0.21	1	0
+L12_01_049	L12	39	u	cipher	1	0.03	1	0
+L13_01_001	L13	1	S	cipher	1	0.00	1	0
+L13_01_002	L13	2	s	cipher	1	0.16	1	0
+L13_01_003	L13	3	e	cipher	1	0.11	1	0
+L13_01_004	L13	4	u	cipher	1	0.16	1	0
+L13_01_005	L13	5	s	cipher	1	0.32	1	0
+L13_01_006	L13	6	t	cipher	1	0.16	1	0
+L13_01_007	L13	7+8	o2+s	cipher	0	0.11	0	1
+L13_01_008	L13	9	n	cipher	1	0.37	1	0
+L13_01_009	L13			unmatched			0	0
+L13_01_010	L13	10	B	cipher	1	0.55	0	0
+L13_01_011	L13	11	b	cipher	1	0.00	1	0
+L13_01_012	L13			unmatched			0	0
+L13_01_013	L13	12	h	cipher	0	0.13	1	0
+L13_01_014	L13	13	h	cipher	1	0.05	1	0
+L13_01_015	L13	14	h	cipher	1	0.05	1	0
+L13_01_016	L13			unmatched			0	0
+L13_01_017	L13	15	b	cipher	1	0.08	1	0
+L13_01_018	L13	16+17	m+2	cipher	1	0.47	0	1
+L13_01_019	L13			unmatched			0	0
+L13_01_020	L13	18	g	cipher	1	0.03	1	0
+L13_01_021	L13			unmatched			0	0
+L13_01_022	L13	19	3	cipher	1	0.05	1	0
+L13_01_023	L13	20	d	cipher	0	0.28	1	0
+L13_01_024	L13	22+23	o+5	cipher	0	0.21	0	1
+L13_01_025	L13	24	E	cipher	1	0.00	1	0
+L13_01_026	L13	25	s	cipher	1	0.11	1	0
+L13_01_027	L13			unmatched			0	0
+L13_01_028	L13	26	S	cipher	1	0.42	1	0
+L13_01_029	L13	27	4	cipher	1	0.08	1	0
+L13_01_030	L13	28+29	2+g	cipher	1	0.29	0	1
+L13_01_031	L13	30+31	g+u	cipher	0	0.32	0	1
+L13_01_032	L13			unmatched			0	0
+L13_01_033	L13	32	s	cipher	1	0.39	1	0
+L13_01_034	L13	33	b	cipher	1	0.50	0	0
+L13_01_035	L13			unmatched			0	0
+L13_01_036	L13	34+35	3+g	cipher	1	0.18	0	1
+L13_01_037	L13	36	s	cipher	1	0.08	1	0
+L13_01_038	L13	37	g	cipher	1	0.03	1	0
+L13_01_039	L13	38	m	cipher	1	0.45	1	0
+L13_01_040	L13	39	b	cipher	1	0.13	1	0
+L13_01_041	L13	40	s	cipher	1	0.18	1	0
+L13_01_042	L13	41	t	cipher	0	0.68	0	0
+L14_01_001	L14	1	E	cipher	1	0.37	1	0
+L14_01_002	L14			unmatched			0	0
+L14_01_003	L14	2	yx	cipher	0	0.57	0	0
+L14_01_005	L14	3	g	cipher	1	0.13	1	0
+L14_01_006	L14			unmatched			0	0
+L14_01_007	L14	4	4	cipher	1	0.00	1	0
+L14_01_008	L14	5+6	g+o	cipher	1	0.71	0	1
+L14_01_009	L14	7+8	s+d	cipher	0	0.17	0	1
+L14_01_010	L14	9	yx	cipher	1	0.04	1	0
+L14_01_011	L14	10	h	cipher	1	0.34	1	0
+L14_01_012	L14	11	z	cipher	1	0.11	1	0
+L14_01_013	L14	12	b	cipher	1	0.26	1	0
+L14_01_014	L14	13	r	cipher	1	0.28	1	0
+L14_01_015	L14	14	d	cipher	1	0.04	1	0
+L14_01_016	L14	15+16	g+B	cipher	1	0.08	0	1
+L14_01_017	L14			unmatched			0	0
+L14_01_018	L14	17	e	cipher	1	0.05	1	0
+L14_01_019	L14	18	u	cipher	1	0.03	1	0
+L14_01_020	L14			unmatched			0	0
+L14_01_021	L14	19	g	cipher	1	0.45	1	0
+L14_01_022	L14	20+21	o+h	cipher	1	0.21	0	1
+L14_01_023	L14	22+23	g+p	cipher	1	0.20	0	1
+L14_01_024	L14	24	d	cipher	0	0.72	0	0
+L14_01_025	L14			unmatched			0	0
+L14_01_026	L14	25	yx	cipher	1	0.46	0	0
+L14_01_027	L14	26	E	cipher	1	0.08	1	0
+L14_01_028	L14	27	b	cipher	1	0.21	1	0
+L14_01_029	L14			unmatched			0	0
+L14_01_030	L14	28+29	S+r	cipher	1	0.14	0	1
+L14_01_031	L14	30	3	cipher	1	0.13	1	0
+L14_01_032	L14			unmatched			0	0
+L14_01_033	L14	31	B	cipher	1	0.08	1	0
+L14_01_034	L14	32	a	cipher	1	0.00	1	0
+L14_01_035	L14			unmatched			0	0
+L14_01_036	L14			unmatched			0	0
+L14_01_037	L14	33	yx	cipher	0	0.01	1	0
+L14_01_038	L14	34	n	cipher	1	0.16	1	0
+L14_01_039	L14			unmatched			0	0
+L14_01_040	L14	35	b	cipher	1	0.13	1	0
+L14_01_041	L14	36	s	cipher	1	0.21	1	0
+L14_01_042	L14	37	t	cipher	1	0.13	1	0
+L15_01_001	L15			unmatched			0	0
+L15_01_002	L15	1	s	cipher	1	0.11	1	0
+L15_01_003	L15			unmatched			0	0
+L15_01_004	L15	2	t	cipher	1	0.05	1	0
+L15_01_005	L15			unmatched			0	0
+L15_01_006	L15	3	e	cipher	1	0.00	1	0
+L15_01_007	L15	4	sz	cipher	1	0.26	1	0
+L15_01_008	L15	5	4	cipher	1	0.32	1	0
+L15_01_009	L15			unmatched			0	0
+L15_01_010	L15	6+7	2+m	cipher	1	0.24	0	1
+L15_01_011	L15	8	3	cipher	1	0.05	1	0
+L15_01_012	L15	9	4	cipher	1	0.18	1	0
+L15_01_013	L15	10	g	cipher	1	0.00	1	0
+L15_01_014	L15	11	3	cipher	1	0.32	1	0
+L15_01_015	L15	12	E	cipher	1	0.08	1	0
+L15_01_016	L15			unmatched			0	0
+L15_01_017	L15	13	u	cipher	1	0.32	1	0
+L15_01_018	L15			unmatched			0	0
+L15_01_019	L15			unmatched			0	0
+L15_01_020	L15	14+15	s+t	cipher	1	0.47	0	1
+L15_01_021	L15	16	g	cipher	1	0.45	1	0
+L15_01_022	L15	17	h	cipher	1	0.29	1	0
+L15_01_023	L15	19	q	cipher	0	0.39	1	0
+L15_01_024	L15			unmatched			0	0
+L15_01_025	L15	20	s	cipher	1	0.13	1	0
+L15_01_026	L15	21	dd	cipher	1	0.05	1	0
+L15_01_027	L15	22	d	cipher	1	0.62	0	0
+L15_01_028	L15	23	s	cipher	1	0.00	1	0
+L15_01_029	L15	24	n	cipher	1	0.68	0	0
+L15_01_030	L15			unmatched			0	0
+L15_01_031	L15	25	B	cipher	1	0.24	1	0
+L15_01_032	L15			unmatched			0	0
+L15_01_033	L15			unmatched			0	0
+L15_01_034	L15			unmatched			0	0
+L15_01_035	L15			unmatched			0	0
+L15_01_036	L15	26	y	cipher	1	0.12	1	0
+L15_01_037	L15	27	s	cipher	1	0.42	1	0
+L15_01_038	L15	28+29	t+3	cipher	1	0.37	0	1
+L15_01_039	L15			unmatched			0	0
+L15_01_040	L15	30+31	m+g	cipher	1	0.13	0	1
+L15_01_041	L15	35	yx	cipher	1	0.59	0	0
+L16_01_001	L16	1	B	cipher	1	0.05	1	0
+L16_01_002	L16	2	y	cipher	1	0.04	1	0
+L16_01_003	L16	3	sz	cipher	1	0.16	1	0
+L16_01_004	L16	4	3	cipher	1	0.08	1	0
+L16_01_005	L16			unmatched			0	0
+L16_01_006	L16	5	m	cipher	1	0.32	1	0
+L16_01_007	L16			unmatched			0	0
+L16_01_008	L16	6	g	cipher	1	0.11	1	0
+L16_01_009	L16	7	5	cipher	1	0.34	1	0
+L16_01_010	L16	8	2	cipher	1	0.24	1	0
+L16_01_011	L16	10	o	cipher	1	0.24	1	0
+L16_01_012	L16	11	s	cipher	1	0.05	1	0
+L16_01_013	L16	13+14	p+s	cipher	1	0.22	0	1
+L16_01_014	L16			unmatched			0	0
+L16_01_015	L16	15	g	cipher	1	0.32	1	0
+L16_01_016	L16			unmatched			0	0
+L16_01_017	L16	16	g	cipher	1	0.03	1	0
+L16_01_018	L16			unmatched			0	0
+L16_01_019	L16	17+18	g+B	cipher	1	0.05	0	1
+L16_01_020	L16	19	f	cipher	1	0.05	1	0
+L16_01_021	L16	20	s	cipher	1	0.32	1	0
+L16_01_022	L16	21	g	cipher	0	0.05	1	0
+L16_01_023	L16	22	n	cipher	1	0.24	1	0
+L16_01_024	L16	24+25	E+yx	cipher	0	0.43	0	1
+L16_01_025	L16	26	h	cipher	1	0.18	1	0
+L16_01_026	L16	27+28	b+m	cipher	1	0.24	0	1
+L16_01_027	L16			unmatched			0	0
+L16_01_028	L16			unmatched			0	0
+L16_01_029	L16	29+30	d+4	cipher	1	0.38	0	1
+L16_01_030	L16	31	d	cipher	1	0.01	1	0
+L16_01_031	L16	32+33	u+g	cipher	1	1.29	0	1
+L17_01_001	L17	1	s	cipher	1	0.08	1	0
+L17_01_002	L17	2	g	cipher	0	0.03	1	0
+L17_01_003	L17	3	p	cipher	1	0.64	0	0
+L17_01_004	L17	4	s	cipher	1	0.08	1	0
+L17_01_005	L17			unmatched			0	0
+L17_01_006	L17	5+6	g+o	cipher	1	0.05	0	1
+L17_01_007	L17	7+8	m+s	cipher	1	0.03	0	1
+L17_01_008	L17	9	yx	cipher	0	0.22	1	0
+L17_01_009	L17	11	s	cipher	1	0.03	1	0
+L17_01_010	L17	12	r	cipher	1	0.12	1	0
+L17_01_011	L17	13+14	d+s	cipher	0	0.75	0	1
+L17_01_012	L17	15+16	g+p	cipher	0	0.33	0	1
+L17_01_013	L17	19	k	cipher	1	0.32	1	0
+L17_01_014	L17	20	m	cipher	1	0.53	0	0
+L17_01_015	L17	21	b	cipher	1	0.45	1	0
+L17_01_016	L17	22	g	cipher	1	0.42	1	0
+L17_01_017	L17	23	n	cipher	1	0.03	1	0
+L17_01_018	L17			unmatched			0	0
+L17_01_019	L17	24	s	cipher	1	0.37	1	0
+L17_01_020	L17			unmatched			0	0
+L17_01_021	L17	25	B	cipher	1	0.24	1	0
+L17_01_022	L17	26+27	r+e	cipher	0	0.78	0	1
+L17_01_023	L17	28	u	cipher	1	0.08	1	0
+L17_01_024	L17	29	d	cipher	1	0.25	1	0
+L17_01_025	L17			unmatched			0	0
+L17_01_026	L17	30	f	cipher	1	0.00	1	0
+L17_01_027	L17	32	g	cipher	1	0.00	1	0
+L17_01_028	L17			unmatched			0	0
+L17_01_029	L17	33	3	cipher	1	0.05	1	0
+L17_01_030	L17	34	g	cipher	1	0.16	1	0
+L17_01_031	L17	35+36	2+f	cipher	1	0.42	0	1
+L17_01_032	L17	37	b	cipher	1	0.24	1	0
+L18_01_001	L18	1	g	cipher	0	0.11	1	0
+L18_01_002	L18	3	yx	cipher	0	0.25	1	0
+L18_01_003	L18	4	b	cipher	1	0.00	1	0
+L18_01_004	L18	5	s	cipher	1	0.50	0	0
+L18_01_005	L18	7	8	cipher	1	0.13	1	0
+L18_01_006	L18	8	d	cipher	0	0.67	0	0
+L18_01_007	L18	9	s	cipher	1	0.29	1	0
+L18_01_008	L18	10	g	cipher	1	0.18	1	0
+L18_01_009	L18	11	n	cipher	1	0.05	1	0
+L18_01_010	L18	16+17	b+g	cipher	1	0.03	0	1
+L18_01_011	L18	18	g	cipher	1	0.58	0	0
+L18_01_012	L18	19+20	r+g	cipher	1	0.14	0	1
+L18_01_013	L18			unmatched			0	0
+L18_01_014	L18	21	B	cipher	1	0.21	1	0
+L18_01_015	L18			unmatched			0	0
+L18_01_016	L18	22	f	cipher	1	0.16	1	0
+L18_01_017	L18	23+24	s+n	cipher	1	0.58	0	1
+L18_01_018	L18	25	yx	cipher	1	0.09	1	0
+L18_01_019	L18	26+27	k+g	cipher	1	0.55	0	1
+L18_01_020	L18	28	r	cipher	1	0.62	0	0
+L18_01_021	L18	29	3	cipher	1	0.71	0	0
+L18_01_022	L18	30	B	cipher	1	0.24	1	0
+L18_01_023	L18	31	k	cipher	1	0.76	0	0
+L18_01_024	L18			unmatched			0	0
+L18_01_025	L18	32	g	cipher	1	0.03	1	0
+L18_01_026	L18	33	m	cipher	1	0.16	1	0
+L18_01_027	L18	34	yx	cipher	1	0.96	0	0
+L18_01_028	L18	35	d	cipher	0	0.01	1	0
+L19_01_001	L19			unmatched			0	0
+L19_01_002	L19	1	4	cipher	1	0.03	1	0
+L19_01_003	L19	2	g	cipher	1	0.24	1	0
+L19_01_004	L19	3	2	cipher	1	0.00	1	0
+L19_01_005	L19	4	2	cipher	1	0.00	1	0
+L19_01_006	L19	5	q	cipher	0	0.11	1	0
+L19_01_007	L19	6	g	cipher	0	0.00	1	0
+L19_01_008	L19	8	u	cipher	1	0.05	1	0
+L19_01_009	L19	9	d	cipher	0	0.20	1	0
+L19_01_010	L19	10	s	cipher	1	0.03	1	0
+L19_01_011	L19	11+12	p+g	cipher	0	0.01	0	1
+L19_01_012	L19	14+15	m+d	cipher	0	0.67	0	1
+L19_01_013	L19	16	4	cipher	1	0.45	1	0
+L19_01_014	L19			unmatched			0	0
+L19_01_015	L19	17	B	cipher	1	0.34	1	0
+L19_01_016	L19	18	h	cipher	1	0.13	1	0
+L19_01_017	L19	19+20	g+d	cipher	1	0.04	0	1
+L19_01_018	L19			unmatched			0	0
+L19_01_019	L19	21	u	cipher	1	0.00	1	0
+L19_01_020	L19	22	s	cipher	1	0.03	1	0
+L19_01_021	L19	23	t	cipher	1	0.11	1	0
+L19_01_022	L19	24+25	X+s	cipher	1	0.32	0	1
+L19_01_023	L19	26+27	g+o	cipher	1	0.34	0	1
+L19_01_024	L19	28	r	cipher	1	0.67	0	0
+L19_01_025	L19	29	u	cipher	1	0.32	1	0
+L19_01_026	L19	30	B	cipher	1	0.39	1	0
+L19_01_027	L19	31	d	cipher	1	0.49	0	0
+L19_01_028	L19	32+33	s+g	cipher	1	0.34	0	1
+L19_01_029	L19	34+35	n+n	cipher	1	0.37	0	1
+L19_01_030	L19			unmatched			0	0
+L19_01_031	L19	36	b	cipher	1	0.68	0	0
+L19_01_032	L19			unmatched			0	0
+L19_01_033	L19	37+38	h+g	cipher	1	0.11	0	1
+L19_01_034	L19	39	n	cipher	1	0.16	1	0
+L19_01_035	L19			unmatched			0	0
+L20_01_001	L20	1	s	cipher	1	0.11	1	0
+L20_01_002	L20	2+3	t+g	cipher	1	0.53	0	1
+L20_01_003	L20	4+5	g+t	cipher	1	0.55	0	1
+L20_01_004	L20	6	s	cipher	0	0.21	1	0
+L20_01_005	L20	8	4	cipher	1	0.18	1	0
+L20_01_006	L20	9	g	cipher	1	0.05	1	0
+L20_01_007	L20	10	B	cipher	1	0.05	1	0
+L20_01_008	L20			unmatched			0	0
+L20_01_009	L20	11	f~	struck	0	0.24	1	0
+L20_01_010	L20			unmatched			0	0
+L20_01_011	L20	12	f~	struck	0	0.16	1	0
+L20_01_012	L20	13	h	cipher	1	0.42	1	0
+L20_01_013	L20	14	o	cipher	1	0.45	1	0
+L20_01_014	L20	15+16	u+d	cipher	1	0.14	0	1
+L20_01_015	L20	17+18	yx+o	cipher	1	0.72	0	1
+L20_01_017	L20	19	g	cipher	1	0.21	1	0
+L20_01_018	L20	20	p	cipher	1	0.01	1	0
+L20_01_019	L20			unmatched			0	0
+L20_01_020	L20	21	s	cipher	1	0.26	1	0
+L20_01_021	L20			unmatched			0	0
+L20_01_022	L20	22	g	cipher	1	0.45	1	0
+L20_01_023	L20	23	g	cipher	1	0.37	1	0
+L20_01_024	L20	24	n	cipher	1	0.21	1	0
+L20_01_025	L20	25+26	s+t	cipher	1	0.18	0	1
+L20_01_026	L20	27	yx	cipher	1	0.91	0	0
+L20_01_027	L20	28	2	cipher	1	0.39	1	0
+L20_01_028	L20	29	g	cipher	1	0.03	1	0
+L20_01_029	L20			unmatched			0	0
+L20_01_030	L20	30	4	cipher	1	0.03	1	0
+L20_01_031	L20	31+32	S+s	cipher	0	0.08	0	1
+L20_01_032	L20	33	2	cipher	1	0.21	1	0
+L20_01_033	L20	34	r	cipher	1	0.01	1	0
+L20_01_034	L20	35	g	cipher	1	0.21	1	0
+L20_01_035	L20	36	2	cipher	1	0.13	1	0
+L20_01_036	L20	37	b	cipher	1	0.47	0	0
+L20_01_037	L20	38	B	cipher	1	0.18	1	0
+L20_01_038	L20	39	g	cipher	1	0.24	1	0
+L20_01_039	L20			unmatched			0	0
+L21_01_001	L21	1+2	A+u	cipher	1	0.39	0	1
+L21_01_002	L21			unmatched			0	0
+L21_01_003	L21	3	yx	cipher	0	0.01	1	0
+L21_01_004	L21	4	s	cipher	1	0.11	1	0
+L21_01_005	L21	5	t	cipher	1	0.00	1	0
+L21_01_006	L21	6	8	cipher	1	0.11	1	0
+L21_01_007	L21	7	b	cipher	1	0.21	1	0
+L21_01_008	L21	8	s	cipher	1	0.03	1	0
+L21_01_009	L21	9+10	g+d	cipher	0	0.38	0	1
+L21_01_010	L21	11	4	cipher	1	0.21	1	0
+L21_01_011	L21			unmatched			0	0
+L21_01_012	L21	12	S	cipher	1	0.32	1	0
+L21_01_013	L21	13	3	cipher	1	0.08	1	0
+L21_01_014	L21	15+16	yx+o	cipher	1	0.20	0	1
+L21_01_015	L21	17	s	cipher	1	0.05	1	0
+L21_01_016	L21	18	d	cipher	1	0.80	0	0
+L21_01_017	L21	19	g	cipher	1	0.58	0	0
+L21_01_018	L21	20	E	cipher	1	0.26	1	0
+L21_01_019	L21	21	g	cipher	1	0.21	1	0
+L21_01_021	L21	22	r	cipher	1	0.28	1	0
+L21_01_022	L21	23+24	d+yx	cipher	0	0.29	0	1
+L21_01_023	L21	25	7	cipher	1	0.16	1	0
+L21_01_024	L21			unmatched			0	0
+L21_01_025	L21	26	g	cipher	0	0.32	1	0
+L21_01_026	L21	27+28	f+k	cipher	1	0.29	0	1
+L21_01_027	L21	29	s	cipher	1	0.18	1	0
+L21_01_028	L21	30	g	cipher	1	0.24	1	0
+L21_01_029	L21			unmatched			0	0
+L21_01_030	L21	31	B	cipher	1	0.03	1	0
+L21_01_031	L21	32	yx	cipher	1	0.78	0	0
+L21_01_032	L21	33+34	A+o	cipher	1	0.21	0	1
+L21_01_033	L21	35	s	cipher	1	0.71	0	0
+L21_01_034	L21	36	t	cipher	1	0.00	1	0
+L22_01_001	L22			unmatched			0	0
+L22_01_002	L22	1	s	cipher	1	0.26	1	0
+L22_01_003	L22			unmatched			0	0
+L22_01_004	L22	2	t	cipher	1	0.21	1	0
+L22_01_005	L22			unmatched			0	0
+L22_01_006	L22			unmatched			0	0
+L22_01_007	L22	3	u	cipher	1	0.16	1	0
+L22_01_008	L22			unmatched			0	0
+L22_01_009	L22			unmatched			0	0
+L22_01_010	L22	4	y	cipher	1	0.07	1	0
+L22_01_011	L22			unmatched			0	0
+L22_01_012	L22			unmatched			0	0
+L22_01_013	L22			unmatched			0	0
+L22_01_014	L22	5	sz	cipher	1	0.11	1	0
+L22_01_015	L22			unmatched			0	0
+L22_01_016	L22	6	B	cipher	1	0.11	1	0
+L22_01_017	L22	7	s	cipher	1	0.05	1	0
+L22_01_018	L22			unmatched			0	0
+L22_01_019	L22	8	t	cipher	1	0.16	1	0
+L22_01_020	L22			unmatched			0	0
+L22_01_021	L22	9	u	cipher	1	0.45	1	0
+L22_01_022	L22			unmatched			0	0
+L22_01_023	L22			unmatched			0	0
+L22_01_024	L22			unmatched			0	0
+L22_01_025	L22			unmatched			0	0
+L22_01_026	L22	10	y	cipher	1	0.07	1	0
+L22_01_027	L22			unmatched			0	0
+L22_01_028	L22			unmatched			0	0
+L22_01_029	L22	11	sz	cipher	1	0.00	1	0
+L22_01_030	L22			unmatched			0	0
+L22_01_031	L22	13	yx	cipher	1	0.14	1	0
+L22_01_032	L22			unmatched			0	0
+L22_01_033	L22	14	DATE	date	1	0.61	0	0
+L01_01_033	L01			fragment			0	0
+L03_01_025	L03			fragment			0	0
+L03_01_039	L03			fragment			0	0
+L06_01_017	L06			fragment			0	0
+L07_01_004	L07			fragment			0	0
+L08_01_001	L08			fragment			0	0
+L08_01_023	L08			fragment			0	0
+L11_01_024	L11			fragment			0	0
+L14_01_004	L14			fragment			0	0
+L20_01_016	L20			fragment			0	0
+L21_01_020	L21			fragment			0	0
