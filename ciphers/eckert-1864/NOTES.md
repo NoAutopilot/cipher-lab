@@ -899,7 +899,7 @@ Read so far: 98 of 893 mssEC 19 segments read (the already-read E, N2 and O9 ent
 - [n/a] key-rebuild: period cipher books exist for the three vocabularies in the ledger
 - [n/a] image-check: nothing was read in this pass, so no token to image-check
 - [n/a] retry: no read attempted and no failed attempt to retry
-Verdict: keep going: 2 internal gaps; cheapest next: a verifier pass on E37-E46 (LS-R3, 8 Oct 2026: ten entries read, H 161, C 1, `decode.py --check` exit 0; 1 located in print, ORN I/11 p.68 (E44), 9 not located in what was searched), then the parked E30-E36 and the next priority-1 rows, ~$1 per entry. Earlier: keep going: 2 internal gaps; cheapest next: the next priority-1 rows of `entries-mssEC19.tsv` (LS-R1 read nine as E21-E29: 3 located in print (ORN I/26, OR III/4 + FRUS 1864, OR I/37 pt 2), 6 not located in what was searched, so the filter halves the printed share against D4-E5/D12-E3), ~$1.1 per entry, and a verifier pass on E21-E29 (updated LS-R1, 7 Oct 2026: H 173, C 3, M 2, `decode.py --check` exit 0). Earlier: keep going: 2 internal gaps; cheapest next: add Series III vols 4-5 to the OR check (~$0.5), then read the lowest-`or_cov` priority-1 rows of `entries-mssEC19.tsv`, ~$1.2 per entry (updated LS-PRE, 7 Oct 2026: recall 0.82 and false hits 0/14 on the already-read entries).
+Verdict: keep going: 2 internal gaps; cheapest next: a verifier pass on E47-E54 (LS-R4, 8 Oct 2026: eight entries read, H 104, C 1, I 1, `decode.py --check` exit 0; 2 located in print, OR I/37 pt 1 p.891 (E48) and OR III/4 (E53), 6 not located in what was searched), then the parked E30-E36 and the next priority-1 rows, ~$0.6 per entry. Earlier: keep going: 2 internal gaps; cheapest next: a verifier pass on E37-E46 (LS-R3, 8 Oct 2026: ten entries read, H 161, C 1, `decode.py --check` exit 0; 1 located in print, ORN I/11 p.68 (E44), 9 not located in what was searched), then the parked E30-E36 and the next priority-1 rows, ~$1 per entry. Earlier: keep going: 2 internal gaps; cheapest next: the next priority-1 rows of `entries-mssEC19.tsv` (LS-R1 read nine as E21-E29: 3 located in print (ORN I/26, OR III/4 + FRUS 1864, OR I/37 pt 2), 6 not located in what was searched, so the filter halves the printed share against D4-E5/D12-E3), ~$1.1 per entry, and a verifier pass on E21-E29 (updated LS-R1, 7 Oct 2026: H 173, C 3, M 2, `decode.py --check` exit 0). Earlier: keep going: 2 internal gaps; cheapest next: add Series III vols 4-5 to the OR check (~$0.5), then read the lowest-`or_cov` priority-1 rows of `entries-mssEC19.tsv`, ~$1.2 per entry (updated LS-PRE, 7 Oct 2026: recall 0.82 and false hits 0/14 on the already-read entries).
 
 ## LS-R1 (7 Oct 2026, account 1, for LANE ST-LEDGER)
 
@@ -1013,3 +1013,49 @@ Requests: hdl.huntington.org 10 (IIIF images, all 200; the volunteer text came f
 (djvu I/33, I/36 pt 3, I/42 pt 3, I/43 pt 2, ORN I/11; all 200); be-api.us.archive.org 3 (fts, all 200); www.googleapis.com 15 (Books
 API with key and country=US, all 200). Report what was found and where it was not found; novelty is a verifier's (rule 10): batch
 flagged for LS-V3.
+
+## LS-R4 (8 Oct 2026, account 1, for LANE ST-LEDGER)
+
+Eight priority-1 entries of `entries-mssEC19.tsv` (Sheldon at Fort Monroe, Sampson at Baltimore, Van Duzer at Nashville) read with
+key.md (Cipher No. 1) as E47-E54 in ciphertext.txt; reading.md summary rows and derived block. All eight are Cipher No. 1: key.md reads
+every code-word token but the unread words listed below, so no entry needed key-no2.md or key-no9.md. `python3 decode.py --write` then
+`--check` exit 0. Rows marked `already_read` with LS-R4 and the ID.
+
+| ID | date | from / to (decoded plain) | H | C | I | M | found in print / not located in |
+|---|---|---|---|---|---|---|---|
+| E47 | 6 Apr 1864 3.30 PM | Meigs (QMG) to Lt. Col. Biggs, Fort Monroe: send the Salvor to Annapolis, 1,000 tons of coal afloat at Fort Monroe for Hilton Head | 13 | 0 | 1 | 0 | not located: OR I/33 (`warofrebellion33unit`) grep "Annapolis, if still", "tons of coal", "replace it from the", "Hilton Head. Advise" (Salvor appears only in other items, index p.814); Google Books ("Send Salvor to Annapolis"; Salvor Annapolis Meigs Biggs coal Hilton Head): no relevant hit; IA full text "Salvor to Annapolis": 0 (first try 502, one retry) |
+| E48 | 5 May 1864 11.30 AM | Halleck (signed General-in-Chief) to Wallace, Baltimore | 20 | 0 | 0 | 0 | OR I/37 pt 1 (`warofrebellion371unit`) p.891 (page from the OCR running heads 892-893 that follow), word for word but "of Ohio militia", which has no ledger word |
+| E49 | 12 June 1864 4.10 PM | Meigs (signed Qr Master Genl) to Biggs, chief quartermaster, Fort Monroe: an expedition 16,000 strong to embark at White House tomorrow | 4 | 0 | 0 | 0 | not located: OR I/36 pt 3 (`warofrebellion363unit`, prints Biggs' May letters only) and I/40 pt 2 (`warofrebellion402unit`) grep "sixteen thousand", "16,000 strong", "new base or hospital", "removing stores", "embark at White House"; Google Books (2 queries) and IA full text ("sixteen thousand strong is to embark"): no hit |
+| E50 | 11 Aug 1864 11.30 AM | Meigs (signed Qr Master Genl[?]) to Col. Biggs, Fort Monroe: provision the Continental to bring the General-in-Chief's dispatch from the Department of the South | 17 | 0 | 0 | 0 | not located: OR I/42 pt 2 (`warofrebellion422unit`) prints a related order ("I have ordered Continental to Fort Monroe ... through Colonel Biggs", index p.102), not this telegram; grep "hour of sailing": no hit; Google Books: no hit |
+| E51 | 21 Oct 1864 11 AM | William Henry Whiton to Adna Anderson, Government Railroads, Nashville: accept the proposed Inspector-Generalship | 11 | 0 | 0 | 0 | not located: OR I/39 pt 3 (`warofrebellion393unit`) grep "Adna Anderson", "Whiton", "inspector-generalship" (Anderson appears as superintendent of military railroads in other items); Google Books ("Adna Anderson" "Whiton": a later court record names the two together, not this telegram) |
+| E52 | 7 Nov 1864 11.30 AM | C. A. Dana to Wallace ('Submit'), Baltimore: a rebel agent calling himself Dr Hamilton passed through Elmira going south | 9 | 1 | 0 | 0 | not located: OR I/43 pt 2 (`warofrebellion432unit`) grep "Hamilton ... Elmira", "Elmira ... Thursday", "fine teeth"; Google Books (2 queries) and IA full text ("calling himself Dr. Hamilton": one 1869 London item, another man): no hit |
+| E53 | 12 Nov 1864 11.30 AM | J. C. Kelton, Asst Adjt Genl, to Maj. W. R. Price, Acting Inspector, Cavalry Bureau, Nashville | 20 | 0 | 0 | 0 | OR ser. III vol 4 (1900, serial 125), Google Books snippets "Washington, D. C., November 12, 1864. Acting Inspector, Cavalry Bureau, Nashville, Tenn.: Consolidation of the Second and Fifth Kentucky Cavalry approved. The Secretary of War authorizes enlistment of loyal Alabamians in the First Alabama Cavalry, but without bounties", word for word; page not fixed |
+| E54 | 5 Dec 1864 2.30 PM | Brig. Gen. A. B. Dyer, Chief of Ordnance, to Capt. Edson, Fort Monroe: send to Hilton Head all ordnance supplies ordered for Sherman's army | 10 | 0 | 0 | 0 | not located: OR I/44 (`warofrebellion44unit`) grep "Edson", "ordnance supplies which" (a related order of the same weeks: "Lieutenant Arnold goes to Hilton Head about the ordnance"); Google Books (2 queries) and IA full text ("to hold these supplies on board"): no hit |
+
+Grades: the decoder counts H 104, C 1 over E47-E54 (the C token is E52 "Submit" = Wallace, key.md section 7). By hand: E47 "Vintur"
+(clear on the image; key.md has Vinton = Quartermaster, and the addressee Biggs was a quartermaster) is not read by the decoder and is
+counted I 1 here. E50 "Belcher[?]" (image closer to "Belchr"; volunteer text "Belsher", not in key.md) kept H with the flag. Net: H 104,
+C 1, I 1, M 0. Unread words not in key.md, left as written and not graded: E48 "Season" (the addressee word before Banditti =
+Baltimore; the OR print has Major-General Wallace); E50 "amirs", "ham" (zodiac Wick ham of sailing: "Report hour of sailing" reads
+the sense, not graded); E51 "zbra" (zebra, period); E54 "Toby" (to be, as in E46). Plain-word judgements (`plain:` lines): E49 White
+(White House); E51 question, William; E52 hair; E54 ordnance. E53 "W R[?] Price": the image looks like "W Q", the volunteer text has
+WR; the OR prints Maj. W. R. Price, Asst. Insp. Gen., Cavalry Bureau (I/39 pt 3, Oct 1864). E49 is mostly in clear (4 code words);
+its header time 4.10 PM agrees with the time word Julia = 4 PM.
+
+Image vs volunteer text (image taken in every case): E50 "Belcher[?]" (Belsher); E53 "R[?]" (R). All other words of the eight
+entries agree with the volunteer text; header and last lines of E49 and E53 were partly cut on the crops and read from the
+volunteer text with the visible part agreeing. Pencil glosses in a later hand above E47 ("again", "day", numbers) are not ledger
+text and were not transcribed. The ledger's printed page numbers differ from the image pages in entries-mssEC19.tsv from p.200 on
+(9098 = p.204 on the page, image page 206); block headers carry the printed numbers.
+
+Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`
+fetched once to $S/img; regions set from 500 px thumbnails; crops read by the worker, no subagent; fixed centres throughout):
+`python3 tools/iiif_lines.py --image $S/img/p<pointer>.jpg --out $S/crops/<dir> --prefix p<dir> --region <x,y,w,h> --centres <list>
+--lines-per-crop <n> --max-width 2400` with 8922 `100,1900,2300,820` centres 70,180,290,395,500,615,720, 4; 8957 `100,2120,2300,700`
+50+95k (k=0..6), 4, and `100,1960,2300,240` 60,165, 2; 8983 `100,1780,2300,640` 50+95k, 4; 9042 `100,280,2300,660` 50+95k, 4; 9098
+`100,280,2300,520` 50+95k, 3; 9117 `100,2020,2300,640` 50+98k, 4; 9123 `100,170,2300,740` 50+98k, 4; 9135 `100,170,2300,820` 50+98k, 4.
+
+Requests: hdl.huntington.org 8 (IIIF images, all 200; the volunteer text came from the committed sources/mssEC19); archive.org 9
+(djvu I/33, I/36 pt 3, I/37 pt 1, I/39 pt 3, I/40 pt 2, I/42 pt 2, I/43 pt 2, I/44, I/45 pt 1; all 200); be-api.us.archive.org 7
+(fts; one 502, retried once, 200); www.googleapis.com 15 (Books API with key and country=US, all 200). Report what was found and where
+it was not found; novelty is a verifier's (rule 10): batch flagged for LS-V4.
