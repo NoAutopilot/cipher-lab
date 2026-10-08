@@ -5180,3 +5180,155 @@ Depth sentences: all four checked against reading.md and key.md: true (E145's "H
 - E146: `6-g3` LEADs only on "vitally necessary to sustain the" (IA-global, 26 unrelated items) and the header words (Google Books, OR
   volumes at large): noise. Same-page sibling N2-BK read: a different telegram.
 - Neither rerun changes a class.
+
+## AUDIT (FV-FM2)
+
+Verifier FV-FM2 (account 1, for LANE LEDGER), 8 Oct 2026, 20:46-21:1x UTC by `date -u`; a separate session from the reader FM-R1
+(account 1), not protecting its conclusions. Scope: **E165, E167, E168, E169** (ciphertext.txt, Cipher No. 1, read by FM-R1 from the
+Fort Monroe ledger mssEC 25 = Huntington object 5952; NOTES "## FM-R1"). Nothing decoded beyond key look-ups in key.md. Key source for
+every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. E165, E168 and E169 are key-supplement telegrams: the arbitraries they name (Godfrey, Grainery,
+Goslin, Gazette, Baker, Buffalo, Napier, Native; Orphan, Endless, Season, Submit; Kent, Kearney, Maynard, Macbeth, Lavender, Loadstone,
+Koran, Kennet, Mint, Mogul) are the *content* being sent, not code to be decoded, and are not counted as code groups below.
+
+### 1. Duplicates, prior-work checklist and own transcription
+- **Duplicate diff:** pointer, date and addressee of each entry against every `###` header in ciphertext.txt / -no2 / -no9 and
+  status.json: pointers 5808, 5818, 5584, 5782 occur only in E165-E169's own headers; same-date entries (E105 12 Sept, E53 12 Nov,
+  E54 5 Dec) are other telegrams. **No duplicate.** Sender's copy: none of the four has a sent copy in mssEC 19 or 18 on disk (word grep
+  of `sources/mssEC19`, `sources/mssEC18` for Godfrey/Goslin/Napier/Steedman/Mattawan/arbitraries: no matching entry); the full-text
+  search below (whole collection p16003coll11) finds each only on its own page.
+- Prior-work checklist (hand run; `tools/prior_work.py` not run): (1) own work: grep of NOTES/AUDIT/HYPOTHESES/ciphertext*/status.json
+  and the ROOM tail: only FM-PRE and FM-R1 name these rows, no live claim; (2) leaf: page images 5808 (E165) and 5782 (E169) read whole
+  by this verifier at 2400 px -- the volunteer transcription matches the image word for word for both entries ("make Rambling Editions
+  to no plug Penfield ...", "in number plug pembroke please make following additions ..."); 5584 (E168) was image-read by FM-R1; 5818
+  (E167) not image-read by anyone (transcription only); (3) holder: no gloss on the pages; the key copies are the holder's own key
+  books (below); (4) editions: section 2; (5) antecedents/siblings: the sibling key supplement of 20 May 1864 on p.136 (pointer 5680,
+  Eckert: "add to the list of Extra arbitraries in No. 1 Cipher the words Mackerel and Mutton for Maj. Gen. D. Hunter") found by the
+  full-text search, the same genre; no reply ("answer"/"acknowledge receipt") located for any of the four.
+- **Huntington CONTENTdm full-text search** (p16003coll11, `CISOSEARCHALL`, 10 queries + 2 compound-object lists + 6 IIIF pages, under
+  the hdl token 20:49-20:54 UTC): Steedman (22 hits: 5782 itself; the rest clear Nashville/Decatur telegrams of Dec 1864-Jan 1865 with no
+  Mint/Mogul), "steed" (5782 only), Napier (5808; 3952 = a Confederate Lt. Col. Napier, 1863, unrelated), Goslin (5808; 9935 =
+  mssEC 18 p.269, Jan 1865, "Parsons goslin zebra", another use of the word, not a copy), grainery (5808 only), Paducah (57, generic),
+  Pulaski (38, generic), arbitraries (9: 5584 itself; 5680, 5700, 9412, 6214, 8289, 4768, 8947, 2205 -- other key-change or cipher-discipline
+  telegrams, none a copy of the four), Mattawan (5818 only), Sanborne (5818 only).
+
+### 2. Key copies and print
+**Key copies (period, Huntington; images read by this verifier):**
+- **mssEC 43 (object 428) p.[17], pointer 413:** line "Mint ... do J. B. Steadman ... Mogul" in the main hand, no strike, where
+  mssEC 41 p.17 l.19 has "Maj Gen J. B. McPherson"; foot of the page in red ink "Napier do Stanley | Rosseau Native" and "Maynard Gen A. J.
+  Smith Macbeth"; head "Lavender = Gen C. C. Washburne = Loadstone"; left margin (from p.[16]) "Knox", "Kearney". These agree with E169
+  (Mint/Mogul = Steedman; Maynard/Macbeth; Lavender/Loadstone) and E165 (Napier = Stanley, Native = Rousseau).
+- **mssEC 43 p.[11], pointer 407 ("Places"):** foot, red ink, "Baker Columbia Buffalo" -- E165's third pair. (Tomokiyo, cryptiana
+  civilwar1, "No. 1" section, cites the same line: "mssEC 43, p.11, 'Baker ... Columbia ... Buffalo'".) E165's Pulaski (Godfrey, Grainery)
+  and Paducah (Goslin, Gazette) pairs were not looked for in mssEC 43 (P/G pages not opened): unchecked.
+- **mssEC 44 (object 467):** back fly leaf 1 recto (pointer 462) is the Numerals page and its verso (463) is blank; the "wholly handwritten
+  addenda" Tomokiyo mentions in mssEC 44 was not located on those leaves (leaf "15½" is the Georgia places list, NOTES 19 Sept): unchecked.
+- **Tomokiyo, civilwar1 (cached `sources/cryptiana/web/civilwar1.htm`):** the Friedman Collection copy of Cipher No. 1 "has a printed
+  addenda dated 'September 9, 1864', which has 16 pairs of code words printed and their meaning is handwritten" -- the same date as E169,
+  which sends five of those pairs (ten words) to Sheldon, Beckwith and Caldwell. Tomokiyo also notes mssEC 41's "Maj. Gen. H. W. Halleck"
+  line reads "General-in-Chief" in another copy: E168 is the instruction behind that change. The Friedman addenda itself was not read here.
+
+**Print (OR as IA `_djvu.txt`, letters-only grep and date-window reads):** cached OR I/33, I/45 pt 2, ORN I/10, Butler's *Private and
+Official Correspondence* IV-V; fetched to scratch OR I/39 pt 2, I/41 pt 3, I/42 pt 3, I/45 pt 1 and ORN I/11.
+
+| ID | finding | where |
+|---|---|---|
+| E168 | the key change it makes is borne out in print in three independent printed telegrams: **Submit = Lew Wallace** (Halleck to Wallace, 11 May 1864 = E8, OR I/37 pt 1 p.435; key.md section 7), **Season = Wallace** (E48, 5 May 1864, addressee word at Baltimore, printed to Maj.-Gen. Wallace), **Orphan = Sigel** (E108, 6 July 1864, printed "General Sigel reports", OR I/37 pt 2). Halleck ceased to be General-in-Chief when Grant was assigned to command of the armies on 12 Mar 1864, five days before E168's order to "alter General-in-Chief to Maj. Gen. H. W. Halleck". The telegram itself: not located (OR I/33 "arbitrar": 3 unrelated hits; be-api "additional arbitraries": 31 hits, all 1906-1922 railway/journal usage). | OR I/37 pts 1-2 via E8, E48, E108 (NOTES, AUDIT earlier sections); mssEC 43 Ireland/Italy (NOTES section 3) |
+| E169 | context: Steedman commanded the District of the Etowah in late 1864 (OR I/45 pts 1-2 passim); E105 (12 Sept 1864, three days later) addresses Burbridge as "Kent", printed to Burbridge in OR I/39 pt 2 (FOUND word for word, NOTES LS5-R1c). The telegram itself: not located (be-api "Mint and Mogul" 0, "Maynard and Macbeth" 0, "Kent and Kearney" 2 unrelated 1882 newspaper). | OR I/39 pt 2; I/45 pt 1 |
+| E165 | context: Stanley's IV Corps was at Pulaski and Rousseau commanded at Nashville in mid-Nov 1864 as Hood moved north (OR I/45 pt 1 passim) -- the six arbitraries are for the places and generals of the coming campaign. Telegram: not located (be-api "Godfrey and Grainery" 0). | OR I/45 pt 1 |
+| E167 | context: the transport *Russia* sailed with the Fort Fisher expedition (ORN I/11, order of sailing and "land provisions from the Russia"); a Sanborn carries Butler's personal messages (Butler Corr. IV, May 1864). The telegram: not located (Mattawan: 0 in OR I/42 pt 3, ORN I/10-11, Butler IV-V; Huntington full text 5818 only). | ORN I/11; Butler Corr. IV |
+
+Google Books: 10 queries answered HTTP 429 (shared quota exhausted); host stopped, not a search. Grant Papers, Basler: not searched (no
+entry to or from Grant or Lincoln). Plum (1882) and Bates (1907): not read (Plum vol. 1 pp.47-52 on the cipher books is the first place a
+second audit should look for the 9 Sept 1864 addenda and the March 1864 changes). Press of the day: not searched.
+
+### 3. Grade and reading corrections (FM-R1's table and reading.md)
+- **E165 "Rambling" = Ramble = Follow (-ing)** (H, key.md p.20 l.12): "make following additions" -- the decoder is right; FM-R1 read the
+  sense. "Editions" is a phonetic spelling of "additions", "act Knowledge" of "acknowledge" (plain). **"Columbia" is plain** (the place the
+  new words stand for), not Elizabeth City: the decoder's H on it is wrong. E165: **5 H** (Ramble, Plug, Penfield, Shelby, Shelter) of 5
+  code groups, not 6.
+- **E167 "John" in "John Horner" is the sender's first name**, not John = Grant (the decoder appends "[Maj Genl U.S. Grant] Horner" at the
+  tail): plain. E167: **27 H** of 27 code groups (Knox, Oyster, Bergen, Frog, Spartan, Spoon; the numerals Plunder, Plug, Plank, Prolong,
+  Plaster, Forbid, Fugitive, Lamp, Postpone; Unity x3, Zebra x6, Zodiac x3 = the decoder's 28 less "John"). "Wm breed
+  ford", "Wesport raining here" stay M (not image-read).
+- **E168 read whole.** The second copy is the forward text; the first copy is the same words in reverse order by groups, with copying
+  slips ("Hood under is" for "is under stood", "so far" for "H W"): "In No. [1] [Cipher], on page of additional arbitraries add Orphan
+  [and] Endless for [Major] [General] Franz Sigel, and Season [and] Submit for [Major] [General] Lewis Wallace; also alter General in Chief
+  to [Major] [General] H. W. Halleck. Answer if this is understood. H. W. Halleck." FM-R1's "sense M ... structure not settled" is
+  superseded. Corrections: **"Wallace" is the plain surname**, not the code word Wallace = Ram (decoder wrong, twice); **"Submit" and
+  "Season" are the arbitraries being assigned**, not to be decoded (the decoder's 2 C come out; the meaning they are given agrees with
+  key.md's C row for Submit). E168: **16 H** over the two copies (8 per copy: Plug, Penfield, Tappan, Shelter, Taunton, Shelby, Taunton,
+  Shelter), 0 C, 0 M.
+- **E169:** the decoder decodes the payload (Maynard, Macbeth, Lavender, Loadstone, Koran, Kennet, Mint, Mogul) and so prints "Mint and
+  Mogul" as McPherson in a sentence that assigns them to Steedman. Code groups proper: Plug, Pembroke, Quadrant, Zebra, Tappan, Shelby x3,
+  Shelter x2, Zodiac x2, Unity = **13 H** of 13. "number" is plain; "Jas. a mower in Koran" -- the "in" is the clerk's.
+- **Mint/Mogul conflict (rule 4, HYPOTHESES.md): settled by a second, independent witness.** mssEC 43 p.[17] writes Mint/Mogul = Maj Gen
+  J. B. Steadman in the copyist's main hand; mssEC 41 p.17 l.19 has McPherson. Two key books disagree in the way E169 (dated 9 Sept 1864)
+  says they should: mssEC 41 is the pre-9 Sept state, mssEC 43 the post-9 Sept state. Grade: Mint/Mogul = **McPherson (H) in entries
+  before 9 Sept 1864, Steedman (H) on and after it** (witnesses: E169, Eckert to Sheldon, Beckwith and Caldwell, Washington, 9 Sept 1864;
+  mssEC 43 p.[17], undated). No filed entry other than E169 uses Mint or Mogul in Cipher No. 1, so no reading changes. The same dated
+  split applies to Koran/Kennet (Schenck -> Mower; mssEC 41 already carries "Mower" written over a struck entry), Kent/Kearney (new,
+  Burbridge; E105 of 12 Sept prints it), Maynard/Macbeth and Lavender/Loadstone (already H from mssEC 43).
+- **Key rows the four telegrams supply (not edited here; a key edit changes reading.md and is a fix job):** Orphan, Endless = Maj Gen
+  Franz Sigel and Season = Maj Gen Lew Wallace (from 17 Mar 1864, E168; H as a period instruction, C already from print for Orphan and
+  Submit); Kent, Kearney = Maj Gen Burbridge (from 9 Sept 1864, E169; mssEC 43); Godfrey, Grainery = Pulaski; Goslin, Gazette = Paducah;
+  Baker, Buffalo = Columbia; Napier = Gen Stanley; Native = Gen Rousseau (from 14 Nov 1864, E165; mssEC 43 for the last three). Not
+  added to key.md here; the E105 "Kent" and E48 "Season" unread words would read H under them.
+
+### 4. Classification (key `period`)
+`depth_pct` = H / code-word groups; payload arbitraries excluded (they are the content).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E168** Halleck to Sheldon, Washington, 17 Mar 1864: Orphan/Endless = Sigel, Season/Submit = Lew Wallace, General-in-Chief -> Maj Gen Halleck | **N3** | unknown | **D3** | 100 (16 H of 16) | code clause: Tappan/Taunton = Major, Shelby/Shelter = General, read here and passim (E165, E169, E160); external (non-statistical): the assigned meanings read correctly in three later printed telegrams (Submit E8 OR I/37 pt 1 p.435; Season E48; Orphan E108 OR I/37 pt 2) and mssEC 43 carries the General-in-Chief -> Halleck change; Halleck ceased to be General-in-Chief 12 Mar 1864; matched control FM-R1 (shuffled No. 1 "Secretary of War ... Van Cleve", No. 2 "Communications") |
+| **E165** Eckert to Sheldon, Washington, 14 Nov 1864: six new arbitraries for Pulaski, Paducah, Columbia, Stanley, Rousseau | **N3** (weak: body clear in the public transcription; one of its five assignments, Baker/Buffalo = Columbia, is quoted by Tomokiyo from mssEC 43) | unknown | **D3** (weak: 5 code groups) | 100 (5 H of 5) | code clause: Shelby/Shelter = General passim; external: mssEC 43 p.[11] Baker/Columbia/Buffalo and p.[17] Napier = Stanley, Native = Rousseau agree; image of 5808 read; matched control FM-R1 |
+| **E167** Horner (New York) to Butler via Sheldon, 6 Dec 1864: the steamer Russia examined | **N3** | unknown | **D2** | 100 (27 H of 27) | code clause: Knox = Butler, Frog = New York, the numeral page, passim; no external check of the content (Russia in the Fort Fisher expedition, ORN I/11, is context only); not image-read; D3 withheld |
+| **E169** Eckert to Sheldon, Beckwith and Caldwell, 9 Sept 1864: additions to No. 1 (Burbridge, A. J. Smith, C. C. Washburn, Mower, Steedman) | **N2** | the substance yes: the same date's printed addenda to Cipher No. 1 (Friedman Collection copy, per Tomokiyo civilwar1) and mssEC 43 carry these pairs; no prior mapping of this telegram to them found | **D3** | 100 (13 H of 13) | code clause as E168; external: mssEC 43 p.[17] (Mint/Mogul = Steedman, Maynard/Macbeth, Lavender/Loadstone), mssEC 41 p.16 l.23 (Mower over a struck entry), E105 (12 Sept) printed to Burbridge as "Kent"; image of 5782 read |
+
+- **E168: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 17 Mar 1864, five days after Grant replaced Halleck as
+  General-in-Chief, a telegram signed H. W. Halleck tells Fort Monroe to add Orphan and Endless for Maj. Gen. Franz Sigel and Season and
+  Submit for Maj. Gen. Lew Wallace to No. 1's additional arbitraries, and to alter the entry 'General-in-Chief' to 'Maj. Gen. H. W.
+  Halleck'; the telegram itself not located in the Official Records (ser. I vol. 33), Internet Archive full text or the Huntington's
+  full-text search (searched 8 Oct 2026)." Unsafe: "first", "unpublished". Depth sentence (D3): "On 17 Mar 1864 Washington instructs
+  Fort Monroe to enter Orphan and Endless for Sigel and Season and Submit for Lew Wallace in Cipher No. 1, and to change the book's
+  'General-in-Chief' to 'Maj. Gen. H. W. Halleck'."
+- **E165: N3 (weak).** Safe sentence: "Read at grade H with Cipher No. 1 (only five words are in code): on 14 Nov 1864 Eckert sends Fort
+  Monroe new arbitraries -- Godfrey and Grainery for Pulaski, Goslin and Gazette for Paducah, Baker and Buffalo for Columbia, Napier for
+  General Stanley and Native for General Rousseau -- three of which also stand in the Huntington's key copy mssEC 43; the telegram itself
+  not located in the Official Records (ser. I vol. 45), Internet Archive full text or the Huntington's full-text search (searched 8 Oct
+  2026)." Depth sentence: "On 14 Nov 1864, as Hood's army threatened Middle Tennessee, Eckert gave Fort Monroe new code words for Pulaski,
+  Paducah and Columbia and for Generals Stanley and Rousseau."
+- **E167: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 6 Dec 1864 John Horner at New York reports to Butler through Fort
+  Monroe that he has examined the steamer Russia -- poor accommodation, bad for horses, good outside, draft 7½ feet, length 205 feet,
+  depth 12 feet, not over 14 miles an hour -- and that the Mattawan is not the craft for Butler's service; not located in the Official
+  Records (ser. I vol. 42 pt 3), the Naval Official Records (ser. I vols. 10-11), Butler's printed correspondence, Internet Archive full
+  text or the Huntington's full-text search (searched 8 Oct 2026)." Depth sentence (D2): "On 6 Dec 1864 Horner tells Butler the steamer
+  Russia is 205 feet long, draws 7½ feet and makes no more than 14 miles an hour, and that the Mattawan will not do."
+- **E169: N2** (lowered from what a reader might expect: the plaintext substance -- the 9 Sept 1864 additions to Cipher No. 1 -- is in a
+  printed addenda of that date and in mssEC 43, both held by others; only this telegram's sending of it is ours). Safe sentence: "Read at
+  grade H with Cipher No. 1: on 9 Sept 1864 Eckert sends Sheldon, Beckwith and Caldwell additions to Cipher No. 1 -- Kent and Kearney for
+  Burbridge, Maynard and Macbeth for A. J. Smith, Lavender and Loadstone for C. C. Washburn, Koran and Kennet moved from Schenck to Mower,
+  Mint and Mogul moved from McPherson to Steedman -- the same day as the printed addenda to No. 1 that Tomokiyo describes in the
+  Friedman copy." No status.json row, no SO row (N2). Depth sentence (D3): "On 9 Sept 1864 Eckert orders the No. 1 code words Mint and
+  Mogul moved from the dead McPherson to Gen. James B. Steedman."
+- Not N4 for any: Plum and Bates, the Friedman copy's addenda, HathiTrust, JSTOR, Google Books (429) and the press of the day are unread.
+- Second audits (account-3 VERIFY lane): E168 (N3 D3), E165 (N3 weak D3), E167 (N3 D2) -- WORK-QUEUE row AUD2-LEDGER-4. Start with Plum
+  vol. 1 pp.47-52 and the Friedman copy's 9 Sept 1864 addenda (whether it also lists E165's or E168's words), and Butler Corr. V for the
+  Russia (Dec 1864).
+
+### 5. Postmortem
+- No over-claim in FM-R1's wording. Under-read: E168's sense, left "not settled", reads whole from the second (forward) copy. Mis-counts:
+  the decoder decodes key-supplement payload words (Columbia, Submit, Season, Mint/Mogul, Maynard ...) and plain names (Wallace, John)
+  as code; for a key-supplement telegram only the frame words are code. Lesson for readers: in an "add/make the following additions"
+  telegram, grade the frame and list the payload as key evidence, not as tokens.
+- FM-R1's Mint/Mogul conflict is a dated key change, not a data error: two key books on either side of it (mssEC 41, mssEC 43) settle
+  it. HYPOTHESES.md updated.
+- Corrections for a fix worker (~$0.4): reading.md / NOTES "## FM-R1" grade cells for E165 (5 H), E167 (27 H), E168 (16 H, 0 C), E169
+  (13 H); an exceptions entry so decode.py leaves payload words and "Wallace", "John", "Columbia" plain in these entries; and the key rows
+  listed in section 3 (dated), under `decode.py --check`. `decode.py --check` not re-run here (no reading file touched).
+- Requests: hdl.huntington.org 19 (10 dmQuery, 1 dmQuery title, 2 dmGetCompoundObjectInfo, 6 IIIF pages to scratch; token 20:49-20:54
+  UTC); archive.org 5 (`_djvu.txt` to scratch); be-api 6; googleapis.com books 10 (all 429; should have stopped after the first -- the
+  loop ran without a stop-on-429 check). Subagents 0.
+- Rows written in this session: status.json results for E168, E165, E167 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
+  SO-ECKERT-E165, SO-ECKERT-E167, SO-ECKERT-E168 (prompts in second-opinions/); WORK-QUEUE.tsv AUD2-LEDGER-4; HYPOTHESES.md Mint/Mogul
+  settled.
