@@ -2479,3 +2479,101 @@ print_check 12, api.openalex.org print_check 15, api.crossref.org print_check 4,
   E50, E51, E52 rows `audit_status` "two audits", `audit_refs`, gap and safe line updated; depth and depth_pct unchanged.
   SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E49 and -E54 withdrawn (N2), their prompts' context lines name the prints; SO-ECKERT-E51's
   prompt gains the Nashville Daily Union line; -E50, -E52 unchanged. JSTOR-QUEUE.tsv: 5 rows added (section 2).
+
+## AUDIT (LS-V2c)
+
+Verifier LS-V2c (account 1, LANE ST-LEDGER-2), 8 Oct 2026, 04:17-04:4x UTC by `date -u`; a separate session from the reader (LS-R2c)
+and from every other reader of the batch, not protecting its conclusions. Scope: LS-R2c's entries **E30-E36** (mssEC 19 pp.157-166,
+McCaine at Harper's Ferry / Charlestown, Aug 1864, Cipher No. 1, key.md = mssEC 41). Nothing decoded beyond re-running the committed
+script after the image corrections below. Key source for every item: `period` (the War Department's own Cipher No. 1 book).
+
+### 1. Re-derivation (rule 7) and image check (three entries, the longest among them)
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0, before and after the corrections below.
+- Strip crops from the 2400 px IIIF images (scratch, not committed): `python3 tools/iiif_lines.py --image $S/img/p9055.jpg --out
+  $S/crops/9055 --prefix p9055 --region 100,300,2300,1000 --lines-per-crop 3 --overlap 0 --max-width 2400 --debug` (auto centres
+  121..936); `python3 tools/iiif_lines.py --image $S/img/p9060.jpg --out $S/crops/9060 --prefix p9060 --region 100,200,2300,680
+  --centres 86,163,240,317,394,471,548,625 --lines-per-crop 3 --max-width 2400` plus two PIL crops of the same file (rows 280-420 and
+  700-960, the header and the closing lines); `python3 tools/iiif_lines.py --image $S/img/p9056.jpg --out $S/crops/9056 --prefix
+  p9056 --region 100,300,2300,1400 --centres 84+79k (k=0..15) --lines-per-crop 4 --max-width 2400`.
+- **E33 (9055)**, all ten body lines: word for word with ciphertext.txt ("Camel Thayer", "Quicken ment", "Reading - ped wal - rus.",
+  "Chisel plane ax saw" as transcribed). No correction.
+- **E34 (9056, the longest entry, 15 lines)**: every line read agrees with ciphertext.txt ("federal out", "Fits shew Happy", "Sperry
+  will and Thorn towns", "Bore Did you get letter yet"); the faint pencil glosses above line 1 (a later hand) are not transcribed, as
+  LS-R2c said. No correction.
+- **E36 (9060)**, all eight lines: two corrections, both places where LS-R2c's text follows the volunteer transcription against the
+  image. (a) Line 3 opens **"More cool and careful"**, not "Move" (the final letters match "whore" in line 7). (b) The word written
+  above the struck "signed" in line 7 is **"walrus"**, not "wolves"; key.md p.23 l.18 gives Walrus = Signature, so the clerk replaced
+  the plain word with its code word (H). Both are confirmed by the print found in section 3 ("cool and careful reports ..."). Applied
+  to ciphertext.txt; `decode.py --write`, `--check` exit 0.
+- Tokens graded I/M: LS-R2c graded none. Reading the decode against the print (section 2) finds code-word values that the print
+  contradicts; they are regraded here (not H):
+  E35 "Govern whore B Rough" = Governor Brough and "John B Rough" = John Brough (the print signs "JNO. BROUGH"), "rely abel" = reliable --
+  the decoder had read Govern as the numeral 18, John as Grant and abel as Vermont; now in the block's `plain:` line (C from the
+  print), E35 code-word H 30 -> 27. E36 "Govern whore B rough" the same (plain); with walrus added, E36 stays H 14.
+  E32 "aaron" (key: Rhode Island) stands where the print has "Two more regiments **on** their way" -- M (value contradicted by the
+  print); "Grant" (left plain by LS-R2c) stands where the print has Warrenton, i.e. the code word Grunt (key p.14) misspelt -- I.
+  E31 "vincent" (key: Quartermaster) stands where the print has the colon after "reports as follows" -- M (probably for violet =
+  quotation). E36 "polecat" (not in key.md) = "Commandant", from the Mereness Calendar quotation -- C. E33 "Reading - ped" = Reading
+  (key: Equip) + ped = "equipped", H by the key though the decoder leaves it plain because of the split.
+
+### 2. Entries LS-R2c located in print: page confirmed by script (a check, not a search)
+IA `warofrebellion431unit_0` (OR ser. I vol. 43 pt 1) `_djvu.txt`, whitespace-normalized, phrase regex, page from the nearest running heads.
+| ID | printed at | how confirmed |
+|---|---|---|
+| E30 | OR I/43 pt 1 **p.859** (Augur to Sheridan, Charlestown, 20 Aug 1864) | between the heads "UNION. 857/858" and "859", end of p.859 before the head "860": "Major Waite, Eighth Illinois Cavalry, left Muddy Branch at 12 m. to-day, on his scout toward the gaps. He has about 650 men. I directed him to carry out the orders of General Grant, which you sent me, as far as he could, but not to let it interfere with his scouting. I have no report yet from Lazelle." Word for word with the decode (ledger has no "yet") |
+| E31 | OR I/43 pt 1 **pp.871-872** (Augur to Sheridan, 21 Aug 1864, 7.30 a.m.) | "Lazelle has returned, and reports as follows: There are at Warrenton about 2,000 infantry and about 500 cavalry, and a large force of 10,000 men, cavalry and infantry, at Culpeper, moving up toward Warrenton. The rebels are using the roads between Warrenton and Chester Gap and Manassas Gap ... He does not mention how he ascertained these figures. He has most probably depended upon reports of citizens. I will learn more definitely and inform you." Word for word; ledger tail "sent long letter Cumberland issue directed" is a clerk's note, not in print |
+| E32 | OR I/43 pt 1 **p.872** (Augur to Sheridan, OCR "August 27, 1864 -- 9.30 p.m.") | the item follows E31 directly among the 21 Aug items (the next one reads OCR "August 31" for 21), so the OCR "27" is 21 misread; "Lazelle says he received his information concerning the enemy's forces at Culpeper from a citizen who had just left there. He also informed him about the forces at Warrenton. Colonel Gansevoort, with his regiment, the Thirteenth New York Cavalry, goes out to-morrow to scout in the vicinity of those places. The Forty-first New York arrived here from Hilton Head to-day, about 400 men. Two more regiments on their way." Word for word but for the two tokens regraded above; ledger time 10 PM against print 9.30 p.m. |
+| E34 | OR I/43 pt 1 **p.897** (Augur to Sheridan, Harper's Ferry, 24 Aug 1864) | between heads 896 and 898: "I have no news from the Eighth Illinois Cavalry, or from Gansevoort. A refugee just in from Culpeper ... Fitzhugh Lee, with his cavalry, about 3,000, and part of Longstreet's corps, about 10,000, left there to join Early last Friday a week. He thinks they went through Sperryville and Thornton's Gap. Mosby, with two pieces of artillery, attacked the small cavalry force at Annandale this morning ... The force there is in a stockade." Word for word |
+| E35 | OR I/43 pt 1 **p.951** (Brough to Stanton, Columbus, 28 Aug 1864, received 10 a.m. 29th); also OR I/39 pt 2 (IA `warofrebellion392unit`) | end of p.951 before the head "952": "Our military agent at Gallipolis telegraphs me this morning, 'I have reliable information of Breckinridge's advance into the Kanawha Valley with 8,000, via Lewisburg.' General Heintzelman left for Chicago this morning under your order. I have telegraphed him on the way. I have the State battery at Camp Dennison and three regiments of National Guard at Gallipolis. No general officer in the State. JNO. BROUGH." The ledger copy is the War Department's relay of Brough's telegram to Sheridan's army; word for word but for the three plain words the decoder had misread |
+
+### 3. Entries LS-R2c did not locate: search (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| OR by date and correspondent, +/- 3 days | ser. I vol. 43 pts 1-2 (`warofrebellion431unit_0`, `432unit`), vol. 39 pt 2 (`392unit`), ser. III vol. 4 (`warofrebellionco0004genf`), whole volumes, regex on normalized text: discredit, Gallipolis, cool and careful, hundred/100-days, valley open, Brough (every hit read); Twenty-fifth New York Cavalry, train of forges/wagons, forges, Thayer, equipped, dismounted men, 375, 350 men, escorted by | **E36: not printed in the OR**, but its context is: Stanton to Brough 29 Aug (I/43 pt 1, "If the report of your agent be true Sheridan has been very much deceived"), Stanton to Brough 30 Aug (Sheridan asks the removal of the Gallipolis agent "as an alarmist or a Copperhead"), Brough to Stanton 30 Aug ("perhaps I was too quick in acting on it"), and I/39 pt 2 Heintzelman to Halleck, Chicago 30 Aug: "Commander at Gallipolis reports that rumors do not bear investigation, and thinks the reports of an advance in the valley a canard" -- the same report by another channel. **E33: no hit**; context only, I/43 pt 1 brigade itinerary: "August 24 ... the Twenty-fifth New York Cavalry was assigned to the brigade" (Sheridan's cavalry), consistent with E33's regiment "ordered to you" on 22 Aug |
+| Google Books API (key, country=US) | E36: "careful reports from Gallipolis", "discredit the telegraph of this morning", "leaves the valley open" Gallipolis, "return of the hundred days men" Gallipolis 1864, Brough Stanton Gallipolis "no advance" 1864, "cool and careful reports", "Commandant of the Posts here thinks" (503); E33: "small train of forges" (503 once, then answered), "forges and other wagons" 1864 / Thayer, "Twenty-fifth New York Cavalry" with 350 men, dismounted 25th NY Cavalry Aug 1864 | **E36 in print: _The Mereness Calendar: Federal Documents on the Upper Mississippi Valley, 1780-1890_ (Illinois Historical Survey; G. K. Hall, 1971), Google Books id NlwPAQAAMAAJ, snippet only: "... cool and careful reports from Galipolis discredit the telegram of this morning. Commandant of the Posts here thinks no advance is making but the return of hundred days men leaves the valley open". 0-24. C. W.D. L.R. ..."** -- the calendar quotes the telegram from the War Department letters/telegrams received file; volume and page not read (snippet view), the quoted words agree with the decode token for token. E33: no hit |
+| 1864 press (loc.gov Chronicling America JSON) | E36: "careful reports from Gallipolis" 29 Aug-15 Sept (0), Gallipolis Breckinridge discredit 29 Aug-10 Sept (1: Cumberland Civilian & Telegraph 8 Sept p.3, read by script: a soldier's letter about the Gallipolis hospital, not this), "leaves the valley open" (0), Gallipolis Breckinridge Kanawha 29 Aug-6 Sept (0), Brough Gallipolis canard (0); E33: "small train of forges" 22 Aug-10 Sept (0), "Twenty-fifth New York Cavalry" Harper (0, one connection reset), Augur train forges Harper (0) | no hit for either telegram |
+| IA full text, all items (be-api fts) | "careful reports from Gallipolis" (0), "leaves the valley open" (0), "discredit the telegraph" (502, not retried), "small train of forges" (0), "forges and other wagons" (2, a modern book about another campaign), "all mounted and equipped" "Twenty-fifth New York" (0) | no hit |
+| Sender's and recipient's papers | E36: Brough's own papers are the Ohio governor's telegram books (Ohio History Connection), not read; the Mereness Calendar covers the War Department file. E33: sender unread (signature group "Chisel plane"), recipient Sheridan: Sheridan's Personal Memoirs and the Sheridan Papers (LOC) not read page by page | unread (E33) |
+| OpenAlex, Semantic Scholar, CORE (keys) | Twenty-fifth / 25th New York Cavalry 1864 Harper's Ferry / Shenandoah, forges train | OpenAlex 28 results, S2 29, none about this; CORE returned no usable answer (one call, not retried) |
+| JSTOR | 2 rows appended to JSTOR-QUEUE.tsv for E33, families (i) and (ii) | pending (never blocks) |
+| Unread / unreachable | NARA RG 107 (telegrams received/sent by the Secretary of War; Augur's Dept of Washington letters sent, RG 393), the 25th New York Cavalry's regimental books and any regimental history page by page, HathiTrust full text, the Mereness Calendar page itself | unread |
+
+### 4. Classification (key `period` for all seven)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E30 Augur to Sheridan, 20 Aug 1864 | N1 | known (OR I/43 pt 1 p.859) | D4 | 100 (22/22 H) | word for word with the print |
+| E31 Augur to Sheridan, 21 Aug 1864 7.30 AM | N1 | known (OR I/43 pt 1 pp.871-872) | D3 | 96.7 (29 H of 30; vincent M) | print |
+| E32 Augur to Sheridan, 21 Aug 1864 10 PM | N1 | known (OR I/43 pt 1 p.872) | D3 | 96.9 (31 H of 32; aaron M; Grant = Grunt I) | print |
+| E33 to McCaine for Sheridan's cavalry, 22 Aug 1864 | **N3** | unknown | D3 | 93.3 (28 H of 30; signature "Chisel plane" unread; "ax saw" closing group not counted, as LS-R2c) | image crop checked here, all lines; fresh re-derivation; OR I/43 pt 1 itinerary: 25th New York Cavalry assigned to the cavalry brigade 24 Aug 1864 |
+| E34 Augur to Sheridan, 24 Aug 1864 | N1 | known (OR I/43 pt 1 p.897) | D4 | 100 (37/37 H) | image crop checked here; word for word with the print |
+| E35 Brough to Stanton, 28 Aug 1864, relayed 29 Aug | N1 | known (OR I/43 pt 1 p.951; OR I/39 pt 2) | D4 | 100 (27/27 H after regrading Govern/abel/John as plain, C) | word for word with the print |
+| E36 Brough to Stanton, 29 Aug 1864, relayed 8 PM | **N1** | known (Mereness Calendar 1971, snippet) | D3 | 100 (14/14 H; polecat = Commandant C) | image crop checked here, all lines; the calendar quotation agrees token for token |
+
+- **E33: N3** -- no prior plaintext or decipherment located after the logged search. Not N4: the sender is unread, NARA RG 107/393,
+  the regimental records, HathiTrust full text and the Sheridan Papers are unread, JSTOR rows pending. Safe sentence: "Read at grade H
+  with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I vols. 39, 43 and
+  ser. III vol. 4 by date and correspondent), the 1864 press in Chronicling America, Internet Archive full text or Google Books
+  (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never printed". It is the weak kind of N3 (an operational routine message,
+  the regiment's movement is in print as an itinerary line); a second audit should read the 25th New York Cavalry's record and
+  Augur's letters-sent for 22 Aug before it is counted outward.
+- **E36: N1, not N3.** LS-R2c's "not located" was a search result in the OR; the telegram's own words are quoted in the Mereness
+  Calendar. The ledger copy is our independent re-decipherment of a printed text.
+- **E30-E32, E34, E35: N1**, independent re-decipherments of telegrams printed in OR I/43 pt 1 (E35 also I/39 pt 2). Not counted.
+- Depth sentence for E33 (D2+, checked against the derived block): "On 22 Aug 1864 Washington tells McCaine at Harper's Ferry, for
+  Sheridan, that a small train of forges and other wagons for his cavalry left the day before, escorted by the 25th New York Cavalry,
+  350 men, ordered to him, together with a detachment of 375 men belonging to the 1st and 3rd Cavalry Divisions, all mounted and
+  equipped." Code clause: Panama = Cavalry reads sensibly in E33 three times and in E31, E34 (independent contexts); the H stretch
+  "Stomach here yesterday for Camel Thayer Escorted by the harsh plaster frog pacific pebble prolong & mansion spits" is a contiguous
+  run of H/plain past the authentication distance.
+
+### 5. Postmortem
+- One under-search: E36 was reported "not located" after the OR and two Google Books queries; a quoted-phrase Google Books query on
+  the decoded words found it in a printed calendar. The press-and-calendar step of the brief is what moved it; the OR-only search would
+  have counted it N3.
+- Two transcription errors carried from the volunteer text (E36 "Move", "wolves"), corrected from the image; LS-R2c's own NOTES said
+  E36 lines 1-4 only were read at crop resolution, which is where the reading stopped trusting the image.
+- Grade over-claim corrected: the decoder's H on plain words split by the clerk (E35 Govern, abel, John; E36 Govern) and on values the
+  print contradicts (E31 vincent, E32 aaron). E35 H 30 -> 27 by `plain:` lines in ciphertext.txt; E31/E32 are recorded here as M/I
+  (not edited in the source, since the code word is what the clerk wrote).
+- Rows: status.json one result row for E33 (N3, audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv row SO-ECKERT-E33 with its prompt
+  in second-opinions/; two JSTOR-QUEUE.tsv rows. Requests: in the ROOM done line.

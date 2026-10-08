@@ -1101,6 +1101,12 @@ plus `431unit` and `433unit` fetched on a wrong guess: `431unit` is I/47 pt 2, `
 novelty is a verifier's (rule 10): batch flagged for the verifier (LS-V2c). Five of seven entries (E30, E31, E32, E34, E35) are located in OR I/43 pt 1
 by phrase; the filter's `or_cov` had not flagged them.
 
+Verifier note (LS-V2c, 8 Oct 2026, AUDIT.md "## AUDIT (LS-V2c)"): E36 is in print after all -- its words are quoted in The Mereness Calendar
+(1971, Google Books NlwPAQAAMAAJ, snippet), so the row's "not located" holds only for the OR and E36 is N1; E33 is the one N3 of the batch. Image
+corrections applied to ciphertext.txt: E36 "More cool" (not "Move") and "walrus" (= Signature, not "wolves"). Grade corrections: E35 Govern, abel,
+John and E36 Govern are plain (Governor/John Brough, reliable), now in `plain:` lines (E35 H 30 -> 27); E31 vincent and E32 aaron are M against the
+print, E32 "Grant" is the code word Grunt = Warrenton (I). Print pages fixed: E30 p.859, E31 pp.871-872, E32 p.872, E34 p.897, E35 p.951 (also OR I/39 pt 2).
+
 ## LS-R6 (8 Oct 2026, account 1, for LANE ST-LEDGER-2)
 
 Step 2 (script, `ls_r6_no1_1865.py`, output `ls_r6_no1_1865.out`): share of non-function tokens of an entry found in key.md's code-word

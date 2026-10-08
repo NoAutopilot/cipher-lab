@@ -469,9 +469,9 @@ Code-word tokens: H 37.
 
 **E35 | Page 163 | 9057 | 29 Aug 1864, to McCaine at Harper's Ferry (R. R. McCaine, No 3; operator not given)**
 
-[Follow (-ed, -ing)]ing for [Information] [.] The mily Agt at Gal lip old list [Telegraph (-ed, -ing)]'s [18] whore B Rough this morning ramparts ["] I have rely [Vermont] [Information] of [Breckenridge]'s [Advance (-ed, -ing)] into the [Kanawha] [Valley] with [8000] [Men] [By the way of] Lewis bug ["] [Maj Gen S. P. Heintzelman] left for Chicago this morning under your utopia [Secretary of War] utopia order I have [Telegraph (-ed, -ing)]d him [Over the] way [.] I have the slate [Battery] at Paxton Dennison & [3] [Regiment]'s of national [Guard (-ed, -ing)]'s at Gal lip o less no [General] officer [In the] state  {tail: [signed] [Maj Genl U.S. Grant] B Rough}
+[Follow (-ed, -ing)]ing for [Information] [.] The mily Agt at Gal lip old list [Telegraph (-ed, -ing)]'s Govern whore B Rough this morning ramparts ["] I have rely abel [Information] of [Breckenridge]'s [Advance (-ed, -ing)] into the [Kanawha] [Valley] with [8000] [Men] [By the way of] Lewis bug ["] [Maj Gen S. P. Heintzelman] left for Chicago this morning under your utopia [Secretary of War] utopia order I have [Telegraph (-ed, -ing)]d him [Over the] way [.] I have the slate [Battery] at Paxton Dennison & [3] [Regiment]'s of national [Guard (-ed, -ing)]'s at Gal lip o less no [General] officer [In the] state  {tail: [signed] John B Rough}
 
-Code-word tokens: H 30.
+Code-word tokens: H 27.
 
 **E59 | Page 59 | 8951 | 27 Apr 1864 11.30 AM, to Kitchen (F. S. Van Valkenburg)**
 
@@ -487,7 +487,7 @@ Code-word tokens: H 8.
 
 **E36 | Page 166 | 9060 | 29 Aug 1864 8 PM, to McCaine at Harper's Ferry (sent to Beckwith and McCaine; operator not given)**
 
-Following just recd ["] [Columbus] to [Secretary of War] [.] Move cool and careful [Report]'s from Gal I pole is dies credit the [Telegraph (-ed, -ing)] of this morning stop polecat [Post] there thinks no [Advance (-ed, -ing)] is making but the return [Of the] [100] day [Men] leaves the [Valley] open wolves [18] whore B rough ["] sent to Beckwith & McCaine
+Following just recd ["] [Columbus] to [Secretary of War] [.] More cool and careful [Report]'s from Gal I pole is dies credit the [Telegraph (-ed, -ing)] of this morning stop polecat [Post] there thinks no [Advance (-ed, -ing)] is making but the return [Of the] [100] day [Men] leaves the [Valley] open  {tail: [signed] Govern whore B rough ["] sent to Beckwith & McCaine}
 
 Code-word tokens: H 14.
 
@@ -563,5 +563,5 @@ The publicnation of Sand hers despatch was an Enormous blunder Twas done by Tyco
 
 Code-word tokens: H 2.
 
-Totals over the 72 entries: H 1177, C 14, I 0, M 0.
+Totals over the 72 entries: H 1174, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
