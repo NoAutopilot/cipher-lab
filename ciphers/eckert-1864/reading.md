@@ -377,5 +377,41 @@ Code-word tokens: H 13.
 
 Code-word tokens: H 20.
 
-Totals over the 41 entries: H 667, C 12, I 0, M 0.
+**E49 | Page 91 | 8983 | 12 June 1864 4.10 PM, to Biggs, chief quartermaster, Fort Monroe (operator Sheldon)**
+
+for Biggs Chf qm ---- An Expedition sixteen thousand strong is to [Embark (-ed, -ing)] at White House [Tomorrow] Send to that place immedy Every vessel fitted to aid in this movement & in removing stores & wounded to a new base or hospital signed [Qr Master Genl U.S.] {time: 4 PM}
+
+Code-word tokens: H 4.
+
+**E50 | Page 149 | 9042 | 11 Aug 1864 11.30 AM, to Col. Biggs at Fort Monroe (operator Geo. D. Sheldon)**
+
+[Washington] [11] {time: 11.30 AM} For [Colonel] Biggs [Quartermaster] [.] Provision and water the Continental to bring whiskey [From the] [Department] [Of the] [South] and [As soon as] a dispatch preparing by [General-in-Chief] amirs send her with it to Hit on Head [.] [Report] ham of sailing  {tail: [signed] Meigs [Qr Master Genl U.S.][?] [General-in-Chief]'s dispatch gone forward}
+
+Code-word tokens: H 17.
+
+**E51 | Page 204 | 9098 | 21 Oct 1864 11 AM, to Adna Anderson (operator J. C. Van Duzer, Nashville)**
+
+[Washington] {time: 11 AM} [21] for Adna Anderson Office [Government] [Rail Road] [Nashville] zbra accept promptly with out question the proposed Inspect or [General] ship [,] It is all right [,] greatly increased powers better advantages and you will like it  {tail: [signed] William Henry Whiton Deliver personally}
+
+Code-word tokens: H 11.
+
+**E52 | Page 223 | 9117 | 7 Nov 1864 11.30 AM, to 'Submit' at Baltimore (operator Sampson)**
+
+{time: 11.30 AM} For [Maj. Gen. Lew Wallace (Baltimore)] [.] A [Rebel] agent calling himself Dr Hay mill ton passed through Elmira on his way [South] on Thursday last [.] He is [6] feet [2] inches high with light hair must ache & whiskers & fine teeth  {tail: [signed] [C. A. Dana] catch him}
+
+Code-word tokens: H 9, C 1.
+
+**E53 | Page 229 | 9123 | 12 Nov 1864 11.30 AM, to W. R. Price, Acting Inspector, Nashville (operator Van Duzer)**
+
+[Washington] {time: 11.30 AM} [12] For [Major] W R[?] Price Actg Inspector [Cavalry] Bureau [Nashville] [.] Consolidation of [2] and [5] [Kentucky] [Cavalry] approved [.] [Secretary of War] authorizes Enlistment of Loyal [Alabama]ers [In the] [1] [Alabama] [Cavalry] but with out bounties  {tail: [signed] Jay sea Kelton assist [Adjt Genl. U.S.] how is your health today}
+
+Code-word tokens: H 20.
+
+**E54 | Page 241 | 9135 | 5 Dec 1864 2.30 PM, to Edson at Fort Monroe (operator Geo. D. Sheldon)**
+
+{time: 2.30 PM} [5] for [Captain] Edson [Monroe] Confidential [.] Send immy to Hillton head [South Carolina] all ordnance supplies which have been ordered for Kidnap's [Army] [.] Write to Lute Arnold Ord Officer at Hill ton head to hold these supplies on board vessel Toby landed and issued at such place or places as may be then ordered  {tail: [signed] A. B. Dyer [Brigadier General] chief}
+
+Code-word tokens: H 10.
+
+Totals over the 47 entries: H 738, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
