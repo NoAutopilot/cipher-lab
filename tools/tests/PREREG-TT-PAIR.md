@@ -26,3 +26,22 @@ B text the co-alignment carries no letter identity, so precision falls toward ch
 shuffled-order null of the same text, which this is not.
 Outcome wording: all four hold -> shelf grade `controlled-only` (semi-synthetic, passes); any fails -> `weak`, evidence
 "controlled-only: failed <item>".
+
+## Addendum, 8 Oct 2026 ~23:00 UTC (date -u), before the run: a REAL two-copy case on disk
+
+After the Servien control above had run (result: all four items held, both designs), a real two-copy ciphertext with a
+known answer was found on disk: BnF Espagnol 132, Philip II to Vargas Mexia, 19 Sept 1578, f.89r-f.91r and its duplicate
+cipher copy f.93r-f.95r (`ciphers/es132-vargas-mexia-1578/`, both transcribed, key Cp.30 from Tomokiyo's cp30.png in
+`key.tsv`). One key, two encipherments by the clerk; about 4% of aligned pairs are homophone/notation variants, the rest
+identical tokens, and the two readings carry ~9% reader error each (dup_align_summary.json). Harness:
+`python3 tools/tests/cipher_pair_es132.py --out tools/tests/fixtures/tt_pair_es132.tsv` (no key given to the tool).
+Pass line, all must hold, for shelf grade `proven` (else the grade stays `controlled-only` from Servien, with this case's
+numbers in evidence):
+1. precision of accepted equivalences (both symbols decode the same under Cp.30) >= 0.80;
+2. at least 10 accepted NON-identical pairs (a symbol in one copy equated with a different symbol in the other: the
+   homophone identification practice 7 is for), with precision >= 0.60;
+3. null (copy B = the other Cipher 3 letters on disk, same key and hand, different text, cut to the same length):
+   precision at least 0.30 below the real case's;
+4. column agreement with align_dup.py's key-assisted alignment (dup_align.tsv) >= 0.80.
+Caveat stated now: the two copies here are mostly the same tokens, so items 1 and 4 are easier than on independently
+enciphered copies; item 2 is the one that tests homophone discovery.
