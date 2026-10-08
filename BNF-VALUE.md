@@ -159,3 +159,20 @@ sources/bnf-findingaids/2026-10-07/). 28 new cipher-marked items without a decip
 Next best attempt and why: BNF-Q14-CS -- check-solved + premise check on the fr.4698 pool (pools-first rule, held key,
 known-answer sibling), then the first test: key no.35 re-reads Bourdeau's fr.3979 f.92 (gate) before any fr.4698 leaf.
 
+
+## Wave 15 (8 Oct 2026, 14:3x UTC by date -u): queue paused on outside blockers
+
+- Q14 fr.4698 (Nevers-Mantua 1590): BNF-Q14-CS (1.47) blocked -- Gallica answered 403 to every request (leaves and
+  Gomberville full text), and the pool is D. Bourdeau's open candidate (cyphersolver CATALOGUE.md entry 331). Lane
+  decision: leave it to him; no duplicate work on another solver's named candidate. Neighbours nos.7-8, 19-20, 38-41,
+  67-69 carry clerks' decipherments (useful to whoever reads the pool).
+- Gallica: 403/challenge this afternoon after the day's requests across lanes. Good-citizen rule: no Gallica requests
+  from this lane until the next UTC day, one retry then.
+- Every other row waits on something outside the lane: Sega numeric pool (desk row: an edition of Sega 1591-93 /
+  Caetani 1589-90 letters, ANG series list or Penzi); fr.3622 f.91 (owner sign sorter, or an order-sensitive test);
+  Rondinelli (Gallica views 263-273, 387-393, 443-452); Q2b/Q9 (not online: BnF reproduction batch).
+- Catalogue enrichment E1-E8 (section 2) stands for the orchestrator's gate-7 decision.
+
+8 Oct UTC spend on this lane: workers 22.36 (ledger rows), lane orchestrator not exposed; under the 40 cap.
+Next best attempt and why: 9 Oct, after Gallica cools down -- Rondinelli views (~$1), then re-screen fr.4698 against
+Bourdeau at HEAD (if he has moved on or read it, record it), then the next unswept Nevers/League volumes.
