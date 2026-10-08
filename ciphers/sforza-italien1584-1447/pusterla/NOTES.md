@@ -75,24 +75,66 @@ The OCR spells the name "Posteria"/"Puslcrla", which is why a "Pusterla" grep mi
 Key values are C (from the later-hand copies) or M. There is no H. The f.81 and f.42 slips have their decipherments beside
 them, so nothing here is claimed as a reading.
 
-## Remaining gaps (SFZ-P, 7 Oct 2026)
-Read so far: 0 unglossed letters read as text; key passes G1 at 0.661 mean held-out accuracy over 2 glossed units (1,501 slip signs)
-- f.71/copy and f.67/copy as units 3-4 - blocker: not-attempted; would raise key coverage and accuracy; next: same per-unit procedure, add to g1p.py UNITS, ~$4 each
-- second reader for f.81 and f.42 - blocker: not-attempted; single-reader; next: one Sonnet pass per slip on deskewed single-line crops with pusterla_labels.md, reconcile, ~$1.5 each
-- Cerioni 1970 / ASMi cipher registers for a period Pusterla key - blocker: not-attempted; next: a key-hunt row for the lane, ~$2
+## Units 3-4: f.71 and f.67 (SFZ-NEXT, account 2, 8 Oct 2026, 00:11-00:4x UTC by date -u)
 
-## Escalation (SFZ-P, 7 Oct 2026)
-- [x] siblings: f.81/f.80 and f.42/f.41 used; f.67, f.71, f.72, f.75, f.77 remain
-- [x] clear-pages: later-hand copies f.80, f.41 used
+Brief `.claude/briefs/runs/2026-10-07-acct3-sfz-next.md`, units 1-2.
+
+| unit | cipher slip | clear side | canvas | lines | signs (reconciled) | passes agree | nulls |
+|---|---|---|---|---|---|---|---|
+| f71 | f.71, Ferrara 7 Mar 1447 (header "1447 7 Mars") | Osio III no. CCCXCI pp. 485-486 (`clear_f71_osio.txt`, IA OCR corrected by eye; Osio's spelling) | 68 right | 46 | 1,338 | 995/1,348 = 73.8% | 562/1,333 |
+| f67 | f.67, Ferrara 6 Mar 1447 (header "1447 6 Mars") | later-hand copy f.66 (c63 right + top of c64 left; `clear_f66.txt`, read by SFZ-NEXT from native regions) | 64 right | 28 (L28 = signature group) | 801 | 611/822 = 74.3% | 126/800 |
+
+Crops (pasted): `python3 tools/iiif_lines.py --ark btv1b100373864 --canvas 68 --region 4250,1330,2850,3900 --out ciphers/sforza-italien1584-1447/pusterla/f71 --prefix f71 --overlap 0 --max-width 1500 --distance 60 --prominence 40 --deskew --debug`
+(fetched the region; its auto bands missed 3 lines and its deskew fits snapped to neighbours, so the crops were not used); line
+centres then read with `--columns 0:600` and `--columns 2200:2800 --distance 50 --prominence 25 --dry-run` on the same source, paired,
+and sheared level by `f71/level_crops.py` (46 lines, two halves each, eye-checked on a montage). f.67: `--canvas 64 --region
+4250,480,2850,2500`, the same two-strip centres, `f67/level_crops.py` (28 lines). The source regions are not committed (folder size);
+re-fetch with the iiif_lines command, then run level_crops.py. `f71/manifest.json` lists the first iiif_lines crops, which were deleted (not used).
+Passes: two blind Sonnet subagent calls per slip (pass A top-down, pass B bottom-up), pusterla_labels.md only, no key; then
+`tools/reconcile_passes.py --method nw` and one Sonnet reconciler call per slip settling every disagreement column from the crops
+(`f71/rec/settled.tsv`: A 128, B 221, other 4; `f67/rec/settled.tsv`: A 143, B 40, other 21, seam 7). Systematic splits: T= vs b-
+(f71 75, f67 28), d vs g (f71 57), q vs V (f67 17). err_true not measurable (no benchmark item for this hand).
+f.71's high null count (562) means the self-alignment leaves much of the slip unmatched against Osio's print: spelling differences
+between the slip's text and the edition, and transcription error, both contribute; not separated here.
+
+**G1 (pre-registered, unchanged), 4 units** (`gate_g1.tsv`; the 2-unit run kept as `gate_g1_2units_20261007.tsv`; a 3-unit run
+f81+f42+f67 gave 0.759/0.838/0.760, mean 0.786):
+
+| held out | signs | nulls | trained signs | unseen | real | shuffle mean | shuffle p95 |
+|---|---|---|---|---|---|---|---|
+| f81 | 664 | 203 | 74 | 9 | **0.746** | 0.375 | 0.410 |
+| f42 | 837 | 110 | 79 | 2 | **0.821** | 0.361 | 0.406 |
+| f71 | 1333 | 562 | 79 | 5 | **0.686** | 0.369 | 0.406 |
+| f67 | 800 | 126 | 77 | 5 | **0.794** | 0.368 | 0.399 |
+
+Mean 0.762, every unit above its p95: **PASS**. The stock learner (`g1p.py --stock`, `gate_g1_stock.tsv`) FAILs on the same 4 units, 0.426 mean (0.443/0.401/0.451/0.409 vs p95 0.443-0.451), as it did on 2 (0.447/0.390); both rows reported. `tools/interlinear_align.py stream` is tools/stream_align.learn, the stock learner
+that does not lock on here (S2 above), so g1p.py's che-anchored learner was used, as the brief's handoff names.
+
+**Pooled key** (`key.tsv`, 82 signs): C 24, M 57 (before: C 42, M 30). 14 values changed, including b- a -> e, g v -> t, h- l -> e,
+pi s -> t, m n -> t. On f.13 this made the independent signature check worse ("depvsterla" -> "deptsterea") and the lattice decode's
+shuffled-key rank fell 1 -> 2 (it16dip) / 4 (it15); see ../../sforza-pusterla-1447-f13/NOTES.md S5. Read: the held-out gate rewards
+the units agreeing with each other's texts, but the Opus-read and Sonnet-read slips label some shapes differently, so pooled values
+mix two conventions. A single reading convention across all four slips is the named next step.
+
+## Remaining gaps (SFZ-NEXT, 8 Oct 2026; supersedes SFZ-P's list)
+Read so far: 0 unglossed letters read as text; key passes G1 at 0.762 mean held-out accuracy over 4 glossed units (3,634 slip signs)
+- one sign-label convention across the four key slips - blocker: not-attempted; Opus vs Sonnet readers split T=/b- and d/g; next: owner sign sorter on those shapes (focus pairs from f71/rec and f67/rec), relabel, rerun g1p.py, ~$2 plus owner time
+- second reader for f.81 and f.42 - blocker: not-attempted; single (Opus) reader; next: one blind Sonnet pass per slip on level crops + reconciliation, ~$1.5 each
+- f.72, f.75, f.77 with copies f.73, f.74, f.76 as units 5-7 - blocker: not-attempted; pairing not eye-checked; next: pair check, two passes + reconciliation per slip, ~$3 each
+- Cerioni 1970 / ASMi cipher registers for a period Pusterla key - blocker: not-attempted; no period key located yet; next: a key-hunt row for the lane, ~$2
+
+## Escalation (SFZ-NEXT, 8 Oct 2026)
+- [x] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72, f.75, f.77 remain
+- [x] clear-pages: later-hand copies f.80, f.41, f.66 used; Osio's print for f.71
 - [ ] known-keys: Cerioni 1970 not checked
 - [x] print: Osio III searched (f.71's text printed)
-- [x] key-rebuild: key.tsv rebuilt, G1 PASS
-- [ ] image-check: second readers for the two slips
-- [ ] retry: G1 rerun with units 3-4
-Verdict: keep going: 3 internal gaps; cheapest next: second reader on f.81, ~$1.5
+- [x] key-rebuild: key.tsv rebuilt from 4 units, G1 PASS 0.762
+- [ ] image-check: second readers for f.81/f.42 and a single label convention
+- [x] retry: G1 rerun with units 3-4
+Verdict: keep going: 4 internal gaps; cheapest next: second Sonnet reader on f.81 and f.42, ~$3
 
 ## Requests
 
-gallica.bnf.fr: 15 (8 overview canvases at 1000-1400 px, 3 info.json, 4 native regions for slips and copies, plus the
-f.15 region for f.13 and its info.json), one at a time, at least 1.5 s apart, no errors. archive.org 1 (Osio III djvu
-text). WebSearch 7, WebFetch 1 (ciphermysteries.com).
+gallica.bnf.fr: 15 (SFZ-P, 7 Oct). SFZ-NEXT (8 Oct): 4 overview canvases (c63, c64, c65, c68) at 1400 px, 1 info.json, 2 native
+regions via iiif_lines (c68, c64), 2 native regions for f.66 = 9, one at a time, >= 2 s apart, no errors. archive.org 5 (Osio III and II
+djvu text, 2 advancedsearch, 0 errors); raw.githubusercontent.com 2 (asl1883.txt; one 404 on a wrong path).

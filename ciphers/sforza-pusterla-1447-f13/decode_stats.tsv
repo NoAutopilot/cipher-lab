@@ -1,5 +1,5 @@
 statistic	real	shuffle_mean	shuffle_p95	above_p95
-lm_it16dip	-1.622	-1.953	-1.758	True
-q4_copies	0.133	0.051	0.101	True
+lm_it16dip	-1.524	-1.865	-1.671	True
+q4_copies	0.127	0.061	0.113	True
 # signs 356; not in key 0; decoded letters 372; verdict PASS (both above p95)
-# letter distribution: a:55 e:44 i:40 o:39 l:30 d:23 n:19 c:18 v:18 m:16 s:14 t:13 h:11 r:11 g:10 p:8 f:3
+# letter distribution: e:80 a:47 o:40 i:40 s:23 t:22 c:19 d:17 r:16 m:16 h:11 v:11 g:10 l:7 n:7 f:3 p:3

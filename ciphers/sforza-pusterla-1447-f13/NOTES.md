@@ -177,20 +177,65 @@ The third pass did what the brief asked of it: two-reader disagreement fell from
 decode is key coverage (held-out 0.59-0.73) together with a 30% two-reader disagreement. With that, the it16dip judge
 cannot place the text near real prose. Era mismatch is a possible contributor; this run did not test it.
 
-## Remaining gaps (SFZ-P2, 7 Oct 2026; supersedes SFZ-P's list)
-Read so far: 0 lines read as Italian; signature decodes "de Pusterla"; shared-key test PASS (pass A, 200 shuffles); lattice decode on the A/B/C vote beats 200 shuffled keys (rank 1) but judge FAIL -1.196 vs real_p05 -0.918
-- f.13 transcription - blocker: not-attempted; A-C err_2reader 29.6% (pass B 61%); 280 three-pass disagreement columns unsettled; next: owner sign-sorter or lookalike pass on the A/C split (tools/lookalike_pass.py on the T=/z-/h7/pq and mo/coo pairs pass C named), ~$2
-- Pusterla key coverage - blocker: not-attempted; held-out accuracy 0.59-0.73 from two units, the named limit after this run; next: add the f.67 and f.71 pairs (f.71's text is printed in Osio III no. CCCXCI) to ../sforza-italien1584-1447/pusterla/g1p.py UNITS, then rerun lattice_decode.py, ~$4 per unit
-- era-matched judge corpus - blocker: not-attempted; it16dip is 16th-c., the letter is 1447; next: build a 15th-c. Italian chancery/letter corpus (e.g. Osio I-III clear letters, minus f.13's month) and rerun the judge, ~$2
-- second reader for the key units f.81, f.42 - blocker: not-attempted; single-reader transcriptions; next: one Sonnet pass per slip on level single-line crops, reconcile, ~$1.5 each
-- print and novelty search on any decoded text - blocker: not-attempted; nothing reads yet; next: after a judge PASS, tools/print_check.py and a verifier session, ~$3
+## S5: key grown to four units, it15 judge corpus (SFZ-NEXT, 8 Oct 2026, 00:11-00:4x UTC by date -u)
 
-## Escalation (SFZ-P2, 7 Oct 2026)
-- [x] siblings: Pusterla's glossed slips f.81/f.80 and f.42/f.41 used; f.67, f.71, f.72, f.75, f.77 remain
-- [x] clear-pages: later-hand clear copies f.80 and f.41 used; f.14 (same-day clear letter) is context only
+Worker SFZ-NEXT (account 2), brief `.claude/briefs/runs/2026-10-07-acct3-sfz-next.md`. Intake gate re-run 8 Oct 2026 00:12 UTC:
+
+    sforza-pusterla-1447-f13: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Key units 3-4** (details `../sforza-italien1584-1447/pusterla/NOTES.md`, "Units 3-4"): f.71 (46 lines, 1,338 signs; clear side =
+Osio III no. CCCXCI, OCR corrected) and f.67 (28 lines, 801 signs; clear side = later-hand copy f.66). Each slip was read by two
+blind Sonnet passes plus one Sonnet reconciliation of the disagreement columns (A-B agreement 73.8% on f.71, 74.3% on f.67).
+Gate G1 (pre-registered, unchanged: mean >= 0.60 and every unit > its 200-shuffle p95): **PASS, 0.762** (f81 0.746, f42 0.821,
+f71 0.686, f67 0.794; p95 0.399-0.410). Before: 0.661 over 2 units.
+
+**f.13 under the grown key** (decode.py, lattice_decode.py; both regenerate, `--check`):
+
+| decode | corpus | real | shuffle p95 | shuffle max | rank /201 | judge real_p05 | judge |
+|---|---|---|---|---|---|---|---|
+| lattice, 2-unit key (S4, 7 Oct) | it16dip | -1.196 | -1.247 | -1.199 | 1 | -0.918 | FAIL |
+| lattice, 2-unit key (baseline, this run) | it15 | -1.234 | -1.313 | -1.267 | 1 | -0.891 | FAIL |
+| lattice, 4-unit key | it16dip | -1.155 | -1.217 | -1.153 | **2** | -0.918 | FAIL |
+| lattice, 4-unit key | it15 | -1.217 | -1.275 | -1.199 | **4** | -0.891 | FAIL |
+| vote top-1, 4-unit key | it16dip / it15 | -1.501 / -1.606 | -1.661 / -1.765 | -- | 1 / 1 | -- | -- |
+| pass A (decode.py), 4-unit key | it16dip | -1.524 | -1.671 | -- | -- | -- | -- |
+
+Judge outputs (`python3 tools/judge_plaintext.py ciphers/sforza-pusterla-1447-f13/lattice{,_it15}/spec.json --file .../plain.txt`):
+
+    FAIL language: score=-1.155, null_p99=-1.753, real_p05=-0.918, real_median=-0.823, mode=both, N=360
+    FAIL language: score=-1.217, null_p99=-1.845, real_p05=-0.891, real_median=-0.783, mode=both, N=366
+
+it15 (tools/data/it15, built this run from Osio II-III and Mazzatinti's ASL 1883 OCR) is era-nearer than it16dip but its own
+held-out false-negative rate at N=360 is 38.3% with a 18.0-75.0% per-fold spread (README there): a FAIL/PASS against it is of
+unknown reliability (rule 3). The FAIL did not flip with the corpus; the decode sits about 40% of the way from real prose to the
+shuffled null on both corpora.
+
+**What the grown key did to f.13: worse on the checks that do not depend on the training texts.** The held-out gate rose, but:
+the lattice decode's shuffled-key rank fell from 1 to 2 (it16dip) and 4 (it15); S-graded tokens in reading.txt fell from 265 to 188
+(C-grade key values 42 -> 24, as pooling noisier units lowers the share of the top value); and the signature group, which
+decoded "depvsterla" under the 2-unit key, now decodes **"deptsterea"** (g v -> t, h- l -> e). Fourteen key values changed,
+among them b- (a -> e) and g (v -> t). The likeliest cause is a label-convention clash: f.81/f.42 were read by one Opus reader,
+f.71/f.67 by Sonnet readers who split the T=/b- and d/g shapes differently (75 and 57 of f.71's 353 pass disagreements; the f.71
+reconciler defaulted T=|b- to b-). The 2-unit gate is kept for comparison (`gate_g1_2units_20261007.tsv`); key.tsv is now the
+4-unit key, as g1p.py writes it. **No reading is claimed;** grades: S 188, M 178, no H, no C (cryptanalytic test output only).
+
+Unit 4 of the brief (Duke f.15 inventory) was not started: by the brief's 80% stop rule it would cross the cap (see the done line).
+
+## Remaining gaps (SFZ-NEXT, 8 Oct 2026; supersedes SFZ-P2's list)
+Read so far: 0 lines read as Italian; shared-key decode PASS on vote top-1 (rank 1/201 on both corpora); lattice decode rank 2-4/201 under the 4-unit key; judge FAIL on it16dip and on it15; signature decodes "deptsterea" (4-unit key) / "depvsterla" (2-unit key)
+- Pusterla sign-label convention across readers - blocker: not-attempted; Opus-read units f.81/f.42 and Sonnet-read f.71/f.67 split T=/b- and d/g differently, which pulls pooled values; next: owner sign sorter on the four slips' T=/b-/h-/d/g/y/d' shapes (tools/sign_sorter.py, focus pairs from f71/rec and f67/rec disagreements.tsv), then rerun g1p.py and lattice_decode.py, ~$2 plus owner time
+- second reader for the key units f.81, f.42 - blocker: not-attempted; single (Opus) reader; next: one blind Sonnet pass per slip on level crops, reconcile with the same convention as f.71/f.67, rerun g1p.py, ~$1.5 each
+- f.13 transcription - blocker: not-attempted; A-C err_2reader 29.6%; next: lookalike pass on the T=/b-, d/g, q/V pairs (tools/lookalike_pass.py), ~$2
+- remaining Pusterla siblings f.72, f.75, f.77 with copies f.73/f.74/f.76 - blocker: not-attempted; pairing not eye-checked; next: pair check + two passes + reconciliation per slip (this run's rate), ~$3 each
+- print and novelty search on any decoded text - blocker: not-attempted; nothing reads yet; next: after a judge PASS, tools/print_check.py and a verifier session, ~$3
+- known period key - blocker: not-attempted; no period Pusterla key located yet; next: Cerioni 1970 / ASMi Sforzesco cipher registers key-hunt row, ~$2
+
+## Escalation (SFZ-NEXT, 8 Oct 2026)
+- [x] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72, f.75, f.77 remain
+- [x] clear-pages: later-hand copies f.80, f.41, f.66 and Osio's print of f.71 used
 - [ ] known-keys: Cerioni 1970 and ASMi Sforzesco cipher registers not checked for a Pusterla 1447 key
 - [x] print: Osio III full-text searched (f.13 absent; f.71's text printed as no. CCCXCI)
-- [ ] key-rebuild: key.tsv from two pairs, G1 PASS; f.67/f.71 units not yet added
-- [x] image-check: level single-line crops (images/level/), third blind pass C, three-pass vote (SFZ-P2)
-- [x] retry: lattice_decode.py on the A/B/C vote, shuffled-key PASS, judge FAIL
-Verdict: keep going: 5 internal gaps; cheapest next: add the f.71 pair (printed clear text) to the Pusterla key and rerun lattice_decode.py, ~$4
+- [x] key-rebuild: key.tsv from four pairs, G1 PASS 0.762
+- [ ] image-check: label-convention sorting across the four key slips not done
+- [x] retry: lattice_decode.py under the 4-unit key on it16dip and it15, judge FAIL both
+Verdict: keep going: 6 internal gaps; cheapest next: second Sonnet reader on f.81 and f.42 under the f.71/f.67 convention, then rerun g1p.py and lattice_decode.py, ~$3

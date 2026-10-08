@@ -1,0 +1,12 @@
+{
+ "judge": {
+  "corpora": [
+   "tools/data/it15/osio2.txt.gz",
+   "tools/data/it15/osio3a.txt.gz",
+   "tools/data/it15/osio3b.txt.gz",
+   "tools/data/it15/osio3c.txt.gz",
+   "tools/data/it15/osio3d.txt.gz",
+   "tools/data/it15/asl.txt.gz"
+  ]
+ }
+}

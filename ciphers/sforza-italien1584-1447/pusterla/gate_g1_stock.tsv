@@ -1,4 +1,6 @@
 held_out	n_signs	n_null	train_signs	unseen	real	shuffle_mean	shuffle_p95	above_p95
-f81	664	107	60	19	0.447	0.393	0.429	True
-f42	837	168	64	25	0.390	0.397	0.433	False
-# learner: stream_align.learn (g1.py stock); mean held-out accuracy 0.419; gate >= 0.60 and every unit > shuffle p95: FAIL
+f81	664	107	73	9	0.443	0.407	0.443	False
+f42	837	168	78	2	0.401	0.412	0.451	False
+f71	1333	300	77	5	0.451	0.418	0.448	True
+f67	800	167	75	5	0.409	0.412	0.447	False
+# learner: stream_align.learn (g1.py stock); mean held-out accuracy 0.426; gate >= 0.60 and every unit > shuffle p95: FAIL

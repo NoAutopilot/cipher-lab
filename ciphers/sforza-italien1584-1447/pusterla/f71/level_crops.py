@@ -18,3 +18,4 @@ for n, (yl, yr) in enumerate(zip(L, R), 1):
     for k, (x0, x1) in enumerate(((0, 1500), (1400, 2850)), 1):
         lev.crop((x0, 0, x1, H)).save(os.path.join(HERE, f'f71_L{n:02d}_h{k}.jpg'), quality=88)
 print(len(L), 'lines')
+# Committed crops were re-saved at JPEG quality 72 after the passes (SFZ-NEXT, folder size); this script writes quality 88.

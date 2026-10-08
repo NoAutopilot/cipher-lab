@@ -1,0 +1,47 @@
+# BnF italien 1584 f.71 (Gallica btv1b100373864 c68), Pietro de Pusterla cipher slip, Ferrara 7 Mar 1447. Blind Sonnet passes A and B (SFZ-NEXT, 8 Oct 2026, f71/ciphertext_f71_pass*.tsv), aligned by tools/reconcile_passes.py --method nw (73.8% agree), 353 disagreements settled from the level crops by a Sonnet reconciler (f71/rec/settled.tsv).
+f71_L01	N1 fo V pi x +2 b- coo m B g÷ h- a pq o# b- h7 h- b q t b- pez g y a 3 N2 fo o# y h- g÷
+f71_L02	go fo b- :|: V ht ÷ ht V t b to b- .. d' ÷ m h7 g H fo g pi t dio # h7 V p÷ ÷ gto
+f71_L03	h- ÷ pq y b V y B b- V go dio to b- t ÷ g fo gt m ÷ d fto dio h- ÷ h- a
+f71_L04	m .. g q V b 3 g÷ o m :|: # b- b V a h- o y ze h- x mo ht B pq y b h- d :|: b- dio
+f71_L05	:||: ÷ # y ht x q pez d7 den :|: mo z- V ht ht z- g÷ :||: y z- to ÷ h- ze b So fa q
+f71_L06	q :|: n h- B V b- dio dt y b g÷ d q= h7 a 3 H fo d ht x .. pez d7 den :|:
+f71_L07	S h- h- y g h- ÷ g h- x V b- coo b q b- a d' # B :||: b den 3 a t pi b- g pez
+f71_L08	x +2 a b- b :|: g pt m B b- coo b ÷ h- :|: m b- ÷ N4 dio d t ht H ÷ coo pq y pez
+f71_L09	m B q= .. pq b :|: S h- ÷ V d' d a fo V g a q= V dt z- o# B to d' ÷ g÷ h-
+f71_L10	b- pt ÷ b b- t b- pq S d7 h- b pt x V b- coo r T= b q= b- h7 zo ÷ q g fo d a
+f71_L11	dt .. t g a b g y q h7 b g fo g B g÷ h- m ÷ t b- b- ÷ a m q .. t ht
+f71_L12	y q S coo d a So d t ÷ b- pt d :|: b h- q m :|: fo b- a V B g ÷ h- q
+f71_L13	:||: h- b pq b- b b- q to h- # h- h- g b- x g t z- d a 3 den b q V b- o# ht h-
+f71_L14	h- z- y B b- coo g t q to b- b ÷ g d' g a dt .. d' go q g z- g ÷ r g So :|:
+f71_L15	o# pez ÷ g÷ b h- pq fa a fo h7 q o h- b- b y ÷ b- dio o# b h- q b- 3 pq V
+f71_L16	B V b g m x y g b- ze ht y h- x den 3 b B fo :|: b- b coo bz q S h- x fo h7
+f71_L17	g zo ÷ pq y b o# pez q= o pi h- a ÷ N5 b- pez g t q V b q g h- ÷ 3 ÷ e h- q
+f71_L18	b- :|: :||: h- b B # d' z- V q h7 g H q= +2 q b- t ÷ # o m a t b- .. pez g
+f71_L19	a V ÷ h- b- b ÷ h- h- fo o# b t zo ÷ So t b a b- h7 m q go g to ÷ h-
+f71_L20	b q dio h- b g÷ # a b- ÷ b- q h- :|: g h- ÷ h- b- b H 3 z- V a n V :|: g
+f71_L21	g t B to h- .. d' dt q V :|: g h- a g÷ fo o# t zo ÷ So m ÷ V b S a b-
+f71_L22	h7 q o q d' go g÷ 3 ÷ t b- .. pez :|: q= b- dio B fo o# t zo :|: # a b- b :||:
+f71_L23	h- b b- ÷ g 3 z- V ht ÷ go e b B .. t pq d' b x .. d' ÷ # y dio fo g z- g
+f71_L24	ze dt q= h7 d h- a g b- pez d to m ÷ h- q q= 3 :|: +2 a d' b- .. pez x
+f71_L25	b- pq h- b q= ÷ d' b- .. pq V b :|: b- z- V h- ÷ go V d' g b tuny coo h- B
+f71_L26	g÷ b x .. pez y .. d' b- g y b- h7 zo :|: q g h- a q S h- ÷ g÷ 3 ÷ coo p÷
+f71_L27	ze B den m ÷ # r pez :|: b go h- :|: fo mo .. d' x q= t bo z- b go So d
+f71_L28	d' b tuny 3 h7 d t ÷ den q= fo fto bo V q= h- g÷ coo b q y coo b ht B g fo
+f71_L29	g b go q= 3 b- b :|: g z- g q y coo a q m B g d' ht x go m ÷ q= S mo
+f71_L30	:|: h- b tuny e :|: fo b h- a q b- b ht B b- b fo x h- a go b- pez g d' q o#
+f71_L31	p÷ ÷ den fo ÷ 3 :|: o# p÷ z- V a g h- q .. d' ht d' q a g÷ fo ÷ t bo b- ÷
+f71_L32	den dt ÷ bz pez q .. t dt a V :|: q= S h- ÷ 3 S ht g B b- g dt q fo b b-
+f71_L33	q= h- q S b- .. t ht d ht q go So g d' b g÷ go 3 h- g÷ h- +2 a b- b z- B
+f71_L34	h- N6 b- zo ÷ m g t d' g zo dt q= h7 g ÷ b- S pez g B b- d' N6 x h- q q= h- g t
+f71_L35	d' dio :||: b :|: o# So V q= h7 g ÷ h- fto t ht d' q o# p÷ h7 q= o ht a b- b pt pq
+f71_L36	y b- b d' dio S So z- g b h- q b- :|: t ÷ b- fo b d' a H So fo ÷ .. b coo ÷
+f71_L37	# t z- V q= h7 g :|: z- h- B y ÷ +2 x d So ÷ y t b o# h- q g÷ m :|: b- g b
+f71_L38	h- a fo g t dio # ÷ g b b- h7 :|: h- q b- b g h7 t a S coo g a 3 coo b z- g
+f71_L39	÷ h- q go h- ÷ z- g÷ to b a o# h- pq ÷ q b S h- :|: S h- ÷ h- q b- pq h- b q y
+f71_L40	pez g d' a q o# pez g b- b pq d d' q h- b So g t b b- h7 b g÷ y ÷ fo :|: # b- zo
+f71_L41	z- B ze h- q= fo o# t b b- B g d' x .. B ht h- g d' q= h- 3 h7 g :|: z .. b- t fo
+f71_L42	go B V ÷ +2 pez q dio # pez a q b- b h- 3 ÷ b- t fo y z q go b- pez g t a
+f71_L43	+2 y h- a q= h- ÷ fo bo .. t ÷ 3 :|: t d p÷ z- V B to ht coo S t h- b ÷ V h- :|: fo
+f71_L44	:|: b- g dt a 3 h- g b h- ÷ N4 b V b- fo +2 coo den ze fo b b- fa pez .. ÷ g t mo V :|:
+f71_L45	.. mo g b h- a h- t o# V S # :|: e z- to B b- ÷ So d7 ht b g t b b- d' ÷ b-
+f71_L46	b g÷ 3 q e z- V ht B +2 x # b den fo ÷ :||: q pez :|: N4

@@ -75,7 +75,7 @@ Details, numbers and files are in `../sforza-italien1584-1447/duke/NOTES.md`. In
 
 ## Remaining gaps (SFZ-D, 7 Oct 2026)
 Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units)
-- f.15 decode - blocker: not-attempted; needs a Duke key that passes G1 first; next: settle the Duke's sign inventory on f.5+f.8 (TRANSCRIPTION.md, sign sorter or glyph_atlas) with a second blind reader, rerun ../sforza-italien1584-1447/duke/g1_duke.py, ~$4
+- f.15 decode - blocker: not-attempted; needs a Duke key that passes G1 first (SFZ-NEXT, 8 Oct 2026: unit 4 of its brief not started, it would have crossed 80% of the cap; tools/data/it15 now exists for a judge); next: settle the Duke's sign inventory on f.5+f.8 (TRANSCRIPTION.md, sign sorter or glyph_atlas) with a second blind reader, rerun ../sforza-italien1584-1447/duke/g1_duke.py, ~$4
 - f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
 
 ## Escalation (SFZ-D, 7 Oct 2026)
