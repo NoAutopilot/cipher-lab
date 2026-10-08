@@ -61,6 +61,16 @@ aligned copy letters by the same band_dp as kp87b/cgrades87b.py). Witness only; 
   D07-PISSD (7 Oct 2026, pissd/): page-internal blind same/different, 27 pairs; control known-same 7/7, known-different 5/7 (T17-T46 called SAME twice),
   hard T17-T16 4/4 -> gate FAIL, non-test. Descriptive: T40 vs T17 SAME 7, DIFFERENT 1 (L06 i36), low 2. Blind crop-compare retired for T40 (rule 3,
   third attempt); untested-by-this-tool, not refuted. Reopens with a higher-resolution key witness or a person's sort.
+  D1A-PIS (8 Oct 2026, d1apis/, PREREG-D1A-PIS.md): a different instrument, the band_dp alignment over all seven paired pages with every
+  T40 token masked as one neutral slot, 68 tokens. Aligned copy letters: s 16, r 10, a 8, u 6, p 3, o 2, five singletons, GAP 18;
+  top share 0.235 (gate 0.70). Null N0 (same per-page count of random one-letter tokens, 200 draws) p95 0.177 (passes, can differ).
+  Power control P FAILED: a 68-token subset of T17 (s) or T46 (u) masked the same way returns its own letter at >= 0.70 in 0 of 50
+  draws (mean share 0.436 / 0.396) -> non-test at this N, key86.tsv unchanged. Descriptive only: T40's s share (0.235) is about half
+  what a pure-s cell gives under the same masking (0.436), consistent with T40 being a reader label covering several signs, not tested.
+  Variant B (Addendum B, one token masked at a time): T40 letters identical to A (s 16, r 10, a 8, u 6, GAP 18; share 0.235); N0 p95
+  0.176; P FAILED again, 0/50 for both cells (all 122 T17 tokens: s 52, GAP 24, u 10, r 9 -> ceiling ~0.43; all 125 T46: u 49, GAP 31,
+  s 12). At these pages' error rates (err_2reader 0.27-0.34) the per-token alignment witness tops out near 0.43 for a pure cell, so a 0.70
+  gate is unreachable: the alignment instrument is untested-at-this-N for T40 (not refuted, not retuned).
 - T31 (table m): 9 tokens, aligned m 3, o 3, t 1, r 1: still split. Rule 4: every T31 token stays M (3 that
   cgrades87b scores C are counted M in NOTES).
 Arm B (key86 + REMAP_B) scored 0.621 vs arm A 0.590 on the reconciled page (blind A 0.571 vs 0.553, blind B 0.630
