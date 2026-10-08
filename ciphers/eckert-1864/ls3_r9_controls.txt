@@ -1,0 +1,24 @@
+O9-AK tokens=19 no1=6(0.32) no2=7(0.37) no9=5(0.26)
+  no9: H5 C0 I0 M0
+  no9shuf: H5 C0 I0 M0
+    Columbus O for [Lieutenant] The Goo of [(Fort) La Fayette] reports that by friday next he will have a [W. S. Sherman] of militia at Johnson's Island as soon as relieved send [G. V. Fox] there to the field as previously ordered [Rear]
+  no1shuf: H5 C0 I0 M0
+    Columbus O for [Hiawassie] The Goo of [Jackson] reports that by friday next he will have a [Maj Gen B. F. Butler] of militia at Johnson's Island as soon as relieved send  {tail: [signed] there to the field as previously ordered [Lebanon]}
+O9-AL tokens=16 no1=7(0.44) no2=6(0.38) no9=5(0.31)
+  no9: H5 C0 I0 M0
+  no9shuf: H5 C0 I0 M0
+    [Sec. of the Navy] twenty sixth {time: 12.30 PM} For [Arkansas (river)] Kelly period [Ohio] has been directed to give you all the assistance possible from his Dept sign [Rear] hurry
+  no1shuf: H5 C0 I0 M0
+    [Memphis] twenty sixth {time: 12.30} For [Wheeler] Kelly period [St Louis] has been directed to give you all the assistance possible from his Dept sign [Lebanon] hurry
+E76 tokens=23 no1=7(0.30) no2=7(0.30) no9=4(0.17)
+  no9: H4 C0 I0 M0
+  no9shuf: H4 C0 I0 M0
+    {time: 11 AM} to W. P. Smith X Please let me have your special car for self & staff for the first through train to [Infantry] [Brig. Gen.] strictly confidential Ack receipt care Pandora Hardie [G. V. Fox] Knox
+  no1shuf: H6 C0 I0 M0
+    {time: 12} to W. P. Smith X Please let me have your special car for self & staff for the first through train to [Meridian] [.] strictly confidential Ack receipt care [Cleveland] Hardie  {tail: [signed] [Maj Gen Geo. H. Thomas]}
+E77 tokens=20 no1=5(0.25) no2=6(0.30) no9=2(0.10)
+  no9: H2 C0 I0 M0
+  no9shuf: H2 C0 I0 M0
+    {time: 8.30 PM} for Commo Rodgers polkaing Dick potato [Jno. Morgan] Yesterday the fleet were in active at their destination on act. of continued bad weather This from Jersey You may be in time Yet GV Fox
+  no1shuf: H4 C1 I0 M0
+    {time: 10.30 PM} for Commo Rodgers [Maj Gen W. T. Sherman]ing Dick potato [General-in-Chief] Yesterday the fleet were in active at their destination on act. of continued bad weather This from [Kingsport] You may be in time Yet GV [Maj. Gen. David Hunter]

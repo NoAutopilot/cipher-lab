@@ -195,3 +195,13 @@ Sharper l.4, Spafford l.10, Shylock l.12, Stomach l.24; Walden l.1, Wiley l.13; 
 | Spoon/Spit | Transports | H | p.[21] (1741) l.26 |
 | White/Wick | Equipage | H | p.[23] (1743) l.12 |
 | Wedge/Wharf | Subsistence | H | p.[24] (1744) l.2 |
+
+## 6. Further lines read 8 Oct 2026 (LS3-R9, LANE ST-LEDGER-3, account 2)
+
+For O9-AK and O9-AL. p.[10] (pointer 1730) fetched at 1800 px from the IIIF server (scratch, regenerable), read by the worker, one eye, no subagent.
+The line holds both printed words of the row (left "Bologna", right "Bolivia") against one handwritten name; l.18 counts from the top of the page
+like the rows already tabled (Applause l.4).
+
+| code word | meaning | grade | source |
+|---|---|---|---|
+| Bologna/Bolivia | Heintzelman | H | p.[10] (1730) l.18, Maj. Generals |

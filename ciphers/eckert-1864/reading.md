@@ -557,5 +557,17 @@ The publicnation of Sand hers despatch was an Enormous blunder Twas done by Tyco
 
 Code-word tokens: H 2.
 
-Totals over the 71 entries: H 1166, C 14, I 0, M 0.
+**E76 | Page 219 | 9111 | 1 Nov 1864 12 M, Butler (signed Knox) to W. P. Smith (operator Sampson; Cipher No. 1, time word Francis = 12)**
+
+{time: 12} to W. P. Smith X Please let me have your special car for self & staff for the first through train to [New York] [.] strictly confidential Ack receipt care [Colonel] Hardie  {tail: [signed] [Maj Gen B. F. Butler]}
+
+Code-word tokens: H 6.
+
+**E77 | Page 251 | 9143 | 22 Dec 1864 10.30 PM, G. V. Fox to Commodore Rodgers (operator Sheldon, Ft Monroe, "No 1"; Cipher No. 1, Reliance = 10.30 PM)**
+
+{time: 10.30 PM} for Commo Rodgers [Command = Er (-ed, -ing)]ing Dick potato [Norfolk] Yesterday the fleet were in active at their destination on act. of continued bad weather This from [Maj Genl U.S. Grant] You may be in time Yet GV [Philadelphia]
+
+Code-word tokens: H 5.
+
+Totals over the 73 entries: H 1177, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->

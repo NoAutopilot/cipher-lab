@@ -286,9 +286,9 @@ Code-word tokens: H 5.
 
 **O9-AD | Page 54 | 8946 | 25 Apr 1864, Halleck to Columbus, Ohio (operator David No 9)**
 
-for bologna ---- The Goo of [Ohio] reports that by friday next he will have a [Regiment] of militia at Johnson's Island ---- as soon as relieved send [Troops] there to the field as previously ordered [Halleck]
+for [Heintzelman] ---- The Goo of [Ohio] reports that by friday next he will have a [Regiment] of militia at Johnson's Island ---- as soon as relieved send [Troops] there to the field as previously ordered [Halleck]
 
-Code-word tokens: H 4.
+Code-word tokens: H 5.
 
 **O9-AE | Page 61 | 8953 | 30 Apr 1864, Halleck to Banks and Steele (operator Capt Clowry, "(No 9)")**
 
@@ -326,5 +326,17 @@ Code-word tokens: H 3.
 
 Code-word tokens: H 3.
 
-Totals over the 36 entries: H 306, C 0, I 0, M 0.
+**O9-AK | Page 54 | 8946 | 25 Apr 1864, to Heintzelman at Columbus O (operator "David No 9"; signed Applause)**
+
+Columbus O for [Heintzelman] The Goo of [Ohio] reports that by friday next he will have a [Regiment] of militia at Johnson's Island as soon as relieved send [Troops] there to the field as previously ordered [Halleck]
+
+Code-word tokens: H 5.
+
+**O9-AL | Page 123 | 9015 | 26 Jul 1864, to Kelly at Cumberland (operator Rom; Halleck "Applause")**
+
+[Washington] twenty sixth {time: 12.30 PM} For [Maj. Gen.] Kelly period [Heintzelman] has been directed to give you all the assistance possible from his Dept sign [Halleck] hurry
+
+Code-word tokens: H 5.
+
+Totals over the 38 entries: H 317, C 0, I 0, M 0.
 <!-- decode.py: derived block ends -->
