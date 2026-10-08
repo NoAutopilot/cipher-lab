@@ -44,3 +44,11 @@ months apart (comparing their numbers directly is not possible from print -- see
 
 This target's request is folded into the consolidated Heinsius-circle request (priority 2 of 4) at
 `ciphers/borssele-heinsius-1714/REQUEST.md`, "Consolidated Heinsius-circle request (NA 3.01.19), 25 Sept 2026".
+
+## Addendum, 8 Oct 2026 (D2-HERM; draft only, not sent)
+
+**Also worth photographing in the same order: H.A. 1536 and H.A. 1867.** Each holds a Sauniere de l'Hermitage letter whose cipher passages
+d'Alonne deciphered (edition Deel 10 no. 1066, 11 July 1710, footnote 1066.1; Deel 16 no. 634, 11 Dec 1714, footnote 634.1, which also
+says the "papier" l'Hermitage asks for is probably the key). The edition prints only the solutions; the originals carry the cipher groups
+beside a period decipherment, which is the comparison that shows whether his 1704 cipher (H.A. 946) and his later one share a key. Priority
+below 946 and 2317. More such letters may exist (NOTES.md, D2-HERM section, 83 unread candidate pages).

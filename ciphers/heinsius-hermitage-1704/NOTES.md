@@ -208,3 +208,42 @@ exit 0 (was 1: no standard-edition citation within 6 lines)
 $ python3 tools/next_steps.py --wait-only | grep heinsius-hermitage-1704
 (no line)
 ```
+
+## Deel 4-19 sweep for deciphered l'Hermitage letters (D2-HERM, account 2, 8 Oct 2026, for LANE DEFAULT-account-2-20261008-0710)
+
+Step run: the "While waiting (GF4-BATCH15)" step 1. Method: `retroboeken/heinsius/search_in_text/index_html?search_term:ustring:utf-8=<term>&source_id=&batch_start=N`
+(whole edition, every result page), 2.2 s apart, descriptive UA. Terms and totals: `geheimschrift` 4, `cijferschrift` 13, `onopgelost` 9,
+`opgelost` 173, `cijfer` 169, `cijfers` 47, `ontcijferd` / `gedechiffreerd` / `dechiffreerd` / `déchiffré` 0 each; `Hermitage` 1452 (1439 parsed;
+the search lists one snippet per page, so this is a page list). A footnote's owner is not in its snippet, so candidates are cipher-term pages
+with a `Hermitage` hit on the same or an adjacent page (Deel 4-19 only): 86 pages, `deel4-19_cipher_footnote_candidates.tsv`.
+Positive control: the same query form (`geheimschrift`, whole edition) returns Deel 2 p.130 with footnote 341.1 ("de sleutel tot het gebruikte
+geheimschrift is niet bekend", heinsius-vanhaersolte-1703); the control can differ (a page without the term is not listed). Pass.
+
+Pages read (OCR, `retroapp/service_heinsius/<deel>_<GS>/html/...`), chosen because the snippet named Sauniere or a key:
+- **Deel 10 (GS 207) p.528, no. 1066, Sauniere de l'Hermitage, London 11 July 1710, "Eigenh. orig. H.A. 1536."** Footnote 1066.1, quoted: "De brief
+  is gericht aan d'Alonne, die de gespatieerd gezette gedeelten uit het cijfer heeft opgelost." A **deciphered** l'Hermitage letter: the edition
+  prints d'Alonne's solution (spaced type), not the cipher; the cipher groups are only in H.A. 1536.
+- **Deel 16 (GS 240) p.347, no. 634, Sauniere de l'Hermitage, London 11 Dec 1714, "Eigenh. orig. H.A. 1867."** Footnote 634.1, quoted: "De brief is
+  geadresseerd aan d'Alonne, die de gespatieerd gezette gedeelten uit het cijfer heeft opgelost. Het papier door Sauniere genoemd zal de gevraagde
+  sleutel voor het geheimschrift zijn." Deciphered; the letter asks for "le papier que je vous ai demandé", which the editor takes for a key, so a
+  key may have been issued or re-issued around Dec 1714 (a different key from 1704 is possible).
+- Deel 18 (GS 244) p.95: footnote 142 ("Het cijferschrift is door d'Alonne niet opgelost") belongs to H.W. Rumpf's letter (numbers printed in
+  full), not l'Hermitage. Negative for this target.
+
+The other 83 candidate pages are **co-occurrence only, not read**. Many carry the same formula ("... aan d'Alonne, die de gespatieerd gezette
+gedeelten uit het cijfer heeft opgelost": Deel 11 pp.202, 288, 433, 505; Deel 12 pp.400, 405; Deel 13 pp.299, 354; Deel 14 p.143; Deel 15 p.13;
+Deel 16 pp.9, 112, 151, 317, 325, 414, 433; Deel 17 p.647; Deel 19 pp.240, 261, 360, 371, 377), which suggests l'Hermitage wrote to d'Alonne in
+cipher regularly from about 1710; whose letters they are is unconfirmed until each page is read. No hit in Deel 4-19 says a l'Hermitage cipher
+was left unsolved apart from Deel 4 no. 1231 (already in this folder).
+
+What this does and does not give: deciphered l'Hermitage letters exist in print (1710, 1714), so the archive holds his cipher with a period
+solution beside it (grade C crib material for that key). Whether the 1704 (H.A. 946) or 1705 (H.A. 1034) letters use the same key is not
+known; the 1710/1714 letters are later by 6-10 years, and 634.1 hints at a key change in 1714. Not found: any printed l'Hermitage cipher text
+with its solution (the edition prints the solution only), and any l'Hermitage letter of 1704-06 marked deciphered.
+
+Requests: resources.huygens.knaw.nl about 141 (search 135 including an aborted `Sauniere` page-list run of about 33 requests that covered Deel
+1-9 and was stopped as over budget, pages.json 3, OCR pages 3); over the brief's ~120 guide, no 429/403. No other host. No subagents.
+
+Next step: read the 1710-1712 and 1714 candidate pages above (one pages.json per volume + one OCR page each, about 30 requests) to list every
+deciphered l'Hermitage letter with its H.A. number; then the archive order (REQUEST.md) can add the earliest one(s) beside 946/1034/2317, and
+a comparison of their cipher groups with 946's would show whether one key covers both. Depends on nobody. ~$1.5.
