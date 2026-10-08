@@ -1097,16 +1097,61 @@ NEXT-STEPS.tsv read this folder as `runnable` (7 Oct 2026); the last named step 
 transcripts in hand (ciphertext-only nomenclator route exhausted at N<=481); reopened by a fasc. 2 key sheet or legend with drawn word codes,
 or more ciphertext in the same sign set from a reader other than agent J.
 
-## Remaining gaps (loose-ends pass, 8 Oct 2026)
-Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- the image of piece no. 11, never fetched, needed for the reader-bias control - blocker: not-attempted; noted in the body at NOTES.md:1007, never carried as a step (loose-ends 8 Oct 2026); next: one DECODE browser login, fetch the record image for no. 11 and label it blind, ~$0.5
+## D2-DEC2 -- no. 11 image fetched, blind sign labels, R13-SIENAJ's reader-bias control run (account 2 worker for LANE DEFAULT-account-2-20261008-0710, 8 Oct 2026, 07:40-07:5x UTC by date -u)
 
-## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: one DECODE browser login, fetch the record image for no. 11 and label it blind; ~$0.5; source: loose-ends 8 Oct
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: one DECODE browser login, fetch the record image for no. 11 and label it blind, ~$0.5
+Brief `.claude/briefs/runs/2026-10-08-account2-default-0710-jobs.md` job D2-DEC2 item 1 (loose-ends step, NOTES.md:1007). Status unchanged:
+`open`. **Route.** One headless DECODE login, `tools/decode_browser_login.js 4800 <scratch> --max-files 0 --delay 1700 --listen CMDFILE`
+(shared with the decode-4450 item of the same job); `get` of IMG_R4800_I27945_P1.jpg and _P2.jpg (4000x2248 each); **sha1 282b808f...
+and 3f7710e7... match images/manifest.json**. Saved RecordsView page deleted (account name); images and crops stay in the scratchpad
+(LANE-IMAGES rule), the manifest's re-fetch route is unchanged. Requests: de-crypt.org 27 for the whole job (login 2, RecordsView 15,
+images 10), 1.7 s apart, no challenge; github.com 1 sparse shallow clone of dbourdeau/cyphersolver `targets/siena1421/transcripts` (HEAD
+1fb3c46, read only by the scoring script; CC BY 4.0 text, credit Bourdeau and his agents), cloned only after the blind inventory was pushed.
+Crops: `tools/iiif_lines.py --image IMG_R4800_I27945_P2.jpg --region 1400,650,2050,500 --centres 160,205,252,301,358 --lines-per-crop 5`
+and `--region 1400,1080,2050,700 --centres 273,320,371,422,473,550 --lines-per-crop 6` (the line finder found no peaks on the pale ink,
+so centres were given by eye from its debug overlay); read by this worker's own eye, no subagent.
+
+**What no. 11 shows (image, P2).** A letter in Italian clear text ("Mag.ce ac generose frater ... Ex Urbe die 13 Junij 1478", signed
+"Donato Acciaiuoli", Bourdeau's no. "11" pencilled below) with two cipher blocks of five lines each in the body. The cipher is written in
+line with the clear text, words run together, in a mixed stock of Latin letters (a b c d g m n o p q s t T z E, a round w), digits
+(0 2-8) and drawn marks: a free-standing double vertical stroke ('11', the commonest), double- and triple-barred stems, a single cross
+(mostly before o), inverted T, pi, reversed E, circumpunct, q and n with crossed descenders, m with superscript n, '//' and '///'.
+41 sign types (`d2dec2/inv_no11.tsv`). No decode: the folder holds no key for no. 11.
+
+**Control (PREREG-R13-SIENAJ's reader-bias control, run as PREREG-D2-DEC2.md, pushed in ebfa2db3b before scoring).** Rows 7/19/9 =
+R13-SIENAJ's blind inventories (copied unchanged), row 11 = this blind inventory, other rows as R11 parsed them; Jaccard vs no. 7,
+2000 curveball swaps, seed 11, gate pJ <= 0.0033. Script `sign_overlap_pool.py --blind ciphers/siena-concistoro-2308/d2dec2 --tag
+_d2dec2 [--liberal]` (new `--tag` option and an optional `inv_no11.tsv`; R13's `--check` on both of its results still exits 0).
+
+| piece | R11 (other agent's labels) J / pJ | D2-DEC2 conservative (scored) types / shared / J / pJ | clears | liberal (descriptive) J / pJ |
+|---|---|---|---|---|
+| 11 (control) | 0.113 / 0.99 | 41 / 18 / 0.305 / 0.0085 | **no** | 0.351 / 0.001 (clears) |
+| 19 | 0.323 / 0.001 | 38 / 19 / 0.346 / 0.0005 | yes | 0.480 / 0.0005 |
+| 9 | 0.304 / 0.003 | 20 / 12 / 0.273 / 0.0085 | no | 0.366 / 0.001 |
+| 20 | 0.297 / 0.0065 | (unchanged row) 0.318 / 0.0045 | no | 0.318 / 0.0035 |
+
+**Result.** (1) By the pre-registered rule the control **passes**: no. 11 does not clear on the conservative set, so R13-SIENAJ's
+no. 19 result is not voided. (2) But the margin is thin, and the control shows how much the labelling convention alone carries: the same
+piece moves from the bottom of the matrix (J 0.113, pJ 0.99 on its R11 labels) to J 0.305, pJ 0.0085, about 2.6x the gate, once its
+letters and digits are named as themselves. Its shared stock with no. 7 is 16 letters/digits plus '=' and '+'. No. 19's blind J (0.346)
+sits only 0.04 above this different-system control. So the statistic separates "shares a Latin-letter + digit cipher alphabet" from
+"does not" only weakly at these N, and says nothing about a shared key (R13-SIENAJ's caveat stands, now with a number). (3) **The liberal
+merges are merge-biased:** with them the control clears (pJ 0.001), so the liberal variant cannot license anything; no. 9's liberal
+clearing (R13-SIENAJ, descriptive) is voided by this control. (4) Adding the row changed the null for the other pieces (no. 20 0.0015 ->
+0.0045, no. 9 0.0045 -> 0.0085); no. 19 clears under both nulls.
+Disclosed limits: this reader is a different session from R13-SIENAJ's reader (the control tests the shared convention, not that
+reader's hand); the two certain drawn merges ('=' -> B07, '+' -> C07) were taken in the harsh direction for a control.
+Grades: no token read, nothing graded, no key change (no decode --check needed). Cryptanalytic result about sign stock only.
+
+## Remaining gaps (D2-DEC2, 8 Oct 2026; replaces the loose-ends block)
+Read so far: 0% of no. 7 (no token read; seven C glosses on file, glosses_no07.tsv); the loose-ends gap (no. 11 image) is closed by D2-DEC2
+- the no. 7 nomenclator layer and key - blocker: no-key-material; ciphertext-only route untestable at N<=481 (R13-SIENAWC), R4750 tried (R11-SIENA4750); reopened only by a fasc. 2 key sheet or legend with drawn word codes, or more ciphertext in the same sign set
+
+## Escalation (D2-DEC2, 8 Oct 2026)
+- [x] siblings: the fasc. 1-2 pieces pooled and sign-overlap tested (R11-SIENAPOOL, R13-SIENAJ, D2-DEC2); only no. 19 clears, on a shared letter/digit alphabet
+- [x] clear-pages: no. 7's interlinear glosses taken as seven C values (glosses_no07.tsv, R9-SIENA7)
+- [x] known-keys: R4750's nomenclator tested against no. 7 (R11-SIENA4750: non-test / chance); R4777/R4764 key sheets against no. 15 (R10)
+- [x] print: Cecchini 1952, Meister 1902, Senatore 2009 named; no printed decipherment of any open piece (premise check)
+- [retired] key-rebuild: ciphertext-only `solve_nomen` on nos. 7/19, three attempts below control gate (R10-SIENA7N, R13-SIENA719, R13-SIENAWC); instrument: tools/homophonic_anneal.py solve_nomen
+- [x] image-check: no. 11 fetched and labelled blind (D2-DEC2); no. 7, 19, 9 images re-fetched by R13-SIENAJ
+- [n/a] retry: no step failed for an access reason
+Verdict: parked: every gap has an outside blocker (no-key-material)

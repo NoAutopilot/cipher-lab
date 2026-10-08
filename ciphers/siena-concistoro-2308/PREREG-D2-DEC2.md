@@ -1,4 +1,4 @@
-# PREREG-D2-DEC2 (8 Oct 2026, written 07:5x UTC by date -u, pushed before any scored run)
+# PREREG-D2-DEC2 (8 Oct 2026, written 07:45 UTC by date -u, pushed before any scored run)
 
 Job D2-DEC2 (LANE DEFAULT-account-2-20261008-0710). This runs the reader-bias control that PREREG-R13-SIENAJ.md already pre-registered
 and R13-SIENAJ did not run (no image on disk): blind labels for no. 11 (DECODE R4800, a piece that sat below its null in R11).

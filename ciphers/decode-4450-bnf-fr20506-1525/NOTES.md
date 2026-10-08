@@ -662,16 +662,42 @@ ASV Vercelli, Fondo Arborio di Gattinara, asking whether the chancellor's papers
 
 - Action that depends on nobody: the optional f.2/f.4 initial-letter test this folder names as its cheaper desk-side option (~$3); the Vercelli (Fondo Arborio di Gattinara) inquiry stays owner-side outreach.
 
-## Remaining gaps (loose-ends pass, 8 Oct 2026)
-Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- 15 of the 18 Decrypted DECODE sibling records in fr.20506, never opened - blocker: not-attempted; noted in the body at NOTES.md:554, never carried as a step (loose-ends 8 Oct 2026); next: open the 15 records and compare their systems with Ranzo's letter+number code; a key transfer later needs a shuffled-key control of the same length, ~$1
+## D2-DEC2 -- the 15 unopened Decrypted DECODE siblings in fr.20506 (account 2 worker for LANE DEFAULT-account-2-20261008-0710, 8 Oct 2026, 07:40-07:5x UTC by date -u)
 
-## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: open the 15 records and compare their systems with Ranzo's letter+number code; a key transfer later needs a shuffled-key control of the same length; ~$1; source: loose-ends 8 Oct
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: open the 15 records and compare their systems with Ranzo's letter+number code; a key transfer later needs a shuffled-key control of the same length, ~$1
+Brief `.claude/briefs/runs/2026-10-08-account2-default-0710-jobs.md` job D2-DEC2 item 2 (loose-ends step, NOTES.md:554). Status unchanged:
+`open`. One headless DECODE login (`tools/decode_browser_login.js 4800 <scratch> --max-files 0 --delay 1700 --listen CMDFILE`, shared with
+the siena-concistoro-2308 item of the same job); RecordsView pages 4435-4448 and 4816 read from the logged-in session, saved pages deleted
+afterwards (they carry the account name), nothing committed from the site. Contact-sheet look: P1 thumbnails of 4435, 4437, 4441, 4446,
+4448, 4816 and P1 at 1024 px of 4437 and 4816 -- every P1 is an address or blank face, so no cipher page of a sibling was seen; the
+comparison below rests on DECODE's own metadata (cipher type, symbol sets, sender, the Additional-Information notes). Table:
+`siblings_d2dec2.tsv` (record, folio, sender -> receiver, date, DECODE cipher type and symbol sets, system, match y/n, note).
+
+| records | folios | sender -> receiver | DECODE system | match with Ranzo |
+|---|---|---|---|---|
+| 4435, 4436 | ff.247, 249 | Mary Queen of Scots / her secretary Nau -> Castelnau, Arnault (Sheffield, 1578-84) | homophonic + nomenclator; key published by Lasry, Biermann, Tomokiyo 2023 (Cryptologia) | n |
+| 4437-4448 (12) | ff.8-64 | Claude Dodieu de Vély -> Anne de Montmorency (Florence; no date in record) | homophonic + nomenclator, graphic signs | n |
+| 4816 | f.116 | "seigneur Francysque, comte de Pontresme" (ca. 1530 per DECODE's note) | simple substitution + nomenclator, graphic signs | n |
+
+With GF4-BATCH3's three (4434 MQS -> Castelnau, 4449 Vély -> Montmorency, 4815 Cenalis -> Montmorency), **all 18 siblings are French-side
+or Marian graphic-sign ciphers**; none is recorded with an alphabet + numerals symbol set, and none is from the Imperial side. Ranzo's code
+(letter + superscript number groups, 320 types in 749 tokens, D2 above) shares its system with none of them, so the volume's Decrypted
+siblings offer no key to transfer (no key-transfer test is needed or run; a later transfer would need the shuffled-key control the brief
+names, but there is nothing of the same design to transfer). Limit: the systems are taken from DECODE's catalogue fields, not from a look
+at each sibling's cipher page (the fetched P1 faces carried none).
+Grades: no token read. Requests: de-crypt.org 27 for the whole job (login 2, RecordsView 15, images 10 including the two siena images),
+1.7 s apart, no challenge.
+
+## Remaining gaps (D2-DEC2, 8 Oct 2026; replaces the loose-ends block)
+Read so far: 0% (no token read; no key)
+- the Ranzo/Garbino code table for f.136 (749 tokens) - blocker: no-key-material; the 18 fr.20506 siblings are other systems (D2-DEC2), Bourdeau's addition sheet (fr.3022 f.50) is a fragment; the ASV Vercelli, Fondo Arborio di Gattinara inquiry is owner-side outreach
+- the f.2/f.4 initial-letter test (indirect route to the code) - blocker: not-attempted; named by the 4 Oct key-material search, never briefed; next: transcribe fr.2988 f.4r-6r and test f.2's base letters against the French initials with a shuffled-pairing control, ~$3
+
+## Escalation (D2-DEC2, 8 Oct 2026)
+- [x] siblings: all 18 Decrypted DECODE siblings in fr.20506 are French-side or Marian graphic-sign ciphers, none shares Ranzo's letter+number code (D2-DEC2; GF4-BATCH3 for 3)
+- [x] clear-pages: f.135 and f.138v blank, no slip or clear copy (ZX2-GAL2, GF4-BATCH3 (c)); fr.2988 f.4 is Raince's clear French, not Ranzo's (section above)
+- [x] known-keys: Bourdeau's addition sheet from fr.3022 f.50 (`additione.json`) is the only period key material located; a fragment, not a table
+- [x] print: CSP Spain III, Desjardins vol. 2, Molini vol. 2, Google Books queries -- no decipherment or paraphrase (sections above)
+- [ ] key-rebuild: the f.2/f.4 initial-letter test with a shuffled-pairing control, never run; ~$3
+- [x] image-check: Gallica native images of f.136r-v and fr.2988 f.9 on disk (D2); D2 transcription done from them
+- [n/a] retry: no earlier step failed for an access reason
+Verdict: keep going: 1 internal gaps; cheapest next: f.2/f.4 initial-letter test with a shuffled-pairing control, ~$3

@@ -127,6 +127,7 @@ def main():
     ap.add_argument('--check', action='store_true')
     ap.add_argument('--blind', help='dir with inv_no07.tsv, inv_no19.tsv, inv_no09.tsv (R13-SIENAJ)')
     ap.add_argument('--liberal', action='store_true', help='with --blind: merge the doubtful pairs of concordance.tsv')
+    ap.add_argument('--tag', default='', help='with --blind: suffix for the results file (D2-DEC2: _d2dec2, DIR also carries inv_no11.tsv)')
     a = ap.parse_args()
     P = load(a.bourdeau)
     keys = sorted(P)
@@ -141,7 +142,7 @@ def main():
                 f = line.rstrip('\n').split('\t')
                 for mbr in f[1].split():
                     merge[mbr] = f[0]
-        for k in ('07', '19', '09'):
+        for k in ('07', '19', '09', '11'):
             fp = os.path.join(a.blind, 'inv_no%s.tsv' % k)
             if not os.path.exists(fp):
                 continue
@@ -176,7 +177,7 @@ def main():
                             pJ=round(pJ, 5), clears=pJ <= 0.05 / m, shared=shared))
         res.sort(key=lambda r: (r['pJ'], -r['J']))
         out = dict(seed=a.seed, null=a.null, m=m, alpha=0.05 / m, liberal=a.liberal, no07_types=len(inv['07']), rows=res)
-        path = os.path.join(HERE, 'results_pool_blind%s.json' % ('_liberal' if a.liberal else ''))
+        path = os.path.join(HERE, 'results_pool_blind%s%s.json' % (a.tag, '_liberal' if a.liberal else ''))
         if a.check:
             if json.load(open(path)) != json.loads(json.dumps(out)):
                 print('STALE: %s differs' % os.path.basename(path)); sys.exit(1)
