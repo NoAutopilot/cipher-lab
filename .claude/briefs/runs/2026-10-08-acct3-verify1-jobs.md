@@ -94,3 +94,10 @@ rule its depth under the bar as part of this check)
 
 ## Re-addressed (not run on account 3): G3-FR3416 -- fr3416-nevers-fils-1589 f.35r (N4) G3 check per the Fourth wave paragraph; its
 reading (NV02-READ) and audit (VERIFY-NV02) ran on account 3, so the check goes to account 4. Cap $2.5, box 35 min.
+
+## V1-LS4B (account 3, 17:3x UTC), cap $8, box 80 min: eckert-1864 E96, E97, E100 (N3 weak D2, one audit)
+Reader LS4-R1b (account 1); first audit FV-LS4-R1b (account 2), AUDIT.md "## AUDIT (FV-LS4-R1b)", commit 533573e3. Shape as V1-LS4A
+(this file) plus the common tail. Families the first audit named as unread go first: the press of the day, the Dana papers, NARA RG 92/107
+(catalogue level only), OR ser. II vol. 8; then the Huntington transcription of each pointer and same-leaf siblings (step 0 missed four
+entries in this pool already: check it first), recipient-side and staff papers (V1-LS4A's Rawlins find), G3 on each body.
+Update the three status.json rows and SO-ECKERT-E96/E97/E100 if a class moves. Units 3 x $2.5 + 1 reconciliation.
