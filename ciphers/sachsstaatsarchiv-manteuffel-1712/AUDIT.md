@@ -680,3 +680,111 @@ Poland, not Berlin). Over-claim found: none outward (the solver wrote "no novelt
 NOTES.md line "Bullinbrou[g] ... if tok5 34 (p) is 39 (i) (pass A read 39; one token I)" is now corrected in AUDIT only, the
 transcription fix is the next reader's (NOTES Remaining gaps). Requests this audit: www.archiv.sachsen.de 4, resources.huygens.knaw.nl
 16, archive.org 3, www.googleapis.com 1 (503); no 403/429/challenge.
+
+## AUDIT 2 (AUD2-MANT08B)
+
+Verifier AUD2-MANT08B (account 3, LANE VERIFY-3, session_0149CRvE4mU8kMqzvRD6UAXC), 8 Oct 2026, 21:43-22:0x UTC by `date -u`.
+Brief: .claude/briefs/runs/2026-10-08-acct3-verify3-jobs.md "AUD2-MANT08B". Account 3 never read nor first-audited these items
+(reader MANT-08 and first auditor V-MANT08 are account 2). Items: **A 0390** (letter of 10 Oct 1712), **C 0395** (mid-Oct 1712),
+**D 0485** (about 12 Nov 1712), as defined in "AUDIT (V-MANT08)" above. Frame 0391 (B) is AUD2-MANT0391's, not audited here.
+Nothing decoded; key.tsv, ciphertext.tsv and the readings untouched. Duplicate diff: the three entries' pointers (URL files
+0390/0395/0485), dates and addressee differ from every other filed item of this target (status.json results for 694/08 f.410,
+f.468, 0501, 694/09 0015-16 etc.); no duplicate.
+
+**1. Re-derivation (rule 7).** `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712/f0390_08 --check`: tokens 89,
+C 54, M 35, "reading up to date", exit 0; main folder `--check` exit 0. The four transcription fixes V-MANT08 item 2 lists are still
+not applied to f0390_08/ciphertext.tsv at origin/main (21:5x UTC); for my items only 0390 r9 tok3 (4 -> 9) is affected, and it changes
+no class. **Per-unit gate (CLAUDE.md rule 3, per-unit paragraph), from f0390_08/gate.out:** the pooled gate (83 letters, 0/1000)
+passes, but the units do not clear it each on their own: **0390 307/1000** (18 letters, not gated, i.e. its own letters do not
+separate Krauske's table from shuffled keys at all), **0485 16/1000 = FAIL** at the registered 10/1000 line, 0395 0/1000 (17 letters,
+not gated). So A and D rest on the pooled gate, which is carried by 0391 and 0395, plus the sense of the runs in their clear context.
+The first audit did not say this; it lowers confidence on A and D (below), not their depth class, because D1 rests on words read in
+context, not on the per-unit statistic.
+
+**2. Transcription.** Not re-checked on the image (V-MANT08 compared 79 tokens on the native frames, including every 0485 run and
+0395 r1-r3; no request to www.archiv.sachsen.de this session).
+
+**3. Prior-work checks 3-5** (`tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec 'shelfmark=SHStA Dresden 10026 Loc.
+694/08;folio=frame <f>;date=<d>;sender=Manteuffel;recipient=Flemming' --step-type second-audit --fetch`, then `--reading <decoded
+sentences> --network`; f/d = 0390/1712-10-10, 0395/1712-10-15, 0485/1712-11-12):
+- First run, exit 4 each: LEADs = target-level ROOM claims of FAM-MANTV (694/09 only), MANT-08 (solver), V-MANT08 (first audit) and
+  AUD2-MANT0391 (0391 only) -- recorded CLEAR in prior-work.tsv. UNCHECKED tomokiyo/solver-by-unit (no folio key); UNCHECKED-NET
+  aaymeloglu and 4-editions, answered by hand:
+- Check 3, solver repositories: github.com/aaymeloglu/unsolved-ciphers shallow clone (scratch) grepped for Manteuffel / Krauske /
+  694/08 / Flemming / Courland: one row only, catalogue/decode-catalog.csv DECODE 4999 = "Key of Jakob Heinrich von Flemming and Count
+  Manteuffel, 1717, HStAD 10026 Loc. 03233/02" -- a different (1717) key and unit, no reading. CLEAR. sources/cyphersolver: the prior
+  runs' CLEAR stands.
+- Check 4, editions by date (fetched once, grepped; positive control = each volume returns its own dated letters for 1712):
+  - **Bolingbroke, Letters and Correspondence (ed. Parke, 1798)**, IA `letterscorrespon02boliuoft` (vol. 2, to about Sept 1712) and
+    `letterscorrespo03boli` (vol. 3, Sept 1712-1713; dated letters of 17 Oct, 11 Nov, 29 Nov 1712 present). Breton: vol. 2 letters to
+    him of May 1712 (his appointment to Berlin); vol. 3 only "To Mr. Breton, Whitehall, March 6th, 1712-13" (his leaving Berlin) --
+    nothing of Nov 1712, nothing on Courland ('Courl'/'Curl' 0 relevant hits), nothing on a northern truce spoken of to the King of
+    Prussia. Not located.
+  - **Klopp, Der Fall des Hauses Stuart XIV** (IA `derfalldehauses07klopgoog`, Google Fraktur OCR, poor): Breton found once (p. 330,
+    "dem britischen Gesandten Breton in Berlin", St John on Ober-Geldern, June 1712: not these frames); 'Kurland'/'Curland',
+    'Manteuffel', 'Flemming' 0 under fuzzy grep. Weak negative (OCR).
+  - **Macpherson, Original Papers II** (IA `originalpapersco02macp`): 'Courland' once (1650, Colepeper), 'Breton', 'Manteuffel',
+    'Flemming' 0; no Oct-Nov 1712 letter on these matters. Not located.
+  - **Briefwisseling Heinsius XIV** (Huygens retroboeken `search_in_text`, source_id=14): 'Courlant' 1 hit = p.79 (page index 88) --
+    **I read it and confirm V-MANT08's quotation** of Van Haersolte, 1 Oct 1712 (no. 142): Lölhöffel, Prussian resident, arrived "met
+    brieven van Sijne Majesteijt aen de croonschatsmeester om te faciliteren de cessie van het hartogdom Courlant aen gemelde coning".
+    'Lölhöffel' 1 (same page); 'Courland' 0; 'Breton' 2 = index only, p.761 "Breton, William, Engels envoyé te Berlijn, (XIII)" --
+    he appears in Deel XIII only, so Deel XIV prints nothing of his for Sept 1712-Apr 1713.
+  - Courland histories: *Geschichte des Herzogthums Kurland und Semgallen* (1789, IA `10691426bsb`, after Ziegenhorn) on 1712-13:
+    Ferdinand's quarrel with the Ritterschaft, the March 1712 conference, his deferred investiture (1712-13) -- no Prussian approach to
+    him for a cession nor an offered governorship; the Prussian plan it prints is the 1718-19 Brandenburg-Schwedt one. *Obzor
+    vneshnikh snoshenii Rossii* III (1897, IA `libgen_00713967`), "Kurlyandskoe gertsogstvo 1712": Ferdinand's complaints to the Tsar
+    and Golovkin (May-July 1712) -- not this. Schmauss, *Einleitung zu der Staats-Wissenschafft* II (1747, IA `10725536bsb`): the
+    Courland passages are 1659 and 1718-19. Not located.
+  - Droysen IV.1 and Acta Borussica: V-MANT08's and earlier audits' greps stand (not re-run). Sbornik RIO: IA full-text query
+    (Russian) returned only the Obzor and unrelated items; the RIO volumes themselves were not identified or read: **UNCHECKED**.
+  - **The press of the day (Mercure historique et politique, Europäische Fama, Oct-Nov 1712): UNREACHABLE this session** -- Google
+    Books API answered HTTP 429 (daily quota spent) on the first two calls, host stopped; IA advancedsearch finds no 1712 Mercure
+    historique volume by title and the Europäische Fama items carry only the series date (1702), not searched. Unchecked by both audits.
+- Check 5 (G3), `--reading --network`: 0390 phrases -> ia-global LEAD 'au roi de Prusse il' = unrelated items (a Mozart CD etc.),
+  recorded CLEAR as noise; 0395 'traiter avec le duc Ferdinand' ia-global no hits, CLEAR; 0485 'a Breton le passage de' ia-global 1
+  item = a book on Alain Resnais, recorded CLEAR as noise; gbooks UNCHECKED-NET on all three (429). IA full text by hand: '"Hertzog
+  Ferdinand" Curland 1712', '"duc Ferdinand" Courlande Prusse 1712', 'Breton Courlande Berlin 1712 Manteuffel' (0), '"Mr. Breton"
+  Berlin Courland 1712' (0): background only (above). Recipient-side and staff papers (Flemming's own papers, Saxon cabinet orders of
+  Oct-Nov 1712) are unprinted as far as these searches reach; the sender's same-week letters to other recipients: none printed found.
+
+**4. Depth (rule 4a, depth bar 8 Oct 2026; keep or lower only).** A **D1 kept**, C **D1 kept**, D **D1 kept**. Cipher clause fails on
+all three (longest C stretch < 12 letters vs AD about 127-138 letters). Code clause: C and D have no recurring code. On A, code 257
+(le roi de Prusse) reads sensibly in two sentences of the same letter; V-MANT08 refused the clause on a third condition of its own
+pre-registration (a letter-spelled run on the item naming the king or a minister) that the 8 Oct depth bar does not contain. Under
+the bar's wording the clause may be met; but this job may not raise depth and I did not write a D2 sentence, so A stays D1. Noted for
+the lane (not a change). depth_pct unchanged (A 80.0, 60 in sense; C 66.7; D 57.1).
+
+**5. Classification (rule 10).** Key: **published** (Dr. Krauske's 1893 manuscript table, Loc. 694/10, credited) on all three. No prior
+decipherment located for any item.
+- **A 0390: N3 held.** No prior plaintext located in Bolingbroke (Parke) II-III, Klopp XIV (weak OCR), Macpherson II, Heinsius XIV,
+  Droysen IV.1 (first audit), Schmauss 1747. Confidence **low-medium** (lowered from medium): the frame's own letters do not clear the
+  shuffled-key control (307/1000), the readable content is 'la treve' plus nomenclator codes, and the press is unchecked. Safe sentence
+  (V-MANT08's, extended): "Krauske's 1893 table reads 'la treve' and the code for the King of Prussia in Manteuffel's letter of 10 Oct
+  1712 (Loc. 694/08); no prior plaintext located in the Heinsius correspondence, Droysen, Bolingbroke's Letters and Correspondence,
+  Klopp or Macpherson." Unsafe: "Manteuffel's report on the truce deciphered."
+- **C 0395: N2 held; N1 tested and rejected.** N1 would need this letter's plaintext (or a decipherment of it) in print; none was
+  found -- what is printed is the *news* in another man's letter (Van Haersolte to Heinsius, 1 Oct 1712, Briefwisseling XIV no. 142,
+  p.79, read and confirmed above). N2 basis checked: Van Haersolte prints Prussia's approach to the Polish crown treasurer for the
+  cession of Courland and does not name Ferdinand as a party; the item's cipher spans carry the duke's name (the reigning duke whose
+  heirless death Van Haersolte's Poles invoke) and the place of the offered governorship ('pinde', unsettled). The direct approach to
+  Ferdinand and the governorship offer were not located in Heinsius XIV, the 1789 Courland history, the 1897 Obzor, Schmauss or Droysen;
+  a later auditor could argue N3 on those details, but this audit keeps or lowers and holds N2 on V-MANT08's basis and the FAM-MANTV
+  precedent (news of the cipher spans printed in another correspondent's letter). Confidence medium. Safe sentence (V-MANT08's) stands.
+- **D 0485: N3 held.** Breton is absent from Heinsius XIV (index: Deel XIII only) and from Bolingbroke III except a letter of 6 Mar
+  1712-13; nothing on Courland in Nov 1712 in Bolingbroke, Klopp, Macpherson. Confidence **low** (lowered from medium-low): the frame's
+  own gate FAILs (16/1000 vs 10/1000), four runs are unsettled, 'Breton' and 'la Courl[ande]' are identifications from sense
+  (each with an r|re|ro or o|ou choice), and the press is unchecked. Safe sentence (V-MANT08's, extended): "Krauske's table reads the
+  British envoy Breton's name and 'la Courl[ande]' in Manteuffel's letter of about 12 Nov 1712 (Loc. 694/08); no prior plaintext
+  located in the searched editions (Heinsius XIV, Bolingbroke's Letters and Correspondence, Klopp, Macpherson); the frame's own
+  shuffled-key gate fails, so the reading rests on the pooled gate." Unsafe: "Manteuffel's November report deciphered."
+- SECOND-OPINIONS-QUEUE SO-MANT-0839 (A, B, D): no class or count changed for A or D; row and prompt left as filed (its question 1
+  already asks for Bolingbroke, Klopp and Macpherson independently).
+
+**6. Postmortem.** Two things the first audit missed: (a) the per-unit gate -- A's own frame ties its shuffled-key control and D's
+fails it, so both readings stand only on the pooled gate (CLAUDE.md rule 3, per-unit paragraph); status.json depth_check for A and D now
+says so; (b) the brief's named families (Bolingbroke/Parke, Klopp XIV, Macpherson) were unsearched; searched now, nothing found. No
+over-claiming sentence found in NOTES.md or status.json lines (all use "fragments read" and "no prior plaintext located"). Still owed:
+the press of Oct-Nov 1712 (Google Books, once its quota resets) and Sbornik RIO; the four V-MANT08 transcription fixes. Requests this
+session: archive.org 14 (metadata/djvu/advancedsearch), be-api.us.archive.org 9, resources.huygens.knaw.nl 8, github.com 1 (clone),
+www.googleapis.com 2 (429, stopped) plus prior_work.py's own --network calls; no 403 or challenge.

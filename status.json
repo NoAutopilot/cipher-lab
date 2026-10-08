@@ -7906,12 +7906,13 @@
       "kind": "recovery",
       "key": "published",
       "claim_scope": "recovered-passages",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
-      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026)",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026); second audit AUDIT.md \"AUDIT 2 (AUD2-MANT08B)\" (account 3, 8 Oct 2026): class, key and depth held",
       "audit_refs": [
-        "AUDIT.md \"AUDIT (V-MANT08)\""
+        "AUDIT.md \"AUDIT (V-MANT08)\"",
+        "AUDIT.md \"AUDIT 2 (AUD2-MANT08B)\""
       ],
       "novelty": "N3",
       "plaintext_novelty": "N3",
@@ -7928,7 +7929,7 @@
         "names_codes": "see AUDIT",
         "other": "M tokens"
       },
-      "depth_check": "V-MANT08: code 257 in two sentences but no letter-spelled run names it on the item; cipher clause fails (longest C run < 12 vs AD ~127-138)",
+      "depth_check": "V-MANT08: code 257 in two sentences but no letter-spelled run names it on the item; cipher clause fails (longest C run < 12 vs AD ~127-138); AUD2-MANT08B: frame 0390 own shuffled-key gate 307/1000 (not gated, 18 letters) -- reading rests on the pooled gate; depth bar code clause on 257 possibly met, not raised (keep-or-lower job)",
       "decode_status": "Non-decrypted"
     },
     {
@@ -7967,12 +7968,13 @@
       "kind": "recovery",
       "key": "published",
       "claim_scope": "recovered-passages",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
-      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026)",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026); second audit AUDIT.md \"AUDIT 2 (AUD2-MANT08B)\" (account 3, 8 Oct 2026): class, key and depth held",
       "audit_refs": [
-        "AUDIT.md \"AUDIT (V-MANT08)\""
+        "AUDIT.md \"AUDIT (V-MANT08)\"",
+        "AUDIT.md \"AUDIT 2 (AUD2-MANT08B)\""
       ],
       "novelty": "N2",
       "plaintext_novelty": "N2",
@@ -7989,7 +7991,7 @@
         "names_codes": "see AUDIT",
         "other": "M tokens"
       },
-      "depth_check": "V-MANT08: no recurring code; cipher clause fails",
+      "depth_check": "V-MANT08: no recurring code; cipher clause fails; AUD2-MANT08B: N1 tested and rejected (only the news is printed, Van Haersolte p.79 confirmed); N2 held",
       "decode_status": "Non-decrypted"
     },
     {
@@ -7997,12 +7999,13 @@
       "kind": "recovery",
       "key": "published",
       "claim_scope": "recovered-passages",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
-      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026)",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026); second audit AUDIT.md \"AUDIT 2 (AUD2-MANT08B)\" (account 3, 8 Oct 2026): class, key and depth held",
       "audit_refs": [
-        "AUDIT.md \"AUDIT (V-MANT08)\""
+        "AUDIT.md \"AUDIT (V-MANT08)\"",
+        "AUDIT.md \"AUDIT 2 (AUD2-MANT08B)\""
       ],
       "novelty": "N3",
       "plaintext_novelty": "N3",
@@ -8019,7 +8022,7 @@
         "names_codes": "see AUDIT",
         "other": "M tokens"
       },
-      "depth_check": "V-MANT08: no recurring code (187, 202 singletons); cipher clause fails",
+      "depth_check": "V-MANT08: no recurring code (187, 202 singletons); cipher clause fails; AUD2-MANT08B: frame 0485 own shuffled-key gate FAIL 16/1000 -- reading rests on the pooled gate (rule 3 per-unit)",
       "decode_status": "Non-decrypted"
     },
     {
