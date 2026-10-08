@@ -155,3 +155,49 @@ re-derivation of the settled pages is owed (RD7-2026-10-04.md predates the settl
 ## JSTOR run (local runner, 4 Oct 2026, second sitting)
 
 JSTOR query "Vargas Mexia" "Espagnol 132": 1 result, Geoffrey Parker, review of Reinbold and Vázquez de Prada, The American Historical Review 112 (2007) 930-931, https://www.jstor.org/stable/40006809 -- snippet: "a volume of secret correspondence left by one ambassador, Juan de Vargas Mexia, when he died in Paris may be found in the Bibliotheque Nationale de France (Manuscrit Espagnol 132)". Identifies the volume; prints nothing. The three Vargas Mexía phrase queries returned 0.
+
+## AUDIT 2 (second adversarial, AUD2-ES132), 8 Oct 2026, 16:40-17:0x UTC by `date -u`
+
+Verifier: AUD2-ES132, account 4, brief `.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md` ("Re-addressed: AUD2-ES132" + common
+tail), for LANE-VERIFY-1 / acct3-orchestrator. A session separate from every solver (CS-1, FT-B, RUN1/RUN2-ES132, N4-ES132/B,
+A3V3-ES132S, ES132-SLIC), from the rule-7 sessions (A3V2-ES7, ES132-RD) and from AUDIT 1 (A3V2-ES132A1, account 3). Items: the
+**unprinted paragraphs** of the f.89 letter (19 Sept 1578) and the f.119 letter (15 Oct 1578), N3 D1 in AUDIT 1. Not decoded.
+
+**Re-derivation (rule 7, `--check` only).** `test0.py`, `test1.py`, `test2.py`, `settle_dup.py`, `rd7_settle.py --check`: all
+"OK: committed outputs match" (exit 0). The reading audited here is the committed one (post-settlement, per ES132-RD 8 Oct).
+
+### Prior-work checks 3-5
+| check | route, query | result |
+|---|---|---|
+| 1 own work | grep es132/Vargas in NOTES, AUDIT, WORK-QUEUE, NEXT-STEPS, status.json, ROOM (last ~1,500 lines) | no live claim; ES132-SLIC (S licence FAILed gates b/c, text stays M) and ES132-RD (rule-7 0 diffs) are the only work since AUDIT 1; **status.json has no es132 row** (grep "vargas"/"es132", 8 Oct 17:0x) |
+| 2 leaf/neighbours | not re-run (no images opened); AUDIT 1 + CS-1: no gloss on f.89-96 or f.119-120; f.169/f.177 are the volume's only clear copies | unchanged, carried |
+| 3 holder/portal/solvers | BnF cc34747q, DECODE 1980/1983, cabinet-noir 47b6db9 (ES132-SLIC 8 Oct 02:1x re-checked: no f089/f119) | carried from AUDIT 1/ES132-SLIC, not re-fetched |
+| 4 edition/calendar (families AUDIT 1 did not cover, run first) | (i) Hume, *CSP Spain (Simancas)* vol. 2, 1568-79 (IA adw2692.0002.001.umich.edu, djvu, grep Vargas + Sept/Oct 1578 headings); (ii) the **"Mejía" spelling** (AUDIT 1 searched "Mexia" only): be-api `"Juan de Vargas Mejia" 1578` (68 items) -> CODOIN t. LI (IA coleccindedocu51madruoft, djvu, every Vargas hit read in context), Google Books `Felipe II a "Juan de Vargas Mejía" "septiembre 1578"`, `"Vargas Mejía" "19 septiembre 1578"`, `"15 octubre 1578"`; (iii) Lefèvre 2e partie t. I via HathiTrust Bibliographic API (OCLC 1703147); (iv) Vázquez de Prada 2004 via Google Books `intitle:"Felipe II y Francia"` + Vargas/Nazaret/Bearne | (i) prints the king's letters **to Mendoza** of the same two days (nos. 529, 19 Sept; 535, 15 Oct 1578: Netherlands, Guaras's release, Alençon match "pastime", Gombal de Guaras) -- no letter to Vargas, Vargas named there only as a channel for Mendoza's post; (ii) CODOIN LI (1867) prints Vargas's own letters **to Alonso de Curiel** (Calais), Apr 1578-Mar 1579, incl. 31 Aug, 12 Oct (Don Juan's death) and Philip II to Curiel 13 Oct ("escribo a Juan de Vargas que se le remita la respuesta") -- none is the king's letter to Vargas; CODOIN 1931 index/1971 catalogue list the same Curiel series; García Hernán, *Irlanda y el rey prudente* (2000) cites AGS Vargas letters of 1578 (snippet only, not the 19 Sept/15 Oct letters); (iii) HathiTrust holds only **v.2-4** under OCLC 1703147 (all search-only): **t. I still unreachable**; (iv) 0 hits, volume not snippet-indexed: **unread** |
+| 5 G3 (decoded-phrase re-search) | `tools/print_check.py` on 12 decoded phrases (positive control "no conviene determinarnos sin mucho fundamento" + 11 unprinted: de veras y castigar con rigor; tan injusta y de tan mal nombre; arcobispo de Nazaret; el de Alanzon y el de Bearne; andamientos y pretension; naos de Indias que se tomaron; lo que toca a la navegacion de las Indias; sobre lo de las piraterias; a las predicas; se han atrevido a introduzir; don Sancho de Leyva), sources CSP Spain vol. 2 + Teulet t. V, unasked ia-global/gbooks/openalex/crossref/s2; ia-global 502s retried once by direct be-api | control found (ia-global: relationspoliti04teulgoog; gbooks: 7 copies of Teulet 1862) -- method works. Unprinted phrases: "arcobispo de Nazaret" in Teulet t. V = Mendoza, Paris 1586-87 (every hit in context dated 1586-87); "a las predicas" = England 1586; "lo que toca a la navegacion de las Indias" = CODOIN t. VI (Philip II to Moura on Portugal, 1579) and t. CXII (Naples viceroy's opinion, 1576), generic chancery phrase; "tan injusta y de tan mal nombre" = CODOIN t. CIII / *Correspondencia de los príncipes de Alemania* (1892), *Semanario erudito*, histories -- Germany, not this letter; "el de Alanzon y el de Bearne" = Cabrera de Córdoba 1625 (narrative, already in AUDIT 1); "sobre lo de las piraterias" = Almirante, *Bibliografía militar* 1876 and *Años 1568-1571* (1952); "don Sancho de Leyva" 362 items (galley commander, common). gbooks counts of 260-350 on short phrases are loose matching, top results read and unrelated. s2 and crossref 429 after 2/5 calls, not retried |
+
+**SUBSTANCE test (G3, two rare entities within +-3 days).** The only same-day prints are the king's letters to Mendoza (CSP Spain
+nos. 529, 535) and Vargas's to Curiel (CODOIN LI, 12 Oct; king to Curiel 13 Oct). Shared with our letters: Guaras (19 Sept) --
+but only in the **printed** C paragraph, already N0; Alençon -- one generic entity, in a different context (the English
+match). None shares two rare entities with any unprinted paragraph (Nazareth, Béarn, Sancho de Leyva, Diego Luis/Indies ships,
+the grain, the Paris preaching, piracy). Diffed, not SUBSTANCE. No print of the unprinted wording located.
+
+### Classification and depth
+| item | AUDIT 1 | AUDIT 2 | basis |
+|---|---|---|---|
+| f.89 letter, unprinted paragraphs (1,525 M + 198 U) | N3, D1 | **N3 kept, D1 kept** | no prior plaintext or decipherment located after the families above; not N4: Lefèvre t. I, Vázquez de Prada 2004, AGS Estado K minutes, BL Add MS 28421 (not digitised, D1-ES132G) unread, HathiTrust/JSTOR full text cloud-blocked (JSTOR rows done 4 Oct, 0 hits). Depth under the 8 Oct depth bar: no H/C/S stretch in this text (ES132-SLIC's S licence failed gates b and c), no code value read in two contexts, so no clause: D1 |
+| f.119 letter, unprinted paragraphs (660 M + 96 U) | N3, D1 | **N3 kept, D1 kept** | same |
+| printed paragraphs (f.90v L10-L26; f.119v L07-L13 + f.120r L01-L04) | N0, D2 | not re-audited (out of scope); N0 confirmed incidentally by the control hits | Teulet 1860/1862 |
+Key: `published` (Tomokiyo after Devos/Alcocer). Text: not located for the unprinted parts. **Unique-solve test fails, as in
+AUDIT 1** (the N3 text is D1). Safe sentence: AUDIT 1's, with "Hume's CSP Spain vol. 2 and CODOIN LI (the Curiel letters)
+searched, 8 Oct 2026" added to the list of sources; still "graded M only". Unsafe: AUDIT 1's.
+
+### Postmortem and propagation
+- No over-claim found in NOTES.md, AUDIT.md or the readings (grep for new/first/unpublished/solved: none about our work).
+- Gap AUDIT 1 left that mattered: the **"Mejía" spelling** was never searched; it opens CODOIN LI and the 1931/1971 CODOIN
+  indexes. Run both spellings for any Vargas item.
+- `SECOND-OPINIONS-QUEUE.tsv`: AUDIT 1 assigned N3 but filed no row; filed now as **SO-ES132-F89-F119**
+  (`second-opinions/PROMPT-chatgpt.md`), CLAUDE.md "a verifier that assigns N3 or better appends the row".
+- status.json: no row for this target, so nothing to propagate; no result row is due (unique-solve fails, D1).
+- Requests: archive.org 14 (incl. print_check 2), be-api.us.archive.org 26 (incl. print_check 12; 2 HTTP 502), www.googleapis.com
+  21, api.openalex.org 12, api.crossref.org 5 (429), api.semanticscholar.org 2 (429), catalog.hathitrust.org 1, openlibrary.org 2.
+  No logins, no credentials printed.
