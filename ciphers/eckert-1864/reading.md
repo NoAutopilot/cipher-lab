@@ -467,5 +467,17 @@ Code-word tokens: H 12.
 
 Code-word tokens: H 37.
 
-Totals over the 56 entries: H 930, C 13, I 0, M 0.
+**E59 | Page 59 | 8951 | 27 Apr 1864 11.30 AM, to Kitchen (F. S. Van Valkenburg)**
+
+{time: 11.30 PM} {date: Apr 27} for [Maj Gen W. T. Sherman] [Nashville] [.] The [Cavalry] Bureau reports that the [11] [Michigan] [Cavalry] is of no use at Lexington that its Efficiency is being impared & that it ought to be sent to the field  {tail: [signed] [General-in-Chief] Tall oaks from little acorns grow}
+
+Code-word tokens: H 12.
+
+**E60 | Page 111 | 9003 | 16 Jul 1864 10.30 AM, to Grant (code word John), signed President U.S. (no operator on the page)**
+
+For [Maj Genl U.S. Grant] Hay Asthore house [.] Yours received [.] with the safe conduct as you propose without waiting for one by mail from me [.] If there is [,] or is not any thing [In the] affair I wish to know it without unnecessary delay  {tail: [signed] [President U.S.]}
+
+Code-word tokens: H 8.
+
+Totals over the 58 entries: H 950, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
