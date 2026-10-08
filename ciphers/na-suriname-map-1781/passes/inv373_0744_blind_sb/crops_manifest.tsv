@@ -1,0 +1,7 @@
+# SUR-BLIND crops of NA 1.05.03 inv. 373 scan 0744 LEFT page (crops not committed: folder over 30 MB; regenerate as below)
+# IIIF base: https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/c4c77b68-a6e2-4472-9b90-d92694b7088c.jp2 (native 4970x4032)
+# region fetched: {base}/80,90,2420,3830/full/0/default.jpg -> l744.jpg (HTTP 200, 8 Oct 2026 22:2x UTC)
+# crop command: python3 tools/iiif_lines.py --image l744.jpg --region 450,0,1960,3830 --out c744 --prefix p0744L --centres 73,168,250,329,414,508,582,656,751,833,918,991,1075,1163,1247,1347,1429,1507,1585,1686,1774,1859,1947,2032,2141,2216,2284,2358,2437,2517,2606,2692,2767,2859,2941,3033,3116,3202,3261,3347,3414,3525 --lines-per-crop 2 --debug
+# (centres from --dry-run --distance 45: 42 lines = 21 gloss+cipher pairs, gloss ABOVE its cipher line; pairing checked by eye on L01/L11/L20/L21)
+crop	content
+L01-L21	one pair each: plain Dutch gloss line above, cipher line below; the catchword group at the page foot is not cropped
