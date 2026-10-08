@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-08.1"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-08.2"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -194,6 +194,13 @@ body.traypad #offer{bottom:100px}
 .t:hover .trash,.t:focus-visible .trash{opacity:.9}
 @media (hover:none){.t .trash{display:none}}
 .t .rcb{position:absolute;left:1px;bottom:1px;font:600 9px/13px var(--f-body);background:var(--accent);color:#fff;border-radius:3px;padding:0 3px;pointer-events:none}
+#dropBar[hidden]{display:none}
+#dropBar{position:fixed;left:0;right:0;bottom:0;z-index:45;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:2px solid var(--accent);box-shadow:0 -4px 14px rgba(0,0,0,.2)}
+#dropBar [data-drop]{border:2px dashed var(--line);border-radius:8px;padding:14px 8px;text-align:center;font-weight:600;line-height:1.2}
+#dropBar [data-drop] small{font-weight:400;color:var(--muted)}
+#dropBar [data-drop="NOT-LETTER"]{color:var(--bad)}
+#dropBar .dropover{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
+.t.lifted{opacity:.35}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
@@ -211,7 +218,7 @@ body.traypad #offer{bottom:100px}
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <section id="s1">
-    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign to see it larger. Tap the orange <b>?</b> on a questioned sign to approve it. <b>Drag</b> a sign onto another pile with the mouse (or up from the tray). The red <b>✕</b> on a sign (mouse: hover) trashes it: a page edge, shadow or stain, not a sign.</p>
+    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign: lift your finger to see it larger, or drag it onto a pile (or onto the bar at the bottom: doesn’t belong / trash). Tap the orange <b>?</b> on a questioned sign to approve it. <b>Drag</b> a sign onto another pile (mouse: straight away; phone: hold first). The red <b>✕</b> on a sign (mouse: hover) trashes it: a page edge, shadow or stain, not a sign.</p>
     <div class="tapmode"><span class="hint">A tap on a sign:</span><span class="seg" role="group" aria-label="What a tap does"><button type="button" id="modeOut" class="on">Takes it out</button><button type="button" id="modeLook">Shows it large</button></span></div>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
     <details class="opts"><summary>Display options</summary><div class="row">
@@ -247,6 +254,7 @@ body.traypad #offer{bottom:100px}
   </section>
   <div id="tray" hidden role="region" aria-label="Taken out"><span class="lab">Taken out<br><b id="trayN">0</b></span>
     <div class="tiles" id="trayTiles" title="Tap a sign to put it back"></div><button type="button" id="trayGo">Place them &rarr;</button></div>
+  <div id="dropBar" hidden aria-hidden="true"><div data-drop="OUT">Doesn’t belong<br><small>take it out</small></div><div data-drop="NOT-LETTER">Trash<br><small>not a sign</small></div></div>
   <div id="offer" hidden role="region" aria-live="polite" aria-label="Apply to the whole cluster">
     <span id="offerT"></span><div class="tiles" id="offerTiles"></div>
     <button type="button" id="offerYes">Apply to all</button><button type="button" id="offerNo">Just this tile</button></div>
@@ -374,8 +382,9 @@ document.addEventListener('click', e => { if (swallowClick){ swallowClick = fals
 function attachPress(el, onTap, onHold){
   let t = null, sx = 0, sy = 0, held = false;
   const cancel = () => { if (t){ clearTimeout(t); t = null; } el.classList.remove('pressing'); };
-  el.addEventListener('pointerdown', e => { if (e.button > 0) return; held = false; sx = e.clientX; sy = e.clientY; el.classList.add('pressing');
-    clearTimeout(t); t = setTimeout(() => { t = null; held = true; swallowClick = true; el.classList.remove('pressing'); onHold(); }, 450); });
+  el.addEventListener('pointerdown', e => { if (e.button > 0) return; held = false; sx = e.clientX; sy = e.clientY; el.classList.add('pressing'); const pt = e.pointerType;
+    clearTimeout(t); t = setTimeout(() => { t = null; held = true; swallowClick = true; el.classList.remove('pressing');
+      if (pt === 'touch' && el._touchArm) el._touchArm(sx, sy); else onHold(); }, 380); });   // touch: lift to drag; lift off unmoved = larger view
   el.addEventListener('pointermove', e => { if (t && Math.hypot(e.clientX - sx, e.clientY - sy) > 10) cancel(); });
   el.addEventListener('pointerup', cancel); el.addEventListener('pointercancel', cancel); el.addEventListener('pointerleave', cancel);
   el.addEventListener('click', e => { if (held){ held = false; e.preventDefault(); return; } onTap(e); });
@@ -469,29 +478,51 @@ function trashTile(sid, pid){ remember([sid]); ensureSpecial('NOT-LETTER'); setD
 function pileDrag(b, sid, pid){
   // move/up are listened for on the window while a drag runs, so a lost pointer capture (seen in the hosted page,
   // owner 6 Oct 2026: the ghost stuck on screen) can never strand the ghost; Esc or leaving the window cancels.
+  // Touch (owner, 8 Oct 2026, on a phone: "I try to hold to pull it down to the not a fit pile and I can't"): hold a moment
+  // and the sign lifts (attachPress calls b._touchArm); drag it onto a pile, or onto the bar at the bottom ("Doesn't belong"
+  // = take out, "Trash" = not a sign); lift without moving to see it larger, as the hold did before.
   let d = null;
-  const pileAt = (x, y) => { const e = document.elementFromPoint(x, y); const p = e && e.closest ? e.closest('.pile') : null; return p && p.dataset.pile ? p : null; };
-  const mark = () => { const p = pileAt(d.x, d.y); if (p !== d.over){ if (d.over) d.over.classList.remove('dropover'); if (p && p.dataset.pile !== pid) p.classList.add('dropover'); d.over = p; } };
-  const loop = () => { if (!d) return; const top = barBottom() + 40, bot = window.innerHeight - 40;
-    if (d.y < top) window.scrollBy(0, -Math.min(28, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(28, (d.y - bot) / 2 + 4));
+  const pileAt = (x, y) => { const e = document.elementFromPoint(x, y); if (!e || !e.closest) return null;
+    const z = e.closest('[data-drop]'); if (z) return z; const p = e.closest('.pile'); return p && p.dataset.pile ? p : null; };
+  const target = p => p ? (p.dataset.drop || p.dataset.pile) : null;
+  const mark = () => { const p = pileAt(d.x, d.y); if (p !== d.over){ if (d.over) d.over.classList.remove('dropover');
+    if (p && target(p) !== pid) p.classList.add('dropover'); d.over = p; } };
+  const loop = () => { if (!d) return; const dbh = dropBarH(), top = barBottom() + 40, bot = window.innerHeight - dbh - 40;
+    if (d.y < top) window.scrollBy(0, -Math.min(28, (top - d.y) / 2 + 4));
+    else if (d.y > bot && d.y < window.innerHeight - dbh) window.scrollBy(0, Math.min(28, (d.y - bot) / 2 + 4));   // not while over the bar
     mark(); d.raf = requestAnimationFrame(loop); };
-  const move = e => { if (!d) return; if (e.buttons === 0) return end(e, true); d.x = e.clientX; d.y = e.clientY;
-    if (!d.on && Math.hypot(d.x - d.sx, d.y - d.sy) > 10){ d.on = true;
-      const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g; d.raf = requestAnimationFrame(loop); }
-    if (d.ghost){ e.preventDefault(); d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; } };
+  const lift = () => { const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g;
+    dropBar(true); d.raf = requestAnimationFrame(loop); place(); };
+  const place = () => { if (d && d.ghost){ d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - (d.touch ? 84 : 36)) + 'px'; } };   // above the finger
+  const move = e => { if (!d) return; if (e.buttons === 0 && e.pointerType !== 'touch') return end(e, true); d.x = e.clientX; d.y = e.clientY;
+    if (!d.on && Math.hypot(d.x - d.sx, d.y - d.sy) > 10){ d.on = true; lift(); }
+    if (d.touch && !d.moved && Math.hypot(d.x - d.sx, d.y - d.sy) > 10) d.moved = true;
+    if (d.ghost){ e.preventDefault(); place(); } };
   const up = e => end(e, true), cancel = e => end(e, false), key = e => { if (e.key === 'Escape') end(e, false); };
+  const on = () => { window.addEventListener('pointermove', move, true); window.addEventListener('pointerup', up, true);
+    window.addEventListener('pointercancel', cancel, true); window.addEventListener('blur', cancel); window.addEventListener('keydown', key, true); };
   const off = () => { window.removeEventListener('pointermove', move, true); window.removeEventListener('pointerup', up, true);
     window.removeEventListener('pointercancel', cancel, true); window.removeEventListener('blur', cancel); window.removeEventListener('keydown', key, true); };
   function end(e, drop){ if (!d) return; const dd = d; d = null; off(); if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
-    if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover');
-    const p = drop && e && e.clientX != null && pileAt(e.clientX, e.clientY); if (!p || p.dataset.pile === pid) return; const to = p.dataset.pile;
+    const x = dd.touch || !e || e.clientX == null ? dd.x : e.clientX, y = dd.touch || !e || e.clientY == null ? dd.y : e.clientY;   // touch: the last move point
+    const p = drop && !(dd.touch && !dd.moved) ? pileAt(x, y) : null, to = target(p);   // looked up before the drop bar goes away
+    if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover'); dropBar(false); b.classList.remove('lifted');
+    if (dd.touch && !dd.moved){ if (drop) showCtx(sid, pid); return; }   // a hold without a drag: the larger view
+    if (!to || to === pid) return;
+    if (to === 'OUT'){ takeOut(sid, b); return; }
+    if (to === 'NOT-LETTER' && p.dataset.drop){ trashTile(sid, pid); return; }
     remember([sid]); setDest(sid, to); note_('Moved ' + sid + ' from ' + pid + ' to pile ' + to + '.'); renderSome([pid, to]); offerCluster([sid], to); }
+  b._touchArm = (x, y) => { document.querySelectorAll('img.ghost').forEach(g => g.remove()); if (d) return;
+    d = {x, y, sx: x, sy: y, on: true, touch: true, moved: false, over: null, ghost: null, raf: 0}; b.classList.add('lifted');
+    try { navigator.vibrate && navigator.vibrate(12); } catch (er) {} on(); lift(); };
+  b.addEventListener('touchmove', e => { if (d && d.touch) e.preventDefault(); }, {passive: false});   // the page stays put while a sign is lifted
   b.addEventListener('pointerdown', e => { if (e.button > 0 || e.pointerType === 'touch') return;
     document.querySelectorAll('img.ghost').forEach(g => g.remove());
-    d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0};
-    window.addEventListener('pointermove', move, true); window.addEventListener('pointerup', up, true);
-    window.addEventListener('pointercancel', cancel, true); window.addEventListener('blur', cancel); window.addEventListener('keydown', key, true); });
+    d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0}; on(); });
 }
+// the drop bar shown at the bottom while a sign is dragged: take out, or trash
+function dropBar(show){ const z = $('dropBar'); if (!z) return; z.hidden = !show; z.querySelectorAll('[data-drop]').forEach(x => x.classList.remove('dropover')); }
+function dropBarH(){ const z = $('dropBar'); return z && !z.hidden ? z.getBoundingClientRect().height : 0; }
 
 function pileEl(p, piles){
   const s = st(p.id), status = statusOf(p.id), aside = asideOf(p.id);
@@ -1292,6 +1323,12 @@ function ctxKeep(){
 $('ctxKeep').onclick = ctxKeep;
 $('ctxOut').onclick = () => ctxMove('OUT');
 $('ctxPrev').onclick = () => ctxStep(-1);
+// phone (owner, 8 Oct 2026: "I can't swipe left and right"): a sideways swipe on the enlarged sign or its line goes to the next / previous tile
+(function(){ let s0 = null;
+  [$('ctxBigW'), $('ctxCv')].forEach(el => {
+    el.addEventListener('touchstart', e => { s0 = fix || e.touches.length !== 1 ? null : {x: e.touches[0].clientX, y: e.touches[0].clientY}; }, {passive: true});
+    el.addEventListener('touchend', e => { if (!s0 || fix) return; const t = e.changedTouches[0], dx = t.clientX - s0.x, dy = t.clientY - s0.y; s0 = null;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) ctxStep(dx < 0 ? 1 : -1); }, {passive: true}); }); })();
 $('undo').onclick = undo;
 $('order').onchange = render;
 $('ctxUndo').onclick = () => { if (fix) fixStop(); const last = undo(); if (!last) return;
