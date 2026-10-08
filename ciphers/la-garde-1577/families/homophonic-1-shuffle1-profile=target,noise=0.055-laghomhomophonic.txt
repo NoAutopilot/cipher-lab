@@ -1,0 +1,17 @@
+# la-garde-1577 homophonic seed 1 restarts 8 8 Oct 2026 22:42 UTC; control mean 0.699 (0.402-0.856); score -585.017; TARGET LETTERS SHUFFLED (seed 1, false-positive floor)
+# {"restart_scores": [-585.0, -585.9, -587.0, -590.8, -592.6, -593.5, -594.0, -594.7], "key": {"07": "n", "1": "e", "10": "l", "11": "u", "12": "e", "13": "d", "14": "s", "15": "r", "16": "i", "17": "c", "18": "s", "19": "u", "2": "e", "20": "e", "21": "e", "22": "i", "23": "u", "24": "t", "29": "n", "3": "i", "4": "o", "5": "n", "6": "p", "7": "a", "8": "e", "9": "r"}}
+rineuourcleeellireauip
+aseiicctedeuepoiueurunlee
+taiuaroie
+nleredud
+esuleueiesnuiuleleiesiseuere
+leroitnnpesteeeieuea
+iirelecllenienspreu
+relapreieuluslee
+sieneinecoireerueceran
+tiouladunuslets
+replinire
+ilulceeaprorso
+ites
+esnotl
+ieneeecoiass

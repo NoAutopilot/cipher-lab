@@ -1,0 +1,17 @@
+# la-garde-1577 homophonic seed 1 restarts 8 8 Oct 2026 22:41 UTC; control mean 0.667 (0.371-0.852); score -572.867
+# {"restart_scores": [-572.9, -574.3, -578.5, -580.9, -590.4, -591.6, -591.9, -592.1], "key": {"07": "d", "1": "e", "10": "e", "11": "e", "12": "n", "13": "n", "14": "e", "15": "o", "16": "s", "17": "r", "18": "s", "19": "t", "2": "i", "20": "l", "21": "i", "22": "l", "23": "e", "24": "c", "29": "o", "3": "t", "4": "i", "5": "r", "6": "u", "7": "u", "8": "s", "9": "a"}}
+osleeetereeenetornoute
+eseurleientceliurleseueil
+aaetleroe
+ceieieti
+onciuelsiueresnoueestettrese
+seuerconsessessiulci
+ssairesestenseinali
+siousnransecrisn
+esuriueetaiertinereesc
+lsaanultsieetuo
+usieetena
+tdieiseiidecta
+irre
+esieru
+adiesadiuetn

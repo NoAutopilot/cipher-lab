@@ -33,3 +33,17 @@ The error level changes; nothing else does. Cipher, N=229, K=26, `--tokens space
   (rule 2) and on the dropped free `[mark]` tokens (LAG-ERR: about 2-3% uncertain). A target PASS with shuffled FAIL goes to
   the lane for a separate verifier; no reading is claimed by this job. Control below gate at C = untestable by this family at
   this N and error (third-attempt clause: the homophonic/masc ladder closes for this instrument).
+
+## Amendment 2 (8 Oct 2026, 22:4x UTC, LAG-HOM) -- descriptive judge-power check, written before it is computed
+
+Runs C, D and the shuffled run are done (rows in HYPOTHESES.md, 22:40-22:42 UTC): both controls gated (0.699, 0.667), target
+judge FAIL -1.208, shuffled decode FAIL -1.254, real_p05 -0.96. The gate above is control *recovery*; the target verdict is the
+*judge*. A judge FAIL licenses a negative only if the same judge PASSes the solver's own control decodes at the recovery the
+gate accepts (rule 3: the control must be able to read where the target does not, on the same statistic). Check, no new gate,
+nothing in Amendment 1 changed: `families/lag_hom_judgepower.py` re-creates the noise-0.055 and noise-0.084 control decodes
+for seeds 1-3 (same `make_control`/`solve` calls and seeds as family_run.py) plus seeds 4-9 at 0.055 for more points, and
+scores each decode with the same spec judge. Read-out fixed now:
+- judge PASS on most (>= half) control decodes with recovery >= 0.60 -> the target FAIL is a control-backed negative for this
+  family at N=229 on the base codes (conditional on the transcription, rule 2).
+- judge PASS on fewer than half of them -> the judge cannot see a decode at the gated recovery; the target FAIL is
+  "judge cannot decide at this N", not a negative, and the gap says so.
