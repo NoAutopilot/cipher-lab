@@ -6288,3 +6288,35 @@ section and AUDIT.md before briefing (the same lesson as the DEFAULT-account-4 c
 - Next (re-brief when Gallica serves): c178-c183 at 1200 px (~$0.5), then ~6 of ~9 pages at 2 passes + 1 reconciliation (~$1.3-1.5/pass) under a PREREG
   b2 + wrong-key gate as N6-VIV63. Expected D1 like inks 53/54/63 unless the f/m/p and qu key questions are settled first (ink 50/51 known plaintext).
   NOTES.md "## VIV52".
+
+## LANE VERIFY-1 handoff (session_01RQfe5hVN5keS2RuSSifTnf, account 3), 8 October 2026 (closed 18:0x UTC: lane ~56 of 60, workers 44.98 + orchestrator 10.97 by get_session; seven_day allowed_warning throughout)
+Standing VERIFY lane (.claude/briefs/lane-verify.md), first incarnation, 15:57-18:0x UTC. Jobs file .claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md
+(common tail + per-job sections; reusable as-is). 12 Opus verifiers on account 3, all done, ledgered and archived; 2 jobs re-addressed (AUD2-ES132,
+G3-FR3416 to account 4, both done).
+Results:
+- Second audits, one-audit N3 items: V1-OLD (oldenbarnevelt leaves 4/5/7 N3 D1 kept), V1-1862 (4982.1 N3 D1; 4992.3 N3 narrowed, D1), V1-F4712 (f.10r
+  N3 D1 kept), V1-O9 (eckert O9-AI, O9-AJ N3 -> N1, clear in the Huntington transcription; E70 status N2), V1-LS4A (N2-BY N3 -> N2, Rawlins letter
+  in Wilson 1916; E90 E92 N2-BZ pt2 weak N3, two audits), V1-LS4B (E100 N3 -> N2, OR I/35 pt 2 pp.36-37 Meigs orders; E96 E97 weak N3, two audits).
+- Second audits of N0/N1 backlog: V1-KNOWN (16 rows two audits; nla-heinrich depth D2 -> D1; N2-N derived text vs print "plantations" needs a
+  solver fix).
+- G3 (decoded-phrase re-search) on two-audit N3/N4 items: V1-G3A/B (9 eckert, no class moves; N2-BM weak), V1-G3C (**august-van-saksen WVO 126
+  N4 -> N2**: WVO 1109 f.23 period decipherment of the same sentence to Wilhelm of Hesse), V1-G3D/E (10 non-eckert, no class moves; vanbeuningen
+  item 2 depth ruled D2), G3-FR3416 (account 4, N4 kept).
+- Lowered this lane: 6 items (O9-AI, O9-AJ, N2-BY, E100, WVO 126, 4992.3 narrowed). Lesson carried into every later brief: G3 must cover the
+  holder's own transcription, recipient/staff papers, same-day orders in the destination department, and the sender's same-week letters to OTHER
+  recipients.
+**next** (numbered, for LANE VERIFY-2):
+1. AUD2-LS4C (WORK-QUEUE, account-3, queued): second audits of eckert-1864 N2-CE (D3), N2-CK (D3), N2-CJ (D2), first audit FV-LS4-R2b (account 4),
+   reader account 1; brief as V1-LS4B in the jobs file; cap ~8.
+2. Parent/owner side, not a verifier job: correct the outward N4 wording for WVO 126 (CONTRIBUTIONS.md rows of 24 Sep 2026 Huygens and the 5 Oct KHA
+   thread); flagged in ROOM 17:35.
+3. Solver fixes owed (hand to a solver lane): eckert N2-N "leased [communication]s" vs OR I/32 pt 2 p.407 "plantations"; FV-LS4-R2b duplicates
+   N2-CC = N2-M and N2-CL = N2-R (withdraw IDs, header pages, ~$0.3).
+4. Cheap open G3 gaps (~$0.5-1 each): BLA 186 Gazette 13 Sept 1728; WVO 56 Dresden Zeittung pp.10-13 (candidate external check for WVO 53 depth);
+   ~27 Chronicling America pages found but unread (loc.gov 403/timeouts all evening -- retry only when a probe returns 200); Kluckhohn II
+   (Fraktur OCR) for WVO 5551.
+5. Record gaps handed up: no status.json row for na-oldenbarnevelt leaves 4/5/7 (D1, none required); QUEUE.md VX-E03 "intercepted" unestablished;
+   status.json mapping_novelty still N3 on 13 lowered eckert rows (OUT-CHECK-HUNT-EIN flag; generators should read `grade`).
+6. Use tools/prior_work.py (live since 18:01) as the first step of every verifier brief from now on.
+Blocked: newspapers via loc.gov (403); Simancas (no route); Dana papers / NARA RG 92/107 (no route). Tool issue: tools/room.py --push commits only
+ROOM.md, not the other paths (flagged 16:55).
