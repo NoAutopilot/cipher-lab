@@ -372,22 +372,22 @@ cited`). Convergence with LESSONS-BOURDEAU.md (B) or LESSONS-LASRY.md (L) is nam
 
 | # | Practice | (a) already | (b)/(c)/(d) |
 |---|---|---|---|
-| 1 | Spelling part first | partly: `interlinear_align.py --floor` separates letter codes from word codes, but only when a clear text is beside the cipher | (b) item B1; (c) C1 |
+| 1 | Spelling part first | partly: `interlinear_align.py --floor` separates letter codes from word codes, but only when a clear text is beside the cipher; **`freq.py --split-at auto` (TOOLS-TOMO, 8 Oct 2026, shelf `weak`: Ormonde |err| 5 FAIL, Lodewijk 4613/4615 |err| 2 PASS)** | (b) item B1; (c) C1 |
 | 2 | Dictionary position | partly: `freq.py --onepart-dict LANG` maps a group's range position to a corpus's word-TYPE initial-letter band (27 Sept 2026, DES-PART), but from a running-text corpus, not a real period dictionary's headword list (see C2) | (b) B1; (d) destaing-gerard-1779 (run, no support at N=12 -- NOTES.md DES-PART) |
-| 3 | Degrees of one-part | partly: KEY-DESIGN.tsv / `design_prior.py` record a key's design, not its ordering class | (c) C3 |
-| 4 | Matrix regularity | partly: LESSONS.md "Structure before search" (Toledo 1565, Warsaw 1627) -- convergent with B practice 9 | (c) C3 |
-| 5 | Contacts, KWIC | no tool; `freq.py` counts unigrams only | (b) B1; (c) C4; (d) berthier-napoleon-1812 |
-| 6 | Long repeats | no tool | (c) C5 |
-| 7 | Two encipherments | no: `interlinear_align.py` aligns cipher to clear, never cipher to cipher; LESSONS.md lead-class order has no rung for a second encipherment | (b) B2 (convergent with LESSONS.md "Look for the sibling" and L practice 10's route order); (c) C6 |
+| 3 | Degrees of one-part | partly: KEY-DESIGN.tsv / `design_prior.py` record a key's design, not its ordering class; **`key_design.py --matrix` labels one-part / two-dimensional / blockwise / none (TOOLS-TOMO, 8 Oct 2026, shelf `weak`: 6/6 labels right, 3-anchor prediction 0.444 < 0.50)** | (c) C3 |
+| 4 | Matrix regularity | partly: LESSONS.md "Structure before search" (Toledo 1565, Warsaw 1627) -- convergent with B practice 9; **`key_design.py --matrix` (TOOLS-TOMO, 8 Oct 2026, shelf `weak`)** | (c) C3 |
+| 5 | Contacts, KWIC | **`freq.py --contacts K [--vowels]`, `--kwic` (BER-KWIC 27 Sept 2026; known-answer control TOOLS-TOMO 8 Oct 2026: Ormonde vowels 0.80 vs null 0.545; shelf contacts `weak`, kwic `untested`)** | (b) B1; (c) C4; (d) berthier-napoleon-1812 |
+| 6 | Long repeats | **`freq.py --repeats N [--maximal]` with gaps (BER-KWIC 27 Sept; TOOLS-TOMO 8 Oct 2026, shelf `weak`: Ormonde word share 0.50 < 0.6)** | (c) C5 |
+| 7 | Two encipherments | **`interlinear_align.py --cipher-pair A B` (TOOLS-TOMO, 8 Oct 2026, shelf `weak`: semi-synthetic Servien precision 0.99 vs null 0.09; real es132 duplicate FAIL)**; LESSONS.md lead-class order still has no rung for a second encipherment | (b) B2 (convergent with LESSONS.md "Look for the sibling" and L practice 10's route order); (c) C6 |
 | 8 | Outside parallel clear | partly: lead-class order rung 1 (same letter in print) | (b) inside B2 |
 | 9 | Clear part and situation | partly: lead-class order; L practice 9 (cribs corroborate) | (d) destaing-gerard-1779 |
 | 10 | Drop early identifications | (a) rule 3 and the "untested-by-this-tool" paragraph | -- |
-| 11 | Long-word running-key drag | partly: `running_key.py` is a beam decoder; nothing drags long words | (c) C7; (d) hessen-1824 |
+| 11 | Long-word running-key drag | **`running_key.py --drag MINLEN` (TOOLS-TOMO, 8 Oct 2026, shelf `weak`: synthetic hessen-matched 7/8 seeds vs null 0/8; Brown challenge pre-registered line FAILED)** | (c) C7; (d) hessen-1824 |
 | 12 | Language first, switch at a wall | (a) `judge_plaintext.py` per-language corpora; rule 3 era paragraphs | (b) B3 (the "sounding language" check) |
 | 13 | Period hands and numerals | partly: per-target glyph conventions (malsburg bMALG) | (b) B4 |
 | 14 | Marks on groups | partly: thurloe-barriere-1654 mark-typed rerun (ZX-BAR2) | (b) inside B4 |
 | 15 | Publish checkably, mark conjecture | (a) rules 4 and 7 (grades, decode_key.py exceptions.tsv, --check) -- convergent with L practice 8 (errors graded) | -- |
-| 16 | Consistency across unrelated words | partly: rule 4 grade S requires a control, not multi-word attestation | (b) B5 |
+| 16 | Consistency across unrelated words | partly: rule 4 grade S requires a control, not multi-word attestation; **`decode_key.py <t> --consistency` reports, does not regrade (TOOLS-TOMO, 8 Oct 2026, shelf `weak`: breaking.htm 9/24 multi-word PASS, 2 of 4 cases FAIL)** | (b) B5 |
 | 17 | Quantity; deciphered collections | (a) rule 3; LESSONS.md unicity table; bl-wallis-letterbook, wallis-emus203-undeciphered already held | -- |
 
 ### (b) Brief / COMMON addenda (text for the parent)
@@ -448,7 +448,7 @@ Ranked: B2 first (a route to a key that no rung names yet, convergent across Tom
 Lasry's route order), B1 second (the code-breaking procedure none of our 256 folders runs, convergent with Bourdeau's
 "structural read before the solver").
 
-### (c) Tool options (not built)
+### (c) Tool options (C1, C3-C7 built 8 Oct 2026, TOOLS-TOMO; see column (a) and tools/data/tool_shelf.tsv)
 
 - C1 `tools/freq.py --split-at N` -- unigram stats reported separately for groups below and above N, with the gap search that proposes N.
 - C2 (built 27 Sept 2026, DES-PART) `tools/freq.py --onepart-dict LANG` -- for each frequent group, its relative position in the range mapped to the initial-letter band of a period dictionary from tools/data (Mansfield/Langie estimate). Built from a `judge_plaintext.py` `LANG_CORPORA` language's DISTINCT word TYPES (running text), not a real period dictionary's headword list -- still wanted: an actual period dictionary's page-order headwords, once one exists in tools/data, would give a sharper band than a running-text corpus's word-type shares.

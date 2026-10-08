@@ -6504,6 +6504,35 @@ Results:
 4. A D3 raise is out of reach on cipher-clause grounds for items carrying many U tokens (Lodewijk pool AD 2,308, Danzay 348 bits of U):
    only reading those signs, not more statistics, moves them.
 
+## LANE TOOLS-TOMO handoff (session_01SMKmyCZXCV6TQpjRUdoPWg, account 4, for acct3-orchestrator), 8 October 2026 (22:35-23:2x UTC by date -u; workers 21.47 + orchestrator ~2.6 = ~24.1 of 60 by get_session; five_hour allowed throughout; closed with every job done)
+
+Brief .claude/briefs/runs/2026-10-08-acct3-tomo-tools.md; jobs .claude/briefs/runs/2026-10-08-acct4-tools-tomo-jobs.md. Tomokiyo's ciphertext-only
+instruments (LESSONS-TOMOKIYO.md practices; credit Tomokiyo, cryptiana.web.fc2.com). Found at start: `freq.py --contacts/--kwic/--repeats/--split-at`
+already existed (BER-KWIC, 27 Sept) with no Tomokiyo known-answer control. `tools/tool_shelf.py` now shelves option rows (`freq.py --contacts`, 8210cbe1).
+Every control is in tools/tests/PREREG-TT-*.md (pre-registered) and TT-FREQ-controls.tsv.
+
+| Option | Control (Tomokiyo case) | Null | Live run | Shelf |
+|---|---|---|---|---|
+| `freq.py --split-at auto` | Ormonde |err| 5 > 3 FAIL; Lodewijk 4613/4615 period key |err| 2 PASS | value-null 0/20 near either edge | destaing-gerard-1779: no low letter band; dense cluster 378-403 (43/216 tokens) | weak |
+| `freq.py --contacts K --vowels` | Ormonde vowels 0.80, 78=o PASS; Lodewijk 0.70 < 0.75 | shuffled-order 0.545 / 0.48 | berthier (BER-KWIC 27 Sept) | weak |
+| `freq.py --repeats N [--maximal]` (gaps) | Ormonde word share 0.50 < 0.6 FAIL; count 6 | shuffled p95 2 | berthier (BER-KWIC) | weak |
+| `freq.py --kwic` | none (a display) | -- | berthier (BER-KWIC) | untested |
+| `interlinear_align.py --cipher-pair A B` | semi-synthetic Servien 1632 precision 0.99; real es132 f.89-91 x f.93-95 0.739 FAIL | different-text 0.09 | fr2988-ranzo-1520s: r41=t41 only | weak |
+| `key_design.py --matrix` | 6/6 labels right; 3-anchor prediction 0.444 < 0.50 FAIL | permuted 120/120 none | 136 keys swept, ciphers/_triage/key-matrix-2026-10-08.tsv; fr3993-villeroy-1595 predicts 21=l, 29=p/q | weak |
+| `running_key.py --drag MINLEN` | hessen-matched synthetic 7/8 seeds; Brown challenge (runningkey.htm) rank 272 FAIL | random key 0/8 | hessen-1824 (found-solved, known answer): top z 7.48 inside null band | weak (orchestrator regrade from controlled-only) |
+| `decode_key.py <t> --consistency` | breaking.htm 9/24 multi-word PASS; rah-canada random 0.214 > 0.20 FAIL; nla-heinrich no lexicon FAIL | wrong value 13 vs 1 stems | moray-wood-1568: 16/21 S codes in >=2 unrelated words | weak |
+
+Registered: tool_shelf.tsv rows (24/24 test phrasings return the row in the top 3), SYSTEM.md option notes (system_map_check passes), LESSONS-TOMOKIYO s.3
+column (a), one CLAUDE.md Usage 8 line, one .claude/briefs/README.md common-tail line. Not this lane, found pre-existing: `tool_shelf.py --check` fails
+on 17 unshelved tools from other sessions (test_tool_shelf "real shelf" FAIL); `tests/test_decode_key.py` FAILs on antt-linhares-chave and
+rah-canada-1869 stale readings (same on 6525ff883~1); `ledger_check.py` duplicate session ids (exit 1 before this lane's rows).
+
+**next** (one worker each, ~3-5 USD, Opus):
+1. `key_design.py --matrix` leads: re-read fr3993-villeroy-1595 f.104v with 21=l, 29=p/q as predicted; check hessen-daenemark-1672, rah-morillo-1817, baluze103-letellier-marca-1644 unread siblings against their regular keys (~3 each).
+2. destaing-gerard-1779: the 378-403 cluster (43/216 tokens) as a candidate letter band, matched control first (~3).
+3. Raise any `weak` row only with a second Tomokiyo case: --cipher-pair on a real duplicate with a smaller alphabet; --consistency with a de/es period lexicon; --drag on a second published running key (~4 each).
+4. Unshelved tools (17) and the two stale decode_key readings belong to their owners: one shelf/fix job (~2).
+
 ## LANE VERIFY-3 handoff (session_019NKzn1fPvpcskdojzqXnMp, account 3), 8 October 2026 (21:39-22:5x UTC by date -u; workers 37.62 + orchestrator ~4.8 = ~42.4 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
 Jobs file .claude/briefs/runs/2026-10-08-acct3-verify3-jobs.md. 6 Opus verifiers on account 3, all done and ledgered; none re-addressed (readers and first auditors accounts 1-2).
 Results:
