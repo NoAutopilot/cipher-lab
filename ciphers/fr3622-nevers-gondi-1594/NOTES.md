@@ -1,9 +1,9 @@
-blocked
-Gomberville, Mémoires de Nevers (Google Books H2eV4wAmIr0C) searched within for "Gondy" and "Veze" (Gondy hits pp.346, 426, 467, none for this letter) but not read through; no edition of Nevers's 1594 letters opened, so blocked, not open.
+open
+Gomberville 1665 seconde partie (Gallica bpt6k64451005) views 754-763 (printed pp.691-700, Feb-Apr 1594) read as images by this worker, letter absent; whole-volume ContentSearch Veze 0 hits, Gondy hits all other contexts.
 
 # Nevers to M. de Gondy, "De Veze", 27 March 1594 -- BnF Français 3622 no.45, fol. 91
 
-Job BNF-Q13-CS for LANE BNF-FOCUS (account 2), 8 Oct 2026. Status `blocked` (edition unread), not a negative.
+Job BNF-Q13-CS for LANE BNF-FOCUS (account 2), 8 Oct 2026 (status then `blocked`; superseded by BNF-GOMB below), not a negative.
 BnF notice (cc50072k/cc504266 listing): "Lettre, avec chiffre, de L[ODOVICO] G[ONZAGA, duc DE NEVERS] ... à Mr de Gondy ... De Veze, ce XXVIIe mars 1594." No decipherment flag. Same period, other Nevers cipher letters of March 1594 exist (no.76 to Revol 12 Mar, in the fr.3989 folder).
 
 ## Leaf look (Gallica btv1b9058938q, canvas 100 = f.90v/91r, 900 px)
@@ -21,8 +21,14 @@ Query "Nevers Gondy 27 mars 1594 Veze lettre chiffre Français 3622": no hit. Bl
 ## While waiting
 Run the sibling Nevers key (tools/keys/key60.tsv) against the f.91 symbols as a known-key test only after a transcription; first action: crop with tools/iiif_lines.py (canvas 100).
 
+## BNF-GOMB (8 Oct 2026, account 2)
+Edition: Gomberville 1665 seconde partie, Gallica bpt6k64451005. ContentSearch whole volume: Veze 0, Veze(acute) 0, Beze 0; Gondy/Gondi 7 hits at views 395, 475, 516, 559, 668, 669, 853 (snippets: Cardinal de Gondy in 1590/1593 Rome and Ligue contexts, none a Nevers letter of 27 Mar 1594); "1594" 11 hits (views 15, 471, 482, 538, 540, 554, 754, 755, 758, 767, 773).
+Images read: views 754-763 (printed pp.691-700): Arret of Parlement 30 Mar 1594, Plaisance-La Chastre letters, Orleans 27 Jan 1594, Lyon reduction 7-9 Feb 1594, a Huguenot writ to the king. No Nevers letter to Gondy, clear or deciphered, in the Feb-Apr 1594 block. Views 764-773 (to Aug 1594) not read as images; OCR name hits there: none for Gondy.
+Premise (d): Gondy-side edition not located; Gomberville is Nevers's own side. Premise (a)-(c) unchanged from BNF-Q13-CS.
+Gallica requests this job: about 39 incl. 1 reset+1 retry.
+
 ## Gate
 ```
-ciphers/fr3622-nevers-gondi-1594: blocked (line 1) -- already terminal, nothing to gate
+ciphers/fr3622-nevers-gondi-1594: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```

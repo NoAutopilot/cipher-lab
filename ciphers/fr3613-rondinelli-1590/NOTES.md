@@ -1,5 +1,5 @@
 blocked
-Gomberville, Mémoires de Nevers, seconde partie (Google Books H2eV4wAmIr0C) searched within for "Rondinelli" with no hit, but the volume was not read through by this worker, so the verdict is blocked, not open.
+Gomberville 1665 seconde partie (Gallica bpt6k64451005) ContentSearch run whole-volume (Rondinelli, Hercole, Rondin: 0 hits; only Italian letter is view 255, Caetani 15 Feb 1590, read as image) but the Oct-Dec 1590 pages were not read as images by this worker, so blocked, not open.
 
 # Hercole Rondinelli to the duc de Nevers, Paris, 11 Nov 1590 -- BnF Français 3613 no.33, fol. 62
 
@@ -21,6 +21,13 @@ One query above plus the combined blog query in fr3613-sega-caetani-1591's NOTES
 
 ## While waiting
 Open fr.3995's table list (finding aid cc504266) for tables addressed to Italian correspondents of 1590 and screen on Gallica, ~3 requests.
+
+## BNF-GOMB (8 Oct 2026, account 2, different instrument: Gallica ContentSearch + page images, not Google Books search-within)
+Edition: Gomberville, Memoires de M. de Nevers, seconde partie (1665), Gallica bpt6k64451005 (view n = Gallica PAG_n; printed page = view - 49 near v.255, - 63 near v.754).
+ContentSearch (`gallica.bnf.fr/services/ContentSearch?ark=bpt6k64451005&query=`), whole volume: Rondinelli 0, Rondinel 0, Rondin 0, Hercole 0, Ercole 0, Cifra 0, Parigi 1 and Illustriss 1 (both view 255 only). View 255 (printed p.206, read as image) is Cardinal Caetani to Cardinal Montalto, Di Parigi 15 Feb 1590, the only Italian letter in the volume: not Rondinelli, not the 11 Nov 1590 letter. "Nouembre 1590" hits at views 262-273, 452, 670 are royal/Champagne dated pieces (snippets only). Pages for Oct-Dec 1590 were NOT read as images, so blocked stays: no instrument here tested a French rendering of an Italian private letter beyond name search.
+Premise (d) update: recipient-side edition searched by OCR for the sender's name, 0 hits; not found.
+Next: read views 262-273 and 387-393, 443-452 as images (about 20 requests) or park.
+Gallica requests this job (shared with unit 2): about 39 incl. 1 reset+1 retry.
 
 ## Gate
 ```
