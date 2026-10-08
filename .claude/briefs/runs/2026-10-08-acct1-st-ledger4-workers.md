@@ -48,3 +48,31 @@ Output: ciphers/eckert-1864/prefilter-ls4.tsv (pointer, page, entry, cipher_gues
 hunt_hits, hunt_clear, leaf_sibs, verdict) and the script that writes it (`prefilter_ls4.py`, re-runnable offline from its caches with
 `--offline`). NOTES section "## PF4 (8 Oct 2026, account 1, for LANE ST-LEDGER-4)": the control numbers, the counts per verdict per group,
 and the clean rows listed by group in the order a reader should take them. No decoding.
+
+---
+
+# Wave 2 (written 8 Oct 2026 15:0x UTC)
+PF4 done (commit 9c07c7c7; NOTES "## PF4"): 115 pool rows -> 79 clean (group 2 No.2: 25; group 3 No.1: 54), group 1 (No. 9): 5 of 5
+print-likely, so the No. 9 remainder of mssEC 19 is not read further. Control: recall 5 of 9, false flags 0 of 3. The four misses
+(E70, E74, E76, E86) are entries whose body is already in clear, in order, in their OWN Huntington transcription -- no script check saw it.
+
+## Readers LS4-R2a and LS4-R1a (Sonnet 5.5, solvers; cap $6 each, box 110 min each): the first ten clean rows of each group
+- LS4-R2a: group 2 (Cipher No. 2, key-no2.md, decode_no2.py) in PF4's order: 8887/0 8915/1 8988/1 8902/0 9024/1 9057/2 9065/2 9067/0 9125/1 9126/0
+- LS4-R1a: group 3 (Cipher No. 1, key.md, decode.py) in PF4's order: 9048/0 9097/0 9123/3 8965/1 8967/1 8996/1 9003/2 9030/0 9047/1 9049/2
+Method: the LS3-R9 / LS3-R18 reader method of .claude/briefs/runs/2026-10-08-acct2-st-ledger3-workers.md (lane points, book per entry by
+vocabulary share AND header label/time word, matched control = the other two books + a meaning-shuffled copy of the chosen book, IDs taken
+after fetching, page images fetched once with crops cut by `tools/iiif_lines.py --image <file> --out <scratch dir>` -- paste the command --
+read from the crops, volunteer text as second witness), with these additions:
+0. **Step 0, own transcription (PF4's control miss), before any decoding:** read the row's own transcription (sources/mssEC19/p<pointer>.json).
+   If the body reads in order as English and only names, times or a signature are code words, record "N1-likely: clear in the Huntington's
+   public transcription (pointer P)" and do not decode it. Also skip PF4's weak flags: 8902/0 and 9125/1 carry a `u` Huntington hit -- read
+   that hit's transcription first (prefilter-ls4.tsv `hunt_hits`) and skip the row if it states the substance.
+1. A row PF4 called clean is "not found in what was searched" (its list), never unprinted. After decoding, one quoted-phrase pass of the
+   DECODED plain text through be-api full text (one or two phrases per entry) before you file it -- the decoded words are what print carries.
+2. A row that turns out to be another book than its group goes to that book's file under its next free ID (as LS3-R9 did).
+3. Host share: the other reader works the same hosts at the same time. Keep >= 3 s between your own hdl.huntington.org requests and at most
+   40 there; fetch your ten pages' images in one pass at the start, then work offline.
+4. Push every two entries. Unit ~0.55 per entry; stop before an entry that would cross 80% of cap or box.
+NOTES sections "## LS4-R2a (8 Oct 2026, account 1, for LANE ST-LEDGER-4)" / "## LS4-R1a (...)", with the per-entry table (row, ID, book,
+three shares, clause counts chosen vs controls, H, step 0 and print result), Remaining gaps and Escalation, gaps_check after.
+Report what was found and where it was not found; do not classify novelty.
