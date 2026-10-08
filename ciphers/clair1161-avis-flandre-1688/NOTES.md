@@ -2121,3 +2121,46 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - other Clairambault 'avis'/Louvois-era (1688) cipher pieces, same sender unidentified [same-series; not-in-repo] -- identify sender via decoded content, then sweep Clairambault finding aid for same hand; no concrete item named, ~$3; ~$3; p 0.02; evidence: ciphers/clair1161-avis-flandre-1688/NOTES.md:12,117-135 (sender/date unidentified)
 - c184 and c189 neighbouring leaves (checked, no continuation) [same-volume; read] -- none: no cipher; p 0.0; evidence: ciphers/clair1161-avis-flandre-1688/NOTES.md:2067,2107 (N4-C1 1a)
 - fr.3281 f.4 and fr16142 candidate keys (compared, NO FIT 2/17, 2/16) [same-design; read] -- none: tested and failed; different era; p 0.0; evidence: ciphers/clair1161-avis-flandre-1688/NOTES.md:2061
+
+## D1A-C1161: unsampled canvas sweep of ark btv1b90010063 (account-1 worker for LANE DEFAULT-account-1-20261008-0540, 8 Oct 2026, 06:30-06:4x UTC by date -u)
+
+Brief: close the canvases of Clairambault 1161 that had no row, or only a "not-viewed"/"FAILED" row, in `images/canvas_sweep.tsv`,
+at 300 px; classify each (cipher/clear/gloss/blank/print); no transcription.
+
+**What was done.** The two IMG-GALLICA1 contact sheets on disk (`contact_sheets/sheet_c1161_4.jpg`, `_5.jpg`: c1-14, c193-229 gaps)
+were viewed for the first time (32 canvases, no fetch). The other 178 canvases (175 without a row, plus c40, c82, c302 which failed twice
+on 25 Sept) were fetched at 300 px from Gallica IIIF (`/f{canvas+1}/full/300,/0/native.jpg`), one at a time, >= 2 s apart, and
+looked at on 12 contact sheets of 12-16 thumbnails (`images/contact_sheets/sheet_d1a_c1161_01..12.jpg`, committed; thumbnails kept
+in scratch). `canvas_sweep.tsv` now has one row for every canvas 0-341 (342 = the manifest's canvas_count); the 210 rows
+written here carry "D1A-C1161 (8 Oct 2026, 300 px, contact sheet)".
+
+**Result.** 210 canvases classified: print 155 (engraved portraits, armorial plates, printed pamphlets: La Tremoille 1621, the
+Mazarin factums, Villeroy and Luxembourg oraisons, the Montmorency Memoire and 1576 Declaration), clear manuscript 45, blank 10.
+**No cipher leaf and no glossed (cipher-with-gloss) leaf found outside c185-c188.** The cipher group stays the six blocks already
+transcribed. Clear manuscript runs that a 300-px view cannot fully exclude a short cipher passage in: c19, c36-37, c96-104, c193-199,
+c226-229, c271-280 (charters/seals, Montmorency proofs), c309-326 (signed letters), c335-336 (Latin verse). None shows a
+numeral/sign block at this size; a short in-line cipher phrase inside prose would not be visible at 300 px.
+
+**Discrepancy noted, not settled.** The 25 Sept row c242 reads "printed title page ORAISON FUNEBRE ... MONTMORANCY ... LUXEMBOURG";
+at 300 px today that title page is on c244 (c243 is a blank + small engraving). Either the 25 Sept row is off by one/two or the
+title recurs; no fetch was spent to settle it (outside the brief, irrelevant to the cipher group).
+
+Requests: gallica.bnf.fr 178 (IIIF thumbnails at 300 px), all HTTP 200, no 403/429/altcha/reset; zero retries. No subagent calls;
+13 contact-sheet looks by this session. Nothing decoded, no grade moved.
+
+## Remaining gaps (D1A-C1161, 8 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Volume sweep complete at 300 px: no further cipher leaf in canvases 0-341 (D1A-C1161).
+- 27 M-graded key signs (th, z, eloop, phi, 6r, 8, 2, tz, and the nine LOLO values K, iib, l, ls, o, rot, spiralG, to, x) and the contested S signs 4, S - blocker: not-attempted; neither known key on file fits (fr16142 2/16, fr.3281 f.4 2/17, both NO FIT); split-tile look-alike gate FAIL (D2-C1161LA); planted agreed-token audit NON-TEST (catch 0.65, D2-C1161AUD); next: the owner's sign sorter on la/focus.tsv (29 tiles) + aud/focus.tsv (5), then a held-out-leaf judge test of the sorted transcription, ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; next: owner sign sorter pass or a per-shape split test at pooled N, ~$3
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; agreed-but-wrong signs unmeasured: the Sonnet window reader missed the planted control on 4/qb and S/s (D2-C1161AUD); next: the same planted audit with a different instrument (per-line slope-followed re-cuts, iiif_lines.py --follow-slope, --scale 2, Opus reader), PREREG unchanged in gate, ~$4
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (D1A-C1161, 8 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); c188L re-passed to err_2reader 0.084; whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; the nine's gain over the pre-JOINT9 key (+0.035) is inside a fr16-window null (p95 +0.082, VER-C1161J); the gloss PASSes the fr16 judge (-0.808), the decode FAILs; no other glossed leaf in the volume (D1A-C1161)
+- [x] known-keys: fr16142 Noailles (Dax) Constantinople key 2/16 vs p99 3 (N4-C1 4) and BnF fr.3281 f.4 Des Pruneaux Flanders key 2/17 vs p99 4 (D2-C1161PRU), both NO FIT; the fr.3281 Pruneaux-Aranger cipher (1579) not tested, a later key of a different design
+- [n/a] print: no printed edition of these Avis located by check-solved and Premise check
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted agreed-token audit with the Sonnet window reader NON-TEST (catch 0.65 < 0.80, D2-C1161AUD); next: the owner's sign sorter on la/focus.tsv + aud/focus.tsv, or the audit with re-cut slope-followed windows and a stronger reader
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
+Verdict: keep going: 3 internal gaps; cheapest next: owner's sign sorter on la/focus.tsv + aud/focus.tsv, then a held-out-leaf judge test, ~$2
