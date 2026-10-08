@@ -161,3 +161,51 @@ Books API with `&country=US&key=$GOOGLE_BOOKS_KEY`) of Deutsche Reichstagsakten,
 'chiffre'/'Ziffer'/'ziffern' with Moltzan/Cordier; quote hits with identifier and context. Unit 2 (fr3975-vieuville-1587, NOTES.md l.101):
 run tools/print_check.py with the letter's readable clear phrases ("eschevins et maire de ville", "St Aignen", 30 Sept 1587) against
 IA/Google Books/OpenAlex; status stays blocked. Log queries and hit counts by host; append dated NOTES.md sections.
+
+## Wave 4 (spawned 06:3x UTC 8 Oct)
+Wave 3: six done by 06:23 (11.14); lane workers 23.47. Intake gate 06:3x UTC (each exit 0):
+`fr16045-pisany-rome-1585: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`clairambault1225-paget-1714: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`rah-juan-manuel-1521: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`baluze167-davaux-1637: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`clair1161-avis-flandre-1688: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`fr16142-noailles-constantinople-1571: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+
+### D1A-PISG2 -- fr16045-pisany-rome-1585 f.275v gloss, second blind reader (solver, Opus; cap 3.5, box 60 min)
+D1A-PISG (6ecf21980; NOTES.md section D1A-PISG) read the f.275v head/margin gloss with one blind Sonnet reader: G1 witness PASS (0.551 vs
+null p99 0.389), G2 0.80 FAIL, flagged as a low-confidence reader; its next step "second blind reader ~3". Do that under D1A-PISG's own
+PREREG (do not change its gates): one blind Opus subagent read of the same 21 crops, your reconciliation of the two reads against the
+crops, re-score G1/G2 on the reconciled gloss with the same normalisation and null. Report both readers' scores and the reconciled one.
+Rule 3 third-attempt clause: this is the second attempt; if G2 still fails, say "untestable by this instrument at this length" and name a
+different instrument. No key86 change without a passed gate.
+
+### D1A-PAGV -- clairambault1225-paget-1714 run 221 46 2 185 glossed two ways (verifier, Opus; cap 2.5, box 50 min)
+D1A-PAG (clairambault296-paget-1713 NOTES.md l.654) observed the four-code run 221 46 2 185 at f65R:53-56 and f66R:167-170 in the
+1714 folder with two different glosses. You are a separate session: check both occurrences on the native crops (transcription of the codes
+and the gloss words), decide whether it is a transcription error, a gloss error, or a genuine data conflict, and record it per rule 4 (a
+conflict is logged in HYPOTHESES.md with the witnesses, never settled by majority). Correct a transcription only on image evidence, run the
+folder's decode --check, and carry any reading change into AUDIT.md (rule 10 propagation). Write a dated NOTES.md section.
+
+### D1A-RJM -- rah-juan-manuel-1521 CSP Spain II mapping (search worker, Sonnet; cap 3, box 60 min)
+NOTES.md l.67: "map the CSP Spain II 1522 Juan Manuel entries to the 28 records using BHO pages pp.384-470 (no key, no image, no owner)."
+Fetch the BHO pages once (British History Online, Calendar of State Papers Spain vol. 2, 1509-1525; one request at a time, >= 1.5 s), parse
+the entries by script, match each to the folder's 28 records by date, sender and recipient, and write calendar_map.tsv (record, CSP entry
+no., page, date, match confidence, whether the calendar summarises cipher passages or says "in cipher"). Dated NOTES.md section; gaps.
+
+### D1A-B167 -- baluze167-davaux-1637 native crops of the five bare passages (worker, Opus; cap 3.5, box 70 min)
+NOTES.md "## While waiting": "native-resolution crops of the five bare passages (168 f.247r; 169 ff.52, 97, 142; 170 ff.228-230)". Cut line
+crops with tools/iiif_lines.py (--ark/--canvas form, the canvases in survey.tsv/manifest), check each debug overlay, write
+images/manifest.json entries, keep the folder under 30 MB. Crops only: no transcription pass, no reading (the next step is the owner's
+sorter or a priced pass, named in the Verdict). Look at one crop per passage to confirm it shows the bare cipher lines.
+
+### D1A-C1161 -- clair1161-avis-flandre-1688 unsampled canvas sweep (worker, Opus; cap 3, box 60 min)
+NOTES.md l.384: "Close the ~65 unsampled canvases of ark btv1b90010063 (c1-14 and the 3-5-canvas gaps listed in images/canvas_sweep.tsv)
+at 300 px, one at a time, >=2 s apart." Fetch at 300 px, look at each (batch them as contact sheets of 8-12 thumbnails per look, not one
+call each), add a row per canvas to images/canvas_sweep.tsv (cipher/clear/gloss/blank), and list any new cipher or glossed leaf. No
+transcription. Dated NOTES.md section, gaps.
+
+### D1A-DUP521 -- fr16142-noailles-constantinople-1571 Dupuy 521 date index (worker, Opus; cap 3, box 60 min)
+NOTES.md l.58: "index Dupuy 521 dates against fr.16142 folios -- needs only Gallica". Find the Dupuy 521 Gallica ark (NOTES/sources), read
+its manifest and, by text or low-resolution canvases, list each document's date; match to fr.16142 folios by date (and recipient where
+visible); write dupuy521_index.tsv and say which fr.16142 cipher letters (c262, c510 and others) have a Dupuy 521 copy or decipherment.
+Requests one at a time >= 1.5 s; low resolution only; dated NOTES.md section, gaps.
