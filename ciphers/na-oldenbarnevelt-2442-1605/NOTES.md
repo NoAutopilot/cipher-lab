@@ -1294,6 +1294,43 @@ judge run on this reading uses `--uv-fold` (the reading keeps period u; the corp
 Step (v2) done (R15-OLDV2, verifier, 6 Oct 2026): carried into AUDIT.md (propagation note) and the queued SO prompt; judge re-run
 reproduces all four windows exactly; window 1's 0.004 shortfall is a FAIL under the pre-registered rule and rule 3, not "judge cannot decide".
 
+## 21. OLD-CAT, 8 Oct 2026: catalogue sweep for more letters of this kind (no decoding); status stays open
+
+Brief: `.claude/briefs/runs/2026-10-08-acct3-old-sibs.md`, section OLD-CAT (account 2, 04:12-04:2x UTC by date -u). Section 2
+above read only the unittitles of invnrs 2435-2450; this pass read the whole finding aids.
+
+**Route.** `www.nationaalarchief.nl/onderzoeken/archief/<toegang>/download/xml`, fetched once each: 3.01.14 (4,973,589 bytes,
+sha1 b52d49a8, 4,448 `<c>` components) and 1.01.02 Staten-Generaal (22,724,926 bytes, sha1 3fc5609f, 28,573 components). Each
+component's own text (not its children) was regex-matched for `cijfer|cyfer|ciffer|chiffr|geheimschrift|gecijferd|ontcijfer|
+sleutel|onderschep|intercept`, and separately for Spanish-language letters (`In het Spaans`, the Spanje subtree) dated 1595-1619.
+Digitisation was read from each hit's item page (`drupal-settings-json` -> `viewer.response.availability`/`scans`), and sample
+scans were fetched at 800-1000 px through the item's IIIF endpoint and eye-checked for letter+digit groups. Requests:
+www.nationaalarchief.nl 18 (2 EAD + 16 item pages), service.archief.nl 40 (IIIF samples); >=1.5 s apart; no 403/429/challenge.
+
+**Result (search result, image sample only): in this catalogue 2442 is the only Spanish item described as cipher.** Its own
+entry ("Merendeels in cijferschrift") is the only Spanish-language unit in 3.01.14 whose description names cipher. The other
+cipher hits are already known and are not Spanish letter+digit: inv. 1490 (numeral code, Dutch; target
+`oldenbarnevelt-brederode-1605`), 2016-2025 (Aerssens, French, "gedeeltelijk in cijfercode ... gedeeltelijk gedecodeerd", key
+with the letter of 10 Aug 1598), 2028 (Buzanval key sheet). In 1.01.02 the only cipher hit in 1590-1625 is 12578.1, a Levant
+key ("Sleutel geheimschrift", Constantinople, 1618-22), outside this brief.
+
+**Intercepted Spanish letters, the series where an uncatalogued cipher passage could still hide** (cataloguers here describe a
+cipher only sometimes: 1490 is "geheimschrift" not "cijfer", and 2442's leaves 4/5/7 carry a second ciphered letter its entry
+does not mention). 3.01.14 "Spanje > Diplomatieke betrekkingen" holds 2164A (118 scans, 36 pieces, 1579-1605), 2164B (33),
+2164C (14), 2164D (5), 2164E (70, five quires of copies, 1593-94 and Aug 1605), plus 2138 (Savoy intercepts 1615, 11) and the
+"Documentatie" copies 2432, 2433, 2436 and 1913. All are digitised. 40 sample scans across ten of these units were eye-checked
+(per-unit list in `siblings_catalogue.tsv`): **none shows letter+digit cipher like 2442**; what was seen is plain Spanish or
+French originals and copies, French and Dutch translations, and blank versos. This is a sample: 2164A (106 of 118 scans unseen)
+and 2164E (59 of 70 unseen) are not cleared by it. The Staten-Generaal's own intercept units (12548.85, 12548.85.1, 12548.85.2,
+12548.111 Ostend 1600, 12561.18 Heemskerck captures 1607) are catalogued `PHYSICAL`, not digitised: not checkable from here.
+
+Output: `siblings_catalogue.tsv` (21 rows: invnr, title, dates, scans, digitised, scans eye-checked, verdict, note).
+
+Named next steps (not run, brief met): (a) a full contact-sheet pass over every scan of 2164A and 2164E (188 scans, about 190
+requests at IIIF thumbnail size, so two sessions under the per-host cap, or one with a raised cap), flagging any page with dense
+digits inside words -- the only units here large enough to hide another such letter; ~$3. (b) the five PHYSICAL 1.01.02 intercept
+units need a scan order or a reading-room visit (owner step, ASKS only if (a) finds the design recurring).
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
