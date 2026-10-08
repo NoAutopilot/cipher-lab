@@ -1527,11 +1527,48 @@ registered instrument `n12gra/score5.py` (= PREREG-N9-GRA4's gate), unchanged. D
 
 Requests: none. Subagent calls: 0. Novelty not classified (rule 10).
 
+## SIG-GRA30 (8 Oct 2026, account 1, for LANE SIG-1)
+
+Brief `.claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md`, job SIG-GRA30. Pre-registration `sig30/prereg.md` was pushed (0c26966ad)
+before any pass was run.
+**Outcome: control gate FAILED (0.754 < 0.757). Per the pre-registration, no f.30 pass was run and no f.30 change was applied.**
+- Prior-work: `tools/prior_work.py fr2980-gramont --item-spec 'shelfmark=BnF fr.2980;folio=30r;...' --step-type transcribe --fetch`
+  exited 4 (LEAD x3: our audited reading, the eh/CROSS key-rebuild, and this worker's own claim). All three were recorded CLEAR in
+  prior-work.tsv: this brief-named job is a re-read of a reading we already hold. Plaintext rows UNCHECKED-NET (aaymeloglu, editions)
+  are unchanged; they do not bear on a transcription step that changed nothing.
+- **Lines (script, `sig30/linescore.py --rank` -> `sig30/rank.tsv`)**, ranked by rank(M+U) + rank(fr16 bits/char), with L01/L02/L11/L12
+  excluded: f30r L06, L09, L05, L03, L23, f30v L06, f30r L25, L24. These are the next lines to re-read, but this protocol did not clear
+  its gate.
+- **Control:** fr.3040 f.18r L11 and L15 (rows f18rB_L01, f18rB_L05; the script picked them as closest to the block's 0.812). The
+  instrument is unchanged: whole-block alignment to S1 with N8-GRA2's functions (`sig30/ctl_score.py`). There were 4 Sonnet blind calls
+  (`sig30/ctl_passA.tsv`, `ctl_passB.tsv`, one call per row with its two half-crops plus atlas_f29/atlas_f30add and the text list of
+  extra codes in `sig30/PASS-BRIEF.md`). This worker reconciled them from the crops without the print or the key (`sig30/ctl_recon.tsv`;
+  splits settled: zb->zh, lt, bb, rho, eh, g, n6; L05's z?/g2? slot left '?'; pass B's extra 'o' in L05a not seen, so omitted). The two
+  passes agreed closely: L05 is identical except for 2 slots, and L01 splits on 7.
+
+| | L01 | L05 | pooled | gate |
+|---|---|---|---|---|
+| on file, N9-GRA4 recon.tsv | 25/31 0.806 | 21/26 0.808 | 46/57 **0.807** | -- |
+| SIG-GRA30 protocol | 28/38 0.737 | 24/31 0.774 | 52/69 **0.754** | >= 0.757: **FAIL** |
+
+  The new protocol leaves fewer '?' and keys 12 more tokens (69 vs 57), but its agreement rate is lower.
+- Diagnostic, post-hoc and not gating (misses among the added keyed tokens, as reader code = key value / print letter): L01 lt=O/T
+  (pass A's 'T' at the c_t slot was right; this worker settled it lt); rho=F/M; d=V/N (both readers wrote 'd' for the hand's delta, which
+  is n6, the confusion R12D-GRA already settled on this letter; the protocol keeps an agreed pair, so it stood); 2=S/R. L05: Tb=O/M (both
+  readers agreed 'Tb' on the crossed p); lt=O/gap. Most of the loss comes from code confusions both readers share (d/n6, Tb vs crossed p)
+  and from this worker's own split calls. A second blind reader does not catch shared confusions, so this re-read protocol is not better
+  than what is on file. It says nothing about the f.30 reading itself.
+- Rule 7: no key or ciphertext change; `decode.py --check` exit 0 ("reading up to date"), `tools/decode_key.py . --check` exit 0. The f.30
+  extended reading is unchanged: H 1468, C 18, S 181, M 239, U 63. `sig30/changes.tsv` lists no changes. The shuffled-change null was
+  not run because there were no changes to shuffle.
+- Requests: none (images on disk). Subagent calls: 4 (Sonnet), not the 20 planned. Novelty not classified (rule 10).
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA and N8-GRA3, 4 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18, S 181, M 239; U 63 -- ST moved S -> C by N8-GRA3, 4 Oct 2026; after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
 - f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (HASH aligns L in 4 of 7 fr.3040 no.6 occurrences, not keyed, N8-GRA3 and N9-GRA4) (f30r_top section); the hidden-sign tests there predate ehx = T in the base; a names test against the clear companion fr.3019 no.31 (A2-GRA6, 3 Oct 2026, f84_names_test.tsv) is a non-test (power control 0/3) and its post-hoc no-identity variant gives no credible name (HASH -> TREBYA only, an edge-letter bias)
 - f.30r L05, L10, L17, L26 positions where ehx = T does not give words (NINTPOVR, IOTPEIL, VELIET, ·CT·) - blocker: open-codes; round 3 of the hidden-sign test with ehx = T in the base accepts no sign change (A2-GRA4, 3 Oct 2026, test_f30r_top_round3.tsv) and the instrument is retired for these hypotheses (third run); the 3 losing ehx occurrences are ehx by shape on their crops
+- f.30r L06, L09, L05, L03, L23, L24, L25, f.30v L06 (the worst 8 by M+U and fr16, sig30/rank.tsv) - blocker: open-codes for the U/M signs they hold; the two-blind-Sonnet-pass + reconciler re-read protocol failed its known-answer control on fr.3040 f.18r (0.754 vs gate 0.757 = on-file 0.807 - 0.05; SIG-GRA30, 8 Oct 2026), so that instrument does not lower the error here; next: a different instrument (tools/sign_sorter.py settled labels, TRANSCRIPTION.md active sorter)
 
 ## Escalation (A2-GRA, 2 Oct 2026)
 - [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071; fr.3038 no.19 (period decipherment of the 27 Feb 1530 Villandry letter) located on Gallica (btv1b9060036k canvas 68 = f.42r, clear only) but its cipher original is in no catalogue reached (N8-GRA, 4 Oct 2026), so that pair cannot be aligned; the 28 March pair is fr.3040 f.18-19 no.6 vs Le Grand III pp.454-457 (not p.399): f.18r L01-L10 PASS 0.838 vs p99 0.347 (N8-GRA2, 4 Oct 2026); f.18v L01-L23 + f.19r L01-L02 PASS 0.871 vs p99 0.328, ST keyed L at C (N8-GRA3, 4 Oct 2026); f.18r L11-L21 (the block has 21 lines) PASS 0.812 vs p99 0.335, no key change (N9-GRA4, 5 Oct 2026)
@@ -1541,7 +1578,7 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 2 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); R12D-GRAZB, 6 Oct 2026: the blind sort of f.30 zb beside fr.3040 barred z was a NON-TEST (decoy control failed: proportional-position ticks land on neighbours); R12D-GRAZB2, 6 Oct 2026: rerun with per-sign boxes, decoy control PASS, outcome DIFFERENT: the f.30 zb is not the fr.3040 barred z, so fr.3040's zb = R does not transfer, zb NULL stands, key.tsv unchanged; the open gaps above are unchanged; DA1-GRA, 7 Oct 2026: the fr.3040 barred z relabelled `zh` in n8gra2/n8gra3 (25 tokens, -> R x24, gap x1; n8gra3 re-score PASS 0.889 on 696), z/zb half of the HYPOTHESES.md z A-vs-R entry closed, key.tsv unchanged; D4-GRA, 8 Oct 2026: the same relabel on f.18r L11-L21 (16 zb -> zh, re-score PASS 0.815 on 298; pooled zh 41 -> R x39, gap x2, not keyed; the 5 plain z there align A x4, S x1), key.tsv unchanged; the plain-z A (f.30) vs R (fr.3040, 6 leftover unboxed z on f.18v/f.19r) half stays a listed conflict; cheapest next: per-sign-box shape check of those 6 R-aligned z with R12D-GRAZB2's method and decoy control (one vision call), ~$1.5
+Verdict: keep going: 3 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); R12D-GRAZB, 6 Oct 2026: the blind sort of f.30 zb beside fr.3040 barred z was a NON-TEST (decoy control failed: proportional-position ticks land on neighbours); R12D-GRAZB2, 6 Oct 2026: rerun with per-sign boxes, decoy control PASS, outcome DIFFERENT: the f.30 zb is not the fr.3040 barred z, so fr.3040's zb = R does not transfer, zb NULL stands, key.tsv unchanged; the open gaps above are unchanged; DA1-GRA, 7 Oct 2026: the fr.3040 barred z relabelled `zh` in n8gra2/n8gra3 (25 tokens, -> R x24, gap x1; n8gra3 re-score PASS 0.889 on 696), z/zb half of the HYPOTHESES.md z A-vs-R entry closed, key.tsv unchanged; D4-GRA, 8 Oct 2026: the same relabel on f.18r L11-L21 (16 zb -> zh, re-score PASS 0.815 on 298; pooled zh 41 -> R x39, gap x2, not keyed; the 5 plain z there align A x4, S x1), key.tsv unchanged; the plain-z A (f.30) vs R (fr.3040, 6 leftover unboxed z on f.18v/f.19r) half stays a listed conflict; cheapest next: per-sign-box shape check of those 6 R-aligned z with R12D-GRAZB2's method and decoy control (one vision call), ~$1.5; SIG-GRA30, 8 Oct 2026: the native two-pass re-read of the worst 8 f.30 lines stopped at its control (fr.3040 f.18r L11+L15 0.754 < gate 0.757), no f.30 change, reading unchanged
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 
