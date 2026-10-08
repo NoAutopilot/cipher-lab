@@ -34,3 +34,21 @@ Next step needing nobody: view canvas 158 native (iiif_lines.py) and see whether
 ciphers/fr3613-sega-caetani-1591: blocked (line 1) -- already terminal, nothing to gate
 exit 0
 ```
+
+
+## Edition search (BNF-SEGA-ED, 8 Oct 2026)
+Result: no edition or calendar of Sega's 1590-91 Paris letters, or of Caetani's 1589-90 legation letters, was located; none could be opened. Status stays `blocked` (a search result, not a statement that none exists).
+1. Acta Nuntiaturae Gallicae (ANG) volume list: WebSearch x2 returned only catalogue records for vols 2 (Ragazzoni 1583-86), 5 (Scotti), 10-11 (Ranuzzi), 12-13 (Salviati 1572-78), 15 (Spada), 16 (Frangipani 1568-72, 1586-87), 17 (Silingardi 1599-1601). None covers Caetani or Sega; the complete series list was not obtained (fr.wikipedia page 404; EFR/Gregoriana catalogue pages not reached). Numbering is by order of publication, so a gap in the numbers seen is not evidence of absence. Sega's 1586-87 German nunciature (Nuntiaturberichte aus Deutschland) is a different mission, not searched here.
+2. OpenAlex (keyed, 3 queries: "Filippo Sega Caetani 1591", "legazione Caetani Francia 1589 lettere", "nunziatura Sega Francia 1591 Acta Nuntiaturae Gallicae"): 18 results, none an edition of these letters (nearest: Jesuit Missio Castrensis 2017; Philip II/Rudolf II 2011). Semantic Scholar, Persée, HAL: not run (box/cap kept small).
+3. Google Books API (key, country=US, 3 queries): no volume printing Sega/Caetani 1591 letters; hits were Paruta's Roman legation 1887 (ALL_PAGES, unrelated: Venetian ambassador), Maria de' Medici regency 1962 and Theologischer Jahresbericht (NO_PAGES/unrelated).
+4. Internet Archive: advancedsearch title "nuntiaturae gallicae" = 0 items; be-api fts "legazione Caetani Francia" returned only aggregations (not read); "Sega AND Caetani AND Parigi AND 1591" 502 (not retried).
+5. Open web: Penzi's chapter (Classiques Garnier, pp.157-173) says Sega's letters are an important source for the League, but the page was 403 to WebFetch, so its bibliography was not read; this is the next lead (which archives/editions Penzi cites). Pastor, Geschichte der Paepste (Gregor XIV): not located in full text, no confirmed print of a 9 Jan 1591 letter. Phrase check "di Parigi, li 9 di gennaro 1591": no work found quoting it.
+Not run: Persée, HAL, Semantic Scholar, Goujet/Lettres de Henri IV, Ehses Nuntiaturberichte I,2 text.
+Next step needing nobody: obtain Penzi's footnotes (Garnier/OpenEdition/academia route or a Google Books snippet) for the edition he cites; ~$1.
+Requests: WebSearch 5, OpenAlex 3, Google Books 3, archive.org 3, classiques-garnier 1 (403), fr.wikipedia 1 (404).
+
+## Gate (BNF-SEGA-ED)
+```
+fr3613-sega-caetani-1591: blocked (line 1) -- already terminal, nothing to gate
+exit 0
+```
