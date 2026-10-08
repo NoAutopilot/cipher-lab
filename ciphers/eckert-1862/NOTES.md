@@ -2401,3 +2401,38 @@ words). For no2 (control 8/10) the negative is control-backed (2/10 here); for n
 (12 Aug 1862, "For Axis The Aragon informs me ...") and entry 10 (code 33, no1 8 / no2 6 clauses, the strongest) are the nearest to readable under
 no1/no2 but neither clears the pass rule; no 1862-63 entry of 9660 is listed as readable, so none is handed on. Requests, hdl.huntington.org: 25
 dmGetItemInfo (1.7 s apart, one token block 20:47-20:49), plus 1 stray API probe at 20:49 made after my release (logged in ROOM).
+
+### Part 2: the remaining printed residue entries (vols. 9, 7, 8), offline after one page re-fetch
+Page texts (scratch, not committed) re-fetched: 58 requests, api items/<pointer>/false, 1.7 s apart, one token block 20:51-20:57; all 58 sha256 equal
+print/residue/pages_manifest.tsv (unchanged since 3 Oct). OR vols. from archive.org `_djvu.txt` (3 requests): warofrebellion09secrrich, warofrebellionco0007vari,
+warofrebellionco08unit. `print/residue_select.py --n 5 --min 3` (E62-ALN's anchor rule) on these three volumes gives 9 entries (print/residue_print/selected_e62-9660.tsv):
+4973, 4983, 5048, 5056, 5103 (vol 9), 4982 (vol 7), 4962, 4985, 5015 (vol 8) -- 9, not E62-ALN's "7 remaining", since its 18 were chosen across all volumes and
+which of them it had aligned was not recorded. `print/or_align.py --shuffles 3` unchanged, per volume: vol 9 completed (7 telegrams, 7 entries on 5 pages);
+vols 7 and 8 wrote align_pairs/proposals within 3 minutes and then did not return from the held-out stage in 30 minutes (the same hang as E62-ALN's vol 7
+timeout), killed; the held-out figure is 0/0 by construction at one occurrence each.
+Result (print/residue_print/<volume>/): 3 candidate occurrences in all. your -> "my" (vol 9, 4983, OR p.309): not a code word, a wording variant. widow ->
+"re enforcements" (vol 7, 4982, OR p.612): same meaning as key.md reinforcements, spelling only, no conflict. thinks -> "has received" (vol 8, 4985,
+OR p.598): single occurrence, not in key.md, not entered. No dated C witness for Myrtle, Mary, Ingress, Camden or Humboldt. key.md unchanged; HYPOTHESES.md
+unchanged (no conflict). Residue C/M/I before = after: key.md unchanged, C 155, I 36, M 82 as E62-ALN. Unexplained: `residue_decode.py --check` on the
+fresh pages printed "residue readings are stale" with key.md, decode.py and the page hashes all unchanged since E62-ALN reported it current; cause not found
+(not rerun alone, and --write not run: not this job's); flagged in ROOM.
+Not found: any residue entry of the three volumes with two occurrences of one ledger word, so no held-out figure and no gain claim.
+
+## Remaining gaps (E62-9660, 8 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); the 9660 and residue steps add no reading.
+- object 9660 (mssEC 17, 357 pp.) entries - blocker: no-key-material; no book in hand reads it (10-entry test; no2 negative control-backed, no1/no9/mssEC15 untested by this instrument)
+- object 8472 and 6254 entries - blocker: no-key-material; as K8472
+- residue entries printed in vols. 9, 7, 8 - blocker: too-short; 9 selected, 3 candidate occurrences, all single or non-code
+- residue_decode.py --check reports stale on unchanged inputs - blocker: open-codes; cause of the stale report unknown; next: rerun --check alone and diff pages.tsv, ~$0.3
+- Myrtle, Mary, Ingress, Camden, Humboldt single-day rows - blocker: no-key-material; none of the 9 printed entries carries one; next: select printed residue entries by those words in the other OR volumes, ~$1
+- Merlin = Maryland (print) vs key.md Virginia - blocker: open-codes; the conflict rests on one print occurrence; next: read the 5021 page image at that line, ~$0.5
+
+## Escalation (E62-9660)
+- [x] siblings: 9660 tested on its own 25 spread pages against four books
+- [x] clear-pages: no clear copy or gloss in the volunteer text of the 27 pages read
+- [ ] known-keys: Cipher No. 4 copy in the Friedman Collection from a desk browser; next: owner's desk runner, ~$1
+- [x] print: vols. 9, 7, 8 aligned; 3 candidate occurrences, none entered
+- [n/a] key-rebuild: no new C witness
+- [ ] image-check: volunteer text only; next: 3 page images of 9660 if a book is found
+- [n/a] retry: no failed attempt
+Verdict: keep going: 2 internal gaps; cheapest next: rerun residue_decode.py --check alone to explain the stale report, ~$0.3 (books for 9660, 8472 and 6254 wait on no-key-material)
