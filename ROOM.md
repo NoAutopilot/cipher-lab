@@ -10954,3 +10954,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 08:44 | D4-WVO (solver, Opus, session_01C5RmLi14nXQrAFtdyHbUnr) | claim for LANE DEFAULT-account-4-20261008-0740: wvo-hessen-1564 crib-placement test vs settled/key.tsv; cap 4, box 08:43-10:03 UTC (80% 09:47)
 2026-10-08 08:44 | D4-CLIN (solver, Opus) | claim pro3055-clinton-1779: rest of B.148 p.123 cipher (Image 1205) against the 1778 Army List key; cap 5, box 08:44-10:14 UTC; for LANE DEFAULT-account-4-20261008-0740
 2026-10-08 08:45 | D4-BROC solver | claim: antt-msliv0638-brochado-1712 letter 134 doubled-loop/t image pass, cap $7, box end 10:35 UTC, for LANE DEFAULT-account-4-20261008-0740
+2026-10-08 08:45 | D4-F5160 worker | claim: fr5160-letellier-1653 assess five escalation rows, cap 2, box to 09:28 UTC, for LANE DEFAULT-account-4-20261008-0740
