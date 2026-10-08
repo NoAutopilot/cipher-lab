@@ -506,6 +506,8 @@ decipherments of sister items, not cryptanalysis.
   decipherment located in print, in the Huntington's catalogue or in the cipher community's catalogues. The copy
   sent to Newcastle, and any decipherment made of it in the State Papers or the Newcastle papers, was not
   checked." Unsafe: "never deciphered", "read for the first time", or a full reading.
+  [8 Oct 2026, PROP-HUNT: the counts in this sentence are superseded (now 107 C + 3 S of 141, 19 M, 12 U); use the corrected
+  safe sentence under "Reading revision after this audit", "propagate-revision (PROP-HUNT, 8 Oct 2026)".]
 - **BLA 184.** Safe: "Three of the seven code groups in mssBLA 184 read as syllables. The name codes are unread.
   No prior decipherment located." Unsafe: any sentence that names the persons coded. Not worth an outward note.
 
@@ -621,6 +623,75 @@ Image check on native crops (NOTES.md "A4-RFHUN"): group 849 is glossed "parle" 
 had the gloss one column left). BLA 186 p3 now reads mechanically *Monsieur de Patigno m'en a parlé ce soir*, 849 C (one
 gloss); the "[849, doubtful]" above and row 4 of the second-opinion table are superseded. 575 = j' (C) at two BLA 191(a)
 tokens. Target counts: C 131, M 20, U 21 of 172 (were C 129, M 22, U 21). No class changed by this worker (not a verifier).
+
+### propagate-revision (PROP-HUNT, 8 Oct 2026)
+
+Verifier-side propagation worker PROP-HUNT (account 3, for the acct3-orchestrator, session_0198Cv8ypBfBVfRToKVWx33M),
+8 Oct 2026, 22:43-23:0x UTC by date -u (rule 10, final paragraph). Nothing decoded, no token re-graded, no new search: this
+carries into the audit the three readings made after A4-RFHUN, each checked against its NOTES.md section and the committed
+reading_tokens.tsv (last changed 9fab3bb58, 6 Oct 2026 09:59 UTC).
+
+- **R7B-HUNT** (6 Oct 2026, NOTES.md "R7B-HUNT"): one value change, BLA191 p5 L11 pos 3 (group 385) 'et' -> 'es' by the key's
+  majority rule after the census moved the misread 385 = et columns to 387; counts unchanged.
+- **R8-HUNT** (6 Oct 2026, NOTES.md "R8-HUNT", census/PREREG-R8.md): that token's glyph is a 5 in BLA 191(a)'s own hand, so the
+  group stays 385; its glosses now split es 6 / et 1 / ce 1 / envoyes 1 and the context reads better as 'et', so it is graded M.
+  **C 131 -> 130, M 20 -> 21.** Key 392 -> 388 rows (four misread-7 codes removed); no other target token changed.
+- **R10-HUNT2** (6 Oct 2026, NOTES.md "R10-HUNT2", fill/PREREG-R10.md, attempt 2 after R9-HUNT's FAIL): a context fill of the
+  unkeyed groups (fr18 character 6-gram over 15 characters each side; candidates from the one-part code's alphabetical bracket
+  and the corpus), gated on a BLA185 blanking control at a margin fixed in advance (>= 2.786) on fresh seeds 4-6: control
+  precision **0.66** on 50 columns against 0.23 for the shuffled-context control on 31 (one-sided Fisher p = 0.00014); gate PASS.
+  Four target groups clear the margin: BLA191 p5 L03 pos 5, 689 'm'; L05 pos 3, 285 'do'; L11 pos 8, 1152 'v' -- **grade S**;
+  L06 pos 1, 214 'commen' -- grade M (its sign is conf M). **The 3 S tokens are a cryptanalytic context fill gated at control
+  precision 0.66, not key values: about one in three such fills is expected to be wrong.** The other 14 unkeyed groups stay U.
+- D3-BLA and D3-BLA2 (8 Oct 2026, NOTES.md): no token changed (pre-registered gate FAIL; UNTESTABLE at N 20); the nine BLA191 p5
+  L12 tokens they discuss stay M.
+
+**Current counts.** `python3 tools/decode_key.py ciphers/huntington-blathwayt-madrid-1728 --check` -> "tokens 172: C 130, M 22,
+S 3, U 17 / reading up to date", exit 0. By item, from reading_tokens.tsv:
+
+| item | tokens | C | S | M | U | H/C/S share |
+|---|---|---|---|---|---|---|
+| mssBLA 186, p1 and p3 cipher lines | 24 | 20 | 0 | 0 | 4 | 83.3% |
+| mssBLA 191, enclosure (a), p5 | 141 | 107 | 3 | 19 | 12 | 78.0% (C alone 75.9%) |
+| mssBLA 184 p1 | 7 | 3 | 0 | 3 | 1 | 42.9% |
+| all three | 172 | 130 | 3 | 22 | 17 | 77.3% (C alone 75.6%) |
+
+Were C 129, M 22, U 21 at the N4 set; C 131, M 20, U 21 after A4-RFHUN. The token counts in the first verdict, the second
+audit and "N4 set" s.3-4 above are historical: quote this table.
+
+**Class: unchanged, N4** for BLA 186's two cipher lines (its clear text N1, Rose 1831 ii 414-15), for BLA 191(a) and for BLA 184.
+The revision moves grades inside BLA 191(a) only (one C -> M; four U -> 3 S + 1 M) and adds no name, date or phrase that any
+search in this file keyed on; the class rests on the absence of a prior decipherment or plaintext of these cipher passages,
+which a re-grade does not touch. BLA 186's tokens are as A4-RFHUN left them. Key source stays `period` (key rebuilt from the
+run's contemporary decipherments); the 3 S tokens are ours (cryptanalytic), so "N4 set" s.3's "grade C from contemporary
+decipherments ..., not cryptanalysis" now holds for 130 of the 133 read tokens, not for all. Depth: **D2 kept** (77.3% H/C/S,
+under D3's 80%); the depth sentence on Mr Keene still reads so in reading.txt (BLA191 p5 L06-L07 and L13).
+
+**Safe sentences** ("N4 set" s.4), checked against the current counts:
+- **BLA 186: holds unchanged** ("20 of 24 groups; 4 unkeyed" is what reading_tokens.tsv gives).
+- **BLA 191(a): its counts no longer hold; corrected here (supersedes s.4's).** Safe: "The undated cipher enclosure (a) of
+  Huntington mssBLA 191 (Port Ste Marie, forwarded 8 Aug 1729) reads in part with the same key: 107 of 141 groups at grade C,
+  3 more filled from context at grade S (about one in three such fills is expected to be wrong), 19 uncertain and 12 unkeyed.
+  No prior decipherment located in print, in the Huntington's catalogue or in the cipher community's catalogues. The copy sent
+  to Newcastle, and any decipherment made of it in the State Papers or the Newcastle papers, was not checked." Unsafe: as s.4,
+  and also "110 of 141 groups read" or "about 78% deciphered" without the S caveat. ("About three-quarters" holds on C alone,
+  107 of 141.)
+- **BLA 184: the count holds (C 3 of 7), with a caveat added.** Two of the three are one code, 1243 'il', keyed from a single
+  bracket witness (key.tsv: BLA190, n=1) inside the 1240-1259 range R17 took for names (D3-BLA observation, 8 Oct 2026, not yet
+  checked by a verifier). Safe: "Three of the seven code groups in mssBLA 184 decode as syllables (two of them one code keyed
+  from a single witness). The name codes are unread. No prior decipherment located." Still not worth an outward note.
+
+**Propagated in the same commit:** status.json's result row (completeness 133/172, depth_pct 77.3, depth_note, depth_unread,
+unresolved_spans, line, reading_version, fields_source); SECOND-OPINIONS-QUEUE.tsv row SO-BLATHWAYT-1728, answered 24 Sept
+2026 before A4-RFHUN, R8-HUNT and R10-HUNT2: outcome cell annotated, prompt not edited (as for SO-LODEWIJK-1573-74). Its prompt's
+"m'en a [?] ce soir" (now 'parle', A4-RFHUN) and "106 of 141 groups at grade C" are superseded; if re-queued, quote this section.
+
+Prior-work gate (pasted): `python3 tools/prior_work.py huntington-blathwayt-madrid-1728 --item-spec 'shelfmark=Huntington mssBLA
+191;folio=p5;date=1729-08-08;sender=Cesnok;recipient=Newcastle' --step-type propagate-revision --fetch --me PROP-HUNT` @ origin/main
+050a9f078: step CONTEXT (existing audit AUDIT.md:664; propagate-revision is never DONE); step LEAD live-claim (D3-BLA2, 21:43) --
+its done line is at 21:48 UTC (ROOM.md, commit e87735f9), recorded CLEAR in prior-work.tsv; plaintext UNCHECKED 3-tomokiyo,
+UNCHECKED-NET 3-solver (aaymeloglu cache not on disk), UNCHECKED 3-solver (no unit key), UNCHECKED-NET 4-editions (no
+prior_editions.tsv row); exit 4 (the LEAD, since answered). No network requests this job for this target.
 
 ## G3 check (V1-G3E)
 

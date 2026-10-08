@@ -9,7 +9,8 @@ Second audit (AUDIT.md, 24 Sept 2026, worker I): classes confirmed, but BLA 186'
 Papers* 1831, ii 414-15, English extract dated there 3 Sept 1728, writer the Abbé Paretti, cipher line omitted as
 "(Cypher.)"); the class covers only its two cipher lines.
 N4 set (AUDIT.md 'N4 set (LANE W2 worker B1, 24 Sept 2026)'): BLA 186 cipher lines N4, BLA 191(a) N4, BLA 184 N4, "no
-prior decipherment located", readings partial (C 129, M 22, U 21 of 172). DECODE Decrypted (1360 records) and
+prior decipherment located", readings partial (C 129, M 22, U 21 of 172 then; now C 130, S 3, M 22, U 17: AUDIT.md
+'propagate-revision (PROP-HUNT, 8 Oct 2026)'). DECODE Decrypted (1360 records) and
 Cipherbrain negative. Any outward sentence on BLA 186 cites Rose 1831 ii 414-15. Outreach gate 2 open: 6 JSTOR rows
 queued and OpenAlex not run (ASKS row 40).
 
@@ -378,7 +379,7 @@ Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found
 - Action that depends on nobody: the TNA Discovery API search this folder names -- SP 94 and SP 98-100 descriptions for 1728-29 for "Paretti"/"Pareti", ~$0.5.
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
-Read so far: 130 of 172 target tokens at C (75.6%; R8-HUNT 6 Oct 2026: census finished, BLA191 p5 L11 pos3 385 C -> M, C 131 -> 130, M 20 -> 21; R7B-HUNT 6 Oct 2026: counts unchanged, one C value changed (BLA191 p5 L11 pos3 et -> es); earlier: R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), M 20, U 21, H 0; `tools/decode_key.py . --check` 0 (R17).
+Read so far: 130 of 172 target tokens at C (75.6%; R8-HUNT 6 Oct 2026: census finished, BLA191 p5 L11 pos3 385 C -> M, C 131 -> 130, M 20 -> 21; R7B-HUNT 6 Oct 2026: counts unchanged, one C value changed (BLA191 p5 L11 pos3 et -> es); earlier: R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), S 3, M 22, U 17, H 0 after R10-HUNT2 (6 Oct 2026; was M 20, U 21; propagated to AUDIT.md by PROP-HUNT 8 Oct 2026); `tools/decode_key.py . --check` 0.
 - 14 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) below the R10 margin (805, 6, 1210, 460, 1019, 711, 1118, 1052, 836, 222, 73, 470, 778, 190) - blocker: open-codes; R10-HUNT2 (6 Oct 2026, attempt 2, PREREG-R10.md) PASSed its gate and filled the 4 groups above margin 2.786 (689 m, 285 do, 1152 v at S; 214 commen at M, its sign conf M); the 14 below the margin have no instrument that clears a control (below-margin control precision is under 0.25); they reopen only with new glossed siblings using these codes
 - BLA184 range 1150/1240/1243/1250/1259 (probable names section) - blocker: open-codes; R17: glosses of this range elsewhere do not fit, the glossed items never use it
 - a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: needs-physical-access; R10-HUNTTNA (6 Oct 2026, TNA Discovery API, 20 requests): Marchmont's two covering letters SP 36/13/129 (19 July 1729) and SP 36/14/184 (30 Aug 1729) are catalogued 'The enclosures not forthcoming'; SP 94/99-100 are piece-level only; no item-level decipherment or copy found; none of these pieces is digitised; reopens only with a reading-room or copy check of SP 94/100 and SP 36/14 (owner-side)

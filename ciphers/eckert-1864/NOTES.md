@@ -189,9 +189,11 @@ decode_no2.py --check`): Halleck to Grant 16 Apr 1864 11 AM (OR I/34 pt 3 p.169)
 the 2583 px page images with the volunteer text as second witness. All three read word for word against the
 print; code-word tokens H 111, C 4, I 4, M 1. The C and I tokens are the clerk's "Yard" for Yardstick, "whim"
 (telegram, not in the book), "reswindling" (re + Swindle = move) and the two words of the misaligned blue-leaf
-rows (section 6 above). Differences from the print: the ledger sends "2,000 cavalry" where the OR prints 5,000
-(16 Apr), and the OR rounds the time of 29 Apr to 2.30 p.m. (the ledger's own time word says 2.30 PM and its
-header 2.15 PM). Per rule 4 this is an H reading; per rule 10 nothing is said here about novelty: the three
+rows (section 6 above). Difference from the print: the OR prints the time of 29 Apr as 2.30 p.m. (the ledger's own
+time word says 2.30 PM and its header 2.15 PM). [Corrected 8 Oct 2026, PROP-HUNT: this line used to say the ledger sends
+"2,000 cavalry" on 16 Apr where the OR prints 5,000. It does not: OR I/34 pt 3 p.169 prints "Sigel says General Averell
+with 2,000 cavalry is moving from Martinsburg", as the ledger reads, and "dated 2d instant" (archive.org
+warofrebellion343unit_djvu.txt, re-read 8 Oct 2026, one request).] Per rule 4 this is an H reading; per rule 10 nothing is said here about novelty: the three
 telegrams are printed in the Official Records, which is what made them usable as the control.
 
 What this opens: the Beckwith, Kimber and Caldwell entries of mssEC 19 (the volunteer text names one of the
@@ -2378,3 +2380,33 @@ cannot make the committed readings stale) and prints a stderr warning when a man
 page 9999: `--write` under PYTHONHASHSEED 1 and 2, then `--check` under PYTHONHASHSEED 3 and 4 -> "residue readings are current", exit 0, exit 0 (so the script is
 deterministic across hash seeds; committed pages.tsv/readings.md restored after). **Not verified on the real 58 pages**: whoever next re-fetches them runs `--check`
 twice; if it is still stale with only manifest pages in the directory, the cause is elsewhere (a changed key.md/decode.py/corpus), and this fix did not find it.
+
+## PROP-HUNT: record corrections (account 3, 8 Oct 2026, 22:43-23:0x UTC by date -u)
+
+Verifier-side propagation worker for the acct3-orchestrator (items e and f of the "pre-send fixes" line in
+outreach/huntington-einaudi-reply-2026-10.md, each checked against the source here). Nothing decoded; no class changed.
+
+- **E122 and E123 page labels.** The Huntington's own page titles are "Page 159" for pointer 9053 and "Page 168" for 9062
+  (sources/mssEC19/p9053.json, p9062.json); E26, on the same pointer 9053, already said Page 159. The old labels (161, 170)
+  came from the page column of entries-mssEC19.tsv, which is pointer - 8892 throughout, while the holder's titles repeat
+  "Page 138" (9030, 9031) and "Page 154" (9047, 9048), so that column runs 1 high from 9031 and 2 high from 9048. Changed:
+  ciphertext.txt headers (reading.md regenerated, `python3 decode.py --check` exit 0), ls5_r1d_file.py and
+  ls5_r1d_entries.txt headers, status.json document_id/documents/phrases (now "Huntington mssEC 19 p.159, pointer 9053, E122"
+  and "p.168, pointer 9062, E123"), and the two queued SO prompts (second-opinions/PROMPT-chatgpt-e122.md, -e123.md). The
+  worker-log rows "9053/161/2" and "9062/170/2" above are the LS5 row ids and are left as written. The outreach list already
+  had p.159 / p.168. Board document count unchanged by the rename (no document_id collision; build_dashboard.py counts below in
+  the ROOM done line).
+- **N2-A troop figure.** OR ser. I vol. 34 pt 3 p.169 (Halleck to Grant, Washington, 16 Apr 1864, 11 a.m.) prints "Sigel says
+  General Averell with 2,000 cavalry is moving from Martinsburg to Webster and Clarksburg" and "Dispatch from General Banks,
+  dated 2d instant" (archive.org warofrebellion343unit_djvu.txt, one request 8 Oct 2026 22:50 UTC; running heads 169/170 bracket
+  the passage). The ledger's "Arnold Dwight Pekin" = 2,000 cavalry agrees with the print. The false "OR prints 5,000" was
+  corrected above (section on the No. 2 test, l.192) and in reading-no2.md (summary row, closing paragraph, notes on N2-A),
+  outside the derived block (`python3 decode_no2.py --check` exit 0). OR p.331 prints 29 Apr "2.30 p. m.", so the remaining N2-B
+  time note stands. The 6 Oct Huntington message (outreach/huntington-eckert-followup-2026-10.md, sent) is not edited; the 8 Oct
+  reply carries the correction.
+- **Follow-up (not done here; suggestion):** 29 more ciphertext headers carry the same pointer-derived page, 1-2 above the
+  holder's title (all pointers 9036-9143): E55, E56, E63, E64, E73, E74, E76, E77, E103, E105, E120, E121, E124, E125 in
+  ciphertext.txt; N2-BU, N2-BV, N2-BW, N2-BX, N2-BY, N2-CA, N2-CB, N2-CF, N2-CG, N2-CH, N2-CI, N2-CJ, N2-CK, N2-DB, N2-EA in
+  ciphertext-no2.txt. Four of them are status.json document_ids (E74 p.179->177, E76 p.219->217, N2-BY p.234->232, E103
+  p.237->235; none on the outreach list). A one-job fix: correct the page column of entries-mssEC19.tsv from the holder titles,
+  regenerate the headers, run decode.py / decode_no2.py --check, and rename the four document_ids (~USD 1).

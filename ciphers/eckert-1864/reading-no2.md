@@ -21,13 +21,13 @@ witnesses agree on every code word (the volunteer text reads "Chant" where the p
 
 | entry | sender, addressee, date (ledger) | OR counterpart | result |
 |---|---|---|---|
-| N2-A | Halleck to Grant, Culpeper, 16 Apr 1864 11 AM (Beckwith) | OR I/34 pt 3 p.169 (11 a.m.) | reads word for word; the ledger has "Arnold Dwight" = 2,000 cavalry where the OR prints 5,000, and "dated Brooks instant" = 2d where the OR's scan is garbled ("xM") |
+| N2-A | Halleck to Grant, Culpeper, 16 Apr 1864 11 AM (Beckwith) | OR I/34 pt 3 p.169 (11 a.m.) | reads word for word, including "Arnold Dwight" = 2,000 cavalry and "dated Brooks instant" = dated 2d instant, both as the OR prints them (corrected 8 Oct 2026, PROP-HUNT: this row used to say the OR prints 5,000 and that its scan is garbled at "2d"; archive.org warofrebellion343unit OCR reads "2,000 cavalry" and "2d instant") |
 | N2-B | Halleck to Grant, Culpeper, 29 Apr 1864 2.15 PM (Beckwith) | OR I/34 pt 3 p.331 (2.30 p.m.) | reads word for word; "whim" = telegram (C); "Chumb" for Banks (M) |
 | N2-C | Halleck to Canby, Vicksburg, 6 June 1864 12.30 PM (Kimber) | OR I/34 pt 4 p.240 (12.30 p.m.) | reads word for word: two engineer officers, 6 in your division, Davidson from St Louis, Steele, Reynolds or Franklin against Mobile, Sherman's rear |
 
 All three read cleanly from mssEC 47 and agree with the printed text apart from the clerk's slips, the OR's
 rounding of the time of N2-B (the ledger's header says 2.15 PM and the entry's own time word Henrietta says
-2.30 PM) and the one numeral of N2-A. Code-word tokens over the three entries: H 111, C 4, I 4, M 1 (`python3
+2.30 PM); N2-A's numerals agree with the print (corrected 8 Oct 2026, PROP-HUNT). Code-word tokens over the three entries: H 111, C 4, I 4, M 1 (`python3
 decode_no2.py` prints the count). Per CLAUDE.md rule 4 this is an H reading: the meanings come from the key
 source, and the OR is only the check.
 
@@ -56,8 +56,8 @@ source, and the OR is only the check.
 - Punctuation: Tulip, Yacht and Yardstick = period, Pike = comma, Stanhope = interrogation, all grade H; the
   OR's punctuation agrees at every one of the 27 marks.
 - N2-A: "Arnold Dwight Pekin" = 2,000 cavalry (Arnold = 2 on the numerals page, and the same word gives "two
-  engineer officers" in N2-C and "two more batteries" in N2-A itself); the OR prints "5,000 cavalry". The
-  ledger records what was sent. "the French" = the 10th; "Baker Bethel" = Fourth New Hampshire, "Edwards
+  engineer officers" in N2-C and "two more batteries" in N2-A itself); the OR also prints "2,000 cavalry"
+  (I/34 pt 3 p.169; corrected 8 Oct 2026, PROP-HUNT, from "the OR prints 5,000 cavalry"). "the French" = the 10th; "Baker Bethel" = Fourth New Hampshire, "Edwards
   Babel" = Eighth Maine; "trifle" = will be (blue leaf [25C]). The closing "Tulip another" after the signature
   is filler.
 - N2-C: "Ordnance" and "pass" are printed code words of the book (After the; Fire) but are plain here ("Ordnance,

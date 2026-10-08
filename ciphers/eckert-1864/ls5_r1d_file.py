@@ -7,8 +7,8 @@ HERE = Path(__file__).resolve().parent
 MAP = {
  "X1": ("no1", "E120", "Page 151 | 9043 | 11 Aug 1864 3 PM, S. H. Beckwith (to Lieut. Col. T. S. Bowers, Grant's staff) (LS5-R1d, 8 Oct 2026; row 9043/0; image-read)"),
  "X2": ("no1", "E121", "Page 157 | 9049 | 16 Aug 1864 8.30 PM, McCaine (LS5-R1d; row 9049/1; image-read)"),
- "X3": ("no1", "E122", "Page 161 | 9053 | 21 Aug 1864 4 PM, McCaine at Winchester, signed Augur (LS5-R1d; row 9053/2; image-read)"),
- "X4": ("no1", "E123", "Page 170 | 9062 | 3 Sept 1864 8.30 PM, to Peck (LS5-R1d; row 9062/2; image-read)"),
+ "X3": ("no1", "E122", "Page 159 | 9053 | 21 Aug 1864 4 PM, McCaine at Winchester, signed Augur (LS5-R1d; row 9053/2; image-read; page = the Huntington's title for 9053, was 161 from the entries index, PROP-HUNT 8 Oct 2026)"),
+ "X4": ("no1", "E123", "Page 168 | 9062 | 3 Sept 1864 8.30 PM, to Peck (LS5-R1d; row 9062/2; image-read; page = the Huntington's title for 9062, was 170 from the entries index, PROP-HUNT 8 Oct 2026)"),
  "X5": ("no1", "E124", "Page 194 | 9086 | 2 Oct 1864 12 m, Beckwith at City Point, signed Geo K Leet (LS5-R1d; row 9086/1; image-read)"),
  "X7": ("no1", "E125", "Page 221 | 9113 | 4 Nov 1864, H. F. Schermerhorn(?), to Stevenson (LS5-R1d; row 9113/1; image-read)"),
  "X8": ("no1", "E126", "Page 75 | 8967 | 21 May 1864 10 AM, J. C. Van Duzer, Nashville (LS5-R1d; row 8967/2; image-read)"),

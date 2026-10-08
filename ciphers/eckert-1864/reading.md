@@ -731,13 +731,13 @@ Code-word tokens: H 28.
 
 Code-word tokens: H 13.
 
-**E122 | Page 161 | 9053 | 21 Aug 1864 4 PM, McCaine at Winchester, signed Augur (LS5-R1d; row 9053/2; image-read)**
+**E122 | Page 159 | 9053 | 21 Aug 1864 4 PM, McCaine at Winchester, signed Augur (LS5-R1d; row 9053/2; image-read; page = the Huntington's title for 9053, was 161 from the entries index, PROP-HUNT 8 Oct 2026)**
 
 For [P. H. Sheriden] [.] [100] [Has, or have been, reinforced] rife less with [20000] rounds of [Ammunition] for them will be sent you at once to [Harpers Ferry] pos I doubt if a [100] men are sufficient for the work they are undertaking Joke Augur
 
 Code-word tokens: H 10.
 
-**E123 | Page 170 | 9062 | 3 Sept 1864 8.30 PM, to Peck (LS5-R1d; row 9062/2; image-read)**
+**E123 | Page 168 | 9062 | 3 Sept 1864 8.30 PM, to Peck (LS5-R1d; row 9062/2; image-read; page = the Huntington's title for 9062, was 170 from the entries index, PROP-HUNT 8 Oct 2026)**
 
 {time: 8.30 PM} for [General] Peck [.] Your [Telegraph (-ed, -ing)] respecting the [Rebel] plot to seize the sound [Steam]ers has been recd & [Communicate (-ed, -ing)]d tooth [Secretary of Navy] [.] If this [Department] can render any service tooth owners or shippers [Towards] [Guard (-ed, -ing)]ing or [Arms]ing their vessels it wilby cheerfully given & you may so [Information] them  {tail: [signed] [Secretary of War] wheres French [Maj Gen Geo. H. Thomas]}
 

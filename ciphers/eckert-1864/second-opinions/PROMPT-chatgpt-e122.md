@@ -5,7 +5,7 @@ cipher telegram and want you to try to prove that its text was already printed b
 reading. Be adversarial: we would rather learn now that it is in print than claim it wrongly later.
 
 THE ITEM
-- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.161 (digital pointer 9053), entry E122, headed "no1 McCaine Winchester ---- Washington, Aug 21, 1864", 4 P.M., https://hdl.huntington.org/digital/collection/p16003coll11/id/9053. Read with War Department Cipher No. 1 (Huntington mssEC 41).
+- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.159 (digital pointer 9053), entry E122, headed "no1 McCaine Winchester ---- Washington, Aug 21, 1864", 4 P.M., https://hdl.huntington.org/digital/collection/p16003coll11/id/9053. Read with War Department Cipher No. 1 (Huntington mssEC 41).
 - Reading: Maj. Gen. C. C. Augur to Maj. Gen. Sheridan, 21 Aug 1864, 4 PM: "[100] Spencer rifles with [20,000] rounds of [ammunition] for them will be sent you at once to [Harpers Ferry]. I doubt if [100] men are sufficient for the work they are undertaking. Augur".
 - Context we already know: The frame is in clear in the Huntington's public transcription. Sheridan's request to Augur of 20 Aug 1864 ("I have 100 men who will take the contract to clean out Mosby's gang. I want 100 Spencer rifles for them"), approved 21 Aug by C. A. Dana, is printed in OR ser. I vol. 43 pt 1 p.860.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,

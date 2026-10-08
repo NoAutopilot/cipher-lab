@@ -2505,7 +2505,7 @@
       "kind": "solve",
       "title": "Blathwayt papers addenda, Madrid and Port Ste Marie intelligence 1727-1729 (Huntington mssBLA 184, 186, 191(a)): reading with a key rebuilt from seven deciphered items of the same run",
       "grade": "N4 each (no prior decipherment located; cipher passages only; partial; AUDIT.md 'N4 set', 24 Sept 2026); BLA 186's clear text printed in Rose 1831 ii 414-15",
-      "line": "Key of 395 groups (grade C) from the contemporary decipherments of BLA 179, 185, 187, 188, 189, 190 and 194; one code for 1725-29 by leave-one-item-out (0.68-0.91). Partial readings: BLA 186 (Abbé Pareti to Marchmont, Madrid, 13 Sept 1728, Ripperda's escape: 20 of 24 cipher groups; the clear part of this letter was printed in English by Rose, Marchmont Papers 1831 ii 414-15, with the cipher shown only as '(Cypher.)'), BLA 191 enclosure (a) (106 of 141) and 3 of 7 code words in BLA 184. No prior decipherment located in the Huntington collection, HMC and Marchmont prints on IA, TNA Discovery descriptions or Google Books (24 Sept 2026). C 129, M 22, U 21 of 172.",
+      "line": "Key of 395 groups (grade C) from the contemporary decipherments of BLA 179, 185, 187, 188, 189, 190 and 194; one code for 1725-29 by leave-one-item-out (0.68-0.91). Partial readings: BLA 186 (Abbé Pareti to Marchmont, Madrid, 13 Sept 1728, Ripperda's escape: 20 of 24 cipher groups; the clear part of this letter was printed in English by Rose, Marchmont Papers 1831 ii 414-15, with the cipher shown only as '(Cypher.)'), BLA 191 enclosure (a) (107 of 141 at grade C, and 3 more filled from context at grade S, about one in three such fills expected wrong) and 3 of 7 code words in BLA 184. No prior decipherment located in the Huntington collection, HMC and Marchmont prints on IA, TNA Discovery descriptions or Google Books (24 Sept 2026). C 130, S 3, M 22, U 17 of 172 (revised by R8-HUNT and R10-HUNT2, 6 Oct 2026; AUDIT.md 'propagate-revision (PROP-HUNT, 8 Oct 2026)').",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728",
       "key": "period",
       "document_id": "Huntington mssBLA 186 (Madrid, 13 Sept 1728, two cipher lines)",
@@ -2517,25 +2517,25 @@
       "claim_scope": "recovered-passages",
       "plaintext_novelty": "N4",
       "mapping_novelty": "N4",
-      "completeness": "129/172",
-      "unresolved_spans": "BLA 184's name codes unread (3 syllable groups read of 7); 16 unkeyed and 19 uncertain groups in BLA 191(a); BLA 186's clear text is printed (Rose 1831), its cipher lines are not",
+      "completeness": "133/172",
+      "unresolved_spans": "BLA 184's name codes unread (3 syllable groups read of 7, two of them one code keyed from a single witness); 12 unkeyed and 19 uncertain groups in BLA 191(a), and 3 of its groups read only by a context fill (grade S, about one in three expected wrong); BLA 186's 4 unkeyed groups; BLA 186's clear text is printed (Rose 1831), its cipher lines are not",
       "audit_refs": [
         "AUDIT.md '## Verdict'",
         "AUDIT.md '## Second audit (adversarial), 24 Sept 2026'"
       ],
       "audit_status": "two audits",
-      "reading_version": "10bfed8 (reading.txt, unchanged since)",
+      "reading_version": "R10-HUNT2 6 Oct 2026 (reading.txt and reading_tokens.tsv, 9fab3bb58), propagated into AUDIT.md by PROP-HUNT 8 Oct 2026",
       "superseded_by": "",
-      "fields_source": "huntington-blathwayt-madrid-1728/AUDIT.md first verdict and 'Class per item (second audit)' (N3 each), N4 from '## N4 set (LANE W2 worker B1)'; C 20+106+3 of 24+141+7 from the first verdict table",
+      "fields_source": "huntington-blathwayt-madrid-1728/AUDIT.md first verdict and 'Class per item (second audit)' (N3 each), N4 from '## N4 set (LANE W2 worker B1)'; counts C 20+107+3 and S 0+3+0 of 24+141+7 from reading_tokens.tsv (decode_key --check, AUDIT.md 'propagate-revision (PROP-HUNT, 8 Oct 2026)')",
       "depth": "D2",
-      "depth_pct": 75.0,
+      "depth_pct": 77.3,
       "depth_unread": {
-        "names_codes": "21 U groups (BLA 184 name codes among them)",
+        "names_codes": "17 U groups (BLA 184 name codes among them)",
         "other": "22 M"
       },
       "depth_sentence": "In BLA 191(a) the writer complains that Mr Keene ('monsieur ken ne') likes him but has no orders concerning him, and asks to be sent some order.",
       "depth_check": "key of 395 groups from the run's contemporary decipherments (C), leave-one-item-out 0.68-0.91",
-      "depth_note": "C 129 of 172 across BLA 184, 186, 191(a)",
+      "depth_note": "C 130 + S 3 of 172 across BLA 184, 186, 191(a) (S = context fill, control precision 0.66; PROP-HUNT 8 Oct 2026, was C 129 at DEPTH-REGRADE)",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
       "decode_status": "Partially decrypted"
@@ -7181,11 +7181,11 @@
       "completeness": "16 H of 17 code words",
       "unresolved_spans": "",
       "phrases": [
-        "Huntington mssEC 19 p.170, pointer 9062, E123"
+        "Huntington mssEC 19 p.168, pointer 9062, E123"
       ],
-      "document_id": "Huntington mssEC 19 p.170, pointer 9062, E123",
+      "document_id": "Huntington mssEC 19 p.168, pointer 9062, E123",
       "documents": [
-        "Huntington mssEC 19 p.170, pointer 9062, E123"
+        "Huntington mssEC 19 p.168, pointer 9062, E123"
       ],
       "depth_sentence": "At 8.30 PM on 3 Sept 1864 Stanton tells General Peck at New York that his telegram about the rebel plot to seize the Long Island Sound steamers has been received and passed to the Secretary of the Navy, and offers the War Department's help to owners or shippers in guarding or arming their vessels.",
       "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS5-B); external: ORN I/3 p.197 prints Eckert forwarding Peck's telegram to Welles on 3 Sept 1864 at the Secretary of War's direction (the decoded 'communicated to the Secretary of the Navy'); code clause Weasel = Steam in E123 and E143; matched control LS5-R1d (No.2 0, No.9 0, shuffled 0)",
@@ -7391,11 +7391,11 @@
       "completeness": "9 H of 11 code-word groups (Spencer plain)",
       "unresolved_spans": "",
       "phrases": [
-        "Huntington mssEC 19 p.161, pointer 9053, E122"
+        "Huntington mssEC 19 p.159, pointer 9053, E122"
       ],
-      "document_id": "Huntington mssEC 19 p.161, pointer 9053, E122",
+      "document_id": "Huntington mssEC 19 p.159, pointer 9053, E122",
       "documents": [
-        "Huntington mssEC 19 p.161, pointer 9053, E122"
+        "Huntington mssEC 19 p.159, pointer 9053, E122"
       ],
       "depth_sentence": "On 21 Aug 1864 Augur answers Sheridan's request for Spencer rifles for a 100-man party against Mosby: 100 rifles and 20,000 rounds are going to Harpers Ferry at once, but he doubts 100 men are enough for the job.",
       "depth_check": "code clause: Camel = Harpers Ferry (4 uses), Olive = ammunition in E122 and E26; external: Sheridan's printed request for 100 Spencer rifles, approved 21 Aug (OR I/43 pt 1 p.860); matched control LS5-R1d (No. 2 0 clauses, No. 9 0, shuffled 0)",

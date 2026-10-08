@@ -5,7 +5,7 @@ cipher telegram and want you to try to prove that its text was already printed b
 reading. Be adversarial: we would rather learn now that it is in print than claim it wrongly later.
 
 THE ITEM
-- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.170 (digital pointer 9062), entry E123, headed "8.30 pm Washn Sept 3d 1864", https://hdl.huntington.org/digital/collection/p16003coll11/id/9062. Read with War Department Cipher No. 1 (Huntington mssEC 41).
+- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.168 (digital pointer 9062), entry E123, headed "8.30 pm Washn Sept 3d 1864", https://hdl.huntington.org/digital/collection/p16003coll11/id/9062. Read with War Department Cipher No. 1 (Huntington mssEC 41).
 - Reading: Stanton (signature code Brutus = Secretary of War) to Maj. Gen. J. J. Peck, New York, 3 Sept 1864 8.30 PM: Your telegram respecting the rebel plot to seize the Sound steamers has been received and communicated to the Secretary of the Navy. If this Department can render any service to owners or shippers towards guarding or arming their vessels it will be cheerfully given and you may so inform them.
 - Context we already know: The frame is in clear in the Huntington's public transcription; telegram, rebel, steamers, communicated, Secretary of the Navy, Department, guarding, arming and inform are code words. Peck's telegram it answers is printed in OR ser. I vol. 43 pt 2 p.21 and ORN ser. I vol. 3 p.197 (with Eckert's note forwarding it to Welles).
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
