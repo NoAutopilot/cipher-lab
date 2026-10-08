@@ -76,3 +76,32 @@ read from the crops, volunteer text as second witness), with these additions:
 NOTES sections "## LS4-R2a (8 Oct 2026, account 1, for LANE ST-LEDGER-4)" / "## LS4-R1a (...)", with the per-entry table (row, ID, book,
 three shares, clause counts chosen vs controls, H, step 0 and print result), Remaining gaps and Escalation, gaps_check after.
 Report what was found and where it was not found; do not classify novelty.
+
+---
+
+# Wave 3 (written 8 Oct 2026 16:0x UTC)
+Wave 2 done by get_session: LS4-R2a 4.23 (N2-BR..N2-BY; 8887/0 cover, 8902/0 step-0 skip; N2-BS, BT, BW in OR), LS4-R1a 3.76 (E88-E94,
+N2-BZ, N2-CA; 9048/0 step-0 clear; E88, E89, E93, N2-CA, N2-BZ msg 1 in print). 8 of 17 PF4-clean rows were in print after decoding:
+the decoded-text phrase pass is the filter that works; keep it, and widen it (below).
+
+## First verifiers LS4-V2a and LS4-V1a (Opus 5.5, separate sessions; cap $5.5 each, box 90 min each)
+The "First verifiers" section of .claude/briefs/runs/2026-10-08-acct2-st-ledger3-workers.md and the LS-V7 section it cites, scoped to:
+- LS4-V2a: N2-BR, N2-BU, N2-BY (read by LS4-R2a); N2-BV and N2-BX only for a depth ruling (seven and six code tokens; say in one line each
+  whether either reaches D2; if not, no status.json row, no SO row).
+- LS4-V1a: E90, E91, E92, E94 and N2-BZ's second telegram (read by LS4-R1a); confirm N2-BZ's first telegram and N2-CA as N1 by script.
+Points first, before anything else, per entry: (1) the entry's own Huntington transcription and a CONTENTdm full-text search for its decoded
+substance (the E70/E74/E86 lesson: PF4 cannot see it); (2) OR ser. III vols. 4-5 and ORN; (3) **The Papers of Ulysses S. Grant** (Simon ed.,
+vols. 10-13 for 1864; Grant's incoming telegrams are often printed in the footnotes) and Basler's Lincoln for anything to or from Grant,
+Lincoln, Stanton or Halleck; Seward/Sanford for E91; Meigs/QMG for E90, E92; (4) press of the day. Depth per
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. AUDIT.md headings "## AUDIT (LS4-V2a)" / "## AUDIT (LS4-V1a)"; status.json rows for N3+
+only, audit_status "one audit"; SO row per N3+ entry; `tools/depth_check.py` passes; file_shrink_guard before the final push. Do not
+decode other entries. Two verifiers run at once on the same hosts: >= 3 s between your own hdl.huntington.org requests.
+
+## Readers LS4-R2b (cap $7, box 120 min) and LS4-R1b (cap $6, box 110 min), Sonnet 5.5: the next clean rows
+- LS4-R2b: the remaining fifteen group-2 rows in PF4's order: 9132/0 8982/1 8986/1 9040/0 9052/1 9060/2 9066/1 9121/1 9122/2 9125/2 9142/0
+  8948/2 8967/0 8971/2 9003/0
+- LS4-R1b: group 3, the next ten: 9097/1 9116/2 9119/1 9125/3 9128/2 9134/1 9138/2 9140/2 8921/1 8922/0
+Method as wave 2 (steps 0-4), with step 1 widened: the decoded-text phrase pass through be-api covers 2-4 phrases per entry, and for anything
+to or from Grant, Lincoln, Stanton or Halleck also a be-api search restricted to the Grant Papers / Basler volumes if their IA identifiers
+answer (log which). An entry found in print is filed with its page and not sent to a verifier. NOTES sections "## LS4-R2b (...)" /
+"## LS4-R1b (...)". Four workers share the hosts: >= 3 s between your own hdl.huntington.org requests, at most 40 there.
