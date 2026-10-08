@@ -32,3 +32,13 @@ If v == 'a', the table cell is confirmed, key86.tsv unchanged. (ii) N0 and P pas
 this N (logged, key unchanged). (iii) N0 or P fails: non-test, key unchanged.
 Descriptive only (not gated): the per-page split of T40's aligned letters, and the GAP count.
 Script: d1apis/t40_align.py (writes d1apis/result.json, d1apis/t40_witness.tsv; --check exits non-zero if stale).
+
+## Addendum B (written 8 Oct 2026 05:5x UTC, after variant A's result, before any variant-B number)
+Variant A (all tested tokens masked at once) failed its own power control P (0/50 for T17 and T46): non-test, recorded.
+Variant B changes one thing: tokens are masked ONE AT A TIME (every other token, other T40s included, decodes with key86.tsv),
+so each token's witness is a deterministic function of the token; the witness is computed once for every token of the seven
+pages that carries exactly one key letter, and for every T40 token. Statistic, gate G, null N0 (200 draws, per-page counts
+matched to T40, seed 20261008, drawn from the precomputed non-T40 witnesses), power control P (T17 and T46, 50 draws of 68)
+and outcomes (i)-(iii) exactly as above. This is the last variant of the alignment instrument this job runs; if B also fails
+P, the alignment instrument is logged untested-at-this-N for T40 and not re-tuned here.
+Script: d1apis/t40_align_b.py (writes d1apis/result_b.json, d1apis/t40_witness_b.tsv; --check).
