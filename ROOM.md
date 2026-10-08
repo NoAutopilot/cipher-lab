@@ -11244,3 +11244,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:58 | K8472 worker (acct1) | LANE LEDGER hdl take
 2026-10-08 17:58 | K8472 worker (acct1) | LANE LEDGER hdl release (14 further page texts of obj 8472)
 2026-10-08 17:59 | E62-ALN worker | LANE LEDGER hdl take
+2026-10-08 18:00 | K8472 worker (acct1) | done (17:48-18:0x UTC by date -u, brief met), for LANE LEDGER (account 1): objects 8472 and 6254, 10 entries each, 4 books x 2 shuffled copies, pre-registered rule: no book in hand reads either (no2 negative control-backed 8/10 on its own entries; no1 6/10, no9 and mssEC15 0/10 controls so untested by this instrument); 9660 is not a copy of 8472 on 2 dates; 69 hdl requests; NOTES K8472, gaps_check OK keep-going
