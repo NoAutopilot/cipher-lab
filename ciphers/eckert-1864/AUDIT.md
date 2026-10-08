@@ -2146,3 +2146,91 @@ by name and by event (AUD2-LS-A's lesson: search the press for the event, not on
   Huntington full text; done here and they changed no class, but they put E37's outcome in print (section 4).
 - Rows: status.json one result row per N3 entry (E37, E38, E39, E40, E41, E42, E43, E45, E46); SECOND-OPINIONS-QUEUE.tsv rows
   SO-ECKERT-E37 ... -E46 (not E44) with prompts in second-opinions/. Requests: listed in the ROOM done line.
+
+## AUDIT (LS-V4)
+
+Verifier LS-V4 (account 1, LANE ST-LEDGER), 8 Oct 2026, 01:47-02:1x UTC by `date -u`; a separate session from the solver (LS-R4),
+not protecting its conclusions. Scope: LS-R4's entries **E47-E54** (mssEC 19, Cipher No. 1, key.md = mssEC 41). Nothing decoded
+beyond re-running the committed script. Key source for every item: `period` (the War Department's own Cipher No. 1 book).
+
+### 1. Re-derivation (rule 7) and image spot-check
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0. E47-E54 derived block: H 104, C 1 by the decoder;
+  LS-R4's hand grade I 1 (E47 "Vintur" = Vinton, Quartermaster) accepted, and now supported by a second ledger copy (section 3, E47).
+  Words left unread and not graded by LS-R4 are counted here as unread tokens for depth: E50 "amirs", "ham"; E54 "Toby" (one each);
+  E48 "Season" (addressee name word). "zbra" (E51) is the period word zebra and counts as read.
+- Strip crops from the 2400 px IIIF images (scratch, not committed): `python3 tools/iiif_lines.py --image $S/img/p9117.jpg --out
+  $S/crops/9117 --prefix p9117 --region 100,2020,2300,640 --centres 50,148,246,344,442,540 --lines-per-crop 3 --max-width 2400` and
+  `python3 tools/iiif_lines.py --image $S/img/p9135.jpg --out $S/crops/9135 --prefix p9135 --region 100,170,2300,820 --centres
+  50,148,246,344,442,540,638,736 --lines-per-crop 4 --max-width 2400`. E52 (9117), all six lines, and E54 (9135), all eight lines,
+  agree word for word with ciphertext.txt (header to signature; E54 "Kidnap's Oyster unity", "Toby landed", "Palsy chief" as
+  transcribed). No correction.
+
+### 2. Entries LS-R4 located in print: page confirmed by script (a check, not a search)
+| ID | printed at | how confirmed |
+|---|---|---|
+| E48 | OR ser. I vol. 37 pt 1 **p.891** (Washington, May 5, 1864 -- 11.30 a.m., Halleck to Wallace) | IA `warofrebellion371unit` djvu: the telegram sits between the running heads 890 and 892; "Two more (four in all) regiments of Ohio militia have been ordered to report to you in Baltimore. Porter's regiment of New York Heavy Artillery will be held in readiness to take the field, either as artillery or infantry. H. W. HALLECK, Major-General and Chief of Staff." Word for word with the decode except "of Ohio militia" (no ledger word). The ledger's signature code word reads "General-in-Chief" by the key; the print signs Halleck as Chief of Staff (May 1864), so the key value is the office word, not Halleck's title that day |
+| E53 | OR ser. III vol. 4 **p.925** (Washington, D. C., November 12, 1864, to Maj. W. R. Price, Acting Inspector, Cavalry Bureau, Nashville) | IA `warofrebellionco0004genf` djvu: between the running heads 925 and 926; "Consolidation of the Second and Fifth Kentucky Cavalry approved. The Secretary of War authorizes enlistment of loyal Alabamians in the First Alabama Cavalry, but without bounties." signed (OCR "JORR ELCRON") Assistant Adjutant-General = J. C. Kelton; word for word. LS-R4's "page not fixed" is now fixed; the print's "W. R. Price" settles LS-R4's "R[?]" as R |
+
+### 3. Entries LS-R4 did not locate: search families (8 Oct 2026)
+Phrases (decoded wording): "Send Salvor to Annapolis", "not under engagements making the trip a serious loss"; "expedition sixteen
+thousand strong", "removing stores and wounded to a new base"; "provision and water the Continental", "hour of sailing"; "accept
+promptly without question the proposed", "greatly increased powers better advantages"; "calling himself Dr. Hamilton", "passed
+through Elmira on his way south", "light hair, mustache and whiskers, and fine teeth"; "to hold these supplies on board vessel", "all
+ordnance supplies which have been ordered for Sherman's army". IA full text and Google Books by script (scratch `q.py`), plus hand
+queries by name and event.
+
+| family | searched | result |
+|---|---|---|
+| OR by date and correspondent, +/- 3 days (IA djvu, whole volume, regex on normalized text) | ser. I vols 33 (E47), 35 pt 2 (`warofrebellion352unit`, Dept of the South: E47, E50), 36 pt 3 and 40 pt 2 (E49), 39 pt 3 (E51), 42 pt 2 (E50), 42 pt 3 (`warofrebellion423unit`, E54), 43 pt 2 (E52), 44 (E54); ser. III vol. 4 (all) -- names and words Salvor, Hilton Head + coal, sixteen thousand, 16,000 strong, new base or hospital, Continental + provision/water, hour of sailing, Whiton, Adna Anderson + inspector, inspector-generalship, Hamilton + Elmira, William/Dr. Hamilton + agent, fine teeth, Edson, "ordnance supplies which have been ordered", "hold these supplies", Arnold + Hilton Head | no hit for any E47, E49-E52, E54 telegram. Context only: I/33 prints a Fort Monroe reply "Will give Salvor eight days' coal and twelve of water" (the steamer at Biggs's disposal that spring); III/4 names W. H. Whiton "in charge of the office, Washington" of the U.S. Military Railroads (McCallum's report, index p.953) -- E51's signer; I/42 pt 3 prints Dyer to Butler, Dec 1864, "One hundred tons mining powder ... to Captain Edson, at Fortress Monroe, who is ordered to hold the same subject to your order" and Butler to Edson 4-5 Dec 1864 (E54's addressee and week, not E54); I/44 "Lieutenant Arnold goes to Hilton Head about the ordnance" (E54's Lt Arnold) |
+| Huntington full text (CONTENTdm p16003coll11, `CISOSEARCHALL`) | Salvor, Whiton, Hamilton, Edson, Continental | **E47: a second ledger copy of the same telegram** at pointer 5595 ("Page 51" of another volume, headed "Ft Monroe April 6 . 1864 Geo D Sheldon": "Biggs vinton appian send Salvor to Ann a pole is if still at Animal & not under Engagements making the trip a serious loss unity order a purple tons of coal a float at appian if it can be spared to hill town head ..."), in cipher like mssEC 19; it is a second ciphertext witness, not a decipherment, and its "vinton" confirms LS-R4's I-grade repair of "Vintur". **E52**: siblings 9116 (p.222, 5 Nov 1864 11 PM to 'Season' at Baltimore; volunteer text, code words not decoded here: "William Hamilton is wicked on what seems trust worthy evidence asa walnut agent") and 9890 (5 Nov 1864, to 'Submit'; volunteer text: "... named walnut agent and the seizure of his papers Paradise Wm Hamilton") -- a William Hamilton named as a "walnut" (= rebel, as in E52) agent at Baltimore two days earlier; same affair by inference, not E52. Edson: 9902 (p.236, Dyer 1 Dec 1864, the mining powder, = the I/42 pt 3 text above) and 9903 (Dyer 3 Dec, sand-bags to Edson) -- siblings, not E54. Whiton: 9098 is E51's own page; Continental: 9042 is E50's own page |
+| 1864 press (loc.gov Chronicling America JSON, `dates=1864-11-03/1864-12-15`) | E52: "Hamilton rebel agent Elmira" (6 pages), "Hamilton rebel agent arrested Baltimore" (168) -- result lists only | pages not read (budget); no title matched on its face. Unread, next step below |
+| IA full text, all items (be-api fts) | every phrase above | 0 hits for each that answered; "not under engagements ...", "removing stores and wounded ...", "provision and water the Continental", "light hair, mustache ...", "all ordnance supplies ..." returned HTTP 502 (not retried: unreachable this session) |
+| Google Books API (key, country=US) | every phrase above; hand: "ordnance supplies which have been ordered for" Sherman Edson; "hold these supplies on board" Arnold Hilton Head; Whiton "Adna Anderson" inspector 1864; Hamilton rebel agent Elmira 1864 Dana Wallace | no hit on any telegram (phrase queries return loose matches on common words). **E51 context**: Proceedings of the American Society of Civil Engineers (1888/1889), memoir of Adna Anderson: "from ... 1864, to July, 1866, he was Chief Superintendent and Engineer of all the [military railroads ...]", with Whiton on the memoir committee -- the outcome of the offer E51 urges him to accept is in print; the telegram is not (snippet only, page not read) |
+| OpenAlex, S2, CORE, CrossRef | not run (lane cap nearly spent) | unreached this session |
+| JSTOR | 5 rows appended to JSTOR-QUEUE.tsv (E51, E52, E54; families i and ii) | pending (never blocks) |
+| Unread / unreachable | NARA RG 107 (M473 telegrams sent by the Secretary of War), RG 92 (Meigs, Quartermaster General letters sent), RG 156 (Ordnance, Dyer), U.S. Military Railroads records (RG 92); the Baltimore and Washington press of 3-15 Nov 1864 page by page (E52); the ASCE Anderson memoir page; HathiTrust full text | unread |
+
+### 4. Classification (key `period` for all eight)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E47 Meigs to Biggs, 6 Apr 1864 | **N3** | unknown | D3 | 92.9 (13 H + 1 I of 14) | re-derivation; a second ledger copy (Huntington 5595) agrees word for word in its plain words and gives "vinton" for the repaired code word |
+| E48 Halleck to Wallace, 5 May 1864 | N1 | known (OR I/37 pt 1 p.891) | D4 | 100 (20/20 H; "Season" an addressee name word) | word for word with the print |
+| E49 Meigs to Biggs, 12 June 1864 | **N3** | unknown | D3 | 100 (4/4 H; mostly in clear) | re-derivation; time word Julia = 4 PM agrees with the header 4.10 PM (LS-R4) |
+| E50 Meigs to Biggs, 11 Aug 1864 | **N3** | unknown | D3 | 89.5 (17/19 H; "amirs", "ham" unread) | re-derivation; OR I/42 pt 2 prints the related order sending the Continental to Fort Monroe through Biggs |
+| E51 Whiton to Adna Anderson, 21 Oct 1864 | **N3** | unknown (the outcome, Anderson's chief-superintendent post from 1864, is in print: ASCE memoir 1888/89) | D3 | 100 (11/11 H) | re-derivation; OR III/4 confirms W. H. Whiton in charge of the Military Railroads office, Washington |
+| E52 Dana to Wallace, 7 Nov 1864 | **N3** | unknown | D3 | 100 (9 H + 1 C of 10) | image crop checked here, all lines; Huntington 9116 and 9890 (5 Nov, a "walnut agent" Wm Hamilton at Baltimore, volunteer text) agree with the decoded subject |
+| E53 Kelton to W. R. Price, 12 Nov 1864 | N1 | known (OR III/4 p.925) | D4 | 100 (20/20 H) | word for word with the print |
+| E54 Dyer to Edson, 5 Dec 1864 | **N3** | unknown | D3 | 90.9 (10/11 H; "Toby" unread) | image crop checked here, all lines; OR I/42 pt 3 and I/44 name Edson at Fort Monroe and Lt Arnold at Hilton Head on ordnance, same weeks |
+
+- **N3 (E47, E49, E50, E51, E52, E54)**: no prior plaintext or decipherment located after the logged search. Not N4: NARA RG 107/92/156,
+  the 1864 Baltimore/Washington press page by page, the ASCE memoir page, HathiTrust full text and the open scholarship indexes are
+  unread, and JSTOR rows are pending. Safe sentence (each): "Read at grade H with the period Cipher No. 1 book; no prior decipherment or
+  printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text,
+  Internet Archive full text or Google Books (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never printed", "unknown telegram".
+- **E51 is the weakest N3** (the E37 shape): Anderson's acceptance is printed in his ASCE memoir; the telegram urging it is not
+  located. A second audit should read the memoir page (and McCallum's report in OR III/5) for a quotation of Whiton's message; if it
+  is quoted, E51 drops to N2.
+- **E52 is the second weakest**: the 5 Nov sibling telegrams name a rebel agent William Hamilton at Baltimore (inferred from their volunteer text, not decoded here); the
+  press of 7-20 Nov 1864 (the six and 168 Chronicling America pages listed above) may report an arrest with this description. A
+  second audit should read them before this is counted.
+- **E48, E53: N1** (independent re-decipherments of printed texts). Not counted.
+- Depth sentences (D2+ each, checked against the derived block):
+  E47 "Meigs tells Biggs at Fort Monroe to send the steamer Salvor to Annapolis if she can be spared and to send coal afloat at Fort
+  Monroe to Hilton Head, saying how much, so that he can replace it from the North." E49 "Meigs warns Biggs that an expedition sixteen
+  thousand strong is to embark at White House the next day and tells him to send there every vessel fit to help, and to move stores
+  and wounded to a new base or hospital." E50 "Meigs tells Biggs to provision and water the Continental, bring her from the Department
+  of the South, and send her to Hilton Head with a dispatch the General-in-Chief is preparing, reporting her hour of sailing." E51
+  "W. H. Whiton urges Adna Anderson, Government Railroads, Nashville, to accept the proposed inspector-generalship promptly, saying it
+  is all right and carries greatly increased powers and better advantages." E52 "Dana tells Wallace at Baltimore that a rebel agent
+  calling himself Dr Hamilton passed through Elmira going south on Thursday last, six feet two, with light hair, moustache and
+  whiskers and fine teeth, and to catch him." E54 "Dyer, Chief of Ordnance, tells Capt. Edson at Fort Monroe to send at once to
+  Hilton Head all ordnance supplies ordered for Sherman's army, and to write to Lt Arnold there to hold them on board until ordered
+  where to land them."
+
+### 5. Postmortem
+- No over-claim found in LS-R4's section or reading.md: every not-located entry is worded as "not located in" a named source. Two
+  understatements filled: E53's page (p.925) and E47's second ledger copy (5595), which LS-R4's Huntington-free search could not see.
+  One reading note, not a correction: E48's signature code word gives the office "General-in-Chief" while the print signs Halleck as
+  Chief of Staff; LS-R4's "Halleck (signed General-in-Chief)" is accurate as a transcription of the code word.
+- Rows: status.json one result row per N3 entry (E47, E49, E50, E51, E52, E54); SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E47, -E49,
+  -E50, -E51, -E52, -E54 with prompts in second-opinions/. Requests: listed in the ROOM done line.
