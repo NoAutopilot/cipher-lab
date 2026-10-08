@@ -813,5 +813,11 @@ Code-word tokens: H 17.
 
 Code-word tokens: H 10.
 
-Totals over the 65 entries: H 1710, C 69, I 59, M 2.
+**N2-BN | Page 22 | 8914 | 16 Mar 1864, to Humphreys, Navy Yard (Coldwell "2"), signed H. W. Benham Br. Genl**
+
+Navy Yd [Washington] {time: 2 PM} [16] for [Wilmington]'s The [Advance (-ed, -ing) [#]] [Bridge (-ed, -ing)] [Train] of Canvass [Pontoon]'s will be completed ready for use today as ordered in your letter of the [29] ult [.] [50] Chess being placed on Each Chess wagon though they can be reduced to [42] & the additional Wagons need any how if still deemed [Necessary]  {tail: [signed] H. W. Benham Br. Genl.}
+
+Code-word tokens: H 16.
+
+Totals over the 66 entries: H 1726, C 69, I 59, M 2.
 <!-- decode.py: derived block ends -->

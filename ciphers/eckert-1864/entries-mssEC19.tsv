@@ -46,7 +46,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8913	21	0	R F. Clarry (9)  Washn Mar 13th 1864	R F. Clarry (9)		41	9	19	9	9	warofrebellion342unit@leaf0(cov9)	9	O9-R	3
 8913	21	1	S. H. Beckwith (2)  Washn Mar 14th 1864	S. H. Beckwith (2)		62	21	34	4	2	warofrebellion342unit@leaf0(cov10)	10	N2-V	3
 8913	21	2	Beckwith "2"  Wash. D. C Mar. 15. 1864	Beckwith "2"		44	11	21	4	2	warofrebellion372unit@leaf0(cov9)	9	N2-W	3
-8914	22	0	Coldwell "2"  Wash D. C. Mar. 16.1864	Coldwell "2"	"1" 12.30 PM	65	9	21	3	1	none	4		1
+8914	22	0	Coldwell "2"  Wash D. C. Mar. 16.1864	Coldwell "2"	"1" 12.30 PM	65	9	21	3	1	none	4	LS-R7 N2-BN (as E71)	1
 8914	22	1	Sheldon Ft Monroe  Wash. Mar. 17. 1864	Sheldon Ft Monroe		79	15	26	3	1	warofrebellion33unit@leaf0(cov25)	25		3
 8914	22	2	S. H. Beckwith (2)  Mar 18th			50	8	18	3	1	none	3	N2-X	2
 8915	23	0	Geo D. Sheldon (1)  Washington Mar 18th 1864 230 PM	Geo D. Sheldon (1)		84	18	25	5	1	none	6	N2-P	2
@@ -201,7 +201,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8984	92	2	S. F Van Valkenburg  Washn June 14th 1864 12M	S. F Van Valkenburg		117	27	34	5	1	warofrebellion384unit@leaf0(cov14)	14		3
 8985	93	0	7 am SH Beckwith  Washington June 15" 1864	7 am SH Beckwith		33	10	17	3	2	warofrebellion402unit@leaf0(cov7)	7	N2-U	3
 8985	93	1	Geo. D. Sheldon  Washington June 15th 1864 1. P. M	Geo. D. Sheldon		39	10	13	3	1	warofrebellion402unit@leaf0(cov7)	7		3
-8985	93	2	Capt Smith St Louis.  Wash. June 16. 1864 1220 pm	Capt Smith St Louis.		67	12	19	2	1	none	4		1
+8985	93	2	Capt Smith St Louis.  Wash. June 16. 1864 1220 pm	Capt Smith St Louis.		67	12	19	2	1	none	4	LS-R7 E70	1
 8986	94	0	S. P. Kimber Wash'n June 17th 1864	S. P. Kimber		126	27	54	6	2	warofrebellion344unit@leaf0(cov49)	49	N2-BA	3
 8986	94	1	S. H. Beckwith  Wash'n June 17th 1864	S. H. Beckwith		81	27	50	4	2	none	3		2
 8987	95	0				45	9	19	1	1	warofrebellion371unit@leaf0(cov18)	18		3

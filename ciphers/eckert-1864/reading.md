@@ -539,5 +539,11 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 17.
 
-Totals over the 68 entries: H 1137, C 14, I 0, M 0.
+**E70 | Page 93 (printed) | 8985 | 16 June 1864 12.20 PM, to Capt Smith, St Louis (signed Geo D Ramsay, Chf Ord)**
+
+for [Major] Callender [Command = Er (-ed, -ing)]ing arsenal [St Louis] ---- Issue immedy to [General] Carrington at [Indianapolis] [Indiana] & send with quickest dispatch & a reliable 5pecial Messenger 4 12 pdr tankard Howitzers with implements & [Equipment]'s Complete & four hundred rounds assorted [Ammunition] one hundred of which to be canister ---- There must be no delay Report the issue by [Telegraph (-ed, -ing)]  {tail: [signed] Geo D [Effect (-ed, -ing)] Chf Ord {time: 12} [16]}
+
+Code-word tokens: H 13.
+
+Totals over the 69 entries: H 1150, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
