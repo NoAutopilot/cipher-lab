@@ -1,0 +1,343 @@
+{
+ "N": 67,
+ "ambiguous_index": 1,
+ "control": {
+  "S0_marked": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S0_marked+S10_reverse": {
+   "recovered": 5,
+   "top_ranked": 3,
+   "trials": 5
+  },
+  "S0_marked+S11_decim17": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S0_marked+S11_decim2": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S0_marked+S11_decim5": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S0_marked+S12_interleave": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S1_next": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S2_prev": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S3_plus2": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S4_minus2": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S5_word_first": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "S6_word_last": {
+   "recovered": 5,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "non_plantable": [
+   "S7_index_a1z26",
+   "S8_index_from_end_a1z26",
+   "S9_wordlen_a1z26"
+  ]
+ },
+ "null": {
+  "candidates_per_sweep": 118,
+  "false_pass": 0,
+  "rate": 0.0,
+  "sweeps": 40
+ },
+ "target": {
+  "column": {
+   "n_pass": 0,
+   "per_mark": {
+    "S0_marked": {
+     "cover": 0.373,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.343,
+     "text": "CESOAPCHFHTEOPISFMNADAMECAOREDATNRAYUURNQWKNUFRCOJRWRMDGEUSHWTOKARA"
+    },
+    "S1_next": {
+     "cover": 0.508,
+     "null_p99": -1.82,
+     "pass": false,
+     "real_p05": -0.919,
+     "score": -2.269,
+     "text": "TATDMOTAEAYEPMLEFCICEASRTIRINSEORNAEOUIUGLEAOADOAUEARSYUSVWEBRR"
+    },
+    "S2_prev": {
+     "cover": 0.382,
+     "null_p99": -1.841,
+     "pass": false,
+     "real_p05": -0.919,
+     "score": -2.438,
+     "text": "USYOSUTSRHOBMAHSRUILOTVEMAGPMDOFINCAIPGNCNOYAIHMEKELREP"
+    },
+    "S3_plus2": {
+     "cover": 0.509,
+     "null_p99": -1.841,
+     "pass": false,
+     "real_p05": -0.919,
+     "score": -2.315,
+     "text": "INWPINLILNMALYEGCCLRORHCAAORDITDCUEAHLIMMIONIDMITVNVOET"
+    },
+    "S4_minus2": {
+     "cover": 0.39,
+     "null_p99": -1.705,
+     "pass": false,
+     "real_p05": -0.959,
+     "score": -2.15,
+     "text": "DLGDRGSHAGCUGRBAIMWIMCDAADSOANEOLEVKTNABI"
+    },
+    "S5_word_first": {
+     "cover": 0.194,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.121,
+     "text": "PSAGSPPTFHHGSSBRGMTADSUDELBPRMMWDPMHAFDHJAKSPFPFFBCOCMPGAMCKNWBKAPP"
+    },
+    "S6_word_last": {
+     "cover": 0.299,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.222,
+     "text": "NNTNMENNYRTGNNLYRHSGYRNECYHKRARNRNEYSDRNSIAHRIGOONRDSRDERCYREVNNOET"
+    },
+    "S7_index_a1z26": {
+     "cover": 0.254,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.029,
+     "text": "FBFCBAFBAAFCCDBDCAEAABCHDBCDDCBCFBBEEBCDDDACBAEEFDDIEAFAEBGBCECAADB"
+    },
+    "S8_index_from_end_a1z26": {
+     "cover": 0.164,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.071,
+     "text": "ECBEBDECHDFGEDCCDGGJGCDAADCDBCFDCIDAGCFDDBECECGBAEHDFDCDBDBFMBCECCJ"
+    },
+    "S9_wordlen_a1z26": {
+     "cover": 0.119,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.13,
+     "text": "JDGGCDJDHDKIGGDFFGKJGDFHDEEGEEGFHJEEKDHGGEEEFCKFFHKLJDHDFEHGOFEECFK"
+    }
+   },
+   "top": [
+    {
+     "cover": 0.433,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "scheme": "S0_marked+S11_decim10",
+     "score": -1.835,
+     "text": "CTDAQRWOPERNMKCFOUREAHADNJHSOMNKROPSAYFGRFNEROSEEATWWTAICAUDAHMRUCU"
+    },
+    {
+     "cover": 0.254,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "scheme": "S0_marked+S11_decim29",
+     "score": -1.849,
+     "text": "CDSDJEQSTWMWPKAROCMSUCYAOGMRFUAEUAOTNEAHAROWONTERINPAKADFFHURRENCHR"
+    },
+    {
+     "cover": 0.54,
+     "null_p99": -1.82,
+     "pass": false,
+     "real_p05": -0.919,
+     "scheme": "S1_next+S11_decim55",
+     "score": -1.866,
+     "text": "TUOUOREARYDIESLTRSAUSAMOBROONEPMEAAEICEDWEEARIYTVULNICAASAGRTFE"
+    },
+    {
+     "cover": 0.343,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "scheme": "S0_marked+S11_decim37",
+     "score": -1.899,
+     "text": "CUHUIWASERYPKOJAEOKROQTCMDCTTERFFSRMHDAUCNPRDURAAAWEONGAONSNHRFMEWA"
+    },
+    {
+     "cover": 0.388,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "scheme": "S0_marked+S11_decim18",
+     "score": -1.902,
+     "text": "CNUDPEWHTERASRWSDREHANTOAOAMYMAMQSHRFKINREAUGCCKWEDCRFAROANUFOUOPTJ"
+    }
+   ]
+  },
+  "scroll": {
+   "n_pass": 0,
+   "per_mark": {
+    "S0_marked": {
+     "cover": 0.343,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.289,
+     "text": "CESOAPCHFHTEOPISFMNADAMECAOREDATNRAYUURNQWKNUFRCOJRWRMDGSEHUWTOAKRA"
+    },
+    "S1_next": {
+     "cover": 0.444,
+     "null_p99": -1.82,
+     "pass": false,
+     "real_p05": -0.919,
+     "score": -2.255,
+     "text": "TATDMOTAEAYEPMLEFCICEASRTIRINSEORNAEOUIUGLEAOADOAUEAYRUSSVWBERR"
+    },
+    "S2_prev": {
+     "cover": 0.382,
+     "null_p99": -1.841,
+     "pass": false,
+     "real_p05": -0.919,
+     "score": -2.463,
+     "text": "USYOSUTSRHOBMAHSRUILOTVEMAGPMDOFINCAIPGNCNOYAIEHKMELREP"
+    },
+    "S3_plus2": {
+     "cover": 0.527,
+     "null_p99": -1.841,
+     "pass": false,
+     "real_p05": -0.919,
+     "score": -2.281,
+     "text": "INWPINLILNMALYEGCCLRORHCAAORDITDCUEAHLIMMIONIDMTIVNOVET"
+    },
+    "S4_minus2": {
+     "cover": 0.39,
+     "null_p99": -1.705,
+     "pass": false,
+     "real_p05": -0.959,
+     "score": -2.167,
+     "text": "DLGDRGSHAGCUGRBAIMWIMCDAADSOANEOLEVTKNABI"
+    },
+    "S5_word_first": {
+     "cover": 0.164,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.244,
+     "text": "PSAGSPPTFHHGSSBRGMTADSUDELBPRMMWDPMHAFDHJAKSPFPFFBCOCMPGCAKMNWBAKPP"
+    },
+    "S6_word_last": {
+     "cover": 0.269,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.278,
+     "text": "NNTNMENNYRTGNNLYRHSGYRNECYHKRARNRNEYSDRNSIAHRIGOONRDSRDEYRRCEVNONET"
+    },
+    "S7_index_a1z26": {
+     "cover": 0.284,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.107,
+     "text": "FBFCBAFBAAFCCDBDCAEAABCHDBCDDCBCFBBEEBCDDDACBAEEFDDIEAFAGEBBCECAADB"
+    },
+    "S8_index_from_end_a1z26": {
+     "cover": 0.164,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.111,
+     "text": "ECBEBDECHDFGEDCCDGGJGCDAADCDBCFDCIDAGCFDDBECECGBAEHDFDCDBBFDMBCCECJ"
+    },
+    "S9_wordlen_a1z26": {
+     "cover": 0.075,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.1,
+     "text": "JDGGCDJDHDKIGGDFFGKJGDFHDEEGEEGFHJEEKDHGGEEEFCKFFHKLJDHDHFGEOFECEFK"
+    }
+   },
+   "top": [
+    {
+     "cover": 0.478,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "scheme": "S0_marked+S12_interleave",
+     "score": -1.721,
+     "text": "CREASYOUAUPRCNHQFWHKTNEUOFPRICSOFJMRNWARDMADMGESCEAHOURWETDOAATKNRA"
+    },
+    {
+     "cover": 0.493,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "scheme": "S0_marked+S11_decim35",
+     "score": -1.835,
+     "text": "CYORCWHUOCSRNMASCUROARREUANHKTFPOFWADMEAWEATAASUPQFNERIJMRDGEHOTDKN"
+    },
+    {
+     "cover": 0.418,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "scheme": "S0_marked+S11_decim18",
+     "score": -1.875,
+     "text": "CNUDPEWUTERKSRWSDRSHANTOAOAMYMAMQHHRFAINREAUGCCKWEDCRFAROANEFOUOPTJ"
+    },
+    {
+     "cover": 0.433,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "scheme": "S0_marked+S11_decim10",
+     "score": -1.906,
+     "text": "CTDAQRWOPERNMACFOURSAHADNJUSOMNKROPSAYFGRFNEROHEEATWWTAICAUDKHMRUCE"
+    },
+    {
+     "cover": 0.508,
+     "null_p99": -1.82,
+     "pass": false,
+     "real_p05": -0.919,
+     "scheme": "S1_next+S11_decim58",
+     "score": -1.924,
+     "text": "TWRAAINNRIMEDRSADLOORAFETABUUOUASTCLAMRVYOEURISCPATESEAGEEIEEYO"
+    }
+   ]
+  }
+ }
+}

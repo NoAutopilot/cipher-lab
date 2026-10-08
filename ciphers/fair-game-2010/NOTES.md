@@ -234,3 +234,70 @@ Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR and R12D-FAIR2 ar
 - [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots
 - [x] retry: masc_words word-constrained instrument run 6 Oct 2026, control-backed FAIL on both orders
 Verdict: keep going: 2 internal gaps; cheapest next: marker-scheme sweep with planted-message control, ~$2
+
+## Marker-scheme sweep with planted-message control (D2-FAIR, account 2, 8 Oct 2026, 07:58-08:1x UTC)
+
+Different instrument from the substitution solvers (rule 3 third-attempt clause): no key search, the marked letters are
+taken as markers and a fixed list of reading schemes is applied to the credit word each mark sits in. Idea cited from
+aaymeloglu/unsolved-ciphers SHORTLIST.md ("Enumerate marker schemes ... and check for an English sentence"); our own
+code, nothing copied (no licence). Gates pre-registered and pushed before any score: `marker/PREREG-D2-FAIR.md`
+(commit 77408ca37). Script `marker/marker_sweep.py` (`--check` regenerates `marker/results.json`, exit 0 on 8 Oct);
+per-scheme rows `marker/results.tsv`.
+
+Data: `reconcile_2026-10-03.tsv` (image-checked), 67 visible marks, row 4 dropped; mark index inside the word from
+Mulliss's capitals where his word matches, else the letter's unique occurrence (1 ambiguous index, first occurrence
+taken). Both credit-block orders. Schemes: S0 marked letter, S1 next letter (Halpin), S2 previous, S3 +2, S4 -2,
+S5 first letter of the word, S6 last letter, S7/S8 index of the mark (from start / end) as A1Z26, S9 word length as
+A1Z26; on S0 and S1 also S10 reversed, S11 every n-th letter (all n, start 0), S12 the two lines interleaved: 118
+candidates per order. Judge: tools/judge_plaintext.py's en logic in-process minus the 65-69 length check (edge marks
+drop letters under S1-S4).
+
+| | result |
+|---|---|
+| planted control (5 Pride-and-Prejudice 67-letter windows per scheme, 12 plantable schemes, full sweep on each decoy) | 60/60 recovered (G1 >= 0.8 met for every scheme); planted scheme top-ranked 58/60 (S10 reverse 3/5) |
+| null, family-wise (20 row-order shuffles of the target + 20 random-mark decoys) | 0/40 sweeps with any PASS (G2 <= 0.10 met) |
+| target, scroll order | 0 of 118 PASS; best S0+S12 interleave, language -1.721 (null_p99 -1.837, real_p05 -0.92), cover 0.478 |
+| target, column order | 0 of 118 PASS; best S0+S11 every-10th, -1.835, cover 0.433 |
+
+Per-mark schemes all score -2.03 to -2.46 (below the null_p99 band), cover 0.08-0.53. S1 (Halpin) reads 63 letters
+(4 marks at a word end) `TATDMOTAEAYEPMLEFCICEASRTIRINSEORNAEOUIUGLEAOADOAUEAYRUSSVWBERR`, -2.255, as test 1 found on
+Mulliss's list. S7-S9 cannot spell English by construction: every value is <= 15 (letters A-O only; no word is longer
+than 15 letters), so they were not planted (pre-registered). The best scroll candidate sits just above the
+single-candidate null_p99, which 118 candidates per sweep make expected; it is far below real_p05 and not English.
+
+CLI judge on the top candidates (pasted, rule 7):
+```
+CREASYOUAUPRCNHQFWHKTNEUOFPRICSOFJMRNWARDMADMGESCEAHOURWETDOAATKNRA  (scroll S0+S12)
+FAIL language: score=-1.721, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67
+FAIL words: cover=0.478, min=0.6, real_text_median_cover=0.94
+CYORCWHUOCSRNMASCUROARREUANHKTFPOFWADMEAWEATAASUPQFNERIJMRDGEHOTDKN  (scroll S0+S11 every-35th)
+FAIL language: score=-1.835 ... FAIL words: cover=0.493
+CNUDPEWUTERKSRWSDRSHANTOAOAMYMAMQHHRFAINREAUGCCKWEDCRFAROANEFOUOPTJ  (scroll S0+S11 every-18th)
+FAIL language: score=-1.875 ... FAIL words: cover=0.418
+CTDAQRWOPERNMKCFOUREAHADNJHSOMNKROPSAYFGRFNEROSEEATWWTAICAUDAHMRUCU  (column S0+S11 every-10th)
+FAIL language: score=-1.835 ... FAIL words: cover=0.433
+```
+
+Verdict: control-backed negative for "the marks spell English plaintext directly" under these 13 scheme families, both
+orders, at N=67 (control 60/60, null 0/40). Conditional on: (i) the en judge's unknown reliability (EN-FOLDS), though a
+planted English window passes 60/60 and nulls 0/40, so the margin here is wide; (ii) the control plants plaintext
+directly, so a scheme followed by a further cipher step (marker then substitution) is not covered -- that is the
+substitution families already run on S0; (iii) schemes needing the full credit text (first letter of the next credit
+name, the letter after a mark across a word boundary, capitals, marker signs outside the marked word) were not run:
+only the marked word per mark is on disk; (iv) the 1 ambiguous mark index and row 4 dropped. Requests: none (disk only).
+No subagents.
+
+## Remaining gaps (D2-FAIR, 8 Oct 2026)
+Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2 and D2-FAIR are negatives or non-tests)
+- marker schemes that need the full credit text (first letter of the next credit name, letter after a word-final mark, capitals) - blocker: not-attempted; the full credit text is not on disk (only the marked word per mark); next: transcribe the credit lines around each mark from Rossignol's 25 screenshots (klausschmeh.net, crop per mark row) and add the schemes to marker/marker_sweep.py, ~$3
+- transposition or non-English hypotheses - blocker: not-attempted; no family run yet; next: a columnar/route transposition family with matched control at N=67, ~$3
+
+## Escalation (D2-FAIR, 8 Oct 2026)
+- [n/a] siblings: a single film-credit cryptogram with no sibling texts
+- [x] clear-pages: the credits' clear line DEMOCRACY ONLY WORKS IF YOU DO YOUR PART tested as a crib, no isomorph placement in either order
+- [n/a] known-keys: no key material exists for a film-credit puzzle
+- [x] print: web and blog sweep of 3 Oct 2026 found no published decipherment
+- [retired] key-rebuild: injective substitution by tools/families/masc_inj.py word-pattern beam, CONTROL BELOW GATE 0.576 at N=67 (R12D-FAIR2); masc anneal and masc_words already run, a third substitution instrument needs new material
+- [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots
+- [x] retry: marker-scheme sweep (13 scheme families, 118 candidates per order) run 8 Oct 2026, control 60/60, null 0/40, target 0 PASS both orders (D2-FAIR)
+Verdict: keep going: 2 internal gaps; cheapest next: full-credit-text marker schemes from the screenshots, ~$3
