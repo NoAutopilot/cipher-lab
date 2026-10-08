@@ -1,0 +1,13 @@
+# V-SUR0744 (8 Oct 2026): score.py run-1 gate re-run, fresh seeds 1-6 per pass, 1,000 deranged-gloss draws each; regenerate: python3 vsur0744_seeds.py <A|B> <seed>
+A 1   0744 A3 -> [ij]: n_al 18, agree 15, share 0.833; C1 share mean 0.450 p99 0.684; scan A 0.795 -> 0.795 -> PASS
+A 2   0744 A3 -> [ij]: n_al 18, agree 15, share 0.833; C1 share mean 0.453 p99 0.722; scan A 0.795 -> 0.795 -> PASS
+A 3   0744 A3 -> [ij]: n_al 18, agree 15, share 0.833; C1 share mean 0.457 p99 0.700; scan A 0.795 -> 0.795 -> PASS
+A 4   0744 A3 -> [ij]: n_al 18, agree 15, share 0.833; C1 share mean 0.453 p99 0.700; scan A 0.795 -> 0.795 -> PASS
+A 5   0744 A3 -> [ij]: n_al 18, agree 15, share 0.833; C1 share mean 0.455 p99 0.706; scan A 0.795 -> 0.795 -> PASS
+A 6   0744 A3 -> [ij]: n_al 18, agree 15, share 0.833; C1 share mean 0.452 p99 0.688; scan A 0.795 -> 0.795 -> PASS
+B 1   0744 A3 -> [ij]: n_al 18, agree 13, share 0.722; C1 share mean 0.436 p99 0.722; scan A 0.783 -> 0.783 -> FAIL
+B 2   0744 A3 -> [ij]: n_al 18, agree 13, share 0.722; C1 share mean 0.433 p99 0.688; scan A 0.783 -> 0.783 -> PASS
+B 3   0744 A3 -> [ij]: n_al 18, agree 13, share 0.722; C1 share mean 0.440 p99 0.706; scan A 0.783 -> 0.783 -> PASS
+B 4   0744 A3 -> [ij]: n_al 18, agree 13, share 0.722; C1 share mean 0.433 p99 0.688; scan A 0.783 -> 0.783 -> PASS
+B 5   0744 A3 -> [ij]: n_al 18, agree 13, share 0.722; C1 share mean 0.435 p99 0.688; scan A 0.783 -> 0.783 -> PASS
+B 6   0744 A3 -> [ij]: n_al 18, agree 13, share 0.722; C1 share mean 0.435 p99 0.722; scan A 0.783 -> 0.783 -> FAIL

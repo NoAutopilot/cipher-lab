@@ -629,3 +629,44 @@ past its own deranged-gloss control before pooling (12/13), matching the inv. 86
 earlier hit list (logged). No 4.VEL ciphertext carries [sh-lig], so no map reading or token count changed (decode --check exit 0); the
 4.VEL [s-loop]/[s-hook] codes are not aliased to it pending an image comparison. `i j` = [ij] stays M (n=4). No N-class asked or
 changed; no SECOND-OPINIONS-QUEUE.tsv row exists for this target.
+
+## AUDIT (V-SUR0744)
+Verifier of SUR-BLIND (session_01KtpBbP72ZnZgkeS9uLr2en), unit NA 1.05.03 inv. 373 scan 0744 left page; account 2, LANE FAMILY,
+8 Oct 2026, 23:03-23:1x UTC by date -u. Claim audited: "dotted ij in m|n at 0.833 (A) / 0.722 (B) vs C1 p99 0.700 / 0.688 (n_al 18
+each), unit PASS; undotted y reads m|n at the same rate." No reading is claimed, so no N-class and no depth change.
+
+1. **Reproduction.** `score.py --check` exit 0 (4 min CPU): score.out is current and byte-identical. PREREG (09cd01ce8) predates the
+   passes and score.py, as stated.
+2. **Fresh seeds** (`passes/inv373_0744_blind_sb/vsur0744_seeds.py`, output `vsur0744_seeds.out`; run 1 only, seeds 1-6, 1,000
+   draws each). Pass A: share 0.833 against p99 0.684-0.722, PASS 6/6. Pass B: share 0.722 against p99 0.688-0.722, **FAIL on seeds 1
+   and 6** (p99 = 0.722 = share, and the gate is strict >), PASS 4/6. With n_al 18 one token is 0.056, and B's margin at seed 744 is
+   one token step of the null's own seed scatter. **Pass B's PASS is within seed noise; the unit PASS does not hold under fresh seeds.**
+3. **Is C1 the right null?** It can differ from the target on this statistic (a derangement changes which letters face the tagged
+   tokens), so it is not a non-test by construction. But C1's share mean is 0.43-0.46, not the m|n base rate of Dutch letters (about
+   0.13). The DP maximises matches, and `dp_align.py` already gives both `[ij]` and `y` the table value `[y-fam]` = {m, n}, so the
+   alignment steers tagged tokens onto any nearby m or n under real and shuffled gloss alike. C1 measures that, which is correct, but
+   it makes the statistic a weak one: a 0.72-0.83 share means "these tokens sit where m/n letters are within the DP band", not a
+   letter-level reading.
+4. **Dot or class?** `dp_align.py` ALIAS maps `[ij]`, `y` and `ÿ` to one code `[y-fam]` before scoring, so the gate cannot ask
+   whether the dot carries anything: the "before" and "after" runs score the same tokens identically (scan A unchanged by
+   construction). The control that can vary on the dot axis is a dot-label permutation within the y-family. Done here on the
+   score.out counts (exact two-sided Fisher, dotted vs undotted agree/total): A 15/18 vs 40/49, p = 1.0; B 13/18 vs 39/49, p = 0.52.
+   **No dot effect.** The unit tests the y-family class, not the dotted form. This matches SUR-BLIND's own Limits line and 0746.
+
+**Ruling.** What 0744 left licenses: the y-family glyph (dotted or not, both readers) aligns with gloss m|n on a held-out page well
+above a shuffled-gloss control (A robustly, B at the null's edge), consistent with the `[y-fam]` = {m, n} class already in the DP
+tables. It does **not** license a key value for dotted `[ij]` as distinct from y, any change to key.tsv, key_period_*.tsv or
+conflicts.tsv, or a token grade change: the brief's condition (gate holds on both passes with fresh seeds) is not met. R15-SURV2's
+"`i j` = [ij] stays M" stands. Transcription convention: readers keep marking dots as seen (`[ij]` vs `y`), descriptive only; scoring
+may pool them as `[y-fam]`; no transcription file is merged. Logged, not resolved: on 4.VEL 2039/2061 the readers' `y` is the inv. 86
+sheet's tall v (D, key_period_codes*.tsv, M); in the inv. 373 letters the y-family aligns m|n. These may be two look-alike signs in
+two hands; an image comparison, not a vote, settles it.
+
+**What 0744 right and 0745 must show** (pre-register before reading):
+(a) class gate as now, but with p99 taken over 10,000 draws (or the maximum p99 over >= 5 seeds) and the share at least two token steps
+above it on each pass;
+(b) a dot-specific gate: dotted vs undotted m|n share, against a dot-label permutation within the y-family (1,000 draws); only a
+dotted share above that permutation's p95 on both passes would make `[ij]` a separate value worth a key row;
+(c) if (b) fails again, the next unit drops the dot question and pools dotted+undotted as `[y-fam]` for an m-vs-n split test instead
+(letters' n vs m, with the same derangement control), since m|n is the open question the class cannot answer.
+Not changed: key files, conflicts.tsv, transcriptions, token grades, N-class (decode --check not needed). Rule 10: report only.
