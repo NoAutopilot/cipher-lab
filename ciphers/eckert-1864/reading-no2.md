@@ -969,5 +969,11 @@ Code-word tokens: H 9.
 
 Code-word tokens: H 93, C 4, I 3.
 
-Totals over the 91 entries: H 2188, C 81, I 76, M 2.
+**N2-EA | Page 196 | 9088 | 8 Oct 1864 2 PM, Beckwith at Fort Monroe, signed Geo K Leet (LS5-R1d; row 9088/1; first tried as No. 1, read as No. 2; image-read)**
+
+Beckwith Ft. Monroe Wash Oct 8. 1864 [Saturday] for [Lieut Gen U.S. Grant] ---- [2] [Scout (-ed, -ing)]'s who returned from Spot Savannah County this mag [Report] [Follow (-ed, -ing) [#]]ing ---- [Cars] have not been running [In the] Central [Rail-road] since last [Saturday] ---- [Report]'s say that the [Transportation] is all being used to Convey [Government] property from [Richmond] to [Danville] preparatory to the [Evacuation] of [Richmond] ---- The impression prevails that [Richmond] cannot beheld a a month longer ---- Every [Available] [Men] is being sent to [Richmond] to aid in its [Defend (-ed, -ing) [#]]'s ---- All old [Men] & boys who are able to [Carry] muskets are put in the trenches windy G E O K L Eat a age
+
+Code-word tokens: H 24.
+
+Totals over the 92 entries: H 2212, C 81, I 76, M 2.
 <!-- decode.py: derived block ends -->

@@ -1,0 +1,88 @@
+X1 tokens=64 no1=30(0.47) no2=29(0.45) no9=9(0.14)
+  no1: H28 C0 I0 M0
+    [Washington] {date: Aug 11} {time: 3 PM} For Lieut [Colonel] T S Bowers A. A G [Maj Genl U.S. Grant] Staff [City Point] Copy to [P. H. Sheriden] [Harpers Ferry] [.] [Scout (-ed, -ing)] just arrived [Report]'s [Follow (-ed, -ing)] [.] The old man whom he met at {time: 11 PM} last night left [Gordonsville] yesterday morning and [Report]'s that [Longstreet]'s satin [Corps] was passing [North] through Staunton night before last [.] could give no [Information] as to number but was certain the whole [Corps] was [Movement
+  no2: H26 C0 I0 M0
+    [Maj Gen B. F. Butler] Aug [Acton [sic, ? Action]] {time: 3.30 PM} For Lieut [Cars] T S Bowers A. A G [Imboden] [Station] [Cairo] Copy to [Schenck R C] [Florence] Unity [Threaten (-ed, -ing)] just arrived [South]'s [Evacuate (-ed, -ing) [#]] [1000] The old man whom he met at {time: 11.30 PM} last night left [Decatur] yesterday morning and [South]'s that [Weldon]'s satin [Corps] was [Fire]ing [Open (-ed, -ing)] through Staunton night before last [1000] could give no [Joined] as to number but was certain the whole [C
+  no9: H9 C0 I0 M0
+    Grapes Aug Flag {time: 5 PM} For Lieut Paradise T S Bowers A. A G John Staff [W. S. Sherman] Copy to Nabob Camel Unity Weld just arrived [Equipage]'s Ramble [Movement] The old man whom he met at {time: 9.30 PM} last night left China yesterday morning and [Equipage]'s that Hotels satin Pelton was passing Tremble through Staunton night before last [Movement] could give no Sutton as to number but was certain the whole Pelham was Tableting to join Early and Hump [Movement] Peach other wolf are expected Whelp morning [T
+  no1shuf: H28 C0 I0 M0
+    [Colonel] {date: Aug 11} {time: 3 PM} For Lieut [Transport (-ed, -ing)] T S Bowers A. A G [Diversion] Staff [Gunboat] Copy to [Pemberton] [Killed] [.] [Bridge (-ed, -ing)] just arrived [Telegraph (-ed, -ing)]'s [Petersburg] [.] The old man whom he met at {time: 11 PM} last night left [West Point] yesterday morning and [Camp]'s that [Louisa C.H.]'s satin [Fortifications] was passing [Columbus] through Staunton night before last [.] could give no [Maj Genl Mower] as to number but was certain the whole [Repulsed] was 
+  no2shuf: H24 C2 I0 M0
+    [Follow (-ed, -ing) [#]] Aug [Repulse] {time: 3.30 PM} For Lieut [Enemy] T S Bowers A. A G [Communicate (-ed, -ing)] [West] [Hatch J P] Copy to [Maine] [President U.S.] Unity [Artillery] just arrived [Washington]'s [Cincinnati] [1000] The old man whom he met at {time: 11.30 PM} last night left [Gain] yesterday morning and [Lieut Gen U.S. Grant]'s that [Herron F J]'s satin [Madison] was [Pieces]ing [Secretary of Navy] through Staunton night before last [1000] could give no [Order] as to number but was certain the wh
+X2 tokens=28 no1=13(0.46) no2=13(0.46) no9=2(0.07)
+  no1: H13 C0 I0 M0
+    {time: 8.30 PM} Augusta [16] for [P. H. Sheriden] [.] The discharge [Of the] [Ohio] Militia leaves [West] [Virginia] much exposed to raids & there are no [Troops] that canby sent for its [Defense (-ed, -ing)] except from your [Army]  {tail: [signed] [General-in-Chief] Did you get my letter}
+  no2: H13 C0 I0 M0
+    {time: 8.30 PM} [Crook S [?]] Gas for [Schenck R C] [1000] The discharge [Pursue (-ed, -ing)] [Coosa] Militia leaves [Drove in our Pickets] [Clinch] much exposed to raids & there are no [Unite (-ed, -ing)] that canby sent for its [Destroy (-ed, -ing)] except from your [Washburn C C] [Surrounding] [Hardee] Did you get my letter
+  no9: H2 C0 I0 M0
+    {time: 4.30 PM} Augusta Gas for Nabob [Movement] The discharge torch Abner Militia leaves Wilson Alba much exposed to raids & there are no whistle that canby sent for its quack except from your oyster webster Jordan Did you get my letter
+  no1shuf: H13 C0 I0 M0
+    {time: 8.30 PM} Augusta [16] for [Pemberton] [.] The discharge [Goldsboro] [From the] Militia leaves [Infantry] [Arkansas] much exposed to raids & there are no [Winchester] that canby sent for its [Longstreet] except from your [Delaware]  {tail: [signed] [Volunteer] Did you get my letter}
+  no2shuf: H13 C0 I0 M0
+    {time: 8.30 PM} [Communicate (-ed, -ing) [#]] Gas for [Maine] [1000] The discharge [Unite (-ed, -ing)] [Army] Militia leaves [Smith] [Varnells " [ditto = Station]] much exposed to raids & there are no [Quarter[?] Master General] that canby sent for its [Secretary of State] except from your [Hood] [Tuckers Station] [Pigeon Mountain] Did you get my letter
+X3 tokens=23 no1=12(0.52) no2=6(0.26) no9=0(0.00)
+  no1: H10 C0 I0 M0
+    For [P. H. Sheriden] [.] [100] [Has, or have been, reinforced] rife less with [20000] rounds of [Ammunition] for them will be sent you at once to [Harpers Ferry] pos I doubt if a [100] men are sufficient for the work they are undertaking Joke Augur
+  no2: H4 C0 I0 M0
+    For [Schenck R C] unity Plug prolong [Information] rife less with harrow purple rounds of [Farragut D G] for them will be sent you at once to [Florence] pos I doubt if a publish men are sufficient for the work they are undertaking Joke Augur
+  no9: H0 C0 I0 M0
+    For Nabob unity Plug prolong Spencer rife less with harrow purple rounds of olive for them will be sent you at once to Camel pos I doubt if a publish men are sufficient for the work they are undertaking Joke Augur
+  no1shuf: H10 C0 I0 M0
+    For [Pemberton] [.] [100] [Elizabeth] rife less with [20000] rounds of [Petersburg] for them will be sent you at once to [Killed] pos I doubt if a [100] men are sufficient for the work they are undertaking Joke Augur
+  no2shuf: H4 C0 I0 M0
+    For [Maine] unity Plug prolong [Organize (-ed, -ing)] rife less with harrow purple rounds of [Tennessee] for them will be sent you at once to [President U.S.] pos I doubt if a publish men are sufficient for the work they are undertaking Joke Augur
+X4 tokens=36 no1=18(0.50) no2=20(0.56) no9=5(0.14)
+  no1: H17 C0 I0 M0
+    {time: 8.30 PM} for [General] Peck [.] Your [Telegraph (-ed, -ing)] respecting the [Rebel] plot to seize the sound [Steam]ers has been recd & [Communicate (-ed, -ing)]d tooth [Secretary of Navy] [.] If this [Department] can render any service tooth owners or shippers [Towards] [Guard (-ed, -ing)]ing or [Arms]ing their vessels it wilby cheerfully given & you may so [Information] them  {tail: [signed] [Secretary of War] wheres French [Maj Gen Geo. H. Thomas]}
+  no2: H19 C0 I0 M0
+    {time: 8.30 PM} for [Helping] Peck [1000] Your [Valley] [Mask]ing the [Rail-road] plot to seize the sound [Transportation]ers has been recd & [Capture (-ed, -ing) [#]]d tooth [McHenry] [Sunday] If this [Deserter] can render any service tooth owners or shippers [Troops] [Guard (-ed, -ing)]ing or [Thomas Geo H]ing their vessels it wilby cheerfully given & you may so [Join] them [Surrendered] [Delaware] wheres [10] [H W Halleck]
+  no9: H5 C0 I0 M0
+    {time: 4.30 PM} for Shelter Peck [Movement] Your wreathe respecting the [Army] plot to seize the sound weaselers has been recd & plated tooth [A. E. Burnside] [Movement] If this quadrant can render any service tooth owners or shippers whack saddling or niggarding their vessels it wilby cheerfully given & you may so sweden them walrus Brutus wheres French lady
+  no1shuf: H16 C1 I0 M0
+    {time: 8.30 PM} for [Movement] Peck [.] Your [Bowling Green] respecting the [Scout (-ed, -ing)] plot to seize the sound [Bragg]ers has been recd & [Fort Valley]d tooth [Our lines] [.] If this [Knoxville] can render any service tooth owners or shippers [Equip] [Orange C.H.]ing or [Wilmington]ing their vessels it wilby cheerfully given & you may so [Our scouts report] them  {tail: [signed] [Movement] wheres French [Maj. Gen. David Hunter]}
+  no2shuf: H19 C0 I0 M0
+    {time: 8.30 PM} for [Tar R] Peck [1000] Your [Colonel] [Washington]ing the [Hotly [?]] plot to seize the sound [Front]ers has been recd & [Joining]d tooth [Tunnel Hill] [Carter S.P.] If this [Knoxville] can render any service tooth owners or shippers [Attempt] [Transportation]ing or [Milledgeville]ing their vessels it wilby cheerfully given & you may so [Willich A] them [Captain] [Drove in our Pickets] wheres [10] [Bellefonte]
+X5 tokens=51 no1=18(0.35) no2=15(0.29) no9=2(0.04)
+  no1: H16 C0 I0 M0
+    [Washington] {time: 12} Sunday for [Maj Genl U.S. Grant] ---- Wolves who returned from Stafford & spotSylvania Counties this mng [Report] [Follow (-ed, -ing)]ing ---- a week ago yesterday [1] [Division] of [Infantry] generally supposed to be Kershaws was sent by rail from [Richmond] to [Gordonsville] & last tuesday it was marched from [Gordonsville] to [Join (-ed, -ing)] Earl ---- Some [Cavalry] probably a [Brigade] has gone from [Richmond] to Early's support recently ---- Officer in charge of wolves says the above
+  no2: H14 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 12.30 AM} Sunday for [Jeff Davis] ---- Wolves who returned from Stafford & spotSylvania Counties this mng [South] [Evacuate (-ed, -ing) [#]]ing ---- a week ago yesterday plug [Danger] of [Junction] generally supposed to be Kershaws was sent by rail from [Mobile] to [Decatur] & last tuesday it was marched from [Decatur] to [Move (-ed, -ing)] Earl ---- Some [Battery] probably a [As soon as] has gone from [Mobile] to Early's support recently ---- Officer in charge of wolves says the above
+  no9: H2 C0 I0 M0
+    Grapes {time: 11 AM} Sunday for Japan ---- Wolves who returned from Stafford & spotSylvania Counties this mng [Equipage] rambling ---- a week ago yesterday plug Quincy of Sulphur generally supposed to be Kershaws was sent by rail from Galway to Catawba & last tuesday it was marched from China to Swindle Earl ---- Some pacific probably a panther has gone from garden to Early's support recently ---- Officer in charge of wolves says the above came to him from plank sources Geo Kaleet
+  no1shuf: H16 C0 I0 M0
+    [Colonel] {time: 12} Sunday for [Grand Junction] ---- Wolves who returned from Stafford & spotSylvania Counties this mng [Telegraph (-ed, -ing)] [Petersburg]ing ---- a week ago yesterday [1] [New Hampshire] of [Maj Gen W. T. Sherman] generally supposed to be Kershaws was sent by rail from [Tuscaloosa] to [Maj Genl U.S. Grant] & last tuesday it was marched from [West Point] to [Defeat (-ed, -ing)] Earl ---- Some [Lebanon] probably a [Junction] has gone from [Scatter (-ed, -ing)] to Early's support recently ---- Offi
+  no2shuf: H13 C1 I0 M0
+    [Follow (-ed, -ing) [#]] {time: 12.30 AM} Sunday for [Valley] ---- Wolves who returned from Stafford & spotSylvania Counties this mng [Washington] [Cincinnati]ing ---- a week ago yesterday plug [Milledgeville] of [depots] generally supposed to be Kershaws was sent by rail from [Stanley D S] to [Coosawattie " [ditto = River]] & last tuesday it was marched from [Gain] to [Battery] Earl ---- Some [Effect (-ed, -ing) [#]] probably a [Meridian] has gone from [Beatty J] to Early's support recently ---- Officer in charge 
+X6 tokens=68 no1=26(0.38) no2=26(0.38) no9=5(0.07)
+  no1: H22 C0 I0 M0
+    Beckwith Ft. Monroe Wash Oct 8. 1864  {tail: [signed] for [Knoxville] ---- Brooks [Surround (-ed, -ing)]'s who returned from Spot Savannah County this mag [Resist] [Fall (ing Fell) back]ing ---- [Colonel] have not been running [In the meantime] Central [Rebel] since last [signed] ---- [Resist]'s say that the [Steam] is all being used to Convey [Gap] property from [Weldon] to [Galveston] preparatory to the [Front] of [Weldon] ---- The impression prevails that [Weldon] cannot beheld a a month longer ---- Every [At th
+  no2: H24 C0 I0 M0
+    Beckwith Ft. Monroe Wash Oct 8. 1864 [Saturday] for [Lieut Gen U.S. Grant] ---- [2] [Scout (-ed, -ing)]'s who returned from Spot Savannah County this mag [Report] [Follow (-ed, -ing) [#]]ing ---- [Cars] have not been running [In the] Central [Rail-road] since last [Saturday] ---- [Report]'s say that the [Transportation] is all being used to Convey [Government] property from [Richmond] to [Danville] preparatory to the [Evacuation] of [Richmond] ---- The impression prevails that [Richmond] cannot beheld a a month lon
+  no9: H5 C0 I0 M0
+    Beckwith Ft. Monroe Wash Oct 8. 1864 [Troops] for Chart ---- Brooks wardens who returned from Spot Savannah County this mag watson rewarding ---- paradise have not been running [Regiment] Central [Army] since last [Troops] ---- Watsons say that the weasel is all being used to Convey [Pickets] property from Horace to Clyde preparatory to the reptile of Harvey ---- The impression prevails that Horace cannot beheld a a month longer ---- Every optic Summer is being sent to Horace to aid in its Questions ---- All old Su
+  no1shuf: H22 C0 I0 M0
+    Beckwith Ft. Monroe Wash Oct 8. 1864  {tail: [signed] for [Guard (-ed, -ing)] ---- Brooks [Humboldt]'s who returned from Spot Savannah County this mag [Favorable] [Deserter]ing ---- [Transport (-ed, -ing)] have not been running [Wounding] Central [Front] since last [signed] ---- [Favorable]'s say that the [Bragg] is all being used to Convey [General-in-Chief] property from [South Carolina] to [Road] preparatory to the [Florida] of [Report] ---- The impression prevails that [South Carolina] cannot beheld a a month l
+  no2shuf: H24 C0 I0 M0
+    Beckwith Ft. Monroe Wash Oct 8. 1864 [Hardee] for [Rhodes] ---- [2] [Maj Genl H W Halleck]'s who returned from Spot Savannah County this mag [Tuscaloosa] [Of the]ing ---- [Enemy] have not been running [Destroy (-ed, -ing)] Central [Killed] since last [Hardee] ---- [Tuscaloosa]'s say that the [Front] is all being used to Convey [McPherson J B] property from [Culpepper] to [Decherd] preparatory to the [Maj Gen J G Foster] of [Missouri] ---- The impression prevails that [Culpepper] cannot beheld a a month longer ---- 
+X7 tokens=28 no1=14(0.50) no2=13(0.46) no9=6(0.21)
+  no1: H14 C0 I0 M0
+    [Washington] {time: 12} {date: Nov 4} for [Brigadier General] Steven son [.] It is [Report]ed that Rosser is at Lees burg with [Brigade] [.] [General] [P. H. Sheriden] should be in formed of this and dis positions made to prevent him from [Cross (-ed, -ing)]ing the [River]  {tail: [signed] Jen guess its [Longstreet]}
+  no2: H13 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 12.30 AM} Nov Penny for [Ammunition] Steven son [1000] It is [South]ed that Rosser is at Lees burg with [As soon as] [Sunday] [Harbor] [Schenck R C] should be in formed of this and dis positions made to prevent him from [Cross (-ed, -ing) [#]]ing the [Subsistence] [100] Jen guess its [Weldon]
+  no9: H6 C0 I0 M0
+    Growl {time: 11 AM} Nov Penny for [Yorktown] Steven son [Movement] It is [Equipage]ed that Rosser is at Lees burg with Panther [Movement] Shelby Nabob should be in formed of this and dis positions made to prevent him from Pocketing the Windsor [Troops] Jen guess its hoax
+  no1shuf: H14 C0 I0 M0
+    [Gen J. M. Palmer] {time: 12} {date: Nov 4} for [Holly Springs] Steven son [.] It is [Telegraph (-ed, -ing)]ed that Rosser is at Lees burg with [Junction] [.] [Danger] [Pemberton] should be in formed of this and dis positions made to prevent him from [B. G. Farragut]ing the [Gen J. T. Boyle]  {tail: [signed] Jen guess its [Available]}
+  no2shuf: H13 C0 I0 M0
+    [Aquia Creek] {time: 12.30 AM} Nov Penny for [Reverse] Steven son [1000] It is [Washington]ed that Rosser is at Lees burg with [Meridian] [Carter S.P.] [Secretary of War] [Maine] should be in formed of this and dis positions made to prevent him from [-]ing the [Presence] [100] Jen guess its [Big Black]
+X8 tokens=29 no1=21(0.72) no2=16(0.55) no9=5(0.17)
+  no1: H20 C0 I0 M0
+    [Washington] {date: May 21} {time: 10 AM} For [Brigadier General]  {tail: [signed] [Nashville] [.] All [Indiana] Militia have been ordered to [Nashville] [.] the [100] & [33] [Regiment] [Left] [Indianapolis] yesterday [,] It is expected that more will soon follow [signed] [General-in-Chief] slept}
+  no2: H15 C0 I0 M0
+    [Maj Gen B. F. Butler] May Harrow Plunge {time: 10 AM} For [Ammunition] [Surrounding] [General in Chief] Unity All [Elizabeth] Militia have been ordered to [General in Chief] [1000] the Publish & [Column] Pebble [Skirmish (-ed, -ing)] [Necessary] [Hanover] yesterday [Cavalry] It is expected that more will soon follow [Saturday] [Hill] slept
+  no9: H5 C0 I0 M0
+    Grapes May Harrow Plunge {time: 7 AM} For [Yorktown] Webster Empress Unity All Alden Militia have been ordered to Embrace [Movement] the Publish & Laugh Pebble Whip [Transportation] Climax yesterday Pekin It is expected that more will soon follow [Troops] Jacob slept
+  no1shuf: H20 C0 I0 M0
+    [Colonel] {date: May 21} {time: 10 AM} For [Offensive]  {tail: [signed] [Captain] [.] All [Maj Gen J. G. Parke] Militia have been ordered to [Jones] [.] the [100] & [33] [Encountered enemy in strong force] [Selma] [Virginia] yesterday [,] It is expected that more will soon follow [signed] [Army] slept}
+  no2shuf: H15 C0 I0 M0
+    [Follow (-ed, -ing) [#]] May Harrow Plunge {time: 10 AM} For [Defeat (-ed, -ing)] [Tuckers Station] [Will be] Unity All [Cross (-ed, -ing) [#]] Militia have been ordered to [Corinth] [1000] the Publish & [Movement] Pebble [Rail-road] [Williamsburg] [Jasper] yesterday [Jasper] It is expected that more will soon follow [Hardee] [Huntsville] slept

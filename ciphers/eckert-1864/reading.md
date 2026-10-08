@@ -719,5 +719,47 @@ Code-word tokens: H 6.
 
 Code-word tokens: H 18.
 
-Totals over the 98 entries: H 1454, C 14, I 0, M 0.
+**E120 | Page 151 | 9043 | 11 Aug 1864 3 PM, S. H. Beckwith (to Lieut. Col. T. S. Bowers, Grant's staff) (LS5-R1d, 8 Oct 2026; row 9043/0; image-read)**
+
+[Washington] {date: Aug 11} {time: 3 PM} For Lieut [Colonel] T S Bowers A. A G [Maj Genl U.S. Grant] Staff [City Point] Copy to [P. H. Sheriden] [Harpers Ferry] [.] [Scout (-ed, -ing)] just arrived [Report]'s [Follow (-ed, -ing)] [.] The old man whom he met at {time: 11 PM} last night left [Gordonsville] yesterday morning and [Report]'s that [Longstreet]'s satin [Corps] was passing [North] through Staunton night before last [.] could give no [Information] as to number but was certain the whole [Corps] was [Movement]ing to join Early and Hump [.] [2] other [Scout (-ed, -ing)] are expected [Tomorrow] morning  {tail: [signed] Geo K Leit}
+
+Code-word tokens: H 28.
+
+**E121 | Page 157 | 9049 | 16 Aug 1864 8.30 PM, McCaine (LS5-R1d; row 9049/1; image-read)**
+
+{time: 8.30 PM} Augusta [16] for [P. H. Sheriden] [.] The discharge [Of the] [Ohio] Militia leaves [West] [Virginia] much exposed to raids & there are no [Troops] that canby sent for its [Defense (-ed, -ing)] except from your [Army]  {tail: [signed] [General-in-Chief] Did you get my letter}
+
+Code-word tokens: H 13.
+
+**E122 | Page 161 | 9053 | 21 Aug 1864 4 PM, McCaine at Winchester, signed Augur (LS5-R1d; row 9053/2; image-read)**
+
+For [P. H. Sheriden] [.] [100] [Has, or have been, reinforced] rife less with [20000] rounds of [Ammunition] for them will be sent you at once to [Harpers Ferry] pos I doubt if a [100] men are sufficient for the work they are undertaking Joke Augur
+
+Code-word tokens: H 10.
+
+**E123 | Page 170 | 9062 | 3 Sept 1864 8.30 PM, to Peck (LS5-R1d; row 9062/2; image-read)**
+
+{time: 8.30 PM} for [General] Peck [.] Your [Telegraph (-ed, -ing)] respecting the [Rebel] plot to seize the sound [Steam]ers has been recd & [Communicate (-ed, -ing)]d tooth [Secretary of Navy] [.] If this [Department] can render any service tooth owners or shippers [Towards] [Guard (-ed, -ing)]ing or [Arms]ing their vessels it wilby cheerfully given & you may so [Information] them  {tail: [signed] [Secretary of War] wheres French [Maj Gen Geo. H. Thomas]}
+
+Code-word tokens: H 17.
+
+**E124 | Page 194 | 9086 | 2 Oct 1864 12 m, Beckwith at City Point, signed Geo K Leet (LS5-R1d; row 9086/1; image-read)**
+
+[Washington] {time: 12} Sunday for [Maj Genl U.S. Grant] ---- Wolves who returned from Stafford & spotSylvania Counties this mng [Report] [Follow (-ed, -ing)]ing ---- a week ago yesterday [1] [Division] of [Infantry] generally supposed to be Kershaws was sent by rail from [Richmond] to [Gordonsville] & last tuesday it was marched from [Gordonsville] to [Join (-ed, -ing)] Earl ---- Some [Cavalry] probably a [Brigade] has gone from [Richmond] to Early's support recently ---- Officer in charge of wolves says the above came to him from [2] sources Geo Kaleet
+
+Code-word tokens: H 16.
+
+**E125 | Page 221 | 9113 | 4 Nov 1864, H. F. Schermerhorn(?), to Stevenson (LS5-R1d; row 9113/1; image-read)**
+
+[Washington] {time: 12} {date: Nov 4} for [Brigadier General] Steven son [.] It is [Report]ed that Rosser is at Lees burg with [Brigade] [.] [General] [P. H. Sheriden] should be in formed of this and dis positions made to prevent him from [Cross (-ed, -ing)]ing the [River]  {tail: [signed] Jen guess its [Longstreet]}
+
+Code-word tokens: H 14.
+
+**E126 | Page 75 | 8967 | 21 May 1864 10 AM, J. C. Van Duzer, Nashville (LS5-R1d; row 8967/2; image-read)**
+
+[Washington] {date: May 21} {time: 10 AM} For [Brigadier General]  {tail: [signed] [Nashville] [.] All [Indiana] Militia have been ordered to [Nashville] [.] the [100] & [33] [Regiment] [Left] [Indianapolis] yesterday [,] It is expected that more will soon follow [signed] [General-in-Chief] slept}
+
+Code-word tokens: H 20.
+
+Totals over the 105 entries: H 1572, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
