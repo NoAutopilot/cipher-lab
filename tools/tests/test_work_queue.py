@@ -109,6 +109,60 @@ def test_check_accepts_pause_row():
     assert not w.check(rows)  # paused / no brief only for PAUSE- rows
 
 
+# Blast mode (owner, 8 Oct 2026)
+def _blast(acct='account-1', lanes=2, until='2026-10-06 00:00'):
+    r = row('BLAST-' + acct, acct, 'active 2026-10-05 10:00'); r['brief'] = '-'; r['note'] = f'lanes={lanes} until={until}'
+    return r
+
+
+def test_blast_fills_with_one_lane_open_when_n_is_2():
+    rows = [_blast(), row('LANE-A', 'account-1', 'claimed s1 2026-10-05 17:00')]
+    new, why = w.autofill(rows, 'account-1', T)
+    assert why == 'filled' and new['note'].startswith('auto-fill: blast 2 of 2')
+
+
+def test_blast_counts_named_lane_rows_and_stops_at_n():
+    rows = [_blast(), row('LANE-A', 'account-1', 'claimed s1 2026-10-05 17:00'),
+            row('ST-LEDGER-9', 'account-1', 'claimed s2 2026-10-05 17:30', box='480')]
+    new, why = w.autofill(rows, 'account-1', T)
+    assert new is None and why == 'blast: 2 of 2 lanes open'
+
+
+def test_blast_worker_rows_do_not_count_as_lanes():
+    rows = [_blast(lanes=1), row('AUD2-X', 'account-1', 'claimed s3 2026-10-05 17:30', box='95')]
+    new, why = w.autofill(rows, 'account-1', T)
+    assert why == 'filled'
+
+
+def test_blast_skips_12h_hold_but_waits_15_min_after_close():
+    rows = [_blast(lanes=1), row('DEFAULT-account-1-20261005-0800', 'account-1', 'done 2026-10-05 17:50', added='2026-10-05 08:00')]
+    assert w.autofill(rows, 'account-1', T)[1] == 'blast: lane closed < 15 min ago'
+    rows[1]['status'] = 'done 2026-10-05 17:40'
+    assert w.autofill(rows, 'account-1', T)[1] == 'filled'
+
+
+def test_blast_never_overrides_queued_or_pause():
+    rows = [_blast(), row('J', 'account-1', 'queued')]
+    assert w.autofill(rows, 'account-1', T) == (None, 'queued row exists')
+    p = row('PAUSE-account-1', 'account-1', 'paused 2026-10-05 12:00'); p['brief'] = '-'
+    assert w.autofill([_blast(), p], 'account-1', T) == (None, 'paused')
+
+
+def test_blast_expired_returns_normal_rules():
+    rows = [_blast(until='2026-10-05 12:00'), row('DEFAULT-account-1-20261005-0800', 'account-1', 'done 2026-10-05 17:00', added='2026-10-05 08:00')]
+    new, why = w.autofill(rows, 'account-1', T)
+    assert new is None and why.startswith('default lane < 12 h')
+
+
+def test_blast_for_other_account_does_not_apply():
+    rows = [_blast(acct='account-2'), row('LANE-A', 'account-1', 'claimed s1 2026-10-05 17:00')]
+    assert w.autofill(rows, 'account-1', T)[1].startswith('lane open')
+
+
+def test_check_accepts_blast_row():
+    assert w.check([_blast()])
+
+
 if __name__ == '__main__':
     for k, f in list(globals().items()):
         if k.startswith('test_'): f()

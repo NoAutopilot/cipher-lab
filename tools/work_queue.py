@@ -24,6 +24,14 @@ Catches: a dispatcher firing that finds nothing queued and leaves the account id
 owner restarting both accounts by hand). Must NOT fill: when a queued row exists, a lane closed < 60 min ago, a lane
 is still claimed, PAUSE is set, a default lane was added < 12 h ago, or for account B when only B's queue is empty and
 A was asked (tests tools/tests/test_work_queue.py). --next without --account never fills.
+Blast mode (owner, 8 Oct 2026: "5 - 8 running on all accts, with refills"). A BLAST-<A> row (status `active <UTC>`, note
+`lanes=N until=YYYY-MM-DD HH:MM`, written by `--blast A --lanes N --until "..."`, ended by `--unblast A`) changes rules (2), (3)
+and (5) for account A while `until` is in the future: auto-fill adds a DEFAULT row whenever fewer than N lane rows are open
+(a lane here is LANE-*, DEFAULT-*, or any claimed row with box_min >= 240, i.e. a named lane-orchestrator row), the
+after-close wait is 15 min instead of 60, and the 12-h DEFAULT hold does not apply. Rules (1) and (4) still hold: a queued row
+is spawned first and PAUSE wins. Catches: an account idling for hours between lanes while the owner wants it full. Must NOT
+fill: N lanes already open, a queued row exists, PAUSE set, BLAST expired (then the normal rules return), another account's
+BLAST row (tests tools/tests/test_work_queue.py). Each lane runs ~6 live workers (default-lane.md), so N=1 is ~7 sessions.
 Every write is whole-file read-modify-write; rows are never deleted, only their status cell changes.
 """
 import argparse, csv, os, sys, datetime
@@ -40,12 +48,50 @@ def parse_ts(date, hm):
     try: return datetime.datetime.strptime(date + " " + hm.replace("x", "9").replace("X", "9")[:5], "%Y-%m-%d %H:%M")
     except (ValueError, TypeError): return None
 def is_lane(r): return r["job_id"].startswith(("LANE-", "DEFAULT-"))
+def is_lane_wide(r):
+    """Blast-mode lane count: LANE-/DEFAULT- rows plus named lane-orchestrator rows (box >= 240 min)."""
+    if is_lane(r): return True
+    try: return int(r["box_min"]) >= 240 and not r["job_id"].startswith(("PAUSE-", "BLAST-"))
+    except ValueError: return False
+def blast(rows, A, t):
+    """(lanes, until) for an active, unexpired BLAST-<A> row, else None."""
+    for r in rows:
+        if r["job_id"] != "BLAST-" + A or not r["status"].startswith("active"): continue
+        kv = dict(x.split("=", 1) for x in r["note"].replace(";", " ").split() if "=" in x)
+        try: n = int(kv.get("lanes", "1"))
+        except ValueError: n = 1
+        ud = r["note"].split("until=", 1)[1][:16] if "until=" in r["note"] else ""
+        until = parse_ts(*ud.split()) if len(ud.split()) == 2 else None
+        if until is None or t >= until: return None
+        return n, until
+    return None
 def autofill(rows, account, t=None):
     """Return the DEFAULT row to append for `account`, or None with the reason; never mutates rows."""
     t = t or datetime.datetime.utcnow(); A = canon(account)
     mine = [r for r in rows if canon(r["account"]) == A]
     if any(r["status"].startswith("queued") for r in mine): return None, "queued row exists"
     if any(r["job_id"] == "PAUSE-" + A and r["status"].startswith("paused") for r in mine): return None, "paused"
+    b = blast(mine, A, t)
+    if b:
+        n, until = b; open_n = 0; last = None
+        for r in mine:
+            if not is_lane_wide(r): continue
+            s = r["status"].split()
+            if s and s[0] == "claimed":
+                ts = parse_ts(*s[2:4]) if len(s) >= 4 else None
+                try: box = int(r["box_min"])
+                except ValueError: box = 600
+                if ts is None or (t - ts).total_seconds() / 60 < box + 360: open_n += 1
+            elif s and s[0] in ("done", "bounced") and len(s) >= 3:
+                ts = parse_ts(s[1], s[2])
+                if ts and (last is None or ts > last): last = ts
+        if open_n >= n: return None, f"blast: {open_n} of {n} lanes open"
+        if last and (t - last).total_seconds() < 900: return None, "blast: lane closed < 15 min ago"
+        jid = f"DEFAULT-{A}-{t.strftime('%Y%m%d-%H%M')}"
+        if any(r["job_id"] == jid for r in rows): return None, "id exists"
+        return {"job_id": jid, "account": A, "brief": DEFAULT_BRIEF, "model": "Opus 5.5", "cap_usd": "60", "box_min": "600",
+                "status": "queued", "added": t.strftime("%Y-%m-%d %H:%M"),
+                "note": f"auto-fill: blast {open_n + 1} of {n} until {until.strftime('%Y-%m-%d %H:%M')}"}, "filled"
     last_close = None
     for r in mine:
         if not is_lane(r): continue
@@ -90,10 +136,10 @@ def check(rows):
         if r["job_id"] in seen: errs.append("duplicate job_id")
         seen.add(r["job_id"])
         if r["account"] not in ACCOUNTS: errs.append("account")
-        pause = r["job_id"].startswith("PAUSE-")
+        pause = r["job_id"].startswith(("PAUSE-", "BLAST-"))
         if not pause and not os.path.exists(os.path.join(os.path.dirname(HERE), r["brief"])): errs.append("brief missing: " + r["brief"])
         s = r["status"].split()
-        if not s or s[0] not in ("queued", "claimed", "done", "bounced") + (("paused",) if pause else ()): errs.append("status")
+        if not s or s[0] not in ("queued", "claimed", "done", "bounced") + (("paused", "active") if pause else ()): errs.append("status")
         if s and s[0] == "claimed" and len(s) < 2: errs.append("claimed needs a session id")
         try: float(r["cap_usd"]); int(r["box_min"])
         except ValueError: errs.append("cap/box")
@@ -111,7 +157,22 @@ def main():
     ap.add_argument("--brief"); ap.add_argument("--model"); ap.add_argument("--cap"); ap.add_argument("--box")
     ap.add_argument("--no-autofill", action="store_true", help="--next: never append a DEFAULT row")
     ap.add_argument("--pause", choices=ACCOUNTS); ap.add_argument("--resume", choices=ACCOUNTS)
+    ap.add_argument("--blast", choices=ACCOUNTS, help="keep --lanes N lane rows open for this account until --until")
+    ap.add_argument("--lanes", type=int, default=1); ap.add_argument("--until", help='"YYYY-MM-DD HH:MM" UTC')
+    ap.add_argument("--unblast", choices=ACCOUNTS)
     a = ap.parse_args(); rows = load()
+    if a.blast or a.unblast:
+        A = canon(a.blast or a.unblast); jid = "BLAST-" + A
+        r = next((r for r in rows if r["job_id"] == jid), None)
+        if a.unblast:
+            if r is None: sys.exit(f"no {jid} row")
+            r["status"] = f"done {now()}"; save(rows); print(jid, r["status"]); return
+        if not a.until or parse_ts(*a.until.split()[:2]) is None: sys.exit('--blast needs --until "YYYY-MM-DD HH:MM"')
+        if r is None:
+            r = {"job_id": jid, "account": A, "brief": "-", "model": "-", "cap_usd": "0", "box_min": "0",
+                 "status": "", "added": now(), "note": ""}; rows.append(r)
+        r["status"] = f"active {now()}"; r["note"] = f"lanes={a.lanes} until={a.until}" + (f"; {a.note}" if a.note else "")
+        save(rows); print(jid, r["status"], r["note"]); return
     if a.check: sys.exit(0 if check(rows) else 1)
     if a.next:
         if a.account and not a.no_autofill:
