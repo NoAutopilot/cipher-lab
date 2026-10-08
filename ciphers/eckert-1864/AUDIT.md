@@ -3205,3 +3205,124 @@ plaintext is published by the holding archive: **N1** (the E70 shape of AUD2-LS-
 - Rows: status.json results[179] grade N1, text known, audit_status "two audits"; SO-ECKERT-E74 withdrawn (N1: second opinions are queued
   only at N3 or better). Requests: Huntington 14, loc.gov about 21 (1 challenge, 3 answered 429; stopped), be-api 14, archive.org 3, Google
   Books 5, OpenAlex 2, Semantic Scholar 2.
+
+## AUDIT (LS3-V18b)
+
+Verifier LS3-V18b (account 2, LANE ST-LEDGER-3), 8 Oct 2026, 10:41-11:1x UTC by `date -u`; a separate session from every reader (LS3-R18
+read these entries), not protecting its conclusions. Scope: LS3-R18 part 2, **E79, E80, E81, E82, E83, E84** (ciphertext.txt, Cipher No. 1,
+key.md = mssEC 41). Nothing decoded beyond re-running the committed scripts and looking code words up in the three key files. Key source for
+every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+
+### 1. Re-derivation, which book, image check
+- `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check`, `ls3_r18_control.py --check`: exit 0 each.
+- **Which book.** Every body code word of the six was looked up in key.md / key-no2.md / key-no9.md (scratch loop): under No. 2 they read
+  Failure, Battled, Rations, Cairo, Subsistence, Train, Union, Baton Rouge, Valley, Secretary of Treasury (E79), Menace, Shackleford, Louisa C H,
+  Missouri, Gun, McHenry, Slocum (E80), Casualties, Cars, Steele, Killing, Pending, Macon, Rifle Pits (E81-E84): no sentence; key-no9.md has no
+  row for any of them. **All six are No. 1.** Second statistic, by hand: the reader's script tests the day word only on April headers (it
+  prints "date n/n/n" for all six, a non-test, not a failure); read by hand, the day numeral agrees with the header under No. 1 and has no row
+  under No. 2 (except Plaster = Failure) or No. 9: E79 Plaster = 5 (Aug 5), E80 Plug = 1 (Oct 1), E81 Pension = 4 (Oct 4), E83 Harrow Padlock =
+  20 + 9 = 29 (Nov 29); E82, E84 carry no day word. This gives E80, E81, E83 (no header hour, time test NT) a book test they lacked.
+- **Clause recount** (the reader's were one-reader hand counts): under No. 1 every body and address code word of the six reads sensibly in
+  place (E79 14/14, E80 15/15, E81 4/4, E82 6/6 with Grapes as the blind word below, E83 10/10, E84 6/6), one more than the reader's figure
+  for each; under No. 2 the meanings listed above make no clause in any entry (a word or two fits locally, e.g. Train, Gun), and No. 9 has
+  no rows. The direction and size of the reader's gap stand; the exact No. 2 counts are not re-derived here.
+- **Image.** 2400 px IIIF images of 9812, 9855, 9858, 9866, 9901, 9928 (6 requests, scratch, not committed); line crops cut here:
+  `python3 tools/iiif_lines.py --image $S/img/p9855.jpg --out $S/crops/9855 --prefix p9855 --region 150,1550,2100,700 --lines-per-crop 2 --max-width 2400`
+  (7 lines, 4 crops), likewise 9812 `--region 220,990,2050,640` (7 lines) and 9901 `--region 180,230,2050,700` (7 lines), plus 9812
+  `--region 220,1700,2050,900` for the sibling below. Word for word, header to tail: **E80** (the longest, 15 code words), **E79**, **E83**: all
+  three agree with ciphertext.txt on every word. E80 line 5 has "for t[h]" with the h unfinished before "the"; read "for the" as transcribed.
+  LS3-R18 graded no token M or I in these six; nothing else to re-read.
+
+### 2. E80 located in print (Navy Official Records, searched first as the brief asks)
+| ID | printed at | how confirmed |
+|---|---|---|
+| E80 | **ORN ser. I vol. 26 p.575** ([Telegram.] Navy Department, Washington, October 1, 1864. Gideon Welles to Rear-Admiral D. D. Porter, Commanding Mississippi Squadron, Cairo) | IA `officialrecordso0026unse` djvu (scratch), normalized regex: "Send two light-draft ironclads, the best you have, to Rear-Admiral Farragut in Mobile Bay. In an emergency requiring it, call upon him for the Tennessee and gunboats. Answer. Gideon Welles, Secretary of the Navy" -- our reading word for word ([Light], [2], [B. G. Farragut], [Mobile], [Tennessee], [Gunboat], [Secretary of Navy], [D. D. Porter], [Cairo]); page from the running heads (574/576 either side) |
+
+Same page: Porter's reply from Mound City, 6 p.m., quotes it as received "from Hon. E. M. Stanton, Secretary of War" and says "The above
+dispatch is not understood, nor can I act on the order", and Porter's next telegram offers the Milwaukee and Kickapoo. The ledger's signature
+Burton = Secretary of Navy (H) agrees with the print, not with Porter's attribution. The ledger's tail "Nabob has done well" ([P. H. Sheriden]
+has done well) is not in the print: the clerk's filler words after the signer (key.md section 1) or an unprinted line; not counted either way.
+ORN I/21 (West Gulf, Mobile Bay) was also searched: context only (Farragut's light-draft ironclads, Aug-Dec 1864), not this telegram.
+
+### 3. The sibling question (brief): 9858 Horner, "Send all weaselers that can possibly be spared ..."
+**Not the same telegram as E81, and unrelated by date to E83 and E84.** The Horner entry on 9858 (public transcription: "John Horner N. Y.
+(No 1) Washn Oct 4th 1864 | Jennie pension for Tappan vain fleet vincent Frog | Send all weaselers that can possibly be spared to Growl immy
+Answer & give names of wayworners you send By order Bender walrus Geo D Wise Paradise & Vinton") is a parallel order of the same day to Van
+Vliet ("vain fleet") at New York, by order of the Quartermaster General, signed by Col. George D. Wise; E81 goes to Colonel Webster at Fort
+Monroe, signed D. H. Rucker. The Horner text is itself coded at the same places (weaselers, Growl, wayworners), so it is not a clear
+key to E81 and supports no C-grade alignment. E83 (29 Nov) and E84 (3 Jan 1865) share only the formula ("send ... that can be spared; answer
+and give the names"); their own leaves carry other siblings: 9928 has, the same day, Fox's order to Berrien (Comdt Naval Station) to turn
+over launches and large boats, and a No. 3 entry to Beckwith at City Point on "surplus sea going [vessels]" (context; Grant to Berrien of the
+same evening, OR I/46 pt 2, prints the Army side).
+**E79's sibling matters more**: on 9812, directly below E79 and at the same hour (12 pm, 5 Aug 1864), Meigs's order to Col. Crosman at
+Philadelphia is in clear (read here on the crop and in the public transcription): "Charter & send to City Point James river to report to Genl
+Ingalls any good steamers fit for transportation of troops on the rivers & bays period Report by telegraph the names & capacity of those you
+engage. It is desired to have from Phila & New York in addition to steamers already in service the means of moving ten thousand men signed
+M C Meigs Qr Mr". It checks seven E79 code values non-statistically (Black = City Point, Weasel = Steam, Windsor = River, Whig =
+Transportation, Whisky = Troops, Wrangle = Telegraph, Bender = Qr Master Genl U.S.), and it puts E79's substance in public view.
+
+### 4. Search log, entries not located (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| ORN / OR by date and correspondent, +/- 3 days (IA djvu, whole volume, normalized regex; scratch, not committed) | ORN I/26, I/21, I/11, I/10; OR I/40 pt 3 and I/42 pt 2 (Aug 1864, E79), I/42 pt 3 and I/43 pt 2 (Oct-Nov 1864, E81-E83), I/46 pt 2 (Jan 1865, E84), ser. III vol. 4 (`warofrebellionco0004genf`); phrases from the reading and the clear siblings ("fit for service on the bay", "available in Baltimore", "can possibly be spared from your", "description and marks of boxes", "by what route they have gone", "every available steamer and propeller", "surplus vessels fit for sea", "not required at your place", "means of moving ten thousand men", "capacity of those you engage"), and Webster/Rucker/Ingalls/Baker/Crosman by date | **E80 found** (section 2); no other entry. Context: Webster as chief quartermaster at Fort Monroe in OR I/42 pt 3 and I/46 pt 2 (several telegrams, none of these) |
+| Holding archive: Huntington CONTENTdm `dmGetItemInfo` for 9812, 9855, 9858, 9866, 9901, 9928 (`transc` field, volunteer transcription) | all six | **the public transcription carries every entry's clear words** (the D2V-E74 test); see section 5 for what that leaves to the key |
+| 1864-65 press (loc.gov Chronicling America JSON, `dates=` window) | "description and marks" 13 Oct-15 Nov; "by what route they have gone" 13 Oct-30 Nov; "light draft iron clads" Farragut Oct 1864; steamers "City Point" charter Baltimore 5-12 Aug 1864 | 0, 0, 0, 4 pages (Evening Star and Daily National Republican 12 Aug, Burlington Free Press 12 Aug, Caledonian 5 Aug: titles only, not read) |
+| IA full text (be-api fts) | the six body phrases above, "capacity of those you engage", "means of moving ten thousand men" | nothing relevant ("by what route they have gone" = an unrelated 17th-c. text) |
+| Google Books API (key, country=US) | 10 phrase queries (5 answered 503, one retry each, 3 answered on retry) | nothing relevant |
+| OpenAlex, Semantic Scholar, CORE (keys) | one query per entry E79, E81-E84 each (S2 answered 429 on three, not retried) | nothing relevant |
+| JSTOR | 4 rows appended to JSTOR-QUEUE.tsv for E83, E84, families (i) and (ii) | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (QMG telegrams sent, Rucker's and Ingalls's letterbooks), RG 45; Meigs's annual report for 1865; the Baltimore and Norfolk press page by page; HathiTrust full text; Welles diary (not needed after the ORN hit); the Zooniverse Talk boards | unread |
+
+### 5. Grades and classification (key `period` for all)
+Grades after the look-ups: H as the decoder gives, with two corrections. **E82**: the first word "Grapes" is the blind word of the No. 1 route
+pages (key.md section 1: "Grapes" = 9 columns), not [Washington]; it stays a book token, the decoder's gloss is wrong. The signature "In san it
+he" is **Insanity = C. A. Dana** (key.md p.16 l.6, a phonetic split; I), so E82 is signed by the Assistant Secretary of War, which LS3-R18 did
+not read. **E81**: "Weaslers" = Weasel + -ers = **steamers** (I, the clerk's spelling; E79 and E83 write "weaseler(s)", read H), left unread by the
+reader; "potato" is a tail group. `depth_pct` = H / (H + I + M) over the message's code words (tail groups excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E79 QMG office to Capt. Thomas, Baltimore, 5 Aug 1864 12 pm | **N2** | substance known: Meigs's clear order of the same hour to Crosman, Philadelphia, same leaf, in the Huntington's public transcription of 9812 | D3 | 100 (14 H of 14) | image, all 7 lines; external: the clear sibling checks 7 code values (section 3) |
+| E80 Welles to Porter, Cairo, 1 Oct 1864 | **N1** | known (ORN I/26 p.575) | D4 | 100 (15 H of 15) | image, all 7 lines; word for word with the print |
+| E81 Rucker to Col. Webster, Fort Monroe, 4 Oct 1864 2 PM | **N1** | known: the body is clear in the Huntington's public transcription of 9858; the key adds only Colonel, Quartermaster, 4, signed, and steamers | D1 | 80 (4 H of 5; Weaslers I) | public transcription read against ciphertext.txt; no clause from the key |
+| E82 Dana to Col. L. C. Baker, New York, 13 Oct 1864 3 pm | **N1** | known: the body is clear in the public transcription of 9866; the key adds Colonel, New York, report, and the signer Dana | D1 | 85.7 (6 H of 7; Insanity I) | as E81 |
+| E83 Rucker to Col. R. C. Webster, Fort Monroe, 29 Nov 1864 | **N3** (weak) | unknown: half the body is clear in the public transcription; the key supplies available, steamer, in the, post | D2 | 100 (10 H of 10) | image, all 7 lines |
+| E84 Ingalls to Col. Webster, Fort Monroe, 3 Jan 1865 1.30 PM | **N3** (weak) | unknown: the body is clear in the public transcription except "to [Baltimore] to [report] to the Chief [Quartermaster]" | D2 | 100 (6 H of 6) | public transcription and decode; image not cropped |
+
+- **The N1 line for mostly-clear entries (D2V-E74 precedent)**: an entry whose body is in clear in the holding archive's public transcription
+  except at most one code word is N1 (E81, E82); with three or more body code words carrying the content it is N3 at most, and weak (E83, E84).
+  A second audit may draw that line differently; it changes the class of E83/E84, not of E81/E82.
+- **D2 for E83 and E84, D1 for E81 and E82.** The depth bar's code clause, read as body words (address, date, time and signature excluded, as
+  for E74): Weasel = Steam reads sensibly in E79, E83 and the 9858 Horner sibling, three independent contexts; Baptism = Baltimore in E79
+  (to the Baltimore operator) and E84. Each depth sentence below depends on those values. E81's only body word is I-graded; E82's only body
+  word (Wick = Report) carries no specific content, so neither has a clause. E79 is D3 (100% H, image, and a non-statistical check from the clear
+  sibling); E80 is D4 (100% H, word for word with ORN, re-derived here with `--check`).
+- **N3 (E83, E84)**: no prior plaintext or decipherment located after the logged search. Not N4: NARA RG 92, Meigs's report, the press page by
+  page and HathiTrust are unread, JSTOR pending. Safe sentence (each): "Read at grade H with the period Cipher No. 1 book; most of the message is
+  in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official
+  Records (Army and Navy, by date and correspondent), the 1864-65 press through Chronicling America, Internet Archive full text, Google Books,
+  OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never printed", "unknown telegram", any word
+  implying the clear text was not available.
+- **E79 at N2, E80-E82 at N1**: not counted. E80 is our independent re-decipherment of a printed telegram.
+- Depth sentences (D2+, written from the reading, checked against the derived block): **E79** "At noon on 5 Aug 1864 the Quartermaster
+  General's office tells Captain Thomas, quartermaster at Baltimore, to charter and send to City Point at once all steamers available in
+  Baltimore that are fit for service on the bay and rivers in carrying troops, and to report their names by telegraph." **E80** "On 1 Oct 1864
+  the Secretary of the Navy orders Porter at Cairo to send his two best light-draft ironclads to Farragut in Mobile Bay, and in an emergency to
+  call on him for the Tennessee and gunboats." **E83** "On 29 Nov 1864 Rucker asks Colonel R. C. Webster, quartermaster at Fort Monroe, to send
+  to Washington immediately every available steamer and propeller in service at his post that can be spared, and to answer at once with their
+  names." **E84** "At 1.30 PM on 3 Jan 1865 Ingalls asks Colonel Webster, quartermaster at Fort Monroe, to send any surplus seagoing vessels not
+  needed there to Baltimore, to report to the chief quartermaster."
+
+### 6. Postmortem
+- LS3-R18 left ORN unsearched (its own note); the first ORN volume searched holds E80 word for word. Navy traffic goes to ORN before reading
+  (LS-V7's lesson, repeated).
+- The reader's print filter covered OR and editions but not the holding archive's own transcription; for E81 and E82 that record already
+  shows the text (D2V-E74's lesson, repeated).
+- Corrections to LS3-R18's section (a note is appended there): E80 is printed (ORN I/26 p.575); E82's "Grapes" is the blind word, not
+  [Washington], and "In san it he" = Insanity = C. A. Dana is the signer; E81's "Weaslers" = steamers (I); the control script's date column
+  tests April headers only, so "date n/n/n" in part 2 is a non-test; the 9858 sibling is a parallel order to New York, not E81's telegram.
+- Not changed (no decoding in a verifier's brief): ciphertext.txt / reading.md. Next, for a reader, ~$0.2: mark Grapes as the blind word in
+  E82, add Insanity for "In san it he", a variant note for "Weaslers".
+- Rows: status.json one result row each for E83 and E84 (N3), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E83,
+  SO-ECKERT-E84 with prompts in second-opinions/; JSTOR-QUEUE.tsv 4 rows. Requests: hdl.huntington.org 6 images + 6 item JSONs; archive.org 11
+  djvu files + 8 fts; googleapis 15; loc.gov 4; OpenAlex 5, S2 5, CORE 5; all >= 1.2 s apart.

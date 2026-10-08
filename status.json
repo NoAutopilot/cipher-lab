@@ -6281,6 +6281,88 @@
       "depth_sentence": "On 16 Mar 1864 Benham reports to Humphreys that the advance bridge train of canvas pontoons ordered on 29 February will be ready that day, with 50 chess on each chess wagon though they can be reduced to 42, and the additional wagons sent if still needed.",
       "depth_check": "fresh rule-7 re-derivation (LS-V7); M lines checked on the image (LS-V7); external: Humphreys' printed order of 29 Feb 1864 (OR I/33 pp.616-617: advance guard train, canvas pontoons, 42 chesses per chess-wagon) matches the date [29], [Advance] and [42]",
       "depth_note": "15 H of 15 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS3-V18b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS3-V18b verifier (account 2)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864-65: Rucker to Colonel R. C. Webster, Fort Monroe, 29 Nov 1864, every available steamer and propeller that can be spared (E83)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; most of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (Army and Navy, by date and correspondent), the 1864-65 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92, Meigs's 1865 report, the press page by page and HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS3-V18b); weak N3: most of the body is clear in the Huntington's public transcription, the key supplies available, steamer, in the, post (and the address, date and hour); SO-ECKERT-E83 queued",
+      "phrases": [
+        "Huntington mssEC 18 p.235, pointer 9901, E83"
+      ],
+      "document_id": "Huntington mssEC 18 p.235, pointer 9901, E83",
+      "documents": [
+        "Huntington mssEC 18 p.235, pointer 9901, E83"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "10 H of 10 code words",
+      "unresolved_spans": "none",
+      "reading_version": "LS3-R18 8 Oct 2026 (reading.md), grades as checked in AUDIT (LS3-V18b) section 5",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS3-V18b)' section 5",
+      "depth_sentence": "On 29 Nov 1864 Rucker asks Colonel R. C. Webster, quartermaster at Fort Monroe, to send to Washington immediately every available steamer and propeller in service at his post that can be spared, and to answer at once with their names.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, LS3-V18b); image checked, all 7 lines (LS3-V18b); code clause: Weasel = Steam reads in E79, E83 and the 9858 Horner sibling; no external check",
+      "depth_note": "10 H of 10 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS3-V18b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS3-V18b verifier (account 2)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864-65: Ingalls to Colonel Webster, Fort Monroe, 3 Jan 1865, surplus seagoing vessels to Baltimore (E84)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; most of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (Army and Navy, by date and correspondent), the 1864-65 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92, Meigs's 1865 report, the press page by page and HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS3-V18b); weak N3: most of the body is clear in the Huntington's public transcription, the key supplies Baltimore, report, Quartermaster (and the address and hour); SO-ECKERT-E84 queued",
+      "phrases": [
+        "Huntington mssEC 18 p.262, pointer 9928, E84"
+      ],
+      "document_id": "Huntington mssEC 18 p.262, pointer 9928, E84",
+      "documents": [
+        "Huntington mssEC 18 p.262, pointer 9928, E84"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "6 H of 6 code words",
+      "unresolved_spans": "none",
+      "reading_version": "LS3-R18 8 Oct 2026 (reading.md), grades as checked in AUDIT (LS3-V18b) section 5",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS3-V18b)' section 5",
+      "depth_sentence": "At 1.30 PM on 3 Jan 1865 Ingalls asks Colonel Webster, quartermaster at Fort Monroe, to send any surplus seagoing vessels not needed there to Baltimore, to report to the chief quartermaster.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, LS3-V18b); public transcription read against ciphertext.txt, image not cropped; code clause: Baptism = Baltimore reads in E79 and E84; no external check",
+      "depth_note": "6 H of 6 code words"
     }
   ],
   "lanes": [

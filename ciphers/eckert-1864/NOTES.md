@@ -1526,3 +1526,10 @@ Hand clause counts, chosen book vs the other two: E86 9/9 vs 3/8 (book 2), 1/3 (
 Not claimed here: E85 and E87 (left in the files with the header flag, excluded from ls3_r18_readings.md). The three entries above stay with A3V3-ECK18's print match; nothing was added to them.
 Judge (rule 7), the thirteen readings of ls3_r18_readings.md: `FAIL language: score=-1.146, null_p99=-2.115, real_p05=-0.849, real_median=-0.811, mode=both, N=4058` (short bracketed readings; the en judge is of unknown reliability). Regeneration: `decode.py`, `decode_no9.py`, `decode_no2.py` and `ls3_r18_control.py --check` exit 0.
 Corrections to the volunteer text from the image: 9943 "milly" (not "wilby"); 10031 operator "Capt Sam Brook Lvl"; 9948 Horner "Convenience" tail "very fine day This". 0 subagents; hdl.huntington.org 8 requests (vol18 + 7 leaves), archive.org 10.
+
+Note (LS3-V18b, first verifier, 8 Oct 2026; AUDIT.md "## AUDIT (LS3-V18b)"): E80 is printed word for word in ORN ser. I vol. 26 p.575
+(Welles to Porter, 1 Oct 1864) -- N1; E81 and E82 are clear text in the Huntington's public transcription apart from one body word -- N1;
+E79's substance is in Meigs's clear order of the same hour to Crosman on the same leaf -- N2, D3; E83 and E84 weak N3 at D2. Corrections:
+E82 "Grapes" is the blind word, not [Washington], and "In san it he" = Insanity = C. A. Dana (signer); E81 "Weaslers" = steamers (I);
+`ls3_r18_control.py`'s date column tests April headers only (part 2's "date n/n/n" is a non-test; by hand the day numerals agree under
+No. 1 for E79, E80, E81, E83); the 9858 Horner sibling is a parallel order to Van Vliet at New York, not E81's telegram.
