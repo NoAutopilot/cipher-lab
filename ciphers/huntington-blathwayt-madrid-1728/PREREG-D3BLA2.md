@@ -41,3 +41,14 @@ this N", not a FAIL of the rule (rule 3, third-attempt clause applies to a furth
 
 ## Amendment 1 (21:5x UTC by date -u, before any crop was cut or read, nothing scored)
 The first d3bla2_universe.py (commit 3b8babd6, pushed 21:44 UTC; the header time "21:5x" above was typed ahead of the clock, the clock read 21:44) keyed passA/passB by raw (line,pos). That is wrong for BLA188_p3 (pass A is one line ahead from L10; see settle.fix_a) and wherever B has gaps against A. The script now uses settle.py's aligned columns (fix_a + Needleman-Wunsch), as ciphertext.tsv does: a candidate is an aligned, glossed column where A's conf is not H or A and B groups differ ('-' counts). 115 candidates, still > 40, same seed 20261008, same sampling call over the sorted list; `d3bla2_universe.tsv` replaced (now with A_group, A_conf, B_group columns, so the single-reader scores come from the same file). Nothing else in this file changes. The first sample is discarded unread.
+
+## Amendment 2 (21:4x-21:5x UTC by date -u, before any blind pass ran, nothing scored)
+- Crops: `tools/iiif_lines.py --image images/<page>.jpg --out <scratch>/crops --prefix <page> --debug` was run on all nine pages with sampled
+  columns (BLA185_p5, 188_p3/p4/p5, 190_p5, 190_p7, 194_p1/p2, 179_p6): it found 0 or 1 lines on every page (the 1200 px copies have
+  a ~72 px row pitch the profile detector cannot separate), so, as D3-BLA did, crops are cut with PIL: six overlapping bands per page,
+  x 170-1100, 360 px tall, step 240, 2x upscale, kept out of the repo. The subagent is told to transcribe only numeral rows fully
+  inside a band; I merge overlapping bands and align the blind rows to A's lines with settle.align (no y-position is needed).
+- The brief caps the blind pass at 4 subagent calls, one page each. Pages are taken by number of sampled columns, ties alphabetical:
+  BLA188_p3 (11), BLA188_p5 (9), BLA190_p7 (7), BLA188_p4 (4, tied with BLA194_p1 at 4). So the scored set is the sampled columns on
+  those four pages (31 of the 40); the 9 on BLA185_p5, 190_p5, 194_p1, 194_p2, 179_p6 are not read (counted as "not covered").
+- Reconciliation = one more unit by me, on the same bands, before any score is printed.
