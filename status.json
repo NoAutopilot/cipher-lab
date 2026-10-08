@@ -6898,9 +6898,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS4-R1b)'"
+        "AUDIT.md '## AUDIT (FV-LS4-R1b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 85.7,
@@ -6916,7 +6917,7 @@
       "title": "Eckert 1864: C. A. Dana to Baltimore, 5 Nov 1864 11 PM, Colonel William Hamilton reported as a Rebel agent in Baltimore (E96)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 9116; press of the day, Dana papers, NARA RG 107, OR II/8 and JSTOR unread",
+      "gap": "N3 (weak): frame clear in the public transcription of 9116; press of the day (loc.gov Cloudflare-challenged 8 Oct 2026, V1-LS4B), Dana papers, NARA RG 107, OR II/8 and JSTOR unread; second audit V1-LS4B 8 Oct 2026: OR II/8, I/41 pt 4, I/43 pt 2, II/7 by date and G3 phrase re-search found nothing",
       "phrases": [
         "Huntington mssEC 19 p.222, pointer 9116, E96"
       ],
@@ -6939,9 +6940,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS4-R1b)'"
+        "AUDIT.md '## AUDIT (FV-LS4-R1b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 100.0,
@@ -6957,7 +6959,7 @@
       "title": "Eckert 1864: C. A. Dana to Rosecrans, St. Louis, 7 Nov 1864, no personal description of the Rebel agent at St. Louis (E97)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 9119; press of the day, Dana papers, OR II/8 and JSTOR unread",
+      "gap": "N3 (weak): frame clear in the public transcription of 9119; press of the day (loc.gov Cloudflare-challenged 8 Oct 2026, V1-LS4B), Dana papers, OR II/8 and JSTOR unread; second audit V1-LS4B 8 Oct 2026: OR II/8, I/41 pt 4, I/43 pt 2, II/7 by date and G3 phrase re-search found nothing",
       "phrases": [
         "Huntington mssEC 19 p.225, pointer 9119, E97"
       ],
@@ -6980,9 +6982,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS4-R1b)'"
+        "AUDIT.md '## AUDIT (FV-LS4-R1b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 87.5,
@@ -6995,10 +6998,10 @@
       "decode_status": "Partially decrypted",
       "date": "8 Oct 2026",
       "kind": "reading",
-      "title": "Eckert 1864: Quartermaster General to Capt. Vinton, Baltimore, 5 Apr 1864 3.30 PM, send the Nelly Pentz to Annapolis to carry troops to Hilton Head (E100)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
-      "gap": "N3 (weak): about two thirds clear in the public transcription of 8921; NARA RG 92, the press of the day and JSTOR unread",
+      "title": "Eckert 1864: Quartermaster General to Capt. Thomas, Quartermaster, Baltimore, 5 Apr 1864 3.30 PM, send the Nelly Pentz to Annapolis to carry colored troops to Hilton Head (E100)",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book: the Quartermaster General's 3.30 PM order of 5 Apr 1864 to Baltimore to send the Nelly Pentz to Annapolis for colored troops bound for Hilton Head and General Gillmore. Its substance is printed in Meigs's parallel orders of the same afternoon (Official Records ser. I vol. 35 pt 2 pp.36-37), and the ship's voyage with the First Michigan Colored in the Supplement to the Official Records.",
+      "gap": "N2 (V1-LS4B, 8 Oct 2026): substance in OR I/35 pt 2 pp.36-37 (Meigs to Van Vliet 2.30 p.m. and to Biggs 3 p.m., 5 Apr 1864: steamers to Annapolis for colored troops to Port Royal/Hilton Head, fully coaled and watered, after the storm, orders from Gillmore; Halleck's memorandum) and Supplement to the OR (1998) / Hepburn, Private No More (2023): the Nelly Pentz carried the 1st Michigan Colored from Annapolis to Hilton Head, 15-19 Apr; not counted; SO-ECKERT-E100 withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.29, pointer 8921, E100"
       ],
@@ -7007,15 +7010,16 @@
         "Huntington mssEC 19 p.29, pointer 8921, E100"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "14 H of 16 code words (Nelly, colored/whiskey M)",
       "unresolved_spans": "none",
       "reading_version": "LS4-R1b 8 Oct 2026 (reading.md), grades as checked in AUDIT (FV-LS4-R1b) section 4",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R1b)' section 4",
-      "depth_sentence": "At 3.30 PM on 5 Apr 1864 the Quartermaster General orders Captain Vinton at Baltimore to send the steamer Nelly Pentz, fully coaled and watered, to Annapolis to carry troops to Hilton Head and on to wherever General Gillmore directs, leaving as soon as the storm is over.",
-      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS4-R1b); image checked, all 10 lines, the longest (FV-LS4-R1b); code clause: Whimper = Transport reads in E7 and E100, Banditti = Baltimore in E92 and E100; no external check",
-      "depth_note": "14 H of 16 code words (Nelly, colored/whiskey M)"
+      "depth_sentence": "At 3.30 PM on 5 Apr 1864 the Quartermaster General orders Captain Thomas, Quartermaster at Baltimore, to send the steamer Nelly Pentz, fully coaled and watered, to Annapolis to carry colored troops to Hilton Head and on to wherever General Gillmore directs, leaving as soon as the storm is over.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS4-R1b); image checked, all 10 lines, the longest (FV-LS4-R1b); code clause: Whimper = Transport reads in E7 and E100, Banditti = Baltimore in E92 and E100; external (V1-LS4B): Meigs's parallel orders of the same afternoon (OR I/35 pt 2 pp.36-37) and the Nelly Pentz's voyage with the 1st Michigan Colored (Supplement to the OR; Hepburn 2023) -- depth kept D2, raise not ruled",
+      "depth_note": "14 H of 16 code words (Nelly, colored/whiskey M)",
+      "text": "known"
     }
   ],
   "lanes": [

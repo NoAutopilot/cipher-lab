@@ -4280,3 +4280,74 @@ the prior-work checklist (.claude/briefs/prior-work-step.md) was run by hand, on
   SO-ECKERT-E97, SO-ECKERT-E100 with prompts in second-opinions/; JSTOR-QUEUE.tsv 6 rows (families i and ii). Requests: hdl.huntington.org
   10 CONTENTdm searches (one dropped connection, not retried) + 3 images, >= 3.2 s apart; archive.org 6 djvu (one a wrong guess, vol. 39 pt 3,
   discarded) + 1 advancedsearch; be-api 29 (10 answered 502, each retried at most once); www.loc.gov 2. No 429/403.
+
+## AUDIT 2 (second adversarial, V1-LS4B): E96, E97, E100
+
+Verifier V1-LS4B (account 3, LANE-VERIFY-1, session_012upnvEA9F1KVJsMuKK16D1), 8 Oct 2026, 17:35-17:5x UTC by `date -u`. A separate session
+from the reader (LS4-R1b, account 1) and the first auditor (FV-LS4-R1b, account 2); not protecting their conclusions. Nothing decoded;
+`decode.py --check` exit 0 (rule 7). The first audit's image check (word for word, all three) is not repeated. Key source for all three:
+`period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md (kept or lowered, never raised). `tools/prior_work.py` does not
+exist; checks run by hand and logged below.
+
+### Prior-work checks 3-5 (search-family log; families the first audit left unread run first)
+| # | family / route | query (as run) | result |
+|---|---|---|---|
+| 1 | our own work (AUDIT.md, status.json, SO queue, ROOM.md last 30 lines) | grep E96/E97/E100, 9116/9119/8921 | only LS4-R1b, FV-LS4-R1b and this job |
+| 3 | Huntington public transcription, same-leaf and same-week siblings (sources/mssEC19 p9113-p9120, p9124, p8920, p8921; read in full) | -- | No clear copy of E96, E97 or E100. **Context for E96/E97**: they belong to the War Department's arrest orders of Sat 5 Nov 1864 ("directs the arrest at [place] on Monday morning next of the following named Rebel agents and the seizure of their papers", Dana): 9114/2 to Davenport, Cincinnati; 9115/1 to Horner, New York; 9115/2 to Fowler, Memphis (each with personal descriptions, in clear on the volunteer page); E97 (9119/2) is the answer to St. Louis that no description exists. **9117/2 (Dana to Sampson, Baltimore, 7 Nov 11.30 AM)**: "A Rebel agent calling himself Dr Hamilton passed through Elmira on his way [south] on Thursday last; he is [n] feet [n] inches high with light hair, moustache & whiskers & fine teeth ... catch him" -- a follow-up to E96 in the same ledger, itself partly in code (not read here: do not decode); not a print. 9120/1 (Dana to Sampson, 10 Nov): before proceeding against Bernal the British consul [at Baltimore] or his wife, consult [the Secretary of State?] -- context only, code words unread. |
+| 4/5 | Press of the day: loc.gov Chronicling America JSON (`dates=` form, as V1-LS4A) | "Hamilton rebel agent Baltimore" 5-15 Nov 1864; "Nelly Pentz" 3-12 Apr 1864 | **unreachable**: HTTP 403 Cloudflare "Just a moment" on both (1 try each); chroniclingamerica.loc.gov answered 308 to the same Cloudflare host (1 try). Not retried (good-citizen rule). |
+| 4 | OR ser. II vol. 8 (IA `warofrebellion0208rootrich` djvu; first fetch 500, one retry 200) | "William Hamilton", "Hamilton, William", "Col. Hamilton", "personal description" | 0 hits |
+| 4 | OR by date, local grep (normalized): II/7 (`warofrebellion0207rootrich`, cached), I/43 pt 2 (`warofrebellion432unit`, cached), I/41 pt 4 (`warofrebellion014104rootrich`, 1 request) | "Monday morning next", "rebel agent(s)", "Dudley Harris", "Bernal", "British consul", "personal description", C. A. Dana Nov 1864 | **the 5 Nov arrest orders are not printed** in any of the three; I/41 pt 4 has Dana (N. J. T.) and Rosecrans traffic of 2-12 Nov, none about a Rebel agent at St. Louis |
+| 4 | **OR I/35 pt 2 (`warofrebellion352unit`, cached), by date for E100** | "transport colored troops", "fully coaled", "Hilton Head" + "Annapolis", "Pentz", "Vinton" | **pp.36-37, 5 Apr 1864**: Halleck's confidential memorandum for Meigs ("two colored regiments (1,800 men) at Annapolis to be sent to South Carolina ... Can vessels be sent with these and bring back Gillmore's command?"); **Meigs to Maj. Van Vliet, QM New York, 5 Apr 2.30 p.m.**: "Send one of them to Annapolis to transport colored troops thence to Port Royal. Prepare the rest to sail for Port Royal, fully coaled and watered, as soon as the storm is over. They will receive orders from General Gillmore on arrival."; **Meigs to Lt. Col. Biggs, Fort Monroe, 5 Apr 3 p.m.**: "Send the Spaulding to Annapolis immediately to take a colored regiment thence to Hilton Head ... should not leave the Chesapeake until the storm is over, and should have coal and water to go farther, after reaching Hilton Head, where they will report to General Gillmore for further orders." (Biggs's reply 6.30 p.m. follows.) Diffed below. |
+| 4/5 | Google Books API (key, `country=US`) | "Nelly Pentz"; "steamer Nelly Pentz" 1864; "Pentz" Annapolis "Hilton Head" 1864; "Relief, North Point and Nelly Pentz"; "North Point" Annapolis "Michigan Colored" Hilton Head; "102nd" colored "Nelly Pentz"; "Hamilton" "rebel agent in Baltimore"; "William Hamilton" "rebel agent" 1864; "personal description of the rebel agent"; "Nelly Pentz" Annapolis and "Colonel William Hamilton" Baltimore arrested 1864 (503, one retry each, the first still 503) | **Supplement to the Official Records** (Broadfoot, 1998; vol. id tHYVAQAAMAAJ, snippet, no page): a record of events "...We shipped on board of transports Relief, North Point and Nelly Pentz. April 19.- Arrived at our destination in good condition. We are at present encamped one mile from Hilton Head, South Carolina."; **S. A. R. Hepburn, *Private No More: The Civil War Letters of John Lovejoy Murray, 102nd United States Colored Infantry* (2023)** (snippets): the First Michigan Colored at Annapolis "... embarked on board three transports, North Point, Relief, and Nellie Pentz, getting under way during the night of the fifteenth", for Hilton Head and Gillmore's Department of the South. For E96/E97: 1867-68 impeachment-testimony lists and a Butler record (other Hamiltons, other dates): nothing. |
+| 5 (G3) | decoded-phrase re-search, be-api (no identifier) | "rebel agent at Saint Louis" (0), "rebel agent at St. Louis" (0), "William Hamilton" rebel agent Baltimore (3, unrelated), "Colonel William Hamilton" Baltimore 1864 (county histories), "bull-dog look" / "tavern-keeper, Brooklyn" / "Dudley Harris" / "keen dark eyes, black hair" (siblings' clear descriptions: 0 relevant), "Bernal" "British consul" Baltimore 1864 (Bonham, *British Consuls in the Confederacy*: Bernal at Baltimore, no Hamilton), "Hamilton" "rebel agent" Baltimore November 1864 (OR I/43 pt 2 index and reprints: other Hamiltons), "agents of the rebel government" arrested "November 7, 1864" and "rebel agents" arrested St. Louis "November, 1864" (Winslow, *Great Northwestern Conspiracy*; Levy, *To Die in Chicago*: Chicago, not these); restricted to `devilsgamecivilw0000cumm` (Cummings, *The Devil's Game*, a Baltimore 9 Nov 1864 hit): "Hamilton", "November 5", "personal description" -- unrelated | E96 and E97 not located; E100's own wording ("Nelly Pentz" + Baltimore + Annapolis) not located, its substance located (rows above) |
+| 5 | Scholarship: OpenAlex (key, header) | "William Hamilton rebel agent Baltimore 1864" (340), "Dana arrests rebel agents November 1864 Rosecrans St. Louis" (4) | top results unrelated (Dennison biography; 1864 election politics) |
+| -- | Not searched / unreachable | Dana papers (LOC finding aid: loc.gov is Cloudflare-challenged from here today, see above); NARA RG 92 / RG 107 (catalog.archives.gov search needs an API key not set here; no catalogue-level route); HathiTrust full text (Cloudflare); JSTOR (6 rows already queued by FV-LS4-R1b, never blocking); Supplement to the OR and Hepburn 2023 pages (snippet only, no page number) | unread |
+
+### Diffs (G3: two rare entities or numbers shared within +-3 days)
+- **E100 vs Meigs's orders of the same afternoon (OR I/35 pt 2 pp.36-37) and the 1st Michigan Colored's embarkation (Supplement to the OR; Hepburn 2023).**
+  Telegram (H, with the clear words of the Huntington page): QMG Washington 3.30 PM 5 Apr 1864, to Captain Thomas, Quartermaster, Baltimore: send the
+  Nelly Pentz, if in Baltimore, to Annapolis, fully coaled and watered, to transport colored troops to Hilton Head and thence where General Gillmore may
+  order on her reporting to him; she should leave as soon as the storm is over. Print, same sender, the same hour (2.30 and 3 p.m.): a steamer from New
+  York to Annapolis "to transport colored troops thence to Port Royal", the rest "fully coaled and watered, as soon as the storm is over", "orders from
+  General Gillmore on arrival"; the Spaulding from Fort Monroe "to Annapolis ... to take a colored regiment thence to Hilton Head ... until the storm is over
+  ... report to General Gillmore"; Halleck's memorandum the same day names the two colored regiments at Annapolis. And the outcome: the Nelly Pentz did carry
+  the First Michigan Colored from Annapolis to Hilton Head (sailed night of 15 Apr, arrived 19 Apr). Every content element of E100 -- the order, its
+  destination, its cargo, its route, its coal-and-water and storm clauses, Gillmore -- is in print except the recipient and the ship's port of departure;
+  the ship itself is in print as the one that went. **SUBSTANCE: N3 -> N2** (the E49/E54/E72 kind: a relay or parallel order of a printed instruction,
+  no prior mapping of this ciphertext to it). The print is also an independent non-statistical check on Whimper = Transport and Banditti = Baltimore, and on
+  "colored" standing in clear (reader graded it M).
+- **E96 vs the 5 Nov arrest set and 9117/2.** Shared: Dana, Rebel agents, the same day, Baltimore, a man named Hamilton (9117/2, two days later). None is
+  in print (the Huntington's own volunteer text of the siblings is public, but it is the same ledger, not a print, and 9117/2 is itself in code). **Not
+  substance: N3 (weak) kept.**
+- **E97 vs the same set.** The St. Louis arrest order and Rosecrans's request for a description were not found (OR I/41 pt 4 read by date). **N3 (weak) kept.**
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth (kept) | note |
+|---|---|---|---|---|
+| E96 Dana to Sampson (Baltimore), 5 Nov 1864 11 PM | **N3** (weak), two audits | unknown; frame clear in the public transcription of 9116 | D2 | not N4: press of the day unreachable (loc.gov Cloudflare 8 Oct 2026), Dana papers, NARA RG 107, HathiTrust, JSTOR unread |
+| E97 Dana to Rosecrans, St. Louis, 7 Nov 1864 | **N3** (weak), two audits | unknown; frame clear in the public transcription of 9119 | D2 | not N4, same reasons |
+| E100 QMG to Capt. Thomas, Quartermaster, Baltimore, 5 Apr 1864 3.30 PM | **N2** (lowered from N3) | substance known: OR I/35 pt 2 pp.36-37 (Meigs's 2.30 and 3 p.m. orders, Halleck's memorandum); Supplement to the OR (1998) and Hepburn 2023 (the Nelly Pentz carried the 1st Michigan Colored from Annapolis to Hilton Head) | D2 (an external check now exists; a raise is left to the depth-bar check, not made here) | not counted; SO-ECKERT-E100 withdrawn |
+
+- Safe sentence, E100: "Read at grade H with the period Cipher No. 1 book: the Quartermaster General's 3.30 PM order of 5 Apr 1864 to Baltimore to send the
+  Nelly Pentz to Annapolis for colored troops bound for Hilton Head and General Gillmore. Its substance is printed in Meigs's parallel orders of the same
+  afternoon (Official Records ser. I vol. 35 pt 2 pp.36-37), and the ship's voyage with the First Michigan Colored in the Supplement to the Official
+  Records." Unsafe: "first", "unpublished", "previously unknown", any claim that the content was unknown.
+- Safe sentences, E96 and E97: FV-LS4-R1b's, with "the press of the day and Dana's papers were not reachable" added. Unsafe as FV-LS4-R1b.
+- Depth sentences: E96 and E97 FV-LS4-R1b's, checked against the derived block in reading.md: true. E100's is **corrected**: the addressee is
+  "Captain Thomas, Quartermaster" -- Vinton is the code word for Quartermaster (key.md, H; the reading itself renders "for [Captain] Thomas [Quartermaster]
+  [Baltimore]"), so "Captain Vinton" in FV-LS4-R1b's table, depth sentence and the status.json title was a misreading of the code word as a name.
+  Corrected sentence: "At 3.30 PM on 5 Apr 1864 the Quartermaster General orders Captain Thomas, Quartermaster at Baltimore, to send the steamer Nelly
+  Pentz, fully coaled and watered, to Annapolis to carry colored troops to Hilton Head and on to wherever General Gillmore directs, leaving as soon as the
+  storm is over." ("colored" is in clear on the page and in the printed parallel orders; the reader's M grade on it is left as is.)
+
+### Postmortem
+- E100 fell to OR by date in the volume the first audit had in cache (I/35 pt 2): its pass grepped the ship's name and two wording fragments, which the
+  parallel orders do not share, and missed the same-afternoon Meigs orders to other ports. For a QMG movement order, read the Meigs telegrams of the same
+  day in the destination department's volume (here Dept of the South) as a block before grepping phrases: parallel orders to other ports carry the
+  substance in other words. The regimental record of events (Supplement to the OR) is a second family for ship-named orders.
+- "Capt. Vinton" (FV-LS4-R1b; status.json title and depth sentence) was a code word taken as a name; corrected in status.json here.
+- The press of the day is still unread for E96/E97: loc.gov served a Cloudflare challenge to this container (403, 8 Oct 2026 ~17:40 UTC), as V1-1862
+  logged at 16:2x; it stays a named gap, not a negative.
+- Requests: be-api.us.archive.org 20 (no errors); archive.org 4 (I/41 pt 4 djvu, II/8 djvu 500 then 200 on one retry, 1 advancedsearch); googleapis.com 15
+  (four 503s, at most one retry each); api.openalex.org 2; www.loc.gov 2 (403 Cloudflare) + chroniclingamerica.loc.gov 1 (308); hdl.huntington.org 0
+  (local copies of the transcription read). >= 1.6 s apart, one host at a time.
