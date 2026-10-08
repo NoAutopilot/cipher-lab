@@ -876,3 +876,14 @@ of both, about $3 together. Every candidate: `keyhunt/2026-10-07-KH1C.tsv`.
 
 ## Unread sibling found (SA-G, 7 Oct 2026)
 BnF Baluze 155, Gallica btv1b9001401d canvases 273-274 (pp.129-130): a symbol-cipher block ending canvas 273 and continuing at the top of 274, outside the DECODE R2751 (canvases 277-280) and R2752 (293-294) leaves. Key: key_sabran_1631.tsv candidate. Next step: transcribe and test against that key, ~USD 3. Screen only (700 px view); keyhunt/2026-10-07-SAG.tsv.
+
+## SA-G block checked (KH-CS3, 8 Oct 2026)
+One IIIF request for Baluze 155 (btv1b9001401d) canvas 273 at ',1500' (02:20 UTC 8 Oct 2026). The leaf stamp reads
+**"129"**. Nine lines of clear French ("... lors quils seront une fois commencez") lead into the cipher block. It opens
+"De ceste sorte ctscrdx̄ae āprent īh̄opñ6ln 24 18q5 lon ne / peut ecq̄ l'a izt mT 6p8spqoond(m)pqx6r4 qñxc5 6ū6 /
+ñtel francois ...". This is glyph for glyph the lower ("second copy") strip in Tomokiyo's `images/servien/servien1.png`
+panels (1)-(3) ("Deceste sorte ctscrdx̄ae āprent īh̄opñ6ln2418q5 lonne", "peut ecq̄ l'aiztmT 6p8spqoondu...", "ñtel
+francois"). **Match: inside DECODE R2750 (f.123-130) / Tomokiyo servien.htm: N0, not a sibling.** SA-G's "unread
+cipher leaf candidate" on canvases 273-274 is the second, independently enciphered copy that Tomokiyo used to recover
+the key. KEYHUNT-2026-10-07.tsv line 180 is updated to match. Canvas-to-folio note: KH1-C placed f.123-130 at canvases
+265-266, but the stamp on c273 reads 129. The stamp governs, and KH1-C's estimate was off. No transcription.
