@@ -6249,3 +6249,12 @@ borne out. Run a disk-only premise pass over its other ~40 unread/not-in-repo ro
 finding-aid tables) before the next sibling round, about 2-3.
 Lesson: a compiled sibling list is a lead list, not a premise; its "unread" came from older NOTES lines. Read each folder's latest dated
 section and AUDIT.md before briefing (the same lesson as the DEFAULT-account-4 close, 2 of 17 stale there).
+
+## LANE VIV52 handoff (session_01Vn4t25y1ZzTWd1khw4gAQn, account 1), 8 October 2026 (closed 13:0x UTC: image step blocked by Gallica)
+- Target fr16104-vivonne-spain-1572, ink 52 (fr.16104 ff.164r-168r, Vivonne to the Queen, 5 Sept 1572). Step 1 premise: no printed entry or abstract in
+  Gachard I-II, d'Ars 1884, Catherine IV/X (OCR on disk); leaves 169v-175 known (no "dechiffré" for 52); c179/c181/c183 unviewed.
+- Blocker: gallica.bnf.fr answered 403 "Sorry, you have been blocked" to every IIIF request from this container (12:50-12:52 UTC, 7 requests incl. one retry
+  after 7 min). No crops, passes, decode, control or verifier; no workers or sessions spawned; no triggers armed.
+- Next (re-brief when Gallica serves): c178-c183 at 1200 px (~$0.5), then ~6 of ~9 pages at 2 passes + 1 reconciliation (~$1.3-1.5/pass) under a PREREG
+  b2 + wrong-key gate as N6-VIV63. Expected D1 like inks 53/54/63 unless the f/m/p and qu key questions are settled first (ink 50/51 known plaintext).
+  NOTES.md "## VIV52".
