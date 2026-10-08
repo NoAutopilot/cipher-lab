@@ -146,3 +146,31 @@ NOTES.md "While waiting" (D1A-SURV, 8 Oct 2026): compare the letters' dotted ij 
 controlled shape look, ~$1.5. Disk images only. Pre-register the look (PREREG-SUR-IJ.md: which crops, blind tile order, decoy tiles of
 known class so the look can fail), one or two blind Opus subagent passes on tiles (never full pages), score against the decoys, report
 both numbers; change a grade only if the pre-registered gate passes. Update Remaining gaps/Escalation, gaps_check.
+
+## Wave 2 results (20:0x UTC, get_session): OLD-O4 1.65 (S 15.7 -> 26.3%, control rank 1/120 thin), CRAV-54 2.27 (R8454 EXCLUDED;
+sibling route a design mismatch, codes <= 583 vs 1067), GLY-11106 3.47 (atlas built, mapping 5/19 right, no sorter page), SUR-IJ 3.52
+(1.76x cap; outcome B, no change). Wave 2 total 10.91.
+
+## Wave 3 (20:0x UTC 8 Oct)
+
+### V-OLD10 (Opus, cap 4.5, box 90 min): FIRST VERIFIER, na-oldenbarnevelt-2442-1605 scan 10 block (ff.63v/64r)
+You are a verifier, a session other than the solvers (OLD-S10, OLD-O4). Use CLAUDE.md "Verifier brief (template)" in full, with the claim
+under audit: NOTES.md sections 23 and 23a -- the scan 10 block (23 lines, ff.63v/64r right page) read under the folder's fixed B/C1 key:
+191 cipher words S 73 M 118 after the PREREG_OLD-O4 fold, digit S 26.3%, longest S stretch 7 digits (AD floor 24.2), fixed key rank 1/120
+against permuted keys (0.384 vs max 0.363), es1600 judge FAIL. Read AUDIT.md (AUDIT 1-3; leaves 4/5/7 already N3 D1) so this item is
+classed beside them, not over them. Re-derive with the folder's decode script and `--check`; spot-check ~20 tokens against the crops;
+run prior-work check 5 (`tools/prior_work.py ... --reading <reading> --network`) and the template's search families for the decoded
+phrases; N-class and depth per .claude/briefs/runs/2026-10-08-acct3-depth-bar.md (report the AD arithmetic). Write '## AUDIT 4 (V-OLD10)'
+in AUDIT.md; if N3+ and D2+, append the SECOND-OPINIONS-QUEUE row and add a WORK-QUEUE row AUD2-FAMILY-1 for account 3 (CLAUDE.md
+verifier rule + lane-common-blast "Results"); otherwise no AUD2 row. Rule 10 wording only.
+
+### MANT-08 (Opus, cap 7, box 120 min): sachsstaatsarchiv-manteuffel-1712, 694/08 frames 0390, 0391, 0395, 0485 under the Krauske table
+Handoff next 3 / FAMILY-POOLS row 1: `mant0609/rank_unglossed.tsv` ranks 3-5 and 7 (Oct-Nov 1712, Krauske coverage 1.00, ~78 code tokens
+eye-sampled). Prior-work check 4 FIRST (FAM-MANTV found the 0015-16 news printed in Colyer to Heinsius, Briefwisseling XIV nos.336/367):
+search Heinsius Briefwisseling XIII-XIV (Huygens retroboeken full text) for Oct-Nov 1712 letters on the same news days before any crop;
+a frame whose content is plainly printed is logged KNOWN-likely and read only if under 50% of cap. Then per frame: frames from disk if
+present (images/loc694-08-09/), else one fetch each (www.archiv.sachsen.de, >= 2 s); `tools/iiif_lines.py --image` crops of the code lines
+only (paste the command); 2 blind Sonnet passes + 1 reconciliation per frame pair where two frames show one opening (0390/0391; 0395 with
+0396 left; 0485 with 0486 left) -- about 3 units per page at ~1.5; `tools/decode_key.py` with key.tsv and --check; shuffled-key control
+(the FAM-MANT15 design, 1000 shuffles); judge fr18 only where >= 60 letters. Stop before a unit that crosses 80% of cap or box. Report
+what was found and where it was not found; a gate PASS goes to the lane for a separate verifier; do not classify novelty.
