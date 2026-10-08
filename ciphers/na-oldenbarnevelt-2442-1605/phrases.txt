@@ -12,3 +12,7 @@ decirlo a V.Sa pudiendolo callar
 con quantos desseos de acertar a seruir
 obispo de Siguença Vanegas Pamplona
 Mattheo de Burgos Vanegas
+# AUD2D-OLD2442, 8 Oct 2026: three more from B/C1 (reading as committed, apply_key --check OK)
+i se lamenta de uer los tiempos que corren
+porque todos tienen sus pretensiones i andan al aire
+supplico a V.Sa me perdone quen decirlo

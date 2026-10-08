@@ -152,3 +152,47 @@ reading. Both also printed "harto", "Siguença" and "esperanças" where the read
 "esperancas" (no cedilla is written in the transcription); now quoted as read, with "[de Siguenca]" as an editorial gloss.
 SECOND-OPINIONS-QUEUE.tsv row SO-OLDEN-2442-BC1 is still `queued`; its row text quotes no reading, so it is unchanged.
 Class and key source unchanged (blocks B/C1 N3, ours); depth not reassessed here.
+
+## AUDIT 2 (second adversarial + depth, AUD2D-OLD2442)
+
+Verifier AUD2D-OLD2442 (account 4, session_01HcGqodZqH3Hc1NGTKh4jXA), 8 Oct 2026, from 02:37 UTC by `date -u`. Brief:
+`.claude/briefs/runs/2026-10-08-acct3-scout-jobs.md` section AUD2D-OLD2442; depth bar
+`.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`. Separate from VERIFY-OLD, R14-OLDV, R15-OLDV2 and every solver; this
+session did not decode and changed no key, ciphertext, override or reading.
+
+### 2a. Authentication distance, written before any stretch was measured
+
+Depth bar as received (copied): CLAUDE.md 4a governs; cipher clause = a contiguous H/C/S stretch longer than the AD (about
+1.5 x unicity), H(K) = the design's key space plus every liberty the reading took (U wildcards, M tokens, repairs, u/v and
+word-break choices); an unfitted external key does not shrink H(K); the zero-liberty (H_lib+20)/R reading is not used; an
+external check is a D3/D4 element, not a D2 alternative; code clause = a value reading sensibly in >= 2 independent contexts
+(not applicable here: this design has no code values); D2 = one clause plus the verifier's own true, specific sentence.
+
+Unit: only the digits (2,3,4,7,8) are cipher; consonants are transcribed clear text. Stretches are counted in consecutive
+digit tokens, broken by any M or I word.
+
+**R (redundancy per digit token)**, `depth/aud2d_ad.py`: R = log2(5) - H(vowel | consonant skeleton of its word), where the
+skeleton masks every vowel (and v, folded to u, since the hand's `2` is both). H(vowel | skeleton) is a held-out
+cross-entropy: skeleton -> vowel-string counts from six es1600 volumes, scored on the seventh (CODOIN XCVI, 262,454 vowels),
+add-1 backoff to the vowel-unigram model for unseen skeletons.
+```
+vowel unigram H = 2.235 bits; held-out H(V|skeleton) = 0.491 bits/vowel over 262454 vowels (test XCVI)
+plug-in (train=test, not used) H(V|skeleton) = 0.328
+R = log2(5) - H = 2.322 - 0.491 = 1.831 bits per digit token
+vowel map 5! (brief's design level): H(K0) = 6.91 bits; unicity(no liberties) = 3.8 digits; AD = 5.7 digits
+free over 23 letters 23P5 (sensitivity): H(K0) = 21.95 bits; unicity(no liberties) = 12.0 digits; AD = 18.0 digits
+```
+This R is generous to the reading in one way (whole-word skeletons assume the word breaks are right) and harsh in another
+(it ignores sentence context); it is the empirical per-digit figure the brief asks for, not the per-letter R of prose.
+
+**Liberties, per block** (from `reading_tokens.tsv` grades and `overrides.tsv`; each M or I word = log2 5 = 2.32 bits, one
+choice among the digit values or a glyph alternative; each u/v renaming, glyph override and word-break the reading's sense
+relies on = 1 bit):
+
+| block | M+I words | u/v renames | other glyph overrides | word-break choices | liberty bits | H(K) = 6.91 + liberties | U = H(K)/R | **AD** (digits) | AD if base is 23P5 |
+|---|---|---|---|---|---|---|---|---|---|
+| B | 5 M + 1 I = 13.93 | 4 (B37, B49, B55, B76) | 1 (B92 n->m) | 4 (delo -> de lo; desigu enca -> de Siguenca, 2; pa ciencia) | 22.93 | 29.84 | 16.3 | **24.4** | 36.9 |
+| C1 | 6 M + 2 I = 18.58 | 0 | 2 (C1_29, C1_31) | 2 (quen -> que en; entodo -> en todo) | 22.58 | 29.49 | 16.1 | **24.2** | 36.5 |
+
+The ruling uses the 5! column (the brief's design level, the five digits' map onto the five vowels) and reports the 23P5
+column as a sensitivity: a stretch is called clear of the AD only if it also clears the 23P5 figure, or the call says so.
