@@ -1,0 +1,32 @@
+{
+ "mode": "control",
+ "seed": 2,
+ "crib_noise": 0.0,
+ "N_total_chars": 61,
+ "K_distinct_digits": 7,
+ "digit_positions": 45,
+ "correct_digit_positions": 45,
+ "digit_share": 1.0,
+ "correct_all_positions": 61,
+ "overall_share": 1.0,
+ "true_key": {
+  "0": "a",
+  "1": "e",
+  "2": "l",
+  "3": "n",
+  "4": "r",
+  "5": "d",
+  "6": "i"
+ },
+ "solved_key": {
+  "0": "a",
+  "1": "e",
+  "2": "l",
+  "3": "n",
+  "4": "r",
+  "5": "d",
+  "6": "i"
+ },
+ "plain": "eunafrescaarboledahallaronenelmargendelacualdeiandolibressini",
+ "decoded": "eunafrescaarboledahallaronenelmargendelacualdeiandolibressini"
+}

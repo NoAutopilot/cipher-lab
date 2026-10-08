@@ -196,3 +196,114 @@ relies on = 1 bit):
 
 The ruling uses the 5! column (the brief's design level, the five digits' map onto the five vowels) and reports the 23P5
 column as a sensitivity: a stretch is called clear of the AD only if it also clears the 23P5 figure, or the call says so.
+
+### 2b. Rule 7 and grade recount (unit 1)
+
+`python3 scripts/apply_key.py digit_key.json ciphertext.tsv --overrides overrides.tsv --out reading.txt --check` ->
+`OK: reading.txt matches a fresh decode`, exit 0 (the brief's bare `apply_key.py --check` form lacks the two required
+positional arguments; the NOTES section 19-20 form was used). Eye-check on the existing crops, no new fetch:
+`images/crops_BC1/B_L02_s1` (`l7 d8ss84 4rt7, 3 s8 l4m8nt4`), `B_L06_s2` (`d2q28 c7n 28r4s, p7rq28`, the u-cup in `28r4s` the
+same sign as in `q28`) and `C1_L06_s1` (`qnl4`, I as graded) all agree with `ciphertext.tsv`/`overrides.tsv`.
+
+Recount (`depth/aud2d_runs.py` over `reading_tokens.tsv`), per word token and per digit (cipher) token:
+
+| block | word tokens | S / M / I (words) | H/C/S share, words | digit tokens | S / M / I (digits) | **H/C/S share, digits** |
+|---|---|---|---|---|---|---|
+| B | 95 | 89 / 5 / 1 | 93.7% | 186 | 171 / 12 / 3 | **91.9%** |
+| C1 | 61 | 53 / 6 / 2 | 86.9% | 117 | 97 / 16 / 4 | **82.9%** |
+| B+C1 | 156 | 142 / 11 / 3 | 91.0% | 303 | 268 / 28 / 7 | **88.4%** |
+
+The brief's "B S90 M4 I1" predates R15-OLDUV, which regraded B37 `b28n4s` (buenas) to M; current B is S89 M5 I1. No H or C
+token exists (no key source, no known plaintext): this is a cryptanalytic result (rule 4).
+
+### 2c. Depth (unit 3)
+
+**Longest H/C/S stretch, in digit tokens** (`depth/aud2d_runs.py`, measured after 2a was pushed in 5157722f):
+```
+B: longest H/C/S stretch: 59 digit tokens, words B65-B95: de su gusto i sus mismos hijos muchas ueces no se atreuen a
+   decirle nada, i assi no ai sino pa ciencia i hacer lo que pudieremos comforme a los tiempos
+C1: longest H/C/S stretch: 33 digit tokens, words C145-C161: uerdad que procedo i con quantos desseos de acertar a seruir
+   a V.Sa i darle gusto entodo-
+```
+B's 59 clears its AD of 24.4 digits by 2.4x and also clears the 23P5 sensitivity AD (36.9). C1's 33 clears its 5! AD (24.2)
+but not the 23P5 one (36.5); B alone carries the clause. The B stretch already contains one counted liberty (the `pa
+ciencia` join), included in H(K).
+
+**Matched control, subsampled (rule 3, ARM3-ADJ).** Same script as VX-CT03 (`scripts/solve_digit_subst.py control`, Don
+Quijote 1605 corpus, held-out 10%, 8 restarts x 40,000 iterations), 3 seeds each, clean and at VX-CT03's 37.3% crib noise,
+at the brief's N=95 and N=61 and at the blocks' own sign-stream lengths (B 372 signs, 182 digits; C1 262 signs, 116
+digits), K=7 (VX-CT03's setting) and K=5 (the five digits B/C1 use). Outputs `depth/control/*.json`.
+
+| N (signs) | K | crib noise | digit positions recovered, seeds 1/2/3 | mean |
+|---|---|---|---|---|
+| 372 (B) | 5 | 0 / 0.373 | 193/193, 196/196, 197/197 (both) | 100% / 100% |
+| 262 (C1) | 5 | 0 / 0.373 | 144/144, 138/138, 139/139 (both) | 100% / 100% |
+| 95 | 5 | 0 / 0.373 | 54/54, 52/52, 50/50 (both) | 100% / 100% |
+| 95 | 7 | 0 / 0.373 | 66/66, 66/66, 64/64 (both) | 100% / 100% |
+| 61 | 5 | 0 | 36/36, 37/37, 31/31 | 100% |
+| 61 | 5 | 0.373 | 30/36, 31/37, 11/31 | **67.5%** |
+| 61 | 7 | 0 | 44/44, 45/45, 39/39 | 100% |
+| 61 | 7 | 0.373 | 44/44, 39/45, 20/39 | **79.3%** |
+| 372, 262 | 7 | 0 / 0.373 | all 100% | 100% |
+
+Caveats: the control draws one held-out passage (the seeds vary the solver, not the text), and it converts the K most
+frequent letters, not the five vowels; it is at ceiling at every length at or above N=95, so it shows key-recovery power
+at the blocks' own lengths, not transcription accuracy (rule 3 headroom). At N=61 with crib noise the method starts to
+fail, so a 61-sign window alone would not license a key; the key here rests on block A plus B plus C1 together.
+
+**Language judge.** The whole-letter and B/C1 `es`/`es1600` judges FAIL (NOTES sections 8, 12-13, 20: B/C1 windows -0.933,
+-0.880, -0.893, -0.968 vs real_p05 about -0.87). Reported as a FAIL; not a depth gate (rule 7).
+
+**Ruling: D2.** Cipher clause met in block B (59 digit tokens > AD 24.4, and > 36.9 under the 23P5 base). Verifier's
+sentence, written from the reading of B (grade S throughout words B38-B56 and B65-B95), not from any edition: *the writer
+tells V.Sª that people often cannot, or dare not, speak frankly to the duke because everyone has pretensions of his own
+and follows the duke's pleasure, that even the duke's own sons often dare not tell him anything, and that there is
+nothing for it but patience and doing what they can as the times allow.* The duke is not named in B/C1 (block A, not in
+scope, names a duke beside the Sigüenza see; identity not established here).
+**Not D3:** digit-token H/C/S is 88.4% (>= 80%), but the 14 M/I words are ordinary words (el, pesame, buenas, todos, aire,
+besaua, parecerme, puere, ansi, supplico, quen, qnla, i) plus one name fragment (desigu), not "mostly names"; and no
+external check exists (no period key, gloss or clear copy). D3 would need those gaps settled from the image and an
+independent check.
+
+- depth: **D2**; depth_pct: **88.4** (digit-token basis, B+C1, 268/303; word-token 91.0%, 142/156); depth_unread: 35 digit
+  tokens (28 M, 7 I) in 14 words, 1 a name fragment; depth_check: "AD 24.4 digits (5! map + 22.9 bits of liberties,
+  R=1.831 bits/digit held-out es1600) vs longest S stretch 59 digits (B65-B95); control solve_digit_subst at N=372/262/95
+  100%, N=61 noisy 67.5-79.3%"; decode_status: "Partially decrypted"; outward words: "partially deciphered (about 88%)",
+  blocks B and C1 only (A and C2 unread, waiting on the owner's sorter).
+
+### 2d. Novelty, second adversarial pass (unit 2): Spanish side
+
+| family | searched (8 Oct 2026) | result |
+|---|---|---|
+| sender/recipient by name | Google Books (keyed, `country=US`): "Garcia de Senisteros" (0), "Juan Garcia de Senisteros" (0), "Senisteros" Alcalá (0), "Juan de la Peña" 1605 cifra Flandes (12, none this letter); IA be-api fts global "Gara de Senisteros" (0), "Garcia de Senisteros" (0); Semantic Scholar "Senisteros" (0), "Garcia de Cisneros Alcala 1605 carta" (51, Cisneros the cardinal, 1509-1545 matter), "Juan de la Peña 1605 correspondencia" (San Juan de la Peña monastery etc.); CORE "Senisteros" (0), "Juan de la Peña" 1605 Alcalá (monastery) | no printed correspondence of either party; sender still unidentified |
+| CODOIN | AUDIT 1's IA-global "Senisteros" (IA carries the CODOIN scans); the seven 1598-1621 tomos of `tools/data/es1600` (XLII-XLVII, XCVI) grepped raw for Senisteros/Cisneros/"Juan de la Pena" at build (README: zero) | not found; the other ~100 tomos only through IA-global |
+| Lonchay-Cuvelier t. I | be-api fts on `correspondancede0000unse_m5g7`: Senisteros (0), Peña (0), Siguenza (1 hit, no snippet; AUDIT 1's solvers' full djvu grep already found no mention of this letter) | not found |
+| Rodríguez Villa, *Correspondencia de la Infanta ... con el duque de Lerma* (1906) | be-api fts on `correspondencia-de-la-infanta-archiduquesa-dona-isabel-clara-eugenia-de-austria`: Senisteros (0), Cisneros (0), Sigüenza (0); Peña returned a non-JSON answer (unreadable, not retried); positive control "Lerma" answers | not found |
+| Simancas Estado guides | not reached: PARES is a dead host from the cloud (CLAUDE.md host table); the printed Simancas *Catálogo* (Estado, Flandes) is not open full text from here; HathiTrust full text Cloudflare-blocked | **unreachable** |
+| phrases in print | `tools/print_check.py` on phrases.txt (now 16 lines; added "i se lamenta de uer los tiempos que corren", "porque todos tienen sus pretensiones i andan al aire", "supplico a V.Sa me perdone quen decirlo"): 87 rows, 15 with hits, every hit a scattered-word match (dictionaries, Cortes diaries, 1645 *Teatro eclesiástico* for the bishop names); Google Books exact modern-spelling phrases "se lamenta de ver los tiempos que corren", "todos tienen sus pretensiones y andan", "sus mismos hijos muchas veces no se atreven", "no se atreven a hablar al duque": scattered-word hits only, none this letter | not found |
+| scholarship | OpenAlex 18 (print_check); Semantic Scholar 5 direct + 1 in print_check: 2 answered 429, one retry each, not retried further; CORE 3; CrossRef 3 | nothing about this letter |
+| JSTOR | 4 earlier rows answered (no hits); 4 new rows appended 8 Oct (2 family i: names + Sigüenza; 2 family ii: "todos tienen sus pretensiones", "sus mismos hijos muchas veces no se atreven") | queued; does not block N3 |
+
+Requests this session: www.googleapis.com 16 + 8, be-api.us.archive.org 16 + 9, archive.org 1, api.openalex.org 18,
+api.semanticscholar.org 1 + 6 (2 x 429), api.core.ac.uk 3, api.crossref.org 3.
+
+**Class: N3 kept** (blocks B and C1). Not raised to N4: the Simancas side is unreachable from here and the sender is still
+unidentified, so the principal Spanish catalogues are not covered (rule 10's N4 bar); no specialist or archive asked. Not
+lowered: no prior plaintext or decipherment found. **Key: ours.** Text: not known in print.
+
+- **Safe sentence:** "Blocks B and C1 of Nationaal Archief 3.01.14 inv. 2442 (a copy of Don Juan Gara de Senisteros to Juan
+  de la Peña, Alcalá, 23 December 1605) are partially deciphered (about 88% of cipher digits) under a vowel-digit key we
+  recovered: the writer tells his correspondent that no one dares speak frankly to the duke, not even the duke's own sons,
+  and that patience is all that is left. No prior decipherment or print of the letter was located after the search
+  logged in AUDIT.md (N3); the reading is cryptanalytic and fails our language judge."
+- **Unsafe sentence:** "We have deciphered a previously unread letter about the Duke of Lerma's court from Oldenbarnevelt's
+  intelligence files." (Below N4 "previously unread" is barred; the duke is not named in B/C1; D2 is "partially
+  deciphered", not "deciphered"; blocks A and C2 are unread; "intelligence files" is not established.)
+
+**SO-OLDEN-2442-BC1.** `second-opinions/PROMPT-chatgpt-BC1.md` quotes no grade count, class or depth (checked: it states the
+key as ours and quotes the reading as committed); the SECOND-OPINIONS-QUEUE.tsv row is still `queued` and quotes no
+reading. Nothing changed that it carries, so neither is edited.
+
+**Postmortem.** No over-claim found. One stale count in the brief (B S90 M4; current S89 M5 after R15-OLDUV) and one stale
+command form (bare `apply_key.py --check`), both noted above. Parent follow-up per the brief: status.json row from 2c/2d,
+`tools/depth_check.py`, NOTES line 1 open -> partial.

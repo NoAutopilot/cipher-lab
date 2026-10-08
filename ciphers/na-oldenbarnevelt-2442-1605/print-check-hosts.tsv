@@ -1,7 +1,6 @@
 host	requests	status
 api.crossref.org	3	ok
-api.openalex.org	15	ok
+api.openalex.org	18	ok
 api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22se%20lamenta%20de%20uer%20los%20tiempos%20que%20corren%22
-archive.org	1	ok
-be-api.us.archive.org	13	ok
-www.googleapis.com	13	ok
+be-api.us.archive.org	16	ok (some errors)
+www.googleapis.com	16	ok
