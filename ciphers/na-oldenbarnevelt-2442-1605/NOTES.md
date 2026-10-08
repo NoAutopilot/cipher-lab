@@ -1548,6 +1548,55 @@ depth bar), ~$2.5; (o2) masked re-cut + blind passes on L4/L7 as before, ~$9; (o
 (passes told to write the cursive r as r, or the S normaliser folding v->r on both sides, pre-registered) before any further
 block, since the registered S share on this block moves 15.7% -> 26.3% on that alone, ~$1.
 
+### 23a. OLD-O4, 8 Oct 2026: pass-notation fix for the S rule on the scan 10 block (step (o4)); status stays open
+
+Brief: `.claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md`, "### OLD-O4" (account 2, LANE FAMILY, 19:45 UTC start by
+date -u). Section 23 above (OLD-S10) is left as written; this sub-section records the re-score. Prereg
+`transcription/PREREG_OLD-O4.md`, pushed (898b51cdf) before the re-score was computed. No new vision, no requests to any host.
+
+**Prior work.** `python3 tools/prior_work.py na-oldenbarnevelt-2442-1605 --item-spec 'shelfmark=NA 3.01.14 inv. 2442;folio=63v-64r;
+canvas=10;date=1605-12-23;...' --step-type decode --fetch` -> exit 4, one owed row: LEAD 1-own (the live claim it found is this job's
+own claim line); recorded CLEAR with `--record`. Every other row CLEAR (2-leaf, 3-solver x2, 4-editions, carried from OLD-S10) or
+CONTEXT (3-tomokiyo, other letters). By hand: check 1 (own work) -- grep NOTES/ROOM for "o4" / "pass-notation": only OLD-S10's
+named next step, no prior re-score; CLEAR. Checks 2-4 unchanged since OLD-S10 (same day, no new material); carried, not re-run.
+Check 5 not re-run: the decoded words are unchanged (only grades moved), so OLD-S10's G3 phrase search stands.
+
+**Normalisation (registered).** In the S test only, after `norm_tok`: `v`->`r` (both passes write this hand's cursive r as v) and
+`(`->`l` (pass A writes l as `(`), applied alike to both blind passes AND the reconciled tokens, in the best-line choice and the
+in_A/in_B test. Decode and lexicon untouched, so `reading_L10.txt`'s words are identical; only S/M grades change.
+`scripts/decode_L10.py` now defaults to this normaliser; `--norm s10` reproduces OLD-S10's registered counts (S 50 / M 141).
+
+**Re-score.** `python3 scripts/decode_L10.py` -> `--check` exit 0. Cipher tokens 191: **H 0, C 0, S 73, M 118, I 0** (was S 50 /
+M 141). Digit tokens 426: **S 112 (26.3%)**, M 314 (was 67, 15.7%). **Longest contiguous S stretch: 7 digit tokens** ("de santiago
+i del"; was 6) -- still far below the folder's small-liberty AD floor (24.2-24.4 digits, AUDIT 2a). The figures equal OLD-S10's
+unregistered sensitivity exactly. All 23 tokens that moved went M->S, every one containing r or l (el x2, por x3, herrero x3, para,
+hacer, al, dor, casar x2, hermanos, hermano, hermana, del x3, oidor, torcidas, parecer); none moved S->M. One of them, "d7r" ->
+"dor", is a lexicon hit on what is probably a fragment of a word the scribe split; graded by the rule, flagged here for the verifier.
+Numbers only; the verifier sets depth. Cryptanalytic result (no H or C).
+
+**Matched control (prereg item 5; can differ from the target: the S share depends on the key through the lexicon test).**
+`python3 scripts/decode_L10.py --scontrol` (o4) and `--scontrol --norm s10`:
+```
+S-share control (norm o4); cipher tokens scored (V.S. excluded): 190, in both passes: 87
+fixed key 2=u3=i4=a7=o8=e: S share 0.384; rank 1 of 120
+119 permutations: mean 0.257, max 0.363; top three: 2=u3=i4=a7=o8=e 0.384; 2=i3=u4=a7=o8=e 0.363; 2=u3=i4=o7=a8=e 0.316
+S-share control (norm s10); cipher tokens scored (V.S. excluded): 190, in both passes: 59
+fixed key 2=u3=i4=a7=o8=e: S share 0.263; rank 1 of 120
+119 permutations: mean 0.201, max 0.253; top three: 2=u3=i4=a7=o8=e 0.263; 2=i3=u4=a7=o8=e 0.253; 2=u3=i4=o7=a8=e 0.242
+```
+Pass mark met under both: the fixed key ranks 1 of 120. The margin over the best permutation is thin (0.021 under o4, 0.010 under
+s10) -- the best wrong key is the 2/3 (u/i) swap, which this S statistic barely separates on 190 tokens; the lexicon-hit-share control
+(`--control`, no passes involved, so identical by construction under the fold and not a test of it) still reads 0.684 vs best
+permutation 0.553, rank 1 of 120. The fold raises the permutations' mean too (0.201 -> 0.257): part of the gain is the passes'
+agreement improving for every key, not the fixed key alone.
+
+Files: `scripts/decode_L10.py` (S normaliser, `--scontrol`, `--norm s10`), `reading_L10.txt` (header), `reading_L10_tokens.tsv`
+(grades), `transcription/PREREG_OLD-O4.md`, `prior-work.tsv`. Requests: none. Subagent calls: none.
+
+**Verdict: open** (unchanged; a verifier classifies). Step (o4) done for the scan 10 block. Next steps: (o3') verifier for the scan 10
+block under the OLD-O4 grades (AUDIT, N/D under the depth bar), ~$2.5; (o2) masked re-cut + blind passes on L4/L7, ~$9 -- any
+further block's S test uses the OLD-O4 normaliser from the start (or the passes are told to write the cursive r as r).
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and

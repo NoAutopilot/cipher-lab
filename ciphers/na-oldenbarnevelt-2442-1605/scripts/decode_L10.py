@@ -11,6 +11,9 @@ in the es1600 + Don Quijote lexicon; M otherwise. No H, no C. Clear tokens repor
   python3 scripts/decode_L10.py --diff     per-sign A/B disagreement (PREREG item 3; agreement, not accuracy)
   python3 scripts/decode_L10.py --control  lexicon-hit share under all 120 vowel-map permutations (PREREG item 6)
   python3 scripts/decode_L10.py --depth    S share (words, digit tokens) and longest S stretch in digit tokens (item 7)
+  python3 scripts/decode_L10.py --scontrol S share under all 120 vowel-map permutations (PREREG_OLD-O4 item 5)
+  --norm s10                               OLD-S10's registered S test (no fold); default is OLD-O4's (PREREG_OLD-O4):
+                                           v->r and (->l folded on both passes and the reconciled tokens, S test only
 """
 import csv, itertools, os, re, sys
 from collections import Counter
@@ -24,13 +27,20 @@ from decode_L457 import norm_tok, lev, core, fold, best_line, ABBR  # noqa: E402
 REC = os.path.join(T, "transcription/reconciled_L10_OLDS10.tsv")
 PASS = os.path.join(T, "transcription/passK_OLDS10_L10_{}.tsv")
 VOW = "23478"
+NORM = "s10" if "s10" in sys.argv else "o4"
+
+
+def sn(t):
+    """S-test normaliser: norm_tok, then (OLD-O4) v->r and (->l, applied alike to passes and reconciled tokens."""
+    t = norm_tok(t)
+    return t.replace("v", "r").replace("(", "l") if NORM == "o4" else t
 
 
 def pass_lines(side):
     d = {}
     for r in csv.DictReader(open(PASS.format(side)), delimiter="\t"):
         if r["token"] not in ("EMPTY", "[del]"):
-            d.setdefault(r["line"], []).append(norm_tok(r["token"]))
+            d.setdefault(r["line"], []).append(sn(r["token"]))
     return d
 
 
@@ -59,7 +69,7 @@ def run(key=None, lex=None):
     toks_out = ["block\tline\ttoken_index\traw_token\tdecode\tcipher\tdigits\tin_A\tin_B\tin_lexicon\tgrade"]
     read, counts = [], Counter()
     for ln, toks in rows().items():
-        normed = [norm_tok(core(t)) for t in toks if t != "[del]"]
+        normed = [sn(core(t)) for t in toks if t != "[del]"]
         ba, bb = best_line(normed, pa), best_line(normed, pb)
         words = []
         for i, t in enumerate(toks, 1):
@@ -68,7 +78,7 @@ def run(key=None, lex=None):
                 continue
             cipher = bool(re.search(r"\d", t))
             dec = decode(t, key) if cipher else t
-            n = norm_tok(core(t))
+            n = sn(core(t))
             ia, ib = n in ba, n in bb
             inlex = dec == "V.S." or fold(re.sub(r"[^a-zñ]", "", dec.lower())) in lex
             g = ("S" if (ia and ib and inlex) else "M") if cipher else "clear"
@@ -79,7 +89,8 @@ def run(key=None, lex=None):
         read.append(f"{ln}\t{' '.join(words)}")
     ncip = counts["S"] + counts["M"]
     head = ["# OLD-S10 reading of scan 10 (ff.63v/64r right page), fixed B/C1 key; cipher words in CAPITALS, clear words as written.",
-            f"# cipher tokens {ncip}: H 0, C 0, S {counts['S']}, M {counts['M']}, I 0 (clear tokens {counts['clear']})."]
+            f"# cipher tokens {ncip}: H 0, C 0, S {counts['S']}, M {counts['M']}, I 0 (clear tokens {counts['clear']}).",
+            f"# S test normaliser: {'OLD-O4 (v->r, (->l on passes and reconciled alike; PREREG_OLD-O4)' if NORM == 'o4' else 'OLD-S10 (no fold)'}."]
     return "\n".join(toks_out) + "\n", "\n".join(head + read) + "\n", counts
 
 
@@ -110,6 +121,36 @@ def control():
     n = lexshare(k0, lex)[1]
     print(f"cipher tokens scored (V.S. excluded): {n}")
     print(f"fixed key {tgt[2]}: lexicon-hit share {tgt[0]:.3f}; rank {rank} of {len(res)}")
+    print(f"119 permutations: mean {sum(others)/len(others):.3f}, max {max(others):.3f}; top three: "
+          + "; ".join(f"{r[2]} {r[0]:.3f}" for r in res[:3]))
+
+
+def scontrol():
+    lex = D.lexicon()
+    k0 = base_key()
+    vals = [k0[d] for d in VOW]
+    pa, pb = pass_lines("A"), pass_lines("B")
+    both = []  # key-independent part: token in both passes' best line
+    for toks in rows().values():
+        normed = [sn(core(t)) for t in toks if t != "[del]"]
+        ba, bb = best_line(normed, pa), best_line(normed, pb)
+        for t in toks:
+            if t == "[del]" or not re.search(r"\d", t) or ABBR.match(t):
+                continue
+            n = sn(core(t))
+            both.append((t, n in ba and n in bb))
+    res = []
+    for perm in itertools.permutations(vals):
+        k = dict(k0)
+        k.update(dict(zip(VOW, perm)))
+        hit = sum(m and fold(re.sub(r"[^a-zñ]", "", decode(t, k).lower())) in lex for t, m in both)
+        res.append((hit / len(both), perm == tuple(vals), "".join(f"{d}={v}" for d, v in zip(VOW, perm))))
+    res.sort(reverse=True)
+    tgt = [r for r in res if r[1]][0]
+    others = [r[0] for r in res if not r[1]]
+    rank = 1 + sum(o > tgt[0] for o in others)
+    print(f"S-share control (norm {NORM}); cipher tokens scored (V.S. excluded): {len(both)}, in both passes: {sum(m for _, m in both)}")
+    print(f"fixed key {tgt[2]}: S share {tgt[0]:.3f}; rank {rank} of {len(res)}")
     print(f"119 permutations: mean {sum(others)/len(others):.3f}, max {max(others):.3f}; top three: "
           + "; ".join(f"{r[2]} {r[0]:.3f}" for r in res[:3]))
 
@@ -161,7 +202,12 @@ def main():
         return control()
     if "--depth" in sys.argv:
         return depth()
+    if "--scontrol" in sys.argv:
+        return scontrol()
     tok, read, counts = run()
+    if NORM != "o4":
+        print("norm s10 (OLD-S10 registered S test):", dict(counts), "(not written; committed files carry the OLD-O4 grades)")
+        return
     paths = [os.path.join(T, "reading_L10_tokens.tsv"), os.path.join(T, "reading_L10.txt")]
     if "--check" in sys.argv:
         stale = [p for p, new in zip(paths, (tok, read)) if not os.path.exists(p) or open(p).read() != new]

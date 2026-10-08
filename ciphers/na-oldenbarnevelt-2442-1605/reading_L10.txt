@@ -1,5 +1,6 @@
 # OLD-S10 reading of scan 10 (ff.63v/64r right page), fixed B/C1 key; cipher words in CAPITALS, clear words as written.
-# cipher tokens 191: H 0, C 0, S 50, M 141, I 0 (clear tokens 13).
+# cipher tokens 191: H 0, C 0, S 73, M 118, I 0 (clear tokens 13).
+# S test normaliser: OLD-O4 (v->r, (->l on passes and reconciled alike; PREREG_OLD-O4).
 L10_L01	avs^a memande Responder en este particular luego
 L10_L02	EL DELA FO REDA UBIDRA CRADADO SI UBIDRA TENIDO
 L10_L03	RESPUESTA DE V.S. DE UNPARTICULAR QUE DECRIUI QUE
