@@ -907,3 +907,108 @@ status.json results[220] `line` named only Heinsius XIV and Droysen IV.1 as sear
 depth_sentence replaced with the sentence above (the old one put line 14's doubtful code as "she"). SO-MANT-0839: class unchanged, row
 not edited. Requests this audit: www.archiv.sachsen.de 1; archive.org (metadata, advancedsearch, download) 15; be-api.us.archive.org 27;
 www.googleapis.com 7 (all 429); books.google.com 6 (200, answers void); github.com 1 clone. One 500 (archive.org, retried once).
+
+## AUDIT (V-MANTR8)
+
+Verifier V-MANTR8 (account 2, LANE FAMILY), 8 Oct 2026, 23:03-23:2x UTC by `date -u`; a separate session from the solver MANT-R8
+(session_01Ch5SyJKu1jEKbwHfjBFxyT) and from every earlier verifier. Brief: .claude/briefs/runs/2026-10-08-ytbiz-family-2209-jobs.md
+"### V-MANTR8". Claim under audit: NOTES.md section MANT-R8 (f0375_08/): seven unglossed frames (694/08 0375, 0214, 0436, 0241, 0435,
+0065; 694/09 0070), 99 tokens C 67 M 30 U 2, PREREG-MANTR8 pooled shuffled-key gate PASS 7/1000 (limit 10), read in context "ma guerison"
+(0214), Kraut (0436), Arnold / Eosand (0375). Nothing decoded beyond the re-derivation; key.tsv, ciphertexts and readings untouched.
+
+**1. Re-derivation (rule 7).** `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712/f0375_08 --check`: "tokens 99: C 67,
+M 30, U 2 / reading up to date", exit 0. **Eye check against the crops: not done.** The solver's crops and frames lived in its own
+scratch (NOTES MANT-R8: "images in scratch only, folder over 30 MB"); nothing for these seven frames is on disk, and this brief allowed
+disk only. The transcription is therefore unchecked by any second eye beyond the solver's two Sonnet passes. Re-fetch route: the frame
+URLs in images/loc694-08-09/frames.tsv with the region arguments pasted in NOTES MANT-R8.
+
+**2. Gate robustness (rule 3; `f0375_08/vmantr8_seeds.py` -> `vmantr8_seeds.out`, same scorer and shuffle design as the registered
+script).** Pooled string (89 letters), 1000 shuffles each, ten fresh seeds: 5, 8, 13, 10, 10, 10, 7, 11, 12, 6 per 1000 -- **4 of 10
+seeds exceed the registered limit of 10**; 10,000 shuffles (seed 99): 98/10,000 = 9.8 per 1000, i.e. p ~ 0.01, on the line. Leave one
+frame out (seed 11): without 0375 20/1000, **without 0214 39/1000**, without 0436 13, 0241 16, 0435 16, 0065 21, 0070 10; without 0214
+and 0065 together 70/1000. So the registered PASS (7/1000) is a seed-lucky draw at p ~ 0.01, and it is carried by 0214 ("lamaguerison",
+12 letters, 4/1000 on its own) with 0065 behind it: **the pooled gate does not license the other five frames as a group.** It is not a
+negative either; most of the string is abbreviated names, which the 4-gram model cannot reward. The control can differ from the target
+on this statistic (the shuffled key changes the letters scored), so the test is a real test, just a weak one.
+
+**3. Known-plaintext check found in print (supersedes the gate for 0436).** Acta Borussica, *Behördenorganisation* I (Berlin 1894, ed.
+G. Schmoller and **O. Krauske**), Google Books full view `ESf8fHFG9ngC`, search-inside JSON (34 requests, 1.8 s apart, all 200): Nr. 72,
+headed p. 256 "Manteuffel an den Feldmarschall Grafen Flemming. Berlin 19. September, 4., 7. und 23. October 1712. Urschriften. Zerbst
+... bezw. Dresden. Hauptstaatsarchiv. Vol. CXLV. Loc. 694", prints on **p. 258**: "[Krautt est] toujours malade ou, pour mieux dire,
+mélancolique, et il y a apparence que ses affaires ne sont pas tout-à-fait nettes. **Blaspil dit hautement qu'il a volé le Roi, et que
+Kameke qui le soutient, s'attirera un jour de mauvaises affaires** en prenant son parti. **Les raisons qui portent Kameke à cela, sont 1.
+qu'il croit Krautt habile homme** et nécessaire au Roi, **2. que Krautt lui a prêté de l'argent dans le temps que Kameke était encore in
+statu exa[mi]nationis, et 3., à ce que je devine, que Krautt fait peut-être** rouler quelque somme d'argent au profit de Kameke." This is
+frame 0436 paragraph 4 sentence for sentence (runs.tsv contexts r1-r8). Diff, code by code:
+| run | cipher | MANT-R8 read | print | agree |
+|---|---|---|---|---|
+| r1 | 11.60.66.6.28 | Kraut | Krautt | yes (k r a u t; print doubles t) |
+| r2 | 55.12 | "b\|a l, unsettled" | Blaspil | yes as an abbreviation (b l) |
+| r3, r4, r7 | 11 | "K", sense: Kraut | **Kameke** | letter yes (k); **identification wrong** |
+| r5, r6, r8 | 11.60 | "Kr" = Kraut | Krautt | yes |
+So on 0436 the key values 11 k, 60 r, 66 a, 6 u, 28 t, 55 b, 12 l are confirmed against Krauske's own 1894 print (C-grade agreement, 7
+codes, 14 tokens), and the solver's sense identification of lone 11 is corrected: **11 = K[ameke], not K[raut]** (three occurrences in
+print; r13 "voyage avec 11" is beyond the printed extract, M). The print is the editor's (Krauske's) decipherment of this very leaf:
+the paragraph's plaintext and its decipherment were in print in 1894. The print has none of r9-r13 (150, 160, 230, 11).
+Other printed pages read through the same endpoint: p. 257 (4 Oct 1712, "Le pauvre Krautt est fort malade de chagrin"); p. 212 (12 Sept
+1712, Blaspil and Krautt reconciled). Queries with no hit in vol. I: Eosander, Eosandre, Suède/Suede, czar, ressemble, guérison, achever,
+tombasse, créance, regarde, promener, Fürstenberg, Langvillette, mélancolique (OCR hyphenates "mélan- colique"), Arnold Stanislas.
+"Arnold" hits only Arnold Westenberg (Lingen); "Stettin" 16 hits not read (0241's Stettin is a hypothesis only).
+
+**4. Prior-work checks 1-5.** `tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec 'shelfmark=SHStA Dresden 10026 Loc. 694/08;
+folio=frame <f>;sender=Manteuffel;recipient=Flemming;date=<d>' --step-type audit --fetch` for 0375 (1712-09-15), 0214 (1712-07-15), 0436
+(1712-10-23): exit 4 each; LEADs = five target-level claims on other units (MANT-08, V-MANT08, AUD2-MANT0391, AUD2-MANT08B, MANT-0609X),
+recorded CLEAR (prior-work.tsv); generic UNCHECKED rows answered here:
+1. Own work: these frames appear only in inventory lines before MANT-R8. CLEAR.
+2. Leaf: not re-read on the image (item 1). Solver: no gloss at sheet scale. UNCHECKED by me.
+3. Holder, portal, solver caches: offline caches name no folio of this unit; aaymeloglu/unsolved-ciphers not cloned: UNCHECKED-NET.
+4. Editions: **Acta Borussica BO I** (item 3: 0436 printed; 0375, 0214, 0241, 0435, 0065 not found by the queries listed). **Droysen,
+   *Geschichte der preußischen Politik* IV.1** (IA `droysen-geschichte-der-preussischen-politik-v-4-no-1`, djvu text, 3 requests: one
+   404 on a guessed filename, metadata, djvu): p. 267 and Anmerkungen 511-512: "Arnolds Schlußbericht über seine Sendung ist d. d. Berlin,
+   6. September 1712" (Arnold, Bürgermeister from Neisse, sent to Stanislas, Instruction 8 July 1712) and "Instruction für den Brigadier
+   Eosander d. d. 16. August 1712" (his mission to Charles XII at Bender; text after Anm. 513: "Man hoffte auf die Erfolge Eosanders in Bender"; later
+   "sein erster Bericht war am 17. November eingetroffen"). This fits 0375 exactly as **"Arnold à St[anislas], et Eosand[er] au roi de Suède"**:
+   51.28 = s t is the abbreviation St., not the solver's "a s|sa t" (I, from sense; every token keyed). No quotation of a Manteuffel report
+   of Sept 1712, and no "guérison" or Kraut/Blaspil passage of 1712 (Fraktur OCR, a weak negative). **Heinsius Briefwisseling** (Huygens
+   retroboeken `search_in_text`, all volumes, 6 requests, 2.2 s apart, my own terms): Eosander -- Deel XIV p. 364 ("L'on attend à tout moment
+   Mons. Eosander de Bender") and p. 451 (Eosander at Vienna), background to 0375 later in the winter; Blaspil 2 and Kraut 3 hits, none in
+   Deel XIII-XIV text; Kameke index only in XIII-XIV; Arnold, Stanislaus: no 1712 Arnold mission hit on the first page. Nothing prints
+   0214's or 0375's cipher spans.
+5. After decode: the cipher spans of 0375, 0214 and 0436 were phrase-checked as above; 0241, 0435, 0065, 0070 have nothing read to check.
+
+**5. Depth (rule 4a under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md).** Cipher clause: the longest all-keyed letter stretch on any
+frame is 10-12 letters ("ma guerison"), against an AD of about 127-138 letters for this key (FAM-MANTV): fails everywhere. Code clause:
+no multi-letter code value recurs in two independent sensible contexts as read by the solver; on 0436 the recurring value 11 was read in
+sense wrongly, and its right reading (Kameke) is supplied by the print, which may confirm a D2 sentence but never supply it. Rulings:
+0436 **D1**, 0375 **D1**, 0214 **D1**, 0435 **D1** (code 153 reads in "Je n'ai pas écrit à 153 que le frippon"), 0241 **D0**, 0065 **D0**,
+0070 **D0** (abbreviated names; nothing reads). depth_pct (tool counts, C of tokens): 0375 77.8, 0214 64.3, 0436 71.4, 0241 78.6,
+0435 10.0, 0065 83.3, 0070 75.0 -- percentages of letter-valued tokens keyed, not of sense read.
+
+**6. Classification (rule 10).** Key on every item: **published** (Dr. Krauske's 1893 manuscript table, Loc. 694/10, credited).
+- **0436 (Loc. 694/08 ff.343v-344, Manteuffel to Flemming, Oct 1712, paragraph 4): N0.** The plaintext and its decipherment are printed
+  by Krauske himself in Acta Borussica BO I (1894) p. 258, as an extract of the reports of 7 or 23 Oct 1712 from "Dresden ... Vol. CXLV.
+  Loc. 694" (the leaf sits beside the P.S. of 23 Oct on f.343, so 23 Oct is likely, I). text: known. Safe: "Frame 0436's cipher names
+  (Krautt, Blaspil, Kameke) were deciphered and printed by O. Krauske in Acta Borussica, Behördenorganisation I (1894) p. 258; applying his
+  1893 table to the leaf reproduces the letters of those names." Unsafe: "Kraut's illness and the charge of theft read from cipher";
+  any wording that the reading is ours or unprinted.
+- **0375 (ff.299v-300, Sept 1712): N2.** The news the cipher spans carry -- Arnold sent to Stanislas, Eosander to the King of Sweden -- is
+  printed in Droysen IV.1 (text about p. 267-269, Anm. 511-512); no prior mapping of this ciphertext found. Safe: "Krauske's table reads the names
+  Arnold and Eosand[er] beside 'St.' and the code for the King of Sweden in a September 1712 letter of Manteuffel's (Loc. 694/08), matching
+  the two Prussian missions of summer 1712 printed in Droysen IV.1." Unsafe: "Manteuffel's report on the Bender mission deciphered."
+- **0214 (f.165, Jul 1712): N3, confidence low.** "on n'attend que ma guérison pour achever l'ouvrage" (10 keyed tokens, one M); not found in
+  Acta Borussica BO I (guérison, achever, tombasse: 0), Heinsius, or Droysen. The search covers only these three editions; Manteuffel's
+  own illness in summer 1712 was not searched in Saxon scholarship. Safe: "Krauske's 1893 table reads 'ma guérison' in a cipher run of
+  Manteuffel's letter of July 1712 (Loc. 694/08 frame 0214), beside his clear-text mention of having fallen ill; no prior plaintext located
+  in Acta Borussica BO I, Droysen IV.1 or the Heinsius correspondence." Unsafe: "a previously unread passage on Manteuffel's illness".
+- **0241, 0435, 0065, 694/09 0070: no class.** Nothing reads beyond single codes and unsettled names; there is no plaintext to classify.
+- Second opinions: SO-MANT-0214 queued for 0214 (the only N3); none for 0436 (N0) or 0375 (N2). status.json: three result rows added.
+
+**7. Postmortem and corrections.** (a) The solver's sense identification "11.60 'Kr' and lone 11 'K' ... abbreviations of the same name"
+is wrong: lone 11 is Kameke (print, three places). (b) 55.12 is Blaspil, not "unsettled". (c) 0375's "a s|sa t" is "à St[anislas]" (I).
+(d) "the pooled gate PASSes" overstates a p ~ 0.01 result that 4 of 10 fresh seeds fail and that collapses without 0214; only 0214 and,
+weakly, 0065 stand on the gate. (e) The solver's check 4 ran Heinsius only; Acta Borussica BO I, the edition Krauske made from these
+very reports and already named in this AUDIT.md (VERIFY-MANT, AUDIT2-MANT), was not searched for the seven frames, and it prints 0436.
+Lesson for the next reader of this pool: **search Acta Borussica BO I (Google Books ESf8fHFG9ngC search-inside) by a distinctive clear word
+of each frame before reading it**; its Nr. 64, 72, 82-83, 91-93 extracts cover June 1712-April 1713. Corrections are written in NOTES.md
+"V-MANTR8"; the solver's own section is left as written. Requests this audit: books.google.com 34, resources.huygens.knaw.nl 6,
+archive.org 3 (one 404); no 403/429/challenge.

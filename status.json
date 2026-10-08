@@ -8328,6 +8328,97 @@
       "depth_sentence": "On 28 Mar 1864 Butler asked Lew Wallace at Baltimore to arrest a Colonel William Chestnut of South and Pratt Streets at once and hold him safe.",
       "depth_check": "code clause: Baptism/Banditti = Baltimore (E79 and passim), Knox = Butler passim; no external check of the content; D3 withheld",
       "depth_note": "12 H of 12 code-word groups ('Wallace', 'William' plain)"
+    },
+    {
+      "date": "8 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANTR8)\" (first audit, 8 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANTR8)\""
+      ],
+      "completeness": "cipher spans of one frame",
+      "novelty": "N0",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "text": "known",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0436, ff.343v-344), Manteuffel to Flemming, Oct 1712",
+      "title": "SHStA Dresden Loc. 694/08 frame 0436 (Oct 1712): cipher names already deciphered and printed by Krauske, Acta Borussica BO I (1894) p.258",
+      "grade": "N0 (V-MANTR8), key published (Krauske 1893 manuscript table, credited). Krauske's own print gives Krautt, Blaspil, Kameke for 11.60.66.6.28 / 11.60, 55.12 and 11; the table reproduces the letters (7 codes, 14 tokens agree). MANT-R8 pooled 7 frames: 99 tokens C 67 M 30 U 2; pooled shuffled-key gate 7/1000 registered, p ~ 0.01 on 10,000 shuffles, 4 of 10 fresh seeds above the limit (V-MANTR8).",
+      "line": "Fragments read (D1, V-MANTR8 8 Oct 2026). Frame 0436's cipher names (Krautt, Blaspil, Kameke) were deciphered and printed by O. Krauske in Acta Borussica, Behördenorganisation I (1894) p. 258; applying his 1893 table to the leaf reproduces the letters of those names.",
+      "unresolved_spans": "r9-r13 (150, 160, 230, 11) outside the printed extract",
+      "depth": "D1",
+      "depth_pct": 71.4,
+      "depth_unread": {
+        "names_codes": "see AUDIT",
+        "other": "M tokens"
+      },
+      "depth_check": "V-MANTR8: cipher clause fails (longest keyed stretch < 12 vs AD ~127-138); recurring 11 misread in sense by the solver, right value supplied by the print only",
+      "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "8 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANTR8)\" (first audit, 8 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANTR8)\""
+      ],
+      "completeness": "cipher spans of one frame",
+      "novelty": "N2",
+      "plaintext_novelty": "N2",
+      "mapping_novelty": "N2",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0375, ff.299v-300), Manteuffel to Flemming, Sept 1712",
+      "title": "SHStA Dresden Loc. 694/08 frame 0375 (Sept 1712): unglossed cipher names read with Dr. Krauske's 1893 manuscript key table",
+      "grade": "N2 (V-MANTR8), key published (Krauske 1893 manuscript table, credited). Arnold and Eosand[er] spelled with every token keyed (one o|ou choice); the two missions are printed in Droysen IV.1 Anm. 511-512. MANT-R8 pooled 7 frames: 99 tokens C 67 M 30 U 2; pooled shuffled-key gate 7/1000 registered, p ~ 0.01 on 10,000 shuffles, 4 of 10 fresh seeds above the limit (V-MANTR8).",
+      "line": "Fragments read (D1, V-MANTR8 8 Oct 2026). Krauske's table reads the names Arnold and Eosand[er] beside 'St.' and the code for the King of Sweden in a September 1712 letter of Manteuffel's (Loc. 694/08), matching the two Prussian missions of summer 1712 printed in Droysen IV.1.",
+      "unresolved_spans": "35, 46 person codes; 187 low",
+      "depth": "D1",
+      "depth_pct": 77.8,
+      "depth_unread": {
+        "names_codes": "see AUDIT",
+        "other": "M tokens"
+      },
+      "depth_check": "V-MANTR8: names only; cipher clause fails; frame's own gate 223/1000 (16 letters, not gated)",
+      "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "8 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANTR8)\" (first audit, 8 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANTR8)\""
+      ],
+      "completeness": "cipher spans of one frame",
+      "novelty": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0214, f.165), Manteuffel to Flemming, Jul 1712",
+      "title": "SHStA Dresden Loc. 694/08 frame 0214 (Jul 1712): unglossed cipher run read with Dr. Krauske's 1893 manuscript key table",
+      "grade": "N3 (V-MANTR8, low confidence), key published (Krauske 1893 manuscript table, credited). 'ma guerison' from 10 keyed tokens (one M); frame's own gate 4/1000 at 12 letters (reported, not gated). MANT-R8 pooled 7 frames: 99 tokens C 67 M 30 U 2; pooled shuffled-key gate 7/1000 registered, p ~ 0.01 on 10,000 shuffles, 4 of 10 fresh seeds above the limit (V-MANTR8).",
+      "line": "Fragments read (D1, V-MANTR8 8 Oct 2026). Krauske's 1893 table reads 'ma guérison' in a cipher run of Manteuffel's letter of July 1712 (Loc. 694/08 frame 0214), beside his clear-text mention of having fallen ill; no prior plaintext located in Acta Borussica BO I, Droysen IV.1 or the Heinsius correspondence.",
+      "unresolved_spans": "110.297 (U), transcription not eye-checked",
+      "depth": "D1",
+      "depth_pct": 64.3,
+      "depth_unread": {
+        "names_codes": "110.297",
+        "other": "M tokens"
+      },
+      "depth_check": "V-MANTR8: cipher clause fails (10 letters vs AD ~127-138); no recurring code",
+      "decode_status": "Non-decrypted"
     }
   ],
   "lanes": [
