@@ -11591,3 +11591,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:10 | V-MANTR8 verifier (Opus) | huygens take (<=6 requests, heinsius search_in_text); for LANE FAMILY (account 2)
 2026-10-08 23:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:10 UTC: spawned 0 (), queued left 0
 2026-10-08 23:10 | V-MANTR8 verifier (Opus) | huygens release (6 requests); for LANE FAMILY (account 2)
+2026-10-08 23:11 | V-SUR0744 (verifier) | done (23:03-23:11 UTC by date -u, brief met): na-suriname-map-1781 0744 left -- score.py --check exit 0; pass A holds 6/6 fresh seeds, pass B fails 2/6 (0.722 = p99), unit PASS within seed noise; gate tests the [y-fam] class not the dot (dot vs undotted Fisher p 1.0/0.52); no key value, no file change beyond AUDIT/NOTES; next units must pre-register a dot-label permutation gate + 10k-draw p99 (AUDIT.md "AUDIT (V-SUR0744)", a3ae2fc66); for LANE FAMILY (account 2)
