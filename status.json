@@ -7143,6 +7143,170 @@
       "depth_sentence": "On 18 Dec 1864 Col. Bradley, chief quartermaster at City Point, is told to send off without delay those of the named boats that are in the James, under the orders first given for Sherman's transports.",
       "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, FV-LS4-R2b); code clause: Abbot/Abbott = James in N2-CJ and N2-CE; no external check; matched control LS4-R2b (0 of 3 shuffle clauses)",
       "depth_note": "7 H of 8 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-LS5-B)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-LS5-B verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "grade": "N3",
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS5-B)' section 5",
+      "reading_version": "LS5-R1d 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
+      "title": "Eckert 1864: Stanton to Maj. Gen. Peck, New York, 3 Sept 1864 8.30 PM, the plot to seize the Sound steamers passed to the Navy (E123)",
+      "line": "Read at grade H with the period War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription (telegram, rebel, steamers, Secretary of the Navy and the signature are code); Peck's telegram it answers is printed (OR ser. I vol. 43 pt 2 p.21; ORN ser. I vol. 3 p.197), but no prior printed text of this reply was located in OR I/43 pt 2, ORN I/3, Internet Archive full text, Google Books or the Huntington's full-text layer (searched 8 Oct 2026).",
+      "gap": "N3 (weak): frame clear in the public transcription of 9062; Welles's diary, Stanton papers and press of the day unread",
+      "depth": "D3",
+      "depth_pct": 94.1,
+      "depth_unread": {
+        "names_codes": "1 M (tail filler)",
+        "other": "0"
+      },
+      "completeness": "16 H of 17 code words",
+      "unresolved_spans": "",
+      "phrases": [
+        "Huntington mssEC 19 p.170, pointer 9062, E123"
+      ],
+      "document_id": "Huntington mssEC 19 p.170, pointer 9062, E123",
+      "documents": [
+        "Huntington mssEC 19 p.170, pointer 9062, E123"
+      ],
+      "depth_sentence": "At 8.30 PM on 3 Sept 1864 Stanton tells General Peck at New York that his telegram about the rebel plot to seize the Long Island Sound steamers has been received and passed to the Secretary of the Navy, and offers the War Department's help to owners or shippers in guarding or arming their vessels.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS5-B); external: ORN I/3 p.197 prints Eckert forwarding Peck's telegram to Welles on 3 Sept 1864 at the Secretary of War's direction (the decoded 'communicated to the Secretary of the Navy'); code clause Weasel = Steam in E123 and E143; matched control LS5-R1d (No.2 0, No.9 0, shuffled 0)",
+      "depth_note": "16 H of 17 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-LS5-B)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-LS5-B verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "grade": "N3",
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS5-B)' section 5",
+      "reading_version": "LS5-R1e 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
+      "title": "Eckert 1864: Quartermaster General to Maj. Van Vliet, New York, 30 June 1864 3 PM, steamers to bring troops from New Orleans (E143)",
+      "line": "Read at grade H with the period War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription (steamers, troops, New Orleans and the signature are code); it answers Van Vliet's clear 1 PM telegram of the same day (Huntington mssEC 10 p.308); no prior printed text located in OR ser. I vols. 40 pt 2, 34, ser. III vol. 4, Internet Archive full text or Google Books (searched 8 Oct 2026).",
+      "gap": "N3 (weak): frame clear in the public transcription of 8992; QMG letters-sent (NARA RG 92) unread",
+      "depth": "D3",
+      "depth_pct": 93.3,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1 M (whiskey = troops, spelling variant)"
+      },
+      "completeness": "14 H of 15 code words",
+      "unresolved_spans": "",
+      "phrases": [
+        "Huntington mssEC 19 p.100, pointer 8992, E143"
+      ],
+      "document_id": "Huntington mssEC 19 p.100, pointer 8992, E143",
+      "documents": [
+        "Huntington mssEC 19 p.100, pointer 8992, E143"
+      ],
+      "depth_sentence": "At 3 PM on 30 June 1864 the Quartermaster General tells Major Van Vliet at New York to dispatch, as they become available, all steamers in service fit to bring troops from New Orleans, not to take up ocean steamers not already in service, and that he is to prepare for a large number of troops.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS5-B); image 10 lines (FV-LS5-B); external: Van Vliet's clear telegram, New York 30 June 1864 1 PM, to the Quartermaster General (Huntington mssEC 10 p.308, pointer 10450) lists steamers sailed for New Orleans and asks 'shall any more Steamers be sent'; code clause Weasel/Wayworn = Steam; matched control LS5-R1e",
+      "depth_note": "14 H of 15 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-LS5-B)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-LS5-B verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "grade": "N3",
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS5-B)' section 5",
+      "reading_version": "LS5-R1e 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
+      "title": "Eckert 1864: Capt. Geo. K. Leet to Lt. Col. Bowers, City Point, copy to Sheridan, 12 Aug 1864, Hill's brigade to Early, Fitz Lee at Orange C.H., Longstreet in the Valley (E145)",
+      "line": "Read at grade H with the period War Department Cipher No. 1; about half is in clear in the Huntington's public transcription; not located in OR ser. I vol. 42 pt 2, Internet Archive full text or a Google Books snippet search of the Papers of U. S. Grant (vol. 11 pages not read; searched 8 Oct 2026).",
+      "gap": "N3 (weak): about half clear in the public transcription of 9044; Grant Papers vol. 11 pages around 12 Aug 1864 and OR I/43 pt 1 unread",
+      "depth": "D2",
+      "depth_pct": 90.3,
+      "depth_unread": {
+        "names_codes": "3 M (France, Beaver, Brussells = Shenandoah)",
+        "other": "0"
+      },
+      "completeness": "28 H of 31 code words",
+      "unresolved_spans": "",
+      "phrases": [
+        "Huntington mssEC 19 p.151, pointer 9044, E145"
+      ],
+      "document_id": "Huntington mssEC 19 p.151, pointer 9044, E145",
+      "documents": [
+        "Huntington mssEC 19 p.151, pointer 9044, E145"
+      ],
+      "depth_sentence": "On 12 Aug 1864 Captain Leet at Washington reports to Lt. Col. Bowers at City Point, with a copy for Sheridan at Winchester, that a brigade of Hill's corps was sent to Early the previous Friday while its division was under marching orders, that Fitz Hugh Lee's cavalry was at Orange Court House on Wednesday night, that Longstreet is said to be in the Valley with his corps, and that the Central road is not running beyond Beaver Dam.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS5-B); image 13 lines (FV-LS5-B); code clause Pelton/Pelham = Corps in 'Hill's corps' and 'his corps'; no external check of this text; matched control LS5-R1e",
+      "depth_note": "28 H of 31 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-LS5-B)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-LS5-B verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "grade": "N3",
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS5-B)' section 5",
+      "reading_version": "LS5-R1e 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
+      "title": "Eckert 1864: Quartermaster General via Capt. Bruch to Brig. Gen. Allen, Louisville, 12 Dec 1864 2 PM, should the Military Railroads take the Louisville and Nashville (E146)",
+      "line": "Read at grade H with the period War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription (Louisville, Nashville, Railroad, Army and the signature are code); no prior printed text located in OR ser. I vol. 45 pt 2, Internet Archive full text, Google Books or the Huntington's full-text layer (searched 8 Oct 2026).",
+      "gap": "N3 (weak): frame clear in the public transcription of 9139; 'Tartan', 'Stan' unread; QMG and USMRR records unread",
+      "depth": "D2",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "2 unread fillers (Tartan, Stan), not counted"
+      },
+      "completeness": "26 H of 26 code words",
+      "unresolved_spans": "",
+      "phrases": [
+        "Huntington mssEC 19 p.245, pointer 9139, E146"
+      ],
+      "document_id": "Huntington mssEC 19 p.245, pointer 9139, E146",
+      "documents": [
+        "Huntington mssEC 19 p.245, pointer 9139, E146"
+      ],
+      "depth_sentence": "On 12 Dec 1864 the Quartermaster General asks Brig. Gen. Allen, chief quartermaster at Louisville, whether he concurs with General Donaldson's recommendation that the manager of the U.S. Military Railroads take immediate possession of the Louisville and Nashville Railroad, or whether placing military-railroad rolling stock on that road would suffice.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS5-B); code clause Dolphin/Dragon = Louisville and Empress/Embrace = Nashville with Weldon = Rail Road twice in the message; no external check; matched control LS5-R1e",
+      "depth_note": "26 H of 26 code words"
     }
   ],
   "lanes": [

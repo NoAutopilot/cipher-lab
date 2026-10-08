@@ -4606,3 +4606,103 @@ controls passed) stand for E103, E104, E106, N2-DB.
   be-api.us.archive.org 5, googleapis.com books about 25 (three 503s, each retried once). Subagents 0.
 - Rows written in this session: status.json results for E106, E122, E104, E103 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
   SO-ECKERT-E106, SO-ECKERT-E122, SO-ECKERT-E104, SO-ECKERT-E103 (prompts in second-opinions/); WORK-QUEUE.tsv AUD2-LEDGER-1.
+
+## AUDIT (FV-LS5-B)
+
+Verifier FV-LS5-B (account 1, for LANE LEDGER), 8 Oct 2026, 18:12-18:4x UTC by `date -u`; a separate session from the readers
+LS5-R1d and LS5-R1e (account 1), not protecting their conclusions. Scope: **E123** (Stanton's reply to Peck; NOTES "## LS5-R1d"),
+**E143, E145, E146** (NOTES "## LS5-R1e"); ciphertext.txt, Cipher No. 1, key.md. Nothing decoded beyond re-running `decode.py --check`
+(exit 0, "reading.md is current") and looking code words up in key.md. Key source for every item: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. `tools/prior_work.py` does not exist: the prior-work checklist
+(.claude/briefs/prior-work-step.md) was run by hand, one line per check in section 1.
+
+### 1. Prior-work checklist, duplicate diff and step 0
+- (0) Duplicate diff (FV-LS4-R2b lesson): pointer, date and addressee of each entry against every ID in NOTES.md, ciphertext*.txt and
+  status.json. 9062 carries only E123 and the step-0 Blair entry (not filed); 8992 carries E143 and the step-0 Stager entry; 9044 carries
+  E145 and the 11 AM Sholes/Sherman entry (not filed); 9139 carries E146 and N2-BK (12 Dec 1864, to R. R. McCaine: a different telegram).
+  No other filed entry shares date + addressee (12 Aug 1864: E38/E39 are Seward to postmasters; N2-BZ part 2 is Leet to Bowers of 14 Aug;
+  E66/O9-BB to Van Vliet are 3 Jan 1865 and 22 Apr 1864). **No duplicate**; none withdrawn.
+- (1) Our own work: the four appear only in the readers' sections, ciphertext.txt and reading.md; no AUDIT, status.json or SO row before this.
+- (2)+(3) The Huntington's public transcription of each pointer (sources/mssEC19/p<pointer>.json), read first: ciphertext.txt equals it word
+  for word for all four entries (script diff, normalized whitespace), so the readers' "image-read" text is the volunteer text. Frames are in
+  clear; the substance words are code in each:
+  - **9062 (E123)**: "Your wreathe respecting the walnut plot to seize the sound weaselers has been recd & plated tooth Burton ... If this
+    quadrant can render any service tooth owners or shippers whack saddling or niggarding their vessels it wilby cheerfully given & you may
+    so sweden them walrus Brutus" -- telegram, rebel, steamers, communicated, Secretary of Navy, Department, towards, guarding, arming,
+    inform and the signature (Secretary of War) are code.
+  - **8992 (E143)**: "all the weaselers now in service fit to bring whiskey from Eddy ... It is not tartar to take up ocean wayworners not
+    already in service unity I am not advised torch number of whist ... Webster Bender" -- steamers (twice), troops (twice), New Orleans,
+    necessary, and the signature (Quartermaster General) are code.
+  - **9044 (E145)**: about half clear; Corps, Brigade, Division, Lee, Cavalry, Orange C.H., Longstreet, Shenandoah, Force, City Point,
+    Sheridan, Winchester, the date 10th and Road are code; signature "Geo K Lect [Leet]" clear.
+  - **9139 (E146)**: frame clear ("Donaldson recommends that the manager of ... States Military ... be instructed to take immediate
+    possession ..."); General, Quartermaster, Louisville, Nashville, Railroad (three times), United, Necessary, Army, Road and the signature
+    (Quartermaster General) are code.
+- **Image** (two entries, the longest and the one with a doubtful key word): IIIF 2400 px of 9044 and 8992 (2 requests, scratch, not
+  committed), lower halves viewed at 1100-1200 px. E145's 13 lines and E143's 10 lines agree with ciphertext.txt word for word, including
+  "Brussells", "France Feather", "Hoax", "Pelton", "Leet" (E145) and "whiskey", "whist", "wayworners", "Bender" (E143). 9062 and 9139 not
+  viewed (transcription only).
+- Same-day replies and antecedents (prior-work check 5, received ledgers): see section 2; the Huntington full-text layer finds **Van Vliet's
+  clear telegram of 30 June 1864 1 PM** (mssEC 10 p.308, pointer 10450), which E143 answers.
+
+### 2. External checks found (not prints of these telegrams)
+| ID | what | where | bearing |
+|---|---|---|---|
+| E123 | Peck's telegram of 3 Sept 1864 that E123 answers ("Collector Barney reports that his detectives have discovered a plot of the Confederate pirates to capture six Long Island Sound passenger steamers ...") | OR ser. I vol. 43 pt 2 p.21 (IA `warofrebellion432unit`, local grep) | antecedent, as the reader found |
+| E123 | "I am directed by the Secretary of War to forward you the enclosed telegram from Major-General Peck. ... THOS. T. ECKERT", Washington, 3 Sept 1864, to Welles, Secretary of the Navy, with Peck's telegram enclosed; Welles's same-day order sending the Florida to New London | ORN ser. I vol. 3 p.197 (IA `officialrecordso0003honh`, local grep; found by Google Books snippet and be-api positive control "Collector Barney reports that his detectives", 13 hits) | **independent confirmation** of the decoded clause "has been received & [communicated] [to the] [Secretary of Navy]": the War Department did pass Peck's telegram to the Navy that day. ORN does not print Stanton's reply to Peck ("owners or shippers", "guarding or arming" absent from the volume). |
+| E143 | Van Vliet, New York, 30 June 1864 1 PM (received 2 PM), to the Quartermaster General: "The following steamers have sailed for New Orleans 'McClellan' 24 'Victor' and 'Karnack' 28 'Arago' 29 'Thomas A Scott' 30 ... shall any more Steamers be sent ... S Van Vliet Qr Mr" | Huntington mssEC 10 p.308 (pointer 10450), received ledger, in clear (dmGetItemInfo) | **independent confirmation**: E143 (3 PM the same day, signed [Qr Master Genl]) answers the question, and its decoded [Steam]ers and [New Orleans] are what Van Vliet's clear telegram is about. Context: Ingalls's orders of 26 June sending ocean steamers to New Orleans to transport troops (OR I/40 pt 2 pp.432-433; Huntington mssEC 10 pp.300-301 in clear). Van Vliet's telegram was not found in OR I/40 pt 2, I/34 pt 4, III/4 ("Karnack"/"Karnak" only in an errata list of III/4). |
+| E145 | Babcock, 5 Aug 1864: "no trains are running on the Virginia Central Railroad from Richmond beyond Beaver Dam Station"; Sharpe, City Point, 12 Aug 1864: "Dispatch from Captain Leet says that our men report these troops to have passed through Gordonsville" | OR ser. I vol. 42 pt 2 pp.86-87 and the 12 Aug Sharpe dispatch (IA `warofrebellion422unit`) | context only; Sharpe's wording is not E145's, and the index lists Leet-Bowers correspondence in that volume only at pp.471, 567 (25 and 29 Aug). Not used as a depth check. |
+| E146 | -- | OR ser. I vol. 45 pt 2 (Allen's correspondence pp.20, 86, 574; Donaldson pp.251, 308, 561): nothing of 12 Dec on taking possession of the L&N | none found |
+
+### 3. Search log, all four not located in print (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| Holding archive, CONTENTdm full text (p16003coll11, `CISOSEARCHALL^..^all^and`, sixth segment 1, title!transc!callid) | "Peck steamers", "Barney detectives", "Electric Spark", "shippers vessels", "ocean steamers", "Vliet steamers", "not advised number", "marching orders Friday", "Fitz Hugh Wednesday", "running order", "Donaldson recommends", "rolling stock", "changing hands", "Brussells Longstreet", "Allen Louisville Nashville possession", "Van Vliet New Orleans steamers"; positive controls: "shippers vessels", "marching orders Friday", "Donaldson recommends", "changing hands" each return the entry's own page | only the entries' own pages, plus Van Vliet's 30 June telegram (section 2) and Ingalls's 26-27 June telegrams; no clear copy or reply of E123, E145, E146 |
+| OR / ORN by date, local djvu grep, normalized | I/43 pt 2 (`warofrebellion432unit`: E123), ORN I/3 (`officialrecordso0003honh`: E123), I/40 pt 2 (`warofrebellion402unit`: E143), I/34 pt 3 and pt 4 by identifier (`warofrebellion343unit`, `warofrebellion344unit`: E143), III/4 (`cu31924079575373`: E143), I/42 pt 2 (`warofrebellion422unit`: E145), I/43 pt 1 (IA `warofrebellion431unit`, which is in fact the Feb 1865 Carolinas volume by its text: not the right volume; I/43 pt 1 itself unread), I/45 pt 2 (`warofrebellion452unit`: E146); `warofrebellion403unit` answered 500 (not retried) | phrases "sound steamers", "cheerfully given", "owners or shippers", "guarding or arming", "fit to bring", "not already in service", "prepare for a large number", "van vliet", "longstreet is in the valley", "hill's corps", "not in running order", "dispatch of the 10th", "donaldson recommends", "take immediate possession", "changing hands"; index entries Peck, Leet, Allen, Bruch, Van Vliet: nothing for any of the four |
+| IA full text (be-api fts, no identifier) | positive control "Collector Barney reports that his detectives" (13 hits, ORN I/3 and OR I/43 pt 2 scans); "plot to seize the sound steamers", "guarding or arming their vessels", "owners or shippers towards guarding", "will be cheerfully given and you may so inform them", "steamers now in service fit to bring", "ocean steamers not already in service", "Longstreet is in the Valley and his corps", "Central road is not in running order", "was sent to Early last Friday", "immediate possession of the Louisville and Nashville" (all 0); "not advised of the number of troops" (2, an 1840 Senate document); "Donaldson recommends that the manager" (2, unrelated modern books); 502s retried once | none located |
+| Papers of U. S. Grant (Google Books, country=US, key) | E145 is to Grant's AAG Bowers at City Point: "Leet" "Fitz Hugh Lee's cavalry" Orange (vol. 12 only, Leet's later reports, 16 Aug on); `intitle:"Papers of Ulysses S. Grant"` with Leet/Bowers/"Beaver Dam", with "Orange Court House" Longstreet Valley, with "Hill's corps" Early "last Friday" (0); "Leet" "marching orders" "Beaver Dam" Longstreet (no Grant Papers hit). Vol. 11 (June 1-Aug 15, 1864) is on Google Books but returned no snippet for these words | not located; vol. 11 pages around 12 Aug not read (snippet search only) |
+| Basler, Lincoln | none of the four is to or from Lincoln | not searched |
+| Google Books, other | "sound steamers" Stanton Peck (ORN I/3 and OR I/43 pt 2 only: Peck's telegram and Eckert's forwarding), "guarding or arming their vessels", "steamers now in service fit to bring", "not advised of the number of troops", Meigs "Van Vliet" "June 30, 1864", "Central road is not in running order", "Donaldson recommends" L&N, "interruption caused by changing hands", Donaldson "Military Railroads" L&N Allen Dec 1864 | none of the four located |
+| Press of the day | not searched (cap) | unsearched: say so |
+| Not searched / unreachable | Butler's Correspondence (none of the four is Butler traffic); QMG letters-sent (NARA RG 92), Stanton papers, Welles's diary (E123); OR I/43 pt 1 (right identifier not found); HathiTrust; JSTOR; OpenAlex/S2/CORE (cap) | unread |
+
+### 4. Corrections to the readers' files
+- **E145 "Brussells"** is the key row Brussels = Shenandoah (key.md p.10 l.10, H), misspelt by the clerk with a double l, so the decoder left
+  it as a plain word. "Longstreet is in Brussells [Valley]" reads "[Longstreet] is in [the] [Shenandoah] [Valley]". Graded **M** (spelling
+  variant), as E100's "whiskey" was. E145 becomes H 28, M 3 (France, Beaver, Brussells). reading.md and ciphertext.txt are not changed
+  here (the decoder needs a `plain:`/variant line; a reader's job).
+- **E143 "whiskey"** is the key row Whisky = Troops, spelling variant (image confirms "whiskey"): "fit to bring [troops] from [New
+  Orleans]". The reader listed it as "not in the key"; graded **M**. E143 becomes H 14, M 1.
+- E146 is from the Quartermaster General (signature Belcher = Qr Master Genl U.S., H), sent through Capt. Bruch at Louisville to Allen; the
+  readers' table title "Capt. Bruch, Louisville, to Brig. Gen. Allen" names the operator, not the sender.
+- No over-claiming sentence found in NOTES "## LS5-R1d"/"## LS5-R1e": both say "not located", no novelty words.
+
+### 5. Grades and classification (key `period` for all)
+`depth_pct` = H / (H + I + M) over the message's code words (tail fillers excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E123 Stanton to Peck, New York, 3 Sept 1864 8.30 PM | **N3** (weak) | unknown: frame clear in the transcription of 9062; antecedent printed (OR I/43 pt 2 p.21, ORN I/3 p.197) | **D3** | 94.1 (16 H of 17; tail "French [Thomas]" M) | external: ORN I/3 p.197 prints Eckert forwarding Peck's telegram to Welles on 3 Sept at Stanton's direction (the decoded "communicated to the Secretary of the Navy"); code clause: Weasel = Steam reads in E123 and E143 (twice); matched control LS5-R1d (No.2 0, No.9 0, shuffled 0); `decode.py --check` exit 0 |
+| E143 QMG to Maj. Van Vliet, New York, 30 June 1864 3 PM | **N3** (weak) | unknown: frame clear in the transcription of 8992 | **D3** | 93.3 (14 H of 15; whiskey M) | external: Van Vliet's clear telegram of 30 June 1 PM (mssEC 10 p.308) asks "shall any more steamers be sent" about steamers sailed for New Orleans; image, 10 lines; code clause: Weasel/Wayworn = Steam twice here and in E123; matched control LS5-R1e |
+| E145 Leet to Bowers, City Point, copy to Sheridan, 12 Aug 1864 | **N3** (weak) | unknown: about half clear in the transcription of 9044 | **D2** | 90.3 (28 H of 31) | image, 13 lines; code clause: Pelton/Pelham = Corps in "Hill's corps" and "his corps"; no external check of this text; matched control LS5-R1e (No.2 not coherent, shuffled 0) |
+| E146 QMG via Bruch to Brig. Gen. Allen, Louisville, 12 Dec 1864 2 PM | **N3** (weak) | unknown: frame clear in the transcription of 9139 | **D2** | 100 (26 H of 26; "Tartan", "Stan" unread, not counted) | transcription; code clause: Dolphin/Dragon = Louisville and Empress/Embrace = Nashville with Weldon = Rail Road, twice in one message, and Windham/Wiley = Road; no external check; matched control LS5-R1e |
+
+Safe sentences (rule 10 wording):
+- E123: "Stanton's reply of 3 Sept 1864 to General Peck about the plot to seize the Long Island Sound steamers, read at grade H with the period
+  War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription and Peck's telegram is printed (OR I/43 pt 2
+  p.21; ORN I/3 p.197); no prior printed text of the reply was located in what we searched (8 Oct 2026)." Unsafe: "an unpublished reply".
+- E143: "The Quartermaster General's 3 PM reply of 30 June 1864 to Van Vliet at New York on steamers to bring troops from New Orleans, read at
+  grade H with the period Cipher No. 1; frame in clear in the public transcription; no prior printed text located in what we searched." Unsafe:
+  "first decipherment".
+- E145: "Leet's 12 Aug 1864 report to Bowers on Hill's, Fitz Hugh Lee's and Longstreet's commands, read at grade H; about half is in clear in the
+  public transcription; not located in OR I/42 pt 2 or by snippet search of the Grant Papers (vol. 11 pages not read)." Unsafe: "not in the
+  Grant Papers".
+- E146: "The Quartermaster General's 12 Dec 1864 question to Allen on taking possession of the Louisville and Nashville Railroad, read at grade H;
+  frame in clear in the public transcription; not located in OR I/45 pt 2 or the other sources searched." Unsafe: "previously unread".
+
+### 6. Postmortem and requests
+- Failure: none of the four over-claims; the readers' "image-read" is the volunteer text (true for both entries checked on the image), and the
+  readers missed two spelling-variant code words (Brussells, whiskey) that carry substance. Lesson: a plain-looking word that is one letter
+  off a key row is checked against key.md before it is left plain.
+- Requests: hdl.huntington.org 20 (16 CONTENTdm dmQuery, 2 dmGetItemInfo, 2 IIIF images; under the LANE LEDGER token, 3.2 s apart);
+  archive.org 10 (`_djvu.txt`, one 500); be-api.us.archive.org 17 (several 502s, each retried once); googleapis.com books 24. Subagents 0.
