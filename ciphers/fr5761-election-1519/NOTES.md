@@ -630,3 +630,17 @@ canvas 105, 107-108, 111), full-page symbol cipher near Langeac/d'Orval items of
 (2023; Tomokiyo GL.htm "De la Tremoille's(?) cipher"), and their signs look unlike the eight blocks here at sheet scale. The
 fr.5761 ff.54-172 copies with names in cipher are printed with names resolved in RTA J.R. I (Kluckhohn 1893), so they are a
 possible C-grade check of the name codes (no leaf walk yet), not unread text. Rows: `keyhunt/2026-10-07-KH2A.tsv`.
+
+## D1A-SRCH2: context quotes for the R9-ELEC hits (8 Oct 2026, 06:15 UTC by date -u)
+
+The search itself was done by R9-ELEC (6 Oct, above); not repeated. This pass re-fetched the same OCR (archive.org `bub_gb_0gFoAAAAMAAJ` `_djvu.txt`, 3,161,610 bytes, 1 request) to quote the hits in context. OCR text, not page images (rule 2); search results only (rule 10).
+- 183024: "Moltzan an Joachim, d. d. ... die jovis post letare anno etc XVIII (Maerz 18). Orig. zum Teil chiffriert. Berlin."
+- 1082557: "Soeben kommt ein Bote von Joachim zu Moltzan mit einem chiffrierten Briefe fuer den Koenig, den sie nicht aufloesen koennen."
+- 2429009: "Kurfuerst Joachim an Koenig Franz ... Aus Dresden ... Cop. (die Stichworte in Chiffren mit ueber-geschriebener Aufloesung)" -- Joachim's own copy, no Moltzan/Cordier named in the passage.
+- 2685183: "Aus Paris Bibl. nat. F. fr. [shelfmark OCR-garbled 'Von.'], die Namen in (den bekannten) Chiffren" -- Bonnivet's 18 June 1519 letter to Moltzan (header OCR garbled). 2827217: "Aus Paris Bibl. nat. F. fr. [garbled 'VGL'] Cop., die Namen im Chiffren" -- Orval, Bonnivet, Guillart to Francis I. Neither shelfmark reads 5761 in the OCR; to be checked on the page image.
+- 1145143: Robertet to Bonnivet 4 Mar 1519: letters sent to the chancellor "pour translater et deschiffrer ce qui estoit en latin et chiffre"; note cites "F. fr. 5756".
+Not found: the key list or any printed code-group table; no "Ziffer"/"Chiffre" next to Cordier. Vol. II/III not searched. Requests: archive.org 1 (first attempt returned 0 bytes with the descriptive UA, one retry with a browser UA succeeded). Status unchanged.
+
+## D1A-SRCH2: further print search (8 Oct 2026, 06:15 UTC)
+
+D2-VIEU (5 Oct) and R9-VIEU (6 Oct) already ran print_check.py on the named phrases and variants; not repeated. This pass tried the next step they named, Google Books API (country=US, key) and be-api, on the two catalogue volumes and the Nevers volume: HQo4AQAAMAAJ, JUgMAQAAMAAJ, GP9eAAAAcAAJ are ALL_PAGES (full view) but the API returns no snippet inside them (the "30 septembre 1587 Vieuville" query lists HQo4AQAAMAAJ and JUgMAQAAMAAJ with an empty snippet); dsInahmnar8C (Les ducs de Nevers et l'Etat royal, 2006) is PARTIAL. Query "Vieuville Saint-Aignan 1587 Nevers": 18 volumes, top 5 are 1842 encyclopedia lists of dukes (noise); be-api same terms: 10 volumes, genealogical/Breton armorial noise. Not found: any printed text of the 30 Sept 1587 letter. Not done: page reading of the full-view catalogue volumes (books.google page view is blocked from the cloud; needs the owner's machine or an IA copy). Requests: googleapis 6, be-api 1. Status stays blocked.
