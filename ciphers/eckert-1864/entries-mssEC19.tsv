@@ -67,7 +67,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8921	29	2	No 1 Ft M  Washn April 6th 1864	No 1 Ft M		86	11	22	5	1	none	4		1
 8922	30	0	F. S. Van Valkenburg Nashville  Washn Apl 6th 1864	F. S. Van Valkenburg Nashville	No 3 Tim	32	10	17	1	1	none	3		1
 8922	30	1	Geo. D. Sheldon  Washn Apr 6th 1864 230 PM	Geo. D. Sheldon	No 4 F. M.	75	13	32	3	1	none	6		1
-8922	30	2	Geo D. Sheldon (1)  Washn Apr. 6th 330 P. M 1864	Geo D. Sheldon (1)		65	13	17	3	1	none	4		1
+8922	30	2	Geo D. Sheldon (1)  Washn Apr. 6th 330 P. M 1864	Geo D. Sheldon (1)		65	13	17	3	1	none	4	LS-R4 E47	1
 8923	31	0			No 6. N. Y.	3	0	1	0	short	none	0		3
 8923	31	1	John Horner N. Y. (9)  Wash'n Apr 7th 1864 2 P. M	John Horner N. Y. (9)	no 35 Pittsburg  2.30 PM	56	10	20	8	9	warofrebellion33unit@leaf0(cov14)	14	O9-T	3
 8923	31	2	F. S. Van Valkenburg  Vols multiply Parade  Washn D. C. Apr 7th 1864	F. S. Van Valkenburg Vols multiply Parade		127	30	41	7	1	warofrebellion323unit@leaf0(cov55)	55		3
@@ -139,7 +139,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8956	64	0	SH Beckwith (2)  Wash 130 pm May 3d 1864	SH Beckwith (2)	be sent Wiley Burglar	90	14	35	7	2	none	6	N2-AU	2
 8956	64	1	Capt Sam 3rd (1)  Wash'n May 3rd 1864 4 P. M	Capt Sam 3rd (1)		56	20	27	8	1	warofrebellion343unit@leaf0(cov17)	17		3
 8957	65	0	Capt Sam Bruch  Wash May 4th 1864	Capt Sam Bruch		122	22	38	8	1	warofrebellion343unit@leaf0(cov64)	64		3
-8957	65	1	J W Sampson Balto  Washn May 5th 1864 1130 am	J W Sampson Balto		48	20	25	4	1	none	4		1
+8957	65	1	J W Sampson Balto  Washn May 5th 1864 1130 am	J W Sampson Balto		48	20	25	4	1	none	4	LS-R4 E48	1
 8958	66	0	Col Stager  Wash May 6. 1864	Col Stager		60	6	17	2	2	none	4		1
 8958	66	1	5 pm  Martinsburg May 7th		Maj Genl	143	10	26	1	clear	warofrebellion371unit@leaf0(cov62)	62		3
 8959	67	0	Jisse Bunnell  Wash'n May 8th 1864 11. am	Jisse Bunnell	No 1  355 PM	162	40	68	6	1	warofrebellion343unit@leaf0(cov45)	45		3

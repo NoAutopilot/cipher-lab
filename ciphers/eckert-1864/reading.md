@@ -365,5 +365,17 @@ Code-word tokens: H 11.
 
 Code-word tokens: H 9.
 
-Totals over the 39 entries: H 634, C 12, I 0, M 0.
+**E47 | Page 30 | 8922 | 6 Apr 1864 3.30 PM, to Lt. Col. Biggs at Fort Monroe (operator Geo. D. Sheldon)**
+
+[Washington] {date: Apr 6} {time: 3.30 PM} For Lt [Colonel] Biggs Vintur [Monroe] Send Salvor to Annapoleis if still at [Monroe] & not under Engagements making the trip a serious loss [.] Order a [1000] tons of coal a float at [Monroe] if it can be spared to Hilton Heads Advise me how much you can send that I may replace it from the [North]  {tail: [signed] Meigs [Quartermaster] [General]}
+
+Code-word tokens: H 13.
+
+**E48 | Page 65 | 8957 | 5 May 1864 11.30 AM, to 'Season Banditti' at Baltimore (operator J. W. Sampson)**
+
+[Washington] {time: 11.30 AM} {date: May 5} for Season [Baltimore] [.] [2] more [Parenthasis] [4] in all [Parenthasis] [Regiment]'s have been ordered to report to you in [Baltimore] [.] Porters [Regiment] of [New York] [Heavy] [Artillery] will be held in readiness to take the field either as [Artillery] or [Infantry]  {tail: [signed] [General-in-Chief]}
+
+Code-word tokens: H 20.
+
+Totals over the 41 entries: H 667, C 12, I 0, M 0.
 <!-- decode.py: derived block ends -->
