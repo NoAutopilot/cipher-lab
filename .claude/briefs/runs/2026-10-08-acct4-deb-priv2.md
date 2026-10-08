@@ -41,3 +41,30 @@ only on noise, each control FIRST at the new measured noise and at the pooled N 
 syllabic C method, H's Copiale pipeline `pipeline.py copiale --noise <new>`); target only if its control passes.
 Report what was found and where it was not found; do not classify novelty. A pass of any solver goes to a separate
 verifier session; nothing about a reading is published before the museum's permission (RESTRICTED.md rule 2).
+
+## Wave 3 rows (LANE DEB-RUN, 8 Oct 2026 03:5x UTC by date -u), on PRIV1D's and PRIV2A's own named next steps
+
+### DEB-PRIV2A2 -- are the public truth labels wrong? (cap USD 3, box 30 min; Opus 5.5 calls)
+PRIV2A: museum c4 tiles read at 4.2 pct reader disagreement, but 10.4 pct of boxes have both readers agreeing on a label
+other than the public-pixel "truth" -- and that truth came from the public settled draft, so it may itself be wrong.
+(1) PREREG first (private, pushed before any call): the adjudication rule and the re-score are fixed now -- a box's truth
+label is replaced only if a third, blind adjudicator (shown the museum crop and the public crop side by side, plus the
+two candidate ids in random order, never the readers' answers or which is "truth") picks the readers' label; mixed in:
+5 decoy boxes where the public truth is certain (H-graded in all passes), and the adjudicator must keep the truth on
+>= 4 of 5 decoys or the call is void. (2) Re-score the PRIV2A known-answer error with the adjudicated labels.
+Gate unchanged: <= 8 pct. Public side: the two error figures only (they describe the transcription, not the scans).
+Circularity note for the report: the adjudicator sees the same museum pixels the readers did; a pass licenses c4
+re-transcription, not a claim about any one sign.
+
+### DEB-PRIV2B (re-scoped; replaces the 6-page version above, runs only on a PRIV2A2 pass) -- cap USD 8, box 60 min
+c4 only (c4a, c4b): 2 blind passes + 1 reconcile per page = 6 units at ~1.2. Then ONE pooled run: c4 at the new
+measured noise + c1-c3 at public noise, family_run.py homophonic with its control built at that exact mixed-noise
+profile FIRST; target only if the control passes. c4 alone (N 263) is below every solver's working length (H50), so
+no c4-only solver run. Also re-run H5 (couplet rhyme) and H30 (signs per verse line) on the new c4 -- both cheap, both
+sharpen the syllabic-verse picture; report as numbers with their existing controls.
+
+### DEB-PRIV1D2 -- letter-form habits, instrument first (cap USD 5, box 40 min; Sonnet calls)
+PRIV1D's prompt never answered yes even on its positive control (0/4). Reword as a 0-5 similarity score per sign;
+validate on the PUBLIC positive control first (cipher-line strips containing the reference signs: gate >= 6 of 8 signs
+found at score >= 3, decoy hands <= 1 false find). Control fails -> log non-test, stop (second attempt at this instrument;
+a third needs a different instrument, CLAUDE.md rule 3). Control passes -> run on the clear-hand crops; private only.
