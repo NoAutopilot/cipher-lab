@@ -1935,3 +1935,35 @@ Four more name codes on the P.S.'s second half are missing from f0390_08/ciphert
 257 (line 27) -- the next reader adds them with V-MANT08's fixes and re-runs `--check` and shuffle_gate_0390.py. Heusch = the
 Hanoverian resident at Berlin. Klopp XIV pp. 421-422 prints Hanover's matching position (a general peace only); Oxford's and
 Bolingbroke's declarations not located. 0391 N3 D2 held; key published (Krauske 1893). Press of the day and Google Books unreachable.
+
+## MANT-FIX (8 Oct 2026)
+Worker MANT-FIX (Sonnet, LANE FAMILY account 2), 22:19-22:21 UTC by `date -u`; disk only, 0 network requests. Applied exactly the owed
+fixes of AUDIT.md "AUDIT (V-MANT08)" item 2 and "AUDIT 2 (AUD2-MANT0391)" to f0390_08/ciphertext.tsv (context per run in runs.tsv); no
+re-look at the images, positions taken from the audits' own line references:
+- 0391 r4 tok5 34 -> 39 (y-glyph 9; "Bullinbroug" as written); 0390 r9 tok3 4 -> 9 ("FRIB[A]END" for "FRXB[A]END");
+  0391 r5 tok1 100 -> 160 by shape, conf low = M (100 by sense noted in runs.tsv).
+- Added 0391 singletons: 217 line 8 (r0, before r1); 217 line 14 (r3b, between r3 and r4 by sense; middle digit overwritten, 217 or 227,
+  conf low = M); 217 line 19, 266 line 20, 227 line 23, 257 line 27 (r7-r10, after r6). Run order inside 0391 is by line number; r3b's
+  place relative to r4 is inferred from the sense, not read off the image.
+Rule 4 after the fix: tokens 95, H 0, C 58, S 0, M 37, I 0, U 0 (before: 89, C 54, M 35). 160 reads "Manteuffel" in the key (name code), so
+the r5 run decodes to MANTEUFFEL+ETACHER... in reading.txt; the gate script keeps letter values only, so 160 is skipped there (r5 loses its "d").
+
+Commands: `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712/f0390_08` then `--check`: "tokens 95: C 58, M 37 / reading up to date",
+exit 0. `python3 ciphers/sachsstaatsarchiv-manteuffel-1712/f0390_08/shuffle_gate_0390.py` (same seeds, 1000 shuffles), before -> after:
+
+| statistic | before | after |
+|---|---|---|
+| pooled (seed 8) | 83 letters, real -1.483, p99 -1.649, 0/1000 PASS | 82 letters, real -1.373, p99 -1.640, 0/1000 PASS |
+| frame 0390 (reported, <20 letters) | 18 letters, -1.872, 307/1000 | 18 letters, -1.573, 58/1000 |
+| frame 0391 | 28 letters, -1.298, 0/1000 PASS | 27 letters, -1.115, 0/1000 PASS |
+| frame 0395 (reported) | 17 letters, -1.084, 0/1000 | unchanged |
+| frame 0485 | 20 letters, -1.411, 16/1000 FAIL | unchanged |
+| runs only, no singletons | 79 letters, -1.440, 0/1000 | 78 letters, -1.323, 0/1000 |
+| power control 0085 r9+r10 | -1.471, 1/1000 PASS | unchanged |
+| known-answer 0391 r5 "bon gre malgre" | edit distance 12, shuffled median 12, agreement 0/12 | 11, median 11, agreement 1/12 |
+
+Reading: the 0390 frame improves from 307 to 58 of 1000 shuffles at or above real (still not under 50 and still under 20 letters, so not
+gated); 0485 still FAILs its per-frame gate and the pooled gate PASS is unchanged in outcome. The known-answer line is not a gain: the
+tall-bowl 160 removes "d" from the run and the 1/12 agreement is at chance level. Not re-run (not asked): tools/judge_plaintext.py on
+the new reading; rule 7 re-derivation by a fresh session is still owed before stage 9. No novelty or depth change (0390 N3 D1, 0391 N3 D2,
+0395 N2 D1, 0485 N3 D1 stand). SECOND-OPINIONS-QUEUE.tsv SO-MANT-0839 quotes none of the changed words (checked by grep): unchanged.

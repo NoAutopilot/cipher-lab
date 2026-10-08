@@ -7,13 +7,19 @@ line	codes	note
 694-08_0390_r6	45	single, '2. 45 ajouta'
 694-08_0390_r7	110.28.60.35.5.10	interlinear after 'touchant' (struck?): 'qu'il avoit parle [touchant] RUN non seulement a 257'; tok3 60/66 B, tok4 35/33 B, tok5 5/3/8
 694-08_0390_r8	257	single
-694-08_0390_r9	1.26.4.55.35.21.120	'mais aussi a RUN; qu'il doutoit'; tok4 A 55, B 11, zoom ff=55
+694-08_0390_r9	1.26.9.55.35.21.120	'mais aussi a RUN; qu'il doutoit'; tok4 A 55, B 11, zoom ff=55; MANT-FIX 8 Oct: tok3 4 -> 9 (y-glyph, V-MANT08)
+694-08_0391_r0	217	single, line 8 'voicy ce que 217 s'est expliqué par ses ministres'; added MANT-FIX 8 Oct (V-MANT08)
 694-08_0391_r1	33.4.1.16.60.120	'bien differente. RUN a dit en gros que'; tok2-3 A 41, B 4.1, zoom 4.1
 694-08_0391_r2	217	single, 'que 217 etoit trop loin de s'en meler'
 694-08_0391_r3	266	single, 'aux sentiments de 266'; both passes 268, zoom 26[6|8], 268 not in key
-694-08_0391_r4	55.6.12.44.34.21.40.60.16.67.7	'mais la declaration de RUN a ete bien plus violente'; A 61.24.4.39, B 6.12.44.39; worker sheet 34 at tok5
-694-08_0391_r5	100.35.28.66.72.10.60.33.9.59	'plus facilement, on RUN (bon gre malgre) 227 de se[s] allies'; tok1 100 alt 160; 'y'-glyph = 9 (as 0015); interlinear 'bon gre malgre' inserted with a caret before 227
+694-08_0391_r3b	217	single, line 14 'Il a dit que 2?7 vouloit absolument faire la paix dans le nord'; middle digit overwritten, 217 or 227, conf low = M (AUD2); placed between r3 and r4 by sense; MANT-FIX 8 Oct
+694-08_0391_r4	55.6.12.44.39.21.40.60.16.67.7	'mais la declaration de RUN a ete bien plus violente'; A 61.24.4.39, B 6.12.44.39; worker sheet 34 at tok5; MANT-FIX 8 Oct: tok5 34 -> 39 (y-glyph 9, V-MANT08/AUD2), 'Bullinbroug' as written
+694-08_0391_r5	160.35.28.66.72.10.60.33.9.59	'plus facilement, on RUN (bon gre malgre) 227 de se[s] allies'; tok1 100 alt 160; 'y'-glyph = 9 (as 0015); interlinear 'bon gre malgre' inserted with a caret before 227; MANT-FIX 8 Oct: tok1 100 -> 160 by shape (V-MANT08, AUD2), 100 by sense, M
 694-08_0391_r6	227	single
+694-08_0391_r7	217	single, lines 18-19 'detourner 217. des sentiments du dernier'; added MANT-FIX 8 Oct (AUD2)
+694-08_0391_r8	266	single, line 20 'que 266. contribueroit'; added MANT-FIX 8 Oct (AUD2)
+694-08_0391_r9	227	single, line 23 'persuader 227. d'en faire une particuliere'; added MANT-FIX 8 Oct (AUD2)
+694-08_0391_r10	257	single, line 27 'savoit bien que 257. se meloit'; added MANT-FIX 8 Oct (AUD2)
 694-08_0395_r1	107.120.6.15	'on est a traiter avec RUN'; tok1 107 alt 103; tok3 6 alt 8
 694-08_0395_r2	1.35.60.100.9.21.66.21.120	'RUN, afin qu'il cede ses droits a cette cour'; tok5 y-glyph=9 (A 7, B 4)
 694-08_0395_r3	17.9.21.120.10	'qu'on luy a offert le gouvernement de RUN et d'autres'; tok1 17 (A alt 13), tok2 y-glyph

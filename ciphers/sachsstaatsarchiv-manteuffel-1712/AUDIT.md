@@ -552,6 +552,8 @@ each), net calls by prior_work.py (ia-global, gbooks). No 403, 429 or challenge.
 
 ## AUDIT (V-MANT08)
 
+MANT-FIX applied 8 Oct 2026 (NOTES.md "MANT-FIX (8 Oct 2026)"): the 0391 r4 tok5 39, 0390 r9 tok3 9 and r5 tok1 160 (M) fixes and the 217 line 8 / line 14 (M) additions are in f0390_08/ciphertext.tsv; reading now 95 tokens C 58 M 37; classes and depth unchanged.
+
 Verifier V-MANT08 (account 2, LANE FAMILY, session_01LGtcNsB7fhJKGzmPRCaMLw), 8 Oct 2026, 20:39-20:5x UTC by `date -u`; a separate
 session from the solver MANT-08 and from every earlier verifier of this target. Brief: .claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md
 "### V-MANT08". Claim under audit: NOTES.md section MANT-08 (f0390_08/): 89 code tokens on SHStA Dresden 10026 Loc. 694/08 URL frames
@@ -790,6 +792,8 @@ session: archive.org 14 (metadata/djvu/advancedsearch), be-api.us.archive.org 9,
 www.googleapis.com 2 (429, stopped) plus prior_work.py's own --network calls; no 403 or challenge.
 
 ## AUDIT 2 (AUD2-MANT0391)
+
+MANT-FIX applied 8 Oct 2026 (NOTES.md "MANT-FIX (8 Oct 2026)"): the four missing name codes (217 line 19, 266 line 20, 227 line 23, 257 line 27) are in f0390_08/ciphertext.tsv with the V-MANT08 fixes; `--check` exit 0, pooled gate PASS 0/1000 unchanged; classes and depth unchanged.
 
 Verifier AUD2-MANT0391 (account 3, LANE VERIFY-3, session_017eR38q5E5bjn5bSwJrFGFg), 8 Oct 2026, 21:42-22:1x UTC by `date -u`.
 Brief: .claude/briefs/runs/2026-10-08-acct3-verify3-jobs.md "AUD2-MANT0391". Account 3 never read nor first-audited this item (reader

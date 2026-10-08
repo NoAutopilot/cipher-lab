@@ -14,11 +14,12 @@ line	pos	sign	conf	value	grade
 694-08_0390_r8	1	257	med	Le roi de Prusse	C
 694-08_0390_r9	1	1	med	f	C
 694-08_0390_r9	2	26	med	r	C
-694-08_0390_r9	3	4	med	x	C
+694-08_0390_r9	3	9	med	i	C
 694-08_0390_r9	4	55	low	b|[a]	M
 694-08_0390_r9	5	35	med	e	C
 694-08_0390_r9	6	21	med	n	C
 694-08_0390_r9	7	120	med	d	C
+694-08_0391_r0	1	217	med	la reine d'Angleterre	C
 694-08_0391_r1	1	33	med	o	C
 694-08_0391_r1	2	4	low	x	M
 694-08_0391_r1	3	1	low	f	M
@@ -27,18 +28,19 @@ line	pos	sign	conf	value	grade
 694-08_0391_r1	6	120	med	d	C
 694-08_0391_r2	1	217	med	la reine d'Angleterre	C
 694-08_0391_r3	1	266	low	Hannover|Electeur de Hanovre	M
+694-08_0391_r3b	1	217	low	la reine d'Angleterre	M
 694-08_0391_r4	1	55	med	b|[a]	M
 694-08_0391_r4	2	6	low	u	M
 694-08_0391_r4	3	12	low	l	M
 694-08_0391_r4	4	44	low	l	M
-694-08_0391_r4	5	34	low	p	M
+694-08_0391_r4	5	39	med	i	C
 694-08_0391_r4	6	21	med	n	C
 694-08_0391_r4	7	40	med	b	C
 694-08_0391_r4	8	60	med	r|re|ro	M
 694-08_0391_r4	9	16	med	o|ou|ous	M
 694-08_0391_r4	10	67	low	u	M
 694-08_0391_r4	11	7	med	g	C
-694-08_0391_r5	1	100	low	d	M
+694-08_0391_r5	1	160	low	Manteuffel	M
 694-08_0391_r5	2	35	med	e	C
 694-08_0391_r5	3	28	med	t	C
 694-08_0391_r5	4	66	med	a	C
@@ -49,6 +51,10 @@ line	pos	sign	conf	value	grade
 694-08_0391_r5	9	9	med	i	C
 694-08_0391_r5	10	59	med	t	C
 694-08_0391_r6	1	227	med	le roi de Danemark|Danemark	M
+694-08_0391_r7	1	217	med	la reine d'Angleterre	C
+694-08_0391_r8	1	266	med	Hannover|Electeur de Hanovre	M
+694-08_0391_r9	1	227	med	le roi de Danemark|Danemark	M
+694-08_0391_r10	1	257	med	Le roi de Prusse	C
 694-08_0395_r1	1	107	low	Schonborn	M
 694-08_0395_r1	2	120	med	d	C
 694-08_0395_r1	3	6	low	u	M
