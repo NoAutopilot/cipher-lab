@@ -11479,3 +11479,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:47 | AUD2-LEDGER-4 verifier (Opus, acct3) | LANE VERIFY-3 hdl take
 2026-10-08 21:48 | D3-BLA2 (account 4, LANE DEPTH) | done (21:43-21:5x UTC by date -u, brief met), commit e87735f9: huntington-blathwayt known-answer re-gate UNTESTABLE at this N: 40 sampled, 9 uncovered pages, 11 no attestation, N 20, rule settled S 2 (2/2 right) vs single readers A .40 B .60 blind .45; gate needs S>=10; nothing promoted, C130 M22 S3 U17 unchanged; 4 blind calls + 1 reconciliation, no network; file_shrink_guard ok, gaps_check keep-going, decode_key --check ok
 2026-10-08 21:53 | AUD2-LEDGER-5 verifier (acct3) | LANE VERIFY-3 hdl take
+2026-10-08 21:53 | AUD2-LEDGER-7 verifier (acct3) | LANE VERIFY-3 hdl take
