@@ -1,0 +1,81 @@
+{
+ "tiles": [
+  {
+   "label": "T01",
+   "name": "communiquer",
+   "free": "[co]mmuniquer",
+   "choice": "communiquer",
+   "confidence": "medium",
+   "correct": true
+  },
+  {
+   "label": "T02",
+   "name": "entendre",
+   "free": "e[?]tendre (tall looped letter, possibly long s)",
+   "choice": "estendre",
+   "confidence": "low",
+   "correct": false
+  },
+  {
+   "label": "T03",
+   "name": "perpetuel",
+   "free": "p(er)petuel",
+   "choice": "perpetuel",
+   "confidence": "medium",
+   "correct": true
+  },
+  {
+   "label": "T04",
+   "name": "dilligence",
+   "free": "dilligen[ce]",
+   "choice": "dilligence",
+   "confidence": "medium",
+   "correct": true
+  },
+  {
+   "label": "T05",
+   "name": "faisant",
+   "free": "f[a]isant",
+   "choice": "faisant",
+   "confidence": "medium",
+   "correct": true
+  },
+  {
+   "label": "T06",
+   "name": "neantmoings",
+   "free": "neantmoingz",
+   "choice": "neantmoings",
+   "confidence": "high",
+   "correct": true
+  },
+  {
+   "label": "T07",
+   "name": "X",
+   "free": "tenir tres secrete",
+   "choice": "tenir tres secrete",
+   "confidence": "medium"
+  },
+  {
+   "label": "T08",
+   "name": "personne",
+   "free": "pres[ence]",
+   "choice": "presence",
+   "confidence": "low",
+   "correct": false
+  },
+  {
+   "label": "T09",
+   "name": "lettres",
+   "free": "par Crisy",
+   "choice": "par Crisy",
+   "confidence": "high",
+   "correct": false
+  }
+ ],
+ "controls_correct": 5,
+ "controls_n": 8,
+ "GC": "FAIL",
+ "X_choice": "tenir tres secrete",
+ "X_free_vs_choice": "agree",
+ "GT": "non-test (GC FAIL)"
+}

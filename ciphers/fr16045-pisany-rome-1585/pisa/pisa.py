@@ -55,7 +55,7 @@ def score():
         res['tiles'].append(row)
     res['GC'] = 'PASS' if res['controls_correct'] >= 7 else 'FAIL'
     x = [r for r in res['tiles'] if r['name'] == 'X'][0]
-    key = lambda s: (re.search(r'\b(si|tres|bien|fort)\b', s or '') or [None])[0], (re.search(r'(cache|secret|couuert|couvert)', s or '') or [None])[0]
+    key = lambda s: ((re.search(r'\b(si|tres|bien|fort)\b', s or '') or [None])[0], (re.search(r'(cache|secret|couuert|couvert)', s or '') or [None])[0])
     res['X_choice'] = x['choice']
     res['X_free_vs_choice'] = 'agree' if key((x['free'] or '').lower().replace('è', 'e').replace('é', 'e')) == key(x['choice']) else 'split'
     res['GT'] = ('reading: ' + x['choice'] if res['X_free_vs_choice'] == 'agree' else 'split -> M') if res['GC'] == 'PASS' else 'non-test (GC FAIL)'

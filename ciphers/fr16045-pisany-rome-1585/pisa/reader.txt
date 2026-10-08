@@ -1,0 +1,9 @@
+T01 | free: [co]mmuniquer | choice: g | confidence: medium
+T02 | free: e[?]tendre (tall looped letter, possibly long s) | choice: g | confidence: low
+T03 | free: p(er)petuel | choice: a | confidence: medium
+T04 | free: dilligen[ce] | choice: g | confidence: medium
+T05 | free: f[a]isant | choice: d | confidence: medium
+T06 | free: neantmoingz | choice: h | confidence: high
+T07 | free: tenir tres secrete | choice: e | confidence: medium
+T08 | free: pres[ence] | choice: d | confidence: low
+T09 | free: par Crisy | choice: g | confidence: high

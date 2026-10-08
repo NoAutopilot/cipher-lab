@@ -5,7 +5,7 @@ affere lequel il desiroit" and then a short phrase. Colbert 16 pt II p.122 (kp86
 cachée". D1A-PISG noted descriptively that the gloss may read "tenir tres secrete"; D1A-PISG2 left it [?] (M). This job settles which.
 Why a new instrument: the earlier line crops (f275vGH_L04_s2) cut the phrase between bands L04 and L05 (the line sags at its right end), and
 the one-call blind line reader is [retired] for G2 (D1A-PISG2). Here: word tiles, each read in a forced choice among look-alike options.
-Source (amended before any read, 8 Oct 2026 ~09:05 UTC): the planned native Gallica region (c563, 550,490,2475,1060) answered HTTP 500 and,
+Source (amended before any read, 8 Oct 2026 08:5x UTC by date -u): the planned native Gallica region (c563, 550,490,2475,1060) answered HTTP 500 and,
 on the one retry after a pause, 503, so Gallica was not hit again. The only image on disk holding the whole phrase is D1A-PISG's
 images/f275vGH_lines_debug.jpg (the same region at 0.646 x native, 1600 px wide, with 1-px band lines drawn on it). pisa/deline.py removes
 the drawn lines (coloured pixels in rows y-1..y+1 of each line replaced by the mean of rows y-2 and y+2); pisa/pisa.py --build cuts every
