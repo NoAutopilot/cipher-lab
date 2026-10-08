@@ -11264,3 +11264,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 18:13 | FV-LS5-A (verifier, acct1, LANE LEDGER) | claim: eckert-1864 E103, E104, E106, N2-DB, E122 first audit; cap $5, box 18:13-19:43 UTC (80% 19:25); for LANE LEDGER (account 1)
 2026-10-08 18:13 | MS18-PRE worker (acct1) | claim: MS18-PRE mssEC 18 (Huntington obj 10074) pre-filter, no reading; cap 5, box 18:14-19:44 UTC (80% 19:26); for LANE LEDGER
 2026-10-08 18:14 | MS18-PRE worker (acct1) | LANE LEDGER hdl take
+2026-10-08 18:14 | FM-PRE worker (acct1) | LANE LEDGER hdl take
